@@ -2,10 +2,10 @@
 title: Configuration des pipelines de production
 description: Configuration des pipelines de production
 index: false
-source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
+source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 47%
+source-wordcount: '712'
+ht-degree: 46%
 
 ---
 
@@ -55,7 +55,10 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline de production*
    * **Continuer immédiatement** - Si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
 
-1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un second onglet intitulé **Code source**. Vous pouvez sélectionner **Code de pile complet** et **Code front-end**. Vous pouvez choisir le **Référentiel** et le **Branche Git**. Sélectionnez les options de déploiement en production, comme expliqué ci-dessous. Cliquez sur **Continuer**.
+1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un second onglet intitulé **Code source**. Vous pouvez sélectionner **[Code de pile complet](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** ou **[Code front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Vous pouvez choisir le **Référentiel** et le **Branche Git**. Sélectionnez les options de déploiement en production, comme expliqué ci-dessous. Cliquez sur **Continuer**.
+
+   >[!IMPORTANT]
+   >Si un pipeline de code de pile complet existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
 
