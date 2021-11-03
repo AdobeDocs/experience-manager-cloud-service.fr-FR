@@ -2,10 +2,10 @@
 title: Configuration des pipelines de production
 description: Configuration des pipelines de production
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 84d04d8399668b8b1051d4edf9de851bca271071
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 51%
+source-wordcount: '695'
+ht-degree: 47%
 
 ---
 
@@ -55,9 +55,12 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline de production*
    * **Continuer immédiatement** - Si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
 
-1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un second onglet intitulé **Code source**. Vous pouvez sélectionner **Code de pile complet**, **Code front-end** ou **Configuration du niveau web**. Vous pouvez choisir le **Référentiel** et le **Branche Git**. Sélectionnez les options de déploiement en production, comme expliqué ci-dessous. Cliquez sur **Continuer**.
+1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un second onglet intitulé **Code source**. Vous pouvez sélectionner **Code de pile complet** et **Code front-end**. Vous pouvez choisir le **Référentiel** et le **Branche Git**. Sélectionnez les options de déploiement en production, comme expliqué ci-dessous. Cliquez sur **Continuer**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+
+   >[!NOTE]
+   >Avant de commencer à configurer les pipelines front-end, reportez-vous à la section Parcours de création de site rapide pour un workflow de bout en bout grâce à l’outil de création de site rapide AEM convivial. Ce site de documentation vous aidera à rationaliser le développement frontal de votre site AEM et à personnaliser rapidement votre site sans aucune connaissance AEM du serveur principal.
 
    Options de déploiement en production:
 
@@ -99,7 +102,5 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline de production*
    * **Ajouter** - permet d’ajouter un nouveau pipeline.
    * **Accès aux informations sur le référentiel** - permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
    * **En savoir plus** : suivez ce lient pour en savoir plus sur les ressources de documentation du pipeline CI/CD.
-
-
 
 
