@@ -2,9 +2,9 @@
 title: Modification d’un pipeline de production
 description: Modification d’un pipeline de production
 index: false
-source-git-commit: b9d28088ad18a389108ebfb81aa750c63e637922
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '255'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # Modification d’un pipeline de production {#edit-prod-pipeline}
 
 Vous pouvez modifier les configurations de pipeline à partir du **Aperçu du programme** page.
+
+>[!IMPORTANT]
+>Vous ne pouvez pas modifier un pipeline en cours d’exécution.
 
 Pour modifier le pipeline configuré, procédez comme suit :
 

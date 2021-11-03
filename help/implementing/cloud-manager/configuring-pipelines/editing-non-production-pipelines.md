@@ -2,9 +2,9 @@
 title: Modification d’un pipeline hors production
 description: Modification d’un pipeline hors production
 index: false
-source-git-commit: 6d2f4aa11b3d23343b985b4871b6d7202e3181c7
+source-git-commit: 881b4d75a15af55aaf1203e8d673059aab15b793
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 0%
 # Modification d’un pipeline hors production {#edit-non-prod-pipeline}
 
 Vous pouvez modifier les configurations de pipeline à partir du **Carte Pipelines** de **Aperçu du programme** page.
+
+>[!IMPORTANT]
+>Vous ne pouvez pas modifier un pipeline en cours d’exécution.
 
 Suivez les étapes ci-dessous pour modifier le pipeline hors production configuré :
 
