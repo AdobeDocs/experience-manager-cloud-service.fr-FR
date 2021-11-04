@@ -2,10 +2,10 @@
 title: Tests de l’interface utilisateur – Cloud Services
 description: Tests de l’interface utilisateur – Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: f6c700f82bc5a1a3edf05911a29a6e4d32dd3f72
-workflow-type: ht
-source-wordcount: '1087'
-ht-degree: 100%
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+workflow-type: tm+mt
+source-wordcount: '1121'
+ht-degree: 96%
 
 ---
 
@@ -112,6 +112,8 @@ Le descripteur d’assemblage demande au module d’extension de créer une arch
 Le descripteur d’assemblage exclut également certains fichiers qui pourraient être générés lors de l’exécution locale des tests de l’interface utilisateur. Cela garantit une archive plus petite et accélère la création.
 
 L’archive contenant le contexte de création Docker est automatiquement récupérée par Cloud Manager, qui crée l’image Docker contenant vos tests pendant ses pipelines de déploiement. Cloud Manager exécute ensuite l’image Docker pour réaliser les tests de l’interface utilisateur sur votre application.
+
+La version doit produire zéro ou une archive. S’il ne produit aucune archive, l’étape de test est effectuée par défaut. Si la version produit plusieurs archives, celle qui est sélectionnée n’est pas déterministe.
 
 ## Rédaction de tests de l’interface utilisateur {#writing-ui-tests}
 

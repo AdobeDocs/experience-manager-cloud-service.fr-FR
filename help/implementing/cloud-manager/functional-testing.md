@@ -2,10 +2,10 @@
 title: Tests fonctionnels – Cloud Services
 description: Tests fonctionnels – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 058fa606bbc667a36b78d5271947e2741f36240f
+source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
 workflow-type: tm+mt
-source-wordcount: '898'
-ht-degree: 97%
+source-wordcount: '920'
+ht-degree: 93%
 
 ---
 
@@ -36,7 +36,7 @@ Référez-vous à [Tests fonctionnels du produit](https://github.com/adobe/aem-t
 
 L’étape des tests fonctionnels personnalisés du pipeline est toujours présente et ne peut pas être ignorée.
 
-Cependant, si aucun fichier JAR de test n’est généré par la compilation, le test réussit par défaut.
+La version doit produire zéro ou un fichier JAR de test. S’il ne génère aucun fichier JAR de test, l’étape de test est effectuée par défaut. Si la version génère plusieurs fichiers JAR de test, le fichier JAR sélectionné est non déterministe.
 
 >[!NOTE]
 >Le bouton **Télécharger le journal** permet d’accéder à un fichier ZIP contenant les journaux du formulaire détaillé d’exécution du test. Ces journaux ne contiennent pas les journaux du processus d’exécution AEM proprement dit. Vous pouvez y accéder à l’aide de la fonctionnalité de téléchargement standard ou d’affichage des dernières lignes des journaux. Pour plus d’informations, reportez-vous à [Accès et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md).
