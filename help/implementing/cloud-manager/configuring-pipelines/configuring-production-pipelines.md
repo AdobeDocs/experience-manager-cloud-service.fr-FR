@@ -2,10 +2,10 @@
 title: Configuration des pipelines de production
 description: Configuration des pipelines de production
 index: true
-source-git-commit: 307472d5b9887101b9e365cafc781ec97a1bcdb5
+source-git-commit: f25e26c84a87cf793f9c8a5ac53009034e6cd2e9
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 45%
+source-wordcount: '764'
+ht-degree: 43%
 
 ---
 
@@ -57,7 +57,18 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline de production*
 
 1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un second onglet intitulé **Code source**. Vous pouvez sélectionner **[Code de pile complet](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)** ou **[Code front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)**. Vous pouvez choisir le **Référentiel** et le **Branche Git**. Sélectionnez les options de déploiement en production, comme expliqué ci-dessous. Cliquez sur **Continuer**.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-fullstack1.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+
+   Si vous avez sélectionné **Code front-end**, vous devez sélectionner la variable **Référentiel**, **Branche Git** et **Emplacement du code**, comme illustré dans la figure ci-dessous :
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
+
+   Si vous avez sélectionné **Code de pile complet**, vous devez sélectionner la variable **Référentiel**, **Branche Git** et **Options de déploiement de production**, comme illustré dans la figure ci-dessous :
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack2.png)
+
+   **Options de déploiement en production:**
+
+   * **Mettre en pause avant le déploiement en production**: Cette option permet au déploiement de s’interrompre avant la production.
+   * **Planifié**: Cette option permet à l’utilisateur d’activer le déploiement en production planifié.
 
    >[!IMPORTANT]
    >Si un pipeline de code de pile complet existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
@@ -66,10 +77,9 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline de production*
    >[!NOTE]
    >Avant de commencer à configurer les pipelines front-end, voir [parcours de création rapide de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) pour un workflow de bout en bout grâce à l’outil de création rapide de site d’AEM convivial. Ce site de documentation vous aidera à rationaliser le développement frontal de votre site AEM et à personnaliser rapidement votre site sans aucune connaissance AEM du serveur principal.
 
-   Options de déploiement en production:
 
-   * **Mettre en pause avant le déploiement en production**: Cette option permet de suspendre l’étape de déploiement avant la production.
-   * **Planifié**: Cette option permet à l’utilisateur d’activer le déploiement en production planifié.
+
+
 
 1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un troisième onglet intitulé **Audit de l’expérience**. Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans le contrôle de l’expérience.
 
