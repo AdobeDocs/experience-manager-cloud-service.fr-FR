@@ -2,10 +2,10 @@
 title: Configuration des pipelines de production
 description: Configuration des pipelines de production
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 8bdc246d1f47e1bdc9a217588f0be69a09982be5
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 43%
+source-wordcount: '768'
+ht-degree: 42%
 
 ---
 
@@ -55,7 +55,7 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline de production*
    * **Continuer immédiatement** - Si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
 
 
-1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un second onglet intitulé **Code source**. Vous pouvez sélectionner **[Code front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** ou **[Code de pile complet](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**. Vous pouvez choisir le **Référentiel** et le **Branche Git**. Sélectionnez les options de déploiement en production, comme expliqué ci-dessous. Cliquez sur **Continuer**.
+1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un second onglet intitulé **Code source**. Vous pouvez sélectionner **[Code front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end)** ou **[Code de pile complet](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline)**.
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/prodpipeline-fullstack1.png)
 
@@ -77,6 +77,7 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline de production*
    >[!NOTE]
    >Avant de commencer à configurer les pipelines front-end, voir [parcours de création rapide de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) pour un workflow de bout en bout grâce à l’outil de création rapide de site d’AEM convivial. Ce site de documentation vous aidera à rationaliser le développement frontal de votre site AEM et à personnaliser rapidement votre site sans aucune connaissance AEM du serveur principal.
 
+1. Cliquez sur **Continuer** une fois que vous avez sélectionné les options dans la variable **Code source** .
 
 1. Le **Ajout d’un pipeline de production** La boîte de dialogue comprend un troisième onglet intitulé **Audit de l’expérience**. Cette option fournit un tableau pour les chemins d’URL qui doivent toujours être inclus dans le contrôle de l’expérience.
 
@@ -108,9 +109,12 @@ Cliquez sur **+Ajouter** et sélectionnez **Ajout d’un pipeline de production*
 
 1. Cliquez sur **Enregistrer**. Le nouveau pipeline de production s’affiche désormais dans la variable **Pipelines** carte.
 
-   Le pipeline s’affiche sur la carte de l’écran d’accueil avec trois actions, comme illustré ci-dessous :
+   Le pipeline s’affiche sur la carte de l’écran d’accueil avec quatre actions, comme illustré ci-dessous :
+
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/prod-created.png)
 
    * **Ajouter** - permet d’ajouter un nouveau pipeline.
+   * **Tout afficher** - permet à l’utilisateur d’afficher tous les pipelines.
    * **Accès aux informations sur le référentiel** - permet à l’utilisateur d’obtenir les informations nécessaires pour accéder au référentiel Git de Cloud Manager.
    * **En savoir plus** : suivez ce lient pour en savoir plus sur les ressources de documentation du pipeline CI/CD.
 
