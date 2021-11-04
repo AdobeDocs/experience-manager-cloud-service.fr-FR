@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.10.0.
 exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: 15908636f916a55008513035e3072cf1b1cc5f1c
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 67%
+source-wordcount: '1195'
+ht-degree: 60%
 
 ---
 
@@ -42,6 +42,22 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 * **[!DNL Adobe Asset Link]version 2.1** : une nouvelle version de l’extension [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) pour [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] et [!DNL Adobe InDesign] est disponible. Elle ajoute la compatibilité avec les dernières applications [!DNL Adobe Creative Cloud] dans la version 2021, publiée en octobre 2020.
 
 * Prise en charge des fichiers **[!DNL Assets]WebP** : [!DNL Assets] as a Cloud Service prend désormais en charge le format d’image WebP. WebP est un nouveau format d’image créé par Google. Les images au format WebP ne peuvent pas être distinguées visuellement des fichiers JPG ou PNG et les fichiers sont beaucoup plus petits. La taille de fichier réduite des ressources réduit la durée de chargement des pages et aide les créateurs de contenu à offrir une expérience web plus rapide. Découvrez comment utiliser WebP dans [Création d’un profil de traitement](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
+
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#forms-oct-2021}
+
+### Nouveautés d’[!DNL Forms]  {#what-is-new-forms-oct-2021}
+
+* **Analytics pour Forms adaptatif**: Vous pouvez désormais capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) par le biais d’Adobe Analytics pour les Forms adaptatifs afin de rassembler les informations sur les utilisateurs finaux. Il permet aux utilisateurs professionnels de prendre des décisions éclairées sur le contenu, la mise en page et le style des formulaires adaptatifs en fonction des informations collectées.
+
+### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms-oct-2021}
+
+* **Externaliser AEM données de workflow pour un traitement sécurisé**: Vous pouvez stocker dans un référentiel géré par le client des données AEM variables Workflow contenant des éléments de données personnelles sensibles (SPD) pour un traitement sécurisé. Lors du traitement du workflow, les données stockées dans les variables de workflow ne sont pas conservées dans AEM référentiel. Il est récupéré à la demande à partir du référentiel géré par le client.
+
+### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
+
+* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de communication](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=fr) vous aide à combiner un modèle et des données XML pour générer des documents dans différents formats. Le service vous permet de générer des documents en mode synchrone et par lots.
+
+Vous pouvez écrire sur [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 

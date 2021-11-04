@@ -4,18 +4,14 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: d5032670c243779289e8e86850bbfd137d8d6286
+source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
-source-wordcount: '2858'
+source-wordcount: '2838'
 ht-degree: 79%
 
 ---
 
 # Modèles de fragment de contenu {#content-fragment-models}
-
->[!NOTE]
->
->Le [Modèles de fragment de contenu verrouillés (publiés)](#locked-published-content-fragment-models) est en version bêta.
 
 Les modèles de fragment de contenu d’AEM définissent la structure du contenu de vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) et servent de base à votre contenu découplé.
 
@@ -434,9 +430,6 @@ Le message vous invite à vérifier la variable [Références](/help/sites-cloud
 ![Modèle de fragment de contenu dans les références](assets/cfm-model-references.png)
 
 ## Modèles de fragment de contenu verrouillés (publiés) {#locked-published-content-fragment-models}
-
->[!NOTE]
-La fonction Modèles de fragment de contenu verrouillés (publiés) est en version bêta.
 
 Cette fonctionnalité fournit une gouvernance pour les modèles de fragment de contenu qui ont été publiés.
 

@@ -5,9 +5,9 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: ddea30a50c0c6146b0ac5b44c609d4a6f78f1fcc
+source-git-commit: 04e7cd99c98855ca109e112fd87877d0b6b536fc
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '690'
 ht-degree: 16%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 16%
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
-Au début du [Parcours de création de contenu sans affichage](overview.md), les [bases de la modélisation de contenu pour sans affichage avec AEM](basics.md) couvraient les concepts et la terminologie de base liés à la création pour sans affichage.
+Au début du [AEM Parcours de création de contenu sans affichage](overview.md) la valeur [Principes de base de la modélisation de contenu pour sans affichage avec AEM](basics.md) couvrait les concepts de base et la terminologie relatifs à la création pour les sans-tête.
 
 Cet article s’appuie sur ces modèles afin que vous compreniez comment créer vos propres modèles de fragment de contenu pour votre projet AEM sans interface.
 
 ## Objectif {#objective}
 
 * **Audience** : débutant
-* **Objectif** : les concepts et les mécanismes de modélisation du contenu pour votre CMS sans affichage à l’aide de modèles de fragments de contenu.
+* **Objectif**: les concepts et les mécanismes de modélisation du contenu pour votre CMS sans affichage à l’aide de modèles de fragments de contenu.
 
 <!-- which persona does this? -->
 <!-- and who allows the configuration on the folders? -->
@@ -48,25 +48,25 @@ Ensuite, les modèles de fragments de contenu peuvent être créés et la struct
 
 Après avoir sélectionné cette option, vous accédez à l’emplacement de votre modèle et sélectionnez **Créer**. Vous pouvez y saisir différents détails clés.
 
-L’option **Activer le modèle** est activée par défaut. Cela signifie que votre modèle sera disponible pour utilisation (dans la création de fragments de contenu) dès que vous l’aurez enregistré. Vous pouvez la désactiver si vous le souhaitez. Par la suite, vous pourrez activer (ou désactiver) un modèle existant.
+L’option **Activer le modèle** est activé par défaut. Cela signifie que votre modèle sera disponible pour utilisation (dans la création de fragments de contenu) dès que vous l’aurez enregistré. Vous pouvez la désactiver si vous le souhaitez. Par la suite, vous pourrez activer (ou désactiver) un modèle existant.
 
 ![Créer un modèle de fragment de contenu](/help/assets/content-fragments/assets/cfm-models-02.png)
 
-Confirmez avec **Créer** et vous pouvez ensuite **Ouvrir** votre modèle pour commencer à définir la structure.
+Confirmer avec **Créer** et vous pouvez **Ouvrir** votre modèle pour commencer à définir la structure.
 
 ## Définition de modèles de fragment de contenu {#defining-content-fragment-models}
 
-Lorsque vous ouvrez un nouveau modèle pour la première fois, vous verrez un grand espace vide à gauche et une longue liste de **types de données** à droite :
+Lorsque vous ouvrez un nouveau modèle pour la première fois, vous verrez un grand espace vide à gauche et une longue liste de **Types de données** à droite :
 
 ![Modèle vide](/help/assets/content-fragments/assets/cfm-models-03.png)
 
 Alors, que faire ?
 
-Vous pouvez faire glisser des instances des **Types de données** sur l’espace de gauche ; vous définissez déjà votre modèle.
+Vous pouvez faire glisser des instances du **Types de données** sur l’espace gauche - vous définissez déjà votre modèle !
 
 ![Définir les champs](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-Une fois que vous avez ajouté un type de données, vous devez définir les **Propriétés** de ce champ. Celles-ci dépendent du type utilisé. Par exemple :
+Une fois que vous avez ajouté un type de données, vous devrez définir la variable **Propriétés** pour ce champ. Celles-ci dépendent du type utilisé. Par exemple :
 
 ![Propriétés des données](/help/assets/content-fragments/assets/cfm-models-05.png)
 
@@ -101,13 +101,9 @@ Les modèles de fragment de contenu doivent être publiés avant ou pendant la p
 >
 >Si un auteur tente de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique et le modèle est publié avec le fragment.
 
->[!NOTE]
->
->La fonction Modèles de fragment de contenu verrouillés (publiés) est en version bêta.
-
 Dès qu’un modèle est publié, il est *verrouillé* en mode LECTURE SEULE sur l’auteur. Cela a pour but d’empêcher les modifications qui provoqueraient des erreurs dans les schémas et requêtes GraphQL existants, en particulier dans l’environnement de publication. Il est indiqué dans la console par **Verrouillé**.
 
-Lorsque le modèle est **verrouillé** (en mode LECTURE SEULE), vous pouvez voir le contenu et la structure des modèles, mais vous ne pouvez pas les modifier directement ; mais vous pouvez gérer les modèles **verrouillés** à partir de la console ou de l’éditeur de modèles.
+Lorsque le modèle est **Verrouillé** (en mode LECTURE SEULE), vous pouvez voir le contenu et la structure des modèles, mais vous ne pouvez pas les modifier directement ; mais vous pouvez gérer **Verrouillé** modèles de la console ou de l’éditeur de modèles.
 
 ## Et après ? {#whats-next}
 
@@ -117,7 +113,7 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
 * [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md)  : cette page est principalement basée sur la  **** console Sites, mais de nombreuses/nombreuses fonctionnalités sont également pertinentes pour accéder aux  **modèles de fragments de** contenu et agir sur ces derniers dans la console  **** Ressources.
+* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - cette page est principalement basée sur la variable **Sites** , mais de nombreuses fonctionnalités/la plupart d’entre elles sont également pertinentes pour la navigation et l’exécution d’actions, **Modèles de fragment de contenu** sous le **Ressources** console.
 
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 
