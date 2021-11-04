@@ -2,9 +2,9 @@
 title: Pipelines CI-CD
 description: Consultez cette page pour en savoir plus sur les pipelines CI-CD de Cloud Manager
 index: true
-source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
+source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '959'
 ht-degree: 2%
 
 ---
@@ -50,7 +50,7 @@ Le tableau suivant récapitule tous les pipelines dans Cloud Manager, ainsi que 
 
 | Type de pipeline | Déploiement ou qualité du code | Code source | Quand utiliser | Quand ou pourquoi dois-je utiliser ? |
 |--- |--- |--- |---|---|
-| Production ou hors production | Déploiement | Front end | Temps de déploiement rapides.<br>Plusieurs pipelines front-end peuvent être configurés et exécutés simultanément par environnement.<br>Le build du pipeline front-end transfère la version vers un stockage. Lorsqu’une page HTML est diffusée, elle peut référencer des fichiers statiques de code frontal qui seront diffusés par le réseau de diffusion de contenu en utilisant ce stockage comme origine. | Pour déployer exclusivement du code frontal contenant une ou plusieurs applications d’interface utilisateur côté client. Le code frontal est tout code qui est servi en tant que fichier statique. Il est distinct du code de l’interface utilisateur fourni par AEM. Il comprend les thèmes Sites, SPA définis par le client, Firefly SPA et toute autre solution.<br>Doit se trouver sur AEM version 2021.10.5933.20211012T154732Z |
+| Production ou hors production | Déploiement | Front end | Temps de déploiement rapides.<br>Plusieurs pipelines front-end peuvent être configurés et exécutés simultanément par environnement.<br>Le build du pipeline front-end transfère la version vers un stockage. Lorsqu’une page HTML est diffusée, elle peut référencer des fichiers statiques de code frontal qui seront diffusés par le réseau de diffusion de contenu en utilisant ce stockage comme origine. | Pour déployer exclusivement du code frontal contenant une ou plusieurs applications d’interface utilisateur côté client. Le code frontal est tout code qui est servi en tant que fichier statique. Il est distinct du code de l’interface utilisateur fourni par AEM. Il comprend les thèmes Sites, SPA définis par le client, Firefly SPA et toute autre solution.<br>Doit se trouver sur AEM version 2021.10.5933.20211012T154732Z<br>Sites doit être activé. |
 | Production ou hors production | Déploiement | Pile complète | Lorsque les pipelines front-end n’ont pas encore été adoptés.<br>Dans les cas où le code frontal doit être déployé exactement en même temps que le code du serveur AEM. | Pour déployer AEM code de serveur (contenu non modifiable, code Java, configurations OSGi, configuration HTTPD/dispatcher, repoinit, contenu modifiable, polices), contenant une ou plusieurs applications de serveur AEM simultanément. |
 | Hors production | Qualité du code | Front end | Pour que Cloud Manager soit évalué. la réussite de la création et la qualité du code sans effectuer de déploiement.<br>Plusieurs pipelines peuvent être configurés et exécutés. | Exécutez des analyses de qualité du code sur le code frontal. |
 | Hors production | Qualité du code | Pile complète | Pour que Cloud Manager soit évalué. la réussite de la création et la qualité du code sans effectuer de déploiement.<br>Plusieurs pipelines peuvent être configurés et exécutés. | Exécutez une analyse de la qualité du code sur le code de pile complet. |
