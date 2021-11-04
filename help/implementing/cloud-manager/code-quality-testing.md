@@ -2,8 +2,8 @@
 title: Test de qualité du code – Cloud Services
 description: Test de qualité du code – Cloud Services
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 64023bbdccd8d173b15e3984d0af5bb59a2c1447
-workflow-type: ht
+source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 100%
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Le test de qualité du code évalue la qualité du code de votre application. Il s’agit de l’objectif principal d’un pipeline dédié uniquement à la qualité du code. Cette étape est exécutée immédiatement après l’étape de création dans tous les pipelines, aussi bien en production que hors production.
 
-Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) pour en savoir plus sur les différents types de pipelines.
+Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour en savoir plus sur les différents types de pipelines.
 
 ## Compréhension des règles de qualité du code {#understanding-code-quality-rules}
 

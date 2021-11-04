@@ -4,7 +4,7 @@ description: Modification notables apportées à  [!DNL Adobe Experience Manager
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 9235dd41a77242655bf944666bdd5c14db8a83d6
+source-git-commit: e07529f73a3c0b39cb51afb4f3545a9094ce48ef
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 94%
@@ -43,7 +43,7 @@ Les microservices de ressources offrent un traitement évolutif et résilient de
 
 Les microservices de ressources, natifs dans le cloud, sont automatiquement mis en service et connectés à [!DNL Experience Manager] dans les programmes et environnements clients gérés dans Cloud Manager. Pour étendre ou personnaliser[!DNL Experience Manager], les développeurs peuvent utiliser le contenu existant ou les ressources dont les rendus sont générés dans un environnement cloud, afin de tester et valider leur code avec des ressources (en les utilisant, les affichant et les téléchargeant).
 
-Pour effectuer une validation de bout en bout du code et du processus, y compris l’ingestion et le traitement des ressources, déployez les modifications de code dans un environnement de développement cloud à l’aide [du pipeline](/help/implementing/cloud-manager/configure-pipeline.md) et testez-les avec l’exécution complète du traitement des microservices de ressources.
+Pour effectuer une validation de bout en bout du code et du processus, y compris l’ingestion et le traitement des ressources, déployez les modifications de code dans un environnement de développement cloud à l’aide [du pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) et testez-les avec l’exécution complète du traitement des microservices de ressources.
 
 ## Parité des fonctionnalités avec [!DNL Experience Manager] 6.5 {#cloud-service-feature-status}
 

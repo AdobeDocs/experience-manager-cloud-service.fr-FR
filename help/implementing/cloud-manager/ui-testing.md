@@ -2,10 +2,10 @@
 title: Tests de l’interface utilisateur – Cloud Services
 description: Tests de l’interface utilisateur – Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
 workflow-type: tm+mt
-source-wordcount: '1121'
-ht-degree: 96%
+source-wordcount: '1122'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ Les tests de l’interface utilisateur sont des tests basés sur Selenium placé
 
 >[!NOTE]
 > Les pipelines d’évaluation et de production créés avant le 10 février 2021 doivent être mis à jour pour pouvoir utiliser les tests d’interface utilisateur décrits sur cette page.
-> Consultez [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configure-pipeline.md) pour plus d’informations sur la configuration du pipeline.
+> Voir [Pipelines CI-CD dans Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour plus d’informations sur la configuration du pipeline.
 
 ## Création de tests de l’interface utilisateur {#building-ui-tests}
 

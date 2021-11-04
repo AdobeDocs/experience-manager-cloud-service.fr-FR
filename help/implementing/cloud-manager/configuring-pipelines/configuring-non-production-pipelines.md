@@ -1,11 +1,11 @@
 ---
 title: Configuration de pipelines hors production
 description: Consultez cette page pour en savoir plus sur la configuration d’un pipeline hors production dans Cloud Manager
-index: false
-source-git-commit: fe3bd08e32cef20403d3d2799d027b3ed03e6d36
+index: true
+source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 15%
+source-wordcount: '347'
+ht-degree: 14%
 
 ---
 
@@ -41,10 +41,10 @@ Sur l’écran d’accueil, ces pipelines sont répertoriés dans une nouvelle c
    >[!IMPORTANT]
    >Si un pipeline de code de pile complet existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
 
-   ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-pipeline-add3.png)
+   ![](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-confignew1.png)
 
    >[!NOTE]
-   >Avant de commencer à configurer les pipelines front-end, reportez-vous à la section Parcours de création de site rapide pour un workflow de bout en bout grâce à l’outil de création de site rapide AEM convivial. Ce site de documentation vous aidera à rationaliser le développement frontal de votre site AEM et à personnaliser rapidement votre site sans aucune connaissance AEM du serveur principal.
+   >Avant de commencer à configurer les pipelines front-end, voir [parcours de création rapide de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) pour un workflow de bout en bout grâce à l’outil de création rapide de site d’AEM convivial. Ce site de documentation vous aidera à rationaliser le développement frontal de votre site AEM et à personnaliser rapidement votre site sans aucune connaissance AEM du serveur principal.
 
 1. Le nouveau pipeline hors production s’affiche désormais dans la variable **Pipelines** carte.
 
