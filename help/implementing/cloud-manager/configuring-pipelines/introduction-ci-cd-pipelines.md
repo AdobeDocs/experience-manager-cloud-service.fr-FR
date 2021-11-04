@@ -2,7 +2,7 @@
 title: Pipelines CI-CD
 description: Consultez cette page pour en savoir plus sur les pipelines CI-CD de Cloud Manager
 index: true
-source-git-commit: 45cb3ea26a86de07f98e576a23542e250c99291f
+source-git-commit: 471924b2edd5e0bccd7c1eb9d6dd36ad2bd89f88
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 2%
@@ -86,6 +86,7 @@ Pour savoir comment configurer le pipeline front-end, reportez-vous à :
 ## Pipelines complets empilés {#full-stack-pipeline}
 
 Le pipeline de pile complète permet à l’utilisateur de déployer simultanément la configuration back-end, front-end et HTTPD/dispatcher.  Il déploie le code et le contenu sur le runtime AEM, y compris le code frontal (JavaScript/CSS) conditionné en tant que bibliothèques clientes AEM. Il peut déployer la configuration de niveau web si un pipeline de niveau web n’est pas configuré. Il s’agit du pipeline &quot;uber&quot;, tout en permettant aux utilisateurs de déployer exclusivement leur code frontal ou leur configuration de dispatcher via le pipeline front-end et le pipeline de configuration de niveau web, respectivement.
+Il peut s’agir d’un pipeline de type Pile complète - Qualité du code ou Pile complète - Déploiement .
 
 Les restrictions suivantes s’appliquent :
 
@@ -97,7 +98,6 @@ Les restrictions suivantes s’appliquent :
 
 1. Le pipeline de pile complète pour un environnement ignore la configuration du Dispatcher si le pipeline de configuration de niveau web correspondant à l’environnement existe.
 
-Il peut s’agir d’un pipeline de type Pile complète - Qualité du code ou Pile complète - Déploiement .
 
 ### Configuration d’un pipeline d’empilement complet {#configure-full-stack}
 

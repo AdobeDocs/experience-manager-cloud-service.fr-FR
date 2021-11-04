@@ -5,7 +5,7 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 2f428f4401d7c60685332e9d23a02bf0bfb27c23
+source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
 workflow-type: tm+mt
 source-wordcount: '1080'
 ht-degree: 94%
@@ -68,8 +68,8 @@ ht-degree: 94%
    + Pipelines CI-CD de Cloud Manager {#cicd-pipelines}
       + [Présentation](cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md)
       + Pipelines de production {#production-pipelines}
-         + [Configuration d’un pipeline de production](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
-         + [Modification d’un pipeline de production](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Configuration d’un pipeline de production](cloud-manager/configuring-pipelines/configuring-production-pipelines.md)
+         + [Modification d’un pipeline de production](cloud-manager/configuring-pipelines/editing-production-pipelines.md)
       + Pipelines hors production {#non-production-pipelines}
          + [Configuration d’un pipeline hors production](cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
          + [Modification d’un pipeline hors production](cloud-manager/configuring-pipelines/editing-non-production-pipelines.md)
