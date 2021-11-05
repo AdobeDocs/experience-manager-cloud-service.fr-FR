@@ -2,7 +2,7 @@
 title: Modification d’un pipeline hors production
 description: Modification d’un pipeline hors production
 index: true
-source-git-commit: d090329c46155d77a7b132583c777c09555a03c9
+source-git-commit: 7dc9f9a189927f3522445fac36a1606521f410b2
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -53,7 +53,7 @@ Vous pouvez exécuter le pipeline de production à partir de la carte Pipelines 
 
    ![](/help/implementing/cloud-manager/assets/configure-pipeline/nonprod-run1.png)
 
-#### Suppression d’un pipeline hors production {#delete-nonprod}
+### Suppression d’un pipeline hors production {#delete-nonprod}
 
 Vous pouvez supprimer le pipeline de production de la carte Pipelines :
 
