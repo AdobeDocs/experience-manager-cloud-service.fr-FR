@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 6b20a7bcbd16b59da8dc29b324016c3da1e71686
+source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 100%
+source-wordcount: '834'
+ht-degree: 92%
 
 ---
 
@@ -218,6 +218,19 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 ## Formats audio {#audio-formats}
 
 [!DNL Assets] as a [!DNL Cloud Service] offre une prise en charge de l’extraction de métadonnées XMP pour les formats audio AIF, ASF, M4A, MP3, WAV et WMA.
+
+## Formats d’entrée pris en charge pour la transcription audio et vidéo {#audio-video-transcription-formats}
+
+* FLV (avec les codecs H.264 et AAC) (.flv)
+* MXF (.mxf)
+* MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
+* Vidéo Windows Media (WMV)/ASF (.wmv, .asf)
+* AVI (8 bits/10 bits décompressé) (.avi)
+* MP4 (.mp4, .m4a, .m4v)
+* Enregistrement vidéo numérique Microsoft (DVR-MS) (.dvr-ms)
+* Matroska/WebM (.mkv)
+* WAVE/WAV (.wav)
+* QuickTime (.mov)
 
 ## Conseils et restrictions {#limitations-and-tips}
 
