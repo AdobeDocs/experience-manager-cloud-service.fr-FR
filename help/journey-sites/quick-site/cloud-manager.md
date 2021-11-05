@@ -1,0 +1,127 @@
+---
+title: Présentation de Cloud Manager et du workflow de création rapide de site
+description: Découvrez Cloud Manager et comment il relie le nouveau processus de création rapide de site.
+source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+workflow-type: tm+mt
+source-wordcount: '1133'
+ht-degree: 2%
+
+---
+
+
+# Présentation de Cloud Manager et du workflow de création rapide de site {#understand-cloud-manager}
+
+Découvrez Cloud Manager et comment il relie le nouveau processus de création rapide de site.
+
+>[!CAUTION]
+>
+>L’outil de création de site rapide est actuellement un aperçu technique. Il est mis à disposition à des fins de test et d’évaluation et n’est pas destiné à un usage en production sauf accord avec le support Adobe.
+
+>[!TIP]
+>
+>Si votre rôle est exclusivement le développement frontal, vous pouvez passer à l’article [Récupération des informations d’accès au référentiel git](retrieve-access.md) dans ce parcours.
+>
+>Si vous êtes un administrateur AEM, un administrateur de Cloud Manager, responsable des tâches de développement front-end et d’administration, ou que vous souhaitez simplement comprendre le processus de bout en bout dans AEM pour le développement front-end, continuez à lire le document actuel et passez à ce parcours.
+
+## Objectif {#objective}
+
+Ce document vous aide à comprendre le fonctionnement de l’outil de création rapide de site d’AEM et vous donne un aperçu du flux de bout en bout. Après l’avoir lu, vous devriez :
+
+* Découvrez comment AEM Sites et Cloud Manager travaillent ensemble pour faciliter le développement frontal
+* Découvrez comment l’étape de personnalisation frontale est entièrement découplée de l’AEM et ne nécessite aucune connaissance AEM.
+
+Ce document se concentre sur la compréhension de ces éléments fondamentaux de la solution de création de site rapide avant de passer à l’étape suivante du parcours où vous commencez la configuration.
+
+Bien qu’il soit recommandé de procéder par étape à ce parcours, si vous comprenez déjà qu’AEM Sites et Cloud Manager travaillent ensemble et que vous souhaitez commencer directement la configuration, vous pouvez [passez à l’étape suivante du parcours.](create-site.md)
+
+## Rôle responsable {#responsible-role}
+
+Cette partie du parcours s’applique à la fois à l’administrateur AEM et à l’administrateur Cloud Manager.
+
+## Exigences et conditions préalables {#requirements-prerequisites}
+
+Avant de commencer à créer et personnaliser des sites à l’aide de l’outil de création rapide de site, plusieurs conditions sont requises.
+
+Ce parcours étant destiné à la fois aux développeurs front-end, aux administrateurs et aux combinaisons de tous les rôles, les exigences pour les deux sont répertoriées ici.
+
+Il est important de comprendre que, pour le développeur front-end, aucun accès AEM ou connaissance n’est nécessaire.
+
+### Connaissances {#knowledge}
+
+| Connaissances | Rôle |
+|---|---|
+| Présentation des outils et processus standard du développement front-end | Développeurs front-end |
+| Connaissances de base sur la création et la gestion de sites dans AEM | Administrateur AEM |
+| Connaissances de base de Cloud Manager | Administrateur Cloud Manager |
+
+Pour le développeur front-end, aucune connaissance AEM n’est nécessaire.
+
+### Outils {#tools}
+
+| Outil | Rôle |
+|---|---|
+| Environnement de développement front-end préféré | Développeurs front-end |
+| npm | Développeurs front-end |
+| webpack | Développeurs front-end |
+| Accès à Cloud Manager | Administrateur Cloud Manager |
+| Être membre de **Propriétaire de l’entreprise** rôle dans Cloud Manager | Administrateur Cloud Manager |
+| Être administrateur système dans Cloud Manager | Administrateur Cloud Manager |
+| Accès au Admin Console | Administrateur Cloud Manager |
+| Être membre de la fonction **Responsable de déploiement** rôle dans Cloud Manager | Administrateur Cloud Manager |
+| Être membre de la fonction **Responsable de déploiement** rôle dans Cloud Manager | Développeurs front-end |
+
+Pour le développeur front-end, aucune AEM n’est nécessaire.
+
+>[!TIP]
+>
+>Si vous ne connaissez pas les rôles et la gestion des rôles de Cloud Manager, reportez-vous au document Autorisations basées sur les rôles dans la section [Ressources supplémentaires](#additional-resources) .
+
+## Cloud Manager {#cloud-manager}
+
+Cloud Manager est un composant essentiel d’AEM as a Cloud Service et constitue le point d’entrée unique de la plateforme.
+
+Pour prendre en charge les clients avec les configurations de développement d’entreprise, AEM as a Cloud Service s’intègre entièrement à Cloud Manager et à ses pipelines CI/CD conçus spécifiquement pour les besoins. L’outil de création rapide de site étend ces fonctionnalités pour prendre en charge les pipelines de développement front-end dédiés.
+
+Pour les besoins de ce parcours, une compréhension complète de Cloud Manager n’est pas nécessaire. À un niveau élevé, Cloud Manager se compose de plusieurs niveaux de structure.
+
+![Structure de Cloud Manager](assets/cloud-manager-structure.png)
+
+* **TENANT** - Chaque client est configuré avec un client. **Entreprises de voyage et d’aventure WKND** peut être un client.
+* **PROGRAMMES** - Chaque client possède un ou plusieurs programmes. Le **Entreprises de voyage et d’aventure WKND** peut avoir une **La vie nocturne de WKND** et un **Projets WKND après-midi** programme.
+* **ENVIRONNEMENTS** - Chaque programme comporte plusieurs environnements, tels que la production pour le contenu en direct, l’évaluation et le développement à des fins de développement. **La vie nocturne de WKND** et **Projets WKND après-midi** Les programmes comporteraient à la fois des environnements de développement, d’évaluation et de production.
+* **RÉFÉRENTIEL** - Les environnements disposent de référentiels Git où l’application et le code frontal sont conservés.
+* **OUTILS ET WORKFLOWS** - Les pipelines gèrent le déploiement du code des référentiels vers les environnements.
+
+## Flux de développement front-end de création rapide de site {#flow}
+
+Le flux global est simple et intuitif, même si vous ne disposez pas encore d’une grande expérience de Cloud Manager.
+
+1. L’administrateur AEM se connecte à un environnement AEM et crée un site à l’aide d’un modèle de site.
+1. L’administrateur de Cloud Manager crée un pipeline frontal dans Cloud Manager. Le pipeline orchestre le déploiement du code d’un référentiel git vers un environnement AEM.
+1. L’administrateur AEM exporte le thème du site à partir de l’instance AEM du programme et le fournit au développeur front-end.
+1. L’administrateur de Cloud Manager accorde aux développeurs front-end un accès au référentiel git d’AEM où les personnalisations peuvent être validées.
+1. Le développeur front-end récupère les informations d’identification d’accès pour accéder à git et au pipeline.
+1. Le développeur front-end personnalise le thème, le teste à l’aide du contenu réel du site à l’aide d’un proxy, puis valide les modifications dans le référentiel git.
+1. Le développeur front-end exécute le pipeline pour déployer les personnalisations des thèmes dans l’environnement de production du programme.
+
+![Flux de création rapide de site](assets/qsc-flow.png)
+
+L’avantage principal de l’utilisation de l’outil de création rapide de site est que le développeur front-end pur n’est responsable que de la personnalisation réelle. Le développeur front-end n’a aucune interaction avec AEM et n’a aucune connaissance d’AEM.
+
+## Et après ? {#what-is-next}
+
+Maintenant que vous avez terminé cette partie du parcours de création rapide de site AEM, vous devez :
+
+* Découvrez comment AEM Sites et Cloud Manager travaillent ensemble pour faciliter le développement frontal
+* Découvrez comment l’étape de personnalisation frontale est entièrement découplée de l’AEM et ne nécessite aucune connaissance AEM.
+
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document. [Créer un site à partir d’un modèle,](create-site.md) où vous apprendrez à créer rapidement un site AEM à l’aide d’un modèle.
+
+## Ressources supplémentaires {#additional-resources}
+
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de création de site rapide en consultant le document [Créer un site à partir d’un modèle,](create-site.md) vous trouverez ci-dessous des ressources facultatives supplémentaires qui approfondissent certains concepts mentionnés dans ce document, mais qui ne sont pas nécessaires pour continuer sur le parcours.
+
+* [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Si vous souhaitez plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
+* [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Reportez-vous à ce document pour plus de détails sur ces rôles et sur la manière de les administrer.
+* [npm](https://www.npmjs.com) - AEM thèmes utilisés pour créer rapidement des sites sont basés sur npm.
+* [webpack](https://webpack.js.org) - AEM thèmes utilisés pour créer rapidement des sites reposent sur webpack.
