@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: af06d288af688dbc3baf73526460bc17d6ff7a35
+source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
 workflow-type: tm+mt
-source-wordcount: '2881'
-ht-degree: 100%
+source-wordcount: '2939'
+ht-degree: 97%
 
 ---
 
@@ -391,7 +391,7 @@ Le **sélecteur de rail** est disponible dans le coin supérieur gauche de la fe
 
 ![Sélecteur de rail développé](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-Par exemple, dans la console **Sites**, vous pouvez sélectionner le contenu uniquement (valeur par défaut), l’arborescence de contenu, la chronologie, les références ou le panneau latéral de filtrage.
+Par exemple, dans la variable **Sites** vous pouvez sélectionner uniquement le contenu (valeur par défaut), l’arborescence de contenu, la chronologie, les références, les détails du site ou le panneau latéral de filtrage.
 
 Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affiche. Si n’importe quelle autre option est sélectionnée, le nom des options apparaît en regard de l’icône de rail.
 
@@ -458,6 +458,18 @@ Les **références** affichent toutes les connexions avec la ressource sélectio
    * Contenu emprunté et/ou prêté à la page sélectionnée par le composant Référence
 
 ![Exemples de références](/help/sites-cloud/authoring/assets/references-example.png)
+
+### Site {#site}
+
+**Site** affiche les détails des sites. [créé à l’aide d’un modèle de site.](/help/sites-cloud/administering/site-creation/create-site.md)
+
+![Rail du site](../assets/site-rail.png)
+
+Appuyez ou cliquez sur le bouton **Télécharger des sources de thème** pour personnaliser le [thème de votre site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+
+>[!TIP]
+>
+>Vous trouverez une description de bout en bout du processus de création d’un site à partir d’un modèle et de personnalisation de son thème dans la section [Parcours de création rapide de site.](/help/journey-sites/quick-site/overview.md)
 
 ### Filtrer {#filter}
 

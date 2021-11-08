@@ -1,25 +1,25 @@
 ---
 title: AEM Sites Parcours
 description: Commencez ici pour un aperçu des parcours guidés disponibles pour comprendre AEM fonctionnalités puissantes des sites.
-source-git-commit: 54ec3e059ca0465f586ac396e50d2f863c28ab98
+exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
+source-git-commit: e69d3efbb45f95cbb5f84724c86c3cbd1255b8fb
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '374'
 ht-degree: 1%
 
 ---
 
-
-# AEM Parcours sans affichage {#aem-headless-journeys}
+# AEM Sites Parcours {#aem-sites-journeys}
 
 Commencez ici pour un aperçu des parcours guidés disponibles pour comprendre AEM fonctionnalités puissantes des sites.
 
 ## Présentation {#introduction}
 
-[AEM ](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) Site est une suite unifiée d’outils puissants qui vous permet de créer, gérer et publier facilement des expériences numériques sur plusieurs canaux. De la configuration de votre structure de contenu initiale à la création facile de contenu réutilisable, en passant par le déploiement sur plusieurs marchés et langues, en passant par la création d’applications personnalisées offrant des expériences personnalisées, AEM Sites est une solution globale et centrale pour créer des expériences formidables pour vos audiences où qu’elles se trouvent.
+[AEM Sites](https://business.adobe.com/products/experience-manager/sites/aem-sites.html) est une suite unifiée d’outils puissants qui vous permet de créer, gérer et publier facilement des expériences numériques sur plusieurs canaux. De la configuration de votre structure de contenu initiale à la création facile de contenu réutilisable, en passant par le déploiement sur plusieurs marchés et langues, en passant par la création d’applications personnalisées offrant des expériences personnalisées, AEM Sites est une solution globale et centrale pour créer des expériences formidables pour vos audiences où qu’elles se trouvent.
 
 ## AEM Parcours de documentation {#documentation-journeys}
 
-[A Documentation ](/help/journey-documentation/home.md) Journey rassemble de nombreux sujets et fonctionnalités différents et peut-être complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau à AEM, comprendre et résoudre un problème d&#39;entreprise du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
+[Un Parcours de documentation](/help/journey-documentation/home.md) Il relie de nombreux sujets et caractéristiques différents et peut-être complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau pour AEM, comprendre et résoudre un problème commercial du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
 
 Les Parcours de documentation sont conçus autour des principes de bonnes pratiques, reposant sur les dernières recherches d’Adobe, l’expérience de mise en oeuvre éprouvée des consultants Adobe, ainsi que les commentaires des projets clients.
 
@@ -40,5 +40,6 @@ Les Parcours de documentation suivants sont disponibles pour les rubriques AEM S
 | Titre | Description | Audience Principal |
 |---|---|---|
 | [Parcours de traduction de sites](/help/journey-sites/translation/overview.md) | Découvrez les technologies AEM Sites, leur utilisation dans votre projet et comment créer et mettre à jour des projets de traduction dans AEM de A à Z. | Spécialistes de traduction |
+| [Parcours de création de site rapide](/help/journey-sites/quick-site/overview.md) | Commencez ici pour obtenir un parcours guidé à travers l’outil de création rapide de site AEM convivial afin de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement votre site sans aucune connaissance d’arrière-plan AEM. | Développeurs front-end |
 
-Restez en ligne pour les [prochains parcours couvrant des rôles supplémentaires.](/help/journey-documentation/home.md#journeys)
+Restez à l’écoute pour [les prochains parcours couvrant des rôles supplémentaires.](/help/journey-documentation/home.md#journeys)
