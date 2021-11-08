@@ -36,19 +36,19 @@ La date de publication de Cloud Manager dans AEM 2021.10.0 as a Cloud Service es
 
 * Les graphiques SLA annuels peuvent désormais être téléchargés à partir de l’interface utilisateur de Cloud Manager.
 
-* Les exécutions de pipeline de qualité de code et hors production utilisent désormais un processus de clonage superficiel plus efficace au cours de l’étape de création, ce qui accélère la création pour les clients disposant de référentiels Git particulièrement volumineux.
+* Code quality and non-production pipeline executions will now use a more efficient shallow cloning process during the build step, leading to a faster build time for customers with especially large git repositories.
 
 * L’assistant Ajouter une Liste autorisée IP informe désormais l’utilisateur si le nombre maximal autorisé de Listes autorisées IP a été atteint.
 
-* La documentation de l’API Cloud Manager comprend désormais un terrain de lecture interactif qui permet aux utilisateurs connectés de tester l’API depuis leur navigateur. Voir [Playground de l’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
+* The Cloud Manager API documentation now includes an interactive playground that allows logged-in users to experiment with the API from their browser. Voir [Playground de l’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
 
 * L’info-bulle de la carte Programme est plus descriptive si une option de sélection sous &quot;Accéder à&quot; est désactivée. Il affiche désormais &quot;Aucun environnement de production n’existe&quot;.
 
 ### Correctifs {#bug-fixes}
 
-* Dans de rares cas, lorsqu’un Adobe restaurait l’environnement d’un client, la restauration était considérée comme terminée avant que l’environnement ne soit complètement opérationnel.
+* In rare situations, when an Adobe staff would restore a customer&#39;s environment, the restore was considered complete before the environment was fully operational.
 
 * Certaines demandes internes effectuées lors de la création de l’environnement n’ont pas été retraitées.
 
-* Si l’erreur de déploiement échoue à la suite de la vérification du nom de domaine, le message d’erreur a été corrigé afin de demander au client de contacter son représentant Adobe.
+* If deployment failed error occurs following domain name verification, the error message has been corrected to request the customer to contact their Adobe representative.
 
