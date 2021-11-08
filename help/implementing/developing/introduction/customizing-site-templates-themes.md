@@ -17,7 +17,7 @@ Découvrez comment AEM modèles de site peuvent être utilisés pour prédéfini
 
 ## Présentation {#overview}
 
-Pour permettre aux administrateurs d’AEM de créer rapidement des sites adaptés aux besoins de l’entreprise, AEM prend en charge la création de nouveaux sites à l’aide de modèles de site et de thèmes de site.
+Afin de permettre aux administrateurs d’AEM de créer rapidement des sites adaptés aux besoins de l’entreprise, AEM prend en charge la création de nouveaux sites à l’aide de modèles de site et de thèmes de site.
 
 * Un **Modèle de site AEM** contient généralement le contenu et la structure du site de base, ainsi que des informations de style du site, connues sous le nom de thème du site, pour démarrer rapidement un nouveau site. Les modèles sont puissants, car ils sont réutilisables et personnalisables. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de créer différents sites pour répondre à divers besoins professionnels.
 * Un **AEM thème du site** est un package contenant les ressources statiques, CSS et JavaScript qui définissent le style de votre site AEM et respectent la structure d’un thème AEM site.
