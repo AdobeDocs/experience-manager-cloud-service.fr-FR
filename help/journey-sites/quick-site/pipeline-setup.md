@@ -1,10 +1,10 @@
 ---
 title: Configuration de votre pipeline
 description: Créez un pipeline frontal pour gérer la personnalisation du thème de votre site.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 1%
+source-wordcount: '1007'
+ht-degree: 2%
 
 ---
 
@@ -59,21 +59,13 @@ Ainsi, le développement front-end peut fonctionner séparément et parallèleme
 
 ## Accès à Cloud Manager {#login}
 
-1. Connectez-vous à Adobe Experience Cloud à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
-1. Une fois connecté, vérifiez que vous vous trouvez dans la bonne organisation en la cochant dans le coin supérieur droit de l’écran. Si vous n’êtes membre que d’une seule organisation, cette étape n’est pas nécessaire. Ensuite, appuyez ou cliquez sur **Experience Manager**.
-
-   ![Présentation de l’Experience Cloud](assets/experience-cloud-overview.png)
-
-1. Sur la page suivante, appuyez ou cliquez sur l’icône **Launch** pour démarrer le **Cloud Manager** application.
-
-   ![Applications de Experience Manager](assets/experience-manager-apps.png)
-
-1. La page suivante répertorie les différents programmes disponibles. Appuyez ou cliquez sur celui que vous souhaitez gérer. Si vous commencez à utiliser AEM as a Cloud Service, il est probable qu’un seul programme soit disponible.
+1. Cloud Manager répertorie les différents programmes disponibles. Appuyez ou cliquez sur celui que vous souhaitez gérer. Si vous commencez à utiliser AEM as a Cloud Service, il est probable qu’un seul programme soit disponible.
 
    ![Sélection d’un programme dans Cloud Manager](assets/cloud-manager-select-program.png)
 
-Vous voyez maintenant un aperçu de Cloud Manager. Votre page sera différente, mais similaire à cet exemple.
+Vous voyez maintenant un aperçu de votre programme. Votre page sera différente, mais similaire à cet exemple.
 
 ![Présentation de Cloud Manager](assets/cloud-manager-overview.png)
 

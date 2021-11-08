@@ -1,9 +1,9 @@
 ---
 title: Déploiement de votre thème personnalisé
 description: Découvrez comment déployer le thème du site à l’aide du pipeline.
-source-git-commit: f8695dd8fdc9ffb203bab943c335ab2957df6251
+source-git-commit: b3cd9cd6ce840a57d41271d1b3c8a1cf918772b9
 workflow-type: tm+mt
-source-wordcount: '977'
+source-wordcount: '982'
 ht-degree: 3%
 
 ---
@@ -42,7 +42,7 @@ Cette partie du parcours s’applique au développeur front-end.
 
 Une fois que vous avez validé les modifications de personnalisation du thème dans le référentiel git d’AEM, vous pouvez exécuter [le pipeline créé par l’administrateur](pipeline-setup.md) pour déployer les modifications.
 
-1. Accès à Cloud Manager [comme vous l’avez fait pour récupérer vos informations d’accès git.](retrieve-access.md) Sur le **Présentation** vous verrez une carte pour **Pipelines**.
+1. Connexion à Cloud Manager [comme vous l’avez fait pour récupérer vos informations d’accès git](retrieve-access.md) Et accédez à votre programme. Sur le **Présentation** vous verrez une carte pour **Pipelines**.
 
    ![Présentation de Cloud Manager](assets/cloud-manager-overview.png)
 
