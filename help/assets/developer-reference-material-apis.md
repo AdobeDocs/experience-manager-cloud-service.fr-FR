@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: bd00cd19852affd24d732c15b03dbf8248f2ff38
 workflow-type: tm+mt
-source-wordcount: '1430'
-ht-degree: 90%
+source-wordcount: '1434'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ L’article contient des recommandations, des documents de référence et des re
 | × | Pas de prise en charge. Ne pas utiliser. |
 | - | Non disponible |
 
-| Cas d’utilisation | [aem-upload](https://github.com/adobe/aem-upload) | [API Experience Manager/Sling/](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html) JCRJava | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr) | API HTTP [[!DNL Assets]  ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr#create-an-asset) | Servlets Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) _(Prévisualisation)_ |
+| Cas d’utilisation | [aem-upload](https://github.com/adobe/aem-upload) | API Java [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr) | API HTTP [[!DNL Assets]  ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr#create-an-asset) | Servlets Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) _(Prévisualisation)_ |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Binaire original** |  |  |  |  |  |  |
 | Créer l’original | ✓ | × | - | × | × | - |
@@ -66,10 +66,10 @@ L’article contient des recommandations, des documents de référence et des re
 
 ## Chargement de ressources {#asset-upload}
 
-Dans [!DNL Experience Manager] as a [!DNL Cloud Service], vous pouvez charger directement les ressources dans l’espace de stockage cloud à l’aide de l’API HTTP. Les étapes de téléchargement d’un fichier binaire sont les suivantes. Exécutez ces étapes dans une application externe et non dans la JVM [!DNL Experience Manager].
+Dans [!DNL Experience Manager] as a [!DNL Cloud Service], vous pouvez charger directement les ressources dans l’espace de stockage cloud à l’aide de l’API HTTP. Pour charger un fichier binaire, procédez comme suit. Exécutez ces étapes dans une application externe et non dans la JVM [!DNL Experience Manager].
 
 1. [Envoyez une requête HTTP](#initiate-upload). Cela permet d’informer le déploiement [!DNL Experience Manage] de votre intention de charger un nouveau fichier binaire.
-1. [PUT du contenu du ](#upload-binary) fichier binaire sur un ou plusieurs URI fournis par la demande de lancement.
+1. [Placez (PUT) le contenu du fichier binaire](#upload-binary) sur un ou plusieurs URI fournis par la requête de lancement.
 1. [Envoyez une requête HTTP](#complete-upload) pour informer le serveur que le contenu du fichier binaire a bien été chargé.
 
 ![Présentation du protocole de chargement binaire direct](assets/add-assets-technical.png)
@@ -121,7 +121,7 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
 * `uploadToken` (chaîne) : jeton de chargement du fichier binaire correspondant. Cette valeur doit être incluse dans la requête de fin.
 * `uploadURIs` (tableau) : liste des chaînes dont les valeurs sont des URI complets vers lesquels le contenu du fichier binaire doit être chargé (voir [Chargement d’un fichier binaire](#upload-binary)).
 * `minPartSize` (nombre) : longueur minimale, en octets, des données pouvant être fournies à l’un des `uploadURIs`, s’il en existe plusieurs.
-* `maxPartSize`(nombre) : longueur maximale, en octets, des données pouvant être fournies à l’un des `uploadURIs`, s’il en existe plusieurs.
+* `maxPartSize` (nombre) : longueur maximale, en octets, des données pouvant être fournies à l’un des `uploadURIs`, s’il en existe plusieurs.
 
 ### Chargement d’un fichier binaire {#upload-binary}
 
@@ -154,7 +154,7 @@ Si la ressource existe et que ni `createVersion` ni `replace` n’est spécifié
 
 Comme c’est le cas pour le processus de lancement, les données de la requête de fin peuvent contenir des informations pour plusieurs fichiers.
 
-Le processus de chargement d’un binaire n’est pas terminé tant que l’URL complète n’est pas appelée pour le fichier. Une ressource est traitée une fois le processus de chargement terminé. Le traitement ne commence pas même si le fichier binaire de la ressource est complètement chargé, mais que le processus de chargement n’est pas terminé. Si le téléchargement est réussi, le serveur répond avec un code d’état `200`.
+Le processus de chargement d’un binaire n’est pas terminé tant que l’URL complète n’est pas appelée pour le fichier. Une ressource est traitée une fois le processus de chargement terminé. Le traitement ne commence pas même si le fichier binaire de la ressource est complètement chargé, mais que le processus de chargement n’est pas terminé. Si le téléchargement aboutit, le serveur répond avec un code d’état `200`.
 
 ### Bibliothèque de chargement Open Source {#open-source-upload-library}
 
@@ -185,7 +185,7 @@ Pour la configuration du workflow de post-traitement, utilisez les workflows sta
 
 ## Prise en charge des étapes d’un workflow de post-traitement {#post-processing-workflows-steps}
 
-Si vous effectuez une mise à niveau à partir d’une version précédente de [!DNL Experience Manager], vous pouvez utiliser les microservices de ressources pour traiter les ressources. Les microservices de ressources basés sur le cloud sont plus simples à configurer et à utiliser. Certaines étapes appliquées dans le workflow [!UICONTROL Ressource de mise à jour de la gestion des actifs numériques] de la version précédente ne sont pas prises en charge. Pour plus d’informations sur les classes prises en charge, voir la [référence API Java ou Javadocs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-javadoc/index.html).
+Si vous effectuez une mise à niveau à partir d’une version précédente d’[!DNL Experience Manager], vous pouvez utiliser les microservices de ressources pour traiter les ressources. Les microservices de ressources natifs en mode cloud sont plus simples à configurer et à utiliser. Certaines étapes appliquées dans le workflow [!UICONTROL Ressource de mise à jour de la gestion des actifs numériques] de la version précédente ne sont pas prises en charge. Pour plus d’informations sur les classes prises en charge, voir [Référence de l’API Java ou JavaDocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Les modèles de workflow techniques suivants ont été remplacés par des microservices de ressources ou la prise en charge n’est pas disponible :
 
