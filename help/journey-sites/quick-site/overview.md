@@ -1,9 +1,9 @@
 ---
 title: parcours de création rapide de site
 description: Commencez ici pour obtenir un parcours guidé à travers l’outil de création rapide de site AEM convivial afin de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement votre site sans aucune connaissance d’arrière-plan AEM.
-source-git-commit: 8daa6bc7d5df3263e8f2b506d8e0a23ecc547872
+source-git-commit: 3f1e6153c7f8b94865d10b5ce0f86b37c1f5cfe7
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1061'
 ht-degree: 2%
 
 ---
@@ -27,13 +27,9 @@ En éliminant toutes les connaissances des développeurs en matière de créatio
 
 ## Présentation vidéo {#video-overview}
 
-Pour un aperçu rapide de cette fonctionnalité en action, vous pouvez regarder cette introduction de cinq minutes.
+Pour un aperçu rapide de cette fonctionnalité en action, [vous pouvez regarder cette introduction de cinq minutes.](https://www.youtube.com/watch?v=NQeQ1jZ7ZBw)
 
->[!VIDEO]
->
->https://www.youtube.com/watch?v=NQeQ1jZ7ZBw
-
-Ce parcours de documentation vous permet de parcourir en détail toutes les fonctionnalités de la vidéo afin que vous compreniez le processus et puissiez recréer le processus dans votre propre environnement.
+Ce parcours de documentation vous guide tout au long des étapes et des détails de la vidéo afin que vous compreniez le workflow et que vous puissiez recréer le processus dans votre propre environnement.
 
 ## AEM Parcours de documentation {#documentation-journeys}
 
