@@ -3,9 +3,9 @@ title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3364'
 ht-degree: 96%
 
 ---
@@ -179,7 +179,11 @@ Le gestionnaire de modules étant un concept d’exécution, il n’est pas poss
 
 >[!IMPORTANT]
 >
->L’interface utilisateur du gestionnaire de modules peut renvoyer une **undefined** message d’erreur si l’installation d’un package dure plus de 10 minutes. Ne tentez pas de relancer l&#39;installation si cela se produit, car elle se déroule correctement en arrière-plan et certains conflits peuvent être introduits par plusieurs processus d&#39;import simultanés.
+>L’interface utilisateur du gestionnaire de modules peut renvoyer une **undefined** message d’erreur si l’installation d’un package dure plus de 10 minutes.
+>
+>Cela n’est pas dû à une erreur lors de l’installation, mais à un délai d’attente du Cloud Service pour toutes les requêtes.
+>
+>Ne tentez pas de réinstaller si une telle erreur s’affiche. L’installation se déroule correctement en arrière-plan. Si vous redémarrez l’installation, plusieurs processus d’importation simultanés peuvent introduire des conflits.
 
 Les modules de contenu (modifiable ou non) installés via Cloud Manager s’affichent dans un statut figé au sein de l’interface utilisateur du gestionnaire de modules AEM. Ces modules ne peuvent pas être réinstallés, recréés, ni même téléchargés. Ils sont répertoriés avec le suffixe **« cp2fm »**, indiquant que leur installation a été gérée par Cloud Manager.
 

@@ -3,9 +3,9 @@ title: Gestionnaire de modules
 description: Découvrez les principes de base d’AEM ; gestion des packages avec Package Manager.
 feature: Administering
 role: Admin
-source-git-commit: ddccd7f5b145283ff0f0ab39e53fce6584e147a8
+source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
 workflow-type: tm+mt
-source-wordcount: '3554'
+source-wordcount: '3584'
 ht-degree: 17%
 
 ---
@@ -37,7 +37,11 @@ Les modules de contenu créés pour AEM applications as a Cloud Service doivent 
 
 >[!IMPORTANT]
 >
->L’interface utilisateur du gestionnaire de modules peut renvoyer une **undefined** message d’erreur si l’installation d’un package dure plus de 10 minutes. Ne tentez pas de relancer l&#39;installation si cela se produit, car elle se déroule correctement en arrière-plan et certains conflits peuvent être introduits par plusieurs processus d&#39;import simultanés.
+>L’interface utilisateur du gestionnaire de modules peut renvoyer une **undefined** message d’erreur si l’installation d’un package dure plus de 10 minutes.
+>
+>Cela n’est pas dû à une erreur lors de l’installation, mais à un délai d’attente du Cloud Service pour toutes les requêtes.
+>
+>Ne tentez pas de réinstaller si une telle erreur s’affiche. L’installation se déroule correctement en arrière-plan. Si vous redémarrez l’installation, plusieurs processus d’importation simultanés peuvent introduire des conflits.
 
 Pour plus d’informations sur la gestion des modules pour AEMaaCS, consultez le document . [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md) dans le guide d’utilisation du déploiement.
 
@@ -505,7 +509,7 @@ La réinstallation des packages effectue les mêmes étapes sur un package déj�
 
 ### Chargement et installation basés sur le système de fichiers {#file-system-based-upload-and-installation}
 
-Vous pouvez complètement renoncer au gestionnaire de modules lors de l’installation des modules. AEM peut détecter les packages placés à un emplacement spécifique sur le système de fichiers local de l’ordinateur hôte et les télécharger et les installer automatiquement.
+Vous pouvez complètement renoncer à Package Manager lors de l’installation de packages. AEM peut détecter les packages placés à un emplacement spécifique sur le système de fichiers local de l’ordinateur hôte et les télécharger et les installer automatiquement.
 
 1. Sous le dossier d’installation d’AEM, une `crx-quicksart` dossier à côté du jar et `license.properties` fichier . Créez un dossier nommé `install` under `crx-quickstart` ce qui entraîne le chemin `<aem-home>/crx-quickstart/install`.
 
