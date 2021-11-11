@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: a6e0b19fae56328a587cf2fb8fdca29fe373b084
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1568'
+ht-degree: 89%
 
 ---
 
@@ -40,7 +40,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    </LocationMatch>
    ```
 
-   Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou ceux qui correspondent à une expression régulière (regex) large afin qu’ils ne soient pas appliqués au contenu que vous souhaitez peut-être garder confidentiel. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Ceci étant dit, AEM as a Cloud Service va supprimer l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer l’AEM à toujours appliquer les en-têtes de mise en cache, vous pouvez ajouter l’option **always** comme suit :
+   Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou ceux qui correspondent à une expression régulière (regex) large afin qu’ils ne soient pas appliqués au contenu que vous souhaitez peut-être garder confidentiel. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Ceci étant dit, AEM as a Cloud Service va supprimer l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer l’AEM à toujours appliquer les en-têtes de mise en cache, vous pouvez ajouter la variable **always** comme suit :
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -58,7 +58,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    { /glob "*" /type "allow" }
    ```
 
-* Pour empêcher le contenu spécifique d’être mis en cache **sur le CDN**, définissez l’en-tête Cache-Control sur *private*. Par exemple, les éléments suivants empêcheraient la mise en cache du contenu html situé sous un répertoire nommé **secure** sur le réseau de diffusion de contenu :
+* Pour empêcher la mise en cache d’un contenu spécifique **sur le réseau de diffusion de contenu**, définissez l’en-tête Cache-Control sur *private*. Par exemple, ce qui suit empêcherait le contenu HTML sous un répertoire nommé **secure** de la mise en cache sur le réseau de diffusion de contenu :
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -72,7 +72,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
 
    >[!NOTE]
-   >Notez que Dispatcher peut toujours mettre en cache le contenu en fonction de ses propres [règles de mise en cache](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Pour rendre le contenu réellement privé, veillez à ce qu’il ne soit pas mis en cache par Dispatcher.
+   >Veuillez noter que Dispatcher peut toujours mettre en cache le contenu en fonction des siens. [règles de mise en cache](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Pour rendre le contenu réellement privé, veillez à ce qu’il ne soit pas mis en cache par Dispatcher.
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 
@@ -119,19 +119,23 @@ En général, il n’est pas nécessaire d’invalider le cache du Dispatcher. V
 
 Comme les versions précédentes d’AEM, la publication ou l’annulation de publication des pages effacera le contenu du cache du Dispatcher. Si un problème de mise en cache est suspecté, les clients doivent republier les pages en question.
 
-Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’une ressource de l’auteur, elle utilise l’agent de vidage pour invalider les chemins d’accès appropriés sur son Dispatcher. Le chemin d’accès mis à jour est supprimé du cache du Dispatcher, ainsi que de ses parents, jusqu’à un niveau (que vous pouvez configurer à l’aide de [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#invalidating-files-by-folder-level)).
+Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’une ressource de l’auteur, elle utilise l’agent de vidage pour invalider les chemins d’accès appropriés sur son Dispatcher. Le chemin d’accès mis à jour est supprimé du cache du Dispatcher, ainsi que de ses parents, jusqu’à un niveau (que vous pouvez configurer à l’aide de [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#invalidating-files-by-folder-level)).
 
 ### Invalidation explicite du cache du Dispatcher {#explicit-invalidation}
 
-En général, il n’est pas nécessaire d’invalider manuellement le contenu du Dispatcher, mais cela est possible si nécessaire, comme décrit ci-dessous.
+En règle générale, il n’est pas nécessaire d’invalider manuellement le contenu dans le Dispatcher, mais cela est possible si nécessaire.
 
-Avant AEM as a Cloud Service, il existait deux manières d’invalider le cache du Dispatcher.
+>[!NOTE]
+>Avant AEM as a Cloud Service, il existait deux manières d’invalider le cache du Dispatcher.
+>
+>1. Appeler l’agent de réplication, en spécifiant l’agent de vidage de publication du Dispatcher
+>2. Appeler directement l’API `invalidate.cache` (par exemple, `POST /dispatcher/invalidate.cache`)
 
-1. Appeler l’agent de réplication, en spécifiant l’agent de vidage de publication du Dispatcher
-2. Appeler directement l’API `invalidate.cache` (par exemple, `POST /dispatcher/invalidate.cache`)
+>
+>L’approche d’API `invalidate.cache` du Dispatcher ne sera plus prise en charge puisqu’elle ne concerne qu’un nœud Dispatcher spécifique. AEM as a Cloud Service fonctionne au niveau du service, et non au niveau du nœud individuel. Les instructions d’invalidation figurant sur la page [Invalidation des pages mises en cache à partir d’AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr) ne sont donc plus valides pour AEM as a Cloud Service.
 
-L’approche d’API `invalidate.cache` du Dispatcher ne sera plus prise en charge puisqu’elle ne concerne qu’un nœud Dispatcher spécifique. AEM as a Cloud Service fonctionne au niveau du service, et non au niveau du nœud individuel. Les instructions d’invalidation figurant sur la page [Invalidation des pages mises en cache à partir d’AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html) ne sont donc plus valides pour AEM as a Cloud Service.
-À la place, l’agent de vidage de réplication doit être utilisé. Cette opération peut être réalisée en utilisant l’API de réplication. La documentation de l’API de réplication est disponible [ici](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). Pour obtenir un exemple de vidage du cache, consultez la [page d’exemple de l’API](https://helpx.adobe.com/fr/experience-manager/using/aem64_replication_api.html), et plus particulièrement, l’exemple `CustomStep` qui émet une action de réplication de type ACTIVATE pour tous les agents disponibles. Le point d’entrée de l’agent de vidage n’est pas configurable, mais il est préconfiguré pour pointer sur le Dispatcher, conformément au service de publication exécutant l’agent de vidage. L’agent de vidage peut généralement être déclenché par des événements ou des workflows OSGi.
+
+L’agent de vidage de réplication doit être utilisé. Cette opération peut être réalisée en utilisant l’API de réplication. Le [La documentation de l’API de réplication est disponible](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html), et pour un exemple de vidage du cache, reportez-vous à la section [Exemple de page API](https://helpx.adobe.com/fr/experience-manager/using/aem64_replication_api.html) (en particulier, la variable `CustomStep` exemple d’émission d’une action de réplication de type ACTIVATE pour tous les agents disponibles). Le point d’entrée de l’agent de vidage n’est pas configurable, mais il est préconfiguré pour pointer sur le Dispatcher, conformément au service de publication exécutant l’agent de vidage. L’agent de vidage peut généralement être déclenché par des événements ou des workflows OSGi.
 
 Le schéma ci-dessous illustre cela.
 
