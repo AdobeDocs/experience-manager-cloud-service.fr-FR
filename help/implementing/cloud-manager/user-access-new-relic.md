@@ -3,21 +3,23 @@ title: Accès de l’utilisateur à la nouvelle version
 description: Accès de l’utilisateur à la nouvelle version
 index: false
 hide: true
-source-git-commit: e8f5a0ca99b3772665613e24b73d4ab7525a22be
+source-git-commit: 22dc38ac4aa736ae5c676cfba16e16b0b3e44936
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
 
-# Nouvelle API de redirection pour AEM as a Cloud Service {#new-relic}
+# Nouvelle surveillance des performances de l’application avec redirection pour AEM as a Cloud Service {#new-relic}
 
 ## Présentation {#introduction}
 
-Adobe met l’accent sur la surveillance, la disponibilité et les performances de votre application. Pour atteindre cet objectif, AEM as a Cloud Service permet d’accéder à une suite de surveillance Nouvelle relique personnalisée dans le cadre de l’offre de produits standard afin de garantir à vos équipes une visibilité maximale sur vos mesures de performances du système Cloud Service Adobe Experience Manager et de l’environnement. Ce livre blanc décrit les nouvelles fonctionnalités de surveillance de la nouvelle relique activées sur vos environnements as a Cloud Service AEM afin d’améliorer les performances et de vous permettre de tirer le meilleur parti d’AEM as a Cloud Service.
+Adobe met l’accent sur la surveillance, la disponibilité et les performances de votre application. Pour atteindre cet objectif, AEM as a Cloud Service permet d’accéder à une suite de surveillance Nouvelle relique personnalisée dans le cadre de l’offre de produits standard afin de garantir à vos équipes une visibilité maximale sur vos mesures de performances du système Cloud Service Adobe Experience Manager et de l’environnement. Cette section décrit les nouvelles fonctionnalités de surveillance des nouvelles relations activées sur vos environnements as a Cloud Service AEM afin de vous aider à améliorer les performances et à tirer le meilleur parti d’AEM as a Cloud Service.
 
 ## AEM Surveillance des transactions as a Cloud Service via une nouvelle relique {#transaction-monitoring}
+
+Voici les principales fonctionnalités de la surveillance des performances des applications nouvelles pour AEM as a Cloud Service :
 
 * Accès direct dans un compte Nouvelle Relique un dédié (accès géré par l’assistance Adobe).
 
@@ -31,7 +33,14 @@ Adobe met l’accent sur la surveillance, la disponibilité et les performances 
 
 Votre compte Nouvelle Relique dédié sera configuré et géré par Adobe via l’engagement de l’assistance clientèle. Adobe restera le propriétaire et l’administrateur et fournira le compte en votre nom pour permettre l’accès à votre sous-compte dédié.
 
-Pour accéder à votre nouveau sous-compte Relic associé à votre programme as a Cloud Service AEM, ouvrez une demande à l’aide de l’onglet Assistance du Admin Console. Assurez-vous que votre ticket comprend les détails de votre ID de programme, ainsi que la liste des utilisateurs auxquels vous demandez aux équipes d’Adobe d’ouvrir l’accès Nouvelle relique à . Tous les utilisateurs doivent disposer d’un nom complet et d’une adresse électronique valide.  Pour plus d’informations sur le portail d’assistance AEM, veuillez contacter l’assistance d’Experience Cloud.
+Pour accéder à votre nouveau sous-compte Relic associé à votre programme as a Cloud Service AEM :
+
+* Ouvrez une demande en accédant à l’onglet Assistance du Admin Console.
+* Assurez-vous que votre ticket comprend les détails de votre ID de programme, ainsi que la liste des utilisateurs auxquels vous demandez aux équipes d’Adobe d’ouvrir l’accès Nouvelle relique à .
+* Tous les utilisateurs doivent disposer d’un nom complet et d’une adresse électronique valide.
+
+   >[!NOTE]
+   >Pour plus d’informations sur le portail d’assistance AEM, veuillez contacter l’assistance d’Experience Cloud.
 
 Une fois l’accès fourni, New Relic envoie un email de confirmation à chaque utilisateur afin qu’il puisse terminer le processus de configuration et se connecter. S’ils ne parviennent pas à localiser l’e-mail de confirmation du compte d’origine :
 
@@ -64,9 +73,13 @@ Pour obtenir de l’aide ou des conseils supplémentaires sur les nouvelles offr
 
 ### Qu’est-ce qu’Adobe surveille avec Nouvelle Relique ? {#adobe-monitor}
 
-Adobe surveille les services as a Cloud Service Auteur, Publier et Aperçu (le cas échéant) AEM par l’intermédiaire du plug-in Java New Relic APM. Adobe active la nouvelle télémétrie APM de redirection personnalisée et la surveillance dans les environnements as a Cloud Service de non-production et de production AEM. Votre compte Nouvelle relique est associé à un compte Principal géré par Adobe et comporte plusieurs rapports d’applications. Trois par environnement as a Cloud Service AEM :
+Adobe surveille les services as a Cloud Service Auteur, Publier et Aperçu (le cas échéant) AEM par l’intermédiaire du plug-in Java New Relic APM. Adobe active la nouvelle télémétrie APM de redirection personnalisée et la surveillance dans les environnements as a Cloud Service de non-production et de production AEM. Votre compte Nouvelle relique est associé à un compte Principal géré par Adobe et comporte plusieurs rapports d’applications.
 
-Une application pour le service de création par environnement Une application pour le service de publication par environnement (y compris Golden Publish) Une application pour le service de prévisualisation par environnement Chaque application utilise une clé de licence, AEM environnements as a Cloud Service ne signalent qu’un seul compte New Relic. Les mesures et événements de surveillance complets pour la nouvelle API relative et l’infrastructure sont conservés pendant 7 jours.
+Trois par environnement as a Cloud Service AEM :
+
+* Une application pour le service Auteur par environnement
+* Une application pour le service de publication par environnement (y compris la publication en or)
+* Une application pour le service Preview par environnement Chaque application utilise une clé de licence, AEM environnements as a Cloud Service ne signalent qu’un seul compte New Relic. Les mesures et événements de surveillance complets pour la nouvelle API relative et l’infrastructure sont conservés pendant 7 jours.
 
 ### Qui peut accéder aux données du nouveau Cloud Service Relic ? {#access-new-relic-cloud}
 
