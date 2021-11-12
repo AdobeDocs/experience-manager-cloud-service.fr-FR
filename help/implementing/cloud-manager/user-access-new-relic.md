@@ -1,9 +1,9 @@
 ---
 title: Accès de l’utilisateur à la nouvelle version
 description: Consultez cette page pour en savoir plus sur la nouvelle surveillance des performances de l’application de redirection pour AEM as a Cloud Service
-source-git-commit: 62bee2d28c92c1d36651eb8b88607255640e511b
+source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1047'
 ht-degree: 1%
 
 ---
@@ -87,7 +87,7 @@ Trois par environnement as a Cloud Service AEM :
 * Une application pour le service de publication par environnement (y compris la publication en or)
 * Une application pour le service Preview par environnement
    >[!IMPORTANT]
-   >Chaque application utilise une clé de licence. AEM environnements as a Cloud Service ne signaleront qu’un seul compte Nouvelle relique. Les mesures et événements de surveillance complets pour la nouvelle API relative et l’infrastructure sont conservés pendant 7 jours.
+   >Chaque application utilise une clé de licence. AEM environnements as a Cloud Service ne signaleront qu’un seul compte Nouvelle relique. Les mesures et événements de surveillance complets pour l’API Nouvelle version sont conservés pendant 7 jours.
 
 ### Qui peut accéder aux données du nouveau Cloud Service Relic ? {#access-new-relic-cloud}
 
