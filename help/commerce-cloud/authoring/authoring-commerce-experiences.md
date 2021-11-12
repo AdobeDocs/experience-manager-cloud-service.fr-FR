@@ -1,10 +1,9 @@
 ---
 title: Création d’expériences commerciales
 description: Expériences commerciales
-exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: a23b4767d5ef26363fa426c7d0a01a3342a81423
+source-git-commit: a5aa45f150ac6c26be9368edb3bb10cbc7d0c77f
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '703'
 ht-degree: 1%
 
 ---
@@ -63,7 +62,7 @@ L’onglet &quot;Ressources&quot; du panneau latéral de l’éditeur permet d�
 
 À l’instar des ressources, les produits peuvent être ajoutés à une page (ce qui crée un composant de teaser de produit par défaut) ou aux composants (actuellement pris en charge sont le teaser de produit et le carrousel de produit).
 
-### Ajout de liens vers des pages de produits ou de catégories dans des champs de texte à l’aide de l’éditeur de texte enrichi  {#rte}
+### Ajout de liens dans des champs de texte à l’aide de l’éditeur de texte enrichi {#rte}
 
 Les pages de catalogue de produits CIF sont des pages virtuelles rendues à la volée. Par conséquent, il n’est pas possible d’incorporer des liens hypertexte comme pour les pages d’AEM standard. CIF ajoute une nouvelle action &quot;Liens de commerce&quot; à l’éditeur de texte enrichi. Cette action fonctionne exactement comme l’action &quot;Lien hypertexte&quot; standard, mais permet aux auteurs de sélectionner un produit ou une catégorie à l’aide des sélecteurs.
 
