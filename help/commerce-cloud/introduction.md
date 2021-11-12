@@ -3,10 +3,10 @@ title: Présentation et aperçu
 description: Présentation et aperçu de Content and Commerce. Experience Manager Commerce Integration Framework (CIF) est le modèle recommandé par Adobe pour intégrer et étendre les services commerciaux disponibles à partir de Magento et d’autres solutions de commerce tierces avec Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 8a8a1f7f461e5a02bfadfc392508d920bd6c1601
+source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 99%
+source-wordcount: '893'
+ht-degree: 97%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 99%
 
 Grâce à Adobe Experience Manager Content and Commerce, les marques peuvent évoluer et innover plus rapidement pour différencier leurs expériences commerciales et de générer plus de dépenses en ligne. AEM Content and Commerce combine les expériences immersives, omnicanales et personnalisées d’Experience Manager avec celles d’un certain nombre de solutions de commerce afin d’apporter des expériences différenciées à toutes les étapes du parcours commercial, ce qui vous fait gagner du temps et entraîne un taux de conversion plus élevé.
 
-## Comment Content and Commerce contribue au succès de ses clients
+## Comment Content and Commerce contribue au succès de ses clients {#successful}
 
 Avec les attentes de plus en plus élevées des clients concernant les expériences commerciales en ligne, les marques subissent de fortes pressions pour offrir des expériences différenciées et plus de contenu plus rapidement. Cependant, la mise en œuvre d’une plateforme de gestion de contenu nécessite souvent des investissements importants en temps et en budget pour développer des éléments fondamentaux, tels que les composants personnalisés et les outils de création, et entraîne des coûts importants de maintenance et de mise à niveau. Experience Manager Sites propose Content and Commerce sous la forme d’un module complémentaire pour Experience Manager as a Cloud Service qui fournit des composants de base commerciaux prêts à l’emploi, des outils de création et un storefront de référence pour accélérer la mise en service, permettre une collaboration transparente entre les équipes et stimuler le taux de conversion.
 
@@ -40,7 +40,7 @@ Cette complexité ouvre la porte à de potentielles défaillances, à une augmen
 
 ![Éléments du module CIF](./assets/CIF/CIF_Overview.png)
 
-## Prise en charge efficace des clients par le module CIF depuis 2013
+## Prise en charge efficace des clients par le module CIF depuis 2013 {#support}
 
 Avec plus de 200 clients, CIF a prouvé son efficacité pour réaliser des projets Content and Commerce réussis. Il offre une valeur ajoutée aux technologies de l’information et aux entreprises, dès aujourd’hui et pour leur futur. Comme le décrivent de récents projets clients, CIF est un « incroyable accélérateur de développement et offre un gain de temps considérable pour générer une valeur considérable ».
 
@@ -50,23 +50,23 @@ CIF fournit des composants principaux commerciaux prêts à l’emploi qui rédu
 
 Le module complémentaire CIF apporte du contexte de produit à Experience Manager et fournit des outils de création tels qu’une console de produits et des sélecteurs de produits ou de catégories qui permettent au marketeur de créer et de diffuser des expériences Shoppable dans Experience Manager sans faire appel au développeur. Voici ses avantages :
 
-### Expériences
+### Expériences {#experiences}
 
 Grâce aux puissants outils de CIF d’AEM, les créateurs de contenu peuvent rapidement créer des expériences commerciales riches et personnalisées, de manière évolutive et indépendamment de la diffusion, afin de tirer parti de toutes les opportunités commerciales.
 
 ![Éléments du module CIF](./assets/CIF/CIF_Product_Experience_Management.png)
 
-### Délai de rentabilité (Time-To-Value)
+### Délai de rentabilité (Time-To-Value) {#ttv}
 
 Accélère le développement du projet avec les [Composants principaux AEM](https://www.aemcomponents.dev/), [le storefront de référence AEM Venia](https://github.com/adobe/aem-cif-guides-venia), [l’archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) et les modèles d’intégration pour les applications web progressives (contenu et commerce découplés).
 
 CIF est conçu vous permettre d’innover en continu grâce à un module complémentaire toujours à jour qui permet à ses clients d’accéder sans cesse à de nouvelles fonctionnalités améliorées.
 
-### Intégrations
+### Intégrations {#integrations}
 
 Connectez votre écosystème (une solution de commerce, par exemple) à Experience Cloud à l’aide d’[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS sans serveur basé sur microservice, et de [l’implémentation de référence de CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
-## Modèles et bonnes pratiques éprouvés
+## Modèles et bonnes pratiques éprouvés {#proven}
 
 CIF prend en charge les clients dotés de modèles d’intégration normalisés et basés sur les bonnes pratiques. Il permet ainsi à ses clients de profiter dès aujourd’hui de ses avantages tout en s’adaptant à leurs futurs besoins :
 
@@ -76,3 +76,9 @@ CIF prend en charge les clients dotés de modèles d’intégration normalisés 
    * Besoin de données et d’expériences produit en temps réel
 * Une maturité numérique croissante entraîne un besoin accru de gestion de l’expérience. CIF s’accompagne de fonctionnalités de gestion de l’expérience produit qui peuvent être intégrées de manière incrémentielle sans effort informatique supplémentaire.
 * Prêt pour l’omnicanal : CIF prend en charge diverses technologies de point de contact (côté serveur, hybride, côté client) avec des modèles, des accélérateurs et des composants principaux.
+
+## Parcours {#journey}
+
+Si vous suivez un Parcours Commerce, passez à l’étape suivante :
+
+* Le [AEM parcours de création de contenu](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

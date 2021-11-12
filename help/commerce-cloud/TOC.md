@@ -3,10 +3,10 @@ sub-product: AEM Content and Commerce as a Cloud Service
 user-guide-title: AEM Content and Commerce as a Cloud Service
 breadcrumb-title: Guide d’AEM Content and Commerce
 user-guide-description: Apprenez comment utiliser et administrer Experience Manager Content and Commerce as a Cloud Service.
-source-git-commit: c96d2f41a09449ee742c4c153d8c4353eb75c35a
+source-git-commit: 4f63798da8ab39dc4a74e79ae7bf381631e89a3a
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 87%
+source-wordcount: '140'
+ht-degree: 67%
 
 ---
 
@@ -16,6 +16,13 @@ ht-degree: 87%
 + [Contenu et commerce AEM](/help/commerce-cloud/home.md)
 + [Modifications notables apportées à AEM Content and Commerce as a Cloud Service](changes.md)
 + [Présentation et aperçu](introduction.md)
++ Parcours de commerce {#journeys}
+   + Parcours de création de contenu {#author}
+      + [parcours de création de contenu AEM et de commerce](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
+      + [Prise en main de la création CIF](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+      + [Gestion des pages et des modèles de catalogue de produits](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+      + [Création d’expériences de catalogue de produits étape par étape](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
+      + [Création d’expériences de produit](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
 + Intégrations {#integrations}
    + [Adobe Commerce](integrating/magento.md)
    + [Solution commerciale tierce](integrating/third-party.md)
