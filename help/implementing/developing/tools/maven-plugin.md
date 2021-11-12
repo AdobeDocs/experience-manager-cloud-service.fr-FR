@@ -2,7 +2,7 @@
 title: Plug-in Maven Content Package d’Adobe
 description: Utilisation du plug-in Maven Content Package pour déployer des applications AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 96%
@@ -117,7 +117,7 @@ Installe un module dans le référentiel. L’exécution de cet objectif ne néc
 En plus des paramètres suivants, consultez les descriptions de la section [Paramètres communs](#common-parameters).
 
 | Nom | Type | Requis | Valeur par défaut | Description |
-|---|---|---|---|---|---|
+|---|---|---|---|---|
 | `artifact` | `String` | Non | Valeur de la propriété `artifactId` du projet Maven | Chaîne au format `groupId:artifactId:version[:packaging]` |
 | `artifactId` | `String` | Non | Aucune | ID de l’artefact à installer. |
 | `groupId` | `String` | Non | Aucune | `groupId` de l’artefact à installer |
