@@ -5,9 +5,9 @@ breadcrumb-title: Guide d’implémentation
 user-guide-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service, y compris des rubriques sur le déploiement et le développement.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: dbd6eee96d05182a38d6edd91c31bbb356dc99ce
+source-git-commit: b89869223986dcc64ebefc9ae6bfb8587456d4da
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1085'
 ht-degree: 94%
 
 ---
@@ -83,6 +83,7 @@ ht-degree: 94%
       + [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
    + [Accès aux journaux et leur gestion](cloud-manager/manage-logs.md)
    + [Création de rapports de contrat SLA](cloud-manager/sla-reporting.md)
+   + [Accès de l’utilisateur à la nouvelle version](cloud-manager/user-access-new-relic.md)
    + [Présentation des notifications](cloud-manager/notifications.md)
    + Gestion des certificats SSL {#manage-ssl-certificates}
       + [Présentation](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
