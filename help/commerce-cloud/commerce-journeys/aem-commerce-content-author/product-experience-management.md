@@ -1,9 +1,9 @@
 ---
 title: Création d’expériences de produit
 description: Découvrez comment créer des expériences produit.
-source-git-commit: 2d981424d22e2c8d16505eb0cc77c67d5df2bc64
+source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1155'
 ht-degree: 1%
 
 ---
@@ -113,4 +113,5 @@ Vous êtes maintenant prêt à gérer les expériences de produits à l’aide d
 ## Ressources supplémentaires {#additional-resources}
 
 * [Création d’expériences commerciales](/help/commerce-cloud/authoring/authoring-commerce-experiences.md)
+* [Product Cockpit](/help/commerce-cloud/authoring/product-cockpit.md)
 * [Composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)
