@@ -1,9 +1,9 @@
 ---
 title: Accès de l’utilisateur à la nouvelle version
 description: Consultez cette page pour en savoir plus sur la nouvelle surveillance des performances de l’application de redirection pour AEM as a Cloud Service
-source-git-commit: bb9532685c10baf13bc31898c0038fde2c5fd43d
+source-git-commit: 696b86e9e88ca1fd7c0a5b688fa78f46227df3a4
 workflow-type: tm+mt
-source-wordcount: '1047'
+source-wordcount: '1049'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ Si l’utilisateur ne parvient pas à localiser l’e-mail de confirmation du co
    >[!NOTE]
    >Si vous ne recevez pas d’e-mail de Nouvelle Relique :
    >Vérifiez vos [filtres anti-spam](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/). Le cas échéant, [ajouter une nouvelle relique à votre liste autorisée de messagerie](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-   >Veuillez nous faire part de vos commentaires sur le ticket d’assistance et nos équipes vous aideront à poursuivre
+   >Veuillez fournir vos commentaires sur le ticket d’assistance et l’équipe d’assistance à l’Adobe vous aidera davantage.
 
 1. Si vous avez terminé le processus d’inscription et que vous ne parvenez pas à vous connecter à votre compte en raison de messages d’erreur relatifs aux courriers électroniques ou aux mots de passe, veuillez enregistrer un ticket d’assistance via [Admin Console](https://adminconsole.adobe.com/).
 
