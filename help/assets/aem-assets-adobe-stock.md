@@ -1,13 +1,13 @@
 ---
 title: Gérer les ressources [!DNL Adobe Stock] dans [!DNL Assets].
 description: Rechercher, récupérer, gérer les licences et gérer les ressources [!DNL Adobe Stock] dans [!DNL Adobe Experience Manager]. Utiliser les ressources sous licence comme toute autre ressource numérique.
-contentOwner: AG
+contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: ea1b2d58c04937304bddd528a9839bdf627f1ae9
+source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2426'
 ht-degree: 42%
 
 ---
@@ -28,6 +28,7 @@ Les entreprises peuvent intégrer leur entreprise [!DNL Adobe Stock] planifier a
 
 L’intégration nécessite :
 
+* Une [!DNL Experience Manager Assets] as a [!DNL Cloud Service] instance
 * Un [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
 * Un utilisateur disposant d’autorisations en Admin Console sur le profil de produit Stock par défaut
 * Un utilisateur disposant d’autorisations sur le profil Accès des développeurs pour la création d’une intégration dans Adobe Developer Console
@@ -39,7 +40,7 @@ Une entreprise [!DNL Adobe Stock] plan,
 * Active l’authentification du compte de service (JWT) dans [!DNL Adobe Developer Console] pour vos droits de stock
 * Permet de gérer les crédits et les licences à l’échelle mondiale à partir de [!DNL Adobe Admin Console]
 
-Dans le droit, un profil de produit par défaut pour [!DNL Adobe Stock] existe dans [!DNL Admin Console]. Plusieurs profils peuvent être créés et ils déterminent qui peut acquérir des ressources Stock sous licence. Un utilisateur ayant accès directement au profil de produit peut accéder à [https://stock.adobe.com/](https://stock.adobe.com/) et acquérir sous licence des ressources Stock. En revanche, il existe une autre méthode d’utilisation de l’accès développeur pour créer l’intégration (API) afin d’authentifier la communication entre les [!DNL Experience Manager] et [!DNL Adobe Stock].
+Dans le droit, un profil de produit par défaut pour [!DNL Adobe Stock] existe dans [!DNL Admin Console]. Plusieurs profils peuvent être créés et ils déterminent qui peut acquérir des ressources Stock sous licence. Un utilisateur disposant d’un accès direct au profil de produits peut accéder à [https://stock.adobe.com/](https://stock.adobe.com/) et acquérir sous licence des ressources Stock. Cependant, il existe une autre méthode d’utilisation de l’accès développeur pour créer une intégration (API). Cette intégration authentifie la communication entre [!DNL Experience Manager Assets] et [!DNL Adobe Stock].
 
 >[!NOTE]
 >
@@ -112,7 +113,7 @@ La configuration IMS comprend deux étapes :
 
 La clé publique (certificat) authentifie votre profil de produit dans Adobe Developer Console.
 
-1. Connectez-vous à [!DNL Experience Manager Assets] instance d’auteur. L’URL par défaut est `http://localhost:4502/aem/start.html`.
+1. Connectez-vous à [!DNL Experience Manager Assets] instance cloud.
 
 1. Dans le panneau **[!UICONTROL Outils]**, accédez à **[!UICONTROL Sécurité]** > **[!UICONTROL Configurations d’Adobe IMS]**.
 
