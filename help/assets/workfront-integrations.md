@@ -3,9 +3,9 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: Introduction à l’intégration entre [!DNL Assets] et [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: 045387bc02ca5a30e0caa020885d4cf63b4e9aef
+source-git-commit: 78c9f745465bf9dd4ca268b71391c6a23b1c61e2
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '888'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 [!DNL Adobe Workfront] est une application de gestion du travail qui vous aide à gérer l’ensemble du cycle de vie du travail au même endroit. L&#39;intégration entre [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] permet aux entreprises d’améliorer la vitesse du contenu et le délai de mise sur le marché en établissant des liens intrinsèques entre le travail et la gestion des ressources numériques. Dans le cadre de la gestion de leur travail dans Workfront, les utilisateurs ont accès aux documents et images requis.
 
-Le [!DNL Workfront for Experience Manager enhanced connector] permet des processus d’entreprise améliorés avec des workflows de bout en bout et fournit des expériences client de bout en bout personnalisées et un stockage central. Pour plus d’informations sur les fonctionnalités du [!DNL enhanced connector], voir [nouveautés de la [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Le [!DNL Workfront for Experience Manager enhanced connector] permet des processus d’entreprise améliorés avec des workflows de bout en bout et fournit des expériences client de bout en bout personnalisées et un stockage central. Adobe propose un connecteur standard et un connecteur amélioré pour intégrer les deux solutions. Pour une comparaison, reportez-vous aux fonctionnalités prises en charge ci-dessous et reportez-vous à la section [nouveautés de la [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 [!DNL Workfront for Experience Manage enhanced connector] permet à votre entreprise de :
 
