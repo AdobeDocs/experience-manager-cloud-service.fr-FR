@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
-source-wordcount: '380'
+source-git-commit: c5ae2fb098c30d2be45316367f87725d16d84af7
+workflow-type: tm+mt
+source-wordcount: '377'
 ht-degree: 100%
 
 ---
@@ -55,7 +55,7 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de ma
    * Accédez à la racine de région ou de langue de la structure de votre site ; par exemple, /content/venia/us _ou_ /content/venia/us/en pour la page échantillon Venia.
    * Sélectionnez la page et ouvrez ses propriétés.
    * Sélectionnez l’onglet Avancé.
-   * Dans la section `Configuration`, sélectionnez la configuration que vous avez créée à l’étape.
+   * Dans la section `Configuration`, sélectionnez la configuration que vous avez créée à l’étape. 3
 
 ## Ressources supplémentaires
 
