@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Search,Adobe Stock
 role: Admin,User
 exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
-source-git-commit: f64901e1f9c4ab4af6e592a7039b9e50ddbea708
+source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2441'
 ht-degree: 42%
 
 ---
@@ -314,9 +314,9 @@ Le tableau suivant explique comment fonctionnent les autorisations utilisateur l
 | User | Groupe | Autorisations | Configuration Accept Stock dans les préférences utilisateur | Accès aux ressources | Accès à Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
 | admin | N/A | Tous | N/A | Oui | Oui |
-| test-doc1 | Utilisateur DAM | `/conf/global/settings/stock/cloud-config` | Oui | Oui | Oui |
-| test-doc1 | Utilisateur DAM | `/conf/global/settings/stock/cloud-config` | Non | Erreur : Échec du chargement des données | Non |
-| test-doc1 | Utilisateur DAM | allow : `/conf/global/settings/stock` deny : `/cloud-config` | La configuration des stocks n’est pas visible | Oui | Non |
+| test-doc1 | Utilisateur DAM | /conf/global/settings/stock/cloud-config | Oui | Oui | Oui |
+| test-doc1 | Utilisateur DAM | /conf/global/settings/stock/cloud-config | Non | Erreur : Échec du chargement des données | Non |
+| test-doc1 | Utilisateur DAM | **allow**: /conf/global/settings/stock **deny**: /cloud-config | La configuration des stocks n’est pas visible | Oui | Non |
 
 ## Utilisation et gestion de ressources [!DNL Adobe Stock] dans [!DNL Experience Manager] {#usemanage}
 
