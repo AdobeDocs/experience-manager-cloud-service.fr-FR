@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
 workflow-type: tm+mt
 source-wordcount: '2704'
-ht-degree: 86%
+ht-degree: 98%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 86%
 
 Les microservices de ressource permettent un traitement évolutif et résilient des ressources à l’aide d’applications basées sur le cloud (également appelées secondaires). Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
 
-Les microservices de ressources vous permettent de traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’[!DNL Experience Manager]. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, mais des solutions tierces, telles que [!DNL ImageMagick], étaient auparavant nécessaires.
+Les microservices de ressources vous permettent de traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’[!DNL Experience Manager]. Par exemple, l’extraction de miniatures des formats de PSD et PSB est désormais possible, mais des solutions tierces auparavant nécessaires telles que [!DNL ImageMagick].
 
 Le traitement des ressources dépend de la configuration des **[!UICONTROL profils de traitement]**. Experience Manager fournit une configuration par défaut de base et permet aux administrateurs d’ajouter une configuration de traitement des ressources plus spécifique. Les administrateurs créent, gèrent et modifient les configurations des workflows de post-traitement, y compris la personnalisation facultative. La personnalisation des workflows permet aux développeurs d’étendre l’offre par défaut.
 
@@ -33,7 +33,7 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 
 ## Présentation des options de traitement des ressources {#get-started}
 
-[!DNL Experience Manager] permet de traiter les niveaux suivants.
+[!DNL Experience Manager] autorise les niveaux de traitement suivants.
 
 | Option | Description | Cas d’utilisation couverts |
 |---|---|---|
@@ -160,7 +160,7 @@ Créez les profils de traitement personnalisé supplémentaire et appliquez-les 
 Appliquez des profils de traitement aux dossiers en utilisant l’une des méthodes suivantes :
 
 * Les administrateurs peuvent sélectionner une définition de profil de traitement dans **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]** et utiliser l’action **[!UICONTROL Appliquer le profil au(x) dossier(s)]**. Cette action ouvre un navigateur de contenu qui vous permet d’accéder à des dossiers spécifiques, de les sélectionner et de confirmer l’application du profil.
-* Les utilisateurs peuvent sélectionner un dossier dans l’interface utilisateur Assets, exécuter l’action **[!UICONTROL Propriétés]** pour ouvrir l’écran des propriétés du dossier, cliquer sur l’onglet **[!UICONTROL Traitement des ressources]** et, dans la liste [!UICONTROL Profil de traitement], sélectionner le profil de traitement approprié pour ce dossier. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
+* Les utilisateurs peuvent sélectionner un dossier dans l’interface utilisateur Assets, exécuter l’action **[!UICONTROL Propriétés]** pour ouvrir l’écran des propriétés du dossier, cliquer sur l’onglet **[!UICONTROL Traitement des ressources]** puis, dans la liste [!UICONTROL Profil de traitement], sélectionner le profil de traitement approprié pour ce dossier. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
    ![Application d’un profil de traitement à un dossier à partir de l’onglet Propriétés de l’élément](assets/folder-properties-processing-profile.png)
 
 * Les utilisateurs peuvent sélectionner des dossiers ou des ressources spécifiques dans l’interface utilisateur d’Assets pour appliquer un profil de traitement, puis sélectionner l’option ![icône de retraitement des ressources](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Retraiter les ressources]** dans les options disponibles dans la partie supérieure.
@@ -169,7 +169,7 @@ Appliquez des profils de traitement aux dossiers en utilisant l’une des métho
 >
 >Un seul profil de traitement peut être appliqué à un dossier. Pour générer davantage de rendus, ajoutez d’autres définitions de rendu au profil de traitement existant.
 
-Une fois qu’un profil de traitement a été appliqué à un dossier, toutes les nouvelles ressources chargées (ou mises à jour) dans ce dossier ou dans l’un de ses sous-dossiers sont traitées à l’aide du profil de traitement supplémentaire configuré. Ce dernier s’ajoute au profil par défaut standard.
+Une fois qu’un profil de traitement est appliqué à un dossier, toutes les nouvelles ressources chargées (ou mises à jour) dans ce dossier ou dans l’un de ses sous-dossiers sont traitées à l’aide du profil de traitement supplémentaire configuré. Ce dernier s’ajoute au profil par défaut standard.
 
 >[!NOTE]
 >
@@ -204,35 +204,35 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 
 Les modèles de workflow de post-traitement sont des modèles de workflow [!DNL Experience Manager]standard. Créez des modèles différents si un autre traitement doit être exécuté pour différents emplacements de référentiel ou types de ressource.
 
-Les étapes de traitement sont ajoutées si nécessaire. Vous pouvez utiliser à la fois les étapes prises en charge disponibles, ainsi que toute étape de workflow implémentée sur mesure.
+Les étapes de traitement sont ajoutées si nécessaire. Vous pouvez utiliser les étapes prises en charge qui sont disponibles, ainsi que n’importe quelle étape de workflow implémentée sur mesure.
 
 Assurez-vous que la dernière étape de chaque workflow de post-traitement est `DAM Update Asset Workflow Completed Process`. La dernière étape permet de s’assurer qu’Experience Manager sait quand le traitement des ressources est terminé.
 
 ### Configuration de l’exécution du workflow de post-traitement {#configure-post-processing-workflow-execution}
 
-Une fois que les microservices de ressources ont terminé le traitement des ressources chargées, vous pouvez définir un workflow de post-traitement pour continuer le traitement des ressources. Pour configurer le post-traitement à l’aide de modèles de workflow, vous pouvez effectuer l’une des opérations suivantes :
+Une fois que les microservices de ressources ont terminé le traitement des ressources chargées, vous pouvez définir un workflow de post-traitement pour continuer le traitement des ressources. Pour configurer le post-traitement à l’aide de modèles de workflow, vous pouvez effectuer l’une des opérations suivantes :
 
-* [Appliquez un modèle de workflow dans Propriétés](#apply-workflow-model-to-folder) du dossier.
-* [Configurez le service](#configure-custom-workflow-runner-service) d’exécution de workflow personnalisé.
+* [Appliquez un modèle de workflow dans le dossier Propriétés](#apply-workflow-model-to-folder).
+* [Configurez le service d’exécution de workflow personnalisé](#configure-custom-workflow-runner-service).
 
 #### Application d’un modèle de workflow à un dossier {#apply-workflow-model-to-folder}
 
-Pour les cas d’utilisation standard de post-traitement, pensez à utiliser la méthode pour appliquer un workflow à un dossier. Pour appliquer un modèle de workflow dans le dossier [!UICONTROL Propriétés], procédez comme suit :
+Pour les cas d’utilisation standard de post-traitement, pensez à utiliser la méthode pour appliquer un workflow à un dossier. Pour appliquer un modèle de workflow dans le dossier [!UICONTROL Propriétés], procédez comme suit :
 
 1. Créer un modèle de processus.
 1. Sélectionnez un dossier, cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils, puis cliquez sur l’onglet **[!UICONTROL Traitement des ressources]**.
-1. Sous **[!UICONTROL Processus de démarrage automatique]**, sélectionnez le processus requis, fournissez le titre du processus, puis enregistrez les modifications.
+1. Sous **[!UICONTROL Workflow de démarrage automatique]**, sélectionnez le workflow requis, fournissez le titre du workflow, puis enregistrez les modifications.
 
    ![Application d’un workflow de post-traitement à un dossier dans ses propriétés](assets/post-processing-profile-workflow-for-folders.png)
 
-#### Configuration du service d’exécution de processus personnalisé {#configure-custom-workflow-runner-service}
+#### Configuration du service d’exécution de workflow personnalisé {#configure-custom-workflow-runner-service}
 
-Vous pouvez configurer le service d’exécution de workflow personnalisé pour les configurations avancées qui ne peuvent pas être réalisées facilement en appliquant un workflow à un dossier. Par exemple, un workflow qui utilise une expression régulière. Le gestionnaire de processus personnalisé de la gestion des actifs numériques Adobe CQ (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi. Il propose les deux options de configuration suivantes :
+Vous pouvez configurer le service d’exécution de workflow personnalisé pour les configurations avancées qui ne peuvent pas être réalisées facilement en appliquant un workflow à un dossier. Par exemple, un workflow qui utilise une expression régulière. Le gestionnaire de workflow personnalisé DAM Adobe CQ (`com.adobe.cq.dam.processor.nui.impl.workflow.CustomDamWorkflowRunnerImpl`) est un service OSGi. Il propose les deux options de configuration suivantes :
 
-* Workflows de post-traitement par chemin d’accès (`postProcWorkflowsByPath`) : plusieurs modèles de workflow peuvent être répertoriés en fonction de différents chemins de référentiel. Séparez les chemins et les modèles à l’aide d’un deux-points. Les chemins de référentiel simples sont pris en charge. Mappez-les à un modèle de workflow dans le chemin `/var`. Par exemple : `/content/dam/my-brand:/var/workflow/models/my-workflow`.
+* Workflows de post-traitement par chemin d’accès (`postProcWorkflowsByPath`) : plusieurs modèles de workflow peuvent être répertoriés en fonction de différents chemins de référentiel. Chemins et modèles séparés à l’aide d’un deux-points. Les chemins de référentiel simples sont pris en charge. Mappez-les à un modèle de workflow dans le chemin `/var`. Par exemple : `/content/dam/my-brand:/var/workflow/models/my-workflow`.
 * Workflows de post-traitement par expression (`postProcWorkflowsByExpression`) : plusieurs modèles de workflows peuvent être répertoriés en fonction de différentes expressions régulières. Les expressions et les modèles doivent être séparés par un signe « deux-points ». L’expression régulière doit pointer directement vers le nœud Ressource et non vers l’un des rendus ou fichiers. Par exemple : `/content/dam(/.*/)(marketing/seasonal)(/.*):/var/workflow/models/my-workflow`.
 
-Pour savoir comment déployer une configuration OSGi, voir [déploiement sur [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
+Pour savoir comment déployer une configuration OSGi, voir [déploiement vers [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 

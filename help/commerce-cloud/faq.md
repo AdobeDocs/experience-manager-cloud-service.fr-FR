@@ -2,10 +2,10 @@
 title: Intégration d’AEM et de Commerce à l’aide de Commerce Integration Framework – FAQ
 description: Intégration d’AEM et de Commerce à l’aide de Commerce Integration Framework – FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 84a97f09402602df33c8f0494feed57fdb510add
-workflow-type: ht
-source-wordcount: '950'
-ht-degree: 100%
+source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 97%
 
 ---
 
@@ -47,7 +47,7 @@ Les données dynamiques telles que le prix ou l’inventaire ne sont pas mises e
 
 ## 9. Comment l’invalidation du cache pour le Dispatcher AEM fonctionne-t-elle avec AEM et la solution de commerce ?
 
-Nous vous recommandons de configurer l’invalidation de cache TTL pour les pages mises en cache dans le Dispatcher. Pour les informations dynamiques telles que le prix ou l’inventaire, il est recommandé d’effectuer le rendu de la date côté client. Pour plus d’informations sur l’invalidation de cache TTL, reportez-vous à [AEM Dispatcher](https://helpx.adobe.com/fr/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+Nous vous recommandons de configurer l’invalidation de cache TTL pour les pages mises en cache dans le Dispatcher. Pour les informations dynamiques telles que le prix ou le stock, nous vous recommandons de rendre les données côté client. Pour plus d’informations sur l’invalidation de cache TTL, reportez-vous à [AEM Dispatcher](https://helpx.adobe.com/fr/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 10. Y a-t-il une recommandation sur la recherche unifiée dans le contenu AEM avec Commerce ?
 
@@ -67,7 +67,7 @@ Nous vous recommandons de gérer les données et le contenu liés au marketing d
 
 ## 14. Comment pouvons-nous garantir la conformité PCI lors de l’utilisation d’AEM pour toute la couche de présentation ?
 
-Nous vous recommandons d’utiliser des méthodes de paiement dématérialisé. Le client du navigateur est ainsi en communication directe avec le fournisseur de passerelle de paiement, de sorte que ni Adobe ni les solution de commerce ne contiennent ni ne transmettent les données du détenteur de carte. Cette approche nécessite uniquement une conformité PCI de niveau 3. Cependant, il existe d’autres aspects à considérer pour assurer une conformité PCI entière, tels que la façon dont les employés interagissent avec le système et les données. Pour plus d’informations sur la conformité PCI Magento, consultez <https://magento.com/pci-compliance>
+Nous vous recommandons d’utiliser des méthodes de paiement dématérialisé. Le client du navigateur est ainsi en communication directe avec le fournisseur de passerelle de paiement, de sorte que ni Adobe ni les solution de commerce ne contiennent ni ne transmettent les données du détenteur de carte. Cette approche nécessite uniquement une conformité PCI de niveau 3. Cependant, il existe d’autres aspects à considérer pour assurer une conformité PCI entière, tels que la façon dont les employés interagissent avec le système et les données. Pour plus d’informations sur la conformité PCI Magento, consultez [Exigences de conformité PCI](https://magento.com/pci-compliance).
 
 ## 15. Si j’utilise des versions cloud d’AEM et de Magento, cette solution conjointe est-elle conforme PCI ?
 

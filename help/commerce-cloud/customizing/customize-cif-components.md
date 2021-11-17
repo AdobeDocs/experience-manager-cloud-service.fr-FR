@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 4933fc37-5890-47f5-aa09-425c999f0c91
-source-git-commit: 1575d5d8b06b537fc9754885905aacdfd2e33fbf
-workflow-type: ht
-source-wordcount: '2582'
+source-git-commit: a30006b7eedbe2bc6993f47b7e8433af6df17a07
+workflow-type: tm+mt
+source-wordcount: '2578'
 ht-degree: 100%
 
 ---
@@ -246,7 +246,7 @@ Utilisez l’[IDE de votre choix](https://experienceleague.adobe.com/docs/experi
        ...
        private AbstractProductRetriever productRetriever;
    
-       /* add this method to intialize the proudctRetriever */
+       /* add this method to initialize the productRetriever */
        @PostConstruct
        public void initModel() {
            productRetriever = productTeaser.getProductRetriever();

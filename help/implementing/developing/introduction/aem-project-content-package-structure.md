@@ -2,10 +2,10 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
+source-git-commit: b9ada47611a3e4c38bedeae21f0bcf638c13b17a
 workflow-type: tm+mt
-source-wordcount: '2878'
-ht-degree: 98%
+source-wordcount: '2877'
+ht-degree: 96%
 
 ---
 
@@ -94,10 +94,10 @@ La structure de déploiement d’application recommandée est la suivante :
 
 ### Modules de contenu
 
-+ Le module `ui.content` contient l’ensemble du contenu et de la configuration. Le module de contenu contient toutes les définitions de nœud qui ne se trouvent pas dans les modules `ui.apps` ou `ui.config` ou, en d’autres termes, tout ce qui ne se trouve pas dans `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du module `ui.content` :
++ Le module `ui.content` contient l’ensemble du contenu et de la configuration. Le module de contenu contient toutes les définitions de noeud qui ne figurent pas dans la variable `ui.apps` ou `ui.config` ou, en d’autres termes, tout ce qui ne figure pas dans la variable `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du module `ui.content` :
    + Configurations basées sur le contexte
       + `/conf`
-   + Structures de contenu requises et complexes (c.-à-d., déploiement de contenu basé sur et étendant les structures de contenu de base passées définies dans Repo Init)
+   + Structures de contenu requises et complexes (c.-à-d., Création de contenu qui s’appuie sur et étend d’anciennes structures de contenu de ligne de base définies dans Repo Init.)
       + `/content`, `/content/dam`, etc.
    + Taxonomies du balisage régies
       + `/content/cq:tags`
