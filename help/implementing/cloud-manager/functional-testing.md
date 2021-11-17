@@ -2,10 +2,10 @@
 title: Tests fonctionnels – Cloud Services
 description: Tests fonctionnels – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 749daae8825b63dbf5b0101b4cab39730e9b1973
+source-git-commit: 2bb72c591d736dd1fe709abfacf77b02fa195e4c
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 93%
+source-wordcount: '946'
+ht-degree: 89%
 
 ---
 
@@ -119,9 +119,11 @@ En outre, l’en-tête de manifeste Cloud-Manager-TestType du fichier JAR doit �
     </plugins>
 ```
 
-Dans ce fichier JAR, les noms de classe des tests à exécuter doivent se terminer par IT.
+Dans ce fichier JAR, les noms de classe des tests à exécuter doivent se terminer par `IT`.
 
-Par exemple, une classe nommée `com.myco.tests.aem.ExampleIT` sera exécutée, mais pas une classe nommée `com.myco.tests.aem.ExampleTest`.
+Par exemple, une classe nommée `com.myco.tests.aem.it.ExampleIT` est exécuté, mais une classe nommée `com.myco.tests.aem.it.ExampleTest` non.
+
+De plus, pour exclure le code test de la vérification de la couverture de l’analyse du code, le code test doit se trouver sous un package nommé `it` (le filtre d’exclusion de la couverture est `**/it/**/*.java`).
 
 Les classes de test doivent être des tests JUnit normaux. L’infrastructure de test est conçue et configurée pour être compatible avec les conventions utilisées par la bibliothèque de tests aem-testing-clients. Les développeurs sont vivement encouragés à utiliser cette bibliothèque et à suivre les bonnes pratiques en vigueur. Pour plus d’informations, voir [Lien Git](https://github.com/adobe/aem-testing-clients).
 
