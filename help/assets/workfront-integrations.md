@@ -3,9 +3,9 @@ title: '[!DNL Experience Manager Assets] integration with [!DNL Adobe Workfront]
 description: Introduction à l’intégration entre [!DNL Assets] et [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
-source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
+source-git-commit: 533217df95115505535544aaf9d6a8f5a4e2a81f
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '922'
 ht-degree: 2%
 
 ---
@@ -15,17 +15,19 @@ ht-degree: 2%
 
 [!DNL Adobe Workfront] est une application de gestion du travail qui vous aide à gérer l’ensemble du cycle de vie du travail au même endroit. L&#39;intégration entre [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] permet aux entreprises d’améliorer la vitesse du contenu et le délai de mise sur le marché en établissant des liens intrinsèques entre le travail et la gestion des ressources numériques. Dans le cadre de la gestion de leur travail dans Workfront, les utilisateurs ont accès aux documents et images requis.
 
+Le [!DNL Workfront for Experience Manager enhanced connector] permet des processus d’entreprise améliorés avec des workflows de bout en bout et fournit des expériences client de bout en bout personnalisées et un stockage central. Pour plus d’informations sur les fonctionnalités du [!DNL enhanced connector], voir [nouveautés de la [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+
 Adobe propose deux connecteurs différents pour intégrer les deux solutions. Les connecteurs permettent l’automatisation, la configuration et les workflows complexes de l’entreprise entre les [!DNL Assets] et [!DNL Workfront]. En outre, [!DNL Assets Essentials] est disponible sous la forme d’un module complémentaire [!DNL Workfront] les clients peuvent acheter séparément. Pour en savoir plus, voir [[!DNL Workfront] and [!DNL Assets Essentials] integration](https://experienceleague.adobe.com/docs/experience-manager-assets-essentials/help/integration.html).
 
 [!DNL Workfront for Experience Manage enhanced connector] permet à votre entreprise de :
 
-* Collaborez facilement. Les équipes créatives peuvent s&#39;inquiéter d&#39;une chose de moins. Une fois le travail terminé, ils peuvent l’envoyer à AEM Assets en cliquant sur un bouton.
-* Enrichissez les ressources à chaque étape. Collectez de nouvelles données à chaque étape du cycle de vie des ressources. De l’idéation à la diffusion, votre entreprise peut capturer des mesures clés pour prendre des décisions plus éclairées au sujet du développement futur des ressources.
-* Référencer des ressources existantes. Recherchez et réutilisez facilement des ressources existantes en production et ajoutez-les à de nouveaux projets en tant qu’éléments de référence.
-* Synchronisez toutes vos métadonnées. Améliorez vos métadonnées en les rendant aussi faciles à ajouter que possible. Avec le connecteur, les métadonnées sont bidirectionnellement synchronisées entre Workfront et AEM Assets.
-* Utilisation [!DNL Experience Manager Assets] fonctionnalités de gestion numérique. Accédez à toutes vos ressources numériques directement dans votre [!DNL Creative Cloud] applications. Balisage et recadrage intelligents compatibles avec l’IA, outils de recherche, diffusion dynamique par le biais de [!DNL Dynamic Media], et beaucoup plus.
+* Créez automatiquement des dossiers de Experience Manager liés dans Workfront et organisez les dossiers en fonction des Portfolios, programmes et projets Workfront.
+* Synchronisez les métadonnées de projet Workfront avec les dossiers de Experience Manager liés.
+* Mises à jour des métadonnées de Experience Manager avec de nouvelles versions.
+* Définissez des statuts d’objet Workfront en fonction de conditions configurables à l’aide de workflows Experience Manager.
+* Publiez des ressources dans l’environnement de publication Experience Manager ou dans Brand Portal.
 
-Voir la prise en charge de la plateforme et d’autres [conditions préalables pour le connecteur amélioré](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
+Voir la prise en charge de la plateforme et [conditions préalables pour le connecteur amélioré](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
 >[!IMPORTANT]
 >
