@@ -4,10 +4,10 @@ user-guide-title: Guide d’Assets as a Cloud Service
 breadcrumb-title: Guide d’Assets
 user-guide-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 solution: Experience Manager, Experience Manager as a Cloud Service, Experience Manager Assets
-source-git-commit: ba962df2fe3a690b50a1f938aef42d9d907e8797
+source-git-commit: d75d9ac16f64b6770fcf35d58474c47c52b1585b
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 98%
+source-wordcount: '488'
+ht-degree: 96%
 
 ---
 
@@ -127,3 +127,7 @@ ht-degree: 98%
    + [FAQ sur la diffusion de contenu HTTP/2](dynamic-media/http2faq.md)
    + [Fin de prise en charge des visionneuses Flash](dynamic-media/flash-viewers-eol.md)
    + [Fin de vie des visionneuses DHTML](dynamic-media/dhtml-viewer-endoflifefaqs.md)
++ Intégration à d’autres solutions {#integrations}
+   + [Intégrations avec [!DNL Adobe Workfront]](workfront-integrations.md)
+   + [Installer [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-install.md)
+   + [Configurer [!DNL enhanced connector] pour [!DNL Workfront]](workfront-connector-configure.md)
