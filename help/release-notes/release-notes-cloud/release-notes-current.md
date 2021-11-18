@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e911abd75cf44d2188e936e9143a48cb88236865
+source-git-commit: f542d9423450086fcc4c0ba62f0e6f178df462e3
 workflow-type: tm+mt
 source-wordcount: '1436'
-ht-degree: 14%
+ht-degree: 25%
 
 ---
 
@@ -148,11 +148,11 @@ La date de publication de Cloud Manager dans AEM 2021.10.0 as a Cloud Service es
 
 * En vue de certaines modifications à venir, les pipelines de déploiement existants seront désormais référencés et étiquetés dans l’interface utilisateur comme **Pile complète** pipelines.
 
-* La carte du pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. L’utilisateur peut sélectionner Exécuter/Pause/Reprendre directement dans le menu d’actions associé à chaque pipeline.
+* La carte Pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. L’utilisateur peut sélectionner Exécuter/Pause/Reprendre directement dans le menu d’actions associé à chaque pipeline.
 
 * Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service via l’interface utilisateur.
 
-* L’ajout et la modification d’expériences de pipeline ont été actualisés afin d’utiliser désormais des modèles familiers et modernes.
+* Les expériences d’ajout et de modification de pipeline ont été actualisées afin d’utiliser désormais des modèles familiers et modernes.
 
 * Les utilisateurs de Cloud Manager peuvent désormais envoyer leurs commentaires directement depuis l’interface utilisateur via le **Commentaires** en haut à droite de la landing page.
 
@@ -162,9 +162,9 @@ La date de publication de Cloud Manager dans AEM 2021.10.0 as a Cloud Service es
 
 * L’assistant Ajouter une Liste autorisée IP informe désormais l’utilisateur si le nombre maximal autorisé de Listes autorisées IP a été atteint.
 
-* La documentation de l’API Cloud Manager comprend désormais un terrain de lecture interactif qui permet aux utilisateurs connectés de tester l’API depuis leur navigateur. Voir [Playground de l’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
+* La documentation de l’API Cloud Manager comprend désormais un laboratoire interactif qui permet aux utilisateurs connectés de tester l’API depuis leur navigateur. Consultez [Laboratoire de l’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
 
-* L’info-bulle de la carte Programme est plus descriptive si une option de sélection sous &quot;Accéder à&quot; est désactivée. Il affiche désormais &quot;Aucun environnement de production n’existe&quot;.
+* L’info-bulle de la carte Programme offre des informations plus détaillées si une option de sélection est désactivée sous Accéder à. Il affiche désormais &quot;Aucun environnement de production n’existe&quot;.
 
 ### Correctifs {#bug-fixes-cm-oct}
 
@@ -172,7 +172,7 @@ La date de publication de Cloud Manager dans AEM 2021.10.0 as a Cloud Service es
 
 * Certaines demandes internes effectuées lors de la création de l’environnement n’ont pas été retraitées.
 
-* Si l’erreur de déploiement échoue à la suite de la vérification du nom de domaine, le message d’erreur a été corrigé afin de demander au client de contacter son représentant Adobe.
+* Si l’erreur de déploiement échoue à la suite de la vérification des noms de domaine, le message d’erreur a été corrigé afin de demander au client de contacter son représentant Adobe.
 
 ## Analyseur des bonnes pratiques {#best-practices-analyzer}
 

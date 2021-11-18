@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9844a092f440f4520b4dd75e6a6253a4593eb630
+source-git-commit: 3ea19210049e49401da892021f098005759542a3
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 97%
+source-wordcount: '790'
+ht-degree: 79%
 
 ---
 
@@ -29,11 +29,11 @@ Les [composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-compon
 
 ## Configuration {#configuration}
 
-Pour configurer le service `UrlProvider` en fonction des exigences SEO et des besoins, un projet doit fournir une configuration OSGI pour la « configuration du fournisseur d’URL CIF ».
+Pour configurer la variable `UrlProvider` Le service selon les exigences de l’optimisation pour les moteurs de recherche et a besoin d’un projet doit fournir une configuration OSGI pour la &quot;configuration du fournisseur d’URL CIF&quot;.
 
 >[!NOTE]
 >
-> Depuis la version 2.0.0 des composants principaux CIF d’AEM, la configuration du fournisseur d’URL fournit uniquement des formats d’URL prédéfinis, au lieu des formats configurables en texte libre connus des versions 1.x. De plus, l’utilisation de sélecteurs pour transmettre des données dans des URL a été remplacée par des suffixes.
+> Depuis la version 2.0.0 des composants principaux CIF AEM, la configuration du fournisseur d’URL fournit uniquement des formats d’URL prédéfinis, au lieu des formats configurables en texte libre connus des versions 1.x. De plus, l’utilisation de sélecteurs pour transmettre des données dans des URL a été remplacée par des suffixes.
 
 ### Format d’URL de page de produits {#product}
 
@@ -76,14 +76,14 @@ Avec les données d’exemple ci-dessus, une URL de page de catégorie formatée
 
 ## Formats d’URL personnalisés {#custom-url-format}
 
-Pour fournir un format d’URL personnalisé, un projet peut implémenter l’interface [`UrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) et enregistrer l’implémentation comme service OSGI, en l’utilisant comme page de catégorie ou format d’URL de page de produit. La propriété de service `UrlFormat#PROP_USE_AS` indique lequel des formats prédéfinis configurés à remplacer :
+Pour fournir un format d’URL personnalisé, un projet peut mettre en oeuvre le [`UrlFormat` interface](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/UrlFormat.html) et enregistrez l’implémentation en tant que service OSGI, en l’utilisant comme page de catégorie ou format d’url de page de produit. La propriété de service `UrlFormat#PROP_USE_AS` indique lequel des formats prédéfinis configurés à remplacer :
 
 * `useAs=productPageUrlFormat`, remplacera le format d’URL de page de produit configuré.
 * `useAs=categoryPageUrlFormat`, remplacera le format d’URL de page de catégorie configuré.
 
 S’il existe plusieurs mises en œuvre de `UrlFormat` enregistrées en tant que services OSGI, celle qui a le rang de service supérieur remplace celle qui a le rang de service inférieur.
 
-`UrlFormat` doit mettre en œuvre une paire de méthodes pour créer une URL à partir d’un mappage de paramètres donné et analyser une URL pour renvoyer le même Mappage de paramètres. Les paramètres sont identiques à ceux décrits ci-dessus. Seul le paramètre `{{uid}}` supplémentaire est fourni au `UrlFormat` pour les catégories.
+Le `UrlFormat` doit mettre en oeuvre une paire de méthodes pour créer une URL à partir d’une carte donnée de paramètres et analyser une URL pour renvoyer la même carte de paramètres. Les paramètres sont identiques à ceux décrits ci-dessus. Seul le paramètre `{{uid}}` supplémentaire est fourni au `UrlFormat` pour les catégories.
 
 ## Combinaison avec des mappages Sling {#sling-mapping}
 
@@ -91,9 +91,9 @@ En plus du `UrlProvider`, il est également possible de configurer des [mappages
 
 ## Combinaison avec AEM Dispatcher {#dispatcher}
 
-Les réécritures d’URL peuvent également être archivées en utilisant le serveur HTTP AEM Dispatcher avec le module `mod_rewrite`. L’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) fournit une configuration de Dispatcher AEM de référence qui inclut déjà des [règles de réécriture](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) de base pour la taille générée.
+Les réécritures d’URL peuvent également être obtenues en utilisant AEM serveur HTTP Dispatcher avec `mod_rewrite` module . L’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) fournit une configuration de Dispatcher AEM de référence qui inclut déjà des [règles de réécriture](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) de base pour la taille générée.
 
-## Exemple
+## Exemple {#example}
 
 Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) comprend des exemples de configuration afin de démontrer l’utilisation d’URL personnalisées pour les pages de produits et de catégories. Cela permet à chaque projet de configurer des modèles d’URL individuels pour les pages de produits et de catégories en fonction de leurs besoins SEO. Une combinaison de mappages `UrlProvider` et Sling CIF telle que décrite ci-dessus est utilisée.
 
@@ -101,7 +101,7 @@ Le projet de [magasin de référence Venia](https://github.com/adobe/aem-cif-gui
 >
 >Cette configuration doit être ajustée avec le domaine externe utilisé par le projet. Les mappages Sling fonctionnent en fonction du nom d’hôte et du domaine. Par conséquent, cette configuration est désactivée par défaut et doit être activée avant le déploiement. Pour ce faire, renommez le dossier `hostname.adobeaemcloud.com` de mappage Sling dans `ui.content/src/main/content/jcr_root/etc/map.publish/https` en fonction du nom de domaine utilisé et activez cette configuration en ajoutant `resource.resolver.map.location="/etc/map.publish"` à la configuration `JcrResourceResolver` du projet.
 
-## Ressources supplémentaires
+## Ressources supplémentaires {#additional}
 
 * [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
 * [Mappage des ressources AEM](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/resource-mapping.html?lang=fr)

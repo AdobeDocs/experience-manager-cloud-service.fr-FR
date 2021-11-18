@@ -2,10 +2,10 @@
 title: Intégration d’AEM et de Commerce à l’aide de Commerce Integration Framework – FAQ
 description: Intégration d’AEM et de Commerce à l’aide de Commerce Integration Framework – FAQ
 exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
-source-git-commit: 282742f043aef33bcd14b7a40d388a6d3f8748c1
+source-git-commit: 283bef84f2d5973150be8f62bd6f86193252d4f4
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 97%
+source-wordcount: '952'
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 97%
 
 ## 1. Le GraphQL CIF est-il utilisé uniquement pour Commerce ou sera-t-il disponible pour interroger du contenu créé dans AEM JCR ?
 
-Adobe a adopté les API GraphQL de Magento comme API commerciales officielles pour toutes les données liées au commerce. Par conséquent, AEM utilise GraphQL pour échanger des données commerciales avec Magento et tout moteur de commerce via I/O Runtime. Cette API GraphQL est indépendante de l’API GraphQL AEM pour accéder aux fragments de contenu.
+Adobe a adopté les API GraphQL de Magento comme API commerciale officielle pour toutes les données liées au commerce. Par conséquent, AEM utilise GraphQL pour échanger des données commerciales avec Magento et tout moteur de commerce via I/O Runtime. Cette API GraphQL est indépendante de l’API GraphQL AEM pour accéder aux fragments de contenu.
 
 ## 2. Les ressources de produit (images) peuvent-elles être stockées et référencées à partir d’AEM à l’aide de l’administrateur Adobe Commerce (Magento) ? Comment les ressources issues de Dynamic Media peuvent-elles être utilisées ?
 
@@ -35,7 +35,7 @@ Le module complémentaire CIF utilisé avec le Cloud Service AEM permet aux don
 
 ## 6. Quelle taille de catalogue AEM peut-il prendre en charge à l’aide de CIF ?
 
-Cela dépend de quelques aspects supplémentaires que vous devez prendre en compte. Quel est le ratio de cache de vos pages et données de catalogue ? Combien de demandes simultanées attendez-vous aux heures de pointe ? Quelle est l’évolutivité des API de vos solutions de commerce ?
+Cela dépend de quelques aspects supplémentaires que vous devez prendre en compte. Quel est le ratio de cache de vos pages et données de catalogue ? Combien de demandes simultanées attendez-vous aux heures de pointe ? Quelle est l’évolutivité des API de vos solutions commerciales ?
 
 ## 7. Comment PIM opère-t-il dans ce framework ?
 
@@ -63,11 +63,11 @@ Les données produit sont généralement déjà traduites dans PIM ou Magento. L
 
 ## 13. Existe-t-il un moyen d’améliorer les données de produit avec le texte commercial ? Où effectuer cette opération ? Dans AEM ou dans la solution de commerce ?
 
-Nous vous recommandons de gérer les données et le contenu liés au marketing dans AEM. Mettez en scène les données de produit de votre solution de commerce grâce à des attributs supplémentaires à l’aide de fragments de contenu ou créez et liez des fragments d’expérience de contenu sans structure avec vos produits.
+Nous vous recommandons de gérer les données et le contenu liés au marketing dans AEM. Décorez les données de produit de votre solution commerciale avec des attributs supplémentaires à l’aide de fragments de contenu ou créez et liez des fragments d’expérience pour le contenu non structuré avec vos produits.
 
 ## 14. Comment pouvons-nous garantir la conformité PCI lors de l’utilisation d’AEM pour toute la couche de présentation ?
 
-Nous vous recommandons d’utiliser des méthodes de paiement dématérialisé. Le client du navigateur est ainsi en communication directe avec le fournisseur de passerelle de paiement, de sorte que ni Adobe ni les solution de commerce ne contiennent ni ne transmettent les données du détenteur de carte. Cette approche nécessite uniquement une conformité PCI de niveau 3. Cependant, il existe d’autres aspects à considérer pour assurer une conformité PCI entière, tels que la façon dont les employés interagissent avec le système et les données. Pour plus d’informations sur la conformité PCI Magento, consultez [Exigences de conformité PCI](https://magento.com/pci-compliance).
+Nous vous recommandons d’utiliser des méthodes de paiement abstraites. Le client du navigateur est ainsi en communication directe avec le fournisseur de passerelle de paiement, de sorte que ni Adobe ni les solution de commerce ne contiennent ni ne transmettent les données du détenteur de carte. Cette approche nécessite uniquement une conformité PCI de niveau 3. Cependant, il existe d’autres aspects à considérer pour assurer une conformité PCI entière, tels que la façon dont les employés interagissent avec le système et les données. Pour plus d’informations sur la conformité PCI Magento, consultez [Exigences de conformité PCI](https://magento.com/pci-compliance).
 
 ## 15. Si j’utilise des versions cloud d’AEM et de Magento, cette solution conjointe est-elle conforme PCI ?
 

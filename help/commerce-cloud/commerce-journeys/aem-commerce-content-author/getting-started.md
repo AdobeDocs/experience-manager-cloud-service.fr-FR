@@ -1,10 +1,10 @@
 ---
 title: Prise en main de la création CIF
 description: Prise en main de la création CIF
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+source-git-commit: e497b5b4439cf91ec7ea698d9bedcb4210802414
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ Cet article s&#39;appuie sur ces principes fondamentaux.
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment utiliser CIF pour la création spécifique à Content and Commerce. Après l’avoir lu, vous devriez :
+Ce document vous aide à comprendre comment utiliser CIF pour la création spécifique à Content and Commerce. Après lecture, vous devez :
 
 * Présentation des concepts de création CIF à l’aide d’Universal Editor
 * Accès aux données du catalogue de produits dans AEM à l’aide de sélecteurs de produits et de catégories
