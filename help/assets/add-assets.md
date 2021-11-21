@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 98%
+source-wordcount: '2168'
+ht-degree: 93%
 
 ---
 
@@ -144,18 +144,23 @@ Procédez de la manière suivante pour configurer l’outil :
 
 ![Configuration de l’importateur en masse](assets/bulk-import-config.png)
 
-1. Sur la page [!UICONTROL Configuration de l’importation en masse], indiquez les valeurs requises.
+1. Activé **[!UICONTROL configuration des imports en masse]** , indiquez les valeurs requises, puis sélectionnez **[!UICONTROL Enregistrer]**.
 
    * [!UICONTROL Titre] : un titre descriptif.
-   * [!UICONTROL Importer la source] : sélectionnez la source de données appropriée.
+   * [!UICONTROL Importer la source]: Sélectionnez la source de données appropriée.
+   * [!UICONTROL Compte de stockage Azure]: Indiquez le nom de la variable [!DNL Azure] compte de stockage.
+   * [!UICONTROL Conteneur Blob Azure]: Fournissez les [!DNL Azure] conteneur de stockage.
+   * [!UICONTROL Clé d’accès Azure]: Fournissez la clé d’accès à [!DNL Azure] compte .
+   * [!UICONTROL Dossier source]: Ce filtre est généralement pris en charge par les fournisseurs de stockage dans le cloud Azure et AWS.
    * [!UICONTROL Filtrer par taille minimale] : indiquez la taille de fichier minimale des ressources en Mo.
    * [!UICONTROL Filtrer par taille maximale] : indiquez la une taille de fichier maximale des ressources en Mo.
-   * [!UICONTROL Exclure les types Mime] : liste séparée par des virgules des types MIME à exclure de l’ingestion. Par exemple, `image/jpeg, image/.*, video/mp4`.
+   * [!UICONTROL Exclure les types Mime] : liste séparée par des virgules des types MIME à exclure de l’ingestion. Par exemple, `image/jpeg, image/.*, video/mp4`. Voir [tous les formats de fichier pris en charge](/help/assets/file-format-support.md).
    * [!UICONTROL Inclure les types MIME] : liste séparée par des virgules des types MIME à inclure dans l’ingestion. Voir [tous les formats de fichier pris en charge](/help/assets/file-format-support.md).
    * [!UICONTROL Mode d’importation] : sélectionnez Ignorer, Remplacer ou Créer une version. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’importation d’une ressource si elle existe déjà. Voir la signification de [Remplacer et créer des options de version](#handling-upload-existing-file).
    * [!UICONTROL Dossier cible des ressources] : importer un dossier dans la gestion des actifs numériques (DAM) où les ressources doivent être importées. Par exemple, `/content/dam/imported_assets`
+   * [!UICONTROL Fichier de métadonnées]: Fichier de métadonnées à importer, fourni au format CSV. Vous fournissez ce fichier CSV à l’emplacement de l’objet blob source et faites référence au chemin d’accès dans la configuration de l’outil d’ingestion en masse.
 
-1. Vous pouvez supprimer, modifier, exécuter et en faire plus avec les configurations que vous avez créées pour l’outil d’ingestion. Lorsque vous sélectionnez une configuration d’importation en masse pour l’outil d’ingestion, les options suivantes sont disponibles dans la barre d’outils.
+1. Vous pouvez supprimer, modifier, exécuter et en faire plus avec les configurations que vous avez créées pour l’outil d’ingestion. Lorsque vous sélectionnez une configuration d’importateur d’importation en bloc, les options suivantes sont disponibles dans la barre d’outils.
 
    * [!UICONTROL Modifier] : modifiez la configuration sélectionnée.
    * [!UICONTROL Supprimer] : supprime la configuration sélectionnée.
@@ -217,11 +222,14 @@ Les détails techniques du protocole et des API de chargement, ainsi que les lie
 
 * Adobe recommande de ne pas ajouter plus de 1 000 ressources par dossier dans [!DNL Experience Manager Assets]. Bien que vous puissiez ajouter d’autres ressources à un dossier, il est possible que vous rencontriez des problèmes de performances, notamment une navigation plus lente vers ces dossiers.
 
-* Lorsque vous sélectionnez **[!UICONTROL Remplacer]** dans la boîte de dialogue [!UICONTROL Conflit de noms], l’ID de la ressource est régénéré pour la nouvelle ressource. Cet ID est différent de celui de la ressource précédente. Si [Assets Insights](/help/assets/assets-insights.md) est activé pour effectuer le suivi des impressions ou des clics avec [!DNL Adobe Analytics], l’ID de ressource régénéré invalide les données capturées pour la ressource sur [!DNL Analytics].
+* Lorsque vous sélectionnez **[!UICONTROL Remplacer]** dans la boîte de dialogue [!UICONTROL Conflit de noms], l’ID de la ressource est régénéré pour la nouvelle ressource. Cet ID est différent de celui de la ressource précédente. Si la fonction [Statistiques sur les ressources](/help/assets/assets-insights.md) est activée pour effectuer le suivi des impressions/clics avec [!DNL Adobe Analytics], l’ID de ressource régénéré invalide les données capturées pour la ressource dans [!DNL Analytics].
 
 * Certaines méthodes de chargement n’empêchent pas le chargement de ressources dont les noms de fichier contiennent des [caractères interdits](#filename-handling). Les caractères sont remplacés par le symbole `-`.
 
 * Le téléchargement de ressources à l’aide du navigateur prend uniquement en charge les listes de fichiers plats et non les hiérarchies de dossiers imbriqués. Pour charger toutes les ressources dans un dossier imbriqué, utilisez l’[appli de bureau](#upload-assets-desktop-clients).
+
+* La méthode d’importation en bloc importe l’ensemble de la structure de dossiers telle qu’elle existe dans la source de données. Toutefois, seuls les dossiers non vides sont créés dans [!DNL Experience Manager].
+
 
 <!-- TBD: Link to file name handling in DA docs when it is documented. 
 -->
