@@ -4,10 +4,10 @@ description: Modification notables apportées à  [!DNL Adobe Experience Manager
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: e07529f73a3c0b39cb51afb4f3545a9094ce48ef
+source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 94%
+source-wordcount: '1026'
+ht-degree: 92%
 
 ---
 
@@ -54,18 +54,19 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | [Détection des doublons de ressources ](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Fonctionne différemment. | Renseignez-vous sur [son fonctionnement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=fr). |
 | [Pour les rendus FPO (avec positionnement uniquement)](/help/assets/configure-fpo-renditions.md) | Fonctionne différemment. | Les profils de traitement utilisent les microservices de ressources pour générer des rendus FPO. Dans Experience Manager 6.5, une solution tierce telle que [!DNL ImageMagick] était disponible pour générer les rendus. |
 | Écriture différée des métadonnées | Fonctionne différemment. | Désactivé par défaut. Activez le lanceur de processus correspondant si nécessaire. L’écriture différée est gérée par les microservices de ressources. |
-| Traitement des ressources chargées à l’aide du gestionnaire de modules | Nécessite une intervention manuelle. | Retraitez manuellement les ressources à l’aide de l’action **[!UICONTROL Retraiter la ressource]**. |
+| Traitement des ressources chargées à l’aide du gestionnaire de modules | Nécessite une intervention manuelle | Retraitez manuellement les ressources à l’aide de l’action **[!UICONTROL Retraiter la ressource]**. |
 | Détection du type MIME | Pas de prise en charge. | Si vous chargez une ressource numérique sans extension ou avec une extension incorrecte, elle peut ne pas être traitée comme vous le souhaitez. Les utilisateurs peuvent toujours stocker les fichiers binaires sans extension dans le module DAM. Voir la section [Détection de type MIME dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=fr). |
 | Génération de sous-ressources pour des ressources composites | Pas de prise en charge. | Les cas d’utilisation dépendants tels que les annotations peuvent ne pas être remplis. Voir la section [Création de sous-ressources dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=fr#generate-subassets). L’aperçu PDF de certains types de fichiers est disponible à partir de la [version 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
-| Page d’accueil | Pas de prise en charge. | Voir la section [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=fr) |
-| Extraction de ressources à partir de l’archive ZIP | Pas de prise en charge. | Voir la section [extraction ZIP dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=fr#extractzip). |
-| Évaluations des ressources | Pas de prise en charge. | Le widget d’évaluation dans l’éditeur de schéma de métadonnées n’est pas pris en charge. |
-| Filtre de disposition du contenu | Pas de prise en charge. | `ContentDispositionFilter` est un cas d’utilisation courant qui permet aux administrateurs de configurer [!DNL Experience Manager] pour qu’ils diffusent des fichiers HTML et qu’ils ouvrent des fichiers PDF en ligne au lieu de les télécharger. Sur les instances de publication, vous pouvez gérer la disposition à l’aide de la configuration de Dispatcher. Sur les instances d’auteur, Adobe ne recommande pas de modifier l’en-tête de disposition du contenu. Voir [Filtre de disposition du contenu dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html?lang=fr). |
-| [Téléchargement du rapport](/help/assets/asset-reports.md) | Pas de prise en charge. | Pour l’instant, le rapport de téléchargement qui informe de l’utilisation des ressources n’est pas disponible. Voir [Rapport de téléchargement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=fr). |
-| Modèle de séance photo du produit | Pas de prise en charge. | Voir [Modèle de séance photo du produit dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html?lang=fr). |
-| Traduction intelligente | Pas de prise en charge. | La [traduction intelligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html?lang=fr) n’est pas prise en charge dans [!DNL Experience Manager] as a [!DNL Cloud Service]. |
-| WebDAV | Pas de prise en charge. | Pour obtenir des alternatives, voir [[!DNL Creative Cloud] integration](/help/assets/aem-cc-integration-best-practices.md) ou [Documents de référence pour les développeurs](/help/assets/developer-reference-material-apis.md). |
-| IU classique | Pas de prise en charge. | Seule l’interface utilisateur tactile est disponible. |
+| Modification des images | Pas de prise en charge | La modification des ressources n’est pas prise en charge dans Experience Manager as a Cloud Service. Voir [comment cela fonctionnait en Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#editing-images). |
+| Page d’accueil | Pas de prise en charge | Voir la section [[!DNL Assets] Home Page experience in [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-home-page.html?lang=fr) |
+| Extraction de ressources à partir de l’archive ZIP | Pas de prise en charge | Voir la section [extraction ZIP dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html#extractzip). |
+| Évaluations des ressources | Pas de prise en charge | Le widget d’évaluation dans l’éditeur de schéma de métadonnées n’est pas pris en charge. |
+| Filtre de disposition du contenu | Pas de prise en charge | `ContentDispositionFilter` est un cas d’utilisation courant qui permet aux administrateurs de configurer [!DNL Experience Manager] pour qu’ils diffusent des fichiers HTML et qu’ils ouvrent des fichiers PDF en ligne au lieu de les télécharger. Sur les instances de publication, vous pouvez gérer la disposition à l’aide de la configuration de Dispatcher. Sur les instances d’auteur, Adobe ne recommande pas de modifier l’en-tête de disposition du contenu. Voir [Filtre de disposition du contenu dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html?lang=fr). |
+| [Téléchargement du rapport](/help/assets/asset-reports.md) | Pas de prise en charge | Pour l’instant, le rapport de téléchargement qui informe de l’utilisation des ressources n’est pas disponible. Voir [Rapport de téléchargement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=fr). |
+| Modèle de séance photo du produit | Pas de prise en charge | Voir [Modèle de séance photo du produit dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html?lang=fr). |
+| Traduction intelligente | Pas de prise en charge | La [traduction intelligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html?lang=fr) n’est pas prise en charge dans [!DNL Experience Manager] as a [!DNL Cloud Service]. |
+| WebDAV | Pas de prise en charge | Pour obtenir des alternatives, voir [[!DNL Creative Cloud] integration](/help/assets/aem-cc-integration-best-practices.md) ou [Documents de référence pour les développeurs](/help/assets/developer-reference-material-apis.md). |
+| IU classique | Pas de prise en charge | Seule l’interface utilisateur tactile est disponible. |
 
 >[!MORELIKETHIS]
 >
