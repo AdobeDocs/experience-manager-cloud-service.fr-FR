@@ -1,19 +1,19 @@
 ---
 title: Problèmes connus
-description: Notes de mise à jour spécifiques aux problèmes connus avec Adobe Experience Manager as a Cloud Service
+description: Problèmes connus avec Adobe Experience Manager as a Cloud Service
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '186'
-ht-degree: 100%
+source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+workflow-type: tm+mt
+source-wordcount: '111'
+ht-degree: 33%
 
 ---
 
 # Problèmes connus {#known-issues}
 
-Cet article répertorie les problèmes connus de l’offre Adobe Experience Manager as a Cloud Service. La liste est révisée et mise à jour à chaque version d’Experience Manager.
+Cet article répertorie les problèmes connus de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] offre. La liste est révisée et mise à jour à chaque nouvelle version de [!DNL Experience Manager].
 
-Pour en savoir plus sur les problèmes connus ci-dessous, [contactez l’assistance](https://helpx.adobe.com/fr/support/experience-manager.html).
+Pour en savoir plus sur les problèmes connus ci-dessous, [contactez l’assistance](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support).
 
 <!-- 
 ## Platform {#platform}
@@ -21,28 +21,36 @@ Pour en savoir plus sur les problèmes connus ci-dessous, [contactez l’assista
 ## Sites {#sites}
 -->
 
-## Assets {#assets}
+## [!DNL Assets] {#assets}
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-Voici quelques problèmes connus :
+Certains problèmes connus dans [!DNL Assets] sont :
+
+* **Télécharger**: Si vous téléchargez un dossier vide, [!DNL Experience Manager] transmet un message de réussite sur la création d’une archive ZIP, mais l’archive n’est pas créée.
 
 * **Schéma de métadonnées** : le widget d’évaluation des ressources entraînait une erreur de compilation JSP. Il a été supprimé du schéma de métadonnées. <!-- CQ-4282865, CQ-4284633 -->
 
-### Fonctionnalités Assets à venir {#upcoming-assets-capabilities}
+Voir aussi [modifications notables apportées à [!DNL Experience Manager Assets]](/help/assets/assets-cloud-changes.md).
 
-Quelques fonctionnalités des ressources Adobe Experience Manager qui dépendent des fonctionnalités de base, qui ne sont pas encore disponibles dans l’architecture de déploiement Experience Manager as a Cloud Service, devraient être activées ultérieurement :
+<!-- This content was added at GA. Not sure if we should continue to have this commitment about upcoming features/enh. in the docs. Commenting it for now.
 
-* Ces fonctionnalités ne sont pas activées à ce stade en raison d’une dépendance aux API de framework d’intégration de commerce :
-   * Modèles de workflow de séance photo.
-   * Onglet d’informations sur les produits de l’interface utilisateur des propriétés des ressources non renseigné
-* Ces fonctionnalités ne sont pas activées à ce stade en raison d’une dépendance vis-à-vis de l’intégration d’InDesign Server :
-   * Modèles de ressources et catalogues de ressources
-   * Aperçu de plusieurs pages de fichiers Adobe InDesign
+### Upcoming Assets capabilities {#upcoming-assets-capabilities}
+
+A few capabilities of Adobe Experience Manager Assets that depend on foundation capabilities, which are not yet available in the Experience Manager as a Cloud Service deployment architecture, are expected to be enabled at a later stage:
+
+* Capabilities not enabled at this stage due to dependency on Commerce Integration Framework APIs:
+  * Photoshoot workflow models.
+  * Product information tab in the asset properties user interface is not populated.
+
+* Capabilities not enabled at this stage due to dependency on InDesign Server integration:
+  * Asset Templates and Asset Catalogs.
+  * Multi-page preview of Adobe InDesign files.
+-->
 
 >[!MORELIKETHIS]
 >
->* [Changements majeurs dans AEM](aem-cloud-changes.md)
-* [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
-* [Notes de mise à jour](home.md)
+>* [Changements majeurs dans [!DNL Experience Manager]](aem-cloud-changes.md)
+>* [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
+>* [Notes de mise à jour](home.md)
 

@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
-source-git-commit: e7028272a32c2f53c3438cb918caaf04445442af
+source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
-source-wordcount: '674'
-ht-degree: 94%
+source-wordcount: '661'
+ht-degree: 80%
 
 ---
 
@@ -24,10 +24,9 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
 >
 >Pour importer des métadonnées sur des espaces de noms personnalisés, commencez par enregistrer les espaces de noms.
 
-1. Accédez à l’IU Assets et appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
-1. Dans le menu, sélectionnez **[!UICONTROL Métadonnées]**.
-1. Dans la page **[!UICONTROL Importation des métadonnées]**, appuyez/cliquez sur **[!UICONTROL Sélectionner un fichier]**. Sélectionnez le fichier CSV contenant les métadonnées.
-1. Spécifiez les paramètres suivants :
+1. Accédez à [!DNL Assets] interface utilisateur, sélectionnez **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Métadonnées]** dans le menu.
+1. Dans le **[!UICONTROL Importation des métadonnées]** page, cliquez sur **[!UICONTROL Sélectionner un fichier]**. Sélectionnez le fichier CSV contenant les métadonnées.
+1. Indiquez les paramètres suivants :
 
    | Paramètre | Description |
    | ---------------------- | ------- |
@@ -37,13 +36,19 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
    | Lancer les workflows | Faux par défaut. Lorsque la variable est définie sur `true` Les paramètres et par défaut sont appliqués au workflow Écriture différée des métadonnées de gestion des actifs numériques (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows ralentit le système. |
    | Nom de colonne du chemin d’accès à la ressource | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
-1. Cliquez sur **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification est envoyée à votre boîte de réception de notifications. Accédez à la page de propriété des ressources et vérifiez que les valeurs des métadonnées sont correctement importées pour les ressources.
+1. Sélectionner **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification est envoyée à votre boîte de réception de notifications. Accédez à la page de propriété des ressources et vérifiez que les valeurs des métadonnées sont correctement importées pour les ressources.
 
-Pour ajouter une date et un horodatage au cours de l’importation de métadonnées, utilisez le format de date et d’heure `YYYY-MM-DDThh:mm:ss.fff-00:00`. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` correspond au 26 mars 2020 à 11:26:00.000, heure du Pacifique.
+1. Pour ajouter une date et un horodatage à l’importation des métadonnées, utilisez `YYYY-MM-DDThh:mm:ss.fff-00:00` format de date et d’heure. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple : `2020-03-26T11:26:00.000-07:00` est le 26 mars 2020 à 11:26:00.000 AM PST.
+
+   * Le format de date dépend de l’en-tête de colonne et du format dans celui-ci. Par exemple, si la date est une plainte au format `yyyy-MM-dd'T'HH:mm:ssXXX` l’en-tête de colonne correspondant doit alors être `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * Le format de date par défaut est le suivant : `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+
+<!-- Hidden via cqdoc-17869>
 
 >[!CAUTION]
 >
->Si la date ne correspond pas au format `YYYY-MM-DDThh:mm:ss.fff-00:00`, les valeurs de date ne sont pas définies. Les formats de date du fichier CSV de métadonnées exportées sont au format `YYYY-MM-DDThh:mm:ss-00:00`. Si vous souhaitez l’importer, convertissez son contenu dans un format acceptable en ajoutant la valeur en nanosecondes indiquée par `fff`.
+>If the date format does not match `YYYY-MM-DDThh:mm:ss.fff-00:00`, the date values are not set. The date formats of exported metadata CSV file is in the format `YYYY-MM-DDThh:mm:ss-00:00`. If you want to import it, convert it to the acceptable format by adding the nanoseconds value denoted by `fff`.
+-->
 
 ## Exportation des métadonnées {#export-metadata}
 

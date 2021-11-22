@@ -2,13 +2,13 @@
 title: Téléchargement de ressources
 description: Téléchargez des ressources depuis [!DNL Adobe Experience Manager Assets] et activez ou désactivez la fonctionnalité de téléchargement.
 contentOwner: AG
-feature: Gestion des ressources
+feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 1d7148e71e5a145a8dc62782e5f4dfb65e2a816b
-workflow-type: ht
-source-wordcount: '1025'
-ht-degree: 100%
+source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+workflow-type: tm+mt
+source-wordcount: '1047'
+ht-degree: 97%
 
 ---
 
@@ -105,6 +105,10 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 1. Pour bloquer les requêtes de téléchargement de ressources via une configuration de Dispatcher, modifiez la configuration `dispatcher.any` et ajoutez une nouvelle règle à la [section /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring).
 
    `/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+
+## Conseils et restrictions {#tips-limitations}
+
+* Si vous téléchargez un dossier vide, [!DNL Experience Manager] transmet un message de réussite sur la création d’une archive ZIP, mais l’archive n’est pas créée.
 
 >[!MORELIKETHIS]
 >
