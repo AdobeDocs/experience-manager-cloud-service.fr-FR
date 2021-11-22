@@ -2,15 +2,14 @@
 title: Sauvegarde et restauration dans AEM as a Cloud Service
 description: Sauvegarde et restauration dans AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: dfbd0f38017d02810da05ccadbc5f2fbd5826aa3
+source-git-commit: cac25668240a87ecbf86c4f71881310b3c3d17d2
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 100%
+source-wordcount: '375'
+ht-degree: 93%
 
 ---
 
 # Sauvegarde et restauration dans AEM as a Cloud Service
-
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -31,7 +30,7 @@ Les clients doivent déposer un ticket d’assistance, décrivant le problème r
 AEM as a Cloud Service prend en charge :
 
 * La récupération à un point dans le temps sur 24 heures, ce qui signifie que le système peut être restauré à n’importe quel stade au cours des dernières 24 heures.
-* La restauration à partir d’un horodatage spécifique défini par Adobe, capturé une fois par jour pendant les 7 derniers jours. Tous les messages de réplication (suppressions, mises à jour, création) seront conservés.
+* La restauration à partir d’un horodatage spécifique défini par l’Adobe, prélevé deux fois par jour pendant les 7 derniers jours.  Tous les messages de réplication (suppressions, mises à jour, création) seront conservés.
 
 Dans tous les cas, la version du code personnalisé est la version capturée à partir du dernier déploiement réussi avant le point de restauration.
 
@@ -39,4 +38,6 @@ L’objectif de temps de récupération (RTO) varie en fonction de la taille du 
 
 Après une restauration, la version AEM est mise à jour vers la version la plus récente.
 
-**Les données des environnements supprimés sont définitivement perdues et ne peuvent pas être récupérées.**
+>[!CAUTION]
+>
+>Les données des environnements supprimés sont définitivement perdues et ne peuvent pas être récupérées.
