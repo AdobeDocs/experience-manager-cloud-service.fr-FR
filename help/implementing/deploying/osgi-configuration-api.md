@@ -3,10 +3,10 @@ title: API de configuration OSGi
 description: Description de la surface de configuration OSGi d‘AEM as a Cloud Service
 feature: Deploying
 exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 98%
+source-wordcount: '410'
+ht-degree: 96%
 
 ---
 
@@ -141,4 +141,14 @@ Vous trouverez des informations supplémentaires sur la configuration OSGI à [c
    * `debug.email`
       * Type : booléen
    * `oauth.flow`
+      * Type : booléen
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Date d’annonce : 11/16/21, Date d’application : 2/16/21)
+   * `org.apache.sling.commons.log.level`
+      * Type : enumeration
+      * Période requise : INFO, DEBUG ou TRACE
+   * `org.apache.sling.commons.log.names`
+      * Type : chaîne
+   * `org.apache.sling.commons.log.file`
+      * Type : chaîne
+   * `org.apache.sling.commons.log.additiv`
       * Type : booléen
