@@ -2,10 +2,10 @@
 title: Sauvegarde et restauration dans AEM as a Cloud Service
 description: Sauvegarde et restauration dans AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: cac25668240a87ecbf86c4f71881310b3c3d17d2
+source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 93%
+source-wordcount: '376'
+ht-degree: 85%
 
 ---
 
@@ -34,7 +34,7 @@ AEM as a Cloud Service prend en charge :
 
 Dans tous les cas, la version du code personnalisé est la version capturée à partir du dernier déploiement réussi avant le point de restauration.
 
-L’objectif de temps de récupération (RTO) varie en fonction de la taille du référentiel mais, en règle générale, une fois la séquence de restauration lancée, elle devrait prendre environ 30 minutes.
+L’objectif de temps de récupération (RTO) varie en fonction de la taille du référentiel, mais en règle générale, la séquence de récupération doit prendre entre 30 minutes et plusieurs heures.
 
 Après une restauration, la version AEM est mise à jour vers la version la plus récente.
 
