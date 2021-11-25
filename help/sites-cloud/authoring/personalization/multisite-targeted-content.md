@@ -2,10 +2,10 @@
 title: Utilisation de contenu ciblé sur plusieurs sites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '2900'
-ht-degree: 100%
+source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+workflow-type: tm+mt
+source-wordcount: '2893'
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Vous pouvez à tout moment suspendre ou restaurer l’héritage. En outre, si vo
 
 La prise en charge de sites multiples pour le contenu ciblé est prête à l’emploi. Elle vous permet de pousser le contenu ciblé du gabarit que vous gérez via MSM vers une Live Copy locale ou de gérer des modifications globales et locales du contenu en question.
 
-Vous gérez ces données dans une **zone**. Les zones délimitent le contenu ciblé (activités, expériences et offres) utilisé sur différents sites et fournissent un mécanisme reposant sur MSM afin de créer et de gérer l’héritage du contenu ciblé en même temps que l’héritage de site. De cette manière, il n’est plus nécessaire de recréer le contenu ciblé sur les sites hérités, comme c’était le cas dans les versions antérieures à AEM 6.2.
+Vous gérez ces données dans une **zone**. Les zones délimitent le contenu ciblé (activités, expériences et offres) utilisé sur différents sites et fournissent un mécanisme reposant sur MSM afin de créer et de gérer l’héritage du contenu ciblé en même temps que l’héritage de site. Cela évite d’avoir à recréer du contenu ciblé dans les sites hérités.
 
 Au sein d’une zone, seules les activités associées à cette même zone sont poussées comme des Live Copies. Par défaut, la zone maître est sélectionnée. Une fois que vous avez créé d’autres zones, vous pouvez créer un lien vers vos sites ou pages afin d’indiquer le contenu ciblé qui doit être publié.
 
@@ -48,8 +48,8 @@ Un site ou une Live Copy présente un lien vers une zone contenant les activité
 >
 >* Lorsque vous utilisez des déploiements ou des Live Copies, une licence MSM est requise.
 >* Lorsque vous utilisez la synchronisation avec Adobe Target, une licence Adobe Target est requise.
->
 
+>
 
 
 ## Scénarios d’utilisation {#use-cases}
@@ -235,8 +235,8 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 >
 >* Vous pouvez uniquement suspendre ou désolidariser des Live Copies dans une activité.
 >* Vous n’avez pas besoin de suspendre ou de désolidariser des Live Copies pour étendre une activité héritée. Vous pouvez toujours créer de **nouvelles** expériences et offres locales pour cette activité. Si vous souhaitez modifier une activité existante, il vous faut suspendre l’héritage.
->
 
+>
 
 
 ### Suspension de l’héritage {#suspending-inheritance}
