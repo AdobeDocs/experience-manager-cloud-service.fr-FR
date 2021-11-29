@@ -2,10 +2,10 @@
 title: Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés
 description: Définissez la structure du contenu que vous allez créer et diffuser à l’aide des fonctionnalités découplées AEM à l’aide des modèles de fragment de contenu.
 exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '472'
-ht-degree: 100%
+source-git-commit: 10d686134b760c2678cc3035a0e15e418cf2896d
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Définissez la structure du contenu que vous allez créer et diffuser à l’aide des fonctionnalités découplées AEM à l’aide des modèles de fragment de contenu.
 
-## Que sont les modèles de fragments de contenu ? {#what-are-content-fragment-models}
+## Que sont les modèles de fragments de contenu ?  {#what-are-content-fragment-models}
 
 [Maintenant que vous avez créé une configuration,](create-configuration.md) vous pouvez l’utiliser pour créer des modèles de fragments de contenu.
 
@@ -41,15 +41,20 @@ Un architecte de l’information ne réaliserait ces tâches qu’occasionnellem
 1. Une fois que vous avez placé un champ, vous devez configurer ses propriétés. L’éditeur bascule automatiquement sur l’onglet **Propriétés** pour le champ ajouté où vous pouvez fournir les champs obligatoires.
 
    ![Configuration des propriétés](../assets/models-configure-properties.png)
-1. Lorsque vous avez fini de créer votre modèle, appuyez ou cliquez sur **Enregistrer**. Le modèle que vous venez de créer est enregistré en mode **Brouillon**.
 
-   ![Modèle en mode Brouillon](../assets/models-draft.png)
-1. Le modèle doit être activé pour pouvoir l’utiliser (s’il ne l’est pas déjà). Sélectionnez le modèle que vous venez de créer, puis appuyez ou cliquez sur **Activer**.
+1. Lorsque vous avez fini de créer votre modèle, appuyez ou cliquez sur **Enregistrer**.
 
-   ![Activation du modèle](../assets/models-enable.png)
-1. Confirmez l’activation du modèle en appuyant ou en cliquant sur **Activer** dans la boîte de dialogue de confirmation.
+1. Le mode du modèle que vous venez de créer varie selon que vous avez sélectionné ou non **Activer le modèle** lors de la création du modèle :
+   * sélectionné : le nouveau modèle sera déjà **Activé**
+   * non sélectionné : le nouveau modèle sera créé dans **Version préliminaire** mode
 
-   ![Activation de la boîte de dialogue de confirmation](../assets/models-enabling.png)
+1. Si elle n’est pas déjà activée, le modèle doit être **Activé** pour l’utiliser.
+   1. Sélectionnez le modèle que vous venez de créer, puis appuyez ou cliquez sur **Activer**.
+
+      ![Activation du modèle](../assets/models-enable.png)
+   1. Confirmez l’activation du modèle en appuyant ou en cliquant sur **Activer** dans la boîte de dialogue de confirmation.
+
+      ![Activation de la boîte de dialogue de confirmation](../assets/models-enabling.png)
 1. Le modèle est désormais activé et prêt à l’emploi.
 
    ![Modèle activé](../assets/models-enabled.png)

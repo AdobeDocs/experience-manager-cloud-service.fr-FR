@@ -2,10 +2,10 @@
 title: Guide de prise en main pour l’accès et la diffusion de fragments de contenu découplés
 description: Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '510'
-ht-degree: 100%
+source-git-commit: 10d686134b760c2678cc3035a0e15e418cf2896d
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 96%
 
 ---
 
@@ -13,11 +13,12 @@ ht-degree: 100%
 
 Découvrez comment utiliser l’API HTTP Assets d’AEM pour gérer les fragments de contenu et l’API GraphQL dans la diffusion de contenu de fragments de contenu en mode découplé.
 
-## Que sont les API GraphQL et REST Assets ? {#what-are-the-apis}
+## Que sont les API GraphQL et REST Assets ?  {#what-are-the-apis}
 
 [Maintenant que vous avez créé des fragments de contenu](create-content-fragment.md), vous pouvez utiliser les API d’AEM pour une diffusion découplée.
 
 * [L’API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
+   * Pour l’utiliser, [Les points de fin doivent être définis et activés dans AEM](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint), et si nécessaire, la variable [Interface GraphiQL installée](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [L’API REST Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragments de contenu.
@@ -25,12 +26,6 @@ Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragment
 ## Comment diffuser un fragment de contenu avec GraphQL {#how-to-deliver-a-content-fragment}
 
 Les architectes de l’information doivent concevoir des requêtes pour leurs points d’entrée de canaux afin de diffuser du contenu. Ces requêtes ne doivent généralement être prises en compte qu’une seule fois par point d’entrée et par modèle. Pour les besoins de ce guide de prise en main, nous ne devrons en créer qu’une.
-
-<!-- Not in the UI yet - will need updating when it is -->
-<!--
-1. Log into AEM as a Cloud Service and from the main menu select **Tools -&gt; Assets -&gt; GraphQL** 
-   * Alternatively open the page directly at `https://<host>:<port>/content/graphiql.html`.
--->
 
 1. Connectez-vous à AEM en as a Cloud Service et accédez à l’interface GraphiQL :
    * Par exemple : `https://<host>:<port>/content/graphiql.html`.
