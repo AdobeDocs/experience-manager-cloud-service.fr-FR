@@ -1,13 +1,13 @@
 ---
 title: Enregistrement de lecteurs dans Screens as a Cloud Service
 description: Cette page décrit comment enregistrer des lecteurs dans Screens as a Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
-workflow-type: ht
-source-wordcount: '395'
-ht-degree: 100%
+exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 78%
 
 ---
-
 
 # Enregistrement de lecteurs dans Screens as a Cloud Service {#registering-players-screens-cloud}
 
@@ -62,6 +62,11 @@ Pour enregistrer votre lecteur, procédez comme suit :
 1. Vous devriez voir ce lecteur s’afficher dans **Lecteurs** à partir du panneau de navigation de gauche. Le code qui s’affiche dans le fournisseur de services Screens correspond au panneau **Informations système** de l’interface utilisateur d’administration sous Code du lecteur.
 
    ![image](/help/screens-cloud/assets/player/register-player6.png)
+
+>[!IMPORTANT]
+>** Recommandation des bonnes pratiques de sécurité lors de l’utilisation du code d’enregistrement
+>Il est recommandé de limiter l’utilisation du code d’enregistrement. Si un code d&#39;enregistrement est compromis, mais a une limite de 100 enregistrements, l&#39;attaquant peut s&#39;enregistrer uniquement jusqu&#39;à ce nombre, mais pas plus. Vous pouvez toujours mettre à jour la limite d’utilisation après la création du code d’enregistrement et l’enregistrement de certains lecteurs du client. Si le client observe une activité d’enregistrement inhabituelle pour un code d’enregistrement spécifique, il peut réduire la limite en temps réel pendant qu’il enquête et peut augmenter le nombre s’il s’agit d’une fausse alarme, sans affecter les lecteurs déjà enregistrés.
+
 
 ## Et après ? {#whats-next}
 

@@ -2,9 +2,9 @@
 title: Questions fréquentes as a Cloud Service sur Screens
 description: Cette page décrit les questions fréquentes as a Cloud Service à Screens.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 41f057fa2a52068aa6dce97f1a445e072ce2a0af
+source-git-commit: 489cc9963910ba9f94d30906127beb75f9ad37df
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ Il est recommandé d’utiliser les fonctionnalités de mise en cache d’AEM Sc
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"
 ```
+
+## À quoi sert la limite du code d’enregistrement ?
+
+Il est recommandé de limiter l’utilisation du code d’enregistrement. Si un code d&#39;enregistrement est compromis, mais a une limite de 100 enregistrements, l&#39;attaquant peut s&#39;enregistrer uniquement jusqu&#39;à ce nombre, mais pas plus. Vous pouvez toujours mettre à jour la limite d’utilisation après la création du code d’enregistrement et l’enregistrement de certains lecteurs du client. Si le client observe une activité d’enregistrement inhabituelle pour un code d’enregistrement spécifique, il peut réduire la limite en temps réel pendant qu’il enquête et peut augmenter le nombre s’il s’agit d’une fausse alarme, sans affecter les lecteurs déjà enregistrés.
