@@ -2,9 +2,9 @@
 title: Tests de l’interface utilisateur – Cloud Services
 description: Tests de l’interface utilisateur – Cloud Services
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 0be391cb760d81a24f2a4815aa6e1e599243c37b
+source-git-commit: 778fa187df675eada645c73911e6f02e8a112753
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1582'
 ht-degree: 95%
 
 ---
@@ -21,6 +21,47 @@ Les tests de l’interface utilisateur sont des tests basés sur Selenium placé
 >[!NOTE]
 > Les pipelines d’évaluation et de production créés avant le 10 février 2021 doivent être mis à jour pour pouvoir utiliser les tests d’interface utilisateur décrits sur cette page.
 > Voir [Pipelines CI-CD dans Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour plus d’informations sur la configuration du pipeline.
+
+## Test d’interface utilisateur personnalisé {#custom-ui-testing}
+
+AEM fournit à ses clients une suite intégrée de murs qualité Cloud Manager qui leur permettent d’assurer la mise à jour régulière de leurs applications. Les passerelles de test informatique permettent en particulier déjà aux clients de créer et d’automatiser leurs propres tests qui utilisent des API AEM.
+
+La fonction de test de l’interface utilisateur personnalisée est une [fonctionnalité facultative](#customer-opt-in) qui permet à nos clients de créer et d’exécuter automatiquement des tests d’interface utilisateur pour leurs applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium). Cette section vous permet d’en savoir plus sur la création de l’interface utilisateur et la création de tests d’interface utilisateur. En outre, un projet de tests d’interface utilisateur peut être facilement généré à l’aide de l’archétype de projet AEM.
+
+Les clients peuvent créer (via GIT) des tests personnalisés et des suites de tests pour l’interface utilisateur. Le test de l’interface utilisateur sera exécuté dans le cadre d’un mur qualité spécifique à chaque pipeline Cloud Manager, doté d’étapes et d’informations de feedback spécifiques. Les tests d’interface utilisateur, y compris les tests de régression et de nouvelles fonctionnalités, permettront de détecter les erreurs et de les signaler dans le contexte du client.
+
+Les tests de l’interface utilisateur client s’exécutent automatiquement sur le canal Production, dans l’étape « Tests personnalisés de l’interface utilisateur ».
+
+Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en java, les tests de l’interface utilisateur peuvent être une image docker avec des tests écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans [Création de tests d’interface utilisateur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/test-results/ui-testing.html?lang=fr#using-cloud-manager).
+
+>[!NOTE]
+>Il est recommandé de suivre la structure et le langage *(js et wdio)* qui sont fournis comme base pratique dans l’[Archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+
+### Souscription client {#customer-opt-in}
+
+Pour que leurs tests d’interface utilisateur soient créés et exécutés, les clients doivent « souscrire » en ajoutant un fichier à leur référentiel de code, dans le sous-module maven pour les tests d’interface utilisateur (en regard du fichier pom.xml du sous-module de test d’interface utilisateur) et s’assurer que ce fichier est à la racine du fichier `tar.gz` créé.
+
+*Nom du fichier* : `testing.properties`
+
+*Contenu* : `ui-tests.version=1`
+
+S’il ne se trouve pas dans le fichier `tar.gz` créé, les tests de l’interface utilisateur vont s’accumuler et leur exécution va être ignorée.
+
+Pour ajouter un fichier `testing.properties` dans l’artefact créé, ajoutez une instruction `include` dans le fichier `assembly-ui-test-docker-context.xml` (dans le sous-module de tests de l’interface utilisateur) :
+
+    ```
+    [...]
+    &lt;includes>
+    &lt;include>Dockerfile&lt;/include>
+    &lt;include>wait-for-grid.sh&lt;/include>
+    &lt;include>testing.properties&lt;/include> &lt;!- module de test d’opt-in dans Cloud Manager -->
+    &lt;/includes>
+    [...]
+    ```
+
+>[!NOTE]
+>Les pipelines de production créés avant le 10 février 2021 devront être mis à jour afin d’utiliser les tests d’interface utilisateur décrits dans cette section. Cela signifie essentiellement que l’utilisateur doit modifier le pipeline de production et cliquer sur **Enregistrer** dans l’interface utilisateur, et ce, même si aucune modification n’a été apportée.
+>Consultez [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr#using-cloud-manager) pour en savoir plus sur la configuration du pipeline.
 
 ## Création de tests de l’interface utilisateur {#building-ui-tests}
 
@@ -149,7 +190,7 @@ Une fois que le point d’entrée de statut de Selenium donne une réponse posit
 
 L’image Docker doit générer des rapports de test au format XML JUnit et les enregistrer dans le chemin spécifié par la variable d’environnement `REPORTS_PATH`. Le format XML JUnit est un format très répandu pour le rapports de résultats de tests. Si l’image Docker utilise Java et Maven, le [plug-in Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) et le [plug-in Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/) sont tous deux utilisés. Si l’image Docker est implémentée avec d’autres langages de programmation ou des exécuteurs de tests, consultez la documentation des outils choisis pour savoir comment générer des rapports XML JUnit.
 
-### Chargement de fichiers (#upload-files)
+### Chargement de fichiers {#upload-files}
 
 Les tests doivent parfois charger des fichiers vers l’application testée. Afin que le déploiement de Selenium reste flexible par rapport à vos tests, il n’est pas possible de charger directement une ressource vers Selenium. Au lieu de cela, le chargement d’un fichier passe par quelques étapes intermédiaires :
 
