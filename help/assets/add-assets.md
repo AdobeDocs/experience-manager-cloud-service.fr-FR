@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: bfd049ceb1d218df69cd387e0ab370575d8ea4d5
+source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
 workflow-type: tm+mt
-source-wordcount: '2192'
-ht-degree: 92%
+source-wordcount: '2263'
+ht-degree: 89%
 
 ---
 
@@ -159,7 +159,7 @@ Procédez de la manière suivante pour configurer l’outil :
    * [!UICONTROL Suppression du fichier source après importation]: Sélectionnez cette option pour supprimer les fichiers d’origine de l’entrepôt de données source une fois les fichiers importés dans [!DNL Experience Manager].
    * [!UICONTROL Mode d’importation] : sélectionnez Ignorer, Remplacer ou Créer une version. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’importation d’une ressource si elle existe déjà. Voir la signification de [Remplacer et créer des options de version](#handling-upload-existing-file).
    * [!UICONTROL Dossier cible des ressources] : importer un dossier dans la gestion des actifs numériques (DAM) où les ressources doivent être importées. Par exemple, `/content/dam/imported_assets`
-   * [!UICONTROL Fichier de métadonnées]: Fichier de métadonnées à importer, fourni au format CSV. Vous fournissez ce fichier CSV à l’emplacement de l’objet blob source et faites référence au chemin d’accès dans la configuration de l’outil d’ingestion en masse.
+   * [!UICONTROL Fichier de métadonnées]: Fichier de métadonnées à importer, fourni au format CSV. Spécifiez le fichier CSV à l’emplacement de l’objet blob source et reportez-vous au chemin d’accès lors de la configuration de l’outil d’ingestion en masse. Le format de fichier CSV référencé dans ce champ est identique à celui du fichier CSV lorsque vous [Importation et exportation des métadonnées de ressources en bloc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Si vous sélectionnez la variable **Suppression du fichier source après importation** , filtrez les fichiers CSV à l’aide de l’option **Exclure** ou **Type MIME d’inclusion** ou **Filtrage par chemin/fichier** champs. Vous pouvez utiliser une expression régulière pour filtrer les fichiers CSV dans ces champs.
 
 1. Vous pouvez supprimer, modifier, exécuter et en faire plus avec les configurations que vous avez créées pour l’outil d’ingestion. Lorsque vous sélectionnez une configuration d’importateur d’importation en bloc, les options suivantes sont disponibles dans la barre d’outils.
 
