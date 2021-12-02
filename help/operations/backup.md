@@ -2,14 +2,14 @@
 title: Sauvegarde et restauration dans AEM as a Cloud Service
 description: Sauvegarde et restauration dans AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 706d33e4a07eb95c578996ffe8989fafeebaa06c
+source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
 workflow-type: tm+mt
-source-wordcount: '376'
-ht-degree: 85%
+source-wordcount: '496'
+ht-degree: 64%
 
 ---
 
-# Sauvegarde et restauration dans AEM as a Cloud Service
+# Sauvegarde et restauration dans AEM as a Cloud Service {#backup-aemaacs}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_backuprestore"
@@ -23,7 +23,7 @@ Si le déploiement d’un client, c’est-à-dire le code de l’application dé
 >
 >Cette fonction ne doit être utilisée que lorsqu’il existe de graves problèmes de code ou de contenu. Les données récentes entre l’exécution de la sauvegarde restaurée et le moment présent seront perdues. L’évaluation sera également restaurée vers l’ancienne version.
 
-## Utilisation
+## Utilisation {#how-to-use}
 
 Les clients doivent déposer un ticket d’assistance, décrivant le problème rencontré. L’assistance d’Adobe procédera alors à une investigation qui déterminera si une restauration est nécessaire.
 
@@ -41,3 +41,9 @@ Après une restauration, la version AEM est mise à jour vers la version la plus
 >[!CAUTION]
 >
 >Les données des environnements supprimés sont définitivement perdues et ne peuvent pas être récupérées.
+
+## Sauvegarde hors site {#offsite-backup}
+
+Bien que des sauvegardes régulières couvrent le risque de suppressions accidentelles ou de défaillances techniques dans les services cloud AEM, les risques pouvant résulter de l’échec d’une région doivent également être pris en compte. Outre la disponibilité, le risque le plus important dans ce type de panne est principalement la perte de données.
+AEM as a Cloud Service couvre ce risque en standard pour tous les environnements de production AEM en copiant en permanence l’ensemble du contenu de l’AEM vers une région distante et en le rendant disponible pour la récupération sur une période de 3 mois. Cette fonctionnalité est appelée Sauvegarde hors site.
+La restauration d’AEM Cloud Services pour les environnements intermédiaires et de production est effectuée par AEM Ingénierie de la fiabilité des services en cas de panne de la région de données.
