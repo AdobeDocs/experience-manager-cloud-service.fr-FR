@@ -2,8 +2,7 @@
 title: Notes de mise à jour des outils de migration dans AEM version 2021.11.0 as a Cloud Service
 description: Notes de mise à jour des outils de migration dans AEM version 2021.11.0 as a Cloud Service
 feature: Release Information
-exl-id: null
-source-git-commit: e91dcb74cfcb478309e863241c2d96b4d8bb1591
+source-git-commit: 587258a831fb5cd3b3a23d1f891db8c2254a8d6b
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 25%

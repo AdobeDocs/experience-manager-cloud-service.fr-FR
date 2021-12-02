@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: c4d664450244394a65ddbc8097731d913db59091
+source-git-commit: 1db35798a00975237b6b83d5c4ce69a31145b4bf
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 53%
+source-wordcount: '1525'
+ht-degree: 50%
 
 ---
 
@@ -187,3 +187,21 @@ La date de publication de la version 2.1.20 de l’analyseur des bonnes pratique
 * Capacité à détecter et à générer des rapports sur la taille totale de l’index.
 
 * Possibilité de détecter et de générer des rapports sur les ressources dont le rendu d’origine manque.
+
+
+## Analyseur des bonnes pratiques {#bpa-release}
+
+### Date de publication {#release-date-bpa}
+
+La date de publication de la version 2.1.2 de l’analyseur des bonnes pratiques est le 1er décembre 2021.
+
+### Nouveautés {#what-is-new-bpa}
+
+* Possibilité de détecter et de générer des rapports sur la version d’ACS commons utilisée.
+* Possibilité de détecter et de générer des rapports sur le nombre d’utilisateurs et de sous-groupes d’un groupe.
+* Possibilité de détecter et de générer des rapports sur les valeurs de propriété de noeud dans MongoDB dépassant 16 Mo.
+
+### Correctifs {#bug-fixes-bpa}
+
+* La détection des composants Foundation a été améliorée afin de réduire les faux négatifs.
+* Pour les clients AEM Forms, message BPA concernant `EMAIL_PDF_SUBMIT_ACTION` n’étant pas disponible sur AEM as a Cloud Service a été corrigé.
