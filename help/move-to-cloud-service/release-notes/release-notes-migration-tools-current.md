@@ -1,31 +1,36 @@
 ---
-title: Notes de mise à jour des outils de migration dans AEM version 2021.11.0 as a Cloud Service
-description: Notes de mise à jour des outils de migration dans AEM version 2021.11.0 as a Cloud Service
+title: Notes de mise à jour des outils de migration dans AEM version 2021.12.0 as a Cloud Service
+description: Notes de mise à jour des outils de migration dans AEM version 2021.12.0 as a Cloud Service
 feature: Release Information
 exl-id: null
-source-git-commit: 43b56f074c0e09074c6745c2384e9bfd6b2eebb2
+source-git-commit: 3bd73869fb04c82fb908a5530728040c7e573eb0
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 25%
+source-wordcount: '163'
+ht-degree: 19%
 
 ---
 
 
-# Notes de mise à jour des outils de migration dans AEM version 2021.11.0 as a Cloud Service {#release-notes}
+# Notes de mise à jour des outils de migration dans AEM version 2021.12.0 as a Cloud Service {#release-notes}
 
-Cette page présente les notes de mise à jour des outils de migration dans AEM 2021.11.0 as a Cloud Service.
+Cette page présente les notes de mise à jour des outils de migration dans AEM 2021.12.0 as a Cloud Service.
 
 >[!NOTE]
 >Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
-## Outil de transfert de contenu {#ctt-release}
+## Analyseur des bonnes pratiques {#bpa-release}
 
-### Date de publication {#release-date-ctt}
+### Date de publication {#release-date-bpa}
 
-La date de publication de l’outil de transfert de contenu v1.7.2 est le 1er novembre 2021.
+La date de publication de la version 2.1.2 de l’analyseur des bonnes pratiques est le 1er décembre 2021.
 
-### Nouveautés {#what-is-new-ctt}
+### Nouveautés {#what-is-new-bpa}
 
-* Prise en charge d’un [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) ajout de l’étape à utiliser avec l’outil de transfert de contenu lorsque l’instance d’AEM source est configurée pour utiliser l’entrepôt de données de fichier afin d’accélérer considérablement la phase d’extraction.
+* Possibilité de détecter et de générer des rapports sur la version d’ACS commons utilisée.
+* Possibilité de détecter et de générer des rapports sur le nombre d’utilisateurs et de sous-groupes d’un groupe.
+* Possibilité de détecter et de générer des rapports sur les valeurs de propriété de noeud dans MongoDB dépassant 16 Mo.
 
-* Ajout de messages descriptifs supplémentaires à la phase d’ingestion dans l’interface utilisateur de l’outil de transfert de contenu pour indiquer le moment où les étapes d’indexation et de récupération de mongo sont en cours.
+### Correctifs {#bug-fixes-bpa}
+
+* La détection des composants Foundation a été améliorée afin de réduire les faux négatifs.
+* Pour les clients AEM Forms, message BPA concernant `EMAIL_PDF_SUBMIT_ACTION` n’étant pas disponible sur AEM as a Cloud Service a été corrigé.
