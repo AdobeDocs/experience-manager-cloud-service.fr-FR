@@ -3,10 +3,10 @@ title: Configuration de Dynamic Media Cloud Services
 description: Découvrez la configuration de Dynamic Media dans Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 3f90ce1b9325d4dabcd97b515cebffe008b199c7
 workflow-type: tm+mt
-source-wordcount: '4054'
-ht-degree: 98%
+source-wordcount: '4067'
+ht-degree: 95%
 
 ---
 
@@ -184,7 +184,7 @@ Le mot de passe modifié est enregistré lorsque vous sélectionnez **[!UICONTRO
 
 Pour continuer à personnaliser l’installation et la configuration de Dynamic Media ou en optimiser les performances, vous pouvez effectuer une ou plusieurs des tâches *facultatives* suivantes :
 
-* [Installation et configuration des paramètres Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
+* [(Facultatif) Installation et configuration des paramètres Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings)
 * [(Facultatif) Optimisation des performances de Dynamic Media](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 
 <!--
@@ -197,17 +197,23 @@ Pour continuer à personnaliser l’installation et la configuration de Dynamic�
 
 Utilisez l’interface utilisateur de Dynamic Media Classic pour apporter des modifications à vos paramètres Dynamic Media.
 
-Certaines des tâches ci-dessus exigent que vous ouvriez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) puis que vous vous connectiez à votre compte.
+<!-- Some of the tasks above require that you open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account. -->
 
 Les tâches d’installation et de configuration incluent :
 
-* [Configuration de la publication pour Image Server](#publishing-setup-for-image-server)
-* [Configuration des paramètres généraux de l’application](#configuring-application-general-settings)
+* [Configuration de la configuration de publication Dynamic Media pour Image Server](#publishing-setup-for-image-server)
+* [Configuration des paramètres généraux de Dynamic Media](#configuring-application-general-settings)
 * [Configuration de la gestion des couleurs](#configuring-color-management)
 * [Modification des types MIME pour les formats pris en charge](#editing-mime-types-for-supported-formats)
 * [Ajout de types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
 
 <!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
+
+<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server}
+
+The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
+
+See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dynamic-media/dm-publish-settings.md). -->
 
 #### Configuration de la publication pour Image Server {#publishing-setup-for-image-server}
 
@@ -225,6 +231,12 @@ L’écran Image Server permet de définir les paramètres par défaut pour la d
 **[!UICONTROL Attributs de compatibilité]** : ce paramètre permet aux paragraphes de début et de fin des calques de texte d’être traités tels qu’ils l’étaient dans la version 3.6, ce qui les rend rétrocompatibles.
 **[!UICONTROL Aide à la localisation]** : ces paramètres vous permettent de gérer divers attributs de paramètres régionaux. Ils vous permettent également de définir une chaîne de mappage de paramètres régionaux afin de définir les langues à prendre en charge pour les différentes info-bulles dans les visionneuses. Pour plus d’informations sur la configuration de la **[!UICONTROL prise en charge de la localisation]**, voir [Considérations à prendre en compte lors de la configuration de la localisation des ressources](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=fr#considerations-when-setting-up-localization-of-assets).
 
+<!-- #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
+
+Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
+
+See [Configure Dynamic Media General Settings](/help/assets/dynamic-media/dm-general-settings.md). -->
+
 #### Configuration des paramètres généraux de l’application {#configuring-application-general-settings}
 
 Pour ouvrir la page Paramètres généraux de l’application, dans la barre de navigation globale de Dynamic Media Classic, accédez à **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
@@ -238,7 +250,9 @@ Pour ouvrir la page Paramètres généraux de l’application, dans la barre de 
 
 #### Configuration de la gestion des couleurs {#configuring-color-management}
 
-La gestion des couleurs de Dynamic Media vous permet de corriger les couleurs des ressources. Avec la correction des couleurs, les ressources intégrées conservent leur espace colorimétrique (RVB, CMJN, gris) et leur profil de couleur intégré. Lorsque vous demandez un rendu dynamique, la couleur de l’image est corrigée dans l’espace colorimétrique cible en utilisant une sortie CMJN, RVB ou grise. Voir [Configuration des paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md).
+La gestion des couleurs de Dynamic Media vous permet de corriger les couleurs des ressources. Avec la correction des couleurs, les ressources intégrées conservent leur espace colorimétrique (RVB, CMJN, gris) et leur profil de couleur intégré. Lorsque vous demandez un rendu dynamique, la couleur de l’image est corrigée dans l’espace colorimétrique cible en utilisant une sortie CMJN, RVB ou grise.
+
+Voir [Configuration des paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md).
 
 Pour configurer les propriétés de couleur par défaut afin d’activer la correction des couleurs lorsque vous demandez des images :
 
@@ -352,18 +366,16 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
 
 1. Dans le coin supérieur gauche de la page CRXDE Lite, sélectionnez **[!UICONTROL Tout enregistrer]**.
 
-
-
 ### (Facultatif) Optimisation des performances de Dynamic Media {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
 Pour garantir la bonne exécution de Dynamic Media <!--(with `dynamicmedia_scene7` run mode)-->, Adobe recommande les actions suivantes permettant d’optimiser les performances/l’évolutivité de la synchronisation :
 
-* Mise à jour des paramètres de tâche prédéfinis pour le traitement de différents formats de fichier.
-* Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo).
-* Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (images et ressources non vidéo).
-* Mise à jour du nombre maximal de connexions de chargement au serveur Dynamic Media Classic.
+* [Mettre à jour les paramètres de tâche prédéfinis pour le traitement de différents formats de fichier](#update-job-para).
+* [Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo)](#update-granite-workflow-queue-worker-threads-video)
+* [Mettre à jour les threads de traitement de file d’attente de workflows transitoires Granite prédéfinis (images et ressources non vidéo)](#update-granite-transient-workflow-queue-worker-threads-images).
+* [Mettre à jour le nombre maximal de connexions de chargement au serveur Dynamic Media Classic (Scene7)](#update-max-s7-upload-connections).
 
-#### Mettre à jour les paramètres de tâche prédéfinis pour le traitement de différents formats de fichier
+#### Mettre à jour les paramètres de tâche prédéfinis pour le traitement de différents formats de fichier {#update-job-para}
 
 Vous pouvez régler les paramètres de tâche pour accélérer le traitement des fichiers lors du chargement. Par exemple, si vous téléchargez des fichiers PSD, mais que vous ne souhaitez pas les traiter en tant que modèles, vous pouvez définir l’extraction du calque sur false (désactivé). Dans ce cas, le paramètre de tâche affiné se présente comme suit : `process=None&createTemplate=false`.
 
@@ -385,11 +397,33 @@ Pour mettre à jour l’un de ces paramètres, voir la section [Modification des
 
 Voir la section [Ajout de types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats).
 
-#### Mise à jour de la file d’attente de workflows transitoires Granite {#updating-the-granite-transient-workflow-queue}
+#### Mise à jour des threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo) {#update-granite-workflow-queue-worker-threads-video}
 
-La file d’attente de workflows Granite est utilisée pour le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques (DAM)]**. Dans Dynamic Media, elle est utilisée pour l’intégration et le traitement des images.
+La file d’attente de workflows Granite est utilisée pour les workflows non transitoires. Dans Dynamic Media, elle est utilisée pour le traitement de la vidéo avec le workflow **[!UICONTROL Vidéo de codage Dynamic Media]**.
 
-**Pour mettre à jour la file d’attente de workflows transitoires Granite :**
+**Pour mettre à jour les threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo) :**
+
+1. Accédez à `https://<server>/system/console/configMgr` et recherchez **Queue: Granite Workflow Queue** (File d’attente : file d’attente de workflows Granite).
+
+   >[!NOTE]
+   >
+   >Il est nécessaire d’effectuer une recherche par texte au lieu d’utiliser une URL directe, car le PID OSGi est généré dynamiquement.
+
+1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
+
+   Par défaut, le nombre maximal de tâches en parallèle dépend du nombre de cœurs de processeur disponibles. Par exemple, sur un serveur à 4 cœurs, 2 threads de traitement sont attribués. (Une valeur comprise entre 0,0 et 1,0 est basée sur un ratio ou tout nombre supérieur à attribuera le nombre de threads de traitement.)
+
+   Dans la plupart des cas d’utilisation, le paramètre par défaut de 0,5 est suffisant.
+
+   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
+
+1. Sélectionnez **[!UICONTROL Enregistrer]**.
+
+#### Mise à jour des threads de traitement de file d’attente de workflows transitoires Granite prédéfinis {#update-granite-transient-workflow-queue-worker-threads-images}
+
+La file d’attente de workflows Granite est utilisée pour le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques (DAM)]**. Dans Dynamic Media, elle est utilisée pour l’assimilation et le traitement de ressources d’images et non vidéo.
+
+**Pour mettre à jour les threads de traitement de file d’attente de workflows transitoires Granite prédéfinis :**
 
 1. Accédez au **Configuration de la console web Adobe Experience Manager** at `http://<host>:<port>/system/console/configMgr`
 1. Rechercher **File d’attente : File d’attente des workflows transitoires Granite**.
@@ -410,33 +444,11 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
-#### Mise à jour de la file d’attente de workflows Granite {#updating-the-granite-workflow-queue}
+#### Mettre à jour le nombre maximal de connexions de chargement au serveur Dynamic Media Classic (Scene7) {#update-max-s7-upload-connections}
 
-La file d’attente de workflows Granite est utilisée pour les workflows non transitoires. Dans Dynamic Media, elle est utilisée pour le traitement de la vidéo avec le workflow **[!UICONTROL Vidéo de codage Dynamic Media]**.
+Le paramètre Connexion de chargement de Dynamic Media Classic (Scene7) synchronise les ressources de Experience Manager sur les serveurs Dynamic Media Classic.
 
-**Pour mettre à jour la file d’attente de workflows Granite:**
-
-1. Accédez à `https://<server>/system/console/configMgr` et recherchez **Queue: Granite Workflow Queue** (File d’attente : file d’attente de workflows Granite).
-
-   >[!NOTE]
-   >
-   >Il est nécessaire d’effectuer une recherche par texte au lieu d’utiliser une URL directe, car le PID OSGi est généré dynamiquement.
-
-1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
-
-   Par défaut, le nombre maximal de tâches en parallèle dépend du nombre de cœurs de processeur disponibles. Par exemple, sur un serveur à 4 cœurs, 2 threads de traitement sont attribués. (Une valeur comprise entre 0,0 et 1,0 est basée sur un ratio ou tout nombre supérieur à attribuera le nombre de threads de traitement.)
-
-   Dans la plupart des cas d’utilisation, le paramètre par défaut de 0,5 est suffisant.
-
-   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
-
-1. Sélectionnez **[!UICONTROL Enregistrer]**.
-
-#### Mise à jour de la connexion de chargement vers Scene7 {#updating-the-scene-upload-connection}
-
-Le paramètre de connexion de chargement vers Scene7 synchronise les ressources Experience Manager avec les serveurs Dynamic Media Classic.
-
-**Pour mettre à jour la connexion de chargement vers Scene7:**
+**Pour mettre à jour le nombre maximal de connexions de chargement au serveur Dynamic Media Classic (Scene7) :**
 
 1. Accédez à `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`.
 1. Dans le champ **[!UICONTROL Nombre de connexions]** et **[!UICONTROL Délai d’expiration des tâches actives]**, modifiez le nombre en fonction de vos besoins.
