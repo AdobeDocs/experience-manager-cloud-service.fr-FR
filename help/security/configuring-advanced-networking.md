@@ -1,7 +1,7 @@
 ---
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles que VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
-source-git-commit: 2f9ba938d31c289201785de24aca2d617ab9dfca
+source-git-commit: fa11beb1dfdd8dd2a1a5d49ece059f5894c835be
 workflow-type: tm+mt
 source-wordcount: '2836'
 ht-degree: 7%
@@ -159,7 +159,7 @@ Le tableau ci-dessous décrit le routage du trafic :
 Niveau Apache/Dispatcher AEM Cloud Service `mod_proxy` peut être configurée à l’aide des propriétés décrites ci-dessus.
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:${AEM_HTTP_PROXY_PORT}"
+ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
 ProxyPass "/somepath" "http://example.com"
 ProxyPassReverse "/somepath" "http://example.com"
 ```
@@ -167,7 +167,7 @@ ProxyPassReverse "/somepath" "http://example.com"
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:${AEM_HTTPS_PROXY_PORT}"
+ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
@@ -234,7 +234,7 @@ Lors du choix entre une sortie de port flexible et une adresse IP de sortie déd
   </tr>
   <tr>
     <td></td>
-    <td>Par le biais de la configuration du proxy http, configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java standard</td>
+    <td>Par le biais de la configuration du proxy http, configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente Java HTTP standard</td>
     <td>Valeur nulle ou non nulle</td>
     <td>Via l’adresse IP sortante dédiée</td>
     <td></td>
@@ -410,7 +410,7 @@ Le tableau ci-dessous décrit le routage du trafic.
   </tr>
   <tr>
     <td></td>
-    <td>Si l’adresse IP ne tombe pas dans la variable <i>Espace d’adresse de la passerelle VPN</i> et via la configuration du proxy http (configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java standard).</td>
+    <td>Si l’adresse IP ne tombe pas dans la variable <i>Espace d’adresse de passerelle VPN</i> et via la configuration du proxy http (configurée par défaut pour le trafic http/s à l’aide de la bibliothèque cliente HTTP Java standard).</td>
     <td>Valeur nulle ou non nulle</td>
     <td>Via l’adresse IP sortante dédiée</td>
     <td></td>
@@ -432,14 +432,14 @@ Le tableau ci-dessous décrit le routage du trafic.
   </tr>
   <tr>
     <td><b>Non http ou non https</b></td>
-    <td>Si l’adresse IP tombe dans la variable <i>Espace d’adresse de la passerelle VPN</i> et que le client se connecte à <code>AEM_PROXY_HOST</code> env à l’aide d’une variable <code>portOrig</code> déclaré dans la variable <code>portForwards</code> Paramètre d’API</td>
+    <td>Si l’adresse IP tombe dans la variable <i>Espace d’adresse de passerelle VPN</i> et que le client se connecte à <code>AEM_PROXY_HOST</code> env à l’aide d’une variable <code>portOrig</code> déclaré dans la variable <code>portForwards</code> Paramètre d’API</td>
     <td>Valeur nulle ou non nulle</td>
     <td>Par le VPN</td>
     <td><code>10.0.0.1:3306</code>Il peut également s’agir d’un nom d’hôte.</td>
   </tr>
   <tr>
     <td></td>
-    <td>Si l’adresse IP ne tombe pas dans la variable <i>Espace d’adresse de la passerelle VPN</i> plage et le client se connecte à <code>AEM_PROXY_HOST</code> env à l’aide d’une variable <code>portOrig</code> déclaré dans la variable <code>portForwards</code> Paramètre d’API</td>
+    <td>Si l’adresse IP ne tombe pas dans la variable <i>Espace d’adresse de passerelle VPN</i> plage et le client se connecte à <code>AEM_PROXY_HOST</code> env à l’aide d’une variable <code>portOrig</code> déclaré dans la variable <code>portForwards</code> Paramètre d’API</td>
     <td>Valeur nulle ou non nulle</td>
     <td>Via l’adresse IP sortante dédiée</td>
     <td></td>
