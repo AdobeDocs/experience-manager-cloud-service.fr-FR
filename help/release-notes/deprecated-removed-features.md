@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 8294709d6c5685fd5b88a52835b4082e3e713a51
+source-git-commit: 9410b061278d916c95233ecba7f7f946fccc51ed
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 98%
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,7 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 
 | Fonctionnalités | Fonctionnalité obsolète | Remplacement |
 | ------------ | ------------------ | ----------- |
+| [!DNL Sites] | Propriétés des fragments d’expérience pour **État des médias sociaux**. | La fonctionnalité sera bientôt supprimée. |
 | [!DNL Sites] | Fragments de contenu simples basés sur des modèles. | [Fragments de contenu structuré basés sur des modèles](/help/assets/content-fragments/content-fragments-models.md) maintenant. |
 | [!DNL Assets] | Workflow `DAM Asset Update` pour traiter les images ingérées. | L’assimilation de ressources utilise maintenant les [microservices de ressources](/help/assets/asset-microservices-overview.md). |
 | [!DNL Assets] | Chargement direct de ressources vers [!DNL Experience Manager]. Consultez [API de chargement de ressources obsolètes](/help/assets/developer-reference-material-apis.md#deprecated-asset-upload-api). | Utilisez le [chargement de binaire direct](/help/assets/add-assets.md). Pour plus d’informations techniques, consultez [API de transfert direct](/help/assets/developer-reference-material-apis.md#upload-binary). |
