@@ -1,13 +1,13 @@
 ---
 title: Vidéo  dans Dynamic Media
-description: Découvrez comment utiliser la vidéo dans Dynamic Media.
+description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment les bonnes pratiques pour le codage de vidéos, la publication de vidéos dans YouTube, l’affichage de rapports vidéo et l’ajout de sous-titres, de sous-titres ou de marqueurs de chapitre aux vidéos.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d174ff3a27d9a0a3d89bb146b847cf253b8afbdc
+source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
 workflow-type: tm+mt
-source-wordcount: '9427'
-ht-degree: 99%
+source-wordcount: '9458'
+ht-degree: 98%
 
 ---
 
@@ -1035,14 +1035,16 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## Ajout de légendes ou sous-titres à une vidéo {#adding-captions-to-video}
+## Ajout de sous-titres ou de sous-titres à une vidéo {#adding-captions-to-video}
 
-Vous pouvez étendre vos vidéos aux marchés mondiaux en ajoutant des sous-titres aux vidéos ou aux visionneuses de vidéos adaptatives. En ajoutant des sous-titres, vous évitez d’avoir à réenregistrer le son ou de recourir à des locuteurs natifs pour réenregistrer la partie audio dans les différentes langues. La vidéo est lue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langue étrangère s’affichent pour que les personnes parlant d’autres langues puissent néanmoins comprendre la partie audio.
+Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des sous-titres aux vidéos uniques ou aux visionneuses de vidéos adaptatives. L’ajout de sous-titres codés vous évite d’avoir à dupliquer l’audio ou d’utiliser des locuteurs natifs pour enregistrer à nouveau le son dans chaque langue. La vidéo est lue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langue étrangère s’affichent pour que les personnes parlant d’autres langues puissent néanmoins comprendre la partie audio.
 
-Les sous-titres offrent également une meilleure accessibilité en utilisant des sous-titres pour les sourds ou les malentendants.
+Le sous-titrage permet également une plus grande accessibilité pour les personnes sourdes ou malentendantes.
 
 >[!NOTE]
-Le lecteur vidéo utilisé doit prendre en charge l’affichage des sous-titres.
+Le lecteur vidéo que vous utilisez doit prendre en charge l’affichage de sous-titres fermés.
+
+Voir aussi [Accessibilité dans Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
 Dynamic Media peut convertir les fichiers de légende au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux utilisateurs des informations supplémentaires sur le contenu des vidéos.
 

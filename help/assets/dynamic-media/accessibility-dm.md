@@ -1,15 +1,15 @@
 ---
 title: Accessibilité dans Dynamic Media
-description: Découvrez l’accessibilité dans Dynamic Media et dans les visionneuses Dynamic Media.
+description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment les bonnes pratiques pour le codage de vidéos, la publication de vidéos dans YouTube et l’affichage de rapports vidéo. Découvrez également comment ajouter des sous-titres, des sous-titres ou des marqueurs de chapitre aux vidéos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 93%
+source-wordcount: '665'
+ht-degree: 86%
 
 ---
 
@@ -20,7 +20,7 @@ Dynamic Media prend en charge les technologies d’assistance et de contrôle du
 
 ## Prise en charge de l’accessibilité du clavier dans Dynamic Media {#keyboard-support-in-dm}
 
-Comme Dynamic Media est un plug-in de [!DNL Experience Manager Assets], la plupart des commandes au clavier sont identiques à celles de [!DNL Experience Manager Assets]. Par exemple, le bouton `Cancel` de Dynamic Media a la même mise en surbrillance que dans [!DNL Experience Manager Assets]. Il réagit également à la clé `Spacebar` comme dans [!DNL Experience Manager Assets]. Consultez les [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
+Dynamic Media étant un plug-in [!DNL Experience Manager Assets], la plupart des commandes de clavier produisent le même résultat que dans [!DNL Experience Manager Assets]. Par exemple, le bouton `Cancel` de Dynamic Media a la même mise en surbrillance que dans [!DNL Experience Manager Assets]. Il réagit également à la touche `Spacebar` de la même manière que dans [!DNL Experience Manager Assets]. Consultez les [Raccourcis clavier dans Assets](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Les raccourcis de touches prises en charge par des éléments personnalisés de l’interface utilisateur dans Dynamic Media sont, dans la plupart des cas, évidents et faciles à trouver. Voici ce que permet le contrôle clavier dans Dynamic Media :
 
@@ -59,6 +59,13 @@ Consultez [Accessibilité du clavier et navigation](https://experienceleague.ado
 
 Tous les composants de la visionneuse Dynamic Media prennent en charge les rôles et attributs ARIA (Accessible Rich Internet Applications) afin d’améliorer l’intégration avec les technologies d’assistance telles que les lecteurs d’écran.
 Consultez la rubrique d’aide **Prise en charge des technologies d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses Dynamic Media. Par exemple, voir [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=fr) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
+
+## Prise en charge des sous-titres codés dans [!DNL Dynamic Media] {#closed-caption-support}
+
+Dynamic Media prend en charge la diffusion de vidéos et de visionneuses de vidéos adaptatives avec sous-titrage. Les sous-titres doivent s’afficher au-dessus du contenu vidéo.
+
+Voir [Vidéo dans Dynamic Media - Ajout de sous-titres ou de sous-titres à une vidéo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+
 
 >[!MORELIKETHIS]
 >
