@@ -2,17 +2,17 @@
 title: Ajout d’un certificat SSL – Gestion des certificats SSL
 description: Ajout d’un certificat SSL – Gestion des certificats SSL
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 3b4a9d7c04a5f4feecad0f34c27a894c187152e7
-workflow-type: ht
-source-wordcount: '578'
-ht-degree: 100%
+source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+workflow-type: tm+mt
+source-wordcount: '686'
+ht-degree: 81%
 
 ---
 
 # Ajout d’un certificat SSL {#adding-an-ssl-certificate}
 
 >[!NOTE]
->AEM as a Cloud Service n’accepte que les certificats OV (validation d’organisation) ou EV (validation étendue). Les certificats DV (Domain Validation) ne sont pas acceptés. De plus, tout certificat doit être de type TLS X.509, délivré par une autorité de certification approuvée (CA) et doté d’une clé privée RSA 2 048 bits correspondante. AEM as a Cloud Service accepte les certificats SSL génériques pour un domaine.
+>AEM as a Cloud Service accepte uniquement les certificats conformes à la politique de validation d’organisation ou de validation étendue (EV). La stratégie DV (Domain Validation) ne sera pas acceptée. De plus, tout certificat doit être de type TLS X.509, délivré par une autorité de certification approuvée (CA) et doté d’une clé privée RSA 2 048 bits correspondante. AEM as a Cloud Service accepte les certificats SSL génériques pour un domaine.
 
 La mise en service d’un certificat prend quelques jours et il est recommandé que le certificat soit mis en service plusieurs mois à l’avance. Consultez [Obtention d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) pour plus d’informations.
 
@@ -68,6 +68,52 @@ Les trois champs ne sont pas facultatifs et doivent être renseignés.
    ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
 
 ## Erreurs de certificat {#certificate-errors}
+
+### Stratégie de certificat {#certificate-policy}
+
+Si le message d’erreur &quot;La stratégie de certificat doit être conforme à la norme EV ou OV, et non à la stratégie DV&quot; s’affiche, vérifiez la stratégie de votre certificat.
+
+En règle générale, les types de certificat sont identifiés par les valeurs OID intégrées aux stratégies. Ces OID sont uniques et, par conséquent, la conversion d’un certificat en formulaire texte et la recherche de l’OID confirmera que le certificat correspond.
+
+Vous pouvez afficher les détails de votre certificat comme suit.
+
+```text
+openssl x509 -in 9178c0f58cb8fccc.pem -text
+certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            91:78:c0:f5:8c:b8:fc:cc
+        Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C = US, ST = Arizona, L = Scottsdale, O = "GoDaddy.com, Inc.", OU = http://certs.godaddy.com/repository/, CN = Go Daddy Secure Certificate Authority - G2
+        Validity
+            Not Before: Nov 10 22:55:36 2021 GMT
+            Not After : Dec  6 15:35:06 2022 GMT
+        Subject: C = US, ST = Colorado, L = Denver, O = Alexandra Alwin, CN = adobedigitalimpact.com
+        Subject Public Key Info:
+...
+```
+
+Ce tableau fournit des modèles d’identification.
+
+| Modèle | Type de certificat | Acceptable |
+|---|---|---|
+| `2.23.140.1.2.1` | DV | Non |
+| `2.23.140.1.2.2` | OV | Oui |
+| `2.23.140.1.2.3` et `TLS Web Server Authentication` | IV cert avec permission pour utiliser pour https | Oui |
+
+`grep`ping pour les modèles, vous pouvez confirmer votre type de certificat.
+
+```shell
+# "EV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.1" -B5
+
+# "OV Policy"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.2" -B5
+
+# "DV Policy - Not Accepted"
+openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
+```
 
 ### Ordre de certificat correct {#correct-certificate-order}
 
