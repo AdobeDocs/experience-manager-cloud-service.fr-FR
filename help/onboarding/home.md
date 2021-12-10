@@ -2,10 +2,10 @@
 title: Intégration à Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 84%
+source-wordcount: '500'
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,6 @@ Le parcours d’intégration illustré ci-dessous est conçu pour un personnage 
 
 | Guide de l’utilisateur | Description |
 |---|---|
-| [Page d’accueil d’Experience Manager as a Cloud Service](/help/landing/home.md) | Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici. |
 | [Présentation](/help/overview/home.md) | Ce guide présente un aperçu des [!DNL Experience Manager as a Cloud Service], y compris une introduction, la terminologie, l’architecture, etc. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Ce guide fournit des informations importantes sur la dernière version de [!DNL Experience Manager as a Cloud Service], notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant [!DNL Experience Manager as a Cloud Service]. |

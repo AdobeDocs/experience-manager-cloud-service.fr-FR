@@ -2,7 +2,7 @@
 title: Parcours de développement découplé AEM
 description: AEM Documentation CMS sans affichage. Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: d683b71d823fb6cc756f8fcf04e7393e7bf71c14
+source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
 workflow-type: tm+mt
 source-wordcount: '1223'
 ht-degree: 53%
@@ -25,11 +25,11 @@ Ce guide vous guide tout au long des rubriques d’implémentation les plus head
 
 ## AEM Parcours de documentation {#documentation-journeys}
 
-[Un Parcours de documentation](/help/journey-documentation/home.md) Il relie de nombreux sujets et caractéristiques différents et peut-être complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau pour AEM, comprendre et résoudre un problème commercial du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
+[Un Parcours de documentation](/help/journey-documentation/documentation-journeys.md) Il relie de nombreux sujets et caractéristiques différents et peut-être complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau pour AEM, comprendre et résoudre un problème commercial du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
 
 Les Parcours de documentation sont conçus autour des principes de bonnes pratiques, reposant sur les dernières recherches d’Adobe, l’expérience de mise en oeuvre éprouvée des consultants Adobe, ainsi que les commentaires des projets clients.
 
-Si vous souhaitez savoir comment Adobe recommande de résoudre des affaires sans interface avec AEM, [AEM Parcours sans affichage](/help/journey-headless/home.md) où commencer.
+Si vous souhaitez savoir comment Adobe recommande de résoudre des affaires sans interface avec AEM, [AEM Parcours sans affichage](/help/journey-documentation/documentation-journeys.md) où commencer.
 
 >[!TIP]
 >
@@ -48,7 +48,7 @@ Voici les personnages qui interagissent dans ce parcours.
 | Administrateur | Gère la configuration et la configuration de base d’AEM | Le développeur travaille avec l’administrateur pour apporter les modifications de configuration nécessaires au développement. |
 | Architecte de contenu | Analyse les exigences relatives aux données qui doivent être distribuées sans interface et définit la structure de ces données | Les développeurs travaillent avec l’architecte de contenu pour comprendre la structure des données et les exigences nécessaires pour les diffuser en toute sécurité. |
 
-L&#39;information dans ce parcours peut bien sûr être utile à tous les acteurs, mais certaines informations peuvent être superflues à certains rôles. Restez à l’écoute pour [les prochains parcours couvrant des rôles supplémentaires.](/help/journey-documentation/home.md#journeys)
+L&#39;information dans ce parcours peut bien sûr être utile à tous les acteurs, mais certaines informations peuvent être superflues à certains rôles. Restez à l’écoute pour [les prochains parcours couvrant des rôles supplémentaires.](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## Le parcours de développement découplé {#the-journey}
 

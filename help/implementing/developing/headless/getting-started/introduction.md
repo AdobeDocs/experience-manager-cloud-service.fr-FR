@@ -2,10 +2,10 @@
 title: Guide de prise en main du mode découplé
 description: Grâce à ce guide de démarrage rapide, découvrez les fondamentaux des puissantes fonctionnalités en mode découplé comme les modèles de contenu, les fragments de contenu et l’API GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+source-git-commit: 0c552c3d2c2f623c3eae8e387870bf121eb56f94
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 75%
+source-wordcount: '322'
+ht-degree: 72%
 
 ---
 
@@ -23,7 +23,13 @@ Les Guides de prise en main sans tête présentent un chemin simple pour créer,
 >
 >Ce guide de prise en main suppose des connaissances en AEM et en technologies sans tête.
 >
->Si vous découvrez AEM ou que vous n’avez pas de tête, reportez-vous à la section [Parcours de documentation sans affichage](/help/journey-headless/home.md) pour une introduction de bout en bout sur les headless et la façon dont AEM les prend en charge.
+>Si vous êtes nouveau en AEM ou sans interface, reportez-vous à nos Parcours de documentation sans interface pour une introduction de bout en bout à la fois sans interface et comment AEM le prend en charge.
+>
+>* [Parcours de développement découplé](/help/journey-headless/developer/overview.md)
+>* [Parcours d’architecture de contenu sans affichage](/help/journey-headless/architect/overview.md)
+>* [Parcours de création de contenu sans affichage](/help/journey-headless/author/overview.md)
+>* [Parcours de traduction sans affichage](/help/journey-headless/translation/overview.md).
+
 
 ## Public {#audience}
 

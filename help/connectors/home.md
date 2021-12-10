@@ -2,10 +2,10 @@
 title: Connecteurs Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation sur les connecteurs Adobe Experience Manager as a Cloud Service
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 95%
+source-wordcount: '364'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,6 @@ Cette page répertorie les ressources d’aide autonome sur les connecteurs Expe
 
 | Guide de l’utilisateur | Description |
 |---|---|
-| [Page d’accueil d’Experience Manager as a Cloud Service](/help/landing/home.md) | Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici. |
 | [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, la terminologie, l’architecture, etc. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Ce guide fournit des informations importantes sur la dernière version d’Experience Manager as a Cloud Service, notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |

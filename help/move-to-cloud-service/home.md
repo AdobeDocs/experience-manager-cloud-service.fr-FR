@@ -2,9 +2,9 @@
 title: Transition vers AEM as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation concernant la transition entre Adobe Experience Manager as a Cloud Service et AEM as a Cloud Service
 exl-id: 9f5585ce-0740-46a9-938e-6a4424eb6fa1
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '678'
 ht-degree: 97%
 
 ---
@@ -50,7 +50,6 @@ Reportez-vous à [Prise en main de Cloud Acceleration Manager](https://experienc
 
 | Guide de l’utilisateur | Description |
 |---|---|
-| [Page d’accueil d’Experience Manager as a Cloud Service](/help/landing/home.md) | Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici. |
 | [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, la terminologie, l’architecture, etc. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Ce guide fournit des informations importantes sur la dernière version d’Experience Manager as a Cloud Service, notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |

@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 98c6207e84fda0d4bab3141c84507498f3527337
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '615'
 ht-degree: 98%
 
 ---
@@ -49,7 +49,6 @@ Pour se préparer pour une version :
 
 | Guide de l’utilisateur | Description |
 |---|---|
-| [Page d’accueil d’Experience Manager as a Cloud Service](/help/landing/home.md) | Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici. |
 | [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, la terminologie, etc. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |
 | [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |

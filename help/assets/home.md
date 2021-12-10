@@ -4,9 +4,9 @@ description: Ressources d’aide autonome et liens vers la documentation [!DNL A
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
-source-git-commit: a5fb7cd1f0c1041f0dbaa1e261f6e1454f363fd5
+source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '270'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,6 @@ Les ressources d’auto-assistance suivantes sont disponibles pour [!DNL Experie
 
 | Guide de l’utilisateur | Description |
 |---|---|
-| [[!DNL Experience Manager] as a [!DNL Cloud Service] Accueil](/help/landing/home.md) | Documentation complète d’[!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Présentation](/help/overview/home.md) | Présentation générale et glossaire d’[!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Notes de mise à jour, nouveautés, fonctionnalités obsolètes et supprimées et problèmes connus. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant [!DNL Experience Manager] as a [!DNL Cloud Service]. |
