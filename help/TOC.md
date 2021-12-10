@@ -4,10 +4,12 @@ product: Adobe Experience Manager
 sub-product: Adobe Experience Manager as a Cloud Service
 solution-title: Experience Cloud
 feature: Release Information
+user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
+user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: aaeecc897157b08686a741ed7c2143a443fb2633
 workflow-type: tm+mt
-source-wordcount: '3337'
+source-wordcount: '3355'
 ht-degree: 85%
 
 ---
@@ -77,7 +79,7 @@ ht-degree: 85%
       + [Assistance Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
    + Parcours d’intégration {#journey}
       + [Parcours d’intégration](/help/journey-onboarding/home.md)
-      + [Overview to Onboarding Journey](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
+      + [Présentation du Parcours d’intégration](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
       + [Prise en main du processus d’intégration](/help/journey-onboarding/sysadmin/get-started-onboarding-journey.md)
       + [Affectation de membres d’équipe à des profils de produit Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md)
       + [Configuration de ressources cloud via Cloud Manager](/help/journey-onboarding/sysadmin/setup-cloud-resources-via-cloud-manager.md)
@@ -115,7 +117,7 @@ ht-degree: 85%
          + [Conseils et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Prise en main de l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Gestion des référentiels de contenu volumineux](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Extracting Content from Source](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+         + [Extraction de contenu de la source](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Ingestion de contenu dans Target](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Affichage des journaux d’un jeu de migration](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Suppression d’un jeu de migration](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
@@ -212,9 +214,9 @@ ht-degree: 85%
          + [Modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [Thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md)
          + parcours de création rapide de site {#quick-site}
-            + [Understand AEM Quick Site Creation](/help/journey-sites/quick-site/overview.md)
+            + [Comprendre AEM création rapide de site](/help/journey-sites/quick-site/overview.md)
             + [Présentation de Cloud Manager](/help/journey-sites/quick-site/cloud-manager.md)
-            + [Create site from template](/help/journey-sites/quick-site/create-site.md)
+            + [Créer un site à partir d’un modèle](/help/journey-sites/quick-site/create-site.md)
             + [Configuration de votre pipeline](/help/journey-sites/quick-site/pipeline-setup.md)
             + [Accorder l’accès au développeur front-end](/help/journey-sites/quick-site/grant-access.md)
             + [Récupération des informations d’accès au référentiel git](/help/journey-sites/quick-site/retrieve-access.md)
@@ -234,7 +236,7 @@ ht-degree: 85%
          + Traduction {#translation}
             + Parcours de traduction de sites {#sites}
                + [Présentation de la traduction des sites dans AEM](/help/journey-sites/translation/overview.md)
-               + [Get started with AEM sites translation](/help/journey-sites/translation/getting-started.md)
+               + [Prise en main de la traduction des sites AEM](/help/journey-sites/translation/getting-started.md)
                + [Découvrez le contenu des sites et comment traduire en AEM](/help/journey-sites/translation/learn-about.md)
                + [Configuration du connecteur de traduction](/help/journey-sites/translation/configure-connector.md)
                + [Configuration des règles de traduction](/help/journey-sites/translation/translation-rules.md)
@@ -334,7 +336,7 @@ ht-degree: 85%
       + [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
       + [Configurez Dynamic Media](/help/assets/dynamic-media/config-dm.md)
       + [Facultatif - Configuration de Dynamic Media, paramètres généraux](/help/assets/dynamic-media/dm-general-settings.md)
-      + [Optional - Configure Dynamic Media, Publish Setup](/help/assets/dynamic-media/dm-publish-settings.md)
+      + [Facultatif - Configuration de Dynamic Media et configuration de la publication](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Résolution des problèmes liés à Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
       + [Accessibilité dans Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md)
       + [Gestion des ressources Dynamic Media](/help/assets/dynamic-media/managing-assets.md)
@@ -682,7 +684,7 @@ ht-degree: 85%
                + [Présentation du Parcours de l’architecture de contenu sans affichage AEM](/help/journey-headless/architect/overview.md)
                + [Modélisation de contenu pour sans affichage avec AEM - Introduction](/help/journey-headless/architect/introduction.md)
                + [Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM](/help/journey-headless/architect/basics.md)
-               + [Learn about Creating Content Fragment Models in AEM](/help/journey-headless/architect/model-structure.md)
+               + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](/help/journey-headless/architect/model-structure.md)
          + Guide de prise en main du mode découplé {#getting-started}
             + [Présentation](/help/implementing/developing/headless/getting-started/introduction.md)
             + [Création d’une configuration](/help/implementing/developing/headless/getting-started/create-configuration.md)
