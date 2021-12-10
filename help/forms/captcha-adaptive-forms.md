@@ -27,7 +27,6 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 >
 >* [!DNL AEM Forms] prend en charge uniquement reCaptcha v2. Toute autre version n’est pas prise en charge.
 >* Dans les formulaires adaptatifs, CAPTCHA n’est pas pris en charge dans le mode hors ligne sur l’application [!DNL AEM Forms].
-
 >
 
 
