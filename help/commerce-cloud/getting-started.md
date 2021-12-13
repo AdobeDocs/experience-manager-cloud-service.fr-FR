@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 35137687e51d54454d3a4b7aed247a28d98dc291
-workflow-type: ht
-source-wordcount: '1104'
-ht-degree: 100%
+source-git-commit: 2afeb12ec7b99da056652fc869da5bc82db30754
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -49,6 +49,8 @@ Il existe deux options pour configurer le point d’entrée :
 
 ### Via l’interface utilisateur de Cloud Manager (par défaut) {#cm-ui}
 
+>[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
+
 Vous pouvez le faire à l’aide d’une boîte de dialogue sur la page Détails de l’environnement. Lorsque vous affichez cette page pour un programme compatible avec le commerce, un bouton s’affiche si le point d’entrée n’est pas actuellement configuré :
 
 ![Informations sur l’environnement de CM](/help/commerce-cloud/assets/commerce-cmui.png)
@@ -62,8 +64,6 @@ Une fois le point d’entrée (éventuellement un jeton d’authentification pou
 ![Informations sur l’environnement de CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
 ### via l’interface de ligne de commande Adobe I/O   {#adobe-cli}
-
->[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
 Pour connecter AEM à une solution de commerce via l’interface de ligne de commande d’Adobe I/O, procédez comme suit :
 
