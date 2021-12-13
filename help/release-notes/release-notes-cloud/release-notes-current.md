@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 4efac10fe32ef0aa0ab5a4de3f16c3f0dbf91551
+source-git-commit: 23b06ce1f3c49b2a63c71d53fdc6c26ad02160f5
 workflow-type: tm+mt
-source-wordcount: '1619'
-ht-degree: 48%
+source-wordcount: '1591'
+ht-degree: 49%
 
 ---
 
@@ -47,14 +47,6 @@ Consultez la section [Présentation de la version d’octobre 2021](https://vide
 ### Nouvelle fonctionnalité dans la [!DNL Assets] canal prerrelease {#assets-prerelease-features}
 
 * [!DNL Dynamic Media] Le recadrage intelligent d’image et le nuancier sont désormais alimentés par les derniers services Sensei, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles seront conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
-
-* Les balises intelligentes sont automatiquement appliquées aux ressources à l’aide des microservices de ressources, au lieu des services de contenu dynamique. Le modèle sous-jacent est mis à jour afin d’améliorer les résultats du balisage et de réduire les biais. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
-
-<!-- Leave this commented.
-### Bugs fixed in [!DNL Assets] {#assets-bugs-fixed}
-
-No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
--->
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
