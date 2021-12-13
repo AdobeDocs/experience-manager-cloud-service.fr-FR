@@ -1,9 +1,9 @@
 ---
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles que VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
-source-git-commit: 76cc8f5ecac4fc8e1663c1500433a9e3eb1485df
+source-git-commit: 4079e44d4fdce49b1c60caf178583a8800e17c0e
 workflow-type: tm+mt
-source-wordcount: '2867'
+source-wordcount: '2982'
 ht-degree: 7%
 
 ---
@@ -78,17 +78,17 @@ Pour plus d’informations, voir [Documentation de l’API Cloud Manager](https:
 
 ### Routage du trafic {#flexible-port-egress-traffic-routing}
 
-Le trafic HTTP ou https qui va vers des destinations via les ports 80 ou 443 passe par un proxy préconfiguré, en supposant que la bibliothèque de réseau Java standard soit utilisée. Pour le trafic http ou https passant par d’autres ports, un proxy doit être configuré à l’aide des propriétés suivantes.
+Pour le trafic http ou https se rendant dans des ports autres que 80 ou 443, un proxy doit être configuré à l’aide des variables d’environnement hôte et port suivantes :
 
-* `AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST`
-* `AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT`
+* pour HTTP : `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (valeur par défaut) `proxy.tunnel:3128` dans les versions d’AEM &lt; 6094)
+* pour HTTPS : `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (valeur par défaut) `proxy.tunnel:3128` dans les versions d’AEM &lt; 6094)
 
 Par exemple, voici un exemple de code pour envoyer une requête à `www.example.com:8443`:
 
 ```java
 String url = "www.example.com:8443"
-var proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
-var proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+String proxyHost = System.getenv().getOrDefault("AEM_PROXY_HOST", "proxy.tunnel");
+int proxyPort = Integer.parseInt(System.getenv().getOrDefault("AEM_HTTPS_PROXY_PORT", "3128"));
 HttpClient client = HttpClient.newBuilder()
       .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
       .build();
@@ -114,7 +114,7 @@ Le tableau ci-dessous décrit le routage du trafic :
     <th>Condition de destination</th>
     <th>Port</th>
     <th>Connexion</th>
-    <th>Exemple</th>
+    <th>Exemple de destination externe</th>
   </tr>
 </thead>
 <tbody>
@@ -127,12 +127,13 @@ Le tableau ci-dessous décrit le routage du trafic :
   </tr> 
   <tr>
     <td></td>
-    <td>Trafic non standard (sur d’autres ports en dehors des ports 80 ou 443) via un proxy http configuré à l’aide de ces variables d’environnement :<br><ul>
-     <li>AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST</li>
-     <li>AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT</li>
+    <td>Trafic non standard (sur d’autres ports en dehors de 80 ou 443) via un proxy http configuré à l’aide de la variable d’environnement et du numéro de port du proxy suivant. Ne déclarez pas le port de destination dans le paramètre portForwards de l’appel API Cloud Manager :<br><ul>
+     <li>AEM_PROXY_HOST (par défaut "proxy.tunnel" dans AEM versions &lt; 6094)</li>
+     <li>AEM_HTTPS_PROXY_PORT (port par défaut 3128 dans AEM versions &lt; 6094)</li>
     </ul>
     <td>Ports en dehors de 80 ou 443</td>
     <td>Autorisé</td>
+    <td>example.com:8443</td>
   </tr>
   <tr>
     <td></td>
@@ -163,15 +164,15 @@ Le tableau ci-dessous décrit le routage du trafic :
 Niveau Apache/Dispatcher AEM Cloud Service `mod_proxy` peut être configurée à l’aide des propriétés décrites ci-dessus.
 
 ```
-ProxyRemote "http://example.com" "http://${AEM_HTTP_PROXY_HOST}:3128"
-ProxyPass "/somepath" "http://example.com"
-ProxyPassReverse "/somepath" "http://example.com"
+ProxyRemote "http://example.com:8080" "http://${AEM_PROXY_HOST}:3128"
+ProxyPass "/somepath" "http://example.com:8080"
+ProxyPassReverse "/somepath" "http://example.com:8080"
 ```
 
 ```
 SSLProxyEngine on //needed for https backends
  
-ProxyRemote "https://example.com:8443" "http://${AEM_HTTPS_PROXY_HOST}:3128"
+ProxyRemote "https://example.com:8443" "http://${AEM_PROXY_HOST}:3128"
 ProxyPass "/somepath" "https://example.com:8443"
 ProxyPassReverse "/somepath" "https://example.com:8443"
 ```
@@ -204,6 +205,36 @@ Lors du choix entre une sortie de port flexible et une adresse IP de sortie déd
 
 ### Routage du trafic {#dedcated-egress-ip-traffic-routing}
 
+Le trafic HTTP ou https qui va vers des destinations via les ports 80 ou 443 passe par un proxy préconfiguré, en supposant que la bibliothèque de réseau Java standard soit utilisée. Pour le trafic http ou https passant par d’autres ports, un proxy doit être configuré à l’aide des propriétés suivantes.
+
+```
+AEM_HTTP_PROXY_HOST / AEM_HTTPS_PROXY_HOST
+AEM_HTTP_PROXY_PORT / AEM_HTTPS_PROXY_PORT
+```
+
+Par exemple, voici un exemple de code pour envoyer une requête à `www.example.com:8443`:
+
+```java
+String url = "www.example.com:8443"
+String proxyHost = System.getenv("AEM_HTTPS_PROXY_HOST");
+int proxyPort = Integer.parseInt(System.getenv("AEM_HTTPS_PROXY_PORT"));
+
+HttpClient client = HttpClient.newBuilder()
+      .proxy(ProxySelector.of(new InetSocketAddress(proxyHost, proxyPort)))
+      .build();
+ 
+HttpRequest request = HttpRequest.newBuilder().uri(URI.create(url)).build();
+HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+```
+
+Si vous utilisez des bibliothèques réseau Java non standard, configurez des proxies à l’aide des propriétés ci-dessus, pour tout le trafic.
+
+Trafic non http/s avec des destinations via des ports déclarés dans la variable `portForwards` paramètre doit référencer une propriété appelée `AEM_PROXY_HOST`, ainsi que le port mappé. Par exemple :
+
+```java
+DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + ":53306/test");
+```
+
 <table>
 <thead>
   <tr>
@@ -211,7 +242,7 @@ Lors du choix entre une sortie de port flexible et une adresse IP de sortie déd
     <th>Condition de destination</th>
     <th>Port</th>
     <th>Connexion</th>
-    <th>Exemple</th>
+    <th>Exemple de destination externe</th>
   </tr>
 </thead>
 <tbody>
@@ -380,7 +411,7 @@ Le tableau ci-dessous décrit le routage du trafic.
     <th>Condition de destination</th>
     <th>Port</th>
     <th>Connexion</th>
-    <th>Exemple</th>
+    <th>Exemple de destination externe</th>
   </tr>
 </thead>
 <tbody>
