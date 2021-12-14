@@ -4,9 +4,9 @@ description: Découvrez comment utiliser des vidéos interactives et Shoppable d
 feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
 workflow-type: tm+mt
-source-wordcount: '5936'
+source-wordcount: '5966'
 ht-degree: 99%
 
 ---
@@ -78,6 +78,10 @@ Voir [Création d’un paramètre prédéfini de visionneuse](/help/assets/dynam
 
 1. **Charger une vidéo et les ressources d’image associées** : chargez une vidéo et les images associées auxquelles vous souhaitez ajouter de l’interactivité.
 Voir [Chargement d’une vidéo et des ressources miniatures associées](#uploading-a-video-and-its-associated-thumbnail-assets).
+
+   >[!NOTE]
+   >
+   >Le format vidéo MXF n’est pas encore pris en charge pour une utilisation avec les vidéos interactives dans Dynamic Media.
 
 1. **Ajouter de l’interactivité à votre vidéo** : ajoutez un ou plusieurs segments temporels à la vidéo. Ensuite, associez les vignettes dans ces segments temporels. Affectez chaque miniature d’image à une action telle qu’un lien hypertexte, un aperçu rapide ou un fragment d’expérience.
 (La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.)
@@ -237,6 +241,10 @@ Pour créer votre propre paramètre prédéfini de visionneuse de vidéos intera
 ## Chargement d’une vidéo et de ses ressources miniatures associées {#uploading-a-video-and-its-associated-thumbnail-assets}
 
 Si vous avez déjà chargé votre vidéo et les ressources miniatures, passez à la section [Ajouter de l’interactivité à votre vidéo](#adding-interactivity-to-your-video).
+
+>[!NOTE]
+>
+>Le format vidéo MXF n’est pas encore pris en charge pour une utilisation avec les vidéos interactives dans Dynamic Media.
 
 Si vous n’avez pas transféré les vidéos ou images appropriées, ou si vous souhaitez supprimer les vidéos ou images transférées dont vous n’avez plus besoin, reportez-vous à la section [Supprimer des ressources](/help/assets/manage-digital-assets.md#delete-assets).
 

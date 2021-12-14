@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 764ddc2621d8da3323af4eb037ec5b92e1214503
+source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
 workflow-type: tm+mt
-source-wordcount: '4287'
-ht-degree: 99%
+source-wordcount: '4320'
+ht-degree: 98%
 
 ---
 
@@ -244,7 +244,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    >[!NOTE]
    >
-   >Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Selon le navigateur, différents formats vidéo sont en outre pris en charge.
+   >Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Selon le navigateur, différents formats vidéo sont en outre pris en charge. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
 ## Suppression des ressources {#delete-assets}
 
@@ -410,7 +410,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketing la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
-Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Les formats vidéo pris en charge par Assets dépendent du navigateur.
+Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Les formats vidéo pris en charge par Assets dépendent du navigateur. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
 >[!NOTE]
 >
@@ -451,7 +451,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
    >[!NOTE]
    >
-   >Vous pouvez ajouter des annotations à des ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](manage-video-assets.md).
+   >Vous pouvez ajouter des annotations à des ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](manage-video-assets.md). Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
 1. Pour sélectionner une autre couleur afin de différencier les utilisateurs, cliquez/appuyez sur l’icône Profil et ensuite sur **[!UICONTROL Mes préférences]**.
 
