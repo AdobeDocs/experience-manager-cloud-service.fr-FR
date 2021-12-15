@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: 038dbc4b0febfa58f69e05f837760162210f8689
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 100%
+source-wordcount: '656'
+ht-degree: 97%
 
 ---
 
@@ -44,6 +44,12 @@ Si vous indiquez uniquement la largeur ou uniquement la hauteur et laissez l’a
 Pour traiter des ressources à l’aide d’un profil de traitement, ajoutez un profil à un dossier. Voir [Utilisation de profils de traitement pour traiter des ressources](/help/assets/asset-microservices-configure-and-use.md#use-profiles).
 
 ## Annotation de ressources vidéo {#annotate-video-assets}
+
+Vous pouvez ajouter des annotations aux ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](manage-video-assets.md).
+
+>[!NOTE]
+>
+>Le format vidéo MXF n’est pas encore pris en charge avec les annotations de ressources vidéo.
 
 1. Dans la console [!DNL Assets], sélectionnez **[!UICONTROL Modifier]** sur la carte de ressources pour afficher la page de détails de la ressource.
 1. Pour lire la vidéo, cliquez sur **[!UICONTROL Aperçu]**.
