@@ -1,14 +1,14 @@
 ---
 title: Utilisation des ressources connectées pour partager des ressources DAM dans  [!DNL Sites]
-description: Utilisez des ressources disponibles pour un déploiement [!DNL Adobe Experience Manager Assets] deployment when creating your web pages on another [!DNL Adobe Experience Manager Sites] à distance.
+description: Utilisation des ressources disponibles sur une télécommande [!DNL Adobe Experience Manager Assets] déploiement lors de la création de vos pages web sur une autre [!DNL Adobe Experience Manager Sites] déploiement.
 contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: d46efe181fee238d355a67cafbd5e7220efb43dc
+source-git-commit: 48efd852c990238661177bc40e2be7971b7d4949
 workflow-type: tm+mt
-source-wordcount: '2986'
-ht-degree: 99%
+source-wordcount: '3358'
+ht-degree: 87%
 
 ---
 
@@ -57,6 +57,18 @@ Les différents rôles impliqués pour configurer et utiliser la fonctionnalité
 | Utilisateur DAM | Distant | `Authors` | `ksaner` sur [!DNL Experience Manager] distant | Rôle d’auteur sur le déploiement [!DNL Experience Manager] distant. Recherchez et parcourez les ressources dans la fonction Ressources connectées à l’aide de l’[!UICONTROL outil de recherche de contenu]. |
 | Distributeur DAM (utilisateur technique) | Distant | <ul> <li> [!DNL Sites] `Authors`</li> <li> `connectedassets-assets-techaccts` </li> </ul> | `ksaner` sur [!DNL Experience Manager] distant | Cet utilisateur présent sur le déploiement distant est utilisé par le serveur local [!DNL Experience Manager] (et non le rôle d’auteur [!DNL Sites]) pour récupérer les ressources distantes, au nom de l’auteur [!DNL Sites]. Ce rôle n’est pas identique aux deux rôles `ksaner` ci-dessus et appartient à un groupe d’utilisateurs différent. |
 | Utilisateur technique de [!DNL Sites] | Local | `connectedassets-sites-techaccts` | - | Permet au déploiement [!DNL Assets] de rechercher des références à des ressources dans les pages web [!DNL Sites]. |
+
+### Architecture des ressources connectées {#connected-assets-architecture}
+
+Experience Manager vous permet de connecter un déploiement DAM distant en tant que source à plusieurs déploiements Experience Manager Sites. Vous pouvez connecter un maximum de quatre déploiements Sites à un DAM distant source. Cependant, vous pouvez connecter un déploiement Sites à un seul déploiement DAM distant.
+
+Les diagrammes suivants illustrent les scénarios pris en charge :
+
+![Architecture des ressources connectées](assets/connected-assets-architecture.png)
+
+Le diagramme suivant illustre un scénario non pris en charge :
+
+![Architecture des ressources connectées](assets/connected-assets-architecture-unsupported.png)
 
 ## Configurez une connexion entre les déploiements [!DNL Sites] et [!DNL Assets]  {#configure-a-connection-between-sites-and-assets-deployments}
 
@@ -199,6 +211,26 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
 1. Les utilisateurs peuvent déplacer ou supprimer la ressource. Lors du déplacement ou de la suppression d’une ressource, le nombre total de références de toutes les ressources ou de tous les dossiers sélectionnés s’affiche dans une boîte de dialogue d’avertissement. Lors de la suppression d’un fichier pour lequel les références ne sont pas encore affichées, une boîte de dialogue d’avertissement s’affiche.
 
    ![Avertissement de suppression forcée](assets/delete-referenced-asset.png)
+
+### Gestion des mises à jour des ressources dans DAM distant {#handling-updates-to-remote-assets}
+
+>[!NOTE]
+>
+>Cette fonctionnalité est disponible dans le canal de version préliminaire. Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
+
+Après [configuration d&#39;une connexion](#configure-a-connection-between-sites-and-assets-deployments) entre les déploiements DAM distant et Sites, les ressources sur DAM distant sont disponibles sur le déploiement Sites. Vous pouvez ensuite effectuer les opérations de mise à jour, de suppression, de changement de nom et de déplacement sur les ressources ou dossiers DAM distants. Les mises à jour, avec un certain délai, sont disponibles automatiquement sur le déploiement Sites . En outre, si une ressource sur DAM distant est utilisée sur une page Experience Manager Sites locale, les mises à jour de la ressource sur DAM distant sont affichées sur la page Sites.
+
+Lors du déplacement d’une ressource d’un emplacement à un autre, assurez-vous que vous [ajuster les références](manage-digital-assets.md) afin que la ressource s’affiche sur la page Sites. Si vous déplacez une ressource vers un emplacement non accessible à partir du déploiement Sites local, l’affichage de la ressource échoue sur le déploiement Sites.
+
+Vous pouvez également mettre à jour les propriétés de métadonnées d’une ressource sur DAM distant et les modifications sont disponibles sur le déploiement Sites local.
+
+Les auteurs Sites peuvent prévisualiser les mises à jour disponibles sur le déploiement Sites, puis republier les modifications pour les rendre disponibles sur l’instance de publication AEM.
+
+Experience Manager affiche une `expired` indicateur visuel d’état sur les ressources dans l’outil de recherche de contenu des ressources distantes pour empêcher les auteurs de site d’utiliser la ressource sur une page Sites. Si vous utilisez une ressource avec une `expired` sur une page Sites, l’affichage de la ressource échoue sur l’instance de publication du Experience Manager.
+
+>[!NOTE]
+>
+>Les mises à jour apportées aux ressources dans la gestion des actifs numériques distants ne sont disponibles pour le déploiement Sites que si les déploiements DAM et Sites distants sont sur as a Cloud Service Experience Manager.
 
 ## Restrictions et bonnes pratiques {#tip-and-limitations}
 
