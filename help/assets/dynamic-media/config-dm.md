@@ -3,10 +3,10 @@ title: Configuration de Dynamic Media Cloud Services
 description: Découvrez la configuration de Dynamic Media dans Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 3f90ce1b9325d4dabcd97b515cebffe008b199c7
+source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
 workflow-type: tm+mt
-source-wordcount: '4067'
-ht-degree: 95%
+source-wordcount: '3514'
+ht-degree: 91%
 
 ---
 
@@ -207,46 +207,19 @@ Les tâches d’installation et de configuration incluent :
 * [Modification des types MIME pour les formats pris en charge](#editing-mime-types-for-supported-formats)
 * [Ajout de types MIME pour les formats non pris en charge](#adding-mime-types-for-unsupported-formats)
 
-<!-- * [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
+<!-- OBSOLETE BUT LEAVE FOR POSSIBLE FUTURE* [Creating batch set presets to auto-generate Image Sets and Spin Sets](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) -->
 
-<!-- #### Configure Dynamic Media Publish Setup for Image Server {#publishing-setup-for-image-server}
+#### Configuration de la configuration de publication Dynamic Media pour Image Server {#publishing-setup-for-image-server}
 
-The Dynamic Media Publish Setup page establishes default settings that determine how assets are delivered from Adobe Dynamic Media servers to web sites or applications.
+La page Configuration de la publication Dynamic Media établit les paramètres par défaut qui déterminent la manière dont les ressources sont diffusées des serveurs Dynamic Media d’Adobe vers les sites web ou les applications.
 
-See [Configure Dynamic Media Publish Setup for Image Server](/help/assets/dynamic-media/dm-publish-settings.md). -->
+Voir [Configuration de la configuration de publication Dynamic Media pour Image Server](/help/assets/dynamic-media/dm-publish-settings.md).
 
-#### Configuration de la publication pour Image Server {#publishing-setup-for-image-server}
+#### Configuration des paramètres généraux de Dynamic Media {#configuring-application-general-settings}
 
-Les paramètres de configuration de la publication déterminent comment les ressources sont diffusées par défaut à partir de Dynamic Media. Si aucun paramètre n’est spécifié, Dynamic Media diffuse une ressource selon les paramètres par défaut définis dans Configuration de la publication. Par exemple, une requête de diffusion d’image qui ne comporte pas d’attribut de résolution produit une image avec le paramètre de résolution d’objet par défaut.
+Configuration de Dynamic Media **[!UICONTROL Nom du serveur de publication]** l’URL et la variable **[!UICONTROL Nom du serveur d’origine]** URL. Vous pouvez également indiquer **[!UICONTROL Téléchargement vers l’application]** et **[!UICONTROL Options de téléchargement par défaut]** tout cela en fonction de votre cas d’utilisation spécifique.
 
-Pour définir la configuration de la publication : dans Dynamic Media Classic, accédez à **[!UICONTROL Configuration > Configuration de l’application > Configuration de la publication > Image Server]**.
-
-L’écran Image Server permet de définir les paramètres par défaut pour la diffusion des images. Voir l’écran de l’interface utilisateur pour la description de chaque paramètre.
-
-**[!UICONTROL Attributs de requête]** : ces paramètres imposent des limites aux images qui peuvent être diffusées à partir du serveur.
-**[!UICONTROL Attributs de requête par défaut]** : ces paramètres concernent l’aspect par défaut des images.
-**[!UICONTROL Attributs de miniature courants]** : ces paramètres concernent l’aspect par défaut des images miniatures.
-**[!UICONTROL Valeurs par défaut des champs de catalogue]** : ces paramètres concernent la résolution et le type de miniature par défaut des images.
-**[!UICONTROL Attributs de gestion des couleurs]** : ces paramètres déterminent les profils de couleurs ICC utilisés.
-**[!UICONTROL Attributs de compatibilité]** : ce paramètre permet aux paragraphes de début et de fin des calques de texte d’être traités tels qu’ils l’étaient dans la version 3.6, ce qui les rend rétrocompatibles.
-**[!UICONTROL Aide à la localisation]** : ces paramètres vous permettent de gérer divers attributs de paramètres régionaux. Ils vous permettent également de définir une chaîne de mappage de paramètres régionaux afin de définir les langues à prendre en charge pour les différentes info-bulles dans les visionneuses. Pour plus d’informations sur la configuration de la **[!UICONTROL prise en charge de la localisation]**, voir [Considérations à prendre en compte lors de la configuration de la localisation des ressources](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/publish-setup.html?lang=fr#considerations-when-setting-up-localization-of-assets).
-
-<!-- #### Configure Dynamic Media General Settings {#configuring-application-general-settings}
-
-Configure the Dynamic Media **[!UICONTROL Publish Server Name]** URL and the **[!UICONTROL Origin Server Name]** URL. You can also specify **[!UICONTROL Upload to Application]** settings and **[!UICONTROL Default Upload Options]** all based on your particular use case.
-
-See [Configure Dynamic Media General Settings](/help/assets/dynamic-media/dm-general-settings.md). -->
-
-#### Configuration des paramètres généraux de l’application {#configuring-application-general-settings}
-
-Pour ouvrir la page Paramètres généraux de l’application, dans la barre de navigation globale de Dynamic Media Classic, accédez à **[!UICONTROL Configuration > Configuration de l’application > Paramètres généraux]**.
-
-**[!UICONTROL Serveurs]** : au moment de la mise en service du compte, Dynamic Media fournit automatiquement les serveurs attribués à votre entreprise. Ces serveurs sont utilisés pour créer des chaînes URL pour votre site web et vos applications. Ces appels d’URL sont spécifiques à votre compte. Ne modifiez aucun nom de serveur, sauf si Experience Manager vous a demandé explicitement de le faire en tant que support concernant Cloud Service.
-**[!UICONTROL Écraser les images]** : Dynamic Media ne permet pas que deux fichiers portent le même nom. L’identifiant de l’URL de chaque élément (le nom de fichier sans l’extension) doit être unique. Ces options spécifient la manière dont les ressources de remplacement sont chargées : elles peuvent remplacer l’original ou devenir un doublon. Les ressources en double sont renommées en ajoutant « -1 » (par exemple, chaise.tif devient chaise-1.tif). Ces options affectent les ressources téléchargées dans un dossier différent de l’original ou les ressources dont l’extension de fichier diffère de celle de l’original.
-**[!UICONTROL Écraser dans dossier actuel, même nom/même extension de fichier de base]** : cette option est la règle la plus stricte pour le remplacement. Elle implique que vous chargiez l’image de remplacement dans le même dossier que l’original et qu’elle ait la même extension que le fichier d’origine. Si ces conditions ne sont pas remplies, un doublon est créé. Pour maintenir la cohérence avec Experience Manager as a Cloud Service, sélectionnez toujours **[!UICONTROL Écraser dans le dossier actuel, même nom/même extension de fichier de base]**.
-**[!UICONTROL Écraser dans n’importe quel dossier avec le même nom et la même extension d’image de base]** : nécessite que l’image de remplacement ait la même extension de fichier que l’image d’origine. Par exemple, chaise.jpg doit remplacer chaise.jpg et non chaise.tif. Vous pouvez néanmoins télécharger l’image de remplacement dans un dossier différent de celui de l’image d’origine. L’image mise à jour se trouve dans le nouveau dossier ; le fichier d’origine n’est plus disponible à l’emplacement d’origine..
-**[!UICONTROL Écraser dans un dossier, même nom de fichier, extension indépendante]** : cette option est la règle de remplacement la plus inclusive. Elle vous permet de charger une image de remplacement dans un dossier autre que celui de l’image d’origine, de charger un fichier dont l’extension est différente de celle du fichier d’origine et de remplacer le fichier d’origine. Si le fichier d’origine se trouve dans un dossier différent, l’image de remplacement est enregistrée dans le nouveau dossier où elle a été chargée.
-**[!UICONTROL Profils de couleurs par défaut]** : voir [Configuration de la gestion des couleurs](#configuring-color-management) pour plus d’informations. Par défaut, le système affiche 15 rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** et 15 paramètres prédéfinis de la visionneuse lorsque vous sélectionnez **[!UICONTROL Visionneuses]** dans la vue détaillée de la ressource. Vous pouvez augmenter cette limite. Voir [Augmentation ou diminution du nombre de paramètres d’image prédéfinis qui s’affichent](/help/assets/dynamic-media/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) ou [Augmentation ou diminution du nombre de paramètres prédéfinis de la visionneuse qui s’affichent](/help/assets/dynamic-media/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+Voir [Configuration des paramètres généraux de Dynamic Media](/help/assets/dynamic-media/dm-general-settings.md).
 
 #### Configuration de la gestion des couleurs {#configuring-color-management}
 
@@ -330,17 +303,17 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
 
 1. Sur la page, faites défiler l’écran jusqu’à atteindre *Adobe CQ Scene7 Asset MIME type Service*, comme illustré ci-dessous. À droite du nom, appuyez sur **[!UICONTROL Modifier les valeurs de configuration]** (icône en forme de crayon).
 
-   ![2019-08-02_16-44-56](assets/2019-08-02_16-44-56.png)
+   ![Modifiez les valeurs de configuration](assets/2019-08-02_16-44-56.png)
 
 1. Sur la page **Adobe CQ Scene7 Asset MIME type Service**, sélectionnez n’importe quelle icône &lt;+>. Dans le tableau, l’emplacement du signe + que vous sélectionnez pour ajouter le nouveau type MIME n’est pas important.
 
-   ![2019-08-02_16-27-27](assets/2019-08-02_16-27-27.png)
+   ![Service Adobe CQ Scene7 Asset Mime Type](assets/2019-08-02_16-27-27.png)
 
 1. Entrez `DWG=image/vnd.dwg` dans le champ de texte vide que vous venez d’ajouter.
 
    Le type MIME `DWG=image/vnd.dwg` n’est fourni qu’à titre d’exemple. Le type MIME que vous ajoutez ici peut être tout autre format non pris en charge.
 
-   ![2019-08-02_16-36-36](assets/2019-08-02_16-36-36.png)
+   ![Ajout du type MIME DWG](assets/2019-08-02_16-36-36.png)
 
 1. Dans l’angle inférieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -349,7 +322,7 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
 1. Revenez à l’onglet du navigateur qui contient votre console Experience Manager as a Cloud Service.
 1. Dans Experience Manager as a Cloud Service, accédez à **[!UICONTROL Outils > Général > CRXDE Lite]**.
 
-   ![2019-08-02_16-55-41](assets/2019-08-02_16-55-41.png)
+   ![Outils > Général > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
 1. Dans le rail de gauche, accédez à ce qui suit :
 
@@ -357,12 +330,12 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
 
 1. Faites glisser le type MIME `image_vnd.dwg` et déposez-le directement au-dessus de `image_` de l’arborescence, comme dans la capture d’écran suivante.
 
-   ![crxdelite_cqdoc-14627](assets/crxdelite_cqdoc-14627.png)
+   ![Modification d’un fichier DWG en CRXDE Lite](assets/crxdelite_cqdoc-14627.png)
 
 1. Avec le type MIME `image_vnd.dwg` toujours sélectionné, dans l’onglet **[!UICONTROL Propriétés]**, au niveau de la ligne **[!UICONTROL enabled]**, sous l’en-tête de colonne **[!UICONTROL Valeur]**, appuyez deux fois sur la valeur. La liste déroulante **[!UICONTROL Valeur]** est ouverte.
 1. Tapez `false` dans le champ (ou sélectionnez **[!UICONTROL false]** dans la liste déroulante).
 
-   ![2019-08-02_16-60-30](assets/2019-08-02_16-60-30.png)
+   ![Modification des types MIME dans CRXDE Lite](assets/2019-08-02_16-60-30.png)
 
 1. Dans le coin supérieur gauche de la page CRXDE Lite, sélectionnez **[!UICONTROL Tout enregistrer]**.
 
@@ -415,7 +388,7 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 
    Dans la plupart des cas d’utilisation, le paramètre par défaut de 0,5 est suffisant.
 
-   ![chlimage_1-1](assets/chlimage_1-1.jpeg)
+   ![Configuration d’une file d’attente de traitement des tâches](assets/chlimage_1-1.jpeg)
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -459,7 +432,7 @@ Le paramètre Connexion de chargement de Dynamic Media Classic (Scene7) synchron
 
    Dans la plupart des cas d’utilisation, le paramètre de 2 100 est suffisant.
 
-   ![chlimage_1-2](assets/chlimage_1-2.jpeg)
+   ![Service de téléchargement Adobe Scene7](assets/chlimage_1-2.jpeg)
 
 1. Sélectionnez **[!UICONTROL Enregistrer]**.
 
