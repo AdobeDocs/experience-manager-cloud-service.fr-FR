@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: aaeecc897157b08686a741ed7c2143a443fb2633
+source-git-commit: dd127862d65ed2f6a2dc2f93f9668552c577181c
 workflow-type: tm+mt
-source-wordcount: '3355'
+source-wordcount: '3363'
 ht-degree: 85%
 
 ---
@@ -292,6 +292,7 @@ ht-degree: 85%
       + [Réutilisation des ressources à l’aide de MSM](/help/assets/reuse-assets-using-msm.md)
       + [Téléchargement de ressources](/help/assets/download-assets-from-aem.md)
       + [Archivage et extraction des ressources à modifier](/help/assets/check-out-and-submit-assets.md)
+      + [Création et partage de dossiers privés](/help/assets/private-folder.md)
       + [Gestion des droits numériques des ressources](/help/assets/drm.md)
       + [Mise en filigrane de ressources](/help/assets/watermark-assets.md)
       + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
@@ -435,7 +436,7 @@ ht-degree: 85%
       + [Configuration des sources de données](/help/forms/configure-data-sources.md)
       + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
       + [Configuration du stockage [!DNL Azure] ](/help/forms/configure-azure-storage.md)
-      + [Configuration des services cloud [!DNL Microsoft Dynamics 365] and [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
+      + [Configuration des services cloud  [!DNL Microsoft Dynamics 365]  et  [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
       + [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)
       + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
       + [Utilisation d’un modèle de données de formulaire](/help/forms/using-form-data-model.md)
