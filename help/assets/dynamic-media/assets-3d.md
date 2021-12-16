@@ -8,10 +8,10 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
-source-wordcount: '2215'
-ht-degree: 100%
+source-wordcount: '2219'
+ht-degree: 99%
 
 ---
 
@@ -33,7 +33,7 @@ Aucune installation supplémentaire n’est nécessaire pour utiliser des ressou
 
 Dynamic Media prend en charge les formats de fichiers 3D suivants :
 
-Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#support-3d-formats)
+Voir aussi [Formats 3D pris en charge par Experience Manager Assets](/help/assets/file-format-support.md#support-3d-formats)
 
 | Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|

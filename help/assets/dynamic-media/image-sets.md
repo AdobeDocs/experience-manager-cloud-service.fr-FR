@@ -1,19 +1,19 @@
 ---
 title: Visionneuses d’images
 description: Découvrez comment utiliser des visionneuses d’images dans Dynamic Media.
-feature: Visionneuses d’images
+feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
-workflow-type: ht
-source-wordcount: '2044'
-ht-degree: 100%
+source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+workflow-type: tm+mt
+source-wordcount: '2041'
+ht-degree: 97%
 
 ---
 
 # Visionneuses d’images {#image-sets}
 
-Les visionneuses d’images offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément. Elles offrent des outils de zoom afin d’examiner les images de plus près.
+Visionneuses d’images offre aux utilisateurs une expérience de visionnage intégrée, dans laquelle ils peuvent voir différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément. Elles offrent des outils de zoom afin d’examiner les images de plus près.
 
 Les visionneuses d’images sont désignées par une bannière comportant le mot `IMAGESET`. En outre, si la visionneuse d’images est publiée, la date de publication, indiquée par l’icône **[!UICONTROL Monde]**, est sur la bannière. En outre, la dernière date de modification, indiquée par l’icône **[!UICONTROL Crayon]**, s’affiche.
 
@@ -43,7 +43,9 @@ Pour démarrer rapidement :
 
 1. [Chargez les images sources originales pour plusieurs vues](#uploading-assets-in-image-sets).
 
-   Chargez les images pour vos visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension. Experience Manager Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+   Chargez les images pour vos visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension.
+
+   Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses d’images.
 
 1. [Créez une visionneuse d’images](#creating-image-sets).
 
@@ -86,7 +88,9 @@ Si vous rencontrez des problèmes lors de la création des visionneuses, voir Im
 
 Commencez par charger les ressources d’images pour les visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension pour obtenir un détail de zoom optimal. Dynamic Media peut générer des images faisant jusqu’à 25 mégapixels chacune. Par exemple, vous pouvez utiliser une image de 5 000 x 5 000 mégapixels ou toute autre combinaison de taille pouvant atteindre 25 mégapixels.
 
-Les visionneuses d’images prennent en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
+<!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
+
+Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses d’images.
 
 Vous pouvez charger des images pour les visionneuses d’images comme vous le feriez pour [charger une autre ressource dans AEM Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 

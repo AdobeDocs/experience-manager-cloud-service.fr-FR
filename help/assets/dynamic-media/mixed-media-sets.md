@@ -4,10 +4,10 @@ description: Découvrez comment travailler avec des visionneuses de médias mixt
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
-source-wordcount: '1467'
-ht-degree: 100%
+source-wordcount: '1501'
+ht-degree: 97%
 
 ---
 
@@ -30,6 +30,8 @@ Pour démarrer rapidement, procédez comme suit :
 1. [Chargez vos ressources](#uploading-assets).
 
    Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md) et [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, assurez-vous de tenir compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension.
+
+   Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses de médias mixtes.
 
 1. [Créez une visionneuse de médias mixtes](#creating-mixed-media-sets).
 
@@ -72,6 +74,8 @@ Si nécessaire, vous pouvez modifier les [Visionneuses de médias mixtes](#editi
 Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse de médias mixtes. Ainsi, choisissez les images en gardant à l’esprit cette fonction de zoom. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension.
 
 Si vous souhaitez ajouter des visionneuses à 360° ou des visionneuses d’images à la visionneuse de médias mixtes, créez-les aussi.
+
+Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses de médias mixtes.
 
 ## Créez une visionneuse de médias mixtes {#creating-mixed-media-sets}
 
