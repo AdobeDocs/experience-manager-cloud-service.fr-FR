@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
 workflow-type: tm+mt
-source-wordcount: '1347'
-ht-degree: 100%
+source-wordcount: '1363'
+ht-degree: 99%
 
 ---
 
@@ -87,7 +87,7 @@ Vous pouvez également y parvenir en créant un modèle de workflow qui utilise 
 
 1. Définissez des paramètres supplémentaires dans le champ **Arguments**. Il est possible d’associer plusieurs arguments séparés par des virgules. Par exemple :
 
-   `enableVersion=true,agentId=publish`
+   `enableVersion=true,agentId=publish,includeChildren=true`
 
 
    >[!NOTE]
@@ -98,6 +98,7 @@ Vous pouvez également y parvenir en créant un modèle de workflow qui utilise 
 
 **Paramètres**
 
+* `includeChildren` (valeur booléenne, valeur par défaut : `false`). false signifie que seul le chemin est publié. true signifie que les enfants sont également publiés.
 * `replicateAsParticipant` (valeur booléenne, valeur par défaut : `false`). S’il est configuré comme `true`, la réplication utilise la balise `userid` de l’entité qui a exécuté l’étape de participant.
 * `enableVersion` (valeur booléenne, valeur par défaut : `true`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
 * `agentId` (valeur de chaîne, la valeur par défaut signifie que seuls les agents pour la publication sont utilisés). Il est recommandé d’être explicite concernant agentId ; par exemple, attribuez-lui la valeur : publier. L’application à l’agent de la valeur `preview` entraîne la publication sur le service d’aperçu.
