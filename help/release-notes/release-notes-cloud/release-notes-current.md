@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 994ecec88f2724a75d9b11ba38c9c854a6983066
+source-git-commit: edb547fa31158e1608b57231d9705d24f008b12e
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 52%
+source-wordcount: '1049'
+ht-degree: 51%
 
 ---
 
@@ -89,7 +89,7 @@ La prochaine version est prévue pour le 09 décembre 2021.
 * Les utilisateurs peuvent désormais tirer parti des nouveaux pipelines front-end pour déployer le code front-end exclusivement de manière accélérée. Voir [Pipelines front-end de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
 
    >[!IMPORTANT]
-   >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` pour tirer parti des nouveaux pipelines front-end.
+   >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` ou supérieur pour utiliser de nouveaux pipelines front-end.
 
 * La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la version.
 
