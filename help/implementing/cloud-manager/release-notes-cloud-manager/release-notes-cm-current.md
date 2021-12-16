@@ -1,64 +1,48 @@
 ---
-title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.11.0
-description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.11.0
+title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.12.0
+description: Il s’agit des notes de mise à jour de Cloud Manager dans AEM version as a Cloud Service 2021.12.0.
 feature: Release Information
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 79%
+source-wordcount: '463'
+ht-degree: 6%
 
 ---
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.11.0 {#release-notes}
 
-Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service 2021.11.0.
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.12.0 {#release-notes}
+
+Cette page présente les notes de mise à jour de Cloud Manager dans AEM 2021.12.0 as a Cloud Service.
 
 >[!NOTE]
->Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
+>
+>Voir [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service.
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.11.0 est le 04 novembre 2021.
-La prochaine version est prévue pour le 16 décembre 2021.
+La date de publication de Cloud Manager dans AEM 2021.12.0 as a Cloud Service est le 16 décembre 2021. La prochaine version est prévue pour janvier 2022.
 
 ### Nouveautés {#what-is-new}
 
-* Les utilisateurs peuvent désormais tirer parti des nouveaux pipelines front-end pour déployer le code front-end exclusivement de manière accélérée. Voir [Pipelines front-end de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
-
-   >[!IMPORTANT]
-   >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` pour tirer parti des nouveaux pipelines front-end.
-
-* La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la version.
-
-* L’ID d’enregistrement Git s’affiche désormais dans les détails d’exécution du pipeline, ce qui facilite le suivi du code créé.
-
-* La création de programme est désormais disponible via l’API publiquement exposée.
-
-* La création d’environnement est désormais disponible via l’API publiquement exposée.
-
-* L’en-tête de réponse `x-request-id` est désormais visible dans le laboratoire de l’API sur [www.adobe.io](https://www.adobe.io/). Cet en-tête est utile pour signaler des problèmes à l’assistance clientèle à des fins de dépannage.
-
-* En tant qu’utilisateur, je vois une carte Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
-
-* Une nouvelle page d’activité est désormais disponible. Vous pouvez y afficher des activités telles que les exécutions de pipeline et de code, ainsi que les détails associés. Au fil du temps, les activités répertoriées dans cette page s’étendront, de même que les détails fournis.
-
-* Une nouvelle page Pipelines avec une fenêtre contextuelle d’état et de survol permettant d’afficher facilement le résumé des détails est désormais disponible. Il est possible de visualiser les exécutions de pipelines avec les détails associés.
-
-* L’API Modifier un pipeline prend désormais en charge la modification de l’environnement utilisé lors des phases de déploiement.
-
-* Une optimisation du processus d’analyse OakPal a été introduite pour les modules volumineux.
-
-* Le fichier CSV de problème de qualité contient désormais l’horodatage de chaque problème.
+* Le hachage de validation, déjà visible dans l’interface utilisateur, est désormais également fourni dans l’API.
+* La page Activité comprend désormais une fenêtre contextuelle pour l’exécution des pipelines qui fournit un résumé des détails du pipeline en un coup d’oeil.
+* Des mises à jour pour inclure des détails supplémentaires présentés dans la page Activités ont été ajoutées.
+* L’onglet Apprendre de Cloud Manager inclut désormais un accès rapide aux guides d’API et aux ressources associées.
+* Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais lancer l’assistant de création de projet/branche pour un référentiel sans branche dans le menu d’actions de la page Référentiels.
+* Le responsable de déploiement, qui se trouve dans le workflow d’ajout ou de modification de pipeline, est maintenant informé de la création d’une branche ou d’un projet si le référentiel sélectionné ne comporte aucune branche.
+* Une nouvelle fonctionnalité de libre-service Cloud Manager a été ajoutée pour permettre [ajout de variables et de secrets de forme libre au niveau de l’environnement.](/help/implementing/cloud-manager/environment-variables.md)
+* Avec le nouveau module complémentaire de démonstration de référence (disponible le 17 décembre 2021), les dernières bases de code de démonstration pour les produits AEM peuvent être installées et prêtes à être déployées via la nouvelle [outil de création de site rapide](/help/journey-sites/quick-site/overview.md) dans Sites.
+* Les pipelines front-end prennent désormais en charge les variables de pipeline.
+* Il est désormais possible d’activer Screens dans la boîte de dialogue Modifier le programme pour tous les environnements de test.
+* Les conseils fournis par la carte d’appel à l’action dans la page d’aperçu ont été actualisés afin de refléter précisément son association au pipeline de pile de production.
+* Des améliorations ont été apportées à la page Activité pour faire apparaître des détails supplémentaires applicables aux pipelines, notamment le code source, l’ID de validation, etc.
+* Une mise à jour mineure a été apportée à l’interface utilisateur lors de la copie d’entrées TXT (&quot;valeur TXT&quot; au lieu de &quot;enregistrement TXT&quot;) pour supprimer toute confusion potentielle.
+* [La documentation relative aux erreurs de certificat](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md#certificate-errors) a été mis à jour afin de fournir des exemples supplémentaires ainsi que des étapes de dépannage.
+* Une option est désormais disponible dans l’exécution du pipeline front-end pour rejeter ou approuver avant le déploiement en production.
 
 ### Correctifs {#bug-fixes}
 
-* Certaines configurations de génération non orthodoxes entraînaient le stockage de fichiers inutiles dans le cache d’artefacts Maven du pipeline, ce qui entraînait des E/S réseau superflues lors du démarrage et de l’arrêt du conteneur de génération.
-
-* L’API Pipeline PATCH échoue en l’absence de phase de déploiement.
-
-* La règle de qualité `ClientlibProxyResourceCheck` générait des faux positifs en présence de bibliothèques clientes avec des chemins d’accès de base communs.
-
-* Un message d’erreur indiquant que le nombre maximal de référentiels a été atteint ne précisait pas la raison de l’erreur.
-
-* Dans de rares cas, les pipelines échouaient en raison d’une gestion inappropriée des reprises de certains codes de réponse.
-
+* Les artefacts de test fonctionnels et d’interface utilisateur n’étaient pas inclus dans le journal de l’étape de création.
+* Les journaux des étapes de test du produit, fonctionnel et de l’interface utilisateur n’étaient pas accessibles via l’API publique.
+* Dans de rares cas, le lien de la page des détails de l’environnement vers le service de publication ou de prévisualisation n’est pas fonctionnel.
+* Les pipelines de production de pile complète restent nommés &quot;Pipeline de production&quot; même si l’utilisateur saisit un nom différent dans le champ du nom.
