@@ -2,10 +2,10 @@
 title: Canal de version prédéfinie d’[!DNL Adobe Experience Manager] as a Cloud Service
 description: Canal de version prédéfinie d’[!DNL Adobe Experience Manager] as a Cloud Service
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bcd106a39bec286e2a09ac7709758728f76f9544
-workflow-type: ht
-source-wordcount: '752'
-ht-degree: 100%
+source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
+workflow-type: tm+mt
+source-wordcount: '763'
+ht-degree: 98%
 
 ---
 
@@ -49,6 +49,8 @@ L’interface de ligne de commande de Cloud Manager peut également être utilis
 
 
 La variable peut être supprimée ou redéfinie sur une autre valeur si vous souhaitez que l’environnement soit restauré avec le comportement du canal normal (hors version préliminaire).
+
+* Vous pouvez également configurer des variables d’environnement à partir du [Interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
 ### SDK local {#local-sdk}
 
@@ -112,7 +114,6 @@ Pour créer un build à partir du SDK de version préliminaire :
 1. Si vous êtes satisfait de son fonctionnement local, validez le code d’une branche de développement et utilisez un pipeline hors production Cloud Manager pour le déploiement dans un environnement abonné au canal de version préliminaire.
 
 >[!CAUTION]
->
 > 
 > L’artifactId `aem-prerelease-sdk-api` ne doit jamais être utilisé lors d’un déploiement dans l’environnement intermédiaire ou de production. Utilisez toujours aem-sdk-api lors d’un déploiement via le pipeline de production. De même, les API de version préliminaire de référencement de code ne doivent pas être déployées via le pipeline de production.
 
