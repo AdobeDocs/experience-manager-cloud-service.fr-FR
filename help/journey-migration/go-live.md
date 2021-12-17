@@ -1,9 +1,9 @@
 ---
 title: Activation
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+source-git-commit: fe0261fa9708b2250b6f5e4931100a9fc006e55d
 workflow-type: tm+mt
-source-wordcount: '1342'
+source-wordcount: '1319'
 ht-degree: 4%
 
 ---
@@ -37,10 +37,6 @@ Avant d’effectuer la migration de production, suivez les étapes de configurat
 * Lancez la migration à partir de la production en fonction de l’expérience que vous avez acquise lors de la migration à l’étape as a Cloud Service AEM effectuée sur les clones :
    * Auteur-Auteur
    * Publier-Publier
-
->[!NOTE]
->
->L’auteur AEM as a Cloud Service s’affiche pendant l’ingestion, mais AEM publication as a Cloud Service s’affiche pendant l’ingestion.
 
 * Validez le contenu ingéré aux niveaux de création et de publication as a Cloud Service AEM.
 * Demandez à l’équipe de création de contenu d’éviter de déplacer le contenu à la fois sur la source et la destination jusqu’à ce que l’ingestion soit terminée.
