@@ -1,29 +1,30 @@
 ---
-title: Formation des développeurs et des responsables de déploiement
-description: Consultez cette page pour découvrir les étapes suivantes à suivre après l’accès, si vous êtes un développeur ou un responsable de déploiement
+title: Parcours de formation des développeurs et des responsables de déploiement
+description: Consultez cette page pour découvrir la procédure à suivre après obtention de l’accès, si vous êtes un développeur ou un responsable de déploiement
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: d8ff6f4386ab0e5df4f770cdb566facc1cc0cc98
+exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
+source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '566'
-ht-degree: 6%
+source-wordcount: '607'
+ht-degree: 82%
 
 ---
 
-# Formation des développeurs et des responsables de déploiement {#learn-path-developers-deployment}
+# Parcours de formation des développeurs et des responsables de déploiement {#learn-path-developers-deployment}
 
 ## Objectif {#objective}
 
 Ce document permet aux développeurs et aux responsables de déploiement d’accéder à Cloud Manager et de se familiariser avec la préparation de leurs parcours d’apprentissage.
 
-Après avoir lu ce document, vous devez :
+Après avoir lu ce document, vous devriez :
 
-* En tant que développeur, vous pouvez comprendre comment accéder à Cloud Manager Git et le gérer.
+* En tant que développeur, vous pouvez comprendre comment accéder au Git Cloud Manager et le gérer.
 * En tant que responsable de déploiement, vous pouvez comprendre comment configurer des pipelines et déployer votre code dans Cloud Manager.
 
 ## Présentation {#introduction}
 
-Si vous lisez cette section, il est probable que vous soyez affecté à un profil de produit Developer ou Deployment Manager et que vous soyez prêt à intégrer et à poursuivre votre parcours d’apprentissage.
+Si vous lisez cette section, il est probable que vous soyez affecté à un profil de produit Développeur ou Gestionnaire de déploiement et que vous soyez prêt à intégrer et à poursuivre votre parcours de formation.
 
 >[!NOTE]
 >* En tant que *développeur*, vous souhaiterez vous connecter à Cloud Manager et vous familiariser avec l’accès à Git.
@@ -34,48 +35,52 @@ Si vous lisez cette section, il est probable que vous soyez affecté à un profi
 
 Avant de commencer, assurez-vous que :
 
-* Votre administrateur système a affecté des développeurs et des responsables de déploiement à leurs profils de produit respectifs. Les développeurs doivent en outre être affectés au profil de produit Utilisateurs AEM ou Administrateurs AEM .
+* Votre administrateur système a affecté des développeurs et des responsables de déploiement à leurs profils de produit respectifs. Les développeurs doivent en outre être affectés au profil de produit Utilisateurs AEM ou Administrateurs AEM.
 * Les ressources cloud ont été configurées.
 * Vous comprenez comment accéder à Cloud Manager et vous connecter.
 
 ## Gestion de GitHub {#manage-git}
 
 Vous pouvez accéder à votre référentiel Git et le gérer à l’aide de la gestion de compte Git en libre-service à partir de l’interface utilisateur de Cloud Manager.
-Pour en savoir plus sur cette rubrique, voir [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en).
+Pour en savoir plus sur cette rubrique, voir [Accès à Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=fr).
 
 ## Configurer un pipeline {#setup-pipeline}
 
 Vous pouvez configurer votre pipeline de production ou hors production à partir de l’interface utilisateur de Cloud Manager.
-Pour en savoir plus sur cette rubrique, voir [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en).
+Pour en savoir plus sur cette rubrique, voir [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr).
 
-## Eléments suivants {#whats-next}
+## Et après ? {#whats-next}
 
-Développeurs et responsables de déploiement sont maintenant prêts à vous familiariser avec la manière de développer du code dans AEM en tant que Cloud Service. Pour en savoir plus ou trouver d’autres parcours d’apprentissage, reportez-vous à la section Ressources supplémentaires ci-dessous. Pour en savoir plus sur le parcours d’apprentissage pour les auteurs de contenu, voir [Chemin d’apprentissage pour les auteurs AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+Développeurs et responsables de déploiement sont maintenant prêts à se familiariser avec la manière de développer du code dans AEM as a Cloud Service. Pour en savoir plus ou trouver d’autres parcours de formation, reportez-vous à la section Ressources supplémentaires ci-dessous. Pour en savoir plus sur le parcours d’apprentissage des auteurs de contenu, voir [Chemin d’apprentissage pour les auteurs AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+
+>[!TIP]
+>
+>Maintenant que vous êtes intégré, vous pouvez [Découvrez comment ajouter facilement le module complémentaire de démonstration de référence d’AEM](/help/journey-sites/demos-add-on/overview.md) dans un environnement de test avec une configuration d’AEM minimale et être en mesure de tester les puissantes fonctionnalités d’AEM avec de riches exemples basés sur les bonnes pratiques.
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Accès à la gestion des comptes Git et Git à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
+* [Accès à Git et à la gestion des comptes Git à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/accessing-git.html?lang=en)
 
-* [Environnement de développement local pour AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [Environnement de développement local pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
 
-* [Prise en main d’AEM Sites (tutoriel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+* [Prise en main d’AEM Sites (tutoriel)](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
 
-* [Prise en main de l’éditeur SPA d’AEM et de React | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=en)
+* [Prise en main de l’éditeur SPA d’AEM et de React | Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/react/overview.html?lang=fr)
 
-* [Prise en main de l’Éditeur AEM SPA et d’Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=en)
+* [Prise en main de l’Éditeur AEM SPA et d’Angular](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/spa-editor/angular/overview.html?lang=fr)
 
-* [Prise en main d’AEM sans affichage - GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=en)
+* [Prise en main d’AEM Headless - GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)
 
-* [Prise en main d’AEM Éditeur SPA pour les développeurs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Prise en main de l’Éditeur SPA d’AEM pour les développeurs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-## Cours d’Experience League {#exp-league-courses}
+## Cours Experience League {#exp-league-courses}
 
 Suivez les cours de la ligue d’expérience pour en savoir plus. Vérifiez que vous êtes inscrit pour accéder aux cours :
 
 * [Sites traditionnels](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-* [Éditeur de SPA](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Éditeur SPA](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
-* [Headless](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Découplé](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 
 * [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)

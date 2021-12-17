@@ -2,7 +2,7 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.12.0
 description: Il s’agit des notes de mise à jour de Cloud Manager dans AEM version as a Cloud Service 2021.12.0.
 feature: Release Information
-source-git-commit: 72853f1278be4dd429be28fd611b5a0cb77bcb3d
+source-git-commit: fc1eae86097f0cc928860ff7f43e3177f2e8f3a1
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 6%
@@ -31,7 +31,7 @@ La date de publication de Cloud Manager dans AEM 2021.12.0 as a Cloud Service es
 * Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais lancer l’assistant de création de projet/branche pour un référentiel sans branche dans le menu d’actions de la page Référentiels.
 * Le responsable de déploiement, qui se trouve dans le workflow d’ajout ou de modification de pipeline, est maintenant informé de la création d’une branche ou d’un projet si le référentiel sélectionné ne comporte aucune branche.
 * Une nouvelle fonctionnalité de libre-service Cloud Manager a été ajoutée pour permettre [ajout de variables et de secrets de forme libre au niveau de l’environnement.](/help/implementing/cloud-manager/environment-variables.md)
-* Avec le nouveau module complémentaire de démonstration de référence (disponible le 17 décembre 2021), les dernières bases de code de démonstration pour les produits AEM peuvent être installées et prêtes à être déployées via la nouvelle [outil de création de site rapide](/help/journey-sites/quick-site/overview.md) dans Sites.
+* Avec la nouvelle [Module complémentaire de démonstration de référence](/help/journey-sites/demos-add-on/overview.md) (disponible le 17 décembre 2021), les dernières bases de code de démonstration pour les produits AEM peuvent être installées et prêtes à être déployées via la nouvelle [outil de création de site rapide](/help/journey-sites/quick-site/overview.md) dans Sites.
 * Les pipelines front-end prennent désormais en charge les variables de pipeline.
 * Il est désormais possible d’activer Screens dans la boîte de dialogue Modifier le programme pour tous les environnements de test.
 * Les conseils fournis par la carte d’appel à l’action dans la page d’aperçu ont été actualisés afin de refléter précisément son association au pipeline de pile de production.
