@@ -1,9 +1,9 @@
 ---
 title: Configuration de votre pipeline
 description: Créez un pipeline frontal pour gérer la personnalisation du thème de votre site.
-source-git-commit: 2d575036c8e84e282a6599015360dcd25e4c8aa9
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '976'
 ht-degree: 2%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 2%
 # Configuration de votre pipeline {#set-up-your-pipeline}
 
 Créez un pipeline frontal pour gérer la personnalisation du thème de votre site.
-
->[!CAUTION]
->
->L’outil de création de site rapide est actuellement un aperçu technique. Il est mis à disposition à des fins de test et d’évaluation et n’est pas destiné à un usage en production sauf accord avec le support Adobe.
 
 ## Un peu d’histoire...  {#story-so-far}
 

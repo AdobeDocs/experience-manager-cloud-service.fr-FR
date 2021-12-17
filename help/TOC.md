@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: bd5611c32591562697750e6e6c86767a42bb7727
+source-git-commit: f333294f1bb13291a8d947c3fbfd99b5e7b4a9d6
 workflow-type: tm+mt
-source-wordcount: '3403'
+source-wordcount: '3415'
 ht-degree: 84%
 
 ---
@@ -639,6 +639,8 @@ ht-degree: 84%
       + [Fondements techniques d’AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [Documents de référence sur les API](/help/implementing/developing/reference-materials.md)
       + [Génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
+      + [Création rapide d’un site et personnalisation front-end](/help/implementing/developing/introduction/quick-site-creation.md)
+      + [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Personnalisation des modèles et thèmes de site](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
       + [Couplage et découplage dans AEM](/help/implementing/developing/headful-headless.md)
       + Développement full stack avec AEM {#full-stack}

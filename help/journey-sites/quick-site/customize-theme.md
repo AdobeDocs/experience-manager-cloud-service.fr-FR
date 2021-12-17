@@ -1,9 +1,9 @@
 ---
 title: Personnalisation du thème du site
 description: Découvrez comment le thème du site est créé, comment personnaliser et comment tester à l’aide du contenu d’AEM en direct.
-source-git-commit: 348e26a9af260d89841d19d00ce4102c00ae34ed
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '935'
 ht-degree: 1%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 1%
 # Personnalisation du thème du site {#customize-the-site-theme}
 
 Découvrez comment le thème du site est créé, comment personnaliser et comment tester à l’aide du contenu d’AEM en direct.
-
->[!CAUTION]
->
->L’outil de création de site rapide est actuellement un aperçu technique. Il est mis à disposition à des fins de test et d’évaluation et n’est pas destiné à un usage en production sauf accord avec le support Adobe.
 
 ## Un peu d’histoire...  {#story-so-far}
 

@@ -3,10 +3,10 @@ title: Création d’un site
 description: Découvrez comment utiliser AEM pour créer un site à l’aide de modèles de site afin de définir le style et la structure de votre site.
 feature: Administering
 role: Admin
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 0%
+source-wordcount: '788'
+ht-degree: 1%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 0%
 # Création d’un site {#creating-site}
 
 Découvrez comment utiliser AEM créer un site à l’aide de modèles de site pour définir le style et la structure de votre site.
-
->[!CAUTION]
->
->L’outil de création de site rapide est actuellement un aperçu technique. Il est mis à disposition à des fins de test et d’évaluation et n’est pas destiné à un usage en production sauf accord avec le support Adobe.
 
 ## Présentation {#overview}
 

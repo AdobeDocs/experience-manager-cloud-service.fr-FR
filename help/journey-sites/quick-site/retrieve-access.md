@@ -1,9 +1,9 @@
 ---
 title: Récupération des informations d’accès au référentiel Git
 description: Découvrez comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel git.
-source-git-commit: 44dc1ce4b8771ce848652364a5ac9e3ee28c56b0
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '897'
 ht-degree: 5%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 5%
 # Récupération des informations d’accès au référentiel Git {#retrieve-access}
 
 Découvrez comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel git.
-
->[!CAUTION]
->
->L’outil de création de site rapide est actuellement un aperçu technique. Il est mis à disposition à des fins de test et d’évaluation et n’est pas destiné à un usage en production sauf accord avec le support Adobe.
 
 ## Un peu d’histoire...  {#story-so-far}
 

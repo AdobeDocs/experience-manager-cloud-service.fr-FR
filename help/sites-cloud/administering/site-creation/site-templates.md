@@ -3,9 +3,9 @@ title: Modèles de site
 description: Découvrez comment AEM modèles de site peuvent être utilisés pour prédéfinir la structure du site et le contenu initial afin de vous permettre de créer rapidement des sites.
 feature: Administering
 role: Admin
-source-git-commit: 2dd35f1ea25f6bfc515d7b50fd53cf4638af4026
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '576'
 ht-degree: 1%
 
 ---
@@ -14,10 +14,6 @@ ht-degree: 1%
 # Modèles de site {#site-templates}
 
 Découvrez comment AEM modèles de site peuvent être utilisés pour prédéfinir la structure du site et le contenu initial afin de vous permettre de créer rapidement des sites.
-
->[!CAUTION]
->
->L’outil de création de site rapide est actuellement un aperçu technique. Il est mis à disposition à des fins de test et d’évaluation et n’est pas destiné à un usage en production sauf accord avec le support Adobe.
 
 ## Présentation {#overview}
 

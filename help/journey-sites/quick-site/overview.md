@@ -1,9 +1,9 @@
 ---
 title: parcours de création rapide de site
 description: Commencez ici pour obtenir un parcours guidé à travers l’outil de création rapide de site AEM convivial afin de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement votre site sans aucune connaissance d’arrière-plan AEM.
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1030'
 ht-degree: 2%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 2%
 # parcours de création rapide de site {#quick-site-creation-journey}
 
 Commencez ici pour obtenir un parcours guidé à travers l’outil de création rapide de site AEM convivial afin de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement votre site sans aucune connaissance d’arrière-plan AEM.
-
->[!CAUTION]
->
->L’outil de création de site rapide est actuellement un aperçu technique. Il est mis à disposition à des fins de test et d’évaluation et n’est pas destiné à un usage en production sauf accord avec le support Adobe.
 
 ## Présentation {#introduction}
 

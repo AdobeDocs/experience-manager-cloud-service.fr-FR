@@ -1,9 +1,9 @@
 ---
 title: Présentation de Cloud Manager et du workflow de création rapide de site
 description: Découvrez Cloud Manager et comment il relie le nouveau processus de création rapide de site.
-source-git-commit: efeb97d4bd7e7c11ec2c0ba1244a32b8b9affdab
+source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1102'
 ht-degree: 2%
 
 ---
@@ -12,10 +12,6 @@ ht-degree: 2%
 # Présentation de Cloud Manager et du workflow de création rapide de site {#understand-cloud-manager}
 
 Découvrez Cloud Manager et comment il relie le nouveau processus de création rapide de site.
-
->[!CAUTION]
->
->L’outil de création de site rapide est actuellement un aperçu technique. Il est mis à disposition à des fins de test et d’évaluation et n’est pas destiné à un usage en production sauf accord avec le support Adobe.
 
 >[!TIP]
 >

@@ -2,10 +2,10 @@
 title: Pipelines CI-CD
 description: Consultez cette page pour en savoir plus sur les pipelines CI-CD de Cloud Manager
 index: true
-source-git-commit: e8ceeb0eb4fb26553683ced74a2e20628fc2952e
+source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
 workflow-type: tm+mt
-source-wordcount: '959'
-ht-degree: 2%
+source-wordcount: '1006'
+ht-degree: 3%
 
 ---
 
@@ -74,7 +74,7 @@ Il peut s’agir de pipelines de qualité du code frontal ou de déploiement fro
 
 ### Avant de configurer les pipelines front-end {#before-start}
 
-Avant de commencer à configurer les pipelines front-end, voir [parcours de création rapide de site](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites-journey/quick-site/overview.html) pour un workflow de bout en bout grâce à l’outil de création rapide de site d’AEM convivial. Ce site de documentation vous aidera à rationaliser le développement frontal de votre site AEM et à personnaliser rapidement votre site sans aucune connaissance AEM du serveur principal.
+Avant de commencer à configurer les pipelines front-end, voir [parcours de création rapide de site](/help/journey-sites/quick-site/overview.md) pour un workflow de bout en bout grâce à l’outil de création rapide de site d’AEM convivial. Ce site de documentation vous aidera à rationaliser le développement frontal de votre site AEM et à personnaliser rapidement votre site sans aucune connaissance AEM du serveur principal.
 
 ### Configuration d’un pipeline front-end {#configure-front-end}
 
@@ -82,6 +82,12 @@ Pour savoir comment configurer le pipeline front-end, reportez-vous à :
 
 * [Ajout d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
 * [Ajout d’un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+
+### Développement de sites avec le pipeline front-end {#developing-with-front-end-pipeline}
+
+Avec le pipeline frontal, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner une vitesse substantielle.
+
+Voir [ce document](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour le fonctionnement de ce processus, ainsi que certaines considérations à prendre en compte afin de tirer pleinement parti de ce processus.
 
 ## Pipelines complets empilés {#full-stack-pipeline}
 
