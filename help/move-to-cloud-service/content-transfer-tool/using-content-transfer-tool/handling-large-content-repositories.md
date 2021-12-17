@@ -2,7 +2,7 @@
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
 exl-id: 2eca7fa6-fb34-4b08-b3ec-4e9211e94275
-source-git-commit: 6228e4072ad0042dae8ce415464c7bd5ed36612c
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 60%
@@ -70,14 +70,14 @@ Il est important de déterminer la taille totale de l’entrepôt de données po
 
 Sur la page des propriétés du conteneur du portail Azure, utilisez le bouton **Calculer la taille** pour déterminer la taille de tout le contenu du conteneur. Par exemple :
 
-![image](/help/move-to-cloud-service/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
+![image](/help/journey-migration/content-transfer-tool/assets/Azure-blob-storage-data-store.png)
 
 #### Entrepôt de données S3 Amazon {#amazon-data}
 
 Vous pouvez utiliser l’onglet Mesures du conteneur pour déterminer la taille de tout le contenu du conteneur. Par exemple :
 
 
-![image](/help/move-to-cloud-service/content-transfer-tool/assets/amazon-s3-data-store.png)
+![image](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
 #### Entrepôt de données basé sur les fichiers {#file-data-store-determine-size}
 
@@ -243,4 +243,4 @@ Par exemple, l’extraction azcopy peut être désactivée avec : `mv /mnt/crx/a
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris à gérer les référentiels de contenu volumineux afin d’accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu pour déplacer le contenu vers AEM as a Cloud Service, vous êtes prêt à apprendre le processus d’extraction dans l’outil de transfert de contenu. Voir [Extraction de contenu de la source dans l’outil de transfert de contenu](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/extracting-content.md) pour savoir comment extraire votre jeu de migration à partir de l’outil de transfert de contenu.
+Une fois que vous avez appris à gérer les référentiels de contenu volumineux afin d’accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu pour déplacer le contenu vers AEM as a Cloud Service, vous êtes prêt à apprendre le processus d’extraction dans l’outil de transfert de contenu. Voir [Extraction de contenu de la source dans l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) pour savoir comment extraire votre jeu de migration à partir de l’outil de transfert de contenu.

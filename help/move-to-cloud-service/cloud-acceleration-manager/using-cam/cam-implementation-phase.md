@@ -2,7 +2,7 @@
 title: Phase de mise en œuvre dans Cloud Acceleration Manager
 description: Cette page présente un aperçu de la phase de mise en œuvre dans Cloud Acceleration Manager.
 exl-id: 4ea13f12-7251-448f-9f54-c8d710aef2ba
-source-git-commit: e786fe40d97294b4ab5e8657920f2ecbb401d8e9
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 96%
@@ -21,7 +21,7 @@ La phase de mise en œuvre comprend :
 
 Cliquez sur la carte de votre projet pour ouvrir la page d’entrée du projet et accédez à la section **Mise en œuvre**, comme illustré dans la figure ci-dessous.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-1.png)
+![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
 >Pour en savoir plus, voir [Création et gestion d’un projet dans Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/getting-started-cam.html?lang=fr#create-project).
@@ -35,11 +35,11 @@ Consultez cette section pour découvrir la carte d’activité Développement lo
 
 1. Cliquez sur le bouton **Afficher** à partir de la carte **Développement local**.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-2.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
 1. Un carrousel de contenu affiche les informations pertinentes pour cette phase du parcours de migration.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-3.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-3.png)
 
 
 ## Utilisation de la carte de refactorisation du code {#code-refactoring}
@@ -50,7 +50,7 @@ Consultez cette section pour découvrir la carte d’activité Refactorisation d
 
 1. Cliquez sur le bouton **Réviser** à partir de la carte d’activité **Refactorisation du code**.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-4.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-4.png)
 
 1. La page affiche la liste des activités de refactorisation du code organisées par niveau de gravité. Pour en savoir plus, cliquez sur les deux icônes en surbrillance.
 
@@ -65,11 +65,11 @@ Consultez cette section pour découvrir la carte d’activité Refactorisation d
 
 L’onglet **Dispatcher** fournit des information sur la façon dont structurer les configurations Apache et Dispatcher d’AEM as a Cloud Service. Il explique également comment valider et exécuter le service localement avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-2.png)
+![image](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 
 L’onglet **Tests** fournit des informations sur les tests fonctionnels, de contrôle de l’expérience et de l’interface utilisateur.
 
-![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/coderefactoring-3.png)
+![image](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-3.png)
 
 
 ## Utilisation de la carte de déploiement d’AEM as a Cloud Service {#aem-as-a-cloud-service-deployment}
@@ -80,11 +80,11 @@ Consultez cette section pour découvrir la carte d’activité Carte de déploie
 
 1. Cliquez sur le bouton **Afficher** de la carte d’activité **Déploiement d’AEM as a Cloud Service**.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-6.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
 1. Un carrousel de contenu affiche les informations pertinentes pour cette phase du parcours de migration.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/aem-deployment-card.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/aem-deployment-card.png)
 
 
 ## Utilisation de la carte de transfert de contenu {#content-transfer}
@@ -95,11 +95,11 @@ Suivez cette section pour explorer la carte d’activité Transfert de contenu 
 
 1. Cliquez sur le bouton **Afficher** à partir de la carte d’activité **Transfert de contenu**.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/implementation-8.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
 
 1. Un carrousel de contenu affiche les informations pertinentes pour cette phase du parcours de migration.
 
-   ![image](/help/move-to-cloud-service/cloud-acceleration-manager/assets/content-transfertool-card.png)
+   ![image](/help/journey-migration/cloud-acceleration-manager/assets/content-transfertool-card.png)
 
    >[!NOTE]
    >Veuillez consulter les [conditions préalables](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html?lang=fr) et les [bonnes pratiques et instructions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr) avant d’utiliser l’outil de transfert de contenu.

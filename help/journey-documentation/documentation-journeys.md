@@ -3,10 +3,10 @@ title: AEM Parcours de documentation
 description: Les Parcours de documentation fournissent une structure narrative dans AEM documentation en liant des fonctionnalités complexes et disparates afin de résoudre un objectif commercial d’une manière conforme aux bonnes pratiques. Conçu pour les AEM débutants, parcours présente les concepts et les fonctionnalités pour atteindre un objectif de A à Z.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: fee595892367448a95b7f26bb03713e1b6e43822
+source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 2%
+source-wordcount: '1352'
+ht-degree: 1%
 
 ---
 
@@ -93,6 +93,6 @@ Plusieurs Parcours de documentation sont déjà disponibles. Puisque chaque parc
 | [parcours d’intégration AEM](/help/journey-onboarding/home.md) | Commencez ici pour vous familiariser rapidement avec votre nouvel environnement as a Cloud Service AEM. |
 | [parcours de création rapide de site](/help/journey-sites/quick-site/overview.md) | Commencez ici pour obtenir un parcours guidé à travers l’outil de création rapide de site d’AEM simple d’utilisation afin de rationaliser le développement frontal de votre site AEM et de personnaliser rapidement votre site sans aucune connaissance d’ensemble AEM. |
 | parcours Commerce AEM | Bientôt ! |
-| Parcours de migration AEMaaCS | Bientôt ! |
+| [parcours de migration as a Cloud Service AEM](/help/journey-migration/getting-started.md) | Commencez ici pour obtenir un parcours détaillé sur la migration de votre installation on-premise ou Adobe Managed AEM vers l’AEM as a Cloud Service entièrement basée sur le cloud et découvrez ses nombreux avantages. |
 
 Revenez pour plus de contenu au fur et à mesure que de nouveaux parcours deviennent disponibles.

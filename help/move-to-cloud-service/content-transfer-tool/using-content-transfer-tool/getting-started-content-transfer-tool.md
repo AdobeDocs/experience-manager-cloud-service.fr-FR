@@ -2,7 +2,7 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: a19b8424-33ab-488a-91b3-47f0d3c8abf5
-source-git-commit: c1a530f749e766650d5fe20c89d5672f56885fbb
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 58%
@@ -57,16 +57,16 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
 1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Migration de contenu**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
 1. Sélectionnez l’option **Transfert de contenu** dans l’assistant **Migration de contenu**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt02.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
 1. La console ci-dessous s’affiche lorsque vous créez le premier jeu de migration. Cliquez sur **Create Migration Set** (Créer un jeu de migration) pour créer un jeu de migration.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt03.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
    >Si vous disposez de jeux de migration, la console affiche la liste de ces jeux avec leur état actuel.
@@ -74,7 +74,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
 1. Renseignez les champs de l’écran **Créer un jeu de migration** comme décrit ci-dessous.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt04.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
 
    1. **Name** : renseignez le nom du jeu de migration.
       >[!NOTE]
@@ -95,7 +95,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
       1. **Include version** : sélectionnez les options requises. Lorsque des versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
 
-         ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt05.png)
+         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
          >Si vous envisagez d’inclure des versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge de version en raison d’une limitation actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
@@ -115,7 +115,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
 1. Vous verrez votre jeu de migration dans la **Transfert de contenu** , comme illustré dans la figure ci-dessous.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt07.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
    Tous les jeux de migration existants s’affichent sur la page **Transfert de contenu** avec leur état actuel et leurs informations d’état. Certaines des icônes décrites ci-dessous peuvent apparaître.
 
@@ -125,7 +125,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
 1. Sélectionnez un jeu de migration et cliquez sur **Propriétés** pour afficher ou modifier les propriétés du jeu de migration. Lors de la modification des propriétés, il n’est pas possible de modifier la variable **Nom du jeu de migration** ou le **URL du service**.
 
-   ![image](/help/move-to-cloud-service/content-transfer-tool/assets-ctt/ctt06.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## Et après ? {#whats-next}

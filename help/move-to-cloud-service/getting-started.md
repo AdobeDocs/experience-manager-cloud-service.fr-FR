@@ -2,7 +2,7 @@
 title: Guide de migration vers Experience Manager as a Cloud Service pour les partenaires
 description: Guide de migration vers Experience Manager as a Cloud Service pour les partenaires
 exl-id: 4d1addcf-b22d-41a3-ba5c-e5c42244e5cd
-source-git-commit: 7ff1acb5558ac77329b6fc766191f78a8b735888
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
 workflow-type: tm+mt
 source-wordcount: '2092'
 ht-degree: 95%
@@ -115,7 +115,7 @@ Pour une transition réussie et fluide, vous devez veiller à une planification 
 
 La figure ci-dessous est une représentation graphique du parcours recommandé de transition vers Cloud Service.
 
-![image](/help/move-to-cloud-service/assets/home-img1.png)
+![image](/help/journey-migration/assets/home-img1.png)
 
 <br>
 
@@ -171,7 +171,7 @@ Cloud Manager permet aux entreprises de gérer elles-mêmes Experience Manager s
 1. [Déploiement sur le git Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=fr#managing-code)
 2. Exécutez le code client via le [pipeline de qualité de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=fr#how-to-use).
 3. [Déploiement sur l’environnement de développement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/build-and-deployment.html?lang=en#debugging)
-4. [**Migration uniquement**] Transfert de contenu à l’aide de packages ou de l’[outil de transfert de contenu ](/help/move-to-cloud-service/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
+4. [**Migration uniquement**] Transfert de contenu à l’aide de packages ou de l’[outil de transfert de contenu ](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)(CTT)
 5. Réalisez les cycles de test recommandés (détection de fumée, contrôle qualité et autres)
 6. Convertissez vers le pipeline de production de Cloud Manager
 7. Validation du test de fumée

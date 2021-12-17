@@ -2,8 +2,8 @@
 title: Présentation de l’analyseur de bonnes pratiques
 description: Présentation de l’analyseur de bonnes pratiques
 exl-id: 2c45f527-3bcd-489b-a3be-b5c6f371429e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+workflow-type: tm+mt
 source-wordcount: '351'
 ht-degree: 100%
 
@@ -37,4 +37,4 @@ Les liens contenus dans le rapport de l’analyseur de bonnes pratiques apporten
 >[!NOTE]
 >Le rapport d’analyse des meilleures pratiques accélère le processus d’évaluation du délai et du coût de la transition vers AEM as a Cloud Service en apportant des informations qui, en son absence, auraient dû être collectées et évaluées manuellement.
 
-Vous pouvez également télécharger le rapport de l’analyseur de bonnes pratiques depuis votre instance AEM. Reportez-vous à la section [Affichage du rapport de l’analyseur de bonnes pratiques](/help/move-to-cloud-service/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) pour plus d’informations.
+Vous pouvez également télécharger le rapport de l’analyseur de bonnes pratiques depuis votre instance AEM. Reportez-vous à la section [Affichage du rapport de l’analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md#viewing-report) pour plus d’informations.
