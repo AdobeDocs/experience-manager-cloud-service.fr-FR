@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 53dd1d2a3b42e25a1da96ab8d06f05c05a36deab
+source-git-commit: e76ee82b44e48e88d5c750ebb22db11067cb11b5
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 51%
@@ -44,13 +44,11 @@ Consultez la section [Présentation de la version de décembre 2021](https://vid
 
 * [!DNL Dynamic Media] prend désormais en charge l’ingestion, la prévisualisation, la lecture et la publication pour les vidéos MXF. Les annotations et les vidéos Shoppable pour les vidéos MXF ne sont pas encore prises en charge.
 
-* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources sur DAM distant sont disponibles sur le déploiement Sites. Vous pouvez désormais effectuer des opérations de mise à jour, de suppression, de changement de nom et de déplacement sur des ressources ou des dossiers DAM distants. Les mises à jour, avec un certain délai, sont disponibles automatiquement sur le déploiement Sites .
+* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources sur DAM distant sont disponibles sur le déploiement Sites. Vous pouvez désormais effectuer les opérations suivantes : [mettre à jour, supprimer, renommer et déplacer des opérations](../../assets/use-assets-across-connected-assets-instances.md) sur les ressources ou dossiers DAM distants. Les mises à jour, avec un certain délai, sont disponibles automatiquement sur le déploiement Sites .
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nouveautés de [!DNL Forms] {#what-is-new-forms}
-
-* **Portail Forms**: Vous pouvez utiliser [Portail Forms](/help/forms/configure-forms-portal.md) pour répertorier vos formulaires adaptatifs publiés sur une page AEM Sites. Cela permet à un visiteur du site de découvrir tous les formulaires disponibles. De plus, le visiteur peut utiliser le portail de formulaires pour enregistrer et accéder au brouillon d’un formulaire adaptatif et consulter la version PDF d’un formulaire adaptatif envoyé.
 
 * **Externaliser les données des workflows AEM pour un traitement sécurisé** : vous pouvez stocker les données de workflows AEM (données de variables de workflows AEM) qui contiennent des éléments de données à caractère personnel dans un référentiel géré par le client pour un traitement sécurisé. Les éléments de données et les variables de workflows ne sont pas stockés dans le référentiel AEM et sont récupérés à la demande à partir d’un référentiel géré par le client lors du traitement du workflow.
 
@@ -62,6 +60,8 @@ Consultez la section [Présentation de la version de décembre 2021](https://vid
    * Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
 
 * **Polices personnalisées pour les documents Document d’enregistrement et de PDF créés avec les API de communication**: Vous pouvez désormais utiliser des polices approuvées par la marque dans les documents PDF générés à l’aide des API de communication pour vous conformer aux exigences de votre organisation.
+
+* **Portail Forms**: Vous pouvez utiliser [Portail Forms](/help/forms/configure-forms-portal.md) pour répertorier vos formulaires adaptatifs publiés sur une page AEM Sites. Cela permet à un visiteur du site de découvrir tous les formulaires disponibles. De plus, le visiteur peut utiliser le portail de formulaires pour enregistrer et accéder au brouillon d’un formulaire adaptatif et consulter la version PDF d’un formulaire adaptatif envoyé.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 

@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 510e71a3bbfb231182ff525415f1e6967723096f
+source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
 workflow-type: tm+mt
-source-wordcount: '2263'
-ht-degree: 89%
+source-wordcount: '2704'
+ht-degree: 67%
 
 ---
 
@@ -132,57 +132,111 @@ Pour charger un plus grand nombre de fichiers, utilisez l’une des méthodes su
 * Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) : utile pour les professionnels de la création et du marketing qui chargent des ressources depuis leur système de fichiers local. Utilisez-la pour charger des dossiers imbriqués disponibles en local.
 * [Outil d’ingestion en masse](#asset-bulk-ingestor) : utilisez-le pour l’ingestion de grandes quantités de ressources, occasionnellement ou au départ, lors du déploiement de [!DNL Experience Manager].
 
-### Outil d’ingestion en masse de ressources {#asset-bulk-ingestor}
+### Outil d’importation en bloc de ressources {#asset-bulk-ingestor}
 
 Cet outil est fourni uniquement au groupe des administrateurs pour l’ingestion à grande échelle de ressources à partir de magasins de données Azure ou S3. Consultez la vidéo présentant la configuration et l’ingestion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
-Procédez de la manière suivante pour configurer l’outil :
+L’image suivante illustre les différentes étapes à suivre lors de l’ingestion de ressources vers Experience Manager à partir d’un magasin de données :
+
+![Outil d’ingestion en bloc](assets/bulk-ingestion.png)
+
+#### Prérequis {#prerequisites-bulk-ingestion}
+
+Vous devez disposer des détails de stockage blob source pour connecter votre instance de Experience Manager à un stockage de données.
+
+#### Configuration de l’outil d’importation en bloc {#configure-bulk-ingestor-tool}
+
+Pour configurer l’outil d’importation en bloc, procédez comme suit :
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Importation en masse]**. Sélectionnez l’option **[!UICONTROL Créer]**.
 
-![Configuration de l’importateur en masse](assets/bulk-import-config.png)
+1. Indiquez un titre pour la configuration de l’importation en bloc dans la variable **[!UICONTROL Titre]** champ .
 
-1. Activé **[!UICONTROL configuration des imports en masse]** , indiquez les valeurs requises, puis sélectionnez **[!UICONTROL Enregistrer]**.
+1. Sélectionnez le type de source de données dans la **[!UICONTROL Importer la source]** liste déroulante
 
-   * [!UICONTROL Titre] : un titre descriptif.
-   * [!UICONTROL Importer la source]: Sélectionnez la source de données appropriée.
-   * [!UICONTROL Compte de stockage Azure]: Indiquez le nom de la variable [!DNL Azure] compte de stockage.
-   * [!UICONTROL Conteneur Blob Azure]: Fournissez les [!DNL Azure] conteneur de stockage.
-   * [!UICONTROL Clé d’accès Azure]: Fournissez la clé d’accès à [!DNL Azure] compte .
-   * [!UICONTROL Dossier source]: Ce filtre est généralement pris en charge par les fournisseurs de stockage dans le cloud Azure et AWS.
-   * [!UICONTROL Filtrer par taille minimale] : indiquez la taille de fichier minimale des ressources en Mo.
-   * [!UICONTROL Filtrer par taille maximale] : indiquez la une taille de fichier maximale des ressources en Mo.
-   * [!UICONTROL Exclure les types Mime] : liste séparée par des virgules des types MIME à exclure de l’ingestion. Par exemple, `image/jpeg, image/.*, video/mp4`. Voir [tous les formats de fichier pris en charge](/help/assets/file-format-support.md).
-   * [!UICONTROL Inclure les types MIME] : liste séparée par des virgules des types MIME à inclure dans l’ingestion. Voir [tous les formats de fichier pris en charge](/help/assets/file-format-support.md).
-   * [!UICONTROL Suppression du fichier source après importation]: Sélectionnez cette option pour supprimer les fichiers d’origine de l’entrepôt de données source une fois les fichiers importés dans [!DNL Experience Manager].
-   * [!UICONTROL Mode d’importation] : sélectionnez Ignorer, Remplacer ou Créer une version. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’importation d’une ressource si elle existe déjà. Voir la signification de [Remplacer et créer des options de version](#handling-upload-existing-file).
-   * [!UICONTROL Dossier cible des ressources] : importer un dossier dans la gestion des actifs numériques (DAM) où les ressources doivent être importées. Par exemple, `/content/dam/imported_assets`
-   * [!UICONTROL Fichier de métadonnées]: Fichier de métadonnées à importer, fourni au format CSV. Spécifiez le fichier CSV à l’emplacement de l’objet blob source et reportez-vous au chemin d’accès lors de la configuration de l’outil d’ingestion en masse. Le format de fichier CSV référencé dans ce champ est identique à celui du fichier CSV lorsque vous [Importation et exportation des métadonnées de ressources en bloc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Si vous sélectionnez la variable **Suppression du fichier source après importation** , filtrez les fichiers CSV à l’aide de l’option **Exclure** ou **Type MIME d’inclusion** ou **Filtrage par chemin/fichier** champs. Vous pouvez utiliser une expression régulière pour filtrer les fichiers CSV dans ces champs.
+1. Indiquez les valeurs pour créer une connexion à la source de données. Par exemple, si vous sélectionnez **Stockage Azure Blob** comme source de données, spécifiez les valeurs du compte de stockage Azure, du conteneur Azure Blob et de la clé d’accès Azure.
 
-1. Vous pouvez supprimer, modifier, exécuter et en faire plus avec les configurations que vous avez créées pour l’outil d’ingestion. Lorsque vous sélectionnez une configuration d’importateur d’importation en bloc, les options suivantes sont disponibles dans la barre d’outils.
+1. Indiquez le nom du dossier racine contenant les ressources de la source de données dans la variable **[!UICONTROL Dossier source]** champ .
 
-   * [!UICONTROL Modifier] : modifiez la configuration sélectionnée.
-   * [!UICONTROL Supprimer] : supprime la configuration sélectionnée.
-   * [!UICONTROL Vérifier] : validez la connexion au magasin de données.
-   * [!UICONTROL Exécution à vide] : appelez une série de tests de l’ingestion en masse.
-   * [!UICONTROL Exécuter] : exécutez la configuration sélectionnée.
-   * [!UICONTROL Arrêter] : terminez une configuration active.
-   * [!UICONTROL Planification] : définir une planification unique ou récurrente pour l’ingestion de ressources.
-   * [!UICONTROL État de la tâche] : afficher l’état de la configuration lorsqu’elle est utilisée dans une tâche d’importation en cours ou pour une tâche terminée.
-   * [!UICONTROL Historique des tâches] : instances précédentes de la tâche.
-   * [!UICONTROL Afficher les ressources] : afficher le dossier cible s’il existe.
+1. (Facultatif) Indiquez la taille de fichier minimale des ressources en Mo afin de les inclure dans le processus d’ingestion de la variable **[!UICONTROL Filtrer par taille min.]** champ .
 
-   ![Options de la barre d’outils pour les configurations d’ingestion](assets/bulk-ingest-toolbar-options.png)
+1. (Facultatif) Indiquez la taille de fichier maximale des ressources en Mo afin de les inclure dans le processus d’ingestion de la variable **[!UICONTROL Filtrer par taille maximale]** champ .
 
-Pour planifier un import en bloc ponctuel ou récurrent, procédez comme suit :
+1. (Facultatif) Spécifiez la liste séparée par des virgules des types MIME à exclure de l’ingestion dans la variable **[!UICONTROL Exclusion des types MIME]** champ . Par exemple, `image/jpeg, image/.*, video/mp4`. Voir [tous les formats de fichier pris en charge](/help/assets/file-format-support.md).
+
+1. Spécifiez la liste séparée par des virgules des types MIME à inclure à partir de l’ingestion dans la variable **[!UICONTROL Inclure les types MIME]** champ . Voir [tous les formats de fichier pris en charge](/help/assets/file-format-support.md).
+
+1. Sélectionnez la **[!UICONTROL Suppression du fichier source après importation]** option de suppression des fichiers originaux de l’entrepôt de données source une fois les fichiers importés dans [!DNL Experience Manager].
+
+1. Sélectionnez la **[!UICONTROL Mode d’importation]**. Sélectionner **Ignorer**, **Remplacer** ou **Créer une version**. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’importation d’une ressource si elle existe déjà. Voir la signification de [Remplacer et créer des options de version](#handling-upload-existing-file).
+
+1. Spécifiez un chemin d’accès pour définir un emplacement dans la gestion des ressources numériques où les ressources doivent être importées à l’aide de la variable **[!UICONTROL Dossier cible des ressources]** champ . Par exemple, `/content/dam/imported_assets`.
+
+1. (Facultatif) Spécifiez le fichier de métadonnées à importer, fourni au format CSV, dans la variable **[!UICONTROL Fichier de métadonnées]** champ . Spécifiez le fichier CSV à l’emplacement de l’objet blob source et reportez-vous au chemin d’accès lors de la configuration de l’outil d’importation en bloc. Le format de fichier CSV référencé dans ce champ est identique à celui du fichier CSV lorsque vous [Importation et exportation des métadonnées de ressources en bloc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/metadata-import-export.html). Si vous sélectionnez la variable **Suppression du fichier source après importation** , filtrez les fichiers CSV à l’aide de l’option **Exclure** ou **Type MIME d’inclusion** ou **Filtrage par chemin/fichier** champs. Vous pouvez utiliser une expression régulière pour filtrer les fichiers CSV dans ces champs.
+
+1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
+
+#### Gestion de la configuration de l’outil d’importation en bloc {#manage-bulk-import-configuration}
+
+Après avoir créé la configuration de l’outil d’importation en bloc, vous pouvez exécuter des tâches pour évaluer la configuration avant d’ingérer des ressources en bloc vers votre instance de Experience Manager. Sélectionnez la configuration disponible à l’adresse **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Importation en bloc]** pour afficher les options disponibles pour gérer la configuration de l’outil d’importation en bloc.
+
+##### Modifiez la configuration de {#edit-configuration}
+
+Sélectionnez la configuration et cliquez sur **[!UICONTROL Modifier]** pour modifier les détails de configuration. Vous ne pouvez pas modifier le titre de la configuration et de la source de données d’importation lors de l’opération de modification.
+
+##### Suppression de la configuration {#delete-configuration}
+
+Sélectionnez la configuration et cliquez sur **[!UICONTROL Supprimer]** pour supprimer la configuration Import en bloc .
+
+##### Validation de la connexion à la source de données {#validate-connection}
+
+Sélectionnez la configuration et cliquez sur **[!UICONTROL check]** pour valider la connexion à la source de données. En cas de connexion réussie, Experience Manager affiche le message suivant :
+
+![Message de succès d’importation en bloc](assets/bulk-import-success-message.png)
+
+##### Appeler une exécution de test pour la tâche d’importation en bloc {#invoke-test-run-bulk-import}
+
+Sélectionnez la configuration et cliquez sur **[!UICONTROL Exécution d’essai]** pour appeler une exécution de test pour la tâche d’importation en bloc. Experience Manager affiche les détails suivants sur la tâche d’importation en bloc :
+
+![Résultat de l’exécution d’essai](assets/dry-assets-result.png)
+
+##### Planification d’une importation en bloc ponctuelle ou récurrente {#schedule-bulk-import}
+
+Pour planifier un import en bloc ponctuel ou récurrent, procédez comme suit :
 
 1. Créez une configuration d’importation en bloc.
 1. Sélectionnez la configuration et sélectionnez **[!UICONTROL Planification]** dans la barre d’outils.
 1. Définissez une ingestion ponctuelle ou planifiez une planification horaire, quotidienne ou hebdomadaire. Cliquez sur **[!UICONTROL Envoyer]**.
 
    ![Planification d’une tâche d’ingestion en bloc](assets/bulk-ingest-schedule1.png)
+
+
+##### Affichage du dossier cible Ressources {#view-assets-target-folder}
+
+Sélectionnez la configuration et cliquez sur **[!UICONTROL Affichage des ressources]** pour afficher l’emplacement cible Ressources où les ressources sont importées après l’exécution de la tâche d’importation en bloc.
+
+#### Exécution de l’outil d’importation en bloc {#run-bulk-import-tool}
+
+Après [configuration de l’outil d’importation en bloc](#configure-bulk-ingestor-tool) et éventuellement [gestion de la configuration de l’outil d’importation en bloc](#manage-bulk-import-configuration), vous pouvez exécuter la tâche de configuration pour démarrer l’ingestion en masse de ressources.
+
+Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Importation en bloc]**, sélectionnez la variable [Configuration de l’importation en bloc](#configure-bulk-ingestor-tool) et cliquez sur **[!UICONTROL Exécuter]** pour lancer le processus d’importation en bloc. Cliquez sur **[!UICONTROL Exécuter]** pour confirmer.
+
+Experience Manager met à jour l’état de la tâche sur **Traitement** et à **Succès** une fois la tâche terminée. Cliquez sur **Affichage des ressources** pour afficher les ressources importées dans Experience Manager.
+
+Lorsque la tâche est en cours, vous pouvez également sélectionner la configuration et cliquer sur **Arrêter** pour arrêter le processus d’ingestion en masse. Cliquez sur **Exécuter** pour reprendre le processus. Vous pouvez également cliquer sur **Exécution d’essai** pour connaître les détails des ressources qui sont toujours en attente d’importation.
+
+#### Gestion des tâches après exécution {#manage-jobs-after-execution}
+
+Experience Manager vous permet de consulter l’historique des traitements d’importation en bloc. L’historique des tâches comprend l’état de la tâche, le créateur de la tâche, les journaux, ainsi que d’autres détails tels que la date et l’heure de début, la date et l’heure de début, ainsi que la date et l’heure de fin.
+
+Pour accéder à l’historique des tâches d’une configuration, sélectionnez la configuration, puis cliquez sur **[!UICONTROL Historique des tâches]**. Sélectionnez une tâche et cliquez sur **Ouvrir**.
+
+![Planification d’une tâche d’ingestion en bloc](assets/job-history-bulk-import.png)
+
+Experience Manager affiche l’historique des tâches. Sur la page Historique des tâches d’importation en bloc , vous pouvez également cliquer sur **Supprimer** pour supprimer cette tâche pour la configuration de l’importation en bloc.
+
 
 ## Chargement de ressources à l’aide de clients pour ordinateur de bureau {#upload-assets-desktop-clients}
 
