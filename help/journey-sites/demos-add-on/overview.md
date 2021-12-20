@@ -1,10 +1,10 @@
 ---
 title: parcours du module complémentaire Demos de référence AEM
 description: Commencez ici pour obtenir un parcours guidé expliquant comment ajouter facilement le module complémentaire de démonstration de référence d’AEM à un environnement de test avec une configuration d’AEM minimale et être en mesure de tester les puissantes fonctionnalités d’avec des exemples riches basés sur les bonnes pratiques.
-source-git-commit: f9794f52f2d09723a62e1f19cc951a5032661fce
+source-git-commit: 3dc268060188defcc84971f73baced1f30dccd49
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 1%
+source-wordcount: '813'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,13 @@ Ce parcours décrit les exigences, les étapes et l’approche pour créer un no
 
 Vous découvrirez plusieurs sujets dans ce parcours. Les articles suivants vous donnent des connaissances fondamentales sur la création d’un nouveau programme, la configuration et l’utilisation du module complémentaire de démonstration de référence d’AEM et sont destinés à être lus dans l’ordre. Ils renvoient à la documentation technique détaillée si nécessaire.
 
-|#|Article|Description| |—|—|—|— |0|AEM Référence Demos Parcours du module complémentaire|Ce document| |1|[Présentation de l’installation du module complémentaire de démonstration de référence](installation.md)|Découvrez Cloud Manager et comment il est utilisé pour installer le module complémentaire.| |2|[Création d’un programme et d’un pipeline](create-program.md)|Découvrez comment configurer un nouveau programme et un nouveau pipeline pour déployer le module complémentaire.| |3|[Création d’un site de démonstration](create-site.md)|Créez un site de démonstration dans AEM basé sur une bibliothèque de modèles préconfigurés.| |4|[Gestion de vos sites de démonstration](manage.md)|Découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.|
+| Numéro | Article | Description |
+|---|---|---|
+| 0 | parcours du module complémentaire Demos de référence AEM | Ce document |
+| 1 | [Présentation de l’installation du module complémentaire de démonstration de référence](installation.md) | Découvrez Cloud Manager et comment il est utilisé pour installer le module complémentaire. |
+| 2 | [Création d’un programme et d’un pipeline](create-program.md) | Découvrez comment configurer un nouveau programme et un nouveau pipeline pour déployer le module complémentaire. |
+| 3 | [Création d’un site de démonstration](create-site.md) | Créez un site de démonstration dans AEM basé sur une bibliothèque de modèles préconfigurés. |
+| 4 | [Gestion de vos sites de démonstration](manage.md) | Découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer. |
 
 ## Et après ? {#what-is-next}
 
