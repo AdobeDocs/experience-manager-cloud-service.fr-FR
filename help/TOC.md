@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1b1709fb705b509015478c16c32a02af0502a77
+source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
 workflow-type: tm+mt
 source-wordcount: '3437'
 ht-degree: 83%
@@ -282,6 +282,7 @@ ht-degree: 83%
       + [Ajout et chargement de ressources](/help/assets/add-assets.md)
       + [Recherche de ressources](/help/assets/search-assets.md)
       + [Tâches courantes de gestion des ressources](/help/assets/manage-digital-assets.md)
+      + [Prévisualisation de ressources 3d](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Balises intelligentes pour les images](/help/assets/smart-tags.md)
       + [Balisage intelligent de vos ressources vidéo](/help/assets/smart-tags-video-assets.md)
       + [Organisation des ressources](/help/assets/organize-assets.md)
@@ -361,7 +362,6 @@ ht-degree: 83%
       + [Gestion des ressources Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Prise en charge 3D](/help/assets/dynamic-media/assets-3d.md)
-      + [Prévisualisation de ressources 3d](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md)
       + [Images panoramiques](/help/assets/dynamic-media/panoramic-images.md)
       + [Visionneuses de médias mixtes](/help/assets/dynamic-media/mixed-media-sets.md)
