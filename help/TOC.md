@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d390ea1f0bcdff22869cfa8418cc3445aa149cf7
+source-git-commit: d9a01a3010582a632f8125964032c1f02363399f
 workflow-type: tm+mt
-source-wordcount: '3437'
+source-wordcount: '3438'
 ht-degree: 83%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 83%
    + [Évaluation des indicateurs de performance clés](/help/overview/assessing-kpis.md)
    + [Alignement des indicateurs de performance clés](/help/overview/aligning-kpis.md)
    + [Choix de la bonne équipe](/help/overview/choose-right-team.md)
-   + [Parcours de documentation](/help/journey-documentation/documentation-journeys.md)
+   + [Documentation Journeys](/help/journey-documentation/documentation-journeys.md)
 + Notes de mise à jour {#release-notes}
    + [Informations sur la version](/help/release-notes/home.md)
    + Notes de mise à jour {#release-notes}
@@ -94,13 +94,13 @@ ht-degree: 83%
       + [Créer un site de démonstration](/help/journey-sites/demos-add-on/create-site.md)
       + [Gestion de votre site de démonstration](/help/journey-sites/demos-add-on/manage.md)
 + parcours de migration as a Cloud Service AEM {#migration-journey}
-   + [Prise en main du déplacement AEM as a Cloud Service](/help/journey-migration/getting-started.md)
+   + [Getting Started with moving AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Phase de préparation](/help/journey-migration/readiness.md)
    + [Phase de mise en œuvre](/help/journey-migration/implementation.md)
    + [Activation](/help/journey-migration/go-live.md)
    + [Post-activation](/help/journey-migration/post-go-live.md)
-   + [Guide de migration vers Experience Manager as a Cloud Service pour les partenaires](/help/journey-migration/getting-started-partners.md)
-   + Notes de mise à jour des outils de migration {#release-notes-migration-tools}
+   + [Migration Guide to Experience Manager as a Cloud Service for Partners](/help/journey-migration/getting-started-partners.md)
+   + Release Notes for Migration Tools {#release-notes-migration-tools}
       + [Notes de mise à jour de la version actuelle (2021.12.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
       + 2021 {#2021}
          + [Notes de mise à jour de la version 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
@@ -124,7 +124,7 @@ ht-degree: 83%
          + [Conseils et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/guidelines-best-practices-content-transfer-tool.md)
          + [Prise en main de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Extraction de contenu de la source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
+         + [Extracting Content from Source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Affichage des journaux d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Suppression d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
@@ -155,14 +155,14 @@ ht-degree: 83%
          + [Raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
       + Parcours de création de contenu sans affichage {#headless-journey}
          + [AEM Parcours de création de contenu sans affichage - Aperçu](/help/journey-headless/author/overview.md)
-         + [Création pour sans affichage avec AEM - Introduction](/help/journey-headless/author/introduction.md)
-         + [Principes de base de la création sans affichage avec AEM](/help/journey-headless/author/basics.md)
-         + [En savoir plus sur l’utilisation de références dans les fragments de contenu](/help/journey-headless/author/references.md)
-         + [En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu](/help/journey-headless/author/metadata-tagging.md)
+         + [Authoring for Headless with AEM - An Introduction](/help/journey-headless/author/introduction.md)
+         + [Authoring Basics for Headless with AEM](/help/journey-headless/author/basics.md)
+         + [Learn about using references in Content Fragments](/help/journey-headless/author/references.md)
+         + [Learn about defining Metadata and Tagging for Content Fragments](/help/journey-headless/author/metadata-tagging.md)
       + Principes de création {#fundamentals}
          + [Environnement et outils](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
          + [Ajout d’annotations de page](/help/sites-cloud/authoring/fundamentals/annotations.md)
-         + [Création d’un site](/help/sites-cloud/authoring/fundamentals/create-site.md)
+         + [Creating a New Site](/help/sites-cloud/authoring/fundamentals/create-site.md)
          + [Création et organisation des pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md)
          + [Modification du contenu de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md)
          + [Éditeur de texte enrichi](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
@@ -216,18 +216,18 @@ ht-degree: 83%
          + [Enregistrement, connexion et profil utilisateur](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + Administration {#administering}
       + Création du site {#site-creation}
-         + [Création d’un site](/help/sites-cloud/administering/site-creation/create-site.md)
+         + [Creating a New Site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md)
          + [Thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md)
-         + parcours de création rapide de site {#quick-site}
-            + [Comprendre AEM création rapide de site](/help/journey-sites/quick-site/overview.md)
+         + AEM Quick Site Creation Journey {#quick-site}
+            + [Understand AEM Quick Site Creation](/help/journey-sites/quick-site/overview.md)
             + [Présentation de Cloud Manager](/help/journey-sites/quick-site/cloud-manager.md)
-            + [Créer un site à partir d’un modèle](/help/journey-sites/quick-site/create-site.md)
+            + [Create site from template](/help/journey-sites/quick-site/create-site.md)
             + [Configuration de votre pipeline](/help/journey-sites/quick-site/pipeline-setup.md)
             + [Accorder l’accès au développeur front-end](/help/journey-sites/quick-site/grant-access.md)
             + [Récupération des informations d’accès au référentiel git](/help/journey-sites/quick-site/retrieve-access.md)
             + [Personnalisation du thème du site](/help/journey-sites/quick-site/customize-theme.md)
-            + [Déployer votre thème personnalisé](/help/journey-sites/quick-site/deploy-theme.md)
+            + [Deploy your customized theme](/help/journey-sites/quick-site/deploy-theme.md)
       + [Administration des workflows](/help/sites-cloud/administering/workflows-administering.md)
       + Réutilisation de contenu {#reusing-content}
          + [MSM et traduction](/help/sites-cloud/administering/msm-and-translation.md)
@@ -241,7 +241,7 @@ ht-degree: 83%
             + [Résolution des problèmes et FAQ](/help/sites-cloud/administering/msm/troubleshooting.md)
          + Traduction {#translation}
             + Parcours de traduction de sites {#sites}
-               + [Présentation de la traduction des sites dans AEM](/help/journey-sites/translation/overview.md)
+               + [Understand sites translation in AEM](/help/journey-sites/translation/overview.md)
                + [Prise en main de la traduction des sites AEM](/help/journey-sites/translation/getting-started.md)
                + [Découvrez le contenu des sites et comment traduire en AEM](/help/journey-sites/translation/learn-about.md)
                + [Configuration du connecteur de traduction](/help/journey-sites/translation/configure-connector.md)
@@ -249,12 +249,12 @@ ht-degree: 83%
                + [Traduire le contenu](/help/journey-sites/translation/translate-content.md)
                + [Publier le contenu traduit](/help/journey-sites/translation/publish-content.md)
             + Parcours de traduction sans affichage {#headless}
-               + [Comprendre la traduction sans tête dans AEM](/help/journey-headless/translation/overview.md)
+               + [Understand headless translation in AEM](/help/journey-headless/translation/overview.md)
                + [Prise en main de AEM traduction sans interface](/help/journey-headless/translation/getting-started.md)
                + [Découvrez le contenu sans interface et comment traduire en AEM](/help/journey-headless/translation/learn-about.md)
                + [Configuration du connecteur de traduction](/help/journey-headless/translation/configure-connector.md)
                + [Configuration des règles de traduction](/help/journey-headless/translation/translation-rules.md)
-               + [Traduire le contenu](/help/journey-headless/translation/translate-content.md)
+               + [Translate content](/help/journey-headless/translation/translate-content.md)
                + [Publier le contenu traduit](/help/journey-headless/translation/publish-content.md)
             + [Traduction de contenu pour les sites multilingues](/help/sites-cloud/administering/translation/overview.md)
             + [Préparation du contenu à traduire](/help/sites-cloud/administering/translation/preparation.md)
@@ -282,7 +282,7 @@ ht-degree: 83%
       + [Ajout et chargement de ressources](/help/assets/add-assets.md)
       + [Recherche de ressources](/help/assets/search-assets.md)
       + [Tâches courantes de gestion des ressources](/help/assets/manage-digital-assets.md)
-      + [Prévisualisation de ressources 3d](/help/assets/dynamic-media/previewing-3d-assets.md)
+      + [Prévisualisation de ressources 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
       + [Balises intelligentes pour les images](/help/assets/smart-tags.md)
       + [Balisage intelligent de vos ressources vidéo](/help/assets/smart-tags-video-assets.md)
       + [Organisation des ressources](/help/assets/organize-assets.md)
@@ -299,7 +299,7 @@ ht-degree: 83%
       + [Réutilisation des ressources à l’aide de MSM](/help/assets/reuse-assets-using-msm.md)
       + [Téléchargement de ressources](/help/assets/download-assets-from-aem.md)
       + [Archivage et extraction des ressources à modifier](/help/assets/check-out-and-submit-assets.md)
-      + [Création et partage de dossiers privés](/help/assets/private-folder.md)
+      + [Create and share private folders](/help/assets/private-folder.md)
       + [Gestion des droits numériques des ressources](/help/assets/drm.md)
       + [Mise en filigrane de ressources](/help/assets/watermark-assets.md)
       + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
@@ -439,7 +439,7 @@ ht-degree: 83%
          + [Réutilisation des propriétés de métadonnées d’un formulaire adaptatif](/help/forms/reusing-adaptive-forms.md)
       + Amélioration de l’accessibilité d’un formulaire adaptatif {#accessible-adaptive-forms}
          + [Création d’un formulaire adaptatif accessible](/help/forms/creating-accessible-adaptive-forms.md)
-      + [Configuration de Forms Portal](/help/forms/configure-forms-portal.md)
+      + [Configure Forms Portal](/help/forms/configure-forms-portal.md)
    + Intégration d’un formulaire à une ou plusieurs sources de données {#use-form-data-model}
       + [Configuration des sources de données](/help/forms/configure-data-sources.md)
       + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -496,7 +496,7 @@ ht-degree: 83%
       + [Attribution d’un lecteur à un affichage](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
    + Utilisation des fonctionnalités de produit de code {#core-product-features}
       + [Prise en charge des miniatures pour les vidéos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
-   + Développement dans Screens as a Cloud Service {#developing-screens-cloud}
+   + Developing in Screens as a Cloud Service {#developing-screens-cloud}
       + [API REST](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
       + [Création de composants](/help/screens-cloud/developing/creating-components.md)
       + [Développement d’un composant personnalisé pour Screens as a Cloud Service](/help/screens-cloud/developing/developing-custom-components-tutorial.md)
@@ -507,11 +507,11 @@ ht-degree: 83%
    + [Présentation et aperçu](/help/commerce-cloud/introduction.md)
    + Parcours de commerce {#journeys}
       + Parcours de création de contenu {#author}
-         + [parcours de création de contenu AEM et de commerce](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
+         + [AEM Content and Commerce Content Author Journey](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/overview.md)
          + [Prise en main de la création CIF](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
-         + [Gestion des pages et des modèles de catalogue de produits](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
+         + [Manage product catalog pages and template](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/catalog-templates.md)
          + [Création d’expériences de catalogue de produits étape par étape](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/staged-catalog.md)
-         + [Création d’expériences de produit](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
+         + [Building Product Experiences](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/product-experience-management.md)
    + Intégrations {#integrations}
       + [Adobe Commerce](/help/commerce-cloud/integrating/magento.md)
       + [Solution commerciale tierce](/help/commerce-cloud/integrating/third-party.md)
@@ -693,11 +693,11 @@ ht-degree: 83%
                + [Comment assembler l’ensemble](/help/journey-headless/developer/put-it-all-together.md)
                + [Comment mettre en ligne votre application découplée](/help/journey-headless/developer/go-live.md)
                + [Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM](/help/journey-headless/developer/create-spa.md)
-            + AEM Parcours d’architecture de contenu sans affichage {#architect}
-               + [Présentation du Parcours de l’architecture de contenu sans affichage AEM](/help/journey-headless/architect/overview.md)
+            + AEM Headless Content Architect Journey {#architect}
+               + [AEM Headless Content Architect Journey Overview](/help/journey-headless/architect/overview.md)
                + [Modélisation de contenu pour sans affichage avec AEM - Introduction](/help/journey-headless/architect/introduction.md)
-               + [Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM](/help/journey-headless/architect/basics.md)
-               + [En savoir plus sur la création de modèles de fragment de contenu dans AEM](/help/journey-headless/architect/model-structure.md)
+               + [Learn the Content Modeling Basics for Headless with AEM](/help/journey-headless/architect/basics.md)
+               + [Learn about Creating Content Fragment Models in AEM](/help/journey-headless/architect/model-structure.md)
          + Guide de prise en main du mode découplé {#getting-started}
             + [Présentation](/help/implementing/developing/headless/getting-started/introduction.md)
             + [Création d’une configuration](/help/implementing/developing/headless/getting-started/create-configuration.md)
@@ -762,9 +762,9 @@ ht-degree: 83%
       + [API ContextHub](/help/implementing/developing/personalization/contexthub-api.md)
       + [Configuration de la segmentation avec ContextHub](https://experienceleague.adobe.com/docs/experience-manager-cloud-service-prerelease/sites/authoring/personalization/contexthub-segmentation.html)
    + Configuration et extension d’AEM as a Cloud Service {#configuring-and-extending}
-      + Extension des AEM avec App Builder{#app-builder}
+      + Extending AEM with App Builder{#app-builder}
          + [Extension des AEM à l’aide d’Adobe Developer App Builder](/help/implementing/developing/extending/app-builder/extending-aem-with-app-builder.md)
-         + [Présentation d’App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
+         + [Introduction to App Builder](/help/implementing/developing/extending/app-builder/videos/introduction.md)
          + [Adobe Developer Console](/help/implementing/developing/extending/app-builder/videos/adobe-developer-console.md)
          + [SDK et interface de ligne de commande](/help/implementing/developing/extending/app-builder/videos/sdks-and-cli.md)
          + [Création d’une application](/help/implementing/developing/extending/app-builder/videos/create.md)
