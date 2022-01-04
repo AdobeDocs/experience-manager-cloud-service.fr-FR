@@ -3,10 +3,10 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a81bd6ee4957f17acb79093f6ed232674fd93d60
+source-git-commit: 03fa3601c7819d469bf4d532ff5020aad0ea7ed9
 workflow-type: tm+mt
 source-wordcount: '2413'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 ## Présentation {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Pour plus d’informations sur Dispatcher en mode cloud et sur le téléchargement des outils Dispatcher, voir la page [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md). Si votre configuration de Dispatcher est en mode hérité, reportez-vous à la [documentation sur le mode hérité](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Pour plus d’informations sur Dispatcher en mode cloud et sur le téléchargement des outils Dispatcher, voir la section [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md) page. Si votre configuration de Dispatcher est en mode hérité, reportez-vous à la [documentation sur le mode hérité](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 Les sections suivantes décrivent la structure de fichiers du mode flexible, la validation locale, le débogage et la migration du mode hérité vers le mode flexible.
 
@@ -174,6 +174,7 @@ Voir [Modules Apache pris en charge](/help/implementing/dispatcher/disp-overview
 ## Validation locale {#local-validation-flexible-mode}
 
 >[!NOTE]
+>
 >Les sections ci-dessous incluent des commandes utilisant les versions Mac ou Linux du SDK, mais le SDK Windows peut être utilisé de la même manière.
 
 Utilisez le script `validate.sh` comme indiqué ci-dessous :
@@ -341,7 +342,6 @@ bin\validator.exe -relaxed full src
 Cloud manager validator 2.0.xx
 2021/03/15 18:15:40 Dispatcher configuration validation failed:
   conf.dispatcher.d\available_farms\default.farm:15: parent directory outside server root: c:\k\a\aem-dispatcher-sdk-windows-symlinks-testing3\dispatcher\src
-  
 ```
 
 Évitez cette erreur en copiant le chemin à partir de l’Explorateur Windows, puis en le collant dans l’invite de commande, en utilisant une commande `cd` dans ce chemin.
@@ -351,6 +351,7 @@ Cloud manager validator 2.0.xx
 Cette phase vérifie la syntaxe Apache en démarrant Docker dans une image. Docker doit être installé localement, mais notez qu’il n’est pas nécessaire qu’AEM soit en cours d’exécution.
 
 >[!NOTE]
+>
 >Les utilisateurs de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage de Dispatcher sur un ordinateur local.
 
 Cette phase peut également être exécutée indépendamment via `bin/docker_run.sh src/dispatcher host.internal.docker:4503 8080`.
