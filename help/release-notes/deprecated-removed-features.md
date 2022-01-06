@@ -2,10 +2,10 @@
 title: Fonctionnalités obsolètes et supprimées
 description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
-source-git-commit: 9410b061278d916c95233ecba7f7f946fccc51ed
+source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 96%
+source-wordcount: '582'
+ht-degree: 94%
 
 ---
 
@@ -53,7 +53,8 @@ Cette section répertorie les capacités et fonctionnalités qui ont été suppr
 | [!DNL Sites] | Composant Portal Director et Portlet | Ces fonctionnalités ont été abandonnées dans [!DNL Experience Manager] 6.4 et ont été supprimées d’[!DNL Experience Manager]. |
 | [!DNL Sites] | Importateur de conception | Cette fonctionnalité a été supprimée, car les sections non modifiables du référentiel de [!DNL Experience Manager] ne sont pas accessibles au moment de l’exécution. |
 | [!DNL Assets] |  Le partage d’[!DNL Assets] avec le service principal Marketing Cloud Assets et les services Creative Cloud n’est pas disponible. | Pour l’intégration à [!DNL Adobe Creative Cloud], utilisez [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html). |
-| [!DNL Foundation] | Prise en charge des sources de données Apache Sling (offre groupée OSGi org.apache.sling.datasource). | N/A |
+| [!DNL Foundation] | Prise en charge des sources de données Apache Sling (offre groupée OSGi org.apache.sling.datasource) | N/A |
+| [!DNL Foundation] | Prise en charge des modèles de script JST (lot OSGi org.apache.sling.scripting.jst) | N/A |
 
 ## API Java {#java-api}
 
