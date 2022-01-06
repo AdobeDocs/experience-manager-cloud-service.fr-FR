@@ -1,29 +1,26 @@
 ---
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de création de contenu pour votre CMS sans affichage à l’aide de fragments de contenu.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 6%
 
 ---
 
-
 # Principes de base de la création sans affichage avec AEM {#author-headless-basics}
 
 ## L&#39;histoire jusqu&#39;à présent {#story-so-far}
 
-Au début du [Parcours d’auteur de contenu AEM sans affichage](overview.md) [Introduction](introduction.md) couvrait les concepts et la terminologie de base liés à la création pour les sans-tête.
+Au début du [AEM Parcours de création de contenu sans affichage](overview.md) la valeur [Introduction](introduction.md) couvrait les concepts de base et la terminologie relatifs à la création pour les sans-tête.
 
 Cet article s’appuie sur ces éléments afin que vous compreniez comment créer votre propre contenu pour votre projet AEM sans interface.
 
 ## Objectif {#objective}
 
 * **Audience** : débutant
-* **Objectif** : Présentation des principes de base de la création CMS sans affichage :
+* **Objectif**: Présentation des principes de base de la création CMS sans affichage :
    * Présentation de la création avec AEMaaCS
    * Présentation des fragments de contenu
 
@@ -56,14 +53,14 @@ Votre compte a été configuré avec les privilèges dont vous avez besoin. Si v
 
 La première fois que vous vous connectez à un petit tutoriel en ligne, vous découvrirez certaines des principales fonctionnalités de l’interface utilisateur.
 
-Vous pouvez ensuite utiliser le panneau de navigation pour accéder aux zones clés de l’AEM. Pour les fragments de contenu, vous utiliserez la **console Ressources**.
+Vous pouvez ensuite utiliser le panneau de navigation pour accéder aux zones clés de l’AEM. Pour les fragments de contenu, vous utiliserez le **Console Ressources**.
 
 Le panneau de navigation peut être ouvert en sélectionnant l’icône d’Adobe en haut à gauche, suivie de la petite icône en forme de boussole :
 
 ![Panneau de navigation](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->Bien que les fragments de contenu soient une fonctionnalité d’AEM **Sites**, ils se trouvent dans la console **Ressources**. Il s’agit d’un détail technique qui ne devrait pas vous affecter, mais qui peut s’avérer utile à connaître.
+>Bien que les fragments de contenu soient une fonctionnalité d’AEM **Sites**, ils se trouvent dans la variable **Ressources** console. Il s’agit d’un détail technique qui ne devrait pas vous affecter, mais qui peut s’avérer utile à connaître.
 
 Dans la console, vous pouvez sélectionner des dossiers pour accéder à votre fragment de contenu ou aux chemins de navigation (dans l’en-tête) pour revenir vers le haut de l’arborescence.
 
@@ -71,9 +68,9 @@ Dans la console, vous pouvez sélectionner des dossiers pour accéder à votre f
 
 ### Actions, sélection, affichage {#actions-selecting-viewing}
 
-La console **Ressources** contient des **barres d’outils d’action** dédiées et des **actions rapides** que vous pouvez utiliser après avoir sélectionné une ressource (par exemple, un dossier ou un fragment de contenu).
+Le **Ressources** La console est dédiée **Barres d’outils Action**, et **Actions rapides** que vous pouvez utiliser après avoir sélectionné une ressource (par exemple, un dossier ou un fragment de contenu).
 
-Les actions rapides sont disponibles pour une seule ressource. Voir **Bâle** dans l’exemple ci-dessous :
+Les actions rapides sont disponibles pour une seule ressource, voir **Bâle** dans l’exemple ci-dessous :
 
 ![Actions rapides](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -101,21 +98,21 @@ Nous devrons passer en revue les éléments du début à la fin, mais il se peut
 
 #### Création d’un dossier {#creating-folder}
 
-Pour ce faire, créez une série de dossiers dans la section **Fichiers** de la console Ressources. Sélectionnez l’option **Créer** (en haut à droite), suivie de **Dossier** :
+Pour ce faire, créez une série de dossiers dans **Fichiers** de la console Ressources. Sélectionnez la **Créer** option (en haut à droite), suivie de **Dossier**:
 
 ![Option Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-Une boîte de dialogue s’ouvre, dans laquelle vous pouvez saisir les détails, puis confirmer avec **Créer** :
+Une boîte de dialogue s’ouvre, dans laquelle vous pouvez saisir les détails, puis confirmer avec **Créer**:
 
 ![Boîte de dialogue Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
 #### Utilisation des chemins et des balises pour limiter les modèles de fragment de contenu disponibles dans le dossier {#tags-paths-for-models-in-folder}
 
-Cette section est légèrement plus avancée. Vous n’en avez pas vraiment besoin si vous commencez à essayer des choses, mais c’est *très* utile lorsque vous avez beaucoup de fragments. Il est donc bon de le savoir - même si vous ne l&#39;utilisez pas encore tout à fait.
+Cette section est légèrement plus avancée. Vous n&#39;en avez pas vraiment besoin si vous commencez à essayer des choses, mais c&#39;est le cas *very* utile lorsque vous avez beaucoup de fragments. Il est donc bon de le savoir - même si vous ne l&#39;utilisez pas encore tout à fait.
 
 Votre architecte de contenu aura créé tous les modèles de fragment de contenu requis pour votre projet actuel, ainsi que peut-être d’autres projets également. Pour vous aider à simplifier les choses, ainsi que pour les autres auteurs, vous pouvez limiter la liste des modèles disponibles pour un dossier spécifique.
 
-Après avoir créé votre dossier, vous pouvez ouvrir le dossier **Propriétés**. Il existe ici différents onglets avec des informations et des détails de configuration sur le dossier. En particulier pour les fragments de contenu, vous pouvez utiliser l’onglet **Stratégies** pour définir des chemins et/ou balises spécifiques pour ce dossier. Cela limite les modèles de fragment de contenu disponibles dans le dossier, car cela signifie que les modèles de fragment de contenu doivent satisfaire à ces exigences avant de pouvoir être utilisés pour générer des fragments dans ce dossier.
+Après avoir créé votre dossier, vous pouvez l’ouvrir. **Propriétés**. Il existe ici différents onglets avec des informations et des détails de configuration sur le dossier. Pour les fragments de contenu, vous pouvez notamment utiliser la variable **Stratégies** pour définir des chemins d’accès et/ou des balises spécifiques pour ce dossier. Cela limite les modèles de fragment de contenu disponibles dans le dossier, car cela signifie que les modèles de fragment de contenu doivent satisfaire à ces exigences avant de pouvoir être utilisés pour générer des fragments dans ce dossier.
 
 ![Création de propriétés de dossier - Stratégies](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
 
@@ -129,7 +126,7 @@ Vous pouvez ensuite parcourir ces dossiers pour créer et modifier vos fragments
 
 Juste au cas où...
 
-Vous recevrez probablement un dossier initial dans lequel vous pourrez créer vos dossiers. En effet, certains détails de configuration doivent être appliqués (généralement par un développeur ou un administrateur système) au dossier racine. Cela ne vous intéressera probablement pas, mais vous pouvez, au besoin, vérifier la **Configuration** dans les **Cloud Services** du dossier **Propriétés** :
+Vous recevrez probablement un dossier initial dans lequel vous pourrez créer vos dossiers. En effet, certains détails de configuration doivent être appliqués (généralement par un développeur ou un administrateur système) au dossier racine. Cela ne vous intéressera probablement pas, mais vous pouvez, au besoin, vérifier la variable **Configuration** dans le **Cloud Services** du dossier **Propriétés**:
 
 ![Création de propriétés de dossier - Configuration](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -139,7 +136,7 @@ Vous recevrez probablement un dossier initial dans lequel vous pourrez créer vo
 
 ### Création d’un fragment de contenu {#creating-fragment}
 
-La création d’un fragment de contenu est très similaire. Utilisez simplement l’option **Fragment de contenu** à la place :
+La création d’un fragment de contenu est très similaire. Vous utilisez simplement le **Fragment de contenu** à la place :
 
 ![Option Créer un fragment de contenu](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
@@ -147,11 +144,11 @@ Cette fois, un assistant s’ouvre. La première étape consiste à sélectionne
 
 ![Créer un fragment de contenu - sélectionnez Modèle](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-Après avoir continué avec **Suivant**, vous pouvez fournir les détails (**De base** et **Avancé**) pour votre fragment :
+Après avoir continué avec **Suivant** vous pouvez fournir les détails (**De base** et **Avancé**) pour votre fragment :
 
 ![Créer un fragment de contenu - indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-Confirmez avec **Créer** et vous pouvez ensuite **Ouvrir** votre fragment dans l’éditeur.
+Confirmer avec **Créer** et vous pouvez **Ouvrir** votre fragment dans l’éditeur.
 
 ### Modification d’un fragment {#editing-fragment}
 
@@ -159,7 +156,7 @@ Vous pouvez ouvrir un fragment immédiatement après sa création ou en le séle
 
 Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s’affichent :
 
-* Liste des icônes sur le côté gauche : vous donne accès à différentes zones de fonctionnalités. L’éditeur s’ouvre dans l’onglet **Variations**, c’est là que se produit la plupart des modifications. Vous pouvez également vous intéresser aux onglets **Annotations** et **Métadonnées** .
+* Liste des icônes sur le côté gauche : vous donne accès à différentes zones de fonctionnalités. L’éditeur s’ouvre dans le **Variations** , c’est là que la plupart des modifications se produisent. Vous pouvez également être intéressé par la variable **Annotations** et **Métadonnées** onglets.
 
 * En-tête contenant des informations sur le fragment et accès à diverses actions.
 
@@ -181,7 +178,7 @@ Par exemple :
 >
 >Voir Modèles de fragments de contenu - Types et propriétés de données pour obtenir des détails génériques.
 
-Confirmez vos mises à jour en **Enregistrer** ou **Enregistrer et fermer**.
+Confirmez vos mises à jour en effectuant l’une des opérations suivantes : **Enregistrer** ou **Enregistrer et fermer**.
 
 >[!NOTE]
 >
@@ -212,27 +209,27 @@ Les modèles de fragment de contenu sont essentiels à vos fragments de contenu,
 
 * **Mettre à jour les références de page**
 
-   Cette action est disponible à partir de **...Liste déroulante** (ellipses). Il n’est pas intéressant pour les auteurs sans interface en ce qui concerne la création de pages.
+   Cette action est disponible à partir du **...** (ellipses). Il n’est pas intéressant pour les auteurs sans interface en ce qui concerne la création de pages.
 
 ### Publication {#publishing}
 
 <!-- needs more details -->
 
-Une fois le fragment terminé, vous pouvez le **Publier** afin qu’il soit disponible pour les applications sans en-tête.
+Une fois le fragment terminé, vous pouvez **Publier** pour qu’il soit disponible pour les applications sans interface utilisateur graphique.
 
-Les actions de publication sont disponibles dans l’éditeur (ou dans la barre d’outils de la console **Ressources**) :
+Les actions de publication sont disponibles dans l’éditeur (ou dans la barre d’outils de la fonction **Ressources** console) :
 
 ![Éditeur de fragment de contenu - Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez appris les principes de base, l’étape suivante est [Découvrez les références](references.md). Cette section présente et discute les différentes références disponibles, ainsi que de la manière de créer des niveaux de structure avec les Références de fragment - un élément clé de la création pour les sans-tête.
+Maintenant que vous avez appris les principes de base, l’étape suivante consiste à [En savoir plus sur les références](references.md). Cette section présente et discute les différentes références disponibles, ainsi que de la manière de créer des niveaux de structure avec les Références de fragment - un élément clé de la création pour les sans-tête.
 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md)  : cette page est principalement basée sur la  **** console Sites, mais de nombreuses fonctionnalités/la plupart d’entre elles sont également pertinentes pour la création de  **fragments de** contenu sous la  **** console Ressources.
+* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - cette page est principalement basée sur la variable **Sites** console, mais de nombreuses fonctionnalités/la plupart sont également pertinentes pour la création **Fragments de contenu** sous le **Ressources** console.
 
    * [Panneau de navigation](/help/sites-cloud/authoring/getting-started/basic-handling.md#navigation-panel)
 

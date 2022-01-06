@@ -1,11 +1,8 @@
 ---
 title: En savoir plus sur la création de modèles de fragment de contenu dans AEM
 description: Découvrez les concepts et les mécanismes de modélisation du contenu pour votre CMS sans affichage à l’aide de modèles de fragments de contenu.
-index: true
-hide: false
-hidefromtoc: false
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 04e7cd99c98855ca109e112fd87877d0b6b536fc
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 16%
@@ -48,7 +45,7 @@ Ensuite, les modèles de fragments de contenu peuvent être créés et la struct
 
 Après avoir sélectionné cette option, vous accédez à l’emplacement de votre modèle et sélectionnez **Créer**. Vous pouvez y saisir différents détails clés.
 
-L’option **Activer le modèle** est activé par défaut. Cela signifie que votre modèle sera disponible pour utilisation (dans la création de fragments de contenu) dès que vous l’aurez enregistré. Vous pouvez la désactiver si vous le souhaitez. Par la suite, vous pourrez activer (ou désactiver) un modèle existant.
+L’option **Activer le modèle** est activé par défaut. Cela signifie que votre modèle sera disponible pour utilisation (dans la création de fragments de contenu) dès que vous l’aurez enregistré. Vous pouvez la désactiver si vous le souhaitez. Il sera possible d’activer (ou de désactiver) un modèle existant ultérieurement.
 
 ![Créer un modèle de fragment de contenu](/help/assets/content-fragments/assets/cfm-models-02.png)
 

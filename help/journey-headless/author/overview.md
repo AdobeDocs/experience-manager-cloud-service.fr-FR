@@ -1,11 +1,8 @@
 ---
 title: AEM Parcours de création de contenu sans affichage
 description: Commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM, leurs fonctionnalités et comment créer du contenu pour votre projet.
-index: true
-hide: false
-hidefromtoc: false
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: ada7c256de5d050724781e4cbad6d877c1562c7b
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 18%

@@ -1,33 +1,30 @@
 ---
 title: Découvrez les bases de la modélisation de contenu
-description: Découvrez la base de la modélisation du contenu pour votre CMS sans affichage à l’aide de fragments de contenu.
-index: true
-hide: false
-hidefromtoc: false
-source-git-commit: 6605349c698325d432479fac0253a6fd53d7f175
+description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
+exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
+source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 46%
 
 ---
 
-
 # Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM {#content-modeling-headless-basics}
 
-## L&#39;histoire jusqu&#39;à présent {#story-so-far}
+## The Story so Far {#story-so-far}
 
-Au début du [Parcours d’architecture de contenu sans affichage](overview.md) [Introduction](introduction.md) couvrait les concepts et la terminologie de base relatifs à la modélisation du contenu sans affichage.
+Au début du [AEM Parcours d’architecture de contenu sans affichage](overview.md) la valeur [Introduction](introduction.md) couvrait les concepts de base et la terminologie relatifs à la modélisation du contenu pour les sans-tête.
 
-Cet article s’appuie sur ces éléments afin que vous compreniez comment modéliser votre contenu pour votre projet AEM sans interface.
+This article builds on these so you understand how to model your content for your AEM headless project.
 
 ## Objectif {#objective}
 
 * **Audience** : débutant
-* **Objectif** : Découvrez les concepts de la modélisation de contenu pour un CMS sans affichage.
+* **Objectif**: Découvrez les concepts de la modélisation de contenu pour un CMS sans affichage.
 
 ## Modélisation de contenu avec des modèles de fragment de contenu {#architect-content-fragment-models}
 
-La modélisation de contenu (données) est un ensemble de techniques établies, souvent utilisées lors de bases de données de relations développées. Que signifie la modélisation de contenu pour AEM sans affichage ?
+Content (Data) Modeling is a set of established techniques, often used when developed relationship databases, so what does Content Modeling mean for AEM Headless?
 
 ### Pourquoi ? {#why}
 
@@ -46,7 +43,7 @@ La structure de votre modèle de contenu possède les caractéristiques suivante
 
 >[!NOTE]
 >
->Les modèles de fragment de contenu sont également utilisés comme base des schémas GraphQL d’AEM, utilisés pour récupérer votre contenu - pour en savoir plus à ce sujet dans le Parcours des développeurs.
+>The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in the Developer Journey.
 
 Les demandes de contenu sont effectuées à l’aide de l’API AEM GraphQL, une mise en œuvre personnalisée de l’API GraphQL standard. L’API GraphQL AEM permet aux applications d’exécuter des requêtes (complexes) sur vos fragments de contenu, chaque requête étant en fonction d’un type de modèle spécifique.
 
@@ -59,7 +56,7 @@ Les modèles de fragment de contenu offrent divers mécanismes qui vous permette
 Un modèle de fragment de contenu décrit une entité.
 
 >[!NOTE]
->La fonctionnalité de fragment de contenu doit être activée dans l’explorateur de configurations afin que vous puissiez créer des modèles.
+>Content Fragment functionality must be enabled in the Configuration Browser so that you can create new models.
 
 >[!TIP]
 >
@@ -74,7 +71,7 @@ Par exemple, définissez le champ portant le nom d’un enseignant comme **Texte
 
 Par exemple :
 
-![Modélisation de contenu avec des ](assets/headless-modeling-01.png "fragments de contenu Modélisation de contenu avec des fragments de contenu")
+![Modélisation de contenu avec des fragments de contenu](assets/headless-modeling-01.png "Modélisation de contenu avec des fragments de contenu")
 
 ## Types de données {#data-types}
 
@@ -93,7 +90,7 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 
 >[!NOTE]
 >
->Pour plus d’informations, reportez-vous à la section Modèles de fragment de contenu - Types de données .
+>Further details are available under Content Fragment Models - Data Types.
 
 ## Références et contenu imbriqué {#references-nested-content}
 
@@ -114,15 +111,15 @@ Le type de données peut être configuré pour permettre aux auteurs de fragment
 >
 >Vous pouvez également créer des références ad hoc à l’aide de liens dans des blocs de texte.
 
-## Niveaux de structure (fragments imbriqués) {#levels-of-structure-nested-fragments}
+## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
 
-Pour la modélisation de contenu, le type de données **Référence de fragment** vous permet de créer plusieurs niveaux de structure et de relations.
+Pour la modélisation de contenu, le **Référence de fragment** Le type de données vous permet de créer plusieurs niveaux de structure et de relations.
 
-Avec cette référence, vous pouvez *connecter* différents modèles de fragments de contenu pour représenter les interrelations. Cela permet à l’application sans interface de suivre les connexions et d’accéder au contenu si nécessaire.
+Avec cette référence, vous pouvez *connect* divers modèles de fragment de contenu pour représenter les interrelations. This allows the headless application to follow the connections and access the content as necessary.
 
 >[!NOTE]
 >
->Il doit être utilisé avec précaution. La bonne pratique peut être définie comme *imbriquant autant que nécessaire, mais aussi peu*.
+>Cette méthode doit être utilisée avec précaution. La bonne pratique peut être définie comme *imbriquez autant que nécessaire, mais le moins possible.*.
 
 C’est exactement ce que font les Références de fragment : elles vous permettent de référencer un autre fragment.
 
@@ -133,13 +130,13 @@ Par exemple, les modèles de fragment de contenu suivants peuvent être définis
 * Personne
 * Distinctions
 
-Cela semble assez simple, mais bien sûr, une entreprise a à la fois un PDG et des employés....et ce sont tous des gens, chacun défini comme une Personne.
+Seems pretty straightforward, but of course a Company has both a CEO and Employees....et ce sont tous des gens, chacun défini comme une Personne.
 
 Et une Personne peut recevoir un Prix (ou peut-être deux).
 
-* Mon entreprise - Société
+* My Company - Company
    * PDG - Personne
-   * Employé(s) - Personne
+   * Employee(s) - Person
       * Prix(s) personnel(s) - Prix
 
 Et c&#39;est juste pour commencer. En fonction de la complexité, une récompense peut être propre à une entreprise ou son siège social dans une ville donnée.
@@ -148,7 +145,7 @@ Vous pouvez représenter ces interrelations avec les Références de fragment, c
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à [En savoir plus sur la création de modèles de fragment de contenu dans AEM](model-structure.md). Cette section présente et discute les différentes références disponibles, ainsi que de la manière de créer des niveaux de structure avec les références de fragments, un élément clé de la modélisation pour les sans-tête.
+Now that you have learned the basics, the next step is to [Learn about Creating Content Fragment Models in AEM](model-structure.md). Cette section présente et discute les différentes références disponibles, ainsi que de la manière de créer des niveaux de structure avec les références de fragments, un élément clé de la modélisation pour les sans-tête.
 
 ## Ressources supplémentaires {#additional-resources}
 
@@ -158,6 +155,6 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
 * [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md)  : cette page est principalement basée sur la  **** console Sites, mais de nombreuses fonctionnalités/la plupart d’entre elles sont également pertinentes pour la création de  **fragments de** contenu sous la  **** console Ressources.
+* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
 
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
