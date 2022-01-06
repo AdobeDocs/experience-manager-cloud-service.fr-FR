@@ -1,9 +1,9 @@
 ---
 title: Processus de configuration - Présentation
 description: Processus de configuration - Présentation
-source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: ht
-source-wordcount: '340'
+source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+workflow-type: tm+mt
+source-wordcount: '331'
 ht-degree: 100%
 
 ---
@@ -73,5 +73,5 @@ de l’enterprise
 
 ## l’aide et les ressources.
 
-* [Première connexion – Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/first-time-login.html?lang=fr#getting-access)
+* [Première connexion – Cloud Service](/help/journey-onboarding/sysadmin/learning-path-aem-users.md)
 * [Configuration de l’accès à AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=fr#accessing)
