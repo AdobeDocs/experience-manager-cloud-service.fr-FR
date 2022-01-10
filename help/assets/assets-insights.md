@@ -2,17 +2,17 @@
 title: Assets Insights
 description: Effectuez le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe.
 contentOwner: AG
-feature: Statistiques sur les ressources, rapports sur les ressources
+feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: def144cecaa7672e7af1807a5157730014c550b2
-workflow-type: ht
-source-wordcount: '813'
-ht-degree: 100%
+source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 89%
 
 ---
 
-# Assets Insights {#asset-insights}
+# Informations sur les ressources {#asset-insights}
 
 La fonctionnalité Statistiques sur les ressources effectue le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’obtenir des informations sur les performances et la popularité des images.
 
@@ -98,14 +98,22 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
 1. Cliquez sur la carte **[!UICONTROL Configuration des statistiques]**.
-1. Dans l’assistant, sélectionnez un centre de données et fournissez vos informations d’identification, notamment le nom de votre société, votre nom d’utilisateur et votre secret partagé.
 
-   ![Configuration d’Adobe Analytics pour les statistiques sur les ressources dans [!DNL Experience Manager]](assets/insights_config2.png)
+1. Pour obtenir des informations sur l’accès aux services Web Analytics, accédez à **[!UICONTROL Analytics]** > **[!UICONTROL Administration]** > **[!UICONTROL Outils d’administration]** > **[!UICONTROL Paramètres de l’entreprise]** > **[!UICONTROL Services web]** et copiez la variable **[!UICONTROL Secret partagé]** clé.
+
+   Dans l’assistant, sélectionnez le **[!UICONTROL Centre de données]** et indiquez le nom d’affichage de la variable **[!UICONTROL Société]**, services Web **[!UICONTROL Nom d’utilisateur]**, puis collez le **[!UICONTROL Secret partagé]** clé.
+
+   Cliquez sur **[!UICONTROL Authentifier]**.
+
+   ![Configuration d’Adobe Analytics pour les statistiques sur les ressources dans [!DNL Experience Manager]](assets/analytics-insight-config.png)
 
    *Figure : Configuration d’Adobe Analytics pour les statistiques sur les ressources dans[!DNL Experience Manager]*
 
-1. Cliquez sur **[!UICONTROL Authentifier]**. Une fois que [!DNL Experience Manager] a authentifié vos identifiants, dans la liste **[!UICONTROL Suite de rapports]**, sélectionnez une suite de rapports Adobe Analytics à partir de laquelle la fonction Statistiques sur les ressources doit récupérer les données. Cliquez sur **[!UICONTROL Ajouter]**.
+1. Une fois l’authentification réussie, les suites de rapports sont répertoriées dans la liste déroulante. Sélection de l’Adobe Analytics **[!UICONTROL Suite de rapports]** à partir de l’emplacement où vous souhaitez que les statistiques sur les ressources récupèrent les données. Cliquez sur **[!UICONTROL Ajouter]**.
+
 1. Une fois qu’[!DNL Experience Manager] a configuré votre suite de rapports, appuyez sur **[!UICONTROL Terminé]**.
+
+Pour plus d’informations, voir [Services web Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
 
 ### Suivi de page {#page-tracker}
 

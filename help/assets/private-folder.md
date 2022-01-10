@@ -4,10 +4,10 @@ description: Découvrez comment créer un dossier privé dans le [!DNL Adobe Exp
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
-source-git-commit: ac8dc2a765aba5be45017cf4adbc8f64b20ff7f3
+source-git-commit: 103bf8a477fb851e093bfde8e2c0535f49a01566
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 11%
+source-wordcount: '569'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ Vous pouvez créer un dossier privé dans le [!DNL Adobe Experience Manager Asse
 >
 >Le dossier privé comporte au moins un membre avec le rôle Propriétaire.
 >
->Pour créer un dossier privé, vous devez `Read` et `Modify` autorisations sur le dossier parent sous lequel vous souhaitez créer un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées pour vous par défaut au niveau de `/content/dam`. Dans ce cas, vous devez d’abord obtenir ces autorisations pour votre identifiant utilisateur/groupe avant de tenter de créer des dossiers privés.
+>Pour créer un dossier privé, vous devez `Read` et `Modify` autorisations sur le dossier parent sous lequel vous créez un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées par défaut sur `/content/dam`. Dans ce cas, vous devez d’abord obtenir ces autorisations pour votre identifiant utilisateur/groupe avant de tenter de créer des dossiers privés.
 
 ## Créer et partager un dossier privé  {#create-share-private-folder}
 
