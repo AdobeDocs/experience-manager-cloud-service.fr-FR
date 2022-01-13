@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: cca950b0a4eed60f82d65779766405ed216111e3
 workflow-type: tm+mt
-source-wordcount: '2464'
+source-wordcount: '2492'
 ht-degree: 34%
 
 ---
@@ -72,9 +72,13 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les 
 
    Adobe Dynamic Media ne permet pas que deux fichiers portent le même nom. L’identifiant Dynamic Media d’Adobe de chaque élément (le nom de l’image sans l’extension de nom de fichier) doit être unique. En raison de cette règle, **[!UICONTROL Téléchargement vers l’application]** a un remplacement. L’effet exact de cette option dépend de l’option Écraser les images que vous avez sélectionnée. Ces options indiquent comment les images de remplacement sont téléchargées : s’ils remplacent les images d’origine ou deviennent des doublons. Les images en double sont renommées avec une `-1`. Par exemple : `chair.tif` est renommé `chair-1.tif`. Ces options affectent les images téléchargées dans un dossier différent de celui de l’image d’origine ou les images dont l’extension est différente de celle du fichier d’origine, comme JPG, TIF ou PNG.
 
+   >[!NOTE]
+   >
+   >Pour maintenir la cohérence avec Experience Manager, sélectionnez l’option Écraser les images . **[!UICONTROL Remplacer dans le dossier actuel, même nom/même extension de base]**.
+
    | Option Remplacer les images | Description |
    | --- | --- |
-   | **[!UICONTROL Remplacer dans le dossier actuel, même nom/extension de base]** | Par défaut pour les nouveaux comptes Dynamic Media uniquement.<br>Cette option est la règle la plus stricte pour le remplacement. Elle implique que vous chargiez l’image de remplacement dans le même dossier que l’original, et qu’elle ait la même extension que le fichier d’origine. Si ces conditions ne sont pas remplies, un doublon est créé. |
+   | **[!UICONTROL Remplacer dans le dossier actuel, même nom/extension de base]** | *Par défaut* pour les nouveaux comptes Dynamic Media uniquement.<br>Cette option est la règle la plus stricte pour le remplacement. Elle implique que vous chargiez l’image de remplacement dans le même dossier que l’original, et qu’elle ait la même extension que le fichier d’origine. Si ces conditions ne sont pas remplies, un doublon est créé.<br>*Pour maintenir la cohérence avec Experience Manager, sélectionnez cette option.*. |
    | **[!UICONTROL Remplacer dans le dossier actuel, même nom de base, indépendamment de l’extension]** | Nécessite de charger l’image de remplacement dans le même dossier que l’image d’origine, mais l’extension du nom de fichier peut être différente de celle de l’image d’origine. Par exemple, chaise.tif remplace chaise.jpg. |
    | **[!UICONTROL Remplacer dans un dossier, même nom/extension de ressource de base]** | Nécessite que l’image de remplacement ait la même extension que l’image d’origine (par exemple, chaise.jpg doit remplacer chaise.jpg, et non chaise.tif). Vous pouvez néanmoins télécharger l’image de remplacement dans un dossier différent de celui de l’image d’origine. L’image mise à jour se trouve dans le nouveau dossier ; le fichier d’origine n’est plus disponible à l’emplacement d’origine.. |
    | **[!UICONTROL Écraser dans n’importe quel dossier, même nom de ressource de base, quelle que soit l’extension]** | Cette option est la règle de remplacement la plus inclusive. Elle vous permet de charger une image de remplacement dans un dossier autre que celui de l’image d’origine, de charger un fichier dont l’extension est différente de celle du fichier d’origine et de remplacer le fichier d’origine. Si le fichier d’origine se trouve dans un dossier différent, l’image de remplacement est enregistrée dans le nouveau dossier où elle a été chargée. |
