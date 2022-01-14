@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c136703a14af8a0366fb39c00b7b73f2d320a448
+source-git-commit: 95e3a8f163c0f66212cfb50b30323f63a2292ce1
 workflow-type: tm+mt
-source-wordcount: '3447'
+source-wordcount: '3453'
 ht-degree: 84%
 
 ---
@@ -347,6 +347,7 @@ ht-degree: 84%
       + [Facultatif - Configuration de Dynamic Media, paramètres généraux](/help/assets/dynamic-media/dm-general-settings.md)
       + [Facultatif - Configuration de Dynamic Media et configuration de la publication](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Résolution des problèmes liés à Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
+      + [Configuration d’un compte d’alias Dynamic Media](/help/assets/dynamic-media/dm-alias-account.md)
       + [Accessibilité dans Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md)
       + [Gestion des ressources Dynamic Media](/help/assets/dynamic-media/managing-assets.md)
       + [Bonnes pratiques relatives à l’optimisation de la qualité des images](/help/assets/dynamic-media/best-practices-for-optimizing-the-quality-of-your-images.md)
