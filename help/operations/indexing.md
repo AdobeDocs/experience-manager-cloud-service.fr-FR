@@ -3,9 +3,9 @@ title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 7c247f5080c59f07bc9ba549fb746bf62cca80ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2150'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Voici la liste des principaux changements par rapport à AEM version 6.5 et ant
 1. Les clients peuvent voir si la tâche d’indexation est terminée sur la page de version Cloud Manager et recevront une notification lorsque la nouvelle version sera prête à recevoir le trafic.
 
 1. Restrictions :
-* Actuellement, la gestion des index sur AEM as a Cloud Service n’est prise en charge que pour les index de type lucene.
+* Actuellement, la gestion des index dans AEM as a Cloud Service n’est prise en charge que pour les index de type Lucene.
 * Seuls les analyseurs standard sont pris en charge (c’est-à-dire ceux fournis avec le produit). Les analyseurs personnalisés ne sont pas pris en charge.
 
 ## Utilisation {#how-to-use}
@@ -73,7 +73,7 @@ Le package de l’exemple ci-dessus est nommé `com.adobe.granite:new-index-cont
 
 >[!NOTE]
 >
->Le plug-in Jackrabbit Filevault Maven Package version **1.1.0** présente un problème connu qui empêche d’ajouter `oak:index` aux modules `<packageType>application</packageType>`. Vous devez mettre à jour vers une version plus récente de ce module externe.
+>Le plug-in Jackrabbit Filevault Maven Package version **1.1.0** présente un problème connu qui empêche d’ajouter `oak:index` aux modules `<packageType>application</packageType>`. Vous devez mettre à jour ce module externe vers une version plus récente.
 
 Les définitions d’index sont désormais marquées comme personnalisées et versionnées :
 
@@ -89,11 +89,11 @@ Une fois la nouvelle définition d’index ajoutée, la nouvelle application doi
 
 ## Gestion des index à l’aide de déploiements bleu/vert {#index-management-using-blue-green-deployments}
 
-### Qu’est-ce que la gestion des index ?  {#what-is-index-management}
+### Qu’est-ce que la gestion des index ? {#what-is-index-management}
 
 La gestion des index consiste à ajouter, supprimer et modifier des index. Changer la *définition* d’un index est rapide, mais appliquer le changement (opération souvent appelée « création d’un index » ou, pour les index existants, « réindexation ») nécessite du temps. Cette opération n’est pas instantanée : le référentiel doit être analysé pour que les données soient indexées.
 
-### Qu’est-ce que le déploiement bleu/vert ?  {#what-is-blue-green-deployment}
+### Qu’est-ce que le déploiement bleu/vert ? {#what-is-blue-green-deployment}
 
 Le déploiement bleu/vert peut réduire les temps d’inactivité. Il autorise également des mises à niveau sans interruption de service et des restaurations rapides. L’ancienne version de l’application (bleue) s’exécute en même temps que la nouvelle version (verte).
 
@@ -213,15 +213,15 @@ S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, v
 
 ## Optimisations des index {#index-optimizations}
 
-Apache Jackrabbit Oak permet des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de noeuds, qui sont ensuite consignés comme avertissement. De telles requêtes doivent être identifiées en analysant les fichiers journaux, de sorte que les définitions d’index puissent être optimisées. Veuillez consulter [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=en#tips-for-creating-efficient-indexes) pour plus d’informations.
+Apache Jackrabbit Oak offre des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels les plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de nœuds qui sont ensuite consignés en tant qu’avertissements. De telles requêtes doivent être identifiées en analysant les fichiers journaux, de sorte que les définitions d’index puissent être optimisées. Pour plus d’informations, consultez [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=fr#tips-for-creating-efficient-indexes).
 
-### Index de texte intégral Lucene sur AEM as a Cloud Service {#index-lucene}
+### Index de texte intégral Lucene dans AEM as a Cloud Service {#index-lucene}
 
-Index de texte intégral `/oak:index/lucene-2` peut devenir très volumineux, car il indexe par défaut tous les noeuds du référentiel AEM.  Une fois que l’Adobe a prévu de supprimer cet index, il ne sera plus utilisé côté produit dans AEM as a Cloud Service et il ne devrait plus être nécessaire d’exécuter le code client. Pour AEM environnements as a Cloud Service avec des index Lucene courants, Adobe travaille avec les clients individuellement pour une approche coordonnée afin de compenser cet index et d’utiliser des index optimisés et meilleurs. Aucune action n’est requise par les clients sans autre préavis de la part de l’Adobe. AEM clients as a Cloud Service seront informés par Adobe lorsqu’il est nécessaire d’agir en ce qui concerne cette optimisation. Si cet index est requis pour les requêtes personnalisées, en tant que solution temporaire, une copie de cet index doit être créée avec un nom différent, par exemple : `/oak:index/acme.lucene-1-custom-1`, comme décrit [here](/help/operations/indexing.md).
+L’index de texte intégral `/oak:index/lucene-2` peut devenir très volumineux, car il indexe par défaut tous les nœuds du référentiel AEM. Adobe ayant prévu de supprimer cet index, il ne sera plus utilisé côté produit dans AEM as a Cloud Service et il ne devrait plus être nécessaire d’exécuter le code client. Pour les environnements AEM as a Cloud Service dotés d’index Lucene courants, Adobe travaille avec chacun des ses clients pour suivre une approche coordonnée afin de compenser cet index et d’utiliser des versions optimisées et améliorées de ces index. Aucune action n’est requise de la part clients sans autre préavis de la part d’Adobe. Les clients AEM as a Cloud Service seront informés par Adobe si un action devient nécessaire concernant cette optimisation. Si cet index est requis pour les requêtes personnalisées, la solution temporaire est de créer une copie de cet index avec un nom différent, par exemple : `/oak:index/acme.lucene-1-custom-1`, comme décrit [ici](/help/operations/indexing.md).
 Cette optimisation ne s’applique pas par défaut aux autres environnements AEM hébergés sur site ou gérés par Adobe Managed Services.
 
 ## Optimisations des requêtes {#index-query}
 
-Le **Performances des requêtes** vous permet d’observer les requêtes JCR populaires et lentes. De plus, il peut analyser les requêtes et afficher diverses informations sur, notamment si un index est utilisé ou non pour cette requête.
+L’outil **Performance des requêtes** vous permet d’observer les requêtes JCR à la fois populaires et lentes. De plus, il permet d’analyser les requêtes et d’afficher diverses informations, notamment si un index est utilisé ou non pour cette requête.
 
-Contrairement à AEM on-premise, AEM as a Cloud Service n’affiche pas la variable **Performances des requêtes** dans l’interface utilisateur. Il est désormais disponible via Developer Console (dans Cloud Manager) sur la page [Requêtes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html#queries) .
+Contrairement à AEM on-premise, AEM as a Cloud Service n’affiche pas l’outil **Performance des requêtes** dans l’interface utilisateur. Il est désormais disponible dans Developer Console (dans Cloud Manager) dans l’onglet [Queries](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries) (Requêtes).
