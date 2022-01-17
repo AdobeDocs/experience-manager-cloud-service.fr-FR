@@ -3,13 +3,13 @@ title: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour actuelles pour[!DNL Adobe Experience Manager]as a Cloud Service {#release-notes}
+# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
@@ -27,25 +27,25 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
 ## AEM as a Cloud Service Foundation {#foundation}
 
-### Nouveautés d’AEM en tant que fondation Cloud Service {#what-is-new-foundation}
+### Nouveautés d’AEM as a Cloud Service Foundation {#what-is-new-foundation}
 
-* [Canal de version préliminaire](/help/release-notes/prerelease.md) : Prévisualisez les fonctionnalités à venir pendant un mois complet avant qu’elles ne soient mises en production.
+* [Canal de version préliminaire](/help/release-notes/prerelease.md) : prévisualisez les fonctionnalités à venir pendant un mois complet avant qu’elles ne soient mises en production.
 
-* [Obsolescence](/help/release-notes/deprecated-apis.md) des API : une liste des dernières API obsolètes pour AEM as a Cloud Service est disponible.
+* [Obsolescence des API](/help/release-notes/deprecated-apis.md) : une liste des dernières API obsolètes pour AEM as a Cloud Service est disponible.
 
-* [Module externe Maven AEM as a Cloud Service SDK Build Analyzer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html) : Mettez à jour vos projets Maven vers la dernière version, qui inclut une vérification d’API Java obsolète et d’autres améliorations.
+* [Module externe Maven Build Analyzer SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=fr) : mettez à jour vos projets Maven vers la dernière version, qui inclut une vérification d’API Java obsolète et d’autres améliorations.
 
 ## [!DNL Adobe Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nouveautés de [!DNL Sites] {#what-is-new-sites}
+### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
-* Vous pourrez bientôt vérifier le contenu sur un nouveau [niveau d’aperçu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) pour simuler l’aspect final de l’expérience comme vous le feriez sur le niveau Publication. Cette fonctionnalité est activée par l’assistant de publication gérée d’AEM Sites qui vous permet désormais de choisir une destination de publication entre Publier ou Aperçu. Les expériences sur la prévisualisation sont ensuite accessibles via une URL dédiée. Après la validation sur l’aperçu, le contenu peut être publié de l’auteur à la publication comme d’habitude. L’activation du service de prévisualisation dans AEM en tant qu’environnements de Cloud Service sera progressivement déployée au cours des prochaines semaines.
+* Vous pourrez bientôt vérifier le contenu sur un nouveau [niveau Aperçu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) pour simuler l’aspect final de l’expérience comme vous le feriez sur le niveau Publication. Cette fonctionnalité est activée par l’assistant de publication gérée d’AEM Sites qui vous permet désormais de choisir une destination de publication entre Publication ou Aperçu. Les expériences sur la prévisualisation sont ensuite accessibles via une URL dédiée. Après la validation sur Aperçu, le contenu peut être publié d’Auteur vers Publication, comme d’habitude. L’activation du service d’aperçu dans des environnements AEM as a Clou Service sera progressivement déployée au cours des prochaines semaines.
 
-## [!DNL Adobe Experience Manager Assets] as a  [!DNL Cloud Service] {#assets}
+## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouveautés de [!DNL Assets] {#what-is-new-assets}
+### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
-* Vous pouvez télécharger les ressources partagées à l’aide de la fonctionnalité Partage de liens . Ce téléchargement utilise désormais un service asynchrone qui offre des téléchargements plus rapides et ininterrompus, même pour les téléchargements très volumineux. Voir la section [Téléchargement de ressources](/help/assets/download-assets-from-aem.md#link-share-download).
+* Vous pouvez télécharger les ressources partagées à l’aide de la fonctionnalité Partage de liens. Ce téléchargement utilise désormais un service asynchrone qui offre des téléchargements plus rapides et ininterrompus, même pour les téléchargements très volumineux. Voir la section [Téléchargement de ressources](/help/assets/download-assets-from-aem.md#link-share-download).
 
    ![Boîte de réception de téléchargement](/help/assets/assets/download-inbox.png)
 
@@ -55,47 +55,47 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
    ![Ajout d’un schéma de métadonnées à partir des propriétés du dossier](/help/assets/assets/metadata-schema-folder-properties.png)
 
-* L’outil d’ingestion en bloc de ressources vous permet d’ajouter des métadonnées lors d’une ingestion en masse.
+* L’outil d’ingestion en masse de ressources vous permet d’ajouter des métadonnées lors d’une ingestion en masse.
 
-* Une amélioration de l’expérience utilisateur affiche le nombre de ressources présentes dans un dossier. Pour plus de 1 000 ressources dans un dossier, [!DNL Assets] affiche plus de 1 000 ressources.
+* Une amélioration de l’expérience utilisateur affiche le nombre de ressources présentes dans un dossier. Pour plus de 1 000 ressources dans un dossier, [!DNL Assets] affiche 1000+.
 
    ![Nombre de ressources dans un dossier affichées dans l’interface](/help/assets/assets/browse-folder-number-of-assets.png)
 
-### Correctifs de [!DNL Assets] {#assets-bugs-fixed}
+### Correctifs d’[!DNL Assets]  {#assets-bugs-fixed}
 
 * Le téléchargement de fichiers très volumineux bloque le [!DNL Experience Manager desktop app]. (CQ-4320942)
 * Les options de la barre d’outils sont différentes lorsque la même collection est sélectionnée à partir d’un dossier et lorsqu’elle est sélectionnée à partir d’un résultat de recherche. (CQ-4321406)
 
-#### Nouveautés de Dynamic Media {#what-is-new-dm}
+#### Nouveautés Dynamic Media {#what-is-new-dm}
 
-* L’imagerie dynamique RGPD (Device Pixel Ratio) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace, sur des appareils dotés d’écrans haute résolution et d’une bande passante réseau limitée. Pour plus d’informations, voir [FAQ sur l’imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md) et [Optimisation d’image avec les formats d’image de nouvelle génération WebP et AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
-* Prise en charge du format d’image AVIF de nouvelle génération dans la diffusion Dynamic Media (modificateur d’URL fmt).
+* L’imagerie dynamique DPR (Device Pixel Ratio) et l’optimisation de la bande passante du réseau vous permettent de diffuser des images de meilleure qualité de manière efficace, sur des appareils dotés d’écrans haute résolution et une bande passante réseau limitée. Pour plus d’informations, consultez [FAQ sur l’imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md) et [Optimisation des images avec les formats d’image de nouvelle génération WebP et AVIF.](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+* Prise en charge du format d’image AVIF nouvelle génération dans la diffusion Dynamic Media (modificateur d’URL fmt).
 
-## [!DNL Adobe Experience Manager Forms] as a  [!DNL Cloud Service] {#forms}
+## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouveautés de [!DNL Forms] {#what-is-new-forms}
+### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
 
 * **Aide contextuelle** : ajout d’une aide contextuelle pour l’éditeur de formulaires adaptatifs, l’éditeur de modèles et l’éditeur de thèmes afin d’aider les auteurs à mieux comprendre les différentes fonctionnalités des éditeurs.
 * **Messages d’erreur dans le navigateur Propriétés** : ajout de messages d’erreur pour chaque propriété dans le navigateur Propriétés des formulaires adaptatifs. Ces messages aident à comprendre les valeurs autorisées pour un champ.
 
 ### Fonctionnalité bêta à venir de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-Output as a Cloud service : le service Output vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode batch synchrone et asynchrone. Le service Output permet de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+Output as a Cloud service : le service Output vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode batch synchrone et asynchrone. Le service Output permet de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
 * Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
-* Générer des formulaires dans divers formats, y compris les flux d’impression PDF non interactifs.
+* Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs.
 * Générer des fichiers PDF d’impression à partir de fichiers PDF de formulaire XFA.
 
-Vous pouvez écrire à formscsbeta@adobe.com pour vous inscrire au programme bêta.
+Vous pouvez écrire à l’adresse formscsbeta@adobe.com pour vous inscrire au programme bêta.
 
-### Correctifs de [!DNL Forms] {#forms-bugs-fixed}
+### Correctifs d’[!DNL Forms]  {#forms-bugs-fixed}
 
-* Dans une étape Affecter une tâche des workflows AEM Forms, lorsque vous remplacez l’icône par défaut des boutons d’action par une icône coral, le workflow cesse de fonctionner et consigne une exception. Le workflow fonctionne comme prévu lorsque des icônes par défaut sont utilisées.
+* Dans une étape Affecter une tâche des workflows AEM Forms, lorsque vous remplacez l’icône par défaut des boutons d’action par une icône corail, le workflow cesse de fonctionner et consigne une exception. Le workflow fonctionne comme prévu lorsque des icônes par défaut sont utilisées.
 * Dans le calque de mise en page, lorsque vous modifiez le nombre de colonnes, ouvrez le calque d’édition et faites glisser certains composants dans un panneau, les zones bleues carrées apparaissent dans la zone de contenu de l’éditeur de formulaires adaptatifs et l’éditeur ne répond plus.
 * Le message d’erreur d’une option d’éditeur de règles liée à la fourniture de l’URL d’une ressource adaptative ou externe est trop long et n’est pas convivial.
 
 
-## Cloud Manager  {#cloud-manager}
+## Cloud Manager {#cloud-manager}
 
 Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.5.0.
 
@@ -146,7 +146,7 @@ La date de publication de l’outil de transfert de contenu version v1.4.6 est 
 
 ### Nouveautés {#what-is-new-ctt-latest}
 
-* Une nouvelle instruction de journalisation a été ajoutée au journal des erreurs du démarrage rapide si l’utilisateur ne dispose pas de l’autorisation d’exécution sur le fichier exécutable Java.
+* Une nouvelle instruction de connexion a été ajoutée au journal des erreurs du démarrage rapide si l’utilisateur ne dispose pas de l’autorisation d’exécution sur le fichier exécutable Java.
 
 * Lorsqu’un utilisateur supprime un jeu de migration de l’interface utilisateur de CTT, où une extraction a été effectuée, le dossier `tmp` associé à ce jeu de migration est supprimé afin d’économiser de l’espace.
 
@@ -180,4 +180,4 @@ La date de publication de l’outil de transfert de contenu version v1.4.0 est 
 
 * Miniatures des ressources non affichées dans l’onglet Ressource des propriétés du produit
 
-* Le chemin de navigation réinitialise les données d’aperçu dans la console de produit.
+* Le chemin de navigation réinitialise les données d’aperçu dans la console de produit
