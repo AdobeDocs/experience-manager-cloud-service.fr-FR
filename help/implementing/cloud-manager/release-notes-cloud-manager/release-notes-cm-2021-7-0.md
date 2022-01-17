@@ -3,9 +3,9 @@ title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service versio
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.7.0
 feature: Release Information
 source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '340'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cl
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager dans AEM version as a Cloud Service 2021.7.0 est le 15 juillet 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.7.0 est le 15 juillet 2021.
 
 
 ### Nouveautés {#what-is-new}
@@ -39,15 +39,15 @@ La date de publication de Cloud Manager dans AEM version as a Cloud Service 2021
 
 ### Correctifs {#bug-fixes}
 
-* Dans certains cas, l’aperçu n’était pas une option disponible lors de la liaison d’une Liste autorisée IP à un environnement.
+* Dans certains cas, l’aperçu n’était pas une option disponible lors de la liaison d’une Liste d’adresses IP autorisées à un environnement.
 
 * La navigation manuelle vers la page des détails de l’exécution pour une exécution non existante n’affichait pas d’erreur, mais simplement un écran de chargement sans fin.
 
 * Le message d’erreur affiché lorsque le nombre maximal de certificats SSL a été atteint n’était pas utile.
 
-* Dans certains cas, il peut y avoir une incohérence dans la version affichée dans la carte de pipeline de la page **Aperçu**.
+* Dans certains cas, il pouvait y avoir une incohérence dans la version affichée dans la carte de pipeline de la page **Aperçu**.
 
-* L’assistant d’ajout de programme indiquait de manière incorrecte que le nom ne peut pas être modifié après la création.
+* L’ajout d’un assistant de programme indiquait de manière incorrecte que le nom ne pouvait pas être modifié après la création.
 
 ### Problèmes connus {#known-issues}
 
