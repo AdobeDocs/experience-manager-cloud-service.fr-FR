@@ -3,9 +3,9 @@ title: Découvrez Cloud Manager
 description: Consultez cette page pour en savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
 source-git-commit: c206bc241bccf6f8a5bfb4946d6231f53438861a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '907'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -19,18 +19,18 @@ Pour que les clients puissent commencer rapidement à utiliser AEM as a Cloud Se
 
 Votre administrateur système sera chargé de configurer votre équipe Cloud Manager, qui comprendra les personnes qui créeront vos ressources cloud et vos développeurs. Reportez-vous à [Configuration du développement d’équipe d’entreprise pour AEM as a Cloud Service](/help/implementing/cloud-manager/managing-code/enterprise-team-dev-setup.md) pour découvrir comment Cloud Manager prend en charge la configuration du développement d’équipe d’entreprise.
 
-## Accès à la page de présentation de Cloud Manager {#navigate-cloud-manager}
+## Accès à la page de présentation de Cloud Manager {#navigate-cloud-manager}
 
 Pour accéder à Cloud Manager, procédez comme suit :
 
-1. Accédez directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
+1. Accédez directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Mettez cette page en signet à des fins de référence ultérieure et pour accéder directement à la page d’entrée de Cloud Manager.
+   >Mettez cette page en signet pour vous y référer ultérieurement et pour accéder directement à la page d’entrée de Cloud Manager.
 
-1. Sélectionnez le programme dans le **Programmes et produits** pour lancer la page **Présentation** page.
+1. Sélectionnez le programme dans la page **Programmes et produits** de Cloud Manager pour lancer la page **Présentation**.
 
-De plus, vous pouvez également accéder à la page Programmes et produits de Cloud Manager à partir de la page d’accueil de Adobe Experience Cloud. Suivez les étapes ci-dessous :
+De plus, vous pouvez également accéder à la page Programmes et produits de Cloud Manager à partir de la page d’accueil d’Adobe Experience Cloud. Suivez les étapes ci-dessous :
 
 1. Accédez directement à [Adobe Experience Cloud](https://experience.adobe.com/#/@foundationinternal/home) et connectez-vous à l’aide de votre Adobe ID.
 
