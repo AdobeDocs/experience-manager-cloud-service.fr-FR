@@ -1,22 +1,22 @@
 ---
-title: Organisez vos ressources numériques.
-description: Organisez vos ressources numériques, images, fichiers, dossiers, etc. à l’aide de Experience Manager.
+title: Organisez vos ressources numériques
+description: Organisez vos ressources numériques, vos images, vos fichiers, vos dossiers, etc. à l’aide d’Experience Manager.
 contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Organisez vos ressources numériques. {#organize-digital-assets}
+# Organisez vos ressources numériques {#organize-digital-assets}
 
-Toutes les ressources numériques, les métadonnées et le contenu des documents Microsoft® Office et PDF sont extraits et peuvent faire l’objet de recherches. La recherche permet un filtrage sophistiqué des ressources et respecte entièrement les autorisations appropriées. Les métadonnées sont traitées en détail dans la section Métadonnées dans la gestion des actifs numériques.
+L’ensemble des ressources numériques, des métadonnées et du contenu des documents Microsoft® Office et PDF sont extraits et rendus utilisables dans une requête. Les recherches permettent un filtrage élaboré des ressources et respectent entièrement les autorisations. Les métadonnées sont traitées en détail dans la section Métadonnées dans la gestion des actifs numériques.
 
-[!DNL Experience Manager Assets] prend en charge plusieurs méthodes d’organisation du contenu. Vous pouvez les organiser de manière hiérarchique à l’aide de dossiers ou les organiser de manière ad hoc et non ordonnée, par exemple à l’aide de balises. Les utilisateurs peuvent modifier des balises dans l’éditeur de ressources de gestion des actifs numériques où s’affichent des sous-ressources, des rendus et des métadonnées.
+[!DNL Experience Manager Assets] prend en charge plusieurs manières d’organiser le contenu. Vous pouvez l’organiser de façon hiérarchique à l’aide de dossiers ou de manière ad hoc, non classée à l’aide de balises. Les utilisateurs peuvent modifier les balises dans l’éditeur de ressources de gestion des actifs numériques où les sous-ressources, rendus et métadonnées sont affichés.
 
 <!-- Commenting to pull down the existing content before applying changes wrt CQDOC-15930
 ## Create folders {#create-folders}
@@ -54,53 +54,53 @@ Date24/08/2021
 
 ## Organisation des ressources dans des dossiers {#organize-using-folders}
 
-La méthode la plus simple pour organiser les ressources consiste à les enregistrer dans des dossiers. Cela revient à organiser les fichiers dans des dossiers de votre système de fichiers local. Pour plus d’informations sur la création et la gestion des dossiers, voir [Gestion des ressources](manage-digital-assets.md). La manière dont vous nommez les fichiers et les dossiers, organisez les sous-dossiers et gérez les fichiers dans ces dossiers peut avoir un impact significatif sur la manière dont ces ressources sont traitées. Grâce à des stratégies d’attribution de noms de fichiers et de dossiers cohérentes et appropriées, ainsi qu’à de bonnes pratiques de métadonnées, vous pouvez tirer le meilleur parti de votre référentiel de ressources numériques.
+La méthode la plus simple pour organiser les ressources consiste à les enregistrer dans des dossiers. Cela revient à organiser les fichiers dans des dossiers de votre système de fichiers local. Pour plus d’informations sur la création et la gestion des dossiers, consultez [Gestion des ressources](manage-digital-assets.md). La façon dont vous nommez les fichiers ou les dossiers, organisez les sous-dossiers ou gérez les fichiers au sein des dossiers peut avoir un impact significatif sur le traitement des ressources. Grâce à des stratégies d’attribution de noms de fichiers et de dossiers cohérentes et appropriées, ainsi qu’à de bonnes pratiques d’utilisation des métadonnées, vous pouvez tirer le meilleur parti de votre référentiel de ressources numériques.
 
-* En règle générale, votre référentiel de ressources numériques est toujours en croissance. Il est donc important de formaliser l’utilisation des métadonnées, la structure des dossiers et l’attribution de noms aux fichiers au début du cycle de création de contenu.
-* Utilisez les dossiers uniquement pour imposer une structure de stockage cohérente pour vos ressources numériques. Cette cohérence aide votre processus et gère mieux vos ressources. Par exemple, les ressources placées dans les types de dossiers suivants peuvent vous aider à séparer les ressources :
+* En règle générale, votre référentiel de ressources numériques ne fait que croître. Il est donc important de formaliser l’utilisation des métadonnées, la structure des dossiers et l’attribution de noms aux fichiers au début du cycle de création de contenu.
+* Utilisez les dossiers uniquement pour imposer une structure de stockage cohérente pour vos ressources numériques. Cette cohérence consolide vos processus et vous aide à gérer vos ressources. Par exemple, les types de dossiers suivants peuvent vous aider à séparer les ressources :
 
-   * **Dossiers** de développement : contient les ressources numériques que vous utilisez actuellement.
-   * **Dossiers** clients : contient des ressources numériques en fonction des clients ou des noms de projet.
-   * **Dossiers** Principal : contient des ressources numériques sources originales.
-   * **Dossiers** de rendu : contient des rendus et des copies des ressources numériques sources originales.
-   * **Dossiers de taille de fichier** : contient des ressources numériques en fonction des tailles de fichier petite, moyenne ou volumineuse.
-   * **Dossiers intermédiaires** : contient des ressources numériques prêtes à être publiées sur votre site web.
-   * **Dossiers de type MIME** : contient des ressources numériques qui sont spécifiques à des types MIME tels que des images, des documents et des fichiers multimédia.
-   * **Dossiers d’archives** : contient des ressources numériques retirées.
-   * **Dossiers basés sur des dates** : contient des ressources numériques en fonction d’une date de création ou d’une date de dernière modification.
+   * **Dossiers de développement** : contiennent les ressources numériques que vous utilisez actuellement.
+   * **Dossiers de clients** : contiennent des ressources numériques en fonction des clients ou des noms de projet.
+   * **Dossiers principaux** : contiennent les ressources numériques sources originales.
+   * **Dossiers de rendus** : contiennent les rendus et les copies des ressources numériques sources originales.
+   * **Dossiers de taille de fichier** : contiennent des ressources numériques en fonction des tailles de fichier petite, moyenne et volumineuse.
+   * **Dossiers intermédiaires** : contiennent les ressources numériques qui sont prêtes à être publiées sur votre site web.
+   * **Dossiers de type MIME** : contiennent des ressources numériques qui sont spécifiques à des types MIME tels que des images, des documents et des fichiers multimédias.
+   * **Dossiers d’archives** : contiennent les ressources numériques retirées.
+   * **Dossiers reposant sur une date** : contiennent des ressources numériques en fonction d’une date de création ou d’une date de dernière modification.
 
-* Créez un répertoire de dossiers susceptibles de ne pas changer, de sorte que toute personnalisation ou automatisation continue de fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
-* Si une ressource est déjà publiée, utilisez [!DNL Experience Manager] pour la déplacer vers un autre dossier et la republier à partir de son nouvel emplacement. L’emplacement de la ressource publiée d’origine est toujours disponible avec la ressource qui vient d’être republiée. La ressource publiée d’origine, cependant, est *perdue* par [!DNL Experience Manager] et ne peut pas être annulée. Par conséquent, il est recommandé d’abord d’annuler la publication d’une ressource, puis de la déplacer vers un autre dossier.
+* Créez un répertoire de dossiers qui n’est pas susceptible de changer afin que les processus de personnalisation ou d’autonomisation puissent continuer à fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
+* Si une ressource a déjà été publiée, utilisez [!DNL Experience Manager] pour déplacer cette ressource vers un autre dossier et la republier depuis son nouvel emplacement. L’emplacement d’origine de la ressource publiée est toujours disponible ainsi que la ressource récemment republiée. Toutefois, la version d’origine de la ressource publiée est *« perdue »* pour [!DNL Experience Manager] et sa publication ne peut pas être annulée. Il est donc recommandé d’annuler d’abord la publication d’une ressource avant de la déplacer vers un autre dossier.
 
-## Organisation des ressources à l’aide de balises {#use-tags-to-organize-assets}
+## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 
-À l’aide de balises, en tant que métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
+À l’aide des balises telles que les métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
 
-[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure d’apprentissage automatique, qui peuvent être formés pour reconnaître et appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots individuels ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure d’apprentissage automatique, qui peuvent être formés à reconnaître et à appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
 
-Pour plus d’informations, voir les articles suivants :
+Pour plus d’informations, consultez les articles suivants :
 
-* [Modification des métadonnées de ressource](meta-edit.md)
+* [Modification de métadonnées de ressource](meta-edit.md)
 * [Balises intelligentes dans Assets](smart-tags.md)
 
 ## Organisation en tant que collections {#organize-as-collections}
 
-Avec les collections de ressources dans [!DNL Experience Manager Assets], vous pouvez rationaliser la possibilité de créer, modifier et partager des ressources entre les utilisateurs. Créez plusieurs types de collections en fonction de leur utilisation, y compris des collections qui contiennent une liste de référence statique de ressources, dossiers et collections, ainsi que des collections qui extraient des ressources en fonction de critères de recherche. Vous pouvez créer des collections avec des ressources provenant de différents emplacements et les partager avec plusieurs utilisateurs disposant de différents niveaux d’accès, d’affichage et de modification des privilèges.
+Grâce aux collections de ressources dans [!DNL Experience Manager Assets], vous pouvez optimiser la possibilité de créer, modifier et partager des ressources entre les utilisateurs. Créez plusieurs types de collections en fonction de leur utilisation, y compris des collections qui contiennent une liste de références statiques des ressources, dossiers et collections, ainsi que des collections qui extraient des ressources en fonction de critères de recherche. Vous pouvez créer des collections avec des ressources provenant de différents emplacements et les partager avec plusieurs utilisateurs disposant de différents niveaux d’accès, d’affichage et de modification des privilèges.
 
-Pour plus d’informations, voir [Gestion des collections](manage-collections.md)
+Pour plus d’informations, consultez [Gestion des collections](manage-collections.md).
 
 
 ## Utilisation de profils pour organiser vos ressources {#organize-to-use-profiles}
 
-Un profil de traitement contient des commandes [!DNL Assets] de traitement qui s’appliquent aux ressources qui sont chargées dans des dossiers prédéfinis. Les profils sont utilisés pour automatiser le traitement du contenu d’un dossier ou de ressources fraîchement chargées. Vous pouvez utiliser des profils pour mieux organiser vos ressources.
+Un profil de traitement contient les commandes de traitement [!DNL Assets] qui s’appliquent aux ressources chargées dans des dossiers prédéfinis. Les profils sont utilisés pour automatiser le traitement du contenu d’un dossier ou de ressources nouvellement chargées. Vous pouvez utiliser des profils pour mieux organiser vos ressources.
 
-La normalisation de l’utilisation des métadonnées, de l’attribution des noms de fichiers et de la structure des dossiers vous permet d’appliquer des profils de traitement à vos dossiers avec une précision et une cohérence accrues.
+Grâce à cette normalisation de l’utilisation des métadonnées, de l’attribution des noms et de la structure des dossiers, vous aurez l’assurance, au fur et à mesure que le nombre de vos ressources augmente, de pouvoir appliquer des profils de traitement aux dossiers avec une précision et une cohérence toujours plus grandes.
 
 >[!MORELIKETHIS]
 >
 >* [Utilisation des microservices de ressources et des profils de traitement](asset-microservices-configure-and-use.md)
 >* [Profils de métadonnées](metadata-profiles.md)
 >* [Profils vidéo](/help/assets/dynamic-media/video-profiles.md)
->* [Profils d’image Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
+>* [Profils d’image Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
 
 
