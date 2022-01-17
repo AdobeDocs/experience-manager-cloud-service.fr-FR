@@ -3,7 +3,7 @@ title: Création d’un projet dans Screens as a Cloud Service
 description: Cette page décrit comment créer un projet dans Screens as a Cloud Service.
 exl-id: 89e3ac28-7537-413d-b63b-abd2bbae6cb7
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '366'
 ht-degree: 100%
 
