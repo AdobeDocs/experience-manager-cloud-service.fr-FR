@@ -3,9 +3,9 @@ title: Gérer les journaux – Cloud Service
 description: Gérer les journaux – Cloud Service
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -19,29 +19,29 @@ Suivez les étapes ci-dessous pour télécharger les journaux.
 
 1. Accédez à la carte **Environnements** à partir de la page **Aperçu**.
 
-1. Sélectionnez **Télécharger les journaux** dans la section **...** .
+1. Sélectionnez **Télécharger les journaux** dans le menu **...**.
 
    ![](assets/download-logs1.png)
 
    *Ou*,
 
-   Sur la page Détails de l’environnement :
+   Sur la page Détails de l’environnement :
 
    ![](assets/download-logs.png)
 
    >[!NOTE]
    >Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal.
 
-1. Dans le menu déroulant **Service**, sélectionnez des options telles que **Aperçu** ou **Prévisualiser Dispatcher**, puis cliquez sur l’icône de téléchargement.
+1. Dans le menu déroulant **Service**, sélectionnez des options telles que **Aperçu** ou **Dispatcher de prévisualisation**, puis cliquez sur l’icône de téléchargement.
 
    ![](assets/download-preview.png)
 
 
 ## Journaux disponibles via l’API {#logs-through-api}
 
-Outre le téléchargement de journaux par le biais l’interface utilisateur, les journaux seront disponibles via l’API et l’interface de ligne de commande.
+Outre le téléchargement de journaux par le biais de l’interface utilisateur, les journaux seront disponibles via l’API et l’interface de ligne de commande.
 
-Par exemple, pour télécharger les fichiers journaux d’un environnement spécifique, la commande serait similaire à la commande
+Par exemple, pour télécharger les fichiers journaux d’un environnement spécifique, la commande pourrait ressembler à ceci :
 
 ```java
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
