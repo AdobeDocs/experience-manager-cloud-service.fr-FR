@@ -3,7 +3,7 @@ title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2154'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Vous pouvez modifier une page dans l’éditeur de page. Par exemple :
 >
 >Vous pouvez ignorer cette présentation ou la revoir à tout moment en la sélectionnant dans le menu **Informations sur la page**.
 
-## Accès à l’Aide    {#accessing-help}
+## Accès à l’Aide   {#accessing-help}
 
 Lorsque vous modifiez une page, l’**Aide** est accessible depuis :
 
@@ -206,7 +206,7 @@ Si votre page contient des fragments de contenu, vous aurez dans ce cas égaleme
 
 * Plans directeurs
 * Lancements
-* Live copies
+* Live Copies
 * Copies de langue
 * Liens entrants
 * Utilisation du composant de référence : contenu emprunté et prêté
@@ -283,6 +283,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
 >* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
+
 >
 
 
@@ -304,7 +305,7 @@ Vous pouvez également effectuer une saisie dans le champ de chemin d’accès. 
 
 ![Bouton Ouvrir la boîte de dialogue de sélection](/help/sites-cloud/authoring/assets/path-selection-completion.png)
 
-### Chemin Navigateur {#path-browser}
+### Chemin  Navigateur {#path-browser}
 
 L’explorateur de chemins d’accès est organisé de la même façon que le [mode Colonnes](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) de la console Sites afin de permettre une sélection plus détaillée des ressources.
 
