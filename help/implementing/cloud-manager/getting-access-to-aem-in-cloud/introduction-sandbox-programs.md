@@ -3,9 +3,9 @@ title: 'Présentation des programmes Sandbox '
 description: Présentation des programmes Sandbox
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: 1892900ea3f365e1b5f7d31ffae64d45256d2a3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -19,15 +19,15 @@ Un sandbox est généralement créé pour servir à la formation, à l’exécut
 
 Les environnements créés dans un sandbox ne sont pas configurés pour la mise à l’échelle automatique. Par conséquent, ils ne conviennent pas aux tests de performances ou de charge.
 
-Les programmes Sandbox incluent : [!DNL Sites] et [!DNL Assets] et sont automatiquement renseignés avec un référentiel Git, un environnement de développement et un pipeline hors production.  Le référentiel Git est renseigné avec un exemple de projet basé sur l’archétype de projet AEM.
+Les programmes Sandbox comprennent les [!DNL Sites] et les [!DNL Assets] et sont automatiquement renseignés avec un référentiel Git, un environnement de développement et un pipeline hors production.  Le référentiel Git est renseigné avec un exemple de projet basé sur l’archétype de projet AEM.
 
 >[!IMPORTANT]
 >Un programme Sandbox ne comporte qu’un seul environnement de développement.
 
 >[!NOTE]
->Les domaines personnalisés et les Listes autorisées IP ne sont pas disponibles dans les programmes Sandbox.
+>Les domaines personnalisés et les listes d’adresses IP autorisées ne sont pas disponibles dans les programmes Sandbox.
 
-Consultez [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=en) pour en savoir plus sur les types de programmes.
+Consultez [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/understand-program-types.html?lang=fr) pour en savoir plus sur les types de programmes.
 
 ### Attributs des programmes Sandbox {#attributes-sandbox}
 
@@ -38,7 +38,7 @@ Les programmes Sandbox possèdent les attributs suivants :
    * Création d’un environnement de développement
    * Création d’un canal hors production se déployant vers l’environnement de développement (déploiement de branche principale vers l’environnement de développement)
 
-1. **Solutions :** Les programmes Sandbox incluent des AEM [!DNL Sites] et [!DNL Assets].
+1. **Solutions :** les programmes Sandbox incluent AEM [!DNL Sites] et [!DNL Assets].
 
 1. **Mises à jour AEM :** les mises à jour AEM peuvent être appliquées manuellement aux environnements d’un programme Sandbox et ne sont pas automatiquement exécutées.
 Pour plus d’informations, consultez [Mises à jour AEM des environnements Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-de-hibernating-sandbox-environments.md#aem-updates-sandbox).
