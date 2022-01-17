@@ -3,9 +3,9 @@ title: Utilisation de tâches
 description: Les tâches représentent les éléments de travail à effectuer sur le contenu. Elles sont utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Cliquez sur les points de suspension (...) dans la mosaïque Tâches pour affich
 
 #### Détails de la tâche {#task-details}
 
-Pour plus d’informations sur une tâche particulière, dans la liste Tâches, appuyez/cliquez sur la tâche et **Ouvrez**.
+Pour plus d’informations sur une tâche particulière, dans la liste Tâches, cliquez/appuyez sur la tâche puis sur **Ouvrir**.
 
 ![Détails de la tâche](/help/sites-cloud/authoring/assets/projects-task-details.png)
 
