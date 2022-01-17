@@ -1,37 +1,37 @@
 ---
 title: Mode Développeur
 seo-title: Developer Mode
-description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui fournissent aux développeurs des informations sur la page active.
+description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 source-git-commit: b80aaa799e1652f7a981006925b50ffef43d7ab3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 
 # Mode Développeur {#developer-mode}
 
-Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) sont disponibles, notamment le mode Développeur. Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui fournissent aux développeurs des informations techniques sur la page active.
+Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) sont disponibles, notamment le mode Développeur. Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations techniques sur la page en cours.
 
-Il existe deux onglets :
+Deux onglets sont disponibles :
 
-* **[](#components)** Composants pour l’affichage des informations sur la structure et les performances.
-* **[](#errors)** Erreurs pour signaler tout problème survenant.
+* **[Composants](#components)**, pour visualiser les informations de structure et de performances.
+* **[Erreurs](#errors)**, pour afficher les problèmes rencontrés.
 
 Ils aident les développeurs à :
 
-* **** Découvrez comment les pages sont composées.
-* **Débogage :** ce qui se passe où et quand, ce qui aide à son tour à résoudre les problèmes.
+* **découvrir** la manière dont les pages sont composées ;
+* **déboguer** en vérifiant la nature des événements, ainsi que leur emplacement et le moment où ils surviennent, afin de résoudre des problèmes.
 
 >[!NOTE]
 >
->Mode Développeur:
+>Le mode Développeur :
 >
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
 >  * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
->* N’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
+>* n’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
 
 
 ## Ouverture du mode Développeur {#opening-developer-mode}
@@ -42,7 +42,7 @@ Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dan
 
 Le panneau est divisé en deux onglets :
 
-* **[Composants](#components)**  : affiche une arborescence de composants, similaire à l’arborescence de  [contenu ](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) pour les auteurs.
+* **[Composants](#components)** : il présente une arborescence de composants, similaire à l’[arborescence de contenu](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree) pour les auteurs.
 * **[Erreurs](#errors)** : lorsque des problèmes se produisent, les détails sont affichés pour chaque composant.
 
 ### Onglet Composants {#components}
@@ -51,12 +51,12 @@ Le panneau est divisé en deux onglets :
 
 Il présente une arborescence de composants qui :
 
-* Décrit la chaîne de composants et de modèles rendus sur la page. L’arborescence peut être développée pour afficher le contexte dans la hiérarchie.
+* décrit la chaîne de composants et de modèles rendus sur la page. L’arborescence peut être développée pour afficher le contexte dans la hiérarchie.
 * indique le temps de calcul côté serveur nécessaire pour effectuer le rendu du composant ;
 * permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, tels que :
    * Le chemin du référentiel
    * Les liens vers les scripts (accessibles dans CRXDE Lite)
-   * Détails du composant, comme indiqué dans la [console Composants](/help/sites-cloud/authoring/features/components-console.md)
+   * Les informations sur le composant, comme indiqué dans la section [Console des composants](/help/sites-cloud/authoring/features/components-console.md)
 * Les composants sélectionnés dans l’arborescence sont indiqués par une bordure bleue dans l’éditeur.
 
 Cet onglet de composants permet d’effectuer les opérations suivantes :
@@ -65,32 +65,32 @@ Cet onglet de composants permet d’effectuer les opérations suivantes :
 * visualiser et comprendre la hiérarchie ;
 * comprendre, puis améliorer, le temps de chargement de la page en recherchant les composants lents.
 
-Chaque entrée de composant peut comporter les options suivantes :
+Chaque entrée de composant peut comporter les options suivantes :
 
 ![Exemple de composant du mode Développeur](assets/developer-mode-component-example.png)
 
-* **Afficher les détails :**  lien vers une liste qui affiche :
-   * Tous les scripts de composant utilisés pour effectuer le rendu du composant.
-   * Chemin d’accès au contenu du référentiel pour ce composant spécifique.
+* **Afficher les détails** : lien vers une liste qui affiche :
+   * tous les scripts de composants utilisés pour le rendu du composant ;
+   * le chemin du contenu de référentiel pour cet élément spécifique.
 
       ![Afficher les détails](assets/developer-mode-view-details.png)
 
-* **Modifier le script :** lien qui ouvre le script du composant dans CRXDE Lite.
+* **Modifier le script :** lien qui ouvre le script du composant dans CRXDE Lite.
 
-* **Afficher les détails du composant :** ouvre les détails du composant dans la console  [Composants.](/help/sites-cloud/authoring/features/components-console.md)
+* **Afficher les détails du composant :** affiche les informations sur le composant dans la [Console des composants.](/help/sites-cloud/authoring/features/components-console.md)
 
-Le développement d’une entrée de composant en appuyant ou en cliquant sur le chevron peut également afficher :
+Le développement d’une entrée de composant en appuyant ou en cliquant sur le chevron peut également afficher :
 
-    * La hiérarchie au sein du composant sélectionné.
+    * la hiérarchie au sein du composant sélectionné ;
     * les temps de rendu pour le composant sélectionné de manière isolée, tous les composants individuels imbriqués qu’il contient, ainsi que le total combiné.
 
 ### Onglet Erreurs {#errors}
 
 ![Onglet Erreurs](assets/developer-mode-errors-tab.png)
 
-Espérons que l’onglet **Erreurs** sera toujours vide (comme ci-dessus), mais lorsque des problèmes se produisent, les détails suivants peuvent s’afficher pour chaque composant :
+L’onglet **Erreurs** devrait toujours rester vide (comme ci-dessus), mais lorsque des problèmes surviennent, les informations suivantes sont affichées pour chaque composant :
 
 * Un avertissement s’affiche si le composant écrit une entrée dans le journal d’erreurs, avec les détails de l’erreur et des liens directs vers le code correspondant dans CRXDE Lite.
 * Un avertissement s’affiche si le composant ouvre une session d’administrateur.
 
-Par exemple, si une méthode non définie est appelée, l’erreur résultante s’affichera dans l’onglet **Erreurs** et l’entrée du composant dans l’arborescence de l’onglet **Composants** sera également marquée avec un indicateur lorsqu’une erreur se produit.
+Par exemple, si une méthode non définie est appelée, l’erreur résultante s’affiche dans l’onglet **Erreurs** et l’entrée du composant dans l’arborescence de l’onglet **Composants** est également marqué d’un indicateur lorsqu’une erreur se produit.
