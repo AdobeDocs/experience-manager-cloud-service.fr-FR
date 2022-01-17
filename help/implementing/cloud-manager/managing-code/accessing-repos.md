@@ -5,9 +5,9 @@ description: Cette page vous explique comment accéder au référentiel Git et l
 seo-description: Follow this page to learn how to access and manage your Git repository.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '206'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 97%
 
 Vous pouvez accéder à votre référentiel Git et le gérer à l’aide de la gestion de compte Git en libre-service à partir de l’interface utilisateur de Cloud Manager.
 
-## Utilisation de la gestion de compte de référentiels en libre-service {#self-service-repos}
+## Utilisation de la gestion de compte des référentiels en libre-service {#self-service-repos}
 
 Utilisez le bouton **Accéder aux informations sur le référentiel** disponible dans l’interface utilisateur de Cloud Manager, bien en vue sur la carte du pipeline.
 
