@@ -9,9 +9,9 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: 64221be65eb54e1edba7e0353bc290a5340063e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '998'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ Le module complémentaire est fourni sous la forme d’une archive de fonctionna
 
 Les logiciels suivants doivent être installés localement :
 
-- [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html#download-the-aem-as-a-cloud-service-sdk)
+- [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/aem-runtime.html?lang=fr#download-the-aem-as-a-cloud-service-sdk)
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 ou version ultérieure)
 - [Node.js v10+](https://nodejs.org/en/)
@@ -94,7 +94,7 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
    Authorization: Bearer <Access Token>
    ```
 
-   Pour plus d’informations sur les secrets, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   Pour plus d’informations sur les secrets, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#local-development).
 
 1. Démarrez le SDK AEM as a Cloud Service.
 
