@@ -3,9 +3,9 @@ title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
 source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Dans certaines mosaïques, vous pouvez ajouter plusieurs éléments. Par exemple
 
 Pour ajouter des éléments à une mosaïque :
 
-1. Dans **Projets**, accédez au projet et appuyez ou cliquez sur le chevron inférieur de la mosaïque à laquelle vous souhaitez ajouter un élément.
+1. Dans la console **Projets**, accédez au projet, puis appuyez ou cliquez sur le chevron de la mosaïque à laquelle vous souhaitez ajouter un élément.
 
    ![Ajout d’un élément à une mosaïque](/help/sites-cloud/authoring/assets/project-workflows.png)
 
@@ -107,7 +107,7 @@ Pour ouvrir une mosaïque afin d’afficher ou de modifier des éléments :
 
 ## Affichage des statistiques d’un projet {#viewing-project-statistics}
 
-Vous pouvez afficher les statistiques d’un projet dans le **Projets** console.
+Vous pouvez afficher les statistiques d’un projet dans la console des **Projets**.
 
 ### Affichage d’une chronologie de projet {#viewing-a-project-timeline}
 
