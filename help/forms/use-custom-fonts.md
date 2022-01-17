@@ -1,9 +1,9 @@
 ---
 title: 'Utilisation de polices personnalisées '
 description: 'Utilisation de polices personnalisées '
-source-git-commit: 7dd3785206b6d79caa500a155d3a6f3597303e65
+source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,11 @@ ht-degree: 0%
 
 **La documentation sur les communications des Cloud Service est en version bêta.**
 
-Vous pouvez utiliser Forms as a Cloud Service Communications pour combiner des modèles XDP, des documents PDF basés sur XDP ou Acrobat Forms (AcroForm) avec des données XML afin de générer des documents PDF. Vous pouvez utiliser des polices système (polices incluses dans Cloud Service) ou des polices personnalisées (polices approuvées par l’organisation) pour générer les documents du PDF.
-
-Les polices système sont déjà disponibles dans le Cloud Service. Vous pouvez utiliser le projet de développement Cloud Service pour ajouter des polices personnalisées à votre environnement de Cloud Service.
+Vous pouvez utiliser Forms as a Cloud Service Communications pour combiner un modèle XDP, un document de PDF basé sur XDP ou un formulaire Acrobat (AcroForm) avec des données XML afin de générer des documents de PDF. Vous pouvez utiliser des polices incluses dans les polices Cloud Service ou personnalisées (polices approuvées par l’organisation) pour effectuer le rendu des documents de PDF générés. Vous pouvez utiliser le projet de développement Cloud Service pour ajouter des polices personnalisées à votre environnement de Cloud Service.
 
 ## Comportement des documents PDF
 
-Vous pouvez [incorporer une police](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) dans un document PDF ou indiquez simplement le nom d’une police. Lorsqu’une police est incorporée, le document du PDF apparaît (Looks) identique sur toutes les plateformes. Il utilisait la police incorporée pour garantir une apparence cohérente. Lorsqu’une police n’est pas incorporée, le client de rendu du PDF recherche la police sur l’ordinateur client. Si la police est disponible sur l’ordinateur client, le PDF utilise la police spécifiée, sinon le PDF est rendu avec une police de secours.
+Vous pouvez [incorporer une police](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) à un document de PDF. Lorsqu’une police est incorporée, le document du PDF apparaît (Looks) identique sur toutes les plateformes. Il utilisait la police incorporée pour garantir une apparence cohérente. Lorsqu’une police n’est pas incorporée, son rendu dépend des paramètres de rendu du client de visionneuse de PDF. Si la police est disponible sur l’ordinateur client, le PDF utilise la police spécifiée, sinon le PDF est rendu avec une police de secours.
 
 ## Ajout de polices personnalisées à votre environnement Forms as a Cloud Service
 
