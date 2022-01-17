@@ -3,7 +3,7 @@ title: Configuration d’Enterprise Team Development – Cloud Services
 description: Consultez cette page pour en savoir plus sur la configuration d’Enterprise Team Development
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: 3cdee254eebcf45762feff8fe081b006a803ef1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1525'
 ht-degree: 100%
 
