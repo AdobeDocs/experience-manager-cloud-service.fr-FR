@@ -1,13 +1,13 @@
 ---
 title: Utilisation du fournisseur de contenu Screens
 description: Cette page décrit comment utiliser le fournisseur de contenu Screens pour créer du contenu.
-source-git-commit: e7f8e7daa88c5bf8bb13c2a635fb84724f8bd7bb
+exl-id: ed7de2c0-13cf-4ce0-8794-aef918cf8e71
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '354'
 ht-degree: 100%
 
 ---
-
 
 # Utilisation du fournisseur de contenu Screens {#using-screens-content-provider}
 
@@ -58,5 +58,3 @@ Pour vous connecter au fournisseur de contenu Screens, procédez comme suit :
 ## Et après ? {#whats-next}
 
 Maintenant que vous avez appris à accéder au fournisseur de contenu Screens, vous devez continuer votre parcours Screens as a Cloud Service en consultant le document [Création et gestion d’un projet dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/creating-projects-screens-cloud.html?lang=fr).
-
-
