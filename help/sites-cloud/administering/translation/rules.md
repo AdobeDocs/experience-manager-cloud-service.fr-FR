@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1164'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Les règles de traduction identifient le contenu à traduire pour les pages, les
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, veuillez vous référer à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous êtes un débutant dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 Les pages et les ressources sont représentées sous forme de nœuds dans le référentiel JCR. Le contenu qui est extrait est constitué d’une ou plusieurs valeurs de propriété des nœuds. Les règles de traduction identifient les propriétés qui contiennent le contenu à extraire.
 
