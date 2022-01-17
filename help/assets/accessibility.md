@@ -6,9 +6,9 @@ feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
 source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1911'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Possible topics to cover in this article are below.
 
 # Fonctionnalités d’accessibilité d’[!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager] permet aux créateurs et aux éditeurs de contenu d’offrir des expériences étonnantes sur le web. Adobe s’efforce d’inclure les créateurs en situation de handicap en améliorant l’accessibilité d’[!DNL Experience Manager]. Le logiciel est continuellement amélioré pour répondre aux besoins de tous les types d’utilisateurs et appliquer les normes internationales afin d’inclure les personnes atteintes d’une déficience visuelle, auditive, de mobilité ou autre.
+[!DNL Adobe Experience Manager] permet aux créateurs et aux éditeurs de contenu de proposer des expériences étonnantes sur le web. Adobe s’efforce d’inclure les créateurs en situation de handicap en améliorant l’accessibilité d’[!DNL Experience Manager]. Le logiciel est continuellement amélioré pour répondre aux besoins de tous les types d’utilisateurs et appliquer les normes internationales afin d’inclure les personnes atteintes d’une déficience visuelle, auditive, de mobilité ou autre.
 
 [!DNL Experience Manager] publie des informations sur la conformité qui décrivent les normes auxquelles il adhère, mettent en avant les fonctionnalités d’accessibilité du produit et définissent le niveau de conformité. Les rapports de conformité pour l’accessibilité aident les utilisateurs d’[!DNL Experience Manager] à comprendre le niveau d’adhésion à diverses normes. Les améliorations apportées à [!DNL Assets] permettent à tous les utilisateurs d’accéder facilement aux interfaces à l’aide d’un clavier, d’un lecteur d’écran, de loupes et d’autres technologies d’assistance.
 
