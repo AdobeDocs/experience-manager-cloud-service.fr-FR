@@ -3,9 +3,9 @@ title: Publication de pages
 description: Publication et annulation de la publication de pages à l’aide d’AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1769'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 >[!NOTE]
 >
->Pages accessed by [aliases](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) in the editor can not be published. Publish options in the editor are only available for pages accessed via their actual paths.
+>Les pages accessibles par [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
 ### Publication à partir de la console {#publishing-from-the-console}
 
@@ -224,7 +224,7 @@ Lors de la modification d’une page, si vous souhaitez annuler sa publication, 
 
 >[!NOTE]
 >
->Pages accessibles par [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) dans l’éditeur ne peut pas être dépublié. Les options de publication de l’éditeur ne sont disponibles que pour les pages accessibles à partir de leur chemin d’accès réel.
+>Les pages accessibles par [alias](/help/sites-cloud/authoring/fundamentals/page-properties.md#advanced) dans l’éditeur ne peuvent pas être publiées. Les options de publication dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
 ### Annulation de la publication à partir de la console {#unpublishing-from-the-console}
 
