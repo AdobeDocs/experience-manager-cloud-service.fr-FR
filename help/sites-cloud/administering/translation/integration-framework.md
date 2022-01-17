@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 source-git-commit: 917f5790fb36fd1560ba43c67f8072616b605894
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1419'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Tra
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, veuillez vous référer à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous êtes un débutant dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 ## Connexion à un fournisseur de services de traduction {#connecting-to-a-translation-service-provider}
 
