@@ -4,9 +4,9 @@ description: Découvrez la prise en charge des fragments de contenu dans l’API
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
 source-git-commit: 88f43d2f1acaa4e00bc9ce06d188e4b9312a1c08
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1951'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ L’[API REST Assets](/help/assets/mac-api-assets.md) permet aux développeurs 
 
 L’API permet d’utiliser Adobe Experience Manager as a Cloud Service en tant que système de gestion de contenu (CMS) sans interface utilisateur en fournissant des services de contenu à une application frontale JavaScript. Ou toute autre application pouvant exécuter des requêtes HTTP et gérer les réponses JSON.
 
-Par exemple : [Applications d’une seule page (SPA)](/help/implementing/developing/hybrid/introduction.md), basés sur une structure ou personnalisés, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
+Par exemple, les [applications sur une seule page](/help/implementing/developing/hybrid/introduction.md), basées sur la structure ou personnalisées, nécessitent du contenu fourni via l’API HTTP, souvent au format JSON.
 
 Bien que les [composants de base AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) fournissent une API très complète, flexible et personnalisable pouvant traiter les opérations de lecture requises à cette fin, et dont la sortie JSON peut être personnalisée, ils ne nécessitent pas de connaissances sur AEM WCM (Web Content Management) pour la mise en œuvre, car ils doivent être hébergés sur des pages reposant sur des modèles AEM dédiés. Les entreprises de développement d’applications sur une seule page n’ont pas toutes accès à ces connaissances.
 
@@ -54,7 +54,7 @@ L’API REST Assets est disponible pour chaque installation prête à l’emplo
 
 ## Concepts clés {#key-concepts}
 
-L’API REST Assets offre un accès de type [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) aux ressources stockées dans une instance AEM.
+L’API REST Assets offre un accès de type [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer) aux ressources stockées dans une instance AEM.
 
 Elle utilise le point d’entrée `/api/assets` et requiert le chemin d’accès de la ressource pour y accéder (sans `/content/dam` qui précède).
 
@@ -323,7 +323,6 @@ Retourné lorsque :
    * création réussie d’un fragment de contenu via `POST`
 
 * **404** (Introuvable)
-
 Affiché dans le scénario suivant :
 
    * le fragment de contenu demandé n’existe pas
