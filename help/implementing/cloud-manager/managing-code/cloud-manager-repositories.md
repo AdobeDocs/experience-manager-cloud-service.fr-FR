@@ -2,9 +2,9 @@
 title: Référentiels Cloud Manager
 description: Référentiels Cloud Manager
 source-git-commit: e5d52c92c9162a58cc1a8e4f5d1169d59ee13119
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '613'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 66%
 Les référentiels créés et disponibles dans Cloud Manager peuvent être affichés et gérés à partir de la page Référentiels.
 
 >[!NOTE]
->Il existe une limite de 300 référentiels pour tous les programmes d’une société donnée (ou organisation IMS).
+>Les référentiels sont limités à 300 pour tous les programmes d’une société ou d’une organisation IMS donnée.
 
 ## Ajout et gestion de référentiels {#add-manage-repos}
 
@@ -35,22 +35,22 @@ Suivez les étapes ci-dessous pour afficher et gérer les référentiels dans Cl
 1. Sélectionnez **Enregistrer**. Le référentiel que vous venez de créer s’affiche dans le tableau, comme illustré ci-dessous.
 
    >[!NOTE]
-   >Les référentiels créés dans Cloud Manager peuvent également être sélectionnés au cours des étapes d’ajout ou de modification du pipeline. Pour en savoir plus, consultez la section [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en). Il existe un référentiel *Principal* unique ou une branche pour un pipeline donné. Avec la [prise en charge du sous-module Git](#git-submodule-support), de nombreuses branches secondaires peuvent être incluses au moment de la création.
+   >Les référentiels créés dans Cloud Manager peuvent également être sélectionnés au cours des étapes d’ajout ou de modification du pipeline. Consultez [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr) pour en savoir plus. Il existe un référentiel *Principal* ou une branche pour un pipeline donné. Toutefois, grâce à la [prise en charge des sous-modules Git](#git-submodule-support), de nombreuses branches secondaires peuvent être incluses au moment de la création.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-1. Vous pouvez sélectionner le référentiel et cliquer sur les options de menu à l’extrémité droite de la table dans **Copier l’URL du référentiel** ou **Afficher et mettre à jour** ou **Supprimer** votre référentiel, comme illustré dans la figure ci-dessous.
+1. Vous pouvez sélectionner le référentiel et cliquer sur les options de menu à l’extrémité droite de la table pour **Copier l’URL du référentiel**, **Afficher et mettre à jour** ou **Supprimer** votre référentiel, comme illustré dans la figure ci-dessous.
 
    ![](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
 ## Suppression d’un référentiel {#delete-repo}
 
-Pour supprimer un référentiel dans Cloud Manager, procédez comme suit :
+Pour supprimer un référentiel dans Cloud Manager, procédez comme suit :
 >[!NOTE]
->La suppression d’un référentiel entraînera :
->1. Rendre le nom du référentiel supprimé inutilisable pour de nouveaux référentiels qui pourront être créés ultérieurement. Un message d’erreur, comme illustré ci-dessous, s’affiche dans ce cas :
+>La suppression d’un référentiel entraînera les éléments suivants :
+>1. Le nom du référentiel supprimé sera inutilisable pour de nouveaux référentiels qui pourraient être créés ultérieurement. Un message d’erreur, comme illustré ci-dessous, s’affiche dans ce cas :
    >*Le nom du référentiel doit être unique au sein de l’organisation.*
->1. Rendre le référentiel supprimé indisponible dans Cloud Manager et ne peut donc pas être lié à un pipeline.
+>1. Le référentiel supprimé sera indisponible dans Cloud Manager et ne peut donc pas être lié à un pipeline.
 
 
 1. Sur la page **Aperçu du programme**, cliquez sur l’onglet **Référentiels** et accédez à la page **Référentiels**.
@@ -118,5 +118,5 @@ Lors de l’utilisation de sous-modules Git, prenez en compte les points suivant
 * L’URL Git doit se trouver exactement dans la syntaxe décrite ci-dessus. Pour des raisons de sécurité, n’incorporez pas les informations d’identification dans ces URL.
 * Seuls les sous-modules situés à la racine de la branche sont pris en charge.
 * Les références des sous-modules Git sont stockées vers des validations git spécifiques. Par conséquent, lorsque des modifications sont apportées au référentiel de sous-module, la validation référencée doit être mise à jour, par exemple à l’aide de `git submodule update --remote`.
-* Sauf si nécessaire, il est vivement recommandé d’utiliser des sous-modules &quot;superficiels&quot;. Pour ce faire, exécutez `git config -f .gitmodules submodule.<submodule path>.shallow true` pour chaque sous-module.
+* Sauf si nécessaire, il est vivement recommandé d’utiliser des sous-modules « superficiels ». Pour ce faire, exécutez `git config -f .gitmodules submodule.<submodule path>.shallow true` pour chaque sous-module.
 
