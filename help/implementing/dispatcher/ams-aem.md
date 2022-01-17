@@ -1,10 +1,11 @@
 ---
 title: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
-description: 'Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service '
+description: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
 feature: Dispatcher
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
-source-wordcount: '1447'
+source-wordcount: '1446'
 ht-degree: 100%
 
 ---
