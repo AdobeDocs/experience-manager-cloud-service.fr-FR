@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Les sites web multilingues fournissent généralement une certaine quantité de 
 
 >[!TIP]
 >
->Si vous commencez à traduire du contenu, reportez-vous à notre [Parcours de traduction Sites,](/help/journey-sites/translation/overview.md) , qui est un chemin guidé vers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous êtes un débutant dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 Le [site de démonstration WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comprend plusieurs branches de langue et utilise la structure suivante :
 
@@ -71,7 +71,7 @@ Pour créer la racine de langue, créez une page, puis utilisez le code de langu
 * `<language-code>` – Le code de langue pris en charge est un code à deux lettres défini par la norme ISO-639-1, par exemple `en`.
 * `<language-code>_<country-code>` ou `<language-code>-<country-code>` – Le code pays pris en charge est un code à deux lettres, en minuscules ou en majuscules, défini par la norme ISO-3166, par exemple `en_US`, `en_us`, `en-gb`, `en_GB`.
 
-Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international.  Par exemple, la racine de la copie de langue française du site WKND est définie sur `fr` en tant que propriété de **Nom**. Notez que la propriété **Nom** est utilisée comme nom du nœud de page dans le référentiel et détermine donc le chemin d’accès à la page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
+Vous pouvez utiliser l’un de ces formats en fonction de la structure choisie pour votre site international. Par exemple, la racine de la copie de langue française du site WKND est définie sur `fr` en tant que propriété de **Nom**. Notez que la propriété **Nom** est utilisée comme nom du nœud de page dans le référentiel et détermine donc le chemin d’accès à la page (`http://<host>:<4502>/content/wknd/language-masters/fr.html`).
 
 1. Accédez aux sites.
 1. Cliquez ou appuyez sur le site pour lequel vous souhaitez créer une copie de langue.
