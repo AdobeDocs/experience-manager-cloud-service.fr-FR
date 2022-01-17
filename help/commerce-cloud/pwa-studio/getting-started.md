@@ -4,13 +4,13 @@ description: Découvrez comment déployer un projet Content and Commerce découp
 topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
-source-git-commit: 2d5207733a0ad5d88a321826727eb02440765faf
+exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
-source-wordcount: '769'
+source-wordcount: '766'
 ht-degree: 100%
 
 ---
-
 
 # Prise en main de l’extension AEM pour PWA Studio {#getting-started-pwa}
 
@@ -128,4 +128,4 @@ Affichez les publications de blog en fonction de certains modèles de fragments 
 
 ### Enrichissement PDP {#pdp-enrichment}
 
-Permet aux professionnels du marketing d’enrichir facilement les PDP avec du contenu supplémentaire qui est géré en tant que fragments de contenu.  Pour plus d’informations, voir [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension).
+Permet aux professionnels du marketing d’enrichir facilement les PDP avec du contenu supplémentaire qui est géré en tant que fragments de contenu. Pour plus d’informations, voir [GitHub](https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cif-product-page-extension).
