@@ -1,13 +1,13 @@
 ---
 title: Première connexion à Screens as a Cloud Service
 description: Cette page décrit les premières étapes de la prise en main de Screens as a Cloud Service.
-source-git-commit: 70730784bf58c57f51d7e9a6e17788861a95d726
+exl-id: d3a6aa5d-226b-484d-97ea-0b8312c7a0fd
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '204'
 ht-degree: 100%
 
 ---
-
 
 # Première connexion à Screens as a Cloud Service {#first-time-login-screens-cloud}
 
