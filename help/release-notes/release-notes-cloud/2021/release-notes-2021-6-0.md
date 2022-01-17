@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: d7d138c7442ee8bee7a1ad69144b26d74d364eee
+exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '1440'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -48,7 +48,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Nouveautés {#what-is-new-junecm}
 
-* Le service Aperçu sera déployé de manière progressive dans tous les programmes. Les clients seront avertis dans le produit lorsque leur programme sera activé pour le service d‘aperçu. Pour plus d’informations, voir [Accès au service Aperçu](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+* Le service de prévisualisation sera déployé de manière progressive dans tous les programmes. Les clients seront avertis dans le produit lorsque leur programme sera activé pour le service de prévisualisation. Pour plus d’informations, voir [Accès au service de prévisualisation](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 * Les dépendances Maven téléchargées lors de l’étape de création seront désormais mises en cache entre les exécutions de pipeline. Cette fonctionnalité sera activée pour les clients au cours des prochaines semaines.
 
@@ -62,7 +62,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 * Les règles de qualité `CQBP-84` et `CQBP-84--dependencies` ont été consolidées dans une seule règle. Dans le cadre de cette consolidation, l’analyse des dépendances identifie plus précisément les problèmes des dépendances tierces qui sont déployées sur l’environnement d’exécution AEM.
 
-* Pour éviter toute confusion, les lignes de segment de publication AEM et Dispatcher sur la page Détails de l’environnement ont été consolidées.
+* Pour éviter toute confusion, les lignes de segment de l’instance de publication AEM et de l’instance de publication de Dispatcher sur la page Détails de l’environnement ont été consolidées.
 
    ![](/help/implementing/cloud-manager/release-notes-cloud-manager/assets/aem-dispatcher.png)
 
@@ -128,7 +128,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 ### Fonction bêta de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les API de communication vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les API de communication vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
    * Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
    * Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs.
    * Générer des fichiers PDF d’impression à partir d’un formulaire XFA au format PDF et d’un formulaire Adobe Acrobat (AcroForm).
@@ -209,4 +209,3 @@ La date de publication de l’analyseur des bonnes pratiques v2.1.16 est le 30 
 ### Correctifs {#bug-fixes-bpa-latest}
 
 * Correction d’une erreur de journalisation liée à la structure de référentiel non prise en charge (URS).
-
