@@ -1,12 +1,12 @@
 ---
 title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
 description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
-feature: Fragments de contenu,API GraphQL
+feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '1422'
-ht-degree: 100%
+source-git-commit: 9d2b97d330d101743322c1bd758758048ddad639
+workflow-type: tm+mt
+source-wordcount: '1416'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode d�
 >
 >* [Fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 >* [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
->* [API AEM GraphQL à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [API GraphQL d’AEM à utiliser avec des fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
 
 
 Pour prendre en main les requêtes GraphQL et leur fonctionnement avec les fragments de contenu AEM, il peut être utile de consulter quelques exemples pratiques.
@@ -38,7 +38,8 @@ Consultez ces exemples de requêtes pour accéder à des illustrations de créat
 
 >[!NOTE]
 >
->Selon votre instance, vous pouvez accéder directement à l’interface [Graph *i* QL incluse avec l’API AEM GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
+>Selon votre instance, vous pouvez accéder directement à la variable [Interface GraphiQL incluse avec AEM API GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface) pour envoyer et tester des requêtes.
+>
 >Par exemple : `http://localhost:4502/content/graphiql.html`
 
 >[!NOTE]
@@ -483,7 +484,7 @@ query {
 }
 ```
 
-### Exemple de Requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith » {#sample-all-persons-jobs-smith}
+### Exemple de Requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith »  {#sample-all-persons-jobs-smith}
 
 Elle filtre toutes les `persons` qui portent le nom `Jobs` ou `Smith`.
 
@@ -537,7 +538,7 @@ query {
 }
 ```
 
-### Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs » {#sample-all-persons-not-jobs}
+### Exemple de requête – Toutes les personnes qui ne portent pas le nom « Jobs »  {#sample-all-persons-not-jobs}
 
 Elle filtre toutes les `persons` qui portent le nom `Jobs` ou `Smith`.
 
@@ -873,7 +874,7 @@ query {
 }
 ```
 
-### Exemple de requête pour les fragments de contenu imbriqués – Toutes les entreprises dont au moins un employé porte le nom « Smith » {#sample-companies-employee-smith}
+### Exemple de requête pour les fragments de contenu imbriqués – Toutes les entreprises dont au moins un employé porte le nom « Smith »  {#sample-companies-employee-smith}
 
 Cette requête illustre le filtrage pour toute `person` portant le `name` « Smith », qui renvoie des informations provenant de deux fragments imbriqués – `company` et `employee`.
 
@@ -939,7 +940,7 @@ query {
 }
 ```
 
-### Exemple de requête pour les fragments de contenu imbriqués – Toutes les entreprises dont tous les employés ont reçu la distinction « Gamestar » {#sample-all-companies-employee-gamestar-award}
+### Exemple de requête pour les fragments de contenu imbriqués – Toutes les entreprises dont tous les employés ont reçu la distinction « Gamestar »  {#sample-all-companies-employee-gamestar-award}
 
 Cette requête illustre le filtrage de trois fragments imbriqués : `company`, `employee` et `award`.
 
@@ -1525,7 +1526,7 @@ Pour les exemples de requêtes, nous utiliserons les modèles de contenu suivant
 
 * [Ville](#model-city)
 
-#### Entreprise {#model-company}
+#### Société {#model-company}
 
 Les champs de base définissant l’entreprise sont les suivants :
 
@@ -1569,7 +1570,7 @@ Les champs permettant de définir une ville sont les suivants :
 
 Les fragments suivants sont utilisés pour le modèle approprié.
 
-#### Entreprise {#fragment-company}
+#### Société {#fragment-company}
 
 | Nom de l’entreprise | PDG | Employés |
 |--- |--- |--- |
@@ -1608,4 +1609,4 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 | San Francisco |  États-Unis |  883306 |  city:beach<br>city:na |
 | San Jose |  États-Unis |  102635 |  city:na |
 | Stuttgart |  Allemagne |  634830 |  city:emea |
-|  Zurich |  Suisse |  415367 |  city:capital<br>city:emea |
+|  Zurich |  Suisse |  415367 |  ville:capital<br>city:emea |
