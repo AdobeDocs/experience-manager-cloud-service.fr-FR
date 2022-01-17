@@ -3,9 +3,9 @@ title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
 source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2022'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->AEM ne prend actuellement pas en charge l’affectation de groupes à des profils. Les utilisateurs doivent être ajoutés individuellement à la place.
+>AEM ne prend actuellement pas en charge l’affectation de groupes à des profils. Les utilisateurs doivent être ajoutés individuellement.
 
 ## Principales caractéristiques {#key-highlights}
 
@@ -86,7 +86,7 @@ Pour gérer facilement la création d’utilisateurs, un fichier `.csv` peut êt
 
 L’outil de synchronisation des utilisateurs (ou UST, User Sync Tool) permet aux clients d’entreprise de créer ou de gérer des utilisateurs Adobe utilisant Active Directory. Cela fonctionne également pour d’autres services d’annuaire OpenLDAP testés. Les utilisateurs cibles sont les administrateurs d’identité informatique (administrateurs d’annuaire d’entreprise ou système) qui pourront installer et configurer l’outil. Cet outil Open Source est personnalisable, de telle sorte que les clients puissent le modifier en fonction de vos exigences spécifiques.
 
-Lorsque la synchronisation des utilisateurs s’exécute, elle récupère une liste d’utilisateurs à partir de l’annuaire Active Directory de l’organisation et la compare à la liste des utilisateurs dans Admin Console.  Elle appelle ensuite l’API de gestion des utilisateurs Adobe pour synchroniser Admin Console avec le répertoire de l’organisation. Le flux des modifications est entièrement unidirectionnel. Les modifications effectuées dans Admin Console ne sont pas transférées vers l’annuaire.
+Lorsque la synchronisation des utilisateurs s’exécute, elle récupère une liste d’utilisateurs à partir de l’annuaire Active Directory de l’organisation et la compare à la liste des utilisateurs dans Admin Console. Elle appelle ensuite l’API de gestion des utilisateurs Adobe pour synchroniser Admin Console avec le répertoire de l’organisation. Le flux des modifications est entièrement unidirectionnel. Les modifications effectuées dans Admin Console ne sont pas transférées vers l’annuaire.
 
 Cet outil permet à l’administrateur système de mapper les groupes d’utilisateurs dans l’annuaire du client avec la configuration de produits et les groupes d’utilisateurs dans Admin Console.
 
@@ -120,7 +120,7 @@ Le fonctionnement de l’API User Management utilisée par l’outil de synchron
 >
 >La configuration IMS requise pour AEM sera automatiquement définie lorsque les environnements et instances AEM seront fournis. Cependant, l’administrateur peut la modifier en fonction de ses besoins à l’aide de la méthode décrite [ici](/help/implementing/deploying/overview.md).
 
-La configuration IMS requise pour AEM sera automatiquement définie lorsque les environnements et instances AEM seront fournis.  Les administrateurs du client peuvent modifier une partie de la configuration en fonction de leurs besoins.
+La configuration IMS requise pour AEM sera automatiquement définie lorsque les environnements et instances AEM seront fournis. Les administrateurs du client peuvent modifier une partie de la configuration en fonction de leurs besoins.
 
 L’approche globale consiste à configurer Adobe IMS en tant que fournisseur OAuth. Le **gestionnaire de synchronisation par défaut Apache Jackrabbit Oak** peut être modifié comme pour la synchronisation LDAP.
 
