@@ -1,21 +1,21 @@
 ---
-title: Configurations de Dispatcher dans Screens en tant que Cloud Service
-description: Cette page décrit les configurations du Dispatcher dans Screens en tant que Cloud Service.
+title: Configurations du Dispatcher dans Screens as a Cloud Service
+description: Cette page décrit les configurations du Dispatcher dans Screens as a Cloud Service.
 source-git-commit: b00fd1e3826a7d0b0a4bf80b002fffda8f3983d0
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '140'
+ht-degree: 100%
 
 ---
 
 
-# Configurations de Dispatcher dans Screens en tant que Cloud Service {#dispatcher-configurations-screens-cloud}
+# Configurations du Dispatcher dans Screens as a Cloud Service {#dispatcher-configurations-screens-cloud}
 
-Cette section décrit les configurations du Dispatcher pour Screens en tant que Cloud Service.
+Cette section décrit les configurations du Dispatcher pour Screens as a Cloud Service.
 
-## Ajout de filtres et de règles de cache dans Dispatcher pour Screens en tant que déploiement Cloud Service {#deployment}
+## Ajout de filtres et de règles de cache dans Dispatcher pour le déploiement de Screens as a Cloud Service {#deployment}
 
-Autorisez les filtres et règles de mise en cache suivants dans les Dispatchers pour les instances de publication dans Screens en tant que Cloud Service.
+Autorisez les filtres et les règles de mise en cache suivants dans les Dispatchers pour les instances de publication dans Screens as a Cloud Service.
 
 ### Filtres AEM Screens {#filters}
 
@@ -35,7 +35,7 @@ Autorisez les filtres et règles de mise en cache suivants dans les Dispatchers 
 * Ajoutez `/statfileslevel "10"` à la section `/cache` dans `publish_farm.any`/.
 
    >[!NOTE]
-   >Cette règle de cache prend en charge la mise en cache jusqu’à 10 niveaux à partir de la docroot du cache et invalide lorsque le contenu est publié plutôt que d’invalider tout. Vous pouvez modifier ce niveau en fonction de la profondeur de configuration de votre structure de contenu.
+   >Cette règle de cache prend en charge la mise en cache jusqu’à 10 niveaux à partir du docroot du cache et s’invalide lorsque le contenu est publié plutôt que d’invalider l’ensemble. Vous pouvez modifier ce niveau en fonction de la profondeur de configuration de votre structure de contenu.
 
 * Ajoutez ce qui suit à la section `/invalidate` dans `publish_farm.any`.
 
