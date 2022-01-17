@@ -1,13 +1,13 @@
 ---
 title: Création d’une branche
 description: Cette page décrit la création d’une branche dans Cloud Manager pour Screens as a Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '226'
 ht-degree: 100%
 
 ---
-
 
 # Création d’une branche dans Cloud Manager {#create-branch-screens-cloud}
 
