@@ -3,9 +3,9 @@ title: Ajout d’un nom de domaine personnalisé
 description: Ajout d’un nom de domaine personnalisé
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
 source-git-commit: 98c137645351c86da8680a31b4929c588863a981
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '785'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -13,19 +13,19 @@ ht-degree: 81%
 
 Un utilisateur doit être un propriétaire d’entreprise ou un responsable du déploiement pour pouvoir ajouter un nom de domaine personnalisé dans Cloud Manager.
 
-Les étapes suivantes doivent être effectuées comme indiqué dans le tableau ci-dessous :
+Les étapes suivantes doivent être effectuées comme indiqué dans le tableau ci-dessous :
 
 | Étape |  | Responsabilité | En savoir plus |
 |--- |--- |--- |---|
-| Ajout d’un certificat SLL | Ajout d’un certificat SLL | Client | [Ajout d’un certificat SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=en) |
-| Vérification de domaine | Ajout d’un enregistrement TXT | Client | [Ajout d’un enregistrement TXT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=en) |
-| Vérification du domaine |  | Client |  |
-|  | État : Échec de vérification du domaine | Client | [Vérification de l’état du nom de domaine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
-|  | État : Vérifié, Échec du déploiement | Contact représentant Adobe | [Vérification de l’état du nom de domaine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=en) |
-| Ajout d’enregistrements DNS pointant vers AEM as a Cloud Service en ajoutant des enregistrements CNAME ou APEX | Configuration des paramètres DNS | Client | [Configuration des paramètres DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=en) |
-| Vérification du statut des enregistrements DNS |  | Client | [Vérification du statut de l’enregistrement DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
-|  | État : Statut DNS non détecté | Client | [Vérification du statut de l’enregistrement DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=en) |
-|  | État : Le DNS ne se résout pas correctement | Client |  |
+| Ajout d’un certificat SLL | Ajout d’un certificat SLL | Client | [Ajout d’un certificat SSL](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-ssl-certificates/add-ssl-certificate.html?lang=fr) |
+| Vérification de domaine | Ajoutez un enregistrement TXT | Client | [Ajout d’un enregistrement TXT](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/add-text-record.html?lang=fr) |
+| Examinez le statut de vérification du domaine |  | Client |  |
+|  | Statut : échec de vérification du domaine | Client | [Vérification de l’état du nom de domaine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=fr) |
+|  | Statut : Vérifié, Échec du déploiement | Contactez un représentant Adobe | [Vérification de l’état du nom de domaine](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-domain-name-status.html?lang=fr) |
+| Ajout d’enregistrements DNS pointant vers AEM as a Cloud Service en ajoutant des enregistrements CNAME ou APEX | Configurez les paramètres DNS | Client | [Configuration des paramètres DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/configure-dns-settings.html?lang=fr) |
+| Vérification du statut de l’enregistrement DNS |  | Client | [Vérification du statut de l’enregistrement DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=fr) |
+|  | Statut : statut DNS non détecté | Client | [Vérification du statut de l’enregistrement DNS](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/custom-domain-names/check-dns-record-status.html?lang=fr) |
+|  | Statut : le DNS ne se résout pas correctement | Client |  |
 
 
 ## Points importants {#important-considerations}
