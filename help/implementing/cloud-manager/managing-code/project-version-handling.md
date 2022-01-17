@@ -3,7 +3,7 @@ title: Gestion des versions du projet Maven
 description: Gestion des versions du projet Maven – Cloud Services
 exl-id: 658bcbed-0733-45da-a3e3-9a5f817099c5
 source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '258'
 ht-degree: 100%
 
