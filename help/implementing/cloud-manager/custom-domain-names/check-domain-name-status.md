@@ -3,9 +3,9 @@ title: Vérification de l’état du nom de domaine
 description: Vérification de l’état du nom de domaine
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Vérification en cours. Ce statut s’affiche généralement une fois que vous a
 l’icône *Vérifier à nouveau* en face du statut.
 
 * **Vérifié, échec du déploiement**
-La vérification TXT a réussi. Cependant, le déploiement du CDN a échoué. Veuillez contacter votre représentant Adobe.
+La vérification TXT a réussi. Cependant, le déploiement du CDN a échoué. Contactez votre représentant Adobe.
 
 * **Domaine vérifié et déployé**
 Ce statut indique que votre nom de domaine personnalisé est prêt à être utilisé.
