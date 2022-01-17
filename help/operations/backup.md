@@ -2,10 +2,10 @@
 title: Sauvegarde et restauration dans AEM as a Cloud Service
 description: Sauvegarde et restauration dans AEM as a Cloud Service
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: 7b4eaa18b57ea6d18f517ffd0e1934d6c5e8b2f8
+source-git-commit: 7778430b409bdd6f30530d34f2e8cd10d63df153
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 64%
+source-wordcount: '505'
+ht-degree: 63%
 
 ---
 
@@ -29,6 +29,7 @@ Les clients doivent déposer un ticket d’assistance, décrivant le problème r
 
 AEM as a Cloud Service prend en charge :
 
+* Sauvegarde et restauration pour les environnements d’évaluation, de production et de développement.
 * La récupération à un point dans le temps sur 24 heures, ce qui signifie que le système peut être restauré à n’importe quel stade au cours des dernières 24 heures.
 * La restauration à partir d’un horodatage spécifique défini par l’Adobe, prélevé deux fois par jour pendant les 7 derniers jours.  Tous les messages de réplication (suppressions, mises à jour, création) seront conservés.
 
