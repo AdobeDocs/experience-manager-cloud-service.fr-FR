@@ -3,7 +3,7 @@ title: Règlements sur la protection et la confidentialité des données – Pr�
 description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Foundation pour les différents règlements sur la protection et la confidentialité des données ; notamment le règlement général sur la protection des données (RGPD) de l’Union européenne, la loi sur la protection de la vie privée des consommateurs de Californie et la manière de s’y conformer lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '506'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ En ce qui concerne AEM Foundation, les données personnelles stockées sont cons
 
    ![Profil utilisateur](assets/dpp-foundation-02.png)
 
-### API HTTP {#http-api}
+### API HTTP  {#http-api}
 
 Comme mentionné, Adobe fournit des API pour accéder aux données utilisateur, afin de faciliter l’automatisation. Il existe plusieurs types d’API que vous pouvez utiliser :
 
@@ -97,7 +97,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 >
 >Pour AEM as a Cloud Service, aucune procédure manuelle n’est disponible dans l’interface utilisateur pour la suppression d’un profil utilisateur, car CRXDE n’est pas accessible.
 
-### API HTTP {#http-api-1}
+### API HTTP  {#http-api-1}
 
 Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver l’utilisateur **[!UICONTROL cavery]** `userId` et supprimer ses profils disponibles à l’emplacement par défaut.
 
