@@ -1,13 +1,13 @@
 ---
 title: Ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager
 description: Cette page décrit l’ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager pour Screens as a Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '269'
 ht-degree: 100%
 
 ---
-
 
 # Ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager {#adding-screens-program}
 
