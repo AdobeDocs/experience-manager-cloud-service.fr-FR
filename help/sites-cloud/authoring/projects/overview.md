@@ -3,9 +3,9 @@ title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1259'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ La mosaïque **Expériences** permet d’ajouter au projet une application mobil
 
 ![Expériences](/help/sites-cloud/authoring/assets/project-experiences.png)
 
-Les icônes indiquent le type d’expérience représenté : site web, application mobile ou publication. Ajoutez des expériences en appuyant ou en cliquant sur le chevron inférieur et en appuyant sur **Ajout d’une expérience** et en sélectionnant le type d’expérience.
+Les icônes indiquent le type d’expérience représenté : site web, application mobile ou publication. Ajoutez des expériences en cliquant ou en appuyant sur le signe de chevron et en appuyant sur **Ajouter une expérience** et en sélectionnant le type d’expérience.
 
 ![Ajout d’une expérience](/help/sites-cloud/authoring/assets/projects-add-experience.png)
 
