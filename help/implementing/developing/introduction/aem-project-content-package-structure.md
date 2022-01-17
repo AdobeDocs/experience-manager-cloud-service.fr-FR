@@ -4,8 +4,8 @@ description: Découvrez comment définir des structures de package en vue d’un
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
-source-wordcount: '2930'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -70,7 +70,7 @@ La structure de déploiement d’application recommandée est la suivante :
       + `/apps/settings`
    + Listes de contrôle d’accès (autorisations)
       + Tout `rep:policy` pour tout chemin d’accès sous `/apps`
-   + [Scripts précompilés](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html)
+   + [Scripts groupés précompilés](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/precompiled-bundled-scripts.html?lang=fr)
 
 >[!NOTE]
 >

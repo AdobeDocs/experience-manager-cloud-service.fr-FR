@@ -66,7 +66,7 @@ Instructions de configuration :
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
 
-Après avoir obtenu la variable `X-AEM-Edge-Key`, vous pouvez tester que la requête est correctement acheminée comme suit :
+Après avoir obtenu le code `X-AEM-Edge-Key`, vous pouvez tester si la requête est correctement acheminée comme suit :
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'

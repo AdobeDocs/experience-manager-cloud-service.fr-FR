@@ -6,13 +6,13 @@ topic-tags: introduction
 content-type: reference
 feature: Accessibility
 role: Admin,User
-source-git-commit: 9842ee9117c33155ce206452d34d10123da9366e
+exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
+source-git-commit: 0d3262a3182063e69f764339e7937e2f83ad7bbb
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 86%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # Accessibilité dans Dynamic Media {#accessibility-in-dm}
 
@@ -58,7 +58,7 @@ Consultez [Accessibilité du clavier et navigation](https://experienceleague.ado
 ## Prise en charge des technologies d’assistance dans les visionneuses Dynamic Media {#assistive-technology=support-for-dm-viewers}
 
 Tous les composants de la visionneuse Dynamic Media prennent en charge les rôles et attributs ARIA (Accessible Rich Internet Applications) afin d’améliorer l’intégration avec les technologies d’assistance telles que les lecteurs d’écran.
-Consultez la rubrique d’aide **Prise en charge des technologies d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses Dynamic Media. Par exemple, voir [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=fr) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
+Consultez la rubrique d’aide **Prise en charge des technologies d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses Dynamic Media. Par exemple, voir [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=fr) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=fr#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
 
 ## Prise en charge des sous-titres codés dans [!DNL Dynamic Media] {#closed-caption-support}
 

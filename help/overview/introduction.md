@@ -4,8 +4,8 @@ description: Présentation d’Adobe Experience Manager (AEM) as a Cloud Serv
 exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 50%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -13,29 +13,29 @@ ht-degree: 50%
 
 [Adobe Experience Manager](https://www.adobe.com/fr/marketing/experience-manager.html) (AEM) est désormais disponible en tant que Cloud Service.
 
-Adobe Experience Manager (AEM) as a Cloud Service est la dernière offre de la gamme de produits AEM, ce qui vous permet de continuer à fournir à vos clients des expériences personnalisées basées sur le contenu. Il offre une agilité native au cloud pour accélérer la valorisation du temps et est extensible pour répondre aux besoins de votre entreprise. Vous pouvez tirer parti des investissements et innovations passés en préservant et en étendant tous vos cas d’utilisation et fonctionnalités.
+Adobe Experience Manager (AEM) as a Cloud Service est la dernière offre de la gamme de produits AEM, qui vous permet de continuer à fournir à vos clients des expériences personnalisées basées sur le contenu. Il offre l’agilité native du cloud pour mettre votre temps à profit, tout en étant extensible en vue de répondre aux besoins de votre entreprise. Vous pouvez tirer parti des investissements et des innovations passés en préservant et en étendant tous vos cas d’utilisation et vos fonctionnalités.
 
-AEM as a Cloud Service vous permet de capitaliser sur les applications AEM d’une manière native au cloud, afin que vous puissiez :
+AEM as a Cloud Service vous permet de capitaliser sur les applications AEM de façon native au cloud, afin que vous puissiez réaliser les opérations suivantes :
 
-* Mettez à l’échelle vos efforts DevOps avec Cloud Manager : framework CI/CD, mise à l’échelle automatique, connectivité de l’API, modes de déploiement flexibles, points de contrôle de qualité du code, transparence de la diffusion des services et mises à jour guidées.
+* Adapter l’échelle de vos actions DevOps avec Cloud Manager : framework CI/CD, mise à l’échelle automatique, connectivité de l’API, modes de déploiement flexibles, points de contrôle de qualité du code, transparence de la diffusion des services et mises à jour guidées.
 
-* Permet aux développeurs d’ajouter de l’automatisation aux pratiques de développement d’applications.
+* Permettre aux développeurs d’automatiser leurs pratiques de développement d’applications.
 
-* diffuser du contenu rapidement et efficacement à l’échelle mondiale, à l’aide d’un réseau de diffusion de contenu intégré et d’autres bonnes pratiques relatives à la couche réseau ;
+* Diffuser du contenu rapidement et efficacement à l’échelle mondiale, à l’aide d’un réseau de diffusion de contenu intégré et d’autres bonnes pratiques relatives à la couche réseau.
 
-* Tirez parti d’une architecture dynamique qui s’adapte automatiquement, supprimant ainsi les considérations d’infrastructure.
+* Tirer parti d’une architecture dynamique qui s’adapte automatiquement, et éviter ainsi toutes les considérations concernant l’infrastructure.
 
-* Tenez-vous au courant des menaces et de la limitation des risques de sécurité, en utilisant des tests automatisés pour analyser les vulnérabilités courantes.
+* Tenez-vous au courant des menaces et des pratiques de limitation des risques de sécurité, en réalisant des tests automatisés pour analyser les vulnérabilités courantes.
 
-* Garantissez une résilience et une efficacité optimales grâce à des topologies de performances optimisées.
+* Assurez-vous un niveau de résilience et d’efficacité optimal grâce à des topologies de performances optimisées.
 
-* Profitez de l’intégration profonde d’AEM as a Cloud Service avec Adobe Experience Cloud pour offrir de meilleures expériences client avec les produits de marketing en ligne et d’analyse web.
+* Tirez parti d’une étroite intégration d’AEM as a Cloud Service à Adobe Experience Cloud pour offrir de meilleures expériences client grâce aux produits de marketing en ligne et d’analyse web.
 
 * Utilisez des outils qui permettent d’accélérer les tâches de migration, telles que la refactorisation du code, le transfert de contenu, etc.
 
-Avec AEM as a Cloud Service,
+Grâce à AEM as a Cloud Service :
 
-* Les développeurs peuvent se concentrer sur la configuration et l’extension d’AEM avec le nouveau modèle de développement basé sur le cloud.
+* Les développeurs peuvent se concentrer sur la configuration et l’extension d’AEM à l’aide du nouveau modèle de développement basé sur le cloud.
 
 * Les auteurs de contenu peuvent profiter des dernières innovations qui leur sont régulièrement proposées.
 

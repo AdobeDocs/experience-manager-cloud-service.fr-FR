@@ -7,8 +7,8 @@ role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: 1ea99c0eb602fa48674a03e25ee615add425f6af
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -225,7 +225,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md), et [Rotation](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md), et [Rotation](/help/assets/dynamic-media/spin-sets.md) |
-| PSD   ‡ | ✓ | - | - | - | - | - |
+| PSD  ‡ | ✓ | - | - | - | - | - |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md), et [Rotation](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par [!DNL Adobe Photoshop] et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
@@ -255,5 +255,5 @@ Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#supp
 >[!MORELIKETHIS]
 >
 >* [Traitement des ressources à l’aide des microservices de ressources](asset-microservices-overview.md)
->* [Formats de fichiers pris en hcarge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
+>* [Formats de fichiers pris en charge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
 

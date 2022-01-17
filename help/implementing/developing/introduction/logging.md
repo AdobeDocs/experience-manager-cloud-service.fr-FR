@@ -4,8 +4,8 @@ description: Découvrez comment utiliser la journalisation pour AEM as a Cloud S
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 790feb2e43c60733a9f57062b014d67cc33ac2f9
 workflow-type: tm+mt
-source-wordcount: '2314'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 96%
 
 La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement AEM as a Cloud Service.
 
-AEM paramètres de journalisation et les niveaux de journal as a Cloud Service sont gérés dans des fichiers de configuration stockés dans le cadre du projet AEM dans Git et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en deux ensembles logiques :
+Les niveaux de journal et paramètres de journalisation AEM as a Cloud Service sont gérés dans des fichiers de configuration stockés au sein du projet AEM dans Git, et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en deux ensembles logiques :
 
 * La journalisation au niveau de l’application AEM.
 * La journalisation de serveur web Apache HTTPD/Dispatcher au niveau Publication.

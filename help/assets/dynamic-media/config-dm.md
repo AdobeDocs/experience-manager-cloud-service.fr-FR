@@ -5,8 +5,8 @@ role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
 workflow-type: tm+mt
-source-wordcount: '3514'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +65,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Dans Experience Manager as a Cloud Service, sélectionnez le logo Experience Manager as a Cloud Service pour accéder à la console de navigation globale.
 1. Sur le côté gauche de la console, sélectionnez l’icône Outils, puis **[!UICONTROL Cloud Services > Configuration Dynamic Media]**.
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, sélectionnez **[!UICONTROL global]**. Ne sélectionnez pas l’icône de dossier située à gauche de **[!UICONTROL global]**. Sélectionnez ensuite **[!UICONTROL Créer]**.
-1. Sur la page **[!UICONTROL Créer une configuration Dynamic Media]**, saisissez un titre, l’adresse email du compte Dynamic Media et un mot de passe, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans l’e-mail de mise en service. Si vous n’avez pas reçu cet e-mail, contactez le service clientèle d’Adobe.
+1. Sur la page **[!UICONTROL Créer une configuration Dynamic Media]**, saisissez un titre, l’adresse email du compte Dynamic Media et un mot de passe, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans l’e-mail de mise en service. Contactez le service clientèle si vous n’avez pas reçu cet e-mail.
 1. Sélectionnez **[!UICONTROL Connexion à Dynamic Media]**.
 1. Dans la boîte de dialogue **[!UICONTROL Modifier le mot de passe]**, dans le champ **[!UICONTROL Nouveau mot de passe]**, saisissez un nouveau mot de passe composé de 8 à 25 caractères. Le mot de passe doit contenir au moins une occurrence de chacun des types de caractères suivants :
 
@@ -90,7 +90,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
    | Propriété | Description |
    |---|---|
-   | Entreprise | Nom du compte Dynamic Media. Il est possible que vous disposiez de plusieurs comptes Dynamic Media pour différentes sous-marques et divisions ou différents environnements d’évaluation ou de production. |
+   | Société | Nom du compte Dynamic Media. Il est possible que vous disposiez de plusieurs comptes Dynamic Media pour différentes sous-marques et divisions ou différents environnements d’évaluation ou de production. |
    | Chemin d’accès au dossier racine de l’entreprise | Chemin d’accès au dossier racine de votre entreprise. |
    | Publier les ressources | Vous pouvez choisir parmi les trois options suivantes :<br>**[!UICONTROL Immédiatement ]** : lorsque des ressources sont chargées, le système les ingère et fournit instantanément l’URL/le code intégré. Aucune intervention n’est nécessaire de la part de l’utilisateur pour publier des ressources.<br>**[!UICONTROL Lors de l’activation]** : vous devez publier explicitement la ressource avant qu’un lien URL/code intégré ne soit fourni.<br>**[!UICONTROL Publication sélective ]** : les ressources sont publiées automatiquement pour une prévisualisation sécurisée uniquement. Elles peuvent également être publiés explicitement vers Experience Manager as a Cloud Service sans publication dans DMS7 pour une diffusion dans le domaine public. À l’avenir, cette option aura pour objectif de publier des ressources vers Experience Manager as a Cloud Service et vers Dynamic Media de façon mutuellement exclusive. En d’autres termes, vous pouvez publier des ressources dans DMS7 afin d’utiliser des fonctionnalités telles que le recadrage intelligent ou les rendus dynamiques. Vous pouvez également publier des ressources exclusivement dans Experience Manager as a Cloud Service pour un aperçu ; ces mêmes ressources ne sont pas publiées dans DMS7 pour une diffusion dans le domaine public. |
    | Serveur d’aperçu sécurisé | Permet de définir le chemin URL de votre serveur d’aperçu des rendus sécurisé. Ainsi, une fois les rendus générés, Experience Manager as a Cloud Service peut accéder en toute sécurité aux rendus Dynamic Media distants et les prévisualiser (aucune donnée binaire n’est renvoyée au Experience Manager en tant qu’instance de Cloud Service).<br>À moins que vous ayez pris des dispositions spéciales pour utiliser le serveur de votre entreprise ou un serveur spécial, Adobe vous conseille de conserver ce paramètre tel que spécifié. |
@@ -117,7 +117,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 
 1. Pour prévisualiser en toute sécurité le contenu Dynamic Media avant qu’il ne soit publié, Experience Manager as a Cloud Service utilise par défaut la validation basée sur les jetons. Cependant, vous pouvez également « placer en liste autorisée » d’autres adresses IP pour permettre aux utilisateurs d’accéder à l’aperçu sécurisé du contenu. Pour configurer cette action, procédez comme suit : <!-- To securely preview Dynamic Media content before it gets published, you must "allowlist" the Experience Manager as a Cloud Service author instance to connect to Dynamic Media. To set up this action, do the following: -->
 
-   * Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte. Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne disposez pas de ces informations, contactez le service clientèle d’Adobe.
+   * Ouvrez [l’application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte. Vos informations d’identification et de connexion vous ont été communiquées par Adobe au moment de la configuration. Si vous ne possédez pas ces informations, contactez le service clientèle d’Adobe.
    * Sur la barre de navigation située en haut à droite de la page, accédez à **[!UICONTROL Configuration]** >**[!UICONTROL Configuration de l’application]** > **[!UICONTROL Configuration de la publication]** > **[!UICONTROL Serveur d’images]**.
    * Sur la page Publication du serveur d’images, dans la liste déroulante **[!UICONTROL Contexte de publication]**, sélectionnez **[!UICONTROL Test de l’hébergeur d’images]**.
    * Pour l’option Filtre d’adresse client, sélectionnez **[!UICONTROL Ajouter]**.
@@ -147,7 +147,7 @@ Voir aussi [Votre boîte de réception](/help/sites-cloud/authoring/getting-star
 
    ![Échec de la configuration de Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-notification.png)
 
-1. Sur la page **[!UICONTROL DMSETUP]**, passez en revue les détails de configuration qui décrivent l’échec. En particulier, notez les messages d’erreur ou les codes d’erreur. Contactez le service clientèle d’Adobe avec ces informations.
+1. Sur la page **[!UICONTROL DMSETUP]**, passez en revue les détails de configuration qui décrivent l’échec. En particulier, notez les messages d’erreur ou les codes d’erreur. Contactez le service clientèle d’Adobe et partagez ces informations.
 
    ![Page de configuration Dynamic Media](/help/assets/dynamic-media/assets/dmconfig-fail-page.png)
 
@@ -398,8 +398,8 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 **Pour mettre à jour les threads de traitement de file d’attente de workflows transitoires Granite prédéfinis :**
 
-1. Accédez au **Configuration de la console web Adobe Experience Manager** at `http://<host>:<port>/system/console/configMgr`
-1. Rechercher **File d’attente : File d’attente des workflows transitoires Granite**.
+1. Accédez à la section **Configuration de la console web Adobe Experience Manager** sur `http://<host>:<port>/system/console/configMgr`.
+1. Recherchez **File d’attente : file d’attente de workflows transitoires Granite**.
 
    >[!NOTE]
    >

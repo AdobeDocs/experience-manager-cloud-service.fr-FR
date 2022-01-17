@@ -6,8 +6,8 @@ role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
-source-wordcount: '3863'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ Les projets de traduction permettent de gérer la traduction du contenu d’AEM.
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, veuillez vous référer à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous êtes un débutant dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
 
 Lorsque des ressources sont ajoutées à un projet de traduction, une tâche de traduction est créée pour ces ressources. Les tâches comportent les commandes et les informations sur le statut utilisées pour gérer les processus de traduction humaine et automatique exécutés sur les ressources.
 

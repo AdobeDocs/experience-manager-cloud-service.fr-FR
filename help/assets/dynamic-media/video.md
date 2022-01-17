@@ -1,13 +1,13 @@
 ---
-title: Vidéo  dans Dynamic Media
+title: Vidéo dans Dynamic Media
 description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment les bonnes pratiques pour le codage de vidéos, la publication de vidéos dans YouTube, l’affichage de rapports vidéo et l’ajout de sous-titres, de sous-titres ou de marqueurs de chapitre aux vidéos.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: d5ac82da6c46a020fc1ff9323a127b05551a3f88
 workflow-type: tm+mt
-source-wordcount: '9476'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -62,22 +62,22 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
          [Gestion des rendus vidéo](/help/assets/manage-digital-assets.md#managing-renditions)
 
       * [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md)
-      * [Publier des ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
-   * Utiliser des métadonnées vidéo
+      * [Publication des ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+   * Utilisation des métadonnées vidéo
 
-      * Modifiez les propriétés de la vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisés :
+      * Modifiez les propriétés vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisées :
          [Modification des propriétés vidéo](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](/help/assets/manage-metadata.md)
       * [Schémas de métadonnées](/help/assets/metadata-schemas.md)
-   * Examiner, approuver et annoter des vidéos et conserver le contrôle total des versions
+   * Examen, approbation et annotation des vidéos, et conservation le contrôle total des versions
 
       * [Annotation de vidéos](/help/assets/manage-video-assets.md#annotate-video-assets) ou [Annotation de ressources](/help/assets/manage-digital-assets.md#annotating)
 
-      * [Créer une version](/help/assets/manage-digital-assets.md#asset-versioning)
+      * [Création d’une version](/help/assets/manage-digital-assets.md#asset-versioning)
       * [Démarrage d’un workflow sur une ressource](/help/assets/manage-digital-assets.md#starting-a-workflow-on-an-asset)
 
-      * [Examiner les ressources des dossiers](/help/assets/bulk-approval.md)
+      * [Examen des ressources des dossiers](/help/assets/bulk-approval.md)
       * [Projets](/help/sites-cloud/authoring/projects/overview.md)
 
 

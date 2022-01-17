@@ -1,24 +1,24 @@
 ---
-title: Learn about headless content and how to translate it in AEM
-description: Apprenez les concepts sans tête, comment ils s'adaptent à AEM, et la théorie de la traduction AEM.
+title: En savoir plus sur le contenu découplé et comment le traduire dans AEM
+description: Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la théorie de la traduction dans AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 32%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Découvrez le contenu sans tête et comment le traduire en AEM {#learn-about}
+# En savoir plus sur le contenu découplé et comment le traduire dans AEM {#learn-about}
 
-Apprenez les concepts sans tête, comment ils s&#39;adaptent à AEM, et la théorie de la traduction AEM.
+Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la théorie de la traduction dans AEM.
 
 ## Objectif {#objective}
 
-This document helps you understand headless content delivery, how AEM supports headless, and how such content can be translated. Après l’avoir lu, vous devriez :
+Ce document vous aide à comprendre la diffusion de contenu découplé, comment AEM prend en charge le découplage et comment ce contenu peut être traduit. Après l’avoir lu, vous devriez :
 
-* Découvrez les concepts de base de la diffusion de contenu sans interface utilisateur.
-* Familiarisez-vous avec la façon dont AEM prend en charge les traductions et les headless.
+* comprendre les concepts de base de la diffusion de contenus en mode découplé ;
+* vous être familiarisé avec la façon dont AEM prend en charge le découplage et la traduction.
 
 ## Diffusion de contenu full stack {#full-stack}
 
@@ -26,9 +26,9 @@ Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échel
 
 ![CMS full stack classique](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Les fonctionnalités de ce système constituent différents composants de la pile CMS. Une solution full stack présente de nombreux avantages.
+Dans un CMS full stack, toutes les fonctionnalités de manipulation de votre contenu se trouvent dans le système. Les fonctionnalités de ce système constituent différents composants de la pile CMS. Une solution full stack présente de nombreux avantages.
 
-* There is one system to maintain.
+* Il n’y a qu’un seul système à maintenir.
 * Le contenu est géré de manière centralisée.
 * Tous les services du système sont intégrés.
 * La création de contenu est transparente.
@@ -37,7 +37,7 @@ Ainsi, si un nouveau canal doit être ajouté ou si la prise en charge de nouvea
 
 ![Ajout d’un nouveau canal à la pile](/help/journey-headless/developer/assets/adding-channel.png)
 
-However the complexity of the dependencies within the stack quickly becomes apparent as other items in the stack need to be adjusted to accommodate the changes.
+Cependant, la complexité des dépendances au sein de la pile apparaît rapidement, car d’autres éléments nécessitent des ajustements pour tenir compte des modifications.
 
 ## La tête d’un système découplé {#the-head}
 
@@ -47,34 +47,34 @@ Lorsque nous parlons d’un CMS découplé (ou sans tête), il s’agit d’un s
 
 ![CMS découplé](/help/journey-headless/developer/assets/headless-cms.png)
 
-Les services consommateurs, qu’il s’agisse d’expériences AR, d’un magasin web, d’expériences mobiles, d’applications web progressives (PWA), etc., récupèrent du contenu du CMS sans interface et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
+Les services consommateurs (expériences de réalité augmentée, boutiques web, expériences mobiles, applications web progressives (PWA), etc.) récupèrent le contenu du CMS découplé et fournissent leur propre rendu. Ils se chargent de fournir leurs propres têtes à votre contenu.
 
 Omettre la tête (en mode découplé) permet de simplifier le CMS en éliminant sa complexité. Vous pouvez ainsi transférer la responsabilité de rendu du contenu vers les services qui en ont réellement besoin et qui sont souvent mieux adaptés pour cela.
 
-## Traduction de contenu sans affichage dans AEM {#translating-in-aem}
+## Traduction de contenu découplé dans AEM {#translating-in-aem}
 
-En plus d’offrir des outils fiables pour créer, gérer et diffuser des pages web traditionnelles de manière complète, AEM offre la possibilité de créer des sélections de contenu autonomes et de les diffuser sans interface.
+En plus d’offrir des outils fiables pour la création, la gestion et la diffusion de pages web traditionnelles en mode full stack, AEM offre la possibilité de créer des sélections de contenu autonomes et de les diffuser de manière découplée.
 
-The power of AEM allows it to deliver content either headlessly, full-stack, or in both models at the same time. For the translation specialist, the same set of translation tools can be applied to both types of content, giving you a unified approach for translating your content.
+La puissance d’AEM lui permet de diffuser du contenu découplé, en mode full stack ou dans les deux modes de façon simultanée. Pour le spécialiste de la traduction, le même ensemble d’outils de traduction peut être utilisé pour les deux types de contenu, ce qui vous donne une approche unifiée de la traduction de votre contenu.
 
-Plus loin dans le parcours, vous découvrirez les détails de la traduction AEM contenu, mais à un niveau général, le concept est simple :
+Plus loin dans le parcours, vous découvrirez les détails de la traduction de contenu AEM, mais à un niveau général, le concept est simple :
 
-1. Define a connection to a translation service by configuring the translation integration framework.
+1. Définissez une connexion à un service de traduction en configurant la structure d’intégration de traduction.
 1. Définissez le contenu à traduire à l’aide des règles de traduction.
 1. Créez un projet de traduction pour récolter le contenu, l’envoyer au service de traduction et recevoir les résultats.
-1. Passez en revue et publiez le contenu traduit.
+1. Vérifiez et publiez le contenu traduit.
 
 ## Et après ? {#what-is-next}
 
-Thanks for getting started on your AEM headless translation journey! Maintenant que vous avez lu ce document, vous devriez :
+Merci de vous être engagé sur ce parcours de traduction découplée AEM ! Maintenant que vous avez lu ce document, vous devriez :
 
-* Découvrez les concepts de base de la diffusion de contenu sans interface utilisateur.
-* Be familiar with how AEM supports headless and translation.
+* comprendre les concepts de base de la diffusion de contenus en mode découplé ;
+* vous être familiarisé avec la façon dont AEM prend en charge le découplage et la traduction.
 
-Build on this knowledge and continue your AEM headless translation journey by next reviewing the document [Get started with AEM headless translation](getting-started.md) where you will have an overview of how AEM manages headless content and get to know its translation tools.
+Appuyez-vous sur ces connaissances et poursuivez votre parcours de traduction découplée AEM en consultant le document [Prise en main de la traduction découplée AEM](getting-started.md) dans lequel vous trouverez un aperçu sur la manière dont AEM gère le contenu découplé et sur ses outils de traduction.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction sans interface utilisateur graphique en consultant le document [Prise en main de AEM traduction sans interface,](getting-started.md) vous trouverez ci-dessous des ressources facultatives supplémentaires qui approfondissent certains concepts mentionnés dans ce document, mais qui ne sont pas nécessaires pour continuer sur le parcours sans interface.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en examinant le document [Prise en main de la traduction découplée AEM](getting-started.md), vous trouverez ci-dessous quelques ressources supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, sans être obligatoires pour poursuivre ce parcours découplé.
 
-* [MSM et traduction](/help/sites-cloud/administering/msm-and-translation.md) - Détails d’AEM Multi Site Manager et son fonctionnement avec ses outils de traduction
+* [MSM et traduction](/help/sites-cloud/administering/msm-and-translation.md) – Informations sur AEM Multi-Site Manager et sur le fonctionnement de ses outils de traduction

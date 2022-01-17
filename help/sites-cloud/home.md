@@ -5,8 +5,8 @@ landing-page-description: Découvrez comment créer et administrer AEM Sites as 
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +31,7 @@ Cette page répertorie les ressources d’aide autonome concernant Sites sur Exp
 
 | Guide de l’utilisateur | Description |
 |---|---|
-| [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, la terminologie, l’architecture, etc. |
+| [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, sa terminologie, son architecture, etc. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Ce guide fournit des informations importantes sur la dernière version d’Experience Manager as a Cloud Service, notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |
 | [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |

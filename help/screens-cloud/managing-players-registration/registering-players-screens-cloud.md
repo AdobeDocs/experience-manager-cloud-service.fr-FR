@@ -4,8 +4,8 @@ description: Cette page décrit comment enregistrer des lecteurs dans Screens as
 exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
 source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

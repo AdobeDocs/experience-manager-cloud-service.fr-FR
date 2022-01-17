@@ -6,8 +6,8 @@ role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '607'
-ht-degree: 82%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 82%
 
 ## Objectif {#objective}
 
-Ce document permet aux développeurs et aux responsables de déploiement d’accéder à Cloud Manager et de se familiariser avec la préparation de leurs parcours d’apprentissage.
+Ce document permet aux développeurs et aux responsables de déploiement d’accéder à Cloud Manager et de se familiariser avec la manière dont ils peuvent se préparer à leur parcours de formation.
 
 Après avoir lu ce document, vous devriez :
 
@@ -33,7 +33,7 @@ Si vous lisez cette section, il est probable que vous soyez affecté à un profi
 
 ## Prérequis {#prerequisites}
 
-Avant de commencer, assurez-vous que :
+Avant de commencer, assurez-vous des éléments suivants :
 
 * Votre administrateur système a affecté des développeurs et des responsables de déploiement à leurs profils de produit respectifs. Les développeurs doivent en outre être affectés au profil de produit Utilisateurs AEM ou Administrateurs AEM.
 * Les ressources cloud ont été configurées.
@@ -51,7 +51,7 @@ Pour en savoir plus sur cette rubrique, voir [Configuration de votre pipeline CI
 
 ## Et après ? {#whats-next}
 
-Développeurs et responsables de déploiement sont maintenant prêts à se familiariser avec la manière de développer du code dans AEM as a Cloud Service. Pour en savoir plus ou trouver d’autres parcours de formation, reportez-vous à la section Ressources supplémentaires ci-dessous. Pour en savoir plus sur le parcours d’apprentissage des auteurs de contenu, voir [Chemin d’apprentissage pour les auteurs AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
+Développeurs et responsables de déploiement sont maintenant prêts à se familiariser avec la manière de développer du code dans AEM as a Cloud Service. Pour en savoir plus ou trouver d’autres parcours de formation, reportez-vous à la section Ressources supplémentaires ci-dessous. Pour en savoir plus sur le parcours d’apprentissage des auteurs de contenu, consultez le [Chemin d’apprentissage pour les auteurs AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
 
 >[!TIP]
 >
@@ -75,7 +75,7 @@ Développeurs et responsables de déploiement sont maintenant prêts à se famil
 
 ## Cours Experience League {#exp-league-courses}
 
-Suivez les cours de la ligue d’expérience pour en savoir plus. Vérifiez que vous êtes inscrit pour accéder aux cours :
+Suivez les cours Experience League pour en savoir plus. Vérifiez que vous êtes inscrit pour accéder aux cours :
 
 * [Sites traditionnels](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
 

@@ -1,30 +1,30 @@
 ---
-title: Découvrez les bases de la modélisation de contenu
-description: Learn the basic of modeling content for your Headless CMS using Content Fragments.
+title: En savoir plus sur les bases de la modélisation de contenu
+description: Découvrez les bases de la modélisation du contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 46%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Découvrez les bases de la modélisation de contenu pour sans affichage avec AEM {#content-modeling-headless-basics}
+# En savoir plus sur les bases de la modélisation de contenu pour le découplage avec AEM {#content-modeling-headless-basics}
 
-## The Story so Far {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
-Au début du [AEM Parcours d’architecture de contenu sans affichage](overview.md) la valeur [Introduction](introduction.md) couvrait les concepts de base et la terminologie relatifs à la modélisation du contenu pour les sans-tête.
+Dès le début du [Parcours d’architecture de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) a couvert les concepts de base et la terminologie relatifs à la modélisation du contenu découplé.
 
-This article builds on these so you understand how to model your content for your AEM headless project.
+Cet article s’appuie sur ces éléments afin que vous compreniez comment modéliser votre contenu pour votre projet AEM découplé.
 
 ## Objectif {#objective}
 
 * **Audience** : débutant
-* **Objectif**: Découvrez les concepts de la modélisation de contenu pour un CMS sans affichage.
+* **Objectif** : découvrez les concepts de la modélisation de contenu pour un CMS découplé.
 
 ## Modélisation de contenu avec des modèles de fragment de contenu {#architect-content-fragment-models}
 
-Content (Data) Modeling is a set of established techniques, often used when developed relationship databases, so what does Content Modeling mean for AEM Headless?
+Contenu (données) La modélisation des données est un ensemble de techniques établies, souvent utilisées lors de bases de données de relations développées. Que signifie la modélisation de contenu pour le découplage AEM ?
 
 ### Pourquoi ? {#why}
 
@@ -43,9 +43,9 @@ La structure de votre modèle de contenu possède les caractéristiques suivante
 
 >[!NOTE]
 >
->The Content Fragment Models are also used as the basis of the AEM GraphQL Schemas, used for retrieving your content - more about that in the Developer Journey.
+>Les modèles de fragment de contenu sont également utilisés comme base des schémas GraphQL d’AEM utilisés pour récupérer votre contenu (découvrez-en plus dans le parcours pour les développeurs).
 
-Les demandes de contenu sont effectuées à l’aide de l’API AEM GraphQL, une mise en œuvre personnalisée de l’API GraphQL standard. L’API GraphQL AEM permet aux applications d’exécuter des requêtes (complexes) sur vos fragments de contenu, chaque requête étant en fonction d’un type de modèle spécifique.
+Les demandes de contenu sont effectuées à l’aide de l’API AEM GraphQL, une mise en œuvre personnalisée de l’API GraphQL standard. L’API AEM GraphQL permet aux applications d’effectuer des requêtes (complexes) sur vos fragments de contenu, chaque requête étant conforme à un type de modèle spécifique.
 
 Le contenu renvoyé peut alors être utilisé par vos applications.
 
@@ -56,7 +56,7 @@ Les modèles de fragment de contenu offrent divers mécanismes qui vous permette
 Un modèle de fragment de contenu décrit une entité.
 
 >[!NOTE]
->Content Fragment functionality must be enabled in the Configuration Browser so that you can create new models.
+>La fonctionnalité de fragment de contenu doit être activée dans l’explorateur de configurations afin que vous puissiez créer des modèles.
 
 >[!TIP]
 >
@@ -90,7 +90,7 @@ AEM fournit les types de données suivants pour que vous puissiez modéliser vot
 
 >[!NOTE]
 >
->Further details are available under Content Fragment Models - Data Types.
+>Pour plus d’informations, reportez-vous à la section Modèles de fragment de contenu – Types de données.
 
 ## Références et contenu imbriqué {#references-nested-content}
 
@@ -111,50 +111,50 @@ Le type de données peut être configuré pour permettre aux auteurs de fragment
 >
 >Vous pouvez également créer des références ad hoc à l’aide de liens dans des blocs de texte.
 
-## Levels of Structure (Nested Fragments) {#levels-of-structure-nested-fragments}
+## Niveaux de structure (fragments imbriqués) {#levels-of-structure-nested-fragments}
 
-Pour la modélisation de contenu, le **Référence de fragment** Le type de données vous permet de créer plusieurs niveaux de structure et de relations.
+Pour la modélisation de contenu, le type de données **Référence de fragment** vous permet de créer plusieurs niveaux de structure et de relations.
 
-Avec cette référence, vous pouvez *connect* divers modèles de fragment de contenu pour représenter les interrelations. This allows the headless application to follow the connections and access the content as necessary.
+Ce référencement vous permet de *connecter* divers modèles de fragment de contenu pour représenter les interrelations. Il permet à l’application découplée de suivre les connexions et d’accéder au contenu si nécessaire.
 
 >[!NOTE]
 >
->Cette méthode doit être utilisée avec précaution. La bonne pratique peut être définie comme *imbriquez autant que nécessaire, mais le moins possible.*.
+>Cette méthode doit être utilisée avec précaution. Il est recommandé de définir *autant d’imbrication que nécessaire, mais pas plus*.
 
-C’est exactement ce que font les Références de fragment : elles vous permettent de référencer un autre fragment.
+C’est à ça que servent les références de fragment : elles vous permettent de faire référence à un autre fragment.
 
-Par exemple, les modèles de fragment de contenu suivants peuvent être définis :
+Par exemple, les modèles de fragment de contenu suivants peuvent être définis :
 
 * Ville
 * Société
 * Personne
 * Distinctions
 
-Seems pretty straightforward, but of course a Company has both a CEO and Employees....et ce sont tous des gens, chacun défini comme une Personne.
+Cela semble évident, bien sûr, mais une entreprise compte à la fois un PDG et des employés...Et chaque élément d’entre eux est défini en tant que personne.
 
-Et une Personne peut recevoir un Prix (ou peut-être deux).
+Et une personne peut recevoir une distinction (ou peut-être deux).
 
-* My Company - Company
-   * PDG - Personne
-   * Employee(s) - Person
-      * Prix(s) personnel(s) - Prix
+* Mon entreprise – Société
+   * PDG – Personne
+   * Employé(s) – Personne
+      * Récompense(s) personnelle(s) – Distinction
 
-Et c&#39;est juste pour commencer. En fonction de la complexité, une récompense peut être propre à une entreprise ou son siège social dans une ville donnée.
+Voilà pour commencer. En fonction du niveau de complexité, une distinction peut être propre à une entreprise, ou le siège social d’une entreprise peut être situé dans une ville donnée.
 
-Vous pouvez représenter ces interrelations avec les Références de fragment, car elles sont comprises par vous (l’architecte), votre auteur de contenu et les applications sans interface.
+En fonction du niveau de complexité, une distinction peut être propre à une entreprise, ou le siège social d’une entreprise peut être situé dans une ville donnée.
 
 ## Et après ? {#whats-next}
 
-Now that you have learned the basics, the next step is to [Learn about Creating Content Fragment Models in AEM](model-structure.md). Cette section présente et discute les différentes références disponibles, ainsi que de la manière de créer des niveaux de structure avec les références de fragments, un élément clé de la modélisation pour les sans-tête.
+Maintenant que vous avez appris les principes de base, l’étape suivante consiste à [En savoir plus sur la création de modèles de fragment de contenu dans AEM](model-structure.md). Cette section présente et discute les différentes références disponibles, ainsi que la manière de créer des niveaux de structure à l’aide des références de fragment, un élément clé de la modélisation en mode découplé.
 
 ## Ressources supplémentaires {#additional-resources}
 
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [Modèles de fragment de contenu - Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [Modèles de fragment de contenu – Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Basic Handling](/help/sites-cloud/authoring/getting-started/basic-handling.md) - this page is primarily based on the **Sites** console, but many/most features are also relevant for authoring **Content Fragments** under the **Assets** console.
+* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) – Cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la création de **Fragments de contenu** dans la console **Ressources**.
 
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)

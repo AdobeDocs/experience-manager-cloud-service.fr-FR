@@ -8,8 +8,8 @@ role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
 workflow-type: tm+mt
-source-wordcount: '4320'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 98%
 
 Cet article décrit comment gérer et modifier des ressources dans [!DNL Adobe Experience Manager Assets]. Pour gérer [!DNL Content Fragments], voir [[!DNL Content Fragments]](content-fragments/content-fragments.md) ressources.
 
-## Création de dossiers   {#creating-folders}
+## Création de dossiers  {#creating-folders}
 
 Lorsque vous organisez une collection de ressources, comme toutes les images `Nature`, vous pouvez créer des dossiers pour les conserver ensemble. Vous pouvez utiliser des dossiers pour classer et organiser vos ressources. [!DNL Experience Manager Assets] ne nécessite pas de classer les ressources dans des dossiers pour mieux fonctionner.
 
@@ -420,7 +420,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils, après avoir sélectionné la ressource ou avoir accédé à la page de la ressource
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 

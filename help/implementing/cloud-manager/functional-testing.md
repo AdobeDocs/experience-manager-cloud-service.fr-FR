@@ -4,8 +4,8 @@ description: Tests fonctionnels – Cloud Services
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 02db915e114c2af8329eaddbb868045944a3574d
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 83%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

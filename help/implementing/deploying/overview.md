@@ -5,8 +5,8 @@ feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
-source-wordcount: '3364'
-ht-degree: 96%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -146,7 +146,7 @@ Lorsque Cloud Manager déploie l’application, il exécute ces instructions, i
 Pour créer des instructions repoinit, procédez comme suit :
 
 1. Ajoutez une configuration OSGi pour le PID d’usine `org.apache.sling.jcr.repoinit.RepositoryInitializer` dans un dossier de configuration du projet. Utilisez un nom explicite pour la configuration, tel que **org.apache.sling.jcr.repoinit.RepositoryInitializer~initstructure**.
-1. Ajoutez des instructions repoinit à la propriété de script de la configuration. La syntaxe et les options sont décrites dans la [documentation Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html). Notez que vous devez créer explicitement un dossier parent avant leurs dossiers enfants. Par exemple, une création explicite de `/content` avant `/content/myfolder`, et avant `/content/myfolder/mysubfolder`. Pour que les listes de contrôle d’accès soient définies sur des structures de bas niveau, il est recommandé de les définir sur un niveau supérieur et de travailler avec une restriction `rep:glob`.  Par exemple, `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
+1. Ajoutez des instructions repoinit à la propriété de script de la configuration. La syntaxe et les options sont décrites dans la [documentation Sling](https://sling.apache.org/documentation/bundles/repository-initialization.html). Notez que vous devez créer explicitement un dossier parent avant leurs dossiers enfants. Par exemple, une création explicite de `/content` avant `/content/myfolder`, et avant `/content/myfolder/mysubfolder`. Pour que les listes de contrôle d’accès soient définies sur des structures de bas niveau, il est recommandé de les définir sur un niveau supérieur et de travailler avec une restriction `rep:glob`. Par exemple, `(allow jcr:read on /apps restriction(rep:glob,/msm/wcm/rolloutconfigs))`.
 1. Validez l’environnement de développement local au moment de l’exécution.
 
 <!-- last statement in step 2 to be clarified with Brian -->

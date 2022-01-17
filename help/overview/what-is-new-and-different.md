@@ -4,8 +4,8 @@ description: Nouveautés et différences – Adobe Experience Manager (AEM) as a
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

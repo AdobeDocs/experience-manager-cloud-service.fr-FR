@@ -1,23 +1,23 @@
 ---
 title: Compliance
-description: Cette page répertorie les ressources d’aide autonome fournissant des informations sur la conformité dans Experience Manager as a Cloud Service.
+description: Cette page répertorie les ressources d’aide autonome en offrant des informations dans Experience Manager as a Cloud Service.
 landing-page-description: Pour une présentation de la conformité d’AEM as a Cloud Service, y compris la confidentialité et l’accessibilité, commencez ici.
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 77%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Conformité dans AEM as a Cloud Service {#aem-compliance}
 
-Cette page répertorie les ressources d’aide autonome fournissant des informations sur la conformité dans Experience Manager as a Cloud Service.
+Cette page répertorie les ressources d’aide autonome en offrant des informations dans Experience Manager as a Cloud Service.
 
 ## Principaux articles de présentation {#key-articles}
 
 * [Préparation aux réglementations sur la protection et la confidentialité des données](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
-* [Préparation de base aux réglementations sur la protection et la confidentialité des données](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
-* [Préparation des sites aux réglementations sur la protection et la confidentialité des données](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
+* [Préparation de Foundations aux réglementations sur la protection et la confidentialité des données](/help/compliance/data-privacy-and-protection-readiness/foundation-readiness.md)
+* [Préparation de Sites aux réglementations sur la protection et la confidentialité des données](/help/compliance/data-privacy-and-protection-readiness/sites-readiness.md)
 * [Instructions relatives à l’accessibilité web](/help/compliance/accessibility/web-accessibility.md)
 * [Guide rapide relatif à WCAG 2.1](/help/compliance/accessibility/quick-guide-wcag.md)
 

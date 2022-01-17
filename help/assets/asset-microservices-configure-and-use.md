@@ -7,8 +7,8 @@ role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
 workflow-type: tm+mt
-source-wordcount: '2704'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 
 Les microservices de ressource permettent un traitement évolutif et résilient des ressources à l’aide d’applications basées sur le cloud (également appelées secondaires). Adobe gère les services pour une gestion optimale des différents types de ressources et des options de traitement.
 
-Les microservices de ressources vous permettent de traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’[!DNL Experience Manager]. Par exemple, l’extraction de miniatures des formats de PSD et PSB est désormais possible, mais des solutions tierces auparavant nécessaires telles que [!DNL ImageMagick].
+Les microservices de ressources vous permettent de traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’[!DNL Experience Manager]. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, mais elle nécessitait auparavant des solutions tierces telles qu’[!DNL ImageMagick].
 
 Le traitement des ressources dépend de la configuration des **[!UICONTROL profils de traitement]**. Experience Manager fournit une configuration par défaut de base et permet aux administrateurs d’ajouter une configuration de traitement des ressources plus spécifique. Les administrateurs créent, gèrent et modifient les configurations des workflows de post-traitement, y compris la personnalisation facultative. La personnalisation des workflows permet aux développeurs d’étendre l’offre par défaut.
 

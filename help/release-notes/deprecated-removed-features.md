@@ -4,8 +4,8 @@ description: Notes de mise à jour dédiées aux fonctionnalités obsolètes et 
 exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: e613ba71347d60dd9c4a2cdd6da8bd0696b00070
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

@@ -1,46 +1,46 @@
 ---
-title: Learn about defining Metadata and Tagging for Content Fragments
-description: Learn about defining Metadata and Tagging for Content Fragments
+title: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
+description: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Learn about defining Metadata and Tagging for Content Fragments {#author-headless-metadata-tagging}
+# En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu {#author-headless-metadata-tagging}
 
-## The Story so Far {#story-so-far}
+## Un peu d’histoire... {#story-so-far}
 
-[](overview.md)[](introduction.md)
+Au début du [Parcours de création de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) présentait les concepts de base et la terminologie relatifs à la création découplée.
 
-In the previous step you were introduced to the use of references for Headless CMS Authoring. You learned what sorts of references are available, and what are their purposes: Content References, Asset/Media References, and Fragment References.
+À l’étape précédente, vous avez découvert l’utilisation de références pour la création CMS découplée. Vous avez appris quels types de références sont disponibles et à quels fins : références de contenu, références de ressources/médias et références de fragments.
 
-This article builds on these so you understand how to use metadata and tagging to author your own content for your AEM headless project.
+Cet article s’appuie sur ces éléments afin que vous compreniez comment utiliser les métadonnées et le balisage en vue de créer votre propre contenu pour votre projet AEM découplé.
 
 ## Objectif {#objective}
 
 * **Audience** : Niveau avancé
-* ****
+* **Objectif** : introduisez l’utilisation des métadonnées et du balisage pour la création CMS découplée.
 
-## Adding Metadata and Tags {#adding-metadata-and-tags}
+## Ajout de métadonnées et de balises {#adding-metadata-and-tags}
 
-There are three methods that you can use to add metadata and tags:
+Vous pouvez utiliser trois méthodes pour ajouter des métadonnées et des balises :
 
-* When first creating your fragment:
+* Dès la création de votre fragment :
 
-   ![](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
+   ![Créer un fragment de contenu – Indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-* ********
+* L’onglet **Métadonnées** de l’éditeur de fragment de contenu vous permet d’ajouter différents champs de métadonnées et des **Balises** prédéfinies à partir de votre projet :
 
-   ![](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
+   ![Éditeur de fragment de contenu – Métadonnées](/help/journey-headless/author/assets/headless-journey-author-metadata-01.png)
 
-   * ****
+   * Vous pouvez également y accéder directement à l’aide de l’option **Propriétés** dans la barre d’outils de la console Ressources.
 
 ## Et après ? {#whats-next}
 
-Now you can put all this knowledge to use and start creating Content Fragments for your project.
+Vous pouvez maintenant mettre toutes ces connaissances à profit et commencer à créer des fragments de contenu pour votre projet.
 
 ## Ressources supplémentaires {#additional-resources}
 
@@ -48,4 +48,4 @@ Now you can put all this knowledge to use and start creating Content Fragments f
 
 * [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md)
 
-* [Content Fragment Models - Allowing Content Fragment Models on your Assets Folder](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modèles de fragment de contenu – Autorisation des modèles de fragment de contenu dans votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

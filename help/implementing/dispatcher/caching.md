@@ -5,8 +5,8 @@ feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: b9829a033b99da10217ede18b1591e4bb04762c0
 workflow-type: tm+mt
-source-wordcount: '1528'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    </LocationMatch>
    ```
 
-   Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou ceux qui correspondent à une expression régulière (regex) large afin qu’ils ne soient pas appliqués au contenu que vous souhaitez peut-être garder confidentiel. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Ceci étant dit, AEM as a Cloud Service va supprimer l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer l’AEM à toujours appliquer les en-têtes de mise en cache, vous pouvez ajouter la variable **always** comme suit :
+   Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou ceux qui correspondent à une expression régulière (regex) large afin qu’ils ne soient pas appliqués au contenu que vous souhaitez peut-être garder confidentiel. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Ceci étant dit, AEM as a Cloud Service va supprimer l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer AEM à toujours appliquer les en-têtes de mise en cache, vous pouvez ajouter l’option **always** comme suit :
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -58,7 +58,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    { /glob "*" /type "allow" }
    ```
 
-* Pour empêcher la mise en cache d’un contenu spécifique **sur le réseau de diffusion de contenu**, définissez l’en-tête Cache-Control sur *private*. Par exemple, ce qui suit empêcherait le contenu HTML sous un répertoire nommé **secure** de la mise en cache sur le réseau de diffusion de contenu :
+* Pour empêcher la mise en cache d’un contenu spécifique **dans le CDN**, définissez l’en-tête Cache-Control sur *private*. Par exemple, les éléments suivants empêcheraient la mise en cache du contenu HTML situé dans un répertoire nommé **secure** dans le CDN :
 
    ```
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
@@ -72,7 +72,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
 
    >[!NOTE]
-   >Veuillez noter que Dispatcher peut toujours mettre en cache le contenu en fonction des siens. [règles de mise en cache](https://helpx.adobe.com/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Pour rendre le contenu réellement privé, veillez à ce qu’il ne soit pas mis en cache par Dispatcher.
+   >Veuillez noter que le Dispatcher peut toujours mettre en cache le contenu en fonction de ses propres [règles de mise en cache](https://helpx.adobe.com/fr/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Pour rendre le contenu réellement privé, veillez à ce qu’il ne soit pas mis en cache par le Dispatcher.
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 

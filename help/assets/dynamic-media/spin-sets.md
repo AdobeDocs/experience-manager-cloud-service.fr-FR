@@ -6,8 +6,8 @@ role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 
 >[!NOTE]
 >
->Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources à l’aide de l’interface utilisateur tactile](/help/assets/manage-digital-assets.md) et l’appliquer à un nouveau dossier dans lequel vos ressources de visionneuse d’images serot chargées.
+>Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources à l’aide de l’interface utilisateur tactile](/help/assets/manage-digital-assets.md) et l’appliquer à un nouveau dossier dans lequel vos ressources de visionneuse d’images seront chargées.
 
 ## Démarrage rapide : Visionneuse à 360° {#quick-start-spin-sets}
 
@@ -107,7 +107,7 @@ Cette section décrit comment créer des visionneuses à 360°.
 
 >[!NOTE]
 >
->L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a une importance. Veillez à les classer de sorte que la rotation soit une vue lisse de 360°.
+>L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a une importance. Veillez à les mettre dans le bon ordre afin que la rotation offre une vue à 360° parfaite.
 
 **Pour créer des visionneuses à 360° :**
 

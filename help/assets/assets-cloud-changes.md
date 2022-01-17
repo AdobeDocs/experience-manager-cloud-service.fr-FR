@@ -1,13 +1,13 @@
 ---
 title: Modifications notables apportées à [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service]
-description: Modification notables apportées à  [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] as compared to [!DNL Adobe Experience Manager] 6.5.
+description: Modifications notables apportées à [!DNL Adobe Experience Manager Assets] in [!DNL Experience Manager] as a [!DNL Cloud Service] par rapport à [!DNL Adobe Experience Manager] 6.5.
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ Les rendus standard générés avec les microservices de ressources sont stocké
 
 ## Développement et test de microservices de ressources {#asset-microservices}
 
-Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour un traitement optimal des différents types de ressources et des options de traitement. L’utilisation des microservices de ressources permet de se passer d’outils et de méthodes de rendu tiers (comme [!DNL ImageMagick]) et de simplifier les configurations, tout en fournissant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants. Vous pouvez désormais traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible, car elle nécessitait auparavant des solutions tierces telles que [!DNL ImageMagick]. Vous ne pouvez pas utiliser les configurations complexes de [!DNL ImageMagick] pour les [!UICONTROL Profils de traitement]. Utilisez [!DNL Dynamic Media] pour le transcodage FFmpeg avancé des vidéos et les profils de traitement pour le [transcodage de base des vidéos MP4](/help/assets/manage-video-assets.md#transcode-video).
+Les microservices de ressources offrent un traitement évolutif et résilient des ressources à l’aide des services cloud. Adobe gère les services cloud pour un traitement optimal des différents types de ressources et des options de traitement. L’utilisation des microservices de ressources permet de se passer d’outils et de méthodes de rendu tiers (comme [!DNL ImageMagick]) et de simplifier les configurations, tout en fournissant des fonctionnalités prêtes à l’emploi pour les types de fichiers courants. Vous pouvez désormais traiter un [large éventail de types de fichiers](/help/assets/file-format-support.md), dans des formats prêts à l’emploi plus nombreux que les versions précédentes d’Experience Manager. Par exemple, l’extraction de miniatures des formats PSD et PSB est désormais possible ; elle nécessitait auparavant des solutions tierces telles qu’[!DNL ImageMagick]. Vous ne pouvez pas utiliser les configurations complexes de [!DNL ImageMagick] pour les [!UICONTROL Profils de traitement]. Utilisez [!DNL Dynamic Media] pour le transcodage FFmpeg avancé des vidéos et les profils de traitement pour le [transcodage de base des vidéos MP4](/help/assets/manage-video-assets.md#transcode-video).
 
 Les microservices de ressources, natifs dans le cloud, sont automatiquement mis en service et connectés à [!DNL Experience Manager] dans les programmes et environnements clients gérés dans Cloud Manager. Pour étendre ou personnaliser[!DNL Experience Manager], les développeurs peuvent utiliser le contenu existant ou les ressources dont les rendus sont générés dans un environnement cloud, afin de tester et valider leur code avec des ressources (en les utilisant, les affichant et les téléchargeant).
 
@@ -52,7 +52,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | Fonctions ou cas d’utilisation | Statut dans [!DNL Experience Manager] as a [!DNL Cloud Service] | Commentaires |
 |-----|-----|-----|
 | [Détection des doublons de ressources ](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Fonctionne différemment. | Renseignez-vous sur [son fonctionnement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=fr). |
-| [Pour les rendus FPO (avec positionnement uniquement)](/help/assets/configure-fpo-renditions.md) | Fonctionne différemment. | Les profils de traitement utilisent les microservices de ressources pour générer des rendus FPO. Dans Experience Manager 6.5, une solution tierce telle que [!DNL ImageMagick] était disponible pour générer les rendus. |
+| [Pour les rendus FPO (avec positionnement uniquement)](/help/assets/configure-fpo-renditions.md) | Fonctionne différemment. | Les profils de traitement utilisent les microservices de ressources pour générer des rendus FPO. Dans Experience Manager 6.5, une solution tierce telle qu’[!DNL ImageMagick] était disponible pour générer les rendus. |
 | Écriture différée des métadonnées | Fonctionne différemment. | Désactivé par défaut. Activez le lanceur de processus correspondant si nécessaire. L’écriture différée est gérée par les microservices de ressources. |
 | Traitement des ressources chargées à l’aide du gestionnaire de modules | Nécessite une intervention manuelle | Retraitez manuellement les ressources à l’aide de l’action **[!UICONTROL Retraiter la ressource]**. |
 | Détection du type MIME | Pas de prise en charge. | Si vous chargez une ressource numérique sans extension ou avec une extension incorrecte, elle peut ne pas être traitée comme vous le souhaitez. Les utilisateurs peuvent toujours stocker les fichiers binaires sans extension dans le module DAM. Voir la section [Détection de type MIME dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=fr). |
@@ -65,7 +65,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | [Téléchargement du rapport](/help/assets/asset-reports.md) | Pas de prise en charge | Pour l’instant, le rapport de téléchargement qui informe de l’utilisation des ressources n’est pas disponible. Voir [Rapport de téléchargement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=fr). |
 | Modèle de séance photo du produit | Pas de prise en charge | Voir [Modèle de séance photo du produit dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html?lang=fr). |
 | Traduction intelligente | Pas de prise en charge | La [traduction intelligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html?lang=fr) n’est pas prise en charge dans [!DNL Experience Manager] as a [!DNL Cloud Service]. |
-| WebDAV | Pas de prise en charge | Pour obtenir des alternatives, voir [[!DNL Creative Cloud] integration](/help/assets/aem-cc-integration-best-practices.md) ou [Documents de référence pour les développeurs](/help/assets/developer-reference-material-apis.md). |
+| WebDAV | Pas de prise en charge | Pour obtenir des alternatives, consultez Intégration de [[!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md) ou les [Documents de référence pour les développeurs](/help/assets/developer-reference-material-apis.md). |
 | IU classique | Pas de prise en charge | Seule l’interface utilisateur tactile est disponible. |
 
 >[!MORELIKETHIS]

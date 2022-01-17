@@ -6,8 +6,8 @@ role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 98%
 L’intégration d’Adobe Analytics et d’AEM as a Cloud Service vous permet de suivre l’activité de vos pages web. L’intégration nécessite :
 
 * d’utiliser l’interface utilisateur tactile pour créer une configuration Analytics dans AEM as a Cloud Service ;
-* d’ajouter et de configurer Adobe Analytics en tant qu’extension dans [Adobe Launch](#analytics-launch). Pour plus d’informations sur Adobe Launch, consultez [cette page](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html).
+* d’ajouter et de configurer Adobe Analytics en tant qu’extension dans [Adobe Launch](#analytics-launch). Pour plus d’informations sur Adobe Launch, consultez [cette page](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=fr).
 
 Par rapport aux versions précédentes d’AEM, la prise en charge du framework n’est pas fournie dans la configuration d’Analytics dans AEM as a Cloud Service. À la place, elle est désormais assurée via Adobe Launch, qui est l’outil par défaut permettant d’instrumenter un site AEM avec des fonctionnalités Analytics (bibliothèques JS). Dans Adobe Launch, une propriété est créée où l’extension Adobe Analytics peut être configurée et des règles sont créées pour envoyer des données à Adobe Analytics. Adobe Launch a remplacé la tâche d’analyse fournie par SiteCatalyst.
 
@@ -26,7 +26,7 @@ Par rapport aux versions précédentes d’AEM, la prise en charge du framework 
 
 ## Création de la configuration d’Adobe Analytics {#analytics-configuration}
 
-1. Accédez à **Outils** → **Cloud Services**.
+1. Accédez à **Outils** → **Services cloud**.
 2. Sélectionnez **Adobe Analytics**.
    ![Fenêtre Adobe Analytics](assets/analytics_screen2.png "Fenêtre Adobe Analytics")
 3. Cliquez sur le bouton **Créer**.

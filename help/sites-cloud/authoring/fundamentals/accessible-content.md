@@ -4,8 +4,8 @@ description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessib
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
-source-wordcount: '14050'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -359,6 +359,7 @@ Veillez à ce que vos pages web aient la structure appropriée en utilisant, le 
       >
       >* `<b>` pour `<strong>`
       >* `<i>` pour `<em>`
+
       >
       >Ils sont identiques dans la pratique, mais `<strong>` et `<em>` sont préférables, car il s’agit de code HTML correct sémantiquement. Votre équipe de développement peut configurer l’éditeur de texte enrichi pour qu’il utilise `<strong>` et `<em>` (au lieu de `<b>` et `<i>`) lors du développement de votre instance de projet.
 

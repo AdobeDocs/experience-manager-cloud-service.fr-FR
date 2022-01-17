@@ -5,12 +5,12 @@ landing-page-description: Ce guide résume la prise en main d’AEM as a Cloud S
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Démarrer l’intégration à [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
+# l’intégration à [!DNL Experience Manager as a Cloud Service] {#aem-onboarding-guide}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_onboarding_overview"
@@ -23,19 +23,19 @@ Nous vous félicitons de commencer votre parcours avec AEM as a Cloud Service !
 
 L’intégration est le processus au cours duquel un [administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=fr) désigné configure AEM as a Cloud Service pour votre organisation. Cela inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs aux rôles appropriés en fonction de leurs responsabilités professionnelles, après quoi chaque membre peut se connecter et accéder à ses ressources AEM as a Cloud Service.
 
-Le parcours d’intégration illustré ci-dessous est conçu pour un personnage Administrateur système qui décrit les exigences, les étapes et l’approche. Le parcours définit des personnes supplémentaires avec lesquelles l’administrateur système doit interagir pour qu’un projet soit réussi, mais le point de vue du parcours est celui d’un administrateur.
+Le parcours d’intégration illustré ci-dessous est conçu pour un profil d’administrateur système qui décrit les exigences, les étapes et l’approche à adopter. Ce parcours définit avec quelles personnes supplémentaires le développeur doit interagir pour réussir son projet, tout en gardant le point de vue du développeur.
 
 ![](/help/journey-onboarding/assets/onboarding-journey.png)
 
 >[!NOTE]
->Voir [Parcours d’intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=en) pour commencer à utiliser votre expérience d’intégration.
+>Consultez le [Parcours d’intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/journey-onboarding/home.html?lang=fr) pour commencer à utiliser votre expérience d’intégration.
 
 
 ## Guides d’[!DNL Experience Manager as a Cloud Service] {#aem-guides}
 
 | Guide de l’utilisateur | Description |
 |---|---|
-| [Présentation](/help/overview/home.md) | Ce guide présente un aperçu des [!DNL Experience Manager as a Cloud Service], y compris une introduction, la terminologie, l’architecture, etc. |
+| [Présentation](/help/overview/home.md) | Ce guide présente [!DNL Experience Manager as a Cloud Service], et comprend une introduction, sa terminologie, son architecture, etc. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Ce guide fournit des informations importantes sur la dernière version de [!DNL Experience Manager as a Cloud Service], notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus. |
 | [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant [!DNL Experience Manager as a Cloud Service]. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec [!DNL Experience Manager Sites] et l’administrer. |

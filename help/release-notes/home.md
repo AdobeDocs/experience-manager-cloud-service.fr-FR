@@ -4,8 +4,8 @@ description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Clo
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
 source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
 workflow-type: tm+mt
-source-wordcount: '615'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] as a Cloud
 
 Pour se préparer pour une version :
 
-1. Annotez vos calendriers : vérifiez les dates clés des versions mensuelles de la [feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service) et annotez vos calendriers pour vous préparer aux activités clés afin de vous préparer à la version.
+1. Annotez vos calendriers : vérifiez les dates clés des versions mensuelles de la [feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service) et annotez vos calendriers pour vous préparer aux activités clés afin de vous préparer à la version.
 1. Consultez les notes de mise à jour : lisez les [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour vous familiariser avec les fonctionnalités de version et de version préliminaire.
 1. Accédez aux nouvelles fonctionnalités et essayez-les : activez le [canal de version préliminaire](/help/release-notes/prerelease.md) dans vos environnements hors production et commencez à essayer les fonctionnalités à évaluer dans vos environnements personnalisés.
 1. Formez vos utilisateurs : utilisez la documentation et les ressources Experience League pour mettre les utilisateurs au courant rapidement et leur faire maîtriser les nouvelles fonctionnalités.

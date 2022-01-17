@@ -5,8 +5,8 @@ landing-page-description: Découvrez les sujets de sécurité importants concern
 exl-id: 17a5f951-84e4-4a15-8919-985451e3b527
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ Cette page répertorie les ressources d’aide autonome sur la sécurité dans E
 
 | Guide de l’utilisateur | Description |
 |---|---|
-| [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, la terminologie, l’architecture, etc. |
+| [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, sa terminologie, son architecture, etc. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Ce guide fournit des informations importantes sur la dernière version d’Experience Manager as a Cloud Service, notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus. |
 | [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer. |

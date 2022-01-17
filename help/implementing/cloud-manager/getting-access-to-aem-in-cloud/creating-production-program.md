@@ -4,8 +4,8 @@ description: Création d’un programme de production
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 0d3a4b296440becab8ef372a1061f1981cb05897
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 92%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ Pour créer un programme de production, procédez comme suit :
 
    ![](assets/setup-prod-commerce.png)
 
-1. Une fois que la carte du programme s’affiche sur la landing page, sélectionnez **...** pour afficher les options de menu disponibles. Sélectionner **Cloud Manager**, comme illustré dans la figure ci-dessous, pour accéder au **Présentation** page.
+1. Une fois que la carte du programme s’affiche sur la landing page, sélectionnez **...** pour afficher les options de menu disponibles. Sélectionnez **Cloud Manager**, comme illustré dans l’image ci-dessous, pour accéder à la page **Présentation**.
 
    ![](assets/navigate-cm.png)
 

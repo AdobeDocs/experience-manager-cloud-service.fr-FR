@@ -3,8 +3,8 @@ title: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

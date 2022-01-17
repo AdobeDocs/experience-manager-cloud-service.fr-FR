@@ -6,8 +6,8 @@ role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: 1fac1f6a987c9266b0dd7ce0786b9dff6791b925
 workflow-type: tm+mt
-source-wordcount: '2838'
-ht-degree: 79%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -74,8 +74,8 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
       * Si vous entrez un **libellé de champ**, le **nom de propriété** est automatiquement renseigné. S’il est vide, il peut être mis à jour manuellement par la suite.
 
          >[!CAUTION]
-         Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères latins, des chiffres et un trait de soulignement &quot;_&quot; comme caractère spécial.
-         Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
+         Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères latins, des chiffres et le trait de soulignement « _ » parmi les caractères spéciaux.
+         Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
       Par exemple :
 
       ![propriétés de champ](assets/cfm-models-05.png)
@@ -138,10 +138,10 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
 * **Nom de la propriété**
 
-   Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **must** contain *only* Caractères latins, chiffres et trait de soulignement &quot;_&quot; comme caractère spécial.
+   Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **ne** doivent contenir *que* des caractères latins, des chiffres et des traits de soulignement « _ » parmi les caractères spéciaux.
 
    >[!CAUTION]
-   Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
+   Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances.
@@ -376,7 +376,7 @@ Pour configurer les **stratégies** des **modèles de fragments de contenu autor
 Les modèles de fragment de contenu autorisés pour un dossier sont résolus comme suit :
 * **Stratégies** pour les **modèles de fragments de contenu autorisés**.
 * Si elles sont absentes, essayez de déterminer la stratégie à l’aide des règles d’héritage.
-* Si la chaîne d’héritage ne produit pas de résultat, examinez la configuration **Cloud Services** pour ce dossier (directement dans un premier temps, puis par héritage).
+* Si la chaîne d’héritage ne produit pas de résultat, examinez la configuration de **Services cloud** pour ce dossier (directement dans un premier temps, puis par héritage).
 * Si aucun des éléments ci-dessus ne donne de résultats, il n’existe aucun modèle autorisé pour ce dossier.
 
 ## Suppression d’un modèle de fragment de contenu {#deleting-a-content-fragment-model}
@@ -421,79 +421,79 @@ Pour annuler la publication d’un modèle de fragment de contenu :
 1. Sélectionnez votre modèle, puis l’option **Annuler la publication** dans la barre d’outils.
 L’état publié sera indiqué dans la console.
 
-Si vous essayez d’annuler la publication d’un modèle actuellement utilisé par un ou plusieurs fragments, un avertissement d’erreur vous en informe :
+Si vous essayez d’annuler la publication d’un modèle actuellement utilisé par un ou plusieurs fragments, un avertissement d’erreur vous en informe :
 
 ![Message d’erreur de modèle de fragment de contenu lors de l’annulation de la publication d’un modèle en cours d’utilisation](assets/cfm-model-unpublish-error.png)
 
-Le message vous invite à vérifier la variable [Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) pour en savoir plus :
+Le message vous invite à vérifier le panneau [Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) pour en savoir plus :
 
-![Modèle de fragment de contenu dans les références](assets/cfm-model-references.png)
+![Modèle de fragment de contenu dans le panneau Références](assets/cfm-model-references.png)
 
-## Modèles de fragment de contenu verrouillés (publiés) {#locked-published-content-fragment-models}
+## Modèles de fragment de contenu (publiés) verrouillés {#locked-published-content-fragment-models}
 
 Cette fonctionnalité fournit une gouvernance pour les modèles de fragment de contenu qui ont été publiés.
 
-### Le défi {#the-challenge}
+### La difficulté {#the-challenge}
 
 * Les modèles de fragment de contenu déterminent le schéma des requêtes GraphQL dans AEM.
 
-   * AEM les schémas GraphQL sont créés dès qu’un modèle de fragment de contenu est créé. Ils peuvent exister dans les environnements de création et de publication.
+   * Les schémas GraphQL AEM sont créés dès qu’un modèle de fragment de contenu est créé. Ils peuvent exister dans les environnements de création et de publication.
 
-   * Les schémas lors de la publication sont les plus critiques, car ils fournissent les bases de la diffusion en direct du contenu de fragment de contenu au format JSON.
+   * Les schémas en environnement de publication sont les plus critiques, car ils fournissent les bases de la diffusion en direct du contenu de fragment de contenu au format JSON.
 
-* Des problèmes peuvent survenir lorsque des modèles de fragment de contenu sont modifiés ou, en d’autres termes, modifiés. Cela signifie que le schéma change, ce qui peut à son tour affecter les requêtes GraphQL existantes.
+* Des problèmes peuvent survenir lorsque des modèles de fragment de contenu sont modifiés. Cela signifie que le schéma change, ce qui peut à son tour affecter les requêtes GraphQL existantes.
 
-* L’ajout de nouveaux champs à un modèle de fragment de contenu ne doit (généralement) avoir aucun effet négatif. Toutefois, la modification de champs de données existants (par exemple, leur nom) ou la suppression de définitions de champ rompt les requêtes GraphQL existantes lorsqu’elles demandent ces champs.
+* L’ajout de nouveaux champs à un modèle de fragment de contenu ne doit (généralement) avoir aucun effet négatif. Toutefois, la modification de champs de données existants (par exemple, le nom) ou la suppression de définitions de champ rompt les requêtes GraphQL existantes lorsqu’elles interrogent ces champs.
 
 ### Les exigences {#the-requirements}
 
-* Pour sensibiliser les utilisateurs aux risques lors de la modification de modèles déjà utilisés pour la diffusion de contenu en direct, c’est-à-dire des modèles qui ont été publiés).
+* Sensibiliser les utilisateurs aux risques de la modification de modèles déjà utilisés pour la diffusion de contenu en direct (c’est-à-dire des modèles qui ont déjà été publiés).
 
-* En outre, pour éviter des modifications imprévues.
+* Éviter également toute modification imprévue.
 
-L’un ou l’autre de ces modèles peut interrompre les requêtes si les modèles modifiés sont republiés.
+L’un ou l’autre peut causer une interruption des requêtes si les modèles modifiés sont republiés.
 
 ### La solution {#the-solution}
 
-Pour résoudre ces problèmes, les modèles de fragment de contenu sont les suivants : *verrouillé* en mode LECTURE SEULE sur l’auteur - dès qu’ils ont été publiés. Ceci est indiqué par **Verrouillé**:
+Pour résoudre ces problèmes, les modèles de fragment de contenu sont *verrouillés* en mode LECTURE SEULE pour l’auteur dès leur publication. Ce verrouillage est indiqué par la mention **Verrouillé** :
 
 ![Carte du modèle de fragment de contenu verrouillé](assets/cfm-model-locked.png)
 
 Lorsque le modèle est **Verrouillé** (en mode LECTURE SEULE ), vous pouvez voir le contenu et la structure des modèles, mais vous ne pouvez pas les modifier.
 
-Vous pouvez gérer **Verrouillé** modèles de la console ou de l’éditeur de modèles :
+Vous pouvez gérer les modèles **verrouillés** à partir de la console ou de l’éditeur de modèles :
 
 * Console
 
-   Dans la console, vous pouvez gérer le mode LECTURE SEULE avec le **Déverrouiller** et **Verrouiller** actions dans la barre d’outils :
+   Dans la console, vous pouvez gérer le mode LECTURE SEULE avec les actions **Déverrouiller** et **Verrouiller** dans la barre d’outils :
 
    ![Barre d’outils du modèle de fragment de contenu verrouillé](assets/cfm-model-locked.png)
 
    * Vous pouvez **Déverrouiller** un modèle pour activer les modifications.
 
-      Si vous sélectionnez **Déverrouiller** un avertissement s’affiche et vous devez confirmer que la variable **Déverrouiller** action :
+      Si vous sélectionnez **Déverrouiller**, un avertissement s’affiche et vous devez confirmer l’action **Déverrouiller** :
       ![Message lors du déverrouillage du modèle de fragment de contenu](assets/cfm-model-unlock-message.png)
 
       Vous pouvez ensuite ouvrir le modèle pour le modifier.
 
    * Vous pouvez également **Verrouiller** le modèle par la suite.
-   * La republication du modèle le réinitialise immédiatement. **Verrouillé** Mode (LECTURE SEULE).
+   * La republication du modèle le rebascule immédiatement en mode **Verrouillé** (LECTURE SEULE).
 
 * Éditeur de modèles
 
-   * Lorsque vous ouvrez un modèle verrouillé, trois actions s’affichent : **Annuler**, **Afficher en lecture seule**, **Modifier**:
+   * Lorsque vous ouvrez un modèle verrouillé, trois actions s’affichent : **Annuler**, **Afficher en lecture seule**, **Modifier** :
 
       ![Message lors de l’affichage d’un modèle de fragment de contenu verrouillé](assets/cfm-model-editor-lock-message.png)
 
-   * Si vous sélectionnez **Afficher en lecture seule** vous pouvez voir le contenu et la structure du modèle :
+   * Si vous sélectionnez **Afficher en lecture seule**, vous pouvez voir le contenu et la structure du modèle :
 
-      ![Affichage en lecture seule - modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-view-only.png)
+      ![Affichage en lecture seule - Modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-view-only.png)
 
-   * Si vous sélectionnez **Modifier** vous pouvez modifier et enregistrer vos mises à jour :
+   * Si vous sélectionnez **Modifier**, vous pouvez modifier et enregistrer vos mises à jour :
 
-      ![Modifier : modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-edit.png)
+      ![Modifier – Modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-edit.png)
 
       >[!NOTE]
-      Un avertissement peut toujours s’afficher en haut de l’écran, mais c’est le cas lorsque le modèle est déjà utilisé par les fragments de contenu existants.
+      Un avertissement peut toujours s’afficher en haut de l’écran, mais seulement lorsque le modèle est déjà utilisé par les fragments de contenu existants.
 
-   * **Annuler** vous renvoie à la console.
+   * **Annuler** vous ramène à la console.

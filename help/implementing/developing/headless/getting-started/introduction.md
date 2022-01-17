@@ -4,14 +4,14 @@ description: Grâce à ce guide de démarrage rapide, découvrez les fondamentau
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
 source-git-commit: 0c552c3d2c2f623c3eae8e387870bf121eb56f94
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 72%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Guide de prise en main du mode découplé {#introduction}
 
-Les Guides de prise en main sans tête présentent un chemin simple pour créer, gérer et diffuser des expériences à l’aide d’AEM as a Cloud Service en cinq étapes pour les utilisateurs qui connaissent déjà AEM et la technologie sans tête. Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
+Les Guides de prise en main en matière de découplage présentent une méthode simple pour créer, gérer et diffuser des expériences à l’aide d’AEM as a Cloud Service en cinq étapes pour les utilisateurs qui connaissent déjà AEM et la technologie découplée. Chaque guide s’appuie sur le précédent ; il est donc recommandé de les étudier en détail et dans l’ordre.
 
 1. [Création d’une configuration](create-configuration.md)
 1. [Création d’un modèle de fragment de contenu](create-content-model.md)
@@ -21,14 +21,14 @@ Les Guides de prise en main sans tête présentent un chemin simple pour créer,
 
 >[!TIP]
 >
->Ce guide de prise en main suppose des connaissances en AEM et en technologies sans tête.
+>Ce guide de prise en main s’appuie sur des connaissances préalables concernant AEM et les technologies découplées.
 >
->Si vous êtes nouveau en AEM ou sans interface, reportez-vous à nos Parcours de documentation sans interface pour une introduction de bout en bout à la fois sans interface et comment AEM le prend en charge.
+>Si vous n’êtes pas familier avec AEM ou le découplage, reportez-vous à nos Parcours de documentation découplés pour découvrir tout sur le découplage et sur la façon dont AEM le prend en charge.
 >
 >* [Parcours de développement découplé](/help/journey-headless/developer/overview.md)
->* [Parcours d’architecture de contenu sans affichage](/help/journey-headless/architect/overview.md)
->* [Parcours de création de contenu sans affichage](/help/journey-headless/author/overview.md)
->* [Parcours de traduction sans affichage](/help/journey-headless/translation/overview.md).
+>* [Parcours d’architecture de contenu découplé](/help/journey-headless/architect/overview.md)
+>* [Parcours de création de contenu découplé](/help/journey-headless/author/overview.md)
+>* [Parcours de traduction découplée](/help/journey-headless/translation/overview.md).
 
 
 ## Public {#audience}

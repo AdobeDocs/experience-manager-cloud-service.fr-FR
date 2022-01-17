@@ -4,8 +4,8 @@ description: Conseils de développement pour AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
 workflow-type: tm+mt
-source-wordcount: '2180'
-ht-degree: 86%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -169,9 +169,9 @@ Les clients n’auront pas accès aux outils de développement pour les environn
 
 Adobe surveille les performances de l’application et prend des mesures pour remédier à cette détérioration. Actuellement, il n’est pas possible d’observer les mesures d’application.
 
-## Envoi d’un email {#sending-email}
+## Envoi d’un e-mail {#sending-email}
 
-Les sections ci-dessous décrivent comment demander, configurer et envoyer des emails.
+Les sections ci-dessous décrivent comment demander, configurer et envoyer des e-mails.
 
 >[!NOTE]
 >
@@ -179,13 +179,13 @@ Les sections ci-dessous décrivent comment demander, configurer et envoyer des e
 
 ### Activation de l’e-mail sortant {#enabling-outbound-email}
 
-Par défaut, les ports utilisés pour envoyer des emails sont désactivés. Pour activer un port, configurez les [réseau avancé](/help/security/configuring-advanced-networking.md), en veillant à définir pour chaque environnement nécessaire la variable `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` les règles de transfert de port de endpoint, qui mappe le port prévu (par exemple, 465 ou 587) à un port proxy.
+Par défaut, les ports utilisés pour envoyer des e-mails sont désactivés. Pour activer un port, configurez la [mise en réseau avancée](/help/security/configuring-advanced-networking.md) en veillant à définir pour chaque environnement nécessaire les règles de transfert du port de point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, qui mappent le port prévu (par exemple, 465 ou 587) à un port proxy.
 
-Il est recommandé de configurer une mise en réseau avancée avec une `kind` paramètre défini sur `flexiblePortEgress` car Adobe peut optimiser les performances du trafic de sortie de port flexible. Si une adresse IP sortante unique est nécessaire, choisissez une `kind` du paramètre `dedicatedEgressIp`. Si vous avez déjà configuré VPN pour d’autres raisons, vous pouvez également utiliser l’adresse IP unique fournie par cette variante de mise en réseau avancée.
+Il est recommandé de configurer une mise en réseau avancée avec un paramètre `kind` défini sur `flexiblePortEgress`, car Adobe peut optimiser les performances du trafic de sortie de port flexible. Si une adresse IP sortante unique est nécessaire, choisissez un paramètre `kind` de `dedicatedEgressIp`. Si vous avez déjà configuré un VPN pour d’autres raisons, vous pouvez également utiliser l’adresse IP unique fournie par cette variante de mise en réseau avancée.
 
-Vous devez envoyer des emails par l’intermédiaire d’un serveur de messagerie plutôt que directement aux clients de messagerie. Sinon, les emails peuvent être bloqués.
+Vous devez envoyer des e-mails par l’intermédiaire d’un serveur de messagerie plutôt que directement aux clients de messagerie. Sans cela, les e-mails pourraient être bloqués.
 
-### Envoi d’emails {#sending-emails}
+### Envoi d’e-mails {#sending-emails}
 
 Le [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr#configuring-the-mail-service) doit être utilisé et les emails doivent être envoyés au serveur de messagerie indiqué dans la demande d’assistance, et non directement aux destinataires.
 
@@ -193,17 +193,17 @@ Le [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/e
 
 Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
 
-Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr) pour plus d’informations sur la configuration des paramètres des e-mails. Pour les AEM as a Cloud Service, notez les modifications nécessaires suivantes au `com.day.cq.mailer.DefaultMailService OSGI` service :
+Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr) pour plus d’informations sur la configuration des paramètres des e-mails. Pour AEM as a Cloud Service, notez les modifications nécessaires suivantes pour le service `com.day.cq.mailer.DefaultMailService OSGI` :
 
 * Le nom d’hôte du serveur SMTP doit être défini sur $[env:AEM_PROXY_HOST;default=proxy.tunnel]
-* Le port du serveur SMTP doit être défini sur la valeur du port proxy d’origine défini dans le paramètre portForwards utilisé dans l’appel API lors de la configuration de la mise en réseau avancée. Par exemple, 30465 (plutôt que 465)
+* Le port du serveur SMTP doit être défini sur la valeur du port proxy d’origine défini dans le paramètre portForwards utilisé dans l’appel de l’API lors de la configuration de la mise en réseau avancée. Par exemple, 30465 (plutôt que 465).
 
-Il est également recommandé que si le port 465 a été demandé :
+Il est également recommandé, si le port 465 a été demandé, d’opérer les actions suivantes :
 
 * Définissez `smtp.port` sur `465`.
 * Définissez `smtp.ssl` sur `true`.
 
-et si le port 587 a été demandé :
+Si le port 587 a été demandé :
 
 * Définissez `smtp.port` sur `587`.
 * Définissez `smtp.ssl` sur `false`.
@@ -211,20 +211,20 @@ et si le port 587 a été demandé :
 La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud Service au moment de son exécution sur une valeur appropriée. Par conséquent, si `smtp.ssl` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Cette règle s’applique indépendamment des valeurs de `smtp.starttls` définies dans votre configuration OSGI.
 
 
-Le service de messagerie peut éventuellement être configuré avec la prise en charge d’OAuth2. Pour plus d’informations, voir [Prise en charge d’OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md).
+Le service de messagerie peut également être configuré avec la prise en charge d’OAuth2. Pour plus d’informations, voir [Prise en charge d’OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md).
 
-### Configuration d’email héritée {#legacy-email-configuration}
+### Configuration d’e-mail héritée {#legacy-email-configuration}
 
-Avant la version 2021.9.0, le courrier électronique était configuré par le biais d’une demande d’assistance clientèle. Notez les réglages nécessaires suivants au niveau du `com.day.cq.mailer.DefaultMailService OSGI` service :
+Avant la version 2021.9.0, l’e-mail était configuré par le biais d’une demande du service clientèle. Notez les modifications nécessaires suivantes pour le service `com.day.cq.mailer.DefaultMailService OSGI` :
 
-AEM as a Cloud Service nécessite que le courrier soit envoyé par le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, il est possible d’utiliser le port 587 tant que l’option TLS est activée.
+AEM as a Cloud Service nécessite que l’e-mail soit envoyé via le port 465. Si un serveur de messagerie ne prend pas en charge le port 465, il est possible d’utiliser le port 587 tant que l’option TLS est activée.
 
 Si le port 465 a été demandé :
 
 * Définissez `smtp.port` sur `465`.
 * Définissez `smtp.ssl` sur `true`.
 
-et si le port 587 a été demandé :
+Si le port 587 a été demandé :
 
 * Définissez `smtp.port` sur `587`.
 * Définissez `smtp.ssl` sur `false`.

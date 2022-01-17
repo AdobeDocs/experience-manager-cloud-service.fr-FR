@@ -1,14 +1,14 @@
 ---
 title: Références du développeur pour  [!DNL Assets]
-description: '[!DNL Assets] APIs and developer reference content lets you manage assets, including binary files, metadata, renditions, comments, and [!DNL Content Fragments].'
+description: '[!DNL Assets] Les API et le contenu de référence des développeurs vous permettent de gérer des ressources, notamment des fichiers binaires, des métadonnées, des rendus, des commentaires et des [!DNL Content Fragments].'
 contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: bd00cd19852affd24d732c15b03dbf8248f2ff38
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -185,7 +185,7 @@ Pour la configuration du workflow de post-traitement, utilisez les workflows sta
 
 ## Prise en charge des étapes d’un workflow de post-traitement {#post-processing-workflows-steps}
 
-Si vous effectuez une mise à niveau à partir d’une version précédente d’[!DNL Experience Manager], vous pouvez utiliser les microservices de ressources pour traiter les ressources. Les microservices de ressources natifs en mode cloud sont plus simples à configurer et à utiliser. Certaines étapes appliquées dans le workflow [!UICONTROL Ressource de mise à jour de la gestion des actifs numériques] de la version précédente ne sont pas prises en charge. Pour plus d’informations sur les classes prises en charge, voir [Référence de l’API Java ou JavaDocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
+Si vous effectuez une mise à niveau à partir d’une version précédente d’[!DNL Experience Manager], vous pouvez utiliser les microservices de ressources pour traiter les ressources. Les microservices de ressources natifs en mode cloud sont plus simples à configurer et à utiliser. Certaines étapes appliquées dans le workflow [!UICONTROL Ressource de mise à jour de la gestion des actifs numériques] de la version précédente ne sont pas prises en charge. Pour plus d’informations sur les classes prises en charge, consultez [Référence de l’API Java ou Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Les modèles de workflow techniques suivants ont été remplacés par des microservices de ressources ou la prise en charge n’est pas disponible :
 

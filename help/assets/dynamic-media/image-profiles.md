@@ -6,8 +6,8 @@ role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
 workflow-type: tm+mt
-source-wordcount: '3234'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes
   </tr>
   <tr>
    <td>Rayon</td>
-   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2.  La plage est 0 à 250.</td>
+   <td>Détermine le nombre de pixels entourant les pixels de contour qui affectent l’accentuation. Pour les images à haute résolution, entrez une valeur comprise entre 1 et 2. Une valeur faible accentue uniquement les pixels de contour ; une valeur élevée accentue une bande plus large de pixels. La valeur appropriée dépend de la taille de l’image. La valeur par défaut est 0,2. La plage est 0 à 250.</td>
   </tr>
   <tr>
    <td>Seuil</td>
@@ -229,7 +229,7 @@ Une fois que vous avez modifié et enregistré un recadrage intelligent, le chan
 
 >[!IMPORTANT]
 >
->Lorsque vous réalignez ou redimensionnez manuellement la fenêtre de recadrage intelligent de plusieurs ressources, ces modifications sont conservées, même si vous décidez par la suite de retraiter ces ressources. Toutefois, si vous modifiez la largeur, la hauteur ou les deux dans la variable **[!UICONTROL Recadrage d’image réactif]** dans le profil d’image, ces ressources sont alors soumises au retraitement.
+>Lorsque vous réalignez ou redimensionnez manuellement la fenêtre de recadrage intelligent de plusieurs ressources, ces modifications sont conservées, même si vous décidez par la suite de traiter à nouveau ces ressources. Toutefois, si vous modifiez la largeur, la hauteur ou les deux dans la variable **[!UICONTROL Recadrage d’image réactive]** dans le profil d’image, ces ressources sont alors soumises à un nouveau traitement.
 >Voir [Retraiter des ressources Dynamic Media dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, si nécessaire.

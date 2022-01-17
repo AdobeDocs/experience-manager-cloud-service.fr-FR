@@ -1,27 +1,27 @@
 ---
-title: AEM Headless Content Architect Journey
-description: An introduction to the powerful, and flexible, headless features of Adobe Experience Manager as a Cloud Service, and how to model content for your project.
+title: Parcours d’architecture de contenu découplé AEM
+description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et explique comment modéliser le contenu de votre projet.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 37%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Content Modeling for Headless with AEM - An Introduction {#architect-headless-introduction}
+# Modélisation de contenu pour le découplage avec AEM – Introduction {#architect-headless-introduction}
 
-[](overview.md)
+Dans cette partie du [Parcours d’architecture de contenu découplé AEM](overview.md), vous pouvez découvrir les concepts (de base) et la terminologie nécessaires pour comprendre la modélisation de contenu pour la diffusion de contenu découplé avec Adobe Experience Manager (AEM) as a Cloud Service.
 
-This document helps you understand headless content delivery, how AEM supports headless, and how content is modeled for headless. Après l’avoir lu, vous devriez :
+Ce document vous aide à comprendre la diffusion de contenu découplé, comment AEM prend en charge le découplage et comment le contenu est modélisé pour le découplage. Après l’avoir lu, vous devriez :
 
-* Understand the basic concepts of headless content delivery.
-* Be familiar with how AEM supports headless and content modeling.
+* comprendre les concepts de base de la diffusion de contenus en mode découplé ;
+* vous être familiarisé avec la façon dont AEM prend en charge le découplage et la modélisation de contenu.
 
 ## Objectif {#objective}
 
 * **Audience** : débutant
-* ****
+* **Objectif** : découvrez les concepts et la terminologie relatifs à la modélisation de contenu découplé.
 
 ## Diffusion de contenu full stack {#full-stack}
 
@@ -29,18 +29,18 @@ Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échel
 
 ![CMS full stack classique](/help/journey-headless/developer/assets/full-stack.png)
 
-In a full-stack CMS, all of the functionality for manipulating content is in the CMS. Les fonctionnalités de ce système constituent différents composants de la pile CMS. Une solution full stack présente de nombreux avantages.
+Dans un CMS full stack, toutes les fonctionnalités de manipulation de votre contenu se trouvent dans le système. Les fonctionnalités de ce système constituent différents composants de la pile CMS. Une solution full stack présente de nombreux avantages.
 
-* There is one system to maintain.
+* Il n’y a qu’un seul système à maintenir.
 * Le contenu est géré de manière centralisée.
 * Tous les services du système sont intégrés.
 * La création de contenu est transparente.
 
-So if new channel needs to be added or support for new types of experiences is required, one (or more) new components can be inserted into the stack and there is only one place to make changes.
+Ainsi, si un nouveau canal doit être ajouté ou si la prise en charge de nouveaux types d’expériences est requise, un ou plusieurs nouveaux composants peuvent être insérés dans la pile et les modifications ne peuvent être apportées qu’à un seul emplacement.
 
 ![Ajout d’un nouveau canal à la pile](/help/journey-headless/developer/assets/adding-channel.png)
 
-However the complexity of the dependencies within the stack quickly become apparent as other items in the stack need to be adjusted to accommodate the changes.
+Cependant, la complexité des dépendances au sein de la pile apparaît rapidement, car d’autres éléments nécessitent des ajustements pour tenir compte des modifications.
 
 ## La tête d’un système découplé {#the-head}
 
@@ -56,28 +56,28 @@ Omettre la tête (en mode découplé) permet de simplifier le CMS en éliminant 
 
 ## Modélisation de contenu {#content-modeling}
 
-Content Modeling (also known as data modeling) is your specialty, so what needs to be considered when modeling for headless?
+La modélisation de contenu (également appelée modélisation de données) est votre spécialité. Par conséquent, que doit-on prendre en compte lors de la modélisation pour le découplage ?
 
-For the headless applications to be able to access your content, and do something with it, the content really needs to have a predefined structure. **
+Pour que les applications découplées puissent accéder à votre contenu et l’utiliser, le contenu a vraiment besoin d’une structure prédéfinie. Il serait possible de donner à votre contenu une forme libre, mais cela compliquerait *grandement* les choses pour les applications.
 
-**** ****
+Pour AEM, en tant qu’architecte de contenu, vous exécuterez la modélisation de contenu afin de concevoir un ensemble de **Modèles de fragments de contenu**. Ceux-ci définissent la structure utilisée lorsque les auteurs de contenu créent les **Fragments de contenu** qui contiennent le contenu.
 
-### Accessing the Content {#access-content}
+### Accès au contenu {#access-content}
 
-This is more of a development detail - but it might interest you, just to complete the story.
+En matière de développement, il s’agit d’un détail, mais ça pourrait vous intéresser, pour vous fournir une vue globale.
 
-Once you&#39;ve created the Content Fragment Models, and your authors have used them to generate the content, the headless applications will need to access this content.
+Une fois que vous avez créé les modèles de fragment de contenu et que vos auteurs les ont utilisés pour générer le contenu, les applications découplées doivent accéder à ce contenu.
 
-Adobe Experience Manager (AEM) as a Cloud Service, can selectively access your Content Fragments using the AEM GraphQL API, to return only the content that is needed. **
+Grâce à Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez accéder de manière sélective à vos fragments de contenu, à l’aide de l’API AEM GraphQL, pour renvoyer uniquement le contenu nécessaire. Grâce à l’API, un développeur peut formuler des requêtes qui sélectionnent un contenu spécifique. Ce processus de sélection est basé sur *vos* modèles de fragment de contenu.
 
-This means your project can realize headless delivery of structured content for use in your applications.
+Cela signifie que votre projet peut réaliser une diffusion découplée d’un contenu structuré pour l’utiliser dans vos applications.
 
 ## Et après ? {#whats-next}
 
-[](basics.md)
+Maintenant que vous avez appris les concepts et la terminologie, l’étape suivante consiste à [découvrir les principes de base de la modélisation avec des modèles de fragment de contenu](basics.md).
 
 ## Ressources supplémentaires {#additional-resources}
 
 * Parcours de développement découplé AEM
    * [En savoir plus sur le développement CMS découplé](/help/journey-headless/developer/learn-about.md)
-   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)
+   * [Découvrez comment modéliser votre contenu](/help/journey-headless/developer/model-your-content.md)
