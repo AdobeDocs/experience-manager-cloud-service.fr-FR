@@ -3,7 +3,7 @@ title: Utilisation de plusieurs référentiels Git source
 description: Utilisation de plusieurs référentiels Git source – Cloud Services
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
 source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '747'
 ht-degree: 100%
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Au lieu de travailler directement avec le référentiel Git de Cloud Manager, les clients peuvent travailler avec un ou plusieurs référentiels Git qu’ils détiennent. Dans ce cas, un processus de synchronisation automatique doit être configuré pour s’assurer que le référentiel Git de Cloud Manager soit toujours à jour. Selon l’emplacement d’hébergement du référentiel Git du client, il est possible d’utiliser une action GitHub ou une solution d’intégration continue comme Jenkins pour configurer l’automatisation. Si une automatisation a été mise en place, il est possible de transférer automatiquement vers le référentiel Git de Cloud Manager les transmissions destinées à un référentiel Git détenu par le client.
 
-Bien que cette automatisation d’un seul référentiel Git détenu par le client soit simple, la configuration de ce processus pour plusieurs référentiels nécessite une configuration initiale. Le contenu des référentiels Git doit être mappé avec différents répertoires dans le référentiel Git unique de Cloud Manager.  Ce référentiel doit être mis en service avec un modèle pom Maven racine qui répertorie les différents sous-projets dans la section des modules.
+Bien que cette automatisation d’un seul référentiel Git détenu par le client soit simple, la configuration de ce processus pour plusieurs référentiels nécessite une configuration initiale. Le contenu des référentiels Git doit être mappé avec différents répertoires dans le référentiel Git unique de Cloud Manager. Ce référentiel doit être mis en service avec un modèle pom Maven racine qui répertorie les différents sous-projets dans la section des modules.
 
 Vous trouverez ci-dessous un exemple de modèle pom pour deux référentiels Git détenus par le client : le premier projet sera placé dans le répertoire `project-a`, le second dans le répertoire `project-b`.
 
