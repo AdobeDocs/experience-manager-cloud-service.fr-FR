@@ -3,9 +3,9 @@ title: Développement découplé pour AEM Sites as a Cloud Service
 description: Découvrez comment les puissantes fonctionnalités d’AEM as a Cloud Service telles que les modèles de contenu, les fragments de contenu et l’API GraphQL fonctionnent ensemble pour vous permettre de gérer vos expériences de manière centralisée et de les diffuser sur l’ensemble des canaux.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 387e75faeccb0671a32a54ff0c12f05219844311
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '515'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ AEM as a Cloud Service est un outil couple pour le modèle d’implémentation d
 1. API de contenu pour la diffusion
    * L’API AEM GraphQL prend en charge la diffusion de fragments de contenu.
    * L’API REST AEM Assets prend en charge les opérations CRUD sur les fragments de contenu.
-   * La diffusion directe de contenu est également possible avec l’[exportation JSON du composant principal de fragment de contenu.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)
+   * La diffusion directe de contenu est également possible avec l’[exportation JSON du composant principal de fragment de contenu.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)
 
 ## Vos premiers pas avec AEM découplé {#first-steps}
 
@@ -53,6 +53,6 @@ Un certain nombre de ressources sont disponibles pour que vous puissiez commence
 
 | Ressource | Description | Type | Public | Temps estimé |
 |---|---|---|---|---|
-| [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | **Pour les utilisateurs qui découvrent les technologies AEM et** headles, commencez ici pour une présentation complète d’AEM et de ses fonctionnalités sans tête, de la théorie de l’absence de tête à la mise en ligne de votre premier projet sans tête. | Guide des | Développeurs  **nouveau à AEM et sans tête** | 1 heure |
-| [Guide de prise en main du mode découplé](/help/implementing/developing/headless/getting-started/introduction.md) | **Pour les** utilisateurs AEM expérimentés qui ont besoin d’un bref résumé des principales fonctionnalités AEM headless, consultez cet aperçu de démarrage rapide. | Démarrage rapide | Développeurs, Administrateurs  **avec AEM expérience** | 20 minutes |
-| [Prise en main avec le tutoriel pratique d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr) | **Si vous préférez une approche pratique et que vous connaissez AEM**, ce tutoriel vous plonge directement dans la création d’un simple projet sans tête. | Tutoriel | Développeurs | 2 heures |
+| [Parcours de développement découplé](/help/journey-headless/developer/overview.md) | **En tant qu’utilisateurs peu familiers avec AEM et avec les technologies découplées**, faites vos premiers pas avec cette présentation complète d’AEM et de ses fonctionnalités découplées, des bases du découplage à la mise en ligne de votre premier projet découplé. | Guide | Développeurs **débutants avec AEM et le découplage** | 1 heure |
+| [Guide de prise en main du mode découplé](/help/implementing/developing/headless/getting-started/introduction.md) | **Pour les utilisateurs AEM expérimentés** qui ont besoin d’un bref résumé des principales fonctionnalités d’AEM découplé, consultez cet aperçu de démarrage rapide. | Démarrage rapide | Développeurs, Administrateurs  **disposant d’expérience dans AEM** | 20 minutes |
+| [Prise en main avec le tutoriel pratique d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=fr) | **Si vous préférez une approche pratique et êtes déjà familier avec AEM**, ce tutoriel aborde directement la création d’un projet simple en mode découplé. | Tutoriel | Développeurs | 2 heures |
