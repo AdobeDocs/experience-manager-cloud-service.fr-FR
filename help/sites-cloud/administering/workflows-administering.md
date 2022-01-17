@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1118'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -168,21 +168,21 @@ Vous pouvez définir la taille maximale de la boîte de réception en configuran
 |---|---|
 | Taille de requête de boîte de réception maximale | granite.workflow.inboxQuerySize |
 
-## Utilisation de variables Workflow pour les banques de données détenues par le client {#using-workflow-variables-customer-datastore}
+## Utilisation de variables de workflow pour les banques de données détenues par le client {#using-workflow-variables-customer-datastore}
 
-Les données traitées par les workflows sont stockées dans le stockage fourni par l’Adobe (JCR). Ces données peuvent être sensibles par nature. Vous pouvez enregistrer toutes les métadonnées/données définies par l’utilisateur dans votre propre stockage géré au lieu d’Adobe le stockage fourni. Ces sections décrivent comment configurer ces variables pour un stockage externe.
+Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées et les données définies par l’utilisateur dans votre propre enregistrement géré au lieu de celui fourni par Adobe. Ces sections décrivent comment configurer ces variables pour un enregistrement externe.
 
-### Définir le modèle pour utiliser le stockage externe des métadonnées {#set-model-for-external-storage}
+### Définition du modèle pour utiliser l’enregistrement externe des métadonnées {#set-model-for-external-storage}
 
-Au niveau du modèle de workflow, un indicateur est fourni pour indiquer que le modèle (et ses instances d’exécution) dispose d’un stockage externe des métadonnées. Les variables de workflow ne seront pas conservées dans JCR pour les instances de workflow des modèles marqués pour le stockage externe.
+Au niveau du modèle de workflow, un indicateur est fourni pour indiquer que le modèle (et ses instances d’exécution) dispose d’un enregistrement externe des métadonnées. Les variables de workflow ne seront pas conservées dans le JCR pour les instances de workflow des modèles marqués pour l’enregistrement externe.
 
-La propriété *userMetadataPersistenceEnabled* sera stockée sur le *noeud jcr:content* du modèle de workflow. Cet indicateur sera conservé dans les métadonnées de workflow sous la forme *cq:userMetaDataCustomPersistenceEnabled*.
+La propriété *userMetadataPersistenceEnabled* sera stocké dans le nœud *jcr:content node* du modèle de workflow. Cet indicateur sera conservé dans les métadonnées de workflow sous le nom *cq:userMetaDataCustomPersistenceEnabled*.
 
-L’illustration ci-dessous montre comment définir l’indicateur sur un workflow.
+L’illustration ci-dessous montre comment définir l’indicateur dans un workflow.
 
 ![workflow-externalize-config](/help/sites-cloud/administering/assets/workflow-externalize-config.png)
 
-### API pour les métadonnées dans un stockage externe {#apis-for-metadata-external-storage}
+### API pour les métadonnées dans un enregistrement externe {#apis-for-metadata-external-storage}
 
 Pour stocker les variables en externe, vous devez implémenter les API exposées par le workflow.
 
