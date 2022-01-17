@@ -1,13 +1,13 @@
 ---
 title: Création d’une branche
 description: Cette page décrit la création d’une branche dans Cloud Manager pour Screens as a Cloud Service.
-source-git-commit: b9b27c09b1f4a1799a8c974dfb846295664be998
+exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '206'
 ht-degree: 100%
 
 ---
-
 
 # Création d’un environnement dans Cloud Manager {#create-environment-screens-cloud}
 
@@ -41,4 +41,3 @@ Une fois la création du projet terminée, la mise à jour de la carte d’appel
 ## Et après ? {#whats-next}
 
 Une fois que vous avez appris à configurer un environnement pour votre programme dans Cloud Manager, vous êtes prêt à passer à l’étape suivante du processus d’intégration : [Exécution du pipeline](/help/screens-cloud/onboarding-screens-cloud/running-a-pipeline.md).
-
