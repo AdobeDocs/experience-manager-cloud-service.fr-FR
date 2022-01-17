@@ -3,7 +3,7 @@ title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement découplé AEM, apprenez à modéliser votre contenu pour une diffusion AEM découplée à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1830'
 ht-degree: 100%
 
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Comment modéliser votre contenu {#model-your-content}
 
-Dans cette partie du [Parcours de développement découplé AEM](overview.md), vous pouvez apprendre à modéliser votre structure de contenu. Ensuite, réalisez cette structure pour Adobe Experience Manager (AEM) à l’aide des modèles de fragments de contenu et des fragments de contenu, afin de la réutiliser sur plusieurs canaux.
+Dans cette partie du [Parcours de développement découplé AEM](overview.md), vous pouvez apprendre à modéliser votre structure de contenu. Créez ensuite cette structure pour Adobe Experience Manager (AEM) à l’aide des modèles de fragments de contenu et des fragments de contenu, en vue de la réutiliser sur plusieurs canaux.
 
 ## Un peu d’histoire...  {#story-so-far}
 
