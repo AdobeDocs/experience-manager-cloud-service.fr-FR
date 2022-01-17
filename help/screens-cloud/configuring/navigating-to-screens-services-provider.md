@@ -1,13 +1,13 @@
 ---
 title: Accès au fournisseur de services Screens
 description: Cette page décrit comment accéder au fournisseur de services Screens.
-source-git-commit: e856724c678195d632461c9dc99dcf1bfd1c79a1
+exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
+source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: ht
 source-wordcount: '220'
 ht-degree: 100%
 
 ---
-
 
 # Accès au fournisseur de services Screens {#setup-screens-services-provider}
 
@@ -42,4 +42,3 @@ Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens
 ## Et après ? {#whats-next}
 
 Une fois que vous avez appris à configurer le fournisseur de services Screens, accédez à [Utilisation du fournisseur de contenu Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=fr) pour plus d’informations.
-
