@@ -138,7 +138,6 @@ Les racines de langues peuvent désormais être regroupées dans des nœuds, par
 >
 >* `/content/wknd/language-masters/en`
 >* `/content/wknd/language-masters/americas/central-america/es`
-
 >
 > Cette copie de langue `es` n’est pas détectée car elle se trouve à deux niveaux (`americas/central-america`) du nœud `en`.
 

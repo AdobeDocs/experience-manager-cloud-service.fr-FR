@@ -49,7 +49,7 @@ Pour supprimer un référentiel dans Cloud Manager, procédez comme suit :
 >[!NOTE]
 >La suppression d’un référentiel entraînera les éléments suivants :
 >1. Le nom du référentiel supprimé sera inutilisable pour de nouveaux référentiels qui pourraient être créés ultérieurement. Un message d’erreur, comme illustré ci-dessous, s’affiche dans ce cas :
-   >*Le nom du référentiel doit être unique au sein de l’organisation.*
+>*Le nom du référentiel doit être unique au sein de l’organisation.*
 >1. Le référentiel supprimé sera indisponible dans Cloud Manager et ne peut donc pas être lié à un pipeline.
 
 
