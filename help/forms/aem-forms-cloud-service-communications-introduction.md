@@ -2,10 +2,10 @@
 title: Présentation de la fonctionnalité Communications de Forms as a Cloud Service
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 8e20383a03f157f01da66bab930a3eccf674dde7
+source-git-commit: c0305e030d351962d34f314cdd35ac7c79774b5a
 workflow-type: tm+mt
-source-wordcount: '1840'
-ht-degree: 93%
+source-wordcount: '1869'
+ht-degree: 85%
 
 ---
 
@@ -20,13 +20,12 @@ Vous pouvez générer un document à la demande ou créer une tâche par lots po
 
 * fonctionnalités de génération de documentation par lots et à la demande simplifiées ;
 
-* fournir des API HTTP pour une intégration plus facile aux systèmes existants ;
+* API HTTP pour une intégration plus facile aux systèmes existants. Des API distinctes pour les opérations à la demande (faible latence) et par lots (opérations à débit élevé) sont incluses. La génération de documents devient ainsi une tâche efficace.
 
 * un accès sécurisé aux données. Les API de communication se connectent aux données et y accèdent uniquement à partir de référentiels de données désignés par les clients, ne créent aucune copie locale de données, ce qui rend les communications hautement sécurisées ;
 
-* des API distinctes pour les opérations de faible latence et de débit élevé, ce qui fait de la génération de documents une tâche efficace.
-
 ![Exemple de relevé de carte de crédit](assets/statement.png)
+Un exemple de relevé de carte de crédit peut être créé à l’aide des API de communication. Le relevé utilise le même modèle, mais des données distinctes pour chaque client selon leur utilisation de la carte de crédit.
 
 ## Fonctionnement ?
 
@@ -143,16 +142,15 @@ Avant de commencer à générer des documents à l’aide des API de communicati
 
 ### Données de formulaire {#form-data}
 
-Les API de communication acceptent une conception de formulaire généralement créée dans [Designer](use-forms-designer.md) et les données de formulaire XML en tant qu’entrée. Pour remplir un document avec des données, un élément XML doit exister dans les données de formulaire XML pour chaque champ de formulaire à remplir. Le nom de l’élément XML doit correspondre au nom du champ. Un élément XML est ignoré s’il ne correspond pas à un champ de formulaire ou si le nom de l’élément XML ne correspond pas au nom du champ. Il n’est pas nécessaire de correspondre à l’ordre dans lequel les éléments XML sont affichés. Le facteur important est que les éléments XML sont spécifiés avec les valeurs correspondantes.
+Les API de communication acceptent une conception de formulaire généralement créée dans [Designer](use-forms-designer.md) et les données de formulaire XML en tant qu’entrée. Pour remplir un document avec des données, un élément XML doit exister dans les données de formulaire XML pour chaque champ de formulaire à remplir. Le nom de l’élément XML doit correspondre au nom du champ. Si un élément XML ne correspond pas à un champ de formulaire ou si le nom de l’élément XML ne correspond pas au nom du champ, l’élément XML est ignoré. Il n’est pas nécessaire de correspondre à l’ordre dans lequel les éléments XML sont affichés. Le facteur important est que les éléments XML sont spécifiés avec les valeurs correspondantes.
 
 Examinez l’exemple de formulaire de demande de prêt suivant :
 
 ![Formulaire de demande de prêt](assets/loanFormData.png)
 
-Pour fusionner les données dans ce design de formulaire, créez une source de données XML correspondant au formulaire. Le code XML suivant représente une source de données XML correspondant à l’exemple de formulaire de demande de prêt immobilier.
+Pour fusionner les données dans cette conception de formulaire, créez une source de données XML correspondant à la hiérarchie du formulaire, à l’attribution de noms aux champs et aux types de données. Le code XML suivant représente une source de données XML correspondant à l’exemple de formulaire de demande de prêt immobilier.
 
 ```XML
-<?xml version="1.0" encoding="UTF-8" ?>
 * <xfa:datasets xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/">
 * <xfa:data>
 * <data>
@@ -196,11 +194,11 @@ For email functionality, you can create a process in Experience Manager Workflow
 
 ### Zones imprimables {#printable-areas}
 
-La marge non imprimable de 0,25 pouce par défaut n’est pas exacte pour les imprimantes d’étiquettes et varie d’une imprimante à l’autre et de la taille de l’étiquette à la taille de l’étiquette. Il est recommandé de conserver la marge de 0,25 pouce ou de la réduire. Il est toutefois recommandé de ne pas augmenter la marge non imprimable. Dans le cas contraire, les informations de la zone imprimable ne s’impriment pas correctement.
+La marge non imprimable de 0,25 pouces par défaut n’est pas exacte pour les imprimantes d’étiquettes et varie d’une imprimante à l’autre. Il est toutefois recommandé de conserver la marge de 0,25 pouces ou de la réduire. Il est toutefois recommandé de ne pas augmenter la marge non imprimable. Dans le cas contraire, les informations de la zone imprimable ne s’impriment pas correctement.
 
 Assurez-vous toujours d’utiliser le fichier XDC approprié pour l’imprimante. Par exemple, évitez de choisir un fichier XDC pour une imprimante 300 dpi et d’envoyer le document vers une imprimante 200 dpi.
 
-### Scripts {#scripts}
+### Scripts pour les formulaires XFA (XDP/PDF uniquement) {#scripts}
 
 Un design de formulaire utilisé avec les API Communications peut contenir des scripts qui s’exécutent sur le serveur. Assurez-vous qu’un design de formulaire ne contient pas de scripts exécutés sur le client. Pour plus d’informations sur la création de scripts de conception de formulaire, voir [Aide de Designer](use-forms-designer.md).
 
@@ -250,7 +248,7 @@ Un profil de périphérique (fichier XDC) est un fichier de description d’impr
 * dpl600.xdc
 
 Vous pouvez utiliser les fichiers XDC fournis pour générer des documents d’impression ou les modifier en fonction de vos besoins.
-&lt;!-* Il n’est pas nécessaire de modifier ces fichiers pour créer des documents. Vous pouvez toutefois les modifier pour répondre aux besoins de votre entreprise. -->
+<!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 Ces fichiers sont des fichiers XDC de référence qui prennent en charge les fonctionnalités d’imprimantes spécifiques, telles que les polices propres à l’imprimante, les bacs d’alimentation papier et les agrafeuses. L’objectif de cette référence est de vous aider à comprendre comment configurer vos propres imprimantes à l’aide de profils d’appareil. Les références sont également un point de départ pour des imprimantes similaires dans la même gamme de produits.
 
