@@ -1,14 +1,14 @@
 ---
 title: Téléchargement de ressources
 description: Téléchargez des ressources depuis [!DNL Adobe Experience Manager Assets] et activez ou désactivez la fonctionnalité de téléchargement.
-contentOwner: AG
+contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: df914527b61bcf0f9dcdff09c0a7086ee16c7ba4
+source-git-commit: 6ca6d06d48782f9a03d6b1b948c82b02ff7302ab
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 79%
+source-wordcount: '1196'
+ht-degree: 78%
 
 ---
 
@@ -33,7 +33,7 @@ Vous pouvez télécharger des ressources Experience Manager à l’aide des mét
 
 ## Téléchargement de ressources à l’aide de l’interface [!DNL Experience Manager]  {#download-assets}
 
-Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette fonctionnalité permet des téléchargements plus rapides.
+Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les fichiers plus petits sont téléchargés en temps réel à partir de l’interface utilisateur. [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette fonctionnalité permet des téléchargements plus rapides.
 
 Par défaut, Experience Manager déclenche une notification à la fin du workflow de téléchargement. La notification de téléchargement apparaît dans la variable  [[!DNL Experience Manager] Boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
 
@@ -52,11 +52,11 @@ Asynchronous downloads are triggered in either of the following case:
 * If the download takes more than 30 seconds to prepare.
 -->
 
-### Activer les notifications par e-mail pour les téléchargements volumineux {#enable-emails-for-large-downloads}
+### Activation des notifications par e-mail pour les téléchargements volumineux {#enable-emails-for-large-downloads}
 
 Les téléchargements asynchrones sont déclenchés dans l’un des cas suivants :
 
-* S’il existe plus de 10 ressources
+* S’il y a plus de dix ressources
 * Si la taille de téléchargement est supérieure à 100 Mo
 * Si la préparation du téléchargement prend plus de 30 secondes
 
