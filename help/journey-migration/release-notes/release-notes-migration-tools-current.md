@@ -1,47 +1,33 @@
 ---
-title: Notes de mise à jour des outils de migration dans AEM version 2021.12.0 as a Cloud Service
-description: Notes de mise à jour des outils de migration dans AEM version 2021.12.0 as a Cloud Service
+title: Notes de mise à jour des outils de migration dans AEM version as a Cloud Service 2022.1.0
+description: Notes de mise à jour des outils de migration dans AEM version as a Cloud Service 2022.1.0
 feature: Release Information
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+source-git-commit: fec3a69db3b05a6b750ebf718f32f599cac24d0c
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 19%
+source-wordcount: '157'
+ht-degree: 26%
 
 ---
 
 
-# Notes de mise à jour des outils de migration dans AEM version 2021.12.0 as a Cloud Service {#release-notes}
+# Notes de mise à jour des outils de migration dans AEM version as a Cloud Service 2022.1.0 {#release-notes}
 
-Cette page présente les notes de mise à jour des outils de migration dans AEM 2021.12.0 as a Cloud Service.
+Cette page présente les notes de mise à jour des outils de migration dans AEM as a Cloud Service 2022.1.0.
 
 >[!NOTE]
 >Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
-
-## Analyseur des bonnes pratiques {#bpa-release}
-
-### Date de publication {#release-date-bpa}
-
-La date de publication de la version 2.1.2 de l’analyseur des bonnes pratiques est le 1er décembre 2021.
-
-### Nouveautés {#what-is-new-bpa}
-
-* Possibilité de détecter et de générer des rapports sur la version d’ACS commons utilisée.
-* Possibilité de détecter et de générer des rapports sur le nombre d’utilisateurs et de sous-groupes d’un groupe.
-* Possibilité de détecter et de générer des rapports sur les valeurs de propriété de noeud dans MongoDB dépassant 16 Mo.
-
-### Correctifs {#bug-fixes-bpa}
-
-* La détection des composants Foundation a été améliorée afin de réduire les faux négatifs.
-* Pour les clients AEM Forms, message BPA concernant `EMAIL_PDF_SUBMIT_ACTION` n’étant pas disponible sur AEM as a Cloud Service a été corrigé.
 
 
 ## Outil de transfert de contenu {#ctt-release}
 
 ### Date de publication {#release-date-ctt}
 
-La date de publication de l’outil de transfert de contenu v1.7.10 est le 8 décembre 2021.
+La date de publication de l’outil de transfert de contenu v1.7.18 est le 18 janvier 2022.
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Activation/désactivation de l’ajout à la phase d’ingestion dans l’outil de transfert de contenu pour permettre aux utilisateurs de désactiver [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) pendant l’ingestion. Pour des vitesses d’ingestion optimales, la pré-copie lors de l’ingestion doit être désactivée pour les petits jeux de migration ou si seulement quelques objets Blob ont été ajoutés depuis la dernière ingestion.
-* Mappage des utilisateurs mis à jour afin d’utiliser une API de gestion des utilisateurs améliorée qui lui permet d’obtenir 2 000 utilisateurs à la fois, ce qui améliore considérablement les performances.
+* Basculer vers la phase d’extraction de l’outil de transfert de contenu pour permettre aux utilisateurs de désactiver [pre-copy](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) lors de l’extraction. Pour des vitesses d’extraction optimales, la pré-copie lors de l’extraction doit être désactivée pour les petits jeux de migration ou si seulement quelques objets Blob ont été ajoutés depuis la dernière extraction.
+
+### Correctifs {#bug-fixes-ctt}
+
+* Configurations par défaut mises à jour afin de réduire les délais d’exécution lors de l’extraction.
