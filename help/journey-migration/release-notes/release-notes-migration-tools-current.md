@@ -2,10 +2,10 @@
 title: Notes de mise à jour des outils de migration dans AEM version as a Cloud Service 2022.1.0
 description: Notes de mise à jour des outils de migration dans AEM version as a Cloud Service 2022.1.0
 feature: Release Information
-source-git-commit: fec3a69db3b05a6b750ebf718f32f599cac24d0c
+source-git-commit: 0bc2dedd9bfbf138fddf9fe112ba0d66444fcb41
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 26%
+source-wordcount: '134'
+ht-degree: 14%
 
 ---
 
@@ -13,10 +13,6 @@ ht-degree: 26%
 # Notes de mise à jour des outils de migration dans AEM version as a Cloud Service 2022.1.0 {#release-notes}
 
 Cette page présente les notes de mise à jour des outils de migration dans AEM as a Cloud Service 2022.1.0.
-
->[!NOTE]
->Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
-
 
 ## Outil de transfert de contenu {#ctt-release}
 
