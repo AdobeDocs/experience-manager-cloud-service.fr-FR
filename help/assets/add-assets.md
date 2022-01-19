@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 98249e838f1434ae6f4a40fefee4ca78f0812457
+source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2720'
+ht-degree: 68%
 
 ---
 
@@ -104,6 +104,11 @@ If you upload many assets to [!DNL Experience Manager], the I/O requests to serv
 Vous pouvez charger une ressource avec le même chemin d’accès (même nom et même emplacement) que celui d’une ressource existante. Cependant, une boîte de dialogue d’avertissement s’affiche avec les options suivantes :
 
 * Remplacer la ressource existante : si vous remplacez une ressource existante, les métadonnées de la ressource et les modifications antérieures (annotations, recadrage, etc.) apportées à une ressource existante sont supprimées.
+
+   >[!NOTE]
+   >
+   >L’option de remplacement des ressources n’est pas disponible si la ressource est verrouillée ou extraite.
+
 * Créer une autre version : une nouvelle version de la ressource existante est créée dans le référentiel. Vous pouvez afficher les deux versions dans le [!UICONTROL Journal] et revenir à la version précédente si nécessaire.
 * Conserver les deux : si vous choisissez de conserver les deux ressources, la nouvelle ressource est renommée.
 
