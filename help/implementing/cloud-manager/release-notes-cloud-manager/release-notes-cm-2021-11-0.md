@@ -1,11 +1,11 @@
 ---
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.11.0
-description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.11.0
+description: Il s’agit des notes de mise à jour de Cloud Manager dans AEM version as a Cloud Service 2021.11.0
 feature: Release Information
-source-git-commit: d6aa3097e558d4e78f20493f214167db57f1a013
+source-git-commit: e402578fc95fd97f808fde01a860d4c583af4c9b
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 79%
+source-wordcount: '458'
+ht-degree: 67%
 
 ---
 
@@ -14,14 +14,15 @@ ht-degree: 79%
 Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
->Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
+>
+>Voir [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service.
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.11.0 est le 04 novembre 2021.
-La prochaine version est prévue pour le 16 décembre 2021.
+La date de publication de Cloud Manager dans AEM 2021.11.0 as a Cloud Service est le 4 novembre 2021.
+La prochaine version est prévue pour le 16 décembre 2021.
 
-### Nouveautés {#what-is-new}
+## Nouveautés {#what-is-new}
 
 * Les utilisateurs peuvent désormais tirer parti des nouveaux pipelines front-end pour déployer le code front-end exclusivement de manière accélérée. Voir [Pipelines front-end de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
 
@@ -50,7 +51,7 @@ La prochaine version est prévue pour le 16 décembre 2021.
 
 * Le fichier CSV de problème de qualité contient désormais l’horodatage de chaque problème.
 
-### Correctifs {#bug-fixes}
+## Correctifs {#bug-fixes}
 
 * Certaines configurations de génération non orthodoxes entraînaient le stockage de fichiers inutiles dans le cache d’artefacts Maven du pipeline, ce qui entraînait des E/S réseau superflues lors du démarrage et de l’arrêt du conteneur de génération.
 
@@ -61,4 +62,3 @@ La prochaine version est prévue pour le 16 décembre 2021.
 * Un message d’erreur indiquant que le nombre maximal de référentiels a été atteint ne précisait pas la raison de l’erreur.
 
 * Dans de rares cas, les pipelines échouaient en raison d’une gestion inappropriée des reprises de certains codes de réponse.
-
