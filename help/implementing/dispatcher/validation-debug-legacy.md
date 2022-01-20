@@ -4,8 +4,8 @@ description: Validation et débogage à l’aide des outils Dispatcher (hérité
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+workflow-type: tm+mt
 source-wordcount: '2304'
 ht-degree: 100%
 
@@ -353,7 +353,7 @@ Cette phase vérifie la syntaxe Apache en démarrant Docker dans une image. Dock
 >[!NOTE]
 >Les utilisateurs de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage de Dispatcher sur un ordinateur local.
 
-Cette phase peut également être exécutée indépendamment via `validator full -d out src/dispatcher`, qui génère un répertoire de sortie, dont a besoin la commande suivante `bin/docker_run.sh out host.internal.docker:4503 8080`.
+Cette phase peut également être exécutée indépendamment via `validator full -d out src/dispatcher`, qui génère un répertoire de sortie, dont a besoin la commande suivante `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
 Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd -t` est également exécutée et toutes les erreurs sont incluses dans le journal des échecs de l’étape de création d’images de Cloud Manager.
 
