@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 64221be65eb54e1edba7e0353bc290a5340063e7
-workflow-type: ht
-source-wordcount: '998'
-ht-degree: 100%
+source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+workflow-type: tm+mt
+source-wordcount: '1002'
+ht-degree: 98%
 
 ---
 
@@ -94,7 +94,7 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
    Authorization: Bearer <Access Token>
    ```
 
-   Pour plus d’informations sur les secrets, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#local-development).
+   Pour plus d’informations sur les secrets, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
 
 1. Démarrez le SDK AEM as a Cloud Service.
 
@@ -114,23 +114,20 @@ L’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) e
 
 >[!TIP]
 >
->Utilisez la [version 24 ou ultérieure de l’archétype de projet AEM](https://github.com/adobe/aem-project-archetype/releases) pour générer le projet.
+>Utilisez toujours la dernière version de la variable [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype/releases) pour générer le projet.
 
 Reportez-vous aux [instructions d’utilisation](https://github.com/adobe/aem-project-archetype#usage) de l’archétype de projet AEM pour savoir comment générer un projet AEM. Pour inclure CIF dans le projet, utilisez l’option `includeCommerce`.
 
 Par exemple :
 
 ```bash
-mvn -B archetype:generate \
- -D archetypeGroupId=com.adobe.granite.archetypes \
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
+ -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=24 \
- -D aemVersion=cloud \
+ -D archetypeVersion=35 \
  -D appTitle="My Site" \
  -D appId="mysite" \
  -D groupId="com.mysite" \
- -D frontendModule=general \
- -D includeExamples=n \
  -D includeCommerce=y
 ```
 
