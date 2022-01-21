@@ -2,14 +2,20 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 86802ae7063f4eec1193fee4b9eaefbb460a7785
+source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2222'
+ht-degree: 96%
 
 ---
 
 # Conseils de développement pour AEM as a Cloud Service {#aem-as-a-cloud-service-development-guidelines}
+
+>[!CONTEXTUALHELP]
+>id="development_guidelines"
+>title="Conseils de développement pour AEM as a Cloud Service"
+>abstract="Dans cet onglet, vous pouvez afficher les bonnes pratiques recommandées pour le codage dans AEM as a Cloud Service. Le codage peut être considérablement différent des déploiements AMS ou On-Prem."
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Démonstration de la structure de module"
 
 Le code s’exécutant dans AEM as a Cloud Service doit savoir qu’il s’exécute toujours dans une grappe. Cela signifie qu’il y a toujours plusieurs instances en cours d’exécution. Le code doit être résilient, d’autant plus qu’une instance peut être arrêtée à tout moment.
 
