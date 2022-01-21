@@ -2,10 +2,10 @@
 title: Traitement par lots des communications Experience Manager [!DNL Forms] as a Cloud Service
 description: Comment créer des communications personnalisées et axées sur la marque ?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
 workflow-type: tm+mt
-source-wordcount: '2299'
-ht-degree: 80%
+source-wordcount: '2297'
+ht-degree: 99%
 
 ---
 
@@ -38,11 +38,11 @@ Une opération par lots est un processus de génération à intervalles planifi�
 
 ### Composants d’une opération par lots {#components-of-a-batch-operations}
 
-**Configuration du cloud** : la configuration d’Experience Manager Cloud vous permet de connecter une instance Experience Manager au stockage Microsoft Azure détenu par le client. Il vous permet de spécifier les informations d’identification du compte Microsoft Azure détenu par le client pour vous y connecter.
+**Configuration du cloud** : la configuration d’Experience Manager Cloud vous permet de connecter une instance Experience Manager au stockage Microsoft Azure détenu par le client. Il vous permet de spécifier les informations d’identification du compte Microsoft Azure détenu par le client pour vous y connecter.
 
-**Configuration de l’entrepôt de données par lots (USC)** : la configuration des données par lots permet de configurer une instance spécifique de stockage Blob pour les API Batch. Il vous permet de spécifier les emplacements d’entrée et de sortie dans le stockage Azure Blob de Microsoft détenu par le client.
+**Configuration de l’entrepôt de données par lots (USC)** : la configuration des données par lots permet de configurer une instance spécifique de stockage Blob pour les API Batch. Il vous permet de spécifier les emplacements d’entrée et de sortie dans le stockage Azure Blob de Microsoft détenu par le client.
 
-**API de lot**: Vous permet de créer des configurations de lot et d’exécuter les exécutions de lot en fonction de ces configurations afin de créer et d’exécuter une opération de lot pour fusionner un PDF ou un modèle XDP avec des données et générer une sortie dans les formats PDF, PS, PCL, DPL, IPL et ZPL. La fonctionnalité Communications fournit des API Batch pour les opérations de création, de lecture, de mise à jour et de suppression.
+**API par lot** : vous permet de créer des configurations de lot et d’exécuter les exécutions de lot en fonction de ces configurations afin de créer et d’exécuter une opération de lot pour fusionner un PDF ou un modèle XDP avec des données et générer une sortie aux formats PDF, PS, PCL, DPL, IPL et ZPL. La fonctionnalité Communications fournit des API Batch pour les opérations de création, de lecture, de mise à jour et de suppression.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -54,7 +54,7 @@ Une opération par lots est un processus de génération à intervalles planifi�
 
 Vous pouvez utiliser des opérations par lots pour générer plusieurs documents selon des intervalles planifiés.
 
->[!VIDEO](https://video.tv.adobe.com/v/337425)
+>[!VIDEO](https://video.tv.adobe.com/v/338349)
 
 Pour savoir comment générer des documents à l’aide d’opérations par lots, vous pouvez regarder la vidéo ou suivre les instructions ci-dessous. La documentation de référence sur les API, en vidéo, est disponible au format .yaml. Vous pouvez télécharger le fichier des [API Batch](assets/batch-api.yaml) et le charger dans Postman pour vérifier les fonctionnalités des API et suivre la vidéo.
 
@@ -81,7 +81,7 @@ Avant d’utiliser une opération par lots :
 Sur votre stockage Microsoft Azure, créez des [conteneurs](https://docs.microsoft.com/fr-fr/azure/vs-azure-tools-storage-explorer-blobs) et [chargez des données client (XML)](https://docs.microsoft.com/fr-fr/azure/vs-azure-tools-storage-explorer-blobs#managing-blobs-in-a-blob-container) dans les [dossiers](https://docs.microsoft.com/fr-fr/azure/storage/blobs/storage-quickstart-blobs-portal) situés à l’intérieur des conteneurs.
 >[!NOTE]
 >
->Vous pouvez configurer le stockage Microsoft Azure pour nettoyer automatiquement le dossier d’entrée ou déplacer le contenu du dossier de sortie vers un autre emplacement à des intervalles planifiés. Veillez toutefois à ce que les dossiers ne soient pas nettoyés lorsqu’une opération de lot référençant les dossiers est toujours en cours d’exécution.
+>Vous pouvez configurer le stockage Microsoft Azure pour nettoyer automatiquement le dossier d’entrée ou déplacer le contenu du dossier de sortie vers un autre emplacement à des intervalles planifiés. Veillez toutefois à ce que les dossiers ne soient pas nettoyés lorsqu’une opération de lot référençant les dossiers est toujours en cours d’exécution.
 
 ### Création d’une configuration de cloud {#create-a-cloud-configuration}
 
@@ -92,7 +92,7 @@ La configuration de cloud connecte votre instance d’Experience Manager au stoc
 1. Indiquez le nom de la configuration et les informations d’identification pour vous connecter au service. Vous pouvez [récupérer ces informations d’identification à partir de votre portail de stockage Microsoft Azure](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-account-keys-manage?tabs=azure-portal#view-account-access-keys).
 1. Cliquez sur Créer.
 
-Votre instance de Experience Manager est maintenant prête à se connecter au stockage Microsoft Azure et à l’utiliser pour stocker et lire le contenu, le cas échéant.
+Votre instance d’Experience Manager est maintenant prête à se connecter au stockage Microsoft Azure et à l’utiliser pour stocker et lire le contenu, le cas échéant.
 
 ### Création d’une configuration d’entrepôt de données par lots {#create-batch-data-store-configuration}
 
@@ -100,11 +100,11 @@ La configuration des données par lots permet de configurer des conteneurs et de
 
 Pour créer la configuration :
 
-1. Accédez à Outils > Formulaires > Lot de sortie - Connecteur de stockage unifié.
+1. Accédez à Outils > Forms > Unified Storage Connector.
 1. Ouvrez un dossier pour héberger la configuration, puis cliquez sur Créer. Utilisez le dossier Global ou créez un dossier.
 1. Remplissez les champs Titre et Nom de la configuration. Pour le stockage, sélectionnez Stockage Microsoft Azure.
-1. Dans Chemin de configuration du stockage, recherchez et sélectionnez la configuration du cloud qui contient les informations d’identification du compte de stockage Azure détenu par le client.
-1. Dans le dossier source, indiquez le nom du conteneur de stockage Azure et du dossier contenant des enregistrements.
+1. Dans le Chemin de la configuration de stockage, parcourez et sélectionnez la configuration du cloud qui contient les informations d’identification du compte de stockage Azure détenu par le client.
+1. Dans le dossier source, indiquez le nom du conteneur de stockage Azure et du dossier contenant les enregistrements.
 1. Pour le dossier de destination, spécifiez le chemin d’accès du conteneur de stockage Azure et du dossier servant à stocker les documents générés.
 1. Cliquez sur Créer.
 
@@ -130,11 +130,11 @@ Pour créer un lot, utilisez l’API `GET /config`. Insérez les propriétés ob
 
 * **configName** : spécifiez le nom unique du lot. Par exemple, `wknd-job`
 * **dataSourceConfigUri** : spécifiez l’emplacement de la configuration de l’entrepôt de données par lots. Il peut s’agir du chemin relatif ou absolu de la configuration. Par exemple : `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes** : spécifiez les formats de sortie : PDF ou PRINT. Si vous utilisez le type de sortie PRINT , dans `printedOutputOptionsList` , spécifiez au moins une option d’impression. Les options d’impression sont identifiées par leur type de rendu. Par conséquent, à l’heure actuelle, plusieurs options d’impression avec le même type de rendu ne sont pas autorisées. Les formats pris en charge sont PS, PCL, DPL, IPL et ZPL.
+* **outputTypes** : spécifiez les formats de sortie : PDF ou PRINT. Si vous utilisez le type de sortie IMPRESSION, dans la propriété `printedOutputOptionsList`, spécifiez au moins une option d’impression. Les options d’impression sont identifiées par leur type de rendu. Par conséquent, à l’heure actuelle, plusieurs options d’impression avec le même type de rendu ne sont pas autorisées. Les formats pris en charge sont PS, PCL, DPL, IPL et ZPL.
 
 * **modèle** : spécifiez le chemin d’accès absolu ou relatif du modèle. Par exemple, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
-Si vous spécifiez un chemin relatif, fournissez également une racine de contenu. Voir la documentation de l’API pour plus d’informations sur la racine du contenu.
+Si vous spécifiez un chemin relatif, fournissez également une racine de contenu. Pour plus d’informations sur la racine du contenu, voir la documentation de l’API.
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
@@ -152,7 +152,7 @@ Pour exécuter un lot, utilisez `POST /config /[configName]/execution`. Par exem
 
 Pour récupérer l’état d’un lot, utilisez `GET /config /[configName]/execution/[execution-identifier]`. execution-identifier est inclus dans l’en-tête de la réponse HTTP pour la demande d’exécution par lots.  Par exemple, l’image suivante affiche le paramètre execution-identifier d’un traitement par lots.
 
-La réponse de la demande d’état contient la section d’état. Il fournit des détails sur l’état de la tâche par lots, le nombre d’enregistrements déjà en cours de traitement (déjà lus et en cours de traitement) et l’état de chaque outputType/renderType (nombre d’éléments en cours, réussis et en échec). L’état inclut également les heures de début et de fin de la tâche par lots, ainsi que des informations sur les erreurs, le cas échéant. L’heure de fin est -1 jusqu’à ce que l’exécution du lot soit réellement terminée.
+La réponse de la demande d’état contient la section d’état. Elle fournit des détails sur l’état de la tâche par lots, le nombre d’enregistrements déjà dans le pipeline (déjà lus et en cours de traitement) et le statut de chaque outputType/renderType (nombre d’éléments en cours, réussis et en échec). Le statut inclut également les heures de début et de fin de la tâche par lots, ainsi que des informations sur les erreurs, le cas échéant. L’heure de fin est -1 jusqu’à ce que l’exécution du lot soit réellement terminée.
 
 >[!NOTE]
 >
@@ -164,7 +164,7 @@ La réponse de la demande d’état contient la section d’état. Il fournit de
 
 Une fois la tâche terminée, les documents générés sont stockés dans le dossier `success`, à l’emplacement de destination spécifié dans la configuration de l’entrepôt de données par lots. En cas d’erreur, le service crée un dossier `failure`. Il fournit des informations sur le type et la raison des erreurs.
 
-Comprenons à l’aide d’un exemple : Supposons qu’il existe un fichier de données d’entrée. `record1.xml` et deux types de sortie : `PDF` et `PCL`. L’emplacement de destination contient alors deux sous-dossiers. `pdf` et `pcl`, un pour chacun des types de sortie. Supposons que la génération du PDF ait réussi, puis que la variable `pdf` Le sous-dossier contient le `success` sous-dossier contenant à son tour le document de PDF généré `record1.pdf`. Supposons que la génération PCL ait échoué, puis que la variable `pcl` Le sous-dossier contient un `failure` sous-dossier contenant à son tour un fichier d&#39;erreur `record1.error.txt` qui contient les détails de l’erreur. En outre, l’emplacement de destination contient un dossier temporaire appelé `__tmp__` qui contient certains fichiers requis lors de l’exécution du lot. Ce dossier peut être supprimé lorsqu’il n’existe aucune exécution par lots principale faisant référence au dossier de destination.
+Comprenons à l’aide d’un exemple : supposons qu’il existe un fichier de données d’entrée `record1.xml` et deux types de sortie : `PDF` et `PCL`. L’emplacement de destination contient alors deux sous-dossiers `pdf` et `pcl`, un pour chacun des types de sortie. Supposons que la génération du PDF ait réussi, alors le sous-dossier `pdf` contient le sous-dossier `success` qui contient à son tour le document PDF `record1.pdf`. Supposons que la génération PCL ait échoué, alors le sous-dossier `pcl` contient un sous-dossier `failure` qui contient à son tour un fichier d’erreur `record1.error.txt` qui contient les détails de l’erreur. En outre, l’emplacement de destination contient un dossier temporaire appelé `__tmp__` qui contient certains fichiers requis lors de l’exécution du lot. Ce dossier peut être supprimé lorsqu’il n’existe aucune exécution par lots active faisant référence au dossier de destination.
 
 >[!NOTE]
 >
@@ -227,7 +227,7 @@ La documentation de référence sur les API fournit des informations détaillée
 
 * Assurez-vous que le fichier de données XML ne contient pas l’en-tête de déclaration XML. Par exemple, `<?xml version="1.0" encoding="UTF-8"?>`
 
-* Lorsque l’option IMPRESSION est spécifiée, un type de rendu particulier ne peut être spécifié qu’une seule fois dans la liste des options d’impression. Par exemple, vous ne pouvez pas avoir deux options d’impression spécifiant chacune un type de rendu PCL.
+* Lorsque l’option IMPRESSION est spécifiée, un type de rendu particulier ne peut être spécifié qu’une seule fois dans la liste des options d’impression. Par exemple, vous ne pouvez pas définir deux options d’impression spécifiant chacune un type de rendu PCL.
 
 * Ne modifiez pas la configuration de la source de données USC/Azure Cloud utilisée dans une configuration de lot pendant l’exécution du lot. Même après l’exécution, si une mise à jour est requise, créez une copie de la configuration au lieu de mettre à jour celle utilisée dans une configuration de lot existante.
 
