@@ -1,7 +1,7 @@
 ---
 title: Processus de configuration - Présentation
 description: Processus de configuration - Présentation
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
@@ -38,9 +38,9 @@ Pour plus d’informations, consultez [Intégration d’Experience Manager as a
 
 ### Ressources et liens
 
-• [Prise en charge IMS d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=fr)\
-• [Permissions basées sur les rôles dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=fr#what-is-required)\
-• [Accès à Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#getting-access)
+* [Prise en charge IMS d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=fr)
+* [Permissions basées sur les rôles dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=fr#what-is-required)
+* [Accès à Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#getting-access)
 
 
 ## Intégration d’Adobe Experience Manager as a Cloud Service
@@ -49,7 +49,8 @@ Pour plus d’informations, consultez [Intégration d’Experience Manager as a
 
 ### 2. Intégration des organisations dans l’Adobe Admin Console :
 
->   ![processoverview2.jpg](./assets/processOverview2.jpg)
+![processoverview2.jpg](./assets/processOverview2.jpg)
+
 * Administrateur système :
    * Fournissez les programmes et environnements AEM.
    * Accédez à l’Admin Console pour les tâches d’administration.
@@ -61,7 +62,7 @@ Pour plus d’informations, consultez [Intégration d’Experience Manager as a
 
 ### 3. Intégration d’utilisateurs et gestion des accès dans l’Admin Console :
 
->   ![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](./assets/processOverview3.jpg)
 
 Trois méthodes pour intégrer les utilisateurs, en fonction de la taille et des préférences :
 * Création manuelle d’utilisateurs dans l’Admin Console
