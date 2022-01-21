@@ -22,7 +22,6 @@ Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets,
 >
 >* l’API REST Assets,
 >* y compris la prise en charge des fragments de contenu
-
 >
 >L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
 
@@ -148,7 +147,6 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >
 >* [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vidéo – Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
-
 >
 
 
