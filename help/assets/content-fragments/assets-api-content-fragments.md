@@ -3,8 +3,8 @@ title: Prise en charge des fragments de contenu d’Adobe Experience Manager as
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 88f43d2f1acaa4e00bc9ce06d188e4b9312a1c08
-workflow-type: ht
+source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 100%
 
@@ -22,6 +22,7 @@ Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets,
 >
 >* l’API REST Assets,
 >* y compris la prise en charge des fragments de contenu
+
 >
 >L’implémentation actuelle de l’API HTTP Assets est basée sur le style architectural [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer).
 
@@ -53,7 +54,7 @@ L’API REST Assets est disponible pour chaque installation prête à l’emplo
 
 ## Concepts clés {#key-concepts}
 
-L’API REST Assets offre un accès de type [REST](https://fr.wikipedia.org/wiki/Representational_state_transfer) aux ressources stockées dans une instance AEM.
+L’API REST Assets offre un accès de type [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) aux ressources stockées dans une instance AEM.
 
 Elle utilise le point d’entrée `/api/assets` et requiert le chemin d’accès de la ressource pour y accéder (sans `/content/dam` qui précède).
 
@@ -147,6 +148,7 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 >
 >* [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vidéo – Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+
 >
 
 
@@ -309,19 +311,22 @@ Il existe quelques restrictions :
 
 Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
-* **200** (OK) 
-Retourné lorsque :
+* **200** (OK)
+
+   Affiché dans le scénario suivant :
 
    * demande d’un fragment de contenu via `GET`
    * mise à jour réussie d’un fragment de contenu via `PUT`
 
 * **201** (Créé)
-Retourné lorsque :
+
+   Affiché dans le scénario suivant :
 
    * création réussie d’un fragment de contenu via `POST`
 
 * **404** (Introuvable)
-Affiché dans le scénario suivant :
+
+   Affiché dans le scénario suivant :
 
    * le fragment de contenu demandé n’existe pas
 
