@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
-workflow-type: ht
-source-wordcount: '3929'
-ht-degree: 100%
+source-git-commit: 3b69ce9236254301127dfe93dba899b565c5c642
+workflow-type: tm+mt
+source-wordcount: '3952'
+ht-degree: 99%
 
 ---
 
@@ -584,6 +584,10 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Utilisez `... on`
       * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec une référence de contenu](#sample-wknd-fragment-specific-model-content-reference)
 
+* Secours lors de l’interrogation de fragments imbriqués :
+
+   * Si une variation donnée n’existe pas dans un fragment imbriqué, la variable **Principal** est renvoyée.
+
 ## Requêtes conservées (cache) {#persisted-queries-caching}
 
 Après avoir préparé une requête avec une requête POST, elle peut être exécutée avec une requête GET qui peut être mise en cache par des caches HTTP ou un réseau CDN.
@@ -796,7 +800,8 @@ Vous trouverez ci-dessous les étapes nécessaires à la conservation d’une re
    >
    >Par exemple, comme dans la demande d’exécution d’une requête persistante :
    >
-   >```xml
+   >
+   ```xml
    >curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    >```
 
