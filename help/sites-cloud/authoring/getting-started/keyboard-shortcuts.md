@@ -2,8 +2,8 @@
 title: Raccourcis clavier pour les consoles
 description: Utilisez ces raccourcis clavier pour gagner du temps lors de la création
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+source-git-commit: 9fe87a61315019c23d90b85154af6c89e1528b0d
+workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Assets, Utilis
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-cloud/authoring/getting-started/search.md) |
 |  | `Alt+`&lt;`Number`> | Choisir l’option de [sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector) à afficher |
-|  | &grave; | Masquer le rail |
+|  | ``` ` ``` | Masquer le rail |
 |  | `e` | Modifier |
 |  | `p` | Propriétés |
 |  | `m` | Déplacer |
