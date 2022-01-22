@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 505fde14e02f79dcf950fb4bdb6a74b6a7ba40e6
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 96%
+source-wordcount: '1295'
+ht-degree: 59%
 
 ---
 
@@ -24,27 +24,72 @@ ht-degree: 96%
 
 ## Partage de ressources en tant que lien {#sharelink}
 
-Le partage de ressources au moyen d’un lien est très pratique dans la mesure où il permet à des tiers d’y accéder sans avoir besoin de se connecter au préalable à [!DNL Assets]. Les utilisateurs disposant de privilèges d’administrateur ou avec des autorisations de lecture à l’emplacement `/var/dam/share` peuvent afficher les liens partagés avec eux.
+Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de tiers sans qu’ils aient à se connecter à [!DNL Assets]. Cette fonctionnalité permet aux utilisateurs anonymes d’accéder aux ressources partagées avec eux et de les télécharger. Lorsque les utilisateurs téléchargent des ressources à partir de liens partagés, [!DNL Assets] utilise un service asynchrone qui offre des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans une boîte de réception dans les archives ZIP de taille de fichier gérable. Pour les téléchargements très volumineux, le téléchargement est regroupé dans des fichiers de 100 Go.
 
-![Boîte de dialogue Partage de liens](assets/link-share-dialog.png)
+<!--
+Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
+-->
 
 >[!NOTE]
 >
 >* Vous devez disposer de l’autorisation Modifier l’ACL pour le dossier ou la ressource que vous souhaitez partager sous forme d’un lien.
->* Avant de partager un lien avec des utilisateurs, [activez les e-mails sortants](/help/implementing/developing/introduction/development-guidelines.md#sending-email). Dans le cas contraire, une erreur se produira.
+>* [Activer les emails sortants](/help/implementing/developing/introduction/development-guidelines.md#sending-email) avant de partager un lien avec les utilisateurs.
 
 
-1. Dans l’interface utilisateur [!DNL Assets], sélectionnez la ressource à partager sous forme de lien.
-1. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager le lien]**. Le [!UICONTROL Partage de liens] s’affiche, avec un lien de ressource généré automatiquement dans la **[!UICONTROL Partager le lien]** champ .
+Il existe deux façons de partager les ressources à l’aide de la fonctionnalité de partage de lien :
+
+1. Générer un lien partagé, [copier et partager le lien de la ressource ;](#copy-and-share-assets-link) avec d’autres utilisateurs. Le délai d’expiration par défaut du lien est d’un jour. Vous ne pouvez pas modifier le délai d’expiration lors du partage du lien copié avec d’autres utilisateurs.
+
+1. Générer un lien partagé et [partager le lien de la ressource par courrier électronique ;](#share-assets-link-through-email). Dans ce cas, vous pouvez modifier les valeurs par défaut, telles que la date et l’heure d’expiration, et permettre le téléchargement des ressources d’origine et de ses rendus. Vous pouvez envoyer des e-mails à plusieurs utilisateurs en ajoutant leurs adresses électroniques.
+
+![Boîte de dialogue Partage de liens](assets/link-sharing-dialog.png)
+
+### Copier et partager le lien de la ressource{#copy-and-share-asset-link}
+
+Pour partager des ressources sous la forme d’une URL publique :
+
+1. Connectez-vous à [!DNL Experience Manager Assets] et accédez à **[!UICONTROL Fichiers]**.
+1. Sélectionnez la ou les ressources ou le dossier contenant les ressources. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager le lien]**.
+1. Le **[!UICONTROL Partage de liens]** s’affiche, avec un lien de ressource généré automatiquement dans la **[!UICONTROL Partager le lien]** champ .
+1. Copiez le lien de la ressource et partagez-le avec les utilisateurs.
+
+### Partage de lien de ressource par courrier électronique {#share-assets-link-through-email}
+
+Pour partager des ressources par courrier électronique :
+
+1. Sélectionnez la ou les ressources ou le dossier contenant les ressources. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager le lien]**.
+1. Le **[!UICONTROL Partage de liens]** s’affiche, avec un lien de ressource généré automatiquement dans la **[!UICONTROL Partager le lien]** champ .
 
    * Dans la zone d’e-mail, saisissez l’adresse e-mail de l’utilisateur avec lequel vous souhaitez partager le lien. Vous pouvez partager le lien avec plusieurs utilisateurs. Si l’utilisateur appartient à votre organisation, sélectionnez son e-mail dans la liste déroulante de suggestions qui s’affiche. Si l’utilisateur est externe à votre organisation, saisissez l’e-mail complet et appuyez sur **[!UICONTROL Entrée]** pour l’ajouter à la liste des utilisateurs.
 
-   * Dans la zone **[!UICONTROL Objet]**, indiquez l’objet de la ressource que vous souhaitez partager.
+   * Dans le **[!UICONTROL Objet]** , saisissez un objet pour spécifier l’objectif des ressources partagées.
    * Dans la zone **[!UICONTROL Message]**, vous pouvez, au besoin, saisir un message.
-   * Dans le champ **[!UICONTROL Expiration]**, spécifiez la date et l’heure d’expiration du lien à l’aide du sélecteur de date. Le délai d’expiration par défaut du lien est de 1 jour.
+   * Dans le champ **[!UICONTROL Expiration]**, spécifiez la date et l’heure d’expiration du lien à l’aide du sélecteur de date.
    * Cochez la case **[!UICONTROL Autoriser le téléchargement du fichier d’origine]** pour permettre aux destinataires de télécharger le rendu d’origine.
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec les utilisateurs. Les utilisateurs reçoivent un e-mail contenant le lien partagé.
+
+![Message Partage de lien](assets/link-sharing-email-notification.png)
+
+### Téléchargement de ressources à l’aide du lien de ressource
+
+Tout utilisateur ayant accès au lien de la ressource partagée peut télécharger les ressources regroupées dans un dossier zip. Le processus de téléchargement est le même, qu’un utilisateur accède au lien de la ressource copiée ou qu’il utilise le lien de la ressource partagé par le biais du courrier électronique.
+
+* Cliquez sur le lien de la ressource ou collez l’URL dans votre navigateur. Le [!UICONTROL Partage de liens] s’ouvre dans laquelle vous pouvez passer à la [!UICONTROL Mode Carte] ou [!UICONTROL Mode Liste].
+
+* Dans le [!UICONTROL Mode Carte], vous pouvez placer le pointeur de la souris sur la ressource partagée ou le dossier de ressources partagées pour sélectionner les ressources ou les mettre en file d’attente pour téléchargement.
+
+* Par défaut, l’interface utilisateur affiche la variable **[!UICONTROL Télécharger la boîte de réception]** . Il indique la liste de toutes les ressources partagées ou de tous les dossiers mis en file d’attente pour téléchargement, ainsi que leur état.
+
+* Lors de la sélection des ressources ou du dossier, une **[!UICONTROL Téléchargement de la file d’attente]** s’affiche à l’écran. Cliquez sur le bouton **[!UICONTROL Téléchargement de la file d’attente]** pour lancer le processus de téléchargement.
+
+   ![Téléchargement de la file d’attente](assets/queue-download.png)
+
+* Lorsque le fichier de téléchargement est préparé, cliquez sur le **[!UICONTROL Télécharger la boîte de réception]** pour afficher l’état de votre téléchargement. Pour les téléchargements volumineux, cliquez sur le **[!UICONTROL Actualiser]** pour mettre à jour l’état.
+
+   ![Boîte de réception de téléchargement](assets/link-sharing-download-inbox.png)
+
+* Une fois le traitement terminé, cliquez sur l’icône **[!UICONTROL Télécharger]** pour télécharger le fichier zip.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.
@@ -146,6 +191,7 @@ Pour générer une URL pour les ressources que vous souhaitez partager avec des 
 >[!NOTE]
 >
 >Si vous souhaitez partager des liens de votre instance de création vers des entités externes, veillez à n’exposer que les URL suivantes pour les requêtes `GET`. Bloquez les autres URL pour garantir la sécurité de votre instance de création.
+>
 >* `[aem_server]:[port]/linkshare.html`
 >* `[aem_server]:[port]/linksharepreview.html`
 >* `[aem_server]:[port]/linkexpired.html`

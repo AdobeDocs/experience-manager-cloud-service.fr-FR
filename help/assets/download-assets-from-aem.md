@@ -5,10 +5,10 @@ contentOwner: VG
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 797f0e6585666196acf7972f93d936fc54359c4a
+source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 84%
+source-wordcount: '1032'
+ht-degree: 79%
 
 ---
 
@@ -57,6 +57,10 @@ Asynchronous downloads are triggered in either of the following case:
 
 <!-- Go live is on 27th Jan 2022
 ### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
+
+>[!NOTE]
+>
+>This functionality is available in the Experience Manager prerelease channel.
 
 Asynchronous downloads are triggered in any of the following cases:
 
@@ -114,13 +118,13 @@ Pour télécharger des ressources, procédez comme suit :
 >This functionality is available in the Experience Manager prerelease channel.
 -->
 
-Le partage de ressources au moyen d’un lien est très pratique pour le mettre à disposition des personnes intéressées sans avoir besoin de se connecter au préalable à [!DNL Assets]. Voir [Fonctionnalité Partage de liens](/help/assets/share-assets.md#sharelink).
+Le partage de ressources à l’aide d’un lien est un moyen pratique de le mettre à la disposition des personnes intéressées sans qu’elles aient à se connecter à [!DNL Assets]. Voir [Fonctionnalité Partage de liens](/help/assets/share-assets.md#sharelink).
 
 Lorsque les utilisateurs téléchargent des ressources à partir de liens partagés, [!DNL Assets] utilise un service asynchrone qui offre des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans une boîte de réception dans les archives ZIP de taille de fichier gérable. Pour les téléchargements très volumineux, le téléchargement est divisé en fichiers de 100 Go.
 
-La boîte de réception affiche l’état du traitement de chaque archive. Une fois le traitement terminé, vous pouvez télécharger les archives à partir de la boîte de réception.
+Le [!UICONTROL Télécharger la boîte de réception] affiche l’état du traitement de chaque archive. Une fois le traitement terminé, vous pouvez télécharger les archives à partir de la boîte de réception.
 
-![Boîte de réception de téléchargement](assets/download-inbox.png)
+![Boîte de réception de téléchargement](assets/link-sharing-download-inbox.png)
 
 ## Activation du servlet de téléchargement de ressources {#enable-asset-download-servlet}
 
