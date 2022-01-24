@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 48efd852c990238661177bc40e2be7971b7d4949
+source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3358'
+ht-degree: 88%
 
 ---
 
@@ -139,7 +139,7 @@ Pour configurer la connexion, procédez comme suit :
 1. Configurez [!DNL Dynamic Media] sur les déploiements [!DNL Sites] locaux et [!DNL Assets] distants. Procédez selon les instructions de la section [configuration [!DNL Dynamic Media]](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
    * Utilisez le même nom de société dans toutes les configurations.
-   * Sur le déploiement [!DNL Sites] local, dans le [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Désactivé par défaut]**. Le déploiement [!DNL Sites] nécessite uniquement un accès en lecture seule au compte [!DNL Dynamic Media].
+   * Sur le déploiement [!DNL Sites] local, dans le [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Désactivé par défaut]**. Le [!DNL Sites] Le déploiement doit disposer d’un accès en lecture seule à la variable [!DNL Dynamic Media] compte .
    * Sur le déploiement [!DNL Sites] local, dans l’option **[!UICONTROL Publier les ressources]**, sélectionnez **[!UICONTROL Publication sélective]**. Ne sélectionnez pas **[!UICONTROL Synchroniser tout le contenu]**.
    * Sur le déploiement [!DNL Assets] distant, dans le [!UICONTROL mode de synchronisation Dynamic Media], sélectionnez **[!UICONTROL Activé par défaut]**.
 
