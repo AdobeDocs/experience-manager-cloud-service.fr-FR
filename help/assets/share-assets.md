@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Collaboration,Asset Distribution
 role: User,Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: c74846dc4d4da9fa5050ce7b8ffce7f27e77269b
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 59%
+source-wordcount: '1289'
+ht-degree: 58%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 59%
 
 ## Partage de ressources en tant que lien {#sharelink}
 
-Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de tiers sans qu’ils aient à se connecter à [!DNL Assets]. Cette fonctionnalité permet aux utilisateurs anonymes d’accéder aux ressources partagées avec eux et de les télécharger. Lorsque les utilisateurs téléchargent des ressources à partir de liens partagés, [!DNL Assets] utilise un service asynchrone qui offre des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans une boîte de réception dans les archives ZIP de taille de fichier gérable. Pour les téléchargements très volumineux, le téléchargement est regroupé dans des fichiers de 100 Go.
+Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de tiers sans qu’ils aient à se connecter à [!DNL Assets]. Cette fonctionnalité permet aux utilisateurs anonymes d’accéder aux ressources partagées avec eux et de les télécharger. Lorsque les utilisateurs téléchargent des ressources à partir de liens partagés, [!DNL Assets] utilise un service asynchrone qui offre des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans une boîte de réception dans les archives ZIP de taille de fichier gérable. Pour les téléchargements volumineux, le téléchargement est regroupé dans des fichiers de 100 Go.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -49,7 +49,7 @@ Il existe deux façons de partager les ressources à l’aide de la fonctionnali
 Pour partager des ressources sous la forme d’une URL publique :
 
 1. Connectez-vous à [!DNL Experience Manager Assets] et accédez à **[!UICONTROL Fichiers]**.
-1. Sélectionnez la ou les ressources ou le dossier contenant les ressources. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager le lien]**.
+1. Sélectionnez les ressources ou le dossier contenant les ressources. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager le lien]**.
 1. Le **[!UICONTROL Partage de liens]** s’affiche, avec un lien de ressource généré automatiquement dans la **[!UICONTROL Partager le lien]** champ .
 1. Copiez le lien de la ressource et partagez-le avec les utilisateurs.
 
@@ -57,7 +57,7 @@ Pour partager des ressources sous la forme d’une URL publique :
 
 Pour partager des ressources par courrier électronique :
 
-1. Sélectionnez la ou les ressources ou le dossier contenant les ressources. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager le lien]**.
+1. Sélectionnez les ressources ou le dossier contenant les ressources. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager le lien]**.
 1. Le **[!UICONTROL Partage de liens]** s’affiche, avec un lien de ressource généré automatiquement dans la **[!UICONTROL Partager le lien]** champ .
 
    * Dans la zone d’e-mail, saisissez l’adresse e-mail de l’utilisateur avec lequel vous souhaitez partager le lien. Vous pouvez partager le lien avec plusieurs utilisateurs. Si l’utilisateur appartient à votre organisation, sélectionnez son e-mail dans la liste déroulante de suggestions qui s’affiche. Si l’utilisateur est externe à votre organisation, saisissez l’e-mail complet et appuyez sur **[!UICONTROL Entrée]** pour l’ajouter à la liste des utilisateurs.
@@ -65,7 +65,7 @@ Pour partager des ressources par courrier électronique :
    * Dans le **[!UICONTROL Objet]** , saisissez un objet pour spécifier l’objectif des ressources partagées.
    * Dans la zone **[!UICONTROL Message]**, vous pouvez, au besoin, saisir un message.
    * Dans le champ **[!UICONTROL Expiration]**, spécifiez la date et l’heure d’expiration du lien à l’aide du sélecteur de date.
-   * Cochez la case **[!UICONTROL Autoriser le téléchargement du fichier d’origine]** pour permettre aux destinataires de télécharger le rendu d’origine.
+   * Activez la variable **[!UICONTROL Autoriser le téléchargement du fichier d’origine]** pour permettre aux destinataires de télécharger le rendu d’origine.
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec les utilisateurs. Les utilisateurs reçoivent un e-mail contenant le lien partagé.
 
@@ -98,6 +98,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 >[!NOTE]
 >
 >Si une ressource partagée est déplacée vers un autre emplacement, son lien cesse de fonctionner. Recréez ce lien et partagez-le de nouveau avec les utilisateurs.
+
 
 <!--
 ## Share assets as a link {#sharelink}
@@ -166,7 +167,7 @@ To generate the URL for assets you want to share with users, use the Link Sharin
 A message confirms that you unshared the asset. In addition, the entry for the asset is removed from the list.
 -->
 
-## Téléchargement et partage de ressources {#download-and-share-assets}
+## Télécharger des ressources et les partager séparément {#download-and-share-assets}
 
 Les utilisateurs peuvent télécharger les ressources requises et les partager en dehors d’[!DNL Experience Manager]. Pour plus d’informations, consultez les pages suivantes [Recherche de ressources](/help/assets/search-assets.md), [Téléchargement de ressources](/help/assets/download-assets-from-aem.md) et [Téléchargement de collections](manage-collections.md#download-a-collection)
 
