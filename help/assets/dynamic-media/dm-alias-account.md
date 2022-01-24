@@ -10,10 +10,10 @@ mini-toc-levels: 4
 hide: true
 hidefromtoc: true
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 3023fda4543328a0feda259ca58adb95fa4b1317
+source-git-commit: 5e33aa9c18cb79d2e263224e92f866c3280b59bc
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 10%
+source-wordcount: '702'
+ht-degree: 9%
 
 ---
 
@@ -29,6 +29,7 @@ Un compte d’alias d’entreprise Dynamic Media permet de s’assurer que toute
 
 Lorsque vous configurez un compte d’alias de société Dynamic Media, tenez compte des points suivants :
 
+* Lorsque vous configurez un compte d’alias d’entreprise sur le **[!UICONTROL Modifier la configuration de Dynamic Media]** , pour que l’invalidation du cache réussisse, vous devez invalider les URL pour *both* la valeur **[!UICONTROL Société]** et la variable **[!UICONTROL Alias de la société]** compte, simultanément.
 * Toute URL Dynamic Media ou tout code incorporé de visionneuse existant sur votre *live* les propriétés numériques doivent être mises à jour manuellement pour prendre en compte le nouveau nom d’alias. Cependant, tout code incorporé d’URL ou de visionneuses avec le nom de votre société Dynamic Media d’origine continue à fonctionner pour les ressources existantes ou nouvelles.
 * La fonctionnalité de compte d’alias d’entreprise Dynamic Media est limitée au mode et à la diffusion de création Experience Manager Assets. Le nom d’alias de l’entreprise ne fonctionne pas avec Experience Manager Sites. Les composants WCM (Web Content Management) ne sont pas mis à jour pour cette modification. Ces composants continuent de fonctionner avec le nom de la société Dynamic Media d’origine pour récupérer les ressources Dynamic Media.
 * Vous ne pouvez configurer qu’un seul compte d’alias de société sur l’événement **[!UICONTROL Modifier la configuration de Dynamic Media]** page. Cependant, vous pouvez créer autant de comptes d’alias d’entreprise par le biais d’un cas d’assistance et refléter manuellement le nom d’alias nécessaire dans les URL Dynamic Media ou le code intégré de la visionneuse.
