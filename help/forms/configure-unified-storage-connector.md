@@ -1,10 +1,10 @@
 ---
 title: Comment configurer le connecteur de stockage unifié pour AEM Forms ?
 description: Découvrez comment gérer le connecteur de stockage unifié pour AEM Forms. Utilisez le connecteur de stockage unifié pour connecter AEM Forms à des stockages de données externes.
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
 workflow-type: tm+mt
-source-wordcount: '585'
-ht-degree: 100%
+source-wordcount: '604'
+ht-degree: 86%
 
 ---
 
@@ -53,16 +53,16 @@ Suivez les étapes suivantes pour configurer un modèle de workflow AEM pour un 
 
 >[!NOTE]
 >
->Les options permettant d’enregistrer l’étape Affecter une tâche en tant que brouillon et de récupérer l’historique de l’étape Affecter une tâche ne sont pas disponibles lorsque vous configurez un modèle de workflow AEM pour le stockage de données externe.
+>Les options permettant d’enregistrer l’étape Affecter une tâche en tant que brouillon et de récupérer l’historique de l’étape Affecter une tâche sont désactivées lorsque vous configurez un modèle de workflow AEM pour le stockage de données externe.
 
 ### Recommandations pour les workflows d’AEM pour le stockage de données externes {#guidelines-workflows-external-data-storage}
 
 Voici nos recommandations concernant l’utilisation des workflows AEM et le stockage de données externes tels que le serveur de stockage Microsoft Azure :
 
-* Utilisez des variables pour stocker des données lors de la définition de fichiers de données d’entrée et de sortie et de pièces jointes dans les étapes du modèle de workflow. Ne sélectionnez pas les options **[!UICONTROL Relatif à la charge]** et **[!UICONTROL Disponible sur un chemin absolu]**. Les options **[!UICONTROL Relatif à la charge]** et **Disponible sur un chemin absolu** ne s’affichent pas automatiquement lorsque vous [configurez un modèle de workflow AEM pour le stockage de données externes](#configure-workflow-external-data-storage).
+* Utilisez des variables pour stocker des données lors de la définition de fichiers de données d’entrée et de sortie et de pièces jointes dans les étapes du modèle de workflow. Ne sélectionnez pas les options **[!UICONTROL Relatif à la charge]** et **[!UICONTROL Disponible sur un chemin absolu]**. Les options **[!UICONTROL Relatif à la charge]** et **[!UICONTROL Disponible sur un chemin absolu]** ne s’affichent pas automatiquement lorsque vous [configurez un modèle de workflow AEM pour le stockage de données externes](#configure-workflow-external-data-storage).
 
 * Utilisez des variables pour stocker le fichier de données et les pièces jointes lors de l’envoi d’un formulaire adaptatif à un workflow AEM. Ne sélectionnez pas l’option **[!UICONTROL Relatif à la charge]** lors de l’envoi d’un formulaire adaptatif à un workflow AEM. L’option **[!UICONTROL Relatif à la charge]** ne s’affiche pas automatiquement une fois que vous avez [configuré un modèle de workflow AEM pour le stockage des données externes](#configure-workflow-external-data-storage).
 
 * N’utilisez pas d’étape de workflow AEM personnalisée dans un modèle de workflow pour stocker des données dans le référentiel CRX DE.
 
-* Lorsque vous [configurez un modèle de workflow AEM pour le stockage des données externes](#configure-workflow-external-data-storage), ne créez pas de colonnes personnalisées dans la boîte de réception AEM en fonction des données d’un workflow.
+* Lorsque vous [configuration d’un modèle de workflow AEM pour le stockage de données externes](#configure-workflow-external-data-storage), ne créez pas de colonnes personnalisées pour la boîte de réception AEM , car les valeurs des colonnes personnalisées ne sont pas récupérées si l’élément de travail de la boîte de réception AEM appartient à un workflow marqué pour le stockage externe.
