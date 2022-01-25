@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 1bef3ed7ba12e872dd8f478b13d14b459eb9495b
+source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
 workflow-type: tm+mt
-source-wordcount: '1290'
-ht-degree: 58%
+source-wordcount: '1287'
+ht-degree: 56%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 58%
 
 ## Partage de ressources en tant que lien {#sharelink}
 
-Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de tiers, de marketeurs et d’autres utilisateurs externes. [!DNL Experience Manager] utilisateurs. Cette fonctionnalité permet aux utilisateurs anonymes d’accéder aux ressources partagées avec eux et de les télécharger. Lors du téléchargement de ressources à partir d’un lien partagé, [!DNL Experience Manager Assets] utilise un service asynchrone qui offre un téléchargement plus rapide et ininterrompu. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans une boîte de réception dans les archives ZIP de taille de fichier gérable. Pour les téléchargements volumineux, le téléchargement est regroupé en plusieurs fichiers de 100 Go par taille de fichier.
+Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de tiers, de marketeurs et d’autres utilisateurs externes. [!DNL Experience Manager] utilisateurs. Cette fonctionnalité permet aux utilisateurs anonymes d’accéder aux ressources partagées avec eux et de les télécharger. Lors du téléchargement de ressources à partir d’un lien partagé, [!DNL Experience Manager Assets] utilise un service asynchrone qui offre un téléchargement plus rapide et ininterrompu. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans les archives ZIP de taille de fichier gérable. Pour les téléchargements volumineux, le téléchargement est regroupé en plusieurs fichiers de 100 Go par taille de fichier.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
