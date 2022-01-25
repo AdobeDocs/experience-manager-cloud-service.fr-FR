@@ -2,10 +2,10 @@
 title: Comment configurer le stockage Azure ?
 description: Découvrez comment intégrer des formulaires à un serveur de stockage Azure.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 90%
 
 ---
 
@@ -93,4 +93,8 @@ Pour définir une propriété d’objet de modèle de données comme clé de rec
 1. Activez l’option **[!UICONTROL Clé de recherche]**. Cette option est disponible uniquement pour les types de données principaux.
 1. Appuyez sur **[!UICONTROL Terminé]** pour enregistrer les propriétés puis sur **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire.
 
-Après avoir défini les propriétés d’objet de modèle de données comme clés de recherche, les clés sont enregistrées en tant que métadonnées dans le stockage Azure.
+Après avoir défini les propriétés d’objet de modèle de données comme clés de recherche, les valeurs de hachage sont stockées dans les balises d’index Azure et les valeurs codées Base64 sont stockées dans les métadonnées Azure.
+
+>[!NOTE]
+>
+>Seules 10 clés de recherche sont autorisées par entité Azure, étant donné qu’Azure autorise uniquement 10 balises par objet Blob et que la valeur des propriétés marquées comme clés de recherche est stockée dans les balises d’index Azure après hachage.
