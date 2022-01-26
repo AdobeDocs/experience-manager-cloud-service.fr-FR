@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 72ddcbcc714bcd33de8f4f681db57872f5ca69ac
+source-git-commit: fb75c9099b77a397fa451b72ee997463a3f4f11e
 workflow-type: tm+mt
-source-wordcount: '3460'
+source-wordcount: '3466'
 ht-degree: 92%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 92%
       + [Adobe ID](/help/onboarding/learn-concepts/adobe-id.md)
       + [Présentation de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
       + [Équipe et profils de produit AEM as a Cloud Service](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md)
-      + [Assistance Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
+      + [Support technique Adobe](/help/onboarding/learn-concepts/onboarding-help-resources.md)
    + Parcours d’intégration {#journey}
       + [Parcours d’intégration](/help/journey-onboarding/home.md)
       + [Présentation du parcours d’intégration](/help/journey-onboarding/sysadmin/onboarding-journey-overview.md)
@@ -816,6 +816,7 @@ ht-degree: 92%
    + [Tâches de maintenance](/help/operations/maintenance.md)
    + [Sauvegarde et restauration](/help/operations/backup.md)
    + [Tâches asynchrones](/help/operations/asynchronous-jobs.md)
+   + [Suppression de l’index Lucene générique](/help/operations/removal-generic-lucene-index.md)
 + Compliance {#compliance}
    + [Conformité dans AEM as a Cloud Service](/help/compliance/home.md)
    + Préparation à la confidentialité et protection des données {#data-privacy}
