@@ -1,10 +1,10 @@
 ---
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
 workflow-type: tm+mt
-source-wordcount: '860'
-ht-degree: 58%
+source-wordcount: '859'
+ht-degree: 96%
 
 ---
 
@@ -27,18 +27,18 @@ Il est possible de télécharger l’outil de transfert de contenu dans un fichi
 
 ## Connectivité de l’environnement source {#source-environment-connectivity}
 
-L’instance d’AEM source peut se trouver derrière un pare-feu où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une Liste autorisée. Pour réussir l’exécution d’une extraction, les points de terminaison suivants doivent être accessibles à partir de l’instance AEM en cours d’exécution :
+L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour réussir l’exécution d’une extraction, les points d’entrée suivants doivent être accessibles à partir de l’instance AEM en cours d’exécution :
 
-* L&#39;environnement as a Cloud Service AEM cible : `author-p<program_id>-e<env_id>.adobeaemcloud.com`
-* Le service de stockage blob Azure : `*.blob.core.windows.net`
-* Point d’entrée User Mapping IO : `usermanagement.adobe.io`
+* L’environnement AEM as a Cloud Service cible : `author-p<program_id>-e<env_id>.adobeaemcloud.com`
+* Le service d’enregistrement blob Azure : `*.blob.core.windows.net`
+* Le point d’entrée de l’IO de mappage des utilisateurs : `usermanagement.adobe.io`
 
-Pour tester la connectivité à l’environnement as a Cloud Service AEM cible, lancez la commande cURL suivante à partir du shell de l’instance source (remplacez `program_id`, `environment_id`, et `migration_token`) :
+Pour tester la connectivité à l’environnement AEM as a Cloud Service cible, lancez la commande cURL suivante à partir du shell de l’instance source (remplacez `program_id`, `environment_id` et `migration_token`) :
 
 `curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
 
 >[!NOTE]
->Si `HTTP/2 200` est reçu, une connexion à AEM as a Cloud Service a réussi.
+>Si vous recevez un `HTTP/2 200`, la connexion à AEM as a Cloud Service a réussi.
 
 ## Exécution de l’outil de transfert de contenu {#running-tool}
 
@@ -88,16 +88,16 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Access Token** : renseignez le jeton d’accès.
 
       >[!NOTE]
-      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Open access token** (Ouvrir le jeton d’accès). Vous devez vous assurer que vous appartenez au groupe d’administrateurs AEM dans l’instance Cloud Service cible.
+      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Open access token** (Ouvrir le jeton d’accès). Vous devez vous assurer que vous appartenez au groupe &quot;Administrateurs&quot; dans l’instance de Cloud Service cible.
 
    1. **Parameters** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
-      1. **Include version** : sélectionnez les options requises. Lorsque des versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
+      1. **Include version** : sélectionnez les options requises. Lorsque différentes versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
 
          ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
          >[!NOTE]
-         >Si vous envisagez d’inclure des versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge de version en raison d’une limitation actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
+         >Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
 
       1. **Paths to be included** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte les entrées effectuées par saisie ou par sélection.
@@ -110,23 +110,23 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
          >* `/etc` (il est possible de sélectionner certains chemins `/etc` dans le CTT)
 
 
-1. Cliquez sur **Enregistrer** une fois que vous avez renseigné tous les champs de la variable **Créer un jeu de migration** écran de détails.
+1. Cliquez sur **Enregistrer** après avoir rempli tous les champs de l’écran **Créer un jeu de migration**.
 
-1. Vous verrez votre jeu de migration dans la **Transfert de contenu** , comme illustré dans la figure ci-dessous.
+1. Vous verrez votre jeu de migration dans l’assistant de **Transfert de contenu**, comme illustré dans la figure ci-dessous.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
-   Tous les jeux de migration existants s’affichent sur la page **Transfert de contenu** avec leur état actuel et leurs informations d’état. Certaines des icônes décrites ci-dessous peuvent apparaître.
+   Tous les jeux de migration existants s’affichent dans l’assistant de **Transfert de contenu** avec leur statut actuel et leurs informations de statut. Certaines des icônes décrites ci-dessous peuvent apparaître.
 
    * Un *nuage de couleur rouge* indique que vous ne pouvez pas terminer le processus d’extraction.
    * Un *nuage de couleur verte* indique que vous pouvez terminer le processus d’extraction.
    * Une *icône de couleur jaune* indique que vous n’avez pas créé le jeu de migration existant et que celui ainsi indiqué a été créé par un autre utilisateur de la même instance.
 
-1. Sélectionnez un jeu de migration et cliquez sur **Propriétés** pour afficher ou modifier les propriétés du jeu de migration. Lors de la modification des propriétés, il n’est pas possible de modifier la variable **Nom du jeu de migration** ou le **URL du service**.
+1. Sélectionnez un jeu de migration puis cliquez sur **Propriétés** pour voir ou modifier les propriétés du jeu de migration. Lors de la modification des propriétés, il n’est pas possible de changer le **nom du jeu de migration** ou l’**URL du service**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
 
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris à créer un jeu de migration, vous êtes prêt à en savoir plus sur les processus d’extraction et d’ingestion dans l’outil de transfert de contenu. Avant d’apprendre ces processus, vous devez consulter [Gestion des référentiels de contenu volumineux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service.
+Maintenant que vous avez appris à créer un jeu de migration, vous êtes prêt à en apprendre plus sur les processus d’extraction et d’ingestion dans l’outil de transfert de contenu. Avant d’en apprendre plus sur ces processus, vous devez consulter la section [Gestion des référentiels de contenu volumineux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service.
