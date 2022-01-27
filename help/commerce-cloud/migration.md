@@ -2,10 +2,10 @@
 title: Migration vers le module complémentaire CIF (Commerce Integration Framework) AEM
 description: Comment migrer vers le module complémentaire CIF (Commerce Integration Framework) d’AEM à partir d’une ancienne version
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '489'
-ht-degree: 100%
+source-wordcount: '490'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ L’importation de données de catalogue de produits n’est plus prise en charg
 
 >[!TIP]
 >
->Si aucune API en temps réel n’est disponible, un cache de produit externe doté d’API doit être utilisé pour l’intégration. Exemple de [Magento open-source](https://magento.com/products/magento-open-source).
+>Si aucune API en temps réel n’est disponible, un cache de produit externe doté d’API doit être utilisé pour l’intégration. Exemple de [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
 
 ## Expériences de catalogue produits avec rendu AEM
 

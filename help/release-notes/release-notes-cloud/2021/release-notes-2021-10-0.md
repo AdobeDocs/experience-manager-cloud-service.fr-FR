@@ -1,10 +1,10 @@
 ---
-title: Notes de mise à jour de la version 2021.10.0 publication de [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notes de mise à jour de la version 2021.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7d5850cf3b16885c11d1f450a171493a74008a6c
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 52%
+source-wordcount: '1439'
+ht-degree: 69%
 
 ---
 
@@ -43,7 +43,7 @@ Consultez la section [Présentation de la version d’octobre 2021](https://vide
 
 * [!DNL Experience Manager] prend désormais en charge la génération automatique de transcriptions de texte à partir des ressources audio et vidéo prises en charge, à l’aide d’un connecteur intégré vers [!DNL Azure Media Services]. Le [types de fichiers pris en charge](/help/assets/file-format-support.md#audio-video-transcription-formats) sont automatiquement transcrites et le texte est stocké au format WebVTT. Les sous-titres WebVTT sont utilisés pour une recherche, un sous-titrage ou une traduction plus efficaces. En outre, la fonctionnalité améliore l’accessibilité, la capacité de découverte et la localisation des ressources.
 
-### Nouvelle fonctionnalité dans la [!DNL Assets] canal prerrelease {#assets-prerelease-features}
+### Nouvelle fonctionnalité dans le canal de version préliminaire [!DNL Assets] {#assets-prerelease-features}
 
 * [!DNL Dynamic Media] Le recadrage intelligent d’image et le nuancier sont désormais alimentés par les derniers services Sensei, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles seront conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
 
@@ -82,7 +82,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 * Les auteurs peuvent ajouter des liens vers des pages de produits et de catalogues dans des champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour ouvrir les sélecteurs afin de rechercher et sélectionner rapidement le produit ou la catégorie sans quitter le contexte.
 
-* Le panier et le passage en caisse des fenêtres contextuelles existantes ont été remplacés par un panier AEM dédié et des pages de passage en caisse. Les composants de ces pages sont créés à l’aide des composants de périodicité extensibles du Magento.
+* Le panier et le passage en caisse des fenêtres contextuelles existantes ont été remplacés par un panier AEM dédié et des pages de passage en caisse. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
 
 * Les vendeurs peuvent masquer certaines catégories de catalogues de produits dans la navigation à l’aide du serveur principal Commerce. Le composant principal de navigation CIF respecte la configuration du serveur principal de commerce &quot;inclure dans le menu&quot; pour afficher/masquer les catégories dans la navigation.
 
@@ -141,48 +141,48 @@ La prochaine version est prévue pour le 09 décembre 2021.
 
 ## Date de publication {#release-date-cm-oct}
 
-La date de publication de Cloud Manager dans AEM 2021.10.0 as a Cloud Service est le 14 octobre 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.10.0 est le 14 octobre 2021.
 
 ### Nouveautés {#what-is-new-cm-oct}
 
-* En vue de certaines modifications à venir, les pipelines de déploiement existants seront désormais référencés et étiquetés dans l’interface utilisateur comme **Pile complète** pipelines.
+* En vue de certaines modifications à venir, les pipelines de déploiement existants seront désormais référencés et étiquetés dans l’interface utilisateur en tant que pipelines **Full Stack**.
 
-* La carte Pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. L’utilisateur peut sélectionner Exécuter/Pause/Reprendre directement dans le menu d’actions associé à chaque pipeline.
+* La carte du pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. L’utilisateur peut sélectionner Exécuter/Arrêter/Reprendre directement dans le menu d’actions associé à chaque pipeline.
 
-* Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service via l’interface utilisateur.
+* Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service dans l’interface utilisateur.
 
-* Les expériences d’ajout et de modification de pipeline ont été actualisées afin d’utiliser désormais des modèles familiers et modernes.
+* L’ajout et la modification des expériences de pipeline ont été actualisées afin d’utiliser désormais des modèles familiers et modernes.
 
-* Les utilisateurs de Cloud Manager peuvent désormais envoyer leurs commentaires directement depuis l’interface utilisateur via le **Commentaires** en haut à droite de la landing page.
+* Les utilisateurs de Cloud Manager peuvent désormais envoyer leurs commentaires directement depuis l’interface utilisateur dans les **Commentaires** en haut à droite de la page d’entrée.
 
-* Les graphiques SLA annuels peuvent désormais être téléchargés à partir de l’interface utilisateur de Cloud Manager.
+* Les graphiques SLA annuels peuvent désormais être téléchargés à partir de l’interface utilisateur de Cloud Manager.
 
 * Les exécutions de pipeline de qualité de code et hors production utilisent désormais un processus de clonage superficiel plus efficace au cours de l’étape de création, ce qui accélère la création pour les clients disposant de référentiels Git particulièrement volumineux.
 
-* L’assistant Ajouter une Liste autorisée IP informe désormais l’utilisateur si le nombre maximal autorisé de Listes autorisées IP a été atteint.
+* L’assistant Ajouter une liste d’adresses IP autorisées informe désormais l’utilisateur si le nombre maximal de Listes d’adresses IP autorisées a été atteint.
 
-* La documentation de l’API Cloud Manager comprend désormais un laboratoire interactif qui permet aux utilisateurs connectés de tester l’API depuis leur navigateur. Consultez [Laboratoire de l’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
+* La documentation de l’API Cloud Manager comprend désormais un playground interactif qui permet aux utilisateurs connectés de tester l’API depuis leur navigateur. Consultez [Playground de l’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
 
-* L’info-bulle de la carte Programme offre des informations plus détaillées si une option de sélection est désactivée sous Accéder à. Il affiche désormais &quot;Aucun environnement de production n’existe&quot;.
+* L’info-bulle de la carte Programme offre plus d’informations si une option de sélection sous « Accéder à » est désactivée. Elle affiche désormais « Aucun environnement de production n’existe ».
 
 ### Correctifs {#bug-fixes-cm-oct}
 
-* Dans de rares cas, lorsqu’un Adobe restaurait l’environnement d’un client, la restauration était considérée comme terminée avant que l’environnement ne soit complètement opérationnel.
+* Dans de rares cas, lorsqu’un membre d’Adobe restaurait l’environnement d’un client, la restauration était considérée comme terminée avant que l’environnement ne soit complètement opérationnel.
 
-* Certaines demandes internes effectuées lors de la création de l’environnement n’ont pas été retraitées.
+* Certaines demandes internes effectuées lors de la création de l’environnement n’étaient pas retraitées.
 
-* Si l’erreur de déploiement échoue à la suite de la vérification des noms de domaine, le message d’erreur a été corrigé afin de demander au client de contacter son représentant Adobe.
+* Si l’erreur de déploiement échouait suite à la vérification du nom de domaine, le message d’erreur a été corrigé afin de demander au client de contacter son représentant Adobe.
 
 ## Analyseur des bonnes pratiques {#best-practices-analyzer}
 
 ### Date de publication {#release-date-bpa-latest}
 
-La date de publication de la version 2.1.20 de l’analyseur des bonnes pratiques est le 5 octobre 2021.
+La date de publication de l’analyseur de bonnes pratiques v2.1.20 est le 5 octobre 2021.
 
 ### Nouveautés {#what-is-new}
 
-* Possibilité de détecter et de générer des rapports sur la longueur du nom de noeud.
+* Capacité à détecter et à générer des rapports sur la longueur du nom de nœud.
 
 * Capacité à détecter et à générer des rapports sur la taille totale de l’index.
 
-* Possibilité de détecter et de générer des rapports sur les ressources dont le rendu d’origine manque.
+* Capacité à détecter et à générer des rapports sur les ressources ne disposant pas d’un rendu d’origine.

@@ -2,10 +2,10 @@
 title: En-têtes HTTP personnalisés
 description: Configuration d’en-têtes HTTP personnalisés
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
-source-wordcount: '269'
-ht-degree: 100%
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 96%
 
 ---
 
@@ -35,5 +35,5 @@ Les composants qui utilisent la configuration de service cloud ci-dessus enverro
 
 Bien que le service permette de définir des noms d’en-tête, y compris les noms standard, ils ne sont pas disponibles pour configuration. En d’autres termes, vous ne pouvez pas remplacer les en-têtes HTTP standard à l’aide de cette fonctionnalité. Vous trouverez une liste de noms d’en-tête restreints [ici](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers). En outre, deux en-têtes supplémentaires ne peuvent pas être utilisés :
 
-* « Store » : utilisé par CIF pour identifier la boutique Magento.
+* &quot;Magasin&quot; : utilisé par CIF pour identifier le magasin Adobe Commerce
 * « Preview-Version » : utilisé par CIF pour récupérer les produits intermédiaires.

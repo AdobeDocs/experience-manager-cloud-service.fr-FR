@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.3.0.
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
-source-wordcount: '1318'
-ht-degree: 100%
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+workflow-type: tm+mt
+source-wordcount: '1319'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +70,7 @@ Vous pouvez contacter votre représentant Adobe pour une démonstration ou pour 
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Prise en charge de Magento 2.4.2
+* Prise en charge d’Adobe Commerce 2.4.2
 
 * Le composant Détails du produit peut désormais être utilisé et configuré sur n’importe quelle page de contenu.
 

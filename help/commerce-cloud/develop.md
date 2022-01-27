@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: 3e2e7fa875e17235b4e47083b564882bb4950d0d
+source-git-commit: 3778ed83453ab3e1e01e662a43d4f86988da1668
 workflow-type: tm+mt
-source-wordcount: '1002'
-ht-degree: 98%
+source-wordcount: '1004'
+ht-degree: 95%
 
 ---
 
@@ -68,25 +68,25 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
 
    Le fichier zip du module complémentaire CIF contient deux fichiers `.far` archivés de fonctionnalités Sling. Assurez-vous d’utiliser le fichier correspondant à AEM Author ou à AEM Publish, selon la manière dont vous envisagez d’exécuter le SDK AEM as a Cloud Service local.
 
-1. Créez une variable d’environnement de système d’exploitation locale nommée `COMMERCE_ENDPOINT` et contenant le point d’entrée Magento GraphQL.
+1. Créez une variable d’environnement de système d’exploitation locale nommée `COMMERCE_ENDPOINT` contenant le point d’entrée Adobe Commerce GraphQL.
 
    Exemple pour Mac OSX :
 
    ```bash
-   export COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   export COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Exemple pour Windows :
 
    ```bash
-   set COMMERCE_ENDPOINT=https://<yourmagentosystem>/graphql
+   set COMMERCE_ENDPOINT=https://<yourcommercesystem>/graphql
    ```
 
    Cette variable est utilisée par AEM pour se connecter à votre système commercial. De plus, le module complémentaire CIF inclut un proxy inverse local pour rendre le point d’entrée GraphQL Commerce disponible localement. Il est utilisé par les outils de création CIF (console de produit et sélecteurs) et pour les composants CIF côté client effectuant des appels GraphQL directs.
 
    Cette variable doit également être configurée pour l’environnement AEM as a Cloud Service. Pour plus d’informations sur les variables, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#local-development).
 
-1. (Facultatif) Pour activer les fonctionnalités de catalogue par étapes, vous devez créer un jeton d’intégration pour votre instance de Magento. Suivez les étapes décrites dans [Prise en main](./getting-started.md#staging) pour créer le jeton.
+1. (Facultatif) Pour activer les fonctionnalités de catalogue intermédiaire, vous devez créer un jeton d’intégration pour votre instance Adobe Commerce. Suivez les étapes décrites dans [Prise en main](./getting-started.md#staging) pour créer le jeton.
 
    Définissez un secret OSGi portant le nom `COMMERCE_AUTH_HEADER` sur la valeur suivante :
 

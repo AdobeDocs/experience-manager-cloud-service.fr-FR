@@ -11,10 +11,10 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: ht
-source-wordcount: '2549'
-ht-degree: 100%
+source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+workflow-type: tm+mt
+source-wordcount: '2550'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ Dans ce tutoriel, un nouveau style ressemblant à une carte sera mis en œuvre p
 
 ## Prérequis {#prerequisites}
 
-Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance AEM en cours d’exécution configurée et connectée à une instance Magento. Examinez les exigences et les étapes de la [configuration d’un développement local avec le SDK AEM as a Cloud Service](../develop.md).
+Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance d’AEM en cours d’exécution configurée et connectée à une instance Adobe Commerce. Examinez les exigences et les étapes de la [configuration d’un développement local avec le SDK AEM as a Cloud Service](../develop.md).
 
 ## Clonage du projet Venia {#clone-venia-project}
 
@@ -57,11 +57,11 @@ Nous allons cloner le [projet Venia](https://github.com/adobe/aem-cif-guides-ven
    $ mvn clean install -PautoInstallPackage,cloud
    ```
 
-1. Ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance Magento ou ajoutez les configurations au projet nouvellement créé.
+1. Ajoutez les configurations OSGi nécessaires pour connecter votre instance AEM à une instance Adobe Commerce ou ajoutez les configurations au projet nouvellement créé.
 
-1. À ce stade, vous devriez disposer d’une version fonctionnelle d’un storefront connecté à une instance Magento. Accédez à la page `US` > `Home` à l’adresse suivante : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
+1. À ce stade, vous devez disposer d’une version fonctionnelle d’une vitrine connectée à une instance Adobe Commerce. Accédez à la page `US` > `Home` à l’adresse suivante : [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
-   Vous devriez voir que le storefront utilise actuellement le thème Venia. En développant le menu principal du storefront, vous devriez voir différentes catégories, indiquant que la connexion à Magento fonctionne.
+   Vous devriez voir que le storefront utilise actuellement le thème Venia. En développant le menu principal du storefront, vous devriez voir différentes catégories, indiquant que la connexion à Adobe Commerce fonctionne.
 
    ![Storefont configuré avec le thème Venia](../assets/style-cif-component/venia-store-configured.png)
 
@@ -484,4 +484,4 @@ Utilisez le [système de style AEM](/help/sites-cloud/authoring/features/style-s
 * [Configuration d’un environnement de développement AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
 * [Bibliothèques côté client](/help/implementing/developing/introduction/clientlibs.md)
 * [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
-* [Développement avec le système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=fr)
+* [Développement avec le système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
