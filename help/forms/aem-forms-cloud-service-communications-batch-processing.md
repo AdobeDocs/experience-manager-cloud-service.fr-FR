@@ -2,10 +2,10 @@
 title: Traitement par lots des communications Experience Manager [!DNL Forms] as a Cloud Service
 description: Comment créer des communications personnalisées et axées sur la marque ?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: d136062ed0851b89f954e5485c2cfac64afeda2d
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '2297'
-ht-degree: 99%
+source-wordcount: '2250'
+ht-degree: 95%
 
 ---
 
@@ -32,9 +32,9 @@ La fonctionnalité Communications fournit des API pour la génération de docume
 
 Une opération par lots est un processus de génération à intervalles planifiés de plusieurs documents de type similaire pour un ensemble d’enregistrements. Une opération par lots comporte deux parties : configuration (définition) et exécution.
 
-* **Configuration (définition)** : une configuration de lot stocke des informations sur les différentes ressources et propriétés à définir pour les documents générés. Par exemple, elle fournit des détails sur le modèle XDP ou PDF et l’emplacement des données client à utiliser, ainsi que la spécification de différentes propriétés pour les documents PDF en sortie.
+* **Configuration (définition)** : une configuration de lot stocke des informations sur les différentes ressources et propriétés à définir pour les documents générés. Par exemple, elle fournit des détails sur le modèle XDP ou et l’emplacement des données client à utiliser, ainsi que la spécification de différentes propriétés pour les documents PDF en sortie.
 
-* **Exécution** : pour démarrer une opération par lots, spécifiez l’exécution et transmettez le nom de la configuration de lot à l’API d’exécution par lots.
+* **Exécution**: Pour démarrer une opération de lot, transmettez le nom de la configuration du lot à l’API d’exécution du lot.
 
 ### Composants d’une opération par lots {#components-of-a-batch-operations}
 
@@ -42,7 +42,7 @@ Une opération par lots est un processus de génération à intervalles planifi�
 
 **Configuration de l’entrepôt de données par lots (USC)** : la configuration des données par lots permet de configurer une instance spécifique de stockage Blob pour les API Batch. Il vous permet de spécifier les emplacements d’entrée et de sortie dans le stockage Azure Blob de Microsoft détenu par le client.
 
-**API par lot** : vous permet de créer des configurations de lot et d’exécuter les exécutions de lot en fonction de ces configurations afin de créer et d’exécuter une opération de lot pour fusionner un PDF ou un modèle XDP avec des données et générer une sortie aux formats PDF, PS, PCL, DPL, IPL et ZPL. La fonctionnalité Communications fournit des API Batch pour les opérations de création, de lecture, de mise à jour et de suppression.
+**API de lot**: Vous permet de créer des configurations par lots et d’exécuter les commandes en fonction de ces configurations pour fusionner un PDF ou un modèle XDP avec des données et générer une sortie dans les formats PDF, PS, PCL, DPL, IPL et ZPL. Les communications fournissent des API par lots pour la gestion de la configuration et l’exécution des lots.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -125,12 +125,11 @@ Pour utiliser une API de lot, créez une configuration de lot et exécutez une e
 
 ### Création d’un lot {#create-a-batch}
 
-Pour créer un lot, utilisez l’API `GET /config`. Insérez les propriétés obligatoires suivantes dans le corps de la requête HTTP :
-
+Pour créer un lot, utilisez l’API `POST /config`. Insérez les propriétés obligatoires suivantes dans le corps de la requête HTTP :
 
 * **configName** : spécifiez le nom unique du lot. Par exemple, `wknd-job`
 * **dataSourceConfigUri** : spécifiez l’emplacement de la configuration de l’entrepôt de données par lots. Il peut s’agir du chemin relatif ou absolu de la configuration. Par exemple : `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes** : spécifiez les formats de sortie : PDF ou PRINT. Si vous utilisez le type de sortie IMPRESSION, dans la propriété `printedOutputOptionsList`, spécifiez au moins une option d’impression. Les options d’impression sont identifiées par leur type de rendu. Par conséquent, à l’heure actuelle, plusieurs options d’impression avec le même type de rendu ne sont pas autorisées. Les formats pris en charge sont PS, PCL, DPL, IPL et ZPL.
+* **outputTypes**: Spécifiez les formats de sortie : PDF et IMPRESSION. Si vous utilisez le type de sortie IMPRESSION, dans la propriété `printedOutputOptionsList`, spécifiez au moins une option d’impression. Les options d’impression sont identifiées par leur type de rendu. Par conséquent, à l’heure actuelle, plusieurs options d’impression avec le même type de rendu ne sont pas autorisées. Les formats pris en charge sont PS, PCL, DPL, IPL et ZPL.
 
 * **modèle** : spécifiez le chemin d’accès absolu ou relatif du modèle. Par exemple, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -138,7 +137,7 @@ Si vous spécifiez un chemin relatif, fournissez également une racine de conten
 
 <!-- For example, you include the following JSON in the body of HTTP APIs to create a batch named wknd-job: -->
 
-Une fois que vous avez créé un lot, vous pouvez utiliser la variable `GET /config /[configName]/execution/[execution-identifier]` pour afficher les détails du lot.
+Vous pouvez utiliser `GET /config /[configName]` pour afficher les détails de la configuration du lot.
 
 ### Exécution d’un lot {#run-a-batch}
 
@@ -150,14 +149,14 @@ Pour exécuter un lot, utilisez `POST /config /[configName]/execution`. Par exem
 
 ### Vérification de l’état d’un lot {#status-of-a-batch}
 
-Pour récupérer l’état d’un lot, utilisez `GET /config /[configName]/execution/[execution-identifier]`. execution-identifier est inclus dans l’en-tête de la réponse HTTP pour la demande d’exécution par lots.  Par exemple, l’image suivante affiche le paramètre execution-identifier d’un traitement par lots.
+Pour récupérer l’état d’un lot, utilisez `GET /config /[configName]/execution/[execution-identifier]`. execution-identifier est inclus dans l’en-tête de la réponse HTTP pour la demande d’exécution par lots.
 
 La réponse de la demande d’état contient la section d’état. Elle fournit des détails sur l’état de la tâche par lots, le nombre d’enregistrements déjà dans le pipeline (déjà lus et en cours de traitement) et le statut de chaque outputType/renderType (nombre d’éléments en cours, réussis et en échec). Le statut inclut également les heures de début et de fin de la tâche par lots, ainsi que des informations sur les erreurs, le cas échéant. L’heure de fin est -1 jusqu’à ce que l’exécution du lot soit réellement terminée.
 
 >[!NOTE]
 >
 >* Lorsque vous demandez plusieurs formats d’impression, l’état contient plusieurs entrées. Par exemple, PRINT/ZPL, PRINT/IPL.
->* Un traitement par lots ne lit pas tous les enregistrements simultanément, mais continue à lire et à incrémenter le nombre d’enregistrements. Ainsi, l’état renvoie un nombre d’enregistrements différent pour chaque exécution.
+>* Un traitement par lots ne lit pas tous les enregistrements simultanément, mais continue à lire et à incrémenter le nombre d’enregistrements. Par conséquent, l’état renvoie -1 jusqu’à ce que tous les enregistrements aient été lus.
 
 
 ### Affichage des documents générés {#view-generated-documents}
@@ -224,8 +223,6 @@ Un document PDF qui ne contient pas de flux XFA ne peut pas être rendu au forma
 La documentation de référence sur les API fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence sur les API est également disponible au format .yaml. Vous pouvez télécharger le fichier des [API Batch](assets/batch-api.yaml) et le charger dans Postman pour vérifier les fonctionnalités des API.
 
 ## Problèmes connus {#known-issues}
-
-* Assurez-vous que le fichier de données XML ne contient pas l’en-tête de déclaration XML. Par exemple, `<?xml version="1.0" encoding="UTF-8"?>`
 
 * Lorsque l’option IMPRESSION est spécifiée, un type de rendu particulier ne peut être spécifié qu’une seule fois dans la liste des options d’impression. Par exemple, vous ne pouvez pas définir deux options d’impression spécifiant chacune un type de rendu PCL.
 

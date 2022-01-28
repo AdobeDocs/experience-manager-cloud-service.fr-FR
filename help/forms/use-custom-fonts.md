@@ -1,9 +1,9 @@
 ---
 title: 'Utilisation de polices personnalisées '
 description: 'Utilisation de polices personnalisées '
-source-git-commit: 10fe582edc8ffc93ea3f8564a64259882bba1d6f
+source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '414'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ Vous pouvez utiliser Forms as a Cloud Service Communications pour combiner un mo
 
 Vous pouvez [incorporer une police](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) à un document de PDF. Lorsqu’une police est incorporée, le document du PDF apparaît (Looks) identique sur toutes les plateformes. Il utilisait la police incorporée pour garantir une apparence cohérente. Lorsqu’une police n’est pas incorporée, son rendu dépend des paramètres de rendu du client de visionneuse de PDF. Si la police est disponible sur l’ordinateur client, le PDF utilise la police spécifiée, sinon le PDF est rendu avec une police de secours.
 
-## Ajout de polices personnalisées à votre environnement Forms as a Cloud Service
+## Ajout de polices personnalisées à votre environnement Forms as a Cloud Service {#custom-fonts-cloud-service}
 
 Pour ajouter des polices personnalisées à votre environnement de Cloud Service :
 
-1. Configurez et ouvrez le projet de développement local. Vous pouvez utiliser n’importe quel IDE de votre choix.
+1. Configurez et ouvrez le [projet de développement local](setup-local-development-environment.md). Vous pouvez utiliser n’importe quel IDE de votre choix.
 1. Dans la structure de dossiers de niveau supérieur du projet, créez un dossier pour enregistrer les polices personnalisées et ajouter des polices personnalisées au dossier. Par exemple, fonts/src/main/resources
    ![Dossier Polices](assets/fonts.png)
 
@@ -71,3 +71,21 @@ Pour ajouter des polices personnalisées à votre environnement de Cloud Service
    ```
 
 1. Archivez le code mis à jour et [exécution du pipeline](/help/implementing/cloud-manager/deploy-code.md) pour déployer les polices dans votre environnement de Cloud Service.
+
+1. Ouvrez l’invite de commande, accédez au dossier du projet local, puis exécutez la commande ci-dessous. Il crée un package des polices dans un fichier .jar. Vous pouvez utiliser le fichier .jar pour le déploiement local du projet.
+
+```shell
+mvn clean install
+```
+
+## Ajout de polices personnalisées à votre environnement de développement Forms Cloud Service local {#custom-fonts-cloud-service-sdk}
+
+1. Démarrez votre environnement de développement local.
+1. Accédez à [crx-repository]\install folder
+1. Placez le fichier .jar contenant les polices personnalisées et le code de déploiement approprié dans le dossier d’installation. Si vous ne disposez pas du fichier .jar, effectuez les étapes répertoriées dans [Ajout de polices personnalisées à votre environnement Forms as a Cloud Service](#custom-fonts-cloud-service) pour générer le fichier.
+1. Exécutez la variable [environnement du SDK docker](setup-local-development-environment.md#docker-microservices)
+
+
+   >[!NOTE]
+   >
+   >Chaque fois que vous déployez un fichier .jar mis à jour pour ajouter ou supprimer des polices personnalisées dans l’environnement de déploiement local, arrêtez et démarrez l’environnement du SDK Docker.
