@@ -2,10 +2,10 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 1c27862b64fff24f85f314502be467d18c9aa0f4
+source-git-commit: 68c9ae2c79fa3d328d31d8653db3ebc9bb9e575a
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 96%
+source-wordcount: '2288'
+ht-degree: 92%
 
 ---
 
@@ -105,15 +105,34 @@ Pour modifier les niveaux de journal des environnements Cloud, il est nécessair
 
 **Activation du niveau de journalisation DEBUG**
 
-Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés.
-Pour activer le niveau de journalisation DEBUG, définissez
+Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés. Pour activer le niveau de journalisation DEBUG, mettez à jour la propriété suivante vers le mode de débogage.
 
-``` /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level ```
+`/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
-la propriété à corriger. Ne laissez pas le journal au niveau de débogage DEBUG plus longtemps que nécessaire, car cela génère un grand nombre de journaux.
+Par exemple, définissez `/apps/<example>/config/org.apache.sling.commons.log.LogManager.factory.config~<example>.cfg.json` avec la valeur suivante.
+
+```json
+{
+   "org.apache.sling.commons.log.names": [
+      "com.example"
+   ],
+   "org.apache.sling.commons.log.level": "DEBUG",
+   "org.apache.sling.commons.log.file": "logs/error.log",
+   "org.apache.sling.commons.log.additiv": "false"
+}
+```
+
+Ne laissez pas le journal au niveau du journal DEBUG plus longtemps que nécessaire, car cela génère de nombreuses entrées.
+
+Des niveaux de journal distincts peuvent être définis pour les différents environnements AEM à l’aide du ciblage de la configuration OSGi basée sur le mode d’exécution s’il est souhaitable de toujours se connecter à `DEBUG` pendant le développement. Par exemple :
+
+| Environnement | Emplacement de configuration OSGi par mode d’exécution | `org.apache.sling.commons.log.level` valeur de propriété | | - | - | - | | Développement | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Intermédiaire | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN | | Production | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
+
 Une ligne dans le fichier de débogage commence généralement par DEBUG, puis fournit le niveau de journalisation, l’action d’installation et le message du journal. Par exemple :
 
-``` DEBUG 3 WebApp Panel: WebApp successfully deployed ```
+```text
+DEBUG 3 WebApp Panel: WebApp successfully deployed
+```
 
 Les niveaux de journalisation sont les suivants :
 
