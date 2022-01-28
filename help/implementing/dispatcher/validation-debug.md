@@ -3,9 +3,9 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 5a586e99febac6ee2f0f566e508028812bf89372
+source-git-commit: 7306afb0ff2e84077673bbd9c728028e0933ebb1
 workflow-type: tm+mt
-source-wordcount: '2433'
+source-wordcount: '2432'
 ht-degree: 98%
 
 ---
@@ -127,7 +127,7 @@ Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers n
 
 Contient un exemple d’hôte virtuel. Pour votre propre hôte virtuel, créez une copie de ce fichier, personnalisez-la, accédez à `conf.d/enabled_vhosts` et créez un lien symbolique vers votre copie personnalisée.
 
-Assurez-vous qu’un hôte virtuel est toujours disponible et qu’il correspond à ServerAlias &quot;\*.local&quot;, ainsi qu’à localhost, nécessaire aux processus d’Adobe interne.
+Assurez-vous qu’un hôte virtuel est toujours disponible et correspond à ServerAlias `\*.local` et également localhost, nécessaire pour les processus d’Adobe internes.
 
 * `conf.d/dispatcher_vhost.conf`
 
