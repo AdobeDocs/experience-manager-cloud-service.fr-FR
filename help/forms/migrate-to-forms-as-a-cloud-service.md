@@ -1,16 +1,16 @@
 ---
 title: Comment migrer d’un environnement AEM 6.5 Forms et AEM 6.4 Forms vers un environnement [!DNL AEM Forms] as a Cloud Service ?
-description: Migration depuis un environnement [!DNL AEM Forms] On-Premise environment to [!DNL AEM Forms] as a Cloud Service
+description: Migration depuis un [!DNL AEM Forms] Environnement On-Premise vers [!DNL AEM Forms] Environnement as a Cloud Service
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ea9d8714dca0d30ba2ff33cef220c8b3f8b3c429
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 100%
+source-wordcount: '1219'
+ht-degree: 97%
 
 ---
 
@@ -30,6 +30,10 @@ Vous pouvez migrer vos formulaires adaptatifs, thèmes, modèles et configuratio
 * (Uniquement pour un environnement AEM 6.3 Forms ou d’une version antérieure mise à niveau vers AEM 6.4 Forms ou AEM 6.5 Forms) Les formulaires adaptatifs reposant sur des modèles et des thèmes prêts à l’emploi disponibles dans AEM 6.3 Forms ou une version antérieure ne sont pas pris en charge [!DNL [!DNL AEM Forms]] as a Cloud Service.
 
 ## Prérequis {#prerequisites}
+
+* [Activer Forms - Inscription numérique](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) activée pour votre programme Forms Cloud Service et [exécution du pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
+
+![Résultat de l’exécution d’essai](assets/enable-add-on.png)
 
 * Dans un environnement Cloud Service, l’utilitaire de migration fonctionne conjointement avec l’outil de mappage utilisateur et l’outil de transfert de contenu. L’utilitaire de migration rend les ressources [!DNL AEM Forms] compatibles avec Cloud Service et l’outil de transfert de contenu migre le contenu de votre environnement [!DNL AEM Forms] vers un environnement [!DNL AEM] as a Cloud Service. Avant d’utiliser l’utilitaire de migration, découvrez comment [passer à AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/home.html?lang=fr). La procédure comporte deux phases :
    * [Outil de mappage d’utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#cloud-migration) : l’outil de mappage d’utilisateurs permet de mapper vos utilisateurs aux comptes utilisateur Adobe IMS correspondants.
