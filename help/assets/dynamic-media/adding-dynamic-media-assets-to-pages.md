@@ -2,13 +2,13 @@
 title: Ajout de ressources Dynamic Media aux pages
 description: Découvrez comment ajouter des composants Dynamic Media à une page dans Adobe Experience Manager as a Cloud Service.
 contentOwner: Rick Brough
-feature: Gestion des ressources
+feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
-source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: ht
-source-wordcount: '3218'
-ht-degree: 100%
+source-git-commit: da4174929e1eb8e15447f936dc89a67391c72209
+workflow-type: tm+mt
+source-wordcount: '3216'
+ht-degree: 99%
 
 ---
 
@@ -120,6 +120,7 @@ Le composant Dynamic Media est dynamique ; il propose des options différentes 
 >
 >* Plusieurs instances du composant Média dynamique utilisées sur la même page.
 >* Chaque instance utilise le même type de ressource.
+
 >
 >L’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Dynamic Media de cette page n’est pas prise en charge.
 >
@@ -279,6 +280,7 @@ Le composant Interactive Media est dynamique ; il propose des options différen
 >
 >* Plusieurs instances du composant Interactive Media utilisé sur la même page.
 >* Chaque instance utilise le même type de ressource.
+
 >
 >L’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant Interactive Media de cette page n’est pas prise en charge.
 >
@@ -319,6 +321,7 @@ Les critères de rapport d’aspect et de mots-clés s’appliquent tous deux au
 >
 >* Plusieurs instances du composant **[!UICONTROL Média panoramique]** utilisées sur la même page.
 >* Chaque instance utilise le même type de ressource.
+
 >
 >L’affectation d’un paramètre prédéfini de visionneuse différent à chaque composant **[!UICONTROL Panoramic Media]** de cette page n’est pas prise en charge.
 >
