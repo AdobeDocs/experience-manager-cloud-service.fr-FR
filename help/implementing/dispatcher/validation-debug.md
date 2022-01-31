@@ -3,10 +3,10 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: ddc49ef1eed491a4464d17b6a47f924c42381e7f
+source-git-commit: dc25b243c2d64d735e553e7ea2fb990fb34cb4cb
 workflow-type: tm+mt
-source-wordcount: '2518'
-ht-degree: 94%
+source-wordcount: '2508'
+ht-degree: 95%
 
 ---
 
@@ -446,7 +446,7 @@ Dans la configuration Dispatcher, la même variable d’environnement est dispon
 }
 ```
 
-Vous pouvez également utiliser des variables d’environnement Cloud Manager dans votre configuration httpd/dispatcher. Cette méthode est particulièrement importante si un programme comporte plusieurs environnements de développement et que certains de ces environnements de développement ont des valeurs différentes pour la configuration httpd/dispatcher. La même syntaxe ${VIRTUALHOST} serait utilisée comme dans l’exemple ci-dessus, mais les déclarations Define dans le fichier de variables ci-dessus ne seraient pas utilisées. Lisez le [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/environment-variables.html?lang=en) pour obtenir des instructions sur la configuration des variables d’environnement de Cloud Manager.
+Vous pouvez également utiliser des variables d’environnement Cloud Manager dans votre configuration httpd/dispatcher. Cette méthode est particulièrement importante si un programme comporte plusieurs environnements de développement et que certains de ces environnements de développement ont des valeurs différentes pour la configuration httpd/dispatcher. La même syntaxe ${VIRTUALHOST} serait utilisée comme dans l’exemple ci-dessus, mais les déclarations Define dans le fichier de variables ci-dessus ne seraient pas utilisées. Lisez le [Documentation de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) pour obtenir des instructions sur la configuration des variables d’environnement de Cloud Manager.
 
 Lors du test local de votre configuration, vous pouvez simuler différents types d’environnements en transmettant directement la variable `DISP_RUN_MODE` au script `docker_run.sh` :
 
