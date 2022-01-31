@@ -2,10 +2,10 @@
 title: Traitement par lots des communications Experience Manager [!DNL Forms] as a Cloud Service
 description: Comment créer des communications personnalisées et axées sur la marque ?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
-source-git-commit: f435751c9c4da8aa90ad0c6705476466bde33afc
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 95%
+source-wordcount: '1957'
+ht-degree: 94%
 
 ---
 
@@ -221,44 +221,3 @@ Un document PDF qui ne contient pas de flux XFA ne peut pas être rendu au forma
 ## Documentation de référence sur les API
 
 La documentation de référence sur les API fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence sur les API est également disponible au format .yaml. Vous pouvez télécharger le fichier des [API Batch](assets/batch-api.yaml) et le charger dans Postman pour vérifier les fonctionnalités des API.
-
-## Problèmes connus {#known-issues}
-
-* Lorsque l’option IMPRESSION est spécifiée, un type de rendu particulier ne peut être spécifié qu’une seule fois dans la liste des options d’impression. Par exemple, vous ne pouvez pas définir deux options d’impression spécifiant chacune un type de rendu PCL.
-
-* Ne modifiez pas la configuration de la source de données USC/Azure Cloud utilisée dans une configuration de lot pendant l’exécution du lot. Même après l’exécution, si une mise à jour est requise, créez une copie de la configuration au lieu de mettre à jour celle utilisée dans une configuration de lot existante.
-
-## Bonnes pratiques {#best-practices}
-
-* Adobe recommande l’hébergement du magasin de conteneurs blob de fichiers de données dans la région cloud utilisée par Experience Manager Cloud Service.
-
-## Questions fréquemment posées  {#faq}
-
-**Puis-je utiliser un dossier de contrôle ou d’autres mécanismes de stockage pour stocker les entrées et les sorties ?**
-
-Actuellement, vous pouvez utiliser le stockage Azure Microsoft pour enregistrer les données d’entrée et les documents générés. Le stockage Microsoft Azure offre diverses options pour [automatiser les opérations de déplacement des données](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10).
-
-**Un compte de stockage Azure Microsoft est-il inclus avec la licence Experience Manager Forms Cloud Service ?**
-
-Le compte de stockage Microsoft Azure est indépendant de la licence Experience Manager Forms Cloud Service.
-
-**Les API Communications stockent-elles des données sur les serveurs de Service Experience Manager Forms Cloud Service ?**
-
-Les données d’entrée et de sortie sont enregistrées uniquement sur le stockage Microsoft Azure.
-
-**Les API Communications sont-elles disponibles uniquement pour Experience Manager Forms Cloud Service ? Puis-je obtenir des fonctionnalités similaires dans un environnement On-Premise ?**
-
-Vous pouvez utiliser le service AEM Forms Output pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL et ZPL.
-
-Par rapport à l’environnement On-Premise, le service cloud offre des avantages supplémentaires liés à la mise à l’échelle automatique et à la rentabilité.
-
-<!--**Where is data processed?**
-
-**Who has access to data?**
-
-**Is data encrypted?**
-
-**Where is data hosted?** -->
-
-**Puis-je exécuter plusieurs opérations par lots simultanément ?**
-Oui, vous pouvez exécuter plusieurs opérations par lots de manière simultanée. Pour éviter tout conflit, utilisez toujours des dossiers source et de destination différents pour chaque opération.

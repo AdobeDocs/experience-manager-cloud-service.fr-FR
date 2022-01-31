@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - Communications
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
-source-wordcount: '2372'
-ht-degree: 96%
+source-wordcount: '2250'
+ht-degree: 99%
 
 ---
 
@@ -38,11 +38,11 @@ Chargement du fichier .yaml des API Communications dans Postman pour vérifier 
 
 ## Activation des communications
 
-Pour activer les communications pour votre environnement Forms as a Cloud Service :
+Pour activer les communications pour votre environnement Forms as a Cloud Service :
 
-1. Connectez-vous à Cloud Manager et ouvrez votre instance AEM Forms as a Cloud Service.
+1. Connectez-vous à Cloud Manager et ouvrez votre instance AEM Forms as a Cloud Service.
 
-1. Ouvrez l’option Modifier le programme , accédez à l’onglet Solutions et modules complémentaires , puis sélectionnez l’option **[!UICONTROL Forms - Communications]** .
+1. Ouvrez l’option Modifier le programme, accédez à l’onglet Solutions et modules complémentaires, puis sélectionnez l’option **[!UICONTROL Formulaires - Communications]**.
 
    <!-- ![Communications](assets\communications.png)
 
@@ -52,9 +52,9 @@ Pour activer les communications pour votre environnement Forms as a Cloud Servic
 
 1. Cliquez sur **[!UICONTROL Mettre à jour]**.
 
-1. Exécutez le pipeline de génération.
+1. Exécutez le pipeline de build.
 
-Une fois le pipeline de génération réussi, les API de communication sont activées pour votre environnement.
+Une fois que le pipeline de build a réussi, les API Communications sont activées pour votre environnement.
 
 ## Utilisation des API Communications {#workflows}
 
@@ -267,24 +267,8 @@ Le tableau suivant indique les options XCI.
 | config/present/pdf/tagged | Contrôle l’inclusion de balises dans le document PDF de sortie. Les balises, dans le contexte d’un PDF, sont des informations supplémentaires incluses dans un document afin d’exposer la structure logique du document. Les balises aident à l’accessibilité et au reformatage. Par exemple, un numéro de page peut être balisé en tant qu’artefact afin qu’un lecteur d’écran ne l’indique pas au milieu du texte. Bien que les balises rendent un document plus utile, elles augmentent également sa taille et le temps de traitement pour le créer. |
 | config/present/pdf/version | Spécifie la version du document PDF à générer. |
 
-### Problèmes connus
-
-- Assurez-vous que la taille du modèle et des fichiers de configuration XCI est supérieure à 16 Ko.
-
-- Assurez-vous que le fichier de données XML ne contient pas l’en-tête de déclaration XML. Par exemple, `<?xml version="1.0" encoding="UTF-8"?>`
-
-- Pour une configuration de lot, une seule instance de combinaison de valeurs OutputType(PDF, PRINT) et RenderType(PostScript, PCL, IPL, ZPL, etc.) est autorisée.
-
-- Ne modifiez pas la configuration de la source de données USC/Azure Cloud utilisée dans une configuration de lot pendant l’exécution du lot. Même après l’exécution, si une mise à jour est requise, créez une copie de la configuration au lieu de mettre à jour celle utilisée dans une configuration de lot existante.
-
-### Bonnes pratiques
-
-- Adobe recommande l’hébergement du magasin de conteneurs blob de fichiers de données dans la région cloud utilisée par AEM Cloud Service.
-
 <!-- Using API
 
  There are two main Communications APIs. The _generatePDFOutput_ generates PDFs, while the _generatePrintedOutput_ generates PostScript, ZPL, and PCL formats. These APIs are available as HTTP endpoints on your environment, both on author and publish instances. Since the publish instances are configured to scale faster than the author instances, it is recommended use these APIs via publish instances.
 
 The first parameter of both the operations accept the path and name of the template file (for example ExpenseClaim.xdp). You can specify a fully qualified path, reference path of your AEM Repository, or path of a binary file. The second parameter accepts an XML document that is merged with the template while generating the output document. -->
-
-
