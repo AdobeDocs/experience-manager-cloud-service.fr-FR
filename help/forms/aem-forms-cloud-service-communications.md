@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - Communications
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
+source-git-commit: 78cf7d29d6a42f330ba22135c892ce9af5df403f
 workflow-type: tm+mt
-source-wordcount: '711'
-ht-degree: 54%
+source-wordcount: '715'
+ht-degree: 52%
 
 ---
 
@@ -31,13 +31,13 @@ Une opération synchrone est un processus de génération de documents de maniè
 
 * **Authentification de base**: L’authentification de base est un schéma d’authentification simple intégré au protocole HTTP. Le client envoie des requêtes HTTP avec l’en-tête Authorization qui contient le mot Basic suivi d’un espace et d’une chaîne codée en base64 username:password. Par exemple, pour autoriser en tant qu’administrateur/administrateur le client envoie Basic [nom d’utilisateur de chaîne codée en base64]: [mot de passe de chaîne codé en base64].
 
-* **Authentification basée sur les jetons :** L’authentification basée sur les jetons utilise un jeton d’accès (jeton d’authentification du porteur) pour envoyer des requêtes à AEM as a Cloud Service. AEM Forms as a Cloud Service fournit des API pour récupérer en toute sécurité le jeton d’accès. Pour récupérer et utiliser le jeton afin d’authentifier une requête :
+* **Authentification basée sur les jetons :** L’authentification basée sur les jetons utilise un jeton d’accès (jeton d’authentification du porteur) pour envoyer des requêtes à Experience Manager as a Cloud Service. AEM Forms as a Cloud Service fournit des API pour récupérer en toute sécurité le jeton d’accès. Pour récupérer et utiliser le jeton afin d’authentifier une requête :
 
-   1. [Récupération AEM informations d’identification as a Cloud Service à partir de Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. [Installation AEM informations d’identification as a Cloud Service sur votre environnement](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Serveur d’applications, serveur web ou autres serveurs non AEM) configurés pour envoyer des requêtes au service cloud (effectuer des appels).
+   1. [Récupération des informations d’identification as a Cloud Service du Experience Manager à partir de Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
+   1. [Installation des informations d’identification as a Cloud Service Experience Manager sur votre environnement](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html). (Serveur d’applications, serveur web ou autres serveurs non AEM) configurés pour envoyer des requêtes au service cloud (effectuer des appels).
    1. [Générer un jeton JWT et l’échanger avec les API Adobe IMS pour un jeton d’accès](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html).
-   1. Exécutez l’API AEM avec le jeton d’accès comme jeton d’authentification du porteur.
-   1. [Définir les autorisations appropriées pour l’utilisateur du compte technique dans l’environnement AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
+   1. Exécutez l’API du Experience Manager avec le jeton d’accès comme jeton d’authentification du porteur.
+   1. [Définissez les autorisations appropriées pour l’utilisateur du compte technique dans l’environnement du Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/service-credentials.html?lang=en#configure-access-in-aem).
 
    >[!NOTE]
    >
@@ -45,7 +45,7 @@ Une opération synchrone est un processus de génération de documents de maniè
 
 ### Prérequis {#pre-requisites}
 
-Pour utiliser les API synchrones, les conditions suivantes sont requises :
+Pour utiliser des API synchrones, les conditions suivantes sont requises :
 
 * Modèles PDF ou XDP
 * [Données à fusionner avec des modèles](#form-data)

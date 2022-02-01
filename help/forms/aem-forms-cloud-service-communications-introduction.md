@@ -2,10 +2,10 @@
 title: Présentation de la fonctionnalité Communications de Forms as a Cloud Service
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: dbc0ef92b0b61945ee195971aacab3bc8781b01c
+source-git-commit: d4372e7f5766c6fadea6ca25edc7bfa2aeba10b9
 workflow-type: tm+mt
-source-wordcount: '1030'
-ht-degree: 80%
+source-wordcount: '1026'
+ht-degree: 78%
 
 ---
 
@@ -18,9 +18,9 @@ La fonctionnalité de communication vous permet de créer des documents personna
 
 Vous pouvez générer un document à la demande ou créer une tâche par lots pour générer plusieurs documents à des intervalles définis. Les API de communication fournissent les éléments suivants :
 
-* fonctionnalités de génération de documentation par lots et à la demande simplifiées ;
+* fonctionnalités de génération de documentation par lots et à la demande simplifiées ;.
 
-* API HTTP pour une intégration plus facile aux systèmes existants. Des API distinctes pour les opérations à la demande (faible latence) et par lots (opérations à débit élevé) sont incluses. La génération de documents devient ainsi une tâche efficace.
+* API HTTP pour une intégration plus facile aux systèmes externes. Des API distinctes pour les opérations à la demande (faible latence) et par lots (opérations à débit élevé) sont incluses. La génération de documents devient ainsi une tâche efficace.
 
 * un accès sécurisé aux données. Les API de communication se connectent aux données et y accèdent uniquement à partir de référentiels de données désignés par les clients, ne créent aucune copie locale de données, ce qui rend les communications hautement sécurisées ;
 
@@ -31,7 +31,7 @@ Un relevé de carte de crédit peut être créé à l’aide des API de communic
 
 Communications utilise des [modèles PDF et XFA](#supported-document-types) avec des [données XML](#form-data) pour générer un seul document à la demande ou plusieurs documents à l’aide d’une tâche par lots à intervalle défini.
 
-Une API de communication permet de combiner un modèle (XFA ou PDF) avec des données client ([Données XML](#form-data)) pour générer des documents aux formats PDF et d’impression tels que PS, PCL, DPL, IPL et ZPL.
+Les API de communications permettent de combiner un modèle (XFA ou PDF) avec des données client ([Données XML](#form-data)) pour générer des documents dans des formats de PDF et d’impression tels que PS, PCL, DPL, IPL et ZPL.
 
 En règle générale, vous créez un modèle à l’aide de [Designer](use-forms-designer.md) et utiliser les API de communication pour fusionner les données avec le modèle. Votre application peut envoyer le document de sortie à une imprimante réseau, à une imprimante locale ou à un système de stockage pour archivage. Les workflows standard et personnalisés se présentent comme suit :
 
@@ -43,9 +43,9 @@ En fonction du cas d’utilisation, vous pouvez également rendre ces documents 
 
 Les communications fournissent des API HTTP pour la génération de documents à la demande et par lots :
 
-* Les **[API synchrones](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/)** sont adaptées aux scénarios de génération de documents à la demande, à faible latence et à enregistrement unique. Ces API sont plus adaptées aux cas d’utilisation basés sur une action de l’utilisateur. Par exemple, la génération d’un document une fois qu’un utilisateur a rempli un formulaire.
+* Les **[API synchrones](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents à la demande, à faible latence et à enregistrement unique. Ces API sont plus adaptées aux cas d’utilisation basés sur une action de l’utilisateur. Par exemple, la génération d’un document une fois qu’un utilisateur a rempli un formulaire.
 
-* Les **[API par lot (API asynchrones)](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/batch/)** sont adaptées aux scénarios de génération de documents multiples, à débit élevé et planifiés. Ces API génèrent des documents par lots. Il peut s’agir, par exemple, de factures de téléphone, de relevés de carte de crédit et de relevés de prestations générés tous les mois.
+* Les **[API par lot (API asynchrones)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents multiples, à débit élevé et planifiés. Ces API génèrent des documents par lots. Il peut s’agir, par exemple, de factures de téléphone, de relevés de carte de crédit et de relevés de prestations générés tous les mois.
 
 Voici quelques-unes des principales utilisations des API de communication :
 
@@ -100,7 +100,6 @@ Si vous tentez d’aplatir un document PDF non interactif, une exception se prod
 Un document PDF interactif contient différents éléments qui constituent un formulaire. Ces éléments peuvent inclure des champs (pour accepter ou afficher des données), des boutons (pour déclencher des événements) et des scripts (des commandes pour exécuter une action spécifique). Un clic sur un bouton peut déclencher un événement qui modifie l’état d’un champ. Par exemple, le choix d’une option de genre peut modifier la couleur d’un champ ou l’aspect du formulaire. Il s’agit d’un exemple d’événement manuel qui entraîne la modification de l’état du formulaire.
 
 Lorsqu’un document PDF interactif est aplati à l’aide des API Communications, l’état du formulaire n’est pas conservé. Pour vous assurer que l’état du formulaire est conservé même après l’aplatissement du formulaire, définissez la valeur booléenne _retainFormState_ sur True pour enregistrer et conserver l’état du formulaire.
-
 
 ## Intégration 
 
