@@ -8,10 +8,10 @@ content-type: reference
 feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
-source-git-commit: 251975b825adb5748b6f76c0fdf9d0b7262b2d35
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2219'
+ht-degree: 99%
 
 ---
 
@@ -44,7 +44,7 @@ Voir aussi [Formats 3D pris en charge par Experience Manager Assets](/help/asset
 
 <!-- >[!NOTE]
 >
->The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). CQDOC-18921-->
+>The 3D Media WCM component and 3D preview on an asset's Details page is not compatible with the latest version of Chrome (97.x). Instead, to work with 3D assets, use Firefox or Safari, or use an earlier version of Chrome (96.x). UNHIDE 2/3/22 CQDOC-18921-->
 
 ## Démarrage rapide : ressources 3D dans Dynamic Media {#quick-start-three-d}
 

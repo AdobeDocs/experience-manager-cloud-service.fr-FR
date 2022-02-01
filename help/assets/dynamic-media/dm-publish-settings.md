@@ -9,7 +9,7 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: a7ae5e7bd9de4762e8f9a560e327b3f1358155b7
+source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
 workflow-type: tm+mt
 source-wordcount: '3448'
 ht-degree: 4%
@@ -43,11 +43,11 @@ Voir aussi [Facultatif - Configuration et configuration des paramètres Dynamic 
 1. Sur la page Serveur d’images, définissez le contexte de publication Image Server, puis utilisez les cinq onglets pour configurer les paramètres de publication par défaut.
 
    * [Serveur d’images](#image-server)
-   * [Sécurité](#security-tab) tab
-   * [Gestion de catalogue](#catalog-management-tab) tab
-   * [Attributs de requête](#request-attributes-tab) tab
-   * [Attributs de miniature courants](#common-thumbnail-attributes-tab) tab
-   * [Attributs de gestion des couleurs](#color-management-attributes-tab) tab
+      * [Sécurité](#security-tab) tab
+      * [Gestion de catalogue](#catalog-management-tab) tab
+      * [Attributs de requête](#request-attributes-tab) tab
+      * [Attributs de miniature courants](#common-thumbnail-attributes-tab) tab
+      * [Attributs de gestion des couleurs](#color-management-attributes-tab) tab
 
    ![Page Configuration de la publication Dynamic Media](/help/assets/assets-dm/dm-publish-setup.png)
    *Configuration de la publication Dynamic Media, avec la page **[!UICONTROL Attributs de requête]**onglet sélectionné.*<br><br>
