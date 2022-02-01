@@ -2,7 +2,7 @@
 title: AEM Forms as a Cloud Service - Communications
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: c38a34519822449ff2577a9474b1294d5d45d3ae
+source-git-commit: 8cfc645d714e135391675c6d5d30e765ead4179f
 workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 54%
@@ -61,7 +61,7 @@ Une entreprise possède généralement différents modèles. Par exemple, un mod
 1. Cliquez sur Créer > Dossier et créez un dossier. Ouvrez le dossier.
 1. Cliquez sur Créer > Téléchargement de fichier et chargez les modèles.
 
-### Utilisation d’une API synchrone pour générer des documents
+### Utilisation de l’API synchrone pour générer des documents
 
 Des API distinctes sont disponibles pour :
 
