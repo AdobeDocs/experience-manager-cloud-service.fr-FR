@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5ac82da6c46a020fc1ff9323a127b05551a3f88
+source-git-commit: bb04d3bf3b5f4ca9abc12eee2e50b5f3a95ba405
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '9476'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,6 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
 >Avant d’utiliser des vidéos dans Dynamic Media, vérifiez que l’administrateur Adobe Experience Manager a activé et configuré les Cloud Services Dynamic Media.
 >
 >* Voir [Configuration des Cloud Services Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media et [Dépannage de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
-
 >
 
 
@@ -40,7 +39,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
       * En savoir plus sur l’[organisation des ressources numériques](/help/assets/organize-assets.md).
    * Chargez les vidéos issues de sources originales dans les dossiers. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
-      * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 50 x 50.
+      * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
       * Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum.
       * [Chargement des vidéos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/file-format-support.md).
@@ -273,7 +272,7 @@ Vous trouverez ci-dessous quelques conseils sur les bonnes pratiques de codage d
 
 Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source ayant la plus haute qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés, et un codage supplémentaire crée une vidéo de qualité inférieure.
 
-* Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 50 x 50.
+* Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
 * Vous pouvez charger des fichiers vidéo de source principale d’une taille de 15 Go chacun au maximum.
 
 Le tableau ci-dessous décrit la taille recommandée, le format et le débit minimal requis pour vos fichiers vidéo sources au moment de leur codage :
