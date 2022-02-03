@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 3c6b25bdcc626946ae7bd4b98da65f4ccfd963f7
+source-git-commit: 0ad1218ceb486a5b0feebebecece741eea2148cd
 workflow-type: tm+mt
 source-wordcount: '947'
 ht-degree: 27%
@@ -52,10 +52,10 @@ Consultez la section [Présentation de la version de janvier 2022](https://video
 
    * Configurez l’ajout de filigranes numériques aux images.
 
-* Les administrateurs peuvent désormais configurer le service de messagerie pour les téléchargements volumineux. Il permet aux utilisateurs d’activer les notifications par e-mail pour les téléchargements volumineux à partir de la fonction [!DNL Experience Manager Assets] . Une fois le processus de téléchargement terminé, l’utilisateur reçoit une notification par courrier électronique contenant le lien de téléchargement du dossier zip archivé.
+* Les administrateurs peuvent désormais configurer le service de messagerie pour les téléchargements volumineux. Il permet aux utilisateurs de [activer les notifications par e-mail pour les téléchargements volumineux ;](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) de la [!DNL Experience Manager Assets] . Une fois le processus de téléchargement terminé, l’utilisateur reçoit une notification par courrier électronique contenant le lien de téléchargement du dossier zip archivé.
 
 
-* La fonction Gérer la publication a été améliorée dans l’interface utilisateur. Les utilisateurs peuvent publier ou annuler la publication de contenu vers et depuis la destination sélectionnée, ajouter du contenu à la liste de publication à partir du référentiel DAM, inclure les paramètres du dossier pour publier le contenu des dossiers sélectionnés et appliquer des filtres, et planifier la publication à une date ou une heure ultérieure.
+* Le [Gérer la publication](/help/assets/manage-publication.md) Cette fonctionnalité a été améliorée avec une interface utilisateur améliorée. Les utilisateurs peuvent publier ou annuler la publication de contenu vers et depuis la destination sélectionnée, [Ajouter du contenu](/help/assets/manage-publication.md#add-content) à la liste de publication à partir du référentiel DAM, [Paramètres du dossier d’inclusion](/help/assets/manage-publication.md#include-folder-settings) pour publier le contenu des dossiers sélectionnés et appliquer des filtres, et [planification de la publication](/help/assets/manage-publication.md#publish-assets-later) à une date ou une heure ultérieure.
 
 ### Correctifs {#bug-fixes}
 
