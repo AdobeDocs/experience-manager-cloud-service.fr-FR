@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: ba752888601413dd4725a7a137f8b468b92ad5c7
+source-git-commit: c49352926c67587096b8c60840e00bf379b92075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4063'
+ht-degree: 97%
 
 ---
 
@@ -278,27 +278,35 @@ Consultez [Téléchargement des ressources à partir de [!DNL Experience Manager
 
 ## Publication ou annulation de la publication de ressources {#publish-assets}
 
-1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou que vous souhaitez supprimer dans l’environnement de publication (annuler la publication).
+Vous pouvez publier des ressources et des dossiers contenant des ressources de votre instance d’auteur vers [!DNL Experience Manager Assets], [!DNL Dynamic Media], et [!DNL Brand Portal]. Vous pouvez publier ou annuler la publication de ressources au niveau de la ressource ou du dossier à l’aide de l’option **[!UICONTROL Publication rapide]** ou **[!UICONTROL Gérer la publication]** , disponible dans la variable [!DNL Experience Manager Assets] .
 
-1. Sélectionnez la ressource ou le dossier à publier ou dont vous souhaitez annuler la publication, puis sélectionnez l’option **[!UICONTROL Gérer la publication]** ![gérer la publication](assets/do-not-localize/globe-publication.png) dans la barre d’outils. Pour publier rapidement, vous pouvez également sélectionner l’option **[!UICONTROL Publication rapide]** dans la barre d’outils. Si le dossier que vous souhaitez publier comprend un sous-dossier vide, ce dernier n’est pas publié.
+Voir [gérer la publication depuis [!DNL Experience Manager]](/help/assets/manage-publication.md)
 
-1. Sélectionnez l’option **[!UICONTROL Modifier]** ou **[!UICONTROL Annuler la publication]** selon vos besoins.
+<!--
 
-   ![Action Annuler la publication](assets/unpublish_action.png)
-   *Figure : options Publier et Annuler la publication et option de planification.*
+1. Navigate to the location of the asset or the asset folder that you want to publish or that you want to remove from the publish environment (unpublish).
 
-1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou sélectionnez **[!UICONTROL Plus tard]** pour planifier l’action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Suivant]**.
+1. Select the asset or the folder to publish or unpublish and select **[!UICONTROL Manage Publication]** ![manage publication option](assets/do-not-localize/globe-publication.png) option from the toolbar. Alternatively, to publish quickly, select the **[!UICONTROL Quick Publish]** option from the toolbar. If the folder you want to publish includes an empty folder, the empty folder is not published.
 
-1. Lors d’une publication, si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui ne sont pas publiées ou modifiées depuis la dernière publication s’affichent. Choisissez les références que vous souhaitez publier.
+1. Select the **[!UICONTROL Publish]** or **[!UICONTROL Unpublish]** option as required.
 
-1. Lors de l’annulation de la publication, si une ressource fait référence à d’autres ressources, sélectionnez les références dont vous souhaitez annuler la publication. Cliquez sur **[!UICONTROL Annuler la publication]**. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Annuler]** pour arrêter l’action ou sur **[!UICONTROL Annuler la publication]** pour confirmer que les ressources doivent être dépubliées à la date spécifiée.
+   ![Unpublish action](assets/unpublish_action.png)
+   *Figure: Publish and unpublish options and the scheduling option.*
 
-Gardez à l’esprit les limites et conseils suivants liés à la publication ou à l’annulation de la publication de ressources ou de dossiers :
+1. Select **[!UICONTROL Now]** to act on the asset right away or select **[!UICONTROL Later]** to schedule the action. Select a date and time if you choose the **[!UICONTROL Later]** option. Click **[!UICONTROL Next]**.
 
-* L’option [!UICONTROL Gérer la publication] n’est disponible que pour les comptes d’utilisateurs disposant d’autorisations de réplication.
-* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références car elles peuvent être référencées par d’autres ressources publiées.
-* Les dossiers vides ne sont pas publiés.
-* Si vous publiez une ressource qui est en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
+1. When publishing, if an asset references other assets, its references are listed in the wizard. Only those references are displayed, that are either unpublished or modified since last publish. Choose the references that you want to publish.
+
+1. When unpublishing, if an asset references other assets, choose the references that you want to unpublish. Click **[!UICONTROL Unpublish]**. In the confirmation dialog, click **[!UICONTROL Cancel]** to stop the action or click **[!UICONTROL Unpublish]** to confirm that the assets are to be unpublished at the specified date.
+
+Understand the following limitations and tips related to publishing or unpublishing assets or folders:
+
+* The option to [!UICONTROL Manage Publication] is available only to the user accounts that have replication permissions.
+* While unpublishing a complex asset, unpublish the asset only. Avoid unpublishing the references because those may be referenced by other published assets.
+* Empty folders are not published.
+* If you publish an assets that is being processed, only the original content is published. The renditions are missing. Either wait for processing to complete and then publish or re-publish the asset once the processing completes.
+
+-->
 
 ## Groupe d’utilisateurs fermé {#closed-user-group}
 

@@ -1,14 +1,14 @@
 ---
 title: Téléchargement de ressources
 description: Téléchargez des ressources depuis [!DNL Adobe Experience Manager Assets] et activez ou désactivez la fonctionnalité de téléchargement.
-contentOwner: VG
+contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: b4d661bcafb874749b5da436bf2fd16ebeba773e
+source-git-commit: ddc79a163e328d560912550900242cc089df3958
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 79%
+source-wordcount: '1220'
+ht-degree: 68%
 
 ---
 
@@ -41,46 +41,31 @@ Par défaut, [!DNL Experience Manager] déclenche une notification à la fin du 
 
 ![Notification de boîte de réception](assets/inbox-notification-for-large-downloads.png)
 
-<!--
-The large files are downloaded asynchronously and [!DNL Experience Manager] notifies of the completion via notifications in the Inbox. See [understand [!DNL Experience Manager] Inbox](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-![Download notification](assets/download-notification.png)
-
-*Figure: Download notification via [!DNL Experience Manager] Inbox.*
-
-Asynchronous downloads are triggered in either of the following case:
-
-* If there are more than 10 assets or more than 100 MB to be downloaded.
-* If the download takes more than 30 seconds to prepare.
--->
-
-
-<!-- Go live is on 27th Jan 2022
-### Enable email notifications for large downloads {#enable-emails-for-large-downloads}
+### Activation des notifications par e-mail pour les téléchargements volumineux {#enable-emails-for-large-downloads}
 
 >[!NOTE]
 >
->This functionality is available in the Experience Manager prerelease channel.
+>Cette fonctionnalité est disponible dans le canal de version préliminaire. Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
 
-Asynchronous downloads are triggered in any of the following cases:
+Les téléchargements asynchrones sont déclenchés dans l’un des cas suivants :
 
-* If there are more than ten assets 
-* If the download size is more than 100 MB
-* If the download takes more than 30 seconds to prepare
+* S’il y a plus de dix ressources
+* Si la taille de téléchargement est supérieure à 100 Mo
+* Si la préparation du téléchargement prend plus de 30 secondes
 
-While the asynchronous download runs at the backend, the user can continue to explore and work further in Experience Manager. An out-of-the-box mechanism is required to notify the user upon completion of the download process. To achieve this objective, the administrators can configure email service by setting up an SMTP server. See [configure Mail Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Bien que le téléchargement asynchrone s’exécute sur le serveur principal, l’utilisateur peut continuer à explorer et à travailler plus loin en Experience Manager. Un mécanisme prêt à l’emploi est nécessaire pour informer l’utilisateur une fois le processus de téléchargement terminé. Pour atteindre cet objectif, les administrateurs peuvent configurer le service de messagerie électronique en configurant un serveur SMTP. Voir [configurer le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
 
-Once the email service is configured, the administrators and users can enable email notifications from the Experience Manager interface. 
+Une fois le service de messagerie configuré, les administrateurs et les utilisateurs peuvent activer les notifications électroniques à partir de l’interface du Experience Manager.
 
-To enable email notifications:
+Pour activer les notifications par courrier électronique :
 
-1. Log in to [!DNL Experience Manager Assets].
-1. Click the user icon from the upper-right corner and then click **[!UICONTROL My Preferences]**. The User Preferences window opens.
-1. Select the **[!UICONTROL Asset Download email notifications]** check box and click **[!UICONTROL Accept]**.
+1. Connectez-vous à [!DNL Experience Manager Assets].
+1. Cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **[!UICONTROL Mes préférences]**. La fenêtre Préférences utilisateur s’ouvre.
+1. Sélectionnez la **[!UICONTROL Notifications électroniques de téléchargement de ressources]** , puis cliquez sur **[!UICONTROL Accepter]**.
 
-   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+   ![enable-email-notifications-for-big-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
--->
 
 Pour télécharger des ressources, procédez comme suit :
 
@@ -111,12 +96,6 @@ Pour télécharger des ressources, procédez comme suit :
    ![inbox-notifications-for-big-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
 
 ## Téléchargement de ressources partagées à l’aide du partage de liens {#link-share-download}
-
-<!--
->[!NOTE]
->
->This functionality is available in the Experience Manager prerelease channel.
--->
 
 Le partage de ressources à l’aide d’un lien est un moyen pratique de le mettre à la disposition des personnes intéressées sans qu’elles aient à se connecter à [!DNL Assets]. Voir [Fonctionnalité Partage de liens](/help/assets/share-assets.md#sharelink).
 
