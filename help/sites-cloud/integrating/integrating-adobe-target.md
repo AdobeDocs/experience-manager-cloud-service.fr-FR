@@ -4,8 +4,8 @@ description: 'Intégration à Adobe Target '
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: ht
+source-git-commit: a2fa676de0d6ca6d7cde3beedd5cc63850966b56
+workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 100%
 
@@ -138,9 +138,20 @@ Pour savoir comment concevoir et publier, reportez-vous à cette [page](https://
 
 ## Modifications de la structure de contenu entre les configurations de l’interface utilisateur classique et tactile {#changes-content-structure}
 
-| **Modification** | **Configuration de l’interface utilisateur classique** | **Configuration de l’interface utilisateur tactile** | **Conséquences** |
-|---|---|---|---|
-| Emplacement de la configuration de Target. | /etc/cloudservices/testandtarget/ | /conf/tenant/settings/cloudservices/target | Auparavant, plusieurs configurations étaient présentes sous /etc/cloudservices/testandtarget, mais désormais une seule configuration figure sous un client. |
+<table style="table-layout:auto">
+  <tr>
+    <th>Modification</th>
+    <th>Configuration de l’interface utilisateur classique</th>
+    <th>Configuration de l’interface utilisateur tactile</th>
+    <th>Conséquences</th>
+  </tr>
+  <tr>
+    <td>Emplacement de la configuration de Target.</td>
+    <td>/etc/cloudservices/testandtarget/</td>
+    <td>/conf/tenant/settings/cloudservices/target/</td>
+    <td> Auparavant, plusieurs configurations étaient présentes sous /etc/cloudservices/testandtarget, mais désormais une seule configuration figure sous un client.</td>
+  </tr>
+</table>
 
 >[!NOTE]
 >
