@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 7b39a97983c5ec338b587a0fae85e28a3bcc0319
+source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
-source-wordcount: '3358'
-ht-degree: 88%
+source-wordcount: '3328'
+ht-degree: 89%
 
 ---
 
@@ -213,10 +213,6 @@ Pour afficher et gérer les références du déploiement [!DNL Assets], procéde
    ![Avertissement de suppression forcée](assets/delete-referenced-asset.png)
 
 ### Gestion des mises à jour des ressources dans DAM distant {#handling-updates-to-remote-assets}
-
->[!NOTE]
->
->Cette fonctionnalité est disponible dans le canal de version préliminaire. Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
 
 Après [configuration d&#39;une connexion](#configure-a-connection-between-sites-and-assets-deployments) entre les déploiements DAM distant et Sites, les ressources sur DAM distant sont disponibles sur le déploiement Sites. Vous pouvez ensuite effectuer les opérations de mise à jour, de suppression, de changement de nom et de déplacement sur les ressources ou dossiers DAM distants. Les mises à jour, avec un certain délai, sont disponibles automatiquement sur le déploiement Sites . En outre, si une ressource sur DAM distant est utilisée sur une page Experience Manager Sites locale, les mises à jour de la ressource sur DAM distant sont affichées sur la page Sites.
 
