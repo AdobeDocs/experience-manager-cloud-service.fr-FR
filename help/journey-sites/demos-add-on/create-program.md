@@ -1,9 +1,9 @@
 ---
 title: Créer un programme
 description: Découvrez comment configurer un nouveau programme et un nouveau pipeline pour déployer le module complémentaire.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '715'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ Découvrez comment configurer un nouveau programme et un nouveau pipeline pour d
 
 ## Un peu d’histoire...  {#story-so-far}
 
-Dans le document précédent du parcours de création rapide de site AEM, [Présentation de l’installation du module complémentaire de démonstration de référence,](installation.md) vous avez appris comment fonctionne le processus d’installation du module complémentaire de démonstration de référence, illustrant comment les différentes pièces fonctionnent ensemble. Vous devez maintenant :
+Dans le document précédent du parcours de module complémentaire de démonstration de référence d’AEM, [Présentation de l’installation du module complémentaire de démonstration de référence,](installation.md) vous avez appris comment fonctionne le processus d’installation du module complémentaire de démonstration de référence, illustrant comment les différentes pièces fonctionnent ensemble. Vous devez maintenant :
 
 * posséder une compréhension de base de Cloud Manager.
 * Découvrez comment les pipelines diffusent du contenu et une configuration à AEM.
@@ -76,7 +76,7 @@ Après vous être connecté à Cloud Manager, vous pouvez créer un programme d�
 
    ![Boîte de dialogue Modifier le programme](assets/edit-program-dialog.png)
 
-1. Sur le **Solutions et modules complémentaires** , développez l’onglet **Sites** entrée dans la liste, puis cochez **Démonstrations de référence**. Appuyez ou cliquez sur **Mettre à jour**.
+1. Sur le **Solutions et modules complémentaires** , développez l’onglet **Sites** entrée dans la liste, puis cochez **Démonstrations de référence**. Si vous souhaitez également créer des démonstrations pour AEM Screens, cochez la case **Screens** dans la liste. Cliquez ou appuyez sur **Mettre à jour**.
 
    ![Option Vérifier les démonstrations de référence](assets/edit-program-add-on.png)
 

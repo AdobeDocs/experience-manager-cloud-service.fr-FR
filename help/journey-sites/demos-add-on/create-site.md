@@ -1,9 +1,9 @@
 ---
 title: Créer un site de démonstration
 description: Créez un site de démonstration dans AEM basé sur une bibliothèque de modèles préconfigurés.
-source-git-commit: 52d65251744ce0ae5cf7a7e0a45b39d8fe78f13a
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '844'
 ht-degree: 3%
 
 ---
@@ -15,13 +15,13 @@ Créez un site de démonstration dans AEM basé sur une bibliothèque de modèle
 
 ## Un peu d’histoire...  {#story-so-far}
 
-Dans le document précédent du parcours de création rapide de site AEM, [Créer un programme,](create-program.md) vous avez effectué la première étape de configuration pour créer un programme à des fins de test et utilisé un pipeline pour déployer le contenu du module complémentaire. Vous devez maintenant :
+Dans le document précédent du parcours de module complémentaire de démonstration de référence d’AEM, [Créer un programme,](create-program.md) vous avez effectué la première étape de configuration pour créer un programme à des fins de test et utilisé un pipeline pour déployer le contenu du module complémentaire. Vous devez maintenant :
 
 * Découvrez comment utiliser Cloud Manager pour créer un programme.
 * Découvrez comment activer le module complémentaire de démonstration de référence pour le nouveau programme.
 * Vous pouvez exécuter un pipeline pour déployer le contenu du module complémentaire.
 
-Cet article décrit l’étape suivante du processus en créant un site dans AEM en fonction des modèles du module complémentaire de démonstration de référence.
+Cet article décrit l’étape suivante du processus en créant un site ou un projet AEM Screens dans AEM en fonction des modèles du module complémentaire de démonstration de référence.
 
 ## Objectif {#objective}
 
@@ -31,7 +31,7 @@ Ce document vous aide à comprendre comment créer un site à partir des modèle
 * Découvrez comment créer un site à partir d’un modèle.
 * Découvrez les principes de base de la navigation dans la structure du site et de la modification d’une page.
 
-## Création d’un site de démonstration {#create-site}
+## Création d’un site de démonstration ou d’un projet Screens {#create-site}
 
 Une fois que le pipeline a déployé le module complémentaire de démonstration de référence, vous pouvez accéder à l’environnement de création AEM pour créer des sites de démonstration basés sur le contenu du module complémentaire.
 
@@ -47,11 +47,11 @@ Une fois que le pipeline a déployé le module complémentaire de démonstration
 
    ![Créer un site à partir d’un modèle](assets/create-site-from-template.png)
 
-1. L&#39;assistant de création de site démarre. Dans la colonne de gauche, vous pouvez voir les modèles de démonstration que le pipeline a déployés sur votre instance de création. Appuyez ou cliquez sur l’un d’eux pour le sélectionner et afficher les détails dans la colonne de droite. Cliquez ou appuyez sur **Suivant**.
+1. L&#39;assistant de création de site démarre. Dans la colonne de gauche, vous pouvez voir les modèles de démonstration que le pipeline a déployés sur votre instance de création. Appuyez ou cliquez sur l’un d’eux pour le sélectionner et afficher les détails dans la colonne de droite. Si vous souhaitez tester ou démontrer AEM Screens, veillez à choisir la variable **Modèle de site We.Cafe**. Cliquez ou appuyez sur **Suivant**.
 
    ![Assistant de création de site](assets/site-creation-wizard.png)
 
-1. Dans l’écran suivant, indiquez un titre pour votre site. Un nom de site peut être fourni ou sera généré à partir du titre s’il est omis. Appuyez ou cliquez sur **Créer**.
+1. Dans l’écran suivant, indiquez un titre pour votre site ou projet Screens. Un nom de site peut être fourni ou sera généré à partir du titre s’il est omis. Appuyez ou cliquez sur **Créer**.
 
    * Le titre du site apparaît dans la barre de titre des navigateurs.
    * Le nom du site devient une partie de l’URL.
@@ -101,7 +101,10 @@ Maintenant que vous avez terminé cette partie du parcours de module complément
 * Découvrez comment créer un site à partir d’un modèle.
 * Découvrez les principes de base de la navigation dans la structure du site et de la modification d’une page.
 
-Vous pouvez désormais tester les fonctionnalités d’AEM à l’aide du contenu du module complémentaire. Pour comprendre comment gérer ce contenu de démonstration, passez en revue le parcours du module complémentaire de démonstration de référence AEM en consultant le document . [Gérer vos sites de démonstration,](manage.md) où vous découvrirez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
+Vous pouvez désormais tester les fonctionnalités d’AEM à l’aide du contenu du module complémentaire. Vous disposez de deux options pour poursuivre votre parcours :
+
+* Si vous souhaitez effectuer une démonstration complète et tester le contenu AEM Screens, assurez-vous d’avoir déployé un site en fonction de la variable **Modèle de site We.Cafe** comme décrit précédemment et continuer [Activez AEM Screens pour votre site de démonstration.](screens.md)
+* Si vous utilisez uniquement pour la démonstration du contenu de Sites, continuez à [Gérer vos sites de démonstration,](manage.md) où vous découvrirez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 
 ## Ressources supplémentaires {#additional-resources}
 

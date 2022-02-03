@@ -1,10 +1,10 @@
 ---
 title: Gestion de vos sites de démonstration
 description: Découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
-source-git-commit: cb04570664188635d6dc0237eb4ab0a9d347aaf2
+source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 1%
+source-wordcount: '947'
+ht-degree: 6%
 
 ---
 
@@ -15,11 +15,17 @@ Découvrez les outils disponibles pour vous aider à gérer vos sites de démons
 
 ## Un peu d’histoire...  {#story-so-far}
 
-Dans le document précédent du parcours de création rapide de site AEM, [Créer un site,](create-site.md) vous avez créé un nouveau site de démonstration basé sur les modèles du module complémentaire de démonstration de référence. Vous devez maintenant :
+Dans le document précédent du parcours de module complémentaire de démonstration de référence d’AEM, [Créer un site,](create-site.md) vous avez créé un nouveau site de démonstration basé sur les modèles du module complémentaire de démonstration de référence. Vous devez maintenant :
 
 * Découvrez comment accéder à l’environnement de création AEM.
 * Découvrez comment créer un site à partir d’un modèle.
 * Découvrez les principes de base de la navigation dans la structure du site et de la modification d’une page.
+
+Si vous avez également [activé AEM Screens pour votre site de démonstration,](screens.md) vous devez également :
+
+* Connaître les principes de base d’AEM Screens.
+* Découvrez le contenu de démonstration de We.Cafe.
+* Découvrez comment configurer AEM Screens pour We.Cafe.
 
 Maintenant que vous avez votre propre site de démonstration à explorer, cet article décrit les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 
@@ -82,9 +88,9 @@ Vous pouvez supprimer des modèles de la même manière sous l’en-tête . **Su
 >
 >Avant de supprimer un modèle de site, assurez-vous que tous les sites qui y font référence sont également supprimés.
 
-## Fin du Parcours ? {#end-of-journey}
+## Fin du parcours ? {#end-of-journey}
 
-Félicitations ! Vous avez terminé le parcours du module complémentaire de démonstration de référence AEM ! Vous devez maintenant :
+Félicitations ! Vous avez terminé le parcours du module complémentaire de démonstration de référence AEM ! Vous devez maintenant :
 
 * posséder une compréhension de base de Cloud Manager et comprendre comment les pipelines diffusent du contenu et une configuration à AEM.
 * Découvrez comment utiliser Cloud Manager pour créer un programme.
@@ -93,7 +99,7 @@ Félicitations ! Vous avez terminé le parcours du module complémentaire de d�
 * Découvrez comment accéder aux utilitaires de démonstration en libre-service.
 * Découvrez comment supprimer un site ou un modèle de démonstration existant.
 
-Vous êtes maintenant prêt à explorer les fonctionnalités d’AEM à l’aide de vos propres sites de démonstration. Cependant, AEM est un outil puissant et de nombreuses autres options sont disponibles. Extrayez certaines des ressources supplémentaires disponibles dans le [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités que vous avez vues dans ce parcours.
+Vous êtes maintenant prêt à explorer les fonctionnalités d’AEM à l’aide de vos propres sites de démonstration. Cependant, AEM est un outil puissant et de nombreuses autres options sont disponibles. Consultez certaines des ressources supplémentaires disponibles dans la [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités rencontrées dans ce parcours.
 
 ## Ressources supplémentaires {#additional-resources}
 
