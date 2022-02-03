@@ -2,9 +2,9 @@
 title: Fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '1660'
+source-git-commit: 975bbe809da1b34af8b8cab3b10ae2594133cf6d
+workflow-type: tm+mt
+source-wordcount: '1526'
 ht-degree: 100%
 
 ---
@@ -48,29 +48,6 @@ Par exemple :
 Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires ; le module [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Cette configuration se trouve dans l’emplacement suivant :
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
-
-## Variations sociales {#social-variations}
-
-Les variations sociales peuvent être publiées sur les réseaux sociaux (texte et image). Dans AEM, ces variations sociales peuvent contenir des composants ; des composants texte ou image, par exemple.
-
-L’image et le texte de la publication sur le réseau social peuvent être extraits de n’importe quel type de ressource d’image ou de ressource de texte, à n’importe quel niveau de profondeur (dans le bloc fonctionnel ou dans le conteneur de mises en page).
-
-Les variations sociales autorisent également les blocs fonctionnels et les prennent en compte lors de l’exécution d’actions sur les réseaux sociaux (dans l’environnement de publication).
-
-Pour publier le contenu texte et image approprié sur le réseau social, il convient de respecter certaines conventions si vous développez vos propres composants personnalisés.
-
-Pour ce faire, vous devez utiliser les propriétés suivantes :
-
-* Pour extraire l’image
-
-   * `fileReference`
-   * `fileName`
-
-* Pour extraire le texte
-
-   * `text`
-
-Les composants qui ne respectent pas cette convention ne sont pas pris en compte.
 
 ## Modèles de fragments d’expérience {#templates-for-experience-fragments}
 
@@ -245,12 +222,12 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 
 Pour que le service fonctionne, trois méthodes doivent à présent être implémentées en interne :
 
-* ` [shouldRewrite](#shouldrewrite)`
-* ` [rewriteLink](#rewritelink)`
+* `[shouldRewrite](#shouldrewrite)`
+* `[rewriteLink](#rewritelink)`
 
    * `rewriteLinkExample2`
 
-* ` [getPriority](#priorities-getpriority)`
+* `[getPriority](#priorities-getpriority)`
 
 #### shouldRewrite {#shouldrewrite}
 

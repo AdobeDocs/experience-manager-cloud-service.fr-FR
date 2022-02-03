@@ -1,13 +1,13 @@
 ---
 title: Fragments de contenu – Explorateur de configurations
 description: Découvrez comment activer certaines fonctionnalités de fragments de contenu dans l’explorateur de configurations afin d’exploiter les puissantes fonctionnalités de diffusion en mode découplé d’AEM.
-feature: Fragments de contenu
+feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '288'
-ht-degree: 100%
+source-git-commit: 2e6f59fe663a3c93fc612b888f151d75dc5821f6
+workflow-type: tm+mt
+source-wordcount: '292'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ Pour [utiliser certaines fonctionnalités de fragments de contenu,](#creating-a-
 
 >[!CAUTION]
 >
->L’utilisation des sous-configurations (les configurations imbriquées dans une configuration) n’est pas prise en charge avec les fragments de contenu.
+>Les sous-configurations (configuration imbriquée dans une configuration) sont prises en charge pour une utilisation avec les fragments de contenu, mais ne peuvent pas être utilisées pour les requêtes GraphQL.
 
 1. Accédez à **Outils**, **Général**, puis ouvrez l’**Explorateur de configurations**.
 

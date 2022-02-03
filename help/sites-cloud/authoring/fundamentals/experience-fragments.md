@@ -2,16 +2,17 @@
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 45da72dc39a4c2a66957dbbe26f563b00100488e
+source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
 workflow-type: tm+mt
-source-wordcount: '1494'
-ht-degree: 99%
+source-wordcount: '1522'
+ht-degree: 95%
 
 ---
 
 # Fragments d’expérience {#experience-fragments}
 
 Dans Adobe Experience Manager as a Cloud Service, un fragment d’expérience :
+
 * est un groupe comprenant un ou plusieurs composants ;
 * inclut le contenu et la disposition ;
 * peut être référencé dans les pages ;
@@ -22,10 +23,12 @@ Un fragment d’expérience :
 * fait partie d’une expérience (page) ;
 * peut être utilisé sur plusieurs pages ;
 * est basé sur un modèle (uniquement modifiable) qui définit la structure et les composants ;
+* Ce modèle est utilisé pour créer la variable *page racine* du fragment d’expérience.
 * comprend un ou plusieurs composants, avec mise en page, dans un système de paragraphes ;
 * peut contenir d’autres fragments d’expérience ;
 * peut être combiné à d’autres composants (y compris d’autres fragments d’expérience) pour former une page entière (expérience) ;
-* peut avoir différentes variations et partager du contenu et/ou des composants ;
+* Il est possible de créer une ou plusieurs variations en fonction de la page racine.
+* Ces variations peuvent partager du contenu et/ou des composants.
 * peut être scindé en blocs de création utilisables dans plusieurs variations du fragment.
 
 Vous pouvez utiliser des fragments d’expérience :
@@ -57,7 +60,6 @@ Les fragments d’expérience doivent être utilisés dans les cas suivants :
    * Variations spécifiques à un canal ou contexte particulier.
    * Expériences qu’il y a lieu de regrouper ; par exemple, une campagne avec des expériences différentes en fonction des canaux.
 * Lorsque vous avez recours au commerce omnicanal.
-   * Partage de contenu commercial sur les canaux des [réseaux sociaux](/help/implementing/developing/extending/experience-fragments.md#social-variations) à grande échelle.
    * Conversion des points de contact en points de transaction.
 
 ## Organisation des fragments d’expérience {#organizing-your-experience-fragments}
@@ -151,7 +153,6 @@ Pour créer et configurer un dossier pour vos fragments d’expérience, il est 
 
 1. Sélectionnez **Enregistrer**.
 
-
 ## Création d’un fragment d’expérience {#creating-an-experience-fragment}
 
 Pour créer un fragment d’expérience :
@@ -176,6 +177,12 @@ Pour créer un fragment d’expérience :
    Un **Titre** est obligatoire. Si le **Nom** n’est pas spécifié, il est dérivé du **Titre**.
 
    ![Propriétés du fragment d’expérience](/help/sites-cloud/authoring/assets/xf-04.png)
+
+   >[!NOTE]
+   >
+   >Les balises du modèle de fragment d’expérience ne seront pas fusionnées avec les balises sur cette page racine de fragment d’expérience.
+   >
+   >Elles sont complètement séparées.
 
 1. Cliquez sur **Créer**.
 
@@ -232,6 +239,7 @@ Vous pouvez créer des variations du fragment d’expérience, selon vos besoins
 
    ![Propriétés de la variation](/help/sites-cloud/authoring/assets/xf-07.png)
 
+
 1. Confirmez en cliquant sur **Terminé**. La nouvelle variation est alors affichée dans le panneau.
 
 ## Utilisation du fragment d’expérience {#using-your-experience-fragment}
@@ -283,7 +291,7 @@ Pour créer un bloc de ce type, procédez comme suit :
 
 Le bloc de création est visible dans l’onglet **Blocs de création**. Pour chaque bloc, les actions suivantes peuvent être effectuées :
 
-* **Atteindre l’élément principal** : ouvre la variation principale dans un nouvel onglet
+* **Accéder au gabarit**: ouvrir la variation de page racine dans un nouvel onglet ;
 * **Renommer**
 * **Supprimer**
 
@@ -338,8 +346,6 @@ Les détails sont affichés dans toutes les vues de la console **Éditeur de Fra
       * **Panorama Pinterest**
    * **Références**
       * Liste de références
-   * **État des réseaux sociaux**
-      * Détails des variations des réseaux sociaux
 
 ## Rendu HTML brut {#the-plain-html-rendition}
 
