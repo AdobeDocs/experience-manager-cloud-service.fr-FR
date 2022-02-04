@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de création de contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1698'
+ht-degree: 100%
 
 ---
 
@@ -242,6 +242,12 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
    * [Affichage et sélection de ressources](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
    * [Sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+
+   * Publication
+
+      * [Publication rapide](/help/assets/manage-publication.md#quick-publish)
+
+      * [Gérer la publication](/help/assets/manage-publication.md#manage-publication)
 
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
 
