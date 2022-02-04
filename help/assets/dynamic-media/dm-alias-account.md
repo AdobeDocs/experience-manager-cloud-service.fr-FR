@@ -8,9 +8,9 @@ feature: Image Profiles
 role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 1932476a2ca8f46c1f73214c15982d7baa6c56ff
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '727'
 ht-degree: 9%
 
 ---
@@ -22,7 +22,7 @@ hidefromtoc: yes -->
 
 >[!NOTE]
 >
->La fonctionnalité de création d’un compte d’alias de société Dynamic Media se trouve dans le canal de version préliminaire de janvier 2022. Cette fonctionnalité sera disponible dans la version de février 2022.
+>Cette fonctionnalité de création d’un compte d’alias de société Dynamic Media se trouve dans le canal de version préliminaire de janvier 2022. Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement. Cette fonctionnalité sera disponible dans la version de février 2022.
 
 Les URL Dynamic Media et le code incorporé de la visionneuse contiennent le nom du compte de votre société. Ce nom de compte a été créé au moment de la mise en service de Dynamic Media. Il peut y avoir des scénarios où votre entreprise a fait l’objet d’une acquisition ou d’un changement de marque ou où vous souhaitez simplement utiliser un nom plus mémorable. Dans ce cas de figure, il n’est pas facile de mettre à jour manuellement le nom de votre compte d’entreprise dans toutes les URL et le code intégré de la visionneuse prêts à l’emploi. En outre, il est possible que vous impactiez votre référentiel Dynamic Media existant ou que vous impactiez le contenu en direct. Pour résoudre ce problème, vous pouvez configurer un compte d’alias de société Dynamic Media.
 
