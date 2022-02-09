@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: 446edfd83affb062585dca81052575b73c2e796f
+source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
 workflow-type: tm+mt
-source-wordcount: '3448'
+source-wordcount: '3456'
 ht-degree: 4%
 
 ---
@@ -66,6 +66,9 @@ La page Serveur d’images définit les paramètres par défaut de la diffusion 
 ### Onglet Sécurité {#security-tab}
 
 **[!UICONTROL Adresse du client]** - Permet de spécifier une ou plusieurs adresses IP ou plages d’adresses. Lorsqu’elles sont spécifiées, les demandes adressées à ce catalogue d’images provenant d’un client à une adresse IP non répertoriée sont rejetées. Cette règle s’applique à la fois à la diffusion des images et aux images rendues.
+
+![Onglet Sécurité&#x200B;](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Onglet Sécurité affichant le champ &quot;Autoriser&quot; d’IP.*
+
 
 ### Onglet Gestion de catalogue {#catalog-management-tab}
 
