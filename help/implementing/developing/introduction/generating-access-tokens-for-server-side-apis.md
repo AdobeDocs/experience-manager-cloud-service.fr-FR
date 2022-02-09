@@ -2,10 +2,10 @@
 title: Génération de jetons d’accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 89b43e14f35e18393ffab538483121c10f6b5a01
-workflow-type: ht
-source-wordcount: '1250'
-ht-degree: 100%
+source-git-commit: 1b2f1f50832bb06fa5d4cc9a540ebc68cbebf7c8
+workflow-type: tm+mt
+source-wordcount: '1416'
+ht-degree: 77%
 
 ---
 
@@ -21,7 +21,7 @@ Le flux de serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplif
 
 ## Flux de serveur à serveur {#the-server-to-server-flow}
 
-Un utilisateur disposant d’un rôle d’administrateur d’organisation IMS et qui est également membre du profil produit Utilisateurs AEM ou Administrateurs AEM sur le service de création AEM, peut générer des informations d’identification d’AEM as a Cloud Service. Ces informations d’identification peuvent ensuite être récupérées par un utilisateur disposant du rôle administrateur AEM as a Cloud Service. Elles doivent être installées sur le serveur et doivent être traitées avec précaution comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration avec une API AEM as a Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé auprès d’IMS contre un jeton d’accès IMS. Ce jeton d’accès peut ensuite être utilisé comme jeton d’authentification du porteur pour adresser des requêtes à AEM as a Cloud Service.
+Un utilisateur disposant d’un rôle d’administrateur d’organisation IMS et qui est également membre du profil produit Utilisateurs AEM ou Administrateurs AEM sur le service de création AEM, peut générer des informations d’identification d’AEM as a Cloud Service. Ces informations d’identification peuvent ensuite être récupérées par un utilisateur disposant du rôle administrateur AEM as a Cloud Service. Elles doivent être installées sur le serveur et doivent être traitées avec précaution comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration avec une API AEM as a Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé auprès d’IMS contre un jeton d’accès IMS. Ce jeton d’accès peut ensuite être utilisé comme jeton d’authentification du porteur pour adresser des requêtes à AEM as a Cloud Service. Par défaut, les informations d’identification expirent après un an, mais elles peuvent être actualisées si nécessaire, en générant comme décrit [here](#refresh-credentials).
 
 Le flux de serveur à serveur comprend les étapes suivantes :
 
@@ -33,7 +33,7 @@ Le flux de serveur à serveur comprend les étapes suivantes :
 
 ### Extraction des informations d’identification AEM as a Cloud Service {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Les utilisateurs qui ont accès à Developer Console dans AEM as a Cloud Service y voient l’onglet Integrations correspondant à un environnement donné, ainsi que deux boutons. Un utilisateur exerçant le rôle d’administrateur de l’environnement d’AEM as a Cloud Service peut cliquer sur le bouton **Get Service Credentials** (Obtenir les informations d’identification du service) pour afficher le code json contenant les informations d’identification du service. Ces informations contiennent toutes les données nécessaires pour un serveur non AEM, notamment l’ID client, le secret client, la clé privée, le certificat et la configuration pour les niveaux de création et de publication de l’environnement, quelle que ce soit la capsule sélectionnée.
+Les utilisateurs qui ont accès à Developer Console dans AEM as a Cloud Service y voient l’onglet Integrations correspondant à un environnement donné, ainsi que deux boutons. Un utilisateur disposant du rôle d’administrateur d’environnement as a Cloud Service AEM peut cliquer sur le bouton **Générer les informations d’identification du service** pour générer et afficher les informations d’identification du service json, qui contiendra toutes les informations requises pour le serveur non-AEM, y compris l’identifiant du client, le secret client, la clé privée, le certificat et la configuration pour les niveaux de création et de publication de l’environnement, quelle que soit la sélection de la capsule.
 
 ![Génération JWT](assets/JWTtoken3.png)
 
@@ -59,15 +59,17 @@ Le résultat ressemble à ce qui suit :
 }
 ```
 
+Une fois générées, les informations d’identification peuvent être récupérées ultérieurement en appuyant sur la touche **Obtention des informations d’identification du service** au même emplacement.
+
 >[!IMPORTANT]
 >
->Un administrateur d’organisation IMS (généralement le même utilisateur ayant configuré l’environnement via Cloud Manager), qui doit également être membre des profils de produit Utilisateurs AEM ou Administrateurs AEM sur l’instance de création AEM, doit d’abord accéder à Developer Console et cliquer sur le bouton **Get Service Credentials** (Obtenir les informations d’identification du service) pour que les informations d’identification soient générées et récupérées ultérieurement par un utilisateur disposant des autorisations d’administrateur de l’environnement AEM as a Cloud Service. Si l’administrateur de l’organisation IMS ne l’a pas fait, un message l’informera que le rôle d’administrateur de l’organisation IMS doit lui être attribué.
+>Un administrateur d’organisation IMS (généralement le même utilisateur qui a configuré l’environnement via Cloud Manager), qui doit également être membre du profil produit Utilisateurs AEM ou Administrateurs AEM sur l’auteur AEM, doit d’abord accéder à Developer Console et cliquer sur le bouton **Générer les informations d’identification du service** pour que les informations d’identification soient générées et récupérées ultérieurement par un utilisateur disposant des droits d’administrateur sur l’environnement as a Cloud Service AEM. Si l’administrateur de l’organisation IMS ne l’a pas fait, un message l’informera que le rôle d’administrateur de l’organisation IMS doit lui être attribué.
 
 ### Installation des informations d’identification de service AEM sur un serveur non AEM {#install-the-aem-service-credentials-on-a-non-aem-server}
 
 L’application non AEM qui appelle AEM doit pouvoir accéder aux identifiants AEM as a Cloud Service en les traitant comme un secret.
 
-### Génération d’un jeton JWT et échange contre un jeton d’accès {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
+### Génération d’un jeton JWT et échange contre un jeton d’accès  {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
 Utilisez les informations d’identification pour créer un jeton JWT lors d’un appel au service IMS d’Adobe afin de récupérer un jeton d’accès valide pendant 24 heures.
 
@@ -109,7 +111,7 @@ Une fois que l’utilisateur du compte technique est créé dans AEM (après la 
 
 Notez que, par défaut, pour le service de création AEM, l’utilisateur du compte technique est ajouté au groupe d’utilisateurs Contributeurs qui fournit un accès en lecture à AEM.
 
-Il est possible de configurer de manière plus détaillée les autorisations de cet utilisateur de compte technique AEM à l’aide des méthodes habituelles.
+Cet utilisateur de compte technique dans AEM peut être configuré avec des autorisations supplémentaires à l’aide des méthodes habituelles.
 
 ## Flux de développement {#developer-flow}
 
@@ -137,6 +139,20 @@ Cliquez sur le bouton **Get Local Development Token** (Obtenir le jeton de déve
 ### Appelez ensuite l’application AEM à l’aide du jeton d’accès {#call-the-aem-application-with-an-access-token}
 
 Effectuez les appels d’API de serveur à serveur appropriés auprès de l’application non AEM vers un environnement AEM as a Cloud Service, y compris le jeton d’accès dans l’en-tête. Pour l’en-tête « Authorization », utilisez la valeur `"Bearer <access_token>"`.
+
+## Actualiser les informations d’identification {#refresh-credentials}
+
+Par défaut, les informations d’identification as a Cloud Service AEM expirent au bout d’un an. Pour assurer la continuité du service, les développeurs ont la possibilité d’actualiser les informations d’identification, en prolongeant leur disponibilité pendant un an supplémentaire.
+
+Pour ce faire, vous pouvez utiliser la variable **Actualiser les informations d’identification du service** à partir du bouton **Intégrations** dans Developer Console, comme illustré ci-dessous.
+
+![Actualisation des informations d’identification](assets/credential-refresh.png)
+
+Après avoir appuyé sur le bouton, un nouvel ensemble d’informations d’identification est généré. Vous pouvez mettre à jour votre stockage secret avec les nouvelles informations d’identification et vérifier qu’elles fonctionnent normalement.
+
+>[!NOTE]
+>
+> Après avoir cliqué sur le bouton **Actualiser les informations d’identification du service** , les anciennes informations d’identification restent enregistrées jusqu’à leur expiration, mais seul le jeu le plus récent est visible à tout moment à partir de Developer Console.
 
 ## Révocation des informations d’identification du service {#service-credentials-revocation}
 
