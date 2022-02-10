@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: e5522483a15b6253e0b149200bd41d27246d2be1
+source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '946'
+ht-degree: 95%
 
 ---
 
@@ -52,6 +52,10 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 * Le client doit être en mesure de configurer le réseau de diffusion de contenu pour travailler avec AEM as a Cloud Service. Voir les instructions de configuration présentées ci-dessous.
 * Le client doit disposer d’ingénieurs maîtrisant les réseaux de diffusion de contenu, et disponibles pour résoudre les problèmes associés éventuels.
 * Le client doit effectuer et réussir un test de charge avant de passer en production.
+
+>[!NOTE]
+>
+>Le réseau de diffusion de contenu Adobe n’est pas facultatif. Les clients qui apportent leur propre réseau de diffusion de contenu doivent le pointer vers le réseau de diffusion de contenu géré AEM.
 
 Instructions de configuration :
 
