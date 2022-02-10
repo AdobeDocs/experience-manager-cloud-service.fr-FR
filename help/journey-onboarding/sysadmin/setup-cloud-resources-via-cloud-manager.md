@@ -1,193 +1,182 @@
 ---
-title: Configuration de ressources Cloud via Cloud Manager
-description: Consultez cette page pour savoir comment configurer des ressources Cloud via Cloud Manager
+title: Configuration de ressources cloud via Cloud Manager
+description: Découvrez comment utiliser Cloud Manager pour configurer et gérer vos propres ressources cloud.
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
-source-git-commit: 7fe39bbc8d5e965af7f339b2a524420c76360552
+source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 97%
+source-wordcount: '1369'
+ht-degree: 20%
 
 ---
 
-# Configuration de ressources Cloud via Cloud Manager {#setup-cloud-resources}
+# Configuration de ressources cloud via Cloud Manager {#setup-cloud-resources}
 
-L’administrateur système affecté au rôle Propriétaire de l’entreprise doit accéder à Cloud Manager et se connecter. Ensuite, un membre de l’équipe affecté au profil de produit Propriétaire de l’entreprise doit se connecter à Cloud Manager et créer votre programme et vos environnements cloud afin que votre équipe d’experts puisse commencer.
+Découvrez comment utiliser Cloud Manager pour configurer et gérer vos propres ressources cloud.
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment vos ressources cloud sont créées et qui peut les produire.
+Ce document vous aide à comprendre comment vos ressources cloud sont créées et qui peut les créer. Après avoir lu cette section, vous devez comprendre :
 
-Après avoir lu cette section, vous devriez comprendre :
-
-* qu’un administrateur système affecté au rôle Propriétaire de l’entreprise doit être le premier à accéder à Cloud Manager et à se connecter ;
+* Un administrateur système affecté à la variable **Propriétaire de l’entreprise** doit être le premier de votre entreprise à se connecter et à accéder à Cloud Manager.
 * comment votre programme et vos environnements cloud sont créés.
 
 ## Présentation {#introduction}
 
-L’ajout de vos ressources cloud est effectué via Cloud Manager par un membre de votre équipe affecté au profil de produit Propriétaire d’entreprise de Cloud Manager. Cette personne est généralement celle qui comprend les besoins de l’entreprise et qui effectue la configuration initiale de Cloud Manager.
+L’ajout de vos ressources cloud s’effectue via Cloud Manager par le membre de votre équipe affecté à la variable **Propriétaire de l’entreprise** profil de produit. Cette personne est généralement celle qui comprend les besoins de l’entreprise et qui effectue la configuration initiale de Cloud Manager.
 
 Consultez les sections ci-dessous pour savoir comment créer vos [programmes de service cloud](#create-cloud-service-program) et [environnements.](#create-cloud-environments)
 
 ### Prérequis {#prerequisites}
 
-* L’administrateur système affecté au rôle Propriétaire de l’entreprise doit accéder à Cloud Manager et se connecter.
+* L’administrateur système affecté au **Propriétaire de l’entreprise** Le rôle doit avoir été connecté à Cloud Manager avant tout autre utilisateur disposant de la fonction **Propriétaire de l’entreprise** tentative de rôle d’accès à Cloud Manager pour effectuer les étapes décrites dans ce document.
 
-* Découvrez comment [accéder à Cloud Manager et vous connecter.](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+   * Revenez au [Affectation de membres d’équipe à des profils de produit Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) document de ce parcours pour plus d’informations.
 
-* Familiarisez-vous avec les [profils de produit Cloud Manager.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
+* Vous devez comprendre comment [accédez à Cloud Manager et connectez-vous.](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 
-* Comprendre les concepts des [programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) et [environnements](/help/implementing/cloud-manager/manage-environments.md) Cloud Manager.
+* Vous devez connaître [Profils de produit Cloud Manager.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
+
+* Vous devez comprendre les concepts de Cloud Manager. [programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) et [des environnements.](/help/implementing/cloud-manager/manage-environments.md)
+
+## Accès à Cloud Manager en tant qu’administrateur système et propriétaire de l’entreprise {#access-sysadmin-bo}
+
+Avant les membres de l’équipe que vous avez affectés à la **Propriétaire de l’entreprise** Le rôle peut accéder à cloud manager et commencer à créer des ressources cloud. L’administrateur système doit se voir attribuer le **Propriétaire de l’entreprise** et connectez-vous à Cloud Manager.
+
+1. Assurez-vous, en tant qu’administrateur système, que vous disposez de la variable **Propriétaire de l’entreprise** rôle attribué.
+
+   * Revenez à l&#39;étape précédente dans ce parcours, [Affecter des membres d’équipe à des profils de produit Cloud Manager,](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) pour plus d’informations sur l’attribution de la variable **Propriétaire de l’entreprise** rôle de l’administrateur système si vous ne l’avez pas déjà fait.
+
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et être présenté avec la landing page normale.
+
+En se connectant correctement en tant qu’administrateur système avec **Propriétaire de l’entreprise** , vous initialisez Cloud Manager pour l’utiliser par les autres utilisateurs avec le **Propriétaire de l’entreprise** rôle. Vous ne recevrez aucune confirmation de ceci ou de tout message. Il suffit de se connecter.
+
+Jusqu’à ce que vous vous connectiez à Cloud Manager en tant qu’administrateur système avec le **Propriétaire de l’entreprise** rôle, autres utilisateurs avec le **Propriétaire de l’entreprise** ne sera pas en mesure de créer des programmes dans Cloud Manager même s’ils disposent des rôles appropriés.
 
 ## Accéder à Cloud Manager {#navigate-cloud-manager}
 
-L’utilisateur Propriétaire de l’entreprise recevra un e-mail de bienvenue contenant un lien lui permettant de commencer. S’il ne parvient pas à le trouver, il aura accès à [Cloud Manager](https://my.cloudmanager.adobe.com/) directement en se connectant à l’aide de son Adobe ID.
-
-Pour accéder à Cloud Manager, procédez comme suit :
+L’utilisateur avec la variable **Propriétaire de l’entreprise** Un rôle recevra un e-mail de bienvenue avec un lien pour commencer. Suivez les étapes ci-dessous pour accéder à Cloud Manager à l’aide de cet e-mail de bienvenue.
 
 1. Dans l’e-mail de bienvenue, cliquez sur **Commencer**, comme illustré dans l’illustration ci-dessous.
-   ![](/help/journey-onboarding/assets/get-started-email.png)
+   ![Exemple d&#39;email](/help/journey-onboarding/assets/get-started-email.png)
 
 1. Vous accédez à la page **Programmes et produits** de Cloud Manager.
 
-   >[!IMPORTANT]
+   >[!TIP]
    >
-   >Vous pouvez également accéder directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Mettez cette page en signet pour vous y référer ultérieurement et pour accéder directement à la page d’entrée de Cloud Manager.
+   >Vous pouvez également accéder directement à la page de connexion de Cloud Manager à partir de [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/). Veuillez mettre cette page en signet à des fins de référence ultérieure.
 
 1. Vous serez redirigé vers la page d’entrée de Cloud Manager. Voir [Affichage des programmes de Cloud Manager](#viewing-programs) pour plus d’informations.
 
-De plus, vous pouvez accéder à la page **Programmes et produits** de Cloud Manager à partir de la page d’accueil d’Adobe Experience Cloud. Suivez les étapes ci-dessous :
+Vous pouvez également accéder au **Programmes et produits** à partir de la page d’accueil Adobe Experience Cloud en procédant comme suit :
 
 1. Accédez directement à [Adobe Experience Cloud](https://experience.adobe.com) et connectez-vous à l’aide de votre Adobe ID.
 
 1. Sur la page d’accueil d’Adobe Experience Cloud, sélectionnez **Experience Manager**.
 
-   ![](/help/journey-onboarding/assets/setup-resources2.png)
+   ![Page d’accueil Experience Cloud](/help/journey-onboarding/assets/setup-resources2.png)
 
-1. Vous accédez alors à la page d’accueil AEM. À partir de là, lancez **Cloud Manager**.
+1. Vous accédez alors à la page d’accueil AEM. À partir de là, cliquez sur **Launch** sur le **Cloud Manager** mosaïque.
 
-   ![](/help/journey-onboarding/assets/setup-resources3.png)
+   ![AEM page d’accueil](/help/journey-onboarding/assets/setup-resources3.png)
 
 1. Une fois votre connexion établie, vous êtes dirigé vers la page d’entrée de Cloud Manager, comme indiqué ci-dessous. Voir [Affichage des programmes de Cloud Manager](#viewing-programs) pour plus d’informations.
 
-   >[!NOTE]
-   >
-   >Selon les rôles affectés dans [!UICONTROL Cloud Manager] et l’état de l’application, vous verrez plusieurs écrans lors de l’utilisation de l’interface utilisateur de [!UICONTROL Cloud Manager].
+C’est à vous de décider comment accéder à vos programmes et produits via Cloud Manager et cela n’a aucun effet sur la manière dont vous utilisez Cloud Manager ou dont vous gérez vos programmes.
 
-### Affichage des programmes sur la page d’entrée de Cloud Manager {#viewing-programs}
+>[!NOTE]
+>
+>Selon les rôles affectés dans [!UICONTROL Cloud Manager] et l’état de l’application, vous verrez plusieurs écrans lors de l’utilisation de l’interface utilisateur de [!UICONTROL Cloud Manager].
 
-Une fois votre connexion établie, vous êtes dirigé vers la page d’entrée de Cloud Manager, comme indiqué ci-dessous. L’une des trois options suivantes s’affiche :
+### Affichage des programmes {#viewing-programs}
 
-#### Lorsqu’aucun programme n’existe dans Cloud Manager {#no-programs}
+Une fois que vous avez accès à Cloud Manager, ce que vous voyez dépend de l’état de vos programmes, comme indiqué dans les sections suivantes.
 
-S’il n’existe aucun programme dans votre organisation, votre page d’entrée vous demande de créer votre premier programme, comme le montre la figure ci-dessous.
+#### Lorsqu’il n’existe aucun programme {#no-programs}
 
-![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
+S’il n’existe aucun programme dans votre entreprise, votre page d’entrée vous invite à créer votre premier programme.
 
-#### Lorsque des programmes existent déjà dans Cloud Manager {#programs-exist}
+![Aucun programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin0.png)
 
-Si des programmes existent déjà dans votre organisation, votre page d’entrée vous demande d’ajouter un autre programme et d’afficher tous vos programmes existants, comme le montre la figure ci-dessous.
+#### Quand les programmes existent déjà {#programs-exist}
 
-![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+Si des programmes existent déjà dans votre entreprise, votre page d’entrée affiche vos programmes existants et propose également un bouton pour ajouter des programmes supplémentaires.
 
-#### Lorsqu’un programme existe et qu’un utilisateur est administrateur système {#programs-exist-sysadmin}
+![Il existe des programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-Si des programmes existent déjà dans votre organisation et que vous êtes administrateur système, votre page d’entrée affiche le bouton **Gérer l’accès** avec l’option **Ajouter un programme**, comme dans l’illustration ci-dessous.
+#### Lorsqu’un programme existe et que vous êtes administrateur système {#programs-exist-sysadmin}
 
-![](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
+Si des programmes existent déjà dans votre entreprise et que vous êtes administrateur système, votre page d’entrée s’affiche. **Gérer l’accès** avec **Ajout d’un programme** .
+
+![Vue de l’administrateur système](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/admin-console-4.png)
 
 
 ## Vérification des rôles utilisateur {#verify-user-roles}
 
-Une fois que vous êtes connecté à Cloud Manager, suivez les étapes ci-dessous pour vérifier que le profil de produit Propriétaire de l’entreprise vous a été attribué :
+Une fois que vous êtes connecté à Cloud Manager, vous pouvez vérifier que le **Propriétaire de l’entreprise** profil de produit.
 
-1. Sélectionnez votre profil en haut à droite, comme illustré ci-dessous.
+1. Sélectionnez votre profil en haut à droite de la fenêtre.
 
-   ![](/help/journey-onboarding/assets/setup-resources5.png)
+   ![Profil utilisateur](/help/journey-onboarding/assets/setup-resources5.png)
 
-1. Sélectionnez **Rôles utilisateur** et assurez-vous que le rôle Propriétaire de l’entreprise vous est affecté.
+1. Sélectionner **Rôles utilisateur** pour afficher les rôles affectés à votre utilisateur.
 
-   ![](/help/journey-onboarding/assets/setup-resources6.png)
+   ![Rôles utilisateur](/help/journey-onboarding/assets/setup-resources6.png)
 
-1. Cela confirme votre rôle d’utilisateur en tant que propriétaire d’entreprise.
+1. Confirme que l’utilisateur dispose de la variable **Propriétaire de l’entreprise** rôle.
 
-   ![](/help/journey-onboarding/assets/setup-resources7.png)
+   ![Liste des rôles utilisateur](/help/journey-onboarding/assets/setup-resources7.png)
 
-   Super boulot ! Vous vous êtes connecté à Cloud Manager en tant que propriétaire d’entreprise.
+Vous vous êtes connecté à Cloud Manager en tant que propriétaire d’entreprise. Si la variable **Propriétaire de l’entreprise** , contactez votre administrateur système.
 
-## Création d’un programme de service cloud {#create-cloud-service-program}
+## Création d’un programme de Cloud Service {#create-cloud-service-program}
 
-Pour créer votre programme de service cloud à partir de Cloud Manager, procédez comme suit :
+Maintenant que vous avez assuré un accès approprié, vous pouvez créer votre premier programme.
 
-1. Accédez à la page d’entrée de Cloud Manager, comme illustré ci-dessous.
+1. Accédez à la page d’entrée de Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et connectez-vous.
 
-   >[!NOTE]
-   >
-   >Pour réussir cette étape, vous devez être un membre de l’équipe affecté au profil de produit Propriétaire d’entreprise de Cloud Manager.
+1. Sur la page d’entrée de Cloud Manager, cliquez sur **Ajout d’un programme** pour lancer l’assistant Ajouter un programme .
 
-   À partir de là, cliquez sur **Ajouter un programme** pour lancer l’assistant Ajouter un programme.
-
-   ![](/help/journey-onboarding/assets/setup-resources4.png)
+   ![Page d’entrée](/help/journey-onboarding/assets/setup-resources4.png)
 
    >[!TIP]
    >
-   >Regardez la [vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) pour savoir comment créer votre AEM en tant que programme cloud et pour en savoir plus sur les points importants à prendre en compte avant de créer votre programme.
+   >Pour obtenir des instructions étape par étape sur l’utilisation de l’assistant Ajouter un programme, reportez-vous au document . [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md) ou regardez ceci [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) pour savoir comment créer votre programme AEM as a Cloud et connaître les points importants à prendre en compte avant de créer votre programme.
 
-   >[!TIP]
-   >
-   >Pour obtenir des instructions étape par étape sur l’utilisation de l’assistant Ajouter un programme, accédez à [ici](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md).
 
-1. Une fois la création de votre programme cloud terminée, vous pouvez accéder à votre programme pour afficher la page **Aperçu** de votre programme, comme illustré ci-dessous.
+1. Une fois la création de votre programme cloud terminée, vous pouvez accéder à votre programme à partir de la page d’entrée de Cloud Manager pour afficher la variable **Présentation** de votre programme.
 
-   ![](/help/journey-onboarding/assets/setup-resources8.png)
+   ![Présentation du programme](/help/journey-onboarding/assets/setup-resources8.png)
 
-   >[!NOTE]
-   >
-   >Si vous ne l’avez pas déjà fait, c’est le moment d’ajouter les membres de votre développeur à votre équipe Cloud Manager. Reportez-vous à Ajout d’utilisateurs au profil de produit Développeur et suivez les étapes décrites.
+1. Les membres affectés au profil de produit Developer peuvent se connecter à Cloud Manager et gérer les référentiels Git de Cloud Manager.
 
-1. Les membres affectés au profil de produit Développeur peuvent se connecter à Cloud Manager et à [Git de Cloud Manager](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
+   * Si vous ne l’avez pas déjà fait, le moment est venu d’affecter des membres au **Développeur** dans votre équipe Cloud Manager. Revenez au [Affectation de membres d’équipe à des profils de produit Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-cloud-manager.md) document de ce parcours pour plus d’informations.
 
-   Très bon travail ! Maintenant que votre programme est créé, votre Git Cloud Manager est accessible à vos développeurs.
-
+Votre programme a maintenant été créé et votre référentiel Git Cloud Manager est accessible aux développeurs.
 
 ## Création d’environnements cloud {#create-cloud-environments}
 
 Une fois que vous avez créé votre programme cloud, créez vos environnements cloud.
 
-Pour créer vos environnements cloud à partir de Cloud Manager, procédez comme suit :
+1. Accédez à la page d’entrée de Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez **Ajouter** de la carte environnement.
 
-1. Accédez à la page **Aperçu** de Cloud Manager et sélectionnez **Ajouter** dans la carte d’environnement.
+   ![Bouton Ajouter un environnement](/help/journey-onboarding/assets/setup-resources9.png)
 
-   ![](/help/journey-onboarding/assets/setup-resources9.png)
+1. L’assistant d’ajout d’environnement se lance et vous guide tout au long de l’ajout de votre environnement. Ajoutez d’abord votre environnement de développement pour vous familiariser avec l’assistant.
 
-   >[!IMPORTANT]
+   >[!TIP]
    >
-   >Un utilisateur de Cloud Manager possédant le rôle Propriétaire de l’entreprise ou Responsable de déploiement doit être connecté pour réussir cette étape.
+   >Reportez-vous au document [Ajout d’un environnement](/help/implementing/cloud-manager/manage-environments.md#adding-environments) pour en savoir plus ou regarder [ce tutoriel vidéo rapide](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) pour en savoir plus sur les environnements Cloud Manager et sur la manière dont vous pouvez les ajouter à votre programme.
 
-   En outre, regardez le tutoriel rapide [vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) pour en savoir plus sur les environnements Cloud Manager et sur la manière dont vous pouvez les ajouter à votre programme.
+1. Membres affectés à la fonction **Développeur** Le profil de produit peut se connecter à Cloud Manager et gérer les référentiels Git de Cloud Manager.
 
-1. Cela lancera l’assistant d’ajout d’environnement qui vous guidera dans l’ajout de votre environnement. Ajoutez d’abord votre environnement de développement pour vous familiariser avec l’assistant. Consultez [Ajout d’un environnement](/help/implementing/cloud-manager/manage-environments.md#adding-environments) pour plus d’informations.
-
-   >[!NOTE]
-   >
-   >Si vous ne l’avez pas déjà fait, c’est le moment d’ajouter les membres de votre développeur à votre équipe Cloud Manager. Reportez-vous à Ajout d’utilisateurs au profil de produit Développeur et suivez les étapes décrites.
-
-1. Les membres affectés au profil de produit Développeur peuvent se connecter à Cloud Manager et à [Git de Cloud Manager.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-
-   Très bon travail ! Votre programme est maintenant créé et votre Git Cloud Manager est accessible à vos développeurs.
-
-   Félicitations ! Maintenant, vos environnements de programme cloud ont été créés et vos développeurs ont été ajoutés à l’équipe.
+Votre programme a été créé avec succès et votre git Cloud Manager est accessible aux développeurs.
 
 ## Et après ? {#whats-next}
 
-Les membres de votre équipe doivent recevoir des autorisations pour l’instance, car les autorisations d’administration de Cloud Manager ne seront pas suffisantes. Maintenant que vos ressources cloud ont été créées et sont prêtes à être consultées par votre équipe, l’administrateur système doit affecter les membres de votre équipe à AEM en tant que profils de produit Cloud Service à partir d’Adobe Admin Console.
+Maintenant que vos ressources cloud ont été créées et sont prêtes à être consultées par votre équipe, l’administrateur système doit affecter les membres de votre équipe à AEM des profils de produit as a Cloud Service à partir de Adobe Admin Console pour accéder à ces ressources.
 
->[!NOTE]
->
->Pour que l’accès à AEM en tant qu’utilisateurs Cloud Service soit accordé, les utilisateurs doivent appartenir à l’un des deux profils de produit `AEM Users` ou `AEM Administrators`. Voir [Gestion des produits et accès utilisateur en Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) pour en savoir plus.
-
-Continuez votre parcours d’intégration en consultant le document [Attribution de membres de l’équipe à AEM en tant que profils de produit Cloud Service.](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md)
-
+Continuez votre parcours d’intégration en consultant le document. [Affectation de membres d’équipe à AEM profils de produit as a Cloud Service](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md) où vous apprendrez à accorder aux membres de votre équipe les droits dont ils ont besoin pour accéder à vos nouveaux environnements.
 
 ## Ressources supplémentaires {#additional-resources}
 

@@ -4,9 +4,9 @@ description: Consultez cette page pour découvrir comment commencer à utiliser 
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
-source-git-commit: aeee4c4865e2ba7a8c9c7ffb392a08c45dffb20a
-workflow-type: ht
-source-wordcount: '549'
+source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+workflow-type: tm+mt
+source-wordcount: '555'
 ht-degree: 100%
 
 ---
@@ -73,3 +73,8 @@ Pour accéder à Admin Console et passer en revue votre rôle d’administrateur
 ## Et après ? {#whats-next}
 
 Maintenant que vous êtes connecté à Admin Console et que vous avez vérifié votre profil en tant qu’administrateur système, vous devez poursuivre votre parcours d’intégration en consultant le document [Affectations de membres de l’équipe aux profils de produit Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
+
+## Ressources supplémentaires {#additional-resources}
+
+* [Admin Console](/help/onboarding/learn-concepts/admin-console.md)
+* [Administrateur système](/help/onboarding/learn-concepts/system-administrator.md)
