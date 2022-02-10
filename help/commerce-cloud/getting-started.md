@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 97%
+source-wordcount: '1095'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ Cette variable d’environnement est utilisée à deux endroits :
 
 Une autre URL de point d’entrée GraphQL peut être utilisée pour chaque environnement AEM as a Cloud Service. De cette façon, les projets peuvent connecter les environnements d’évaluation AEM avec les systèmes d’évaluation de commerce et l’environnement de production AEM à un système de production de commerce. Ce point d’entrée GraphQL doit être accessible au public, et les connexions VPN privées ou locales ne sont pas prises en charge. Vous pouvez éventuellement fournir un en-tête d’authentification afin d’utiliser des fonctionnalités CIF supplémentaires nécessitant une authentification.
 
-Facultatif et destiné uniquement à Adobe Commerce Enterprise/Cloud, le module complémentaire CIF prend en charge l’utilisation de données de catalogue intermédiaires pour les auteurs d’AEM. Pour ce faire, vous devez configurer un jeton d’autorisation. Pour des raisons de sécurité, le jeton d’autorisation configuré n’est disponible et utilisé que sur les instances d’auteur AEM. Les instances AEM de publication ne peuvent pas afficher de données intermédiaires.
+Le module complémentaire CIF prend en charge, en option et uniquement pour Adobe Commerce Enterprise/Cloud, l’utilisation de données de catalogue intermédiaires pour les auteurs d’AEM. Pour ce faire, vous devez configurer un en-tête d’autorisation. Cet en-tête n’est disponible et utilisé que sur les instances d’auteur AEM pour des raisons de sécurité. Les instances AEM de publication ne peuvent pas afficher de données intermédiaires.
 
 Il existe deux options pour configurer le point d’entrée :
 
@@ -59,7 +59,7 @@ Cliquez sur ce bouton pour ouvrir une boîte de dialogue :
 
 ![Point d’entrée CM Commerce](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Une fois le point d’entrée (éventuellement un jeton d’authentification pour la prise en charge d’un catalogue intermédiaire) défini, il s’affiche sur la page de détails. Cliquez sur l’icône Modifier pour ouvrir la boîte de dialogue dans laquelle le point d’entrée peut être modifié, si nécessaire.
+Une fois le point de terminaison défini et éventuellement un en-tête d’autorisation pour la prise en charge du catalogue intermédiaire, le point de terminaison s’affiche sur la page de détails. Cliquez sur l’icône Modifier pour ouvrir la boîte de dialogue dans laquelle le point d’entrée peut être modifié, si nécessaire.
 
 ![Informations sur l’environnement de CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
