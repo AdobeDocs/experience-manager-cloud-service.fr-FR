@@ -2,10 +2,10 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2022.02.0
 description: Il s’agit des notes de mise à jour de Cloud Manager dans AEM version as a Cloud Service 2022.02.0.
 feature: Release Information
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '274'
-ht-degree: 11%
+source-wordcount: '287'
+ht-degree: 10%
 
 ---
 
@@ -25,7 +25,7 @@ La date de publication de Cloud Manager dans AEM 2022.02.0 as a Cloud Service es
 ## Nouveautés {#what-is-new}
 
 * Nouvelle accélération [Pipelines de configuration de niveau web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) ont été introduites pour déployer exclusivement la configuration HTTPD/dispatcher.
-   * Vous devez être sur AEM version `2021.12.6151.20211217T120950Z` pour utiliser cette fonctionnalité.
+   * Vous devez être sur AEM version `2021.12.6151.20211217T120950Z` ou plus récent et [vous inscrire au mode flexible des outils de Dispatcher ;](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour utiliser cette fonctionnalité.
    * Cette fonctionnalité sera déployée par étapes au cours des deux semaines qui suivront la version 2022.02.0.
 * L’expérience de la page d’entrée de Cloud Manager a été actualisée afin d’offrir une navigation améliorée, un basculement aisé entre les vues de grille/mosaïque et des fenêtres contextuelles pour un résumé rapide du programme.
 * Un nouveau seuil d’échec (`< D`) a été ajouté à la variable [mesure d’évaluation de la fiabilité.](/help/implementing/cloud-manager/code-quality-testing.md#understanding-code-quality-rules)

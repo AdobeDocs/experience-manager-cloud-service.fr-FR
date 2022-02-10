@@ -2,9 +2,9 @@
 title: Pipelines CI/CD
 description: Découvrez les pipelines CI/CD de Cloud Manager et comment les utiliser pour déployer votre code efficacement.
 index: true
-source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
+source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
 workflow-type: tm+mt
-source-wordcount: '1311'
+source-wordcount: '1364'
 ht-degree: 3%
 
 ---
@@ -147,16 +147,18 @@ Pour savoir comment configurer des pipelines pleine pile, reportez-vous aux docu
 
 Les pipelines de configuration de niveau web permettent le déploiement exclusif de la configuration HTTPD/Dispatcher sur le runtime AEM en le découplant des autres modifications de code. Il s’agit d’un pipeline rationalisé qui fournit aux utilisateurs qui souhaitent déployer uniquement les modifications de configuration du Dispatcher, une méthode accélérée pour le faire en quelques minutes seulement.
 
->[!IMPORTANT]
+>[!TIP]
 >
->Vous devez être sur AEM version `X` ou version ultérieure pour exploiter les pipelines de configuration de niveau web.
+>Avec les pipelines de configuration de niveau web, vous pouvez choisir entre stocker votre configuration web au même emplacement source que le pipeline de pile complet ou à un autre emplacement, selon la structure qui convient le mieux à votre projet.
 
 Les restrictions suivantes s’appliquent.
 
+* Vous devez être sur AEM version `2021.12.6151.20211217T120950Z` ou plus récent pour tirer parti des pipelines de configuration de niveau web.
+* Vous devez [vous inscrire au mode flexible des outils de Dispatcher ;](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour tirer parti des pipelines de configuration de niveau web.
 * Un utilisateur doit être connecté à la variable **Responsable de déploiement** pour configurer ou exécuter des pipelines.
 * À tout moment, il ne peut y avoir qu’un seul pipeline de configuration de niveau web par environnement.
 * L’utilisateur ne peut pas configurer de pipeline de configuration de niveau web lorsque le pipeline de pile complète correspondant est en cours d’exécution.
-* La structure de niveau web doit se conformer à la structure de mode flexible, telle que définie dans le document. [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md#validation-debug)
+* La structure de niveau web doit se conformer à la structure de mode flexible, telle que définie dans le document. [Dispatcher en mode cloud.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
 Sachez également comment la variable [pipeline de pile complète](#full-stack-pipeline) se comporte lors de l’introduction d’un pipeline de niveau web.
 
