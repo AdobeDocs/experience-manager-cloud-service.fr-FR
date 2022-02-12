@@ -4,8 +4,8 @@ description: Découvrez comment les fragments de contenu dans Adobe Experience M
 feature: Content Fragments
 role: User
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
-workflow-type: ht
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+workflow-type: tm+mt
 source-wordcount: '2033'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 >* [Personnalisation et extensions de fragments de contenu](/help/implementing/developing/extending/content-fragments-customizing.md)
 >* [Fragments de contenu – Configuration des composants pour le rendu](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
->* [API AEM GraphQL à utiliser avec les fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)
+>* [API AEM GraphQL à utiliser avec les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
 
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
@@ -102,7 +102,7 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 
 >[!NOTE]
 >
->Consultez [Le découplage et AEM](/help/implementing/developing/headless/introduction.md) pour une introduction au développement découplé pour AEM Sites as a Cloud Service.
+>Consultez [Le découplage et AEM](/help/headless/introduction.md) pour une introduction au développement découplé pour AEM Sites as a Cloud Service.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ Les fragments de contenu sont :
 
    * Le composant **Fragment de contenu** est disponible pour les créateurs de pages. Il leur permet de référencer et de livrer le fragment de contenu requis au format HTML ou JSON.
 
-* Accessible à l’aide de l’[API AEM GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md).
+* Accessible à l’aide de l’[API AEM GraphQL](/help/headless/graphql-api/content-fragments.md).
 
 Les fragments de contenu sont une structure de contenu qui :
 

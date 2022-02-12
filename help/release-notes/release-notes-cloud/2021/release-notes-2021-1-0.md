@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2021.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.1.0.
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
+source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
 workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 100%
@@ -23,9 +23,9 @@ La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 * **[API HTTP de fragment de contenu](/help/assets/content-fragments/assets-api-content-fragments.md)** : ajoutez la possibilité d’ajouter ou de mettre à jour et de supprimer des variations de fragments de contenu à l’aide de l’API HTTP.
 
-* **[API GraphQL pour la diffusion de fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)** : possibilité de requête de fragments de contenu à l’aide de la syntaxe GraphQL et de schémas basés sur des modèles de fragments de contenu, pour une sortie au format JSON.
+* **[API GraphQL pour la diffusion de fragments de contenu](/help/headless/graphql-api/content-fragments.md)** : possibilité de requête de fragments de contenu à l’aide de la syntaxe GraphQL et de schémas basés sur des modèles de fragments de contenu, pour une sortie au format JSON.
 
-* **[Prise en charge de l’authentification pour les demandes d’API GraphQL](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** : capacité à authentifier les demandes d’API GraphQL avec des jetons d’accès pour les API côté serveur.
+* **[Prise en charge de l’authentification pour les demandes d’API GraphQL](/help/headless/security/authentication.md)** : capacité à authentifier les demandes d’API GraphQL avec des jetons d’accès pour les API côté serveur.
 
 * Amélioration de la sortie JSON à partir de l’API GraphQL, notamment la possibilité de générer du texte enrichi au format JSON et dans différentes langues.
 
@@ -107,7 +107,7 @@ Pour plus d’informations, voir la documentation [ici](https://experienceleague
 
 La date de publication de l’outil de transfert de contenu v1.2.2 est le 1er février 2021.
 
-### Nouveautés d’[!DNL Content Transfer Tool]  {#what-is-new-ctt}
+### Nouveautés de [!DNL Content Transfer Tool] {#what-is-new-ctt}
 
 * Fonctionnalité et interface utilisateur nouvelles ajoutées à l’outil de transfert de contenu – Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants avec leur identifiant IMS (Identity Management System) Adobe au cours de l’activité de migration de contenu. Pour plus d’informations, consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr).
 * L’outil de transfert de contenu assure désormais la migration de tous les groupes et utilisateurs référencés dans le jeu de migration, y compris les enfants.

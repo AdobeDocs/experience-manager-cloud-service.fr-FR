@@ -2,8 +2,8 @@
 title: Notes de mise à jour de la version 2021.2.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.2.0.
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: b842f70bd53676d23229e24edb4a957ff7613824
-workflow-type: ht
+source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
+workflow-type: tm+mt
 source-wordcount: '1237'
 ht-degree: 100%
 
@@ -23,9 +23,9 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 ### Gestion de contenu découplé {#headless}
 
-* **[API GraphQL pour la diffusion de fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md)** : possibilité de requête de fragments de contenu à l’aide de la syntaxe GraphQL et de schémas basés sur des modèles de fragments de contenu, pour une sortie au format JSON.
+* **[API GraphQL pour la diffusion de fragments de contenu](/help/headless/graphql-api/content-fragments.md)** : possibilité de requête de fragments de contenu à l’aide de la syntaxe GraphQL et de schémas basés sur des modèles de fragments de contenu, pour une sortie au format JSON.
 
-* **[Prise en charge de l’authentification pour les demandes d’API GraphQL](/help/assets/content-fragments/graphql-authentication-content-fragments.md)** : capacité à authentifier les demandes d’API GraphQL avec des jetons d’accès pour les API côté serveur.
+* **[Prise en charge de l’authentification pour les demandes d’API GraphQL](/help/headless/security/authentication.md)** : capacité à authentifier les demandes d’API GraphQL avec des jetons d’accès pour les API côté serveur.
 
 * **[Composant RemotePage](/help/implementing/developing/hybrid/remote-page.md)** : ajout de la prise en charge de l’affichage et de la modification des SPA externes dans AEM.
 
@@ -51,7 +51,7 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 ## [!DNL Adobe Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-## Nouveautés d’[!DNL Assets] {#what-is-new-assets}
+## Nouveautés de [!DNL Assets] {#what-is-new-assets}
 
 * Les ressources peuvent être sourcées à l’aide de [!DNL Experience Manager Assets Brand Portal]. Il permet d’obtenir des ressources auprès des utilisateurs de l’agence pour de nouvelles campagnes marketing, séances photo et projets.
 
@@ -140,7 +140,7 @@ Pour plus d’informations, consultez [Utilisation de l’outil de mappage des u
 * L’outil de transfert de contenu assure désormais la migration de tous les groupes et utilisateurs référencés dans le jeu de migration, y compris les enfants.
 * Les utilisateurs sont autorisés à sélectionner certains chemins sous `/etc` lors de la création de jeux de migration.
 
-## Analyseur de bonnes pratiques {#best-practices-analyzer}
+## Analyseur des bonnes pratiques {#best-practices-analyzer}
 
 ### Date de publication {#release-date-bpa}
 

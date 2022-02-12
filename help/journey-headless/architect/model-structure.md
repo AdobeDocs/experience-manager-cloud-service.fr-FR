@@ -2,10 +2,10 @@
 title: En savoir plus sur la création de modèles de fragment de contenu dans AEM
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '688'
+ht-degree: 99%
 
 ---
 
@@ -132,4 +132,4 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
 * Guides de prise en main
 
-   * [Guide de démarrage rapide sur la création de modèles de fragments de contenu découplés](/help/implementing/developing/headless/getting-started/create-content-model.md)
+   * [Création de modèles de fragment de contenu Configuration sans affichage](/help/headless/setup/create-content-model.md)

@@ -2,8 +2,8 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+workflow-type: tm+mt
 source-wordcount: '1353'
 ht-degree: 100%
 
@@ -243,11 +243,11 @@ Avant de commencer à lancer des requêtes sur votre contenu, suivez les étapes
 
 * Activez votre point d’entrée ;
    * Utilisez Outils -> Ressources -> GraphQL.
-   * [Activation de votre point d’entrée GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
+   * [Activation de votre point d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
 
 * Installez GraphiQL (si nécessaire).
    * Installé en tant que package dédié
-   * [Installation de l’interface AEM GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
+   * [Installation de l’interface AEM GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
 
 ### Exemple de structure {#sample-structure}
 
@@ -363,14 +363,14 @@ Maintenant que vous avez appris à accéder à votre contenu en mode découplé 
    * [Variables](https://graphql.org/learn/queries/#variables)
    * [Bibliothèques Java GraphQL](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)
-* [Apprendre à utiliser GraphQL avec AEM ;](/help/assets/content-fragments/graphql-api-content-fragments.md)
-   * [Activation de votre point d’entrée GraphQL](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
-   * [Installation de l’interface AEM GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
-* [l’exemple de structure de fragment de contenu ;](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes](/help/assets/content-fragments/content-fragments-graphql-samples.md)
-   * [Exemple de requête – Un fragment de ville unique et spécifique](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-single-specific-city-fragment)
-   * [Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-metadata-awards-gb)
-   * [Exemple de requête – Toutes les villes avec une variante nommée](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+* [Apprendre à utiliser GraphQL avec AEM ;](/help/headless/graphql-api/content-fragments.md)
+   * [Activation de votre point d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
+   * [Installation de l’interface AEM GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
+* [l’exemple de structure de fragment de contenu ;](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
+* [Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes](/help/headless/graphql-api/sample-queries.md)
+   * [Exemple de requête – Un fragment de ville unique et spécifique](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
+   * [Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)
+   * [Exemple de requête – Toutes les villes avec une variante nommée](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
 * [Activation de la fonctionnalité de fragments de contenu dans l’explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser)
 * [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
    * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)

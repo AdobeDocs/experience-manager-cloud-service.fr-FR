@@ -2,8 +2,8 @@
 title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement découplé AEM, apprenez à modéliser votre contenu pour une diffusion AEM découplée à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 8107e6fdf4a1e4b49d0ab1ac213cfcf286c5dc86
-workflow-type: ht
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 100%
 
@@ -275,6 +275,6 @@ Maintenant que vous avez appris à modéliser votre structure et à créer du co
    * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : création et modification de modèles de fragment de contenu
    * [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) : conception et création de fragments de contenu ; cette page vous mènera à d’autres sections détaillées
 * [Schéma AEM GraphQL](access-your-content.md) : méthode de GraphQL pour réaliser les modèles
-* [Exemple de structure de fragment de contenu](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
+* [Exemple de structure de fragment de contenu](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) – Une courte série de tutoriels vidéo qui donne un aperçu de l’utilisation des fonctionnalités d’AEM découplé, notamment la modélisation de contenu et GraphQL
    * [Concepts de base de la modélisation GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=fr) : découvrez comment définir et utiliser des fragments de contenu dans Adobe Experience Manager (AEM) pour une utilisation avec GraphQL.

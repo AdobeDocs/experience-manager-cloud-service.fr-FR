@@ -2,10 +2,10 @@
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '729'
+ht-degree: 99%
 
 ---
 
@@ -127,7 +127,7 @@ Maintenant que vous en savez plus sur les références et la structure dans les 
 
 
 * Guides de prise en main
-   * [Guide de démarrage rapide sur la création d’un dossier de ressources découplées](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+   * [Création d’un dossier de ressources - Configuration sans affichage](/help/headless/setup/create-assets-folder.md)
 
 * Parcours d’architecture de contenu découplé AEM
 

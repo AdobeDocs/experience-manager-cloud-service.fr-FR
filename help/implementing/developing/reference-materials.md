@@ -2,8 +2,8 @@
 title: Documents de référence sur les API
 description: AEM dispose d’API complètes et puissantes que vous pouvez exploiter pour votre projet d’expérience numérique.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: ht
+source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ AEM propose des composants personnalisables et des options de diffusion de conte
 | [Activation de l’exportateur JSON pour un composant](/help/implementing/developing/components/enabling-json-exporter.md) | Générer l’exportation JSON du contenu du composant en fonction d’une structure de modélisation |
 | [API Assets](/help/assets/mac-api-assets.md) | Permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources, y compris des fichiers binaires, des métadonnées, des rendus et des commentaires. Voir API HTTP AEM Assets |
 | [API HTTP de fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md) | Accès au contenu de fragment de contenu directement via l’API HTTP via les opérations CRUD |
-| [API GraphQL de fragments de contenu](/help/assets/content-fragments/graphql-api-content-fragments.md) | Activer la diffusion efficace de fragments de contenu vers les clients JavaScript dans les implémentations CMS découplées |
+| [API GraphQL de fragments de contenu](/help/headless/graphql-api/content-fragments.md) | Activer la diffusion efficace de fragments de contenu vers les clients JavaScript dans les implémentations CMS découplées |
 | [API HTTP ressources de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr) | Format exact des requêtes de ressources HTTP prises en charge |
 
 ## API spécifiques à SPA {#spa-apis}

@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de création de contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
+source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
-source-wordcount: '1698'
-ht-degree: 100%
+source-wordcount: '1696'
+ht-degree: 99%
 
 ---
 
@@ -268,7 +268,7 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
 
 * Guides de prise en main
-   * [Guide de démarrage rapide sur la création d’un dossier de ressources découplées](/help/implementing/developing/headless/getting-started/create-assets-folder.md)
+   * [Création d’une configuration sans affichage de dossier de ressources](/help/headless/setup/create-assets-folder.md)
 
 * Parcours d’architecture de contenu découplé AEM
 

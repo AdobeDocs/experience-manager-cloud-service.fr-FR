@@ -1,0 +1,61 @@
+---
+title: Configuration du filtre de référent avec AEM sans affichage
+description: Le filtre de référent Adobe Experience Manager permet d’accéder à partir d’hôtes tiers. Une configuration OSGi pour le filtre de référent est nécessaire pour permettre l’accès au point d’entrée GraphQL pour les applications sans interface utilisateur.
+feature: GraphQL API
+source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
+workflow-type: tm+mt
+source-wordcount: '212'
+ht-degree: 58%
+
+---
+
+
+# Filtre Référent {#referrer-filter}
+
+Le filtre de référent Adobe Experience Manager permet d’accéder à partir d’hôtes tiers. Une configuration OSGi pour le filtre de référent est nécessaire pour permettre l’accès au point d’entrée GraphQL pour les applications sans interface utilisateur.
+
+Pour ce faire, ajoutez une configuration OSGi appropriée pour le filtre de référent qui :
+
+* spécifie un nom d’hôte de site web approuvé ; soit `allow.hosts`, soit `allow.hosts.regexp`,
+* accorde l’accès pour ce nom d’hôte.
+
+Le nom du fichier doit être `org.apache.sling.security.impl.ReferrerFilter.cfg.json`.
+
+Par exemple, pour accorder l’accès aux requêtes avec le référent `my.domain`, vous pouvez :
+
+```xml
+{
+    "allow.empty":false,
+    "allow.hosts":[
+      "my.domain"
+    ],
+    "allow.hosts.regexp":[
+      ""
+    ],
+    "filter.methods":[
+      "POST",
+      "PUT",
+      "DELETE",
+      "COPY",
+      "MOVE"
+    ],
+    "exclude.agents.regexp":[
+      ""
+    ]
+}
+```
+
+>[!CAUTION]
+>
+>Il incombe au client de :
+>
+>* n’accorder l’accès qu’aux domaines approuvés ;
+>* s’assurer qu’aucune information sensible n’est exposée
+>* ne pas utiliser la syntaxe de caractère générique [*] ; cette méthode désactive à la fois l’accès authentifié au point d’entrée GraphQL et l’expose par ailleurs vis-à-vis du monde entier.
+
+
+>[!CAUTION]
+>
+>Tous les [schémas](#schema-generation) GraphQL (dérivés de modèles de fragments de contenu qui ont été **activés**) sont lisibles par le point d’entrée GraphQL.
+>
+>En d’autres termes, vous devez vous assurer qu’aucune donnée sensible n’est disponible, car elle peut être divulguée de cette façon ; par exemple, cela concerne des informations qui peuvent être présentes sous forme de noms de champ dans la définition de modèle.

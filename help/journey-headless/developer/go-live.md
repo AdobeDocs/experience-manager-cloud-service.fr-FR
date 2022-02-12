@@ -2,8 +2,8 @@
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement découplé AEM, apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers le Git Cloud Manager pour le pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+source-git-commit: 44b24a68e2b9a9abd2a9d609c3a28f6b90e492fa
+workflow-type: tm+mt
 source-wordcount: '1907'
 ht-degree: 100%
 
@@ -102,7 +102,7 @@ Il est maintenant temps de préparer votre application découplée AEM pour son 
 
 ### Sécurisez et mettez à l’échelle votre application découplée avant son lancement {#secure-and-scale-before-launch}
 
-1. Configuration de l’[authentification basée sur les jetons](/help/assets/content-fragments/graphql-authentication-content-fragments.md) avec vos requêtes GraphQL
+1. Configuration de l’[authentification basée sur les jetons](/help/headless/security/authentication.md) avec vos requêtes GraphQL
 1. Configurez la [mise en cache](/help/implementing/dispatcher/caching.md).
 
 ### Structure du modèle par rapport à l’output GraphQL {#structure-vs-output}
@@ -200,5 +200,5 @@ Si ce type de flexibilité est nécessaire pour votre projet, passez à la secti
 * [Présentation du déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md)
 * [SDK d’AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
 * [Configurer un environnement AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=fr)
-* [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr)
+* [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
 * [Intégration du référentiel Git de Cloud Manager à un référentiel Git externe et déploiement d’un projet AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=fr)
