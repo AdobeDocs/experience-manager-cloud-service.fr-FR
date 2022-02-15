@@ -3,9 +3,9 @@ title: Activation du pipeline front-end
 description: Découvrez comment activer le pipeline frontal pour les sites existants afin d’exploiter les thèmes du site pour personnaliser plus rapidement votre site.
 feature: Administering
 role: Admin
-source-git-commit: dc7e89c601bb02c78f65ca58eff34c15092b5561
+source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,18 @@ Les sites basés sur des modèles de site peuvent utiliser le pipeline frontal p
 >Si vous ne connaissez pas le pipeline frontal et que vous ne savez pas comment déployer rapidement des sites à l’aide de celui-ci et des modèles de site, consultez la section [Parcours de création de site rapide](/help/journey-sites/quick-site/overview.md) pour une introduction.
 
 Si vous n’avez pas créé votre site existant en fonction de modèles et de thèmes, AEM peut configurer votre site pour charger les thèmes déployés avec le pipeline front-end au-dessus des bibliothèques clientes existantes.
+
+## Détails techniques {#technical-details}
+
+Lorsque vous activez le pipeline frontal d’un site, AEM apporte les modifications suivantes à la structure de votre site.
+
+* Toutes les pages du site comprennent un fichier CSS et JS supplémentaire, qui peut être modifié en déployant des mises à jour via un pipeline frontal dédié à Cloud Manager.
+* Les fichiers CSS et JS ajoutés seront initialement vides, mais un dossier &quot;sources de thème&quot; peut être téléchargé pour amorcer la structure de dossiers qui permet de déployer les mises à jour de code CSS et JS via ce pipeline.
+* Cette modification ne peut être annulée que par un développeur, en supprimant la variable `SiteConfig` et `HtmlPageItemsConfig` noeuds créés sous cette opération `/conf/<site-name>/sling:configs`.
+
+>[!NOTE]
+>
+>Cette action ne convertit pas automatiquement les bibliothèques clientes existantes du site pour utiliser le pipeline de polices-end. Le déplacement de ces sources du dossier de bibliothèque cliente vers le dossier de pipeline front-end est une tâche qui nécessite un travail manuel par un développeur front-end.
 
 ## Conditions requises {#requirements}
 
