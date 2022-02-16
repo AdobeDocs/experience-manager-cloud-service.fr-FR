@@ -2,7 +2,7 @@
 title: Configuration de pipelines hors production
 description: Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans les environnements de production.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+source-git-commit: e2031cabfa06a4d55dfa3ec0a77d3d3b0f835f5b
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 8%
@@ -124,7 +124,7 @@ Un pipeline de configuration de niveau web déploie les configurations HTTPD/Dis
 >
 >Si un pipeline de code de niveau web existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
 
-Pour terminer la configuration du pipeline de code de pile complète hors production, procédez comme suit.
+Pour terminer la configuration du pipeline de code hors production de niveau web, procédez comme suit.
 
 1. Sur le **Code source** , vous devez définir les options suivantes.
 
