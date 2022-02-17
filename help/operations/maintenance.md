@@ -2,9 +2,9 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 83fe5c7b3a30f2444cddd982e9cc14a07c410530
+source-git-commit: 7ff9cabe239c8e474b03c4ecce6d32bf659665a7
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '1211'
 ht-degree: 100%
 
 ---
@@ -39,6 +39,64 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
 | Purge du projet | Client | Doit s’effectuer dans github. <br> Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous `/libs` en créant des propriétés sous le dossier `/apps/settings/granite/operations/maintenance/granite_weekly` ou `granite_daily`. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. <br> Activez la tâche de maintenance en ajoutant un nœud sous le nœud ci-dessus (nommez-le `granite_ProjectPurgeTask`) avec les propriétés adéquates. <br> Configurez les propriétés OSGI. Consultez la [documentation sur les tâches de maintenance AEM 6.5](https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html) |
 
 Les clients peuvent planifier chacune des tâches de maintenance Purger le workflow, Purger les tâches ad hoc et Purger le projet pour que ces tâches s’exécutent pendant les fenêtres de maintenance quotidienne, hebdomadaire ou mensuelle. Ces configurations doivent être modifiées directement dans le contrôle de code source. Le tableau ci-dessous décrit les paramètres de configuration disponibles pour chaque fenêtre. Consultez également les emplacements et les exemples de code fournis après le tableau.
+
+<table style="table-layout:auto">
+ <tbody>
+  <tr>
+    <th>Tâche de maintenance</th>
+    <th>Qui gère la configuration</th>
+    <th>Comment configurer (facultatif)</th>
+  </tr>  
+  <tr>
+    <td>Récupération de l’espace mémoire du magasin de données</td>
+    <td>Adobe</td>
+    <td>S/O – appartient entièrement à Adobe.</td>
+  </td> 
+  </tr>
+  <tr>
+    <td>Purge de version</td>
+    <td>Adobe</td>
+    <td>Gestion entièrement réalisée par Adobe, mais à l’avenir, les clients pourront configurer certains paramètres.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Purge du journal d’audit</td>
+    <td>Adobe</td>
+    <td>Gestion entièrement réalisée par Adobe, mais à l’avenir, les clients pourront configurer certains paramètres.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Nettoyage des binaires Lucene</td>
+    <td>Adobe</td>
+    <td>Non utilisée et donc désactivée par Adobe.</td>
+  </td>
+  </tr>
+  <tr>
+    <td>Purge des tâches ad hoc</td>
+    <td>Client</td>
+    <td>
+    <p>Doit s’effectuer dans github. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>.</p>
+    <p>Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_TaskPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Consultez la <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">documentation sur les tâches de maintenance AEM 6.5</a>.</p>
+  </td>
+  </tr>
+    <tr>
+    <td>Purge du workflow</td>
+    <td>Client</td>
+    <td>
+    <p>Doit s’effectuer dans github. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
+    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_WorkflowPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Consultez la <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">documentation sur les tâches de maintenance AEM 6.5</a>.</p>
+  </td>
+  </tr>
+  <tr>
+    <td>Purge du projet</td>
+    <td>Client</td>
+    <td>
+    <p>Doit s’effectuer dans github. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
+    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Consultez la <a href="https://helpx.adobe.com/experience-manager/kb/AEM6-Maintenance-Guide.html">documentation sur les tâches de maintenance AEM 6.5</a>.</p>
+  </td>
+  </tr>
+  </tbody>
+</table>
 
 <table style="table-layout:auto">
  <tbody>
