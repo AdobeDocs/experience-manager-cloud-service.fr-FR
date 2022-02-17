@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 9047274a100a8e1b3e49e52ad4124bbbef7b3db2
+source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
-source-wordcount: '2939'
-ht-degree: 97%
+source-wordcount: '2954'
+ht-degree: 96%
 
 ---
 
@@ -465,7 +465,7 @@ Les **références** affichent toutes les connexions avec la ressource sélectio
 
 ![Rail du site](../assets/site-rail.png)
 
-Appuyez ou cliquez sur le bouton **Télécharger des sources de thème** pour personnaliser le [thème de votre site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Voir le document [Utilisation du rail de site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) pour plus d’informations sur l’utilisation du rail pour gérer la variable [thème de votre site.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
