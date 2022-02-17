@@ -1,10 +1,10 @@
 ---
 title: Déploiement de votre thème personnalisé
 description: Découvrez comment déployer le thème du site à l’aide du pipeline.
-source-git-commit: 3d48bd507305e7a1d3efa2b61123afdae1f52ced
+source-git-commit: 97c7590fd7b77e78cf2d465454fac80906d37803
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 4%
+source-wordcount: '1027'
+ht-degree: 7%
 
 ---
 
@@ -81,9 +81,9 @@ Une fois le pipeline terminé, vous pouvez informer l’administrateur de valide
 
 ![Modifications appliquées](assets/changes-applied.png)
 
-## Fin du Parcours ? {#end-of-journey}
+## Fin du parcours ? {#end-of-journey}
 
-Félicitations ! Vous avez terminé le parcours de création rapide de site AEM ! Vous devez maintenant :
+Félicitations ! Vous avez terminé le parcours de création rapide de site AEM ! Vous devez maintenant :
 
 * Découvrez comment Cloud Manager et le pipeline front-end fonctionnent pour gérer et déployer les personnalisations front-end.
 * Découvrez comment créer un site AEM basé sur un modèle et comment télécharger le thème du site.
@@ -96,12 +96,13 @@ Vous êtes maintenant prêt à personnaliser les thèmes de votre propre site AE
 * Maintenir une seule source de vérité.
 * Maintenir une séparation des préoccupations.
 
-AEM est un outil puissant et de nombreuses autres options sont disponibles. Extrayez certaines des ressources supplémentaires disponibles dans le [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités que vous avez vues dans ce parcours.
+AEM est un outil puissant et de nombreuses autres options sont disponibles. Consultez certaines des ressources supplémentaires disponibles dans la [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités rencontrées dans ce parcours.
 
 ## Ressources supplémentaires {#additional-resources}
 
 Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondissent certains concepts mentionnés dans ce document.
 
+* [Utilisation du rail de site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) - Découvrez les puissantes fonctionnalités du rail du site pour vous aider à personnaliser et gérer facilement votre thème de site, y compris le téléchargement des sources de thèmes et la gestion des versions de thèmes.
 * [AEM documentation technique as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) - Si vous maîtrisez déjà les AEM, vous pouvez consulter directement les documents techniques détaillés.
 * [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html) - Si vous souhaitez plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
 * [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html) - Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Reportez-vous à ce document pour plus de détails sur ces rôles et sur la manière de les administrer.

@@ -3,9 +3,9 @@ title: Activation du pipeline front-end
 description: Découvrez comment activer le pipeline frontal pour les sites existants afin d’exploiter les thèmes du site pour personnaliser plus rapidement votre site.
 feature: Administering
 role: Admin
-source-git-commit: 4771bb075e41f420d0d51d8cb1a4809dc72e55e5
+source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '565'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ AEM peut adapter automatiquement votre site existant pour utiliser le pipeline f
 
 ## Activation du pipeline front-end {#enabling}
 
-L’activation de votre site est effectuée à partir de la console Sites.
+L’activation de votre site s’effectue à partir de la console Sites à l’aide de la fonction [Rail du site.](site-rail.md)
 
 1. Connectez-vous à AEM et accédez à votre site via **Navigation globale** > **Sites**.
 1. Sélectionnez votre site dans la console. Vous devez sélectionner la racine du site et non les pages enfants.
@@ -58,7 +58,8 @@ L’activation de votre site est effectuée à partir de la console Sites.
 
 1. AEM vous invite à confirmer avec un aperçu les modifications qui seront apportées. Confirmez et votre site est adapté.
 
-Votre site est maintenant prêt à utiliser le pipeline frontal. Pour en savoir plus sur le pipeline front-end, voir :
+Votre site est maintenant prêt à utiliser le pipeline frontal. Pour en savoir plus sur le pipeline frontal et la gestion du thème de votre site, voir :
 
+* [Utilisation du rail de site pour gérer le thème de votre site](site-rail.md)
 * [Parcours de création de site rapide](/help/journey-sites/quick-site/overview.md) - Ce parcours de documentation vous donne, de début à fin, une vue d’ensemble du processus de déploiement rapide d’un site à l’aide du pipeline frontal et de l’outil de création rapide de site.
 * [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) - Ce document décrit le pipeline front-end dans le contexte des pipelines de niveau web et de pile complète.
