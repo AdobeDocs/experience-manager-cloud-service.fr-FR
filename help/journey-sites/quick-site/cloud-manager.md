@@ -1,9 +1,9 @@
 ---
 title: Présentation de Cloud Manager et du workflow de création rapide de site
 description: Découvrez Cloud Manager et comment il relie le nouveau processus de création rapide de site.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
 workflow-type: tm+mt
-source-wordcount: '1102'
+source-wordcount: '1130'
 ht-degree: 2%
 
 ---
@@ -82,11 +82,17 @@ Pour les besoins de ce parcours, une compréhension complète de Cloud Manager n
 
 ![Structure de Cloud Manager](assets/cloud-manager-structure.png)
 
-* **TENANT** - Chaque client est configuré avec un client. **Entreprises de voyage et d’aventure WKND** peut être un client.
-* **PROGRAMMES** - Chaque client possède un ou plusieurs programmes. Le **Entreprises de voyage et d’aventure WKND** peut avoir une **La vie nocturne de WKND** et un **Projets WKND après-midi** programme.
-* **ENVIRONNEMENTS** - Chaque programme comporte plusieurs environnements, tels que la production pour le contenu en direct, l’évaluation et le développement à des fins de développement. **La vie nocturne de WKND** et **Projets WKND après-midi** Les programmes comporteraient à la fois des environnements de développement, d’évaluation et de production.
+* **TENANT** - Chaque client est configuré avec un client.
+* **PROGRAMMES** - Chaque client dispose d’un ou de plusieurs programmes, qui reflètent souvent les solutions sous licence du client.
+* **ENVIRONNEMENTS** - Chaque programme comporte plusieurs environnements, tels que la production pour le contenu en direct, un pour l’évaluation et un autre à des fins de développement.
 * **RÉFÉRENTIEL** - Les environnements disposent de référentiels Git où l’application et le code frontal sont conservés.
 * **OUTILS ET WORKFLOWS** - Les pipelines gèrent le déploiement du code des référentiels vers les environnements.
+
+Un exemple est souvent utile pour contextualiser cette hiérarchie.
+
+* Les entreprises de voyage et d’aventure WKND peuvent être **client** qui se concentre sur les médias liés aux voyages.
+* Le client WKND Travel and Adventure Entreprises peut avoir deux **programmes**: un programme Sites pour WKND Magazine et un programme Assets pour WKND Media.
+* Les programmes WKND Magazine et WKND Media auraient tous deux un environnement de développement, d’évaluation et de production. **environnements**.
 
 ## Flux de développement front-end de création rapide de site {#flow}
 

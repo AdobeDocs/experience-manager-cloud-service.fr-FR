@@ -3,7 +3,7 @@ title: Configuration de ressources cloud via Cloud Manager
 description: Découvrez comment utiliser Cloud Manager pour configurer et gérer vos propres ressources cloud.
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
-source-git-commit: 22a08a0cb80052485309ce3d33537e9fe303c6f5
+source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 20%
@@ -37,7 +37,7 @@ Consultez les sections ci-dessous pour savoir comment créer vos [programmes de 
 
 * Vous devez connaître [Profils de produit Cloud Manager.](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles)
 
-* Vous devez comprendre les concepts de Cloud Manager. [programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/understand-program-types.md) et [des environnements.](/help/implementing/cloud-manager/manage-environments.md)
+* Vous devez comprendre les concepts de Cloud Manager. [programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) et [des environnements.](/help/implementing/cloud-manager/manage-environments.md)
 
 ## Accès à Cloud Manager en tant qu’administrateur système et propriétaire de l’entreprise {#access-sysadmin-bo}
 
@@ -141,7 +141,7 @@ Maintenant que vous avez assuré un accès approprié, vous pouvez créer votre 
 
    >[!TIP]
    >
-   >Pour obtenir des instructions étape par étape sur l’utilisation de l’assistant Ajouter un programme, reportez-vous au document . [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-program.md) ou regardez ceci [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) pour savoir comment créer votre programme AEM as a Cloud et connaître les points importants à prendre en compte avant de créer votre programme.
+   >Pour obtenir des instructions étape par étape sur l’utilisation de l’assistant Ajouter un programme, reportez-vous au document . [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) ou regardez ceci [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) pour savoir comment créer votre programme AEM as a Cloud et connaître les points importants à prendre en compte avant de créer votre programme.
 
 
 1. Une fois la création de votre programme cloud terminée, vous pouvez accéder à votre programme à partir de la page d’entrée de Cloud Manager pour afficher la variable **Présentation** de votre programme.
