@@ -1,9 +1,9 @@
 ---
 title: Phase de préparation
 description: Découvrez les étapes à suivre pour vous assurer que votre installation AEM est prête à être déplacée vers le cloud.
-source-git-commit: 2b2b18993d2782f01cc9361e1d558fb0d1a8c530
+source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1975'
 ht-degree: 10%
 
 ---
@@ -114,7 +114,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   <tr>
     <td>Lanceurs de workflow</td>
     <td></td>
-    <td>Supprimez de votre code tous les lanceurs de workflow qui déclenchent un workflow de ressource de mise à jour de gestion des actifs numériques personnalisé ou en standard.</br>Toutes les ressources chargées dans AEM as a Cloud Service seront traitées par le service de traitement des ressources. Il existe une configuration OSGi de post-traitement de workflow qui peut être utilisée pour déclencher des étapes de traitement personnalisées supplémentaires.</td>
+    <td>Supprimez de votre code tous les lanceurs de workflow qui déclenchent un workflow de ressource de mise à jour de gestion des actifs numériques personnalisé ou en standard.</br>Toutes les ressources chargées dans AEM as a Cloud Service seront traitées par le service de traitement des ressources. Pour les étapes personnalisées, reportez-vous à la section <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Processus de post-traitement</a> sur la configuration et la configuration des workflows de post-traitement.</td>
   </tr>
   <tr>
     <td>Étapes de rendu personnalisées</td>
