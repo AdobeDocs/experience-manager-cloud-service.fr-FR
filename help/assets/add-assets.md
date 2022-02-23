@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 9edc50957f17a3839bae47058f4043853ad19ed8
+source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
 workflow-type: tm+mt
-source-wordcount: '2720'
-ht-degree: 68%
+source-wordcount: '2744'
+ht-degree: 67%
 
 ---
 
@@ -149,7 +149,11 @@ L’image suivante illustre les différentes étapes à suivre lors de l’inges
 
 #### Prérequis {#prerequisites-bulk-ingestion}
 
-Vous devez disposer des détails de stockage blob source pour connecter votre instance de Experience Manager à un stockage de données.
+Un compte ou un compartiment de stockage externe d’Azure ou d’AWS est nécessaire pour utiliser cette fonctionnalité.
+
+>[!NOTE]
+>
+>Créez le conteneur ou le compartiment de compte de stockage comme privé et acceptez les connexions uniquement à partir de demandes autorisées. Toutefois, des restrictions supplémentaires sur les connexions réseau d’entrée ne sont pas prises en charge.
 
 #### Configuration de l’outil d’importation en bloc {#configure-bulk-ingestor-tool}
 
