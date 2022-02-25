@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 98%
+source-wordcount: '1744'
+ht-degree: 75%
 
 ---
 
@@ -99,7 +99,7 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
 ```json
 {
     "completeURI": "(string)",
-    "folderPath": (string)",
+    "folderPath": "(string)",
     "files": [
         {
             "fileName": "(string)",
@@ -107,7 +107,9 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
             "uploadToken": "(string)",
             "uploadURIs": [
                 "(string)"
-            ]
+            ],
+            "minPartSize": (number),
+            "maxPartSize": (number)
         }
     ]
 }
@@ -125,15 +127,30 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
 
 ### Chargement d’un fichier binaire {#upload-binary}
 
-La sortie de lancement d’un chargement comprend une ou plusieurs valeurs d’URI de chargement. Si plusieurs URI sont fournis, le client divise le fichier binaire en plusieurs parties et effectue des requêtes PUT de chaque partie vers chaque URI, dans l’ordre. Utilisez tous les URI. Assurez-vous que la taille de chaque partie soit sur la plage spécifiée dans la réponse au lancement. Les nœuds de bordure CDN permettent d’accélérer le chargement de fichiers binaires requis.
+La sortie de lancement d’un chargement comprend une ou plusieurs valeurs d’URI de chargement. Si plusieurs URI sont fournis, le client peut diviser le fichier binaire en parties et envoyer des requêtes PUT de chaque partie aux URI de chargement fournis, dans l’ordre. Si vous choisissez de diviser le fichier binaire en parties, veillez à respecter les instructions suivantes :
+* Chaque partie, à l’exception de la dernière, doit avoir une taille supérieure ou égale à `minPartSize`.
+* Chaque partie doit avoir une taille inférieure ou égale à `maxPartSize`.
+* Si la taille de votre fichier binaire dépasse `maxPartSize`, vous devez diviser le fichier binaire en parties pour le charger.
+* Vous n’êtes pas tenu d’utiliser tous les URI.
 
-Pour ce faire, une méthode consiste à calculer la taille de la partie en fonction du nombre d’URI de chargement fournis par l’API. Voici un exemple en supposant que la taille totale du fichier binaire soit de 20 000 octets et que le nombre d’URI de chargement soit de 2. Procédez ensuite comme suit :
+Si la taille de votre fichier binaire est inférieure ou égale à `maxPartSize`, vous pouvez transférer le fichier binaire entier vers un seul URI de chargement. Si plusieurs URI de chargement sont fournis, utilisez le premier et ignorez le reste. Vous n’êtes pas tenu d’utiliser tous les URI.
 
-* Calculez la taille d’une pièce en divisant la taille totale par le nombre d’URI : 20 000 / 2 = 10 000.
-* Publiez la plage d’octets 0 à 9 999 du binaire sur le premier URI de la liste des URI de chargement.
-* Publiez la plage d’octets 10 000 à 19 999 du binaire sur le deuxième URI de la liste des URI de chargement.
+Les nœuds de bordure CDN permettent d’accélérer le chargement de fichiers binaires requis.
+
+Pour ce faire, la méthode la plus simple consiste à utiliser la valeur de `maxPartSize` comme taille de pièce. Le contrat d’API garantit qu’il existe suffisamment d’URI de chargement pour charger le fichier binaire si vous utilisez cette valeur comme taille de pièce. Pour ce faire, divisez le fichier binaire en parties de taille `maxPartSize`, en utilisant un URI pour chaque partie, dans l’ordre. La dernière partie peut avoir une taille inférieure ou égale à `maxPartSize`. Supposons, par exemple, que la taille totale du fichier binaire soit de 20 000 octets, la variable `minPartSize` est de 5 000 octets, `maxPartSize` est de 8 000 octets et le nombre d’URI de chargement est de 5. Procédez ensuite comme suit :
+* Chargez les 8 000 premiers octets du fichier binaire à l’aide du premier URI de chargement.
+* Chargez les 8 000 secondes octets du fichier binaire à l’aide du deuxième URI de chargement.
+* Transférez les 4 000 derniers octets du fichier binaire à l’aide du troisième URI de chargement. Puisqu’il s’agit de la dernière partie, elle n’a pas besoin d’être plus grande que `minPartSize`.
+* Vous n’avez pas besoin d’utiliser les deux derniers URI de chargement. Ignorez-les simplement.
+
+Une erreur courante consiste à calculer la taille de la partie en fonction du nombre d’URI de chargement fournis par l’API. Le contrat d’API ne garantit pas que cette approche fonctionnera et peut effectivement entraîner des tailles de parties qui ne sont pas comprises entre `minPartSize` et `maxPartSize`. Cela peut entraîner des échecs de chargement binaire.
+
+Encore une fois, le moyen le plus simple et le plus sûr est d&#39;utiliser simplement des pièces de taille égale à `maxPartSize`.
 
 En cas de succès du chargement, le serveur répond à chaque requête avec un code d’état `201`.
+
+>[!NOTE]
+Pour plus d’informations sur l’algorithme de chargement, voir [documentation officielle sur les fonctionnalités](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) et [Documentation des API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) dans le projet Apache Jackrabbit Oak.
 
 ### Fin du chargement {#complete-upload}
 
@@ -175,6 +192,7 @@ La nouvelle méthode de chargement n’est prise en charge que pour [!DNL Adobe 
 >[!MORELIKETHIS]
 * [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
 * [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
+* [Documentation Apache Jackrabbit Oak pour le téléchargement direct](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 
 ## Workflows de traitement et de post-traitement des ressources {#post-processing-workflows}
@@ -259,7 +277,7 @@ Les modèles de workflow techniques suivants ont été remplacés par des micros
 * `com.day.cq.dam.core.process.SendDownloadAssetEmailProcess`
 -->
 
-<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of 
+<!-- PPTX source: slide in add-assets.md - overview of direct binary upload section of
 https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestaccess.aspx?guestaccesstoken=jexDC5ZnepXSt6dTPciH66TzckS1BPEfdaZuSgHugL8%3D&docid=2_1ec37f0bd4cc74354b4f481cd420e07fc&rev=1&e=CdgElS
 -->
 
