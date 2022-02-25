@@ -5,9 +5,9 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: daa26a9e4e3d9f2ce13e37477a512a3e92d52351
+source-git-commit: 37a54fdc1c78350cd1c45e6ec4c0674d5b73c0f8
 workflow-type: tm+mt
-source-wordcount: '1744'
+source-wordcount: '1737'
 ht-degree: 75%
 
 ---
@@ -127,23 +127,25 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
 
 ### Chargement d’un fichier binaire {#upload-binary}
 
-La sortie de lancement d’un chargement comprend une ou plusieurs valeurs d’URI de chargement. Si plusieurs URI sont fournis, le client peut diviser le fichier binaire en parties et envoyer des requêtes PUT de chaque partie aux URI de chargement fournis, dans l’ordre. Si vous choisissez de diviser le fichier binaire en parties, veillez à respecter les instructions suivantes :
+La sortie de lancement d’un chargement comprend une ou plusieurs valeurs d’URI de chargement. Si plusieurs URI sont fournis, le client peut diviser le fichier binaire en parties et envoyer des requêtes PUT de chaque partie aux URI de chargement fournis, dans l’ordre. Si vous choisissez de diviser le fichier binaire en parties, suivez les instructions suivantes :
+
 * Chaque partie, à l’exception de la dernière, doit avoir une taille supérieure ou égale à `minPartSize`.
 * Chaque partie doit avoir une taille inférieure ou égale à `maxPartSize`.
-* Si la taille de votre fichier binaire dépasse `maxPartSize`, vous devez diviser le fichier binaire en parties pour le charger.
+* Si la taille de votre fichier binaire dépasse `maxPartSize`, divisez le fichier binaire en parties pour le charger.
 * Vous n’êtes pas tenu d’utiliser tous les URI.
 
 Si la taille de votre fichier binaire est inférieure ou égale à `maxPartSize`, vous pouvez transférer le fichier binaire entier vers un seul URI de chargement. Si plusieurs URI de chargement sont fournis, utilisez le premier et ignorez le reste. Vous n’êtes pas tenu d’utiliser tous les URI.
 
 Les nœuds de bordure CDN permettent d’accélérer le chargement de fichiers binaires requis.
 
-Pour ce faire, la méthode la plus simple consiste à utiliser la valeur de `maxPartSize` comme taille de pièce. Le contrat d’API garantit qu’il existe suffisamment d’URI de chargement pour charger le fichier binaire si vous utilisez cette valeur comme taille de pièce. Pour ce faire, divisez le fichier binaire en parties de taille `maxPartSize`, en utilisant un URI pour chaque partie, dans l’ordre. La dernière partie peut avoir une taille inférieure ou égale à `maxPartSize`. Supposons, par exemple, que la taille totale du fichier binaire soit de 20 000 octets, la variable `minPartSize` est de 5 000 octets, `maxPartSize` est de 8 000 octets et le nombre d’URI de chargement est de 5. Procédez ensuite comme suit :
+Pour ce faire, la méthode la plus simple consiste à utiliser la valeur de `maxPartSize` comme taille de pièce. Le contrat d’API garantit qu’il existe suffisamment d’URI de chargement pour charger le fichier binaire si vous utilisez cette valeur comme taille de pièce. Pour ce faire, divisez le fichier binaire en parties de taille `maxPartSize`, en utilisant un URI pour chaque partie, dans l’ordre. La dernière partie peut avoir une taille inférieure ou égale à `maxPartSize`. Supposons, par exemple, que la taille totale du fichier binaire soit de 20 000 octets, la variable `minPartSize` est de 5 000 octets, `maxPartSize` est de 8 000 octets et le nombre d’URI de chargement est de 5. Procédez comme suit :
+
 * Chargez les 8 000 premiers octets du fichier binaire à l’aide du premier URI de chargement.
 * Chargez les 8 000 secondes octets du fichier binaire à l’aide du deuxième URI de chargement.
 * Transférez les 4 000 derniers octets du fichier binaire à l’aide du troisième URI de chargement. Puisqu’il s’agit de la dernière partie, elle n’a pas besoin d’être plus grande que `minPartSize`.
-* Vous n’avez pas besoin d’utiliser les deux derniers URI de chargement. Ignorez-les simplement.
+* Vous n’avez pas besoin d’utiliser les deux derniers URI de chargement. Vous pouvez les ignorer.
 
-Une erreur courante consiste à calculer la taille de la partie en fonction du nombre d’URI de chargement fournis par l’API. Le contrat d’API ne garantit pas que cette approche fonctionnera et peut effectivement entraîner des tailles de parties qui ne sont pas comprises entre `minPartSize` et `maxPartSize`. Cela peut entraîner des échecs de chargement binaire.
+Une erreur courante consiste à calculer la taille de la partie en fonction du nombre d’URI de chargement fournis par l’API. Le contrat d’API ne garantit pas que cette approche fonctionne et peut effectivement entraîner des tailles de parties qui ne sont pas comprises entre `minPartSize` et `maxPartSize`. Cela peut entraîner des échecs de chargement binaire.
 
 Encore une fois, le moyen le plus simple et le plus sûr est d&#39;utiliser simplement des pièces de taille égale à `maxPartSize`.
 
