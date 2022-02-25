@@ -1,9 +1,9 @@
 ---
 title: Phase de préparation
 description: Découvrez les étapes à suivre pour vous assurer que votre installation AEM est prête à être déplacée vers le cloud.
-source-git-commit: 8988f184b7a2153ff32aa3bdc26283f9a7b414b8
+source-git-commit: d851ca19070232e1d43f5c5e546d4174e2c310a2
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '2078'
 ht-degree: 10%
 
 ---
@@ -145,6 +145,11 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
     <td>Sauvegarde et restauration</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/backup.html?lang=en">Sauvegarde et restauration as a Cloud Service AEM</a></td>
     <td></td>
+  </tr>
+  <tr>
+    <td>Modifications de l’authentification</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">Prise en charge IMS d’AEM as a Cloud Service</td>
+    <td>Si vous utilisiez auparavant l’intégration SAML 2.0 sur les instances de création et de publication avant de passer à Cloud Service, le principal changement est que AEM’auteur as a Cloud Service s’intègre uniquement à Adobe IMS. Cependant, AEM niveau Publication as a Cloud Service peut toujours utiliser SAML ou d’autres intégrations d’authentification. AEM as a Cloud Service ne prend en charge l’authentification IMS que pour les utilisateurs Auteur, Admin et Dev. L’authentification IMS ne prend pas en charge les utilisateurs finaux externes de sites clients tels que les visiteurs du site.</td>
   </tr>
 </tbody>
 </table>
