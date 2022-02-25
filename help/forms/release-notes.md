@@ -1,11 +1,11 @@
 ---
-title: Notes de mise à jour d’[!DNL AEM Forms] as a Cloud Service
-description: Notes de mise à jour d’[!DNL AEM Forms] as a Cloud Service
+title: '"[!DNL AEM Forms] Notes de mise à jour as a Cloud Service"'
+description: '"[!DNL AEM Forms] Notes de mise à jour as a Cloud Service"'
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -52,15 +52,15 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 - **Utilisation des rôles Adobe Sign dans un formulaire adaptatif** : les niveaux de service professionnel et entreprise d’Adobe Sign offrent la possibilité d’étendre les rôles des destinataires du contrat au-delà du simple signataire, afin de mieux répondre aux exigences de leur workflow. Vous pouvez désormais [permettre à chaque destinataire de contrat de configurer son rôle dans un formulaire adaptatif](working-with-adobe-sign.md#addsignerstoanadaptiveform), avec le rôle Signer par défaut.
 
-- **Analytics pour les formulaires adaptatifs** : vous pouvez désormais [capturer et suivre le comportement de l’utilisateur final via Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) pour les formulaires adaptatifs afin de rassembler les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
+- **Analytics pour les formulaires adaptatifs** : vous pouvez désormais capturer et [suivre le comportement de l’utilisateur final via Adobe Analytics](integrate-aem-forms-with-adobe-analytics.md) pour les formulaires adaptatifs afin de rassembler les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
 
 - **Connectez facilement AEM Forms à Microsoft Dynamics et à Salesforce** : le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce, ce qui permet aux développeurs de configurer [plus rapidement et plus facilement Microsoft Dynamics et Salesforce en tant que sources de données pour un formulaire adaptatif](configure-msdynamics-salesforce.md).
 
-- **Signature électronique d’un formulaire adaptatif à l’aide de DocuSign :** [vous pouvez utiliser DocuSign pour signer électroniquement un formulaire adaptatif](integrate-docusign-adaptive-forms.md). Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif.
+- **Signature électronique d’un formulaire adaptatif à l’aide de DocuSign :**[ vous pouvez utiliser DocuSign pour signer électroniquement un formulaire adaptatif](integrate-docusign-adaptive-forms.md). Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif.
 
 ### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-- **Connecteur de stockage unifié :** utilisez le connecteur de stockage unifié pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes : Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client
+- **Connecteur de stockage unifié :** utilisez le connecteur de stockage unifié pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes : Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
 
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
