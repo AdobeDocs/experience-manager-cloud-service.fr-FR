@@ -3,10 +3,10 @@ title: Intégration d’AEM et de solutions commerciales tierces à l’aide de 
 description: Les entreprises peuvent avoir besoin de solutions commerciales tierces supplémentaires pour alimenter leur vitrine. Le cadre d’intégration commerciale (CIF) peut être utilisé dans de tels scénarios d’intégration pour connecter une solution commerciale tierce à Adobe Experience Manager à l’aide de l’environnement d’exécution d’E/S.
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
-source-git-commit: ef4abc74b90da80bfe556306f8ac93078b4958c7
-workflow-type: ht
-source-wordcount: '419'
-ht-degree: 100%
+source-git-commit: a53ef07cd9da636c8d938c711de6defb9eb8e05f
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 80%
 
 ---
 
@@ -51,3 +51,14 @@ Nous vous recommandons d’utiliser [Adobe I/O Runtime](https://www.adobe.io/api
 La [mise en œuvre de référence](https://github.com/adobe/commerce-cif-graphql-integration-reference) est un excellent point de départ pour créer l’intégration à votre solution commerciale. Bien qu’il prenne en charge GraphQL, il peut également être intégré à tout autre type d’API comme REST.
 
 Cette couche d’intégration n’est pas requise si une couche tierce est disponible (par exemple, Mulesoft) ou si l’intégration est créée sur la solution tierce.
+
+## Connecteurs préconfigurés {#connectors}
+
+Les connecteurs constituent un bon point de départ pour les projets. Ils sont fournis avec une connexion spécifique à une solution de commerce et un mappage d’API par défaut. Ces connecteurs sont créés par des tiers et ne sont pas gérés par Adobe. Contactez le partenaire concerné pour obtenir des informations.
+
+* [SAP Commerce](https://github.com/diconium/commerce-cif-graphql-integration-hybris), construit par Diconium
+* [Commercetools](https://github.com/diconium/commerce-cif-graphql-integration-commercetool), construit par Diconium
+
+>[!TIP]
+>
+>Bien que les connecteurs aident les projets à accélérer l’intégration du commerce, ils ne sont pas plug-in en lecture. Les solutions de commerce d’entreprise sont généralement fortement personnalisées et nécessitent une intégration personnalisée. Une bonne connaissance de la plateforme commerciale, des schémas Adobe Commerce GraphQL et de Adobe I/O Runtime est requise.
