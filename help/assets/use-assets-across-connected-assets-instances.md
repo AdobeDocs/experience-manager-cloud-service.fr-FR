@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 2b16c2922f575fd0946f1a6aa21b99772114b440
+source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
 workflow-type: tm+mt
-source-wordcount: '3856'
-ht-degree: 75%
+source-wordcount: '3796'
+ht-degree: 74%
 
 ---
 
@@ -148,11 +148,9 @@ Pour utiliser [!DNL Dynamic Media] avec les ressources connectées :
 >
 >Avec les ressources connectées et [!DNL Dynamic Media] configuration, vous ne pouvez pas utiliser [!DNL Dynamic Media] pour traiter les ressources locales disponibles dans la fonction [!DNL Sites] déploiement.
 
-## Configurez une connexion entre les déploiements [!DNL Sites] et [!DNL Dynamic Media]  {#sites-dynamic-media-connected-assets}
+## Configuration d’[!DNL Dynamic Media] {#configure-dynamic-media}
 
-Vous pouvez configurer une connexion entre le déploiement [!DNL Sites] et le déploiement [!DNL Dynamic Media] qui permet aux auteurs d’utiliser des images [!DNL Dynamic Media] dans leurs pages web. Lors de la création de pages web, l’utilisation des déploiements distants Assets et [!DNL Dynamic Media] reste identique. Vous pouvez ainsi exploiter la fonctionnalité [!DNL Dynamic Media] via la fonctionnalité Ressources connectées, par exemple les paramètres de recadrage intelligent et les paramètres d’image prédéfinis.
-
-Pour configurer la connexion, procédez comme suit :
+Pour configurer [!DNL Dynamic Media] on [!DNL Assets] et [!DNL Sites] déploiements :
 
 1. Créez la configuration de ressources connectées comme décrit ci-dessus, sauf lors de la configuration de la fonctionnalité, sélectionnez l’option **[!UICONTROL Récupérer le rendu d’origine pour les ressources connectées Dynamic Media]**.
 
