@@ -4,9 +4,9 @@ description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
+source-git-commit: 9608e36904e352af5a7273fcb8e7eef49565680b
 workflow-type: tm+mt
-source-wordcount: '9334'
+source-wordcount: '9332'
 ht-degree: 93%
 
 ---
@@ -447,9 +447,6 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
 1. Sur la page Tableau de bord, à droite de **[!UICONTROL Google Cloud Platform]**, sélectionnez la liste déroulante Projet pour ouvrir le **[!UICONTROL Sélection d’un projet]** de la boîte de dialogue
 1. Dans le **[!UICONTROL Sélection d’un projet]** boîte de dialogue, sélectionnez **[!UICONTROL Nouveau projet]**.
-
-   ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
-
 1. Dans le **[!UICONTROL Nouveau projet]** , dans la boîte de dialogue **[!UICONTROL Nom du projet]** , saisissez le nom du nouveau projet.
 
    Votre ID de projet est basé sur le nom du projet. Par conséquent, choisissez soigneusement le nom du projet ; il ne peut pas être modifié une fois créé. Vous devez également le saisir lors de la configuration ultérieure de YouTube dans Experience Manager. Par conséquent, prenez-le en note.
@@ -460,8 +457,6 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
    * Dans le tableau de bord de votre projet, dans la variable **[!UICONTROL Prise en main]** carte, sélectionnez **[!UICONTROL Exploration et activation des API]**.
    * Dans le tableau de bord de votre projet, dans la variable **[!UICONTROL API]** carte, sélectionnez **[!UICONTROL Accès à la présentation des API]**.
-
-   ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Près du milieu supérieur de la **[!UICONTROL API et services]** page, sélectionnez **[!UICONTROL ACTIVATION DES API ET DES SERVICES]**.<!-- NEXT STEP BELOW IS STEP 10 -->
 1. Sur le **[!UICONTROL Bibliothèque d’API]** , sur le côté gauche, sous **[!UICONTROL Catégorie]**, sélectionnez **[!UICONTROL YouTube]**. Sur le côté droit de la page, sélectionnez **[!UICONTROL YouTube]**.
