@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: bb04d3bf3b5f4ca9abc12eee2e50b5f3a95ba405
+source-git-commit: d5dcd7bd94b8c3ef8b6cbe3abda05011737896a5
 workflow-type: tm+mt
-source-wordcount: '9476'
-ht-degree: 98%
+source-wordcount: '9334'
+ht-degree: 93%
 
 ---
 
@@ -103,7 +103,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
 
 ## Utilisation de vidéo dans Dynamic Media {#working-with-video-in-dynamic-media}
 
-La vidéo dans Dynamic Media est une solution complète qui facilite la publication de vidéos adaptatives haute qualité pour la diffusion sur plusieurs écrans, notamment les postes de travail et les appareils mobiles iOS, Android™, BlackBerry® et Windows®. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. L’ordinateur de bureau ou l’appareil mobile détecte la bande passante disponible.
+La vidéo dans Dynamic Media est une solution de bout en bout qui facilite la publication de vidéos adaptatives de haute qualité pour la diffusion en continu sur plusieurs écrans, y compris sur les ordinateurs de bureau, les tablettes et les appareils mobiles. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Le poste de travail ou l’appareil mobile détecte la bande passante disponible.
 
 Par exemple, sur un appareil mobile iOS, il détecte une bande passante telle que 3G, 4G ou une connexion Wi-Fi, puis sélectionne automatiquement la vidéo codée selon le débit correspondant parmi ceux disponibles dans la visionneuse de vidéos adaptative. La vidéo est diffusée en continu sur les postes de travail, les appareils mobiles ou les tablettes.
 
@@ -128,13 +128,13 @@ Pour la gestion des visionneuses de vidéos adaptative et unique, les fonctions 
 
 * Sous-titrage des vidéos dans toutes les visionneuses de vidéo HTML5.
 * Organiser, parcourir et effectuer des recherches dans la vidéo avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
-* Proposer des visionneuses de vidéos adaptatives en ligne ainsi que sur des postes de travail et des appareils mobiles (iPhone, iPad, Android™, BlackBerry® et Windows® Phone notamment).
+* Diffusez des visionneuses de vidéos adaptatives sur le web et sur les ordinateurs de bureau, les tablettes et les appareils mobiles.
 
 La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=fr).
 
-Dynamic Media prend en charge la lecture vidéo pour mobiles au format vidéo MP4 H.264. Les appareils BlackBerry® qui prennent en charge ce format vidéo sont répertoriés dans la liste : [Formats vidéo pris en charge sur BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
+<!-- OUTDATED 2/28/22 BASED ON CQDOC-18692 Dynamic Media supports mobile video playback for MP4 H.264 video. You can find BlackBerry® devices that support this video format at the following: [Supported video formats on BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
-Les appareils Windows® qui prennent en charge ce format vidéo sont répertoriés dans la liste [Formats vidéo pris en charge sur Windows® Phone](https://docs.microsoft.com/fr-fr/windows/uwp/audio-video-camera/supported-codecs).
+OUTDATED 2/28/22 BASED ON CQDOC-18692 You can find Windows® devices that support this video format at the following [Supported video formats on Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 * Lecture de la vidéo à l’aide des paramètres prédéfinis de la visionneuse Dynamic Media Video, tels que :
 
@@ -239,13 +239,15 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
    <td>Chrome (iOS)</td>
    <td>HLS</td>
   </tr>
-  <tr>
+ </tbody>
+</table>
+
+<!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
    <td>BlackBerry®</td>
    <td>HLS</td>
   </tr>
- </tbody>
-</table>
+ -->
 
 ## Architecture de la solution vidéo Dynamic Media {#architecture-of-dynamic-media-video-solution}
 
@@ -436,21 +438,19 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 **Pour configurer les paramètres de Google Cloud, procédez comme suit :**
 
 1. Créez un compte Google.
-   [https://accounts.google.com/SignUp?service=mail](https://accounts.google.com/SignUp?service=mail)
-
-   Si vous disposez déjà d’un compte Google, passez à l’étape suivante.
+   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
 
 1. Accédez à [https://cloud.google.com/](https://cloud.google.com/).
 1. Dans la page Google Cloud, près du coin supérieur droit, sélectionnez **[!UICONTROL Console]**.
 
    Vous devrez peut-être vous **[!UICONTROL connecter]** à l’aide des informations d’identification de votre compte Google pour voir l’option **[!UICONTROL Console]**.
 
-1. Sur la page Tableau de bord, à droite de **[!UICONTROL Google Cloud Platform]**, sélectionnez la liste déroulante Projet pour ouvrir la boîte de dialogue Sélectionner un projet.
-1. Dans la boîte de dialogue Sélectionner un projet, sélectionnez **[!UICONTROL Nouveau projet]**.
+1. Sur la page Tableau de bord, à droite de **[!UICONTROL Google Cloud Platform]**, sélectionnez la liste déroulante Projet pour ouvrir le **[!UICONTROL Sélection d’un projet]** de la boîte de dialogue
+1. Dans le **[!UICONTROL Sélection d’un projet]** boîte de dialogue, sélectionnez **[!UICONTROL Nouveau projet]**.
 
    ![6_5_googleaccount-newproject](assets/6_5_googleaccount-newproject.png)
 
-1. Dans la boîte de dialogue Nouveau projet, saisissez le nom de votre nouveau projet dans le champ Nom du projet.
+1. Dans le **[!UICONTROL Nouveau projet]** , dans la boîte de dialogue **[!UICONTROL Nom du projet]** , saisissez le nom du nouveau projet.
 
    Votre ID de projet est basé sur le nom du projet. Par conséquent, choisissez soigneusement le nom du projet ; il ne peut pas être modifié une fois créé. Vous devez également le saisir lors de la configuration ultérieure de YouTube dans Experience Manager. Par conséquent, prenez-le en note.
 
@@ -458,72 +458,71 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
 1. Effectuez l’une des opérations suivantes :
 
-   * Dans le tableau de bord de votre projet, dans la carte Prise en main, sélectionnez **[!UICONTROL Explorer et activer les API]**.
-   * Dans le tableau de bord de votre projet, dans la carte API, sélectionnez **[!UICONTROL Accéder à l’aperçu des API]**.
+   * Dans le tableau de bord de votre projet, dans la variable **[!UICONTROL Prise en main]** carte, sélectionnez **[!UICONTROL Exploration et activation des API]**.
+   * Dans le tableau de bord de votre projet, dans la variable **[!UICONTROL API]** carte, sélectionnez **[!UICONTROL Accès à la présentation des API]**.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
-1. En haut de la page API &amp; services, sélectionnez **[!UICONTROL Activer les API et les services]**.
-1. Sur la page Bibliothèque d’API, dans la partie gauche, sous **[!UICONTROL Catégorie]**, sélectionnez **[!UICONTROL YouTube]**. Sur le côté droit de la page, sélectionnez **[!UICONTROL YouTube Data API]**.
-1. Sur la page YouTube Data API v3, sélectionnez **[!UICONTROL Activer]**.
+1. Près du milieu supérieur de la **[!UICONTROL API et services]** page, sélectionnez **[!UICONTROL ACTIVATION DES API ET DES SERVICES]**.<!-- NEXT STEP BELOW IS STEP 10 -->
+1. Sur le **[!UICONTROL Bibliothèque d’API]** , sur le côté gauche, sous **[!UICONTROL Catégorie]**, sélectionnez **[!UICONTROL YouTube]**. Sur le côté droit de la page, sélectionnez **[!UICONTROL YouTube]**.
+1. Sur le **[!UICONTROL YouTube]** page, sélectionnez **[!UICONTROL API de données YouTube v3]**.
+1. Sur le **[!UICONTROL API de données YouTube v3]** page, sélectionnez **[!UICONTROL GÉRER]**.
 
-   ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
+   ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. Pour utiliser l’API, vous avez besoin d’identifiants. Si besoin, sélectionnez **[!UICONTROL Créer des identifiants]**.
+1. Pour utiliser l’API, vous avez besoin d’identifiants. Si nécessaire, dans la partie gauche de la page APIs &amp; Services, sélectionnez **[!UICONTROL Informations d’identification]**.
 
-   ![6_5_googleaccount-apis-createcredentials](assets/6_5_googleaccount-apis-createcredentials.png)
+1. Sur la page Informations d’identification, près de la partie supérieure, sélectionnez **[!UICONTROL CRÉATION D’INFORMATIONS D’IDENTIFICATION]**, puis sélectionnez **[!UICONTROL ID client OAuth]**.
 
-1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 1, procédez comme suit :
+1. Sur le **[!UICONTROL Création d’un ID de client OAuth]** , dans la **[!UICONTROL Type d’application]** liste déroulante, sélectionnez **[!UICONTROL application web]**.
 
-   * Dans la liste déroulante **[!UICONTROL Quelle API utilisez-vous ?]**, sélectionnez **[!UICONTROL YouTube Data API v3]**.
+   ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
-   * Depuis la liste déroulante **[!UICONTROL Quelle plate-forme utilisez-vous pour appeler l’API ?]**, sélectionnez **[!UICONTROL Serveur web (par exemple, node.js, Tomcat)]**.
+1. Utilisez l’une des méthodes suivantes :
 
-   * Dans la liste déroulante **[!UICONTROL À quelles données accédez-vous ?Dans la liste déroulante]**, sélectionnez **[!UICONTROL Données utilisateur]**.
+   * Dans le **[!UICONTROL Nom]** , saisissez un nom unique pour votre client OAuth 2.0.
+   * Utilisez le nom par défaut que Google a déjà fourni dans la variable **[!UICONTROL Nom]** champ .
 
-   ![6_5_googleaccount-apis-createcredentials2](assets/6_5_googleaccount-apis-createcredentials2.png)
+1. Sous , **[!UICONTROL Origines JavaScript autorisées]** titre, sélectionnez **[!UICONTROL ADD URI]**.
 
-1. Sélectionnez **[!UICONTROL De quels identifiants ai-je besoin ?]**
-1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 2, sous l’en-tête **[!UICONTROL Créer un ID client OAuth 2.0]**, dans le champ Nom, saisissez un nom unique si vous le souhaitez. Vous pouvez également utiliser le nom par défaut spécifié par Google.
-1. Dans le champ de texte sous l’en-tête **[!UICONTROL Origines JavaScript autorisées]**, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
+   ![6_5_googleaccount-apis-name-authorizations](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
+
+1. Dans le **[!UICONTROL URI]** Champ de texte, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
 
    `https://<servername.domain>:<port_number>`
 
    Par exemple, `https://1a2b3c.mycompany.com:4321`
 
-   **Remarque :** L’exemple du chemin ci-dessus est fourni uniquement à titre illustratif.
+   >[!IMPORTANT]
+   >
+   >L’exemple de chemin ci-dessus est hypothétique et à titre d’explication uniquement.
 
-   ![6_5_googleaccount-apis-createcredentials-oauth](assets/6_5_googleaccount-apis-createcredentials-oauth.png)
+1. Sous , **[!UICONTROL URI de redirection autorisés]** , sélectionnez AJOUTER UN URI.
 
-1. Dans le champ de texte sous l’en-tête **[!UICONTROL URI de redirection autorisés]**, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
+1. Dans le **[!UICONTROL URI]** Champ de texte, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
    Par exemple, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   **Remarque :** L’exemple de chemin ci-dessus est fourni uniquement à titre illustratif.
+   >[!IMPORTANT]
+   >
+   >L’exemple de chemin ci-dessus est hypothétique et à titre d’explication uniquement.
 
-1. Sélectionnez **[!UICONTROL Créer un ID client OAuth]**.
-1. Sur la page **[!UICONTROL Ajouter des identifiants au projet]**, à l’étape 3, sous l’en-tête **[!UICONTROL Configuration de l’écran d’autorisation OAuth 2.0]**, sélectionnez l’adresse e-mail Gmail que vous utilisez actuellement.
+1. Près du bas de la **[!UICONTROL Création d’un ID de client OAuth]** page, sélectionnez **[!UICONTROL Créer]**.
 
-   ![6_5_googleaccount-apis-createcredentials-consentscreen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
+1. Sur le **[!UICONTROL Client OAuth créé]** , procédez comme suit :
 
-1. Sous l’en-tête **[!UICONTROL Nom du produit affiché à l’intention des utilisateurs]**, dans le champ de texte, entrez ce qui doit s’afficher sur l’écran d’autorisation.
+   * (Facultatif) Copiez votre ID de client et votre secret de client, puis enregistrez-le.
+   * Sélectionner **[!UICONTROL TÉLÉCHARGER JSON]**, puis enregistrez le fichier JSON.
 
-   L’écran de consentement s’affiche pour l’administrateur d’Experience Manager lorsqu’il s’authentifie auprès de YouTube. Experience Manager contacte YouTube pour obtenir l’autorisation.
+   Vous avez besoin de ce fichier JSON téléchargé lorsque vous configurez YouTube dans Adobe Experience Manager ultérieurement.
 
-1. Sélectionnez **[!UICONTROL Continuer]**.
-1. Sur la page Ajouter des identifiants au projet, à l’étape 4, sous l’en-tête **[!UICONTROL Télécharger les identifiants]**, sélectionnez **[!UICONTROL Télécharger]**.
+   ![6_5_googleaccount-apis-oauthclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
-   ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
+1. Sur le **[!UICONTROL Client OAuth créé]** boîte de dialogue, sélectionnez **[!UICONTROL OK]**.
 
-1. Enregistrez le fichier `client_id.json`.
-
-   Vous en avez besoin lors de la configuration ultérieure de YouTube dans Adobe Experience Manager.
-
-1. Sélectionnez **[!UICONTROL Terminé]**.
-
-   Déconnectez-vous de votre compte Google. Créez maintenant une chaîne YouTube.
+1. Déconnectez-vous de votre compte Google. Créez maintenant une chaîne YouTube.
 
 ### Création d’une chaîne YouTube {#creating-a-youtube-channel}
 
