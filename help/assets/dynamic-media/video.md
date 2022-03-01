@@ -1,12 +1,12 @@
 ---
 title: Vidéo dans Dynamic Media
-description: Learn how to work with video in Dynamic Media such as best practices for encoding videos, publishing videos to YouTube, viewing video reports, and adding closed captioning, subtitles, or chapter markers to videos.
+description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment les bonnes pratiques pour le codage de vidéos, la publication de vidéos dans YouTube, l’affichage de rapports vidéo et l’ajout de sous-titres, de sous-titres ou de marqueurs de chapitre aux vidéos.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 22588f102f5b388d6da3a8aae124c30288ecb0a5
+source-git-commit: e1f0b04dde2eb5a3392a0b9befbc56135b06cff4
 workflow-type: tm+mt
-source-wordcount: '9346'
+source-wordcount: '9361'
 ht-degree: 93%
 
 ---
@@ -39,7 +39,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
       * En savoir plus sur l’[organisation des ressources numériques](/help/assets/organize-assets.md).
    * Chargez les vidéos issues de sources originales dans les dossiers. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
-      * Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 x 25.
+      * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
       * Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum.
       * [Chargement des vidéos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/file-format-support.md).
@@ -103,7 +103,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
 
 ## Utilisation de vidéo dans Dynamic Media {#working-with-video-in-dynamic-media}
 
-Video in Dynamic Media is an end-to-end solution that makes it easy to publish high-quality Adaptive Video for streaming across multiple screens, including desktops, tablets, and mobile devices. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Le poste de travail ou l’appareil mobile détecte la bande passante disponible.
+La vidéo dans Dynamic Media est une solution de bout en bout qui facilite la publication de vidéos adaptatives de haute qualité pour la diffusion en continu sur plusieurs écrans, y compris sur les ordinateurs de bureau, les tablettes et les appareils mobiles. Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées dans des débits et des formats différents, par exemple 400 kbit/s, 800 kbit/s et 1 000 kbit/s. Le poste de travail ou l’appareil mobile détecte la bande passante disponible.
 
 Par exemple, sur un appareil mobile iOS, il détecte une bande passante telle que 3G, 4G ou une connexion Wi-Fi, puis sélectionne automatiquement la vidéo codée selon le débit correspondant parmi ceux disponibles dans la visionneuse de vidéos adaptative. La vidéo est diffusée en continu sur les postes de travail, les appareils mobiles ou les tablettes.
 
@@ -128,7 +128,7 @@ Pour la gestion des visionneuses de vidéos adaptative et unique, les fonctions 
 
 * Sous-titrage des vidéos dans toutes les visionneuses de vidéo HTML5.
 * Organiser, parcourir et effectuer des recherches dans la vidéo avec une prise en charge complète des métadonnées pour une gestion efficace des ressources vidéo.
-* Deliver Adaptive Video Sets to the web and desktops, tablets, and mobile devices.
+* Diffusez des visionneuses de vidéos adaptatives sur le web et sur les ordinateurs de bureau, les tablettes et les appareils mobiles.
 
 La diffusion de vidéo adaptative en continu est prise en charge sur différentes plateformes iOS. Voir [Guide de référence des visionneuses de médias dynamiques](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=fr).
 
@@ -274,7 +274,7 @@ Vous trouverez ci-dessous quelques conseils sur les bonnes pratiques de codage d
 
 Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source ayant la plus haute qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés, et un codage supplémentaire crée une vidéo de qualité inférieure.
 
-* Dynamic Media supports primarily short-form videos with a maximum length of 30 minutes and a minimum resolution that is greater than 25 x 25.
+* Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
 * Vous pouvez charger des fichiers vidéo de source principale d’une taille de 15 Go chacun au maximum.
 
 Le tableau ci-dessous décrit la taille recommandée, le format et le débit minimal requis pour vos fichiers vidéo sources au moment de leur codage :
@@ -433,23 +433,23 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
 >[!NOTE]
 >
->Les étapes suivantes étaient exactes au moment de leur rédaction. Toutefois, Google met à jour régulièrement ses sites web sans préavis. Par conséquent, ces étapes peuvent être légèrement différentes.
+>Les étapes suivantes étaient exactes au moment de la rédaction de cet article. Cependant, Google met régulièrement à jour ses pages web cloud sans préavis. Par conséquent, certaines options de configuration peuvent être nommées légèrement différemment dans l’interface utilisateur de Google par rapport au nom utilisé dans les étapes.
 
 **Pour configurer les paramètres de Google Cloud, procédez comme suit :**
 
 1. Créez un compte Google.
-   [](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
+   [https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp](https://accounts.google.com/signup/v2?service=mail&amp;flowName=GlifWebSignIn&amp;flowEntry=SignUp)
 
-   If you already have a Google account, you can skip to the next step.
+   Si vous disposez déjà d’un compte Google, vous pouvez passer à l’étape suivante.
 
 1. Accédez à [https://cloud.google.com/](https://cloud.google.com/).
 1. Dans la page Google Cloud, près du coin supérieur droit, sélectionnez **[!UICONTROL Console]**.
 
    Vous devrez peut-être vous **[!UICONTROL connecter]** à l’aide des informations d’identification de votre compte Google pour voir l’option **[!UICONTROL Console]**.
 
-1. ********
-1. ********
-1. ********
+1. Sur la page Tableau de bord, à droite de **[!UICONTROL Google Cloud Platform]**, sélectionnez la variable **[!UICONTROL Projet]** pour ouvrir la liste déroulante **[!UICONTROL Sélection d’un projet]** de la boîte de dialogue
+1. Dans le **[!UICONTROL Sélection d’un projet]** boîte de dialogue, sélectionnez **[!UICONTROL Nouveau projet]**.
+1. Dans le **[!UICONTROL Nouveau projet]** , dans la boîte de dialogue **[!UICONTROL Nom du projet]** , saisissez le nom du nouveau projet.
 
    Votre ID de projet est basé sur le nom du projet. Par conséquent, choisissez soigneusement le nom du projet ; il ne peut pas être modifié une fois créé. Vous devez également le saisir lors de la configuration ultérieure de YouTube dans Experience Manager. Par conséquent, prenez-le en note.
 
@@ -457,34 +457,32 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
 1. Effectuez l’une des opérations suivantes :
 
-   * ********
-   * ********
+   * Dans le tableau de bord de votre projet, dans la variable **[!UICONTROL Prise en main]** carte, sélectionnez **[!UICONTROL Exploration et activation des API]**.
+   * Dans le tableau de bord de votre projet, dans la variable **[!UICONTROL API]** carte, sélectionnez **[!UICONTROL Accès à la présentation des API]**.
 
-1. ********<!-- NEXT STEP BELOW IS STEP 10 -->
-1. ************ Sur le côté droit de la page, sélectionnez **[!UICONTROL YouTube]**.
-1. ********
-1. ********
+1. Près du milieu supérieur de la **[!UICONTROL API et services]** page, sélectionnez **[!UICONTROL ACTIVATION DES API ET DES SERVICES]**.<!-- NEXT STEP BELOW IS STEP 10 -->
+1. Sur le **[!UICONTROL Bibliothèque d’API]** , sur le côté gauche, sous **[!UICONTROL Catégorie]**, sélectionnez **[!UICONTROL YouTube]**. Sur le côté droit de la page, sélectionnez **[!UICONTROL YouTube]**.
+1. Sur le **[!UICONTROL YouTube]** page, sélectionnez **[!UICONTROL API de données YouTube v3]**.
+1. Sur le **[!UICONTROL API de données YouTube v3]** page, sélectionnez **[!UICONTROL GÉRER]**.
 
-   ![](assets/6_5_googleaccount-apis-manage.png)
+   ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. Pour utiliser l’API, vous avez besoin d’identifiants. ****
+1. Pour utiliser l’API, vous avez besoin d’identifiants. Si nécessaire, dans la partie gauche de la page APIs &amp; Services, sélectionnez **[!UICONTROL Informations d’identification]**.
+1. Sur la page Informations d’identification, près de la partie supérieure, sélectionnez **[!UICONTROL CRÉATION D’INFORMATIONS D’IDENTIFICATION]**, puis sélectionnez **[!UICONTROL ID client OAuth]**.
+1. Sur le **[!UICONTROL Création d’un ID de client OAuth]** , dans la **[!UICONTROL Type d’application]** liste déroulante, sélectionnez **[!UICONTROL application web]**.
 
-1. ********
-
-1. ************
-
-   ![](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
+   ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
 
 1. Utilisez l’une des méthodes suivantes :
 
-   * ****
-   * ****
+   * Dans le **[!UICONTROL Nom]** , saisissez un nom unique pour votre client OAuth 2.0.
+   * Utilisez le nom par défaut que Google a déjà fourni dans la variable **[!UICONTROL Nom]** champ .
 
-1. ********
+1. Sous , **[!UICONTROL Origines JavaScript autorisées]** titre, sélectionnez **[!UICONTROL ADD URI]**.
 
-   ![](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
+   ![6_5_googleaccount-apis-name-authorizations](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-nameauthorizations.png)
 
-1. ********
+1. Dans le **[!UICONTROL URI]** Champ de texte, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
 
    `https://<servername.domain>:<port_number>`
 
@@ -492,11 +490,10 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
    >[!IMPORTANT]
    >
-   >The example path above is hypothetical and for explanation purposes only.
+   >L’exemple de chemin ci-dessus est hypothétique et à titre d’explication uniquement.
 
-1. ****
-
-1. ********
+1. Sous , **[!UICONTROL URI de redirection autorisés]** , sélectionnez AJOUTER UN URI.
+1. Dans le **[!UICONTROL URI]** Champ de texte, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
 
    `https://<servername.domain>:<port_number>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
@@ -504,21 +501,19 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
    >[!IMPORTANT]
    >
-   >The example path above is hypothetical and for explanation purposes only.
+   >L’exemple de chemin ci-dessus est hypothétique et à titre d’explication uniquement.
 
-1. ********
+1. Près du bas de la **[!UICONTROL Création d’un ID de client OAuth]** page, sélectionnez **[!UICONTROL Créer]**.
+1. Sur le **[!UICONTROL Client OAuth créé]** , procédez comme suit :
 
-1. ****
+   * (Facultatif) Copiez votre ID de client et votre secret de client, puis enregistrez-le.
+   * Sélectionner **[!UICONTROL TÉLÉCHARGER JSON]**, puis enregistrez le fichier JSON.
 
-   * (Optional) Copy Your Client ID and Your Client Secret and save.
-   * ****
+   Vous avez besoin de ce fichier JSON téléchargé lorsque vous configurez YouTube dans Adobe Experience Manager ultérieurement.
 
-   You need this downloaded JSON file when you set up YouTube in Adobe Experience Manager later on.
+   ![6_5_googleaccount-apis-oauthclientcreated](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
 
-   ![](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-oauthclientcreated.png)
-
-1. ********
-
+1. Sur le **[!UICONTROL Client OAuth créé]** boîte de dialogue, sélectionnez **[!UICONTROL OK]**.
 1. Déconnectez-vous de votre compte Google. Créez maintenant une chaîne YouTube.
 
 ### Création d’une chaîne YouTube {#creating-a-youtube-channel}
@@ -1030,16 +1025,16 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## Add closed captions or subtitles to video {#adding-captions-to-video}
+## Ajout de sous-titres ou de sous-titres à une vidéo {#adding-captions-to-video}
 
-You can extend the reach of your videos to global markets by adding closed captioning to single videos or to Adaptive Video Sets. By adding closed captioning you avoid the need to dub the audio, or the need to use native speakers to rerecord the audio for each different language. La vidéo est lue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langue étrangère s’affichent pour que les personnes parlant d’autres langues puissent néanmoins comprendre la partie audio.
+Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des sous-titres aux vidéos uniques ou aux visionneuses de vidéos adaptatives. L’ajout de sous-titres codés vous évite d’avoir à dupliquer l’audio ou d’utiliser des locuteurs natifs pour enregistrer à nouveau le son dans chaque langue. La vidéo est lue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langue étrangère s’affichent pour que les personnes parlant d’autres langues puissent néanmoins comprendre la partie audio.
 
-Closed captioning also allows for greater accessibility for people who are deaf or hard of hearing.
+Le sous-titrage permet également une plus grande accessibilité pour les personnes sourdes ou malentendantes.
 
 >[!NOTE]
-The video player that you use must support the display of closed captions.
+Le lecteur vidéo que vous utilisez doit prendre en charge l’affichage de sous-titres fermés.
 
-[](/help/assets/dynamic-media/accessibility-dm.md)
+Voir aussi [Accessibilité dans Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
 Dynamic Media peut convertir les fichiers de légende au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux utilisateurs des informations supplémentaires sur le contenu des vidéos.
 
