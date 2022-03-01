@@ -1,10 +1,10 @@
 ---
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
-source-git-commit: bec7e01a6f192a9b65a038b2e990c2c285743793
+source-git-commit: 0951942690949c23a99da3494526c1c78e7bcf22
 workflow-type: tm+mt
-source-wordcount: '859'
-ht-degree: 96%
+source-wordcount: '1069'
+ht-degree: 77%
 
 ---
 
@@ -125,6 +125,44 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 1. Sélectionnez un jeu de migration puis cliquez sur **Propriétés** pour voir ou modifier les propriétés du jeu de migration. Lors de la modification des propriétés, il n’est pas possible de changer le **nom du jeu de migration** ou l’**URL du service**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+
+### Détermination de la taille du jeu de migration et de l’espace disque {#migration-set-size}
+
+Après la création d’un jeu de migration, il est vivement recommandé d’exécuter une vérification de taille sur le jeu de migration avant de lancer un processus d’extraction.
+En effectuant une vérification de taille sur le jeu de migration, vous pourrez :
+* Déterminez s’il y a suffisamment d’espace disque dans la variable `crx-quickstart` pour terminer l’extraction.
+* Déterminez si la taille du jeu de migration est conforme aux limites de produit prises en charge et évitez les échecs d’ingestion de contenu.
+
+Pour exécuter une vérification de taille, procédez comme suit :
+
+1. Sélectionnez un jeu de migration et cliquez sur **Vérifier la taille**.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+
+1. Cela ouvrira la fenêtre **Vérifier la taille** boîte de dialogue.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+
+1. Cliquez sur **Vérifier la taille** pour démarrer le processus. Vous revenez alors à la vue Liste des jeux de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+
+
+1. Une fois **Vérifier la taille** est terminé, l’état devient **FINISHED**. Sélectionnez le même jeu de migration et cliquez sur **Vérifier la taille** pour afficher les résultats.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
+
+   Voici un exemple : **Vérifier la taille** résultats sans avertissement.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+
+1. Si la variable **Vérifier la taille** les résultats indiquent qu&#39;il n&#39;y a pas suffisamment d&#39;espace disque et/ou que le jeu de migration dépasse les limites du produit, **AVERTISSEMENT** s’affiche.
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+
+Voici un exemple : **Vérifier la taille** donne des avertissements.
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
 ## Et après ? {#whats-next}
