@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: e1f0b04dde2eb5a3392a0b9befbc56135b06cff4
+source-git-commit: efdb8304197a76e66e71d6f7b5c510216ac5ff7e
 workflow-type: tm+mt
-source-wordcount: '9361'
-ht-degree: 93%
+source-wordcount: '9368'
+ht-degree: 92%
 
 ---
 
@@ -443,11 +443,11 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
    Si vous disposez déjà d’un compte Google, vous pouvez passer à l’étape suivante.
 
 1. Accédez à [https://cloud.google.com/](https://cloud.google.com/).
-1. Dans la page Google Cloud, près du coin supérieur droit, sélectionnez **[!UICONTROL Console]**.
+1. Sur le **[!UICONTROL Google Cloud]** , près du coin supérieur droit, sélectionnez **[!UICONTROL Console]**.
 
    Vous devrez peut-être vous **[!UICONTROL connecter]** à l’aide des informations d’identification de votre compte Google pour voir l’option **[!UICONTROL Console]**.
 
-1. Sur la page Tableau de bord, à droite de **[!UICONTROL Google Cloud Platform]**, sélectionnez la variable **[!UICONTROL Projet]** pour ouvrir la liste déroulante **[!UICONTROL Sélection d’un projet]** de la boîte de dialogue
+1. Sur le **[!UICONTROL Tableau de bord]** page, à droite de **[!UICONTROL Google Cloud Platform]**, sélectionnez la variable **[!UICONTROL Projet]** pour ouvrir la liste déroulante **[!UICONTROL Sélection d’un projet]** de la boîte de dialogue
 1. Dans le **[!UICONTROL Sélection d’un projet]** boîte de dialogue, sélectionnez **[!UICONTROL Nouveau projet]**.
 1. Dans le **[!UICONTROL Nouveau projet]** , dans la boîte de dialogue **[!UICONTROL Nom du projet]** , saisissez le nom du nouveau projet.
 
@@ -467,8 +467,8 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
    ![6_5_googleaccount-apis-manage](assets/6_5_googleaccount-apis-manage.png)
 
-1. Pour utiliser l’API, vous avez besoin d’identifiants. Si nécessaire, dans la partie gauche de la page APIs &amp; Services, sélectionnez **[!UICONTROL Informations d’identification]**.
-1. Sur la page Informations d’identification, près de la partie supérieure, sélectionnez **[!UICONTROL CRÉATION D’INFORMATIONS D’IDENTIFICATION]**, puis sélectionnez **[!UICONTROL ID client OAuth]**.
+1. Pour utiliser l’API, vous avez besoin d’identifiants. Si nécessaire, sur le côté gauche de la **[!UICONTROL API et services]** page, sélectionnez **[!UICONTROL Informations d’identification]**.
+1. Sur le **[!UICONTROL Informations d’identification]** , près de la partie supérieure, sélectionnez **[!UICONTROL CRÉATION D’INFORMATIONS D’IDENTIFICATION]**, puis sélectionnez **[!UICONTROL ID client OAuth]**.
 1. Sur le **[!UICONTROL Création d’un ID de client OAuth]** , dans la **[!UICONTROL Type d’application]** liste déroulante, sélectionnez **[!UICONTROL application web]**.
 
    ![6_5_googleaccount-apis-applicationtype](/help/assets/dynamic-media/assets/6_5_googleaccount-apis-applicationtype.png)
@@ -488,9 +488,9 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
    Par exemple, `https://1a2b3c.mycompany.com:4321`
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >L’exemple de chemin ci-dessus est hypothétique et à titre d’explication uniquement.
+   >L’exemple de chemin d’URI ci-dessus est hypothétique et à titre d’explication uniquement.
 
 1. Sous , **[!UICONTROL URI de redirection autorisés]** , sélectionnez AJOUTER UN URI.
 1. Dans le **[!UICONTROL URI]** Champ de texte, saisissez le chemin suivant, en substituant vos propres domaine et numéro de port dans le chemin, puis appuyez sur **[!UICONTROL Entrée]** pour ajouter le chemin à la liste :
@@ -499,14 +499,14 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
    Par exemple, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >L’exemple de chemin ci-dessus est hypothétique et à titre d’explication uniquement.
+   >L’exemple de chemin d’URI ci-dessus est hypothétique et à titre d’explication uniquement.
 
 1. Près du bas de la **[!UICONTROL Création d’un ID de client OAuth]** page, sélectionnez **[!UICONTROL Créer]**.
 1. Sur le **[!UICONTROL Client OAuth créé]** , procédez comme suit :
 
-   * (Facultatif) Copiez votre ID de client et votre secret de client, puis enregistrez-le.
+   * (Facultatif) Copiez les valeurs de la variable **[!UICONTROL Votre identifiant client]** et **[!UICONTROL Votre secret client]** et enregistrez.
    * Sélectionner **[!UICONTROL TÉLÉCHARGER JSON]**, puis enregistrez le fichier JSON.
 
    Vous avez besoin de ce fichier JSON téléchargé lorsque vous configurez YouTube dans Adobe Experience Manager ultérieurement.
