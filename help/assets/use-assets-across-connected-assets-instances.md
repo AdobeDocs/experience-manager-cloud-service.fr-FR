@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 97e704dae32baa52f3e9490aa5dcab8f5081fd1a
+source-git-commit: 8457a6eb81b5d28c264e7f75793724b40fe7eb1d
 workflow-type: tm+mt
 source-wordcount: '3796'
 ht-degree: 74%
@@ -266,7 +266,7 @@ Vous pouvez connecter un déploiement DAM distant à un [!DNL Sites] déploiemen
 
 ### Vous pouvez utiliser des ressources Dynamic Media à partir de vos [!DNL Sites] déploiement après la configuration des ressources connectées ?
 
-Après avoir configuré les ressources connectées, [!DNL Dynamic Media] ressources disponibles sur [!DNL Sites] déploiement en mode lecture seule. Par conséquent, vous ne pouvez pas utiliser [!DNL Dynamic Media] pour traiter des ressources sur la [!DNL Sites] déploiement. Pour plus d’informations, voir [Configurer une connexion entre les déploiements Sites et Dynamic Media](#sites-dynamic-media-connected-assets).
+Après avoir configuré les ressources connectées, [!DNL Dynamic Media] ressources disponibles sur [!DNL Sites] déploiement en mode lecture seule. Par conséquent, vous ne pouvez pas utiliser [!DNL Dynamic Media] pour traiter des ressources sur la [!DNL Sites] déploiement. Pour plus d’informations, voir [Configurer une connexion entre les déploiements Sites et Dynamic Media](#dynamic-media-assets).
 
 ### Pouvez-vous utiliser des ressources de type Image et Format de document à partir du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?
 
@@ -278,7 +278,7 @@ Non, vous ne pouvez pas utiliser de fragments de contenu et de ressources vidéo
 
 ### Pouvez-vous utiliser des ressources Dynamic Media provenant du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées ?
 
-Oui, vous pouvez configurer et utiliser des ressources Dynamic Media à partir du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées. Pour plus d’informations, voir [Configurer une connexion entre les déploiements Sites et Dynamic Media](#sites-dynamic-media-connected-assets).
+Oui, vous pouvez configurer et utiliser des ressources Dynamic Media à partir du déploiement DAM distant sur le [!DNL Sites] déploiement après la configuration des ressources connectées. Pour plus d’informations, voir [Configurer une connexion entre les déploiements Sites et Dynamic Media](#dynamic-media-assets).
 
 ### Après avoir configuré les ressources connectées, pouvez-vous effectuer les opérations de mise à jour, de suppression, de changement de nom et de déplacement sur les ressources ou dossiers DAM distants ?
 
