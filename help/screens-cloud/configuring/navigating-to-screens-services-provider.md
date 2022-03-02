@@ -2,10 +2,10 @@
 title: Accès au fournisseur de services Screens
 description: Cette page décrit comment accéder au fournisseur de services Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
-source-wordcount: '220'
-ht-degree: 100%
+source-git-commit: 9263c833edf092a4254b7692924c1638100b9f6d
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 82%
 
 ---
 
@@ -31,11 +31,22 @@ Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens
    >[!CAUTION]
    >Si vous avez accès à plusieurs organisations, veillez à vous être connecté à la bonne organisation. Pour modifier votre organisation, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation à laquelle vous avez besoin d’accéder.
 
-1. Sélectionnez **Canaux** dans la barre de navigation de gauche et cliquez sur **Ouvrir dans le fournisseur de contenu**.
+2. Cliquez sur l’icône en forme d’engrenage en regard de Projet (coin supérieur gauche).
+
+   ![image](/help/screens-cloud/assets/configure/configure-screens0.png)
+
+3. Saisissez les informations suivantes dans la boîte de dialogue Modifier les paramètres .
+o **Url De Base** - URL de publication AEM sur **URL de création** - URL de création AEM sur **Chemin du fournisseur de canaux** - /screens/channels.json
+
+   ![image](/help/screens-cloud/assets/configure/configure-screens4.png)
+
+4. Cliquez sur **Enregistrer** pour se connecter au fournisseur de contenu Screens
+
+5. Sélectionnez **Canaux** dans la barre de navigation de gauche et cliquez sur **Ouvrir dans le fournisseur de contenu**.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens1.png)
 
-1. Le fournisseur de contenu Screens s’ouvre dans un autre onglet qui vous permet de créer votre contenu.
+6. Le fournisseur de contenu Screens s’ouvre dans un autre onglet qui vous permet de créer votre contenu.
 
    ![image](/help/screens-cloud/assets/configure/configure-screens2.png)
 
