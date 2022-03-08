@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6c223af722c24e96148146da9a2aa1c055486407
+source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
 workflow-type: tm+mt
-source-wordcount: '2224'
-ht-degree: 93%
+source-wordcount: '2366'
+ht-degree: 83%
 
 ---
 
@@ -36,8 +36,9 @@ Voici la liste des principaux changements par rapport à AEM version 6.5 et ant
 1. Les clients peuvent voir si la tâche d’indexation est terminée sur la page de version Cloud Manager et recevront une notification lorsque la nouvelle version sera prête à recevoir le trafic.
 
 1. Restrictions :
-* Actuellement, la gestion des index dans AEM as a Cloud Service n’est prise en charge que pour les index de type Lucene.
+* Actuellement, la gestion des index dans AEM as a Cloud Service n’est prise en charge que pour les index de type `lucene`.
 * Seuls les analyseurs standard sont pris en charge (c’est-à-dire ceux fournis avec le produit). Les analyseurs personnalisés ne sont pas pris en charge.
+* En interne, d’autres index peuvent être configurés et utilisés pour les requêtes. Par exemple, les requêtes écrites sur la propriété `damAssetLucene` peut, sur Skyline, être exécuté par rapport à une version Elasticsearch de cet index. Cette différence n’est généralement pas visible par l’application et l’utilisateur, mais certains outils tels que le `explain` signale un index différent. Pour connaître les différences entre les index Lucene et les index Elastic, voir [la documentation Elastic dans Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Les clients n’ont pas besoin de configurer directement les index Elasticsearch et ne peuvent pas le faire.
 
 ## Utilisation {#how-to-use}
 
@@ -129,7 +130,9 @@ Lors du développement ou de l’utilisation d’installations sur site, les ind
 
 ### Gestion des index avec déploiement bleu/vert {#index-management-with-blue-green-deployment}
 
-Avec des déploiements bleu/vert, il n’existe pas de temps d’arrêt. Toutefois, pour la gestion des index, cela nécessite que les index ne soient utilisés que par certaines versions de l’application. Par exemple, lorsque vous ajoutez un index dans la version 2 de l’application, vous ne souhaitez pas que cet index soit déjà utilisé par la version 1 de l’application. L’inverse vaut également lorsqu’un index est supprimé : un index supprimé dans la version 2 est toujours nécessaire dans la version 1. Lors de la modification d’une définition d’index, nous voulons que l’ancienne version de l’index soit utilisée uniquement pour la version 1 et la nouvelle version de l’index uniquement pour la version 2.
+Avec des déploiements bleu/vert, il n’existe pas de temps d’arrêt. Pendant une mise à niveau, pendant un certain temps, l’ancienne version (par exemple, version 1) de l’application, ainsi que la nouvelle version (version 2), s’exécutent simultanément, sur le même référentiel. Si la version 1 nécessite la disponibilité d’un certain index, celui-ci ne doit pas être supprimé dans la version 2 : l’index doit être supprimé ultérieurement, par exemple dans la version 3. à ce stade, il est garanti que la version 1 de l’application n’est plus en cours d’exécution. En outre, les applications doivent être écrites de manière à ce que la version 1 fonctionne correctement, même si la version 2 est en cours d’exécution et si des index de la version 2 sont disponibles.
+
+Une fois la mise à niveau vers la nouvelle version terminée, les anciens index peuvent être récupérés par le système. Les anciens index peuvent rester un certain temps afin d’accélérer les restaurations (si une restauration doit être nécessaire).
 
 Le tableau suivant présente cinq définitions d’index : l’index `cqPageLucene` est utilisé dans les deux versions tandis que index `damAssetLucene-custom-1` l’est uniquement dans la version 2.
 
@@ -160,7 +163,7 @@ Une fois qu’Adobe a modifié un index prêt à l’emploi tel que « damAsset
 
 ### Limites actuelles {#current-limitations}
 
-Actuellement, la gestion des index n’est prise en charge que pour les index de type `lucene`.
+Actuellement, la gestion des index n’est prise en charge que pour les index de type `lucene`. En interne, d’autres index peuvent être configurés et utilisés pour les requêtes, par exemple les index élastiques.
 
 ### Ajout d’un index {#adding-an-index}
 
