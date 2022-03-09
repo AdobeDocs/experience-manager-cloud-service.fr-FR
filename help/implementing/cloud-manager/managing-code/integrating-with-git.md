@@ -1,23 +1,23 @@
 ---
-title: Intégration de Git
-description: Intégration de Git – Cloud Services
+title: Utilisation de git avec Cloud Manager
+description: Découvrez comment utiliser les référentiels Git de Cloud Manager et comment intégrer votre propre référentiel Git géré par le client sur site à Cloud Manager.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
-source-git-commit: 21669a29fbfd1072b637f407f5220825c4d1edbb
-workflow-type: ht
-source-wordcount: '310'
-ht-degree: 100%
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+workflow-type: tm+mt
+source-wordcount: '322'
+ht-degree: 47%
 
 ---
 
-# Intégration de Git à Adobe Cloud Manager {#git-integration}
+# Utilisation de git avec Cloud Manager {#git-integration}
 
-Adobe Cloud Manager est fourni avec un référentiel Git unique utilisé pour déployer le code à l’aide des pipelines CI/CD de Cloud Manager. Ce référentiel Git de Cloud Manager est prêt à l’emploi. Les clients ont également la possibilité d’intégrer un référentiel Git sur site ou **géré par le client** à Cloud Manager.
+Adobe Cloud Manager est fourni avec un référentiel Git unique utilisé pour déployer le code à l’aide des pipelines CI/CD de Cloud Manager.
+
+Vous pouvez utiliser le référentiel git de Cloud Manager prêt à l’emploi, mais vous avez également la possibilité d’intégrer un référentiel git géré par le client à Cloud Manager.
 
 ## Présentation de l’intégration Git {#git-integration-overview}
 
->[!VIDEO](https://video.tv.adobe.com/v/28710/)
-
-Cette série de vidéos explore plusieurs cas d’utilisation concernant l’intégration d’un référentiel Git géré par le client à Cloud Manager, notamment :
+Cette série de vidéos explore plusieurs cas d’utilisation lors de l’intégration d’un référentiel Git géré par le client à Cloud Manager, notamment :
 
 * [Synchronisation initiale](#initial-sync)
 * [Stratégie d’embranchement de base](#branching-strategy)
@@ -27,19 +27,19 @@ Cette série de vidéos explore plusieurs cas d’utilisation concernant l’int
 
 La série vidéo suppose une connaissance de base de la gestion de Git et de la gestion de commande source. Consultez les [ressources supplémentaires ci-dessous](#additional-resources) pour en savoir plus sur Git.
 
->[!NOTE]
->
->Les étapes et les conventions d’attribution de noms décrites dans cette série vidéo représentent quelques bonnes pratiques pour travailler avec un référentiel Git géré par le client et Cloud Manager. On s’attend à ce que les conventions et les workflows décrits soient adaptés aux équipes de développement individuelles.
+>[!VIDEO](https://video.tv.adobe.com/v/28710/)
+
+Les étapes et les conventions de dénomination décrites dans cette série vidéo représentent quelques bonnes pratiques pour travailler avec un référentiel Git géré par le client dans Cloud Manager. Il est prévu que les conventions et les workflows décrits soient adaptés aux cas d’utilisation individuels.
 
 ## Synchronisation initiale {#initial-sync}
 
-Premières étapes de la synchronisation d’un référentiel Git géré par le client avec le référentiel Git de Cloud Manager.
+Dans cette vidéo, découvrez les premières étapes de synchronisation d’un référentiel Git géré par le client avec le référentiel Git de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28711/?quality=12)
 
 ## Stratégie d’embranchement de base {#branching-strategy}
 
-Suivez la vidéo ci-dessous pour découvrir les stratégies d’embranchement de base.
+Dans cette vidéo, découvrez les stratégies d’embranchement de base.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28712/?quality=12)
 
@@ -57,7 +57,7 @@ Préparez le code d’une version de production dans un référentiel Git géré
 
 ## Synchronisation des balises de publication {#sync-tags}
 
-Synchronisez les balises de publication d’un référentiel Git Cloud Manager dans un référentiel Git géré par le client afin de vous donner une idée du code déployé dans les environnements intermédiaires et de production.
+Synchronisez les balises de publication d’un référentiel Git Cloud Manager dans un référentiel Git géré par le client afin de fournir une visibilité du code qui a été déployé dans les environnements d’évaluation et de production.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 

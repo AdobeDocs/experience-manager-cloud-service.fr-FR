@@ -1,51 +1,51 @@
 ---
-title: Création de rapports de contrat SLA – Cloud Service
-description: Création de rapports de contrat SLA – Cloud Service
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: ht
-source-wordcount: '245'
-ht-degree: 100%
+title: Création de rapports de contrat SLA
+description: Découvrez comment voir les performances de votre environnement d’AEM de production par rapport au contrat de niveau de service (SLA).
+exl-id: 03932415-a029-4703-b44a-f86a87edb328
+source-git-commit: 6cf164093cc543fe4847859b248e70efd86efbb1
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 9%
 
 ---
 
+
 # Création de rapports de contrat SLA {#sla-reporting}
 
-Consultez les sections ci-dessous pour en savoir plus sur les rapports de contrat SLA dans AEM as a Cloud Service.
+Découvrez comment voir les performances de votre environnement d’AEM de production par rapport au contrat de niveau de service (SLA).
 
 ## Présentation {#introduction}
 
-Les clients peuvent voir les performances de leur environnement AEM de production correspondant au contrat de niveau de service auquel ils ont souscrit. Cette option est disponible dans un menu de l’onglet Rapports, accessible à partir de l’en-tête principal.
+Les données de rapport SLA sont disponibles pour chaque programme de production via la variable **Rapports** . Pour y accéder, procédez comme suit.
 
-Suivez l’exemple ci-dessous, qui est un graphique montrant les performances mensuelles du contrat de niveau de service (SLA) pour 2021.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-![](assets/sla-reporting-1.png)
+1. Accédez au **Rapports** à partir de l’onglet **Présentation** page.
 
+1. Cliquez sur l’année souhaitée pour afficher les données SLA sous forme de graphique.
 
-Le survol d’un point de données affiche les valeurs spécifiques pour ce mois.
+![Exemple de graphique SLA](assets/sla-reporting-1.png)
 
-![](assets/sla-reporting-b.png)
+Placez le curseur sur un point de données pour afficher les valeurs spécifiques de ce point.
 
->[!NOTE]
->Ces rapports seront progressivement mis à la disposition des clients. Si vous ne voyez pas l’option Rapports dans la navigation principale, contactez votre représentant Adobe pour savoir quand vos rapports seront disponibles.
-
-La section Analyse des événements, située sous ce graphique, affiche l’ensemble des incidents survenus pour le programme au cours de l’année sélectionnée.
-
-Chacun des incidents comporte une période, une cause et un ensemble de commentaires, comme illustré dans la figure ci-dessous.
-
-![](assets/sla-reporting-c.png)
-
+![Affichage des données détaillées](assets/sla-reporting-b.png)
 
 ## Mesures SLA {#sla-metrics}
 
-* **Contrat de niveau publication**
-Il s’agit du contrat SLA tel que défini dans votre contrat Adobe pour le niveau publication.
+Le graphique de l’année sélectionnée comprend plusieurs jeux de données.
 
-* **Actuel niveau publication**
-Il s’agit de la période de disponibilité mesurée du niveau publication de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
+* **Contrat de niveau publication** - Il s’agit du contrat SLA défini dans votre contrat avec Adobe pour le niveau de publication.
 
-* **Contrat de niveau auteur**
-Il s’agit du contrat SLA tel que défini dans votre contrat Adobe pour le niveau auteur.
+* **Niveau de publication réel** - Il s’agit de la période de disponibilité mesurée du niveau publication de production comptabilisant les incidents causés par les fournisseurs d’Adobe ou d’Adobe.
 
-* **Actuel niveau auteur**
-Il s’agit de la période de disponibilité mesurée du niveau auteur de production comptabilisant les incidents causés par Adobe ou par nos fournisseurs.
+* **Contrat de niveau auteur** - Il s’agit du contrat SLA défini dans votre contrat avec l’Adobe pour le niveau auteur.
 
+* **Niveau de création réel** - Il s’agit de la période de disponibilité mesurée du niveau auteur de production prenant en compte les incidents causés par les fournisseurs d’Adobe ou d’Adobe.
+
+## Analyse des événements {#event-analysis}
+
+Le **Analyse des événements** La section située sous le graphique affiche l’ensemble des incidents survenus pour le programme au cours de l’année sélectionnée.
+
+Chaque incident comporte une période, une cause et un ensemble de commentaires.
+
+![Exemple d’analyse d’événement](assets/sla-reporting-c.png)

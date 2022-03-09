@@ -1,39 +1,44 @@
 ---
-title: Notifications – Cloud Service
-description: Notifications – Cloud Service
+title: Notifications
+description: Découvrez comment recevoir des informations sur les déploiements de pipeline à l’aide du système de notification Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '192'
-ht-degree: 100%
+source-git-commit: 42d4e3bb38e3a7ecb4507d15e2307ed08d752b5c
+workflow-type: tm+mt
+source-wordcount: '257'
+ht-degree: 7%
 
 ---
 
-# Présentation des notifications {#notifications}
+# Notifications {#notifications}
 
-[!UICONTROL Cloud Manager] permet à l’utilisateur de recevoir des notifications lorsque le pipeline de production démarre et se termine (avec succès ou non), au début d’un déploiement de production. Ces notifications sont envoyées via le système de notification Adobe [!UICONTROL Experience Cloud].
+[!UICONTROL Cloud Manager] permet à l’utilisateur de recevoir des notifications lorsque le pipeline de production démarre et se termine (avec succès ou non), lors d’un déploiement en production.
 
->[!NOTE]
->
->Les notifications Approbation et Planifié sont envoyées uniquement aux utilisateurs ayant les rôles Propriétaire de l’entreprise, Responsable de programme et Responsable de déploiement.
+Ces notifications sont envoyées via l’Adobe [!UICONTROL Experience Cloud] système de notification aux utilisateurs disposant de rôles **Propriétaire de l’entreprise**, **Responsable de programme**, et **Responsable de déploiement**.
 
-Les notifications s’affichent dans une barre latérale dans l’IU (interface utilisateur) de [!UICONTROL Cloud Manager] et dans Adobe [!UICONTROL Experience Cloud].
-![](assets/notify-1.png)
+Les notifications s’affichent à l’extrémité droite de la barre de menus dans la [!UICONTROL Cloud Manager] Interface utilisateur et dans tout l’Adobe [!UICONTROL Experience Cloud].
 
-Cliquez sur l’icône représentant une cloche dans l’en-tête pour ouvrir la barre latérale et afficher les notifications, comme illustré dans la figure suivante :
+![Icône Notifications dans la barre de menus](assets/notify-1.png)
 
-![](assets/notify-2.png)
+L’icône représentant une cloche est marquée d’un badge lorsqu’il y a de nouvelles notifications. Cliquez dessus pour ouvrir un panneau afin d’afficher les notifications.
 
-La barre latérale répertorie les notifications les plus récentes.
+![Affichage des notifications](assets/notify-2.png)
 
+Le panneau répertorie uniquement les notifications les plus récentes. Cliquez sur **Afficher tout** au bas du panneau pour afficher toutes vos notifications.
 
 ## Notifications par e-mail {#email-notifications}
 
-Par défaut, les notifications sont disponibles dans l’interface utilisateur web de toutes les solutions Adobe [!UICONTROL Experience Cloud]. Les utilisateurs peuvent également opter pour l’envoi de ces notifications par e-mail, de manière immédiate ou dans le cadre de résumé.
+Par défaut, les notifications sont disponibles dans l’interface utilisateur de toutes les solutions Adobe [!UICONTROL Experience Cloud]. Les utilisateurs peuvent également choisir d’envoyer ces notifications par courrier électronique en procédant comme suit.
 
-L’utilisateur sera alors dirigé vers l’écran Préférences de notifications dans Adobe [!UICONTROL Experience Cloud].
+1. Cliquez sur l’icône représentant une cloche pour afficher les notifications.
+1. Cliquez sur le bouton **Modifier les préférences** (en forme d’engrenage) en haut du panneau des notifications.
+1. Dans la fenêtre qui s’ouvre, cliquez sur **Notifications** dans le volet de navigation de gauche.
+   ![Fenêtre Modifier les préférences](assets/notification-preferences.png)
+1. Faites défiler l’écran vers le bas jusqu’à **Email** en-tête.
+   ![Options de messagerie](assets/email-preferences.png)
+1. Sélectionnez le mode de réception de vos emails.
+   * Ne pas envoyer d’emails (par défaut)
+   * Notifications instantanées
+   * Résumé quotidien
+   * Résumé hebdomadaire
 
-Les utilisateurs peuvent activer les notifications par e-mail et (facultativement) sélectionner les types de notifications qu’ils souhaitent recevoir par e-mail.
-
->[!NOTE]
->Vous pouvez également activer la synthèse à partir d’Adobe [!UICONTROL Experience Cloud].
+Une fois votre sélection effectuée, votre choix est automatiquement enregistré sans qu’il faille cliquer sur un bouton Enregistrer ou appliquer .

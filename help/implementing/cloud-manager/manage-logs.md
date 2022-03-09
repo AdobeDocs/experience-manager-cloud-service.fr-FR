@@ -1,61 +1,62 @@
 ---
-title: Gérer les journaux – Cloud Service
-description: Gérer les journaux – Cloud Service
+title: Accès aux journaux et leur gestion
+description: Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: b3c26b4e7ad588e0d3214350792d05e55e9db44c
-workflow-type: ht
-source-wordcount: '235'
-ht-degree: 100%
+source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 26%
 
 ---
 
+
 # Accès aux journaux et leur gestion {#manage-logs}
 
-Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la carte **Environnements** de la page **Aperçu** ou de la page Détails de l’environnement.
+Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
+
+Vous pouvez accéder à une liste de fichiers journaux disponibles pour l’environnement sélectionné à l’aide de la **Environnements** de la carte **Présentation** page ou page Détails de l’environnement.
 
 ## Journaux de téléchargement {#download-logs}
 
-Suivez les étapes ci-dessous pour télécharger les journaux.
+Pour télécharger les journaux, procédez comme suit.
+
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez à la carte **Environnements** à partir de la page **Aperçu**.
 
-1. Sélectionnez **Télécharger les journaux** dans le menu **...**.
+1. Sélectionner **Journaux de téléchargement** dans le menu points de suspension.
 
-   ![](assets/download-logs1.png)
+   ![Option de menu des journaux de téléchargement](assets/download-logs1.png)
 
-   *Ou*,
+1. Dans le **Journaux de téléchargement** , sélectionnez la **Service** dans le menu déroulant
 
-   Sur la page Détails de l’environnement :
+   ![Boîte de dialogue Télécharger les journaux](assets/download-preview.png)
 
-   ![](assets/download-logs.png)
+1. Une fois que vous avez sélectionné votre service, cliquez sur l’icône de téléchargement en regard du journal que vous souhaitez récupérer.
 
-   >[!NOTE]
-   >Quel que soit l’emplacement d’ouverture, la même boîte de dialogue s’affiche et permet de télécharger un fichier journal.
+Vous pouvez également accéder à vos journaux à partir du **Environnements** page.
 
-1. Dans le menu déroulant **Service**, sélectionnez des options telles que **Aperçu** ou **Dispatcher de prévisualisation**, puis cliquez sur l’icône de téléchargement.
+![Journaux de l’écran Environnements](assets/download-logs.png)
 
-   ![](assets/download-preview.png)
+## Journaux via l’API {#logs-through-api}
 
+Outre le téléchargement de journaux via l’interface utilisateur, les journaux sont disponibles via l’API et l’interface de ligne de commande.
 
-## Journaux disponibles via l’API {#logs-through-api}
+Pour télécharger les fichiers journaux d’un environnement spécifique, la commande est similaire à la suivante.
 
-Outre le téléchargement de journaux par le biais de l’interface utilisateur, les journaux seront disponibles via l’API et l’interface de ligne de commande.
-
-Par exemple, pour télécharger les fichiers journaux d’un environnement spécifique, la commande pourrait ressembler à ceci :
-
-```java
+```shell
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-La commande suivante permet d’afficher les dernières lignes des journaux :
+Vous pouvez également consulter les logs de queue à partir de l&#39;interface de ligne de commande.
 
-```java
+```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Pour obtenir l’ID d’environnement (1884 dans ce cas) et les options de service ou de nom de journal disponibles, vous pouvez utiliser :
+Pour obtenir l’identifiant de l’environnement (1884 dans cet exemple) et les options de service ou de nom de journal disponibles, vous pouvez utiliser les commandes suivantes.
 
-```java
+```shell
 $ aio cloudmanager:list-environments
 Environment Id Name                     Type  Description                          
 1884           FoundationInternal_dev   dev   Foundation Internal Dev environment  
@@ -75,9 +76,6 @@ Environment Id Service    Name
 1884           dispatcher aemdispatcher
 1884           dispatcher httpdaccess
 ```
-
->[!NOTE]
->Alors que les **téléchargements de journaux** seront disponibles par le biais de l’interface utilisateur et de l’API, la fonction d’**affichage des dernières lignes des journaux** est disponible uniquement sur l’API/interface de ligne de commande.
 
 ### Ressources supplémentaires {#resources}
 
