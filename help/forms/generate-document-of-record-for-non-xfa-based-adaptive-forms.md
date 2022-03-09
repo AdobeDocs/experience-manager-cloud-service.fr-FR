@@ -2,9 +2,9 @@
 title: Génération d’un document d’enregistrement pour les formulaires adaptatifs
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: d84365e1a150076abbd3965ffb964f13ba6b5340
+source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
-source-wordcount: '3686'
+source-wordcount: '3678'
 ht-degree: 83%
 
 ---
@@ -406,7 +406,7 @@ La définition du composant Document d’enregistrement est disponible sous ses 
 
 >[!NOTE]
 >
-> Cette fonctionnalité est disponible dans le canal de version préliminaire. Voir [Documentation sur les canaux de version préliminaire](https://experienceleague-review.corp.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
+> Cette fonctionnalité est disponible dans le canal de version préliminaire. Voir [Documentation sur les canaux de version préliminaire](/help/release-notes/prerelease.md#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
 
 Un fichier XCI permet de définir différentes propriétés d’un document. Forms as a Cloud Service comporte un fichier XCI maître. Vous pouvez utiliser un fichier XCI personnalisé pour remplacer une ou plusieurs propriétés par défaut spécifiées dans le fichier XCI maître. Par exemple, vous pouvez choisir d’incorporer une police dans un document ou d’activer la propriété balisée pour tous les documents. Le tableau suivant spécifie les options XCI :
 
