@@ -4,7 +4,7 @@ description: Découvrez les paramètres prédéfinis d’image et comment les cr
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '3629'
 ht-degree: 100%
@@ -344,7 +344,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=fr) : inverse chaque composant de couleur pour générer un effet d’image négative.
 
-   ```xml
+   ```xml {.line-numbers}
    &op_invert=1
    ```
 
@@ -352,7 +352,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=fr) : applique un effet de flou à l’image.
 
-   ```xml
+   ```xml {.line-numbers}
    &op_blur=7
    ```
 
@@ -360,7 +360,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
 * Commandes combinées : op_blur et op-invert
 
-   ```xml
+   ```xml {.line-numbers}
    &op_invert=1&op_blur=7
    ```
 
@@ -368,7 +368,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
 * [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=fr) : augmente ou diminue la luminosité.
 
-   ```xml
+   ```xml {.line-numbers}
    &op_brightness=58
    ```
 
@@ -376,7 +376,7 @@ Vous trouverez ci-dessous des exemples de tâches que vous pouvez exécuter à l
 
 * [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=fr) : permet de régler l’opacité de l’image. Cet attribut vous permet de diminuer l’opacité du premier plan.
 
-   ```xml
+   ```xml {.line-numbers}
    opac=29
    ```
 

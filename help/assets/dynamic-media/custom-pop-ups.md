@@ -1,12 +1,12 @@
 ---
 title: Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide
 description: « Découvrez comment l’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. »
-feature: Images interactives,Vidéos interactives,Bannières de carrousel
+feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '1009'
+source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+workflow-type: tm+mt
+source-wordcount: '1003'
 ht-degree: 100%
 
 ---
@@ -87,7 +87,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    **En utilisant l’exemple de code d’intégration ci-dessus, vous obtenez le code suivant :**
 
-   ```xml
+   ```xml {.line-numbers}
    s7interactiveimageviewer.setHandlers({
        quickViewActivate": function(inData) {
            var sku=inData.sku;
@@ -117,7 +117,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    Mappez d’autres variables à partir de l’aperçu rapide également, comme dans ce qui suit :
 
-   ```
+   ```xml {.line-numbers}
    var <i>variable2</i>= inData.<i>quickviewVariable2</i>
     var <i>variable3</i>= inData.<i>quickviewVariable3</i>
    ```
@@ -144,7 +144,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
       Par exemple, le code suivant écrit la valeur de SKU dans la console du navigateur :
 
-   ```xml
+   ```xml {.line-numbers}
    function loadQuickView(sku){
        console.log ("quickview sku value is " + sku);
    }
@@ -159,7 +159,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 1. Vous pouvez désormais utiliser la fonction pour appeler une fenêtre contextuelle simple dans l’aperçu rapide. L’exemple suivant utilise une balise `DIV` pour une fenêtre contextuelle.
 1. Mettez en forme la balise `DIV` de la fenêtre contextuelle comme suit. Ajoutez un style supplémentaire selon vos besoins.
 
-   ```xml
+   ```xml {.line-numbers}
    <style type="text/css">
        #quickview_div{
            position: absolute;
@@ -173,7 +173,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    L’un des éléments est défini avec un ID qui est mis à jour avec la valeur de SKU lorsque l’utilisateur appelle un aperçu rapide. L’exemple comprend également un bouton unique pour masquer à nouveau la fenêtre contextuelle une fois qu’elle devient visible.
 
-   ```xml
+   ```xml {.line-numbers}
    <div id="quickview_div" >
        <table>
            <tr><td><input id="btnClosePopup" type="button" value="Close"        onclick='document.getElementById("quickview_div").style.display="none"' /><br /></td></tr>
@@ -184,7 +184,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
 1. Pour mettre à jour la valeur SKU dans la fenêtre contextuelle, ajoutez une fonction. Rendez la fenêtre contextuelle visible en remplaçant la fonction simple créée à l’étape 5 par ce qui suit :
 
-   ```xml
+   ```xml {.line-numbers}
    <script type="text/javascript">
        function loadQuickView(sku){
            document.getElementById("txtSku").setAttribute("value",sku); // write sku value
@@ -202,7 +202,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
    Le gestionnaire `initComplete` est appelé après l’initialisation de la visionneuse.
 
-   ```xml
+   ```xml {.line-numbers}
    "initComplete":function() { code block }
    ```
 
@@ -213,7 +213,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
 1. Pour associer la fenêtre contextuelle (décrite dans les étapes précédentes) à la visionneuse, utilisez le code suivant :
 
-   ```xml
+   ```xml {.line-numbers}
    "initComplete":function() {
        var popup = document.getElementById('quickview_div');
        popup.parentNode.removeChild(popup);
@@ -232,7 +232,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
 
 1. Votre code complet de setHandlers ressemble à ceci (la visionneuse de vidéo interactive a été utilisée) :
 
-   ```xml
+   ```xml {.line-numbers}
    s7interactivevideoviewer.setHandlers({
        "quickViewActivate": function(inData) {
            var sku=inData.sku;
