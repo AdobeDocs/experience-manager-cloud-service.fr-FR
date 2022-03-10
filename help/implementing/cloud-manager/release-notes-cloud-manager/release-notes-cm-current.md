@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager 2022.3.0 dans Adobe Experience Man
 description: Il s’agit des notes de mise à jour de Cloud Manager 2022.3.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 428bba062fcfb44ebfbbf3c1d05ce1a4634fb429
+source-git-commit: 0749099acf98b09d0f83bfe86c2cc4558261c029
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 2%
+source-wordcount: '195'
+ht-degree: 3%
 
 ---
 
@@ -25,12 +25,11 @@ Date de publication de la version 2022.3.0 de Cloud Manager dans AEM as a Cloud 
 
 ## Nouveautés {#what-is-new}
 
-* Un utilisateur avec la variable **Développeur** peut maintenant accéder au journal de l’environnement AEM.
-* [Le `reliability_rating` mesure critique](/help/implementing/cloud-manager/code-quality-testing.md) a été désactivé.
-* Un utilisateur peut désormais trier les colonnes de la variable **Pipelines** dans Cloud Manager.
+* Vous pouvez accéder au journal AEM environnement à l’aide du rôle Développeur .
 
 ## Correctifs {#bug-fixes}
 
-* Un sous-ensemble de référentiels Git créés manuellement avait des valeurs de nom incorrectes qui affectaient [la fonction de réutilisation des artefacts de création.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) Les noms de ces référentiels ont été modifiés et les utilisateurs verront le nom corrigé dans l’API/interface utilisateur de Cloud Manager.
-* [Lors de l’ajout ou de la modification d’un pipeline de qualité du code,](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) la valeur **Comportement des échecs de mesure importants** ne s’affichent plus.
-* Les configurations de variable de pipeline inattendues ne provoquent plus d’erreurs lors de l’étape de création.
+* Un sous-ensemble de référentiels Git créés manuellement avait une valeur de nom incorrecte qui empêchait l’efficacité de la fonction de réutilisation des artefacts de build. Les noms de ces référentiels ont été modifiés et les utilisateurs verront le nom corrigé dans l’API/interface utilisateur de Cloud Manager.
+* Les artefacts de build des pipelines hors production ont été réutilisés de manière inappropriée sur les pipelines de pile complète de production.
+* Lors de l’ajout ou de la modification d’un pipeline de qualité du code, les options permettant de gérer les échecs de mesures ne s’affichent plus.
+* Certaines configurations de variable de pipeline inattendues peuvent provoquer dans l’étape de création.
