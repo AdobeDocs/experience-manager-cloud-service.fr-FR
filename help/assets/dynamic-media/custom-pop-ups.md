@@ -1,17 +1,17 @@
 ---
 title: Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide
-description: « Découvrez comment l’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. »
+description: « Découvrez comment l’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher un contenu personnalisé à afficher dans la fenêtre contextuelle."
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '1002'
+ht-degree: 96%
 
 ---
 
-# Création d’une fenêtre contextuelle personnalisée Windows® à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
+# Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
 L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. En fonction de la visionneuse que vous utilisez, les clients peuvent sélectionner une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu associé.
 
@@ -23,11 +23,11 @@ L’aperçu rapide est pris en charge par les visionneuses suivantes dans Dynami
 
 Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus de création d’un aperçu rapide est identique pour les trois visionneuses prises en charge.
 
-**Pour créer une fenêtre contextuelle personnalisée Windows® à l’aide de l’aperçu rapide :**
+**Pour créer des fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide :**
 
 1. Créez un aperçu rapide pour une ressource téléchargée.
 
-   En général, vous créez un aperçu rapide durant l’édition d’une ressource exploitable avec la visionneuse en cours.
+   En règle générale, vous créez un aperçu rapide au moment où vous modifiez une ressource pour l’utiliser avec la visionneuse que vous utilisez.
 
    <table>
     <tbody>
