@@ -1,13 +1,13 @@
 ---
 title: Publication d’un canal dans Screens as a Cloud Service
 description: Cette page décrit comment publier un canal dans Screens as a Cloud Service.
-source-git-commit: 148fb0adf5c8ed60053225e84ddc42532fd7483c
-workflow-type: ht
+exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 100%
 
 ---
-
 
 # Publication de canaux dans Screens as a Cloud Service {#publish-channel-screens-cloud}
 

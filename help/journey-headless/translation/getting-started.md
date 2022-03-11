@@ -4,8 +4,8 @@ description: Découvrez comment organiser votre contenu découplé et comment fo
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1466'
+ht-degree: 100%
 
 ---
 

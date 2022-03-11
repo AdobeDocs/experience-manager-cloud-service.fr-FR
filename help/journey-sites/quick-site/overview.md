@@ -1,13 +1,13 @@
 ---
 title: parcours de création rapide de site
 description: Commencez ici pour obtenir un parcours guidé à travers l’outil de création rapide de site AEM convivial afin de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement votre site sans aucune connaissance d’arrière-plan AEM.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: b8218232-0298-4b16-9dab-fa59be592a24
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1030'
-ht-degree: 2%
+ht-degree: 18%
 
 ---
-
 
 # parcours de création rapide de site {#quick-site-creation-journey}
 
@@ -15,7 +15,7 @@ Commencez ici pour obtenir un parcours guidé à travers l’outil de création 
 
 ## Présentation {#introduction}
 
-AEM Sites est un puissant ensemble d’outils pour la création et la gestion d’expériences numériques. Les auteurs de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il sera diffusé par AEM à vos audiences sur l’ensemble des canaux.
+AEM Sites est une suite d’outils puissants pour la création et la gestion d’expériences numériques. Les auteurs de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il sera diffusé par AEM à vos audiences sur l’ensemble des canaux.
 
 L’outil de création rapide de site permet aux non-développeurs de créer rapidement un site à partir de zéro à l’aide de modèles de site. Une fois créé, l’outil Création rapide de site permet également une personnalisation rapide du thème et du style du site AEM (JavaScript, CSS et ressources statiques). Cela permet au développeur front-end, qui n’a besoin d’aucune connaissance de l’AEM, de travailler séparément et parallèlement aux créateurs de contenu. L’administrateur d’AEM télécharge simplement le thème du site et le fournit au développeur front-end qui le personnalise à l’aide de ses outils favoris, puis valide les modifications dans le référentiel de code AEM, qui est ensuite déployé.
 
@@ -27,19 +27,19 @@ Pour un aperçu rapide de cette fonctionnalité en action, [vous pouvez regarder
 
 Ce parcours de documentation vous guide tout au long des étapes et des détails de la vidéo afin que vous compreniez le workflow et que vous puissiez recréer le processus dans votre propre environnement.
 
-## AEM Parcours de documentation {#documentation-journeys}
+## Parcours de documentation AEM {#documentation-journeys}
 
-[Un Parcours de documentation](/help/journey-documentation/documentation-journeys.md) Il relie de nombreux sujets et caractéristiques différents et peut-être complexes en fournissant un récit qui aide le lecteur, qui peut être nouveau pour AEM, comprendre et résoudre un problème commercial du début à la fin, tout en assumant un minimum de connaissances préalables ou AEM.
+Un [Parcours de documentation](/help/journey-documentation/documentation-journeys.md) relie de nombreux sujets et fonctionnalités différents et parfois complexes en aidant le lecteur, parfois débutant dans AEM, à comprendre et à résoudre un problème d’activité du début à la fin, tout en présupposant un minimum de connaissances préalables concernant le sujet ou AEM.
 
-Les Parcours de documentation sont conçus autour des principes de bonnes pratiques, reposant sur les dernières recherches d’Adobe, l’expérience de mise en oeuvre éprouvée des consultants Adobe, ainsi que les commentaires des projets clients.
+Les parcours de documentation sont conçus autour des principes de bonne pratique, reposent sur les dernières recherches d’Adobe, sur l’expérience éprouvée de mise en œuvre des consultants Adobe, ainsi que sur les retours de projets clients.
 
-Si vous souhaitez savoir comment Adobe recommande de résoudre les cas d’entreprise de sites avec AEM, les Parcours AEM Sites sont les points de départ.
+Si vous souhaitez savoir la manière dont Adobe recommande de résoudre des problèmes d’activité liés aux sites grâce à AEM, les parcours AEM Sites représentent un parfait point de départ.
 
 ## Public {#audience}
 
 Ce parcours présente les exigences, les étapes et l’approche de personnalisation des thèmes AEM Sites. Son Principal public est le développeur front-end, qui n&#39;a pas besoin de connaître les AEM. Toutefois, pour illustrer l’ensemble du processus, le parcours implique les administrateurs, qui sont censés posséder des connaissances de base sur AEM Sites et Cloud Manager. En pratique, plusieurs personnes peuvent remplir plusieurs rôles et ce parcours prend en charge les perspectives des administrateurs et des développeurs front-end.
 
-| Personnage | Description | Rôle dans le Parcours |
+| Personne | Description | Rôle dans le Parcours |
 |---|---|---|
 | Développeurs front-end | Personnalise le thème du site | Prend le thème fourni par l’administrateur AEM et le personnalise afin qu’il puisse être déployé sur le site AEM. |
 | Auteur de contenu | Crée et gère le contenu diffusé sous forme de sites. | Les auteurs de contenu créent du contenu sur AEM rendu avec le thème personnalisé par le développeur front-end. |
@@ -62,7 +62,7 @@ Vous êtes maintenant prêt à prendre en main votre parcours de création rapid
 
 ## Ressources supplémentaires {#additional-resources}
 
-Consultez ces ressources supplémentaires pour plus d’informations sur la manière dont AEM puissantes fonctionnalités fonctionnent ensemble.
+Consultez ces ressources supplémentaires pour plus d’informations sur la manière dont les puissantes fonctionnalités d’AEM fonctionnent ensemble.
 
 * [AEM documentation technique as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) - Si vous maîtrisez déjà les AEM, vous pouvez consulter directement les documents techniques détaillés.
 * [Documentation sur l’administration du site](/help/sites-cloud/administering/site-creation/create-site.md) - Consultez la documentation technique sur la création de site pour plus d’informations sur les fonctionnalités de l’outil de création rapide de site.

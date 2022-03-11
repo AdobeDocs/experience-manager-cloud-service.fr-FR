@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: b8ab2525-3f15-4844-866c-da47bfc7518c
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2598'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ Utilisez le connecteur et les règles de traduction pour traduire votre contenu.
 
 Dans le document précédent du parcours de traduction AEM Sites, [Configuration des règles de traduction](translation-rules.md), vous avez appris à utiliser les règles de traduction AEM pour identifier votre contenu de traduction. Vous devriez maintenant comprendre les éléments suivants :
 
-* Ce que font les règles de traduction
+* comprendre ce que font les règles de traduction ;
 * Comment définir vos propres règles de traduction
 
 Maintenant que votre connecteur et vos règles de traduction sont configurés, cet article vous guide tout au long de l’étape suivante de la traduction de votre contenu AEM Sites.
@@ -41,7 +41,7 @@ Lorsque un contenu est ajouté à un projet de traduction, une tâche de traduct
 
 Les projets de traduction peuvent être créés de deux manières :
 
-1. Sélectionnez la racine de langue du contenu et demandez à AEM de créer automatiquement le projet de traduction en fonction du chemin d’accès au contenu.
+1. Sélectionnez la racine de la langue du contenu et configurez AEM afin qu’il crée automatiquement le projet de traduction en fonction du chemin du contenu.
 1. Créez un projet vierge et sélectionnez manuellement le contenu à ajouter au projet de traduction.
 
 Ces deux approches sont acceptables, le choix tiendra à l’identité de la personne responsable de la traduction :
@@ -62,7 +62,7 @@ Pour les propriétaires de contenu qui sont également responsables de la traduc
 1. Appuyez ou cliquez sur le sélecteur de rail et affichez le panneau **Références**.
 1. Appuyez ou cliquez sur **Copies de langue**.
 1. Cochez l’option **Copies de langue**.
-1. Développez la section **Mettre à jour les copies de langue** en bas du panneau des références.
+1. Développez la section **Mise à jour des copies de langue** en bas du panneau des références.
 1. Dans le menu déroulant **Projet**, sélectionnez **Créer un ou plusieurs projets de traduction**.
 1. Attribuez un titre approprié à votre projet de traduction.
 1. Cliquez ou appuyez sur **Mettre à jour**.
@@ -122,7 +122,7 @@ Pour afficher le projet de traduction :
 Le projet est divisé en plusieurs cartes.
 
 * **Résumé** : cette carte affiche les informations d’en-tête de base du projet, parmi lesquelles le propriétaire, la langue et le fournisseur de traduction.
-* **Tâche de traduction** : cette ou ces cartes présentent un aperçu de la tâche de traduction proprement dite, notamment son état, le nombre de ressources, etc. En règle générale, il existe une tâche par langue, avec le code de langue ISO-2 ajouté au nom de la tâche.
+* **Tâche de traduction** : cette carte ou ces cartes présentent un aperçu de la tâche de traduction proprement dite, notamment son statut, le nombre de ressources, etc. En règle générale, il existe une tâche par langue, avec le code de langue ISO-2 ajouté au nom de la tâche.
    * Notez que lors de [la création automatique de tâches de traduction](#automatically-creating), AEM crée les tâches de manière asynchrone et elles peuvent ne pas apparaître immédiatement dans le projet.
 * **Équipe** : cette carte montre les utilisateurs qui collaborent à ce projet de traduction. Ce parcours ne couvre pas cette rubrique.
 * **Tâches** : les tâches supplémentaires associées à la traduction du contenu, telles que les éléments à réaliser ou les éléments de workflow. Ce parcours ne couvre pas cette rubrique.
@@ -182,7 +182,7 @@ Lors de la création manuelle d’un projet de traduction, AEM crée les tâches
 
 Pour ajouter du contenu à une tâche de traduction :
 
-1. Appuyez ou cliquez sur le bouton représentant des points de suspension en bas de l’une des cartes **Tâche de traduction**.
+1. Appuyez ou cliquez sur le bouton ... en bas de l’une des cartes **Tâche de traduction**.
 1. Vérifiez que la tâche ne contient aucun contenu. Appuyez ou cliquez sur le bouton **Ajouter** en haut de la fenêtre, puis sur **Ressources/Pages** dans la liste déroulante.
 
    ![Tâche de traduction vide](assets/empty-translation-job.png)
@@ -208,9 +208,9 @@ Pour ajouter du contenu à une tâche de traduction :
 
 >[!TIP]
 >
->L’explorateur de chemins d’accès est un outil puissant qui vous permet de rechercher, de filtrer et de parcourir votre contenu. Appuyez ou cliquez sur le bouton **Contenu uniquement/Filtres** pour activer ou désactiver le panneau latéral et afficher les filtres avancés tels que la **Date de modification** ou le **Statut de la traduction**.
+>L’explorateur de chemins d’accès est un outil puissant qui vous permet de rechercher, de filtrer et de parcourir votre contenu. Appuyez ou cliquez sur le bouton **Contenu uniquement/Filtres** pour activer ou désactiver le panneau latéral et afficher les filtres avancés tels que la **Date de modification** ou le **Statut de traduction**.
 >
->Pour en savoir plus sur l’explorateur de chemins d’accès, consultez la [section des ressources supplémentaires](#additional-resources).
+>Pour en savoir plus sur l’explorateur de chemins d’accès, consultez la [section des ressources supplémentaires.](#additional-resources)
 
 Vous pouvez utiliser les étapes précédentes pour ajouter le contenu nécessaire à toutes les langues (tâches) du projet. Une fois que vous avez sélectionné tout le contenu, vous pouvez commencer la traduction.
 
@@ -285,4 +285,4 @@ Appuyez-vous sur ces connaissances pour poursuivre votre parcours de traduction 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement en mode découplé en consultant le document [Publication du contenu traduit](publish-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, bien qu’ils ne soient pas obligatoires pour poursuivre le parcours en mode découplé.
 
 * [Gestion des projets de traduction](/help/sites-cloud/administering/translation/managing-projects.md) : découvrez les détails des projets de traduction et des fonctionnalités supplémentaires telles que les processus de traduction humaine et les projets multilingues.
-* [Environnements et outils de création](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) : AEM fournit divers mécanismes d’organisation et de modification de votre contenu, notamment un puissant navigateur de chemins d’accès.
+* [Environnements et outils de création](/help/sites-cloud/authoring/fundamentals/environment-tools.md##path-selection) – AEM fournit divers mécanismes d’organisation et de modification de votre contenu, notamment un puissant navigateur de chemins d’accès.

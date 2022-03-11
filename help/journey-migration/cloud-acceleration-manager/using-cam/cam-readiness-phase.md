@@ -1,10 +1,11 @@
 ---
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1057'
-ht-degree: 64%
+ht-degree: 74%
 
 ---
 
@@ -55,7 +56,7 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-3.png)
 
    >[!IMPORTANT]
-   >Le rapport ne peut pas être chargé si vous êtes en mode Incognito du navigateur.
+   >Le rapport ne peut pas être chargé si vous êtes en mode Incognito dans le navigateur.
 
 1. Une fois que vous avez chargé un nouveau rapport, le rapport Analyse des bonnes pratiques s’affiche.
 
@@ -68,19 +69,19 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
 
 ### Utilisation de l’aperçu avant impression {#print-preview-cam}
 
-Vous pouvez sélectionner l’option d’aperçu avant impression dans Cloud Acceleration Manager pour un aperçu imprimable des rapports ou pour imprimer le rapport dans un format PDF afin d’en faciliter la partage.
+Vous pouvez sélectionner l’option d’aperçu avant impression dans Cloud Acceleration Manager pour obtenir un aperçu imprimable des rapports ou pour imprimer le rapport au format PDF afin d’en faciliter la partage.
 
 Suivez les étapes ci-dessous :
 
-1. Cliquez sur **Aperçu de l’impression** , comme illustré ci-dessous.
+1. Cliquez sur l’icône **Aperçu de l’impression**, comme illustré ci-dessous.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview1.png)
 
-1. Cliquez sur **Aperçu de l’impression** ouvre un nouvel onglet avec le rapport affiché dans un aperçu imprimable. Cliquez sur **Imprimer** pour imprimer le rapport au format PDF.
+1. Cliquez sur **Aperçu de l’impression** pour ouvrir un nouvel onglet avec le rapport affiché dans un aperçu imprimable. Cliquez sur **Imprimer** pour imprimer le rapport au format PDF.
 
    >[!IMPORTANT]
-   >* L’option **Enregistrer en tant que PDF** est recommandé et pris en charge pour les fonctionnalités ci-dessus.
-   >* Si le bouton d’impression du navigateur est utilisé, il n’imprime qu’une seule page.
+   >* L’option **Enregistrer en tant que PDF** est recommandée et prise en charge pour les fonctionnalités ci-dessus.
+   >* Si vous utilisez le bouton d’impression du navigateur, une seule page sera imprimée.
 
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)

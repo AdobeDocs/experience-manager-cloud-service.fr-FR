@@ -3,7 +3,7 @@ title: 'Enregistrement, connexion et profil utilisateur '
 description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
 source-git-commit: 4d76d8bac41e19168abb1819841dfc62be07ea0c
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 100%
 
@@ -111,7 +111,7 @@ Les stratégies d’accès au niveau Publication, également appelées CUG (Clos
 
 Indépendamment de la connexion, le code personnalisé peut également être conservé et gérer les appartenances d’un groupe d’utilisateurs en fonction des besoins uniques de l’entreprise.
 
-## Synchronisation des données {#data-synchronization}
+## La synchronisation des données. {#data-synchronization}
 
 Les utilisateurs finaux du site web attendent une expérience cohérente pour chaque requête de page web ou même lorsqu’ils se connectent à l’aide d’un navigateur différent. Même s’ils ne le savent pas, ils sont conduits vers différents nœuds de serveur de l’infrastructure du niveau Publication. AEM as a Cloud Service effectue cette opération en synchronisant rapidement la hiérarchie de dossiers `/home` (informations de profil d’utilisateur, appartenance à un groupe, etc.) sur tous les nœuds du niveau Publication.
 

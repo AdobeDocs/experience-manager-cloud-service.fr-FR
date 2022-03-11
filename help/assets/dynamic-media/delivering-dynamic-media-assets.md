@@ -1,12 +1,12 @@
 ---
 title: Diffusion de ressources Dynamic Media
 description: Découvrez comment diffuser des ressources Dynamic Media.
-feature: Gestion des ressources
+feature: Asset Management
 role: User
 exl-id: 4557b561-b3c4-4d6f-8044-2069bda41613
 source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: ht
-source-wordcount: '321'
+workflow-type: tm+mt
+source-wordcount: '319'
 ht-degree: 100%
 
 ---

@@ -1,13 +1,13 @@
 ---
 title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
-source-git-commit: 4892f644929bc308762ca4fb8a2ebfb85e5fb5e2
-workflow-type: ht
+exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '1498'
 ht-degree: 100%
 
 ---
-
 
 # Configurations et l’explorateur de configurations {#configuration-browser}
 

@@ -1,13 +1,13 @@
 ---
 title: parcours du module complémentaire Demos de référence AEM
 description: Commencez ici pour obtenir un parcours guidé expliquant comment ajouter facilement le module complémentaire de démonstration de référence d’AEM à un environnement de test avec une configuration d’AEM minimale et être en mesure de tester les puissantes fonctionnalités d’avec des exemples riches basés sur les bonnes pratiques.
-source-git-commit: df9b777e24e56ed0329895f833f50b45ecf2defa
+exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 21%
 
 ---
-
 
 # parcours du module complémentaire Demos de référence AEM {#reference-demos-add-on-journey}
 

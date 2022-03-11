@@ -2,13 +2,13 @@
 title: Architecture d’AEM sans tête
 description: Découvrez l’architecture de haut niveau d’Adobe Experience Manager en ce qui concerne un déploiement sans tête. Comprendre le rôle des services AEM Author, Preview et Publish et le modèle de déploiement recommandé pour les applications sans interface utilisateur graphique.
 feature: Content Fragments,GraphQL API
-source-git-commit: 64b2beb4af2297e19e39ad534856bce33ffcfcf8
+exl-id: 5ba6921f-b06e-463d-b956-d1fb434090c9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '554'
 ht-degree: 18%
 
 ---
-
 
 # Architecture d’AEM sans tête
 
@@ -49,4 +49,3 @@ Une autre option pour les déploiements sans interface consiste à incorporer un
 1. Il est possible de configurer une version Aperçu de l’application qui se connecte au service Aperçu.
 1. Une fois que le contenu a été révisé et approuvé, il peut être publié sur le service AEM Publish.
 1. Les utilisateurs finaux interagissent avec la version de production de l’application. L’application de production se connecte au service de publication via Dispatcher et utilise les API GraphQL pour demander et utiliser du contenu.
-

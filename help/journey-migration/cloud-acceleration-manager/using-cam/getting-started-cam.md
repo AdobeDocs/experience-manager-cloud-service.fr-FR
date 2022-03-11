@@ -1,7 +1,8 @@
 ---
 title: Prise en main de Cloud Acceleration Manager
 description: Cette page présente un aperçu de l’utilisation de Cloud Acceleration Manager et de sa prise en main.
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: e2fad21c-3de6-4186-97c6-ebc84780b2e8
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 100%
@@ -10,7 +11,7 @@ ht-degree: 100%
 
 # Prise en main de Cloud Acceleration Manager {#get-started-cam}
 
-Cloud Acceleration Manager est une application cloud conçue pour guider vos équipes informatiques tout au long du parcours de transition, de la planification à l’activation sur Cloud Service. Configurez vos équipes pour une migration réussie avec les bonnes pratiques, conseils, documentation et outils recommandés par Adobe pour vous aider à chaque phase du parcours vers AEM as a Cloud Service.
+Cloud Acceleration Manager est une application cloud conçue pour guider vos équipes informatiques tout au long du parcours de transition, de la planification à la mise en ligne sur Cloud Service. Configurez vos équipes pour une migration réussie avec les bonnes pratiques, conseils, documentation et outils recommandés par Adobe pour vous aider à chaque phase du parcours vers AEM as a Cloud Service.
 
 ## Objectif {#objective}
 

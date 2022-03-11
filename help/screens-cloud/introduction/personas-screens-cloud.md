@@ -3,7 +3,7 @@ title: Définitions de rôle dans AEM Screens as a Cloud Service
 description: Cette page décrit les définitions de rôle dans AEM Screens as a Cloud Service.
 exl-id: f57a1aaf-8139-4141-90c5-c70ec7a9630c
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '214'
 ht-degree: 100%
 

@@ -3,7 +3,7 @@ title: Console des composants
 description: La console Composants vous permet de parcourir tous les composants définis pour votre instance.
 exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ Elle est accessible via **Outils** -> **Général** -> **Composants**. En l’
 >
 >La console des composants affiche tous les composants du système. L’[Explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) affiche les composants qui sont disponibles pour les auteurs et masque tous les groupes de composants qui commencent par un point ( `.`).
 
-## Recherche {#search-field}
+## Rechercher {#search-field}
 
 Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir le panneau de **recherche** pour rechercher et/ou filtrer les composants :
 

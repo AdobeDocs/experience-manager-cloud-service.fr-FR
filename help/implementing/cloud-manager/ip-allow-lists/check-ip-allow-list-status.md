@@ -3,7 +3,7 @@ title: Contrôle du statut de liste autorisée IP
 description: Contrôle du statut de liste autorisée IP
 exl-id: 5ddea04f-3720-4663-90a8-9399019bfcbe
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ Une fois l’opération de suppression terminée, la liste autorisée IP :
    * Le statut reste sur Échec de la suppression jusqu’à ce que tous les échecs soient effacés. L’utilisateur doit sélectionner Supprimer dans le menu **...** à l’extrémité droite de la ligne du tableau pour effacer tout échec.
    * L’utilisateur ne sera pas autorisé à mettre à jour la Liste autorisée IP tant que le statut est sur Échec.
 
-## Configurations de réseau de diffusion de contenu préexistantes pour les listes autorisées IP {#pre-existing-cdn}
+## Configurations CDN préexistantes pour les listes autorisées d’adresses IP {#pre-existing-cdn}
 
 Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les listes autorisées d’adresses IP, des certificats SSL ou des noms de domaines personnalisés voient le message suivant dans les pages de détails **Liste autorisée d’adresses IP** et **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 

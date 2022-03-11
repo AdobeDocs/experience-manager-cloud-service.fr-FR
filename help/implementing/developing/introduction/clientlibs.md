@@ -3,7 +3,7 @@ title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2561'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Les bibliothèques côté client sont la solution intégrée pour la diffusion d
 
 >[!TIP]
 >
->Les développeurs front-end qui créent du code CSS et JavaScript pour les projets AEM doivent également se familiariser avec l’[archétype de projet AEM et son processus de création frontale automatisé](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr).
+>Les développeurs front-end qui créent du code CSS et JavaScript pour les projets AEM doivent également se familiariser avec l’[archétype de projet AEM et son processus de création frontale automatisé](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
 
 ## Que sont les bibliothèques côté client ?  {#what-are-clientlibs}
 
@@ -34,7 +34,7 @@ AEM collecte le code CSS et JavaScript du site dans un seul fichier, à un empla
 
 ## Développement frontal pour AEM as a Cloud Service {#fed-for-aemaacs}
 
-Toutes les ressources JavaScript, CSS et autres ressources front-end doivent être conservées dans le [module ui.frontend de l’archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr) La flexibilité de l’archétype vous permet d’utiliser vos outils web modernes de choix pour créer et gérer ces ressources.
+Toutes les ressources JavaScript, CSS et autres ressources front-end doivent être conservées dans le [module ui.frontend de l’archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html) La flexibilité de l’archétype vous permet d’utiliser vos outils web modernes de choix pour créer et gérer ces ressources.
 
 L’archétype peut ensuite compiler les ressources dans des fichiers CSS et JS uniques, en les incorporant automatiquement dans un `cq:clientLibraryFolder` dans le référentiel.
 
@@ -89,7 +89,7 @@ Pour que les bibliothèques clientes situées sous `/apps` soient accessibles, u
 1. Si vous devez gérer des ressources statiques, créez un sous-dossier nommé `resources` sous le dossier de bibliothèques clientes.
    * Si vous stockez des ressources statiques sous le dossier `resources`, elles ne peuvent pas être référencées sur une instance de publication.
 1. Ajoutez les fichiers sources dans le dossier de bibliothèques.
-   * Cela est généralement effectué par le processus de création frontale de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr).
+   * Cela est généralement effectué par le processus de création frontale de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * Si vous le souhaitez, vous pouvez organiser les fichiers sources dans des sous-dossiers.
 1. Sélectionnez le dossier de bibliothèques clientes et cliquez ensuite sur **Créer > Créer un fichier**.
 1. Dans la zone du nom de fichier, saisissez l’un des noms suivants et cliquez ensuite sur OK :

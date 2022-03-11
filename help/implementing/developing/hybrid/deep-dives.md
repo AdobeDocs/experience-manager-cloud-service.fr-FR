@@ -3,7 +3,7 @@ title: Immersion dans les SPA
 description: Le SDK de l’éditeur de SPA AEM a été présenté dans une série de sessions AEM Gems. Présentée par des ingénieurs d’Adobe, cette série peut servir de guide efficace pour mieux comprendre le SDK de l’éditeur de SPA AEM dans les détails.
 exl-id: 93c950be-be80-42d5-93eb-805a91b6ebba
 source-git-commit: f349d4db8794f85c17e3de5abf33edf84262267f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '288'
 ht-degree: 100%
 

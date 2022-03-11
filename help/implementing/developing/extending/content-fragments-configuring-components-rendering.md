@@ -3,7 +3,7 @@ title: Fragments de contenu – Configuration des composants pour le rendu
 description: Fragments de contenu – Configuration des composants pour le rendu
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '518'
 ht-degree: 100%
 

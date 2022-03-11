@@ -3,7 +3,7 @@ title: Exemples de magasins candidats ContextHub
 description: ContextHub fournit plusieurs exemples de magasins candidats que vous pouvez utiliser dans vos solutions
 exl-id: 9493d91e-0b23-4dc4-a014-d8d13687efad
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '466'
 ht-degree: 100%
 

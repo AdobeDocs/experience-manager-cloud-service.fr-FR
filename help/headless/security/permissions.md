@@ -1,14 +1,14 @@
 ---
-title: 'Considérations relatives aux autorisations pour le contenu sans interface '
+title: Considérations relatives aux autorisations pour le contenu sans interface
 description: Découvrez les différentes considérations relatives aux autorisations et aux listes de contrôle d’accès pour une mise en oeuvre sans interface avec Adobe Experience Manager. Découvrez les différentes personnes et les niveaux d’autorisation potentiels nécessaires pour les environnements de création et de publication.
 feature: Content Fragments,GraphQL API
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
+exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
 
 ---
-
 
 # Considérations relatives aux autorisations pour le contenu sans interface
 
@@ -98,4 +98,3 @@ Le [AEM SDK sans affichage](https://github.com/adobe/aem-headless-client-js#crea
 ### Accès à l’API GraphQL
 
 requêtes HTTP fournissant le [informations d’authentification appropriées](https://github.com/adobe/aem-headless-client-js#create-aemheadless-client) aux points d’entrée de l’API GraphQL du service de publication AEM incluent du contenu que les informations d’identification sont autorisées à lire et du contenu accessible de manière anonyme. Les autres clients de l’API GraphQL ne peuvent pas lire le contenu dans les dossiers protégés par CUG.
-

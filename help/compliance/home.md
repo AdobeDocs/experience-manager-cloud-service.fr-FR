@@ -1,11 +1,12 @@
 ---
 title: Compliance
 description: Cette page répertorie les ressources d’aide autonome en offrant des informations dans Experience Manager as a Cloud Service.
-landing-page-description: Pour une présentation de la conformité d’AEM as a Cloud Service, y compris la confidentialité et l’accessibilité, commencez ici.
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+landing-page-description: Pour obtenir une présentation de la conformité dans AEM as a Cloud Service, y compris la confidentialité et l’accessibilité, commencez ici.
+exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '386'
+ht-degree: 100%
 
 ---
 

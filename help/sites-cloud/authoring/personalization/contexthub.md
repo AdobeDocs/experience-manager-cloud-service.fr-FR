@@ -3,13 +3,13 @@ title: Aperçu des pages à l’aide des données ContextHub
 description: La barre d’outils ContextHub affiche les données ContextHub, vous permet de modifier les données de la boutique, et se révèle utile pour prévisualiser le contenu.
 exl-id: 9c0536c5-900e-4814-9e31-f9fee5adc17c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 100%
 
 ---
 
-# Aperçu des pages à l’aide des données ContextHub {#previewing-pages-using-contexthub-data}
+# Aperçu des pages à l’aide des données ContextHub  {#previewing-pages-using-contexthub-data}
 
 La barre d’outils ContextHub affiche les données ContextHub et vous permet de modifier les données de la boutique. Elle est utile pour prévisualiser le contenu déterminé par des données dans une boutique ContextHub.
 

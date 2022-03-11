@@ -3,13 +3,13 @@ title: Création d’un site
 description: Découvrez comment les administrateurs utilisent AEM pour créer un site à l’aide de modèles de site afin de définir le style et la structure de votre site.
 feature: Administering
 role: Admin
-source-git-commit: 4d87cb0db8219bd2b69906e041b74961e9638327
+exl-id: 50105d03-9d94-4aec-b0a7-0b88e3fe50e0
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
 
 ---
-
 
 # Création d’un site {#new-site}
 

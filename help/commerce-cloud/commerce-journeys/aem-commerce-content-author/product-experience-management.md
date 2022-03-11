@@ -1,10 +1,11 @@
 ---
 title: Création d’expériences de produit
 description: Découvrez comment créer des expériences produit.
-source-git-commit: cadb903c08bd491db12c5d0ad24acc7f65396825
+exl-id: 4ae70e40-fdf1-4a37-b4dd-0c4882d77908
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1155'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -100,15 +101,15 @@ Si vous avez créé du contenu associé pour ce produit, basculez dans la barre 
 
 ![page enrichie pem](assets/pem-page-enriched.png)
 
-## Fin du Parcours ? {#end-of-journey}
+## Fin du parcours ? {#end-of-journey}
 
-Félicitations ! Vous avez terminé le parcours du développeur de contenu et de commerce d’AEM ! Vous devez maintenant :
+Félicitations ! Vous avez terminé le parcours du développeur de contenu et de commerce d’AEM ! Vous devez maintenant :
 
 * comprendre comment associer n’importe quel contenu AEM à des objets de catalogue de produits ;
 * utiliser des espaces réservés pour enrichir individuellement les pages de produits et de catégories ;
 * savoir comment rendre le contenu Shoppable et utiliser l’onglet de contenu associé ;
 
-Vous êtes maintenant prêt à gérer les expériences de produits à l’aide d’AEM Content and Commerce. Toutefois, AEM contenu et commerce disposent de nombreuses options supplémentaires. Extrayez certaines des ressources supplémentaires disponibles dans le [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités que vous avez vues dans ce parcours.
+Vous êtes maintenant prêt à gérer les expériences de produits à l’aide d’AEM Content and Commerce. Toutefois, AEM contenu et commerce disposent de nombreuses options supplémentaires. Consultez certaines des ressources supplémentaires disponibles dans la [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités rencontrées dans ce parcours.
 
 ## Ressources supplémentaires {#additional-resources}
 

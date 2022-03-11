@@ -1,17 +1,17 @@
 ---
-title: 'Gérer la publication '
+title: Gérer la publication
 description: Publication ou annulation de la publication de ressources dans Experience Manager Assets, Dynamic Media et Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
-source-git-commit: 6ffdd6801fffb743314759b6c303723c2599dfa5
+exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 15%
 
 ---
-
 
 # Gestion de la publication dans Experience Manager Assets {#manage-publication-in-aem}
 
@@ -191,4 +191,3 @@ Vous pouvez publier des ressources, des dossiers et des collections dans le [!DN
 * Les dossiers vides ne sont pas publiés.
 * Si vous publiez une ressource en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Attendez que le traitement soit terminé, puis publiez ou republiez la ressource une fois le traitement terminé.
 * Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références, car elles peuvent être référencées par d’autres ressources publiées.
-

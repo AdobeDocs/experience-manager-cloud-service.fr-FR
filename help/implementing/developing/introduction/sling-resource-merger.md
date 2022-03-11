@@ -3,7 +3,7 @@ title: Utilisation de Sling Resource Merger dans Adobe Experience Manager as a C
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 100%
 
@@ -192,7 +192,7 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :
 
-      * type: `String[]`
+      * type : `String[]`
       * value : liste des nœuds enfants (tels que définis dans `/libs`) à masquer/ignorer
 
       Le caractère générique &amp;ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
@@ -209,7 +209,7 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
 
          Cela spécifie le nœud (comme dans `/libs`) devant lequel le nœud actif doit être positionné :
 
-         * type: `String`
+         * type : `String`
          * value: `<before-SiblingName>`
 
 ### Appel de Sling Resource Merger à partir de votre code {#invoking-the-sling-resource-merger-from-your-code}

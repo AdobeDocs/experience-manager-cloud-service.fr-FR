@@ -3,7 +3,7 @@ title: Conventions de dénomination
 description: Les nœuds dans le référentiel sont soumis aux conventions de dénomination de Java Content Repository
 exl-id: 3c5c39dd-b209-488b-a93e-e840786fe224
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 100%
 

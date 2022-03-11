@@ -1,70 +1,70 @@
 ---
 title: Cloud Manager – FAQ relative à Cloud Services
-seo-title: FAQ relative à Cloud Manager
+seo-title: Cloud Manager FAQs
 description: Consultez la FAQ relative à Cloud Manager for Cloud Services pour obtenir un certain nombre de conseils de dépannage
-seo-description: Consultez cette page pour obtenir des réponses concernant les questions les plus fréquentes sur Cloud Manager – Cloud Services
+seo-description: Follow this page to get answers on Cloud Manager - Cloud Services FAQs
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
-source-wordcount: '1152'
+workflow-type: tm+mt
+source-wordcount: '1137'
 ht-degree: 100%
 
 ---
 
-# FAQ relative à Cloud Manager {#cloud-manager-faqs}
+# FAQ relatives à Cloud Manager {#cloud-manager-faqs}
 
 La section suivante fournit des réponses aux questions les plus fréquentes sur Cloud Manager for Cloud Services.
 
-## Est-il possible d’utiliser Java 11 avec les builds de Cloud Manager ? {#java-11-cloud-manager}
+## Est-il possible d’utiliser Java 11 avec les builds de Cloud Manager ? {#java-11-cloud-manager}
 
-Le build AEM Cloud Manager échoue en cas de tentative de basculement de la version Java 8 à Java 11. Le problème peut avoir de nombreuses causes et la plupart des plus courantes sont documentées ci-dessous :
+Le build AEM Cloud Manager échoue en cas de tentative de basculement de la version Java 8 à Java 11. Le problème peut avoir de nombreuses causes et la plupart des causes les plus courantes sont documentées ci-dessous :
 
-* Ajoutez le plug-in maven-toolchain-plugin avec les paramètres appropriés pour Java 11, comme indiqué [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=fr#getting-started).  Par exemple, voir l’[échantillon de code de projet wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
+* Ajoutez le plug-in maven-toolchain-plugin avec les paramètres appropriés pour Java 11, comme indiqué [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/create-application-project/using-the-wizard.html?lang=fr#getting-started).  Par exemple, consultez [l’exemple de code de projet wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-* Si vous rencontrez l’erreur ci-dessous, vous devez supprimer l’utilisation du `maven-scr-plugin` et convertir toutes les annotations OSGi en annotations OSGi R6. Pour accéder à des instructions, voir [ici](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
+* Si vous rencontrez l’erreur ci-dessous, vous devez supprimer l’utilisation de `maven-scr-plugin` et convertir toutes les annotations OSGi en annotations OSGi R6. Pour obtenir des instructions, consultez [ce lien](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/).
 
    `[main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]`
 
-* Pour les builds de Cloud Manager, le module externe Maven Enforcer échoue avec l’erreur `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`. Il s’agit d’un problème connu en raison duquel Cloud Manager utilisait une autre version de Java pour exécuter la commande maven au lieu de compiler le code. Pour l’instant, évitez d’utiliser `requireJavaVersion` dans vos configurations maven-force-application-plugin.
+* Pour les builds de Cloud Manager, le plug-in Maven Enforcer échoue en présentant l’erreur `"[main] [WARNING] Rule 1: org.apache.maven.plugins.enforcer.RequireJavaVersion"`. Il s’agit d’un problème connu dû au fait que Cloud Manager utilisait une version différente de Java pour exécuter la commande maven plutôt que de compiler le code. Pour l’instant, évitez d’utiliser `requireJavaVersion` dans vos configurations maven-force-application-plugin.
 
-## Notre déploiement est bloqué en raison de l’échec de la vérification de la qualité du code. Y a-t-il un moyen de contourner ce contrôle ? {#deployment-stuck}
+## Notre déploiement est bloqué en raison de l’échec de la vérification de la qualité du code. Y a-t-il un moyen de contourner cette vérification ? {#deployment-stuck}
 
-Les échecs de qualité du code, à l’exception de *Cote de sécurité*, ne sont pas des mesures critiques ; il est donc possible de les contourner en développant les éléments dans l’interface utilisateur des résultats.
+Tous les échecs de qualité du code, à l’exception de la *Cote de sécurité*, ne sont pas des mesures critiques ; ils peuvent donc être contournés en développant les éléments dans l’interface utilisateur des résultats.
 
 Un utilisateur ayant un rôle de [responsable de déploiement, responsable de projet ou propriétaire d’entreprise](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr#requirements) peut, au choix, contourner les problèmes, auquel cas le pipeline continue, ou les accepter, auquel cas le pipeline s’arrête avec un échec.  Voir la section [Portes à trois niveaux lors de l’exécution d’un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/understand-your-test-results.html?lang=fr#how-to-use) pour plus d’informations.
 
 
-## Sommes-nous autorisés à utiliser SNAPSHOT dans la version du projet Maven ? Comment le contrôle de version des packages et des fichiers jar groupés fonctionne-t-il pour les déploiements d’environnement intermédiaire et de production ? {#snapshot-version}
+## Sommes-nous autorisés à utiliser SNAPSHOT dans la version de projet Maven ? Comment fonctionne le contrôle de version des packages et des fichiers jar par lot pour les déploiements des environnements d’évaluation et de production ? {#snapshot-version}
 
-Reportez-vous aux scénarios suivants pour en savoir plus sur le contrôle de version des packages et des fichiers jar groupés pour les déploiements d’environnement intermédiaire et de production :
+Reportez-vous aux scénarios suivants pour en savoir plus sur le contrôle de version des packages et des fichiers jar par lots pour les déploiements en évaluation et en production :
 
-1. Pour les déploiements de développeurs, les fichiers `pom.xml` de branche Git doivent contenir `-SNAPSHOT` à la fin de la valeur de `<version>`. Ceci permet un déploiement ultérieur lorsque la version ne change pas, ce qui permet de continuer à l’installer. Dans les déploiements de développeurs, aucune version automatique n’est ajoutée ou générée pour le build Maven.
+1. Pour les déploiements de développeurs, les fichiers de la branche Git `pom.xml` doivent contenir `-SNAPSHOT` à la fin de la valeur `<version>`. Cela permet les déploiements ultérieurs lorsque la version ne change pas. Pour les déploiements développeurs, aucune version automatique n’est ajoutée ou générée pour la build maven.
 
-1. Dans le déploiement d’environnement intermédiaire et de production, une version automatique est générée comme indiqué [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=fr#managing-code).
+1. En cas de déploiement d’évaluation et de production, une version automatique est générée comme indiqué [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/activating-maven-project.html?lang=fr#managing-code).
 
-1. Pour le contrôle de version personnalisé dans les déploiements d’environnement intermédiaire et de production, définissez une version Maven appropriée en 3 éléments, comme `1.0.0`. Augmentez la version chaque fois que vous devez effectuer un autre déploiement en production.
+1. Pour le contrôle de version personnalisé dans les déploiements d’évaluation et de production, définissez une version maven en 3 parties telle que `1.0.0`. Mettez à jour la version chaque fois que vous devez effectuer un autre déploiement en production.
 
-1. Cloud Manager ajoute automatiquement sa version aux builds d’environnement intermédiaire et de production et crée même une branche Git. Aucune configuration supplémentaire n’est nécessaire. Si l’étape 3 ci-dessus est ignorée, le déploiement fonctionnera correctement et une version sera automatiquement définie.
+1. Cloud Manager ajoute automatiquement sa version aux versions d’évaluation et de production et crée même une branche Git. Aucune configuration spécifique n’est nécessaire. Si l’étape 3 ci-dessus est ignorée, le déploiement fonctionnera correctement et une version sera automatiquement définie.
 
-1. Il n’y a aucun problème, si vous laissez la version avec `-SNAPSHOT` pour les builds ou les déploiements d’environnement intermédiaire et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée une balise pour vous dans Git. Il est possible de faire référence ultérieurement à cette balise, si nécessaire.
+1. Il n’y aura aucun problème si vous laissez la version avec `-SNAPSHOT` pour les versions ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans Git. Cette balise peut être référencée ultérieurement, si nécessaire.
 
-1. Si vous souhaitez tester du code expérimental sur l’environnement de développement, vous pouvez créer une nouvelle branche Git et définir le pipeline pour utiliser cette branche. Cette approche est efficace lorsque les déploiements provoquent des échecs et que vous souhaitez tester des versions plus anciennes du code afin de déterminer à quel moment ces échecs sont survenus.
+1. Si vous souhaitez tester un code sur l’environnement de développement, vous pouvez créer une nouvelle branche Git et configurer le pipeline pour qu’il utilise cette autre branche. Cela peut s’avèrer utile lorsque le lancement des déploiements échoue et que vous souhaitez tester les versions plus anciennes du code pour déterminer à quel moment il a échoué.
 
-   La commande Git ci-dessous crée une branche distante nommée *testbranch1* par rapport à une validation préexistante spécifique `485548e4fbafbc83b11c3cb12b035c9d26b6532b`.  Il est possible d’utiliser cette branche spéciale dans Cloud Manager sans affecter les autres :
+   La commande Git ci-dessous crée une branche distante nommée *testbranch1* par rapport à une validation préexistante spécifique `485548e4fbafbc83b11c3cb12b035c9d26b6532b`.  Cette branche spéciale peut être utilisée dans Cloud Manager sans affecter les autres branches :
 
    `git push origin 485548e4fbafbc83b11c3cb12b035c9d26b6532b:refs/heads/testbranch1`
 
-   Consultez la [documentation Git](https://git-scm.com/book/en/v2/Git-Internals-Git-References) pour en savoir plus.
+   Consultez la [documentation Git](https://git-scm.com/book/en/v2/Git-Internals-Git-References) pour plus d’informations.
 
    Si vous souhaitez supprimer ultérieurement la branche de test, utilisez la commande delete :
 
    `git push origin --delete testbranch1`
 
-## Le build Maven échoue dans les déploiements de Cloud Manager, mais se compile localement sans erreur. Comment effectuer le débogage ? {#maven-build-fail}
+## La compilation Maven échoue dans les déploiements de Cloud Manager, mais se crée localement sans erreurs. Comment déboguer ? {#maven-build-fail}
 
-Consultez la section [Ressource Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) pour en savoir plus.
+Consultez [Ressource Git](https://github.com/cqsupport/cloud-manager/blob/main/cm-build-step-fails.md) pour plus d’informations.
 
-## Que faire si le déploiement de Cloud Manager échoue lors de l’étape de déploiement dans l’environnement AEM as a Cloud Service ? {#cloud-manager-deployment-cloud-service}
+## Que faire si le déploiement de Cloud Manager échoue lors de l’étape de déploiement dans l’environnement AEM as a Cloud Service ?  {#cloud-manager-deployment-cloud-service}
 
 La raison la plus courante de l’échec des déploiements résulte d’autorisations insuffisantes pour l’utilisateur *sling-distribution-importer*.
 Référez-vous à l’exemple ci-dessous pour comprendre un problème, une cause et une solution :
@@ -104,8 +104,8 @@ org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config
 
 ## Impossible de définir une variable à l’aide des variables de pipeline définies par aio cloud manager. Comment déboguer ces problèmes ? {#set-variable}
 
-Si vous obtenez une erreur `403` lorsque vous tentez de produire une liste de variables ou de définir des variables de pipeline au moyen de commandes similaires à celles ci-dessous, vous devez être ajouté avec le rôle *responsable de déploiement* du produit Cloud Manager dans l’Admin Console.\
-Voir la section [Autorisations d’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) pour plus d’informations.
+Si vous obtenez une erreur `403` lorsque vous tentez de référencer ou de définir des variables de pipeline au moyen de commandes similaires à celles ci-dessous, vous devez être ajouté en tant que rôle de produit *Responsable de déploiement* Cloud Manager dans Admin Console.\
+Consultez [Autorisations d’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html#!AdobeDocs/cloudmanager-api-docs/master/permissions.md) pour plus d’informations.
 
 Commandes et erreurs connexes :
 

@@ -1,13 +1,13 @@
 ---
 title: Configuration de votre pipeline
 description: Créez un pipeline frontal pour gérer la personnalisation du thème de votre site.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 2%
 
 ---
-
 
 # Configuration de votre pipeline {#set-up-your-pipeline}
 
@@ -53,7 +53,7 @@ Ainsi, le développement front-end peut fonctionner séparément et parallèleme
 >
 >Les pipelines front-end peuvent uniquement déployer des ressources JavaScript, CSS et statiques pour appliquer un style à votre site AEM. Le contenu du site, tel que les pages ou les ressources, ne peut pas être déployé dans un pipeline.
 
-## Accès à Cloud Manager {#login}
+## L’accès à Cloud Manager {#login}
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 

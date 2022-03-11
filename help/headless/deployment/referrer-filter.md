@@ -2,13 +2,13 @@
 title: Configuration du filtre de référent avec AEM sans affichage
 description: Le filtre de référent Adobe Experience Manager permet d’accéder à partir d’hôtes tiers. Une configuration OSGi pour le filtre de référent est nécessaire pour permettre l’accès au point d’entrée GraphQL pour les applications sans interface utilisateur.
 feature: GraphQL API
-source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
+exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 58%
 
 ---
-
 
 # Filtre Référent {#referrer-filter}
 

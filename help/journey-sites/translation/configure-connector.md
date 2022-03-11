@@ -6,7 +6,7 @@ hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1166'
 ht-degree: 100%
 
@@ -30,8 +30,8 @@ Cet article s’appuie sur ces principes de base afin que vous puissiez effectue
 
 Ce document vous aide à comprendre comment configurer un connecteur AEM pour le service de traduction de votre choix. Après l’avoir lu, vous devriez :
 
-* connaître les paramètres importants de la structure d’intégration de traduction dans AEM ;
-* savoir configurer votre propre connexion à votre service de traduction.
+* comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
+* être en mesure de configurer votre propre connexion à votre service de traduction.
 
 ## Structure d’intégration de la traduction {#tif}
 
@@ -49,7 +49,7 @@ La première étape consiste à choisir le service de traduction que vous souhai
 
 >[!NOTE]
 >
->Le spécialiste de traduction est généralement chargé de choisir le service de traduction à utiliser mais l’administrateur est généralement chargé d’installer le package de connecteur de traduction requis.
+>Le spécialiste de traduction est généralement chargé de choisir le service de traduction à utiliser, mais l’administrateur est généralement chargé d’installer le package de connecteur de traduction requis.
 
 Pour les besoins de ce parcours, nous utilisons Microsoft Translator à qui AEM fournit une licence d’évaluation prête à l’emploi. Consultez la section [Ressources supplémentaires](#additional-resources) pour plus d’informations sur ce fournisseur.
 
@@ -57,13 +57,13 @@ Si vous choisissez un autre fournisseur, votre administrateur doit installer le 
 
 >[!NOTE]
 >
->L’utilisation du traducteur Microsoft prêt à l’emploi dans AEM ne nécessite pas de configuration supplémentaire et fonctionne en l’état sans configuration de connecteur supplémentaire.
+>L’utilisation de Microsoft Translator prêt à l’emploi dans AEM ne nécessite pas de configuration supplémentaire et fonctionne en l’état sans configuration de connecteur supplémentaire.
 >
 >Si vous choisissez d’utiliser le connecteur Microsoft Translator à des fins de test, il n’est pas nécessaire d’effectuer les étapes des deux sections suivantes : [Création d’une configuration d’intégration de traduction](#create-config) et [Association de la configuration à votre contenu.](#associate) Il est toutefois conseillé de lire ces sections afin de vous familiariser avec les étapes de configuration de votre connecteur préféré.
 >
->La licence d’évaluation du connecteur Microsoft Translator n’est pas destinée à des fins de production et, si vous décidez de lui accorder une licence, l’administrateur système doit suivre les étapes présentées dans la section [Ressources supplémentaires](#additional-resources) à la fin de ce document afin de configurer cette licence.
+>La licence d’évaluation du connecteur Microsoft Translator n’est pas destinée à la production et, si vous décidez de lui accorder une licence, l’administrateur système doit suivre les étapes présentées dans la section [Ressources supplémentaires](#additional-resources) à la fin de ce document afin de configurer cette licence.
 
-## Création d’une configuration de l’intégration de traduction {#create-config}
+## Création d’une configuration d’intégration de traduction {#create-config}
 
 Une fois installé le package de connecteur correspondant au service de traduction choisi, vous devez créer une configuration de structure d’intégration de traduction pour ce service. La configuration contient les informations suivantes :
 
@@ -73,8 +73,8 @@ Une fois installé le package de connecteur correspondant au service de traducti
 
 Pour créer une configuration de traduction :
 
-1. Dans le menu de navigation global, cliquez ou appuyez sur **Outils** -> **Services cloud** -> **Traduction des services cloud**.
-1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Cet emplacement est souvent basé sur un projet en particulier mais peut également être global.
+1. Dans le menu de navigation global, cliquez ou appuyez sur **Outils** -> **Services cloud** -> **Services cloud de traduction**.
+1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Cet emplacement est souvent basé sur un projet en particulier, mais peut également être global.
    * Par exemple, dans ce cas, une configuration peut être effectuée globalement pour s’appliquer à tout le contenu, ou uniquement au projet WKND.
 
    ![Emplacement de configuration de traduction](assets/translation-configuration-location.png)
@@ -82,7 +82,7 @@ Pour créer une configuration de traduction :
 1. Cliquez ou appuyez sur **Créer** dans la barre d’outils pour créer la configuration.
 1. Fournissez les informations suivantes dans les champs requis, puis cliquez ou appuyez sur **Créer**
    1. Sélectionnez **Type de configuration** dans la liste déroulante. Sélectionnez **Intégration de traduction** dans la liste.
-   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Cloud Services** ainsi que dans les listes déroulantes de propriétés de la page.
+   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud** ainsi que dans les listes déroulantes de propriétés de la page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
 
    ![Créer une configuration de traduction](assets/create-translation-configuration.png)
@@ -95,8 +95,8 @@ Pour créer une configuration de traduction :
 
 1. Fournissez les informations suivantes.
 
-   1. **Méthode de traduction** – Sélectionnez **Traduction automatique** ou **Traduction humaine** selon votre fournisseur de traduction. Pour les besoins de ce parcours, nous supposons que la traduction sera automatique.
-   1. **Fournisseurs de traduction** – Sélectionnez dans la liste le connecteur que vous avez installé pour votre service de traduction.
+   1. **Méthode de traduction** : sélectionnez **Traduction automatique** ou **Traduction humaine** selon votre fournisseur de traduction. Pour les besoins de ce parcours, nous supposons la traduction sera automatique.
+   1. **Fournisseurs de traduction** : sélectionnez dans la liste le connecteur que vous avez installé pour votre service de traduction.
    1. **Catégorie de contenu** – Sélectionnez la catégorie la plus appropriée pour mieux cibler la traduction (uniquement pour la traduction automatique).
    1. **Traduire les ressources de page** – Sélectionnez **Utilisation du workflow de traduction de sites** pour traduire les ressources associées aux pages des sites.
    1. **Traduire les chaînes de composants** – Cochez cette case pour traduire les informations du composant.
@@ -140,4 +140,4 @@ Tirez parti de ces connaissances et poursuivez votre parcours de traduction AEM 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de développement en consultant le document intitulé [Accès à votre première expérience à l’aide d’AEM découplé](translation-rules.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
 
 * [Configuration de la structure d’intégration de traduction](/help/sites-cloud/administering/translation/integration-framework.md) – Consultez la liste des connecteurs de traduction sélectionnés et apprenez à configurer la structure d’intégration de traduction pour l’intégration à des services de traduction tiers.
-* [Connexion à Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) – AEM fournit un compte d’évaluation de traduction Microsoft à des fins de test.
+* [Connexion à Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) : AEM fournit un compte d’évaluation de traduction Microsoft à des fins de test.

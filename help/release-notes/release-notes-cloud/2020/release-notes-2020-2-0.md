@@ -3,13 +3,13 @@ title: Notes de mise à jour de la version 2020.2.0
 description: Notes de mise à jour de la version 2020.2.0
 exl-id: 005c4756-44c6-4af5-9b0c-0fc07bd211a0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 100%
 
 ---
 
-# Notes de mise à jour d’AEM as a Cloud Service 2020.2.0 {#release-notes}
+# Notes de mise à jour d’AEM as a Cloud Service 2020.2.0 {#release-notes}
 
 Cette page inclut les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.2.0.
 
@@ -30,7 +30,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 * L’étape d’analyse du code comporte désormais un journal téléchargeable.
 * La feuille de calcul contenant les problèmes détectés lors de l’analyse du code comporte désormais une colonne avec un lien vers la documentation de la règle spécifique.
 
-### Correctifs {#bug-fixes}
+### Correctifs  {#bug-fixes}
 
 * Les stratégies de sécurité du navigateur empêchaient parfois le fonctionnement correct de certains boutons de l’écran d’exécution du pipeline.
 * Les liens Aperçu, Environnements et Activité étaient parfois disponibles sur la page d’entrée de Cloud Manager.

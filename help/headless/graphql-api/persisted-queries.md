@@ -2,13 +2,13 @@
 title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode de GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
-source-git-commit: 0912cadeae13050c9cfc606d1c2b8f4236cd78ed
+exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 59%
 
 ---
-
 
 # Requêtes GraphQL persistantes {#persisted-queries-caching}
 

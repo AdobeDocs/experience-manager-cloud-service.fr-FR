@@ -3,7 +3,7 @@ title: Cadre de balisage AEM
 description: Balisage de contenu et utilisation du cadre de balisage AEM afin de la classer et de l’organiser.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 100%
 
@@ -178,7 +178,6 @@ Lorsqu’une balise A est déplacée ou fusionnée dans une balise B sous `/co
       >
       > 1. La balise est utilisée dans le contenu (ce qui signifie qu’elle comporte une référence). OU
       > 1. La balise comporte des enfants qui ont déjà été déplacés.
-
 
 * La balise B est créée (dans le cas d’un déplacement) et reçoit une propriété `cq:backlinks`.
    * `cq:backlinks` conserve les références dans l’autre direction, c’est-à-dire qu’elle conserve une liste de toutes les balises qui ont été déplacées vers la balise B ou fusionnées avec elle.

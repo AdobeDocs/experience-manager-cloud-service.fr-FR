@@ -3,13 +3,13 @@ title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 source-git-commit: 4965bd30c02536efb81a26fff8da6e5f75dbfae4
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 100%
 
 ---
 
-# SPA et rendu côté serveur {#spa-and-server-side-rendering}
+# SPA et rendu côté serveur{#spa-and-server-side-rendering}
 
 Les applications sur une seule page (SPA) peuvent offrir à l’utilisateur une expérience riche et dynamique qui réagit et se comporte de manière familière, souvent tout simplement comme une application native. [À cette fin, le client doit charger le contenu à l’avance, puis se charger de la lourde tâche consistant à gérer l’interaction utilisateur](introduction.md#how-does-a-spa-work), réduisant ainsi le volume de communication nécessaire entre le client et le serveur, ce qui rend l’application plus réactive.
 

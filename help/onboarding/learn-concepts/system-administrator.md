@@ -3,7 +3,7 @@ title: Administrateur système
 description: Consultez cette page pour en savoir plus sur un administrateur système.
 exl-id: 3a352bdb-b52c-4c14-a723-923c703892f4
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 100%
 

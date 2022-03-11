@@ -3,7 +3,7 @@ title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service ver
 description: Notes de mise à jour d’Experience Manager version 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1941'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * Un utilisateur du programme Sandbox possédant le rôle *Propriétaire d’entreprise* ou *Responsable de déploiement* dans Cloud Manager peut désormais supprimer ses jeux d’environnements de production et d’évaluation via l’interface utilisateur de Cloud Manager. L’option de suppression est désormais disponible à partir de la carte Environnement dans la page **Aperçu du programme**, mais aussi dans la page **Environnements**. La sélection de l’option de suppression dans l’environnement de production ou d’évaluation supprime également l’autre dans le jeu d’environnements.
 
-   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr).
+   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Repères sur la landing page pour informer l’utilisateur sur la navigation de base.
 

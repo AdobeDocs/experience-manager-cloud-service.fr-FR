@@ -2,13 +2,13 @@
 title: Pipelines CI/CD
 description: Découvrez les pipelines CI/CD de Cloud Manager et comment les utiliser pour déployer votre code efficacement.
 index: true
-source-git-commit: d1fe713f0c35a96cf6ba3172ea11986fd9d42fd6
+exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1364'
 ht-degree: 3%
 
 ---
-
 
 # Pipelines CI/CD de Cloud Manager {#intro-cicd}
 
@@ -127,7 +127,7 @@ Avant de configurer les pipelines front-end, consultez la section [parcours de c
 Pour savoir comment configurer les pipelines front-end, reportez-vous aux documents suivants.
 
 * [Ajout d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Ajout d’un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 ### Développement de sites avec le pipeline front-end {#developing-with-front-end-pipeline}
 
@@ -140,7 +140,7 @@ Reportez-vous au document [Développement de sites avec le pipeline front-end](/
 Pour savoir comment configurer des pipelines pleine pile, reportez-vous aux documents suivants.
 
 * [Ajout d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Ajout d’un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 
 ## Pipelines de configuration de niveau web {#web-tier-config-pipelines}
@@ -173,4 +173,4 @@ Les pipelines de configuration de niveau web peuvent être de type qualité de c
 Pour savoir comment configurer des pipelines de configuration de niveau web, reportez-vous aux documents suivants.
 
 * [Ajout d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Ajout d’un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)

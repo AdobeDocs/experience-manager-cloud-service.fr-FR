@@ -1,12 +1,12 @@
 ---
 title: Gestion des ressources Dynamic Media
 description: Découvrez comment utiliser des ressources Dynamic Media..
-feature: Gestion des ressources
+feature: Asset Management
 role: Admin,User
 exl-id: 0dc6d577-a8ee-4dd5-8643-28862bb1394c
 source-git-commit: aba8896e304619fe7e73d61b52b83da40766477a
-workflow-type: ht
-source-wordcount: '119'
+workflow-type: tm+mt
+source-wordcount: '117'
 ht-degree: 100%
 
 ---

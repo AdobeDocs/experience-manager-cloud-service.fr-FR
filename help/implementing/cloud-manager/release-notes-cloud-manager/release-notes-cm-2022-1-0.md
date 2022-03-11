@@ -2,13 +2,13 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2022.01.0
 description: Il s’agit des notes de mise à jour de Cloud Manager dans AEM version as a Cloud Service 2022.01.0.
 feature: Release Information
-source-git-commit: 6b0fd14fb2038e09b59fa487427b3202d8f129dc
+exl-id: 2dfdc943-0518-40ea-8712-1dabb97eeaa9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 26%
 
 ---
-
 
 # Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2022.01.0 {#release-notes}
 

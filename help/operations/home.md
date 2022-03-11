@@ -1,12 +1,12 @@
 ---
 title: Opérations Exploitation et maintenance d’Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation sur l’exploitation et la maintenance d’Adobe Experience Manager as a Cloud Service
-landing-page-description: Découvrez les opérations principales d’AEM as a Cloud Service, telles que les tâches d’indexation et de maintenance.
+landing-page-description: Découvrez les opérations en arrière-plan d’AEM as a Cloud Service, telles que les tâches d’indexation et de maintenance.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '372'
+ht-degree: 100%
 
 ---
 

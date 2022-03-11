@@ -1,13 +1,13 @@
 ---
 title: Créer un site à partir d’un modèle
 description: Découvrez comment créer rapidement un site AEM à l’aide d’un modèle de site.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 1%
 
 ---
-
 
 # Créer un site à partir d’un modèle {#create-site-from-template}
 

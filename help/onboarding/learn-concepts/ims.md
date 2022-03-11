@@ -3,7 +3,7 @@ title: Système Adobe Identity Management
 description: Consultez cette page pour en savoir plus sur le système Identity Management.
 exl-id: 3fd51410-7ad6-486f-bc3c-ef3d5473c19d
 source-git-commit: 4a5967f682d122d20528b1d904590fb82f438fa7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 100%
 

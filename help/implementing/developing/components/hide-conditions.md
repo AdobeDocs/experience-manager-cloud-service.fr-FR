@@ -3,7 +3,7 @@ title: Utilisation de conditions de masquage
 description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 100%
 
@@ -49,7 +49,7 @@ Lors de la définition de votre expression de masquage, veuillez tenir compte de
 
 ## Exemple {#example}
 
-Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Par exemple, considérez le [composant principal Liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=fr) tel qu’il est implémenté dans le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Par exemple, considérez le [composant principal Liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) tel qu’il est implémenté dans le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 [En utilisant l’éditeur de modèles](/help/sites-cloud/authoring/features/templates.md), l’auteur de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition de l’auteur de pages. Il est ainsi possible d’activer ou de désactiver des options permettant de définir une liste comme étant statique, une liste de pages enfants, une liste de pages balisées, etc.
 

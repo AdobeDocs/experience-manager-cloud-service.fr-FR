@@ -3,7 +3,7 @@ title: Introduction – Listes autorisées IP dans Cloud Manager
 description: Introduction – Listes autorisées IP dans Cloud Manager
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
 source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 100%
 

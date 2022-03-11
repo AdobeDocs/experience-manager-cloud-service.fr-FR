@@ -4,8 +4,8 @@ description: Apprenez les concepts du découplage, en quoi ils s’appliquent à
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '727'
+ht-degree: 100%
 
 ---
 

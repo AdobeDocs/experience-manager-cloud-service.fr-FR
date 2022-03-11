@@ -3,7 +3,7 @@ title: Votre boîte de réception
 description: Gestion de vos tâches à l’aide de la boîte de réception
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 100%
 
@@ -133,6 +133,7 @@ Vous pouvez définir des paramètres d’affichage pour les deux modes (Liste et
    >[!NOTE]
    >
    >Pour plus d’informations, voir :
+   >
    >* Éléments de workflow – [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
 
@@ -190,6 +191,7 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-cloud/authori
    >[!NOTE]
    >
    >Seules les tâches créées à l’aide de l’option **Créer** de la **boîte de réception** peuvent être utilisées pour créer un projet.
+   >
    >Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
 
 1. Sélectionnez **Créer un projet** depuis la barre d’outils pour ouvrir l’assistant.
@@ -206,7 +208,6 @@ Pour certaines tâches, vous pouvez créer un [projet](/help/sites-cloud/authori
    * **Avancé**
 
       * **Nom**
-
    >[!NOTE]
    >
    >Pour plus d’informations, voir [Création d’un projet](/help/sites-cloud/authoring/projects/managing.md#creating-a-project).

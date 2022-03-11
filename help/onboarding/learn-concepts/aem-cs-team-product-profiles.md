@@ -3,7 +3,7 @@ title: Équipe et profils de produit AEM as a Cloud Service
 description: Consultez cette page pour en savoir plus sur l’équipe les profils de produit AEM as a Cloud Service.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 100%
 

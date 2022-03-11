@@ -21,7 +21,6 @@ Grâce à une configuration simple, un auteur de contenu peut désormais activer
 >* de savoir comment sont organisés votre site et sa structure de contenu ;
 >* la compréhension des stratégies de mise en cache ;
 >* l’assistance de votre équipe de développement.
-
 >
 >Avant d’utiliser cette fonctionnalité, il est recommandé de discuter de cette question avec votre équipe de développement afin de définir le meilleur moyen de l’exploiter au sein de votre projet.
 

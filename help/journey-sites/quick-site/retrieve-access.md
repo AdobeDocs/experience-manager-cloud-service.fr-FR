@@ -1,13 +1,13 @@
 ---
 title: Récupération des informations d’accès au référentiel Git
 description: Découvrez comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel git.
-source-git-commit: 5e1a89743c5ac36635a139ada690849507813c30
+exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 5%
 
 ---
-
 
 # Récupération des informations d’accès au référentiel Git {#retrieve-access}
 
@@ -74,7 +74,7 @@ L’administrateur de Cloud Manager vous a intégré en tant qu’utilisateur de
 
 Si vous n’avez pas reçu cet e-mail, contactez l’administrateur de Cloud Manager.
 
-## Accès à Cloud Manager {#access-cloud-manager}
+## L’accès à Cloud Manager {#access-cloud-manager}
 
 1. Connectez-vous à Adobe Experience Cloud à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) ou cliquez sur le lien proposé dans l&#39;email de bienvenue.
 

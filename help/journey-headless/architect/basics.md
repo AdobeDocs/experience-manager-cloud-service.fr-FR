@@ -4,8 +4,8 @@ description: Découvrez les bases de la modélisation du contenu pour votre CMS 
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '905'
+ht-degree: 100%
 
 ---
 

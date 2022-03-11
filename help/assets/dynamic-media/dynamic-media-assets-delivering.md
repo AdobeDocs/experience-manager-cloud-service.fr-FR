@@ -2,7 +2,7 @@
 title: Diffusion de ressources Dynamic Media
 description: Avec Dynamic Media, vous disposez de plusieurs options pour diffuser vos ressources Dynamic Media (vidéo et images) sur votre site web.
 source-git-commit: 6933f053e11320d8201922723879983084c52209
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '108'
 ht-degree: 100%
 

@@ -1,15 +1,15 @@
 ---
-title: Conseils et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu
-description: Conseils et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
+description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
+exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1503'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-
-# Conseils et bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu {#guidelines}
+# Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu {#guidelines}
 
 ## Conseils et bonnes pratiques {#best-practices}
 
@@ -17,7 +17,7 @@ ht-degree: 88%
 >id="aemcloud_ctt_guidelines"
 >title="Conseils et bonnes pratiques"
 >abstract="Consultez les instructions et les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu, notamment les tâches de nettoyage des révisions, les considérations relatives à l’espace disque, etc."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#pre-reqs" text="Points importants concernant l’utilisation de l’outil de transfert de contenu"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#pre-reqs" text="Points importants concernant l’utilisation de l’outil de transfert de contenu"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#important-considerations" text="Points importants concernant l’utilisation de l’outil de mappage des utilisateurs"
 
 Consultez la section ci-dessous pour accéder aux conseils et connaître les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu :
@@ -40,7 +40,7 @@ Ainsi, pour un volume de stockage de segments de 20 Go, l’espace disque dispo
 
 * Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les compléments de contenu. Étant donné qu’un maximum de dix jeux de migration peuvent être créés et conservés en même temps pendant l’activité de transfert de contenu, il est recommandé de séparer le référentiel de contenu de façon appropriée pour vous assurer de ne pas être à court de jeux de migration.
 
-## Points importants avant l’utilisation de l’outil de transfert de contenu {#important-considerations}
+## Points importants avant d’utiliser l’outil de transfert de contenu {#important-considerations}
 
 Consultez la section ci-dessous afin de comprendre les points importants à prendre en compte pour l’exécution de l’outil de transfert de contenu :
 
@@ -60,7 +60,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Le jeton d’accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d’accès a expiré, vous ne pourrez pas vous connecter à l’instance de Cloud Service et vous devrez récupérer le nouveau jeton d’accès. L’icône d’état associée à un jeu de migration existant prend l’aspect d’un nuage rouge et affiche un message si vous le survolez.
 
-* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Voir [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#running-ctt-on-publish) pour plus d’informations.
+* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour plus d’informations, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#running-ctt-on-publish).
 
 * Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’intégralité de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants avec leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#cloud-migration).
 
@@ -80,8 +80,8 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Si vous avez l’intention d’effectuer des compléments, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
-* Si vous envisagez d’inclure des versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge de version en raison d’une limitation actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
+* Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris les instructions, les bonnes pratiques et les points importants à prendre en compte pour l’utilisation de l’outil de transfert de contenu, vous êtes prêt à installer et à utiliser l’outil, en commençant par la création d’un jeu de migration. Voir [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) pour en savoir plus.
+Une fois que vous avez lu les instructions, les bonnes pratiques et les points importants à prendre en compte pour l’utilisation de l’outil de transfert de contenu, vous êtes prêt à installer et à utiliser l’outil, en commençant par la création d’un jeu de migration. Consultez [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr) pour en savoir plus.

@@ -3,7 +3,7 @@ title: Types de nœuds AEM
 description: AEM est architecturé autour de Sling et utilise un référentiel JCR avec des types de nœuds proposés par les deux plateformes. Cependant, AEM fournit également un éventail de types de nœuds personnalisés.
 exl-id: 82cc28ca-37e2-4ca3-b3e4-cc03bbc5bdf5
 source-git-commit: 08559417c8047c592f2db54321afe68836b75bd1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 100%
 

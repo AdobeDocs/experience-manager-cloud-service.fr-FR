@@ -1,14 +1,14 @@
 ---
-title: Configuration des pipelines de production
+title: Configurer des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
-source-git-commit: 536740f8bb5e54a3a831a22f4e6d237863aea324
+exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1367'
-ht-degree: 8%
+ht-degree: 31%
 
 ---
-
 
 # Configuration d’un pipeline de production {#configure-production-pipeline}
 
@@ -26,7 +26,7 @@ Avant de commencer le déploiement du code, vous devez configurer les paramètre
 >
 >Vous pouvez [modification des paramètres du pipeline](managing-pipelines.md) après la configuration initiale.
 
-## Ajout d’un nouveau pipeline de production {#adding-production-pipeline}
+## Ajouter un nouveau pipeline de production {#adding-production-pipeline}
 
 Une fois que vous avez configuré votre programme et que vous disposez d’au moins un environnement utilisant la variable [!UICONTROL Cloud Manager] Dans l’interface utilisateur, vous êtes prêt à ajouter un pipeline de production en procédant comme suit.
 
@@ -44,14 +44,14 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
    **Déclencheur de déploiement** - Vous disposez des options suivantes lors de la définition des déclencheurs de déploiement pour démarrer le pipeline.
 
-   * **Manuel** - Utilisez cette option pour démarrer manuellement le pipeline.
-   * **Lors des modifications Git** - Cette option démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
+   * **Manuel** - utilisez cette option pour démarrer manuellement le pipeline.
+   * **Lors des modifications Git** - cette option démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
 
-   **Comportement des échecs de mesure importants** - Lors de la configuration ou de la modification du pipeline **Responsable de déploiement** a la possibilité de définir le comportement du pipeline en cas d’échec important dans l’un des points de contrôle qualité. Les options disponibles sont les suivantes :
+   **Comportement en cas d’échecs de mesure importants****- lors de la configuration ou de la modification du pipeline, le responsable de déploiement peut définir le comportement du pipeline lorsqu&#39;un échec important est rencontré à l’un des points de contrôle qualité.** Les options disponibles sont les suivantes :
 
-   * **Demander à chaque fois** - Il s’agit du paramètre par défaut qui nécessite une intervention manuelle en cas d’échec important.
-   * **Échec immédiat** - Si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Cette option émule essentiellement un utilisateur rejetant manuellement chaque échec.
-   * **Continuer immédiatement** - Si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Cette option émule essentiellement la validation manuelle de l’utilisateur à chaque échec.
+   * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
+   * **Défaillance immédiate** : si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
+   * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s&#39;agit essentiellement d&#39;émuler un utilisateur approuvant manuellement chaque échec.
 
    ![Configuration du pipeline de production](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 
@@ -71,13 +71,13 @@ Pour terminer la configuration du pipeline de production de code frontal, procé
 
 1. Sur le **Code source** , vous devez définir les options suivantes.
 
-   * **Référentiel** - Cette option définit à partir de quel référentiel git le pipeline doit récupérer le code.
+   * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
    >[!TIP]
    > 
    >Voir le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** - Cette option définit à partir de quelle branche du pipeline sélectionné doit récupérer le code.
-   * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
+   * **Branche Git** - cette option définit à partir de quelle branche sélectionnée le pipeline doit récupérer le code.
+   * **Emplacement du code** - cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
    * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.
 
    ![Code frontal](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-frontend.png)
@@ -98,13 +98,13 @@ Pour terminer la configuration du pipeline de production de code de pile complè
 
 1. Sur le **Code source** , vous devez définir les options suivantes.
 
-   * **Référentiel** - Cette option définit à partir de quel référentiel git le pipeline doit récupérer le code.
+   * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
    >[!TIP]
    > 
    >Voir le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** - Cette option définit à partir de quelle branche du pipeline sélectionné doit récupérer le code.
-   * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
+   * **Branche Git** - cette option définit à partir de quelle branche sélectionnée le pipeline doit récupérer le code.
+   * **Emplacement du code** - cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
    * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.
    * **Planifié** : cette option permet à l’utilisateur d’activer le déploiement en production planifié.
 
@@ -144,13 +144,13 @@ Pour terminer la configuration du pipeline de production de code de pile complè
 
 1. Sur le **Code source** , vous devez définir les options suivantes.
 
-   * **Référentiel** - Cette option définit à partir de quel référentiel git le pipeline doit récupérer le code.
+   * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
    >[!TIP]
    > 
    >Voir le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** - Cette option définit à partir de quelle branche du pipeline sélectionné doit récupérer le code.
-   * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
+   * **Branche Git** - cette option définit à partir de quelle branche sélectionnée le pipeline doit récupérer le code.
+   * **Emplacement du code** - cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
       * Pour les pipelines de configuration de niveau web, il s’agit généralement du chemin contenant `conf.d`, `conf.dispatcher.d`, et `opt-in` répertoires.
       * Par exemple, si la structure du projet a été générée à partir de la variable [AEM Archétype de projet,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) le chemin serait `/dispatcher/src`.
    * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.

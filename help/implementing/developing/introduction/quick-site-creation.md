@@ -1,13 +1,13 @@
 ---
 title: Création rapide d’un site et personnalisation front-end
 description: Découvrez comment l’outil Création rapide de site utilise des modèles, des thèmes et le pipeline frontal du site pour permettre le déploiement rapide de nouveaux sites et le développement front-end découplé.
-source-git-commit: 9a3e9e959f0cfb6ee5426190e2afd6894e76f964
+exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
 
 ---
-
 
 # Création rapide d’un site et personnalisation front-end {#quick-site-creation}
 

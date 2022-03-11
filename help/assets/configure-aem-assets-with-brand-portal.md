@@ -8,7 +8,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: f1c95dd27857085a0a95a896efd2f66af346b75a
 workflow-type: tm+mt
 source-wordcount: '2449'
-ht-degree: 64%
+ht-degree: 66%
 
 ---
 
@@ -25,7 +25,7 @@ L’utilisateur de Cloud Manager active Brand Portal pour une instance Experienc
 Vous avez besoin des éléments suivants pour activer Brand Portal sur vos ressources Experience Manager en tant que [!DNL Cloud Service] instance :
 
 * Ressources Experience Manager en cours d’exécution en tant que [!DNL Cloud Service] instance.
-* Utilisateur ayant accès à Cloud Manager, affecté aux Profils du produit Cloud Manager. Consultez [Accès à Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html#accessing-cloud-manager) pour plus d’informations.
+* Utilisateur ayant accès à Cloud Manager, affecté aux Profils du produit Cloud Manager. Consultez [Accès à Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=fr#accessing-cloud-manager) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Vous pouvez activer Brand Portal lors de la création des environnements pour vo
 
 * [Ajout d’utilisateurs et de rôles dans Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr)
 
-* [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html#adding-environments)
+* [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#adding-environments)
 
 
 **Connectez-vous à votre client Brand Portal** :
@@ -179,7 +179,7 @@ Outre le workflow d’automatisation pour activer Brand Portal sur Experience Ma
 
 >[!NOTE]
 >
->Contactez le service clientèle si vous rencontrez un problème lors de l’activation de votre client Brand Portal.
+>Contactez le service clientèle si vous rencontrez un problème lors de l’activation de votre client Brand Portal.
 
 ## Configuration manuelle à l’aide de la Developer Console Adobe {#manual-configuration}
 

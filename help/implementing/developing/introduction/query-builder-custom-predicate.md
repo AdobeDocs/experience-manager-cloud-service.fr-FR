@@ -3,7 +3,7 @@ title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query B
 description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '667'
 ht-degree: 100%
 
@@ -134,7 +134,7 @@ Le projet `cq-search` contient la classe abstraite `AbstractPredicateEvaluator`.
 >La procédure suivante explique comment créer une expression `Xpath` afin de filtrer des données. Une autre option consisterait à mettre en œuvre la méthode `includes` qui sélectionne les données sur la base de la ligne. Pour plus d’informations, voir la [documentation Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html).
 
 1. Créez une classe Java qui étend `com.day.cq.search.eval.AbstractPredicateEvaluator`.
-1. Annotez votre classe avec un `@Component`, par exemple des affichages de fragment de code au [format diff unifié](https://fr.wikipedia.org/wiki/Diff#Unified_format).
+1. Annotez votre classe avec un `@Component`, par exemple des affichages de fragment de code au [format diff unifié](https://en.wikipedia.org/wiki/Diff#Unified_format).
 
    ```text
    @@ -19,8 +19,11 @@

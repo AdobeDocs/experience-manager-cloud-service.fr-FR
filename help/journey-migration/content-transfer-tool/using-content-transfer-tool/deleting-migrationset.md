@@ -1,13 +1,13 @@
 ---
 title: Suppression d’un jeu de migration dans l’outil de transfert de contenu
 description: Suppression d’un jeu de migration dans l’outil de transfert de contenu
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '81'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
-
 
 # Suppression d’un jeu de migration {#delete-migration-set}
 
@@ -17,7 +17,7 @@ Vous pouvez supprimer le jeu de migration de la page *Overview.*
 
 Suivez les étapes ci-dessous :
 
-1. Accédez au **Transfert de contenu** et sélectionnez le jeu de migration à supprimer, puis cliquez sur **Supprimer** dans la barre d’actions.
+1. Accédez à l’assistant de **transfert de contenu** et sélectionnez le jeu de migration à supprimer, puis cliquez sur **Supprimer** dans la barre d’actions.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 

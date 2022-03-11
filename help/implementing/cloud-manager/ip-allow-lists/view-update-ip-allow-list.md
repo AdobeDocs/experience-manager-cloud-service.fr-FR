@@ -3,13 +3,13 @@ title: Affichage et mise à jour – Listes autorisées IP dans Cloud Manager
 description: Affichage et mise à jour – Listes autorisées IP dans Cloud Manager
 exl-id: 9f9aebcd-b6d0-497a-b262-0a24b4938b45
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 100%
 
 ---
 
-# Affichage et mise à jour d’une liste autorisée IP {#view-update}
+# Affichage et mise à jour d’une liste d’adresses IP autorisées {#view-update}
 
 Vous pouvez afficher et mettre à jour des listes autorisées IP dans les cas suivants :
 

@@ -4,8 +4,8 @@ description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessib
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '14050'
+ht-degree: 100%
 
 ---
 

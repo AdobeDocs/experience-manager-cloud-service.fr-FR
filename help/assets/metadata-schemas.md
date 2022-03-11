@@ -2,12 +2,12 @@
 title: Les schémas de métadonnées définissent la disposition de la page des propriétés de métadonnées.
 description: Le schéma de métadonnées définit la mise en page de la page de propriétés, ainsi que les propriétés de métadonnées affichées pour les ressources. Apprenez à créer un schéma de métadonnées personnalisé, à le modifier et à l’appliquer aux ressources.
 contentOwner: AG
-feature: Métadonnées
+feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
 source-git-commit: 7ea0e6c2d277199fc5216aab70e587bd23ac6baa
-workflow-type: ht
-source-wordcount: '2593'
+workflow-type: tm+mt
+source-wordcount: '2592'
 ht-degree: 100%
 
 ---

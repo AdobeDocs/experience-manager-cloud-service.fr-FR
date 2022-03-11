@@ -5,7 +5,7 @@ exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
 workflow-type: tm+mt
 source-wordcount: '1966'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Les propriétés sont réparties sur plusieurs onglets.
       * Vous pouvez faire votre choix parmi les balises existantes dans la liste déroulante.
       * Un « x » apparaît lorsque vous passez le pointeur de la souris sur une entrée de balise dans la zone de sélection ; vous pouvez vous en servir pour supprimer cette balise de la page.
       * Pour plus d’informations sur les balises, voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md).
-   * **Masquer dans la navigation** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
+   * **Masquer dans la navigation** - Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
 
 * **Valorisation de marque**
 
@@ -60,7 +60,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    > Voir [Heures d’activation et de désactivation – Configuration du déclenchement](/help/operations/replication.md#on-and-off-times-trigger-configuration) pour en savoir plus sur la configuration de la réplication automatique associée.
 
    >[!NOTE]
-   >Si la variable **Heure d’activation** ou **Heure de désactivation** est dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
+   >Si l’**Heure d’activation** ou l’**Heure de désactivation** est dans le passé et que la réplication automatique est configurée, l’action appropriée est déclenchée immédiatement.
 
    * **Heure d’activation** – Date et heure auxquelles la page publiée sera rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
@@ -101,9 +101,9 @@ Les propriétés sont réparties sur plusieurs onglets.
    * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée.
    * **Conception** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
    * **Alias** – Indique un alias à utiliser avec cette page.
-      * Par exemple, si vous définissez un alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, cette page est également accessible via `/content/wknd/us/en/magazine/private`
-      * La création d&#39;un alias permet de définir la variable `sling:alias` sur le noeud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
-      * Les pages accessibles par alias dans l&#39;éditeur ne peuvent pas être publiées. [Options de publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles l’accès se fait à partir de leur chemin d’accès réel.
+      * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
+      * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
+      * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
 
    <!--
   >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
@@ -151,7 +151,7 @@ Configuration de la miniature de la page
    * **Variation de fragment d’expérience préférée**
       * Définit la variation de fragment d’expérience utilisée pour générer les métadonnées de la page.
 
-### Cloud Services {#cloud-services}
+### Services cloud {#cloud-services}
 
 * **Configurations du service cloud** – Définition des propriétés des services cloud
 

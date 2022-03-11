@@ -3,7 +3,7 @@ title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
 
@@ -159,7 +159,6 @@ Pour modifier votre page :
    * [Copiez (et collez)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
-
    >[!NOTE]
    >
    >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
@@ -254,7 +253,6 @@ Ces actions peuvent être déclenchées en procédant comme suit :
    * Supprimer :
 
       * Vous serez alors invité à confirmer l’opération.
-
    >[!NOTE]
    >
    >La suppression n’est pas proposée comme action rapide.

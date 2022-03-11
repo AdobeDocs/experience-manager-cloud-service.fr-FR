@@ -5,7 +5,7 @@ exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 65c20293f2b5481d9c7fdd050af4bee5f64a33e6
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 90%
 
 Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé. Ces fragments sont ensuite stockés dans des dossiers de ressources.
 
-## Qu’est-ce qu’un dossier de ressources ?  {#what-is-an-assets-folder}
+##  Qu’est-ce qu’un dossier de ressources ? {#what-is-an-assets-folder}
 
 [Maintenant que vous avez créé des modèles de fragments de contenu](create-content-model.md) qui définissent la structure souhaitée pour vos futurs fragments de contenu, vous êtes probablement enthousiaste à l’idée d’en créer.
 

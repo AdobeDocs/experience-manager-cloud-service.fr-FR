@@ -3,7 +3,7 @@ title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3296'
 ht-degree: 100%
 
@@ -488,7 +488,6 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
    * Définir la propriété de statut sur le nœud `jcr:content`.
 
       * Par exemple, sous :
-
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Définissez la propriété :
@@ -501,7 +500,6 @@ Les stratégies de page vous permettent de définir la [stratégie de contenu](#
 
    * [Définissez le ou les chemins d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
-
       `cq:allowedTemplates`
 Sur le 
 nœud `jcr:content` de la branche requise.

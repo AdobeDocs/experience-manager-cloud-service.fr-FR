@@ -2,13 +2,13 @@
 title: Configuration du partage des ressources cross-origin (CORS) avec AEM sans affichage
 description: Le partage des ressources cross-origin (CORS) de Adobe Experience Manager permet aux applications web sans interface utilisateur d’effectuer des appels côté client vers AEM. Une configuration CORS est nécessaire pour activer l’accès au point d’entrée GraphQL.
 feature: GraphQL API
-source-git-commit: 0cc131209f497241949f8da6e8144dfcaffe7e6e
+exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 28%
 
 ---
-
 
 # Configuration du partage des ressources cross-origin (CORS)
 
@@ -58,5 +58,3 @@ Par exemple, pour accorder l’accès au point d’entrée GraphQL `/content/cq:
 ```
 
 Si vous avez configuré un chemin d’accès Vanity pour le point d’entrée, vous pouvez également l’utiliser dans `allowedpaths`.
-
-

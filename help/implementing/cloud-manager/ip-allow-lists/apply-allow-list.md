@@ -3,7 +3,7 @@ title: 'Application d’une liste d’adresses IP autorisées '
 description: Application d’une liste d’adresses IP autorisées
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 100%
 

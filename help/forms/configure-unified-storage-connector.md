@@ -1,13 +1,13 @@
 ---
 title: Comment configurer le connecteur de stockage unifié pour AEM Forms ?
 description: Découvrez comment gérer le connecteur de stockage unifié pour AEM Forms. Utilisez le connecteur de stockage unifié pour connecter AEM Forms à des stockages de données externes.
-source-git-commit: da3cef0a0a28dd16e627a157f02bbe6a84f59da5
+exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 86%
 
 ---
-
 
 # Gestion du connecteur de stockage unifié pour AEM Forms {#manage-unified-storage-connector}
 

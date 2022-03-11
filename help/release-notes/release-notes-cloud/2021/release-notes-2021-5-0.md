@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1355'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
 ## [!DNL Adobe Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
+### Nouveautés de [!DNL Forms] {#what-is-new-forms}
 
 * **Aide contextuelle** : ajout d’une aide contextuelle pour l’éditeur de formulaires adaptatifs, l’éditeur de modèles et l’éditeur de thèmes afin d’aider les auteurs à mieux comprendre les différentes fonctionnalités des éditeurs.
 * **Messages d’erreur dans le navigateur Propriétés** : ajout de messages d’erreur pour chaque propriété dans le navigateur Propriétés des formulaires adaptatifs. Ces messages aident à comprendre les valeurs autorisées pour un champ.
@@ -88,7 +88,7 @@ Output as a Cloud service : le service Output vous permet de combiner des modè
 
 Vous pouvez écrire à l’adresse formscsbeta@adobe.com pour vous inscrire au programme bêta.
 
-### Correctifs d’[!DNL Forms]  {#forms-bugs-fixed}
+### Correctifs de [!DNL Forms] {#forms-bugs-fixed}
 
 * Dans une étape Affecter une tâche des workflows AEM Forms, lorsque vous remplacez l’icône par défaut des boutons d’action par une icône corail, le workflow cesse de fonctionner et consigne une exception. Le workflow fonctionne comme prévu lorsque des icônes par défaut sont utilisées.
 * Dans le calque de mise en page, lorsque vous modifiez le nombre de colonnes, ouvrez le calque d’édition et faites glisser certains composants dans un panneau, les zones bleues carrées apparaissent dans la zone de contenu de l’éditeur de formulaires adaptatifs et l’éditeur ne répond plus.

@@ -3,13 +3,13 @@ title: Guide de référence pour l’API JavaScript ContextHub
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '4621'
 ht-degree: 100%
 
 ---
 
-# Guide de référence pour l’API JavaScript ContextHub {#contexthub-javascript-api-reference}
+# Guide de référence pour l’API JavaScript ContextHub  {#contexthub-javascript-api-reference}
 
 L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant [ContextHub a été ajouté à la page](adding-contexthub.md).
 
@@ -201,7 +201,7 @@ Déclenche l’événement `ready` pour ce magasin. Cette fonction ne possède a
 
 Supprime toutes les données du magasin. La fonction ne possède aucun paramètre et aucune valeur de retour.
 
-#### getItem(key) {#getitem-key}
+#### getItem(key)  {#getitem-key}
 
 Renvoie la valeur associée à une clé.
 
@@ -248,7 +248,7 @@ Récupère l’arbre de données du magasin. Vous pouvez éventuellement inclure
 
 Un objet qui représente l’arbre de données. Les clés sont les noms des propriétés de l’objet.
 
-#### init(name, config) {#init-name-config}
+#### init(name, config)  {#init-name-config}
 
 Initialise le magasin.
 
@@ -280,7 +280,7 @@ Une valeur booléenne :
 
 Suspend le mode Eventing pour le magasin afin qu’aucun événement ne soit déclenché. Cette fonction ne possède aucun paramètre et ne renvoie aucune valeur.
 
-#### removeItem(key, options) {#removeitem-key-options}
+#### removeItem(key, options)  {#removeitem-key-options}
 
 Supprime une paire clé/valeur du magasin.
 
@@ -343,7 +343,7 @@ Valeur `string` représentant la clé référencée. Si aucune référence n’e
 
 Rétablit le mode Eventing pour ce magasin afin que les événements soient déclenchés. Cette fonction ne définit aucun paramètre et ne renvoie aucune valeur.
 
-#### setItem(key, value, options) {#setitem-key-value-options}
+#### setItem(key, value, options)  {#setitem-key-value-options}
 
 Ajoute une paire clé/valeur au magasin.
 
@@ -431,7 +431,7 @@ Récupère l’URL du service JSONP.
 
 Une valeur `string` représentant l’URL du service.
 
-#### init(name, config) {#init-name-config-1}
+#### init(name, config)  {#init-name-config-1}
 
 Initialise l’objet `ContextHub.Store.JSONPStore`.
 
@@ -563,7 +563,7 @@ Un objet de cookies. Les propriétés d’objet sont les clés des cookies et le
 ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### getItem(key) {#getitem-key-1}
+#### getItem(key)  {#getitem-key-1}
 
 Renvoie une valeur de cookie.
 
@@ -603,7 +603,7 @@ Un tableau de chaînes où chaque chaîne est la clé d’un cookie qui répond 
 ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### removeItem(key, options) {#removeitem-key-options-1}
+#### removeItem(key, options)  {#removeitem-key-options-1}
 
 Supprime un cookie. Pour supprimer le cookie, la valeur est définie sur une chaîne vide et la date d’expiration est définie sur le jour précédant la date actuelle.
 
@@ -622,7 +622,7 @@ Cette fonction ne retourne pas de valeur.
 ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 ```
 
-#### setItem(key, value, options) {#setitem-key-value-options-1}
+#### setItem(key, value, options)  {#setitem-key-value-options-1}
 
 Crée un cookie de la clé et de la valeur en question et ajoute le cookie au document en cours. En option, vous pouvez spécifier des options qui configurent les attributs du cookie.
 

@@ -2,8 +2,9 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.7.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.7.0
 feature: Release Information
-source-git-commit: 3542d5a6b89b8673444786e3f9062dae0d315946
-workflow-type: ht
+exl-id: 7ef738a5-4657-482d-848b-e95e4fb816f9
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 100%
 
@@ -52,4 +53,3 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.7.0 es
 ### Problèmes connus {#known-issues}
 
 Les clients basculant sur les JDK Azul doivent savoir que toutes les applications existantes ne seront pas compilées sans erreur sur le JDK Azul. Il est vivement recommandé d’exécuter un test local avant de basculer.
-

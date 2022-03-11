@@ -1,10 +1,11 @@
 ---
 title: Gestion des expériences de catalogue de produits étape par étape
 description: Découvrez comment gérer des expériences de catalogue de produits étape par étape.
-source-git-commit: a98d525512dcba790d002d6a4042558962c36c97
+exl-id: 1db18818-b8e0-4127-8a65-dc3dea1f2927
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '494'
-ht-degree: 2%
+ht-degree: 7%
 
 ---
 
@@ -63,7 +64,7 @@ Maintenant que vous avez terminé cette partie du parcours, vous devez :
 * comprendre les concepts du catalogue de produits étape par étape et du contenu avec Launches ;
 * être en mesure d’accéder aux données du catalogue de produits étape par le biais du cockpit du produit et de l’éditeur ;
 
-Vous êtes maintenant prêt à gérer [expériences produit](product-experience-management.md). Toutefois, AEM Content et Commerce disposent de nombreuses options supplémentaires. Extrayez certaines des ressources supplémentaires disponibles dans le [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités que vous avez vues dans ce parcours.
+Vous êtes maintenant prêt à gérer [expériences produit](product-experience-management.md). Toutefois, AEM Content et Commerce disposent de nombreuses options supplémentaires. Consultez certaines des ressources supplémentaires disponibles dans la [Section Ressources supplémentaires](#additional-resources) pour en savoir plus sur les fonctionnalités rencontrées dans ce parcours.
 
 ## Ressources supplémentaires {#additional-resources}
 

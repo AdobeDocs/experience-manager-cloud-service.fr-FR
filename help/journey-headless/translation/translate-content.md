@@ -4,8 +4,8 @@ description: Utilisez le connecteur et les règles de traduction pour traduire v
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2174'
+ht-degree: 100%
 
 ---
 

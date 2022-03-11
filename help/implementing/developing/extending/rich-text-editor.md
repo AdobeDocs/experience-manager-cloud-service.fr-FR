@@ -4,7 +4,7 @@ description: Configurez l’éditeur de texte enrichi pour créer du contenu dan
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1964'
 ht-degree: 100%
 
@@ -226,7 +226,7 @@ Les options disponibles dans l’éditeur de texte enrichi sont transmises depui
 * Si un élément a été supprimé ou n’est pas activé par la configuration d’interface utilisateur de l’éditeur de texte enrichi, la stratégie de contenu ne peut pas le configurer.
 * Un auteur n’a accès à une fonctionnalité de ce type que si elle est mise à sa disposition par les configurations de l’interface utilisateur et les stratégies de contenu.
 
-Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor).
+Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
 
 ## Personnalisation de l’association entre les commandes et les icônes de la barre d’outils {#iconstoolbar}
 

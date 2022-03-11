@@ -3,13 +3,13 @@ title: 'Suppression d’une liste autorisée IP '
 description: Suppression d’une liste autorisée IP
 exl-id: 34414915-0078-4acb-94df-b84043ce63d8
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 100%
 
 ---
 
-# Suppression d’une liste d’adresses IP autorisées {#delete-allow-list}
+# Suppression d’une liste autorisée d’adresses IP {#delete-allow-list}
 
 Pour supprimer une liste autorisée IP, procédez comme suit :
 

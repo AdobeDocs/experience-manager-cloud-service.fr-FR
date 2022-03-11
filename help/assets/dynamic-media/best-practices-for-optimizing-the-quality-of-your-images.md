@@ -2,12 +2,12 @@
 title: Bonnes pratiques relatives à l’optimisation de la qualité des images
 description: Découvrez les bonnes pratiques qui vous permettent d’optimiser la qualité de vos ressources d’images à l’aide de Dynamic Media.
 contentOwner: Rick Brough
-feature: Gestion des ressources
+feature: Asset Management
 role: User
 exl-id: 2efc4a27-01d7-427f-9701-393497314402
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
-workflow-type: ht
-source-wordcount: '1480'
+workflow-type: tm+mt
+source-wordcount: '1478'
 ht-degree: 100%
 
 ---
@@ -67,7 +67,7 @@ Il existe deux méthodes d’accentuation des images que vous pouvez utiliser :
 
       * L’article technique [Bonnes pratiques concernant la qualité d’image et l’accentuation de la netteté avec Adobe Dynamic Media Classic](/help/assets/dynamic-media/assets/sharpening_images.pdf) s’applique également à Experience Manager.
 
-      * Regarder la vidéo [Utilisation de l’accentuation d’image avec Experience Manager – Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html?lang=fr#dynamic-media).
+      * Regarder la vidéo [Utilisation de l’accentuation d’image avec Experience Manager – Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/dynamic-media-image-sharpening-feature-video-use.html#dynamic-media).
 
       * Experience Manager permet également de contrôler un quatrième paramètre : monochrome (0,1). Ce paramètre détermine si le masquage flou est appliqué séparément à chaque composante de couleur en utilisant la valeur 0, ou à la luminosité/l’intensité de l’image en utilisant la valeur 1.
 

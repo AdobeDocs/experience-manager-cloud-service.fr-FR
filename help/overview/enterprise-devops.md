@@ -2,7 +2,7 @@
 title: Opérations de développement d’entreprise (DevOps)
 description: Découvrez les processus, les méthodes et les communications requis pour faciliter le déploiement et simplifier la collaboration.
 source-git-commit: 41afc50b2c5feebb086e78ba2065f59e874d37fc
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 100%
 

@@ -5,7 +5,7 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 source-git-commit: 917f5790fb36fd1560ba43c67f8072616b605894
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 100%
 
@@ -77,7 +77,7 @@ Pour créer une configuration de traduction :
 1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Il est souvent basé sur un site particulier, mais peut également être global.
 1. Fournissez les informations suivantes dans les champs requis, puis cliquez ou appuyez sur **Créer** :
    1. Sélectionnez **Type de configuration** dans la liste déroulante.
-   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Cloud Services** ainsi que dans les listes déroulantes de propriétés de la page.
+   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud** ainsi que dans les listes déroulantes de propriétés de la page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
 1. Dans la fenêtre **Modifier la configuration**, configurez les propriétés sur les onglets **Sites** et **Ressources**, puis cliquez ou appuyez sur **Enregistrer et fermer**.
 

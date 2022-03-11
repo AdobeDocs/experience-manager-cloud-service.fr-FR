@@ -3,7 +3,7 @@ title: Ajout d’un module complémentaire Screens à un programme existant dans
 description: Cette page décrit l’ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager pour Screens as a Cloud Service.
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 100%
 

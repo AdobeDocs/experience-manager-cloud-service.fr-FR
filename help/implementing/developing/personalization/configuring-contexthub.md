@@ -3,7 +3,7 @@ title: Configuration de ContextHub
 description: Découvrez comment configurer ContextHub.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsq
 1. Saisissez les valeurs pour les propriétés suivantes :
 
    * Titre du mode d’IU : titre qui identifie le mode d’IU.
-   * Icône de mode : sélecteur de l’[icône de CoralUI](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
+   * Icône de mode : sélecteur de l’[icône de CoralUI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
    * Activé : sélectionnez cette option pour afficher le mode d’IU dans la barre d’outils ContextHub.
 
 1. Cliquez ou appuyez sur Enregistrer.
@@ -132,7 +132,7 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON dans la case Configuration des détails (JSON).
 1. Cliquez ou appuyez sur Enregistrer.
 
-## Exemple : en utilisant un service JSONP {#example-using-a-jsonp-service}
+## Exemple : en utilisant un service JSONP  {#example-using-a-jsonp-service}
 
 Cet exemple illustre comment configurer un magasin et afficher les données dans un module d’IU. Dans cet exemple, le service MD5 du site jsontest.com est utilisé comme source de données pour un magasin. Le service renvoie le code de hachage MD5 d’une chaîne donnée, au format JSON.
 

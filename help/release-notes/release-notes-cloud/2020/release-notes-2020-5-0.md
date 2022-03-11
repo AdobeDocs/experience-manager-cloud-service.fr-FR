@@ -3,7 +3,7 @@ title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service ver
 description: Notes de mise à jour d’Experience Manager version 2020.5.0
 exl-id: 8570d2c3-6d55-4914-94b2-f5d162e0c285
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 100%
 
@@ -40,7 +40,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 * Les performances de la page Activité et de l’API Pipeline Executions List ont été améliorées.
 * Le journal de qualité du code contient désormais des traces de pile complètes pour les exceptions.
 
-### Correctifs {#bug-fixes}
+### Correctifs  {#bug-fixes}
 
 * Une carte erronée s’affichait sur la page d’aperçu lors de l’exécution du pipeline de production.
 * La règle de qualité du code *DontImplementOrExtendProviderTypesPomCheck* pouvait parfois générer une exception de pointeur de valeur NULL.

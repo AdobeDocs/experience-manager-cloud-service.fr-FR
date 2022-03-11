@@ -4,8 +4,8 @@ description: Découvrez comment définir des règles de traduction pour identifi
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '872'
+ht-degree: 100%
 
 ---
 

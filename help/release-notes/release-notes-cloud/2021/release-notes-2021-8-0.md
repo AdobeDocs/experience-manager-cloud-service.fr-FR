@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
-workflow-type: ht
+exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+workflow-type: tm+mt
 source-wordcount: '1032'
 ht-degree: 100%
 
 ---
-
 
 # Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -58,7 +58,7 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouveautés d’[!DNL Forms]  {#what-is-new-forms}
+### Nouveautés de [!DNL Forms] {#what-is-new-forms}
 
 * Le service de conversion automatique des formulaires peut [convertir des formulaires PDF en italien et en portugais](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=fr#language-specific-meta-model) dans les formulaires adaptatifs.
 
@@ -95,7 +95,7 @@ La prochaine version est prévue pour le 9 septembre 2021.
 
 ### Nouveautés {#what-is-new-aug}
 
-* Les clients Cloud Service peuvent désormais afficher les rapports de contrat de niveau de service (SLA) dans Cloud Manager. Cette fonctionnalité sera disponible progressivement au cours des prochains mois.
+* Les clients Cloud Service peuvent désormais afficher les rapports de Contrat de niveau de service (SLA) dans Cloud Manager. Cette fonctionnalité sera disponible progressivement au cours des prochains mois.
 Consultez [Rapport de SLA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/sla-reporting.html?lang=fr) pour en savoir plus.
 
 * Le type et la gravité de l’IndexType et des règles de qualité de `IndexDamAssetLucene` ont été modifiés. Ils sont maintenant tous deux répertoriés en tant que niveau de *sévérité* « bogues de blocage ».

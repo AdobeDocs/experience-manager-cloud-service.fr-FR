@@ -4,8 +4,8 @@ description: Découvrez comment publier votre contenu traduit et mettre à jour 
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1389'
+ht-degree: 100%
 
 ---
 

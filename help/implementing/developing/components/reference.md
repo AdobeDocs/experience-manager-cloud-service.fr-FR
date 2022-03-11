@@ -3,7 +3,7 @@ title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3659'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ Les composants sont essentiels à la création d’une expérience dans AEM. Les
 
 >[!TIP]
 >
->Avant de faire consulter ce document, assurez-vous d’avoir suivi le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et de connaître ainsi les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et l’[Archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)
+>Avant de faire consulter ce document, assurez-vous d’avoir suivi le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) et de connaître ainsi les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) et l’[Archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 
 Comme le tutoriel WKND aborde la plupart des cas d’utilisation, ce document est uniquement conçu comme un supplément à ces ressources. Il présente des détails techniques sur la structuration et la configuration des composants dans AEM et n’est pas conçu comme un guide de prise en main.
 
@@ -37,7 +37,7 @@ Avant de commencer à configurer ou coder votre composant, vous devez vous poser
 
 ### Réutilisation de composants existants {#reusing-components}
 
-Avant de consacrer du temps à la création d’un tout nouveau composant, envisagez de personnaliser ou d’étendre les composants existants. [Les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont une suite de composants prêts à la production, flexibles, robustes et ayant fait l’objet de tests complets.
+Avant de consacrer du temps à la création d’un tout nouveau composant, envisagez de personnaliser ou d’étendre les composants existants. [Les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) sont une suite de composants prêts à la production, flexibles, robustes et ayant fait l’objet de tests complets.
 
 #### Extension des composants principaux {#extending-core-components}
 

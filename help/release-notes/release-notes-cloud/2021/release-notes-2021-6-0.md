@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 100%
 
@@ -137,7 +137,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 Vous pouvez écrire sur [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
 
-### Correctifs d’[!DNL Forms]  {#forms-bugs-fixed}
+### Correctifs de [!DNL Forms] {#forms-bugs-fixed}
 
 * Lorsqu’un champ est validé avant l’envoi des données au service principal via le modèle de données de formulaire (FDM), les validations réussissent, mais le service de modèle de données de formulaire ne parvient pas à appeler après validation.
 * Lorsque vous envoyez un formulaire contenant un champ de chargement HTML standard d’un appareil iOS d’Apple, le contenu du fichier n’est parfois pas envoyé et un fichier de 0 octet est reçu à l’autre bout. Il s’agit d’un problème connu dans Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)

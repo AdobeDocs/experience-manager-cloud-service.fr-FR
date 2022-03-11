@@ -4,8 +4,8 @@ description: En savoir plus sur la définition de métadonnées et de balisage p
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '237'
+ht-degree: 100%
 
 ---
 

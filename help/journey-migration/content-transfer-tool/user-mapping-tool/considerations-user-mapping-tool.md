@@ -1,13 +1,13 @@
 ---
 title: Points importants concernant l’outil de mappage des utilisateurs
 description: Points importants concernant l’outil de mappage des utilisateurs
-source-git-commit: bcbf4e4ba1330bef9f2c8c473419903e40ac0e58
+exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
-
 
 # Points importants concernant l’outil de mappage des utilisateurs {#important-considerations}
 
@@ -28,14 +28,14 @@ Les cas spécifiques suivants seront consignés :
 
 * Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est défini, les utilisateurs déjà transférés sur l’instance de Cloud Service seront supprimés avec l’ensemble du référentiel existant, et un nouveau référentiel sera créé pour intégrer du contenu. Cette opération réinitialise également tous les paramètres, y compris les autorisations sur l’instance Cloud Service cible, et est effective pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur administrateur doit être réajouté au groupe **administrateurs** pour récupérer le jeton d’accès à l’outil de transfert de contenu (CTT).
 
-* Il est recommandé de supprimer tout utilisateur existant de l’instance d’AEM Cloud Service cible avant d’exécuter CTT avec mappage d’utilisateur. Cela permet d’éviter tout conflit entre la migration des utilisateurs de l’instance AEM source vers l’instance AEM cible. Des conflits surviendront lors de l’ingestion si un même utilisateur existe sur l’instance AEM source et l’instance AEM cible.
+* Il est recommandé de supprimer tout utilisateur existant de l’instance d’AEM Cloud Service cible avant d’exécuter CTT avec mappage des utilisateurs. Cela permet d’éviter tout conflit entre la migration des utilisateurs de l’instance AEM source vers l’instance AEM cible. Des conflits surviendront lors de l’ingestion si un même utilisateur existe sur l’instance AEM source et l’instance AEM cible.
 
 * Lorsque des rechargements de contenu sont effectués, si le contenu n’est pas transféré parce qu’il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne seront pas transférés non plus, même si les utilisateurs et les groupes ont changé entre-temps. En effet, les utilisateurs et les groupes font l’objet d’un migration avec le contenu auquel ils sont associés.
 
-* Si l’instance AEM Cloud Service cible comporte un utilisateur avec un nom d’utilisateur différent mais la même adresse électronique que l’un des utilisateurs sur l’instance d’AEM source et que le mappage d’utilisateur est activé, un message d’erreur est écrit dans les journaux et l’utilisateur de l’AEM source n’est pas transféré, car un seul utilisateur avec une adresse électronique donnée est autorisé sur le système cible.
+* Si l’instance AEM Cloud Service cible a un utilisateur avec un nom d’utilisateur différent, mais la même adresse électronique que l’un des utilisateurs de l’instance AEM source, et que le mappage des utilisateurs est activé, un message d’erreur s’inscrit dans les journaux et l’utilisateur AEM source n’est pas transféré, car un seul utilisateur avec une adresse électronique donnée est autorisé sur le système cible.
 
-* Si deux utilisateurs de l’instance d’AEM source ont la même adresse électronique et que le mappage des utilisateurs est activé, un message d’erreur est écrit dans les journaux et l’un des utilisateurs d’AEM source ne sera pas transféré, car un seul utilisateur disposant d’une adresse électronique donnée est autorisé sur le système cible.
+* Si deux utilisateurs de l’instance d’AEM source ont la même adresse électronique et que le mappage des utilisateurs est activé, un message d’erreur s’inscrit dans les journaux et l’un des utilisateurs source d’AEM ne sera pas transféré, car un seul utilisateur disposant d’une adresse électronique donnée est autorisé sur le système cible.
 
 ### Et après ? {#whats-next}
 
-Une fois que vous avez pris connaissance des considérations importantes et des cas exceptionnels, vous êtes prêt à utiliser l’outil. Voir [Utilisation de l’outil de mappage des utilisateurs](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md) pour plus d’informations.
+Une fois que vous aurez pris connaissance des principales considérations et des cas exceptionnels, vous serez prêt à utiliser l’outil. Pour plus d’informations, consultez [Utilisation de l’outil de mappage des utilisateurs](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md).

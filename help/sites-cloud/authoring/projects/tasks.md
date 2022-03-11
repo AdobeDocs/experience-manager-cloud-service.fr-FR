@@ -3,7 +3,7 @@ title: Utilisation de tâches
 description: Les tâches représentent les éléments de travail à effectuer sur le contenu. Elles sont utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '578'
 ht-degree: 100%
 

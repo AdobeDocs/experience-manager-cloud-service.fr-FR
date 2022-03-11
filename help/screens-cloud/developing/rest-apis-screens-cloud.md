@@ -1,7 +1,8 @@
 ---
 title: API REST
 description: Screens as a Cloud Service fournit une API RESTful simple conforme à la spécification Siren. Consultez cette page pour savoir comment parcourir la structure de contenu et envoyer des commandes aux périphériques au sein de l’environnement.
-source-git-commit: fc3c047c6ad08db6e992a2aedc58c9cc1478b99f
+exl-id: 2c52583f-0dd9-4fa3-880b-7671442989ae
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 92%

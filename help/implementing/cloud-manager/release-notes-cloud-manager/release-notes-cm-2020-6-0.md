@@ -1,11 +1,11 @@
 ---
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.6.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2020.6.0
-feature: Informations sur la version
+feature: Release Information
 exl-id: 879a5025-f94f-4549-bf6e-e1cc6b6a7b58
 source-git-commit: 09d5d125840abb6d6cc5443816f3b2fe6602459f
-workflow-type: ht
-source-wordcount: '606'
+workflow-type: tm+mt
+source-wordcount: '604'
 ht-degree: 100%
 
 ---
@@ -26,7 +26,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.6.0 es
 
 * Un utilisateur du programme Sandbox possédant le rôle *Propriétaire d’entreprise* ou *Responsable de déploiement* dans Cloud Manager peut désormais supprimer ses jeux d’environnements de production et d’évaluation via l’interface utilisateur de Cloud Manager. L’option de suppression est désormais disponible à partir de la carte Environnement dans la page **Aperçu du programme**, mais aussi dans la page **Environnements**. La sélection de l’option de suppression dans l’environnement de production ou d’évaluation supprime également l’autre dans le jeu d’environnements.
 
-   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr).
+   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
 
 * Repères sur la landing page pour informer l’utilisateur sur la navigation de base.
 

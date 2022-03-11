@@ -2,10 +2,11 @@
 title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.10.0
 description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.10.0
 feature: Release Information
-source-git-commit: 14042b45b14f2c5575fc96979579bb0aaffc9a17
+exl-id: f8a87b00-52ce-42a6-a955-45cb14703b40
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -18,36 +19,35 @@ Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cl
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager dans AEM 2021.10.0 as a Cloud Service est le 14 octobre 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.10.0 est le 14 octobre 2021.
 
 
 ### Nouveautés {#what-is-new}
 
-* En vue de certaines modifications à venir, les pipelines de déploiement existants seront désormais référencés et étiquetés dans l’interface utilisateur comme **Pile complète** pipelines.
+* En vue de certaines modifications à venir, les pipelines de déploiement existants seront désormais référencés et étiquetés dans l’interface utilisateur en tant que pipelines **Full Stack**.
 
-* La carte Pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. L’utilisateur peut sélectionner Exécuter/Pause/Reprendre directement dans le menu d’actions associé à chaque pipeline.
+* La carte du pipeline a été actualisée afin d’afficher désormais une seule face intégrée qui affiche les pipelines de production et hors production. L’utilisateur peut sélectionner Exécuter/Arrêter/Reprendre directement dans le menu d’actions associé à chaque pipeline.
 
-* Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service via l’interface utilisateur.
+* Un utilisateur disposant du rôle Gestionnaire de déploiement peut désormais supprimer le pipeline de production en libre-service dans l’interface utilisateur.
 
-* Les expériences d’ajout et de modification de pipeline ont été actualisées afin d’utiliser désormais des modèles familiers et modernes.
+* L’ajout et la modification des expériences de pipeline ont été actualisées afin d’utiliser désormais des modèles familiers et modernes.
 
-* Les utilisateurs de Cloud Manager peuvent désormais envoyer leurs commentaires directement depuis l’interface utilisateur via le **Commentaires** en haut à droite de la landing page.
+* Les utilisateurs de Cloud Manager peuvent désormais envoyer leurs commentaires directement depuis l’interface utilisateur dans les **Commentaires** en haut à droite de la page d’entrée.
 
-* Les graphiques SLA annuels peuvent désormais être téléchargés à partir de l’interface utilisateur de Cloud Manager.
+* Les graphiques SLA annuels peuvent désormais être téléchargés à partir de l’interface utilisateur de Cloud Manager.
 
 * Les exécutions de pipeline de qualité de code et hors production utilisent désormais un processus de clonage superficiel plus efficace au cours de l’étape de création, ce qui accélère la création pour les clients disposant de référentiels Git particulièrement volumineux.
 
-* L’assistant Ajouter une Liste autorisée IP informe désormais l’utilisateur si le nombre maximal autorisé de Listes autorisées IP a été atteint.
+* L’assistant Ajouter une liste d’adresses IP autorisées informe désormais l’utilisateur si le nombre maximal de Listes d’adresses IP autorisées a été atteint.
 
-* La documentation de l’API Cloud Manager comprend désormais un laboratoire interactif qui permet aux utilisateurs connectés de tester l’API depuis leur navigateur. Consultez [Laboratoire de l’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
+* La documentation de l’API Cloud Manager comprend désormais un playground interactif qui permet aux utilisateurs connectés de tester l’API depuis leur navigateur. Consultez [Playground de l’API Cloud Manager](https://www.adobe.io/experience-cloud/cloud-manager/reference/playground/) pour plus d’informations.
 
-* L’info-bulle de la carte Programme offre des informations plus détaillées si une option de sélection est désactivée sous Accéder à. Il affiche désormais &quot;Aucun environnement de production n’existe&quot;.
+* L’info-bulle de la carte Programme offre plus d’informations si une option de sélection sous « Accéder à » est désactivée. Elle affiche désormais « Aucun environnement de production n’existe ».
 
 ### Correctifs {#bug-fixes}
 
-* Dans de rares cas, lorsqu’un Adobe restaurait l’environnement d’un client, la restauration était considérée comme terminée avant que l’environnement ne soit complètement opérationnel.
+* Dans de rares cas, lorsqu’un membre d’Adobe restaurait l’environnement d’un client, la restauration était considérée comme terminée avant que l’environnement ne soit complètement opérationnel.
 
-* Certaines demandes internes effectuées lors de la création de l’environnement n’ont pas été retraitées.
+* Certaines demandes internes effectuées lors de la création de l’environnement n’étaient pas retraitées.
 
-* Si l’erreur de déploiement échoue à la suite de la vérification des noms de domaine, le message d’erreur a été corrigé afin de demander au client de contacter son représentant Adobe.
-
+* Si l’erreur de déploiement échouait suite à la vérification du nom de domaine, le message d’erreur a été corrigé afin de demander au client de contacter son représentant Adobe.

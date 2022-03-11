@@ -2,13 +2,13 @@
 title: Notes de mise à jour des outils de migration dans AEM version 2021.10.0 as a Cloud Service
 description: Notes de mise à jour des outils de migration dans AEM version 2021.11.0 as a Cloud Service
 feature: Release Information
-source-git-commit: a1c57a9d8165c9e67ce270a3f0c2ad80c75b7196
+exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 12%
+ht-degree: 71%
 
 ---
-
 
 # Notes de mise à jour des outils de migration dans AEM version 2021.10.0 as a Cloud Service {#release-notes}
 
@@ -29,40 +29,40 @@ Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les r
 
 ### Date de publication {#release-date-october-cam}
 
-La date de publication de Cloud Acceleration Manager est le 4 octobre 2021.
+La date de publication de la mise à jour de Cloud Acceleration Manager est le 4 octobre 2021.
 
 ### Nouveautés {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet une impression ou une impression simples à PDF pour une partageabilité facile. Reportez-vous aux étapes 6 et 7 de la section [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Reportez-vous aux étapes 6 et 7 de la section [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
 
 
 ## Outil de transfert de contenu {#ctt-release}
 
 ### Date de publication {#release-date-ctt-latest}
 
-La date de publication de l’outil de transfert de contenu v1.6.0 est le 4 octobre 2021.
+La date de publication de l’outil de transfert de contenu version v1.6.0 est le 4 octobre 2021.
 
 ### Nouveautés {#what-is-new-ctt-oct}
 
-* Amélioration de l’outil de mappage des utilisateurs avec une expérience utilisateur simplifiée, y compris les fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html).
-   * Tester la connexion à l’API User Management avant d’exécuter le mappage utilisateur
-   * Ignorer les erreurs et poursuivre avec élégance l’activité Mappage des utilisateurs
-   * Le mappage utilisateur n’échoue plus si **Jeton d’accès** expire après 24 heures. Le mappage utilisateur peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.
+* Amélioration de l’outil de mappage des utilisateurs pour une expérience utilisateur simplifiée, notamment grâce aux fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=fr).
+   * Test de la connexion à l’API User Management avant d’exécuter le mappage des utilisateurs
+   * Ignorer les erreurs de manière appropriée et poursuivre l’activité de mappage des utilisateurs
+   * Le mappage des utilisateurs n’échoue plus si le **Jeton d’accès** expire après 24 heures. Le mappage des utilisateurs peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.
 
-* Pour accroître la robustesse de l’outil de transfert de contenu, le contenu peut être ingéré simultanément sur l’instance d’auteur ou l’instance de publication. Voir [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) pour plus d’informations.
+* Pour plus de robustesse de l’outil de transfert de contenu, le contenu ne peut être ingéré que sur l’instance d’auteur ou sur l’instance de publication au même moment. Consultez [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr) pour plus d’informations.
 
-* Lorsque des versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
+* Lorsque différentes versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
 
 ## Analyseur des bonnes pratiques {#best-practices-analyzer}
 
 ### Date de publication {#release-date-bpa-latest}
 
-La date de publication de la version 2.1.20 de l’analyseur des bonnes pratiques est le 5 octobre 2021.
+La date de publication de l’analyseur de bonnes pratiques v2.1.20 est le 5 octobre 2021.
 
 ### Nouveautés {#what-is-new-bpa-oct}
 
-* Possibilité de détecter et de générer des rapports sur la longueur du nom de noeud.
+* Capacité à détecter et à générer des rapports sur la longueur du nom de nœud.
 
 * Capacité à détecter et à générer des rapports sur la taille totale de l’index.
 
-* Possibilité de détecter et de générer des rapports sur les ressources dont le rendu d’origine manque.
+* Capacité à détecter et à générer des rapports sur les ressources ne disposant pas d’un rendu d’origine.

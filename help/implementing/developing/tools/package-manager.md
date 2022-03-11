@@ -3,13 +3,13 @@ title: Gestionnaire de modules
 description: Découvrez les principes de base d’AEM ; gestion des packages avec Package Manager.
 feature: Administering
 role: Admin
-source-git-commit: 108ebef7e2ea79323d873a126cc89aef26faae60
+exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '3584'
 ht-degree: 17%
 
 ---
-
 
 # Gestionnaire de modules {#working-with-packages}
 

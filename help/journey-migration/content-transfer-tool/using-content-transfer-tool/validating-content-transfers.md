@@ -1,13 +1,13 @@
 ---
 title: Validation des transferts de contenu
 description: Utiliser l’outil de transfert de contenu pour valider les transferts de contenu
-source-git-commit: c542b631a94b9fcbda4790ca9ca5a461d104c790
+exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 1%
 
 ---
-
 
 # Validation des transferts de contenu {#validating-content-transfers}
 
@@ -157,7 +157,3 @@ Pour vérifier, choisissez un chemin dans le rapport de validation et vérifiez 
 Certains chemins d’accès des digests d’extraction et d’ingestion sont délibérément exclus afin de conserver la taille de ces fichiers gérables, dans le but de pouvoir calculer le résultat de la validation de migration dans les deux heures suivant l’exécution de l’ingestion.
 
 Les chemins que nous excluons actuellement des digestes sont les suivants : `cqdam.text.txt` rendus, noeuds dans `/home`, et les noeuds dans `/jcr:system`.
-
-
-
-

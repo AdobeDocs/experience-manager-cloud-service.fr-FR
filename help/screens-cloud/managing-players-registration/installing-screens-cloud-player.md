@@ -3,7 +3,7 @@ title: Installation et configuration des lecteurs dans Screens as a Cloud Servic
 description: Cette page décrit comment installer et configurer des lecteurs dans Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
 source-git-commit: 3367977496d3edad0f6f1e27e98eac95c791e870
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 100%
 

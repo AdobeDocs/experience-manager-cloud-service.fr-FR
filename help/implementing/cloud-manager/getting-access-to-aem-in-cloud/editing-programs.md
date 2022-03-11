@@ -1,13 +1,13 @@
 ---
 title: Modification de programmes
 description: Découvrez comment modifier vos programmes de production et d’environnement de test pour ajuster leurs options après les avoir créés.
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '389'
 ht-degree: 4%
 
 ---
-
 
 # Modification de programmes {#editing-programs}
 

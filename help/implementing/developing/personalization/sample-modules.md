@@ -3,7 +3,7 @@ title: Exemples de types de module d’IU ContextHub
 description: ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 100%
 

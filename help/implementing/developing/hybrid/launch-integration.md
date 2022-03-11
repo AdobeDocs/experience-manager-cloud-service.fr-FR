@@ -3,7 +3,7 @@ title: Intégration de SPA et d’Adobe Experience Platform Launch
 description: Adobe Experience Platform Launch est la méthode recommandée pour implémenter Analytics, Target et Audience Manager dans des SPA.
 exl-id: 95008563-c1e5-4685-9c6d-5226d4a66c53
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 100%
 

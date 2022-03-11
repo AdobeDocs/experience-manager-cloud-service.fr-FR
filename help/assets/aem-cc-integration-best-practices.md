@@ -7,7 +7,7 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '3443'
 ht-degree: 100%
 
@@ -61,7 +61,7 @@ Choix de la fonctionnalité à utiliser
 | Utilisation – placement de la ressource d’Experience Manager dans un document | Oui – incorporation | Oui – liaison ou incorporation | L’application de bureau Experience Manager donne accès aux ressources sous forme de fichiers sur le système de fichiers local. Ces liens dans les applications natives sont représentés par des chemins d’accès locaux. |
 | Modification – ouvrir pour modification | Oui – action d’extraction | Oui – action d’ouverture (dans le partage réseau) | L’[extraction dans AAL](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) enregistre la ressource dans le compte de stockage Creative Cloud de l’utilisateur (synchronisé par l’application Creative Cloud) par défaut. |
 | Modifier : travail en cours en dehors d’Experience Manager | Oui – ressource disponible dans le compte de stockage Creative Cloud de l’utilisateur synchronisé avec le poste de travail. | Oui |  |
-| Modification – téléchargement des modifications | Oui – [Action d’archivage](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) avec des commentaires facultatifs | Oui |  |
+| Modification – téléchargement des modifications | Oui – [Action d’archivage](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) avec des commentaires facultatifs | Oui |  |
 | Téléchargement – fichier unique | Oui – téléchargement du document actif | Oui | [Chargement via l’interface web](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Téléchargement – plusieurs fichiers/structures de dossiers hiérarchiques | Non | Oui | [Chargement via l’interface web](/help/assets/manage-digital-assets.md#uploading-assets) ; outil ou script personnalisé |
 | Divers – utilisateur et connexion | L’utilisateur Creative Cloud connecté à l’application de bureau Creative Cloud est reconnu (SSO) | Utilisateur/connexion Experience Manager | Les utilisateurs des deux solutions sont comptabilisés par rapport au quota d’utilisateurs Experience Manager. |
@@ -74,7 +74,7 @@ Choix de la fonctionnalité à utiliser
 
 Pour prendre en charge les cas d’utilisation de la distribution des ressources, tenez compte des options suivantes :
 
-* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr) pour un module complémentaire configurable pour Assets afin de publier des ressources.
+* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) pour un module complémentaire configurable pour Assets afin de publier des ressources.
 
 * Les solutions personnalisées sont créées à partir de la base de code [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/).
 * [Partage de liens](/help/assets/share-assets.md) Experience Manager pour partager des ressources ad hoc à l’aide de liens.
@@ -187,7 +187,7 @@ Les agences externes et les indépendants sans accès direct à l’instance de 
 Utilisez les stratégies suivantes pour fournir un accès aux ressources finales/approuvées :
 
 * Utilisez l’application de bureau si Asset Link ne fonctionne pas.
-* Utilisez [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr) pour distribuer les ressources en toute sécurité aux partenaires externes.
+* Utilisez [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) pour distribuer les ressources en toute sécurité aux partenaires externes.
 * Utilisez une implémentation personnalisée d’un portail de distribution et de source basé sur [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilisez la configuration du contrôle d’accès dans Experience Manager et l’infrastructure réseau nécessaire (mise en liste d’adresses IP autorisées et VPN, par exemple) pour permettre aux parties externes d’accéder à une zone de contenu dédiée dans la gestion des ressources numériques (DAM). Ils peuvent utiliser l’interface utilisateur web d’Experience Manager pour obtenir des ressources et charger du nouveau contenu dans la gestion des ressources numériques (DAM).
 

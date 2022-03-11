@@ -1,15 +1,15 @@
 ---
 title: Gestion des métadonnées des ressources numériques
-description: Découvrez les types de métadonnées ainsi que l’organisation et le traitement des fichiers par [!DNL Adobe Experience Manager Assets] helps manage metadata for assets to allow easier categorization and organization of assets. [!DNL Experience Manager] en fonction de leurs métadonnées.
+description: En savoir plus sur les types de métadonnées et comment [!DNL Adobe Experience Manager Assets] permet de gérer les métadonnées des ressources afin de les classer et de les organiser plus facilement. [!DNL Experience Manager] permet d’organiser et de traiter automatiquement les ressources en fonction de leurs métadonnées.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
-workflow-type: ht
-source-wordcount: '1854'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1867'
+ht-degree: 98%
 
 ---
 

@@ -4,7 +4,7 @@ description: Conseils de dépannage lorsque vous utilisez Dynamic Media.
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
 source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 100%
 

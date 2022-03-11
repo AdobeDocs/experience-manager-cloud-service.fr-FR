@@ -3,7 +3,7 @@ title: Utilisation des versions de page
 description: Création, comparaison et restauration des versions d’une page
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 100%
 
@@ -115,6 +115,7 @@ Cette méthode permet de rétablir des versions de pages spécifiées dans le do
    >Si :
    >* vous avez sélectionné une seule page, qui n’a jamais eu de page enfant,
    >* ou aucune des pages du dossier ne comporte de version,
+
    >
    >l’affichage sera vide, car aucune version n’est applicable.
 

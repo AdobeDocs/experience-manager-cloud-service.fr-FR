@@ -1,10 +1,11 @@
 ---
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
-source-git-commit: a6d225943c5d23ebd960fda0b0912a81f1f80014
+exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 60%
+ht-degree: 67%
 
 ---
 
@@ -103,7 +104,7 @@ La prise en charge de l’entrepôt de données basé sur les fichiers est inclu
 
 ### 3. Configuration d’un fichier azcopy.config {#configure-azcopy-config-file}
 
-Sur l’instance d’AEM source, dans `crx-quickstart/cloud-migration`, créez un fichier appelé `azcopy.config`.
+Sur l’instance AEM source, dans `crx-quickstart/cloud-migration`, créez un fichier appelé `azcopy.config`.
 
 >[!NOTE]
 >Le contenu de ce fichier de configuration sera différent selon que votre instance d’AEM source utilise un entrepôt de données Azure ou Amazon S3 ou un entrepôt de données File.
@@ -159,7 +160,7 @@ Une fois le fichier de configuration ci-dessus en place, la phase de pré-copie 
 >Si AzCopy n&#39;est pas configuré correctement, ce message s&#39;affiche dans les logs :
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
-1. Commencez une extraction à partir de l’interface utilisateur de CTT. Voir [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en) et le [Processus d’extraction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=en) pour plus d’informations.
+1. Commencez une extraction à partir de l’interface utilisateur de CTT. Pour plus d’informations, consultez [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr) et [Processus d’extraction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=fr).
 
 1. Vérifiez que la ligne suivante est imprimée dans le journal d’extraction :
 
@@ -198,11 +199,11 @@ Lorsque AzCopy est en cours d’exécution pour le fichier source dataStore, vou
 Avec la version 1.5.4 de l’outil de transfert de contenu, nous avons ajouté la prise en charge d’AzCopy à l’ingestion Auteur.
 
 >[!NOTE]
->Il est recommandé d’exécuter l’ingestion Auteur en premier. Cela permettra d’accélérer l’ingestion Publication lorsqu’elle sera exécutée ultérieurement.
+>Il est recommandé d’exécuter l’ingestion Auteur en premier. Cela permet d’accélérer l’ingestion de publication lorsqu’elle est exécutée ultérieurement.
 
 Pour tirer parti d’AzCopy lors de l’ingestion, nous vous demandons de vous trouver sur une version d’AEM as a Cloud Service d’au moins 2021.6.5561.
 
-Commencez l’ingestion Auteur à partir de l’interface utilisateur du CTT. Pour plus d’informations, consultez le [Processus d’ingestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=en).
+Commencez l’ingestion Auteur à partir de l’interface utilisateur du CTT. Pour plus d’informations, consultez le [Processus d’ingestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=fr).
 Les entrées de journal d’AzCopy apparaissent dans le journal d’ingestion. Ils ressembleront à ceci :
 
 ```
@@ -242,4 +243,4 @@ Par exemple, l’extraction azcopy peut être désactivée avec : `mv /mnt/crx/a
 
 ## Et après ? {#whats-next}
 
-Une fois que vous avez appris à gérer les référentiels de contenu volumineux afin d’accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu pour déplacer le contenu vers AEM as a Cloud Service, vous êtes prêt à apprendre le processus d’extraction dans l’outil de transfert de contenu. Voir [Extraction de contenu de la source dans l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) pour savoir comment extraire votre jeu de migration à partir de l’outil de transfert de contenu.
+Une fois que vous avez appris à gérer les référentiels de contenu volumineux afin d’accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu et déplacer le contenu vers AEM as a Cloud Service, vous êtes prêt à apprendre comment fonctionne le processus d’extraction dans l’outil de transfert de contenu. Consultez [Extraction de contenu de la source dans l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) pour savoir comment extraire votre jeu de migration à partir de l’outil de transfert de contenu.

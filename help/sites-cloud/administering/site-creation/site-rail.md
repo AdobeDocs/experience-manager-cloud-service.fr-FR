@@ -3,13 +3,13 @@ title: Utilisation du rail de site pour gérer le thème de votre site
 description: Découvrez les puissantes fonctionnalités du rail du site pour vous aider à personnaliser et gérer facilement le thème de votre site.
 feature: Administering
 role: Admin
-source-git-commit: 002b95212d682c41a601a483df9b4365a553b669
+exl-id: 45785e5a-4fa2-4cf2-a300-f1865f6f5807
+source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
 
 ---
-
 
 # Utilisation du rail de site pour gérer le thème de votre site {#site-rail}
 

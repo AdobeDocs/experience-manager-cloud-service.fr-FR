@@ -5,7 +5,7 @@ exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: 131b17f53b364138d2cea7648d4c23a8480740bf
 workflow-type: tm+mt
 source-wordcount: '2647'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -235,7 +235,7 @@ Utilisez ce projet pour créer des formulaires adaptatifs, déployer des mises �
 >[!NOTE]
 >
 > Configurez un projet basé sur l’archétype AEM version 30 ou supérieure pour obtenir et utiliser les modèles de données de formulaire Microsoft Dynamics 365 et Salesforce avec AEM Forms as a Cloud Service.
-> Configurez AEM projet basé sur Archetype version 32 ou ultérieure pour obtenir et utiliser les thèmes Tranquil, Urbane et Ultramarine avec AEM Forms as a Cloud Service.
+> Configurez un projet basé sur l’archétype AEM version 32 ou ultérieure pour obtenir et utiliser les thèmes Tranquil, Urbane et Ultramarine avec AEM Forms as a Cloud Service.
 
 Pour configurer le projet :
 
