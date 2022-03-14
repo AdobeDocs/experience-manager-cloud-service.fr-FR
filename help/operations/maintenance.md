@@ -2,7 +2,7 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: cd48b78383974027d8980397632c395a5958edbf
+source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
 workflow-type: tm+mt
 source-wordcount: '1024'
 ht-degree: 78%
@@ -56,21 +56,23 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
   <tr>
     <td>Purge de version</td>
     <td>Adobe</td>
-    <td>Pour que le niveau Auteur reste performant, des versions plus anciennes de chaque élément de contenu sous la propriété <code>/content</code> du référentiel sont purgés selon le comportement suivant :<br><ol>
-  <li>Les versions de plus de 30 jours sont supprimées</li>
-  <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
-  <li>Quelle que soit la règle ci-dessus, la version la plus récente est conservée.</li>
-</ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué pour les nouveaux environnements à compter du 14 mars 2022 et sera appliqué pour les environnements existants (ceux qui ont été créés avant le 14 mars 2022) le 21 avril 2022.</td>
+    <td>Pour que le niveau Auteur reste performant, des versions plus anciennes de chaque élément de contenu sous la propriété <code>/content</code> du référentiel sont purgés selon le comportement suivant :<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+     <ol>
+       <li>Les versions de plus de 30 jours sont supprimées</li>
+       <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
+       <li>Quelle que soit la règle ci-dessus, la version la plus récente est conservée.</li>
+     </ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué pour les nouveaux environnements à compter du 14 mars 2022 et sera appliqué pour les environnements existants (ceux qui ont été créés avant le 14 mars 2022) le 21 avril 2022.</td>
   </td>
   </tr>
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Adobe</td>
-    <td>Pour que le niveau Auteur reste performant, les journaux d’audit plus anciens sous <code>/content</code> du référentiel sont purgés selon le comportement suivant :<br><ol>
-  <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
-  <li>Pour le contrôle DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
-  <li>Pour le contrôle des pages, les journaux de plus de 3 jours sont supprimés.<br></li>
-</ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué pour les nouveaux environnements à compter du 14 mars 2022 et sera appliqué pour les environnements existants (ceux qui ont été créés avant le 14 mars 2022) le 21 avril 2022.</td>
+    <td>Pour que le niveau Auteur reste performant, les journaux d’audit plus anciens sous <code>/content</code> du référentiel sont purgés selon le comportement suivant :<br><br> <!-- See above for the two line breaks -->
+     <ol>
+       <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
+       <li>Pour le contrôle DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
+       <li>Pour le contrôle des pages, les journaux de plus de 3 jours sont supprimés.</li>
+     </ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué pour les nouveaux environnements à compter du 14 mars 2022 et sera appliqué pour les environnements existants (ceux qui ont été créés avant le 14 mars 2022) le 21 avril 2022.</td>
    </td>
   </tr>
   <tr>
