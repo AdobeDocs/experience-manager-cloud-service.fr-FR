@@ -2,7 +2,7 @@
 title: Introduction – Gestion des certificats SSL
 description: Introduction – Gestion des certificats SSL
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+source-git-commit: 09a2c24b848364954dc5621995d0d0dc24059011
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 93%
@@ -31,7 +31,7 @@ Cloud Manager permet aux clients d’installer des certificats SSL en libre-serv
 
 * AEM as a Cloud Service accepte les certificats SSL génériques pour un domaine.
 
-* À tout moment, Cloud Manager autorise un maximum de 20 certificats SSL qui peuvent être associés à un ou plusieurs environnements sur l’ensemble de votre programme, même si un certificat a expiré. L’interface utilisateur de Cloud Manager permet toutefois d’installer jusqu’à 50 certificats SSL dans le programme avec cette contrainte. En règle générale, un certificat peut couvrir plusieurs domaines (jusqu’à 100 SAN). Par conséquent, envisagez de regrouper plusieurs domaines dans le même certificat pour respecter cette limite.
+* À tout moment, Cloud Manager autorise un maximum de 50 certificats SSL qui peuvent être associés à un ou plusieurs environnements sur l’ensemble de votre programme, même si un certificat a expiré. L’interface utilisateur de Cloud Manager permet toutefois d’installer jusqu’à 50 certificats SSL dans le programme avec cette contrainte. En règle générale, un certificat peut couvrir plusieurs domaines (jusqu’à 100 SAN). Par conséquent, envisagez de regrouper plusieurs domaines dans le même certificat pour respecter cette limite.
 
 Cloud Manager respecte les exigences suivantes en matière de certificat SSL client :
 
