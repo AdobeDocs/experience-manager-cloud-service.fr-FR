@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5e71b569280f486a50da0148b745200a6bbdc991
+source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
-source-wordcount: '3431'
+source-wordcount: '3434'
 ht-degree: 88%
 
 ---
@@ -103,7 +103,8 @@ ht-degree: 88%
    + [Post-activation](/help/journey-migration/post-go-live.md)
    + [Guide de migration vers Experience Manager a Cloud Service pour les partenaires](/help/journey-migration/getting-started-partners.md)
    + Notes de mise à jour des outils de migration {#release-notes-migration-tools}
-      + [Notes de mise à jour de la version actuelle (2022.2.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [Notes de mise à jour de la version actuelle (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + [Notes de mise à jour de la version 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [Notes de mise à jour de la version 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
          + [Notes de mise à jour de la version 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)

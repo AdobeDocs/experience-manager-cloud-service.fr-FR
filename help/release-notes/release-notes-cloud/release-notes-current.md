@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: e4d7d3d7fb4430c2027d4d2f3c34d77890c28ad8
+source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
-source-wordcount: '1083'
-ht-degree: 26%
+source-wordcount: '1188'
+ht-degree: 25%
 
 ---
 
@@ -135,15 +135,17 @@ La date de publication de l’outil de transfert de contenu version v1.8.6 est 
 
 ### Date de publication {#release-date-bpa}
 
-La date de publication de l’analyseur de bonnes pratiques v2.1.24 est le 01 février 2022.
+La date de publication de l’analyseur de bonnes pratiques v2.1.26 est le 16 mars 2022.
 
 ### Nouveautés {#what-is-new-bpa}
 
-* Possibilité de détecter et de générer des rapports sur le nombre de ressources avec et sans balises intelligentes.
-* Possibilité de détecter et de générer des rapports sur la version du composant principal utilisé.
-* Possibilité de détecter et de générer des rapports sur le type de niveau source (auteur ou publication) où l’application d’une seule page a été exécutée.
+* Capacité à détecter les ressources non traitées. Si des ressources non traitées sont détectées, ces ressources doivent être définies sur traitées ou doivent être supprimées du jeu de migration lors du transfert de contenu afin d’éviter des problèmes lors de l’ingestion de contenu.
+* Possibilité de détecter si le contenu comporte plus de 1 000 URL de redirection vers un microsite. L’utilisation d’un nombre élevé d’URL de redirection vers un microsite n’est pas une bonne pratique, car elle charge les serveurs de Dispatcher et de publication.
+* Possibilité d’identifier les problèmes liés aux définitions d’index Oak et de détecter les incompatibilités avec AEM as a Cloud Service.
+* Possibilité de détecter et de générer des rapports sur l’utilisation des configurations de l’externaliseur. Dans AEM les configurations de l’externaliseur as a Cloud Service sont définies par Cloud Manager, les configurations de l’externaliseur existantes doivent donc être restructurées pour maintenir la compatibilité.
 
 ### Correctifs {#bug-fixes-bpa}
 
-* La logique de dimensionnement des BPA a été rendue plus rapide et plus efficace.
-* Dans certains scénarios, BPA n’incrémentait pas le nombre analysé lors de son exécution. Ce problème a été résolu.
+* Dans certains scénarios, l’exécution de BPA a échoué en raison d’une erreur d’affirmation de FormsSelectiveFeaturesAnalysis. Ce problème a été résolu.
+* Le BPA a rapporté que les résultats liés au modèle de WRK étaient MAJEURS plutôt que CRITIQUES. Ce problème a été résolu.
+* La BPA signalait de manière incorrecte les résultats liés aux définitions d’index OAK dans ui.apps comme étant CRITIQUES. Ce problème a été résolu
