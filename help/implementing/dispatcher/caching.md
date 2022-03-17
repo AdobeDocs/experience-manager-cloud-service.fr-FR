@@ -3,9 +3,9 @@ title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 265999e5e92fc7b0f78f41bee4545ca6cee618a5
+source-git-commit: b490d581532576bc526f9bd166003df7f2489495
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1549'
 ht-degree: 95%
 
 ---
@@ -72,7 +72,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
 
    >[!NOTE]
-   >Veuillez noter que le Dispatcher peut toujours mettre en cache le contenu en fonction de ses propres [règles de mise en cache](https://helpx.adobe.com/fr/experience-manager/kb/find-out-which-requests-does-aem-dispatcher-cache.html). Pour rendre le contenu réellement privé, veillez à ce qu’il ne soit pas mis en cache par le Dispatcher.
+   >Veuillez noter que le Dispatcher peut toujours mettre en cache le contenu en fonction de ses propres [règles de mise en cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Pour rendre le contenu réellement privé, veillez à ce qu’il ne soit pas mis en cache par le Dispatcher.
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 
