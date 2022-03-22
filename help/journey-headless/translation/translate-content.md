@@ -1,11 +1,11 @@
 ---
-title: Traduction du contenu
+title: Traduire le contenu (AEM sans interface)
 description: Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '2174'
-ht-degree: 100%
+source-wordcount: '2176'
+ht-degree: 99%
 
 ---
 

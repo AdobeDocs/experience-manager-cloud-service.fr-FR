@@ -1,11 +1,11 @@
 ---
-title: Parcours d’architecture de contenu découplé AEM
+title: Modélisation de contenu pour sans affichage avec AEM Introduction
 description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et explique comment modéliser le contenu de votre projet.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 100%
+source-wordcount: '716'
+ht-degree: 99%
 
 ---
 
