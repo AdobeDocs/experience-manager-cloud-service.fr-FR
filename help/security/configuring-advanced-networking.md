@@ -2,10 +2,10 @@
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
-source-wordcount: '2982'
-ht-degree: 93%
+source-wordcount: '2976'
+ht-degree: 92%
 
 ---
 
@@ -305,11 +305,7 @@ DriverManager.getConnection("jdbc:mysql://" + System.getenv("AEM_PROXY_HOST") + 
 </tbody>
 </table>
 
-## Clients avec une adresse sortante dédiée héritée {#legacy-dedicated-egress-address-customers}
-
-Si vous avez reçu une adresse IP de sortie dédiée avant la publication de la version 2021.09.30, votre fonctionnalité d’IP de sortie dédiée fonctionnera comme décrit ci-dessous.
-
-### Utilisation de la fonctionnalité {#feature-usage}
+## Utilisation de la fonctionnalité {#feature-usage}
 
 Cette fonctionnalité est compatible avec les bibliothèques ou le code Java qui génèrent du trafic sortant, à condition qu’ils utilisent les propriétés système Java standard pour les configurations de proxy. Dans la pratique, cela devrait inclure la plupart des bibliothèques courantes.
 
@@ -351,11 +347,14 @@ public JSONObject getJsonObject(String relativePath, String queryString) throws 
 
 La même adresse IP dédiée est appliquée à tous les programmes d’un client dans son organisation Adobe ainsi qu’à tous les environnements de chacun de ses programmes. Elle s’applique aux services de création et de publication.
 
-Seuls les ports HTTP et HTTPS sont pris en charge. Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés.
-
 ### Considérations relatives au débogage {#debugging-considerations}
 
 Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dédiée attendue, vérifiez les journaux dans le service de destination, si disponible. Dans le cas contraire, il peut s’avérer utile d’appeler un service de débogage tel que [https://ifconfig.me/IP](https://ifconfig.me/IP), qui renverra l’adresse IP d’appel.
+
+## Clients avec une adresse sortante dédiée héritée {#legacy-dedicated-egress-address-customers}
+
+Si vous avez reçu l’attribution d’une adresse IP de sortie dédiée avant la version 2021.09.30, votre fonction d’adresse IP de sortie dédiée ne prend en charge que les ports HTTP et HTTPS.
+Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés.
 
 ## Réseau privé virtuel (VPN) {#vpn}
 
