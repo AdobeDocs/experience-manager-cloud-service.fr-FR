@@ -1,81 +1,98 @@
 ---
-title: Ajout d’un certificat SSL – Gestion des certificats SSL
-description: Ajout d’un certificat SSL – Gestion des certificats SSL
+title: Ajout d’un certificat SSL
+description: Découvrez comment ajouter votre propre certificat SSL à l’aide des outils en libre-service de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 828490e12d99bc8f4aefa0b41a886f86fee920b4
+source-git-commit: 2c87d5fb33b83ca77b97391e4b0baaf38f8dd026
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 81%
+source-wordcount: '592'
+ht-degree: 22%
 
 ---
 
 # Ajout d’un certificat SSL {#adding-an-ssl-certificate}
 
->[!NOTE]
->AEM as a Cloud Service accepte uniquement les certificats conformes à la politique de validation d’organisation ou de validation étendue (EV). La stratégie DV (Domain Validation) ne sera pas acceptée. De plus, tout certificat doit être de type TLS X.509, délivré par une autorité de certification approuvée (CA) et doté d’une clé privée RSA 2 048 bits correspondante. AEM as a Cloud Service accepte les certificats SSL génériques pour un domaine.
+Découvrez comment ajouter votre propre certificat SSL à l’aide des outils en libre-service de Cloud Manager.
 
-La mise en service d’un certificat prend quelques jours et il est recommandé que le certificat soit mis en service plusieurs mois à l’avance. Consultez [Obtention d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/get-ssl-certificate.md) pour plus d’informations.
+>[!TIP]
+>
+>La configuration d’un certificat peut prendre quelques jours. Adobe recommande donc que le certificat soit configuré bien en avance.
 
 ## Format de certificat {#certificate-format}
 
-Les fichiers SSL doivent être au format PEM pour être installés sur Cloud Manager. Les extensions de fichier courantes au format PEM incluent `.pem,`.`crt`, `.cer` et `.cert`.
+Les fichiers de certificat SSL doivent être au format PEM pour être installés avec Cloud Manager. Les extensions de fichier courantes du format PEM incluent : `.pem,` .`crt`, `.cer` et `.cert`.
 
-Procédez comme suit pour convertir le format de vos fichiers SSL au format PEM :
+Les éléments suivants `openssl` Les commandes peuvent être utilisées pour convertir des certificats non-PEM.
 
 * Convertir PFX en PEM
 
-   `openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes`
+   ```shell
+   openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+   ```
 
 * Convertir P7B en PEM
 
-   `openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer`
+   ```shell
+   openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+   ```
 
 * Convertir DER en PEM
 
-   `openssl x509 -inform der -in certificate.cer -out certificate.pem`
-
-## Points importants {#important-considerations}
-
-* Un utilisateur doit avoir le rôle Propriétaire de l’entreprise ou Responsable du déploiement pour pouvoir installer un certificat SSL dans Cloud Manager.
-
-* À tout moment, Cloud Manager autorise un maximum de 10 certificats SSL qui peuvent être associés à un ou plusieurs environnements sur l’ensemble de votre programme, même si un certificat a expiré. L’interface utilisateur de Cloud Manager permet toutefois d’installer jusqu’à 50 certificats SSL dans le programme avec cette contrainte. En règle générale, un certificat peut couvrir plusieurs domaines (jusqu’à 100 SAN). Par conséquent, envisagez de regrouper plusieurs domaines dans le même certificat afin de respecter cette limite.
-
+   ```shell
+   openssl x509 -inform der -in certificate.cer -out certificate.pem
+   ```
 
 ## Ajout d’un certificat {#adding-a-cert}
 
-Procédez comme suit pour ajouter un certificat :
+Pour ajouter un certificat à l’aide de Cloud Manager, procédez comme suit.
 
-1. Connectez-vous à Cloud Manager.
-1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
-1. Cliquez sur **Certificats SSL** dans le menu de navigation de gauche. Un tableau contenant les détails de tout certificat SSL existant s’affiche sur cet écran.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
+1. Accédez à **Environnements** de l’écran **Présentation** page.
+
+1. Cliquez sur **Certificats SSL** dans le panneau de navigation de gauche. Un tableau contenant les détails de tout certificat SSL existant s’affiche sur l’écran principal.
+
+   ![Ajout d’un certificat SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-1.png)
 
 1. Cliquez sur **Ajouter le certificat SSL** pour ouvrir la boîte de dialogue **Ajouter le certificat SSL**.
 
-   * Entrez un nom pour votre certificat dans **Nom du certificat**. Cela peut être n’importe quel nom qui vous aide à référencer facilement votre certificat.
-   * Collez le **certificat**, la **clé privée** et la **chaîne de certificat** dans leurs champs respectifs. Utilisez l’icône Coller située à droite de la zone de saisie.
-Les trois champs ne sont pas facultatifs et doivent être renseignés.
+   * Entrez un nom pour votre certificat dans **Nom du certificat**.
+      * À titre d’information uniquement, il peut s’agir de n’importe quel nom qui vous aide à référencer facilement votre certificat.
+   * Collez le **Certificat**, **Clé privée**, et **Chaîne de certificats** dans leurs champs respectifs.
+      * Vous pouvez utiliser l’icône Coller située à droite de la zone de saisie.
+      * Les trois champs sont obligatoires.
 
-      ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+   ![Boîte de dialogue Ajouter un certificat SSL](/help/implementing/cloud-manager/assets/ssl/ssl-cert-02.png)
+
+   * Toutes les erreurs détectées s’affichent.
+      * Vous devez corriger toutes les erreurs avant de pouvoir enregistrer votre certificat.
+      * Reportez-vous à la section [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
 
 
-      >[!NOTE]
-      >Toutes les erreurs détectées s’affichent. Vous devez corriger toutes les erreurs avant de pouvoir enregistrer votre certificat. Consultez [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
+1. Cliquez sur **Enregistrer** pour enregistrer votre certificat.
 
-1. Cliquez sur **Enregistrer** pour envoyer votre certificat. Celui-ci s’affiche dans une nouvelle ligne du tableau.
+Une fois enregistré, votre certificat s’affiche sous la forme d’une nouvelle ligne dans le tableau.
 
-   ![](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+![Certificat SSL enregistré](/help/implementing/cloud-manager/assets/ssl/ssl-cert-3.png)
+
+>[!NOTE]
+>
+>Un utilisateur doit être membre de la fonction **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour installer un certificat SSL dans Cloud Manager.
 
 ## Erreurs de certificat {#certificate-errors}
 
+Certaines erreurs peuvent se produire si un certificat n’est pas installé correctement ou répond aux exigences de Cloud Manager.
+
 ### Stratégie de certificat {#certificate-policy}
 
-Si le message d’erreur &quot;La stratégie de certificat doit être conforme à la norme EV ou OV, et non à la stratégie DV&quot; s’affiche, vérifiez la stratégie de votre certificat.
+Si l’erreur suivante s’affiche, vérifiez la stratégie de votre certificat.
 
-En règle générale, les types de certificat sont identifiés par les valeurs OID intégrées aux stratégies. Ces OID sont uniques et, par conséquent, la conversion d’un certificat en formulaire texte et la recherche de l’OID confirmera que le certificat correspond.
+```text
+Certificate policy must conform with EV or OV, and not DV policy.
+```
 
-Vous pouvez afficher les détails de votre certificat comme suit.
+Normalement, les stratégies de certificat sont identifiées par des valeurs OID incorporées. La génération d’un certificat dans du texte et la recherche de l’OID révèleront la stratégie du certificat.
+
+Vous pouvez générer les détails de votre certificat sous forme de texte à l’aide de l’exemple suivant comme guide.
 
 ```text
 openssl x509 -in 9178c0f58cb8fccc.pem -text
@@ -94,15 +111,15 @@ certificate:
 ...
 ```
 
-Ce tableau fournit des modèles d’identification.
+Le modèle OID dans le texte définit le type de stratégie du certificat.
 
-| Modèle | Type de certificat | Acceptable |
+| Modèle | Stratégie | Acceptable dans Cloud Manager |
 |---|---|---|
-| `2.23.140.1.2.1` | DV | Non |
+| `2.23.140.1.1` | EV | Oui |
 | `2.23.140.1.2.2` | OV | Oui |
-| `2.23.140.1.2.3` et `TLS Web Server Authentication` | IV cert avec permission pour utiliser pour https | Oui |
+| `2.23.140.1.2.1` | DV | Non |
 
-`grep`ping pour les modèles, vous pouvez confirmer votre type de certificat.
+Par `grep`ping pour les modèles OID dans le texte du certificat de sortie, vous pouvez confirmer votre stratégie de certificat.
 
 ```shell
 # "EV Policy"
@@ -117,21 +134,30 @@ openssl x509 -in certificate.pem -text grep "Policy: 2.23.140.1.2.1" -B5
 
 ### Ordre de certificat correct {#correct-certificate-order}
 
-La raison la plus courante de l’échec du déploiement d’un certificat est que les certificats intermédiaires ou de chaîne ne sont pas dans le bon ordre. Plus précisément, les fichiers de certificat intermédiaire doivent se terminer par le certificat racine ou le certificat le plus proche de la racine et se trouver dans l’ordre décroissant entre le certificat `main/server` et la racine.
+La raison la plus courante de l’échec du déploiement d’un certificat est que les certificats intermédiaires ou de chaîne ne sont pas dans le bon ordre.
 
-Vous pouvez déterminer l’ordre de vos fichiers intermédiaires à l’aide de la commande suivante :
+Les fichiers de certificat intermédiaires doivent se terminer par le certificat racine ou le certificat le plus proche de la racine. Ils doivent être dans l’ordre décroissant de la variable `main/server` certificat à la racine.
 
-`openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout`
+Vous pouvez déterminer l’ordre de vos fichiers intermédiaires à l’aide de la commande suivante.
 
-Vous pouvez vérifier que la clé privée et le certificat `main/server` correspondent à l’aide des commandes suivantes :
+```shell
+openssl crl2pkcs7 -nocrl -certfile $CERT_FILE | openssl pkcs7 -print_certs -noout
+```
 
-`openssl x509 -noout -modulus -in certificate.pem | openssl md5`
+Vous pouvez vérifier que la clé privée et `main/server` correspondance de certificat à l’aide des commandes suivantes.
 
-`openssl rsa -noout -modulus -in ssl.key | openssl md5`
+```shell
+openssl x509 -noout -modulus -in certificate.pem | openssl md5
+```
+
+```shell
+openssl rsa -noout -modulus -in ssl.key | openssl md5
+```
 
 >[!NOTE]
->La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver une clé privée correspondant à votre certificat `main/server`, vous devrez entrer à nouveau la clé du certificat en générant un nouveau CSR et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
+>
+>La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver la clé privée correspondante pour votre `main/server` , vous devrez recréer le certificat en générant une nouvelle CSR et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
 
 ### Dates de validité du certificat {#certificate-validity-dates}
 
-Cloud Manager s’attend à ce que le certificat SSL soit valide pendant au moins 90 jours à l’avenir. Vérifiez la validité de la chaîne de certificats.
+Cloud Manager s’attend à ce que le certificat SSL soit valide pendant au moins 90 jours à compter de la date actuelle. Vérifiez la validité de la chaîne de certificats.
