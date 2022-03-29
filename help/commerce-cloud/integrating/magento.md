@@ -6,13 +6,13 @@ exl-id: 110ceef5-2c35-4b81-8e89-26929c0da91b,1cdfda88-a728-432f-b24a-f81347572bc
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 62%
+ht-degree: 78%
 
 ---
 
 # Intégration d’AEM et d’Adobe Commerce à l’aide de Commerce Integration Framework {#aem-framework}
 
-Experience Manager et Adobe Commerce sont intégrés de manière transparente à l’aide de Commerce Integration Framework (CIF). CIF permet à AEM d’accéder directement à l’instance de commerce et de communiquer avec elle à l’aide d’Adobe Commerce. [API GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/).
+Experience Manager et Adobe Commerce sont intégrés de manière transparente à l’aide de Commerce Integration Framework (CIF). CIF permet à AEM d’accéder directement à l’instance de Commerce et de communiquer avec cette dernière à l’aide des [API GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) d’Adobe Commerce.
 
 >[!NOTE]
 >
@@ -32,10 +32,10 @@ L’architecture globale est la suivante :
 
 ![Aperçu de l’architecture du CIF](../assets/AEM_Magento_Architecture.png)
 
-CIF prend en charge les schémas de communication côté serveur et côté client.
-Les appels d’API côté serveur sont mis en oeuvre à l’aide de la méthode générique intégrée [Client GraphQL](https://github.com/adobe/commerce-cif-graphql-client) en combinaison avec un [ensemble de modèles de données générés](https://github.com/adobe/commerce-cif-magento-graphql) pour le schéma GraphQL de commerce. De plus, toute requête GraphQL ou mutation au format GQL peut être utilisée.
+CIF prend en charge les modèles de communication côté serveur et côté client.
+Les appels d’API côté serveur sont implémentés à l’aide du [client GraphQL](https://github.com/adobe/commerce-cif-graphql-client) générique intégré, en combinaison avec un [ensemble de modèles de données générés](https://github.com/adobe/commerce-cif-magento-graphql) pour le schéma GraphQL de Commerce. De plus, toute requête GraphQL ou mutation au format GQL peut être utilisée.
 
-Pour les composants côté client, qui sont créés à l’aide de [React](https://reactjs.org/), la variable [Client Apollo](https://www.apollographql.com/docs/react/) est utilisée.
+Pour les composants côté client, qui sont créés à l’aide de [React](https://reactjs.org/), le [client Apollo](https://www.apollographql.com/docs/react/) est utilisé.
 
 ## Architecture des composants principaux AEM CIF {#cif-core-components}
 

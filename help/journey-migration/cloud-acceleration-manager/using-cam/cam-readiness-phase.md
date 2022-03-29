@@ -5,7 +5,7 @@ exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1057'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -86,44 +86,44 @@ Suivez les étapes ci-dessous :
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
-### Utilisation de l’option Afficher la courbe de tendance {#trendline-view-cam}
+### Utiliser l’option Afficher la tendance {#trendline-view-cam}
 
-Lorsque vous transférez plusieurs rapports Analyseur des bonnes pratiques (BPA) dans un projet, vous pouvez sélectionner la variable **Afficher la tendance** pour afficher et comparer les résultats des rapports BPA historiques.
+Lorsque vous chargez plusieurs rapports de l’analyseur de bonnes pratiques (BPA) dans un projet, vous pouvez sélectionner l’option **Afficher la tendance** pour afficher et comparer les résultats des rapports BPA historiques.
 
-Pour afficher les rapports à partir de l’option de tendance, procédez comme suit :
+Pour afficher les rapports à partir de l’option de tendance, procédez comme suit :
 
 >[!NOTE]
->Lorsque vous transférez plusieurs rapports d’application d’une seule page dans un projet, la variable **...** icône .
+>Lorsque vous chargez plusieurs rapports BPA dans un projet, l’icône **…** s’affiche.
 
-1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
+1. Accédez à votre projet et cliquez sur **Révision** à partir de la vignette **Analyse des bonnes pratiques** dans la phase **Préparation**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Cliquez sur le bouton **...** pour afficher la liste déroulante.
+1. Cliquez sur l’icône **…** pour afficher la liste déroulante.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
    >[!IMPORTANT]
    >Le rapport affiché est toujours celui dont la date de rapport est la plus récente.
 
-1. Cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
+1. Cliquez sur **Afficher la tendance**, comme illustré ci-dessous.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. Cliquez sur **Afficher la tendance** ouvre la vue de tendance du rapport, comme illustré dans la figure ci-dessous.
+1. Cliquer sur **Afficher la tendance** ouvre la vue de tendance du rapport, comme illustré ci-dessous.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view3a.png)
 
 
    >[!NOTE]
-   >Le rapport de tendance affiche sous forme graphique les résultats des rapports BPA historiques.
+   >Le Rapport de tendances affiche sous forme graphique les résultats des rapports BPA historiques.
    >
-   >Deux graphiques affichent la tendance de :
+   >Deux graphiques affichent les tendances suivantes :
    >1. **Tendance des résultats du rapport**
-   >1. **Composants personnalisés et tendance de modèle**
+   >1. **Tendance de modèle et de composants personnalisés**
 
    >
-   >Vous pouvez ajouter ou modifier la vue graphique à partir de la liste déroulante, comme illustré dans la figure ci-dessous :
+   >Vous pouvez ajouter ou modifier la vue graphique à partir de la liste déroulante, comme illustré ci-dessous :
    >![image](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
 
 
@@ -197,26 +197,26 @@ Consultez cette section pour découvrir la carte de l’activité Planification 
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-5-planning.png)
 
-### Suppression d’un rapport d’analyse des bonnes pratiques {#delete-trendline}
+### Supprimer un rapport d’analyse des bonnes pratiques {#delete-trendline}
 
-Pour supprimer un rapport de la vue Trendline, procédez comme suit :
+Pour supprimer un rapport de la vue Tendance, procédez comme suit :
 
 >[!IMPORTANT]
->Un rapport ne peut être supprimé que lorsque plusieurs rapports ont été chargés dans un projet.
+>Un rapport peut être supprimé uniquement lorsque plusieurs rapports ont été chargés dans un projet.
 
-1. Accédez à votre projet et cliquez sur **Réviser** de la **Analyse des bonnes pratiques** dans la **Préparation** phase.
+1. Accédez à votre projet et cliquez sur **Révision** à partir de la vignette **Analyse des bonnes pratiques** dans la phase **Préparation**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1a.png)
 
-1. Cliquez sur le bouton **...** pour afficher la liste déroulante.
+1. Cliquez sur l’icône **…** pour afficher la liste déroulante.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view1.png)
 
-1. Cliquez sur **Afficher la tendance**, comme illustré dans la figure ci-dessous.
+1. Cliquez sur **Afficher la tendance**, comme illustré ci-dessous.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view2.png)
 
-1. Cliquez sur l’icône de suppression dans la **Rapport de tendance** écran.
+1. Cliquez sur l’icône Supprimer de l’écran **Rapport de tendances**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view5a.png)
 
@@ -224,6 +224,6 @@ Pour supprimer un rapport de la vue Trendline, procédez comme suit :
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/trendline-view6a.png)
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante de la [phase d’implémentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=fr).

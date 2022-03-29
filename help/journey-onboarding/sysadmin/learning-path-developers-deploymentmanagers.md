@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
 source-wordcount: '607'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Si vous lisez cette section, il est probable que vous soyez affecté à un profi
 >* En tant que *responsable de déploiement*, vous souhaiterez vous familiariser avec la configuration des pipelines et même le déploiement de code.
 
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant de commencer, assurez-vous des éléments suivants :
 
@@ -49,13 +49,13 @@ Pour en savoir plus sur cette rubrique, voir [Accès à Git](https://experiencel
 Vous pouvez configurer votre pipeline de production ou hors production à partir de l’interface utilisateur de Cloud Manager.
 Pour en savoir plus sur cette rubrique, voir [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr).
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Développeurs et responsables de déploiement sont maintenant prêts à se familiariser avec la manière de développer du code dans AEM as a Cloud Service. Pour en savoir plus ou trouver d’autres parcours de formation, reportez-vous à la section Ressources supplémentaires ci-dessous. Pour en savoir plus sur le parcours d’apprentissage des auteurs de contenu, consultez le [Chemin d’apprentissage pour les auteurs AEM](/help/journey-onboarding/sysadmin/learning-path-aem-users.md).
 
 >[!TIP]
 >
->Maintenant que vous êtes intégré, vous pouvez [Découvrez comment ajouter facilement le module complémentaire de démonstration de référence d’AEM](/help/journey-sites/demos-add-on/overview.md) dans un environnement de test avec une configuration d’AEM minimale et être en mesure de tester les puissantes fonctionnalités d’AEM avec de riches exemples basés sur les bonnes pratiques.
+>Maintenant que vous êtes intégré, vous pouvez [découvrir comment ajouter facilement le module complémentaire de démonstration de référence d’AEM](/help/journey-sites/demos-add-on/overview.md) à un environnement sandbox avec une configuration minimale d’AEM et être en mesure de tester les puissantes fonctionnalités d’AEM avec de riches exemples basés sur les bonnes pratiques.
 
 ## Ressources supplémentaires {#additional-resources}
 
@@ -71,16 +71,16 @@ Développeurs et responsables de déploiement sont maintenant prêts à se famil
 
 * [Prise en main d’AEM Headless - GraphQL ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr)
 
-* [Prise en main de l’Éditeur SPA d’AEM pour les développeurs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Prise en main de l’Éditeur SPA d’AEM pour les développeurs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;lang=fr#courses)
 
 ## Cours Experience League {#exp-league-courses}
 
 Suivez les cours Experience League pour en savoir plus. Vérifiez que vous êtes inscrit pour accéder aux cours :
 
-* [Sites traditionnels](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Sites traditionnels](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;lang=fr#courses)
 
-* [Éditeur SPA](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Éditeur SPA](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;lang=fr#courses)
 
-* [Découplé](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Découplé](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;lang=fr#courses)
 
-* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens#courses)
+* [Commerce](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;lang=fr#courses)

@@ -1,15 +1,15 @@
 ---
-title: Développement d’un composant personnalisé pour Screens as a Cloud Service
+title: Développement d’un composant personnalisé pour Screens as a Cloud Service
 description: Le tutoriel suivant décrit les étapes à suivre pour créer un composant personnalisé pour AEM Screens. AEM Screens réutilise de nombreux modèles de conception et technologies existants d’autres produits AEM. Ce tutoriel met en évidence les différences et les considérations spéciales lors du développement pour AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2125'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Développement d’un composant personnalisé pour AEM Screens as a Cloud Service{#developing-a-custom-component-for-aem-screens}
+# Développement d’un composant personnalisé pour AEM Screens as a Cloud Service{#developing-a-custom-component-for-aem-screens}
 
 Le tutoriel suivant décrit les étapes à suivre pour créer un composant personnalisé pour AEM Screens. AEM Screens réutilise de nombreux modèles de conception et technologies existants d’autres produits AEM. Ce tutoriel met en évidence les différences et les considérations spéciales lors du développement pour AEM Screens.
 
@@ -18,11 +18,11 @@ Le tutoriel suivant décrit les étapes à suivre pour créer un composant perso
 Ce tutoriel est destiné aux développeurs qui découvrent AEM Screens. Dans ce tutoriel, un simple composant « Hello World » est créé pour un canal de séquence dans AEM Screens. Une boîte de dialogue permet aux auteurs de mettre à jour le texte affiché.
 
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour suivre ce tutoriel, vous avez besoin de :
 
-1. Dernier Feature Pack Screens
+1. Dernières Screens Feature Pack
 
 1. Lecteur AEM Screens
 
@@ -85,15 +85,15 @@ Le code source d’un projet Screens est généralement géré sous la forme d�
 
    ![we-retaiul-run-starter](/help/screens-cloud/developing/assets/we-retaiul-run-starter.png)
 
-## Création du composant Hello World {#hello-world-cmp}
+## Création du composant Hello World {#hello-world-cmp}
 
 Le composant Hello World est un composant simple qui permet à un utilisateur de saisir un message à afficher à l’écran. Le composant est basé sur le [Modèle de composant AEM Screens : https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template](https://github.com/Adobe-Marketing-Cloud/aem-screens-component-template).
 
 AEM Screens présente des contraintes intéressantes qui ne sont pas nécessairement vraies pour les composants des sites WCM traditionnels.
 
 * La plupart des composants Screens doivent s’exécuter en mode plein écran sur les appareils de signalétique numérique cibles.
-* La plupart des composants Screens doivent être incorporés dans les canaux de séquence pour générer des diaporamas.
-* La création doit permettre de modifier des composants individuels dans un canal de séquence. Par conséquent, le rendu en plein écran est hors de question.
+* La plupart des composants Screens doivent être incorporables dans les canaux de séquence pour générer des diaporamas.
+* La création doit permettre de modifier individuellement les composants d’un canal de séquence, de sorte que le rendu en mode plein écran est exclu.
 
 1. Dans **CRXDE-Lite** `http://localhost:4502/crx/de/index.jsp` (ou l’IDE choisi), accédez à `/apps/weretail-run/components/content/helloworld.`
 

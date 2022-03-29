@@ -267,7 +267,7 @@ Par exemple : `http://<host>:<port>/editor.html/content/wknd/language-masters/e
 
 Vous pouvez sélectionner un ou plusieurs composants pour créer un bloc de création à recycler dans votre fragment :
 
-### Création d’un bloc {#creating-a-building-block}
+### Création d’un bloc de création {#creating-a-building-block}
 
 Pour créer un bloc de ce type, procédez comme suit :
 
@@ -308,7 +308,7 @@ Lors de la modification d’un fragment d’expérience, les blocs de création 
 
 ![Sélection de blocs de création](/help/sites-cloud/authoring/assets/xf-14.png)
 
-## Détails de votre Éditeur de fragments {#details-of-your-experience-fragment}
+## Détails de votre fragment d’expérience {#details-of-your-experience-fragment}
 
 Les détails de votre fragment sont visibles :
 
@@ -347,7 +347,7 @@ Les détails sont affichés dans toutes les vues de la console **Éditeur de Fra
    * **Références**
       * Liste de références
 
-## Rendu HTML brut {#the-plain-html-rendition}
+## Rendu HTML brut {#the-plain-html-rendition}
 
 Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut à partir du navigateur.
 

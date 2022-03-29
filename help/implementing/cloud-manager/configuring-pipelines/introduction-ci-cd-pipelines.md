@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1364'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
@@ -57,7 +57,7 @@ Outre la production et les pipelines hors production, les pipelines peuvent êtr
 
 Elles sont décrites en détail plus loin dans ce document.
 
-### Présentation des pipelines CI-CD dans Cloud Manager {#understand-pipelines}
+### Présentation des pipelines CI-CD dans Cloud Manager {#understand-pipelines}
 
 Le tableau suivant récapitule tous les pipelines disponibles dans Cloud Manager et leur utilisation.
 
@@ -114,7 +114,7 @@ Les pipelines front-end aident vos équipes à rationaliser votre processus de c
 >
 >Un utilisateur avec la variable **Responsable de déploiement** peut créer et exécuter plusieurs pipelines front-end simultanément.
 >
->Cependant, il existe une limite maximale de 300 pipelines par programme (pour tous les types de pipelines). Il peut s’agir de pipelines de qualité de code frontal ou de déploiement front-end.
+>Toutefois, il existe une limite maximale de 300 pipelines par programme (pour tous les types de pipelines). Il peut s’agir de pipelines de qualité de code frontal ou de déploiement front-end.
 
 Les pipelines front-end peuvent être des pipelines ou un déploiement de qualité de code.
 
@@ -127,9 +127,9 @@ Avant de configurer les pipelines front-end, consultez la section [parcours de c
 Pour savoir comment configurer les pipelines front-end, reportez-vous aux documents suivants.
 
 * [Ajout d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [Ajout d’un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
-### Développement de sites avec le pipeline front-end {#developing-with-front-end-pipeline}
+### Développer des sites avec le pipeline front-end {#developing-with-front-end-pipeline}
 
 Avec les pipelines front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut être accéléré.
 
@@ -140,7 +140,7 @@ Reportez-vous au document [Développement de sites avec le pipeline front-end](/
 Pour savoir comment configurer des pipelines pleine pile, reportez-vous aux documents suivants.
 
 * [Ajout d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [Ajout d’un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
 
 
 ## Pipelines de configuration de niveau web {#web-tier-config-pipelines}
@@ -173,4 +173,4 @@ Les pipelines de configuration de niveau web peuvent être de type qualité de c
 Pour savoir comment configurer des pipelines de configuration de niveau web, reportez-vous aux documents suivants.
 
 * [Ajout d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#adding-production-pipeline)
-* [Ajouter un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)
+* [Ajout d’un pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#adding-non-production-pipeline)

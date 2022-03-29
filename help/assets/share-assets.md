@@ -1,6 +1,6 @@
 ---
 title: Distribution et partage de ressources, dossiers et collections
-description: Distribution de vos ressources numériques à l’aide de méthodes telles que le partage en tant que lien, le téléchargement et par l’intermédiaire de [!DNL Brand Portal], [!DNL desktop app], et [!DNL Asset Link].
+description: Distribuez vos ressources numériques à l’aide de méthodes telles que le partage sous forme de lien, le téléchargement et via [!DNL Brand Portal], [!DNL desktop app] et [!DNL Asset Link].
 contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
@@ -8,7 +8,7 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
 workflow-type: tm+mt
 source-wordcount: '1287'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
@@ -19,12 +19,12 @@ ht-degree: 56%
 * [Partager des ressources en tant que lien](#sharelink).
 * [Télécharger des ressources et les partager séparément.](/help/assets/download-assets-from-aem.md)
 * Partagez à l’aide de l’appli de bureau [[!DNL Experience Manager]  ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr).
-* Partagez à l’aide d’[[!DNL Adobe Asset Link]](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
+* Partagez à l’aide d’[[!DNL Adobe Asset Link]](https://www.adobe.com/fr/creativecloud/business/enterprise/adobe-asset-link.html).
 * Partagez à l’aide de [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr).
 
 ## Partage de ressources en tant que lien {#sharelink}
 
-Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de tiers, de marketeurs et d’autres utilisateurs externes. [!DNL Experience Manager] utilisateurs. Cette fonctionnalité permet aux utilisateurs anonymes d’accéder aux ressources partagées avec eux et de les télécharger. Lors du téléchargement de ressources à partir d’un lien partagé, [!DNL Experience Manager Assets] utilise un service asynchrone qui offre un téléchargement plus rapide et ininterrompu. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans les archives ZIP de taille de fichier gérable. Pour les téléchargements volumineux, le téléchargement est regroupé en plusieurs fichiers de 100 Go par taille de fichier.
+Le partage de ressources par le biais d’un lien est un moyen pratique de mettre les ressources à la disposition de tiers, de responsables marketing et d’autres utilisateurs [!DNL Experience Manager]. Cette fonctionnalité permet aux utilisateurs anonymes d’accéder aux ressources partagées avec eux et de les télécharger. Lors du téléchargement des ressources à partir d’un lien partagé, [!DNL Experience Manager Assets] utilise un service asynchrone qui permet d’effectuer des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans les archives ZIP de taille de fichier gérable. Pour les téléchargements volumineux, le téléchargement est regroupé en plusieurs fichiers de 100 Go par taille de fichier.
 
 <!--
 Users with administrator privileges or with read permissions at `/var/dam/share` location are able to view the links shared with them. 
@@ -33,63 +33,63 @@ Users with administrator privileges or with read permissions at `/var/dam/share`
 >[!NOTE]
 >
 >* Vous devez disposer de l’autorisation Modifier l’ACL pour le dossier ou la ressource que vous souhaitez partager sous forme d’un lien.
->* [Activer les emails sortants](/help/implementing/developing/introduction/development-guidelines.md#sending-email) avant de partager un lien avec les utilisateurs.
+>* [Activer les e-mails sortants](/help/implementing/developing/introduction/development-guidelines.md#sending-email) avant de partager un lien avec les utilisateurs.
 
 
-Il existe deux façons de partager les ressources à l’aide de la fonctionnalité de partage de lien :
+Il existe deux façons de partager les ressources à l’aide de la fonctionnalité de partage de lien :
 
-1. Générer un lien partagé, [copier et partager le lien de la ressource ;](#copy-and-share-assets-link) avec d’autres utilisateurs. Le délai d’expiration par défaut du lien est d’un jour. Vous ne pouvez pas modifier le délai d’expiration lors du partage du lien copié avec d’autres utilisateurs.
+1. Générer un lien partagé, [le copier et partager le lien de la ressource](#copy-and-share-assets-link) avec d’autres utilisateurs. Le délai d’expiration par défaut du lien est de 1 jour. Vous ne pouvez pas modifier le délai d’expiration lors du partage du lien copié avec d’autres utilisateurs.
 
-1. Générer un lien partagé et [partager le lien de la ressource par courrier électronique ;](#share-assets-link-through-email). Dans ce cas, vous pouvez modifier les valeurs par défaut, telles que la date et l’heure d’expiration, et permettre le téléchargement des ressources d’origine et de ses rendus. Vous pouvez envoyer des e-mails à plusieurs utilisateurs en ajoutant leurs adresses électroniques.
+1. Générer un lien partagé et [partager le lien de la ressource par e-mail](#share-assets-link-through-email). Dans ce cas, vous pouvez modifier les valeurs par défaut, telles que la date et l’heure d’expiration, et permettre le téléchargement des ressources d’origine et de ses rendus. Vous pouvez envoyer des e-mails à plusieurs utilisateurs en ajoutant leurs adresses électroniques.
 
 ![Boîte de dialogue Partage de liens](assets/link-sharing-dialog.png)
 
 ### Copier et partager le lien de la ressource{#copy-and-share-asset-link}
 
-Pour partager des ressources sous la forme d’une URL publique :
+Pour partager des ressources sous la forme d’une URL publique :
 
 1. Connectez-vous à [!DNL Experience Manager Assets] et accédez à **[!UICONTROL Fichiers]**.
 1. Sélectionnez les ressources ou le dossier contenant les ressources. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager le lien]**.
-1. Le **[!UICONTROL Partage de liens]** s’affiche, avec un lien de ressource généré automatiquement dans la **[!UICONTROL Partager le lien]** champ .
-1. Copiez le lien de la ressource et partagez-le avec les utilisateurs.
+1. La boîte de dialogue **[!UICONTROL Partage de liens]** s’affiche, avec un lien de ressource généré automatiquement dans le champ **[!UICONTROL Partager le lien]**.
+1. Copiez ce lien de ressource et partagez-le avec des utilisateurs.
 
-### Partage de lien de ressource par courrier électronique {#share-assets-link-through-email}
+### Partager des liens de ressources avec des notifications d’e-mails {#share-assets-link-through-email}
 
-Pour partager des ressources par courrier électronique :
+Pour partager des ressources par e-mail :
 
 1. Sélectionnez les ressources ou le dossier contenant les ressources. Dans la barre d’outils, cliquez sur **[!UICONTROL Partager le lien]**.
-1. Le **[!UICONTROL Partage de liens]** s’affiche, avec un lien de ressource généré automatiquement dans la **[!UICONTROL Partager le lien]** champ .
+1. La boîte de dialogue **[!UICONTROL Partage de liens]** s’affiche, avec un lien de ressource généré automatiquement dans le champ **[!UICONTROL Partager le lien]**.
 
    * Dans la zone d’e-mail, saisissez l’adresse e-mail de l’utilisateur avec lequel vous souhaitez partager le lien. Vous pouvez partager le lien avec plusieurs utilisateurs. Si l’utilisateur appartient à votre organisation, sélectionnez son e-mail dans la liste déroulante de suggestions qui s’affiche. Si l’utilisateur est externe à votre organisation, saisissez l’e-mail complet et appuyez sur **[!UICONTROL Entrée]** pour l’ajouter à la liste des utilisateurs.
 
-   * Dans le **[!UICONTROL Objet]** , saisissez un objet pour spécifier l’objectif des ressources partagées.
+   * Dans la zone **[!UICONTROL Objet]**, saisissez un objet pour préciser l’objectif des ressources partagées.
    * Dans la zone **[!UICONTROL Message]**, vous pouvez, au besoin, saisir un message.
-   * Dans le champ **[!UICONTROL Expiration]**, spécifiez la date et l’heure d’expiration du lien à l’aide du sélecteur de date.
-   * Activez la variable **[!UICONTROL Autoriser le téléchargement du fichier d’origine]** pour permettre aux destinataires de télécharger le rendu d’origine.
+   * Dans le champ **[!UICONTROL Expiration]**, indiquez une date et une heure d’expiration du lien à l’aide du sélecteur de date.
+   * Cochez la case **[!UICONTROL Autoriser le téléchargement du fichier original]** pour permettre aux destinataires de télécharger le rendu original.
 
 1. Cliquez sur **[!UICONTROL Partager]**. Un message confirme le partage du lien avec les utilisateurs. Les utilisateurs reçoivent un e-mail contenant le lien partagé.
 
-![Message Partage de lien](assets/link-sharing-email-notification.png)
+![E-mail de partage de lien](assets/link-sharing-email-notification.png)
 
-### Téléchargement de ressources à l’aide du lien de ressource
+### Télécharger les ressources à l’aide du lien de ressource
 
-Tout utilisateur ayant accès au lien de la ressource partagée peut télécharger les ressources regroupées dans un dossier zip. Le processus de téléchargement est le même, qu’un utilisateur accède au lien de la ressource copiée ou qu’il utilise le lien de la ressource partagé par le biais du courrier électronique.
+Tout utilisateur ayant accès au lien de la ressource partagée peut télécharger les ressources regroupées dans un dossier zip. Le processus de téléchargement est le même, qu’un utilisateur accède au lien de la ressource copiée ou qu’il utilise le lien de la ressource partagé par e-mail.
 
-* Cliquez sur le lien de la ressource ou collez l’URL dans votre navigateur. Le [!UICONTROL Partage de liens] s’ouvre dans laquelle vous pouvez passer à la [!UICONTROL Mode Carte] ou [!UICONTROL Mode Liste].
+* Cliquez sur le lien de la ressource ou collez l’URL dans votre navigateur. L’interface [!UICONTROL Partage de liens] s’ouvre et vous pouvez basculer vers la [!UICONTROL Vue Vignette] ou la [!UICONTROL Vue Liste].
 
-* Dans le [!UICONTROL Mode Carte], vous pouvez placer le pointeur de la souris sur la ressource partagée ou le dossier de ressources partagées pour sélectionner les ressources ou les mettre en file d’attente pour téléchargement.
+* Dans la [!UICONTROL Vue Vignette], vous pouvez placer le pointeur de la souris sur la ressource partagée ou le dossier de ressources partagées pour sélectionner les ressources ou les mettre en file d’attente pour téléchargement.
 
-* Par défaut, l’interface utilisateur affiche la variable **[!UICONTROL Télécharger la boîte de réception]** . Il indique la liste de toutes les ressources partagées ou de tous les dossiers mis en file d’attente pour téléchargement, ainsi que leur état.
+* Par défaut, l’interface utilisateur affiche l’option **[!UICONTROL Boîte de réception de téléchargement]**. Elle indique la liste de toutes les ressources partagées ou de tous les dossiers mis en file d’attente pour téléchargement, ainsi que leur statut.
 
-* Lors de la sélection des ressources ou du dossier, une **[!UICONTROL Téléchargement de la file d’attente]** s’affiche à l’écran. Cliquez sur le bouton **[!UICONTROL Téléchargement de la file d’attente]** pour lancer le processus de téléchargement.
+* Lorsque vous sélectionnez les ressources ou le dossier, une option **[!UICONTROL Mettre le téléchargement en file d’attente]** s’affiche à l’écran. Cliquez sur l’option **[!UICONTROL Mettre le téléchargement en file d’attente]** pour lancer le processus de téléchargement.
 
-   ![Téléchargement de la file d’attente](assets/queue-download.png)
+   ![Mettre le téléchargement en file d’attente](assets/queue-download.png)
 
-* Lorsque le fichier de téléchargement est préparé, cliquez sur le **[!UICONTROL Télécharger la boîte de réception]** pour afficher l’état de votre téléchargement. Pour les téléchargements volumineux, cliquez sur le **[!UICONTROL Actualiser]** pour mettre à jour l’état.
+* Pendant la préparation du fichier de téléchargement, cliquez sur l’option **[!UICONTROL Boîte de réception de téléchargement]** pour afficher le statut de votre téléchargement. Pour les téléchargements volumineux, cliquez sur le bouton **[!UICONTROL Actualiser]** pour mettre à jour le statut.
 
    ![Boîte de réception de téléchargement](assets/link-sharing-download-inbox.png)
 
-* Une fois le traitement terminé, cliquez sur l’icône **[!UICONTROL Télécharger]** pour télécharger le fichier zip.
+* Une fois le traitement terminé, cliquez sur le bouton **[!UICONTROL Télécharger]** pour télécharger le fichier zip.
 
 <!--
 You can also copy the auto-generated link and share it with the users. The default expiration time for the link is one day.

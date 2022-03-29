@@ -5,7 +5,7 @@ exl-id: c93d0242-0c15-4d69-82a1-d6fcc7da4bae
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -65,4 +65,4 @@ Voici nos recommandations concernant l’utilisation des workflows AEM et le sto
 
 * N’utilisez pas d’étape de workflow AEM personnalisée dans un modèle de workflow pour stocker des données dans le référentiel CRX DE.
 
-* Lorsque vous [configuration d’un modèle de workflow AEM pour le stockage de données externes](#configure-workflow-external-data-storage), ne créez pas de colonnes personnalisées pour la boîte de réception AEM , car les valeurs des colonnes personnalisées ne sont pas récupérées si l’élément de travail de la boîte de réception AEM appartient à un workflow marqué pour le stockage externe.
+* Lorsque vous [configurez un modèle de processus AEM pour le stockage externe des données](#configure-workflow-external-data-storage), ne créez pas de colonnes personnalisées pour la boîte de réception AEM, car les valeurs des colonnes personnalisées ne sont pas récupérées si l’élément de travail de la boîte de réception AEM appartient à un processus marqué pour le stockage externe.

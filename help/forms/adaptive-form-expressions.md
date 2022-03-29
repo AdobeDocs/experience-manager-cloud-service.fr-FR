@@ -16,7 +16,7 @@ Les formulaires adaptatifs facilitent et optimisent le remplissage des formulair
 
 JavaScript™ est le langage d’expression utilisé pour les formulaires adaptatifs. Toutes les expressions sont des expressions JavaScript™ valides qui utilisent des API de modèle de script pour les formulaires adaptatifs. Ces expressions renvoient des valeurs de certains types. Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez [Référence à l’API de la bibliothèque JavaScript™ pour les formulaires adaptatifs](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html).
 
-## Recommandations relatives à l’écriture d’expressions {#best-practices-for-writing-expressions}
+## Bonnes pratiques relatives à l’écriture d’expressions {#best-practices-for-writing-expressions}
 
 * Lors de l’écriture d’expressions, pour accéder aux champs et aux panneaux, vous pouvez utiliser le nom du champ ou du panneau. Pour accéder à la valeur d’un champ, utilisez la propriété de la valeur. Par exemple, `field1.value`
 * Utilisez des noms uniques pour l’ensemble des champs et des panneaux du formulaire. Vous éviterez ainsi les conflits possibles créés à cause des noms de champs lors de l’écriture d’expressions.
@@ -64,7 +64,7 @@ Vous pouvez utiliser l’expression d’accès pour activer ou désactiver un ch
 
 ### Expression de calcul {#calculate-expression}
 
-L’expression de calcul est utilisée pour calculer automatiquement la valeur d’un champ à l’aide d’une expression. En règle générale, une telle expression utilise une propriété de valeur d’autres champs. Par exemple, `field2.value + field3.value`. Dès lors que la valeur de `field2` ou `field3` est modifiée, l’expression est redéclenchée et la valeur est recalculée.
+L’expression de calcul est utilisée pour calculer automatiquement la valeur d’un champ à l’aide d’une expression. En règle générale, une telle expression utilise une propriété de valeur d’autres champs. Par exemple, `field2.value + field3.value`. Dès lors que la valeur de `field2`ou `field3`est modifiée, l’expression est redéclenchée et la valeur est recalculée.
 
 **Application pour** : champs
 
@@ -220,7 +220,7 @@ GuideBridge se compose d’un ensemble d’API qui peuvent être utilisées en i
 
 * Pour valider un formulaire adaptatif ou ses panneaux spécifiques, utilisez `guideBridge.validate(errorList, somExpression).`
 
-#### Utilisation de GuideBridge en dehors des expressions  {#using-guidebridge-outside-expressions-nbsp}
+#### Utiliser GuideBridge en dehors des expressions {#using-guidebridge-outside-expressions-nbsp}
 
 Vous pouvez également utiliser les API GuideBridge en dehors des expressions. Par exemple, vous pouvez utiliser les API GuideBridge pour définir la communication entre la page HTML qui héberge le formulaire adaptatif et le modèle de formulaire. En outre, vous pouvez définir la valeur qui provient du parent d’Iframe qui héberge le formulaire.
 
@@ -250,7 +250,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 Pour utiliser GuideBridge après l’initialisation du formulaire (l’événement `bridgeInitializeComplete` est distribué), obtenez l’instance GuideBridge à l’aide de `window.guideBridge`. Vous pouvez vérifier l’état d’initialisation de GuideBridge à l’aide de l’API `guideBride.isConnected`.
 
-#### Evénements de GuideBridge {#guidebridge-events}
+#### Événements de GuideBridge {#guidebridge-events}
 
 GuideBridge fournit également certains événements pour les scripts externes de la page d’hébergement. Les scripts externes peuvent écouter ces événements et effectuer diverses opérations. Par exemple, lorsque le nom d’utilisateur d’un formulaire est modifié, le nom affiché dans l’en-tête de la page est également modifié. Pour plus d’informations sur ces événements, consultez [référence d’API de bibliothèque JavaScript™ pour les formulaires adaptatifs](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 

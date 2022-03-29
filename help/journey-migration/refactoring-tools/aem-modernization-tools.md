@@ -28,6 +28,6 @@ Les outils de modernisation d’AEM permettent de convertir facilement :
 
 Pour en savoir plus sur la planification, la configuration et le développement pour la suite d’outils de modernisation d’AEM, voir **[Présentation des outils de modernisation d’AEM](https://opensource.adobe.com/aem-modernize-tools/)**.
 
-## Installation et mise en œuvre de la suite d’outils de modernisation d’AEM {#installing-implementing}
+## Installation et implémentation de la suite d’outils de modernisation d’AEM {#installing-implementing}
 
-Pour en savoir plus sur l’installation et la mise en œuvre, voir **[Ressource Git : suite d’outils de modernisation d’AEM](https://github.com/adobe/aem-modernize-tools)**.
+Pour en savoir plus sur l’installation et l’implémentation, consultez la section **[Ressource Git : suite d’outils de modernisation d’AEM](https://github.com/adobe/aem-modernize-tools)**.

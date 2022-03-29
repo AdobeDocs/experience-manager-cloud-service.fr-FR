@@ -36,7 +36,7 @@ Un assistant de création de thème se lance.
 
 1. Cliquez sur **[!UICONTROL Créer]**, puis sur **[!UICONTROL Modifier]** pour ouvrir le thème dans l’éditeur de thèmes, ou cliquez sur **[!UICONTROL Terminé]** pour revenir à la page de thèmes.
 
-### Différence des thèmes entre Experience Manager 6.5 Forms et les versions antérieures {#difference-in-themes}
+### Différence des thèmes entre Experience Manager 6.5 Forms et les versions antérieures {#difference-in-themes}
 
 Thèmes créés sur une instance de Cloud Service.
 
@@ -236,7 +236,7 @@ Cliquer sur le bouton Modifier au niveau d’un composant dans la barre latéral
 
 Certains composants tels que la zone de texte, la zone numérique, le bouton radio et la case à cocher sont classés sous des composants génériques comme Champ. Par exemple, vous souhaitez personnaliser le style des boutons radio. Pour sélectionner des boutons radio à mettre en forme, sélectionnez **[!UICONTROL Champ]** > **[!UICONTROL Widget]** > **[!UICONTROL Bouton radio]**.
 
-### Mise en forme des mises en page de panneau {#styling-panel-layouts-br}
+### Mettre en forme les mises en page de panneaux {#styling-panel-layouts-br}
 
 Les thèmes dans [!DNL AEM Forms] prennent en charge la mise en forme d’éléments de la disposition des panneaux dans vos formulaires<!-- and  interactive communications -->. La mise en forme d’éléments de mises en page prêtes à l’emploi et personnalisées est prise en charge.
 
@@ -259,7 +259,7 @@ La mise en forme des dispositions personnalisées à partir de l’éditeur de t
 * La définition des propriétés CSS pouvant être appliquées sur ces composants.
 * Définissez la mise en forme de ces composants de manière interactive à partir de l’interface utilisateur.
 
-### Styles différents pour différentes tailles d’écran {#different-styles-for-different-screen-sizes-br}
+### Différents styles pour différentes tailles d’écran {#different-styles-for-different-screen-sizes-br}
 
 Les dispositions sur les appareils de bureau et mobiles ont parfois des styles légèrement ou entièrement différents. Pour les appareils mobiles, la tablette et le téléphone partagent des dispositions similaires, à l’exception des tailles des composants.
 
@@ -269,7 +269,7 @@ Utilisez des points d’arrêt de l’éditeur de thèmes pour définir une autr
 >
 ><!-- or interactive communication-->Le thème est d’abord créé à l’aide d’un formulaire, puis appliqué sur différents formulaires<!-- or interactive communications-->. Les points d’arrêt utilisés lors de la création du thème peuvent être différents du formulaire <!-- or interactive communication --> sur lequel le thème est appliqué. <!-- or interactive communication -->Les requêtes multimédias CSS sont basées sur le formulaire utilisé lors de la création du thème, et non sur le formulaire auquel le thème est appliqué.<!-- or interactive communication -->
 
-### Mise en forme des modifications en contexte des propriétés de la barre latérale lors de la sélection d’objets {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
+### Mettre en forme des modifications en contexte des propriétés de la barre latérale lors de la sélection d’objets {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
 Lorsque vous sélectionnez un composant dans Zone de travail, ses propriétés de mise en forme sont répertoriées dans la barre latérale. Sélectionnez le type d’objet et son état, puis indiquez sa mise en forme.
 
@@ -298,7 +298,7 @@ Lorsque vous attribuez un nom personnalisé pour un style, le style est lié à 
 
    ![Supprimer le style enregistré](assets/manage-styles.png)
 
-### Aperçu, enregistrement et ignorer les modifications en direct {#live-preview-save-and-discard-changes}
+### Prévisualiser, enregistrer et ignorer les modifications en direct {#live-preview-save-and-discard-changes}
 
 Les modifications apportées à la mise en forme sont immédiatement répercutées dans le formulaire <!-- or interactive communication --> chargé dans la zone de travail. L’aperçu en direct vous permet de définir de manière interactive et de voir l’impact de la mise en forme. Lorsque vous modifiez la mise en forme d’un composant, le bouton **[!UICONTROL Terminé]** est activé dans la barre latérale. Pour conserver les modifications, utilisez le bouton **[!UICONTROL Terminé]**.
 
@@ -324,7 +324,7 @@ Vous pouvez annuler ou rétablir les modifications indésirables qui se produis
 
 Les boutons Rétablir/annuler apparaissent lorsque vous mettez en forme un composant dans l’éditeur de thèmes.
 
-## Utilisation de l’éditeur de thèmes {#using-the-theme-editor}
+## Utiliser l’éditeur de thèmes {#using-the-theme-editor}
 
 L’éditeur de thèmes vous permet de modifier un thème que vous avez créé ou téléchargé. Accédez à **[!UICONTROL Formulaires et documents]** > **[!UICONTROL Thèmes]**, sélectionnez un thème et ouvrez-le. Le thème s’ouvre dans l’éditeur de thèmes.
 
@@ -333,7 +333,7 @@ Comme nous l’avons mentionné ci-dessus, l’éditeur de thèmes présente deu
 
 Personnalisation du style de réussite du composant Widget de zone de texte dans l’éditeur de thèmes. Le composant est sélectionné dans la zone de travail, et son état est sélectionné dans la barre latérale. Les options de mise en forme disponibles dans la barre latérale sont utilisées pour personnaliser l’aspect d’un composant.
 
-### Utilisation de la zone de travail {#using-canvas}
+### Utiliser la zone de travail {#using-canvas}
 
 Le thème est créé à l’aide du formulaire prêt à l’emploi ou du formulaire <!-- or interactive communication --> de votre choix. La zone de travail affiche un aperçu du formulaire ou de la <!-- interactive communication --> utilisé(e) pour créer le thème avec les personnalisations spécifiées dans le thème. La règle au-dessus du formulaire est utilisée pour déterminer la disposition selon la taille de l’affichage de votre appareil.
 
@@ -360,7 +360,7 @@ Lorsque vous sélectionnez un composant dans la zone de travail, vous voyez la b
 >
 >Les options disponibles dans la barre d’outils de composants varient en fonction du composant sélectionné.
 
-### Utilisation de la barre latérale {#using-rail}
+### Utiliser la barre latérale {#using-rail}
 
 La barre latérale dans l’éditeur de thèmes fournit des options pour personnaliser les styles pour les composants d’un thème et pour utiliser des sélecteurs. Les sélecteurs vous permettent de sélectionner un groupe de composants ou des composants individuels ; vous pouvez également rechercher des sélecteurs dans la barre latérale. Vous pouvez saisir des sélecteurs pour les composants personnalisés.
 
@@ -369,7 +369,7 @@ Vous trouverez ci-dessous les options qui s’affichent dans la barre latérale 
 
 * État
 * Feuille de propriété
-* Simuler une erreur/la réussite
+* Simuler une erreur/un succès
 
 #### État {#state}
 
@@ -394,7 +394,7 @@ Les options de personnalisation des styles d’état varient en fonction des dif
    <td><p>Vous permet de personnaliser les styles de texte dans le composant du thème.</p> <p>Par exemple, vous souhaitez modifier l’aspect du texte saisi dans la zone de texte.</p> <p>Vos options sont les suivantes : famille de polices, épaisseur, couleur, taille, hauteur de ligne, alignement du texte, espacement, interlettrage, retrait du texte, surlignement, italique, transformation de texte, alignement vertical, ligne de base et orientation. </p> </td>
   </tr>
   <tr>
-   <td><p>Arrière-plan </p> </td>
+   <td><p>Contexte </p> </td>
    <td><p>Vous permet de remplir l’arrière-plan du composant par une image ou une couleur. </p> </td>
   </tr>
   <tr>
@@ -416,7 +416,7 @@ Les options de personnalisation des styles d’état varient en fonction des dif
  </tbody>
 </table>
 
-#### Simuler une erreur/la réussite {#simulate-error-success}
+#### Simuler une erreur/un succès {#simulate-error-success}
 
 Les options Simuler une erreur et une réussite sont situées en bas de la barre latérale. Vous pouvez les afficher à l’aide de la flèche afficher/masquer visible en bas de la barre latérale. À l’aide de l’éditeur de thèmes, vous pouvez définir le style des différents états d’un composant.
 
@@ -446,7 +446,7 @@ Utilisez l’option **[!UICONTROL Dimension et position]** dans la barre latér
 
 Au lieu de sélectionner **[!UICONTROL Widget de zone numérique]**, sélectionnez **[!UICONTROL Widget de champ]** dans la barre d’outils de composants et effectuez les étapes ci-dessus. Quand vous sélectionnez des dimensions pour l’option **[!UICONTROL Widget de champ]**, toutes les zones de texte, à l’exception de la zone numérique, ont la même taille.
 
-### Mise en forme des champs pour un état donné {#styling-fields-given-state}
+### Mettre en forme des champs pour un état donné {#styling-fields-given-state}
 
 Avec la barre d’outils de composants, vous pouvez également spécifier la mise en forme des composants pour les différents états. Par exemple, si un composant est désactivé, il est à l’état désactivé. Les états généralement utilisés d’un composant que vous pouvez mettre en forme dans l’éditeur de thèmes sont les suivants : Par défaut, Activé, Désactivé, Erreur, Succès et Survol. Vous pouvez sélectionner un composant dans la zone de travail et utiliser l’option État de la zone de travail pour personnaliser son aspect.
 
@@ -462,7 +462,7 @@ Lorsque vous personnalisez la mise en forme d’un composant après avoir spéci
 
 Pour simuler le comportement d’états autres que l’erreur et la réussite, utilisez le mode Aperçu. Pour utiliser le mode Aperçu, cliquez sur **[!UICONTROL Aperçu]** dans la barre d’outils de la page.
 
-### Mise en forme des mises en page pour des écrans de plus petite taille {#styling-layouts-for-smaller-displays}
+### Mettre en forme des mises en page pour des écrans de plus petite taille {#styling-layouts-for-smaller-displays}
 
 Utilisez la règle dans la zone de travail pour sélectionner des points d’arrêt pour les périphériques équipés de plus petits écrans. Cliquez sur l’émulateur ![ruler](assets/emulator-icon.svg) dans la zone de travail pour afficher la règle et les points d’arrêt. Les points d’arrêt vous permettent de prévisualiser un formulaire <!-- or interactive communication --> pour les formats d’affichage de différents périphériques tels que les téléphones et les tablettes. Plusieurs formats d’affichage sont pris en charge dans l’éditeur de thèmes.
 
@@ -475,7 +475,7 @@ Un point d’arrêt représente un périphérique mobile et son format d’affic
 
 Vous pouvez mettre en forme des <!-- or interactive communication -->composants de formulaire pour plusieurs périphériques. Les composants de <!-- and interactive communication -->formulaire pour les ordinateurs de bureau et les périphériques mobiles ont parfois des styles totalement différents.
 
-### Utilisation des polices web dans un thème {#using-web-fonts-in-a-theme}
+### Utiliser des polices web dans un thème {#using-web-fonts-in-a-theme}
 
 Vous pouvez désormais utiliser les polices disponibles dans un service Web dans un formulaire adaptatif <!-- or interactive communication -->. [Adobe Fonts](https://fonts.adobe.com/), le service prêt à l’emploi de polices Web d’Adobe, est disponible sous forme de configuration. Pour utiliser Adobe Fonts, créez un kit, ajoutez-y des polices et obtenez l’identifiant du kit auprès de [Adobe Fonts](https://fonts.adobe.com/).
 
@@ -509,7 +509,7 @@ You can use the theme configuration service to add more fonts to the theme edito
 
 1. Click +, specify the name of the font, and click **Save**. The font is added and available in theme editor. -->
 
-#### Sélection de polices dans l’éditeur de thèmes {#selecting-fonts-in-theme-editor}
+#### Sélectionner des polices dans l’éditeur de thèmes {#selecting-fonts-in-theme-editor}
 
 Vous pouvez utiliser le bouton + pour ajouter une police. Lorsque vous ajoutez une police, elle est répertoriée dans la barre latérale.
 
@@ -537,7 +537,7 @@ L’exemple ci-dessous montre des styles masqués et non masqués dans un thème
 
 ![Styles masqués et non masqués](assets/mask2.png)
 
-## Application d’un thème à un formulaire {#applying-a-theme-to-a-form-or-interactive-communication-br}
+## Appliquer un thème à un formulaire {#applying-a-theme-to-a-form-or-interactive-communication-br}
 
 Pour appliquer un thème à un formulaire adaptatif :
 
@@ -572,7 +572,7 @@ Vous pouvez utiliser le paramètre themeOverride pour appliquer un thème au mom
 
 L’option `themeOverride` vous permet de fournir un chemin d’accès à un thème. Elle modifie le thème du formulaire et l’actualise avec des styles mis à jour.
 
-## Obtention d’un aspect spécifique à l’aide des thèmes {#specific-af-appearance}
+## Obtenir un aspect spécifique à l’aide des thèmes {#specific-af-appearance}
 
 Avec [!DNL AEM Forms] et le thème de la zone de travail prête à l’emploi par défaut, il existe de nombreux autres thèmes. Si vous souhaitez concevoir votre formulaire <!-- or interactive communication --> à l’aide d’autres thèmes, avec des modifications supplémentaires, copiez le thème à partir du dossier de la bibliothèque des thèmes. Collez les thèmes copiés en dehors du dossier de la bibliothèque des thèmes et modifiez le thème copié selon les modifications que vous souhaitez.
 
@@ -608,7 +608,7 @@ Lorsque vous sélectionnez la vue CSS, l’éditeur de thèmes collecte toutes l
 
 Par exemple, la couleur d’arrière-plan d’une zone de texte est bleue<!-- in the base client library-->. Vous la remplacez par la couleur rose à l’aide des propriétés de la barre latérale. Lorsque vous générez un fichier CSS, la couleur d’arrière-plan de la zone de texte est rose. Après la modification de la couleur d’arrière-plan à l’aide des propriétés, un autre auteur utilise l’option de remplacement de CSS pour modifier la zone de texte de couleur d’arrière-plan en blanc. Lorsque vous générez des fichiers CSS, la couleur d’arrière-plan blanche apparaît dans le CSS généré.
 
-## Débogage des styles {#debugging-styles}
+## Déboguer les styles {#debugging-styles}
 
 Lorsque vous spécifiez des styles pour les composants dans l’éditeur de thèmes, un fichier CSS est généré. Lorsque vous définissez le style d’un composant générique, plusieurs composants intégrés sont également mis en forme. Par exemple, lorsque vous définissez le style d’un champ, la zone de texte et l’étiquette qu’elle contient sont également mises en forme. Lorsque vous mettez en forme la zone de texte dans le champ, elle obtient son propre CSS. Si vous souhaitez déboguer le CSS généré pour le champ et le composant, l’éditeur de thèmes fournit des options qui vous permettent d’afficher le CSS.
 

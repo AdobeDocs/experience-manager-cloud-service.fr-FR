@@ -5,7 +5,7 @@ exl-id: d441de29-af41-4d3e-9155-531af9702841
 source-git-commit: f7688559a791281d0e157dd1d48a5f63568914f5
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -26,8 +26,8 @@ Reportez-vous aux exemples du tableau ci-dessous.
 
 | Domaine | Nom | Valeur TXT |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Copiez la valeur entière affichée dans l’interface utilisateur de Cloud Manager. Cela est spécifique au domaine et à l’environnement. Par exemple :<br>*adobe-aem-vérification=<br>example.com/[program]/[env]/..* |
-| `www.example.com` | `_aemverification.www.example.com` | Copiez la valeur entière affichée dans l’interface utilisateur de Cloud Manager. Cela est spécifique au domaine et à l’environnement. Par exemple :<br>*adobe-aem-vérification=<br>www.example.com/[program]/[env]/..* |
+| `example.com` | `_aemverification.example.com` | Copiez la valeur entière affichée dans l’interface utilisateur de Cloud Manager. Cela est spécifique au domaine et à l’environnement. Par exemple :<br>*adobe-aem-verification=<br>example.com/[program]/[env]/..* |
+| `www.example.com` | `_aemverification.www.example.com` | Copiez la valeur entière affichée dans l’interface utilisateur de Cloud Manager. Cela est spécifique au domaine et à l’environnement. Par exemple :<br>*adobe-aem-verification=<br>www.example.com/[program]/[env]/..* |
 
 Lorsque vous avez terminé, vous pouvez vérifier le résultat en exécutant : `dig _aemverification.[yourdomainname] -t txt`.
 Le résultat attendu doit afficher la valeur TXT fournie dans l’interface utilisateur de Cloud Manager.

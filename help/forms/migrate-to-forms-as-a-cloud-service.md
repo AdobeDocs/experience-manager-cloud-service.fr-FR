@@ -1,6 +1,6 @@
 ---
 title: Comment migrer d’un environnement AEM 6.5 Forms et AEM 6.4 Forms vers un environnement [!DNL AEM Forms] as a Cloud Service ?
-description: Migration depuis un [!DNL AEM Forms] Environnement On-Premise vers [!DNL AEM Forms] Environnement as a Cloud Service
+description: Migration d’un environnement [!DNL AEM Forms] On-Premise vers un environnement [!DNL AEM Forms] as a Cloud Service
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
@@ -10,7 +10,7 @@ exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
 workflow-type: tm+mt
 source-wordcount: '1219'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Vous pouvez migrer vos formulaires adaptatifs, thèmes, modèles et configuratio
 
 * (Uniquement pour un environnement AEM 6.3 Forms ou d’une version antérieure mise à niveau vers AEM 6.4 Forms ou AEM 6.5 Forms) Les formulaires adaptatifs reposant sur des modèles et des thèmes prêts à l’emploi disponibles dans AEM 6.3 Forms ou une version antérieure ne sont pas pris en charge [!DNL [!DNL AEM Forms]] as a Cloud Service.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 * [Activer Forms - Inscription numérique](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) activée pour votre programme Forms Cloud Service et [exécution du pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
 
@@ -49,7 +49,7 @@ Vous pouvez migrer vos formulaires adaptatifs, thèmes, modèles et configuratio
 
 Pour rendre vos ressources [!DNL AEM Forms] compatibles avec Cloud Service et les transférer vers un environnement [!DNL AEM] as a Cloud Service, procédez comme suit.
 
-1. Créez un [clone](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/qaq-p/363487) de votre environnement [!DNL AEM Forms] existant.
+1. Créez un [clone](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/correct-method-to-clone-the-aem-environment/td-p/363487?profile.language=fr) de votre environnement [!DNL AEM Forms] existant.
 
    Utilisez toujours l’environnement cloné pour exécuter l’outil de transfert de contenu et l’utilitaire de migration. L’outil de transfert de contenu et l’utilitaire de migration apportent des modifications au contenu et aux ressources. Par conséquent, n’exécutez pas l’outil de transfert de contenu et l’utilitaire de migration dans un environnement de production.
 
@@ -96,7 +96,7 @@ Pour rendre vos ressources [!DNL AEM Forms] compatibles avec Cloud Service et le
 
 ## Chemins d’accès à différentes ressources spécifiques à AEM Forms
 
-* **Formulaires adaptatifs** : vous trouverez les formulaires adaptatifs sous `/content/dam/formsanddocuments/` et /content/forms/af. Par exemple, pour un formulaire adaptatif appelé « Enregistrement WKND », ajoutez des chemins `/content/dam/formsanddocuments/wknd-registration` et `/content/forms/af/wknd-registration`.
+* **Formulaires adaptatifs** : vous trouverez les formulaires adaptatifs sous `/content/dam/formsanddocuments/`et /content/forms/af. Par exemple, pour un formulaire adaptatif appelé « Enregistrement WKND », ajoutez des chemins `/content/dam/formsanddocuments/wknd-registration` et `/content/forms/af/wknd-registration`.
 * **Mode des données de formulaire** : vous trouverez tous les modèles de données de formulaire sous `/content/dam/formsanddocuments-fdm`. Par exemple, `/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`.
 
 * **Bibliothèques clientes** : le chemin d’accès par défaut aux bibliothèques clientes est `/etc/clientlibs/fd/theme`.

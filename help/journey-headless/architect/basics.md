@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # En savoir plus sur les bases de la modélisation de contenu pour le découplage avec AEM {#content-modeling-headless-basics}
 
-## Un peu d’histoire... {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Dès le début du [Parcours d’architecture de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) a couvert les concepts de base et la terminologie relatifs à la modélisation du contenu découplé.
 
@@ -126,7 +126,7 @@ C’est à ça que servent les références de fragment : elles vous permettent
 Par exemple, les modèles de fragment de contenu suivants peuvent être définis :
 
 * Ville
-* Société
+* Entreprise
 * Personne
 * Distinctions
 
@@ -143,7 +143,7 @@ Voilà pour commencer. En fonction du niveau de complexité, une distinction peu
 
 En fonction du niveau de complexité, une distinction peut être propre à une entreprise, ou le siège social d’une entreprise peut être situé dans une ville donnée.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez appris les principes de base, l’étape suivante consiste à [En savoir plus sur la création de modèles de fragment de contenu dans AEM](model-structure.md). Cette section présente et discute les différentes références disponibles, ainsi que la manière de créer des niveaux de structure à l’aide des références de fragment, un élément clé de la modélisation en mode découplé.
 

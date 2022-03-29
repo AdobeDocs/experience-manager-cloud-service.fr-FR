@@ -55,14 +55,14 @@ Une fois que vous avez configuré [!DNL AEM Forms] as a Cloud Service, les group
    <td>[!DNL template-authors] <sup>[2]</sup></td> 
    <td>
     <ul> 
-     <li>Créer et prévisualiser des modèles de formulaires adaptatifs <!-- or interactive communications --></li> 
+     <li>Création et prévisualisation de modèles de formulaires adaptatifs <!-- or interactive communications --></li> 
     </ul> </td> 
   </tr>
   <tr>
    <td><p>[!DNL fdm-authors]</p> </td> 
    <td>
     <ul> 
-     <li>Créer et modifier un modèle de données de formulaire</li> 
+     <li>Création et modification dʼun modèle de données de formulaire</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>
@@ -95,7 +95,7 @@ Une fois que vous avez configuré [!DNL AEM Forms] as a Cloud Service, les group
     <ul> 
      <!-- <li>Configure PDF Generator</li> --> 
      <!-- <li>Configure Watched folder</li> -->
-     <li>Gérer les applications de processus</li> 
+     <li>Gestion des applications de workflow</li> 
     </ul> </td> 
   </tr>
  </tbody>

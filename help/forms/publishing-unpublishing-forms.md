@@ -1,5 +1,5 @@
 ---
-title: Publication et annulation de publication de formulaires et documents
+title: Publier et annuler la publication de formulaires et documents
 seo-title: Publishing and unpublishing forms and documents
 description: Vous pouvez planifier la publication de formulaires et l’annulation de leur publication. Les formulaires publiés sont répliqués sur l’instance de publication.
 seo-description: You can schedule publishing and unpublishing of forms. Published forms are replicated on the publish instance.
@@ -18,7 +18,7 @@ ht-degree: 100%
 ---
 
 
-# Publication et annulation de publication de formulaires et documents{#publishing-and-unpublishing-forms-and-documents}
+# Publier et annuler la publication de formulaires et documents{#publishing-and-unpublishing-forms-and-documents}
 
 [!DNL AEM Forms] vous permet de créer, de publier et d’annuler facilement la publication de formulaires. Le serveur [!DNL AEM Forms] propose deux instances : auteur et publication. L’instance Auteur est destinée à la création et la gestion d’éléments et de ressources de formulaire. L’instance Publication est destinée à conserver les éléments et les ressources connexes mis à la disposition des utilisateurs finaux.
 
@@ -54,7 +54,7 @@ Vos formulaires adaptatifs peuvent utiliser certains paramètres, configurations
    * Une autre bibliothèque client qui peut être incluse dans le modèle de formulaire adaptatif.
    * Chemins de conception
 
-## États d’un élément {#asset-states}
+## États d’une ressource {#asset-states}
 
 Un élément peut présenter les états suivants :
 
@@ -62,7 +62,7 @@ Un élément peut présenter les états suivants :
 * **Publié** : élément qui a été publié et qui est disponible sur l’instance de publication.
 * **Modifié** : élément qui est modifié après avoir été publié.
 
-## Publication d’un élément {#publish-an-asset}
+## Publier une ressource {#publish-an-asset}
 
 1. Connectez-vous au serveur [!DNL AEM Forms].
 1. Utilisez l’une des méthodes suivantes pour sélectionner et publier un élément.
@@ -98,7 +98,7 @@ Un élément peut présenter les états suivants :
 
    <!-- After publishing an asset, you can use the Forms Portal to display all the assets on a web page. For more information, see [Introduction to publishing forms on a portal](introduction-publishing-forms.md).-->
 
-## Publication de tous les éléments de Correspondence Management {#publish-all-the-correspondence-management-assets}
+## Publier toutes les ressources de Correspondence Management {#publish-all-the-correspondence-management-assets}
 
 [!DNL AEM Forms] permet de modifier tous les éléments de Correspondence Management sur un serveur en une seule fois. Les éléments publiés comportent tous les éléments de Correspondence Management et dépendances connexes.
 
@@ -123,7 +123,7 @@ Procédez comme suit pour publier tous les éléments de Correspondence Manageme
    >
    >Le processus de publication ne peut pas être annulé une fois lancé. En outre, pendant que le processus de publication est en cours, ne procédez à aucune création, suppression, modification ou publication d’éléments, ou ne lancez aucune opération d’exportation d’éléments de Correspondence Management.
 
-## Automatisation de la publication ou de l’annulation de publication de formulaires et documents {#automate-publishing-and-unpublishing-for-forms-amp-documents}
+## Automatiser la publication ou de l’annulation de publication de formulaires &amp; documents {#automate-publishing-and-unpublishing-for-forms-amp-documents}
 
 [!DNL AEM Forms] permet de planifier la publication et l’annulation de publication des éléments de formulaires et documents. Vous pouvez spécifier la planification dans l’éditeur de métadonnées. Pour plus d’informations sur la gestion des métadonnées de formulaire, reportez-vous à la section [Gestion des métadonnées de formulaire.](manage-form-metadata.md)
 
@@ -134,7 +134,7 @@ Procédez comme suit pour planifier la date et l’heure de publication et d’a
 1. Sélectionnez la date et l’heure dans les champs **[!UICONTROL Heure de début de publication]** et **[!UICONTROL Heure de fin de publication]**.\
    Appuyez sur **[!UICONTROL Terminé]** ![aem6forms_check](assets/aem6forms_check.png).
 
-## Annulation de la publication d’un élément {#unpublish-an-asset}
+## Annuler la publication d’une ressource {#unpublish-an-asset}
 
 1. Sélectionnez un élément publié et appuyez sur **[!UICONTROL Annuler la publication]** ![unpublish](assets/unpublish.png).
 1. Utilisez l’une des actions suivantes pour sélectionner et annuler la publication d’un élément.
@@ -155,7 +155,7 @@ Procédez comme suit pour planifier la date et l’heure de publication et d’a
    >
    >L’annulation de publication affecte uniquement l’élément sélectionné ; les éléments enfants et référencés ne sont pas concernés.
 
-## Rétablissement de la version précédemment publiée d’une ressource ou d’une lettre {#revert-an-asset-or-letter-to-the-previously-published-version}
+## Rétablir la version précédemment publiée d’une ressource ou d’une lettre {#revert-an-asset-or-letter-to-the-previously-published-version}
 
 Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifiée, une version de la ressource ou de la lettre est publiée. Vous pouvez rétablir la version précédemment publiée d’une ressource ou d’une lettre. Cette opération peut être utile si un problème se produit avec la version actuelle de la ressource ou de la lettre.
 
@@ -168,7 +168,7 @@ Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifi
 
    La version précédemment publiée de l’élément ou de la lettre est rétablie.
 
-## Suppression d’un élément {#delete-an-asset}
+## Supprimer une ressource {#delete-an-asset}
 
 >[!NOTE]
 >

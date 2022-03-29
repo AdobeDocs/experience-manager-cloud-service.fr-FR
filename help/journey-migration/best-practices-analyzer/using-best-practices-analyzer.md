@@ -5,7 +5,7 @@ exl-id: e8498e17-f55a-4600-87d7-60584d947897
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '2470'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 >id="aemcloud_bpa_using"
 >title="Utilisation de l’analyseur des bonnes pratiques"
 >abstract="Consultez la documentation relative à l’utilisation de l’analyseur des bonnes pratiques (anciennement Cloud Readiness Analyzer) et du rapport généré. Le rapport de l’analyseur des bonnes pratiques permet de mieux comprendre le degré de préparation général à la mise à niveau."
->additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
+>additional-url=""
 
 ## Considérations importantes concernant l’utilisation de l’analyseur des bonnes pratiques {#imp-considerations}
 
@@ -46,10 +46,10 @@ id="aemcloud_bpa_download"
 title="Téléchargement de l’analyseur des bonnes pratiques"
 abstract="Il est possible de télécharger l’analyseur des bonnes pratiques dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM)."
 
-Il est possible de télécharger l’analyseur des bonnes pratiques dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package via [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM).
+Il est possible de télécharger l’analyseur des bonnes pratiques dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais du [Gestionnaire de package](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM).
 
 >[!NOTE]
-Téléchargez l’analyseur des bonnes pratiques depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+Téléchargez l’analyseur des bonnes pratiques depuis le portail de [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Affichage du rapport de l’analyseur des bonnes pratiques {#viewing-report}
 
@@ -130,7 +130,7 @@ For Adobe Experience Manager 6.1, the tool is not functional and only the HTTP i
 id="aemcloud_bpa_interpreting"
 title="Interprétation du rapport de l’analyseur des bonnes pratiques"
 abstract="Il existe deux options pour afficher les sorties de rapport de l’analyseur des bonnes pratiques : IU et CSV. Lorsque l’analyseur des bonnes pratiques est exécuté dans l’instance AEM, le rapport de l’IU s’affiche sous la forme de résultats dans la fenêtre des outils. Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance."
-additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#analysis-report" text="Rapport d’analyse des bonnes pratiques"
+additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#analysis-report" text="Consultation du rapport d’analyse des bonnes pratiques"
 additional-url="https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=fr" text="Présentation des catégories de rapports de l’analyseur des bonnes pratiques"
 
 Lorsque l’analyseur des bonnes pratiques est exécuté dans l’instance AEM, le rapport s’affiche sous la forme de résultats dans la fenêtre des outils.
@@ -157,7 +157,7 @@ Consultez le tableau ci-dessous pour comprendre les niveaux d’importance :
 | INFO | Ce résultat est fourni à titre d’information. |
 | ADVISORY | Ce résultat peut poser un problème de mise à niveau. Il est recommandé d’approfondir les investigations. |
 | MAJOR | Il est probable que ce résultat constitue un problème de mise à niveau qui doit être résolu. |
-| CRITICAL | Il est très probable que ce résultat constitue un problème de mise à niveau qui doit être résolu pour éviter toute perte de fonction ou de performances. |
+| CRITIQUE | Il est très probable que ce résultat constitue un problème de mise à niveau qui doit être résolu pour éviter toute perte de fonction ou de performances. |
 
 
 ## Interprétation du rapport CSV de l’analyseur des bonnes pratiques {#cra-csv-report}

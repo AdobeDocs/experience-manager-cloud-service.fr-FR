@@ -267,18 +267,18 @@ En règle générale, les champs liés (schéma de formulaire) et non liés sont
 
 ## Protocoles pris en charge pour le préremplissage des données utilisateur {#supported-protocols-for-prefilling-user-data}
 
-Les formulaires adaptatifs peuvent être préremplis avec des données utilisateur au format de données de préremplissage via les protocoles suivants lorsqu’ils sont configurés avec une expression regex valide :
+Les formulaires adaptatifs peuvent être préremplis avec des données d’utilisateur au format de données de préremplies via les protocoles suivants lorsqu’ils sont configurés avec une regex valide :
 
-### Protocole crx://  {#the-crx-protocol}
+### Le protocole crx://  {#the-crx-protocol}
 
 ```javascript
 http
 https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///tmp/fd/af/myassets/sample.xml
 ```
 
-Le nœud spécifié doit posséder une propriété nommée `jcr:data` et contenir les données.
+Le nœud spécifié doit avoir une propriété appelée `jcr:data` et contenir les données.
 
-### Protocole file://  {#the-file-protocol-nbsp}
+### Le protocole file://  {#the-file-protocol-nbsp}
 
 ```javascript
 https://`servername`/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
@@ -286,13 +286,13 @@ https://`servername`/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:
 
 Le fichier référencé doit se trouver sur le même serveur.
 
-### Protocole https://  {#the-http-protocol}
+### Le protocole https://  {#the-http-protocol}
 
 ```javascript
 https://`servername`/content/forms/af/xml.html?wcmmode=disabled&dataRef=https://servername/somesamplexmlfile.xml
 ```
 
-### Protocole service://  {#the-service-protocol}
+### Le protocole service://  {#the-service-protocol}
 
 ```javascript
 https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service://[SERVICE_NAME]/[IDENTIFIER]
@@ -336,7 +336,7 @@ prefill-page component.zip
 [Obtenir le fichier](assets/prefill-page-component.zip)
 Exemple de prefill.jsp dans le composant de page
 
-## Service de préremplissage personnalisé [!DNL AEM Forms]  {#aem-forms-custom-prefill-service}
+## [!DNL AEM Forms] service de préremplissage personnalisé  {#aem-forms-custom-prefill-service}
 
 Vous pouvez utiliser le service de préremplissage personnalisé pour les scénarios, où vous lisez en permanence des données à partir d’une source prédéfinie. Le service de préremplissage lit des données à partir des sources de données définies et préremplit les champs du formulaire adaptatif avec le contenu du fichier de données de préremplissage. Il vous permet également d’associer de manière permanente des données de préremplissage à un formulaire adaptatif.
 

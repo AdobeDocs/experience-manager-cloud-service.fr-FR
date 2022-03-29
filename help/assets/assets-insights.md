@@ -8,7 +8,7 @@ exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
 source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
 workflow-type: tm+mt
 source-wordcount: '853'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
    * **[!UICONTROL Ressource]** : nombre de fois où la ressource faisait partie d’une collection ou d’une ressource composite.
    * **[!UICONTROL Web et mobile]** : nombre de fois où la ressource faisait partie de sites web et d’applications.
    * **[!UICONTROL Social]** : nombre de fois où la ressource a été utilisée dans d’autres solutions, telles qu’[!DNL Adobe Campaign].
-   * **[!UICONTROL Email]** : nombre de fois où la ressource a été utilisée dans des campagnes par email.
+   * **[!UICONTROL Courrier électronique]** : nombre de fois où la ressource a été utilisée dans des campagnes par email.
 
    ![usage_statistics](assets/usage_statistics.png)
 
@@ -97,11 +97,11 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-1. Cliquez sur la carte **[!UICONTROL Configuration des statistiques]**.
+1. Cliquez sur la vignette **[!UICONTROL Configuration des statistiques]**.
 
-1. Pour obtenir des informations sur l’accès aux services Web Analytics, accédez à **[!UICONTROL Analytics]** > **[!UICONTROL Administration]** > **[!UICONTROL Outils d’administration]** > **[!UICONTROL Paramètres de l’entreprise]** > **[!UICONTROL Services web]** et copiez la variable **[!UICONTROL Secret partagé]** clé.
+1. Pour obtenir les informations d’accès au service Web Analytics, accédez à **[!UICONTROL Analytics]** > **[!UICONTROL Admin]** > **[!UICONTROL Outils d’administration]** > **[!UICONTROL Paramètres d’entreprise]** > **[!UICONTROL Services Web]** et copiez la clé **[!UICONTROL Secret partagé]**.
 
-   Dans l’assistant, sélectionnez le **[!UICONTROL Centre de données]** et indiquez le nom d’affichage de la variable **[!UICONTROL Société]**, services Web **[!UICONTROL Nom d’utilisateur]**, puis collez le **[!UICONTROL Secret partagé]** clé.
+   Dans l’assistant, sélectionnez le **[!UICONTROL Centre de données]**, et indiquez le nom d’affichage de l’**[!UICONTROL société]**, le **[!UICONTROL nom d’utilisateur]** des services Web, et collez la clé du **[!UICONTROL Secret partagé]**.
 
    Cliquez sur **[!UICONTROL Authentifier]**.
 
@@ -109,11 +109,11 @@ Assets Insights fetches usage data for assets from Adobe Analytics report suites
 
    *Figure : Configuration d’Adobe Analytics pour les statistiques sur les ressources dans[!DNL Experience Manager]*
 
-1. Une fois l’authentification réussie, les suites de rapports sont répertoriées dans la liste déroulante. Sélection de l’Adobe Analytics **[!UICONTROL Suite de rapports]** à partir de l’emplacement où vous souhaitez que les statistiques sur les ressources récupèrent les données. Cliquez sur **[!UICONTROL Ajouter]**.
+1. Une fois l’authentification réussie, les suites de rapports sont répertoriées dans la liste déroulante. Sélectionnez la **[!UICONTROL suite de rapports]** Adobe Analytics à partir de l’emplacement où vous souhaitez que les statistiques sur les ressources récupèrent les données. Cliquez sur **[!UICONTROL Ajouter]**.
 
 1. Une fois qu’[!DNL Experience Manager] a configuré votre suite de rapports, appuyez sur **[!UICONTROL Terminé]**.
 
-Pour plus d’informations, voir [Services web Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html#api-access-information).
+Pour plus d’informations, voir [Adobe Analytics Web Services](https://experienceleague.adobe.com/docs/analytics/admin/company-settings/web-services-admin.html?lang=fr).
 
 ### Suivi de page {#page-tracker}
 

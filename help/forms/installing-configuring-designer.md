@@ -9,13 +9,13 @@ ht-degree: 100%
 
 ---
 
-# Installation de Forms Designer {#installing-and-configuring-designer}
+# Installation de Forms Designer {#installing-and-configuring-designer}
 
 Designer est un outil de conception de formulaires graphiques de type pointer-cliquer qui simplifie la création de modèles de formulaires XDP et PDF. Vous pouvez concevoir un modèle de formulaire, définir sa logique et respecter des exigences légales strictes. Un formulaire XDP et PDF servent de modèle de document d’enregistrement dans un formulaire adaptatif. Ces modèles de formulaires sont différents des [modèles de formulaire adaptatif](template-editor.md).
 
-## Prérequis {#pre-requisites}
+## Conditions préalables {#pre-requisites}
 
-Pour installer et configurer Designer, vous avez besoin des logiciels et du matériel minimum suivants :
+Pour installer et configurer Designer, vous avez besoin de la configuration matérielle et des logiciels suivants :
 
 * [!DNL Microsoft® Windows® 2016 Server], [!DNL Microsoft® Windows® 2019 Server] ou [!DNL Microsoft® Windows® 10]
 * Systèmes d’exploitation 32 bits : 1 Go de RAM ; systèmes d’exploitation 64 bits : 2 Go de RAM.

@@ -5,7 +5,7 @@ exl-id: 9be1f00e-3666-411c-9001-c047e90b6ee5
 source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '297'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -14,9 +14,9 @@ Envoi d’un connecteur AEM
 
 Les informations fournies ci-dessous sont utiles pour l’envoi des connecteurs AEM. Elles doivent être lues conjointement avec les articles sur l’[implémentation](implement.md) et la [maintenance](maintain.md) des connecteurs.
 
-Les connecteurs AEM sont répertoriés dans [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
+Les connecteurs AEM sont répertoriés dans [Adobe Exchange](https://partners.adobe.com/fr/exchangeprogram/experiencecloud).
 
-Dans les solutions AEM précédentes, [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) a été utilisé pour installer des connecteurs sur différentes instances d’AEM. Toutefois, avec AEM as a Cloud Service, les connecteurs sont déployés pendant le processus de CI/CD dans Cloud Manager. Pour que les connecteurs soient déployés, ils doivent être référencés dans le fichier pom.xml du projet Maven.
+Dans les solutions AEM précédentes, le [Gestionnaire de packs](/help/implementing/developing/tools/package-manager.md) était utilisé pour installer des connecteurs sur diverses instances AEM. Toutefois, avec AEM as a Cloud Service, les connecteurs sont déployés pendant le processus de CI/CD dans Cloud Manager. Pour que les connecteurs soient déployés, ils doivent être référencés dans le fichier pom.xml du projet Maven.
 
 Il existe différentes options pour inclure les packages dans un projet :
 

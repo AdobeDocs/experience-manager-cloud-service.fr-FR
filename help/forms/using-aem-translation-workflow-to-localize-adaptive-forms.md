@@ -1,5 +1,5 @@
 ---
-title: Utilisation du processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement
+title: Utiliser le workflow de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement
 seo-title: Using AEM translation workflow to localize Adaptive Forms and Document of Record
 description: Découvrez comment utiliser les processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement.
 seo-description: Learn to use AEM translation workflows to localize Adaptive Forms and Document of Record.
@@ -16,15 +16,15 @@ ht-degree: 100%
 ---
 
 
-# Utilisation du processus de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# Utiliser le workflow de traduction AEM pour localiser les formulaires adaptatifs et le document d’enregistrement {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
 Les formulaires localisés permettent de servir un public plus large dans plusieurs zones géographiques. Le processus de traduction Adobe Experience Manager vous aide à localiser des formulaires adaptatifs et leurs documents d’enregistrement. Vous pouvez faire appel à la **traduction automatique** ou à des **traducteurs humains** pour localiser un formulaire adaptatif.
 
 Cet article décrit la procédure d’utilisation du processus de traduction AEM avec des formulaires adaptatifs et des documents d’enregistrement.
 
-## Localisation d’un formulaire adaptatif et d’un document d’enregistrement à l’aide de la traduction automatique {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
+## Localiser un formulaire adaptatif et un document d’enregistrement à l’aide de la traduction automatique {#localizing-an-adaptive-form-and-document-of-record-using-machine-translation}
 
-Le service de traduction automatique traduit directement le contenu de vos formulaires adaptatifs et document d’enregistrement. [!DNL AEM Forms] est préconfiguré pour utiliser une version d’évaluation de [!DNL Microsoft Translator] pour la traduction automatique. Procédez comme suit pour activer la traduction automatique pour les formulaires adaptatifs et le document d’enregistrement :
+Le service de traduction automatique traduit directement le contenu de vos formulaires adaptatifs et documents d’enregistrement. [!DNL AEM Forms] est préconfiguré pour utiliser une version d’évaluation de [!DNL Microsoft Translator] pour la traduction automatique. Procédez comme suit pour activer la traduction automatique pour les formulaires adaptatifs et le document d’enregistrement :
 
 1. Dans l’interface utilisateur [!DNL AEM Forms], sélectionnez un formulaire, puis appuyez sur l’option **Ajouter un dictionnaire**.
 1. Dans l’écran **Ajouter un dictionnaire au projet de traduction**, sélectionnez l’option **Créer un nouveau projet de traduction** ou **Ajouter à un projet de traduction existant**.

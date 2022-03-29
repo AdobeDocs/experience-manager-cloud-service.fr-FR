@@ -65,4 +65,4 @@ Prêts à développer ? Nous avons de nombreux exemples d’applications pour v
 
 ## Assistance {#support}
 
-Pour les demandes de prise en charge des développeurs, nous encourageons les développeurs à utiliser notre [Forum Experience League](https://experienceleaguecommunities.adobe.com/t5/project-firefly/ct-p/project-firefly).
+Pour les demandes de prise en charge des développeurs, nous encourageons les développeurs à utiliser notre [Forum Experience League](https://experienceleaguecommunities.adobe.com/t5/app-builder/ct-p/project-firefly?profile.language=fr).

@@ -20,11 +20,11 @@ Les flux de travail AEM basé sur l’utilisation de Forms vous permettent d’a
 
 Un flux de travail basé sur l’utilisation de Forms peut être déclenché ou lancé à l’aide de l’une des méthodes suivantes :
 
-* Envoi d’une demande depuis la boîte de réception AEM
+* Envoyer une demande depuis la boîte de réception AEM
 * Envoi d’une demande depuis l’application AEM [!DNL Forms]
 * Envoi d’un formulaire adaptatif
 * Utilisation d’un dossier de contrôle
-* Envoi d’une communication interactive ou d’une lettre
+* Envoyer une communication interactive ou une lettre
 
 Pour plus d’informations sur les flux de travail et les fonctionnalités AEM basés sur l’utilisation de Forms, voir [Flux de travail basé sur l’utilisation de Forms sur OSGi](aem-forms-workflow.md).
 
@@ -123,7 +123,7 @@ Pour identifier et accéder aux données utilisateur stockées pour une instance
    >
    >L’application AEM [!DNL Forms] stocke également les données en mode hors ligne. Les données d’une instance de flux de travail peuvent être enregistrées localement sur des appareils individuels et envoyées au serveur lorsque l’application se synchronise avec le serveur.[!DNL Forms]
 
-### Suppression de données utilisateur {#delete-user-data}
+### Supprimer des données utilisateur {#delete-user-data}
 
 Vous devez être un administrateur AEM pour supprimer des données utilisateur des instances de flux de travail en suivant la procédure suivante :
 
@@ -158,5 +158,5 @@ Vous pouvez également utiliser des API pour accéder et supprimer des nœuds et
 
 * [Comment accéder au JCR AEM par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=fr#platform)
 * [Suppression des nœuds et propriétés](https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
-* [Guide de référence des API](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)
+* [Guide de référence des API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=fr)
 

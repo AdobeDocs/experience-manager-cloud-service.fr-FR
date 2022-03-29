@@ -6,7 +6,7 @@ exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
 source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
 workflow-type: tm+mt
 source-wordcount: '1369'
-ht-degree: 20%
+ht-degree: 23%
 
 ---
 
@@ -25,9 +25,9 @@ Ce document vous aide à comprendre comment vos ressources cloud sont créées e
 
 L’ajout de vos ressources cloud s’effectue via Cloud Manager par le membre de votre équipe affecté à la variable **Propriétaire de l’entreprise** profil de produit. Cette personne est généralement celle qui comprend les besoins de l’entreprise et qui effectue la configuration initiale de Cloud Manager.
 
-Consultez les sections ci-dessous pour savoir comment créer vos [programmes de service cloud](#create-cloud-service-program) et [environnements.](#create-cloud-environments)
+Consultez les sections ci-dessous pour savoir comment créer vos [environnements](#create-cloud-environments) et [programmes de services cloud](#create-cloud-service-program).
 
-### Prérequis {#prerequisites}
+### Conditions préalables {#prerequisites}
 
 * L’administrateur système affecté au **Propriétaire de l’entreprise** Le rôle doit avoir été connecté à Cloud Manager avant tout autre utilisateur disposant de la fonction **Propriétaire de l’entreprise** tentative de rôle d’accès à Cloud Manager pour effectuer les étapes décrites dans ce document.
 
@@ -53,7 +53,7 @@ En se connectant correctement en tant qu’administrateur système avec **Propri
 
 Jusqu’à ce que vous vous connectiez à Cloud Manager en tant qu’administrateur système avec le **Propriétaire de l’entreprise** rôle, autres utilisateurs avec le **Propriétaire de l’entreprise** ne sera pas en mesure de créer des programmes dans Cloud Manager même s’ils disposent des rôles appropriés.
 
-## Accéder à Cloud Manager {#navigate-cloud-manager}
+## Accéder à Cloud Manager {#navigate-cloud-manager}
 
 L’utilisateur avec la variable **Propriétaire de l’entreprise** Un rôle recevra un e-mail de bienvenue avec un lien pour commencer. Suivez les étapes ci-dessous pour accéder à Cloud Manager à l’aide de cet e-mail de bienvenue.
 
@@ -141,7 +141,7 @@ Maintenant que vous avez assuré un accès approprié, vous pouvez créer votre 
 
    >[!TIP]
    >
-   >Pour obtenir des instructions étape par étape sur l’utilisation de l’assistant Ajouter un programme, reportez-vous au document . [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) ou regardez ceci [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html) pour savoir comment créer votre programme AEM as a Cloud et connaître les points importants à prendre en compte avant de créer votre programme.
+   >Pour obtenir des instructions étape par étape sur l’utilisation de l’assistant Ajouter un programme, reportez-vous au document . [Création de programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) ou regardez ceci [video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=fr) pour savoir comment créer votre programme AEM as a Cloud et connaître les points importants à prendre en compte avant de créer votre programme.
 
 
 1. Une fois la création de votre programme cloud terminée, vous pouvez accéder à votre programme à partir de la page d’entrée de Cloud Manager pour afficher la variable **Présentation** de votre programme.
@@ -166,13 +166,13 @@ Une fois que vous avez créé votre programme cloud, créez vos environnements c
 
    >[!TIP]
    >
-   >Reportez-vous au document [Ajout d’un environnement](/help/implementing/cloud-manager/manage-environments.md#adding-environments) pour en savoir plus ou regarder [ce tutoriel vidéo rapide](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html) pour en savoir plus sur les environnements Cloud Manager et sur la manière dont vous pouvez les ajouter à votre programme.
+   >Reportez-vous au document [Ajout d’un environnement](/help/implementing/cloud-manager/manage-environments.md#adding-environments) pour en savoir plus ou regarder [ce tutoriel vidéo rapide](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=fr) pour en savoir plus sur les environnements Cloud Manager et sur la manière dont vous pouvez les ajouter à votre programme.
 
 1. Membres affectés à la fonction **Développeur** Le profil de produit peut se connecter à Cloud Manager et gérer les référentiels Git de Cloud Manager.
 
 Votre programme a été créé avec succès et votre git Cloud Manager est accessible aux développeurs.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vos ressources cloud ont été créées et sont prêtes à être consultées par votre équipe, l’administrateur système doit affecter les membres de votre équipe à AEM des profils de produit as a Cloud Service à partir de Adobe Admin Console pour accéder à ces ressources.
 
@@ -184,5 +184,5 @@ Suivez les autres ressources pour en savoir plus sur les aspects suivants :
 
 * [Types de programme et ajout d’un programme](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)
 * [Types d’environnement et ajout d’un environnement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html)
-* [Gestion de Cloud Manager Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
-* [Configuration de l’accès à AEM en tant que Cloud Service à partir d’Admin Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html#adobe-ims-users)
+* [Gérer le référentiel Git de Cloud Manager](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+* [Configurer l’accès à AEM as a Cloud Service à partir de l’Admin Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=fr#adobe-ims-users)

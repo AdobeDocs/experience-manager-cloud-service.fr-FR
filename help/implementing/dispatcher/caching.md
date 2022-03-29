@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: b490d581532576bc526f9bd166003df7f2489495
 workflow-type: tm+mt
 source-wordcount: '1549'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -76,7 +76,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 
-* En utilisant la structure de bibliothèque côté client d’AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, puisque toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique.  En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que vous puissiez découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache cache-control est défini sur non modifiable (immutable) ou 30 jours (30 days) pour les navigateurs plus anciens qui ne respectent pas la valeur non modifiable.
+* En utilisant la structure de bibliothèque côté client d’AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, puisque toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique.  En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que vous puissiez découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache est défini sur non modifiable (immutable) ou 30 jours (30 days) pour les navigateurs plus anciens qui ne respectent pas la valeur non modifiable.
 * Voir la section [Bibliothèques côté client et cohérence des versions](#content-consistency) pour en savoir plus.
 
 ### Images et tout contenu suffisamment volumineux pour être stocké dans le stockage blob {#images}
@@ -124,7 +124,7 @@ Lorsque l’instance de publication reçoit une nouvelle version d’une page ou
 
 ### Invalidation explicite du cache du Dispatcher {#explicit-invalidation}
 
-En règle générale, il n’est pas nécessaire d’invalider manuellement le contenu dans le Dispatcher, mais cela est possible si nécessaire.
+En général, il n’est pas nécessaire d’invalider manuellement le contenu du Dispatcher, mais cela est possible si nécessaire.
 
 >[!NOTE]
 >Avant AEM as a Cloud Service, il existait deux manières d’invalider le cache du Dispatcher.
@@ -133,10 +133,9 @@ En règle générale, il n’est pas nécessaire d’invalider manuellement le c
 >2. Appeler directement l’API `invalidate.cache` (par exemple, `POST /dispatcher/invalidate.cache`)
 
 >
->L’approche d’API `invalidate.cache` du Dispatcher ne sera plus prise en charge puisqu’elle ne concerne qu’un nœud Dispatcher spécifique. AEM as a Cloud Service fonctionne au niveau du service, et non au niveau du nœud individuel. Les instructions d’invalidation figurant sur la page [Invalidation des pages mises en cache à partir d’AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr) ne sont donc plus valides pour AEM as a Cloud Service.
+>L’approche d’API `invalidate.cache` du Dispatcher ne sera plus prise en charge puisqu’elle ne concerne qu’un nœud Dispatcher spécifique. AEM as a Cloud Service fonctionne au niveau du service, et non au niveau du nœud individuel. Les instructions d’invalidation figurant sur la page [Invalidation des pages mises en cache à partir d’AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr) ne sont donc plus valides pour AEM as a Cloud Service.
 
-
-L’agent de vidage de réplication doit être utilisé. Pour ce faire, utilisez la méthode [API de réplication](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). Le point d’entrée de l’agent de vidage n’est pas configurable, mais il est préconfiguré pour pointer sur le Dispatcher, conformément au service de publication exécutant l’agent de vidage. L’agent de vidage peut généralement être déclenché par des événements ou des workflows OSGi.
+L’agent de vidage de réplication doit être utilisé. Cette opération peut être réalisée en utilisant l’[API de réplication](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/Replicator.html). Le point d’entrée de l’agent de vidage n’est pas configurable, mais il est préconfiguré pour pointer sur le Dispatcher, conformément au service de publication exécutant l’agent de vidage. L’agent de vidage peut généralement être déclenché par des événements ou des workflows OSGi.
 
 <!-- Need to find a new link and/or example -->
 <!-- 

@@ -15,10 +15,10 @@ Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la th
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre la diffusion de contenu découplé, comment AEM prend en charge le découplage et comment ce contenu peut être traduit. Après l’avoir lu, vous devriez :
+Ce document vous aide à comprendre la diffusion de contenu découplé, comment AEM prend en charge le découplage et comment ce contenu peut être traduit. Après avoir lu ce document, vous devriez :
 
 * comprendre les concepts de base de la diffusion de contenus en mode découplé ;
-* vous être familiarisé avec la façon dont AEM prend en charge le découplage et la traduction.
+* être familiarisé avec la façon dont AEM prend en charge le découplage et la traduction.
 
 ## Diffusion de contenu full stack {#full-stack}
 
@@ -64,12 +64,12 @@ Plus loin dans le parcours, vous découvrirez les détails de la traduction de c
 1. Créez un projet de traduction pour récolter le contenu, l’envoyer au service de traduction et recevoir les résultats.
 1. Vérifiez et publiez le contenu traduit.
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Merci de vous être engagé sur ce parcours de traduction découplée AEM ! Maintenant que vous avez lu ce document, vous devriez :
 
 * comprendre les concepts de base de la diffusion de contenus en mode découplé ;
-* vous être familiarisé avec la façon dont AEM prend en charge le découplage et la traduction.
+* être familiarisé avec la façon dont AEM prend en charge le découplage et la traduction.
 
 Appuyez-vous sur ces connaissances et poursuivez votre parcours de traduction découplée AEM en consultant le document [Prise en main de la traduction découplée AEM](getting-started.md) dans lequel vous trouverez un aperçu sur la manière dont AEM gère le contenu découplé et sur ses outils de traduction.
 

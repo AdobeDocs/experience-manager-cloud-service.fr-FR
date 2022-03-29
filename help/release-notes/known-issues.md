@@ -1,19 +1,19 @@
 ---
 title: Problèmes connus
-description: Problèmes connus avec Adobe Experience Manager as a Cloud Service
+description: Problèmes connus liés à Adobe Experience Manager as a Cloud Service
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
 source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 # Problèmes connus {#known-issues}
 
-Cet article répertorie les problèmes connus de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] offre. La liste est révisée et mise à jour à chaque nouvelle version de [!DNL Experience Manager].
+Cet article répertorie les problèmes connus de l’offre [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. La liste est révisée et mise à jour à chaque version d’[!DNL Experience Manager].
 
-Pour en savoir plus sur les problèmes connus ci-dessous, [contactez l’assistance](https://experienceleague.adobe.com/?lang=en&amp;support-solution=Experience+Manager#support).
+Pour en savoir plus sur les problèmes connus ci-dessous, [contactez l’assistance](https://experienceleague.adobe.com/?lang=fr&amp;support-solution=Experience+Manager#support).
 
 <!-- 
 ## Platform {#platform}
@@ -25,9 +25,9 @@ Pour en savoir plus sur les problèmes connus ci-dessous, [contactez l’assista
 
 <!-- Jira label: assets-cloud-known-issues -->
 
-Certains problèmes connus dans [!DNL Assets] sont :
+Certains problèmes connus dans [!DNL Assets] sont :
 
-* **Télécharger**: Si vous téléchargez un dossier vide, [!DNL Experience Manager] transmet un message de réussite sur la création d’une archive ZIP, mais l’archive n’est pas créée.
+* **Télécharger** : si vous téléchargez un dossier vide, [!DNL Experience Manager] transmet un message de réussite concernant la création d’une archive ZIP, mais l’archive n’est pas créée.
 
 * **Schéma de métadonnées** : le widget d’évaluation des ressources entraînait une erreur de compilation JSP. Il a été supprimé du schéma de métadonnées. <!-- CQ-4282865, CQ-4284633 -->
 
@@ -50,7 +50,7 @@ A few capabilities of Adobe Experience Manager Assets that depend on foundation 
 
 >[!MORELIKETHIS]
 >
->* [Changements majeurs dans [!DNL Experience Manager]](aem-cloud-changes.md)
+>* [Modifications majeures dans [!DNL Experience Manager]](aem-cloud-changes.md)
 >* [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
 >* [Notes de mise à jour](home.md)
 

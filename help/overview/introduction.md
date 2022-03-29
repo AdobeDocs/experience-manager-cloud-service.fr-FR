@@ -5,7 +5,7 @@ exl-id: d81b85bb-a69d-49a4-9e75-76f1c6bbcd67
 source-git-commit: cf688addd731d7a7107a648b40fbbdd149fef503
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -78,6 +78,6 @@ AEM atteint ces objectifs en adoptant les principales caractéristiques des serv
 
 >[!TIP]
 >
->Une fois que vous disposez d’une vue d’ensemble d’AEM as a Cloud Service, vous pouvez rapidement vous inscrire en examinant la [Parcours d’intégration.](/help/journey-onboarding/home.md)
+>Une fois que vous disposez d’une vue d’ensemble d’AEM as a Cloud Service, vous pouvez rapidement vous y intégrer en examinant le [Parcours d’intégration](/help/journey-onboarding/home.md).
 >
->Vous êtes déjà intégré ou prêt à vous familiariser avec les fonctionnalités de test AEM ? Installez le [Module complémentaire Demos De Référence AEM](/help/journey-sites/demos-add-on/overview.md) pour explorer AEM fonctionnalités puissantes à l’aide d’exemples riches.
+>Votre intégration est déjà faite ou vous êtes prêt à tester les fonctionnalités d’AEM ? Installez le [Module complémentaire des démonstrations de référence d’AEM](/help/journey-sites/demos-add-on/overview.md) pour explorer les fonctionnalités puissantes d’AEM à l’aide d’exemples enrichis.

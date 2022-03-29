@@ -5,7 +5,7 @@ exl-id: a95caf5e-e6b2-463f-bebd-b791104fd25c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '278'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,4 +36,4 @@ Les workflows offrent un niveau de prise en charge de la migration variable. Con
 
 * **[!DNL Adobe I/O]Interface de ligne de commande** : Adobe recommande d’utiliser l’outil de migration des workflows de ressources via `aio-cli-plugin-aem-cloud-service-migration` ([!DNL Experience Manager] en tant que module externe de refactorisation de code [!DNL Cloud Service] pour l’interface de ligne de commande [!DNL Adobe I/O]). Pour savoir comment installer et utiliser le module externe, voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction).
 
-* **Utilitaire autonome** : l’outil de migration des workflows de ressources peut également être exécuté en tant qu’utilitaire autonome. Pour en savoir plus sur l’installation et la création de code à partir de la source, voir [Ressource Git : [!DNL Experience Manager Assets] as a [!DNL Cloud Service] - migration des workflows](https://github.com/adobe/aem-cloud-migration).
+* **Utilitaire autonome** : l’outil de migration des workflows de ressources peut également être exécuté en tant qu’utilitaire autonome. Pour en savoir plus sur l’installation et la création de code à partir de la source, voir [Ressource Git : [!DNL Experience Manager Assets]  en tant que  [!DNL Cloud Service] - migration des workflows](https://github.com/adobe/aem-cloud-migration).

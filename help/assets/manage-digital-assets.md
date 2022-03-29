@@ -1,6 +1,6 @@
 ---
 title: Gestion des ressources numériques
-description: Découvrez les différentes méthodes de gestion et de modification des ressources
+description: Découvrez les différentes méthodes de gestion et de modification des ressources.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Publishing,Collaboration,Asset Processing
@@ -9,13 +9,13 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: 8f7dc67a8335822b51e4c7796ab55244199fb214
 workflow-type: tm+mt
 source-wordcount: '4356'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
 # Gestion des ressources {#manage-assets}
 
-Cet article décrit comment gérer et modifier des ressources dans [!DNL Adobe Experience Manager Assets]. Pour gérer [!DNL Content Fragments], voir [[!DNL Content Fragments]](content-fragments/content-fragments.md) ressources.
+Cet article explique comment gérer et modifier des ressources dans [!DNL Adobe Experience Manager Assets]. Pour gérer les [!DNL Content Fragments], voir les ressources [[!DNL Content Fragments]](content-fragments/content-fragments.md).
 
 ## Création de dossiers  {#creating-folders}
 
@@ -48,7 +48,7 @@ Si un utilisateur DAM charge une ou plusieurs ressources qui existent déjà dan
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible dans le canal de version préliminaire. Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
+>Cette fonctionnalité est disponible dans le canal de version préliminaire. Pour plus d’informations sur l’activation de cette fonctionnalité dans votre environnement, consultez la [documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#enable-prerelease).
 
 Pour activer la fonction :
 
@@ -75,7 +75,7 @@ Une fois activé, Experience Manager envoie des notifications de ressources en d
 
 >[!NOTE]
 >
->Lorsque vous chargez des ressources vers le référentiel, Experience Manager détecte la duplication et vous informe des 100 premières ressources en double.
+>Lorsque vous chargez des ressources vers le référentiel, Experience Manager détecte la duplication et vous informe des 100 premières ressources en double.
 
 ## Aperçu des ressources {#previewing-assets}
 
@@ -258,7 +258,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    >[!NOTE]
    >
-   >Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Selon le navigateur, différents formats vidéo sont en outre pris en charge. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
+   >Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Selon le navigateur, différents formats vidéo sont en outre pris en charge. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
 ## Suppression des ressources {#delete-assets}
 
@@ -424,7 +424,7 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 Les annotations sont des commentaires ou des notes d’explication ajoutées aux images ou vidéos. Les annotations offrent aux spécialistes marketing la possibilité de collaborer et de laisser des commentaires sur des ressources.
 
-Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Les formats vidéo pris en charge par Assets dépendent du navigateur. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
+Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acceptent les formats vidéo compatibles avec HTML5. Les formats vidéo pris en charge par Assets dépendent du navigateur. Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
 >[!NOTE]
 >
@@ -465,7 +465,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
    >[!NOTE]
    >
-   >Vous pouvez ajouter des annotations à des ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](manage-video-assets.md). Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
+   >Vous pouvez ajouter des annotations à des ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, consultez la section [Gestion de ressources vidéo](manage-video-assets.md). Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
 1. Pour sélectionner une autre couleur afin de différencier les utilisateurs, cliquez/appuyez sur l’icône Profil et ensuite sur **[!UICONTROL Mes préférences]**.
 

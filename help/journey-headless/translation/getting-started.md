@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 
-## Un peu d’histoire... {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Dans le document précédent relatif au parcours de traduction découplée AEM, [Découvrir le contenu découplé et comment le traduire dans AEM](learn-about.md), vous avez appris la théorie de base d’un CMS découplé et vous devriez maintenant :
 
@@ -24,7 +24,7 @@ Cet article s’appuie sur ces principes de base afin que vous compreniez commen
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment commencer à traduire le contenu découplé dans AEM. Après l’avoir lu, vous devriez :
+Ce document vous aide à comprendre comment commencer à traduire le contenu découplé dans AEM. Après avoir lu ce document, vous devriez :
 
 * comprendre l’importance de la structure de contenu pour la traduction ;
 * savoir comment AEM stocke du contenu découplé ;
@@ -172,9 +172,9 @@ Maintenant que vous comprenez ce que sont les fragments de contenu et l’import
 
 En règle générale, vous ne configurez votre connecteur qu’une seule fois pour votre instance et les règles pour chaque projet découplé. Ensuite, vous utilisez des projets de traduction pour traduire votre contenu et conserver ses traductions à jour en permanence.
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
-Maintenant que vous avez terminé cette partie du parcours de traduction découplée, vous devriez :
+Maintenant que vous avez terminé cette partie du parcours de traduction découplée, vous devriez savoir :
 
 * comprendre l’importance de la structure de contenu pour la traduction ;
 * savoir comment AEM stocke du contenu découplé ;

@@ -6,7 +6,7 @@ exl-id: 94d3df65-71d7-4442-8412-fe2cca7e79ff
 source-git-commit: cba6648d7ef18f3cccbd9562f3a66d9c683ae852
 workflow-type: tm+mt
 source-wordcount: '410'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -142,10 +142,10 @@ Vous trouverez des informations supplémentaires sur la configuration OSGI à [c
       * Type : booléen
    * `oauth.flow`
       * Type : booléen
-* **`org.apache.sling.commons.log.LogManager.factory.config`** (Date d’annonce : 11/16/21, Date d’application : 2/16/21)
+* **`org.apache.sling.commons.log.LogManager.factory.config`** (Date d’annonce: 16/11/21, Date d’application : 16/02/21)
    * `org.apache.sling.commons.log.level`
-      * Type : enumeration
-      * Période requise : INFO, DEBUG ou TRACE
+      * Type : énumération
+      * Plage requise : INFO, DEBUG ou TRACE
    * `org.apache.sling.commons.log.names`
       * Type : chaîne
    * `org.apache.sling.commons.log.file`

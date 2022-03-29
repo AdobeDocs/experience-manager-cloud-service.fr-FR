@@ -1,31 +1,31 @@
 ---
-title: Notes de mise à jour des outils de migration dans AEM version 2021.10.0 as a Cloud Service
-description: Notes de mise à jour des outils de migration dans AEM version 2021.11.0 as a Cloud Service
+title: Notes de mise à jour des outils de migration dans AEM as a Cloud Service version 2021.10.0
+description: Notes de mise à jour des outils de migration dans AEM as a Cloud Service version 2021.11.0
 feature: Release Information
 exl-id: 6b1caa63-dcb0-4c48-ab2c-fd72617abf13
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour des outils de migration dans AEM version 2021.10.0 as a Cloud Service {#release-notes}
+# Notes de mise à jour des outils de migration dans AEM as a Cloud Service version 2021.10.0 {#release-notes}
 
-Cette page présente les notes de mise à jour des outils de migration dans AEM 2021.10.0 as a Cloud Service.
+Cette page présente les notes de mise à jour des outils de migration dans AEM as a Cloud Service version 2021.10.0.
 
 >[!NOTE]
->Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
+>Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
 ## Cloud Acceleration Manager {#cam-release}
 
 ### Date de publication {#release-date-cam}
 
-La date de publication de Cloud Acceleration Manager est le 25 octobre 2021.
+La date de publication de Cloud Acceleration Manager est le 25 octobre 2021.
 
 ### Nouveautés {#what-is-new-cam}
 
-Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA historiques dans un rapport de tendance. Grâce à ce rapport, les utilisateurs peuvent visualiser l’état d’avancement qu’ils font dans une représentation graphique facile à consommer. Voir [Utilisation de l’option Afficher la courbe de tendance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#trendline-view-cam) pour plus d’informations.
+Cloud Acceleration Manager permet désormais aux utilisateurs de visualiser les rapports historiques BPA dans un rapport de tendance. Grâce à ce rapport, les utilisateurs peuvent visualiser les progrès quʼils réalisent sous la forme dʼune représentation graphique facile à utiliser. Consultez la section [Utilisation de lʼoption Afficher la courbe de tendance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#trendline-view-cam) pour plus d’informations.
 
 ### Date de publication {#release-date-october-cam}
 
@@ -33,7 +33,7 @@ La date de publication de la mise à jour de Cloud Acceleration Manager est le 4
 
 ### Nouveautés {#what-is-new-cam-oct}
 
-Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Reportez-vous aux étapes 6 et 7 de la section [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=en#best-practices-analysis).
+Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Reportez-vous aux étapes 6 et 7 de la section [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#best-practices-analysis).
 
 
 ## Outil de transfert de contenu {#ctt-release}

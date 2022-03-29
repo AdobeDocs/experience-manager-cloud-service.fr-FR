@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire…  {#story-so-far}
 
 Dans le document précédent du parcours de traduction découplée AEM, intitulé [Configuration des règles de traduction](translation-rules.md), vous avez appris à utiliser les règles de traduction AEM pour identifier votre contenu de traduction. Vous devez maintenant :
 
@@ -233,9 +233,9 @@ Si votre service de traduction fournit une traduction humaine, le processus de r
 
 La traduction humaine dépasse le cadre de ce parcours de localisation. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour plus d’informations sur cette rubrique. Au-delà des autres options de validation, le workflow de la traduction humaine est le même que celui des traductions automatiques, comme décrit dans ce parcours.
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
-Maintenant que vous avez terminé cette partie du parcours de traduction découplée, vous devriez pouvoir :
+Maintenant que vous avez terminé cette partie du parcours de traduction découplée, vous devriez savoir :
 
 * comprendre ce qu’est un projet de traduction ;
 * être capable de créer des projets de traduction ;

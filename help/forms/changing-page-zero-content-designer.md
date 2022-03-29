@@ -1,5 +1,5 @@
 ---
-title: Modification du contenu de la page zéro avec Designer
+title: Modifier le contenu de la page zéro dans Designer
 seo-title: Changing Page Zero content in Designer
 description: Savez-vous comment modifier le message affiché sur la page zéro d’un PDF XFA ouvert avec un programme de visualisation PDF non Adobe ?
 seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Modification du contenu de la page zéro avec Designer {#changing-page-zero-content-in-designer}
+# Modifier le contenu de la page zéro dans Designer {#changing-page-zero-content-in-designer}
 
 Le contenu de la page zéro s’affiche par défaut lorsqu’un programme de visualisation PDF autre que celui d’Adobe, tel que la visionneuse de fichiers PDF par défaut dans [!DNL Chrome] ou [!DNL Firefox], ne peut pas lire le contenu d’un formulaire PDF/XFA. Le message par défaut de la page zéro est affiché ci-dessous.
 

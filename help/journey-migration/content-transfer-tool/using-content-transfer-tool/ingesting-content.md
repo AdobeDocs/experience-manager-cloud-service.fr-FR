@@ -27,7 +27,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. La boîte de dialogue **Migration Set ingestion** (Ingestion du jeu de migration) s’affiche. Le contenu peut être ingéré simultanément sur l’instance d’auteur ou l’instance de publication. Sélectionnez l’instance cible d’ingestion du contenu. Cliquez sur **Ingest** pour démarrer la phase d’ingestion.
+1. La boîte de dialogue **Ingestion du jeu de migration** (Ingestion du jeu de migration) s’affiche. Le contenu peut être ingéré simultanément sur l’instance d’auteur ou l’instance de publication. Sélectionnez l’instance cible d’ingestion du contenu. Cliquez sur **Ingérer** pour démarrer la phase d’ingestion.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-02.png)
 
@@ -70,6 +70,6 @@ Une fois le processus d’ingestion terminé, vous pouvez utiliser le contenu di
    >[!IMPORTANT]
    >Vous devez désactiver l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** pour empêcher la suppression du contenu existant de l’activité d’ingestion précédente. De plus, cliquez sur **Assistance clientèle** pour enregistrer un ticket, comme le montre la figure précédente.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Une fois que vous avez appris à ingérer du contenu dans Target grâce à l’outil de transfert de contenu, vous pouvez afficher les journaux à la fin de chaque étape (extraction et ingestion) et rechercher les erreurs. Consultez la section [Affichage des journaux d’un jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=fr) pour en savoir plus.

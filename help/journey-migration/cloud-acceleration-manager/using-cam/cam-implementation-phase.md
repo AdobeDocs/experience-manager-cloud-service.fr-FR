@@ -33,7 +33,7 @@ La carte Développement local fournit tout le contenu approprié qui vous aidera
 
 Consultez cette section pour découvrir la carte d’activité Développement local :
 
-1. Cliquez sur le bouton **Afficher** à partir de la carte **Développement local**.
+1. Cliquez sur le bouton **Affichage** à partir de la carte **Développement local**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-2.png)
 
@@ -78,7 +78,7 @@ La carte de déploiement d’AEM as a Cloud Service fournit tout le contenu appr
 
 Consultez cette section pour découvrir la carte d’activité Carte de déploiement d’AEM as a Cloud Service :
 
-1. Cliquez sur le bouton **Afficher** de la carte d’activité **Déploiement d’AEM as a Cloud Service**.
+1. Cliquez sur le bouton **Affichage** de la carte d’activité **AEM le déploiement as a Cloud Service**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-6.png)
 
@@ -93,7 +93,7 @@ La carte d’activité Transfert de contenu fournit des conseils et des considé
 
 Suivez cette section pour explorer la carte d’activité Transfert de contenu :
 
-1. Cliquez sur le bouton **Afficher** à partir de la carte d’activité **Transfert de contenu**.
+1. Cliquez sur le bouton **Affichage** à partir de la carte d’activité **Transfert de contenu**.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-8.png)
 
@@ -115,6 +115,6 @@ Pour estimer la taille du référentiel AEM, vous pouvez exécuter le rapport Ut
 
 Vous pouvez également estimer la taille des chemins de référentiel spécifiques à l’aide du paramètre `path`, par exemple `http://HOST:PORT/etc/reports/diskusage.html?path=/content/dam`.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à utiliser la phase de mise en œuvre, vous êtes prêt à passer en revue l’étape suivante de la [phase d’activation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-golive-phase.html?lang=fr).

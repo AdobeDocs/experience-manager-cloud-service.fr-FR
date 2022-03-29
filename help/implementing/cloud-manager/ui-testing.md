@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
 workflow-type: tm+mt
 source-wordcount: '1401'
-ht-degree: 50%
+ht-degree: 52%
 
 ---
 
@@ -21,7 +21,7 @@ Les tests d’interface utilisateur personnalisés sont une fonctionnalité facu
 
 >[!NOTE]
 > Les pipelines d’évaluation et de production créés avant le 10 février 2021 doivent être mis à jour pour pouvoir utiliser les tests d’interface utilisateur décrits sur cette page.
-> Voir [Pipelines CI-CD dans Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour plus d’informations sur la configuration du pipeline.
+> Pour plus d’informations sur la configuration des pipelines, consultez la section [Pipelines CI-CD dans Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 ## Présentation {#custom-ui-testing}
 
@@ -69,7 +69,7 @@ Pour inclure un `testing.properties` dans l’artefact de création, ajoutez une
 >Les pipelines de production créés avant le 10 février 2021 devront être mis à jour afin d’utiliser les tests d’interface utilisateur décrits dans cette section. Cela signifie essentiellement que l’utilisateur doit modifier le pipeline de production et cliquer sur **Enregistrer** dans l’interface utilisateur, et ce, même si aucune modification n’a été apportée.
 >Consultez [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr#using-cloud-manager) pour en savoir plus sur la configuration du pipeline.
 
-## Création de tests de l’interface utilisateur {#building-ui-tests}
+## Créer des tests de l’interface utilisateur {#building-ui-tests}
 
 Un projet Maven génère un contexte de création Docker. Ce contexte de création Docker décrit comment créer une image Docker contenant les tests de l’interface utilisateur, que les utilisateurs de Cloud Manager doivent générer pour une image Docker contenant les tests de l’interface utilisateur réels.
 
@@ -164,9 +164,9 @@ Le descripteur d’assemblage exclut également certains fichiers qui pourraient
 
 L’archive contenant le contexte de création Docker est automatiquement récupérée par Cloud Manager, qui crée l’image Docker contenant vos tests pendant ses pipelines de déploiement. Cloud Manager exécute ensuite l’image Docker pour réaliser les tests de l’interface utilisateur sur votre application.
 
-La version doit produire zéro ou une archive. S’il ne produit aucune archive, l’étape de test est effectuée par défaut. Si la version produit plusieurs archives, celle qui est sélectionnée n’est pas déterministe.
+Le build doit produire zéro ou une archive. S’il ne produit aucune archive, l’étape de test est effectuée par défaut. Si le build produit plusieurs archives, celle qui est sélectionnée est non déterministe.
 
-## Rédaction de tests de l’interface utilisateur {#writing-ui-tests}
+## Rédiger des tests de l’interface utilisateur {#writing-ui-tests}
 
 Cette section décrit les conventions que l’image Docker contenant vos tests de l’interface utilisateur doit respecter. L’image Docker est créée à partir du contexte de création Docker décrit dans la section précédente.
 

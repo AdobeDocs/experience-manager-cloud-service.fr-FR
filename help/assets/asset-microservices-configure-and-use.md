@@ -8,7 +8,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 9645cf2ef95c41b8d319bb22eb4d69bd11525eca
 workflow-type: tm+mt
 source-wordcount: '2704'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -169,7 +169,7 @@ Appliquez des profils de traitement aux dossiers en utilisant l’une des métho
 >
 >Un seul profil de traitement peut être appliqué à un dossier. Pour générer davantage de rendus, ajoutez d’autres définitions de rendu au profil de traitement existant.
 
-Une fois qu’un profil de traitement est appliqué à un dossier, toutes les nouvelles ressources chargées (ou mises à jour) dans ce dossier ou dans l’un de ses sous-dossiers sont traitées à l’aide du profil de traitement supplémentaire configuré. Ce dernier s’ajoute au profil par défaut standard.
+Une fois qu’un profil de traitement a été appliqué à un dossier, toutes les nouvelles ressources chargées (ou mises à jour) dans ce dossier ou dans l’un de ses sous-dossiers sont traitées à l’aide du profil de traitement supplémentaire configuré. Ce dernier s’ajoute au profil par défaut standard.
 
 >[!NOTE]
 >

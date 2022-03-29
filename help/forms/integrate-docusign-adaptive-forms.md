@@ -22,7 +22,7 @@ AEM Forms as a Cloud Service fournit une [action d’envoi personnalisée pour D
 | Vous pouvez également utiliser la solution de signature électronique d’Adobe, Adobe Sign, pour signer électroniquement un formulaire adaptatif. AEM Forms est bien plus intégré à Adobe Sign et offre des contrôles bien plus précis tels que la signature séquentielle et parallèle, plusieurs méthodes d’authentification, l’expérience de signature dans un formulaire, etc. Pour plus d’informations, voir [Utilisation d’Adobe Sign dans un formulaire adaptatif](working-with-adobe-sign.md). |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Les éléments suivants sont requis pour intégrer DocuSign à AEM Forms :
 

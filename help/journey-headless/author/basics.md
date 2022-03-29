@@ -1,6 +1,6 @@
 ---
 title: Découvrez les bases de la création
-description: Découvrez les concepts et les mécanismes de création de contenu pour votre CMS découplé à l’aide de fragments de contenu.
+description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 99%
 
 # Principes de base de la création en découplage avec AEM {#author-headless-basics}
 
-## Un peu d’histoire... {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Au début du [Parcours de création de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) présentait les concepts de base et la terminologie relatifs à la création découplée.
 
@@ -221,7 +221,7 @@ Les actions de publication sont disponibles dans l’éditeur (ou dans la barre 
 
 ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez appris les principes de base, l’étape suivante consiste à [en découvrir plus sur les références](references.md). Cette section présente et discute les différentes références disponibles, ainsi que la manière de créer des niveaux de structure à l’aide des références de fragment, un élément clé de la création de contenu découplé.
 
@@ -264,7 +264,7 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
       * [Modèles de fragment de contenu – Propriétés](/help/assets/content-fragments/content-fragments-models.md#properties)
 
-      * [Modèles de fragment de contenu – Autorisation de modèles de fragments de contenu dans votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+      * [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 
 * Guides de prise en main

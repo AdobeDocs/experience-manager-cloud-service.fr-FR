@@ -63,7 +63,7 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
       >[!NOTE]
       >Le jeton d’accès arrive à expiration toutes les 24 heures et il faut en créer un nouveau. Pour créer un jeton, revenez dans [Adobe Developer Console](https://console.adobe.io), choisissez votre projet, cliquez sur **User Management API** (API User Management) et collez la même clé privée dans la zone.
 
-1. Une fois les champs renseignés, cliquez sur **Tester la configuration** pour tester la connexion au service de l’API User Management. Si la connexion est établie, vous pourrez cliquer sur **Enregistrer** pour sauvegarder la configuration.
+1. Une fois les champs renseignés, cliquez sur **Configuration du test** pour tester la connexion au service de l’API User Management. Si la connexion est établie, vous pourrez cliquer sur **Enregistrer** pour sauvegarder la configuration.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 

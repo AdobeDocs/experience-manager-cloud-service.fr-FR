@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Présentation de Cloud Acceleration Manager {#overview-cam}
 
-Cloud Acceleration Manager est une application cloud conçue pour guider vos équipes informatiques tout au long du parcours de transition, de la planification à la mise en ligne sur Cloud Service. Configurez vos équipes pour une migration réussie avec les bonnes pratiques, conseils, documentation et outils recommandés par Adobe pour vous aider à chaque phase du parcours vers AEM as a Cloud Service.
+Cloud Acceleration Manager est une application cloud conçue pour guider vos équipes informatiques tout au long du parcours de transition, de la planification à la mise en ligne sur Cloud Service. Préparez vos équipes à une migration réussie grâce aux bonnes pratiques, aux conseils, à la documentation et aux outils recommandés par Adobe pour vous aider à chaque étape du parcours vers AEM as a Cloud Service.
 
 Regardez cette vidéo pour un aperçu rapide de Cloud Acceleration Manager :
 

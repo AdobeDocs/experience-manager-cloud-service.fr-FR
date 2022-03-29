@@ -160,7 +160,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
    >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator.
 -->
 
-## Exportation d’une application de processus {#export-a-workflow-application}
+## Exporter une application de workflow {#export-a-workflow-application}
 
 Vous pouvez utiliser le gestionnaire de modules AEM pour exporter des applications de processus. Pour ce faire, procédez comme suit :
 

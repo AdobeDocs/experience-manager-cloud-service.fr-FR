@@ -5,7 +5,7 @@ exl-id: 1a0d6b22-71b1-4f3c-acaa-82d8d9c0f81a
 source-git-commit: fb82970154fa37e3b3d1591a2e25989853ec6b90
 workflow-type: tm+mt
 source-wordcount: '502'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -65,9 +65,9 @@ Pour enregistrer votre lecteur, procédez comme suit :
 
    >[!IMPORTANT]
    >**Recommandations relatives aux bonnes pratiques de sécurité lors de l’utilisation du code d’enregistrement**
-   >Il est recommandé de limiter l’utilisation du code d’enregistrement. Si un code d&#39;enregistrement est compromis, mais a une limite de 100 enregistrements, l&#39;attaquant peut s&#39;enregistrer uniquement jusqu&#39;à ce nombre, mais pas plus. Vous pouvez toujours mettre à jour la limite d’utilisation après la création du code d’enregistrement et l’enregistrement de certains lecteurs du client. Si le client observe une activité d’enregistrement inhabituelle pour un code d’enregistrement spécifique, il peut réduire la limite en temps réel pendant qu’il enquête et peut augmenter le nombre s’il s’agit d’une fausse alarme, sans affecter les lecteurs déjà enregistrés.
+   >Il est recommandé de limiter l’utilisation du code d’enregistrement. Si un code d’enregistrement est compromis, mais a une limite de 100 enregistrements, la personne malveillante peut s’enregistrer uniquement jusqu’à ce nombre, mais pas au-delà. Vous pouvez toujours mettre à jour la limite d’utilisation après la création du code d’enregistrement et l’enregistrement de certains lecteurs du client. Si le client observe une activité d’enregistrement inhabituelle pour un code d’enregistrement spécifique, il peut réduire la limite en temps réel pendant qu’il enquête et peut augmenter le nombre s’il s’agit d’une fausse alarme, sans affecter les lecteurs déjà enregistrés.
 
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez installé et configuré le lecteur en mode cloud, vous devez continuer votre parcours Screens as a Cloud Service en consultant le document [Attribution du lecteur à un affichage dans Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/assigning-player-display.md) du fournisseur de services Screens.

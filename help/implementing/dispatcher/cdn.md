@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: ef0a4d3c8daf091ef10c7ebb2bcaa562cf4357fa
 workflow-type: tm+mt
 source-wordcount: '946'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -49,7 +49,7 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 
 * Le client doit disposer d’un réseau de diffusion de contenu existant potentiellement onéreux à remplacer.
 * Le client doit en assurer la gestion.
-* Le client doit être en mesure de configurer le réseau de diffusion de contenu pour travailler avec AEM as a Cloud Service. Voir les instructions de configuration présentées ci-dessous.
+* Le client doit être en mesure de configurer le réseau CDN pour utiliser AEM as a Cloud Service. Consultez les instructions de configuration présentées ci-dessous.
 * Le client doit disposer d’ingénieurs maîtrisant les réseaux de diffusion de contenu, et disponibles pour résoudre les problèmes associés éventuels.
 * Le client doit effectuer et réussir un test de charge avant de passer en production.
 
@@ -65,7 +65,7 @@ Instructions de configuration :
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine afin qu’AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
 1. Définir `X-AEM-Edge-Key`. La valeur doit provenir d’Adobe.
 
-   * Ce paramétrage est nécessaire afin que le réseau de diffusion de contenu d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple, `X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau de diffusion de contenu géré par le client) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
+   * Ce paramétrage est nécessaire afin que le réseau de diffusion de contenu d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple,`X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau de diffusion de contenu géré par le client) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
    * L’accès à l’entrée du réseau de diffusion de contenu d’Adobe peut être aussi bloqué lorsqu’une balise `X-AEM-Edge-Key` n’est pas présente. Informez Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.

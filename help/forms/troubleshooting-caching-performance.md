@@ -14,21 +14,21 @@ ht-degree: 100%
 
 # Performances de mise en cache {#caching-performance}
 
-Vous pouvez rencontrer certains des problèmes suivants lors de la configuration ou de l’utilisation du cache de formulaires adaptatifs dans un environnement Cloud Service :
+Vous pouvez rencontrer certains des problèmes suivants lors de la configuration ou de l’utilisation du cache de formulaires adaptatifs dans un environnement Cloud Service :
 
-## Certains formulaires adaptatifs contenant des images ou des vidéos ne sont pas automatiquement invalidés à partir du cache du Dispatcher {#images-videos-not-invalidated}
+## Certains formulaires adaptatifs contenant des images ou des vidéos ne sont pas automatiquement invalidés à partir du cache du Dispatcher. {#images-videos-not-invalidated}
 
 Vous pouvez sélectionner et ajouter des images ou des vidéos depuis l’explorateur de ressources à un formulaire adaptatif. Lorsque ces images sont modifiées dans l’éditeur de ressources, la version mise en cache d’un formulaire adaptatif contenant de telles images n’est pas invalidée. Le formulaire adaptatif continue d’afficher des images plus anciennes.
 
 Pour résoudre ce problème, après avoir publié les images et la vidéo, annulez explicitement la publication et publiez les formulaires adaptatifs qui font référence à ces ressources.
 
-## Certains formulaires adaptatifs incluant un fragment de contenu ou des fragments d’expérience ne sont pas automatiquement invalidés à partir du cache du Dispatcher {#content-fragments-experience-fragments-not-invalidated}
+## Certains formulaires adaptatifs incluant un fragment de contenu ou des fragments d’expérience ne sont pas automatiquement invalidés à partir du cache du Dispatcher. {#content-fragments-experience-fragments-not-invalidated}
 
 Vous pouvez ajouter un fragment de contenu ou un fragment d’expérience à un formulaire adaptatif. Lorsque ces fragments sont modifiés et publiés indépendamment, la version mise en cache d’un formulaire adaptatif contenant ces fragments n’est pas invalidée. Le formulaire adaptatif continue d’afficher des fragments plus anciens.
 
 Pour résoudre ce problème, après avoir publié un fragment de contenu ou un fragment d’expérience mis à jour, annulez explicitement la publication et publiez les formulaires adaptatifs qui utilisent ces ressources.
 
-## Seule la première instance de formulaires adaptatifs est mise en cache {#only-first-instance-cached}
+## Seule la première instance de formulaires adaptatifs est mise en cache. {#only-first-instance-cached}
 
 Lorsque l’URL du formulaire adaptatif ne contient aucune information de localisation et que l’option Utiliser les paramètres régionaux du navigateur dans le gestionnaire de configuration est activée, une version localisée du formulaire adaptatif est diffusée et une instance du formulaire adaptatif, basée sur la première requête (paramètres régionaux du navigateur requis), est mise en cache et fournie à chaque utilisateur suivant.
 
@@ -55,7 +55,7 @@ Exécutez les étapes suivantes afin de résoudre ce problème :
     RewriteRule "^/content/forms/af/(.*).html$" "/content/forms/af/$1.%1.html" [R]
 ```
 
-## La mise en cache CDN s’arrête après 300 secondes {#cdn-caching-stops-working-after-300-seconds}
+## La mise en cache CDN s’arrête après 300 secondes. {#cdn-caching-stops-working-after-300-seconds}
 
 La mise en cache CDN s’arrête après 300 secondes et toutes les requêtes de mise en cache sur CDN sont redirigées vers le Dispatcher.
 

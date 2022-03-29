@@ -28,7 +28,7 @@ Les schémas XML et JSON représentent la structure dans laquelle les données s
 * **Utilisation sans aucun modèle de formulaire**
 Les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle de formulaire. Les données XML générées à partir de ce type de formulaire présentent une structure plate avec des champs et des valeurs correspondantes.
 
-## Prérequis
+## Conditions préalables
 
 Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants :
 

@@ -1,5 +1,5 @@
 ---
-title: Processus basé sur l’utilisation de Forms sur OSGi
+title: Workflow basé sur l’utilisation de Forms sur OSGi
 seo-title: Rapidly build Adaptive Forms-based processes, automate document services operations, and use Adobe Sign with AEM workflows
 description: Utilisez [!DNL AEM Forms] Workflow pour automatiser et créer rapidement des révisions et des approbations pour démarrer les services de document
 seo-description: Use [!DNL AEM Forms] Workflow to automate and rapidly build review and approvals, to start document services (For example, to convert a PDF document to another format), integrate with Adobe Sign signature workflow, and more.
@@ -11,12 +11,12 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '2360'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Processus basé sur l’utilisation de Forms sur OSGi{#forms-centric-workflow-on-osgi}
+# Workflow basé sur l’utilisation de Forms sur OSGi{#forms-centric-workflow-on-osgi}
 
 ![](do-not-localize/header.png)
 
@@ -24,7 +24,7 @@ Les entreprises collectent les données à partir de centaines, voire de millier
 
 Avec les processus de révision et d’approbation pour les publics internes et externes, les grandes entreprises sont soumises à des tâches répétitives : par exemple, la conversion d’un document PDF dans un autre format. Ces tâches prennent beaucoup de temps et mobilisent un grand nombre de ressources lorsqu’elles sont effectuées manuellement. Les entreprises ont également des obligations légales consistant à signer numériquement un document et à archiver des données de formulaire pour une utilisation ultérieure dans des formats prédéfinis..
 
-## Présentation du processus basé sur l’utilisation de Forms sur OSGi {#introduction-to-forms-centric-workflow-on-osgi}
+## Présentation du workflow basé sur l’utilisation de Forms sur OSGi {#introduction-to-forms-centric-workflow-on-osgi}
 
 Vous pouvez utiliser des processus AEM pour créer rapidement des processus basés sur des formulaires adaptatifs. Ces processus peuvent être utilisés pour la révision et l’approbation, les flux de processus d’entreprise, le démarrage de Documents Services, l’intégration du processus de signature Adobe Sign et des opérations similaires : par exemple, le traitement de l’application de cartes de crédit, les processus d’approbation de congés des employés et l’enregistrement d’un formulaire en tant que document PDF. De plus, ces processus peuvent être utilisés dans une entreprise ou sur le pare-feu réseau.
 
@@ -45,9 +45,9 @@ Le diagramme suivant illustre le processus complet de création, d’exécution 
 * Un processus est une représentation d’un processus réel d’entreprise. Conservez votre processus réel d’entreprise et répertoriez les participants du processus d’entreprise qui sont prêts. Par ailleurs, préparez les éléments associés (formulaires adaptatifs, documents PDF, etc.) avant de créer un processus.
 * Un processus peut se composer de plusieurs étapes. Ces étapes sont répertoriées dans la boîte de réception AEM et facilitent la progression de rapport du processus. Divisez votre processus d’entreprise en étapes logiques.
 * Vous pouvez configurer l’étape de tâche affectée des processus AEM pour envoyer des notifications électroniques aux utilisateurs ou aux personnes désignées. Ainsi, [autorisez les notifications électroniques](#configure-email-service).
-* Un processus peut également utiliser Adobe Sign pour les signatures numériques. Si vous envisagez d’utiliser Adobe Sign dans un workflow, [ configure Adobe Sign pour  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) avant de l’utiliser dans un workflow.
+* Un processus peut également utiliser Adobe Sign pour les signatures numériques. Si vous envisagez d’utiliser Adobe Sign dans un workflow, [configure Adobe Sign pour [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) avant de l’utiliser dans un workflow.
 
-## Créer un modèle de processus {#create-a-workflow-model}
+## Créer un modèle de workflow {#create-a-workflow-model}
 
 Un modèle de processus se compose de la logique et du flux d’un processus d’entreprise. Il se compose d’une série d’étapes. Ces étapes sont des composants d’AEM. Vous pouvez étendre les étapes de workflow avec des paramètres et des scripts pour proposer davantage de fonctionnalités et de contrôle, selon les besoins. [!DNL AEM Forms] fournit quelques étapes supplémentaires par rapport aux étapes AEM prêtes à l’emploi. Pour obtenir la liste détaillée des étapes AEM et [!DNL AEM Forms], consultez [Référence sur les étapes de processus AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#extending-aem) et [Référence sur les étapes du processus basé sur l’utilisation de Forms on OSGi](aem-forms-workflow.md).
 
@@ -127,7 +127,7 @@ Cet exemple crée un modèle de processus pour une demande de prêt immobilier �
 
    ![workflow-editor-mortgage](assets/workflow-editor-mortgage.png)
 
-## Créer une demande de processus basée sur l’utilisation de Forms {#create-a-forms-centric-workflow-application}
+## Création dʼune demande de workflow basée sur l’utilisation de Forms {#create-a-forms-centric-workflow-application}
 
 La demande est le formulaire adaptatif associé au processus. Lorsqu’une demande est envoyée via la boîte de réception, elle lance le processus associé. Pour rendre un processus Forms disponible en tant que demande dans la boîte de réception AEM et l’application [!DNL AEM Forms], procédez comme suit pour créer une demande de processus :
 
@@ -162,7 +162,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
   </tr>
   <tr>
    <td>Groupes d’accès</td>
-   <td><p>Sélectionnez un groupe. La demande est visible dans la boîte de réception AEM uniquement pour les membres du groupe sélectionné. L’option de groupe d’accès définit tous les groupes de la variable [!DNL workflow-users] groupe disponible pour la sélection. </p> <br /> </td>
+   <td><p>Sélectionnez un groupe. La demande est visible dans la boîte de réception AEM uniquement pour les membres du groupe sélectionné. L’option Accès au groupe permet de sélectionner tous les groupes du groupe [!DNL workflow-users]. </p> <br /> </td>
   </tr>
   <tr>
    <td>Service de préremplissage</td>
@@ -191,15 +191,15 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
 
 Vous pouvez lancer ou de déclencher un processus basé sur l’utilisation de Forms en :
 
-* [Envoi d’une demande depuis la boîte de réception AEM](#inbox)
+* [Envoyer une demande depuis la boîte de réception AEM](#inbox)
 * [Envoi d’une demande depuis l’application [!DNL AEM Forms] ](#afa)
 
 * [Envoi d’un formulaire adaptatif](#af)
 * [Utilisant le dossier de contrôle](#watched)
 
-* [Envoi d’une communication interactive ou d’une lettre](#letter)
+* [Envoyer une communication interactive ou une lettre](#letter)
 
-### Envoi d’une demande depuis la boîte de réception AEM {#inbox}
+### Envoyer une demande depuis la boîte de réception AEM {#inbox}
 
 La demande de processus que vous avez créée est disponible en tant qu’application dans la boîte de réception. Les utilisateurs qui sont membres du groupe [!DNL workflow-users] peuvent renseigner et envoyer la demande qui déclenche le processus associé. Pour plus d’informations sur l’utilisation de la boîte de réception AEM pour envoyer des demandes et gérer des tâches, voir [Gestion des applications et des tâches Forms dans la boîte de réception AEM](manage-applications-inbox.md).
 

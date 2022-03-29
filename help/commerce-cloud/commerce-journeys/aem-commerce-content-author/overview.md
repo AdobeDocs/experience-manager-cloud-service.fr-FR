@@ -1,27 +1,27 @@
 ---
-title: parcours d’auteur de contenu AEM Commerce
-description: Commencez ici pour obtenir un parcours guidé par AEM création dans Commerce
+title: Parcours de création de contenu AEM Commerce
+description: Commencez ici pour un parcours guidé à travers la création d’AEM Commerce.
 exl-id: 155a2534-746d-4237-b7e2-9212c36fac7f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 36%
+ht-degree: 100%
 
 ---
 
-# parcours de création de contenu AEM et de commerce {#aem-commerce-author-journey}
+# Parcours de création de contenu AEM Content and Commerce {#aem-commerce-author-journey}
 
-Commencez ici pour un parcours guidé à travers AEM Content and Commerce afin d’apprendre à gérer les expériences de produits.
+Commencez ici pour un parcours guidé à travers AEM Content et Commerce afin d’apprendre à gérer les expériences de produits.
 
 ## Présentation {#introduction}
 
-Ce guide vous guide tout au long des rubriques de création de contenu et de commerce les plus importantes AEM afin que vous puissiez :
+Ce guide vous guide à travers les sujets les plus importants de la création d’AEM Content and Commerce afin que vous puissiez :
 
 * Découvrez les bases d’AEM Content and Commerce
-* Prise en main AEM bases de la création CIF
-* Créer des expériences de catalogue de produits avec des modèles et du contenu individuels
-* Gestion des expériences de catalogue de produits étape par étape
-* Enrichir des données de produit avec du contenu à l’aide des outils de gestion de l’expérience du produit
+* Prise en main des bases de création d’AEM CIF
+* Création d’expériences de catalogues de produits avec des modèles et du contenu individuels
+* Gestion des expériences de catalogue de produits par étapes
+* Enrichissement des données produit avec du contenu à l’aide des outils de gestion de l’expérience produit
 
 ## Parcours de documentation AEM {#documentation-journeys}
 
@@ -33,25 +33,25 @@ Si vous souhaitez savoir la manière dont Adobe recommande de résoudre des prob
 
 ## Public {#audience}
 
-Ce parcours est conçu pour l’auteur de contenu Commerce AEM. Ce parcours présente les exigences, les étapes et l’approche pour commencer et gérer les pages de catalogue, les modèles et les expériences produit complètes.
+Ce parcours est destiné à l’auteur de contenu AEM Commerce. Ce parcours présente les exigences, les étapes et l’approche à adopter pour démarrer et gérer les pages de catalogue, les modèles ainsi que les expériences produit complètes.
 
 Les informations présentées dans ce parcours peuvent bien sûr être utiles à d’autres personnes, mais certaines informations seront superflues pour certains rôles. Tenez-vous informés des prochains parcours couvrant les spécificités des rôles supplémentaires.
 
 ## Le Parcours {#the-journey}
 
-Vous allez explorer de nombreux sujets dans ce parcours. Les articles suivants apportent des connaissances fondamentales et renvoient vers une documentation technique détaillée.
+Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous apportent des connaissances fondamentales et vous proposent un lien vers une documentation technique détaillée.
 
-Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous découvrez AEM Content and Commerce, nous vous recommandons de commencer au début et de progresser de manière séquentielle.
+Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si vous êtes un nouvel utilisateur d’AEM Content and Commerce, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
 
 | Numéro | Article | Description |
 |---|---|---|
-| 0 | AEM Content and Commerce Developer Parcours | Ce document |
-| 1 | [En savoir plus sur AEM Content and Commerce](/help/commerce-cloud/introduction.md) | Découvrez les concepts et les concepts de base d’AEM Content and Commerce. |
-| 2 | [Prise en main des bases de création AEM CIF](getting-started.md) | Découvrez comment accéder aux données de produit et les utiliser pour vos cas d’utilisation de création. |
+| 0 | Parcours du développeur de contenu et commerce AEM | Ce document |
+| 1 | [Découvrez AEM Content and Commerce](/help/commerce-cloud/introduction.md) | Découvrez les concepts et les bases d’AEM Content and Commerce. |
+| 2 | [Prise en main des bases de création d’AEM CIF](getting-started.md) | Découvrez comment accéder aux données de produit et les utiliser pour vos cas d’utilisation de création. |
 | 3 | [Gestion des pages et des modèles de catalogue de produits](catalog-templates.md) | Découvrez comment créer une expérience de catalogue de produits standard. |
-| 4 | [Gestion des expériences de catalogue de produits étape par étape](staged-catalog.md) | Découvrez comment créer de futures expériences de catalogue de produits avec des données intermédiaires et des lancements AEM. |
+| 4 | [Gestion des expériences de catalogue de produits intermédiaires](staged-catalog.md) | Découvrez comment créer de futures expériences de catalogue de produits avec des données intermédiaires et des lancements AEM. |
 | 5 | [Création d’expériences de produit](product-experience-management.md) | Découvrez comment augmenter les données de produit avec du contenu immersif dans AEM. |
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
-Vous êtes maintenant prêt à prendre en main votre parcours de développement de contenu et de commerce AEM. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article [En savoir plus sur AEM Content and Commerce](/help/commerce-cloud/introduction.md).
+Vous êtes maintenant prêt à commencer votre parcours de développement d’AEM Content and Commerce. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article [Découvrez AEM Content and Commerce](/help/commerce-cloud/introduction.md).

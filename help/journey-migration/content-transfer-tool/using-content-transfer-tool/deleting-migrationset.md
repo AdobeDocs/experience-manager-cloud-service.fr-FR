@@ -21,6 +21,6 @@ Suivez les étapes ci-dessous :
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete1.png)
 
-1. Cliquez sur **Delete** dans la boîte de dialogue **Delete Migration Set** pour confirmer la suppression.
+1. Cliquez sur **Supprimer** dans la boîte de dialogue **Supprimer le jeu de migration** pour confirmer la suppression.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/migration-delete2.png)

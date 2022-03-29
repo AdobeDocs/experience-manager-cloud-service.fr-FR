@@ -32,7 +32,7 @@ La marque Venia a récemment commencé à fabriquer des produits à l’aide de 
 
 ![Mise en œuvre finale du badge Écologique](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Un environnement de développement local est nécessaire pour suivre ce tutoriel. Cela inclut une instance d’AEM en cours d’exécution configurée et connectée à une instance Adobe Commerce. Examinez les exigences et les étapes de la [configuration d’un développement local avec le SDK AEM as a Cloud Service](../develop.md). Pour suivre complètement le tutoriel, vous aurez besoin d’autorisations pour ajouter [Attributs à un produit](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) dans Adobe Commerce.
 

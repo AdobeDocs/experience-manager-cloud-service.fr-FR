@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1069'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 77%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Notes de mise à jour"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portail de distribution de logiciels"
 
-Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package via [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
+Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
 >[!NOTE]
 >Téléchargez l’outil de transfert de contenu depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
@@ -64,7 +64,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
 
 
-1. La console ci-dessous s’affiche lorsque vous créez le premier jeu de migration. Cliquez sur **Create Migration Set** (Créer un jeu de migration) pour créer un jeu de migration.
+1. La console ci-dessous s’affiche lorsque vous créez le premier jeu de migration. Cliquez sur **Créer un jeu de migration** pour créer un jeu de migration.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
@@ -76,24 +76,24 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
 
-   1. **Name** : renseignez le nom du jeu de migration.
+   1. **Nom** : renseignez le nom du jeu de migration.
       >[!NOTE]
       >Aucun caractère spécial n’est autorisé dans ce nom.
 
-   1. **Cloud Service Configuration** : renseignez l’URL de destination d’auteur AEM as a Cloud Service.
+   1. **Configuration de Cloud Service** : renseignez l’URL de destination d’auteur AEM as a Cloud Service.
 
       >[!NOTE]
       >Vous pouvez créer et gérer un maximum de dix jeux de migration à la fois pendant l’activité de transfert de contenu.
       >En outre, vous devez créer une migration distincte pour chacun des environnements spécifiques : *Stage* (Évaluation), *Development* (Développement) ou *Production*.
 
-   1. **Access Token** : renseignez le jeton d’accès.
+   1. **Jeton d’accès** : renseignez le jeton d’accès.
 
       >[!NOTE]
-      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Open access token** (Ouvrir le jeton d’accès). Vous devez vous assurer que vous appartenez au groupe &quot;Administrateurs&quot; dans l’instance de Cloud Service cible.
+      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Ouvrir le jeton d’accès**. Vous devez vous assurer que vous appartenez au groupe &quot;Administrateurs&quot; dans l’instance de Cloud Service cible.
 
-   1. **Parameters** : sélectionnez les paramètres suivants pour créer le jeu de migration :
+   1. **Paramètres** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
-      1. **Include version** : sélectionnez les options requises. Lorsque différentes versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
+      1. **Inclure les versions** : sélectionnez les options requises. Lorsque différentes versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
 
          ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
 
@@ -101,7 +101,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
          >Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
 
-      1. **Paths to be included** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte les entrées effectuées par saisie ou par sélection.
+      1. **Chemins à inclure** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte les entrées effectuées par saisie ou par sélection.
 
          >[!IMPORTANT]
          >Les chemins suivants sont restreints lors de la création d’un jeu de migration :
@@ -166,6 +166,6 @@ Voici un exemple : **Vérifier la taille** donne des avertissements.
 ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez appris à créer un jeu de migration, vous êtes prêt à en apprendre plus sur les processus d’extraction et d’ingestion dans l’outil de transfert de contenu. Avant d’en apprendre plus sur ces processus, vous devez consulter la section [Gestion des référentiels de contenu volumineux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr) pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service.

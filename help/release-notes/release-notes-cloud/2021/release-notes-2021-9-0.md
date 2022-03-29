@@ -1,11 +1,11 @@
 ---
-title: Notes de mise à jour de la version 2021.9.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notes de mise à jour de la version 2021.9.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notes de mise à jour de la version 2021.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2021.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1572'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour générales de la version
 La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2021.9.0) est le mercredi 6 octobre 2021.
 La version suivante (2021.10.0) date du 4 novembre 2021.
 
-## Vidéo de version {#release-video}
+## Vidéo de mise à jour {#release-video}
 
 Regardez la vidéo [Aperçu de la version de septembre 2021](https://video.tv.adobe.com/v/337381) pour un résumé des fonctionnalités ajoutées.
 
@@ -45,7 +45,7 @@ Regardez la vidéo [Aperçu de la version de septembre 2021](https://video.tv.a
    ![Trier les résultats de recherche dans [!DNL Assets] dans les vues Colonne et Carte](/help/assets/assets/sort-searched-assets.png)
    *Image : trier les résultats de recherche dans [!DNL Assets] dans les vues Colonne et Carte.*
 
-* Pour appeler par programmation le traitement à l’aide des microservices de ressources, une nouvelle API est introduite. Les développeurs peuvent désormais appliquer un profil de traitement existant au niveau du dossier à une ou plusieurs ressources spécifiques d’un dossier. Le profil de traitement est appliqué en fonction des mises à jour des propriétés de métadonnées personnalisées. Voir `AssetProcessor` dans le [[!DNL Experience Manager] Référence d’API](https://www.adobe.io/experience-manager/reference-materials/). Comme auparavant, il est possible de [utilisation des microservices de ressources de l’interface utilisateur](/help/assets/asset-microservices-configure-and-use.md).
+* Pour appeler par programmation le traitement à l’aide des microservices de ressources, une nouvelle API est introduite. Les développeurs peuvent désormais appliquer un profil de traitement existant au niveau du dossier à une ou plusieurs ressources spécifiques d’un dossier. Le profil de traitement est appliqué en fonction des mises à jour des propriétés de métadonnées personnalisées. Voir `AssetProcessor` dans la [[!DNL Experience Manager] référence de l’API](https://www.adobe.io/experience-manager/reference-materials/). Comme auparavant, il est possible d’[utiliser les microservices de ressources à partir de l’interface utilisateur](/help/assets/asset-microservices-configure-and-use.md).
 
 <!-- Leave this commented.
 
@@ -68,7 +68,7 @@ CQ-4328183 was not reported on CS so not documented here.
 
 * **Analytics pour les formulaires adaptatifs** : vous pouvez désormais capturer et suivre le comportement de l’utilisateur final via Adobe Analytics pour les formulaires adaptatifs afin de rassembler les informations sur l’utilisateur final. Il permet de prendre des décisions éclairées basées sur les données afin d’améliorer l’expérience de l’utilisateur final.
 
-* **Connectez facilement AEM Forms à Microsoft Dynamics et à Salesforce** : le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce, ce qui permet aux développeurs de configurer [plus rapidement et plus facilement Microsoft Dynamics et Salesforce en tant que sources de données pour un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=fr).
+* **Connectez facilement AEM Forms à Microsoft Dynamics et à Salesforce** : le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce, ce qui permet aux développeurs de configurer [plus rapidement et plus facilement Microsoft Dynamics et Salesforce en tant que sources de données pour un formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/use-form-data-model/configure-msdynamics-salesforce.html?lang=fr).
 
 * **Signature électronique d’un formulaire adaptatif à l’aide de DocuSign :** vous pouvez utiliser DocuSign pour signer électroniquement un formulaire adaptatif. Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif. Vous pouvez installer le package disponible dans Distribution logicielle pour importer l’action d’envoi.
 
@@ -149,11 +149,11 @@ Pour améliorer les performances des requêtes de recherche et de l’indexation
 
 ## Cloud Manager {#cloud-manager}
 
-Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.9.0 et 2021.8.0.
+Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.9.0 et 2021.8.0.
 
 ## Date de publication {#release-date-cm-sept}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.9.0 est le 9 septembre 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.9.0 est le 9 septembre 2021.
 La prochaine version est prévue pour le 7 octobre 2021.
 
 ### Nouveautés {#what-is-new-cm-sept}
@@ -192,12 +192,12 @@ La date de publication de l’outil de transfert de contenu version v1.6.0 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Amélioration du mappage des utilisateurs avec une expérience utilisateur simplifiée, y compris les fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#using-user-mapping-tool).
+* Amélioration de l’outil de mappage des utilisateurs pour une expérience client simplifiée, notamment grâce aux fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#using-user-mapping-tool).
    * Test de la connexion à l’API User Management avant d’exécuter le mappage des utilisateurs
    * Ignorer les erreurs de manière appropriée et poursuivre l’activité de mappage des utilisateurs
-   * Le mappage utilisateur n’échoue plus si le jeton d’accès expire (après 24 heures). Le mappage des utilisateurs peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.
+   * Le mappage des utilisateurs n’échoue plus si le Jeton d’accès expire (après 24 heures). Le mappage des utilisateurs peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.
 
-* Pour accroître la robustesse du CTT, le contenu peut être ingéré simultanément sur l’instance d’auteur ou l’instance de publication.
+* Pour améliorer la robustesse de l’outil de transfert de contenu (CTT), le contenu ne peut être ingéré que sur l’instance de création ou sur l’instance de publication au même moment.
 
 * Lorsque différentes versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
 
@@ -205,14 +205,14 @@ La date de publication de l’outil de transfert de contenu version v1.6.0 est 
 
 ### Date de publication {#release-date-bpa-latest}
 
-La date de publication de la version 2.1.18 de l’analyseur des bonnes pratiques est le 2 septembre 2021.
+La date de publication de Best Practices Analyzer v2.1.18 est le 02 septembre 2021.
 
 ### Nouveautés {#what-is-new}
 
-* Possibilité de détecter et de générer des rapports sur le nombre total de noeuds.
+* Possibilité de détecter et de générer des rapports sur le nombre total de nœuds.
 
-* Possibilité de détecter et de générer des rapports sur le type et la taille du magasin de noeuds.
+* Possibilité de détecter et de générer des rapports sur le type et la taille du magasin de nœuds.
 
 ### Correctifs {#bug-fixes-bpa}
 
-* BPA détectait faussement la présence de Commerce Integration Framework.
+* BPA détectait faussement la présence de Commerce Integration Framework.

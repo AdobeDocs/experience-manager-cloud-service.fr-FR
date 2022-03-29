@@ -5,7 +5,7 @@ exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
 source-git-commit: ae79dbf490c5e8b819c287b3013bbd93cdb6a59f
 workflow-type: tm+mt
 source-wordcount: '1693'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,9 @@ Pour commencer avec CRXDE Lite :
 1. Entrez votre **nom d’utilisateur** et votre **mot de passe**.
 1. Cliquez sur **OK**.
 
-L’interface utilisateur du CRXDE Lite s’affiche comme suit dans votre navigateur :
+L’interface utilisateur de CRXDE Lite s’affiche comme suit dans votre navigateur :
 
-![L’interface CRXDE Lite](assets/crxde-lite.png)
+![L’interface CRXDE Lite](assets/crxde-lite.png)
 
 >[!TIP]
 >
@@ -36,11 +36,11 @@ L’interface utilisateur du CRXDE Lite s’affiche comme suit dans votre naviga
 
 ## Présentation de l’interface utilisateur {#overview-of-the-user-interface}
 
-L’interface utilisateur CRXDE Lite comporte de nombreuses parties et de nombreuses fonctions.
+L’interface utilisateur CRXDE Lite comporte de nombreuses parties et de nombreuses fonctions.
 
 ### Barre de commutation supérieure {#top-switcher-bar}
 
-La barre de sélecteur supérieure vous permet de basculer rapidement entre CRXDE Lite et [Gestionnaire de modules.](package-manager.md)
+La barre de commutation supérieure permet de basculer rapidement entre CRXDE Lite, le [Gestionnaire de package.](package-manager.md)
 
 ### Widget de chemin de nœud {#node-path-widget}
 

@@ -24,14 +24,14 @@ Pour les auteurs de formulaires adaptatifs, les fragments de référence sont fo
 
 * Adresse
 * Coordonnées
-* Informations de carte de crédit
+* Informations de la carte de crédit
 * Emploi actuel
 * Informations sur les personnes à charge
 * Historique d’emploi
 * Recettes et dépenses
 * Nom
 * Conditions générales
-* Conditions générales avec saisie tactile
+* Conditions générales avec griffonnage
 
 Lorsque vous installez le package, un dossier Fragments de référence contenant des fragments de référence est créé sous Formulaires et documents. Pour installer un package, voir [Déploiement de packages de contenu via Cloud Manager et Package Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#deploying-content-packages-via-cloud-manager-and-package-manager) et [Comment utiliser les packages](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr).
 
@@ -57,7 +57,7 @@ Comprend des champs permettant de saisir le numéro de téléphone et l’adress
 
 ](assets/contact-info-1.png)-->
 
-## Informations de carte de crédit {#credit-card-information}
+## Informations de la carte de crédit {#credit-card-information}
 
 Comprend des champs permettant de capturer les informations de carte de crédit qui peuvent être utilisées pour le traitement des paiements.
 [ ![Fragment d’informations de carte de crédit](assets/cc-info.png)](assets/cc-info-1.png)
@@ -92,7 +92,7 @@ Comprend des champs permettant de saisir l’historique d’emploi. Il permet d�
 
 ](assets/emp-history-1.png)-->
 
-## Recettes et dépenses {#income-expenditure}
+## Recettes &amp; dépenses {#income-expenditure}
 
 Comprend des champs permettant de capturer les dépenses et le flux de trésorerie mensuels. Les formulaires qui nécessitent la saisie des détails financiers peuvent utiliser ce fragment pour capturer les revenus et les dépenses.
 
@@ -122,7 +122,7 @@ Indique les conditions générales que les utilisateurs doivent accepter avant d
 
 ](assets/tnc-1.png)-->
 
-## Conditions générales avec saisie tactile {#terms-conditions-with-scribble}
+## Conditions générales avec griffonnage {#terms-conditions-with-scribble}
 
 Indique les conditions générales que les utilisateurs doivent accepter et signer avant d’envoyer un formulaire.
 

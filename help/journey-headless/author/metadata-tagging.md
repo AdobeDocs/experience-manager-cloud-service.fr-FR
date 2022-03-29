@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu {#author-headless-metadata-tagging}
 
-## Un peu d’histoire... {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Au début du [Parcours de création de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) présentait les concepts de base et la terminologie relatifs à la création découplée.
 
@@ -38,7 +38,7 @@ Vous pouvez utiliser trois méthodes pour ajouter des métadonnées et des balis
 
    * Vous pouvez également y accéder directement à l’aide de l’option **Propriétés** dans la barre d’outils de la console Ressources.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Vous pouvez maintenant mettre toutes ces connaissances à profit et commencer à créer des fragments de contenu pour votre projet.
 
@@ -48,4 +48,4 @@ Vous pouvez maintenant mettre toutes ces connaissances à profit et commencer à
 
 * [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modèles de fragment de contenu – Autorisation des modèles de fragment de contenu dans votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)

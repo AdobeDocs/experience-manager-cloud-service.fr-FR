@@ -36,6 +36,6 @@ Les cas spécifiques suivants seront consignés :
 
 * Si deux utilisateurs de l’instance d’AEM source ont la même adresse électronique et que le mappage des utilisateurs est activé, un message d’erreur s’inscrit dans les journaux et l’un des utilisateurs source d’AEM ne sera pas transféré, car un seul utilisateur disposant d’une adresse électronique donnée est autorisé sur le système cible.
 
-### Et après ? {#whats-next}
+### Prochaines étapes {#whats-next}
 
 Une fois que vous aurez pris connaissance des principales considérations et des cas exceptionnels, vous serez prêt à utiliser l’outil. Pour plus d’informations, consultez [Utilisation de l’outil de mappage des utilisateurs](/help/journey-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.md).

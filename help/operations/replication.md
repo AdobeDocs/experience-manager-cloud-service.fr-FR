@@ -5,7 +5,7 @@ exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
 workflow-type: tm+mt
 source-wordcount: '1363'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -98,7 +98,7 @@ Vous pouvez également y parvenir en créant un modèle de workflow qui utilise 
 
 **Paramètres**
 
-* `includeChildren` (valeur booléenne, valeur par défaut : `false`). false signifie que seul le chemin est publié. true signifie que les enfants sont également publiés.
+* `includeChildren` (valeur booléenne, valeur par défaut : `false`). false signifie que seul le chemin d’accès est publié. true signifie que les enfants sont également publiés.
 * `replicateAsParticipant` (valeur booléenne, valeur par défaut : `false`). S’il est configuré comme `true`, la réplication utilise la balise `userid` de l’entité qui a exécuté l’étape de participant.
 * `enableVersion` (valeur booléenne, valeur par défaut : `true`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
 * `agentId` (valeur de chaîne, la valeur par défaut signifie que seuls les agents pour la publication sont utilisés). Il est recommandé d’être explicite concernant agentId ; par exemple, attribuez-lui la valeur : publier. L’application à l’agent de la valeur `preview` entraîne la publication sur le service d’aperçu.

@@ -42,4 +42,4 @@ Repository Modernizer crée une structure de projet AEM Cloud Service compatible
 
    >[!NOTE]
    >
-   >Repository Modernizer est développé à l’aide de NodeJS. Il est recommandé d’installer NodeJS 10.0+.
+   >Repository Modernizer est développé à l’aide de NodeJS. Il est recommandé de disposer de NodeJS 10.0+.

@@ -5,7 +5,7 @@ exl-id: 0a946d98-22c7-445d-984a-9e09c306ce45
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '964'
-ht-degree: 71%
+ht-degree: 79%
 
 ---
 
@@ -35,7 +35,7 @@ Le module complémentaire CIF utilisé avec le Cloud Service AEM permet aux don
 
 ## 6. Quelle taille de catalogue AEM peut-il prendre en charge à l’aide de CIF ?
 
-Cela dépend de quelques aspects supplémentaires que vous devez prendre en compte. Quel est le ratio de cache de vos pages et données de catalogue ? Combien de demandes simultanées attendez-vous aux heures de pointe ? Quelle est l’évolutivité des API de vos solutions commerciales ?
+Cela dépend de quelques aspects supplémentaires que vous devez prendre en compte. Quel est le ratio de cache de vos pages et données de catalogue ? Combien de demandes simultanées attendez-vous aux heures de pointe ? Quelle est l’évolutivité des API de vos solutions commerciales ?
 
 ## 7. Comment PIM opère-t-il dans ce framework ?
 
@@ -47,11 +47,11 @@ Les données dynamiques telles que le prix ou l’inventaire ne sont pas mises e
 
 ## 9. Comment l’invalidation du cache pour le Dispatcher AEM fonctionne-t-elle avec AEM et la solution de commerce ?
 
-Nous vous recommandons de configurer l’invalidation de cache TTL pour les pages mises en cache dans le Dispatcher. Pour les informations dynamiques telles que le prix ou le stock, nous vous recommandons de rendre les données côté client. Pour plus d’informations sur l’invalidation de cache TTL, reportez-vous à [AEM Dispatcher](https://helpx.adobe.com/fr/experience-manager/kb/optimizing-the-dispatcher-cache.html)
+Nous vous recommandons de configurer l’invalidation de cache TTL pour les pages mises en cache dans le Dispatcher. Pour les informations dynamiques telles que le prix ou le stock, nous vous recommandons de rendre les données côté client. Pour plus d’informations sur l’invalidation de cache TTL, reportez-vous à [AEM Dispatcher](https://helpx.adobe.com/fr/experience-manager/kb/optimizing-the-dispatcher-cache.html)
 
 ## 10. Y a-t-il une recommandation sur la recherche unifiée dans le contenu AEM avec Commerce ?
 
-Une mise en œuvre de référence de recherche de produit est fournie, mais aucune recherche unifiée avec du contenu. Cette fonctionnalité est généralement très spécifique au client et mieux résolue au niveau du projet.
+Une mise en œuvre de référence de recherche de produit est fournie, mais aucune recherche unifiée avec du contenu. Cette fonctionnalité est généralement très spécifique au client et mieux résolue au niveau d’un projet spécifique.
 
 ## 11. Comment la recherche fonctionne-t-elle avec AEM et la solution de commerce à l’aide de CIF ?
 

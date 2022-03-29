@@ -38,9 +38,9 @@ Pour plus d’informations, consultez [Intégration d’Experience Manager as a
 
 ### Ressources et liens
 
-* [Prise en charge IMS d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=fr)
-* [Permissions basées sur les rôles dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=fr#what-is-required)
-* [Accès à Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#getting-access)
+* [Prise en charge IMS d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/ims-support.html?lang=fr)
+* [Autorisations basées sur les rôles dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/role-based-permissions.html?lang=fr#what-is-required)
+* [Accès à Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#getting-access)
 
 
 ## Intégration d’Adobe Experience Manager as a Cloud Service

@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: a06f81d5ac7f5276acd34415843f084f58f04ba8
 workflow-type: tm+mt
 source-wordcount: '2976'
-ht-degree: 92%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +15,7 @@ Cet article vise à vous présenter les différentes fonctionnalités de mise en
 
 >[!INFO]
 >
->Vous trouverez également une série d’articles conçus pour vous guider dans les différentes options de mise en réseau avancées. [location](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=en).
+>Vous trouverez également à cet [emplacement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html?lang=fr) une série d’articles conçus pour vous guider dans les différentes options avancées de mise en réseau.
 
 ## Présentation {#overview}
 
@@ -32,7 +32,7 @@ Un programme peut fournir une variation réseau avancée unique. Lorsque vous h�
 >[!INFO]
 >
 >La mise en réseau avancée n’est pas disponible pour le programme Sandbox.
->En outre, les environnements doivent être mis à niveau vers AEM version 5958 ou supérieure.
+>En outre, les environnements doivent être mis à niveau vers AEM version 5958 ou supérieure.
 
 >[!NOTE]
 >
@@ -50,9 +50,9 @@ Une sortie de port flexible est recommandée si vous n’avez pas besoin de VPN 
 
 Une fois par programme, le point d’entrée `/program/<programId>/networkInfrastructures` POST est invoqué, simplement en transmettant la valeur du `flexiblePortEgress` pour le paramètre de `kind` et de région. Le point d’entrée répond avec le `network_id`, ainsi que d’autres informations, y compris le statut. L’ensemble complet des paramètres et la syntaxe exacte doivent être référencés dans la documentation API.
 
-Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau prend généralement environ 15 minutes. Un appel au [point d’entrée des infrastructures réseau](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) affiche l’état &quot;ready&quot;.
+Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau prend généralement environ 15 minutes. Un appel au [point d’entrée GET de l’infrastructure réseau de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) affiche l’état « ready ».
 
-Si la configuration de sortie de port flexible à l’échelle du programme est prête, la variable `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` Le point de terminaison doit être appelé par environnement pour activer la mise en réseau au niveau de l’environnement et pour déclarer éventuellement toute règle de transfert de port. Les paramètres sont configurables par environnement afin d’offrir une certaine flexibilité.
+Si la configuration de sortie de port flexible à l’échelle du programme est prête, le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit être invoqué pour chaque environnement afin d’activer la mise en réseau au niveau de l’environnement et de déclarer éventuellement toute règle de transfert de port. Les paramètres sont configurables par environnement afin d’offrir une certaine flexibilité.
 
 Les règles de transfert de port doivent être déclarées pour tout port autre que le port 80/443 en spécifiant l’ensemble des hôtes de destination (noms ou adresses IP, et avec les ports). Pour chaque hôte de destination, les clients doivent mapper le port de destination prévu à un port entre 30 000 et 30 999.
 
@@ -78,10 +78,10 @@ Pour plus d’informations, consultez la [documentation de l’API Cloud Manager
 
 ### Routage du trafic {#flexible-port-egress-traffic-routing}
 
-Pour le trafic http ou https se rendant dans des ports autres que 80 ou 443, un proxy doit être configuré à l’aide des variables d’environnement hôte et port suivantes :
+Pour le trafic http ou https se rendant dans des ports autres que 80 ou 443, un proxy doit être configuré à l’aide des variables d’environnement hôte et port suivantes :
 
-* pour HTTP : `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (valeur par défaut) `proxy.tunnel:3128` dans les versions d’AEM &lt; 6094)
-* pour HTTPS : `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (valeur par défaut) `proxy.tunnel:3128` dans les versions d’AEM &lt; 6094)
+* pour HTTP : `AEM_PROXY_HOST` / `AEM_HTTP_PROXY_PORT ` (valeur par défaut `proxy.tunnel:3128` dans les versions d’AEM &lt; 6094)
+* pour HTTPS : `AEM_PROXY_HOST` / `AEM_HTTPS_PROXY_PORT ` (valeur par défaut `proxy.tunnel:3128` dans les versions d’AEM &lt; 6094)
 
 Par exemple, voici un exemple de code pour envoyer une requête à `www.example.com:8443` :
 
@@ -127,9 +127,9 @@ Le tableau ci-dessous décrit le routage du trafic :
   </tr> 
   <tr>
     <td></td>
-    <td>Trafic non standard (sur d’autres ports en dehors de 80 ou 443) via un proxy http configuré à l’aide de la variable d’environnement et du numéro de port du proxy suivant. Ne déclarez pas le port de destination dans le paramètre portForwards de l’appel API Cloud Manager :<br><ul>
-     <li>AEM_PROXY_HOST (par défaut "proxy.tunnel" dans AEM versions &lt; 6094)</li>
-     <li>AEM_HTTPS_PROXY_PORT (port par défaut 3128 dans AEM versions &lt; 6094)</li>
+    <td>Trafic non standard (sur d’autres ports en dehors de 80 ou 443) via un proxy http configuré à l’aide de la variable d’environnement et du numéro de port du proxy suivant. Ne déclarez pas le port de destination dans le paramètre portForwards de l’appel API Cloud Manager :<br><ul>
+     <li>AEM_PROXY_HOST (par défaut « proxy.tunnel » dans les versions d’AEM &lt; 6094)</li>
+     <li>AEM_HTTPS_PROXY_PORT (port par défaut 3128 dans les versions d’AEM &lt; 6094)</li>
     </ul>
     <td>Ports autres que 80 ou 443</td>
     <td>Autorisée</td>
@@ -510,7 +510,7 @@ Le diagramme ci-dessous offre une représentation visuelle d’un ensemble de do
   </tr>
   <tr>
     <td><code>p{PROGRAM_ID}-gateway.external.adobeaemcloud.com</code></td>
-    <td>N/A</td>
+    <td>S/O</td>
     <td>L’adresse IP de la passerelle VPN côté AEM. L’équipe d’ingénierie réseau d’un client peut l’utiliser pour autoriser uniquement les connexions VPN à sa passerelle VPN à partir d’une adresse IP spécifique. </td>
   </tr>
   <tr>

@@ -1,5 +1,5 @@
 ---
-title: Configurer des pipelines de production
+title: Configuration des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
@@ -51,7 +51,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
    * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
    * **Défaillance immédiate** : si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
-   * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s&#39;agit essentiellement d&#39;émuler un utilisateur approuvant manuellement chaque échec.
+   * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s’agit essentiellement d’émuler un utilisateur approuvant manuellement chaque échec.
 
    ![Configuration du pipeline de production](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
 

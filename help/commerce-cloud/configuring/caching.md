@@ -5,7 +5,7 @@ exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '845'
-ht-degree: 88%
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Avant d’envoyer une requête GraphQL, le client vérifie si cette requête **e
 
 ### Exemples {#examples}
 
-Nous vous recommandons de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs d’agrégations/de facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est par exemple ajouté à des produits. Par conséquent, la durée de cette entrée de cache peut être « importante » si l’ensemble d’attributs de produit ne change pas souvent. Bien que cela soit spécifique au projet, nous recommandons des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur des systèmes de production stables.
+Nous vous recommandons de configurer une certaine mise en cache pour le service de recherche qui récupère toutes les valeurs des agrégations/facettes disponibles affichées sur les pages de recherche de produits et de catégories. Ces valeurs ne changent généralement que lorsqu’un nouvel attribut est par exemple ajouté à des produits. Par conséquent, la durée de cette entrée de cache peut être « importante » si l’ensemble d’attributs de produit ne change pas souvent. Bien que cela soit spécifique au projet, nous recommandons des valeurs de quelques minutes dans les phases de développement du projet et de quelques heures sur des systèmes de production stables.
 
 Ces valeurs sont généralement configurées avec l’entrée de cache suivante :
 
@@ -41,7 +41,7 @@ Un autre exemple de scénario où la fonction de mise en cache GraphQl est recom
 venia/components/structure/navigation:true:10:600
 ```
 
-Lorsque vous envisagez la variable [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) est utilisée. Notez l’utilisation du nom du proxy de composant `venia/components/structure/navigation`, et **non pas** le nom du composant de navigation CIF (`core/cif/components/structure/navigation/v1/navigation`).
+En considérant que le [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) est utilisé. Notez l’utilisation du nom du proxy de composant `venia/components/structure/navigation`, et **non pas** le nom du composant de navigation CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
 La mise en cache d’autres composants doit être définie projet par projet, généralement en coordination avec la mise en cache configurée au niveau du Dispatcher. N’oubliez pas qu’il n’y a pas d’invalidation active de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur « universelle » qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond au mieux aux exigences de votre projet.
 

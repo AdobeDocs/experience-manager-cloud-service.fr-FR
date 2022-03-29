@@ -5,7 +5,7 @@ exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
 workflow-type: tm+mt
 source-wordcount: '3678'
-ht-degree: 83%
+ht-degree: 84%
 
 ---
 
@@ -22,7 +22,7 @@ L’option à la demande vous permet de spécifier un modèle XFA ou Acrobat per
 
 Vous pouvez :
 
-* [générer un document d’enregistrement basé sur XFA ;](#generate-an-XFA-based-document-of-record)
+* [Générer un document d’enregistrement basé sur XFA](#generate-an-XFA-based-document-of-record)
 * [générer un document d’enregistrement basé sur Acroform (Acrobat Form PDF) ;](#generate-an-Acroform-based-document-of-record)
 * [générer automatiquement un document d’enregistrement.](#auto-generate-a-document-of-record)
 
@@ -34,7 +34,7 @@ Avant de commencer à apprendre et à préparer les ressources requises pour un 
 
 **Formulaire adaptatif :** le formulaire adaptatif pour lequel le document d’enregistrement doit être généré.
 
-## Génération d’un document d’enregistrement basé sur XFA {#generate-an-XFA-based-document-of-record}
+## Générer un document d’enregistrement basé sur XFA {#generate-an-XFA-based-document-of-record}
 
 Chargez votre modèle XFA (fichier XDP) vers votre instance AEM Forms. Suivez les étapes suivantes pour configurer un formulaire adaptatif afin d’utiliser un modèle XFA (fichier XDP) comme modèle de document d’enregistrement :
 
@@ -232,7 +232,7 @@ Le tableau suivant décrit les composants de formulaire adaptatif et les composa
    <td> </td>
   </tr>
   <tr>
-   <td>Conditions d’utilisation</td>
+   <td>Termes et conditions</td>
    <td> </td>
    <td>true</td>
    <td> </td>
@@ -406,7 +406,7 @@ La définition du composant Document d’enregistrement est disponible sous ses 
 
 >[!NOTE]
 >
-> Cette fonctionnalité est disponible dans le canal de version préliminaire. Voir [Documentation sur les canaux de version préliminaire](/help/release-notes/prerelease.md#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
+> Cette fonctionnalité est disponible dans le canal de version préliminaire. Pour plus d’informations sur l’activation de cette fonctionnalité dans votre environnement, consultez la [documentation sur les canaux de version préliminaire](/help/release-notes/prerelease.md#enable-prerelease).
 
 Un fichier XCI permet de définir différentes propriétés d’un document. Forms as a Cloud Service comporte un fichier XCI maître. Vous pouvez utiliser un fichier XCI personnalisé pour remplacer une ou plusieurs propriétés par défaut spécifiées dans le fichier XCI maître. Par exemple, vous pouvez choisir d’incorporer une police dans un document ou d’activer la propriété balisée pour tous les documents. Le tableau suivant spécifie les options XCI :
 

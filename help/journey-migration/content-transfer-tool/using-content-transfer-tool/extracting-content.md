@@ -31,7 +31,7 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-01.png)
 
-1. La boîte de dialogue **Migration Set extraction** (Extraction du jeu de migration) s’affiche. Cliquez sur **Extract** pour démarrer la phase d’extraction.
+1. La boîte de dialogue **Extraction du jeu de migration** (Extraction du jeu de migration) s’affiche. Cliquez sur **Extraire** pour démarrer la phase d’extraction.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-02.png)
 
@@ -77,6 +77,6 @@ Suivez les étapes ci-dessous :
    >![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-06.png)
 
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Une fois que vous avez appris à extraire du contenu de la source dans l’outil de transfert de contenu, vous êtes prêt à apprendre comment fonctionne le processus d’ingestion dans l’outil de transfert de contenu. Voir [Ingestion de contenu dans la cible](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour savoir comment ingérer votre jeu de migration à partir de l’outil de transfert de contenu.

@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 6cd454eaf70400f3507bc565237567cace66991f
 workflow-type: tm+mt
 source-wordcount: '3020'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->AEM a introduit la possibilité d’utiliser l’interface utilisateur de Cloud Manager pour configurer des variables d’environnement standard avec la version 2021.12.0. Pour plus d’informations, consultez la documentation [here](/help/implementing/cloud-manager/environment-variables.md).
+>AEM a introduit la possibilité d’utiliser l’interface utilisateur de Cloud Manager pour configurer des variables d’environnement standard avec la version 2021.12.0. Pour plus d’informations, reportez-vous à la documentation [ici](/help/implementing/cloud-manager/environment-variables.md).
 
 Le framework [OSGi](https://www.osgi.org/) est un élément fondamental de la pile technologique d’Adobe Experience Manager (AEM). Il est utilisé pour contrôler les lots composites d’AEM et leurs configurations.
 
@@ -228,14 +228,14 @@ Les valeurs des variables ne doivent pas dépasser 2 048 caractères.
 
 >[!CAUTION]
 >
->Il existe des règles relatives à l’utilisation de certains préfixes pour les noms de variable :
+>Il existe des règles relatives à l’utilisation de certains préfixes pour les noms de variables :
 >
->1. Noms de variables précédés de `INTERNAL_`, `ADOBE_`ou `CONST_` sont réservés par Adobe. Toutes les variables définies par le client commençant par ces préfixes seront ignorées.
+>1. Les noms de variables utilisant un préfixe `INTERNAL_`, `ADOBE_` ou `CONST_` sont réservés par Adobe. Toutes les variables définies par le client commençant par ces préfixes seront ignorées.
 >
->1. Les clients ne doivent pas référencer de variables dotées du préfixe `INTERNAL_` ou `ADOBE_` ou .
+>1. Les clients ne doivent pas référencer de variables dotées du préfixe `INTERNAL_` ou `ADOBE_`.
 >
->1. Variables d’environnement avec le préfixe `AEM_` sont définies par le produit comme API publique à utiliser et définies par les clients.
-   >   Tandis que les clients peuvent utiliser et définir des variables d’environnement commençant par le préfixe `AEM_` ils ne doivent pas définir leurs propres variables avec ce préfixe.
+>1. Les variables d’environnement dotées du préfixe `AEM_` sont définies par le produit comme API publique à utiliser et définir par les clients.
+   >   Bien que les clients puissent utiliser et définir des variables d’environnement commençant par le préfixe `AEM_`, ils ne doivent pas définir leurs propres variables avec ce préfixe.
 
 
 ### Valeurs par défaut {#default-values}

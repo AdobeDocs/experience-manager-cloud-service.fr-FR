@@ -1,5 +1,5 @@
 ---
-title: Importation, exportation et organisation des formulaires adaptatifs, des formulaires PDF et d’autres ressources
+title: Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources
 seo-title: Learn to import, export, and organize Adaptive Forms, PDF forms, and other assets on an[!DNL AEM Forms] instance
 description: 'Vous souhaitez migrer des formulaires adaptatifs et des ressources depuis et vers une instance AEM ? Découvrez dans cette section comment importer et exporter des formulaires adaptatifs, des formulaires PDF, des thèmes et d’autres ressources depuis une instance [!DNL AEM Forms]  '
 seo-description: Looking to migrate Adaptive Forms and assets to and from an AEM instances? Learn here how to import and export Adaptive Forms, PDF forms, themes, and other supporting assets from an [!DNL AEM Forms] instance.
@@ -12,13 +12,13 @@ ht-degree: 100%
 
 ---
 
-# Importation, exportation et organisation des formulaires adaptatifs, des formulaires PDF et d’autres ressources{#importing-and-exporting-assets-to-aem-forms}
+# Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources{#importing-and-exporting-assets-to-aem-forms}
 
 Vous pouvez déplacer des formulaires adaptatifs et des ressources connexes telles que des thèmes de formulaire adaptatif, des modèles de données de formulaire, des modèles de formulaire adaptatif, des fragments de document et des formulaires PDF entre des instances [!DNL AEM Forms]. Vous pouvez importer et exporter des ressources dans un package CRX ou dans des formats de fichiers binaires.
 
 Lorsque vous exportez un formulaire adaptatif, les stratégies de contenu et les modèles ne sont pas exportés. Utilisez le [gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#how-rolling-deployments-work) pour exporter de telles ressources.
 
-## Téléchargement de formulaires adaptatifs, de formulaires PDF ou de ressources connexes {#download-forms-amp-documents-assets}
+## Téléchargement de formulaires adaptatifs, de PDF forms ou de ressources connexes {#download-forms-amp-documents-assets}
 
 Pour télécharger des formulaires ou des ressources connexes :
 
@@ -39,7 +39,7 @@ Vous ne pouvez pas télécharger de formulaires adaptatifs, de fragments de form
    >
    >Le module et les fichiers binaires AEM sont téléchargés sous forme d’archive (fichier .zip). Les modèles des ressources ne sont pas téléchargés avec les ressources. Vous devez exporter les modèles des ressources séparément.
 
-## Chargement de formulaires adaptatifs, de formulaires PDF ou de ressources connexes {#upload-forms-amp-documents-assets}
+## Chargement de formulaires adaptatifs, de PDF forms ou de ressources connexes {#upload-forms-amp-documents-assets}
 
 Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Dans le cas d’un fichier ZIP, les chemins relatifs de toutes les ressources prises en charge sont affichés. Les éléments non pris en charge à l’intérieur de l’archive ZIP sont ignorés et ne sont pas répertoriés. Cependant, si l’archive ZIP contient uniquement des éléments non pris en charge, un message d’erreur s’affiche à la place de la boîte de dialogue contextuelle.
 Pour charger un formulaire ou une ressource connexe :
@@ -60,7 +60,7 @@ Pour charger un formulaire ou une ressource connexe :
 
 
 
-## Téléchargement d’un thème {#downloading-a-theme}
+## Télécharger un thème {#downloading-a-theme}
 
 Vous pouvez exporter des thèmes dans [!DNL AEM Forms] que vous pouvez utiliser dans d’autres projets ou instances. AEM vous permet de télécharger des thèmes sous la forme d’un fichier zip, que vous pouvez charger sur l’instance.
 
@@ -70,7 +70,7 @@ Pour télécharger un thème :
 1. Appuyez sur **[!UICONTROL Adobe Experience Manager]** icône ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > **[!UICONTROL Navigation]** icône ![compass](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulaires]** > **[!UICONTROL Thèmes]**.
 1. Sélectionnez le composant et appuyez sur **[!UICONTROL Télécharger]**. Le thème est téléchargé sous forme d’archive (fichier .zip).
 
-## Chargement d’un thème {#uploading-a-theme}
+## Charger un thème {#uploading-a-theme}
 
 Vous pouvez charger et utiliser des thèmes que d’autres créent dans vos formulaires. Pour charger un thème :
 
@@ -148,7 +148,7 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
    >
    >For you to be able to upload XDPs (as part of the cmp file or otherwise), you need to be a part of forms-power-users group. For access rights, contact the administrator. -->
 
-## Exportation d’une application de processus {#export-a-workflow-application}
+## Exporter une application de workflow {#export-a-workflow-application}
 
 Vous pouvez utiliser le gestionnaire de modules pour exporter des applications de processus. Pour ce faire, procédez comme suit :
 
@@ -166,7 +166,7 @@ Vous pouvez utiliser le gestionnaire de modules pour exporter des applications d
    >
    >Pour que l’application de processus fonctionne correctement, exportez également le formulaire adaptatif et le modèle de processus correspondants avec l’application de travail.
 
-## Utilisez des dossiers pour organiser les formulaires adaptatifs, les formulaires PDF et les ressources connexes   {#folders-and-organizing-assets}
+## Utilisez des dossiers pour organiser les formulaires adaptatifs, les PDF forms et les ressources connexes  {#folders-and-organizing-assets}
 
 Vous pouvez utiliser des dossiers pour classer et organiser les fichiers. L’organisation des documents et des ressources dans un dossier vous permet de regrouper les fichiers pour une gestion simplifiée. Vous pouvez sélectionner un fichier et choisir de le télécharger ou de le supprimer. Pour créer un dossier, procédez comme suit :
 

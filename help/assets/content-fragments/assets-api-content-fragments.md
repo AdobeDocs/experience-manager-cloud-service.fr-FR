@@ -47,7 +47,7 @@ L’API REST Assets :
 
 * met en œuvre le [format SIREN](https://github.com/kevinswiber/siren)
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 L’API REST Assets est disponible pour chaque installation prête à l’emploi d’une version récente d’Adobe Experience Manager as a Cloud Service.
 
@@ -297,7 +297,7 @@ Mode d’utilisation :
 
 `DELETE /{cfParentPath}/{cfName}`
 
-## Restrictions {#limitations}
+## Limites {#limitations}
 
 Il existe quelques restrictions :
 

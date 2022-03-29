@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 25%
+ht-degree: 48%
 
 ---
 
@@ -28,7 +28,7 @@ La section suivante concerne les notes de mise à jour générales de la version
 La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2022.1.0) est le 3 février 2022.
 La version suivante (2022.3.0) date du 31 mars 2022.
 
-## Vidéo de publication {#release-video}
+## Vidéo de mise à jour {#release-video}
 
 Consultez la section [Présentation de la version de janvier 2022](https://video.tv.adobe.com/v/340120) vidéo pour un résumé des fonctionnalités ajoutées dans la version 2022.1.0.
 
@@ -40,13 +40,13 @@ Consultez la section [Présentation de la version de janvier 2022](https://video
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* [!DNL Dynamic Media] - Vous pouvez désormais utiliser AEM interface Dynamic Media pour configurer les paramètres généraux et la configuration de publication au lieu d’avoir à passer par l’application de bureau Dynamic Media Classic.
+* [!DNL Dynamic Media] - Vous pouvez désormais utiliser l’interface AEM Dynamic Media pour configurer les paramètres généraux et la configuration de publication au lieu d’avoir à passer par l’application de bureau Dynamic Media Classic.
 
-* [!DNL Dynamic Media] prend désormais en charge l’ingestion, la prévisualisation, la lecture et la publication pour les vidéos MXF. Les annotations et les vidéos Shoppable pour les vidéos MXF ne sont pas encore prises en charge.
+* [!DNL Dynamic Media] prend désormais en charge l’ingestion, la prévisualisation, la lecture et la publication des vidéos MXF. L’annotation et la shoppable vidéo pour les vidéos MXF ne sont pas encore prises en charge.
 
-* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources sur DAM distant sont disponibles sur le déploiement Sites. Vous pouvez désormais effectuer les opérations suivantes : [mettre à jour, supprimer, renommer et déplacer des opérations](/help/assets/use-assets-across-connected-assets-instances.md) sur les ressources ou dossiers DAM distants. Les mises à jour, avec un certain délai, sont disponibles automatiquement sur le déploiement Sites .
+* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources du DAM distant sont disponibles sur le déploiement de Sites. Vous pouvez désormais effectuer les opérations suivantes : [mettre à jour, supprimer, renommer et déplacer des opérations](/help/assets/use-assets-across-connected-assets-instances.md) sur les ressources ou dossiers du DAM distant. Les mises à jour, avec un certain retard, sont disponibles automatiquement sur le déploiement Sites.
 
-### Nouvelles fonctionnalités d’ [!DNL Assets] canal prerrelease {#assets-prerelease-features}
+### Nouvelles fonctionnalités dans le [!DNL Assets] canal de version préliminaire {#assets-prerelease-features}
 
 * [!DNL AEM Dynamic Media] offre désormais la possibilité de [configuration d’un compte d’alias](../../assets/dynamic-media/dm-alias-account.md) dans l’interface utilisateur, en veillant à ce que les URL Dynamic Media prêtes à l’emploi et le code intégré de la visionneuse soient mis à jour. Cela a un impact positif sur l’optimisation pour les moteurs de recherche, afin de refléter les mises à jour apportées à votre contexte d’entreprise, telles que le changement de marque.
 
@@ -69,18 +69,18 @@ Consultez la section [Présentation de la version de janvier 2022](https://video
 
 ### Nouveautés de [!DNL Forms] {#what-is-new-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) vous permettent de combiner un modèle et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents dans les modes synchrone et par lots. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=fr) vous permettent de combiner un modèle et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents dans les modes synchrone et par lots. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
    * de générer des documents en complétant des fichiers de modèle avec des données XML ;
    * de générer des formulaires dans divers formats, y compris les flux d’impression PDF non interactifs ;
    * de générer des fichiers PDF d’impression à partir de fichiers PDF de formulaire XFA ;
    * de générer des documents PDF, PostScript, PCL et ZPL en blocs en fusionnant plusieurs jeux de données avec les modèles sources.
 
-* **Polices personnalisées pour les documents Document d’enregistrement et de PDF créés avec les API de communication**: Vous pouvez désormais utiliser des polices approuvées par la marque dans les documents PDF générés à l’aide des API de communication pour vous conformer aux exigences de votre organisation.
+* **Polices personnalisées pour les documents d’enregistrement et les documents PDF créés avec les API communications** : Vous pouvez désormais utiliser des polices approuvées par la marque dans les documents PDF générés à l’aide des API communications pour vous conformer aux exigences de votre organisation.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-* **[API Assembler](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)**: API Assembler pour combiner, réorganiser, agrémenter et obtenir des informations sur les documents PDF.
+* **[API Assembler](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/reference/assembler-sync/)**: API Assembler pour combiner, réorganiser, agrémenter et obtenir des informations sur les documents PDF.
 
 
 ## Module complémentaire CIF {#cloud-services-cif}
@@ -101,18 +101,18 @@ Consultez la section [Présentation de la version de janvier 2022](https://video
 
 ### Date de publication {#release-date-cm}
 
-La date de publication de Cloud Manager dans AEM 2022.01.0 as a Cloud Service est le 20 janvier 2022. La prochaine version est prévue pour le 10 février 2022.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2022.01.0 est le 20 janvier 2022. La prochaine version est prévue pour le 10 février 2022.
 
 ### Nouveautés {#what-is-new-cm}
 
-* Cloud Manager [évitez de reconstruire la base de code lorsqu’il détecte que la même validation git est utilisée.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) dans plusieurs exécutions de pipeline de pile complète.
-* L’accès au journal de l’environnement AEM requiert désormais le **Responsable de déploiement** profil de produit. Un bouton désactivé s’affiche dans l’interface utilisateur pour les utilisateurs ne disposant pas de ce profil.
-* L’interface utilisateur n’autorise pas la configuration du pipeline frontal pour un programme où Sites n’est pas activé en tant que solution.
+* Cloud Manager [évitera de reconstruire la base de code lorsqu&#39;il détecte que la même validation Git est utilisée](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) dans plusieurs exécutions de pipeline de pile complète.
+* L’accès au journal d’environnement AEM nécessite désormais le profil produit **Gestionnaire de déploiement**. Un bouton désactivé s’affiche dans l’interface utilisateur pour les utilisateurs ne disposant pas de ce profil.
+* L’interface utilisateur n’autorise pas la configuration du pipeline front-end pour un programme où Sites n’est pas activé en tant que solution.
 * Lors de la génération d’un mot de passe Git, la date d’expiration s’affiche.
 
 ### Correctifs {#bug-fixes-cm}
 
-* Les exceptions null pointer rencontrées par certains déploiements de pipeline front-end ont été corrigées.
+* Les exceptions de pointeurs nuls rencontrées par certains déploiements de pipelines front-end ont été corrigées.
 * Les variables d’environnement peuvent désormais être ajoutées, mises à jour et supprimées lorsqu’un environnement exécute une version obsolète d’AEM.
 * L’étape de création d’image ne sera plus marquée comme ERREUR pour les pipelines qui ont utilisé l’étape planifiée dans de rares cas.
 * Pour les programmes ne comportant qu’un seul référentiel, l’écran d’exécution du pipeline affiche désormais le nom du référentiel.

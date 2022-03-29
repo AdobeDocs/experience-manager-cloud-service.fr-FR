@@ -6,7 +6,7 @@ exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c5141
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composant
 
 * évoluer et innover plus rapidement ;
 * personnaliser leurs expériences pour générer des conversions ;
-* Créer une fois et publier partout
+* créer une fois, et publier partout ;
 * enrichir et différencier leurs expériences pour chacun de leurs clients ;
 * simplifier la création pour les auteurs de contenu en leur offrant un accès aux données commerciales.
 
@@ -79,6 +79,6 @@ CIF prend en charge les clients dotés de modèles d’intégration normalisés 
 
 ## Parcours {#journey}
 
-Si vous suivez un Parcours Commerce, passez à l’étape suivante :
+Si vous suivez un Parcours Commerce, passez à l’étape suivante :
 
-* Le [AEM parcours de création de contenu](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)
+* Le [parcours de création de contenu AEM](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

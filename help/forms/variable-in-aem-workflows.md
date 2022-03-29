@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Variables dans les processus AEM orientés formulaire {#variables-in-aem-forms-workflows}
+# Variables dans les workflows AEM basés sur l’utilisation de Forms {#variables-in-aem-forms-workflows}
 
 Une variable dans un modèle de processus permet de stocker une valeur en fonction de son type de données. Vous pouvez utiliser le nom de la variable dans n’importe quelle étape de processus pour extraire la valeur stockée dans la variable. Vous pouvez également utiliser des noms de variable pour définir des expressions afin de prendre des décisions de routage.
 
@@ -83,7 +83,7 @@ En fonction du type de données de la variable, vous pouvez définir la valeur d
 
 Vous pouvez également mettre à jour des éléments spécifiques d’une variable de type JSON ou XML à l’aide de la notation JSON DOT ou XPATH.
 
-### Ajouter un mappage entre les variables {#add-mapping-between-variables}
+### Ajout d’un mappage entre les variables {#add-mapping-between-variables}
 
 Pour ajouter un mappage entre des variables :
 
@@ -93,7 +93,7 @@ Pour ajouter un mappage entre des variables :
 1. Dans la section **Mapper une variable**, sélectionnez la variable dans laquelle stocker des données, sélectionnez le mode de mappage et spécifiez une valeur à stocker dans la variable. Les modes de mappage varient en fonction du type de variable.
 1. Mappez davantage de variables pour créer une expression significative. Appuyez sur ![done_icon](assets/Smock_Checkmark_18_N.svg) pour enregistrer les modifications.
 
-### Exemple 1 : Exécutez une requête dans une variable XML pour définir la valeur d’une variable de chaîne {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
+### Exemple 1 : exécution d’une requête dans une variable XML pour définir la valeur d’une variable de chaîne {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
 Sélectionnez une variable de type XML pour stocker un fichier XML. Exécutez une requête dans la variable XML pour définir la valeur d’une variable de chaîne pour la propriété disponible dans le fichier XML. Le champ **Spécifier XPATH pour la variable XML** permet de définir la propriété à stocker dans la variable de chaîne.
 
@@ -137,14 +137,14 @@ Pour plus d’informations, voir [Éditeur de règles de formulaire adaptatif](r
 
 Vous pouvez utiliser des variables pour extraire des entrées et des sorties ou enregistrer le résultat d’une étape. L’éditeur de processus fournit deux types d’étapes de processus :
 
-* Étapes de processus avec prise en charge des variables
-* Étapes de processus sans prise en charge des variables
+* Étapes de workflow avec prise en charge des variables
+* Étapes de workflow sans prise en charge des variables
 
-### Étapes de processus avec prise en charge des variables {#workflow-steps-with-support-for-variables}
+### Étapes de workflow avec prise en charge des variables {#workflow-steps-with-support-for-variables}
 
-L’étape d’accès, l’étape de division OU et toutes les étapes de processus [!DNL AEM Forms] prennent en charge les variables.
+L’étape Accéder à, l’étape Division OU et toutes les étapes de workflow [!DNL AEM Forms] prennent en charge les variables.
 
-#### OU étape Fractionner {#or-split-step}
+#### Étape Division OU {#or-split-step}
 
 L’étape de division OU divise le processus et une seule branche est active par la suite. Cette étape permet d’ajouter des chemins de traitement conditionnels dans le processus. Vous ajoutez des étapes de processus à chaque branche selon vos besoins.
 
@@ -160,7 +160,7 @@ De même, sélectionnez un chemin d’accès au script externe ou spécifiez le 
 
 <!-- For more examples, see [Create a workflow model](aem-forms-workflow.md#create-a-workflow-model). -->
 
-#### Étape d’accès {#go-to-step}
+#### Étape Accéder à {#go-to-step}
 
 L’**étape d’accès** permet de spécifier l’étape suivante du modèle de processus à exécuter, selon le résultat d’une expression de routage.
 
@@ -174,15 +174,15 @@ Dans cet exemple, l’étape d’accès spécifie la demande de vérification de
 
 Pour plus d’exemples sur l’utilisation de la définition de règle dans l’étape d’accès, voir [Simulation d’une boucle For](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-step-ref.html?lang=fr#simulateforloop).
 
-#### Étapes de processus orienté Forms {#forms-workflow-centric-workflow-steps}
+#### Étapes de workflows basés sur l’utilisation de Forms {#forms-workflow-centric-workflow-steps}
 
-Toutes les étapes de processus [!DNL AEM Forms] prennent en charge les variables. Pour plus d’informations, voir [Processus orientés formulaire sur OSGi](aem-forms-workflow-step-reference.md).
+Toutes les étapes de processus [!DNL AEM Forms] prennent en charge les variables. Pour plus d’informations, consultez la section [Workflow basé sur l’utilisation de Forms sur OSGi](aem-forms-workflow-step-reference.md).
 
-### Étapes de processus sans prise en charge des variables {#workflow-steps-without-support-for-variables}
+### Étapes de workflow sans prise en charge des variables {#workflow-steps-without-support-for-variables}
 
-Vous pouvez utiliser l’interface [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) pour accéder à des variables dans des étapes de processus qui ne prennent pas en charge les variables.
+Vous pouvez utiliser l’interface [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) pour accéder à des variables dans des étapes de workflows qui ne prennent pas en charge les variables.
 
-#### Extraction de la valeur d’une variable {#retrieve-the-variable-value}
+#### Récupérer la valeur de la variable {#retrieve-the-variable-value}
 
 Les API suivantes dans le script ECMA permettent d’extraire des valeurs de variables existantes en fonction du type de données :
 
@@ -203,7 +203,7 @@ Extrayez la valeur du type de données de chaîne à l’aide de l’API suivant
 workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.String)
 ```
 
-#### Mise à jour de la valeur d’une variable {#update-the-variable-value}
+#### Mettre à jour la valeur de la variable {#update-the-variable-value}
 
 L’API suivante dans le script ECMA permet de mettre à jour la valeur d’une variable :
 
@@ -266,7 +266,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 1. Appuyez sur l’icône de ![modification](assets/edit.svg) (Modifier) en regard du nom de variable à modifier.
 1. Modifiez les informations de la variable et appuyez sur ![done_icon](assets/Smock_Checkmark_18_N.svg) pour enregistrer les modifications. Vous ne pouvez pas modifier les champs **[!UICONTROL Nom]** et **[!UICONTROL Type]** d’une variable.
 
-## Supprimer une variable {#delete-a-variable}
+## Suppression d’une variable {#delete-a-variable}
 
 Avant de supprimer la variable, supprimez toutes les références de la variable du processus. Assurez-vous que la variable n’est pas utilisée dans le processus.
 

@@ -8,7 +8,7 @@ exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: 1ea99c0eb602fa48674a03e25ee615add425f6af
 workflow-type: tm+mt
 source-wordcount: '985'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 
 Les formats 3D suivants sont pris en charge.
 
-Voir aussi [Utilisation de ressources 3D dans Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
+Cnsultez également la section [Utilisation de ressources 3D dans Dynamic Media](/help/assets/dynamic-media/assets-3d.md).
 
 | Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Aperçu de miniature | Aperçu 3D | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -174,14 +174,14 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Formats d’entrée pris en charge pour la transcription audio et vidéo {#audio-video-transcription-formats}
 
-* FLV (avec les codecs H.264 et AAC) (.flv)
-* MXF (.mxf)
-* MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
-* Vidéo Windows Media (WMV)/ASF (.wmv, .asf)
-* AVI (8 bits/10 bits décompressé) (.avi)
-* MP4 (.mp4, .m4a, .m4v)
-* Enregistrement vidéo numérique Microsoft (DVR-MS) (.dvr-ms)
-* Matroska/WebM (.mkv)
+* FLV (avec les codecs H.264 et AAC) (.flv)
+* MXF (.mxf)
+* MPEG2-PS, MPEG2-TS, 3GP (.ts, .ps, .3gp, .3gpp, .mpg)
+* Windows Media Video (WMV) / ASF (.wmv, .asf)
+* AVI (8 bits/10 bits non compressés) (.avi)
+* MP4 (.mp4, .m4a, .m4v)
+* Microsoft Digital Video Recording (DVR-MS) (.dvr-ms)
+* Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
@@ -189,7 +189,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 * Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 15 Go. Lors du chargement de fichiers très volumineux, l’opération d’extraction des métadonnées peut parfois échouer.
 
-## Dynamic Media : formats vidéo d’entrée pris en charge pour le transcodage {#video-dynamic-media-transcoding}
+## Dynamic Media : formats vidéo d’entrée pris en charge pour le transcodage {#video-dynamic-media-transcoding}
 
 | Extension de fichier vidéo | Conteneur | Codecs vidéo recommandés | Codecs vidéo non pris en charge |
 | --- | --- | --- | --- |
@@ -205,9 +205,9 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | WebM | WebM | Google VP8 | - |
 | WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
 
-‡ Ce format vidéo n’est pas encore pris en charge pour une utilisation avec des vidéos interactives dans Dynamic Media ou pour une utilisation avec l’annotation dans Experience Manager Assets.
+‡ Ce format vidéo n’est pas encore pris en charge pour une utilisation avec les vidéos interactives dans Dynamic Media ou avec lʼannotation dans Experience Manager Assets.
 
-## Dynamic Media - Formats de document pris en charge {#document-support-dynamic-media}
+## Dynamic Media - Formats de document pris en charge {#document-support-dynamic-media}
 
 | Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
@@ -215,24 +215,24 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | INDD | ✓ | - | - | - | - |
 | PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-## Dynamic Media - Formats d’image pixellisée pris en charge {#image-support-dynamic-media}
+## Dynamic Media - Formats d’images pixellisées prises en charge {#image-support-dynamic-media}
 
-| Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique | Types de jeux qui prennent en charge ce format |
+| Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique | Types de visionneuses qui prennent en charge ce format |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
-| BMP | ✓ | - | - | - | - | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md), et [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| BMP | ✓ | - | - | - | - | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md) et [360°](/help/assets/dynamic-media/spin-sets.md) |
 | EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | - |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md), et [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md) et [360°](/help/assets/dynamic-media/spin-sets.md) |
 | PICT | ✓ | - | - | - | - | - |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md), et [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md) et [360°](/help/assets/dynamic-media/spin-sets.md) |
 | PSD  ‡ | ✓ | - | - | - | - | - |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md), et [Rotation](/help/assets/dynamic-media/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md) et [360°](/help/assets/dynamic-media/spin-sets.md) |
 
 ‡ L’image fusionnée est extraite du fichier PSD. Il s’agit d’une image générée par [!DNL Adobe Photoshop] et incluse dans le fichier PSD. Selon les paramètres, l’image fusionnée peut constituer ou non l’image réelle.
 
-## Dynamic Media - Formats d’image pixellisée non pris en charge {#unsupported-raster-image-formats-dm}
+## Dynamic Media - Formats d’images pixellisées non prises en charge {#unsupported-raster-image-formats-dm}
 
-Les sous-types suivants de formats de fichiers image pixellisés qui sont *not* pris en charge dans [!DNL Dynamic Media]:
+Les sous-types suivants de formats de fichiers d’images pixellisées ne sont *pas* pris en charge dans [!DNL Dynamic Media] :
 
 * Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.
@@ -241,7 +241,7 @@ Les sous-types suivants de formats de fichiers image pixellisés qui sont *not* 
 * Fichiers TIFF contenant des données à virgule flottante.
 * Fichiers TIFF dotés d’un espace colorimétrique Lab.
 
-## Dynamic Media - Formats de fichiers 3D pris en charge {#support-3d-formats-dynamic-media}
+## Dynamic Media - Formats de fichiers 3D pris en charge {#support-3d-formats-dynamic-media}
 
 Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#support-3d-formats)
 

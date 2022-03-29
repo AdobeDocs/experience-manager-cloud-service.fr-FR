@@ -5,7 +5,7 @@ exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 source-git-commit: 211724e8031c6b83ca202739d2bc56007243d3d5
 workflow-type: tm+mt
 source-wordcount: '5467'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -31,7 +31,7 @@ Les étapes de processus orientés formulaire effectuent des opérations spécif
 
 >[!NOTE]
 >
->Si le modèle de workflow est marqué pour un stockage externe, alors pour toutes les étapes du workflow Forms, vous pouvez sélectionner uniquement l’option de variable pour stocker ou récupérer les fichiers de données et les pièces jointes.
+>Si le modèle de workflow est marqué pour un stockage externe, alors pour toutes les étapes de Forms Workflow, vous pouvez sélectionner uniquement l’option de variable pour stocker ou récupérer les fichiers de données et les pièces jointes.
 
 
 ## Étape Affecter une tâche {#assign-task-step}
@@ -70,7 +70,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **[!UICONTROL pré-renseignés :]** les champs répertoriés ci-dessous servent de données d’entrées pour la tâche :
 
    * **[!UICONTROL Sélectionnez le fichier de données d’entrée en utilisant :]** chemin d’accès du fichier de données d’entrée (.json, .xml, .doc ou modèle de données de formulaire). Vous pouvez récupérer le fichier de données d’entrée à l’aide d’un chemin d’accès relatif à la charge utile ou récupérer le fichier stocké dans une variable de type de données Document, XML ou JSON. Par exemple, le fichier contient les données envoyées pour le formulaire via une application de boîte de réception AEM. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/workflow/data.
-   * **[!UICONTROL Sélectionnez les pièces jointes d’entrée en utilisant :]** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la charge utile ou récupérer la pièce jointe stockée dans une variable d’un document. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la charge utile ou utiliser une variable de type document (Liste de tableaux > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif..
+   * **[!UICONTROL Sélectionnez les pièces jointes d’entrée en utilisant :]** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la payload ou récupérer la pièce jointe stockée dans une variable d’un document. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la charge utile ou utiliser une variable de type document (Liste de tableaux > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif..
 
    <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
@@ -141,7 +141,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 ## Étape Envoyer un courrier électronique {#send-email-step}
 
-Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’un formulaire adaptatif <!-- , link of an interactive communication--> ou avec un document PDF joint. L’étape Envoyer un courrier électronique prend en charge [le courrier électronique HTML](https://en.wikipedia.org/wiki/HTML_email). Les courriers électroniques HTML sont réactifs et s’adaptent à différents clients de messagerie et tailles d’écran. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
+Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’un formulaire adaptatif <!-- , link of an interactive communication--> ou avec un document PDF joint. L’étape Envoyer un courrier électronique prend en charge [le courrier électronique HTML](https://fr.wikipedia.org/wiki/HTML_email). Les courriers électroniques HTML sont réactifs et s’adaptent à différents clients de messagerie et tailles d’écran. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
 
 L’étape Envoyer un courrier électronique utilise le service de messagerie Day CQ pour envoyer des messages. Avant d’utiliser l’étape Envoyer un courrier électronique, assurez-vous que le service de messagerie est configuré. Par défaut, seuls les protocoles HTTP et HTTPs sont pris en charge. [Contactez l’ équipe d’assistance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#sending-email) pour activer les ports pour l’envoi de courriers électroniques et pour activer le protocole SMTP pour votre environnement. La restriction contribue à améliorer la sécurité de la plateforme.
 

@@ -5,7 +5,7 @@ exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '485'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 44%
 
 Il s’agit de la dernière partie du parcours. Vous apprendrez ainsi à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Vous devez veiller au nettoyage des fichiers temporaires, revoir les bonnes pratiques de développement continu et gérer les journaux.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
-À l’étape précédente du parcours, vous avez appris à effectuer la migration et à [Go-live](/help/journey-migration/go-live.md) une fois que le code et le contenu étaient prêts à être déplacés vers AEM as a Cloud Service.
+À l’étape précédente du parcours, vous avez appris à effectuer la migration et à [Activer](/help/journey-migration/go-live.md) une fois le code et le contenu prêts à être déplacés vers AEM as a Cloud Service.
 
 ## Objectif {#objective}
 
-Ce document décrit les outils disponibles pour résoudre les problèmes AEM environnements as a Cloud Service :
+Ce document décrit les outils disponibles pour résoudre les problèmes des environnements AEM as a Cloud Service :
 
 * **Developer Console**
 * **CRXDE Lite**
@@ -34,18 +34,18 @@ Ce document décrit les outils disponibles pour résoudre les problèmes AEM env
 
 ## Developer Console {#developer-console}
 
-Le débogage AEM environnements de développement as a Cloud Service est disponible dans Developer Console pour les environnements de développement, d’évaluation et de production.
+Le débogage des environnements de développeur d’AEM as a Cloud Service est disponible dans Developer Console pour les environnements de développement, d’évaluation et de production.
 
-Pour en savoir plus sur les outils de développement, voir [Implémentation pour AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools).
+Pour en savoir plus sur les outils de développement, consultez la section [Implémenter pour AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools).
 
 ## CRXDE Lite {#crxde-lite}
 
 En tant qu’utilisateur, vous pouvez accéder à CRXDE Lite dans l’environnement de développement, mais pas dans les environnements d’évaluation ni de production.
 
 >[!IMPORTANT]
->Écriture dans des référentiels non modifiables tels que `/libs` et `/apps` lors de l’exécution, des erreurs se produisent. De plus, vous n’avez pas accès aux outils de développement pour les environnements d’évaluation et de production.
+>L’écriture, au moment de l’exécution, dans des référentiels non modifiables tels que `/libs` et `/apps`, entraîne des erreurs. De plus, vous n’avez pas accès aux outils de développement pour les environnements d’évaluation et de production.
 
-Pour savoir comment développer votre application AEM à l’aide de CRXDE Lite, voir [Développement dans CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+Pour savoir comment développer votre application AEM à l’aide de CRXDE Lite, consultez la section [Développer dans CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
 ## Gestion des journaux {#managing-logs}
 
@@ -65,20 +65,20 @@ Si vous avez des questions sur l’accès à Cloud Service, contactez votre repr
 
 ## Apprentissage de documents {#document-learnings}
 
-Une fois la migration terminée, vous devez documenter les connaissances acquises au cours de ce processus. Voici quelques questions qui peuvent faciliter le processus de documentation :
+Une fois la migration terminée, vous devez documenter les connaissances acquises au cours de ce processus. Voici quelques questions qui peuvent faciliter le processus de documentation :
 
-* Qu&#39;est-ce qui a bien fonctionné et qu&#39;est-ce qui n&#39;a pas fonctionné ?
-* Quels ont été les principaux problèmes ?
-* Recommendations en cas de migration ultérieure.
+* Qu’est-ce qui a bien fonctionné et qu’est-ce qui n’a pas fonctionné ?
+* Quels ont été les principaux problèmes ?
+* Recommandations en cas de migration ultérieure.
 
 Vous devez ensuite partager ces apprentissages post-migration avec les parties prenantes et les équipes de votre entreprise.
 
 ## Serait-ce la fin de notre voyage ?  {#journey-ends}
 
-Félicitations ! Vous avez terminé le Parcours de migration as a Cloud Service AEM ! Vous devez comprendre comment :
+Félicitations ! Vous avez terminé le parcours de migration d’AEM as a Cloud Service ! Vous devez comprendre comment :
 
-* Prise en main de la transition vers AEM as a Cloud Service
-* Déterminez si votre déploiement est prêt à être déplacé vers AEM as a Cloud Service
-* Préparez votre code et votre cloud de contenu
-* Effectuer la migration
+* Prendre en main la transition vers AEM as a Cloud Service.
+* Déterminer si votre déploiement est prêt à être déplacé vers AEM as a Cloud Service.
+* Préparer votre code et votre contenu pour le cloud.
+* Effectuer la migration.
 * Surveiller les problèmes et améliorer les performances

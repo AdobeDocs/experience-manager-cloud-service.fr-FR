@@ -1,5 +1,5 @@
 ---
-title: Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP
+title: 'Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP '
 seo-title: XFA support in XDP-based Adaptive Forms
 description: Répertorie les événements, les propriétés, les scripts et la validation XFA pris en charge dans les formulaires adaptatifs.
 seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP{#xfa-support-in-xdp-based-adaptive-forms}
+# Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP {#xfa-support-in-xdp-based-adaptive-forms}
 
 ## Présentation {#introduction}
 
@@ -30,7 +30,7 @@ Lorsqu’un formulaire adaptatif est créé à partir d’un fichier XDP, les pr
 
 Cet article répertorie les événements, les propriétés et les validations XFA pris en charge dans les formulaires adaptatifs et explique comment les remplacer dans ces formulaires.
 
-## Éléments XFA pris en charge et leur correspondance dans les formulaires adaptatifs {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
+## Éléments XFA pris en charge et leur mappage dans les formulaires adaptatifs {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
 ### Champs {#fields}
 
@@ -120,7 +120,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Associé à la propriété visible dans le formulaire adaptatif. Vous pouvez le remplacer en utilisant l’expression Visibility</p> </td>
   </tr>
   <tr>
-   <td><p>access </p> </td>
+   <td><p>accès </p> </td>
    <td><p>Associé à la propriété activée dans le formulaire adaptatif. Vous pouvez le remplacer à l’aide de l’expression Access.</p> </td>
   </tr>
   <tr>
@@ -197,7 +197,7 @@ Le tableau suivant capture la manière dont divers scripts XFA définis dans les
    <td><p>Associé à l’expression Calculate dans le formulaire adaptatif.</p> </td>
   </tr>
   <tr>
-   <td><p>validate </p> </td>
+   <td><p>valider </p> </td>
    <td><p>Associé à l’expression Validation dans le formulaire adaptatif.</p> </td>
   </tr>
   <tr>

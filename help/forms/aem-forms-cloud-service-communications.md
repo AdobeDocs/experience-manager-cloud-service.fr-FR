@@ -41,7 +41,7 @@ Une opération synchrone est un processus de génération de documents de maniè
    >
    >Adobe recommande d’utiliser l’authentification par jeton sur un environnement de production.
 
-### Prérequis {#pre-requisites}
+### Conditions préalables {#pre-requisites}
 
 Pour utiliser des API synchrones, les conditions suivantes sont requises :
 

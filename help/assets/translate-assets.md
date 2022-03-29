@@ -8,7 +8,7 @@ exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
 source-git-commit: cf3273af030a8352044dcf4f88539121249b73e7
 workflow-type: tm+mt
 source-wordcount: '2584'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -260,9 +260,9 @@ L’application de services cloud directement à votre dossier de ressources él
 
 ### Application d’un connecteur de traduction personnalisé {#applying-custom-translation-connector}
 
-Si vous souhaitez appliquer un connecteur personnalisé pour les services de traduction que vous souhaitez utiliser dans les workflows. Pour appliquer un connecteur personnalisé, installez d’abord le connecteur à partir de [Gestionnaire de modules.](/help/implementing/developing/tools/package-manager.md) Configurez ensuite le connecteur depuis la console Cloud Services. Une fois le connecteur configuré, il est disponible dans la liste des connecteurs de l’onglet Cloud Services décrits dans la section [Application des services de traduction](#applying-the-translation-services). Une fois que vous avez appliqué le connecteur personnalisé et exécuté des workflows de traduction, la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction affiche les détails du connecteur dans les sections **[!UICONTROL Fournisseur]** et **[!UICONTROL Méthode]**.
+Si vous souhaitez appliquer un connecteur personnalisé pour les services de traduction que vous souhaitez utiliser dans les workflows de traduction. Pour appliquer un connecteur personnalisé, installez d’abord le connecteur à partir du [gestionnaire de modules.](/help/implementing/developing/tools/package-manager.md) Configurez ensuite le connecteur depuis la console Cloud Services. Une fois le connecteur configuré, il est disponible dans la liste des connecteurs de l’onglet Cloud Services décrits dans la section [Application des services de traduction](#applying-the-translation-services). Une fois que vous avez appliqué le connecteur personnalisé et exécuté des workflows de traduction, la mosaïque **[!UICONTROL Résumé de traduction]** du projet de traduction affiche les détails du connecteur dans les sections **[!UICONTROL Fournisseur]** et **[!UICONTROL Méthode]**.
 
-1. Installation du connecteur à partir de [Gestionnaire de modules.](/help/implementing/developing/tools/package-manager.md)
+1. Installez le connecteur depuis le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
 1. Cliquez/appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Outils > Déploiement > Services Cloud]**.
 1. Localisez le connecteur que vous avez installé sous **[!UICONTROL Services tiers]** sur la page **[!UICONTROL Services Cloud]**.
 

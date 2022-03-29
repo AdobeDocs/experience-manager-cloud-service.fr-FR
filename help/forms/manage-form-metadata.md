@@ -34,7 +34,7 @@ Les types de ressources suivants sont pris en charge dans [!DNL AEM Forms] :
 * Modèle de données de formulaire
 * XFS
 
-#### Liste exhaustive des métadonnées {#extensive-list-of-metadata}
+#### Liste exhaustive de métadonnées {#extensive-list-of-metadata}
 
 Vous trouverez ci-dessous une liste exhaustive des propriétés de métadonnées prises en charge dans [!DNL AEM Forms] :
 

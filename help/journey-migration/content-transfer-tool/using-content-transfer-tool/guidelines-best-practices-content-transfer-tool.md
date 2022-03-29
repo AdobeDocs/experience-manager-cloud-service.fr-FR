@@ -84,6 +84,6 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Une fois que vous avez lu les instructions, les bonnes pratiques et les points importants à prendre en compte pour l’utilisation de l’outil de transfert de contenu, vous êtes prêt à installer et à utiliser l’outil, en commençant par la création d’un jeu de migration. Consultez [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr) pour en savoir plus.

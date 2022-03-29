@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 
-## Un peu d’histoire... {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Dans le document précédent du parcours de traduction découplée AEM, [Configuration du connecteur de traduction](configure-connector.md), vous avez appris à installer et configurer votre connecteur de traduction et vous devez maintenant :
 
@@ -85,12 +85,12 @@ Plusieurs propriétés supplémentaires peuvent être configurées dans le cadre
 
 Ces fonctionnalités ne sont généralement pas nécessaires pour commencer à localiser votre contenu découplé, mais vous pouvez en apprendre plus à ce sujet dans la section [Ressources supplémentaires](#additional-resources), si vous êtes intéressé.
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Maintenant que vous avez terminé cette partie du parcours de traduction découplée, vous devriez savoir :
 
-* ce que font les règles de traduction ;
-* définir vos propres règles de traduction.
+* comprendre ce que font les règles de traduction ;
+* être capable de définir vos propres règles de traduction.
 
 Tirez parti de ces connaissances et continuez à progresser sur votre parcours de traduction découplée AEM en consultant le document [Traduire le contenu](translate-content.md), dans lequel vous découvrirez comment votre connecteur et vos règles s’associent pour traduire du contenu découplé.
 

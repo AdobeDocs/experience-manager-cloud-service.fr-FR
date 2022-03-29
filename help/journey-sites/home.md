@@ -5,7 +5,7 @@ exl-id: d18bc8b8-8d94-4296-a218-b21b59e6563d
 source-git-commit: fd663a98cc4b2924edb274baa452264a37641e0c
 workflow-type: tm+mt
 source-wordcount: '420'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -39,8 +39,8 @@ Les parcours de documentation suivants sont concernent les différentes rubrique
 
 | Titre | Description | Public principal |
 |---|---|---|
-| [Parcours de création de site rapide](/help/journey-sites/quick-site/overview.md) | Commencez ici pour obtenir un parcours guidé à travers l’outil de création rapide de site AEM convivial afin de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement votre site sans aucune connaissance d’arrière-plan AEM. | Développeurs front-end |
-| [Parcours du module complémentaire de démonstration de référence](/help/journey-sites/demos-add-on/overview.md) | Commencez ici pour obtenir un parcours guidé expliquant comment ajouter facilement le module complémentaire de démonstration de référence d’AEM à un environnement de test avec une configuration d’AEM minimale et être en mesure de tester les puissantes fonctionnalités d’avec des exemples riches basés sur les bonnes pratiques. | Administrateur système |
+| [Parcours de création rapide de site](/help/journey-sites/quick-site/overview.md) | Commencez ici votre parcours guidé à travers l’outil convivial de création rapide de site AEM, qui vous permet de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement ce site sans aucune connaissance du back-end AEM. | Développeurs front-end |
+| [Parcours complémentaire des démonstrations de référence](/help/journey-sites/demos-add-on/overview.md) | Découvrez ici un parcours guidé expliquant comment ajouter facilement le module complémentaire des démonstrations de référence d’AEM à un environnement sandbox avec une configuration minimale d’AEM. Vous pourrez ainsi tester les puissantes fonctionnalités d’AEM avec des exemples riches basés sur les bonnes pratiques. | Administrateur système |
 | [Parcours de traduction de sites](/help/journey-sites/translation/overview.md) | Découvrez les technologies AEM Sites, leur utilisation pour votre projet et comment créer et mettre à jour des projets de traduction dans AEM, de A à Z. | Spécialistes de la traduction |
 
 Tenez-vous informé des [prochains parcours couvrant les spécificités des rôles supplémentaires.](/help/journey-documentation/documentation-journeys.md#journeys)

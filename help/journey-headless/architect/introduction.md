@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Dans cette partie du [Parcours d’architecture de contenu découplé AEM](overview.md), vous pouvez découvrir les concepts (de base) et la terminologie nécessaires pour comprendre la modélisation de contenu pour la diffusion de contenu découplé avec Adobe Experience Manager (AEM) as a Cloud Service.
 
-Ce document vous aide à comprendre la diffusion de contenu découplé, comment AEM prend en charge le découplage et comment le contenu est modélisé pour le découplage. Après l’avoir lu, vous devriez :
+Ce document vous aide à comprendre la diffusion de contenu découplé, comment AEM prend en charge le découplage et comment le contenu est modélisé pour le découplage. Après avoir lu ce document, vous devriez :
 
 * comprendre les concepts de base de la diffusion de contenus en mode découplé ;
 * vous être familiarisé avec la façon dont AEM prend en charge le découplage et la modélisation de contenu.
@@ -72,12 +72,12 @@ Grâce à Adobe Experience Manager (AEM) as a Cloud Service, vous pouvez acc�
 
 Cela signifie que votre projet peut réaliser une diffusion découplée d’un contenu structuré pour l’utiliser dans vos applications.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez appris les concepts et la terminologie, l’étape suivante consiste à [découvrir les principes de base de la modélisation avec des modèles de fragment de contenu](basics.md).
 
 ## Ressources supplémentaires {#additional-resources}
 
-* Parcours de développement découplé AEM
+* Parcours du développeur AEM Headless
    * [En savoir plus sur le développement CMS découplé](/help/journey-headless/developer/learn-about.md)
    * [Découvrez comment modéliser votre contenu](/help/journey-headless/developer/model-your-content.md)

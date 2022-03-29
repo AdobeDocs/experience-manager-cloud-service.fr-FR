@@ -1,18 +1,18 @@
 ---
-title: Parcours de développement découplé AEM
-description: AEM Documentation CMS sans affichage. Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
-landing-page-description: Commencez ici pour un parcours guidé à travers les fonctionnalités sans interface d’AEM, leurs fonctionnalités et comment les exploiter dans votre premier projet de développement.
+title: Parcours du développeur AEM Headless
+description: Documentation CMS d’AEM Headless. Découvrez ici un parcours guidé à travers les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
+landing-page-description: Démarrez ici un parcours guidé à travers les fonctionnalités découplées d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
 workflow-type: tm+mt
 source-wordcount: '1247'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Parcours de développement découplé AEM {#aem-headless-developer-journey}
+# Parcours du développeur AEM Headless {#aem-headless-developer-journey}
 
-Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. Ce parcours vous fournit toute la documentation AEM sans affichage dont vous avez besoin pour développer votre première application sans interface utilisateur.
+Démarrez ici un parcours guidé à travers les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. Ce parcours vous fournit toute la documentation AEM Headless dont vous avez besoin pour développer votre première application découplée.
 
 ## Présentation {#introduction}
 
@@ -53,13 +53,13 @@ Les informations présentées dans ce parcours peuvent bien sûr être utiles à
 
 ## Le parcours de développement découplé {#the-journey}
 
-Vous allez explorer de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur les projets découplés dans AEM et vous proposent des liens vers une documentation technique détaillée.
+Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur les projets découplés dans AEM et vous proposent des liens vers une documentation technique détaillée.
 
 Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si le concept de découplage dans AEM est nouveau pour vous, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
 
 | Numéro | Article | Description |
 |---|---|---|
-| 0 | Parcours de développement découplé AEM | Ce document |
+| 0 | Parcours du développeur AEM Headless | Ce document |
 | 1 | [En savoir plus sur le développement CMS découplé](learn-about.md) | Découvrez la technologie découplée et quand l’utiliser. |
 | 2 | [Prise en main d’AEM as a Cloud Service découplé](getting-started.md) | En savoir plus sur les prérequis d’AEM découplé |
 | 3 | [Chemin d’accès à votre première expérience à l’aide d’AEM découplé](path-to-first-experience.md) | Configurez votre environnement de développement et apprenez à intégrer une application simple avec AEM découplé. |
@@ -70,7 +70,7 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 | 8 | [Comment mettre en ligne votre application découplée](go-live.md) | Découvrez comment déployer l’application en direct et comment récupérer votre code local dans Git et le déplacer vers Cloud Manager Git pour le pipeline CI/CD. |
 | 9 | [Facultatif – Comment créer des applications d’une seule page (SPA) avec AEM](create-spa.md) | Une fois que vous avez compris comment fonctionnent les fonctionnalités découplées AEM, découvrez comment combiner une diffusion utilisateur couplée et découplée et comment créer des SPA modifiables à l’aide de la structure de l’éditeur d’AEM. |
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Vous êtes maintenant prêt à prendre en main votre parcours découplé Adobe. Nous vous encourageons à passer à la section suivante du parcours et à lire l’article [Découvrez le développement CMS découplé](learn-about.md).
 
@@ -90,5 +90,5 @@ Ces parcours sont conçus pour être autonomes. Cependant, un certain nombre d�
 * [Tutoriels sur le découplage dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.
 * [Parcours de traduction découplé AEM](/help/journey-headless/translation/overview.md) – Ce parcours de documentation vous donne une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire.
 * [Parcours de création découplée](/help/journey-headless/author/overview.md) – Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les modéliser votre contenu dans votre premier projet découplé.
-* [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) : faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet.
+* [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) –  Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) – Si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.

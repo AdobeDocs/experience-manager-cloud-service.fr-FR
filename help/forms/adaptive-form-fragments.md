@@ -138,7 +138,7 @@ Les fragments de formulaire adaptatif créés apparaissent dans l’onglet Fragm
 
 Le fragment de formulaire adaptatif est inséré par référence dans le formulaire adaptatif et est synchronisé avec le fragment autonome du formulaire adaptatif. Cela signifie que, lorsque vous mettez à jour le fragment de formulaire adaptatif, les modifications sont répercutées dans tous les formulaires adaptatifs où le fragment est utilisé.
 
-### Inclusion d’un fragment dans un formulaire adaptatif {#embed-a-fragment-in-adaptive-form}
+### Incorporation d’un fragment dans un formulaire adaptatif {#embed-a-fragment-in-adaptive-form}
 
 Vous pouvez choisir d’inclure un fragment de formulaire adaptatif en cliquant sur le bouton **Inclure l’actif : &lt;*Nom du fragment*>** dans la barre d’outils du panneau du fragment ajouté, comme illustré dans l’exemple ci-dessous.
 
@@ -156,7 +156,7 @@ Vous pouvez créer des fragments de formulaire adaptatif imbriqués, ce qui sign
 
 Vous pouvez remplacer ou modifier un fragment de formulaire adaptatif par un autre fragment à l’aide de la propriété **Sélectionner une ressource un fragment** dans la boîte de dialogue Modifier le composant, pour un panneau de fragment de formulaire adaptatif.
 
-## Correspondance automatique des fragments pour la liaison de données {#auto-mapping-of-fragments-for-data-binding}
+## Mappage automatique des fragments pour la liaison de données {#auto-mapping-of-fragments-for-data-binding}
 
 Lorsque vous créez un fragment de formulaire adaptatif à partir d’un modèle de formulaire XFA ou d’un type XSD complexe, et que vous le faites glisser dans un formulaire adaptatif, le fragment XFA ou le type XSD complexe est automatiquement remplacé par le fragment de formulaire adaptatif correspondant dont la racine de modèle de fragment est mappée au fragment XFA ou un type XSD complexe.
 
@@ -227,7 +227,7 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 >
 >Les touches de localisation dans le fragment n’apparaîtront pas dans le fichier XLIFF d’un formulaire adaptatif.
 
-## Points essentiels à respecter lorsque vous utilisez des fragments {#key-points-to-remember-when-working-with-fragments}
+## Points clés à retenir lorsque vous travaillez avec des fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Assurez-vous que le nom du fragment est unique. La création du fragment échoue s’il existe déjà un fragment portant le même nom.
 * Dans un formulaire adaptatif basé sur XDP, si vous enregistrez un panneau en tant que fragment contenant une autre partie du fragment XDP, le fragment obtenu sera automatiquement lié au fragment XDP enfant. Dans le cas d’un formulaire adaptatif basé sur un schéma XSD, le fragment obtenu sera associé à la racine de schéma.

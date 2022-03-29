@@ -30,7 +30,7 @@ Avant de commencer à utiliser [!DNL AEM Forms] as a Cloud Service, passez en re
 * Lorsque vous envoyez un formulaire contenant un champ de chargement HTML standard d’un appareil iOS d’Apple, le contenu du fichier n’est parfois pas envoyé et un fichier de 0 octet est reçu à l’autre bout. Il s’agit d’un problème connu dans Apple iOS. [FB9117687](https://feedbackassistant.apple.com/feedback/9117687)
 
 
-## Restrictions {#limitations}
+## Limites {#limitations}
 
 * La prise en charge des formulaires adaptatifs basés sur XFA n’est pas disponible sans configuration supplémentaire. Si vous envisagez d’utiliser des formulaires adaptatifs basés sur XFA, contactez l’assistance Adobe pour expliquer votre cas d’utilisation et vos exigences spécifiques.
 

@@ -27,7 +27,7 @@ Pour activer l’option **[!UICONTROL Formulaires]** :
 1. Connectez-vous à [Cloud Manager](https://experience.adobe.com/)
 1. Recherchez votre programme et cliquez sur l’icône ![Formulaires n’est pas disponible](assets/Smock_Edit_18_N.svg). La page Modifier le programme de votre programme s’affiche.
 1. Ouvrez l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
-1. Sélectionnez l’option **[!UICONTROL Formulaires]**, puis cliquez sur **[!UICONTROL Enregistrer]**.
+1. Sélectionnez l’option **[!UICONTROL Formulaires]**, puis cliquez sur **[!UICONTROL Mettre à jour]**.
 
    ![Sélectionnez l’option Formulaires](assets/installation-configuration-select-forms-option.png)
 1. [Créez](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=fr#how-to-use) et [exécutez](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr) des pipelines de production et hors production.

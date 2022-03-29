@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ L’interface de ligne de commande de Cloud Manager peut également être utilis
 
 La variable peut être supprimée ou redéfinie sur une autre valeur si vous souhaitez que l’environnement soit restauré avec le comportement du canal normal (hors version préliminaire).
 
-* Vous pouvez également configurer des variables d’environnement à partir du [Interface utilisateur de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
+* Vous pouvez également configurer les variables d’environnement à partir de l’interface utilisateur de [Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
 ### SDK local {#local-sdk}
 

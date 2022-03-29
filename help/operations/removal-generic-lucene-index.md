@@ -5,7 +5,7 @@ exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1349'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 Adobe a l’intention de supprimer l’index &quot;Lucene générique&quot; (`/oak:index/lucene-*`) depuis Adobe Experience Manager as a Cloud Service. Cet index est obsolète depuis AEM 6.5. Dans ce document, l’impact de cette décision est décrit, ainsi que des descriptions détaillées sur la manière d’examiner si une instance AEM est affectée. Il contient également des moyens de modifier les requêtes afin qu’elles continuent à fonctionner sans l’index Lucene générique.
 
-## Arrière-plan {#background}
+## Contexte {#background}
 
 Dans AEM, les requêtes en texte intégral sont celles qui utilisent les fonctions suivantes :
 
 * `jcr:contains()` dans JCR XPATH
 * `CONTAINS` dans JCR-SQL2
 
-Ces requêtes ne peuvent pas renvoyer de résultats sans utiliser d’index. Contrairement à une requête contenant uniquement des restrictions de chemin ou de propriété, une requête contenant une restriction de texte intégral pour laquelle aucun index n’est trouvé (et donc une traversée est effectuée) ne renvoie toujours aucun résultat.
+Ces requêtes ne peuvent pas renvoyer de résultats sans utiliser dʼindex. Contrairement à une requête contenant uniquement des restrictions de chemin ou de propriété, une requête contenant une restriction de texte intégral pour laquelle aucun index n’est trouvé (et donc une traversée est effectuée) ne renvoie toujours aucun résultat.
 
 Index Lucene générique (`/oak:index/lucene-*`) existe depuis AEM 6.0 / Oak 1.0 afin de fournir une recherche de texte intégral dans la plus grande partie de la hiérarchie du référentiel, bien que certains chemins, tels que `/jcr:system` et `/var` ont toujours été exclues. Cependant, cet index a été largement remplacé par des index sur des types de noeuds plus spécifiques (par exemple, `damAssetLucene-*` pour le `dam:Asset` type de noeud), qui prend en charge les recherches de texte intégral et de propriétés.
 
@@ -30,7 +30,7 @@ Dans AEM 6.5, l’index Lucene générique a été marqué comme obsolète, indi
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Please change the query or the index definitions.
 ```
 
-Dans les versions d’AEM récentes, l’index générique Lucene a été utilisé pour prendre en charge un très petit nombre de fonctionnalités. Ils sont en cours de retraitement afin d’utiliser d’autres index ou modifiés d’une autre manière pour supprimer la dépendance à cet index.
+Dans les versions d’AEM récentes, l’index générique Lucene a été utilisé pour prendre en charge un très petit nombre de fonctionnalités. Ces dernières subissent actuellement des refontes afin dʼutiliser d’autres index ou sont modifiées afin de supprimer leur dépendance à cet index.
 
 Par exemple, les requêtes de recherche de référence, comme dans l’exemple suivant, doivent maintenant utiliser l’index à l’adresse `/oak:index/pathreference`, qui indexe uniquement `String` valeurs de propriété correspondant à une expression régulière qui recherche des chemins JCR.
 
@@ -46,7 +46,7 @@ Les applications client qui utilisent des requêtes qui dépendent toujours de c
 
 ## Êtes-Vous Affectée ? {#are-you-affected}
 
-L’index Lucene générique est actuellement utilisé comme secours si aucun autre index de texte intégral ne peut traiter une requête. Lorsque cet index obsolète est utilisé, un message comme celui-ci est consigné au niveau de l’avertissement :
+L’index Lucene générique est actuellement utilisé comme secours si aucun autre index de texte intégral ne peut traiter une requête. En cas dʼutilisation de cet index obsolète, un message comme celui-ci sera enregistré au niveau WARN :
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
@@ -170,4 +170,4 @@ Adobe va surveiller les messages de log mentionnés ci-dessus et va tenter de co
 
 Dans le cadre d’une atténuation à court terme, Adobe ajoute directement des définitions d’index personnalisées aux systèmes clients afin d’éviter des problèmes de performance ou fonctionnels suite à la suppression de l’index Lucene générique, si nécessaire.
 
-Dans ce cas, le client reçoit la définition d’index mise à jour et est invité à l’inclure dans les prochaines versions de son application via Cloud Manager.
+Le client recevra alors la définition dʼindex mise à jour et sera invité à lʼinclure dans les versions ultérieures de son application via Cloud Manager.

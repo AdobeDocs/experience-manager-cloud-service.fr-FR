@@ -8,7 +8,7 @@ exl-id: 77131cc2-9cb1-4a00-bbc4-65b1a66e76f5
 source-git-commit: 391a9482cc6ed97984693c21b41910fdd32ff25d
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ Une action Envoyer est un sling:Folder qui contient les éléments suivants :
 
 ## Création d’une action Envoyer personnalisée {#creating-a-custom-submit-action}
 
-Pour créer une action Envoyer personnalisée qui enregistre les données dans le référentiel CRX et vous envoie ensuite un e-mail, suivez la procédure ci-après. Le formulaire adaptatif contient l’action Envoyer Stocker le contenu (obsolète) prête à l’emploi qui permet d’enregistrer les données dans le référentiel CRX. En outre, AEM fournit une API de [messagerie](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) qui peut être utilisée pour envoyer des e-mails. Avant d’utiliser l’API de messagerie, vous devez configurer le service Day CQ Mail via la console système. Vous pouvez réutiliser l’action Stocker le contenu (obsolète) pour stocker les données dans le référentiel. L’action Stocker le contenu (obsolète) se trouve à l’emplacement /libs/fd/af/components/guidesubmittype/store dans le référentiel CRX.
+Pour créer une action Envoyer personnalisée qui enregistre les données dans le référentiel CRX et vous envoie ensuite un e-mail, suivez la procédure ci-après. Le formulaire adaptatif contient l’action Envoyer Stocker le contenu (obsolète) prête à l’emploi qui permet d’enregistrer les données dans le référentiel CRX. En outre, AEM fournit une API de [messagerie](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/day/cq/mailer/package-summary.html) qui peut être utilisée pour envoyer des e-mails. Avant d’utiliser l’API de messagerie, configurez le service de messagerie Day CQ via la console système. Vous pouvez réutiliser l’action Stocker le contenu (obsolète) pour stocker les données dans le référentiel. L’action Stocker le contenu (obsolète) se trouve à l’emplacement /libs/fd/af/components/guidesubmittype/store dans le référentiel CRX.
 
 1. Connectez-vous à CRXDE Lite en accédant à https://&lt;server>:&lt;port>/crx/de/index.jsp. Créez un nœud avec la propriété sling:Folder et le nom store_and_mail dans le dossier /apps/custom_submit_action. Créez le dossier custom_submit_action, le cas échéant.
 

@@ -96,7 +96,7 @@ Après avoir appliqué un thème accessible, effectuez les corrections suppléme
 
 1. Supprimez les champs de signature tactile, le cas échéant, dans le formulaire adaptatif. Configurez le formulaire adaptatif de sorte qu’il utilise [!DNL Adobe Sign] pour une expérience de signature numérique transparente.
 
-### 2. Fournissez des libellés appropriés pour les commandes de formulaire {#provide-proper-labels-for-form-controls}
+### 2. Fournissez des libellés appropriés pour les contrôles de formulaire. {#provide-proper-labels-for-form-controls}
 
 Le libellé ou le titre d’un composant de formulaire identifie ce qu’il représente. Par exemple, le texte « Prénom » indique à l’utilisateur qu’il doit saisir son prénom dans une zone de texte. Pour être accessible sur des lecteurs d’écran, le libellé est associé, par programmation, à un composant de formulaire. La commande de formulaire peut également être assortie d’informations d’accessibilité supplémentaires.
 
@@ -127,7 +127,7 @@ Pour utiliser l’option d’accessibilité, procédez comme suit :
 >* Pour les formulaires adaptatifs basés sur XFA, l’option d’accessibilité est héritée des options d’accessibilité définies dans le fichier XDP. Les info-bulles du fichier XDP sont associées au champ Brève description et Légende correspond à Titre. Les autres options fonctionnent normalement.
 
 
-### 3. Fournissez des équivalents textuels pour les images {#provide-text-equivalents-for-images}
+### 3. Fournissez des équivalents textuels pour les images. {#provide-text-equivalents-for-images}
 
 Pour certains utilisateurs, les images permettent une compréhension plus facile. Cependant, lorsqu’un lecteur d’écran est utilisé, les images réduisent l’accessibilité du formulaire. Si vous optez pour l’utilisation d’images, veuillez fournir des descriptions textuelles pour l’ensemble des images.
 
@@ -137,7 +137,7 @@ Sélectionnez un composant d’image et appuyez sur ![cmppr](assets/cmppr.png). 
 
 ![Texte alternatif d’une image](assets/image-properties.png)
 
-### 4. Fournissez un contraste des couleurs suffisant {#provide-sufficient-color-contrast}
+### 4. Fournissez un contraste de couleur suffisant. {#provide-sufficient-color-contrast}
 
 Dans le cadre des fonctions d’accessibilité, il convient de tenir compte de quelques points supplémentaires concernant l’utilisation des couleurs. Les auteurs de formulaires peuvent utiliser des couleurs pour améliorer l’apparence des formulaires, en mettant en surbrillance différents composants. Cependant, une utilisation inappropriée des couleurs peut rendre le formulaire difficile à lire, voire totalement illisible, pour des personnes souffrant de certains handicaps.
 
@@ -147,7 +147,7 @@ Il est conseillé d’utiliser la police et les couleurs d’arrière-plan par d
 
 <!-- See [Creating custom themes for Adaptive Forms](creating-custom-adaptive-form-themes.md), for more information about changing the color contrast and theme for the Adaptive Forms. -->
 
-### 5. Assurez-vous que les commandes de formulaire sont accessibles au clavier {#ensure-that-form-controls-are-keyboard-accessible}
+### 5. Assurez-vous que les contrôles de formulaire sont accessibles au clavier. {#ensure-that-form-controls-are-keyboard-accessible}
 
 Un formulaire accessible peut être rempli complètement en utilisant uniquement le clavier ou un périphérique de saisie équivalent. Certains utilisateurs ayant une mobilité réduite ou une déficience visuelle sont parfois contraints de n’utiliser que le clavier. De plus, de nombreux utilisateurs préfèrent saisir leurs données au moyen du clavier plutôt que de la souris. En proposant différents modes de saisie des données, vous créez également des formulaires qui répondent aux préférences de l’ensemble des utilisateurs.
 

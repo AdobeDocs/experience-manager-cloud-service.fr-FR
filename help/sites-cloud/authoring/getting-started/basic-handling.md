@@ -5,7 +5,7 @@ exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
 workflow-type: tm+mt
 source-wordcount: '2954'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -205,7 +205,7 @@ Plusieurs ressources d’aide sont disponibles :
    >* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 
-## Barre d’outils d’actions {#actions-toolbar}
+## Barre d’outils Actions {#actions-toolbar}
 
 Lorsque vous sélectionnez une ressource (une page ou une ressource, par exemple), diverses actions sont indiquées par des icônes, avec un texte explicatif dans la barre d’outils. Ces actions dépendent de différents éléments :
 
@@ -391,7 +391,7 @@ Le **sélecteur de rail** est disponible dans le coin supérieur gauche de la fe
 
 ![Sélecteur de rail développé](/help/sites-cloud/authoring/assets/rail-selector-expanded.png)
 
-Par exemple, dans la variable **Sites** vous pouvez sélectionner uniquement le contenu (valeur par défaut), l’arborescence de contenu, la chronologie, les références, les détails du site ou le panneau latéral de filtrage.
+Par exemple, dans la console **Sites**, vous pouvez sélectionner le contenu uniquement (valeur par défaut), l’arborescence de contenu, la chronologie, les références, les détails du site ou le panneau latéral de filtrage.
 
 Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affiche. Si n’importe quelle autre option est sélectionnée, le nom des options apparaît en regard de l’icône de rail.
 
@@ -461,7 +461,7 @@ Les **références** affichent toutes les connexions avec la ressource sélectio
 
 ### Site {#site}
 
-**Site** affiche les détails des sites. [créé à l’aide d’un modèle de site.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Site** affiche les détails des sites [créés à l’aide d’un modèle de site.](/help/sites-cloud/administering/site-creation/create-site.md)
 
 ![Rail du site](../assets/site-rail.png)
 
@@ -469,7 +469,7 @@ Voir le document [Utilisation du rail de site pour gérer le thème de votre sit
 
 >[!TIP]
 >
->Vous trouverez une description de bout en bout du processus de création d’un site à partir d’un modèle et de personnalisation de son thème dans la section [Parcours de création rapide de site.](/help/journey-sites/quick-site/overview.md)
+>Vous trouverez une description de bout en bout du processus de création d’un nouveau site à partir d’un modèle et de personnalisation de son thème dans le [Parcours de création rapide de site.](/help/journey-sites/quick-site/overview.md)
 
 ### Filtrer {#filter}
 

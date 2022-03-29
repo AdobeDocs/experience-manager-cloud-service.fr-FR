@@ -22,7 +22,7 @@ ht-degree: 100%
 >La fonctionnalité d’utilisation des rôles Adobe Sign dans un formulaire adaptatif se trouve dans le canal de version préliminaire d’août 2021. Cette fonctionnalité sera donc disponible à tous dans la version de septembre 2021.
 
 
-[!DNL Adobe Sign] permet les processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commerciaux, des ressources humaines, etc.
+[!DNL Adobe Sign] permet des processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commerciaux, des ressources humaines, etc.
 
 Dans un scénario [!DNL Adobe Sign] classique et de formulaires adaptatifs, un utilisateur remplit un formulaire adaptatif pour demander un service qui requiert des signatures d’une ou de plusieurs parties. Par exemple, une demande de prêt hypothécaire et de carte de crédit nécessite des signatures légales de tous les emprunteurs et codemandeurs. Pour activer les processus de signature électronique pour des scénarios similaires, vous pouvez intégrer [!DNL Adobe Sign] à un formulaire adaptatif. Voici quelques autres exemples d’utilisation d’[!DNL Adobe Sign] :
 
@@ -42,7 +42,7 @@ L’intégration d’[!DNL Adobe Sign] à [!DNL AEM Forms] prend en charge les �
 
 <!-- * In-form and out-of-form signing experiences -->
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant d’utiliser [!DNL Adobe Sign] dans un formulaire adaptatif :
 
@@ -164,7 +164,7 @@ Pour sélectionner un Cloud Service et l’ordre de signature :
 1. Dans l’explorateur de propriétés, développez l’accordéon **[!UICONTROL Signature électronique]** et sélectionnez l’option **[!UICONTROL Activer Adobe Sign]**. Elle active [!DNL Adobe Sign] pour un formulaire adaptatif.
 1. Sélectionnez un Cloud Service dans la liste des Cloud Services [!DNL Adobe Sign] déjà configurés.
 
-   Si la liste **[!UICONTROL Adobe Sign Cloud Service]** est vide, consultez l’article [Configuration d’ [!DNL Adobe Sign] avec  [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) pour configurer le service.
+   Si la liste **[!UICONTROL Adobe Sign Cloud Service]** est vide, consultez l’article [Configuration d’ [!DNL Adobe Sign] avec [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md) pour configurer le service.
 
    La liste déroulante répertorie les Cloud Services présents dans le dossier `global` dans Outils > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]**. En outre, la liste déroulante répertorie également les Cloud Services qui existent dans le dossier que vous sélectionnez dans le champ **[!UICONTROL Conteneur de configurations]** lorsque vous créez un formulaire adaptatif.
 
@@ -221,7 +221,7 @@ Après avoir ajouté des champs [!DNL Adobe Sign] à un formulaire adaptatif, ac
 
 Les actions de signature et d’envoi d’un formulaire sont indépendantes l’une des l’autre. L’envoi d’un formulaire adaptatif a lieu dès qu’un accord Adobe Sign est créé après l’envoi d’un formulaire par un utilisateur. [!DNL AEM Forms] as a Cloud Service n’attend pas que les destinataires signent ou effectuent d’autres actions pour envoyer un formulaire adaptatif. Un formulaire est envoyé dès qu’un utilisateur clique sur le bouton Envoyer ou qu’une étape Résumé affiche le résumé du formulaire.
 
-En outre, un formulaire adaptatif prenant en charge [!DNL Adobe Sign] contient l’ID de contrat Adobe Sign pour envoyer des données. Vous pouvez utiliser l’ID de contrat pour le suivi de l’état de l’accord à l’aide de code personnalisé (requiert une implémentation personnalisée).
+En outre, un formulaire adaptatif prenant en charge [!DNL Adobe Sign] contient l’ID de contrat Adobe Sign pour envoyer des données. Vous pouvez utiliser l’ID de contrat pour le suivi de l’état de contrat à l’aide de code personnalisé (requiert une implémentation personnalisée).
 
 L’ID de l’accord Adobe Sign (agreementId) est inclus dans les données d’envoi du formulaire adaptatif. Par défaut, il se trouve dans le nœud `afSubmissionInfo` des données envoyées.
 

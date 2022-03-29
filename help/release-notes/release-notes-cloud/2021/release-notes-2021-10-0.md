@@ -5,7 +5,7 @@ exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1439'
-ht-degree: 69%
+ht-degree: 99%
 
 ---
 
@@ -23,28 +23,28 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2021.10.0) a été publiée le 4 novembre 2021.
-La version suivante (2021.11.0) date du 2 décembre 2021.
+La date de publication de la version actuelle (2021.10.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 4 novembre 2021.
+La version suivante (2021.11.0) date du 2 décembre 2021.
 
-## Vidéo de publication {#release-video}
+## Vidéo de mise à jour {#release-video}
 
-Consultez la section [Présentation de la version d’octobre 2021](https://video.tv.adobe.com/v/338253) vidéo pour un résumé des fonctionnalités ajoutées.
+Regardez la vidéo [Aperçu de la mise à jour d’octobre 2021](https://video.tv.adobe.com/v/338253) pour un résumé des fonctionnalités ajoutées.
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nouvelle fonctionnalité dans [!DNL Sites] {#sites-features}
 
-* Les modèles de fragment de contenu sont désormais automatiquement définis en lecture seule une fois publiés, afin d’éviter de rompre involontairement les requêtes d’API en direct après la republication d’un modèle modifié. Les utilisateurs sont avertis lorsqu’ils tentent de modifier un modèle publié. La modification est possible lorsque vous acceptez l’avertissement.
+* Les modèles de fragment de contenu sont désormais automatiquement définis en lecture seule une fois publiés, afin d’éviter de rompre involontairement les requêtes d’API actives après la republication d’un modèle modifié. Les utilisateurs sont avertis lorsqu’ils tentent de modifier un modèle publié. La modification est possible lorsque vous acceptez l’avertissement.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* [!DNL Experience Manager] prend désormais en charge la génération automatique de transcriptions de texte à partir des ressources audio et vidéo prises en charge, à l’aide d’un connecteur intégré vers [!DNL Azure Media Services]. Le [types de fichiers pris en charge](/help/assets/file-format-support.md#audio-video-transcription-formats) sont automatiquement transcrites et le texte est stocké au format WebVTT. Les sous-titres WebVTT sont utilisés pour une recherche, un sous-titrage ou une traduction plus efficaces. En outre, la fonctionnalité améliore l’accessibilité, la capacité de découverte et la localisation des ressources.
+* [!DNL Experience Manager] prend désormais en charge la génération automatique de transcriptions de texte à partir des ressources audio et vidéo prises en charge, à l’aide d’un connecteur intégré à [!DNL Azure Media Services]. Les [types de fichiers pris en charge](/help/assets/file-format-support.md#audio-video-transcription-formats) sont automatiquement transcrits et le texte est stocké au format WebVTT. Les sous-titres WebVTT sont utilisés pour une recherche, un sous-titrage ou une traduction plus efficaces. En outre, la fonctionnalité améliore l’accessibilité, la facilité de découverte et la localisation des ressources.
 
 ### Nouvelle fonctionnalité dans le canal de version préliminaire [!DNL Assets] {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] Le recadrage intelligent d’image et le nuancier sont désormais alimentés par les derniers services Sensei, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles seront conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
+* Le recadrage intelligent et l’échantillon d’images de [!DNL Dynamic Media] sont désormais optimisés par les derniers services Sensei, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles seront conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
 
 * Les balises intelligentes sont automatiquement appliquées aux ressources à l’aide des microservices de ressources, au lieu des services de contenu dynamique. Le modèle sous-jacent est mis à jour afin d’améliorer les résultats du balisage et de réduire les biais. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -66,7 +66,7 @@ No customer-reported bugs fixed in Oct release. Details in CQDOC-18404.
 
 ### Fonctionnalités bêta de [!DNL Forms] {#what-is-new-forms-oct2021-beta}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) vous permettent de combiner un modèle et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents dans les modes synchrone et par lots. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=fr) vous permettent de combiner un modèle et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents dans les modes synchrone et par lots. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
    * Générer des documents en renseignant les fichiers de modèle (PDF et XDP) avec des données XML
    * Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
@@ -77,43 +77,43 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 ### Nouveautés {#what-is-new-cif}
 
-* Le module complémentaire CIF prend en charge la dernière version de Commerce v2.4.3 avec de nouvelles API et schémas GraphQL.
+* Le module complémentaire CIF prend en charge la dernière version de Commerce v2.4.3 avec de nouveaux schémas et API GraphQL.
 
-* Les auteurs peuvent ajouter des liens vers des pages de produits et de catalogues dans des champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour ouvrir les sélecteurs afin de rechercher et sélectionner rapidement le produit ou la catégorie sans quitter le contexte.
+* Les auteurs peuvent ajouter des liens vers les pages de produits et de catalogues dans les champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour ouvrir les sélecteurs afin de rechercher et sélectionner rapidement le produit ou la catégorie sans quitter le contexte.
 
-* Le panier et le passage en caisse des fenêtres contextuelles existantes ont été remplacés par un panier AEM dédié et des pages de passage en caisse. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
+* Les fenêtres contextuelles de panier et de passage en caisse existantes ont été remplacées par des pages de panier et de passage en caisse AEM dédiées. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
 
-* Les vendeurs peuvent masquer certaines catégories de catalogues de produits dans la navigation à l’aide du serveur principal Commerce. Le composant principal de navigation CIF respecte la configuration du serveur principal de commerce &quot;inclure dans le menu&quot; pour afficher/masquer les catégories dans la navigation.
+* Les commerces peuvent masquer certaines catégories de catalogues de produits lors de la navigation à l’aide du serveur principal de Commerce. Le composant principal de navigation CIF respecte la configuration du serveur principal de Commerce « inclure dans le menu » pour afficher/masquer les catégories dans la navigation.
 
-* AEM Storefront Venia renvoie une erreur HTTP 404 si la page de catégorie ou de produit est introuvable
+* Le storefront Venia d’AEM renvoie une erreur HTTP 404 si la catégorie ou page produit est introuvable.
 
 ## Cloud Manager {#cloud-manager}
 
-Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.10.0.
+Cette section présente les notes de mise à jour de Cloud Manager dans la version 2021.10.0. d’AEM as a Cloud Service.
 
 ### Date de publication {#release-date-cm-nov}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.11.0 est le 04 novembre 2021.
+La date de publication de Cloud Manager dans la version 2021.11.0 d’AEM as a Cloud Service est le 4 novembre 2021.
 La prochaine version est prévue pour le 09 décembre 2021.
 
 ### Nouveautés {#what-is-new-cm-nov}
 
-* Les utilisateurs peuvent désormais tirer parti des nouveaux pipelines front-end pour déployer le code front-end exclusivement de manière accélérée. Voir [Pipelines front-end de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
+* Les utilisateurs peuvent désormais exploiter les nouveaux pipelines front-end pour déployer exclusivement le code front-end de manière accélérée. Pour en savoir plus, consultez la section [Pipelines front-end de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end).
 
    >[!IMPORTANT]
-   >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` pour tirer parti des nouveaux pipelines front-end.
+   >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` pour tirer parti des nouveaux pipelines front-end.
 
-* La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la version.
+* La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la publication de la version.
 
-* L’ID d’enregistrement Git s’affiche désormais dans les détails d’exécution du pipeline, ce qui facilite le suivi du code créé.
+* L’ID de validation Git s’affiche désormais dans les détails d’exécution du pipeline, ce qui facilite le suivi du code créé.
 
-* La création de programme est désormais disponible via l’API publiquement exposée.
+* La création de programme est désormais disponible sur l’API publiquement exposée.
 
-* La création d’environnement est désormais disponible via l’API publiquement exposée.
+* La création d’environnement est désormais disponible sur l’API publiquement exposée.
 
 * L’en-tête de réponse `x-request-id` est désormais visible dans le laboratoire de l’API sur [www.adobe.io](https://www.adobe.io/). Cet en-tête est utile pour signaler des problèmes à l’assistance clientèle à des fins de dépannage.
 
-* En tant qu’utilisateur, je vois une carte Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
+* En tant qu’utilisateur, je vois une vignette Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
 
 * Une nouvelle page d’activité est désormais disponible. Vous pouvez y afficher des activités telles que les exécutions de pipeline et de code, ainsi que les détails associés. Au fil du temps, les activités répertoriées dans cette page s’étendront, de même que les détails fournis.
 
@@ -140,7 +140,7 @@ La prochaine version est prévue pour le 09 décembre 2021.
 
 ## Date de publication {#release-date-cm-oct}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.10.0 est le 14 octobre 2021.
+La date de publication de Cloud Manager dans la version 2021.10.0 d’AEM as a Cloud Service est le 14 octobre 2021.
 
 ### Nouveautés {#what-is-new-cm-oct}
 

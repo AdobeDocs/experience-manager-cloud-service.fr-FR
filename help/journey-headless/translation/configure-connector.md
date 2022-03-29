@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Découvrez comment connecter AEM à un service de traduction.
 
-## Un peu d’histoire... {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Dans le document précédent du parcours de traduction AEM, [Prise en main de la traduction découplée AEM](learn-about.md) vous avez appris à organiser votre contenu découplé et la manière dont fonctionnent les outils de traduction AEM et vous devriez maintenant :
 
@@ -25,10 +25,10 @@ Cet article s’appuie sur ces principes de base afin que vous puissiez effectue
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment configurer un connecteur AEM pour le service de traduction de votre choix. Après l’avoir lu, vous devriez :
+Ce document vous aide à comprendre comment configurer un connecteur AEM pour le service de traduction de votre choix. Après avoir lu ce document, vous devriez :
 
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
-* être en mesure de configurer votre propre connexion à votre service de traduction.
+* savoir configurer votre propre connexion à votre service de traduction.
 
 ## Structure d’intégration de la traduction {#tif}
 
@@ -123,12 +123,12 @@ Pour ce faire, accédez à la racine de langue de votre contenu. Dans notre exem
 
 ![Sélection des configurations de services cloud](assets/select-cloud-service-configurations.png)
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
-Maintenant que vous avez terminé cette partie du parcours de traduction découplée, vous devriez :
+Maintenant que vous avez terminé cette partie du parcours de traduction découplée, vous devriez savoir :
 
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
-* être en mesure de configurer votre propre connexion à votre service de traduction.
+* savoir configurer votre propre connexion à votre service de traduction.
 
 Tirez parti de ces connaissances et continuez à progresser sur votre parcours de traduction découplée AEM en consultant le document [Configuration des règles de traduction,](translation-rules.md) où vous apprendrez à définir le contenu à traduire.
 

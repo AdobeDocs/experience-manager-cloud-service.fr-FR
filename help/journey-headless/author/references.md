@@ -11,7 +11,7 @@ ht-degree: 99%
 
 # En savoir plus sur l’utilisation de références dans les fragments de contenu {#author-headless-references}
 
-## Un peu d’histoire... {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Au début du [Parcours de création de contenu découplé AEM](overview.md), l’[Introduction](introduction.md) présentait les concepts de base et la terminologie relatifs à la création découplée.
 
@@ -54,7 +54,7 @@ Encore une fois, les références de fragment font exactement ce que leur nom su
 Par exemple, les modèles de fragment de contenu suivants peuvent être définis :
 
 * Ville
-* Société
+* Entreprise
 * Personne
 * Distinctions
 
@@ -104,7 +104,7 @@ Les références ad hoc peuvent être ajoutées sous la forme d’un simple lien
 
 ![Fragments de contenu – Références ad hoc](/help/journey-headless/author/assets/headless-journey-author-references-04.png)
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous en savez plus sur les références et la structure dans les fragments de contenu, l’étape suivante consiste à [en savoir plus sur les métadonnées et le balisage](metadata-tagging.md). Cette section présente et discute de la manière dont vous pouvez définir des métadonnées et des balises pour vos fragments de contenu.
 

@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Utilisation de Designer {#install-designer}
 
-Designer offre une interface graphique de conception de formulaires conviviale, qui simplifie la création de modèles de formulaire XPD. Vous pouvez concevoir un modèle de formulaire, définir sa logique et respecter des exigences légales strictes. Ces modèles servent de modèle de document d’enregistrement pour un formulaire adaptatif. Ils diffèrent des [modèles de formulaire adaptatif](template-editor.md).
+Designer offre une interface graphique de conception de formulaires conviviale, qui simplifie la création de modèles de formulaire XPD. Vous pouvez concevoir un modèle de formulaire, définir sa logique et respecter des exigences légales strictes. Ces modèles servent de modèle de document d’enregistrement pour un formulaire adaptatif. Ces modèles de formulaires sont différents des [modèles de formulaire adaptatif](template-editor.md).
 
 Les documents ci-dessous fournissent des instructions d’utilisation de Designer pour créer des modèles XDP et des formulaires PDF :
 

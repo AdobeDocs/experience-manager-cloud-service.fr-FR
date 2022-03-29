@@ -38,7 +38,7 @@ Pour créer un tableau, faites glisser un composant Tableau à partir de l’exp
 
 ![Composant Tableau dans la barre latérale AEM](assets/sidebar-tables.png)
 
-### A propos de l’en-tête et des cellules du corps {#about-header-and-body-cells}
+### À propos des cellules d’en-tête et de corps {#about-header-and-body-cells}
 
 Les cellules d’en-tête sont des zones de texte. Pour modifier le libellé d’un en-tête, cliquez avec le bouton droit de la souris sur la cellule d’en-tête puis sur **Modifier**. Dans la boîte de dialogue Modifier, mettez à jour le libellé dans le champ **Valeur** et appuyez sur **OK**.
 
@@ -128,7 +128,7 @@ Vous pouvez afficher les propriétés de style dans la barre latérale.
 >
 >Vous pouvez modifier le thème de couleur de l’en-tête et des lignes de corps en modifiant les valeurs des variables LESS. Pour plus d’informations, voir [Thèmes dans [!DNL AEM Forms]](themes.md)
 
-## Ajout ou suppression dynamique d’une ligne {#add-or-delete-a-row-dynamically}
+## Ajouter ou supprimer une ligne de façon dynamique {#add-or-delete-a-row-dynamically}
 
 Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou la suppression dynamique de lignes au moment de l’exécution.
 
@@ -166,7 +166,7 @@ L’expression de visibilité d’un tableau ou d’une ligne peut être défini
 
 Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez [Référence à l’API de la bibliothèque JavaScript pour les formulaires adaptatifs](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html).
 
-## Dispositions pour appareils mobiles {#mobile-layouts}
+## Mises en page pour appareils mobiles {#mobile-layouts}
 
 Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les appareils mobiles en raison de leurs dispositions fluides et réactives. [!DNL AEM Forms] offre deux types de dispositions de tableaux pour les appareils mobiles - En-têtes à gauche et Colonnes réductibles.
 
@@ -184,7 +184,7 @@ Vue Bureau d’un tableau avec disposition En-têtes à gauche
 
 Vue Mobile d’un tableau avec disposition En-têtes à gauche
 
-### Disposition Colonnes réductibles {#collapsible-columns-layout}
+### Mise en page des colonnes réductibles {#collapsible-columns-layout}
 
 Dans la disposition Colonnes réductibles, les colonnes du tableau sont réduites pour afficher une ou deux colonnes, selon la taille du périphérique. Les autres colonnes sont réduites. Vous pouvez cliquer sur l’icône Réduire/Développer pour afficher les autres colonnes de la table.
 
@@ -284,7 +284,7 @@ Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiq
 
 ![data-merged-table](assets/data-merged-table.png)
 
-## Utilisation des composants XDP et des types complexes de schéma XSD {#use-xdp-components-and-xsd-complex-types}
+## Utilisation des composants XDP et des types complexes de schéma XSD {#use-xdp-components-and-xsd-complex-types}
 
 Si vous avez créé un formulaire adaptatif en fonction d’un modèle de formulaire XFA, les éléments XFA sont disponibles dans l’onglet Modèle de données de l’outil de recherche de contenu AEM. Vous pouvez faire glisser ces éléments XFA, notamment des tableaux, dans le formulaire adaptatif.
 

@@ -7,7 +7,7 @@ exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '5966'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ Voir [Chargement d’une vidéo et des ressources miniatures associées](#upload
 
    >[!NOTE]
    >
-   >Le format vidéo MXF n’est pas encore pris en charge pour une utilisation avec les vidéos interactives dans Dynamic Media.
+   >Le format vidéo MXF n’est pas encore pris en charge pour l’utilisation de vidéos interactives dans Dynamic Media.
 
 1. **Ajouter de l’interactivité à votre vidéo** : ajoutez un ou plusieurs segments temporels à la vidéo. Ensuite, associez les vignettes dans ces segments temporels. Affectez chaque miniature d’image à une action telle qu’un lien hypertexte, un aperçu rapide ou un fragment d’expérience.
 (La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.)
@@ -243,7 +243,7 @@ Si vous avez déjà chargé votre vidéo et les ressources miniatures, passez à
 
 >[!NOTE]
 >
->Le format vidéo MXF n’est pas encore pris en charge pour une utilisation avec les vidéos interactives dans Dynamic Media.
+>Le format vidéo MXF n’est pas encore pris en charge pour l’utilisation de vidéos interactives dans Dynamic Media.
 
 Si vous n’avez pas transféré les vidéos ou images appropriées, ou si vous souhaitez supprimer les vidéos ou images transférées dont vous n’avez plus besoin, reportez-vous à la section [Supprimer des ressources](/help/assets/manage-digital-assets.md#delete-assets).
 

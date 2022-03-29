@@ -5,7 +5,7 @@ exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
 source-git-commit: 895290aa0080e159549cd2de70f0e710c4a0ee34
 workflow-type: tm+mt
 source-wordcount: '1886'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -145,13 +145,13 @@ For more information about the Forms Portal and Submit Action, see [Drafts and s
 
 ## Appeler un processus AEM {#invoke-an-aem-workflow}
 
-L’action d’envoi **[!UICONTROL Appeler un processus AEM]** associe un formulaire adaptatif à un [processus AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr#extending-aem). Lorsqu’un formulaire est envoyé, le processus associé commence automatiquement sur l’instance de création. Vous pouvez enregistrer le fichier de données, les pièces jointes et le document d’enregistrement à l’emplacement de charge utile du workflow ou dans une variable. Si le workflow est marqué pour le stockage de données externe et configuré pour un stockage de données externe, seule l’option de variable est disponible. Vous pouvez effectuer une sélection dans la liste des variables disponibles pour le modèle de workflow. Si le workflow est marqué pour le stockage des données externes à une étape ultérieure et non au moment de la création du workflow, assurez-vous que les configurations de variable requises sont en place.
+L’action d’envoi **[!UICONTROL Appeler un processus AEM]** associe un formulaire adaptatif à un [processus AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-models.html?lang=fr#extending-aem). Lorsqu’un formulaire est envoyé, le processus associé commence automatiquement sur l’instance de création. Vous pouvez enregistrer le fichier de données, les pièces jointes et le document d’enregistrement à l’emplacement de la payload du workflow ou dans une variable. Si le processus est marqué pour le stockage de données externe et configuré pour un stockage de données externe, seule l’option variable est disponible. Vous pouvez choisir dans la liste des variables disponibles pour le modèle de workflow. Si le processus est marqué pour le stockage des données externes à une étape ultérieure et non au moment de la création du processus, assurez-vous que les configurations de variable requises sont en place.
 
-L’action Envoyer place les éléments suivants à l’emplacement de charge utile du workflow, ou la variable si le workflow est marqué pour le stockage de données externe :
+L’action Envoyer place les éléments suivants à l’emplacement de la payload du workflow, ou de la variable si le workflow est marqué pour le stockage de données externe :
 
 * **Fichier de données** : Il contient les données envoyées au formulaire adaptatif. Vous pouvez utiliser l’option **[!UICONTROL Chemin d’accès au fichier de données]** pour spécifier le nom du fichier et le chemin d’accès du fichier par rapport à la charge utile. Par exemple, le chemin d’accès `/addresschange/data.xml` crée un dossier nommé `addresschange` et le place par rapport à la charge utile. Vous pouvez également spécifier uniquement `data.xml` pour envoyer uniquement les données envoyées sans créer de hiérarchie de dossiers. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
 
-* **Pièces jointes** : vous pouvez utiliser l’option **[!UICONTROL Chemin d’accès aux pièces jointes]** pour spécifier le nom de dossier dans lequel stocker les pièces jointes téléchargées dans le formulaire adaptatif. Le dossier est toujours relatif à la charge. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
+* **Pièces jointes** : vous pouvez utiliser l’option **[!UICONTROL Chemin d’accès aux pièces jointes]** pour spécifier le nom de dossier dans lequel stocker les pièces jointes chargées dans le formulaire adaptatif. Le dossier est créé par rapport à la payload. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
 
 * **Document d’enregistrement** : il contient le document d’enregistrement généré pour le formulaire adaptatif. Vous pouvez utiliser l’option **[!UICONTROL Chemin du document d’enregistrement]** pour spécifier le nom du fichier de document d’enregistrement et le chemin d’accès du fichier par rapport à la charge utile. Par exemple, le chemin d’accès `/addresschange/DoR.pdf` crée un dossier nommé `addresschange` relatif à la charge utile et place `DoR.pdf` relatif à la charge utile. Vous pouvez également spécifier uniquement `DoR.pdf` pour n’enregistrer que le document d’enregistrement sans créer de hiérarchie de dossiers. Si le workflow est marqué pour le stockage de données externe, utilisez l’option variable et sélectionnez la variable dans la liste des variables disponibles pour le modèle de workflow.
 
@@ -165,7 +165,7 @@ Avant d’utiliser l’action Envoyer **[!UICONTROL Appeler un processus AEM]**,
 
 Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
 
-## Utilisation de l’envoi synchrone ou asynchrone {#use-synchronous-or-asynchronous-submission}
+## Utiliser l’envoi synchrone ou asynchrone {#use-synchronous-or-asynchronous-submission}
 
 Une action d’envoi peut utiliser un envoi synchrone ou asynchrone.
 
@@ -189,13 +189,13 @@ Les champs de validation en standard d’un formulaire adaptatif réexécutés s
 * Clause de validation d’image
 * Expression de validation
 
-### Activation de la validation côté serveur {#enabling-server-side-validation-br}
+### Activer la validation côté serveur {#enabling-server-side-validation-br}
 
 Utilisez **[!UICONTROL Revalider sur le serveur]** sous le conteneur de formulaires adaptatifs dans la zone latérale pour activer ou désactiver la validation côté serveur pour le formulaire actif.
 
 ![Activation de la validation côté serveur](assets/revalidate-on-server.png)
 
-Activation de la validation côté serveur
+Activer la validation côté serveur
 
 Si l’utilisateur final contourne ces validations et envoie les formulaires, le serveur effectue de nouveau la validation. Si la validation échoue du côté du serveur, la transaction d’envoi est alors désactivée. L’utilisateur final voit de nouveau s’afficher le formulaire d’origine. Pour l’utilisateur, les données capturées et les données envoyées s’affichent en tant qu’erreurs.
 
@@ -203,17 +203,17 @@ Si l’utilisateur final contourne ces validations et envoie les formulaires, le
 >
 >La validation côté serveur permet de valider le modèle de formulaire. Il est recommandé de créer une bibliothèque client séparée pour les validations et de ne pas la mélanger à d’autres éléments. Par exemple, ne placez pas le style HTML et la manipulation DOM HTML dans la même bibliothèque client.
 
-### Prise en charge des fonctions personnalisées dans les expressions de validation {#supporting-custom-functions-in-validation-expressions-br}
+### Prendre en charge des fonctions personnalisées dans les expressions de validation {#supporting-custom-functions-in-validation-expressions-br}
 
 Parfois, en cas de **règles de validation complexes**, le script de validation exact réside dans des fonctions personnalisées que l’auteur doit appeler à partir de l’expression du champ de validation. Pour rendre cette bibliothèque de fonctions personnalisées visible et disponible lors des validations côté serveur, l’auteur de formulaires peut configurer le nom de la bibliothèque cliente AEM sous l’onglet **[!UICONTROL Réglages de base]** des propriétés de conteneur de formulaires adaptatifs comme illustré ci-dessous.
 
 ![Prise en charge des fonctions personnalisées dans les expressions de validation](assets/clientlib-cat.png)
 
-Prise en charge des fonctions personnalisées dans les expressions de validation
+Prendre en charge des fonctions personnalisées dans les expressions de validation
 
 L’auteur peut configurer la bibliothèque personnalisée JavaScript pour chaque formulaire adaptatif. Dans la bibliothèque, conservez uniquement les fonctions réutilisables ayant une dépendance sur les bibliothèques tierces jquery et underscore.js.
 
-## Gestion d’erreurs sur l’action d’envoi {#error-handling-on-submit-action}
+## Gérer les erreurs sur l’action d’envoi {#error-handling-on-submit-action}
 
 Dans le cadre de la sécurité AEM et des conseils de renforcement, configurez les pages d’erreur personnalisées telles que 400.jsp, 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque les erreurs 400, 404 ou 500 s’affichent au moment d’envoyer un formulaire. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication. Vous pouvez également créer des pages JSP pour d’autres codes d’erreur HTTP.
 

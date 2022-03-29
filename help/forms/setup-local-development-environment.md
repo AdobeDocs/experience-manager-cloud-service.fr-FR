@@ -59,7 +59,7 @@ You can use the [development tools](https://docs.adobe.com/content/help/en/exper
 
 -->
 
-## Prérequis
+## Conditions préalables
 
 Pour configurer un environnement de développement local, vous avez besoin des logiciels ci-après. Téléchargez ces logiciels avant de commencer à configurer l’environnement de développement local :
 
@@ -185,15 +185,14 @@ AEM Forms as a Cloud Services fournit un environnement SDK Docker qui facilite l
    * (Apple macOS) Installez [Docker Desktop pour Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Il comprend Docker Engine, le client de ligne de commande Docker, Docker Composition, Docker Content Trust, Kubernetes et Credential Helper.
 
    * (Pour Linux) Installez [Docker Engine](https://docs.docker.com/engine/install/#server) et [Docker Compose](https://docs.docker.com/compose/install/) sur votre ordinateur.
-
    >[!NOTE]
    >
    > * Pour Apple macOS, placez sur liste autorisée les dossiers contenant des instances d’auteur AEM locales.
    >
    > * Docker Desktop pour Windows prend en charge deux back-ends, Hyper-V
-   > (hérité) et WSL2 (moderne). Le partage de fichiers est automatiquement
-   > géré par Docker lors de l’utilisation de WSL2 (moderne). Vous devez
-   > configurer explicitement le partage de fichiers lors de l’utilisation d’Hyper-V (hérité).
+      > (hérité) et WSL2 (moderne). Le partage de fichiers est automatiquement
+      > géré par Docker lors de l’utilisation de WSL2 (moderne). Vous devez
+      > configurer explicitement le partage de fichiers lors de l’utilisation d’Hyper-V (hérité).
 
 
 1. Créez un dossier, par exemple aem-sdk, parallèlement à vos instances d’auteur et de publication, comme C:\aem-sdk.
@@ -247,7 +246,7 @@ After the repository is cloned, [integrate your Git repo with Cloud Manager](htt
 
 **Make cloned AEM project compatible with [!DNL AEM Forms] as a Cloud Service:** Remove uber-jar and other non-cloud dependencies from the pom.xml files of the project. You can refer the pom.xml files of the [sample AEM project](assets/FaaCSample.zip) for the list of required dependencies and update your AEM project accordingly. You can also refer [AEM Project Structure](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) to learn changes required to make an AEM project compatible with AEM as a Cloud Service.  -->
 
-1. **Créez un projet [!DNL Experience Manager Forms] en tant que [Cloud Service] :** créez un projet [!DNL Experience Manager Forms] en tant que [Cloud Service] basé sur [AEM Archetype 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) ou une version ultérieure. L’archétype permet aux développeurs de commencer facilement le développement pour [!DNL AEM Forms] as a Cloud Service. Il comprend également des exemples de thème et de modèle pour vous permettre de commencer rapidement votre projet.
+1. **Créez un projet [!DNL Experience Manager Forms] en tant que [Cloud Service] :** créez un projet [!DNL Experience Manager Forms] en tant que [Cloud Service] basé sur [AEM Archetype 32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) ou une version ultérieure. L’archétype permet aux développeurs de commencer facilement le développement pour [!DNL AEM Forms] as a Cloud Service. Il comprend également des exemples de thème et de modèle pour vous aider à démarrer rapidement.
 
    Ouvrez l’invite de commandes et exécutez la commande ci-après pour créer un projet [!DNL Experience Manager Forms] en tant que Cloud Service. Pour inclure des configurations, des thèmes et des modèles spécifiques à [!DNL Forms], définissez `includeFormsenrollment=y`.
 

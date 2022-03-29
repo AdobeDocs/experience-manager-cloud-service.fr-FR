@@ -50,7 +50,7 @@ Pour se préparer pour une version :
 | Guide de l’utilisateur | Description |
 |---|---|
 | [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, la terminologie, etc. |
-| [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |
+| [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les rubriques importantes relatives à la sécurité concernant Experience Manager as a Cloud Service. |
 | [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service. |
@@ -70,5 +70,5 @@ Pour se préparer pour une version :
 * [Documentation Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/what-is-required/navigate-to-cloud-manager.html?lang=fr)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
+* [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)

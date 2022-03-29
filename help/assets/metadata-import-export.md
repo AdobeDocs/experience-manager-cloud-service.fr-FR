@@ -8,7 +8,7 @@ exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 source-git-commit: ce7ba090a97c2f265af8ed21f11a5a45880e010a
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
 >
 >Pour importer des métadonnées sur des espaces de noms personnalisés, commencez par enregistrer les espaces de noms.
 
-1. Accédez à [!DNL Assets] interface utilisateur, sélectionnez **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Métadonnées]** dans le menu.
-1. Dans le **[!UICONTROL Importation des métadonnées]** page, cliquez sur **[!UICONTROL Sélectionner un fichier]**. Sélectionnez le fichier CSV contenant les métadonnées.
-1. Indiquez les paramètres suivants :
+1. Accédez à lʼinterface utilisateur [!DNL Assets], sélectionnez **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Métadonnées]** dans le menu.
+1. Dans la page **[!UICONTROL Importation des métadonnées]**, cliquez sur **[!UICONTROL Sélectionner un fichier]**. Sélectionnez le fichier CSV contenant les métadonnées.
+1. Indiquez les paramètres suivants :
 
    | Paramètre | Description |
    | ---------------------- | ------- |
@@ -36,12 +36,12 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
    | Lancer les workflows | Faux par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut sont utilisés pour le workflow Écriture différée des métadonnées de gestion des ressources numériques (DAM) (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows ralentit le système. |
    | Nom de colonne du chemin d’accès à la ressource | Définit le nom de la colonne du fichier CSV avec des ressources. |
 
-1. Sélectionner **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification est envoyée à votre boîte de réception de notifications. Accédez à la page de propriété des ressources et vérifiez que les valeurs des métadonnées sont correctement importées pour les ressources.
+1. Sélectionnez **[!UICONTROL Importer]** dans la barre d’outils. Une fois les métadonnées importées, une notification est envoyée à votre boîte de réception de notifications. Accédez à la page de propriété des ressources et vérifiez que les valeurs des métadonnées sont correctement importées pour les ressources.
 
-1. Pour ajouter une date et un horodatage à l’importation des métadonnées, utilisez `YYYY-MM-DDThh:mm:ss.fff-00:00` format de date et d’heure. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple : `2020-03-26T11:26:00.000-07:00` est le 26 mars 2020 à 11:26:00.000 AM PST.
+1. Pour ajouter une date et un horodatage au cours de l’importation de métadonnées, utilisez le format de date et d’heure `YYYY-MM-DDThh:mm:ss.fff-00:00`. La date et l’heure sont séparées par `T`, `hh` correspond aux heures au format 24 heures, `fff` aux nanosecondes et `-00:00` au décalage du fuseau horaire. Par exemple, `2020-03-26T11:26:00.000-07:00` correspond au 26 mars 2020 à 11:26:00.000, heure du Pacifique.
 
-   * Le format de date dépend de l’en-tête de colonne et du format dans celui-ci. Par exemple, si la date est une plainte au format `yyyy-MM-dd'T'HH:mm:ssXXX` l’en-tête de colonne correspondant doit alors être `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
-   * Le format de date par défaut est le suivant : `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
+   * Le format de la date dépend de lʼen-tête de la colonne et du format quʼelle contient. Par exemple, si la date est conforme au format `yyyy-MM-dd'T'HH:mm:ssXXX`, lʼen-tête de colonne correspondant doit être `Date: DateFormat: yyyy-MM-dd'T'HH:mm:ssXXX`.
+   * Le format de date par défaut est `yyyy-MM-dd'T'HH:mm:ss.SSSXXX`.
 
 <!-- Hidden via cqdoc-17869>
 

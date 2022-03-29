@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Création d’un schéma JSON pour un formulaire adaptatif {#creating-adaptive-forms-using-json-schema}
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 La création d’un formulaire adaptatif à l’aide d’un schéma JSON en tant que modèle de formulaire requiert des connaissances de base en matière de schémas JSON. Il est recommandé de lire le contenu suivant avant cet article.
 

@@ -7,7 +7,7 @@ exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: a5776453b261e6f4e6c891763934b236bade8f7f
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 1%
+ht-degree: 67%
 
 ---
 
@@ -17,17 +17,17 @@ Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experienc
 
 >[!IMPORTANT]
 >
->L’Adobe nécessite le déploiement et la configuration de [!DNL Adobe Workfront for Experience Manager enhanced connector] uniquement par le biais de partenaires certifiés ; [!DNL Adobe Professional Services]. Si elles sont déployées et configurées sans partenaire certifié ou [!DNL Adobe Professional Services], il n’est pas pris en charge par Adobe.
+>Adobe nécessite le déploiement et la configuration de [!DNL Adobe Workfront for Experience Manager enhanced connector] uniquement par le biais de partenaires certifiés ou [!DNL Adobe Professional Services]. S’il est déployé et configuré sans partenaire certifié ou sans [!DNL Adobe Professional Services], il n’est pas pris en charge par Adobe.
 >
->Adobe peut mettre à jour les [!DNL Adobe Workfront] et [!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être tenus de passer de l’utilisation de ce connecteur.
+>Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d&#39;utiliser ce connecteur.
 
-Avant d’installer le connecteur, procédez comme suit :
+Avant d’installer le connecteur, procédez comme suit :
 
-1. [Configuration du pare-feu](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html). Pour connaître la grappe IP dans [!DNL Workfront], accédez à [!UICONTROL Configuration] > [!UICONTROL Système] > [!UICONTROL Informations sur le client].
+1. [Configuration du pare-feu](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html?lang=fr). Pour connaître la grappe IP dans [!DNL Workfront], accédez à [!UICONTROL Configuration] > [!UICONTROL Système] > [!UICONTROL Informations sur le client].
 
-1. Sur le dispatcher, autorisez les en-têtes HTTP nommés `authorization`, `username`, et `apikey`. Autoriser `GET`, `POST`, et `PUT` de `/bin/workfront-tools`.
+1. Sur le répartiteur, autorisez les en-têtes HTTP nommés `authorization`, `username`, et `apikey`. Autorisez les requêtes `GET`, `POST`, et `PUT` à `/bin/workfront-tools`.
 
-1. Assurez-vous que les chemins suivants n’existent pas dans [!DNL Experience Manager] référentiel :
+1. Assurez-vous que les chemins d’accès suivants n’existent pas dans le référentiel [!DNL Experience Manager] :
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`
    * `/apps/dam/gui/coral/components/admin/folderschemaforms/formbuilder`
@@ -35,12 +35,12 @@ Avant d’installer le connecteur, procédez comme suit :
    * `/apps/dam/cfm/models/editor/components/datatypeproperties`
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
 
-1. Cette installation nécessite des connaissances pour définir un projet Maven dans [!DNL Experience Manager] as a [!DNL Cloud Service]. Utilisez les ressources suivantes pour comprendre comment inclure un module tiers dans votre projet Maven :
+1. Cette installation nécessite des connaissances pour définir un projet Maven dans [!DNL Experience Manager] as a [!DNL Cloud Service]. Utilisez les ressources suivantes pour comprendre comment inclure un package tiers dans votre projet Maven :
 
-   * [Incluez le package tiers dans votre projet Maven.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#including-third-party).
-   * [Déploiement avec [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr).
+   * [Incluez un package tiers dans votre projet Maven](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr#including-third-party).
+   * [Effectuez le déploiement avec [!DNL Cloud Manager]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr).
 
-Pour installer le module complémentaire dans [!DNL Experience Manager] as a [!DNL Cloud Service], procédez comme suit :
+Pour installer le module complémentaire dans [!DNL Experience Manager] as a [!DNL Cloud Service], procédez comme suit :
 
 1. Téléchargez le connecteur amélioré depuis [Distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 
@@ -59,9 +59,9 @@ Pour installer le module complémentaire dans [!DNL Experience Manager] as a [!D
    >Si la variable `resources` n’existe pas, créez le dossier .
 
 
-1. Ajouter `pom.xml` dependencies :
+1. Ajoutez des dépendances `pom.xml` :
 
-   1. Ajouter une dépendance dans le parent `pom.xml`.
+   1. Ajoutez une dépendance dans le fichier parent `pom.xml`.
 
       ```XML
       <dependency>
@@ -78,7 +78,7 @@ Pour installer le module complémentaire dans [!DNL Experience Manager] as a [!D
       >
       >Veillez à mettre à jour le numéro de version du connecteur amélioré avant de copier la dépendance sur le parent. `pom.xml`.
 
-   1. Ajouter une dépendance dans `all module pom.xml`.
+   1. Ajoutez une dépendance dans le fichier `all module pom.xml`.
 
       ```XML
          <dependency>
@@ -91,7 +91,7 @@ Pour installer le module complémentaire dans [!DNL Experience Manager] as a [!D
       ```
 
 
-1. Ajouter `pom.xml` incorpore. Ajoutez la variable [!DNL Workfront for Experience Manager enhanced connector] modules vers `embeddeds` de la section `pom.xml` de tous vos sous-projets. L’incorpore dans le module all ; `pom.xml`.
+1. Ajoutez des incorporations `pom.xml`. Ajoutez les packages [!DNL Workfront for Experience Manager enhanced connector] à la section `embeddeds` du `pom.xml` de tous vos sous-projets. Nécessite qu’il soit incorporé dans tous les modules `pom.xml`.
 
    ```XML
    <!-- Workfront Tools -->
@@ -109,18 +109,18 @@ Pour installer le module complémentaire dans [!DNL Experience Manager] as a [!D
 
 1. Exécutez le pipeline pour [déployer les modifications dans Cloud Manager ;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
-1. Pour créer une configuration utilisateur système, créez `wf-workfront-users` in [!DNL Experience Manager] Groupe d’utilisateurs et attribuer l’autorisation `jcr:all` to `/content/dam`. Un utilisateur système `workfront-tools` est créée automatiquement et les autorisations requises sont gérées automatiquement. Tous les utilisateurs de [!DNL Workfront] qui utilisent le connecteur amélioré sont automatiquement ajoutés dans le cadre de ce groupe.
+1. Pour créer une configuration utilisateur système, créez `wf-workfront-users` dans le groupe d’utilisateurs [!DNL Experience Manager] et affectez l’autorisation `jcr:all` à `/content/dam`. Un utilisateur système `workfront-tools` est créée automatiquement et les autorisations requises sont gérées automatiquement. Tous les utilisateurs de [!DNL Workfront] qui utilisent le connecteur amélioré sont automatiquement ajoutés dans le cadre de ce groupe.
 
-## Configurer la connexion entre [!DNL Experience Manager] as a [!DNL Cloud Service] et [!DNL Workfront] {#configure-connection}
+## Configurer la connexion entre [!DNL Experience Manager] as a [!DNL Cloud Service] et [!DNL Workfront] {#configure-connection}
 
-Pour créer une connexion avec [!DNL Workfront], procédez comme suit :
+Pour créer une connexion avec [!DNL Workfront], procédez comme suit :
 
-1. Dans [!DNL Experience Manager], sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration des outils Workfront]**.
+1. Dans [!DNL Experience Manager], sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Configuration des outils Workfront]**.
 
-1. Sélectionner `workfront-tools` dans le panneau de gauche, puis sélectionnez **[!UICONTROL Créer]** dans la zone supérieure droite de la page.
+1. Sélectionnez `workfront-tools` dans le panneau de gauche et sélectionnez l’option **[!UICONTROL Créer]** dans la zone supérieure droite de la page.
 
-1. Dans le **[!UICONTROL Connexion Workfront]** , fournissez les détails requis de votre [!DNL Workfront] déploiement, puis sélectionnez **[!UICONTROL Connexion à Workfront]** . Une fois la connexion établie, la variable [!DNL Workfront] l’intégration personnalisée du document est créée automatiquement dans la variable [!DNL Workfront] environnement.
+1. Dans la boîte de dialogue **[!UICONTROL Connexion Workfront]**, fournissez les détails requis de votre déploiement [!DNL Workfront], et sélectionnez l’option **[!UICONTROL Connexion à Workfront]**. Une fois la connexion établie, l’intégration personnalisée du document [!DNL Workfront] est créée automatiquement dans l’environnement [!DNL Workfront].
 
    ![Connexion [!DNL Experience Manager] et [!DNL Workfront]](/help/assets/assets/wf-connection-config.png)
 
-1. Accédez au **[!UICONTROL Avancé]** et sélectionnez l’option **[!UICONTROL Le serveur est-il AEM as a Cloud Service ?]**.
+1. Accédez à l’onglet **[!UICONTROL Avancé]** et sélectionnez l’option **[!UICONTROL Le serveur est-il AEM as a Cloud Service ?]**

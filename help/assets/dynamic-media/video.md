@@ -1,13 +1,13 @@
 ---
 title: Vidéo dans Dynamic Media
-description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment les bonnes pratiques pour le codage de vidéos, la publication de vidéos dans YouTube, l’affichage de rapports vidéo et l’ajout de sous-titres, de sous-titres ou de marqueurs de chapitre aux vidéos.
+description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment les bonnes pratiques pour le codage de vidéos, la publication de vidéos dans YouTube, l’affichage de rapports vidéo et l’ajout de légendes, de sous-titres ou de marqueurs de chapitre aux vidéos.
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
 workflow-type: tm+mt
 source-wordcount: '9349'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -39,7 +39,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
       * En savoir plus sur l’[organisation des ressources numériques](/help/assets/organize-assets.md).
    * Chargez les vidéos issues de sources originales dans les dossiers. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
-      * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
+      * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
       * Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum.
       * [Chargement des vidéos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/file-format-support.md).
@@ -61,7 +61,7 @@ Le processus détaillé décrit ci-après vise à vous aider à maîtriser rapid
          [Gestion des rendus vidéo](/help/assets/manage-digital-assets.md#managing-renditions)
 
       * [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md)
-      * [Publication des ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+      * [Publier les ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
    * Utilisation des métadonnées vidéo
 
       * Modifiez les propriétés vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisées :
@@ -274,7 +274,7 @@ Vous trouverez ci-dessous quelques conseils sur les bonnes pratiques de codage d
 
 Lorsque vous codez un fichier vidéo, utilisez un fichier vidéo source ayant la plus haute qualité possible. Évitez d’utiliser des fichiers vidéo précédemment codés, car ces fichiers sont déjà compressés, et un codage supplémentaire crée une vidéo de qualité inférieure.
 
-* Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
+* Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
 * Vous pouvez charger des fichiers vidéo de source principale d’une taille de 15 Go chacun au maximum.
 
 Le tableau ci-dessous décrit la taille recommandée, le format et le débit minimal requis pour vos fichiers vidéo sources au moment de leur codage :
@@ -1025,16 +1025,16 @@ See [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8
    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html).
  -->
 
-## Ajout de sous-titres ou de sous-titres à une vidéo {#adding-captions-to-video}
+## Ajout de légendes ou de sous-titres à la vidéo {#adding-captions-to-video}
 
-Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des sous-titres aux vidéos uniques ou aux visionneuses de vidéos adaptatives. L’ajout de sous-titres codés vous évite d’avoir à dupliquer l’audio ou d’utiliser des locuteurs natifs pour enregistrer à nouveau le son dans chaque langue. La vidéo est lue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langue étrangère s’affichent pour que les personnes parlant d’autres langues puissent néanmoins comprendre la partie audio.
+Vous pouvez étendre la portée de vos vidéos aux marchés mondiaux en ajoutant des légendes aux vidéos ou aux visionneuses de vidéos adaptatives. En ajoutant des légendes, vous évitez d’avoir à réenregistrer le son ou de recourir à des locuteurs natifs pour réenregistrer la partie audio dans les différentes langues. La vidéo est lue dans la langue dans laquelle elle a été enregistrée. Les sous-titres en langue étrangère s’affichent pour que les personnes parlant d’autres langues puissent néanmoins comprendre la partie audio.
 
-Le sous-titrage permet également une plus grande accessibilité pour les personnes sourdes ou malentendantes.
+Les légendes permettent également une plus grande accessibilité pour les personnes sourdes ou malentendantes.
 
 >[!NOTE]
-Le lecteur vidéo que vous utilisez doit prendre en charge l’affichage de sous-titres fermés.
+Le lecteur vidéo utilisé doit prendre en charge l’affichage des légendes.
 
-Voir aussi [Accessibilité dans Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
+Voir aussi [Accessibilité dans Dynamic Media](/help/assets/dynamic-media/accessibility-dm.md).
 
 Dynamic Media peut convertir les fichiers de légende au format JSON (JavaScript Object Notation). Cette conversion signifie que vous pouvez intégrer le texte JSON dans une page web sous forme de transcription masquée complète de la vidéo. Les moteurs de recherche peuvent ensuite analyser et indexer le contenu pour permettre de trouver plus facilement les vidéos et fournir aux utilisateurs des informations supplémentaires sur le contenu des vidéos.
 

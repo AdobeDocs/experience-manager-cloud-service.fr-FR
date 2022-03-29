@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Conception d’un schéma XML pour un formulaire adaptatif {#creating-adaptive-forms-using-xml-schema}
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 La création d’un formulaire adaptatif à l’aide d’un schéma XML en tant que modèle de formulaire requiert des connaissances de base en matière de schémas XML. Il est également recommandé de lire le contenu suivant avant cet article.
 

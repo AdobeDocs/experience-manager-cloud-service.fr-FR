@@ -1,46 +1,46 @@
 ---
-title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.11.0
-description: Il s’agit des notes de mise à jour de Cloud Manager dans AEM version as a Cloud Service 2021.11.0
+title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.11.0
+description: Consultez les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.11.0.
 feature: Release Information
 exl-id: 98fd6d8a-ddc2-4f53-9dfc-d8e21af0c14d
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '458'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.11.0 {#release-notes}
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.11.0 {#release-notes}
 
-Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service 2021.11.0.
+Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service 2021.11.0.
 
 >[!NOTE]
 >
->Voir [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service.
+>Consultez [cette page](/help/release-notes/release-notes-cloud/release-notes-current.md) pour obtenir les notes de la version actuelle d’Adobe Experience Manager as a Cloud Service.
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager dans AEM 2021.11.0 as a Cloud Service est le 4 novembre 2021.
-La prochaine version est prévue pour le 16 décembre 2021.
+La date de publication de Cloud Manager dans la version 2021.11.0 d’AEM as a Cloud Service est le 4 novembre 2021.
+La prochaine version est prévue pour le 16 décembre 2021.
 
 ## Nouveautés {#what-is-new}
 
-* Les utilisateurs peuvent désormais tirer parti des nouveaux pipelines front-end pour déployer le code front-end exclusivement de manière accélérée. Voir [Pipelines front-end de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
+* Les utilisateurs peuvent désormais exploiter les nouveaux pipelines front-end pour déployer exclusivement le code front-end de manière accélérée. Pour en savoir plus, consultez la section [Pipelines front-end de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end).
 
    >[!IMPORTANT]
-   >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` pour tirer parti des nouveaux pipelines front-end.
+   >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` pour tirer parti des nouveaux pipelines front-end.
 
-* La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la version.
+* La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la publication de la version.
 
-* L’ID d’enregistrement Git s’affiche désormais dans les détails d’exécution du pipeline, ce qui facilite le suivi du code créé.
+* L’ID de validation Git s’affiche désormais dans les détails d’exécution du pipeline, ce qui facilite le suivi du code créé.
 
-* La création de programme est désormais disponible via l’API publiquement exposée.
+* La création de programme est désormais disponible sur l’API publiquement exposée.
 
-* La création d’environnement est désormais disponible via l’API publiquement exposée.
+* La création d’environnement est désormais disponible sur l’API publiquement exposée.
 
 * L’en-tête de réponse `x-request-id` est désormais visible dans le laboratoire de l’API sur [www.adobe.io](https://www.adobe.io/). Cet en-tête est utile pour signaler des problèmes à l’assistance clientèle à des fins de dépannage.
 
-* En tant qu’utilisateur, je vois une carte Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
+* En tant qu’utilisateur, je vois une vignette Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
 
 * Une nouvelle page d’activité est désormais disponible. Vous pouvez y afficher des activités telles que les exécutions de pipeline et de code, ainsi que les détails associés. Au fil du temps, les activités répertoriées dans cette page s’étendront, de même que les détails fournis.
 

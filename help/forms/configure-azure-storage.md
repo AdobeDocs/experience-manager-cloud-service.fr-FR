@@ -5,7 +5,7 @@ exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
 source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -93,8 +93,8 @@ Pour définir une propriété d’objet de modèle de données comme clé de rec
 1. Activez l’option **[!UICONTROL Clé de recherche]**. Cette option est disponible uniquement pour les types de données principaux.
 1. Appuyez sur **[!UICONTROL Terminé]** pour enregistrer les propriétés puis sur **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire.
 
-Après avoir défini les propriétés d’objet de modèle de données comme clés de recherche, les valeurs de hachage sont stockées dans les balises d’index Azure et les valeurs codées Base64 sont stockées dans les métadonnées Azure.
+Après avoir défini les propriétés des objets du modèle de données comme clés de recherche, les valeurs de hachage sont stockées dans les balises dʼindex Azure et les valeurs codées en base64 dans les métadonnées Azure.
 
 >[!NOTE]
 >
->Seules 10 clés de recherche sont autorisées par entité Azure, étant donné qu’Azure autorise uniquement 10 balises par objet Blob et que la valeur des propriétés marquées comme clés de recherche est stockée dans les balises d’index Azure après hachage.
+>Seules 10 clés de recherche sont autorisées par entité Azure, car Azure nʼautorise que 10 balises par objet Blob. Les valeurs des propriétés marquées comme clés de recherche sont stockées dans les balises d’index Azure après hachage.

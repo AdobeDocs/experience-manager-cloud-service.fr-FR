@@ -5,7 +5,7 @@ exl-id: 38f05723-5dad-417f-81ed-78a09880512a
 source-git-commit: 758e3df9e11b5728c3df6a83baefe6409bef67f9
 workflow-type: tm+mt
 source-wordcount: '2930'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ La structure de module décrite dans ce document est compatible avec les déploi
 
 ## Zones modifiables et non modifiables du référentiel {#mutable-vs-immutable}
 
-`/apps` et `/libs` sont considérées comme des zones **non modifiables** d’AEM, car elles ne peuvent faire l’objet d’aucune modification (création, mise à jour ou suppression) après le démarrage d’AEM (c’est-à-dire lors de l’exécution). Toute tentative de modification d’une zone de ce type au moment de l’exécution sera vouée à l’échec.
+`/apps` et `/libs` sont considérées comme des zones **non modifiables** d’AEM, car elles ne peuvent faire l’objet d’aucune modification (création, mise à jour ou suppression) après le démarrage d’AEM (c’est-à-dire lors de l’exécution). Toute tentative de modification d’une zone immuable au moment de l&#39;exécution échouera.
 
 Toutes les autres zones du référentiel (`/content`, `/conf`, `/var`, `/etc`, `/oak:index`, `/system`, `/tmp`, etc.) peuvent, en revanche, être **modifiées** au moment de l’exécution.
 
@@ -79,10 +79,10 @@ La structure de déploiement d’application recommandée est la suivante :
 
 ### Modules de contenu
 
-+ Le module `ui.content` contient l’ensemble du contenu et de la configuration. Le module de contenu contient toutes les définitions de noeud qui ne figurent pas dans la variable `ui.apps` ou `ui.config` ou, en d’autres termes, tout ce qui ne figure pas dans la variable `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du module `ui.content` :
++ Le module `ui.content` contient l’ensemble du contenu et de la configuration. Le module de contenu contient toutes les définitions de nœud qui ne se trouvent pas dans les modules `ui.apps` ou `ui.config` ou, en d’autres termes, tout ce qui ne se trouve pas dans `/apps` ou `/oak:index`. Voici un aperçu des éléments courants du module `ui.content` :
    + Configurations basées sur le contexte
       + `/conf`
-   + Structures de contenu requises et complexes (c.-à-d., Création de contenu qui s’appuie sur et étend d’anciennes structures de contenu de ligne de base définies dans Repo Init.)
+   + Structures de contenu requises et complexes (c.-à-d., présentation de contenu qui s’appuie sur et étend d’anciennes structures de contenu de base définies dans Repo Init).
       + `/content`, `/content/dam`, etc.
    + Taxonomies du balisage régies
       + `/content/cq:tags`
@@ -110,8 +110,8 @@ La structure de déploiement d’application recommandée est la suivante :
       + `site-b.ui.config` déploie les configurations OSGi requises par le site B
       + `site-b.ui.content` déploie le contenu et la configuration requis par le site B
 
-+ Le `ui.config` Le module contient tous les éléments [Configurations OSGi](/help/implementing/deploying/configuring-osgi.md):
-   + Considéré comme du code et appartient aux lots OSGi, mais ne contient pas de noeuds de contenu standard. Ainsi, il est marqué comme un package conteneur.
++ Le module `ui.config` contient toutes les [configurations OSGi](/help/implementing/deploying/configuring-osgi.md) :
+   + Considéré comme du code et appartient aux lots OSGi, mais ne contient pas de nœuds de contenu standard. Ainsi, il est marqué comme un module de conteneurs.
    + Dossier d’organisation contenant des définitions de configuration OSGi spécifiques au mode d’exécution
       + `/apps/my-app/osgiconfig`
    + Dossier de configuration OSGi commun contenant les configurations OSGi par défaut qui s’appliquent à toutes les cibles de déploiement AEM as a Cloud Service
@@ -144,20 +144,20 @@ Par exemple, un projet AEM incluant deux applications AEM de fournisseurs peut s
 
 Les modules doivent être marqués avec le type déclaré. Les types de modules permettent de clarifier l’objectif et le déploiement d’un module.
 
-+ Les modules conteneurs doivent définir leur `packageType` sur `container`. Les modules conteneurs ne doivent pas contenir de noeuds réguliers. Seuls les lots OSGi, les configurations et les sous-packages sont autorisés. Les conteneurs dans AEM as a Cloud Service ne sont pas autorisés à utiliser [installer des hooks](http://jackrabbit.apache.org/filevault/installhooks.html).
++ Les modules de conteneurs doivent définir leur `packageType` sur `container`. Les modules de conteneurs ne doivent pas contenir de nœuds standard. Seuls les lots OSGi, les configurations et les sous-modules sont autorisés. Les conteneurs dans AEM as a Cloud Service ne sont pas autorisés à utiliser les [hooks d’installation](http://jackrabbit.apache.org/filevault/installhooks.html).
 + Les modules de code (non modifiables) doivent définir leur `packageType` sur `application`.
 + Les modules de contenu (modifiables) doivent définir leur `packageType` sur `content`.
 
 
-Pour plus d’informations, voir [Apache Jackrabbit FileVault - Documentation du module externe Maven](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), [Types de modules Apache Jackrabbit](http://jackrabbit.apache.org/filevault/packagetypes.html), et la variable [Fragment de configuration Maven FileVault](#marking-packages-for-deployment-by-adoube-cloud-manager) ci-dessous.
+Pour plus d’informations, consultez la [documentation d’Apache Jackrabbit FileVault - Plug-in Maven pour les modules](https://jackrabbit.apache.org/filevault-package-maven-plugin/package-mojo.html#packageType), les [Types de modules Apache Jackrabbit](http://jackrabbit.apache.org/filevault/packagetypes.html) et le [Fragment de code de configuration FileVault Maven](#marking-packages-for-deployment-by-adoube-cloud-manager) ci-dessous.
 
 >[!TIP]
 >
->Pour obtenir un fragment de code complet, reportez-vous à la section [Fragments de code XML POM](#xml-package-types) ci-dessous.
+>Pour obtenir un fragment de code complet, reportez-vous à la section [Fragments de code XML POM](#xml-package-types) ci-dessous.
 
 ## Marquage de modules en vue du déploiement par Adobe Cloud Manager {#marking-packages-for-deployment-by-adoube-cloud-manager}
 
-Par défaut, Adobe Cloud Manager collecte tous les modules générés par la version Maven. Cependant, étant donné que le module conteneur (`all`) est l’artefact de déploiement unique qui comprend tous les modules de code et de contenu, nous devons nous assurer que **seul** le module conteneur (`all`) est déployé. Pour ce faire, les autres modules générés par la version Maven doivent être marqués avec la configuration suivante du plug-in Maven FileVault Content Package : `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
+Par défaut, Adobe Cloud Manager collecte tous les modules générés par la version Maven. Cependant, étant donné que le module de conteneur (`all`) est l’artefact de déploiement unique qui comprend tous les modules de code et de contenu, nous devons nous assurer que **seul** le module de conteneur (`all`) est déployé. Pour ce faire, les autres modules générés par la version Maven doivent être marqués avec la configuration suivante du plug-in Maven FileVault Content Package : `<properties><cloudManagerTarget>none</cloudManageTarget></properties>`.
 
 >[!TIP]
 >
@@ -291,7 +291,7 @@ Pour assurer l’installation correcte des modules, il est recommandé d’étab
 
 La règle est que les modules contenant du contenu modifiable (`ui.content`) doivent dépendre du code non modifiable (`ui.apps`) qui prend en charge le rendu et l’utilisation du contenu modifiable.
 
-Une exception notable à cette règle générale est que le module de code non modifiable (`ui.apps` ou autre) contient __uniquement__ des bundles OSGi. Si tel est le cas, aucun module AEM ne doit déclarer une dépendance à son égard. En effet, les modules de code non modifiables __only__ Les lots OSGi contenant ne sont pas enregistrés avec AEM [gestionnaire de modules,](/help/implementing/developing/tools/package-manager.md) par conséquent, tout package AEM en fonction de sa dépendance sera insatisfait et ne pourra pas être installé.
+Une exception notable à cette règle générale est que le module de code non modifiable (`ui.apps` ou autre) contient __uniquement__ des bundles OSGi. Si tel est le cas, aucun module AEM ne doit déclarer une dépendance à son égard. En effet, les modules de code non modifiables contenant __uniquement__ des lots OSGi ne sont pas enregistrés auprès du [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) d’AEM. Dans ce cas, un module AEM dépendant de celui-ci aura une dépendance insatisfaite et ne pourra pas être installé.
 
 >[!TIP]
 >
@@ -544,7 +544,7 @@ Dans le fichier `filter.xml` du projet `all` (`all/src/main/content/jcr_root/MET
 <filter root="/apps/my-app-packages"/>
 ```
 
-Si plusieurs `/apps/*-packages` sont utilisés dans les cibles incorporées, puis tous doivent être énumérés ici.
+Si plusieurs `/apps/*-packages` sont utilisés dans les cibles incorporées, ils doivent tous être énumérés ici.
 
 ### Référentiels Maven tiers {#xml-3rd-party-maven-repositories}
 

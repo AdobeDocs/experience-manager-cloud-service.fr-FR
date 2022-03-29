@@ -1,7 +1,7 @@
 ---
 title: Opérations Exploitation et maintenance d’Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation sur l’exploitation et la maintenance d’Adobe Experience Manager as a Cloud Service
-landing-page-description: Découvrez les opérations en arrière-plan d’AEM as a Cloud Service, telles que les tâches d’indexation et de maintenance.
+landing-page-description: Découvrez les opérations en arrière-plan d’Adobe Experience Manager as a Cloud Service, telles que les tâches d’indexation et de maintenance.
 exl-id: ad50434c-1b4c-4e04-be91-2556d773cfbd
 source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
 workflow-type: tm+mt
@@ -26,7 +26,7 @@ Cette page répertorie les ressources d’aide autonome sur l’exploitation et 
 |---|---|
 | [Présentation](/help/overview/home.md) | Ce guide présente Experience Manager as a Cloud Service, avec une introduction, sa terminologie, son architecture, etc. |
 | [Notes de mise à jour](/help/release-notes/home.md) | Ce guide fournit des informations importantes sur la dernière version d’Experience Manager as a Cloud Service, notamment sur les nouvelles fonctionnalités, celles obsolètes et supprimées, ainsi que les problèmes connus. |
-| [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les sujets de sécurité importants concernant Experience Manager as a Cloud Service. |
+| [Guide de l’utilisateur relatif à la sécurité](/help/security/home.md) | Découvrez les rubriques importantes relatives à la sécurité concernant Experience Manager as a Cloud Service. |
 | [Intégration](/help/onboarding/home.md) | Ce guide résume la procédure à suivre pour commencer à utiliser Experience Manager as a Cloud Service, avec les informations d’accès et des informations importantes sur la protection des données. |
 | [Guide de l’utilisateur de Sites](/help/sites-cloud/home.md) | Découvrez comment créer avec Experience Manager Sites as a Cloud Service et l’administrer. |
 | [Guide de l’utilisateur d’Assets](/help/assets/home.md) | Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service. |
@@ -42,8 +42,8 @@ Cette page répertorie les ressources d’aide autonome sur l’exploitation et 
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Documentation sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
-* [Documentation Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
+* [Documentation de Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md)
 * [Préparatifs en vue de l’entrée en vigueur du RGPD](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md)
 * [Tutoriels sur Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/overview.html?lang=fr)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [Forum de la communauté AEM](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=fr#home)
+* [Forum de la communauté AEM](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)

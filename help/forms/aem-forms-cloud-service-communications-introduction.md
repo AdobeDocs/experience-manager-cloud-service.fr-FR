@@ -5,11 +5,11 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 319f92e04998c484c4b1834973c231be28aa23c7
 workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 38%
+ht-degree: 43%
 
 ---
 
-# Utilisation des communications as a Cloud Service AEM Forms {#frequently-asked-questions}
+# Utilisation d’AEM Forms as a Cloud Service Communications {#frequently-asked-questions}
 
 **Les API de manipulation de documents sont en phase de préversion et peuvent être modifiées avant la mise à jour.**
 
@@ -32,7 +32,7 @@ Un relevé de carte de crédit peut être créé à l’aide des API de communic
 
 Les API de génération de documents de communication permettent de combiner un modèle (XFA ou PDF) avec des données client ([Données XML](#form-data)) pour générer des documents dans des formats de PDF et d’impression tels que PS, PCL, DPL, IPL et ZPL. Ces API utilisent [Modèles PDF et XFA](#supported-document-types) avec [Données XML](communications-known-issues-limitations.md#form-data) pour générer un seul document à la demande ou plusieurs documents à l’aide d’une tâche par lot.
 
-En règle générale, vous créez un modèle à l’aide de [Designer](use-forms-designer.md) et utiliser les API de communication pour fusionner les données avec le modèle. Votre application peut envoyer le document de sortie à une imprimante réseau, à une imprimante locale ou à un système de stockage pour archivage. Les workflows standard et personnalisés se présentent comme suit :
+En règle générale, vous créez un modèle à l’aide de [Designer](use-forms-designer.md) et utilisez les API de communication pour fusionner les données avec le modèle. Votre application peut envoyer le document de sortie à une imprimante réseau, à une imprimante locale ou à un système de stockage pour archivage. Les workflows standard et personnalisés se présentent comme suit :
 
 ![Workflow de génération de documents de communication](assets/communicaions-workflow.png)
 

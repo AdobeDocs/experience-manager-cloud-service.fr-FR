@@ -5,7 +5,7 @@ exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
 source-git-commit: 898f7bc46a3f1b0ac93ee43fbf7b60a11682a073
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 29%
+ht-degree: 33%
 
 ---
 
@@ -51,14 +51,14 @@ AEM as a Cloud Service ne prend en charge que les sites sécurisés `https`.
 
 ## Conditions requises {#requirements}
 
-* AEM as a Cloud Service accepte uniquement les certificats conformes à la politique de validation d’organisation ou de validation étendue (EV).
+* AEM as a Cloud Service n’accepte que les certificats conformes à la politique OV (validation d’organisation) ou EV (validation étendue). 
 * Tout certificat doit être un certificat TLS X.509 d’une autorité de certification approuvée (CA) avec une clé privée RSA 2 048 bits correspondante.
 * La stratégie DV (Domain Validation) n’est pas acceptée.
 * Les certificats auto-signés ne sont pas acceptés.
 
 Les certificats OV et EV fournissent aux utilisateurs des informations supplémentaires, validées par une autorité de certification, qui peuvent être utilisées pour décider si le propriétaire d’un site web, l’expéditeur d’un email ou le signataire numérique d’un code exécutable ou de documents de PDF est fiable. Les certificats DV ne permettent pas cette vérification de propriété.
 
-## Restrictions {#limitations}
+## Limites {#limitations}
 
 À tout moment, Cloud Manager autorise l’installation d’un maximum de 50 certificats SSL. Ils peuvent être associés à un ou plusieurs environnements dans votre programme et inclure également les certificats expirés.
 

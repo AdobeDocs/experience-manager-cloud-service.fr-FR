@@ -8,7 +8,7 @@ exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
 source-git-commit: 038dbc4b0febfa58f69e05f837760162210f8689
 workflow-type: tm+mt
 source-wordcount: '656'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Vous pouvez ajouter des annotations aux ressources vidéo. Lorsque vous annotez 
 
 >[!NOTE]
 >
->Le format vidéo MXF n’est pas encore pris en charge avec les annotations de ressources vidéo.
+>Le format vidéo MXF n’est pas encore pris en charge avec les annotations de ressources vidéo.
 
 1. Dans la console [!DNL Assets], sélectionnez **[!UICONTROL Modifier]** sur la carte de ressources pour afficher la page de détails de la ressource.
 1. Pour lire la vidéo, cliquez sur **[!UICONTROL Aperçu]**.

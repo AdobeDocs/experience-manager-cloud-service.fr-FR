@@ -1,5 +1,5 @@
 ---
-title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles
+title: 'Application de signatures électroniques à un formulaire à l’aide de signatures tactiles '
 seo-title: Apply electronic signatures to a form using scribble signatures
 description: Signature de formulaires à l’aide de la saisie tactile
 seo-description: Signing forms using scribble
@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# Application de signatures électroniques à un formulaire à l’aide de signatures tactiles{#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
+# Application de signatures électroniques à un formulaire à l’aide de signatures tactiles {#apply-electronic-signatures-to-a-form-using-deprecated-scribble-signatures}
 
 Vous pouvez utiliser les composants **Signature tactile** et **Étape de signature** pour tracer la signature (saisie tactile) sur un formulaire adaptatif. Le composant Étape de signature affiche une version PDF du formulaire adaptatif. Pour utiliser le composant Étape de signature, l’option Document d’enregistrement doit être activée ou vous devez disposer de formulaires adaptatifs basés sur un modèle de formulaire.
 

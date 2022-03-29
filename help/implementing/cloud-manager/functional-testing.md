@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
 workflow-type: tm+mt
 source-wordcount: '632'
-ht-degree: 22%
+ht-degree: 34%
 
 ---
 
@@ -41,7 +41,7 @@ Reportez-vous à la section [tests fonctionnels du produit](https://github.com/a
 
 L’étape de test fonctionnel personnalisé du pipeline est toujours présente et ne peut pas être ignorée.
 
-La version doit produire zéro ou un fichier JAR de test. S’il ne génère aucun fichier JAR de test, l’étape de test est effectuée par défaut. Si la version génère plusieurs fichiers JAR de test, le fichier JAR sélectionné est non déterministe.
+Le build doit produire zéro ou un fichier JAR de test. S’il ne génère aucun fichier JAR de test, l’étape de test est effectuée par défaut. Si le build génère plusieurs fichiers JAR de test, le fichier JAR sélectionné est non déterministe.
 
 ### Écriture de tests fonctionnels {#writing-functional-tests}
 
@@ -84,7 +84,7 @@ Voici un exemple de configuration pour la variable `maven-assembly-plugin`.
 
 Dans ce fichier JAR, les noms de classe des tests à exécuter doivent se terminer par `IT`.
 
-Par exemple, une classe nommée `com.myco.tests.aem.it.ExampleIT` est exécuté, mais une classe nommée `com.myco.tests.aem.it.ExampleTest` non.
+Par exemple, une classe nommée `com.myco.tests.aem.it.ExampleIT` sera exécutée, mais pas une classe nommée `com.myco.tests.aem.it.ExampleTest`.
 
 De plus, pour exclure le code test de la vérification de la couverture de l’analyse du code, le code test doit se trouver sous un package nommé `it` (le filtre d’exclusion de la couverture est `**/it/**/*.java`).
 

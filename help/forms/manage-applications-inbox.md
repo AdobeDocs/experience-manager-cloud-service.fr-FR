@@ -153,5 +153,5 @@ Un propriétaire de modèle de processus ne peut pas afficher des éléments li�
 
 1. [Créez un index de propriétés et définissez-le sur Vrai](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=fr#the-property-index).
 
-1. Après avoir configuré des index dans CRX DE ou procédé au déploiement via un module, [réindexez le référentiel](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
+1. Après avoir configuré des index dans CRX DE ou procédé au déploiement via un module, [réindexez le référentiel](https://helpx.adobe.com/fr/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex).
 

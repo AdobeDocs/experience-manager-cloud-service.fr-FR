@@ -1,6 +1,6 @@
 ---
 title: Dossiers privés pour le partage de ressources
-description: Découvrez comment créer un dossier privé dans le [!DNL Adobe Experience Manager Assets] et le partager avec d’autres utilisateurs et leur attribuer divers privilèges.
+description: Apprenez à créer un dossier privé dans [!DNL Adobe Experience Manager Assets] , à partager avec d’autres utilisateurs et à attribuer à ces derniers différents privilèges.
 contentOwner: Vishabh Gupta
 role: User
 feature: Collaboration
@@ -8,49 +8,49 @@ exl-id: d48f6daf-af81-4024-bff2-e8bf6d683b0c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '569'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
 # Dossier privé dans [!DNL Adobe Experience Manager Assets] {#private-folder}
 
-Vous pouvez créer un dossier privé dans le [!DNL Adobe Experience Manager Assets] l’interface utilisateur qui vous est réservée. Vous pouvez partager ce dossier privé avec d’autres utilisateurs et leur attribuer divers privilèges. Selon le niveau de privilège que vous affectez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
+Vous pouvez créer un dossier privé dans l’interface utilisateur d’[!DNL Adobe Experience Manager Assets] qui n’est disponible que pour vous. Vous pouvez partager ce dossier privé avec d’autres utilisateurs auxquels vous attribuez différents privilèges. Selon le niveau de privilège que vous attribuez, les utilisateurs peuvent effectuer différentes tâches dans le dossier, par exemple consulter des ressources du dossier ou les modifier.
 
 >[!NOTE]
 >
->Le dossier privé comporte au moins un membre avec le rôle Propriétaire.
+>Le dossier privé comporte au moins un membre ayant un rôle Propriétaire.
 >
->Pour créer un dossier privé, vous devez `Read` et `Modify` autorisations sur le dossier parent sous lequel vous créez un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées par défaut sur `/content/dam`. Dans ce cas, vous devez d’abord obtenir ces autorisations pour votre identifiant utilisateur/groupe avant de tenter de créer des dossiers privés.
+>Pour créer un dossier privé, vous avec besoin des autorisations `Read` et `Modify` sur le dossier parent sous lequel vous créez un dossier privé. Si vous n’êtes pas administrateur, ces autorisations ne sont pas activées pour vous par défaut au niveau de `/content/dam`. Dans ce cas, commencez par obtenir ces autorisations pour votre ID utilisateur/groupe avant d’essayer de créer des dossiers privés ou d’afficher les paramètres de dossier.
 
 ## Créer et partager un dossier privé  {#create-share-private-folder}
 
-Pour créer et partager un dossier privé :
+Pour créer et partager un dossier privé :
 
-1. Dans le [!DNL Assets] , cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Dossier]** dans le menu.
+1. Dans la console [!DNL Assets], cliquez sur le bouton **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Dossier]** dans le menu.
 
-   ![Création d’un dossier de ressources](assets/create-folder.png)
+   ![Créer un dossier de ressources](assets/create-folder.png)
 
-1. Dans le **[!UICONTROL Créer un dossier]** , saisissez une `Title` et `Name` (facultatif) pour le dossier .
+1. Dans la boîte de dialogue **[!UICONTROL Créer un dossier]**, saisissez un `Title` et un `Name` (facultatif) pour le dossier.
 
-   Sélectionnez la **[!UICONTROL Privé]** , puis cliquez sur **[!UICONTROL Créer]**.
+   Sélectionnez la case **[!UICONTROL Privé]**, puis cliquez sur **[!UICONTROL Créer]**.
 
    ![chlimage_1-413](assets/create-private-folder.png)
 
-   Un dossier privé est créé. Vous pouvez désormais [ajout de ressources](add-assets.md#upload-assets) dans le dossier et partagez le dossier avec d’autres utilisateurs ou groupes. Le dossier n’est visible par aucun autre utilisateur tant que vous ne l’avez pas partagé et que vous ne lui avez pas attribué des privilèges.
+   Un dossier privé est créé. Vous pouvez désormais [ajouter des ressources](add-assets.md#upload-assets) dans le dossier et partager le dossier avec d’autres utilisateurs ou groupes. Le dossier n’est visible par aucun autre utilisateur tant que vous ne l’avez pas partagé et que vous ne lui avez pas attribué des privilèges.
 
 1. Pour partager le dossier, sélectionnez-le, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils.
 
-1. Dans le **[!UICONTROL Propriétés du dossier]** , sélectionnez un utilisateur ou un groupe dans la **[!UICONTROL Ajouter un utilisateur]** liste, affecter un rôle (`Viewer`, `Editor`ou `Owner`) dans votre dossier privé, puis cliquez sur **[!UICONTROL Ajouter]**.
+1. Dans la page **[!UICONTROL Propriétés du dossier]**, sélectionnez un utilisateur ou un groupe dans la liste **[!UICONTROL Ajouter un utilisateur]**, attribuez un rôle (`Viewer`, `Editor`, ou `Owner`) dans votre dossier privé, puis cliquez sur **[!UICONTROL Ajouter]**.
 
    ![assign-user-group](assets/assign-permissions-private-folder.png)
 
-   Vous pouvez affecter différents rôles, tels que `Editor`, `Owner`ou `Viewer` à l’utilisateur avec lequel vous partagez le dossier. Si vous affectez une `Owner` rôle de l’utilisateur, l’utilisateur a `Editor` sur le dossier . En outre, il peut partager le dossier avec d’autres utilisateurs. Si vous affectez une `Editor` , l’utilisateur peut modifier les ressources de votre dossier privé. Si vous attribuez un rôle de visionneuse, l’utilisateur ne peut afficher que les ressources de votre dossier privé.
+   Vous pouvez affecter différents rôles, tels que `Editor`, `Owner`, ou `Viewer`, à l’utilisateur avec lequel vous partagez le dossier. Si vous attribuez un rôle `Owner` à l’utilisateur, ce dernier possède des privilèges `Editor` sur le dossier. En outre, il peut partager le dossier avec d’autres utilisateurs. Si vous attribuez le rôle `Editor`, l’utilisateur peut modifier les ressources de votre dossier privé. Si vous affectez le rôle Observateur, l’utilisateur peut uniquement consulter les ressources du dossier privé.
 
    >[!NOTE]
    >
-   >Le dossier privé comporte au moins un membre avec `Owner` rôle. Par conséquent, l’administrateur ne peut pas supprimer tous les membres propriétaires d’un dossier privé. Toutefois, pour supprimer les propriétaires existants (et l’administrateur lui-même) du dossier privé, l’administrateur doit ajouter un autre utilisateur en tant que propriétaire.
+   >Le dossier privé comporte au moins un membre ayant le rôle `Owner`. Par conséquent, l’administrateur ne peut pas supprimer tous les membres propriétaires d’un dossier privé. Toutefois, pour supprimer les propriétaires existants (et l’administrateur lui-même) du dossier privé, l’administrateur doit ajouter un autre utilisateur en tant que propriétaire.
 
-1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**. Selon le rôle que vous attribuez, l’utilisateur se voit attribuer un ensemble de privilèges sur votre dossier privé lorsqu’il se connecte à [!DNL Assets].
+1. Cliquez sur **[!UICONTROL Enregistrer et fermer]**. En fonction du rôle attribué, l’utilisateur se voit attribuer un ensemble de privilèges sur votre dossier privé lorsqu’il se connecte à [!DNL Assets].
 1. Cliquez sur **[!UICONTROL OK]** pour fermer le message de confirmation.
 1. L’utilisateur avec lequel vous partagez le dossier reçoit une notification de partage dans son interface utilisateur.
 
@@ -72,6 +72,6 @@ Vous pouvez supprimer un dossier en le sélectionnant et en sélectionnant [!UIC
 
 >[!NOTE]
 >
->Si vous supprimez un dossier à l’aide de la méthode ci-dessus de l’interface utilisateur, les groupes d’utilisateurs associés sont également supprimés.
+>Si vous supprimez un dossier de l’interface utilisateur à l’aide de la méthode ci-dessus, les groupes d’utilisateurs associés sont également supprimés.
 >
->Cependant, les groupes d’utilisateurs redondants, inutilisés et générés automatiquement existants peuvent être supprimés du référentiel à l’aide de la variable `clean` dans JMX dans l’instance de création (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>Cependant, les groupes d’utilisateurs existants redondants, inutilisés et générés automatiquement peuvent être supprimés du référentiel à l’aide de la méthode `clean` dans JMX dans l’instance de création (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).

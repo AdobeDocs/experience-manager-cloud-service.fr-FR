@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: e03e15c18e3013a309ee59678ec4024df072e839
 workflow-type: tm+mt
 source-wordcount: '2366'
-ht-degree: 83%
+ht-degree: 89%
 
 ---
 
@@ -42,21 +42,21 @@ Voici la liste des principaux changements par rapport à AEM version 6.5 et ant
 
 ## Utilisation {#how-to-use}
 
-La définition d’index peut comprendre les trois cas d’utilisation suivants :
+La définition des index peut comprendre les trois cas d’utilisation suivants :
 
-1. Ajout d’une nouvelle définition d’index client.
+1. Ajouter une nouvelle définition d’index client.
 1. Mettre à jour une définition d’index existante. Cela signifie ajouter une nouvelle version d’une définition d’index existante..
 1. Supprimer un index existant redondant ou obsolète.
 
 Pour les points 1 et 2 ci-dessus, vous devez créer une définition d’index dans le cadre de votre base de code personnalisé dans le calendrier de publication Cloud Manager correspondant. Pour plus d’informations, reportez-vous à [Déploiement vers AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
-## Noms des index {#index-names}
+## Noms d’index {#index-names}
 
-Une définition d’index peut être :
+Une définition d’index peut être :
 
-1. Index prêt à l’emploi. Exemple : `/oak:index/cqPageLucene-2`.
-1. Personnalisation d’un index prêt à l’emploi. Ces personnalisations sont définies par le client. Exemple : `/oak:index/cqPageLucene-2-custom-1`.
-1. Index entièrement personnalisé. Exemple : `/oak:index/acme.product-1-custom-2`. Pour éviter les collisions de noms, nous exigeons que les index entièrement personnalisés comportent un préfixe, par exemple `acme.`
+1. Index prêt à l’emploi. Exemple : `/oak:index/cqPageLucene-2`.
+1. Personnalisation d’un index prêt à l’emploi. Ces personnalisations sont définies par le client. Exemple : `/oak:index/cqPageLucene-2-custom-1`.
+1. Index entièrement personnalisé. Exemple : `/oak:index/acme.product-1-custom-2`. Pour éviter les collisions de noms, il est nécessaire que les index entièrement personnalisés comportent un préfixe, par exemple `acme.`
 
 Notez que la personnalisation d’un index prêt à l’emploi, ainsi que les index entièrement personnalisés, doivent contenir `-custom-`. Seuls les index entièrement personnalisés doivent commencer par un préfixe.
 
@@ -64,7 +64,7 @@ Notez que la personnalisation d’un index prêt à l’emploi, ainsi que les in
 
 >[!NOTE]
 >
->Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-6`, copiez la dernière définition d’index d’usine à partir d’un *Environnement Cloud Service* et ajoutez vos personnalisations par-dessus, de sorte que les configurations requises ne soient pas supprimées par inadvertance. Par exemple, le nœud `tika` sous `/oak:index/damAssetLucene-6/tika` est un nœud obligatoire et doit également faire partie de votre index personnalisé ; il n’existe pas dans le SDK Cloud.
+>Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-6`, copiez la dernière définition d’index prêt à l’emploi à partir d’un *environnement de Cloud Service* et ajoutez vos personnalisations par-dessus, de sorte que les configurations requises ne soient pas supprimées par inadvertance. Par exemple, le nœud `tika` sous `/oak:index/damAssetLucene-6/tika` est un nœud obligatoire et doit également faire partie de votre index personnalisé ; il n’existe pas dans le SDK Cloud.
 
 Vous devez préparer un nouveau package de définition d’index qui contient la définition d’index réelle, en suivant ce modèle de dénomination :
 
@@ -167,7 +167,7 @@ Actuellement, la gestion des index n’est prise en charge que pour les index de
 
 ### Ajout d’un index {#adding-an-index}
 
-Pour ajouter un index entièrement personnalisé nommé `/oak:index/acme.product-custom-1` pour être utilisé dans une nouvelle version de l’application et ultérieurement, l’index doit être configuré comme suit :
+Pour ajouter un index entièrement personnalisé nommé « `/oak:index/acme.product-custom-1` » à utiliser dans une nouvelle version de l’application et ultérieurement, l’index doit être configuré comme suit :
 
 `acme.product-1-custom-1`
 

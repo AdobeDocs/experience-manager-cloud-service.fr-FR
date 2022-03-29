@@ -30,7 +30,7 @@ Vous pouvez réutiliser des champs du fichier XDP dans votre formulaire adaptati
 
 Dans l’environnement de création [!DNL AEM Forms], vous pouvez faire glisser des champs d’un formulaire XFA (à gauche) jusqu’à un formulaire adaptatif (à droite).
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour utiliser les informations fournies dans cet article, il est recommandé de disposer de connaissances dans les domaines suivants :
 
@@ -107,7 +107,7 @@ Pour mettre à jour les propriétés dans l’exemple de formulaire adaptatif, c
 >
 >Le libellé AF Numeric Field n’a pas été modifié, car vous avez remplacé cette propriété dans la boîte de dialogue des propriétés du composant, comme décrit dans la section [Ajout de contenu aux formulaires adaptatifs](synchronizing-adaptive-forms-xfa.md#p-add-content-to-adaptive-form-br-p).
 
-### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif  {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### Ajout de nouveaux champs du fichier XDP au formulaire adaptatif {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
 Les champs qui sont ultérieurement ajoutés au fichier XDP d’origine apparaissent dans l’onglet Hiérarchie du formulaire. Vous pouvez les faire glisser jusqu’au formulaire adaptatif.
 

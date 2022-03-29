@@ -122,6 +122,6 @@ Pour définir la mise en forme d’un état d’un composant :
 
 1. Définissez la mise en forme de l’état sélectionné du composant et appuyez sur ![Enregistrer](assets/save_icon.svg) pour enregistrer les propriétés.
 
-Vous pouvez également simuler les états de succès et d’erreur. Appuyez sur l’icône Développer pour afficher les options **[!UICONTROL Simuler la Success]** et **[!UICONTROL Simuler une erreur]**.
+Vous pouvez également simuler les états de succès et d’erreur. Appuyez sur l’icône Développer pour afficher les options **[!UICONTROL Simuler la réussite]** et **[!UICONTROL Simuler l’erreur]**.
 
 ![Simuler les états](assets/simulate-states.png)

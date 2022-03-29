@@ -71,7 +71,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
 
-### Restrictions {#limitations}
+### Limites {#limitations}
 
 - Adobe Analytics peut uniquement effectuer le suivi des mesures de formulaire pour les utilisateurs authentifiés.
 

@@ -8,7 +8,7 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: ddc79a163e328d560912550900242cc089df3958
 workflow-type: tm+mt
 source-wordcount: '1220'
-ht-degree: 68%
+ht-degree: 88%
 
 ---
 
@@ -35,18 +35,18 @@ Vous pouvez télécharger des ressources Experience Manager à l’aide des mét
 
 ## Téléchargement de ressources à l’aide de l’interface [!DNL Experience Manager]  {#download-assets}
 
-Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Les archives de téléchargement de plus de 100 Go se divisent en plusieurs archives zip d’une taille maximale de 100 Go chacune. Ils peuvent être téléchargés individuellement. Les fichiers plus petits sont téléchargés en temps réel à partir de l’interface utilisateur. [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette fonctionnalité permet des téléchargements plus rapides.
+Le service de téléchargement asynchrone fournit un framework permettant le téléchargement transparent de ressources de grande taille. Si vous souhaitez télécharger une archive dʼune taille supérieure à 100 Go, celle-ci sera divisée en plusieurs archives zip, dʼune taille maximale de 100 Go chacune. Ces archives zip peuvent être téléchargées individuellement. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] n’archive pas les téléchargements de ressources uniques où le fichier d’origine est téléchargé. Cette fonctionnalité permet des téléchargements plus rapides.
 
-Par défaut, [!DNL Experience Manager] déclenche une notification à la fin du processus de téléchargement. La notification de téléchargement apparaît dans la variable  [[!DNL Experience Manager] Boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
+Par défaut, [!DNL Experience Manager] déclenche une notification à la fin du workflow de téléchargement. La notification de téléchargement apparaît dans la [[!DNL Experience Manager] Boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-![Notification de boîte de réception](assets/inbox-notification-for-large-downloads.png)
+![Notification dans la boîte de réception](assets/inbox-notification-for-large-downloads.png)
 
 
 ### Activation des notifications par e-mail pour les téléchargements volumineux {#enable-emails-for-large-downloads}
 
 >[!NOTE]
 >
->Cette fonctionnalité est disponible dans le canal de version préliminaire. Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
+>Cette fonctionnalité est disponible dans le canal de version préliminaire. Pour plus d’informations sur l’activation de cette fonctionnalité dans votre environnement, consultez la [documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease).
 
 Les téléchargements asynchrones sont déclenchés dans l’un des cas suivants :
 
@@ -61,7 +61,7 @@ Une fois le service de messagerie configuré, les administrateurs et les utilisa
 Pour activer les notifications par courrier électronique :
 
 1. Connectez-vous à [!DNL Experience Manager Assets].
-1. Cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **[!UICONTROL Mes préférences]**. La fenêtre Préférences utilisateur s’ouvre.
+1. Cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **[!UICONTROL Mes préférences]**. La fenêtre des Préférences utilisateur s’ouvre.
 1. Sélectionnez la **[!UICONTROL Notifications électroniques de téléchargement de ressources]** , puis cliquez sur **[!UICONTROL Accepter]**.
 
    ![enable-email-notifications-for-big-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
@@ -79,7 +79,7 @@ Pour télécharger des ressources, procédez comme suit :
    | Option de téléchargement | Description |
    |---|---|
    | **[!UICONTROL Créer un dossier distinct pour chaque ressource]** | Sélectionnez cette option pour inclure chaque ressource que vous téléchargez (y compris les ressources dans des dossiers enfants imbriqués sous le dossier parent de la ressource) dans un dossier sur votre ordinateur local. Lorsque cette option *n’est pas* sélectionnée, par défaut, la hiérarchie de dossiers est ignorée et toutes les ressources sont téléchargées dans un dossier de votre ordinateur local. |
-   | **[!UICONTROL Courrier électronique]** | Sélectionnez cette option pour envoyer une notification par e-mail (contenant un lien vers votre téléchargement) à un autre utilisateur. L’utilisateur du destinataire doit être membre de la `dam-users` groupe. Les modèles standard d’email sont disponibles aux emplacements suivants :<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Les modèles que vous personnalisez lors du déploiement sont disponibles aux emplacements suivants : <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Vous pouvez stocker des modèles personnalisés spécifiques au client à ces emplacements :<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
+   | **[!UICONTROL Courrier électronique]** | Sélectionnez cette option pour envoyer une notification par e-mail (contenant un lien vers votre téléchargement) à un autre utilisateur. Le destinataire doit être membre du groupe `dam-users`. Les modèles standard d’email sont disponibles aux emplacements suivants :<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Les modèles que vous personnalisez lors du déploiement sont disponibles aux emplacements suivants : <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Vous pouvez stocker des modèles personnalisés spécifiques au client à ces emplacements :<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Ressource(s)]** | Sélectionnez cette option pour télécharger la ressource dans son format d’origine sans aucun rendu.<br>L’option Sous-ressources est disponible si la ressource d’origine comporte des sous-ressources. |
    | **[!UICONTROL Rendu(s)]** | Un rendu est une représentation binaire d’une ressource. Les ressources possèdent une représentation principale, à savoir celle du fichier transféré. Elles peuvent avoir un nombre illimité de représentations. <br> Avec cette option, vous pouvez sélectionner les rendus que vous souhaitez télécharger. Les rendus disponibles dépendent de la ressource que vous avez sélectionnée. |
    | **[!UICONTROL Recadrages intelligents]** | Sélectionnez cette option pour télécharger tous les rendus de recadrage intelligent de la ressource sélectionnée depuis [!DNL Experience Manager]. Un fichier zip contenant les rendus de recadrage intelligent est créé et téléchargé sur votre ordinateur local. |
@@ -87,21 +87,21 @@ Pour télécharger des ressources, procédez comme suit :
 
 1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Télécharger]**.
 
-   Si la notification électronique est activée pour les téléchargements volumineux, un message électronique contenant l’URL de téléchargement du dossier zip archivé s’affiche dans votre boîte de réception. Cliquez sur le lien de téléchargement de l’e-mail pour télécharger le dossier zip.
+   Si vous avez demandé à être averti en cas de téléchargement volumineux, vous recevrez un e-mail dans votre boîte de réception contenant une URL de téléchargement pour le dossier zip archivé. Cliquez sur le lien de téléchargement présent dans l’e-mail pour télécharger le dossier zip.
 
-   ![email-notifications-for-big-downloads](/help/assets/assets/email-for-large-notification.png)
+   ![notifications-par-e-mail-en-cas-de-téléchargements-volumineux](/help/assets/assets/email-for-large-notification.png)
 
-   Vous pouvez également afficher la notification dans votre [!DNL Experience Manager] Boîte de réception.
+   Vous pouvez également consulter la notification dans votre boîte de réception [!DNL Experience Manager].
 
-   ![inbox-notifications-for-big-downloads](/help/assets/assets/inbox-notification-for-large-downloads.png)
+   ![notifications-dans-la-boîte-de-réception-en-cas-de-téléchargements-volumineux](/help/assets/assets/inbox-notification-for-large-downloads.png)
 
 ## Téléchargement de ressources partagées à l’aide du partage de liens {#link-share-download}
 
-Le partage de ressources à l’aide d’un lien est un moyen pratique de le mettre à la disposition des personnes intéressées sans qu’elles aient à se connecter à [!DNL Assets]. Voir [Fonctionnalité Partage de liens](/help/assets/share-assets.md#sharelink).
+Le partage de ressources au moyen d’un lien est très pratique pour le mettre à disposition des personnes intéressées sans avoir besoin de se connecter à [!DNL Assets]. Consultez la section [Fonctionnalité de partage de liens](/help/assets/share-assets.md#sharelink).
 
 Lorsque les utilisateurs téléchargent des ressources à partir de liens partagés, [!DNL Assets] utilise un service asynchrone qui offre des téléchargements plus rapides et ininterrompus. Les ressources à télécharger sont placées en file d’attente en arrière-plan dans une boîte de réception dans les archives ZIP de taille de fichier gérable. Pour les téléchargements très volumineux, le téléchargement est divisé en fichiers de 100 Go.
 
-Le [!UICONTROL Télécharger la boîte de réception] affiche l’état du traitement de chaque archive. Une fois le traitement terminé, vous pouvez télécharger les archives à partir de la boîte de réception.
+La [!UICONTROL boîte de réception de téléchargement] affiche l’état du traitement de chaque archive. Une fois le traitement terminé, vous pouvez télécharger les archives à partir de la boîte de réception.
 
 ![Boîte de réception de téléchargement](assets/link-sharing-download-inbox.png)
 
@@ -133,7 +133,7 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 
 ## Conseils et restrictions {#tips-limitations}
 
-* Si vous téléchargez un dossier vide, [!DNL Experience Manager] transmet un message de réussite sur la création d’une archive ZIP, mais l’archive n’est pas créée.
+* Si vous téléchargez un dossier vide, [!DNL Experience Manager] transmet un message de réussite concernant la création d’une archive ZIP, mais l’archive n’est pas créée.
 
 >[!MORELIKETHIS]
 >

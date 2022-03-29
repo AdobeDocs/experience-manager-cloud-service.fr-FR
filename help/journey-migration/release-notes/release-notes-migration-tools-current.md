@@ -1,18 +1,18 @@
 ---
-title: Notes de mise à jour des outils de migration dans AEM version as a Cloud Service 2022.3.0
-description: Notes de mise à jour des outils de migration dans AEM version as a Cloud Service 2022.3.0
+title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.3.0
+description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.3.0
 feature: Release Information
-source-git-commit: c497424271ea960d22a30b4a6c66432935ec820d
+exl-id: ab43605d-d46e-43de-b71f-fab610609550
+source-git-commit: 59baf9c6f726580986d62da2805a8af1da9bb338
 workflow-type: tm+mt
 source-wordcount: '366'
-ht-degree: 13%
+ht-degree: 27%
 
 ---
 
+# Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.3.0 {#release-notes}
 
-# Notes de mise à jour des outils de migration dans AEM version as a Cloud Service 2022.3.0 {#release-notes}
-
-Cette page présente les notes de mise à jour des outils de migration dans AEM as a Cloud Service 2022.3.0.
+Cette page présente les notes de mise à jour pour les outils de migration dans AEM as a Cloud Service 2022.3.0.
 
 ## Analyseur des bonnes pratiques {#bpa-release}
 

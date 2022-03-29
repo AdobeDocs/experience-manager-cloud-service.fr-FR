@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Convertisseur d’index {#index-converter}
 
-Index Converter est un utilitaire développé pour migrer les définitions d’index d’un client en vue du déplacement vers AEM as a Cloud Service.
+Index Converter est un utilitaire développé pour migrer les définitions d’index d’un client en vue du passage à AEM as a Cloud Service.
 
 ## Présentation {#introduction}
 

@@ -9,7 +9,7 @@ ht-degree: 100%
 ---
 
 
-# Incorporation d’un formulaire adaptatif dans une page AEM Sites {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
+# Incorporation d’un formulaire adaptatif dans une page AEM Sites {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
 
 [!DNL AEM Forms] permet aux développeurs de formulaires d’incorporer facilement des formulaires adaptatifs dans une page AEM Sites ou une page web hébergée en dehors d’AEM. Le formulaire adaptatif incorporé est entièrement fonctionnel, et les utilisateurs peuvent le remplir et l’envoyer sans quitter la page. Il permet à l’utilisateur de rester dans le contexte des autres éléments de la page Web et d’interagir simultanément avec le formulaire.
 
@@ -23,7 +23,7 @@ Sur une page AEM Sites, vous pouvez ajouter un formulaire ou un document adaptat
 * **[Explorateur des ressources](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
 Tous les formulaires que vous créez sont disponibles sous Ressources. Vous pouvez faire glisser et déposer le formulaire sous forme de ressource dans votre page.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour incorporer un formulaire ou un document adaptatif dans une page AEM Sites qui utilise un modèle modifiable, assurez-vous que le composant AEM Forms est configuré comme composant autorisé dans le modèle associé. Pour plus d’informations, voir **Stratégie et propriétés (conteneur de disposition)** dans [Création de modèles de page](/help/sites-authoring/templates.md).
 
@@ -80,7 +80,7 @@ Pour modifier une configuration ou une propriété du formulaire adaptatif incor
 >
 >Les modifications apportées au formulaire d’origine sont répercutées automatiquement dans le formulaire incorporé. Cependant, republiez le formulaire adaptatif ou la page du site pour répercuter les modifications dans la page publiée.
 
-## Éléments à prendre en compte et bonnes pratiques {#considerations-and-best-practices}
+## Considérations et bonnes pratiques {#considerations-and-best-practices}
 
 Lorsque vous incorporez des formulaires adaptatifs à des pages AEM Sites, gardez en tête les points suivants :
 

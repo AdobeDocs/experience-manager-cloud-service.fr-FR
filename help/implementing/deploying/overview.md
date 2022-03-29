@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
 workflow-type: tm+mt
 source-wordcount: '3364'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 
 ### Déploiements via Cloud Manager {#deployments-via-cloud-manager}
 
-Les clients déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des modules de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lors de l’examen des modules dans [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) dans les environnements cloud, le nom comprend &quot;cp2fm&quot; et toutes les métadonnées sont supprimées pour les modules transformés. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Vous trouverez [ici](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) une documentation détaillée sur le convertisseur.
+Les clients déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des modules de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lorsque vous examinez les packages dans le [Gestionnaire de package](/help/implementing/developing/tools/package-manager.md) sur les environnements cloud, le nom inclut « cp2fm » et toutes les métadonnées des packages transformés sont supprimées. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Vous trouverez [ici](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) une documentation détaillée sur le convertisseur.
 
 Les modules de contenu écrits pour les applications AEM as a Cloud Service doivent présenter une distinction claire entre le contenu modifiable et non modifiable, et Cloud Manager n’installera que le contenu modifiable, en renvoyant un message du type :
 
@@ -109,7 +109,7 @@ Après le basculement vers la nouvelle version de l’application :
 Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été réalisée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
 >[!NOTE]
->Les modules de contenu sont déployés sur tous les types d’environnements (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via [Gestionnaire de modules.](/help/implementing/developing/tools/package-manager.md)
+>Les modules de contenu sont déployés sur tous les types d’environnements (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le [Gestionnaire de package.](/help/implementing/developing/tools/package-manager.md)
 
 En outre, il n’existe aucun mécanisme permettant d’annuler les modifications du module de contenu modifiable après leur application. Si les clients détectent un problème, ils peuvent choisir de le résoudre dans la prochaine version de leur code ou, en dernier recours, restaurer l’ensemble du système à un moment donné avant le déploiement.
 
@@ -173,17 +173,17 @@ above appears to be internal, to confirm with Brian -->
 >abstract="Explorez l’utilisation du gestionnaire de modules pour les cas d’utilisation où un module de contenu doit être installé un par un, ce qui inclut l’importation de contenu spécifique de l’environnement de production vers l’environnement d’évaluation afin de déboguer un problème de production, le transfert de petits modules de contenu de l’environnement on-premise vers les environnements AEM cloud, etc."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#cloud-migration" text="Outil de transfert de contenu"
 
-Il existe des cas d’utilisation où un module de contenu doit être installé de façon ponctuelle. Par exemple, pour déboguer un problème de production, vous devez importer du contenu spécifique de la production vers l’évaluation. Pour ces scénarios, [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) peut être utilisé dans AEM environnements as a Cloud Service.
+Il existe des cas d’utilisation où un module de contenu doit être installé de façon ponctuelle. Par exemple, pour déboguer un problème de production, vous devez importer du contenu spécifique de la production vers l’évaluation. Pour ces scénarios, le [Gestionnaire de package](/help/implementing/developing/tools/package-manager.md) peut être utilisé dans les environnements AEM as a Cloud Service.
 
 Le gestionnaire de modules étant un concept d’exécution, il n’est pas possible d’installer du contenu ni du code dans le référentiel non modifiable. Par conséquent, ces modules doivent être constitués uniquement de contenu modifiable (principalement `/content` ou `/conf`). Si le module comprend du contenu mixte (modifiable et non modifiable), seul le contenu modifiable sera installé.
 
 >[!IMPORTANT]
 >
->L’interface utilisateur du gestionnaire de modules peut renvoyer une **undefined** message d’erreur si l’installation d’un package dure plus de 10 minutes.
+>L’interface utilisateur du Gestionnaire de package peut renvoyer un message d’erreur **non défini** si l’installation d’un package prend plus de 10 minutes.
 >
->Cela n’est pas dû à une erreur lors de l’installation, mais à un délai d’attente du Cloud Service pour toutes les requêtes.
+>Cela n’est pas dû à une erreur lors de l’installation, mais à une temporisation que Cloud Service applique à toutes les requêtes.
 >
->Ne tentez pas de réinstaller si une telle erreur s’affiche. L’installation se déroule correctement en arrière-plan. Si vous redémarrez l’installation, plusieurs processus d’importation simultanés peuvent introduire des conflits.
+>N’essayez pas d’effectuer une nouvelle installation si une telle erreur s’affiche. L’installation se déroule correctement en arrière-plan. Si vous redémarrez l’installation, plusieurs processus d’importation simultanés peuvent provoquer des conflits.
 
 Les modules de contenu (modifiable ou non) installés via Cloud Manager s’affichent dans un statut figé au sein de l’interface utilisateur du gestionnaire de modules AEM. Ces modules ne peuvent pas être réinstallés, recréés, ni même téléchargés. Ils sont répertoriés avec le suffixe **« cp2fm »**, indiquant que leur installation a été gérée par Cloud Manager.
 

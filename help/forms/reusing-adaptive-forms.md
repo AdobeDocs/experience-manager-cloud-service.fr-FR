@@ -27,7 +27,7 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
    >[!NOTE]
    >
-   >Les actions rapides sont des éléments d’action qui sont affichés sur une vignette lors du pointage de la souris.
+   >Les actions rapides sont les éléments d’action qui s’affichent sur une vignette lorsque vous pointez dessus.
 
 1. Sélectionnez le formulaire adaptatif. Le processus de sélection est différent pour chaque vue.
 
@@ -41,7 +41,7 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
    Après avoir sélectionné les éléments, cliquez sur l’icône de copie ![aem6forms_copy](assets/aem6forms_copy.png) de la barre d’outils pour copier le formulaire adaptatif sélectionné.
 
-## Collage d’un formulaire adaptatif {#paste-an-adaptive-form}
+## Coller un formulaire adaptatif {#paste-an-adaptive-form}
 
 Un clic sur l’action de copie annule automatiquement le mode de sélection et rend visible l’icône ![Coller](assets/Smock_Paste_18_N.svg). Accédez maintenant au dossier de votre choix et cliquez sur l’icône ![Coller](assets/Smock_Paste_18_N.svg) pour coller le formulaire adaptatif copié.
 

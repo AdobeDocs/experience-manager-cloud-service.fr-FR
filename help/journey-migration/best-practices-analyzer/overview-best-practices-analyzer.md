@@ -20,7 +20,7 @@ L’analyseur de bonnes pratiques permet une évaluation de l’implémentation 
 
 L’outil génère un rapport destiné à identifier les domaines de reconfiguration potentielle, première étape du parcours de transition vers AEM as a Cloud Service.
 
-## Rapport de l’analyseur de bonnes pratiques {#bpa-report}
+## Rapport Best Practices Analyzer {#bpa-report}
 
 Le rapport de l’analyseur des bonnes pratiques permet de mieux comprendre le degré de préparation général à la mise à niveau. Ses résultats sont organisés par catégories de problèmes qui devront être résolus avant un déploiement réussi dans AEM as a Cloud Service.
 

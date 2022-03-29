@@ -44,7 +44,7 @@ Effectuez les étapes suivantes pour activer le paramètre Absence du bureau pou
 
    En outre, pour affecter toutes les tâches, quel que soit le modèle de processus, à un utilisateur particulier, sélectionnez **[!UICONTROL Tous les processus]** dans la liste déroulante Modèle de processus. <br>
 
-   Pour affecter des tâches à un utilisateur particulier pour tous les modèles de processus sauf quelques-uns, sélectionnez **[!UICONTROL Tous les processus]** dans la liste déroulante Modèle de processus, appuyez sur **[!UICONTROL + Ajouter exceptions]** et spécifiez les modèles de processus à exclure.
+   Pour affecter des tâches à un utilisateur particulier pour tous les modèles de processus sauf quelques-uns, sélectionnez **[!UICONTROL Tous les workflows]** dans la liste déroulante Modèle de processus, appuyez sur **[!UICONTROL + Ajouter l’exception]** et spécifiez les modèles de processus à exclure.
    <br>
 
    Répétez cette étape pour ajouter d’autres délégataires. <br>

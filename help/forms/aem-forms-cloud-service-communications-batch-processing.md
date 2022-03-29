@@ -58,7 +58,7 @@ Vous pouvez utiliser des opérations par lots pour générer plusieurs documents
 
 Pour savoir comment générer des documents à l’aide d’opérations par lots, vous pouvez regarder la vidéo ou suivre les instructions ci-dessous. La documentation de référence sur les API, en vidéo, est disponible au format .yaml. Vous pouvez télécharger le fichier des [API Batch](assets/batch-api.yaml) et le charger dans Postman pour vérifier les fonctionnalités des API et suivre la vidéo.
 
-### Prérequis {#pre-requisites}
+### Conditions préalables {#pre-requisites}
 
 Pour utiliser l’API Batch, les éléments suivants sont requis :
 
@@ -72,8 +72,8 @@ Pour utiliser l’API Batch, les éléments suivants sont requis :
 Avant d’utiliser une opération par lots :
 
 * Chargez les données client (fichiers XML) dans le stockage Blob Microsoft Azure.
-* Créez une configuration de cloud.
-* Créez une configuration d’entrepôt de données par lots.
+* Créer une configuration de cloud
+* Créer une configuration d’entrepôt de données par lots
 * Chargez les modèles et d’autres ressources vers votre instance Experience Manager Forms Cloud Service.
 
 ### Chargement des données client (fichiers XML) dans le stockage Azure {#upload-customer-data-to-Azure-Storage}
@@ -83,7 +83,7 @@ Sur votre stockage Microsoft Azure, créez des [conteneurs](https://docs.microso
 >
 >Vous pouvez configurer le stockage Microsoft Azure pour nettoyer automatiquement le dossier d’entrée ou déplacer le contenu du dossier de sortie vers un autre emplacement à des intervalles planifiés. Veillez toutefois à ce que les dossiers ne soient pas nettoyés lorsqu’une opération de lot référençant les dossiers est toujours en cours d’exécution.
 
-### Création d’une configuration de cloud {#create-a-cloud-configuration}
+### Créer une configuration de cloud {#create-a-cloud-configuration}
 
 La configuration de cloud connecte votre instance d’Experience Manager au stockage Microsoft Azure. Pour créer une configuration de cloud :
 
@@ -94,13 +94,13 @@ La configuration de cloud connecte votre instance d’Experience Manager au stoc
 
 Votre instance d’Experience Manager est maintenant prête à se connecter au stockage Microsoft Azure et à l’utiliser pour stocker et lire le contenu, le cas échéant.
 
-### Création d’une configuration d’entrepôt de données par lots {#create-batch-data-store-configuration}
+### Créer une configuration d’entrepôt de données par lots {#create-batch-data-store-configuration}
 
 La configuration des données par lots permet de configurer des conteneurs et des dossiers pour l’entrée et la sortie. Vous conservez les enregistrements de vos clients dans le dossier source et les documents générés sont placés dans le dossier de destination.
 
 Pour créer la configuration :
 
-1. Accédez à Outils > Forms > Unified Storage Connector.
+1. Accédez à Outils > Formulaires > Connecteur de stockage unifié.
 1. Ouvrez un dossier pour héberger la configuration, puis cliquez sur Créer. Utilisez le dossier Global ou créez un dossier.
 1. Remplissez les champs Titre et Nom de la configuration. Pour le stockage, sélectionnez Stockage Microsoft Azure.
 1. Dans le Chemin de la configuration de stockage, parcourez et sélectionnez la configuration du cloud qui contient les informations d’identification du compte de stockage Azure détenu par le client.

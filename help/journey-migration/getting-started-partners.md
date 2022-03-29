@@ -94,7 +94,7 @@ Consultez les ressources d’aide autonome sur la configuration et le déploieme
 >[!NOTE]
 > Pour obtenir une aide supplémentaire, vous pouvez :
 >1. [Contacter l’équipe d’assistance Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=fr)
->2. Explorer les [communautés et forums Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+>2. Explorer les [communautés et forums Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)
 
 
 <br>
@@ -175,7 +175,7 @@ Cloud Manager permet aux entreprises de gérer elles-mêmes Experience Manager s
 5. Réalisez les cycles de test recommandés (détection de fumée, contrôle qualité et autres)
 6. Convertissez vers le pipeline de production de Cloud Manager
 7. Validation du test de fumée
-8. Activation
+8. Mise en production
 
 <br>
 

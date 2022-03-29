@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Remplissage dynamique des listes déroulantes {#dynamically-populating-drop-down-lists}
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 * [Création de lots OSGI](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
 * [Développement de composants AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/overview.html?lang=fr#developing)

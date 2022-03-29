@@ -5,15 +5,15 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
 workflow-type: tm+mt
 source-wordcount: '1844'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Plug-in Maven Content Package d’Adobe {#adobe-content-package-maven-plugin}
 
-Le plug-in Maven Content Package d’Adobe permet d’intégrer les tâches de déploiement et de gestion de modules dans vos projets Maven.
+Le plug-in Maven Content Package d’Adobe permet d’intégrer les tâches de déploiement et de gestion de modules dans vos projets Maven.
 
-Le déploiement des packages construits sur AEM est effectué par le module externe Maven Adobe Content Package et permet l’automatisation des tâches normalement effectuées à l’aide d’AEM [Gestionnaire de modules :](/help/implementing/developing/tools/package-manager.md)
+Le déploiement des modules construits sur AEM est effectué par le plug-in Maven Content Package d’Adobe et permet l’automatisation des tâches normalement exécutées à l’aide du [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) d’AEM :
 
 * Création de modules à partir des fichiers du système de fichiers.
 * Installation et désinstallation de modules sur AEM.
@@ -133,7 +133,7 @@ En plus des paramètres suivants, consultez les descriptions de la section [Para
 
 ### ls {#ls}
 
-Répertorie les modules déployés sur [Gestionnaire de modules.](/help/implementing/developing/tools/package-manager.md)
+Répertorie les modules déployés dans le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
 
 #### Paramètres {#parameters-2}
 
@@ -141,7 +141,7 @@ Tous les paramètres de l’objectif sont décrits dans la section [Paramètres 
 
 ### rm {#rm}
 
-Supprime un module de [Gestionnaire de modules.](/help/implementing/developing/tools/package-manager.md)
+Supprime un module du [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
 
 #### Paramètres {#parameters-3}
 
@@ -227,7 +227,7 @@ Lorsque le filtre ne contient pas d’élément `mode`, la valeur `replace` par 
 
 ## Inclusion d’une image de miniature ou d’un fichier de propriétés dans le module {#including-a-thumbnail-image-or-properties-file-in-the-package}
 
-Remplacez les fichiers de configuration du module par défaut afin de personnaliser les propriétés du module. Par exemple, incluez une image miniature pour faire la distinction entre le module dans [Gestionnaire de modules.](/help/implementing/developing/tools/package-manager.md)
+Remplacez les fichiers de configuration du module par défaut afin de personnaliser les propriétés du module. Incluez, par exemple, une image miniature pour différencier le module dans le [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md).
 
 Les fichiers sources peuvent se trouver n’importe où dans le système de fichiers. Dans le fichier POM, définissez les ressources de création pour copier les fichiers sources dans `target/vault-work/META-INF` à des fins d’inclusion dans le module.
 

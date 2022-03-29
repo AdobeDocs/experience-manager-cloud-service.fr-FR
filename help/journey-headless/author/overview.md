@@ -47,7 +47,7 @@ Les informations présentées dans ce parcours peuvent bien sûr être utiles à
 
 ## Le parcours de création de contenu découplé {#the-journey}
 
-Vous allez explorer de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur les projets découplés dans AEM et vous proposent des liens vers une documentation technique détaillée.
+Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur les projets découplés dans AEM et vous proposent des liens vers une documentation technique détaillée.
 
 Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si le concept de découplage dans AEM est nouveau pour vous, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
 
@@ -55,11 +55,11 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 |---|---|---|
 | 0 | Parcours de création de contenu découplé AEM | Ce document |
 | 1 | [Création pour AEM as a Cloud Service découplé – Introduction](introduction.md) | Cette section présente les fonctionnalités découplées d’Adobe Experience Manager as a Cloud Service et explique comment créer du contenu pour votre projet. |
-| 2 | [Principes de base de la création découplée avec AEM](basics.md) | Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS découplé à l’aide de fragments de contenu. |
+| 2 | [Principes de base de la création découplée avec AEM](basics.md) | Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu. |
 | 3 | [En savoir plus sur l’utilisation de références dans les fragments de contenu](references.md) | Découvrez comment utiliser les références dans les fragments de contenu. Ils vous permettent également de créer et de gérer plusieurs niveaux de structure pour votre CMS découplé à l’aide de fragments imbriqués. |
 | 4 | [En savoir plus sur la définition de métadonnées et sur le balisage pour les fragments de contenu](metadata-tagging.md) | Découvrez comment définir des métadonnées et des balises pour les fragments de contenu. |
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Vous êtes maintenant prêt à prendre en main votre parcours découplé Adobe. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article [Création pour AEM as a Cloud Service découplé – Introduction.](introduction.md)
 
@@ -82,4 +82,4 @@ Ces parcours sont conçus pour être autonomes. Cependant, un certain nombre d�
 * [Parcours de développement découplé AEM](/help/journey-headless/developer/overview.md) : faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 * [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) : faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) : si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.
-* [Tutoriels découplés AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.
+* [Tutoriels découplés AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.

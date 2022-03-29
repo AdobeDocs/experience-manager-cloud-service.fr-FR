@@ -69,13 +69,13 @@ Pour AEM, le rôle d’architecte de contenu (souvent une autre personne) effect
 >
 >Si vous souhaitez en savoir plus sur la modélisation des données, consultez le parcours d’architecture de contenu découplé AEM.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez découvert les concepts et la terminologie, l’étape suivante consiste à [découvrir les principes de base de la création de fragments de contenu](basics.md). Cela permettra d’introduire la manipulation de base d’AEM ainsi que la création de fragments de contenu.
 
 ## Ressources supplémentaires {#additional-resources}
 
-* Parcours de développement découplé AEM
+* Parcours du développeur AEM Headless
    * [En savoir plus sur le développement CMS découplé](/help/journey-headless/developer/learn-about.md)
    * [Découvrez comment modéliser votre contenu](/help/journey-headless/developer/model-your-content.md)
 

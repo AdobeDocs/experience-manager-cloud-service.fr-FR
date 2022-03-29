@@ -1,6 +1,6 @@
 ---
-title: Publication d’applications App Builder
-description: Découvrez comment publier et exécuter une application App Builder.
+title: Publication d’applications App Builder
+description: Découvrez comment publier et exécuter une application App Builder.
 version: Cloud Service
 feature: App Builder
 topic: Integrations, Development
@@ -12,16 +12,16 @@ exl-id: ebbc1249-ed82-47c3-96ce-27a4d9c8ee99
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '54'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
-# Publication d’applications App Builder
+# Publication d’applications App Builder
 
 >[!IMPORTANT]
 >
-> _Adobe Project Firefly, comme indiqué dans les vidéos de cette série, est désormais nommé App Builder_
+> _Adobe Project Firefly, comme mentionné dans les vidéos de cette série, se nomme désormais App Builder_.
 
-Découvrez comment envoyer votre demande App Builder pour révision et approbation, et comment exécuter une nouvelle application publiée.
+Découvrez comment envoyer votre demande App Builder pour révision et approbation, et comment exécuter une nouvelle application publiée.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)

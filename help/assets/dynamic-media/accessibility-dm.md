@@ -1,6 +1,6 @@
 ---
 title: Accessibilité dans Dynamic Media
-description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment les bonnes pratiques pour le codage de vidéos, la publication de vidéos dans YouTube et l’affichage de rapports vidéo. Découvrez également comment ajouter des sous-titres, des sous-titres ou des marqueurs de chapitre aux vidéos.
+description: Découvrez comment utiliser la vidéo dans Dynamic Media, notamment les bonnes pratiques pour le codage de vidéos, la publication des vidéos sur YouTube et l’affichage des rapports vidéo. Apprenez également à ajouter des légendes, des sous-titres ou des marqueurs de chapitre aux vidéos.
 contentOwner: Rick Brough
 topic-tags: introduction
 content-type: reference
@@ -10,7 +10,7 @@ exl-id: f8d2dcbf-f61a-4b27-a3fc-406e3662adcb
 source-git-commit: 0d3262a3182063e69f764339e7937e2f83ad7bbb
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -60,11 +60,11 @@ Consultez [Accessibilité du clavier et navigation](https://experienceleague.ado
 Tous les composants de la visionneuse Dynamic Media prennent en charge les rôles et attributs ARIA (Accessible Rich Internet Applications) afin d’améliorer l’intégration avec les technologies d’assistance telles que les lecteurs d’écran.
 Consultez la rubrique d’aide **Prise en charge des technologies d’assistance** dans toute rubrique de personnalisation de la visionneuse du Guide de référence des visionneuses Dynamic Media. Par exemple, voir [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=fr) pour la visionneuse de vidéos ou [Prise en charge de la technologie d’assistance](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=fr#viewers-for-aem-assets-only) pour la visionneuse d’images interactives.
 
-## Prise en charge des sous-titres codés dans [!DNL Dynamic Media] {#closed-caption-support}
+## Prise en charge des sous-titres dans [!DNL Dynamic Media] {#closed-caption-support}
 
 Dynamic Media prend en charge la diffusion de vidéos et de visionneuses de vidéos adaptatives avec sous-titrage. Les sous-titres doivent s’afficher au-dessus du contenu vidéo.
 
-Voir [Vidéo dans Dynamic Media - Ajout de sous-titres ou de sous-titres à une vidéo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
+Consultez la section [Vidéo dans Dynamic Media - Ajout de légendes ou de sous-titres à une vidéo](/help/assets/dynamic-media/video.md#adding-captions-to-video).
 
 
 >[!MORELIKETHIS]

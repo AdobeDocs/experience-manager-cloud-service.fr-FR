@@ -17,7 +17,7 @@ ht-degree: 94%
 
 ---
 
-# Utilisation de CAPTCHA dans les formulaires adaptatifs {#using-captcha-in-adaptive-forms}
+# Utiliser CAPTCHA dans les formulaires adaptatifs {#using-captcha-in-adaptive-forms}
 
 CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart, Test public de Turing complètement automatique ayant pour but de différencier les humains des ordinateurs) est un programme couramment utilisé dans les transactions en ligne pour différencier les humains des programmes automatisés ou des robots. Cela pose un défi et évalue la réponse de l’utilisateur pour déterminer s’il s’agit d’un humain ou d’un robot interagissant avec le site. Cela empêche l’utilisateur de continuer si le test échoue et permet de sécuriser les transactions en ligne en empêchant les robots d’envoyer du spam ou des éléments malveillants.
 
@@ -63,7 +63,7 @@ Pour implémenter le service reCAPTCHA dans [!DNL AEM Forms] :
 
    Une fois que le service reCAPTCHA est configuré, il peut être utilisé dans les formulaires adaptatifs. Pour plus d’informations, voir [Utilisation de CAPTCHA dans les formulaires adaptatifs](#using-captcha).
 
-## Utilisation de CAPTCHA dans les formulaires adaptatifs  {#using-captcha}
+## Utiliser CAPTCHA dans les formulaires adaptatifs  {#using-captcha}
 
 Pour utiliser CAPTCHA dans les formulaires adaptatifs :
 
@@ -98,7 +98,7 @@ Pour utiliser CAPTCHA dans les formulaires adaptatifs :
 
 Le service reCAPTCHA est activé sur le formulaire adaptatif. Vous pouvez prévisualiser le formulaire et voir le fonctionnement de CAPTCHA.
 
-### Affichage ou masquage du composant CAPTCHA en fonction de règles {#show-hide-captcha}
+### Afficher ou masquer le composant CAPTCHA en fonction de règles {#show-hide-captcha}
 
 Vous pouvez choisir d’afficher ou de masquer le composant CAPTCHA en fonction des règles que vous appliquez à un composant d’un formulaire adaptatif. Appuyez sur le composant, sélectionnez ![modifier les règles](assets/edit-rules-icon.svg), puis appuyez sur **[!UICONTROL Créer]** pour créer une règle. Pour plus d’informations sur la création de règles, voir la section [Éditeur de règles](rule-editor.md).
 
@@ -168,7 +168,7 @@ Vous pouvez appeler la servlet personnalisée qui inclut l’API `ValidateCAPTCH
 
 De même, vous pouvez utiliser l’éditeur de règles pour inclure une méthode personnalisée pour valider le CAPTCHA dans un formulaire adaptatif.
 
-### Ajout de services CAPTCHA personnalisés {#add-custom-captcha-service}
+### Ajouter des services CAPTCHA personnalisés {#add-custom-captcha-service}
 
 [!DNL Experience Manager Forms] fournit reCAPTCHA en tant que service CAPTCHA. Cependant, vous pouvez ajouter un service personnalisé à afficher dans la liste déroulante **[!UICONTROL Service CAPTCHA]**.
 
@@ -206,7 +206,7 @@ public interface GuideCaptchaValidator {
 
 `userResponseToken` fait référence au `g_recaptcha_response` qui est généré après la résolution d’un CAPTCHA dans un formulaire.
 
-### Modification du domaine de service reCAPTCHA {#recaptcha-service-domain}
+### Modifier le domaine de service reCAPTCHA {#recaptcha-service-domain}
 
 Le service reCAPTCHA utilise `https://www.recaptcha.net/` comme domaine par défaut. Vous pouvez modifier les paramètres pour définir `https://www.google.com/` ou tout nom de domaine personnalisé pour le chargement, le rendu et la validation du service reCAPTCHA.
 

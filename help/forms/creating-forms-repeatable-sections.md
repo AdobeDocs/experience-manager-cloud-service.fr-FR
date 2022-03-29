@@ -95,7 +95,7 @@ Pour créer des panneaux répétables, vous pouvez utiliser l’une des méthode
 
 
 
-## Utilisation de la mise en page en accordéon pour le panneau parent  {#using-the-accordion-layout-for-the-parent-panel-nbsp}
+## Utiliser la disposition en accordéon pour le panneau parent {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
 Un panneau possède différentes options de mise en forme. La mise en page de l’option de conception en accordéon prend en charge les panneaux répétables. Pour créer un panneau répétable avec la mise en page de l’option de conception en accordéon, procédez comme suit :
 

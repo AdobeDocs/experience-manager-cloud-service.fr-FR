@@ -5,7 +5,7 @@ exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
 source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
 workflow-type: tm+mt
 source-wordcount: '2893'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -118,7 +118,7 @@ Vous pouvez à tout moment suspendre l’héritage ou désolidariser complèteme
 >
 >Pour une approche plus technique de cette fonction, voir [Structure de la gestion de sites multiples pour le contenu ciblé](/help/sites-cloud/authoring/personalization/multisite-structure.md).
 
-### Comparaison de la création d’une zone simple et de la création d’une zone comme Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
+### Comparaison de la création d’une zone simple et de la création d’une zone comme Live Copy {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
 Dans AEM, vous avez la possibilité de simplement créer une zone ou de la créer comme Live Copy. La création d’une zone permet de regrouper les activités et tout ce qui appartient à ces activités, comme les offres, les expériences, etc. Vous créez une zone lorsque vous souhaitez créer un ensemble complètement distinct de contenu ciblé ou lorsque vous souhaitez partager un ensemble de contenu ciblé.
 
@@ -162,7 +162,7 @@ Pour créer une zone :
 
    ![Créer](/help/sites-cloud/authoring/assets/multisite-create.png)
 
-## Création de zones comme Live Copies {#creating-areas-as-live-copies}
+## Création de zones comme Live Copies {#creating-areas-as-live-copies}
 
 Vous créez une zone comme Live Copy afin d’hériter du contenu ciblé à travers les structures de site.
 
@@ -254,7 +254,7 @@ Pour suspendre ou désolidariser l’héritage du contenu ciblé dans une activi
 
    ![Live Copy suspendue](/help/sites-cloud/authoring/assets/multisite-suspended.png)
 
-### Rompre l’héritage {#breaking-inheritance}
+### Rupture de l’héritage {#breaking-inheritance}
 
 Pour rompre l’héritage du contenu ciblé dans une activité :
 

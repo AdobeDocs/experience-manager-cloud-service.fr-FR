@@ -42,7 +42,7 @@ Votre environnement est configuré pour utiliser le cache de formulaires adaptat
 
 Vous pouvez également configurer la mise en cache des formulaires adaptatifs sur le Dispatcher pour améliorer les performances.
 
-### Prérequis {#pre-requisites}
+### Conditions préalables {#pre-requisites}
 
 * Activez l’option [fusion ou préremplissage des données au niveau du client](prepopulate-adaptive-form-fields.md#prefill-at-client). Elle permet de fusionner des données uniques pour chaque instance d’un formulaire prérempli.
 * [Activez l’agent de vidage pour chaque instance](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=fr#invalidating-dispatcher-cache-from-a-publishing-instance) de publication. Il permet de mieux mettre en cache les performances des formulaires adaptatifs. L’URL par défaut des agents de vidage est `http://[server]:[port]]/etc/replication/agents.publish/flush.html`.
@@ -132,7 +132,7 @@ Votre environnement AEM est configuré pour mettre en cache des formulaires adap
 
 ## Résolution des problèmes {#troubleshooting}
 
-### Certains formulaires adaptatifs contenant des images ou des vidéos ne sont pas automatiquement invalidés à partir du cache de Dispatcher {#videos-or-images-not-auto-invalidated}
+### Certains formulaires adaptatifs contenant des images ou des vidéos ne sont pas automatiquement invalidés à partir du cache du Dispatcher. {#videos-or-images-not-auto-invalidated}
 
 #### Problème {#issue1}
 
@@ -142,7 +142,7 @@ Lorsque vous sélectionnez et ajoutez des images ou des vidéos par le biais de 
 
 Après avoir publié les images et la vidéo, dépubliez explicitement et publiez les formulaires adaptatifs qui référencent ces ressources.
 
-### Certains formulaires adaptatifs contenant des fragments de contenu ou d’expérience ne sont pas automatiquement invalidés à partir du cache de Dispatcher {#content-or-experience-fragment-not-auto-invalidated}
+### Certains formulaires adaptatifs incluant un fragment de contenu ou des fragments d’expérience ne sont pas automatiquement invalidés à partir du cache du Dispatcher. {#content-or-experience-fragment-not-auto-invalidated}
 
 #### Problème {#issue2}
 

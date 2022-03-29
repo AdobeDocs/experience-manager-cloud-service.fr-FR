@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
 workflow-type: tm+mt
 source-wordcount: '2512'
-ht-degree: 95%
+ht-degree: 96%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 95%
 ## Présentation {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Pour plus d’informations sur Dispatcher en mode cloud et sur le téléchargement des outils Dispatcher, voir la section [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md) page. Si votre configuration de Dispatcher est en mode hérité, reportez-vous à la [documentation sur le mode hérité](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Pour plus d’informations sur Dispatcher en mode cloud et sur le téléchargement des outils Dispatcher, voir la page [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md). Si votre configuration de Dispatcher est en mode hérité, reportez-vous à la [documentation sur le mode hérité](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 Les sections suivantes décrivent la structure de fichiers du mode flexible, la validation locale, le débogage et la migration du mode hérité vers le mode flexible.
 
@@ -358,7 +358,7 @@ Cette phase vérifie la syntaxe Apache en démarrant Docker dans une image. Dock
 
 Cette phase peut également être exécutée indépendamment via `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
-Lors d’un déploiement de Cloud Manager, la vérification de syntaxe `httpd -t` est également exécutée et toutes les erreurs sont incluses dans le journal des échecs de l’étape de création d’images de Cloud Manager.
+Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd -t` est également exécutée et toutes les erreurs sont incluses dans le journal des échecs de l’étape de création d’images de Cloud Manager.
 
 ### Phase 3 {#third-phase}
 
@@ -482,7 +482,7 @@ $ docker exec d75fbd23b29 httpd-test
 
 ## Migration du mode hérité vers le mode flexible {#migrating}
 
-Avec la version 2021.7.0 de Cloud Manager, les nouveaux programmes génèrent des structures de projet Maven avec [l’archétype 28 d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) ou version ultérieure, qui inclut le fichier **opt-in/USE_SOURCES_DIRECTLY**. Cela supprime les limites précédentes du [mode hérité](/help/implementing/dispatcher/validation-debug-legacy.md) concernant le nombre et la taille des fichiers, ce qui entraîne également la validation et le déploiement de la configuration par le SDK et l’exécution. Si votre configuration de Dispatcher ne comporte pas ce fichier, il est vivement recommandé de migrer. Pour garantir une transition sécurisée, procédez comme suit :
+Avec la version 2021.7.0 de Cloud Manager, les nouveaux programmes génèrent des structures de projet Maven avec [l’archétype 28 d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) ou version ultérieure, qui inclut le fichier **opt-in/USE_SOURCES_DIRECTLY**. Cela supprime les limites précédentes du [mode hérité](/help/implementing/dispatcher/validation-debug-legacy.md) concernant le nombre et la taille des fichiers, ce qui entraîne également la validation et le déploiement de la configuration par le SDK et l’exécution. Si votre configuration Dispatcher ne comporte pas ce fichier, il est vivement recommandé de migrer. Pour garantir une transition sécurisée, procédez comme suit :
 
 1. **Test local.** À l’aide du dernier SDK des outils Dispatcher, ajoutez le dossier et le fichier `opt-in/USE_SOURCES_DIRECTLY`. Suivez les instructions de « validation locale » de cet article pour tester le fonctionnement local de Dispatcher.
 2. **Test de développement dans le cloud :**

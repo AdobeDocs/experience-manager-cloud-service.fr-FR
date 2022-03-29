@@ -37,7 +37,7 @@ Les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle
 
 <!--  For more information about creating an Adaptive Form, see [Creating an Adaptive Form](creating-adaptive-form.md). -->
 
-## Interface de création de formulaires adaptatifs {#adaptive-form-authoring-ui}
+## Interface utilisateur de création de formulaires adaptatifs {#adaptive-form-authoring-ui}
 
 L’interface utilisateur optimisée pour les écrans tactiles permet de créer des formulaires adaptatifs de manière intuitive et offre les avantages suivants :
 
@@ -48,7 +48,7 @@ L’interface utilisateur optimisée pour les écrans tactiles permet de créer 
 Lorsque vous créez ou modifiez un formulaire adaptatif, vous utilisez les éléments suivants de l’interface utilisateur :
 
 * [Barre latérale](#sidebar)
-* [Barre d’outils Page](#page-toolbar)
+* [Barre d’outils de la page](#page-toolbar)
 * [Barre d’outils de composants](#component-toolbar)
 * [Page de formulaires adaptatifs](#af-page)
 
@@ -270,7 +270,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
  </tbody>
 </table>
 
-### Barre d’outils Page {#page-toolbar}
+### Barre d’outils de la page {#page-toolbar}
 
 La barre d’outils de la page, située en haut de l’écran, propose des options permettant d’afficher un aperçu du formulaire, d’en modifier les propriétés, puis d’en modifier la disposition. Vous pouvez prévisualiser le formulaire lors de son écriture et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
 

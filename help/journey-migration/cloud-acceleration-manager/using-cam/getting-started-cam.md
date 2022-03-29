@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Prise en main de Cloud Acceleration Manager {#get-started-cam}
 
-Cloud Acceleration Manager est une application cloud conçue pour guider vos équipes informatiques tout au long du parcours de transition, de la planification à la mise en ligne sur Cloud Service. Configurez vos équipes pour une migration réussie avec les bonnes pratiques, conseils, documentation et outils recommandés par Adobe pour vous aider à chaque phase du parcours vers AEM as a Cloud Service.
+Cloud Acceleration Manager est une application cloud conçue pour guider vos équipes informatiques tout au long du parcours de transition, de la planification à la mise en ligne sur Cloud Service. Préparez vos équipes à une migration réussie grâce aux bonnes pratiques, aux conseils, à la documentation et aux outils recommandés par Adobe pour vous aider à chaque étape du parcours vers AEM as a Cloud Service.
 
 ## Objectif {#objective}
 
@@ -95,6 +95,6 @@ Pour supprimer votre projet, procédez comme suit :
 
 1. Cliquez sur **Supprimer** pour confirmer l’étape.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Une fois que vous avez appris à vous connecter à Cloud Acceleration Manager et à créer un projet, vous êtes prêt à passer à l’étape suivante de la [phase de préparation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr).

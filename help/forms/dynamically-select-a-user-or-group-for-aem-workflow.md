@@ -15,7 +15,7 @@ ht-degree: 100%
 ---
 
 
-# Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# Sélection de manière dynamique d’un utilisateur ou d’un groupe pour les étapes de workflow basées sur l’utilisation d’AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 Découvrez comment sélectionner un utilisateur ou un groupe pour un workflow [!DNL AEM Forms] au moment de l’exécution.
 
@@ -232,9 +232,9 @@ Vous avez besoin des fichiers jar [[!DNL AEM Forms] Client SDK](https://helpx.ad
 
 1. Chargez le bundle sur un serveur [!DNL AEM Forms]. Vous pouvez utiliser le gestionnaire de modules AEM pour importer le bundle sur le serveur [!DNL AEM Forms].
 
-Une fois le bundle importé, l’option de sélection de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe devient disponible pour les étapes Adobe Sign et Affecter une tâche.
+Une fois le bundle importé, l’option de sélection de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe devient disponible pour les étapes Adobe Sign et Affecter une tâche.
 
-### Exemples de code Java pour sélectionner de manière dynamique un utilisateur ou un groupe {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
+### Exemples de code Java pour sélectionner de manière dynamique un utilisateur ou un groupe. {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
 L’exemple de code suivant sélectionne de manière dynamique une personne désignée pour l’étape Adobe Sign. Vous pouvez utiliser ce code dans un bundle OSGi. Avant d’utiliser le code répertorié ci-dessous, assurez-vous que les informations utilisateur (adresses électroniques et numéros de téléphone) mentionnées dans le code sont correctes. Si les informations utilisateur mentionnées dans le code sont incorrectes, le processus associé peut échouer.
 

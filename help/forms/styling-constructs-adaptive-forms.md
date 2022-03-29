@@ -18,7 +18,7 @@ ht-degree: 100%
 
 # Mise en forme des éléments pour les formulaires adaptatifs{#styling-constructs-for-adaptive-forms}
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Connaissances en matière de CSS et structure LESS.
 
@@ -354,7 +354,7 @@ Le widget des termes et conditions (TnC`` ``) vous permet de spécifier les term
 Les boutons sont également des widgets. Toutefois, leur définition de style est légèrement différente des widgets. Dans les formulaires adaptatifs, n’importe lequel des éléments suivants constitue un bouton :
 
 * input[type = text]
-* button
+* Bouton
 * élément avec la classe .button
 
 Code HTML du bouton :

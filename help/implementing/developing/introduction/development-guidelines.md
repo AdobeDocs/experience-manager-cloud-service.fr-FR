@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
 workflow-type: tm+mt
 source-wordcount: '2356'
-ht-degree: 85%
+ht-degree: 88%
 
 ---
 
@@ -14,8 +14,8 @@ ht-degree: 85%
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
 >title="Conseils de développement pour AEM as a Cloud Service"
->abstract="Dans cet onglet, vous pouvez afficher les bonnes pratiques recommandées pour le codage dans AEM as a Cloud Service. Le codage peut être considérablement différent des déploiements AMS ou On-Prem."
->additional-url="https://video.tv.adobe.com/v/330555/" text="Démonstration de la structure de module"
+>abstract="Dans cet onglet, vous pouvez afficher les bonnes pratiques recommandées pour le codage dans AEM as a Cloud Service. Le codage peut être considérablement différent des déploiements AMS ou On-Prem."
+>additional-url="https://video.tv.adobe.com/v/330555/" text="Démonstration de la structure du package"
 
 Le code s’exécutant dans AEM as a Cloud Service doit savoir qu’il s’exécute toujours dans une grappe. Cela signifie qu’il y a toujours plusieurs instances en cours d’exécution. Le code doit être résilient, d’autant plus qu’une instance peut être arrêtée à tout moment.
 
@@ -45,9 +45,9 @@ De même, compte tenu de tout ce qui se passe de manière asynchrone, comme les 
 
 ## Tâches en arrière-plan et tâches à long terme {#background-tasks-and-long-running-jobs}
 
-Le code exécuté en tant que tâches en arrière-plan doit prendre en compte le fait que l’instance dans laquelle il est exécuté peut être supprimée à tout moment. Par conséquent, le code doit être résilient et surtout rechargeable. Cela signifie que si le code est réexécuté, il ne doit pas recommencer à partir du début, mais plutôt à partir de l’endroit où il a été abandonné. Bien que cette exigence ne soit pas nouvelle pour ce type de code, il est plus probable qu’une suppression d’instance se produise dans AEM as a Cloud Service.
+Le code exécuté en tant que tâches en arrière-plan doit prendre en compte le fait que l’instance dans laquelle il est exécuté peut être supprimée à tout moment. Par conséquent, le code doit être résilient et, surtout, peut être repris. Cela signifie que si le code est réexécuté, il ne doit pas recommencer à partir du début, mais plutôt à partir de l’endroit où il a été abandonné. Bien que cette exigence ne soit pas nouvelle pour ce type de code, il est plus probable qu’une suppression d’instance se produise dans AEM as a Cloud Service.
 
-Afin de limiter les problèmes, il est nécessaire d’éviter les tâches à long terme autant que possible, et de faire en sorte qu’elles puissent autant que possible être reprises après avoir été interrompues. Pour exécuter de telles tâches, utilisez les tâches Sling qui offrent la garantie qu’elles redémarreront au moins une fois si elles sont interrompues, et qu’elles seront donc réexécutées dès que possible. Elles ne doivent cependant probablement pas recommencer depuis le début. Pour planifier de telles tâches, il est préférable d’utiliser la variable [Tâches Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing) planificateur , ce qui assure à nouveau l’exécution au moins une fois.
+Afin de limiter les problèmes, il est nécessaire d’éviter les tâches à long terme autant que possible, et de faire en sorte qu’elles puissent autant que possible être reprises après avoir été interrompues. Pour exécuter de telles tâches, utilisez les tâches Sling qui offrent la garantie qu’elles redémarreront au moins une fois si elles sont interrompues, et qu’elles seront donc réexécutées dès que possible. Elles ne doivent cependant probablement pas recommencer depuis le début. Pour planifier de telles tâches, il est préférable d’utiliser le planificateur de [tâches Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), car il permet également l’exécution au moins une fois.
 
 Le planificateur Sling Commons ne doit pas être utilisé pour la planification, car l’exécution ne peut pas être garantie. Il permet simplement d’augmenter la probabilité de la programmation.
 

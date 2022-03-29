@@ -5,7 +5,7 @@ exl-id: ac741744-5b47-47a4-b5af-e1089e92c3f0
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '1195'
-ht-degree: 88%
+ht-degree: 99%
 
 ---
 
@@ -18,9 +18,9 @@ La section suivante présente les notes de mise à jour générales d’[!DNL Ex
 La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.10.0 est le 28 octobre 2020.
 La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
+### Nouveautés de [!DNL Sites]  {#what-is-new-sites}
 
 * **[Composants principaux 2.12.0](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)** : Adobe Experience Manager as a Cloud Service bénéficie des mises à jour automatiques de la dernière version des composants principaux. La version 2.12.0 comprend les dernières améliorations apportées par la communauté. Ces améliorations comprennent [un nouveau gestionnaire de formulaires POST ;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-container.html?lang=fr#post-data) la possibilité d’inclure des [balises CSS, JavaScript et de métadonnées personnalisées via une configuration contextuelle ;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/including-clientlibs.html?lang=fr#context-aware-loading) et un utilitaire [`DataLayerBuilder`](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/integrations.html?lang=fr#enabling-custom-components) destiné à simplifier l’intégration de la couche de données Adobe aux composants personnalisés. Voir la [liste des modifications](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) dans la version 2.12.0.
 
@@ -30,7 +30,7 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
-* Balisage intelligent de vidéo optimisé par **[!DNL Adobe Sensei]** : en appliquant des modèles d’IA pour analyser le contenu vidéo pour les balises d’objet et d’action spécifiques, les utilisateurs de la gestion des actifs numériques peuvent passer moins de temps à ajouter des balises et plus de temps à utiliser les informations riches et exposées. Vous pouvez ainsi fournir aux clients l’expérience qu’il leur faut. Voir [Balisage intelligent des ressources vidéo](/help/assets/smart-tags-video-assets.md).
+* **[!DNL Adobe Sensei]Balisage intelligent de vidéo optimisé par**: en appliquant des modèles d’IA pour analyser le contenu vidéo pour les balises d’objet et d’action spécifiques, les utilisateurs de la gestion des actifs numériques peuvent passer moins de temps à ajouter des balises et plus de temps à utiliser les informations riches et exposées. Vous pouvez ainsi fournir aux clients l’expérience qu’il leur faut. Voir [Balisage intelligent des ressources vidéo](/help/assets/smart-tags-video-assets.md).
 
 * **Améliorations apportées à Brand Portal** : les nouvelles fonctionnalités suivantes et bien d’autres sont disponibles dans [!DNL Brand Portal]. Pour plus d’informations, voir [[!DNL Brand Portal] Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal-release-notes.html?lang=fr).
 
@@ -43,21 +43,21 @@ La version suivante (2020.11.0) sera publiée le 1er décembre 2020.
 
 * Prise en charge des fichiers **[!DNL Assets]WebP** : [!DNL Assets] as a Cloud Service prend désormais en charge le format d’image WebP. WebP est un nouveau format d’image créé par Google. Les images au format WebP ne peuvent pas être distinguées visuellement des fichiers JPG ou PNG et les fichiers sont beaucoup plus petits. La taille de fichier réduite des ressources réduit la durée de chargement des pages et aide les créateurs de contenu à offrir une expérience web plus rapide. Découvrez comment utiliser WebP dans [Création d’un profil de traitement](/help/assets/asset-microservices-configure-and-use.md#create-standard-profile).
 
-## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
+## [!DNL Adobe Experience Manager Forms] as a Cloud Service {#forms-oct-2021}
 
-### Nouveautés d’[!DNL Forms]  {#what-is-new-forms-oct-2021}
+### Nouveautés de [!DNL Forms]  {#what-is-new-forms-oct-2021}
 
-* **Analytics pour Forms adaptatif**: Vous pouvez désormais capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) par le biais d’Adobe Analytics pour les Forms adaptatifs afin de rassembler les informations sur les utilisateurs finaux. Il permet aux utilisateurs professionnels de prendre des décisions éclairées sur le contenu, la mise en page et le style des formulaires adaptatifs en fonction des informations collectées.
+* **Analytics pour formulaires adaptatifs** : vous pouvez désormais capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) par le biais d’Adobe Analytics pour formulaires adaptatifs en vue de recueillir des insights relatifs aux utilisateurs finaux. Il permet aux utilisateurs professionnels de prendre des décisions éclairées sur le contenu, la mise en page et le style des formulaires adaptatifs en fonction des insights collectés.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms-oct-2021}
 
-* **Externaliser AEM données de workflow pour un traitement sécurisé**: Vous pouvez stocker dans un référentiel géré par le client des données AEM variables Workflow contenant des éléments de données personnelles sensibles (SPD) pour un traitement sécurisé. Lors du traitement du workflow, les données stockées dans les variables de workflow ne sont pas conservées dans AEM référentiel. Il est récupéré à la demande à partir du référentiel géré par le client.
+* **Externaliser les données des workflows AEM pour un traitement sécurisé** : vous pouvez stocker les données de variables de workflow AEM en cours de traitement qui contiennent des éléments de données personnelles sensibles (DPS) dans un référentiel géré par le client pour un traitement sécurisé. Lors du traitement du workflow, les données stockées dans les variables du workflow ne sont pas conservées dans le référentiel AEM. Ils sont récupérés à la demande à partir du référentiel géré par le client.
 
 ### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-oct-prerelease}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]**: [API de communication](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=fr) vous aide à combiner un modèle et des données XML pour générer des documents dans différents formats. Le service vous permet de générer des documents en mode synchrone et par lots.
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/aem-forms-cloud-service-communications.html?lang=fr) vous aident à combiner un modèle et des données XML pour générer des documents dans divers formats. Le service vous permet de générer des documents en mode synchrone et en mode de traitement par lots.
 
-Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
+Vous pouvez écrire à l’adresse [!DNL formscsbeta@adobe.com] pour vous inscrire au programme bêta.
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 

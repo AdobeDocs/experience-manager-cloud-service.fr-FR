@@ -1,6 +1,6 @@
 ---
 title: Comment configurer [!DNL Microsoft Dynamics] OData ?
-description: Découvrez comment créer un modèle de données de formulaire basé sur les entités, les attributs et les services définis dans [!DNL Microsoft Dynamics] service. Le modèle de données de formulaire peut être utilisé pour créer des formulaires adaptatifs qui interagissent avec un serveur  [!DNL Microsoft Dynamics]  pour activer des processus métier.
+description: Découvrez comment créer un modèle de données de formulaire basé sur les entités, les attributs et les services définis dans le service [!DNL Microsoft Dynamics] . Le modèle de données de formulaire peut être utilisé pour créer des formulaires adaptatifs qui interagissent avec un serveur [!DNL Microsoft Dynamics] pour activer des processus métier.
 feature: Form Data Model
 role: User, Developer
 level: Beginner
@@ -8,7 +8,7 @@ exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '948'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 98%
 
 <!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) is available with all run modes. For more information on configuring run modes for an [!DNL Experience Manager] instance, see [Run Modes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant de commencer à installer et à configurer [!DNL Microsoft Dynamics], vérifiez que vous avez :
 
@@ -41,7 +41,7 @@ Avant de commencer à installer et à configurer [!DNL Microsoft Dynamics], vér
    * [!DNL Microsoft Dynamics] 365 version locale
    * [!DNL Microsoft Dynamics] 2016 version locale
 
-* [enregistré l’application pour le [!DNL Microsoft Dynamics]  [!DNL Microsoft Azure] service en ligne avec  Active Directory](https://docs.microsoft.com/fr-fr/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Notez les valeurs de l’ID client (également appelé « ID d’application ») et du secret du client pour le service enregistré. Ces valeurs sont utilisées lors de la [configuration du service cloud pour votre [!DNL Microsoft Dynamics] service](#configure-cloud-service-for-your-microsoft-dynamics-service).
+* [Enregistrez l’application pour le service en ligne [!DNL Microsoft Dynamics] avec [!DNL Microsoft Azure] Active Directory](https://docs.microsoft.com/fr-fr/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Notez les valeurs de l’ID client (également appelé « ID d’application ») et du secret du client pour le service enregistré. Ces valeurs sont utilisées lors de la [configuration du service cloud pour votre [!DNL Microsoft Dynamics] service](#configure-cloud-service-for-your-microsoft-dynamics-service).
 
 ## Définition de l’URL de réponse pour l’application [!DNL Microsoft Dynamics] enregistrée {#set-reply-url-for-registered-microsoft-dynamics-application}
 
@@ -134,7 +134,7 @@ Dans l’onglet **[!UICONTROL Paramètres d’authentification]** :
 
       ![Paramètres d’authentification](assets/dynamics_authentication_settings_new.png)
 Modèle de données de formulaire
-1. Cliquez sur **[!UICONTROL Connexion à OAuth]**. Vous êtes redirigé vers la page de connexion de [!DNL Microsoft Dynamics].
+1. Cliquez sur **[!UICONTROL Se connecter à OAuth]**. Vous êtes redirigé vers la page de connexion de [!DNL Microsoft Dynamics].
 1. Connectez-vous avec vos informations d’identification [!DNL Microsoft Dynamics] et autorisez la connexion de la configuration du service cloud au service [!DNL Microsoft Dynamics]. Il s’agit d’une tâche unique de définition du modèle de données de formulaire entre le service cloud et le service.
 
    Vous êtes ensuite redirigé vers la page de configuration du service cloud, qui affiche un message indiquant que la configuration OData a bien été enregistrée.

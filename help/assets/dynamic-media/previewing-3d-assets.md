@@ -1,17 +1,17 @@
 ---
-title: Prévisualisation de ressources 3D
-description: Découvrez comment prévisualiser des ressources 3D dans Experience Manager.
+title: Prévisualiser les ressources 3D
+description: Découvrez comment prévisualiser des ressources 3D dans Experience Manager.
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Prévisualisation de ressources 3D dans Adobe Experience Manager{#previewing-3d-assets}
+# Prévisualisation de ressources 3D dans Adobe Experience Manager {#previewing-3d-assets}
 
 Experience Manager prend en charge le chargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
 

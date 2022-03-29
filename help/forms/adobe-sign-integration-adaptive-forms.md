@@ -8,7 +8,7 @@ exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
    >
    >Lorsque vous créez un formulaire adaptatif, indiquez le nom du conteneur dans le champ **[!UICONTROL Conteneur de configurations]**.
 
-1. Sur la page de configuration, appuyez sur **[!UICONTROL Créer]** pour créer une configuration.[!DNL Adobe Sign] dans AEM Forms.
+1. Sur la page de configuration, appuyez sur **[!UICONTROL Créer]** pour créer une configuration [!DNL Adobe Sign] dans AEM Forms.
 1. Dans l’onglet **[!UICONTROL Général]** de la page **[!UICONTROL Créer une configuration Adobe Sign]**, spécifiez un **[!UICONTROL nom]** de configuration et appuyez sur **[!UICONTROL Suivant]**. Vous avez la possibilité d’indiquer un **[!UICONTROL titre]** et de rechercher et sélectionner une **[!UICONTROL vignette]** pour la configuration.
 
 1. Copiez l’URL dans la fenêtre active du navigateur dans un bloc-notes. L’URL est nécessaire pour configurer l’application [!DNL Adobe Sign] avec [!DNL AEM Forms] à une étape ultérieure.
@@ -65,7 +65,7 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
 
    ![Configuration OAuth](assets/oauthconfig_new.png)
 
-1. Revenez à la page **[!UICONTROL Créer une configuration Adobe Sign]**. Dans le **[!UICONTROL Paramètres]** , **[!UICONTROL URL OAuth]** indique l’URL par défaut. Le format de l’URL est:
+1. Revenez à la page **[!UICONTROL Créer une configuration Adobe Sign]**. Dans l’onglet **[!UICONTROL Paramètres]**, le champ **[!UICONTROL URL OAuth]** indique l’URL par défaut. Le format de l’URL est :
 
    `https://<shard>/public/oAuth/v2`
 

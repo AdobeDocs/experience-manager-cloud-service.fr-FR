@@ -8,7 +8,7 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: f5282d149e80328742ff9008441960f62cea6290
 workflow-type: tm+mt
 source-wordcount: '1737'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -30,7 +30,7 @@ L’article contient des recommandations, des documents de référence et des re
 | × | Pas de prise en charge. Ne pas utiliser. |
 | - | Non disponible |
 
-| Cas d’utilisation | [aem-upload](https://github.com/adobe/aem-upload) | API Java [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr) | API HTTP [[!DNL Assets]  ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr#create-an-asset) | Servlets Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) |
+| Cas d’utilisation | [aem-upload](https://github.com/adobe/aem-upload) | API Java [Experience Manager / Sling / JCR](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | [Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr) | [[!DNL Assets] API HTTP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/mac-api-assets.html?lang=fr#create-an-asset) | Servlets Sling [GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) / [POST](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) | [GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) |
 | ----------------|:---:|:---:|:---:|:---:|:---:|:---:|
 | **Binaire original** |  |  |  |  |  |  |
 | Créer l’original | ✓ | × | - | × | × | - |
@@ -284,5 +284,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 -->
 
 >[!MORELIKETHIS]
-* SDK [[!DNL Experience Cloud] as a [!DNL Cloud Service]  ](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 

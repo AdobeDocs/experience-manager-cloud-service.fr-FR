@@ -13,7 +13,7 @@ ht-degree: 99%
 
 Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire…  {#story-so-far}
 
 Dans le document précédent du parcours de traduction AEM, [Traduction du contenu](configure-connector.md), vous avez appris à utiliser les projets de traduction AEM pour traduire votre contenu découplé. Vous devez maintenant :
 

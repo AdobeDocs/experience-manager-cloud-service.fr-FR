@@ -51,7 +51,7 @@ Les informations présentées dans ce parcours peuvent bien sûr être utiles à
 
 ## Le parcours de traduction de sites {#the-journey}
 
-Vous allez explorer de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur la traduction de contenu de sites dans AEM et vous proposent des liens vers une documentation technique détaillée.
+Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vous donnent une connaissance fondamentale sur la traduction de contenu de sites dans AEM et vous proposent des liens vers une documentation technique détaillée.
 
 Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si le concept de traduction dans AEM est nouveau pour vous, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
 
@@ -65,7 +65,7 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 | 5 | [Traduction du contenu](translate-content.md) | Utilisez le connecteur et les règles de traduction pour traduire le contenu de vos sites. |
 | 6 | [Publication du contenu traduit](publish-content.md) | Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour. |
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
 Vous êtes maintenant prêt à prendre en main votre parcours de traduction de sites Adobe. Nous vous encourageons à passer à la partie suivante du parcours et à lire l’article [En savoir plus sur le contenu des sites et sur la traduction dans AEM](learn-about.md).
 
@@ -74,7 +74,7 @@ Vous êtes maintenant prêt à prendre en main votre parcours de traduction de s
 Consultez ces ressources supplémentaires pour plus d’informations sur la manière dont les puissantes fonctionnalités d’AEM fonctionnent ensemble.
 
 * [Parcours de création découplée](/help/journey-headless/author/overview.md) – Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les modéliser votre contenu dans votre premier projet découplé.
-* [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) : faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet.
+* [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) –  Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet.
 * [Parcours de développement découplé AEM](/help/journey-headless/developer/overview.md) – Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) – Si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.
-* [Tutoriels découplés AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) – Si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.
+* [Tutoriels découplés AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.

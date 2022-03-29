@@ -1,5 +1,5 @@
 ---
-title: Envoi d’un accusé de réception d’envoi de formulaire par e-mail
+title: Envoyer un accusé de réception d’envoi de formulaire par e-mail
 seo-title: Sending a form submission acknowledgement via email
 description: AEM Forms permet de configurer l’action d’e-mail Envoyer qui envoie un accusé de réception à un utilisateur lors de l’envoi du formulaire.
 seo-description: AEM Forms allows you to configure the email Submit Action that sends an acknowledgement to a user on submitting the form.
@@ -17,7 +17,7 @@ ht-degree: 100%
 ---
 
 
-# Envoi d’un accusé de réception d’envoi de formulaire par e-mail {#sending-a-form-submission-acknowledgement-via-email}
+# Envoyer un accusé de réception d’envoi de formulaire par e-mail {#sending-a-form-submission-acknowledgement-via-email}
 
 ## Envoi de données de formulaire adaptatif {#adaptive-form-data-submission}
 
@@ -63,7 +63,7 @@ L’action Envoyer un e-mail permet à un auteur d’envoyer automatiquement un 
 
 1. Click ![save](assets/save_icon.svg) to save the changes. -->
 
-### Utilisation des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un e-mail {#using-adaptive-form-field-names-to-dynamically-create-email-content}
+### Utiliser des noms de champ de formulaire adaptatif pour créer dynamiquement le contenu d’un e-mail {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
 Dans un formulaire adaptatif, les noms de champ sont appelés espaces réservés. Ils sont remplacés par la valeur du champ après l’envoi du formulaire par un utilisateur.
 

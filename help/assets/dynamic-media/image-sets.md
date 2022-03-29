@@ -7,13 +7,13 @@ exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
 source-wordcount: '2041'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Visionneuses d’images {#image-sets}
 
-Visionneuses d’images offre aux utilisateurs une expérience de visionnage intégrée, dans laquelle ils peuvent voir différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément. Elles offrent des outils de zoom afin d’examiner les images de plus près.
+Visionneuses d’images  : elles offrent aux utilisateurs une expérience de visionnage intégrée en leur permettant d’afficher différentes vues d’un élément en cliquant sur une miniature. Les visionneuses d’images permettent de présenter différentes vues d’un élément. Elles offrent des outils de zoom afin d’examiner les images de plus près.
 
 Les visionneuses d’images sont désignées par une bannière comportant le mot `IMAGESET`. En outre, si la visionneuse d’images est publiée, la date de publication, indiquée par l’icône **[!UICONTROL Monde]**, est sur la bannière. En outre, la dernière date de modification, indiquée par l’icône **[!UICONTROL Crayon]**, s’affiche.
 
@@ -45,7 +45,7 @@ Pour démarrer rapidement :
 
    Chargez les images pour vos visionneuses d’images. N’oubliez pas que les utilisateurs peuvent effectuer un zoom sur les images dans la visionneuse d’images. Par conséquent, choisissez soigneusement vos images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension.
 
-   Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses d’images.
+   Consultez la section [Dynamic Media - Formats d’image matricielle pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses d’images.
 
 1. [Créez une visionneuse d’images](#creating-image-sets).
 
@@ -90,9 +90,9 @@ Commencez par charger les ressources d’images pour les visionneuses d’images
 
 <!-- Image Sets supports many image file formats, but lossless TIFF, PNG, and EPS images are recommended. -->
 
-Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses d’images.
+Consultez la section [Dynamic Media - Formats d’image matricielle pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses d’images.
 
-Vous pouvez charger des images pour les visionneuses d’images comme vous le feriez pour [charger une autre ressource dans AEM Assets](/help/assets/manage-digital-assets.md#uploading-assets).
+Vous pouvez charger des images pour les visionneuses d’images comme vous le feriez pour [charger une autre ressource dans Assets](/help/assets/manage-digital-assets.md#uploading-assets).
 
 ### Préparation du chargement de ressources de visionneuse d’images {#preparing-image-set-assets-for-upload}
 

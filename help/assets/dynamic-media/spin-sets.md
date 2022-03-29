@@ -7,7 +7,7 @@ exl-id: ed470472-62d9-4684-971b-30df3919c180
 source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
 workflow-type: tm+mt
 source-wordcount: '1847'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Pour démarrer rapidement, procédez comme suit :
 
    Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une visionneuse à 360° unidimensionnelle et de 16 à 24 prises de vue pour une visionneuse à 360° bidimensionnelle. Les prises de vue doivent être effectuées à intervalles réguliers afin de donner l’impression que l’élément pivote et s’incline. Par exemple, si une visionneuse unidimensionnelle inclut 12 prises de vue, faites pivoter l’élément de 30° (360/12) pour chacune d’elles.
 
-   Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses à 360°.
+   Consultez la page [Dynamic Media - Formats d’images pixellisées pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses à 360°.
 
 1. [Création d’une visionneuse à 360°](#creating-spin-sets).
 
@@ -81,9 +81,9 @@ Si nécessaire, vous pouvez [modifier les visionneuses à 360°](#editing-spin-s
 
 Au minimum, vous avez besoin de 8 à 12 prises de vue d’un élément pour une visionneuse à 360° unidimensionnelle. Les prises de vue doivent être effectuées à intervalles réguliers afin de donner l’impression que l’élément pivote et s’incline. Par exemple, si une visionneuse unidimensionnelle inclut 12 prises de vue, faites pivoter l’élément de 30° (360/12) pour chacune d’elles.
 
-Voir [Dynamic Media - Formats d’image pixellisée pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses à 360°.
+Consultez la page [Dynamic Media - Formats d’images pixellisées pris en charge](/help/assets/file-format-support.md#image-support-dynamic-media) pour obtenir une liste des formats pris en charge par les visionneuses à 360°.
 
-Vous pouvez charger des images pour les visionneuses à 360° comme vous le [feriez pour n’importe quelle autre ressource dans Experience Manager Assets](/help/assets/manage-digital-assets.md).
+Vous pouvez charger des images pour les visionneuses à 360° comme vous le [feriez pour n’importe quelle autre ressource dans Experience Manager Assets](/help/assets/manage-digital-assets.md).
 
 ### Instructions relatives à la capture d’images pour la visionneuse à 360°  {#guidelines-for-shooting-spin-set-images}
 

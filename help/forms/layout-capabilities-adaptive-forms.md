@@ -1,5 +1,5 @@
 ---
-title: Fonctions de disposition des formulaires adaptatifs
+title: Fonctions de mise en page des formulaires adaptatifs
 seo-title: Layout capabilities of Adaptive Forms
 description: La disposition et l’apparence des formulaires adaptatifs sur différents appareils sont déterminées par les paramètres de disposition. Comprenez les différentes dispositions et leur mode d’application.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
@@ -10,7 +10,7 @@ ht-degree: 100%
 
 ---
 
-# Fonctions de disposition des formulaires adaptatifs {#layout-capabilities-of-adaptive-forms}
+# Fonctions de mise en page des formulaires adaptatifs {#layout-capabilities-of-adaptive-forms}
 
 [!DNL Adobe Experience Manager] permet de créer des formulaires adaptatifs simples d’emploi, qui offrent des expériences dynamiques aux utilisateurs finaux. La disposition des formulaires détermine l’affichage des éléments et des composants dans un formulaire adaptatif.
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Before learning about the different layout capabilities of Adaptive Forms, read [Introduction to authoring forms](introduction-forms-authoring.md) to know more about Adaptive Forms. -->
 
-## Types de disposition {#types-of-layouts}
+## Types de mise en page {#types-of-layouts}
 
 Un formulaire adaptatif propose les types de disposition suivants :
 
@@ -32,7 +32,7 @@ Toutes ces dispositions de panneau sont définies à l’emplacement `/libs/fd/a
 
 Pour modifier la disposition d’un formulaire adaptatif, utilisez le mode Création dans [!DNL Experience Manager].
 
-## [!UICONTROL Disposition de panneau] {#panel-layout}
+## [!UICONTROL Mise en page du panneau] {#panel-layout}
 
 L’auteur d’un formulaire peut associer une disposition à chaque panneau d’un formulaire adaptatif, y compris le panneau racine.
 
@@ -40,7 +40,7 @@ Les dispositions de panneau sont disponibles à l’emplacement `/libs/fd/af/lay
 
 ![Liste des dispositions de panneau pour le panneau racine d’un formulaire adaptatif](assets/layouts.png)
 
-### [!UICONTROL Réactif : tout sur une page sans navigation] {#responsive-everything-on-one-page-without-navigation-br}
+### [!UICONTROL Réactif – Tout sur une page sans navigation] {#responsive-everything-on-one-page-without-navigation-br}
 
 Utilisez cette disposition de panneau pour créer une disposition réactive, qui s’adapte à la taille d’écran de votre appareil sans avoir à recourir à une navigation spécialisée.
 
@@ -68,7 +68,7 @@ Une expression récapitulative peut être utilisée pour afficher les valeurs fo
 
 ![Panneaux reproductibles utilisant une disposition de type Accordéon dans des formulaires adaptatifs](assets/accordion-layout.png)
 
-### [!UICONTROL Disposition avec onglets – Les onglets s’affichent à gauche ]{#tabbed-layout-tabs-appear-on-the-left}
+### [!UICONTROL Disposition avec onglets – Les onglets s’affichent à gauche ] {#tabbed-layout-tabs-appear-on-the-left}
 
 Cette disposition permet de placer le composant **[!UICONTROL Panneau de formulaire adaptatif]** dans un panneau avec une navigation par onglets. Les onglets sont placés à gauche du contenu du panneau.
 
@@ -76,13 +76,13 @@ Cette disposition permet de placer le composant **[!UICONTROL Panneau de formula
 
 Onglets affichés à gauche d’un panneau
 
-### [!UICONTROL Disposition avec onglets – Les onglets s’affichent en haut] {#tabbed-layout-tabs-appear-on-the-top}
+### [!UICONTROL Mises en page avec onglets – Les onglets s’affichent en haut] {#tabbed-layout-tabs-appear-on-the-top}
 
 Cette disposition permet de placer le composant **[!UICONTROL Panneau de formulaire adaptatif]** dans un panneau avec une navigation à onglets. Les onglets sont placés au-dessus du contenu du panneau.
 
 ![Disposition à onglets dans des formulaires adaptatifs, avec affichage des onglets en haut](assets/tabs-on-top.png)
 
-## Dispositions pour appareils mobiles {#mobile-layouts}
+## Mises en page pour appareils mobiles {#mobile-layouts}
 
 Ces dispositions permettent de naviguer de manière conviviale sur les appareils mobiles équipés d’écrans relativement petits. Les styles Avec onglets ou Assistant sont utilisés pour naviguer dans les formulaires. L’application d’une telle disposition permet de bénéficier d’une disposition unique pour l’ensemble du formulaire.
 
@@ -96,13 +96,13 @@ Sélectionnez l’option **[!UICONTROL Ajouter des éléments du menu Dispositio
 
 Lorsque vous utilisez une disposition pour appareils mobiles, le menu de formulaire qui permet d’accéder aux différents panneaux de formulaire est disponible en appuyant sur l’icône ![aem6forms_form_menu](assets/rail-icon.svg).
 
-### [!UICONTROL Disposition avec titres de panneau dans l’en-tête de formulaire] {#layout-with-panel-titles-in-the-form-header}
+### [!UICONTROL Mise en page avec titres de panneau dans l’en-tête de formulaire] {#layout-with-panel-titles-in-the-form-header}
 
 Cette disposition, comme son nom l’indique, affiche les titres du panneau avec la barre et le menu de navigation. Les icônes Suivant et Précédent sont également disponibles à des fins de navigation.
 
 ![Dispositions pour appareils mobiles avec affichage du titre du panneau dans les en-têtes de formulaire](assets/mobile-layout1.png)
 
-### [!UICONTROL Disposition sans titres de panneau dans l’en-tête de formulaire ]{#layout-without-panel-titles-in-the-form-header}
+### [!UICONTROL Disposition sans titres de panneau dans l’en-tête de formulaire ] {#layout-without-panel-titles-in-the-form-header}
 
 Cette disposition, comme son nom l’indique, affiche uniquement le menu et la barre de navigation, sans les titres de panneau. Les icônes Suivant et Précédent sont également disponibles à des fins de navigation.
 

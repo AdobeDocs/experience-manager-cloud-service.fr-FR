@@ -6,7 +6,7 @@ hidefromtoc: true
 source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
 workflow-type: tm+mt
 source-wordcount: '1352'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -75,7 +75,7 @@ Les parcours de documentation ont été conçus pour compléter la documentation
 
 | Type de documentation | Objectif | Public | Suppose | Omet | Type de contenu | Durée |
 |---|---|---|---|---|---|---|
-| Parcours de documentation | Un parcours définit la façon dont AEM peut résoudre un problème d’activité en général au moyen d’un récit qui guide les lecteurs à travers des processus et des fonctionnalités complexes et interconnectés. Il illustre la manière dont plusieurs fonctionnalités fonctionnent ensemble pour répondre aux besoins d’une entreprise, conformément aux bonnes pratiques. | Lecteurs débutants dans AEM | Connaissances générales du CMS | Détails des options et de la configuration | Texte | Ca 1 heure |
+| Parcours de documentation | Un parcours définit la façon dont AEM peut résoudre un problème d’activité en général au moyen d’un récit qui guide les lecteurs à travers des processus et des fonctionnalités complexes et interconnectés. Il illustre la manière dont plusieurs fonctionnalités fonctionnent ensemble pour répondre aux besoins d’une entreprise, conformément aux bonnes pratiques. | Lecteurs débutants dans AEM | Connaissances générales du CMS | Détails des options et de la configuration | Texte | Environ 1 heure |
 | Documents techniques | Les documents techniques se concentrent sur chaque fonctionnalité individuellement, en détaillant le fonctionnement technique de la fonctionnalité et chaque option disponible pour l’utilisateur. | Utilisateurs AEM expérimentés | Expérience d’AEM | Informations de contexte et d’arrière-plan | Texte | Variable |
 | Tutoriel | Un tutoriel est une présentation détaillée d’un sujet qui montre à un développeur ou à un administrateur comment atteindre pas à pas un objectif technique (généralement la programmation ou la configuration du système), en fournissant des exemples de cas d’utilisation et de code spécifiques et en n’exploitant généralement qu’un ensemble limité de fonctionnalités. | Développeurs ou administrateurs AEM | Expérience d’AEM | Contexte et théorie | Vidéo | >1 heure |
 | Guide de prise en main | Un guide de prise en main est une présentation rapide d’une nouvelle fonctionnalité d’AEM en particulier. Il s’agit d’un aperçu rapide sur une fonctionnalité individuelle, qui guide l’utilisateur à travers les étapes importantes (bien que non exhaustives) de configuration et d’utilisation d’un cas d’utilisation simple. | Administrateurs AEM | Expérience d’AEM | Contexte, théorie et détails des options | Texte | &lt;1 heure |
@@ -90,9 +90,9 @@ Plusieurs parcours de documentation sont déjà disponibles. Puisque chaque parc
 | [Parcours de création découplée](/help/journey-headless/author/overview.md) | Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. |
 | [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) | Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet. |
 | [Parcours de traduction découplée](/help/journey-headless/translation/overview.md) | Commencez ici pour découvrir comment configurer et gérer vos projets de traduction découplée dans AEM. |
-| [Parcours d’intégration à AEM](/help/journey-onboarding/home.md) | Commencez ici pour vous familiariser rapidement avec votre nouvel environnement as a Cloud Service AEM. |
-| [parcours de création rapide de site](/help/journey-sites/quick-site/overview.md) | Commencez ici pour obtenir un parcours guidé à travers l’outil de création rapide de site d’AEM simple d’utilisation afin de rationaliser le développement frontal de votre site AEM et de personnaliser rapidement votre site sans aucune connaissance d’ensemble AEM. |
+| [Parcours d’intégration à AEM](/help/journey-onboarding/home.md) | Découvrez ici comment être rapidement opérationnel avec votre nouvel environnement AEM as a Cloud Service ! |
+| [Parcours de création rapide de site AEM](/help/journey-sites/quick-site/overview.md) | Découvrez ici un parcours guidé à travers l’outil de création rapide de site AEM. Simple à utiliser, il vous permet de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement votre site sans aucune connaissance du serveur principal AEM. |
 | Parcours AEM Commerce | Bientôt disponible |
-| [parcours de migration as a Cloud Service AEM](/help/journey-migration/getting-started.md) | Commencez ici pour obtenir un parcours détaillé sur la migration de votre installation on-premise ou Adobe Managed AEM vers l’AEM as a Cloud Service entièrement basée sur le cloud et découvrez ses nombreux avantages. |
+| [Parcours de migration d’AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Découvrez ici un parcours détaillé sur la migration de votre installation AEM on-premise ou gérée par Adobe vers AEM as a Cloud Service entièrement basé sur le cloud et découvrez ses nombreux avantages. |
 
 Revenez pour obtenir plus de contenu au fur et à mesure que de nouveaux parcours sont disponibles.

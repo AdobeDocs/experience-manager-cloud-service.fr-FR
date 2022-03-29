@@ -278,11 +278,11 @@ Le `content-package-maven-plugin` a une configuration similaire.
 
 ## Réutilisation de l’artefact de build {#build-artifact-reuse}
 
-Dans de nombreux cas, le même code est déployé au sein de plusieurs environnements AEM. Dans la mesure du possible, Cloud Manager évite de reconstruire la base du code lorsqu’il détecte que la même validation Git est utilisée dans plusieurs exécutions de pipelines de piles pleines.
+Dans de nombreux cas, le même code est déployé dans plusieurs environnements AEM. Dans la mesure du possible, Cloud Manager évite de reconstruire la base du code lorsqu’il détecte que la même validation Git est utilisée dans plusieurs exécutions de pipelines de piles pleines.
 
-Lorsqu’une exécution est lancée, la validation HEAD en cours pour le pipeline de branche est extraite. Le hachage de validation est visible dans l’interface utilisateur et via l’API. Une fois l’étape de build terminée, les artefacts obtenus sont stockés en fonction dudit hachage de validation et peuvent être réutilisés lors des exécutions ultérieures du pipeline. En cas de réutilisation, les étapes de build et de qualité du code sont effectivement remplacées par les résultats de l’exécution d’origine. Le fichier journal de l’étape de build répertorie les artefacts et les informations d’exécution qui ont été utilisées pour les créer à l’origine.
+Lorsqu’une exécution est lancée, la validation HEAD en cours pour le pipeline de branche est extraite. Le hachage de validation est visible dans l’interface utilisateur et via l’API. Une fois l’étape de build terminée, les artefacts obtenus sont stockés en fonction de ce hachage de validation et peuvent être réutilisés dans les exécutions ultérieures du pipeline. En cas de réutilisation, les étapes de build et de qualité du code sont effectivement remplacées par les résultats de l’exécution initiale. Le fichier journal de l’étape de build répertorie les artefacts et les informations d’exécution qui ont été utilisés pour les créer à lʼorigine.
 
-Retrouvez ci-après un exemple d’une telle sortie de journal.
+Voici un exemple dʼune telle sortie de journal.
 
 ```shell
 The following build artifacts were reused from the prior execution 4 of pipeline 1 which used commit f6ac5e6943ba8bce8804086241ba28bd94909aef:
@@ -294,18 +294,18 @@ Le journal de l’étape de qualité du code contient des informations similaire
 
 ### Désinscription {#opting-out}
 
-Si vous le souhaitez, le comportement de réutilisation peut être désactivé pour des pipelines spécifiques en définissant la variable de pipeline `CM_DISABLE_BUILD_REUSE` sur `true`. Si cette variable est définie, le hachage de validation est toujours extrait et les artefacts obtenus sont stockés pour une utilisation ultérieure. Cependant, les artefacts précédemment stockés ne seront pas réutilisés. Pour comprendre ce comportement, prenons le scénario suivant.
+Si vous le souhaitez, le comportement de réutilisation peut être désactivé pour des pipelines spécifiques en définissant la variable de pipeline `CM_DISABLE_BUILD_REUSE` sur `true`. Si cette variable est définie, le hachage de validation est toujours extrait et les artefacts obtenus sont stockés pour une utilisation ultérieure, mais les artefacts précédemment stockés ne seront pas réutilisés. Pour comprendre ce comportement, considérez le scénario suivant.
 
-1. Un nouveau pipeline est créé.
+1. Un pipeline est créé.
 1. Le pipeline est exécuté (exécution #1) et la validation HEAD en cours est `becdddb`. L’exécution est réussie et les artefacts obtenus sont stockés.
 1. La variable `CM_DISABLE_BUILD_REUSE` est définie.
-1. Le pipeline est exécuté à nouveau sans modifier le code. Bien qu’il existe des artefacts stockés associés à `becdddb`, ils ne sont pas réutilisés en raison de la variable `CM_DISABLE_BUILD_REUSE`.
+1. Le pipeline est exécuté à nouveau sans modifier le code. Bien que des artefacts stockés soient associés à `becdddb`, ils ne sont pas réutilisés en raison de la variable `CM_DISABLE_BUILD_REUSE`.
 1. Le code est modifié et le pipeline est exécuté. La validation HEAD est maintenant `f6ac5e6`. L’exécution est réussie et les artefacts obtenus sont stockés.
 1. La variable `CM_DISABLE_BUILD_REUSE` est supprimée.
-1. Le pipeline est exécuté à nouveau sans modifier le code. Puisqu’il existe des artefacts stockés associés à `f6ac5e6`, ces artefacts sont réutilisés.
+1. Le pipeline est exécuté à nouveau sans modifier le code. Puisque des artefacts stockés sont associés à `f6ac5e6`, ces artefacts sont réutilisés.
 
 ### Restrictions {#caveats}
 
-* [Gestion des versions Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) remplace la version du projet uniquement dans les pipelines de production. Par conséquent, si la même validation est utilisée à la fois sur une exécution de déploiement de développement et une exécution de pipeline de production, et que le pipeline de déploiement de développement est exécuté en premier, les versions sont déployées dans les environnements d’évaluation et de production sans être modifiées. Toutefois, une balise sera tout de même créée dans ce cas.
+* [Gestion des versions Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) remplace la version du projet uniquement dans les pipelines de production. Par conséquent, si la même validation est utilisée à la fois sur une exécution de déploiement de développement et une exécution de pipeline de production, et que le pipeline de déploiement de développement est exécuté en premier, les versions sont déployées dans les environnements dʼévaluation et de production sans être modifiées. Cependant, une balise sera toujours créée dans cette situation.
 * Si la récupération des artefacts stockés échoue, l’étape de build est exécutée comme si aucun artefact n’avait été stocké.
-* Les variables de pipeline autres que `CM_DISABLE_BUILD_REUSE` ne sont pas prises en compte lorsque Cloud Manager décide de réutiliser des artefacts de builds créés précédemment.
+* Les variables de pipeline autres que `CM_DISABLE_BUILD_REUSE` ne sont pas prises en compte lorsque Cloud Manager décide de réutiliser des artefacts de build créés précédemment.

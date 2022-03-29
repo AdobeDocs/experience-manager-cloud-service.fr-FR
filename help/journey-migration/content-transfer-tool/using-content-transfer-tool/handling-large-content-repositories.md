@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '1739'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 67%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr#setting-up-pre-copy-step" text="Prise en main d’étape AzCopy en tant qu’étape de pré-copie"
 
 La copie d’un grand nombre d’objets Blob avec l’outil de transfert de contenu (CTT) peut prendre plusieurs jours.
-Pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service, le CTT peut utiliser [AzCopy](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) comme étape de pré-copie facultative. Cette étape de précopie peut être utilisée lorsque l’instance d’AEM source est configurée pour utiliser un entrepôt de données Amazon S3, Azure Blob Storage ou File Data Store. Une fois cette étape préalable configurée, dans la phase d’extraction, AzCopy copie les blobs d’Amazon S3, du stockage Azure Blob ou de l’entrepôt de données File vers le magasin blob du jeu de migration. Au cours de la phase d’ingestion, AzCopy copie les objets blob de la boutique blob du jeu de migration vers la boutique blob d‘AEM as a Cloud Service.
+Pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service, le CTT peut utiliser [AzCopy](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) comme étape de pré-copie facultative. Cette étape de pré-copie peut être utilisée lorsque l’instance AEM source est configurée pour utiliser une banque de données Amazon S3, Azure Blob Storage ou File Data Store. Une fois cette étape préalable configurée, dans la phase d’extraction, AzCopy copie les objets blob d’Amazon S3, d’Azure Blob Storage ou du File Data Store vers le magasin d’objets blob du jeu de migration. Au cours de la phase d’ingestion, AzCopy copie les objets blob de la boutique blob du jeu de migration vers la boutique blob d‘AEM as a Cloud Service.
 
 >[!NOTE]
 > Cette fonctionnalité a été introduite dans la version 1.5.4 de CTT.
@@ -40,15 +40,15 @@ Consultez la section ci-dessous pour comprendre les points importants à prendre
 * Le nettoyage de la mémoire d’entrepôt de données a été exécuté au cours des 7 jours précédents sur la source. Pour plus d’informations, voir [Récupération de l’espace mémoire de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=fr#data-store-garbage-collection).
 
 
-### Considérations supplémentaires si l’instance d’AEM source est configurée pour utiliser un entrepôt de données Amazon S3 ou Azure Blob Storage {#additional-considerations-amazons3-azure}
+### Considérations supplémentaires si l’instance d’AEM source est configurée pour utiliser une banque de données Amazon S3 ou Azure Blob Storage. {#additional-considerations-amazons3-azure}
 
 * Comme le transfert de données en dehors du stockage Blob Amazon S3 et Azure entraîne un coût, le coût du transfert sera relatif à la quantité totale de données dans le conteneur de stockage (qu’il soit référencé dans AEM ou non). Pour plus d’informations, voir [Amazon S3](https://aws.amazon.com/s3/pricing/) et [Azure Blob Storage](https://azure.microsoft.com/fr-fr/pricing/details/bandwidth/).
 
-* Vous aurez besoin soit d’une paire clé d’accès et clé secrète pour le compartiment source Amazon S3, soit d’un URI SAS pour le conteneur de stockage Azure Blob (l’accès en lecture seule est correct).
+* Vous aurez besoin soit d’une paire clé d’accès et clé secrète pour le compartiment source Amazon S3, soit d’un URI SAS pour le conteneur de stockage Azure Blob (l’accès en lecture seule est correct).
 
-### Remarques supplémentaires si l’instance d’AEM source est configurée pour utiliser l’entrepôt de données basé sur les fichiers {#additional-considerations-aem-instance-filedatastore}
+### Considérations supplémentaires si l’instance d’AEM source est configurée pour utiliser le File Data Store. {#additional-considerations-aem-instance-filedatastore}
 
-* Le système local doit disposer d’un espace libre strictement supérieur à 1/256 taille de la banque de données source. Par exemple, si la taille de la banque de données est de 3 To, l’espace libre supérieur à 11,72 Go doit exister dans la variable `crx-quickstart/cloud-migration` sur la source pour que AzCopy fonctionne. Au minimum, le système source doit disposer de 1 Go d’espace libre. L’espace libre peut être obtenu en utilisant `df -h` sur les instances Linux et la commande dir dans les instances Windows.
+* Le système local doit disposer d’un espace libre strictement supérieur à 1/256 taille de la banque de données source. Par exemple, si la taille de la banque de données est de 3 To, l’espace libre supérieur à 11,72 Go doit exister dans le fichier `crx-quickstart/cloud-migration` sur la source pour que AzCopy fonctionne. Au minimum, le système source doit disposer de 1 Go d’espace libre. Il est possible d’obtenir de l’espace libre en utilisant la commande `df -h` sur les instances Linux ou la commande DIR dans les instances Windows.
 
 * Chaque fois que l’extraction est exécutée avec AzCopy activé, la banque de données de l’ensemble du fichier est aplatie et copiée dans le conteneur de migration dans le cloud. Si votre jeu de migration est beaucoup plus petit que la taille de votre banque de données, l’extraction AzCopy n’est pas l’approche optimale.
 
@@ -60,11 +60,11 @@ Consultez cette section pour savoir comment configurer l’utilisation d’AzCop
 
 ### 0. Déterminer la taille totale de tout le contenu de l’entrepôt de données {#determine-total-size}
 
-Il est important de déterminer la taille totale de l’entrepôt de données pour deux raisons :
+Il est important de déterminer la taille totale de la banque de données pour deux raisons :
 
-* Si l’AEM source est configurée pour utiliser l’entrepôt de données basé sur les fichiers, le système local doit disposer d’un espace libre strictement supérieur à 1/256 taille de l’entrepôt de données source.
+* Si l’AEM source est configuré pour utiliser File Data Store, le système local doit disposer d’un espace libre strictement supérieur à 1/256 de la taille de la banque de données source.
 
-* Connaître la taille totale de l’entrepôt de données permet d’estimer les temps d’extraction et d’ingestion. Utilisez la variable [Calculateur de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=en#content-transfer) in [Cloud Accelerated Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/introduction-cam/overview-cam.html?lang=en) pour obtenir une estimation des temps d’extraction et d’ingestion.
+* Connaître la taille totale de la banque de données permet d’estimer les temps d’extraction et d’ingestion. Utilisez la [Calculatrice de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=fr#content-transfer) dans [Cloud Acceleration Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/introduction-cam/overview-cam.html?lang=fr) pour obtenir une estimation des temps d’extraction et d’ingestion.
 
 #### Entrepôt de données de stockage Azure Blob {#azure-blob-storage}
 
@@ -79,12 +79,12 @@ Vous pouvez utiliser l’onglet Mesures du conteneur pour déterminer la taille 
 
 ![image](/help/journey-migration/content-transfer-tool/assets/amazon-s3-data-store.png)
 
-#### Entrepôt de données basé sur les fichiers {#file-data-store-determine-size}
+#### Banque de données Fichier {#file-data-store-determine-size}
 
-* Pour mac, systèmes UNIX, exécutez la commande du sur le répertoire de la banque de données pour obtenir sa taille :
-   `du -sh [path to datastore on the instance]`. Par exemple, si votre banque de données se trouve à l’adresse `/mnt/author/crx-quickstart/repository/datastore`, la commande suivante vous permet d’obtenir sa taille : `du -sh /mnt/author/crx-quickstart/repository/datastore`.
+* Pour mac, systèmes UNIX, exécutez la commande du sur le répertoire de la banque de données pour obtenir sa taille :
+   `du -sh [path to datastore on the instance]`. Par exemple, si votre banque de données se trouve à l’adresse `/mnt/author/crx-quickstart/repository/datastore`, la commande suivante vous permet d’obtenir sa taille : `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
-* Pour Windows, utilisez la commande dir du répertoire de la banque de données pour obtenir sa taille :
+* Pour Windows, utilisez la commande DIR du répertoire de la banque de données pour obtenir sa taille :
    `dir /a/s [location of datastore]`.
 
 ### 1. Installez AzCopy {#install-azcopy}
@@ -98,16 +98,17 @@ En résumé, vous voudrez probablement télécharger le binaire Linux x86-64 à 
 
 ### 2. Installez une version de l’outil de transfert de contenu (CTT) avec la prise en charge d’AzCopy. {#install-ctt-azcopy-support}
 
-La prise en charge d’AzCopy pour Amazon S3 et Azure Blob Storage est incluse dans la version CTT 1.5.4.
-La prise en charge de l’entrepôt de données basé sur les fichiers est incluse dans la version 1.7.2 de CTT. Vous pouvez télécharger la dernière version de CTT à partir de [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) Portal.
+La prise en charge d’AzCopy pour Amazon S3 et Azure Blob Storage est incluse dans la version 1.5.4 de CTT.
+La prise en charge de File Data Store est incluse dans la version 1.7.2 de CTT. 
+Vous pouvez télécharger la dernière version de CTT depuis le portail [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 
-### 3. Configuration d’un fichier azcopy.config {#configure-azcopy-config-file}
+### 3. Configuration d’un fichier azcopy.config. {#configure-azcopy-config-file}
 
-Sur l’instance AEM source, dans `crx-quickstart/cloud-migration`, créez un fichier appelé `azcopy.config`.
+Sur l’instance AEM source, dans `crx-quickstart/cloud-migration`, créez un nouveau fichier appelé `azcopy.config`.
 
 >[!NOTE]
->Le contenu de ce fichier de configuration sera différent selon que votre instance d’AEM source utilise un entrepôt de données Azure ou Amazon S3 ou un entrepôt de données File.
+>Le contenu de ce fichier de configuration sera différent selon que votre instance AEM source utilise un entrepôt de données Azure ou Amazon S3 ou un File Data Store.
 
 #### Entrepôt de données de stockage Azure Blob {#azure-blob-storage-data}
 
@@ -138,10 +139,10 @@ s3AccessKey=--REDACTED--
 s3SecretKey=--REDACTED--
 ```
 
-#### Entrepôt de données basé sur les fichiers {#file-data-store-azcopy-config}
+#### Banque de données Fichier {#file-data-store-azcopy-config}
 
-Votre `azcopy.config` Le fichier doit contenir la propriété azcopyPath et une propriété facultative repository.home qui pointe vers l’emplacement de la banque de données de fichier. Utilisez les valeurs correctes pour votre instance.
-Entrepôt de données basé sur les fichiers
+Votre fichier `azcopy.config` doit contenir la propriété azcopyPath, ainsi qu’une propriété facultative repository.home qui pointe vers l&#39;emplacement de la banque de données de fichiers. Utilisez les valeurs correctes pour votre instance.
+Banque de données Fichier
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -150,14 +151,14 @@ repository.home=/mnt/crx/author/crx-quickstart/repository/datastore
 
 La propriété azcopyPath doit contenir le chemin d’accès complet de l’emplacement où l’outil de ligne de commande azCopy est installé sur l’instance d’AEM source. Si la propriété azCopyPath est manquante, l’étape de prévisualisation Blob n’est pas exécutée.
 
-If `repository.home` est manquante dans azcopy.config, puis l’emplacement de la banque de données par défaut. `/mnt/crx/author/crx-quickstart/repository/datastore` sera utilisé pour effectuer la précopie.
+Si la propriété `repository.home` est manquante dans azcopy.config, alors l’emplacement par défaut de la banque de données `/mnt/crx/author/crx-quickstart/repository/datastore` sera utilisé pour effectuer la précopie.
 
 ### 4. Extraction avec AzCopy {#extracting-azcopy}
 
 Une fois le fichier de configuration ci-dessus en place, la phase de pré-copie AzCopy s’exécute dans le cadre de chaque extraction ultérieure. Pour l’empêcher d’exécuter, vous pouvez renommer ce fichier ou le supprimer.
 
 >[!NOTE]
->Si AzCopy n&#39;est pas configuré correctement, ce message s&#39;affiche dans les logs :
+>Si AzCopy n’est pas configuré correctement, ce message s’affiche dans les journaux :
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
 1. Commencez une extraction à partir de l’interface utilisateur de CTT. Pour plus d’informations, consultez [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr) et [Processus d’extraction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/extracting-content.html?lang=fr).
@@ -189,9 +190,9 @@ En cas de problème avec AzCopy, l’extraction échoue immédiatement et les lo
 
 Les objets Blob qui ont été copiés avant l’erreur seront automatiquement ignorés par AzCopy lors des exécutions suivantes et n’auront pas besoin d’être copiés à nouveau.
 
-#### Pour le magasin de données de fichier {#file-data-store-extract}
+#### Pour File Data Store {#file-data-store-extract}
 
-Lorsque AzCopy est en cours d’exécution pour le fichier source dataStore, vous devriez voir des messages comme ceux-ci dans les journaux indiquant que les dossiers sont en cours de traitement :
+Lorsque AzCopy est en cours d’exécution pour le fichier source dataStore, vous devriez voir des messages comme ceux-ci dans les journaux indiquant que les dossiers sont en cours de traitement :
 `c.a.g.s.m.c.a.AzCopyFileSourceBlobPreCopy - [AzCopy pre-copy] Processing folder (1/24) crx-quickstart/repository/datastore/5d`
 
 ### 5. Ingestion avec AzCopy {#ingesting-azcopy}
@@ -237,10 +238,10 @@ Final Job Status: CompletedWithSkipped
 
 ## Désactivation d’AzCopy {#disable-azcopy}
 
-Pour désactiver AzCopy, renommez ou supprimez la variable `azcopy.config` fichier .
+Pour désactiver AzCopy, renommez ou supprimez le fichier `azcopy.config`.
 
-Par exemple, l’extraction azcopy peut être désactivée avec : `mv /mnt/crx/author/crx-quickstart/cloud-migration/azcopy.config /mnt/crx/author/crx-quickstart/cloud-migration/noazcopy.config`.
+Par exemple, l’extraction azcopy peut être désactivée avec : `mv /mnt/crx/author/crx-quickstart/cloud-migration/azcopy.config /mnt/crx/author/crx-quickstart/cloud-migration/noazcopy.config`.
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Une fois que vous avez appris à gérer les référentiels de contenu volumineux afin d’accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu et déplacer le contenu vers AEM as a Cloud Service, vous êtes prêt à apprendre comment fonctionne le processus d’extraction dans l’outil de transfert de contenu. Consultez [Extraction de contenu de la source dans l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) pour savoir comment extraire votre jeu de migration à partir de l’outil de transfert de contenu.

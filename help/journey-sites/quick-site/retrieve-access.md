@@ -1,37 +1,37 @@
 ---
-title: Récupération des informations d’accès au référentiel Git
-description: Découvrez comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel git.
+title: Récupérer des informations d’accès au référentiel Git
+description: Découvrez comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Récupération des informations d’accès au référentiel Git {#retrieve-access}
+# Récupérer des informations d’accès au référentiel Git {#retrieve-access}
 
-Découvrez comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel git.
+Découvrez comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel Git.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
-Si vous êtes un développeur front-end uniquement responsable de la personnalisation du thème du site, vous n’avez pas besoin de connaître la configuration de l’AEM et pouvez passer à la [Objectif](#objective) de ce document.
+Si vous êtes un développeur front-end uniquement responsable de la personnalisation du thème du site, il nʼest pas nécessaire de savoir comment AEM a été configuré et vous pouvez passer à la section [Objectif](#objective) de ce document.
 
-Si vous jouez également le rôle d’administrateur de Cloud Manager ou d’AEM, ainsi que de développeur front-end, vous avez appris dans le document précédent du parcours de création rapide de site AEM, [Accorder l’accès au développeur front-end,](grant-access.md) comment embarquer le développeur front-end pour qu’il ait accès au référentiel git. vous devez maintenant savoir :
+Si vous détenez également le rôle d’administrateur Cloud Manager ou AEM en plus de celui de développeur front-end, vous avez appris dans le document précédent du parcours de création rapide de site AEM, [Octroi dʼaccès au développeur front-end,](grant-access.md) comment intégrer le développeur front-end afin quʼil ait accès au référentiel Git. À présent, vous devriez disposer des connaissances suivantes :
 
-* Comment ajouter un développeur front-end en tant qu’utilisateur.
-* Comment accorder les rôles requis au développeur front-end.
+* Ajouter un développeur front-end en tant qu’utilisateur.
+* Octroyer les rôles requis au développeur front-end.
 
-Cet article passe à l’étape suivante pour montrer comment le développeur front-end utilise l’accès Cloud Manager pour récupérer les informations d’identification afin d’accéder au référentiel git d’AEM.
+Dans cet article, nous allons passer à lʼétape suivante et découvrir comment le développeur front-end utilise l’accès à Cloud Manager pour récupérer les informations d’identification lui permettant d’accéder au référentiel Git d’AEM.
 
-Maintenant qu’un site est créé à partir d’un modèle, il existe un pipeline configuré, le développeur front-end est intégré et contient toutes les informations dont il a besoin, cet article déplace la perspective des administrateurs et exclusivement vers le rôle de développeur front-end.
+Les étapes suivantes ont été vues : création dʼun site sur la base dʼun modèle, configuration dʼun pipeline et intégration du développeur, qui dispose de toutes les informations nécessaires. A présent, cet article ne va plus traiter du rôle des administrateurs mais du rôle du développeur front-end.
 
 ## Objectif {#objective}
 
-Ce document explique comment, en tant que développeur front-end, vous pouvez accéder à Cloud Manager et récupérer les informations d’identification d’accès au référentiel git d’AEM. Après lecture, vous serez amené à :
+Ce document explique comment, en tant que développeur front-end, vous pouvez accéder à Cloud Manager et récupérer les informations d’accès au référentiel Git d’AEM. Après lʼavoir lu, vous devriez :
 
 * Découvrez Cloud Manager à un haut niveau.
-* Vous avez récupéré vos informations d’identification pour accéder au git d’AEM afin que vous puissiez valider vos personnalisations.
+* Avoir récupéré vos identifiants pour accéder au Git d’AEM afin de valider vos personnalisations.
 
 ## Rôle responsable {#responsible-role}
 
@@ -39,82 +39,82 @@ Cette partie du parcours s’applique au développeur front-end.
 
 ## Conditions requises {#requirements}
 
-L’outil de création rapide de site permet aux développeurs front-end de travailler indépendamment sans connaissance ni de l’AEM ni de la manière dont ils sont configurés. Toutefois, l’administrateur de Cloud Manager doit intégrer le développeur front-end à l’équipe de projet et l’administrateur AEM doit vous fournir certaines informations requises. Assurez-vous de disposer des informations suivantes avant de continuer.
+L’outil de création rapide de site permet aux développeurs front-end de travailler de manière autonome, sans connaissance dʼAEM ou de sa configuration. Cependant, l’administrateur Cloud Manager doit intégrer le développeur front-end à l’équipe de projet et l’administrateur AEM doit vous communiquer certaines informations requises. Assurez-vous de disposer des informations suivantes avant de continuer.
 
-* De l’administrateur AEM :
-   * Fichiers source du thème à personnaliser
+* De l’administrateur AEM :
+   * Fichiers sources du thème à personnaliser
    * Chemin d’accès à une page d’exemple à utiliser comme base de référence
-   * Informations d’identification de l’utilisateur du proxy pour tester vos personnalisations par rapport au contenu AEM actif
-   * Exigences de conception front-end
-* De l’administrateur de Cloud Manager :
-   * Un e-mail de bienvenue de Cloud Manager vous informant de l’accès
-   * Le nom du programme ou l’URL qui lui correspond dans Cloud Manager
+   * Informations d’identification d’utilisateur du proxy pour tester vos personnalisations sur du contenu actif dʼAEM
+   * Exigences en matière de conception front-end
+* De l’administrateur Cloud Manager :
+   * Un e-mail de bienvenue de Cloud Manager vous informant de l’accès
+   * Le nom du programme ou son adresse URL dans Cloud Manager
 
-Si l’un de ces éléments vous manque, contactez l’administrateur AEM ou l’administrateur Cloud Manager.
+Si lʼun de ces éléments est manquant, contactez lʼadministrateur AEM ou Cloud Manager.
 
-Il est supposé que le développeur front-end dispose d’une vaste expérience des workflows de développement front-end ainsi que des outils courants installés, notamment :
+Il est présumé que le développeur front-end possède une solide expérience des workflows de développement front-end ainsi que des outils courants installés, notamment :
 
-* git
-* npm
+* Git
+* npm 
 * webpack
 * Un éditeur préféré
 
 ## Présentation de Cloud Manager {#understanding-cloud-manager}
 
-Cloud Manager permet aux entreprises de gérer elles-mêmes les AEM dans le cloud. Il comprend une structure d’intégration et de diffusion continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la diffusion des personnalisations ou des mises à jour sans compromettre les performances ou la sécurité.
+Cloud Manager permet aux entreprises de gérer elles-mêmes AEM dans le cloud. Il comprend une structure d’intégration et de diffusion continues (CI/CD) qui permet aux équipes informatiques et aux partenaires d’implémentation d’accélérer la diffusion des personnalisations ou des mises à jour sans compromettre les performances ou la sécurité.
 
-Pour le développeur front-end, il s’agit de la passerelle vers :
+Pour le développeur front-end, il s’agit dʼune passerelle permettant de :
 
-* Accédez aux informations AEM référentiel git afin de pouvoir valider vos personnalisations frontales.
-* Démarrez le pipeline de déploiement pour déployer vos personnalisations.
+* Accéder aux informations du référenciel Git d&#39;AEM afin de pouvoir valider vos personnalisations.
+* Démarrer le pipeline de déploiement afin de déployer vos personnalisations.
 
-L’administrateur de Cloud Manager vous a intégré en tant qu’utilisateur de Cloud Manager. Vous auriez dû recevoir un e-mail de bienvenue similaire à ce qui suit.
+L’administrateur Cloud Manager vous a à présent intégré en tant qu’utilisateur de Cloud Manager. Vous devriez avoir reçu un e-mail de bienvenue semblable à celui ci-dessous.
 
-![Courriel de bienvenue](assets/welcome-email.png)
+![E-mail de bienvenue](assets/welcome-email.png)
 
-Si vous n’avez pas reçu cet e-mail, contactez l’administrateur de Cloud Manager.
+Si vous n’avez pas reçu cet e-mail, contactez l’administrateur Cloud Manager.
 
-## L’accès à Cloud Manager {#access-cloud-manager}
+## Accès à Cloud Manager {#access-cloud-manager}
 
-1. Connectez-vous à Adobe Experience Cloud à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) ou cliquez sur le lien proposé dans l&#39;email de bienvenue.
+1. Connectez-vous à Adobe Experience Cloud à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) ou cliquez sur le lien fourni dans lʼe-mail de bienvenue.
 
-1. Cloud Manager répertorie les différents programmes disponibles. Appuyez ou cliquez sur celui auquel vous devez accéder, comme fourni par l’administrateur de Cloud Manager. S’il s’agit de votre premier projet front-end pour AEMaaCS, il est probable qu’un seul programme soit disponible.
+1. Cloud Manager répertorie les différents programmes disponibles. Appuyez ou cliquez sur celui auquel vous devez accéder, comme indiqué par l’administrateur Cloud Manager. S’il s’agit de votre premier projet front-end pour AEMaaCS, vous nʼavez probablement quʼun seul programme disponible.
 
    ![Sélection d’un programme dans Cloud Manager](assets/cloud-manager-select-program.png)
 
 Vous voyez maintenant un aperçu de votre programme. Votre page sera différente, mais similaire à cet exemple.
 
-![Présentation de Cloud Manager](assets/cloud-manager-overview.png)
+![Présentation de Cloud Manager](assets/cloud-manager-overview.png)
 
 ## Récupération des informations d’accès au référentiel {#repo-access}
 
-1. Dans le **Pipelines** de la page Cloud Manager, appuyez ou cliquez sur l’icône **Accès aux informations sur le référentiel** bouton .
+1. Dans la section **Pipelines** de la page Cloud Manager, appuyez ou cliquez sur le bouton **Accéder aux informations sur le référentiel**.
 
    ![Pipelines](assets/pipelines-repo-info.png)
 
-1. Le **Informations sur le référentiel** s’ouvre.
+1. La boîte de dialogue **Informations du référentiel** s’affiche.
 
-   ![Informations sur le référentiel](assets/repo-info.png)
+   ![Informations du référentiel](assets/repo-info.png)
 
 1. Appuyez ou cliquez sur le bouton **Générer un mot de passe** pour créer un mot de passe.
 
-1. Enregistrez le mot de passe généré dans un gestionnaire de mot de passe sécurisé. Le mot de passe ne s’affichera plus jamais.
+1. Enregistrez le mot de passe généré dans un gestionnaire de mots de passe sécurisé. Le mot de passe ne sera plus jamais affiché.
 
-1. Copiez également la variable **username** et **Ligne de commande Git** champs. Vous utiliserez ces informations ultérieurement pour accéder au référentiel.
+1. Copiez également les champs **Nom d’utilisateur** et **Ligne de commande Git**. Utilisez ces informations plus tard pour accéder au référentiel.
 
 1. Appuyez ou cliquez sur **Fermer**.
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
-Maintenant que vous avez terminé cette partie du parcours de création rapide de site AEM, vous devez :
+Maintenant que vous avez terminé cette partie du parcours de création rapide de site AEM vous devriez :
 
 * Découvrez Cloud Manager à un haut niveau.
-* Vous avez récupéré vos informations d’identification pour accéder au git d’AEM afin que vous puissiez valider vos personnalisations.
+* Avoir récupéré vos identifiants pour accéder au Git d’AEM afin de valider vos personnalisations.
 
-Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document. [Personnaliser le thème du site,](customize-theme.md) où vous découvrirez comment le thème du site est créé, comment personnaliser et comment tester à l’aide de contenu d’AEM en direct.
+Tirez parti de ces connaissances et poursuivez votre parcours de création rapide de site AEM en consultant le document [Personnaliser le thème du site](customize-theme.md), où vous apprendrez à créer le thème du site, à le personnaliser et à le tester à l’aide de contenu actif d’AEM.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Bien qu’il soit recommandé de passer à la partie suivante du parcours de création de site rapide en consultant le document [Personnaliser le thème du site,](customize-theme.md) vous trouverez ci-dessous des ressources facultatives supplémentaires qui approfondissent certains concepts mentionnés dans ce document, mais qui ne sont pas nécessaires pour continuer sur le parcours.
+Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Personnaliser le thème du site](customize-theme.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, mais non obligatoires pour poursuivre le parcours.
 
-* [Documentation d’Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) - Consultez la documentation de Cloud Manager pour en savoir plus sur ses fonctionnalités.
+* [Documentation d’Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) : consultez la documentation de Cloud Manager pour en savoir plus sur ses fonctionnalités.
