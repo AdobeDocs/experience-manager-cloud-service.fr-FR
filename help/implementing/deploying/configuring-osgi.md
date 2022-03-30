@@ -235,7 +235,7 @@ Les valeurs des variables ne doivent pas dépasser 2 048 caractères.
 >1. Les clients ne doivent pas référencer de variables dotées du préfixe `INTERNAL_` ou `ADOBE_`.
 >
 >1. Les variables d’environnement dotées du préfixe `AEM_` sont définies par le produit comme API publique à utiliser et définir par les clients.
-   >   Bien que les clients puissent utiliser et définir des variables d’environnement commençant par le préfixe `AEM_`, ils ne doivent pas définir leurs propres variables avec ce préfixe.
+>   Bien que les clients puissent utiliser et définir des variables d’environnement commençant par le préfixe `AEM_`, ils ne doivent pas définir leurs propres variables avec ce préfixe.
 
 
 ### Valeurs par défaut {#default-values}
@@ -273,6 +273,7 @@ Si une propriété OSGI nécessite des valeurs différentes pour la création et
 * Des dossiers OSGi `config.author` et `config.publish` distincts sont nécessaires, comme décrit dans la section [Résolution du mode d’exécution](#runmode-resolution).
 * Deux options permettent de créer des noms de variable indépendants :
    * la première option, recommandée : dans tous les dossiers OSGI (comme `config.author` et `config.publish`) déclarés pour définir des valeurs différentes, utilisez le même nom de variable. Par exemple :
+
       `$[env:ENV_VAR_NAME;default=<value>]`, où la valeur par défaut correspond à la valeur par défaut de ce niveau (auteur ou publication). Lors de la définition de la variable d’environnement par le biais de [l’API Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou d’un client, différenciez les niveaux à l’aide du paramètre « service », comme décrit dans cette [documentation de référence de l’API](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables). Le paramètre « service » lie la valeur de la variable au niveau OSGI approprié. Il peut s’agir de « création », « publication » ou « aperçu ».
    * la deuxième option, qui consiste à déclarer des variables distinctes à l’aide d’un préfixe tel que `author_<samevariablename>` et `publish_<samevariablename>` ;
 
