@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 1530763a4817b9d6c17b55fb2d8db98304f1d433
+source-git-commit: ac5984d9b5c8800287e11fe00e02d60d9727ed43
 workflow-type: tm+mt
-source-wordcount: '3397'
+source-wordcount: '3407'
 ht-degree: 95%
 
 ---
@@ -383,10 +383,12 @@ ht-degree: 95%
       + [Fin de prise en charge des visionneuses Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fin de vie des visionneuses DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Intégration à Adobe Workfront {#integrations}
+      + [Notes de mise à jour de Workfront pour Experience Manager Enhanced Connector](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [Intégrations à  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Installer le [!DNL enhanced connector] pour [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Suppression des dépendances externes pour les installations existantes](/help/assets/remove-external-dependencies.md)
       + [Configurer le [!DNL enhanced connector] pour [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Mettre à jour [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + [Présentation](/help/forms/home.md)
    + [Fonctions clés](/help/forms/key-features.md)
