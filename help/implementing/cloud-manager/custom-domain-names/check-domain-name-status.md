@@ -1,53 +1,61 @@
 ---
 title: Vérification de l’état du nom de domaine
-description: Vérification de l’état du nom de domaine
+description: Découvrez comment déterminer si Cloud Manager a vérifié votre nom de domaine personnalisé avec succès.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 4533cbc689d69cbe126791b4426123f890754507
+source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 100%
+source-wordcount: '388'
+ht-degree: 17%
 
 ---
 
+
 # Vérification de l’état du nom de domaine {#check-status}
 
-Vous pouvez déterminer si votre nom de domaine a bien été vérifié en cliquant sur l’icône État du nom de domaine dans le tableau Environnements sur la page Paramètres de domaine.
+Vous pouvez déterminer l’état de votre nom de domaine personnalisé dans Cloud Manager.
 
->[!NOTE]
->Cloud Manager déclenche automatiquement une vérification TXT lorsque vous sélectionnez Enregistrer à l’étape de vérification de l’assistant Ajout de domaine personnalisé. Pour les vérifications suivantes, vous devez sélectionner activement l’icône **Vérifier à nouveau** en regard de l’état.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-Cloud Manager vérifie la propriété du domaine via la valeur TXT et affiche l’un des messages d’état suivants :
+1. Accédez au **Environnements** de l’écran **Présentation** page.
 
-* **Échec de la vérification du domaine**
-La valeur TXT est manquante ou des erreurs ont été détectées. Suivez les instructions et réessayez. Une fois prêt, vous devez sélectionner 
-l’icône *Vérifier à nouveau* en face du statut.
+1. Cliquez sur **Paramètres de domaine** dans le panneau de navigation de gauche.
 
-* **Vérification du domaine en cours**
-Vérification en cours. Ce statut s’affiche généralement une fois que vous avez sélectionné 
-l’icône *Vérifier à nouveau* en face du statut.
+1. Cliquez sur le bouton **État** pour le nom de domaine.
 
-* **Vérifié, échec du déploiement**
-La vérification TXT a réussi. Cependant, le déploiement du CDN a échoué. Contactez votre représentant Adobe.
+Cloud Manager vérifie la propriété du domaine via la valeur TXT et affiche l’un des messages d’état suivants.
 
-* **Domaine vérifié et déployé**
-Ce statut indique que votre nom de domaine personnalisé est prêt à être utilisé.
-   >[!NOTE]
-   >À ce stade, votre nom de domaine personnalisé est prêt à être testé et pointé vers le nom de domaine Cloud Manager. Voir [Configuration des paramètres DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) pour en savoir plus.
+* **Échec de la vérification du domaine** - La valeur TXT est manquante ou est détectée avec des erreurs.
 
-* **Suppression**
-La suppression du nom de domaine personnalisé est en cours.
+   * Suivez les instructions fournies pour résoudre le problème.
+   * Une fois prêt, vous devez sélectionner la variable **Vérifier à nouveau** en regard de l’état.
 
-* **Échec de la suppression**
-La suppression du nom de domaine personnalisé a échoué. Vous devez réessayer. Consultez [Suppression d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md) pour en savoir plus.
+* **Vérification de domaine en cours** - La vérification est en cours.
 
+   * Cet état s’affiche généralement une fois que vous avez sélectionné la variable **Vérifier à nouveau** en regard de l’état.
+
+* **Vérifié, Échec du déploiement** - La vérification TXT a réussi, mais le déploiement CDN a échoué.
+
+   * Dans ce cas, veuillez contacter votre représentant Adobe.
+
+* **Domaine vérifié et déployé** - Cet état indique que votre nom de domaine personnalisé est prêt à être utilisé.
+
+   * À ce stade, votre nom de domaine personnalisé est prêt à être testé et pointé vers le nom de domaine Cloud Manager.
+   * Reportez-vous au document [Configuration des paramètres DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) pour en savoir plus.
+
+* **Suppression** - La suppression d’un nom de domaine personnalisé est en cours.
+
+* **Échec de la suppression** - La suppression du nom de domaine personnalisé a échoué et doit être refaite.
+
+   * Reportez-vous au document [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus.
+
+Cloud Manager déclenche automatiquement une vérification TXT lorsque vous sélectionnez **Enregistrer** à l’étape de vérification de la **Ajouter un domaine personnalisé** assistant. Pour les vérifications suivantes, vous devez sélectionner activement l’icône Vérifier à nouveau en regard de l’état.
 
 ## Configurations CDN pré-existantes pour les noms de domaine personnalisés {#pre-existing-cdn}
 
-Les clients disposant d’environnements qui incluent des configurations CDN préexistantes pour les listes autorisées d’adresses IP, des certificats SSL ou des noms de domaines personnalisés voient le message suivant dans les pages de détails **Liste autorisée d’adresses IP** et **Environnement**. Le message affiché dans l’interface utilisateur disparaît une fois que le client a effectué la migration complète de toutes les configurations d’environnement préexistantes via l’interface utilisateur et il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
+Si vous disposez d’une configuration de réseau de diffusion de contenu préexistante pour vos noms de domaine personnalisés, un message d’information s’affichera sur le **LISTE AUTORISÉE IP** et **Environnement** pages, vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
 
->[!NOTE]
->Pour afficher et gérer les configurations préexistantes, celles-ci doivent être ajoutées via l’interface utilisateur. Pour plus d’informations, consultez la section [Affichage et mise à jour du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md).
+Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)
+Reportez-vous au document [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) pour plus d’informations.
 
-![](/help/implementing/cloud-manager/assets/ip-allow-list-message2.png)
+![Message de configuration CDN préexistant](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)

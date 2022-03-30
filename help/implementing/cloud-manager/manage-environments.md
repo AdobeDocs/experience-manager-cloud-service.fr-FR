@@ -2,9 +2,9 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 95539851590456b6b5ecbfeb0df8fc7bc7dde74b
+source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1747'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 Les fonctionnalités de chaque environnement dépendent des solutions activées dans le conteneur . [programme.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
 * [Sites](/help/sites-cloud/home.md)
-* [Ressources](/help/assets/home.md)
+* [Assets](/help/assets/home.md)
 * [Formulaires](/help/forms/home.md)
 * [Screens](/help/screens-cloud/home.md)
 
@@ -216,9 +216,7 @@ Les actions suivantes peuvent être effectuées sur le service de publication po
 
 * [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
 
-* [Affichage et mise à jour d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/view-update-replace-custom-domain-name.md)
-
-* [Suppression d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/delete-custom-domain-name.md)
+* [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
 
 * [Vérification de l’état d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) ou d’un [certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
