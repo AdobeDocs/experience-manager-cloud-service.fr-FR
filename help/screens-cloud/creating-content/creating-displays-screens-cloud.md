@@ -2,10 +2,10 @@
 title: Création et gestion des affichages dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des affichages dans Screens as a Cloud Service.
 exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
-source-git-commit: b56c7e5de41cf75f4442d8294ddfbe1a05cb3dee
+source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
-source-wordcount: '436'
-ht-degree: 56%
+source-wordcount: '668'
+ht-degree: 37%
 
 ---
 
@@ -63,7 +63,7 @@ Vous pouvez passer le rail de dossiers de l’affichage de tous les dossiers à 
 
 1. Le rail latéral du dossier s’affiche.
 
-![image](/help/screens-cloud/assets/display/toggle-rail.png)
+   ![image](/help/screens-cloud/assets/display/toggle-rail.png)
 
 1. Sélectionner **Masquer les dossiers** pour le fermer à nouveau.
 
@@ -74,13 +74,62 @@ Vous pouvez créer des dossiers pour mieux organiser vos affichages.
 1. Accédez à la vue d’inventaire.
 1. Assurez-vous que vous ne vous trouvez pas dans un dossier. Les éléments suivants doivent s’afficher :
 
-![image](/help/screens-cloud/assets/display/verify-view.png)
+   ![image](/help/screens-cloud/assets/display/verify-view.png)
 
-Remarque : **Tous les affichages** doit être sélectionné dans le rail latéral du dossier et la navigation du chemin de navigation doit uniquement afficher **Affichages**.
+   Remarque : **Tous les affichages** doit être sélectionné dans le rail latéral du dossier et la navigation du chemin de navigation doit uniquement afficher **Affichages**.
 
-1. Cliquez sur le bouton &quot;Créer&quot; en haut à droite et sélectionnez le **Dossier** option
+1. Cliquez sur le bouton &quot;Créer&quot; en haut à droite et sélectionnez le **Dossier** .
+
+   ![image](/help/screens-cloud/assets/display/Createfolder.png)
 
 1. Renseignez le titre du nouveau dossier et cliquez sur **Créer**.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## Création d’un dossier imbriqué {#nested-folder}
+
+1. Accédez à la vue d’inventaire.
+
+1. Sélectionnez le dossier parent souhaité dans le rail latéral du dossier ou en naviguant dans la vue d’inventaire.
+1. Vérifiez que le dossier parent souhaité est sélectionné.
+
+   ![image](/help/screens-cloud/assets/display/Nestedview.png)
+
+   * Le dossier doit être sélectionné dans le rail latéral du dossier.
+   * La navigation dans le chemin de navigation doit afficher le nom du dossier actif en regard de **Affichages**.
+
+1. Cliquez sur  **Créer**  en haut à droite et sélectionnez l’événement **Dossier** .
+
+   ![image](/help/screens-cloud/assets/display/Createfolder.png)
+
+1. Renseignez le titre du nouveau dossier et cliquez sur **Créer**.
+
+   ![image](/help/screens-cloud/assets/display/Createfolder2.png)
+
+## Comment déplacer du contenu vers un nouveau dossier {#move-folder}
+
+Vous pouvez déplacer du contenu vers vos nouveaux dossiers pour mieux organiser vos affichages.
+
+1. Accédez à la vue d’inventaire.
+
+1. Sélectionnez le dossier parent souhaité dans le rail latéral du dossier ou en le sélectionnant dans la vue d’inventaire.
+
+1. Vérifiez que vous avez sélectionné le dossier parent souhaité.
+
+![image](/help/screens-cloud/assets/display/movetofolder.png)
+
+**Remarque**: Le dossier doit être sélectionné dans le rail latéral du dossier. De plus, la navigation dans le chemin de navigation doit afficher le nom actuel du dossier en regard de **Affichages**.
+
+## Comment supprimer du contenu d’un dossier {#delete-folder}
+
+Toutes les opérations de dossier sont accessibles via la barre d’actions de sélection dans la vue de stock.
+
+1. Accédez au dossier parent ou sélectionnez-le dans le rail latéral.
+
+1. Dans la vue d’inventaire, sélectionnez le dossier enfant que vous souhaitez supprimer et assurez-vous qu’il est vide.
+
+1. Cliquez sur le bouton **Supprimer** dans la barre d’actions de sélection. L’action sera désactivée si le dossier n’est pas vide.
+
 
 ## Et après ? {#whats-next}
 
