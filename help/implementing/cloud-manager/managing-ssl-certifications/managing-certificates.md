@@ -2,7 +2,7 @@
 title: Gestion des certificats SSL
 description: Découvrez comment utiliser Cloud Manager pour vérifier l’état de vos certificats SSL et comment les modifier, les remplacer, les mettre à jour et les supprimer.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: 6cc1620d139db3804325c118d0874c5f94cb23a4
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 30%
@@ -24,16 +24,6 @@ L’état de vos certificats SSL se comprend d’un seul coup d’oeil grâce à
    * Cloud Manager envoie régulièrement des notifications dans l’interface utilisateur pour vous avertir d’une expiration imminente du certificat.
 
 * **Rouge** - Ce statut indique que le certificat SSL a expiré.
-
-## Configurations de réseau de diffusion de contenu préexistantes {#pre-existing-cdn}
-
-Si vous disposez d’une configuration de réseau de diffusion de contenu préexistante pour votre certificat SSL, un message d’information s’affichera sur le **Certificats SSL** , vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
-
-Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
-
-Reportez-vous au document [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour plus d’informations.
-
-Un message similaire est également fourni dans la variable **LISTE AUTORISÉE IP** et le **Environnements** pages pour les environnements qui possèdent des configurations CDN préexistantes pour les listes autorisées IP ou les noms de domaine personnalisés.
 
 ## Mise à jour d’un certificat SSL {#update-ssl-certificate}
 
@@ -70,3 +60,13 @@ Pour supprimer un certificat SSL, procédez comme suit.
 >[!NOTE]
 >
 >Un utilisateur doit être membre de la fonction **Propriétaire de l’entreprise** ou **Responsable de déploiement** pour supprimer un certificat SSL dans Cloud Manager.
+
+## Configurations de réseau de diffusion de contenu préexistantes {#pre-existing-cdn}
+
+Si vous disposez d’une configuration de réseau de diffusion de contenu préexistante pour votre certificat SSL, un message d’information s’affichera sur le **Certificats SSL** , vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
+
+Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
+
+Reportez-vous au document [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) pour plus d’informations.
+
+Un message similaire est également fourni dans la variable **LISTE AUTORISÉE IP** et le **Environnements** pages pour les environnements qui possèdent des configurations CDN préexistantes pour les listes autorisées IP ou les noms de domaine personnalisés.

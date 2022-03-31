@@ -2,9 +2,9 @@
 title: Vérification de l’état du nom de domaine
 description: Découvrez comment déterminer si Cloud Manager a vérifié votre nom de domaine personnalisé avec succès.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '384'
 ht-degree: 17%
 
 ---
@@ -52,10 +52,8 @@ Cloud Manager déclenche automatiquement une vérification TXT lorsque vous sél
 
 ## Configurations CDN pré-existantes pour les noms de domaine personnalisés {#pre-existing-cdn}
 
-Si vous disposez d’une configuration de réseau de diffusion de contenu préexistante pour vos noms de domaine personnalisés, un message d’information s’affichera sur le **LISTE AUTORISÉE IP** et **Environnement** pages, vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
+Si vous disposez d’une configuration de réseau de diffusion de contenu préexistante pour vos noms de domaine personnalisés, un message d’information s’affichera sur le **Noms de domaine personnalisés** et **Environnement** pages, vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
 
 Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
 Reportez-vous au document [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) pour plus d’informations.
-
-![Message de configuration CDN préexistant](/help/implementing/cloud-manager/assets/ip-allow-list-message1.png)

@@ -1,38 +1,32 @@
 ---
-title: Introduction – Listes autorisées IP dans Cloud Manager
-description: Introduction – Listes autorisées IP dans Cloud Manager
+title: Présentation des Listes autorisées IP
+description: Découvrez comment les listes autorisées IP peuvent limiter les adresses à partir desquelles les utilisateurs peuvent accéder à vos domaines as a Cloud Service AEM.
 exl-id: 352fae8e-d116-40b0-ba54-d7f001f076e8
-source-git-commit: 1875920ae5180074dcad98fb5c10242b6baa76c7
+source-git-commit: 8d1680fa8dbaaefa297cf8c6698097b3c7acc48d
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 100%
+source-wordcount: '267'
+ht-degree: 11%
 
 ---
 
-# Présentation {#introduction}
+
+# Présentation des Listes autorisées IP {#introduction}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_ipallowlist"
 >title="Gestion des listes autorisées d’adresses IP"
->abstract="AEM as a Cloud Service a accès à Internet, et la sécurité est gérée par l’authentification et l’autorisation des utilisateurs. La liste des adresses IP autorisées est une fonctionnalité de Cloud Manager permettant de contrôler l’accès et de le limiter aux utilisateurs de confiance uniquement. Cette fonctionnalité permet aux utilisateurs autorisés de créer des listes autorisées d’adresses IP de confiance à partir desquelles les utilisateurs de leurs sites peuvent accéder à leurs domaines AEM."
+>abstract="AEM as a cloud service est accessible via Internet et sécurisé via l’authentification et l’autorisation des utilisateurs. Les listes autorisées IP de Cloud Manager peuvent être utilisées pour limiter et contrôler l’accès uniquement aux adresses IP de confiance. Les utilisateurs de Cloud Manager disposant des autorisations appropriées peuvent créer des listes autorisées d’adresses IP de confiance à partir desquelles les utilisateurs de leur site peuvent accéder à leurs domaines d’AEM."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/add-ip-allow-lists.html?lang=fr" text="Ajout d’une liste d’adresses IP autorisées"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/ip-allow-lists/view-update-ip-allow-list.html?lang=fr" text="Affichage et mise à jour de la liste des adresses IP autorisées"
 
-AEM as a Cloud Service a accès à Internet, et la sécurité est gérée par l’authentification et l’autorisation des utilisateurs. La liste des adresses IP autorisées est une fonctionnalité de Cloud Manager permettant de contrôler l’accès et de le limiter aux utilisateurs de confiance uniquement. Cette fonctionnalité permet aux utilisateurs autorisés de créer des listes autorisées d’adresses IP de confiance à partir desquelles les utilisateurs de leurs sites peuvent accéder à leurs domaines AEM.
+AEM as a cloud service est accessible via Internet et sécurisé via l’authentification et l’autorisation des utilisateurs. Les listes autorisées IP de Cloud Manager peuvent être utilisées pour limiter et contrôler l’accès uniquement aux adresses IP de confiance. Les utilisateurs de Cloud Manager disposant des autorisations appropriées peuvent créer des listes autorisées d’adresses IP de confiance à partir desquelles les utilisateurs de leur site peuvent accéder à leurs domaines d’AEM.
 
->[!NOTE]
->Vous pouvez ajouter un maximum de 50 listes d’adresses IP autorisées dans votre programme et 50 adresses IP/CIDR peuvent être ajoutées à chaque liste d’adresses IP autorisées.
+Les listes autorisées IP peuvent être ajoutées une seule fois et appliquées/non appliquées plusieurs fois en tant qu’entité ou entité à un service de création et/ou d’éditeur dans un environnement.
 
-Les listes autorisées d’adresses IP peuvent être ajoutées une fois et appliquées/non appliquées plusieurs fois en tant qu’unité ou entité à un service auteur et/ou publicateur dans un environnement.
+## Limites {#limitations}
 
->[!NOTE]
->Les noms des listes d’adresses IP autorisées sont pris en charge dans Cloud Manager pour les services d’auteur ou de publication dans un environnement.
+Les listes d’adresses IP autorisées ont un certain nombre de limitations à garder à l’esprit.
 
-La page Liste autorisée IP de l’interface utilisateur Cloud Manager ou la page Détails de l’environnement permet à un utilisateur disposant d’autorisations d’effectuer plusieurs tâches afin de gérer les listes autorisées IP de vos environnements, y compris :
-
-* [Ajout d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-   >[!NOTE]
-   > Vous pouvez ajouter une fois et réutiliser ou appliquer la règle autant de fois que vous le voulez dans les services d’environnement du programme.
-* [Affichage ou mise à jour d’une liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md)
-* [Application ou annulation de l’application d’une liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-* [Suppression d’une liste autorisée d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/delete-ip-allow-list.md)
+* 50 listes autorisées IP au maximum peuvent être ajoutées à votre programme
+* Il est possible d’ajouter un maximum de 50 adresses IP/CIDR à chaque liste autorisée IP.
+* Les noms de listes autorisées IP sont pris en charge dans Cloud Manager pour le service de création et/ou de publication dans un environnement.

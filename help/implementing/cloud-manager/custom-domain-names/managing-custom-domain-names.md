@@ -1,13 +1,13 @@
 ---
 title: Gestion des noms de domaine personnalisés
 description: Découvrez comment utiliser Cloud Manager pour afficher, mettre à jour, remplacer et supprimer des noms de domaine personnalisés.
-source-git-commit: 4604b5fad59524a05dc7addf16c70246a14cfea1
+exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
+source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 32%
+source-wordcount: '338'
+ht-degree: 31%
 
 ---
-
 
 # Gestion des noms de domaine personnalisés {#managing-custom-domain-names}
 
@@ -52,7 +52,8 @@ Un utilisateur avec la variable **Propriétaire de l’entreprise** ou **Respons
 1. Cliquez sur le bouton représentant des points de suspension à l’extrémité droite de la ligne.
 
 1. Sélectionnez **Supprimer**.
-   ![](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
+
+   ![Suppression de noms de domaine personnalisés](/help/implementing/cloud-manager/assets/cdn/cdn-delete.png)
 
 1. Confirmez votre envoi.
 

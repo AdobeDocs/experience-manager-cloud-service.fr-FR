@@ -2,10 +2,10 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 7%
+source-wordcount: '1745'
+ht-degree: 6%
 
 ---
 
@@ -105,9 +105,9 @@ Un utilisateur disposant des autorisations requises doit suivre les étapes des 
 
 1. Créez une liste autorisée IP appropriée, appliquez-la au service de prévisualisation et annulez immédiatement l’application de la variable `Preview Default [<envId>]` liste autorisée.
 
-   * Voir [Annulation de l’application d’une Liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/unapply-ip-allow-list.md) pour plus d’informations.
+   * Reportez-vous au document [Application et annulation de l’application de Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) pour plus d’informations.
 
-1. Utiliser la mise à jour **LISTE AUTORISÉE IP** pour supprimer l’adresse IP par défaut et ajouter des adresses IP, le cas échéant. Pour en savoir plus, voir [Affichage et mise à jour d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/view-update-ip-allow-list.md).
+1. Utiliser la mise à jour **LISTE AUTORISÉE IP** pour supprimer l’adresse IP par défaut et ajouter des adresses IP, le cas échéant. Consultez [Gestion des listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) pour en savoir plus.
 
 Une fois l’accès au service de prévisualisation déverrouillé, l’icône de verrouillage devant le nom du service de prévisualisation ne s’affiche plus.
 
@@ -220,7 +220,7 @@ Les actions suivantes peuvent être effectuées sur le service de publication po
 
 * [Vérification de l’état d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) ou d’un [certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
-* [Vérification de l’état d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/check-ip-allow-list-status.md#pre-existing-cdn)
+* [Gestion des listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
 ## Gestion des listes autorisées d’adresses IP {#manage-ip-allow-lists}
