@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: ddc79a163e328d560912550900242cc089df3958
+source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 88%
+source-wordcount: '1192'
+ht-degree: 89%
 
 ---
 
@@ -43,10 +43,6 @@ Par défaut, [!DNL Experience Manager] déclenche une notification à la fin du 
 
 
 ### Activation des notifications par e-mail pour les téléchargements volumineux {#enable-emails-for-large-downloads}
-
->[!NOTE]
->
->Cette fonctionnalité est disponible dans le canal de version préliminaire. Pour plus d’informations sur l’activation de cette fonctionnalité dans votre environnement, consultez la [documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease).
 
 Les téléchargements asynchrones sont déclenchés dans l’un des cas suivants :
 

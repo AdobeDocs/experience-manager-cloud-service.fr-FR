@@ -1,18 +1,22 @@
 ---
 title: Requêtes GraphQL persistantes
-description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode de GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
+description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode de GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 59%
+source-wordcount: '768'
+ht-degree: 41%
 
 ---
 
 # Requêtes GraphQL persistantes {#persisted-queries-caching}
 
-Les requêtes persistantes sont des requêtes GraphQL créées et stockées sur le serveur AEM. Les requêtes GraphQL standard sont exécutées à l’aide de requêtes POST et la réponse ne peut pas être facilement mise en cache. Les requêtes persistantes peuvent être demandées avec une requête de GET par les applications clientes. La réponse d’une demande de GET peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances de l’application cliente qui la demande.
+Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur as a Cloud Service Adobe Experience Manager (AEM). Ils peuvent être demandés avec une demande de GET par les applications clientes. La réponse d’une demande de GET peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances de l’application cliente qui la demande. Cela diffère des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes de POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
+
+Le [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) est disponible dans AEM (par défaut, `dev-author`) pour que vous puissiez développer, tester et conserver vos requêtes GraphQL, avant [transfert vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, lorsque [personnalisation du cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; voir l’exemple de curl fourni dans [Comment conserver une requête GraphQL](#how-to-persist-query).
+
+## Requêtes et points de fin persistants {#persisted-queries-and-endpoints}
 
 Les requêtes persistantes doivent toujours utiliser le point d’entrée associé à la [configuration Sites appropriée](graphql-endpoint.md) afin qu’ils puissent utiliser l’une des fonctionnalités ou les deux :
 
@@ -26,7 +30,7 @@ Par exemple, pour créer une requête persistante spécifique à la configuratio
 >
 >Voir [Activation de la fonctionnalité de fragment de contenu dans le navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md#enable-content-fragment-functionality-in-configuration-browser) pour plus d’informations.
 >
->Les **Requêtes de persistance GraphQL** doivent être activées pour la configuration Sites appropriée.
+>Le **Requêtes persistantes GraphQL** doivent être activés pour la configuration Sites appropriée.
 
 Par exemple, s’il existe une requête spécifique appelée `my-query`, qui utilise un modèle `my-model` de la configuration Sites `my-conf` :
 
@@ -41,9 +45,15 @@ Par exemple, s’il existe une requête spécifique appelée `my-query`, qui uti
 >
 >Il se trouve qu’elles utilisent le même modèle – mais via différents points d’entrée.
 
-## Comment conserver une requête GraphQL
+## Comment conserver une requête GraphQL {#how-to-persist-query}
 
-Il est recommandé de conserver les requêtes dans un environnement de création d’AEM au départ, puis [publier la requête ;](#publish-persisted-query) dans un environnement de publication AEM. Outils tels que [Postman](https://www.postman.com/) ou des outils de ligne de commande tels que [curl](https://curl.se/) peut être utilisé.
+Il est recommandé de conserver les requêtes dans un environnement de création d’AEM au départ, puis [transférer la requête](#transfer-persisted-query-production) à votre environnement de production AEM publication, pour une utilisation par les applications.
+
+Il existe différentes méthodes de requête persistante, notamment :
+
+* l’IDE GraphiQL - voir [Enregistrement des requêtes persistantes](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* curl - voir l’exemple suivant
+* Autres outils, notamment [Postman](https://www.postman.com/)
 
 Vous trouverez ci-dessous la procédure à suivre pour conserver une requête donnée à l’aide de la fonction **curl** outil de ligne de commande :
 
@@ -185,13 +195,23 @@ Vous trouverez ci-dessous la procédure à suivre pour conserver une requête do
        "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
    ```
 
-## Publier une requête persistante {#publish-persisted-query}
+## Transfert d’une requête persistante vers votre environnement de production  {#transfer-persisted-query-production}
 
-Les requêtes persistantes peuvent être publiées dans un environnement de publication AEM où elles peuvent être demandées par les applications clientes. Pour utiliser une requête persistante lors de la publication, l’arborescence persistante associée doit être répliquée.
+En fin de compte, votre requête persistante doit se trouver dans votre environnement de publication de production (d’AEM as a Cloud Service), où elle peut être demandée par les applications clientes. Pour utiliser une requête persistante sur votre environnement de publication de production, l’arborescence persistante associée doit être répliquée :
 
-Plusieurs méthodes permettent de publier une requête persistante :
+* à l’auteur de production pour la validation du contenu nouvellement créé avec les requêtes,
+* enfin, publier la production pour la consommation réelle
 
-* **Utilisation d’un POST pour la réplication**:
+Il existe plusieurs méthodes pour transférer votre requête conservée :
+
+1. Utilisation d’un module :
+   1. Créez une définition de module.
+   1. Incluez la configuration (par exemple, `/conf/wknd/settings/graphql/persistentQueries`).
+   1. Créez le module.
+   1. Transférez le package (téléchargez/téléchargez ou répliquez).
+   1. Installez le package.
+
+1. Utilisation d’un POST pour la réplication :
 
    ```xml
    $ curl -X POST   http://localhost:4502/bin/replicate.json \
@@ -200,20 +220,16 @@ Plusieurs méthodes permettent de publier une requête persistante :
    -F cmd=activate
    ```
 
-* **Utiliser un package**:
-   1. Créez une définition de module.
-   1. Incluez la configuration (par exemple, `/conf/wknd/settings/graphql/persistentQueries`).
-   1. Créez le module.
-   1. Répliquez le module.
+<!--
+1. Using replication/distribution tool:
+   1. Go to the Distribution tool.
+   1. Select tree activation for the configuration (for example, `/conf/wknd/settings/graphql/persistentQueries`).
 
-* **Utilisation de l’outil de réplication/distribution**:
-   1. Accédez à l’outil Distribution.
-   1. Sélectionnez l’activation de l’arborescence pour la configuration (par exemple, `/conf/wknd/settings/graphql/persistentQueries`).
+* Using a workflow (via workflow launcher configuration):
+  1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
+-->
 
-* **Utilisation d’un workflow (via la configuration du lanceur de workflow)**:
-   1. Définissez une règle de lancement de workflow pour exécuter un modèle de workflow qui répliquerait la configuration sur différents événements (par exemple, créer, modifier, entre autres).
-
-Une fois la configuration de la requête publiée, les mêmes principes d’authentification s’appliquent, en utilisant simplement le point de terminaison de publication.
+Une fois la configuration de la requête effectuée dans votre environnement de publication en production, les mêmes principes d’authentification s’appliquent, en utilisant simplement le point de terminaison de publication.
 
 >[!NOTE]
 >
@@ -221,13 +237,14 @@ Une fois la configuration de la requête publiée, les mêmes principes d’auth
 >
 >Si ce n’est pas le cas, l’exécution sera impossible.
 
->[!NOTE]
->
->Les points-virgules (;) des URL doivent être codés.
->
->Par exemple, comme dans la demande d’exécution d’une requête persistante :
->
->
+## Encodage de l’URL de requête à utiliser par une application {#encoding-query-url}
+
+Pour une utilisation par une application, tout point-virgule (&quot;;&quot;) doit être codé dans les URL.
+
+Par exemple, comme dans la demande d’exécution d’une requête persistante :
+
 ```xml
->curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
->```
+curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+```
+
+Pour utiliser une requête persistante dans une application cliente, le SDK client AEM sans interface utilisateur doit être utilisé. [AEM client sans affichage pour JavaScript](https://github.com/adobe/aem-headless-client-js).

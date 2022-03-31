@@ -2,10 +2,10 @@
 title: Création d’une requête API - Configuration sans affichage
 description: Découvrez comment utiliser l’API GraphQL pour diffuser sans interface du contenu de fragment de contenu et AEM l’API REST Assets pour gérer les fragments de contenu.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: d3c926216486c2971e498c2ea8a47f9c96935554
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 69%
+source-wordcount: '670'
+ht-degree: 65%
 
 ---
 
@@ -13,12 +13,12 @@ ht-degree: 69%
 
 Découvrez comment utiliser l’API GraphQL pour diffuser sans interface du contenu de fragment de contenu et AEM l’API REST Assets pour gérer les fragments de contenu.
 
-## Que sont les API GraphQL et REST Assets ?  {#what-are-the-apis}
+## En quoi consistent les API REST GraphQL et Assets ? {#what-are-the-apis}
 
 [Maintenant que vous avez créé des fragments de contenu](create-content-fragment.md), vous pouvez utiliser les API d’AEM pour une diffusion découplée.
 
 * [L’API GraphQL](/help/headless/graphql-api/content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu. Cette API offre l’ensemble de fonctionnalités le plus robuste pour interroger et utiliser du contenu de fragment de contenu.
-   * Pour l’utiliser, [Les points de fin doivent être définis et activés dans AEM](/help/headless/graphql-api/graphql-endpoint.md), et si nécessaire, la variable [Interface GraphiQL installée](/help/headless/graphql-api/graphiql-ide.md).
+   * Pour l’utiliser, les [points de fin doivent être définis et activés dans AEM](/help/headless/graphql-api/graphql-endpoint.md), et si nécessaire, l’[interface GraphiQL installée](/help/headless/graphql-api/graphiql-ide.md).
 * [L’API REST Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragments de contenu.
@@ -48,13 +48,16 @@ Les architectes de l’information doivent concevoir des requêtes pour leurs po
 GraphiQL est un IDE qui peut être installé sur un environnement AEM. Suivez les étapes de la section [Utilisation de l’IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) pour effectuer l’installation sur votre environnement AEM.
 
 1. Connectez-vous à AEM en as a Cloud Service et accédez à l’interface GraphiQL :
-   * Par exemple : `https://<host>:<port>/content/graphiql.html`.
+   * Par exemple : `https://<host>:<port>/aem/graphiql.html`.
 
-1. L’IDE GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
-   * Le volet de gauche permet de construire votre requête.
-   * Le volet de droite affiche les résultats.
+1. L’IDE GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes afin de récupérer des fragments de contenu afin de les diffuser sans affichage au format JSON.
+   * La liste déroulante en haut à droite vous permet de sélectionner le point de terminaison.
+   * Un panneau de gauche répertorie les requêtes persistantes (le cas échéant).
+   * Le panneau du milieu à gauche vous permet de créer votre requête.
+   * Le panneau du milieu droit affiche les résultats.
    * L’éditeur de requêtes comprend la saisie du code et des touches d’accès rapide pour exécuter facilement la requête.
-      ![Éditeur GraphiQL](../assets/graphiql.png)
+
+   ![Éditeur GraphiQL](../assets/graphiql.png)
 
 1. En supposant que le modèle que nous avons créé s’appelle `person`, avec les champs `firstName`, `lastName` et `position`, nous pouvons créer une requête simple pour récupérer le contenu de notre fragment de contenu.
 

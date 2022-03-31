@@ -4,10 +4,10 @@ description: Cet article décrit comment créer, modifier et utiliser les facett
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
-source-wordcount: '2360'
-ht-degree: 100%
+source-wordcount: '2397'
+ht-degree: 98%
 
 ---
 
@@ -144,6 +144,11 @@ Le prédicat `Tags` vous permet de rechercher des ressources sur la base des bal
 1. Accédez au panneau Rechercher. Le prédicat **[!UICONTROL Balises]** est ajouté au panneau Rechercher.
 1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
+
+Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction de la variable **[!UICONTROL Nom]** (ordre alphabétique), **[!UICONTROL Créé]** date ou **[!UICONTROL Modifié]** date. Dans l’illustration suivante, la structure des balises est triée par ordre alphabétique en fonction de la variable **[!UICONTROL Nom]**.
+
+![add-tags](assets/add-tags-to-asset.png)
+
 
 ## Ajout d’autres prédicats {#adding-other-predicates}
 

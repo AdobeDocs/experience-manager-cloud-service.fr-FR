@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 843d6660fc2a2048d138601b4b74ee9f2faa54c9
+source-git-commit: 54b83598a5d48832ecdea666c059e91b3dfa3ef9
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 100%
+source-wordcount: '922'
+ht-degree: 80%
 
 ---
 
@@ -74,14 +74,45 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 
 ## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 
-À l’aide des balises telles que les métadonnées, vous pouvez facilement rechercher des ressources, créer des collections à l’aide des résultats de recherche, améliorer le classement de certaines ressources et appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
+<!--
+Using tags, as a metadata, you can easily search assets, create collections using the search results, boost search ranking for some assets, and apply AI algorithms of Adobe Sensei for asset discovery.
 
-[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure d’apprentissage automatique, qui peuvent être formés à reconnaître et à appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources.
+[!DNL Adobe Experience Manager Assets] uses a self-learning algorithm to create highly descriptive tags that allow you to find the right asset in just a few clicks. Smart tagging uses Adobe Sensei, artificial intelligence and machine learning framework, which can be trained to recognize and apply both standard and business-specific tags to imagery. Smart Tags can also identify content, individual words, or phrases and automatically apply descriptive tags to assets
+
+For more information, see the following articles:
+
+* [Edit asset metadata](meta-edit.md)
+* [Smart Tags in Assets](smart-tags.md)
+-->
+
+L’ajout de balises à des ressources les rend plus faciles à récupérer au cours d’une recherche, à créer des collections à l’aide des résultats de recherche, à améliorer le classement de certaines ressources et à appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
+
+[!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure d’apprentissage automatique, qui peuvent être formés à reconnaître et à appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources..
+
+Vous trouverez ci-dessous la procédure à suivre pour ajouter des balises à une ressource :
+
+1. Connectez-vous à [!DNL Experience Manager Assets].
+1. Cliquez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**, sélectionnez la ressource et cliquez sur **[!UICONTROL Propriétés]** pour ouvrir les propriétés de la ressource.
+1. Dans le **[!UICONTROL De base]** , cliquez sur l’icône de dossier dans **[!UICONTROL Balises]** métadonnées. Une fenêtre contextuelle s’ouvre.
+1. Recherchez ou sélectionnez les balises appropriées parmi les balises existantes dans `cq-tags`. Vous pouvez affecter plusieurs balises à la ressource.
+
+   Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction de la variable **[!UICONTROL Nom]** (ordre alphabétique), **[!UICONTROL Créé]** date ou **[!UICONTROL Modifié]** date. Dans l’illustration suivante, la structure des balises est triée par ordre alphabétique en fonction de la variable **[!UICONTROL Nom]**.
+
+   ![add-tags](assets/add-tags-to-asset.png)
+
+1. Cliquez sur **Enregistrer** pour mettre à jour les modifications apportées aux métadonnées de la ressource.
+
+>[!NOTE]
+>
+>Vous pouvez trier la structure des balises lors de la création de balises intelligentes et lors de l’application de filtres de recherche à l’aide du prédicat de balises.
+>
+>La fonction de tri des balises est disponible dans le canal de version préliminaire. Pour plus d’informations sur l’activation de cette fonctionnalité dans votre environnement, consultez la [documentation sur les canaux de version préliminaire](/help/release-notes/prerelease.md#enable-prerelease).
 
 Pour plus d’informations, consultez les articles suivants :
 
 * [Modification de métadonnées de ressource](meta-edit.md)
 * [Balises intelligentes dans Assets](smart-tags.md)
+* [Ajout d’un prédicat de balises au panneau de recherche](/help/assets/search-facets.md/#adding-a-tags-predicate)
 
 ## Organisation en tant que collections {#organize-as-collections}
 

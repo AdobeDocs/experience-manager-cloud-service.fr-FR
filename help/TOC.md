@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 62c0c4cbc6de202e4fb2aecb02a146a19088d7ee
+source-git-commit: 170f93e9ef8b92ce258cc6f3e2d35ece27709fd5
 workflow-type: tm+mt
-source-wordcount: '3387'
+source-wordcount: '3409'
 ht-degree: 95%
 
 ---
@@ -32,6 +32,8 @@ ht-degree: 95%
    + [Informations sur la version](/help/release-notes/home.md)
    + Notes de mise à jour {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2022 {#2022}
+         + [Notes de mise à jour de la version 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
          + [Notes de mise à jour de la version 2021.11.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-11-0.md)
          + [Notes de mise à jour de la version 2021.10.0](/help/release-notes/release-notes-cloud/2021/release-notes-2021-10-0.md)
@@ -104,7 +106,7 @@ ht-degree: 95%
    + [Guide de migration vers Experience Manager as a Cloud Service pour les partenaires](/help/journey-migration/getting-started-partners.md)
    + Notes de mise à jour des outils de migration {#release-notes-migration-tools}
       + [Notes de mise à jour de la version actuelle (2022.3.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [Notes de mise à jour de la version 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+      + [Notes de mise à jour de la version 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
       + [Notes de mise à jour de la version 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
       + 2021 {#2021}
          + [Notes de mise à jour de la version 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
@@ -263,7 +265,9 @@ ht-degree: 95%
    + Intégration d’AEM as a Cloud Service {#integrations}
       + [Intégration à Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Intégration à Adobe Analytics Configuration automatisée](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
+      + [Configuration IMS à utiliser lors de l’intégration à Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
+      + [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
 + Ressources {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)

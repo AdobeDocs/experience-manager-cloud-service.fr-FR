@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 15%
+source-wordcount: '1435'
+ht-degree: 16%
 
 ---
 
@@ -61,10 +61,6 @@ Pour continuer, cliquez sur **[!UICONTROL Suivant]**. Selon la sélection, la va
 
 ### Ajouter du contenu {#add-content}
 
->[!NOTE]
->
->Cette fonctionnalité est disponible dans le canal de version préliminaire. Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
-
 Publication sur [!DNL Experience Manager Assets] vous permet d’ajouter davantage de contenu (ressources et dossiers) à la liste de publication. Vous pouvez ajouter d’autres ressources ou dossiers à la liste dans les référentiels DAM. Cliquez sur **[!UICONTROL Ajouter du contenu]** pour ajouter du contenu.
 
 Vous pouvez ajouter plusieurs ressources à partir d’un dossier ou ajouter plusieurs dossiers à la fois. Mais vous ne pouvez pas ajouter de ressources à partir de plusieurs dossiers à la fois.
@@ -72,10 +68,6 @@ Vous pouvez ajouter plusieurs ressources à partir d’un dossier ou ajouter plu
 ![Ajouter du contenu](assets/manage-publication-add-content.png)
 
 ### Inclure les paramètres de dossier {#include-folder-settings}
-
->[!NOTE]
->
->Cette fonctionnalité est disponible dans le canal de version préliminaire. Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
 
 Par défaut, publier un dossier dans [!DNL Experience Manager Assets] publie toutes les ressources, tous les sous-dossiers et leurs références.
 
@@ -113,7 +105,7 @@ Le tableau suivant explique comment la publication se produit en fonction des **
 | Publier | Publication sélective | `AEM` | Ressources et (ou) dossiers |
 | Publication | Immédiat | `AEM` et `Dynamic Media` | Ressources et (ou) dossiers |
 | Publication | Lors de l’activation | `AEM` et `Dynamic Media` | Ressources et (ou) dossiers |
-| Dynamic Media | Publication sélective | `Dynamic Media` | Ressources |
+| Dynamic Media | Publication sélective | `Dynamic Media` | Assets |
 | Dynamic Media | Immédiat | `None` | Impossible de publier les ressources |
 | Dynamic Media | Lors de l’activation | `None` | Impossible de publier les ressources |
 

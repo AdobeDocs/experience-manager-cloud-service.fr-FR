@@ -3,7 +3,7 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: c5d67e0ece40cdf7a9009436ec90305fe81425a2
+source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
 workflow-type: tm+mt
 source-wordcount: '2569'
 ht-degree: 99%
@@ -350,7 +350,7 @@ query GetArticlesByVariation($variation: String!) {
  
 ### in query variables
 {
-    "variation": "uk"
+    "variation": "Introduction"
 }
 ```
 
@@ -479,7 +479,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Utilisez `... on`
       * Voir [Exemple de requête pour un fragment de contenu d’un modèle spécifique avec une référence de contenu](#sample-wknd-fragment-specific-model-content-reference)
 
-* Secours lors de l’interrogation de fragments imbriqués :
+* Secours lors de l’interrogation de fragments imbriqués :
 
    * Si une variation donnée n’existe pas dans un fragment imbriqué, la variable **Principal** est renvoyée.
 
