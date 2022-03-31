@@ -2,9 +2,9 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 6af0a140005bcc684c72151024affb117437f6ce
+source-git-commit: 0472c3247f171c7c090444f02b928bbcf3a4e1fe
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1020'
 ht-degree: 78%
 
 ---
@@ -61,7 +61,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Les versions de plus de 30 jours sont supprimées</li>
        <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
        <li>Quelle que soit la règle ci-dessus, la version la plus récente est conservée.</li>
-     </ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué pour les nouveaux environnements à compter du 14 mars 2022 et sera appliqué pour les environnements existants (ceux qui ont été créés avant le 14 mars 2022) le 21 avril 2022.</td>
+     </ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué par défaut pour les nouveaux environnements créés après le 14 mars 2022. Veuillez envoyer un ticket d’assistance clientèle si vous avez besoin de paramètres différents.</td>
   </td>
   </tr>
   <tr>
@@ -72,7 +72,7 @@ Customers can schedule each of the Workflow Purge, Ad-hoc Task Purge and Project
        <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
        <li>Pour le contrôle DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
        <li>Pour le contrôle des pages, les journaux de plus de 3 jours sont supprimés.</li>
-     </ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué pour les nouveaux environnements à compter du 14 mars 2022 et sera appliqué pour les environnements existants (ceux qui ont été créés avant le 14 mars 2022) le 21 avril 2022.</td>
+     </ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué par défaut pour les nouveaux environnements créés après le 14 mars 2022. Veuillez envoyer un ticket d’assistance clientèle si vous avez besoin de paramètres différents.</td>
    </td>
   </tr>
   <tr>
