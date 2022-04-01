@@ -2,9 +2,9 @@
 title: Génération d’un document d’enregistrement pour les formulaires adaptatifs
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: f75636c1b964c9edbc3e1dee937f3807e194c311
+source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
 workflow-type: tm+mt
-source-wordcount: '3678'
+source-wordcount: '3658'
 ht-degree: 84%
 
 ---
@@ -403,10 +403,6 @@ La définition du composant Document d’enregistrement est disponible sous ses 
 * **Exclure des champs du document d’enregistrement (DE) s’il est masqué** : la définition de cette propriété remplace le comportement de la propriété de niveau de champ Exclure du document d’enregistrement lorsque le paramètre est différent de true. Si les champs sont masqués au moment de l’envoi du formulaire, ils sont exclus du document d’enregistrement si la propriété est définie sur true, à condition que la propriété &quot;Exclure du document d’enregistrement&quot; ne soit pas définie.
 
 ## Utilisation d’un fichier XCI personnalisé
-
->[!NOTE]
->
-> Cette fonctionnalité est disponible dans le canal de version préliminaire. Pour plus d’informations sur l’activation de cette fonctionnalité dans votre environnement, consultez la [documentation sur les canaux de version préliminaire](/help/release-notes/prerelease.md#enable-prerelease).
 
 Un fichier XCI permet de définir différentes propriétés d’un document. Forms as a Cloud Service comporte un fichier XCI maître. Vous pouvez utiliser un fichier XCI personnalisé pour remplacer une ou plusieurs propriétés par défaut spécifiées dans le fichier XCI maître. Par exemple, vous pouvez choisir d’incorporer une police dans un document ou d’activer la propriété balisée pour tous les documents. Le tableau suivant spécifie les options XCI :
 

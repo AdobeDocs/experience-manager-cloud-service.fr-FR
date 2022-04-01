@@ -2,20 +2,19 @@
 title: AEM Forms as a Cloud Service - Communications
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
+source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 53%
+source-wordcount: '657'
+ht-degree: 39%
 
 ---
 
 
 # Utilisation du traitement synchrone {#sync-processing-introduction}
 
-La fonctionnalité Communications vous permet de créer, d’assembler et de diffuser des communications personnalisées et axées sur la marque. Il peut notamment s’agir de correspondances d’entreprise, de documents, de relevés, de courriers de traitement des réclamations, d’avis de prestations, de factures mensuelles et de kits de bienvenue. Vous pouvez utiliser les API Communications pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
+La fonctionnalité de communication vous permet de créer des documents approuvés, personnalisés et normalisés par la marque, tels que des correspondances commerciales, des récapitulatifs, des lettres de traitement des demandes, des avis de prestations, des factures mensuelles ou des kits de bienvenue.
 
-Supposons que vous ayez un ou plusieurs modèles et plusieurs enregistrements de données XML pour chaque modèle. Vous pouvez utiliser les API Communications pour générer un document d’impression pour chaque enregistrement. <!-- You can also combine the records into a single document. --> Le résultat est un document PDF non interactif. Dans ce type de document, les utilisateurs n’ont pas la possibilité de saisir des données dans les champs.
-
+Cette fonctionnalité fournit des API pour générer et manipuler les documents. Vous pouvez générer ou manipuler un document à la demande ou créer une tâche par lots pour générer plusieurs documents à des intervalles définis.
 
 La fonctionnalité Communications fournit des API pour la génération de documents planifiés et à la demande. Vous pouvez utiliser des API synchrones pour les API à la demande et Batch (API asynchrones) concernant la génération de documents planifiés :
 
@@ -25,7 +24,7 @@ La fonctionnalité Communications fournit des API pour la génération de docume
 
 ## Utilisation des opérations synchrones {#batch-operations}
 
-Une opération synchrone est un processus de génération de documents de manière linéaire. Il prend en charge deux types d’authentification :
+Une opération synchrone est un processus de génération ou de manipulation de documents de manière linéaire. Il prend en charge deux types d’authentification :
 
 * **Authentification de base**: L’authentification de base est un schéma d’authentification simple intégré au protocole HTTP. Le client envoie des requêtes HTTP avec l’en-tête Authorization qui contient le mot Basic suivi d’un espace et d’une chaîne codée en base64 username:password. Par exemple, pour autoriser en tant qu’administrateur/administrateur le client envoie Basic [nom d’utilisateur de chaîne codée en base64]: [mot de passe de chaîne codé en base64].
 
@@ -41,9 +40,9 @@ Une opération synchrone est un processus de génération de documents de maniè
    >
    >Adobe recommande d’utiliser l’authentification par jeton sur un environnement de production.
 
-### Conditions préalables {#pre-requisites}
+### (API de génération de documents uniquement) Conditions préalables {#pre-requisites}
 
-Pour utiliser des API synchrones, les conditions suivantes sont requises :
+Pour utiliser des API synchrones pour la génération de document, les conditions suivantes sont requises :
 
 * Modèles PDF ou XDP
 * [Données à fusionner avec des modèles](#form-data)
@@ -73,4 +72,3 @@ La [documentation de référence sur les API](https://www.adobe.io/experience-ma
 >[!NOTE]
 >
 >Seuls les membres du groupe des utilisateurs de formulaires peuvent accéder aux API Communications.
-
