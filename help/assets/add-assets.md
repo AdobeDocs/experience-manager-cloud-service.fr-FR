@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ab3d31051c8de59010bb6dd93258daad70b1ca06
+source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
 workflow-type: tm+mt
-source-wordcount: '2744'
-ht-degree: 98%
+source-wordcount: '2943'
+ht-degree: 89%
 
 ---
 
@@ -116,12 +116,12 @@ Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UIC
 
 ### Gestion des noms de fichier et caractères interdits {#filename-handling}
 
-[!DNL Experience Manager Assets] tente de vous empêcher de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource dont le nom de fichier contient un ou plusieurs caractères interdits, [!DNL Assets] affiche un message d’avertissement à ce sujet et interrompt l’opération jusqu’à ce que vous supprimiez les caractères concernés ou utilisiez un nom autorisé.
+[!DNL Experience Manager Assets] vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource dont le nom de fichier contient un ou plusieurs caractères interdits, [!DNL Assets] affiche un message d’avertissement et interrompt le chargement jusqu’à ce que vous supprimiez ces caractères ou utilisiez un nom autorisé.
 
 Pour prendre en compte les conventions d’appellation en vigueur dans votre entreprise, la boîte de dialogue [!UICONTROL Charger les ressources] vous permet de spécifier des noms longs pour les fichiers chargés. Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici et séparés par des espaces) :
 
-* Caractères non valides pour le nom de fichier de la ressource `* / : [ \\ ] | # % { } ? &`
-* Caractères non valides pour le nom de dossier de la ressource `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* Caractères non valides pour le nom de la ressource : `* / : [ \\ ] | # % { } ? &`
+* Caractères non valides pour le nom du dossier de ressources : `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Chargement en masse de ressources {#bulk-upload}
 
@@ -147,7 +147,7 @@ L’image suivante illustre les différentes étapes de l’ingestion de ressour
 
 ![Outil d’ingestion en bloc](assets/bulk-ingestion.png)
 
-#### Conditions préalables {#prerequisites-bulk-ingestion}
+**Conditions préalables**
 
 Un compte ou un compartiment de stockage externe d’Azure ou d’AWS est nécessaire pour utiliser cette fonctionnalité.
 
@@ -155,7 +155,7 @@ Un compte ou un compartiment de stockage externe d’Azure ou d’AWS est néces
 >
 >Créez le conteneur ou le compartiment de compte de stockage comme privé et acceptez les connexions uniquement à partir de demandes autorisées. Toutefois, des restrictions supplémentaires sur les connexions réseau d’entrée ne sont pas prises en charge.
 
-#### Configuration de l’outil d’importation en bloc {#configure-bulk-ingestor-tool}
+### Configuration de l’outil d’importation en bloc {#configure-bulk-ingestor-tool}
 
 Pour configurer l’outil dʼimportation en bloc, procédez comme suit :
 
@@ -187,31 +187,108 @@ Pour configurer l’outil dʼimportation en bloc, procédez comme suit :
 
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
-#### Gestion de la configuration de l’outil d’importation en bloc {#manage-bulk-import-configuration}
+### Gestion de la configuration de l’outil d’importation en bloc {#manage-bulk-import-configuration}
 
 Après avoir configuré l’outil d’importation en bloc, vous pouvez effectuer des tâches afin de tester la configuration et de vous assurer quʼelle réponde à vos besoins avant de procéder à lʼingestion de ressources en bloc dans votre instance Experience Manager. Sélectionnez la configuration disponible dans le menu **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Importation en bloc]** pour afficher les options disponibles pour gérer la configuration de votre outil d’importation en bloc.
 
-##### Modifier la configuration {#edit-configuration}
+### Modifier la configuration {#edit-configuration}
 
 Sélectionnez la configuration souhaitée et cliquez sur **[!UICONTROL Modifier]** pour modifier les détails de la configuration. Notez que certains éléments ne sont pas modifiables, tels que le titre de la configuration et de la source de données d’importation.
 
-##### Supprimer la configuration {#delete-configuration}
+### Supprimer la configuration {#delete-configuration}
 
 Sélectionnez la configuration souhaitée et cliquez sur **[!UICONTROL Supprimer]** pour supprimer la configuration dʼimportation en bloc.
 
-##### Valider la connexion à la source de données {#validate-connection}
+### Valider la connexion à la source de données {#validate-connection}
 
 Sélectionnez la configuration souhaitée et cliquez sur **[!UICONTROL Vérifier]** pour valider la connexion à la source de données. En cas de connexion réussie, Experience Manager affiche le message suivant :
 
 ![Message de réussite de lʼimportation en bloc](assets/bulk-import-success-message.png)
 
-##### Appeler une exécution test pour la tâche d’importation en bloc {#invoke-test-run-bulk-import}
+### Appeler une exécution test pour la tâche d’importation en bloc {#invoke-test-run-bulk-import}
 
 Sélectionnez la configuration et cliquez sur **[!UICONTROL Exécution dʼessai]** pour lancer une exécution test pour la tâche d’importation en bloc. Experience Manager affiche les informations suivantes sur la tâche d’importation en bloc :
 
 ![Résultat de l’exécution d’essai](assets/dry-assets-result.png)
 
-##### Planification d’une importation en bloc ponctuelle ou récurrente {#schedule-bulk-import}
+### Gestion des noms de fichier lors de l’importation en bloc {#filename-handling-bulkimport}
+
+Lorsque vous importez des ressources ou des dossiers en bloc, [!DNL Experience Manager Assets] importe toute la structure de ce qui existe dans la source d&#39;import. [!DNL Experience Manager] suit les règles indéfinies pour les caractères spéciaux dans les noms de ressources et de dossiers ; par conséquent, ces noms de fichier doivent être assainis. Pour les noms de dossier et de ressource, le titre défini par l’utilisateur reste inchangé et est stocké dans `jcr:title`.
+
+Lors de l’importation en masse, [!DNL Experience Manager] recherchez les dossiers existants pour éviter de réimporter les ressources et les dossiers et vérifiez également les règles d’assainissement appliquées dans le dossier parent où l’importation a lieu. Si les règles d’assainissement sont appliquées dans le dossier parent, les mêmes règles sont appliquées à la source d’importation. Pour un nouvel import, les règles d’assainissement suivantes sont appliquées pour gérer les noms de fichier des ressources et des dossiers.
+
+**Gestion du nom des ressources dans l’importation en bloc**
+
+Pour les noms de fichiers de ressources, le chemin et le nom du fichier JCR sont assainis à l’aide de l’API : `JcrUtil.escapeIllegalJcrChars`.
+
+* Conserver l’unicode en l’état
+* Remplacez les caractères spéciaux par leur code d’échappement d’URL, par exemple : `new*asset.png` est mis à jour vers `new%2Aasset.png`:
+
+   ```
+          URL escape code   
+   
+   "         %22
+   %         %25
+   '         %27
+   *         %2A
+   .         %2E
+   /         %2F
+   :         %3A
+   [         %5B
+   \n        %5Cn
+   \r        %5Cr
+   \t        %5Ct
+   ]         %5D
+   |         %7C
+   ```
+
+**Gestion du nom du dossier dans l’importation en bloc**
+
+Pour les noms de fichier de dossier, le chemin et le nom du fichier JCR sont assainis à l’aide de l’API : `JcrUtil.createValidName`.
+
+* Convertir les majuscules en minuscules
+* Conserver Unicode en l’état
+* Remplacez les caractères spéciaux par un tiret (&#39;-&#39;), par exemple : `new*asset.png` est mis à jour vers `new-asset.png`:
+
+   ```
+   "                           
+   #                         
+   %                           
+   &                          
+   *                           
+   +                          
+   .                           
+   :                           
+   ;                          
+   ?                          
+   [                           
+   ]                           
+   ^                         
+   {                         
+   }                         
+   |                           
+   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \      Not allowed in Azure, allowed in AWS.
+   \t                          
+   ```
+
+<!-- 
+[!DNL Experience Manager Assets] manages the forbidden characters in the filenames while you upload assets or folders. [!DNL Experience Manager] updates only the node names in the DAM repository. However, the `title` of the asset or folder remains unchanged.
+
+Following are the file naming conventions that are applied while uploading assets or folders in [!DNL Experience Manager Assets]:
+
+| Characters &Dagger; | When occurring in file names | When occurring in folder names | Example |
+|---|---|---|---|
+| `. / : [ ] | *` | Replaced with `-` (hyphen). | Replaced with `-` (hyphen). A `.` (dot) in the filename extension is retained as is. | Replaced with `-` (hyphen). | `myimage.jpg` remains as is and `my.image.jpg` changes to `my-image.jpg`. |
+| `% ; # , + ? ^ { } "` and whitespaces | Whitespaces are retained | Replaced with `-` (hyphen). | `My Folder.` changes to `my-folder-`. |
+| `# % { } ? & .` | Replaced with `-` (hyphen). | NA. | `#My New File.` changes to `-My New File-`. |
+| Uppercase characters | Casing is retained as is. | Changed to lowercase characters. | `My New Folder` changes to `my-new-folder`. |
+| Lppercase characters | Casing is retained as is. | Casing is retained as is. | NA. |
+
+&Dagger; The list of characters is a whitespace-separated list.
+-->
+
+#### Planification d’une importation en bloc ponctuelle ou récurrente {#schedule-bulk-import}
 
 Pour planifier une importation en bloc ponctuelle ou récurrente, procédez comme suit :
 
@@ -222,7 +299,7 @@ Pour planifier une importation en bloc ponctuelle ou récurrente, procédez comm
    ![Planification d’une tâche d’ingestion en bloc](assets/bulk-ingest-schedule1.png)
 
 
-##### Affichage du dossier cible des ressources {#view-assets-target-folder}
+#### Affichage du dossier cible des ressources {#view-assets-target-folder}
 
 Sélectionnez la configuration et cliquez sur **[!UICONTROL Afficher les ressources]** pour afficher l’emplacement cible des ressources vers lequel elles seront importées après l’exécution de la tâche d’importation en bloc.
 

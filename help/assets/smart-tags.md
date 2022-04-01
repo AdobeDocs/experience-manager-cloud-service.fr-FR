@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: a1b9d3378a07b26638cd2535a9d54aed18e3a797
+source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '2411'
 ht-degree: 97%
@@ -124,6 +124,7 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
    >[!NOTE]
    >
    >Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction de la variable **[!UICONTROL Nom]** (ordre alphabétique), **[!UICONTROL Créé]** date ou **[!UICONTROL Modifié]** date.
+
 
 1. Dans la boîte de dialogue **[!UICONTROL Sélectionner les ressources]**, cliquez sur **[!UICONTROL Ajouter les ressources]** pour chaque balise. Effectuez des recherches dans le référentiel de gestion des ressources numériques (DAM) ou parcourez le référentiel pour sélectionner au moins 10, et au plus 50 images. Sélectionnez les ressources et non le dossier. Une fois les images sélectionnées, cliquez sur **[!UICONTROL Sélectionner]**.
 
