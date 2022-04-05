@@ -2,12 +2,13 @@
 title: Traduire le contenu (AEM sans interface)
 description: Utilisez le connecteur et les règles de traduction pour traduire votre contenu découplé.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '2176'
-ht-degree: 99%
+source-wordcount: '2215'
+ht-degree: 98%
 
 ---
+
 
 # Traduction du contenu {#translate-content}
 
@@ -21,6 +22,10 @@ Dans le document précédent du parcours de traduction découplée AEM, intitul�
 * être capable de définir vos propres règles de traduction.
 
 Maintenant que votre connecteur et vos règles de traduction sont configurés, cet article vous guide tout au long de l’étape suivante de la traduction de votre contenu découplé.
+
+>[!NOTE]
+>
+>Si vous avez ignoré la variable [Configuration des règles de traduction](translation-rules.md) car vous êtes sur le canal de version préliminaire d’AEM as a Cloud Service, il n’est pas nécessaire de vous préoccuper des règles de traduction comme indiqué dans ce document.
 
 ## Objectif {#objective}
 

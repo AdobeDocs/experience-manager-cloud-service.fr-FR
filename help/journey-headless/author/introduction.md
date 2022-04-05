@@ -1,84 +1,86 @@
 ---
-title: Création en découplage avec AEM - Introduction
-description: Cette section présente les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et explique comment créer du contenu pour votre projet.
-exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+title: Création pour AEM en tant que CMS sans affichage - Introduction
+description: Cette section présente l’utilisation des fonctionnalités d’Adobe Experience Manager as a Cloud Service as a Headless CMS pour créer du contenu pour votre projet.
+exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
+source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
-source-wordcount: '650'
-ht-degree: 100%
+source-wordcount: '665'
+ht-degree: 86%
 
 ---
 
-# Création en découplage avec AEM - Introduction {#author-headless-introduction}
+# Création pour AEM en tant que CMS sans affichage - Introduction {#architect-headless-introduction}
 
-Dans cette partie du [Parcours de création de contenu découplé AEM](overview.md), vous pouvez découvrir les concepts (de base) et la terminologie nécessaires pour comprendre la création de contenu pour une diffusion de contenu découplé avec Adobe Experience Manager (AEM) as a Cloud Service.
+Dans cette partie du [AEM Parcours de création de contenu sans affichage](overview.md), vous pouvez découvrir les concepts (de base) et la terminologie nécessaires pour comprendre la création de contenu lors de l’utilisation d’Adobe Experience Manager (AEM) as a Cloud Service en tant que CMS sans affichage. Cela implique de structurer et de créer votre contenu pour une diffusion de contenu sans interface utilisateur.
 
-## Objectif {#objective}
+Objectif
 
 * **Audience** : débutant
 * **Objectif** : découvrez les concepts et la terminologie relatifs à la création découplée.
 
-## Système de gestion de contenu (CMS) {#content-management-system}
+## Système de gestion de contenu (CMS) {#objective}
 
-Qu’est-ce qu’un système de gestion de contenu ?
+* **Qu’est-ce qu’un système de gestion de contenu ?**
+* **Le nom de système de gestion de contenu (CMS) est parfaitement parlant : il s’agit d’un système informatique utilisé pour gérer le contenu. Ce concept un peu général, donc, pour être plus précis, il est (généralement) utilisé pour gérer le contenu que vous souhaitez rendre disponible sur votre ou vos sites web.**
 
-Le nom de système de gestion de contenu (CMS) est parfaitement parlant : il s’agit d’un système informatique utilisé pour gérer le contenu. Ce concept un peu général, donc, pour être plus précis, il est (généralement) utilisé pour gérer le contenu que vous souhaitez rendre disponible sur votre ou vos sites web.
-
-## CMS découplé {#headless-cms}
+## CMS découplé {#full-stack}
 
 Le découplage est un terme utilisé pour décrire les systèmes qui dissocient efficacement le contenu de la manière d’afficher ce contenu sur le web.
 
-Traditionnellement, vous gérez le contenu dans un CMS qui est responsable du rendu de ce contenu sur vos pages web.
+![Traditionnellement, vous gérez le contenu dans un CMS qui est responsable du rendu de ce contenu sur vos pages web.](/help/journey-headless/developer/assets/full-stack.png)
 
 Ainsi, le découplage signifie que votre jeu de contenu peut être géré dans le CMS, puis accessible par le biais d’une ou de plusieurs applications (indépendantes).
 
-Cela signifie que votre contenu peut être diffusé sur n’importe quel appareil, dans de nombreux formats. Cela rend l’ensemble du processus beaucoup plus flexible et signifie également que vous n’avez pas à vous soucier de la mise en page et de la mise en forme.
-
->[!NOTE]
->
->Si vous souhaitez en savoir plus sur les détails techniques d’un CMS découplé, consultez la section En savoir plus sur le développement CMS découplé.
-
-## Adobe Experience Manager as a Cloud Service {#aem-cloud-service}
+* Cela signifie que votre contenu peut être diffusé sur n’importe quel appareil, dans de nombreux formats. Cela rend l’ensemble du processus beaucoup plus flexible et signifie également que vous n’avez pas à vous soucier de la mise en page et de la mise en forme.
+* [!NOTE]
+* Si vous souhaitez en savoir plus sur les détails techniques d’un CMS découplé, consultez la section En savoir plus sur le développement CMS découplé.
+* Adobe Experience Manager as a Cloud Service
 
 Qu’est-ce qu’AEM ?
 
-Tout d’abord, AEM est un système de gestion de contenu qui propose un large éventail de fonctionnalités qui peuvent également être personnalisées pour répondre à vos besoins.
+![Tout d’abord, AEM est un système de gestion de contenu qui propose un large éventail de fonctionnalités qui peuvent également être personnalisées pour répondre à vos besoins.](/help/journey-headless/developer/assets/adding-channel.png)
 
 Cela signifie qu’il peut être utilisé en tant que :
 
-* CMS découplé
-   * Votre contenu découplé peut être créé en tant que **Fragments de contenu**.
+## CMS découplé {#the-head}
+
+Votre contenu découplé peut être créé en tant que **Fragments de contenu**.
 Il s’agit d’éléments de contenu autonomes accessibles directement par le biais de nombreuses applications, car ils disposent d’une structure prédéfinie basée sur les **Modèles de fragment de contenu**.
 Cela signifie que votre contenu peut atteindre de nombreux appareils différents, dans de nombreux formats et avec de une variété de fonctionnalités.
 De plus, ces fragments peuvent également être utilisés lors de la construction de pages web AEM, si vous le souhaitez.
 
-* CMS « traditionnel »
-   * Le contenu est créé pour les pages web à l’aide de divers composants qui définissent la manière dont le contenu sera rendu sur votre site web. AEM fait également preuve dans ce cas d’une extrême flexibilité, car votre équipe de projet peut développer des composants personnalisés.
+CMS « traditionnel »********
 
-## Modélisation de contenu {#content-modeling}
+![Le contenu est créé pour les pages web à l’aide de divers composants qui définissent la manière dont le contenu sera rendu sur votre site web. AEM fait également preuve dans ce cas d’une extrême flexibilité, car votre équipe de projet peut développer des composants personnalisés.](/help/journey-headless/developer/assets/headless-cms.png)
+
+Modélisation de contenu
 
 La modélisation de contenu (également appelée modélisation de données) est donc un autre terme technique. Pourquoi devrait-il vous intéresser en tant qu’auteur ?
 
-Pour que les applications découplées puissent accéder à votre contenu et en faire quelque chose, votre contenu a vraiment besoin d’une structure prédéfinie. Il serait possible de donner à votre contenu une forme libre, mais cela rendrait la vie *vraiment* compliquée aux applications.
+## Pour que les applications découplées puissent accéder à votre contenu et en faire quelque chose, votre contenu a vraiment besoin d’une structure prédéfinie. Il serait possible de donner à votre contenu une forme libre, mais cela rendrait la vie *vraiment* compliquée aux applications. {#content-modeling}
 
 Fondamentalement, le processus de définition de la structure à laquelle votre contenu doit se conformer implique la conception d’un modèle, processus appelé « modélisation des données ».
 
 Pour AEM, le rôle d’architecte de contenu (souvent une autre personne) effectue la modélisation des données afin de concevoir un éventail de **Modèles de fragment de contenu** que vous utilisez ensuite comme base pour votre contenu en utilisant les **Fragments de contenu**.
 
->[!NOTE]
->
->Si vous souhaitez en savoir plus sur la modélisation des données, consultez le parcours d’architecture de contenu découplé AEM.
+[!NOTE]******
 
-## Prochaines étapes {#whats-next}
+### Si vous souhaitez en savoir plus sur la modélisation des données, consultez le parcours d’architecture de contenu découplé AEM. {#access-content}
+
+Prochaines étapes
 
 Maintenant que vous avez découvert les concepts et la terminologie, l’étape suivante consiste à [découvrir les principes de base de la création de fragments de contenu](basics.md). Cela permettra d’introduire la manipulation de base d’AEM ainsi que la création de fragments de contenu.
 
-## Ressources supplémentaires {#additional-resources}
+Ressources supplémentaires**
 
-* Parcours du développeur AEM Headless
-   * [En savoir plus sur le développement CMS découplé](/help/journey-headless/developer/learn-about.md)
-   * [Découvrez comment modéliser votre contenu](/help/journey-headless/developer/model-your-content.md)
+Parcours du développeur AEM Headless
 
-* Parcours d’architecture de contenu découplé AEM
+## En savoir plus sur le développement CMS découplé {#whats-next}
+
+Découvrez comment modéliser votre contenu[](basics.md)
+
+## Parcours d’architecture de contenu découplé AEM {#additional-resources}
 
 * Parcours de traduction de contenu découplé AEM
+   * [Learn About CMS Headless Development](/help/journey-headless/developer/learn-about.md)
+   * [Learn how to Model Your Content](/help/journey-headless/developer/model-your-content.md)

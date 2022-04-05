@@ -2,10 +2,10 @@
 title: Configuration des règles de traduction (AEM sans interface utilisateur)
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 99%
+source-wordcount: '968'
+ht-degree: 89%
 
 ---
 
@@ -21,6 +21,15 @@ Dans le document précédent du parcours de traduction découplée AEM, [Configu
 * savoir configurer votre propre connexion à votre service de traduction.
 
 Maintenant que votre connecteur est configuré, cet article vous guide tout au long de l’étape suivante pour identifier le contenu à traduire.
+
+>[!CAUTION]
+>
+>Cette étape du parcours de documentation n’est nécessaire que si vous ne vous trouvez pas sur le canal de version préliminaire d’AEM as a Cloud Service.
+>
+>* Si vous utilisez le canal de version préliminaire, passez à l’étape suivante du parcours [Traduisez le contenu.](translate-content.md)
+>* Si vous n’êtes pas sur le canal de la version préliminaire, veuillez continuer à lire ce document.
+>
+>Voir [Section Ressources supplémentaires](#additional-resources) pour plus d’informations sur le canal prerrelease.
 
 ## Objectif {#objective}
 
@@ -99,3 +108,4 @@ Tirez parti de ces connaissances et continuez à progresser sur votre parcours d
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en examinant le document [Traduire le contenu](translate-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, même s’ils ne sont pas nécessaires pour poursuivre le parcours en mode découplé.
 
 * [Identification du contenu à traduire](/help/sites-cloud/administering/translation/rules.md) – Découvrez comment les règles de traduction identifient le contenu à traduire.
+* [Canal de version préliminaire AEM](/help/release-notes/prerelease.md#enable-prerelease) - Découvrez comment souscrire au canal de version préliminaire d’AEM as a Cloud Service pour essayer de nouvelles fonctionnalités et les fonctionnalités à venir.

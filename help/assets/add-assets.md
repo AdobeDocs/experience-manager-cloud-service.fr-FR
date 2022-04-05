@@ -4,9 +4,9 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: c4f6f5925f7c80bae756610eae9b3b7200e9e8f9
+source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
-source-wordcount: '2943'
+source-wordcount: '2948'
 ht-degree: 89%
 
 ---
@@ -219,36 +219,37 @@ Lors de l’importation en masse, [!DNL Experience Manager] recherchez les dossi
 
 **Gestion du nom des ressources dans l’importation en bloc**
 
-Pour les noms de fichiers de ressources, le chemin et le nom du fichier JCR sont assainis à l’aide de l’API : `JcrUtil.escapeIllegalJcrChars`.
+Pour les noms de fichiers de ressources, le nom et le chemin JCR sont assainis à l’aide de l’API : `JcrUtil.escapeIllegalJcrChars`.
 
-* Conserver l’unicode en l’état
-* Remplacez les caractères spéciaux par leur code d’échappement d’URL, par exemple : `new*asset.png` est mis à jour vers `new%2Aasset.png`:
+* Les caractères Unicode ne sont pas modifiés
+* Remplacez les caractères spéciaux par leur code d’échappement d’URL, par exemple : `new asset.png` est mis à jour vers `new%20asset.png`:
 
    ```
-          URL escape code   
+                   URL escape code   
    
-   "         %22
-   %         %25
-   '         %27
-   *         %2A
-   .         %2E
-   /         %2F
-   :         %3A
-   [         %5B
-   \n        %5Cn
-   \r        %5Cr
-   \t        %5Ct
-   ]         %5D
-   |         %7C
+   "               %22
+   %               %25
+   '               %27
+   *               %2A
+   .               %2E
+   /               %2F
+   :               %3A
+   [               %5B
+   \n              %5Cn
+   \r              %5Cr
+   \t              %5Ct
+   ]               %5D
+   |               %7C
+   space char      %20
    ```
 
 **Gestion du nom du dossier dans l’importation en bloc**
 
-Pour les noms de fichier de dossier, le chemin et le nom du fichier JCR sont assainis à l’aide de l’API : `JcrUtil.createValidName`.
+Pour les noms de fichier de dossier, le nom et le chemin JCR sont assainis à l’aide de l’API : `JcrUtil.createValidName`.
 
-* Convertir les majuscules en minuscules
-* Conserver Unicode en l’état
-* Remplacez les caractères spéciaux par un tiret (&#39;-&#39;), par exemple : `new*asset.png` est mis à jour vers `new-asset.png`:
+* Les caractères majuscules sont convertis en minuscules
+* Les caractères Unicode ne sont pas modifiés
+* Remplacez les caractères spéciaux par un tiret (&#39;-&#39;), par exemple : `new asset.png` est mis à jour vers `new-asset.png`:
 
    ```
    "                           
@@ -267,9 +268,10 @@ Pour les noms de fichier de dossier, le chemin et le nom du fichier JCR sont ass
    {                         
    }                         
    |                           
-   /      It is used for split folder in cloud storage and is pre-handled, no conversion here.
-   \      Not allowed in Azure, allowed in AWS.
-   \t                          
+   /         It is used for split folder in cloud storage and is pre-handled, no conversion here.
+   \         Not allowed in Azure, allowed in AWS.
+   \t
+   space     It is the space character.
    ```
 
 <!-- 

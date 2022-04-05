@@ -2,19 +2,20 @@
 title: AEM Forms as a Cloud Service - Communications
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: fdbb927dbd7f6d640100d444431f931d95414ebc
+source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
-source-wordcount: '657'
-ht-degree: 39%
+source-wordcount: '735'
+ht-degree: 48%
 
 ---
 
 
 # Utilisation du traitement synchrone {#sync-processing-introduction}
 
-La fonctionnalité de communication vous permet de créer des documents approuvés, personnalisés et normalisés par la marque, tels que des correspondances commerciales, des récapitulatifs, des lettres de traitement des demandes, des avis de prestations, des factures mensuelles ou des kits de bienvenue.
+La fonctionnalité Communications vous permet de créer, d’assembler et de diffuser des communications personnalisées et axées sur la marque. Il peut notamment s’agir de correspondances d’entreprise, de documents, de relevés, de courriers de traitement des réclamations, d’avis de prestations, de factures mensuelles et de kits de bienvenue. Vous pouvez utiliser les API Communications pour combiner un modèle (XFA ou PDF) avec des données client afin de générer des documents aux formats PDF, PS, PCL, DPL, IPL et ZPL.
 
-Cette fonctionnalité fournit des API pour générer et manipuler les documents. Vous pouvez générer ou manipuler un document à la demande ou créer une tâche par lots pour générer plusieurs documents à des intervalles définis.
+Supposons que vous ayez un ou plusieurs modèles et plusieurs enregistrements de données XML pour chaque modèle. Vous pouvez utiliser les API Communications pour générer un document d’impression pour chaque enregistrement. <!-- You can also combine the records into a single document. --> Le résultat est un document PDF non interactif. Dans ce type de document, les utilisateurs n’ont pas la possibilité de saisir des données dans les champs.
+
 
 La fonctionnalité Communications fournit des API pour la génération de documents planifiés et à la demande. Vous pouvez utiliser des API synchrones pour les API à la demande et Batch (API asynchrones) concernant la génération de documents planifiés :
 
@@ -24,7 +25,19 @@ La fonctionnalité Communications fournit des API pour la génération de docume
 
 ## Utilisation des opérations synchrones {#batch-operations}
 
-Une opération synchrone est un processus de génération ou de manipulation de documents de manière linéaire. Il prend en charge deux types d’authentification :
+Une opération synchrone est un processus de génération de documents de manière linéaire. Des API distinctes sont disponibles pour :
+
+* Génère un document PDF à partir d’un modèle et y fusionne les données.
+* Générez un document PostScript (PS), PCL (Printer Command Language), Zebra Printing Language) à partir d’un fichier XDP ou d’un document de PDF.
+* Assemblage de documents PDF
+* Désassemblage de documents PDF
+* Convertir un document en document compatible avec le PDF/A
+* Validation d’un document conforme au PDF/A
+
+
+### Authentification d’un appel API
+
+Les opérations synchrones prennent en charge deux types d’authentification :
 
 * **Authentification de base**: L’authentification de base est un schéma d’authentification simple intégré au protocole HTTP. Le client envoie des requêtes HTTP avec l’en-tête Authorization qui contient le mot Basic suivi d’un espace et d’une chaîne codée en base64 username:password. Par exemple, pour autoriser en tant qu’administrateur/administrateur le client envoie Basic [nom d’utilisateur de chaîne codée en base64]: [mot de passe de chaîne codé en base64].
 
@@ -40,16 +53,17 @@ Une opération synchrone est un processus de génération ou de manipulation de 
    >
    >Adobe recommande d’utiliser l’authentification par jeton sur un environnement de production.
 
-### (API de génération de documents uniquement) Conditions préalables {#pre-requisites}
 
-Pour utiliser des API synchrones pour la génération de document, les conditions suivantes sont requises :
+### (Uniquement pour les API Document Generation) Configuration des ressources et des autorisations
+
+Pour utiliser des API synchrones, les conditions suivantes sont requises :
 
 * Modèles PDF ou XDP
 * [Données à fusionner avec des modèles](#form-data)
 * Utilisateurs disposant des privilèges d’administrateur Experience Manager
 * Chargez les modèles et d’autres ressources vers votre instance Experience Manager Forms Cloud Service.
 
-#### Chargement de modèles et d’autres ressources vers votre instance Experience Manager
+### (Uniquement pour les API Document Generation) Téléchargez des modèles et d’autres ressources vers votre instance de Experience Manager.
 
 Une entreprise possède généralement différents modèles. Par exemple, un modèle pour les relevés de carte de crédit, les relevés de prestations et les réclamations. Chargez tous ces modèles XDP et PDF vers votre instance Experience Manager. Pour charger un modèle :
 
@@ -58,14 +72,10 @@ Une entreprise possède généralement différents modèles. Par exemple, un mod
 1. Cliquez sur Créer > Dossier et créez un dossier. Ouvrez le dossier.
 1. Cliquez sur Créer > Téléchargement de fichier et chargez les modèles.
 
-### Utilisation de l’API synchrone pour générer des documents
 
-Des API distinctes sont disponibles pour :
+### Appel d’une API
 
-* Génère un document PDF à partir d’un modèle et y fusionne les données.
-* Générez un document PostScript (PS), PCL (Printer Command Language), Zebra Printing Language) à partir d’un fichier XDP ou d’un document de PDF.
-
-La [documentation de référence sur les API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence de l’API est également disponible au format .yaml. Vous pouvez télécharger le fichier .yaml pour [API synchrones](assets/sync.yaml) et chargez-le sur postman pour vérifier la fonctionnalité des API.
+La [documentation de référence sur les API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence de l’API fournit également un fichier de définition de l’API au format .yaml . Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
