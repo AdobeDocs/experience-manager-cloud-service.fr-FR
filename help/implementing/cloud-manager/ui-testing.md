@@ -2,10 +2,10 @@
 title: Tests de l’interface utilisateur
 description: Les tests d’interface utilisateur personnalisés sont une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications personnalisées.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: 05f9e9de0d5dbcc332466dc964e2d01569d16110
 workflow-type: tm+mt
-source-wordcount: '1401'
-ht-degree: 52%
+source-wordcount: '1338'
+ht-degree: 46%
 
 ---
 
@@ -18,10 +18,6 @@ ht-degree: 52%
 >abstract="Les tests d’interface utilisateur personnalisés sont une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basé sur Selenium)."
 
 Les tests d’interface utilisateur personnalisés sont une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications.
-
->[!NOTE]
-> Les pipelines d’évaluation et de production créés avant le 10 février 2021 doivent être mis à jour pour pouvoir utiliser les tests d’interface utilisateur décrits sur cette page.
-> Pour plus d’informations sur la configuration des pipelines, consultez la section [Pipelines CI-CD dans Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
 
 ## Présentation {#custom-ui-testing}
 
@@ -62,12 +58,9 @@ Pour inclure un `testing.properties` dans l’artefact de création, ajoutez une
 
 >[!NOTE]
 >
->Si votre projet n’inclut pas cette ligne, vous devrez modifier ce fichier pour activer le test de l’interface utilisateur. Si le fichier comporte une ligne recommandant de ne pas le modifier, veuillez ignorer ce conseil.
-
->[!NOTE]
+>Si votre projet n’inclut pas cette ligne, vous devrez modifier le fichier pour activer le test de l’interface utilisateur.
 >
->Les pipelines de production créés avant le 10 février 2021 devront être mis à jour afin d’utiliser les tests d’interface utilisateur décrits dans cette section. Cela signifie essentiellement que l’utilisateur doit modifier le pipeline de production et cliquer sur **Enregistrer** dans l’interface utilisateur, et ce, même si aucune modification n’a été apportée.
->Consultez [Configuration de votre pipeline CI-CD](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr#using-cloud-manager) pour en savoir plus sur la configuration du pipeline.
+>Le fichier peut contenir une ligne vous conseillant de ne pas le modifier. Cela est dû au fait qu’il a été introduit dans votre projet avant l’introduction du test de l’interface utilisateur d’opt-in et que les clients n’étaient pas prévus pour modifier le fichier. Cela peut être ignoré en toute sécurité.
 
 ## Créer des tests de l’interface utilisateur {#building-ui-tests}
 
@@ -177,7 +170,7 @@ Les variables d’environnement suivantes seront transmises à votre image Docke
 | Variable | Exemples | Description |
 |---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | URL du serveur Selenium |
-| `SELENIUM_BROWSER` | `chrome`, `firefox` | Implémentation du navigateur utilisée par le serveur Selenium |
+| `SELENIUM_BROWSER` | `chrome` | Implémentation du navigateur utilisée par le serveur Selenium |
 | `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | URL de l’instance de création AEM |
 | `AEM_AUTHOR_USERNAME` | `admin` | Nom d’utilisateur pour la connexion à l’instance d’auteur AEM |
 | `AEM_AUTHOR_PASSWORD` | `admin` | Mot de passe de connexion à l’instance de création AEM |
@@ -198,7 +191,7 @@ Une fois que le point de terminaison d’état du Selenium a répondu par une r�
 
 ### Génération de rapports de test {#generate-test-reports}
 
-L’image Docker doit générer des rapports de test au format XML JUnit et les enregistrer dans le chemin spécifié par la variable d’environnement `REPORTS_PATH`. Le format XML JUnit est un format largement utilisé pour rapporter les résultats des tests. Si l’image Docker utilise Java et Maven, le [plug-in Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) et le [plug-in Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/) sont tous deux utilisés.
+L’image Docker doit générer des rapports de test au format XML JUnit et les enregistrer dans le chemin spécifié par la variable d’environnement `REPORTS_PATH`. Le format XML JUnit est un format largement utilisé pour rapporter les résultats des tests. Si l’image Docker utilise Java et Maven, les modules de test standard tels que [Module externe Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) et [Module externe Maven Failed-safe](https://maven.apache.org/surefire/maven-failsafe-plugin/) peut générer de tels rapports prêts à l’emploi.
 
 Si l’image Docker est implémentée avec d’autres langages de programmation ou des exécuteurs de test, consultez la documentation des outils sélectionnés pour la génération de rapports XML JUnit.
 
