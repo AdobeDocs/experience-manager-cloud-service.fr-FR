@@ -3,10 +3,10 @@ title: Configuration des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 31%
+source-wordcount: '1442'
+ht-degree: 29%
 
 ---
 
@@ -77,6 +77,7 @@ Pour terminer la configuration du pipeline de production de code frontal, procé
    >Voir le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
    * **Branche Git** - cette option définit à partir de quelle branche sélectionnée le pipeline doit récupérer le code.
+      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à sélectionner.
    * **Emplacement du code** - cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
    * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.
 
@@ -104,6 +105,7 @@ Pour terminer la configuration du pipeline de production de code de pile complè
    >Voir le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
    * **Branche Git** - cette option définit à partir de quelle branche sélectionnée le pipeline doit récupérer le code.
+      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à sélectionner.
    * **Emplacement du code** - cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
    * **Mettre en pause avant le déploiement en production** - Cette option met le pipeline en pause avant son déploiement en production.
    * **Planifié** : cette option permet à l’utilisateur d’activer le déploiement en production planifié.
@@ -150,6 +152,7 @@ Pour terminer la configuration du pipeline de production de code de pile complè
    >Voir le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour savoir comment ajouter et gérer des référentiels dans Cloud Manager.
 
    * **Branche Git** - cette option définit à partir de quelle branche sélectionnée le pipeline doit récupérer le code.
+      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à sélectionner.
    * **Emplacement du code** - cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
       * Pour les pipelines de configuration de niveau web, il s’agit généralement du chemin contenant `conf.d`, `conf.dispatcher.d`, et `opt-in` répertoires.
       * Par exemple, si la structure du projet a été générée à partir de la variable [AEM Archétype de projet,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) le chemin serait `/dispatcher/src`.
