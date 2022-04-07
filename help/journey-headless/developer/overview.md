@@ -1,18 +1,18 @@
 ---
 title: Parcours du développeur AEM Headless
-description: Documentation CMS d’AEM Headless. Découvrez ici un parcours guidé à travers les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
+description: Commencez ici pour obtenir un parcours guidé via Adobe Experience Manager (AEM) as a Cloud Service lorsqu’il est utilisé comme système de gestion de contenu sans affichage (CMS). Ce parcours vous fournit toutes les informations dont vous avez besoin pour développer votre première application sans interface.
 landing-page-description: Démarrez ici un parcours guidé à travers les fonctionnalités découplées d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 327344c3e075e7f63c3b533af77cf22135e646e5
+source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 100%
+source-wordcount: '1277'
+ht-degree: 91%
 
 ---
 
 # Parcours du développeur AEM Headless {#aem-headless-developer-journey}
 
-Démarrez ici un parcours guidé à travers les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. Ce parcours vous fournit toute la documentation AEM Headless dont vous avez besoin pour développer votre première application découplée.
+Commencez ici pour obtenir un parcours guidé via Adobe Experience Manager (AEM) as a Cloud Service lorsqu’il est utilisé comme système de gestion de contenu sans affichage (CMS). Découvrez les fonctionnalités puissantes et flexibles sans interface, leurs fonctionnalités et comment les exploiter dans votre premier projet de développement sans interface. Ce parcours vous fournit toutes les informations dont vous avez besoin pour développer votre première application sans interface.
 
 ## Présentation {#introduction}
 
