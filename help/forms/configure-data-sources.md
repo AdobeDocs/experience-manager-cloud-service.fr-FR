@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7d3f553765580c1d81a80bea456e9df908939bc0
+source-git-commit: b6c654f5456e1a7778b453837f04cbed32a82a77
 workflow-type: tm+mt
-source-wordcount: '1326'
-ht-degree: 99%
+source-wordcount: '1536'
+ht-degree: 87%
 
 ---
 
@@ -135,6 +135,28 @@ Procédez comme suit pour configurer les services RESTful :
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
+
+### Configuration du client HTTP du modèle de données de formulaire pour optimiser les performances {#fdm-http-client-configuration}
+
+[!DNL Experience Manager Forms] le modèle de données de formulaire lors de l’intégration aux services web RESTful en tant que source de données inclut des configurations de client HTTP pour l’optimisation des performances.
+Effectuez les étapes suivantes pour configurer le client HTTP du modèle de données de formulaire :
+
+1. Connectez-vous à [!DNL Experience Manager Forms] Instance de création en tant qu’administrateur et accédez à [!DNL Experience Manager] lots de la console web. L’URL par défaut est [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+
+1. Appuyer **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]**.
+
+1. Dans le [!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST] dialog :
+
+   * Spécifiez le nombre maximal de connexions autorisées entre le modèle de données de formulaire et les services Web RESTful dans la variable **[!UICONTROL Limite de connexion au total]** champ . La valeur par défaut est de 20 connexions.
+
+   * Spécifiez le nombre maximal de connexions autorisées pour chaque itinéraire dans la variable **[!UICONTROL Limite de connexion par itinéraire]** champ . La valeur par défaut est de 2 connexions.
+
+   * Indiquez la durée, pour laquelle une connexion HTTP persistante est maintenue en vie, dans la variable **[!UICONTROL Reste en vie]** champ . La valeur par défaut est de 15 secondes.
+
+   * Indiquez la durée pour laquelle la variable [!DNL Experience Manager Forms] attend qu’une connexion soit établie, dans la variable **[!UICONTROL Délai de connexion]** champ . La valeur par défaut est de 10 secondes.
+
+   * Spécifiez la période maximale d’inactivité entre deux paquets de données dans la variable **[!UICONTROL Délai d’expiration du socket]** champ . La valeur par défaut est de 30 secondes.
+
 
 ## Configuration des services web SOAP {#configure-soap-web-services}
 
