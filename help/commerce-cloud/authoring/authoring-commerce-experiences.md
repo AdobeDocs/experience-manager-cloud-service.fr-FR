@@ -2,9 +2,9 @@
 title: Création d’expériences commerciales
 description: Création d’expériences commerciales
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 100%
 
 ---
@@ -99,6 +99,6 @@ L’utilisation d’Omnisearch est un moyen facile pour les utilisateurs de trou
 
 Le résultat est regroupé par type.
 
-    >[!REMARQUE]
-    >
-    > La recherche en texte intégral dans Omnisearch ne prend pas en charge les fragments de contenu associés. Utilisez le SKU ou l’UID pour rechercher les fragments de contenu associés.
+>[!NOTE]
+>
+> La recherche en texte intégral dans Omnisearch ne prend pas en charge les fragments de contenu associés. Utilisez le SKU ou l’UID pour rechercher les fragments de contenu associés.
