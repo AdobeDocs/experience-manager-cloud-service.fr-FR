@@ -2,10 +2,10 @@
 title: Génération de jetons d’accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: c4f4ce968c17db1f1185ce7be9cad833eaf0b91b
+source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 78%
+source-wordcount: '1430'
+ht-degree: 75%
 
 ---
 
@@ -17,7 +17,7 @@ Le flux de serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplif
 
 >[!NOTE]
 >
->Outre cette documentation, vous pouvez également consulter le tutoriel relatif à l’[authentification par jeton pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication).
+>Outre cette documentation, vous pouvez également consulter les tutoriels sur [Authentification basée sur les jetons pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication) et [Obtention d’un jeton de connexion pour les intégrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
 
 ## Flux de serveur à serveur {#the-server-to-server-flow}
 
