@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 100%
+source-wordcount: '1644'
+ht-degree: 76%
 
 ---
 
@@ -49,7 +49,7 @@ Avant d’effectuer la migration de production, suivez les étapes d’adaptatio
 Après la migration initiale depuis la production, vous devez effectuer des compléments incrémentiels pour vous assurer que votre contenu est à jour sur l’instance cloud. C’est pourquoi il est recommandé de suivre les bonnes pratiques suivantes :
 
 * Rassemblez les données sur la quantité de contenu. Par exemple : par semaine, par quinzaine ou par mois.
-* Veillez à planifier les compléments de manière à éviter l’extraction et l’ingestion de contenu pendant plus de 48 heures. Cette action vous est recommandée afin que les compléments de contenu puissent être effectués pendant le week-end.
+* Veillez à planifier les compléments de manière à éviter l’extraction et l’ingestion de contenu pendant plus de 48 heures. Cela est recommandé afin que les compléments de contenu s’adaptent à une période du week-end.
 * Prévoyez le nombre de compléments nécessaires et utilisez ces estimations pour planifier la date de mise en production.
 
 ## Déterminer les délais de gel du code et du contenu pour la migration {#code-content-freeze}
@@ -82,7 +82,7 @@ Lors de la mise en production, assurez-vous d’exécuter la migration du conten
 Lors de la migration de production, évitez d’exécuter l’outil de transfert de contenu à partir d’un clone, et ce, pour les raisons suivantes :
 
 * Si un client exige que les versions de contenu soient migrées pendant les migrations complémentaires, l’exécution de l’outil de transfert de contenu à partir d’un clone ne permet pas de migrer les versions. Même si le clone est fréquemment recréé à partir de l’auteur en direct, chaque fois qu’un clone est créé, les points de contrôle qui sont utilisés par l’outil de transfert de contenu pour calculer les deltas sont réinitialisés.
-* Puisqu’un clone ne peut pas être actualisé dans son ensemble, le module de requêtes ACL doit être utilisé pour combiner et installer le contenu ajouté ou modifié de la production au clone. Le problème avec cette approche est que tout contenu supprimé sur l’instance source n’aura jamais accès au clone, sauf s’il est supprimé manuellement de la source et du clone. Il est donc possible que le contenu supprimé en production ne soit pas supprimé sur le clone et sur AEM as a Cloud Service.
+* Puisqu’un clone ne peut pas être actualisé dans son ensemble, le module de requêtes ACL doit être utilisé pour combiner et installer le contenu ajouté ou modifié de la production au clone. Le problème avec cette approche est que tout contenu supprimé sur l’instance source n’aura jamais accès au clone, sauf s’il est supprimé manuellement de la source et du clone. Cela offre la possibilité que le contenu supprimé en production ne soit pas supprimé sur le clone et AEM as a Cloud Service.
 
 **Optimiser la charge de votre source AEM lors de la migration du contenu**
 
@@ -113,13 +113,45 @@ Les deux éléments ci-dessus seront identifiés et signalés dans le rapport de
 
 ## Liste de contrôle de mise en production {#Go-Live-Checklist}
 
-Passez en revue la liste d’activités présentée ci-dessous pour vous assurer que vous pouvez effectuer une migration en douceur et réussie :
+Consultez cette liste d’activités pour vous assurer que vous effectuez une migration fluide et réussie.
 
-* Planifiez une période de gel du code et du contenu. Consultez également la section [Chronologies de gel du code et du contenu pour la migration](#code-content-freeze).
-* Effectuez la dernière mise à jour du contenu
-* Terminer les itérations de test
-* Exécuter les tests de sécurité et de performance
-* Procéder à la mise en service et effectuez la migration sur l’instance de production.
+* Exécution d’un pipeline de production de bout en bout avec des tests fonctionnels et d’interface utilisateur pour garantir une **always current** AEM l’expérience du produit. Consultez les ressources suivantes.
+   * [Mises à jour de la version d’AEM](/help/implementing/deploying/aem-version-updates.md)
+   * [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
+   * [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
+* Migrez le contenu en production et assurez-vous qu’un sous-ensemble approprié est disponible lors de l’évaluation pour les tests.
+   * Notez que les bonnes pratiques DevOps pour AEM impliquent que le code passe du développement à l’environnement de production pendant que [le contenu se déplace des environnements de production vers le bas.](/help/overview/enterprise-devops.md#code-movement)
+* Planifiez une période de gel du code et du contenu.
+   * Voir aussi la section [Chronologies du gel du code et du contenu pour la migration](#code-content-freeze)
+* Effectuez la dernière mise à jour du contenu.
+* Validation des configurations du Dispatcher.
+   * Utilisation d’un programme de validation Dispatcher local qui facilite la configuration, la validation et la simulation locale du Dispatcher
+      * [Configurez les outils Dispatcher locaux.](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=fr#prerequisites)
+   * Examinez attentivement la configuration de l’hôte virtuel.
+      * La solution la plus simple (et par défaut) est d’inclure `ServerAlias *` dans votre fichier d’hôte virtuel dans le `/dispatcher/src/conf.d/available_vhostsfolder`.
+         * Cela permettra aux alias d’hôte utilisés par les tests fonctionnels du produit, l’invalidation du cache du Dispatcher et les clones de fonctionner.
+      * Cependant, si `ServerAlias *` n’est pas acceptable, au minimum : `ServerAlias` les entrées doivent être autorisées en plus de vos domaines personnalisés :
+         * `localhost`
+         * `*.local`
+         * `publish*.adobeaemcloud.net`
+         * `publish*.adobeaemcloud.com`
+* Configurez CDN, SSL et DNS.
+   * Si vous utilisez votre propre réseau de diffusion de contenu, saisissez un ticket d’assistance pour configurer le routage approprié.
+      * Voir la section [Le réseau de diffusion de contenu du client pointe vers AEM réseau de diffusion de contenu géré](/help/implementing/dispatcher/cdn.md#point-to-point-cdn) dans la documentation du réseau de diffusion de contenu pour plus d’informations.
+      * Vous devez configurer SSL et DNS en fonction de la documentation de votre fournisseur de réseau de diffusion de contenu.
+   * Si vous n’utilisez pas de réseau de diffusion de contenu supplémentaire, gérez SSL et DNS conformément à la documentation suivante :
+      * Gestion des certificats SSL
+         * [Présentation de la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Gestion du certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
+      * Gestion des noms de domaine personnalisés (DNS)
+         * [Présentation des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         * [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
+         * [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
+   * N’oubliez pas de valider le jeu TTL pour votre enregistrement DNS.
+      * La durée de vie est la durée pendant laquelle un enregistrement DNS reste dans un cache avant de demander une mise à jour au serveur.
+      * Si vous avez un TTL très élevé, les mises à jour de votre enregistrement DNS prendront plus de temps à se propager.
+* Exécutez des tests de performance et de sécurité qui répondent aux besoins et aux objectifs de votre entreprise.
+* Effectuez une coupure et assurez-vous que la mise en service réelle est effectuée sans aucun nouveau déploiement ni mise à jour du contenu.
 
 Vous pouvez toujours vous référer à cette liste au cas où vous auriez besoin de recalibrer vos tâches lors de la migration.
 
