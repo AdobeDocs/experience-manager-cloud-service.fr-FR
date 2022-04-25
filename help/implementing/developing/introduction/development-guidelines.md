@@ -2,10 +2,10 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Conseils de développement pour AEM as a Cloud Service
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 65b17f1b844ed444db2d44c282307aebb554887e
+source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
-source-wordcount: '2356'
-ht-degree: 88%
+source-wordcount: '2444'
+ht-degree: 84%
 
 ---
 
@@ -225,15 +225,17 @@ Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/exp
 * Le nom d’hôte du serveur SMTP doit être défini sur $[env:AEM_PROXY_HOST;default=proxy.tunnel]
 * Le port du serveur SMTP doit être défini sur la valeur du port proxy d’origine défini dans le paramètre portForwards utilisé dans l’appel de l’API lors de la configuration de la mise en réseau avancée. Par exemple, 30465 (plutôt que 465).
 
-Il est également recommandé, si le port 465 a été demandé, d’opérer les actions suivantes :
+Le port du serveur SMTP doit être défini comme `portDest` valeur définie dans le paramètre portForwards utilisé dans l’appel API lors de la configuration de la mise en réseau avancée et de la variable `portOrig` doit être une valeur significative comprise entre 3 000 et 3 099, selon la plage requise. Par exemple, si le port du serveur SMTP est 465, le port 30465 doit être utilisé comme `portOrig` .
 
-* Définissez `smtp.port` sur `465`.
-* Définissez `smtp.ssl` sur `true`.
+Dans ce cas et en supposant que SSL doive être activé, dans la configuration de la variable **Day CQ Mail Service OSGI** service :
 
-Si le port 587 a été demandé :
+* Définir `smtp.port` to `30465`
+* Définir `smtp.ssl` to `true`
 
-* Définissez `smtp.port` sur `587`.
-* Définissez `smtp.ssl` sur `false`.
+Si le port de destination est le 587, une `portOrig` La valeur 30587 doit être utilisée. En supposant que SSL soit désactivé, la configuration du service de messagerie Day CQ OSGI :
+
+* Définir `smtp.port` to `30587`
+* Définir `smtp.ssl` to `false`
 
 La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud Service au moment de son exécution sur une valeur appropriée. Par conséquent, si `smtp.ssl` est défini sur true, `smtp.startls` est ignoré. Si `smtp.ssl` est défini sur false, `smtp.starttls` est défini sur true. Cette règle s’applique indépendamment des valeurs de `smtp.starttls` définies dans votre configuration OSGI.
 
