@@ -2,10 +2,10 @@
 title: Déploiement de votre code
 description: Découvrez comment déployer votre code à l’aide des pipelines de Cloud Manager dans AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: a7555507f4fb0fb231e27d7c7a6413b4ec6b94e6
+source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 23%
+source-wordcount: '704'
+ht-degree: 27%
 
 ---
 
@@ -93,6 +93,19 @@ Les déploiements en production suivent généralement les mêmes étapes que pr
 Ce processus se poursuit jusqu’à ce que le déploiement ait atteint toutes les instances de publication et tous les Dispatchers dans la topologie.
 
 ![Phase de déploiement en production](assets/production-deployment.png)
+
+## Délais d’expiration {#timeouts}
+
+Les étapes suivantes expirent s’ils sont en attente de commentaires de l’utilisateur :
+
+| Étape | Délai dépassé |
+|--- |--- |
+| Test de qualité du code | 14 jours |
+| Test de sécurité | 14 jours |
+| Test de performance | 14 jours |
+| Application à approuver | 14 jours |
+| Planning du déploiement en production | 14 jours |
+| Assistance de l’ingénieur du service client | 14 jours |
 
 ## Processus de déploiement {#deployment-process}
 
