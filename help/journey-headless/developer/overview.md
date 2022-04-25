@@ -1,12 +1,12 @@
 ---
 title: Parcours du développeur AEM Headless
-description: Commencez ici pour obtenir un parcours guidé via Adobe Experience Manager (AEM) as a Cloud Service lorsqu’il est utilisé comme système de gestion de contenu sans affichage (CMS). Ce parcours vous fournit toutes les informations dont vous avez besoin pour développer votre première application sans interface.
+description: Commencez ici pour obtenir un parcours guidé par le biais d’Adobe Experience Manager (AEM) as a Cloud Service lorsqu’il utilise des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL afin d’offrir des expériences sans affichage en tant que système de gestion de contenu (CMS) sans affichage. Ce parcours vous fournit toutes les informations dont vous avez besoin pour développer votre première application sans interface.
 landing-page-description: Démarrez ici un parcours guidé à travers les fonctionnalités découplées d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 0c8cddd65ad3b297b58f8ee618ba176edcf51a45
+source-git-commit: 21bd90fa61cfb1c567a7eea4b439206c38b49a5f
 workflow-type: tm+mt
-source-wordcount: '1277'
-ht-degree: 91%
+source-wordcount: '1307'
+ht-degree: 87%
 
 ---
 
@@ -16,7 +16,7 @@ Commencez ici pour obtenir un parcours guidé via Adobe Experience Manager (AEM)
 
 ## Présentation {#introduction}
 
-L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences numériques.
+La mise en oeuvre sans affichage d’AEM utilise des modèles de fragments de contenu et des fragments de contenu pour se concentrer sur la création de fragments de contenu structurés, neutres et réutilisables, ainsi que sur leur diffusion cross-canal. Pour ce faire, la gestion des pages et des composants est abandonnée, comme c’est le cas dans les solutions de pile complètes. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences numériques.
 
 Ce guide détaille les sujets les plus importants concernant l’implémentation du découplage dans AEM afin que vous puissiez :
 
