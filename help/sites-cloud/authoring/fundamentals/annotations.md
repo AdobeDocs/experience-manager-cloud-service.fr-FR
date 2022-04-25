@@ -2,10 +2,10 @@
 title: Ajout d’annotations de page
 description: Utilisez le mode d’annotation pour laisser des annotations et des schémas sur les pages, car vous utiliserez des pense-bêtes pour faciliter le processus de révision du contenu.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: feee00bf5adae0821fe770c8882641994cee2dbf
+source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 100%
+source-wordcount: '699'
+ht-degree: 97%
 
 ---
 
