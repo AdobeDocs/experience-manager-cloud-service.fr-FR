@@ -2,10 +2,10 @@
 title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
-source-wordcount: '2127'
-ht-degree: 100%
+source-wordcount: '2401'
+ht-degree: 88%
 
 ---
 
@@ -257,6 +257,42 @@ Il existe un certain nombre d’exigences à satisfaire pour ajouter des composa
 * Le chemin d’accès où le nœud doit être créé doit être valide lorsqu’il est fourni par `itemPath`.
    * Dans cet exemple, `root/responsivegrid` doit exister pour que le nœud `text_20` puisse y être créé.
 * Seule la création de composants feuille est prise en charge. Les conteneurs et pages virtuels seront pris en charge dans les versions futures.
+
+### Conteneurs virtuels {#virtual-containers}
+
+La possibilité d’ajouter des conteneurs, même si le conteneur correspondant n’est pas encore créé dans AEM, est prise en charge. Le concept et l’approche sont semblables à [composants feuilles virtuels.](#virtual-leaf-components)
+
+Le développeur front-end peut ajouter les composants de conteneur aux emplacements appropriés dans la SPA et ces composants affichent des espaces réservés lorsqu’ils sont ouverts dans l’éditeur d’AEM. L’auteur peut ensuite ajouter des composants et leur contenu au conteneur, ce qui crée les noeuds requis dans la structure JCR.
+
+Par exemple, si un conteneur existe déjà à l’adresse `/root/responsivegrid` et le développeur souhaite ajouter un nouveau conteneur enfant :
+
+![Emplacement du conteneur](assets/container-location.png)
+
+`newContainer` n’existe pas encore dans l’AEM.
+
+Lors de la modification de la page contenant ce composant dans AEM, un espace réservé vide pour un conteneur s’affiche dans lequel l’auteur peut ajouter du contenu.
+
+![Espace réservé du conteneur](assets/container-placeholder.png)
+
+![Emplacement du conteneur dans JCR](assets/container-jcr-structure.png)
+
+Une fois que l’auteur ajoute un composant enfant au conteneur, le nouveau noeud de conteneur est créé avec le nom correspondant dans la structure JCR.
+
+![Conteneur avec contenu](assets/container-with-content.png)
+
+![Conteneur avec contenu dans JCR](assets/container-with-content-jcr.png)
+
+Vous pouvez désormais ajouter plus de composants et de contenu au conteneur, selon les besoins de l’auteur, et les modifications seront conservées.
+
+#### Exigences et restrictions {#container-limitations}
+
+Il existe plusieurs exigences pour ajouter des conteneurs virtuels, ainsi que certaines limites.
+
+* La stratégie permettant de déterminer les composants qui peuvent être ajoutés sera héritée du conteneur parent.
+* Le parent immédiat du conteneur à créer doit déjà exister dans AEM.
+   * Si le conteneur `root/responsivegrid` existe déjà dans le conteneur AEM, un nouveau conteneur peut être créé en indiquant le chemin d’accès. `root/responsivegrid/newContainer`.
+   * Cependant `root/responsivegrid/newContainer/secondNewContainer` n’est pas possible.
+* Un seul nouveau niveau de composant peut être créé virtuellement à la fois.
 
 ## Personnalisations supplémentaires {#additional-customizations}
 
