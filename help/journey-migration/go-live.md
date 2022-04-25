@@ -2,7 +2,7 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9a10348251fe7559ae5d3c4a203109f1f6623bce
+source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
 ht-degree: 76%
@@ -120,7 +120,7 @@ Consultez cette liste d’activités pour vous assurer que vous effectuez une mi
    * [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
 * Migrez le contenu en production et assurez-vous qu’un sous-ensemble approprié est disponible lors de l’évaluation pour les tests.
-   * Notez que les bonnes pratiques DevOps pour AEM impliquent que le code passe du développement à l’environnement de production pendant que [le contenu se déplace des environnements de production vers le bas.](/help/overview/enterprise-devops.md#code-movement)
+   * Notez que les bonnes pratiques DevOps pour AEM impliquent que le code passe du développement à l’environnement de production pendant que le contenu passe des environnements de production.
 * Planifiez une période de gel du code et du contenu.
    * Voir aussi la section [Chronologies du gel du code et du contenu pour la migration](#code-content-freeze)
 * Effectuez la dernière mise à jour du contenu.
