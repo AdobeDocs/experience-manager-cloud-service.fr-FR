@@ -1,15 +1,15 @@
 ---
-title: Publier le contenu traduit (AEM sans interface)
+title: Publier du contenu sans affichage traduit
 description: Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 exl-id: eb8d1152-ed37-47ca-86a8-6a66c010ee62
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '1391'
 ht-degree: 99%
 
 ---
 
-# Publication du contenu traduit {#publish-content}
+# Publier du contenu sans affichage traduit {#publish-content}
 
 Découvrez comment publier votre contenu traduit et mettre à jour les traductions au fur et à mesure que le contenu est mis à jour.
 

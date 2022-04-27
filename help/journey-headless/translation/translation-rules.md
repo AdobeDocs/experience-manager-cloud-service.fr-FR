@@ -1,11 +1,11 @@
 ---
-title: Configuration des règles de traduction (AEM sans interface utilisateur)
+title: Configuration des règles de traduction pour le contenu sans affichage
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 89%
+source-wordcount: '942'
+ht-degree: 92%
 
 ---
 
@@ -24,12 +24,12 @@ Maintenant que votre connecteur est configuré, cet article vous guide tout au l
 
 >[!CAUTION]
 >
->Cette étape du parcours de documentation n’est nécessaire que si vous ne vous trouvez pas sur le canal de version préliminaire d’AEM as a Cloud Service.
+>Cette étape du parcours de documentation n’est nécessaire que si vous n’utilisez pas le **Traductible** Indicateur sur les fragments de contenu.
 >
->* Si vous utilisez le canal de version préliminaire, passez à l’étape suivante du parcours [Traduisez le contenu.](translate-content.md)
->* Si vous n’êtes pas sur le canal de la version préliminaire, veuillez continuer à lire ce document.
->
->Voir [Section Ressources supplémentaires](#additional-resources) pour plus d’informations sur le canal prerrelease.
+>* Le **Traductible** l’indicateur crée automatiquement des règles de traduction pour vous et ne nécessite aucune intervention.
+>* Le **Traductible** L’indicateur n’est utilisé que si la configuration de la structure d’intégration de traduction est définie sur **[Activez les champs de modèle de contenu pour la traduction.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* L’activation de cette option dans la configuration TIF remplace toute règle de traduction créée manuellement.|
+
 
 ## Objectif {#objective}
 
@@ -108,4 +108,3 @@ Tirez parti de ces connaissances et continuez à progresser sur votre parcours d
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de traduction découplée en examinant le document [Traduire le contenu](translate-content.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, même s’ils ne sont pas nécessaires pour poursuivre le parcours en mode découplé.
 
 * [Identification du contenu à traduire](/help/sites-cloud/administering/translation/rules.md) – Découvrez comment les règles de traduction identifient le contenu à traduire.
-* [Canal de version préliminaire AEM](/help/release-notes/prerelease.md#enable-prerelease) - Découvrez comment souscrire au canal de version préliminaire d’AEM as a Cloud Service pour essayer de nouvelles fonctionnalités et les fonctionnalités à venir.

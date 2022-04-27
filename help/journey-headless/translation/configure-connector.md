@@ -1,11 +1,11 @@
 ---
-title: Configuration du connecteur de traduction (AEM sans interface utilisateur)
+title: Configuration du connecteur de traduction pour le contenu sans affichage
 description: Découvrez comment connecter AEM à un service de traduction.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: a8293384cbe55921f7cfd2187330f66691206e2b
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '1296'
-ht-degree: 89%
+source-wordcount: '1234'
+ht-degree: 91%
 
 ---
 
@@ -101,9 +101,6 @@ Pour créer une configuration de traduction :
    1. **Exécuter automatiquement la traduction** : cochez cette propriété si vous souhaitez que les traductions soient automatiquement envoyées à votre service de traduction.
    1. **Désactiver la traduction mise à jour seule** - Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. La mise à jour de votre projet de traduction sera discutée ultérieurement dans le parcours.
    1. **Activation des champs de modèle de contenu pour la traduction** - Cochez cette option pour que la configuration de traduction reconnaisse automatiquement les champs des modèles de contenu en fonction de la variable **Traductible** Indicateur.
-      * Si cette option est disponible, elle doit être cochée pour simplifier le processus de traduction.
-      * Cette option n’est disponible que dans le canal de version préliminaire d’AEM as a Cloud Service.
-      * Voir [Section Ressources supplémentaires](#additional-resources) pour plus d’informations sur le canal prerrelease.
 
 1. Appuyez et cliquez sur **Enregistrer et fermer**.
 
@@ -135,7 +132,7 @@ Maintenant que vous avez terminé cette partie du parcours de traduction découp
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
-Tirez parti de ces connaissances et continuez à progresser sur votre parcours de traduction découplée AEM en consultant le document [Configuration des règles de traduction,](translation-rules.md) où vous apprendrez à définir le contenu à traduire.
+Tirez parti de ces connaissances et continuez votre parcours de traduction AEM sans interface utilisateur graphique en consultant le document. [Traduire le contenu,](translation-rules.md) où vous apprendrez à utiliser votre configuration jusqu’à présent pour traduire réellement votre contenu.
 
 ## Ressources supplémentaires {#additional-resources}
 
@@ -143,4 +140,3 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 
 * [Configuration de la structure d’intégration de traduction](/help/sites-cloud/administering/translation/integration-framework.md) : consultez la liste des connecteurs de traduction sélectionnés et apprenez à configurer la structure d’intégration de traduction pour l’intégration à des services de traduction tiers.
 * [Connexion à Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md) : AEM fournit un compte d’évaluation de traduction Microsoft à des fins de test.
-* [Canal de version préliminaire AEM](/help/release-notes/prerelease.md#enable-prerelease) - Découvrez comment souscrire au canal de version préliminaire d’AEM as a Cloud Service pour essayer de nouvelles fonctionnalités et les fonctionnalités à venir.

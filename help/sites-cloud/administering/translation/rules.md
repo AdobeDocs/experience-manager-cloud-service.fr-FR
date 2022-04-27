@@ -4,10 +4,10 @@ description: Découvrez comment les règles de traduction identifient le contenu
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 1363929c95f0615d14b31e0733d20130f4226de2
+source-git-commit: 0c75a367861c9e4c77ee537322fa49330c70db85
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 90%
+source-wordcount: '1297'
+ht-degree: 89%
 
 ---
 
@@ -23,15 +23,9 @@ Les règles de traduction identifient le contenu à traduire pour les pages, les
 
 Les règles de traduction décrites dans ce document s’appliquent aux fragments de contenu uniquement si la variable **Activation des champs de modèle de contenu pour la traduction** n’a pas été activée au niveau de la fonction [niveau de configuration de la structure d’intégration de traduction.](integration-framework.md#assets-configuration-properties)
 
-Si la variable **Activation des champs de modèle de contenu pour la traduction** est principale, AEM utilisera la variable **Traductible** champ sur [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#properties) pour déterminer si le champ doit être traduit. Dans ce cas, [règles de traduction](rules.md) sont remplacées.
+Si la variable **Activation des champs de modèle de contenu pour la traduction** est principale, AEM utilisera la variable **Traductible** champ sur [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#properties) pour déterminer si le champ doit être traduit et crée automatiquement des règles de traduction en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées et ne nécessite aucune intervention ni aucune étape supplémentaire.
 
-Si vous souhaitez utiliser des règles de traduction pour traduire vos fragments de contenu, la variable **Activation des champs de modèle de contenu pour la traduction** sur la configuration de la structure d’intégration de traduction doit être désactivée.
-
->[!NOTE]
->
->Cette fonctionnalité est disponible dans le canal de version préliminaire.
-> 
->Voir [Documentation sur les canaux de version préliminaire](/help/release-notes/prerelease.md#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
+Si vous souhaitez utiliser des règles de traduction pour traduire vos fragments de contenu, la variable **Activation des champs de modèle de contenu pour la traduction** sur la configuration de la structure d’intégration de traduction doit être désactivée et vous devez suivre les étapes décrites ci-dessous pour créer vos règles.
 
 ## Présentation {#overview}
 

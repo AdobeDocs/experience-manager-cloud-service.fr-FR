@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: d5a7138cd5e3e9f0febe20b7447589beadc45554
+source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 89%
+source-wordcount: '1409'
+ht-degree: 97%
 
 ---
 
@@ -88,15 +88,11 @@ Comme les modèles de contenu définissent la structure de votre contenu, vous d
       ![Éditeur de modèles de fragment de contenu](assets/content-fragment-model-editor.png)
 1. Appuyez ou cliquez sur l’un des champs du modèle. AEM le coche et les détails de ce champ s’affichent dans la colonne de droite.
    ![Détail de l’Éditeur de modèles de fragment de contenu](assets/content-fragment-model-editor-detail.png)
+1. L’architecte de contenu active la propriété **Traductible** sur chaque champ de modèle de contenu qui doit être traduit.
 
 >[!TIP]
 >
 >En règle générale, l’architecte de contenu est chargé d’identifier les champs nécessaires à la traduction. Les étapes précédentes sont détaillées pour une meilleure compréhension du spécialiste de la traduction.
-
-La gestion de la traduction des champs de modèle de contenu dépend de l’utilisation du canal de version préliminaire d’AEM as a Cloud Service. Voir [Section Ressources supplémentaires](#additional-resources) pour plus d’informations sur le canal prerrelease.
-
-* **Si vous utilisez le canal de version préliminaire**, l’architecte de contenu active la propriété **Traductible** sur chaque champ de modèle de contenu qui doit être traduit.
-* **Si vous n’utilisez pas le canal de version préliminaire**, l’architecte de contenu vous fournit le **Nom de la propriété** pour tous les champs qui doivent être traduits. Vous aurez besoin de ces informations plus tard dans le parcours. Ces **Noms de la propriété** sont nécessaires pour indiquer à AEM quels champs de votre contenu doivent être traduits.
 
 ### Fragments de contenu {#content-fragments}
 
@@ -170,10 +166,9 @@ Vous devez prendre note du chemin spécifique de votre contenu, car il sera ensu
 Maintenant que vous comprenez ce que sont les fragments de contenu et l’importance de la structure de contenu, nous pouvons examiner comment traduire ce contenu. Les outils de traduction AEM sont puissants, mais faciles à comprendre dans l’ensemble.
 
 * **Connecteur de traduction** : le connecteur représente le lien entre AEM et le service de traduction que vous utilisez.
-* **Règles de traduction** : les règles définissent quel contenu doit être traduit en fonction de chemins spécifiques. Des règles ne sont nécessaires que si vous n’utilisez pas le canal AEM version préliminaire.
 * **Projets de traduction** : les projets de traduction rassemblent le contenu qui doit être traité comme une tâche de traduction unique et consignent l’avancement de la traduction, interagissent avec le connecteur pour transmettre le contenu à traduire et le recevoir du service de traduction.
 
-En règle générale, vous ne configurez votre connecteur qu’une seule fois pour votre instance. Si des règles sont requises, elles sont configurées par projet sans tête. Ensuite, vous utilisez des projets de traduction pour traduire votre contenu et conserver ses traductions à jour en permanence.
+En règle générale, vous ne configurez votre connecteur qu’une seule fois pour votre instance. Ensuite, vous utilisez des projets de traduction pour traduire votre contenu et conserver ses traductions à jour en permanence.
 
 ## Prochaines étapes {#what-is-next}
 
@@ -193,4 +188,3 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 * [Identification du contenu à traduire](/help/sites-cloud/administering/translation/rules.md) : découvrez comment les règles de traduction identifient le contenu à traduire.
 * [Configuration de la structure d’intégration de traduction](/help/sites-cloud/administering/translation/integration-framework.md) : découvrez comment configurer la structure d’intégration de traduction pour l’intégrer à des services de traduction tiers.
 * [Gestion de projets de traduction](/help/sites-cloud/administering/translation/managing-projects.md) : découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.
-* [Canal de version préliminaire AEM](/help/release-notes/prerelease.md#enable-prerelease) - Découvrez comment souscrire au canal de version préliminaire d’AEM as a Cloud Service pour essayer de nouvelles fonctionnalités et les fonctionnalités à venir.
