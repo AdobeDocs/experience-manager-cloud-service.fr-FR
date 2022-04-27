@@ -1,5 +1,5 @@
 ---
-title: parcours Dynamic Media
+title: parcours Dynamic Media, Partie I
 description: 'Le Parcours Dynamic Media couvre les principes de base de Dynamic Media, son fonctionnement, ce qu’il peut vous apporter et la valeur qu’il apporte à votre travail et à vos clients. '
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 hide: false
 hidefromtoc: false
-source-git-commit: b830c6e2f86b92b03cb9c03e94ae2bb2e3bda444
+source-git-commit: dc290be237c938af59960834b32269a1f6c5bd97
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3487'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,8 @@ Cette méthode de diffusion unique garantit que des expériences de qualité coh
 
 <!-- As part of building and publishing assets with Dynamic Media, you visually configure the effects that you want to apply to assets. In so doing, you are literally building the URL that correctly tells the publish server how to deliver your primary asset to the screen.  -->
 
-![Adobe Dynamic Media diffuse la même Principale image sur différents supports, dans des formats et des tailles différents.](/help/assets/assets-dm/dm-oneasset-multioutput.png)
+![Adobe Dynamic Media diffuse la même Principale image sur différents supports, dans des formats et des tailles différents.](/help/assets/dynamic-media/assets/dm-oneasset-multioutput.png)
+
 *Adobe Dynamic Media garantit la cohérence et la qualité des expériences diffusées sur n’importe quel écran, quelle que soit leur taille ou leur bande passante.*
 
 Au fur et à mesure que vous lisez, vous allez en apprendre plus sur l&#39;importance de ce concept de &quot;un Principal fichier de ressource, des possibilités infinies&quot;.
@@ -104,7 +105,7 @@ Cette intelligence réduit davantage la taille du fichier image en fonction de l
 
 Dans l’ensemble, avec l’imagerie dynamique, vous pouvez vous attendre à une amélioration des performances de 22 à 47 % en fonction des paramètres d’image prédéfinis et des caractéristiques spécifiques de l’utilisateur final. Tout en conservant la qualité de l’image comme si elle n’avait jamais été touchée.
 
-![Imagerie dynamique](/help/assets/assets-dm/dm-smart-imaging.png)
+![Imagerie dynamique](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *L’imagerie dynamique optimise automatiquement le format et la taille de fichier d’une image en fonction des fonctionnalités de navigateur et de la vitesse du réseau d’un client.*
 
 L’imagerie dynamique n’est pas activée par défaut, car elle nécessite un effort coordonné entre vous et l’assistance technique d’Adobe Dynamic Media. En outre, l’activation de l’imagerie dynamique nécessite un effacement complet du cache du réseau de diffusion de contenu, qui est ensuite complété avec le temps. Si vous souhaitez utiliser l’imagerie dynamique, vous pouvez demander à Adobe de l’activer en soumettant un ticket d’assistance technique. Le support technique vous fournit ensuite un paramètre d’URL qui vous permet de tester au préalable l’imagerie dynamique. Vous pouvez l’essayer sur n’importe quelle page web ou image afin de voir les performances obtenues et les économies réalisées. L’imagerie dynamique peut alors être activée pour l’ensemble du site.
@@ -117,7 +118,7 @@ Lorsqu’il y a une vidéo sur une page, ou une page principale, vos clients ont
 
 Pour résoudre ce problème, Dynamic Media vous permet de créer des *Visionneuses de vidéos adaptatives*.
 
-![Visionneuse de vidéos adaptative](/help/assets/dynamic-media/assets/dm-adaptive-video.png)
+![Visionneuse de vidéos adaptative](/help/assets/dynamic-media/assets/dm-smart-imaging.png)
 *Une visionneuse de vidéos adaptative regroupe les versions d’une même vidéo codées à des débits et des formats différents.*
 
 Vous commencez avec votre Principale vidéo originale que vous téléchargez dans le système. Tailles automatiques de Dynamic Media ou *transcodes*, cette vidéo en plusieurs vidéos. Ensuite, au moment de la diffusion, il détermine intelligemment quel écran vidéo, quelle qualité et quel format utiliser et le diffuse sur le téléphone, la tablette ou l’ordinateur de bureau.
