@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: a2a57b2a35bdfba0466c46d5f79995ffee121cb7
+source-git-commit: 3682426cc333414a9fd20000e4d021fc622ff3b5
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 84%
+source-wordcount: '2420'
+ht-degree: 85%
 
 ---
 
@@ -72,7 +72,7 @@ Vous devez préparer un nouveau package de définition d’index qui contient la
 
 qui doit ensuite être placé dans `ui.apps/src/main/content/jcr_root`. Les dossiers de sous-racine ne sont pas pris en charge pour l’instant.
 
-Le filtre du package doit être défini de sorte que les index existants (index prêts à l’emploi) soient conservés. Pour ce faire, deux méthodes sont possibles : Le filtre est défini sur `<filter root="/oak:index/" mode="merge"/>` dans le fichier `ui.apps/src/main/content/META-INF/vault/filter.xml`, ou chaque index personnalisé (ou personnalisé) doit être répertorié séparément dans la section de filtre, par exemple : `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Si, dans le cas contraire, chaque fois que la version est modifiée, le filtre doit être ajusté.
+Le filtre du package doit être défini de sorte que les index existants (index prêts à l’emploi) soient conservés. Dans le fichier `ui.apps/src/main/content/META-INF/vault/filter.xml`, chaque index personnalisé (ou personnalisé) doit être répertorié, par exemple : `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Si la version de l’index est modifiée ultérieurement, le filtre doit être ajusté.
 
 Le package de l’exemple ci-dessus est nommé `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
