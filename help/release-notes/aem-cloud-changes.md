@@ -2,10 +2,10 @@
 title: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: ab81bca96bcf06b06357f900464e999163bb1bb2
+source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
 workflow-type: tm+mt
-source-wordcount: '819'
-ht-degree: 100%
+source-wordcount: '822'
+ht-degree: 86%
 
 ---
 
@@ -34,7 +34,7 @@ Les principales différences sont les suivantes :
 
 * [/apps et /libs ne sont pas modifiables au moment de l’exécution](#apps-libs-immutable)
 
-* [Les paramètres et bundles OSGi doivent être basés sur le référentiel](#osgi)
+* [Les lots et configurations OSGi doivent être traités comme du code.](#osgi)
 
 * [Les modifications apportées au référentiel de publication ne sont pas autorisées](#changes-to-publish-repo)
 
@@ -54,7 +54,7 @@ Le contenu et les sous-dossiers de `/apps` et `/libs` sont en lecture seule. Les
 
 * Aucune modification n’est autorisée dans `/libs`.
    * Il ne s’agit pas d’une nouvelle règle, mais elle n’était pas appliquée dans les précédentes versions sur site d’AEM.
-* Les superpositions pour les zones de `/libs` qui peuvent être superposées sont toujours autorisées dans `/apps`.
+* Recouvrements pour les zones de `/libs` qui sont autorisées à être superposées sont toujours autorisées dans `/apps`.
    * Ces superpositions doivent provenir de Git par l’intermédiaire du pipeline CI/CD.
 * Les informations de conception de modèles statiques stockées dans `/apps` ne peuvent pas être modifiées au moyen de l’interface utilisateur.
    * Il est recommandé d’utiliser plutôt des modèles modifiables.
@@ -62,12 +62,14 @@ Le contenu et les sous-dossiers de `/apps` et `/libs` sont en lecture seule. Les
 * Les configurations de déploiement MSM personnalisées et le plan directeur MSM doivent être installés à partir de Git via le pipeline CI/CD.
 * Les changements de traduction I18n doivent provenir de Git via le pipeline CI/CD.
 
-## Les paramètres et bundles OSGi doivent être basés sur le référentiel {#osgi}
+## Les lots et configurations OSGi doivent être traités comme du code. {#osgi}
 
-La console web, qui était utilisée dans les versions précédentes d’AEM pour modifier les paramètres OSGi, n’est pas disponible dans AEM Cloud Service. Par conséquent, les modifications apportées à OSGi doivent être introduites par le biais du pipeline CI/CD.
+Les modifications apportées aux lots et aux configurations OSGi doivent être introduites par le biais du pipeline CI/CD.
 
-* Les modifications apportées aux paramètres OSGi ne peuvent être effectuées que par le biais de la persistance Git en tant que paramètres OSGi basés sur JCR.
-* Les bundles OSGi (qu’ils soient nouveaux ou qu’ils aient été mis à jour) doivent être introduits via Git dans le cadre du processus de création du pipeline CI/CD.
+* Les lots OSGi nouveaux ou mis à jour doivent être introduits via Git via le pipeline CI/CD.
+* Les modifications apportées aux configurations OSGi peuvent uniquement provenir de Git via le pipeline CI/CD.
+
+La console web, utilisée dans les versions précédentes d’AEM pour modifier les lots et les configurations OSGi, n’est pas disponible dans AEM Cloud Service.
 
 ## Les modifications apportées au référentiel de publication ne sont pas autorisées {#changes-to-publish-repo}
 
@@ -114,4 +116,4 @@ Pour la transition d’un projet à partir d’AMS ou d’une installation sur s
 
 ## Gestion et diffusion des ressources {#asset-handling}
 
-Le chargement, le traitement et le téléchargement des ressources sont optimisés dans [!DNL Experience Manager Assets] en tant que [!DNL Cloud Service]. [!DNL Assets] est désormais plus efficace, permet une mise à l’échelle plus importante et vous permet de télécharger et de télécharger beaucoup plus rapidement. Cela a également un impact sur le code personnalisé existant et sur certaines opérations. Pour obtenir la liste des modifications et la parité avec les fonctionnalités [!DNL Experience Manager] 6.5, voir les [modifications apportées à [!DNL Assets]](/help/assets/assets-cloud-changes.md).
+Le chargement, le traitement et le téléchargement des ressources sont optimisés dans [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. [!DNL Assets] est désormais plus efficace, permet une mise à l’échelle plus importante et vous permet de télécharger et de télécharger beaucoup plus rapidement. Cela a également un impact sur le code personnalisé existant et sur certaines opérations. Pour obtenir la liste des modifications et la parité avec les fonctionnalités [!DNL Experience Manager] 6.5, voir les [modifications apportées à [!DNL Assets]](/help/assets/assets-cloud-changes.md).
