@@ -2,10 +2,10 @@
 title: Activation d’AEM Screens pour votre site de démonstration
 description: Découvrez les étapes pour activer l’expérience as a Cloud Service AEM Screens complète sur votre site de démonstration.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: cdc60627bac17166c12ebdb77e7cf5b0ed92dc80
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 2%
+source-wordcount: '2671'
+ht-degree: 4%
 
 ---
 
@@ -13,19 +13,19 @@ ht-degree: 2%
 
 Découvrez les étapes pour activer l’expérience as a Cloud Service AEM Screens complète sur votre site de démonstration.
 
-## Un peu d’histoire...  {#story-so-far}
+## Un peu d’histoire… {#story-so-far}
 
 Dans le document précédent du parcours de module complémentaire de démonstration de référence d’AEM, [Créer un site de démonstration,](create-site.md) vous avez créé un nouveau site de démonstration basé sur les modèles du module complémentaire de démonstration de référence. Vous devez maintenant :
 
-* Découvrez comment accéder à l’environnement de création AEM.
-* Découvrez comment créer un site à partir d’un modèle.
-* Découvrez les principes de base de la navigation dans la structure du site et de la modification d’une page.
+* Découvrir comment accéder à l’environnement de création AEM.
+* Savoir comment créer un site à partir d’un modèle.
+* Découvrir les principes de base de la navigation dans la structure du site et de la modification d’une page.
 
 Maintenant que vous disposez de votre propre site de démonstration pour explorer et comprendre les outils disponibles pour vous aider à gérer vos sites de démonstration, vous pouvez activer l’expérience as a Cloud Service AEM Screens complète pour vos sites de démonstration.
 
 ## Objectif {#objective}
 
-Le module complémentaire de démonstration de référence d’AEM contient du contenu AEM Screens pour We.Cafe, un business vertical du café. Ce document vous aide à comprendre comment exécuter la configuration de démonstration We.Cafe dans le contexte d’AEM Screens. Après l’avoir lu, vous devriez :
+Le module complémentaire de démonstration de référence d’AEM contient du contenu AEM Screens pour We.Cafe, un business vertical du café. Ce document vous aide à comprendre comment exécuter la configuration de démonstration We.Cafe dans le contexte d’AEM Screens. Après avoir lu ce document, vous devriez :
 
 * Connaître les principes de base d’AEM Screens.
 * Découvrez le contenu de démonstration de We.Cafe.
@@ -296,7 +296,7 @@ Tout d’abord, vous devez publier votre contenu de démonstration Screens sur A
 
    ![Créer un affichage](assets/create-display.png)
 
-1. Une fois le canal créé, cliquez dessus pour en afficher les détails. Un canal synchronisé à partir de votre site de démonstration doit être affecté à l’affichage. Cliquez sur **Attribuer le canal** en haut à droite de l’écran.
+1. Une fois l’affichage créé, cliquez sur son nom pour ouvrir l’écran des détails de l’affichage. Un canal synchronisé à partir de votre site de démonstration doit être affecté à l’affichage. Cliquez sur **Attribuer le canal** en haut à droite de l’écran.
 
    ![Détails du canal](assets/channel-detail.png)
 
@@ -375,9 +375,9 @@ Une fois que vous avez attribué un affichage à un lecteur, AEM Screens as a Cl
 
 ![Paysage d’entrée](assets/entrance-landscape.jpg)
 
-## Et après ? {#what-is-next}
+## Prochaines étapes {#what-is-next}
 
-Maintenant que vous avez terminé cette partie du parcours de module complémentaire de démonstration de référence d’AEM, vous devez :
+Maintenant que vous avez terminé cette partie du parcours de module complémentaire de démonstration de référence d’AEM, vous devez :
 
 * Connaître les principes de base d’AEM Screens.
 * Découvrez le contenu de démonstration de We.Cafe.
