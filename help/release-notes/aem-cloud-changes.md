@@ -2,10 +2,10 @@
 title: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: 5c2fcb815e345a5c7fa88f02488d15ffb1a71435
+source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 86%
+source-wordcount: '846'
+ht-degree: 84%
 
 ---
 
@@ -40,7 +40,7 @@ Les principales différences sont les suivantes :
 
 * [Les modes d’exécution personnalisés ne sont pas autorisés](#custom-runmodes)
 
-* [Suppression des agents de réplication](#replication-agents)
+* [Suppression des agents de réplication et modifications connexes](#replication-agents)
 
 * [Suppression de l’interface utilisateur classique](#classic-ui)
 
@@ -96,13 +96,15 @@ Les modes d’exécution suivants sont fournis en standard pour AEM Cloud Servic
 
 Aucun mode d’exécution supplémentaire ou personnalisé n’est accepté dans AEM Cloud Service.
 
-## Suppression des agents de réplication {#replication-agents}
+## Suppression des agents de réplication et modifications connexes {#replication-agents}
 
 Dans AEM Cloud Service, le contenu est publié à l’aide du module [Sling Content Distribution](https://sling.apache.org/documentation/bundles/content-distribution.html). Les agents de réplication utilisés dans les versions précédentes d’AEM ne sont plus utilisés ni fournis, ce qui peut avoir une incidence sur les zones suivantes des projets AEM existants :
 
 * Workflows personnalisés qui envoient, par exemple, du contenu vers les agents de réplication des serveurs d’aperçu.
 * Personnalisation des agents de réplication pour transformer le contenu
 * Utilisation de la réplication inverse pour ramener le contenu de la publication à l’auteur.
+
+Notez également que les boutons pause et désactivation ont été supprimés de la console d’administration de l’agent de réplication.
 
 ## Suppression de l’interface utilisateur classique {#classic-ui}
 
