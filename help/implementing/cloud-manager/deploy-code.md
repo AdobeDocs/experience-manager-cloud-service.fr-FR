@@ -2,17 +2,28 @@
 title: Déploiement de votre code
 description: Découvrez comment déployer votre code à l’aide des pipelines de Cloud Manager dans AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: feee55b2d1814b14121030b2ec3c0cb286e87044
+source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
 workflow-type: tm+mt
-source-wordcount: '704'
-ht-degree: 27%
+source-wordcount: '806'
+ht-degree: 23%
 
 ---
 
 
 # Déploiement de votre code {#deploy-your-code}
 
-Découvrez comment déployer votre code à l’aide des pipelines de Cloud Manager dans AEM as a Cloud Service.
+Découvrez comment déployer votre code vers Production à l’aide des pipelines Cloud Manager dans AEM as a Cloud Service.
+
+![Diagramme de pipeline de production](./assets/configure-pipeline/production-pipeline-diagram.png)
+
+Le déploiement du code de manière transparente sur l’environnement intermédiaire, puis jusqu’à la production, est effectué via un pipeline de production. L’exécution du pipeline de production est divisée en deux phases logiques.
+
+1. Déploiement dans un environnement d’évaluation
+   * Le code est créé et déployé dans l’environnement d’évaluation pour les tests fonctionnels automatisés, les tests de l’interface utilisateur, le contrôle de l’expérience et les tests d’acceptation utilisateur (UAT).
+1. Déploiement dans l’environnement de production
+   * Une fois que la version est validée à l’étape de l’évaluation et approuvée pour la promotion en production, le même artefact de version est déployé dans l’environnement de production.
+
+_Seul le type de pipeline Full Stack Code prend en charge l’analyse de code, les tests de fonction, les tests d’interface utilisateur et l’audit d’expérience._
 
 ## Déploiement de votre code avec Cloud Manager dans AEM as a Cloud Service {#deploying-code-with-cloud-manager}
 

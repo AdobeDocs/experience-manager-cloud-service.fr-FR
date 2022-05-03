@@ -3,16 +3,16 @@ title: Configuration des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 9804d9b71f082c3d4788667fdc3993af3b673588
+source-git-commit: 94e37ae6aef64ec61e633e4c034ceefe5e75c7c8
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1462'
 ht-degree: 29%
 
 ---
 
 # Configuration d’un pipeline de production {#configure-production-pipeline}
 
-Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
+Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production. Un pipeline de production déploie le code d’abord dans l’environnement d’évaluation, puis, une fois approuvé, déploie le même code dans l’environnement de production.
 
 Un utilisateur doit disposer de la variable **[Responsable de déploiement](/help/onboarding/learn-concepts/cloud-manager-introduction.md#role-based-permissions)** rôle pour configurer les pipelines de production.
 
