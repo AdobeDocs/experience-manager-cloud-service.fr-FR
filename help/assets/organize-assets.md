@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
+source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 80%
+source-wordcount: '879'
+ht-degree: 83%
 
 ---
 
@@ -90,12 +90,6 @@ Vous trouverez ci-dessous la procédure à suivre pour ajouter des balises à un
    ![add-tags](assets/add-tags-to-asset.png)
 
 1. Cliquez sur **Enregistrer** pour mettre à jour les modifications apportées aux métadonnées de la ressource.
-
->[!NOTE]
->
->Vous pouvez trier la structure des balises lors de la création de balises intelligentes et lors de l’application de filtres de recherche à l’aide du prédicat de balises.
->
->La fonction de tri des balises est disponible dans le canal de version préliminaire. Pour plus d’informations sur l’activation de cette fonctionnalité dans votre environnement, consultez la [documentation sur les canaux de version préliminaire](/help/release-notes/prerelease.md#enable-prerelease).
 
 Pour plus d’informations, consultez les articles suivants :
 

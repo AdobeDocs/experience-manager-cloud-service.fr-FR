@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Publication et annulation de la publication de pages à l’aide d’AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 100%
+source-wordcount: '1791'
+ht-degree: 98%
 
 ---
 
@@ -16,6 +16,10 @@ Une fois le contenu créé et révisé dans l’environnement de création, l’
 On parle alors de publication d’une page, ou d’annulation de publication lorsque vous souhaitez retirer une page de l’environnement de publication. En cas de publication et d’annulation de la publication, la page reste disponible pour d’autres modifications dans l’environnement de création jusqu’à ce que vous la supprimiez.
 
 Vous pouvez publier/annuler la publication d’une page immédiatement ou à une date/heure prédéfinies.
+
+>[!NOTE]
+>
+>La publication d’un fragment d’expérience suit la même procédure que pour la publication d’une page, à partir de la console Fragments d’expérience ou de l’éditeur.
 
 ## Terminologie {#terminology}
 
@@ -136,7 +140,6 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
       >[!NOTE]
       >
       >Pour annuler une publication/annulation de publication ultérieure, rendez-vous dans la [console Processus](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) pour mettre un terme au processus correspondant.
-
    ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Cliquez sur **Suivant** pour continuer.

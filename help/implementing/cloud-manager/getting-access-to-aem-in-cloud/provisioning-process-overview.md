@@ -1,7 +1,7 @@
 ---
 title: Processus de configuration - Présentation
 description: Processus de configuration - Présentation
-source-git-commit: 2f40b11a20a4ebb3ff7d9d2835bbe56e91ddf96d
+source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
 workflow-type: tm+mt
 source-wordcount: '331'
 ht-degree: 100%
@@ -31,7 +31,7 @@ Une fois l’approvisionnement automatique terminé :
 * L’administrateur peut ajouter des utilisateurs et des rôles pour d’autres membres de l’équipe par l’intermédiaire de l’Admin Console.
 * Examinez les autorisations basées sur les rôles pour les utilisateurs afin de déterminer les affectations d’autorisations dans Cloud Manager.
 
-> ![processoverview.jpg](./assets/processOverview.jpg)
+![processoverview.jpg](assets/processOverview.jpg)
 
 
 Pour plus d’informations, consultez [Intégration d’Experience Manager as a Cloud Service dans Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=fr).
@@ -49,7 +49,7 @@ Pour plus d’informations, consultez [Intégration d’Experience Manager as a
 
 ### 2. Intégration des organisations dans l’Adobe Admin Console :
 
-![processoverview2.jpg](./assets/processOverview2.jpg)
+![processoverview2.jpg](assets/processOverview2.jpg)
 
 * Administrateur système :
    * Fournissez les programmes et environnements AEM.
@@ -62,7 +62,7 @@ Pour plus d’informations, consultez [Intégration d’Experience Manager as a
 
 ### 3. Intégration d’utilisateurs et gestion des accès dans l’Admin Console :
 
-![processoverview3.jpg](./assets/processOverview3.jpg)
+![processoverview3.jpg](assets/processOverview3.jpg)
 
 Trois méthodes pour intégrer les utilisateurs, en fonction de la taille et des préférences :
 * Création manuelle d’utilisateurs dans l’Admin Console

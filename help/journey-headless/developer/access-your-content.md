@@ -2,16 +2,22 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 100%
+source-wordcount: '1410'
+ht-degree: 94%
 
 ---
 
 # Accès à votre contenu grâce aux API de diffusion AEM {#access-your-content}
 
 Dans cette partie du [Parcours de développement découplé AEM](overview.md), vous pouvez apprendre à utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu et le transmettre à votre application (diffusion découplée).
+
+>[!NOTE]
+>
+>Certaines fonctionnalités de cette fonctionnalité sont disponibles dans le canal de version préliminaire. En particulier, les fonctionnalités liées aux requêtes persistantes.
+> 
+>Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
 
 ## Un peu d’histoire...  {#story-so-far}
 
@@ -242,7 +248,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Avant de commencer à lancer des requêtes sur votre contenu, suivez les étapes suivantes :
 
 * Activez votre point d’entrée ;
-   * Utilisez Outils -> Ressources -> GraphQL.
+   * Utilisation des outils -> Général -> GraphQL
    * [Activation de votre point d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
 
 * Installez GraphiQL (si nécessaire).
@@ -270,9 +276,10 @@ Les modèles de fragment seront utilisés :
 
 ### Où tester vos requêtes {#where-to-test-your-queries}
 
-Les requêtes peuvent être entrées dans l’interface GraphiQL, par exemple à l’adresse :
+Les requêtes peuvent être saisies dans l’interface GraphiQL. Vous pouvez accéder à l’éditeur de requêtes à partir de :
 
-* `http://localhost:4502/aem/graphiql.html`
+* **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
+* directement; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/graphiql-interface.png "Interface GraphiQL")
 

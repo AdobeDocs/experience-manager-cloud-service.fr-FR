@@ -3,16 +3,22 @@ title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requ
 description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: a2e36e296749c79040c9687bbd88288d8977086d
+source-git-commit: c44c58398da3d82be04e22a5e4293e79361a8def
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 100%
+source-wordcount: '1474'
+ht-degree: 95%
 
 ---
 
 # Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes {#learn-graphql-with-aem-sample-content-queries}
 
 Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
+
+>[!NOTE]
+>
+>Certaines fonctionnalités de cette fonctionnalité sont disponibles dans le canal de version préliminaire. En particulier, les fonctionnalités liées aux requêtes persistantes.
+> 
+>Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
 
 >[!NOTE]
 >
@@ -40,7 +46,11 @@ Consultez ces exemples de requêtes pour obtenir un aperçu de la création de r
 >
 >Selon votre instance, vous pouvez accéder directement à l’[interface GraphiQL incluse avec l’API GraphQL d’AEM](/help/headless/graphql-api/graphiql-ide.md) pour soumettre et tester des requêtes.
 >
->Par exemple : `http://localhost:4502/aem/graphiql.html`
+>Vous pouvez accéder à l’éditeur de requêtes à partir de :
+>
+>* **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
+>* directement; par exemple, `http://localhost:4502/aem/graphiql.html`
+
 
 >[!NOTE]
 >

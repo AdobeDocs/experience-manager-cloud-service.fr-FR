@@ -2,10 +2,10 @@
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 5c907a26a976b55f1e2850650057d907d358aa07
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 95%
+source-wordcount: '1560'
+ht-degree: 92%
 
 ---
 
@@ -354,6 +354,12 @@ Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML b
 >[!NOTE]
 >
 >Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+
+## Publication de fragments d’expérience {#publishing-experience-fragments}
+
+La publication de votre fragment d’expérience est essentiellement identique à [publication d’une page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (à partir de la console Fragments d’expérience ou de l’éditeur).
+
+Vous pouvez également [publier sur Aperçu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (à nouveau à partir de la console Fragments d’expérience ou de l’éditeur).
 
 ## Exportation de fragments d’expérience {#exporting-experience-fragments}
 

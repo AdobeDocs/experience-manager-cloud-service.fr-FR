@@ -3,10 +3,10 @@ title: Gestion des points d’entrée GraphQL dans AEM
 description: Découvrez comment gérer les points d’entrée GraphQL dans Adobe Experience Manager as a Cloud Service pour la diffusion de contenu sans interface utilisateur.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a4f3e55bb3bc39575d43894b9fea1180eaf1a578
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 92%
+ht-degree: 90%
 
 ---
 
@@ -60,7 +60,7 @@ Pour activer un point d’entrée GraphQL, vous devez d’abord disposer d’une
 
 Pour activer le point d’entrée correspondant :
 
-1. Accédez à **Outils**, **Ressources**, puis sélectionnez **GraphQL**.
+1. Accédez à **Outils**, **Général**, puis sélectionnez **GraphQL**.
 1. Sélectionnez **Créer**.
 1. La boîte de dialogue **Créer un point d’entrée GraphQL** s’ouvre. Vous pouvez spécifier ici les éléments suivants :
    * **Nom** : nom du point d’entrée ; vous pouvez saisir du texte.

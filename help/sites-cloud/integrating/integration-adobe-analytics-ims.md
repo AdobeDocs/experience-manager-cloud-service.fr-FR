@@ -1,9 +1,10 @@
 ---
 title: Configuration IMS à utiliser lors de l’intégration à Adobe Analytics
 description: En savoir plus sur la configuration IMS à utiliser lors de l’intégration à Adobe Analytics
-source-git-commit: 7686329de2ef621f69899e07efa9af16e50a35f9
+exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
+source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '893'
 ht-degree: 3%
 
 ---
@@ -11,12 +12,6 @@ ht-degree: 3%
 # Configuration IMS à utiliser lors de l’intégration à Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
 L’intégration d’Adobe Experience Manager as a Cloud Service (AEMaaCS) avec Adobe Analytics via l’API Analytics Standard nécessite la configuration d’Adobe IMS (système Identity Management). La configuration est réalisée avec Adobe Developer Console.
-
->[!NOTE]
-> 
->Cette fonctionnalité est disponible dans le canal de version préliminaire.
->
->Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
 
 >[!NOTE]
 >
@@ -66,7 +61,7 @@ La première étape de la configuration consiste à créer une configuration IMS
 
 ## Configuration d’IMS pour l’intégration d’Adobe Analytics avec AEM {#configuring-ims-adobe-analytics-integration-with-aem}
 
-À l’aide d’Adobe Developer Console, vous devez créer un projet (intégration) avec Adobe Analytics (pour AEM à utiliser), puis attribuer les privilèges requis.
+À l’aide de la console Adobe Developer, vous devez créer un projet (intégration) avec Adobe Analytics (pour AEM à utiliser), puis attribuer les privilèges requis.
 
 ### Création du projet {#creating-the-project}
 
@@ -153,7 +148,7 @@ Pour revenir à AEM, vous pouvez terminer la configuration IMS en ajoutant les v
 1. Revenez au [Configuration IMS ouverte dans AEM](#configuring-ims-generating-a-public-key).
 1. Sélectionnez **Suivant**.
 
-1. Ici, vous pouvez utiliser la variable [détails de la configuration du projet dans Adobe Developer Console](#details-stored-for-the-ims-integration-project):
+1. Ici, vous pouvez utiliser la variable [détails de la configuration du projet dans la console Adobe Developer](#details-stored-for-the-ims-integration-project):
 
    * **Titre**: Votre texte.
    * **Serveur d’autorisation**: Copiez/collez ceci à partir du `aud` de la ligne **Payload** ci-dessous, par exemple `https://ims-na1.adobelogin.com` dans l’exemple ci-dessous

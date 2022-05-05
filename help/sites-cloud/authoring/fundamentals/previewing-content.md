@@ -2,10 +2,10 @@
 title: Prévisualisation du contenu
 description: Découvrez comment utiliser le service d’aperçu AEM pour prévisualiser le contenu avant la mise en ligne.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
-source-git-commit: e70e6ee055c2542752e66e53aa70a9378b1bc5c0
+source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 30%
+source-wordcount: '372'
+ht-degree: 28%
 
 ---
 
@@ -17,6 +17,10 @@ AEM propose un service de prévisualisation de sites qui permet aux développeur
 Elle permet de prévisualiser plus facilement des expériences de page qui ne seraient pas visibles autrement à partir de l’environnement de création, comme les transitions de page et tout autre contenu côté publication uniquement.
 
 Pour plus d’informations sur les environnements d’aperçu, consultez le document . [Gestion des environnements.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+
+>[!NOTE]
+>
+>La publication d’un fragment d’expérience à prévisualiser suit la même procédure que pour une page, à partir de la console Fragments d’expérience ou de l’éditeur.
 
 ## Publication de contenu en vue de la prévisualisation {#publishing-content-to-preview}
 
