@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c7b4907a2d4dbecf03ac5b51376fb534096f5212
+source-git-commit: 45db4869de68627f0ae76798481b96fb4a3e960a
 workflow-type: tm+mt
-source-wordcount: '3439'
+source-wordcount: '3447'
 ht-degree: 94%
 
 ---
@@ -462,6 +462,7 @@ ht-degree: 94%
    + [Intégration de DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
    + [Intégration à Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
    + [Intégration à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+   + [Intégration d’un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
    + Création et utilisation des processus {#create-form-centric-workflows}
       + [Utilisation d’étapes basées sur l’utilisation de Forms dans une référence des étapes du workflow](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilisation de variables dans un processus orienté Forms](/help/forms/variable-in-aem-workflows.md)
@@ -477,7 +478,7 @@ ht-degree: 94%
    + [Problèmes connus](/help/forms/known-issues.md)
    + Résolution des problèmes {#troubleshooting-aem-forms-cloud-service}
       + [Installation et configuration](/help/forms/troubleshooting-installation-and-configuration.md)
-      + [Mise en cache du Dispatcher et du CDN ](/help/forms/troubleshooting-caching-performance.md)
+      + [Mise en cache du Dispatcher et du CDN](/help/forms/troubleshooting-caching-performance.md)
 + Screens {#screens-as-cloud-service}
    + [AEM Screens as a Cloud Service](/help/screens-cloud/home.md)
    + Présentation de Screens as a Cloud Service {#overview}
