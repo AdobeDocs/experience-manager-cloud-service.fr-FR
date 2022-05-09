@@ -2,10 +2,10 @@
 title: Déploiement de votre code
 description: Découvrez comment déployer votre code à l’aide des pipelines de Cloud Manager dans AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: af1e682505d68a65a5e2b500d42f01f030e36ac1
+source-git-commit: c6e930f62cc5039e11f2067ea31882c72be18774
 workflow-type: tm+mt
-source-wordcount: '806'
-ht-degree: 23%
+source-wordcount: '1199'
+ht-degree: 16%
 
 ---
 
@@ -121,3 +121,72 @@ Les étapes suivantes expirent s’ils sont en attente de commentaires de l’ut
 ## Processus de déploiement {#deployment-process}
 
 Tous les déploiements de Cloud Service suivent un processus continu pour garantir un temps d’arrêt nul. Reportez-vous au document [Fonctionnement des déploiements en continu](/help/implementing/deploying/overview.md#how-rolling-deployments-work) pour en savoir plus.
+
+## Réexécution d’un déploiement en production {#Reexecute-Deployment}
+
+La réexécution de l’étape de déploiement en production est prise en charge pour les exécutions où l’étape de déploiement en production est terminée. Le type d’achèvement n’est pas important : le déploiement peut être annulé ou impossible. Cela dit, le cas d’utilisation Principal doit être celui où l’étape de déploiement en production a échoué pour des raisons transitoires. La réexécution crée une nouvelle exécution à l’aide du même pipeline. Cette nouvelle exécution se compose de trois étapes :
+
+1. L’étape de validation : il s’agit essentiellement de la même validation qui se produit lors de l’exécution normale d’un pipeline.
+1. L’étape de création : dans le contexte d’une réexécution, l’étape de création consiste à copier des artefacts, sans réellement exécuter un nouveau processus de création.
+1. L’étape de déploiement en production : utilise la même configuration et les mêmes options que l’étape de déploiement en production dans une exécution normale de pipeline.
+
+L’étape de création peut être légèrement étiquetée différemment dans l’interface utilisateur afin de refléter le fait qu’elle copie des artefacts, et non la reconstruction.
+
+![Redéployer](assets/Re-deploy.png)
+
+Restrictions :
+
+* La réexécution de l’étape de déploiement en production n’est disponible que lors de la dernière exécution.
+* La réexécution n’est pas disponible pour les exécutions de mise à jour push. Si la dernière exécution est une exécution de mise à jour push, la réexécution n’est pas possible.
+* Si la dernière exécution est une exécution de mise à jour push, la réexécution n’est pas possible.
+* Si la dernière exécution a échoué à un moment donné avant l’étape de déploiement en production, la réexécution n’est pas possible.
+
+### Réexécuter l’API {#Reexecute-API}
+
+### Identifier une exécution de réexécution
+
+Pour déterminer si une exécution est une exécution de nouvelle exécution, le champ déclencheur peut être examiné. Sa valeur sera *RE_EXECUTE*.
+
+### Déclenchement d&#39;une nouvelle exécution
+
+Pour déclencher une réexécution, une demande de PUT doit être envoyée au lien HAL &lt;(<http://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> à l’état de l’étape de déploiement en production. Si ce lien est présent, l&#39;exécution peut être redémarrée à partir de cette étape. En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape. Dans la version initiale, ce lien ne sera jamais présent que lors de l’étape de déploiement en production, mais les prochaines versions peuvent prendre en charge le démarrage du pipeline à partir d’autres étapes. Exemple :
+
+```Javascript
+ {
+  "_links": {
+    "http://ns.adobe.com/adobecloud/rel/pipeline/logs": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/logs",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/reExecute": {
+      "href": "/api/program/4/pipeline/1/execution?stepId=2983530",
+      "templated": false
+    },
+    "http://ns.adobe.com/adobecloud/rel/pipeline/metrics": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530/metrics",
+      "templated": false
+    },
+    "self": {
+      "href": "/api/program/4/pipeline/1/execution/953671/phase/1575676/step/2983530",
+      "templated": false
+    }
+  },
+  "id": "6187842",
+  "stepId": "2983530",
+  "phaseId": "1575676",
+  "action": "deploy",
+  "environment": "weretail-global-b75-prod",
+  "environmentType": "prod",
+  "environmentId": "59254",
+  "startedAt": "2022-01-20T14:47:41.247+0000",
+  "finishedAt": "2022-01-20T15:06:19.885+0000",
+  "updatedAt": "2022-01-20T15:06:20.803+0000",
+  "details": {
+  },
+  "status": "FINISHED"
+```
+
+
+Syntaxe du lien HAL _href_  La valeur ci-dessus n’est pas destinée à être utilisée comme point de référence. La valeur réelle doit toujours être lue à partir du lien HAL et non générée.
+
+Envoi d’un *PUT* une requête vers ce point de terminaison entraîne la génération d’une *201* en cas de réussite, le corps de la réponse est la représentation de la nouvelle exécution. Cela revient à lancer une exécution régulière via l’API.
