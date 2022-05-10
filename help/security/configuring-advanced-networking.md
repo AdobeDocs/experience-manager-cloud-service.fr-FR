@@ -2,9 +2,9 @@
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 3325a7a0f99c427040e868f9cafc5f9890d97d69
+source-git-commit: d5d17c554cc0877ebe89710b3ea512355fec2a84
 workflow-type: tm+mt
-source-wordcount: '2964'
+source-wordcount: '2977'
 ht-degree: 98%
 
 ---
@@ -71,6 +71,10 @@ Les règles de transfert de port par environnement peuvent être mises à jour e
 ### Suppression ou désactivation d’une sortie de port flexible {#deleting-disabling-flexible-port-egress-provision}
 
 À **delete** appel de l’infrastructure réseau d’un programme `DELETE /program/{program ID}/ networkinfrastructure/{networkinfrastructureID}`.
+
+>[!NOTE]
+>
+> La suppression ne supprime pas l’infrastructure si des environnements l’utilisent.
 
 Pour **désactiver** une sortie de port flexible à partir d’un environnement en particulier, appelez `DELETE [/program/{programId}/environment/{environmentId}/advancedNetworking]()`.
 
