@@ -3,10 +3,10 @@ title: Configuration de Dynamic Media Cloud Services
 description: Découvrez la configuration de Dynamic Media dans Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 924331ced6a3966a0705dae857f5e7e5af3c9664
+source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
 workflow-type: tm+mt
-source-wordcount: '3438'
-ht-degree: 97%
+source-wordcount: '3449'
+ht-degree: 94%
 
 ---
 
@@ -67,7 +67,7 @@ To migrate any custom viewer presets and configurations that you have created fr
 1. Dans Experience Manager as a Cloud Service, sélectionnez le logo Experience Manager as a Cloud Service pour accéder à la console de navigation globale.
 1. Sur le côté gauche de la console, sélectionnez l’icône Outils, puis **[!UICONTROL Cloud Services > Configuration Dynamic Media]**.
 1. Sur la page du navigateur de configuration Dynamic Media, dans le volet de gauche, sélectionnez **[!UICONTROL global]**. Ne sélectionnez pas l’icône de dossier située à gauche de **[!UICONTROL global]**. Sélectionnez ensuite **[!UICONTROL Créer]**.
-1. Sur la page **[!UICONTROL Créer une configuration Dynamic Media]**, saisissez un titre, l’adresse email du compte Dynamic Media et un mot de passe, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans l’e-mail de mise en service. Contactez le service clientèle si vous n’avez pas reçu cet e-mail.
+1. Sur le **[!UICONTROL Création d’une configuration Dynamic Media]** , saisissez le titre, l’adresse électronique du compte Dynamic Media et le mot de passe de l’administrateur de la société du compte Dynamic Media, puis sélectionnez votre région. Ces informations vous sont fournies par Adobe dans l’e-mail de mise en service. Contactez le service clientèle si vous n’avez pas reçu cet e-mail.
 1. Sélectionnez **[!UICONTROL Connexion à Dynamic Media]**.
 1. Dans la boîte de dialogue **[!UICONTROL Modifier le mot de passe]**, dans le champ **[!UICONTROL Nouveau mot de passe]**, saisissez un nouveau mot de passe composé de 8 à 25 caractères. Le mot de passe doit contenir au moins une occurrence de chacun des types de caractères suivants :
 
@@ -235,7 +235,7 @@ Pour configurer les propriétés de couleur par défaut afin d’activer la corr
 1. Ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started) puis connectez-vous à votre compte à l’aide des informations d’identification fournies lors de la mise en service.
 1. Accédez à **[!UICONTROL Configuration > Configuration de l’application]**.
 1. Développez la zone **[!UICONTROL Configuration de la publication]** et sélectionnez **[!UICONTROL Image Server]**. Définissez **[!UICONTROL Contexte de publication]** sur **[!UICONTROL Imager Server]** lors de la définition des paramètres par défaut des instances de publication.
-1. Faites défiler l’écran jusqu’à la propriété que vous devez modifier, par exemple, une propriété de la zone **[!UICONTROL Attributs de gestion des couleurs]**.
+1. Faites défiler l’écran jusqu’à la propriété que vous devez modifier, par exemple, une propriété de la fonction **[!UICONTROL Attributs de gestion des couleurs]** zone.
 Vous pouvez définir les propriétés de correction des couleurs suivantes :
 
    | Propriété | Description |
@@ -282,7 +282,7 @@ Voir [Chargement de ressources](/help/assets/add-assets.md).
 
    * Appuyez deux fois sur le champ **[!UICONTROL activé]**. Par défaut, tous les types MIME des ressources sont activés (définis sur **[!UICONTROL true]**), ce qui signifie que les ressources sont synchronisées avec Dynamic Media pour le traitement. Si vous voulez exclure ce type MIME de ressource du traitement, définissez ce paramètre sur **[!UICONTROL false]**.
 
-   * Appuyez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Consultez [Types MIME pris en charge](/help/assets/file-format-support.md) pour connaître la liste des valeurs de paramètres de traitement que vous pouvez utiliser pour un type MIME donné.
+   * Appuyez deux fois sur **[!UICONTROL jobParam]** pour ouvrir le champ de texte associé. Voir [Types MIME pris en charge](/help/assets/file-format-support.md) pour une liste de valeurs de paramètre de traitement autorisées que vous pouvez utiliser pour un type MIME donné.
 
 1. Utilisez l’une des méthodes suivantes :
    * Répétez les étapes 3 et 4 pour modifier d’autres types de MIME.
@@ -292,7 +292,7 @@ Voir [Chargement de ressources](/help/assets/add-assets.md).
 
 #### Ajout de types MIME pour les formats non pris en charge {#adding-mime-types-for-unsupported-formats}
 
-Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris en charge dans Experience Manager Assets. Pour vous assurer qu’un nouveau nœud ajouté dans le CRXDE Lite n’est pas supprimé par Experience Manager, déplacez le type de MIME avant `image_`. Assurez-vous également que sa valeur activée est définie sur **[!UICONTROL false]**.
+Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris en charge dans Experience Manager Assets. Pour vous assurer que tout nouveau noeud ajouté en CRXDE Lite n’est pas supprimé par Experience Manager, déplacez le type MIME avant `image_`. Assurez-vous également que sa valeur activée est définie sur **[!UICONTROL false]**.
 
 **Pour ajouter des types MIME pour des formats non pris en charge:**
 
