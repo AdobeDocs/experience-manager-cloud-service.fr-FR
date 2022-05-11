@@ -1,12 +1,12 @@
 ---
 title: Intégration à Adobe Experience Manager as a Cloud Service
-description: Ressources d’aide autonome et liens vers la documentation concernant l’intégration à Adobe Experience Manager as a Cloud Service
+description: 'Commencez à configurer Experience Manager, accédez au cloud et découvrez comment sauvegarder vos données. '
 landing-page-description: Ce guide résume la prise en main d’AEM as a Cloud Service, y compris la manière d’obtenir un accès et des informations importantes sur la protection des données.
 exl-id: 24cc7ad9-3556-4462-89c7-5bc1fc18218a
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '523'
+ht-degree: 96%
 
 ---
 

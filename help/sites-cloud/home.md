@@ -1,18 +1,18 @@
 ---
-title: Adobe Experience Manager Sites as a Cloud Service
-description: Ressources d’aide autonome et liens vers la documentation d’Adobe Experience Manager Sites as a Cloud Service
+title: Ressources d’assistance pour les sites as a Cloud Service Experience Manager
+description: Obtenez la liste complète de toutes nos ressources d’assistance AEM Cloud Services. Trouvez des réponses à vos questions sur AEM Sites en tant que Cloud Service.
 landing-page-description: Découvrez comment créer et administrer AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: 15ac9f0f72d01b999b0044d104ea80202cf44423
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 100%
+source-wordcount: '405'
+ht-degree: 87%
 
 ---
 
-# AEM Sites as a Cloud Service {#aem-sites-guide}
+# AEM Sites as a Cloud Service {#aem-sites-guide}
 
-Cette page répertorie les ressources d’aide autonome concernant Sites sur Experience Manager as a Cloud Service.
+Cette page fournit une liste complète de toutes nos ressources de prise en charge des services cloud AEM. Obtenez des réponses à vos [!DNL AEM Sites as a Cloud Service] questions.
 
 ## Principaux articles relatifs à Sites {#key-articles}
 

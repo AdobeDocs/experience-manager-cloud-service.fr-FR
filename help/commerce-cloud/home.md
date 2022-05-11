@@ -1,18 +1,18 @@
 ---
 title: AEM Content and Commerce
-description: Ressources d’aide autonome et liens vers la documentation d’AEM Content and Commerce
+description: Apprenez comment utiliser et administrer Experience Manager Content and Commerce as a Cloud Service.
 landing-page-description: Apprenez comment utiliser et administrer Experience Manager Content and Commerce as a Cloud Service.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
-source-git-commit: a5b7b78eed96464681d325cb47ed5c6711a4ba34
+source-git-commit: e3f28ea68b3da415f46a98224e3f0b342417ee15
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '367'
 ht-degree: 100%
 
 ---
 
 # Contenu et commerce AEM {#commerce-guide}
 
-Cette page répertorie les ressources d’aide autonome concernant AEM Content and Commerce.
+Apprenez comment utiliser et administrer Experience Manager Content and Commerce as a Cloud Service.
 
 >[!NOTE]
 >

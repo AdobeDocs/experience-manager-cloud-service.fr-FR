@@ -1,18 +1,18 @@
 ---
 title: Connecteurs Adobe Experience Manager as a Cloud Service
-description: Ressources d’aide autonome et liens vers la documentation sur les connecteurs Adobe Experience Manager as a Cloud Service
-landing-page-description: Découvrez comment intégrer des connecteurs à AEM as a Cloud Service.
+description: Découvrez les connecteurs, ce qu’ils peuvent faire et comment mettre en oeuvre ces outils précieux en Experience Manager.
+landing-page-description: Découvrez les connecteurs, ce qu’ils peuvent faire et comment mettre en oeuvre ces outils précieux en Experience Manager.
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
-source-git-commit: fdd430530c3dda304eeffb567f50cd389e1ee535
+source-git-commit: 1bdebb3f9ffdc720c7172265571571d47df35610
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 100%
+source-wordcount: '394'
+ht-degree: 85%
 
 ---
 
 # Implémentation des connecteurs Experience Manager as a Cloud Service {#aem-connectors-guide}
 
-Cette page répertorie les ressources d’aide autonome sur les connecteurs Experience Manager as a Cloud Service.
+Découvrez les connecteurs pour Experience Manager as a Cloud Service, ce qu’ils peuvent faire et comment mettre en oeuvre ces outils précieux dans Experience Manager.
 
 ## Principaux articles relatifs aux connecteurs Adobe Experience Manager as a Cloud Service {#key-articles}
 
