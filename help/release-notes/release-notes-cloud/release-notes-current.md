@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 7ee2e43ab8a5726b2ecf7f157f67b5f3cc73fcff
+source-git-commit: 092338947ef7c8f34bda4604e1c901344e966be0
 workflow-type: tm+mt
-source-wordcount: '719'
-ht-degree: 26%
+source-wordcount: '551'
+ht-degree: 31%
 
 ---
 
@@ -85,24 +85,6 @@ Il est vivement recommandé de mettre à jour votre projet Maven avec la derniè
 
 Vous trouverez une liste complète des versions mensuelles de Cloud Manager [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
-## Analyseur des bonnes pratiques {#bpa-release}
+## Outils de migration {#migration-tools}
 
-### Date de publication {#release-date-bpa}
-
-La date de publication de l’analyseur de bonnes pratiques v2.1.28 est le 22 avril 2022.
-
-### Nouveautés {#what-is-new-bpa}
-
-* Possibilité de détecter et de générer des rapports sur l’utilisation des API Asset Manager non prises en charge. Quatre API ne sont plus prises en charge dans AEM as a Cloud Service. Les clients doivent s’assurer qu’ils n’utilisent plus ces API et qu’ils doivent utiliser la nouvelle méthode de chargement de ressources.
-
-* Possibilité de détecter l’utilisation de modèles de fragments de contenu. Les modèles de fragment de contenu ne sont plus pris en charge pour la création de fragments de contenu sur AEM as a Cloud Service. Les clients devront créer des modèles de fragment de contenu pour remplacer les modèles de fragment de contenu.
-
-* Possibilité de détecter des ressources avec plus de 100 descendants sous le noeud de métadonnées de la ressource dans le référentiel. Il est recommandé de supprimer les noeuds de métadonnées qui ne sont pas nécessaires pour améliorer les performances lors du chargement de dossiers composés de ces ressources.
-
-* Possibilité de détecter et de générer des rapports sur le type d’entrepôt de données utilisé.
-
-* Modèle mis à jour pour AEM Portail de formulaires.
-
-### Correctifs {#bug-fixes-bpa}
-
-* BPA consignait les résultats pour les composants principaux au lieu de générer des rapports uniquement sur les composants clients. Ce problème a été résolu.
+Vous trouverez une liste complète des versions des outils de migration [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 45db4869de68627f0ae76798481b96fb4a3e960a
+source-git-commit: ee92bfcf4ed00d8b508f1b6f7d21f73fb4c9029e
 workflow-type: tm+mt
-source-wordcount: '3447'
-ht-degree: 94%
+source-wordcount: '3454'
+ht-degree: 93%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 94%
    + [Parcours de documentation](/help/journey-documentation/documentation-journeys.md)
 + Notes de mise à jour {#release-notes}
    + [Informations sur la version](/help/release-notes/home.md)
-   + Notes de mise à jour {#release-notes}
+   + Notes de mise à jour générales d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
          + [Notes de mise à jour de la version 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -59,6 +59,47 @@ ht-degree: 94%
          + [Notes de mise à jour de la version 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [Notes de mise à jour de la version 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [Notes de mise à jour de la version 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+   + Notes de mise à jour de Cloud Manager {#cloud-manager}
+      + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
+      + 2022 {#2022}
+         + [Notes de mise à jour de la version 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
+         + [Notes de mise à jour de la version 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
+      + 2021 {#2021}
+         + [Notes de mise à jour de la version 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
+         + [Notes de mise à jour de la version 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
+         + [Notes de mise à jour de la version 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
+         + [Notes de mise à jour de la version 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
+         + [Notes de mise à jour de la version 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
+         + [Notes de mise à jour de la version 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
+         + [Notes de mise à jour de la version 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
+         + [Notes de mise à jour de la version 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
+         + [Notes de mise à jour de la version 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
+         + [Notes de mise à jour de la version 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
+         + [Notes de mise à jour de la version 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
+      + 2020 {#2020}
+         + [Notes de mise à jour de la version 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
+         + [Notes de mise à jour de la version 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
+         + [Notes de mise à jour de la version 2020.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
+         + [Notes de mise à jour de la version 2020.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
+         + [Notes de mise à jour de la version 2020.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
+         + [Notes de mise à jour de la version 2020.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
+         + [Notes de mise à jour de la version 2020.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
+         + [Notes de mise à jour de la version 2020.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
+         + [Notes de mise à jour de la version 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
+         + [Notes de mise à jour de la version 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
+         + [Notes de mise à jour de la version 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
+   + Notes de mise à jour des outils de migration {#migration-tools}
+      + [Notes de mise à jour de la version actuelle (2022.4.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
+      + 2022 {#2022}
+         + [Notes de mise à jour de la version 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
+         + [Notes de mise à jour de la version 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
+         + [Notes de mise à jour de la version 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
+      + 2021 {#2021}
+         + [Notes de mise à jour de la version 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
+         + [Notes de mise à jour de la version 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
+         + [Notes de mise à jour de la version 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
+   + Notes de mise à jour de Workfront pour Experience Manager Enhanced Connector{#workfront}
+      + [Notes de mise à jour actuelles de Workfront pour Experience Manager Enhanced Connector](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Nouveautés](/help/release-notes/what-is-new.md)
    + [Changements notables dans AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Problèmes connus](/help/release-notes/known-issues.md)
@@ -105,15 +146,6 @@ ht-degree: 94%
    + [Activation](/help/journey-migration/go-live.md)
    + [Post-activation](/help/journey-migration/post-go-live.md)
    + [Guide de migration vers Experience Manager as a Cloud Service pour les partenaires](/help/journey-migration/getting-started-partners.md)
-   + Notes de mise à jour des outils de migration {#release-notes-migration-tools}
-      + [Notes de mise à jour de la version actuelle (2022.4.0)](/help/journey-migration/release-notes/release-notes-migration-tools-current.md)
-      + [Notes de mise à jour de la version 2022.3.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-03-0.md)
-      + [Notes de mise à jour de la version 2022.2.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-02-0.md)
-      + [Notes de mise à jour de la version 2022.1.0](/help/journey-migration/release-notes/release-notes-migration-tools-2022-01-0.md)
-      + 2021 {#2021}
-         + [Notes de mise à jour de la version 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
-         + [Notes de mise à jour de la version 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
-         + [Notes de mise à jour de la version 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
    + Cloud Acceleration Manager {#cloud-acceleration-manager}
       + Présentation de Cloud Acceleration Manager {#introduction-cam}
          + [Présentation](/help/journey-migration/cloud-acceleration-manager/introduction/overview-cam.md)
@@ -393,7 +425,6 @@ ht-degree: 94%
       + [Fin de prise en charge des visionneuses Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fin de vie des visionneuses DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Intégration à Adobe Workfront {#integrations}
-      + [Notes de mise à jour de Workfront pour Experience Manager Enhanced Connector](/help/assets/release-notes-enhanced-connector-workfront.md)
       + [Intégrations à  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Installer le [!DNL enhanced connector] pour [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Suppression des dépendances externes pour les installations existantes](/help/assets/remove-external-dependencies.md)
@@ -619,37 +650,6 @@ ht-degree: 94%
 + Implémenter {#implementing}
    + [Implémentation d’applications pour AEM as a Cloud Service](/help/implementing/home.md)
    + Utilisation de Cloud Manager {#using-cloud-manager}
-      + Notes de mise à jour de Cloud Manager {#release-notes-cloud-manager}
-         + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
-         + 2022 {#2022}
-            + [Notes de mise à jour de la version 2022.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-4-0.md)
-            + [Notes de mise à jour de la version 2022.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-3-0.md)
-            + [Notes de mise à jour de la version 2022.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-2-0.md)
-            + [Notes de mise à jour de la version 2022.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-1-0.md)
-         + 2021 {#2021}
-            + [Notes de mise à jour de la version 2021.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-11-0.md)
-            + [Notes de mise à jour de la version 2021.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-10-0.md)
-            + [Notes de mise à jour de la version 2021.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-9-0.md)
-            + [Notes de mise à jour de la version 2021.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-8-0.md)
-            + [Notes de mise à jour de la version 2021.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-7-0.md)
-            + [Notes de mise à jour de la version 2021.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-6-0.md)
-            + [Notes de mise à jour de la version 2021.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-5-0.md)
-            + [Notes de mise à jour de la version 2021.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-4-0.md)
-            + [Notes de mise à jour de la version 2021.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-3-0.md)
-            + [Notes de mise à jour de la version 2021.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-2-0.md)
-            + [Notes de mise à jour de la version 2021.1.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2021-1-0.md)
-         + 2020 {#2020}
-            + [Notes de mise à jour de la version 2020.12.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-12-0.md)
-            + [Notes de mise à jour de la version 2020.11.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-11-0.md)
-            + [Notes de mise à jour de la version 2020.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-10-0.md)
-            + [Notes de mise à jour de la version 2020.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-9-0.md)
-            + [Notes de mise à jour de la version 2020.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-8-0.md)
-            + [Notes de mise à jour de la version 2020.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-7-0.md)
-            + [Notes de mise à jour de la version 2020.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-6-0.md)
-            + [Notes de mise à jour de la version 2020.5.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-5-0.md)
-            + [Notes de mise à jour de la version 2020.4.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-4-0.md)
-            + [Notes de mise à jour de la version 2020.3.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-3-0.md)
-            + [Notes de mise à jour de la version 2020.2.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2020-2-0.md)
       + Programmes {#programs}
          + [Programmes et types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
          + [Programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/introduction-production-programs.md)
