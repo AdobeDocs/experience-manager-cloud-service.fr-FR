@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: af4c85686be5299433974c455f35c907bd6776fd
+source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
 workflow-type: tm+mt
-source-wordcount: '2829'
+source-wordcount: '2877'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Voir aussi [parcours Dynamic Media ; Principes de base, première partie](/help/
 
 >[!TIP]
 >
->Pour de meilleurs résultats, Adobe vous recommande de lire et d’afficher le Parcours Dynamic Media sur un ordinateur de bureau.
+>Pour de meilleurs résultats, Adobe vous recommande de lire et d’afficher ce Parcours Dynamic Media sur un ordinateur de bureau.
 
 ## Anatomie d’une URL Dynamic Media et manière dont Dynamic Media diffuse du contenu {#dm-journey-d}
 
@@ -43,7 +43,7 @@ La première partie de l’URL en rouge fait référence au domaine du serveur l
 
 Le nom du compte est la partie violette. Dans ce cas, le compte est appelé `jpearldemo`.
 
-L’identifiant ou le nom de la ressource, `AdobeStock_28563982` est en vert. Notez que la ressource possède *non* extension de fichier, par exemple `.png` ou `.jpg`. Lorsque des ressources sont ingérées dans Dynamic Media, l’extension de fichier est supprimée et un autre type de fichier est créé : un fichier pyramid-TIFF. Le TIFF pyramique permet à Dynamic Media de créer rapidement des rendus à la volée.
+L’identifiant ou le nom de la ressource, `AdobeStock_28563982` est en vert. Notez que la ressource possède _non_ extension de fichier, par exemple `.png` ou `.jpg`. Lorsque des ressources sont ingérées dans Dynamic Media, l’extension de fichier est supprimée et un autre type de fichier est créé : un fichier pyramid-TIFF. Le TIFF pyramique permet à Dynamic Media de créer rapidement des rendus à la volée.
 
 Enfin, il existe des paramètres de traitement des images, `?wid=1000&fmt=jpeg&qlt=85`, indiqué en jaune à la fin.
 
@@ -68,7 +68,7 @@ Essayez maintenant d’ajouter un paramètre de rotation à l’image de montre.
 
 La montre est encore légèrement biaisée à gauche. Modifier la valeur de rotation de `90` to `92`, puis appuyez sur **[!UICONTROL Entrée]**. [Essayez](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9)
 
-Encore une fois, au moment où vous appuyez **[!UICONTROL Entrée]**, un nouveau rendu de la montre est généré presque instantanément. Vous pouvez voir le type de performances que vous obtenez, ce qui explique pourquoi Dynamic Media peut envoyer plus de 800 000 demandes d’image, *par seconde*, lors d’un week-end chargé ou d’un jour férié majeur.
+Encore une fois, au moment où vous appuyez **[!UICONTROL Entrée]**, un nouveau rendu de la montre est généré presque instantanément. Vous pouvez voir le type de performances que vous obtenez, ce qui explique pourquoi Dynamic Media peut envoyer plus de 800 000 demandes d’image, _par seconde_, lors d’un week-end chargé ou d’un jour férié majeur.
 
 Bien qu’il soit possible de modifier les paramètres de traitement des images dans une URL image par image, cette méthode n’est pas efficace, en particulier si vous avez des dizaines de milliers d’images qui constituent votre site web. Une meilleure approche consiste à utiliser des paramètres d’image prédéfinis.
 
@@ -204,17 +204,19 @@ Vous lisez juste un peu sur les visionneuses d&#39;images et les visionneuses. R
 * `ZoomVertical_dark` visionneuse appliquée à une ressource image. [Essayez](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
 * `Zoom_light` visionneuse appliquée à une image. [Essayez](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
 
-## En savoir plus
+## Facultatif - En savoir plus
 
-_Rubriques Dynamic Media_
+Si vous souhaitez en savoir plus sur ce que vous venez de lire, utilisez les matériaux ci-dessous pour explorer les concepts plus en détail. Sinon, votre Parcours Dynamic Media est terminé !
 
-* [Création de paramètres d’image prédéfinis](/help/assets/dynamic-media/image-presets.md)
+_Rubriques d’aide de Dynamic Media_
+
+* [Comment créer des paramètres d’image prédéfinis](/help/assets/dynamic-media/image-presets.md)
 * Une liste de [paramètres de traitement des images](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html) que vous pouvez utiliser dans le champ Modificateur d’image lorsque vous créez un paramètre d’image prédéfini.
-* [Prévisualiser des ressources](/help/assets/dynamic-media/previewing-assets.md)
-* [Prévisualiser les ressources 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
-* [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md)
-* [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md)
-* [Visionneuses de supports variés](/help/assets/dynamic-media/mixed-media-sets.md)
+* [Aperçu des ressources](/help/assets/dynamic-media/previewing-assets.md)
+* [Prévisualisation de ressources 3D](/help/assets/dynamic-media/previewing-3d-assets.md)
+* [Comment créer des visionneuses d’images](/help/assets/dynamic-media/image-sets.md)
+* [Comment créer des visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md)
+* [Comment créer des visionneuses de supports variés](/help/assets/dynamic-media/mixed-media-sets.md)
 
 _Tutoriels Dynamic Media_
 
@@ -223,6 +225,6 @@ _Tutoriels Dynamic Media_
 
 _Visionneuses Dynamic Media_
 
-* [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html)
+* [Démonstrations en direct](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html) de chaque visionneuse
 
 <!-- Live as of April 28 2022. LEAVE IN HERE https://landing.adobe.com/en/na/dynamic-media/ctir-2755/index.html -->
