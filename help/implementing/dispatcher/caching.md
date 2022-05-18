@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 44fb07c7760a8faa3772430cef30fa264c7310ac
+source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 79%
+source-wordcount: '1960'
+ht-degree: 76%
 
 ---
 
@@ -181,6 +181,10 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
          Header set Age 0
       </LocationMatch>
       ```
+
+### Comportement de la requête d’HEAD {#request-behavior}
+
+Lorsqu’une demande d’HEAD est reçue sur le réseau de diffusion de contenu Adobe pour une ressource qui est **not** mise en cache, la requête est transformée et reçue par le Dispatcher et/ou l’instance d’AEM en tant que requête de GET. Si la réponse peut être mise en cache, les requêtes HEAD suivantes seront diffusées à partir du réseau de diffusion de contenu. Si la réponse ne peut pas être mise en cache, les requêtes HEAD suivantes seront transmises au Dispatcher et/ou à l’instance d’AEM pendant une période qui dépend de la variable `Cache-Control` TTL.
 
 ## Invalidation du cache du Dispatcher {#disp}
 
