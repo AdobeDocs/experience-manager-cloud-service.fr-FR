@@ -2,10 +2,10 @@
 title: Vérification de l’état du nom de domaine
 description: Découvrez comment déterminer si Cloud Manager a vérifié votre nom de domaine personnalisé avec succès.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: ba0226b5ad3852dd5f72dd7e0ace650035f5ac6a
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 17%
+source-wordcount: '637'
+ht-degree: 10%
 
 ---
 
@@ -49,6 +49,24 @@ Cloud Manager vérifie la propriété du domaine via la valeur TXT et affiche l�
    * Reportez-vous au document [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus.
 
 Cloud Manager déclenche automatiquement une vérification TXT lorsque vous sélectionnez **Enregistrer** à l’étape de vérification de la **Ajouter un domaine personnalisé** assistant. Pour les vérifications suivantes, vous devez sélectionner activement l’icône Vérifier à nouveau en regard de l’état.
+
+## Erreurs de nom de domaine {#domain-error}
+
+Cette section explique les erreurs que vous pouvez afficher et comment les résoudre.
+
+**Domaine non installé** - Vous recevez cette erreur lors de la validation du domaine de l’enregistrement TXT même après avoir vérifié que l’enregistrement a été mis à jour de manière appropriée.
+
+**Explication des erreurs** - verrouille rapidement un domaine sur le compte initial qui l’a enregistré et aucun autre compte ne peut enregistrer un sous-domaine sans demander l’autorisation. De plus, Fastly vous permet uniquement d’affecter un domaine apex et des sous-domaines associés à un seul service et compte Fastly. Si vous disposez d’un compte Fastly qui lie les mêmes apex et sous-domaines utilisés pour vos domaines AEM Cloud Service, cette erreur s’affichera.
+
+**Résolution des erreurs** - L&#39;erreur est corrigée comme suit :
+
+* Supprimez les apex et les sous-domaines du compte existant avant d’installer le domaine dans Cloud Manager. Utilisez cette option pour associer le domaine APX et tous les sous-domaines au compte as a Cloud Service Fastly AEM. Voir [Utilisation des domaines dans la documentation Fastly](https://docs.fastly.com/en/guides/working-with-domains) pour plus d’informations.
+
+* Si votre domaine apex comporte plusieurs sous-domaines pour AEM sites as a Cloud Service as a Cloud Service et non-AEM que vous souhaitez lier à différents comptes Fastly, essayez d’installer le domaine dans Cloud Manager et si l’installation du domaine échoue, créez un ticket d’assistance clientèle avec Fastly afin que nous puissions suivre Fastly en votre nom.
+
+>[!NOTE]
+>
+>REMARQUE : Ne routez pas le DNS de votre site vers les adresses IP as a Cloud Service si le domaine n’a pas été installé correctement.
 
 ## Configurations CDN pré-existantes pour les noms de domaine personnalisés {#pre-existing-cdn}
 
