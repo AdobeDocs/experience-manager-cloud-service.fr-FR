@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: f5282d149e80328742ff9008441960f62cea6290
+source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 76%
+source-wordcount: '1795'
+ht-degree: 74%
 
 ---
 
@@ -167,6 +167,8 @@ Après avoir chargé toutes les parties d’un fichier binaire, envoyez une requ
 | `versionLabel` | Chaîne | Facultatif | Si une version est créée, le libellé associé à la nouvelle version d’une ressource. |
 | `versionComment` | Chaîne | Facultatif | Si une version est créée, les commentaires associés à la version. |
 | `replace` | Booléen | Facultatif | Si `True` et qu’une ressource portant le nom spécifié existe, [!DNL Experience Manager] supprime la ressource, puis la recrée. |
+| `uploadDuration` | Nombre | Facultatif | Durée totale (en millisecondes) pendant laquelle le fichier doit être chargé dans son intégralité. Si spécifié, la durée de chargement est incluse dans les fichiers journaux du système pour l’analyse du taux de transfert. |
+| `fileSize` | Nombre | Facultatif | Taille, en octets, du fichier. Si spécifié, la taille du fichier est incluse dans les fichiers journaux du système pour l’analyse du taux de transfert. |
 
 >[!NOTE]
 Si la ressource existe et que ni `createVersion` ni `replace` n’est spécifié, [!DNL Experience Manager] met à jour la version actuelle de la ressource avec le nouveau fichier binaire.
