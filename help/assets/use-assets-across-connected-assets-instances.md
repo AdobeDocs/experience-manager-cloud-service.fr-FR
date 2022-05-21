@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: de94e9a1737b7ae51804bb40ed5b009435a27726
+source-git-commit: ec4b5b391cb3ba2d13c67a6da30eea59674cf072
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3763'
 ht-degree: 77%
 
 ---
@@ -47,7 +47,7 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 
 Les auteurs recherchent des images et les types de documents suivants dans l’outil de recherche de contenu, puis font glisser les ressources recherchées dans l’éditeur de page. Les documents sont ajoutés au composant `Download` et les images au composant `Image`. Les auteurs peuvent également ajouter des ressources distantes dans toute [!DNL Experience Manager] qui étend le composant par défaut `Download` ou `Image` composants. Les formats pris en charge sont les suivants :
 
-* **Formats d’image** : les formats pris en charge par le composant [Image.](https://www.aemcomponents.dev/content/core-components-examples/library/page-authoring/image.html)
+* **Formats d’image** : les formats pris en charge par le composant [Image.](file-format-support.md#image-formats)
 * **Formats de document** : voir les [formats de document pris en charge](file-format-support.md#document-formats).
 
 ### Utilisateurs et groupes concernés {#users-and-groups-involved}
