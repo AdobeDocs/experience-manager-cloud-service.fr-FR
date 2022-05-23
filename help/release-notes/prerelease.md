@@ -2,10 +2,10 @@
 title: '"[!DNL Adobe Experience Manager] Canal de version préliminaire as a Cloud Service"'
 description: '"[!DNL Adobe Experience Manager] Canal de version préliminaire as a Cloud Service"'
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: c2f0b9c904374b5e59ce2b2f268fdd73dfdbfd21
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 98%
+source-wordcount: '805'
+ht-degree: 83%
 
 ---
 
@@ -29,28 +29,41 @@ Les fonctionnalités de la version préliminaire peuvent être expérimentées d
 
 ### Environnements cloud {#cloud-environments}
 
-Pour afficher les nouvelles fonctionnalités de la console Sites dans les environnements de développement cloud, ainsi que le résultat de toute personnalisation de projet :
+Pour mettre à jour un environnement Cloud afin d’utiliser la version préliminaire, ajoutez une nouvelle [variable d&#39;environnement](../implementing/cloud-manager/environment-variables.md) à l’aide de l’interface utilisateur de configuration de l’environnement dans Cloud Manager :
 
-* À l’aide du [point d’entrée des variables d’environnement de l’API Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/api-reference.html#/Variables/patchEnvironmentVariables), appliquez à la variable d’environnement **AEM_RELEASE_CHANNEL** la valeur **prerelease**.
+1. Accédez au **Programme** > **Environnement** > **Configuration de l’environnement** vous souhaitez mettre à jour.
+1. Ajouter un nouveau [variable d&#39;environnement](../implementing/cloud-manager/environment-variables.md):
 
-```
-PATCH /program/{programId}/environment/{environmentId}/variables
-[
-        {
-                "name" : "AEM_RELEASE_CHANNEL",
-                "value" : "prerelease",
-                "type" : "string"
-        }
-]
-```
+   | Nom | Valeur | Service appliqué | Type |
+   |------|-------|-----------------|------|
+   | `AEM_RELEASE_CHANNEL` | `prerelease` | Tous | Variable |
 
-L’interface de ligne de commande de Cloud Manager peut également être utilisée, conformément aux instructions à l’adresse [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
-```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
+1. Enregistrez les modifications et l’environnement s’actualisera avec les bascules de fonctionnalités de version préliminaire activés.
+
+   ![Nouvelle variable d’environnement](assets/env-configuration-prerelease.png)
+
+
+**Sinon** vous pouvez utiliser l’API Cloud Manager et l’interface de ligne de commande pour mettre à jour les variables d’environnement :
+
+* Utilisation [Point d’entrée des variables d’environnement de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables), définissez la variable **AEM_RELEASE_CHANNEL** de la variable d’environnement à la valeur **préliminaires**.
+
+   ```
+   PATCH /program/{programId}/environment/{environmentId}/variables
+   [
+           {
+                   "name" : "AEM_RELEASE_CHANNEL",
+                   "value" : "prerelease",
+                   "type" : "string"
+           }
+   ]
+   ```
+
+* L’interface de ligne de commande de Cloud Manager peut également être utilisée, conformément aux instructions à l’adresse [https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid)
+
+   ```aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease”```
 
 
 La variable peut être supprimée ou redéfinie sur une autre valeur si vous souhaitez que l’environnement soit restauré avec le comportement du canal normal (hors version préliminaire).
-
-* Vous pouvez également configurer les variables d’environnement à partir de l’interface utilisateur de [Cloud Manager](/help/implementing/cloud-manager/environment-variables.md).
 
 ### SDK local {#local-sdk}
 
