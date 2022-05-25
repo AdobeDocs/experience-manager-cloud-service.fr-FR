@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 75d1681ba4cb607f1958d9d54e49f5cc1e201392
+source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
 workflow-type: tm+mt
-source-wordcount: '1960'
-ht-degree: 76%
+source-wordcount: '2183'
+ht-degree: 63%
 
 ---
 
@@ -83,31 +83,42 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
 * En utilisant la structure de bibliothèque côté client d’AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, puisque toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique.  En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que vous puissiez découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache est défini sur non modifiable (immutable) ou 30 jours (30 days) pour les navigateurs plus anciens qui ne respectent pas la valeur non modifiable.
 * Voir la section [Bibliothèques côté client et cohérence des versions](#content-consistency) pour en savoir plus.
 
-### Images et tout contenu suffisamment volumineux pour être stocké dans le stockage blob {#images}
+### Images et tout contenu suffisamment volumineux pour être stocké dans le stockage d’objets blob {#images}
 
-* Par défaut, non mis en cache
-* Peuvent être définis à un niveau de détail supérieur par les directives `mod_headers` apache suivantes :
+Le comportement par défaut des programmes créés après la mi-mai 2022 (en particulier, pour les identifiants de programme supérieurs à 65 000) est de mettre en cache par défaut, tout en respectant le contexte d’authentification de la requête. Les programmes plus anciens (id de programme égal ou inférieur à 65 000) ne mettent pas en cache le contenu de l’objet Blob par défaut.
 
-   ```
-      <LocationMatch "^/content/.*\.(jpeg|jpg)$">
-        Header set Cache-Control "max-age=222"
-        Header set Age 0
-      </LocationMatch>
-   ```
+Dans les deux cas, les en-têtes de mise en cache peuvent être remplacés à un niveau de granularité plus fin au niveau de la couche Apache/dispatcher à l’aide de l’Apache. `mod_headers` par exemple :
 
-   Consultez la discussion dans la section html/text ci-dessus pour veiller à ne pas appliquer excessivement la mise en cache et pour savoir comment forcer AEM à toujours appliquer la mise en cache avec l’option « always ».
+```
+   <LocationMatch "^/content/.*\.(jpeg|jpg)$">
+     Header set Cache-Control "max-age=222"
+     Header set Age 0
+   </LocationMatch>
+```
 
-   Vous devez vous assurer qu’un fichier sous `src/conf.dispatcher.d/`cache comporte la règle suivante (qui se trouve dans la configuration par défaut) :
+Lors de la modification des en-têtes de mise en cache au niveau de la couche du Dispatcher, veillez à ne pas mettre en cache trop largement. Consultez la discussion dans la section HTML/texte . [above](#html-text)). Assurez-vous également que les ressources destinées à être conservées en privé (plutôt que mises en cache) ne font pas partie de la variable `LocationMatch` filtres de directive.
 
-   ```
-   /0000
-   { /glob "*" /type "allow" }
-   ```
+#### Nouveau comportement de mise en cache par défaut {#new-caching-behavior}
 
-   Assurez-vous que les ressources destinées à être conservées en privé plutôt que mises en cache ne font pas partie des filtres de directive LocationMatch.
+La couche AEM définit les en-têtes de cache selon que l’en-tête de cache a déjà été défini et la valeur du type de requête. Notez que si aucun en-tête de contrôle du cache n’a été défini, le contenu public est mis en cache et le trafic authentifié est défini sur privé. Si un en-tête de contrôle du cache a été défini, les en-têtes du cache ne seront pas touchés.
 
-   >[!NOTE]
-   >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
+| L’en-tête de contrôle du cache existe ? | Type de demande | AEM définit les en-têtes de cache sur |
+|------------------------------|---------------|------------------------------------------------|
+| Non | public | Cache-Control: public, max-age=600, non modifiable |
+| Non | authentifié | Cache-Control: privé, max-age=600, non modifiable |
+| Oui | quelconque | inchangé |
+
+Bien que cela ne soit pas recommandé, il est possible de modifier le nouveau comportement par défaut pour suivre l’ancien comportement (identifiants de programme égaux ou inférieurs à 65 000) en définissant la variable d’environnement Cloud Manager. `AEM_BLOB_ENABLE_CACHING_HEADERS` sur false.
+
+#### Ancien comportement de mise en cache par défaut {#old-caching-behavior}
+
+Par défaut, le calque AEM ne met pas en cache le contenu blob.
+
+>[!NOTE]
+>Il est recommandé de modifier l’ancien comportement par défaut pour qu’il soit cohérent avec le nouveau comportement (identifiants de programme supérieurs à 65 000) en définissant la variable d’environnement Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS sur true. Si le programme est déjà actif, vérifiez qu’après les modifications, le contenu se comporte comme prévu.
+
+>[!NOTE]
+>Les autres méthodes, dont la méthode [dispatcher-ttl AEM projet ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplace pas les valeurs.
 
 ### Autres types de fichiers de contenu dans le magasin de nœuds {#other-content}
 
@@ -115,7 +126,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
 * La valeur par défaut ne peut pas être définie avec la variable `EXPIRATION_TIME` utilisée pour les types de fichiers html/texte.
 * L’expiration du cache peut être définie avec la même stratégie LocationMatch décrite dans la section html/texte en spécifiant l’expression régulière appropriée.
 
-### Autres optimisations
+### Autres optimisations {#further-optimizations}
 
 * Éviter d’utiliser `User-Agent` dans le `Vary` en-tête . Les anciennes versions de la configuration par défaut du Dispatcher (antérieures à l’archétype version 28) l’incluaient et nous vous recommandons de la supprimer en suivant les étapes ci-dessous.
    * Recherchez les fichiers vhost dans `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
