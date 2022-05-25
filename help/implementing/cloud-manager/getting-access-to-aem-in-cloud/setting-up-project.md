@@ -2,10 +2,10 @@
 title: Configuration du projet
 description: Découvrez comment AEM projets sont créés avec Maven et les normes que vous devez respecter lors de la création de votre propre projet.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: e0774c34ed81d23a5d7a897f65d50dcbf8f8af0d
+source-git-commit: 3bd3221676a3558225baa7a3b0c78174e21091be
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 46%
+ht-degree: 57%
 
 ---
 
@@ -143,7 +143,7 @@ Par exemple, supposons que le référentiel se trouve à l’adresse `https://re
            <server>
                <id>myco-repository</id>
                <username>cloudmanager</username>
-              <password>${env.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
+              <password>${secret.CUSTOM_MYCO_REPOSITORY_PASSWORD}</password>
            </server>
        </servers>
    </settings>
@@ -282,7 +282,7 @@ Dans de nombreux cas, le même code est déployé dans plusieurs environnements 
 
 Lorsqu’une exécution est lancée, la validation HEAD en cours pour le pipeline de branche est extraite. Le hachage de validation est visible dans l’interface utilisateur et via l’API. Une fois l’étape de build terminée, les artefacts obtenus sont stockés en fonction de ce hachage de validation et peuvent être réutilisés dans les exécutions ultérieures du pipeline.
 
-Les packages sont réutilisés sur les pipelines s’ils se trouvent dans le même programme. Lorsque vous recherchez des modules qui peuvent être réutilisés, AEM ignore les branches et réutilise les artefacts entre les branches.
+Les packages sont réutilisés sur plusieurs pipelines s’ils se trouvent dans le même programme. Lorsque vous recherchez des modules qui peuvent être réutilisés, AEM ignore les branches et réutilise les artefacts entre les branches.
 
 En cas de réutilisation, les étapes de build et de qualité du code sont effectivement remplacées par les résultats de l’exécution initiale. Le fichier journal de l’étape de build répertorie les artefacts et les informations d’exécution qui ont été utilisés pour les créer à lʼorigine.
 
@@ -298,21 +298,21 @@ Le journal de l’étape de qualité du code contient des informations similaire
 
 ### Exemples {#example-reuse}
 
-#### Exemple 1 {#example-1}
+#### Exemple 1 {#example-1}
 
-Sachez que votre programme comporte deux pipelines de développement :
+Partez du principe que votre programme comporte deux pipelines de développement :
 
-* Pipeline 1 sur branche `foo`
-* Pipeline 2 sur branche `bar`
+* Le pipeline 1 sur la branche `foo`
+* Le pipeline 2 sur la branche `bar`
 
 Les deux branches utilisent le même identifiant de validation.
 
-1. L’exécution du pipeline 1 commence par générer les modules normalement.
-1. Ensuite, l’exécution du pipeline 2 réutilisera les modules créés par le pipeline 1.
+1. L’exécution du pipeline 1 commence par générer les modules normalement.
+1. Ensuite, l’exécution du pipeline 2 réutilisera les modules créés par le pipeline 1.
 
-#### Exemple 2 {#example-2}
+#### Exemple 2 {#example-2}
 
-Considérez que votre programme comporte deux branches :
+Partez du principe que votre programme comporte deux branches :
 
 * Branche `foo`
 * Branche `bar`
@@ -320,7 +320,7 @@ Considérez que votre programme comporte deux branches :
 Les deux branches ont le même identifiant de validation.
 
 1. Un pipeline de développement crée et exécute `foo`.
-1. Par la suite, un pipeline de production crée et s’exécute. `bar`.
+1. Par la suite, un pipeline de production crée et exécute `bar`.
 
 Dans ce cas, l’artefact de `foo` sera réutilisé pour le pipeline de production, car le même hachage de validation a été identifié.
 
@@ -338,7 +338,7 @@ Si vous le souhaitez, le comportement de réutilisation peut être désactivé p
 
 ### Restrictions {#caveats}
 
-* Les artefacts de build ne sont pas réutilisés dans différents programmes, même si le hachage de validation est identique.
+* Les artefacts de build ne sont pas réutilisés dans différents programmes même si le hachage de validation est identique.
 * Les artefacts de build sont réutilisés dans le même programme même si la branche et/ou le pipeline sont différents.
 * [Gestion des versions Maven](/help/implementing/cloud-manager/managing-code/project-version-handling.md) remplace la version du projet uniquement dans les pipelines de production. Par conséquent, si la même validation est utilisée à la fois sur une exécution de déploiement de développement et une exécution de pipeline de production, et que le pipeline de déploiement de développement est exécuté en premier, les versions sont déployées dans les environnements dʼévaluation et de production sans être modifiées. Cependant, une balise sera toujours créée dans cette situation.
 * Si la récupération des artefacts stockés échoue, l’étape de build est exécutée comme si aucun artefact n’avait été stocké.

@@ -2,12 +2,13 @@
 title: Variables d’environnement Cloud Manager
 description: Les variables d’environnement standard peuvent être configurées et gérées via Cloud Manager. Elle sont fournies à l’environnement d’exécution, pour une utilisation dans la configuration OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e03a209079b393d29e02977a2698f8d803a916cd
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 100%
+source-wordcount: '867'
+ht-degree: 93%
 
 ---
+
 
 # Variables d’environnement Cloud Manager {#environment-variables}
 
@@ -90,3 +91,14 @@ Une fois les variables d’environnement créées, vous pouvez les mettre à jou
 >[!TIP]
 >
 >Si vous souhaitez mettre à jour plusieurs variables, il est recommandé d’utiliser la boîte de dialogue **Configuration de l’environnement** pour mettre à jour toutes les variables nécessaires en une seule fois avant d’appuyer ou de cliquer sur **Enregistrer**. De cette façon, vous pouvez les ajouter en une seule mise à jour de lʼenvironnement.
+
+## Utilisation de variables d’environnement {#using}
+
+Les variables d’environnement peuvent `pom.xml` configurations plus sécurisées et flexibles. Par exemple, les mots de passe n’ont pas besoin d’être codés en dur et votre configuration peut s’adapter en fonction des valeurs des variables d’environnement.
+
+Vous pouvez accéder aux variables et secrets d&#39;environnement via XML comme suit.
+
+* `${env.VARIABLE_NAME}`
+* `${env.SECRET_NAME}`
+
+Voir le document [Configuration d’un projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) pour un exemple d’utilisation des deux types de variables dans une `pom.xml` fichier .
