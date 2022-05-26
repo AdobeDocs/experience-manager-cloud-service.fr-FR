@@ -4,10 +4,10 @@ description: 'Intégration à Adobe Analytics '
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: acd44bd7ff211466acc425148cab18dc7ae6d44c
+source-git-commit: e950f2399553c301c97c4fcac549a7ef6a234164
 workflow-type: tm+mt
-source-wordcount: '835'
-ht-degree: 75%
+source-wordcount: '570'
+ht-degree: 84%
 
 ---
 
@@ -15,13 +15,10 @@ ht-degree: 75%
 
 L’intégration d’Adobe Analytics et d’AEM as a Cloud Service vous permet de suivre l’activité de vos pages web. L’intégration nécessite :
 
-* d’utiliser l’interface utilisateur tactile pour créer une configuration Analytics dans AEM as a Cloud Service ;
+* d’utiliser l’interface utilisateur tactile pour créer une configuration Analytics dans AEM as a Cloud Service ; Veuillez noter que l&#39;authentification IMS est requise pour intégrer Adobe Analytics à l&#39;as a Cloud Service AEM.
 * d’ajouter et de configurer Adobe Analytics en tant qu’extension dans [Adobe Launch](#analytics-launch). Pour plus d’informations sur Adobe Launch, consultez [cette page](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=fr).
 
 Par rapport aux versions précédentes d’AEM, la prise en charge du framework n’est pas fournie dans la configuration d’Analytics dans AEM as a Cloud Service. À la place, elle est désormais assurée via Adobe Launch, qui est l’outil par défaut permettant d’instrumenter un site AEM avec des fonctionnalités Analytics (bibliothèques JS). Dans Adobe Launch, une propriété est créée où l’extension Adobe Analytics peut être configurée et des règles sont créées pour envoyer des données à Adobe Analytics. Adobe Launch a remplacé la tâche d’analyse fournie par SiteCatalyst.
-
->[!NOTE]
->Ajout dans le canal de version préliminaire de la configuration requise pour l’authentification IMS afin d’intégrer Adobe Analytics avec AEM as a Cloud Service. Voir [Configuration d’Adobe Analytics avec authentification IMS (canal bêta)](#configuration-parameters-ims) pour plus d’informations. Voir le canal de version préliminaire [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) pour plus d’informations sur l’activation de ce paramètre dans votre environnement.
 
 >[!NOTE]
 >
@@ -37,35 +34,20 @@ Par rapport aux versions précédentes d’AEM, la prise en charge du framework 
 
 ### Paramètres de configuration {#configuration-parameters}
 
-Les champs de configuration présents dans la fenêtre Configuration d’Adobe Analytics sont les suivants :
-
-![Paramètres de configuration](assets/properties_field1.png "Paramètres de configuration")
-
-| Propriété | Description |
-|---|---|
-| Société | Entreprise se connectant à Adobe Analytics |
-| Nom d’utilisateur | Utilisateur de l’API Adobe Analytics |
-| Mot de passe | Mot de passe Adobe Analytics utilisé pour l’authentification |
-| Centre de données | Centre de données Adobe Analytics auquel votre compte est associé (serveur, par exemple San Jose ou Londres) |
-| Segment | Option permettant d’utiliser un segment Analytics défini dans la suite de rapports actuelle. Les rapports Analytics seront filtrés en fonction du segment. Consultez [cette page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=fr) pour plus de détails. |
-| Suites de rapports | Référentiel dans lequel vous envoyez des données et extrayez des rapports. Une suite de rapports définit le reporting complet et indépendant sur un site web choisi, un ensemble de sites web ou un sous-ensemble de pages web. Vous pouvez afficher les rapports récupérés à partir d’une seule suite de rapports et modifier ce champ dans une configuration à tout moment, en fonction de vos besoins. |
-
-### Configuration d’Adobe Analytics avec authentification IMS (canal bêta) {#configuration-parameters-ims}
-
-Ajout dans le canal de version préliminaire de la configuration requise pour l’authentification IMS afin d’intégrer Adobe Analytics avec AEM as a Cloud Service. Voir le canal de version préliminaire [documentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#enable-prerelease) pour plus d’informations sur l’activation de ce paramètre dans votre environnement. Cela signifie qu’une configuration IMS pour Launch et Analytics est nécessaire pour intégrer correctement Analytics à AEM et Launch. Bien que la configuration IMS pour Launch soit préconfigurée dans AEM as a Cloud Service, la configuration IMS Analytics doit être créée.
-
-Consultez cette section [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) pour savoir comment créer la configuration IMS d’Analytics.
-
-Après avoir exécuté les étapes de la section [Création de la configuration Adobe Analytics](#configuration-parameters) , les champs présents dans la fenêtre de paramétrage sont les suivants :
+Les champs présents dans la fenêtre de paramétrage sont les suivants :
 
 ![Paramètres de configuration](assets/properties_field2.png "Paramètres de configuration")
 
 | Propriété | Description |
 |---|---|
 | Titre | Nom de la configuration |
-| Configuration IMS | Sélectionnez la configuration IMS (voir la description ci-dessus) |
-| Segment | Option permettant d’utiliser un segment Analytics défini dans la suite de rapports actuelle. Les rapports Analytics seront filtrés en fonction du segment. Consultez [cette page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html) pour plus de détails. |
+| Configuration IMS | Sélectionnez la configuration IMS (voir le chapitre ci-dessous) |
+| Segment | Option permettant d’utiliser un segment Analytics défini dans la suite de rapports actuelle. Les rapports Analytics seront filtrés en fonction du segment. Consultez [cette page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=fr) pour plus de détails. |
 | Suites de rapports | Référentiel dans lequel vous envoyez des données et extrayez des rapports. Une suite de rapports définit le reporting complet et indépendant sur un site web choisi, un ensemble de sites web ou un sous-ensemble de pages web. Vous pouvez afficher les rapports récupérés à partir d’une seule suite de rapports et modifier ce champ dans une configuration à tout moment, en fonction de vos besoins. |
+
+### Adobe Analytics avec authentification IMS {#configuration-parameters-ims}
+
+Une configuration IMS est requise pour intégrer correctement Adobe Analytics à l’as a Cloud Service AEM. Cette configuration doit être créée. Reportez-vous à cette section [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) pour savoir comment créer la configuration IMS d’Analytics.
 
 ### Ajout d’une configuration à un site {#add-configuration}
 
@@ -81,8 +63,8 @@ Adobe Analytics peut être ajouté en tant qu’extension dans la propriété La
 
 >[!NOTE]
 >
->Les frameworks existants (hérités) fonctionnent toujours, mais ne peuvent pas être configurés dans l’interface utilisateur tactile. Il est conseillé de recréer les configurations de mappage de variables dans Launch.
+>La configuration IMS (comptes techniques) pour Launch est préconfigurée dans AEM as a Cloud Service. Vous n’avez pas besoin de créer cette configuration.
 
 >[!NOTE]
 >
->La configuration IMS (comptes techniques) pour Launch est préconfigurée dans AEM as a Cloud Service. Les utilisateurs n’ont pas à créer cette configuration.
+>Les frameworks existants (hérités) fonctionnent toujours, mais ne peuvent pas être configurés dans l’interface utilisateur tactile. Il est conseillé de recréer les configurations de mappage de variables dans Launch.
