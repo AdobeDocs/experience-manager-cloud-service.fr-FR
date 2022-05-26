@@ -3,7 +3,7 @@ title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 2df0c88d82554362879f6302e8f7c784cb96d2b8
+source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
 workflow-type: tm+mt
 source-wordcount: '2183'
 ht-degree: 63%
@@ -96,7 +96,7 @@ Dans les deux cas, les en-têtes de mise en cache peuvent être remplacés à un
    </LocationMatch>
 ```
 
-Lors de la modification des en-têtes de mise en cache au niveau de la couche du Dispatcher, veillez à ne pas mettre en cache trop largement. Consultez la discussion dans la section HTML/texte . [above](#html-text)). Assurez-vous également que les ressources destinées à être conservées en privé (plutôt que mises en cache) ne font pas partie de la variable `LocationMatch` filtres de directive.
+Lors de la modification des en-têtes de mise en cache au niveau de la couche du Dispatcher, veillez à ne pas mettre en cache trop largement. Consultez la discussion dans la section HTML/texte . [above](#html-text). Assurez-vous également que les ressources destinées à être conservées en privé (plutôt que mises en cache) ne font pas partie de la variable `LocationMatch` filtres de directive.
 
 #### Nouveau comportement de mise en cache par défaut {#new-caching-behavior}
 
