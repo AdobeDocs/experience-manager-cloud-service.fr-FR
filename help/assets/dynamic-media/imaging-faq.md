@@ -4,10 +4,10 @@ description: Découvrez comment l’imagerie intelligente avec l’IA Adobe Sens
 feature: Asset Management,Renditions
 role: User
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 743782e2716aa79491adee2f32da6d746bcc40a7
 workflow-type: tm+mt
-source-wordcount: '2624'
-ht-degree: 100%
+source-wordcount: '2629'
+ht-degree: 98%
 
 ---
 
@@ -78,9 +78,10 @@ Si vous le souhaitez, votre entreprise peut se désabonner de l’optimisation d
 |---|---|
 | `network=off` | Désactive l’optimisation du réseau au niveau de l’URL d’une image individuelle. |
 
->[!NOTE]
->
->Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté client détectées du réseau de diffusion de contenu groupé. Ces valeurs sont parfois inexactes. Par exemple, l’iPhone5 avec DPR=2 et l’iPhone12 avec DPR=3 affichent toutes deux DPR=2. Néanmoins, pour les appareils à haute résolution, envoyer DPR=2 est préférable à envoyer DPR=1. Bientôt : Adobe travaille sur le code côté client pour déterminer précisément le DPR d’un utilisateur final.
+Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté client détectées du réseau de diffusion de contenu groupé. Ces valeurs sont parfois inexactes. Par exemple, iPhone5 avec DPR=2 et iPhone12 avec `dpr=3`, les deux affichages `dpr=2`. Toujours pour les appareils haute résolution, l’envoi `dpr=2` est préférable à l’envoi `dpr=1`. <!-- The best way to overcome this inaccuracy, however, is to use client-side DPR to give you 100% accurate values. And it works for any device, whether it is Apple or any other device that was launched. See [Use Smart Imaging with client-side Device Pixel Ratio](/help/assets/dynamic-media/client-side-dpr.md) -->
+
+
+Le RGPD côté client vous donne des valeurs et fonctionne entièrement exacts pour n’importe quel appareil, qu’il s’agisse d’Apple ou de tout autre nouvel appareil qui vient d’être lancé.
 
 ## Quels sont les principaux avantages de la plus récente technologie d’imagerie dynamique ?  {#what-are-the-key-benefits-of-smart-imaging}
 
