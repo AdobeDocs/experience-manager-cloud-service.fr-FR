@@ -1,21 +1,21 @@
 ---
 title: Introduction à AEM sans tête
-description: Découvrez Adobe Experience Manager (AEM) en tant que CMS sans affichage avec une combinaison de documentation détaillée et de parcours sans affichage. Découvrez comment des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL sont utilisées pour créer des expériences Headless avec AEM.
+description: Découvrez Adobe Experience Manager (AEM) en tant que CMS sans affichage avec une combinaison de documentation détaillée et de parcours sans affichage. Découvrez comment des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL sont utilisés pour alimenter des expériences sans interface.
 landing-page-description: Apprenez comment utiliser et administrer Experience Manager Headless as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 2771dfde3b20f3867bc96dedd744d8dd7ab4fed9
+source-git-commit: 30272a4729bc2e2b5213796789eb1422ba105074
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 35%
+source-wordcount: '667'
+ht-degree: 31%
 
 ---
 
 
-# Présentation d’Adobe Experience Manager sans affichage  {#introduction-aem-headless}
+# Présentation d’Adobe Experience Manager as a Headless CMS {#introduction-aem-headless}
 
-Découvrez comment les fonctionnalités d’Adobe Experience Manager (AEM) telles que les modèles de contenu, les fragments de contenu et une API GraphQL sont utilisées pour alimenter des expériences sans interface à grande échelle.
+Découvrez comment utiliser Adobe Experience Manager (AEM) en tant que CMS sans affichage, avec des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL qui optimisent les expériences sans affichage à grande échelle.
 
-Vous pouvez lire la documentation détaillée de toutes les fonctionnalités et/ou suivre la sélection de [parcours sans tête comme démarrage rapide](#first-steps).
+Vous pouvez lire la documentation détaillée des différentes fonctionnalités impliquées et/ou suivre la sélection de [Parcours sans affichage pour obtenir un aperçu des premières étapes](#first-steps).
 
 ## Présentation {#overview}
 
