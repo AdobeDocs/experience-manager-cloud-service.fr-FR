@@ -1,7 +1,7 @@
 ---
 title: Architecture d’Experience Manager [!DNL AEM Forms] as a Cloud Service
 description: Découvrez l’architecture d’ [!DNL AEM Forms] as a Cloud Service pour en savoir plus sur l’évolutivité, la résilience et les performances de la plateforme.
-source-git-commit: 494e37b24ab1c8432613d6a62a4c3a1d48d216ee
+source-git-commit: cb7b417b9b4898b0656e79d6f699e8d5cd611e76
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 25%
@@ -17,10 +17,13 @@ AEM Forms as a Cloud Service prend en charge deux cas d’utilisation principaux
 
 ## Diagrammes d’architecture et de flux
 
-|  |  |
-|---|---|
-| **Inscription numérique Forms** | ![Inscription numérique Forms](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg) |
-| **Forms Communications** | ![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg) |
+**Inscription numérique Forms**
+
+![Inscription numérique Forms](assets/forms-cloud-service-architecture-forms-digital-enrollment.svg)
+
+**Forms Communications**
+
+![Forms-Communication](assets/forms-cloud-service-architecture-forms-communications.svg)
 
 ## Composants
 
