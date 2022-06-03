@@ -1,15 +1,16 @@
 ---
-title: Validation des transferts de contenu
+title: Validation des transferts de contenu (hérités)
 description: Utiliser l’outil de transfert de contenu pour valider les transferts de contenu
-exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '950'
 ht-degree: 2%
 
 ---
 
-# Validation des transferts de contenu {#validating-content-transfers}
+# Validation des transferts de contenu (hérités) {#validating-content-transfers}
 
 ## Prise en main {#getting-started}
 
@@ -44,11 +45,11 @@ Pour une illustration graphique de ce phénomène, reportez-vous aux exemples ci
 
 * **Extraction (écrasement)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTextractionoverwrite.png)
 
 * **Ingestion (essuyer)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestionwipe.png)
 
 * **Remarques**
 
@@ -58,11 +59,11 @@ Pour une illustration graphique de ce phénomène, reportez-vous aux exemples ci
 
 * **Extraction**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTextraction.png)
 
 * **Ingestion**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTTingestion.png)
 
 * **Remarques**
 
@@ -127,10 +128,22 @@ Migration validation took 0 minutes
 
 L’exemple d’échec ci-dessus a été réalisé en exécutant une ingestion, puis en réexécutant la même ingestion avec l’option Effacer désactivée, de sorte qu’aucun noeud n’était impliqué pendant l’ingestion — tout était déjà présent sur la cible.
 
-En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir du **Tâches d’ingestion** interface utilisateur de Cloud Acceleration Manager. Pour ce faire, cliquez sur les trois points (**...**), puis cliquez sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
+Outre l’inclusion dans le journal d’ingestion, le rapport de validation est également accessible à partir de l’interface utilisateur de l’outil de transfert de contenu. Pour ce faire, sélectionnez un jeu de migration, puis cliquez sur le bouton **Valider** à partir de la barre d’actions :
 
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidatebutton.png)
+
+La boîte de dialogue Journaux de validation s’ouvre :
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationlogs.png)
+
+Utilisez la variable **Validation Publish/Author Report** pour afficher le rapport de validation de l’ingestion la plus récente au niveau donné de votre environnement cible. Voir ci-dessous un exemple tiré d’une petite ingestion de publication :
+
+![image](/help/journey-migration/content-transfer-tool/assets/CTTvalidationreport.png)
+
+>[!NOTE]
+>
+>Le **Validation Publish/Author Report** s’affiche une fois l’ingestion terminée. En outre, les rapports de validation sont conservés, de sorte qu’ils n’expirent pas une fois l’ingestion terminée, comme le font les journaux d’ingestion.
 
 ## Résolution des problèmes {#troubleshooting}
 

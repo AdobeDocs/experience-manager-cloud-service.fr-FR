@@ -1,46 +1,20 @@
 ---
-title: Présentation de l’outil de transfert de contenu
+title: Présentation de l’outil de transfert de contenu (hérité)
 description: Présentation de l’outil de transfert de contenu
-exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ab63e9af7b52429fea1e2b2981effc1356f0787f
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '630'
-ht-degree: 72%
+source-wordcount: '476'
+ht-degree: 97%
 
 ---
 
-# Présentation {#overview-content-transfer-tool}
-
-
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Présentation"
->abstract="Développé par Adobe, l’outil de transfert de contenu est utilisé pour déplacer du contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="Conseils et bonnes pratiques"
-
-<!-- Alexandru: Old version of contextual help, keep for failover/debugging
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_overview"
->title="Overview"
->abstract="Content Transfer Tool is a tool developed by Adobe that can be used to move existing content over from a source AEM instance (on-premise or AMS) to the target AEM Cloud Service instance. This tool also transfers principals (users or groups) automatically."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#extraction-process" text="Extraction Process"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=en#ingestion-process" text="Ingestion Process" -->
+# Présentation de l’outil de transfert de contenu (hérité) {#overview-content-transfer-tool}
 
 Développé par Adobe, l’outil de transfert de contenu est utilisé pour déplacer du contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible.
 
 Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes).
-
-Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version afin d’exploiter tous les avantages qu’elle offre :
-
-* Méthode en libre-service pour extraire une fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
-* Amélioration de l’expérience utilisateur grâce à une meilleure gestion des états de chargement, des barrières de sécurité et des erreurs.
-* Les journaux d’ingestion sont conservés et sont toujours disponibles pour le dépannage.
-
-Pour commencer à utiliser la nouvelle version (Vxx) <!-- update when version is available --> vous devrez désinstaller les anciennes versions de l’outil de transfert de contenu, car l’outil a subi un changement majeur d’architecture.
-
->[!NOTE]
->
-> Dans les cas où une migration est déjà en cours, vous pouvez continuer à utiliser la version antérieure du CTT jusqu’à ce que la migration soit terminée. Pour consulter la documentation relative à la version précédente du CTT, reportez-vous à la section [documentation héritée](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## Phases de l’outil de transfert de contenu {#phases-content-transfer-tool}
 
@@ -61,8 +35,11 @@ Le transfert de contenu comporte deux phases :
 
 Un jeu de migration possède les attributs suivants :
 
-* Avec la nouvelle version, vous pouvez créer un maximum de cinq jeux de migration au sein d’un projet créé dans Cloud Acceleration Manager.
+* Au maximum, il est possible de créer et de maintenir dix jeux de migration à la fois pendant l’activité de transfert de contenu.
 * Chaque jeu de migration doit avoir un nom unique.
+* Si un jeu de migration est inactif depuis plus de 30 jours, il est automatiquement supprimé.
+* Chaque fois que vous créez un jeu de migration, il est associé à un environnement spécifique. Vous ne pouvez effectuer une ingestion que dans une instance d’auteur ou de publication d’un même environnement.
+
 
 L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.
 

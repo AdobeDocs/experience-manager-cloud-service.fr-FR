@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 79%
+source-wordcount: '1242'
+ht-degree: 43%
 
 ---
 
@@ -27,6 +27,10 @@ Il est possible de télécharger l’outil de transfert de contenu dans un fichi
 >Téléchargez l’outil de transfert de contenu depuis le portail de [distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
 
 ## Connectivité de l’environnement source {#source-environment-connectivity}
+
+>[!NOTE]
+>
+>Une erreur de connexion peut également se produire si un jeu de migration a été supprimé de Cloud Acceleration Manager.
 
 L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour réussir l’exécution d’une extraction, les points d’entrée suivants doivent être accessibles à partir de l’instance AEM en cours d’exécution :
 
@@ -51,83 +55,104 @@ Pour tester la connectivité à l’environnement AEM as a Cloud Service cib
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=fr#migration" text="Tutoriel – Utilisation de l’outil de transfert de contenu"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
+<!-- Need to remove the video -->
 
+La section suivante s’applique à la nouvelle version de l’outil de transfert de contenu. Consultez cette section pour savoir comment utiliser l’outil de transfert de contenu pour migrer le contenu vers AEM as a Cloud Service :
 
-Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu :
+### Phase de configuration de l’extraction {#extraction-setup-phase}
 
-1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Migration de contenu**.
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_extraction_setup"
+>title="Phase de configuration de l’extraction"
+>abstract="Découvrez comment créer un jeu de migration et copier la clé d’extraction."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=en#migration" text="Tutoriel – Utilisation de l’outil de transfert de contenu"
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
+<!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
 
-1. Sélectionnez l’option **Transfert de contenu** dans l’assistant **Migration de contenu**.
+1. Connectez-vous à Cloud Acceleration Manager (CAM) et cliquez sur le projet CAM que vous avez créé précédemment pour évaluer votre préparation à AEM as a Cloud Service. Si vous n&#39;avez pas créé de projet CAM, reportez-vous à la section Création et gestion d&#39;un projet dans CAM.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt02.png)
+1. Cliquez sur le bouton **Transfert de contenu** carte. Vous accédez alors à la vue Liste des jeux de migration.
 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam1.png)
 
-1. La console ci-dessous s’affiche lorsque vous créez le premier jeu de migration. Cliquez sur **Créer un jeu de migration** pour créer un jeu de migration.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
+1. Créer un jeu de migration en cliquant sur **Créer un jeu de migration**.
 
    >[!NOTE]
-   >Si vous disposez de jeux de migration, la console affiche la liste de ces jeux avec leur état actuel.
+   >
+   >Vous pouvez créer au maximum cinq jeux de migration par projet dans Cloud Acceleration Manager.
 
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-1. Renseignez les champs de l’écran **Créer un jeu de migration** comme décrit ci-dessous.
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt04.png)
+1. Votre liste de migration doit maintenant apparaître dans la vue Liste. Cliquez sur le symbole des trois points (**...**) pour ouvrir la liste déroulante, puis cliquez sur **Copier la clé d’extraction**. Vous aurez besoin de cette clé pendant la phase d’extraction. Copiez cette clé d’extraction.
 
-   1. **Nom** : renseignez le nom du jeu de migration.
+   >[!NOTE]
+   >
+   >La clé d’extraction permet à votre environnement d’AEM source de se connecter en toute sécurité au jeu de migration. Veuillez traiter cette clé avec le même soin que vous ne le feriez avec un mot de passe, et ne la partager jamais sur un support non sécurisé comme un email.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
+
+### Renseignement du jeu de migration {#populating-the-migration-set}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_populate_migrationset"
+>title="Renseignez le jeu de migration&quot; abstract=&quot;Après avoir créé un jeu de migration, il doit être renseigné avec le contenu de l’instance source qui doit être déplacée vers l’environnement as a Cloud Service AEM. Pour ce faire, l’outil de transfert de contenu doit être installé sur l’instance source."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/extracting-content.html" text="Extraction de contenu"
+
+Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration Manager, vous devez installer la dernière version de l’outil de transfert de contenu sur votre instance source Adobe Experience Manager (AEM). Consultez cette section pour savoir comment renseigner le jeu de migration.
+
+1. Après avoir installé la dernière version (Vxxx) de l’outil de transfert de contenu sur votre instance Adobe Experience Manager source, accédez à **Opérations - Migration de contenu**
+
+1. Cliquez sur **Créer un jeu de migration**
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
+
+1. Collez la clé d&#39;extraction qui a été copiée à partir de l&#39;instance CAM plus tôt dans le champ d&#39;entrée Clé d&#39;extraction de l&#39;élément **Créer un jeu de migration** formulaire. Une fois que vous avez effectué cette opération, les champs Nom du jeu de migration et Nom du projet (CAM) de Cloud Acceleration Manager sont automatiquement renseignés. Ils doivent correspondre au nom du jeu de migration dans CAM et au nom du projet CAM que vous avez créé. Vous pouvez maintenant ajouter des chemins de contenu. Une fois que vous avez ajouté des chemins de contenu, vous pouvez enregistrer le jeu de migration. Vous pouvez exécuter l’extraction avec les versions incluses ou exclues.
+
+   >[!NOTE]
+   >
+   >Assurez-vous que la clé d&#39;extraction est valide et n&#39;est pas proche de son expiration. Vous pouvez obtenir ces informations dans la variable **Créer un jeu de migration** après avoir collé la clé d’extraction. Si vous obtenez une erreur de connexion, reportez-vous à la section [Connectivité de l’environnement source](#source-environment-connectivity) pour plus d’informations.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
+
+1. Sélectionnez ensuite les paramètres suivants pour créer un jeu de migration :
+
+   1. **Inclure les versions** : sélectionnez les options requises. Lorsque différentes versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
+
+      ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam7.png)
+
       >[!NOTE]
-      >Aucun caractère spécial n’est autorisé dans ce nom.
-
-   1. **Configuration de Cloud Service** : renseignez l’URL de destination d’auteur AEM as a Cloud Service.
-
-      >[!NOTE]
-      >Vous pouvez créer et gérer un maximum de dix jeux de migration à la fois pendant l’activité de transfert de contenu.
-      >En outre, vous devez créer une migration distincte pour chacun des environnements spécifiques : *Stage* (Évaluation), *Development* (Développement) ou *Production*.
-
-   1. **Jeton d’accès** : renseignez le jeton d’accès.
-
-      >[!NOTE]
-      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Ouvrir le jeton d’accès**. Vous devez vous assurer que vous appartenez au groupe &quot;Administrateurs&quot; dans l’instance de Cloud Service cible.
-
-   1. **Paramètres** : sélectionnez les paramètres suivants pour créer le jeu de migration :
-
-      1. **Inclure les versions** : sélectionnez les options requises. Lorsque différentes versions sont incluses, le chemin d’accès `/var/audit` est automatiquement inclus pour migrer les événements de contrôle.
-
-         ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt05.png)
-
-         >[!NOTE]
-         >Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
+      >Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
 
-      1. **Chemins à inclure** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte les entrées effectuées par saisie ou par sélection.
+   1. **Chemins à inclure** : utilisez le navigateur de chemins pour sélectionner les chemins objets de la migration. Le sélecteur de chemin accepte les entrées effectuées par saisie ou par sélection.
 
-         >[!IMPORTANT]
-         >Les chemins suivants sont restreints lors de la création d’un jeu de migration :
-         >* `/apps`
-         >* `/libs`
-         >* `/home`
-         >* `/etc` (il est possible de sélectionner certains chemins `/etc` dans le CTT)
+      >[!IMPORTANT]
+      >Les chemins suivants sont restreints lors de la création d’un jeu de migration :
+      >* `/apps`
+      >* `/libs`
+      >* `/home`
+      >* `/etc` (il est possible de sélectionner certains chemins `/etc` dans le CTT)
 
 
 1. Cliquez sur **Enregistrer** après avoir rempli tous les champs de l’écran **Créer un jeu de migration**.
 
-1. Vous verrez votre jeu de migration dans l’assistant de **Transfert de contenu**, comme illustré dans la figure ci-dessous.
+<!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt07.png)
 
-   Tous les jeux de migration existants s’affichent dans l’assistant de **Transfert de contenu** avec leur statut actuel et leurs informations de statut. Certaines des icônes décrites ci-dessous peuvent apparaître.
+   All the existing migration sets are displayed on the **Content Transfer** wizard with their current status and status information. You may see some of these icons described below.
 
-   * Un *nuage de couleur rouge* indique que vous ne pouvez pas terminer le processus d’extraction.
-   * Un *nuage de couleur verte* indique que vous pouvez terminer le processus d’extraction.
-   * Une *icône de couleur jaune* indique que vous n’avez pas créé le jeu de migration existant et que celui ainsi indiqué a été créé par un autre utilisateur de la même instance.
+   * A *red cloud* indicates that you cannot complete the extraction process.
+   * A *green cloud* indicates that you can complete the extraction process.
+   * A *yellow icon* indicates that you did not create the existing migration set and the specific one is created by some other user in the same instance.
 
-1. Sélectionnez un jeu de migration puis cliquez sur **Propriétés** pour voir ou modifier les propriétés du jeu de migration. Lors de la modification des propriétés, il n’est pas possible de changer le **nom du jeu de migration** ou l’**URL du service**.
+1. Select a migration set and click on **Properties** to view or edit the migration set properties. While editing properties, it is not possible to change the **Migration Set name** or the **Service URL**. 
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt06.png) -->
 
-### Détermination de la taille du jeu de migration et de l’espace disque {#migration-set-size}
+### Définition de la taille du jeu de migration {#migration-set-size}
 
 Après la création d’un jeu de migration, il est vivement recommandé d’exécuter une vérification de taille sur le jeu de migration avant de lancer un processus d’extraction.
 En effectuant une vérification de taille sur le jeu de migration, vous pourrez :
@@ -138,32 +163,27 @@ Pour exécuter une vérification de taille, procédez comme suit :
 
 1. Sélectionnez un jeu de migration et cliquez sur **Vérifier la taille**.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
 1. Cela ouvrira la fenêtre **Vérifier la taille** boîte de dialogue.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
 1. Cliquez sur **Vérifier la taille** pour démarrer le processus. Vous revenez alors à la vue Liste des jeux de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
+1. Une fois **Vérifier la taille** est terminé, l’état devient **FINISHED**. Sélectionnez le même jeu de migration et cliquez sur **Vérifier la taille** pour afficher les résultats. Voici un exemple : **Vérifier la taille** résultats sans avertissement.
 
-1. Une fois **Vérifier la taille** est terminé, l’état devient **FINISHED**. Sélectionnez le même jeu de migration et cliquez sur **Vérifier la taille** pour afficher les résultats.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
-
-   Voici un exemple : **Vérifier la taille** résultats sans avertissement.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
 1. Si la variable **Vérifier la taille** les résultats indiquent qu&#39;il n&#39;y a pas suffisamment d&#39;espace disque et/ou que le jeu de migration dépasse les limites du produit, **AVERTISSEMENT** s’affiche.
 
-![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
-
-Voici un exemple : **Vérifier la taille** donne des avertissements.
-
-![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
+<!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
+   
+   Below is an example of **Check Size** results with warnings.
+ 
+   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png) -->
 
 
 ## Prochaines étapes {#whats-next}

@@ -1,34 +1,20 @@
 ---
-title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
+title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu (Legacy)
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
-exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9ee931223c3600643fbaeefd790f5f23827da367
+hide: true
+hidefromtoc: true
+source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 78%
+source-wordcount: '1512'
+ht-degree: 94%
 
 ---
 
-# Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu {#guidelines}
+# Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu (Hérité) {#guidelines}
 
 ## Conseils et bonnes pratiques {#best-practices}
 
->[!CONTEXTUALHELP]
->id="aemcloud_ctt_guidelines"
->title="Conseils et bonnes pratiques"
->abstract="Consultez les instructions et les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu, notamment les tâches de nettoyage des révisions, les considérations relatives à l’espace disque, etc."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#pre-reqs" text="Points importants concernant l’utilisation de l’outil de transfert de contenu"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#important-considerations" text="Points importants concernant l’utilisation de l’outil de mappage des utilisateurs"
-
-Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version afin d’exploiter tous les avantages qu’elle offre :
-
-* Méthode en libre-service pour extraire une fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
-* Amélioration de l’expérience utilisateur grâce à une meilleure gestion des états de chargement, des barrières de sécurité et des erreurs.
-* Les journaux d’ingestion sont conservés et sont toujours disponibles pour le dépannage.
-
-Pour commencer à utiliser la nouvelle version (Vxx), vous devez désinstaller les anciennes versions de l’outil de transfert de contenu. Cela est nécessaire car la nouvelle version est accompagnée d’un changement architectural majeur. Avec Vxx, vous devrez créer de nouveaux jeux de migration et relancer l’extraction et l’ingestion sur les nouveaux jeux de migration. Si une migration est déjà en cours, vous pouvez continuer à utiliser la version antérieure du CTT jusqu’à ce que la migration soit terminée.
-
-Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version de l’outil de transfert de contenu :
+Consultez la section ci-dessous pour accéder aux conseils et connaître les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu :
 
 * Il est conseillé de procéder à un [nettoyage de révision](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et à des [contrôles de cohérence de l’entrepôt de données](https://helpx.adobe.com/fr/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) sur le référentiel **source** pour identifier les problèmes potentiels et réduire la taille du référentiel.
 
@@ -46,7 +32,7 @@ La formule générale pour calculer l’espace disque disponible requis est la s
    * *volume de stockage des nœuds* : taille du répertoire de stockage des segments ou taille de la base de données MongoDB.
 Ainsi, pour un volume de stockage de segments de 20 Go, l’espace disque disponible requis est de 94 Go.
 
-* Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les compléments de contenu. Au maximum, cinq jeux de migration par projet dans Cloud Acceleration Manager peuvent être créés et conservés à la fois pendant l’activité de transfert de contenu. Si plus de cinq jeux de migration sont nécessaires, vous devrez créer un second projet dans Cloud Acceleration Manager. Toutefois, cela nécessitera une gestion de projet supplémentaire et une gouvernance hors produit afin d’éviter le remplacement de contenu sur la cible par plusieurs utilisateurs.
+* Un jeu de migration doit être conservé tout au long de l’activité de transfert de contenu pour prendre en charge les compléments de contenu. Étant donné qu’un maximum de dix jeux de migration peuvent être créés et conservés en même temps pendant l’activité de transfert de contenu, il est recommandé de séparer le référentiel de contenu de façon appropriée pour vous assurer de ne pas être à court de jeux de migration.
 
 ## Points importants avant d’utiliser l’outil de transfert de contenu {#important-considerations}
 
@@ -56,17 +42,19 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Java doit être configuré dans l’environnement AEM, de sorte que la commande `java` puisse être exécutée par l’utilisateur démarrant AEM.
 
+* Il est recommandé de désinstaller les anciennes versions de l’outil de transfert de contenu lors de l’installation de la version 1.3.0, car l’outil a subi un changement d’architecture majeur. Avec la version 1.3.0, vous devez également créer des jeux de migration et réexécuter l’extraction et l’ingestion sur les nouveaux jeux de migration.
+
 * L’outil de transfert de contenu peut être utilisé avec les types de magasin de données suivants : File Data Store, S3 Data Store, Shared S3 Data Store et Azure Blob Store Data Store.
 
 * Si vous utilisez un *environnement sandbox*, assurez-vous que celui-ci est à jour et mis à niveau vers la dernière version. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
-* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’**administrateurs** AEM local dans l’instance Cloud Service vers laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas commencer des assimilations.
+* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’**administrateurs** AEM local dans l’instance Cloud Service vers laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas récupérer le jeton d’accès pour utiliser l’outil de transfert de contenu.
 
 * Lorsque l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, elle supprime l’intégralité du référentiel existant et crée un référentiel dans lequel ingérer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur doit être rajouté au **administrateurs** afin de récupérer le jeton d’accès pour l’outil de transfert de contenu.
 
 * L’outil de transfert de contenu ne prend pas en charge la fusion de contenu provenant de plusieurs sources dans l’instance de Cloud Service cible si le contenu provenant des deux sources est déplacé vers les mêmes chemins d’accès sur la cible. Pour déplacer le contenu de plusieurs sources vers une seule instance de Cloud Service cible, vous devez vous assurer qu’il n’y a pas de chevauchement des chemins de contenu des sources.
 
-* La clé d&#39;extraction est valable 14 jours à compter du moment où elle a été créée/renouvelée. Il peut être renouvelé à tout moment. Si la clé d&#39;extraction a expiré, vous ne pourrez pas effectuer d&#39;extraction.
+* Le jeton d’accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d’accès a expiré, vous ne pourrez pas vous connecter à l’instance de Cloud Service et vous devrez récupérer le nouveau jeton d’accès. L’icône d’état associée à un jeu de migration existant prend l’aspect d’un nuage rouge et affiche un message si vous le survolez.
 
 * L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour plus d’informations, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#running-ctt-on-publish).
 

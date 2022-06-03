@@ -2,10 +2,10 @@
 title: Affichage des journaux d’un jeu de migration dans l’outil de transfert de contenu
 description: Affichage des journaux d’un jeu de migration dans l’outil de transfert de contenu
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 9a098eefbb730ae2930169cf7402ab4799043291
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 100%
+source-wordcount: '238'
+ht-degree: 59%
 
 ---
 
@@ -23,20 +23,17 @@ Une fois chaque étape terminée (extraction et ingestion), vérifiez les journa
 
 ## Procédure d’affichage des journaux {#viewing-logs}
 
-Vous pouvez afficher les journaux d’un jeu de migration existant à l’aide de la page *Overview*.
-Suivez les étapes ci-dessous :
+Pour afficher les journaux d’extraction, accédez à votre instance Adobe Experience Manager source, puis sélectionnez le jeu de migration souhaité.
 
-1. Accédez à la page *Overview*, sélectionnez le jeu de migration à supprimer, puis cliquez sur l’option **View Log** (Afficher le journal) dans la barre d’actions.
+Suivez ensuite les étapes ci-dessous :
 
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log1.png)
+1. Sélectionnez un jeu de migration et cliquez sur **Afficher le journal** dans la barre d’actions. La boîte de dialogue Journaux s’affiche. Cliquez sur **Journal d&#39;extraction** pour afficher les journaux dans un nouvel onglet.
 
-1. La boîte de dialogue **Logs** (Journaux) s’affiche. Cliquez sur **Extraction Logs** (Journaux d’extraction) pour voir les journaux dans un nouvel onglet.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log2.png)
-ou,
-
-   Vous pouvez également voir les journaux de votre jeu de migration à l’aide de l’écran *Overview*. Sélectionnez le jeu de migration et cliquez sur l’état sous le champ **EXTRACTION**. Dans ce cas, cliquez sur **FINISHED** (TERMINÉ) pour voir les journaux dans un nouvel onglet.
-
-   ![image](/help/journey-migration/content-transfer-tool/assets/view-log3.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam25.png) \
+   Ou cliquez sur le bouton **FINISHED** statut pour afficher les journaux dans un nouvel onglet.
 
 1. Pour consulter les dernières lignes des journaux sans utiliser l’interface utilisateur, vous pouvez vous connecter à votre environnement AEM source via SSH et exécuter la commande tail sur le fichier `crx-quickstart/cloud-migration/extraction-XXXXX/output.log file`.
+
+1. Pour afficher les journaux d’ingestion, accédez à la liste Tâches d’ingestion dans Cloud Acceleration Manager et cliquez sur les trois points (**...**). Vous pouvez alors cliquer sur **Journal de téléchargement** pour télécharger les journaux.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam28.png)

@@ -1,15 +1,16 @@
 ---
-title: Exécution de l’outil de transfert de contenu sur une instance de publication
+title: Exécution de l’outil de transfert de contenu sur une instance de publication (héritée)
 description: Exécution de l’outil de transfert de contenu sur une instance de publication
-exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
+hide: true
+hidefromtoc: true
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '272'
+ht-degree: 96%
 
 ---
 
-# Exécution de l’outil de transfert de contenu sur une instance de publication {#run-content-transfer-tool-publish-instance}
+# Exécution de l’outil de transfert de contenu sur une instance de publication (Legacy) {#run-content-transfer-tool-publish-instance}
 
 ## Présentation {#introduction}
 
@@ -25,6 +26,8 @@ Suivez l’approche recommandée, comme décrit ci-dessous :
 * Utilisez la même version de l’outil de transfert de contenu qui a été utilisée sur l’instance d’auteur.
 
 * Un seul nœud de publication doit être migré. Il doit être supprimé de l’équilibreur de charge avant de commencer l’extraction.
+
+* Lors de la création du jeu de migration, utilisez l’URL de l’environnement de création AEM as a Cloud Service.
 
 * Lors de l’ingestion pour la publication, le niveau de publication ne sera pas réduit (contrairement à l’auteur).
 
