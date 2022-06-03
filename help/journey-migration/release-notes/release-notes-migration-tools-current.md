@@ -2,7 +2,7 @@
 title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.6.0
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.6.0
 feature: Release Information
-source-git-commit: 717b2c851a18ef5171d64a462509ce08fb87a59c
+source-git-commit: 666635fc951ceb10e1a4a9a90a042d60da9f463a
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 23%
@@ -22,11 +22,8 @@ La date de publication de l’analyseur des bonnes pratiques v2.1.30 est le 1 j
 ### Nouveautés {#what-is-new-bpa}
 
 * Possibilité de détecter et de générer des rapports sur l’utilisation des widgets de boîte de dialogue personnalisés à l’aide des widgets CoralUI et Classic. Il est recommandé de convertir les widgets de boîte de dialogue Classic personnalisés d’ExtJS en CoralUI. Les widgets de boîte de dialogue Coral personnalisés doivent être mis à jour vers CoralUI3.
-
 * Possibilité de détecter et de générer des rapports sur l’utilisation et la version d’Assets Share Commons. Asset Share Commons 1.x n’est pas pris en charge sur AEM as a Cloud Service et doit être mis à niveau vers la version 2.x.
-
 * Possibilité de détecter et de générer des rapports sur le nombre de noeuds des versions.
-
 * Possibilité de détecter et de générer des rapports sur les agents de réplication personnalisés ou les agents de réplication prêts à l’emploi qui ont été modifiés.
 
 ### Correctifs {#bug-fixes-bpa}
