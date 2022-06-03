@@ -4,10 +4,10 @@ description: Découvrez les paramètres prédéfinis d’image et comment les cr
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: a53f40ab-0e27-45f8-9142-781c077a04cc
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: ca0385ee974c7b06725f687c0ef237880bb230ea
 workflow-type: tm+mt
 source-wordcount: '3629'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -236,7 +236,7 @@ Lorsque vous créez ou modifiez des paramètres d’image prédéfinis, vous dis
 
 * **[!UICONTROL Activer l’accentuation simple]** : ne sélectionnez pas l’option **[!UICONTROL Activer l’accentuation simple]** (ce filtre d’accentuation est moins précis que les paramètres Accentuation).
 
-* **[!UICONTROL Accentuation : Mode Rééchantillonnage]** : sélectionnez l’option **[!UICONTROL Bicubique]**.
+* **[!UICONTROL Accentuation : Mode Rééchantillonnage]** - Sélectionner **[!UICONTROL Sharp2]**.
 
 #### Options de l’onglet De base {#basic-tab-options}
 
