@@ -2,7 +2,7 @@
 title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 9ee931223c3600643fbaeefd790f5f23827da367
+source-git-commit: 98b81d918d60722ddb3f1c7736bc5b3506e05f6f
 workflow-type: tm+mt
 source-wordcount: '1654'
 ht-degree: 78%
@@ -26,7 +26,7 @@ Une nouvelle version de l’outil de transfert de contenu est disponible, qui in
 * Amélioration de l’expérience utilisateur grâce à une meilleure gestion des états de chargement, des barrières de sécurité et des erreurs.
 * Les journaux d’ingestion sont conservés et sont toujours disponibles pour le dépannage.
 
-Pour commencer à utiliser la nouvelle version (Vxx), vous devez désinstaller les anciennes versions de l’outil de transfert de contenu. Cela est nécessaire car la nouvelle version est accompagnée d’un changement architectural majeur. Avec Vxx, vous devrez créer de nouveaux jeux de migration et relancer l’extraction et l’ingestion sur les nouveaux jeux de migration. Si une migration est déjà en cours, vous pouvez continuer à utiliser la version antérieure du CTT jusqu’à ce que la migration soit terminée.
+Pour commencer à utiliser la nouvelle version (v2.0.10), vous devez désinstaller les anciennes versions de l’outil de transfert de contenu. Cela est nécessaire car la nouvelle version est accompagnée d’un changement architectural majeur. Avec la version 2.0.10, vous devrez créer de nouveaux jeux de migration et relancer l’extraction et l’ingestion sur les nouveaux jeux de migration. Si une migration est déjà en cours, vous pouvez continuer à utiliser la version antérieure du CTT jusqu’à ce que la migration soit terminée.
 
 Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version de l’outil de transfert de contenu :
 

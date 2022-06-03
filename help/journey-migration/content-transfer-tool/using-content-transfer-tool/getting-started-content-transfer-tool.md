@@ -2,7 +2,7 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: f84806c1579f8ef163dd9454fcae4a57bf22a452
+source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
 ht-degree: 43%
@@ -102,7 +102,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
 Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration Manager, vous devez installer la dernière version de l’outil de transfert de contenu sur votre instance source Adobe Experience Manager (AEM). Consultez cette section pour savoir comment renseigner le jeu de migration.
 
-1. Après avoir installé la dernière version (Vxxx) de l’outil de transfert de contenu sur votre instance Adobe Experience Manager source, accédez à **Opérations - Migration de contenu**
+1. Après avoir installé la dernière version (v2.0.10) de l’outil de transfert de contenu sur votre instance Adobe Experience Manager source, accédez à **Opérations - Migration de contenu**
 
 1. Cliquez sur **Créer un jeu de migration**
 
