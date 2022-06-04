@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 4eb2beeb97d2aa2aed4af869897db470b732fd1f
+source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 98%
+source-wordcount: '1953'
+ht-degree: 92%
 
 ---
 
@@ -33,7 +33,7 @@ Elles constituent un ensemble de toutes les données disponibles pour cette imag
 * Nom du dossier où elle se trouve.
 * Ressources connexes ou balises appliquées.
 
-Les propriétés de métadonnées de base décrites ci-dessus sont utilisées par [!DNL Experience Manager] pour gérer les ressources et permettre aux utilisateurs de les visualiser. Par exemple, ordonner les ressources selon la date de leur dernière modification est utile pour identifier des ressources ajoutées récemment.
+Les propriétés de métadonnées de base décrites ci-dessus sont utilisées par [!DNL Experience Manager] pour gérer les ressources et permettre aux utilisateurs de les visualiser. Par exemple, ordonner les ressources par date de dernière modification est utile pour tenter de découvrir des ressources récemment ajoutées ou modifiées.
 
 Vous pouvez ajouter d’autres données de niveau supérieur à des ressources numériques, par exemple :
 
@@ -67,6 +67,21 @@ Les métadonnées techniques sont utiles pour les applications logicielles qui t
 Les métadonnées descriptives concernent le domaine d’application (par exemple, l’entreprise d’où provient une ressource) et ne peuvent pas être déterminées automatiquement. Elles sont créées manuellement ou semi-automatiquement. Par exemple, une caméra GPS peut automatiquement suivre la latitude et la longitude et ajouter un balisage géographique à l’image.
 
 La création manuelle d’informations descriptives de métadonnées coûte cher. Des normes ont donc été mises en place pour faciliter l’échange de métadonnées entre les systèmes logiciels et les organisations. [!DNL Experience Manager Assets] prend en charge l’ensemble des normes pertinentes pour la gestion des métadonnées.
+
+## Métadonnées et dernière modification {#last-modification}
+
+La date de dernière modification d’une ressource reflète la dernière modification du fichier d’origine d’une ressource. Par conséquent, la date de modification et l’utilisateur ne changent que lorsque :
+
+* Une nouvelle version de la ressource est chargée.
+* Une ressource est retraitée.
+
+La date de la dernière modification et l’utilisateur ne changent pas :
+
+* Lorsqu’une ressource est déplacée ou renommée
+* Lorsqu’une ressource est extraite, archivée ou version
+* Lorsqu’une ressource est publiée ou dépubliée
+* Mises à jour des métadonnées
+* Mises à jour de référence ou de collection
 
 ## Normes de codage {#encoding-standards}
 
