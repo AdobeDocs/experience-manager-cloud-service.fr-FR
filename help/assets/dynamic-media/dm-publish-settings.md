@@ -10,9 +10,9 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
 source-git-commit: 1730efd1fddd119f2b7950a0e7638ba5624fbb44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3456'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ La page Serveur d’images définit les paramètres par défaut de la diffusion 
 
 **[!UICONTROL Adresse du client]** - Permet de spécifier une ou plusieurs adresses IP ou plages d’adresses IP. Lorsqu’elles sont spécifiées, les requêtes adressées à ce catalogue d’images provenant d’un client à une adresse IP non répertoriée sont rejetées. Cette règle s’applique à la fois à la diffusion des images et aux images rendues.
 
-![Onglet Sécurité&#x200B;](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Onglet Sécurité affichant le champ &quot;Autoriser&quot; d’IP.*
+![Onglet Sécurité&#x200B;](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Onglet Sécurité affichant le champ « Autorisé » de l’IP.*
 
 
 ### Onglet Gestion des catalogues {#catalog-management-tab}
@@ -136,7 +136,7 @@ Voir aussi le paramètre [IccRenderIntent](https://experienceleague.adobe.com/do
 
 | Configuration | Caractéristiques |
 | --- | --- |
-| **[!UICONTROL Espace colorimétrique CMJN par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données CMJN. Si l’option **[!UICONTROL Aucune spécifiée]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images source CMJN sont impliquées. Tous les espaces de travail CMJN dépendent des appareils, ce qui signifie qu’ils sont basés sur des combinaisons d’encre et de papier réelles. Les espaces de travail CMJN fournis par Adobe sont basés sur des conditions d&#39;impression commerciales standard.<br> Voir aussi le paramètre [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
+| **[!UICONTROL Espace colorimétrique CMJN par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données CMJN. Si l’option **[!UICONTROL Aucune spécifiée]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images source CMJN sont impliquées. Tous les espaces de travail CMJN dépendent des appareils, ce qui signifie qu’ils sont basés sur des combinaisons d’encre et de papier réelles. Les espaces de travail CMJN fournis par Adobe sont basés sur des conditions d’impression commerciales standard.<br> Voir aussi le paramètre [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Espace colorimétrique de niveaux de gris par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données en niveaux de gris. Si l’option **[!UICONTROL Aucune spécification]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images source en niveaux de gris sont impliquées.<br>Voir aussi le paramètre [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Espace colorimétrique RGB par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données RGB. Si l’option **[!UICONTROL Aucune spécification]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images sources RGB sont impliquées. En règle générale, il est préférable de sélectionner **[!UICONTROL Adobe RGB]** ou **[!UICONTROL sRGB]**, plutôt que le profil d’un périphérique spécifique (tel qu’un profil de moniteur). **[!UICONTROL sRGB]** est recommandé lorsque vous préparez des images pour le Web ou les appareils mobiles, car il définit l’espace colorimétrique du moniteur standard utilisé pour afficher les images sur le Web. **[!UICONTROL sRGB]** est également un bon choix lorsque vous travaillez avec des images provenant d’appareils photo numériques grand public, car la plupart de ces appareils utilisent sRGB comme espace colorimétrique par défaut.<br>Voir aussi le paramètre [IccProfileRGB](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Intention de rendu de conversion des couleurs]** | **[!UICONTROL Perception]** : vise à préserver la relation visuelle entre les couleurs afin qu’elles soient perçues comme naturelles par l’œil humain, même si les valeurs de couleur elles-mêmes peuvent changer. Cette intention est adaptée aux images photographiques avec de nombreuses couleurs qui se situent hors de la gamme. Ce paramètre correspond à l’intention de rendu standard pour l’industrie japonaise de l’imprimerie. |
@@ -253,7 +253,7 @@ Exécutez les tests suivants :
 
    Vérifiez que la version publique de votre site affiche les ressources publiées comme vous l’avez déjà fait avec Adobe Dynamic Media.
 
-1. Depuis l&#39;extérieur de votre réseau d’entreprise, vérifiez que les ressources non publiées (c’est-à-dire non marquées pour la publication) sont protégées contre l’accès par des tiers.
+1. Depuis l’extérieur de votre réseau d’entreprise, vérifiez que les ressources non publiées (c’est-à-dire non marquées pour la publication) sont protégées contre l’accès par des tiers.
 
    Accédez à votre réseau depuis l’extérieur (depuis votre ordinateur personnel, par exemple, ou via une connexion 4G/5G), puis vérifiez que la version publique du site affiche toutes les ressources publiées, mais aucun contenu non publié.
 
