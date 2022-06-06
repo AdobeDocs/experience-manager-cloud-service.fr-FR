@@ -1,12 +1,12 @@
 ---
-title: Configuration du partage des ressources cross-origin (CORS) avec AEM sans affichage
-description: Le partage des ressources cross-origin (CORS) de Adobe Experience Manager permet aux applications web sans interface utilisateur d’effectuer des appels côté client vers AEM. Une configuration CORS est nécessaire pour activer l’accès au point d’entrée GraphQL.
+title: Configuration du partage des ressources cross-origin (CORS) avec AEM découplé
+description: Le partage des ressources cross-origin (CORS) d’Adobe Experience Manager permet aux applications web découplées d’effectuer des appels côté client vers AEM. Une configuration CORS est nécessaire pour activer l’accès au point d’entrée GraphQL.
 feature: GraphQL API
 exl-id: 426be9f9-f44a-4744-ac08-e64bb97308a0
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '208'
-ht-degree: 28%
+ht-degree: 100%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 28%
 >
 >Pour un aperçu détaillé de la politique de partage des ressources CORS dans AEM, voir [Description du partage des ressources Cross-Origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr#understand-cross-origin-resource-sharing-(cors)).
 
-Pour accéder au point d’entrée GraphQL, une stratégie CORS doit être configurée et ajoutée à un projet AEM qui est [déployé vers AEM via Cloud Manager](/help/implementing/cloud-manager/deploy-code.md). Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités. Plusieurs configurations CORS peuvent être créées et déployées dans différents environnements. Vous trouverez des exemples dans la section [Site de référence WKND](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig)
+Pour accéder au point d’entrée GraphQL, une stratégie CORS doit être configurée et ajoutée à un projet AEM qui soit [déployé vers AEM via Cloud Manager](/help/implementing/cloud-manager/deploy-code.md). Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités. Plusieurs configurations CORS peuvent être créées et déployées dans différents environnements. Vous trouverez des exemples dans la section [Site de référence WKND](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig)
 
-La configuration CORS doit spécifier une origine de site web approuvée. `alloworigin` ou `alloworiginregexp` dont l&#39;accès doit être accordé.
+La configuration CORS doit spécifier une origine de site web approuvée `alloworigin` ou `alloworiginregexp` pour laquelle l’accès doit être accordé.
 
-Le fichier de configuration doit être nommé comme suit : `com.adobe.granite.cors.impl.CORSPolicyImpl~appname-graphql.cfg.json` where `appname` reflète le nom de votre application.
+Le fichier de configuration doit être nommé comme suit : `com.adobe.granite.cors.impl.CORSPolicyImpl~appname-graphql.cfg.json` où `appname` reflète le nom de votre application.
 
-Par exemple, pour accorder l’accès au point d’entrée GraphQL `/content/cq:graphql/wknd/endpoint` et point de terminaison de requêtes persistant pour `https://my.domain` vous pouvez utiliser :
+Par exemple, pour accorder l’accès au point d’entrée GraphQL `/content/cq:graphql/wknd/endpoint` et aux points d’entrée des requêtes persistantes pour `https://my.domain`, vous pouvez utiliser :
 
 ```json
 {
