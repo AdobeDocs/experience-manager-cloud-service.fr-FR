@@ -1,29 +1,29 @@
 ---
-title: Notes de mise à jour de la version 2020.9.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Notes de mise à jour as a Cloud Service de la version 2020.9.0."'
+title: Notes de mise à jour de la version 2020.9.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.9.0.
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '724'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.9.0 {#release-notes}
 
-La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service version 2020.9.0.
+La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service version 2020.9.0.
 
 ## Date de publication {#release-date}
 
-La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.9.0 est le 24 septembre 2020.
+La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.9.0 est le 24 septembre 2020.
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
 * Le SDK JavaScript de l’éditeur d’application sur une seule page (SPA) [est désormais en source libre.](/help/implementing/developing/hybrid/reference-materials.md)
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
@@ -32,7 +32,7 @@ La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service ve
 * Améliorations dans [!DNL Dynamic Media]
 
    * Publication sélective : il est désormais possible pour une équipe marketing d’accéder à des images de recadrage intelligent [!DNL Dynamic Media] et à des rendus dynamiques synchronisés avec [!DNL Dynamic Media] afin de pouvoir créer des supports promotionnels, le tout sans avoir à publier ces ressources sur [!DNL Dynamic Media] pour une diffusion globale. La publication [!DNL Experience Manager] et [!DNL Dynamic Media] est découplée et peut se produire séparément à cette fin. Voir [Publication sélective](/help/assets/dynamic-media/selective-publishing.md).
-   * Les administrateurs peuvent désormais réinitialiser le mot de passe de [!DNL Dynamic Media] Cloud Service reçu lors de l’approvisionnement. La réinitialisation peut être effectuée dans l’interface utilisateur de [!DNL Experience Manager], sans qu’il soit nécessaire d’utiliser l’application de bureau [!DNL Dynamic Media Classic].
+   * Les administrateurs peuvent désormais réinitialiser le mot de passe de [!DNL Dynamic Media] Cloud Service reçu lors de l’approvisionnement. La réinitialisation peut être effectuée dans l’interface utilisateur de [!DNL Experience Manager], sans qu’il soit nécessaire d’utiliser l’application de bureau [!DNL Dynamic Media Classic].
 
 * Pour en savoir plus sur les améliorations suivantes, voir [Nouveautés de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr).
 
@@ -46,7 +46,7 @@ La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service ve
 TBD: list of Assets aaCS bugs that are fixed.
 -->
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nouveautés {#what-is-new-commerce}
 
@@ -120,6 +120,6 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour des
 
    Pour plus d’informations, voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
 
-* L’utilitaire Repository Modernizer peut être utilisé pour restructurer des modules de projet existants en modules compatibles avec la structure de projet définie pour AEM as a Cloud Service.
+* L’utilitaire Repository Modernizer peut être utilisé pour restructurer des modules de projet existants en modules compatibles avec la structure de projet définie pour AEM as a Cloud Service.
 
    Reportez-vous à [Ressource Git : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus de détails.
