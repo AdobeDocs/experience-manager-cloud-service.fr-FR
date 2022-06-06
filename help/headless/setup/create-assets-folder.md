@@ -1,19 +1,19 @@
 ---
-title: Création d’un dossier de ressources - Configuration sans affichage
+title: Création d’un dossier de ressources - Configuration découplée
 description: Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
 source-git-commit: 65c20293f2b5481d9c7fdd050af4bee5f64a33e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Création d’un dossier de ressources - Configuration sans affichage {#creating-an-assets-folder}
+# Création d’un dossier de ressources - Configuration découplée {#creating-an-assets-folder}
 
 Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé. Ces fragments sont ensuite stockés dans des dossiers de ressources.
 
-##  Qu’est-ce qu’un dossier de ressources ? {#what-is-an-assets-folder}
+##  Qu’est-ce qu’un dossier de ressources ? {#what-is-an-assets-folder}
 
 [Maintenant que vous avez créé des modèles de fragments de contenu](create-content-model.md) qui définissent la structure souhaitée pour vos futurs fragments de contenu, vous êtes probablement enthousiaste à l’idée d’en créer.
 
@@ -34,7 +34,7 @@ Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pou
       * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](../assets/assets-folder-create.png)
-1. Sélectionnez le dossier que vous venez de créer en survolant et en appuyant sur la coche. Sélectionnez **Propriétés** de la barre d’outils (ou utilisez l’option `p` [raccourci clavier.](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))
+1. Sélectionnez le dossier que vous venez de créer en survolant et en appuyant sur la coche. Puis sélectionnez **Propriétés** dans la barre d’outils (ou utilisez le `p` [raccourci clavier.](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))
 1. Dans la fenêtre **Propriétés**, sélectionnez l’onglet **Cloud Services**.
 1. Pour la **configuration du cloud**, sélectionnez la[ configuration que vous avez créée précédemment.](create-configuration.md)
 
