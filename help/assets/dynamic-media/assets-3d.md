@@ -9,9 +9,9 @@ feature: 3D Assets
 role: User
 exl-id: 82084ba7-1302-4cbd-8626-d77b3aaa4ed1
 source-git-commit: 347da5edf4c8ad2ae72284f4e1a4003493596194
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2260'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Voir aussi [Formats 3D pris en charge par Experience Manager Assets](/help/asset
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
 | USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion uniquement ; aucun affichage ni interaction n’est disponible.* USDZ est un format 3D propriétaire qui peut être visualisé en mode natif à l’aide de Safari ou iOS. |
 
-Le composant 3D Media WCM et l’aperçu 3D sur la page Détails d’une ressource ne sont pas compatibles avec la dernière version de Chrome (9.x). Pour utiliser des ressources 3D, utilisez plutôt Firefox ou Safari ou une version antérieure de Chrome (96.x).
+Le composant 3D Media WCM et l’aperçu 3D sur la page Détails d’une ressource ne sont pas compatibles avec la dernière version de Chrome (97.x). Pour utiliser des ressources 3D, utilisez plutôt Firefox ou Safari ou une version antérieure de Chrome (96.x).
 
 ## Démarrage rapide : ressources 3D dans Dynamic Media {#quick-start-three-d}
 
@@ -50,7 +50,7 @@ La description du workflow étape par étape qui suit est conçue pour vous aide
 
 Avant d’utiliser ces ressources 3D dans Dynamic Media, vérifiez que l’administrateur [!DNL Experience Manager] a activé et configuré les services cloud Dynamic Media.
 
-Voir [Configuration des Cloud Services Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
+Voir [Configuration des Cloud Services Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 
 1. **Chargement de ressources 3D**
 
@@ -186,7 +186,7 @@ Dynamic Media contient un composant Média 3D Dynamic Media que vous pouvez util
 
 Si vous utilisez [!DNL Experience Manager] comme système de gestion de contenu web, vous pouvez ajouter des ressources 3D à vos pages web au moyen du composant Média 3D.
 
-Voir aussi [Ajouter des ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Voir aussi [Ajout de ressources Dynamic Media à des pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 1. Ouvrez [!DNL Experience Manager Sites] et sélectionnez la page web à laquelle vous souhaitez ajouter le composant Média 3D Dynamic Media.
 1. Pour ouvrir la page dans l’éditeur de page, sélectionnez l’icône **[!UICONTROL Modifier]** (crayon). Assurez-vous que le mode d’**[!UICONTROL édition]** est sélectionné près de l’angle supérieur droit de la page.
@@ -233,7 +233,7 @@ Voir [Ajouter le composant Média 3D à une page web](#adding-the-three-d-media-
 
 >[!NOTE]
 >
->Lorsqu’une page web est en mode [!DNL Experience Manager Sites]**[!UICONTROL Édition]**, le composant Média 3D affiche la ressource 3D, mais aucune interaction avec elle n’est possible. Pour rendre la ressource interactive, vous pouvez utiliser la fonction **[!UICONTROL Aperçu]**. Vous pouvez ainsi afficher la page web dans l’éditeur de page avec un accès complet aux fonctionnalités du composant Média 3D.
+>Lorsqu’une page web est en mode [!DNL Experience Manager Sites] **[!UICONTROL Édition]**, le composant Média 3D affiche la ressource 3D, mais aucune interaction avec elle n’est possible. Pour rendre la ressource interactive, vous pouvez utiliser la fonction **[!UICONTROL Aperçu]**. Vous pouvez ainsi afficher la page web dans l’éditeur de page avec un accès complet aux fonctionnalités du composant Média 3D.
 
 ## Publication de ressources 3D Dynamic Media statiques {#publishing-three-d-assets}
 
