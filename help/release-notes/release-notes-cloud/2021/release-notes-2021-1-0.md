@@ -1,25 +1,25 @@
 ---
-title: Notes de mise à jour de la version 2021.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Notes de mise à jour as a Cloud Service de la version 2021.1.0."'
+title: Notes de mise à jour de la version 2021.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.1.0.
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '863'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
-# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service.
 
 ## Date de publication {#release-date}
 
-La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.1.0 est le 3 février 2021.
+La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.1.0 est le 3 février 2021.
 La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 * **[API HTTP de fragment de contenu](/help/assets/content-fragments/assets-api-content-fragments.md)** : ajoutez la possibilité d’ajouter ou de mettre à jour et de supprimer des variations de fragments de contenu à l’aide de l’API HTTP.
 
@@ -46,7 +46,7 @@ La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 * Le format de fichier MXF est désormais pris en charge. Voir [Formats de fichiers pris en charge](/help/assets/file-format-support.md#video-formats).
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nouveautés {#what-is-new-commerce}
 
@@ -60,13 +60,13 @@ La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 ### Date de publication {#release-date-cm}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 est le 14 janvier 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 est le 14 janvier 2021.
 
 ### Correctifs {#bug-fixes-cloud-manager}
 
-* L’instance de production de ressources peut occasionnellement afficher le statut de Brand Portal sur la page de détails **Environnements** comme étant *En attente* sans permettre à l’utilisateur d’effectuer une action.
+* L’instance de production de ressources peut occasionnellement afficher le statut de Brand Portal sur la page de détails **Environnements** comme étant *En attente* sans permettre à l’utilisateur d’effectuer une action.
 
-* Lors d’une réactivation après mise en veille dans Cloud Manager, un message d’échec s’affichait parfois, même lorsque la réactivation était correctement lancée.
+* Lors d’une réactivation après mise en veille dans Cloud Manager, un message d’échec s’affichait parfois, même lorsque la réactivation était correctement lancée.
 
 * Les rares cas d’échec rencontrés lors de la création ou de la suppression d’environnements ont été résolus.
 
@@ -84,15 +84,15 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 es
 
 * Plusieurs correctifs de bogues ont été apportés aux outils Dispatcher Converter et Repository Modernizer d’AEM. Reportez-vous à [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) et [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
-## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
+## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Appels d’API authentifiés de serveur à serveur : générez les jetons d’accès appropriés pour effectuer des appels d’API authentifiés de serveur à serveur entre vos applications externes et les environnements AEM as a Cloud Service. Pour en savoir plus, accédez à la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultez le [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication).
+* Appels d’API authentifiés de serveur à serveur : générez les jetons d’accès appropriés pour effectuer des appels d’API authentifiés de serveur à serveur entre vos applications externes et les environnements AEM as a Cloud Service. Pour en savoir plus, accédez à la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) ou consultez le [tutoriel](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication).
 
 ### Analyseurs de build de SDK {#sdk-build-analyzers}
 
-Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des problèmes dans un projet Maven, y compris les dépendances manquantes. Il permet aux développeurs d’identifier des problèmes au cours du développement local, bien avant leur déploiement dans les environnements cloud avec Cloud Manager.
+Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des problèmes dans un projet Maven, y compris les dépendances manquantes. Il permet aux développeurs d’identifier des problèmes au cours du développement local, bien avant leur déploiement dans les environnements cloud avec Cloud Manager.
 
 Deux nouveaux analyseurs ont été ajoutés pour cette version :
 
@@ -107,7 +107,7 @@ Pour plus d’informations, voir la documentation [ici](https://experienceleague
 
 La date de publication de l’outil de transfert de contenu v1.2.2 est le 1er février 2021.
 
-### Nouveautés de [!DNL Content Transfer Tool] {#what-is-new-ctt}
+### Nouveautés de [!DNL Content Transfer Tool]  {#what-is-new-ctt}
 
 * Fonctionnalité et interface utilisateur nouvelles ajoutées à l’outil de transfert de contenu – Outil de mappage des utilisateurs. Cette fonctionnalité mappe automatiquement les utilisateurs et les groupes existants avec leur identifiant IMS (Identity Management System) Adobe au cours de l’activité de migration de contenu. Pour plus d’informations, consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr).
 * L’outil de transfert de contenu assure désormais la migration de tous les groupes et utilisateurs référencés dans le jeu de migration, y compris les enfants.
