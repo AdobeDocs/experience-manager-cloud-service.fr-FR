@@ -3,9 +3,9 @@ title: Gestion de vos sites de démonstration
 description: Découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '947'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,17 +15,17 @@ Découvrez les outils disponibles pour vous aider à gérer vos sites de démons
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours de module complémentaire de démonstration de référence d’AEM, [Créer un site,](create-site.md) vous avez créé un nouveau site de démonstration basé sur les modèles du module complémentaire de démonstration de référence. Vous devez maintenant :
+Dans le document précédent du parcours du module complémentaire des démonstrations de référence d’AEM, [Créer un site](create-site.md), vous avez créé un site de démonstration basé sur les modèles du module complémentaire de démonstration de référence. Vous devez maintenant :
 
 * Découvrir comment accéder à l’environnement de création AEM.
 * Savoir comment créer un site à partir d’un modèle.
 * Découvrir les principes de base de la navigation dans la structure du site et de la modification d’une page.
 
-Si vous avez également [activé AEM Screens pour votre site de démonstration,](screens.md) vous devez également :
+Si vous avez également [activé AEM Screens pour votre site de démonstration,](screens.md) vous devez également :
 
 * Connaître les principes de base d’AEM Screens.
-* Découvrez le contenu de démonstration de We.Cafe.
-* Découvrez comment configurer AEM Screens pour We.Cafe.
+* Comprendre le contenu de la démonstration de We.Cafe.
+* Découvrir comment configurer AEM Screens pour We.Cafe.
 
 Maintenant que vous avez votre propre site de démonstration à explorer, cet article décrit les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 
