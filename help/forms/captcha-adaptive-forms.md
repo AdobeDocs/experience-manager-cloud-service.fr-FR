@@ -11,9 +11,9 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1415'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Pour implémenter le service reCAPTCHA dans [!DNL AEM Forms] :
 
 1. Configurez le service cloud pour reCAPTCHA.
 
-   1. Sur votre instance de création de Experience Manager, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
+   1. Sur votre instance d’auteur Experience Manager, accédez à ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
    1. Appuyez sur **[!UICONTROL reCAPTCHA]**. La page Configurations s’ouvre. Sélectionnez le conteneur de configurations créé à l’étape précédente et appuyez sur **[!UICONTROL Créer]**.
    1. Indiquez le nom, la clé de site et la clé secrète pour le service reCAPTCHA, puis appuyez sur **[!UICONTROL Créer]** pour créer la configuration du service cloud.
    1. Dans cette boîte de dialogue, spécifiez le site et les clés de site et secrète obtenues à l’étape 1. Appuyez sur **[!UICONTROL Enregistrer les paramètres]** puis sur **[!UICONTROL OK]** pour terminer la configuration.
@@ -86,13 +86,13 @@ Pour utiliser CAPTCHA dans les formulaires adaptatifs :
 1. Sélectionnez le composant Captcha que vous avez ajouté et appuyez sur ![cmppr](assets/configure-icon.svg) pour modifier ses propriétés.
 1. Indiquez un titre pour le widget CAPTCHA. La valeur par défaut est **[!UICONTROL Captcha]**. Sélectionnez **[!UICONTROL Masquer le titre]** si vous ne voulez pas que le titre apparaisse.
 1. Dans le menu déroulant **[!UICONTROL Service Captcha]**, sélectionnez **[!UICONTROL reCaptcha]** pour activer le service reCAPTCHA si vous l’avez configuré comme décrit dans [Service ReCAPTCHA de Google](#google-recaptcha). Sélectionnez une configuration dans la liste déroulante Paramètres.
-1. Sélectionnez le type : **[!UICONTROL Normal]** ou **[!UICONTROL Compact]** pour le widget reCAPTCHA. Vous pouvez également sélectionner la variable **[!UICONTROL Invisible]** option de ne montrer le défi CAPTCHA que dans le cas d&#39;une activité suspecte. Le badge protégé par reCAPTCHA, affiché ci-dessous, s’affiche sur les formulaires protégés.
+1. Sélectionnez le type **[!UICONTROL Normal]** ou **[!UICONTROL Compact]** pour le widget reCAPTCHA. Vous pouvez également sélectionner l’option **[!UICONTROL Invisible]** pour ne montrer le test CAPTCHA que dans le cas d’une activité suspecte. Le badge protégé par reCAPTCHA, affiché ci-dessous, s’affiche sur les formulaires protégés.
 
    ![Google traité par le badge reCAPTCHA](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >Ne pas sélectionner **[!UICONTROL Par défaut]** dans la liste déroulante Service Captcha , car le service CAPTCHA par défaut du Experience Manager est obsolète.
+   >Ne sélectionnez pas **[!UICONTROL Par défaut]** dans le menu déroulant Service Captcha puisque le service par défaut Experience Manager CAPTCHA est obsolète.
 
 1. Enregistrez les propriétés.
 
