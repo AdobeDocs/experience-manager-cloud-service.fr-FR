@@ -3,9 +3,9 @@ title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Une fois configuré pour un composant donné, le cache commence à stocker les r
 
 Lors de la configuration de la mise en cache des composants, le nom du cache doit correspondre au nom des composants **proxy** que vous définissez dans votre projet.
 
-Avant d’envoyer une requête GraphQL, le client vérifie si cette requête **exacte** est déjà mise en cache et renvoie éventuellement la réponse mise en cache. Pour qu’il y ait une correspondance, la requête GraphQL DOIT correspondre exactement : en d’autres termes, la requête, le nom de l’opération (le cas échéant) et les variables (le cas échéant) DOIVENT tous être identiques à la requête mise en cache, et tous les en-têtes HTTP personnalisés susceptibles d’être définis DOIVENT également être identiques. Par exemple, Adobe Commerce `Store` header DOIT correspondre.
+Avant d’envoyer une requête GraphQL, le client vérifie si cette requête **exacte** est déjà mise en cache et renvoie éventuellement la réponse mise en cache. Pour qu’il y ait une correspondance, la requête GraphQL DOIT correspondre exactement : en d’autres termes, la requête, le nom de l’opération (le cas échéant) et les variables (le cas échéant) DOIVENT tous être identiques à la requête mise en cache, et tous les en-têtes HTTP personnalisés susceptibles d’être définis DOIVENT également être identiques. Par exemple, l’en-tête `Store` Adobe Commerce DOIT correspondre.
 
 ### Exemples {#examples}
 
@@ -49,7 +49,7 @@ La mise en cache d’autres composants doit être définie projet par projet, g�
 
 La mise en cache de pages ou de fragments AEM dans le [Dispatcher AEM](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) constitue une bonne pratique pour un projet AEM. En règle générale, elle repose sur des techniques d’invalidation qui garantissent qu’un contenu modifié dans AEM est correctement mis à jour dans le Dispatcher. Il s’agit d’une fonctionnalité essentielle de la stratégie de mise en cache du Dispatcher AEM.
 
-Outre le CIF de contenu géré par AEM pur, une page peut généralement afficher des données commerciales récupérées dynamiquement à partir d’Adobe Commerce via GraphQL. Bien que la structure de la page elle-même puisse ne jamais changer, le contenu commercial peut changer, par exemple, si certaines données de produit (nom, prix, etc.) modifications dans Adobe Commerce.
+Outre le CIF du contenu géré par AEM pur, une page peut généralement afficher des données commerciales récupérées dynamiquement à partir d’Adobe Commerce via GraphQL. Bien que la structure de la page elle-même puisse ne jamais changer, le contenu commercial peut changer, par exemple si certaines données relatives au produit (nom, prix, etc.) changent dans Adobe Commerce.
 
 Pour que vous soyez certain que les pages CIF peuvent être mises en cache pendant une durée limitée dans le Dispatcher AEM, nous vous recommandons donc d’utiliser l’[invalidation de cache basée sur la durée](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-time-based-cache-invalidation-enablettl) (également appelée mise en cache basée sur TTL) lors de la mise en cache de pages CIF dans le Dispatcher AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
 
@@ -63,4 +63,4 @@ Avec la mise en cache TTL, un développeur définit généralement une ou plusie
 
 - [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuration de la mise en cache GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)
