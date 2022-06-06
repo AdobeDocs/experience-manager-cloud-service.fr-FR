@@ -4,7 +4,7 @@ description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service 
 feature: Release Information
 exl-id: f826e0c6-3b1d-44f5-99a2-f792f5df3a55
 source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '447'
 ht-degree: 100%
 
