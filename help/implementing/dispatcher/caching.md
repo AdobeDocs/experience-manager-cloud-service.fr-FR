@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 58999e2aec2f9decaa55554c9488967b70701522
+source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
 workflow-type: tm+mt
 source-wordcount: '2183'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
@@ -206,7 +206,7 @@ En général, il n’est pas nécessaire d’invalider le cache du Dispatcher. V
 Comme les versions précédentes d’AEM, la publication ou l’annulation de publication des pages effacera le contenu du cache du Dispatcher. Si un problème de mise en cache est suspecté, les clients doivent republier les pages en question et s’assurer qu’un hôte virtuel correspond à ServerAlias localhost, obligatoire pour l’invalidation du cache du Dispatcher.
 
 
-Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’une ressource de l’auteur, elle utilise l’agent de vidage pour invalider les chemins d’accès appropriés sur son Dispatcher. Le chemin d’accès mis à jour est supprimé du cache du Dispatcher, ainsi que de ses parents, jusqu’à un niveau (que vous pouvez configurer à l’aide de [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#invalidating-files-by-folder-level)).
+Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’une ressource de l’auteur, elle utilise l’agent de vidage pour invalider les chemins d’accès appropriés sur son Dispatcher. Le chemin d’accès mis à jour est supprimé du cache du Dispatcher, ainsi que de ses parents, jusqu’à un niveau (vous pouvez le configurer avec l’événement [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#invalidating-files-by-folder-level)).
 
 ### Invalidation explicite du cache du Dispatcher {#explicit-invalidation}
 
