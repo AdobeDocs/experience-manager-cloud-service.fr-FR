@@ -1,17 +1,17 @@
 ---
-title: Considérations sur les problèmes connus et les bonnes pratiques
-description: Bonnes pratiques en matière de communications, problèmes connus et limites
+title: Considérations, problèmes connus et bonnes pratiques
+description: Bonnes pratiques, problèmes connus et limites en matière de communication
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1707'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Considérations sur les problèmes connus et les bonnes pratiques {#best-practices-known-issues-and-limitations}
+# Considérations, problèmes connus et bonnes pratiques {#best-practices-known-issues-and-limitations}
 
-Avant de commencer à utiliser les API de communication, passez en revue les points suivants, les problèmes connus et les questions fréquentes :
+Avant de commencer à utiliser les API de communication, passez en revue les considérations, les problèmes connus et les questions fréquentes suivantes :
 
 ## Considérations  {#considerations-for-communications-apis}
 
@@ -60,18 +60,18 @@ Pour fusionner les données dans ce design de formulaire, créez une source de d
 
 Pour un accès complet aux fonctionnalités de rendu des API Communications, il est recommandé d’utiliser un fichier XDP comme entrée. Il est parfois possible d’utiliser un seul fichier PDF. Toutefois, l’utilisation d’un fichier PDF en entrée présente les restrictions suivantes :
 
-Un document PDF qui ne contient pas de flux XFA ne peut pas être rendu au format PostScript, PCL ou ZPL. Les API Communications peuvent générer des documents PDF avec des flux XFA (c’est-à-dire des formulaires créés dans Designer) au format laser et d’étiquettes. Si le document PDF est signé, certifié ou contient des droits d’utilisation (appliqués à l’aide du service AEM Forms Reader Extensions), il ne peut pas être rendu dans ces formats d’impression.
+Un document PDF qui ne contient pas de flux XFA ne peut pas être rendu au format PostScript, PCL ou ZPL. Les API Communications peuvent générer des documents PDF avec des flux XFA (c’est-à-dire des formulaires créés dans Designer) au format laser et d’étiquettes. Si le document PDF est signé, certifié ou contient des droits d’utilisation (appliqués à l’aide du service AEM Forms Reader Extensions), il ne peut pas être rendu dans ces formats d’impression.
 
 
 ### Zones imprimables {#printable-areas}
 
-La marge non imprimable de 0,25 pouces par défaut n’est pas exacte pour les imprimantes d’étiquettes et varie d’une imprimante à l’autre. Il est toutefois recommandé de conserver la marge de 0,25 pouces ou de la réduire. Il est toutefois recommandé de ne pas augmenter la marge non imprimable. Dans le cas contraire, les informations de la zone imprimable ne s’impriment pas correctement.
+La marge non imprimable de 0,25 pouces par défaut n’est pas exacte pour les imprimantes d’étiquettes et varie d’une imprimante à l’autre. Il est toutefois recommandé de conserver la marge de 0,25 pouces ou de la réduire. Il est toutefois recommandé de ne pas augmenter la marge non imprimable. Dans le cas contraire, les informations de la zone imprimable ne s’impriment pas correctement.
 
 Assurez-vous toujours d’utiliser le fichier XDC approprié pour l’imprimante. Par exemple, évitez de choisir un fichier XDC pour une imprimante 300 dpi et d’envoyer le document vers une imprimante 200 dpi.
 
-### Scripts pour les formulaires XFA (XDP/PDF uniquement) {#scripts}
+### Scripts  pour les formulaires XFA (XDP/PDF) uniquement {#scripts}
 
-Un design de formulaire utilisé avec les API Communications peut contenir des scripts qui s’exécutent sur le serveur. Assurez-vous qu’un design de formulaire ne contient pas de scripts exécutés sur le client. Pour plus d’informations sur la création de scripts de conception de formulaire, voir [Aide de Designer](use-forms-designer.md).
+Un design de formulaire utilisé avec les API Communications peut contenir des scripts qui s’exécutent sur le serveur. Assurez-vous qu’un design de formulaire ne contient pas de scripts exécutés sur le client. Pour plus d’informations sur la création de scripts de design de formulaire, voir l’[aide de Designer](use-forms-designer.md).
 
 <!-- #### Working with Fonts
  Document Considerations for Working with Fonts>> -->
@@ -118,7 +118,7 @@ Un profil de périphérique (fichier XDC) est un fichier de description d’impr
 
 * dpl600.xdc
 
-Vous pouvez utiliser les fichiers XDC fournis pour générer des documents d’impression ou les modifier en fonction de vos besoins.
+Vous pouvez utiliser les fichiers XDC fournis pour générer des documents d’impression ou les modifier en fonction de vos besoins.
 <!-- It is not necessary to modify these files to create documents. However, you can modify them to meet your business requirements. -->
 
 Ces fichiers sont des fichiers XDC de référence qui prennent en charge les fonctionnalités d’imprimantes spécifiques, telles que les polices propres à l’imprimante, les bacs d’alimentation papier et les agrafeuses. L’objectif de cette référence est de vous aider à comprendre comment configurer vos propres imprimantes à l’aide de profils d’appareil. Les références sont également un point de départ pour des imprimantes similaires dans la même gamme de produits.
@@ -159,13 +159,13 @@ Le tableau suivant indique les options XCI.
 
 ## Problèmes connus
 
-* Vous ne pouvez utiliser un type de rendu spécifique (PDF, IMPRESSION) qu’une seule fois dans la liste des options d’impression. Par exemple, vous ne pouvez pas avoir deux options d’IMPRESSION spécifiant chacune un type de rendu PCL.
+* Vous ne pouvez utiliser un type de rendu spécifique (PDF, IMPRESSION) qu’une seule fois dans la liste des options d’impression. Par exemple, vous ne pouvez pas définir deux options IMPRESSION spécifiant chacune un type de rendu PCL.
 
 * Pour une configuration de lot, une seule instance de combinaison de valeurs OutputType(PDF, PRINT) et RenderType(PostScript, PCL, IPL, ZPL, etc.) est autorisée.
 
-* Pour les API asynchrones (traitement par lot), le niveau d’enregistrement par défaut est défini sur 2. Vous pouvez utiliser une XCI personnalisée pour définir le niveau d’enregistrement sur 1.
+* Pour les API asynchrones (traitement par lot), le niveau d’enregistrement par défaut est défini sur 2. Vous pouvez utiliser un fichier XCI personnalisé pour définir le niveau d’enregistrement sur 1.
 
-* Lorsque la XCI par défaut est configurée, elle inclut le chemin d’accès jusqu’au rendu d’origine. Par exemple, `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
+* Lorsque le fichier XCI par défaut est configuré, il inclut le chemin d’accès jusqu’au rendu d’origine. Par exemple, `/content/dam/formsanddocuments/default.xci/jcr:content/renditions/original`
 
 
 
