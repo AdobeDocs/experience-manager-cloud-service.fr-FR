@@ -1,64 +1,64 @@
 ---
-title: Suppression générique de l’index Lucene
-description: Découvrez la suppression prévue des index Lucene génériques et comment vous pouvez être affecté.
+title: Suppression des index Lucene génériques
+description: Découvrez la planification de la suppression des index Lucene génériques et en quoi elle peut vous affecter.
 exl-id: 3b966d4f-6897-406d-ad6e-cd5cda020076
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1349'
-ht-degree: 5%
+ht-degree: 100%
 
 ---
 
-# Suppression générique de l’index Lucene {#generic-lucene-index-removal}
+# Suppression des index Lucene génériques {#generic-lucene-index-removal}
 
-Adobe a l’intention de supprimer l’index &quot;Lucene générique&quot; (`/oak:index/lucene-*`) depuis Adobe Experience Manager as a Cloud Service. Cet index est obsolète depuis AEM 6.5. Dans ce document, l’impact de cette décision est décrit, ainsi que des descriptions détaillées sur la manière d’examiner si une instance AEM est affectée. Il contient également des moyens de modifier les requêtes afin qu’elles continuent à fonctionner sans l’index Lucene générique.
+Adobe prévoit de supprimer l’index « Lucene générique » (`/oak:index/lucene-*`) dʼAdobe Experience Manager as a Cloud Service. Cet index est obsolète depuis AEM 6.5. Cet document décrit l’impact de cette décision et fournit des descriptions détaillées sur la manière de déterminer si une instance AEM est affectée. Elle contient également des moyens de modifier les requêtes afin qu’elles continuent à fonctionner sans l’index Lucene générique.
 
 ## Contexte {#background}
 
-Dans AEM, les requêtes en texte intégral sont celles qui utilisent les fonctions suivantes :
+Dans AEM, les requêtes en texte intégral sont celles qui utilisent les fonctions suivantes :
 
 * `jcr:contains()` dans JCR XPATH
 * `CONTAINS` dans JCR-SQL2
 
-Ces requêtes ne peuvent pas renvoyer de résultats sans utiliser dʼindex. Contrairement à une requête contenant uniquement des restrictions de chemin ou de propriété, une requête contenant une restriction de texte intégral pour laquelle aucun index n’est trouvé (et donc une traversée est effectuée) ne renvoie toujours aucun résultat.
+Ces requêtes ne peuvent pas renvoyer de résultats sans utiliser dʼindex. Contrairement à une requête ne contenant que des restrictions de chemin ou de propriété, une requête contenant une restriction de texte intégral pour laquelle aucun index ne peut être trouvé (et donc une traversée est effectuée) ne retournera jamais aucun résultat.
 
-Index Lucene générique (`/oak:index/lucene-*`) existe depuis AEM 6.0 / Oak 1.0 afin de fournir une recherche de texte intégral dans la plus grande partie de la hiérarchie du référentiel, bien que certains chemins, tels que `/jcr:system` et `/var` ont toujours été exclues. Cependant, cet index a été largement remplacé par des index sur des types de noeuds plus spécifiques (par exemple, `damAssetLucene-*` pour le `dam:Asset` type de noeud), qui prend en charge les recherches de texte intégral et de propriétés.
+L’index Lucene générique (`/oak:index/lucene-*`) existe depuis AEM 6.0 / Oak 1.0 afin de fournir une recherche de texte intégral dans la plus grande partie de la hiérarchie du référentiel, bien que certains chemins, tels que `/jcr:system` et `/var`, aient toujours été exclus. Cependant, cet index a été largement remplacé par des index sur des types de nœuds plus spécifiques (par exemple, `damAssetLucene-*` pour le type de nœud `dam:Asset`), qui prend en charge les recherches de texte intégral et de propriétés.
 
-Dans AEM 6.5, l’index Lucene générique a été marqué comme obsolète, indiquant qu’il serait supprimé dans les versions ultérieures. Depuis, un avertissement a été consigné lorsque l’index a été utilisé, comme illustré par le fragment de code de journal suivant :
+Dans AEM 6.5, l’index Lucene générique a été marqué comme obsolète, indiquant qu’il serait supprimé dans les versions ultérieures. Depuis, un avertissement est consigné lorsque l’index est utilisé, comme illustré par le fragment de code de journal suivant :
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'search term') and isdescendantnode(a, '/content/mysite') /* xpath: /jcr:root/content/mysite//*[jcr:contains(.,"search term")] */ fullText="search" "term", path=/content/mysite//*). Please change the query or the index definitions.
 ```
 
-Dans les versions d’AEM récentes, l’index générique Lucene a été utilisé pour prendre en charge un très petit nombre de fonctionnalités. Ces dernières subissent actuellement des refontes afin dʼutiliser d’autres index ou sont modifiées afin de supprimer leur dépendance à cet index.
+Dans les versions récentes dʼAEM, lʼemploi de lʼindex Lucene générique sʼest limité à un nombre très restreint de fonctionnalités. Ces dernières subissent actuellement des refontes afin dʼutiliser d’autres index ou sont modifiées afin de supprimer leur dépendance à cet index.
 
-Par exemple, les requêtes de recherche de référence, comme dans l’exemple suivant, doivent maintenant utiliser l’index à l’adresse `/oak:index/pathreference`, qui indexe uniquement `String` valeurs de propriété correspondant à une expression régulière qui recherche des chemins JCR.
+Par exemple, les requêtes de recherche de référence, comme dans l’exemple suivant, doivent maintenant utiliser l’index à l’adresse `/oak:index/pathreference`, qui indexe uniquement les valeurs de propriété `String` correspondant à une expression régulière qui recherche des chemins JCR.
 
 ```text
 //*[jcr:contains(., '"/content/dam/mysite"')]
 ```
 
-Afin de prendre en charge des volumes de données client plus importants, Adobe ne créera plus l’index Lucene générique sur de nouveaux environnements as a Cloud Service AEM. De plus, Adobe commencera à supprimer l’index des référentiels existants. [Voir la chronologie](#timeline) à la fin de ce document pour plus de détails.
+Afin de prendre en charge des volumes de données client plus importants, Adobe ne créera plus l’index Lucene générique sur de nouveaux environnements AEM as a Cloud Service. De plus, Adobe commencera à supprimer l’index des référentiels existants. [Consultez la chronologie](#timeline) à la fin de ce document pour plus de détails.
 
-Adobe a déjà ajusté les paramètres d&#39;index via le `costPerEntry` et `costPerExecution` pour vous assurer que d’autres index tels que `/oak:index/pathreference` sont préférées dans la mesure du possible.
+Adobe a déjà ajusté les coûts de lʼindex via les propriétés « `costPerEntry` » et « `costPerExecution` » afin de garantir que dʼautres index tels que `/oak:index/pathreference` soient utilisés de préférence, dans la mesure du possible.
 
-Les applications client qui utilisent des requêtes qui dépendent toujours de cet index doivent être mises à jour immédiatement afin d’exploiter d’autres index existants, qui peuvent être personnalisés si nécessaire. Vous pouvez également ajouter de nouveaux index personnalisés à l’application cliente. Vous trouverez des instructions complètes sur la gestion des index dans AEM as a Cloud Service dans la section [documentation sur l’indexation.](/help/operations/indexing.md)
+Les applications client qui utilisent des requêtes qui dépendent toujours de cet index doivent être mises à jour immédiatement afin d’exploiter d’autres index existants, qui peuvent être personnalisés si nécessaire. Vous pouvez également ajouter de nouveaux index personnalisés à l’application cliente. Pour obtenir des instructions complètes sur la gestion des index dans AEM as a Cloud Service, consultez la [documentation sur lʼindexation.](/help/operations/indexing.md)
 
-## Êtes-Vous Affectée ? {#are-you-affected}
+## Êtes-vous affecté ? {#are-you-affected}
 
-L’index Lucene générique est actuellement utilisé comme secours si aucun autre index de texte intégral ne peut traiter une requête. En cas dʼutilisation de cet index obsolète, un message comme celui-ci sera enregistré au niveau WARN :
+L’index Lucene générique est actuellement utilisé comme index de « secours » si aucun autre index de recherche en texte intégral ne peut traiter une requête. En cas dʼutilisation de cet index obsolète, un message comme celui-ci sera enregistré au niveau WARN :
 
 ```text
 org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*). Please change the query or the index definitions.
 ```
 
-Dans certains cas, Oak peut tenter d’utiliser un autre index de texte intégral (tel que `/oak:index/pathreference`) pour prendre en charge la requête de texte intégral, mais si la chaîne de requête ne correspond pas à l’expression régulière sur la définition d’index, un message est consigné au niveau WARN et la requête ne renvoie probablement pas de résultats.
+Dans certaines circonstances, Oak peut essayer d’utiliser un autre index de recherche en texte intégral (comme `/oak:index/pathreference`) pour prendre en charge la requête en texte intégral, mais si la chaîne de requête ne correspond pas à l’expression régulière de la définition de l’index, un message est enregistré au niveau WARN et la requête ne retournera probablement pas de résultats.
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Potentially improper use of index /oak:index/pathReference with queryFilterRegex (["']|^)/ to search for value "test"
 ```
 
-Une fois l’index Lucene générique supprimé, un message comme illustré ci-dessous est consigné au niveau de l’avertissement si une requête de texte intégral n’est pas en mesure de localiser une définition d’index appropriée :
+Une fois lʼindex Lucene générique supprimé, un message comme indiqué ci-dessous sera enregistré au niveau WARN si une requête en texte intégral nʼest pas capable de localiser une définition dʼindex appropriée :
 
 ```text
 org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filter Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') /* xpath: //*[jcr:contains(.,"test")] */ fullText="test", path=*); no results will be returned
@@ -68,21 +68,21 @@ org.apache.jackrabbit.oak.query.QueryImpl Fulltext query without index for filte
 >
 >**Action du client requise**
 >
-> Si l’un des messages d’avertissement ci-dessus est enregistré, vous devrez peut-être retravailler la requête pour utiliser un autre index de texte intégral ou fournir un nouvel index pour prendre en charge la requête.
+> Si lʼun des messages d’alerte mentionnés précédemment est enregistré, il se peut que vous deviez retravailler la requête pour utiliser un index de recherche en texte intégral différent, ou fournir un nouvel index pour prendre en charge la requête.
 >
->Vous trouverez des informations détaillées sur les types de dépendances que vous pouvez voir et sur la manière de les traiter dans les sections suivantes.
+>Vous trouverez ci-dessous des informations détaillées sur les types de dépendances que vous pourriez rencontrer et sur la manière de les traiter.
 
-## Dépendances potentielles des index Lucene génériques {#potential-dependencies}
+## Dépendances potentielles de l’index Lucene générique {#potential-dependencies}
 
-Il existe un certain nombre de domaines dans lesquels vos applications et installations d’AEM peuvent dépendre d’index Lucene génériques, à la fois sur les instances de création et de publication.
+Il existe un certain nombre de domaines dans lesquels vos applications et installations AEM peuvent dépendre d’index Lucene génériques, à la fois sur les instances de création et de publication.
 
 ### Instance de publication {#publish-instance}
 
-#### Requêtes d’application personnalisées {#custom-application-queries}
+#### Requêtes d’applications personnalisées {#custom-application-queries}
 
-La source la plus courante de requêtes utilisant l’index Lucene générique sur une instance de publication est les requêtes d’application personnalisées.
+Sur une instance de publication, lʼindex Lucene générique est le plus souvent utilisé par les requêtes dʼapplications personnalisées.
 
-Dans les cas les plus simples, il peut s’agir de requêtes sans type de noeud spécifié, ce qui implique que `nt:base` ou `nt:base` spécifié explicitement, par exemple :
+Dans les cas les plus simples, il peut sʼagir de requêtes pour lesquelles aucun type de nœud nʼest spécifié ce qui implique que ni `nt:base` ni `nt:base` n’est spécifié explicitement, comme par exemple :
 
 ```text
 /jcr:root/content/mysite//*[jcr:contains(., 'search term')]
@@ -93,53 +93,53 @@ Dans les cas les plus simples, il peut s’agir de requêtes sans type de noeud 
 >
 >**Action du client requise**
 >
->Les requêtes mentionnées ci-dessus doivent être modifiées afin d’utiliser un type de noeud approprié, comme décrit dans la section suivante.
+>Les requêtes mentionnées ci-dessus doivent être modifiées afin d’utiliser un type de nœud approprié, comme décrit dans la section suivante.
 
-Par exemple, les requêtes peuvent être modifiées pour renvoyer les résultats correspondant aux pages ou à l’un des agrégats situés sous la propriété `cq:Page node`. La requête pouvait ainsi devenir :
+Par exemple, les requêtes peuvent être modifiées pour renvoyer les résultats correspondant aux pages ou à l’un des agrégats situés sous la propriété `cq:Page node`. La requête pourrait ainsi devenir :
 
 ```text
 /jcr:root/content/mysite//element(*, cq:Page)[jcr:contains(., 'search term')]
 ```
 
-Dans d’autres cas, une requête peut spécifier un type de noeud, mais contenir une restriction de texte intégral qui ne peut pas être gérée par un autre index de texte intégral, tel que :
+Dans dʼautres cas, une requête peut spécifier un type de nœud, mais contenir une restriction de texte intégral qui ne peut pas être traitée par un autre index de recherche en texte intégral, comme par exemple :
 
 ```text
 /jcr:root/content/dam//element(*, dam:Asset)[jcr:contains(jcr:content/metadata/@cq:tags, 'NewsTopics:cateogries/domestic'))]
 ```
 
-Dans ce cas, la requête contient la valeur `dam:Asset` type de noeud, mais contient une restriction de texte intégral sur le `jcr:content/metadata/@cq:tags` .
+Dans ce cas, la requête a le type de nœud `dam:Asset`, mais contient une restriction de texte intégral sur la propriété connexe `jcr:content/metadata/@cq:tags`.
 
-Cette propriété n’est pas marquée comme analysée dans la variable `damAssetLucene` index, qui est l’index de texte intégral le plus souvent utilisé pour les requêtes sur la variable `dam:Asset` type de noeud. Par conséquent, cet index ne peut pas être utilisé pour cette requête.
+Cette propriété n’est pas marquée comme analysée dans l’index `damAssetLucene`, qui est l’index de texte intégral le plus souvent utilisé pour les requêtes sur le type de nœud `dam:Asset`. Par conséquent, cet index ne peut pas être utilisé pour cette requête.
 
-Ainsi, la requête repose sur l’index de texte intégral générique où toutes les propriétés incluses sont marquées comme analysées par la correspondance du caractère générique à l’adresse `/oak:index/lucene-2/indexRules/nt:base/properties/prop`.
+Ainsi, la requête se rabat sur lʼindex de recherche en texte intégral générique où toutes les propriétés incluses sont marquées comme analysées par la correspondance de caractère générique à `/oak:index/lucene-2/indexRules/nt:base/properties/prop`.
 
 >[!IMPORTANT]
 >
 >**Action du client requise**
 >
->Marquage de la variable `jcr:content/metadata/@cq:tags` comme analysé dans une version personnalisée de `damAssetLucene` Cette requête sera traitée par cet index et aucun avertissement ne sera consigné.
+>Le marquage de la propriété `jcr:content/metadata/@cq:tags` comme ayant été analysée dans une version personnalisée de lʼindex `damAssetLucene` fera en sorte que cette requête sera traitée par cet index, et aucune mention WARN ne sera enregistrée.
 
 ### Instance d’auteur {#author-instance}
 
-Outre les requêtes dans les servlets d’application client, les composants OSGi et les scripts de rendu, il peut y avoir plusieurs utilisations spécifiques à l’auteur de l’index Lucene générique.
+Outre les requêtes dans les servlets dʼapplication client, les composants OSGi et les scripts de rendu, il peut y avoir un certain nombre dʼutilisations spécifiques à lʼauteur de lʼindex Lucene générique.
 
-#### Recherche de référence {#reference-search}
+#### Recherche par référence {#reference-search}
 
-Historiquement, l’index Lucene générique a été utilisé pour prendre en charge la recherche de références ou la recherche de contenu qui contient des références à un autre chemin d’accès au contenu. Ces requêtes doivent déjà avoir été mises à jour pour utiliser la nouvelle `/oak:index/pathreference` index.
+Traditionnellement, lʼindex Lucene générique est utilisé pour prendre en charge la recherche par référence ou la recherche de contenu avec des références à un autre chemin dʼaccès de contenu. Ces requêtes devraient déjà avoir été migrées afin dʼutiliser le nouvel index `/oak:index/pathreference`.
 
 #### Recherche du sélecteur de champ de chemin {#picker-search}
 
-AEM comprend un composant de boîte de dialogue personnalisé avec le type de ressource Sling `granite/ui/components/coral/foundation/form/pathfield`, qui fournit un navigateur/sélecteur pour sélectionner un autre chemin d’AEM. Sélecteur de champ de chemin par défaut, utilisé lorsqu’il n’est pas personnalisé `pickerSrc` est définie dans la structure de contenu et affiche une barre de recherche dans la boîte de dialogue contextuelle.
+AEM comprend un composant de boîte de dialogue personnalisé avec le type de ressource Sling `granite/ui/components/coral/foundation/form/pathfield` qui fournit un navigateur (sélecteur) permettant de sélectionner un autre chemin dʼaccès AEM. Le sélecteur de champ de chemin par défaut, qui est utilisé lorsqu’aucune propriété `pickerSrc` personnalisée n’est définie dans la structure du contenu, affiche une barre de recherche dans la boîte de dialogue contextuelle.
 
-Les types de noeuds sur lesquels effectuer une recherche peuvent être spécifiés à l’aide de la propriété `nodeTypes` .
+Les types de nœud sur lesquels porter la recherche peuvent être spécifiés à l’aide de la propriété `nodeTypes`.
 
-À l’heure actuelle, si non `nodeTypes` est présente, la requête de recherche sous-jacente utilisera la propriété `nt:base` type de noeud et est donc susceptible d’utiliser l’index Lucene générique, consignant généralement des messages WARN similaires à ce qui suit.
+À l’heure actuelle, si aucune propriété `nodeTypes` est présente, la requête de recherche sous-jacente utilisera le type de nœud `nt:base` et est donc susceptible d’utiliser l’index Lucene générique, qui consigne généralement des messages WARN similaires à ce qui suit.
 
 ```text
 20.01.2022 18:56:06.412 *WARN* [127.0.0.1 [1642704966377] POST /mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.result.single.html HTTP/1.1] org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex This index is deprecated: /oak:index/lucene-2; it is used for query Filter(query=select [jcr:path], [jcr:score], * from [nt:base] as a where contains(*, 'test') and isdescendantnode(a, '/content') /* xpath: /jcr:root/content//element(*, nt:base)[(jcr:contains(., 'test'))] order by @jcr:score descending */ fullText="test", path=/content//*). Please change the query or the index definitions.
 ```
 
-Avant la suppression de l’index Lucene générique, la variable `pathfield` Le composant est mis à jour afin que la zone de recherche soit masquée pour les composants qui utilisent le sélecteur par défaut, qui ne fournissent pas de `nodeTypes` .
+Avant la suppression de lʼindex Lucene générique, le composant `pathfield` sera mis à jour afin que la zone de recherche soit masquée pour les composants utilisant le sélecteur par défaut et qui ne fournissent pas de propriété `nodeTypes`.
 
 | Sélecteur de champ de chemin avec recherche | Sélecteur de champ de chemin sans recherche |
 |---|---|
@@ -149,25 +149,25 @@ Avant la suppression de l’index Lucene générique, la variable `pathfield` Le
 >
 >**Action du client requise**
 >
->Si le client souhaite conserver la fonctionnalité de recherche dans le sélecteur de champ de chemin d’accès, une `nodeTypes` doit être fournie en répertoriant les types de noeuds sur lesquels ils souhaitent effectuer des requêtes. Ils peuvent être spécifiés sous la forme d’une liste de types de noeuds séparés par des virgules dans une `String` . Si aucune recherche n’est requise, aucune action du client n’est requise.
+>Si le client souhaite conserver la fonctionnalité de recherche dans le sélecteur de champ de chemin, il doit fournir une propriété `nodeTypes` énumérant les types de nœuds sur lesquels il souhaite effectuer des requêtes. Ceux-ci peuvent être spécifiés sous la forme d’une liste de types de nœuds, séparés par des virgules, dans une propriété `String`. Si aucune recherche n’est requise, aucune action nʼest requise de la part du client.
 
 >[!NOTE]
 >
->L’éditeur de modèle de fragment de contenu utilise des champs de chemin spécialisés avec le type de ressource Sling. `dam/cfm/models/editor/components/contentreference`.
-> * Actuellement, ces derniers exécutent des requêtes sans types de noeud spécifiés, ce qui entraîne l’enregistrement d’un AVERTISSEMENT en raison de l’utilisation de l’index Lucene générique.
-> * Les instances de ces composants seront bientôt automatiquement utilisées par défaut pour `cq:Page` et `dam:Asset` types de noeuds sans autre action du client.
-> * Le `nodeTypes` peut être ajoutée pour remplacer ces types de noeuds par défaut.
+>L’éditeur de modèle de fragment de contenu utilise des champs de chemin spécialisés avec le type de ressource Sling `dam/cfm/models/editor/components/contentreference`. 
+> * Actuellement, ils effectuent des requêtes sans spécifier de type de nœuds spécifié, ce qui entraîne l’enregistrement d’un WARN en raison de l’utilisation de l’index Lucene générique.
+> * Les instances de ces composants utiliseront bientôt automatiquement les types de nœuds `cq:Page` et `dam:Asset` par défaut, sans autre intervention du client.
+> * La propriété `nodeTypes` peut être ajoutée pour remplacer ces types de nœuds par défaut.
 
 
-## Chronologie du retrait Lucene générique {#timeline}
+## Chronologie du retrait de l’index Lucene générique {#timeline}
 
 Adobe adoptera une approche en deux phases pour supprimer l’index générique Lucene.
 
-* **Phase 1** (prévu à partir du 31 janvier 2022) : Ne plus créer `/oak:index/lucene-*` sur les nouveaux environnements as a Cloud Service AEM.
-* **Phase 2** (début prévu le 31 mars 2022) : Supprimer `/oak:index/lucene-*` à partir d’environnements AEM as a Cloud Service existants.
+* **Phase 1** (début prévu au 31 janvier 2022) : lʼindex `/oak:index/lucene-*` nʼest plus créé sur les nouveaux environnements AEM as a Cloud Service.
+* **Phase 2** (début prévu au 31 mars 2022) : suppression de l’index `/oak:index/lucene-*` des environnements AEM as a Cloud Service existants.
 
-Adobe va surveiller les messages de log mentionnés ci-dessus et va tenter de contacter les clients qui restent dépendants de l&#39;index générique Lucene.
+Adobe surveillera les messages de journal mentionnés ci-dessus et tentera de contacter les clients qui dépendent toujours de lʼindex Lucene générique.
 
-Dans le cadre d’une atténuation à court terme, Adobe ajoute directement des définitions d’index personnalisées aux systèmes clients afin d’éviter des problèmes de performance ou fonctionnels suite à la suppression de l’index Lucene générique, si nécessaire.
+À court terme, Adobe ajoutera des définitions dʼindex personnalisées directement dans les systèmes des clients. Cela permettra dʼéviter si nécessaire les problèmes de fonctionnement ou de performance liés à la suppression de lʼindex Lucene générique.
 
 Le client recevra alors la définition dʼindex mise à jour et sera invité à lʼinclure dans les versions ultérieures de son application via Cloud Manager.
