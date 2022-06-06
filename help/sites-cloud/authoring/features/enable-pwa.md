@@ -3,9 +3,9 @@ title: Activation des fonctionnalités d’application web progressive
 description: AEM Sites permet à l’auteur du contenu d’activer des fonctionnalités d’application web progressive sur n’importe quel site par le biais d’une configuration simple plutôt que par un codage.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
 source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2004'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -54,7 +54,7 @@ Les composants principaux de la version 2.15.0 et des versions ultérieures pre
 
 >[!NOTE]
 >
->Adobe ne recommande pas d’utiliser les fonctionnalités du PWA sur des composants personnalisés ou des composants qui ne le sont pas [à partir des composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr)
+>Adobe ne recommande pas d’utiliser les fonctionnalités PWA sur les composants personnalisés ou composants non [étendus à partir des composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr)
 <!--
 Your components need to include the [manifest files](https://developer.mozilla.org/en-US/docs/Web/Manifest) and [service worker,](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) which supports the PWA features.
 
@@ -132,7 +132,7 @@ Votre site est maintenant configuré et vous pouvez [l’installer en tant qu’
 
 Maintenant que vous avez [configuré votre site pour prendre en charge le PWA,](#enabling-pwa-for-your-site) vous pouvez l’expérimenter par vous-même.
 
-1. Accédez au site par le biais d’un [navigateur compatible.](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Installable_PWAs#Summary)
+1. Accédez au site par le biais d’un [navigateur compatible.](https://developer.mozilla.org/fr/docs/Web/Progressive_web_apps/Installable_PWAs#summary)
 1. Une nouvelle icône apparaît dans la barre d’adresse du navigateur, indiquant que le site peut être installé en tant qu’application locale.
    * Selon le navigateur, l’icône peut varier et le navigateur peut également afficher une notification (comme une bannière ou une boîte de dialogue) indiquant qu’il est possible de procéder à l’installation en tant qu’application locale.
 1. Installez l’application.
