@@ -9,9 +9,9 @@ role: User,Admin
 mini-toc-levels: 4
 exl-id: 886063d4-71dd-48c8-a342-884ad2c111ca
 source-git-commit: 1932476a2ca8f46c1f73214c15982d7baa6c56ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '727'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ hidefromtoc: yes -->
 
 >[!NOTE]
 >
->Cette fonctionnalité de création d’un compte d’alias de société Dynamic Media se trouve dans le canal de version préliminaire de janvier 2022. Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement. Cette fonctionnalité sera donc disponible à tous dans la version de février 2022.
+>Cette fonctionnalité de création d’un compte d’alias de société Dynamic Media se trouve dans le canal de version préliminaire de janvier 2022. Pour plus d’informations sur la manière d’activer la fonctionnalité dans votre environnement, consultez la [documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#enable-prerelease). Cette fonctionnalité sera donc disponible à tous dans la version de février 2022.
 
 Les URL Dynamic Media et le code incorporé de la visionneuse contiennent le nom du compte de votre société. Ce nom de compte a été créé au moment de la mise en service de Dynamic Media. Il peut y avoir des scénarios où votre entreprise a fait l’objet d’une acquisition ou d’un changement de marque ou où vous souhaitez simplement utiliser un nom plus marquant. Dans ce cas de figure, il n’est pas facile de mettre à jour manuellement le nom de votre compte de société dans toutes les URL et dans le code intégré de la visionneuse prêt à l’emploi. En outre, il est possible que vous impactiez votre référentiel Dynamic Media existant ou que vous impactiez le contenu dynamique. Pour résoudre ce problème, vous pouvez configurer un compte d’alias de société Dynamic Media.
 
