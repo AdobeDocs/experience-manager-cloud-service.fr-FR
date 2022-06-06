@@ -1,13 +1,13 @@
 ---
-title: '''[!DNL Experience Manager Assets] intégration avec [!DNL Adobe Workfront]'''
+title: Intégration [!DNL Experience Manager Assets] avec  [!DNL Adobe Workfront]
 description: Présentation de l’intégration entre [!DNL Assets] et [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: b6e108296d6786166e482cd8bbd20caa36795f44
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '926'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Consultez les sections relatives à la prise en charge de la plateforme et aux [
 >
 >Adobe peut apporter des mises à jour à [!DNL Adobe Workfront] et [!DNL Adobe Experience Manager], lesquelles peuvent rendre ce connecteur inutile. Si cela se produit, les clients peuvent être amenés à abandonner l’utilisation de ce connecteur.
 >
->Voir [Examen de certification de partenaire pour Workfront pour le connecteur amélioré de Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen, [Guide Exam](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>Consultez [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen : [Guide d’examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 ## Comparer les différentes intégrations entre [!DNL Assets] et [!DNL Workfront] {#feature-parity-matrix}
 
