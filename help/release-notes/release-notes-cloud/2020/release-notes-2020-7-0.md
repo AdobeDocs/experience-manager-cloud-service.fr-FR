@@ -1,11 +1,11 @@
 ---
 title: Notes de mise à jour de la version 2020.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Notes de mise à jour as a Cloud Service de la version 2020.7.0."'
+description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.7.0. »
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1038'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 * Les configurations sont désormais stockées dans `/conf` plutôt que `/etc/cloudsettings` dans le référentiel Experience Manager.
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
@@ -37,7 +37,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 * La configuration initiale de [!DNL Dynamic Media] dans [!DNL Experience Manager] as a Cloud Service est améliorée pour être plus robuste. Elle indique désormais aux administrateurs la progression des processus.
 
-* La publication des ressources dans [!DNL Dynamic Media] est simplifiée et rendue plus robuste en en faisant une partie intégrante du processus de traitement global des ressources à l’aide de microservices de ressources et en améliorant le serveur principal de publication par lots.
+* La publication des ressources dans [!DNL Dynamic Media] est simplifiée et rendue plus robuste en faisant une partie intégrante du processus de traitement global des ressources à l’aide de microservices de ressources et en améliorant le serveur principal de publication par lots.
 
 * Les étapes de workflow qui ne sont pas compatibles avec un déploiement de Cloud Service sont désormais signalées par un avertissement dans l’éditeur de [!UICONTROL modèle de workflow]. De plus, lors de l’exécution des workflows existants dans un environnement Cloud Service, les étapes de workflow incompatibles sont ignorées.
 
