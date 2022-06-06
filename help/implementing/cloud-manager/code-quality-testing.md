@@ -3,9 +3,9 @@ title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1147'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -16,21 +16,21 @@ Découvrez comment fonctionne le test de qualité du code des pipelines et comme
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_codequalitytests"
 >title="Test de qualité du code"
->abstract="Le test de qualité du code évalue votre code d’application en fonction d’un ensemble de règles de qualité. Il s’agit de l’objectif Principal d’un pipeline de qualité de code uniquement et qui est exécuté immédiatement après l’étape de création dans tous les pipelines de production et hors production."
+>abstract="Le test de qualité du code évalue le code de votre application en fonction d’un ensemble de règles de qualité. Il s’agit de l’objectif principal d’un pipeline dédié uniquement à la qualité du code. Cette étape est exécutée immédiatement après l’étape de création dans tous les pipelines, aussi bien en production que hors production."
 
 ## Présentation {#introduction}
 
-Le test de qualité du code évalue votre code d’application en fonction d’un ensemble de règles de qualité. Il s’agit de l’objectif Principal d’un pipeline de qualité de code uniquement et qui est exécuté immédiatement après l’étape de création dans tous les pipelines de production et hors production.
+Le test de qualité du code évalue le code de votre application en fonction d’un ensemble de règles de qualité. Il s’agit de l’objectif principal d’un pipeline dédié uniquement à la qualité du code. Cette étape est exécutée immédiatement après l’étape de création dans tous les pipelines, aussi bien en production que hors production.
 
-Reportez-vous au document [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour en savoir plus sur les différents types de pipelines.
+Consultez le document [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour en savoir plus sur les différents types de pipelines.
 
 ## Règles de qualité du code {#understanding-code-quality-rules}
 
-Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cela est mis en oeuvre par une combinaison de SonarQube et d’examen au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles, combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à l’AEM sont créées en fonction des bonnes pratiques d’AEM Engineering et sont appelées [règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md).
+Les tests de qualité du code analysent le code source afin de s’assurer qu’il répond à certains critères de qualité. Cette analyse est implémentée par une combinaison de SonarQube et d’examens au niveau du package de contenu à l’aide d’OakPAL. Il existe plus de 100 règles combinant des règles Java génériques et des règles spécifiques à AEM. Certaines des règles spécifiques à AEM sont créées en fonction des bonnes pratiques de l’équipe d’ingénierie AEM et sont appelées [Règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md).
 
 >[!NOTE]
 >
->Vous pouvez télécharger la liste complète des règles [avec ce lien.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
+>Vous pouvez télécharger la liste complète des règles [via ce lien.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx)
 
 ### Évaluation à trois niveaux {#three-tiered-gate}
 
@@ -40,26 +40,26 @@ Les problèmes identifiés par le test de qualité du code sont affectés à l�
 
 * **Important** - il s’agit des problèmes qui entraînent la mise en pause du pipeline. Un responsable de déploiement, un responsable de projet ou un propriétaire d’entreprise peuvent soit contourner les problèmes, auquel cas le pipeline continue, soit accepter les problèmes, auquel cas le pipeline s’arrête avec un échec.
 
-* **Infos** - Il s’agit de problèmes qui sont fournis uniquement à titre d’information et qui n’ont aucun impact sur l’exécution du pipeline.
+* **Informations** - Il s’agit des problèmes fournis uniquement à titre d’information et qui n’ont aucune incidence sur l’exécution du pipeline
 
 Les résultats de cette étape sont fournis sous forme de **notes**.
 
-Le tableau suivant résume les notes et les seuils d’échec pour chacune des catégories critiques, importantes et d’informations.
+Le tableau suivant résume les notes et les seuils d’échec pour chacune des catégories Critique, Important et Informations.
 
 | Nom | Définition | Catégorie | Seuil d’échec |
 |--- |--- |--- |--- |
-| Note de sécurité | A = Aucune vulnérabilité<br/>B = au moins 1 vulnérabilité mineure<br/>C = au moins 1 vulnérabilité majeure<br/>D = au moins 1 vulnérabilité critique<br/>E = au moins 1 vulnérabilité bloquante | Critique | &lt; B |
-| Note de fiabilité | A = Aucun bug<br/>B = au moins 1 bug mineur <br/>C = au moins 1 bug majeur<br/>D = au moins 1 bug critique<br>E = au moins 1 bug bloquant | Critique | &lt; D |
+| Note de sécurité | A = Aucune vulnérabilité <br/>B = au moins 1 vulnérabilité mineure <br/>C = au moins 1 vulnérabilité majeure <br/>D = au moins 1 vulnérabilité critique <br/>E = au moins 1 vulnérabilité bloquante | Critique | &lt; B |
+| Note de fiabilité | A = Aucun bug <br/>B = au moins 1 bug mineur <br/>C = au moins 1 bug majeur <br/>D = au moins 1 bug critique <br>E = au moins 1 bug bloquant | Critique | &lt; D |
 | Note de maintenabilité | Défini par le coût de remédiation en suspens pour les code smells, comme un pourcentage du temps qui a déjà été consacré à l’application.<br/><ul><li>A = &lt;= 5 %</li><li>B = 6-10 %</li><li>C = 11-20 %</li><li>D = 21-50 %</li><li>E = > 50 %</li></ul> | Important | &lt; A |
 | Couverture | Défini par un mélange de couverture de ligne de test unitaire et de couverture de condition à l’aide de la formule : <br/>`Coverage = (CT + CF + LC)/(2*B + EL)`  <ul><li>`CT` = Conditions qui ont été évaluées comme `true` au moins une fois lors de l’exécution de tests unitaires</li><li>`CF` = Conditions qui ont été évaluées comme `false` au moins une fois lors de l’exécution de tests unitaires</li><li>`LC` = Lignes couvertes = lines_to_cover - uncover_lines</li><li>`B` = nombre total de conditions</li><li>`EL` = nombre total de lignes exécutables (lines_to_cover)</li></ul> | Important | &lt; 50 % |
 | Tests unitaires ignorés | Nombre de tests unitaires ignorés | Infos | > 1 |
 | Problèmes en cours | Types de problèmes généraux – Vulnérabilités, bogues et smells de code | Infos | > 0 |
 | Lignes dupliquées | Défini comme le nombre de lignes impliquées dans les blocs dupliqués. Un bloc de code est considéré comme dupliqué dans les conditions suivantes.<br>Projets non Java :<ul><li>Il doit y avoir au moins 100 jetons successifs et dupliqués.</li><li>Ces jetons doivent être répartis au moins sur : </li><li>30 lignes de code pour COBOL </li><li>20 lignes de code pour ABAP </li><li>10 lignes de code pour d’autres langages</li></ul>Projets Java :<ul></li><li> Il devrait y avoir au moins 10 déclarations successives et dupliquées, quel que soit le nombre de jetons et de lignes.</li></ul>Les différences dans la mise en retrait ainsi que dans les littéraux de chaîne sont ignorées lors de la détection des doublons. | Infos | > 1 % |
-| Compatibilité Cloud Service | Nombre de problèmes de compatibilité du service cloud identifiés | Infos | > 0 |
+| Compatibilité Cloud Service | Nombre de problèmes de compatibilité Cloud Service identifiés | Infos | > 0 |
 
 >[!NOTE]
 >
->Voir [Définitions des mesures de SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) pour des définitions plus détaillées.
+>Reportez-vous aux [Définitions des mesures de SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) pour des définitions plus détaillées.
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 >Bien qu’il soit préférable de rendre l’annotation `@SuppressWarnings` aussi précise que possible, c’est-à-dire de n’annoter que l’énoncé ou le bloc qui cause le problème, il est tout de même possible de le faire à un niveau qui se rapporte à la classe.
 
 >[!NOTE]
->Bien qu’il n’existe pas d’étape de test de sécurité explicite, des règles de qualité du code liées à la sécurité sont évaluées à l’étape de qualité du code. Reportez-vous au document [Présentation de la sécurité pour AEM as a Cloud Service](/help/security/cloud-service-security-overview.md) pour en savoir plus sur la sécurité en Cloud Service.
+>Bien qu’il n’existe pas d’étape de test de sécurité explicite, des règles de qualité du code liées à la sécurité sont évaluées à l’étape de qualité du code. Pour en savoir plus sur la sécurité dans Cloud Service, reportez-vous au document [Aperçu de la sécurité pour AEM as a Cloud Service](/help/security/cloud-service-security-overview.md).
 
 ## Optimisation de l’analyse des packages de contenu {#content-package-scanning-optimization}
 
