@@ -1,17 +1,17 @@
 ---
 title: Présentation de Cloud Manager et du workflow de création rapide de site
-description: Découvrez Cloud Manager et comment il relie le nouveau processus de création rapide de site.
+description: Découvrez Cloud Manager et comment il relie le nouveau processus de création rapide de site.
 exl-id: 5d264078-e552-48ca-8d82-294a646e6b1f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1130'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Présentation de Cloud Manager et du workflow de création rapide de site {#understand-cloud-manager}
 
-Découvrez Cloud Manager et comment il relie le nouveau processus de création rapide de site.
+Découvrez Cloud Manager et comment il relie le nouveau processus de création rapide de site.
 
 >[!TIP]
 >
@@ -48,7 +48,7 @@ Il est important de comprendre que, pour le développeur front-end, aucun accès
 |---|---|
 | Présentation des outils et processus standard du développement front-end | Développeur front-end |
 | Connaissances de base sur la création et la gestion de sites dans AEM | Administrateur AEM |
-| Connaissances de base de Cloud Manager | Administrateur Cloud Manager |
+| Connaissances de base de Cloud Manager | Administrateur Cloud Manager |
 
 Pour le développeur front-end, aucune connaissance AEM n’est nécessaire.
 
@@ -59,11 +59,11 @@ Pour le développeur front-end, aucune connaissance AEM n’est nécessaire.
 | Environnement de développement front-end préféré | Développeur front-end |
 | npm  | Développeur front-end |
 | webpack | Développeur front-end |
-| Accès à Cloud Manager | Administrateur Cloud Manager |
-| Être membre du rôle de **Propriétaire de l’entreprise** dans Cloud Manager | Administrateur Cloud Manager |
-| Être Sdministrateur Sys dans Cloud Manager | Administrateur Cloud Manager |
-| Accès au Admin Console | Administrateur Cloud Manager |
-| Être membre du rôle de **Gestionnaire de déploiement** dans Cloud Manager | Administrateur Cloud Manager |
+| Accès à Cloud Manager | Administrateur Cloud Manager |
+| Être membre du rôle de **Propriétaire de l’entreprise** dans Cloud Manager | Administrateur Cloud Manager |
+| Être Sdministrateur Sys dans Cloud Manager | Administrateur Cloud Manager |
+| Accès au Admin Console | Administrateur Cloud Manager |
+| Être membre du rôle de **Gestionnaire de déploiement** dans Cloud Manager | Administrateur Cloud Manager |
 | Être membre du rôle de **Gestionnaire de déploiement** dans Cloud Manager | Développeur front-end |
 
 Pour le développeur front-end, aucune utilisation d’AEM n’est nécessaire.
@@ -74,25 +74,25 @@ Pour le développeur front-end, aucune utilisation d’AEM n’est nécessaire.
 
 ## Cloud Manager {#cloud-manager}
 
-Cloud Manager est un composant essentiel d’AEM as a Cloud Service et sert de point d’entrée unique pour la plateforme.
+Cloud Manager est un composant essentiel d’AEM as a Cloud Service et sert de point d’entrée unique pour la plateforme.
 
 Pour prendre en charge les clients avec les configurations de développement d’entreprise, AEM as a Cloud Service s’intègre entièrement à Cloud Manager et à ses pipelines CI/CD conçus spécifiquement pour les besoins. L’outil de création rapide de site étend ces fonctionnalités pour prendre en charge les pipelines de développement front-end dédiés.
 
-Pour les besoins de ce parcours, une compréhension complète de Cloud Manager n’est pas nécessaire. À un niveau élevé, Cloud Manager se compose de plusieurs niveaux de structure.
+Pour les besoins de ce parcours, une compréhension complète de Cloud Manager n’est pas nécessaire. À un niveau élevé, Cloud Manager se compose de plusieurs niveaux de structure.
 
 ![Structure de Cloud Manager](assets/cloud-manager-structure.png)
 
 * **CLIENT** - Chaque client est configuré avec un client.
 * **PROGRAMMES** - Chaque client dispose d’un ou de plusieurs programmes, qui reflètent souvent les solutions sous licence du client.
-* **ENVIRONNEMENTS** - Chaque programme comporte plusieurs environnements, tels que la production pour le contenu en direct, un pour l’évaluation et un autre à des fins de développement.
+* **ENVIRONNEMENTS** - Chaque programme comporte plusieurs environnements, un de production pour le contenu en direct, un d’évaluation pour le test et un à des fins de développement.
 * **RÉFÉRENTIEL** - Les environnements disposent de référentiels Git où l’application et le code front-end sont conservés.
 * **OUTILS ET WORKFLOWS** - Les pipelines gèrent le déploiement du code des référentiels vers les environnements.
 
 Un exemple est souvent utile pour contextualiser cette hiérarchie.
 
-* Les entreprises de voyage et d’aventure WKND peuvent être **client** qui se concentre sur les médias liés aux voyages.
-* Le client WKND Travel and Adventure Entreprises peut avoir deux **programmes**: un programme Sites pour WKND Magazine et un programme Assets pour WKND Media.
-* Les programmes WKND Magazine et WKND Media auraient tous deux un environnement de développement, d’évaluation et de production. **environnements**.
+* Disons que WKND Travel and Adventure Enterprises est un **client** qui se concentre sur les médias liés aux voyages.
+* Disons que le client WKND Travel and Adventure Enterprises peut avoir deux **programmes** : un programme Sites pour WKND Magazine et un programme Assets pour WKND Media.
+* Les programmes de WKND Magazine et de WKND Media auraient chacun des **environnements** de développement, d’évaluation et de production.
 
 ## Le flux de développement front-end de création rapide de site {#flow}
 
