@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
 source-git-commit: b1a1ef0021499872a712c1e4450af9765e46a1a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1758'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -190,7 +190,7 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
 
    * Le nom est également un lien servant à ouvrir l’éditeur de modèles.
 
-* Voir l’état du fragment, par exemple, les informations relatives à la date et à l’heure de création, de modification ou de publication. L’état est également codé par couleur :
+* Voir le statut du fragment, par exemple, les informations relatives à la date et à l’heure de création, de modification ou de publication. Le statut est également codé par couleur :
 
    * **Nouveau** : gris
    * **Version préliminaire** : bleu
@@ -353,17 +353,17 @@ Vous pouvez restaurer vers une version spécifique de votre fragment :
 Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
-Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Pour ce faire, utilisez la fonctionnalité Assets standard :
+Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Pour ce faire, utilisez la fonctionnalité Assets standard :
 
 * [Publication rapide](/help/assets/manage-publication.md#quick-publish)
 * [Gérer la publication](/help/assets/manage-publication.md#manage-publication)
 
-Vous pouvez y accéder :
+Vous pouvez y accéder des façons suivantes :
 
 * Après la création, en utilisant les actions [disponibles dans la console de ressources](#actions-for-a-content-fragment-assets-console).
 * Dans l’[éditeur de fragment de contenu](#toolbar-actions-in-the-content-fragment-editor).
 
-En outre, lorsque vous [publier une page qui utilise le fragment ;](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); le fragment sera répertorié dans les références de page.
+De plus, lorsque vous [publiez une page qui utilise ce fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 >[!CAUTION]
 Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
