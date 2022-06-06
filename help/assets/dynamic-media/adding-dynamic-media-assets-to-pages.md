@@ -1,18 +1,18 @@
 ---
-title: Ajout de ressources Dynamic Media aux pages
-description: Découvrez comment ajouter des composants Dynamic Media à une page dans Adobe Experience Manager as a Cloud Service.
+title: Ajout de ressources Dynamic Media à des pages
+description: Découvrez comment ajouter des composants Dynamic Media à une page dans Adobe Experience Manager as a Cloud Service.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 source-git-commit: da4174929e1eb8e15447f936dc89a67391c72209
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3216'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Ajout de ressources Dynamic Media aux pages{#adding-dynamic-media-assets-to-pages}
+# Ajout de ressources Dynamic Media à des pages{#adding-dynamic-media-assets-to-pages}
 
 Pour ajouter la fonction Dynamic Media aux ressources que vous utilisez sur des sites web, vous pouvez ajouter le composant **Dynamic Media**, **Média interactif**, **Média panoramique** ou **Média vidéo 360** directement à la page. Vous passez en mode Mise en page, puis vous activez les composants Dynamic Media. Vous ajoutez ensuite ces composants à la page, puis des ressources au composant. Les composants Dynamic Media sont intelligents : ils savent si vous ajoutez une image ou une vidéo, et les options de configuration disponibles changent en conséquence.
 
