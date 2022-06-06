@@ -3,9 +3,9 @@ title: Déploiement de votre thème personnalisé
 description: Découvrez comment déployer le thème du site à l’aide du pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1027'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Vous pouvez maintenant passer à l’étape finale et utiliser le pipeline pour 
 Ce document explique comment déployer le thème à l’aide du pipeline. Après avoir lu ce document, vous devriez :
 
 * Savoir comment déclencher un déploiement de pipeline.
-* Voir comment vérifier l’état du déploiement.
+* Découvrez comment vérifier le statut du déploiement.
 
 ## Rôle responsable {#responsible-role}
 
@@ -40,7 +40,7 @@ Une fois que vous avez validé les modifications de personnalisation du thème d
 
 1. Connectez-vous à Cloud Manager [comme vous l’avez fait pour récupérer vos informations d’accès Git](retrieve-access.md) et accédez à votre programme. Sur l’onglet **Aperçu** vous verrez une vignette pour **Pipelines**.
 
-   ![Présentation de Cloud Manager](assets/cloud-manager-overview.png)
+   ![Aperçu de Cloud Manager](assets/cloud-manager-overview.png)
 
 1. Appuyez ou cliquez sur les points de suspension en regard du pipeline que vous devez démarrer. Dans le menu déroulant, sélectionnez **Exécuter**.
 
@@ -50,13 +50,13 @@ Une fois que vous avez validé les modifications de personnalisation du thème d
 
    ![Confirmation de l’exécution du pipeline](assets/pipeline-confirm.png)
 
-1. Dans la liste des pipelines, la colonne d’état indique que votre pipeline est en cours d’exécution.
+1. Dans la liste des pipelines, la colonne de statut indique que votre pipeline est en cours d’exécution.
 
-   ![État d’exécution du pipeline](assets/pipeline-running.png)
+   ![Statut d’exécution du pipeline](assets/pipeline-running.png)
 
-## Vérification de l’état du pipeline {#pipeline-status}
+## Vérification du statut du pipeline {#pipeline-status}
 
-Vous pouvez vérifier l’état du pipeline pour afficher le détail de sa progression à tout moment.
+Vous pouvez vérifier le statut du pipeline pour afficher le détail de sa progression à tout moment.
 
 1. Appuyez ou cliquez sur les points de suspension en regard de votre pipeline.
 
@@ -102,7 +102,7 @@ AEM est un outil puissant et de nombreuses autres options sont disponibles. Cons
 
 Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondissent certains concepts mentionnés dans ce document.
 
-* [Utilisation du rail de site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) - Découvrez les puissantes fonctionnalités du rail du site pour vous aider à personnaliser et gérer facilement votre thème de site, y compris le téléchargement des sources de thèmes et la gestion des versions de thèmes.
+* [Utilisation du rail Site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) - Découvrez les puissantes fonctionnalités du rail Site pour vous aider à personnaliser et gérer facilement votre thème de site, y compris le téléchargement des sources de thèmes et la gestion des versions de thèmes.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) - Si vous avez déjà une bonne compréhension d’AEM, vous pouvez consulter directement notre documentation technique détaillée.
 * [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
 * [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/role-based-permissions.html?lang=fr) - Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Reportez-vous à ce document pour plus de détails sur ces rôles et sur la manière de les administrer.
@@ -115,6 +115,6 @@ Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondisse
 * [Création et organisation des pages](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) - Ce guide explique comment gérer les pages de votre site AEM si vous souhaitez le personnaliser davantage après l’avoir créé à partir du modèle.
 * [Utilisation d’un package](/help/implementing/developing/tools/package-manager.md) - Les packages permettent l’importation et l’exportation de contenu de référentiel. Ce document explique comment utiliser les packages dans AEM 6.5, qui s’applique également à AEMaaCS.
 * [Parcours d’intégration](/help/journey-onboarding/home.md) - Ce guide constitue votre point de départ pour vous assurer que vos équipes sont configurées et ont accès à AEM as a Cloud Service.
-* [Documentation d’Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) - Consultez la documentation de Cloud Manager pour en savoir plus sur ses fonctionnalités.
+* [Documentation d’Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) - Consultez la documentation de Cloud Manager pour en savoir plus sur ses fonctionnalités.
 * [Documentation relative à l’administration du site](/help/sites-cloud/administering/site-creation/create-site.md) - Consultez la documentation technique sur la création de site pour plus d’informations sur les fonctionnalités de l’outil de création rapide de site.
 * [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Ce document décrit certaines considérations à prendre en compte pour tirer pleinement parti du processus de développement front-end à l’aide du pipeline front-end.
