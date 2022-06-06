@@ -3,9 +3,9 @@ title: En-têtes HTTP personnalisés
 description: Configuration d’en-têtes HTTP personnalisés
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '270'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Pour configurer les en-têtes HTTP personnalisés, vous devez d’abord les déf
 Vous pouvez configurer les valeurs des en-têtes HTTP dans la page Configuration du service cloud pour votre projet :
 
 1. Accédez à la page de configuration du service cloud dans Outils -> Cloud Services -> Configuration CIF.
-1. Ouverture d’une configuration existante ou création d’une nouvelle
+1. Ouverture d’une configuration existante ou création d’une nouvelle.
 1. Accédez à l’onglet « Avancé » et recherchez le champ multiple « En-têtes HTTP personnalisés ». Vous pouvez sélectionner les en-têtes que vous avez définis précédemment et leur attribuer des valeurs.
 
 Les composants qui utilisent la configuration de service cloud ci-dessus enverront ces en-têtes HTTP avec chaque requête GraphQL.
@@ -35,5 +35,5 @@ Les composants qui utilisent la configuration de service cloud ci-dessus enverro
 
 Bien que le service permette de définir des noms d’en-tête, y compris les noms standard, ils ne sont pas disponibles pour configuration. En d’autres termes, vous ne pouvez pas remplacer les en-têtes HTTP standard à l’aide de cette fonctionnalité. Vous trouverez une liste de noms d’en-tête restreints [ici](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers). En outre, deux en-têtes supplémentaires ne peuvent pas être utilisés :
 
-* &quot;Magasin&quot; : utilisé par CIF pour identifier le magasin Adobe Commerce
+* « Store » : utilisé par CIF pour identifier la boutique Adobe Commerce.
 * « Preview-Version » : utilisé par CIF pour récupérer les produits intermédiaires.
