@@ -1,24 +1,24 @@
 ---
-title: Notes de mise à jour de la version 2020.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Notes de mise à jour as a Cloud Service de la version 2020.11.0."'
+title: Notes de mise à jour de la version 2020.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.11.0.
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1265'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service.
 
 ## Date de publication {#release-date}
 
-La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.11.0 est le 2 décembre 2020.
+La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.11.0 est le 2 décembre 2020.
 La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
@@ -28,11 +28,11 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 * **Tri des pages de la Live Copy disponibles pour déploiement** : nouvelle option pour trier les pages de la Live Copy disponibles pour déploiement à l’aide des propriétés [!UICONTROL Nom], [!UICONTROL Date de dernière modification] et [!UICONTROL Date du dernier déploiement]. La [!UICONTROL Date du dernier déploiement] pour une page est une nouvelle propriété introduite.
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Nouveautés d’[!DNL Assets] et [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Ingestion de ressources en masse** : permet d’apporter aux clients un service d’ingestion évolutif et natif dans le cloud, fondé sur une architecture [!DNL Experience Manager] as a Cloud Service, y compris les microservices de ressources. Les cas d’utilisation essentiels incluent l’ingestion à l’échelle voulue avec la surveillance, les rapports et la planification, tout en permettant le transfert initial des ressources vers les entrepôts de données dans le cloud à l’aide d’outils de téléchargement courants. Voir [Outil d’ingestion de ressources en masse](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Ingestion de ressources en masse** : permet d’apporter aux clients un service d’ingestion évolutif et natif dans le cloud, fondé sur une architecture [!DNL Experience Manager] as a Cloud Service, y compris les microservices de ressources. Les cas d’utilisation essentiels incluent l’ingestion à l’échelle voulue avec la surveillance, les rapports et la planification, tout en permettant le transfert initial des ressources vers les entrepôts de données dans le cloud à l’aide d’outils de téléchargement courants. Voir [Outil d’ingestion de ressources en masse](/help/assets/add-assets.md#asset-bulk-ingestor).
 
    Cet outil est destiné aux administrateurs système, consultants ou partenaires concernés par l’implémentation. Cette fonction permet l’ingestion à grande échelle et est idéalement adaptée pour une ingestion initiale ou occasionnellement volumineuse. Pour les tâches d’ingestion de volume plus modeste, utilisez l’[[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr) ou [effectuez un chargement à l’aide de l’interface utilisateur d’Assets](/help/assets/add-assets.md#upload-assets).
 
@@ -44,7 +44,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 * Les améliorations suivantes ont été apportées à l’accessibilité d’[!DNL Experience Manager Assets] grâce à cette version. Pour plus d’informations, voir [Fonctionnalités d’accessibilité d’ [!DNL Assets]](/help/assets/accessibility.md).
 
-   * Lorsque vous naviguez dans la chronologie à l’aide du clavier, la touche Échap permet de réduire l’option Afficher sans perdre la sélection.
+   * Lorsque vous naviguez dans la chronologie à l’aide du clavier, la touche Échap permet de réduire l’option Tout afficher sans perdre la sélection.
    * Lorsque vous naviguez à l’aide de la touche de tabulation du clavier, après avoir supprimé la dernière des balises ajoutées, le champ de balise conserve la sélection.
    * Les composants d’[!DNL Experience Manager] contiennent désormais les informations appropriées concernant le nom, le rôle et la valeur à utiliser par les lecteurs d’écran.
    * Après suppression des zones de liste déroulante Type/Taille, Lien et Langue, ou de la zone d’édition Texte, la sélection du clavier revient aux éléments suivants ou précédents de l’interface utilisateur ou à un élément plus pertinent de l’interface utilisateur.
@@ -58,7 +58,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 * Les améliorations d’accessibilité suivantes sont désormais disponibles dans [!DNL Dynamic Media] :
 
-   * Les lecteurs d’écran (JAWS, Narrateur) indiquent le nom, le rôle et l’état des éléments de menu dans l’option de menu Taille intégrée.
+   * Les lecteurs d’écran (JAWS, Narrateur) indiquent le nom, le rôle et le statut des éléments de menu dans l’option de menu Taille intégrée.
    * Il est possible pour les utilisateurs d’accéder à la boîte de dialogue Envoi d’un lien par courrier électronique à l’aide de la touche `Tab`.
    * Le workflow permettant de créer des profils de codage vidéo est plus convivial grâce à l’amélioration du lecteur d’écran.
    * Lorsque vous naviguez à l’aide de la touche `Tab`, la sélection se déplace vers les éléments d’interface utilisateur appropriés dans le workflow pour créer une vidéo interactive.
@@ -69,7 +69,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
    Voir [Accessibilité dans [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nouveautés {#what-is-new-commerce}
 
@@ -85,27 +85,27 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ### Date de publication {#release-date-cm}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.11.0 est le 12 novembre 2020.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.11.0 est le 12 novembre 2020.
 
 ### Nouveautés d’[!DNL Cloud Manager]  {#what-is-new-cm}
 
 * Une nouvelle option de menu **Connexion locale** est désormais disponible pour les utilisateurs à partir des options du menu Environnement dans la carte **Environnements** et les pages de résumé des **environnements**.
 Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#login-locally).
 
-* L’onglet **Apprendre** de Cloud Manager est actualisé avec de nouvelles images dans l’interface utilisateur.
+* L’onglet **Apprendre** de Cloud Manager est actualisé avec de nouvelles images dans l’interface utilisateur.
 
 ### Correctifs {#bug-fixes-cloud-manager}
 
 * Le chargement des dépendances effectué avant l’exécution du build nécessitait le téléchargement d’un module externe Maven.
-* Le lien du pied de page de Cloud Manager destiné à sélectionner une langue dirige désormais vers l’emplacement approprié.
+* Le lien du pied de page de Cloud Manager destiné à sélectionner une langue dirige désormais vers l’emplacement approprié.
 * Parfois, pendant la numérisation du code, le processus SonarQube ne démarrait pas. Désormais, il sera automatiquement détecté et un redémarrage sera tenté.
 * Tous les pipelines de production existants seront automatiquement activés avec l’étape Contrôle de l’expérience.
 
-## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
+## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
 ### Workflows {#workflows}
 
-* La prise en charge de la recherche des instances de workflow a été ajoutée en fonction du titre du workflow, du modèle de workflow, de l’état, de l’initiateur, du chemin d’accès à la charge utile et de la date de début. Voir [Instances des workflows de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html?lang=fr).
+* La prise en charge de la recherche des instances de workflow a été ajoutée en fonction du titre du workflow, du modèle de workflow, du statut, de l’initiateur, du chemin d’accès à la charge utile et de la date de début. Voir [Instances des workflows de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/workflows-administering.html?lang=fr).
 
 ### Synchronisation des données utilisateur du niveau Publication {#user-sync}
 
@@ -113,11 +113,11 @@ Pour plus d’informations, consultez [Gestion des environnements](/help/impleme
 
 ### Analyseurs de build de SDK {#analyzers}
 
-Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des problèmes dans un projet Maven, y compris les dépendances manquantes. Il permet aux développeurs d’identifier des problèmes au cours du développement local, bien avant leur déploiement dans les environnements Cloud avec Cloud Manager. Pour plus d’informations, voir la documentation [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=fr#developing) et [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=fr#building-for-the-sdk).
+Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des problèmes dans un projet Maven, y compris les dépendances manquantes. Il permet aux développeurs d’identifier des problèmes au cours du développement local, bien avant leur déploiement dans les environnements Cloud avec Cloud Manager. Pour plus d’informations, voir la documentation [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=fr#developing) et [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=fr#building-for-the-sdk).
 
 ### Autres {#others-foundation}
 
-La nouvelle [syntaxe httpd -t](/help/implementing/dispatcher/disp-overview.md#local-validation) vérifie la configuration Apache et Dispatcher mise en œuvre lors du build de Cloud Manager. Il est également possible de l’exécuter à l’aide des outils de Dispatcher d’AEM du SDK AEM as a Cloud Service.
+La nouvelle [syntaxe httpd -t](/help/implementing/dispatcher/disp-overview.md#local-validation) vérifie la configuration Apache et Dispatcher mise en œuvre lors de la génération de Cloud Manager. Il est également possible de l’exécuter à l’aide des outils de Dispatcher d’AEM du SDK AEM as a Cloud Service.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
@@ -139,9 +139,9 @@ La date de publication de l’analyseur de bonnes pratiques est le 13 novembre�
 
 ### Nouveautés d’[!DNL Best Practices Analyzer]  {#what-is-new-bpa}
 
-* Cloud Readiness Analyzer est désormais appelé Analyseur de bonnes pratiques (Best Practices Analyzer, BPA). L’analyseur de bonnes pratiques réalise une évaluation des bonnes pratiques de votre mise en œuvre d’AEM en cours et permet d’évaluer plus efficacement la capacité de passer d’une instance AEM existante à AEM as a Cloud Service.
+* Cloud Readiness Analyzer est désormais appelé Analyseur de bonnes pratiques (Best Practices Analyzer, BPA). L’analyseur de bonnes pratiques réalise une évaluation des bonnes pratiques de votre mise en œuvre d’AEM en cours et permet d’évaluer plus efficacement la capacité de passer d’une instance AEM existante à AEM as a Cloud Service.
 
-* Un nouveau détecteur a été ajouté pour repérer l’utilisation de `java.io.InputStream`, ce qui peut provoquer des problèmes s’il est utilisé dans AEM as a Cloud Service.
+* Un nouveau détecteur a été ajouté pour repérer l’utilisation de `java.io.InputStream`, ce qui peut provoquer des problèmes s’il est utilisé dans AEM as a Cloud Service.
 
 ### Correctifs {#bpa-bug-fixes}
 
