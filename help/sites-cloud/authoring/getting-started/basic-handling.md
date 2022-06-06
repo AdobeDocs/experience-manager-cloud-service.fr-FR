@@ -3,9 +3,9 @@ title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2954'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -37,9 +37,9 @@ La première fois que vous accédez à une console, un didacticiel de navigation
 
 ![Tutoriel de navigation](/help/sites-cloud/authoring/assets/tutorial.png)
 
-Cliquez ou appuyez sur **Suivant** pour accéder à la page suivante de la présentation. Cliquez ou appuyez sur **Fermer** ou à l’extérieur de la boîte de dialogue de présentation pour la fermer.
+Cliquez ou appuyez sur **Suivant** pour accéder à la page suivante de l’aperçu. Cliquez ou appuyez sur **Fermer** ou à l’extérieur de la boîte de dialogue de l’aperçu pour la fermer.
 
-Si vous ne désactivez pas l’option **Ne plus afficher ce message**, la présentation redémarrera la prochaine fois que vous accéderez à la console.
+Si vous ne désactivez pas l’option **Ne plus afficher ce message**, l’aperçu redémarrera la prochaine fois que vous accéderez à la console.
 
 ## Navigation globale {#global-navigation}
 
@@ -362,8 +362,8 @@ La sélection d’une ressource dans la colonne de gauche affiche les ressources
 
    * **Nom** : nom de la page ; cela peut s’avérer utile dans un environnement de création multilingue, dans la mesure où il fait partie de l’URL de la page et où il ne change pas, quelle que soit la langue.
    * **Modifié** : date de la dernière modification et nom de l’utilisateur responsable de la modification.
-   * **Publié** : état de la publication.
-   * **Prévisualisation** : prévisualisation de l’état
+   * **Publié** : statut de la publication.
+   * **Prévisualisation** : prévisualisation du statut
    * **Modèle** : modèle sur lequel la page est basée.
    * **Workflow** : workflow actuellement appliqué à la page. D’autres informations sont disponibles lorsque vous déplacez la souris ou lorsque vous ouvrez la chronologie.
    * **Analyse de la page**
@@ -463,9 +463,9 @@ Les **références** affichent toutes les connexions avec la ressource sélectio
 
 **Site** affiche les détails des sites [créés à l’aide d’un modèle de site.](/help/sites-cloud/administering/site-creation/create-site.md)
 
-![Rail du site](../assets/site-rail.png)
+![Rail Site](../assets/site-rail.png)
 
-Voir le document [Utilisation du rail de site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) pour plus d’informations sur l’utilisation du rail pour gérer la variable [thème de votre site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Consultez le document [Utilisation du rail Site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) pour plus d’informations sur l’utilisation du rail pour gérer le [thème de votre site.](/help/sites-cloud/administering/site-creation/site-themes.md)
 
 >[!TIP]
 >
