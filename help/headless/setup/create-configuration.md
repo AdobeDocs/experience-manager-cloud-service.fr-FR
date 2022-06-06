@@ -1,17 +1,17 @@
 ---
-title: Création d’une configuration - Configuration sans affichage
-description: Créez une configuration comme première étape de prise en main d’AEM as a Cloud Service en mode découplé.
+title: Création d’une configuration - Configuration découplée
+description: Créez une configuration comme première étape de prise en main d’AEM as a Cloud Service en mode découplé.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Création d’une configuration - Configuration sans affichage {#creating-configuration}
+# Création d’une configuration - Configuration découplée {#creating-configuration}
 
-Pour commencer à utiliser le découplage dans AEM as a Cloud Service, vous devez créer une configuration.
+Pour commencer à utiliser le découplage dans AEM as a Cloud Service, vous devez créer une configuration.
 
 ## Qu’est-ce qu’une configuration ?  {#what-is-a-configuration}
 
@@ -25,7 +25,7 @@ Si vous connaissez les modèles de page [dans une implémentation AEM complète,
 
 Un administrateur n’a besoin de créer une configuration qu’une seule fois, ou très rarement lorsqu’un nouvel espace de travail est nécessaire pour organiser vos modèles de contenu. Pour les besoins de ce guide de prise en main, il suffit de créer une configuration.
 
-1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils -> Général -> Explorateur de configurations**.
+1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Outils -> Général -> Explorateur de configurations**.
 1. Indiquez un **Titre** et un **Nom** pour votre configuration.
    * Le **Titre** doit être descriptif.
    * Le **Nom** devient le nom du nœud dans le référentiel.
