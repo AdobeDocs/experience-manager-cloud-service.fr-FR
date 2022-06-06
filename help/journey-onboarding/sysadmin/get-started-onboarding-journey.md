@@ -5,7 +5,7 @@ feature: Onboarding
 role: Admin, User, Developer
 exl-id: a02ff46f-1319-4c0c-8ecc-d8d2d4276229
 source-git-commit: a8649f639eb173cdc1869a27c8f2d4b6b8026fb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '555'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Prise en main du processus d’intégration {#getting-started}
 
-L’intégration est le processus au cours duquel un [administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=fr) désigné configure AEM as a Cloud Service pour votre organisation. Il inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs à des rôles en fonction de leurs responsabilités professionnelles. Par conséquent, chaque membre peut se connecter et accéder à ses ressources AEM as a Cloud Service.
+L’intégration est le processus au cours duquel un [administrateur système](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/system-administrator.html?lang=fr) désigné configure AEM as a Cloud Service pour votre organisation. Il inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs à des rôles en fonction de leurs responsabilités professionnelles. Par conséquent, chaque membre peut se connecter et accéder à ses ressources AEM as a Cloud Service.
 
 ## Objectif {#objective}
 
@@ -29,7 +29,7 @@ Après avoir lu cette section, vous devriez être en mesure de :
 
 ## Intégration à AEM as a Cloud Service {#onboarding-process}
 
-Découvrez comment intégrer AEM as a Cloud Service, de la phase d’établissement du contrat à la configuration des environnements à l’aide de Cloud Manager.
+Découvrez comment intégrer AEM as a Cloud Service, de la phase d’établissement du contrat à la configuration des environnements à l’aide de Cloud Manager.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336959/?quality=12&learn=on)
 
@@ -72,7 +72,7 @@ Pour accéder à Admin Console et passer en revue votre rôle d’administrateur
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous êtes connecté à Admin Console et que vous avez vérifié votre profil en tant qu’administrateur système, vous devez poursuivre votre parcours d’intégration en consultant le document [Affectations de membres de l’équipe aux profils de produit Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
+Maintenant que vous êtes connecté à Admin Console et que vous avez vérifié votre profil en tant qu’administrateur système, vous devez poursuivre votre parcours d’intégration en consultant le document [Affectations de membres de l’équipe aux profils de produit Cloud Manager](/help/journey-onboarding/sysadmin/assign-team-members-aem-cloud-service.md).
 
 ## Ressources supplémentaires {#additional-resources}
 
