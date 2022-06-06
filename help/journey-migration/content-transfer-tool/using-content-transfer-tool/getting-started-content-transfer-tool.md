@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
 workflow-type: tm+mt
 source-wordcount: '1242'
-ht-degree: 43%
+ht-degree: 57%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 43%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_download"
 >title="Télécharger"
->abstract="Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version."
+>abstract="Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le module par le biais du gestionnaire de modules sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html" text="Notes de mise à jour"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portail de distribution de logiciels"
 
@@ -50,8 +50,8 @@ Pour tester la connectivité à l’environnement AEM as a Cloud Service cib
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_demo"
 >title="Exécution de l’outil de transfert de contenu"
->abstract="Découvrez comment utiliser l’outil de transfert de contenu pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu."
->additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on" text=" Voir Démonstration"
+>abstract="Découvrez comment utiliser l’outil de transfert de contenu pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu."
+>additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on&amp;captions=fre_fr" text=" Voir Démonstration"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=fr#migration" text="Tutoriel – Utilisation de l’outil de transfert de contenu"
 
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
@@ -155,29 +155,29 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration
 ### Définition de la taille du jeu de migration {#migration-set-size}
 
 Après la création d’un jeu de migration, il est vivement recommandé d’exécuter une vérification de taille sur le jeu de migration avant de lancer un processus d’extraction.
-En effectuant une vérification de taille sur le jeu de migration, vous pourrez :
-* Déterminez s’il y a suffisamment d’espace disque dans la variable `crx-quickstart` pour terminer l’extraction.
-* Déterminez si la taille du jeu de migration est conforme aux limites de produit prises en charge et évitez les échecs d’ingestion de contenu.
+En effectuant une vérification de taille sur le jeu de migration, vous pourrez :
+* déterminer s’il y a suffisamment d’espace disque dans le sous-référentiel `crx-quickstart` pour terminer l’extraction ;
+* déterminer si la taille du jeu de migration est conforme aux restrictions concernant les produits pris en charge et éviter les échecs d’ingestion de contenu.
 
-Pour exécuter une vérification de taille, procédez comme suit :
+Pour exécuter une vérification de taille, procédez comme suit :
 
-1. Sélectionnez un jeu de migration et cliquez sur **Vérifier la taille**.
+1. Sélectionnez un jeu de migration et cliquez sur **Check Size** (Vérifier la taille).
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam8.png)
 
-1. Cela ouvrira la fenêtre **Vérifier la taille** boîte de dialogue.
+1. Cela ouvrira la boîte de dialogue **Check Size** (Vérifier la taille).
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Cliquez sur **Vérifier la taille** pour démarrer le processus. Vous revenez alors à la vue Liste des jeux de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
+1. Cliquez sur **Check Size** (Vérifier la taille) pour démarrer le processus. Vous revenez alors à la vue Liste des jeux de migration et un message vous indique que **Check Size** (Vérifier la taille) est en cours d’exécution.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Une fois **Vérifier la taille** est terminé, l’état devient **FINISHED**. Sélectionnez le même jeu de migration et cliquez sur **Vérifier la taille** pour afficher les résultats. Voici un exemple : **Vérifier la taille** résultats sans avertissement.
+1. Une fois **Vérifier la taille** est terminé, l’état devient **FINISHED**. Sélectionnez le même jeu de migration et cliquez sur **Check Size** (Vérifier la taille) pour afficher les résultats. Voici ci-dessous un exemple de résultats de **Check Size** (Vérifier la taille) sans avertissement.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Si la variable **Vérifier la taille** les résultats indiquent qu&#39;il n&#39;y a pas suffisamment d&#39;espace disque et/ou que le jeu de migration dépasse les limites du produit, **AVERTISSEMENT** s’affiche.
+1. Si les résultats de **Check Size** (Vérifier la taille) indiquent qu’il n’y a pas suffisamment d’espace disque ou que le jeu de migration dépasse les limites du produit, le statut **WARNING** (AVERTISSEMENT) s’affiche.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

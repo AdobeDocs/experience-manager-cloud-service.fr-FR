@@ -1,17 +1,17 @@
 ---
 title: Fragments d’expérience
-description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
+description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
 # Fragments d’expérience {#experience-fragments}
 
-Dans Adobe Experience Manager as a Cloud Service, un fragment d’expérience :
+Dans Adobe Experience Manager as a Cloud Service, un fragment d’expérience :
 
 * est un groupe comprenant un ou plusieurs composants ;
 * inclut le contenu et la disposition ;
@@ -23,12 +23,12 @@ Un fragment d’expérience :
 * fait partie d’une expérience (page) ;
 * peut être utilisé sur plusieurs pages ;
 * est basé sur un modèle (uniquement modifiable) qui définit la structure et les composants ;
-* Ce modèle est utilisé pour créer la variable *page racine* du fragment d’expérience.
+* Ce modèle est utilisé pour créer la *page racine* du fragment d’expérience.
 * comprend un ou plusieurs composants, avec mise en page, dans un système de paragraphes ;
 * peut contenir d’autres fragments d’expérience ;
 * peut être combiné à d’autres composants (y compris d’autres fragments d’expérience) pour former une page entière (expérience) ;
 * Il est possible de créer une ou plusieurs variations en fonction de la page racine.
-* Ces variations peuvent partager du contenu et/ou des composants.
+* Ces variations peuvent partager du contenu et des composants.
 * peut être scindé en blocs de création utilisables dans plusieurs variations du fragment.
 
 Vous pouvez utiliser des fragments d’expérience :
@@ -53,8 +53,8 @@ Les fragments d’expérience doivent être utilisés dans les cas suivants :
 
 * Chaque fois que vous souhaitez réutiliser des expériences.
    * Expériences qui seront réutilisées avec un contenu identique ou similaire.
-* Lorsque vous utilisez AEM en tant que plate-forme de diffusion de contenu à des tiers.
-   * Toute solution qui souhaite utiliser AEM comme plate-forme de diffusion de contenu.
+* Lorsque vous utilisez AEM en tant que plateforme de diffusion de contenu à des tiers.
+   * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu.
    * Intégration de contenu dans des points de contact tiers.
 * Si l’une de vos expériences se décline en plusieurs variations ou rendus.
    * Variations spécifiques à un canal ou contexte particulier.
@@ -291,7 +291,7 @@ Pour créer un bloc de ce type, procédez comme suit :
 
 Le bloc de création est visible dans l’onglet **Blocs de création**. Pour chaque bloc, les actions suivantes peuvent être effectuées :
 
-* **Accéder au gabarit**: ouvrir la variation de page racine dans un nouvel onglet ;
+* **Atteindre l’élément principal** : ouvre la variation de la page racine dans un nouvel onglet.
 * **Renommer**
 * **Supprimer**
 
@@ -339,9 +339,9 @@ Les détails sont affichés dans toutes les vues de la console **Éditeur de Fra
       * **Nombre de variations web** – informations uniquement
       * **Nombre de variations non-web** – informations uniquement
       * **Nombre de pages utilisant ce fragment** – informations uniquement
-   * **Cloud Services**
+   * **Cloud Services**
       * **Configuration du cloud**
-      * **Configuration de Cloud Services**
+      * **Configuration de Cloud Services**
       * **Identifiant de page Facebook**
       * **Panorama Pinterest**
    * **Références**
@@ -368,4 +368,4 @@ Par défaut, les fragments d’expérience sont fournis au format HTML. Ils peuv
 Pour l’exportation vers Adobe Target, JSON peut également être utilisé. Voir :
 
 * [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-* [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+* [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)

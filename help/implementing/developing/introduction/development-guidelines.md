@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 1f249b413c9e3f76771fe85d7ecda67cec1386fb
 workflow-type: tm+mt
 source-wordcount: '2444'
-ht-degree: 84%
+ht-degree: 95%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 84%
 >id="development_guidelines"
 >title="Conseils de développement pour AEM as a Cloud Service"
 >abstract="Dans cet onglet, vous pouvez afficher les bonnes pratiques recommandées pour le codage dans AEM as a Cloud Service. Le codage peut être considérablement différent des déploiements AMS ou On-Prem."
->additional-url="https://video.tv.adobe.com/v/330555/" text="Démonstration de la structure du package"
+>additional-url="https://video.tv.adobe.com/v/330555/?captions=fre_fr" text="Démonstration de la structure du package"
 
 Le code s’exécutant dans AEM as a Cloud Service doit savoir qu’il s’exécute toujours dans une grappe. Cela signifie qu’il y a toujours plusieurs instances en cours d’exécution. Le code doit être résilient, d’autant plus qu’une instance peut être arrêtée à tout moment.
 
@@ -55,9 +55,9 @@ De même, avec tout ce qui se passe de manière asynchrone, comme les actions su
 
 ## Connexions HTTP sortantes {#outgoing-http-connections}
 
-Il est vivement recommandé que toute connexion HTTP sortante définisse des délais de connexion et de lecture raisonnables ; les valeurs suggérées sont de 1 seconde pour le délai de connexion et de 5 secondes pour le délai de lecture. Les nombres exacts doivent être déterminés en fonction des performances du système principal qui gère ces requêtes.
+Il est vivement recommandé que toute connexion HTTP sortante définisse des délais de connexion et de lecture raisonnables ; les valeurs suggérées sont de 1 seconde pour le délai de connexion et de 5 secondes pour le délai de lecture. Les nombres exacts doivent être déterminés en fonction des performances du système principal qui gère ces requêtes.
 
-Pour le code qui n’applique pas ces délais d’expiration, les instances AEM s’exécutant sur AEM as a Cloud Service appliqueront un délai d’expiration global. Ces valeurs de délai d’expiration sont de 10 secondes pour les appels de connexion et de 60 secondes pour les appels de lecture pour les connexions.
+Pour le code qui n’applique pas ces délais d’expiration, les instances AEM s’exécutant sur AEM as a Cloud Service appliqueront un délai d’expiration global. Ces valeurs de délai sont de 10 secondes pour les appels de connexion et de 60 secondes pour les appels de lecture pour les connexions.
 
 Adobe recommande l’utilisation de la bibliothèque [Apache HttpComponents Client 4.x](https://hc.apache.org/httpcomponents-client-ga/) fournie pour établir les connexions HTTP.
 
@@ -109,7 +109,7 @@ Pour modifier les niveaux de journal des environnements Cloud, il est nécessair
 
 **Activation du niveau de journalisation DEBUG**
 
-Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés. Pour activer le niveau de journalisation DEBUG, mettez à jour la propriété suivante vers le mode de débogage.
+Le niveau de journalisation par défaut est INFO, ce qui signifie que les messages DEBUG ne sont pas consignés. Pour activer le niveau de journalisation DEBUG, mettez à jour la propriété suivante vers le mode Déboguer.
 
 `/libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level`
 
@@ -126,11 +126,15 @@ Par exemple, définissez `/apps/<example>/config/org.apache.sling.commons.log.Lo
 }
 ```
 
-Ne laissez pas le journal au niveau du journal DEBUG plus longtemps que nécessaire, car cela génère de nombreuses entrées.
+Ne laissez pas le journal au niveau de débogage DEBUG plus longtemps que nécessaire, car cela génère un grand nombre d’entrées.
 
 Des niveaux de journal distincts peuvent être définis pour les différents environnements AEM à l’aide du ciblage de la configuration OSGi basée sur le mode d’exécution s’il est souhaitable de toujours se connecter à `DEBUG` pendant le développement. Par exemple :
 
-| Environnement | Emplacement de configuration OSGi par mode d’exécution | `org.apache.sling.commons.log.level` valeur de propriété | | - | - | - | | Développement | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG | | Intermédiaire | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN | | Production | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
+| Environnement | Emplacement de configuration OSGi par mode d’exécution | `org.apache.sling.commons.log.level` valeur de propriété |
+| - | - | - |
+|  Développement | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+|  Étape | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ATTENTION |
+|  Production | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERREUR |
 
 Une ligne dans le fichier de débogage commence généralement par DEBUG, puis fournit le niveau de journalisation, l’action d’installation et le message du journal. Par exemple :
 
@@ -162,7 +166,7 @@ Notez qu’en cas de développement local (à l’aide du SDK), les `/apps` et `
 
 Les clients peuvent accéder à CRXDE Lite sur l’environnement de développement du niveau de création, mais pas sur l’environnement intermédiaire ou de production. Le référentiel immuable (`/libs`, `/apps`) ne peut pas être modifié au moment de l’exécution. Toute tentative de ce type entraînera des erreurs.
 
-Il est possible de lancer l’explorateur de référentiels à partir de Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et d’aperçu. En savoir plus sur le navigateur de référentiel [here](/help/implementing/developing/tools/repository-browser.md).
+En revanche, il est possible de lancer le navigateur de référentiels à partir de Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et d’aperçu. En savoir plus sur le navigateur de référentiels [ici](/help/implementing/developing/tools/repository-browser.md).
 
 Un ensemble d’outils pour le débogage des environnements de développeur d’AEM as a Cloud Service est disponible dans Developer Console pour les environnements de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
 
@@ -190,7 +194,7 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Pour les programmes de Production, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, &quot;Cloud Manager - Rôle de développeur&quot; est nécessaire pour les vidages d’état. Le navigateur de référentiel et les utilisateurs doivent également être définis dans AEM profil de produit Utilisateurs ou AEM administrateurs sur les services de création et de publication afin d’afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
+Pour les programmes de Production, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développeur » est nécessaire pour les vidages de statut et le navigateur de référentiels. Les utilisateurs doivent également être définis dans le profil de produit Utilisateurs d’AEM ou Administrateurs d’AEM sur les services de création et de publication afin d’afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
 
 ### Surveillance des performances {#performance-monitoring}
 

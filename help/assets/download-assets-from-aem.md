@@ -8,7 +8,7 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -42,25 +42,25 @@ Par défaut, [!DNL Experience Manager] déclenche une notification à la fin du 
 ![Notification dans la boîte de réception](assets/inbox-notification-for-large-downloads.png)
 
 
-### Activation des notifications par e-mail pour les téléchargements volumineux {#enable-emails-for-large-downloads}
+### Activer les notifications par e-mail pour les téléchargements volumineux {#enable-emails-for-large-downloads}
 
-Les téléchargements asynchrones sont déclenchés dans l’un des cas suivants :
+Les téléchargements asynchrones sont déclenchés dans l’un des cas suivants :
 
 * S’il y a plus de dix ressources
-* Si la taille de téléchargement est supérieure à 100 Mo
+* Si la taille de téléchargement est supérieure à 100 Mo
 * Si la préparation du téléchargement prend plus de 30 secondes
 
-Bien que le téléchargement asynchrone s’exécute sur le serveur principal, l’utilisateur peut continuer à explorer et à travailler plus loin en Experience Manager. Un mécanisme prêt à l’emploi est nécessaire pour informer l’utilisateur une fois le processus de téléchargement terminé. Pour atteindre cet objectif, les administrateurs peuvent configurer le service de messagerie électronique en configurant un serveur SMTP. Voir [configurer le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#sending-email).
+Bien que le téléchargement asynchrone s’exécute sur le serveur principal, l’utilisateur peut continuer à explorer et à travailler dans Experience Manager. Un mécanisme prêt à l’emploi est obligatoire pour informer l’utilisateur une fois que le processus de téléchargement est terminé. Pour atteindre cet objectif, les administrateurs peuvent configurer le service de messagerie en configurant un serveur SMTP. Consultez [Configurer le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=fr#sending-email).
 
-Une fois le service de messagerie configuré, les administrateurs et les utilisateurs peuvent activer les notifications électroniques à partir de l’interface du Experience Manager.
+Une fois que le service de messagerie est configuré, les administrateurs et les utilisateurs peuvent activer les notifications par e-mail provenant de l’interface Experience Manager.
 
-Pour activer les notifications par courrier électronique :
+Pour activer les notifications par e-mail :
 
 1. Connectez-vous à [!DNL Experience Manager Assets].
 1. Cliquez sur l’icône de l’utilisateur dans le coin supérieur droit, puis cliquez sur **[!UICONTROL Mes préférences]**. La fenêtre des Préférences utilisateur s’ouvre.
-1. Sélectionnez la **[!UICONTROL Notifications électroniques de téléchargement de ressources]** , puis cliquez sur **[!UICONTROL Accepter]**.
+1. Sélectionnez la case à cocher **[!UICONTROL Notifications par e-mail du téléchargement de ressources]** et cliquez sur **[!UICONTROL Accepter]**.
 
-   ![enable-email-notifications-for-big-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
+   ![enable-email-notifications-for-large-downloads](/help/assets/assets/enable-email-for-large-downloads.png)
 
 
 Pour télécharger des ressources, procédez comme suit :

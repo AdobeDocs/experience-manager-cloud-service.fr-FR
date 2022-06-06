@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: 4d9a56ebea84d6483a2bd052d62ee6eb8c0bd9d5
 workflow-type: tm+mt
 source-wordcount: '3053'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -357,7 +357,7 @@ Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dé
 
 ## Clients avec une adresse sortante dédiée héritée {#legacy-dedicated-egress-address-customers}
 
-Si vous avez reçu l’attribution d’une adresse IP de sortie dédiée avant la version 2021.09.30, votre fonction d’adresse IP de sortie dédiée ne prend en charge que les ports HTTP et HTTPS.
+Si vous avez reçu une adresse IP de sortie dédiée avant le 30/09/2021, votre fonction d’adresse IP de sortie dédiée ne prend en charge que les ports HTTP et HTTPS.
 Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés.
 
 ## Réseau privé virtuel (VPN) {#vpn}

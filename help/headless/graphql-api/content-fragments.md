@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: e43feb24adad7ef16dd92f59ed1f37638febd631
 workflow-type: tm+mt
 source-wordcount: '2569'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -481,7 +481,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
 * Secours lors de l’interrogation de fragments imbriqués :
 
-   * Si une variation donnée n’existe pas dans un fragment imbriqué, la variable **Principal** est renvoyée.
+   * Si une variation donnée n’existe pas dans un fragment imbriqué, la variation **Principal** est renvoyée.
 
 ## Requête du point d’entrée GraphQL à partir d’un site web externe {#query-graphql-endpoint-from-external-website}
 

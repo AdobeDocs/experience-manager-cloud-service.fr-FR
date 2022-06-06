@@ -94,7 +94,7 @@ Pour que les utilisateurs disposent de la meilleure expérience possible lors de
 Observez ces bonnes pratiques pour votre approche générale de débogage :
 
 * Validez les fonctionnalités et les performances avec la version d’aperçu de l’application.
-* Validez les fonctionnalités et les performances avec la version d’exploitation de l’application.
+* Validez les fonctionnalités et les performances avec la version de production de l’application.
 * Validez à l’aide de l’aperçu JSON de l’éditeur de fragment de contenu.
 * Inspectez le JSON dans l’application cliente pour vérifier la présence de problèmes d’application cliente ou de diffusion.
 * Inspectez le JSON à l’aide de GraphQL pour vérifier la présence de problèmes liés au contenu mis en cache ou à AEM.

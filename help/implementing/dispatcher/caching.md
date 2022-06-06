@@ -1,12 +1,12 @@
 ---
-title: Mise en cache dans AEM as a Cloud Service
-description: 'Mise en cache dans AEM as a Cloud Service '
+title: Mise en cache dans AEM as a Cloud Service
+description: 'Mise en cache dans AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: 91a88cb02192defdd651ecb6d108d4540186d06e
 workflow-type: tm+mt
 source-wordcount: '2183'
-ht-degree: 62%
+ht-degree: 64%
 
 ---
 
@@ -44,7 +44,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    >[!NOTE]
    >L’en-tête Surrogate-Control s’applique au réseau de diffusion de contenu géré par l’Adobe. Si vous utilisez un [CDN géré par le client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), un en-tête différent peut être requis en fonction de votre fournisseur de réseau de diffusion de contenu.
 
-   Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou ceux qui correspondent à une expression régulière (regex) large afin qu’ils ne soient pas appliqués au contenu que vous souhaitez peut-être garder confidentiel. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Ceci étant dit, AEM as a Cloud Service va supprimer l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer AEM à toujours appliquer les en-têtes de mise en cache, vous pouvez ajouter l’option **always** comme suit :
+   Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou ceux qui correspondent à une expression régulière (regex) large afin qu’ils ne soient pas appliqués au contenu que vous souhaitez peut-être garder confidentiel. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Cela étant dit, AEM as a Cloud Service va supprimer l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer AEM à toujours appliquer les en-têtes de mise en cache, vous pouvez ajouter l’option **always** comme suit :
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -76,7 +76,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
 
    >[!NOTE]
-   >Veuillez noter que le Dispatcher peut toujours mettre en cache le contenu en fonction de ses propres [règles de mise en cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html). Pour rendre le contenu réellement privé, veillez à ce qu’il ne soit pas mis en cache par le Dispatcher.
+   >Veuillez noter que le Dispatcher peut toujours mettre en cache le contenu en fonction de ses propres [règles de mise en cache](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17497.html?lang=fr). Pour rendre le contenu réellement privé, veillez à ce qu’il ne soit pas mis en cache par le Dispatcher.
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 
@@ -203,7 +203,7 @@ En général, il n’est pas nécessaire d’invalider le cache du Dispatcher. V
 
 ### Invalidation du cache du Dispatcher pendant l’activation/la désactivation {#cache-activation-deactivation}
 
-Comme les versions précédentes d’AEM, la publication ou l’annulation de publication des pages effacera le contenu du cache du Dispatcher. Si un problème de mise en cache est suspecté, les clients doivent republier les pages en question et s’assurer qu’un hôte virtuel correspond à ServerAlias localhost, obligatoire pour l’invalidation du cache du Dispatcher.
+Comme les versions précédentes d’AEM, la publication ou l’annulation de publication des pages effacera le contenu du cache du Dispatcher. Si un problème de mise en cache est suspecté, les clients doivent publier de nouveau les pages en question et s’assurer qu’un hôte virtuel correspond à l’hôte local ServerAlias, obligatoire pour l’invalidation du cache du Dispatcher.
 
 
 Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’une ressource de l’auteur, elle utilise l’agent de vidage pour invalider les chemins d’accès appropriés sur son Dispatcher. Le chemin d’accès mis à jour est supprimé du cache du Dispatcher, ainsi que de ses parents, jusqu’à un niveau (vous pouvez le configurer avec l’événement [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#invalidating-files-by-folder-level)).
@@ -213,7 +213,7 @@ Lorsque l’instance de publication reçoit une nouvelle version d’une page ou
 En général, il n’est pas nécessaire d’invalider manuellement le contenu du Dispatcher, mais cela est possible si nécessaire.
 
 >[!NOTE]
->Avant AEM as a Cloud Service, il existait deux manières d’invalider le cache du Dispatcher.
+>Avant AEM as a Cloud Service, il existait deux manières d’invalider le cache du Dispatcher.
 >
 >1. Appeler l’agent de réplication, en spécifiant l’agent de vidage de publication du Dispatcher
 >2. Appeler directement l’API `invalidate.cache` (par exemple, `POST /dispatcher/invalidate.cache`)

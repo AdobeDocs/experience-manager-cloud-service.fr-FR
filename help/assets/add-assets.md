@@ -7,7 +7,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
 workflow-type: tm+mt
 source-wordcount: '2948'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -153,7 +153,7 @@ Un compte ou un compartiment de stockage externe d’Azure ou d’AWS est néces
 
 >[!NOTE]
 >
->Créez le conteneur ou le compartiment de compte de stockage comme privé et acceptez les connexions uniquement à partir de demandes autorisées. Toutefois, des restrictions supplémentaires sur les connexions réseau d’entrée ne sont pas prises en charge.
+>Créez le conteneur ou le compartiment de compte de stockage comme privé et acceptez les connexions uniquement à partir de requêtes autorisées. Toutefois, des restrictions supplémentaires sur les connexions réseau entrantes ne sont pas prises en charge.
 
 ### Configuration de l’outil d’importation en bloc {#configure-bulk-ingestor-tool}
 

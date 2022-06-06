@@ -8,7 +8,7 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: cbaf9faf6cc8c2079dc0abc0a775ff4a0e2cc762
 workflow-type: tm+mt
 source-wordcount: '1795'
-ht-degree: 74%
+ht-degree: 96%
 
 ---
 
@@ -68,7 +68,7 @@ L’article contient des recommandations, des documents de référence et des re
 
 Dans [!DNL Experience Manager] as a [!DNL Cloud Service], vous pouvez charger directement les ressources dans l’espace de stockage cloud à l’aide de l’API HTTP. Pour charger un fichier binaire, procédez comme suit. Exécutez ces étapes dans une application externe et non dans la JVM [!DNL Experience Manager].
 
-1. [Envoyez une requête HTTP](#initiate-upload). Cela permet d’informer le déploiement [!DNL Experience Manage] de votre intention de charger un nouveau fichier binaire.
+1. [Envoyez une requête HTTP](#initiate-upload). Cela permet d’informer le déploiement [!DNL Experience Manage]r de votre intention de charger un nouveau fichier binaire.
 1. [Placez (PUT) le contenu du fichier binaire](#upload-binary) sur un ou plusieurs URI fournis par la requête de lancement.
 1. [Envoyez une requête HTTP](#complete-upload) pour informer le serveur que le contenu du fichier binaire a bien été chargé.
 
@@ -127,32 +127,32 @@ Une seule requête peut être utilisée afin de lancer des chargements pour plus
 
 ### Chargement d’un fichier binaire {#upload-binary}
 
-La sortie de lancement d’un chargement comprend une ou plusieurs valeurs d’URI de chargement. Si plusieurs URI sont fournis, le client peut diviser le fichier binaire en parties et envoyer des requêtes PUT de chaque partie aux URI de chargement fournis, dans l’ordre. Si vous choisissez de diviser le fichier binaire en parties, suivez les instructions suivantes :
+La sortie de lancement d’un chargement comprend une ou plusieurs valeurs d’URI de chargement. Si plusieurs URI sont fournis, le client peut diviser le fichier binaire en plusieurs parties et effectuer des requêtes PUT de chaque partie vers le fichier URI de chargement, dans l’ordre. Si vous choisissez de diviser le fichier binaire en plusieurs parties, suivez les instructions suivantes :
 
 * Chaque partie, à l’exception de la dernière, doit avoir une taille supérieure ou égale à `minPartSize`.
 * Chaque partie doit avoir une taille inférieure ou égale à `maxPartSize`.
-* Si la taille de votre fichier binaire dépasse `maxPartSize`, divisez le fichier binaire en parties pour le charger.
+* Si la taille de votre fichier binaire dépasse `maxPartSize`, divisez le fichier binaire en plusieurs parties pour le charger.
 * Vous n’êtes pas tenu d’utiliser tous les URI.
 
-Si la taille de votre fichier binaire est inférieure ou égale à `maxPartSize`, vous pouvez transférer le fichier binaire entier vers un seul URI de chargement. Si plusieurs URI de chargement sont fournis, utilisez le premier et ignorez le reste. Vous n’êtes pas tenu d’utiliser tous les URI.
+Si la taille de votre fichier binaire est inférieure ou égale à `maxPartSize`, vous pouvez plutôt charger le fichier binaire entier vers un seul URI de chargement. Si plusieurs URI de chargement sont fournis, utilisez le premier et ignorez les autres. Vous n’êtes pas tenu d’utiliser tous les URI.
 
 Les nœuds de bordure CDN permettent d’accélérer le chargement de fichiers binaires requis.
 
-Pour ce faire, la méthode la plus simple consiste à utiliser la valeur de `maxPartSize` comme taille de pièce. Le contrat d’API garantit qu’il existe suffisamment d’URI de chargement pour charger le fichier binaire si vous utilisez cette valeur comme taille de pièce. Pour ce faire, divisez le fichier binaire en parties de taille `maxPartSize`, en utilisant un URI pour chaque partie, dans l’ordre. La dernière partie peut avoir une taille inférieure ou égale à `maxPartSize`. Supposons, par exemple, que la taille totale du fichier binaire soit de 20 000 octets, la variable `minPartSize` est de 5 000 octets, `maxPartSize` est de 8 000 octets et le nombre d’URI de chargement est de 5. Procédez comme suit :
+Pour ce faire, la méthode la plus simple consiste à utiliser une partie d’une taille de `maxPartSize`. Le contrat d’API garantit qu’il existe suffisamment d’URI de chargement pour charger le fichier binaire si vous utilisez une partie de cette taille. Pour ce faire, divisez le fichier binaire en parties d’une taille de `maxPartSize`, en utilisant un URI pour chaque partie, dans l’ordre. La dernière partie peut avoir une taille inférieure ou égale à `maxPartSize`. Par exemple, en supposant que la taille totale du fichier binaire soit de 20 000 octets, le `minPartSize` est de 5 000 octets, `maxPartSize` est de 8 000 octets, et le nombre d’URI de chargement est de 5. Procédez comme suit :
 
-* Chargez les 8 000 premiers octets du fichier binaire à l’aide du premier URI de chargement.
-* Chargez les 8 000 secondes octets du fichier binaire à l’aide du deuxième URI de chargement.
-* Transférez les 4 000 derniers octets du fichier binaire à l’aide du troisième URI de chargement. Puisqu’il s’agit de la dernière partie, elle n’a pas besoin d’être plus grande que `minPartSize`.
+* Chargez les 8 000 premiers octets du fichier binaire à l’aide du premier URI de chargement.
+* Chargez les 8 000 octets suivants du fichier binaire à l’aide du deuxième URI de chargement.
+* Chargez les 4 000 derniers octets du fichier binaire à l’aide du troisième URI de chargement. Puisqu’il s’agit de la dernière partie, elle n’a pas besoin d’être plus grande que `minPartSize`.
 * Vous n’avez pas besoin d’utiliser les deux derniers URI de chargement. Vous pouvez les ignorer.
 
-Une erreur courante consiste à calculer la taille de la partie en fonction du nombre d’URI de chargement fournis par l’API. Le contrat d’API ne garantit pas que cette approche fonctionne et peut effectivement entraîner des tailles de parties qui ne sont pas comprises entre `minPartSize` et `maxPartSize`. Cela peut entraîner des échecs de chargement binaire.
+Une erreur courante est de calculer la taille de la partie en fonction du nombre d’URI de chargement fournis par l’API. Le contrat d’API ne garantit pas que cette approche fonctionne et peut effectivement entraîner des tailles de parties qui ne sont pas comprises entre `minPartSize` et `maxPartSize`. Cela peut entraîner des échecs de chargement de fichiers binaires.
 
-Encore une fois, le moyen le plus simple et le plus sûr est d&#39;utiliser simplement des pièces de taille égale à `maxPartSize`.
+Encore une fois, le moyen le plus facile et le plus sûr est d’utiliser simplement des parties de taille égale à `maxPartSize`.
 
 En cas de succès du chargement, le serveur répond à chaque requête avec un code d’état `201`.
 
 >[!NOTE]
-Pour plus d’informations sur l’algorithme de chargement, voir [documentation officielle sur les fonctionnalités](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) et [Documentation des API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) dans le projet Apache Jackrabbit Oak.
+Pour plus d’informations sur l’algorithme de chargement, consultez la [documentation officielle sur les fonctionnalités](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) et la [documentation de l’API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) dans le projet Apache Jackrabbit Oak.
 
 ### Fin du chargement {#complete-upload}
 
@@ -196,7 +196,7 @@ La nouvelle méthode de chargement n’est prise en charge que pour [!DNL Adobe 
 >[!MORELIKETHIS]
 * [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
 * [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
-* [Documentation Apache Jackrabbit Oak pour le téléchargement direct](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
+* [Documentation Apache Jackrabbit Oak pour le chargement direct](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 
 ## Workflows de traitement et de post-traitement des ressources {#post-processing-workflows}

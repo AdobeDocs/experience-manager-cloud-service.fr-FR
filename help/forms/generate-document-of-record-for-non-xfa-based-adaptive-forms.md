@@ -5,7 +5,7 @@ exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
 workflow-type: tm+mt
 source-wordcount: '3658'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Vous pouvez :
 
 Avant de commencer à apprendre et à préparer les ressources requises pour un document d’enregistrement :
 
-**Modèle de base :** Un modèle XFA (fichier XDP) créé dans Forms Designer ou un formulaire Acrobat (AcroForm). Le [modèle de base](#base-template-of-a-document-of-record), également appelé métamodèle, est utilisé pour spécifier les informations de style et de marque pour un document d’enregistrement. Chargez votre modèle XFA (fichier XDP) sur votre instance AEM Forms au préalable.
+**Modèle de base :** un modèle XFA (fichier XDP) créé dans Forms Designer ou un formulaire Acrobat Form (AcroForm). Le [modèle de base](#base-template-of-a-document-of-record), également appelé métamodèle, est utilisé pour spécifier les informations de style et de marque pour un document d’enregistrement. Chargez votre modèle XFA (fichier XDP) sur votre instance AEM Forms au préalable.
 
 **Formulaire adaptatif :** le formulaire adaptatif pour lequel le document d’enregistrement doit être généré.
 
@@ -38,7 +38,7 @@ Avant de commencer à apprendre et à préparer les ressources requises pour un 
 
 Chargez votre modèle XFA (fichier XDP) vers votre instance AEM Forms. Suivez les étapes suivantes pour configurer un formulaire adaptatif afin d’utiliser un modèle XFA (fichier XDP) comme modèle de document d’enregistrement :
 
-1. Dans l’instance d’auteur du Experience Manager, cliquez sur **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents].**
+1. Dans l’instance d’auteur Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
 1. Sélectionnez un formulaire, puis cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans la fenêtre Propriétés, appuyez sur **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
@@ -51,7 +51,7 @@ Votre formulaire adaptatif est maintenant configuré pour utiliser un fichier XD
 
 Chargez votre PDF Adobe Acrobat (Acroform) sur votre instance AEM Forms. Suivez les étapes suivantes pour configurer un formulaire adaptatif afin d’utiliser Adobe Acrobat PDF (acroform) comme modèle de document d’enregistrement :
 
-1. Dans l’instance d’auteur du Experience Manager, cliquez sur **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents].**
+1. Dans l’instance d’auteur Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
 1. Sélectionnez un formulaire, puis cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans la fenêtre Propriétés, appuyez sur **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
@@ -68,11 +68,11 @@ Lorsqu’un formulaire adaptatif est configuré pour générer automatiquement u
 * Les développeurs de formulaires n’ont pas à masquer manuellement les champs marqués comme exclus du document d’enregistrement. Les documents d’enregistrement générés automatiquement sont préconfigurés pour exclure ces champs.
 * L’option de génération automatique du document d’enregistrement permet de gagner du temps lors de la création d’un modèle de formulaire pour le document d’enregistrement.
 * L’option de génération automatique du document d’enregistrement vous permet d’utiliser des styles et des aspects différents en utilisant différents modèles de base. Il permet de sélectionner le style et l’apparence appropriés pour le document d’enregistrement de votre entreprise. Si vous ne spécifiez pas de style, les styles système sont définis en tant que valeur par défaut.
-* Le document d’enregistrement généré automatiquement garantit que toute modification du formulaire est immédiatement répercutée dans le document d’enregistrement.
+* La génération automatique du document d’enregistrement permet de s’assurer que toute modification du formulaire se répercute immédiatement dans le document d’enregistrement.
 
 Suivez les étapes suivantes pour configurer un formulaire adaptatif afin de générer automatiquement un document d’enregistrement :
 
-1. Dans l’instance d’auteur du Experience Manager, cliquez sur **[!UICONTROL Forms]** > **[!UICONTROL Forms et documents].**
+1. Dans l’instance d’auteur Experience Manager, cliquez sur **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents].**
 1. Sélectionnez un formulaire, puis cliquez sur **[!UICONTROL Propriétés]**.
 1. Dans la fenêtre Propriétés, appuyez sur **[!UICONTROL Modèle de formulaire]**.
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, dans la liste déroulante **[!UICONTROL Sélectionner à partir de]**, sélectionnez **[!UICONTROL Schéma]** ou **[!UICONTROL Aucun]**. Vous pouvez également sélectionner un modèle de formulaire lorsque vous créez un formulaire.
@@ -98,7 +98,7 @@ Liez les champs de formulaire adaptatif aux champs de modèle pour afficher les 
 In the following video Adaptive Form components are binded with corresponding Acroform template fields and the Document of Record is sent as an email attachment.
 -->
 
-Vous pouvez utiliser l’action d’envoi Envoyer un courrier électronique, Processus de Experience Manager conjointement avec [Étape Document d’enregistrement et autres actions d’envoi](configuring-submit-actions.md) pour recevoir un document d’enregistrement.
+Vous pouvez utiliser l’action de soumission de workflow Experience Manager Envoyer un e-mail conjointement avec l’étape [Document d’enregistrement et autres actions de soumission](configuring-submit-actions.md) pour recevoir un document d’enregistrement.
 
 ## Mises à jour incrémentielles du modèle de document d’enregistrement {#document-of-record-template-incremental-updates}
 
@@ -300,7 +300,7 @@ Un modèle de base sert à définir l’en-tête, le pied de page, le style et l
 
 * Les propriétés de ces champs sont appliquées aux champs du document d’enregistrement. Ces champs doivent respecter la convention d’affectation des noms de `AF_<name of field in all caps>_XFO`. Par exemple, le champ contenant une case à cocher doit être nommé `AF_CHECKBOX_XFO`.
 
-Pour créer un modèle de base, procédez comme suit dans Forms Designer.
+Pour créer un modèle de base, procédez comme suit dans Forms Designer.
 
 1. Cliquez sur **[!UICONTROL Fichier]** > **[!UICONTROL Nouveau]**.
 1. Sélectionnez l’option **[!UICONTROL Basé sur un modèle]**.
@@ -325,7 +325,7 @@ Respectez rigoureusement les conventions et instructions mentionnées ci-dessus 
 
 Lors de la génération d’un document d’enregistrement, vous pouvez modifier les informations d’identité graphique pour le document d’enregistrement sous l’onglet Document d’enregistrement. L’onglet Document d’enregistrement inclut des options telles que le logo, l’apparence, la mise en page, l’en-tête et le pied de page, la clause de non-responsabilité et si vous souhaitez inclure des options de case à cocher et de bouton radio désélectionnées.
 
-Pour localiser les informations d’identité graphique que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que les paramètres régionaux du navigateur sont correctement définis. Pour personnaliser les informations d’identité graphique du document d’enregistrement, suivez les étapes suivantes :
+Pour localiser les informations de branding que vous saisissez dans l’onglet Document d’enregistrement, assurez-vous que le paramètre régional du navigateur est défini correctement. Pour personnaliser les informations d’identité graphique du document d’enregistrement, suivez les étapes suivantes :
 
 1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis appuyez sur ![configurer](assets/configure.png).
 1. Appuyez sur ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
@@ -333,7 +333,7 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
 
    ![brandingtemplate](assets/brandingtemplate.png)
 
-   Si vous choisissez de sélectionner un modèle personnalisé, sélectionnez un fichier XDP sur votre serveur [!DNL AEM Forms]. Si vous souhaitez utiliser un modèle qui n’est pas déjà sur votre [!DNL AEM Forms] , vous devez d’abord télécharger le fichier XDP sur votre [!DNL AEM Forms] serveur.
+   Si vous choisissez de sélectionner un modèle personnalisé, sélectionnez un fichier XDP sur votre serveur [!DNL AEM Forms]. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur [!DNL AEM Forms], vous devriez au préalable charger le fichier XDP sur votre serveur [!DNL AEM Forms].
 
 1. Si vous sélectionnez un modèle par défaut ou un modèle personnalisé, une partie ou la totalité des propriétés suivantes s’affichent sous l’onglet Document d’enregistrement. Spécifiez-les en conséquence :
 
@@ -353,7 +353,7 @@ Pour localiser les informations d’identité graphique que vous saisissez dans 
 
    >[!NOTE]
    >
-   >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à la version 6.3 pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous que les éléments suivants sont présents dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
+   >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à la version 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous de la présence des éléments suivants dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
 
    ```xml
    <proto>
@@ -387,7 +387,7 @@ Champs dans un panneau rendu dans une mise en page Colonne dans le document d’
 
 Les paramètres d’un document d’enregistrement permettent de sélectionner les options à inclure dans le document d’enregistrement. Par exemple, une banque accepte les informations suivantes dans un formulaire : nom, âge, numéro de sécurité sociale et numéro de téléphone. Le formulaire génère un numéro de compte bancaire et les informations sur la banque. Vous pouvez choisir de n’afficher que le nom, le numéro de sécurité sociale, le compte bancaire et les informations bancaires dans le document d’enregistrement.
 
-La définition du composant Document d’enregistrement est disponible sous ses propriétés. Pour accéder aux propriétés d’un composant, sélectionnez le composant et cliquez sur ![cmppr](assets/cmppr.png) dans le recouvrement. Les propriétés sont répertoriées dans la barre latérale. Vous y trouvez les paramètres suivants.
+Les paramètres du composant Document d’enregistrement sont disponible sous ses propriétés. Pour accéder aux propriétés d’un composant, sélectionnez le composant et cliquez sur ![cmppr](assets/cmppr.png) dans le recouvrement. Les propriétés sont répertoriées dans la barre latérale. Vous y trouvez les paramètres suivants.
 
 **Paramètres sur le terrain**
 
@@ -400,16 +400,16 @@ La définition du composant Document d’enregistrement est disponible sous ses 
 **Paramètres des niveaux de formulaires**
 
 * **Inclure les champs non liés dans le document d’enregistrement** : la définition de la propriété comprend les champs non liés du schéma basé sur le formulaire adaptatif du document d’enregistrement. Par défaut, le paramètre est true.
-* **Exclure des champs du document d’enregistrement (DE) s’il est masqué** : la définition de cette propriété remplace le comportement de la propriété de niveau de champ Exclure du document d’enregistrement lorsque le paramètre est différent de true. Si les champs sont masqués au moment de l’envoi du formulaire, ils sont exclus du document d’enregistrement si la propriété est définie sur true, à condition que la propriété &quot;Exclure du document d’enregistrement&quot; ne soit pas définie.
+* **Exclure des champs du document d’enregistrement (DE) s’il est masqué** : la définition de cette propriété remplace le comportement de la propriété de niveau de champ Exclure du document d’enregistrement lorsque le paramètre est différent de true. Si des champs sont masqués lors de l’envoi du formulaire, ils sont exclus du document d’enregistrement si la propriété est définie sur true et si la propriété « Exclure du document d’enregistrement » n’est pas définie.
 
-## Utilisation d’un fichier XCI personnalisé
+## Utiliser un fichier XCI personnalisé
 
-Un fichier XCI permet de définir différentes propriétés d’un document. Forms as a Cloud Service comporte un fichier XCI maître. Vous pouvez utiliser un fichier XCI personnalisé pour remplacer une ou plusieurs propriétés par défaut spécifiées dans le fichier XCI maître. Par exemple, vous pouvez choisir d’incorporer une police dans un document ou d’activer la propriété balisée pour tous les documents. Le tableau suivant spécifie les options XCI :
+Un fichier XCI permet de définir différentes propriétés d’un document. Forms as a Cloud Service comporte un fichier XCI maître. Vous pouvez utiliser un fichier XCI personnalisé pour remplacer une ou plusieurs propriétés par défaut spécifiées dans le fichier XCI maître. Par exemple, vous pouvez choisir d’incorporer une police dans un document ou d’activer la propriété balisée pour tous les documents. Le tableau suivant indique les options XCI :
 
 | Option XCI | Description |
 |--- |--- |
-| config/present/pdf/creator | Identifie le créateur du document à l’aide de l’entrée Créateur du dictionnaire d’informations sur le document. Pour plus d’informations sur ce dictionnaire, voir [Guide de référence du PDF](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
-| config/present/pdf/producer | Identifie le producteur du document à l’aide de l’entrée Producteur du dictionnaire d’informations sur le document. Pour plus d’informations sur ce dictionnaire, voir [Guide de référence du PDF](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/pdf/creator | Identifie le créateur du document à l’aide de l’entrée Créateur du dictionnaire d’informations sur le document. Pour plus d’informations sur ce dictionnaire, consultez le [guide de référence PDF](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
+| config/present/pdf/producer | Identifie le producteur du document à l’aide de l’entrée Producteur du dictionnaire d’informations sur le document. Pour plus d’informations sur ce dictionnaire, consultez le [guide de référence PDF](https://www.adobe.com/content/dam/acom/en/devnet/pdf/pdfs/pdf_reference_archives/PDFReference.pdf). |
 | config/present/layout | Contrôle si la sortie est un panneau unique ou si elle est paginée. |
 | config/present/pdf/compression/level | Indique le degré de compression à utiliser lors de la génération d’un document PDF. |
 | config/present/pdf/fontInfo/embed | Contrôle l’incorporation des polices dans le document de sortie. |
@@ -424,22 +424,22 @@ Un fichier XCI permet de définir différentes propriétés d’un document. For
 | config/present/common/log/to | Contrôle l’emplacement dans lequel les données du journal ou les données de sortie sont écrites. |
 | config/present/output/to | Contrôle l’emplacement dans lequel les données du journal ou les données de sortie sont écrites. |
 | config/present/script/currentPage | Indique la page initiale à l’ouverture du document. |
-| config/present/script/exclude | Informe Forms as a Cloud Service les événements à ignorer. |
+| config/present/script/exclude | Informe Forms as a Cloud Service des événements à ignorer. |
 | config/present/pdf/linearized | Contrôle si le document PDF de sortie est linéarisé. |
 | config/present/script/runScripts | Contrôle l’ensemble de scripts que Forms as a Cloud Service exécute. |
 | config/present/pdf/tagged | Contrôle l’inclusion de balises dans le document PDF de sortie. Les balises, dans le contexte d’un PDF, sont des informations supplémentaires incluses dans un document afin d’exposer la structure logique du document. Les balises aident à l’accessibilité et au reformatage. Par exemple, un numéro de page peut être balisé en tant qu’artefact afin qu’un lecteur d’écran ne l’indique pas au milieu du texte. Bien que les balises rendent un document plus utile, elles augmentent également sa taille et le temps de traitement pour le créer. |
 | config/present/pdf/fontInfo/alwaysEmbed | Spécifie une police incorporée dans le document de sortie. |
 | config/present/pdf/fontInfo/neverEmbed | Spécifie une police qui ne doit jamais être incorporée dans le document de sortie. |
-| config/present/pdf/pdfa/part | Indique le numéro de version de la spécification PDF/A à laquelle le document est conforme. |
-| config/present/pdf/pdfa/amd | Indique le niveau de modification de la spécification PDF/A. |
-| config/present/pdf/pdfa/conformance | Indique le niveau de conformité avec la spécification PDF/A. |
+| config/present/pdf/pdfa/part | Spécifie le numéro de version de la spécification PDF/A à laquelle le document est conforme. |
+| config/present/pdf/pdfa/amd | Spécifie le niveau de modification de la spécification PDF/A. |
+| config/present/pdf/pdfa/conformance | Spécifie le niveau de conformité avec la spécification PDF/A. |
 | config/present/pdf/version | Spécifie la version du document PDF à générer |
 | config/present/pdf/version/map | Spécifie les polices de secours pour le document. |
 
-### Utilisation d’un fichier XCI personnalisé dans votre environnement Forms as a Cloud Service
+### Utilisez un fichier XCI personnalisé dans votre environnement Forms as a Cloud Service
 
 1. Ajoutez le fichier XCI personnalisé à votre projet de développement.
-1. Spécifiez les [propriété intégrée](/help/implementing/deploying/configuring-osgi.md):
+1. Spécifiez les [propriété intégrée](/help/implementing/deploying/configuring-osgi.md) suivantes :
 
    ```JSON
     {
@@ -455,11 +455,11 @@ Un fichier XCI permet de définir différentes propriétés d’un document. For
     }
    ```
 
-1. Déployez le projet dans votre environnement de Cloud Service.
+1. Déployez le projet dans votre environnement Cloud Service.
 
-### Utilisation d’un fichier XCI personnalisé dans votre environnement de développement Forms as a Cloud Service local
+### Utilisez un fichier XCI personnalisé dans votre environnement de développement Forms as a Cloud Service local
 
 1. Chargez le fichier XCI dans votre environnement de développement local.
-1. Ouvrez Cloud Service SDK Configuration Manager. L’URL par défaut est: <http://localhost:4502/system/console/configMgr>.
-1. Recherchez et ouvrez le **[!UICONTROL Forms adaptatif et canal web de communication interactive]** configuration.
-1. Spécifiez le chemin du fichier XCI et cliquez sur **[!UICONTROL Enregistrer]**.
+1. Ouvrez le gestionnaire de configuration du SDK Cloud Service. L’URL par défaut est : <http://localhost:4502/system/console/configMgr>.
+1. Recherchez et ouvrez la configuration **[!UICONTROL du canal web pour la communication interactive et les formulaires adaptatifs]**.
+1. Spécifiez le chemin d’accès du fichier XCI et cliquez sur **[!UICONTROL Enregistrer]**.

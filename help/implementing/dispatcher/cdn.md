@@ -5,8 +5,8 @@ feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '989'
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 
 >[!NOTE]
 >
->Le réseau de diffusion de contenu Adobe n’est pas facultatif. Les clients qui apportent leur propre réseau de diffusion de contenu doivent le pointer vers le réseau de diffusion de contenu géré AEM.
+>Le réseau CDN d’Adobe n’est pas facultatif. Les clients qui apportent leur propre réseau CDN doivent le diriger vers le réseau CDN géré par AEM.
 
 Instructions de configuration :
 

@@ -5,15 +5,15 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
 workflow-type: tm+mt
 source-wordcount: '2535'
-ht-degree: 78%
+ht-degree: 87%
 
 ---
 
 # Recherche et indexation de contenu {#indexing}
 
-## Changements dans AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
+## Changements dans AEM as a Cloud Service {#changes-in-aem-as-a-cloud-service}
 
-Avec AEM as a Cloud Service, Adobe s’éloigne d’un modèle centré sur les instances AEM pour passer à une vue basée sur les services avec des conteneurs n-x pilotés par des pipelines CI/CD dans Cloud Manager. Au lieu de configurer et de gérer les index sur des instances AEM uniques, la configuration d’index doit être spécifiée avant un déploiement. Les changements de configuration dans la production enfreignent clairement les politiques CI/CD. Il en va de même pour les changements d’index, car ceux-ci peuvent avoir un impact sur la stabilité et les performances du système s’ils ne sont pas testés et réindexés avant leur mise en production.
+Avec AEM as a Cloud Service, Adobe s’éloigne d’un modèle centré sur les instances AEM pour passer à une vue basée sur les services avec des conteneurs n-x pilotés par des pipelines CI/CD dans Cloud Manager. Au lieu de configurer et de gérer les index sur des instances AEM uniques, la configuration d’index doit être spécifiée avant un déploiement. Les changements de configuration dans la production enfreignent clairement les politiques CI/CD. Il en va de même pour les changements d’index, car ceux-ci peuvent avoir un impact sur la stabilité et les performances du système s’ils ne sont pas testés et réindexés avant leur mise en production.
 
 Voici la liste des principaux changements par rapport à AEM version 6.5 et antérieure :
 
@@ -21,7 +21,7 @@ Voici la liste des principaux changements par rapport à AEM version 6.5 et ant
 
 1. Les utilisateurs ne changent pas d’index sur une seule instance AEM et n’ont plus à s’inquiéter des vérifications de cohérence ni de la réindexation.
 
-1. En général, les changements d’index sont amorcés avant le passage à la production afin de ne pas contourner les passerelles de qualité dans les pipelines CI/CD de Cloud Manager et de ne pas affecter les indicateurs de performance clés métier en production.
+1. En général, les changements d’index sont amorcés avant le passage à la production afin de ne pas contourner les passerelles de qualité dans les pipelines CI/CD de Cloud Manager et de ne pas affecter les indicateurs de performance clés métier en production.
 
 1. Toutes les mesures associées, y compris les performances de recherche en production, sont à la disposition des clients au moment de l’exécution afin de fournir une vue holistique sur les sujets de recherche et d’indexation.
 
@@ -31,14 +31,14 @@ Voici la liste des principaux changements par rapport à AEM version 6.5 et ant
 
 1. La configuration de l’index est modifiée par le biais de déploiements. Les modifications apportées à la définition de l’index sont configurées comme les autres modifications apportées au contenu.
 
-1. À un niveau élevé dans AEM as a Cloud Service, avec l’introduction du [modèle de déploiement bleu/vert](#index-management-using-blue-green-deployments), deux ensembles d’index coexisteront : l’un pour l’ancienne version (bleu), et l’autre pour la nouvelle version (vert).
+1. À un niveau élevé dans AEM as a Cloud Service, avec l’introduction du [modèle de déploiement bleu/vert](#index-management-using-blue-green-deployments), deux ensembles d’index coexisteront : l’un pour l’ancienne version (bleu), et l’autre pour la nouvelle version (vert).
 
 1. Les clients peuvent voir si la tâche d’indexation est terminée sur la page de version Cloud Manager et recevront une notification lorsque la nouvelle version sera prête à recevoir le trafic.
 
 1. Restrictions :
-* Actuellement, la gestion des index dans AEM as a Cloud Service n’est prise en charge que pour les index de type `lucene`.
+* Actuellement, la gestion des index dans AEM as a Cloud Service n’est prise en charge que pour les index de type `lucene`.
 * Seuls les analyseurs standard sont pris en charge (c’est-à-dire ceux fournis avec le produit). Les analyseurs personnalisés ne sont pas pris en charge.
-* En interne, d’autres index peuvent être configurés et utilisés pour les requêtes. Par exemple, les requêtes écrites sur la propriété `damAssetLucene` peut, sur Skyline, être exécuté par rapport à une version Elasticsearch de cet index. Cette différence n’est généralement pas visible par l’application et l’utilisateur, mais certains outils tels que le `explain` signale un index différent. Pour connaître les différences entre les index Lucene et les index Elastic, voir [la documentation Elastic dans Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Les clients n’ont pas besoin de configurer directement les index Elasticsearch et ne peuvent pas le faire.
+* En interne, d’autres index peuvent être configurés et utilisés pour les requêtes. Par exemple, les requêtes écrites selon l’index `damAssetLucene` peuvent, sur Skyline, être exécutées par rapport à une version Elasticsearch de cet index. Cette différence n’est généralement pas visible par l’application et par l’utilisateur, mais certains outils tels que la fonctionnalité `explain` signalent un index différent. Pour connaître les différences entre les index Lucene et les index Elastic, consultez [la documentation Elastic dans Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Les clients n’ont pas besoin de configurer directement les index Elasticsearch et ne peuvent pas le faire.
 
 ## Utilisation {#how-to-use}
 
@@ -48,7 +48,7 @@ La définition des index peut comprendre les trois cas d’utilisation suivants�
 1. Mettre à jour une définition d’index existante. Cela signifie ajouter une nouvelle version d’une définition d’index existante..
 1. Supprimer un index existant redondant ou obsolète.
 
-Pour les points 1 et 2 ci-dessus, vous devez créer une définition d’index dans le cadre de votre base de code personnalisé dans le calendrier de publication Cloud Manager correspondant. Pour plus d’informations, reportez-vous à [Déploiement vers AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+Pour les points 1 et 2 ci-dessus, vous devez créer une définition d’index dans le cadre de votre base de code personnalisé dans le calendrier de publication Cloud Manager correspondant. Pour plus d’informations, reportez-vous à [Déploiement vers AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 ## Noms d’index {#index-names}
 
@@ -148,11 +148,11 @@ Dans `ui.apps.structure/pom.xml`, la variable `filters` pour ce module externe, 
 <filter><root>/oak:index</root></filter>
 ```
 
-Une fois la nouvelle définition d’index ajoutée, la nouvelle application doit être déployée via Cloud Manager. Au moment du déploiement, deux tâches sont démarrées, chargées d’ajouter (et de fusionner si nécessaire) les définitions d’index à MongoDB et Azure Segment Store pour la création et la publication, respectivement. Les référentiels sous-jacents sont réindexés avec les nouvelles définitions d’index, avant que la commutation bleu/vert n’ait lieu.
+Une fois la nouvelle définition d’index ajoutée, la nouvelle application doit être déployée via Cloud Manager. Au moment du déploiement, deux tâches sont démarrées, chargées d’ajouter (et de fusionner si nécessaire) les définitions d’index à MongoDB et Azure Segment Store pour la création et la publication, respectivement. Les référentiels sous-jacents sont réindexés avec les nouvelles définitions d’index, avant que la commutation bleu/vert n’ait lieu.
 
 >[!TIP]
 >
->Pour plus de détails sur la structure de package requise pour AEM as a Cloud Service, reportez-vous au document [Structure de projets AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+>Pour plus de détails sur la structure de package requise pour AEM as a Cloud Service, reportez-vous au document [Structure de projets AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
 ## Gestion des index à l’aide de déploiements bleu/vert {#index-management-using-blue-green-deployments}
 
@@ -186,15 +186,15 @@ Lors du développement ou de l’utilisation d’installations sur site, les ind
 
 ### Gestion des index avec déploiement bleu/vert {#index-management-with-blue-green-deployment}
 
-Avec des déploiements bleu/vert, il n’existe pas de temps d’arrêt. Pendant une mise à niveau, pendant un certain temps, l’ancienne version (par exemple, version 1) de l’application, ainsi que la nouvelle version (version 2), s’exécutent simultanément, sur le même référentiel. Si la version 1 nécessite la disponibilité d’un certain index, celui-ci ne doit pas être supprimé dans la version 2 : l’index doit être supprimé ultérieurement, par exemple dans la version 3. à ce stade, il est garanti que la version 1 de l’application n’est plus en cours d’exécution. En outre, les applications doivent être écrites de manière à ce que la version 1 fonctionne correctement, même si la version 2 est en cours d’exécution et si des index de la version 2 sont disponibles.
+Avec des déploiements bleu/vert, il n’existe pas de temps d’arrêt. Pendant une mise à niveau, pendant un certain temps, l’ancienne version (par exemple, la version 1) de l’application, ainsi que la nouvelle version (la version 2), s’exécutent simultanément, sur le même référentiel. Si la version 1 nécessite la disponibilité d’un certain index, celui-ci ne doit pas être supprimé dans la version 2 : l’index doit être supprimé ultérieurement, par exemple dans la version 3. À ce stade, vous devez être sûr que la version 1 de l’application n’est plus en cours d’exécution. En outre, les applications doivent être écrites de manière à ce que la version 1 fonctionne correctement, même si la version 2 est en cours d’exécution et si des index de la version 2 sont disponibles.
 
-Une fois la mise à niveau vers la nouvelle version terminée, les anciens index peuvent être récupérés par le système. Les anciens index peuvent rester un certain temps afin d’accélérer les restaurations (si une restauration doit être nécessaire).
+Une fois la mise à niveau vers la nouvelle version terminée, les anciens index peuvent être récupérés par le système. Les anciens index peuvent rester disponibles un certain temps afin d’accélérer les restaurations (si une restauration doit être nécessaire).
 
 Le tableau suivant présente cinq définitions d’index : l’index `cqPageLucene` est utilisé dans les deux versions tandis que index `damAssetLucene-custom-1` l’est uniquement dans la version 2.
 
 >[!NOTE]
 >
->`<indexName>-custom-<customerVersionNumber>` est nécessaire pour qu’AEM as a Cloud Service puisse marquer cela comme un remplacement d’un index existant.
+>`<indexName>-custom-<customerVersionNumber>` est nécessaire pour qu’AEM as a Cloud Service puisse marquer cela comme un remplacement d’un index existant.
 
 | Index | Index prêt à l’emploi | Utilisation dans la version 1 | Utilisation dans la version 2 |
 |---|---|---|---|
@@ -219,7 +219,7 @@ Une fois qu’Adobe a modifié un index prêt à l’emploi tel que « damAsset
 
 ### Limites actuelles {#current-limitations}
 
-Actuellement, la gestion des index n’est prise en charge que pour les index de type `lucene`. En interne, d’autres index peuvent être configurés et utilisés pour les requêtes, par exemple les index élastiques.
+Actuellement, la gestion des index n’est prise en charge que pour les index de type `lucene`. En interne, d’autres index peuvent être configurés et utilisés pour les requêtes, par exemple les index Elastic.
 
 ### Ajout d’un index {#adding-an-index}
 
@@ -245,7 +245,7 @@ La nouvelle version de l’application utilise la configuration suivante (modifi
 
 >[!NOTE]
 >
->Les définitions d’index dans AEM as a Cloud Service peuvent ne pas correspondre entièrement aux définitions d’index sur une instance de développement locale. L’instance de développement ne dispose pas d’une configuration Tika, alors que les instances AEM as a Cloud Service en ont une. Si vous personnalisez un index avec une configuration Tika, conservez la configuration Tika.
+>Les définitions d’index dans AEM as a Cloud Service peuvent ne pas correspondre entièrement aux définitions d’index sur une instance de développement locale. L’instance de développement ne dispose pas d’une configuration Tika, alors que les instances AEM as a Cloud Service en ont une. Si vous personnalisez un index avec une configuration Tika, conservez la configuration Tika.
 
 ### Annulation d’une modification {#undoing-a-change}
 
@@ -284,13 +284,13 @@ S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, v
 
 Apache Jackrabbit Oak offre des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels les plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de nœuds qui sont ensuite consignés en tant qu’avertissements. De telles requêtes doivent être identifiées en analysant les fichiers journaux, de sorte que les définitions d’index puissent être optimisées. Pour plus d’informations, consultez [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=fr#tips-for-creating-efficient-indexes).
 
-### Index de texte intégral Lucene dans AEM as a Cloud Service {#index-lucene}
+### Index de texte intégral Lucene dans AEM as a Cloud Service {#index-lucene}
 
-L’index de texte intégral `/oak:index/lucene-2` peut devenir très volumineux, car il indexe par défaut tous les nœuds du référentiel AEM. Adobe ayant prévu de supprimer cet index, il ne sera plus utilisé côté produit dans AEM as a Cloud Service et il ne devrait plus être nécessaire d’exécuter le code client. Pour les environnements AEM as a Cloud Service dotés d’index Lucene courants, Adobe travaille avec chacun des ses clients pour suivre une approche coordonnée afin de compenser cet index et d’utiliser des versions optimisées et améliorées de ces index. Aucune action n’est requise de la part clients sans autre préavis de la part d’Adobe. Les clients AEM as a Cloud Service seront informés par Adobe si un action devient nécessaire concernant cette optimisation. Si cet index est requis pour les requêtes personnalisées, la solution temporaire est de créer une copie de cet index avec un nom différent, par exemple : `/oak:index/acme.lucene-1-custom-1`, comme décrit [ici](/help/operations/indexing.md).
+L’index de texte intégral `/oak:index/lucene-2` peut devenir très volumineux, car il indexe par défaut tous les nœuds du référentiel AEM. Adobe ayant prévu de supprimer cet index, il ne sera plus utilisé côté produit dans AEM as a Cloud Service et il ne devrait plus être nécessaire d’exécuter le code client. Pour les environnements AEM as a Cloud Service dotés d’index Lucene courants, Adobe travaille avec chacun des ses clients pour suivre une approche coordonnée afin de compenser cet index et d’utiliser des versions optimisées et améliorées de ces index. Aucune action n’est requise de la part clients sans autre préavis de la part d’Adobe. Les clients AEM as a Cloud Service seront informés par Adobe si une action devient nécessaire concernant cette optimisation. Si cet index est requis pour les requêtes personnalisées, la solution temporaire est de créer une copie de cet index avec un nom différent, par exemple : `/oak:index/acme.lucene-1-custom-1`, comme décrit [ici](/help/operations/indexing.md).
 Cette optimisation ne s’applique pas par défaut aux autres environnements AEM hébergés sur site ou gérés par Adobe Managed Services.
 
 ## Optimisations des requêtes {#index-query}
 
 L’outil **Performance des requêtes** vous permet d’observer les requêtes JCR à la fois populaires et lentes. De plus, il permet d’analyser les requêtes et d’afficher diverses informations, notamment si un index est utilisé ou non pour cette requête.
 
-Contrairement à AEM on-premise, AEM as a Cloud Service n’affiche pas l’outil **Performance des requêtes** dans l’interface utilisateur. Il est désormais disponible dans Developer Console (dans Cloud Manager) dans l’onglet [Queries](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries) (Requêtes).
+Contrairement à AEM on-premise, AEM as a Cloud Service n’affiche pas l’outil **Performance des requêtes** dans l’interface utilisateur. Il est désormais disponible dans Developer Console (dans Cloud Manager) dans l’onglet [Queries](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries) (Requêtes).

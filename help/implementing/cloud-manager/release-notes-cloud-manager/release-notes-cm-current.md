@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de Cloud Manager 2022.5.0 dans Adobe Experience Manager as a Cloud Service
-description: Il s’agit des notes de mise à jour de Cloud Manager 2022.5.0 dans AEM as a Cloud Service.
+title: Notes de mise à jour de Cloud Manager 2022.5.0 dans Adobe Experience Manager as a Cloud Service
+description: Consultez les notes de mise à jour de Cloud Manager 2022.5.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: c48d6f553c6a973a200fb11c2112beaf9be16d1c
 workflow-type: tm+mt
 source-wordcount: '177'
-ht-degree: 16%
+ht-degree: 48%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager 2022.5.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notes de mise à jour de Cloud Manager 2022.5.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Cette page documente les notes de mise à jour de Cloud Manager 2022.5.0 dans AEM as a Cloud Service.
+Cette page présente les notes de mise à jour de Cloud Manager 2022.5.0 dans AEM as a Cloud Service.
 
 >[!NOTE]
 >

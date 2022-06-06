@@ -24,7 +24,7 @@ La date de publication de Cloud Manager dans AEM 2022.01.0 as a Cloud Service es
 
 ## Nouveautés {#what-is-new}
 
-* Cloud Manager [évitera de reconstruire la base de code lorsqu&#39;il détecte que la même validation Git est utilisée](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) dans plusieurs exécutions de pipeline de pile complète.
+* Cloud Manager [évitera de reconstruire la base de code lorsqu’il détecte que la même validation Git est utilisée](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) dans plusieurs exécutions de pipeline full stack.
 * L’accès au journal d’environnement AEM nécessite désormais le profil produit **Gestionnaire de déploiement**. Un bouton désactivé s’affiche dans l’interface utilisateur pour les utilisateurs ne disposant pas de ce profil.
 * L’interface utilisateur n’autorise pas la configuration du pipeline front-end pour un programme où Sites n’est pas activé en tant que solution.
 * Lors de la génération d’un mot de passe Git, la date d’expiration s’affiche.

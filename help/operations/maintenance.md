@@ -1,32 +1,32 @@
 ---
-title: Tâches de maintenance dans AEM as a Cloud Service
-description: Tâches de maintenance dans AEM as a Cloud Service
+title: Tâches de maintenance dans AEM as a Cloud Service
+description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 1dc6e66fdd4115834bc0eba2be25c196cf5362b7
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 76%
+ht-degree: 93%
 
 ---
 
-# Tâches de maintenance dans AEM as a Cloud Service
+# Tâches de maintenance dans AEM as a Cloud Service
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_maintenance"
 >title="Tâches de maintenance"
->abstract="Les tâches de maintenance sont des processus qui s’exécutent selon un calendrier afin d’optimiser le référentiel. Avec AEM as a Cloud Service, le besoin des clients de configurer les propriétés opérationnelles des tâches de maintenance est minime. Les clients peuvent concentrer leurs ressources sur des préoccupations de niveau application, laissant les opérations d’infrastructure à Adobe."
+>abstract="Les tâches de maintenance sont des processus qui s’exécutent selon un calendrier afin d’optimiser le référentiel. Avec AEM as a Cloud Service, le besoin des clients de configurer les propriétés opérationnelles des tâches de maintenance est minime. Les clients peuvent concentrer leurs ressources sur des préoccupations de niveau application, laissant les opérations d’infrastructure à Adobe."
 
-Les tâches de maintenance sont des processus qui s’exécutent selon un calendrier afin d’optimiser le référentiel. Avec AEM as a Cloud Service, le besoin des clients de configurer les propriétés opérationnelles des tâches de maintenance est minime. Les clients peuvent concentrer leurs ressources sur des préoccupations de niveau application, laissant les opérations d’infrastructure à Adobe.
+Les tâches de maintenance sont des processus qui s’exécutent selon un calendrier afin d’optimiser le référentiel. Avec AEM as a Cloud Service, le besoin des clients de configurer les propriétés opérationnelles des tâches de maintenance est minime. Les clients peuvent concentrer leurs ressources sur des préoccupations de niveau application, laissant les opérations d’infrastructure à Adobe.
 
 ## Configuration des tâches de maintenance
 
-Dans les versions précédentes d’AEM, vous pouviez configurer les tâches de maintenance à l’aide de la carte de maintenance (Outils > Opérations > Maintenance). Dans AEM as a Cloud Service, la carte de maintenance n’est plus disponible. Les configurations doivent donc être validées pour le contrôle source et déployées à l’aide de Cloud Manager. Adobe gère les tâches de maintenance dont les paramètres ne peuvent pas être configurés par les clients (par exemple, Nettoyage de la mémoire d’entrepôt de données, Purge du journal d’audit, Purge de version). D’autres tâches de maintenance peuvent être configurées par les clients, comme décrit dans le tableau ci-dessous.
+Dans les versions précédentes d’AEM, vous pouviez configurer les tâches de maintenance à l’aide de la carte de maintenance (Outils > Opérations > Maintenance). Dans AEM as a Cloud Service, la carte de maintenance n’est plus disponible. Les configurations doivent donc être validées pour le contrôle source et déployées à l’aide de Cloud Manager. Adobe gère les tâches de maintenance dont les paramètres ne peuvent pas être configurés par les clients (par exemple, la récupération de l’espace mémoire du magasin de données, la purge du journal d’audit, la purge des versions). D’autres tâches de maintenance peuvent être configurées par les clients, comme décrit dans le tableau ci-dessous.
 
 >[!CAUTION]
 >
 >Adobe se réserve le droit de remplacer les paramètres de configuration de la tâche de maintenance d’un client afin d’atténuer des problèmes tels que la dégradation des performances.
 
-Le tableau suivant illustre les tâches de maintenance disponibles au moment de la diffusion d’AEM as a Cloud Service.
+Le tableau suivant illustre les tâches de maintenance disponibles au moment de la diffusion d’AEM as a Cloud Service.
 
 <table style="table-layout:auto">
  <tbody>
@@ -44,10 +44,10 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge de version</td>
     <td>Adobe</td>
-    <td>Pour que le niveau Auteur reste performant, des versions plus anciennes de chaque élément de contenu sous la propriété <code>/content</code> du référentiel sont purgés selon le comportement suivant :<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
+    <td>Pour que le niveau de création reste performant, les versions plus anciennes de chaque élément de contenu sous le nœud <code>/content</code> du référentiel sont purgés selon le comportement suivant :<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->
      <ol>
-       <li>Les versions de plus de 30 jours sont supprimées</li>
-       <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
+       <li>Les versions de plus de 30 jours sont supprimées</li>
+       <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
        <li>Quelle que soit la règle ci-dessus, la version la plus récente est conservée.</li>
      </ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué par défaut pour les nouveaux environnements créés après le 14 mars 2022. Veuillez envoyer un ticket d’assistance clientèle si vous avez besoin de paramètres différents.</td>
   </td>
@@ -55,11 +55,11 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Adobe</td>
-    <td>Pour que le niveau Auteur reste performant, les journaux d’audit plus anciens sous <code>/content</code> du référentiel sont purgés selon le comportement suivant :<br><br> <!-- See above for the two line breaks -->
+    <td>Pour que le niveau de création reste performant, les journaux d’audit plus anciens de chaque élément de contenu sous le nœud <code>/content</code> du référentiel sont purgés selon le comportement suivant :<br><br> <!-- See above for the two line breaks -->
      <ol>
-       <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
-       <li>Pour le contrôle DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
-       <li>Pour le contrôle des pages, les journaux de plus de 3 jours sont supprimés.</li>
+       <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
+       <li>Pour le contrôle du DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
+       <li>Pour le contrôle des pages, les journaux de plus de 3 jours sont supprimés.</li>
      </ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué par défaut pour les nouveaux environnements créés après le 14 mars 2022. Veuillez envoyer un ticket d’assistance clientèle si vous avez besoin de paramètres différents.</td>
    </td>
   </tr>
@@ -73,7 +73,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <td>Purge des tâches ad hoc</td>
     <td>Client</td>
     <td>
-    <p>Doit être effectué dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>.</p>
+    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>.</p>
     <p>Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_TaskPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI.</p>
   </td>
   </tr>
@@ -81,7 +81,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <td>Purge du workflow</td>
     <td>Client</td>
     <td>
-    <p>Doit être effectué dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
+    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
     <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_WorkflowPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Consultez la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">documentation sur les tâches de maintenance AEM 6.5</a>.</p>
   </td>
   </tr>
@@ -89,7 +89,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <td>Purge du projet</td>
     <td>Client</td>
     <td>
-    <p>Doit être effectué dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
+    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
     <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI.</p>
   </td>
   </tr>

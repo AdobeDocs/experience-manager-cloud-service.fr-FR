@@ -1,18 +1,18 @@
 ---
 title: Requêtes GraphQL persistantes
-description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode de GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
+description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: dfcad7aab9dda7341de3dc4975eaba9bdfbd9780
 workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 41%
+ht-degree: 54%
 
 ---
 
 # Requêtes GraphQL persistantes {#persisted-queries-caching}
 
-Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur as a Cloud Service Adobe Experience Manager (AEM). Ils peuvent être demandés avec une demande de GET par les applications clientes. La réponse d’une demande de GET peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances de l’application cliente qui la demande. Cela diffère des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes de POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
+Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur as a Cloud Service Adobe Experience Manager (AEM). Ils peuvent être demandés avec une demande de GET par les applications clientes. La réponse d’une requête GET peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances de l’application cliente qui la demande. Cela diffère des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes de POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
 
 Le [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) est disponible dans AEM (par défaut, `dev-author`) pour que vous puissiez développer, tester et conserver vos requêtes GraphQL, avant [transfert vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, lorsque [personnalisation du cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; voir l’exemple de curl fourni dans [Comment conserver une requête GraphQL](#how-to-persist-query).
 
@@ -45,7 +45,7 @@ Par exemple, s’il existe une requête spécifique appelée `my-query`, qui uti
 >
 >Il se trouve qu’elles utilisent le même modèle – mais via différents points d’entrée.
 
-## Comment conserver une requête GraphQL {#how-to-persist-query}
+## Conservation d’une requête GraphQL {#how-to-persist-query}
 
 Il est recommandé de conserver les requêtes dans un environnement de création d’AEM au départ, puis [transférer la requête](#transfer-persisted-query-production) à votre environnement de production AEM publication, pour une utilisation par les applications.
 
@@ -55,7 +55,7 @@ Il existe différentes méthodes de requête persistante, notamment :
 * curl - voir l’exemple suivant
 * Autres outils, notamment [Postman](https://www.postman.com/)
 
-Vous trouverez ci-dessous la procédure à suivre pour conserver une requête donnée à l’aide de la fonction **curl** outil de ligne de commande :
+Vous trouverez ci-dessous la procédure à suivre pour conserver une requête donnée à l’aide de l’outil de ligne de commande **curl** :
 
 1. Préparez la requête avec une commande PUT sur l’URL du nouveau point d’entrée `/graphql/persist.json/<config>/<persisted-label>`.
 
@@ -94,7 +94,7 @@ Vous trouverez ci-dessous la procédure à suivre pour conserver une requête do
    }
    ```
 
-1. Vous pouvez ensuite demander la requête conservée en GETing de l’URL `/graphql/execute.json/<shortPath>`.
+1. Vous pouvez ensuite exécuter à nouveau la requête persistante avec une commande GET sur l’URL `/graphql/execute.json/<shortPath>`.
 
    Par exemple, utilisez la requête persistante :
 

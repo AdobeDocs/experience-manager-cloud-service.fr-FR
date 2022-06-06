@@ -8,15 +8,15 @@ exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
 source-git-commit: cf6cfb38a43004c8ac0c1d1e99153335a47860a8
 workflow-type: tm+mt
 source-wordcount: '246'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 # Mise en filigrane de vos ressources {#watermark-assets}
 
-[!DNL Adobe Experience Manager Assets] permet d’ajouter un filigrane numérique aux images. [!DNL Assets] prend en charge l’application d’une image en tant que filigrane pour d’autres fichiers image. Les filigranes peuvent aider les utilisateurs à vérifier l’authenticité et le copyright des ressources. Un filigrane peut également être utilisé pour indiquer l’état d’un document, tel que confidentiel, brouillon, validité, etc.
+[!DNL Adobe Experience Manager Assets] permet d’ajouter un filigrane numérique aux images. [!DNL Assets] prend en charge l’application d’une image en tant que filigrane pour d’autres fichiers image. Les filigranes peuvent aider les utilisateurs à vérifier l’authenticité et le copyright des ressources. Un filigrane peut également être utilisé pour indiquer le statut d’un document, tel que confidentiel, brouillon, validité, etc.
 
-Pour configurer [!DNL Experience Manager] pour mettre des ressources en filigrane :
+Pour configurer [!DNL Experience Manager] de façon à appliquer un filigrane à des ressources :
 
 1. Un fichier PNG est appliqué comme filigrane. Chargez ce fichier dans votre référentiel DAM.
 
@@ -24,9 +24,9 @@ Pour configurer [!DNL Experience Manager] pour mettre des ressources en filigran
 
 1. Cliquez sur **[!UICONTROL Profil d’application d’un filigrane système]**.
 
-1. Sur le [!UICONTROL Page Profil d’application d’un filigrane système], spécifiez le chemin d’accès à l’image chargé dans votre référentiel DAM à l’étape 1.
+1. Dans la [!UICONTROL page Profil d’application d’un filigrane système], spécifiez le chemin d’accès à l’image chargé dans votre référentiel DAM à l’étape 1.
 
-1. Spécifiez l’échelle du filigrane, comprise entre 0,0 et 1,0, par rapport à la largeur du rendu, dans la variable **[!UICONTROL Échelle]** champ .
+1. Spécifiez l’échelle du filigrane, comprise entre 0,0 et 1,0, par rapport à la largeur de rendu, dans le champ **[!UICONTROL Échelle]**.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -34,14 +34,14 @@ Pour configurer [!DNL Experience Manager] pour mettre des ressources en filigran
 
    >[!NOTE]
    >
-   >Si vous avez configuré le profil de filigrane du système à l’aide de `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` fichier de configuration (configuration OSGi), vous pouvez continuer à l’utiliser, mais Adobe recommande d’utiliser la nouvelle méthode.
+   >Si vous avez configuré le profil de filigrane système à l’aide du fichier de configuration `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` (configuration OSGi), vous pouvez continuer à l’utiliser, mais Adobe recommande d’utiliser la nouvelle méthode.
 
 
 1. [Créez un profil de traitement](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) pour exploiter les microservices de ressources afin d’appliquer le filigrane.
 
    ![Profil de traitement des ressources pour créer un filigrane](assets/watermark-processing-profile.png)
 
-   Assurez-vous que vous activez la variable **[!UICONTROL Filigrane]** bascule lors de la création du profil de traitement.
+   Assurez-vous que vous activez le bouton (bascule) **[!UICONTROL Filigrane]** lors de la création du profil de traitement.
 
 1. [Appliquez les profils de traitement à un dossier](/help/assets/asset-microservices-configure-and-use.md#use-profiles) pour créer des ressources en filigrane.
 
@@ -53,6 +53,6 @@ Pour configurer [!DNL Experience Manager] pour mettre des ressources en filigran
 
 >[!MORELIKETHIS]
 >
->* [Présentation des microservices de ressources](/help/assets/asset-microservices-overview.md).
+>* [Aperçu sur les microservices de ressources](/help/assets/asset-microservices-overview.md).
 >* [Utilisation des microservices de ressources avec des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
 
