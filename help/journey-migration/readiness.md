@@ -3,9 +3,9 @@ title: Phase de préparation
 description: Découvrez les étapes à suivre pour vous assurer que votre installation AEM est prête à être déplacée vers le cloud.
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2078'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -115,11 +115,11 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   <tr>
     <td>Lanceurs de workflow</td>
     <td></td>
-    <td>Supprimez de votre code tous les lanceurs de workflow qui déclenchent un workflow Ressource de mise à jour de la gestion des ressources numériques prêt à lʼemploi ou personnalisé.</br>Toutes les ressources téléchargées vers AEM as a Cloud Service seront traitées par le service de traitement des ressources. Pour les étapes personnalisées, reportez-vous à la section <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=en#post-processing-workflows"> Processus de post-traitement</a> sur la configuration et la configuration des workflows de post-traitement.</td>
+    <td>Supprimez de votre code tous les lanceurs de workflow qui déclenchent un workflow Ressource de mise à jour de la gestion des ressources numériques prêt à lʼemploi ou personnalisé.</br>Toutes les ressources téléchargées vers AEM as a Cloud Service seront traitées par le service de traitement des ressources. Pour les étapes personnalisées, reportez-vous à la section <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr#post-processing-workflows">Workflows de post-traitement</a> sur la configuration des workflows de post-traitement.</td>
   </tr>
   <tr>
     <td>Étapes de rendu personnalisé</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=en#manage">Profils de traitement</a></td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=fr#manage">Profils de traitement</a></td>
     <td>Toute opération de génération de rendus personnalisés, de conversion dʼimages ou dʼencodage vidéo doit être confiée au service de traitement des ressources en créant les profils de traitement correspondants.</td>
   </tr>
   <tr>
@@ -149,8 +149,8 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   </tr>
   <tr>
     <td>Modifications de l’authentification</td>
-    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=en">Prise en charge IMS d’AEM as a Cloud Service</td>
-    <td>Si vous utilisiez auparavant l’intégration SAML 2.0 sur les instances de création et de publication avant de passer à Cloud Service, le principal changement est que AEM’auteur as a Cloud Service s’intègre uniquement à Adobe IMS. Cependant, AEM niveau Publication as a Cloud Service peut toujours utiliser SAML ou d’autres intégrations d’authentification. AEM as a Cloud Service ne prend en charge l’authentification IMS que pour les utilisateurs Auteur, Admin et Dev. L’authentification IMS ne prend pas en charge les utilisateurs finaux externes de sites clients tels que les visiteurs du site.</td>
+    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=fr">Prise en charge IMS d’AEM as a Cloud Service</td>
+    <td>Si vous utilisiez précédemment l’intégration SAML 2.0 sur les instances Auteur et Publication avant de passer à Cloud Service, notez que le principal changement est que l’instance Auteur d’AEM as a Cloud Service s’intègre uniquement à Adobe IMS. Cependant, l’instance Publication d’AEM as a Cloud Service peut toujours utiliser SAML ou d’autres intégrations d’authentification. AEM as a Cloud Service ne prend en charge l’authentification IMS que pour les utilisateurs Auteur, Admin et Dev. L’authentification IMS n’offre pas de prise en charge pour les utilisateurs finaux externes de sites clients tels que les visiteurs de site.</td>
   </tr>
 </tbody>
 </table>
@@ -159,7 +159,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
 
 Adobe étudie constamment les fonctionnalités du produit de façon à les réinventer au fil du temps ou à remplacer les fonctions plus anciennes par des variantes plus modernes, pour améliorer la valeur client globale, le tout en faisant toujours attention à la compatibilité ascendante.
 
-Nous vous recommandons de consulter la section [Fonctionnalités obsolètes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=fr#deprecated-features) pour vous familiariser avec les fonctionnalités signalées comme étant obsolètes dans Experience Manager as a Cloud Service et voir quel est l&#39;impact pour votre déploiement AEM.
+Nous vous recommandons de consulter la section [Fonctionnalités obsolètes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=fr#deprecated-features) pour vous familiariser avec les fonctionnalités signalées comme étant obsolètes dans Experience Manager as a Cloud Service et voir quel est l’impact pour votre déploiement AEM.
 
 ## Planification de la révision de votre installation AEM {#review-planning}
 
@@ -219,5 +219,5 @@ Une fois que vous avez compris la portée des modifications requises pour passer
 * [Prise en main de Cloud Acceleration Manager](/help/journey-migration/cloud-acceleration-manager/using-cam/getting-started-cam.md) - Un guide complet sur l’utilisation de Cloud Acceleration Manager pour accélérer votre déplacement vers le cloud.
 * [AEM as a Cloud Service : introduction, architecture et pensée différente](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=fr#dashboard/learning)
 * [Accueil d’AEM a Cloud Service](/help/overview/home.md) - Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici.
-* [Présentation d’AEM as a Cloud Service](/help/overview/home.md) - Ce guide présente Experience Manager as a Cloud Service, y compris une introduction, la terminologie et l&#39;architecture.
+* [Présentation d’AEM as a Cloud Service](/help/overview/home.md) - Ce guide présente Experience Manager as a Cloud Service, y compris une introduction, la terminologie et l’architecture.
 * [Intégration](/help/onboarding/home.md) - Ce guide résume la prise en main d’Experience Manager as a Cloud Service, y compris la manière d’y accéder et de configurer votre équipe.
