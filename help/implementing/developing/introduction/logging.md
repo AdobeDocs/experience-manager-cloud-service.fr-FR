@@ -1,19 +1,19 @@
 ---
 title: Connexion à AEM as a Cloud Service
-description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
+description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2316'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Connexion à AEM as a Cloud Service {#logging-for-aem-as-a-cloud-service}
 
-La plate-forme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement AEM as a Cloud Service.
+La plateforme AEM as a Cloud Service permet aux clients d’inclure du code personnalisé destiné à créer des expériences incomparables pour leurs propres bases de clients. Dans cette optique, le service de journalisation est une fonction essentielle pour déboguer et comprendre l’exécution du code sur le développement local, ainsi que les environnements cloud, en particulier les environnements de développement AEM as a Cloud Service.
 
-Les niveaux de journal et paramètres de journalisation AEM as a Cloud Service sont gérés dans des fichiers de configuration stockés au sein du projet AEM dans Git, et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en deux ensembles logiques :
+Les niveaux de journal et paramètres de journalisation AEM as a Cloud Service sont gérés dans des fichiers de configuration stockés au sein du projet AEM dans Git, et déployés dans le cadre du projet AEM via Cloud Manager. La journalisation dans AEM as a Cloud Service peut être divisée en deux ensembles logiques :
 
 * La journalisation au niveau de l’application AEM.
 * La journalisation de serveur web Apache HTTPD/Dispatcher au niveau Publication.
@@ -32,7 +32,7 @@ La journalisation au niveau de l’application AEM est gérée par trois journau
 
 ## Journalisation Java AEM {#aem-java-logging}
 
-AEM as a Cloud Service donne accès aux instructions de journal Java. Les développeurs d’applications pour AEM doivent suivre les bonnes pratiques générales en matière de consignation pour Java, en consignant les instructions pertinentes concernant l’exécution du code personnalisé, aux niveaux de journal suivants :
+AEM as a Cloud Service donne accès aux instructions de journal Java. Les développeurs d’applications pour AEM doivent suivre les bonnes pratiques générales en matière de consignation pour Java, en consignant les instructions pertinentes concernant l’exécution du code personnalisé, aux niveaux de journal suivants :
 
 <table>
 <tr>
@@ -92,9 +92,9 @@ Lorsque la journalisation ERROR est active, seules les instructions indiquant de
 </tr>
 </table>
 
-Bien que la journalisation Java prenne en charge plusieurs autres niveaux de granularité de la journalisation, nous recommandons d’utiliser les trois niveaux décrits ci-dessus pour AEM as a Cloud Service.
+Bien que la journalisation Java prenne en charge plusieurs autres niveaux de granularité de la journalisation, nous recommandons d’utiliser les trois niveaux décrits ci-dessus pour AEM as a Cloud Service.
 
-Les niveaux de journalisation AEM sont définis par type d’environnement via la configuration OSGi, qui à leur tour sont validés dans Git, et déployés sur AEM as a Cloud Service via Cloud Manager. C’est pourquoi il est préférable de conserver des instructions de journal cohérentes et bien connues pour les types d’environnements, afin de s’assurer que les journaux disponibles par l’intermédiaire d’AEM as a Cloud Service sont disponibles au niveau de journal optimal sans avoir à redéployer l’application avec la configuration de niveau de journal mise à jour.
+Les niveaux de journalisation AEM sont définis par type d’environnement via la configuration OSGi, qui à leur tour sont validés dans Git, et déployés sur AEM as a Cloud Service via Cloud Manager. C’est pourquoi il est préférable de conserver des instructions de journal cohérentes et bien connues pour les types d’environnements, afin de s’assurer que les journaux disponibles par l’intermédiaire d’AEM as a Cloud Service sont disponibles au niveau de journal optimal sans avoir à redéployer l’application avec la configuration de niveau de journal mise à jour.
 
 **Exemple de sortie de journal**
 
@@ -115,7 +115,7 @@ Les niveaux de journalisation AEM sont définis par type d’environnement via l
 <td>29.04.2020 21:50:13.398</td>
 </tr>
 <tr>
-<td>ID du nœud AEM as a Cloud Service</td>
+<td>ID du nœud AEM as a Cloud Service</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 <tr>
@@ -139,7 +139,7 @@ Les niveaux de journalisation AEM sont définis par type d’environnement via l
 
 ### Enregistreurs de configuration {#configuration-loggers}
 
-Les journaux Java AEM sont définis en tant que configuration OSGi et ciblent par conséquent des environnements AEM as a Cloud Service spécifiques en utilisant des dossiers en mode d’exécution.
+Les journaux Java AEM sont définis en tant que configuration OSGi et ciblent par conséquent des environnements AEM as a Cloud Service spécifiques en utilisant des dossiers en mode d’exécution.
 
 Configurez la journalisation Java pour des packages Java personnalisés via des configurations OSGi pour Sling LogManager Factory. Deux propriétés de configuration sont prises en charge :
 
@@ -148,9 +148,9 @@ Configurez la journalisation Java pour des packages Java personnalisés via des 
 | org.apache.sling.commons.log.names | Packages Java pour lesquels collecter les instructions de journal. |
 | org.apache.sling.commons.log.level | Niveau de journal auquel consigner les packages Java, spécifié par org.apache.sling.commons.log.names. |
 
-La modification d’autres propriétés de configuration OSGi LogManager peut entraîner des problèmes de disponibilité dans AEM as a Cloud Service.
+La modification d’autres propriétés de configuration OSGi LogManager peut entraîner des problèmes de disponibilité dans AEM as a Cloud Service.
 
-Vous trouverez ci-dessous des exemples de configurations de journalisation recommandées (à l’aide de l’espace réservé de package Java `com.example`) pour les trois types d’environnements AEM as a Cloud Service.
+Vous trouverez ci-dessous des exemples de configurations de journalisation recommandées (à l’aide de l’espace réservé de package Java `com.example`) pour les trois types d’environnements AEM as a Cloud Service.
 
 ### Développement {#development}
 
@@ -187,7 +187,7 @@ Vous trouverez ci-dessous des exemples de configurations de journalisation recom
 
 ## Journalisation des requêtes HTTP AEM {#aem-http-request-logging}
 
-La journalisation des requêtes HTTP dans AEM as a Cloud Service fournit des informations sur les requêtes HTTP envoyées à AEM et leurs réponses HTTP par ordre d’arrivée. Ce journal permet de comprendre les requêtes HTTP envoyées à AEM ainsi que l’ordre dans lequel elles sont traitées et reçoivent une réponse.
+La journalisation des requêtes HTTP dans AEM as a Cloud Service fournit des informations sur les requêtes HTTP envoyées à AEM et leurs réponses HTTP par ordre d’arrivée. Ce journal permet de comprendre les requêtes HTTP envoyées à AEM ainsi que l’ordre dans lequel elles sont traitées et reçoivent une réponse.
 
 La clé pour comprendre ce journal est de mapper les paires de requête HTTP et réponse selon leur ID, identifié par la valeur numérique entre crochets. Notez que, dans le journal, les différentes requêtes HTTP et leurs réponses se chevauchent souvent.
 
@@ -229,7 +229,7 @@ La clé pour comprendre ce journal est de mapper les paires de requête HTTP et 
 </td>
 </tr>
 <tr>
-<td>ID du nœud AEM as a Cloud Service</td>
+<td>ID du nœud AEM as a Cloud Service</td>
 <td>[cm-p1234-e5678-aem-author-59555cb5b8-q7l9s]</td>
 </tr>
 </tbody>
@@ -237,13 +237,13 @@ La clé pour comprendre ce journal est de mapper les paires de requête HTTP et 
 
 ### Configuration du journal {#configuring-the-log}
 
-Le journal des requêtes HTTP AEM n’est pas configurable dans AEM as a Cloud Service.
+Le journal des requêtes HTTP AEM n’est pas configurable dans AEM as a Cloud Service.
 
 ## Journalisation des accès HTTP AEM {#aem-http-access-logging}
 
-La journalisation des accès HTTP dans AEM as a Cloud Service affiche les requêtes HTTP par ordre d’arrivée. Chaque entrée de journal représente la requête HTTP qui accède à AEM.
+La journalisation des accès HTTP dans AEM as a Cloud Service affiche les requêtes HTTP par ordre d’arrivée. Chaque entrée de journal représente la requête HTTP qui accède à AEM.
 
-Ce journal est utile pour comprendre rapidement quelles requêtes HTTP sont envoyées à AEM, si elles réussissent (en examinant le code d’état de la réponse HTTP qui l’accompagne) et combien de temps la requête HTTP a duré. Ce journal peut également servir à déboguer une activité d’utilisateur spécifique en filtrant les entrées du journal par utilisateurs.
+Ce journal est utile pour comprendre rapidement quelles requêtes HTTP sont envoyées à AEM, si elles réussissent (en examinant le code de statut de la réponse HTTP qui l’accompagne) et combien de temps la requête HTTP a duré. Ce journal peut également servir à déboguer une activité d’utilisateur spécifique en filtrant les entrées du journal par utilisateurs.
 
 **Exemple de sortie de journal**
 
@@ -253,7 +253,7 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:37:14 +0000  "GET /libs/dam/gui/coral/components/admin/metadataeditor/clientlibs/metadataeditor.lc-4a2226d8232f8b7ab27d24820b9ddd64-lc.min.js HTTP/1.1" 200 7965 "https://author-p10711-e26813.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/en/images/example.jpeg&_charset_=utf8" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"
 ```
 
-| ID du nœud AEM as a Cloud Service | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
+| ID du nœud AEM as a Cloud Service | cm-p1235-e2644-aem-author-59555cb5b8-8kgr2 |
 |---|---|
 | Adresse IP du client | - |
 | User | myuser@adobe.com |
@@ -262,17 +262,17 @@ cm-p1234-e26813-aem-author-59555cb5b8-8kgr2 - example@adobe.com 30/Apr/2020:17:3
 | URL | `/libs/granite/ui/references/clientlibs/references.lc-5188e85840c529149e6cd29d94e74ad5-lc.min.css` |
 | Protocole | HTTP/1.1 |
 | Statut de réponse HTTP | 200 |
-| Taille du corps de la réponse en octets | 1141 |
+| Taille du corps de réponse en octets | 1141 |
 | Référent | `"https://author-p1234-e4444.adobeaemcloud.com/mnt/overlay/dam/gui/content/assets/metadataeditor.external.html?item=/content/dam/wknd/en/adventures/surf-camp-in-costa-rica/adobestock_266405335.jpeg&_charset_=utf8"` |
 | Agent utilisateur | `"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.122 Safari/537.36"` |
 
 ### Configuration du journal d’accès HTTP {#configuring-the-http-access-log}
 
-Le journal des accès HTTP n’est pas configurable dans AEM as a Cloud Service.
+Le journal des accès HTTP n’est pas configurable dans AEM as a Cloud Service.
 
 ## Journalisation de serveur web Apache et de Dispatcher {#apache-web-server-and-dispatcher-logging}
 
-AEM as a Cloud Service fournit trois journaux pour les serveurs web Apache et la couche Dispatcher au niveau Publication :
+AEM as a Cloud Service fournit trois journaux pour les serveurs web Apache et la couche Dispatcher au niveau Publication :
 
 * Journal des accès au serveur web Apache HTTPD
 * Journal des erreurs du serveur web Apache HTTPD
@@ -280,7 +280,7 @@ AEM as a Cloud Service fournit trois journaux pour les serveurs web Apache et la
 
 Notez que ces journaux ne sont disponibles que pour le niveau Publication.
 
-Cet ensemble de journaux fournit des informations sur les requêtes HTTP envoyées au niveau Publication d’AEM as a Cloud Service avant que celles-ci n’atteignent l’application AEM. Il est important de comprendre cela, car, dans l’idéal, la plupart des requêtes HTTP envoyées aux serveurs de niveau Publication sont servies par du contenu mis en cache par le serveur web Apache HTTPD et le Dispatcher AEM, et n’atteignent jamais l’application AEM elle-même. Il n’existe donc aucune instruction de journal pour ces requêtes dans les journaux Java, de requêtes ou des accès d’AEM.
+Cet ensemble de journaux fournit des informations sur les requêtes HTTP envoyées au niveau Publication d’AEM as a Cloud Service avant que celles-ci n’atteignent l’application AEM. Il est important de comprendre cela, car, dans l’idéal, la plupart des requêtes HTTP envoyées aux serveurs de niveau Publication sont servies par du contenu mis en cache par le serveur web Apache HTTPD et le Dispatcher AEM, et n’atteignent jamais l’application AEM elle-même. Il n’existe donc aucune instruction de journal pour ces requêtes dans les journaux Java, de requêtes ou des accès d’AEM.
 
 ### Journal des accès au serveur web Apache HTTPD {#apache-httpd-web-server-access-log}
 
@@ -301,7 +301,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <table>
 <tbody>
 <tr>
-<td>ID du nœud AEM as a Cloud Service</td>
+<td>ID du nœud AEM as a Cloud Service</td>
 <td>cm-p1234-e26813-aem-publish-5c787687c-lqlxr</td>
 </tr>
 <tr>
@@ -309,7 +309,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>-</td>
 </tr>
 <tr>
-<td>Utilisateur</td>
+<td>User</td>
 <td>-</td>
 </tr>
 <tr>
@@ -349,7 +349,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 
 ### Configuration du journal des accès au serveur web Apache HTTPD {#configuring-the-apache-httpd-webs-server-access-log}
 
-Ce journal n’est pas configurable dans AEM as a Cloud Service.
+Ce journal n’est pas configurable dans AEM as a Cloud Service.
 
 ## Journal des erreurs du serveur web Apache HTTPD {#apache-httpd-web-server-error-log}
 
@@ -387,7 +387,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 </tr>
 <tr>
 <td>Message</td>
-<td>AH00094: Command line: 'httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
+<td>AH00094: Command line: ’httpd -d /etc/httpd -f /etc/httpd/conf/httpd.conf -D FOREGROUND -D </td>
 </tr>
 </tbody>
 </table>
@@ -448,7 +448,7 @@ Define REWRITE_LOG_LEVEL Debug
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
-<td>Code d’état de réponse de Dispatcher</td>
+<td>Code de statut de réponse de Dispatcher</td>
 <td>/content/experience-fragments/wknd/language-masters/en/contributors/sofia-sjoeberg/master/_jcr_content/root/responsivegrid/image.coreimg.100.500.jpeg/1572236359031/ayo-ogunseinde-237739.jpeg</td>
 </tr>
 <tr>
@@ -476,7 +476,7 @@ Les niveaux de journal de Dispatcher sont définis par la variable DISP_LOG_LEVE
 
 Elle peut être définie sur Error, Warn, Info, Debug et Trace1, avec la valeur par défaut Warn.
 
-Bien que la journalisation de Dispatcher prenne en charge plusieurs autres niveaux de granularité de la journalisation, nous recommandons d’utiliser les niveaux décrits ci-dessous pour AEM as a Cloud Service.
+Bien que la journalisation de Dispatcher prenne en charge plusieurs autres niveaux de granularité de la journalisation, nous recommandons d’utiliser les niveaux décrits ci-dessous pour AEM as a Cloud Service.
 
 Pour définir le niveau de journal par environnement, utilisez la branche conditionnelle appropriée dans le fichier `global.var`, comme décrit ci-dessous :
 
@@ -499,11 +499,11 @@ Define DISP_LOG_LEVEL Debug
 
 ### Environnements cloud {#cloud-environments}
 
-Les journaux AEM as a Cloud Service pour les services cloud sont accessibles par téléchargement via l’interface de Cloud Manager ou en affichant leurs dernières lignes à l’aide de l’interface de ligne de commande Adobe I/O. Pour plus d’informations, voir la [documentation sur la journalisation de Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
+Les journaux AEM as a Cloud Service pour les services cloud sont accessibles par téléchargement via l’interface de Cloud Manager ou en affichant leurs dernières lignes à l’aide de l’interface de ligne de commande Adobe I/O. Pour plus d’informations, voir la [documentation sur la journalisation de Cloud Manager](/help/implementing/cloud-manager/manage-logs.md).
 
 ### SDK local {#local-sdk}
 
-Le SDK AEM as a Cloud Service fournit des fichiers journaux pour la prise en charge du développement local.
+Le SDK AEM as a Cloud Service fournit des fichiers journaux pour la prise en charge du développement local.
 
 Les journaux AEM se trouvent dans le dossier `crx-quickstart/logs`, où vous pouvez afficher les journaux suivants :
 
@@ -532,7 +532,7 @@ Les journaux sont également directement imprimés dans la sortie du terminal. L
 
 Dans des circonstances exceptionnelles, il est nécessaire de modifier les niveaux de journalisation pour qu’ils soient plus précis dans les environnements d’évaluation ou de production.
 
-Bien que cela soit possible, cela requiert des modifications des niveaux de journal dans les fichiers de configuration dans Git (en passant de Warn et Error à Debug), et l’exécution d’un déploiement sur AEM as a Cloud Service pour enregistrer ces modifications de configuration auprès des environnements.
+Bien que cela soit possible, cela requiert des modifications des niveaux de journal dans les fichiers de configuration dans Git (en passant de Warn et Error à Debug), et l’exécution d’un déploiement sur AEM as a Cloud Service pour enregistrer ces modifications de configuration auprès des environnements.
 
 Selon le trafic et la quantité d’instructions de journal écrites par Debug, cela peut avoir un impact négatif sur les performances de l’environnement. Il est donc recommandé que les modifications apportées aux niveaux de débogage Stage (pour l’environnement d’évaluation) et Production soient :
 
@@ -541,7 +541,7 @@ Selon le trafic et la quantité d’instructions de journal écrites par Debug, 
 
 ## Journaux Splunk {#splunk-logs}
 
-Les clients disposant d’un compte Splunk peuvent demander, via un ticket de service clientèle, que leurs journaux d’AEM as a Cloud Service soient transférés vers l’index approprié. Les données de journalisation sont équivalentes à celles disponibles par téléchargement des journaux de Cloud Manager, mais les clients peuvent tirer parti des fonctionnalités de requête disponibles dans le produit Splunk.
+Les clients disposant d’un compte Splunk peuvent demander, via un ticket de service clientèle, que leurs journaux d’AEM as a Cloud Service soient transférés vers l’index approprié. Les données de journalisation sont équivalentes à celles disponibles par téléchargement des journaux de Cloud Manager, mais les clients peuvent tirer parti des fonctionnalités de requête disponibles dans le produit Splunk.
 
 La bande passante réseau associée aux journaux envoyés à Splunk est considérée comme faisant partie de l’utilisation des E/S réseau du client.
 
