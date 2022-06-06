@@ -1,20 +1,20 @@
 ---
-title: Notes de mise à jour de la version 2020.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: '"[!DNL Adobe Experience Manager] Notes de mise à jour as a Cloud Service de la version 2020.8.0."'
+title: Notes de mise à jour de la version 2020.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.8.0.
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1046'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
+# Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service 2020.8.0 {#release-notes}
 
-La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.8.0.
+La section suivante décrit les notes de mise à jour générales d’Experience Manager as a Cloud Service 2020.8.0.
 
 
-## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
+## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
 ### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
 
@@ -23,7 +23,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 * Possibilité de [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans l’[éditeur de SPA](/help/implementing/developing/hybrid/introduction.md) d’AEM.
 
 
-## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
+## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
 ### Nouveautés d’[!DNL Assets]  {#what-is-new-assets}
 
@@ -40,16 +40,16 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Utilisez un profil de traitement pour générer des métadonnées personnalisées à l’aide de Compute Service. Voir [Métadonnées personnalisées à l’aide de profils de traitement](/help/assets/manage-metadata.md#metadata-compute-service).
 
-* Une expérience de téléchargement plus simple pour les utilisateurs de Brand Portal, configurable par les administrateurs. Voir [Présentation de l’expérience de téléchargement](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr#download-configurations).
+* Une expérience de téléchargement plus simple pour les utilisateurs de Brand Portal, configurable par les administrateurs. Voir [Aperçu de l’expérience de téléchargement](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr#download-configurations).
 
-* Les aperçus de documents PDF natifs et haute fidélité sont désormais disponibles dans Brand Portal. Voir [Présentation du logiciel de visualisation de documents](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr#doc-viewer).
+* Les aperçus de documents PDF natifs et haute fidélité sont désormais disponibles dans Brand Portal. Voir [Aperçu du logiciel de visualisation de documents](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr#doc-viewer).
 
-* Vous pouvez désormais invalider le cache CDN (réseau de diffusion de contenu) directement depuis [!DNL Dynamic Media]AEM as a Cloud Service (plutôt qu’avec [!DNL Dynamic Media Classic]). Cette opération garantit que les dernières ressources sont diffusées en quelques minutes au lieu de quelques heures auparavant. Voir [Invalidation du cache CDN à l’aide de Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
+* Vous pouvez désormais invalider le cache CDN (réseau de diffusion de contenu) directement depuis [!DNL Dynamic Media]AEM as a Cloud Service (plutôt qu’avec [!DNL Dynamic Media Classic]). Cette opération garantit que les dernières ressources sont diffusées en quelques minutes au lieu de quelques heures auparavant. Voir [Invalidation du cache CDN à l’aide de Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md).
 
 * Une prise en charge améliorée de l’accessibilité a été ajoutée aux commandes de l’interface utilisateur, à la navigation et à la recherche dans [!DNL Assets].
 
    * Si vous appuyez sur la touche Échap après avoir sélectionné l’option [!UICONTROL Ajouter le rendu], la sélection revient sur la barre d’outils. <!-- via CQ-4293594-->
-   * La sélection du clavier fonctionne comme prévu lors de l’utilisation de la zone de liste modifiable Email. <!-- via CQ-4286215 -->
+   * La sélection du clavier fonctionne comme prévu lors de l’utilisation de la zone de liste modifiable E-mail. <!-- via CQ-4286215 -->
    * Les éléments en accordéon de la section des filtres de recherche sont interprétés comme des accordéons extensibles standard. <!-- via CQ-4273103 -->
    * Lors de l’application d’une balise à une ressource, la boîte de dialogue affiche les balises sous forme d’éléments d’arborescence. Les attributs ARIA sont correctement appliqués aux éléments de l’arborescence pour les rendre immédiatement accessibles. <!-- via CQ-4272964 -->
 
@@ -58,9 +58,9 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 ### Correctifs d’[!DNL Assets]  {#bugs-fixed}
 
 * Les options Mettre en relation et Ne plus mettre en relation ne répondent pas lorsque l’utilisateur clique pour la première fois. (CQ-4299022)
-* Lors du téléchargement d’une ressource, si vous sélectionnez l’option permettant de le recevoir par courrier électronique, l’email n’est pas envoyé. (CQ-4299146)
+* Lors du téléchargement d’une ressource, si vous sélectionnez l’option permettant de le recevoir par e-mail, l’e-mail n’est pas envoyé. (CQ-4299146)
 
-## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
+## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
 ### Nouveautés {#what-is-new-commerce}
 
@@ -76,19 +76,19 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 ### Nouveautés {#what-is-new-cloud-manager}
 
-* L’audit de contenu est une fonctionnalité activée sur les pipelines de production de sites Cloud Manager. La configuration du pipeline de production pour les programmes utilisant Sites comprend désormais un troisième onglet nommé **Audit de contenu**. Chaque fois qu’un pipeline de production est exécuté, une nouvelle étape de contrôle du contenu est incluse dans le pipeline suite à des tests fonctionnels personnalisés qui évaluent le site par rapport à un certain nombre de dimensions, notamment les performances, l’optimisation du référencement (SEO), l’accessibilité, les bonnes pratiques et les applications web progressives (PWA).
+* L’audit de contenu est une fonctionnalité activée sur les pipelines de production de sites Cloud Manager. La configuration du pipeline de production pour les programmes utilisant Sites comprend désormais un troisième onglet nommé **Audit de contenu**. Chaque fois qu’un pipeline de production est exécuté, une nouvelle étape de contrôle du contenu est incluse dans le pipeline suite à des tests fonctionnels personnalisés qui évaluent le site par rapport à un certain nombre de dimensions, notamment les performances, l’optimisation du référencement (SEO), l’accessibilité, les bonnes pratiques et les applications web progressives (PWA).
 
 
    >[!NOTE]
-   >L’audit de contenu a depuis été renommé audit d’expérience.
+   >L’audit de contenu a depuis été renommé contrôle de l’expérience.
 
-   Pour plus d’informations, voir [Tests d’audit d’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
+   Pour plus d’informations, consultez les [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 * Les nouveaux environnements créés dans les programmes Assets seront désormais automatiquement configurés avec le service de contenu dynamique.
 
-* Il est possible de désactiver les environnements placés en veille prolongée à l’aide de la page **Aperçu** de Cloud Manager.
+* Il est possible de désactiver les environnements placés en veille prolongée à l’aide de la page **Aperçu** de Cloud Manager.
 
-* Possibilité d’effectuer des vérifications d’expérience sur les pages, optimisées par Google Lighthouse. Dans le cadre du pipeline de Cloud Manager, il est possible de vérifier et valider jusqu’à 25 pages concernant les indicateurs de performances clés d’expérience et les scores s’affichent dans l’interface utilisateur de Cloud Manager.
+* Possibilité d’effectuer des vérifications d’expérience sur les pages, optimisées par Google Lighthouse. Dans le cadre du pipeline de Cloud Manager, il est possible de vérifier et valider jusqu’à 25 pages concernant les indicateurs de performances clés d’expérience et les scores s’affichent dans l’interface utilisateur de Cloud Manager.
 
 ### Correctifs {#bug-fixes-cm}
 
@@ -100,7 +100,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 * Les exécutions de pipelines étaient parfois *bloquées* en raison de problèmes de communication interne.
 
-* Lors de la mise en service d’une nouvelle organisation, certains utilisateurs exerçant des rôles d’administration autres que ceux des administrateurs système recevaient par erreur l’accès à Cloud Manager.
+* Lors de la mise en service d’une nouvelle organisation, certains utilisateurs exerçant des rôles d’administration autres que ceux des administrateurs système recevaient par erreur l’accès à Cloud Manager.
 
 * Dans certaines conditions, le traitement de mise à jour des index était lancé plusieurs fois en parallèle, ce qui entraînait l’échec du déploiement.
 
@@ -108,7 +108,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
 
 * L’interface utilisateur permettait par erreur de tenter une opération sur un environnement alors qu’elle était en cours de suppression.
 
-* Les couleurs n’étaient pas cohérentes sur la page **Aperçu** de Cloud Manager.
+* Les couleurs n’étaient pas cohérentes sur la page **Aperçu** de Cloud Manager.
 
 ### Problèmes connus {#known-issues-cm}
 
@@ -140,6 +140,6 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour des
 
 * Publication du module AIO-CLI afin d’unifier les outils de refactorisation du code pour permettre aux développeurs d’appeler et d’exécuter ces outils à partir d’un seul emplacement. Pour plus d’informations, voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
 
-* Le convertisseur du Dispatcher AEM a été étendu pour prendre en charge les conversions des configurations On-Premise et Adobe Managed Services du Dispatcher dans celles compatibles avec AEM as a Cloud Service. Pour plus d’informations, voir [Ressource Git : AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter).
+* Le convertisseur du Dispatcher AEM a été étendu pour prendre en charge les conversions des configurations On-Premise et Adobe Managed Services du Dispatcher dans celles compatibles avec AEM as a Cloud Service. Pour plus d’informations, voir [Ressource Git : AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter).
 
 * Réécriture du convertisseur du Dispatcher dans ` node.js ` et intégration avec le module AIO-CLI.
