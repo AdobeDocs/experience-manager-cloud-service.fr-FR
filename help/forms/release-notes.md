@@ -1,18 +1,18 @@
 ---
-title: '"[!DNL AEM Forms] Notes de mise à jour as a Cloud Service"'
-description: '"[!DNL AEM Forms] Notes de mise à jour as a Cloud Service"'
+title: « Notes de mise à jour d’[!DNL AEM Forms] as a Cloud Service »
+description: « Notes de mise à jour d’[!DNL AEM Forms] as a Cloud Service »
 exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2024'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
 # Note mise à jour d’[!DNL Experience Manager Forms] as a Cloud Service {#overview}
 
-Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service fait l’objet régulièrement d’améliorations. Pour vous tenir au courant des dernières nouveautés, consultez régulièrement cette page. Cette page vous fournit les informations suivantes :
+Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service fait l’objet régulièrement d’améliorations. Pour vous tenir au courant des dernières nouveautés, consultez régulièrement cette page. Cette page vous fournit les informations suivantes :
 
 - Nouvelles fonctionnalités
 - Améliorations
@@ -25,7 +25,7 @@ Adobe Experience Manager [!DNL AEM Forms] as a Cloud Service fait l’objet rég
 
 >[!NOTE]
 >
->Pour les notes de mise à jour de tous les autres composants de mise à jour d’AEM as a Cloud Service, consultez [Notes de mise à jour actuelles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
+>Pour les notes de mise à jour de tous les autres composants de mise à jour d’AEM as a Cloud Service, consultez [Notes de mise à jour actuelles](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
 ## 2021.10.0 {#sep-2021-10-0}
 
@@ -56,11 +56,11 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 - **Connectez facilement AEM Forms à Microsoft Dynamics et à Salesforce** : le service fournit des modèles de données et de configuration de source de données prêts à l’emploi pour Microsoft Dynamics et Salesforce, ce qui permet aux développeurs de configurer [plus rapidement et plus facilement Microsoft Dynamics et Salesforce en tant que sources de données pour un formulaire adaptatif](configure-msdynamics-salesforce.md).
 
-- **Signature électronique d’un formulaire adaptatif à l’aide de DocuSign :**[ vous pouvez utiliser DocuSign pour signer électroniquement un formulaire adaptatif](integrate-docusign-adaptive-forms.md). Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif.
+- **Signature électronique d’un formulaire adaptatif à l’aide de DocuSign :** [vous pouvez utiliser DocuSign pour signer électroniquement un formulaire adaptatif](integrate-docusign-adaptive-forms.md). Le service fournit une action d’envoi personnalisée pour utiliser DocuSign avec un formulaire adaptatif.
 
 ### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-- **Connecteur de stockage unifié :** utilisez le connecteur de stockage unifié pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes : Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
+- **Connecteur de stockage unifié :** utilisez le connecteur de stockage unifié pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes :  Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
 
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
@@ -101,9 +101,9 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 <!-- * Automated Forms Conversion service can [convert PDF Forms in Italian and Portuguese language](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?#language-specific-meta-model) to Adaptive Forms. -->
 
-- Le projet d’archétype AEM pour Forms as a Cloud Service comprend désormais [des modèles de données de formulaire pour Microsoft Dynamics et Salesforce](setup-local-development-environment.md).
+- Le projet d’archétype AEM pour Forms as a Cloud Service comprend désormais [des modèles de données de formulaire pour Microsoft Dynamics et Salesforce](setup-local-development-environment.md).
 
-- **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
+- **Document d’enregistrement basé sur Acrobat** : AEM Forms as a Cloud Service prend en charge l’utilisation d’[Adobe Acrobat Form PDF (Acrobat PDF)](generate-document-of-record-for-non-xfa-based-adaptive-forms.md) comme modèle de document d’enregistrement en plus des modèles de formulaire basés sur XFA.
 
 - **Connecteur de magasin de données Microsoft Azure** : vous pouvez désormais [connecter le modèle de données de formulaire au stockage Microsoft Azure](configure-azure-storage.md). Ceci vous permet de récupérer et de stocker des données de formulaire adaptatif dans le stockage Microsoft Azure en tant que BLOB.
 
@@ -226,7 +226,7 @@ Vous pouvez écrire à l’adresse formscsbeta@adobe.com pour vous inscrire au p
 
 - **Utilisation de l’environnement de développement local pour créer un document d’enregistrement**
 
-   Vous pouvez utiliser un fichier XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et dans le SDK AEM Forms as a Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée uniquement aux instances de Cloud Service.
+   Vous pouvez utiliser un fichier XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et dans le SDK AEM Forms as a Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée uniquement aux instances de Cloud Service.
 
 ### Bogues corrigés dans [!DNL Forms] {#april-bug-fixes-forms}
 
