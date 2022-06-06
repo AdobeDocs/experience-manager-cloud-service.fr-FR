@@ -8,9 +8,9 @@ level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
 source-git-commit: ed46b0be25dabcea69be29e54000a4eab55e2836
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1219'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Vous pouvez migrer vos formulaires adaptatifs, thèmes, modèles et configuratio
 
 ## Conditions préalables {#prerequisites}
 
-* [Activer Forms - Inscription numérique](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?#editing-program) activée pour votre programme Forms Cloud Service et [exécution du pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
+* [Activer Forms - Inscription numérique](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=fr#editing-program) activée pour votre programme Forms de Cloud Service et [exécution du pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
 
    ![Résultat de l’exécution d’essai](assets/enable-add-on.png)
 
@@ -55,9 +55,9 @@ Pour rendre vos ressources [!DNL AEM Forms] compatibles avec Cloud Service et le
 
 1. Connectez-vous à votre environnement cloné avec des droits d’administrateur.
 
-1. Exécutez l’[outil de mappage d’utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=en#cloud-migration) pour mapper vos utilisateurs aux comptes utilisateur Adobe IMS correspondants. Vous avez besoin de comptes utilisateur Adobe IMS pour vous connecter à une instance [!DNL AEM Forms] as a Cloud Service.
+1. Exécutez l’[outil de mappage d’utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#cloud-migration) pour mapper vos utilisateurs aux comptes utilisateur Adobe IMS correspondants. Vous avez besoin de comptes utilisateur Adobe IMS pour vous connecter à une instance [!DNL AEM Forms] as a Cloud Service.
 
-1. Téléchargez et installez l’outil [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) et l’utilitaire de migration [!DNL AEM Forms] as a Cloud Service à partir du [portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) dans l’environnement cloné. Vous pouvez utiliser AEM Package Manager pour installer l’outil et l’utilitaire.
+1. Téléchargez et installez l’outil [Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#cloud-migration) et l’utilitaire de migration [!DNL AEM Forms] as a Cloud Service à partir du [portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) dans l’environnement cloné. Vous pouvez utiliser AEM Package Manager pour installer l’outil et l’utilitaire.
 
 1. Accédez à **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Migration du contenu]**.
 
@@ -92,7 +92,7 @@ Pour rendre vos ressources [!DNL AEM Forms] compatibles avec Cloud Service et le
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
-1. Exécutez l’[outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration). Lors de la spécification des paramètres dans l’écran **[!UICONTROL Créer un jeu de migration]**, spécifiez le chemin d’accès aux formulaires adaptatif, thèmes, modèles, modèles de données de formulaire, Cloud Services, composants personnalisés et autres ressources spécifiques à AEM Forms sur l’option **[!UICONTROL Chemins à inclure]**. Cela ajoute les ressources [!DNL AEM Forms] spécifiées au jeu de migration.
+1. Exécutez l’[outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#cloud-migration). Lors de la spécification des paramètres dans l’écran **[!UICONTROL Créer un jeu de migration]**, spécifiez le chemin d’accès aux formulaires adaptatif, thèmes, modèles, modèles de données de formulaire, Cloud Services, composants personnalisés et autres ressources spécifiques à AEM Forms sur l’option **[!UICONTROL Chemins à inclure]**. Cela ajoute les ressources [!DNL AEM Forms] spécifiées au jeu de migration.
 
 ## Chemins d’accès à différentes ressources spécifiques à AEM Forms
 
