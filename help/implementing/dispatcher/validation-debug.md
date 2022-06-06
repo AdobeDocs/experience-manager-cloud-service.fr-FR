@@ -4,9 +4,9 @@ description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 4dff6bf09fe9337c70adb654d3eff27f5b45f518
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2512'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -127,7 +127,7 @@ Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers n
 
 Contient un exemple d’hôte virtuel. Pour votre propre hôte virtuel, créez une copie de ce fichier, personnalisez-la, accédez à `conf.d/enabled_vhosts` et créez un lien symbolique vers votre copie personnalisée.
 
-Assurez-vous qu’un hôte virtuel est toujours disponible et correspond à ServerAlias `\*.local` et également localhost, nécessaire pour les processus d’Adobe internes.
+Assurez-vous qu’un hôte virtuel est toujours disponible et correspond au ServerAlias `\*.local` et également localhost, nécessaire pour les processus internes d’Adobe.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -446,7 +446,7 @@ Dans la configuration Dispatcher, la même variable d’environnement est dispon
 }
 ```
 
-Vous pouvez également utiliser des variables d’environnement Cloud Manager dans votre configuration httpd/dispatcher, mais pas des secrets d’environnement. Cette méthode est particulièrement importante si un programme comporte plusieurs environnements de développement et que certains de ces environnements de développement ont des valeurs différentes pour la configuration httpd/dispatcher. La même syntaxe ${VIRTUALHOST} serait utilisée comme dans l’exemple ci-dessus, mais les déclarations Define dans le fichier de variables ci-dessus ne seraient pas utilisées. Lisez le [Documentation de Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) pour obtenir des instructions sur la configuration des variables d’environnement de Cloud Manager.
+Vous pouvez également utiliser des variables d’environnement Cloud Manager dans votre configuration httpd/dispatcher, mais pas de secrets d’environnement. Cette méthode est particulièrement importante si un programme comporte plusieurs environnements de développement et que certains de ces environnements de développement ont des valeurs différentes pour la configuration httpd/dispatcher. La même syntaxe ${VIRTUALHOST} serait utilisée comme dans l’exemple ci-dessus, mais les déclarations Define dans le fichier de variables ci-dessus ne seraient pas utilisées. Lisez la [Documentation Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) pour obtenir des instructions sur la configuration des variables d’environnement Cloud Manager.
 
 Lors du test local de votre configuration, vous pouvez simuler différents types d’environnements en transmettant directement la variable `DISP_RUN_MODE` au script `docker_run.sh` :
 
