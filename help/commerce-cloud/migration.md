@@ -3,23 +3,23 @@ title: Migration vers le module complémentaire CIF (Commerce Integration Framew
 description: Comment migrer vers le module complémentaire CIF (Commerce Integration Framework) d’AEM à partir d’une ancienne version
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Guide de migration pour Experience Manager Cloud Service {#cif-migration}
+# Guide de migration pour Experience Manager Cloud Service {#cif-migration}
 
-Ce guide permet d’identifier les zones à mettre à jour pour la migration d’Experience Manager Cloud Service.
+Ce guide permet d’identifier les zones à mettre à jour pour la migration d’Experience Manager Cloud Service.
 
 ## Module complémentaire CIF
 
-Pour Experience Manager as a Cloud Service, le module complémentaire CIF est la seule solution d’intégration commerciale prise en charge pour Adobe Commerce et les solutions commerciales tierces. Le module complémentaire CIF est déployé automatiquement pour les clients sur Experience Manager as a Cloud Service, aucun déploiement manuel n’est nécessaire. Consultez [Prise en main d’AEM Commerce as a Cloud Service](getting-started.md).
+Pour Experience Manager as a Cloud Service, le module complémentaire CIF est la seule solution d’intégration commerciale prise en charge pour Adobe Commerce et les solutions commerciales tierces. Le module complémentaire CIF est déployé automatiquement pour les clients sur Experience Manager as a Cloud Service, aucun déploiement manuel n’est nécessaire. Consultez [Prise en main d’AEM Commerce as a Cloud Service](getting-started.md).
 
 Pour prendre en charge les projets qui déploient CIF, Adobe fournit [les composants principaux CIF AEM](https://github.com/adobe/aem-core-cif-components).
 
-Le module complémentaire CIF est également disponible pour AEM 6.5 grâce au [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Il est compatible et fournit les mêmes fonctionnalités que le module complémentaire CIF pour Experience Manager as a Cloud Service ; aucun ajustement n’est nécessaire.
+Le module complémentaire CIF est également disponible pour AEM 6.5 grâce au [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). Il est compatible et fournit les mêmes fonctionnalités que le module complémentaire CIF pour Experience Manager as a Cloud Service ; aucun ajustement n’est nécessaire.
 
 Le CIF classique avec ses dépendances n’est plus disponible. Le code s’appuyant sur cette version du CIF à l’aide des API Java `com.adobe.cq.commerce.api` doit être adapté au module complémentaire CIF et à ses principes.
 
@@ -27,7 +27,7 @@ Le connecteur CIF précédemment disponible ne peut plus être installé. Le cod
 
 ## Structure du projet
 
-Découvrez la [structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) et les caractéristiques d’AEM as a Cloud Service. Adaptez la configuration de votre projet à la disposition d’AEM as a Cloud Service.
+Découvrez la [structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) et les caractéristiques d’AEM as a Cloud Service. Adaptez la configuration de votre projet à la disposition d’AEM as a Cloud Service.
 Par rapport aux déploiements AEM 6.5, il existe deux différences principales :
 
 * Le bundle OSGI du client GraphQL **ne doit plus** être inclus dans le projet AEM ; il est déployé via le module complémentaire CIF.
@@ -35,7 +35,7 @@ Par rapport aux déploiements AEM 6.5, il existe deux différences principales�
 
 >[!TIP]
 >
->Extrayez le projet [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) sur GitHub. Ce projet fournit aux déploiements AEM as a Cloud Service et sur site des profils Maven qui tiennent compte des différentes conditions de framework.
+>Extrayez le projet [AEM Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia) sur GitHub. Ce projet fournit aux déploiements AEM as a Cloud Service et sur site des profils Maven qui tiennent compte des différentes conditions de framework.
 
 ## Catalogue de produits
 
@@ -43,7 +43,7 @@ L’importation de données de catalogue de produits n’est plus prise en charg
 
 >[!TIP]
 >
->Si aucune API en temps réel n’est disponible, un cache de produit externe doté d’API doit être utilisé pour l’intégration. Exemple de [Magento open-source](https://business.adobe.com/products/magento/open-source.html).
+>Si aucune API en temps réel n’est disponible, un cache de produit externe doté d’API doit être utilisé pour l’intégration. Exemple de [Magento open-source](https://business.adobe.com/fr/products/magento/open-source.html).
 
 ## Expériences de catalogue produits avec rendu AEM
 
