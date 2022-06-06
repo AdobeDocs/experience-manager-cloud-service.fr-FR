@@ -3,7 +3,7 @@ title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
 source-git-commit: c4490690edb1ec0e2a6b8cca724fe9c290650bc8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3058'
 ht-degree: 100%
 
