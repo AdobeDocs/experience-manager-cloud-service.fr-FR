@@ -1,11 +1,11 @@
 ---
-title: Notes de mise à jour de la version 2021.11.0 publication de [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notes de mise à jour de la version 2021.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notes de mise à jour de la version 2021.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour de la version 2021.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 86f8ddd1-af51-4874-9111-0935b5a162c1
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1055'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -23,26 +23,26 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2021.11.0) date du 16 décembre 2021.
-La version suivante (2022.1.0) date du 3 février 2022.
+La date de publication de la version actuelle (2021.11.0) de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 16 décembre 2021.
+La version suivante (2022.1.0) sera publié le 3 février 2022.
 
-## Vidéo de publication {#release-video}
+## Vidéo de mise à jour {#release-video}
 
-Consultez la section [Présentation de la version de décembre 2021](https://video.tv.adobe.com/v/339278) vidéo pour un résumé des fonctionnalités ajoutées dans la version 2021.11.0 (novembre 2021).
+Consultez la vidéo [Présentation de la version de décembre 2021](https://video.tv.adobe.com/v/339278) pour un résumé des fonctionnalités ajoutées dans la version 2021.11.0 (novembre 2021).
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* Dynamic Media Image Smart Crop and Swatch est désormais optimisé par les derniers services Sensei, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles seront conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
+* Le recadrage et l’échantillon de l’image intelligente de Dynamic Media est désormais optimisé par les derniers services Sensei, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles seront conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
 
-### Nouvelles fonctionnalités d’ [!DNL Assets] canal prerrelease {#assets-prerelease-features}
+### Nouvelles fonctionnalités dans le [!DNL Assets] canal de version préliminaire {#assets-prerelease-features}
 
-* [!DNL Dynamic Media] - Vous pouvez désormais utiliser AEM interface Dynamic Media pour configurer les paramètres généraux et la configuration de publication au lieu d’avoir à passer par l’application de bureau Dynamic Media Classic.
+* [!DNL Dynamic Media] - Vous pouvez désormais utiliser l’interface AEM Dynamic Media pour configurer les paramètres généraux et la configuration de publication au lieu d’avoir à passer par l’application de bureau Dynamic Media Classic.
 
-* [!DNL Dynamic Media] prend désormais en charge l’ingestion, la prévisualisation, la lecture et la publication pour les vidéos MXF. Les annotations et les vidéos Shoppable pour les vidéos MXF ne sont pas encore prises en charge.
+* [!DNL Dynamic Media] prend désormais en charge l’ingestion, la prévisualisation, la lecture et la publication des vidéos MXF. L’annotation et la shoppable vidéo pour les vidéos MXF ne sont pas encore prises en charge.
 
-* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources sur DAM distant sont disponibles sur le déploiement Sites. Vous pouvez désormais effectuer les opérations suivantes : [mettre à jour, supprimer, renommer et déplacer des opérations](/help/assets/use-assets-across-connected-assets-instances.md) sur les ressources ou dossiers DAM distants. Les mises à jour, avec un certain délai, sont disponibles automatiquement sur le déploiement Sites .
+* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources du DAM distant sont disponibles sur le déploiement de Sites. Vous pouvez désormais effectuer les opérations suivantes : [mettre à jour, supprimer, renommer et déplacer des opérations](/help/assets/use-assets-across-connected-assets-instances.md) sur les ressources ou dossiers du DAM distant. Les mises à jour, avec un certain retard, sont disponibles automatiquement sur le déploiement Sites.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -50,28 +50,28 @@ Consultez la section [Présentation de la version de décembre 2021](https://vid
 
 * **Externaliser les données des workflows AEM pour un traitement sécurisé** : vous pouvez stocker les données de workflows AEM (données de variables de workflows AEM) qui contiennent des éléments de données à caractère personnel dans un référentiel géré par le client pour un traitement sécurisé. Les éléments de données et les variables de workflows ne sont pas stockés dans le référentiel AEM et sont récupérés à la demande à partir d’un référentiel géré par le client lors du traitement du workflow.
 
-### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
+### Nouvelles fonctionnalités disponibles dans le [!DNL Forms] canal de version préliminaire {#prerelease-features-forms}
 
-* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html) vous permettent de combiner un modèle et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents dans les modes synchrone et par lots. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+* **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API Communications](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/using-communications/aem-forms-cloud-service-communications.html?lang=fr) vous permettent de combiner un modèle et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents dans les modes synchrone et par lots. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
 
    * Générer des documents en renseignant les fichiers de modèle (PDF et XDP) avec des données XML
    * Générer des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs
 
-* **Polices personnalisées pour les documents Document d’enregistrement et de PDF créés avec les API de communication**: Vous pouvez désormais utiliser des polices approuvées par la marque dans les documents PDF générés à l’aide des API de communication pour vous conformer aux exigences de votre organisation.
+* **Polices personnalisées pour les documents d’enregistrement et les documents PDF créés avec les API communications** : Vous pouvez désormais utiliser des polices approuvées par la marque dans les documents PDF générés à l’aide des API communications pour vous conformer aux exigences de votre organisation.
 
-* **Portail Forms**: Vous pouvez utiliser [Portail Forms](/help/forms/configure-forms-portal.md) pour répertorier vos formulaires adaptatifs publiés sur une page AEM Sites. Cela permet à un visiteur du site de découvrir tous les formulaires disponibles. De plus, le visiteur peut utiliser le portail de formulaires pour enregistrer et accéder au brouillon d’un formulaire adaptatif et consulter la version PDF d’un formulaire adaptatif envoyé.
+* **Portail de formulaires** : Vous pouvez utiliser le [Portail de formulaires](/help/forms/configure-forms-portal.md) pour répertorier vos formulaires adaptatifs publiés sur une page AEM Sites. Cela permet à un visiteur du site de découvrir tous les formulaires disponibles. De plus, le visiteur peut utiliser le portail de formulaires pour enregistrer et accéder au brouillon d’un formulaire adaptatif et consulter la version PDF d’un formulaire adaptatif envoyé.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
 ### Nouveautés {#what-is-new-cif}
 
-* Extension des composants myAccount basés sur les composants Peregrine extensibles de Commerce
+* Extension des composants myAccount, basés sur les composants extensibles Peregrine de Commerce
 
 ![Extension des composants myAccount](/help/assets/CIF/extended-myAccount-components.png)
 
-* Les auteurs peuvent créer des Recommendations de produit Commerce ad hoc à l’aide de types de recommandations supplémentaires.
+* Les auteurs peuvent créer des recommandations de produits Commerce ad hoc à l’aide de types de recommandations supplémentaires.
 
-* Prise en charge des cartes-cadeaux dans AEM Storefront
+* Prise en charge des cartes-cadeaux dans la vitrine AEM
 
 ## Cloud Manager {#cloud-manager}
 
@@ -79,27 +79,27 @@ Cette section présente les notes de mise à jour de Cloud Manager dans AEM as a
 
 ### Date de publication {#release-date-cm-nov}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.11.0 est le 04 novembre 2021.
+La date de publication de Cloud Manager dans la version 2021.11.0 d’AEM as a Cloud Service est le 4 novembre 2021.
 La prochaine version est prévue pour le 09 décembre 2021.
 
 ### Nouveautés {#what-is-new-cm-nov}
 
-* Les utilisateurs peuvent désormais tirer parti des nouveaux pipelines front-end pour déployer le code front-end exclusivement de manière accélérée. Voir [Pipelines front-end de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
+* Les utilisateurs peuvent désormais exploiter les nouveaux pipelines front-end pour déployer exclusivement le code front-end de manière accélérée. Voir [Pipelines frontaux de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
 
    >[!IMPORTANT]
-   >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` ou supérieur pour utiliser de nouveaux pipelines front-end.
+   >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` ou supérieure pour utiliser de nouveaux pipelines frontaux.
 
-* La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la version.
+* La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la publication de la version.
 
-* L’ID d’enregistrement Git s’affiche désormais dans les détails d’exécution du pipeline, ce qui facilite le suivi du code créé.
+* L’ID de validation Git s’affiche désormais dans les détails d’exécution du pipeline, ce qui facilite le suivi du code créé.
 
-* La création de programme est désormais disponible via l’API publiquement exposée.
+* La création de programme est désormais disponible sur l’API publiquement exposée.
 
-* La création d’environnement est désormais disponible via l’API publiquement exposée.
+* La création d’environnement est désormais disponible sur l’API publiquement exposée.
 
 * L’en-tête de réponse `x-request-id` est désormais visible dans le laboratoire de l’API sur [www.adobe.io](https://www.adobe.io/). Cet en-tête est utile pour signaler des problèmes à l’assistance clientèle à des fins de dépannage.
 
-* En tant qu’utilisateur, je vois une carte Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
+* En tant qu’utilisateur, je vois une vignette Pipeline sans pipeline. Pouvez-vous me fournir des conseils appropriés ?
 
 * Une nouvelle page d’activité est désormais disponible. Vous pouvez y afficher des activités telles que les exécutions de pipeline et de code, ainsi que les détails associés. Au fil du temps, les activités répertoriées dans cette page s’étendront, de même que les détails fournis.
 
@@ -127,15 +127,15 @@ La prochaine version est prévue pour le 09 décembre 2021.
 
 ### Date de publication {#release-date-bpa}
 
-La date de publication de la version 2.1.2 de l’analyseur des bonnes pratiques est le 1er décembre 2021.
+La date de publication de l’analyseur des bonnes pratiques v2.1.22 est le 01 décembre 2021.
 
 ### Nouveautés {#what-is-new-bpa}
 
-* Possibilité de détecter et de générer des rapports sur la version d’ACS commons utilisée.
-* Possibilité de détecter et de générer des rapports sur le nombre d’utilisateurs et de sous-groupes d’un groupe.
-* Possibilité de détecter et de générer des rapports sur les valeurs de propriété de noeud dans MongoDB dépassant 16 Mo.
+* Possibilité de détecter et de générer des rapports sur la version d’ACS couramment utilisée.
+* Possibilité de détecter et de générer des rapports sur le nombre d’utilisateurs et de sous-groupes dans un groupe.
+* Possibilité de détecter et de générer des rapports sur les valeurs des propriétés des noeuds dans MongoDB dépassant 16 Mo.
 
 ### Correctifs {#bug-fixes-bpa}
 
 * La détection des composants Foundation a été améliorée afin de réduire les faux négatifs.
-* Pour les clients AEM Forms, message BPA concernant `EMAIL_PDF_SUBMIT_ACTION` n’étant pas disponible sur AEM as a Cloud Service a été corrigé.
+* Pour les clients AEM Forms, le message BPA concernant `EMAIL_PDF_SUBMIT_ACTION` qui n’est pas disponible sur AEM as a Cloud Service a été corrigé.
