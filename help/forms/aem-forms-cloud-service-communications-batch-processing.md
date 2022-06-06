@@ -3,9 +3,9 @@ title: Traitement par lots des communications Experience Manager [!DNL Forms] as
 description: Comment créer des communications personnalisées et axées sur la marque ?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Une opération par lots est un processus de génération à intervalles planifi�
 
 * **Configuration (définition)** : une configuration de lot stocke des informations sur les différentes ressources et propriétés à définir pour les documents générés. Par exemple, elle fournit des détails sur le modèle XDP ou et l’emplacement des données client à utiliser, ainsi que la spécification de différentes propriétés pour les documents PDF en sortie.
 
-* **Exécution**: Pour démarrer une opération de lot, transmettez le nom de la configuration du lot à l’API d’exécution du lot.
+* **Exécution** : pour démarrer une opération par lots, transmettez le nom de la configuration de lot à l’API d’exécution par lots.
 
 ### Composants d’une opération par lots {#components-of-a-batch-operations}
 
@@ -42,7 +42,7 @@ Une opération par lots est un processus de génération à intervalles planifi�
 
 **Configuration de l’entrepôt de données par lots (USC)** : la configuration des données par lots permet de configurer une instance spécifique de stockage Blob pour les API Batch. Il vous permet de spécifier les emplacements d’entrée et de sortie dans le stockage Azure Blob de Microsoft détenu par le client.
 
-**API de lot**: Vous permet de créer des configurations par lots et d’exécuter les commandes en fonction de ces configurations pour fusionner un PDF ou un modèle XDP avec des données et générer une sortie dans les formats PDF, PS, PCL, DPL, IPL et ZPL. Les communications fournissent des API par lots pour la gestion de la configuration et l’exécution des lots.
+**API par lot** : vous permet de créer des configurations de lot et d’exécuter les exécutions de lot en fonction de ces configurations afin de fusionner un PDF ou un modèle XDP avec des données et générer une sortie aux formats PDF, PS, PCL, DPL, IPL et ZPL. Les communications fournissent des API par lots pour la gestion de la configuration et l’exécution des lots.
 
 ![data-merge-table](assets/communications-batch-structure.png)
 
@@ -129,7 +129,7 @@ Pour créer un lot, utilisez l’API `POST /config`. Insérez les propriétés o
 
 * **configName** : spécifiez le nom unique du lot. Par exemple, `wknd-job`
 * **dataSourceConfigUri** : spécifiez l’emplacement de la configuration de l’entrepôt de données par lots. Il peut s’agir du chemin relatif ou absolu de la configuration. Par exemple : `/conf/global/settings/forms/usc/batch/wknd-batch`
-* **outputTypes**: Spécifiez les formats de sortie : PDF et IMPRESSION. Si vous utilisez le type de sortie IMPRESSION, dans la propriété `printedOutputOptionsList`, spécifiez au moins une option d’impression. Les options d’impression sont identifiées par leur type de rendu. Par conséquent, à l’heure actuelle, plusieurs options d’impression avec le même type de rendu ne sont pas autorisées. Les formats pris en charge sont PS, PCL, DPL, IPL et ZPL.
+* **outputTypes** : spécifiez les formats de sortie : PDF et PRINT. Si vous utilisez le type de sortie IMPRESSION, dans la propriété `printedOutputOptionsList`, spécifiez au moins une option d’impression. Les options d’impression sont identifiées par leur type de rendu. Par conséquent, à l’heure actuelle, plusieurs options d’impression avec le même type de rendu ne sont pas autorisées. Les formats pris en charge sont PS, PCL, DPL, IPL et ZPL.
 
 * **modèle** : spécifiez le chemin d’accès absolu ou relatif du modèle. Par exemple, `crx:///content/dam/formsanddocuments/wknd/statements.xdp`
 
@@ -156,7 +156,7 @@ La réponse de la demande d’état contient la section d’état. Elle fournit 
 >[!NOTE]
 >
 >* Lorsque vous demandez plusieurs formats d’impression, l’état contient plusieurs entrées. Par exemple, PRINT/ZPL, PRINT/IPL.
->* Un traitement par lots ne lit pas tous les enregistrements simultanément, mais continue à lire et à incrémenter le nombre d’enregistrements. Par conséquent, l’état renvoie -1 jusqu’à ce que tous les enregistrements aient été lus.
+>* Un traitement par lots ne lit pas tous les enregistrements simultanément, mais continue à lire et à incrémenter le nombre d’enregistrements. Par conséquent, le statut est -1 jusqu’à ce que tous les enregistrements aient été lus.
 
 
 ### Affichage des documents générés {#view-generated-documents}
