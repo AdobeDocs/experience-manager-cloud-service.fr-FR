@@ -1,25 +1,25 @@
 ---
-title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.6.0
-description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.5.0
+title: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.6.0
+description: Notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.5.0
 feature: Release Information
 exl-id: 9a0a53d3-31d4-493d-ba2e-b4bb22f60351
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '420'
 ht-degree: 100%
 
 ---
 
-# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.6.0 {#release-notes}
+# Notes de mise à jour de Cloud Manager dans Adobe Experience Manager as a Cloud Service version 2021.6.0 {#release-notes}
 
-Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.6.0.
+Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a Cloud Service version 2021.6.0.
 
 >[!NOTE]
->Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
+>Pour afficher les notes de mise à jour actuelles d’Adobe Experience Manager as a Cloud Service, cliquez [ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.6.0 est le 10 juin 2021.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.6.0 est le 10 juin 2021.
 
 ### Nouveautés {#what-is-new}
 
@@ -53,7 +53,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.6.0 es
 
 * Un message d’erreur incorrect s’affichait lorsqu’une valeur non valide était fournie lors de l’étape de planification.
 
-* Il peut arriver que l’utilisateur voit un état *actif* vert en regard d’une liste d’adresses IP autorisées même si cette configuration n’a pas été déployée.
+* Il peut arriver que l’utilisateur voit un statut *actif* vert en regard d’une liste d’adresses IP autorisées même si cette configuration n’a pas été déployée.
 
 * Certaines séquences de modification de programme peuvent empêcher la création ou la modification du pipeline de production.
 
