@@ -3,9 +3,9 @@ title: Créer un programme
 description: Découvrez comment configurer un nouveau programme et un nouveau pipeline pour déployer le module complémentaire.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '715'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Découvrez comment configurer un nouveau programme et un nouveau pipeline pour d
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours de module complémentaire de démonstration de référence d’AEM, [Présentation de l’installation du module complémentaire de démonstration de référence,](installation.md) vous avez appris comment fonctionne le processus d’installation du module complémentaire de démonstration de référence, illustrant comment les différentes pièces fonctionnent ensemble. Vous devez maintenant :
+Dans le document précédent du parcours du module complémentaire de démonstration d’AEM, [Présentation de l’installation du module complémentaire de démonstration de référence,](installation.md) vous avez appris comment fonctionne le processus d’installation du module complémentaire de démonstration de référence, illustrant comment les différentes pièces fonctionnent ensemble. Vous devez maintenant :
 
 * Posséder une compréhension de base de Cloud Manager.
 * Découvrez comment les pipelines diffusent du contenu et une configuration à AEM.
