@@ -6,9 +6,9 @@ hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1168'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ Cet article s’appuie sur ces principes de base afin que vous puissiez effectue
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment configurer un connecteur AEM pour le service de traduction de votre choix. Après l’avoir lu, vous devriez :
+Ce document vous aide à comprendre comment configurer un connecteur AEM pour le service de traduction de votre choix. Après avoir lu ce document, vous devriez :
 
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
-* être en mesure de configurer votre propre connexion à votre service de traduction.
+* savoir configurer votre propre connexion à votre service de traduction.
 
 ## Structure d’intégration de la traduction {#tif}
 
