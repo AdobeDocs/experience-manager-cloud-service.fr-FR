@@ -3,9 +3,9 @@ title: Accès au fournisseur de services Screens
 description: Cette page décrit comment accéder au fournisseur de services Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
 source-git-commit: 9e43db0fdd55e396de2cf737e1d79bd06a1835e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +31,13 @@ Suivez les étapes ci-dessous pour configurer le fournisseur de services Screens
    >[!CAUTION]
    >Si vous avez accès à plusieurs organisations, veillez à vous être connecté à la bonne organisation. Pour modifier votre organisation, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation à laquelle vous avez besoin d’accéder.
 
-2. Cliquez sur l’icône en forme d’engrenage en regard de Projet (coin supérieur gauche).
+2. Cliquez sur l’icône en forme d’engrenage à côté de Projet (coin supérieur gauche).
 
    ![image](/help/screens-cloud/assets/configure/configure-screens0.png)
 
-3. Saisissez les informations suivantes dans la boîte de dialogue Modifier les paramètres .
-   * **URL de publication** - AEM l’URL de publication (par ex. `https://publish-p12345-e12345.adobeaemcloud.com`)
-   * **URL de création** - AEM l’URL de création (par ex. `https://author-p12345-e12345.adobeaemcloud.com`)
+3. Saisissez les informations suivantes dans la boîte de dialogue Modifier les paramètres.
+   * **URL de publication** - URL de publication AEM (par ex. `https://publish-p12345-e12345.adobeaemcloud.com`)
+   * **URL de création** - URL de création AEM (par ex. `https://author-p12345-e12345.adobeaemcloud.com`)
 
    ![image](/help/screens-cloud/assets/configure/configure-screens4.png)
 
