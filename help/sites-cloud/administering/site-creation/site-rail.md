@@ -30,7 +30,7 @@ Le rail Site permet de gérer les informations relatives aux thèmes et aux mod�
 >
 >Consultez la section [Parcours de création de site rapide](/help/journey-sites/quick-site/overview.md) pour vous familiariser avec l’outil de création rapide de site et le pipeline frontal afin de personnaliser facilement le thème de votre site.
 
-##  Téléchargement des sources de thème {#downloading-theme-sources}
+## Téléchargement des sources de thème {#downloading-theme-sources}
 
 Lorsque vous créez un site dans AEM d’après un [modèle de site,](site-templates.md) vous pouvez télécharger votre [thème du site](site-themes.md) à l’aide du rail Site.
 
@@ -40,7 +40,7 @@ Avec le rail Site affiché dans la console Sites, sélectionnez la racine de vot
 
 Appuyez ou cliquez sur **Télécharger des sources de thème** pour télécharger une copie locale du thème du site sous forme de fichier `.zip` à des fins de personnalisation.
 
-##  Téléchargement des ressources de modèle {#downloading-template-resources}
+## Téléchargement des ressources de modèle {#downloading-template-resources}
 
 Les [modèles de site](site-templates.md) peuvent contenir des informations en plus de la structure de contenu de votre site et du [thème du site.](site-themes.md) Les modèles de site peuvent contenir des designs de structure filaire ou d’autres fichiers liés au site, par exemple.
 
