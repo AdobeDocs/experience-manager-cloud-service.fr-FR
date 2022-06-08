@@ -2,10 +2,10 @@
 title: Création et gestion des canaux dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des canaux dans Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: afcee8019c9b59f3eb1fdcabd569272eeea76dab
+source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 50%
+source-wordcount: '1107'
+ht-degree: 49%
 
 ---
 
@@ -174,4 +174,4 @@ Par conséquent, cela peut donner lieu à des écrans vierges s’il n’y a pas
 
 ## Et après ? {#whats-next}
 
-Maintenant que vous avez configuré un canal AEM Screens dans votre projet, vous devez publier votre canal. Reportez-vous à [Publication de canaux dans Screens as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/create-content/manage-publish.html?lang=fr) avant de gérer vos lecteurs à partir du fournisseur de services Screens.
+Maintenant que vous avez configuré un canal AEM Screens dans votre projet, vous devez publier votre canal. Reportez-vous à [Publication de canaux dans Screens as a Cloud Service](manage-publish.md) avant de gérer vos lecteurs à partir du fournisseur de services Screens.
