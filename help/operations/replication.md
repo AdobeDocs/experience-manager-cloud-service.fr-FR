@@ -2,7 +2,7 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 45a678be950e28942a5cbb075688585557911ce8
+source-git-commit: 50754c886c92a121c5bb20449561694f8e42b0ac
 workflow-type: tm+mt
 source-wordcount: '1363'
 ht-degree: 100%
@@ -58,7 +58,7 @@ Pour exécuter une activation d’arborescence :
 
 Pour de meilleures performances, suivez les instructions suivantes lorsque vous utilisez cette fonctionnalité :
 * Il est recommandé de répliquer moins de 100 chemins à la fois, avec une limite stricte de 500 chemins d’accès.
-* La taille totale du contenu répliqué doit être inférieure à 5 Mo. Il s’agit uniquement des nœuds et des propriétés, mais pas des fichiers binaires, qui incluent des modules de workflow et des modules de contenu.
+* La taille totale du contenu répliqué doit être inférieure à 10 Mo. Il s’agit uniquement des nœuds et des propriétés, mais pas des fichiers binaires, qui incluent des modules de workflow et des modules de contenu.
 
 ### Workflow de publication de l’arborescence de contenu {#publish-content-tree-workflow}
 
@@ -194,7 +194,7 @@ L’ensemble `ReplicationStatus` d’une ressource n’est modifié que si l’a
 
 **Chemin d’accès et limites de taille de l’API de réplication**
 
-Il est recommandé de répliquer moins de 100 chemins, 500 étant la limite stricte. Au-delà de cette limite stricte, une exception ReplicationException est générée. Si la logique de votre application ne nécessite pas de réplication atomique, cette limite peut être dépassée en définissant ReplicationOptions.setUseAtomicCalls à la valeur false. Ainsi, un nombre quelconque de chemins d’accès sera accepté, mais des compartiments seront créés en interne pour rester au-dessous de cette limite. Le volume de contenu transmis par appel de réplication ne doit pas dépasser 5 Mo, ce qui inclut les nœuds et les propriétés, mais pas les binaires (les packages de workflow et les packages de contenu sont considérés comme des binaires).
+Il est recommandé de répliquer moins de 100 chemins, 500 étant la limite stricte. Au-delà de cette limite stricte, une exception ReplicationException est générée. Si la logique de votre application ne nécessite pas de réplication atomique, cette limite peut être dépassée en définissant ReplicationOptions.setUseAtomicCalls à la valeur false. Ainsi, un nombre quelconque de chemins d’accès sera accepté, mais des compartiments seront créés en interne pour rester au-dessous de cette limite. Le volume de contenu transmis par appel de réplication ne doit pas dépasser 10 Mo, ce qui inclut les nœuds et les propriétés, mais pas les binaires (les packages de workflow et les packages de contenu sont considérés comme des binaires).
 
 ## Résolution des problèmes {#troubleshooting}
 
