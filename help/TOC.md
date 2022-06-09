@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d379c0fe84c566923682e058f212b805a03fb533
+source-git-commit: 4f0ba5de5d1e4c0163c411dd611cb0ca09798dba
 workflow-type: tm+mt
-source-wordcount: '3576'
+source-wordcount: '3594'
 ht-degree: 96%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 96%
    + [Terminologie – Nouveaux termes pour le cloud](/help/overview/terminology.md)
    + [Présentation de l’architecture d’AEM as a Cloud Service](/help/overview/architecture.md)
    + [Gestion de l’optimisation et des URL](/help/overview/seo-and-url-management.md)
+   + [AEM as a Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [Évaluation des indicateurs de performance clés](/help/overview/assessing-kpis.md)
    + [Alignement des indicateurs de performance clés](/help/overview/aligning-kpis.md)
    + [Choix de la bonne équipe](/help/overview/choose-right-team.md)
@@ -33,6 +34,7 @@ ht-degree: 96%
    + Notes de mise à jour générales d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Notes de mise à jour de la version 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [Notes de mise à jour de la version 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
          + [Notes de mise à jour de la version 2022.1.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-1-0.md)
       + 2021 {#2021}
@@ -358,6 +360,7 @@ ht-degree: 96%
       + [Gestion des droits numériques des ressources](/help/assets/drm.md)
       + [Mise en filigrane de ressources](/help/assets/watermark-assets.md)
       + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
+      + [Balises de couleur pour les images](/help/assets/color-tag-images.md)
    + Configuration, administration et extension d’[!DNL Assets] {#admin}
       + [Documents pour les développeurs et guides de référence des API](/help/assets/developer-reference-material-apis.md)
       + [Schéma de métadonnées de dossier](/help/assets/folder-metadata-schema.md)
@@ -612,6 +615,7 @@ ht-degree: 96%
       + [Point d’entrée GraphQL](/help/headless/setup/create-api-request.md)
    + Fragments de contenu {#content-fragments}
       + [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=fr)
+      + [Console Fragments de contenu](/help/headless/content-fragments/content-fragment-console.md)
       + [Modèles de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=fr)
       + [Gestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=fr)
       + Création{#authoring}

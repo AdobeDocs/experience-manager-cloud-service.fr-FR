@@ -2,7 +2,7 @@
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: d1d3fd26856f690d3611246aeb3c663b8f506b59
+source-git-commit: 2f27ecdbff4d1cbfe26f090514a61ea3aa730ef2
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 100%
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 | Produit | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2022.4.0 |
+| Version | 2022.5.0 |
 | Type | Mises à jour continues |
 | Date de disponibilité | Mise à jour continue |
 

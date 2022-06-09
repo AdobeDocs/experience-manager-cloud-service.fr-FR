@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 8c432f8902d005918c4fd4432d23c3140967c773
+source-git-commit: 036d8b590bc9ca9dcbe4dd3e34bc14cc2d8a79e1
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 27%
+source-wordcount: '779'
+ht-degree: 22%
 
 ---
 
@@ -25,60 +25,72 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2022.4.0) est le 5 mai 2022.
-La prochaine version (2022.5.0) est prévue pour le 9 juin 2022.
+La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2022.5.0) est le 9 juin 2022.
+La prochaine version (2022.6.0) est prévue pour le 30 juin 2022.
 
 ## Vidéo de mise à jour {#release-video}
 
-Consultez la section [Présentation de la version d’avril 2022](https://video.tv.adobe.com/v/342612?quality=12) vidéo pour un résumé des fonctionnalités ajoutées dans la version 2022.4.0.
+Regardez la vidéo Présentation de la version de mai 2022 pour un résumé des fonctionnalités ajoutées dans la version 2022.5.0 :
+
+>[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
-* Les types de données de modèle de contenu peuvent désormais être définis comme [traduisible](/help/assets/content-fragments/content-fragments-models.md#properties) à l’aide d’une simple case à cocher dans l’éditeur de modèles de contenu. En outre, les règles et configurations de traduction AEM sont automatiquement mises à jour.
+### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Sites] {#prerelease-features-sites}
+
+* Diverses fonctionnalités de GraphQL
+* Une nouvelle console optimisée pour l’utilisation sans affichage des fragments de contenu
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* Vous pouvez désormais [balises de tri](/help/assets/organize-assets.md#use-tags-to-organize-assets) dans la fenêtre du sélecteur de balises, par ordre croissant ou décroissant, en fonction du nom de la balise, de la date de création ou de la date de modification.
+* [Imagerie dynamique Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) prend désormais en charge le format de fichier AVIF. Améliorez davantage la Google Core Web Vital (avec la plus grande peinture contextuelle), l’AVIF offrant une réduction de taille supplémentaire de 20 % par rapport à WebP. Au total, l’AVIF offre une réduction de taille moyenne de 41 % sur le JPEG (dans certaines images même si elle atteint 76 %).
+
+* [!UICONTROL Experience Manager Assets Brand Portal] exécute désormais des tâches automatiques toutes les douze heures afin de supprimer toutes les ressources Brand Portal publiées sur AEM. Par conséquent, vous n’avez pas besoin de supprimer manuellement les ressources du dossier Contribution pour que la taille du dossier reste inférieure à la limite de seuil. [Nouveautés d’Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr).
+
+### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#prerelease-features-assets}
+
+Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sensei AI pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion ;](../../assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs, comprises entre 1 et 4, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
+
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouveautés de [!DNL Forms] {#what-is-new-forms}
+### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-* **Communications - Prise en charge des API de manipulation de documents dans le SDK Forms as a Cloud Service**: [API de manipulation de documents](/help/forms/aem-forms-cloud-service-communications.md) vous aide à combiner, réorganiser et valider des documents de PDF. Vous pouvez désormais utiliser les API Communications - Génération de documents sur un environnement de développement local à l’aide du SDK AEM Forms as a Cloud Service.
+* **Intégration de Forms adaptatif à Microsoft® Power Automate**: Vous pouvez désormais configurer un formulaire adaptatif pour exécuter un flux cloud Microsoft® Power Automate Cloud lors de l’envoi. Le formulaire adaptatif configuré envoie les données, les pièces jointes et le document d’enregistrement capturés à Power Automate Cloud Flow pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client.
 
-* **Utilisation de XCI personnalisé pour générer un document d’enregistrement**: Vous pouvez désormais [utiliser un fichier XCI personnalisé pour définir différentes propriétés d’un document d’enregistrement ;](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#use-a-custom-xci-file). Il remplace le XCI maître par les modifications personnalisées. Il offre un meilleur contrôle sur la génération des documents d’enregistrement, ce qui accroît les opportunités de personnalisation et de personnalisation.
+* **Assistant de création d’un formulaire adaptatif**: Vous pouvez utiliser l’assistant convivial destiné aux entreprises pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
-* **Utilisation de CAPTCHA invisible dans un formulaire adaptatif**: Vous pouvez utiliser la variable [CAPTCHA invisible pour montrer le défi CAPTCHA uniquement en cas d&#39;activité suspecte](/help/forms/captcha-adaptive-forms.md). Si aucune activité suspecte n&#39;est trouvée, le défi CAPTCHA ne s&#39;affiche pas. Il permet d’évaluer l’achèvement du formulaire humain sans conditions de case à cocher, de réduire les efforts de personnalisation et d’améliorer l’expérience de l’utilisateur final.
-
-* **Configurations du modèle de données de formulaire**: Vous pouvez désormais [réutilisation des configurations de modèle de données de formulaire dans les environnements](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), en simplifiant les intégrations de données et en réduisant les coûts informatiques.
+   ![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png)
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
 ### Nouveautés {#what-is-new-cif}
 
-* Accès rapide au cockpit du produit : Accédez facilement à des informations détaillées sur les produits en un seul clic dans l’éditeur de sites.
+* Nouvelle page des propriétés du cockpit du produit pour un aperçu meilleur et simplifié
 
-   ![Activer la liste bloquée](/help/assets/CIF/enable-wishlist.png)
+![Présentation des propriétés du cockpit du produit](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Prise en charge de composants commerciaux marketing supplémentaires : Les composants peuvent être configurés pour afficher un appel à l’action de type &quot;ajouter au panier&quot; et &quot;ajouter à une liste de souhaits&quot;.
+* Amélioration de la compatibilité et de la robustesse pour les connecteurs tiers sur I/O Runtime
 
-   ![Raccourci de l’éditeur de sites vers le cockpit du produit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+* Amélioration de la prise en charge des remplacements de la configuration du client GQL (par exemple, définition du comportement de mise en cache personnalisée)
+
+### Correctifs {#bug-fixes-cif}
+
+* Le champ de sélecteur de produits à plusieurs valeurs affiche le deuxième et les produits supplémentaires comme non valides
+
+* Le sélecteur de produit est parfois masqué derrière les composants.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
-### Analyseurs de build de SDK {#sdk-build-analyzers}
+### Nouveautés {#what-is-new-foundation}
 
-Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des problèmes dans un projet Maven, y compris les dépendances manquantes. Il permet aux développeurs d’identifier des problèmes au cours du développement local, bien avant leur déploiement dans les environnements cloud avec Cloud Manager.
+* L’option &quot;Ajouter une arborescence&quot; sous l’écran de l’administrateur de l’agent de réplication **Onglet Répartir**, précédemment annoncé comme obsolète, sera supprimé le 20 juin 2022 ou peu de temps après. Les modules avec une arborescence de contenu doivent plutôt être répliqués à l’aide de [Gérer la publication](/help/operations/replication.md#manage-publication) ou le [Processus de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow).
 
-Un nouvel analyseur a été ajouté récemment :
-
-* `content-packages-validation` : valide une syntaxe et une structure de contenu correctement formées pour les modules qui seront installés lors du déploiement.
-
-Il est vivement recommandé de mettre à jour votre projet Maven avec la dernière version de l’analyseur ou d’inclure l’analyseur si vous ne l’avez pas encore fait. Pour plus d’informations, voir la documentation [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=fr).
+* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu de plus de 10 Mo (noeuds avec des propriétés, sans inclure les fichiers binaires) est obsolète et sera appliquée le 12 septembre 2022 ou peu de temps après. Au lieu de cela, [Gérer la publication](/help/operations/replication.md#manage-publication) ou le [Processus de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) doit être utilisé pour répliquer ces modules de contenu volumineux. En juillet, un message d’avertissement s’affiche dans l’écran de l’administrateur de l’agent de réplication. **Onglet Répartir** si vous tentez de répliquer ces packages de contenu volumineux et également dans le journal d’erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces packages de contenu volumineux. En septembre, les avertissements seront remplacés par des erreurs. Ajustez vos processus en conséquence.
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
 

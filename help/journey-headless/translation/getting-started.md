@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -78,7 +78,7 @@ L’architecte de contenu travaille à définir cette structure dès le début d
 
 Comme les modèles de contenu définissent la structure de votre contenu, vous devez savoir quels champs de vos modèles doivent être traduits. En règle générale, vous travaillez avec l’architecte de contenu pour définir ces éléments. Pour parcourir les champs de vos modèles de contenu, procédez comme suit.
 
-1. Accédez à **Outils**, **Ressources** -> **Modèles de fragment de contenu**.
+1. Accédez à **Outils** -> **Général** -> **Modèles de fragment de contenu**.
 1. Les modèles de fragment de contenu sont généralement stockés dans une structure de dossiers. Appuyez ou cliquez sur le dossier de votre projet.
 1. Les modèles y sont répertoriés. Appuyez ou cliquez sur le modèle pour afficher les détails.
    ![Modèles de fragment de contenu](assets/content-fragment-models.png)

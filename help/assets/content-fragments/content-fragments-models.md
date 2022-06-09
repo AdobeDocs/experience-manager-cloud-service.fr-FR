@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 0030b0f6f17dd66229f681e9c513786de4fe10a2
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '2892'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
-1. Accédez à **Outils**, **Ressources**, puis ouvrez les **modèles de fragment de contenu**.
+1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
 1. Accédez au fichier adapté votre [configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Utilisez le bouton **Créer** pour ouvrir l’assistant.
 
@@ -46,7 +46,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 >
 >La modification d’un modèle de fragment de contenu existant peut avoir un impact sur les fragments dépendants.
 
-1. Accédez à **Outils**, **Ressources**, puis ouvrez les **modèles de fragment de contenu**.
+1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Ouvrez le modèle requis pour l’**édition**. Utilisez l’action rapide ou sélectionnez le modèle puis l’action dans la barre d’outils.
@@ -400,7 +400,7 @@ Les modèles de fragment de contenu autorisés pour un dossier sont résolus com
 
 Pour supprimer un modèle de fragment de contenu :
 
-1. Accédez à **Outils**, **Ressources**, puis ouvrez les **modèles de fragment de contenu**.
+1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis utilisez l’option **de suppression** de la barre d’outils.
@@ -415,7 +415,7 @@ Les modèles de fragment de contenu doivent être publiés avant ou pendant la p
 
 Pour publier un modèle de fragment de contenu :
 
-1. Accédez à **Outils**, **Ressources**, puis ouvrez les **modèles de fragment de contenu**.
+1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option de **publication** dans la barre d’outils.
@@ -431,7 +431,7 @@ Les modèles de fragment de contenu peuvent être annulés s’ils ne sont réf�
 
 Pour annuler la publication d’un modèle de fragment de contenu :
 
-1. Accédez à **Outils**, **Ressources**, puis ouvrez les **modèles de fragment de contenu**.
+1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option **Annuler la publication** dans la barre d’outils.

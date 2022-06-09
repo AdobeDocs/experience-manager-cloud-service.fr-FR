@@ -3,9 +3,9 @@ title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 5f0221fad6086f8d5c5e9bd5164d05ea8d6e7d2c
+source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '960'
 ht-degree: 4%
 
 ---
@@ -16,13 +16,9 @@ Une mise en oeuvre de la norme [GraphiQL](https://graphql.org/learn/serving-over
 
 >[!NOTE]
 >
->Certaines fonctionnalités de cette fonctionnalité sont disponibles dans le canal de version préliminaire. En particulier, les fonctionnalités liées aux requêtes persistantes.
-> 
->Voir [Documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#enable-prerelease) pour plus d’informations sur l’activation de la fonctionnalité dans votre environnement.
-
->[!NOTE]
+>GraphiQL est inclus dans tous les environnements d’AEM (mais sera accessible/visible uniquement lorsque vous configurez vos points de terminaison).
 >
->GraphiQL est inclus dans AEM, mais il est activé par défaut uniquement sur la variable `dev-authors` des environnements.
+>Dans les versions précédentes, un module était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut maintenant être supprimé.
 
 >[!NOTE]
 >Vous devez avoir [configuration de vos points de fin](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
@@ -35,7 +31,7 @@ Le **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en v
 * Exécutez vos requêtes pour afficher immédiatement les résultats.
 * gérer **Variables de requête**
 * enregistrement et gestion **Requêtes persistantes**
-* publier ou annuler la publication, **Requêtes persistantes** (vers/depuis) `dev-publish`)
+* publier ou annuler la publication, **Requêtes persistantes** (par exemple, pour/depuis `dev-publish`)
 * voir la **Histoire** de vos requêtes précédentes
 * utilisez la méthode **Explorateur de documentation** pour accéder à la documentation ; vous aide à apprendre et à comprendre les méthodes disponibles.
 
@@ -46,7 +42,7 @@ Vous pouvez accéder à l’éditeur de requêtes à partir de :
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
 
-Vous pouvez utiliser GraphiQL sur votre système de création de développement afin qu’il puisse être demandé par votre application cliente à l’aide de requêtes de GET et de requêtes de publication. Pour l’utilisation de la production, vous devez [déplacer vos requêtes vers votre environnement de production ;](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Commencez par créer l’auteur de production pour valider le contenu nouvellement créé avec les requêtes, puis publiez la production pour la consommation en direct.
+Vous pouvez utiliser GraphiQL sur votre système afin que les requêtes puissent être demandées par votre application cliente à l’aide de requêtes GET et pour publier des requêtes. Pour l’utilisation de la production, vous pouvez alors [déplacer vos requêtes vers votre environnement de production ;](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Commencez par créer l’auteur de production pour valider le contenu nouvellement créé avec les requêtes, puis publiez la production pour la consommation en direct.
 
 ## Sélection de votre point de terminaison {#selecting-endpoint}
 
@@ -100,9 +96,9 @@ Par exemple :
 
 ![Variables GraphQL](assets/cfm-graphqlapi-03.png "Variables GraphQL")
 
-## Publication des requêtes persistantes (recette-publication) {#publishing-persisted-queries}
+## Publication des requêtes conservées {#publishing-persisted-queries}
 
-Une fois que vous avez sélectionné votre requête conservée dans la liste (panneau de gauche), vous pouvez utiliser la variable **Publier** et **Annuler la publication** actions. Cela les active dans votre environnement de publication de développement (`dev-publish`) pour un accès facile à vos applications lors des tests.
+Une fois que vous avez sélectionné votre requête conservée dans la liste (panneau de gauche), vous pouvez utiliser la variable **Publier** et **Annuler la publication** actions. Ils seront alors activés dans votre environnement de publication (par exemple, `dev-publish`) pour un accès facile à vos applications lors des tests.
 
 >[!NOTE]
 >

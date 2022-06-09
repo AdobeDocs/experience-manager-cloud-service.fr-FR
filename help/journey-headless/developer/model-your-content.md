@@ -2,10 +2,10 @@
 title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement découplé AEM, apprenez à modéliser votre contenu pour une diffusion AEM découplée à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
-workflow-type: ht
+source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -214,7 +214,7 @@ Au tout début, vous devez activer les modèles de fragment de contenu pour votr
 >
 >Voir Ressources supplémentaires – Fragments de contenu dans l’explorateur de configurations
 
-Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez le faire sous Outils -> Ressources -> Modèles de fragment de contenu. Par exemple :
+Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez effectuer cette opération sous **Outils** -> **Général** -> **Modèles de fragment de contenu**. Par exemple :
 
 ![Modèle de fragment de contenu ](assets/cfm-model.png)
 
