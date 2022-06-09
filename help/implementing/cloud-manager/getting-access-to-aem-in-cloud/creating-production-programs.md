@@ -2,10 +2,10 @@
 title: 'Création de programmes de production '
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme de production afin d’héberger le trafic en direct.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
-workflow-type: ht
-source-wordcount: '362'
-ht-degree: 100%
+source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 74%
 
 ---
 
@@ -34,11 +34,11 @@ Pour créer un programme de production, procédez comme suit.
 
    ![Page de destination de Cloud Manager](assets/first_timelogin1.png)
 
-1. Sélectionnez **Configuration pour la production** dans l’assistant de création de programme pour créer un programme de production. Vous pouvez accepter le nom de programme par défaut ou le modifier avant de sélectionner **Créer**.
+1. Sélectionnez **Configuration pour la production** dans l’assistant de création de programme pour créer un programme de production. Vous pouvez accepter le nom du programme par défaut ou le modifier avant de cliquer sur **Continuer**.
 
    ![Assistant de création de programme](assets/create-prod1.png)
 
-1. Dans l’onglet suivant, sélectionnez les solutions à inclure dans le programme.
+1. Sur le **Solutions et modules complémentaires** sélectionnez les solutions à inclure dans le programme.
 
    ![Solutions sélectionnées](assets/setup-prod-select.png)
 
@@ -46,7 +46,16 @@ Pour créer un programme de production, procédez comme suit.
 
    ![Sélectionner les modules complémentaires](assets/setup-prod-commerce.png)
 
-1. Lorsque vos solutions et modules complémentaires sont sélectionnés, cliquez sur **Créer**.
+1. Lorsque vos solutions et modules complémentaires sont sélectionnés, cliquez sur **Continuer**.
+
+1. Sur le **Date d’activation** saisissez la date d’activation de votre programme de production.
+
+   ![Définition de la date d’activation planifiée](assets/setup-go-live.png)
+
+   * Cette date peut être modifiée à tout moment.
+   * Cette date est destinée à un usage informatif uniquement et déclenche le widget GoLive sur la page d’aperçu du programme afin de fournir des liens internes au produit vers AEM documentation des bonnes pratiques as a Cloud Service en temps opportun, afin de vous aligner sur votre parcours et d’offrir ainsi une expérience GoLive réussie et fluide.
+
+1. Cliquez sur **Créer**.
 
 Votre programme est créé par Cloud Manager, s’affiche et peut être sélectionné dans la page de destination.
 

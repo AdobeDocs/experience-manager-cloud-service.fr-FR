@@ -2,10 +2,10 @@
 title: Modification de programmes
 description: Découvrez comment modifier vos programmes de production et Sandbox pour ajuster leurs options après les avoir créés.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
-source-wordcount: '389'
-ht-degree: 100%
+source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 74%
 
 ---
 
@@ -32,13 +32,13 @@ Pour modifier un programme, procédez comme suit.
 
    ![Option Modifier le programme](assets/edit-program-overview.png)
 
-1. La page **Modifier le programme** affiche deux onglets : **Général** et **Solutions et modules complémentaires**. Sélectionnez l’onglet **Général** pour modifier le nom et la description du programme.
+1. Le **Modifier le programme** s’ouvre. Sur le **Général** modifiez le nom et la description du programme.
 
    * Au moins une solution doit être sélectionnée pour un programme.
 
    ![Onglet Général](assets/edit-program-prod1.png)
 
-1. Sélectionnez l’onglet **Solutions et modules complémentaires** pour modifier les solutions du programme.
+1. Sur le **Solutions et modules complémentaires** , modifiez les solutions du programme.
 
    ![Solutions sélectionnées](assets/edit-prg.png)
 
@@ -46,9 +46,15 @@ Pour modifier un programme, procédez comme suit.
 
    ![Modifier les modules complémentaires](assets/edit-program-add-on.png)
 
+1. Sur le **Paramètres d’activation** modifiez la date d’activation prévue du programme.
+
+   ![Modification des paramètres d’activation](assets/edit-program-go-live.png)
+
+   * Cette date est destinée à un usage informatif uniquement et déclenche le widget GoLive sur la page d’aperçu du programme afin de fournir des liens internes au produit vers AEM documentation des bonnes pratiques as a Cloud Service en temps opportun, afin de vous aligner sur votre parcours et d’offrir ainsi une expérience GoLive réussie et fluide.
+
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications dans le programme.
 
-Une fois vos mises à jour effectuées, si les solutions sélectionnées ont été modifiées, ces modifications prennent effet après le prochain déploiement.
+Chaque fois qu’un programme est modifié, y compris l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
 
 ## Suppression de programmes Sandbox {#delete-sandbox-program}
 
