@@ -4,10 +4,10 @@ description: Présentation de l’intégration entre [!DNL Assets] et [!DNL Work
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 1fce2eb37ebeaef966913e3ffdac59e9e126c788
+source-git-commit: 1a0718d317f13924cd4da273f9184b4f165bbc7e
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 97%
+source-wordcount: '955'
+ht-degree: 96%
 
 ---
 
@@ -33,7 +33,7 @@ Consultez les sections relatives à la prise en charge de la plateforme et aux [
 >
 >* Adobe peut apporter des mises à jour à [!DNL Adobe Workfront] et [!DNL Adobe Experience Manager], lesquelles peuvent rendre ce connecteur inutile. Si cela se produit, les clients peuvent être amenés à abandonner l’utilisation de ce connecteur.
 >
->* Adobe prend en charge les versions 1.7.4 et ultérieures du connecteur. Pour vérifier la version améliorée du connecteur, voir l’étape 5(a) de [instructions d’installation du connecteur amélioré](workfront-connector-install.md).
+>* Adobe prend en charge les versions 1.7.4 et ultérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, voir l’étape 5(a) de [instructions d’installation du connecteur amélioré](workfront-connector-install.md).
 >
 >* Consultez [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen : [Guide d’examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
