@@ -3,10 +3,10 @@ title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 7d5cae8292822dd8db7ce3f92c10cf5ad7edbdc1
+source-git-commit: 91361eb49eaf4ec3b89dbd816aecca3c5bfe029f
 workflow-type: tm+mt
-source-wordcount: '3364'
-ht-degree: 100%
+source-wordcount: '3360'
+ht-degree: 98%
 
 ---
 
@@ -191,7 +191,7 @@ Les modules de contenu (modifiable ou non) installés via Cloud Manager s’aff
 
 Il est courant pour les clients d’inclure des modules préconfigurés provenant de sources tierces, telles que des fournisseurs de logiciels comme les partenaires de traduction d’Adobe. Il est recommandé d’héberger ces modules au sein d’un référentiel distant et de les référencer dans le `pom.xml`. Cela est possible pour les référentiels publics et pour les référentiels privés avec protection par mot de passe, comme décrit dans [Référentiels Maven protégés par mot de passe](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-S’il n’est pas possible de stocker le module dans un référentiel distant, les clients peuvent le placer dans un référentiel Maven local basé sur un système de fichiers, qui est validé dans SCM dans le cadre du projet et référencé par toutes les dépendances. Ce référentiel serait alors déclaré dans les fichiers pom du projet, comme illustré ci-dessous :
+S’il n’est pas possible de stocker le module dans un référentiel distant, les clients peuvent le placer dans un référentiel Maven local basé sur un système de fichiers, qui est validé dans SCM dans le cadre du projet et référencé par toutes les dépendances. Le référentiel est déclaré dans le modèle pom du projet, comme illustré ci-dessous :
 
 
 ```
@@ -309,13 +309,17 @@ Les configurations de mode d’exécution prises en charge sont les suivantes :
 * **config.publish.dev** (*s’applique au service de publication de développement AEM*)
 * **config.publish.stage** (*s’applique au service Publication d’évaluation AEM*)
 * **config.publish.prod** (*s’applique au service Publication de production AEM*)
-* **config.dev** (*s’applique aux services de développement AEM)
-* **config.stage** (*s’applique aux services d’évaluation AEM)
-* **config.prod** (*s’applique aux services de production AEM)
+* **config.dev** (*S’applique aux services de développement AEM*)
+* **config.stage** (*S’applique aux services AEM d’évaluation*)
+* **config.prod** (*S’applique aux services de production AEM*)
 
 La configuration OSGI qui possède le plus grand nombre de modes d’exécution correspondants est utilisée.
 
-Pour le développement local, un paramètre de démarrage en mode d’exécution peut être transmis de façon à indiquer la configuration OSGI de mode d’exécution à utiliser.
+Lors d’un développement local, un paramètre de démarrage en mode d’exécution, `-r`, est utilisé pour spécifier la configuration OSGI du mode d’exécution.
+
+```shell
+$ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
+```
 
 <!-- ### Performance Monitoring {#performance-monitoring}
 
