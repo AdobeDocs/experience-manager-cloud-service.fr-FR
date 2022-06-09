@@ -7,7 +7,7 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9a4e50f56b4b1c9dd7634475e418b4301820efaa
+source-git-commit: dec3dc0f310b24f37f37b45636b17e08e1bb5edf
 workflow-type: tm+mt
 source-wordcount: '3568'
 ht-degree: 96%
@@ -557,7 +557,7 @@ ht-degree: 96%
       + [Installation du lecteur Screens](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
       + [Enregistrement du lecteur](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [Attribution d’un lecteur à un affichage](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-   + Utilisation des principales fonctionnalités du produit {#core-product-features}
+   + Utilisation de fonctionnalités de base du produit {#core-product-features}
       + [Prise en charge des miniatures pour les vidéos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
    + Développer dans Screens as a Cloud Service {#developing-screens-cloud}
       + [API REST](/help/screens-cloud/developing/rest-apis-screens-cloud.md)

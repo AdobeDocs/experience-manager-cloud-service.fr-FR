@@ -2,10 +2,10 @@
 title: Présentation du flux de diffusion de contenu
 description: Présentation du flux de diffusion de contenu
 exl-id: fe42fb9e-cdf4-43e1-b688-7cecf4124fa5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 60fc1b8f93c93ca427507dbe56511342f285e6bc
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 100%
+source-wordcount: '207'
+ht-degree: 94%
 
 ---
 
@@ -29,6 +29,9 @@ Le flux de données est le suivant :
 
 Par défaut, le type de contenu HTML/texte est défini pour expirer après 300 s (5 minutes) au niveau de la couche du Dispatcher, un seuil que le cache du Dispatcher et le réseau de diffusion de contenu respectent. Lors des redéploiements du service de publication, le cache du Dispatcher est effacé puis réchauffé avant que les nouveaux nœuds de publication n’acceptent le trafic.
 
-Les sections ci-dessous fournissent des informations plus détaillées sur la diffusion de contenu, notamment la configuration du CDN et la mise en cache.
+Les sections suivantes fournissent des informations plus détaillées sur la diffusion de contenu :
+* [Configuration du réseau CDN](/help/implementing/dispatcher/cdn.md)
+* [Mise en cache](/help/implementing/dispatcher/caching.md)
+
 
 Des informations sur la réplication du service de création vers le service de publication sont disponibles [ici](/help/operations/replication.md).
