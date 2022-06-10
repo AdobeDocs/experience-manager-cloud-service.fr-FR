@@ -2,10 +2,10 @@
 title: FAQ sur Cloud Manager
 description: Trouvez des réponses aux questions les plus fréquemment posées sur Cloud Manager dans AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 65632de3fbf81ef44d30994365e6365a6148b836
+source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '953'
+ht-degree: 19%
 
 ---
 
@@ -44,9 +44,9 @@ Il s’agit d’un problème connu dû au fait que Cloud Manager utilisait une 
 
 ## La vérification de la qualité du code a échoué et notre déploiement est bloqué. Y a-t-il un moyen de contourner cette vérification ? {#deployment-stuck}
 
-Oui. Tous les échecs de vérification de la qualité du code, à l’exception de l’évaluation de sécurité, ne sont pas des mesures critiques. Ils peuvent donc être contournés en développant les éléments dans l’interface utilisateur des résultats.
+Oui. Tous les échecs de vérification de la qualité du code, à l’exception de l’évaluation de sécurité, ne sont pas des mesures critiques. Ils peuvent donc être contournés dans le cadre d’un pipeline de déploiement en développant les éléments dans l’interface utilisateur des résultats.
 
-Voir le document [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) pour plus d’informations.
+Voir les documents [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) et [Configuration de pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) pour plus d’informations.
 
 ## Puis-je utiliser SNAPSHOT pour la version du projet Maven ? {#use-snapshot}
 

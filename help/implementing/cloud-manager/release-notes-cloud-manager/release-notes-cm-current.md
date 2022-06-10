@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager 2022.6.0 dans Adobe Experience�
 description: Consultez les notes de mise à jour de Cloud Manager 2022.6.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 2ba6858feefb22b5caf26000f5ee17779f3661c4
+source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
 workflow-type: tm+mt
-source-wordcount: '301'
-ht-degree: 28%
+source-wordcount: '348'
+ht-degree: 24%
 
 ---
 
@@ -37,4 +37,9 @@ La date de publication de la version 2022.6.0 de Cloud Manager dans AEM as a Clo
 * Un nouveau widget GoLive sur la page d’accueil des programmes de production de Cloud Service fournit désormais des conseils pour préparer une expérience de mise en ligne réussie.
 * [La création d’artefacts peut désormais être réutilisée.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) lors de l’utilisation de la mise en miroir git.
 
-## Correctifs {#bug-fixes}
+## Modifications d’API {#api-changes}
+
+* Le [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) L’API a été abandonnée et [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) doit être utilisé à la place.
+   * `List Programs` continue de fonctionner, mais son utilisation génère des messages d’avertissement dans les journaux.
+   * Il ne sera plus pris en charge au bout de trois mois.
+
