@@ -2,10 +2,10 @@
 title: FAQ sur Cloud Manager
 description: Trouvez des réponses aux questions les plus fréquemment posées sur Cloud Manager dans AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
+source-git-commit: 8e02f470b474ad448a5fb80dd3b410d414d78a3b
 workflow-type: tm+mt
-source-wordcount: '953'
-ht-degree: 19%
+source-wordcount: '989'
+ht-degree: 22%
 
 ---
 
@@ -46,7 +46,9 @@ Il s’agit d’un problème connu dû au fait que Cloud Manager utilisait une 
 
 Oui. Tous les échecs de vérification de la qualité du code, à l’exception de l’évaluation de sécurité, ne sont pas des mesures critiques. Ils peuvent donc être contournés dans le cadre d’un pipeline de déploiement en développant les éléments dans l’interface utilisateur des résultats.
 
-Voir les documents [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) et [Configuration de pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) pour plus d’informations.
+Un utilisateur ayant un rôle de [responsable de déploiement, responsable de projet ou propriétaire d’entreprise](/help/onboarding/learn-concepts/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) peut, au choix, contourner les problèmes, auquel cas le pipeline continue, ou les accepter, auquel cas le pipeline s’arrête avec un échec.
+
+Voir les documents [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) et [Configuration de pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) pour plus d’informations.
 
 ## Puis-je utiliser SNAPSHOT pour la version du projet Maven ? {#use-snapshot}
 
