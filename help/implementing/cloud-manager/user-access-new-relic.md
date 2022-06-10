@@ -2,9 +2,9 @@
 title: New Relic One
 description: Découvrez le service de surveillance des performances de l’application New Relic One (APM) pour AEM as a Cloud Service et comment y accéder.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: 09049213eaf92830dc0e0d4c0885017c69a5d56e
+source-git-commit: 8ae52afc366c6607cfc806f68bec2069a2e93f94
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1612'
 ht-degree: 10%
 
 ---
@@ -46,13 +46,11 @@ Suivez ces étapes pour définir les utilisateurs de votre sous-compte Nouvelle 
 
 1. Cliquez sur le programme pour lequel vous souhaitez gérer vos nouveaux utilisateurs Relic One.
 
-1. Basculez vers le **Environnements** de la **Aperçu du programme** en cliquant sur la **Environnements** dans la partie supérieure de l’écran.
-
-1. Sur le **Environnements** , cliquez sur le bouton représentant des points de suspension en haut de l’écran en regard de l’option **Ajouter un environnement** bouton .
-
-1. Dans le menu représentant des points de suspension, cliquez sur **Gestion des utilisateurs**.
+1. Au bas de la **Environnements** sur la page présentation du programme, cliquez sur le bouton représentant des points de suspension et sélectionnez **Gestion des utilisateurs**.
 
    ![Gestion des utilisateurs](assets/newrelic-manage-users.png)
+
+   * Vous pouvez également accéder au **Gestion des utilisateurs** via le bouton représentant des points de suspension situé en haut de la page **Environnements** écran de votre programme.
 
 1. Dans le **Gérer les nouveaux utilisateurs de la version** , saisissez le prénom et le nom de l’utilisateur que vous souhaitez ajouter, puis cliquez sur le bouton **Ajouter** bouton . Répétez cette étape pour tous les utilisateurs que vous souhaitez ajouter.
 
@@ -98,11 +96,11 @@ Pour accéder à la nouvelle version via Cloud Manager :
 
 1. Cliquez sur le programme pour lequel vous souhaitez accéder à la Nouvelle Relique Un.
 
-1. Basculez vers le **Environnements** de la **Aperçu du programme** en cliquant sur la **Environnements** dans la partie supérieure de l’écran.
+1. Au bas de la **Environnements** sur la page présentation du programme, cliquez sur le bouton représentant des points de suspension et sélectionnez **Ouvrir une nouvelle relique**.
 
-1. Sur le **Environnements** , cliquez sur le bouton représentant des points de suspension en haut de l’écran en regard de l’option **Ajouter un environnement** bouton .
+   ![Gestion des utilisateurs](assets/newrelic-access.png)
 
-1. Dans le menu représentant des points de suspension, cliquez sur **Ouvrir une nouvelle relique**.
+   * Vous pouvez également accéder à Nouvelle relique à l’aide du bouton représentant des points de suspension situé en haut de la page **Environnements** écran de votre programme.
 
 1. Dans le nouvel onglet du navigateur qui s’ouvre, connectez-vous à Nouvelle Relique Un.
 
