@@ -3,16 +3,20 @@ title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 2ee21b507b5dcc9471063b890976a504539b7e10
+source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 54%
+source-wordcount: '783'
+ht-degree: 53%
 
 ---
 
 # Requêtes GraphQL persistantes {#persisted-queries-caching}
 
 Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur as a Cloud Service Adobe Experience Manager (AEM). Ils peuvent être demandés avec une demande de GET par les applications clientes. La réponse d’une requête GET peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances de l’application cliente qui la demande. Cela diffère des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes de POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
+
+>[!NOTE]
+>
+>Les requêtes persistantes sont recommandées. Voir [Bonnes pratiques de requête GraphQL (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) pour plus d’informations et la configuration Dispatcher associée.
 
 Le [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) est disponible dans AEM pour que vous puissiez développer, tester et conserver vos requêtes GraphQL, avant [transfert vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, lorsque [personnalisation du cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; voir l’exemple de curl fourni dans [Comment conserver une requête GraphQL](#how-to-persist-query).
 
