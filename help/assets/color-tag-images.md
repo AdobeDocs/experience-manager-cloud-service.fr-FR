@@ -2,10 +2,10 @@
 title: Balises de couleur pour les images
 description: Experience Manager Assets permet de distinguer les couleurs d’une image et de les appliquer automatiquement sous forme de balises. Vous pouvez ensuite utiliser ces balises pour rechercher et filtrer des images.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
+source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 12%
+source-wordcount: '1225'
+ht-degree: 13%
 
 ---
 
@@ -105,6 +105,24 @@ Pour ajouter le composant Balises de couleur intelligente à l’éditeur de for
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
    >[!VIDEO](https://video.tv.adobe.com/v/340124)
+
+## Balises de couleur pour les images existantes dans la gestion des ressources numériques {#color-tags-existing-images}
+
+Les images existantes dans la gestion des actifs numériques ne sont pas balisées automatiquement par la couleur. Vous devez [!UICONTROL Retraiter les ressources] manuellement pour générer des balises de couleur.
+
+Pour baliser les images ou les dossiers (y compris les sous-dossiers) de ressources qui existent déjà dans le référentiel de ressources, procédez comme suit :
+
+1. Sélectionnez le logo [!DNL Adobe Experience Manager], puis les ressources dans la page [!UICONTROL Navigation].
+
+1. Sélectionnez [!UICONTROL Fichiers] pour afficher l’interface d’Assets.
+
+1. Accédez au dossier auquel vous souhaitez appliquer des balises de couleur.
+
+1. Sélectionnez le dossier entier ou des images spécifiques.
+
+1. Sélectionnez ![icône Retraiter les ressources](assets/do-not-localize/reprocess-assets-icon.png) l’icône [!UICONTROL Retraiter les ressources] et sélectionnez l’option [!UICONTROL Processus complet].
+
+Une fois le processus terminé, accédez à la [!UICONTROL Propriétés] de toute image du dossier. Les balises ajoutées automatiquement sont visibles dans la section [!UICONTROL Balises de couleur intelligente] dans [!UICONTROL De base] .
 
 
 ## Affichage des balises de couleur intelligente pour les images {#view-color-tags}
