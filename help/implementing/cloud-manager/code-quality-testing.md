@@ -3,7 +3,7 @@ title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
 source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1147'
 ht-degree: 100%
 

@@ -13,7 +13,7 @@ ht-degree: 17%
 
 Dans Cloud Manager, vous pouvez déterminer si votre nom de domaine se résout correctement sur votre site web as a Cloud Service AEM.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez au **Environnements** de l’écran **Présentation** page.
 

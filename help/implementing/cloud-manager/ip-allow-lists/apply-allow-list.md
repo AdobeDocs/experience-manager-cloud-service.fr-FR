@@ -18,7 +18,7 @@ Lors de l’application d’une liste autorisée IP, toutes les plages d’adres
 
 Un utilisateur de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour appliquer une liste autorisée IP.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 1. Accédez au **Environnements** de l’écran **Présentation** page.
 1. Accédez à la page de détails de l’environnement spécifique sur la page **Environnements** et accédez au **LISTE AUTORISÉE IP** table.
 1. Utilisez les champs de saisie en haut du tableau pour sélectionner la liste autorisée IP et le service de création ou de publication auquel vous souhaitez l’appliquer.
@@ -29,7 +29,7 @@ Un utilisateur de la variable **Propriétaire de l’entreprise** ou **Responsab
 
 Un utilisateur de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour annuler l’application d’une liste autorisée IP.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 1. Accédez au **Environnements** de l’écran **Présentation** page.
 1. Accédez à la page de détails de l’environnement spécifique sur la page **Environnements** et accédez au **LISTE AUTORISÉE IP** table.
 1. Identifiez la ligne de la liste autorisée IP que vous souhaitez annuler.

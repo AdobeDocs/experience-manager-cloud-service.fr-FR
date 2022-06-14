@@ -5,7 +5,7 @@ exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
 workflow-type: tm+mt
 source-wordcount: '1644'
-ht-degree: 76%
+ht-degree: 77%
 
 ---
 
@@ -141,7 +141,7 @@ Consultez cette liste d’activités pour vous assurer que vous effectuez une mi
       * Vous devez configurer SSL et DNS en fonction de la documentation de votre fournisseur de réseau de diffusion de contenu.
    * Si vous n’utilisez pas de réseau de diffusion de contenu supplémentaire, gérez SSL et DNS conformément à la documentation suivante :
       * Gestion des certificats SSL
-         * [Présentation de la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         * [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [Gestion du certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Gestion des noms de domaine personnalisés (DNS)
          * [Présentation des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)

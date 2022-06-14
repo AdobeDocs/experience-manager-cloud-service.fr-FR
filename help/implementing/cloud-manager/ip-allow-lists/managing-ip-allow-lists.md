@@ -1,13 +1,13 @@
 ---
 title: Gestion des listes autorisées d’adresses IP
 description: Découvrez comment afficher, modifier, supprimer et vérifier l’état de vos listes autorisées IP dans Cloud Manager.
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
+source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 14%
+ht-degree: 20%
 
 ---
-
 
 # Gestion des listes autorisées d’adresses IP {#manage-ip-allow-lists}
 
@@ -17,8 +17,8 @@ Découvrez comment afficher, modifier, supprimer et vérifier l’état de vos l
 
 Un utilisateur de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour afficher et mettre à jour une liste autorisée IP.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
-1. Accédez à **Environnements** de l’écran **Présentation** page.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
 1. Accédez à la page **Listes autorisées IP** à partir de l’écran **Environnements**.
 1. Identifiez la ligne des listes autorisées IP que vous souhaitez afficher ou mettre à jour.
 1. Cliquez sur le bouton représentant des points de suspension à droite de la ligne.
@@ -34,9 +34,9 @@ Les mises à jour ne peuvent pas être effectuées sur une liste autorisée IP a
 
 Pour vérifier l’état des listes autorisées IP, procédez comme suit.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à **Environnements** de l’écran **Présentation** page.
+1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
 
 1. Cliquez sur le bouton **État** de la liste autorisée IP du tableau sur la **Environnements** et sélectionnez la variable **LISTES AUTORISÉES IP** page.
 
@@ -78,8 +78,8 @@ Pour vérifier l’état des listes autorisées IP, procédez comme suit.
 
 Un utilisateur de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour afficher et mettre à jour une liste autorisée IP.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
-1. Accédez à **Environnements** de l’écran **Présentation** page.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
 1. Accédez à la page **Listes autorisées IP** à partir de l’écran **Environnements**.
 1. Identifiez la ligne de la liste autorisée IP que vous souhaitez supprimer.
 1. Sélectionnez le menu représentant des points de suspension à l’extrémité droite de la ligne.
@@ -88,11 +88,11 @@ Un utilisateur de la variable **Propriétaire de l’entreprise** ou **Responsab
 
 La suppression d’une liste autorisée IP la annule automatiquement de tous les services et la supprime de la table.
 
-## Configurations de réseau de diffusion de contenu préexistantes {#pre-existing-cdn}
+## Configurations de réseau CDN préexistantes {#pre-existing-cdn}
 
 Si vous disposez d’une configuration de réseau de diffusion de contenu préexistante pour vos listes autorisées IP, un message d’information s’affichera sur le **LISTE AUTORISÉE IP** , vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
 
-Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
+Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
 Reportez-vous au document [Ajout d’une liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) pour plus d’informations.
 

@@ -78,7 +78,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 
 * Un message d’erreur incorrect s’affichait lorsqu’une valeur non valide était fournie lors de l’étape de planification.
 
-* Il peut arriver que l’utilisateur voit un état *actif* vert en regard d’une liste d’adresses IP autorisées même si cette configuration n’a pas été déployée.
+* Il peut arriver que l’utilisateur voit un statut *actif* vert en regard d’une liste d’adresses IP autorisées même si cette configuration n’a pas été déployée.
 
 * Certaines séquences de modification de programme peuvent empêcher la création ou la modification du pipeline de production.
 

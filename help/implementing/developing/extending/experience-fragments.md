@@ -3,7 +3,7 @@ title: Présentation des fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 100%
 

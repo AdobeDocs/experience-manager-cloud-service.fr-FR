@@ -17,7 +17,7 @@ Cloud Manager vous permet d’afficher, de mettre à jour, de remplacer et de su
 
 Utilisez la variable **Afficher et mettre à jour** pour afficher les détails de l’un de vos noms de domaine personnalisés.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez au **Environnements** de l’écran **Présentation** page.
 
@@ -41,7 +41,7 @@ Un utilisateur avec la variable **Propriétaire de l’entreprise** ou **Respons
 
 ### Suppression d’un nom de domaine personnalisé de tous les environnements associés {#delete-cdn-all}
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez au **Environnements** de l’écran **Présentation** page.
 
@@ -59,7 +59,7 @@ Un utilisateur avec la variable **Propriétaire de l’entreprise** ou **Respons
 
 ### Suppression d’un nom de domaine personnalisé d’un environnement spécifique {#delete-cdn-specific}
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 1. Accédez au **Environnements** de l’écran **Présentation** page.
 1. Dans la **Environnements** , accédez à l’écran des détails de l’environnement ciblé.
 1. Dans la table des noms de domaine, identifiez la ligne du nom de domaine personnalisé que vous souhaitez supprimer.

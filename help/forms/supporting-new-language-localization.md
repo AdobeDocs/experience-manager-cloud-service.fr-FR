@@ -69,7 +69,7 @@ Pour ajouter de nouveaux paramètres régionaux lors de l’exécution des formu
 1. [Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire](supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
 1. [Redémarrer le serveur](supporting-new-language-localization.md#p-restart-the-server-p)
 
-### Ajout de paramètres régionaux au Guide Localization Service {#add-a-locale-to-the-guide-localization-service-br}
+### Ajouter des paramètres régionaux au Guide Localization Service {#add-a-locale-to-the-guide-localization-service-br}
 
 1. Accédez à `https://'[server]:[port]'/system/console/configMgr`.
 1. Cliquer pour modifier le composant **Guide Localization Service**.
@@ -77,7 +77,7 @@ Pour ajouter de nouveaux paramètres régionaux lors de l’exécution des formu
 
 ![GuideLocalizationService](assets/configservice.png)
 
-### Ajouter une bibliothèque XFA cliente pour des paramètres régionaux {#add-xfa-client-library-for-a-locale-br}
+### Ajouter la bibliothèque XFA cliente pour des paramètres régionaux {#add-xfa-client-library-for-a-locale-br}
 
 Créez un nœud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec la catégorie `xfaforms.I18N.<locale>` et ajoutez les fichiers ci-dessous à la bibliothèque cliente :
 
@@ -123,8 +123,8 @@ L’élément `<locale>` s’affiche au niveau de `https://'[server]:[port]'/lib
 
 Redémarrez le serveur AEM pour que les paramètres régionaux ajoutés entrent en vigueur.
 
-## Exemples de bibliothèques pour l’ajout de la prise en charge de l’espagnol {#sample-libraries-for-adding-support-for-spanish}
+## Exemples de bibliothèques pour ajouter la prise en charge de l’espagnol {#sample-libraries-for-adding-support-for-spanish}
 
-Exemples de bibliothèques clientes pour l’ajout de la prise en charge de l’espagnol
+Exemples de bibliothèques clientes pour ajouter la prise en charge de l’espagnol
 
 [Obtenir le fichier](assets/sample.zip)

@@ -3,7 +3,7 @@ title: Exécution de l’outil de transfert de contenu sur une instance de publi
 description: Exécution de l’outil de transfert de contenu sur une instance de publication
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
 source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '253'
 ht-degree: 100%
 

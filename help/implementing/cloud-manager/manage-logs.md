@@ -20,7 +20,7 @@ Vous pouvez accéder à une liste de fichiers journaux disponibles pour l’envi
 
 Pour télécharger les journaux, procédez comme suit.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez à la carte **Environnements** à partir de la page **Aperçu**.
 

@@ -2,7 +2,7 @@
 title: Configuration du panier et du Dispatcher
 description: Configuration du panier et du Dispatcher
 source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '142'
 ht-degree: 100%
 

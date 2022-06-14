@@ -10,13 +10,13 @@ contentOwner: Vishabh Gupta
 topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
-source-git-commit: feef8159a01393baebe11c014ae6093b79df72d1
+exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
+source-git-commit: 4edf66127696ce91466811e2ffdcfbbd73f7cc2c
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 3%
 
 ---
-
 
 # Configuration de la transcription dans [!DNL Experience Manager Assets] {#configure-transcription-service}
 
@@ -166,6 +166,3 @@ Les formats de fichiers audio et vidéo suivants sont pris en charge pour la tra
 ## Conseils de dépannage {#troubleshooting}
 
 Connectez-vous à [!DNL Azure Media Services] compte avec les mêmes informations d’identification (que vous avez utilisées pour la configuration) pour vérifier l’état de la requête. Contact [!DNL Azure] prise en charge si votre demande n’est pas traitée correctement.
-
-
-

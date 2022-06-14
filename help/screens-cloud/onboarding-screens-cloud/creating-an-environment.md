@@ -3,7 +3,7 @@ title: Création d’un environnement
 description: Cette page décrit la création d’un environnement dans Cloud Manager pour Screens as a Cloud Service.
 exl-id: 744a473c-edad-4bf2-ae87-0175f6451e32
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 100%
 

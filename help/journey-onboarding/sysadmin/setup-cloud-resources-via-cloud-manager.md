@@ -4,7 +4,7 @@ description: Découvrez comment utiliser Cloud Manager pour configurer et gérer
 role: Admin, User, Developer
 exl-id: de3a33b7-b459-4e47-b232-a0f88e2ce22e
 source-git-commit: 0db24518610fccf0d2ea5e0620a0c6a5f8009ea8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 100%
 
@@ -182,7 +182,7 @@ Vous devriez continuer votre parcours d’intégration en consultant le document
 
 Suivez les autres ressources pour en savoir plus sur les aspects suivants :
 
-* [Types de programme et ajout d’un programme](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=fr)
-* [Types d’environnement et ajout d’un environnement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=fr)
+* [Types de programme et ajout d’un programme](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html)
+* [Types d’environnement et ajout d’un environnement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html)
 * [Gérer le référentiel Git de Cloud Manager](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
 * [Configurer l’accès à AEM as a Cloud Service à partir de l’Admin Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/overview.html?lang=fr#adobe-ims-users)

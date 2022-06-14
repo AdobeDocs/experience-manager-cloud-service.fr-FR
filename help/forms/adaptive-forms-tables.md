@@ -38,7 +38,7 @@ Pour créer un tableau, faites glisser un composant Tableau à partir de l’exp
 
 ![Composant Tableau dans la barre latérale AEM](assets/sidebar-tables.png)
 
-### À propos des cellules d’en-tête et de corps {#about-header-and-body-cells}
+### A propos de l’en-tête et des cellules du corps {#about-header-and-body-cells}
 
 Les cellules d’en-tête sont des zones de texte. Pour modifier le libellé d’un en-tête, cliquez avec le bouton droit de la souris sur la cellule d’en-tête puis sur **Modifier**. Dans la boîte de dialogue Modifier, mettez à jour le libellé dans le champ **Valeur** et appuyez sur **OK**.
 
@@ -184,7 +184,7 @@ Vue Bureau d’un tableau avec disposition En-têtes à gauche
 
 Vue Mobile d’un tableau avec disposition En-têtes à gauche
 
-### Mise en page des colonnes réductibles {#collapsible-columns-layout}
+### Disposition Colonnes réductibles {#collapsible-columns-layout}
 
 Dans la disposition Colonnes réductibles, les colonnes du tableau sont réduites pour afficher une ou deux colonnes, selon la taille du périphérique. Les autres colonnes sont réduites. Vous pouvez cliquer sur l’icône Réduire/Développer pour afficher les autres colonnes de la table.
 

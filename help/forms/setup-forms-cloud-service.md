@@ -5,7 +5,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 81%
+ht-degree: 91%
 
 ---
 
@@ -41,23 +41,23 @@ ht-degree: 81%
 
 Vous pouvez utiliser Forms as a Cloud Service pour créer un formulaire adaptatif (inscription numérique) ou générer une communication client. Après avoir terminé [Intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) au [!DNL Adobe Experience Manager] as a Cloud Service, effectuez l’une des actions suivantes pour activer les fonctionnalités d’inscription numérique ou de communication client. Vous pouvez également activer les deux fonctionnalités :
 
-1. Connectez-vous à Cloud Manager et ouvrez votre instance AEM Forms as a Cloud Service.
+1. Connectez-vous à Cloud Manager et ouvrez votre instance AEM Forms as a Cloud Service.
 
 1. Ouvrez l’option Modifier le programme, accédez à l’onglet Solutions et modules complémentaires, puis sélectionnez l’option **[!UICONTROL Formulaires - Communications]**.
 
    ![Communications](assets/communications.png)
 
-   Si vous avez déjà activé la variable **[!UICONTROL Forms - Inscription numérique]** , puis sélectionnez l’option **[!UICONTROL Forms - Module complémentaire Communications]** .
+   Si vous avez déjà activé l’option **[!UICONTROL Forms - Inscription numérique]**, sélectionnez l’option **[!UICONTROL Forms - Module complémentaire Communications]**.
 
-   ![Ajouter](assets/add-on.png)
+   ![Module complémentaire](assets/add-on.png)
 
 1. Cliquez sur **[!UICONTROL Mettre à jour]**.
 
-1. Exécutez le pipeline de build. Une fois le pipeline de génération réussi, les API de communication sont activées pour votre environnement.
+1. Exécutez le pipeline de build. Une fois que le pipeline de build a réussi, les API Communications sont activées pour votre environnement.
 
 >[!NOTE]
 >
-> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à [Configuration du Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher):
+> Pour activer et configurer les API de manipulation de documents, ajoutez la règle suivante à la [Configuration du Dispatcher](setup-local-development-environment.md#forms-specific-rules-to-dispatcher) :
 >
 > `# Allow Forms Doc Generation requests`
 > `/0062 { /type "allow" /method "POST" /url "/adobe/forms/assembler/*" }`

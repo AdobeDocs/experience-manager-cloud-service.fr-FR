@@ -20,7 +20,7 @@ Une file d’attente est une liste d’éléments dans une boîte de réception 
 
 Vous pouvez également partager vos éléments de boîte de réception avec un autre utilisateur. Une fois qu’un autre utilisateur a accès à vos éléments de boîte de réception, il peut demander des éléments partagés et exécuter des actions dessus. De même, vous pouvez demander l’accès aux éléments de boîte de réception à d’autres utilisateurs.
 
-## Conditions préalables {#pre-requisites}
+## Prérequis {#pre-requisites}
 
 L’utilisateur connecté doit être membre du groupe [!DNL `workflow-users`]. Il peut partager des éléments ou demander l’accès aux éléments uniquement des utilisateurs sur lesquels il dispose d’autorisations en lecture ou uniquement des utilisateurs ayant activé le profil public.
 
@@ -56,7 +56,7 @@ Pour partager un élément de boîte de réception avec un autre utilisateur, pr
 >
 >(Pour les éléments de processus orienté formulaire uniquement) Activez l’option **[Autoriser les personnes désignées à partager explicitement dans la boîte de réception](aem-forms-workflow-step-reference.md)** de l’étape **Affecter une tâche** dans le processus. Seuls les éléments pour lesquels cette option est activée s’affichent pour les autres utilisateurs.
 
-## Demander l’accès aux éléments de la boîte de réception {#request-access}
+## Demande d’accès aux éléments de la boîte de réception  {#request-access}
 
 Vous pouvez demander l’accès aux éléments de la boîte de réception d’un autre utilisateur. Une fois l’accès accordé, vous pouvez afficher, demander et exécuter des actions appropriées sur les éléments partagés. Pour demander l’accès aux éléments de la boîte de réception d’un autre utilisateur, procédez comme suit :
 
@@ -66,7 +66,7 @@ Vous pouvez demander l’accès aux éléments de la boîte de réception d’un
 1. Appuyez sur **[!UICONTROL Enregistrer]**. La demande est envoyée en tant qu’élément de boîte de réception aux utilisateurs. L’utilisateur peut sélectionner l’élément et appuyer sur Approuver ou Rejeter pour accorder ou refuser l’accès.
 
 
-## Demander les éléments partagés par d’autres utilisateurs {#claim-items}
+## Demande des éléments partagés par d’autres utilisateurs {#claim-items}
 
 Vous ne pouvez commencer à travailler sur un élément partagé qu’après l’avoir demandé. Cela empêche plusieurs utilisateurs de travailler sur un seul et même élément. Pour demander un élément, procédez comme suit :
 
@@ -75,9 +75,9 @@ Vous ne pouvez commencer à travailler sur un élément partagé qu’après l�
 1. Appuyez sur la liste déroulante **[!UICONTROL Sélectionner le destinataire]** pour afficher et sélectionner les utilisateurs ayant partagé les éléments de leur boîte de réception avec vous.
 1. Sélectionnez un élément et appuyez sur **[!UICONTROL Demander]**. L’élément est ajouté à votre boîte de réception.
 
-## Libérer les éléments demandés {#release-items}
+## Libération des éléments demandés {#release-items}
 
-Vous ne pouvez travailler sur un élément partagé qu’après l’avoir demandé. Les autres utilisateurs ne peuvent pas afficher ni travailler sur un élément que vous avez demandé. Si vous ne pouvez pas continuer à travailler sur un élément, vous pouvez le remettre dans le pool.   Une fois l’élément libéré, d’autres utilisateurs peuvent le demander et travailler dessus :
+Vous ne pouvez travailler sur un élément partagé qu’après l’avoir demandé. Les autres utilisateurs ne peuvent pas afficher ni travailler sur un élément que vous avez demandé. Si vous ne pouvez pas continuer à travailler sur un élément, vous pouvez le remettre dans le pool. Une fois l’élément libéré, d’autres utilisateurs peuvent le demander et travailler dessus :
 
 Pour libérer un élément, procédez comme suit :
 

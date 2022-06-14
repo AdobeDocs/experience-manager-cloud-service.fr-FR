@@ -3,10 +3,11 @@ title: Prise en main de l’outil de transfert de contenu (Legacy)
 description: Prise en main de l’outil de transfert de contenu
 hide: true
 hidefromtoc: true
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+exl-id: a6ee6996-510e-42d7-9a7c-f64732764f97
+source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '966'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +41,9 @@ Pour tester la connectivité à l’environnement AEM as a Cloud Service cib
 >[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
 
 
-Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu :
+Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu :
 
-1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Migration de contenu**.
+1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Migration de contenu**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt01.png)
 
@@ -56,7 +57,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ctt03.png)
 
    >[!NOTE]
-   >Si vous disposez de jeux de migration, la console affiche la liste de ces jeux avec leur état actuel.
+   >Si vous disposez de jeux de migration, la console affiche la liste de ces jeux avec leur statut actuel.
 
 
 1. Renseignez les champs de l’écran **Créer un jeu de migration** comme décrit ci-dessous.
@@ -67,7 +68,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
       >[!NOTE]
       >Aucun caractère spécial n’est autorisé dans ce nom.
 
-   1. **Configuration de Cloud Service** : renseignez l’URL de destination d’auteur AEM as a Cloud Service.
+   1. **Configuration de Cloud Service** : renseignez l’URL de destination d’auteur AEM as a Cloud Service.
 
       >[!NOTE]
       >Vous pouvez créer et gérer un maximum de dix jeux de migration à la fois pendant l’activité de transfert de contenu.
@@ -76,7 +77,7 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
    1. **Jeton d’accès** : renseignez le jeton d’accès.
 
       >[!NOTE]
-      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Ouvrir le jeton d’accès**. Vous devez vous assurer que vous appartenez au groupe &quot;Administrateurs&quot; dans l’instance de Cloud Service cible.
+      >Vous pouvez récupérer le jeton d’accès à l’aide du bouton **Ouvrir le jeton d’accès**. Vous devez vous assurer que vous appartenez au groupe Administrateurs dans l’instance Cloud Service cible.
 
    1. **Paramètres** : sélectionnez les paramètres suivants pour créer le jeu de migration :
 
@@ -117,38 +118,38 @@ Consultez cette section pour effectuer une migration du contenu vers AEM as a Cl
 ### Détermination de la taille du jeu de migration et de l’espace disque {#migration-set-size}
 
 Après la création d’un jeu de migration, il est vivement recommandé d’exécuter une vérification de taille sur le jeu de migration avant de lancer un processus d’extraction.
-En effectuant une vérification de taille sur le jeu de migration, vous pourrez :
-* Déterminez s’il y a suffisamment d’espace disque dans la variable `crx-quickstart` pour terminer l’extraction.
-* Déterminez si la taille du jeu de migration est conforme aux limites de produit prises en charge et évitez les échecs d’ingestion de contenu.
+En effectuant une vérification de taille sur le jeu de migration, vous pourrez :
+* déterminer s’il y a suffisamment d’espace disque dans le sous-référentiel `crx-quickstart` pour terminer l’extraction ;
+* déterminer si la taille du jeu de migration est conforme aux restrictions concernant les produits pris en charge et éviter les échecs d’ingestion de contenu.
 
-Pour exécuter une vérification de taille, procédez comme suit :
+Pour exécuter une vérification de taille, procédez comme suit :
 
-1. Sélectionnez un jeu de migration et cliquez sur **Vérifier la taille**.
+1. Sélectionnez un jeu de migration et cliquez sur **Check Size** (Vérifier la taille).
 
    ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image1.png)
 
-1. Cela ouvrira la fenêtre **Vérifier la taille** boîte de dialogue.
+1. Cela ouvrira la boîte de dialogue **Check Size** (Vérifier la taille).
 
    ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image2.png)
 
-1. Cliquez sur **Vérifier la taille** pour démarrer le processus. Vous revenez alors à la vue Liste des jeux de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
+1. Cliquez sur **Check Size** (Vérifier la taille) pour démarrer le processus. Vous revenez alors à la vue Liste des jeux de migration et un message vous indique que **Check Size** (Vérifier la taille) est en cours d’exécution.
 
    ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image3.png)
 
 
-1. Une fois **Vérifier la taille** est terminé, l’état devient **FINISHED**. Sélectionnez le même jeu de migration et cliquez sur **Vérifier la taille** pour afficher les résultats.
+1. Une fois que le processus **Check Size** (Vérifier la taille) est terminé, le statut passe sur **FINISHED** (TERMINÉ). Sélectionnez le même jeu de migration et cliquez sur **Check Size** (Vérifier la taille) pour afficher les résultats.
 
    ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image4.png)
 
-   Voici un exemple : **Vérifier la taille** résultats sans avertissement.
+   Voici ci-dessous un exemple de résultats de **Check Size** (Vérifier la taille) sans avertissement.
 
    ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image5.png)
 
-1. Si la variable **Vérifier la taille** les résultats indiquent qu&#39;il n&#39;y a pas suffisamment d&#39;espace disque et/ou que le jeu de migration dépasse les limites du produit, **AVERTISSEMENT** s’affiche.
+1. Si les résultats de **Check Size** (Vérifier la taille) indiquent qu’il n’y a pas suffisamment d’espace disque ou que le jeu de migration dépasse les limites du produit, le statut **WARNING** (AVERTISSEMENT) s’affiche.
 
 ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
 
-Voici un exemple : **Vérifier la taille** donne des avertissements.
+Voici ci-dessous un exemple de résultats de **Check Size** (Vérifier la taille) avec des avertissements.
 
 ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image7.png)
 

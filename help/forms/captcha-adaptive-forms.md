@@ -11,7 +11,7 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 source-git-commit: 580ab2731bc277bcd53c4863b3b22f5e44dc8406
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 100%
 
@@ -98,7 +98,7 @@ Pour utiliser CAPTCHA dans les formulaires adaptatifs :
 
 Le service reCAPTCHA est activé sur le formulaire adaptatif. Vous pouvez prévisualiser le formulaire et voir le fonctionnement de CAPTCHA.
 
-### Afficher ou masquer le composant CAPTCHA en fonction de règles {#show-hide-captcha}
+### Affichage ou masquage du composant CAPTCHA en fonction de règles {#show-hide-captcha}
 
 Vous pouvez choisir d’afficher ou de masquer le composant CAPTCHA en fonction des règles que vous appliquez à un composant d’un formulaire adaptatif. Appuyez sur le composant, sélectionnez ![modifier les règles](assets/edit-rules-icon.svg), puis appuyez sur **[!UICONTROL Créer]** pour créer une règle. Pour plus d’informations sur la création de règles, voir la section [Éditeur de règles](rule-editor.md).
 
@@ -168,7 +168,7 @@ Vous pouvez appeler la servlet personnalisée qui inclut l’API `ValidateCAPTCH
 
 De même, vous pouvez utiliser l’éditeur de règles pour inclure une méthode personnalisée pour valider le CAPTCHA dans un formulaire adaptatif.
 
-### Ajouter des services CAPTCHA personnalisés {#add-custom-captcha-service}
+### Ajout de services CAPTCHA personnalisés {#add-custom-captcha-service}
 
 [!DNL Experience Manager Forms] fournit reCAPTCHA en tant que service CAPTCHA. Cependant, vous pouvez ajouter un service personnalisé à afficher dans la liste déroulante **[!UICONTROL Service CAPTCHA]**.
 

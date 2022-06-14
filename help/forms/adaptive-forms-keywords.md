@@ -27,7 +27,7 @@ Les mots-clés des formulaires adaptatifs sont prédéfinis, les identifiants r�
    <td><p>minOccur</p> </td>
   </tr>
   <tr>
-   <td><p>valider</p> </td>
+   <td><p>validate</p> </td>
    <td><p>setGuideState</p> </td>
    <td><p>maxOccur</p> </td>
   </tr>

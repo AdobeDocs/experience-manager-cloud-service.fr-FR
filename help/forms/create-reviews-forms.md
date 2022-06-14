@@ -1,7 +1,7 @@
 ---
-title: 'Création et gestion de révisions des ressources d’un formulaire '
+title: Création et gestion de révisions des actifs d’un formulaire
 seo-title: Creating and managing reviews for assets in forms
-description: 'Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajouter des commentaires sur une ressource disponible dans un formulaire. '
+description: 'Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajouter des commentaires sur un élément disponible dans un formulaire. '
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 uuid: 45c7ff56-3fa8-4a0f-8597-05404e547282
 content-type: reference
@@ -17,11 +17,11 @@ ht-degree: 100%
 ---
 
 
-# Création et gestion de révisions des ressources d’un formulaire {#creating-and-managing-reviews-for-assets-in-forms}
+# Création et gestion de révisions des actifs d’un formulaire{#creating-and-managing-reviews-for-assets-in-forms}
 
 ## Révision {#review}
 
-Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajouter des commentaires sur une ressource disponible dans un formulaire.
+Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajouter des commentaires sur un élément disponible dans un formulaire.
 
 ## Configuration d’une révision {#setting-up-a-review}
 
@@ -77,7 +77,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
    ![État Mis à jour de la révision dans le Gestionnaire des tâches](assets/tskmgr.png)
 
-   Examiner l’état mis à jour dans le Gestionnaire des tâches
+   État Mis à jour de la révision dans le Gestionnaire des tâches
 
 1. Pour mettre fin à la révision, cliquez sur Terminer.
 

@@ -1,13 +1,13 @@
 ---
 title: Balises de couleur pour les images
 description: Experience Manager Assets permet de distinguer les couleurs d’une image et de les appliquer automatiquement sous forme de balises. Vous pouvez ensuite utiliser ces balises pour rechercher et filtrer des images.
-source-git-commit: 74c13efe99b50ba08d9dc38c246de71482a536a0
+exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
+source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '1097'
 ht-degree: 12%
 
 ---
-
 
 # Balises de couleur pour les images {#color-tag-images}
 
@@ -167,7 +167,3 @@ Pour rechercher des images en fonction des couleurs :
    Vous pouvez filtrer les images en fonction de la sélection d’une couleur. Les images dont la couleur sélectionnée fait partie des balises de couleur intelligente et au-dessus de la balise [Couverture/seuil de dominance %](#manage-color-tagging-settings) s’affiche dans le volet de droite.
 
 1. Cliquez sur x dans la barre de recherche pour effacer le filtre.
-
-
-
-

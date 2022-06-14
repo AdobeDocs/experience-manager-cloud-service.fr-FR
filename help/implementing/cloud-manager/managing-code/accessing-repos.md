@@ -17,7 +17,7 @@ Découvrez comment accéder à votre référentiel git et le gérer à l’aide 
 
 Cloud Manager facilite la récupération des informations de votre référentiel à l’aide de la fonction **Accès aux informations sur le référentiel** est disponible en bonne place sur la carte pipeline.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez à **Pipelines** de votre **Aperçu du programme** et recherchez les **Accès aux informations sur le référentiel** pour accéder à votre référentiel git et le gérer.
 

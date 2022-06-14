@@ -6,7 +6,7 @@ topic-tags: publish
 source-git-commit: 3c2a66ac13ccee9eef87ed3c97288a7475ac64d0
 workflow-type: tm+mt
 source-wordcount: '901'
-ht-degree: 94%
+ht-degree: 95%
 
 ---
 
@@ -114,7 +114,7 @@ function getAdobeSignRecipients() {
 
 Vous pouvez utiliser l’interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) pour choisir de manière dynamique un utilisateur ou un groupe pour les étapes [!DNL Adobe Sign] et Affecter une tâche. Vous pouvez créer un bundle OSGi qui utilise l’interface Java [RecipientInfoSpecifier](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) et la déploie sur le serveur [!DNL AEM Forms]. Cela rend disponible à la sélection l’option dans les composants Affecter une tâche et [!DNL Adobe Sign] du processus AEM.
 
-Vous avez besoin des fichiers jar [[!DNL AEM Forms] Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) et [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) pour compiler l’exemple de code répertorié ci-dessous. Ajoutez ces fichiers jar en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
+Vous avez besoin des fichiers jar [[!DNL AEM Forms] Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=fr) et [granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) pour compiler l’exemple de code répertorié ci-dessous. Ajoutez ces fichiers jar en tant que dépendances externes au projet de bundle OSGi. Vous pouvez utiliser n’importe quel IDE Java pour créer un bundle OSGi. La procédure suivante fournit des étapes pour l’utilisation de Eclipse afin de créer un bundle OSGi :
 
 1. Ouvrez l’IDE Eclipse. Accédez à **[!UICONTROL Fichier]** > **[!UICONTROL Nouveau projet]**.
 1. Sur l’écran de sélection de l’assistant, sélectionnez **[!UICONTROL Projet Maven]** puis cliquez sur **[!UICONTROL Suivant]**.
@@ -230,7 +230,7 @@ Vous avez besoin des fichiers jar [[!DNL AEM Forms] Client SDK](https://experien
 
 Une fois le bundle importé, l’option de sélection de l’interface Java pour sélectionner de manière dynamique un utilisateur ou un groupe devient disponible pour les étapes Adobe Sign et Affecter une tâche.
 
-### Exemples de code Java pour sélectionner de manière dynamique un utilisateur ou un groupe. {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
+### Exemples de code Java pour sélectionner de manière dynamique un utilisateur ou un groupe {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
 L’exemple de code suivant sélectionne de manière dynamique une personne désignée pour l’étape Adobe Sign. Vous pouvez utiliser ce code dans un bundle OSGi. Avant d’utiliser le code répertorié ci-dessous, assurez-vous que les informations utilisateur (adresses électroniques et numéros de téléphone) mentionnées dans le code sont correctes. Si les informations utilisateur mentionnées dans le code sont incorrectes, le processus associé peut échouer.
 

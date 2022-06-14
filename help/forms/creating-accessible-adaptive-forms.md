@@ -127,7 +127,7 @@ Pour utiliser l’option d’accessibilité, procédez comme suit :
 >* Pour les formulaires adaptatifs basés sur XFA, l’option d’accessibilité est héritée des options d’accessibilité définies dans le fichier XDP. Les info-bulles du fichier XDP sont associées au champ Brève description et Légende correspond à Titre. Les autres options fonctionnent normalement.
 
 
-### 3. Fournissez des équivalents textuels pour les images. {#provide-text-equivalents-for-images}
+### 3. Fournissez des équivalents textuels pour les images {#provide-text-equivalents-for-images}
 
 Pour certains utilisateurs, les images permettent une compréhension plus facile. Cependant, lorsqu’un lecteur d’écran est utilisé, les images réduisent l’accessibilité du formulaire. Si vous optez pour l’utilisation d’images, veuillez fournir des descriptions textuelles pour l’ensemble des images.
 
@@ -137,7 +137,7 @@ Sélectionnez un composant d’image et appuyez sur ![cmppr](assets/cmppr.png). 
 
 ![Texte alternatif d’une image](assets/image-properties.png)
 
-### 4. Fournissez un contraste de couleur suffisant. {#provide-sufficient-color-contrast}
+### 4. Fournissez un contraste des couleurs suffisant {#provide-sufficient-color-contrast}
 
 Dans le cadre des fonctions d’accessibilité, il convient de tenir compte de quelques points supplémentaires concernant l’utilisation des couleurs. Les auteurs de formulaires peuvent utiliser des couleurs pour améliorer l’apparence des formulaires, en mettant en surbrillance différents composants. Cependant, une utilisation inappropriée des couleurs peut rendre le formulaire difficile à lire, voire totalement illisible, pour des personnes souffrant de certains handicaps.
 

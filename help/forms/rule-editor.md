@@ -491,7 +491,7 @@ Pour créer des règles :
 
    * Sélectionnez Chaîne dans l’autre champ **[!UICONTROL Déposez l’objet ou sélectionnez ici]** et spécifiez **[!UICONTROL Marié(e)]** dans le champ **[!UICONTROL Saisissez la chaîne]**.
 
-   Enfin, la règle s’affiche comme suit dans l’éditeur de règles.  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
+   Enfin, la règle s’affiche comme suit dans l’éditeur de règles. ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16.png)
 
 1. Appuyez sur **[!UICONTROL Terminé]**. La règle est enregistrée.
 
@@ -814,7 +814,7 @@ Dans un formulaire de demande de prêt, vous voulez savoir si le demandeur de pr
 
 * Un champ de texte,**[!UICONTROL ID de client Geometrixx]**, pour indiquer l’ID du client.
 
-Lorsque vous entrez une règle Lorsque sur le bouton radio pour implémenter ce comportement, la règle s’affiche comme suit dans l’éditeur de règles visuel.
+Lorsque vous entrez une règle Lorsque sur le bouton radio pour implémenter ce comportement, la règle s’affiche comme suit dans l’éditeur de règles visuel. 
 
 ![When-rule-example](assets/when-rule-example.png)
 

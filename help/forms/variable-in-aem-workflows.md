@@ -93,7 +93,7 @@ Pour ajouter un mappage entre des variables :
 1. Dans la section **Mapper une variable**, sélectionnez la variable dans laquelle stocker des données, sélectionnez le mode de mappage et spécifiez une valeur à stocker dans la variable. Les modes de mappage varient en fonction du type de variable.
 1. Mappez davantage de variables pour créer une expression significative. Appuyez sur ![done_icon](assets/Smock_Checkmark_18_N.svg) pour enregistrer les modifications.
 
-### Exemple 1 : exécution d’une requête dans une variable XML pour définir la valeur d’une variable de chaîne {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
+### Exemple 1 : Exécutez une requête dans une variable XML pour définir la valeur d’une variable de chaîne {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
 Sélectionnez une variable de type XML pour stocker un fichier XML. Exécutez une requête dans la variable XML pour définir la valeur d’une variable de chaîne pour la propriété disponible dans le fichier XML. Le champ **Spécifier XPATH pour la variable XML** permet de définir la propriété à stocker dans la variable de chaîne.
 
@@ -178,11 +178,11 @@ Pour plus d’exemples sur l’utilisation de la définition de règle dans l’
 
 Toutes les étapes de processus [!DNL AEM Forms] prennent en charge les variables. Pour plus d’informations, consultez la section [Workflow basé sur l’utilisation de Forms sur OSGi](aem-forms-workflow-step-reference.md).
 
-### Étapes de workflow sans prise en charge des variables {#workflow-steps-without-support-for-variables}
+### Étapes de processus sans prise en charge des variables {#workflow-steps-without-support-for-variables}
 
-Vous pouvez utiliser l’interface [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) pour accéder à des variables dans des étapes de workflows qui ne prennent pas en charge les variables.
+Vous pouvez utiliser l’interface [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) pour accéder à des variables dans des étapes de processus qui ne prennent pas en charge les variables.
 
-#### Récupérer la valeur de la variable {#retrieve-the-variable-value}
+#### Extraction de la valeur d’une variable {#retrieve-the-variable-value}
 
 Les API suivantes dans le script ECMA permettent d’extraire des valeurs de variables existantes en fonction du type de données :
 
@@ -203,7 +203,7 @@ Extrayez la valeur du type de données de chaîne à l’aide de l’API suivant
 workItem.getWorkflowData().getMetaDataMap().get(accname, Packages.java.lang.String)
 ```
 
-#### Mettre à jour la valeur de la variable {#update-the-variable-value}
+#### Mise à jour de la valeur d’une variable {#update-the-variable-value}
 
 L’API suivante dans le script ECMA permet de mettre à jour la valeur d’une variable :
 
@@ -266,7 +266,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 1. Appuyez sur l’icône de ![modification](assets/edit.svg) (Modifier) en regard du nom de variable à modifier.
 1. Modifiez les informations de la variable et appuyez sur ![done_icon](assets/Smock_Checkmark_18_N.svg) pour enregistrer les modifications. Vous ne pouvez pas modifier les champs **[!UICONTROL Nom]** et **[!UICONTROL Type]** d’une variable.
 
-## Suppression d’une variable {#delete-a-variable}
+## Supprimer une variable {#delete-a-variable}
 
 Avant de supprimer la variable, supprimez toutes les références de la variable du processus. Assurez-vous que la variable n’est pas utilisée dans le processus.
 

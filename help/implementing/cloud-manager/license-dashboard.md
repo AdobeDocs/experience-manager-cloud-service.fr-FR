@@ -1,13 +1,13 @@
 ---
 title: Tableau de bord des licences
 description: Cloud Manager fournit un tableau de bord pour un affichage convivial des droits des produits AEMaaCS disponibles pour votre entreprise ou client.
-source-git-commit: 82b4a4c8da9f42de08c19eb3caf25ff3a1bad4d4
+exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
+source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 6%
 
 ---
-
 
 # Tableau de bord des licences {#license-dashboard}
 

@@ -3,7 +3,7 @@ title: 'Groupes intégrés [!DNL AEM Forms] as a Cloud Service '
 description: 'Liste des groupes d’utilisateurs prêts à l’emploi et des autorisations attribuées à chaque groupe '
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '139'
 ht-degree: 100%
 
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Groupes et autorisations {#aem-forms-on-osgi-groups-and-privileges}
 
-Vous pouvez [créer des groupes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=fr#accessing) et affecter des stratégies et des [utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=fr#accessing) aux groupes. Ces stratégies contrôlent les autorisations des utilisateurs qui font partie du groupe.
+Vous pouvez [créer des groupes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=fr#accessing) et affecter des stratégies et des [utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) aux groupes. Ces stratégies contrôlent les autorisations des utilisateurs qui font partie du groupe.
 
 Une fois que vous avez configuré [!DNL AEM Forms] as a Cloud Service, les groupes répertoriés dans le tableau ci-dessous, tels que [!DNL forms-users] et forms-power-user, sont automatiquement disponibles pour l’affectation :
 

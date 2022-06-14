@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Notes de mise à jour pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante présente les notes de mise à jour générales d’[!DNL Experience Manager] as a Cloud Service.
 
 ## Date de publication {#release-date}
 

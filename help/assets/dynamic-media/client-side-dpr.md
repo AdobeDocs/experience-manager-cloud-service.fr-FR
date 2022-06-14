@@ -2,7 +2,8 @@
 title: Utilisation de l’imagerie dynamique avec rapport des pixels côté client
 description: Découvrez comment utiliser le rapport de pixels d’appareil côté client avec l’imagerie dynamique dans Adobe Experience Manager as a Cloud Service avec Dynamic Media.
 role: Admin,User
-source-git-commit: 089b32e044c53bee40e5b92456c57412553934a0
+exl-id: 556710c7-133c-487a-8cd9-009a5912e94c
+source-git-commit: 1dae0459073e84eee4382b4b7ec864b3ef55a5bd
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
@@ -71,3 +72,4 @@ Les fichiers JavaScript suivants sont fournis à titre de référence uniquement
 >[!MORELIKETHIS]
 >
 >* [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md)
+

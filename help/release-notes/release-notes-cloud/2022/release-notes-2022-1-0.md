@@ -1,17 +1,17 @@
 ---
-title: Notes de mise à jour de la version 2022.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-description: Notes de mise à jour de la version 2022.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
-source-git-commit: 7b4f9e3808e3de933f7c1e1fd4f80be078a9ae1a
+title: Notes de mise à jour de la version 2022.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour de la version 2022.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
+source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 53%
+ht-degree: 97%
 
 ---
 
+# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
-
-La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -23,16 +23,16 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2022.1.0) est le 3 février 2022.
-La version suivante (2022.3.0) date du 31 mars 2022.
+La date de publication de la version actuelle (2022.1.0) de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 3 février 2022.
+La version suivante (2022.3.0) date du 31 mars 2022.
 
 ## Vidéo de mise à jour {#release-video}
 
-Consultez la section [Présentation de la version de janvier 2022](https://video.tv.adobe.com/v/340120) vidéo pour un résumé des fonctionnalités ajoutées dans la version 2022.1.0.
+Consultez la vidéo [Aperçu de la version de décembre 2022](https://video.tv.adobe.com/v/340120) pour un résumé des fonctionnalités ajoutées dans la version 2022.1.0.
 
 ## Adobe Experience Manager Sites as a Cloud Service {#sites}
 
-* Le **[Activation du pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** est disponible dans la **Site** rail de la console Sites pour les sites qui utilisent la version v2 du composant principal Page. Ce bouton configure le site pour charger les thèmes déployés avec le pipeline front-end au-dessus des bibliothèques clientes existantes.
+* Le bouton **[Enable Front End Pipeline](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)** (Activation du pipeline front-end) est disponible dans le rail **Site** de la console Sites pour les sites qui utilisent la version v2 du composant principal Page. Ce bouton configure le site pour charger les thèmes déployés avec le pipeline front-end par-dessus les bibliothèques clientes existantes.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
@@ -46,22 +46,22 @@ Consultez la section [Présentation de la version de janvier 2022](https://video
 
 ### Nouvelles fonctionnalités dans le [!DNL Assets] canal de version préliminaire {#assets-prerelease-features}
 
-* [!DNL AEM Dynamic Media] offre désormais la possibilité de [configuration d’un compte d’alias](/help/assets/dynamic-media/dm-alias-account.md) dans l’interface utilisateur, en veillant à ce que les URL Dynamic Media prêtes à l’emploi et le code intégré de la visionneuse soient mis à jour. Cela a un impact positif sur l’optimisation pour les moteurs de recherche, afin de refléter les mises à jour apportées à votre contexte d’entreprise, telles que le changement de marque.
+* [!DNL AEM Dynamic Media] offre désormais la possibilité de [configurer un compte d’alias](/help/assets/dynamic-media/dm-alias-account.md) dans l’interface utilisateur, garantissant ainsi que les URL Dynamic Media prêtes à l’emploi et le code intégré de la visionneuse soient mis à jour. Cette fonctionnalité offre un impact positif en matière de SEO afin de refléter les mises à jour apportées à votre contexte d’entreprise, telles que sur le changement de marque.
 
-* Vous pouvez désormais utiliser la variable [!DNL Experience Manager Assets] de l’interface utilisateur à :
+* Vous pouvez désormais utiliser l’interface utilisateur [!DNL Experience Manager Assets] pour :
 
-   * Configurez la détection des ressources en double dans un référentiel.
+   * configurer la détection des ressources en double dans un référentiel ;
 
-   * Configurez l’ajout de filigranes numériques aux images.
+   * configurer l’ajout de filigranes numériques à des images.
 
-* Les administrateurs peuvent désormais configurer le service de messagerie pour les téléchargements volumineux. Il permet aux utilisateurs de [activer les notifications par e-mail pour les téléchargements volumineux ;](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) de la [!DNL Experience Manager Assets] . Une fois le processus de téléchargement terminé, l’utilisateur reçoit une notification par courrier électronique contenant le lien de téléchargement du dossier zip archivé.
+* Les administrateurs peuvent désormais configurer le service de messagerie pour les téléchargements volumineux. Cette configuration permet aux utilisateurs d’[activer les notifications par e-mail pour les téléchargements volumineux](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) à partir de l’interface [!DNL Experience Manager Assets]. Une fois le processus de téléchargement terminé, l’utilisateur reçoit une notification par e-mail contenant le lien de téléchargement du dossier zip archivé.
 
 
-* Le [Gérer la publication](/help/assets/manage-publication.md) Cette fonctionnalité a été améliorée avec une interface utilisateur améliorée. Les utilisateurs peuvent publier ou annuler la publication de contenu vers et depuis la destination sélectionnée, [Ajouter du contenu](/help/assets/manage-publication.md#add-content) à la liste de publication à partir du référentiel DAM, [Paramètres du dossier d’inclusion](/help/assets/manage-publication.md#include-folder-settings) pour publier le contenu des dossiers sélectionnés et appliquer des filtres, et [planification de la publication](/help/assets/manage-publication.md#publish-assets-later) à une date ou une heure ultérieure.
+* La fonctionnalité [Gérer la publication](/help/assets/manage-publication.md) a été améliorée par le biais de son interface utilisateur. Les utilisateurs peuvent publier ou annuler la publication de contenu vers et depuis la destination sélectionnée, [ajouter du contenu](/help/assets/manage-publication.md#add-content) à la liste de publication à partir du référentiel DAM, [inclure des paramètres de dossier](/help/assets/manage-publication.md#include-folder-settings) pour publier le contenu des dossiers sélectionnés et appliquer des filtres, et [planifier une publication](/help/assets/manage-publication.md#publish-assets-later) à une date ou une heure ultérieure.
 
 ### Correctifs {#bug-fixes}
 
-* Les ressources non traitées sans rendu d’origine sont envoyées à l’Asset compute pour traitement lors de la migration des ressources d’AEM on-premise vers les services cloud.
+* Les ressources non traitées sans rendu d’origine sont envoyées à Asset Compute pour être traitées lors de la migration des ressources à partir d’AEM on-premise vers les services cloud.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
@@ -74,11 +74,11 @@ Consultez la section [Présentation de la version de janvier 2022](https://video
    * de générer des fichiers PDF d’impression à partir de fichiers PDF de formulaire XFA ;
    * de générer des documents PDF, PostScript, PCL et ZPL en blocs en fusionnant plusieurs jeux de données avec les modèles sources.
 
-* **Polices personnalisées pour les documents d’enregistrement et les documents PDF créés avec les API communications** : Vous pouvez désormais utiliser des polices approuvées par la marque dans les documents PDF générés à l’aide des API communications pour vous conformer aux exigences de votre organisation.
+* **Polices personnalisées pour les documents d’enregistrement et les documents PDF créés avec les API communications** : vous pouvez désormais utiliser des polices approuvées par la marque dans les documents PDF générés à l’aide des API Communications pour vous conformer aux exigences de votre organisation.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-* **[API Assembler](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/reference/assembler-sync/)**: API Assembler pour combiner, réorganiser, agrémenter et obtenir des informations sur les documents PDF.
+* **[API Assembler](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/references/assembler-sync/)** : les API Assembler pour combiner, réorganiser, agrémenter les documents PDF et obtenir des informations à leur propos.
 
 
 ## Module complémentaire CIF {#cloud-services-cif}
@@ -88,10 +88,10 @@ Consultez la section [Présentation de la version de janvier 2022](https://video
 * Amélioration des composants myAccount
 * Le composant de recommandation de produit prend en charge d’autres types de page (page d’accueil, panier, confirmation de commande).
 * **Liste de souhaits**
-   * Les visiteurs connectés peuvent ajouter des produits à une liste bloquée.
+   * Les visiteurs connectés peuvent ajouter des produits à une liste de souhaits.
    * La gestion de la liste des souhaits et de ses produits est possible via myAccount
-   * Le bouton &quot;Ajouter à la liste des souhaits&quot; peut être activé/désactivé au niveau des composants via une stratégie (par exemple, teaser de produit, détails de produit).
-   * Disponible en tant que composant principal et dans l’AEM Venia Storefront
+   * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par une stratégie (par exemple un teaser de produit ou les informations de produit).
+   * Disponible en tant que composant principal et dans AEM Venia Storefront
 
 ![Liste de souhaits](/help/assets/CIF/wishlist.png)
 
@@ -103,7 +103,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2022.0
 
 ### Nouveautés {#what-is-new-cm}
 
-* Cloud Manager [évitera de reconstruire la base de code lorsqu&#39;il détecte que la même validation Git est utilisée](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) dans plusieurs exécutions de pipeline de pile complète.
+* Cloud Manager [évitera de reconstruire la base de code lorsqu’il détecte que la même validation Git est utilisée](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) dans plusieurs exécutions de pipeline full stack.
 * L’accès au journal d’environnement AEM nécessite désormais le profil produit **Gestionnaire de déploiement**. Un bouton désactivé s’affiche dans l’interface utilisateur pour les utilisateurs ne disposant pas de ce profil.
 * L’interface utilisateur n’autorise pas la configuration du pipeline front-end pour un programme où Sites n’est pas activé en tant que solution.
 * Lors de la génération d’un mot de passe Git, la date d’expiration s’affiche.
@@ -123,7 +123,7 @@ La date de publication de l’outil de transfert de contenu version v1.8.6 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Validation du contenu : les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Pour utiliser cette fonctionnalité, vous devez l’activer dans la variable `System Console` de l’environnement d’AEM source. Voir [Validation des transferts de contenu - Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=en#getting-started) pour plus d’informations.
+* Validation du contenu : les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Pour utiliser cette fonctionnalité, vous devez l’activer dans la variable `System Console` de l’environnement source AEM. Consultez [Validation des transferts de contenu - Prise en main](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/validating-content-transfers.html?lang=fr#getting-started) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-ctt}
 
@@ -133,15 +133,15 @@ La date de publication de l’outil de transfert de contenu version v1.8.6 est 
 
 ### Date de publication {#release-date-bpa}
 
-La date de publication de l’analyseur de bonnes pratiques v2.1.24 est le 01 février 2022.
+La date de publication de l’analyseur de bonnes pratiques v2.1.24 est le 1er février 2022.
 
 ### Nouveautés {#what-is-new-bpa}
 
 * Possibilité de détecter et de générer des rapports sur le nombre de ressources avec et sans balises intelligentes.
-* Possibilité de détecter et de générer des rapports sur la version du composant principal utilisé.
-* Possibilité de détecter et de générer des rapports sur le type de niveau source (auteur ou publication) où l’application d’une seule page a été exécutée.
+* Possibilité de détecter et de générer des rapports sur la version de composant principal couramment utilisée.
+* Possibilité de détecter et de générer des rapports sur le type de niveau source (création ou publication) où l’analyseur de bonne pratique a été exécuté.
 
 ### Correctifs {#bug-fixes-bpa}
 
-* La logique de dimensionnement des BPA a été rendue plus rapide et plus efficace.
-* Dans certains scénarios, BPA n’incrémentait pas le nombre analysé lors de son exécution. Ce problème a été résolu.
+* La logique de dimensionnement de l’analyseur de bonne pratique a été rendue plus rapide et plus efficace.
+* Dans certains scénarios, l’analyseur de bonne pratique n’incrémentait pas le nombre analysé lors de son exécution. Ce problème a été résolu.

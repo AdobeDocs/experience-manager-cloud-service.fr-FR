@@ -1,5 +1,5 @@
 ---
-title: 'Application de signatures électroniques à un formulaire à l’aide de signatures tactiles '
+title: Application de signatures électroniques à un formulaire à l’aide de signatures tactiles
 seo-title: Apply electronic signatures to a form using scribble signatures
 description: Signature de formulaires à l’aide de la saisie tactile
 seo-description: Signing forms using scribble

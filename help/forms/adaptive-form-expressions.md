@@ -34,7 +34,7 @@ Les panneaux de répétition sont des instances d’un panneau qui sont ajoutée
 
    * Pour ajouter une instance du panneau : `panel1.instanceManager.addInstance()`
    * Pour obtenir un index de répétition du panneau : `panel1.instanceIndex`
-   * Pour obtenir le gestionnaire d&#39;instance d&#39;un panneau : `_panel1 or panel1.instanceManager`
+   * Pour obtenir le gestionnaire d’instance d’un panneau : `_panel1 or panel1.instanceManager`
    * Pour supprimer une instance du panneau : `_panel1.removeInstance(panel1.instanceIndex)`
 
 ## Types d’expression {#expression-types}
@@ -250,7 +250,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 Pour utiliser GuideBridge après l’initialisation du formulaire (l’événement `bridgeInitializeComplete` est distribué), obtenez l’instance GuideBridge à l’aide de `window.guideBridge`. Vous pouvez vérifier l’état d’initialisation de GuideBridge à l’aide de l’API `guideBride.isConnected`.
 
-#### Événements de GuideBridge {#guidebridge-events}
+#### Evénements de GuideBridge {#guidebridge-events}
 
 GuideBridge fournit également certains événements pour les scripts externes de la page d’hébergement. Les scripts externes peuvent écouter ces événements et effectuer diverses opérations. Par exemple, lorsque le nom d’utilisateur d’un formulaire est modifié, le nom affiché dans l’en-tête de la page est également modifié. Pour plus d’informations sur ces événements, consultez [référence d’API de bibliothèque JavaScript™ pour les formulaires adaptatifs](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
 

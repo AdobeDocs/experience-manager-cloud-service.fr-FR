@@ -1,15 +1,15 @@
 ---
-title: Assistant de création de projet
+title: Assistant de création du projet
 description: Découvrez l’assistant de création de projet pour vous aider à configurer rapidement votre projet après avoir créé votre programme de production.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
 source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
-# Assistant de création de projet {#project-creation-wizard}
+# Assistant de création du projet {#project-creation-wizard}
 
 Une fois votre programme de production créé, Cloud Manager propose un assistant pour créer un projet d’AEM minimal basé sur les [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) pour commencer rapidement.
 

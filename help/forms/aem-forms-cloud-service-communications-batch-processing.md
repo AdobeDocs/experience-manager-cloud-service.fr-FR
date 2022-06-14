@@ -3,7 +3,7 @@ title: Traitement par lots des communications Experience Manager [!DNL Forms] as
 description: Comment créer des communications personnalisées et axées sur la marque ?
 exl-id: 542c8480-c1a7-492e-9265-11cb0288ce98
 source-git-commit: 6b546f551957212614e8b7a383c38797cc21fba1
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1693'
 ht-degree: 100%
 

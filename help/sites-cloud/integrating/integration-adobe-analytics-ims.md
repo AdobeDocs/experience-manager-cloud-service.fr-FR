@@ -11,7 +11,7 @@ ht-degree: 3%
 
 # Configuration IMS à utiliser lors de l’intégration à Adobe Analytics {#ims-configuration-for-integration-with-adobe-analytics}
 
-L’intégration d’Adobe Experience Manager as a Cloud Service (AEMaaCS) avec Adobe Analytics via l’API Analytics Standard nécessite la configuration d’Adobe IMS (système Identity Management). La configuration est réalisée avec Adobe Developer Console.
+L’intégration d’Adobe Experience Manager as a Cloud Service (AEMaaCS) avec Adobe Analytics via l’API Analytics Standard nécessite la configuration d’Adobe IMS (système Identity Management). La configuration est réalisée avec la console Adobe Developer.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Avant de commencer cette procédure :
 
 * L’administrateur système de votre entreprise doit utiliser le Admin Console pour ajouter les développeurs requis de votre entreprise aux profils de produit appropriés.
 
-   * Les développeurs spécifiques disposent ainsi des autorisations nécessaires pour activer les intégrations à l’aide d’Adobe Developer Console.
+   * Les développeurs spécifiques disposent ainsi des autorisations nécessaires pour activer les intégrations à l’aide de la console Adobe Developer.
    * Pour plus d’informations, voir [Gestion des développeurs](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
 
 
@@ -65,9 +65,9 @@ La première étape de la configuration consiste à créer une configuration IMS
 
 ### Création du projet {#creating-the-project}
 
-Ouvrez Adobe Developer Console pour créer un projet avec Adobe Analytics qui AEM utiliser :
+Ouvrez la console Adobe Developer pour créer un projet avec Adobe Analytics qui AEM utiliser :
 
-1. Ouvrez Adobe Developer Console pour les projets :
+1. Ouvrez la console Adobe Developer pour les projets :
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -122,9 +122,9 @@ Vous devez maintenant attribuer les privilèges requis à l’intégration :
 1. Sélectionner **Informations d’identification de l’API**, puis la configuration d’intégration requise.
 1. Sélectionner **Éditeur** comme la propriété **Rôle de produit**; au lieu de **Observateur**.
 
-## Détails stockés pour le projet d’intégration Adobe Developer Console {#details-stored-for-the-ims-integration-project}
+## Détails stockés pour le projet d’intégration de la console Adobe Developer {#details-stored-for-the-ims-integration-project}
 
-Dans Adobe Developer Console - Projets , vous pouvez voir la liste de tous vos projets d’intégration :
+Dans la console Adobe Developer - Projets , vous pouvez voir la liste de tous vos projets d’intégration :
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 

@@ -24,7 +24,7 @@ Vous pouvez ajouter un nom de domaine personnalisé à partir de deux emplacemen
 
 Procédez comme suit pour ajouter un nom de domaine personnalisé à partir du **Paramètres de domaine** page.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez au **Environnements** de l’écran **Présentation** page.
 
@@ -70,7 +70,7 @@ Reportez-vous au document [Vérification de l’état du nom de domaine personna
 
 Procédez comme suit pour ajouter un nom de domaine personnalisé à partir du **Environnements** page.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez à **Détails des environnements** pour l’environnement d’intérêt.
 

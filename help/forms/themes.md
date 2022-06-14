@@ -324,7 +324,7 @@ Vous pouvez annuler ou rétablir les modifications indésirables qui se produis
 
 Les boutons Rétablir/annuler apparaissent lorsque vous mettez en forme un composant dans l’éditeur de thèmes.
 
-## Utiliser l’éditeur de thèmes {#using-the-theme-editor}
+## Utilisation de l’éditeur de thèmes {#using-the-theme-editor}
 
 L’éditeur de thèmes vous permet de modifier un thème que vous avez créé ou téléchargé. Accédez à **[!UICONTROL Formulaires et documents]** > **[!UICONTROL Thèmes]**, sélectionnez un thème et ouvrez-le. Le thème s’ouvre dans l’éditeur de thèmes.
 
@@ -416,7 +416,7 @@ Les options de personnalisation des styles d’état varient en fonction des dif
  </tbody>
 </table>
 
-#### Simuler une erreur/un succès {#simulate-error-success}
+#### Simuler une erreur/la réussite {#simulate-error-success}
 
 Les options Simuler une erreur et une réussite sont situées en bas de la barre latérale. Vous pouvez les afficher à l’aide de la flèche afficher/masquer visible en bas de la barre latérale. À l’aide de l’éditeur de thèmes, vous pouvez définir le style des différents états d’un composant.
 
@@ -446,7 +446,7 @@ Utilisez l’option **[!UICONTROL Dimension et position]** dans la barre latér
 
 Au lieu de sélectionner **[!UICONTROL Widget de zone numérique]**, sélectionnez **[!UICONTROL Widget de champ]** dans la barre d’outils de composants et effectuez les étapes ci-dessus. Quand vous sélectionnez des dimensions pour l’option **[!UICONTROL Widget de champ]**, toutes les zones de texte, à l’exception de la zone numérique, ont la même taille.
 
-### Mettre en forme des champs pour un état donné {#styling-fields-given-state}
+### Mise en forme des champs pour un état donné {#styling-fields-given-state}
 
 Avec la barre d’outils de composants, vous pouvez également spécifier la mise en forme des composants pour les différents états. Par exemple, si un composant est désactivé, il est à l’état désactivé. Les états généralement utilisés d’un composant que vous pouvez mettre en forme dans l’éditeur de thèmes sont les suivants : Par défaut, Activé, Désactivé, Erreur, Succès et Survol. Vous pouvez sélectionner un composant dans la zone de travail et utiliser l’option État de la zone de travail pour personnaliser son aspect.
 
@@ -462,7 +462,7 @@ Lorsque vous personnalisez la mise en forme d’un composant après avoir spéci
 
 Pour simuler le comportement d’états autres que l’erreur et la réussite, utilisez le mode Aperçu. Pour utiliser le mode Aperçu, cliquez sur **[!UICONTROL Aperçu]** dans la barre d’outils de la page.
 
-### Mettre en forme des mises en page pour des écrans de plus petite taille {#styling-layouts-for-smaller-displays}
+### Mise en forme des mises en page pour des écrans de plus petite taille {#styling-layouts-for-smaller-displays}
 
 Utilisez la règle dans la zone de travail pour sélectionner des points d’arrêt pour les périphériques équipés de plus petits écrans. Cliquez sur l’émulateur ![ruler](assets/emulator-icon.svg) dans la zone de travail pour afficher la règle et les points d’arrêt. Les points d’arrêt vous permettent de prévisualiser un formulaire <!-- or interactive communication --> pour les formats d’affichage de différents périphériques tels que les téléphones et les tablettes. Plusieurs formats d’affichage sont pris en charge dans l’éditeur de thèmes.
 
@@ -487,7 +487,7 @@ Pour configurer Adobe Fonts dans Experience Manager, effectuez les étapes suiva
 
    Vous êtes redirigé sur la page de configuration.
 
-1. Dans la boîte de dialogue Modifier le composant qui s’affiche, indiquez votre ID de kit et cliquez sur **[!UICONTROL OK]**.
+1. Dans la boîte de dialogue Modifier le composant qui s’affiche, indiquez votre ID de kit, puis cliquez sur **[!UICONTROL OK]**.
 
 Pour configurer un thème pour utiliser la configuration Adobe Fonts, effectuez les étapes suivantes :
 
@@ -608,7 +608,7 @@ Lorsque vous sélectionnez la vue CSS, l’éditeur de thèmes collecte toutes l
 
 Par exemple, la couleur d’arrière-plan d’une zone de texte est bleue<!-- in the base client library-->. Vous la remplacez par la couleur rose à l’aide des propriétés de la barre latérale. Lorsque vous générez un fichier CSS, la couleur d’arrière-plan de la zone de texte est rose. Après la modification de la couleur d’arrière-plan à l’aide des propriétés, un autre auteur utilise l’option de remplacement de CSS pour modifier la zone de texte de couleur d’arrière-plan en blanc. Lorsque vous générez des fichiers CSS, la couleur d’arrière-plan blanche apparaît dans le CSS généré.
 
-## Déboguer les styles {#debugging-styles}
+## Débogage des styles {#debugging-styles}
 
 Lorsque vous spécifiez des styles pour les composants dans l’éditeur de thèmes, un fichier CSS est généré. Lorsque vous définissez le style d’un composant générique, plusieurs composants intégrés sont également mis en forme. Par exemple, lorsque vous définissez le style d’un champ, la zone de texte et l’étiquette qu’elle contient sont également mises en forme. Lorsque vous mettez en forme la zone de texte dans le champ, elle obtient son propre CSS. Si vous souhaitez déboguer le CSS généré pour le champ et le composant, l’éditeur de thèmes fournit des options qui vous permettent d’afficher le CSS.
 

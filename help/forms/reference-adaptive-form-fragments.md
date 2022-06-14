@@ -57,7 +57,7 @@ Comprend des champs permettant de saisir le numéro de téléphone et l’adress
 
 ](assets/contact-info-1.png)-->
 
-## Informations de la carte de crédit {#credit-card-information}
+## Informations de carte de crédit {#credit-card-information}
 
 Comprend des champs permettant de capturer les informations de carte de crédit qui peuvent être utilisées pour le traitement des paiements.
 [ ![Fragment d’informations de carte de crédit](assets/cc-info.png)](assets/cc-info-1.png)
@@ -92,7 +92,7 @@ Comprend des champs permettant de saisir l’historique d’emploi. Il permet d�
 
 ](assets/emp-history-1.png)-->
 
-## Recettes &amp; dépenses {#income-expenditure}
+## Recettes et dépenses {#income-expenditure}
 
 Comprend des champs permettant de capturer les dépenses et le flux de trésorerie mensuels. Les formulaires qui nécessitent la saisie des détails financiers peuvent utiliser ce fragment pour capturer les revenus et les dépenses.
 
@@ -122,7 +122,7 @@ Indique les conditions générales que les utilisateurs doivent accepter avant d
 
 ](assets/tnc-1.png)-->
 
-## Conditions générales avec griffonnage {#terms-conditions-with-scribble}
+## Conditions générales avec saisie tactile {#terms-conditions-with-scribble}
 
 Indique les conditions générales que les utilisateurs doivent accepter et signer avant d’envoyer un formulaire.
 

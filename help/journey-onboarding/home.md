@@ -3,7 +3,7 @@ title: Présentation du parcours d’intégration
 description: Commencez ici pour suivre l’aperçu du parcours d’intégration guidé et pour comprendre l’expérience d’intégration.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 100%
 

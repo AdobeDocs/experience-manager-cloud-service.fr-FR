@@ -182,7 +182,7 @@ La demande est le formulaire adaptatif associé au processus. Lorsqu’une deman
   </tr>
   <tr>
    <td>Chemin d’accès du document d’enregistrement</td>
-   <td>Spécifiez le chemin d’accès du fichier Document d’enregistrement dans le référentiel crx. Le chemin est relatif à l’emplacement de la charge utile du formulaire adaptatif. Intégrez toujours le nom complet du fichier, y compris son extension, le cas échéant. Par exemple, [charge utile] /DOR/creditcard.pdf.</td>
+   <td>Spécifiez le chemin d’accès du fichier Document d’enregistrement dans le référentiel crx. Le chemin est relatif à l’emplacement de la charge utile du formulaire adaptatif. Intégrez toujours le nom complet du fichier, y compris son extension, le cas échéant. Par exemple, [charge utile]/DOR/creditcard.pdf.</td>
   </tr>
  </tbody>
 </table>

@@ -3,7 +3,7 @@ title: 'Mise en veille et réactivation d’environnements Sandbox '
 description: Découvrez comment les environnements d’un programme Sandbox passent automatiquement en mode veille et comment les réactiver.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
 source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ Vous pouvez mettre en veille manuellement votre programme Sandbox à partir de l
 
 1. Cliquez sur le programme que vous souhaitez mettre en veille pour en afficher les détails.
 
-1. Sur la carte **Environnements**, cliquez sur le bouton représentant des points de suspension et sélectionnez **Developer Console**.
+1. Sur la carte **Environnements**, cliquez sur le bouton représentant des points de suspension et sélectionnez la **Developer Console**.
 
    * Reportez-vous au document [Accès à la Developer Console](/help/implementing/cloud-manager/manage-environments.md#accessing-developer-console) pour plus d’informations sur la Developer Console.
 

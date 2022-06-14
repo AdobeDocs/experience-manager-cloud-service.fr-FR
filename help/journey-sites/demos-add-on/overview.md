@@ -3,7 +3,7 @@ title: Parcours du module complémentaire de démonstration d’AEM
 description: Découvrez ici un parcours guidé expliquant comment ajouter facilement le module complémentaire des démonstrations de référence d’AEM à un environnement sandbox avec une configuration minimale d’AEM. Vous pourrez ainsi tester les puissantes fonctionnalités d’AEM avec des exemples riches basés sur les bonnes pratiques.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 100%
 

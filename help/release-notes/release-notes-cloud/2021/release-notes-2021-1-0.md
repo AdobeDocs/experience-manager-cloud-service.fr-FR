@@ -3,7 +3,7 @@ title: Notes de mise à jour de la version 2021.1.0 d’ [!DNL Adobe Experience
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.1.0.
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '863'
 ht-degree: 100%
 

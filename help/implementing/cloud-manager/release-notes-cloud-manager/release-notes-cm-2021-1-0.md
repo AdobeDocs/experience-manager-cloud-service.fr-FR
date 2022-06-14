@@ -22,8 +22,8 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 es
 
 ### Correctifs  {#bug-fixes}
 
-* L’instance de production de ressources peut occasionnellement afficher le statut de Brand Portal sur la page de détails **Environnements** comme étant *En attente* sans permettre à l’utilisateur d’effectuer une action.
+* L’instance de production de ressources peut occasionnellement afficher le statut de Brand Portal sur la page de détails **Environnements** comme étant *En attente* sans permettre à l’utilisateur d’effectuer une action.
 
-* Lors d’une réactivation après mise en veille dans Cloud Manager, un message d’échec s’affichait parfois, même lorsque la réactivation était correctement lancée.
+* Lors d’une réactivation après mise en veille dans Cloud Manager, un message d’échec s’affichait parfois, même lorsque la réactivation était correctement lancée.
 
 * Les rares cas d’échec rencontrés lors de la création ou de la suppression d’environnements ont été résolus.

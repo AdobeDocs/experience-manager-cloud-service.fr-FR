@@ -14,7 +14,7 @@ ht-degree: 85%
 
 Commencez ici pour un parcours guidé [!DNL Adobe Experience Manager as a Cloud Service] (AEM) lorsqu’il est utilisé comme système de gestion de contenu (CMS) sans affichage. Découvrez les fonctionnalités puissantes et flexibles sans interface, leurs fonctionnalités et comment les exploiter dans votre premier projet de développement sans interface. Ce parcours vous fournit toutes les informations dont vous avez besoin pour développer votre première application sans interface.
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 La mise en oeuvre sans affichage d’AEM utilise des modèles de fragments de contenu et des fragments de contenu pour se concentrer sur la création de fragments de contenu structurés, neutres et réutilisables, ainsi que sur leur diffusion cross-canal. Pour ce faire, la gestion des pages et des composants est abandonnée, comme c’est le cas dans les solutions de pile complètes. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences numériques.
 

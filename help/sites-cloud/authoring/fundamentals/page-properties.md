@@ -250,7 +250,7 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 1. Sélectionnez l’icône **Informations sur la page** pour ouvrir le menu de sélection :
 1. Sélectionnez **Ouvrir les propriétés**. Une boîte de dialogue s’ouvre alors pour vous permettre de modifier les propriétés, triées selon l’onglet approprié. Les boutons suivants sont également disponibles à droite de la barre d’outils :
    * **Annuler**
-   * **Enregistrer et fermer**
+   * **Enregistrez et fermez**
 1. Utilisez le bouton **Enregistrer et fermer** pour enregistrer les modifications.
 
 ### À partir de la console Sites – Plusieurs pages {#from-the-sites-console-multiple-pages}

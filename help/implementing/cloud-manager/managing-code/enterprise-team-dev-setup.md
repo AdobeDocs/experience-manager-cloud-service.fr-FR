@@ -1,11 +1,11 @@
 ---
-title: Configuration de l’équipe de développement d’entreprise
+title: Configuration de l’équipe de développement des grands comptes
 description: Découvrez comment configurer et mettre à l’échelle votre équipe de développement d’entreprise et comment AEM as a Cloud Service peut prendre en charge votre processus de développement.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
 source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
 workflow-type: tm+mt
 source-wordcount: '1444'
-ht-degree: 52%
+ht-degree: 53%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 52%
 
 Découvrez comment configurer et mettre à l’échelle votre équipe de développement d’entreprise et comment AEM as a Cloud Service peut prendre en charge votre processus de développement.
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 Pour aider les clients à configurer le développement d’entreprise, AEM as a Cloud Service s’intègre entièrement à Cloud Manager et à ses [Pipelines CI/CD avec opinion.](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) Ces pipelines et services sont construits sur la base des bonnes pratiques, ce qui garantit un suivi complet. [test et qualité de code la plus élevée.](/help/implementing/cloud-manager/code-quality-testing.md)
 

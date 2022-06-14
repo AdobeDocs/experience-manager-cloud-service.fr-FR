@@ -3,7 +3,7 @@ title: Programmes et types de programmes
 description: Découvrez la hiérarchie de Cloud Manager et comment les différents types de programmes s’intègrent dans sa structure et en quoi ils diffèrent.
 exl-id: 507df619-a5b5-419a-9e38-db77541425a2
 source-git-commit: 74e17ccb93c97dd6881c9b63d9a2d784d3add430
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 100%
 
@@ -25,8 +25,8 @@ Cloud Manager repose sur une hiérarchie d’entités. Les détails ne sont pas 
 
 Un exemple est souvent utile pour contextualiser cette hiérarchie.
 
-* Les entreprises de voyage et d’aventure WKND peuvent être un **client** qui se concentre sur les médias liés aux voyages.
-* Le client Entreprises de voyage et d’aventure WKND peut avoir deux **programmes** : un programme Sites pour le magazine WKND et un programme Assets pour les médias WKND.
+* Disons que WKND Travel and Adventure Enterprises est un **client** qui se concentre sur les médias liés aux voyages.
+* Disons que le client WKND Travel and Adventure Enterprises peut avoir deux **programmes** : un programme Sites pour WKND Magazine et un programme Assets pour WKND Media.
 * Les programmes pour le magazine WKND et les médias WKND auraient tous les deux des **environnements** de développement, d’évaluation et de production.
 
 ## Référentiel de code source {#source-code-repository}

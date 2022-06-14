@@ -1,13 +1,13 @@
 ---
 title: AEM as a Cloud Service sur Shell unifié
 description: AEM as a Cloud Service sur Shell unifié
-source-git-commit: 09f4620ed871b012b4550bc05cfe7f4622f02833
+exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
+source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 1%
 
 ---
-
 
 # AEM as a Cloud Service sur Shell unifié {#aem-as-a-cloud-service-on-unified-shell}
 
@@ -72,4 +72,3 @@ Vous pouvez accéder à la boîte de réception AEM en cliquant sur l’icône r
 Cliquez sur le bouton Boîte de réception de la fenêtre contextuelle pour accéder à votre boîte de réception AEM :
 
 ![image](/help/overview/assets/unifiedshell6.png)
-

@@ -189,7 +189,7 @@ Les champs de validation en standard d’un formulaire adaptatif réexécutés s
 * Clause de validation d’image
 * Expression de validation
 
-### Activer la validation côté serveur {#enabling-server-side-validation-br}
+### Activation de la validation côté serveur {#enabling-server-side-validation-br}
 
 Utilisez **[!UICONTROL Revalider sur le serveur]** sous le conteneur de formulaires adaptatifs dans la zone latérale pour activer ou désactiver la validation côté serveur pour le formulaire actif.
 

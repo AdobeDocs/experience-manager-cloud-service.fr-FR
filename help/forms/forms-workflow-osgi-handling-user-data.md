@@ -20,11 +20,11 @@ Les flux de travail AEM basé sur l’utilisation de Forms vous permettent d’a
 
 Un flux de travail basé sur l’utilisation de Forms peut être déclenché ou lancé à l’aide de l’une des méthodes suivantes :
 
-* Envoyer une demande depuis la boîte de réception AEM
+* Envoi d’une demande depuis la boîte de réception AEM
 * Envoi d’une demande depuis l’application AEM [!DNL Forms]
 * Envoi d’un formulaire adaptatif
 * Utilisation d’un dossier de contrôle
-* Envoyer une communication interactive ou une lettre
+* Envoi d’une communication interactive ou d’une lettre
 
 Pour plus d’informations sur les flux de travail et les fonctionnalités AEM basés sur l’utilisation de Forms, voir [Flux de travail basé sur l’utilisation de Forms sur OSGi](aem-forms-workflow.md).
 
@@ -123,7 +123,7 @@ Pour identifier et accéder aux données utilisateur stockées pour une instance
    >
    >L’application AEM [!DNL Forms] stocke également les données en mode hors ligne. Les données d’une instance de flux de travail peuvent être enregistrées localement sur des appareils individuels et envoyées au serveur lorsque l’application se synchronise avec le serveur.[!DNL Forms]
 
-### Supprimer des données utilisateur {#delete-user-data}
+### Suppression de données utilisateur {#delete-user-data}
 
 Vous devez être un administrateur AEM pour supprimer des données utilisateur des instances de flux de travail en suivant la procédure suivante :
 

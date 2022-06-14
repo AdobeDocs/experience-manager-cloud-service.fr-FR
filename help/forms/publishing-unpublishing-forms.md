@@ -54,7 +54,7 @@ Vos formulaires adaptatifs peuvent utiliser certains paramètres, configurations
    * Une autre bibliothèque client qui peut être incluse dans le modèle de formulaire adaptatif.
    * Chemins de conception
 
-## États d’une ressource {#asset-states}
+## États d’un élément {#asset-states}
 
 Un élément peut présenter les états suivants :
 
@@ -134,7 +134,7 @@ Procédez comme suit pour planifier la date et l’heure de publication et d’a
 1. Sélectionnez la date et l’heure dans les champs **[!UICONTROL Heure de début de publication]** et **[!UICONTROL Heure de fin de publication]**.\
    Appuyez sur **[!UICONTROL Terminé]** ![aem6forms_check](assets/aem6forms_check.png).
 
-## Annuler la publication d’une ressource {#unpublish-an-asset}
+## Annulation de la publication d’un élément {#unpublish-an-asset}
 
 1. Sélectionnez un élément publié et appuyez sur **[!UICONTROL Annuler la publication]** ![unpublish](assets/unpublish.png).
 1. Utilisez l’une des actions suivantes pour sélectionner et annuler la publication d’un élément.
@@ -155,7 +155,7 @@ Procédez comme suit pour planifier la date et l’heure de publication et d’a
    >
    >L’annulation de publication affecte uniquement l’élément sélectionné ; les éléments enfants et référencés ne sont pas concernés.
 
-## Rétablir la version précédemment publiée d’une ressource ou d’une lettre {#revert-an-asset-or-letter-to-the-previously-published-version}
+## Rétablissement de la version précédemment publiée d’une ressource ou d’une lettre {#revert-an-asset-or-letter-to-the-previously-published-version}
 
 Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifiée, une version de la ressource ou de la lettre est publiée. Vous pouvez rétablir la version précédemment publiée d’une ressource ou d’une lettre. Cette opération peut être utile si un problème se produit avec la version actuelle de la ressource ou de la lettre.
 
@@ -168,7 +168,7 @@ Chaque fois que vous publiez une ressource ou une lettre après l’avoir modifi
 
    La version précédemment publiée de l’élément ou de la lettre est rétablie.
 
-## Supprimer une ressource {#delete-an-asset}
+## Suppression d’un élément {#delete-an-asset}
 
 >[!NOTE]
 >

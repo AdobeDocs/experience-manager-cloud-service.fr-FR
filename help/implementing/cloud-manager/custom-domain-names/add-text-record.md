@@ -27,8 +27,8 @@ Reportez-vous aux exemples de ce tableau.
 
 | Domaine | Nom | Valeur TXT |
 |--- |--- |---|
-| `example.com` | `_aemverification.example.com` | Copiez la valeur entière affichée dans l’interface utilisateur de Cloud Manager. Cela est spécifique au domaine et à l’environnement. Par exemple : <br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
-| `www.example.com` | `_aemverification.www.example.com` | Copiez la valeur entière affichée dans l’interface utilisateur de Cloud Manager. Cela est spécifique au domaine et à l’environnement. Par exemple : <br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
+| `example.com` | `_aemverification.example.com` | Copiez la valeur entière affichée dans l’interface utilisateur de Cloud Manager. Cela est spécifique au domaine et à l’environnement. Par exemple:<br>`adobe-aem-verification=example.com/[program]/[env]/..*` |
+| `www.example.com` | `_aemverification.www.example.com` | Copiez la valeur entière affichée dans l’interface utilisateur de Cloud Manager. Cela est spécifique au domaine et à l’environnement. Par exemple:<br>`adobe-aem-verification=www.example.com/[program]/[env]/..*` |
 
 Une fois que vous avez terminé, vous pouvez vérifier le résultat en exécutant la commande suivante :
 

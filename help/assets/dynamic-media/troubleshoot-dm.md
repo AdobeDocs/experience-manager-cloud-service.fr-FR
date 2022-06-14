@@ -202,8 +202,7 @@ Dans CRXDE Lite, procédez comme suit :
    * `dam:scene7Domain`
    * `"is/content"`
    * `dam:scene7Folder`
-   * `<asset-name>`
-Exemple: 
+   * `<asset-name>`Exemple : 
 `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Solution**

@@ -1,5 +1,5 @@
 ---
-title: Modifier le contenu de la page zéro dans Designer
+title: Modification du contenu de la page zéro avec Designer
 seo-title: Changing Page Zero content in Designer
 description: Savez-vous comment modifier le message affiché sur la page zéro d’un PDF XFA ouvert avec un programme de visualisation PDF non Adobe ?
 seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
