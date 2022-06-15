@@ -5,10 +5,10 @@ feature: Content Fragments, GraphQL API
 topic: Headless
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: f296e8cbc12c9426e0fefe6f5342374ba9b21291
+source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 90%
+source-wordcount: '751'
+ht-degree: 86%
 
 ---
 
@@ -20,7 +20,12 @@ Pour ce faire, utilisez des fragments de contenu, ainsi que l’API GraphQL AEM 
 
 >[!NOTE]
 >
->Voir [Le découplage et AEM](/help/headless/introduction.md) pour une introduction au développement découplé pour AEM Sites as a Cloud Service.
+>Voir également :
+>
+>* [Qu&#39;est-ce que l&#39;absence de tête ?](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
+>
+>* [Sans tête et AEM](/help/headless/introduction.md) pour une présentation du développement sans affichage pour AEM Sites as a Cloud Service.
+
 
 >[!NOTE]
 >

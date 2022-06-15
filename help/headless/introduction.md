@@ -3,10 +3,10 @@ title: Présentation d’AEM découplé
 description: Découvrez Adobe Experience Manager (AEM) en tant que CMS sans affichage avec une combinaison de documentation détaillée et de parcours sans affichage. Découvrez comment des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL sont utilisés pour alimenter des expériences sans interface.
 landing-page-description: Apprenez comment utiliser et administrer Experience Manager Headless as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 30272a4729bc2e2b5213796789eb1422ba105074
+source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 84%
+source-wordcount: '680'
+ht-degree: 83%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 84%
 Découvrez comment utiliser Adobe Experience Manager (AEM) en tant que CMS sans affichage, avec des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL qui optimisent les expériences sans affichage à grande échelle.
 
 Vous pouvez lire la documentation détaillée des différentes fonctionnalités impliquées et/ou suivre la sélection de [Parcours sans affichage pour obtenir un aperçu des premières étapes](#first-steps).
+
+>[!NOTE]
+>
+>Voir aussi [Qu&#39;est-ce que l&#39;absence de tête ?](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
 
 ## Présentation {#overview}
 
