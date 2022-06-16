@@ -2,9 +2,9 @@
 title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 15fb2823d231048885a140edfaa904527a026aae
+source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
 workflow-type: tm+mt
-source-wordcount: '1147'
+source-wordcount: '1177'
 ht-degree: 100%
 
 ---
@@ -41,6 +41,12 @@ Les problèmes identifiés par le test de qualité du code sont affectés à l�
 * **Important** - il s’agit des problèmes qui entraînent la mise en pause du pipeline. Un responsable de déploiement, un responsable de projet ou un propriétaire d’entreprise peuvent soit contourner les problèmes, auquel cas le pipeline continue, soit accepter les problèmes, auquel cas le pipeline s’arrête avec un échec.
 
 * **Informations** - Il s’agit des problèmes fournis uniquement à titre d’information et qui n’ont aucune incidence sur l’exécution du pipeline
+
+>[!NOTE]
+>
+>Dans un pipeline uniquement axé sur la qualité du code, les échecs importants du point de contrôle Qualité du code ne peuvent pas être remplacés car l’étape de test de qualité du code est la dernière étape du pipeline.
+
+### Evaluations {#ratings}
 
 Les résultats de cette étape sont fournis sous forme de **notes**.
 
