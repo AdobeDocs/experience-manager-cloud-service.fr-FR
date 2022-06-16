@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version  [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de la version  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 77aceab8db82082185c931202fc6ea8eee79c11e
+source-git-commit: 081f7ed8c39382408285887928163e2569c5cbfe
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 5%
+source-wordcount: '298'
+ht-degree: 4%
 
 ---
 
@@ -15,9 +15,27 @@ La section suivante présente les notes générales de mise à jour pour [!DNL W
 
 ## Date de publication {#release-date}
 
-Date de publication de la dernière version de [!DNL Workfront for Experience Manager enhanced connector] est le 28 mars 2022.
+Date de publication de la dernière version 1.9.0 de [!DNL Workfront for Experience Manager enhanced connector] est le 16 juin 2022.
 
 ## Faits saillants des versions {#release-highlights}
+
+La dernière version de la variable [!DNL Workfront for Experience Manager enhanced connector] inclut le correctif de bogue suivant :
+
+* Lorsque vous effectuez un téléchargement via un dossier lié ou que vous utilisez l’événement `Send To` action disponible dans Workfront pour charger des ressources vers Experience Manager as a Cloud Service, les ressources sont corrompues et ne peuvent pas être ouvertes dans Adobe Photoshop.
+
+>[!IMPORTANT]
+>
+>Adobe vous recommande de [mise à niveau vers la dernière version 1.9.0](../assets/update-workfront-enhanced-connector.md) de [!DNL Workfront for Experience Manager enhanced connector].
+
+## Problèmes connus {#known-issues}
+
+* Lors de la configuration de dossiers liés à un projet avec AEM 6.4, Experience Manager n’enregistre pas les valeurs de pour **[!UICONTROL sous-dossiers]** et **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]** champs. La valeur de la variable **[!UICONTROL sous-dossiers]** mises à jour des champs **[!UICONTROL undefined]** et la valeur de la variable **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]** mises à jour des champs **[!UICONTROL Portfolio par défaut]** automatiquement après l’enregistrement de la configuration.
+
+* Lorsque vous utilisez l’expérience Workfront classique, la variable **[!UICONTROL Envoyer à]** , disponible dans la variable **[!UICONTROL Plus]** la liste déroulante ne vous permet pas de sélectionner la destination cible dans Experience Manager. Le **[!UICONTROL Envoyer à]** fonctionne correctement avec l’option **[!UICONTROL Actions de document]** liste déroulante Le **[!UICONTROL Envoyer à]** fonctionne correctement pour **[!UICONTROL Plus]** liste déroulante et **[!UICONTROL Actions de document]** liste déroulante disponible dans la nouvelle expérience Workfront.
+
+## Versions précédentes {#previous-releases}
+
+### Version de mars 2022 {#march-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] comprend désormais les mises à jour suivantes :
 
@@ -30,12 +48,6 @@ Date de publication de la dernière version de [!DNL Workfront for Experience Ma
 * Ajout de la prise en charge des environnements proxy.
 
 * Plusieurs correctifs de bogues basés sur les commentaires des partenaires et des clients.
-
-## Problèmes connus {#known-issues}
-
-* Lors de la configuration de dossiers liés à un projet avec AEM 6.4, Experience Manager n’enregistre pas les valeurs de pour **[!UICONTROL sous-dossiers]** et **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]** champs. La valeur de la variable **[!UICONTROL sous-dossiers]** mises à jour des champs **[!UICONTROL undefined]** et la valeur de la variable **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]** mises à jour des champs **[!UICONTROL Portfolio par défaut]** automatiquement après l’enregistrement de la configuration.
-
-* Lorsque vous utilisez l’expérience Workfront classique, la variable **[!UICONTROL Envoyer à]** , disponible dans la variable **[!UICONTROL Plus]** la liste déroulante ne vous permet pas de sélectionner la destination cible dans Experience Manager. Le **[!UICONTROL Envoyer à]** fonctionne correctement avec l’option **[!UICONTROL Actions de document]** liste déroulante Le **[!UICONTROL Envoyer à]** fonctionne correctement pour **[!UICONTROL Plus]** liste déroulante et **[!UICONTROL Actions de document]** liste déroulante disponible dans la nouvelle expérience Workfront.
 
 >[!MORELIKETHIS]
 >
