@@ -2,10 +2,10 @@
 title: Équipe et profils de produit AEM as a Cloud Service
 description: Consultez cette page pour en savoir plus sur l’équipe les profils de produit AEM as a Cloud Service.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 56ca8e80081e62ceb3f5fc2bf9c32aa3bcee12c6
+source-git-commit: fd23701414a2ae4142ea2a11cef92bc0cb202421
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ Vos membres d’équipe AEM as a Cloud Service seront ajoutés et affectés à u
 
 ## Profils de produit Cloud Manager {#cloud-manager-product-profiles}
 
-Cloud Manager dispose de profils de produit préconfigurés ou, plus simplement, d’autorisations basées sur les rôles. L’administrateur système est chargé de configurer votre équipe Cloud Manager en attribuant le à ces profils de produit. Il doit se familiariser avec ces profils de produit et avec les membres de l’équipe à qui les attribuer.
+Cloud Manager dispose de profils de produit préconfigurés ou, plus simplement, d’autorisations basées sur les rôles. L’administrateur système est chargé de configurer votre équipe Cloud Manager en les affectant à ces profils de produit. Il doit se familiariser avec ces profils de produit et avec les membres de l’équipe à qui les affecter.
 >[!NOTE]
 >Pour plus d’informations, voir [Autorisations basées sur les rôles dans Cloud Manager](/help/onboarding/learn-concepts/cloud-manager-introduction.md##role-based-permissions).
 

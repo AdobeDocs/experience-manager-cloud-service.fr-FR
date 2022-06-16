@@ -2,7 +2,7 @@
 title: Tests de contrôle de l’expérience
 description: Découvrez comment le contrôle de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation pour les moteurs de recherche.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 15de47e28e804fd84434d5e8e5d2fe8fe6797241
+source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 26%
@@ -31,7 +31,7 @@ Le contrôle de l’expérience dans Cloud Manager garantit que l’expérience 
 
 Les résultats de l’audit sont informatifs et permettent au responsable de déploiement d’afficher les scores et le changement entre les scores actuels et précédents. Ces informations sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
 
-Le contrôle de l’expérience est optimisé par Google Lighthouse, un outil Open Source de Google qui est activé dans tous les pipelines de production de Cloud Manager.
+Le contrôle de l’expérience est optimisé par Google Lighthouse, un outil open source de Google qui est activé dans tous les pipelines de production de Cloud Manager.
 
 ## Compréhension des résultats du contrôle de l’expérience {#understanding-experience-audit-results}
 

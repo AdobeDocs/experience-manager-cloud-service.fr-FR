@@ -2,10 +2,10 @@
 title: Plug-in Maven Content Package d’Adobe
 description: Utilisation du plug-in Maven Content Package pour déployer des applications AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: 278470482a582db7d88bfbe6f851eb3070afc0df
+source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
-source-wordcount: '1844'
-ht-degree: 100%
+source-wordcount: '1851'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,10 @@ Ce document décrit comment utiliser Maven pour gérer ces tâches. Cependant, i
 
 >[!NOTE]
 >
->La création de modules incombe désormais au [plug-in Maven Apache Jackrabbit FileVault](https://jackrabbit.apache.org/filevault-package-maven-plugin/). Le déploiement des modules construits sur AEM est effectué par le plug-in Maven Content Package d’Adobe, comme décrit ici.
+>Package **création** est désormais détenu par la variable [Module externe Apache Jackrabbit FileVault Package Maven.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>* Le `content-package-maven-plugin` ne prend plus en charge les packages à partir de la version 1.0.2.
+>* Cet article décrit la **déploiement** Le module externe Maven de module de contenu de l’Adobe effectue le des modules construits vers AEM.
+
 
 ## Modules et structure de projet AEM {#aem-project-structure}
 
@@ -47,7 +50,7 @@ Pour utiliser le module externe Content Package Maven, ajoutez l’élément plu
 <plugin>
  <groupId>com.day.jcr.vault</groupId>
  <artifactId>content-package-maven-plugin</artifactId>
- <version>0.0.24</version>
+ <version>1.0.4</version>
  <configuration>
        <!-- parameters and values common to all goals, as required -->
  </configuration>
