@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '2892'
-ht-degree: 96%
+source-wordcount: '2894'
+ht-degree: 95%
 
 ---
 
@@ -25,7 +25,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
 1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
-1. Accédez au fichier adapté votre [configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. Accédez au dossier approprié à votre [configuration ou sous-configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md).
 1. Utilisez le bouton **Créer** pour ouvrir l’assistant.
 
    >[!CAUTION]

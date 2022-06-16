@@ -4,10 +4,10 @@ description: Découvrez comment activer certaines fonctionnalités de fragments 
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: e304b49b44cf871f3c47120fad7899407c573234
+source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 100%
+source-wordcount: '339'
+ht-degree: 79%
 
 ---
 
@@ -43,9 +43,20 @@ Pour [utiliser certaines fonctionnalités de fragments de contenu,](#creating-a-
 >
 >Pour plus de détails, voir également [Explorateur de configurations :](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
->[!CAUTION]
+>[!NOTE]
 >
->Les sous-configurations (configuration imbriquée dans une configuration) sont prises en charge pour une utilisation avec les fragments de contenu, mais ne peuvent pas être utilisées pour les requêtes GraphQL.
+>[Sous-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (une configuration imbriquée dans une autre configuration) sont entièrement prises en charge pour une utilisation avec les fragments de contenu, les modèles de fragment de contenu et les requêtes GraphQL.
+>
+>Il suffit de noter que :
+>
+>
+>* Après la création des modèles dans une sous-configuration, il n’est PAS possible de déplacer ou de copier le modèle vers une autre sous-configuration.
+>
+>* Un point d’entrée GraphQL est (toujours) basé sur une configuration parent (racine).
+>
+>* Les requêtes persistantes sont (toujours) enregistrées en fonction de la configuration parent (racine).
+
+
 
 1. Accédez à **Outils**, **Général**, puis ouvrez l’**Explorateur de configurations**.
 
