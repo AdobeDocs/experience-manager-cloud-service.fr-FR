@@ -3,10 +3,10 @@ title: Configuration de Dynamic Media Cloud Services
 description: Découvrez la configuration de Dynamic Media dans Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 527c25ef61f9553a9e0012b8413a8bc6ccf4afdd
+source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
 workflow-type: tm+mt
-source-wordcount: '3449'
-ht-degree: 97%
+source-wordcount: '3537'
+ht-degree: 94%
 
 ---
 
@@ -270,6 +270,7 @@ Voir [Chargement de ressources](/help/assets/add-assets.md).
 
 **Pour modifier des types MIME pour les formats pris en charge :**
 
+1. Connectez-vous à votre Experience Manager as a Cloud Service en tant qu’administrateur de produit.
 1. Dans Experience Manager as a Cloud Service, sélectionnez le logo Experience Manager as a Cloud Service pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Général > CRXDE Lite]**.
 1. Dans le rail de gauche, accédez à ce qui suit :
 
@@ -296,6 +297,7 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
 
 **Pour ajouter des types MIME pour des formats non pris en charge:**
 
+1. Connectez-vous à votre Experience Manager as a Cloud Service en tant qu’administrateur de produit.
 1. Dans Experience Manager as a Cloud Service, accédez à **[!UICONTROL Outils > Opérations > Console web]**.
 
    ![2019-08-02_16-13-14](assets/2019-08-02_16-13-14.png)
@@ -377,6 +379,10 @@ Voir la section [Ajout de types MIME pour les formats non pris en charge](#addin
 
 La file d’attente de workflows Granite est utilisée pour les workflows non transitoires. Dans Dynamic Media, elle est utilisée pour le traitement de la vidéo avec le workflow **[!UICONTROL Vidéo de codage Dynamic Media]**.
 
+>[!NOTE]
+>
+>Pour terminer cette tâche, vous devez être connecté à Experience Manager as a Cloud Service en tant qu’administrateur de produit.
+
 **Pour mettre à jour les threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo), procédez comme suit :**
 
 1. Accédez à `https://<server>/system/console/configMgr` et recherchez **Queue: Granite Workflow Queue** (File d’attente : file d’attente de workflows Granite).
@@ -398,6 +404,10 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 #### Mise à jour des threads de traitement de file d’attente de workflows transitoires Granite prédéfinis {#update-granite-transient-workflow-queue-worker-threads-images}
 
 La file d’attente de workflows Granite est utilisée pour le workflow **[!UICONTROL Ressources de mise à jour de gestion des actifs numériques (DAM)]**. Dans Dynamic Media, elle est utilisée pour l’ingestion et le traitement des images et des ressources non vidéo.
+
+>[!NOTE]
+>
+>Pour terminer cette tâche, vous devez être connecté à Experience Manager as a Cloud Service en tant qu’administrateur de produit.
 
 **Pour mettre à jour les threads de traitement de file d’attente de workflows transitoires Granite prédéfinis, procédez comme suit :**
 
@@ -422,7 +432,11 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 #### Mise à jour du nombre maximal de connexions de téléchargement au serveur Dynamic Media Classic (Scene7) {#update-max-s7-upload-connections}
 
-Le paramètre de connexion de téléchargement de Dynamic Media Classic (Scene7) synchronise les ressources Experience Manager avec les serveurs Dynamic Media Classic.
+Le paramètre Connexion de chargement de Dynamic Media Classic (Scene7) synchronise les ressources de Experience Manager sur les serveurs Dynamic Media Classic.
+
+>[!NOTE]
+>
+>Pour terminer cette tâche, vous devez être connecté à Experience Manager as a Cloud Service en tant qu’administrateur de produit.
 
 **Pour mettre à jour le nombre maximal de connexions de téléchargement au serveur Dynamic Media Classic (Scene7), procédez comme suit :**
 
