@@ -3,10 +3,10 @@ title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 368c2d537d740b2126aa7cce657ca54f7ad6b329
+source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 53%
+source-wordcount: '1109'
+ht-degree: 30%
 
 ---
 
@@ -55,17 +55,17 @@ Il est recommandé de conserver les requêtes dans un environnement de création
 
 Il existe différentes méthodes de requête persistante, notamment :
 
-* l’IDE GraphiQL - voir [Enregistrement des requêtes persistantes](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries)
+* IDE GraphiQL - voir [Enregistrement des requêtes persistantes](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (méthode préférée)
 * curl - voir l’exemple suivant
 * Autres outils, notamment [Postman](https://www.postman.com/)
 
-Vous trouverez ci-dessous la procédure à suivre pour conserver une requête donnée à l’aide de l’outil de ligne de commande **curl** :
+L’IDE GraphiQL est l’IDE **preferred** pour les requêtes persistantes. Pour conserver une requête donnée à l’aide de la fonction **curl** outil de ligne de commande :
 
 1. Préparez la requête avec une commande PUT sur l’URL du nouveau point d’entrée `/graphql/persist.json/<config>/<persisted-label>`.
 
    Par exemple, créez une requête persistante :
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -88,7 +88,7 @@ Vous trouverez ci-dessous la procédure à suivre pour conserver une requête do
 
    Par exemple, contrôlez le succès :
 
-   ```xml
+   ```json
    {
      "action": "create",
      "configurationName": "wknd",
@@ -102,7 +102,7 @@ Vous trouverez ci-dessous la procédure à suivre pour conserver une requête do
 
    Par exemple, utilisez la requête persistante :
 
-   ```xml
+   ```shell
    $ curl -X GET \
        http://localhost:4502/graphql/execute.json/wknd/plain-article-query
    ```
@@ -111,7 +111,7 @@ Vous trouverez ci-dessous la procédure à suivre pour conserver une requête do
 
    Par exemple, utilisez la requête persistante :
 
-   ```xml
+   ```shell
    $ curl -X POST \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -137,7 +137,7 @@ Vous trouverez ci-dessous la procédure à suivre pour conserver une requête do
 
    Par exemple :
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -150,7 +150,7 @@ Vous trouverez ci-dessous la procédure à suivre pour conserver une requête do
 
    Par exemple :
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -163,7 +163,7 @@ Vous trouverez ci-dessous la procédure à suivre pour conserver une requête do
 
    Par exemple :
 
-   ```xml
+   ```shell
    $ curl -X PUT \
        -H 'authorization: Basic YWRtaW46YWRtaW4=' \
        -H "Content-Type: application/json" \
@@ -185,44 +185,131 @@ Vous trouverez ci-dessous la procédure à suivre pour conserver une requête do
      }'
    ```
 
+
+## Exécution d’une requête persistante {#execute-persisted-query}
+
+Pour exécuter une requête persistante, une application client effectue une requête GET en utilisant la syntaxe suivante :
+
+```
+GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
+```
+
+Où `PERSISTENT_PATH` est un chemin raccourci vers l’emplacement d’enregistrement de la requête persistante.
+
+1. Par exemple `wknd` est le nom de la configuration et `plain-article-query` est le nom de la requête persistante. Pour exécuter la requête :
+
+   ```shell
+   $ curl -X GET \
+       https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query
+   ```
+
 1. Exécution d’une requête avec des paramètres.
+
+   >[!NOTE]
+   >
+   > Les variables et valeurs de requête doivent être correctement [encoded](#encoding-query-url) lors de l’exécution d’une requête persistante.
 
    Par exemple :
 
    ```xml
-   $ curl -X POST \
-       -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-       -H "Content-Type: application/json" \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-   
    $ curl -X GET \
-       "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters;apath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
+       "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/plain-article-query-parameters%3Bapath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fmagazine%2Falaska-adventure%2Falaskan-adventures%3BwithReference%3Dfalse
    ```
+
+   Voir Utilisation [variables de requête](#query-variables) pour plus d’informations.
+
+## Utilisation de variables de requête {#query-variables}
+
+Les variables de requête peuvent être utilisées avec les requêtes persistantes. Les variables de requête sont ajoutées à la requête précédée d’un point-virgule (`;`) à l’aide du nom et de la valeur de la variable. Plusieurs variables sont séparées par des points-virgules.
+
+Le modèle ressemble à ce qui suit :
+
+```
+<AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
+```
+
+Par exemple, la requête suivante contient une variable . `activity` pour filtrer une liste en fonction d’une valeur d’activité :
+
+```graphql
+query getAdventuresByActivity($activity: String!) {
+      adventureList (filter: {
+        adventureActivity: {
+          _expressions: [
+            {
+              value: $activity
+            }
+          ]
+        }
+      }){
+        items {
+          _path
+        adventureTitle
+        adventurePrice
+        adventureTripLength
+      }
+    }
+  }
+```
+
+Cette requête peut être conservée sous un chemin `wknd/adventures-by-activity`. Pour appeler la requête persistante où `activity=Camping` la requête ressemblerait à ceci :
+
+```
+<AEM_HOST>/graphql/execute.json/wknd/adventures-by-activity%3Bactivity%3DCamping
+```
+
+Notez que `%3B` est l’encodage UTF-8 pour `;` et `%3D` est l’encodage pour `=`. Les variables de requête et les caractères spéciaux doivent être [correctement encodé](#encoding-query-url) pour que la requête persistante s’exécute.
+
+## Encodage de l’URL de requête à utiliser par une application {#encoding-query-url}
+
+Pour une utilisation par une application, tout caractère spécial utilisé lors de la création de variables de requête (c’est-à-dire des points-virgules (`;`), signe égal (`=`), barres obliques `/`) doit être converti pour utiliser le codage UTF-8 correspondant.
+
+Par exemple :
+
+```xml
+curl -X GET \ "https://publish-p123-e456.adobeaemcloud.com/graphql/execute.json/wknd/adventure-by-path%3BadventurePath%3D%2Fcontent%2Fdam%2Fwknd%2Fen%2Fadventures%2Fbali-surf-camp%2Fbali-surf-camp"
+```
+
+L’URL peut être divisée en plusieurs parties :
+
+| Partie de l’URL | Description |
+|----------| -------------|
+| `/graphql/execute.json` | Point d’entrée de requête persistant |
+| `/wknd/adventure-by-path` | Chemin de requête persistant |
+| `%3B` | Encodage de `;` |
+| `adventurePath` | Variable de requête |
+| `%3D` | Encodage de `=` |
+| `%2F` | Encodage de `/` |
+| `%2Fcontent%2Fdam...` | Chemin codé vers le fragment de contenu |
+
+En texte brut, l’URI de requête ressemble à ce qui suit :
+
+```plaintext
+/graphql/execute.json/wknd/adventure-by-path;adventurePath=/content/dam/wknd/en/adventures/bali-surf-camp/bali-surf-camp
+```
+
+Pour utiliser une requête persistante dans une application cliente, le SDK client AEM sans interface utilisateur doit être utilisé pour [JavaScript](https://github.com/adobe/aem-headless-client-js), [Java](https://github.com/adobe/aem-headless-client-java)ou [NodeJS](https://github.com/adobe/aem-headless-client-nodejs). Le SDK client sans tête codera automatiquement toutes les variables de requête correctement dans la requête.
 
 ## Transfert d’une requête persistante vers votre environnement de production  {#transfer-persisted-query-production}
 
-En fin de compte, votre requête persistante doit se trouver dans votre environnement de publication de production (d’AEM as a Cloud Service), où elle peut être demandée par les applications clientes. Pour utiliser une requête persistante sur votre environnement de publication de production, l’arborescence persistante associée doit être répliquée :
+Les requêtes persistantes doivent toujours être créées sur un service AEM Author, puis publiées (répliquées) sur un service AEM Publish. Souvent, les requêtes persistantes sont créées et testées dans des environnements inférieurs tels que les environnements locaux ou de développement. Il est ensuite nécessaire de promouvoir les requêtes persistantes dans des environnements de niveau supérieur, ce qui rend ces requêtes disponibles dans un environnement de publication AEM de production pour que les applications clientes puissent les utiliser.
 
-* à l’auteur de production pour la validation du contenu nouvellement créé avec les requêtes,
-* enfin, publier la production pour la consommation réelle
+### Requêtes persistantes de package
 
-Il existe plusieurs méthodes pour transférer votre requête conservée :
+Les requêtes persistantes peuvent être intégrées à [AEM de modules](/help/implementing/developing/tools/package-manager.md). AEM les packages peuvent ensuite être téléchargés et installés dans différents environnements. Les modules AEM peuvent également être répliqués d’un environnement de création AEM vers des environnements de publication AEM.
 
-1. Utilisation d’un module :
-   1. Créez une définition de module.
-   1. Incluez la configuration (par exemple, `/conf/wknd/settings/graphql/persistentQueries`).
-   1. Créez le module.
-   1. Transférez le package (téléchargez/téléchargez ou répliquez).
-   1. Installez le package.
+Pour créer un module :
 
-1. Utilisation d’un POST pour la réplication :
+1. Accédez à **Outils** > **Déploiement** > **Packages**.
+1. Créez un module en appuyant sur **Créer un module**. Une boîte de dialogue s’ouvre alors pour définir le module.
+1. Dans la boîte de dialogue Définition de module, sous **Général** saisir une **Nom** comme &quot;wknd-persistent-requêtes&quot;.
+1. Saisissez un numéro de version du type &quot;1.0&quot;.
+1. Sous **Filtres** ajouter une nouvelle **Filtrer**. Utilisez l’outil de recherche de chemin pour sélectionner la variable `persistentQueries` sous la configuration. Par exemple, pour la variable `wknd` configuration Le chemin complet sera `/conf/wknd/settings/graphql/persistentQueries`.
+1. Appuyer **Enregistrer** pour enregistrer la nouvelle définition de module et fermer la boîte de dialogue.
+1. Appuyez sur le bouton **Build** dans la définition de package nouvellement créée.
 
-   ```xml
-   $ curl -X POST   http://localhost:4502/bin/replicate.json \
-   -H 'authorization: Basic YWRtaW46YWRtaW4=' \
-   -F path=/conf/wknd/settings/graphql/persistentQueries/plain-article-query \
-   -F cmd=activate
-   ```
+Une fois le module créé, vous pouvez :
+* **Télécharger** le package et effectuez un nouveau chargement sur un autre environnement.
+* **Répliquer** le module en appuyant sur **Plus** > **Répliquer**. Cela répliquera le module dans l’environnement de publication AEM connecté.
 
 <!--
 1. Using replication/distribution tool:
@@ -232,23 +319,3 @@ Il existe plusieurs méthodes pour transférer votre requête conservée :
 * Using a workflow (via workflow launcher configuration):
   1. Define a workflow launcher rule for executing a workflow model that would replicate the configuration on different events (for example, create, modify, amongst others).
 -->
-
-Une fois la configuration de la requête effectuée dans votre environnement de publication en production, les mêmes principes d’authentification s’appliquent, en utilisant simplement le point de terminaison de publication.
-
->[!NOTE]
->
->Pour un accès anonyme, le système suppose que l’ACL permet à « tout le monde » d’avoir accès à la configuration de la requête.
->
->Si ce n’est pas le cas, l’exécution sera impossible.
-
-## Encodage de l’URL de requête à utiliser par une application {#encoding-query-url}
-
-Pour une utilisation par une application, tout point-virgule (&quot;;&quot;) doit être codé dans les URL.
-
-Par exemple, comme dans la demande d’exécution d’une requête persistante :
-
-```xml
-curl -X GET \ "http://localhost:4502/graphql/execute.json/wknd/plain-article-query-parameters%3bapath=%2fcontent2fdam2fwknd2fen2fmagazine2falaska-adventure2falaskan-adventures;withReference=false"
-```
-
-Pour utiliser une requête persistante dans une application cliente, le SDK client AEM sans interface utilisateur doit être utilisé. [AEM client sans affichage pour JavaScript](https://github.com/adobe/aem-headless-client-js).
