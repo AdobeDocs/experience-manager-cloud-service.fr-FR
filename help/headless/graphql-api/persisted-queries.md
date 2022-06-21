@@ -3,7 +3,7 @@ title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 8a9cdc451a5da09cef331ec0eaadd5d3a68b1985
+source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 30%
@@ -308,6 +308,7 @@ Pour créer un module :
 1. Appuyez sur le bouton **Build** dans la définition de package nouvellement créée.
 
 Une fois le module créé, vous pouvez :
+
 * **Télécharger** le package et effectuez un nouveau chargement sur un autre environnement.
 * **Répliquer** le module en appuyant sur **Plus** > **Répliquer**. Cela répliquera le module dans l’environnement de publication AEM connecté.
 
