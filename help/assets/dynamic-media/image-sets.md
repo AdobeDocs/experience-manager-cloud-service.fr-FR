@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des visionneuses d’images dans Dynami
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 100%
+source-wordcount: '2155'
+ht-degree: 94%
 
 ---
 
@@ -28,6 +28,15 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >[!NOTE]
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/manage-digital-assets.md).
+
+Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
+
+| Ressource - Type de limite | Bonne pratique | Limite implémentée | Modifications apportées à la limite du 31 décembre 2022 |
+| --- | --- | --- | --- |
+| **Visionneuse d’images** - Nombre de ressources en double par ensemble | Aucun doublon | 100 | 20 |
+| **Visionneuse d’images** - Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 ## Démarrage rapide : Visionneuses d’images {#quick-start-image-sets}
 
@@ -126,6 +135,15 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 >[!NOTE]
 >
 >Les visionneuses d’images ne sont pas prises en charge pour les ressources dont le nom de fichier contient une virgule « , ».
+
+Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
+
+| Ressource - Type de limite | Bonne pratique | Limite implémentée | Modifications apportées à la limite du 31 décembre 2022 |
+| --- | --- | --- | --- |
+| **Visionneuse d’images** - Nombre de ressources en double par ensemble | Aucun doublon | 100 | 20 |
+| **Visionneuse d’images** - Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 **Pour créer une visionneuse d’images** :
 

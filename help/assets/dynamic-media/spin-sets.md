@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des visionneuses à 360° dans Dynamic�
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: b31fa5af7bcaa944d8bd7b0bb7d7b8deb36906a8
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '1847'
-ht-degree: 100%
+source-wordcount: '1927'
+ht-degree: 95%
 
 ---
 
@@ -24,6 +24,14 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 >[!NOTE]
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources à l’aide de l’interface utilisateur tactile](/help/assets/manage-digital-assets.md) et l’appliquer à un nouveau dossier dans lequel vos ressources de visionneuse d’images seront chargées.
+
+Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+
+| Type de limite | Bonne pratique | Limite implémentée |
+| --- | --- | --- |
+| Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 ## Démarrage rapide : Visionneuse à 360° {#quick-start-spin-sets}
 
@@ -108,6 +116,14 @@ Cette section décrit comment créer des visionneuses à 360°.
 >[!NOTE]
 >
 >L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a une importance. Veillez à les mettre dans le bon ordre afin que la rotation offre une vue à 360° parfaite.
+
+Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+
+| Type de limite | Bonne pratique | Limite implémentée |
+| --- | --- | --- |
+| Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 **Pour créer des visionneuses à 360° :**
 

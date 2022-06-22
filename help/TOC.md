@@ -7,9 +7,9 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d634c6f3707b0fef444e0e84945727b52d2ec2c6
+source-git-commit: 181a2d63972cc1d9d6c2a621771d28008114f763
 workflow-type: tm+mt
-source-wordcount: '3599'
+source-wordcount: '3602'
 ht-degree: 96%
 
 ---
@@ -423,6 +423,7 @@ ht-degree: 96%
       + [Gestion des ressources Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Prise en charge 3D](/help/assets/dynamic-media/assets-3d.md)
+      + [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
       + [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md)
       + [Images panoramiques](/help/assets/dynamic-media/panoramic-images.md)
       + [Visionneuses de médias mixtes](/help/assets/dynamic-media/mixed-media-sets.md)
@@ -715,11 +716,11 @@ ht-degree: 96%
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Notifications](/help/implementing/cloud-manager/notifications.md)
       + Certificats SSL {#manage-ssl-certificates}
-         + [Présentation ](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
+         + [Présentation](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          + [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
          + [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       + Noms de domaine personnalisés {#custom-domain-names}
-         + [Présentation ](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+         + [Présentation](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          + [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          + [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md)
          + [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md)

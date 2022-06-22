@@ -4,10 +4,10 @@ description: Découvrez comment créer des profils d’image Dynamic Media conte
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ee44aa9dd6b7977bfa5460ded4b02f1fcbc67096
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '3234'
-ht-degree: 100%
+source-wordcount: '3271'
+ht-degree: 98%
 
 ---
 
@@ -53,6 +53,14 @@ L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes
 L’accentuation est décrite dans [Accentuation des images](/help/assets/dynamic-media/assets/sharpening_images.pdf).
 
 ## Options de recadrage {#crop-options}
+
+Lorsque vous implémentez le recadrage intelligent sur les images, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+
+| Type de limite | Bonne pratique | Limite implémentée |
+| --- | --- | --- |
+| Nombre de recadrages intelligents par image | 5 | 100 |
+
+Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 <!-- CQDOC-16069 for the paragraph directly below -->
 

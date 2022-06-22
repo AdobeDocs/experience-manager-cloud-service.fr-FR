@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: cca950b0a4eed60f82d65779766405ed216111e3
+source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
-source-wordcount: '2492'
-ht-degree: 100%
+source-wordcount: '2522'
+ht-degree: 98%
 
 ---
 
@@ -135,6 +135,8 @@ Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, cons
 | **[!UICONTROL Ancre]** | Indiquez le mode d’ancrage des images dans les modèles qui sont générés à partir de la composition superposée produite à partir du fichier PSD. Par défaut, l’ancrage est au centre. Un ancrage au centre permet aux images de remplacement de remplir de manière optimale le même espace, quelles que soient les proportions de l’image de remplacement. Les images qui remplacent cette image et qui présentent un aspect différent occupent le même espace lorsque le modèle est référencé et le paramètre de substitution utilisé. Changez de paramètre si votre application exige que les images de remplacement occupent l’espace alloué dans le modèle. |
 
 ### Onglet PDF {#pdf-tab}
+
+Le nombre maximal de pages qu’un PDF peut envisager pour extraction est de 5 000 pour les nouveaux chargements. Cette limite passera à 100 pages le 31 décembre 2022. Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, définir la résolution et choisir un espace colorimétrique.
 
