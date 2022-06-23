@@ -4,7 +4,7 @@ description: Découvrez comment utiliser des visionneuses à 360° dans Dynamic�
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
 source-wordcount: '1927'
 ht-degree: 95%
@@ -27,7 +27,7 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 
 Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
-| Type de limite | Bonne pratique | Limite implémentée |
+| Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
 | Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
 
@@ -119,7 +119,7 @@ Cette section décrit comment créer des visionneuses à 360°.
 
 Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
-| Type de limite | Bonne pratique | Limite implémentée |
+| Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
 | Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
 

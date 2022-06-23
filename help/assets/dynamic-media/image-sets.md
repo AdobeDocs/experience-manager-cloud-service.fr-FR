@@ -4,10 +4,10 @@ description: Découvrez comment utiliser des visionneuses d’images dans Dynami
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
-source-wordcount: '2155'
-ht-degree: 94%
+source-wordcount: '2135'
+ht-degree: 95%
 
 ---
 
@@ -31,10 +31,10 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 
 Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
 
-| Ressource - Type de limite | Bonne pratique | Limite implémentée | Modifications apportées à la limite du 31 décembre 2022 |
-| --- | --- | --- | --- |
-| **Visionneuse d’images** - Nombre de ressources en double par ensemble | Aucun doublon | 100 | 20 |
-| **Visionneuse d’images** - Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+| Type de limite | Bonne pratique | Limite imposée |
+| --- | --- | --- |
+| Nombre de ressources en double par ensemble | Aucun doublon | 20 |
+| Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
@@ -138,10 +138,10 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
 
-| Ressource - Type de limite | Bonne pratique | Limite implémentée | Modifications apportées à la limite du 31 décembre 2022 |
-| --- | --- | --- | --- |
-| **Visionneuse d’images** - Nombre de ressources en double par ensemble | Aucun doublon | 100 | 20 |
-| **Visionneuse d’images** - Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+| Type de limite | Bonne pratique | Limite imposée |
+| --- | --- | --- |
+| Nombre de ressources en double par ensemble | Aucun doublon | 20 |
+| Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
