@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: cebeabc56ad3f55bae4ca5d51c7a630480b40577
+source-git-commit: 472a4311372ce9a01730f7ced6d4b26018aae4b9
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 95%
+source-wordcount: '993'
+ht-degree: 94%
 
 ---
 
@@ -72,10 +72,18 @@ Instructions de configuration :
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
 
-Après avoir obtenu le code `X-AEM-Edge-Key`, vous pouvez tester si la requête est correctement acheminée comme suit :
+Après avoir obtenu la variable `X-AEM-Edge-Key`, vous pouvez tester que la requête est correctement acheminée comme suit.
+
+Sous Linux :
 
 ```
-curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H 'X-Forwarded-Host: example.com' -H 'X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>'
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
+```
+
+Sous Windows:
+
+```
+curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
 Veuillez noter que lorsque vous utilisez votre propre réseau CDN, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau CDN Adobe sera effectué à l’aide du domaine par défaut `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
