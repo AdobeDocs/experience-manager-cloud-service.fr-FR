@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2525'
 ht-degree: 98%
 
 ---
@@ -136,7 +136,7 @@ Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, cons
 
 ### Onglet PDF {#pdf-tab}
 
-Le nombre maximal de pages qu’un PDF peut envisager pour extraction est de 5 000 pour les nouveaux chargements. Cette limite passera à 100 pages le 31 décembre 2022. Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Le nombre maximal de pages qu’un PDF peut envisager pour extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite sera de 100 pages (pour tous les PDF). Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, définir la résolution et choisir un espace colorimétrique.
 
