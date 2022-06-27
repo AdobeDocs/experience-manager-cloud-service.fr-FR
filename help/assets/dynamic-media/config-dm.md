@@ -3,10 +3,10 @@ title: Configuration de Dynamic Media Cloud Services
 description: Découvrez la configuration de Dynamic Media dans Adobe Experience Manager as a Cloud Service.
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 5512f5f22336916e66300b82aaff578df3e05b1d
+source-git-commit: fc07b12f7a35b4f772a0ac4f9e6b09a1287eec8b
 workflow-type: tm+mt
-source-wordcount: '3537'
-ht-degree: 94%
+source-wordcount: '3574'
+ht-degree: 93%
 
 ---
 
@@ -272,6 +272,9 @@ Voir [Chargement de ressources](/help/assets/add-assets.md).
 
 1. Connectez-vous à votre Experience Manager as a Cloud Service en tant qu’administrateur de produit.
 1. Dans Experience Manager as a Cloud Service, sélectionnez le logo Experience Manager as a Cloud Service pour accéder à la console de navigation globale, puis accédez à **[!UICONTROL Général > CRXDE Lite]**.
+
+   Si vous n’avez pas accès à CRXDE Lite, reportez-vous à la section [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+
 1. Dans le rail de gauche, accédez à ce qui suit :
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`
@@ -326,6 +329,8 @@ Vous pouvez ajouter des types de MIME personnalisés pour les formats non pris e
 
 1. Revenez à l’onglet du navigateur qui contient votre console Experience Manager as a Cloud Service.
 1. Dans Experience Manager as a Cloud Service, accédez à **[!UICONTROL Outils > Général > CRXDE Lite]**.
+
+   Si vous n’avez pas accès à CRXDE Lite, reportez-vous à la section [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md).
 
    ![Outils > Général > CRXDE Lite](assets/2019-08-02_16-55-41.png)
 
@@ -382,6 +387,8 @@ La file d’attente de workflows Granite est utilisée pour les workflows non tr
 >[!NOTE]
 >
 >Pour terminer cette tâche, vous devez être connecté à Experience Manager as a Cloud Service en tant qu’administrateur de produit.
+
+Si vous n’avez pas accès à OSGi, reportez-vous à la section [Configuration OSGi](/help/implementing/developing/components/overview.md#osgi-configuration).
 
 **Pour mettre à jour les threads de traitement de file d’attente de workflows Granite prédéfinis (ressources vidéo), procédez comme suit :**
 
