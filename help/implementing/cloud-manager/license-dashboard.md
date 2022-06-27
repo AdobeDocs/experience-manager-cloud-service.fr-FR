@@ -2,9 +2,9 @@
 title: Tableau de bord des licences
 description: Cloud Manager fournit un tableau de bord pour un affichage convivial des droits des produits AEMaaCS disponibles pour votre entreprise ou client.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
+source-git-commit: 5bf65238ce4d1f619507d9a5f8b7574e58352d51
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '782'
 ht-degree: 6%
 
 ---
@@ -57,13 +57,15 @@ Chaque section résume ce qui est disponible et comment il est actuellement util
 
 Une requête de contenu est une requête qui arrive dans AEM Sites ou tout système de mise en cache fourni par le client, tel qu’un réseau de diffusion de contenu, pour diffuser du contenu ou des données au format HTML sous la forme d’une page vue ou au format JSON sous la forme d’un appel API.
 
-Une demande de contenu est comptabilisée pour chaque page vue ou pour chaque cinq appels d’API, mesurés à l’entrée du premier système de mise en cache qui reçoit une demande de contenu.
+Une demande de contenu est comptabilisée pour chaque page vue ou pour chaque cinq appels d’API, mesurés à l’entrée du premier système de mise en cache qui reçoit une demande de contenu. Les demandes de contenu sont comptabilisées par rapport aux environnements de production uniquement.
 
 Les demandes de contenu excluent les demandes ou activités initiées par ou pour le compte d’Adobe dans le seul but de fournir des produits et des services. Le trafic des agents utilisateurs identifiés par l’Adobe provenant des robots, des robots d’indexation et des araignées associés aux moteurs de recherche et aux services de médias sociaux courants est également exclu.
 
 ### Comment Adobe Experience Manager mesure-t-il les demandes de contenu ? {#how-are-content-requests-measured}
 
-Les demandes de contenu sont suivies côté serveur dans Cloud Service. Le réseau de diffusion de contenu intégré à AEM as a Cloud Service effectue le suivi de HTMLS valides et de requêtes JSON. AEM a également mis en place des règles pour exclure les robots connus, notamment les services connus qui visitent régulièrement le site pour actualiser leur index ou service de recherche.
+Les demandes de contenu sont suivies sur les serveurs Edge d’AEM as a Cloud Service. Le trafic d’origine ne compte pas dans les demandes de contenu. Le réseau de diffusion de contenu intégré à AEM as a Cloud Service effectue le suivi de HTMLS valides et de requêtes JSON.
+
+AEM a également mis en place des règles pour exclure les robots connus, notamment les services connus qui visitent régulièrement le site pour actualiser leur index ou service de recherche.
 
 Voici une liste non exhaustive d’exemples de services connus exclus.
 
