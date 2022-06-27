@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: e51490a9422dab3cc4980eb1d2288d7c264343be
+source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 100%
+source-wordcount: '1987'
+ht-degree: 98%
 
 ---
 
@@ -98,7 +98,8 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * **Langue** – Langue de la page.
    * **Racine de la langue** – Cette option doit être activée si la page est la racine d’une copie de langue.
-   * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée.
+   * **Rediriger** – Indique la page vers laquelle cette page doit être automatiquement redirigée. avec un HTML `302 Found` statut.
+      * **Redirection permanente** - Lorsque cette case est cochée, la page redirige vers le chemin cible fourni avec un HTML. `301 Moved Permanently` statut.
    * **Conception** – Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
    * **Alias** – Indique un alias à utiliser avec cette page.
       * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
