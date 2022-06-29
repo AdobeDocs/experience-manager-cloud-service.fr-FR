@@ -4,10 +4,10 @@ description: Découvrez comment l’invalidation du contenu de réseau de diffus
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: cf7d844acb0158b543d575368e35cd1c2fc72fba
+source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
 workflow-type: tm+mt
-source-wordcount: '1313'
-ht-degree: 100%
+source-wordcount: '1384'
+ht-degree: 93%
 
 ---
 
@@ -17,9 +17,20 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de 
 
 >[!NOTE]
 >
->Cette fonctionnalité nécessite l’utilisation du réseau CDN prêt à l’emploi fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
+>Cette fonctionnalité nécessite l’utilisation du réseau de diffusion de contenu fourni par Adobe fourni avec Adobe Experience Manager Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
+
+Si vous avez activé [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md) sur votre compte et que vous utilisez le réseau de diffusion de contenu Adobe, vous pouvez purger toutes les URL avec différentes chaînes de requête en purgeant l’URL de base unique.
+
+Par exemple, invalidation `https://weekendsite.scene7.com/is/image/grundfos/image`, invalide également les URL suivantes :
+
+* `https://weekendsite.scene7.com/is/image/grundfos/image`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* et ainsi de suite.
+
+Cette invalidation, cependant, n’est pas le cas pour les domaines génériques qui ne prennent pas en charge l’imagerie dynamique, comme `s7d1.scene7.com`. Ces domaines ont toujours besoin de l’URL complète pour que l’invalidation fonctionne correctement.
 
 **Pour invalider le cache du réseau CDN au moyen de Dynamic Media :**
 
