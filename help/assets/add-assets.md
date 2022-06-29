@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1b68322b63fdbf8dab5a7dbd37dd1143f026c051
+source-git-commit: a715594f74187ad61cdea566274723d170fd3783
 workflow-type: tm+mt
-source-wordcount: '2948'
-ht-degree: 91%
+source-wordcount: '3029'
+ht-degree: 88%
 
 ---
 
@@ -155,6 +155,11 @@ Un compte ou un compartiment de stockage externe d’Azure ou d’AWS est néces
 >
 >Créez le conteneur ou le compartiment de compte de stockage comme privé et acceptez les connexions uniquement à partir de requêtes autorisées. Toutefois, des restrictions supplémentaires sur les connexions réseau entrantes ne sont pas prises en charge.
 
+>[!NOTE]
+>
+>Les comptes de stockage externes peuvent avoir des règles de nom de fichier/dossier différentes de celles de l’outil d’importation en bloc. Voir [Gestion des noms de fichier lors de l’importation en bloc](#filename-handling-bulkimport) pour plus d’informations sur les noms interdits/avec échappement.
+
+
 ### Configuration de l’outil d’importation en bloc {#configure-bulk-ingestor-tool}
 
 Pour configurer l’outil dʼimportation en bloc, procédez comme suit :
@@ -216,6 +221,15 @@ Sélectionnez la configuration et cliquez sur **[!UICONTROL Exécution dʼessai]
 Lorsque vous importez des ressources ou des dossiers en bloc, [!DNL Experience Manager Assets] importe toute la structure de ce qui existe dans la source d&#39;import. [!DNL Experience Manager] suit les règles indéfinies pour les caractères spéciaux dans les noms de ressources et de dossiers ; par conséquent, ces noms de fichier doivent être assainis. Pour les noms de dossier et de ressource, le titre défini par l’utilisateur reste inchangé et est stocké dans `jcr:title`.
 
 Lors de l’importation en masse, [!DNL Experience Manager] recherchez les dossiers existants pour éviter de réimporter les ressources et les dossiers et vérifiez également les règles d’assainissement appliquées dans le dossier parent où l’importation a lieu. Si les règles d’assainissement sont appliquées dans le dossier parent, les mêmes règles sont appliquées à la source d’importation. Pour un nouvel import, les règles d’assainissement suivantes sont appliquées pour gérer les noms de fichier des ressources et des dossiers.
+
+**Noms interdits dans l’importation en bloc**
+
+Les caractères suivants ne sont pas autorisés dans les noms de fichier et de dossier :
+
+* Caractères de contrôle et d’utilisation privée (0x00 à 0x1F, \u0081, \uE000)
+* Noms de fichiers ou de dossiers se terminant par un point (.)
+
+Les fichiers ou les dossiers dont les noms correspondent à ces conditions sont ignorés pendant le processus d’importation et marqués comme échoués.
 
 **Gestion du nom des ressources dans l’importation en bloc**
 
