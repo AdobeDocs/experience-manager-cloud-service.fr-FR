@@ -2,10 +2,10 @@
 title: Problèmes connus
 description: Problèmes connus liés à Adobe Experience Manager as a Cloud Service
 exl-id: 897b944a-d320-4d21-91f4-2cd3da6179b1
-source-git-commit: 8ec0ce3425e7cade0a6774a4452d4f47ab971375
+source-git-commit: 755c0072148ad73486df2ccfed69248b9d73ec2a
 workflow-type: tm+mt
-source-wordcount: '111'
-ht-degree: 100%
+source-wordcount: '177'
+ht-degree: 66%
 
 ---
 
@@ -17,9 +17,16 @@ Pour en savoir plus sur les problèmes connus ci-dessous, [contactez l’assista
 
 <!-- 
 ## Platform {#platform}
+-->
 
 ## Sites {#sites}
--->
+
+Certains problèmes connus dans [!DNL Sites] sont :
+
+* Dans l’IDE GraphQL, vous pouvez [gérer le cache de vos requêtes persistantes ;](/help/headless/graphql-api/graphiql-ide.md##managing-cache).
+   * Lors du premier enregistrement, les valeurs enregistrées pour les en-têtes sont définies sur `0` (au lieu des valeurs par défaut) : si l’utilisateur n’a pas modifié ces valeurs dans la boîte de dialogue.
+   * Lors des enregistrements suivants, les valeurs sont correctement enregistrées.
+   * Par conséquent, l’utilisateur doit enregistrer les en-têtes deux fois.
 
 ## [!DNL Assets] {#assets}
 

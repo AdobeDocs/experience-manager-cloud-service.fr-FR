@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2022.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
+source-git-commit: f42cf1b82f7cf42be2afd30d69d71354fe0afeb3
 workflow-type: tm+mt
-source-wordcount: '619'
-ht-degree: 27%
+source-wordcount: '573'
+ht-degree: 29%
 
 ---
 
@@ -55,17 +55,6 @@ Consultez la section [Présentation de la version d’avril 2022](https://video.
 
 * **Configurations du modèle de données de formulaire**: Vous pouvez désormais [réutilisation des configurations de modèle de données de formulaire dans les environnements](/help/forms/create-form-data-models.md#runmode-specific-context-aware-config), en simplifiant les intégrations de données et en réduisant les coûts informatiques.
 
-## Module complémentaire CIF {#cloud-services-cif}
-
-### Nouveautés {#what-is-new-cif}
-
-* Accès rapide au cockpit du produit : Accédez facilement à des informations détaillées sur les produits en un seul clic dans l’éditeur de sites.
-
-   ![Activer la liste bloquée](/help/assets/CIF/enable-wishlist.png)
-
-* Prise en charge de composants commerciaux marketing supplémentaires : Les composants peuvent être configurés pour afficher un appel à l’action de type &quot;ajouter au panier&quot; et &quot;ajouter à une liste de souhaits&quot;.
-
-   ![Raccourci de l’éditeur de sites vers le cockpit du produit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 

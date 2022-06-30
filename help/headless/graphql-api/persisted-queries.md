@@ -3,10 +3,10 @@ title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 6529b4b874cd7d284b92546996e2373e59075dfd
+source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 30%
+source-wordcount: '1311'
+ht-degree: 26%
 
 ---
 
@@ -55,7 +55,7 @@ Il est recommandé de conserver les requêtes dans un environnement de création
 
 Il existe différentes méthodes de requête persistante, notamment :
 
-* IDE GraphiQL - voir [Enregistrement des requêtes persistantes](/help/headless/graphql-api/graphiql-ide.md##saving-persisted-queries) (méthode préférée)
+* IDE GraphiQL - voir [Enregistrement des requêtes persistantes](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (méthode préférée)
 * curl - voir l’exemple suivant
 * Autres outils, notamment [Postman](https://www.postman.com/)
 
@@ -258,6 +258,45 @@ Cette requête peut être conservée sous un chemin `wknd/adventures-by-activity
 ```
 
 Notez que `%3B` est l’encodage UTF-8 pour `;` et `%3D` est l’encodage pour `=`. Les variables de requête et les caractères spéciaux doivent être [correctement encodé](#encoding-query-url) pour que la requête persistante s’exécute.
+
+## Mise en cache de vos requêtes persistantes {#caching-persisted-queries}
+
+Les requêtes persistantes sont recommandées, car elles peuvent être mises en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances de l’application cliente qui demande.
+
+Par défaut, AEM invalide le cache du réseau de diffusion de contenu (CDN) en fonction d’une durée de vie par défaut (TTL).
+
+Cette valeur est définie sur :
+
+* 7 200 secondes est la durée de vie par défaut du Dispatcher et du réseau de diffusion de contenu ; également connu sous le nom *caches partagés*
+   * default : s-maxage=7200
+* 60 est la durée de vie par défaut du client (par exemple, un navigateur).
+   * default : maxage=60
+
+Si vous souhaitez modifier la durée de vie de votre requête GraphLQ, la requête doit être :
+
+* persistante après la gestion de [En-têtes de cache HTTP - à partir de l’IDE GraphQL](#http-cache-headers)
+* persistante à l’aide de la fonction [méthode API](#cache-api).
+
+### Gestion des en-têtes de cache HTTP dans GraphQL  {#http-cache-headers-graphql}
+
+L’IDE GraphiQL - voir [Enregistrement des requêtes persistantes](/help/headless/graphql-api/graphiql-ide.md#managing-cache)
+
+### Gestion du cache à partir de l’API {#cache-api}
+
+Cela implique de publier la requête sur AEM à l’aide de CURL dans votre interface de ligne de commande.
+
+Par exemple :
+
+```xml
+curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "https://publish-p123-e456.adobeaemcloud.com/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
+Le `cache-control` peut être défini au moment de la création (PUT) ou ultérieurement (par exemple, via une demande de POST). Le contrôle du cache est facultatif lors de la création de la requête conservée, car AEM peut fournir la valeur par défaut. Voir [Comment conserver une requête GraphQL](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), par exemple pour conserver une requête à l’aide de curl.
 
 ## Encodage de l’URL de requête à utiliser par une application {#encoding-query-url}
 
