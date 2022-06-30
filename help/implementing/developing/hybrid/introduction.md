@@ -2,7 +2,7 @@
 title: Introduction et présentation des applications sur une seule page (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1984'
 ht-degree: 100%
@@ -177,7 +177,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
    ![JSON de la page d’accueil du projet SPA WKND](assets/wknd-json.png)
 
-   L’éditeur de SPA AEM exploite [AEM Content Services](/help/assets/content-fragments/content-fragments.md) pour diffuser l’intégralité du contenu de la page sous la forme d’un modèle JSON.
+   L’éditeur de SPA AEM exploite [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) pour diffuser l’intégralité du contenu de la page sous la forme d’un modèle JSON.
 
    En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à la SPA. La diffusion des données JSON est déléguée vers le bas à chaque composant (de la page, au paragraphe, au composant, etc.).
 

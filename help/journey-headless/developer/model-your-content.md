@@ -2,7 +2,7 @@
 title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement découplé AEM, apprenez à modéliser votre contenu pour une diffusion AEM découplée à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1830'
 ht-degree: 99%
@@ -270,10 +270,10 @@ Maintenant que vous avez appris à modéliser votre structure et à créer du co
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md) : page d’introduction pour les fragments de contenu.
-   * [Fragments de contenu dans l’explorateur de configurations](/help/assets/content-fragments/content-fragments-configuration-browser.md) : activez la fonctionnalité Fragment de contenu dans l’explorateur de configurations.
-   * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : création et modification de modèles de fragment de contenu
-   * [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) : conception et création de fragments de contenu ; cette page vous mènera à d’autres sections détaillées
+* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) : page d’introduction pour les fragments de contenu.
+   * [Fragments de contenu dans l’explorateur de configurations](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) : activez la fonctionnalité Fragment de contenu dans l’explorateur de configurations.
+   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) : création et modification de modèles de fragment de contenu
+   * [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md) : conception et création de fragments de contenu ; cette page vous mènera à d’autres sections détaillées
 * [Schéma AEM GraphQL](access-your-content.md) : méthode de GraphQL pour réaliser les modèles
 * [Exemple de structure de fragment de contenu](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [Prise en main d’AEM découplé](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=fr) – Une courte série de tutoriels vidéo qui donne un aperçu de l’utilisation des fonctionnalités d’AEM découplé, notamment la modélisation de contenu et GraphQL

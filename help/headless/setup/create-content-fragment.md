@@ -2,10 +2,10 @@
 title: Création de fragments de contenu - Configuration découplée
 description: Découvrez comment utiliser les fragments de contenu AEM pour concevoir, créer, organiser et utiliser du contenu indépendant des pages pour une diffusion découplée.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
-source-wordcount: '388'
-ht-degree: 100%
+source-wordcount: '348'
+ht-degree: 78%
 
 ---
 
@@ -25,24 +25,21 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 Les auteurs de contenu créeront tout nombre de fragments de contenu pour représenter le contenu qu’ils créent. Ce sera leur principale tâche dans AEM. Pour les besoins de ce guide de prise en main, nous n’aurons besoin d’en créer qu’un.
 
-1. Connectez-vous à AEM as a Cloud Service et dans le menu principal, sélectionnez **Navigation > Ressources**.
+1. Connectez-vous à AEM as a Cloud Service et, dans le menu principal, sélectionnez **Navigation** -> **Fragments de contenu**.
+
 1. Appuyez ou cliquez sur le [dossier que vous avez créé précédemment.](create-assets-folder.md)
-1. Appuyez ou cliquez sur **Créer > Fragment de contenu**.
-1. La création d’un fragment de contenu est présentée sous la forme d’un assistant en deux étapes. Commencez par sélectionner le modèle à utiliser pour créer votre fragment de contenu et appuyez ou cliquez sur **Suivant**.
+1. Appuyez ou cliquez sur **Créer**.
+1. La création d’un fragment de contenu est présentée sous la forme d’une boîte de dialogue.
+Sélectionnez l’emplacement et le modèle que vous souhaitez utiliser pour créer votre fragment de contenu.
+
    * Les modèles disponibles dépendent de la [**configuration du cloud** que vous avez définie pour le dossier de ressources](create-assets-folder.md) dans lequel vous créez le fragment de contenu.
-   * Si vous recevez le message `We could not find any models`, vérifiez la configuration de votre dossier de ressources.
+   * Si votre modèle n’est pas disponible, vérifiez la configuration de votre dossier de ressources.
 
-   ![Sélectionner un modèle de fragment de contenu](../assets/content-fragment-model-select.png)
-1. Définissez un **titre**, une **description** et des **balises** si nécessaire, puis appuyez ou cliquez sur **Créer**.
+   Ajoutez le titre, le nom et, si nécessaire, la description.
 
-   ![Créer un fragment de contenu](../assets/content-fragment-create.png)
-1. Appuyez ou cliquez sur **Ouvrir** dans la fenêtre de confirmation.
+   ![Boîte de dialogue Créer un fragment de contenu](/help/headless/content-fragments/assets/cfc-console-create.png)
 
-   ![Confirmation de création du fragment de contenu](../assets/content-fragment-confirmation.png)
-1. Fournissez les détails du fragment de contenu dans l’éditeur de fragment de contenu.
-
-   ![Éditeur de fragment de contenu](../assets/content-fragment-edit.png)
-1. Appuyez ou cliquez sur **Enregistrer** ou **Enregistrer et fermer**.
+1. Appuyez ou cliquez sur **Créer** ou  **Créer et ouvrir**.
 
 Les fragments de contenu peuvent faire référence à d’autres fragments de contenu, ce qui permet d’obtenir une structure de contenu imbriquée si nécessaire.
 
@@ -54,4 +51,4 @@ Maintenant que vous avez créé un fragment de contenu, vous pouvez passer à la
 
 >[!TIP]
 >
->Pour plus d’informations sur la gestion des fragments de contenu, voir la [documentation sur les fragments de contenu](/help/assets/content-fragments/content-fragments.md).
+>Pour plus d’informations sur la gestion des fragments de contenu, voir la [documentation sur les fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md).

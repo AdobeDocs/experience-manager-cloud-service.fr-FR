@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 03c5da7217a765e7a5254a4cb47bdc9d3c19b14b
+source-git-commit: df29eb83efc026bc7fc21dde228cdac47361282d
 workflow-type: tm+mt
-source-wordcount: '2954'
-ht-degree: 100%
+source-wordcount: '2993'
+ht-degree: 98%
 
 ---
 
@@ -73,6 +73,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
 | Fragments d’expérience | Un [fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) est une expérience autonome qui peut être réutilisée sur l’ensemble des canaux et qui présente des variations, ce qui vous évite de devoir copier et coller à plusieurs reprises des expériences ou des parties d’expériences. |
 | Assets | La console Ressources vous permet d’importer et de gérer des [ressources numériques telles que des images, des vidéos, des documents et des fichiers audio](/help/assets/overview.md). Ces ressources peuvent ensuite être utilisées par n’importe quel site s’exécutant sur la même instance AEM. Vous pouvez également créer et gérer des [fragments de contenu](/help/assets/content-fragments/content-fragments.md) à partir de la console Ressources. |
 | Personnalisation | Cette console propose un ensemble d’outils de [création de contenu ciblé et de présentation d’expériences personnalisées.](/help/sites-cloud/authoring/personalization/overview.md) |
+| Fragments de contenu | [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer du contenu structuré prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour la création de pages et la diffusion sans interface. |
 
 ## Panneau Outils {#tools-panel}
 

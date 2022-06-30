@@ -2,10 +2,10 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -474,4 +474,4 @@ Ce MarkDown est ensuite affiché dans la [console du composant.](/help/sites-clo
 
 ![README.md visible dans la console de composants](assets/components-documentation-console.png)
 
-Le MarkDown pris en charge est le même que pour les [fragments de contenu.](/help/assets/content-fragments/content-fragments.md)
+Le markdown pris en charge est le même que pour [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md).

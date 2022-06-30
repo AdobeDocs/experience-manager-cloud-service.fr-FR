@@ -2,7 +2,7 @@
 title: En savoir plus sur l’utilisation de références dans les fragments de contenu
 description: Découvrez comment utiliser des références dans des fragments de contenu pour du contenu, d’autres fragments et d’autres ressources (médias). Découvrez l’importance et le fonctionnement des fragments imbriqués pour la création CMS découplée.
 exl-id: a65e8a5a-954b-4307-8027-ca8bac5f4261
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '729'
 ht-degree: 100%
@@ -96,7 +96,7 @@ En utilisant la variable **Arborescence de la structure** de l’éditeur de fra
 >
 >À l’aide des chemins de navigation du panneau principal, vous pouvez revenir à votre point de départ.
 
-![Arborescence de la structure du fragment de contenu](/help/assets/content-fragments/assets/cfm-structuretree-02.png)
+![Arborescence de la structure du fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cfm-structuretree-02.png)
 
 ## Références ad hoc {#adhoc-references}
 
@@ -110,20 +110,20 @@ Maintenant que vous en savez plus sur les références et la structure dans les 
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md)
+* [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
-   * [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
+   * [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [Application de la configuration à votre dossier de ressources](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+      * [Application de la configuration à votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Création d’un fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
-   * [Variations – Création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md)
+      * [Création d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Variations – Création de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
-   * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
-      * [Modèles de fragment de contenu – Types de données](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
 
-      * [Modèles de fragment de contenu – Propriétés](/help/assets/content-fragments/content-fragments-models.md#properties)
+      * [Modèles de fragment de contenu – Propriétés](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
 
 * Guides de prise en main

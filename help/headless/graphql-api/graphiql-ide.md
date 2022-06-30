@@ -3,7 +3,7 @@ title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 6beef4cc3eaa7cb562366d35f936c9a2fc5edda3
+source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 3%
@@ -21,7 +21,7 @@ Une mise en oeuvre de la norme [GraphiQL](https://graphql.org/learn/serving-over
 >Dans les versions précédentes, un module était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut maintenant être supprimé.
 
 >[!NOTE]
->Vous devez avoir [configuration de vos points de fin](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/assets/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
+>Vous devez avoir [configuration de vos points de fin](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
 
 
 Le **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :

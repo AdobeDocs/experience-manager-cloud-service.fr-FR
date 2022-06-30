@@ -4,7 +4,7 @@ description: Découvrez comment configurer la structure d’intégration de trad
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 3c37b66b63ed19635854cf277aaf7d5f2a7c1fe8
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1522'
 ht-degree: 91%
@@ -109,7 +109,7 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
 | Traduire les balises | Activez cette propriété pour traduire les balises associées à la ressource. |
 | Exécuter automatiquement la traduction | Sélectionnez cette propriété pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier ou de définir la portée de la tâche de traduction. |
 | Désactiver la traduction mise à jour seule | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
-| Activation des champs de modèle de contenu pour la traduction | L’activation de cette option utilise la variable **Traductible** champ sur [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md#properties) pour déterminer si le champ est traduit et créé automatiquement [règles de traduction](rules.md) en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées. |
+| Activation des champs de modèle de contenu pour la traduction | L’activation de cette option utilise la variable **Traductible** champ sur [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) pour déterminer si le champ est traduit et créé automatiquement [règles de traduction](rules.md) en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées. |
 
 ## Configuration des pages pour la traduction {#configuring-pages-for-translation}
 

@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0f6546d4a25a59a93090952f0ee58e27f0f0f838
+source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
-source-wordcount: '3612'
-ht-degree: 96%
+source-wordcount: '3682'
+ht-degree: 93%
 
 ---
 
@@ -274,6 +274,20 @@ ht-degree: 96%
          + [Configuration de la segmentation avec ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Enregistrement, connexion et profil utilisateur](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
    + Administration {#administering}
+      + Fragments de contenu {#content-fragments}
+         + [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
+         + [Diffusion découplée avec des fragments de contenu et GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md)
+         + [Activation de la fonctionnalité de fragments de contenu pour votre instance](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
+         + [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
+         + [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)
+         + [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
+         + [Variations – création de contenu de fragment](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
+         + [Contenu associé à un fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md)
+         + [Métadonnées – propriétés des fragments](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
+         + [Fragments de contenu – considérations sur la suppression](/help/sites-cloud/administering/content-fragments/content-fragments-delete.md)
+         + [Texte (Markdown)](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
+         + [Arborescence de la structure](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
+         + [Aperçu – Représentation JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
       + Création de site {#site-creation}
          + [Création d’un site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Activation du pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -619,18 +633,18 @@ ht-degree: 96%
       + [Fragment de contenu](/help/headless/setup/create-content-fragment.md)
       + [Point d’entrée GraphQL](/help/headless/setup/create-api-request.md)
    + Fragments de contenu {#content-fragments}
-      + [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=fr)
+      + [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
       + [Console Fragments de contenu](/help/headless/content-fragments/content-fragment-console.md)
-      + [Modèles de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-models.html?lang=fr)
-      + [Gestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-managing.html?lang=fr)
+      + [Modèles de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
+      + [Gestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
       + Création{#authoring}
-         + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=fr)
-         + [Éditeur de texte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-markdown.html?lang=fr)
-         + [Contenu associé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-assoc-content.html?lang=fr)
-         + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=fr#managing-variations)
-      + [Métadonnées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-metadata.html?lang=fr)
-      + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-structure-tree.html?lang=fr)
-      + [Prévisualisation JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-json-preview.html?lang=fr)
+         + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
+         + [Éditeur de texte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
+         + [Contenu associé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
+         + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
+      + [Métadonnées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
+      + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
+      + [Prévisualisation JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
    + API GraphQL {#graphql-api}
       + [API GraphQL pour les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
       + [Gérer les points d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)

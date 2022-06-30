@@ -2,7 +2,7 @@
 title: Premiers pas vers votre première expérience d’utilisation d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 100%
@@ -149,6 +149,6 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de dé
 * [Guides AEM WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) : ce projet GitHub comprend des exemples d’applications qui mettent en évidence l’API AEM GraphQL.
 * [Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service](/help/overview/architecture.md) : un aperçu complet de l’architecture AEM.
 * [Configuration découplée](/help/headless/introduction.md#getting-started) : une présentation rapide des fonctionnalités découplées AEM pour les utilisateurs qui connaissent déjà AEM.
-* [Créer des modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : documentation technique sur les modèles de fragment de contenu.
-* [Créer des fragments de contenu](/help/assets/content-fragments/content-fragments.md) : documentation technique sur les fragments de contenu.
+* [Créer des modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md) : documentation technique sur les modèles de fragment de contenu.
+* [Créer des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) : documentation technique sur les fragments de contenu.
 * [Demander du contenu avec GraphQL](/help/headless/graphql-api/content-fragments.md) : documentation technique sur l’API GraphQL.

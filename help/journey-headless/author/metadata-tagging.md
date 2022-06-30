@@ -2,10 +2,10 @@
 title: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 description: En savoir plus sur la définition de métadonnées et de balisage pour les fragments de contenu
 exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 100%
+source-wordcount: '241'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment utili
 
 Vous pouvez utiliser trois méthodes pour ajouter des métadonnées et des balises :
 
-* Dès la création de votre fragment :
+* Lors de la première création de votre fragment (à partir de la fonction **Ressources** console) :
 
    ![Créer un fragment de contenu – Indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
@@ -44,8 +44,8 @@ Vous pouvez maintenant mettre toutes ces connaissances à profit et commencer à
 
 ## Ressources supplémentaires {#additional-resources}
 
-* [Métadonnées – propriétés des fragments](/help/assets/content-fragments/content-fragments-metadata.md)
+* [Métadonnées – propriétés des fragments](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md)
 
 * [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md)
 
-* [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+* [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
