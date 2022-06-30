@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de Cloud Manager 2022.6.0 dans Adobe Experience Manager as a Cloud Service
-description: Consultez les notes de mise à jour de Cloud Manager 2022.6.0 dans AEM as a Cloud Service.
+title: Notes de mise à jour de Cloud Manager 2022.7.0 dans Adobe Experience Manager as a Cloud Service
+description: Consultez les notes de mise à jour de Cloud Manager 2022.7.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1a6ca2647cc185ed0cb60fa75d2f5752e72f5715
+source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 24%
+source-wordcount: '200'
+ht-degree: 39%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager 2022.6.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notes de mise à jour de Cloud Manager 2022.7.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Cette page présente les notes de mise à jour de Cloud Manager 2022.6.0 dans AEM as a Cloud Service.
+Cette page présente les notes de mise à jour de Cloud Manager 2022.7.0 dans AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,25 +21,15 @@ Cette page présente les notes de mise à jour de Cloud Manager 2022.6.0 dans 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2022.6.0 de Cloud Manager dans AEM as a Cloud Service est le 9 juin 2022. La prochaine version est prévue pour le 30 juin 2022.
+La date de publication de la version 2022.7.0 de Cloud Manager dans AEM as a Cloud Service est le 30 juin 2022. La prochaine version est prévue pour le 11 août 2022.
 
 ## Nouveautés {#what-is-new}
 
-* L’interface utilisateur de Cloud Manager permet désormais [restauration de contenu en libre-service](/help/operations/backup.md) à un état connu de l’environnement cloud AEM.
-   * Cette fonctionnalité sera déployée par étapes au cours des semaines qui suivront la version 2022.06.0.
-* Une nouvelle carte de bienvenue sur la page d’entrée de Cloud Manager permet aux utilisateurs d’accéder rapidement aux tutoriels d’intégration et aux mesures de progression liées au client.
-   * Cette fonctionnalité sera déployée par étapes au cours de la semaine qui suivra la version 2022.06.0.
-* Les utilisateurs disposant des autorisations requises peuvent accéder à une nouvelle [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md) sur la page d’entrée de Cloud Manager pour afficher les détails des droits disponibles pour le client.
-   * AEM Sites est la première solution pour laquelle la disponibilité et la consommation d’utilisation sont diffusées via le tableau de bord Cloud Manager.
-   * Cette fonctionnalité sera déployée par étapes au cours des semaines qui suivront la version 2022.06.0.
-* [Nouvelle gestion des sous-comptes relatifs et des utilisateurs en libre-service](/help/implementing/cloud-manager/user-access-new-relic.md) est désormais disponible via l’interface utilisateur de Cloud Manager.
-   * Cette fonctionnalité sera déployée par étapes au cours des semaines qui suivront la version 2022.06.0.
-* Un nouveau widget GoLive sur la page d’accueil des programmes de production de Cloud Service fournit désormais des conseils pour préparer une expérience de mise en ligne réussie.
-* [La création d’artefacts peut désormais être réutilisée.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#build-artifact-reuse) lors de l’utilisation de la mise en miroir git.
+* Les utilisateurs de Cloud Manager peuvent désormais accéder à des tutoriels vidéo utiles à partir du **Bienvenue** à tout moment sur la landing page.
+* La fenêtre contextuelle **[Restaurer le contenu](/help/operations/backup.md)** de la page détails des environnements affiche désormais une liste pratique des commandes git permettant à l’utilisateur d’afficher les modifications localement.
 
-## Modifications d’API {#api-changes}
+## Correctifs {#bug-fixes}
 
-* Le [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) L’API a été abandonnée et [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) doit être utilisé à la place.
-   * `List Programs` continue de fonctionner, mais son utilisation génère des messages d’avertissement dans les journaux.
-   * Il ne sera plus pris en charge au bout de trois mois.
-
+* Les messages de retour dans l’interface utilisateur relatifs à la création d’un sous-compte Relic lors de la création du programme ont été améliorés.
+* Les utilisateurs peuvent désormais télécharger les journaux de test de l’interface utilisateur personnalisée à partir de l’interface utilisateur de Cloud Manager.
+* Correction d’un problème en raison duquel, après la validation d’un pipeline front-end, aucun appel n’était effectué pour exécuter l’étape de déploiement.
