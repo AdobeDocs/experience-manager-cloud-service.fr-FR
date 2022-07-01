@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version  [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de la version  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 081f7ed8c39382408285887928163e2569c5cbfe
+source-git-commit: d763bacb0844a438ebea6ef206dfa184a49993fe
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 4%
+source-wordcount: '397'
+ht-degree: 3%
 
 ---
 
@@ -15,17 +15,23 @@ La section suivante présente les notes générales de mise à jour pour [!DNL W
 
 ## Date de publication {#release-date}
 
-Date de publication de la dernière version 1.9.0 de [!DNL Workfront for Experience Manager enhanced connector] est le 16 juin 2022.
+Date de publication de la dernière version 1.9.1 d’ [!DNL Workfront for Experience Manager enhanced connector] est le 1er juillet 2022.
 
 ## Faits saillants des versions {#release-highlights}
 
-La dernière version de la variable [!DNL Workfront for Experience Manager enhanced connector] inclut le correctif de bogue suivant :
+La dernière version de la variable [!DNL Workfront for Experience Manager enhanced connector] comprend les améliorations et correctifs suivants :
 
-* Lorsque vous effectuez un téléchargement via un dossier lié ou que vous utilisez l’événement `Send To` action disponible dans Workfront pour charger des ressources vers Experience Manager as a Cloud Service, les ressources sont corrompues et ne peuvent pas être ouvertes dans Adobe Photoshop.
+* Ajout de la prise en charge de l’authentification entre les applications Experience Manager et Workfront à l’aide de la clé API Workfront pour les instances migrées vers Adobe IMS.
+
+* Lorsque vous liez des fichiers ou des dossiers externes, l’application Workfront affiche la variable `SERVER_ERROR` message d’erreur. Le message d’erreur fait référence à une exception non autorisée en raison d’une incohérence des clés API.
+
+* Lorsque vous exécutez un workflow Créer une tâche pour une ressource, l’exception Null Pointer s’affiche dans les messages du journal.
+
+* Lorsque vous activez la variable `Replace Spaces with DASH` l’option de configuration sous Paramètres avancés dans Experience Manager entraîne la création de dossiers en double dans Workfront.
 
 >[!IMPORTANT]
 >
->Adobe vous recommande de [mise à niveau vers la dernière version 1.9.0](../assets/update-workfront-enhanced-connector.md) de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe vous recommande de [mise à niveau vers la dernière version 1.9.1](../assets/update-workfront-enhanced-connector.md) de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problèmes connus {#known-issues}
 
@@ -34,6 +40,12 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 * Lorsque vous utilisez l’expérience Workfront classique, la variable **[!UICONTROL Envoyer à]** , disponible dans la variable **[!UICONTROL Plus]** la liste déroulante ne vous permet pas de sélectionner la destination cible dans Experience Manager. Le **[!UICONTROL Envoyer à]** fonctionne correctement avec l’option **[!UICONTROL Actions de document]** liste déroulante Le **[!UICONTROL Envoyer à]** fonctionne correctement pour **[!UICONTROL Plus]** liste déroulante et **[!UICONTROL Actions de document]** liste déroulante disponible dans la nouvelle expérience Workfront.
 
 ## Versions précédentes {#previous-releases}
+
+### Version de juin 2022 {#june-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] comprend désormais les mises à jour suivantes :
+
+* Lorsque vous effectuez un téléchargement via un dossier lié ou que vous utilisez l’événement `Send To` action disponible dans Workfront pour charger des ressources vers Experience Manager as a Cloud Service, les ressources sont corrompues et ne peuvent pas être ouvertes dans Adobe Photoshop.
 
 ### Version de mars 2022 {#march-2022-release}
 
