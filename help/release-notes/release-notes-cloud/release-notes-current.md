@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 9c76ff2e0b789894ef5492ee940ce79cddb47e11
+source-git-commit: 88506fd4538c55a880904ea37055eb97d4ae05b3
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 17%
+source-wordcount: '639'
+ht-degree: 18%
 
 ---
 
@@ -95,8 +95,6 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Nouveautés {#what-is-new-foundation}
-
-* AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
 
 * Comme indiqué dans les notes de mise à jour de mai (2022.5.0), l’option &quot;Ajouter une arborescence&quot; sous l’écran d’administration de l’agent de réplication **Distribuer** a été supprimé. Les modules avec une arborescence de contenu doivent plutôt être répliqués à l’aide de [Gérer la publication](/help/operations/replication.md#manage-publication) ou le [Publier l’arborescence de contenu](/help/operations/replication.md#manage-publication#publish-content-tree-workflow) workflow.
 
