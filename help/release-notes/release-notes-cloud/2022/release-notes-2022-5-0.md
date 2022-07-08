@@ -1,7 +1,7 @@
 ---
 title: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 9c76ff2e0b789894ef5492ee940ce79cddb47e11
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 21%
@@ -37,7 +37,7 @@ Regardez la vidéo Présentation de la version de mai 2022 pour un résumé des 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Sites] {#prerelease-features-sites}
 
 * Diverses fonctionnalités de GraphQL
-* A [nouvelle console](/help/headless/content-fragments/content-fragment-console.md) optimisé pour une utilisation sans affichage des fragments de contenu
+* A [nouvelle console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) optimisé pour une utilisation sans affichage des fragments de contenu
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 

@@ -2,7 +2,7 @@
 title: Création de fragments de contenu - Configuration découplée
 description: Découvrez comment utiliser les fragments de contenu AEM pour concevoir, créer, organiser et utiliser du contenu indépendant des pages pour une diffusion découplée.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 78%
@@ -37,7 +37,7 @@ Sélectionnez l’emplacement et le modèle que vous souhaitez utiliser pour cr�
 
    Ajoutez le titre, le nom et, si nécessaire, la description.
 
-   ![Boîte de dialogue Créer un fragment de contenu](/help/headless/content-fragments/assets/cfc-console-create.png)
+   ![Boîte de dialogue Créer un fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
 1. Appuyez ou cliquez sur **Créer** ou  **Créer et ouvrir**.
 
