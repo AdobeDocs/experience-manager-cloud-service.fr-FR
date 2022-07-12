@@ -2,7 +2,7 @@
 title: API obsolètes
 description: Notes de mise à jour dédiées aux API obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: d64e69e9662449e25cb12d7cdd415494cb6b6c7d
+source-git-commit: 9e84b57efef89613c7ddf7abec3e71d1d844ed30
 workflow-type: tm+mt
 source-wordcount: '1051'
 ht-degree: 95%
@@ -190,7 +190,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
     <td>Cette API interne Logback nʼest pas prise en charge par AEM as a Cloud Service.</td>
     <td>1/27/2022</td>
-    <td>3/24/2022</td>
+    <td>supprimée</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
