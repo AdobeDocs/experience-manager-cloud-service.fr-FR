@@ -1,13 +1,13 @@
 ---
 title: Qu’est-ce qu’un CMS sans affichage ?
 description: Découvrez le CMS sans affichage. Comment fonctionnent-ils ? Quelles sont les alternatives et les différences ? Pourquoi souhaitez-vous utiliser un CMS sans affichage ?
-source-git-commit: 35064ef7d9a4a3f2368667be02b11840b29d56f0
+exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
+source-git-commit: bd333d17f96e74227ac148be7164986ea11a0a23
 workflow-type: tm+mt
 source-wordcount: '754'
 ht-degree: 6%
 
 ---
-
 
 # Qu’est-ce qu’un CMS sans affichage ? {#what-is-a-headless-cms}
 

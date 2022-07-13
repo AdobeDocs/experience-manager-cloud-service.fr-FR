@@ -19,7 +19,7 @@ L’intégration d’AEM avec Adobe Target via l’API Target Standard nécessit
 >
 >La sélection de l’API repose sur la méthode d’authentification utilisée pour l’intégration AEM/Target.
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Avant de commencer cette procédure :
 

@@ -21,7 +21,7 @@ L’intégration d’Adobe Experience Manager as a Cloud Service (AEMaaCS) avec 
 >
 >Des informations supplémentaires sont également disponibles sous [Migration vers les API 2.0](https://developer.adobe.com/analytics-apis/docs/2.0/guides/migration/).
 
-## Conditions préalables {#prerequisites}
+## Prérequis {#prerequisites}
 
 Avant de commencer cette procédure :
 

@@ -10,7 +10,7 @@ ht-degree: 87%
 
 ---
 
-# Présentation  {#introduction}
+# Présentation {#introduction}
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] propose une solution Platform as a Service (PaaS) native au cloud pour que les entreprises puissent créer, gérer, publier et mettre à jour des formulaires numériques complexes tout en intégrant les données envoyées aux processus principaux, aux règles métier et en enregistrant les données dans un entrepôt de données externe. Le service est toujours à jour, toujours disponible et évolue sans cesse.
 

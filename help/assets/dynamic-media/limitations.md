@@ -1,13 +1,14 @@
 ---
 title: Limites de Dynamic Media
-description: 'Découvrez les bonnes pratiques et les limites appliquées lorsque vous créez une visionneuse d’images ou à 360° ou chargez un PDF. Découvrez également les combinaisons de navigateur web et de système d’exploitation non prises en charge pour les visionneuses Dynamic Media. '
+description: Découvrez les bonnes pratiques et les limites appliquées lorsque vous créez une visionneuse d’images ou à 360° ou chargez un PDF. Découvrez également les combinaisons de navigateur web et de système d’exploitation non prises en charge pour les visionneuses Dynamic Media.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/Dynamic-Media-Classic
 geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Viewers,Image Sets,Spin Sets,eCatalog
 role: User
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
+source-git-commit: 8eac5e9453e130e0b3c007132d4a11324feef8a8
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 6%

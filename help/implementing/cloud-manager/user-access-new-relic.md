@@ -14,7 +14,7 @@ ht-degree: 10%
 
 Découvrez le service de surveillance des performances de l’application New Relic One (APM) pour AEM as a Cloud Service et comment y accéder.
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
 Adobe met l’accent sur la surveillance, la disponibilité et les performances de votre application. AEM as a Cloud Service permet d’accéder à une suite de surveillance Nouvelle Relique Un personnalisée dans le cadre de l’offre de produits standard afin de garantir à vos équipes une visibilité maximale sur vos mesures de performances d’environnement et de système as a Cloud Service.
 

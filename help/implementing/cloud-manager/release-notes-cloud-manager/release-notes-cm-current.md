@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
 workflow-type: tm+mt
 source-wordcount: '200'
-ht-degree: 39%
+ht-degree: 53%
 
 ---
 
@@ -21,7 +21,7 @@ Cette page présente les notes de mise à jour de Cloud Manager 2022.7.0 dans 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2022.7.0 de Cloud Manager dans AEM as a Cloud Service est le 30 juin 2022. La prochaine version est prévue pour le 11 août 2022.
+La date de publication de la version 2022.7.0 de Cloud Manager dans AEM as a Cloud Service est le 30 juin 2022. La prochaine version est prévue pour le 11 août 2022.
 
 ## Nouveautés {#what-is-new}
 
@@ -32,4 +32,4 @@ La date de publication de la version 2022.7.0 de Cloud Manager dans AEM as a Clo
 
 * Les messages de retour dans l’interface utilisateur relatifs à la création d’un sous-compte Relic lors de la création du programme ont été améliorés.
 * Les utilisateurs peuvent désormais télécharger les journaux de test de l’interface utilisateur personnalisée à partir de l’interface utilisateur de Cloud Manager.
-* Correction d’un problème en raison duquel, après la validation d’un pipeline front-end, aucun appel n’était effectué pour exécuter l’étape de déploiement.
+* Correction d’un problème en raison duquel, après l’approbation d’un pipeline frontend, aucun appel n’était effectué pour exécuter l’étape de déploiement.

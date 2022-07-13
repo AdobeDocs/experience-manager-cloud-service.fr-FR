@@ -121,6 +121,7 @@ Pour afficher les rapports à partir de l’option de tendance, procédez comme 
    >Deux graphiques affichent les tendances suivantes :
    >1. **Tendance des résultats du rapport**
    >1. **Tendance de modèle et de composants personnalisés**
+
    >
    >Vous pouvez ajouter ou modifier la vue graphique à partir de la liste déroulante, comme illustré ci-dessous :
    >![image](/help/journey-migration/cloud-acceleration-manager/assets/reports-bpa1.png)
