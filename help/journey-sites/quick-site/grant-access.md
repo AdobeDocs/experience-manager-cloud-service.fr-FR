@@ -2,7 +2,7 @@
 title: Accorder l’accès au développeur front-end
 description: Intégrez les développeurs front-end à Cloud Manager afin qu’ils aient accès au référentiel Git et au pipeline de votre site AEM.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '785'
 ht-degree: 100%
@@ -104,4 +104,4 @@ Tirez parti de ces connaissances et poursuivez votre parcours de création rapid
 
 Bien qu’il soit recommandé de passer à la partie suivante du parcours de création rapide de site en consultant le document [Récupérer des informations dʼidentification du développeur front-end](retrieve-access.md), vous trouverez ci-après quelques ressources facultatives supplémentaires pour approfondir un certain nombre de concepts mentionnés dans ce document, bien qu’ils ne soient pas obligatoires pour poursuivre le parcours.
 
-* [Parcours d’intégration](/help/journey-onboarding/home.md) : ce guide sert de point de départ pour vous assurer que vos équipes sont configurées et disposent dʼun accès à AEM as a Cloud Service.
+* [Parcours d’intégration](/help/journey-onboarding/overview.md) : ce guide sert de point de départ pour vous assurer que vos équipes sont configurées et disposent dʼun accès à AEM as a Cloud Service.

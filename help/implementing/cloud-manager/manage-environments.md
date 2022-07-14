@@ -2,10 +2,10 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 71647239fc5e740faa25524a01a8ef21ed2d7a3b
+source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -52,7 +52,7 @@ Les fonctionnalités de chaque environnement dépendent des solutions activées 
 1. Dans la boîte de dialogue **Ajouter un environnement** qui s’affiche :
 
    * Sélectionnez un **type d’environnement**.
-      * Le nombre d’environnements disponibles/utilisés est indiqué entre parenthèses derrière le type d’environnement Développement.
+      * Le nombre d’environnements disponibles/utilisés est indiqué entre parenthèses derrière le type Environnement de développement .
    * Fournissez un **Nom de l’environnement**.
    * Fournissez une **Description de l’environnement**.
    * Sélectionnez une **Région Cloud**.

@@ -3,7 +3,7 @@ title: Parcours de documentation AEM
 description: Les parcours de documentation fournissent une structure narrative à la documentation AEM en synthétisant des fonctionnalités complexes et disparates afin de résoudre un objectif commercial en respectant les bonnes pratiques. Conçu pour les débutants dans AEM, les parcours présentent les concepts et les fonctionnalités permettant d’atteindre un objectif, étape par étape.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: c3b8a45f27b7863cb5d1ea7af1f35675ac04b456
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '1352'
 ht-degree: 100%
@@ -90,7 +90,7 @@ Plusieurs parcours de documentation sont déjà disponibles. Puisque chaque parc
 | [Parcours de création découplée](/help/journey-headless/author/overview.md) | Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. |
 | [Parcours d’architecture découplée](/help/journey-headless/architect/overview.md) | Faites vos premiers pas avec cette introduction sur les fonctionnalités puissantes, flexibles et découplées d’Adobe Experience Manager as a Cloud Service et comment modéliser le contenu de votre projet. |
 | [Parcours de traduction découplée](/help/journey-headless/translation/overview.md) | Commencez ici pour découvrir comment configurer et gérer vos projets de traduction découplée dans AEM. |
-| [Parcours d’intégration à AEM](/help/journey-onboarding/home.md) | Découvrez ici comment être rapidement opérationnel avec votre nouvel environnement AEM as a Cloud Service ! |
+| [Parcours d’intégration à AEM](/help/journey-onboarding/overview.md) | Découvrez ici comment être rapidement opérationnel avec votre nouvel environnement AEM as a Cloud Service ! |
 | [Parcours de création rapide de site AEM](/help/journey-sites/quick-site/overview.md) | Découvrez ici un parcours guidé à travers l’outil de création rapide de site AEM. Simple à utiliser, il vous permet de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement votre site sans aucune connaissance du serveur principal AEM. |
 | Parcours AEM Commerce | Bientôt disponible |
 | [Parcours de migration d’AEM as a Cloud Service](/help/journey-migration/getting-started.md) | Découvrez ici un parcours détaillé sur la migration de votre installation AEM on-premise ou gérée par Adobe vers AEM as a Cloud Service entièrement basé sur le cloud et découvrez ses nombreux avantages. |

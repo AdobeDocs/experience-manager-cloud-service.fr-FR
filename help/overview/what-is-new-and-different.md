@@ -2,10 +2,10 @@
 title: Nouveautés et différences – Adobe Experience Manager as a Cloud Service
 description: Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 7665bc1a27eec6474c1f21c61ac9cf444cf3d443
+source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '1897'
-ht-degree: 96%
+source-wordcount: '1904'
+ht-degree: 95%
 
 ---
 
@@ -123,11 +123,7 @@ Cloud Manager a évolué sous la forme d’un portail en libre-service où les p
 Cloud Manager crée des environnements dans les centres de données dans de nombreuses régions géographiques, ce qui permet une couverture mondiale. Les points de présence CDN (PoP) assurent une diffusion de contenu à faible latence pour les clients du monde entier.
 
 
-## Intégration {#onboarding}
-
->[!NOTE]
->
->Pour plus de détails, voir [Intégration](/help/onboarding/home.md).
+## Intégration  {#onboarding}
 
 Le démarrage et la gestion d’un projet AEM sont simples avec AEM as a Cloud service, car Adobe est responsable de nombreux aspects :
 
@@ -150,6 +146,10 @@ Les opérations sont également très différentes du fait des éléments suivan
    * Mises à jour du code ; toutes les applications client développées pour une version précédente d’AEM devront être examinées et éventuellement mises à jour.
 
    * Migration du contenu
+
+>[!TIP]
+>
+>Pour obtenir un aperçu complet du processus d’intégration, reportez-vous à la section [parcours d’intégration.](/help/journey-onboarding/overview.md)
 
 ## Développement {#developing}
 
@@ -273,6 +273,6 @@ Pour plus d’informations, voir :
 
 >[!TIP]
 >
->Une fois que vous disposez d’une vue d’ensemble d’AEM as a Cloud Service, vous pouvez rapidement vous y intégrer en examinant le [Parcours d’intégration](/help/journey-onboarding/home.md).
+>Une fois que vous disposez d’une vue d’ensemble d’AEM as a Cloud Service, vous pouvez rapidement vous y intégrer en examinant le [Parcours d’intégration](/help/journey-onboarding/overview.md).
 >
 >Votre intégration est déjà faite ou vous êtes prêt à tester les fonctionnalités d’AEM ? Installez le [Module complémentaire des démonstrations de référence d’AEM](/help/journey-sites/demos-add-on/overview.md) pour explorer les fonctionnalités puissantes d’AEM à l’aide d’exemples enrichis.
