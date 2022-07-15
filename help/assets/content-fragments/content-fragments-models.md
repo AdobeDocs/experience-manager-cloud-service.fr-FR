@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de fragment de contenu constituent 
 feature: Content Fragments
 role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
-source-wordcount: '2894'
-ht-degree: 95%
+source-wordcount: '2890'
+ht-degree: 94%
 
 ---
 
@@ -75,7 +75,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
          >[!CAUTION]
          >
-         >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères latins, des chiffres et le trait de soulignement « _ » parmi les caractères spéciaux.
+         >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que les caractères A-Z, a-z, 0-9 et le trait de soulignement &quot;_&quot; comme caractères spéciaux.
          >
          >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
       Par exemple :
@@ -141,7 +141,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
 * **Nom de la propriété**
 
-   Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **ne** doivent contenir *que* des caractères latins, des chiffres et des traits de soulignement « _ » parmi les caractères spéciaux.
+   Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **must** contain *only* A-Z, a-z, 0-9 et trait de soulignement &quot;_&quot; comme caractère spécial.
 
    >[!CAUTION]
    >
