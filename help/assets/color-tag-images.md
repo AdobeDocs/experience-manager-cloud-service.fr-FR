@@ -2,10 +2,10 @@
 title: Balises de couleur pour les images
 description: Experience Manager Assets permet de distinguer les couleurs d’une image et de les appliquer automatiquement sous forme de balises. Vous pouvez ensuite utiliser ces balises pour rechercher et filtrer des images.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: d8fb661be15a1505714e3def8a729a9c5c04616c
+source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 13%
+source-wordcount: '1195'
+ht-degree: 11%
 
 ---
 
@@ -16,10 +16,6 @@ ht-degree: 13%
 Experience Manager Assets utilise les fonctionnalités d’Adobe Sensei AI pour distinguer les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion. Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image.
 
 Vous pouvez configurer le nombre de couleurs, comprises entre 1 et 4, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs. Experience Manager Assets applique les balises en fonction de la couverture colorimétrique d’une image. Vous pouvez également configurer le format d’affichage d’une balise de couleur.
-
->[!NOTE]
->
->Cette fonctionnalité est disponible dans le canal de version préliminaire. Pour plus d’informations sur l’activation de cette fonctionnalité dans votre environnement, consultez la [documentation sur les canaux de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr#enable-prerelease).
 
 La figure suivante illustre l’ordre des tâches que vous effectuez pour configurer et gérer le balisage colorimétrique des images dans Experience Manager Assets :
 
