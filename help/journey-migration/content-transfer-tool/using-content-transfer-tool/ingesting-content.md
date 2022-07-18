@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 05765bdaa681502b60fc5a7c943e2265c09764ec
+source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 44%
+source-wordcount: '908'
+ht-degree: 34%
 
 ---
 
@@ -44,8 +44,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    >[!IMPORTANT]
    >
-   >Vous ne pourrez déclencher une ingestion dans l’environnement de destination que si vous appartenez au **Administrateurs AEM** dans l’instance de Cloud Service où vous transférez du contenu. Si vous n’appartenez pas au groupe d’administrateurs AEM, une erreur s’affiche, comme illustré ci-dessous lorsque vous essayez de démarrer une ingestion.
-   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam21.png)
+   >Vous ne pourrez déclencher une ingestion dans l’environnement de destination que si vous appartenez au **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
 
    >[!IMPORTANT]
    >
@@ -103,7 +102,25 @@ Pour ce faire, créez une tâche d’ingestion et assurez-vous que **Wipe** est 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
+## Résolution des problèmes {#troubleshooting}
 
+### Impossible de récupérer le jeton de migration du CAM {#cam-unable-to-retrieve-the-migration-token}
+
+La récupération automatique du jeton de migration peut échouer pour différentes raisons, y compris vous. [configuration d’une liste autorisée IP via Cloud Manager](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) dans l’environnement du Cloud Service cible.  Dans ce cas, la boîte de dialogue suivante s’affiche lorsque vous tentez de démarrer une ingestion :
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/troubleshooting-token.png)
+
+Vous devez récupérer manuellement le jeton de migration en cliquant sur le lien &quot;Obtenir le jeton&quot; dans la boîte de dialogue. Un autre onglet s’ouvre, qui affiche le jeton. Vous pouvez ensuite copier le jeton et le coller dans le **Entrée du jeton de migration** champ . Maintenant, vous devriez être en mesure de commencer l’ingestion.
+
+>[!NOTE]
+>
+>Le jeton sera disponible pour les utilisateurs qui appartiennent au **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination.
+
+### Impossible de démarrer l’ingestion {#unable-to-start-ingestion}
+
+Vous ne pourrez déclencher une ingestion dans l’environnement de destination que si vous appartenez au **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination. Si vous n’appartenez pas au groupe d’administrateurs AEM, une erreur s’affiche, comme illustré ci-dessous lorsque vous essayez de démarrer une ingestion. Vous pouvez demander à votre administrateur de vous ajouter au fichier local. **Administrateurs AEM** ou demandez le jeton lui-même, que vous pouvez ensuite coller dans le **Entrée du jeton de migration** champ .
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
 ## Prochaines étapes {#whats-next}
 
