@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 5791410fd5956cd8b82d4ed03f3920ade3bfedcb
+source-git-commit: b79752c43cd9907236b511aa1be60b5b2256a7b8
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 91%
+source-wordcount: '1259'
+ht-degree: 88%
 
 ---
 
@@ -172,6 +172,9 @@ Si vous ne fournissez pas un tel filtre et n’utilisez que l’agent « publis
 
 L’ensemble `ReplicationStatus` d’une ressource n’est modifié que si l’action de réplication comprend au moins un agent principal par défaut. Dans l’exemple ci-dessus, ce n’est pas le cas, car la réplication utilise uniquement l’agent « preview ». Vous devez donc utiliser la nouvelle méthode `getStatusForAgent()`, qui permet d’interroger le statut d’un agent spécifique. Cette méthode fonctionne également pour l’agent « publish ». Elle renvoie une valeur non nulle si une action de réplication a été effectuée à l’aide de l’agent fourni.
 
+### Méthodes d’invalidation de contenu {#invalidating-content}
+
+Vous pouvez directement invalider le contenu à l’aide de l’invalidation du contenu Sling (SCD) de l’auteur (méthode préférée) ou en utilisant l’API de réplication pour appeler l’agent de réplication de vidage du dispatcher de publication. Reportez-vous à la section [Mise en cache](/help/implementing/dispatcher/caching.md) pour plus d’informations.
 
 **Limites de capacité de l’API de réplication**
 
@@ -179,6 +182,7 @@ Il est recommandé de répliquer moins de 100 chemins à la fois, 500 étant la 
 Si la logique de votre application ne nécessite pas de réplication atomique, cette limite peut être dépassée en définissant la variable `ReplicationOptions.setUseAtomicCalls` sur false, qui accepte n’importe quel nombre de chemins, mais crée en interne des compartiments pour rester en dessous de cette limite.
 
 La taille du contenu transmis par appel de réplication ne doit pas dépasser `10 MB`. Cela inclut les noeuds et les propriétés, mais pas les fichiers binaires (les modules de workflow et les modules de contenu sont considérés comme des fichiers binaires).
+
 
 ## Résolution des problèmes {#troubleshooting}
 
