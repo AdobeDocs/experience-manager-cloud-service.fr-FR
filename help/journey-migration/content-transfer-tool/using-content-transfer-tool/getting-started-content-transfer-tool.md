@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: e7e3ec89d5e7b43b8c6dfb10f5dc966768ab0af1
+source-git-commit: 7bebdff5095786005d5c4c91b7b699d71f9813a7
 workflow-type: tm+mt
-source-wordcount: '1242'
-ht-degree: 57%
+source-wordcount: '1341'
+ht-degree: 56%
 
 ---
 
@@ -44,6 +44,18 @@ Pour tester la connectivité à l’environnement AEM as a Cloud Service cib
 
 >[!NOTE]
 >Si vous recevez un `HTTP/2 200`, la connexion à AEM as a Cloud Service a réussi.
+
+### Activation de la journalisation SSL {#enable-ssl-logging}
+
+Comprendre les problèmes de connexion SSL/TLS peut parfois être difficile. Pour résoudre les problèmes de connexion lors d’un processus d’extraction, vous pouvez activer la journalisation SSL via la console système de l’environnement d’AEM source en procédant comme suit :
+
+1. Accédez à la console web Adobe Experience Manager sur votre instance source en accédant à **Outils - Opérations - Console web** ou directement à l’URL à l’adresse *https://serveraddress:serverport/system/console/configMgr*
+1. Recherchez **Configuration du service d’extraction de l’outil de transfert de contenu**
+1. Utilisez le bouton représentant un crayon pour modifier ses valeurs de configuration.
+1. Activez la variable **Activation de la journalisation SSL pour l’extraction** , puis appuyez sur **Enregistrer**:
+
+   ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
+
 
 ## Exécution de l’outil de transfert de contenu {#running-tool}
 
