@@ -3,9 +3,9 @@ title: Prise en charge des fragments de contenu d’Adobe Experience Manager as
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: ad51218652d3e7fbe90abb1fc02cce7212394c21
+source-git-commit: cf8c8353d83e4446f52235a2ea1a322a84786b61
 workflow-type: tm+mt
-source-wordcount: '1951'
+source-wordcount: '1761'
 ht-degree: 100%
 
 ---
@@ -255,47 +255,6 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 >[!NOTE]
 >
 >Pour plus d’informations, voir la [Référence d’API](/help/assets/content-fragments/assets-api-content-fragments.md#api-reference). En particulier, [API Adobe Experience Manager Assets – Fragments de contenu](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/assets-api-content-fragments/index.html).
-
-### Lecture/Diffusion {#read-delivery}
-
-Mode d’utilisation :
-
-`GET /{cfParentPath}/{cfName}.json`
-
-Par exemple :
-
-`http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
-
-La réponse est un JSON sérialisé avec le contenu structuré comme dans le fragment de contenu. Les références sont diffusées en tant qu’URL de référence.
-
-Deux types d’opérations de lecture sont possibles :
-
-* Lecture d’un fragment de contenu spécifique par chemin, ce qui renvoie la représentation JSON du fragment de contenu.
-* Lecture d’un dossier de fragments de contenu par chemin : cela renvoie les représentations JSON de tous les fragments de contenu du dossier.
-
-### Créer {#create}
-
-Mode d’utilisation :
-
-`POST /{cfParentPath}/{cfName}`
-
-Le corps doit contenir une représentation JSON du fragment de contenu à créer, notamment tout contenu initial devant être défini sur les éléments de fragment de contenu. Il est obligatoire de définir la propriété `cq:model`, qui doit pointer vers un modèle de fragment de contenu valide. Sans cela, il se produira une erreur. Il est également nécessaire d’ajouter un en-tête `Content-Type`, défini sur `application/json`.
-
-### Mettre à jour {#update}
-
-Mode d’utilisation :
-
-`PUT /{cfParentPath}/{cfName}`
-
-Le corps doit contenir une représentation JSON de ce qui doit être mis à jour pour le fragment de contenu donné.
-
-Il peut simplement s’agir du titre ou de la description d’un fragment de contenu, d’un élément unique ou de toutes les valeurs et/ou métadonnées d’un élément.
-
-### Supprimer {#delete}
-
-Mode d’utilisation :
-
-`DELETE /{cfParentPath}/{cfName}`
 
 ## Limites {#limitations}
 
