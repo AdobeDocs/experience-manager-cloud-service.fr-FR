@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 288c80a3819ff148834824cc33d6deefbd3f0605
+source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
 workflow-type: tm+mt
-source-wordcount: '2535'
-ht-degree: 87%
+source-wordcount: '2251'
+ht-degree: 85%
 
 ---
 
@@ -280,17 +280,7 @@ Si un index doit être supprimé dans une version ultérieure de l’application
 
 S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, vous devez copier la définition d’index prête à l’emploi. Par exemple, si vous avez déjà déployé `damAssetLucene-8-custom-3`, mais que vous n’avez plus besoin des personnalisations et que vous souhaitez revenir à l’index `damAssetLucene-8` par défaut, vous devez ajouter un index `damAssetLucene-8-custom-4` contenant la définition d’index de `damAssetLucene-8`.
 
-## Optimisations des index {#index-optimizations}
+## Optimisations des index et des requêtes {#index-query-optimizations}
 
-Apache Jackrabbit Oak offre des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels les plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de nœuds qui sont ensuite consignés en tant qu’avertissements. De telles requêtes doivent être identifiées en analysant les fichiers journaux, de sorte que les définitions d’index puissent être optimisées. Pour plus d’informations, consultez [cette page](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/practices/best-practices-for-queries-and-indexing.html?lang=fr#tips-for-creating-efficient-indexes).
-
-### Index de texte intégral Lucene dans AEM as a Cloud Service {#index-lucene}
-
-L’index de texte intégral `/oak:index/lucene-2` peut devenir très volumineux, car il indexe par défaut tous les nœuds du référentiel AEM. Adobe ayant prévu de supprimer cet index, il ne sera plus utilisé côté produit dans AEM as a Cloud Service et il ne devrait plus être nécessaire d’exécuter le code client. Pour les environnements AEM as a Cloud Service dotés d’index Lucene courants, Adobe travaille avec chacun des ses clients pour suivre une approche coordonnée afin de compenser cet index et d’utiliser des versions optimisées et améliorées de ces index. Aucune action n’est requise de la part clients sans autre préavis de la part d’Adobe. Les clients AEM as a Cloud Service seront informés par Adobe si une action devient nécessaire concernant cette optimisation. Si cet index est requis pour les requêtes personnalisées, la solution temporaire est de créer une copie de cet index avec un nom différent, par exemple : `/oak:index/acme.lucene-1-custom-1`, comme décrit [ici](/help/operations/indexing.md).
-Cette optimisation ne s’applique pas par défaut aux autres environnements AEM hébergés sur site ou gérés par Adobe Managed Services.
-
-## Optimisations des requêtes {#index-query}
-
-L’outil **Performance des requêtes** vous permet d’observer les requêtes JCR à la fois populaires et lentes. De plus, il permet d’analyser les requêtes et d’afficher diverses informations, notamment si un index est utilisé ou non pour cette requête.
-
-Contrairement à AEM on-premise, AEM as a Cloud Service n’affiche pas l’outil **Performance des requêtes** dans l’interface utilisateur. Il est désormais disponible dans Developer Console (dans Cloud Manager) dans l’onglet [Queries](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr#queries) (Requêtes).
+Apache Jackrabbit Oak offre des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels les plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de nœuds qui sont ensuite consignés en tant qu’avertissements.
+Veuillez consulter [cette page](best-practices-for-querying-and-indexing.md) sur la manière dont les requêtes et les index peuvent être optimisés.
