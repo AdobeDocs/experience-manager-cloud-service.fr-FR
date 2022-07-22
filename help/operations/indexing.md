@@ -2,9 +2,9 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 21c5de77ca5e5ca2b6541212ff50e747bbd00100
+source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
-source-wordcount: '2251'
+source-wordcount: '2253'
 ht-degree: 85%
 
 ---
@@ -283,4 +283,5 @@ S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, v
 ## Optimisations des index et des requêtes {#index-query-optimizations}
 
 Apache Jackrabbit Oak offre des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels les plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de nœuds qui sont ensuite consignés en tant qu’avertissements.
-Veuillez consulter [cette page](best-practices-for-querying-and-indexing.md) sur la manière dont les requêtes et les index peuvent être optimisés.
+
+Veuillez consulter [ce document](query-and-indexing-best-practices.md) pour plus d’informations sur la manière dont les requêtes et les index peuvent être optimisés.
