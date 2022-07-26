@@ -4,10 +4,10 @@ description: Découvrez comment activer certaines fonctionnalités de fragments 
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 78448aafa1b397f9131c12ab2afd74b05ae53e66
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 79%
+source-wordcount: '371'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ Découvrez comment activer certaines fonctionnalités de fragments de contenu da
 Avant d’utiliser les fragments de contenu, vous devez utiliser l’**Explorateur de configurations** pour activer les éléments suivants :
 
 * **Modèles de fragment de contenu** – obligatoire
-* **Requêtes persistantes GraphQL** – facultatif
+* **Requêtes persistantes GraphQL** - facultatif
 
 >[!CAUTION]
 >
@@ -63,6 +63,9 @@ Pour [utiliser certaines fonctionnalités de fragments de contenu,](#creating-a-
 1. Utilisez le bouton **Créer** pour ouvrir la boîte de dialogue.
 
    1. Spécifiez un **Titre**.
+   1. Le **Nom** devient le nom du nœud dans le référentiel.
+      * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Vous pouvez l’ajuster si nécessaire.
    1. Pour activer leur utilisation, sélectionnez
       * **Modèles de fragment de contenu**
       * **Requêtes persistantes GraphQL**

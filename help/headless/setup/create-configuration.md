@@ -2,10 +2,10 @@
 title: Création d’une configuration - Configuration découplée
 description: Créez une configuration comme première étape de prise en main d’AEM as a Cloud Service en mode découplé.
 exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: e81b852dc90e3cc5abc8b9f218f48d0fc1cc66eb
+source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -43,7 +43,7 @@ Vous pouvez créer plusieurs configurations si nécessaire. Les configurations p
 
 >[!NOTE]
 >
->Des options de configuration en plus des **Modèles de fragments de contenu** et des **Requêtes persistantes GraphQL** peuvent être nécessaires en fonction de vos exigences d’implémentation.
+>Options de configuration en plus des **Modèles de fragment de contenu** et **Requêtes persistantes GraphQL** peut être nécessaire en fonction de vos exigences de mise en oeuvre.
 
 ## Étapes suivantes {#next-steps}
 
