@@ -7,10 +7,10 @@ feature: Release Information
 user-guide-description: Ressources d’aide autonome et liens vers la documentation présentant Adobe Experience Manager as a Cloud Service
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: e936e15a23fc0630d0e1054b117f141e23ce947d
+source-git-commit: f70b361dd58d362338473a2fa213e8604ca2daee
 workflow-type: tm+mt
-source-wordcount: '3685'
-ht-degree: 92%
+source-wordcount: '3696'
+ht-degree: 91%
 
 ---
 
@@ -338,6 +338,8 @@ ht-degree: 92%
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Intégration à Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
+      + [Création d’une newsletter Adobe Experience Manager](/help/sites-cloud/integrating/creating-newsletter.md)
 + Ressources {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Aperçu et nouveautés](/help/assets/overview.md)
