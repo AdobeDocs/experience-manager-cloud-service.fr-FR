@@ -4,7 +4,7 @@ description: Installation de la version [!DNL Workfront for Experience Manager e
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 109f07c7273cc9a4890e41bf29a1509f738d130b
+source-git-commit: 6e1408abde71c5400adaeaea130e4b7f9287169a
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 64%
@@ -39,6 +39,7 @@ Avant d’installer le connecteur, procédez comme suit :
    * `/apps/dam/gui/content/foldermetadataschemaeditor`
    * `/apps/dam/cfm/models/editor/components/datatypeproperties`
    * `/apps/settings/dam/cfm/models/formbuilderconfig`
+   * `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`
 
 1. Cette installation nécessite des connaissances pour définir un projet Maven dans [!DNL Experience Manager] as a [!DNL Cloud Service]. Utilisez les ressources suivantes pour comprendre comment inclure un package tiers dans votre projet Maven :
 
