@@ -1,11 +1,11 @@
 ---
 title: Présentation du Parcours d’intégration as a Cloud Service
-description: Commencez ici pour un aperçu du parcours guidé tout au long du processus d’intégration pour AEM as a Cloud Service.
+description: Commencez ici pour avoir un aperçu du parcours guidé tout au long du processus d’intégration pour AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1175'
+ht-degree: 25%
 
 ---
 
