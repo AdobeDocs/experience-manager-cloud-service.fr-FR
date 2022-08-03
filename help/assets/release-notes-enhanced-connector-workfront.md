@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version  [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de la version  [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: d763bacb0844a438ebea6ef206dfa184a49993fe
+source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
@@ -15,23 +15,19 @@ La section suivante présente les notes générales de mise à jour pour [!DNL W
 
 ## Date de publication {#release-date}
 
-Date de publication de la dernière version 1.9.1 d’ [!DNL Workfront for Experience Manager enhanced connector] est le 1er juillet 2022.
+Date de publication de la dernière version 1.9.2 de [!DNL Workfront for Experience Manager enhanced connector] est le 3 août 2022.
 
 ## Faits saillants des versions {#release-highlights}
 
 La dernière version de la variable [!DNL Workfront for Experience Manager enhanced connector] comprend les améliorations et correctifs suivants :
 
-* Ajout de la prise en charge de l’authentification entre les applications Experience Manager et Workfront à l’aide de la clé API Workfront pour les instances migrées vers Adobe IMS.
+* Le **[!UICONTROL Télécharger le document]** l’étape de workflow ne parvient pas à joindre un document à Workfront.
 
-* Lorsque vous liez des fichiers ou des dossiers externes, l’application Workfront affiche la variable `SERVER_ERROR` message d’erreur. Le message d’erreur fait référence à une exception non autorisée en raison d’une incohérence des clés API.
-
-* Lorsque vous exécutez un workflow Créer une tâche pour une ressource, l’exception Null Pointer s’affiche dans les messages du journal.
-
-* Lorsque vous activez la variable `Replace Spaces with DASH` l’option de configuration sous Paramètres avancés dans Experience Manager entraîne la création de dossiers en double dans Workfront.
+* Le **[!UICONTROL Télécharger le document]** l’étape de workflow ne parvient pas à joindre un document aux tâches et problèmes dans Workfront. L’étape de processus associe correctement un document aux projets.
 
 >[!IMPORTANT]
 >
->Adobe vous recommande de [mise à niveau vers la dernière version 1.9.1](../assets/update-workfront-enhanced-connector.md) de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe vous recommande de [mise à niveau vers la dernière version 1.9.2](../assets/update-workfront-enhanced-connector.md) de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problèmes connus {#known-issues}
 
@@ -40,6 +36,18 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 * Lorsque vous utilisez l’expérience Workfront classique, la variable **[!UICONTROL Envoyer à]** , disponible dans la variable **[!UICONTROL Plus]** la liste déroulante ne vous permet pas de sélectionner la destination cible dans Experience Manager. Le **[!UICONTROL Envoyer à]** fonctionne correctement avec l’option **[!UICONTROL Actions de document]** liste déroulante Le **[!UICONTROL Envoyer à]** fonctionne correctement pour **[!UICONTROL Plus]** liste déroulante et **[!UICONTROL Actions de document]** liste déroulante disponible dans la nouvelle expérience Workfront.
 
 ## Versions précédentes {#previous-releases}
+
+### Version de juillet 2022 {#july-2022-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] La version 1.9.1 comprend les mises à jour suivantes :
+
+* Ajout de la prise en charge de l’authentification entre les applications Experience Manager et Workfront à l’aide de la clé API Workfront pour les instances migrées vers Adobe IMS.
+
+* Lorsque vous liez des fichiers ou des dossiers externes, l’application Workfront affiche la variable `SERVER_ERROR` message d’erreur. Le message d’erreur fait référence à une exception non autorisée en raison d’une incohérence des clés API.
+
+* Lorsque vous exécutez un workflow Créer une tâche pour une ressource, l’exception Null Pointer s’affiche dans les messages du journal.
+
+* Lorsque vous activez la variable `Replace Spaces with DASH` l’option de configuration sous Paramètres avancés dans Experience Manager entraîne la création de dossiers en double dans Workfront.
 
 ### Version de juin 2022 {#june-2022-release}
 
