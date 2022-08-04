@@ -4,10 +4,10 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 154fb4bf9bea187a2f733c35cc720f3da99755bb
+source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
 workflow-type: tm+mt
-source-wordcount: '3920'
-ht-degree: 98%
+source-wordcount: '3992'
+ht-degree: 95%
 
 ---
 
@@ -170,19 +170,27 @@ Remplissez la copie de langue afin qu’elle contienne le contenu de la langue p
 
 ### Mise à jour de la mémoire de traduction {#updating-translation-memory}
 
-Les modifications manuelles du contenu traduit peuvent être synchronisées avec le système de gestion de traduction (TMS) pour entraîner sa mémoire de traduction.
+Les modifications manuelles du contenu traduit peuvent être synchronisées à nouveau avec le système de gestion de traduction (TMS) pour entraîner sa mémoire de traduction.
 
 1. Dans la console Sites, après la mise à jour de contenu textuel sur une page traduite, sélectionnez **Mettre à jour la mémoire de traduction**.
 1. Un mode Liste affiche côte à côte une comparaison de la source et de la traduction pour chaque composant de texte qui a été modifié. Sélectionnez les mises à jour de traduction qui doivent être synchronisées avec la mémoire de traduction et sélectionnez **Mettre à jour la mémoire**.
 
 ![Comparaison des modifications apportées à la mémoire de traduction](../assets/update-translation-memory-compare.png)
 
-AEM enverra les chaînes sélectionnées vers le système de gestion de traduction.
+AEM met à jour la traduction des chaînes existantes dans la mémoire de traduction du TMS configuré.
 
-* L’action met à jour la traduction des chaînes existantes dans la mémoire de traduction des systèmes de gestion de traduction (TMS) configurés.
+* L’action met à jour la traduction des chaînes existantes dans la mémoire de traduction du TMS configuré.
 * Il ne crée pas de nouvelles tâches de traduction.
-* Il envoie les paires valeur de chaînes et leurs traductions au TMS, via AEM API de traduction.
-* Cette fonctionnalité nécessite qu’un système de gestion de traduction soit configuré pour être utilisé avec AEM.
+* Il renvoie les traductions au TMS, via AEM API de traduction (voir ci-dessous).
+
+Pour utiliser cette fonctionnalité :
+
+* Un TMS doit être configuré pour être utilisé avec AEM.
+* Le connecteur doit implémenter la méthode [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
+   * Le code de cette méthode détermine ce qui se passe avec la demande de mise à jour de la mémoire de traduction.
+   * La structure de traduction AEM envoie les paires de valeurs de chaîne (traduction d’origine et mise à jour) au TMS via cette mise en oeuvre de méthode.
+
+Les mises à jour de la mémoire de traduction peuvent être interceptées et envoyées vers une destination personnalisée, dans le cas où une mémoire de traduction propriétaire est utilisée.
 
 ### Vérification du statut de traduction d’une page {#check-translation-status}
 
