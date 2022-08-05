@@ -3,10 +3,10 @@ title: Parcours du développeur AEM Headless
 description: 'Commencez ici pour obtenir un parcours guidé via Adobe Experience Manager (AEM) as a Cloud Service lorsqu’il est utilisé comme système de gestion de contenu sans affichage (CMS). Découvrez les fonctionnalités puissantes et flexibles sans interface, leurs fonctionnalités et comment les exploiter dans votre premier projet de développement sans interface. Ce parcours vous fournit toutes les informations dont vous avez besoin pour développer votre première application sans interface. '
 landing-page-description: 'Comprendre la diffusion et la mise en oeuvre de contenu sans interface utilisateur. En savoir plus sur le développement de votre stratégie au sein de votre entreprise. '
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2ec6b29800867462bbc2e88048c583d4e5eefa57
+source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
 workflow-type: tm+mt
-source-wordcount: '1301'
-ht-degree: 85%
+source-wordcount: '1300'
+ht-degree: 84%
 
 ---
 
@@ -49,7 +49,7 @@ Voici les personnes qui interagissent dans ce parcours.
 | Administrateur | Gère les paramètres et la configuration de base d’AEM | Le développeur travaille avec l’administrateur pour apporter les modifications de configuration nécessaires au développement. |
 | Architecte de contenu | Analyse les exigences relatives aux données qui doivent être diffusées en mode découplé et définit la structure de ces données | Les développeurs travaillent avec l’architecte de contenu pour comprendre la structure des données et les exigences nécessaires pour les diffuser en toute sécurité. |
 
-Les informations présentées dans ce parcours peuvent bien sûr être utiles à toutes les personnes, mais certaines informations peuvent être superflues pour certains rôles. Tenez-vous informés des [prochains parcours couvrant les spécificités des rôles supplémentaires.](/help/journey-documentation/documentation-journeys.md#journeys)
+Les informations contenues dans ce parcours peuvent être utiles à tous les acteurs, mais certaines informations ne sont pas nécessairement nécessaires pour certains rôles. Tenez-vous informés des [prochains parcours couvrant les spécificités des rôles supplémentaires.](/help/journey-documentation/documentation-journeys.md#journeys)
 
 ## Le parcours de développement découplé {#the-journey}
 
