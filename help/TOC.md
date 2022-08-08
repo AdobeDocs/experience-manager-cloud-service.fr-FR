@@ -8,9 +8,9 @@ user-guide-description: Ressources d’aide autonome et liens vers la documentat
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3fc0a6626fdf0addfdc572560c01eac3296c5012
+source-git-commit: a324bcc64842ff3c3d04dc5164d21b47c14ac94e
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3714'
 ht-degree: 94%
 
 ---
@@ -340,6 +340,7 @@ ht-degree: 94%
       + [Intégration à Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Intégration à Adobe Analytics  Configuration automatisée](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+      + [Intégration à Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
