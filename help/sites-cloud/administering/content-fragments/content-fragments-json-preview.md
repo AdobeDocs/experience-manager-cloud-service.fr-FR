@@ -1,9 +1,10 @@
 ---
 title: Aperçu – Représentation JSON
 description: Découvrez comment prévisualiser facilement la représentation JSON de vos fragments de contenu lors de la mise en œuvre de votre solution AEM découplée.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
-workflow-type: tm+mt
-source-wordcount: '113'
+exl-id: bffc13e5-586b-4598-98fb-b1688d9716c5
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
