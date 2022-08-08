@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 2340c9416d90f7973109ba57c1769ae892049026
+source-git-commit: 0ae79facb4233988db4a649b8e79ca3041832584
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '955'
 ht-degree: 19%
 
 ---
@@ -111,6 +111,11 @@ Vous pouvez maintenant configurer Adobe Experience Manager Assets sur [restreind
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Experience Manager] {#prerelease-features-foundation}
 
 * AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
+
+## Connecteurs Adobe Learning Manager {#learn-manage}
+
+* Le nouveau gestionnaire d’apprentissage Adobe dispose de connecteurs vers Adobe Experience Manager Sites, Marketo Engage et Adobe Commerce. Pour en savoir plus, voir : [Guide de l’utilisateur d’Adobe Learning Manager](https://helpx.adobe.com/learning-manager/user-guide.html).
+
 
 ## Cloud Manager {#cloud-manager}
 
