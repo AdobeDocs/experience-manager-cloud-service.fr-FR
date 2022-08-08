@@ -1,5 +1,5 @@
 ---
-title: Prise en main de l’outil de transfert de contenu (Legacy)
+title: Prise en main de l’outil de transfert de contenu (hérité)
 description: Prise en main de l’outil de transfert de contenu
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Prise en main de l’outil de transfert de contenu (Hérité) {#getting-started-content-transfer-tool}
+# Prise en main de l’outil de transfert de contenu (hérité) {#getting-started-content-transfer-tool}
 
 
 ## Disponibilité {#availability}

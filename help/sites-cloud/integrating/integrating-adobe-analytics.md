@@ -7,7 +7,7 @@ exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
 source-git-commit: e950f2399553c301c97c4fcac549a7ef6a234164
 workflow-type: tm+mt
 source-wordcount: '570'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 84%
 
 L’intégration d’Adobe Analytics et d’AEM as a Cloud Service vous permet de suivre l’activité de vos pages web. L’intégration nécessite :
 
-* d’utiliser l’interface utilisateur tactile pour créer une configuration Analytics dans AEM as a Cloud Service ; Veuillez noter que l&#39;authentification IMS est requise pour intégrer Adobe Analytics à l&#39;as a Cloud Service AEM.
+* d’utiliser l’interface utilisateur tactile pour créer une configuration Analytics dans AEM as a Cloud Service. Notez que l’authentification IMS est requise pour intégrer Adobe Analytics à AEM as a Cloud Service.
 * d’ajouter et de configurer Adobe Analytics en tant qu’extension dans [Adobe Launch](#analytics-launch). Pour plus d’informations sur Adobe Launch, consultez [cette page](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=fr).
 
 Par rapport aux versions précédentes d’AEM, la prise en charge du framework n’est pas fournie dans la configuration d’Analytics dans AEM as a Cloud Service. À la place, elle est désormais assurée via Adobe Launch, qui est l’outil par défaut permettant d’instrumenter un site AEM avec des fonctionnalités Analytics (bibliothèques JS). Dans Adobe Launch, une propriété est créée où l’extension Adobe Analytics peut être configurée et des règles sont créées pour envoyer des données à Adobe Analytics. Adobe Launch a remplacé la tâche d’analyse fournie par SiteCatalyst.
@@ -34,7 +34,7 @@ Par rapport aux versions précédentes d’AEM, la prise en charge du framework 
 
 ### Paramètres de configuration {#configuration-parameters}
 
-Les champs présents dans la fenêtre de paramétrage sont les suivants :
+Les champs présents dans la fenêtre de paramétrage sont les suivants :
 
 ![Paramètres de configuration](assets/properties_field2.png "Paramètres de configuration")
 
@@ -45,9 +45,9 @@ Les champs présents dans la fenêtre de paramétrage sont les suivants :
 | Segment | Option permettant d’utiliser un segment Analytics défini dans la suite de rapports actuelle. Les rapports Analytics seront filtrés en fonction du segment. Consultez [cette page](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=fr) pour plus de détails. |
 | Suites de rapports | Référentiel dans lequel vous envoyez des données et extrayez des rapports. Une suite de rapports définit le reporting complet et indépendant sur un site web choisi, un ensemble de sites web ou un sous-ensemble de pages web. Vous pouvez afficher les rapports récupérés à partir d’une seule suite de rapports et modifier ce champ dans une configuration à tout moment, en fonction de vos besoins. |
 
-### Adobe Analytics avec authentification IMS {#configuration-parameters-ims}
+### Adobe Analytics avec authentification IMS {#configuration-parameters-ims}
 
-Une configuration IMS est requise pour intégrer correctement Adobe Analytics à l’as a Cloud Service AEM. Cette configuration doit être créée. Reportez-vous à cette section [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) pour savoir comment créer la configuration IMS d’Analytics.
+Une configuration IMS est requise pour intégrer correctement Adobe Analytics à AEM as a Cloud Service. Cette configuration doit être créée. Reportez-vous à cette [page](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md) pour savoir comment créer la configuration IMS Analytics.
 
 ### Ajout d’une configuration à un site {#add-configuration}
 
@@ -63,7 +63,7 @@ Adobe Analytics peut être ajouté en tant qu’extension dans la propriété La
 
 >[!NOTE]
 >
->La configuration IMS (comptes techniques) pour Launch est préconfigurée dans AEM as a Cloud Service. Vous n’avez pas besoin de créer cette configuration.
+>La configuration IMS (comptes techniques) pour Launch est préconfigurée dans AEM as a Cloud Service. Les utilisateurs n’ont pas à créer cette configuration.
 
 >[!NOTE]
 >

@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
@@ -19,12 +19,12 @@ Un affichage est un groupe virtuel d’écrans généralement positionnés les u
 
 Ce document vous aide à comprendre comment créer et gérer des affichages dans le fournisseur de services Screens. Après avoir lu ce document, vous devriez :
 
-* Découvrez comment créer et supprimer des affichages
-* Comprendre comment organiser vos affichages en dossiers
+* savoir comment créer et supprimer des affichages ;
+* comprendre comment organiser vos affichages dans des dossiers.
 
 ## Procédure de création d’un affichage {#create-display}
 
-Pour créer l’affichage à partir du fournisseur de services Screens, procédez comme suit :
+Pour créer l’affichage à partir du fournisseur de services Screens, procédez comme suit :
 
 1. Accédez au fournisseur de services Screens à partir de votre instance AEM Cloud Service.
 1. Sélectionnez **Affichages** dans le panneau de navigation de gauche et cliquez sur **Créer** dans le coin supérieur droit de l’écran.
@@ -51,34 +51,34 @@ Sélectionnez l’affichage et cliquez sur **Supprimer** dans la partie inférie
 
 ![image](/help/screens-cloud/assets/display/disp-5.png)
 
-## Étapes d’organisation des affichages dans les dossiers {#organize-display}
+## Étapes d’organisation des affichages dans des dossiers {#organize-display}
 
-## Comment activer/désactiver le rail de dossiers {#toggle-rail}
+## Activer et désactiver le rail de dossiers {#toggle-rail}
 
-Vous pouvez passer le rail de dossiers de l’affichage de tous les dossiers à des dossiers spécifiques :
+Vous pouvez régler le rail de dossiers pour qu’il affiche des dossiers spécifiques plutôt que tous les dossiers :
 
-1. Accédez à la vue d’inventaire affichée en cliquant sur le bouton mis en surbrillance ci-dessous :
+1. Accédez à la vue d’inventaire affichée en cliquant sur le bouton mis en surbrillance ci-dessous :
 
    ![image](/help/screens-cloud/assets/display/display-inventory.png)
 
-1. Le rail latéral du dossier s’affiche.
+1. Le rail latéral des dossiers s’affiche.
 
    ![image](/help/screens-cloud/assets/display/toggle-rail.png)
 
-1. Sélectionner **Masquer les dossiers** pour le fermer à nouveau.
+1. Sélectionnez **Masquer les dossiers** pour le fermer à nouveau.
 
 ## Création d’un dossier {#create-folder}
 
-Vous pouvez créer des dossiers pour mieux organiser vos affichages.
+Vous pouvez créer des dossiers pour améliorer l’organisation de vos affichages.
 
 1. Accédez à la vue d’inventaire.
-1. Assurez-vous que vous ne vous trouvez pas dans un dossier. Les éléments suivants doivent s’afficher :
+1. Assurez-vous que vous ne vous trouvez pas dans un dossier. Les éléments suivants doivent s’afficher :
 
    ![image](/help/screens-cloud/assets/display/verify-view.png)
 
-   Remarque : **Tous les affichages** doit être sélectionné dans le rail latéral du dossier et la navigation du chemin de navigation doit uniquement afficher **Affichages**.
+   Remarque : **Tous les affichages** doit être sélectionné dans le rail latéral du dossier et la navigation du chemin de navigation doit uniquement afficher **Affichages**.
 
-1. Cliquez sur le bouton &quot;Créer&quot; en haut à droite et sélectionnez le **Dossier** .
+1. Cliquez sur le bouton « Créer » en haut à droite et sélectionnez l’option **Dossier**.
 
    ![image](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -96,9 +96,9 @@ Vous pouvez créer des dossiers pour mieux organiser vos affichages.
    ![image](/help/screens-cloud/assets/display/Nestedview.png)
 
    * Le dossier doit être sélectionné dans le rail latéral du dossier.
-   * La navigation dans le chemin de navigation doit afficher le nom du dossier actif en regard de **Affichages**.
+   * La navigation dans le chemin de navigation doit afficher le nom du dossier actif en face d’**Affichages**.
 
-1. Cliquez sur  **Créer**  en haut à droite et sélectionnez l’événement **Dossier** .
+1. Cliquez sur **Créer** en haut à droite et sélectionnez l’option **Dossier**.
 
    ![image](/help/screens-cloud/assets/display/Createfolder.png)
 
@@ -106,7 +106,7 @@ Vous pouvez créer des dossiers pour mieux organiser vos affichages.
 
    ![image](/help/screens-cloud/assets/display/Createfolder2.png)
 
-## Comment déplacer du contenu vers un nouveau dossier {#move-folder}
+## Déplacer du contenu vers un nouveau dossier {#move-folder}
 
 Vous pouvez déplacer du contenu vers vos nouveaux dossiers pour mieux organiser vos affichages.
 
@@ -118,11 +118,11 @@ Vous pouvez déplacer du contenu vers vos nouveaux dossiers pour mieux organiser
 
 ![image](/help/screens-cloud/assets/display/movetofolder.png)
 
-**Remarque**: Le dossier doit être sélectionné dans le rail latéral du dossier. De plus, la navigation dans le chemin de navigation doit afficher le nom actuel du dossier en regard de **Affichages**.
+**Remarque** : Le dossier doit être sélectionné dans le rail latéral de dossiers. De plus, la navigation dans le chemin de navigation doit afficher le nom du dossier actif en face des **Affichages**.
 
 ## Comment supprimer du contenu d’un dossier {#delete-folder}
 
-Toutes les opérations de dossier sont accessibles via la barre d’actions de sélection dans la vue de stock.
+Toutes les opérations de dossier sont accessibles via la barre d’actions de sélection dans la vue d’inventaire.
 
 1. Accédez au dossier parent ou sélectionnez-le dans le rail latéral.
 

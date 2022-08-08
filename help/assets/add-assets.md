@@ -7,7 +7,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
 workflow-type: tm+mt
 source-wordcount: '3029'
-ht-degree: 88%
+ht-degree: 97%
 
 ---
 
@@ -116,12 +116,12 @@ Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UIC
 
 ### Gestion des noms de fichier et caractères interdits {#filename-handling}
 
-[!DNL Experience Manager Assets] vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource dont le nom de fichier contient un ou plusieurs caractères interdits, [!DNL Assets] affiche un message d’avertissement et interrompt le chargement jusqu’à ce que vous supprimiez ces caractères ou utilisiez un nom autorisé.
+[!DNL Experience Manager Assets] vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource dont le nom de fichier contient un ou plusieurs caractères interdits, [!DNL Assets] affiche un message d’avertissement à ce sujet et interrompt l’opération jusqu’à ce que vous supprimiez les caractères concernés ou utilisiez un nom autorisé.
 
 Pour prendre en compte les conventions d’appellation en vigueur dans votre entreprise, la boîte de dialogue [!UICONTROL Charger les ressources] vous permet de spécifier des noms longs pour les fichiers chargés. Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici et séparés par des espaces) :
 
-* Caractères non valides pour le nom de la ressource : `* / : [ \\ ] | # % { } ? &`
-* Caractères non valides pour le nom du dossier de ressources : `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
+* Caractères non valides pour le nom de dossier de la ressource : `* / : [ \\ ] | # % { } ? &`
+* Caractères non valides pour le nom de dossier de la ressource : `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
 
 ## Chargement en masse de ressources {#bulk-upload}
 
@@ -218,9 +218,9 @@ Sélectionnez la configuration et cliquez sur **[!UICONTROL Exécution dʼessai]
 
 ### Gestion des noms de fichier lors de l’importation en bloc {#filename-handling-bulkimport}
 
-Lorsque vous importez des ressources ou des dossiers en bloc, [!DNL Experience Manager Assets] importe toute la structure de ce qui existe dans la source d&#39;import. [!DNL Experience Manager] suit les règles indéfinies pour les caractères spéciaux dans les noms de ressources et de dossiers ; par conséquent, ces noms de fichier doivent être assainis. Pour les noms de dossier et de ressource, le titre défini par l’utilisateur reste inchangé et est stocké dans `jcr:title`.
+Lorsque vous importez des ressources ou des dossiers en bloc, [!DNL Experience Manager Assets] importe toute la structure de ce qui existe dans la source d’import. [!DNL Experience Manager] suit les règles intégrées pour les caractères spéciaux dans les noms de ressources et de dossiers ; par conséquent, ces noms de fichier doivent être assainis. Pour les noms de dossier et de ressource, le titre défini par l’utilisateur reste inchangé et est stocké dans `jcr:title`.
 
-Lors de l’importation en masse, [!DNL Experience Manager] recherchez les dossiers existants pour éviter de réimporter les ressources et les dossiers et vérifiez également les règles d’assainissement appliquées dans le dossier parent où l’importation a lieu. Si les règles d’assainissement sont appliquées dans le dossier parent, les mêmes règles sont appliquées à la source d’importation. Pour un nouvel import, les règles d’assainissement suivantes sont appliquées pour gérer les noms de fichier des ressources et des dossiers.
+Lors de l’importation en bloc, [!DNL Experience Manager] recherche les dossiers existants pour éviter de réimporter les ressources et les dossiers et vérifie également les règles d’assainissement appliquées dans le dossier parent où l’importation a lieu. Si les règles d’assainissement sont appliquées dans le dossier parent, les mêmes règles sont appliquées à la source d’importation. Pour un nouvel import, les règles d’assainissement suivantes sont appliquées pour gérer les noms de fichiers des ressources et des dossiers.
 
 **Noms interdits dans l’importation en bloc**
 
@@ -233,10 +233,10 @@ Les fichiers ou les dossiers dont les noms correspondent à ces conditions sont 
 
 **Gestion du nom des ressources dans l’importation en bloc**
 
-Pour les noms de fichiers de ressources, le nom et le chemin JCR sont assainis à l’aide de l’API : `JcrUtil.escapeIllegalJcrChars`.
+Pour les noms de fichiers de ressources, le nom et le chemin JCR sont assainis à l’aide de l’API : `JcrUtil.escapeIllegalJcrChars`.
 
-* Les caractères Unicode ne sont pas modifiés
-* Remplacez les caractères spéciaux par leur code d’échappement d’URL, par exemple : `new asset.png` est mis à jour vers `new%20asset.png`:
+* Les caractères Unicode ne sont pas modifiés.
+* Remplacez les caractères spéciaux par leur code d’échappement d’URL, par exemple, `new asset.png` est remplacé par `new%20asset.png` :
 
    ```
                    URL escape code   
@@ -259,11 +259,11 @@ Pour les noms de fichiers de ressources, le nom et le chemin JCR sont assainis �
 
 **Gestion du nom du dossier dans l’importation en bloc**
 
-Pour les noms de fichier de dossier, le nom et le chemin JCR sont assainis à l’aide de l’API : `JcrUtil.createValidName`.
+Pour les noms de fichiers de dossiers, le nom et le chemin JCR sont assainis à l’aide de l’API : `JcrUtil.createValidName`.
 
-* Les caractères majuscules sont convertis en minuscules
-* Les caractères Unicode ne sont pas modifiés
-* Remplacez les caractères spéciaux par un tiret (&#39;-&#39;), par exemple : `new asset.png` est mis à jour vers `new-asset.png`:
+* Les caractères majuscules sont convertis en minuscules.
+* Les caractères Unicode ne sont pas modifiés.
+* Remplacez les caractères spéciaux par un tiret (’-’), par exemple, `new asset.png` est remplacé par `new-asset.png` :
 
    ```
    "                           

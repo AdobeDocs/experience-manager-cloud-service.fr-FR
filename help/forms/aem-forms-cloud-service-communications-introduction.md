@@ -5,7 +5,7 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
 workflow-type: tm+mt
 source-wordcount: '1137'
-ht-degree: 89%
+ht-degree: 91%
 
 ---
 
@@ -97,7 +97,7 @@ When such an interactive PDF document is flattened using the Communications APIs
 
 ## Manipulation de documents
 
-Les API de manipulation de documents Communications permettent de combiner, de réorganiser et de valider des documents PDF. En règle générale, vous créez un DDX et l’envoyez aux API de manipulation de document pour assembler ou réorganiser un document. Le [Document DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) fournit des instructions sur l’utilisation des documents source pour produire un ensemble de documents requis. La documentation de référence DDX fournit des informations détaillées sur toutes les opérations prises en charge. Voici quelques exemples de manipulation de documents :
+Les API de manipulation de documents Communications permettent de combiner, de réorganiser et de valider des documents PDF. En règle générale, vous créez un DDX et l’envoyez aux API de manipulation de document pour assembler ou réorganiser un document. Le [document DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) décrit comment utiliser les documents source pour générer un ensemble de documents désirés. La documentation de référence DDX fournit des informations détaillées sur toutes les opérations prises en charge. Voici quelques exemples de manipulation de documents :
 
 ### Assemblage de documents PDF
 

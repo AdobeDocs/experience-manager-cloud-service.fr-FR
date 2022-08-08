@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '1791'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ Vous pouvez publier/annuler la publication d’une page immédiatement ou à une
 
 >[!NOTE]
 >
->La publication d’un fragment d’expérience suit la même procédure que pour la publication d’une page, à partir de la console Fragments d’expérience ou de l’éditeur.
+>La publication d’un fragment d’expérience suit globalement la même procédure que pour une page, mais à partir de la console de Fragments d’expérience ou de l’éditeur.
 
 ## Terminologie {#terminology}
 

@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 74%
+ht-degree: 79%
 
 ---
 
@@ -54,7 +54,7 @@ Pour modifier un programme, procédez comme suit.
 
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications dans le programme.
 
-Chaque fois qu’un programme est modifié, y compris l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
+Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
 
 ## Suppression de programmes Sandbox {#delete-sandbox-program}
 

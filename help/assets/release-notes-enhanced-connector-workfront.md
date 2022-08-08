@@ -1,23 +1,23 @@
 ---
-title: Notes de mise à jour de la version  [!DNL Workfront for Experience Manager enhanced connector]
-description: Notes de mise à jour de la version  [!DNL Workfront for Experience Manager enhanced connector]
+title: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
+description: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: f49ac67b7a90d638e266b9f7f5bf5ac9d7f78e3a
 workflow-type: tm+mt
 source-wordcount: '441'
-ht-degree: 2%
+ht-degree: 52%
 
 ---
 
-# Notes de mise à jour de la version [!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
+# Notes de mise à jour de[!DNL Workfront for Experience Manager enhanced connector] {#release-notes-enhanced-connector-workfront}
 
-La section suivante présente les notes générales de mise à jour pour [!DNL Workfront for Experience Manager enhanced connector].
+La section suivante présente les notes de mise à jour générales de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Date de publication {#release-date}
 
 Date de publication de la dernière version 1.9.2 de [!DNL Workfront for Experience Manager enhanced connector] est le 3 août 2022.
 
-## Faits saillants des versions {#release-highlights}
+## Principaux éléments de la mise à jour {#release-highlights}
 
 La dernière version de la variable [!DNL Workfront for Experience Manager enhanced connector] comprend les améliorations et correctifs suivants :
 
@@ -31,9 +31,9 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 
 ## Problèmes connus {#known-issues}
 
-* Lors de la configuration de dossiers liés à un projet avec AEM 6.4, Experience Manager n’enregistre pas les valeurs de pour **[!UICONTROL sous-dossiers]** et **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]** champs. La valeur de la variable **[!UICONTROL sous-dossiers]** mises à jour des champs **[!UICONTROL undefined]** et la valeur de la variable **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]** mises à jour des champs **[!UICONTROL Portfolio par défaut]** automatiquement après l’enregistrement de la configuration.
+* Lors de la configuration de dossiers liés à un projet avec AEM 6.4, Experience Manager n’enregistre pas les valeurs pour les champs **[!UICONTROL Sous-dossiers]** et **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]**. La valeur du champ de **[!UICONTROL sous-dossiers]** est remplacé par **[!UICONTROL indéfini]** et la valeur du champ **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]** est remplacé par **[!UICONTROL Portfolio par défaut]** automatiquement après l’enregistrement de la configuration.
 
-* Lorsque vous utilisez l’expérience Workfront classique, la variable **[!UICONTROL Envoyer à]** , disponible dans la variable **[!UICONTROL Plus]** la liste déroulante ne vous permet pas de sélectionner la destination cible dans Experience Manager. Le **[!UICONTROL Envoyer à]** fonctionne correctement avec l’option **[!UICONTROL Actions de document]** liste déroulante Le **[!UICONTROL Envoyer à]** fonctionne correctement pour **[!UICONTROL Plus]** liste déroulante et **[!UICONTROL Actions de document]** liste déroulante disponible dans la nouvelle expérience Workfront.
+* Lorsque vous utilisez l’expérience Workfront classique, l’option **[!UICONTROL Envoyer à]** disponible dans la liste déroulante **[!UICONTROL Plus]** ne vous permet pas de sélectionner la destination cible dans Experience Manager. L’option **[!UICONTROL Envoyer à]** fonctionne correctement avec la liste déroulante **[!UICONTROL Actions de document]**. L’option **[!UICONTROL Envoyer à]** fonctionne correctement pour la liste déroulante **[!UICONTROL Plus]** et la liste déroulante **[!UICONTROL Actions de document]** est disponible dans la nouvelle expérience Workfront.
 
 ## Versions précédentes {#previous-releases}
 
@@ -51,19 +51,19 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 
 ### Version de juin 2022 {#june-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] comprend désormais les mises à jour suivantes :
+[!DNL Workfront for Experience Manager enhanced connector] comprend désormais les mises à jour suivantes :
 
 * Lorsque vous effectuez un téléchargement via un dossier lié ou que vous utilisez l’événement `Send To` action disponible dans Workfront pour charger des ressources vers Experience Manager as a Cloud Service, les ressources sont corrompues et ne peuvent pas être ouvertes dans Adobe Photoshop.
 
 ### Version de mars 2022 {#march-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] comprend désormais les mises à jour suivantes :
+[!DNL Workfront for Experience Manager enhanced connector] comprend désormais les mises à jour suivantes :
 
-* Vous pouvez désormais créer des dossiers liés entre Adobe Workfront et AEM Assets as a Cloud Service même s’il existe plusieurs configurations de dossiers liés à un projet.
+* Vous pouvez désormais créer des dossiers liés entre Adobe Workfront et AEM Assets as a Cloud Service même s’il existe plusieurs configurations de dossiers liés à un projet.
 
 * Ajout de la prise en charge de la pagination des abonnements aux événements.
 
-* Ajout de la prise en charge d’AEM 6.4.x.
+* Ajout de la prise en charge d’AEM 6.4.x.
 
 * Ajout de la prise en charge des environnements proxy.
 
@@ -71,6 +71,6 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 
 >[!MORELIKETHIS]
 >
->* [Intégrer [!DNL Workfront for Experience Manager enhanced connector] avec Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=en)
->* [Intégrer [!DNL Workfront for Experience Manager enhanced connector] avec Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-integrations.html?lang=en)
+>* [Intégrer  [!DNL Workfront for Experience Manager enhanced connector]  avec Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=fr)
+>* [Intégrer  [!DNL Workfront for Experience Manager enhanced connector]  avec Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-integrations.html?lang=fr)
 

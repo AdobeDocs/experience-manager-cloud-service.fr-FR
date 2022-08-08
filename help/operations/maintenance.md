@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
 workflow-type: tm+mt
 source-wordcount: '999'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
        <li>Les versions de plus de 30 jours sont supprimées</li>
        <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
        <li>Quelle que soit la règle ci-dessus, la version la plus récente est conservée.</li>
-     </ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué par défaut pour les nouveaux environnements créés après le 14 mars 2022. Veuillez envoyer un ticket d’assistance clientèle si vous avez besoin de paramètres différents.</td>
+     </ol><br>REMARQUE : Le comportement décrit ci-dessus est appliqué par défaut pour les nouveaux environnements créés après le 14 mars 2022. Envoyez un ticket d’assistance clientèle si vous avez besoin de paramètres différents.</td>
   </td>
   </tr>
   <tr>
@@ -60,7 +60,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
        <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
        <li>Pour le contrôle du DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
        <li>Pour le contrôle des pages, les journaux de plus de 3 jours sont supprimés.</li>
-     </ol><br>REMARQUE : le comportement décrit ci-dessus est appliqué par défaut pour les nouveaux environnements créés après le 14 mars 2022. Veuillez envoyer un ticket d’assistance clientèle si vous avez besoin de paramètres différents.</td>
+     </ol><br>REMARQUE : Le comportement décrit ci-dessus est appliqué par défaut pour les nouveaux environnements créés après le 14 mars 2022. Envoyez un ticket d’assistance clientèle si vous avez besoin de paramètres différents.</td>
    </td>
   </tr>
   <tr>
@@ -82,7 +82,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <td>Client</td>
     <td>
     <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
-    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_WorkflowPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Consultez la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html#regular-purging-of-workflow-instances">documentation sur les tâches de maintenance AEM 6.5</a>.</p>
+    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_WorkflowPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Consultez la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=fr#regular-purging-of-workflow-instances">documentation sur les tâches de maintenance AEM 6.5</a>.</p>
   </td>
   </tr>
   <tr>

@@ -1,5 +1,5 @@
 ---
-title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu (Legacy)
+title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu  (hérité)
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu (Hérité) {#guidelines}
+# Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu  (hérité) {#guidelines}
 
 ## Conseils et bonnes pratiques {#best-practices}
 

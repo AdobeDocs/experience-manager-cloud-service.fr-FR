@@ -1,22 +1,22 @@
 ---
 title: AEM Content and Commerce
-description: Apprenez comment utiliser et administrer Experience Manager Content and Commerce as a Cloud Service.
+description: Apprenez comment utiliser et administrer Experience Manager Content and Commerce as a Cloud Service.
 landing-page-description: Apprenez comment utiliser et administrer Experience Manager Content and Commerce as a Cloud Service.
 exl-id: 7f7ece35-f78b-4c66-8a0b-38d248430d85
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '367'
+ht-degree: 100%
 
 ---
 
 # Contenu et commerce AEM {#commerce-guide}
 
-Apprenez comment utiliser et administrer Experience Manager Content and Commerce as a Cloud Service.
+Apprenez comment utiliser et administrer Experience Manager Content and Commerce as a Cloud Service.
 
 >[!NOTE]
 >
->Pour AEM Content and Commerce avec AEM 6.5 et CIF classique, voir [AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html?lang=fr).
+>Pour AEM Content and Commerce avec AEM 6.5 et le CIF classique, consultez [AEM 6.5 Content and Commerce](https://experienceleague.adobe.com/docs/experience-manager-65/commerce/home.html?lang=fr).
 
 ## Principaux articles relatifs à Content and Commerce {#key-articles}
 

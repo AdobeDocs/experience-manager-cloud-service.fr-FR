@@ -1,6 +1,6 @@
 ---
 title: Gestion des métadonnées des ressources numériques
-description: En savoir plus sur les types de métadonnées et comment [!DNL Adobe Experience Manager Assets] permet de gérer les métadonnées des ressources afin de les classer et de les organiser plus facilement. [!DNL Experience Manager] permet d’organiser et de traiter automatiquement les ressources en fonction de leurs métadonnées.
+description: Découvrez les types de métadonnées et comment  [!DNL Adobe Experience Manager Assets]  aide à gérer les métadonnées afin que les ressources permettent une catégorisation et une organisation plus simples des ressources. [!DNL Experience Manager]  permet d’organiser et de traiter automatiquement les ressources en fonction de leurs métadonnées.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Asset Management,Metadata
@@ -9,7 +9,7 @@ exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
 workflow-type: tm+mt
 source-wordcount: '1953'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Elles constituent un ensemble de toutes les données disponibles pour cette imag
 * Nom du dossier où elle se trouve.
 * Ressources connexes ou balises appliquées.
 
-Les propriétés de métadonnées de base décrites ci-dessus sont utilisées par [!DNL Experience Manager] pour gérer les ressources et permettre aux utilisateurs de les visualiser. Par exemple, ordonner les ressources par date de dernière modification est utile pour tenter de découvrir des ressources récemment ajoutées ou modifiées.
+Les propriétés de métadonnées de base décrites ci-dessus sont utilisées par [!DNL Experience Manager] pour gérer les ressources et permettre aux utilisateurs de les visualiser. Par exemple, ordonner les ressources selon la date de leur dernière modification est utile pour identifier des ressources ajoutées ou modifiées récemment.
 
 Vous pouvez ajouter d’autres données de niveau supérieur à des ressources numériques, par exemple :
 
@@ -70,18 +70,18 @@ La création manuelle d’informations descriptives de métadonnées coûte cher
 
 ## Métadonnées et dernière modification {#last-modification}
 
-La date de dernière modification d’une ressource reflète la dernière modification du fichier d’origine d’une ressource. Par conséquent, la date de modification et l’utilisateur ne changent que lorsque :
+La date de dernière modification d’une ressource correspond au moment où le fichier d’origine d’une ressource a été modifié. Par conséquent, la date de modification et l’utilisateur ne changent que lorsque :
 
-* Une nouvelle version de la ressource est chargée.
-* Une ressource est retraitée.
+* une nouvelle version de la ressource a été créée ;
+* une ressource est retraitée.
 
-La date de la dernière modification et l’utilisateur ne changent pas :
+La date de la dernière modification et l’utilisateur ne changent pas :
 
-* Lorsqu’une ressource est déplacée ou renommée
-* Lorsqu’une ressource est extraite, archivée ou version
-* Lorsqu’une ressource est publiée ou dépubliée
-* Mises à jour des métadonnées
-* Mises à jour de référence ou de collection
+* lorsqu’une ressource est déplacée ou renommée ;
+* lorsqu’une ressource est extraite, archivée ou versionnée ;
+* lorsqu’une ressource est publiée ou dépubliée ;
+* lors de la mise à jour des métadonnées ;
+* lors de la mise à jour de références ou de collection.
 
 ## Normes de codage {#encoding-standards}
 

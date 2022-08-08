@@ -8,7 +8,7 @@ exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
 source-wordcount: '2411'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -118,12 +118,12 @@ Pour créer et entraîner un modèle pour vos balises spécifiques à votre entr
 1. Créez les balises nécessaires et la structure de balise appropriée. Chargez les images appropriées dans le référentiel de gestion des ressources numériques (DAM).
 1. Dans l’interface utilisateur d’[!DNL Experience Manager], accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Entraînement des balises intelligentes]**.
 1. Cliquez sur **[!UICONTROL Créer]**. Indiquez un **[!UICONTROL titre]** et une **[!UICONTROL description]**.
-1. Cliquez sur l’icône de dossier dans **[!UICONTROL Balises]** champ . Une fenêtre contextuelle s’ouvre.
+1. Cliquez sur l’icône de dossier dans le champ **[!UICONTROL Balises]**. Une fenêtre contextuelle s’ouvre.
 1. Recherchez ou sélectionnez les balises appropriées parmi les balises existantes dans `cq-tags` que vous souhaitez ajouter au modèle. Cliquez sur **[!UICONTROL Suivant]**.
 
    >[!NOTE]
    >
-   >Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction de la variable **[!UICONTROL Nom]** (ordre alphabétique), **[!UICONTROL Créé]** date ou **[!UICONTROL Modifié]** date.
+   >Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction du **[!UICONTROL Nom]** (par ordre alphabétique), de la date de **[!UICONTROL Création]** ou de la date de **[!UICONTROL Modification]**.
 
 
 1. Dans la boîte de dialogue **[!UICONTROL Sélectionner les ressources]**, cliquez sur **[!UICONTROL Ajouter les ressources]** pour chaque balise. Effectuez des recherches dans le référentiel de gestion des ressources numériques (DAM) ou parcourez le référentiel pour sélectionner au moins 10, et au plus 50 images. Sélectionnez les ressources et non le dossier. Une fois les images sélectionnées, cliquez sur **[!UICONTROL Sélectionner]**.

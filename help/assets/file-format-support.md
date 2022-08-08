@@ -8,7 +8,7 @@ exl-id: e848aa77-7829-4adc-8b88-0279791a4525
 source-git-commit: 77cba988368c07438835148d08f1e8cc6e469b7b
 workflow-type: tm+mt
 source-wordcount: '995'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -217,7 +217,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 >[!NOTE]
 >
->Pour les PDF sécurisés, seul le téléchargement est pris en charge.
+>Pour les PDF sécurisés, seul le chargement est pris en charge.
 
 ## Dynamic Media - Formats d’images pixellisées prises en charge {#image-support-dynamic-media}
 

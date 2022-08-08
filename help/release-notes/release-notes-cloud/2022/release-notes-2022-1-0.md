@@ -5,7 +5,7 @@ exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
 source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
 workflow-type: tm+mt
 source-wordcount: '1085'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Consultez la vidéo [Aperçu de la version de décembre 2022](https://video.tv.a
 
 * [!DNL Dynamic Media] prend désormais en charge l’ingestion, la prévisualisation, la lecture et la publication des vidéos MXF. L’annotation et la shoppable vidéo pour les vidéos MXF ne sont pas encore prises en charge.
 
-* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources du DAM distant sont disponibles sur le déploiement de Sites. Vous pouvez désormais effectuer les opérations suivantes : [mettre à jour, supprimer, renommer et déplacer des opérations](/help/assets/use-assets-across-connected-assets-instances.md) sur les ressources ou dossiers du DAM distant. Les mises à jour, avec un certain retard, sont disponibles automatiquement sur le déploiement Sites.
+* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources du DAM distant sont disponibles sur le déploiement de Sites. Vous pouvez désormais effectuer les opérations suivantes : [mettre à jour, supprimer, renommer et déplacer des opérations](/help/assets/use-assets-across-connected-assets-instances.md) sur les ressources ou dossiers du DAM distant. Les mises à jour, avec un certain retard, sont disponibles automatiquement sur le déploiement Sites.
 
 ### Nouvelles fonctionnalités dans le [!DNL Assets] canal de version préliminaire {#assets-prerelease-features}
 

@@ -5,7 +5,7 @@ exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
 source-git-commit: fc49b004a61d5f981ac61cca684dc0bacf843443
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Le flux de serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplif
 
 >[!NOTE]
 >
->Outre cette documentation, vous pouvez également consulter les tutoriels sur [Authentification basée sur les jetons pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication) et [Obtention d’un jeton de connexion pour les intégrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html).
+>Outre cette documentation, vous pouvez également consulter les tutoriels [Authentification basée sur les jetons pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/authentication/overview.html?lang=fr#authentication) et [Obtention d’un jeton de connexion pour les intégrations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-getting-login-token-integrations.html?lang=fr).
 
 ## Flux de serveur à serveur {#the-server-to-server-flow}
 

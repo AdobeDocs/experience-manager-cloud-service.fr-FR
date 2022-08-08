@@ -7,7 +7,7 @@ exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
 source-git-commit: 6e1408abde71c5400adaeaea130e4b7f9287169a
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 64%
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experienc
 >
 >* Adobe nécessite le déploiement et la configuration de [!DNL Adobe Workfront for Experience Manager enhanced connector] uniquement par le biais de partenaires certifiés ou [!DNL Adobe Professional Services]. S’il est déployé et configuré sans partenaire certifié ou sans [!DNL Adobe Professional Services], il n’est pas pris en charge par Adobe.
 >
->* Adobe peut apporter des mises à jour à [!DNL Adobe Workfront] et [!DNL Adobe Experience Manager], lesquelles peuvent rendre ce connecteur inutile. Si cela se produit, les clients peuvent être amenés à abandonner l’utilisation de ce connecteur.
+>* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
 >
 >* Adobe prend en charge les versions 1.7.4 et ultérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, voir l’étape 5(a) de [instructions d’installation du connecteur amélioré](workfront-connector-install.md).
 >
@@ -48,13 +48,13 @@ Avant d’installer le connecteur, procédez comme suit :
 
 Pour installer le module complémentaire dans [!DNL Experience Manager] as a [!DNL Cloud Service], procédez comme suit :
 
-1. Téléchargez le connecteur amélioré depuis [Distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
+1. Téléchargez le connecteur amélioré depuis la [distribution logicielle Adobe](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/workfront-tools.ui.apps.zip).
 
-1. [Accès](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=en) et cloner votre référentiel as a Cloud Service AEM à partir de Cloud Manager.
+1. [Accédez](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/accessing-repos.html?lang=fr) à votre référentiel AEM as a Cloud Service et clonez-le à partir de Cloud Manager.
 
-1. Ouvrez le référentiel as a Cloud Service AEM cloné à l’aide d’un IDE de votre choix.
+1. Ouvrez le référentiel AEM as a Cloud Service cloné à l’aide d’un IDE de votre choix.
 
-1. Placez le fichier zip du connecteur amélioré téléchargé à l’étape 1 à l’emplacement suivant :
+1. Placez le fichier zip du connecteur amélioré téléchargé à l’étape 1 à l’emplacement suivant :
 
    ```TXT
       /ui.apps/src/main/resources/<zip file>
@@ -62,7 +62,7 @@ Pour installer le module complémentaire dans [!DNL Experience Manager] as a [!D
 
    >[!NOTE]
    >
-   >Si la variable `resources` n’existe pas, créez le dossier .
+   >Si le dossier `resources` n’existe pas, créez-le.
 
 
 1. Ajoutez des dépendances `pom.xml` :
@@ -82,7 +82,7 @@ Pour installer le module complémentaire dans [!DNL Experience Manager] as a [!D
 
       >[!NOTE]
       >
-      >Veillez à mettre à jour le numéro de version du connecteur amélioré avant de copier la dépendance sur le parent. `pom.xml`.
+      >Veillez à mettre à jour le numéro de version du connecteur amélioré avant de copier la dépendance sur le parent `pom.xml`.
 
    1. Ajoutez une dépendance dans le fichier `all module pom.xml`.
 
@@ -109,15 +109,15 @@ Pour installer le module complémentaire dans [!DNL Experience Manager] as a [!D
    </embedded>
    ```
 
-   La cible de la section incorporée est définie sur `/apps/<path-to-project-install-folder>/install`. Ce chemin d’accès JCR `/apps/<path-to-project-install-folder>` doit être inclus dans les règles de filtrage de la variable `all/src/main/content/META-INF/vault/filter.xml` fichier . Les règles de filtrage du référentiel sont généralement dérivées du nom du programme. Utilisez le nom du dossier comme cible dans les règles existantes.
+   La cible de la section incorporée est définie sur `/apps/<path-to-project-install-folder>/install`. Ce chemin d’accès JCR `/apps/<path-to-project-install-folder>` doit être inclus dans les règles de filtrage du fichier `all/src/main/content/META-INF/vault/filter.xml`. Les règles de filtrage du référentiel sont généralement dérivées du nom du programme. Utilisez le nom du dossier comme cible dans les règles existantes.
 
 1. Envoyez les modifications au référentiel.
 
-1. Exécutez le pipeline pour [déployer les modifications dans Cloud Manager ;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Exécutez le pipeline pour [déployer les modifications dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=fr).
 
 1. Pour créer une configuration utilisateur système, créez `wf-workfront-users` dans le groupe d’utilisateurs [!DNL Experience Manager] et affectez l’autorisation `jcr:all` à `/content/dam`. Un utilisateur système `workfront-tools` est créée automatiquement et les autorisations requises sont gérées automatiquement. Tous les utilisateurs de [!DNL Workfront] qui utilisent le connecteur amélioré sont automatiquement ajoutés dans le cadre de ce groupe.
 
-Pour plus d’informations sur la mise à jour de la variable [!DNL Workfront for Experience Manager enhanced connector] d’une version précédente à la dernière version, cliquez sur [here](update-workfront-enhanced-connector.md).
+Pour plus d’informations sur la mise à jour du [!DNL Workfront for Experience Manager enhanced connector] d’une version précédente à la dernière version, cliquez [ici](update-workfront-enhanced-connector.md).
 
 ## Configurer la connexion entre [!DNL Experience Manager] as a [!DNL Cloud Service] et [!DNL Workfront] {#configure-connection}
 

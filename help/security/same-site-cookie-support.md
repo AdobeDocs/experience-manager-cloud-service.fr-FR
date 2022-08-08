@@ -5,7 +5,7 @@ exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
 source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
 workflow-type: tm+mt
 source-wordcount: '287'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -19,13 +19,13 @@ Pour contourner ce problème, vous devez définir l’attribut de cookie SameSit
 
 >[!CAUTION]
 >
->Le `SameSite=None` n’est appliqué que si le protocole est sécurisé (HTTPS).
+>Le paramètre `SameSite=None` n’est appliqué que si le protocole est sécurisé (HTTPS).
 >
->Si le protocole n’est pas sécurisé (HTTP), le paramètre est ignoré et le serveur affiche ce message WARN :
+>Si le protocole n’est pas sécurisé (HTTP), le paramètre est ignoré et le serveur affiche ce message WARN :
 >
 >`WARN com.day.crx.security.token.TokenCookie Skip 'SameSite=None'`
 
-Vous pouvez ajouter ce paramètre en procédant comme suit :
+Vous pouvez ajouter ce paramètre en procédant comme suit :
 
 1. Installez localement une version du SDK AEM Quickstart
 1. Accédez à la console web à l’adresse `http://serveraddress:serverport/system/console/configMgr`

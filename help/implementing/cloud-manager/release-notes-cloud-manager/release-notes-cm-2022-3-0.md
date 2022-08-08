@@ -6,7 +6,7 @@ exl-id: d09d48c5-6e0a-4a6a-85e9-1a60fdd6e5bf
 source-git-commit: 68586304724530f83649cffee76cefef3e1c8627
 workflow-type: tm+mt
 source-wordcount: '196'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Cette page présente les notes de mise à jour de Cloud Manager 2022.3.0 dans 
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2022.3.0 de Cloud Manager dans AEM as a Cloud Service est le 10 mars 2022. La prochaine version est prévue pour le 7 avril 2022.
+La date de publication de Cloud Manager version 2022.3.0 dans AEM as a Cloud Service est le 10 mars 2022. La prochaine version est prévue pour le 7 avril 2022.
 
 ## Nouveautés {#what-is-new}
 

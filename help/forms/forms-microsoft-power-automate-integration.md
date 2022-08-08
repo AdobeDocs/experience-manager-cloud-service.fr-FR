@@ -22,7 +22,7 @@ Vous pouvez configurer un formulaire adaptatif pour exécuter un flux cloud Micr
 
 L’éditeur de Forms adaptatif fournit la variable **Appeler un flux Microsoft® Power Automate** Les actions d’envoi pour envoyer des données de formulaires adaptatifs, des pièces jointes et un document d’enregistrement sont envoyées à Power Automate Cloud Flow. Pour utiliser l’action Envoyer afin d’envoyer les données capturées à Microsoft® Power Automate, [Connexion de votre instance Forms as a Cloud Service à Microsoft® Power Automate](forms-microsoft-power-automate-integration.md#connect-forms-server-with-power-automate)
 
-## Prérequis
+## Conditions préalables
 
 Les éléments suivants sont requis pour connecter un formulaire adaptatif à Microsoft® Power Automate :
 

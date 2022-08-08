@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1430'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,10 +40,10 @@ Consultez ces exemples de requêtes pour obtenir un aperçu de la création de r
 >
 >Selon votre instance, vous pouvez accéder directement à l’[interface GraphiQL incluse avec l’API GraphQL d’AEM](/help/headless/graphql-api/graphiql-ide.md) pour soumettre et tester des requêtes.
 >
->Vous pouvez accéder à l’éditeur de requêtes à partir de :
+>Vous pouvez accéder à l’éditeur de requêtes à partir de :
 >
 >* **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
->* directement; par exemple, `http://localhost:4502/aem/graphiql.html`
+>* directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 
 >[!NOTE]
@@ -276,7 +276,7 @@ query {
 }
 ```
 
-### Exemple de requête - Un fragment de ville unique et spécifique {#sample-single-specific-city-fragment}
+### Exemple de requête – Un fragment de ville unique et spécifique {#sample-single-specific-city-fragment}
 
 Il s’agit d’une requête qui renvoie les détails d’une entrée de fragment unique vers un emplacement spécifique dans le référentiel.
 
@@ -317,7 +317,7 @@ Il s’agit d’une requête qui renvoie les détails d’une entrée de fragmen
 }
 ```
 
-### Exemple de requête - Toutes les villes avec une variante nommée {#sample-cities-named-variation}
+### Exemple de requête – Toutes les villes avec une variante nommée {#sample-cities-named-variation}
 
 Si vous créez une nouvelle variante, appelée « Centre de Berlin » (`berlin_centre`), pour Berlin en tant que `city`, vous pouvez utiliser une requête afin de renvoyer des détails sur la variante.
 
@@ -1036,7 +1036,7 @@ query {
 }
 ```
 
-### Exemple de requête pour les métadonnées - Liste des métadonnées des prix intitulés GB {#sample-metadata-awards-gb}
+### Exemple de requête pour les métadonnées – Liste des métadonnées des prix intitulés GB {#sample-metadata-awards-gb}
 
 Cette requête illustre le filtrage de trois fragments imbriqués : `company`, `employee` et `award`.
 

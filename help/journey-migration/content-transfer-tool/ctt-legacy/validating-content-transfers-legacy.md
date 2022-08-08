@@ -7,11 +7,11 @@ exl-id: 304b7aee-1d84-4d90-a89b-0c532d5d9c92
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Validation des transferts de contenu (Legacy) {#validating-content-transfers}
+# Validation des transferts de contenu  (hérité) {#validating-content-transfers}
 
 ## Prise en main {#getting-started}
 

@@ -7,11 +7,11 @@ exl-id: 19021f40-d0a5-4e0c-a213-c421338cedeb
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '1638'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Gestion des référentiels de contenu volumineux (Legacy) {#handling-large-content-repositories}
+# Gestion des référentiels de contenu volumineux (hérité) {#handling-large-content-repositories}
 
 ## Présentation {#overview}
 
@@ -80,7 +80,7 @@ Vous pouvez utiliser l’onglet Mesures du conteneur pour déterminer la taille 
 * Pour mac, systèmes UNIX, exécutez la commande du sur le répertoire de la banque de données pour obtenir sa taille :
    `du -sh [path to datastore on the instance]`. Par exemple, si votre banque de données se trouve à l’adresse `/mnt/author/crx-quickstart/repository/datastore`, la commande suivante vous permet d’obtenir sa taille : `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
-* Pour Windows, utilisez la commande DIR du répertoire de la banque de données pour obtenir sa taille :
+* Pour Windows, utilisez la commande DIR du répertoire de la banque de données pour obtenir sa taille :
    `dir /a/s [location of datastore]`.
 
 ### 1. Installez AzCopy {#install-azcopy}
@@ -137,7 +137,7 @@ s3SecretKey=--REDACTED--
 
 #### Banque de données Fichier {#file-data-store-azcopy-config}
 
-Votre fichier `azcopy.config` doit contenir la propriété azcopyPath, ainsi qu’une propriété facultative repository.home qui pointe vers l&#39;emplacement de la banque de données de fichiers. Utilisez les valeurs correctes pour votre instance.
+Votre fichier `azcopy.config` doit contenir la propriété azcopyPath, ainsi qu’une propriété facultative repository.home qui pointe vers l’emplacement de la banque de données de fichiers. Utilisez les valeurs correctes pour votre instance.
 Banque de données Fichier
 
 ```

@@ -1,5 +1,5 @@
 ---
-title: Dépannage de l’outil de transfert de contenu (Legacy)
+title: Dépannage de l’outil de transfert de contenu  (hérité)
 description: Dépannage de l’outil de transfert de contenu
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Dépannage de l’outil de transfert de contenu (Hérité) {#troubleshoot-content-transfer-tool}
+# Dépannage de l’outil de transfert de contenu  (hérité) {#troubleshoot-content-transfer-tool}
 
 
 ## ID d’objets blob manquants {#missing-blobs}

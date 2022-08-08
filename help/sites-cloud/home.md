@@ -1,18 +1,18 @@
 ---
-title: Ressources d’assistance pour les sites as a Cloud Service Experience Manager
+title: Ressources d’assistance pour Experience Manager as a Cloud Service Sites
 description: Obtenez la liste complète de toutes nos ressources d’assistance pour AEM Cloud Services. Trouvez les réponses à vos questions sur AEM Sites as a Cloud Service.
 landing-page-description: Découvrez comment créer et administrer AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '405'
+ht-degree: 100%
 
 ---
 
-# AEM Sites as a Cloud Service {#aem-sites-guide}
+# AEM Sites as a Cloud Service {#aem-sites-guide}
 
-Cette page fournit une liste complète de toutes nos ressources de prise en charge des services cloud AEM. Obtenez des réponses à vos [!DNL AEM Sites as a Cloud Service] questions.
+Cette page présente la liste complète de toutes nos ressources d’assistance pour AEM Cloud Services. Obtenez des réponses à vos questions sur [!DNL AEM Sites as a Cloud Service].
 
 ## Principaux articles relatifs à Sites {#key-articles}
 

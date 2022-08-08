@@ -5,7 +5,7 @@ exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -88,73 +88,73 @@ Les modèles suivants sont disponibles lors de l’utilisation de l’assistant 
 | Canal de séquence | Permet de créer un canal qui lit les composants de manière séquentielle (l’un après l’autre comme une série de diapositives). |
 | Canal d’écran partagé barre en L gauche ou droite | Permet aux auteurs de contenus d’afficher différents types de ressources dans des zones de taille appropriée. |
 
-## Utilisation des détails d’attribution par défaut pour les canaux {#default-channels}
+## Utilisation des informations d’attribution par défaut pour les canaux {#default-channels}
 
-Cette fonctionnalité vous permet de définir un planning d’activation par défaut pour un canal et de l’utiliser par défaut pour chaque affectation pour un affichage. Il fournit une méthode permettant de ne pas répéter la définition de planification encombrante.
+Cette fonctionnalité vous permet de définir un planning d’activation par défaut pour un canal et de l’utiliser par défaut pour chaque affectation pour un affichage. Elle permet de ne pas répéter une définition lourde de planification.
 
-### Création des détails d’affectation par défaut d’un canal {#create-default}
+### Création des informations d’attribution par défaut pour les canaux {#create-default}
 
-1. Accédez à la page de détails du canal que vous souhaitez configurer.
-1. Recherchez la variable **Détails de l’affectation par défaut** sur la page.
+1. Accédez à la page d’information du canal que vous souhaitez configurer.
+1. Recherchez la mosaïque **Informations d’attribution par défaut** sur la page.
 
    ![image](/help/screens-cloud/assets/display/Assignment1.png)
 
-1. Cliquez sur **Définition des détails par défaut**.
-1. Configurez les détails de l’affectation par défaut, notamment la priorité, les dates de début et de fin, ainsi que les modèles de périodicité pour le canal, puis cliquez sur **Attribuer**.
+1. Cliquez sur **Définition des informations par défaut**.
+1. Configurez les informations d’attribution par défaut, notamment la priorité, les dates de début et de fin, ainsi que les modèles de périodicité pour le canal, puis cliquez sur **Attribuer**.
 
    ![image](/help/screens-cloud/assets/display/Assignments2.png)
 
-1. Notez que les détails de l’affectation sont affichés dans le **Détails de l’affectation par défaut** mosaïque :
+1. Notez que les informations d’attribution sont affichées dans la mosaïque **Informations d’attribution par défaut** :
 
    ![image](/help/screens-cloud/assets/display/Assignments3.png)
 
-Cette mosaïque affiche les informations suivantes :
-* Priorité par défaut du canal dans l’affichage.
-* Les dates de début et de fin de l’activation lorsque la lecture du canal est planifiée.
-* Vue synthétique de la périodicité (horaire/quotidien/hebdomadaire/mensuel/annuel, ainsi que nom donné à cette périodicité).
+Cette mosaïque affiche les informations suivantes :
+* La priorité par défaut du canal dans l’affichage
+* Les dates de début et de fin de l’activation lorsque la lecture du canal est planifiée
+* Un résumé de l’affichage de la périodicité (horaire/quotidien/hebdomadaire/mensuel/annuel, ainsi que le nom donné à cette périodicité)
 
-### Utilisation des détails d’affectation par défaut lors de l’affectation à un affichage {#default-display}
+### Utilisation des informations d’attribution par défaut lors de l’affectation à un affichage {#default-display}
 
-Les canaux dont les détails d’affectation par défaut peuvent être affectés affichent de la même manière que les canaux standard, avec l’option ajoutée pour exploiter les détails d’affectation par défaut au lieu de définir manuellement ceux qui sont personnalisés à chaque fois.
+Les canaux avec des informations d’attribution par défaut peuvent être affectés à des affichages de la même manière que les canaux standard, avec en plus la possibilité d’exploiter les informations d’attribution par défaut au lieu de définir manuellement des informations personnalisées, à chaque fois.
 
-1. Accédez à la page des détails d’affichage à laquelle vous souhaitez attribuer le canal, puis cliquez sur le bouton **Attribuer le canal**.
-vous pouvez également sélectionner l’affichage souhaité dans la vue d’inventaire et cliquer sur le bouton **Attribuer le canal**.
-1. La boîte de dialogue d’attribution de canaux s’ouvre.
+1. Accédez à la page des informations de l’affichage auquel vous souhaitez attribuer le canal, puis cliquez sur **Attribuer le canal**.
+Vous pouvez également sélectionner l’affichage souhaité dans la vue d’inventaire et cliquer sur le bouton **Attribuer le canal**.
+1. La boîte de dialogue Attribution de canaux s’ouvre.
 
    ![image](/help/screens-cloud/assets/display/Assignments4.png)
 
-1. Sélectionnez le canal souhaité qui comporte les détails d’attribution par défaut dans le sélecteur de canal.
-1. Notez les modifications apportées à la boîte de dialogue d’attribution de canal pour vous permettre de choisir les détails d’attribution par défaut ou de sélectionner des détails personnalisés :
+1. Sélectionnez le canal souhaité avec des informations d’attribution par défaut dans le sélecteur de canal.
+1. Notez les modifications apportées à la boîte de dialogue d’attribution de canal pour vous permettre de choisir les informations d’attribution par défaut ou de sélectionner des détails personnalisés :
 
    ![image](/help/screens-cloud/assets/display/Assignments5.png)
 
-1. Cliquez sur **Attribuer** pour finaliser l’affectation, ou cliquez sur **Définition des détails d’affectation personnalisée** si vous préférez remplacer les valeurs par défaut par d’autres valeurs dans le contexte de cet affichage particulier.
+1. Cliquez sur **Attribuer** pour finaliser l’affectation ou cliquez sur **Définition des informations d’affectation personnalisée** si vous préférez remplacer les valeurs par défaut par d’autres valeurs dans le contexte de cet affichage particulier.
 
    ![image](/help/screens-cloud/assets/display/Assignments6.png)
 
-1. Remarquez la variable **Canaux attribués** La mosaïque est mise à jour avec la nouvelle affectation :
+1. Notez que la mosaïque **Canaux attribués** a été mise à jour avec la nouvelle affectation :
 
    ![image](/help/screens-cloud/assets/display/Assignments7.png)
 
-1. Notez que les canaux auront une icône différente selon qu’ils utilisent des plannings personnalisés (icône de cadenas) ou héritent des détails par défaut (icône représentant une horloge mondiale). Cliquez ensuite sur ces icônes pour afficher les détails de la planification.
-1. Notez également que les actions disponibles pour chaque type diffèrent.
+1. Notez que les canaux disposeront d’une icône différente selon qu’ils utilisent des plannings personnalisés (icône d’horloge) ou héritent des informations par défaut (icône d’horloge avec un globe). Cliquez ensuite sur ces icônes pour afficher les détails de la planification.
+1. Notez également que les actions disponibles pour chaque type seront différentes.
 
    ![image](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Remarque :** Une affectation de canal qui utilise les détails d’attribution par défaut ne sera pas modifiable dans le contexte de l’affichage.
+**Remarque :** Une affectation de canal qui utilise les informations d’attribution par défaut ne sera pas modifiable dans le contexte de l’affichage.
 
-* Si vous devez le modifier en affectation personnalisée, vous devrez d’abord le supprimer, puis le rajouter à l’aide de la fonction **Définition des détails d’affectation personnalisée** .
-* Si vous devez modifier les propriétés des détails d’affectation par défaut, vous devrez effectuer cette opération directement à partir de la page des détails du canal.
+* Si vous devez la modifier et utiliser une affectation personnalisée, vous devrez d’abord la supprimer, puis la rajouter à l’aide de l’option **Définition des informations d’affectation personnalisée**.
+* Si vous devez modifier les propriétés des informations d’attribution par défaut, vous devrez effectuer cette opération directement à partir de la page des informations du canal.
 
-### Suppression des détails d’attribution par défaut d’un canal {#remove-display}
+### Suppression des informations d’attribution par défaut d’un canal {#remove-display}
 
-1. Accédez à la page des détails du canal que vous souhaitez supprimer les détails d’attribution par défaut.
-1. Recherchez la variable **Détails de l’affectation par défaut** mosaïque dans la page
-1. Cliquez sur le bouton **Supprimer la valeur par défaut**.
+1. Accédez à la page des informations du canal dont vous souhaitez supprimer les informations d’attribution par défaut.
+1. Recherchez la mosaïque **Informations d’attribution par défaut** dans la page.
+1. Cliquez sur **Supprimer la valeur par défaut**.
 
    ![image](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. Une boîte de dialogue de confirmation s’affiche et les détails correspondent à l’une des conditions suivantes :
+1. Une boîte de dialogue de confirmation s’affiche et les détails correspondent à l’une des conditions suivantes :
    **a.** Le canal n’est utilisé dans aucun affichage.
 
    ![image](/help/screens-cloud/assets/display/Assignments10.png)
@@ -167,10 +167,10 @@ vous pouvez également sélectionner l’affichage souhaité dans la vue d’inv
 
 ![image](/help/screens-cloud/assets/display/Assignments12.png)
 
-1. Cliquez sur le bouton *Supprimer* pour valider la modification.
+1. Cliquez sur *Supprimer* pour valider la modification.
 
-**Remarque :** La suppression des détails d’affectation par défaut d’un canal supprime les affectations correspondantes sur tous les affichages qui l’utilisaient.
-Par conséquent, cela peut donner lieu à des écrans vierges s’il n’y a pas de contenu alternatif à lire sur ces écrans.
+**Remarque :** La suppression des informations d’attribution par défaut d’un canal supprime les affectations correspondantes sur tous les affichages qui l’utilisaient.
+Cela peut par conséquent donner lieu à des écrans vierges s’il n’y a pas d’autre contenu à lire sur ces écrans.
 
 ## Et après ? {#whats-next}
 

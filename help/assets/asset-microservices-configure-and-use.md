@@ -8,7 +8,7 @@ exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
 source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
 workflow-type: tm+mt
 source-wordcount: '2899'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -185,7 +185,7 @@ Pour vérifier que les ressources sont traitées, prévisualisez les rendus gén
 
 S’il s’avère qu’un traitement supplémentaire des ressources est nécessaire, mais qu’il ne peut pas être effectué à l’aide des profils de traitement, des workflows de post-traitement peuvent être ajoutés à la configuration. Le post-traitement permet d’ajouter un traitement entièrement personnalisé en plus du traitement configurable à l’aide des microservices de ressources.
 
-les workflows de post-traitement, ou [Workflow de démarrage automatique](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html), s’ils sont configurés, sont automatiquement exécutés par [!DNL Experience Manager] une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de workflows pour les déclencher. Voici quelques exemples :
+Les workflows de post-traitement, ou [workflows Auto-start](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/auto-start-workflows.html?lang=fr), s’ils sont configurés, sont automatiquement exécutés par [!DNL Experience Manager] une fois le traitement des microservices terminé. Il n’est pas nécessaire d’ajouter manuellement des lanceurs de workflows pour les déclencher. Voici quelques exemples :
 
 * Étapes du workflow personnalisé de traitement des ressources.
 * Intégrations pour ajouter des métadonnées ou des propriétés à des ressources provenant de systèmes externes (par exemple, des informations sur des produits ou des processus).
@@ -234,31 +234,31 @@ Vous pouvez configurer le service d’exécution de workflow personnalisé pour 
 
 Pour savoir comment déployer une configuration OSGi, voir [déploiement vers [!DNL Experience Manager]](/help/implementing/deploying/overview.md).
 
-#### Désactiver l’exécution du workflow de post-traitement
+#### Désactivation de l’exécution du workflow de post-traitement
 
-Lorsque le post-traitement n’est pas nécessaire, créez et utilisez un modèle de workflow &quot;vide&quot; dans la variable __Processus de démarrage automatique__ sélection.
+Lorsque le post-traitement n’est pas nécessaire, créez et utilisez un modèle de workflow « vide » dans la sélection du __Processus de démarrage automatique__.
 
 ##### Création du modèle de workflow de démarrage automatique désactivé
 
-1. Accédez à __Outils > Workflows > Modèles__
-1. Sélectionner __Créer > Créer un modèle__ de la barre d’actions supérieure ;
-1. Attribuez un titre et un nom au nouveau modèle de processus, par exemple :
-   * Titre : Désactiver le workflow de démarrage automatique
-   * Nom : disable-auto-start-workflow
-1. Sélectionner __Terminé__ pour créer le modèle de processus
-1. __Sélectionner__ et __Modifier__ le nouveau modèle de processus
-1. Dans l’éditeur de modèle de processus, sélectionnez __Étape 1__ de la définition de modèle et supprimez-la.
-1. Ouvrez le __Panneau latéral__, puis sélectionnez __Étapes__
-1. Faites glisser le __Workflow Ressource de mise à jour de gestion des actifs numériques terminé__ étape dans la définition de modèle
-1. Sélectionnez la __Informations sur la page__ (en regard du bouton __Panneau latéral__ (bascule), puis sélectionnez __Ouvrir les propriétés__
-1. Sous , __De base__ onglet, sélectionnez __Processus transitoire__
-1. Sélectionner __Enregistrer et fermer__ à partir de la barre d’actions supérieure
-1. Sélectionner __Synchronisation__ dans la barre d’actions supérieure
+1. Accédez à __Outils > Workflows > Modèles__.
+1. Sélectionnez __Créer > Créer un formulaire de modèle__ dans la barre d’actions supérieure.
+1. Attribuez un titre et un nom au nouveau modèle de processus, par exemple :
+   * Titre : désactiver le workflow de démarrage automatique
+   * Nom : disable-auto-start-workflow
+1. Sélectionnez __Terminé__ pour créer le modèle de processus.
+1. __Sélectionnez__ et __modifiez__ le nouveau modèle de processus.
+1. Dans l’éditeur de modèle de processus, sélectionnez l’__Étape 1__ de la définition de modèle et supprimez-la.
+1. Ouvrez le __Panneau latéral__ puis sélectionnez __Étapes__.
+1. Faites glisser l’étape __Ressources de mise à jour de gestion des actifs numériques, processus terminé__ dans la définition de modèle.
+1. Sélectionnez le bouton __Informations sur la page__ (en face du bouton [bascule] __Panneau latéral__), puis sélectionnez __Ouvrir les propriétés__.
+1. Dans l’onglet __De base__, sélectionnez __Processus transitoire__.
+1. Sélectionnez __Enregistrer et fermer__ à partir de la barre d’actions supérieure.
+1. Sélectionnez __Synchronisation__ dans la barre d’actions supérieure.
 1. Fermeture de l’éditeur de modèle de processus
 
 ##### Application du modèle de workflow de démarrage automatique désactivé
 
-Suivez les étapes décrites dans la section [appliquer un modèle de workflow à un dossier ;](#apply-workflow-model-to-folder) et définissez la variable __Désactiver le workflow de démarrage automatique__ comme la propriété __Processus de démarrage automatique__ pour les dossiers ne nécessitent pas de post-traitement des ressources.
+Suivez les étapes décrites dans la section [appliquer un modèle de workflow à un dossier](#apply-workflow-model-to-folder) et définissez le __workflow de démarrage automatique désactivé__ comme __workflow de démarrage automatique__ pour les dossiers qui ne nécessitent pas de post-traitement des ressources.
 
 ## Bonnes pratiques et restrictions {#best-practices-limitations-tips}
 

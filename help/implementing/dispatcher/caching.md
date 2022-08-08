@@ -6,7 +6,7 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 45%
+ht-degree: 75%
 
 ---
 
@@ -31,7 +31,7 @@ Define DISABLE_DEFAULT_CACHING
 Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale nécessite un réglage précis de l’en-tête d’âge (avec une valeur basée sur le jour du calendrier) puisque, par défaut, l’en-tête d’âge est défini sur 0. Cela étant, **faites preuve de prudence lorsque vous désactivez la mise en cache par défaut.**
 
 * Peut être remplacé pour tout le contenu HTML/texte en définissant la variable `EXPIRATION_TIME` dans `global.vars` avec les outils du Dispatcher SDK AEM as a Cloud Service.
-* peut être remplacé à un niveau plus détaillé, y compris le contrôle indépendant du réseau de diffusion de contenu et du cache du navigateur, avec les directives apache mod_headers suivantes :
+* Peut être remplacé à un niveau plus détaillé, y compris le contrôle indépendant du réseau de diffusion de contenu et du cache du navigateur, avec les directives apache mod_headers suivantes :
 
    ```
    <LocationMatch "^/content/.*\.(html)$">
@@ -42,7 +42,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
    ```
 
    >[!NOTE]
-   >L’en-tête Surrogate-Control s’applique au réseau de diffusion de contenu géré par l’Adobe. Si vous utilisez un [CDN géré par le client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=en#point-to-point-CDN), un en-tête différent peut être requis en fonction de votre fournisseur de réseau de diffusion de contenu.
+   >L’en-tête Surrogate-Control s’applique au réseau de diffusion de contenu géré par Adobe. Si vous utilisez un [réseau de diffusion de contenu géré par le client](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/content-delivery/cdn.html?lang=fr#point-to-point-CDN), un en-tête différent peut être requis en fonction de votre fournisseur de réseau de diffusion de contenu.
 
    Faites preuve de prudence lorsque vous définissez des en-têtes de contrôle du cache global ou ceux qui correspondent à une expression régulière (regex) large afin qu’ils ne soient pas appliqués au contenu que vous souhaitez peut-être garder confidentiel. Envisagez l’utilisation de plusieurs directives pour vous assurer que les règles sont appliquées de manière extrêmement détaillée. Cela étant dit, AEM as a Cloud Service va supprimer l’en-tête de cache s’il détecte qu’il a été appliqué à un élément considéré comme impossible à mettre en cache par le Dispatcher, comme décrit dans la documentation du Dispatcher. Pour forcer AEM à toujours appliquer les en-têtes de mise en cache, vous pouvez ajouter l’option **always** comme suit :
 
@@ -83,11 +83,11 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
 * En utilisant la structure de bibliothèque côté client d’AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, puisque toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique.  En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que vous puissiez découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache est défini sur non modifiable (immutable) ou 30 jours (30 days) pour les navigateurs plus anciens qui ne respectent pas la valeur non modifiable.
 * Voir la section [Bibliothèques côté client et cohérence des versions](#content-consistency) pour en savoir plus.
 
-### Images et tout contenu suffisamment volumineux pour être stocké dans le stockage d’objets blob {#images}
+### Images et tout contenu suffisamment volumineux pour être stocké dans le stockage blob {#images}
 
-Le comportement par défaut des programmes créés après la mi-mai 2022 (en particulier, pour les identifiants de programme supérieurs à 65 000) est de mettre en cache par défaut, tout en respectant le contexte d’authentification de la requête. Les programmes plus anciens (id de programme égal ou inférieur à 65 000) ne mettent pas en cache le contenu de l’objet Blob par défaut.
+Le comportement par défaut des programmes créés après la mi-mai 2022 (en particulier, pour les identifiants de programme supérieurs à 65 000) est de mettre en cache par défaut, tout en respectant le contexte d’authentification de la requête. Les programmes plus anciens (id de programme égal ou inférieur à 65 000) ne mettent pas en cache le contenu de l’objet Blob par défaut.
 
-Dans les deux cas, les en-têtes de mise en cache peuvent être remplacés à un niveau de granularité plus fin au niveau de la couche Apache/dispatcher à l’aide de l’Apache. `mod_headers` par exemple :
+Dans les deux cas, les en-têtes de mise en cache peuvent être remplacés à un niveau de granularité plus fin au niveau de la couche Apache ou du dispatcher à l’aide des directives Apache `mod_headers`, par exemple :
 
 ```
    <LocationMatch "^/content/.*\.(jpeg|jpg)$">
@@ -96,29 +96,29 @@ Dans les deux cas, les en-têtes de mise en cache peuvent être remplacés à un
    </LocationMatch>
 ```
 
-Lors de la modification des en-têtes de mise en cache au niveau de la couche du Dispatcher, veillez à ne pas mettre en cache trop largement. Consultez la discussion dans la section HTML/texte . [above](#html-text). Assurez-vous également que les ressources destinées à être conservées en privé (plutôt que mises en cache) ne font pas partie de la variable `LocationMatch` filtres de directive.
+Lors de la modification des en-têtes de mise en cache au niveau de la couche du Dispatcher, veillez à ne pas utiliser trop largement la mise en cache, consultez la discussion dans la section HTML/texte [ci-dessus](#html-text). Assurez-vous également que les ressources destinées à être conservées en privé (plutôt que mises en cache) ne font pas partie des filtres de directive `LocationMatch`.
 
 #### Nouveau comportement de mise en cache par défaut {#new-caching-behavior}
 
 La couche AEM définit les en-têtes de cache selon que l’en-tête de cache a déjà été défini et la valeur du type de requête. Notez que si aucun en-tête de contrôle du cache n’a été défini, le contenu public est mis en cache et le trafic authentifié est défini sur privé. Si un en-tête de contrôle du cache a été défini, les en-têtes du cache ne seront pas touchés.
 
-| L’en-tête de contrôle du cache existe ? | Type de demande | AEM définit les en-têtes de cache sur |
+| L’en-tête de contrôle du cache existe ? | Type de demande | AEM définit les en-têtes de cache sur |
 |------------------------------|---------------|------------------------------------------------|
-| Non | public | Cache-Control: public, max-age=600, non modifiable |
-| Non | authentifié | Cache-Control: privé, max-age=600, non modifiable |
+| Non | public | Cache-Control: public, max-age=600, immutable |
+| Non | authentifié | Cache-Control: private, max-age=600, immutable |
 | Oui | quelconque | inchangé |
 
-Bien que cela ne soit pas recommandé, il est possible de modifier le nouveau comportement par défaut pour suivre l’ancien comportement (identifiants de programme égaux ou inférieurs à 65 000) en définissant la variable d’environnement Cloud Manager. `AEM_BLOB_ENABLE_CACHING_HEADERS` sur false.
+Bien que cela ne soit pas recommandé, il est possible de modifier le nouveau comportement par défaut pour suivre l’ancien comportement (identifiants de programme égaux ou inférieurs à 65 000) en définissant la variable d’environnement Cloud Manager. `AEM_BLOB_ENABLE_CACHING_HEADERS` sur false.
 
 #### Ancien comportement de mise en cache par défaut {#old-caching-behavior}
 
 Par défaut, le calque AEM ne met pas en cache le contenu blob.
 
 >[!NOTE]
->Il est recommandé de modifier l’ancien comportement par défaut pour qu’il soit cohérent avec le nouveau comportement (identifiants de programme supérieurs à 65 000) en définissant la variable d’environnement Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS sur true. Si le programme est déjà actif, vérifiez qu’après les modifications, le contenu se comporte comme prévu.
+>Il est recommandé de modifier l’ancien comportement par défaut pour qu’il soit cohérent avec le nouveau comportement (identifiants de programme supérieurs à 65 000) en définissant la variable d’environnement Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS sur true. Si le programme est déjà actif, vérifiez que le contenu se comporte comme prévu une fois les modifications appliquées.
 
 >[!NOTE]
->Les autres méthodes, dont la méthode [dispatcher-ttl AEM projet ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplace pas les valeurs.
+>Les autres méthodes, y compris celle du [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne permettront pas de remplacer les valeurs.
 
 ### Autres types de fichiers de contenu dans le magasin de nœuds {#other-content}
 
@@ -128,15 +128,15 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
 
 ### Autres optimisations {#further-optimizations}
 
-* Éviter d’utiliser `User-Agent` dans le `Vary` en-tête . Les anciennes versions de la configuration par défaut du Dispatcher (antérieures à l’archétype version 28) l’incluaient et nous vous recommandons de la supprimer en suivant les étapes ci-dessous.
-   * Recherchez les fichiers vhost dans `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`
-   * Supprimez ou commentez la ligne : `Header append Vary User-Agent env=!dont-vary` de tous les fichiers vhost, à l’exception de default.vhost, qui est en lecture seule
-* Utilisez la variable `Surrogate-Control` en-tête pour contrôler la mise en cache du réseau CDN indépendamment de la mise en cache du navigateur
-* Envisager d’appliquer [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) et [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) afin de permettre l’actualisation de l’arrière-plan et d’éviter les pertes de cache, en maintenant le contenu à jour et rapide pour les utilisateurs.
-   * Il existe de nombreuses façons d&#39;appliquer ces directives, mais en ajoutant 30 minutes `stale-while-revalidate` à tous les en-têtes de contrôle du cache est un bon point de départ.
-* Voici quelques exemples pour divers types de contenu, qui peuvent être utilisés comme guide lors de la configuration de vos propres règles de mise en cache. Veuillez soigneusement réfléchir et tester votre configuration et vos exigences spécifiques :
+* Évitez d’utiliser `User-Agent` dans l’en-tête `Vary`. Les anciennes versions de la configuration par défaut du Dispatcher (antérieures à l’archétype version 28) incluaient celui-ci, nous vous recommandons de le supprimer en suivant les étapes ci-dessous.
+   * Recherchez les fichiers vhost dans `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`.
+   * Supprimez ou mettez en commentaire la ligne : `Header append Vary User-Agent env=!dont-vary` de tous les fichiers vhost, à l’exception de default.vhost, qui est en lecture seule.
+* Utilisez l’en-tête `Surrogate-Control` pour contrôler la mise en cache du réseau CDN indépendamment de la mise en cache du navigateur.
+* Envisagez d’appliquer les directives [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) et [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) afin de permettre l’actualisation de l’arrière-plan et d’éviter les pertes de cache, en maintenant le contenu à jour et rapide pour les utilisateurs.
+   * Il existe de nombreuses façons d’appliquer ces directives, mais en ajoutant un `stale-while-revalidate` de 30 minutes à tous les en-têtes de contrôle du cache est un bon point de départ.
+* Voici quelques exemples de divers types de contenu qui peuvent être utilisés comme vous guider lors de la configuration de vos propres règles de mise en cache. Réfléchissez à la spécificité de votre configuration et de vos exigences et testez-les soigneusement :
 
-   * Mettez en cache les ressources de bibliothèque cliente modifiables pendant 12h et l’actualisation en arrière-plan après 12h.
+   * Mettez en cache les ressources de bibliothèque cliente modifiables pendant 12 h et l’actualisation en arrière-plan après 12 h.
 
       ```
       <LocationMatch "^/etc\.clientlibs/.*\.(?i:json|png|gif|webp|jpe?g|svg)$">
@@ -145,7 +145,7 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
       </LocationMatch>
       ```
 
-   * Mettre en cache les ressources de bibliothèque cliente non modifiables à long terme (30 jours) avec actualisation de l’arrière-plan afin d’éviter la fonction MISS.
+   * Mettez en cache les ressources de bibliothèque cliente non modifiables à long terme (30 jours) avec actualisation de l’arrière-plan afin d’éviter la fonction MISS.
 
       ```
       <LocationMatch "^/etc\.clientlibs/.*\.(?i:js|css|ttf|woff2)$">
@@ -154,7 +154,7 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
       </LocationMatch>
       ```
 
-   * Mise en cache des pages de HTML pendant 5 min avec actualisation en arrière-plan 1 h sur le navigateur et 12 h sur le réseau de diffusion de contenu. Les en-têtes de contrôle du cache seront toujours ajoutés. Il est donc important de s’assurer que les pages HTML correspondantes sous /content/* sont destinées à être publiques. Si ce n’est pas le cas, pensez à utiliser une expression régulière plus spécifique.
+   * Mettez en cache des pages HTML pendant 5 min avec une actualisation en arrière-plan de 1 h sur le navigateur et de 12 h sur le réseau de diffusion de contenu. Les en-têtes de contrôle du cache seront toujours ajoutés. Il est donc important de s’assurer que les pages HTML correspondantes sous /content/* sont destinées à être publiques. Si ce n’est pas le cas, pensez à utiliser une expression régulière plus spécifique.
 
       ```
       <LocationMatch "^/content/.*\.html$">
@@ -165,7 +165,7 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
       </LocationMatch>
       ```
 
-   * Mettez en cache les réponses json de l’exportateur de modèles Sling/services de contenu pendant 5 minutes avec une actualisation en arrière-plan de 1 h sur le navigateur et de 12 h sur le réseau de diffusion de contenu.
+   * Mettez en cache les réponses json de l’exportateur de modèles services/Sling de contenu pendant 5 minutes avec une actualisation en arrière-plan de 1 h sur le navigateur et de 12 h sur le réseau de diffusion de contenu.
 
       ```
       <LocationMatch "^/content/.*\.model\.json$">
@@ -175,7 +175,7 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
       </LocationMatch>
       ```
 
-   * Mettez en cache les URL non modifiables du composant d’image principal à long terme (30 jours) avec actualisation de l’arrière-plan afin d’éviter la mise à niveau.
+   * Mettez en cache les URL non modifiables du composant d’image principal à long terme (30 jours) avec actualisation de l’arrière-plan afin d’éviter la fonction MISS.
 
       ```
       <LocationMatch "^/content/.*\.coreimg.*\.(?i:jpe?g|png|gif|svg)$">
@@ -184,7 +184,7 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
       </LocationMatch>
       ```
 
-   * Mise en cache de ressources modifiables de la gestion des actifs numériques (DAM), telles que des images et des vidéos, pendant 24 h, et actualisation de l’arrière-plan après 12 h, afin d’éviter la fonction MISS
+   * Mettez en cache des ressources modifiables de la gestion des actifs numériques, telles que des images et des vidéos, pendant 24 h, avec actualisation de l’arrière-plan après 12 h afin d’éviter la fonction MISS.
 
       ```
       <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
@@ -193,9 +193,9 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
       </LocationMatch>
       ```
 
-### Comportement de la requête d’HEAD {#request-behavior}
+### Comportement de la requête HEAD {#request-behavior}
 
-Lorsqu’une demande d’HEAD est reçue sur le réseau de diffusion de contenu Adobe pour une ressource qui est **not** mise en cache, la requête est transformée et reçue par le Dispatcher et/ou l’instance d’AEM en tant que requête de GET. Si la réponse peut être mise en cache, les requêtes HEAD suivantes seront diffusées à partir du réseau de diffusion de contenu. Si la réponse ne peut pas être mise en cache, les requêtes HEAD suivantes seront transmises au Dispatcher et/ou à l’instance d’AEM pendant une période qui dépend de la variable `Cache-Control` TTL.
+Lorsqu’une requête HEAD est reçue sur le réseau de diffusion de contenu Adobe pour une ressource qui n’est **pas** mise en cache, la requête est transformée et reçue par le Dispatcher et l’instance AEM en tant que requête GET. Si la réponse peut être mise en cache, les requêtes HEAD suivantes seront diffusées à partir du réseau de diffusion de contenu. Si la réponse ne peut pas être mise en cache, les requêtes HEAD suivantes seront transmises au Dispatcher et à l’instance AEM pendant une période qui dépend du TTL `Cache-Control`.
 
 ## Invalidation du cache du Dispatcher {#disp}
 
@@ -205,7 +205,7 @@ En général, il n’est pas nécessaire d’invalider le cache du Dispatcher. V
 
 Comme les versions précédentes d’AEM, la publication ou l’annulation de publication des pages effacera le contenu du cache du Dispatcher. Si un problème de mise en cache est suspecté, les clients doivent publier de nouveau les pages en question et s’assurer qu’un hôte virtuel correspond à l’hôte local ServerAlias, obligatoire pour l’invalidation du cache du Dispatcher.
 
-Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’une ressource de l’auteur, elle utilise l’agent de vidage pour invalider les chemins d’accès appropriés sur son Dispatcher. Le chemin d’accès mis à jour est supprimé du cache du Dispatcher, ainsi que de ses parents, jusqu’à un niveau (vous pouvez le configurer avec l’événement [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#invalidating-files-by-folder-level)).
+Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’une ressource de l’auteur, elle utilise l’agent de vidage pour invalider les chemins d’accès appropriés sur son Dispatcher. Le chemin d’accès mis à jour est supprimé du cache du Dispatcher, ainsi que de ses parents, jusqu’à un niveau (que vous pouvez configurer à l’aide de [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#invalidating-files-by-folder-level)).
 
 ## Invalidation explicite du cache du Dispatcher {#explicit-invalidation}
 

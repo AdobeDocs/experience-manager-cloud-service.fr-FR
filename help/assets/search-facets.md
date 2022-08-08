@@ -7,7 +7,7 @@ exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
 source-wordcount: '2397'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -70,9 +70,9 @@ Pour mapper les options à la propriété correspondante, créez une structure d
 
 La propriété `jcr:title` est un nom convivial de l’option qui apparaît dans le panneau Filtres. Le champ `value` est utilisé dans la demande pour correspondre à la propriété spécifiée.
 
-Lorsque vous sélectionnez une option, la recherche est effectuée en fonction de la propriété `value` du nœud d’option et de ses nœuds enfants, le cas échéant. L’arborescence entière sous le nœud d’option est parcourue et la propriété `value` de chaque nœud enfant est combinée à l’aide d’une opération OU pour former la requête.
+Lorsque vous sélectionnez une option, la recherche est effectuée en fonction de la propriété `value` du nœud d’option et de ses nœuds enfants, le cas échéant. L’arborescence entière sous le nœud d’option est parcourue et la propriété `value` de chaque nœud enfant est combinée à l’aide d’une opération OR pour former la requête.
 
-Par exemple, si vous sélectionnez Images comme type de fichier, la requête de ressources est créée en combinant la propriété `value` à l’aide d’une opération OU. Par exemple, la requête relative à des images est créée en combinant les résultats correspondants pour *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* et *image/tiff* pour la propriété `jcr:content/metadata/dc:format` à l’aide d’une opération OU.
+Par exemple, si vous sélectionnez Images comme type de fichier, la requête de ressources est créée en combinant la propriété `value` à l’aide d’une opération OR. Par exemple, la requête relative à des images est créée en combinant les résultats correspondants pour *image/jpeg*, *image/gif*, *image/png*, *image/pjpeg* et *image/tiff* pour la propriété `jcr:content/metadata/dc:format` à l’aide d’une opération OR.
 
 La propriété de valeur d’un type de fichier, telle que vue dans CRXDE, est utilisée pour que les requêtes fonctionnent.
 
@@ -145,7 +145,7 @@ Le prédicat `Tags` vous permet de rechercher des ressources sur la base des bal
 1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
 1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
-Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction de la variable **[!UICONTROL Nom]** (ordre alphabétique), **[!UICONTROL Créé]** date ou **[!UICONTROL Modifié]** date. Dans l’illustration suivante, la structure des balises est triée par ordre alphabétique en fonction de la variable **[!UICONTROL Nom]**.
+Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction du **[!UICONTROL Nom]** (par ordre alphabétique), de la date de **[!UICONTROL Création]** ou de la date de **[!UICONTROL Modification]**. Dans l’illustration suivante, la structure des balises est triée par ordre alphabétique en fonction de la variable **[!UICONTROL Nom]**.
 
 ![add-tags](assets/add-tags-to-asset.png)
 

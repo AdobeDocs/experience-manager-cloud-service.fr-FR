@@ -7,11 +7,11 @@ exl-id: a307b085-681a-46b5-9044-b7c14a1b0119
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '83'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Suppression d’un jeu de migration (Legacy) {#delete-migration-set}
+# Suppression d’un jeu de migration (hérité) {#delete-migration-set}
 
 Vous pouvez supprimer le jeu de migration de la page *Overview.*
 

@@ -1,5 +1,5 @@
 ---
-title: Ingestion de contenu dans Target (Legacy)
+title: Ingestion de contenu dans Target (hérité)
 description: Ingestion de contenu dans Target
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Ingestion de contenu dans Target (Hérité) {#ingesting-content}
+# Ingestion de contenu dans Target (hérité) {#ingesting-content}
 
 ## Processus d’ingestion dans l’outil de transfert de contenu {#ingestion-process}
 

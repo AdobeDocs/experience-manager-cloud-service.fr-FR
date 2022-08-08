@@ -5,7 +5,7 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
 workflow-type: tm+mt
 source-wordcount: '883'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -127,7 +127,7 @@ Migration validation took 0 minutes
 
 L’exemple d’échec ci-dessus a été réalisé en exécutant une ingestion, puis en exécutant à nouveau la même ingestion avec l’option Effacer désactivée, de sorte qu’aucun nœud n’était impliqué pendant l’ingestion – les éléments étaient déjà présents sur la cible.
 
-En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir du **Tâches d’ingestion** interface utilisateur de Cloud Acceleration Manager. Pour ce faire, cliquez sur les trois points (**...**), puis cliquez sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
+En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir de l’interface utilisateur des **Tâches d’ingestion** de Cloud Acceleration Manager. Pour ce faire, cliquez sur les trois petits points (**...**), puis cliquez sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)

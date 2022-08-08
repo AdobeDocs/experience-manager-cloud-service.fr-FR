@@ -5,7 +5,7 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 86%
+ht-degree: 97%
 
 ---
 
@@ -49,16 +49,16 @@ GraphiQL est un IDE inclus dans votre environnement AEM ; il est accessible/visi
 
 1. Connectez-vous à AEM en as a Cloud Service et accédez à l’interface GraphiQL :
 
-   Vous pouvez accéder à l’éditeur de requêtes à partir de :
+   Vous pouvez accéder à l’éditeur de requêtes à partir de :
 
    * **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
-   * directement; par exemple, `http://localhost:4502/aem/graphiql.html`
+   * directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
-1. L’IDE GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes afin de récupérer des fragments de contenu afin de les diffuser sans affichage au format JSON.
-   * La liste déroulante en haut à droite vous permet de sélectionner le point de terminaison.
+1. L’IDE GraphiQL est un éditeur de requêtes intégré au navigateur pour GraphQL. Vous pouvez l’utiliser pour créer des requêtes permettant de récupérer des fragments de contenu afin de les diffuser de manière découplée en mode JSON.
+   * La liste déroulante en haut à droite vous permet de sélectionner le point d’entrée.
    * Un panneau de gauche répertorie les requêtes persistantes (le cas échéant).
-   * Le panneau du milieu à gauche vous permet de créer votre requête.
-   * Le panneau du milieu droit affiche les résultats.
+   * Le volet au milieu à gauche vous permet de construire votre requête.
+   * Le volet au milieu à droite affiche les résultats.
    * L’éditeur de requêtes comprend la saisie du code et des touches d’accès rapide pour exécuter facilement la requête.
 
    ![Éditeur GraphiQL](../assets/graphiql.png)

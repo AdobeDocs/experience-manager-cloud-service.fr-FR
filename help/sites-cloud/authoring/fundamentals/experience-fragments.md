@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '1560'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -359,7 +359,7 @@ Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML b
 
 La publication de votre fragment d’expérience est essentiellement identique à [publication d’une page](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) (à partir de la console Fragments d’expérience ou de l’éditeur).
 
-Vous pouvez également [publier sur Aperçu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (à nouveau à partir de la console Fragments d’expérience ou de l’éditeur).
+Vous pouvez également [Publier en aperçu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) (toujours à partir de la console de Fragments d’expérience ou de l’éditeur).
 
 ## Exportation de fragments d’expérience {#exporting-experience-fragments}
 

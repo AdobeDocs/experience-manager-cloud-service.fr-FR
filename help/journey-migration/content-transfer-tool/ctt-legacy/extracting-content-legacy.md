@@ -1,5 +1,5 @@
 ---
-title: Extraction de contenu à partir de la source (Legacy)
+title: Extraction de contenu à partir de la source  (hérité)
 description: Extraction de contenu à partir de la source
 hide: true
 hidefromtoc: true
@@ -11,7 +11,7 @@ ht-degree: 100%
 
 ---
 
-# Extraction de contenu à partir de la source (Hérité) {#extracting-content}
+# Extraction de contenu à partir de la source  (hérité) {#extracting-content}
 
 ## Processus d’extraction dans l’outil de transfert de contenu {#extraction-process}
 

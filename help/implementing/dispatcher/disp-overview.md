@@ -6,7 +6,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 90a49312d4609c2de992a93926a329bf50861801
 workflow-type: tm+mt
 source-wordcount: '952'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 
 ## Présentation {#apache-and-dispatcher-configuration-and-testing}
 
-Cette page décrit les outils Dispatcher, ainsi que la manière de les télécharger et de les extraire, les modules Apache pris en charge, et fournit un aperçu général des modes hérités et flexibles. En outre, il existe d’autres références sur la validation, le débogage et la migration de la configuration de Dispatcher d’AMS vers AEM as a Cloud Service. : Voir aussi [cette vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) pour plus d’informations sur le déploiement des fichiers dispatcher dans un environnement cloud service.
+Cette page décrit les outils Dispatcher, ainsi que la manière de les télécharger et de les extraire, les modules Apache pris en charge, et fournit un aperçu général des modes hérités et flexibles. En outre, il existe d’autres références sur la validation, le débogage et la migration de la configuration de Dispatcher d’AMS vers AEM as a Cloud Service. Consultez aussi [cette vidéo](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html?lang=fr) pour obtenir plus d’informations sur le déploiement des fichiers dispatcher dans un environnement cloud service.
 
 ## Outils Dispatcher {#dispatcher-sdk}
 

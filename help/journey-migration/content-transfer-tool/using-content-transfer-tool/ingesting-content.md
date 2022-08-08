@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 0a5b74427bedfa7b1e802a91632b0765adfb8248
 workflow-type: tm+mt
 source-wordcount: '908'
-ht-degree: 34%
+ht-degree: 74%
 
 ---
 
@@ -21,20 +21,20 @@ ht-degree: 34%
 
 Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
 >[!NOTE]
->Vous pouvez exécuter l’étape de précopie facultative pour accélérer considérablement la phase d’ingestion. L’étape de précopie est la plus efficace pour la première extraction et ingestion complètes. Pour plus d’informations, voir [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
+>Vous pouvez exécuter l’étape de précopie facultative pour accélérer considérablement la phase d’ingestion. L’étape de précopie est la plus efficace pour la première occurrence complète d’extraction et d’ingestion. Pour plus d’informations, consultez la section [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
 
-1. Accédez à Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu . Accédez à **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**
+1. Présentation de Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu. Accédez aux **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
 1. Fournissez les informations requises pour créer une ingestion.
 
    * Sélectionnez le jeu de migration que vous venez d’extraire en tant que source.
-   * Sélectionnez l’environnement de destination. C’est là que le contenu du jeu de migration sera ingéré. Sélectionnez le niveau. (Auteur/Publication).
+   * Sélectionnez l’environnement de destination. C’est à ce moment que le contenu du jeu de migration sera ingéré. Sélectionnez le niveau. (Auteur/Publication).
 
    >[!NOTE]
    >
-   >Si la source était Auteur, il est recommandé de l’ingérer dans le niveau Auteur sur la cible. De même, si la source était Publier, la cible doit également être Publier.
+   >Si la source était en Auteur, il est recommandé de l’ingérer dans le niveau Auteur sur la cible. De même, si la source était en Publication, la cible doit également être en Publication.
 
    >[!NOTE]
    >
@@ -48,13 +48,13 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    >[!IMPORTANT]
    >
-   >Si le paramètre **Wipe** est activé avant l’ingestion, il supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel ingérer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. Vous devez être de nouveau ajouté au groupe administrateurs pour démarrer une ingestion.
+   >Si le paramètre **Effacer** est activé avant l’ingestion, il supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel ingérer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. Vous devez être de nouveau ajouté au groupe d’administrateurs pour démarrer une ingestion.
 
-1. Cliquez sur **Ingérer**
+1. Cliquez sur **Ingérer**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. Vous pouvez ensuite surveiller la phase d’ingestion en mode Liste des tâches d’ingestion .
+1. Vous pouvez ensuite surveiller la phase d’ingestion en mode liste des Tâches d’ingestion.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -88,17 +88,17 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_ingestion_topup" title="Top Up Ingestion"
->abstract="Utilisez la fonction de complément pour déplacer le contenu modifié depuis l’activité de transfert de contenu précédente. Une fois l’ingestion terminée, recherchez dans les journaux les erreurs/avertissements. Toutes les erreurs doivent être corrigées immédiatement en traitant les problèmes signalés ou en contactant l’assistance clientèle d’Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=en" text="Affichage des journaux"
+>abstract="Utilisez la fonction de complément pour déplacer le contenu modifié depuis l’activité de transfert de contenu précédente. Une fois l’ingestion terminée, recherchez dans les journaux les erreurs/avertissements éventuels. Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance clientèle d’Adobe."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=fr" text="Affichage des journaux"
 
 L’outil de transfert de contenu comporte une fonctionnalité pour traiter un *complément* de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.
 
 >[!NOTE]
->Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service. Si vous avez utilisé l’étape de précopie pour la première ingestion complète, vous pouvez ignorer la précopie pour les assimilations de complément suivantes (si la taille du jeu de migration de complément est inférieure à 200 Go), car cela peut ajouter du temps à l’ensemble du processus.
+>Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service. Si vous avez utilisé l’étape de précopie pour la première ingestion complète, vous pouvez ignorer la précopie pour les ingestions de compléments suivantes (si la taille du jeu de migration de complément est inférieure à 200 Go), car elle est susceptible de rallonger l’ensemble du processus.
 
-Une fois le processus d’ingestion terminé, vous devrez exécuter une [Extraction de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) puis utiliser la méthode d’ingestion de complément.
+Une fois le processus d’ingestion terminé, vous devrez exécuter une [Extraction de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) pour ingérer le contenu manquant puis utiliser la méthode d’ingestion de complément.
 
-Pour ce faire, créez une tâche d’ingestion et assurez-vous que **Wipe** est désactivé pendant la phase d’ingestion, comme illustré ci-dessous :
+Pour ce faire, créez une tâche d’ingestion et assurez-vous que l’option **Effacer** est désactivé pendant la phase d’ingestion, comme illustré ci-dessous :
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam24.png)
 
@@ -118,7 +118,7 @@ Vous devez récupérer manuellement le jeton de migration en cliquant sur le lie
 
 ### Impossible de démarrer l’ingestion {#unable-to-start-ingestion}
 
-Vous ne pourrez déclencher une ingestion dans l’environnement de destination que si vous appartenez au **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination. Si vous n’appartenez pas au groupe d’administrateurs AEM, une erreur s’affiche, comme illustré ci-dessous lorsque vous essayez de démarrer une ingestion. Vous pouvez demander à votre administrateur de vous ajouter au fichier local. **Administrateurs AEM** ou demandez le jeton lui-même, que vous pouvez ensuite coller dans le **Entrée du jeton de migration** champ .
+Vous ne pourrez déclencher une ingestion dans l’environnement de destination que si vous appartenez au **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination. Si vous n’appartenez pas au groupe d’administrateurs AEM, une erreur s’affiche lorsque vous essayez de démarrer une ingestion, comme illustré ci-dessous. Vous pouvez demander à votre administrateur de vous ajouter au fichier local. **Administrateurs AEM** ou demandez le jeton lui-même, que vous pouvez ensuite coller dans le **Entrée du jeton de migration** champ .
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 

@@ -6,7 +6,7 @@ exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
 source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
 workflow-type: tm+mt
 source-wordcount: '1377'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Cloud Manager propose deux types de pipelines :
 
 ## Présentation vidéo {#video}
 
-Pour un aperçu rapide des types de pipeline, regardez cette courte vidéo.
+Pour obtenir un aperçu rapide des types de pipeline, regardez cette courte vidéo.
 
 >[!VIDEO](https://video.tv.adobe.com/v/342363)
 

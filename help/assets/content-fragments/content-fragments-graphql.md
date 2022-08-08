@@ -1,6 +1,6 @@
 ---
 title: Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL
-description: Découvrez les concepts de base de la réalisation d’un CMS AEM sans affichage à l’aide de fragments de contenu avec GraphQL pour la diffusion de contenu sans affichage.
+description: Découvrez les concepts de base de la réalisation d’un CMS AEM découplé à l’aide de fragments de contenu avec GraphQL pour la diffusion de contenu découplé.
 feature: Content Fragments, GraphQL API
 topic: Headless
 role: User
@@ -8,15 +8,15 @@ exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
 source-wordcount: '751'
-ht-degree: 86%
+ht-degree: 96%
 
 ---
 
 # Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Avec les fragments de contenu et l’API GraphQL, vous pouvez utiliser Adobe Experience Manager (AEM) as a Cloud Service en tant que système de gestion de contenu (CMS) sans affichage.
+Avec les fragments de contenu et l’API GraphQL, vous pouvez utiliser Adobe Experience Manager (AEM) as a Cloud Service en tant que système de gestion de contenu (CMS) découplé.
 
-Pour ce faire, utilisez des fragments de contenu, ainsi que l’API GraphQL AEM (une mise en oeuvre personnalisée, basée sur GraphQL standard), afin de fournir du contenu structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
+Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu découplé structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
 
 >[!NOTE]
 >

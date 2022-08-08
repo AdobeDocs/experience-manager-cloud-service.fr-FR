@@ -1,17 +1,17 @@
 ---
-title: Modélisation de contenu pour AEM en tant que CMS sans affichage - Introduction
-description: Cette section présente l’utilisation des fonctionnalités d’Adobe Experience Manager as a Cloud Service as a Headless CMS pour modéliser le contenu de votre projet.
+title: Modélisation de contenu pour AEM en tant que CMS découplé - Introduction
+description: Une introduction de l’utilisation des fonctionnalités d’Adobe Experience Manager as a Cloud Service dans un CMS découplé pour modéliser du contenu pour votre projet.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Modélisation de contenu pour AEM en tant que CMS sans affichage - Introduction {#architect-headless-introduction}
+# Modélisation de contenu pour AEM en tant que CMS découplé - Introduction {#architect-headless-introduction}
 
-Dans cette partie du [AEM Parcours d’architecture de contenu sans affichage](overview.md), vous pouvez découvrir les concepts (de base) et la terminologie nécessaires pour comprendre la modélisation de contenu lors de l’utilisation d’Adobe Experience Manager (AEM) as a Cloud Service en tant que CMS sans affichage.
+Dans cette partie du [Parcours d’architecturisation de contenu découplé AEM](overview.md), vous pouvez découvrir les concepts et la terminologie (de base) nécessaires pour comprendre la modélisation de contenu avec Adobe Experience Manager (AEM) as a Cloud Service dans un CMS découplé.
 
 Ce document vous aide à comprendre la diffusion de contenu découplé, comment AEM prend en charge le découplage et comment le contenu est modélisé pour le découplage. Après avoir lu ce document, vous devriez :
 

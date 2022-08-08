@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 3bf12642e94076a67010e4701715a54138a490ee
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 72%
 >id="aemcloud_ctt_overview"
 >title="Présentation"
 >abstract="Développé par Adobe, l’outil de transfert de contenu est utilisé pour déplacer du contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en" text="Conseils et bonnes pratiques"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr" text="Conseils et bonnes pratiques"
 
 <!-- Alexandru: Old version of contextual help, keep for failover/debugging
 >[!CONTEXTUALHELP]
@@ -30,17 +30,17 @@ Développé par Adobe, l’outil de transfert de contenu est utilisé pour dépl
 
 Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes).
 
-Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version afin d’exploiter tous les avantages qu’elle offre :
+Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version afin d’exploiter tous les avantages qu’elle offre :
 
-* Méthode en libre-service pour extraire une fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
-* Amélioration de l’expérience utilisateur grâce à une meilleure gestion des états de chargement, des barrières de sécurité et des erreurs.
-* Les journaux d’ingestion sont conservés et sont toujours disponibles pour le dépannage.
+* Une méthode en libre-service pour extraire une seule fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
+* L’amélioration de l’expérience utilisateur grâce à une meilleure gestion des statuts de chargement, des barrières de sécurité et des erreurs
+* La conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
 
-Pour commencer à utiliser la nouvelle version (v2.0.10) <!-- update when version is available --> vous devrez désinstaller les anciennes versions de l’outil de transfert de contenu, car l’outil a subi un changement majeur d’architecture.
+Pour commencer à utiliser la nouvelle version (v2.0.10) <!-- update when version is available -->, vous devrez désinstaller les anciennes versions de l’outil de transfert de contenu, car l’outil a subi un changement majeur d’architecture.
 
 >[!NOTE]
 >
-> Dans les cas où une migration est déjà en cours, vous pouvez continuer à utiliser la version antérieure du CTT jusqu’à ce que la migration soit terminée. Pour consulter la documentation relative à la version précédente du CTT, reportez-vous à la section [documentation héritée](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+> Dans les cas où une migration est déjà en cours, vous pouvez continuer à utiliser la version antérieure du CTT jusqu’à ce que la migration soit terminée. Pour consulter la documentation relative à la version précédente du CTT, reportez-vous à la [documentation héritée](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
 
 ## Phases de l’outil de transfert de contenu {#phases-content-transfer-tool}
 
@@ -61,7 +61,7 @@ Le transfert de contenu comporte deux phases :
 
 Un jeu de migration possède les attributs suivants :
 
-* Avec la nouvelle version, vous pouvez créer un maximum de cinq jeux de migration au sein d’un projet créé dans Cloud Acceleration Manager.
+* Avec la nouvelle version, vous pouvez créer un maximum de cinq jeux de migration au sein d’un projet créé dans Cloud Acceleration Manager.
 * Chaque jeu de migration doit avoir un nom unique.
 
 L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.

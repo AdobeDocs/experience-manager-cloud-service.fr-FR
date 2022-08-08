@@ -1,20 +1,20 @@
 ---
-title: Guide d’Assets as a Cloud Service
+title: Guide d’Assets as a Cloud Service
 description: Découvrez Assets as a Cloud Service et consultez les dernières nouveautés.
-landing-page-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
+landing-page-description: Découvrez comment utiliser et administrer Experience Manager Assets as a Cloud Service.
 feature: Asset Management
 role: User,Leader
 exl-id: 315a1091-780f-4eca-ac77-a07d8fb634bf
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '294'
+ht-degree: 100%
 
 ---
 
-# [!DNL Assets as a Cloud Service] guide {#aem-assets-guide}
+# Guide d’[!DNL Assets as a Cloud Service] {#aem-assets-guide}
 
-En savoir plus sur [!DNL AEM Assets as a Cloud Service] et être mis à jour sur les nouveautés.
+Apprenez-en plus sur [!DNL AEM Assets as a Cloud Service] et découvrez les dernières nouveautés.
 
 ## Articles essentiels relatifs à [!DNL Assets]  {#key-articles}
 

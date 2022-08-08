@@ -1,99 +1,99 @@
 ---
-title: Gestion des listes autorisées d’adresses IP
-description: Découvrez comment afficher, modifier, supprimer et vérifier l’état de vos listes autorisées IP dans Cloud Manager.
+title: Gestion des listes d’adresses IP autorisées
+description: Découvrez comment afficher, modifier, supprimer et vérifier l’état de vos listes d’adresses IP autorisées dans Cloud Manager.
 exl-id: 6efabe53-3f45-47d4-ac1f-979cae0ab33e
 source-git-commit: 3080427529bb65e27721e05069012b33579fdd73
 workflow-type: tm+mt
 source-wordcount: '821'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
-# Gestion des listes autorisées d’adresses IP {#manage-ip-allow-lists}
+# Gestion des listes d’adresses IP autorisées {#manage-ip-allow-lists}
 
-Découvrez comment afficher, modifier, supprimer et vérifier l’état de vos listes autorisées IP dans Cloud Manager.
+Découvrez comment afficher, modifier, supprimer et vérifier l’état de vos listes d’adresses IP autorisées dans Cloud Manager.
 
-## Affichage et mise à jour des listes autorisées IP {#update-ip-allow-lists}
+## Affichage et mise à jour des listes d’adresses IP autorisées {#update-ip-allow-lists}
 
-Un utilisateur de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour afficher et mettre à jour une liste autorisée IP.
+Un utilisateur doté du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour afficher et mettre à jour une liste d’adresses IP autorisées.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
-1. Accédez à la page **Listes autorisées IP** à partir de l’écran **Environnements**.
-1. Identifiez la ligne des listes autorisées IP que vous souhaitez afficher ou mettre à jour.
+1. Accédez à la page **Listes d’adresses IP autorisées** à partir de l’écran **Environnements**.
+1. Identifiez la ligne des listes d’adresses IP autorisées que vous souhaitez afficher ou mettre à jour.
 1. Cliquez sur le bouton représentant des points de suspension à droite de la ligne.
 1. Sélectionnez l’option **Afficher et mettre à jour**.
-1. Le **Afficher et mettre à jour** l’assistant affiche le nom, les adresses IP (ou les plages) qui définissent la règle, ainsi que les environnements et le service auxquels la règle est appliquée.
+1. L’assistant **Afficher et mettre à jour** affiche le nom, les adresses (ou les plages) IP qui définissent la règle, ainsi que les environnements et le service auxquels la règle est appliquée.
 1. Apportez des modifications au nom ou aux adresses IP et confirmez votre envoi.
 
-L’ajout ou la suppression d’une nouvelle plage d’adresses IP à une liste autorisée d’adresses IP l’appliquera/annule automatiquement à tous les environnements/services correspondants auxquels elle a été précédemment appliquée.
+L’ajout ou la suppression d’une nouvelle plage d’adresses IP à une liste d’adresses IP autorisées l’appliquera ou annulera automatiquement son application à tous les environnements et services correspondants auxquels elle a été précédemment appliquée.
 
-Les mises à jour ne peuvent pas être effectuées sur une liste autorisée IP alors qu’une mise à jour préalable est en cours et n’est pas terminée.
+Les mises à jour ne peuvent pas être apportées à une liste d’adresses IP autorisées alors qu’une mise à jour précédente est en cours et n’est pas terminée.
 
-## Vérification du statut des Listes autorisées IP {#check-allow-list-status}
+## Vérification de la liste d’adresses IP autorisées {#check-allow-list-status}
 
-Pour vérifier l’état des listes autorisées IP, procédez comme suit.
+Pour vérifier le statut des listes d’adresses IP autorisées, procédez comme suit.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
 
-1. Cliquez sur le bouton **État** de la liste autorisée IP du tableau sur la **Environnements** et sélectionnez la variable **LISTES AUTORISÉES IP** page.
+1. Cliquez sur l’icône **Statut** de la liste d’adresses IP autorisées dans le tableau de l’écran **Environnements** et sélectionnez la page **Listes d’adresses IP autorisées**.
 
-1. Cloud Manager affiche l’état de la liste autorisée comme décrit [dans la section suivante.](#status)
+1. Cloud Manager affiche le statut de la liste autorisée comme décrit [dans la section suivante.](#status)
 
-### Statut d’une liste autorisée IP {#status}
+### Statut d’une liste d’adresses IP autorisées {#status}
 
-[Lors de la vérification de l’état des listes autorisées IP,](#check-allow-list-status) ils peuvent avoir l’une des valeurs suivantes.
+[Lors de la vérification du statut des listes d’adresses IP autorisées](#check-allow-list-status), ceux-ci peuvent avoir l’une des valeurs suivantes.
 
-* **Appliqué** - La liste autorisée IP est correctement appliquée à un ou plusieurs environnements.
+* **Appliquée** - La liste d’adresses IP autorisées est correctement appliquée à un ou plusieurs environnements.
 
-* **Mise à jour** - Une mise à jour de la liste autorisée IP est en cours, qui peut inclure une ou plusieurs applications ou une annulation de l’application de la liste.
+* **Mise à jour en cours** - Une mise à jour de la liste d’adresses IP autorisées est en cours, qui peut inclure une ou plusieurs applications ou une annulation de l’application de la liste.
 
-   * Chaque application/annulation de l’application est répertoriée avec son propre état de **Non démarré**, **En cours**, **Terminer** ou **En échec**.
+   * Chaque application ou annulation de l’application est répertoriée avec son propre statut, à savoir **Non démarrée**, **En cours**, **Terminée** ou **En échec**.
 
-* **En échec** - Un ou plusieurs processus d’application ou d’annulation d’application d’une mise à jour ont échoué.
-   * Chaque application et sa désapplication sont répertoriées avec son état.
-      * L’état est **En échec** si une application/une annulation de l’application dans la mise à jour échoue.
-      * Le statut reste le suivant : **En échec** tant que tous les échecs ne sont pas effacés.
-         * Vous devez sélectionner la variable **Réessayer** en regard de l’état pour effacer l’échec.
-      * Vous ne pouvez pas mettre à jour ou supprimer une liste autorisée IP avec une **En échec** statut.
+* **En échec** - Échec d’un ou de plusieurs processus d’application ou d’annulation dans une mise à jour.
+   * Chaque application et annulation d’application est répertoriée avec son statut.
+      * Le statut est défini comme **En échec** si une application ou une annulation de l’application dans la mise à jour échoue.
+      * Le statut reste sur **En échec** jusqu’à ce que tous les échecs soient effacés.
+         * Vous devez sélectionner l’icône **Réessayer** en face du statut pour effacer l’échec.
+      * Vous ne pouvez pas mettre à jour ou supprimer une liste d’adresses IP autorisées avec un statut **En échec**.
 
-* **Suppression** - Une suppression d’une liste autorisée IP est en cours.
-   * La suppression implique la désapplication de la liste de tous les services.
-   * Chaque désapplication est répertoriée avec son propre état de **Non démarré**, **En cours**, **Terminer** ou **En échec**.
-   * Une fois l’opération de suppression terminée, la liste autorisée IP :
-      * N’apparaît plus dans le tableau liste autorisée IP.
-      * n’est plus appliquée sur aucun des services du programme dans Cloud Manager.
+* **Suppression en cours** - La suppression d’une liste d’adresses IP autorisées est en cours.
+   * La suppression implique l’annulation de l’application de la liste de tous les services.
+   * Chaque annulation de l’application est répertoriée avec son propre statut, à savoir **Non démarrée**, **En cours**, **Terminée** ou **En échec**.
+   * Une fois l’opération de suppression terminée, la liste d’adresses IP autorisées :
+      * n’apparaît plus dans le tableau Liste d’adresses IP autorisées ;
+      * n’est plus appliquée sur aucun des services du programme dans Cloud Manager.
 
-* **Échec** - Une ou plusieurs désapplications ont échoué lors d’une opération de suppression.
+* **Suppression de l’échec** - Une ou plusieurs annulations d’application ont échoué lors d’une opération de suppression.
 
-   * Chaque désapplication est répertoriée avec le statut **Terminer** ou **En échec**.
-   * L’état est **Échec** si une application d’annulation échoue.
-   * Le statut reste le suivant : **Échec** tant que tous les échecs ne sont pas effacés.
-      * Vous devez sélectionner **Supprimer** dans le menu points de suspension situé à l’extrémité droite de la ligne du tableau pour effacer tout échec.
-   * Vous ne pouvez pas mettre à jour une liste autorisée IP tant que l’état est **En échec**.
+   * Chaque annulation d’application est répertoriée avec le statut **Terminée** ou **En échec**.
+   * Le statut est **Échec de la suppression** en cas d’échec d’une annulation de l’application.
+   * Le statut reste **Échec de la suppression** jusqu’à ce que tous les échecs soient effacés.
+      * L’utilisateur doit sélectionner **Supprimer** dans le menu ... tout à droite de la ligne du tableau pour effacer tout échec.
+   * Vous ne pouvez pas mettre à jour une liste d’adresses IP autorisées tant que son statut est **En échec**.
 
-## Suppression d’une liste autorisée d’adresses IP {#delete-allow-list}
+## Suppression d’une liste d’adresses IP autorisées {#delete-allow-list}
 
-Un utilisateur de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour afficher et mettre à jour une liste autorisée IP.
+Un utilisateur doté du rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut suivre les étapes suivantes pour afficher et mettre à jour une liste d’adresses IP autorisées.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
-1. Accédez à la page **Listes autorisées IP** à partir de l’écran **Environnements**.
-1. Identifiez la ligne de la liste autorisée IP que vous souhaitez supprimer.
-1. Sélectionnez le menu représentant des points de suspension à l’extrémité droite de la ligne.
+1. Accédez à la page **Listes d’adresses IP autorisées** à partir de l’écran **Environnements**.
+1. Identifiez la ligne de la liste d’adresses IP autorisées que vous souhaitez supprimer.
+1. Sélectionnez le menu ... tout à droite de la ligne.
 1. Cliquez sur **Supprimer**.
 1. Confirmez votre envoi.
 
-La suppression d’une liste autorisée IP la annule automatiquement de tous les services et la supprime de la table.
+La suppression d’une liste d’adresses IP autorisées annule automatiquement son application de tous les services et la supprime de la table.
 
 ## Configurations de réseau CDN préexistantes {#pre-existing-cdn}
 
-Si vous disposez d’une configuration de réseau de diffusion de contenu préexistante pour vos listes autorisées IP, un message d’information s’affichera sur le **LISTE AUTORISÉE IP** , vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
+Si vous disposez d’une configuration de réseau CDN préexistante pour vos listes d’adresses IP autorisées, un message d’information s’affichera dans la page des **listes d’adresses IP autorisées**, vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
 
 Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
-Reportez-vous au document [Ajout d’une liste autorisée IP](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) pour plus d’informations.
+Consultez le document [Ajout d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md) pour plus d’informations.
 
-Un message similaire est également fourni dans la variable **Certificats SSL** et le **Environnements** des pages pour les environnements qui possèdent des configurations CDN préexistantes pour les certificats SSL ou les noms de domaine personnalisés.
+Un message similaire est également fourni dans les pages **Certificats SSL** et **Environnements** pour les environnements qui possèdent des configurations CDN préexistantes pour les certificats SSL ou les noms de domaine personnalisés.

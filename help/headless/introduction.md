@@ -1,21 +1,21 @@
 ---
 title: Présentation d’AEM découplé
-description: Découvrez Adobe Experience Manager (AEM) en tant que CMS Headless avec une combinaison de documentation détaillée et de parcours Headless. Découvrez comment des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL sont utilisées pour créer des expériences Headless.
-landing-page-description: Apprenez comment utiliser et administrer Experience Manager Headless as a Cloud Service.
+description: Découvrez Adobe Experience Manager (AEM) en tant que CMS découplé grâce à un ensemble de documents détaillés et de parcours découplés. Découvrez comment des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL sont utilisées pour créer des expériences découplées puissantes.
+landing-page-description: Apprenez comment utiliser et administrer Experience Manager découplé as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 98%
 
 ---
 
 
-# Présentation d’Adobe Experience Manager as a Headless CMS {#introduction-aem-headless}
+# Présentation d’Adobe Experience Manager en tant que CMS découplé {#introduction-aem-headless}
 
-Découvrez comment utiliser Adobe Experience Manager (AEM) en tant que CMS sans affichage, avec des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL qui optimisent les expériences sans affichage à grande échelle.
+Découvrez comment utiliser Adobe Experience Manager (AEM) en tant que CMS découplé, avec des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL qui optimisent les expériences découplées à grande échelle.
 
-Vous pouvez lire la documentation détaillée des différentes fonctionnalités impliquées et/ou suivre la sélection de [Parcours sans affichage pour obtenir un aperçu des premières étapes](#first-steps).
+Vous pouvez lire la documentation détaillée des différentes fonctionnalités impliquées et suivre certains des [Parcours découplés pour obtenir un aperçu des premières étapes](#first-steps).
 
 >[!NOTE]
 >

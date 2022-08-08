@@ -9,7 +9,7 @@ exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
 source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
 workflow-type: tm+mt
 source-wordcount: '4326'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Lorsque vous organisez une collection de ressources, comme toutes les images `Na
 
 >[!NOTE]
 >
->* Partage d’un dossier de ressources de type `sling:OrderedFolder`, n’est pas pris en charge lors du partage vers Experience Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas [!UICONTROL Ordonné] lors de la création du dossier.
+>* Le partage d’un dossier de ressources du type `sling:OrderedFolder` n’est pas pris en charge lors du partage vers Experience Cloud. Si vous souhaitez partager un dossier, ne sélectionnez pas [!UICONTROL Classé] lors de sa création.
 >* Experience Manager n’autorise pas l’utilisation du mot `subassets` comme nom de dossier. Il s’agit d’un mot-clé réservé au nœud qui contient des sous-ressources pour les ressources composites.
 
 

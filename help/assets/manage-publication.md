@@ -9,7 +9,7 @@ exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
 source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
 workflow-type: tm+mt
 source-wordcount: '1435'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -76,7 +76,7 @@ Pour filtrer le contenu du dossier que vous souhaitez publier, cliquez sur **[!U
 * `Include folder contents`
 
    * Activé : toutes les ressources du dossier sélectionné, les sous-dossiers (y compris toutes les ressources des sous-dossiers) et les références sont publiés.
-   * Désactivé : Seul le dossier sélectionné (vide) et les références sont publiés. Les ressources du dossier sélectionné ne sont pas publiées.
+   * Désactivé : seul le dossier sélectionné (vide) et les références sont publiés. Les ressources du dossier sélectionné ne sont pas publiées.
 
 * `Include folder contents` et `Include only immediate folder contents`
 

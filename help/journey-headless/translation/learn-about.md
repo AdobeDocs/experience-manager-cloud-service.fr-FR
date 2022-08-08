@@ -1,11 +1,11 @@
 ---
-title: En savoir plus sur le contenu sans affichage et sa traduction dans AEM
+title: En savoir plus sur le contenu découplé et sa traduction dans AEM
 description: Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la théorie de la traduction dans AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

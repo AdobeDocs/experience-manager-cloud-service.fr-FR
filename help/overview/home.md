@@ -1,17 +1,17 @@
 ---
-title: Prise en main de Experience Manager as a Cloud Service
-description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
+title: Prise en main d’Experience Manager as a Cloud Service
+description: Découvrez comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 exl-id: d346ad01-af00-48a1-96a4-e742369defff
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '359'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Aperçu d’Experience Manager as a Cloud Service {#aem-overview-guide}
 
-Commencez ici pour découvrir comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
+Démarrez ici pour découvrir comment fonctionne Experience Manager as a Cloud Service et ce que le logiciel peut vous apporter.
 
 ## Principaux articles de présentation {#key-articles}
 

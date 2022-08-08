@@ -8,7 +8,7 @@ exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
 source-git-commit: 333a0b0f6e0937a5ac6dc1a697c773f7bada45cc
 workflow-type: tm+mt
 source-wordcount: '879'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -74,18 +74,18 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 
 ## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 
-L’ajout de balises à des ressources les rend plus faciles à récupérer au cours d’une recherche, à créer des collections à l’aide des résultats de recherche, à améliorer le classement de certaines ressources et à appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
+L’ajout de balises à des ressources les rend plus faciles à récupérer au cours d’une recherche, à créer des collections à l’aide des résultats de recherche, à améliorer le classement de certaines ressources et à appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
 
 [!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure d’apprentissage automatique, qui peuvent être formés à reconnaître et à appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources..
 
-Vous trouverez ci-dessous la procédure à suivre pour ajouter des balises à une ressource :
+Vous trouverez ci-dessous la procédure à suivre pour ajouter des balises à une ressource :
 
 1. Connectez-vous à [!DNL Experience Manager Assets].
 1. Cliquez sur **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]**, sélectionnez la ressource et cliquez sur **[!UICONTROL Propriétés]** pour ouvrir les propriétés de la ressource.
-1. Dans le **[!UICONTROL De base]** , cliquez sur l’icône de dossier dans **[!UICONTROL Balises]** métadonnées. Une fenêtre contextuelle s’ouvre.
+1. Dans l’onglet **[!UICONTROL De base]**, cliquez sur l’icône de dossier dans les métadonnées de **[!UICONTROL Balises]**. Une fenêtre contextuelle s’ouvre.
 1. Recherchez ou sélectionnez les balises appropriées parmi les balises existantes dans `cq-tags`. Vous pouvez affecter plusieurs balises à la ressource.
 
-   Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction de la variable **[!UICONTROL Nom]** (ordre alphabétique), **[!UICONTROL Créé]** date ou **[!UICONTROL Modifié]** date. Dans l’illustration suivante, la structure des balises est triée par ordre alphabétique en fonction de la variable **[!UICONTROL Nom]**.
+   Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction du **[!UICONTROL Nom]** (par ordre alphabétique), de la date de **[!UICONTROL Création]** ou de la date de **[!UICONTROL Modification]**. Dans l’illustration suivante, la structure des balises est triée par ordre alphabétique en fonction de la variable **[!UICONTROL Nom]**.
 
    ![add-tags](assets/add-tags-to-asset.png)
 

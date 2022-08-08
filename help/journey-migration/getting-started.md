@@ -4,8 +4,8 @@ description: Commencez votre Parcours de migration en vous familiarisant avec le
 exl-id: e1a79630-56c1-4648-aa11-3348c3b37541
 source-git-commit: 595eff9c259208754ac62ea27dfc6be7d74b79d3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '587'
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Ce document vous aide à comprendre pourquoi vous devez utiliser une version nat
 
 ## Avantages de la migration vers AEM as a Cloud Service {#benefits-of-moving-to-aem-as-a-cloud-service}
 
-AEM as a Cloud Service fournit une base technologique évolutive, sécurisée et agile pour les plateformes Experience Manager Assets, Forms et Screens, ce qui permet aux spécialistes du marketing et aux professionnels de l’informatique de se concentrer sur la création d&#39;expériences percutantes à grande échelle.
+AEM as a Cloud Service fournit une base technologique évolutive, sécurisée et agile pour les plateformes Experience Manager Assets, Forms et Screens, ce qui permet aux spécialistes du marketing et aux professionnels de l’informatique de se concentrer sur la création d’expériences percutantes à grande échelle.
 
 Avec AEM as a Cloud Service, vos équipes peuvent se concentrer sur l’innovation plutôt que sur la planification des mises à niveau des produits. Les nouvelles fonctionnalités du produit sont soigneusement testées et mises en permanence à la disposition de vos équipes afin qu’elles aient toujours accès à la dernière version d’AEM.
 
@@ -35,11 +35,11 @@ Le parcours de migration vers Cloud Service comprend les phases suivantes :
 * Une fois que tout est en place, vous pouvez effectuer la migration lors de la [Phase d’activation](/help/journey-migration/go-live.md).
 * Enfin, veillez à surveiller les problèmes et à améliorer les performances une fois la migration terminée, lors de la [Phase de post-activation](/help/journey-migration/post-go-live.md).
 
-La figure ci-dessous présente une représentation de haut niveau du parcours de transition recommandé à AEM as a Cloud Service.
+La figure ci-dessous est une représentation graphique générale du parcours recommandé de transition vers AEM as a Cloud Service.
 
 ![image](/help/journey-migration/assets/move-aemcloud-process.png)
 
-Vous pouvez également consulter le diagramme ci-dessous pour une vue plus détaillée et plus granulaire du parcours de migration.
+Vous pouvez également consulter le diagramme ci-dessous pour obtenir une vue plus détaillée et plus granulaire du parcours de migration.
 
 ![image](/help/journey-migration/assets/migration-process.png)
 

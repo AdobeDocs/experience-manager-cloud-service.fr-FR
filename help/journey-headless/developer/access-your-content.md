@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -242,7 +242,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 Avant de commencer à lancer des requêtes sur votre contenu, suivez les étapes suivantes :
 
 * Activez votre point d’entrée ;
-   * Utilisation des outils -> Général -> GraphQL
+   * Utilisez Outils -> Général -> GraphQL.
    * [Activation de votre point d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
       * Cela permet également d’activer l’IDE GraphiQL.
 
@@ -267,10 +267,10 @@ Les modèles de fragment seront utilisés :
 
 ### Où tester vos requêtes {#where-to-test-your-queries}
 
-Les requêtes peuvent être saisies dans l’interface GraphiQL. Vous pouvez accéder à l’éditeur de requêtes à partir de :
+Les requêtes peuvent être saisies dans l’interface GraphiQL. Vous pouvez accéder à l’éditeur de requêtes à partir de :
 
 * **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
-* directement; par exemple, `http://localhost:4502/aem/graphiql.html`
+* directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/graphiql-interface.png "Interface GraphiQL")
 

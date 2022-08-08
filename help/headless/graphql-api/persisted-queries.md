@@ -1,26 +1,26 @@
 ---
 title: Requêtes GraphQL persistantes
-description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
+description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 26%
+ht-degree: 47%
 
 ---
 
 # Requêtes GraphQL persistantes {#persisted-queries-caching}
 
-Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur as a Cloud Service Adobe Experience Manager (AEM). Ils peuvent être demandés avec une demande de GET par les applications clientes. La réponse d’une requête GET peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances de l’application cliente qui la demande. Cela diffère des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes de POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
+Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stockées sur le serveur Adobe Experience Manager (AEM) as a Cloud Service. Elles peuvent être demandées avec une requête GET par les applications clientes. La réponse d’une requête GET peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances de l’application cliente qui la demande. Elles sont en cela différentes des requêtes GraphQL standard, qui sont exécutées à l’aide de requêtes POST dans lesquelles la réponse ne peut pas être facilement mise en cache.
 
 >[!NOTE]
 >
 >Les requêtes persistantes sont recommandées. Voir [Bonnes pratiques de requête GraphQL (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) pour plus d’informations et la configuration Dispatcher associée.
 
-Le [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) est disponible dans AEM pour que vous puissiez développer, tester et conserver vos requêtes GraphQL, avant [transfert vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, lorsque [personnalisation du cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; voir l’exemple de curl fourni dans [Comment conserver une requête GraphQL](#how-to-persist-query).
+Le [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) est disponible dans AEM pour que vous puissiez développer, tester et conserver vos requêtes GraphQL, avant [transfert vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, pour la [personnalisation du cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; consultez l’exemple de curl fourni dans [Conservation d’une requête GraphQL](#how-to-persist-query).
 
-## Requêtes et points de fin persistants {#persisted-queries-and-endpoints}
+## Requêtes et points d’entrée persistants {#persisted-queries-and-endpoints}
 
 Les requêtes persistantes doivent toujours utiliser le point d’entrée associé à la [configuration Sites appropriée](graphql-endpoint.md) afin qu’ils puissent utiliser l’une des fonctionnalités ou les deux :
 
@@ -51,12 +51,12 @@ Par exemple, s’il existe une requête spécifique appelée `my-query`, qui uti
 
 ## Conservation d’une requête GraphQL {#how-to-persist-query}
 
-Il est recommandé de conserver les requêtes dans un environnement de création d’AEM au départ, puis [transférer la requête](#transfer-persisted-query-production) à votre environnement de production AEM publication, pour une utilisation par les applications.
+Il est recommandé d’appliquer des requêtes persistantes dans un environnement de création d’AEM dès le départ, puis de [transférer la requête](#transfer-persisted-query-production) à votre environnement de publication AEM de production, pour être utilisées par les applications.
 
-Il existe différentes méthodes de requête persistante, notamment :
+Il existe différentes méthodes pour créer des requêtes persistantes, notamment :
 
 * IDE GraphiQL - voir [Enregistrement des requêtes persistantes](/help/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (méthode préférée)
-* curl - voir l’exemple suivant
+* curl - Consultez l’exemple suivant
 * Autres outils, notamment [Postman](https://www.postman.com/)
 
 L’IDE GraphiQL est l’IDE **preferred** pour les requêtes persistantes. Pour conserver une requête donnée à l’aide de la fonction **curl** outil de ligne de commande :
@@ -265,12 +265,12 @@ Les requêtes persistantes sont recommandées, car elles peuvent être mises en 
 
 Par défaut, AEM invalide le cache du réseau de diffusion de contenu (CDN) en fonction d’une durée de vie par défaut (TTL).
 
-Cette valeur est définie sur :
+Cette valeur est définie sur :
 
-* 7 200 secondes est la durée de vie par défaut du Dispatcher et du réseau de diffusion de contenu ; également connu sous le nom *caches partagés*
-   * default : s-maxage=7200
+* 7 200 secondes est la durée de vie par défaut du Dispatcher et du réseau de diffusion de contenu, également connus sous le nom de *caches partagés*.
+   * default: s-maxage=7200
 * 60 est la durée de vie par défaut du client (par exemple, un navigateur).
-   * default : maxage=60
+   * default: maxage=60
 
 Si vous souhaitez modifier la durée de vie de votre requête GraphLQ, la requête doit être :
 
@@ -283,9 +283,9 @@ L’IDE GraphiQL - voir [Enregistrement des requêtes persistantes](/help/headle
 
 ### Gestion du cache à partir de l’API {#cache-api}
 
-Cela implique de publier la requête sur AEM à l’aide de CURL dans votre interface de ligne de commande.
+Cela implique de publier la requête dans AEM à l’aide de la CURL dans votre interface de ligne de commande.
 
-Par exemple :
+Par exemple :
 
 ```xml
 curl -X PUT \
@@ -296,7 +296,7 @@ curl -X PUT \
 '{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
 ```
 
-Le `cache-control` peut être défini au moment de la création (PUT) ou ultérieurement (par exemple, via une demande de POST). Le contrôle du cache est facultatif lors de la création de la requête conservée, car AEM peut fournir la valeur par défaut. Voir [Comment conserver une requête GraphQL](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), par exemple pour conserver une requête à l’aide de curl.
+Le `cache-control` peut être défini au moment de la création (PUT) ou ultérieurement (par exemple, via une demande de POST). Le contrôle du cache est facultatif lors de la création de la requête persistante car AEM peut fournir la valeur par défaut. Consultez [Conservation d’une requête GraphQL](/help/headless/graphql-api/persisted-queries.md#how-to-persist-query), par exemple pour conserver une requête à l’aide d’une commande curl.
 
 ## Encodage de l’URL de requête à utiliser par une application {#encoding-query-url}
 

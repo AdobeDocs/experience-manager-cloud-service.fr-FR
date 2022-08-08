@@ -6,13 +6,13 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 3%
+ht-degree: 68%
 
 ---
 
 # Utilisation de l’IDE GraphiQL {#graphiql-ide}
 
-Une mise en oeuvre de la norme [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE est disponible pour une utilisation avec l’API GraphQL d’Adobe Experience Manager (AEM) as a Cloud Service.
+Une mise en œuvre de l’IDE [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) standard est disponible pour une utilisation avec l’API GraphQL d’Adobe Experience Manager (AEM) as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,76 +21,76 @@ Une mise en oeuvre de la norme [GraphiQL](https://graphql.org/learn/serving-over
 >Dans les versions précédentes, un module était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut maintenant être supprimé.
 
 >[!NOTE]
->Vous devez avoir [configuration de vos points de fin](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
+>Vous devez avoir [configuré vos points de fin](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
 
 
-Le **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :
-* sélectionnez la variable **Point d’entrée** approprié à la configuration Sites que vous souhaitez utiliser pour vos requêtes ;
-* saisie directe de nouvelles requêtes
-* créer et accéder à **[Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md)**
-* Exécutez vos requêtes pour afficher immédiatement les résultats.
-* gérer **Variables de requête**
-* enregistrement et gestion **Requêtes persistantes**
+L’outil **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :
+* sélectionner le **Point d’entrée** approprié pour la configuration Sites que vous souhaitez utiliser pour vos requêtes ;
+* saisir directement de nouvelles requêtes ;
+* créer et accéder aux **[Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md)** ;
+* exécuter vos requêtes pour afficher immédiatement les résultats ;
+* gérer les **Variables de requête** ;
+* enregistrer et gérer les **Requêtes persistantes** ;
 * publier ou annuler la publication, **Requêtes persistantes** (par exemple, pour/depuis `dev-publish`)
-* voir la **Histoire** de vos requêtes précédentes
-* utilisez la méthode **Explorateur de documentation** pour accéder à la documentation ; vous aide à apprendre et à comprendre les méthodes disponibles.
+* Afficher l’**Historique** de vos requêtes précédentes ;
+* utiliser l’**Explorateur de documentation** pour accéder à la documentation pour vous aider à apprendre et à comprendre les méthodes disponibles.
 
-Vous pouvez accéder à l’éditeur de requêtes à partir de :
+Vous pouvez accéder à l’éditeur de requêtes à partir de :
 
 * **Outils** -> **Général** -> **Éditeur de requêtes GraphQL**
-* directement; par exemple, `http://localhost:4502/aem/graphiql.html`
+* directement ; par exemple, `http://localhost:4502/aem/graphiql.html`
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
 
 Vous pouvez utiliser GraphiQL sur votre système afin que les requêtes puissent être demandées par votre application cliente à l’aide de requêtes GET et pour publier des requêtes. Pour l’utilisation de la production, vous pouvez alors [déplacer vos requêtes vers votre environnement de production ;](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Commencez par créer l’auteur de production pour valider le contenu nouvellement créé avec les requêtes, puis publiez la production pour la consommation en direct.
 
-## Sélection de votre point de terminaison {#selecting-endpoint}
+## Sélection de votre point d’entrée {#selecting-endpoint}
 
-Pour commencer, vous devez sélectionner la variable **[Point d’entrée](/help/headless/graphql-api/graphql-endpoint.md)** que vous souhaitez utiliser pour les requêtes. Le point de terminaison est adapté à la configuration Sites que vous souhaitez utiliser pour vos requêtes.
+Pour commencer, vous devez sélectionner le **[Point d’entrée](/help/headless/graphql-api/graphql-endpoint.md)** que vous souhaitez utiliser pour les requêtes. Ce point d’entrée est adapté pour la configuration Sites que vous souhaitez utiliser pour vos requêtes.
 
-Elle est disponible dans la liste déroulante en haut à droite.
+Il est disponible dans la liste déroulante en haut à droite.
 
 ## Création et persistance d’une nouvelle requête {#creating-new-query}
 
-Vous pouvez saisir votre nouvelle requête dans l’éditeur, qui se trouve dans le panneau du milieu à gauche, directement sous le logo GraphiQL.
+Vous pouvez saisir votre nouvelle requête dans l’éditeur qui se trouve dans le panneau du milieu à gauche, directement sous le logo GraphiQL.
 
 >[!NOTE]
 >
->Si une requête persistante est déjà sélectionnée et s’affiche dans le panneau de l’éditeur, sélectionnez `+` (en regard de **Requêtes persistantes**) pour vider l’éditeur prêt pour votre nouvelle requête.
+>Si une requête persistante est déjà sélectionnée et s’affiche dans le panneau de l’éditeur, sélectionnez `+` (en face de **Requêtes persistantes**) pour vider l’éditeur prêt pour votre nouvelle requête.
 
-Il suffit de commencer à taper, l&#39;éditeur aussi :
+Commencez simplement à taper, et l’éditeur :
 
-* utilise le survol de la souris pour afficher des informations supplémentaires sur les éléments.
-* fournit des fonctionnalités telles que la mise en surbrillance de la syntaxe, la saisie automatique et la suggestion automatique ;
+* offre une fonctionnalité de survol de la souris pour afficher des informations supplémentaires sur les éléments ;
+* offre des fonctionnalités telles que la mise en surbrillance de la syntaxe, la saisie automatique et la suggestion automatique.
 
 >[!NOTE]
 >
->Les requêtes GraphQL commencent généralement par une `{` caractère.
+>Les requêtes GraphQL commencent généralement par un caractère `{`.
 >
->Lignes commençant par un `#` sont ignorées.
+>Les lignes qui commencent par un `#` sont ignorées.
 
-Utilisation **Enregistrer sous** pour conserver votre nouvelle requête.
+Utilisez **Enregistrer sous** pour conserver votre nouvelle requête.
 
-## Mise à jour de la requête conservée {#updating-persisted-query}
+## Mise à jour de la requête persistante {#updating-persisted-query}
 
-Sélectionnez la requête à mettre à jour dans la liste du **Requêtes persistantes** panneau (à l’extrême gauche).
+Sélectionnez la requête à mettre à jour dans la liste du panneau des **Requêtes persistantes** (à l’extrême gauche).
 
 La requête s’affiche dans le panneau de l’éditeur. Apportez les modifications nécessaires, puis utilisez **Enregistrer** pour valider vos mises à jour dans la requête persistante.
 
 ## Exécution de requêtes {#running-queries}
 
-Vous pouvez exécuter une nouvelle requête immédiatement ou charger et exécuter une requête persistante. Pour charger une requête persistante, sélectionnez-la dans la liste ; la requête s’affichera dans le panneau de l’éditeur.
+Vous pouvez exécuter une nouvelle requête immédiatement ou charger et exécuter une requête persistante. Pour charger une requête persistante, sélectionnez-la dans la liste ; la requête s’affichera dans le panneau de l’éditeur.
 
-Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la requête qui sera exécutée lorsque vous :
+Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la requête qui sera exécutée lorsque vous :
 
-* cliquez/appuyez sur le bouton **Exécuter la requête** icon
-* utiliser la combinaison clavier ; `Control-Enter`
+* cliquez ou appuyez sur l’icône **Exécuter la requête** ;
+* utilisez la combinaison de clavier `Control-Enter`.
 
 ## Variables de requête {#query-variables}
 
 <!-- more details needed here? -->
 
-L’IDE GraphiQL vous permet également de gérer vos [Variables de requête](/help/headless/graphql-api/content-fragments.md#graphql-variables).
+L’IDE GraphiQL vous permet également de gérer vos [variables de requête](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Par exemple :
 
@@ -125,15 +125,15 @@ Les caches peuvent continuer à fournir une réponse mise en cache en cas d’er
 
 ## Publication des requêtes conservées {#publishing-persisted-queries}
 
-Une fois que vous avez sélectionné votre requête conservée dans la liste (panneau de gauche), vous pouvez utiliser la variable **Publier** et **Annuler la publication** actions. Ils seront alors activés dans votre environnement de publication (par exemple, `dev-publish`) pour un accès facile à vos applications lors des tests.
+Une fois que vous avez sélectionné votre requête persistante dans la liste (panneau de gauche), vous pouvez utiliser les actions **Publier** et **Annuler la publication**. Ils seront alors activés dans votre environnement de publication (par exemple, `dev-publish`) pour un accès facile à vos applications lors des tests.
 
 >[!NOTE]
 >
->Définition du cache de la requête conservée `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} a une valeur par défaut de 2 heures (7 200 secondes).
+>La définition du cache de la requête persistante `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} a une valeur par défaut de 2 heures (7 200 secondes).
 
-## Copier l’URL pour accéder directement à la requête {#copy-url}
+## Copie de l’URL pour accéder directement à la requête {#copy-url}
 
-Le **Copier l’URL** permet de simuler une requête en copiant l’URL utilisée pour accéder directement à la requête conservée et consulter les résultats. Il peut ensuite être utilisé à des fins de test ; par exemple, en accédant à dans un navigateur :
+L’option **Copier l’URL** vous permet de simuler une requête en copiant l’URL utilisée pour accéder directement à la requête persistante et consulter les résultats. Elle peut ensuite être utilisée à des fins de test ; par exemple, en y accédant par le biais d’un navigateur :
 
 <!--
   >[!NOTE]
@@ -147,34 +147,34 @@ Par exemple :
 
 `http://localhost:4502/graphql/execute.json/global/article-list-01`
 
-En utilisant cette URL dans un navigateur, vous pouvez confirmer les résultats :
+En utilisant cette URL dans un navigateur, vous pouvez confirmer les résultats :
 
 ![GraphiQL - Copier l’URL](assets/cfm-graphiql-copy-url.png "GraphiQL - Copier l’URL")
 
-Le **Copier l’URL** est accessible à partir des trois points verticaux situés à droite du nom de la requête conservée (panneau à l’extrême gauche) :
+L’option **Copier l’URL** est accessible à partir des trois points verticaux situés à droite du nom de la requête persistante (panneau tout à gauche) :
 
 ![GraphiQL - Copier l’URL](assets/cfm-graphiql-persisted-query-options.png "GraphiQL - Copier l’URL")
 
 ## Suppression de requêtes persistantes {#deleting-persisted-queries}
 
-Le **Supprimer** est également accessible à partir des trois points verticaux situés à droite du nom de la requête conservée (panneau à l’extrême gauche).
+L’option **Supprimer** est également accessible à partir des trois points verticaux situés à droite du nom de la requête persistante (panneau tout à gauche).
 
 <!-- what happens if you try to delete something that is still published? -->
 
 
 ## Installation de la requête persistante en production {#installing-persisted-query-production}
 
-Après avoir développé et testé votre requête persistante avec GraphiQL, l’objectif final est de [le transférer vers votre environnement de production ;](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production) à utiliser par vos applications.
+Après avoir développé et testé votre requête persistante avec GraphiQL, l’objectif final est de [la transférer vers votre environnement de production](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production) pour qu’elle soit utilisée par vos applications.
 
 ## Raccourcis clavier {#keyboard-shortcuts}
 
-Plusieurs raccourcis clavier permettent d’accéder directement aux icônes d’action dans l’IDE :
+Plusieurs raccourcis clavier permettent d’accéder directement aux icônes d’action dans l’IDE :
 
-* Confirmer la requête :  `Shift-Control-P`
-* Merge Query :  `Shift-Control-M`
-* Exécuter la requête :  `Control-Enter`
-* Remplissage automatique :  `Control-Space`
+* Embellir la requête : `Shift-Control-P`
+* Fusionner la requête : `Shift-Control-M`
+* Exécuter la requête : `Control-Enter`
+* Remplissage automatique : `Control-Space`
 
 >[!NOTE]
 >
->Sur certains claviers, la fonction `Control` la clé est étiquetée comme `Ctrl`.
+>Sur certains claviers, la clé `Control` est étiquetée comme `Ctrl`.

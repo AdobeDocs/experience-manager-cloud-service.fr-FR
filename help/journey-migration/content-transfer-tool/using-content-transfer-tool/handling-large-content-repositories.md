@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: be66d3e255d43156dfd181711d5a372f2c85f6d5
 workflow-type: tm+mt
 source-wordcount: '1778'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr#setting-up-pre-copy-step" text="Prise en main d’étape AzCopy en tant qu’étape de pré-copie"
 
 La copie d’un grand nombre d’objets Blob avec l’outil de transfert de contenu (CTT) peut prendre plusieurs jours.
-Pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service, le CTT peut utiliser [AzCopy](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) comme étape de pré-copie facultative. Cette étape de pré-copie peut être utilisée lorsque l’instance AEM source est configurée pour utiliser une banque de données Amazon S3, Azure Blob Storage ou File Data Store. L’étape de précopie est la plus efficace pour la première extraction et ingestion complètes. Toutefois, l’utilisation de la précopie pour les complément ultérieurs n’est pas recommandée (si la taille du complément est inférieure à 200 Go), car cela peut ajouter du temps à l’ensemble du processus. Une fois cette étape préalable configurée, dans la phase d’extraction, AzCopy copie les objets blob d’Amazon S3, d’Azure Blob Storage ou du File Data Store vers le magasin d’objets blob du jeu de migration. Au cours de la phase d’ingestion, AzCopy copie les objets blob de la boutique blob du jeu de migration vers la boutique blob d‘AEM as a Cloud Service.
+Pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service, le CTT peut utiliser [AzCopy](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) comme étape de pré-copie facultative. Cette étape de pré-copie peut être utilisée lorsque l’instance AEM source est configurée pour utiliser une banque de données Amazon S3, Azure Blob Storage ou File Data Store. L’étape de précopie est la plus efficace pour la première occurrence complète d’extraction et d’ingestion. Toutefois, l’utilisation de la précopie pour les complément ultérieurs n’est pas recommandée (si la taille du complément est inférieure à 200 Go), car cela peut allonger la durée de l’ensemble du processus. Une fois cette étape préalable configurée, dans la phase d’extraction, AzCopy copie les objets blob d’Amazon S3, d’Azure Blob Storage ou du File Data Store vers le magasin d’objets blob du jeu de migration. Au cours de la phase d’ingestion, AzCopy copie les objets blob de la boutique blob du jeu de migration vers la boutique blob d‘AEM as a Cloud Service.
 
 >[!NOTE]
 > Cette fonctionnalité a été introduite dans la version 1.5.4 de CTT.
@@ -84,7 +84,7 @@ Vous pouvez utiliser l’onglet Mesures du conteneur pour déterminer la taille 
 * Pour mac, systèmes UNIX, exécutez la commande du sur le répertoire de la banque de données pour obtenir sa taille :
    `du -sh [path to datastore on the instance]`. Par exemple, si votre banque de données se trouve à l’adresse `/mnt/author/crx-quickstart/repository/datastore`, la commande suivante vous permet d’obtenir sa taille : `du -sh /mnt/author/crx-quickstart/repository/datastore`.
 
-* Pour Windows, utilisez la commande DIR du répertoire de la banque de données pour obtenir sa taille :
+* Pour Windows, utilisez la commande DIR du répertoire de la banque de données pour obtenir sa taille :
    `dir /a/s [location of datastore]`.
 
 ### 1. Installez AzCopy {#install-azcopy}
@@ -141,7 +141,7 @@ s3SecretKey=--REDACTED--
 
 #### Banque de données Fichier {#file-data-store-azcopy-config}
 
-Votre fichier `azcopy.config` doit contenir la propriété azcopyPath, ainsi qu’une propriété facultative repository.home qui pointe vers l&#39;emplacement de la banque de données de fichiers. Utilisez les valeurs correctes pour votre instance.
+Votre fichier `azcopy.config` doit contenir la propriété azcopyPath, ainsi qu’une propriété facultative repository.home qui pointe vers l’emplacement de la banque de données de fichiers. Utilisez les valeurs correctes pour votre instance.
 Banque de données Fichier
 
 ```

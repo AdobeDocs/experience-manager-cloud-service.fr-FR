@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 1544358f9a706574d8944fa92422240c46d62d2f
 workflow-type: tm+mt
 source-wordcount: '2253'
-ht-degree: 85%
+ht-degree: 99%
 
 ---
 
@@ -64,15 +64,15 @@ Notez que la personnalisation d’un index prêt à l’emploi, ainsi que les in
 
 >[!NOTE]
 >
->Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-6`, copiez la dernière définition d’index d’usine à partir d’un *Environnement Cloud Service* à l’aide du gestionnaire de modules CRX DE (`/crx/packmgr/`) . Renommez ensuite la configuration, par exemple pour `damAssetLucene-6-custom-1`, puis ajoutez vos personnalisations par-dessus. Cela permet de s’assurer que les configurations requises ne sont pas supprimées par inadvertance. Par exemple, la variable `tika` noeud sous `/oak:index/damAssetLucene-6/tika` est requis dans l’index personnalisé du service cloud. Il n’existe pas sur le SDK Cloud.
+>Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-6`, copiez la dernière définition d’index d’usine à partir d’un *Environnement Cloud Service* à l’aide du gestionnaire de modules CRX DE (`/crx/packmgr/`). Renommez ensuite la configuration, par exemple en `damAssetLucene-6-custom-1`, puis ajoutez ensuite vos personnalisations. Vous vous assurez ainsi que les configurations requises ne sont pas supprimées par inadvertance. Par exemple, le nœud `tika` sous `/oak:index/damAssetLucene-6/tika` est requis dans l’index personnalisé du service cloud. Il n’existe pas dans le SDK *Cloud.
 
 Vous devez préparer un nouveau package de définition d’index qui contient la définition d’index réelle, en suivant ce modèle de dénomination :
 
 `<indexName>[-<productVersion>]-custom-<customVersion>`
 
-qui doit ensuite être placé dans `ui.apps/src/main/content/jcr_root`. Toutes les définitions d’index personnalisées et personnalisées doivent être stockées sous . `/oak:index`.
+qui doit ensuite être placé dans `ui.apps/src/main/content/jcr_root`. Toutes les définitions d’index personnalisées doivent être stockées sous `/oak:index`.
 
-Le filtre du package doit être défini de sorte que les index existants (index prêts à l’emploi) soient conservés. Dans le fichier `ui.apps/src/main/content/META-INF/vault/filter.xml`, chaque index personnalisé (ou personnalisé) doit être répertorié, par exemple : `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Si la version de l’index est modifiée ultérieurement, le filtre doit être ajusté.
+Le filtre du package doit être défini de sorte que les index existants (index prêts à l’emploi) soient conservés. Dans le fichier `ui.apps/src/main/content/META-INF/vault/filter.xml`, chaque index personnalisé doit être répertorié, par exemple sous le nom de `<filter root="/oak:index/damAssetLucene-6-custom-1"/>`. Si la version de l’index est modifiée ultérieurement, le filtre doit être ajusté.
 
 Le package de l’exemple ci-dessus est nommé `com.adobe.granite:new-index-content:zip:1.0.0-SNAPSHOT`.
 
@@ -84,11 +84,11 @@ Le package de l’exemple ci-dessus est nommé `com.adobe.granite:new-index-cont
 
 ## Déploiement de définitions d’index {#deploying-index-definitions}
 
-Les définitions d’index sont marquées comme personnalisées et versionnées :
+Les définitions d’index sont désormais marquées comme étant personnalisées et versionnées :
 
 * La définition d’index elle-même (par exemple, `/oak:index/ntBaseLucene-custom-1`)
 
-Pour déployer un index personnalisé ou personnalisé, la définition d’index (`/oak:index/definitionname`) doit être diffusé via `ui.apps` via Git et le processus de déploiement de Cloud Manager. Dans le filtre FileVault, par exemple `ui.apps/src/main/content/META-INF/vault/filter.xml`, répertoriez chaque index personnalisé et personnalisé individuellement, par exemple : `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La définition d’index personnalisée/personnalisée elle-même sera alors stockée dans le fichier . `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, comme suit :
+Pour déployer un index personnalisé, la définition d’index (`/oak:index/definitionname`) doit être diffusée via `ui.apps`, à l’aide du processus de déploiement de Cloud Manager et via Git. Dans le filtre FileVault, par exemple `ui.apps/src/main/content/META-INF/vault/filter.xml`, répertoriez individuellement chaque index personnalisé, par exemple `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La définition d’index personnalisée elle-même sera alors stockée dans le fichier `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, comme suit :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -104,11 +104,11 @@ Pour déployer un index personnalisé ou personnalisé, la définition d’index
 </jcr:root>
 ```
 
-L’exemple ci-dessus contient une configuration pour Apache Tika. Le fichier de configuration Tika serait stocké sous `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
+L’exemple ci-dessus contient une configuration pour Apache Tika. Le fichier de configuration Tika serait stocké sous `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/tika/config.xml`.
 
 ### Configuration du projet
 
-Selon la version du plug-in Jackrabbit Filevault Maven Package utilisée, une configuration supplémentaire est requise dans le projet. Lors de l’utilisation de la version du plug-in Jackrabbit Filevault Maven Package **1.1.6** ou plus récent, puis le fichier `pom.xml` doit contenir la section suivante dans la configuration du module externe pour le `filevault-package-maven-plugin`, dans `configuration/validatorsSettings` (juste avant `jackrabbit-nodetypes`) :
+Selon la version du plug-in Jackrabbit Filevault Maven Package utilisée, une configuration supplémentaire est requise dans le projet. Lors de l’utilisation du plug-in de package Jackrabbit Filevault Maven version **1.1.6** ou plus récente, le fichier `pom.xml` doit contenir la section suivante dans la configuration du plug-in pour le `filevault-package-maven-plugin`, dans `configuration/validatorsSettings` (juste avant `jackrabbit-nodetypes`) :
 
 ```xml
 <jackrabbit-packagetype>
@@ -118,7 +118,7 @@ Selon la version du plug-in Jackrabbit Filevault Maven Package utilisée, une co
 </jackrabbit-packagetype>
 ```
 
-En outre, dans ce cas, la variable `vault-validation` La version doit être mise à niveau vers une version plus récente :
+En outre, dans ce cas, la version `vault-validation` doit être mise à niveau vers une version plus récente :
 
 ```xml
 <dependency>
@@ -128,7 +128,7 @@ En outre, dans ce cas, la variable `vault-validation` La version doit être mise
 </dependency>
 ```
 
-Ensuite, dans `ui.apps.structure/pom.xml` et `ui.apps/pom.xml`, la configuration de la variable `filevault-package-maven-plugin` doit avoir `allowIndexDefinitions` ainsi que `noIntermediateSaves` activée. L’option `noIntermediateSaves` s’assure que les configurations d’index sont ajoutées de manière atomique.
+Ensuite, dans `ui.apps.structure/pom.xml` et `ui.apps/pom.xml`, la configuration du `filevault-package-maven-plugin` doit avoir les options `allowIndexDefinitions` et `noIntermediateSaves` activées. L’option `noIntermediateSaves` garantit que les configurations d’index sont ajoutées de manière atomique.
 
 ```xml
 <groupId>org.apache.jackrabbit</groupId>
@@ -142,7 +142,7 @@ Ensuite, dans `ui.apps.structure/pom.xml` et `ui.apps/pom.xml`, la configuration
     ...
 ```
 
-Dans `ui.apps.structure/pom.xml`, la variable `filters` pour ce module externe, doit contenir une racine de filtre comme suit :
+Dans `ui.apps.structure/pom.xml`, la section `filters` pour ce plug-in, doit contenir une racine de filtre comme suit :
 
 ```xml
 <filter><root>/oak:index</root></filter>

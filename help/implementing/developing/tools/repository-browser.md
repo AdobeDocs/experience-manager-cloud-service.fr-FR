@@ -7,7 +7,7 @@ exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 source-git-commit: b4d28a0c827fb07d6f731118078ecdf448e2f58b
 workflow-type: tm+mt
 source-wordcount: '814'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 95%
 
 >[!INFO]
 >
->Vous pouvez également regarder [ce clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html) pour une présentation vidéo rapide sur l’utilisation du navigateur de référentiel pour déboguer AEM as a Cloud Service.
+>Vous pouvez également regarder [ce clip](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=fr) pour profiter d’une vidéo de présentation rapide sur l’utilisation du navigateur de référentiel pour déboguer AEM as a Cloud Service.
 
 ## Présentation {#introduction}
 

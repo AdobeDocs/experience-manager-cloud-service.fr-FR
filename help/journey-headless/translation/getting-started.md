@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -88,7 +88,7 @@ Comme les modèles de contenu définissent la structure de votre contenu, vous d
       ![Éditeur de modèles de fragment de contenu](assets/content-fragment-model-editor.png)
 1. Appuyez ou cliquez sur l’un des champs du modèle. AEM le coche et les détails de ce champ s’affichent dans la colonne de droite.
    ![Détail de l’Éditeur de modèles de fragment de contenu](assets/content-fragment-model-editor-detail.png)
-1. L’architecte de contenu active la propriété **Traductible** sur chaque champ de modèle de contenu qui doit être traduit.
+1. L’architecte de contenu active la propriété **Traduisible** sur chaque champ de modèle de contenu qui doit être traduit.
 
 >[!TIP]
 >

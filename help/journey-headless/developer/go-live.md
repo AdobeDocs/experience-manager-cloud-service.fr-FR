@@ -5,7 +5,7 @@ exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
 source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
 workflow-type: tm+mt
 source-wordcount: '1070'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -15,13 +15,13 @@ Dans cette partie du [Parcours de développement découplé AEM](overview.md), a
 
 ## Un peu d’histoire...  {#story-so-far}
 
-Dans le document précédent du parcours sans tête AEM, [Comment tout assembler - Votre application et votre contenu AEM sans affichage](put-it-all-together.md) vous avez appris à utiliser les outils de développement d’AEM pour rassembler toutes les facettes de votre projet.
+Dans le document précédent du parcours découplé AEM, [Tout assembler – Votre application et votre contenu dans AEM découplé](put-it-all-together.md), vous avez appris à utiliser les outils de développement d’AEM pour rassembler tous les éléments de votre projet.
 
 Cet article s’appuie sur ces principes de base pour que vous compreniez comment préparer votre propre projet AEM découplé à être mis en ligne.
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre le pipeline de publication sans interface utilisateur AEM et les considérations de performances que vous devez connaître avant de passer en ligne avec votre application.
+Ce document vous aide à comprendre le pipeline de publication découplée AEM et les considérations que vous devez prendre en compte concernant les performances avant de mettre en ligne votre application.
 
 * Sécurisez et mettez à l’échelle votre application avant son lancement
 * Surveillance des performances et du débogage
@@ -31,7 +31,7 @@ Ce document vous aide à comprendre le pipeline de publication sans interface ut
 ## Prepare your AEM Headless Application for Go-Live {#prepare-your-aem-headless-application-for-golive}
 
 -->
-Pour préparer votre application AEM sans interface pour le lancement, suivez les bonnes pratiques décrites ci-dessous.
+Pour préparer votre application AEM découplée pour son lancement, suivez les bonnes pratiques décrites ci-dessous.
 
 ## Sécurisez et mettez à l’échelle votre application découplée avant son lancement {#secure-and-scale-before-launch}
 
@@ -51,7 +51,7 @@ Pour préparer votre application AEM sans interface pour le lancement, suivez le
    * Fournissez un TTL CDN supérieur à 600 secondes pour que le CDN les mette en cache.
    * AEM peut calculer l’impact d’une modification de modèle sur des requêtes existantes.
 * Partagez les requêtes de fichiers JSON et GraphQL entre un taux de changement de contenu faible et élevé afin de réduire le trafic client sur le réseau de diffusion de contenu et d’attribuer un TTL plus élevé. Vous minimiserez grâce à cela la revalidation par le CDN du fichier JSON avec le serveur d’origine.
-* Pour invalider activement le contenu du réseau de diffusion de contenu, utilisez la fonction Purge progressive. Cela permet au CDN de retélécharger le contenu sans provoquer l’échec du cache.
+* Pour invalider activement le contenu du réseau de diffusion de contenu, utilisez la fonction Purge progressive. Cela permet au réseau de diffusion de contenu de télécharger à nouveau le contenu sans provoquer l’échec du cache.
 
 ## Amélioration du temps de téléchargement du contenu découplé {#improve-download-time}
 
@@ -63,7 +63,7 @@ Pour préparer votre application AEM sans interface pour le lancement, suivez le
 
 ## Déploiement en environnement de production {#deploy-to-production}
 
-Une fois que vous avez vérifié que tout a été testé et fonctionne correctement, vous êtes prêt à envoyer vos mises à jour de code vers une [référentiel Git centralisé dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=fr).
+Une fois que vous avez vérifié que tout a été testé et fonctionne correctement, vous êtes prêt à envoyer vos mises à jour de code vers un [référentiel Git centralisé dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=fr).
 
 Une fois les mises à jour transférées vers Cloud Manager, elles peuvent être déployées vers AEM as a Cloud Service à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
 
@@ -71,7 +71,7 @@ Vous pouvez commencer à déployer votre code en exploitant le pipeline CI/CD de
 
 ## Surveillance des performances {#performance-monitoring}
 
-Pour que les utilisateurs disposent de la meilleure expérience possible lors de l’utilisation de l’application AEM sans interface utilisateur, il est important de surveiller les mesures de performances clés, comme indiqué ci-dessous :
+Pour que les utilisateurs disposent de la meilleure expérience possible lorsqu’ils utilisent l’application découplée AEM, il est important de surveiller les mesures de performances clés, comme indiqué ci-dessous :
 
 * la validation des versions d’aperçu et de production de l’application ;
 * la vérification des pages d’état AEM pour l’état de disponibilité actuelle du service ;
@@ -81,7 +81,7 @@ Pour que les utilisateurs disposent de la meilleure expérience possible lors de
       * Les serveurs d’origine : le nombre d’appels, les taux d’erreur, la charge du processeur, le trafic de charge utile
    * Les performances auteur
       * Pour vérifier le nombre d’utilisateurs, de demandes et de chargements
-* Accès aux rapports de performances spécifiques à l’application et à l’espace
+* Accédez aux rapports de performances spécifiques à l’application et à la surface.
    * Une fois le serveur ouvert, vérifiez si les mesures générales apparaissent en vert/orange/rouge, puis identifiez les problèmes spécifiques à l’application.
    * Ouvrez les rapports ci-dessus filtrés par application ou par surface (par exemple, la version bureau de Photoshop, un paywall).
    * Utilisez des API de journal Splunk pour accéder aux performances du service et de l’application.
@@ -118,13 +118,13 @@ Félicitations ! Vous avez terminé le parcours de développement découplé AE
 * Comment créer du contenu découplé dans AEM
 * Comment récupérer et mettre à jour du contenu découplé dans AEM
 * La mise en ligne d’un projet découplé AEM
-* Que faire après la mise en service.
+* Que faire après la mise en ligne.
 
 Vous avez peut-être déjà lancé votre premier projet découplé AEM, vous disposez en tout cas déjà de toutes les connaissances nécessaires pour le faire. Super boulot !
 
 ### Découvrez les applications sur une seule page {#explore-spa}
 
-Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souviendrez peut-être dans le [Prise en main dans le parcours](getting-started.md#integration-levels) nous avons discuté brièvement de la manière dont AEM prend en charge non seulement la livraison sans interface utilisateur et les modèles traditionnels de pile complète, mais aussi les modèles hybrides qui combinent les avantages des deux.
+Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souvenez peut-être que dans la section [Prise en main du parcours](getting-started.md#integration-levels) nous avons brièvement expliqué comment AEM peut non seulement prendre en charge la diffusion découplée et les modèles complets traditionnels, mais également les modèles hybrides qui combinent les avantages des deux.
 
 Si ce type de flexibilité est nécessaire pour votre projet, passez à la section optionnelle du parcours intitulée [Comment créer des applications sur une seule page (SPA) avec AEM.](create-spa.md)
 

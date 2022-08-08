@@ -6,7 +6,7 @@ mini-toc-levels: 1
 source-git-commit: 75621ba378d59bd36146b15995823c43c458d349
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 18%
+ht-degree: 22%
 
 ---
 
@@ -100,8 +100,8 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 
 ## Cloud Manager {#cloud-manager}
 
-Vous trouverez une liste complète des versions mensuelles de Cloud Manager [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## Outils de migration {#migration-tools}
 
-Vous trouverez une liste complète des versions des outils de migration [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+Vous trouverez une liste complète des versions des outils de migration [ici](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

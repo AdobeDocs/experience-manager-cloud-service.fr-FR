@@ -5,7 +5,7 @@ exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 91%
 
 * (Pour les sandbox uniquement) Après l’intégration du service, [créez](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=fr#how-to-use) et [exécutez](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr) les pipelines de production et hors production. Les dernières fonctionnalités d’[!DNL AEM Forms] as a Cloud Service sont ainsi activées et intégrées à votre environnement.
 
-Vous pouvez utiliser Forms as a Cloud Service pour créer un formulaire adaptatif (inscription numérique) ou générer une communication client. Après avoir terminé [Intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) au [!DNL Adobe Experience Manager] as a Cloud Service, effectuez l’une des actions suivantes pour activer les fonctionnalités d’inscription numérique ou de communication client. Vous pouvez également activer les deux fonctionnalités :
+Vous pouvez utiliser Forms as a Cloud Service pour créer un formulaire adaptatif (inscription numérique) ou pour générer une communication client. Après avoir terminé l’[Intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) à [!DNL Adobe Experience Manager] as a Cloud Service, effectuez l’une des actions suivantes pour activer les fonctionnalités d’inscription numérique ou de communication client. Vous pouvez également activer les deux fonctionnalités :
 
 1. Connectez-vous à Cloud Manager et ouvrez votre instance AEM Forms as a Cloud Service.
 

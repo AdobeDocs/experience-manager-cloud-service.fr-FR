@@ -5,7 +5,7 @@ exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
 source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -31,13 +31,13 @@ Une opération synchrone est un processus de génération de documents de maniè
 * Générer un document PostScript (PS), PCL (Printer Command Language), ZPL (Zebra Printing Language) à partir d’un fichier XDP ou d’un document PDF.
 * Assemblage de documents PDF
 * Désassemblage de documents PDF
-* Convertir un document en document compatible avec le PDF/A
+* Conversion d’un document en document conforme au PDF/A
 * Validation d’un document conforme au PDF/A
 
 
 ### Authentification d’un appel API
 
-Les opérations synchrones prennent en charge deux types d’authentification :
+Les opérations synchrones prennent en charge deux types d’authentification :
 
 * **Authentification de base** : l’authentification de base est un schéma d’authentification simple intégré au protocole HTTP. Le client envoie des requêtes HTTP avec l’en-tête Autorisation qui contient le mot Base suivi d’un espace et d’une chaîne codée en base64 - nom d’utilisateur : mot de passe. Par exemple, pour autoriser en tant qu’administrateur / admin, le client envoie Base [chaîne codée en base64 - nom d’utilisateur] : [chaîne codée en base64 - mot de passe].
 
@@ -54,7 +54,7 @@ Les opérations synchrones prennent en charge deux types d’authentification :
    >Adobe recommande d’utiliser l’authentification basée sur les jetons sur un environnement de production.
 
 
-### (Uniquement pour les API Document Generation) Configuration des ressources et des autorisations
+### (Uniquement pour les API de génération de documents) Configuration des ressources et des autorisations
 
 Pour utiliser les API synchrones, les éléments suivants sont requis :
 
@@ -63,7 +63,7 @@ Pour utiliser les API synchrones, les éléments suivants sont requis :
 * Utilisateurs disposant des privilèges d’administrateur Experience Manager
 * Chargez les modèles et d’autres ressources vers votre instance Experience Manager Forms Cloud Service.
 
-### (Uniquement pour les API Document Generation) Téléchargez des modèles et d’autres ressources vers votre instance de Experience Manager.
+### (Uniquement pour les API de génération de documents) Chargez des modèles et d’autres ressources vers votre instance Experience Manager.
 
 Une entreprise possède généralement différents modèles. Par exemple, un modèle pour les relevés de carte de crédit, les relevés de prestations et les réclamations. Chargez tous ces modèles XDP et PDF vers votre instance Experience Manager. Pour charger un modèle :
 
@@ -75,7 +75,7 @@ Une entreprise possède généralement différents modèles. Par exemple, un mod
 
 ### Appel d’une API
 
-La [documentation de référence sur les API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence de l’API fournit également un fichier de définition de l’API au format .yaml . Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
+La [documentation de référence sur les API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence sur les API fournit également un fichier de définition de l’API au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 

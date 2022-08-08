@@ -5,12 +5,12 @@ landing-page-description: Pour une vue d’ensemble de la conformité dans AEM 
 exl-id: d7ef2875-a6d7-4f97-b14e-7e5a383cdee9
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '378'
+ht-degree: 100%
 
 ---
 
-# Conformité dans AEM as a Cloud Service {#aem-compliance}
+# Conformité dans AEM as a Cloud Service {#aem-compliance}
 
 Apprenez-en plus sur la conformité dans Experience Manager as a Cloud Service.
 

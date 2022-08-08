@@ -5,7 +5,7 @@ exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
 source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
 workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Vous pouvez remplacer un certificat SSL en suivant les mêmes étapes que celles
 
 La suppression de certificats de Cloud Manager est une action permanente qui ne peut pas être annulée. Adobe recommande, en règle générale, d’enregistrer les fichiers SSL localement avant de les supprimer dans Cloud Manager.
 
-Cloud Manager ne vous permet pas de supprimer un certificat SSL associé à un ou plusieurs domaines. Tous les domaines associés doivent être supprimés avant de supprimer le certificat SSL. Reportez-vous au document [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus.
+Cloud Manager ne vous permet pas de supprimer un certificat SSL associé à un ou plusieurs domaines. Tous les domaines associés doivent être supprimés avant de supprimer le certificat SSL. Consultez le document [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus.
 
 Procédez comme suit pour supprimer un certificat SSL.
 

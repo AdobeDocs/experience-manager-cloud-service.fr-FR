@@ -6,7 +6,7 @@ exl-id: ee920bc5-cad7-4fac-bf73-bc1178699f90
 source-git-commit: 1b7183421b9acd30697f1dc228dd9e2728d24ba6
 workflow-type: tm+mt
 source-wordcount: '479'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Cette page présente les notes de mise à jour de Cloud Manager dans AEM as a
 
 ## Date de publication {#release-date}
 
-La date de publication de Cloud Manager dans AEM 2021.12.0 as a Cloud Service est le 16 décembre 2021. La prochaine version est prévue pour le 20 janvier 2022.
+La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.12.0 est le 16 décembre 2021. La prochaine version est prévue pour le 20 janvier 2022.
 
 ## Nouveautés {#what-is-new}
 

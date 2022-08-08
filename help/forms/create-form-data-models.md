@@ -8,7 +8,7 @@ exl-id: b17b7441-912c-44c7-a835-809f014a8c86
 source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
 workflow-type: tm+mt
 source-wordcount: '1531'
-ht-degree: 61%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Assurez-vous d’avoir configuré les sources de données que vous avez l’inte
 
    * Attribuez un nom au modèle de données de formulaire.
    * (**Facultatif**) Spécifiez le titre, la description et les balises du modèle de données de formulaire.
-   * (**Facultatif et applicable uniquement si les sources de données sont configurées**) Cochez l’icône en regard du champ **[!UICONTROL Configuration de la source de données]** et sélectionnez le nœud de configuration où se trouvent les services cloud pour les sources de données que vous voulez utiliser. Ceci restreint la liste des sources de données que vous pouvez sélectionner à la page suivante parmi les sources disponibles dans le nœud de configuration sélectionné. Cependant, tout [!DNL Experience Manager] les sources de données de profil utilisateur sont répertoriées par défaut. Si vous ne sélectionnez pas de nœud de configuration, les sources de données de tous les nœuds de configuration sont répertoriées.
+   * (**Facultatif et applicable uniquement si les sources de données sont configurées**) Cochez l’icône en regard du champ **[!UICONTROL Configuration de la source de données]** et sélectionnez le nœud de configuration où se trouvent les services cloud pour les sources de données que vous voulez utiliser. Ceci restreint la liste des sources de données que vous pouvez sélectionner à la page suivante parmi les sources disponibles dans le nœud de configuration sélectionné. Cependant, toutes les sources de données des profils d’utilisateurs [!DNL Experience Manager] sont répertoriées par défaut. Si vous ne sélectionnez pas de nœud de configuration, les sources de données de tous les nœuds de configuration sont répertoriées.
 
 1. Appuyez sur **[!UICONTROL Suivant]**.
 
@@ -87,46 +87,46 @@ Pour ajouter ou mettre à jour des sources de données dans un modèle de donné
 
 ## Configurations basées sur le contexte pour des modes d’exécution spécifiques {#runmode-specific-context-aware-config}
 
-[!UICONTROL Modèle de données de formulaire] utilitaires [Configurations basées sur le contexte Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=fr) pour prendre en charge différents paramètres de source de données afin de se connecter à des sources de données pour différents [!DNL Experience Manager] Modes d’exécution.
+Le [!UICONTROL Modèle de données de formulaire] utilise des [configurations basées sur le contexte Sling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/context-aware-configs.html?lang=fr) pour prendre en charge différents paramètres de source de données afin de se connecter à des sources de données pour différents modes d’exécution d’[!DNL Experience Manager].
 
-When [!UICONTROL Modèle de données de formulaire] utilise les configurations cloud pour stocker les paramètres qui, lorsqu’ils sont archivés et déployés par le biais du contrôle de code source (référentiel GIT Cloud-Manager), créent une configuration cloud avec les mêmes paramètres pour tous les modes d’exécution (développement, évaluation et production). Toutefois, pour les cas d’utilisation où des jeux de données différents sont nécessaires pour les environnements de test et de production, nous utilisons des paramètres de source de données (par exemple, l’URL de la source de données) pour différents [!DNL Experience Manager] Modes d’exécution.
+Lorsque le [!UICONTROL modèle de données de formulaire] utilise les configurations cloud pour stocker les paramètres qui, lorsqu’ils sont archivés et déployés par le biais du contrôle de code source (référentiel GIT Cloud-Manager), créent une configuration cloud avec les mêmes paramètres pour tous les modes d’exécution (développement, évaluation et production). Toutefois, pour les cas d’utilisation où des jeux de données différents sont nécessaires pour les environnements d’évaluation et de production, nous utilisons des paramètres de source de données (par exemple, l’URL de la source de données) pour différents modes d’exécution d’[!DNL Experience Manager].
 
-Pour ce faire, vous devez créer une configuration OSGi contenant des paires paramètres-valeur de source de données. Cette option remplace la même paire de [!UICONTROL Modèle de données de formulaire] configuration du cloud au moment de l’exécution. Comme les configurations OSGi prennent en charge ces modes d’exécution par défaut, vous pouvez remplacer un paramètre de source de données par des valeurs différentes en fonction du mode d’exécution.
+Pour ce faire, vous devez créer une configuration OSGi contenant des paires paramètres-valeur de source de données. Cette option remplace la même paire de la configuration cloud du [!UICONTROL modèle de données de formulaire] au moment de l’exécution. Comme les configurations OSGi prennent en charge ces modes d’exécution par défaut, vous pouvez remplacer un paramètre de source de données par des valeurs différentes en fonction du mode d’exécution.
 
-Pour activer les configurations cloud spécifiques au déploiement dans [!UICONTROL Modèle de données de formulaire]:
+Pour activer les configurations cloud spécifiques au déploiement dans le [!UICONTROL modèle de données de formulaire] :
 
-1. Créez une configuration cloud sur l’instance de développement locale. Pour obtenir des instructions détaillées, voir [Configuration des sources de données](/help/forms/configure-data-sources.md).
+1. créez une configuration cloud sur l’instance de développement locale. Pour obtenir des instructions détaillées, consultez [Comment configurer des sources de données](/help/forms/configure-data-sources.md).
 
 1. Stockez votre configuration cloud sur le système de fichiers.
-   1. Créer un package avec filtre `/conf/{foldername}/settings/cloudconfigs/fdm`. Utilisez la même `{foldername}` comme à l’étape 1. Et remplacez `fdm` avec `azurestorage` pour la configuration du stockage Azure.
-   1. Créez et téléchargez le package. Pour plus d’informations, voir [actions de package](/help/implementing/developing/tools/package-manager.md).
+   1. Créez un package avec le filtre `/conf/{foldername}/settings/cloudconfigs/fdm`. Utilisez le même `{foldername}` que dans l’étape 1. Et remplacez `fdm` par `azurestorage` pour la configuration du stockage Azure.
+   1. Générez et téléchargez le package. Pour plus d’informations, consultez les [actions de package](/help/implementing/developing/tools/package-manager.md).
 
-1. Intégration de la configuration cloud dans [!DNL Experience Manager] Projet d’archétype.
+1. Intégration de la configuration cloud dans le projet d’archétype d’[!DNL Experience Manager].
    1. Décompressez le package téléchargé.
-   1. Copier `jcr_root` et placez-le `ui.content` > `src` > `main` > `content`.
-   1. Mettre à jour `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` pour contenir le filtre `/conf/{foldername}/settings/cloudconfigs/fdm`. Pour plus d’informations, voir [Module ui.content de l’AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html). Lorsque ce projet d’archétype est déployé via le pipeline CM, la même configuration de cloud est installée sur tous les environnements (ou modes d’exécution). Pour modifier la valeur des champs (comme l’URL) des configurations cloud basées sur l’environnement, utilisez la configuration OSGi décrite à l’étape suivante.
+   1. Copiez le dossier `jcr_root` et placez-le dans votre `ui.content` > `src` > `main` > `content`.
+   1. Mettez à jour le chemin `ui.content` > `src` > `main` > `content` > `META-INF` > `vault` > `filter.xml` pour contenir le filtre `/conf/{foldername}/settings/cloudconfigs/fdm`. Pour plus d’informations, consultez le [module ui.content du projet d’archétype d’AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uicontent.html?lang=fr). Lorsque ce projet d’archétype est déployé sur le pipeline CM, la même configuration cloud est installée sur tous les environnements (ou tous les modes d’exécution). Pour modifier la valeur des champs (comme l’URL) des configurations cloud basées sur l’environnement, utilisez la configuration OSGi décrite à l’étape suivante.
 
-1. Créez une configuration basée sur le contexte Apache Sling. Pour créer la configuration OSGi :
-   1. **Configuration des fichiers de configuration OSGi dans [!DNL Experience Manager] Projet d’archétype.**
-Création de fichiers de configuration d’usine OSGi avec PID 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Créez un fichier portant le même nom sous chaque dossier de mode d’exécution où les valeurs doivent être modifiées par mode d’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+1. Créez une configuration basée sur le contexte Apache Sling. Pour créer la configuration OSGi :
+   1. **Configurez les fichiers de configuration OSGi dans le projet d’archétype d’[!DNL Experience Manager].**
+Créez les fichiers de configuration OSGi d’usine avec le PID 
+`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Créez un fichier portant le même nom sous chaque dossier de mode d’exécution où les valeurs doivent être modifiées par mode d’exécution. Pour plus d’informations, consultez la [Configuration de l’OSGi pour  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
-   1. **Définissez le fichier json de configuration OSGI.** Pour utiliser le fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling :
-      1. Sur l’instance de développement locale `/system/console/configMgr`, sélectionnez la configuration OSGi d’usine avec le nom . **[!UICONTROL Fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling : Configuration OSGi]**.
+   1. **Configurez le fichier json de configuration OSGI.** Pour utiliser le fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling :
+      1. Sur l’instance de développement locale `/system/console/configMgr`, sélectionnez la configuration OSGi d’usine avec le nom **[!UICONTROL Fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling : configuration OSGi]**.
       1. Fournissez une description.
-      1. Sélectionner **[!UICONTROL enabled]**.
-      1. Sous overrides, fournissez les champs qui doivent être modifiés en fonction de l’environnement dans la syntaxe de remplacement sling. Pour plus d’informations, voir [Configuration tenant compte du contexte Apache Sling - Remplacement](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Par exemple, `cloudconfigs/fdm/{configName}/url="newURL"`.
+      1. Sélectionnez **[!UICONTROL activé]**.
+      1. Sous Remplacements, renseignez les champs qui doivent être modifiés en fonction de l’environnement dans la syntaxe de remplacement sling. Pour plus d’informations, consultez [Configuration tenant compte du contexte Apache Sling - Remplacement](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration-override.html#override-syntax). Par exemple, `cloudconfigs/fdm/{configName}/url="newURL"`.
 Vous pouvez ajouter plusieurs remplacements en sélectionnant **[!UICONTROL +]**.
       1. Sélectionnez **[!UICONTROL Enregistrer]**.
-      1. Pour obtenir le fichier JSON de configuration OSGi, suivez les étapes de la rubrique [Génération de configurations OSGi à l’aide du démarrage rapide AEM SDK](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
-      1. Placez JSON dans les fichiers de configuration d’usine OSGi créés à l’étape précédente.
-      1. Modifier la valeur de `newURL` selon l’environnement (ou le mode d’exécution).
-      1. Pour modifier une valeur secrète en fonction du mode d’exécution, une variable secrète peut être créée à l’aide de [API de gestion de cloud](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) et plus tard peuvent être référencés dans la variable [Configuration OSGi](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
-Lorsque ce projet d’archétype est déployé via un pipeline CM, le remplacement fournit des valeurs différentes sur différents environnements (ou mode d’exécution).
+      1. Pour obtenir le fichier JSON de configuration OSGi, suivez les étapes de la rubrique [Génération de configurations OSGi à l’aide du SDK de démarrage rapide d’AEM](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart).
+      1. Placez le JSON dans les fichiers de configuration OSGi d’usine créés à l’étape précédente.
+      1. Modifiez la valeur de `newURL` selon l’environnement (ou le mode d’exécution).
+      1. Pour modifier une valeur secrète en fonction du mode d’exécution, une variable secrète peut être créée à l’aide de l’[API Cloud Manager](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) et plus tard peuvent être référencés dans la [Configuration OSGi](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
+Lorsque ce projet d’archétype est déployé via un pipeline CM, le remplacement fournit des valeurs différentes pour différents environnements (ou mode d’exécution).
 
       >[!NOTE]
       >
-      >[!DNL Adobe Managed Service] les utilisateurs peuvent chiffrer les valeurs secrètes à l’aide de la prise en charge du chiffrement (pour plus d’informations, voir [prise en charge du chiffrement des propriétés de configuration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html#enabling-encryption-support) et placer du texte chiffré dans la valeur après [les configurations basées sur le contexte sont disponibles dans le Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html#runmode-specific-context-aware-config).
+      >Les utilisateurs d’[!DNL Adobe Managed Service] peuvent chiffrer les valeurs secrètes à l’aide de la prise en charge du chiffrement (pour plus d’informations, consultez les instructions de [prise en charge du chiffrement des propriétés de configuration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=fr#enabling-encryption-support) et placez du texte chiffré dans la valeur après [les configurations basées sur le contexte disponibles dans le Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=fr#runmode-specific-context-aware-config).
 
 1. Actualisez les définitions de source de données à l’aide de l’option permettant d’actualiser les définitions de source de données dans la section [Éditeur de modèle de données de formulaire](#data-sources) pour actualiser le cache FDM via l’interface utilisateur FDM et obtenir la configuration la plus récente.
 

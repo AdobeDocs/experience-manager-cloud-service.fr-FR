@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
 workflow-type: tm+mt
 source-wordcount: '1716'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 89%
 
 ![Intégration de données](do-not-localize/data-integeration.png)
 
-L’intégration de données [!DNL Experience Manager Forms] permet de configurer des sources de données disparates et de s’y connecter. La prise en charge est assurée par défaut pour les types suivants:
+L’intégration de données [!DNL Experience Manager Forms] permet de configurer des sources de données disparates et de s’y connecter. La prise en charge est assurée par défaut pour les types suivants :
 
 <!-- * Relational databases - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], and [!DNL Oracle RDBMS] 
 * [!DNL Experience Manager] user profile  -->
 * Services web RESTful
 * Services web SOAP
-* Services OData (Version 4.0)
-* Microsoft Dynamics 
+* Services OData  (Version 4.0)
+* Microsoft Dynamics
 * SalesForce
-* Stockage Microsoft Azure Blob
+* Stockage Microsoft Azure Blob
 
 L’intégration de données prend en charge l’authentification OAuth2.0, de base ou par clé API par défaut, et permet de mettre en œuvre une authentification personnalisée pour accéder aux services web. Les services RESTful, SOAP et OData sont configurés dans [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> et le connecteur pour le profil utilisateur [!DNL Experience Manager] est configuré dans la console web [!DNL Experience Manager].
 
@@ -113,7 +113,7 @@ Pour configurer le dossier pour les configurations de service cloud :
 
 ## Configuration des services web RESTful {#configure-restful-web-services}
 
-Le service web RESTful peut être décrit en utilisant les [spécifications Swagger](https://swagger.io/specification/v2/) au format JSON ou YAML dans un fichier de définition [!DNL Swagger]. Pour configurer le service Web RESTful dans [!DNL Experience Manager] as a Cloud Service, assurez-vous que la variable [!DNL Swagger] fichier ([Swagger version 2.0](https://swagger.io/specification/v2/)) sur votre système de fichiers ou l’URL d’hébergement du fichier.
+Le service web RESTful peut être décrit en utilisant les [spécifications Swagger](https://swagger.io/specification/v2/) au format JSON ou YAML dans un fichier de définition [!DNL Swagger]. Pour configurer le service web RESTful dans [!DNL Experience Manager] as a Cloud Service, vérifiez que le fichier [!DNL Swagger] ([Swagger Version 2.0](https://swagger.io/specification/v2/)) est présent dans votre système de fichiers ou l’URL où le fichier est hébergé.
 
 Procédez comme suit pour configurer les services RESTful :
 
@@ -143,18 +143,17 @@ Procédez comme suit pour configurer les services RESTful :
 
 Le modèle de données de formulaire d’[!DNL Experience Manager Forms] lors de l’intégration des services web RESTful comme source de données comprend des configurations de client HTTP pour l’optimisation des performances.
 
+Définissez les propriétés suivantes de la **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]** pour spécifier l’expression régulière :
 
-Définissez les propriétés suivantes de la variable **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]** configuration pour spécifier l’expression régulière :
+* Utilisez la propriété `http.connection.max.per.route` pour définir le nombre maximal de connexions autorisées entre le modèle de données de formulaire et les services Web RESTful. La valeur par défaut est de 20 connexions.
 
-* Utilisez la variable `http.connection.max.per.route` pour définir le nombre maximal de connexions autorisées entre le modèle de données de formulaire et les services Web RESTful. La valeur par défaut est de 20 connexions.
+* Utilisez la propriété `http.connection.max` pour spécifier le nombre maximal de connexions autorisées pour chaque itinéraire. La valeur par défaut est de 40 connexions.
 
-* Utilisez la variable `http.connection.max` pour spécifier le nombre maximal de connexions autorisées pour chaque itinéraire. La valeur par défaut est de 40 connexions.
+* Utilisez la propriété `http.connection.keep.alive.duration` pour spécifier la durée pour laquelle une connexion HTTP persistante est maintenue active. La valeur par défaut est de 15 secondes.
 
-* Utilisez la variable `http.connection.keep.alive.duration` pour spécifier la durée pour laquelle une connexion HTTP persistante est maintenue active. La valeur par défaut est de 15 secondes.
+* Utilisez la propriété `http.connection.timeout` pour spécifier la durée pendant laquelle la propriété [!DNL Experience Manager Forms] attend qu’une connexion soit établie. La valeur par défaut est de 10 secondes.
 
-* Utilisez la variable `http.connection.timeout` pour spécifier la durée pour laquelle la propriété [!DNL Experience Manager Forms] attend qu’une connexion soit établie. La valeur par défaut est de 10 secondes.
-
-* Utilisez la variable `http.socket.timeout` pour spécifier la période maximale d’inactivité entre deux paquets de données. La valeur par défaut est de 30 secondes.
+* Utilisez la propriété `http.socket.timeout` pour spécifier la période maximale d’inactivité entre deux paquets de données. La valeur par défaut est de 30 secondes.
 
 Le fichier JSON suivant affiche un exemple :
 
@@ -176,9 +175,9 @@ Effectuez les étapes suivantes pour configurer le client HTTP du modèle de don
 
 1. Connectez-vous à l’instance d’auteur [!DNL Experience Manager Forms] en tant qu’administrateur et accédez aux lots de la console web d’[!DNL Experience Manager]. L’URL par défaut est [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
-1. Appuyer **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]**.
+1. Appuyez sur **[!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST]**.
 
-1. Dans le [!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST] dialog :
+1. Dans la boîte de dialogue [!UICONTROL Configuration du client HTTP du modèle de données de formulaire pour la source de données REST] :
 
    * Spécifiez le nombre maximal de connexions autorisées entre le modèle de données de formulaire et les services Web RESTful dans le champ **[!UICONTROL Limite de connexion au total]**. La valeur par défaut est de 20 connexions.
 
@@ -234,7 +233,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
 >[!NOTE]
 >
-> Le modèle de données de formulaire prend en charge [OData version 4](https://www.odata.org/documentation/).
+> Le modèle de données de formulaire prend en charge [OData version 4](https://www.odata.org/documentation/).
 >Pour obtenir un guide pas à pas sur la configuration de [!DNL Microsoft Dynamics 365], en ligne ou sur site, voir [[!DNL Microsoft Dynamics] Configuration OData](ms-dynamics-odata-configuration.md).
 
 1. Accédez à **[!UICONTROL Outils > Cloud Services > Sources de données]**. Appuyez pour sélectionner le dossier dans lequel vous souhaitez créer une configuration cloud.

@@ -8,7 +8,7 @@ exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: 57abdf0198e646719bbb818e2b70d772579ba548
 workflow-type: tm+mt
 source-wordcount: '1811'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -167,7 +167,7 @@ Après avoir chargé toutes les parties d’un fichier binaire, envoyez une requ
 | `versionLabel` | Chaîne | Facultatif | Si une version est créée, le libellé associé à la nouvelle version d’une ressource. |
 | `versionComment` | Chaîne | Facultatif | Si une version est créée, les commentaires associés à la version. |
 | `replace` | Booléen | Facultatif | Si `True` et qu’une ressource portant le nom spécifié existe, [!DNL Experience Manager] supprime la ressource, puis la recrée. |
-| `uploadDuration` | Nombre | Facultatif | Durée totale (en millisecondes) pendant laquelle le fichier doit être chargé dans son intégralité. Si spécifié, la durée de chargement est incluse dans les fichiers journaux du système pour l’analyse du taux de transfert. |
+| `uploadDuration` | Nombre | Facultatif | Durée totale (en millisecondes) nécessaire pour charger le fichier dans son intégralité. Si spécifié, la durée de chargement est incluse dans les fichiers journaux du système pour l’analyse du taux de transfert. |
 | `fileSize` | Nombre | Facultatif | Taille, en octets, du fichier. Si spécifié, la taille du fichier est incluse dans les fichiers journaux du système pour l’analyse du taux de transfert. |
 
 >[!NOTE]

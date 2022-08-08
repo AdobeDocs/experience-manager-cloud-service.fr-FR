@@ -5,7 +5,7 @@ exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
 workflow-type: tm+mt
 source-wordcount: '372'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Pour plus d’informations sur les environnements de prévisualisation, consulte
 
 >[!NOTE]
 >
->La publication d’un fragment d’expérience à prévisualiser suit la même procédure que pour une page, à partir de la console Fragments d’expérience ou de l’éditeur.
+>La publication d’un fragment d’expérience en aperçu suit la même procédure que pour une page, à partir de la console de Fragments d’expérience ou de l’éditeur.
 
 ## Publication de contenu en vue de la prévisualisation {#publishing-content-to-preview}
 

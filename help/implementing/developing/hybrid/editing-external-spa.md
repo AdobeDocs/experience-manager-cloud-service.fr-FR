@@ -5,13 +5,13 @@ exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
 workflow-type: tm+mt
 source-wordcount: '2401'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Modification d’une SPA externe dans AEM {#editing-external-spa-within-aem}
 
-Lorsque vous décidez du [niveau d’intégration](/help/implementing/developing/headful-headless.md) que vous souhaitez entre votre SPA externe et votre AEM, vous devez souvent modifier et afficher la SPA dans AEM.
+Lorsque vous décidez du [niveau d’intégration](/help/implementing/developing/headful-headless.md) que vous souhaitez appliquer entre votre SPA externe et votre AEM, vous devez souvent modifier et afficher la SPA dans AEM.
 
 ## Présentation {#overview}
 
@@ -260,38 +260,38 @@ Il existe un certain nombre d’exigences à satisfaire pour ajouter des composa
 
 ### Conteneurs virtuels {#virtual-containers}
 
-La possibilité d’ajouter des conteneurs, même si le conteneur correspondant n’est pas encore créé dans AEM, est prise en charge. Le concept et l’approche sont semblables à [composants feuilles virtuels.](#virtual-leaf-components)
+La possibilité d’ajouter des conteneurs, même si le conteneur correspondant n’est pas encore créé dans AEM, est prise en charge. Le concept et l’approche sont semblables à ceux des [composants feuilles virtuels.](#virtual-leaf-components)
 
-Le développeur front-end peut ajouter les composants de conteneur aux emplacements appropriés dans la SPA et ces composants affichent des espaces réservés lorsqu’ils sont ouverts dans l’éditeur d’AEM. L’auteur peut ensuite ajouter des composants et leur contenu au conteneur, ce qui crée les noeuds requis dans la structure JCR.
+Le développeur front-end peut ajouter les composants de conteneur aux emplacements appropriés dans la SPA et ces composants affichent des espaces réservés lorsqu’ils sont ouverts dans l’éditeur d’AEM. L’auteur peut ensuite ajouter des composants et leur contenu au conteneur, ce qui crée les nœuds requis dans la structure JCR.
 
-Par exemple, si un conteneur existe déjà à l’adresse `/root/responsivegrid` et le développeur souhaite ajouter un nouveau conteneur enfant :
+Par exemple, si un conteneur existe déjà à l’adresse `/root/responsivegrid` et si le développeur souhaite ajouter un nouveau conteneur enfant :
 
 ![Emplacement du conteneur](assets/container-location.png)
 
-`newContainer` n’existe pas encore dans l’AEM.
+`newContainer` n’existe pas encore dans AEM.
 
 Lors de la modification de la page contenant ce composant dans AEM, un espace réservé vide pour un conteneur s’affiche dans lequel l’auteur peut ajouter du contenu.
 
 ![Espace réservé du conteneur](assets/container-placeholder.png)
 
-![Emplacement du conteneur dans JCR](assets/container-jcr-structure.png)
+![Emplacement du conteneur dans le JCR](assets/container-jcr-structure.png)
 
-Une fois que l’auteur ajoute un composant enfant au conteneur, le nouveau noeud de conteneur est créé avec le nom correspondant dans la structure JCR.
+Une fois que l’auteur ajoute un composant enfant au conteneur, le nouveau nœud de conteneur est créé avec le nom correspondant dans la structure JCR.
 
 ![Conteneur avec contenu](assets/container-with-content.png)
 
-![Conteneur avec contenu dans JCR](assets/container-with-content-jcr.png)
+![Conteneur avec contenu dans le JCR](assets/container-with-content-jcr.png)
 
-Vous pouvez désormais ajouter plus de composants et de contenu au conteneur, selon les besoins de l’auteur, et les modifications seront conservées.
+Vous pouvez désormais ajouter plus de composants et de contenu au conteneur en fonction des besoins de l’auteur, et les modifications seront conservées.
 
 #### Exigences et restrictions {#container-limitations}
 
-Il existe plusieurs exigences pour ajouter des conteneurs virtuels, ainsi que certaines limites.
+Il existe un certain nombre d’exigences à satisfaire pour ajouter des conteneurs virtuels, ainsi que certaines restrictions.
 
 * La stratégie permettant de déterminer les composants qui peuvent être ajoutés sera héritée du conteneur parent.
 * Le parent immédiat du conteneur à créer doit déjà exister dans AEM.
-   * Si le conteneur `root/responsivegrid` existe déjà dans le conteneur AEM, un nouveau conteneur peut être créé en indiquant le chemin d’accès. `root/responsivegrid/newContainer`.
-   * Cependant `root/responsivegrid/newContainer/secondNewContainer` n’est pas possible.
+   * Si le conteneur `root/responsivegrid` existe déjà dans le conteneur AEM, un nouveau conteneur peut être créé en indiquant le chemin d’accès `root/responsivegrid/newContainer`.
+   * Cependant, `root/responsivegrid/newContainer/secondNewContainer` n’est pas possible.
 * Un seul nouveau niveau de composant peut être créé virtuellement à la fois.
 
 ## Personnalisations supplémentaires {#additional-customizations}

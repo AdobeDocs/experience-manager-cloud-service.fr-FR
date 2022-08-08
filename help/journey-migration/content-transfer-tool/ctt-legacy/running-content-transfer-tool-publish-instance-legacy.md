@@ -1,5 +1,5 @@
 ---
-title: Exécution de l’outil de transfert de contenu sur une instance de publication (héritée)
+title: Exécution de l’outil de transfert de contenu sur une instance de publication (hérité)
 description: Exécution de l’outil de transfert de contenu sur une instance de publication
 hide: true
 hidefromtoc: true
@@ -7,11 +7,11 @@ exl-id: 0a699dc1-9977-4cf9-a1b0-7b503ea2fc69
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '272'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Exécution de l’outil de transfert de contenu sur une instance de publication (Legacy) {#run-content-transfer-tool-publish-instance}
+# Exécution de l’outil de transfert de contenu sur une instance de publication (hérité) {#run-content-transfer-tool-publish-instance}
 
 ## Présentation {#introduction}
 

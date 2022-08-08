@@ -7,7 +7,7 @@ exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
 source-git-commit: a5a5ec2211fe51bb04a1016f34fdac2f25cfe4e1
 workflow-type: tm+mt
 source-wordcount: '2890'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -188,10 +188,10 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
 
 * **Traduisible**
 
-   Vérifiez les **Traductible** sur un champ de l’éditeur de modèle de fragment de contenu :
+   Activez la case à cocher **Traduisible** dans un champ de l’éditeur de modèle de fragment de contenu pour :
 
-   * Assurez-vous que le nom de propriété du champ est ajouté à la configuration de traduction, au contexte `/content/dam/<sites-configuration>`, s’il n’est pas déjà présent.
-   * Pour GraphQL : définir une propriété `<translatable>` du champ Fragment de contenu sur `yes` afin d’autoriser le filtre de requête GraphQL pour la sortie JSON avec du contenu traduisible uniquement.
+   * vous assurer que le nom de la propriété du champ est ajouté à la configuration de traduction, `/content/dam/<sites-configuration>` de contexte, s’il n’est pas déjà présent ;
+   * Pour GraphQL : définir une propriété `<translatable>` dans le champ Fragment de contenu sur `yes` afin d’autoriser le filtre de requête GraphQL pour la sortie JSON avec du contenu traduisible uniquement.
 
 ## Validation {#validation}
 
@@ -229,11 +229,11 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >
 >AEM dispose d’une protection récurrente pour :
 >
->* Références du contenu
-   >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. L’approche peut conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>* Les références de contenu
+   >  Cela permet d’empêcher l’utilisateur d’ajouter une référence au fragment actif. Cela pourrait conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
 >
->* Références de fragment dans GraphQL
-   >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur null à la première occurrence.
+>* Les références de fragment dans GraphQL
+   >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 
 ### Référence de contenu {#content-reference}

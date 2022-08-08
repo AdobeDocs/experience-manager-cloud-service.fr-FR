@@ -5,14 +5,14 @@ landing-page-description: Comprendre AEM Screens as a Cloud Service.
 exl-id: 5acb8e90-f268-4b99-9b6f-e05ba0f3a482
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '418'
+ht-degree: 100%
 
 ---
 
 # AEM Screens as a Cloud Service {#aem-screens-as-a-cloud-service-guide}
 
-Cette page vous aide à mieux comprendre AEM Screens et le fonctionnement de cette solution de signalétique digitale. Obtenez des ressources d’aide autonome et découvrez les nouveautés.
+Cette page vous aide à mieux comprendre AEM Screens et le fonctionnement de cette solution de signalétique numérique. Obtenez des ressources d’aide en self-service et découvrez les nouveautés.
 
 >[!NOTE]
 >Pour AEM Screens avec AEM 6.5, consultez le [Guide de l’utilisateur d’AEM Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=fr).

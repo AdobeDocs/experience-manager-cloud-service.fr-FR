@@ -1,17 +1,17 @@
 ---
-title: Création pour AEM en tant que CMS sans affichage - Introduction
-description: Cette section présente l’utilisation des fonctionnalités d’Adobe Experience Manager as a Cloud Service as a Headless CMS pour créer du contenu pour votre projet.
+title: Création pour AEM en tant que CMS découplé - Introduction
+description: Une introduction de l’utilisation des fonctionnalités d’Adobe Experience Manager as a Cloud Service dans un CMS découplé pour créer du contenu pour votre projet.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
 source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Création pour AEM en tant que CMS sans affichage - Introduction {#author-headless-introduction}
+# Création pour AEM en tant que CMS découplé - Introduction {#author-headless-introduction}
 
-Dans cette partie du [AEM Parcours de création de contenu sans affichage](overview.md), vous pouvez découvrir les concepts (de base) et la terminologie nécessaires pour comprendre la création de contenu lors de l’utilisation d’Adobe Experience Manager (AEM) as a Cloud Service en tant que CMS sans affichage. Cela implique de structurer et de créer votre contenu pour une diffusion de contenu sans interface utilisateur.
+Dans cette partie du [Parcours de création de contenu découplé AEM](overview.md), vous pouvez découvrir les concepts (de base) et la terminologie nécessaires pour comprendre la création de contenu avec Adobe Experience Manager (AEM) as a Cloud Service dans un CMS découplé. Cela implique de structurer et de créer votre contenu pour une diffusion de contenu découplé.
 
 ## Objectif {#objective}
 

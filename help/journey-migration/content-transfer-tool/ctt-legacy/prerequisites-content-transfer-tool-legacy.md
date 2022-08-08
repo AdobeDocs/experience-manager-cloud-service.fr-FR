@@ -7,11 +7,11 @@ exl-id: 6b2878cb-6882-452b-8cab-e590316633f6
 source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
 workflow-type: tm+mt
 source-wordcount: '488'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Conditions préalables pour l’outil de transfert de contenu (Legacy) {#prerequisites}
+# Conditions préalables pour l’outil de transfert de contenu (hérité) {#prerequisites}
 
 Le tableau suivant résume les conditions préalables requises pour l’utilisation de l’outil de transfert de contenu.
 

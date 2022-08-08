@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 7174b398040acbf9b18b5ac2aa20fdba4f98ca78
 workflow-type: tm+mt
 source-wordcount: '1745'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -105,9 +105,9 @@ Un utilisateur disposant des autorisations requises doit suivre les étapes des 
 
 1. Créez une liste d’adresses IP autorisées appropriée, appliquez-la au service d’aperçu et annulez immédiatement l’application de la variable liste autorisée `Preview Default [<envId>]`.
 
-   * Reportez-vous au document [Application et annulation de l’application de Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) pour plus d’informations.
+   * Consultez le document [Application et annulation de l’application de listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) pour plus d’informations.
 
-1. Utilisez le workflow de mise à jour de la **liste d’adresses IP autorisées** pour supprimer l’adresse IP par défaut et ajouter la ou les adresses IP, le cas échéant. Consultez [Gestion des listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) pour en savoir plus.
+1. Utilisez le workflow de mise à jour de la **liste d’adresses IP autorisées** pour supprimer l’adresse IP par défaut et ajouter la ou les adresses IP, le cas échéant. Consultez le document [Gestion des listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) pour en savoir plus.
 
 Une fois l’accès au service d’aperçu déverrouillé, l’icône de verrouillage devant le nom du service d’aperçu ne s’affiche plus.
 
@@ -220,10 +220,10 @@ Vous pouvez exécuter les actions suivantes sur le service de publication pour v
 
 * [Vérification du statut d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) ou d’un [certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn).
 
-* [Gestion des listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
+* [Gestion des listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn)
 
 
-## Gestion des listes autorisées d’adresses IP {#manage-ip-allow-lists}
+## Gestion des listes d’adresses IP autorisées {#manage-ip-allow-lists}
 
 Les liste d’adresses IP autorisées sont prises en charge dans Cloud Manager pour les services de création, de publication et de prévisualisation pour les programmes Sites.
 

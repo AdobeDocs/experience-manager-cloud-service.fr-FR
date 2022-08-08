@@ -5,14 +5,14 @@ landing-page-description: Découvrez les connecteurs, ce qu’ils peuvent faire 
 exl-id: 9dc88f13-a3d9-4177-9f1a-99ed3b2dd00a
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '395'
+ht-degree: 100%
 
 ---
 
 # Implémentation des connecteurs Experience Manager as a Cloud Service {#aem-connectors-guide}
 
-Découvrez les connecteurs pour Experience Manager as a Cloud Service, ce qu’ils peuvent faire et comment mettre en oeuvre ces outils précieux dans Experience Manager.
+Découvrez les connecteurs d’Experience Manager as a Cloud Service, ce qu’ils peuvent faire et comment mettre en œuvre ces précieux outils dans Experience Manager.
 
 ## Principaux articles relatifs aux connecteurs Adobe Experience Manager as a Cloud Service {#key-articles}
 

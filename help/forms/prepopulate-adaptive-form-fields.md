@@ -9,7 +9,7 @@ exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -230,7 +230,7 @@ Les balises XML des données utilisateur envoyées pour différents champs sont 
 
 ## Configuration du service de préremplissage {#configuring-prefill-service-using-configuration-manager}
 
-Utilisez la variable `alloweddataFileLocations` de la propriété **Configuration du service de préremplissage par défaut** pour définir l’emplacement des fichiers de données ou une expression régulière (expression régulière) pour l’emplacement des fichiers de données.
+Utilisez la propriété `alloweddataFileLocations` de la **Configuration du service de préremplissage par défaut** pour définir l’emplacement des fichiers de données ou une regex (expression régulière) pour l’emplacement des fichiers de données.
 
 Le fichier JSON suivant affiche un exemple :
 
@@ -240,7 +240,7 @@ Le fichier JSON suivant affiche un exemple :
   }
 ```
 
-Pour définir les valeurs d’une configuration, [Générer des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployer la configuration ;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) à votre instance de Cloud Service.
+Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
 
 >[!NOTE]
 >

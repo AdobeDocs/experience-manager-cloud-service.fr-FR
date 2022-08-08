@@ -1,31 +1,31 @@
 ---
-title: Traduire le contenu sans affichage
-description: Utilisez le connecteur de traduction pour traduire votre contenu headless.
+title: Traduction du contenu découplé
+description: Utilisez le connecteur de traduction pour traduire votre contenu découplé.
 exl-id: 3bfbf186-d684-4742-8c5c-34c34ff3adb5
 source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
 workflow-type: tm+mt
 source-wordcount: '2177'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 
-# Traduire le contenu sans affichage {#translate-content}
+# Traduction du contenu découplé {#translate-content}
 
-Utilisez le connecteur de traduction pour traduire votre contenu headless.
+Utilisez le connecteur de traduction pour traduire votre contenu découplé.
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans le document précédent du parcours de traduction AEM, [Configuration du connecteur de traduction](configure-connector.md) vous en avez appris plus sur la structure de traduction en AEM. Vous devez maintenant :
+Dans le document précédent du parcours de traduction AEM, [Configuration du connecteur de traduction](configure-connector.md), vous en avez appris plus sur le cadre de la traduction dans AEM. Vous devrez maintenant :
 
 * connaître les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
-Maintenant que votre connecteur est configuré, cet article vous guide tout au long de l’étape suivante de la traduction de votre contenu sans interface.
+Maintenant que votre connecteur est configuré, cet article vous guide tout au long de l’étape suivante de la traduction de votre contenu découplé.
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre comment utiliser AEM projets de traduction avec le connecteur pour traduire le contenu. Après avoir lu ce document, vous devriez :
+Ce document vous aide à comprendre comment utiliser les projets de traduction AEM ainsi que le connecteur pour traduire le contenu. Après avoir lu ce document, vous devriez :
 
 * comprendre ce qu’est un projet de traduction ;
 * être capable de créer des projets de traduction ;
@@ -126,7 +126,7 @@ La manière dont vous utilisez un projet de traduction dépend de la manière do
 
 ### Utilisation d’un projet de traduction créé automatiquement {#using-automatic-project}
 
-Lors de la création automatique du projet de traduction, AEM évalue le contenu sans en-tête sous le chemin que vous avez sélectionné. Sur la base de cette évaluation, il extrait le contenu qui nécessite une traduction dans un nouveau projet de traduction. Je sais quels champs traduire en fonction des champs marqués comme **Traductible** par l’architecte de contenu.
+Lors de la création automatique du projet de traduction, AEM évalue le contenu découplé sous le chemin que vous avez sélectionné. Sur la base de cette évaluation, il extrait le contenu qui nécessite une traduction dans un nouveau projet de traduction. Il sait quels champs traduire en fonction des champs marqués comme **Traduisible** par l’architecte de contenu.
 
 Pour afficher le détail du contenu découplé inclus dans ce projet :
 

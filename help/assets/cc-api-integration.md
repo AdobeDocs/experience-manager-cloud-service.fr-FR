@@ -8,7 +8,7 @@ exl-id: 4cff355e-d12c-44c7-b519-4cc37f49e396
 source-git-commit: 30870502f0e6084991bdba79163651f43f15a99b
 workflow-type: tm+mt
 source-wordcount: '747'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -50,27 +50,27 @@ Les utilisateurs peuvent créer des profils de traitement afin d’automatiser l
 
    ![Remplacement d’objets de façon intelligente](/help/assets/assets/content-automation-objectreplace.png)
 
-## Activation de l’automatisation du contenu pour AEM programme as a Cloud Service {#enable-content-automation}
+## Activation de l’automatisation du contenu pour le programme AEM as a Cloud Service {#enable-content-automation}
 
-Pour activer le module complémentaire d’automatisation du contenu pour AEM programme as a Cloud Service à l’aide de Cloud Manager :
+Pour activer le module complémentaire d’automatisation du contenu pour le programme AEM as a Cloud Service à l’aide de Cloud Manager :
 
-1. Contactez le représentant de votre compte pour obtenir une licence du module complémentaire d’automatisation du contenu.
-1. Accédez à Cloud Manager et basculez vers votre organisation à l’aide du sélecteur d’organisation.
+1. Contactez le responsable de votre compte pour obtenir une licence pour le module complémentaire d’automatisation du contenu.
+1. Accédez à Cloud Manager et basculez sur votre organisation à l’aide du sélecteur d’organisation.
 1. Cliquez sur **[!UICONTROL Ajout d’un programme]** et indiquez un nom de programme.
 1. Cliquez sur **[!UICONTROL Continuer]**.
-1. Développer **[!UICONTROL Ressources]** et sélectionnez **[!UICONTROL Automatisation du contenu]**.
+1. Développez les **[!UICONTROL Ressources]** et sélectionnez **[!UICONTROL Automatisation du contenu]**.
 1. Cliquez sur **[!UICONTROL Créer]**.
-1. Exécutez le pipeline pour [déployer les modifications dans Cloud Manager ;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Exécutez le pipeline pour [déployer les modifications dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html?lang=fr).
 
-Si vous devez ajouter un module complémentaire d’automatisation du contenu à un programme as a Cloud Service AEM existant dans Cloud Manager :
+Si vous devez ajouter un module complémentaire d’automatisation du contenu à un programme AEM as a Cloud Service existant dans Cloud Manager :
 
-1. Cliquez sur ... dans la carte du programme.
+1. Cliquez sur ... dans la carte du programme.
 
-1. Sélectionner **[!UICONTROL Modifier le programme]** puis sélectionnez **[!UICONTROL Solutions et modules complémentaires]** .
+1. Sélectionnez **[!UICONTROL Modifier le programme]** puis sélectionnez l’onglet **[!UICONTROL Solutions et modules complémentaires]**.
 
-1. Développer **[!UICONTROL Ressources]** et sélectionnez **[!UICONTROL Automatisation du contenu]**.
+1. Développez les **[!UICONTROL Ressources]** et sélectionnez **[!UICONTROL Automatisation du contenu]**.
 1. Cliquez sur **[!UICONTROL Mettre à jour]**.
-1. Exécutez le pipeline pour [déployer les modifications dans Cloud Manager ;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
+1. Exécutez le pipeline pour [déployer les modifications dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/deploy-code.html).
 
 ## Utilisation d’un profil de traitement pour modifier vos ressources créatives en bloc {#process-assets}
 
