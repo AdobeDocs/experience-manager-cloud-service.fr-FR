@@ -2,16 +2,16 @@
 title: Raccourcis clavier pour la modification de pages
 description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la modification de pages
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 100%
+source-wordcount: '237'
+ht-degree: 79%
 
 ---
 
 # Raccourcis clavier pour la modification de pages {#keyboard-shortcuts-when-editing-pages}
 
-Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent lors de la modification de pages, d’autres lors de l’[utilisation de consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent lors de la modification de pages, d’autres au [utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), et en particulier au [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >
 >Une fois que l’utilisateur commence à interagir avec la page en mode Aperçu, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
 
-Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau qui utilisent les [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau qui utilisent le [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), et en particulier au [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >

@@ -3,10 +3,10 @@ title: 'Comment affecter un processus à un autre utilisateur, envoyer un e-mail
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 69d86454c9d3dd869a69c7f720bce077b0149860
+source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
 workflow-type: tm+mt
-source-wordcount: '5467'
-ht-degree: 99%
+source-wordcount: '6098'
+ht-degree: 90%
 
 ---
 
@@ -140,6 +140,23 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 >
 >Les options permettant d’enregistrer l’étape Affecter une tâche en tant que brouillon et de récupérer l’historique de l’étape Affecter une tâche sont désactivées lorsque vous configurez un modèle de workflow AEM pour le stockage de données externe. En outre, dans la boîte de réception, l’option d’enregistrement est désactivée.
 
+## Etape Convertir en PDF/A {#convert-pdfa}
+
+PDF/A est un format d’archivage pour la conservation à long terme du contenu du document, en incorporant les polices et en décompressant le fichier. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. Vous pouvez utiliser la variable ***Convertir en PDF/A*** dans un workflow d’AEM pour convertir vos documents de PDF au format PDF/A.
+
+L’étape de conversion en PDF/A présente les propriétés suivantes :
+
+**[!UICONTROL Input Document]**: Le document d’entrée peut être relatif à la charge utile, avoir un chemin d’accès absolu, être fourni comme charge utile ou stocké dans une variable de type de données Document .
+
+**[!UICONTROL Options de conversion]**: Grâce à cette propriété, les paramètres de conversion des documents de PDF en documents de PDF/A sont spécifiés. Les différentes options disponibles sous cet onglet sont les suivantes :
+* **[!UICONTROL Conformité]**: Indique les normes auxquelles le document du PDF/A de sortie doit se conformer.
+* **[!UICONTROL Niveau de résultat]**: Indique le niveau de résultat PassFail, Summary ou Details pour la sortie de conversion.
+* **[!UICONTROL Espace colorimétrique]**: Spécifie l’espace colorimétrique prédéfini utilisé pour les fichiers de PDF/A de sortie.
+* **[!UICONTROL Contenu facultatif]**: Permet que des objets graphiques et/ou des annotations spécifiques soient visibles dans le document du PDF/A de sortie, uniquement lorsqu’un ensemble de critères spécifié est satisfait.
+
+**[!UICONTROL Documents de sortie]**: Indique l’emplacement d’enregistrement du fichier de sortie. Le fichier de sortie peut être enregistré à un emplacement relatif à la charge utile, il remplace la charge utile, s’il s’agit d’un fichier ou dans une variable de type de données Document .
+
+
 ## Étape Envoyer un courrier électronique {#send-email-step}
 
 Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’un formulaire adaptatif <!-- , link of an interactive communication--> ou avec un document PDF joint. L’étape Envoyer un courrier électronique prend en charge [le courrier électronique HTML](https://fr.wikipedia.org/wiki/HTML_email). Les courriers électroniques HTML sont réactifs et s’adaptent à différents clients de messagerie et tailles d’écran. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
@@ -197,6 +214,31 @@ Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par
 **[!UICONTROL Enregistrez Chemin d’accès du document d’enregistrement généré :]** spécifiez l’emplacement pour conserver un fichier de document d’enregistrement. Vous pouvez remplacer le dossier de charge utile, placer le document d’enregistrement à un emplacement du répertoire de charge utile ou stocker le document d’enregistrement dans une variable de type de données Document.
 
 **[!UICONTROL Paramètre régional]** : spécifiez la langue du document d’enregistrement. Sélectionnez **[!UICONTROL Littéral]** pour sélectionner le paramètre régional dans une liste déroulante ou **[!UICONTROL Variable]** pour récupérer le paramètre régional à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code de la langue lors du stockage de la valeur de la langue dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
+
+## Etape Invoquer DDX {#invokeddx}
+
+Document Description XML (DDX) est un langage de marquage déclaratif dont les éléments représentent des blocs de construction de documents. Ces blocs de création comprennent des documents PDF et XDP, ainsi que d’autres éléments tels que des commentaires, des signets et du texte stylisé. DDX définit un ensemble d’opérations qui peut être appliqué à un ou plusieurs documents d’entrée pour générer un ou plusieurs documents de sortie.  Un DDX unique peut être utilisé avec un éventail de documents source. Vous pouvez utiliser la variable ***Étape Invoquer DDX*** dans un workflow d’AEM pour effectuer diverses opérations, telles que l’assemblage de documents, la création et la modification d’Acrobat et de XFA Forms, etc., décrites dans [Documentation de référence DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf).
+
+L’étape Invoke DDX présente les propriétés suivantes :
+
+**[!UICONTROL Documents d’entrée]**: Utilisé pour définir les propriétés d’un document d’entrée. Les différentes options disponibles sous cet onglet sont les suivantes :
+* **[!UICONTROL Spécification de DDX à l’aide de]**: Spécifie les documents d’entrée relatifs à la charge utile, possèdent un chemin d’accès absolu, peuvent être fournis comme charge utile ou stockés dans une variable de type de données Document .
+* **[!UICONTROL Création d’une carte à partir de la charge utile]**: Ajoute tous les documents situés sous le dossier de charge utile à Input Document’s Map pour l’API d’appel dans Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans la carte.
+* **[!UICONTROL Input Document’s Map]**: L’option est utilisée pour ajouter plusieurs entrées à l’aide de **[!UICONTROL AJOUTER]** bouton . Chaque entrée représente la clé du document dans la carte et la source du document.
+
+**[!UICONTROL Options d’environnement]**: Cette option est utilisée pour définir les paramètres de traitement de l’API d’appel. Les différentes options disponibles sous cet onglet sont les suivantes :
+* **[!UICONTROL Valider uniquement]**: Vérifie la validité du document DDX d’entrée.
+* **[!UICONTROL Échec en cas d’erreur]**: Vérifie si le service d’API d’appel échoue en cas d’erreur. Par défaut, sa valeur est définie sur False.
+* **[!UICONTROL Premier numéro Bates]**: Indique le nombre qui s’incrémente automatiquement. Ce nombre auto-incrémentant s’affiche automatiquement sur chaque page consécutive.
+* **[!UICONTROL Style par défaut]**: Définit le style par défaut du fichier de sortie.
+
+>[!NOTE]
+>
+>Les options d’environnement sont synchronisées avec les API HTTP.
+
+**[!UICONTROL Documents de sortie]**: Indique l’emplacement d’enregistrement du fichier de sortie. Les différentes options disponibles sous cet onglet sont les suivantes :
+* **[!UICONTROL Enregistrer la sortie dans la charge utile]**: Enregistre les documents de sortie sous le dossier de charge utile ou remplace la charge utile, au cas où la charge est un fichier.
+* **[!UICONTROL Carte du document de sortie]**: Spécifie l’emplacement d’enregistrement explicite de chaque fichier de document en ajoutant une entrée par document. Chaque entrée représente le document et l’emplacement, où l’enregistrer. S’il existe plusieurs documents de sortie, cette option est utilisée.
 
 ## Étape Invoquer le service de modèle de données de formulaire {#invoke-form-data-model-service-step}
 

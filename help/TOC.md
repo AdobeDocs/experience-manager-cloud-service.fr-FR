@@ -8,10 +8,10 @@ user-guide-description: Ressources d’aide autonome et liens vers la documentat
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d0e2dda682a45483964336aac2c0d3f87b4ca833
+source-git-commit: 3fc0a6626fdf0addfdc572560c01eac3296c5012
 workflow-type: tm+mt
-source-wordcount: '3697'
-ht-degree: 95%
+source-wordcount: '3709'
+ht-degree: 94%
 
 ---
 
@@ -35,6 +35,7 @@ ht-degree: 95%
    + Notes de mise à jour générales d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2022 {#2022}
+         + [Notes de mise à jour de la version 2022.6.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-6-0.md)
          + [Notes de mise à jour de la version 2022.5.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-5-0.md)
          + [Notes de mise à jour de la version 2022.4.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-4-0.md)
          + [Notes de mise à jour de la version 2022.3.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-3-0.md)
@@ -290,6 +291,7 @@ ht-degree: 95%
          + [Texte (Markdown)](/help/sites-cloud/administering/content-fragments/content-fragments-markdown.md)
          + [Arborescence de la structure](/help/sites-cloud/administering/content-fragments/content-fragments-structure-tree.md)
          + [Aperçu – Représentation JSON](/help/sites-cloud/administering/content-fragments/content-fragments-json-preview.md)
+         + [Console Fragments de contenu - Raccourcis clavier](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
       + Création de site {#site-creation}
          + [Création d’un site](/help/sites-cloud/administering/site-creation/create-site.md)
          + [Activation du pipeline front-end](/help/sites-cloud/administering/site-creation/enable-front-end-pipeline.md)
@@ -396,6 +398,7 @@ ht-degree: 95%
       + [Métadonnées XMP](/help/assets/xmp-metadata.md)
       + [Fonctionnalités de MediaLibrary](/help/assets/medialibrary.md)
       + [Importation et exportation des métadonnées des ressources](/help/assets/metadata-import-export.md)
+      + [Configuration des restrictions de chargement des ressources](/help/assets/configure-asset-upload-restrictions.md)
    + Partage et distribution de ressources {#brand-portal}
       + [Configuration d’ [!DNL Assets] avec [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publication de ressources sur [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)

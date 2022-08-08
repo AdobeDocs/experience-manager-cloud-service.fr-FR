@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 57e1f39394f501b8fc2ab8ff5f7d12f6365016e9
 workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -13,16 +13,16 @@ ht-degree: 100%
 
 | Produit | Adobe Experience Manager as a Cloud Service |
 |---|---|
-| Version | 2022.6.0 |
+| Version | 2022.7.0 |
 | Type | Mises à jour continues |
 | Date de disponibilité | Mise à jour continue |
 
 ## Préparation pour une version {#how-to-prepare}
 
-Avec le modèle de mise à jour continue dans [!DNL Adobe Experience Manager] as a Cloud Service, l’application est mise à jour automatiquement de manière continue. Il existe deux types de mises à jour ; les mises à jour de fonctionnalités et les mises à jour critiques :
+Avec le modèle de mise à jour continue dans [!DNL Adobe Experience Manager] as a Cloud Service, l’application est mise à jour automatiquement de manière continue. Il existe deux types de mises à jour : les versions de fonctionnalités et les versions de maintenance :
 
 * Les nouvelles fonctionnalités sont publiées à une fréquence mensuelle prévisible et sont axées sur les nouvelles fonctionnalités et les innovations de produits.
-* Les mises à jour critiques sont fréquentes et portent sur les mises à jour de sécurité, les correctifs de bug et les améliorations des performances. Ainsi, [!DNL Adobe Experience Manager] as a Cloud Service est toujours à jour avec les correctifs critiques.
+* Les versions de maintenance sont effectuées fréquemment et sont axées sur les mises à jour de sécurité, les correctifs de bogues et les améliorations des performances. Ainsi, [!DNL Adobe Experience Manager] as a Cloud Service est toujours à jour avec les correctifs critiques.
 
 En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] as a Cloud Service offre la possibilité de prévisualiser les fonctionnalités à venir un mois complet à l’avance avant que les fonctionnalités ne soient mises en production. Cela vous permet d’évaluer l’impact d’une prochaine version sur une organisation en testant les fonctionnalités de votre propre environnement personnalisé et en formant/préparant les utilisateurs internes bien à l’avance.
 

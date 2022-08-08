@@ -2,9 +2,10 @@
 title: Console Fragments de contenu
 description: Découvrez comment gérer les fragments de contenu à partir de la console Fragments de contenu.
 landing-page-description: Découvrez comment gérer les fragments de contenu à partir de la console Fragments de contenu , qui se concentre sur l’utilisation de volume élevé de fragments de contenu pour les cas d’utilisation sans affichage, mais également utilisés lors de la création de pages.
-source-git-commit: 8c44ecf0237c7a3660ef9fa97f46cc400e4bd30f
+exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
+source-git-commit: 99e3c07f8376859692db41c633bfaa602ed65358
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '563'
 ht-degree: 0%
 
 ---
@@ -26,6 +27,10 @@ La console Fragments de contenu est dédiée à la gestion, à la recherche et �
 >* this **Fragments de contenu** console
 >* la valeur **Ressources** console - voir [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)
 
+
+>[!NOTE]
+>
+>Une sélection de [des raccourcis clavier peuvent être utilisés dans cette console.](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 La console Fragments de contenu est directement accessible à partir du niveau supérieur de la navigation globale :
 
