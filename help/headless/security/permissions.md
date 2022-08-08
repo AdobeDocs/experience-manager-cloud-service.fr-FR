@@ -4,8 +4,8 @@ description: Découvrez les différentes considérations relatives aux autorisat
 feature: Content Fragments,GraphQL API
 exl-id: 3fbee755-2fa4-471b-83fc-3f4bf056267a
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: tm+mt
-source-wordcount: '840'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
