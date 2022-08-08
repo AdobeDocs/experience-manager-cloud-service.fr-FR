@@ -3,9 +3,9 @@ title: Comment mettre à jour votre contenu à l’aide des API AEM Assets
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment utiliser l’API REST pour accéder au contenu de vos fragments de contenu et le mettre à jour.
 exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 95%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -318,7 +318,7 @@ Maintenant que vous avez terminé cette partie du parcours de développement dé
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-Continuez votre parcours AEM sans interface utilisateur graphique en consultant le document. [Comment tout assembler - Votre application et votre contenu AEM sans affichage](put-it-all-together.md) où vous vous familiariserez avec les principes de base de l’architecture d’AEM et les outils dont vous avez besoin pour assembler votre application.
+Continuez votre parcours AEM découplé en consultant ensuite le document. [Tout assembler - Votre application et votre contenu dans AEM découplé](put-it-all-together.md) où vous vous familiariserez avec les principes de base de l’architecture d’AEM et les outils dont vous avez besoin pour assembler votre application.
 
 ## Ressources supplémentaires {#additional-resources}
 
