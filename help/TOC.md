@@ -8,10 +8,10 @@ user-guide-description: Ressources d’aide autonome et liens vers la documentat
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5de4f8642d6dfae2697bd2fc18b8b9845b883e18
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
-source-wordcount: '3698'
-ht-degree: 91%
+source-wordcount: '3697'
+ht-degree: 95%
 
 ---
 
@@ -109,8 +109,8 @@ ht-degree: 91%
          + [Notes de mise à jour de la version 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Notes de mise à jour de la version 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Notes de mise à jour de la version 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Notes de mise à jour de Workfront pour Experience Manager Enhanced Connector{#workfront}
-      + [Notes de mise à jour actuelles de Workfront pour Experience Manager Enhanced Connector](/help/assets/release-notes-enhanced-connector-workfront.md)
+   + Notes de mise à jour de Workfront pour le connecteur amélioré Experience Manager{#workfront}
+      + [Notes de mise à jour actuelles de Workfront pour le connecteur amélioré Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Nouveautés](/help/release-notes/what-is-new.md)
    + [Changements notables dans AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
    + [Problèmes connus](/help/release-notes/known-issues.md)
@@ -273,6 +273,9 @@ ht-degree: 91%
          + [Compréhension de la segmentation](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configuration de la segmentation avec ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Enregistrement, connexion et profil utilisateur](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
+      + Campagne {#campaign}
+         + 
+            + [Création de newsletters avec AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + Administration {#administering}
       + Fragments de contenu {#content-fragments}
          + [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -335,12 +338,11 @@ ht-degree: 91%
    + Intégration d’AEM as a Cloud Service {#integrations}
       + [Intégration à Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Intégration à Adobe Analytics  Configuration automatisée](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
-      + [Configuration IMS à utiliser lors de l’intégration à Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
+      + [Configuration IMS à utiliser lors de l’intégration à Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
-      + [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
+      + [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
-      + [Création d’une newsletter Adobe Experience Manager](/help/sites-cloud/integrating/creating-newsletter.md)
 + Ressources {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Aperçu et nouveautés](/help/assets/overview.md)
@@ -413,9 +415,9 @@ ht-degree: 91%
       + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
-      + parcours Dynamic Media : Principes de base {#dm-journey}
-         + [Partie I : Présentation de Dynamic Media - Cas d’utilisation - Façon dont une ressource transite par le système](/help/assets/dynamic-media/dm-journey-part1.md)
-         + [Partie II : Anatomie d’une URL Dynamic Media - Principes fondamentaux des paramètres d’image prédéfinis - À propos des visionneuses d’images, des visionneuses à 360° et des visionneuses de supports variés](/help/assets/dynamic-media/dm-journey-part2.md)
+      + Parcours Dynamic Media : principes de base{#dm-journey}
+         + [Première partie : présentation de Dynamic Media - Cas d’utilisation - Flux des ressources dans le système](/help/assets/dynamic-media/dm-journey-part1.md)
+         + [Deuxième partie : anatomie d’une URL Dynamic Media - Principes fondamentaux des paramètres d’image prédéfinis - À propos des visionneuses d’images, des visionneuses à 360° et des visionneuses de supports variés](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Archive de newsletter sur Dynamic Media par Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuration de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
@@ -437,7 +439,7 @@ ht-degree: 91%
       + [Invalidation du cache de réseau CDN par le biais de Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
       + [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md)
-      + [Imagerie dynamique avec rapport des pixels côté client](/help/assets/dynamic-media/client-side-dpr.md)
+      + [Imagerie dynamique avec rapport pixel d’appareil côté client](/help/assets/dynamic-media/client-side-dpr.md)
       + [Gestion des ressources Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Prise en charge 3D](/help/assets/dynamic-media/assets-3d.md)
@@ -469,8 +471,8 @@ ht-degree: 91%
       + [Intégrations à  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Installer le [!DNL enhanced connector] pour [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Suppression des dépendances externes pour les installations existantes](/help/assets/remove-external-dependencies.md)
-      + [Configurer le [!DNL enhanced connector] pour [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-      + [Mettre à jour [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [Configurer le  [!DNL enhanced connector]  pour  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
+      + [Mettre à jour  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
       + [Configuration du mappage des métadonnées des ressources](/help/assets/configure-asset-metadata-mapping.md)
 + Forms {#forms}
    + [Présentation](/help/forms/home.md)
@@ -537,8 +539,8 @@ ht-degree: 91%
    + [Intégration d’Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
    + [Intégration de DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
    + [Intégration à Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
-   + [Intégration à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-   + [Intégration d’un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+   + [Intégration à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+   + [Intégration d’un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
    + Création et utilisation des processus {#create-form-centric-workflows}
       + [Utilisation d’étapes basées sur l’utilisation de Forms dans une référence des étapes du workflow](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilisation de variables dans un processus orienté Forms](/help/forms/variable-in-aem-workflows.md)
@@ -750,10 +752,10 @@ ht-degree: 91%
       + Listes d’adresses IP autorisées {#ip-allow-lists}
          + [Présentation](/help/implementing/cloud-manager/ip-allow-lists/introduction.md)
          + [Ajout d’une liste d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/add-ip-allow-lists.md)
-         + [Application et annulation de l’application de Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
-         + [Gestion des listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
+         + [Application et annulation de l’application de listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md)
+         + [Gestion des listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md)
       + [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md)
-      + [FAQ relatives à Cloud Manager](/help/implementing/cloud-manager/faqs.md)
+      + [FAQ relatives à Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Développement pour AEM as a Cloud Service {#developing}
       + [Structure de projet AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Module de structure du référentiel de projet AEM](/help/implementing/developing/introduction/repository-structure-package.md)

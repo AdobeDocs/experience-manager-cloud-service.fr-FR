@@ -4,7 +4,7 @@ description: Découvrez comment intégrer AEM as a Cloud Service à Adobe Campai
 feature: Administering
 role: Admin
 exl-id: 23874955-bdf3-41be-8a06-53d2afdd7f2b
-source-git-commit: 9ad97fdb26c0049f1b6a4b0958c93e2d4af803fb
+source-git-commit: cab630838f5cce3c2a2749c61b0aa7504dc403f7
 workflow-type: tm+mt
 source-wordcount: '1302'
 ht-degree: 1%
@@ -30,7 +30,7 @@ L&#39;intégration entre AEM et Campaign requiert un certain nombre d&#39;étape
 
 Ce document vous guide tout au long de chacune de ces étapes.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 * Accès des administrateurs à Adobe Campaign Classic
    * Pour effectuer l’intégration, vous avez besoin d’une instance Adobe Campaign Classic opérationnelle, y compris d’une base de données configurée.
@@ -225,4 +225,4 @@ Adobe Campaign peut désormais communiquer avec AEM.
 
 Avec Adobe Campaign Classic et AEM as a Cloud Service configurés, l’intégration est maintenant terminée.
 
-Vous pouvez maintenant apprendre à créer une newsletter dans Adobe Experience Manager en poursuivant avec [ce document.](/help/sites-cloud/integrating/creating-newsletter.md)
+Vous pouvez maintenant apprendre à créer une newsletter dans Adobe Experience Manager en poursuivant avec [ce document.](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
