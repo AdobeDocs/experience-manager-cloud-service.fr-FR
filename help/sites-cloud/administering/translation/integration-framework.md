@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: tm+mt
-source-wordcount: '1522'
-ht-degree: 91%
+workflow-type: ht
+source-wordcount: '0'
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ L’onglet **Sites** contrôle la façon dont le contenu des pages est traduit.
 | Traduire les balises | Cette option permet de traduire les balises associées à la page. |
 | Traduire les ressources de page | Cette propriété définit comment traduire les ressources qui sont ajoutées aux composants à partir du système de fichiers ou référencés à partir des ressources :<br>- Ne pas traduire : les ressources de la page ne sont pas traduites.<br>- Utilisation du processus de traduction de sites : les ressources sont gérées en fonction des propriétés de configuration sur l’onglet **Sites**.<br>- Utilisation du processus de traduction des ressources : les ressources sont gérées en fonction des propriétés configurées sur l’onglet **Ressources**. |
 | Exécuter automatiquement la traduction | Activez cette propriété pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier et de définir la portée de la tâche de traduction. |
-| Désactiver la traduction mise à jour seule | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
+| Désactiver Traduction uniquement des champs mis à jour | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
 
 ### Propriétés de configuration des ressources {#assets-configuration-properties}
 
@@ -108,8 +108,8 @@ Les propriétés des ressources contrôlent la façon dont les ressources sont c
 | Traduire les métadonnées | Activez cette propriété pour traduire les métadonnées des ressources. |
 | Traduire les balises | Activez cette propriété pour traduire les balises associées à la ressource. |
 | Exécuter automatiquement la traduction | Sélectionnez cette propriété pour exécuter automatiquement les tâches de traduction après la création des projets de traduction. Si vous sélectionnez cette option, vous n’avez pas la possibilité de vérifier ou de définir la portée de la tâche de traduction. |
-| Désactiver la traduction mise à jour seule | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
-| Activation des champs de modèle de contenu pour la traduction | L’activation de cette option utilise la variable **Traductible** champ sur [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) pour déterminer si le champ est traduit et créé automatiquement [règles de traduction](rules.md) en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées. |
+| Désactiver Traduction uniquement des champs mis à jour | Lorsque cette option est cochée, la mise à jour du projet de traduction envoie tous les champs traduisibles pour traduction, et pas seulement ceux qui ont été modifiés depuis la dernière traduction. |
+| Activer les champs de modèle de contenu pour la traduction | L’activation de l’option appliquera le champ **Traduisible** dans les [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties) pour déterminer si le champ doit être traduit et crée automatiquement des [règles de traduction](rules.md) en conséquence. Cette option remplace les règles de traduction que vous avez peut-être créées. |
 
 ## Configuration des pages pour la traduction {#configuring-pages-for-translation}
 
