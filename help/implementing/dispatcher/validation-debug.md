@@ -3,10 +3,10 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: d90a279840d85437efc7db40c68ea66da8fe2d90
+source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
 workflow-type: tm+mt
-source-wordcount: '2536'
-ht-degree: 99%
+source-wordcount: '2653'
+ht-degree: 94%
 
 ---
 
@@ -229,6 +229,10 @@ Le script se compose des trois phases suivantes :
 
 Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd -t` est également exécutée et toute erreur est incluse dans le journal `Build Images step failure` de Cloud Manager.
 
+>[!NOTE]
+>
+>Voir [Chargement automatique et validation](#automatic-loading) pour une alternative efficace à l’exécution `validate.sh` après chaque modification de configuration.
+
 ### Phase 1 {#first-phase}
 
 Si une directive n’est pas placée sur la liste autorisée, l’outil consigne une erreur et renvoie un code de sortie non nul. Il analyse également tous les fichiers présentant le motif `conf.dispatcher.d/enabled_farms/*.farm` et vérifie les éléments suivants :
@@ -422,6 +426,42 @@ Les niveaux de journal de ces modules sont définis par les variables `DISP_LOG_
 Lors de l’exécution locale du Dispatcher, les journaux sont directement imprimés dans la sortie du terminal. La plupart du temps, vous souhaitez que ces journaux soient en mode DEBUG, ce qui peut être réalisé en transmettant le niveau Debug comme paramètre lors de l’exécution de Docker. Par exemple : `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Les journaux des environnements cloud sont exposés par le biais du service de journalisation disponible dans Cloud Manager.
+
+### Chargement automatique et validation {#automatic-loading}
+
+>[!NOTE]
+>
+>En raison d’une limitation du système d’exploitation Windows, cette fonctionnalité est disponible uniquement pour les utilisateurs Linux.
+
+Au lieu d’exécuter la validation locale (`validate.sh`) et de démarrer le conteneur Docker (`docker_run.sh`) chaque fois que la configuration est modifiée, vous pouvez également exécuter la fonction `docker_run_hot_reload.sh` script.  Le script recherche toutes les modifications apportées à la configuration et la recharge automatiquement et exécute à nouveau la validation. L’utilisation de cette option vous permet de gagner beaucoup de temps lors du débogage.
+
+Vous pouvez exécuter le script à l’aide de la commande suivante : `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+
+Notez que les premières lignes de sortie ressembleront à ce qui s’exécuterait pour `docker_run.sh`, par exemple :
+
+```
+~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
+opt-in USE_SOURCES_DIRECTLY marker file detected
+Running script /docker_entrypoint.d/10-check-environment.sh
+Running script /docker_entrypoint.d/15-check-pod-name.sh
+Running script /docker_entrypoint.d/20-create-docroots.sh
+Running script /docker_entrypoint.d/30-wait-for-backend.sh
+Waiting until host.docker.internal is available
+host.docker.internal resolves to 192.168.65.2
+Running script /docker_entrypoint.d/40-generate-allowed-clients.sh
+Running script /docker_entrypoint.d/50-check-expiration.sh
+Running script /docker_entrypoint.d/60-check-loglevel.sh
+Running script /docker_entrypoint.d/70-check-forwarded-host-secret.sh
+Running script /docker_entrypoint.d/80-frontend-domain.sh
+Running script /docker_entrypoint.d/zzz-import-sdk-config.sh
+WARN Mon Jul  4 09:53:54 UTC 2022: Pseudo symlink conf.d seems to point to a non-existing file!
+INFO Mon Jul  4 09:53:55 UTC 2022: Copied customer configuration to /etc/httpd.
+INFO Mon Jul  4 09:53:55 UTC 2022: Start testing
+Cloud manager validator 2.0.43
+2022/07/04 09:53:55 No issues found
+INFO Mon Jul  4 09:53:55 UTC 2022: Testing with fresh base configuration files.
+INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apache/2.4.54 (Unix)
+```
 
 ## Différentes configurations Dispatcher par environnement {#different-dispatcher-configurations-per-environment}
 
