@@ -3,8 +3,8 @@ title: Accorder l’accès au développeur front-end
 description: Intégrez les développeurs front-end à Cloud Manager afin qu’ils aient accès au référentiel Git et au pipeline de votre site AEM.
 exl-id: 58e95c92-b859-4bb9-aa62-7766510486fd
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
-workflow-type: tm+mt
-source-wordcount: '785'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
