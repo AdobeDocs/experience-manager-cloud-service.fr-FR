@@ -3,8 +3,8 @@ title: Publication d’un canal dans Screens as a Cloud Service
 description: Cette page décrit comment publier un canal dans Screens as a Cloud Service.
 exl-id: a69086d2-777c-4a94-bd22-5c02f98bbedb
 source-git-commit: 9f6afc7bfe4f92a49e50dcf491347112e95e494d
-workflow-type: tm+mt
-source-wordcount: '305'
+workflow-type: ht
+source-wordcount: '0'
 ht-degree: 100%
 
 ---
