@@ -1,18 +1,19 @@
 ---
 title: Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL
-description: Découvrez les concepts de base de la réalisation d’un CMS AEM sans affichage à l’aide de fragments de contenu avec GraphQL pour la diffusion de contenu sans affichage.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+description: Découvrez les concepts de base de la réalisation d’un CMS AEM découplé à l’aide de fragments de contenu avec GraphQL pour la diffusion de contenu découplé.
+exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '751'
-ht-degree: 86%
+source-wordcount: '731'
+ht-degree: 91%
 
 ---
 
 # Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Avec les fragments de contenu et l’API GraphQL, vous pouvez utiliser Adobe Experience Manager (AEM) as a Cloud Service en tant que système de gestion de contenu (CMS) sans affichage.
+Avec les fragments de contenu et l’API GraphQL, vous pouvez utiliser Adobe Experience Manager (AEM) as a Cloud Service en tant que système de gestion de contenu (CMS) découplé.
 
-Pour ce faire, utilisez des fragments de contenu, ainsi que l’API GraphQL AEM (une mise en oeuvre personnalisée, basée sur GraphQL standard), afin de fournir du contenu structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
+Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard), pour fournir du contenu découplé structuré à utiliser dans vos applications. La possibilité de personnaliser une seule requête d’API vous permet de récupérer et de diffuser le contenu spécifique que vous souhaitez rendre, ou avez besoin de rendre (comme réponse à la requête d’API unique).
 
 >[!NOTE]
 >
@@ -33,11 +34,7 @@ Pour ce faire, utilisez des fragments de contenu, ainsi que l’API GraphQL AEM 
 
 ## CMS découplé {#headless-cms}
 
-Un système de gestion de contenu (CMS) découplé est :
-
-* « *Un système de gestion de contenu découplé, ou CMS découplé, est un système de gestion de contenu (CMS) back-end uniquement créé dès le départ comme un référentiel de contenu qui rend le contenu accessible via une API pour l’afficher sur n’importe quel appareil.* »
-
-   Voir [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+Un système de gestion de contenu sans affichage (CMS) est un système de gestion de contenu principal uniquement, conçu et créé explicitement comme un référentiel de contenu qui rend le contenu accessible par le biais d’une API, à afficher sur n’importe quel appareil.
 
 En termes de création de fragments de contenu dans AEM, cela signifie que :
 

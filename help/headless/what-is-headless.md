@@ -2,10 +2,10 @@
 title: Qu’est-ce qu’un CMS sans affichage ?
 description: Découvrez le CMS sans affichage. Comment fonctionnent-ils ? Quelles sont les alternatives et les différences ? Pourquoi souhaitez-vous utiliser un CMS sans affichage ?
 exl-id: 53f24f69-ad49-4b8e-9a91-36cd64c1f2b9
-source-git-commit: bd333d17f96e74227ac148be7164986ea11a0a23
+source-git-commit: 5663b1224dddcb2db9e0ca139bb8cf6b43787fab
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 6%
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
@@ -31,11 +31,7 @@ Très puissant, vous permettant de contrôler entièrement le contenu et la mise
 
 Avec un système de gestion de contenu sans interface, le serveur principal et le front-end sont désormais découplés.
 
-La partie sans tête est le serveur principal du contenu.
-
-* « *Un système de gestion de contenu découplé, ou CMS découplé, est un système de gestion de contenu (CMS) back-end uniquement créé dès le départ comme un référentiel de contenu qui rend le contenu accessible via une API pour l’afficher sur n’importe quel appareil.* »
-
-   Voir [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+La partie sans interface est le serveur principal de contenu, car un système de gestion de contenu (CMS) sans interface est un système de gestion de contenu principal uniquement, conçu et créé explicitement comme un référentiel de contenu qui rend le contenu accessible via une API, à afficher sur n’importe quel périphérique.
 
 Le serveur frontal, qui est développé et géré indépendamment, récupère du contenu du serveur principal sans interface à l’aide d’une API de diffusion de contenu, généralement au format JSON. Par exemple, il peut s’agir d’une application React ou Angular (application d’une seule page (SPA)).
 
@@ -78,4 +74,4 @@ Il s’agit d’un autre terme pour un CMS traditionnel.
 
 Vous pouvez en savoir plus sur l’utilisation des AEM dans une topologie CMS sans interface utilisateur ici :
 
-* [Présentation d’Adobe Experience Manager as a Headless CMS](/help/headless/introduction.md)
+* [Présentation d’Adobe Experience Manager en tant que CMS découplé](/help/headless/introduction.md)
