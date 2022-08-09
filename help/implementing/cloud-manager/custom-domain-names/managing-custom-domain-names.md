@@ -35,7 +35,7 @@ Vous pouvez suivre [les mêmes étapes pour afficher et mettre à jour un nom de
 >
 >Le certificat SSL doit être valide, [déjà configuré](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md), et contenir le nom de domaine personnalisé que vous mettez à jour.
 
-##  Suppression d’un nom de domaine personnalisé {#deleting}
+## Suppression d’un nom de domaine personnalisé {#deleting}
 
 Un utilisateur avec le rôle **Propriétaire de l’entreprise** ou **Responsable de déploiement** peut utiliser Cloud Manager pour supprimer un nom de domaine personnalisé.
 

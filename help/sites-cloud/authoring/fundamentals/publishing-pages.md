@@ -140,6 +140,7 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
       >[!NOTE]
       >
       >Pour annuler une publication/annulation de publication ultérieure, rendez-vous dans la [console Processus](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) pour mettre un terme au processus correspondant.
+
    ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Cliquez sur **Suivant** pour continuer.

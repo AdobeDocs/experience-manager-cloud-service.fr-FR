@@ -33,18 +33,18 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam12.png)
 
    >!![IMPORTANT]
-   Assurez-vous que la clé d’extraction est valide et n’est pas proche de son expiration. Si sa date d’expiration est proche, vous pouvez renouveler la clé d’extraction en sélectionnant le jeu de migration et en cliquant sur Propriétés. Cliquez sur **Renouveler**. Vous accédez alors au Cloud Acceleration Manager dans lequel vous pouvez cliquer sur **Copier la clé d’extraction**. Chaque fois que vous cliquez sur **Copier la clé d’extraction**, une nouvelle clé d’extraction est générée, valable 14 jours à compter de la création.
-   [!image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
+   >Assurez-vous que la clé d’extraction est valide et n’est pas proche de son expiration. Si sa date d’expiration est proche, vous pouvez renouveler la clé d’extraction en sélectionnant le jeu de migration et en cliquant sur Propriétés. Cliquez sur **Renouveler**. Vous accédez alors au Cloud Acceleration Manager dans lequel vous pouvez cliquer sur **Copier la clé d’extraction**. Chaque fois que vous cliquez sur **Copier la clé d’extraction**, une nouvelle clé d’extraction est générée, valable 14 jours à compter de la création.
+   >[!image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam13.png)
 
 1. La boîte de dialogue Extraction ’affiche. Cliquez sur **Extraire** pour démarrer la phase d’extraction.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam14.png)
 
    >[!NOTE]
-Vous avez la possibilité de remplacer le conteneur d’évaluation pendant la phase d’extraction. Si l’option **Remplacer le conteneur d’évaluation** est désactivée, cela permet d’accélérer les extractions pour les migrations suivantes où les chemins d’accès au contenu ou les paramètres des versions d’inclusion n’ont pas été modifiés. Cependant, si les chemins d’accès au contenu ou les paramètres des versions ont changé, alors l’option **Remplacer le conteneur d’évaluation** doit être activée.
+   >Vous avez la possibilité de remplacer le conteneur d’évaluation pendant la phase d’extraction. Si l’option **Remplacer le conteneur d’évaluation** est désactivée, cela permet d’accélérer les extractions pour les migrations suivantes où les chemins d’accès au contenu ou les paramètres des versions d’inclusion n’ont pas été modifiés. Cependant, si les chemins d’accès au contenu ou les paramètres des versions ont changé, alors l’option **Remplacer le conteneur d’évaluation** doit être activée.
 
    >[!IMPORTANT]
-Si le mappage des utilisateurs n’a pas été exécuté sur ce jeu de migration avant d’extraire le contenu de la source, un avertissement s’affiche indiquant que l’étape de mappage des utilisateurs est en attente, comme illustré dans la figure ci-dessus. Cliquez sur **Mappage des utilisateurs** pour exécuter l’outil de mappage des utilisateurs.
+   >Si le mappage des utilisateurs n’a pas été exécuté sur ce jeu de migration avant d’extraire le contenu de la source, un avertissement s’affiche indiquant que l’étape de mappage des utilisateurs est en attente, comme illustré dans la figure ci-dessus. Cliquez sur **Mappage des utilisateurs** pour exécuter l’outil de mappage des utilisateurs.
 
 1. Le champ **Extraction** affiche désormais le statut **RUNNING** pour indiquer que l’extraction est en cours d’exécution.
 
@@ -68,8 +68,8 @@ Si le mappage des utilisateurs n’a pas été exécuté sur ce jeu de migration
 L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.
 
 >[!NOTE]
-Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service. Si vous avez utilisé l’étape de précopie pour la première extraction complète, vous pouvez ignorer la précopie pour les extraction de compléments suivantes (si la taille du jeu de migration de complément est inférieure à 200 Go), car elle est susceptible de rallonger l’ensemble du processus.
-En outre, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
+>Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service. Si vous avez utilisé l’étape de précopie pour la première extraction complète, vous pouvez ignorer la précopie pour les extraction de compléments suivantes (si la taille du jeu de migration de complément est inférieure à 200 Go), car elle est susceptible de rallonger l’ensemble du processus.
+>En outre, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 Une fois le processus d’extraction terminé, vous pouvez transférer le contenu différentiel à l’aide de la méthode d’extraction de complément.
 
@@ -82,8 +82,8 @@ Suivez les étapes ci-dessous :
 1. La boîte de dialogue **Migration Set extraction** (Extraction du jeu de migration) s’affiche. Cliquez sur **Extract** (Extraire).
 
    >[!IMPORTANT]
-Il est préférable de désactiver l’option **Remplacer le conteneur d’évaluation pendant l’extraction**.
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
+   >Il est préférable de désactiver l’option **Remplacer le conteneur d’évaluation pendant l’extraction**.
+   >![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam20.png)
 
 
 ## Prochaines étapes {#whats-next}
