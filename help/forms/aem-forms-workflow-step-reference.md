@@ -3,7 +3,7 @@ title: 'Comment affecter un processus à un autre utilisateur, envoyer un e-mail
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 447dd15cfa7e414b56fe09f2affb5f720bcd734e
+source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
 workflow-type: tm+mt
 source-wordcount: '6098'
 ht-degree: 90%
@@ -54,18 +54,25 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **[!UICONTROL Expiration après l’échéance :]** sélectionnez cette option pour activer le champ Sélection du gestionnaire de dépassement de délai.
 * **[!UICONTROL Gestionnaire de dépassement de délai :]** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Les scripts placés dans le référentiel CRX à l’emplacement [apps]/fd/dashboard/scripts/timeoutHandler peuvent être sélectionnés. Le chemin spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser.
 * **[!UICONTROL Sélectionner l’action et ajouter un commentaire depuis la dernière tâche dans Détails de la tâche :]** sélectionnez cette option pour afficher la dernière action qui a été effectuée et le dernier commentaire reçu dans la section Détails de la tâche.
-* **[!UICONTROL Type :]** sélectionnez le type de document à remplir lors du lancement du processus. Vous pouvez sélectionner un formulaire adaptatif, un formulaire adaptatif en lecture seule, un document PDF non interactif. <!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+* **[!UICONTROL Type :]** sélectionnez le type de document à remplir lors du lancement du processus. Vous pouvez sélectionner un formulaire adaptatif, un formulaire adaptatif en lecture seule, un document PDF non interactif.
+
+<!-- , Interactive Communication Agent UI, or Interactive Communication Web Channel Document. -->
+
+
 * **[!UICONTROL Utiliser un formulaire adaptatif :]** spécifiez la méthode pour localiser le formulaire adaptatif d’entrée. Cette option est disponible si vous sélectionnez les options Formulaire adaptatif ou Formulaire adaptatif en lecture seule dans la liste déroulante Type. Vous pouvez utiliser le formulaire adaptatif envoyé au processus, disponible à un chemin absolu ou disponible à un chemin dans une variable. Vous pouvez utiliser une variable de type chaîne pour spécifier le chemin d’accès.\
    Vous avez la possibilité d’associer plusieurs formulaires adaptatifs à un processus. Par conséquent, vous pouvez préciser un formulaire adaptatif au moment de l’exécution à l’aide des méthodes d’entrée disponibles.
 
 <!-- 
+
 * **[!UICONTROL Use Interactive Communication]**: Specify the method to locate the input interactive communication. You can use the interactive communication submitted to the workflow, available at an absolute path, or available at a path in a variable. You can use a variable of type String to specify the path. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
 
 > [!NOTE]
 >
->You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  -->
+>You must have cm-agent-users and workflow-users group assignments to access Interactive Communications Agent UI in AEM inbox.  
 
-* **[!UICONTROL Chemin d’accès du formulaire adaptatif]** : indiquez le chemin d’accès du formulaire adaptatif.<!--  or Interactive Communication.--> Vous pouvez utiliser le formulaire adaptatif <!-- or interactive communication --> qui est envoyé au processus, disponible à un chemin absolu, ou récupérer le formulaire adaptatif à partir d’un chemin d’accès stocké dans une variable de type de données Chaîne.
+-->
+
+* **[!UICONTROL Chemin d’accès du formulaire adaptatif]** : indiquez le chemin d’accès du formulaire adaptatif. Vous pouvez utiliser le formulaire adaptatif  qui est envoyé au processus, disponible à un chemin absolu, ou récupérer le formulaire adaptatif à partir d’un chemin d’accès stocké dans une variable de type de données Chaîne.
 * **[!UICONTROL Sélectionnez le fichier PDF d’entrée en utilisant :]** spécifiez le chemin d’accès d’un document PDF non interactif. Le champ apparaît lorsque vous sélectionnez un document PDF non interactif dans le champ Type. Vous pouvez sélectionner le fichier PDF d’entrée à l’aide du chemin d’accès relatif à la charge utile, enregistré à un chemin absolu ou à l’aide d’une variable de type de données Document. Par exemple, [Répertoire_Charge_utile]/Workflow/PDF/credit-card.pdf. Le chemin n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour utiliser l’option Chemin d’accès du fichier PDF.
 * **[!UICONTROL Une fois la tâche terminée, effectuer le rendu du formulaire adaptatif en tant que]** : lorsqu’une tâche est marquée comme terminée, vous pouvez effectuer le rendu du formulaire adaptatif en tant que formulaire adaptatif en lecture seule ou document PDF. Vous devez activer l’option Document d’enregistrement ou posséder des formulaires adaptatifs basés sur un modèle de formulaire pour effectuer le rendu du formulaire adaptatif en tant que Document d’enregistrement.
 * **[!UICONTROL pré-renseignés :]** les champs répertoriés ci-dessous servent de données d’entrées pour la tâche :
@@ -73,14 +80,23 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
    * **[!UICONTROL Sélectionnez le fichier de données d’entrée en utilisant :]** chemin d’accès du fichier de données d’entrée (.json, .xml, .doc ou modèle de données de formulaire). Vous pouvez récupérer le fichier de données d’entrée à l’aide d’un chemin d’accès relatif à la charge utile ou récupérer le fichier stocké dans une variable de type de données Document, XML ou JSON. Par exemple, le fichier contient les données envoyées pour le formulaire via une application de boîte de réception AEM. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/workflow/data.
    * **[!UICONTROL Sélectionnez les pièces jointes d’entrée en utilisant :]** les pièces jointes disponibles à l’emplacement sont jointes au formulaire associé à la tâche. Le chemin d’accès peut être relatif à la payload ou récupérer la pièce jointe stockée dans une variable d’un document. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/. Vous pouvez spécifier des pièces jointes placées par rapport à la charge utile ou utiliser une variable de type document (Liste de tableaux > Document) pour spécifier une pièce jointe d’entrée pour le formulaire adaptatif..
 
-   <!-- * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
+   <!-- 
+    
+    * **[!UICONTROL Choose input JSON]**: Select an input JSON file using a path that is relative to payload or stored in a variable of Document, JSON, or Form Data Model data type. This option is available if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list.
 
     * **[!UICONTROL Choose a custom prefill service]**: Select the prefill service to retrieve the data and prefill the Interactive Communication Web channel document or the Agent UI.  
     
-    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. -->
+    * **[!UICONTROL Use the prefill service of the interactive communication selected above]**: Use this option to use the prefill service of the Interactive Communication defined in the Use Interactive Communication drop-down list. 
+    
+    -->
+
    * **[!UICONTROL Mappage des attributs de requête :]** utilisez la section Mappage des attributs de requête pour définir le [nom et la valeur de l’attribut de requête](work-with-form-data-model.md#bindargument). Récupérez les détails de la source de données en fonction du nom d’attribut et de la valeur spécifiés dans la requête. Vous pouvez définir une valeur d’attribut de requête à l’aide d’une valeur littérale ou d’une variable de type de données Chaîne.
 
-   <!--  The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. -->
+   <!--  
+     
+     The prefill service and request attribute mapping options are available only if you select Interactive Communication Agent UI or Interactive Communication Web Channel Document from the Type drop-down list. 
+     
+     -->
 
 * **[!UICONTROL Informations envoyées :]** les champs répertoriés ci-dessous servent d’emplacement de sortie pour la tâche :
 
@@ -88,9 +104,13 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
    * **[!UICONTROL Enregistrez les pièces jointes en utilisant :]** enregistrez les pièces jointes de formulaire fournies dans une tâche. Vous pouvez enregistrer les pièces jointes à l’aide d’un chemin d’accès relatif à la charge utile ou les stocker dans une variable de liste de tableau de type de données Document.
    * **[!UICONTROL Enregistrez le document d’enregistrement en utilisant :]** chemin d’accès pour enregistrer un fichier de document d’enregistrement. Par exemple,[ Répertoire_Charge_utile]/DocumentofRecord/credit-card.pdf. Vous pouvez enregistrer le document d’enregistrement à l’aide d’un chemin d’accès relatif à la charge utile ou le stocker dans une variable de type de données Document. Si vous sélectionnez l’option **[!UICONTROL Relatif à la charge utile]**, le document d’enregistrement n’est pas généré si le champ de chemin d’accès est laissé vide. Cette option est disponible uniquement si vous sélectionnez l’option Formulaire adaptatif dans la liste déroulante Type.
 
-   <!-- * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
+   <!-- 
+    
+    * **[!UICONTROL Save Web Channel data using]**: Save the Web Channel data file using a path that is relative to the payload or store it in a variable of Document, JSON, or Form Data Model data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. c
     * **[!UICONTROL Save PDF document using]**: Save the PDF document using a path that is relative to the payload or store it in a variable of Document data type. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list.
-    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. -->
+    <!-- * **[!UICONTROL Save layout template using]**: Save the layout template using a path that is relative to the payload or store it in a variable of Document data type. The [layout template](layout-design-details.md) refers to an XDP file that you create using Forms Designer. This option is available only if you select Interactive Communication Agent UI from the Type drop-down list. 
+    
+    -->
 
 * **[!UICONTROL Personne désignée]** > **[!UICONTROL Options d’affectation]** : indiquez la méthode à utiliser pour affecter la tâche à un utilisateur. Vous pouvez affecter la tâche de manière dynamique à un utilisateur ou un groupe à l’aide du script Programme de sélection des participants ou affecter la tâche à un utilisateur ou à un groupe AEM spécifique.
 * **[!UICONTROL Programme de sélection des participants :]** cette option est disponible lorsque l’option **[!UICONTROL Sélectionner de manière dynamique un utilisateur ou un groupe]** est activée dans le champ Options d’affectation. Vous pouvez utiliser un script ECMAScript ou un service pour sélectionner de manière dynamique un utilisateur ou un groupe. Pour plus d’informations, voir [Affecter de manière dynamique un processus à des utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape Participant dynamique Adobe Experience Manager personnalisé.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
@@ -183,7 +203,12 @@ L’étape Envoyer un courrier électronique possède les propriétés suivantes
 
 * **[!UICONTROL Métadonnées de processus :]** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus. Après avoir sélectionné cette option, saisissez le nom de la propriété des métadonnées dans la zone de texte vide en dessous de l’option Métadonnées de processus. Par exemple, emailAddress.
 
-<!-- * **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. -->
+<!-- 
+
+* **[!UICONTROL Asset URL]**: Use the option to embed a web link of an interactive communication to the email. After selecting the option, browse and choose the interactive communication to embed. The asset can reside on the author or the publish server. 
+
+-->
+
 * **[!UICONTROL Image :]** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est disponible uniquement pour les balises d’image (&lt;img src=&quot;&lt;span id=&quot; translate=&quot;no&quot; />&quot;/>) disponibles dans le modèle de courrier électronique.&#42;
 
 **[!UICONTROL Adresse électronique du destinataire/expéditeur :]** sélectionnez l’option **[!UICONTROL Littéral]** pour spécifier manuellement une adresse électronique ou sélectionnez l’option **[!UICONTROL Récupérer à partir des métadonnées de processus]** pour récupérer l’adresse électronique d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **[!UICONTROL Récupérez à partir des métadonnées de processus]**. Sélectionnez l’option **[!UICONTROL Variable]** pour récupérer l’adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
@@ -367,7 +392,9 @@ L’étape Signer le document possède les propriétés suivantes :
 * **[!UICONTROL Script ou service pour sélectionner les signataires :]** cette option est disponible uniquement si l’option De manière dynamique est sélectionnée dans le champ Sélectionner les signataires. Vous pouvez spécifier un script ECMAScript ou un service pour sélectionner des signataires et des options de vérification pour un document.
 * **[!UICONTROL Détails du signataire :]** cette option est disponible uniquement si l’option Manuellement est sélectionnée dans le champ Sélectionner les signataires. Indiquez l’adresse électronique et choisissez une méthode de vérification facultative. Avant de sélectionner une méthode de vérification en 2 étapes, assurez-vous que l’option de vérification correspondante est activée pour le compte [!DNL Adobe Sign] configuré. Vous pouvez utiliser une variable de type Chaîne pour définir des valeurs pour les champs Courriel, Code de pays et Numéro de téléphone. Les champs Code pays et Numéro de téléphone s’affichent uniquement si vous sélectionnez Vérification téléphonique dans la liste déroulante de vérification en 2 étapes.
 
-<!-- ## Document Services steps {#document-services-steps}
+<!-- 
+
+## Document Services steps {#document-services-steps}
 
 AEM Document services are a set of services for creating, assembling, and securing PDF Documents. [!DNL AEM Forms] provides a separate AEM Workflow step for each document service.
 
@@ -519,4 +546,6 @@ The Generate Printed Output step has the following properties:
 * **[!UICONTROL Duplex Printing]**:  A Pagination value that specifies whether to use two-sided or single-sided printing. Printers that support PostScript and PCL use this value.If you provide a literal value, select one of these values:
     * **[!UICONTROL Duplex Long Edge]**: Use two-sided printing and print using long-edge pagination. 
     * **[!UICONTROL Duplex Short Edge]**: Use two-sided printing and print using short-edge pagination. 
-    * **[!UICONTROL Simplex]**: Use single-sided printing.-->
+    * **[!UICONTROL Simplex]**: Use single-sided printing.
+    
+    -->

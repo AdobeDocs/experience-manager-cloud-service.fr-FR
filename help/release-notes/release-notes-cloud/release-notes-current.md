@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: a3e18349c3cf2240cc68275a3862abeb75ea372a
+source-git-commit: f947a328897387d37e2092580e6992f14a344eb2
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '956'
 ht-degree: 19%
 
 ---
@@ -64,7 +64,7 @@ Vous pouvez maintenant configurer Adobe Experience Manager Assets sur [restreind
 
 ### Nouvelles fonctionnalités de [!DNL Forms] {#forms-features}
 
-* **Prise en charge des entrées au clavier pour les signatures tactiles**: Les Forms adaptatives sont de plus en plus utilisées sur les périphériques tactiles, et une exigence courante est de prendre en charge les signatures. La signature de documents sur les périphériques tactiles est devenue une méthode acceptée de signature de formulaires. Adaptive Forms prend en charge nativement les signatures tactiles et Adobe Sign pour de tels cas d’utilisation. Désormais, avec d’autres options déjà prises en charge, vous pouvez également utiliser le clavier pour apposer des signatures tactiles dans un formulaire adaptatif. Elle contribue également à améliorer la conformité en matière d’accessibilité.
+* **[Prise en charge des entrées au clavier pour les signatures tactiles](/help/forms/signing-forms-using-scribble.md)**: Les Forms adaptatives sont de plus en plus utilisées sur les périphériques tactiles, et une exigence courante est de prendre en charge les signatures. La signature de documents sur les périphériques tactiles est devenue une méthode acceptée de signature de formulaires. Adaptive Forms prend en charge nativement les signatures tactiles et Adobe Sign pour de tels cas d’utilisation. Désormais, avec d’autres options déjà prises en charge, vous pouvez également utiliser le clavier pour apposer des signatures tactiles dans un formulaire adaptatif. Elle contribue également à améliorer la conformité en matière d’accessibilité.
 
 ![Prise en charge de la saisie au clavier pour les signatures tactiles sur iPhone](/help/release-notes/assets/scribble-keyboard-mobile.png)
 
@@ -72,13 +72,17 @@ Vous pouvez maintenant configurer Adobe Experience Manager Assets sur [restreind
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-<!-- * **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+<!-- 
 
-![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) -->
+* **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
 
-* **Appeler - Une étape de processus AEM**: Document Description XML (DDX) est un langage de marquage déclaratif dont les éléments représentent des blocs de construction de documents. Ces blocs de création comprennent des documents PDF et XDP, ainsi que d’autres éléments tels que des commentaires, des signets et du texte stylisé. Les documents DDX sont des modèles pour les documents et décrivent les caractéristiques souhaitées des documents source qui doivent apparaître dans les documents créés. Un DDX unique peut être utilisé avec un éventail de documents source. Vous pouvez utiliser l’étape Appeler un workflow d’AEM pour effectuer diverses opérations, comme assembler des documents, créer et modifier Acrobat et XFA Forms, ainsi que d’autres opérations décrites dans la section [Référence DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentation.
+![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) 
 
-* **Convertir en PDF/A - Une étape de processus AEM**: PDF/A est un format d’archivage pour la conservation à long terme du contenu du document, toutes les polices sont incorporées et le fichier est décompressé. Désormais, vous pouvez utiliser l’étape Convertir en PDF/A d’un processus AEM pour convertir vos documents ou fichiers dans n’importe quel format au format PDF/A.
+-->
+
+* **[Invoke DDX - Une étape de processus AEM](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) est un langage de marquage déclaratif dont les éléments représentent des blocs de construction de documents. Ces blocs de création comprennent des documents PDF et XDP, ainsi que d’autres éléments tels que des commentaires, des signets et du texte stylisé. Les documents DDX sont des modèles pour les documents et décrivent les caractéristiques souhaitées des documents source qui doivent apparaître dans les documents créés. Un DDX unique peut être utilisé avec un éventail de documents source. Vous pouvez utiliser l’étape Appeler un workflow d’AEM pour effectuer diverses opérations, comme assembler des documents, créer et modifier Acrobat et XFA Forms, ainsi que d’autres opérations décrites dans la section [Référence DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentation.
+
+* **[Convertir en PDF/A - Une étape de processus AEM](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A est un format d’archivage pour la conservation à long terme du contenu du document, toutes les polices sont incorporées et le fichier est décompressé. Désormais, vous pouvez utiliser l’étape Convertir en PDF/A d’un processus AEM pour convertir vos documents ou fichiers dans n’importe quel format au format PDF/A.
 
 
 ## Module complémentaire CIF {#cloud-services-cif}
