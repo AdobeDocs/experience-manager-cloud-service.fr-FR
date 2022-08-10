@@ -3,10 +3,10 @@ title: 'Comment affecter un processus à un autre utilisateur, envoyer un e-mail
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: ebd7942cfaa7717d68ad039f3e0301cb52cbcec7
+source-git-commit: c11b0ac04885d4363b844d3b7743396b996d0548
 workflow-type: tm+mt
-source-wordcount: '6098'
-ht-degree: 90%
+source-wordcount: '6131'
+ht-degree: 89%
 
 ---
 
@@ -169,10 +169,10 @@ L’étape de conversion en PDF/A présente les propriétés suivantes :
 **[!UICONTROL Input Document]**: Le document d’entrée peut être relatif à la charge utile, avoir un chemin d’accès absolu, être fourni comme charge utile ou stocké dans une variable de type de données Document .
 
 **[!UICONTROL Options de conversion]**: Grâce à cette propriété, les paramètres de conversion des documents de PDF en documents de PDF/A sont spécifiés. Les différentes options disponibles sous cet onglet sont les suivantes :
-* **[!UICONTROL Conformité]**: Indique les normes auxquelles le document du PDF/A de sortie doit se conformer.
+* **[!UICONTROL Conformité]**: Indique la norme à laquelle le document de sortie doit être conforme par le PDF/A. Il prend en charge différentes normes de PDF telles que PDF/A-1b, PDF/A-2b et PDF/A-3b.
 * **[!UICONTROL Niveau de résultat]**: Indique le niveau de résultat PassFail, Summary ou Details pour la sortie de conversion.
-* **[!UICONTROL Espace colorimétrique]**: Spécifie l’espace colorimétrique prédéfini utilisé pour les fichiers de PDF/A de sortie.
-* **[!UICONTROL Contenu facultatif]**: Permet que des objets graphiques et/ou des annotations spécifiques soient visibles dans le document du PDF/A de sortie, uniquement lorsqu’un ensemble de critères spécifié est satisfait.
+* **[!UICONTROL Espace colorimétrique]**: Spécifie l’espace colorimétrique prédéfini S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED ou SWOP, qui peut être utilisé pour les fichiers de PDF/A de sortie.
+* **[!UICONTROL Contenu facultatif]**: Autoriser la visibilité d’objets graphiques et/ou d’annotations spécifiques dans le document du PDF/A de sortie, uniquement lorsqu’un ensemble de critères spécifié est satisfait.
 
 **[!UICONTROL Documents de sortie]**: Indique l’emplacement d’enregistrement du fichier de sortie. Le fichier de sortie peut être enregistré à un emplacement relatif à la charge utile, il remplace la charge utile, s’il s’agit d’un fichier ou dans une variable de type de données Document .
 
@@ -247,13 +247,13 @@ Document Description XML (DDX) est un langage de marquage déclaratif dont les �
 L’étape Invoke DDX présente les propriétés suivantes :
 
 **[!UICONTROL Documents d’entrée]**: Utilisé pour définir les propriétés d’un document d’entrée. Les différentes options disponibles sous cet onglet sont les suivantes :
-* **[!UICONTROL Spécification de DDX à l’aide de]**: Spécifie les documents d’entrée relatifs à la charge utile, possèdent un chemin d’accès absolu, peuvent être fournis comme charge utile ou stockés dans une variable de type de données Document .
-* **[!UICONTROL Création d’une carte à partir de la charge utile]**: Ajoute tous les documents situés sous le dossier de charge utile à Input Document’s Map pour l’API d’appel dans Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans la carte.
+* **[!UICONTROL Spécification de DDX à l’aide de]**: Spécifie le document d’entrée relatif à la charge utile, dispose d’un chemin d’accès absolu, peut être fourni comme charge utile ou stocké dans une variable de type de données Document .
+* **[!UICONTROL Création d’une carte à partir de la charge utile]**: Ajoutez tous les documents sous le dossier de charge utile à Input Document’s Map pour l’API d’appel dans Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans la carte.
 * **[!UICONTROL Input Document’s Map]**: L’option est utilisée pour ajouter plusieurs entrées à l’aide de **[!UICONTROL AJOUTER]** bouton . Chaque entrée représente la clé du document dans la carte et la source du document.
 
 **[!UICONTROL Options d’environnement]**: Cette option est utilisée pour définir les paramètres de traitement de l’API d’appel. Les différentes options disponibles sous cet onglet sont les suivantes :
 * **[!UICONTROL Valider uniquement]**: Vérifie la validité du document DDX d’entrée.
-* **[!UICONTROL Échec en cas d’erreur]**: Vérifie si le service d’API d’appel échoue en cas d’erreur. Par défaut, sa valeur est définie sur False.
+* **[!UICONTROL Échec en cas d’erreur]**: Valeur booléenne indiquant si le service d’API d’appel échoue en cas d’erreur ou non. Par défaut, sa valeur est définie sur False.
 * **[!UICONTROL Premier numéro Bates]**: Indique le nombre qui s’incrémente automatiquement. Ce nombre auto-incrémentant s’affiche automatiquement sur chaque page consécutive.
 * **[!UICONTROL Style par défaut]**: Définit le style par défaut du fichier de sortie.
 
