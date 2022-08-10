@@ -3,9 +3,9 @@ title: 'Comment affecter un processus à un autre utilisateur, envoyer un e-mail
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: c11b0ac04885d4363b844d3b7743396b996d0548
+source-git-commit: a8dae80f79e32117341519b31c389f8fc30b5957
 workflow-type: tm+mt
-source-wordcount: '6131'
+source-wordcount: '6132'
 ht-degree: 89%
 
 ---
@@ -168,8 +168,8 @@ L’étape de conversion en PDF/A présente les propriétés suivantes :
 
 **[!UICONTROL Input Document]**: Le document d’entrée peut être relatif à la charge utile, avoir un chemin d’accès absolu, être fourni comme charge utile ou stocké dans une variable de type de données Document .
 
-**[!UICONTROL Options de conversion]**: Grâce à cette propriété, les paramètres de conversion des documents de PDF en documents de PDF/A sont spécifiés. Les différentes options disponibles sous cet onglet sont les suivantes :
-* **[!UICONTROL Conformité]**: Indique la norme à laquelle le document de sortie doit être conforme par le PDF/A. Il prend en charge différentes normes de PDF telles que PDF/A-1b, PDF/A-2b et PDF/A-3b.
+**[!UICONTROL Options de conversion]**: Avec cette propriété, les paramètres de conversion des documents de PDF en documents de PDF/A sont spécifiés. Les différentes options disponibles sous cet onglet sont les suivantes :
+* **[!UICONTROL Conformité]**: Indique la norme à laquelle le document de sortie doit être conforme par le PDF/A. Il prend en charge différentes normes de PDF telles que PDF/A-1b, PDF/A-2b ou PDF/A-3b.
 * **[!UICONTROL Niveau de résultat]**: Indique le niveau de résultat PassFail, Summary ou Details pour la sortie de conversion.
 * **[!UICONTROL Espace colorimétrique]**: Spécifie l’espace colorimétrique prédéfini S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED ou SWOP, qui peut être utilisé pour les fichiers de PDF/A de sortie.
 * **[!UICONTROL Contenu facultatif]**: Autoriser la visibilité d’objets graphiques et/ou d’annotations spécifiques dans le document du PDF/A de sortie, uniquement lorsqu’un ensemble de critères spécifié est satisfait.
