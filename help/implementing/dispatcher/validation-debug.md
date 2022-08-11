@@ -3,7 +3,7 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6f80c6d32d3eca1b0ef2977c740ef043529fab96
+source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
 workflow-type: tm+mt
 source-wordcount: '2653'
 ht-degree: 94%
@@ -231,7 +231,7 @@ Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd
 
 >[!NOTE]
 >
->Voir [Chargement automatique et validation](#automatic-loading) pour une alternative efficace à l’exécution `validate.sh` après chaque modification de configuration.
+>Voir [Rechargement et validation automatiques](#automatic-loading) pour une alternative efficace à l’exécution `validate.sh` après chaque modification de configuration.
 
 ### Phase 1 {#first-phase}
 
@@ -427,7 +427,7 @@ Lors de l’exécution locale du Dispatcher, les journaux sont directement impri
 
 Les journaux des environnements cloud sont exposés par le biais du service de journalisation disponible dans Cloud Manager.
 
-### Chargement automatique et validation {#automatic-loading}
+### Rechargement et validation automatiques {#automatic-reloading}
 
 >[!NOTE]
 >
