@@ -2,11 +2,10 @@
 title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.5.0
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.5.0
 feature: Release Information
-exl-id: 2f787321-f156-480d-bbe8-1a6d04f110c5
-source-git-commit: f84327096951772e1bed8656334841e1292d6bcf
-workflow-type: ht
-source-wordcount: '0'
-ht-degree: 100%
+source-git-commit: 6196f3fc67dbcfe03a71bb6a0796dd5d1d0f8546
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 90%
 
 ---
 
@@ -53,4 +52,4 @@ La date de publication de Cloud Acceleration Manager est le 2 juin 2022.
 
 ### Nouveautés {#what-is-new-cam}
 
-* Cloud Acceleration Manager permet désormais aux utilisateurs de démarrer et de gérer les transferts de contenu afin de déplacer le contenu d’une instance AEM client (On-Premise ou Adobe Managed Services) vers AEM as a Cloud Service dans le cadre d’un projet de migration. Pour plus d’informations, consultez [Utilisation de la carte de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=fr#content-transfer).
+* Cloud Acceleration Manager permet désormais aux utilisateurs de démarrer et de gérer les transferts de contenu afin de déplacer le contenu d’une instance AEM client (On-premise ou Adobe Managed Services) vers AEM as a Cloud Service dans le cadre d’un projet de migration. Pour plus d’informations, consultez [Utilisation de la carte de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-acceleration-manager/using-cam/cam-implementation-phase.html?lang=fr#content-transfer).
