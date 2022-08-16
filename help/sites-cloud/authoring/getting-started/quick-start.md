@@ -2,7 +2,7 @@
 title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 43fe6bdc8534cdc6c9d1b8afee90c647c447bfe1
 workflow-type: tm+mt
 source-wordcount: '1585'
 ht-degree: 100%
@@ -244,13 +244,13 @@ Ces actions peuvent être déclenchées en procédant comme suit :
 
    Ensuite, en fonction de l’action sélectionnée :
 
-   * Copier :
+   * [Copier](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page):
 
       * Vous devez ensuite accéder au nouvel emplacement et coller la page.
-   * Déplacer :
+   * [Déplacer](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page):
 
       * L’assistant s’ouvre pour collecter les informations nécessaires au déplacement de la page. Suivez les instructions à l’écran.
-   * Supprimer :
+   * [Supprimer](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page):
 
       * Vous serez alors invité à confirmer l’opération.
    >[!NOTE]
