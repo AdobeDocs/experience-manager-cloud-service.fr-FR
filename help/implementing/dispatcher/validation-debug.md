@@ -3,9 +3,9 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 2766a40f67edd08f25177fb0651773cd1547cedc
+source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
 workflow-type: tm+mt
-source-wordcount: '2653'
+source-wordcount: '2655'
 ht-degree: 94%
 
 ---
@@ -431,7 +431,7 @@ Les journaux des environnements cloud sont exposés par le biais du service de j
 
 >[!NOTE]
 >
->En raison d’une limitation du système d’exploitation Windows, cette fonctionnalité est disponible uniquement pour les utilisateurs Linux.
+>En raison d’une limitation du système d’exploitation Windows, cette fonctionnalité est disponible uniquement pour les utilisateurs de macOS et Linux.
 
 Au lieu d’exécuter la validation locale (`validate.sh`) et de démarrer le conteneur Docker (`docker_run.sh`) chaque fois que la configuration est modifiée, vous pouvez également exécuter la fonction `docker_run_hot_reload.sh` script.  Le script recherche toutes les modifications apportées à la configuration et la recharge automatiquement et exécute à nouveau la validation. L’utilisation de cette option vous permet de gagner beaucoup de temps lors du débogage.
 
