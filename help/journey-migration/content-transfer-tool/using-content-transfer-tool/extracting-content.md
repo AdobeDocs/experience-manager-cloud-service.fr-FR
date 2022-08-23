@@ -43,10 +43,12 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
    >[!NOTE]
    >
+
 Vous avez la possibilité de remplacer le conteneur d’évaluation pendant la phase d’extraction. Si l’option **Remplacer le conteneur d’évaluation** est désactivée, cela permet d’accélérer les extractions pour les migrations suivantes où les chemins d’accès au contenu ou les paramètres des versions d’inclusion n’ont pas été modifiés. Cependant, si les chemins d’accès au contenu ou les paramètres des versions ont changé, alors l’option **Remplacer le conteneur d’évaluation** doit être activée.
 
    >[!IMPORTANT]
    >
+
 Si le mappage des utilisateurs n’a pas été exécuté sur ce jeu de migration avant d’extraire le contenu de la source, un avertissement s’affiche indiquant que l’étape de mappage des utilisateurs est en attente, comme illustré dans la figure ci-dessus. Cliquez sur **Mappage des utilisateurs** pour exécuter l’outil de mappage des utilisateurs.
 
 1. Le champ **Extraction** affiche désormais le statut **RUNNING** pour indiquer que l’extraction est en cours d’exécution.
