@@ -209,7 +209,6 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
       >* Sécurité renforcée
       >* Meilleures options de mise en œuvre pour les applications d’une seule page
       >* AT.js contient les composants qui étaient inclus dans target.js. Il n’y a donc plus d’appel à target.js.
-
       >
       >Vous pouvez sélectionner AT.js ou mbox.js dans le menu déroulant **Bibliothèque cliente**.
 
