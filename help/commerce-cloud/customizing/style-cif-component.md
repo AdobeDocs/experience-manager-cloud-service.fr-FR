@@ -3,7 +3,7 @@ title: Donner un style aux composants principaux AEM CIF
 description: Découvrez comment donner un style aux composants principaux AEM CIF. Ce tutoriel explique comment les bibliothèques côté client (clientlibs) sont utilisées afin de déployer et de gérer le code CSS et Javascript pour une implémentation Commerce d’Adobe Experience Manager (AEM). Il explique également comment le module ui.frontend et un projet webpack sont intégrés dans le processus de création de bout en bout.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 activity: develop
 audience: developer
@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 100%

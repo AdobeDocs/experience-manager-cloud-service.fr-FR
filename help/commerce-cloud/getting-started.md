@@ -3,12 +3,12 @@ title: Prise en main d’AEM Commerce as a Cloud Service
 description: Découvrez comment déployer un projet AEM compatible avec le commerce dans un environnement AEM as a Cloud service opérationnel. Utilisez les fonctionnalités d’Adobe Cloud Manager et un pipeline CI/CD pour construire la vitrine de référence Venia dans un environnement opérationnel.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
-version: cloud-service
+version: Cloud Service
 doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: d85352b93b9c793a716841523677eb710bb4577c
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '1095'
 ht-degree: 100%

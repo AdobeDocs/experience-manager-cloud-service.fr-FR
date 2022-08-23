@@ -3,12 +3,12 @@ title: Utilisation du sélecteur de produits et de catégories CIF
 description: Découvrez comment utiliser le sélecteur de produits et de catégories CIF dans vos composants de commerce client pour aider les auteurs et les spécialistes marketing à travailler efficacement avec les données de catalogue et de produits commerciaux.
 sub-product: Commerce
 topics: Development
-version: cloud-service
+version: Cloud Service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
-source-git-commit: 2e0a2b543fe0b6302a5dd62055f89a8f30427e6b
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 100%

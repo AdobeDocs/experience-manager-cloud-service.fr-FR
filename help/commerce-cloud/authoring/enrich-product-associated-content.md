@@ -2,7 +2,7 @@
 title: Enrichissement des données de produit avec le contenu AEM associé
 description: Découvrez comment les professionnels du marketing peuvent enrichir les données de produit avec du contenu associé à partir d’Adobe Experience Manager. Le contenu, comme les ressources et les fragments d’expérience dans AEM, peut être associé à des produits commerciaux. Une fois associés, ces types de contenu peuvent être insérés dynamiquement dans un espace réservé dans une page de produit ou de catégorie. Les marketeurs ont ainsi la possibilité de cibler des pages de produits spécifiques avec du contenu supplémentaire, comme des images et des vidéos.
 sub-product: Commerce
-version: cloud-service
+version: Cloud Service
 doc-type: feature-video
 activity: use
 audience: marketer
@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
-source-git-commit: aaac412148d1499476c99a15fd1eed45d29fc29b
+source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
 workflow-type: tm+mt
 source-wordcount: '375'
 ht-degree: 100%
