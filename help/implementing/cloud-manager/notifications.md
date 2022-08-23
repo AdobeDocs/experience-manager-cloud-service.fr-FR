@@ -27,7 +27,7 @@ Le panneau répertorie uniquement les notifications les plus récentes. Cliquez 
 
 ## Notifications par e-mail {#email-notifications}
 
-Par défaut, les notifications sont disponibles dans l’interface utilisateur de toutes les solutions Adobe [!UICONTROL Experience Cloud]. Les utilisateurs peuvent également choisir d’envoyer ces notifications par courrier électronique en procédant comme suit.
+Par défaut, les notifications sont disponibles dans l’interface utilisateur de toutes les solutions [!UICONTROL Experience Cloud] d’Adobe. Les utilisateurs peuvent également choisir d’envoyer ces notifications par courrier électronique en procédant comme suit.
 
 1. Cliquez sur l’icône représentant une cloche pour afficher les notifications.
 1. Cliquez sur le bouton **Modifier les préférences** (en forme d’engrenage) en haut du panneau des notifications.

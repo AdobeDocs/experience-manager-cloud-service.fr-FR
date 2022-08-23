@@ -37,7 +37,7 @@ Après lecture, vous devez comprendre les éléments suivants :
 * Accès à Cloud Manager.
 * Connectez-vous à une instance as a Cloud Service AEM.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant de commencer les tâches décrites dans ce document en tant qu’utilisateur AEM, assurez-vous que l’administrateur système a effectué toutes les étapes de ce parcours d’intégration. Cela signifie que :
 

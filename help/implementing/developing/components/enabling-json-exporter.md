@@ -3,8 +3,8 @@ title: Activation de l’exportateur JSON pour un composant
 description: Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
-source-wordcount: '0'
+workflow-type: tm+mt
+source-wordcount: '473'
 ht-degree: 100%
 
 ---
@@ -81,4 +81,4 @@ Pour plus d’informations, voir :
 * [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)

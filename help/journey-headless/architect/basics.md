@@ -3,7 +3,7 @@ title: En savoir plus sur les bases de la modélisation de contenu
 description: Découvrez les bases de la modélisation du contenu pour votre CMS découplé à l’aide de fragments de contenu.
 exl-id: dc460490-dfc8-4a46-a468-3d03e593447d
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 100%
 

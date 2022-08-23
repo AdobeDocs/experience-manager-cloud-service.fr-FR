@@ -42,7 +42,7 @@ Consultez la vidéo [Présentation de la version de décembre 2021](https://vide
 
 * [!DNL Dynamic Media] prend désormais en charge l’ingestion, la prévisualisation, la lecture et la publication des vidéos MXF. L’annotation et la shoppable vidéo pour les vidéos MXF ne sont pas encore prises en charge.
 
-* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources du DAM distant sont disponibles sur le déploiement de Sites. Vous pouvez désormais effectuer les opérations suivantes : [mettre à jour, supprimer, renommer et déplacer des opérations](/help/assets/use-assets-across-connected-assets-instances.md) sur les ressources ou dossiers du DAM distant. Les mises à jour, avec un certain retard, sont disponibles automatiquement sur le déploiement Sites.
+* Après la configuration d’une connexion entre les déploiements DAM distant et Sites, les ressources du DAM distant sont disponibles sur le déploiement de Sites. Vous pouvez désormais effectuer les opérations suivantes : [mettre à jour, supprimer, renommer et déplacer des opérations](/help/assets/use-assets-across-connected-assets-instances.md) sur les ressources ou dossiers du DAM distant. Les mises à jour, avec un certain retard, sont disponibles automatiquement sur le déploiement Sites.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 

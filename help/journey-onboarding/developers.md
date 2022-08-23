@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
 workflow-type: tm+mt
 source-wordcount: '1400'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 
@@ -46,7 +46,7 @@ Une fois que l’administrateur système a effectué les principales tâches d�
 
 Selon les besoins de votre entreprise, un ou plusieurs utilisateurs peuvent avoir les deux rôles.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant de commencer les tâches décrites dans ce document en tant que développeur ou responsable de déploiement, assurez-vous que l’administrateur système a suivi toutes les étapes de ce parcours d’intégration. Cela signifie que :
 
@@ -103,7 +103,7 @@ Pour créer votre premier pipeline de déploiement hors production, procédez co
    * **Environnements de déploiement éligibles** - Vous devez choisir l’environnement sur lequel le pipeline doit être déployé.
    * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
    * **Branche Git** - cette option définit à partir de quelle branche sélectionnée le pipeline doit récupérer le code.
-      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à sélectionner.
+      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à les sélectionner.
 
    ![Pipeline full stack](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

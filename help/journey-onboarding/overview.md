@@ -4,8 +4,8 @@ description: Commencez ici pour avoir un aperçu du parcours guidé tout au long
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
 source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1175'
+ht-degree: 25%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Félicitations d&#39;avoir choisi AEM as a Cloud Service ! Ce document constitue le point de départ d’un parcours guidé tout au long du processus d’intégration. Que vous déployiez une nouvelle application ou migriez une application existante, ce parcours d’intégration garantit que vos équipes sont configurées et ont accès à AEM as a Cloud Service.
 
-## Présentation {#introduction}
+## Présentation  {#introduction}
 
 L’intégration est le processus par lequel un administrateur système désigné configure AEM as a Cloud Service pour votre organisation. Il inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs à des rôles en fonction de leurs responsabilités professionnelles. Par conséquent, chaque membre peut se connecter et accéder à ses ressources AEM as a Cloud Service.
 

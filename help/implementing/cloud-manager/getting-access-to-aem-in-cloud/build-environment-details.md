@@ -95,7 +95,7 @@ Les combinaisons fournisseur/version actuellement disponibles sont les suivantes
 >
 >À compter d’avril 2022, le JDK Oracle sera le JDK par défaut pour le développement et le fonctionnement des applications AEM. Le processus de génération de Cloud Manager passe automatiquement à l’utilisation du JDK Oracle, même si une autre option est explicitement sélectionnée dans le toolchain Maven. Pour plus d’informations, reportez-vous aux notes de mise à jour d’avril une fois publiées.
 
-#### Autre version du JDK d’exécution Maven {#alternate-maven-jdk-version}
+#### Autre version du JDK d’exécution de Maven {#alternate-maven-jdk-version}
 
 Il est également possible de sélectionner Java 8 ou Java 11 comme JDK pour l’ensemble de l’exécution Maven. Contrairement aux options de toolchains, un autre JDK sera utilisé pour tous les plug-ins, sauf si la configuration de toolchains est également définie, auquel cas la configuration de toolchains est toujours appliquée pour les plug-ins Maven compatibles avec les toolchains. Par conséquent, la vérification et l’application de la version Java à l’aide du [plug-in Apache Maven Enforcer](https://maven.apache.org/enforcer/maven-enforcer-plugin/) fonctionneront.
 

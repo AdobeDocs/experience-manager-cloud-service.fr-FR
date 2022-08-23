@@ -1,13 +1,13 @@
 ---
 title: Accès au Admin Console
 description: Une fois que vous avez compris la préparation nécessaire à l’intégration et les bases de la structure AEMaaCS, vous êtes prêt à vous connecter pour la première fois au Admin Console.
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 9%
 
 ---
-
 
 # Accès au Admin Console {#accessing-admin-console}
 

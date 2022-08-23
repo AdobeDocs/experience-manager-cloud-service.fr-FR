@@ -123,7 +123,7 @@ Cloud Manager a évolué sous la forme d’un portail en libre-service où les p
 Cloud Manager crée des environnements dans les centres de données dans de nombreuses régions géographiques, ce qui permet une couverture mondiale. Les points de présence CDN (PoP) assurent une diffusion de contenu à faible latence pour les clients du monde entier.
 
 
-## Intégration  {#onboarding}
+## Intégration {#onboarding}
 
 Le démarrage et la gestion d’un projet AEM sont simples avec AEM as a Cloud service, car Adobe est responsable de nombreux aspects :
 

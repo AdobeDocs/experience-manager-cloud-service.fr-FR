@@ -2,13 +2,13 @@
 title: Bonnes pratiques en matière de requête et d’indexation
 description: Découvrez comment optimiser vos index et requêtes en fonction des bonnes pratiques d’Adobe.
 topic-tags: best-practices
-source-git-commit: 565ca9f29c08a741edfd325090588c4bd7ae81f3
+exl-id: 37eae99d-542d-4580-b93f-f454008880b1
+source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
 workflow-type: tm+mt
 source-wordcount: '1563'
 ht-degree: 25%
 
 ---
-
 
 # Bonnes pratiques en matière de requête et d’indexation {#query-and-indexing-best-practices}
 

@@ -34,7 +34,7 @@ Pour utiliser AEM, les membres de votre équipe doivent être affectés à au mo
 
 Chaque utilisateur affecté à un profil de produit AEM aura également un accès en lecture seule à Cloud Manager. L’accès en écriture à Cloud Manager peut être accordé via d’autres profils de produit.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Avant de commencer à lire cette section, vous devriez disposer des informations suivantes sur votre équipe qui utilisera AEM.
 

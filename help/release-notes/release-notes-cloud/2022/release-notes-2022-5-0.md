@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
+exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 21%
+ht-degree: 39%
 
 ---
-
 
 # Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -24,7 +24,7 @@ La section suivante concerne les notes de mise à jour générales de la version
 ## Date de publication {#release-date}
 
 La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2022.5.0) est le 9 juin 2022.
-La prochaine version (2022.6.0) est prévue pour le 30 juin 2022.
+La prochaine version (2022.6.0) est prévue pour le 30 juin 2022.
 
 ## Vidéo de mise à jour {#release-video}
 
@@ -66,11 +66,11 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 
 ### Nouveautés {#what-is-new-cif}
 
-* Accès rapide au cockpit du produit : Accédez facilement à des informations détaillées sur les produits en un seul clic dans l’éditeur de sites.
+* Accès rapide au cockpit du produit : accédez facilement à des informations détaillées sur les produits en un seul clic dans l’éditeur de sites.
 
-   ![Activer la liste bloquée](/help/assets/CIF/enable-wishlist.png)
+   ![Activer la liste de souhaits](/help/assets/CIF/enable-wishlist.png)
 
-* Prise en charge de composants commerciaux marketing supplémentaires : Les composants peuvent être configurés pour afficher un appel à l’action de type &quot;ajouter au panier&quot; et &quot;ajouter à une liste de souhaits&quot;.
+* Prise en charge de composants commerciaux marketing supplémentaires : les composants peuvent être configurés pour afficher un appel à l’action de type « ajouter au panier » et « ajouter à une liste de souhaits ».
 
    ![Raccourci de l’éditeur de sites vers le cockpit du produit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
@@ -87,18 +87,18 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 
 * AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
 
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation Security {#foundation-security}
+## Couche de sécurité [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation-security}
 
-### Dépréciation de TLS 1.0, 1.1
+### Dépréciation de TLS 1.0 et 1.1
 
-À compter du 30 juin 2022, l’as a Cloud Service Experience Manager devra disposer d’une communication réseau plus sécurisée et d’un échange de données avec les systèmes utilisateurs. AEM utilisera exclusivement le protocole TLS (Transport Layer Security), version 1.2. Les anciennes versions de TLS 1.0 et 1.1 seront obsolètes.
+À compter du 30 juin 2022, Experience Manager as a Cloud Service devra disposer d’une communication réseau et d’un échange de données plus sécurisés avec les systèmes utilisateurs. AEM utilisera exclusivement le protocole TLS (Transport Layer Security), version 1.2. Les anciennes versions de TLS 1.0 et 1.1 seront obsolètes.
 
-Si vous continuez à utiliser des versions antérieures de TLS as 1.0, 1.1, vous risquez de perdre l’accès à Experience Manager as a Cloud Service.
+Si vous continuez à utiliser des versions antérieures à TLS 1.0 et 1.1, vous risquez de perdre l’accès à Experience Manager as a Cloud Service.
 
 ## Cloud Manager {#cloud-manager}
 
-Vous trouverez une liste complète des versions mensuelles de Cloud Manager [here](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
 
 ## Outils de migration {#migration-tools}
 
-Vous trouverez une liste complète des versions des outils de migration [here](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).
+Vous trouverez une liste complète des versions des outils de migration [ici](/help/journey-migration/release-notes/release-notes-migration-tools-current.md).

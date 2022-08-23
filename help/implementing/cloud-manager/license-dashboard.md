@@ -51,7 +51,7 @@ Chaque section résume ce qui est disponible et comment il est actuellement util
 >
 >Reportez-vous à la [présentation d’Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour savoir comment gérer vos droits Adobe dans l’ensemble de votre organisation à partir d’Admin Console.
 
-## Questions fréquemment posées {#faq}
+## Foire aux questions {#faq}
 
 ### Qu’est-ce qu’une requête de contenu ? {#what-is-a-content-request}
 

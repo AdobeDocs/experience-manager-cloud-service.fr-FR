@@ -212,7 +212,7 @@ Pour résoudre des dépendances et une définition de projet non valides, procé
 
 Eclipse télécharge les dépendances requises. Cela peut prendre un moment.
 
-## Informations supplémentaires {#more-information}
+## Informations complémentaires {#more-information}
 
 Le site web officiel Apache Sling IDE tooling for Eclipse fournit des informations utiles :
 

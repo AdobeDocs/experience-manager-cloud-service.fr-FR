@@ -31,7 +31,7 @@ Après avoir lu ce document, vous devriez :
 * Connaissez les trois profils de produits Cloud Manager importants : **Propriétaire de l’entreprise**, **Responsable de déploiement**, et **Développeur**.
 * pouvoir affecter des membres de l’équipe aux profils de produits Cloud Manager.
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour affecter des membres de l’équipe à des profils de produit, vous devez disposer d’informations sur les membres de l’équipe, qui devront accéder à AEM as a Cloud Service, notamment :
 
@@ -170,7 +170,7 @@ Votre **Développeur** ont été attribués et peuvent désormais accéder à Cl
 
 Félicitations ! Votre nouvelle équipe Cloud Manager (y compris vous-même affecté à la **Propriétaire de l’entreprise** profile) a été configuré. En tant que **Propriétaire d’entreprise** vous n’êtes qu’à une étape de la connexion à Cloud Manager et de l’activation de la création de vos ressources cloud.
 
-Dans cette partie du parcours d’intégration, vous avez appris à affecter des membres de votre équipe à des profils dans le Admin Console. Vous devez maintenant :
+Dans cette partie du parcours d’intégration, vous avez appris à affecter des membres de votre équipe à des profils dans le Admin Console. Vous devrez maintenant :
 
 * Comprendre les profils de produits.
 * Découvrez Cloud Manager.

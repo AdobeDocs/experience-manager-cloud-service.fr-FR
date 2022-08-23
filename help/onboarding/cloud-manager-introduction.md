@@ -48,7 +48,7 @@ Vous pouvez également accéder à la page Programmes et produits de Cloud Manag
 | Exécution du pipeline | Planification des déploiements de production | x | x | x |  |
 | Suppression de pipeline | Autoriser la suppression du pipeline |  | x |  |  |
 | Annuler l’exécution | Annuler l’exécution actuelle |  | x |  |  |
-| Génération d’un jeton d’accès personnel | Accès à git |  | x |  | x |
+| Génération d’un jeton d’accès personnel | Accéder à Git |  | x |  | x |
 
 >[!NOTE]
 >

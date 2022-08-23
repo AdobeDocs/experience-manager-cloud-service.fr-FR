@@ -2,13 +2,13 @@
 title: Notes de mise à jour de Cloud Manager 2022.6.0 dans Adobe Experience Manager as a Cloud Service
 description: Consultez les notes de mise à jour de Cloud Manager 2022.6.0 dans AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: 5200ee315ad88dae4b52c0ea904489e73f62a8a0
+exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '348'
 ht-degree: 52%
 
 ---
-
 
 # Notes de mise à jour de Cloud Manager 2022.6.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
 
@@ -41,4 +41,3 @@ La date de publication de la version 2022.6.0 de Cloud Manager dans AEM as a Clo
 * L’API [`List Programs`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getPrograms) a été abandonnée et [`List Programs for Tenant`](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getProgramsForTenant) doit être utilisé à la place.
    * `List Programs` continue de fonctionner, mais son utilisation génère des messages d’avertissement dans les journaux.
    * Il ne sera plus pris en charge au bout de trois mois.
-

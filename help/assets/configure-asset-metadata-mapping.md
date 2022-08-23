@@ -1,7 +1,8 @@
 ---
 title: Configuration du mappage des métadonnées de ressources entre Workfront et Experience Manager Assets
 description: Mappez les champs de métadonnées des ressources entre Adobe Workfront et les applications as a Cloud Service Experience Manager. En raison du mappage des champs de métadonnées, lorsque vous envoyez une ressource de Workfront à Experience Manager Assets, vous pouvez afficher les métadonnées de ressource mappées dans Experience Manager Assets.
-source-git-commit: 212ecb5330de739b2e479d36462953ce33697c1c
+exl-id: 71400769-b2bc-4f5d-8b6b-a73598e837b4
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 10%
@@ -24,7 +25,7 @@ Une image `add-users-workfront.png` existe dans la variable `Metadata Syncs` dan
 
 * Description du document
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 * Un accès administrateur aux applications Workfront et Experience Manager Assets as a Cloud Service.
 
@@ -127,6 +128,3 @@ Pour appliquer des paramètres de métadonnées au dossier d’image :
 1. Sélectionnez le dossier de destination vers lequel [l’image est envoyée à partir de l’application Adobe Workfront](#send-image-workfront-assets) et cliquez sur **[!UICONTROL Appliquer]**.
 
 Vous pouvez accéder à l’image dans Experience Manager Assets et afficher les métadonnées associées à l’image. Sélectionnez l’image et cliquez sur **[!UICONTROL Propriétés]** pour afficher les métadonnées de l’image.
-
-
-

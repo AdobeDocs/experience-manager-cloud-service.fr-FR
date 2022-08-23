@@ -31,7 +31,7 @@ Consultez les sections relatives à la prise en charge de la plateforme et aux [
 >
 >* Adobe requiert le déploiement et la configuration du [!DNL Adobe Workfront for Experience Manager enhanced connector] uniquement par le biais de partenaires certifiés ou d’[!DNL Adobe Professional Services]. S’il est déployé et configuré sans partenaire certifié ou sans [!DNL Adobe Professional Services], il n’est pas pris en charge par Adobe.
 >
->* Adobe peut apporter des mises à jour à [!DNL Adobe Workfront] et [!DNL Adobe Experience Manager], lesquelles peuvent rendre ce connecteur inutile. Si cela se produit, les clients peuvent être amenés à abandonner l’utilisation de ce connecteur.
+>* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
 >
 >* Adobe prend en charge les versions 1.7.4 et ultérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, voir l’étape 5(a) de [instructions d’installation du connecteur amélioré](workfront-connector-install.md).
 >

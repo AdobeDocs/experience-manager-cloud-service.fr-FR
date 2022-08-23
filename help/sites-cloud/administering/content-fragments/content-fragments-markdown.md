@@ -1,7 +1,8 @@
 ---
 title: Texte (Markdown)
 description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu pour la création de pages et la diffusion sans en-tête.
-source-git-commit: a06024b4d4b6e5e750ed4c1e27f55283513b78a2
+exl-id: 4e9b076e-7429-466b-bb53-2164da379650
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 91%

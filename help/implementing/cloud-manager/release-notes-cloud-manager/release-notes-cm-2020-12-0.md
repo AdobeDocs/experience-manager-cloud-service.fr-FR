@@ -31,6 +31,6 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.12.0 e
 
 ### Correctifs  {#bug-fixes}
 
-* Certaines occurrences d’échecs au stade de l’analyse du code sans fournir de résultats ont été corrigées.
+* Certaines occurrences d’échecs à l’étape d’analyse du code sans fournir de résultats ont été corrigées.
 
 * La carte d’environnement n’affichait pas systématiquement le bouton **Ajouter**.

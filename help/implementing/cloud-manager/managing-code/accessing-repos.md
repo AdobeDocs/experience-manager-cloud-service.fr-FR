@@ -1,5 +1,5 @@
 ---
-title: Accès aux référentiels
+title: Accéder aux référentiels
 description: Découvrez comment accéder à votre référentiel git et le gérer à l’aide de la gestion de compte git en libre-service à partir de Cloud Manager.
 exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
@@ -9,7 +9,7 @@ ht-degree: 8%
 
 ---
 
-# Accès aux référentiels {#accessing-repos}
+# Accéder aux référentiels {#accessing-repos}
 
 Découvrez comment accéder à votre référentiel git et le gérer à l’aide de la gestion de compte git en libre-service à partir de Cloud Manager.
 

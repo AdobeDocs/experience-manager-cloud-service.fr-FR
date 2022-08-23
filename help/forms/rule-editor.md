@@ -7,7 +7,7 @@ level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
-source-wordcount: '6351'
+source-wordcount: '6346'
 ht-degree: 99%
 
 ---
@@ -639,7 +639,7 @@ Pour ouvrir un formulaire en mode d’édition, sélectionnez un formulaire, pui
 1. Sélectionnez la zone numérique d’entrée, et appuyez sur ![edit-rules](assets/edit-rules-icon.svg) pour ouvrir l’éditeur de règles.
 1. Appuyez sur **[!UICONTROL Créer une règle]**. À l’aide des options indiquées ci-dessous, créez une règle pour enregistrer la valeur carrée de l’entrée dans le champ Sortie de votre formulaire.
 
-[![Utilisation de fonctions personnalisées pour créer une règle](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
+   [![Utilisation des fonctions personnalisées pour créer une règle](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)
 
 1. Appuyez sur **[!UICONTROL Terminé]**. Votre fonction personnalisée est ajoutée.
 

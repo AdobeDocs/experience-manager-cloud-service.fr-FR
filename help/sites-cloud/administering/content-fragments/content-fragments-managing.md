@@ -1,7 +1,8 @@
 ---
 title: Gestion des fragments de contenu
 description: Découvrez comment utiliser la console Fragments de contenu pour gérer vos fragments de contenu AEM ; pour la création de pages ou comme base de votre contenu sans affichage.
-source-git-commit: 9de8becfd69ea2a65a847cba88468c94e2fdf484
+exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
+source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '2047'
 ht-degree: 63%
@@ -406,4 +407,3 @@ Vous pouvez restaurer vers une version spécifique de votre fragment :
    Sélectionnez la version requise, puis l’action **Revenir à cette version**.
 
 * Lors de la [comparaison d’une version à la version actuelle](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#comparing-fragment-versions), vous pouvez **restaurer** la version sélectionnée.
-
