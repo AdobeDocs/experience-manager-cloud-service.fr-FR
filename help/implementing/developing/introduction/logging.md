@@ -2,10 +2,10 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 47bd338469a1d47b8f9863b8454e2074657c9fe8
+source-git-commit: 690939074570fb5285f242fe8d782380cfa5abc1
 workflow-type: tm+mt
-source-wordcount: '2316'
-ht-degree: 100%
+source-wordcount: '2324'
+ht-degree: 99%
 
 ---
 
@@ -549,7 +549,7 @@ La bande passante réseau associée aux journaux envoyés à Splunk est considé
 
 Dans la demande d’assistance, les clients doivent indiquer :
 
-* l’adresse du point d’entrée Splunk HEC ;
+* l’adresse du point d’entrée Splunk HEC ;. Ce point de terminaison doit comporter un certificat SSL valide
 * l’index Splunk ;
 * le port Splunk ;
 * le jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
