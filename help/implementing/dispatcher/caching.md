@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: 'Mise en cache dans AEM as a Cloud Service '
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: ff78e359cf79afcb4818e0599dca5468b4e6c754
+source-git-commit: 5319eca105564843f26e7fb6d9cfd5aa065b8ca0
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 75%
+source-wordcount: '2683'
+ht-degree: 73%
 
 ---
 
@@ -196,6 +196,18 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
 ### Comportement de la requête HEAD {#request-behavior}
 
 Lorsqu’une requête HEAD est reçue sur le réseau de diffusion de contenu Adobe pour une ressource qui n’est **pas** mise en cache, la requête est transformée et reçue par le Dispatcher et l’instance AEM en tant que requête GET. Si la réponse peut être mise en cache, les requêtes HEAD suivantes seront diffusées à partir du réseau de diffusion de contenu. Si la réponse ne peut pas être mise en cache, les requêtes HEAD suivantes seront transmises au Dispatcher et à l’instance AEM pendant une période qui dépend du TTL `Cache-Control`.
+
+### Paramètres de campagne marketing
+
+Les paramètres des campagnes marketing sont ajoutés à un site web pour effectuer le suivi de différentes campagnes marketing, mais ont rarement un impact sur l’apparence du site web. C’est pourquoi, dans le Dispatcher, elles peuvent principalement être ignorées pour les décisions de mise en cache du Dispatcher. Pour ce faire, définissez la variable [ignoreUrlParams](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
+Adobe conserve une liste des paramètres de requête marketing les plus utilisés dans le fichier . `conf.dispatcher.d/cache/marketing_query_parameters.any`. Décommentez les lignes utilisées par les campagnes marketing de sites web et supprimez les commentaires du `/ignoreUrlParams` dans la ferme de serveurs activée.
+
+```
+/ignoreUrlParams {
+ 	/0001 { /glob "*" /type "deny" }
+ 	$include "../cache/marketing_query_parameters.any"
+}
+```
 
 ## Invalidation du cache du Dispatcher {#disp}
 
