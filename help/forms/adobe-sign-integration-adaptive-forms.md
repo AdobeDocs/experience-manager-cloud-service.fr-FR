@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 00dced631aa293630f923ee1e94f321bbf4cddb9
+source-git-commit: 28bf3e1c33def6c8a17b39a6bd9abca10faa1bd8
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 100%
+source-wordcount: '1024'
+ht-degree: 89%
 
 ---
 
@@ -46,14 +46,32 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
 1. Sur la page de configuration, appuyez sur **[!UICONTROL Créer]** pour créer une configuration [!DNL Adobe Sign] dans AEM Forms.
 1. Dans l’onglet **[!UICONTROL Général]** de la page **[!UICONTROL Créer une configuration Adobe Sign]**, spécifiez un **[!UICONTROL nom]** de configuration et appuyez sur **[!UICONTROL Suivant]**. Vous avez la possibilité d’indiquer un **[!UICONTROL titre]** et de rechercher et sélectionner une **[!UICONTROL vignette]** pour la configuration.
 
-1. Copiez l’URL dans la fenêtre active du navigateur dans un bloc-notes. L’URL est nécessaire pour configurer l’application [!DNL Adobe Sign] avec [!DNL AEM Forms] à une étape ultérieure.
+1. Copiez l’URL dans la fenêtre active du navigateur dans un bloc-notes. L’URL est nécessaire pour configurer l’application [!DNL Adobe Sign] avec [!DNL AEM Forms] à une étape ultérieure. Appuyez sur **[!UICONTROL Suivant]**.
+
+1. Dans le **[!UICONTROL Paramètres]** , **[!UICONTROL URL OAuth]** contient l’URL par défaut. Le format de l’URL est:
+
+   `https://<shard>/public/oAuth/v2`
+
+   Par exemple :
+   `https://secure.na1.echosign.com/public/oauth/v2`
+
+   où :
+
+   **na1** fait référence au partitionnement de base de données par défaut. Vous pouvez modifier la valeur du partitionnement de base de données. Assurez-vous que les configurations cloud de [!DNL  Adobe Sign] pointent vers le [fragment correct](https://helpx.adobe.com/fr/sign/using/identify-account-shard.html).
+
+   Si vous créez une autre configuration [!DNL Adobe Sign] pour une fonctionnalité ou un composant Adobe Experience Manager, assurez-vous que toutes les configurations cloud de [!DNL Adobe Sign] pointent vers le même fragment.
+
+   >[!NOTE]
+   >
+   > Conserver la variable **Création d’une configuration Adobe Sign** s’ouvre. Ne le fermez pas. Vous pouvez récupérer **ID client** et **Secret du client** après la configuration des paramètres OAuth pour la variable [!DNL Adobe Sign] comme décrit dans les étapes à venir.
+
 
 1. Configurez les paramètres OAuth pour l’application [!DNL Adobe Sign] :
 
    1. Ouvrez une fenêtre de navigateur et connectez-vous au compte de développeur [!DNL Adobe Sign].
    1. Sélectionnez l’application configurée pour [!DNL AEM Forms], puis appuyez sur **[!UICONTROL Configurer OAuth pour l’application]**.
-   1. Dans la zone **[!UICONTROL URL de redirection]**, ajoutez l’URL copiée à l’étape précédente et cliquez sur **[!UICONTROL Enregistrer]**.
-   1. Activez les paramètres OAuth suivants pour l’application [!DNL Adobe Sign] et cliquez sur **[!UICONTROL Enregistrer]**.
+   1. Dans le **[!UICONTROL URL de redirection]** , ajoutez l’URL copiée lors d’une étape précédente (étape 7) et cliquez sur **[!UICONTROL Enregistrer]**.
+   1. Activez la portée suivante pour la variable [!DNL Adobe Sign] application et cliquez sur **[!UICONTROL Enregistrer]**.
    * [!DNL aggrement_read]
    * [!DNL aggrement_write]
    * [!DNL aggrement_send]
@@ -65,20 +83,7 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
 
    ![Configuration OAuth](assets/oauthconfig_new.png)
 
-1. Revenez à la page **[!UICONTROL Créer une configuration Adobe Sign]**. Dans l’onglet **[!UICONTROL Paramètres]**, le champ **[!UICONTROL URL OAuth]** indique l’URL par défaut. Le format de l’URL est:
-
-   `https://<shard>/public/oAuth/v2`
-
-   Par exemple :
-   `https://secure.na1.echosign.com/public/oauth/v2`
-
-   où :
-
-   **na1** fait référence au partitionnement de base de données par défaut. Vous pouvez modifier la valeur du partitionnement de base de données. Assurez-vous que les configurations cloud de [!DNL Adobe Sign] pointent vers le [fragment correct](https://helpx.adobe.com/fr/sign/using/identify-account-shard.html).
-
-   Si vous créez une autre configuration [!DNL Adobe Sign] pour une fonctionnalité ou un composant Adobe Experience Manager, assurez-vous que toutes les configurations cloud de [!DNL Adobe Sign] pointent vers le même fragment.
-
-1. Spécifiez les valeurs **[!UICONTROL ID client]** (également appelé ID d’application) et **[!UICONTROL clé secrète client]**. Utilisez l’ID client et la clé secrète client de l’application Adobe Sign que vous avez créés à l’étape précédente.
+1. Revenez à la page **[!UICONTROL Créer une configuration Adobe Sign]**. Spécifiez le [**[!UICONTROL ID client]** (également appelé ID d’application) et **[!UICONTROL Secret du client]**]. Utilisez la variable [ID client et secret client de l’application Adobe Sign](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) vous avez créé à l’étape précédente.
 
 1. Sélectionnez l’option **[!UICONTROL Activer Adobe Sign pour les pièces jointes]** pour ajouter les fichiers joints à un formulaire adaptatif au document [!DNL Adobe Sign] correspondant envoyé à des fins de signature.
 
