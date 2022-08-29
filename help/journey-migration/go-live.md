@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: cc90803ff1ccf109ca6a02f2b69aa54362fa867e
+source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
 workflow-type: tm+mt
-source-wordcount: '1644'
-ht-degree: 100%
+source-wordcount: '1718'
+ht-degree: 95%
 
 ---
 
@@ -144,6 +144,7 @@ Passez en revue cette liste d’activités pour vous assurer d’effectuer une m
          * [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [Gestion du certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Gestion des noms de domaine personnalisés (DNS)
+         * Pour vous assurer que la coupure DNS n’entraîne pas de problèmes inattendus, il est préférable de créer un sous-domaine de test auquel connecter votre instance de production avant de passer en ligne et d’effectuer un tour de test UAT. Ainsi, si votre domaine est example.com, vous pouvez créer un sous-domaine test.example.com et l’appliquer à la production. Lors du test UAT du domaine, vous souhaiterez rechercher des éléments tels que la redirection des liens, la mise en cache et les configurations Dispatcher.
          * [Introduction aux noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
