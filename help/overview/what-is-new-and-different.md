@@ -2,10 +2,10 @@
 title: Nouveautés et différences – Adobe Experience Manager as a Cloud Service
 description: Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
-source-wordcount: '1904'
-ht-degree: 99%
+source-wordcount: '1903'
+ht-degree: 92%
 
 ---
 
@@ -67,26 +67,27 @@ Cela permet une mise à l’échelle automatique pour divers schémas d’utilis
 
 ## Mises à jour d’AEM {#aem-updates}
 
->[!NOTE]
->Pour plus d’informations, voir [Mises à jour de la version d’AEM](/help/implementing/deploying/aem-version-updates.md).
-
-AEM as a Cloud Service utilise maintenant l’intégration et la distribution continues (CI/CD) pour s’assurer que vos projets bénéficient de la version d’AEM la plus récente. Les instances de production et d’évaluation sont donc mises à jour à la dernière version d’AEM sans interruption de service pour les utilisateurs.
+AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour s’assurer que vos projets utilisent la version AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la dernière version d’AEM sans interruption de service pour les utilisateurs.
 
 >[!NOTE]
-> Si la mise à jour de l’environnement de production échoue, Cloud Manager restaure automatiquement l’environnement d’évaluation. Cette opération est effectuée automatiquement pour s’assurer qu’une fois la mise à jour terminée, les environnements d’évaluation et de production se trouvent sur la même version d’AEM.
+>
+>Si la mise à jour de l’environnement de production échoue, Cloud Manager restaure automatiquement l’environnement d’évaluation. Cela permet de s’assurer automatiquement qu’une fois la mise à jour terminée, les environnements d’évaluation et de production se trouvent sur la même version AEM.
 
-Les mises à jour de la version d’AEM sont de deux types :
+Il existe deux types de mises à jour AEM version :
 
-* **Mises à jour Push d’AEM**
+* **AEM mises à jour de maintenance**
 
    * Elles peuvent être publiées quotidiennement.
-   * Il s’agit principalement de maintenance, notamment les derniers correctifs de bogues et les mises à jour de sécurité.
-
-      Les modifications étant appliquées régulièrement, l’impact est incrémentiel, ce qui réduit l’incidence sur votre service.
+   * Sont principalement à des fins de maintenance, y compris les derniers correctifs de bogues et les mises à jour de sécurité.
+   * ont un impact minimal, car les modifications sont appliquées régulièrement ;
 
 * **Nouvelles mises à jour de fonctionnalités**
 
-   * Elles sont publiées selon un calendrier mensuel prévisible.
+   * Sont publiées selon un calendrier mensuel prévisible.
+
+>[!TIP]
+>
+>Pour plus d’informations, voir [Mises à jour de la version d’AEM](/help/implementing/deploying/aem-version-updates.md).
 
 ## Cloud Manager {#cloud-manager}
 
