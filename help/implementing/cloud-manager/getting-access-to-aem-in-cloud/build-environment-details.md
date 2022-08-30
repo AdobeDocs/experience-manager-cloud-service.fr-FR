@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: c138f0be15550df85a2ec23b6b551ccba07996c8
+source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 95%
+source-wordcount: '985'
+ht-degree: 93%
 
 ---
 
@@ -84,12 +84,12 @@ Les combinaisons fournisseur/version actuellement disponibles sont les suivantes
 
 | Fournisseur | Version |
 |---|---|
-| `oracle` | `1.8` |
-| `oracle` | `1.11` |
+| `oracle` | `8` |
 | `oracle` | `11` |
-| `sun` | `1.8` |
-| `sun` | `1.11` |
+| `sun` | `8` |
 | `sun` | `11` |
+
+Ce tableau fait référence aux numéros de version des produits. Les numéros de build Java ou les chemins d’installation peuvent refléter les anciennes conventions de version Java telles que 1.8 pour Java 8.
 
 >[!NOTE]
 >
