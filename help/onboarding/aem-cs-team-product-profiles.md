@@ -2,10 +2,10 @@
 title: Équipe et profils de produit AEM as a Cloud Service
 description: Découvrez comment AEM l’équipe as a Cloud Service et les profils de produits et accordez et limitez l’accès à vos solutions d’Adobe sous licence.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
+source-git-commit: d54c25791cbb06232ff6e24bb7b8005b366a2144
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 29%
+source-wordcount: '637'
+ht-degree: 30%
 
 ---
 
@@ -47,7 +47,7 @@ Cloud Manager dispose de profils de produit préconfigurés qui peuvent être co
 
 Chacun des profils de produit est associé à des autorisations spécifiques.
 
-* **Propriétaire de l’entreprise** - Dans ce rôle, vous avez l’autorisation d’ajouter un nouveau programme ou de modifier un programme, d’ajouter ou de mettre à jour un environnement, d’ajouter/modifier/supprimer/exécuter des pipelines, de déployer du code dans AEM environnement ou d’exécuter des contrôles qualité du code.
+* **Propriétaire de l’entreprise** - Dans ce rôle, vous avez l’autorisation d’ajouter un nouveau programme ou de modifier un programme, d’ajouter ou de mettre à jour un environnement, de déployer du code dans AEM environnement ou d’exécuter des contrôles qualité du code.
 * **Responsable de déploiement** - Dans ce rôle, vous avez l’autorisation d’ajouter ou de mettre à jour un environnement, d’exécuter n’importe quel pipeline, de déployer du code dans AEM environnement ou d’exécuter des contrôles qualité du code.
 * **Développeur** - Dans ce rôle, vous avez la permission de générer des jetons d’accès personnels pour accéder à git.
 * **Responsable de programme** - Dans ce rôle, vous avez l’autorisation de planifier des pipelines, de remplacer les points de contrôle qualité à 3 niveaux et de fournir une approbation de production.
