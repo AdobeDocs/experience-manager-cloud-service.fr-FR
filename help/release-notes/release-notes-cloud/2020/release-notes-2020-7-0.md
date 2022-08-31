@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.7.0. »
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -63,7 +63,7 @@ Pour plus d’informations, reportez-vous à [Prise en main d’AEM Commerce as 
 
 La version 2.11.0 des [composants principaux AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) est maintenant disponible dans AEM Sites, notamment :
 
-* Introduction d’un nouveau [composant Visionneuse PDF](https://aemcomponents.dev/content/core-components-examples/library/page-authoring/pdf-viewer.html).
+* Introduction d’un nouveau [composant Visionneuse PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * La prise en charge AMP (Accelerated Mobile Pages) des composants principaux est désormais disponible. Elle permet de générer des expériences client plus rapides en rendant la transition de page instantanée lors de l’accès au site à partir d’un résultat de recherche mobile Google, ce qui améliore l’engagement des utilisateurs et l’optimisation du moteur de recherche.
 Pour plus d’informations, voir [Prise en charge AMP des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=fr).

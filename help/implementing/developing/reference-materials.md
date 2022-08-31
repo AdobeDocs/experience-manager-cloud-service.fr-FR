@@ -2,10 +2,10 @@
 title: Documents de référence sur les API
 description: AEM dispose d’API complètes et puissantes que vous pouvez exploiter pour votre projet d’expérience numérique.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: e592dd7a3a717259493f23943933fe3d0e71b7ab
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ AEM repose sur un certain nombre d’API open source supplémentaires.
 | API | Description |
 |---|---|
 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | Structure web qui utilise un référentiel de contenu Java (JCR) pour stocker et gérer du contenu |
-| [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Mise en œuvre d’un référentiel de contenu Java (JCR) hiérarchique évolutif et haute performance à utiliser comme base pour les sites web modernes de classe mondiale |
+| [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Mise en œuvre d’un référentiel de contenu Java (JCR) hiérarchique évolutif et haute performance à utiliser comme base pour les sites web modernes de classe mondiale |
 | [Référentiel de contenu Java](https://www.adobe.io/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) | Spécification de la version 2.0 de JCR |
 | [Apache Felix](https://felix.apache.org) | Mise en œuvre de la structure et de la plateforme de service Open Services Gateway Initiative (OSGi) |
 
@@ -46,7 +46,7 @@ AEM repose sur les quatre principaux ensembles d’API Java suivants, dans l’o
 |---|---|---|
 | 1 | [Adobe Experience Manager as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html) | Abstractions de produits telles que des pages, ressources, workflows, etc. |
 | 2 | [Apache Sling](https://sling.apache.org/apidocs/sling11/) | REST et abstractions basées sur des ressources telles que des ressources, cartes de valeurs et requêtes HTTP. |
-| 3 | [Apache Jackrabbit Oak](http://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Abstractions de données et de contenu telles que des nœuds, propriétés et sessions. |
+| 3 | [Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/oak_api/overview.html) | Abstractions de données et de contenu telles que des nœuds, propriétés et sessions. |
 | 4 | [Apache Felix](https://felix.apache.org/) | Abstractions du conteneur d’application OSGi telles que les services et les composants (OSGi). |
 
 Si une API est fournie par AEM, préférez-la à Sling, JCR et OSGi. Si AEM ne fournit pas d’API, préférez Sling à JCR et OSGi.

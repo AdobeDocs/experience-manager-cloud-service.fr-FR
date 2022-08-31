@@ -2,10 +2,10 @@
 title: 'Enregistrement, connexion et profil utilisateur '
 description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: c49a70b4048acc4e925c69b7ebbedbf8779bbbc0
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -59,7 +59,7 @@ La connexion peut être mise en œuvre selon les deux approches suivantes :
 Les clients peuvent écrire leurs propres composants personnalisés. Pour en savoir plus, envisagez de vous familiariser avec :
 
 * La [structure d’authentification Sling](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)
-* Envisagez aussi de [demander une session d’experts de la communauté AEM](http://bit.ly/ATACEFeb15) à propos de la connexion.
+* Envisagez aussi de [demander une session d’experts de la communauté AEM](https://bit.ly/ATACEFeb15) à propos de la connexion.
 
 ### Intégration à un fournisseur d’identités {#integration-with-an-idp}
 

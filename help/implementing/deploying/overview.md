@@ -3,7 +3,7 @@ title: Déploiement sur AEM as a Cloud Service
 description: 'Déploiement sur AEM as a Cloud Service '
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4fcb2ff39f0634cfcdab5500b03441f6db0b474d
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '3358'
 ht-degree: 97%
@@ -67,7 +67,7 @@ Les modifications d’application dues au modèle de déploiement bleu/vert éta
 
 Pour les clients qui disposent de bases de code, il est essentiel de passer par l’exercice de restructuration du référentiel décrit dans la documentation d’AEM en vue de s’assurer que le contenu qui se trouvait auparavant sous /etc est déplacé vers le bon emplacement.
 
-Certaines restrictions supplémentaires s’appliquent à ces packages de code, les [hooks d’installation](http://jackrabbit.apache.org/filevault/installhooks.html) ne sont par exemple pas pris en charge.
+Certaines restrictions supplémentaires s’appliquent à ces packages de code, les [hooks d’installation](https://jackrabbit.apache.org/filevault/installhooks.html) ne sont par exemple pas pris en charge.
 
 ## Configuration OSGI {#osgi-configuration}
 
@@ -104,7 +104,7 @@ Après le basculement vers la nouvelle version de l’application :
    * Dossiers (ajout, modification, suppression)
    * Modèles modifiables (ajout, modification, suppression)
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
-   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module : Voir la [documentation Jackrabbit filevault](http://jackrabbit.incubator.apache.org/filevault/installhooks.html) sur les hooks d’installation. Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs, aux utilisateurs système et aux membres du groupe administrateurs).
+   * Scripts (les modules peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de module : Voir la [documentation Jackrabbit filevault](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) sur les hooks d’installation. Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs, aux utilisateurs système et aux membres du groupe administrateurs).
 
 Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des modules dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été réalisée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 

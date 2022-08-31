@@ -2,10 +2,10 @@
 title: Implémentation d’un connecteur AEM
 description: Implémentation d’un connecteur AEM
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '968'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -37,7 +37,7 @@ Documentation utile
 
 La [documentation](../overview/introduction.md) d’Experience Manager as a Cloud Service contient de précieuses informations sur le développement dans AEM. Vous trouverez, ci-dessous, quelques rubriques et références techniques que vous trouverez utiles lors de l’implémentation d’un connecteur AEM :
 
-* Adobe Consulting Services (ACS) [AEM Samples](http://adobe-consulting-services.github.io/acs-aem-samples/) : code commenté destiné à aider les développeurs AEM
+* Adobe Consulting Services (ACS) [AEM Samples](https://adobe-consulting-services.github.io/acs-aem-samples/) : code commenté destiné à aider les développeurs AEM
 * Divers liens de documentation dans la section Modèles d’intégration courants de cet article
 
 Ressources de la communauté
@@ -45,9 +45,9 @@ Ressources de la communauté
 
 Outre la documentation statique ci-dessus, Adobe et la communauté AEM proposent des ressources destinées à faciliter la commercialisation d’un connecteur :
 
-* Le [forum AEM](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) de la communauté Adobe est un site actif sur lequel vous pouvez poser des questions et obtenir des réponses de vos pairs.
+* Le [forum AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) de la communauté Adobe est un site actif sur lequel vous pouvez poser des questions et obtenir des réponses de vos pairs.
 * D’autres ressources techniques Adobe sont disponibles pour certains niveaux de partenaire. En savoir plus sur le programme [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
-* Si votre entreprise souhaite obtenir une assistance en matière d’implémentation, contactez l’équipe [Services professionnels](http://www.adobe.com/fr/marketing-cloud/service-support/professional-consulting-training.html) d’Adobe ou utilisez le [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) pour obtenir la liste des partenaires d’Adobe dans le monde entier.
+* Si votre entreprise souhaite obtenir une assistance en matière d’implémentation, contactez l’équipe [Services professionnels](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) d’Adobe ou utilisez le [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) pour obtenir la liste des partenaires d’Adobe dans le monde entier.
 
 Règles de structure du module
 -----------------------

@@ -2,10 +2,10 @@
 title: Extension d’ [!DNL Adobe Experience Manager]  as a Cloud Service à l’aide d’Adobe Developer App Builder.
 description: Extension d’ [!DNL Adobe Experience Manager] as a Cloud Service à l’aide d’Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '589'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ L’App Builder permet aux clients d’étendre facilement les capacités d’A
 * Extensibilité des services principaux : étendez les fonctionnalités de l’application principale en étendant le comportement par défaut grâce à des fonctionnalités personnalisées et à la logique métier.
 * Extensibilité de l’expérience utilisateur : étendez l’expérience principale pour prendre en charge les besoins de l’entreprise ou créer des propriétés numériques et des applications storefronts et back-office spécifiques aux clients.
 
-Depuis l’été 2020, l’App Builder (précédemment « Project Firefly ») est disponible pour les clients et les partenaires d’entreprise via notre Aperçu du développeur. La disponibilité générale de l’App Builder est prévue pour décembre 2021. Nous invitons les développeurs à tester l’App Builder via notre [Programme d’évaluation](http://adobe.ly/appbuilder-trial).
+Depuis l’été 2020, l’App Builder (précédemment « Project Firefly ») est disponible pour les clients et les partenaires d’entreprise via notre Aperçu du développeur. La disponibilité générale de l’App Builder est prévue pour décembre 2021. Nous invitons les développeurs à tester l’App Builder via notre [Programme d’évaluation](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >

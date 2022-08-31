@@ -2,7 +2,7 @@
 title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 5fa6809a9b4cdfa230ea3ebb3b0c9964807e0230
+source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
 workflow-type: tm+mt
 source-wordcount: '2022'
 ht-degree: 100%
@@ -229,7 +229,7 @@ Reportez-vous à Définitions de rôle pour en savoir plus sur les rôles des ut
    ![ACL3](/help/security/assets/ims22.png)
 
 
-1. Une fois que vous avez été ajouté au profil approprié, vous devez pouvoir accéder aux clients respectifs dans Cloud Manager via [Adobe Experience Cloud](http://my.cloudmanager.adobe.com) en utilisant l’angle supérieur droit de l’interface utilisateur.
+1. Une fois que vous avez été ajouté au profil approprié, vous devez pouvoir accéder aux clients respectifs dans Cloud Manager via [Adobe Experience Cloud](https://my.cloudmanager.adobe.com) en utilisant l’angle supérieur droit de l’interface utilisateur.
 
 
 ### Accès à une instance dans AEM as a Cloud Service {#accessing-instance-cloud-service}
