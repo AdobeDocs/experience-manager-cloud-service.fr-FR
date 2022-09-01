@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 100%
+source-wordcount: '1099'
+ht-degree: 99%
 
 ---
 
@@ -141,3 +141,5 @@ Pour des configurations plus complexes à l’aide de plusieurs structures de si
 - [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
 - [Magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuration multi-magasin Commerce](configuring/multi-store-setup.md)
+- [Configuration de plusieurs systèmes de commerce](configuring/multiple-commerce-systems-setup.md)
+

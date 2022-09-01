@@ -8,9 +8,9 @@ user-guide-description: Ressources d’aide autonome et liens vers la documentat
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 0b453290cd0e7dc5ec319e8ddbfa085f109717df
+source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
 workflow-type: tm+mt
-source-wordcount: '3709'
+source-wordcount: '3713'
 ht-degree: 94%
 
 ---
@@ -619,6 +619,7 @@ ht-degree: 94%
          + [Recommandations de produits](/help/commerce-cloud/authoring/product-recommendations.md)
       + Administration {#administering}
          + [Configuration multi-magasin](/help/commerce-cloud/configuring/multi-store-setup.md)
+         + [Configuration de plusieurs systèmes de commerce](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
          + [Configuration des URL pour l’optimisation du moteur de recherche](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [Options de mise en cache](/help/commerce-cloud/configuring/caching.md)
          + [En-têtes HTTP personnalisés](/help/commerce-cloud/configuring/custom-http-headers.md)
