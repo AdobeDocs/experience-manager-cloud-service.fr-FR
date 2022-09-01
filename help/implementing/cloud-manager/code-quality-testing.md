@@ -2,10 +2,10 @@
 title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: 8eada48aaef62aa942b98981a3510a2c64ea582b
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
-source-wordcount: '1177'
-ht-degree: 100%
+source-wordcount: '1176'
+ht-degree: 99%
 
 ---
 
@@ -65,7 +65,7 @@ Le tableau suivant résume les notes et les seuils d’échec pour chacune des c
 
 >[!NOTE]
 >
->Reportez-vous aux [Définitions des mesures de SonarQube](https://docs.sonarqube.org/display/SONAR/Metric+Definitions) pour des définitions plus détaillées.
+>Voir [Définitions des mesures de SonarQube](https://docs.sonarqube.org/latest/user-guide/metric-definitions/) pour des définitions plus détaillées.
 
 >[!NOTE]
 >

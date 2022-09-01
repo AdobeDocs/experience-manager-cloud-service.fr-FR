@@ -2,9 +2,9 @@
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '14050'
+source-wordcount: '14054'
 ht-degree: 99%
 
 ---
@@ -566,7 +566,7 @@ Veillez à ce que le texte soit suffisamment contrasté par rapport à son arri�
 >
 >* [Calculatrice Px vers Em – Omni](https://www.omnicalculator.com/conversion/px-to-em)
 >* [Conversion des tailles de polices : pixel-point-em-rem-percent](https://websemantics.uk/tools/font-size-conversion-pixel-point-em-rem-percent/)
->* [PMtoEM.com : conversion PX/EM simplifiée](https://pxtoem.com)
+>* [PMtoEM.com : conversion PX/EM simplifiée](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
 Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.paciellogroup.com/resources/contrast-analyser.html) ou l’[outil de vérification du contraste des couleurs de webAIM](https://www.webaim.org/resources/contrastchecker/), afin de vérifier les paires de couleurs et de signaler les éventuels problèmes de contraste.

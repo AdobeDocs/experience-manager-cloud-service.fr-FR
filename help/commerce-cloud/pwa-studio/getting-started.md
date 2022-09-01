@@ -5,9 +5,9 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '766'
 ht-degree: 100%
 
 ---
@@ -62,10 +62,10 @@ Pour connecter PWA Studio au point d’entrée GraphQL d’AEM, vous pouvez util
 
    Vous trouverez plus d’informations sur la personnalisation du composant Navigation dans [addBlogToNavigation.js](https://github.com/adobe/aem-pwa-studio-extensions/blob/master/aem-cfm-blog-extension/extension/src/addBlogToNavigation.js) et dans la documentation [Framework d’extensibilité](https://developer.adobe.com/commerce/pwa-studio/guides/general-concepts/extensibility/) de PWA Studio.
 
-1. Le client Apollo s’attend à ce que le point d’entrée GraphQL d’AEM soit à <https://pwa-studio/endpoint.js>. Pour mapper le point d’entrée à cet emplacement, vous devez personnaliser la configuration UPWARD de votre application PWA Studio :
+1. Le client Apollo s’attend à ce que le point d’entrée GraphQL d’AEM soit à `<https://pwa-studio/endpoint.js>`. Pour mapper le point d’entrée à cet emplacement, vous devez personnaliser la configuration UPWARD de votre application PWA Studio :
 a. Ajoutez la variable AEM_CFM_GRAPHQL à pwa-root/.env et adaptez-la pour qu’elle pointe vers votre point d’entrée GraphQL de fragments de contenu AEM.
 
-   Exemple : AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
+   Exemple : `AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>`
 
    b. Ajoutez un résolveur de proxy à votre configuration UPWARD. Voici un exemple de configuration UPWARD :
 
@@ -96,13 +96,13 @@ Consultez la documentation relatives aux fragments de contenu AEM pour configure
 
    Définissez la propriété allowedorigin sur le nom d’hôte complet de votre application PWA.
 
-   Exemple : <https://pwa-studio-test-vflyn.local.pwadev:9366>
+   Exemple : `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Filtre de référent Apache Sling (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
    Définissez la propriété allow.hosts sur le nom d’hôte de votre application PWA.
 
-   Exemple : pwa-studio-test-vflyn.local.pwadev
+   Exemple : `pwa-studio-test-vflyn.local.pwadev`
 
 Vous trouverez des exemples complets des deux configurations ici : <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

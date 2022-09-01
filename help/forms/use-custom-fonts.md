@@ -2,10 +2,10 @@
 title: Utiliser des polices personnalisées
 description: Utiliser des polices personnalisées
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ En plus des opérations mentionnées précédemment, vous pouvez utiliser les po
 
 ## Comportement des documents PDF
 
-Vous pouvez [incorporer une police](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/PDFOutputOptions) à un document PDF. Lorsqu’une police est incorporée, le document PDF s’affiche (semble) identique sur toutes les plateformes. Il utilise des polices intégrées pour garantir une apparence cohérente. Lorsqu’une police n’est pas intégrée, son rendu dépend des paramètres de rendu des clients de visionneuse PDF tels qu’Acrobat ou Acrobat Reader. Si la police est disponible sur l’ordinateur client, le PDF utilise la police spécifiée, sinon le PDF est rendu avec une police de secours par défaut.
+Vous pouvez [incorporer une police](https://adobedocs.github.io/experience-manager-forms-cloud-service-developer-reference/references/output-sync/#tag/PrintedOutputOptions) à un document PDF. Lorsqu’une police est incorporée, le document PDF s’affiche (semble) identique sur toutes les plateformes. Il utilise des polices intégrées pour garantir une apparence cohérente. Lorsqu’une police n’est pas intégrée, son rendu dépend des paramètres de rendu des clients de visionneuse PDF tels qu’Acrobat ou Acrobat Reader. Si la police est disponible sur l’ordinateur client, le PDF utilise la police spécifiée, sinon le PDF est rendu avec une police de secours par défaut.
 
 ## Ajouter des polices personnalisées à votre environnement Forms as a Cloud Service {#custom-fonts-cloud-service}
 
