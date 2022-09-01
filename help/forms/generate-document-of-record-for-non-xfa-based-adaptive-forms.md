@@ -2,10 +2,10 @@
 title: Génération d’un document d’enregistrement pour les formulaires adaptatifs
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: da30318fb965535ae12d09a8ef397431714f9109
+source-git-commit: e9f235f4e4a1d314370a423ee8a2ef997346a794
 workflow-type: tm+mt
-source-wordcount: '3658'
-ht-degree: 100%
+source-wordcount: '3677'
+ht-degree: 99%
 
 ---
 
@@ -400,7 +400,7 @@ Les paramètres du composant Document d’enregistrement sont disponible sous se
 **Paramètres des niveaux de formulaires**
 
 * **Inclure les champs non liés dans le document d’enregistrement** : la définition de la propriété comprend les champs non liés du schéma basé sur le formulaire adaptatif du document d’enregistrement. Par défaut, le paramètre est true.
-* **Exclure des champs du document d’enregistrement (DE) s’il est masqué** : la définition de cette propriété remplace le comportement de la propriété de niveau de champ Exclure du document d’enregistrement lorsque le paramètre est différent de true. Si des champs sont masqués lors de l’envoi du formulaire, ils sont exclus du document d’enregistrement si la propriété est définie sur true et si la propriété « Exclure du document d’enregistrement » n’est pas définie.
+* **Exclure des champs du document d’enregistrement (DE) s’il est masqué** : la définition de cette propriété remplace le comportement de la propriété de niveau de champ Exclure du document d’enregistrement lorsque le paramètre est différent de true. Si des champs sont masqués lors de l’envoi du formulaire, ils sont exclus du document d’enregistrement si la propriété est définie sur true et si la propriété « Exclure du document d’enregistrement » n’est pas définie. Paramètre [Revalider sur le serveur](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) sur true identifie les champs masqués à exclure du document d’enregistrement côté serveur.
 
 ## Utiliser un fichier XCI personnalisé
 

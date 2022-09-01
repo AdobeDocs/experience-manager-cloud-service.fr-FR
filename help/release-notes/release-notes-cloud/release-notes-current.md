@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 1c27b66bcd0536ec10a878b39b9ec76073634c06
+source-git-commit: bcd62d1d1a66e17585e35c11c12cd72067e0e46e
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 19%
+source-wordcount: '626'
+ht-degree: 23%
 
 ---
 
@@ -25,101 +25,58 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication de la version actuelle de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] (2022.7.0) est le 8 août 2022.
-
-La prochaine version (2022.8.0) est prévue pour le 1er septembre 2022.
+La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2022.8.0) est le 1er septembre 2022.
+La prochaine version (2022.9.0) est prévue pour le 29 septembre 2022.
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo Aperçu de la version de juillet 2022 pour un résumé des fonctionnalités ajoutées dans la version 2022.7.0 :
+Regardez la vidéo Aperçu de la version d’août 2022 pour un résumé des fonctionnalités ajoutées dans la version 2022.8.0 :
 
->[!VIDEO](https://video.tv.adobe.com/v/345409/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/346608/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
-* Le [Console de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) prend désormais en charge [raccourcis clavier](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+* Le composant Email permet de créer du contenu dans AEM qui est ensuite diffusé par Campaign Classic sous la forme d’emails. Le composant principal Email :
+   * est basé sur la variable [Composant WCM principal](https://github.com/adobe/aem-core-wcm-components) qui prend en charge les modèles modifiables et le système de style.
+   * fournit 10 composants prêts à l’emploi optimisés pour la production (page, conteneur, titre, texte, image, bouton, teaser, fragment d’expérience, fragment de contenu, segmentation).
+   * permet une personnalisation et une segmentation avancées grâce au [insertion de variables Campaign](https://github.com/adobe/aem-core-email-components/wiki/RTE-Personalization) sur la plupart des champs de boîte de dialogue et à la variable [Composant Segmentation](https://github.com/adobe/aem-core-email-components/wiki/Segmentation-component-(Technical-Documentation)).
+   * fournit une sortie de HTML optimale pour les emails grâce au [Styles CSS inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), la variable [Attribut HTML inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), et la variable [assainisseur de HTMLs](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
+   * permet de créer des emails n’importe où.
 
-* AEM en tant que Cloud Service [diffusion d’images optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) permet d’améliorer considérablement la vitesse de page en fournissant des formats tels que WebP. Ce nouveau service offre également des options de redimensionnement et de transformation d’image plus flexibles. Toutes les versions de [Composant d’image principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr) vous permettent d’exploiter ce service et de diffuser des images sous forme WebP en cliquant sur une option de la stratégie du composant image.
+### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Sites] {#prerelease-features-sites}
 
-* AEM activités de personnalisation peuvent désormais exploiter des fragments d’expérience au lieu de nos offres héritées. Cette fonctionnalité :
-   * active un chemin de migration dans lequel AEM contenu promouvrait des offres de fragments d’expérience plutôt que des offres de bibliothèque héritées afin de fournir un contenu stylisé de manière appropriée et conforme à la personnalisation à grande échelle.
-   * empêche les auteurs de contenu de diffuser accidentellement du contenu non stylisé sur leur site.
-   * permet de convertir le mode de ciblage de n’importe quel composant en fragment d’expérience (types JSON et HTML) qui utilise des modèles modifiables.
+* Le [Console de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) permet aux utilisateurs d’afficher le nombre total de copies de langue associées à un fragment de contenu. Un accès en 1 clic a été fourni pour afficher toutes les copies de langue. Les utilisateurs peuvent également filtrer l’affichage du tableau en fonction des paramètres régionaux qui les intéressent.
 
->[!NOTE]
->
->Les activités de personnalisation existantes qui utilisent déjà des offres héritées peuvent continuer à le faire, mais de nouvelles activités de personnalisation doivent être créées en tant que fragments d’expérience, car c’est l’approche recommandée à l’avenir.
+![Langues de fragments de contenu](/help/release-notes/assets/cfconsole-languages.png)
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
-### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#prerelease-features-assets}
+### Nouvelles fonctionnalités de [!DNL Assets] {#features-assets}
 
-Vous pouvez maintenant configurer Adobe Experience Manager Assets sur [restreindre le type de ressources que les utilisateurs peuvent charger en fonction du type MIME ;](/help/assets/configure-asset-upload-restrictions.md).
+* Vous pouvez maintenant configurer Adobe Experience Manager Assets sur [restreindre le type de ressources que les utilisateurs peuvent charger en fonction du type MIME ;](/help/assets/configure-asset-upload-restrictions.md).
 
-![Restrictions de chargement des ressources](/help/assets/assets/asset-upload-restrictions.png)
+   ![Restrictions de chargement des ressources](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
-### Nouvelles fonctionnalités de [!DNL Forms] {#forms-features}
-
-* **[Prise en charge des entrées au clavier pour les signatures tactiles](/help/forms/signing-forms-using-scribble.md)**: Les Forms adaptatives sont de plus en plus utilisées sur les périphériques tactiles, et une exigence courante est de prendre en charge les signatures. La signature de documents sur les périphériques tactiles est devenue une méthode acceptée de signature de formulaires. Adaptive Forms prend en charge nativement les signatures tactiles et Adobe Sign pour de tels cas d’utilisation. Désormais, avec d’autres options déjà prises en charge, vous pouvez également utiliser le clavier pour apposer des signatures tactiles dans un formulaire adaptatif. Elle contribue également à améliorer la conformité en matière d’accessibilité.
-
-![Prise en charge de la saisie au clavier pour les signatures tactiles sur iPhone](/help/release-notes/assets/scribble-keyboard-mobile.png)
-
-* **Utilisation de l’assistant de Forms adaptatif en langue locale**: Vous pouvez utiliser l&#39;assistant dans la langue de votre choix. Il prend désormais en charge toutes les langues prises en charge par Adobe Experience Manager.
-
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-<!-- 
+* [Assistant de Forms adaptatif](/help/forms/creating-adaptive-form.md): AEM Forms fournit un assistant convivial destiné à l’entreprise afin de créer rapidement un Forms adaptatif. L’assistant dispose d’une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif. Cette version apporte les améliorations suivantes à l’assistant :
 
-* **[Launch Adaptive Form creation wizard from embed form component](/help/forms/using/embed-adaptive-form-aem-sites.md)**: You can now launch Adaptive Form creation wizard from embed form component. It helps improve content and forms authoring workflows for Sites and Forms practitioners trying to add enrollment experiences to a web page. 
+   * Sélectionnez ou désélectionnez des champs : L’assistant vous permet de créer un formulaire adaptatif basé sur des schémas de modèle de données de formulaire et JSON. Vous pouvez désormais sélectionner un sous-ensemble de champs dans un schéma à inclure dans un formulaire adaptatif. Les champs sélectionnés sont convertis en composants de capture de données de formulaire adaptatif correspondants pour créer rapidement les formulaires adaptatifs souhaités.
 
-![Keyboard input support for Scribble signatures on iphone](/help/release-notes/assets/froms-container.png) 
+   * Utiliser des modèles statiques : Les clients qui ont déjà investi dans des modèles statiques hérités peuvent continuer leur parcours d’adoption du cloud en utilisant des modèles statiques dans l’assistant pour créer des formulaires adaptatifs. Les clients disposent ainsi d’un temps supplémentaire pour migrer les anciens modèles statiques vers des modèles modifiables modernes.
 
--->
-
-* **[Invoke DDX - Une étape de processus AEM](/help/forms/aem-forms-workflow-step-reference.md#invokeddx)**: Document Description XML (DDX) est un langage de marquage déclaratif dont les éléments représentent des blocs de construction de documents. Ces blocs de création comprennent des documents PDF et XDP, ainsi que d’autres éléments tels que des commentaires, des signets et du texte stylisé. Les documents DDX sont des modèles pour les documents et décrivent les caractéristiques souhaitées des documents source qui doivent apparaître dans les documents créés. Un DDX unique peut être utilisé avec un éventail de documents source. Vous pouvez utiliser l’étape Appeler un workflow d’AEM pour effectuer diverses opérations, comme assembler des documents, créer et modifier Acrobat et XFA Forms, ainsi que d’autres opérations décrites dans la section [Référence DDX](https://helpx.adobe.com/content/dam/help/en/experience-manager/forms-cloud-service/ddxRef.pdf) documentation.
-
-* **[Convertir en PDF/A - Une étape de processus AEM](/help/forms/aem-forms-workflow-step-reference.md##convert-pdfa)**: PDF/A est un format d’archivage pour la conservation à long terme du contenu du document, toutes les polices sont incorporées et le fichier est décompressé. Désormais, vous pouvez utiliser l’étape Convertir en PDF/A d’un processus AEM pour convertir vos documents ou fichiers dans n’importe quel format au format PDF/A.
-
+* [Suppression des champs masqués d’un document d’enregistrement (DE) lors du traitement côté serveur](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Vous pouvez générer le document du PDF d’enregistrement pour les utilisateurs finaux contenant uniquement les champs qui leur ont été visibles lors de l’expérience de capture de données. Lors de l’envoi du formulaire, le serveur valide les champs qui ont été masqués à l’utilisateur final en fonction des données envoyées et exclut du document d’enregistrement par souci de cohérence.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
 ### Nouveautés {#what-is-new-cif}
 
-* L’enrichissement du catalogue de produits prend désormais en charge AEM pages. Cela permet aux auteurs de gérer l’association page - produit.
-
-* Diverses améliorations du composant principal CIF
-
-### Correctifs {#bug-fixes-cif}
-
-* Ajout d’un jeton de connexion à la récupération de prix côté client
-
-* Composant de page incorrect dans le lecteur de données
-
-## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
-
-### Nouveautés {#what-is-new-foundation}
-
-* Le [Explorateur de référentiels](/help/implementing/developing/tools/repository-browser.md) dispose désormais d’un champ d’entrée de chemin d’accès, ce qui permet de passer directement à un dossier spécifique dans la hiérarchie du référentiel.
-* Sling Content Distribution (SCD) prend désormais en charge une action d’&quot;invalidation&quot; explicite afin d’invalider le contenu sans que ce contenu soit publié. Reportez-vous à la section [Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) pour plus d’informations.
-* mod_macro est désormais disponible dans AEM as a Cloud Service. Voir [ce tableau](/help/implementing/dispatcher/disp-overview.md) pour obtenir la liste des modules Apache pris en charge.
-
-### AEM Améliorations apportées aux outils du Dispatcher SDK as a Cloud Service {#dispatcher-tools-enhancements}
-
-* Apache peut être démarré avec `docker_run_hot_reload.sh` qui chargera et validera automatiquement toutes les modifications ultérieures apportées à la configuration apache et dispatcher, améliorant ainsi la vitesse du développeur. Prise en charge uniquement pour le mode flexible des outils Dispatcher. Voir aussi [Débogage de la configuration Apache et Dispatcher](/help/implementing/dispatcher/validation-debug.md#automatic-reloading) pour plus d’informations sur le rechargement et la validation automatiques.
-* La configuration apache/dispatcher locale suit plus attentivement les modifications dans les environnements cloud, augmentant la parité entre les deux environnements.
-
-### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Experience Manager] {#prerelease-features-foundation}
-
-* AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
-
-## Connecteurs Adobe Learning Manager {#learn-manage}
-
-* Le nouveau gestionnaire d’apprentissage Adobe dispose de connecteurs vers Adobe Experience Manager Sites, Marketo Engage et Adobe Commerce. Pour en savoir plus, voir : [Guide de l’utilisateur d’Adobe Learning Manager](https://helpx.adobe.com/learning-manager/user-guide.html).
-
+* Association des pages d’AEM aux produits et aux catégories via AEM propriétés de page plus aperçu dans le cockpit du produit
+   ![association de page du cockpit du produit](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 
