@@ -2,10 +2,10 @@
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
 workflow-type: tm+mt
-source-wordcount: '14054'
-ht-degree: 99%
+source-wordcount: '14053'
+ht-degree: 97%
 
 ---
 
@@ -28,11 +28,11 @@ En outre, voir :
 * [Accessibilité dans Assets](/help/assets/accessibility.md)
 * [Configuration de l’éditeur de texte enrichi pour produire du contenu accessible](/help/implementing/developing/extending/rte-accessible-content.md)
 
-Les règles sont classées selon trois niveaux de conformité : niveau A (le plus bas), niveau AA et niveau AAA (le plus élevé). Pour résumer, les niveaux sont définis comme suit :
+Les consignes sont classées selon trois niveaux de conformité : Niveau A (le plus bas), niveau AA et niveau AAA (le plus élevé). Pour résumer, les niveaux sont définis comme suit :
 
 * **Niveau A :** votre site atteint un niveau minimum d’accessibilité. Pour atteindre ce niveau, tous les critères de réussite de niveau A sont satisfaits.
 * **Niveau AA :** il s’agit d’un niveau d’accessibilité idéal à rechercher, dans lequel votre site atteint un niveau d’accessibilité fondamental, de sorte qu’il soit accessible à la plupart des personnes dans la plupart des situations utilisant la plupart des technologies. Pour atteindre ce niveau, tous les critères de réussite de niveau A et de niveau AA sont satisfaits.
-* **Niveau AAA :** votre site atteint un très haut niveau d’accessibilité. Pour atteindre ce niveau, tous les critères de réussite des niveaux A, AA et AAA sont satisfaits.
+* **Niveau AAA :** Votre site atteint un haut niveau d’accessibilité. Pour atteindre ce niveau, tous les critères de réussite des niveaux A, AA et AAA sont satisfaits.
 
 Lors de la création de votre site, vous devez déterminer à quel niveau général il doit se conformer.
 
@@ -40,7 +40,7 @@ La section suivante présente les [différents aspects des règles WCAG 2.1](ht
 
 >[!NOTE]
 >
->Dans ce document, nous utilisons :
+>Dans ce document, nous utilisons les éléments suivants :
 >
 >* les [noms courts des règles WCAG 2.1](https://www.w3.org/TR/WCAG/#wcag-2-layers-of-guidance) ;
 >* la [numérotation utilisée dans les règles WCAG 2.1](https://www.w3.org/TR/WCAG/#numbering-in-wcag-2-1) afin de simplifier les références croisées avec le site web WCAG.
@@ -52,7 +52,7 @@ La section suivante présente les [différents aspects des règles WCAG 2.1](ht
 
 ### Équivalents textuels (1.1) {#text-alternatives}
 
-[Règle 1.1 – Les équivalents textuels : proposer des équivalents textuels à tout contenu non textuel qui pourra alors être présenté sous d’autres formes selon les besoins de l’utilisateur : grands caractères, braille, synthèse vocale, symboles ou langage simplifié.](https://www.w3.org/TR/WCAG/#text-alternatives)
+[Règle 1.1 - Les équivalents textuels : proposer des équivalents textuels à tout contenu non textuel, de sorte qu’il puisse être transformé en d’autres formulaires dont les utilisateurs ont besoin, tels que grands caractères, braille, synthèse vocale, symboles ou langage plus simple ;](https://www.w3.org/TR/WCAG/#text-alternatives)
 
 ### Contenu non textuel (1.1.1) {#non-text-content}
 
@@ -62,7 +62,7 @@ La section suivante présente les [différents aspects des règles WCAG 2.1](ht
 
 #### Objectif – Contenu non textuel (1.1.1) {#purpose-non-text-content}
 
-Le contenu d’une page web peut être proposé dans différents formats non textuels (photos, vidéos, animations, tableaux et graphiques). Les personnes aveugles ou malvoyantes ne sont pas en mesure de voir le contenu non textuel, mais elles peuvent accéder au contenu textuel en le faisant lire par un lecteur d’écran ou sous forme tactile dans un appareil d’affichage en braille. Ainsi, en proposant des équivalents textuels pour le contenu graphique, les personnes qui ne voient pas le contenu graphique peuvent accéder à une version équivalente des informations véhiculées par le contenu.
+Les informations d’une page web peuvent être fournies dans différents formats non textuels, tels que des images, des vidéos, des animations, des graphiques et des graphiques. Les personnes aveugles ou ayant de graves déficiences visuelles ne peuvent pas voir le contenu non textuel, mais elles peuvent accéder au contenu textuel en le faisant lire par un lecteur d’écran ou en le présentant sous forme tactile par un dispositif d’affichage en braille. Ainsi, en proposant des équivalents textuels au contenu au format graphique, les personnes qui ne peuvent pas voir le contenu graphique peuvent accéder à une version équivalente de l’information fournie par le contenu.
 
 Autre avantage utile : les équivalents textuels permettent aux moteurs de recherche d’indexer le contenu non textuel.
 
@@ -74,17 +74,17 @@ Pour les images statiques, la règle de base consiste à fournir un équivalent 
 >
 >Certains composants principaux prêts à l’emploi, tels que **[Carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=fr)**, ne fournissent pas de champ **Texte de remplacement** pour ajouter des descriptions de texte de remplacement à des images individuelles. Il existe cependant le champ **Étiquette** (onglet **[Accessibilité](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=fr#accessibility-tab)**) pour l’ensemble du composant.
 >
->Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt` afin que les auteurs puissent l’ajouter au contenu (voir Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires).
+>Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement doit configurer ces composants pour prendre en charge `alt` afin que les auteurs puissent l’ajouter au contenu (voir Ajout de la prise en charge d’éléments et d’attributs de HTML supplémentaires).
 >
 >Certains composants principaux prêts à l’emploi, tels que **[Carrousel](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html)**, ne fournissent pas de champ **Texte de remplacement** pour ajouter des descriptions de texte de remplacement à des images individuelles. Il existe cependant le champ **Étiquette** (onglet **[Accessibilité](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) pour l’ensemble du composant.
 >
->Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement devra configurer ces composants pour prendre en charge l’attribut `alt` afin que les auteurs puissent l’ajouter au contenu (voir [Ajout de la prise en charge d’éléments et d’attributs HTML supplémentaires](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
+>Lors de l’implémentation de ces versions pour votre instance AEM, votre équipe de développement doit configurer ces composants pour prendre en charge `alt` afin que les auteurs puissent l’ajouter au contenu (voir [Ajout de la prise en charge d’éléments et d’attributs de HTML supplémentaires](/help/implementing/developing/extending/rte-accessible-content.md#adding-support-for-additional-html-elements-and-attributes)).
 
 Dans AEM, le champ **Texte de remplacement** doit être renseigné par défaut. Si votre image est purement décorative et que le texte secondaire est superflu, l’option **L’image est décorative** peut être sélectionnée.
 
 #### Création d’un texte secondaire adapté {#creating-good-text-alternatives}
 
-Il existe diverses formes de contenu non textuel. Par conséquent, la valeur du texte secondaire dépend du rôle du graphique dans la page web. Voici quelques-unes des règles de base à respecter :
+Il existe différentes formes de contenu non textuel. Par conséquent, la valeur de l’alternative textuelle dépend du rôle du graphique dans la page web. Voici quelques règles générales que vous trouverez utiles :
 
 * Les textes secondaires doivent être succincts, tout en communiquant clairement l’information essentielle du contenu non textuel.
 * Il est préférable d’éviter les descriptions trop longues (plus de 100 caractères). Si un texte secondaire doit être plus détaillé :
@@ -260,7 +260,7 @@ Suivez les instructions de la section [Sous-titres (pré-enregistrés)](#caption
 
 Ce document ne vise pas à fournir des instructions détaillées à ce sujet, mais vous trouverez des renseignements utiles en suivant les liens ci-après :
 
-* [WebAIM : Real Time Captioning (sous-titrage en temps réel ; en anglais)](https://www.webaim.org/techniques/captions/realtime.php)
+* [WebAIM : Real Time Captioning (sous-titrage en temps réel ; en anglais)](https://webaim.org/techniques/captions/realtime.php)
 
 * [Projet AccessComputing (University of Washington) : est-il possible de générer des sous-titres automatiquement à l’aide de la reconnaissance vocale ?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -569,7 +569,7 @@ Veillez à ce que le texte soit suffisamment contrasté par rapport à son arri�
 >* [PMtoEM.com : conversion PX/EM simplifiée](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
 
 
-Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.paciellogroup.com/resources/contrast-analyser.html) ou l’[outil de vérification du contraste des couleurs de webAIM](https://www.webaim.org/resources/contrastchecker/), afin de vérifier les paires de couleurs et de signaler les éventuels problèmes de contraste.
+Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.tpgi.com/resources/contrast-analyser.html) ou l’[outil de vérification du contraste des couleurs de webAIM](https://webaim.org/resources/contrastchecker/), afin de vérifier les paires de couleurs et de signaler les éventuels problèmes de contraste.
 
 Par ailleurs, si l’aspect de votre page n’est pas un souci majeur, vous avez la possibilité de ne spécifier aucune couleur de texte de premier plan ou d’arrière-plan. Dans ce cas, il n’est pas nécessaire de vérifier le contraste, puisque le navigateur de l’utilisateur déterminera les couleurs du texte et de l’arrière-plan.
 
