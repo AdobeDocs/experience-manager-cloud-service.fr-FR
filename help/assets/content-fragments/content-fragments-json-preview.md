@@ -1,13 +1,13 @@
 ---
-title: Aperçu – Représentation JSON
+title: Aperçu - Représentation JSON (Ressources - Fragments de contenu)
 description: Découvrez comment prévisualiser facilement la représentation JSON de vos fragments de contenu lors de la mise en œuvre de votre solution AEM découplée.
 feature: Content Fragments
 role: User
 exl-id: e5f3f3ee-c191-4b7b-8a29-67524bb68a8e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

@@ -1,13 +1,13 @@
 ---
-title: Gestion des fragments de contenu
+title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM à la base de votre contenu découplé.
 feature: Content Fragments
 role: User
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: bd589f689174f4da20e0f5e73a8786a3dee0f352
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '1778'
-ht-degree: 98%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

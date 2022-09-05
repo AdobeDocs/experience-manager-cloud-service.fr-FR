@@ -1,13 +1,13 @@
 ---
-title: Fragments de contenu – Explorateur de configurations
+title: Fragments de contenu - Explorateur de configuration (Ressources - Fragments de contenu)
 description: Découvrez comment activer certaines fonctionnalités de fragments de contenu dans l’explorateur de configurations afin d’exploiter les puissantes fonctionnalités de diffusion en mode découplé d’AEM.
 feature: Content Fragments
 role: User
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 78%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

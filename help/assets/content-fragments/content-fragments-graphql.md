@@ -1,14 +1,14 @@
 ---
-title: Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL
+title: Diffusion de contenu découplée à l’aide de fragments de contenu avec GraphQL (Ressources - Fragments de contenu)
 description: Découvrez les concepts de base de la réalisation d’un CMS AEM découplé à l’aide de fragments de contenu avec GraphQL pour la diffusion de contenu découplé.
 feature: Content Fragments, GraphQL API
 topic: Headless
 role: User
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: e776368891457d3d8cb91b1bb31c1563131f7557
+source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 91%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
