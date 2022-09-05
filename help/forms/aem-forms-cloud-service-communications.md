@@ -2,10 +2,10 @@
 title: AEM Forms as a Cloud Service - Communications
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: 9fa9959e-b4f2-43ac-9015-07f57485699f
-source-git-commit: a3c817dedbf20b21e609ad0e5bfd0d3c4fa9a431
+source-git-commit: 07b9118b8cfc27bc9e2bfa134fbb57c7ae2728ad
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 100%
+source-wordcount: '731'
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,7 @@ Une entreprise possède généralement différents modèles. Par exemple, un mod
 
 ### Appel d’une API
 
-La [documentation de référence sur les API](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/api/sync/#tag/Communications-Services) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence sur les API fournit également un fichier de définition de l’API au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
+La [documentation de référence sur les API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/) fournit des informations détaillées sur tous les paramètres, les méthodes d’authentification et les différents services fournis par les API. La documentation de référence sur les API fournit également un fichier de définition de l’API au format .yaml. Vous pouvez télécharger le fichier .yaml et le charger dans Postman pour vérifier les fonctionnalités des API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/335771)
 
