@@ -2,10 +2,10 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
 workflow-type: tm+mt
-source-wordcount: '2974'
-ht-degree: 100%
+source-wordcount: '2992'
+ht-degree: 97%
 
 ---
 
@@ -466,7 +466,7 @@ Une fois la page verrouillée, les informations d’affichage de la console sont
 
 >[!CAUTION]
 >
->Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Toutefois, une page verrouillée de cette manière peut uniquement être déverrouillée par l’utilisateur dont l’identité a été empruntée ou par un administrateur.
+>Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière ne peut être déverrouillée que par l’utilisateur qui a été emprunté à l’identité ou par un utilisateur disposant de droits d’administrateur (un membre du profil IMS Administrateur AEM).
 >
 >Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur qui les a verrouillées.
 <!--
@@ -483,7 +483,7 @@ Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme
 
 >[!CAUTION]
 >
->Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Toutefois, une page verrouillée de cette manière peut uniquement être déverrouillée par l’utilisateur dont l’identité a été empruntée ou par un administrateur.
+>Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière ne peut être déverrouillée que par l’utilisateur qui a été emprunté à l’identité ou par un utilisateur disposant de droits d’administrateur (un membre du profil IMS Administrateur AEM).
 >
 >Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur qui les a verrouillées.
 <!--
