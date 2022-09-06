@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Publication et annulation de la publication de pages à l’aide d’AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 66bc262b35f69b7877e4a01df9ab26395afd604d
+source-git-commit: 5a804895013e19592f918341bbc7921261b26945
 workflow-type: tm+mt
-source-wordcount: '1791'
-ht-degree: 100%
+source-wordcount: '1811'
+ht-degree: 97%
 
 ---
 
@@ -140,7 +140,6 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
       >[!NOTE]
       >
       >Pour annuler une publication/annulation de publication ultérieure, rendez-vous dans la [console Processus](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) pour mettre un terme au processus correspondant.
-
    ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Cliquez sur **Suivant** pour continuer.
@@ -216,9 +215,9 @@ Pour modifier ou annuler la publication d’une page à l’aide de l’option G
 
 ## Annulation de la publication des pages {#unpublishing-pages}
 
-L’annulation de la publication d’une page supprime cette page de votre environnement de publication, de sorte que vos lecteurs ne puissent plus y accéder.
+L’annulation de la publication d’une page supprime cette page de votre publication, ou [aperçu](/help/sites-cloud/authoring/fundamentals/previewing-content.md), de sorte qu’il ne soit plus disponible pour vos lecteurs.
 
-Vous pouvez annuler la publication d’une ou de plusieurs pages [en procédant de la même manière que pour leur publication](#publishing-pages) :
+Dans un [similaire à la publication](#publishing-pages), une ou plusieurs pages peuvent être dépubliées à partir de la destination souhaitée :
 
 * [À partir de l’éditeur de page](#unpublishing-from-the-editor)
 * [À partir de la console Sites](#unpublishing-from-the-console)
@@ -245,6 +244,9 @@ De la même façon que vous [utilisez l’option Gérer la publication pour publ
    >[!NOTE]
    >
    >Pour annuler une publication/annulation de publication ultérieure, rendez-vous dans la [console Processus](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) pour mettre un terme au processus correspondant.
+
+   >[!NOTE]
+   >Si vous avez une [Aperçu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) vous pouvez sélectionner l’environnement **Destination** pendant la gestion de la publication.
 
 1. Pour finaliser l’annulation de la publication, complétez les différentes étapes de l’assistant, comme vous le feriez pour [publier la page](#manage-publication).
 
