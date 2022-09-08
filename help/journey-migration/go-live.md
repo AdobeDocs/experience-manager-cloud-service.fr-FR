@@ -2,9 +2,9 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 9ffde71af0c24c0592ef9ca008ddeaf9ce70599e
+source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
 workflow-type: tm+mt
-source-wordcount: '1718'
+source-wordcount: '1729'
 ht-degree: 95%
 
 ---
@@ -153,6 +153,7 @@ Passez en revue cette liste d’activités pour vous assurer d’effectuer une m
       * Avec un TTL très élevé, les mises à jour de votre enregistrement DNS prendront plus de temps à se propager.
 * Exécutez des tests de performance et de sécurité qui répondent aux besoins et aux objectifs de votre entreprise.
 * Effectuez une coupure et assurez-vous que la mise en service réelle est effectuée sans aucun nouveau déploiement ni mise à jour du contenu.
+* Créez des groupes de notification utilisateur de Admin Console. Voir [Groupes d’utilisateurs pour les notifications](/help/journey-onboarding/user-groups.md)
 
 Vous pouvez toujours vous référer à cette liste au cas où vous auriez besoin de recalibrer vos tâches lors de la migration.
 
