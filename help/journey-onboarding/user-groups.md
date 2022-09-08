@@ -3,7 +3,7 @@ title: Groupes d’utilisateurs pour les notifications
 description: Découvrez comment créer un groupe d’utilisateurs dans le Admin Console pour gérer la réception de notifications par e-mail importantes.
 feature: Onboarding
 role: Admin, User, Developer
-source-git-commit: 93a5e1b8851353f368a01ea6b50265ec3f2de836
+source-git-commit: 532184edca597452e76fdf763e7377d5e835bebc
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 17%
@@ -81,7 +81,7 @@ Maintenant que les groupes ont été créés, vous devez affecter les utilisateu
 
 1. Sélectionnez l’onglet **Utilisateurs** dans la barre de navigation supérieure, puis sélectionnez **Ajouter un utilisateur**.
 
-![Utilisateurs](assets/cloud_manager_add_user.png)
+   ![Utilisateurs](assets/cloud_manager_add_user.png)
 
 1. Dans la boîte de dialogue **Ajouter des utilisateurs à votre équipe**, entrez l’adresse e-mail de l’utilisateur que vous souhaitez ajouter.
 
