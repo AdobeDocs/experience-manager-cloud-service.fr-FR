@@ -2,10 +2,10 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 14671264f1605552b2262a3139d4005e6dd90cb5
+source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
 workflow-type: tm+mt
-source-wordcount: '2992'
-ht-degree: 97%
+source-wordcount: '3019'
+ht-degree: 96%
 
 ---
 
@@ -466,12 +466,11 @@ Une fois la page verrouillée, les informations d’affichage de la console sont
 
 >[!CAUTION]
 >
->Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière ne peut être déverrouillée que par l’utilisateur qui a été emprunté à l’identité ou par un utilisateur disposant de droits d’administrateur (un membre du profil IMS Administrateur AEM).
+>Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière ne peut être déverrouillée que (par les clients) à l’aide de l’utilisateur qui a été emprunté à l’identité.
 >
 >Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur qui les a verrouillées.
-<!--
->Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
--->
+>
+>Si l’utilisateur qui a verrouillé la page n’est pas disponible pour déverrouiller la page, contactez le service clientèle pour évaluer les options de suppression du verrouillage.
 
 ## Déverrouillage d’une page {#unlocking-a-page}
 
@@ -483,9 +482,20 @@ Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme
 
 >[!CAUTION]
 >
->Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière ne peut être déverrouillée que par l’utilisateur qui a été emprunté à l’identité ou par un utilisateur disposant de droits d’administrateur (un membre du profil IMS Administrateur AEM).
+>Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière ne peut être déverrouillée que par la suite (par les clients) à l’aide de l’utilisateur qui a été emprunté à l’identité.
 >
 >Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur qui les a verrouillées.
+>
+>Si l’utilisateur qui a verrouillé la page n’est pas disponible pour déverrouiller la page, contactez le service clientèle pour évaluer les options de suppression du verrouillage.
+
+<!--
+>[!CAUTION]
+>
+>Locking a page can be performed when impersonating a user. However a page locked in this way can only then be unlocked by the user who was impersonated, or by a user with admin rights (a member of AEM Administrator IMS profile).
+>
+>Pages can not be unlocked by impersonating the user who locked the page.
+-->
+
 <!--
 >Locking a page can be performed when [impersonating a user](/help/sites-administering/security.md#impersonating-another-user). However a page locked in this way can only then be unlocked by the user who was impersonated or by the admin user.
 -->
