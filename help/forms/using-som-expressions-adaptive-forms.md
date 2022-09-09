@@ -1,5 +1,5 @@
 ---
-title: 'Utiliser des expressions SOM dans des formulaires adaptatifs '
+title: Utiliser des expressions SOM dans des formulaires adaptatifs
 seo-title: Using SOM expressions in Adaptive Forms
 description: Découvrez comment extraire des expressions SOM d’un panneau d’un formulaire adaptatif.
 seo-description: Learn how to extract SOM expressions of a panel of an Adaptive Form.

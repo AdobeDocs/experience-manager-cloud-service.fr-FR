@@ -1,7 +1,7 @@
 ---
 title: Parcours du développeur AEM Headless
-description: 'Commencez ici pour obtenir un parcours guidé via Adobe Experience Manager (AEM) as a Cloud Service pour l’utiliser en tant que système de gestion de contenu découplé (CMS). Découvrez ses fonctionnalités de découplage puissantes et flexibles, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. Ce parcours vous fournit toute les informations dont vous avez besoin pour développer votre première application découplée. '
-landing-page-description: 'Découvrez la diffusion et la mise en œuvre du contenu découplé. Apprenez-en plus sur le développement de votre stratégie au sein de votre entreprise. '
+description: Commencez ici pour obtenir un parcours guidé via Adobe Experience Manager (AEM) as a Cloud Service pour l’utiliser en tant que système de gestion de contenu découplé (CMS). Découvrez ses fonctionnalités de découplage puissantes et flexibles, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. Ce parcours vous fournit toute les informations dont vous avez besoin pour développer votre première application découplée.
+landing-page-description: Découvrez la diffusion et la mise en œuvre du contenu découplé. Apprenez-en plus sur le développement de votre stratégie au sein de votre entreprise.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
 source-git-commit: 1424c604e175cce0728f49f548d0bebec76043f4
 workflow-type: tm+mt

@@ -1,7 +1,7 @@
 ---
-title: 'Résolution des problèmes liés aux performances de mise en cache  '
+title: Résolution des problèmes liés aux performances de mise en cache
 seo-title: Troubleshooting caching performance
-description: 'Résolution des problèmes liés aux performances de mise en cache  '
+description: Résolution des problèmes liés aux performances de mise en cache
 seo-description: Troubleshooting caching performance
 contentOwner: khsingh
 exl-id: eae44a6f-25b4-46e9-b38b-5cec57b6772c

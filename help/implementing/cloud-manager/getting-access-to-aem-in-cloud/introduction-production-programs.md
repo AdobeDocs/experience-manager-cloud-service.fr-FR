@@ -1,5 +1,5 @@
 ---
-title: 'Présentation des programmes de production '
+title: Présentation des programmes de production
 description: Découvrez les programmes de production et des suggestions pour configurer les vôtres.
 exl-id: bb8d4a5a-b26a-4718-9327-149fedb87e6a
 source-git-commit: a6152a1529b5c70bcf056857204e7ff97fc614e4

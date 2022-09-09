@@ -1,5 +1,5 @@
 ---
-title: 'Comment affecter un processus à un autre utilisateur, envoyer un e-mail et utiliser Adobe Sign dans un processus ? '
+title: Comment affecter un processus à un autre utilisateur, envoyer un e-mail et utiliser Adobe Sign dans un processus ?
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4

@@ -1,5 +1,5 @@
 ---
-title: 'Bonnes pratiques pour l’utilisation des composants '
+title: Bonnes pratiques pour l’utilisation des composants
 seo-title: Best practices for working with components
 description: Bonnes pratiques et points clés à prendre en compte lors de l’utilisation de composants de formulaire adaptatifs
 seo-description: Some best practices and key points to remember when working with Adaptive Form components

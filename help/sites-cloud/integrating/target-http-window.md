@@ -1,6 +1,6 @@
 ---
 title: Fenêtre HTTP Adobe AEM Target
-description: 'Fenêtre HTTP Adobe AEM Target '
+description: Fenêtre HTTP Adobe AEM Target
 source-git-commit: c193b38718622cd2e960a8e8833c2d295822dc33
 workflow-type: tm+mt
 source-wordcount: '195'

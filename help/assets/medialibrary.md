@@ -1,6 +1,6 @@
 ---
 title: Utilisation de Media Library pour la gestion de base des ressources numériques
-description: '"[!DNL Experience Manager Assets] et Media Library pour la gestion des ressources."'
+description: "[!DNL Experience Manager Assets] et Media Library pour la gestion des ressources."
 contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader

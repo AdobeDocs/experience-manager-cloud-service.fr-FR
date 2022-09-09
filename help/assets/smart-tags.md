@@ -1,5 +1,5 @@
 ---
-title: 'Balisage automatique des ressources avec le service dynamique [!DNL Adobe Sensei] '
+title: Balisage automatique des ressources avec le service dynamique [!DNL Adobe Sensei]
 description: Balisez les ressources à l’aide d’un service d’intelligence artificielle qui applique des balises commerciales contextuelles et descriptives.
 contentOwner: AG
 feature: Smart Tags,Tagging

@@ -1,5 +1,5 @@
 ---
-title: 'Application et annulation de l’application de listes d’adresses IP autorisées '
+title: Application et annulation de l’application de listes d’adresses IP autorisées
 description: Découvrez comment appliquer et annuler l’application de listes d’adresses IP autorisées aux environnements.
 exl-id: 7158496c-b0c4-4228-a306-71dc51003c57
 source-git-commit: 7632a9fef71e95238d149ec5318903757bb2a326

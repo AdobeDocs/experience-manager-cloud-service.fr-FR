@@ -1,6 +1,6 @@
 ---
-title: 'Fonctionnalités clés d’Adobe Experience Manager (AEM) Forms as a Cloud Service '
-description: '"[!DNL AEM Forms] as a Cloud Service est une plateforme permettant la création, la gestion et la publication de formulaires et de processus métier de niveau professionnel."'
+title: Fonctionnalités clés d’Adobe Experience Manager (AEM) Forms as a Cloud Service
+description: "[!DNL AEM Forms] as a Cloud Service est une plateforme permettant la création, la gestion et la publication de formulaires et de processus métier de niveau professionnel."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt

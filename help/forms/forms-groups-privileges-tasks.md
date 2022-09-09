@@ -1,6 +1,6 @@
 ---
-title: 'Groupes intégrés [!DNL AEM Forms] as a Cloud Service '
-description: 'Liste des groupes d’utilisateurs prêts à l’emploi et des autorisations attribuées à chaque groupe '
+title: Groupes intégrés [!DNL AEM Forms] as a Cloud Service
+description: Liste des groupes d’utilisateurs prêts à l’emploi et des autorisations attribuées à chaque groupe
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt

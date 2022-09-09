@@ -196,9 +196,9 @@ AEM Forms as a Cloud Services fournit un environnement SDK Docker qui facilite
    > * Pour Apple macOS, placez sur liste autorisée les dossiers contenant des instances d’auteur AEM locales.
    >
    > * Docker Desktop pour Windows prend en charge deux back-ends, Hyper-V
-   > (hérité) et WSL2 (moderne). Le partage de fichiers est automatiquement
-   > géré par Docker lors de l’utilisation de WSL2 (moderne). Vous devez
-   > configurer explicitement le partage de fichiers lors de l’utilisation d’Hyper-V (hérité).
+      > (hérité) et WSL2 (moderne). Le partage de fichiers est automatiquement
+      > géré par Docker lors de l’utilisation de WSL2 (moderne). Vous devez
+      > configurer explicitement le partage de fichiers lors de l’utilisation d’Hyper-V (hérité).
 
 
 1. Créez un dossier, par exemple aem-sdk, parallèlement à vos instances d’auteur et de publication, comme C:\aem-sdk.

@@ -1,5 +1,5 @@
 ---
-title: 'Texte d’espace réservé dans [!DNL AEM Forms] '
+title: Texte d’espace réservé dans [!DNL AEM Forms]
 description: Le texte d’espace réservé est destiné à aider l’utilisateur à saisir des données lorsque la valeur de la commande est vide. Il peut s’agir d’un exemple de valeur ou une brève description du format attendu.
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt

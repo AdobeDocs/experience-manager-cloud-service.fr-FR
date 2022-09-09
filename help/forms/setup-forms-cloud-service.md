@@ -1,5 +1,5 @@
 ---
-title: 'Comment configurer un environnement [!DNL AEM Forms] as a Cloud Service ? '
+title: Comment configurer un environnement [!DNL AEM Forms] as a Cloud Service ?
 description: Découvrez comment configurer un environnement [!DNL AEM Forms] as a Cloud Service
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7

@@ -1,5 +1,5 @@
 ---
-title: 'Composant séparateur dans les formulaires adaptatifs '
+title: Composant séparateur dans les formulaires adaptatifs
 seo-title: Separator component in Adaptive Forms
 description: Vous pouvez utiliser le composant séparateur pour isoler visuellement les sections d’un formulaire.
 seo-description: You can use the separator component to visually segregate sections of a form.

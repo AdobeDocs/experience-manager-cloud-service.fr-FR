@@ -1,7 +1,7 @@
 ---
 title: Implémentation d’Adobe Experience Manager as a Cloud Service
 description: Ressources d’aide autonome et liens vers la documentation sur l’implémentation d’Adobe Experience Manager as a Cloud Service
-landing-page-description: 'Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service. Consultez la documentation d’AEM Cloud Services pour en savoir plus sur le développement et la mise en œuvre de vos applications. '
+landing-page-description: Découvrez comment personnaliser votre déploiement d’Experience Manager as a Cloud Service. Consultez la documentation d’AEM Cloud Services pour en savoir plus sur le développement et la mise en œuvre de vos applications.
 exl-id: d1e359a0-8a03-4f57-aa9c-cf1d0e9b7d0c
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt

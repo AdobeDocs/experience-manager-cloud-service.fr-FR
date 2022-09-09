@@ -1,6 +1,6 @@
 ---
 title: Archive de la newsletter Dynamic Media
-description: 'La newsletter Dynamic Media d’Experience League est une newsletter mensuelle. Il est conçu pour vous aider à vous familiariser avec Dynamic Media et Dynamic Media Classic afin que vous en tiriez parti immédiatement. De précieuses ressources de renforcement des connaissances sont disponibles dans cette newsletter unique. Elle donne par exemple accès à des vidéos pratiques et à des présentations de solution. Découvrez également quelques-unes des principales fonctionnalités et caractéristiques telles que les paramètres d’image prédéfinis, les paramètres prédéfinis de la visionneuse, les profils vidéo, etc. '
+description: La newsletter Dynamic Media d’Experience League est une newsletter mensuelle. Il est conçu pour vous aider à vous familiariser avec Dynamic Media et Dynamic Media Classic afin que vous en tiriez parti immédiatement. De précieuses ressources de renforcement des connaissances sont disponibles dans cette newsletter unique. Elle donne par exemple accès à des vidéos pratiques et à des présentations de solution. Découvrez également quelques-unes des principales fonctionnalités et caractéristiques telles que les paramètres d’image prédéfinis, les paramètres prédéfinis de la visionneuse, les profils vidéo, etc.
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20

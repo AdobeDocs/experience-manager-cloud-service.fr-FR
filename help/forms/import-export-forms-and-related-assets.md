@@ -1,5 +1,5 @@
 ---
-title: 'Importation et exportation des ressources '
+title: Importation et exportation des ressources
 seo-title: Import and export assets to [!DNL AEM Forms]
 description: Vous pouvez importer et exporter des formulaires adaptatifs et des ressources connexes vers une instance AEM. Cela permet de migrer ou de déplacer facilement les formulaires vers d’autres systèmes.
 seo-description: You can import and export Adaptive Forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.

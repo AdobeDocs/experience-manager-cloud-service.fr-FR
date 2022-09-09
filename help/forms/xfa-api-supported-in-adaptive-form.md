@@ -1,5 +1,5 @@
 ---
-title: 'Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP '
+title: Prise en charge de XFA dans les formulaires adaptatifs basés sur XDP
 seo-title: XFA support in XDP-based Adaptive Forms
 description: Répertorie les événements, les propriétés, les scripts et la validation XFA pris en charge dans les formulaires adaptatifs.
 seo-description: Lists supported XFA events, properties, scripts, and validation in Adaptive Forms.
