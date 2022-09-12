@@ -15,7 +15,7 @@ ht-degree: 100%
 >id="aemcloud_bpa_using"
 >title="Utilisation de l’analyseur des bonnes pratiques"
 >abstract="Consultez la documentation relative à l’utilisation de l’analyseur des bonnes pratiques (anciennement Cloud Readiness Analyzer) et du rapport généré. Le rapport de l’analyseur des bonnes pratiques permet de mieux comprendre le degré de préparation général à la mise à niveau."
->additional-url=""
+>additional-url="https://my.adobeconnect.com/pqgrfezoxghs?proto=true" text="[Webinar] Introducing Tools to Accelerate the Journey to Adobe Experience Manager as a Cloud Service"
 
 ## Considérations importantes concernant l’utilisation de l’analyseur des bonnes pratiques {#imp-considerations}
 
