@@ -2,10 +2,10 @@
 title: Comment créer un portail Formulaires sur une page Experience Manager Sites
 description: Découvrez comment créer un portail Formulaires et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
 workflow-type: tm+mt
-source-wordcount: '1784'
-ht-degree: 100%
+source-wordcount: '1764'
+ht-degree: 98%
 
 ---
 
@@ -59,9 +59,7 @@ Pour importer des composants du portail Formulaires prêts à l’emploi sur AEM
 
    Modifiez également `appTitle`, `appId` et `groupId` dans la commande ci-dessus pour refléter votre environnement.
 
-1. **Dans la version préliminaire, effectuez les étapes suivantes pour utiliser les composants du portail Formulaires :**
-   * [Activation du canal de version préliminaire](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=fr).
-   * Remplacez `core-forms-components-*` avec la version préliminaire souhaitée (par exemple, 1.0.4-PRERELEASE-20211223) dans votre projet `Cloud Manager/AEM Archetype` en mettant à jour la propriété `<core.forms.components.version>x.y.z</core.forms.components.version>` dans le niveau supérieur `pom.xml` du projet Archétype.
+   Une fois le projet prêt, mettez à jour la variable `<core.forms.components.version>x.y.z</core.forms.components.version>` dans le niveau supérieur `pom.xml` du projet Archetype pour refléter la dernière version de [core-forms-components](https://github.com/adobe/aem-core-forms-components) dans votre `AEM Archetype` projet.
 
 1. **Déploiement du projet dans votre environnement de développement local :** vous pouvez utiliser la commande suivante pour effectuer un déploiement dans votre environnement de développement local.
 
