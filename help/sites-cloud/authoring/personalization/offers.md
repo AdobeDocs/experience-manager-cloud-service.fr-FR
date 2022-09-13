@@ -2,10 +2,10 @@
 title: Création et gestion des offres (console Offres)
 description: Utilisez la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
+source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 67%
+source-wordcount: '1393'
+ht-degree: 63%
 
 ---
 
@@ -88,6 +88,23 @@ Ajoutez des balises, le cas échéant.
 1. Confirmer avec **Terminé**.
 
    Si vous accédez maintenant à la **Offres de fragments d’expérience** , vous verrez votre nouveau fragment d’expérience, ainsi que ses variations associées.
+
+### Ciblage à l’aide du modèle Offres {#targeting-offers-template}
+
+>[!CAUTION]
+>
+>Cette option est disponible uniquement pour les clients qui disposent d’offres héritées préexistantes.
+>
+>Comme avec le **Offres** console , elle ne sera plus disponible non plus :
+>
+>* une fois la dernière offre héritée convertie en fragments d’expérience
+>* lorsque les offres héritées sont obsolètes (à l’avenir) ;
+>
+>Par conséquent, l’option recommandée consiste à utiliser des fragments d’expérience, et non pas cette option.
+
+Pour les clients qui disposent d’offres héritées préexistantes, la variable **Utiliser le modèle d’offre** Les options sont visibles lors du ciblage des composants qui sont **not** Fragments d’expérience :
+
+![Boîte de dialogue Convertir en variation de fragment d’expérience](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
 ## La console Offres {#offers-console}
 
