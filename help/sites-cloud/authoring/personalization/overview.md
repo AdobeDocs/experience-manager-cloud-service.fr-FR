@@ -2,10 +2,10 @@
 title: Personnalisation et ciblage de contenu
 description: Découvrez comment AEM peut créer du contenu personnalisé
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 8b741b64db43369bf0ca3bfbe947fb58ef5ec05a
 workflow-type: tm+mt
-source-wordcount: '518'
-ht-degree: 100%
+source-wordcount: '517'
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,11 @@ Une offre constitue du contenu qui s’affiche à un endroit d’une page pour c
 
 Par exemple, la page pour les femmes de l’exemple peut utiliser des offres en tant qu’image de teaser apparaissant en haut de la page. L’offre utilisée en tant que teaser de l’expérience destinée aux femmes de plus de 30 ans n’est pas la même que celle utilisée pour les femmes de moins de 30 ans.
 
-Utilisez la [console Offres](/help/sites-cloud/authoring/personalization/offers.md) pour créer des offres que vous pouvez utiliser dans plusieurs expériences. Créez des offres à utiliser une seule fois ou ajoutez des offres issues d’une bibliothèque d’offres lors de la [création de contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md).
+Utilisation [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) pour créer des offres que vous pouvez utiliser dans plusieurs expériences. Créez des offres à utiliser une seule fois ou ajoutez des offres issues d’une bibliothèque d’offres lors de la [création de contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md).
+
+<!--
+Use the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) to create offers that you can use in multiple experiences. Create single-use offers or add offers from an offer library when [authoring targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
+-->
 
 ## Moteur de ciblage {#targeting-engine}
 

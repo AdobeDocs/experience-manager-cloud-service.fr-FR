@@ -1,15 +1,101 @@
 ---
-title: Création et gestion d’offres
+title: Création et gestion des offres (console Offres)
 description: Utilisez la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9274496200af93708d5fd95666f969afc71125a6
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '1306'
+ht-degree: 67%
 
 ---
 
-# Création et gestion d’offres {#creating-and-managing-offers}
+# Création et gestion d’offres (Console d’offres) {#creating-and-managing-offers}
+
+Le **Offres** La console sera abandonnée à l’avenir. Donc, à partir de maintenant, c&#39;est :
+
+* Uniquement disponibles pour les clients qui ont *hérité* offres déjà définies (c’est-à-dire préexistantes)
+* Il est recommandé de convertir de telles offres héritées en offres de fragments d’expérience.
+   * Dès que la dernière offre héritée est convertie/supprimée, la variable **Offres** ne sera plus disponible.
+
+![Consoles de personnalisation](/help/sites-cloud/authoring/assets/offers-consoles.png)
+
+>[!NOTE]
+>
+>Les clients qui disposent d’offres héritées préexistantes peuvent toujours utiliser la variable **Offres** console pour afficher les offres existantes et créer de nouvelles offres héritées.
+>
+>Les clients qui ne disposent pas d’offres héritées préexistantes ne verront pas la variable **Offres** console.
+>
+>Tous les clients peuvent utiliser **Offres de fragments d’expérience** pour créer et gérer des offres.
+
+## Conversion d’une offre héritée en fragment d’expérience {#convert-legacy-offer-to-experience-fragment}
+
+A **Convertir en variation de fragment d’expérience** a été implémentée pour vous aider à convertir votre offre héritée en fragment d’expérience :
+
+>[!NOTE]
+>
+>Il s’agit du processus recommandé pour convertir des offres héritées en fragments d’expérience.
+
+>[!NOTE]
+>
+>Vous pouvez également créer vous-même un fragment d’expérience, transférer manuellement le contenu de votre offre héritée vers le fragment, puis supprimer l’offre héritée.
+
+>[!CAUTION]
+>
+>Le **Convertir en variation de fragment d’expérience** est disponible pour tous les composants principaux.
+>
+>Cette option ne sera pas prise en charge pour les composants personnalisés. Pour ces composants, vous devez convertir manuellement le contenu en fragment d’expérience.
+
+>[!CAUTION]
+>
+>Dès que la dernière offre héritée est convertie/supprimée :
+>
+>* Le **Offres** ne sera plus disponible.
+>* L’icône cible de la barre d’outils des autres composants concernés n’apparaîtra plus.
+
+
+1. Ouvrez une page contenant l’offre à modifier.
+
+1. Basculer vers **Ciblage** pour cette page.
+
+1. Sélectionnez **Commencer le ciblage**.
+
+1. Sélectionnez le composant (ciblé) approprié.
+
+1. La barre d’outils du composant fournit une option pour **Convertir en variation de fragment d’expérience**:
+
+   ![Conversion d’une offre héritée en fragment d’expérience](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+
+1. Une boîte de dialogue s’affiche. Vous pouvez y sélectionner les **Action**:
+
+   * Créer un fragment d’expérience
+   * Ajouter du contenu à un fragment d’expérience existant
+
+   Pour ce scénario, sélectionnez **Création d’un fragment d’expérience**.
+
+   ![Boîte de dialogue Convertir en variation de fragment d’expérience](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
+
+1. Renseignez les champs requis de la boîte de dialogue :
+
+   * **Chemin d’accès parent**
+Définition du chemin parent du nouveau fragment d’expérience
+   * **Modèle**
+Sélectionnez le modèle à utiliser pour créer le fragment d’expérience.
+   * **Titre du fragment**
+Indiquez le titre.
+   * **Balises de fragment**
+Ajoutez des balises, le cas échéant.
+
+1. Confirmer avec **Terminé**.
+
+   Si vous accédez maintenant à la **Offres de fragments d’expérience** , vous verrez votre nouveau fragment d’expérience, ainsi que ses variations associées.
+
+## La console Offres {#offers-console}
+
+>[!CAUTION]
+>
+>Cette console sera abandonnée à l’avenir, car elle offre un moyen hérité de personnaliser le contenu.
+>
+>Tu as du temps pour te préparer. Découvrez comment [convertir vos offres héritées existantes en offre de fragment d’expérience ;](#convert-legacy-offer-to-experience-fragment).
 
 Utilisez la console Offres pour créer des offres que vous pourrez [utiliser dans le cadre d’expériences associées à des activités](/help/sites-cloud/authoring/personalization/targeted-content.md). La création d’offres dans la console Offres permet de gagner du temps lorsque plusieurs expériences nécessitent la même offre :
 
@@ -18,7 +104,7 @@ Utilisez la console Offres pour créer des offres que vous pourrez [utiliser dan
 
 La console Offres trie les offres par marque. Chaque marque contient une bibliothèque d’offres qui peuvent être utilisées dans les expériences d’une marque. Utilisez des dossiers pour organiser hiérarchiquement les offres dans chaque bibliothèque. Une structure de dossiers logique permet aux auteurs de retrouver facilement des offres en les parcourant. Les outils de balisage et de recherche permettent également aux auteurs de retrouver des offres pertinentes.
 
-## Ajout d’une marque dans la console Offres {#add-a-brand-using-the-offers-console}
+### Ajout d’une marque dans la console Offres {#add-a-brand-using-the-offers-console}
 
 Créez une marque à laquelle vos offres sont associées. Ouvrez une marque dans la console Offres pour accéder à la bibliothèque d’offres dans laquelle vous pouvez créer des dossiers et des offres.
 
@@ -33,7 +119,7 @@ Lorsque vous créez une marque à l’aide de la console Offres, elle s’affich
 1. Saisissez un titre pour la marque tel qu’il doit apparaître dans les consoles Offres et Activités. Si vous le souhaitez, saisissez ou sélectionnez une ou plusieurs balises à associer à la marque.
 1. Cliquez ou appuyez sur **Créer**.
 
-## Ajout d’un fichier à une bibliothèque d’offres {#add-a-folder-to-an-offer-library}
+### Ajout d’un fichier à une bibliothèque d’offres {#add-a-folder-to-an-offer-library}
 
 Ajoutez un dossier à la bibliothèque d’offres d’une marque pour y organiser et y stocker les offres. Vous pouvez créer un dossier sous la marque ou sous d’autres dossiers.
 
@@ -49,7 +135,7 @@ Ajoutez un dossier à la bibliothèque d’offres d’une marque pour y organise
 
 1. Cliquez ou appuyez sur **Créer**.
 
-## Ajout d’une offre à une bibliothèque d’offres {#add-an-offer-to-an-offer-library}
+### Ajout d’une offre à une bibliothèque d’offres {#add-an-offer-to-an-offer-library}
 
 Ajoutez une offre à la bibliothèque d’offres d’une marque afin de pouvoir l’ajouter à des expériences liées à cette marque. Lorsque vous ajoutez une offre, il convient de saisir un titre. Vous pouvez également associer l’offre à une ou plusieurs balises pour optimiser la recherche.
 
@@ -64,7 +150,7 @@ Après avoir créé l’offre, vous pouvez l’ouvrir pour en modifier le conten
 1. Saisissez le titre de l’offre et, le cas échéant, sélectionnez ou entrez une ou plusieurs balises à associer à l’offre, puis cliquez ou appuyez sur **Créer**.
 1. Dans la boîte de dialogue de confirmation, pour ouvrir l’offre à modifier, cliquez ou appuyez sur **Ouvrir la page**.
 
-## Modification d’une offre {#editing-an-offer}
+### Modification d’une offre {#editing-an-offer}
 
 Ouvrez une offre et modifiez le contenu tel qu’il doit apparaître dans les expériences qui l’utilisent. Lorsque vous modifiez une offre utilisée dans des expériences, les modifications se répercutent dans les expériences.
 
@@ -73,7 +159,7 @@ Vous pouvez ouvrir une offre à partir d’un dossier d’une bibliothèque d’
 1. Dans la console Offres, cliquez ou appuyez sur l’icône située en regard de l’offre, puis sur **Modifier**.
 1. Ajoutez des composants à l’offre et publiez le contenu en suivant la procédure habituelle.
 
-## Suppression d’une offre {#deleting-an-offer}
+### Suppression d’une offre {#deleting-an-offer}
 
 Supprimez une offre lorsqu’elle n’est plus nécessaire. Si vous essayez de supprimer une offre utilisée dans une expérience, vous êtes invité à confirmer la suppression. La confirmation supprime l’offre et la retire également des expériences.
 
@@ -89,7 +175,7 @@ Vous pouvez supprimer une offre tout en affichant le contenu des dossiers de la 
    * Pour supprimer l’offre et la retirer des expériences, cliquez ou appuyez sur **Forcer la suppression**.
    * Pour conserver l’offre, cliquez ou appuyez sur **Annuler**.
 
-## Recherche d’offres {#searching-for-offers}
+### Recherche d’offres {#searching-for-offers}
 
 Recherchez les offres d’une marque quelconque à l’aide de mots-clés correspondant à leur titre.
 
