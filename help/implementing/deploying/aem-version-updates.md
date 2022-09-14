@@ -3,10 +3,10 @@ title: Mises à jour de la version d’AEM
 description: Mises à jour de la version d’AEM
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 575be022704e998e63162f19c37ece877efef627
+source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
 workflow-type: tm+mt
-source-wordcount: '384'
-ht-degree: 29%
+source-wordcount: '399'
+ht-degree: 20%
 
 ---
 
@@ -39,7 +39,7 @@ AEM mises à jour passent par un pipeline de validation de produit intense et en
 
 >[!NOTE]
 >
->Si vous avez envoyé le code personnalisé pour évaluation, puis que vous l’avez rejeté, la prochaine mise à jour d’AEM supprimera ces modifications afin de refléter la balise git de la dernière version de production réussie du client.
+>Si le code personnalisé a été envoyé vers l’évaluation et non vers la production, la prochaine mise à jour AEM supprimera ces modifications pour refléter la balise git de la dernière version de production réussie du client. Par conséquent, le code personnalisé qui n’était disponible que lors de l’évaluation devra être déployé à nouveau.
 
 ## Magasin de nœuds composites {#composite-node-store}
 
