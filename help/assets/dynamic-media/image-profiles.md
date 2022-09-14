@@ -4,10 +4,10 @@ description: Découvrez comment créer des profils d’image Dynamic Media conte
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 28dbb0afa6c63efd64d409f8df0ef837bc10f5d9
 workflow-type: tm+mt
-source-wordcount: '3277'
-ht-degree: 98%
+source-wordcount: '3333'
+ht-degree: 97%
 
 ---
 
@@ -84,6 +84,10 @@ Vous avez le choix entre deux options de recadrage d’image. Vous pouvez égale
 ### Formats de fichiers image pris en charge pour le recadrage intelligent et les nuanciers de couleurs
 
 La résolution maximale prise en charge pour la taille de fichier d’entrée est de 16K.
+
+>[!NOTE]
+>
+>La résolution 16K est une résolution d’affichage d’environ 16 000 pixels horizontalement. La résolution de 16K la plus communément discutée est de 15 360 × 8 640, ce qui double le nombre de pixels de 8K UHD dans chaque dimension, pour un total de quatre fois plus de pixels. Cette résolution est de 132,7 mégapixels, 16 fois plus de pixels qu’une résolution de 4K et 64 fois plus de pixels qu’une résolution de 1080p.
 
 | Format d’image  | Extension de fichier insensible à la casse | Type MIME | Espace colorimétrique d’entrée pris en charge | Taille maximale du fichier d’entrée pris en charge | Format d’image pris en charge ? |
 | --- | --- | --- | --- | --- | --- |
