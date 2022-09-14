@@ -2,9 +2,9 @@
 title: Exportation de fragments d’expérience vers Adobe Target
 description: Exportation de fragments d’expérience vers Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
 workflow-type: tm+mt
-source-wordcount: '2259'
+source-wordcount: '2249'
 ht-degree: 99%
 
 ---
@@ -229,8 +229,6 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
 1. Cliquez sur **Se connecter à Adobe Target** pour lancer la connexion à Target. Si la connexion est réussie, le message **Connexion réussie** s’affiche. Cliquez sur **OK** dans le message et **OK** dans la boîte de dialogue.
 
-   Si vous ne parvenez pas à vous connecter à Target, voir la section [Dépannage](#troubleshooting-target-connection-problems).
-
 ### Ajout d’une structure Target {#adding-a-target-framework}
 
 <!-- Is this section needed? -->
@@ -312,17 +310,6 @@ When you associate a page with the framework, the child pages inherit the associ
    >[!NOTE]
    >
    >If the framework you attached to the page was not activated yet, a wizard opens which allows you to publish it as well.
--->
-
-<!--
-### Troubleshooting Target Connection Problems {#troubleshooting-target-connection-problems}
-
-Perform the following tasks to troubleshoot problems that occur when connecting to Target:
-
-* Make sure that the user credentials that you provide are correct.
-* Make sure that the AEM instance can connect to the Target server. For example, make sure that firewall rules are not blocking outbound AEM connections, or that AEM is configured to use necessary proxies.
-* Look for helpful messages in the AEM error log. The error.log file is located in the **crx-quickstart/logs** directory where AEM is installed.
-* When editing the activity in Adobe Target, the URL is pointing to localhost. Work around this by setting the AEM externalizer to the correct URL.
 -->
 
 ## Exportation d’un fragment d’expérience vers Adobe Target {#exporting-an-experience-fragment-to-adobe-target}
