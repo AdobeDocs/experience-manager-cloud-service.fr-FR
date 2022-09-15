@@ -2,10 +2,10 @@
 title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
 workflow-type: tm+mt
-source-wordcount: '2561'
-ht-degree: 100%
+source-wordcount: '2565'
+ht-degree: 97%
 
 ---
 
@@ -211,7 +211,7 @@ Incorporer du code s’avère utile pour fournir l’accès aux bibliothèques q
 
 #### Dossiers de bibliothèques clientes spécifiques à une application {#app-specific-client-library-folders}
 
-Il est conseillé de conserver tous les fichiers associés à une application dans leur dossier d’application sous `/app`. Il est également recommandé d’empêcher les internautes d’accéder au dossier `/app`. Pour répondre à ces deux exigences, créez sous `/etc` un dossier de bibliothèques clientes qui incorpore la bibliothèque cliente qui est située sous `/app`.
+Il est recommandé de conserver tous les fichiers associés à l’application dans leur dossier d’application sous /apps. Il est également recommandé de refuser l’accès au dossier /apps aux visiteurs du site web. Pour répondre à ces deux exigences, créez un dossier de bibliothèques clientes sous le dossier /etc qui incorpore la bibliothèque cliente sous /apps.
 
 Utilisez la propriété categories pour identifier le dossier de bibliothèque cliente à incorporer. Pour incorporer la bibliothèque, ajoutez une propriété au nœud `cq:ClientLibraryFolder` d’intégration à l’aide des attributs de propriété suivants :
 
