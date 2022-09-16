@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 9ac5426c71c2ed794b9e72c1eacd936b9aa8d70c
+source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 94%
+source-wordcount: '1056'
+ht-degree: 90%
 
 ---
 
@@ -98,7 +98,7 @@ Veuillez noter que lorsque vous utilisez votre propre réseau CDN, il n’est pa
 >
 >Les environnements de programme Sandbox ne prennent pas en charge un réseau CDN fourni par le client.
 
-Les performances peuvent diminuer en raison du saut supplémentaire, bien que les sauts entre le réseau de diffusion du client et celui géré par AEM puissent être efficaces.
+Le saut supplémentaire entre le réseau de diffusion de contenu client et le réseau de diffusion de contenu AEM n’est nécessaire que dans le cas d’une interruption du cache. En utilisant les stratégies d’optimisation du cache décrites dans cet article, l’ajout d’un réseau de diffusion de contenu client ne doit qu’introduire une latence négligeable.
 
 Notez que cette configuration de réseau de diffusion de contenu client est prise en charge pour le niveau de publication, mais pas au niveau auteur.
 
