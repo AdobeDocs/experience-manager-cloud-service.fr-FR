@@ -2,7 +2,7 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8e1cc042da37fd246a5048e67fc04cbacfa69775
+source-git-commit: 501441717f541439ac8d914f1e419491399e6667
 workflow-type: tm+mt
 source-wordcount: '1341'
 ht-degree: 96%
@@ -65,9 +65,6 @@ Comprendre les problèmes de connexion SSL/TLS peut parfois être difficile. Pou
 >abstract="Découvrez comment utiliser l’outil de transfert de contenu pour effectuer une migration du contenu vers AEM as a Cloud Service (auteur/publication) à l’aide de l’outil de transfert de contenu."
 >additional-url="https://video.tv.adobe.com/v/35460/?quality=12&amp;learn=on&amp;captions=fre_fr" text=" Voir Démonstration"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html?lang=fr#migration" text="Tutoriel – Utilisation de l’outil de transfert de contenu"
-
->[!VIDEO](https://video.tv.adobe.com/v/35460/?quality=12&learn=on)
-<!-- Need to remove the video -->
 
 La section suivante s’applique à la nouvelle version de l’outil de transfert de contenu. Consultez cette section pour effectuer une migration du contenu vers AEM as a Cloud Service à l’aide de l’outil de transfert de contenu :
 
