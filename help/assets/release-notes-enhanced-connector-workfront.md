@@ -2,7 +2,7 @@
 title: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 590ee3f855051e212570c624e31ca3164938122c
+source-git-commit: 14b779c476b88ff1ee9d2798296add14f337dbfa
 workflow-type: tm+mt
 source-wordcount: '568'
 ht-degree: 40%
@@ -24,7 +24,7 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 * Impossible de charger un fichier de plus de 8 Go.
 * Problèmes lors de la publication automatique de ressources envoyées de Workfront à AEM.
 * Le champ Chemin d’accès racine n’est pas disponible pour le champ Balises lors de la modification d’un formulaire de schéma de métadonnées par défaut.
-* Problèmes lors de l’ajout de nouvelles versions dans Workfront à l’aide de processus AEM
+* Problèmes lors de l’ajout de nouvelles versions dans Workfront à l’aide de processus AEM.
 * Lorsque vous exécutez une recherche AEM de ressources disponibles dans Workfront, AEM affiche un message d’erreur.
 * Lorsque vous créez un workflow d’AEM pour la création d’une tâche à partir d’une ressource et que vous ne définissez pas de nom de tâche parent, la tâche n’est pas créée dans Workfront.
 
