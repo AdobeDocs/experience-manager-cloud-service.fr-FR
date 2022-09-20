@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: a5d26c5cf07f60c65405afb2a25c903e97dc59aa
+source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 90%
+source-wordcount: '1093'
+ht-degree: 87%
 
 ---
 
@@ -127,6 +127,10 @@ Le réseau de diffusion de contenu géré par AEM ajoute des en-têtes à chaque
 
 * Le code de pays : `x-aem-client-country`
 * Le code continent : `x-aem-client-continent`
+
+>[!NOTE]
+>
+>Dans le cas du réseau de diffusion de contenu géré par le client, ces en-têtes reflètent l’emplacement du serveur proxy du réseau de diffusion de contenu des clients plutôt que le client réel.  Par conséquent, pour le réseau de diffusion de contenu géré par le client, les en-têtes de géolocalisation doivent être gérés par le réseau de diffusion de contenu client.
 
 Les valeurs des codes de pays sont les codes Alpha-2 décrits [ici](https://fr.wikipedia.org/wiki/ISO_3166-1).
 
