@@ -2,10 +2,10 @@
 title: Validation des transferts de contenu
 description: Utiliser l’outil de transfert de contenu pour valider les transferts de contenu
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b88277cda730d9499c7e2750026b6f415c2a8d0e
+source-git-commit: 015f3b0232861ac961922245650cb02db44daf77
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 96%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ## Prise en main {#getting-started}
 
-Les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Cette fonctionnalité de validation fonctionne en comparant un résumé des noeuds impliqués lors de l’extraction avec un résumé des noeuds impliqués lors de l’ingestion. Si des chemins de nœud inclus dans le résumé d’extraction sont absents du résumé d’ingestion, la validation est considérée comme ayant échoué et une validation manuelle supplémentaire peut être nécessaire.
+Les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Cette fonction de validation fonctionne en comparant un résumé des chemins d’accès de tous les noeuds impliqués pendant l’extraction, avec un résumé des chemins d’accès de tous les noeuds impliqués pendant l’ingestion. Si des chemins de nœud inclus dans le résumé d’extraction sont absents du résumé d’ingestion, la validation est considérée comme ayant échoué et une validation manuelle supplémentaire peut être nécessaire.
 
 >[!INFO]
 >
