@@ -4,10 +4,10 @@ description: Validation et débogage à l’aide des outils Dispatcher (hérité
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 97279969981d6abacbf4d15eb2002cce577d8fc9
+source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
 workflow-type: tm+mt
-source-wordcount: '2304'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -311,6 +311,10 @@ Les fichiers inclus doivent être nommés comme suit :
 |-----------|---------------------------------|
 | Réécritures | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars` |
+
+>[!TIP]
+>
+>Pour pouvoir inclure plus de fichiers de manière beaucoup moins limitée, vous pouvez passer en mode de configuration Dispatcher flexible. Consultez le document [Validation et débogage à l’aide des outils de Dispatcher](/help/implementing/dispatcher/validation-debug.md) pour plus d’informations sur le mode flexible.
 
 Vous pouvez également inclure la version **par défaut** des règles de réécriture, dont le nom est `conf.d/rewrites/default_rewrite.rules`.
 Notez qu’il n’existe pas de version par défaut des fichiers de variables.

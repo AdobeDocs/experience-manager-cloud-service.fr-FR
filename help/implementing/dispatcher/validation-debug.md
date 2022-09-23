@@ -3,10 +3,10 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 6b0fffb599d46a36270e98e0d818f33d5f97e955
+source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
 workflow-type: tm+mt
-source-wordcount: '2655'
-ht-degree: 94%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -315,13 +315,26 @@ Cette instruction est destinée à autoriser les requêtes de fichiers `css`, ma
 
 **included file (...) does not match any known file**
 
-Il existe deux types de fichiers dans la configuration de l’hôte virtuel Apache qui peuvent être spécifiés sous la forme d’inclusions : les réécritures et les variables.
-Les fichiers inclus doivent être nommés comme suit :
+Par défaut, deux types de fichiers dans votre configuration d’hôte virtuel Apache peuvent être spécifiés sous la forme d’inclusions : réécrit et variables.
 
 | Type | Nom du fichier d’inclusion |
 |-----------|---------------------------------|
 | Réécritures | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars` |
+
+En mode flexible, d’autres fichiers peuvent également être inclus, à condition qu’ils se trouvent dans des sous-répertoires (à n’importe quel niveau) de `conf.d` du répertoire , avec le préfixe suivant.
+
+| Inclure le préfixe de répertoire supérieur du fichier |
+|-------------------------------------|
+| `conf.d/includes` |
+| `conf.d/modsec` |
+| `conf.d/rewrites` |
+
+Par exemple, vous pouvez inclure un fichier dans un répertoire nouvellement créé sous `conf.d/includes` comme suit :
+
+```
+Include conf.d/includes/mynewdirectory/myincludefile.conf
+```
 
 Vous pouvez également inclure la version **par défaut** des règles de réécriture, dont le nom est `conf.d/rewrites/default_rewrite.rules`.
 Notez qu’il n’existe pas de version par défaut des fichiers de variables.
