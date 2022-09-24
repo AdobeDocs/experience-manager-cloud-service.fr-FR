@@ -2,7 +2,7 @@
 title: Gestion des noms de domaine personnalisés
 description: Découvrez comment utiliser Cloud Manager pour afficher, mettre à jour, remplacer et supprimer des noms de domaine personnalisés.
 exl-id: 6cab8cf2-22c0-4f4b-9c54-a1425e74ddd0
-source-git-commit: 878381f9c5780864f218a00a272b1600d578dcca
+source-git-commit: 955f4bb55434eeb1a429a1972714b71c5370de1e
 workflow-type: tm+mt
 source-wordcount: '338'
 ht-degree: 100%
