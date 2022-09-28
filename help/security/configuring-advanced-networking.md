@@ -2,10 +2,10 @@
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: 9c9cc0139d6351f99c60828ee0a9d4630224f87c
+source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
-source-wordcount: '3036'
-ht-degree: 97%
+source-wordcount: '3053'
+ht-degree: 96%
 
 ---
 
@@ -336,7 +336,7 @@ Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dé
 ## Clients avec une adresse sortante dédiée héritée {#legacy-dedicated-egress-address-customers}
 
 Si vous avez reçu une adresse IP de sortie dédiée avant le 30/09/2021, votre fonction d’adresse IP de sortie dédiée ne prend en charge que les ports HTTP et HTTPS.
-Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés.
+Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés. En outre, un point de terminaison de sortie dédié peut uniquement parler à une cible via HTTP/HTTPS sur les ports 80/443, respectivement.
 
 ## Réseau privé virtuel (VPN) {#vpn}
 
