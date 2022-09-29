@@ -2,10 +2,12 @@
 title: Console Fragments de contenu
 description: Découvrez comment gérer les fragments de contenu à partir de la console Fragments de contenu.
 landing-page-description: Découvrez comment gérer les fragments de contenu à partir de la console Fragments de contenu , qui se concentre sur l’utilisation de volume élevé de fragments de contenu pour les cas d’utilisation sans affichage, mais également utilisés lors de la création de pages.
+feature: Content Fragments
+role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 3e47ebad94e51379d909384f7e3ec407fba47b4d
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '883'
 ht-degree: 2%
 
 ---
@@ -102,7 +104,7 @@ Le panneau principal/droit (mode Tableau) de la console fournit diverses informa
 * **Dossier**
    * Fournit un lien pour ouvrir le dossier dans la console.
 Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d’accès JCR.
-* **État**
+* **Statut**
    * Informations uniquement
 * **Modifié**
    * Informations uniquement

@@ -1,13 +1,11 @@
 ---
-title: Utilisation de fragments de contenu (ressources - fragments de contenu)
-description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour une diffusion découplée.
-feature: Content Fragments
-role: User
+title: Utilisation de fragments de contenu (Ressources - Fragments de contenu)
+description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages, idéal pour la création de pages et la diffusion sans interface utilisateur.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
-source-wordcount: '2070'
-ht-degree: 98%
+source-wordcount: '2073'
+ht-degree: 96%
 
 ---
 
@@ -88,7 +86,7 @@ Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses e
 >
 >Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
 
-## Fragments de contenu et Content Services {#content-fragments-and-content-services}
+## Fragments de contenu et services de contenu {#content-fragments-and-content-services}
 
 AEM Content Services est conçu pour généraliser la description et la diffusion de contenu dans/à partir d’AEM à des canaux autres que des pages web.
 

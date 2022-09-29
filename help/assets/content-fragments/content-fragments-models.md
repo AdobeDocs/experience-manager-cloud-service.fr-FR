@@ -1,10 +1,8 @@
 ---
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
 description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM et comment créer des fragments de contenu avec du contenu structuré.
-feature: Content Fragments
-role: User
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2893'
 ht-degree: 96%
@@ -229,10 +227,10 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >
 >AEM dispose d’une protection récurrente pour :
 >
->* Les références de contenu
-   >  Cela permet d’empêcher l’utilisateur d’ajouter une référence au fragment actif. Cela pourrait conduire à une boîte de dialogue vide du sélecteur de référence du fragment.
+>* Références du contenu
+   >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
->* Les références de fragment dans GraphQL
+>* Références de fragment dans GraphQL
    >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 

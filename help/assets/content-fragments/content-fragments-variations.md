@@ -1,10 +1,8 @@
 ---
 title: Variations – création de contenu de fragment (Ressources - Fragments de contenu)
 description: Découvrez comment les variations peuvent rendre votre contenu découplé dans AEM encore plus flexible en vous permettant de créer du contenu pour un fragment, puis de créer des variantes de ce contenu selon vos besoins.
-feature: Content Fragments
-role: User
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2286'
 ht-degree: 99%
@@ -448,7 +446,7 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
 1. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert  (ajouté à la variation) ;
+   * le contenu ajouté figure en vert (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
 

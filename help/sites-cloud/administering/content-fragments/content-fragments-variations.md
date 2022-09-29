@@ -1,8 +1,10 @@
 ---
 title: Variations – création de contenu de fragment
 description: Découvrez comment les variations vous permettent de créer du contenu pour le fragment, puis de créer des variantes de ce contenu en fonction de vos besoins. Vous bénéficiez ainsi d’une plus grande flexibilité pour la diffusion sans interface utilisateur et la création de pages.
+feature: Content Fragments
+role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2287'
 ht-degree: 96%
@@ -446,7 +448,7 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
 1. Le maître et la variation seront affichés côte à côte :
 
-   * le contenu ajouté figure en vert  (ajouté à la variation) ;
+   * le contenu ajouté figure en vert (ajouté à la variation) ;
    * le contenu supprimé (de la variation) figure en rouge.
    * le texte remplacé apparaît en bleu
 
