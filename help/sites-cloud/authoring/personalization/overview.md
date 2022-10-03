@@ -2,7 +2,7 @@
 title: Personnalisation et ciblage de contenu
 description: Découvrez comment créer du contenu personnalisé et ciblé avec AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 635a9e577f03c865cdb31f539598fb8fe034d7b7
+source-git-commit: d2975ec84745f9520ead89588ab727af8e43b740
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 12%
@@ -38,9 +38,6 @@ Lors de la création de pages, vous définissez plusieurs expériences, chaque e
 
 ### Offre {#offer}
 
-<!-- not clear - needs clarification -->
-<!-- is an offer a personalized experience, or an activity? -->
-
 Une offre est une expérience personnalisée, souvent disponible pendant une période limitée.
 
 Par exemple, une page d’un exemple de site web peut utiliser des offres comme image de teaser qui apparaît en haut de la page. Une personne de plus de 30 ans et une personne de moins de 30 ans verront différentes offres comme teaser d’expérience.
@@ -62,8 +59,6 @@ Une activité :
 * définit le mappage d’une audience (segment) spécifique avec une expérience spécifique ;
 * définit la période pendant laquelle le ciblage est appliqué ;
 * identifie la variable [moteur de ciblage](#targeting-engine) que vos pages utilisent
-
-<!-- an example for each of the two types would be good -->
 
 L’activité peut être soit une activité de personnalisation, soit une activité de test A/B (dans le cas du workflow de personnalisation AEM et Adobe Target).
 
@@ -87,7 +82,7 @@ Une zone est une subdivisions d’une marque.
 
 Lors de la création, il s’agit du mode de modification utilisé pour activer et configurer les composants à personnaliser.
 
-Vous pouvez [Création de contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md) en utilisant le mode Ciblage d’AEM. Le mode Ciblage et le composant Cible fournissent des outils permettant de créer du contenu pour les expériences de vos activités de marketing.
+Vous pouvez [Création de contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md) en utilisant le mode Ciblage d&#39;AEM. Le mode Ciblage et le composant Cible fournissent des outils permettant de créer du contenu pour les expériences de vos activités de marketing.
 
 ## Fragment d’expérience {#experience-fragments}
 
