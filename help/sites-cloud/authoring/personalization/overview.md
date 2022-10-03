@@ -1,63 +1,122 @@
 ---
 title: Personnalisation et ciblage de contenu
-description: Découvrez comment AEM peut créer du contenu personnalisé
+description: Découvrez comment créer du contenu personnalisé et ciblé avec AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: 8b741b64db43369bf0ca3bfbe947fb58ef5ec05a
+source-git-commit: 635a9e577f03c865cdb31f539598fb8fe034d7b7
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 97%
+source-wordcount: '1041'
+ht-degree: 12%
 
 ---
 
-# Personnalisation et ciblage de contenu {#personalization}
 
-## Personnalisation et ciblage de contenu {#personalization-and-content-targeting}
+# Personnalisation et ciblage de contenu {#personalization-and-content-targeting}
 
-AEM propose un ensemble d’outils permettant de créer du contenu ciblé et de présenter des expériences personnalisées.
+La personnalisation du contenu web que vous fournissez aux clients implique de personnaliser ces expériences en fonction de leurs intérêts et besoins. Vous pouvez le faire en fonction des informations que vous avez à leur sujet ; par exemple, résumé des achats, âge, sexe, zone géographique, etc.
+
+Avec Adobe Experience Manager as a Cloud Service (AEM), vous pouvez créer une sélection de contenu, puis spécifier les audiences (groupes d’utilisateurs finaux) qui verront chaque expérience individuelle. Cela signifie que vous ciblez vos expériences personnalisées vers des audiences spécifiques.
+
+Lorsque votre lecteur est en ligne, votre moteur de ciblage examine les informations disponibles sur l’utilisateur final et les compare aux définitions de l’expérience. Le moteur *&quot;décide&quot;* l’expérience personnalisée à afficher.
+
+AEM fournit un ensemble d’outils pour :
+
+* Création de contenu ciblé, adapté à un large éventail d’audiences, en fonction des informations sur les clients disponibles.
+* Définition des règles utilisées pour résoudre les informations utilisateur connues par rapport à une définition d’audience.
+* Configuration de vos pages pour présenter des expériences personnalisées ciblées ; pour rendre le contenu spécifique applicable à l’utilisateur final actuel.
+
+L’aperçu suivant présente certains termes utilisés pour la personnalisation dans AEM as a Cloud Service, suivis d’un ordre d’action recommandé.
+
+## Expérience {#experience}
+
+Une expérience est un contenu que vous souhaitez présenter à vos utilisateurs finaux.
+
+## Expérience personnalisée {#personalized-experience}
+
+Une expérience personnalisée est une expérience présentée à une audience limitée. L’audience est définie par vous et le contenu n’est affiché que lorsque les informations connues sur l’utilisateur final actuel correspondent à cette définition d’audience.
+
+Lors de la création de pages, vous définissez plusieurs expériences, chaque expérience se résolvant sur une ou plusieurs audiences. Si aucune audience n’est résolue, l’expérience par défaut s’affiche.
+
+### Offre {#offer}
+
+<!-- not clear - needs clarification -->
+<!-- is an offer a personalized experience, or an activity? -->
+
+Une offre est une expérience personnalisée, souvent disponible pendant une période limitée.
+
+Par exemple, une page d’un exemple de site web peut utiliser des offres comme image de teaser qui apparaît en haut de la page. Une personne de plus de 30 ans et une personne de moins de 30 ans verront différentes offres comme teaser d’expérience.
+
+## Public {#audience}
+
+Une audience est un groupe d’utilisateurs finaux que vous souhaitez cibler avec du contenu personnalisé. Lorsqu’un visiteur ouvre une page web, la logique de page détermine l’audience à laquelle il appartient en fonction d’informations connues. Selon cette évaluation, AEM affiche le contenu que vous avez créé pour cette audience.
+
+Les audiences sont basées sur des segments marketing. Ils sont créés dans AEM ou dans Adobe Target ; vous pouvez créer des audiences Adobe Target directement dans AEM à l’aide de la console Audiences .
+
+### Segment {#segment}
+
+Dans AEM ContextHub, une audience est définie sous la forme d’un segment, selon des règles (conditions). Ils sont ensuite résolus pour effectuer le rendu du contenu requis.
+
+## Activité {#activity}
+
+Une activité :
+
+* définit le mappage d’une audience (segment) spécifique avec une expérience spécifique ;
+* définit la période pendant laquelle le ciblage est appliqué ;
+* identifie la variable [moteur de ciblage](#targeting-engine) que vos pages utilisent
+
+<!-- an example for each of the two types would be good -->
+
+L’activité peut être soit une activité de personnalisation, soit une activité de test A/B (dans le cas du workflow de personnalisation AEM et Adobe Target).
+
+Par exemple, une activité peut définir des expériences pour deux audiences distinctes : les personnes de plus de 30 ans et les personnes de moins de 30 ans. Une page de votre site web peut alors afficher différents produits pour chaque audience.
+
+Ou, par exemple, votre catalogue de produits peut inclure des teasers qui mettent l’accent sur les produits saisonniers. Une activité de sports d’été peut définir les audiences que les teasers ciblent pendant les mois d’été.
+
+Utilisez la variable [Console Activités](/help/sites-cloud/authoring/personalization/activities.md) pour créer et gérer les activités de votre [Marques](#brand). Vous pouvez également créer des activités à mesure que vous créez votre [contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md) avec [Mode Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode).
+
+### Brand Portal. {#brand}
+
+Une marque contient une sélection d’activités et de domaines marketing.
+
+Lorsque vous créez une marque à l’aide de la console Activités, elle apparaît également dans la console Offres.
+
+### Domaine {#area}
+
+Une zone est une subdivisions d’une marque.
 
 ## Mode Ciblage {#targeting-mode}
 
-[Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. ](/help/sites-cloud/authoring/personalization/targeted-content.md) Le mode Ciblage et le composant Cible fournissent des outils permettant de créer du contenu pour les expériences de vos activités de marketing.
+Lors de la création, il s’agit du mode de modification utilisé pour activer et configurer les composants à personnaliser.
 
-## Activités {#activities}
+Vous pouvez [Création de contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md) en utilisant le mode Ciblage d’AEM. Le mode Ciblage et le composant Cible fournissent des outils permettant de créer du contenu pour les expériences de vos activités de marketing.
 
-Les activités définissent et organisent vos efforts de marketing. Les activités englobent les audiences ciblées et la période pendant laquelle le ciblage est appliqué.
+## Fragment d’expérience {#experience-fragments}
 
-Par exemple, votre catalogue de produits peut inclure des teasers qui mettent l’accent sur les produits saisonniers. L’activité de sports d’été définit les segments de marketing que les teasers ciblent pendant les mois d’été.
+Ensemble groupé de composants qui constituent une expérience.
 
-Les activités identifient également le [moteur de ciblage](#targeting-engine) que vos pages utilisent.
+[Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) sont constitués de contenu et d’informations (style, etc.) pour créer une expérience ; ils peuvent être utilisés directement lors de la création de pages. Ils peuvent être considérés comme un sous-ensemble d’une page AEM. Ils permettent aux auteurs de contenu de réutiliser du contenu sur plusieurs canaux, y compris les pages Sites et les systèmes tiers.
 
-Utilisez la [console Activités](/help/sites-cloud/authoring/personalization/activities.md) pour créer et gérer les activités de vos marques. Vous pouvez également créer des activités tout en [créant du contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md).
-
-## Expériences {#experiences}
-
-Pour chaque activité, vous définissez une ou plusieurs expériences qui identifient les audiences que vous ciblez. AEM vous permet de contrôler le contenu qui constitue chaque expérience.
-
-Les audiences sont basées sur les segments de marketing créés dans AEM ou Adobe Target. Lorsqu’un visiteur ouvre une page web, la logique de la page détermine l’audience à laquelle ce visiteur appartient et affiche le contenu que vous avez créé pour cette audience.
-
-Par exemple, une activité définit les expériences destinées à deux audiences distinctes : les femmes âgées de moins de 30 ans et les femmes âgées de plus de 30 ans. La page réservée aux femmes sur un site web peut présenter différents produits pour chaque expérience.
-
-Vous définissez des expériences pour une activité. Vous pouvez utiliser la [console Activités](/help/sites-cloud/authoring/personalization/activities.md#adding-editing-an-activity-using-the-activities-console) ou le [mode de ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md#adding-and-removing-experiences-using-targeting-mode) pour ajouter des expériences à une activité.
-
-## Offres {#offers}
-
-Une offre constitue du contenu qui s’affiche à un endroit d’une page pour créer une expérience. Utilisez différentes offres pour différentes expériences afin d’optimiser l’efficacité du contenu destiné à vos audiences.
-
-Par exemple, la page pour les femmes de l’exemple peut utiliser des offres en tant qu’image de teaser apparaissant en haut de la page. L’offre utilisée en tant que teaser de l’expérience destinée aux femmes de plus de 30 ans n’est pas la même que celle utilisée pour les femmes de moins de 30 ans.
-
-Utilisation [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) pour créer des offres que vous pouvez utiliser dans plusieurs expériences. Créez des offres à utiliser une seule fois ou ajoutez des offres issues d’une bibliothèque d’offres lors de la [création de contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md).
-
-<!--
-Use the [Offers console](/help/sites-cloud/authoring/personalization/offers.md) to create offers that you can use in multiple experiences. Create single-use offers or add offers from an offer library when [authoring targeted content](/help/sites-cloud/authoring/personalization/targeted-content.md).
--->
+Pour un exemple de personnalisation, un titre, une image, une description et un bouton d’appel à l’action peuvent être combinés afin de former une expérience de teaser. L’utilisation des fragments d’expérience est un élément clé de l’utilisation de la personnalisation Adobe Target.
 
 ## Moteur de ciblage {#targeting-engine}
 
-Le moteur de ciblage est le mécanisme sous-jacent à la logique du contenu ciblé. Les [activités](/help/sites-cloud/authoring/personalization/activities.md) sont configurées pour utiliser l’un des deux moteurs de ciblage disponibles : AEM et Adobe Target.
+Le moteur de ciblage est le mécanisme qui résout la logique du contenu ciblé. Les [activités](/help/sites-cloud/authoring/personalization/activities.md) sont configurées pour utiliser l’un des deux moteurs de ciblage disponibles : AEM et Adobe Target.
 
-### AEM {#aem}
+Le moteur de ciblage est la plateforme ou le mécanisme qui décide du système de personnalisation à utiliser.
 
-AEM fournit un moteur de ciblage intégré qui traite les requêtes de page et détermine le contenu à afficher. Lorsque vous utilisez le moteur de ciblage AEM, vous êtes limité aux segments créés dans AEM pour définir les audiences de vos expériences.
+Actuellement, AEM peut utiliser :
+
+* [AEM ContextHub](#aem-contexthub) (AEM standard)
+* la valeur [Adobe Target](#adobe-target) moteur de personnalisation
+
+>[!CAUTION]
+>
+>Une seule page AEM ne peut pas utiliser les deux moteurs en même temps.
+>
+>Vous pouvez utiliser les deux moteurs sur des pages distinctes du même site.
+
+### AEM ContextHub {#aem-contexthub}
+
+AEM fournit le moteur de ciblage intégré ContextHub qui traite les requêtes de page et détermine le contenu à afficher. Lorsque vous utilisez le moteur de ciblage AEM, vous êtes limité aux segments créés dans AEM pour définir les audiences de vos expériences.
 
 ### Adobe Target {#adobe-target}
 
@@ -66,4 +125,20 @@ Avec le moteur de ciblage Adobe Target, les informations recueillies suite aux 
 * Avec ce moteur de ciblage, vous utilisez les segments que vous importez à partir d’Adobe Target pour définir les audiences de vos expériences.
 * Les activités qui utilisent le moteur Adobe Target sont [synchronisées sur Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
-Vous pouvez utiliser ce moteur lorsque vous avez intégré Adobe Target. <!--You can use this engine when you have [integrated with Adobe Target](/help/sites-administering/opt-in.md).-->
+Vous pouvez utiliser ce moteur lorsque vous avez [intégré à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+
+## Comment configurer votre contenu personnalisé {#how-to-setup-personalized-content}
+
+Plusieurs étapes et définitions sont nécessaires pour diffuser votre contenu personnalisé :
+
+1. Intégrez AEM à votre moteur de ciblage.
+
+1. Configurez les audiences.
+
+   1. Selon votre moteur de ciblage, définissez l’audience ou le segment, ainsi que les règles.
+
+1. Créez votre marque et vos activités.
+
+1. Créez la sélection d’expériences que vous souhaitez afficher aux différentes audiences.
+
+1. Personnalisez ces expériences en les ciblant sur des audiences spécifiques (segments).
