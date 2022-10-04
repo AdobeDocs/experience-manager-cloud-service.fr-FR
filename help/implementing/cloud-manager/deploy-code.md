@@ -2,10 +2,10 @@
 title: Déploiement de votre code
 description: Découvrez comment déployer votre code à l’aide des pipelines de Cloud Manager dans AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cb08fcbd6c1060466ca9e6b4639774d43b70c83c
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 100%
+source-wordcount: '1220'
+ht-degree: 98%
 
 ---
 
@@ -121,6 +121,10 @@ Les étapes suivantes expirent s’ils sont en attente de commentaires de l’ut
 ## Processus de déploiement {#deployment-process}
 
 Tous les déploiements de Cloud Service suivent un processus continu pour garantir un temps d’arrêt nul. Reportez-vous au document [Fonctionnement des déploiements par roulement](/help/implementing/deploying/overview.md#how-rolling-deployments-work) pour en savoir plus.
+
+>[!NOTE]
+>
+>Le cache de Dispatcher est effacé sur chaque déploiement. Il est ensuite réchauffé avant que les nouveaux noeuds de publication n’acceptent le trafic.
 
 ## Réexécution d’un déploiement en production {#Reexecute-Deployment}
 
