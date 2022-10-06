@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 2e0846ba3addf2ecc7d075d4da85620d7d9e9e2f
+source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
 workflow-type: tm+mt
-source-wordcount: '1093'
-ht-degree: 87%
+source-wordcount: '1139'
+ht-degree: 77%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 87%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="Réseau de diffusion de contenu dans AEM as a Cloud Service"
->abstract="AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM."
+>abstract="AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des noeuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM."
 
 AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM.
 
@@ -25,7 +25,7 @@ Consultez également les vidéos suivantes [Cloud 5 AEM CDN Partie 1](https://ex
 
 ## Réseau de diffusion de contenu géré AEM  {#aem-managed-cdn}
 
-Suivez les étapes des sections ci-dessous pour utiliser l’interface utilisateur en libre-service de Cloud Manager afin de préparer la diffusion de contenu à l’aide du réseau de diffusion de contenu prêt à l’emploi d’AEM :
+Consultez les sections ci-dessous pour utiliser l’interface utilisateur en libre-service de Cloud Manager afin de préparer la diffusion de contenu à l’aide du réseau de diffusion de contenu prêt à l’emploi AEM :
 
 1. [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
@@ -38,7 +38,7 @@ Consultez [Gestion des listes autorisées d’adresses IP](/help/implementing/cl
 
 >[!CAUTION]
 >
->Seules les requêtes provenant des adresses IP autorisées seront diffusées par le biais du réseau de diffusion de contenu géré par AEM. Si vous pointez votre propre réseau de diffusion de contenu sur le réseau géré par AEM, assurez-vous que les adresses IP de votre réseau de diffusion de contenu sont incluses dans la liste autorisée.
+>Seules les requêtes provenant des adresses IP autorisées seront diffusées par AEM réseau de diffusion de contenu géré. Si vous pointez votre propre réseau de diffusion de contenu sur le réseau géré par AEM, assurez-vous que les adresses IP de votre réseau de diffusion de contenu sont incluses dans la liste autorisée.
 
 ## Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM {#point-to-point-CDN}
 
@@ -61,7 +61,7 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 
 Instructions de configuration :
 
-1. Pointez votre réseau CDN sur l’entrée du réseau CDN Adobe en tant que domaine d’origine. Par exemple, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Pointez votre réseau de diffusion de contenu sur l’entrée du réseau de diffusion de contenu Adobe en tant que domaine d’origine. Par exemple, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Le SNI doit également être défini sur l’entrée du réseau CDN Adobe..
 1. Définissez l’en-tête hôte sur le domaine d’origine. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine afin qu’AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
@@ -120,6 +120,19 @@ Vous trouverez ci-dessous plusieurs exemples de configuration de plusieurs princ
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
+
+## Disposition du contenu {#content-disposition}
+
+Pour le niveau publication, la valeur par défaut pour la diffusion des objets Blob est en tant que pièce jointe. Il peut être remplacé à l’aide de la méthode standard [en-tête de disposition du contenu](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) dans le dispatcher.
+
+Vous trouverez ci-dessous un exemple de la manière dont la configuration doit se présenter :
+
+```
+<LocationMatch "^\/content\/dam.*\.(pdf).*">
+ Header unset Content-Disposition
+ Header set Content-Disposition inline
+</LocationMatch>
+```
 
 ## En-têtes de géolocalisation {#geo-headers}
 
