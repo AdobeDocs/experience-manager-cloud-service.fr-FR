@@ -2,10 +2,10 @@
 title: Tableau de bord des licences
 description: Cloud Manager fournit un tableau de bord pour un affichage convivial des droits des produits AEMaaCS disponibles pour votre entreprise ou client.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: 28036cd047404babddbb1365c80327adc5b6fa71
+source-git-commit: b5078c849c9fa088546f5df1fcbef1dec59f3cdb
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 6%
+source-wordcount: '876'
+ht-degree: 5%
 
 ---
 
@@ -83,6 +83,10 @@ Les requêtes de contenu présentent des variations avec les outils de création
 | Blocages de trafic | L’utilisation d’un bloqueur de suivi dans un navigateur peut exclure certaines requêtes du suivi. |
 | Pare-feu | Les pare-feu peuvent bloquer le suivi Analytics. Cela est plus fréquent avec les pare-feu d’entreprise. |
 
+### Que se passe-t-il si je souhaite en savoir plus sur le volume de ma demande de contenu ? {#current-request-volumes}
+
+Si vous souhaitez obtenir des informations supplémentaires sur le volume des demandes de contenu affiché dans le tableau de bord des licences, votre équipe d’Adobe peut fournir un rapport qui indique les principaux facteurs de volume des demandes de contenu. Contactez votre équipe d’Adobe ou l’assistance clientèle d’Adobe pour demander un rapport sur l’utilisation optimale.
+
 ### Que se passe-t-il si j’utilise mon propre réseau de diffusion de contenu ? {#using-own-cdn}
 
-Le tableau de bord de requêtes de contenu de Cloud Manager n’affiche pas le suivi pour votre propre réseau de diffusion de contenu.
+Le tableau de bord de la licence affiche uniquement les données suivies par le réseau de diffusion de contenu du Cloud Service.  Si vous choisissez d’importer votre propre réseau de diffusion de contenu (BYOCDN), vous rapporterez votre volume de demande de contenu à l’Adobe sur une base annuelle, comme indiqué dans votre contrat.

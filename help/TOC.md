@@ -8,9 +8,9 @@ user-guide-description: Ressources d’aide autonome et liens vers la documentat
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 05adf79b66c36e6354fe95fe4d5f654b49980589
+source-git-commit: 115c98b207d3dea89cbeb3dbc8559a81efefe461
 workflow-type: tm+mt
-source-wordcount: '3726'
+source-wordcount: '3729'
 ht-degree: 94%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 94%
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
+         + [Notes de mise à jour de la version 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
          + [Notes de mise à jour de la version 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
          + [Notes de mise à jour de la version 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
          + [Notes de mise à jour de la version 2022.6.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-6-0.md)
@@ -132,7 +133,7 @@ ht-degree: 94%
 + Intégration {#onboarding}
    + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
    + Parcours d’intégration {#journey}
-      + [Parcours d’intégration des fragments d’expérience](/help/journey-onboarding/overview.md)
+      + [Parcours d’intégration du commerce électronique](/help/journey-onboarding/overview.md)
       + [Préparation à l’intégration](/help/journey-onboarding/preparation.md)
       + [Terminologie as a Cloud Service AEM](/help/journey-onboarding/terminology.md)
       + [Le Admin Console](/help/journey-onboarding/admin-console.md)
@@ -451,7 +452,7 @@ ht-degree: 94%
       + [Gestion des ressources Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Prise en charge 3D](/help/assets/dynamic-media/assets-3d.md)
-      + [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
+      + [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
       + [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md)
       + [Images panoramiques](/help/assets/dynamic-media/panoramic-images.md)
       + [Visionneuses de médias mixtes](/help/assets/dynamic-media/mixed-media-sets.md)
