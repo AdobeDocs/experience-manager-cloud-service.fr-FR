@@ -2,10 +2,10 @@
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 13885fbb3ed35c43ccfff03d47e4dc3ced2bc327
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '14053'
-ht-degree: 97%
+source-wordcount: '14061'
+ht-degree: 96%
 
 ---
 
@@ -129,7 +129,7 @@ Le W3C émet plusieurs suggestions, comme celles énumérées ci-dessous. Chacun
 
 ### Média temporel (1.2) {#time-based-media}
 
-[Règle 1.2 – Média temporel : proposer des versions de remplacement aux médias temporels.](https://www.w3.org/TR/WCAG/#time-based-media)
+[Règle 1.2 – Média temporel : propose des versions de remplacement aux médias temporels.](https://www.w3.org/TR/WCAG/#time-based-media)
 
 Cette section traite du contenu web *temporel*, notamment le contenu que l’utilisateur peut lire (contenu vidéo, audio et animé, par exemple) et qui peut être pré-enregistré ou en direct.
 
@@ -438,7 +438,7 @@ Appliquez les règles indiquées dans la section [Comment remplir le critère de
 
 Les concepteurs concentrent généralement leurs efforts sur le côté visuel (couleur, forme, style du texte, ou position absolue ou relative d’un élément du contenu) de la présentation des informations. Même s’il peut s’agir de techniques de conception très efficaces pour véhiculer l’information (et améliorer l’accessibilité générale pour les utilisateurs sans handicap visuel, mais ayant besoin d’une meilleure accessibilité cognitive), les personnes aveugles ou malvoyantes peuvent ne pas être en mesure d’accéder à l’information nécessitant une identification visuelle des attributs (position, couleur ou forme, par exemple).
 
-De même, les informations qui impliquent de distinguer différents sons (contenu verbalisé par un homme ou une femme, par exemple) présentent un obstacle à l’accessibilité pour les personnes malentendantes si elles ne sont pas reproduites dans un équivalent textuel du contenu audio.
+De même, les informations qui nécessitent de distinguer différents sons (par exemple, du contenu parlé masculin ou féminin) présentent des obstacles à l’accessibilité pour les personnes malentendantes, si elles ne sont reflétées dans aucun texte secondaire pour le contenu audio.
 
 >[!NOTE]
 >
@@ -449,7 +449,7 @@ De même, les informations qui impliquent de distinguer différents sons (conten
 Veillez à ce que les informations qui reposent sur des caractéristiques visuelles du contenu de la page soient également présentées dans un autre format.
 
 * Ne vous fiez pas à la seule position visuelle pour transmettre une information. Si, par exemple, vous souhaitez renvoyer les utilisateurs à un menu sur le côté droit de la page pour accéder à d’autres informations, ne renvoyez pas au *menu à droite* ; nommez plutôt le menu (par exemple au moyen d’un titre) et faites référence à ce nom dans le texte.
-* Ne vous fiez pas au style de texte (gras ou italique par exemple) comme seul moyen de transmettre l’information.
+* Ne vous fiez pas au style du texte (par exemple, le texte en gras ou en italique) comme seul moyen de transmettre des informations.
 
 >[!NOTE]
 >
@@ -490,7 +490,7 @@ Si la couleur sert à véhiculer l’information, veillez à ce que cette inform
 
 Par exemple, assurez-vous que les informations fournies par couleur sont également fournies explicitement dans le texte.
 
-Si la couleur est utilisée comme indice pour fournir des informations, vous devez fournir un indice visuel supplémentaire, tel que la modification du style (gras ou italique, par exemple) ou de la police. Cela aide les personnes malvoyantes ou ne percevant pas bien les couleurs à identifier l’information. Cependant, il ne peut pas être entièrement fiable, car il n’aidera pas les personnes qui ne peuvent pas voir du tout la page. Il est donc (parfois) utile de fournir du texte caché ou d’utiliser des solutions programmatiques, comme la [suite de normes web ARIA (Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/) pour transmettre cette information à des utilisateurs non voyants.
+Si la couleur est utilisée comme indice pour fournir des informations, vous devez fournir un indice visuel supplémentaire, tel que la modification du style (gras, italique, par exemple) ou de la police. Cela permet aux personnes malvoyantes ou malvoyantes d’identifier les informations. Cependant, il ne peut pas être entièrement fiable, car il n’aidera pas les personnes qui ne peuvent pas voir du tout la page. Il est donc (parfois) utile de fournir du texte caché ou d’utiliser des solutions programmatiques, comme la [suite de normes web ARIA (Accessible Rich Internet Applications)](https://www.w3.org/WAI/standards-guidelines/aria/) pour transmettre cette information à des utilisateurs non voyants.
 
 #### En savoir plus – Utilisation de la couleur (1.4.1) {#more-information-use-of-color}
 
@@ -613,7 +613,7 @@ En plus de suivre les directives données à la section [Comment remplir le crit
 
 #### Objectif – Texte sous forme d’image (1.4.5) {#purpose-images-of-text}
 
-Le texte sous forme d’image est souvent utilisé lorsqu’un style particulier de texte est nécessaire, tel un logotype ou si le texte a été généré à partir d’une autre source (par exemple la copie numérisée d’un document papier). Toutefois, par rapport au texte présenté en code HTML ou stylisé à l’aide d’une feuille de style CSS, il n’est pas possible de modifier la taille ou l’aspect du texte sous forme d’image, ce qui peut être nécessaire pour les personnes malvoyantes ou ayant des difficultés de lecture.
+Les images de texte sont souvent utilisées lorsqu’un style de texte particulier est recommandé ; par exemple, un logotype ou si du texte a été généré à partir d’une autre source (une analyse d’un document papier, par exemple). Cependant, par rapport au texte présenté en HTML et stylisé à l’aide de CSS, les images de texte n’ont pas la possibilité de modifier la taille ou l’aspect qui peut s’avérer nécessaire pour les personnes ayant des déficiences visuelles ou des difficultés de lecture.
 
 #### Comment procéder – Texte sous forme d’image (1.4.5) {#how-to-meet-images-of-text}
 
@@ -1065,7 +1065,7 @@ Ce critère de réussite a pour but de s’assurer que les fonctionnalités sont
 * lancement de nouvelles fenêtres lorsqu’un composant reçoit le focus ;
 * changement de focus pour un autre composant lorsque ce composant reçoit le focus ;
 
-Il est possible de déplacer le focus vers un contrôle à l’aide du clavier (par exemple, en accédant à un contrôle grâce à la touche de tabulation) ou à l’aide de la souris (par exemple, en cliquant sur un champ de texte). Le déplacement de la souris au-dessus d’un contrôle n’a aucun effet sur le focus, sauf si un script implémente ce comportement. Notez que pour certains types de contrôles, cliquer sur un contrôle revient à l’activer (par exemple, un bouton). Cette action peut, en retour, déclencher un changement de contexte.
+Le focus peut être déplacé vers un contrôle à l’aide du clavier (par exemple, en accédant à un contrôle par tabulation) ou de la souris (par exemple, en cliquant sur un champ de texte). Le déplacement de la souris au-dessus d’un contrôle n’a aucun effet sur le focus, sauf si un script implémente ce comportement. Notez que pour certains types de contrôles, cliquer sur un contrôle peut également activer le contrôle (par exemple, un bouton), ce qui peut, à son tour, déclencher une modification de contexte.
 
 #### Comment procéder – Sur focus (3.2.1) {#how-to-meet-on-focus}
 
@@ -1214,8 +1214,7 @@ Le positionnement des libellés est également important, car ils permettent de 
 
 * Cases à cocher ou cases d’option :
 Les libellés sont positionnés immédiatement à droite du champ.
-* Tous les autres composants de formulaire (par ex., zones de texte, zones de liste modifiable) :
-Les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
+* Tous les autres composants de formulaire (par exemple, les zones de texte, les zones de liste modifiable) : Les libellés sont positionnés immédiatement au-dessus ou à gauche du champ.
 
 Dans les formulaires simples avec des fonctionnalités très limitées, un bouton `Submit` approprié peut servir de libellé pour le champ adjacent (par exemple `Search`). Cela s’avère utile dans les cas où il peut être difficile de trouver de l’espace pour le texte du libellé.
 

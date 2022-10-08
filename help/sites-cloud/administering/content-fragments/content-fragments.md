@@ -4,10 +4,10 @@ description: Découvrez comment les fragments de contenu dans Adobe Experience M
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 90%
+source-wordcount: '2109'
+ht-degree: 89%
 
 ---
 
@@ -63,8 +63,8 @@ Pour vous aider à ce faire, vous pouvez prévisualiser la [Arborescence de stru
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
 
-* Canal physique ; ordinateur de bureau ou appareil mobile par exemple.
-* Forme de livraison sur un canal physique ; « page des détails produit »/« page catégorie de produit » sur ordinateur de bureau ou « web mobile »/« Application mobile » pour les appareils mobiles.
+* Canal physique; par exemple, bureau, mobile.
+* Forme de diffusion sur un canal physique ; par exemple, la &quot;page des détails du produit&quot;, la &quot;page de catégorie de produit&quot; pour ordinateur de bureau ou &quot;web mobile&quot;, &quot;application mobile&quot; pour mobile.
 
 Cependant, vous ne voulez probablement pas utiliser exactement le même contenu pour tous les canaux et vous devez optimiser votre contenu en fonction des différents canaux.
 

@@ -2,10 +2,10 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3296'
-ht-degree: 100%
+source-wordcount: '3297'
+ht-degree: 98%
 
 ---
 
@@ -188,7 +188,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
    * Type : `String`
    * Valeur : titre (du dossier) que vous souhaitez afficher dans la console **Modèles**.
 
-1. Outre les autorisations et les droits de création standard (par exemple, `content-authors`), vous devez maintenant affecter les groupes et définir les droits d’accès nécessaires (listes de contrôle d’accès) pour que les créateurs puissent créer des modèles dans le nouveau dossier.
+1. Outre les autorisations et les privilèges de création standard (par exemple, `content-authors`) vous devez maintenant attribuer un ou plusieurs groupes et définir les droits d’accès requis (listes de contrôle d’accès) pour que vos auteurs puissent créer des modèles dans le nouveau dossier.
 
    Le groupe `template-authors` est le groupe par défaut qui doit être affecté. Pour plus d’informations, consultez la section [ACL et groupes](#acls-and-groups).
 

@@ -5,10 +5,10 @@ topics: Commerce
 feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '766'
-ht-degree: 100%
+source-wordcount: '768'
+ht-degree: 93%
 
 ---
 
@@ -117,7 +117,7 @@ En fonction de votre cas d’utilisation, vous souhaitez créer vos propres mod�
 Les configurations de production peuvent varier sous plusieurs aspects.
 
 * Vous pouvez disposer d’un point d’entrée GraphQL fédéré unique qui combine des données GraphQL AEM et Adobe Commerce au lieu de personnaliser le client Apollo.
-* Votre application PWA Studio peut utiliser directement l’URL de point d’entrée GraphQL d’AEM, sans proxy avec UPWARD. Le proxy peut également être déplacé vers une autre couche (par exemple, CDN).
+* Votre application PWA Studio peut utiliser directement l’URL de point d’entrée GraphQL d’AEM, sans proxy avec UPWARD. Le proxy peut également être déplacé vers une autre couche (CDN, par exemple).
 * L’approche qui vous convient le mieux dépend aussi grandement de la manière dont vous diffusez l’application de PWA Studio à l’utilisateur final.
 
 Cette extension est fournie avec deux exemples.

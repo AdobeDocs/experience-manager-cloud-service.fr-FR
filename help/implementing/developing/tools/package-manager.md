@@ -4,10 +4,10 @@ description: Découvrez les principes de base d’AEM; gestion des packs avec le
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '3584'
-ht-degree: 100%
+source-wordcount: '3585'
+ht-degree: 99%
 
 ---
 
@@ -33,11 +33,11 @@ Les packs de contenu créés pour les applications AEM as a Cloud Service doiven
 
 >[!NOTE]
 >
->Les packs ne peuvent renfermer que du contenu. Toute fonctionnalité (par exemple, contenu stocké sous `/apps`) doit être [déployée à l’aide de votre pipeline CI/CD dans Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
+>Les packs ne peuvent renfermer que du contenu. Toute fonctionnalité (par exemple, le contenu stocké sous `/apps`) doit être [déployé à l’aide de votre pipeline CI/CD dans Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
 
 >[!IMPORTANT]
 >
->L’interface utilisateur du gestionnaire de packs peut renvoyer un message d’erreur **undefined** si l’installation d’un pack prend plus de 10 minutes.
+>L’interface utilisateur du Gestionnaire de package peut renvoyer un message d’erreur **non défini** si l’installation d’un package prend plus de 10 minutes.
 >
 >Cela n’est pas dû à une erreur lors de l’installation, mais à une temporisation que Cloud Service applique à toutes les requêtes.
 >

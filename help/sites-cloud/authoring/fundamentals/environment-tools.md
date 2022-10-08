@@ -2,10 +2,10 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: f9a122f27ab1e2dc8ba429ce9048e3eab0509db9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2154'
-ht-degree: 100%
+source-wordcount: '2157'
+ht-degree: 97%
 
 ---
 
@@ -58,7 +58,7 @@ Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côt
 
 L’aspect et la gestion de l’explorateur dépendent du type d’appareil utilisé :
 
-* **Appareils mobiles (p. ex. iPad)**
+* **Appareil mobile (par exemple, iPad)**
 
    L’explorateur de composants couvre entièrement la page en cours de modification.
 
@@ -230,7 +230,7 @@ Sélectionnez le type de référence approprié pour en savoir plus. Dans certai
 
 ## Événements – Chronologie {#events-timeline}
 
-Pour accéder aux ressources appropriées (par ex. des pages de la console **Sites** ou des ressources de la console **Ressources**), utilisez la [chronologie afin d’afficher l’activité récente d’un élément sélectionné](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
+Pour accéder aux ressources appropriées (par exemple, les pages de la **Sites** ou des ressources de la console **Ressources** ) [La chronologie peut être utilisée pour afficher l’activité récente sur n’importe quel élément sélectionné.](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline).
 
 Ouvrez la console appropriée, puis accédez à la ressource requise et ouvrez la **Chronologie** à l’aide de :
 
@@ -282,7 +282,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* Certains modes peuvent ne pas être disponibles en fonction des caractéristiques de la page.
 >* L’accès à certains modes implique que vous disposiez des droits ou autorisations appropriés.
 >* Le mode Développeur n’est pas accessible sur les appareils mobiles en raison de restrictions d’espace.
->* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour permuter entre l’**Aperçu** et le mode actuellement sélectionné (par ex. **Modifier**, **Disposition**, etc.).
+>* Il existe une [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) ( `Ctrl-Shift-M`) pour basculer entre les **Aperçu** et le mode actuellement sélectionné (par exemple : **Modifier**, **Disposition**, etc.).
 >
 
 
@@ -304,7 +304,7 @@ Vous pouvez également effectuer une saisie dans le champ de chemin d’accès. 
 
 ![Bouton Ouvrir la boîte de dialogue de sélection](/help/sites-cloud/authoring/assets/path-selection-completion.png)
 
-### Chemin  Navigateur {#path-browser}
+### Explorateur de chemins d’accès {#path-browser}
 
 L’explorateur de chemins d’accès est organisé de la même façon que le [mode Colonnes](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) de la console Sites afin de permettre une sélection plus détaillée des ressources.
 

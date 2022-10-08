@@ -3,10 +3,10 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: c1889a6d905be6fd84e75416839a85e67a5f048a
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2693'
+ht-degree: 89%
 
 ---
 
@@ -284,11 +284,11 @@ Votre configuration de ferme comporte quatre sections où vous pouvez inclure vo
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-Vous pouvez également inclure la version **par défaut** de ces fichiers, dont les noms sont précédés du mot `default_`, par ex. `../filters/default_filters.any`.
+Vous pouvez également inclure la variable **default** version de ces fichiers, dont les noms sont précédés du mot `default_`, par exemple : `../filters/default_filters.any`.
 
 **include statement at (...), outside any known location: ...**
 
-Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êtes pas autorisé à utiliser l’instruction `$include` ; par exemple, les éléments suivants généreraient cette erreur :
+Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êtes pas autorisé à utiliser la variable `$include` , par exemple, l’instruction suivante génère cette erreur :
 
 ```
 /invalidate {
@@ -303,7 +303,7 @@ Cette erreur est générée lorsque vous ne spécifiez pas d’inclusion pour `/
 
 **filter must not use glob pattern to allow requests**
 
-Il n’est pas sûr d’autoriser les requêtes avec une règle de style `/glob`, qui est mise en correspondance avec la ligne de requête complète, par exemple :
+Il n’est pas sécurisé d’autoriser les requêtes avec une `/glob` règle de style, qui est comparée à la ligne de requête complète, par exemple :
 
 ```
 /0100 {

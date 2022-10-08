@@ -2,10 +2,10 @@
 title: Tâches asynchrones
 description: Adobe Experience Manager optimise les performances en exécutant de manière asynchrone certaines tâches gourmandes en ressources.
 exl-id: 9c5c4604-1290-4dea-a14d-08f3ab3ef829
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 100%
+source-wordcount: '886'
+ht-degree: 98%
 
 ---
 
@@ -30,7 +30,7 @@ Vous pouvez afficher l’état des tâches asynchrones à partir du tableau de b
 >
 >Pour plus d’informations, voir [Configurations de files d’attente](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## Surveillance de l’état des opérations asynchrones {#monitor-the-status-of-asynchronous-operations}
+## Surveillance du statut des opérations asynchrones {#monitor-the-status-of-asynchronous-operations}
 
 Chaque fois qu’AEM traite une opération de manière asynchrone, vous recevez une notification dans votre [boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) et par email (si activé).
 
@@ -101,7 +101,7 @@ Si le nombre de ressources ou de dossiers à supprimer dépasse le nombre seuil,
 
    ![Seuil de suppression des ressources](assets/async-delete-threshold.png)
 
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès et échec.
+1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès, échec.
 1. Enregistrez les modifications.
 
 ### Configuration des opérations de déplacement de ressources asynchrones {#configuring-asynchronous-move-operations}
@@ -114,7 +114,7 @@ Si le nombre de ressources/dossiers ou de références à déplacer dépasse le 
 
    ![Seuil de déplacement des ressources](assets/async-move-threshold.png)
 
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès et échec.
+1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, Par exemple, le succès a échoué.
 1. Enregistrez les modifications.
 
 ### Configuration des opérations de déplacement de page asynchrones {#configuring-asynchronous-page-move-operations}
@@ -127,14 +127,14 @@ Si le nombre de références aux pages à déplacer dépasse le nombre seuil, l�
 
    ![Seuil de déplacement de page](assets/async-page-move.png)
 
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès et échec.
+1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, Par exemple, le succès a échoué.
 1. Enregistrez les modifications.
 
-### Configuration des opérations MSM asynchrones {#configuring-asynchronous-msm-operations}
+### Configuration des opérations de MSM asynchrones {#configuring-asynchronous-msm-operations}
 
 1. Dans la navigation globale, cliquez sur **[!UICONTROL Outils]** > **[!UICONTROL Opérations]** > **[!UICONTROL Console web]**.
 1. Dans la console web, ouvrez la **[!UICONTROL configuration de traitement des tâches des opérations de déplacement de page asynchrones.]**
-1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, par exemple, succès et échec.
+1. Cochez l’option **Activer les notifications électroniques** pour recevoir des notifications par email concernant l’état de cette tâche, Par exemple, le succès a échoué.
 
    ![Configuration MSM](assets/async-msm.png)
 

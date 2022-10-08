@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
 exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '386'
+ht-degree: 93%
 
 ---
 
@@ -52,7 +52,7 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de ma
 4. Affectez la configuration enfant à un site AEM
 
    * Accédez à la console AEM Sites.
-   * Accédez à la racine de région ou de langue de la structure de votre site ; par exemple, /content/venia/us _ou_ /content/venia/us/en pour la page échantillon Venia.
+   * Accédez à la racine de région ou de langue de la structure de votre site, par exemple /content/venia/us _ou_ /content/venia/us/en pour la page d’exemple Venia
    * Sélectionnez la page et ouvrez ses propriétés.
    * Sélectionnez l’onglet Avancé.
    * Dans la section `Configuration`, sélectionnez la configuration que vous avez créée à l’étape.  3

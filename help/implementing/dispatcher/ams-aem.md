@@ -3,10 +3,10 @@ title: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Serv
 description: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 100%
+source-wordcount: '1447'
+ht-degree: 98%
 
 ---
 
@@ -116,8 +116,7 @@ liés peuvent également être supprimés.
 
 ### Renommer les fichiers de fermes
 
-Toutes les fermes dans `conf.d/enabled_farms` doivent être renommées afin de correspondre au motif `*.farm`.
-Par exemple, le fichier de ferme appelé `customerX_farm.any` doit être renommé `customerX.farm`.
+Toutes les fermes dans `conf.d/enabled_farms` doit être renommé pour correspondre au modèle. `*.farm`, par exemple, un fichier de ferme appelé `customerX_farm.any` doit être renommé `customerX.farm`.
 
 ### Vérifier le cache
 

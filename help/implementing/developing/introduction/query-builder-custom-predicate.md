@@ -2,10 +2,10 @@
 title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder
 description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '667'
-ht-degree: 100%
+source-wordcount: '669'
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,7 @@ Un prédicat personnalisé peut également réaliser d’autres actions qui ne s
 
 Un évaluateur gère l’évaluation de certains prédicats qui constituent les contraintes définissant une requête.
 
-Il mappe une contrainte de recherche de plus haut niveau (par exemple `width>200`) sur une requête JCR spécifique adaptée au modèle de contenu actuel (par exemple `metadata/@width > 200`). Il peut également filtrer manuellement les nœuds et vérifier leurs contraintes.
+Elle mappe une contrainte de recherche de niveau supérieur (telle que `width>200`) à une requête JCR spécifique qui correspond au modèle de contenu réel (par exemple, `metadata/@width > 200`). Il peut également filtrer manuellement les nœuds et vérifier leurs contraintes.
 
 >[!TIP]
 >
@@ -60,7 +60,7 @@ En guise d’illustration, cette section décrit comment créer un évaluateur d
 
 * `cq:lastReplicated` qui stocke la date de la dernière action de réplication.
 * `cq:lastReplicatedBy` qui stocke l’ID de l’utilisateur qui a déclenché la dernière action de réplication.
-* `cq:lastReplicationAction` qui stocke la dernière action de réplication (par exemple, activation ou désactivation).
+* `cq:lastReplicationAction` qui stocke la dernière action de réplication (par exemple, Activation, Désactivation).
 
 #### Requête sur les métadonnées de réplication avec les évaluateurs de prédicats par défaut {#querying-replication-metadata-with-default-predicate-evaluators}
 

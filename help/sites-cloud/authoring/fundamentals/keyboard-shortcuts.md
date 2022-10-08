@@ -2,10 +2,10 @@
 title: Raccourcis clavier pour la modification de pages
 description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la modification de pages
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 79%
+source-wordcount: '238'
+ht-degree: 73%
 
 ---
 
@@ -21,7 +21,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
-| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Permet de basculer entre le mode **Aperçu** et le [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> actuellement sélectionné (par exemple : **Édition**, **Mise en page**, etc.)* |
+| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Basculer entre **Aperçu** et la valeur actuellement sélectionnée [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (par exemple, **Modifier**, **Disposition**, etc.* |
 | Mode d’**édition** | `Ctrl-z` | [Annuler la dernière modification](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rétablir la dernière modification](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Sélectionner plusieurs paragraphes |

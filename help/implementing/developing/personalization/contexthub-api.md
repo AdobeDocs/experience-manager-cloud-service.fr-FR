@@ -2,10 +2,10 @@
 title: Guide de référence pour l’API JavaScript ContextHub
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '4621'
-ht-degree: 100%
+source-wordcount: '4622'
+ht-degree: 99%
 
 ---
 
@@ -58,7 +58,7 @@ Le tableau suivant répertorie les noms des événements qui se produisent pour 
 | `ContextHub.Constants.EVENT_UI_CONTAINER_OPENED` | Déclenché lorsque l’IU ContextHub est ouverte | `ui-container-opened` |
 | `ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED` | Déclenché lorsque l’IU ContextHub est réduite | `ui-container-closed` |
 | `ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED` | Déclenché lorsqu’une propriété est modifiée | `ui-property-modified` |
-| `ContextHub.Constants.EVENT_UI_RENDERED` | Déclenché à chaque fois que l’IU ContextHub est restituée (par exemple, après un changement de propriété) | `ui-rendered` |
+| `ContextHub.Constants.EVENT_UI_RENDERED` | Déclenché chaque fois que l’IU ContextHub est générée (par exemple, après une modification de propriété) | `ui-rendered` |
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | Déclenché lorsque le conteneur d’IU est initialisé | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | Indique le mode d’IU actif | `/_/active-ui-mode` |
 
@@ -563,7 +563,7 @@ Un objet de cookies. Les propriétés d’objet sont les clés des cookies et le
 ContextHub.Utils.Cookie.getAllItems([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### getItem(key)  {#getitem-key-1}
+#### getItem(key) {#getitem-key-1}
 
 Renvoie une valeur de cookie.
 
@@ -603,7 +603,7 @@ Un tableau de chaînes où chaque chaîne est la clé d’un cookie qui répond 
 ContextHub.Utils.Cookie.getKeys([/^cq-authoring/, /^cq-editor/])
 ```
 
-#### removeItem(key, options)  {#removeitem-key-options-1}
+#### removeItem(key, options) {#removeitem-key-options-1}
 
 Supprime un cookie. Pour supprimer le cookie, la valeur est définie sur une chaîne vide et la date d’expiration est définie sur le jour précédant la date actuelle.
 

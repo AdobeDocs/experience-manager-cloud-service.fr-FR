@@ -4,10 +4,10 @@ description: Découvrez comment la fonction de contenu associée aux fragments d
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 60%
+source-wordcount: '244'
+ht-degree: 53%
 
 ---
 
@@ -19,7 +19,7 @@ La fonctionnalité AEM contenu associé fournit la connexion afin que les ressou
 
 >[!NOTE]
 >
->Différentes méthodes permettent d’ajouter des [ressources visuelles (des images, par exemple)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+>Plusieurs méthodes d’ajout [ressources visuelles (images, par exemple)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
 Pour effectuer l’association, vous devez d’abord [ajouter les ressources multimédias à une collection](/help/assets/manage-collections.md). Une fois l’ajout effectué, vous pouvez réaliser les étapes suivantes :
 

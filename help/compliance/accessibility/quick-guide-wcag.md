@@ -2,10 +2,10 @@
 title: Guide rapide relatif à WCAG 2.1
 description: Guide rapide relatif à WCAG 2.1
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1774'
-ht-degree: 100%
+source-wordcount: '1776'
+ht-degree: 98%
 
 ---
 
@@ -104,7 +104,7 @@ Les techniques relatives à WCAG 2.1 sont disponibles sur la page [Techniques r
 
 Les **techniques** forment le niveau sous les critères de réussite dans la hiérarchie de WCAG 2.1. Elles sont classées par WAI comme étant informatives, et non normatives. En d’autres termes, une technique spécifique ne doit pas nécessairement être suivie pour qu’une ressource soit conforme à WCAG 2.1.
 
-Étant donné que les techniques sont beaucoup plus spécifiques que les critères de réussite, elles font généralement référence à une technologie, un type de contenu (par exemple, HTML ou vidéo) ou une situation spécifique (par exemple, une application d’e-commerce ou d’apprentissage en ligne). Vous pouvez considérer les techniques comme des exemples attestés de la façon dont les consignes et les critères de réussite peuvent être respectés, de telle manière qu’elles sont utiles aux auteurs et aux développeurs travaillant dans des contextes particuliers.
+Les techniques étant beaucoup plus spécifiques que les critères de réussite, elles font généralement référence à une technologie ou à un type de contenu spécifique (par exemple, HTML ou vidéo) ou à une situation (par exemple, application de commerce électronique ou d’apprentissage en ligne). Vous pouvez considérer les techniques comme des exemples attestés de la façon dont les consignes et les critères de réussite peuvent être respectés, de telle manière qu’elles sont utiles aux auteurs et aux développeurs travaillant dans des contextes particuliers.
 
 Les techniques sont accessibles :
 

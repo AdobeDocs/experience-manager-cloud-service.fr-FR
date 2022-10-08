@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 0e1fbef77cb42dd8bb280bb971dc0643019901a3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '985'
-ht-degree: 93%
+source-wordcount: '986'
+ht-degree: 91%
 
 ---
 
@@ -220,7 +220,7 @@ Certaines versions nécessitent d’autres packages système pour fonctionner en
         </profile>
 ```
 
-Cette même technique peut être utilisée pour installer des packages spécifiques à la langue, par exemple utiliser `gem` pour les packages RubyGems ou `pip` pour les packages Python.
+Cette même technique peut être utilisée pour installer des modules spécifiques à une langue, par exemple, en utilisant `gem` pour RubyGems ou `pip` pour les packages Python.
 
 >[!NOTE]
 >

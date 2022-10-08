@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: b71cd1394260c8ec14b661934199632987a034f6
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1153'
+ht-degree: 97%
 
 ---
 
@@ -95,7 +95,7 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 
    ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
-* Les informations d’identification utilisées pour authentifier les appels API serveur à serveur (par exemple, pour les demandes d’API GraphQL) peuvent désormais être actualisées avant expiration en libre-service à partir de la Developer Console. Pour plus d’informations, consultez la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
+* Les informations d’identification utilisées pour authentifier les appels API serveur à serveur (par exemple, pour les demandes d’API GraphQL) peuvent désormais être actualisées avant expiration en libre-service à partir de Developer Console. Pour plus d’informations, consultez la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
 
 * Les tâches de maintenance de purge de version et de journaux d’audit qui n’avaient pas été activées auparavant seront activées pour les nouveaux environnements. Consultez les valeurs associées dans cet article [Tâche de maintenance](/help/operations/maintenance.md).
 

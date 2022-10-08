@@ -2,10 +2,10 @@
 title: Présentation de l’éditeur de SPA
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: c7759e390d9ea6c2196c9f6c895232c4e75c6d23
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1635'
-ht-degree: 98%
+source-wordcount: '1636'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ L’éditeur de SPA constitue une solution complète pour la prise en charge des
 
 ## Présentation {#introduction}
 
-Les sites créés à l’aide de structures SPA courantes, telles que React et AngularJS, chargent leur contenu via le format JSON dynamique et ne fournissent pas la structure HTML dont l’éditeur de page AEM a besoin pour passer des commandes de modification.
+Les sites créés à l’aide de frameworks SPA courantes, telles que React et AngularJS, chargent leur contenu via le format JSON dynamique et ne fournissent pas le framework HTML dont l’éditeur de page AEM a besoin pour passer des commandes de modification.
 
 Pour activer la modification d’applications sur une seule page dans AEM, il faut qu’il y ait une correspondance entre la sortie JSON de l’application et le modèle de contenu dans le répertoire AEM afin d’enregistrer les modifications apportées au contenu.
 
@@ -172,7 +172,7 @@ Il est possible de définir et personnaliser d’autres sélecteurs dans le cadr
 Si vous souhaitez utiliser l’éditeur statique d’un composant de texte créé dans une SPA, une configuration supplémentaire est nécessaire.
 
 1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas du projet SPA WKND, il s’agit d’un élément `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
-1. Définissez la propriété `editElementQuery` sur la configuration `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
+1. Définition de la configuration `editElementQuery` sur le du composant de texte d’AEM correspondant `cq:InplaceEditingConfig` qui pointe vers ce sélecteur, par exemple : `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
 
 Pour plus d’informations sur la propriété `editElementQuery` et la configuration de l’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi.](/help/implementing/developing/extending/rich-text-editor.md)
 

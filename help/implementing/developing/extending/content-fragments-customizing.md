@@ -2,10 +2,10 @@
 title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 100%
+source-wordcount: '1811'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ Dans Adobe Experience Manager as a Cloud Service, un fragment de contenu étend 
 
 ## Architecture {#architecture}
 
-Les [parties constituantes](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) de base d’un fragment de contenu sont les suivantes :
+Les [éléments](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) de base d’un fragment de contenu sont les suivants :
 
 * un *fragment de contenu*,
 * comportant un ou plusieurs *éléments de contenu*,
@@ -63,10 +63,9 @@ Les fragments de contenu, basés sur un modèle de fragment de contenu, sont map
    * Les données d’éléments sont stockées sous le sous-nœud maître :
       `jcr:content/data/master`
 
-   * Les variations sont stockées sous un sous-nœud portant le nom de la variation : par exemple, `jcr:content/data/myvariation`
+   * Les variations sont stockées sous un sous-noeud portant le nom de la variation : par exemple, `jcr:content/data/myvariation`
 
-   * Les données de chaque élément sont stockées dans le sous-nœud respectif comme une propriété avec le nom d’élément :
-par exemple, le contenu de l’élément `text` est stocké en tant que propriété `text` sur `jcr:content/data/master`.
+   * Les données de chaque élément sont stockées dans le sous-noeud respectif comme une propriété avec le nom d’élément : par exemple, le contenu de l’élément `text` est stocké en tant que propriété `text` on `jcr:content/data/master`
 
 * Les métadonnées et le contenu associé sont stockés sous `jcr:content/metadata`
 Hormis le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur 
@@ -181,7 +180,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
    L’interface permet les actions suivantes :
 
-   * Gestion des informations de base (par exemple, obtenir le nom ou obtenir/définir le titre/la description)
+   * gérer les données de base (par exemple, obtenir le nom) ; get/set title/description)
    * Accès aux métadonnées
    * Accès aux éléments :
 

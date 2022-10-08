@@ -2,10 +2,10 @@
 title: Cadre de balisage AEM
 description: Balisage de contenu et utilisation du cadre de balisage AEM afin de la classer et de l’organiser.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1567'
-ht-degree: 100%
+source-wordcount: '1570'
+ht-degree: 96%
 
 ---
 
@@ -28,13 +28,13 @@ Pour baliser le contenu et utiliser le cadre de balisage AEM, procédez comme su
 
 ## Type de nœud cq:Tag {#cq-tag-node-type}
 
-La déclaration d’une balise est capturée dans le référentiel dans un nœud de type `cq:Tag.`
+La déclaration d’une balise est capturée dans le référentiel dans un nœud de type `cq:Tag.`.
 
-* Une balise peut être constituée d’un simple mot (`sky`, par exemple) ou représenter une taxonomie hiérarchique (`fruit/apple` par exemple, c’est-à-dire la catégorie générique et le fruit).
+* Une balise peut être un mot simple (par exemple, `sky`) ou représentent une taxonomie hiérarchique (par exemple, `fruit/apple`, c&#39;est-à-dire le fruit générique et la pomme plus spécifique).
 * Les balises sont identifiées par un `TagID` unique.
 * Une balise comprend des méta-informations facultatives, telles qu’un titre, des titres localisés et une description. Le titre doit être affiché dans les interfaces utilisateur au lieu du `TagID`, le cas échéant.
 
-Le cadre de balisage offre également la possibilité de contraindre les auteurs et les visiteurs du site à n’utiliser que des balises prédéfinies spécifiques.
+Le framework de balisage offre également la possibilité de contraindre les auteurs et les visiteurs du site à n’utiliser que des balises prédéfinies spécifiques.
 
 ### Caractéristiques de la balise {#tag-characteristics}
 
@@ -64,7 +64,7 @@ Dans AEM, le chemin d’accès de base est `/content/cq:tags` et le nœud racine
 
 ### Espace de noms des balises {#tag-namespace}
 
-Les espaces de noms permettent de regrouper des éléments. Le cas d’utilisation le plus courant consiste à disposer d’un espace de noms par site (par exemple, public ou interne) ou par grande application (par exemple, Sites ou Ressources), mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour n’afficher que le sous-ensemble de balises (c’est-à-dire les balises d’un espace de noms donné) applicable au contenu actuel.
+Les espaces de noms permettent de regrouper des éléments. Le cas d’utilisation le plus courant consiste à disposer d’un espace de noms par site (par exemple, public par rapport à interne) ou par application plus grande (par exemple, Sites ou Ressources), mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour n’afficher que le sous-ensemble de balises (c’est-à-dire les balises d’un espace de noms donné) applicable au contenu actuel.
 
 L’espace de noms de la balise est le premier niveau de la sous-arborescence de taxonomie, à savoir le nœud situé juste en dessous du [nœud racine de taxonomie.](#taxonomy-root-node) Un espace de noms est un nœud de type `cq:Tag` dont le parent n’est pas de type `cq:Tag`.
 
@@ -115,7 +115,7 @@ Une pratique habituelle est la suivante :
 * Accorder aux utilisateurs/auteurs l’accès en lecture à tous les espaces de noms qu’ils doivent être autorisés à lire (presque tous).
 * Accorder aux utilisateurs/auteurs l’accès en écriture aux espaces de noms dont ils doivent être en mesure de définir librement les balises (`add_node` sous `/content/cq:tags/some_namespace`).
 
-## Contenu pouvant être balisé : cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## Contenu pouvant être balisé : mixin cq:Taggable {#taggable-content-cq-taggable-mixin}
 
 Pour que les développeurs d’application attachent le balisage à un type de contenu, l’enregistrement du nœud ([CND](https://jackrabbit.apache.org/node-type-notation.html)) doit inclure le mixin `cq:Taggable` ou `cq:OwnerTaggable`.
 

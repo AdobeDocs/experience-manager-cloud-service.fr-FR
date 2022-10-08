@@ -2,10 +2,10 @@
 title: Structure de l’interface utilisateur d’AEM
 description: 'L’interface utilisateur d’AEM s’accompagne de plusieurs principes sous-jacents et se compose d’une série d’éléments clés :'
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 100%
+source-wordcount: '916'
+ht-degree: 97%
 
 ---
 
@@ -158,7 +158,7 @@ Le sélecteur de calques se présente sous la forme d’un menu déroulant dans 
 
 ### Barre d’outils des composants {#component-toolbar}
 
-Lorsque vous cliquez sur une instance d’un composant (simple clic ou double-clic lent), sa barre d’outils est affichée. Cette barre d’outils contient les actions (par exemple, copier, coller, ouvrir l’éditeur) qui sont disponibles pour l’instance du composant sur la page.
+Lorsque vous cliquez sur une instance d’un composant (simple clic ou double-clic lent), sa barre d’outils est affichée. La barre d’outils contient les actions spécifiques (par exemple, copier, coller, ouvrir l’éditeur) disponibles pour l’instance de composant sur la page.
 
 En fonction de l’espace disponible, les barres d’outils de composant sont placées dans le coin supérieur, ou inférieur, droit du composant approprié.
 

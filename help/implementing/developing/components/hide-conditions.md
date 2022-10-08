@@ -2,10 +2,10 @@
 title: Utilisation de conditions de masquage
 description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: ac64ca485391d843c0ebefcf86e80b4015b72b2f
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 100%
+source-wordcount: '615'
+ht-degree: 97%
 
 ---
 
@@ -43,7 +43,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 Lors de la définition de votre expression de masquage, veuillez tenir compte des points suivants :
 
-* Pour être valide, le domaine dans lequel se trouve la propriété doit être exprimé (`cqDesign.myProperty`, par exemple).
+* Pour être valide, la portée dans laquelle la propriété est trouvée doit être exprimée (par exemple, `cqDesign.myProperty`).
 * Les valeurs sont en lecture seule.
 * Les fonctions (si nécessaire) doivent être limitées à un ensemble donné fourni par le service.
 

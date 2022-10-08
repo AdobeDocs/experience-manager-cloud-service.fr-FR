@@ -2,10 +2,10 @@
 title: Référence des prédicats de Query Builder
 description: Référence des prédicats pour l’API Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2218'
-ht-degree: 100%
+source-wordcount: '2221'
+ht-degree: 97%
 
 ---
 
@@ -266,7 +266,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
    * `equals` pour la correspondance exacte (par défaut)
    * `unequals` pour la comparaison des inégalités
    * `like` pour utiliser la fonction xpath `jcr:like` (facultatif)
-   * `not` pour l’absence de correspondance (par exemple `not(@prop)` dans xpath, le paramètre de valeur sera ignoré)
+   * `not` pour aucune correspondance (par exemple, `not(@prop)` dans xpath, le paramètre value est ignoré)
    * `exists` pour une vérification d’existence
       * `true` la propriété doit exister
       * `false` est identique à `not` et est la valeur par défaut
@@ -276,7 +276,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
 
 Ce prédicat met en correspondance une propriété JCR par rapport à un intervalle. Ce prédicat s’applique à des propriétés de type linéaire telles que `LONG`, `DOUBLE` et `DECIMAL`. Pour `DATE`, reportez-vous au prédicat [`daterange`](#daterange) qui présente une entrée de format de date optimisée.
 
-Vous pouvez définir une limite inférieure, une limite supérieure ou les deux. L’opération (par exemple inférieure, ou inférieure à, ou égale à) peut également être spécifiée individuellement pour les limites inférieure et supérieure.
+Vous pouvez définir une limite inférieure, une limite supérieure ou les deux. L’opération (par exemple, inférieure ou inférieure à ou égale à) peut également être spécifiée individuellement pour les limites inférieure et supérieure.
 
 Il ne prend pas en charge l’extraction de facettes.
 
@@ -371,7 +371,7 @@ Il ne prend pas en charge l’extraction de facettes.
 
 * **`tagsearch`** – Mot-clé à rechercher dans les titres de balise
 * **`property`** – Propriété (ou chemin relatif à la propriété) à prendre en compte (valeur par défaut `cq:tags`)
-* **`lang`** – Pour effectuer uniquement la recherche pour titre de balise localisé donné (par exemple, `de`)
+* **`lang`** - pour effectuer une recherche uniquement dans un certain titre de balise localisé (par exemple : `de`)
 * **`all`** – Valeur booléenne permettant de rechercher le texte intégral de la balise, c’est-à-dire tous les titres, la description, etc. (est prioritaire sur `lang`)
 
 ### type {#type}

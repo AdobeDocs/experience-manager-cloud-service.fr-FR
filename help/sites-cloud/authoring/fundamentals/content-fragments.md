@@ -2,10 +2,10 @@
 title: Fragments de contenu
 description: Les fragments de contenu d’Adobe Experience Manager as a Cloud Service vous permettent de concevoir, de créer, d’organiser et d’utiliser du contenu indépendant des pages
 exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
-source-git-commit: 624b202efd08243e91b36a35f3df7c8c0bd998a9
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1164'
-ht-degree: 98%
+source-wordcount: '1166'
+ht-degree: 94%
 
 ---
 
@@ -67,7 +67,7 @@ Grâce aux fragments de contenu :
 
    >[!NOTE]
    >
-   >Pour plus d’informations sur les autres fonctionnalités d’édition, voir aussi :
+   >Pour plus d’informations sur les autres fonctionnalités d’édition, consultez aussi :
    >
    >* [Mise en page réactive](/help/sites-cloud/authoring/features/responsive-layout.md)
    >* [Modification du contenu de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md)
@@ -153,7 +153,7 @@ Si vous avez [associé du contenu](/help/sites-cloud/administering/content-fragm
 
 >[!NOTE]
 >
->Différentes méthodes permettent d’ajouter des [ressources visuelles (des images, par exemple)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
+>Plusieurs méthodes d’ajout [ressources visuelles (images, par exemple)](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Dans cet onglet, vous pouvez faire glisser les ressources vers l’emplacement s
 
 ### Ressources insérées dans le fragment {#assets-inserted-into-the-fragment}
 
-Si des ressources (des images, par exemple) ont été insérées dans le fragment proprement dit (en tant que [fragments de médias mixtes](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), les options permettant de les modifier dans l’éditeur de page sont limitées.
+Si des ressources (des images, par exemple) ont été insérées dans le fragment proprement dit (comme [fragments de supports variés](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets)), les options permettant de modifier ces ressources dans l’éditeur de page sont limitées.
 
 Dans le cas d’une image, par exemple, vous pouvez effectuer les opérations suivantes :
 

@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2253'
-ht-degree: 99%
+source-wordcount: '2255'
+ht-degree: 97%
 
 ---
 
@@ -56,7 +56,7 @@ Une définition d’index peut être :
 
 1. Index prêt à l’emploi. Exemple : `/oak:index/cqPageLucene-2`.
 1. Personnalisation d’un index prêt à l’emploi. Ces personnalisations sont définies par le client. Exemple : `/oak:index/cqPageLucene-2-custom-1`.
-1. Index entièrement personnalisé. Exemple : `/oak:index/acme.product-1-custom-2`. Pour éviter les collisions de noms, il est nécessaire que les index entièrement personnalisés comportent un préfixe, par exemple `acme.`
+1. Index entièrement personnalisé. Exemple : `/oak:index/acme.product-1-custom-2`. Pour éviter les collisions de noms, nous exigeons que les index entièrement personnalisés comportent un préfixe, par exemple : `acme.`
 
 Notez que la personnalisation d’un index prêt à l’emploi, ainsi que les index entièrement personnalisés, doivent contenir `-custom-`. Seuls les index entièrement personnalisés doivent commencer par un préfixe.
 
@@ -88,7 +88,7 @@ Les définitions d’index sont désormais marquées comme étant personnalisée
 
 * La définition d’index elle-même (par exemple, `/oak:index/ntBaseLucene-custom-1`)
 
-Pour déployer un index personnalisé, la définition d’index (`/oak:index/definitionname`) doit être diffusée via `ui.apps`, à l’aide du processus de déploiement de Cloud Manager et via Git. Dans le filtre FileVault, par exemple `ui.apps/src/main/content/META-INF/vault/filter.xml`, répertoriez individuellement chaque index personnalisé, par exemple `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La définition d’index personnalisée elle-même sera alors stockée dans le fichier `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, comme suit :
+Pour déployer un index personnalisé, la définition d’index (`/oak:index/definitionname`) doit être diffusée via `ui.apps`, à l’aide du processus de déploiement de Cloud Manager et via Git. Dans le filtre FileVault, par exemple : `ui.apps/src/main/content/META-INF/vault/filter.xml`, répertoriez chaque index personnalisé et personnalisé individuellement, par exemple : `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La définition d’index personnalisée elle-même sera alors stockée dans le fichier `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, comme suit :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>

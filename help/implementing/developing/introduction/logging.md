@@ -2,7 +2,7 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 437c6b3bcd331bf385f2845bfdb0be656a57488e
+source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 99%
@@ -554,7 +554,7 @@ Dans la demande d’assistance, les clients doivent indiquer :
 * le port Splunk ;
 * le jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
 
-Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de type programme/environnement appropriée.  Par exemple, si un client souhaite des environnements de développement, d’évaluation et de production, il doit fournir trois ensembles d’informations, comme indiqué ci-dessous.
+Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de type programme/environnement appropriée. Par exemple, si un client souhaite des environnements de développement, d’évaluation et de production, il doit fournir trois ensembles d’informations, comme indiqué ci-dessous.
 
 >[!NOTE]
 >

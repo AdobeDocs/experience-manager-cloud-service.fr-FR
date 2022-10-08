@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la version 2022.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 472b670623e77957ff9a366359ebef8c6c0604ae
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '641'
+source-wordcount: '642'
 ht-degree: 22%
 
 ---
@@ -69,7 +69,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 
 * Amélioration de la compatibilité et de la robustesse pour les connecteurs tiers sur I/O Runtime
 
-* Amélioration de la prise en charge des remplacements de la configuration du client GQL (par exemple, définition du comportement de mise en cache personnalisée)
+* Amélioration de la prise en charge des remplacements de la configuration du client GQL (par exemple, définir le comportement de mise en cache personnalisée)
 
 * Plusieurs points de terminaison commerciaux sont désormais pris en charge par défaut et peuvent être configurés via Cloud Manager. Vous trouverez des informations détaillées sur le blog CIF [here](https://medium.com/adobetech/use-aem-as-a-cloud-service-with-multiple-adobe-commerce-systems-9295612a9554).
 

@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 100%
+source-wordcount: '876'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 * Utilisez une convention de dénomination des langues/sites des pays qui suit les **[normes W3C.](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**
 * Déterminez la manière dont le contenu est distribué par les pays et les régions. Pensez aux pays qui partagent des langues. Il est recommandé de créer des gabarits de langue, une couche de pages non activées, où le contenu traduit peut être révisé et modifié, puis transmis ou extrait vers un site de pays partageant cette langue.
 * Il existe deux approches pour créer des gabarits de langue : l’utilisation de copies de langue ou de MSM/Live Copies.
-   * L’approche impliquant des copies de langue est celle utilisée par la structure d’intégration de traduction prête à l’emploi d’AEM. C’est par conséquent la façon la plus facile de démarrer. La structure fournit une interface utilisateur qui permet, dès le départ, de propager et de traduire facilement les modifications du contenu du gabarit de langue principal (par exemple, l’anglais) et les propager sur les gabarits de langue. Toutefois, au fur et à mesure que le projet se développe, l’automatisation des workflows devient de plus en plus nécessaire pour gérer la traduction du nombre plus important de pages et/ou de langues.
+   * L’approche impliquant des copies de langue est celle utilisée par la structure d’intégration de traduction prête à l’emploi d’AEM. C’est par conséquent la façon la plus facile de démarrer. La structure fournit une interface utilisateur qui facilite au départ la propagation et la traduction des modifications de contenu de la langue principale (par exemple, l’anglais) au gabarit de langue. Toutefois, au fur et à mesure que le projet se développe, l’automatisation des workflows devient de plus en plus nécessaire pour gérer la traduction du nombre plus important de pages et/ou de langues.
    * L’utilisation de MSM/Live Copies peut être une alternative pour les cas d’utilisation avancés, où les sites sont plus grands et plus complexes. Une gouvernance solide et l’automatisation des workflows sont nécessaires dès le départ pour gérer les relations d’héritage complexes entre le gabarit de langue anglaise et les autres gabarits de langue, et pour réduire les risques de remplacement des traductions existantes. Cette gestion est possible grâce à des connecteurs de traduction. Consultez [MSM et sites multilingues](/help/sites-cloud/administering/msm/best-practices.md#msm-and-multilingual-websites) pour plus d’informations.
 * Si votre langue principale possède des variations globales, vous pouvez utiliser MSM pour créer une Live Copy à partir du gabarit global à utiliser pour la traduction. Si, par exemple, la rédaction globale est effectuée dans un gabarit en anglais américain, créez un gabarit en anglais international en tant que Live Copy qui servira de base pour la traduction dans d’autres langues.
 * Utilisez MSM pour créer des sites de pays à partir des gabarits de langue traduits et déployer le contenu sur les sites partageant la même langue. Par exemple, le gabarit de langue française peut être déployé sur les sites de France, de Belgique et de Suisse.

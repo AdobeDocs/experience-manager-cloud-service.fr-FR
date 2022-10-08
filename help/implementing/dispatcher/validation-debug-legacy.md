@@ -4,10 +4,10 @@ description: Validation et débogage à l’aide des outils Dispatcher (hérité
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 377a577616d7e804c7dfe9e9c68fed15350bdb4f
+source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2345'
+ht-degree: 95%
 
 ---
 
@@ -273,11 +273,11 @@ Votre configuration de ferme comporte quatre sections où vous pouvez inclure vo
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-Vous pouvez également inclure la version **par défaut** de ces fichiers, dont les noms sont précédés du mot `default_`, par ex. `../filters/default_filters.any`.
+Vous pouvez également inclure la variable **default** version de ces fichiers, dont les noms sont précédés du mot `default_`, par exemple : `../filters/default_filters.any`.
 
 **include statement at (...), outside any known location: ...**
 
-Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êtes pas autorisé à utiliser l’instruction `$include` ; par exemple, les éléments suivants généreraient cette erreur :
+Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êtes pas autorisé à utiliser la variable `$include` , par exemple, l’instruction suivante génère cette erreur :
 
 ```
 /invalidate {
@@ -292,7 +292,7 @@ Cette erreur est générée lorsque vous ne spécifiez pas d’inclusion pour `/
 
 **filter must not use glob pattern to allow requests**
 
-Il n’est pas sûr d’autoriser les requêtes avec une règle de style `/glob`, qui est mise en correspondance avec la ligne de requête complète, par exemple :
+Il n’est pas sécurisé d’autoriser les requêtes avec une `/glob` règle de style, qui est comparée à la ligne de requête complète, par exemple :
 
 ```
 /0100 {

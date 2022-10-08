@@ -2,9 +2,9 @@
 title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 014b53dfd35103660772d273dbf49d2388f6d000
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2566'
 ht-degree: 97%
 
 ---
@@ -348,5 +348,5 @@ YUI est défini comme outil de minification par défaut dans AEM. Pour le défin
 1. Recherchez et modifiez le **Gestionnaire de bibliothèques HTML Adobe Granite**.
 1. Activez l’option **Minifier** (le cas échéant).
 1. Définissez la valeur **Configuration par défaut du processeur JS** sur `min:gcc`.
-   * Les options peuvent être transmises si elles sont séparées par un point-virgule ; par exemple, `min:gcc;obfuscate=true`.
+   * Les options peuvent être transmises si elles sont séparées par un point-virgule, par exemple : `min:gcc;obfuscate=true`.
 1. Cliquez sur **Enregistrer** pour enregistrer les modifications.

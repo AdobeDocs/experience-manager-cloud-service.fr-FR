@@ -4,10 +4,10 @@ description: Découvrez comment réutiliser du contenu avec les puissantes fonct
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2682'
-ht-degree: 100%
+source-wordcount: '2683'
+ht-degree: 99%
 
 ---
 
@@ -216,7 +216,7 @@ Les modifications peuvent être [synchronisées](creating-live-copies.md#synchro
 
 #### Live Copy avec des pages autres que Live Copy {#live-copy-with-non-live-copy-pages}
 
-Lorsque vous créez une Live Copy dans AEM, vous pouvez consultez la branche Live Copy et naviguer dans celle-ci et utiliser les fonctionnalités AEM normales sur la branche Live Copy. Cela signifie que vous pouvez (ou un processus peut) créer de nouvelles ressources (des pages et des paragraphes) dans la Live Copy. Par exemple, un produit pour une région ou un pays particulier.
+Lorsque vous créez une Live Copy dans AEM, vous pouvez consultez la branche Live Copy et naviguer dans celle-ci et utiliser les fonctionnalités AEM normales sur la branche Live Copy. Cela signifie que vous pouvez (ou un processus peut) créer de nouvelles ressources (des pages et des paragraphes) dans la Live Copy. Par exemple, un produit pour une région ou un pays spécifique.
 
 * Ces ressources n’ont aucune relation en direct avec les pages source/de plan directeur et ne sont pas synchronisées.
 * Certains scénarios peuvent se produire, et MSM les traite comme des cas spéciaux. Par exemple, lorsque vous (ou un processus) créez une page ayant la même position et le même nom dans les branches source ou de plan directeur et Live Copy. Pour ces cas de figure, consultez [Conflits de déploiement dans MSM](rollout-conflicts.md) pour plus d’informations.

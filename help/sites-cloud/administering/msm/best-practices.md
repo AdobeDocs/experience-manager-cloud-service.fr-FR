@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1433'
-ht-degree: 100%
+source-wordcount: '1434'
+ht-degree: 97%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 MSM est une structure configurable pour automatiser le déploiement de contenu. Les mises en œuvre impliquent souvent des parties importantes d’un site web, ainsi que plusieurs organisations et zones géographiques. Il est donc vivement recommandé de planifier les mises en œuvre MSM avec autant d’attention que lorsque vous planifiez votre site web :
 
 * **Planifiez la structure et les flux de contenu** avec soin avant de commencer la mise en œuvre.
-* **Personnalisez autant que nécessaire, mais le moins possible.** Bien que MSM prenne en charge un haut degré de personnalisation (par exemple, les configurations de déploiement), la meilleure pratique pour favoriser les performances, la fiabilité et l’amélioration de votre site web est généralement de minimiser la personnalisation.
+* **Personnalisez autant que nécessaire, mais le moins possible.** Bien que MSM prenne en charge un haut degré de personnalisation (par exemple, des configurations de déploiement), la meilleure pratique pour les performances, la fiabilité et la mise à niveau de votre site web est généralement de minimiser la personnalisation.
 * Établissez un modèle de **gouvernance** dès le début et formez les utilisateurs en conséquence, afin de garantir la réussite. Du point de vue de la gouvernance, une bonne pratique consiste à **minimiser l’autorité des producteurs du contenu** sur l’allocation/l’association du contenu à d’autres utilisateurs locaux et à leurs Live Copies respectives. Cela est dû au fait que les héritages par enchaînement non gouvernés peuvent considérablement augmenter la complexité d’une structure MSM et dégrader ses performances et sa stabilité.
 * Une fois qu’un plan existe pour la structure, les flux de contenu, l’automatisation et la gouvernance, **prototypez et testez intégralement le système**, avant de commencer la mise en œuvre en direct.
 * Gardez à l’esprit que les **intégrateurs système de premier plan et les consultants Adobe** possèdent une expérience approfondie dans la planification et la mise en œuvre de l’automatisation de contenu avec MSM. Ils peuvent donc vous aider lors du lancement de votre projet MSM et tout au long de sa mise en œuvre.

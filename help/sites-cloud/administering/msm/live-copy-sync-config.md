@@ -4,10 +4,10 @@ description: Découvrez les puissantes options de synchronisation des Live Copie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2336'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 98%
 
 ---
 
@@ -54,7 +54,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | Activer au moment de l’activation du plan directeur | Publie la Live Copy lorsque la source est publiée | En cas d’activation | `targetActivate` |
 | Désactiver au moment de la désactivation du plan directeur | Désactive la Live Copy lorsque la source est désactivée | En cas de désactivation | `targetDeactivate` |
 | Pousser au moment de la modification | Envoie le contenu à la Live Copy lorsque la source est modifiée<br>Utilisez cette configuration de déploiement avec parcimonie, car elle emploie le déclencheur En cas de modification. | En cas de modification | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| Envoyer au moment de la modification (superficielle) | Envoie le contenu à la Live Copy lorsque la modification de la page du plan directeur, sans mettre à jour les références (par exemple pour les copies superficielles)<br>Utilisez cette configuration de déploiement avec parcimonie, car elle emploie le déclencheur En cas de modification. | En cas de modification | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| Envoyer au moment de la modification (superficielle) | Envoie le contenu à la Live Copy lorsque la page de plan directeur est modifiée, sans mettre à jour les références (par exemple, pour les copies superficielles).<br>Utilisez cette configuration de déploiement avec parcimonie, car elle utilise le déclencheur En cas de modification . | En cas de modification | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | Convertir le lancement | Configuration de déploiement standard pour la promotion des pages de lancement. | En cas de déploiement | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Actions de synchronisation {#synchronization-actions}

@@ -2,10 +2,10 @@
 title: Création d’un balisage dans des applications AEM
 description: Utiliser des balises ou étendre des balises par programmation dans une application AEM personnalisée
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: c08e442e58a4ff36e89a213aa7b297b538ae3bab
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 90%
 
 ---
 
@@ -59,7 +59,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Pour l’implémentation basée sur JCR, qui mappe les `Tags` à des `Nodes` JCR, vous pouvez directement utiliser le mécanisme `adaptTo` de Sling si vous disposez de la ressource (par exemple, `/content/cq:tags/default/my/tag`) :
+Pour l’implémentation basée sur JCR, qui mappe `Tags` sur JCR `Nodes`, vous pouvez directement utiliser les `adaptTo` si vous disposez de la ressource (par exemple, `/content/cq:tags/default/my/tag`) :
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -121,7 +121,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## Tag Garbage Collector {#the-tag-garbage-collector}
 
-Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et inutilisées sont des balises sous `/content/cq:tags` avec une propriété `cq:movedTo` qui ne sont pas utilisées sur un nœud de contenu. Elles ont un décompte de zéro. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références de la propriété `cq:tags` sont automatiquement mises à jour lorsque la propriété `cq:tags` est mise à jour, par ex. via la boîte de dialogue des propriétés de la page.
+Tag Garbage Collector est un service d’arrière-plan qui nettoie les balises masquées et inutilisées. Les balises masquées et inutilisées sont des balises sous `/content/cq:tags` avec une propriété `cq:movedTo` qui ne sont pas utilisées sur un nœud de contenu. Elles ont un décompte de zéro. Avec ce processus de suppression à l’arrière-plan, le nœud de contenu (c’est-à-dire la propriété `cq:tags`) n’a pas besoin d’être mis à jour lors du déplacement ou de la fusion. Les références dans le `cq:tags` est automatiquement mise à jour lorsque la propriété `cq:tags` est mise à jour, par exemple, via la boîte de dialogue des propriétés de page.
 
 Tag Garbage Collector s’exécute par défaut une fois par jour. Cette fréquence peut être configurée sur :
 
@@ -136,7 +136,7 @@ La recherche de balises et l’obtention de la liste des balises fonctionnent co
 
 ## Balises dans différentes langues {#tags-in-different-languages}
 
-Une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par ex. `jcr:title.fr` pour la traduction en français. `<locale>` doit être une chaîne de paramètres régionaux ISO en minuscules et utiliser un trait de soulignement (`_`) au lieu d’un tiret (`-`), par exemple : `de_ch`.
+Une balise `title` peut être définie dans différentes langues. Une propriété sensible à la langue est ensuite ajoutée au nœud de la balise. Cette propriété a le format `jcr:title.<locale>`, par exemple : `jcr:title.fr` pour la traduction française. `<locale>` doit être une chaîne de paramètres régionaux ISO en minuscules et utiliser un trait de soulignement (`_`) au lieu d’un tiret (`-`), par exemple : `de_ch`.
 
 Par exemple, lorsque la balise **Animals** est ajoutée à la page **Products**, la valeur `stockphotography:animals` est ajoutée à la propriété `cq:tags` du nœud `/content/wknd/en/products/jcr:content`. La traduction est référencée à partir du nœud de balise.
 
@@ -159,7 +159,7 @@ Pour le balisage, la localisation dépend du contexte, car la balise `titles` pe
 
 ### Ajout d’une langue à la boîte de dialogue Modifier la balise {#adding-a-new-language-to-the-edit-tag-dialog}
 
-La procédure suivante décrit comment ajouter une langue (par ex : finnois) à la boîte de dialogue **Modifier la balise** :
+La procédure suivante décrit l’ajout d’une nouvelle langue (le finnois, par exemple) au **Modification de balise** dialog :
 
 1. Dans **CRXDE**, modifiez la propriété multi-valeur `languages` du nœud `/content/cq:tags`.
 1. Ajoutez `fi_fi`, qui représente le code de langue pour le finnois, et enregistrez les modifications.

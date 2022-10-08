@@ -4,10 +4,10 @@ description: Découvrez comment résoudre les problèmes les plus courants liés
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 100%
+source-wordcount: '760'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ La connaissance de ces propriétés peut également s’avérer utile pour inter
 
 Vous trouverez ci-dessous quelques questions fréquentes concernant MSM et la Live Copy.
 
-### Pourquoi certaines propriétés (par exemple le titre, les annotations) ne sont-elles pas mises à jour lors d’un déploiement MSM ?  {#missing-properties}
+### Pourquoi certaines propriétés (titre, annotations, par exemple) ne sont-elles pas mises à jour lors d’un déploiement MSM ? {#missing-properties}
 
 Les actions de synchronisation MSM sont hautement configurables. Les propriétés ou composants qui sont modifiés lors des déploiements dépendent directement des propriétés de ces configurations.
 
@@ -75,7 +75,7 @@ Vous pouvez cependant :
 
 ### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_move » ?  {#moved-pages}
 
-Si une page de plan est déployée, elle mettra à jour sa page Live Copy ou créera une page Live Copy si elle n’existait pas encore (par exemple, lorsqu’elle est déployée pour la première fois ou que la page Live Copy a été supprimée manuellement).
+Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une page Live Copy si elle n’existe pas encore (par exemple, lorsqu’elle est déployée pour la première fois ou que la page Live Copy a été supprimée manuellement).
 
 Dans ce dernier cas, cependant, si une page sans propriété `cq:LiveRelationship` porte le même nom, cette page sera renommée en conséquence, avant la création de la page Live Copy.
 

@@ -2,10 +2,10 @@
 title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: af7d8229ee080852f3c5b542db97b5c223357cf0
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 100%
+source-wordcount: '2402'
+ht-degree: 99%
 
 ---
 
@@ -188,7 +188,7 @@ Le composant `AEMText` est désormais modifiable sur AEM.
 ### Pages AEM modifiables {#aem-authorable-pages}
 
 1. Identifiez une page à ajouter pour la création dans la SPA. Cet exemple utilise `/content/wknd-spa-react/us/en/home.html`.
-1. Créez un fichier (ex. `Page.js`) pour le composant de page modifiable. Ici, nous pouvons réutiliser le composant de page fourni dans `@adobe/cq-react-editable-components`.
+1. Créez un fichier (par exemple, `Page.js`) pour le composant de page modifiable. Ici, nous pouvons réutiliser le composant de page fourni dans `@adobe/cq-react-editable-components`.
 1. Répétez l’étape 4 de la section [Composants feuille AEM modifiables.](#authorable-leaf-components) Utilisez la fonction Wrapper `withMappable` sur le composant.
 1. Comme précédemment, appliquez `MapTo` aux types de ressources AEM pour tous les composants enfants de la page.
 

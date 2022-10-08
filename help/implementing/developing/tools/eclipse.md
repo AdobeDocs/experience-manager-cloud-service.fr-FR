@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Outils de développement pour Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '1182'
-ht-degree: 98%
+source-wordcount: '1183'
+ht-degree: 97%
 
 ---
 
@@ -196,7 +196,7 @@ Une fois cette opération terminée, votre package devrait être exécuté sur v
 
 Si vous souhaitez recréer un package à partir de votre projet, cliquez avec le bouton droit de la souris sur `PROJECT.ui.apps` ou `PROJECT.ui.content` et choisissez **Run As** (Exécuter en tant que) > **Maven Install** (Installation Maven).
 
-Vous disposez désormais d’un dossier cible créé avec votre package (nommé par ex. `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Vous disposez maintenant d’un dossier cible créé avec votre module à l’intérieur (appelé par exemple : `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
 
 ## Résolution des problèmes {#troubleshooting}
 
@@ -212,9 +212,9 @@ Pour résoudre des dépendances et une définition de projet non valides, procé
 
 Eclipse télécharge les dépendances requises. Cela peut prendre un moment.
 
-## Informations complémentaires {#more-information}
+## Informations supplémentaires {#more-information}
 
-Le site web officiel Apache Sling IDE tooling for Eclipse fournit des informations utiles :
+Le site Web officiel Apache Sling IDE tooling for Eclipse fournit des informations utiles :
 
 * Le [**Guide de l’utilisateur** Apache Sling IDE tooling for Eclipse](https://sling.apache.org/documentation/development/ide-tooling.html) vous guide parmi les concepts généraux, l’intégration des serveurs et les fonctionnalités de déploiement pris en charge par AEM Development Tools.
 * La section [Dépannage](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).

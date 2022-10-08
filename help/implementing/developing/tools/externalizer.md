@@ -2,16 +2,16 @@
 title: Externalisation d’URL
 description: Externalizer est un service OSGi qui vous permet de transformer, par programmation, un chemin d’accès aux ressources en une URL externe et absolue..
 exl-id: 06efb40f-6344-4831-8ed9-9fc49f2c7a3f
-source-git-commit: 28903c1cbadece9d0ef575cdc0f0d7fd32219538
+source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
-source-wordcount: '660'
-ht-degree: 80%
+source-wordcount: '661'
+ht-degree: 75%
 
 ---
 
 # Externalisation d’URL {#externalizing-urls}
 
-Dans AEM, **Externalizer** est un service OSGi qui vous permet de transformer, par programmation, un chemin d’accès aux ressources (`/path/to/my/page`) en une URL externe et absolue (`https://www.mycompany.com/path/to/my/page`, par exemple) en faisant précéder le chemin d’accès d’un DNS préconfiguré.
+Dans AEM, la variable **Externalizer** est un service OSGi qui vous permet de transformer par programmation un chemin de ressource (par exemple, `/path/to/my/page`) dans une URL externe et absolue (par exemple, `https://www.mycompany.com/path/to/my/page`) en ajoutant un préfixe au chemin d’accès avec un DNS préconfiguré.
 
 Étant donné qu’AEM as a Cloud Service ne peut pas connaître son URL visible en externe et qu’il est parfois nécessaire de créer un lien hors de portée de la requête, ce service fournit un emplacement central pour configurer ces URL externes et les créer.
 

@@ -4,10 +4,10 @@ description: Découvrez comment les variations vous permettent de créer du cont
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 3e08f725cfa0ba06b18da9e435978ba41eb4dbde
+source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
 workflow-type: tm+mt
-source-wordcount: '2306'
-ht-degree: 96%
+source-wordcount: '2308'
+ht-degree: 94%
 
 ---
 
@@ -307,7 +307,7 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
 
 >[!CAUTION]
 Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
-Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
+Toutefois, le formatage de la ressource (par exemple, sa taille) doit être effectué dans la variable [éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
 
 >[!NOTE]
 Il existe différentes méthodes pour ajouter des [images](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
@@ -343,7 +343,7 @@ Cette option est disponible lorsque l’option **Autoriser la référence de fra
 
 >[!CAUTION]
 Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
-Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
+Toutefois, le formatage de la ressource (par exemple, sa taille) doit être effectué dans la variable [éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
 
 >[!NOTE]
 Il existe différentes méthodes pour ajouter des [images](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
