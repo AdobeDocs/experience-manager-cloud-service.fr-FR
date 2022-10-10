@@ -2,12 +2,13 @@
 title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 51933d1ed509117f1ed0488900807b74f55ef46b
 workflow-type: tm+mt
-source-wordcount: '2566'
+source-wordcount: '2568'
 ht-degree: 97%
 
 ---
+
 
 # Utilisation des bibliothèques côté client dans AEM as a Cloud Service {#using-client-side-libraries}
 
@@ -55,7 +56,7 @@ Un dossier de bibliothèques côté client est un nœud de référentiel de type
 
 Chaque dossier `cq:ClientLibraryFolder` est rempli avec un jeu de fichiers JS et/ou CSS, ainsi que quelques fichiers annexes (voir ci-dessous). Les propriétés importantes du dossier `cq:ClientLibraryFolder` sont configurées comme suit :
 
-* `allowProxy` : étant donné que toutes les bibliothèques clientes doivent être stockées sous `apps`, cette propriété permet d’accéder aux bibliothèques clientes par le biais d’une servlet proxy. Voir [Recherche d’un dossier de bibliothèques clientes et utilisation du servlet des bibliothèques clientes du proxy](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) ci-dessous.
+* `allowProxy`: Puisque toutes les clientlibs doivent être stockées sous `apps`, cette propriété permet d’accéder aux bibliothèques clientes par le biais d’un servlet proxy. Voir la section [Recherche d’un dossier de bibliothèques clientes et utilisation du servlet des bibliothèques clientes du proxy](#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) ci-dessous.
 * `categories` : identifie les catégories dans lesquelles se trouve le jeu de fichiers JS et/ou CSS de ce dossier `cq:ClientLibraryFolder`. La propriété `categories` comportant plusieurs valeurs, elle permet à un dossier de bibliothèques d’appartenir à plusieurs catégories (voir ci-dessous pour savoir en quoi cela peut se révéler utile).
 
 Si le dossier de bibliothèques clientes contient un ou plusieurs fichiers sources qui, à l’exécution, sont fusionnés en un seul fichier JS et/ou CSS. Le nom du fichier généré est le nom de nœud avec l’extension `.js` ou `.css`. Par exemple, le nœud de bibliothèque nommé `cq.jquery` donne le nom de fichier généré `cq.jquery.js` ou `cq.jquery.css`.
@@ -87,7 +88,7 @@ Pour que les bibliothèques clientes situées sous `/apps` soient accessibles, u
    * Type : booléen
    * Valeur : `true`
 1. Si vous devez gérer des ressources statiques, créez un sous-dossier nommé `resources` sous le dossier de bibliothèques clientes.
-   * Si vous stockez des ressources statiques sous le dossier `resources`, elles ne peuvent pas être référencées sur une instance de publication.
+   * Si vous stockez des ressources statiques ailleurs que sous le dossier `resources`, ils ne peuvent pas être référencés sur une instance de publication.
 1. Ajoutez les fichiers sources dans le dossier de bibliothèques.
    * Cela est généralement effectué par le processus de création frontale de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html).
    * Si vous le souhaitez, vous pouvez organiser les fichiers sources dans des sous-dossiers.
@@ -211,7 +212,7 @@ Incorporer du code s’avère utile pour fournir l’accès aux bibliothèques q
 
 #### Dossiers de bibliothèques clientes spécifiques à une application {#app-specific-client-library-folders}
 
-Il est recommandé de conserver tous les fichiers associés à l’application dans leur dossier d’application sous /apps. Il est également recommandé de refuser l’accès au dossier /apps aux visiteurs du site web. Pour répondre à ces deux exigences, créez un dossier de bibliothèques clientes sous le dossier /etc qui incorpore la bibliothèque cliente sous /apps.
+Il est conseillé de conserver tous les fichiers associés à une application dans leur dossier d’application sous `/apps`. Il est également recommandé d’empêcher les internautes d’accéder au dossier `/apps`. Pour répondre à ces deux exigences, créez sous `/etc` un dossier de bibliothèques clientes qui incorpore la bibliothèque cliente qui est située sous `/apps`.
 
 Utilisez la propriété categories pour identifier le dossier de bibliothèque cliente à incorporer. Pour incorporer la bibliothèque, ajoutez une propriété au nœud `cq:ClientLibraryFolder` d’intégration à l’aide des attributs de propriété suivants :
 
