@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
 workflow-type: tm+mt
-source-wordcount: '3763'
-ht-degree: 99%
+source-wordcount: '3797'
+ht-degree: 97%
 
 ---
 
@@ -66,7 +66,9 @@ Les différents rôles impliqués pour configurer et la fonctionnalité et leurs
 
 ### Architecture des ressources connectées {#connected-assets-architecture}
 
-Experience Manager vous permet de connecter un déploiement DAM à distance en tant que source à plusieurs déploiements [!DNL Sites] Experience Manager. Vous pouvez connecter un maximum de quatre déploiements [!DNL Sites] à une source DAM à distance. Toutefois, vous pouvez connecter un déploiement [!DNL Sites] à un seul déploiement DAM à distance.
+Experience Manager vous permet de connecter un déploiement DAM à distance en tant que source à plusieurs déploiements [!DNL Sites] Experience Manager. Toutefois, vous pouvez connecter un déploiement [!DNL Sites] à un seul déploiement DAM à distance.
+
+Évaluez le nombre optimal d’instances Sites à connecter à un déploiement DAM distant. Adobe recommande de connecter progressivement les instances Sites au déploiement et de tester l’absence d’impact sur les performances au niveau de la gestion des actifs numériques distants, car chaque instance Sites connectée contribue au trafic de données sur la gestion des actifs numériques distants.
 
 Les diagrammes suivants illustrent les scénarios pris en charge :
 
@@ -261,9 +263,9 @@ Configurez la fonction Ressources connectées uniquement lorsque vous devez util
 
 +++
 
-+++**Combien de déploiements [!DNL Sites] pouvez-vous connecter à un déploiement DAM distant après avoir configuré les ressources connectées ?**
++++**Peux-tu connecter plusieurs [!DNL Sites] déploiements vers un déploiement DAM distant après la configuration des ressources connectées ?**
 
-Vous pouvez connecter un maximum de quatre déploiements [!DNL Sites] sur un déploiement DAM distant après la configuration des ressources connectées. Pour plus d’informations, consultez l’[Architecture des ressources connectées](#connected-assets-architecture).
+Oui, vous pouvez connecter plusieurs [!DNL Sites] se déploie sur un déploiement DAM distant après la configuration des ressources connectées. Pour plus d’informations, consultez l’[Architecture des ressources connectées](#connected-assets-architecture).
 
 +++
 
