@@ -2,10 +2,10 @@
 title: Introduction aux noms de domaine personnalisés
 description: L’interface utilisateur Cloud Manager permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: cc1b0d653706150c616ceafd002dc7594b6c7072
+source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '606'
+ht-degree: 92%
 
 ---
 
@@ -44,6 +44,10 @@ L’utilisation de noms de domaine personnalisés avec AEMaaCS présente certain
 * Les noms de domaine ne peuvent pas être ajoutés aux environnements tant qu’un pipeline en cours d’exécution est attaché à ces environnements.
 * Il n’est possible d’ajouter qu’un seul nom de domaine à la fois.
 * Le même nom de domaine ne peut pas être utilisé sur plusieurs environnements.
+
+>[!NOTE]
+>
+>Les domaines personnalisés sont pris en charge dans Cloud Manager **only** si vous utilisez le réseau de diffusion de contenu géré par AEM. Si vous apportez votre propre réseau de diffusion de contenu et [pointez-le vers le réseau de diffusion de contenu géré AEM](/help/implementing/dispatcher/cdn.md) vous devrez utiliser ce réseau de diffusion de contenu spécifique pour gérer les domaines qui ne sont pas Cloud Manager.
 
 ## Workflow {#workflow}
 

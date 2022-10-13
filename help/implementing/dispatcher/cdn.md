@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95dfcdbc434e4c65bbcae84d6cb45ecd1601f14a
+source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 77%
+source-wordcount: '1163'
+ht-degree: 71%
 
 ---
 
@@ -29,6 +29,10 @@ Consultez les sections ci-dessous pour utiliser l’interface utilisateur en lib
 
 1. [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
+
+>[!NOTE]
+>
+>Les domaines personnalisés sont pris en charge dans Cloud Manager **only** si vous utilisez le réseau de diffusion de contenu géré par AEM. Si vous apportez votre propre réseau de diffusion de contenu et [pointez-le vers le réseau de diffusion de contenu géré AEM](/help/implementing/dispatcher/cdn.md) vous devrez utiliser ce réseau de diffusion de contenu spécifique pour gérer les domaines qui ne sont pas Cloud Manager.
 
 **Limitation du trafic**
 
@@ -54,10 +58,6 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 * Le client doit être en mesure de configurer le réseau CDN pour utiliser AEM as a Cloud Service. Consultez les instructions de configuration présentées ci-dessous.
 * Le client doit disposer d’ingénieurs maîtrisant les réseaux de diffusion de contenu, et disponibles pour résoudre les problèmes associés éventuels.
 * Le client doit effectuer et réussir un test de charge avant de passer en production.
-
->[!NOTE]
->
->Le réseau CDN d’Adobe n’est pas facultatif. Les clients qui apportent leur propre réseau CDN doivent le diriger vers le réseau CDN géré par AEM.
 
 Instructions de configuration :
 
@@ -88,7 +88,9 @@ Sous Windows:
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
-Veuillez noter que lorsque vous utilisez votre propre réseau CDN, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau CDN Adobe sera effectué à l’aide du domaine par défaut `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>[!NOTE]
+>
+>Lorsque vous utilisez votre propre réseau de diffusion de contenu, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau de diffusion de contenu Adobe est effectué à l’aide du domaine par défaut. `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 
 >[!NOTE]
 >
