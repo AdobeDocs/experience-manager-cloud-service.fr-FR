@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 95ec89fa4bb71a63121bc86a74a15cc7812ae342
+source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
-source-wordcount: '1163'
-ht-degree: 71%
+source-wordcount: '1117'
+ht-degree: 74%
 
 ---
 
@@ -122,19 +122,6 @@ Vous trouverez ci-dessous plusieurs exemples de configuration de plusieurs princ
 
 ![Cloudflare1](assets/cloudflare1.png "Cloudflare")
 ![Cloudflare2](assets/cloudflare2.png "Cloudflare")
-
-## Disposition du contenu {#content-disposition}
-
-Pour le niveau publication, la valeur par défaut pour la diffusion des objets Blob est en tant que pièce jointe. Il peut être remplacé à l’aide de la méthode standard [en-tête de disposition du contenu](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) dans le dispatcher.
-
-Vous trouverez ci-dessous un exemple de la manière dont la configuration doit se présenter :
-
-```
-<LocationMatch "^\/content\/dam.*\.(pdf).*">
- Header unset Content-Disposition
- Header set Content-Disposition inline
-</LocationMatch>
-```
 
 ## En-têtes de géolocalisation {#geo-headers}
 
