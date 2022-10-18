@@ -1,11 +1,11 @@
 ---
 title: Parcours du développeur AEM Headless
-description: Découvrez comment développer votre projet pour la diffusion de contenu sans interface à l’aide d’Adobe Experience Manager (AEM) en tant que CMS sans interface. Découvrez comment utiliser des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL pour générer des expériences sans interface.
+description: Découvrez le développement sans interface à l’aide d’Adobe Experience Manager (AEM) as a Headless CMS. Découvrez comment utiliser des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL pour alimenter la diffusion de contenu sans affichage.
 landing-page-description: Découvrez la diffusion et la mise en œuvre du contenu découplé. Apprenez-en plus sur le développement de votre stratégie au sein de votre entreprise.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 2d0856b7370b6b50935378ad26c7361e95820f4d
+source-git-commit: 8932a8f158fe478d23457ac24afdd17f05a048f5
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1268'
 ht-degree: 95%
 
 ---
