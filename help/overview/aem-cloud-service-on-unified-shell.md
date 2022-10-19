@@ -2,9 +2,9 @@
 title: AEM as a Cloud Service sur Shell unifié
 description: AEM as a Cloud Service sur Shell unifié
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: c3b72395504b9e32178182d0a79db804d19fbcf3
+source-git-commit: 51ecb21bf479cfaacb01a9c99c88d7f112f6ff95
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '370'
 ht-degree: 6%
 
 ---
@@ -30,14 +30,14 @@ Les avantages sont les suivants :
 * Changement aisé entre les organisations ou basculement vers une autre application
 * Amélioration de l’aide des produits
 * Bouton de retour sur produit simple pour signaler les problèmes ou partager des idées avec Adobe
-* Accès aux annonces et notifications de produits globaux en plus des notifications spécifiques AEM as a Cloud Service
+* Accès aux notifications et annonces de produits globales en plus des notifications spécifiques à AEM as a Cloud Service
 
 ## Désactivation de Shell unifié {#disabling-unified-shell}
 
 AEM as a Cloud Service a un shell unifié activé prêt à l’emploi. Toutefois, si l’en-tête supérieur a été personnalisé, il est recommandé de désactiver l’interpréteur de commandes unifié afin d’éviter tout problème lié aux personnalisations. Pour désactiver l’interpréteur de commandes unifié, procédez comme suit :
 
 >[!NOTE]
->Un Shell unifié ne peut être désactivé que par un compte disposant de privilèges d’administration.
+>Un Shell unifié ne peut être désactivé que par un compte disposant de droits d’administrateur.
 
 1. Accédez à **Outils - Cloud Services**.
 
@@ -49,7 +49,7 @@ AEM as a Cloud Service a un shell unifié activé prêt à l’emploi. Toutefois
 
    ![image](/help/overview/assets/unifiedshell3.png)
 
-## Modification d’un thème sombre {#chaning-to-dark-theme}
+## Modification d’un thème sombre {#changing-to-dark-theme}
 
 Pour passer au thème sombre, cliquez sur l’icône de votre profil. Une fenêtre contextuelle s’affiche, comme illustré ci-dessous. Vous pouvez utiliser le bouton d’activation/désactivation pour passer à un thème sombre pour le Shell unifié.
 
