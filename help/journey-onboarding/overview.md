@@ -14,7 +14,7 @@ ht-degree: 25%
 
 Félicitations d&#39;avoir choisi AEM as a Cloud Service ! Ce document constitue le point de départ d’un parcours guidé tout au long du processus d’intégration. Que vous déployiez une nouvelle application ou migriez une application existante, ce parcours d’intégration garantit que vos équipes sont configurées et ont accès à AEM as a Cloud Service.
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
 L’intégration est le processus par lequel un administrateur système désigné configure AEM as a Cloud Service pour votre organisation. Il inclut l’approvisionnement initial des ressources cloud et l’affectation des utilisateurs à des rôles en fonction de leurs responsabilités professionnelles. Par conséquent, chaque membre peut se connecter et accéder à ses ressources AEM as a Cloud Service.
 
@@ -47,7 +47,7 @@ Ces concepts seront présentés en détail dans ce parcours d&#39;intégration. 
 
 Fondamentalement, vous allez tomber sur le terrain avec votre nouveau projet as a Cloud Service AEM !
 
-## Public {#audience}
+## Audience {#audience}
 
 Le parcours d’intégration est écrit spécifiquement pour la variable **administrateur système** des nouveaux clients à AEM as a Cloud Service et à AEM en général. L’administrateur système est la personne qui est contactée pour la première fois par Adobe après la signature de votre contrat as a Cloud Service AEM. Il s’agit généralement de la première personne à accéder à vos ressources as a Cloud Service AEM et à les configurer. Si vous lisez ceci, vous êtes probablement l’administrateur système.
 
@@ -70,7 +70,7 @@ Ce guide d’intégration illustre l’ensemble du processus d’intégration en
 
 Les articles suivants décrivent en détail les principaux concepts d’intégration et vous donnent des connaissances fondamentales sur AEM as a Cloud Service. Bien que vous puissiez accéder directement à une partie spécifique du parcours, de nombreux concepts sont présentés dans des articles précédents. Par conséquent, si le concept d’intégration est nouveau pour vous, nous vous recommandons de commencer par le début et de progresser de manière chronologique.
 
-| Numéro | Article | Description | Public |
+| Numéro | Article | Description | Audience |
 |---|---|---|---|
 | 0 | Parcours d’intégration | Ce document | Administrateur système |
 | 1 | [Préparation à l’intégration](preparation.md) | Avant que le processus d’intégration ne commence, l’administrateur système doit comprendre un certain nombre d’étapes préparatoires avant de se connecter au système. | Administrateur système |
