@@ -2,9 +2,9 @@
 title: Restauration du contenu dans AEM as a Cloud Service
 description: Découvrez comment restaurer votre contenu as a Cloud Service AEM à partir de la sauvegarde à l’aide de Cloud Manager.
 exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
-source-git-commit: e816bd55b8b5febb19566f3d6009e6f5e823b22e
+source-git-commit: 564be5a7bcbcab95b1bbf824b01f80e018aae2a2
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1259'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,9 @@ Dans les deux cas, la version de votre code personnalisé et la version AEM rest
 Les mesures de performances de restauration du contenu dans AEM as a ContentService se rapportent aux références normalisées :
 
 * **Objectif de temps de récupération (RTO) :** L’objectif de temps de récupération varie en fonction de la taille du référentiel, mais en règle générale, une fois que la séquence de récupération commence, elle doit prendre environ 30 minutes.
-* **L’objectif du point de récupération (RPO) :** L’objectif du point de récupération est de 24 heures au maximum
+* **L’objectif du point de récupération (RPO) :** L’objectif du point de récupération dépend de la durée de fonctionnement de votre instance :
+   * pour les premières 24 heures d&#39;opération : à tout moment pendant ces 24 heures.
+   * après les 24 heures initiales : un maximum de 12 heures pour les six jours précédents.
 
 >[!TIP]
 >
@@ -61,7 +63,7 @@ L’utilisation du mécanisme de restauration en libre-service est soumise aux r
 
 ## Restauration du contenu {#restoring-content}
 
-Déterminez tout d’abord la période du contenu que vous souhaitez restaurer. Ensuite, pour restaurer le contenu de votre environnement à partir d’une sauvegarde, procédez comme suit.
+Déterminez d’abord la période du contenu que vous souhaitez restaurer. Ensuite, pour restaurer le contenu de votre environnement à partir d’une sauvegarde, procédez comme suit.
 
 >[!NOTE]
 >
@@ -112,7 +114,7 @@ Une fois la restauration terminée, l’environnement :
 
 ## Choix de la sauvegarde appropriée {#choosing-backup}
 
-Restaure uniquement le contenu à AEM. Pour cette raison, vous devez soigneusement tenir compte des modifications de code effectuées entre le point de restauration souhaité et l’heure actuelle en examinant l’historique de validation entre votre ID de validation actuel et celui en cours de restauration.
+Restaure uniquement le contenu à AEM. Pour cette raison, vous devez soigneusement tenir compte des modifications de code effectuées entre le point de restauration souhaité et l’heure actuelle en examinant l’historique de validation entre l’ID de validation actuel et celui en cours de restauration.
 
 Il existe plusieurs scénarios.
 
