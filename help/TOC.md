@@ -8,7 +8,7 @@ user-guide-description: Ressources d’aide autonome et liens vers la documentat
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4d8bb08b8791dcc576f1566f480519594ed2e9d4
+source-git-commit: 2e0aef129333eb99933bc0adfc8a753069bd656f
 workflow-type: tm+mt
 source-wordcount: '3731'
 ht-degree: 94%
@@ -478,11 +478,11 @@ ht-degree: 94%
       + [Fin de vie des visionneuses DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Intégration avec Adobe Workfront {#integrations}
       + [Intégrations à  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
+      + [Configuration du mappage des métadonnées des ressources](/help/assets/configure-asset-metadata-mapping.md)
       + [Installer le [!DNL enhanced connector] pour [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Suppression des dépendances externes pour les installations existantes](/help/assets/remove-external-dependencies.md)
       + [Configurer le  [!DNL enhanced connector]  pour  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-      + [Mettre à jour  [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-      + [Configuration du mappage des métadonnées des ressources](/help/assets/configure-asset-metadata-mapping.md)
+      + [Mettre à jour [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + [Présentation](/help/forms/home.md)
    + [Fonctions clés](/help/forms/key-features.md)
