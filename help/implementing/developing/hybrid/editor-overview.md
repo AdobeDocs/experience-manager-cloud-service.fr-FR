@@ -5,7 +5,7 @@ exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '1636'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -163,7 +163,7 @@ Les versions précédentes de ces frameworks peuvent fonctionner avec le SDK de 
 
 Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Consultez le document [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) pour connaître les exigences qu’un framework doit satisfaire afin de créer une couche spécifique composée des modules, composants et services nécessaires avec l’éditeur de SPA d’AEM.
 
-### Utilisation de plusieurs sélecteurs {#multiple-selectors}
+### Utiliser plusieurs sélecteurs {#multiple-selectors}
 
 Il est possible de définir et personnaliser d’autres sélecteurs dans le cadre d’une SPA développée pour le SDK de l’éditeur de SPA d’AEM. Toutefois, cette prise en charge nécessite que le sélecteur `model` soit le premier et que l’extension soit `.json`, conformément aux exigences de l’exportateur JSON.
 
@@ -178,7 +178,7 @@ Pour plus d’informations sur la propriété `editElementQuery` et la configura
 
 ### Restrictions {#limitations}
 
-Le SDK de l’éditeur d’AEM SPA est entièrement pris en charge par Adobe et il continue d’être amélioré et développé. Les fonctionnalités d’AEM suivantes ne sont pas encore prises en charge par l’éditeur de SPA :
+Le SDK de l’éditeur de SPA d’AEM est entièrement pris en charge par Adobe et continue d’être amélioré et développé. Les fonctionnalités d’AEM suivantes ne sont pas encore prises en charge par l’éditeur de SPA :
 
 * Mode cible
 * ContextHub
