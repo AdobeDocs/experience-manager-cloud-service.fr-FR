@@ -5,7 +5,7 @@ exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: 3557ddbc76ff21bcfe4ac0338f116b02b5135f2c
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Pour créer un programme de production, procédez comme suit.
 
    ![Page de destination de Cloud Manager](assets/first_timelogin1.png)
 
-1. Sélectionnez **Configuration pour la production** dans l’assistant de création de programme pour créer un programme de production. Vous pouvez accepter le nom du programme par défaut ou le modifier avant de cliquer sur **Continuer**.
+1. Sélectionnez **Configuration pour la production** dans l’assistant de création de programme pour créer un programme de production. Vous pouvez accepter le nom de programme par défaut ou le modifier avant de cliquer sur **Continuer**.
 
-   ![Assistant de création de programme](assets/create-prod1.png)
+   ![Créer un assistant de programme](assets/create-prod1.png)
 
-1. Sur le **Solutions et modules complémentaires** sélectionnez les solutions à inclure dans le programme.
+1. Dans l’onglet **Solutions et modules complémentaires**, sélectionnez les solutions à inclure dans le programme.
 
    ![Solutions sélectionnées](assets/setup-prod-select.png)
 
@@ -48,12 +48,12 @@ Pour créer un programme de production, procédez comme suit.
 
 1. Lorsque vos solutions et modules complémentaires sont sélectionnés, cliquez sur **Continuer**.
 
-1. Sur le **Date d’activation** saisissez la date d’activation de votre programme de production.
+1. Dans l’onglet **Date de mise en production**, saisissez la date de mise en production de votre programme.
 
-   ![Définition de la date d’activation planifiée](assets/setup-go-live.png)
+   ![Définir la date de mise en production planifiée](assets/setup-go-live.png)
 
    * Cette date peut être modifiée à tout moment.
-   * Cette date est destinée à un usage informatif uniquement et déclenche le widget GoLive sur la page d’aperçu du programme afin de fournir des liens internes au produit vers AEM documentation des bonnes pratiques as a Cloud Service en temps opportun, afin de vous aligner sur votre parcours et d’offrir ainsi une expérience GoLive réussie et fluide.
+   * Cette date est uniquement à usage informatif et déclenche le widget de mise en production sur la page de présentation du programme dans le but de fournir des liens internes au produit vers la documentation sur les bonnes pratiques d’AEM as a Cloud Service en temps opportun, afin de vous aligner sur votre parcours, offrant ainsi une expérience de mise en production réussie et fluide.
 
 1. Cliquez sur **Créer**.
 
