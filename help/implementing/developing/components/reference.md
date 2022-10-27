@@ -474,4 +474,4 @@ Ce MarkDown est ensuite affiché dans la [console du composant.](/help/sites-clo
 
 ![README.md visible dans la console de composants](assets/components-documentation-console.png)
 
-Le markdown pris en charge est le même que pour [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md).
+Le Markdown pris en charge est le même que pour les [fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md).
