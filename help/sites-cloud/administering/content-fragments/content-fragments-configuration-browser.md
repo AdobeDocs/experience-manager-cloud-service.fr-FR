@@ -7,20 +7,20 @@ exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '365'
-ht-degree: 62%
+ht-degree: 94%
 
 ---
 
 # Fragments de contenu – Explorateur de configurations{#content-fragments-configuration-browser}
 
-Découvrez comment activer une fonctionnalité de fragment de contenu spécifique dans l’explorateur de configurations.
+Découvrez comment activer certaines fonctionnalités de fragments de contenu dans le navigateur de configurations.
 
 ## Activation de la fonctionnalité de fragments de contenu pour votre instance {#enable-content-fragment-functionality-instance}
 
 Avant d’utiliser les fragments de contenu, vous devez utiliser l’**Explorateur de configurations** pour activer les éléments suivants :
 
 * **Modèles de fragment de contenu** – obligatoire
-* **Requêtes persistantes GraphQL** - facultatif
+* **Requêtes persistantes GraphQL** – facultatif
 
 >[!CAUTION]
 >
@@ -45,9 +45,9 @@ Pour [utiliser certaines fonctionnalités de fragments de contenu,](#creating-a-
 
 >[!NOTE]
 >
->[Sous-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (une configuration imbriquée dans une autre configuration) sont entièrement prises en charge pour une utilisation avec les fragments de contenu, les modèles de fragment de contenu et les requêtes GraphQL.
+>Les [sous-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (une configuration imbriquée dans une autre configuration) sont entièrement prises en charge pour une utilisation avec les fragments de contenu, les modèles de fragment de contenu et les requêtes GraphQL.
 >
->Il suffit de noter que :
+>Il faut juste noter que :
 >
 >
 >* Après la création des modèles dans une sous-configuration, il n’est PAS possible de déplacer ou de copier le modèle vers une autre sous-configuration.
@@ -77,9 +77,9 @@ Pour [utiliser certaines fonctionnalités de fragments de contenu,](#creating-a-
 
 <!-- 1. Select the location appropriate to your website. -->
 
-### Application de la configuration à votre dossier {#apply-the-configuration-to-your-folder}
+### Appliquer la configuration à votre dossier {#apply-the-configuration-to-your-folder}
 
-Lorsque la configuration **global** est activé pour la fonctionnalité de fragment de contenu, elle s’applique ensuite à tout dossier de ressources accessible par le biais de **Ressources** console.
+Lorsque la configuration **globale** est activée pour la fonctionnalité de fragment de contenu, elle s’applique ensuite à tout dossier de ressources accessible par le biais de la console des **ressources**.
 
 Pour utiliser d’autres configurations (c’est-à-dire à l’exclusion de la version globale) avec un dossier de ressources comparable, vous devez définir la connexion. Pour ce faire, utilisez **Configuration** sous l’onglet **Services cloud** des **Propriétés du dossier** du dossier approprié.
 
