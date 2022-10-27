@@ -5,7 +5,7 @@ exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '329'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ Vous pouvez créer plusieurs configurations si nécessaire. Les configurations p
 
 >[!NOTE]
 >
->Options de configuration en plus des **Modèles de fragment de contenu** et **Requêtes persistantes GraphQL** peut être nécessaire en fonction de vos exigences de mise en oeuvre.
+>Des options de configuration en plus des **Modèles de fragments de contenu** et des **Requêtes persistantes GraphQL** peuvent être nécessaires en fonction de vos exigences d’implémentation.
 
 ## Étapes suivantes {#next-steps}
 
