@@ -12,7 +12,7 @@ exl-id: a4d28786-cffa-42ab-98d3-90a15313e401
 source-git-commit: ccd52d147b1739330c3cb5a7d1952a7e9eec71ad
 workflow-type: tm+mt
 source-wordcount: '2525'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 98%
 <!-- hide: yes
 hidefromtoc: yes -->
 
-La configuration des **[!UICONTROL paramètres généraux de Dynamic Media]** est disponible uniquement si :
+La configuration des **[!UICONTROL paramètres généraux de Dynamic Media]** est disponible uniquement si :
 
 * Vous disposez *d’une* **[!UICONTROL Configuration Dynamic Media]** existante (dans **[!UICONTROL Services cloud]**) dans Adobe Experience Manager as a Cloud Service. Voir [Création d’une configuration Dynamic Media dans Services cloud](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services).
 * Vous êtes un administrateur système d’Experience Manager disposant de droits d’administrateur.
@@ -38,7 +38,7 @@ Voir aussi [Facultatif - Installer et configurer des paramètres de Dynamic Medi
 >
 >Mise à niveau de Dynamic Media Classic vers Dynamic Media sur Adobe Experience Manager ? Les pages Paramètres généraux et [Configuration de la publication](/help/assets/dynamic-media/dm-publish-settings.md) dans Dynamic Media sont préremplies avec les valeurs de votre compte Dynamic Media Classic. Les exceptions sont toutes les valeurs figurant dans la zone **[!UICONTROL Options de chargement par défaut]** de la page Paramètres généraux. Ces valeurs se trouvent déjà dans Experience Manager. Ainsi, toute modification apportée aux **[!UICONTROL Options de chargement par défaut]**, dans l’un des cinq onglets, par le biais de l’interface utilisateur Experience Manager, est répercutée dans Dynamic Media et non dans Dynamic Media Classic. Tous les autres paramètres et valeurs de la page Paramètres généraux et de la page [Configuration de la publication](/help/assets/dynamic-media/dm-publish-settings.md) sont conservés entre Dynamic Media Classic et Dynamic Media dans Experience Manager.
 
-**Pour configurer les paramètres généraux de Dynamic Media :**
+**Pour configurer les paramètres généraux de Dynamic Media :**
 
 1. En mode création d’Experience Manager, sélectionnez le logo d’Experience Manager pour accéder à la console de navigation globale.
 1. Dans la barre de gauche, sélectionnez l’icône Outils, puis accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Paramètres généraux de Dynamic Media]**.
@@ -70,7 +70,7 @@ Lors de la création du compte, Adobe Dynamic Media fournit automatiquement les
 
 * **[!UICONTROL Remplacer les images]**
 
-   Adobe Dynamic Media ne permet pas à deux fichiers d’avoir le même nom. L’identifiant Dynamic Media d’Adobe de chaque élément (le nom de l’image sans l’extension de nom de fichier) doit être unique. En raison de cette règle, **[!UICONTROL Charger dans l’application]** a un remplacement. L’effet exact de cette option dépend de l’option Remplacer les images que vous avez sélectionnée. Ces options spécifient la manière dont les images de remplacement sont chargées : elles peuvent remplacer les images originales ou devenir des images en double. Les images en double sont renommées avec une `-1`. Par exemple : `chair.tif` est renommé `chair-1.tif`. Ces options affectent les images chargées dans un dossier différent de celui de l’original ou les images dont l’extension de nom de fichier est différente de celle de l’original (telle que JPG, TIF ou PNG).
+   Adobe Dynamic Media ne permet pas à deux fichiers d’avoir le même nom. L’identifiant Dynamic Media d’Adobe de chaque élément (le nom de l’image sans l’extension de nom de fichier) doit être unique. En raison de cette règle, **[!UICONTROL Charger dans l’application]** a un remplacement. L’effet exact de cette option dépend de l’option Remplacer les images que vous avez sélectionnée. Ces options spécifient la manière dont les images de remplacement sont chargées : elles peuvent remplacer les images originales ou devenir des images en double. Les images en double sont renommées avec une `-1`. Par exemple : `chair.tif` est renommé `chair-1.tif`. Ces options affectent les images chargées dans un dossier différent de celui de l’original ou les images dont l’extension de nom de fichier est différente de celle de l’original (telle que JPG, TIF ou PNG).
 
    >[!NOTE]
    >
@@ -136,7 +136,7 @@ Vous pouvez créer des modèles à partir de fichiers Adobe® Photoshop®, cons
 
 ### Onglet PDF {#pdf-tab}
 
-Le nombre maximal de pages qu’un PDF peut envisager pour extraction est de 5 000 pour les nouveaux chargements. Le 31 décembre 2022, cette limite sera de 100 pages (pour tous les PDF). Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Le nombre maximal de pages pour qu’un PDF soit considéré pour l’extraction est de 5 000 pour les nouveaux chargements. Cette limite sera de 100 pages (pour tous les PDF) le 31 décembre 2022. Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
 Vous pouvez pixelliser les fichiers, extraire des mots de recherche et des liens, définir la résolution et choisir un espace colorimétrique.
 
