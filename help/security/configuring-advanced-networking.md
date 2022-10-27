@@ -5,7 +5,7 @@ exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
 workflow-type: tm+mt
 source-wordcount: '3053'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -209,7 +209,7 @@ Pour plus d’informations sur les API, consultez la [documentation de l’API C
 
 ### Routage du trafic {#dedcated-egress-ip-traffic-routing}
 
-Le trafic HTTP ou https passe par un proxy préconfiguré, à condition qu’il utilise des propriétés système Java standard pour les configurations de proxy.
+Le trafic HTTP ou HTTPS passe par un proxy préconfiguré, à condition qu’il utilise des propriétés système Java standard pour les configurations de proxy.
 
 Le trafic non http/s pointant vers des destinations via des ports déclarés dans le paramètre `portForwards` doit référencer une propriété appelée `AEM_PROXY_HOST`, ainsi que le port mappé. Par exemple :
 
