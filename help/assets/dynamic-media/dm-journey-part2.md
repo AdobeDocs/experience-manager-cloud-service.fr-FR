@@ -1,5 +1,5 @@
 ---
-title: Parcours dans Dynamic Media, partie II
+title: Parcours dans Dynamic Media, partie II
 description: Le Parcours Dynamic Media couvre les principes de base de Dynamic Media, son fonctionnement, ce qu’il peut vous apporter et la valeur qu’il représente pour votre travail et vos clients.
 contentOwner: Rick Brough
 products: Experience Manager as a Cloud Service
@@ -14,7 +14,7 @@ exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
 source-git-commit: c82707d07d888c48d3c02a76d58171720a6279eb
 workflow-type: tm+mt
 source-wordcount: '2878'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
