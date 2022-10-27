@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 58f36799f65988eddf0c82dc10b0e62621be5a7c
 workflow-type: tm+mt
 source-wordcount: '2693'
-ht-degree: 89%
+ht-degree: 93%
 
 ---
 
@@ -81,7 +81,7 @@ Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des entrées 
 
 >[!NOTE]
 >
->En mode flexible, vous devez utiliser des chemins relatifs plutôt que des chemins absolus.
+>En mode flexible, vous devez utiliser des chemins d’accès relatifs plutôt que des chemins absolus.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -446,11 +446,11 @@ Les journaux des environnements cloud sont exposés par le biais du service de j
 >
 >En raison d’une limitation du système d’exploitation Windows, cette fonctionnalité est disponible uniquement pour les utilisateurs de macOS et Linux.
 
-Au lieu d’exécuter la validation locale (`validate.sh`) et de démarrer le conteneur Docker (`docker_run.sh`) chaque fois que la configuration est modifiée, vous pouvez également exécuter la fonction `docker_run_hot_reload.sh` script.  Le script recherche toutes les modifications apportées à la configuration et la recharge automatiquement et exécute à nouveau la validation. L’utilisation de cette option vous permet de gagner beaucoup de temps lors du débogage.
+Au lieu d’exécuter la validation locale (`validate.sh`) et de démarrer le conteneur Docker (`docker_run.sh`) chaque fois que la configuration est modifiée, vous pouvez également exécuter le script `docker_run_hot_reload.sh`.  Le script recherche toutes les modifications apportées à la configuration et la recharge automatiquement, puis exécute à nouveau la validation. L’utilisation de cette option vous permet de gagner beaucoup de temps lors du débogage.
 
-Vous pouvez exécuter le script à l’aide de la commande suivante : `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
+Vous pouvez exécuter le script à l’aide de la commande suivante : `./bin/docker_run_hot_reload.sh src/dispatcher host.docker.internal:4503 8080`
 
-Notez que les premières lignes de sortie ressembleront à ce qui s’exécuterait pour `docker_run.sh`, par exemple :
+Notez que les premières lignes de sortie ressembleront à ce qui s’exécuterait pour `docker_run.sh`, par exemple :
 
 ```
 ~ bin/docker_run_hot_reload.sh src host.docker.internal:8081 8082
@@ -549,7 +549,7 @@ Avec la version 2021.7.0 de Cloud Manager, les nouveaux programmes génèrent d
 
    >[!NOTE]
    >
-   >En mode flexible, vous devez utiliser des chemins relatifs plutôt que des chemins absolus.
+   >En mode flexible, vous devez utiliser des chemins d’accès relatifs plutôt que des chemins absolus.
 1. **Déploiement en production :**
    * Validez le fichier `opt-in/USE_SOURCES_DIRECTLY` dans une branche git déployée par le pipeline de production vers les environnements d’évaluation et de production Cloud.
    * Utilisez Cloud Manager pour effectuer le déploiement vers l’évaluation.
