@@ -1,19 +1,19 @@
 ---
 title: Modèles de fragment de contenu
-description: Découvrez comment les modèles de fragment de contenu servent de base pour vos fragments de contenu dans AEM. Ils vous permettent de créer du contenu structuré à utiliser dans une diffusion sans interface utilisateur graphique ou dans la création de pages.
+description: Découvrez comment les modèles de fragment de contenu servent de base pour vos fragments de contenu dans AEM. Ils vous permettent de créer du contenu structuré à utiliser dans une diffusion Headless ou dans la création de pages.
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '2904'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Modèles de fragment de contenu {#content-fragment-models}
 
-Les modèles de fragment de contenu dans AEM définissent la structure du contenu de votre [fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md). Ils peuvent être utilisés pour la création de pages ou comme base pour votre contenu sans interface utilisateur.
+Les modèles de fragment de contenu dans AEM définissent la structure du contenu de vos [fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md). Ils peuvent être utilisés pour la création de pages ou comme base pour votre contenu Headless.
 
 Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
@@ -24,8 +24,8 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
-1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
-1. Accédez au dossier approprié à votre [configuration ou sous-configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
+1. Accédez à **Outils**, **Général**, puis ouvrez les **modèles de fragment de contenu**.
+1. Accédez au dossier adapté à votre [configuration, ou sous-configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
 1. Utilisez le bouton **Créer** pour ouvrir l’assistant.
 
    >[!CAUTION]
@@ -46,7 +46,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 >
 >La modification d’un modèle de fragment de contenu existant peut avoir un impact sur les fragments dépendants.
 
-1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
+1. Accédez à **Outils**, **Général**, puis ouvrez les **modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Ouvrez le modèle requis pour l’**édition**. Utilisez l’action rapide ou sélectionnez le modèle puis l’action dans la barre d’outils.
@@ -75,7 +75,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
          >[!CAUTION]
          >
-         >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que les caractères A-Z, a-z, 0-9 et le trait de soulignement &quot;_&quot; comme caractères spéciaux.
+         >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
          >
          >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
       Par exemple :
@@ -141,7 +141,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
 * **Nom de la propriété**
 
-   Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **must** contain *only* A-Z, a-z, 0-9 et trait de soulignement &quot;_&quot; comme caractère spécial.
+   Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **ne doivent** contenir *que* les caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
 
    >[!CAUTION]
    >
@@ -230,7 +230,7 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >AEM dispose d’une protection récurrente pour :
 >
 >* Références du contenu
-   >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
+   >  Cela permet d’empêcher l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
 >* Références de fragment dans GraphQL
    >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
@@ -400,7 +400,7 @@ Les modèles de fragment de contenu autorisés pour un dossier sont résolus com
 
 Pour supprimer un modèle de fragment de contenu :
 
-1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
+1. Accédez à **Outils**, **Général**, puis ouvrez les **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis utilisez l’option **de suppression** de la barre d’outils.
@@ -415,7 +415,7 @@ Les modèles de fragment de contenu doivent être publiés avant ou pendant la p
 
 Pour publier un modèle de fragment de contenu :
 
-1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
+1. Accédez à **Outils**, **Général**, puis ouvrez les **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option de **publication** dans la barre d’outils.
@@ -431,7 +431,7 @@ Les modèles de fragment de contenu peuvent être annulés s’ils ne sont réf�
 
 Pour annuler la publication d’un modèle de fragment de contenu :
 
-1. Accédez à **Outils**, **Général**, puis ouvrez **Modèles de fragment de contenu**.
+1. Accédez à **Outils**, **Général**, puis ouvrez les **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option **Annuler la publication** dans la barre d’outils.
