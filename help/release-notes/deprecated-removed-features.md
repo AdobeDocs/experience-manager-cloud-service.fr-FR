@@ -5,7 +5,7 @@ exl-id: ef082184-4eb7-49c7-8887-03d925e3da6f
 source-git-commit: c4809bcbeae5339427b1da588021606d18b482a5
 workflow-type: tm+mt
 source-wordcount: '666'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -41,10 +41,10 @@ Il est conseillé aux clients de réfléchir à leur utilisation de la fonctionn
 | [!DNL Assets] | [Certaines étapes](/help/assets/developer-reference-material-apis.md#post-processing-workflows-steps) du workflow `DAM Asset Update` ne sont pas prises en charge, notamment l’appel d’outils de ligne de commande tels que [!DNL ImageMagick]. | [Les microservices de ressources](/help/assets/asset-microservices-overview.md) remplacent de nombreux workflows. Pour le traitement personnalisé, utilisez des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows). |
 | [!DNL Assets] | Transcodage FFmpeg des vidéos. | Pour la génération de miniatures FFmpeg, utilisez les [microservices de ressources](/help/assets/asset-microservices-overview.md). Pour le transcodage FFmpeg, utilisez [Dynamic Media](/help/assets/manage-video-assets.md). |
 | [!DNL Foundation] | Interface utilisateur de réplication de l’arborescence sous l’onglet Distribuer de l’agent de réplication (suppression après le 30 septembre 2021) | Approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Workflow de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) |
-| [!DNL Foundation] | Ni l’onglet Distribution de l’écran de l’administrateur de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer des modules de contenu de plus de 10 Mo (application après le 12 septembre 2022). | Approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Workflow de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Ni l’onglet Distribution de l’écran de l’administrateur de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer des packages de contenu de plus de 10 Mo (application après le 12 septembre 2022). | Approches [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Workflow de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) |
 
 
-| [!DNL Foundation]       | Ni l’onglet Distribution de l’écran de l’administrateur de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer les packages de contenu de plus de 10 Mo. Utilisez plutôt l’une des méthodes suivantes : [Gérer la publication](/help/operations/replication.md#manage-publication) ou [workflow de l’arborescence de contenu de publication](/help/operations/replication.md#publish-content-tree-workflow) |
+| [!DNL Foundation] | Ni l’onglet Distribution de l’écran de l’administrateur de l’agent de réplication, ni l’API de réplication ne peuvent être utilisés pour répliquer les packages de contenu de plus de 10 Mo. Utilisez plutôt l’une des méthodes suivantes : [Gérer la publication](/help/operations/replication.md#manage-publication) ou [workflow Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) |
 
 ## Fonctionnalités supprimées {#removed-features}
 
@@ -56,7 +56,7 @@ Cette section répertorie les capacités et fonctionnalités qui ont été suppr
 | [!DNL Dynamic Media] | Les intégrations précédentes avec [Dynamic Media Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/scene7.html?lang=fr#integration) et le [mode hybride de Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/config-dynamic.html?lang=fr#dynamic) ne sont pas disponibles dans [!DNL Experience Manager] as a [!DNL Cloud Service]. | Utilisez [Dynamic Media](/help/assets/dynamic-media/dynamic-media.md) fourni avec [!DNL Experience Manager] as a [!DNL Cloud Service]. | Supprimé |
 | [!DNL Sites] | Composant Portal Director et Portlet | Ces fonctionnalités ont été abandonnées dans [!DNL Experience Manager] 6.4 et ont été supprimées d’[!DNL Experience Manager]. | Supprimé |
 | [!DNL Sites] | Importateur de conception | Cette fonctionnalité a été supprimée, car les sections non modifiables du référentiel de [!DNL Experience Manager] ne sont pas accessibles au moment de l’exécution. | Supprimé |
-| [!DNL Assets] |  Le partage d’[!DNL Assets] avec le service principal Experience Cloud Assets et les services Creative Cloud n’est pas disponible. | Pour l’intégration à [!DNL Adobe Creative Cloud], utilisez [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html). | Supprimé |
+| [!DNL Assets] | Le partage d’[!DNL Assets] avec le service principal Experience Cloud Assets et les services Creative Cloud n’est pas disponible. | Pour l’intégration à [!DNL Adobe Creative Cloud], utilisez [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html). | Supprimé |
 | [!DNL Foundation] | Prise en charge des sources de données Apache Sling (offre spéciale OSGi org.apache.sling.datasource) | S/O | Supprimé |
 | [!DNL Foundation] | Prise en charge des modèles de script JST (offre spéciale OSGi org.apache.sling.scripting.jst) | S/O | Supprimé |
 | [!DNL Foundation] | Prise en charge d’Apache Felix Http Whiteboard | OSGi Http Whiteboard | Mars 2022 |
