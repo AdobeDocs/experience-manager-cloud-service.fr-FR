@@ -5,7 +5,7 @@ exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
 source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
 workflow-type: tm+mt
 source-wordcount: '676'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,9 +45,9 @@ Plus d’informations sur l’activation [des points d’entrée GraphQL se trou
 
 Les architectes de l’information doivent concevoir des requêtes pour leurs points d’entrée de canaux afin de diffuser du contenu. Ces requêtes ne doivent généralement être prises en compte qu’une seule fois par point d’entrée et par modèle. Pour les besoins de ce guide de prise en main, nous ne devrons en créer qu’une.
 
-GraphiQL est un IDE inclus dans votre environnement AEM ; il est accessible/visible après que vous [configuration des points de fin](#enable-graphql-endpoint).
+GraphiQL est un IDE inclus dans votre environnement AEM ; il est accessible/visible après la [configuration des points d’entrée](#enable-graphql-endpoint).
 
-1. Connectez-vous à AEM en as a Cloud Service et accédez à l’interface GraphiQL :
+1. Connectez-vous à AEM as a Cloud Service et accédez à l’interface GraphiQL :
 
    Vous pouvez accéder à l’éditeur de requêtes à partir de :
 
