@@ -5,7 +5,7 @@ exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
 source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
 workflow-type: tm+mt
 source-wordcount: '1668'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -53,9 +53,9 @@ Votre compte a été configuré avec les privilèges dont vous avez besoin. Si v
 
 La première fois que vous vous connectez, un petit tutoriel en ligne vous présentera certaines des principales fonctionnalités de l’interface utilisateur.
 
-Vous pouvez ensuite utiliser le panneau de navigation pour accéder aux principales zones d’AEM. Pour les fragments de contenu, vous utiliserez le **Fragments de contenu** (pour certaines actions, vous utiliserez également la méthode **Ressources** ).
+Vous pouvez ensuite utiliser le panneau de navigation pour accéder aux principales zones d’AEM. Pour les fragments de contenu, vous utiliserez la console **Fragments de contenu** (pour certaines actions, vous utiliserez également la console **Ressources**).
 
-Vous pouvez ouvrir le panneau de navigation en sélectionnant l’icône d’Adobe en haut à gauche, suivie de la petite icône de boussole.
+Vous pouvez ouvrir le panneau de navigation en sélectionnant l’icône d’Adobe en haut à gauche, puis la petite icône en forme de boussole.
 
 <!--
 The Navigation Panel can be opened by selecting Adobe icon at the top left, followed by the small compass icon:
@@ -64,7 +64,7 @@ The Navigation Panel can be opened by selecting Adobe icon at the top left, foll
 -->
 
 >[!NOTE]
->Bien que les fragments de contenu soient une fonctionnalité d’AEM **Sites**, ils sont enregistrés sous la forme **Ressources**. Ce détail technique ne devrait pas vous affecter, mais il peut s’avérer utile de le savoir.
+>Bien que les fragments de contenu soient une fonctionnalité d’AEM **Sites**, ils sont enregistrés en tant que **Ressources**. Ce détail technique ne devrait pas vous affecter, mais il peut s’avérer utile de le savoir.
 
 Dans la console, vous pouvez sélectionner des dossiers dans le panneau de gauche pour accéder à votre fragment de contenu. Vous pouvez également filtrer et/ou rechercher.
 
@@ -72,20 +72,20 @@ Dans la console, vous pouvez sélectionner des dossiers dans le panneau de gauch
 
 ### Actions, sélection, affichage {#actions-selecting-viewing}
 
-Dans le **Fragments de contenu** Pour les fragments de contenu, la console propose différentes actions à partir de la barre d’outils :
+La console **Fragments de contenu** met à disposition différentes actions pour vos fragments de contenu à partir de la barre d’outils :
 
 <!-- ![Console actions](assets/cfm-managing-cf-console-01.png) -->
 
 * **Ouvrir dans Assets**
 * **Créer**
-* Le **Référencé par** fournit également un lien direct pour afficher toutes les références parentes de ce fragment ; notamment le référencement de fragments de contenu, de fragments d’expérience et de pages.
+* La colonne **Référencé par** fournit également un lien direct pour afficher toutes les références parentes de ce fragment. Cela inclut notamment le référencement de fragments de contenu, de fragments d’expérience et de pages.
 * Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d’accès JCR.
 
-Après la sélection de votre fragment, toutes les actions appropriées sont disponibles :
+Une fois le fragment sélectionné, toutes les actions appropriées sont disponibles :
 
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
-* **Ouvrez**
+* **Ouvrir**
 * **Publier** (et **Annuler la publication**)
 * **Copier**
 * **Déplacer**
@@ -94,7 +94,7 @@ Après la sélection de votre fragment, toutes les actions appropriées sont dis
 
 >[!NOTE]
 >
->Des actions telles que Publier, Annuler la publication, Supprimer, Déplacer, Renommer, Copier, déclenchent une tâche asynchrone. La progression de cette tâche peut être surveillée via l’interface utilisateur des tâches asynchrones AEM.
+>Des actions telles que Publier, Annuler la publication, Supprimer, Déplacer, Renommer ou Copier déclenchent un traitement asynchrone. Il est possible de surveiller la progression de ce traitement via l’interface utilisateur des traitements asynchrones AEM.
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).
@@ -128,7 +128,7 @@ Nous devrons passer en revue les éléments du début à la fin, mais il se peut
 
 #### Création d’un dossier {#creating-folder}
 
-Pour ce faire, créez une série de dossiers dans la section **Fichiers** de la console Ressources. **** Sélectionnez l’option **Créer** (en haut à droite), puis **Dossier** :
+Pour ce faire, créez une série de dossiers dans la section **Fichiers** de la console **Ressources**. Sélectionnez l’option **Créer** (en haut à droite), puis **Dossier** :
 
 ![Option Créer un dossier](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -166,11 +166,11 @@ Vous recevrez probablement un dossier initial dans lequel vous pourrez créer vo
 
 ### Création d’un fragment de contenu {#creating-fragment}
 
-Dans le **Fragments de contenu** console que vous pouvez utiliser **Créer** pour ouvrir le **Nouveau fragment de contenu** dialog :
+Dans la console **Fragments de contenu**, vous pouvez utiliser **Créer** pour ouvrir la boîte de dialogue **Nouveau fragment de contenu** :
 
 ![Console Fragments de contenu - Création d’un fragment](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-Spécifiez les éléments suivants :
+Spécifiez les éléments suivants :
 
 * **Emplacement**
 * **Modèle de fragment de contenu**
@@ -196,9 +196,9 @@ After continuing with **Next** you can supply the details (**Basic** and **Advan
 Confirm with **Create** and you can then **Open** your fragment in the editor.
 -->
 
-### Modification d’un fragment {#editing-fragment}
+### Modifier un fragment {#editing-fragment}
 
-Vous pouvez ouvrir un fragment immédiatement après sa création ou en le sélectionnant dans la console Fragments de contenu (également à partir de la console Ressources).
+Vous pouvez ouvrir un fragment immédiatement après sa création ou en le sélectionnant dans la console Fragments de contenu (également disponible dans la console Ressources).
 
 Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s’affichent :
 
@@ -263,7 +263,7 @@ Les modèles de fragment de contenu sont essentiels à vos fragments de contenu,
 
 Une fois le fragment terminé, vous pouvez le **Publier** pour qu’il soit disponible pour les applications découplées.
 
-Les actions de publication sont disponibles dans l’éditeur (ou dans la barre d’outils de la fonction **Fragments de contenu** ou la console **Ressources** console) :
+Les actions de publication sont disponibles dans l’éditeur (ou dans la barre d’outils des consoles **Fragments de contenu** ou **Ressources**) :
 
 ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
