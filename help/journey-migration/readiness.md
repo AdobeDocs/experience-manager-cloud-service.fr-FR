@@ -5,7 +5,7 @@ exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '2079'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -103,9 +103,9 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
     <td>Étant donné quʼil nʼy a aucune garantie quant à lʼespace disque alloué et que les instances dans les conteneurs apparaissent et disparaissent, il nʼest pas conseillé dʼutiliser les opérations dʼE/S de fichiers pour écrire ou lire sur le disque attaché à lʼinstance AEM.</td>
   </tr>
   <tr>
-    <td>Workflow Ressource de mise à jour de la gestion des ressources numériques</td>
+    <td>Workflow Ressource de mise à jour de la gestion des ressources numériques (DAM)</td>
     <td><a href="https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=fr">Asset Compute Service</a></td>
-    <td>Les étapes de traitement des médias qui font partie du workflow Ressource de mise à jour de la gestion des ressources numériques sont désormais remplacées par Asset Compute Service.</td>
+    <td>Les étapes de traitement des médias qui font partie du workflow Ressource de mise à jour de la gestion des ressources numériques (DAM) sont désormais remplacées par Asset Compute Service.</td>
   </tr>
   <tr>
     <td>Méthodes de téléchargement des ressources et étapes du processus de workflow prises en charge dans AEM as a Cloud Service</td>
@@ -115,7 +115,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   <tr>
     <td>Lanceurs de workflow</td>
     <td></td>
-    <td>Supprimez de votre code tous les lanceurs de workflow qui déclenchent un workflow Ressource de mise à jour de la gestion des ressources numériques prêt à lʼemploi ou personnalisé.</br>Toutes les ressources téléchargées vers AEM as a Cloud Service seront traitées par le service de traitement des ressources. Pour les étapes personnalisées, reportez-vous à la section <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr#post-processing-workflows">Workflows de post-traitement</a> sur la configuration des workflows de post-traitement.</td>
+    <td>Supprimez de votre code tous les lanceurs de workflow qui déclenchent un workflow Ressource de mise à jour de la gestion des ressources numériques (DAM) prêt à lʼemploi ou personnalisé.</br>Toutes les ressources téléchargées vers AEM as a Cloud Service seront traitées par le service de traitement des ressources. Pour les étapes personnalisées, reportez-vous à la section <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-microservices-configure-and-use.html?lang=fr#post-processing-workflows">Workflows de post-traitement</a> sur la configuration des workflows de post-traitement.</td>
   </tr>
   <tr>
     <td>Étapes de rendu personnalisé</td>
@@ -220,4 +220,4 @@ Une fois que vous avez compris la portée des modifications requises pour passer
 * [AEM as a Cloud Service : introduction, architecture et pensée différente](https://experienceleague.adobe.com/?launch=ExperienceManager-D-1-2021.1.migration&amp;recommended=ExperienceManager-D-1-2021.1.migration&amp;lang=fr#dashboard/learning)
 * [Accueil d’AEM a Cloud Service](/help/overview/home.md) - Pour une présentation de la documentation d’Experience Manager as a Cloud Service, commencez ici.
 * [Présentation d’AEM as a Cloud Service](/help/overview/home.md) - Ce guide présente Experience Manager as a Cloud Service, y compris une introduction, la terminologie et l’architecture.
-* [Parcours d’intégration](/help/journey-onboarding/overview.md)- Ce guide résume la prise en main d’Experience Manager as a Cloud Service, y compris la manière d’y accéder et de configurer votre équipe.
+* [Parcours d’intégration](/help/journey-onboarding/overview.md) : ce guide présente les différentes étapes de la prise en main d’Experience Manager as a Cloud Service, y compris la manière d’y accéder et de configurer votre équipe.
