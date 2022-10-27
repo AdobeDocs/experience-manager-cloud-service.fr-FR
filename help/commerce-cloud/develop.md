@@ -9,7 +9,7 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
 source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1004'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
    Authorization: Bearer <Access Token>
    ```
 
-   Pour plus d’informations sur les secrets, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html#local-development).
+   Pour plus d’informations sur les secrets, voir [Configuration d’OSGi pour AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#local-development).
 
 1. Démarrez le SDK AEM as a Cloud Service.
 
