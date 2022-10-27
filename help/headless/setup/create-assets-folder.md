@@ -35,7 +35,7 @@ Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pou
 
    ![Créer un dossier](../assets/assets-folder-create.png)
 1. Sélectionnez le dossier que vous venez de créer en survolant et en appuyant sur la coche. Puis sélectionnez **Propriétés** dans la barre d’outils (ou utilisez le `p` [raccourci clavier.](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))
-1. Dans la fenêtre **Propriétés**, sélectionnez l’onglet **Cloud Services**.
+1. Dans la fenêtre **Propriétés**, sélectionnez l’onglet **Services cloud**.
 1. Pour la **configuration du cloud**, sélectionnez la[ configuration que vous avez créée précédemment.](create-configuration.md)
 
    ![Configurer le dossier de ressources](../assets/assets-folder-configure.png)
