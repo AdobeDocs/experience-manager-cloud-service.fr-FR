@@ -5,7 +5,7 @@ exl-id: daa5b284-8264-48c3-826c-7909cff4d1a0
 source-git-commit: 0b953e0155fa1b90b5bccbf10b9ceaf1c1f63ae7
 workflow-type: tm+mt
 source-wordcount: '241'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment utili
 
 Vous pouvez utiliser trois méthodes pour ajouter des métadonnées et des balises :
 
-* Lors de la première création de votre fragment (à partir de la fonction **Ressources** console) :
+* Lors de la première création de votre fragment (à partir de la console **Assets**) :
 
    ![Créer un fragment de contenu – Indiquez le nom](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
