@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
 workflow-type: tm+mt
 source-wordcount: '2289'
-ht-degree: 89%
+ht-degree: 90%
 
 ---
 
@@ -285,4 +285,4 @@ S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, v
 
 Apache Jackrabbit Oak offre des configurations d’index flexibles pour gérer efficacement les requêtes de recherche. Les index sont particulièrement importants pour les référentiels les plus volumineux. Assurez-vous que toutes les requêtes sont soutenues par un index approprié. Les requêtes sans index approprié peuvent lire des milliers de nœuds qui sont ensuite consignés en tant qu’avertissements.
 
-Veuillez consulter [ce document](query-and-indexing-best-practices.md) pour plus d’informations sur la manière dont les requêtes et les index peuvent être optimisés.
+Veuillez consulter [ce document](query-and-indexing-best-practices.md) pour en savoir plus sur la manière dont les requêtes et les index peuvent être optimisés.
