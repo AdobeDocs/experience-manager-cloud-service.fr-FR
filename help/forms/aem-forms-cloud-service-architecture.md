@@ -3,7 +3,7 @@ title: Architecture d’Experience Manager  [!DNL AEM Forms]  as a Cloud Service
 description: Découvrez l’architecture d’ [!DNL AEM Forms] as a Cloud Service pour en savoir plus sur l’évolutivité, la résilience et les performances de la plateforme.
 exl-id: 9d677bee-50ca-460e-b503-6b7799900735
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1045'
 ht-degree: 100%
 
@@ -91,7 +91,7 @@ Les services de document sont les suivants :
 
 ### Cloud Manager 
 
-Cloud Manager est un composant essentiel pour [AEM en tant que Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=fr). Cloud Manager est le point d’entrée unique pour les rôles de responsable des opérations et de développeurs de nos clients. Il s’agit de l’endroit à partir duquel les programmes et environnements AEM peuvent être gérés. Cloud Manager a évolué sous la forme d’un portail en libre-service où les principaux composants d’AEM as a Cloud Service peuvent être créés et configurés :
+Cloud Manager est un composant essentiel pour [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/introduction.html?lang=fr). Cloud Manager est le point d’entrée unique pour les rôles de responsable des opérations et de développeurs de nos clients. Il s’agit de l’endroit à partir duquel les programmes et environnements AEM peuvent être gérés. Cloud Manager a évolué sous la forme d’un portail en libre-service où les principaux composants d’AEM as a Cloud Service peuvent être créés et configurés :
 
 * Création et gestion des programmes
 * Création et gestion des environnements AEM dans ces programmes
