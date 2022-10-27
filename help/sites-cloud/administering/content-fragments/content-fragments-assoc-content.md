@@ -7,13 +7,13 @@ exl-id: eb524872-1403-42d1-b735-eaab382cf313
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '244'
-ht-degree: 53%
+ht-degree: 79%
 
 ---
 
 # Contenu associé{#associated-content}
 
-La fonctionnalité AEM contenu associé fournit la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu, par [fournir une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page,](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content) tout en contribuant à réduire le temps nécessaire à la recherche de la ressource appropriée. Vous bénéficiez ainsi d’une certaine souplesse pour la diffusion de contenu sans interface utilisateur graphique.
+La fonctionnalité de contenu associé d’AEM fournit la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu, en [fournissant une gamme de ressources auxquelles accéder lors de l’utilisation du fragment de contenu sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md#using-associated-content), tout en contribuant à réduire le temps nécessaire à la recherche de la ressource appropriée. Vous bénéficiez ainsi d’une certaine souplesse pour la diffusion de contenu headless.
 
 ## Ajout de contenu associé {#adding-associated-content}
 
