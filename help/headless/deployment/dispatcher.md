@@ -6,7 +6,7 @@ exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
 source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -38,4 +38,4 @@ La demande de requêtes persistantes s’efectue sur un autre point d’entrée.
 /0061 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
 ```
 
-Les requêtes persistantes peuvent être demandées à l’aide de `GET`, mettant ainsi en cache la réponse au niveau du Dispatcher et du réseau de diffusion de contenu. Vous trouverez plus d’informations sur la mise en cache et l’invalidation du cache [ici](/help/implementing/dispatcher/caching.md).
+Les requêtes persistantes peuvent être demandées à l’aide de `GET`, mettant ainsi en cache la réponse au niveau du Dispatcher et du réseau CDN. Vous trouverez plus d’informations sur la mise en cache et l’invalidation du cache [ici](/help/implementing/dispatcher/caching.md).
