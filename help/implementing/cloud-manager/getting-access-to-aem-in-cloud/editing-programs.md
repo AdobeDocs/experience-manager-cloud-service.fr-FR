@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -32,13 +32,13 @@ Pour modifier un programme, procédez comme suit.
 
    ![Option Modifier le programme](assets/edit-program-overview.png)
 
-1. Le **Modifier le programme** s’ouvre. Sur le **Général** modifiez le nom et la description du programme.
+1. La page **Modifier le programme** s’affiche. Dans l’onglet **Général**, modifiez le nom et la description du programme.
 
    * Au moins une solution doit être sélectionnée pour un programme.
 
    ![Onglet Général](assets/edit-program-prod1.png)
 
-1. Sur le **Solutions et modules complémentaires** , modifiez les solutions du programme.
+1. Dans l’onglet **Solutions et modules complémentaires**, modifiez les solutions du programme.
 
    ![Solutions sélectionnées](assets/edit-prg.png)
 
@@ -46,11 +46,11 @@ Pour modifier un programme, procédez comme suit.
 
    ![Modifier les modules complémentaires](assets/edit-program-add-on.png)
 
-1. Sur le **Paramètres d’activation** modifiez la date d’activation prévue du programme.
+1. Dans l’onglet **Paramètres de la mise en production**, modifiez la date de mise en production prévue du programme.
 
-   ![Modification des paramètres d’activation](assets/edit-program-go-live.png)
+   ![Modifier les paramètres de mise en production](assets/edit-program-go-live.png)
 
-   * Cette date est destinée à un usage informatif uniquement et déclenche le widget GoLive sur la page d’aperçu du programme afin de fournir des liens internes au produit vers AEM documentation des bonnes pratiques as a Cloud Service en temps opportun, afin de vous aligner sur votre parcours et d’offrir ainsi une expérience GoLive réussie et fluide.
+   * Cette date est destinée à un usage informatif uniquement et déclenche le widget de mise en production sur la page d’aperçu du programme pour fournir des liens internes au produit vers la documentation des bonnes pratiques d’AEM as a Cloud Service en temps opportun, afin de vous aligner avec votre parcours et d’offrir ainsi une expérience de mise en production réussie et fluide.
 
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications dans le programme.
 
