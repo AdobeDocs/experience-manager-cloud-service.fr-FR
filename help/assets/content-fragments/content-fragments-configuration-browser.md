@@ -5,7 +5,7 @@ exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 73%
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment activer certaines fonctionnalités de fragments de contenu da
 Avant d’utiliser les fragments de contenu, vous devez utiliser l’**Explorateur de configurations** pour activer les éléments suivants :
 
 * **Modèles de fragment de contenu** – obligatoire
-* **Requêtes persistantes GraphQL** - facultatif
+* **Requêtes persistantes GraphQL** – facultatif
 
 >[!CAUTION]
 >
@@ -43,9 +43,9 @@ Pour [utiliser certaines fonctionnalités de fragments de contenu,](#creating-a-
 
 >[!NOTE]
 >
->[Sous-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (une configuration imbriquée dans une autre configuration) sont entièrement prises en charge pour une utilisation avec les fragments de contenu, les modèles de fragment de contenu et les requêtes GraphQL.
+>Les [sous-configurations](/help/implementing/developing/introduction/configurations.md#configuration-resolution) (une configuration imbriquée dans une autre configuration) sont entièrement prises en charge pour une utilisation avec les fragments de contenu, les modèles de fragment de contenu et les requêtes GraphQL.
 >
->Il suffit de noter que :
+>Il faut juste noter que :
 >
 >
 >* Après la création des modèles dans une sous-configuration, il n’est PAS possible de déplacer ou de copier le modèle vers une autre sous-configuration.
