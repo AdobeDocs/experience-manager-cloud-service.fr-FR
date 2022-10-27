@@ -174,7 +174,7 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 1. Sélectionnez la ressource et appuyez/cliquez sur l’icône **[!UICONTROL Déplacer]** ![move_icon](assets/move_icon.png) de la barre d’outils.
 
-1. Dans l’Assistant de déplacement des ressources, procédez comme suit :
+1. Dans l’assistant de déplacement des ressources, procédez comme suit :
 
    * Spécifiez le nom de la ressource après l’avoir déplacée. Ensuite, appuyez/cliquez sur **[!UICONTROL Suivant]** pour continuer.
 
@@ -430,7 +430,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
 
    * [Actions rapides](#quick-actions)
-   * Dans la barre d’outils, après avoir sélectionné la ressource  ou avoir accédé à la page de la ressource
+   * Dans la barre d’outils, après avoir sélectionné la ressource    ou avoir accédé à la page de la ressource
 
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
