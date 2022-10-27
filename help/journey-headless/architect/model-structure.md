@@ -5,7 +5,7 @@ exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '688'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Création de modèles de fragment de contenu {#creating-content-fragment-models}
 
-Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez effectuer cette opération sous **Outils** -> **Général** -> **Modèles de fragment de contenu**.
+Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez effectuer cette action sous **Outils** -> **Général** -> **Modèles de fragment de contenu**.
 
 ![Modèles de fragment de contenu dans les outils](assets/cfm-tools.png)
 
@@ -77,7 +77,7 @@ Les auteurs de contenu ne voient pas les types de données et les propriétés q
 
 >[!NOTE]
 >
->Voir Ressources supplémentaires – Modèles de fragment de contenu.
+>Consultez les Ressources supplémentaires – Modèles de fragment de contenu.
 
 ## Gestion des modèles de fragment de contenu {#managing-content-fragment-models}
 
@@ -110,7 +110,7 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
 * [Concepts de création](/help/sites-cloud/authoring/getting-started/concepts.md)
 
-* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - cette page est principalement basée sur la variable **Sites** , mais de nombreuses fonctionnalités/la plupart d’entre elles sont également pertinentes pour la navigation et l’exécution d’actions, **Modèles de fragment de contenu** sous le **Général** console.
+* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) : cette page est principalement basée sur la console **Sites**, mais de nombreuses ou la plupart des fonctionnalités sont également pertinentes pour la navigation et l’exécution d’actions sur les **Modèles de fragment de contenu** dans la console **Général**.
 
 * [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
