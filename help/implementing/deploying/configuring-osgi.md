@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
 workflow-type: tm+mt
 source-wordcount: '3311'
-ht-degree: 82%
+ht-degree: 95%
 
 ---
 
@@ -38,17 +38,17 @@ un fichier de configuration OSGi est défini à l’adresse suivante :
 
 `/apps/example/config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 
-Suivez la `cfg.json` Format de configuration OSGi.
+selon le format de configuration OSGi `cfg.json`.
 
 >[!NOTE]
 >
->Les versions antérieures des fichiers de configuration OSGi AEM pris en charge utilisaient différents formats de fichier, tels que `.cfg`, `.config` et au format XML `sling:OsgiConfig` Définitions des ressources. Ces formats sont remplacés par le `.cfg.json` Format de configuration OSGi.
+>Les versions antérieures d’AEM prenaient en charge les fichiers de configuration OSGi à l’aide de différents formats de fichiers tels que `.cfg`, `.config` et les définitions de ressources `sling:OsgiConfig` XML. Ces formats sont remplacés par le format de configuration OSGi `.cfg.json`.
 
 ## Résolution du mode d’exécution {#runmode-resolution}
 
 >[!TIP]
 >
->AEM 6.x prend en charge les modes d’exécution personnalisés, mais AEM as a Cloud Service ne le fait pas. AEM prise en charge as a Cloud Service et [ensemble exact de modes d’exécution](./overview.md#runmodes). Toute variation des configurations OSGi entre AEM environnements as a Cloud Service doit être traitée à l’aide de [Variables d’environnement de configuration OSGi](#environment-specific-configuration-values).
+>AEM 6.x prend en charge les modes d’exécution personnalisés, mais AEM as a Cloud Service ne le fait pas. AEM as a Cloud Service prend en charge un [ensemble exact de modes d’exécution](./overview.md#runmodes). Toute variation des configurations OSGi entre les environnements AEM as a Cloud Service doit être traitée à l’aide de [Variables d’environnement de configuration OSGi](#environment-specific-configuration-values).
 
 Il est possible de cibler des configurations OSGi spécifiques sur des instances AEM données grâce aux modes d’exécution. Pour utiliser un mode d’exécution, créez des dossiers de configuration sous `/apps/example` (« example » correspondant au nom de votre projet), selon le format suivant :
 
@@ -64,7 +64,7 @@ La granularité de cette règle se trouve au niveau du PID. Vous ne pouvez pas d
 
 >[!NOTE]
 >
->A `config.preview` Dossier de configuration OSGi **cannot** être déclarée de la même manière que `config.publish` peut être déclaré. Au lieu de cela, le niveau d’aperçu hérite de sa configuration OSGi des valeurs du niveau de publication.
+>Un dossier de configuration OSGI `config.preview` **ne peut pas** être déclaré de la même manière qu’un `config.publish` peut être déclaré en tant que dossier. Au lieu de cela, le niveau de prévisualisation hérite de sa configuration OSGI des valeurs du niveau de publication.
 
 Lors d’un développement local, un paramètre de démarrage en mode d’exécution, `-r`, est utilisé pour spécifier la configuration OSGI du mode d’exécution.
 
@@ -72,26 +72,26 @@ Lors d’un développement local, un paramètre de démarrage en mode d’exécu
 $ java -jar aem-sdk-quickstart-xxxx.x.xxx.xxxx-xxxx.jar -r publish,dev
 ```
 
-### Vérification des modes d’exécution
+### Vérifier les modes d’exécution
 
-AEM modes d’exécution as a Cloud Service sont bien définis en fonction du type d’environnement et du service. Consultez la section [liste complète des modes d’exécution as a Cloud Service AEM disponibles](./overview.md#runmodes).
+Les modes d’exécution AEM as a Cloud Service sont bien définis en fonction du type d’environnement et du service. Consultez la [liste complète des modes d’exécution d’AEM as a Cloud Service disponibles](./overview.md#runmodes).
 
-Les valeurs de configuration OSGi spécifiées par le mode d’exécution peuvent être vérifiées par :
+Les valeurs de configuration OSGi spécifiées par le mode d’exécution peuvent être vérifiées en :
 
-1. Ouverture de l’AEM en tant qu’environnement Cloud Services [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr)
-1. En sélectionnant le ou les niveaux de service à inspecter, à l’aide du __Capsule__ menu déroulant
-1. En sélectionnant le __État__ tab
-1. Sélection __Configurations__ de la __Saut d’état__ menu déroulant
-1. En sélectionnant le __Obtention de l’état__ button
+1. Ouvrant [Developer Console](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/developer-console.html?lang=fr) pour les environnements AEM as a Cloud Services
+1. Sélectionnant le ou les niveaux de service à inspecter, à l’aide du menu déroulant __Capsule__.
+1. Sélectionnant l’onglet __Statut__ 
+1. Sélectionnant des __Configurations__ du menu déroulant __Export de statut__ 
+1. Cliquant sur le bouton __Obtenir le statut__
 
 La vue résultante affiche toutes les configurations de composant OSGi pour le ou les niveaux sélectionnés avec leurs valeurs de configuration OSGi applicables. Ces valeurs peuvent être référencées de manière croisée avec les valeurs de configuration OSGi dans le code source du projet AEM sous `/apps/example/osgiconfig/config.<runmode(s)>`.
 
 
-Pour vérifier que les valeurs de configuration OSGi appropriées sont appliquées :
+Pour vérifier que les valeurs de configuration OSGi appropriées sont appliquées :
 
 1. Dans la sortie Configuration de Developer Console
-1. Recherchez la variable `pid` représentant la configuration OSGi à vérifier ; il s’agit du nom du fichier de configuration OSGi dans le code source du projet AEM.
-1. Inspect `properties` pour la `pid` et vérifiez que la clé et les valeurs correspondent au fichier de configuration OSGi dans le code source du projet AEM pour la vérification du mode d’exécution.=
+1. Recherchez le `pid` représentant la configuration OSGi à vérifier ; il s’agit du nom du fichier de configuration OSGi dans le code source du projet AEM.
+1. Vérifiez la liste `properties` pour le `pid` et que la clé et les valeurs correspondent au fichier de configuration OSGi dans le code source du projet AEM pour le mode d’exécution en cours de vérification. =
 
 
 ## Types de valeurs de configuration OSGi {#types-of-osgi-configuration-values}
@@ -230,7 +230,7 @@ La configuration OSGi doit attribuer un espace réservé à la variable qui doit
 use $[env:ENV_VAR_NAME]
 ```
 
-Les clients ne doivent utiliser cette technique que pour les propriétés de configuration OSGi liées à leur code personnalisé ; il ne doit pas être utilisé pour remplacer la configuration OSGi définie par l’Adobe.
+Les clients ne doivent utiliser cette technique que pour les propriétés de configuration OSGi liées à leur code personnalisé ; elle ne doit pas être employée pour remplacer la configuration OSGi définie par Adobe.
 
 >[!NOTE]
 >
@@ -312,12 +312,12 @@ org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secre
 
 ### Configuration de création ou de publication {#author-vs-publish-configuration}
 
-Si une propriété OSGi nécessite des valeurs différentes pour l’auteur et la publication :
+Si une propriété OSGI nécessite des valeurs différentes pour la création et la publication :
 
 * Des dossiers OSGi `config.author` et `config.publish` distincts sont nécessaires, comme décrit dans la section [Résolution du mode d’exécution](#runmode-resolution).
 * Deux options permettent de créer des noms de variable indépendants :
-   * la première option, recommandée : dans tous les dossiers OSGi (comme `config.author` et `config.publish`) déclaré pour définir des valeurs différentes, utilisez le même nom de variable. Par exemple :
-      `$[env:ENV_VAR_NAME;default=<value>]`, où la valeur par défaut correspond à la valeur par défaut de ce niveau (auteur ou publication). Lors de la définition de la variable d’environnement par le biais de [l’API Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou d’un client, différenciez les niveaux à l’aide du paramètre « service », comme décrit dans cette [documentation de référence de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). Le paramètre &quot;service&quot; lie la valeur de la variable au niveau OSGi approprié. Il peut s’agir de « création », « publication » ou « aperçu ».
+   * la première option, recommandée : dans tous les dossiers OSGI (comme `config.author` et `config.publish`) déclarés pour définir des valeurs différentes, utilisez le même nom de variable. Par exemple :
+      `$[env:ENV_VAR_NAME;default=<value>]`, où la valeur par défaut correspond à la valeur par défaut de ce niveau (auteur ou publication). Lors de la définition de la variable d’environnement par le biais de [l’API Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou d’un client, différenciez les niveaux à l’aide du paramètre « service », comme décrit dans cette [documentation de référence de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). Le paramètre « service » lie la valeur de la variable au niveau OSGI approprié. Il peut s’agir de « création », « publication » ou « aperçu ».
    * la deuxième option, qui consiste à déclarer des variables distinctes à l’aide d’un préfixe tel que `author_<samevariablename>` et `publish_<samevariablename>` ;
 
 ### Exemples de configurations {#configuration-examples}
@@ -326,7 +326,7 @@ Dans les exemples ci-dessous, supposons qu’il y ait trois environnements de d�
 
 **Exemple 1**
 
-L’objectif est de définir la valeur de la propriété OSGi. `my_var1` pour être identiques pour l’évaluation et la production, mais différents pour chacun des trois environnements de développement.
+L’objectif est que la valeur de la propriété OSGi `my_var1` soit identique pour l’évaluation et la production, mais différente pour chacun des trois environnements de développement.
 
 <table>
 <tr>
@@ -369,7 +369,7 @@ config.dev
 
 **Exemple 2**
 
-L’objectif est de définir la valeur de la propriété OSGi. `my_var1` pour différents environnements d’évaluation, de production et pour chacun des trois environnements de développement. Il est donc nécessaire d’appeler l’API Cloud Manager afin de définir la valeur de `my_var1` pour chaque environnement de développement.
+L’objectif est que la valeur de la propriété OSGi `my_var1` soit différente pour l’évaluation, la production ainsi que pour chacun des trois environnements de développement. Il est donc nécessaire d’appeler l’API Cloud Manager afin de définir la valeur de `my_var1` pour chaque environnement de développement.
 
 <table>
 <tr>
