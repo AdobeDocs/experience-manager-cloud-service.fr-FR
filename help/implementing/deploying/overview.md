@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
 workflow-type: tm+mt
 source-wordcount: '3346'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -191,7 +191,7 @@ Les modules de contenu (modifiable ou non) installés via Cloud Manager s’aff
 
 Il est courant pour les clients d’inclure des modules préconfigurés provenant de sources tierces, telles que des fournisseurs de logiciels comme les partenaires de traduction d’Adobe. Il est recommandé d’héberger ces modules au sein d’un référentiel distant et de les référencer dans le `pom.xml`. Cela est possible pour les référentiels publics et pour les référentiels privés avec protection par mot de passe, comme décrit dans [Référentiels Maven protégés par mot de passe](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repositories).
 
-S’il n’est pas possible de stocker le module dans un référentiel distant, les clients peuvent le placer dans un référentiel Maven local basé sur un système de fichiers, qui est validé dans SCM dans le cadre du projet et référencé par toutes les dépendances. Le référentiel est déclaré dans le modèle pom du projet, comme illustré ci-dessous :
+S’il n’est pas possible de stocker le module dans un référentiel distant, les clients peuvent le placer dans un référentiel Maven local basé sur un système de fichiers, qui est validé dans SCM dans le cadre du projet et référencé par toutes les dépendances. Ce référentiel serait alors déclaré dans les fichiers POM du projet, comme illustré ci-dessous :
 
 
 ```
@@ -204,9 +204,9 @@ S’il n’est pas possible de stocker le module dans un référentiel distant, 
 
 <!-- formatting appears broken in the code sample above, check how it appears on AEM -->
 
-Les modules tiers inclus doivent être conformes aux directives de codage et de création de module d’AEM as a Cloud Service décrites dans cet article. Sinon, leur inclusion entraînera un échec du déploiement.
+Les modules tiers inclus doivent être conformes aux directives de codage et de création de package d’AEM as a Cloud Service décrites dans cet article. Sinon, leur inclusion entraînera un échec du déploiement.
 
-Maven suivant `POM.xml` Le fragment de code indique comment les modules tiers peuvent être incorporés dans le module &quot;Conteneur&quot; du projet, généralement appelé **&#39;all&#39;**, via le **filevault-package-maven-plugin** Configuration du module externe Maven.
+Le fragment `POM.xml` Maven suivant montre comment les packages tiers peuvent être intégrés dans le package « Conteneur » du projet, généralement appelé **« all »**, au moyen de la configuration du plug-in Maven **filevault-package-maven-plugin**.
 
 ```
 ...
@@ -301,9 +301,9 @@ Les configurations de mode d’exécution prises en charge sont les suivantes :
 * **config.publish.dev** (*s’applique au service de publication de développement AEM*)
 * **config.publish.stage** (*s’applique au service Publication d’évaluation AEM*)
 * **config.publish.prod** (*s’applique au service Publication de production AEM*)
-* **config.dev** (*S’applique aux services de développement AEM*)
-* **config.stage** (*S’applique aux services AEM d’évaluation*)
-* **config.prod** (*S’applique aux services de production AEM*)
+* **config.dev** (*s’applique aux services de développement AEM*)
+* **config.stage** (*s’applique aux services d’évaluation AEM*)
+* **config.prod** (*s’applique aux services de production AEM*)
 
 La configuration OSGI qui possède le plus grand nombre de modes d’exécution correspondants est utilisée.
 
