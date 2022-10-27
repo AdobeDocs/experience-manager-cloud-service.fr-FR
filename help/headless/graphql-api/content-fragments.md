@@ -4,7 +4,7 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2708'
 ht-degree: 100%
 
