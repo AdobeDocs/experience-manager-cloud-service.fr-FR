@@ -44,9 +44,9 @@ Les problèmes identifiés par le test de qualité du code sont affectés à l�
 
 >[!NOTE]
 >
->Dans un pipeline uniquement axé sur la qualité du code, les échecs importants du point de contrôle Qualité du code ne peuvent pas être remplacés car l’étape de test de qualité du code est la dernière étape du pipeline.
+>Dans un pipeline uniquement axé sur la qualité du code, les échecs importants du point de contrôle Qualité du code ne peuvent pas être ignorés car l’étape de test de qualité du code est la dernière étape du pipeline.
 
-### Evaluations {#ratings}
+### Évaluations {#ratings}
 
 Les résultats de cette étape sont fournis sous forme de **notes**.
 
