@@ -2,10 +2,10 @@
 title: Référence des prédicats de Query Builder
 description: Référence des prédicats pour l’API Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
 workflow-type: tm+mt
-source-wordcount: '2221'
-ht-degree: 97%
+source-wordcount: '2268'
+ht-degree: 95%
 
 ---
 
@@ -245,10 +245,12 @@ Il ne prend pas en charge l’extraction de facettes.
 * **`path`** – Cette propriété définit le modèle de chemin.
    * Selon la propriété `exact`, il existe une correspondance avec l’ensemble de la sous-arborescence (comme l’ajout de `//*` dans xpath, mais sans englober le chemin de base), ou seulement une correspondance avec le chemin exact, avec la possibilité d’inclure des caractères génériques (`*`).
       * La valeur par défaut est `true`
-   * Si la propriété `self`est définie, une recherche est appliquée à l’ensemble de la sous-arborescence, y compris le nœud de base.
+
+<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`** – Si la propriété `exact` est définie sur `true`, le chemin d’accès exact doit correspondre, mais il peut contenir des caractères génériques simples (`*`), qui correspondent aux noms, mais pas `/` ; si elle est définie sur `false` (par défaut) tous les descendants sont inclus (facultatif).
 * **`flat`** – Effectue uniquement des recherches dans les enfants directs (ce qui revient à ajouter `/*` dans xpath) (utilisé uniquement si `exact` n’est pas défini sur « true », facultatif)
-* **`self`** – Effectue des recherches dans la sous-arborescence, mais inclut le nœud de base indiqué comme chemin d’accès (pas de caractères génériques).
+* **`self`** – Effectue des recherches dans la sous-arborescence, mais inclut le nœud de base indiqué comme chemin d’accès (pas de caractères génériques)..
+   * *Remarque importante*: Un problème a été identifié avec `self` dans l’implémentation actuelle de querybuilder et son utilisation dans les requêtes peut ne pas produire les résultats de recherche corrects. Modification de l’implémentation actuelle de `self` n’est pas non plus faisable, car elle peut interrompre les applications existantes qui s’y rapportent. Pour cette raison, `self` a été abandonnée et il est conseillé d’éviter de l’utiliser.
 
 ### property {#property}
 
