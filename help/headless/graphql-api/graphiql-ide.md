@@ -6,19 +6,19 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 377747d6bbb945b1de9cf1fdcbabc077babd7aa9
 workflow-type: tm+mt
 source-wordcount: '1008'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # Utilisation de l’IDE GraphiQL {#graphiql-ide}
 
-Une mise en œuvre de l’IDE [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) standard est disponible pour une utilisation avec l’API GraphQL d’Adobe Experience Manager (AEM) as a Cloud Service.
+Une mise en œuvre de l’IDE [GraphQL](https://graphql.org/learn/serving-over-http/#graphiql) standard est disponible pour une utilisation avec l’API GraphQL d’Adobe Experience Manager (AEM) as a Cloud Service.
 
 >[!NOTE]
 >
->GraphiQL est inclus dans tous les environnements d’AEM (mais sera accessible/visible uniquement lorsque vous configurez vos points de terminaison).
+>GraphiQL est inclus dans tous les environnements d’AEM (mais est accessible/visible uniquement lorsque vous configurez vos points d’entrée).
 >
->Dans les versions précédentes, un module était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut maintenant être supprimé.
+>Dans les versions précédentes, un module était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut désormais être supprimé.
 
 >[!NOTE]
 >Vous devez avoir [configuré vos points de fin](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
@@ -31,7 +31,7 @@ L’outil **GraphiQL** vous permet de tester et de déboguer vos requêtes Graph
 * exécuter vos requêtes pour afficher immédiatement les résultats ;
 * gérer les **Variables de requête** ;
 * enregistrer et gérer les **Requêtes persistantes** ;
-* publier ou annuler la publication, **Requêtes persistantes** (par exemple, pour/depuis `dev-publish`)
+* publier ou annuler la publication de **Requêtes persistantes** (par exemple : vers et à partir de `dev-publish`) ;
 * Afficher l’**Historique** de vos requêtes précédentes ;
 * utiliser l’**Explorateur de documentation** pour accéder à la documentation pour vous aider à apprendre et à comprendre les méthodes disponibles.
 
@@ -42,7 +42,7 @@ Vous pouvez accéder à l’éditeur de requêtes à partir de :
 
 ![Interface GraphiQL](assets/cfm-graphiql-interface.png "Interface GraphiQL")
 
-Vous pouvez utiliser GraphiQL sur votre système afin que les requêtes puissent être demandées par votre application cliente à l’aide de requêtes GET et pour publier des requêtes. Pour l’utilisation de la production, vous pouvez alors [déplacer vos requêtes vers votre environnement de production ;](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Commencez par créer l’auteur de production pour valider le contenu nouvellement créé avec les requêtes, puis publiez la production pour la consommation en direct.
+Vous pouvez utiliser GraphiQL sur votre système afin que les requêtes puissent être appelées par votre application cliente à l’aide de requêtes GET et pour des requêtes de publication. À des fins de production, vous pouvez ensuite [déplacer vos requêtes vers votre environnement de production](/help/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production). Commencez par créer l’auteur de production pour valider le contenu nouvellement créé avec les requêtes, puis publiez la production pour la consommation en direct.
 
 ## Sélection de votre point d’entrée {#selecting-endpoint}
 
@@ -96,40 +96,40 @@ Par exemple :
 
 ![Variables GraphQL](assets/cfm-graphqlapi-03.png "Variables GraphQL")
 
-## Gestion du cache pour vos requêtes persistantes {#managing-cache}
+## Gérer le cache pour vos requêtes persistantes {#managing-cache}
 
-[Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) sont recommandés, car ils peuvent être mis en cache aux couches dispatcher et CDN, ce qui améliore finalement les performances de l’application cliente qui demande. Par défaut, AEM invalide le cache du réseau de diffusion de contenu (CDN) en fonction d’une durée de vie par défaut (TTL).
+Les [requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) sont recommandées, car elles peuvent être mises en cache au niveau des couches Dispatcher et réseau CDN, ce qui améliore les performances de l’application cliente effectuant les requêtes. Par défaut, AEM invalidera le cache du réseau de diffusion de contenu (CDN) en fonction d’une durée de vie par défaut (TTL).
 
-Avec GraphQL, vous pouvez configurer les en-têtes de cache HTTP pour contrôler ces paramètres pour votre requête individuelle conservée.
+Avec GraphQL, vous pouvez configurer les en-têtes de cache HTTP pour contrôler ces paramètres pour votre propre requête persistante.
 
-1. Le **En-têtes** est accessible à partir des trois points verticaux situés à droite du nom de la requête conservée (panneau à l’extrême gauche) :
+1. L’option **En-têtes** est accessible à partir des trois points verticaux situés à droite du nom de la requête persistante (panneau tout à gauche) :
 
-   ![En-têtes de cache HTTP de requête persistants](assets/cfm-graphqlapi-headers-01.png "En-têtes de cache HTTP de requête persistants")
+   ![En-têtes de cache HTTP de requêtes persistantes](assets/cfm-graphqlapi-headers-01.png "En-têtes de cache HTTP de requêtes persistantes")
 
-1. Si vous sélectionnez cette option, le **Configuration du cache** dialog :
+1. Si vous sélectionnez cette option, la boîte de dialogue **Configuration du cache** s’ouvre :
 
-   ![Paramètres d’en-tête de cache HTTP de requête persistant](assets/cfm-graphqlapi-headers-02.png "Paramètres d’en-tête de cache HTTP de requête persistant")
+   ![Paramètres d’en-tête de cache HTTP de requête persistante](assets/cfm-graphqlapi-headers-02.png "Paramètres d’en-tête de cache HTTP de requête persistante")
 
-1. Sélectionnez le paramètre approprié, puis ajustez la valeur selon les besoins :
+1. Sélectionnez le paramètre approprié, puis ajustez la valeur selon les besoins :
 
    * **cache-control** - **max-age**
-Les caches peuvent stocker ce contenu pendant un nombre spécifié de secondes. Il s’agit généralement de la durée de vie (TTL) du navigateur.
-   * **contrôle de substitution** - **s-maxage**
-Identique à l’âge maximal, mais s’applique spécifiquement aux caches de proxy.
-   * **contrôle de substitution** - **stale-while-revalidate**
-Les caches peuvent continuer à fournir une réponse mise en cache après qu’elle est devenue obsolète, pendant un maximum de secondes.
-   * **contrôle de substitution** - **stale-if-error**
-Les caches peuvent continuer à fournir une réponse mise en cache en cas d’erreur ou d’origine, pendant un maximum de secondes.
+Les caches peuvent stocker ce contenu pendant un nombre de secondes spécifié. Il s’agit généralement de la durée de vie (TTL) du navigateur.
+   * **surrogate-control** - **s-maxage**
+Identique à max-age, mais s’applique spécifiquement aux caches de proxy.
+   * **surrogate-control** - **stale-while-revalidate**
+Les caches peuvent continuer à servir une réponse mise en cache après qu’elle est devenue obsolète, jusqu’au nombre de secondes spécifié.
+   * **surrogate-control** - **stale-if-error**
+Les caches peuvent continuer à servir une réponse mise en cache en cas d’erreur d’origine, jusqu’au nombre de secondes spécifié.
 
-1. Sélectionner **Enregistrer** pour conserver les modifications.
+1. Sélectionnez **Enregistrer** pour conserver les modifications.
 
-## Publication des requêtes conservées {#publishing-persisted-queries}
+## Publier des requêtes persistantes {#publishing-persisted-queries}
 
-Une fois que vous avez sélectionné votre requête persistante dans la liste (panneau de gauche), vous pouvez utiliser les actions **Publier** et **Annuler la publication**. Ils seront alors activés dans votre environnement de publication (par exemple, `dev-publish`) pour un accès facile à vos applications lors des tests.
+Une fois que vous avez sélectionné votre requête persistante dans la liste (panneau de gauche), vous pouvez utiliser les actions **Publier** et **Annuler la publication**. Cette opération les active dans votre environnement de publication (par exemple `dev-publish`) pour faciliter l’accès selon vos applications lors des tests.
 
 >[!NOTE]
 >
->La définition du cache de la requête persistante `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} a une valeur par défaut de 2 heures (7 200 secondes).
+>La définition du paramètre `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} du cache de la requête persistante a une valeur par défaut de 2 heures (7 200 secondes).
 
 ## Copie de l’URL pour accéder directement à la requête {#copy-url}
 
