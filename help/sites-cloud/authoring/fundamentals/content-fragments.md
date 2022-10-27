@@ -5,7 +5,7 @@ exl-id: 7a44fc4e-3793-4aa3-8c21-db0567c93244
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
 workflow-type: tm+mt
 source-wordcount: '1166'
-ht-degree: 94%
+ht-degree: 96%
 
 ---
 
@@ -182,5 +182,5 @@ Les autres modifications (déplacement, copie, suppression, etc.) doivent être 
 
 Les fragments doivent être publiés pour pouvoir être utilisés dans les pages web que vous avez publiées :
 
-* Un fragment peut être publié après [création du fragment dans la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
+* Un fragment peut être publié une fois qu’il a été [créé dans la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-referencing-a-fragment).
 * Si un *fragment non publié* est utilisé dans une page en cours de publication, le fragment peut également être publié à ce moment.
