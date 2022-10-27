@@ -12,7 +12,7 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
 source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2550'
 ht-degree: 100%
 
@@ -484,4 +484,4 @@ Utilisez le [système de style AEM](/help/sites-cloud/authoring/features/style-s
 * [Configuration d’un environnement de développement AEM local](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=fr)
 * [Bibliothèques côté client](/help/implementing/developing/introduction/clientlibs.md)
 * [Prise en main d’AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr)
-* [Développement avec le système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html)
+* [Développement avec le système de style](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html?lang=fr)
