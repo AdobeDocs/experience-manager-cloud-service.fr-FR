@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 2e0aef129333eb99933bc0adfc8a753069bd656f
 workflow-type: tm+mt
 source-wordcount: '3731'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -24,8 +24,8 @@ ht-degree: 94%
    + [Nouveautés et différences](/help/overview/what-is-new-and-different.md)
    + [Terminologie – Nouveaux termes pour le cloud](/help/overview/terminology.md)
    + [Présentation de l’architecture d’AEM as a Cloud Service](/help/overview/architecture.md)
-   + [Gestion de l’optimisation et des URL](/help/overview/seo-and-url-management.md)
-   + [AEM as a Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md)
+   + [Gestion de l’optimisation du moteur de recherche et des URL](/help/overview/seo-and-url-management.md)
+   + [AEM as a Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md)
    + [Évaluation des indicateurs de performance clés](/help/overview/assessing-kpis.md)
    + [Alignement des indicateurs de performance clés](/help/overview/aligning-kpis.md)
    + [Choix de la bonne équipe](/help/overview/choose-right-team.md)
@@ -131,19 +131,19 @@ ht-degree: 94%
    + [Prise en charge des mêmes cookies de site pour AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Prise en charge d’OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md)
 + Intégration {#onboarding}
-   + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html)
+   + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr)
    + Parcours d’intégration {#journey}
-      + [Parcours d’intégration du commerce électronique](/help/journey-onboarding/overview.md)
+      + [Parcours d’intégration Présentation](/help/journey-onboarding/overview.md)
       + [Préparation à l’intégration](/help/journey-onboarding/preparation.md)
-      + [Terminologie as a Cloud Service AEM](/help/journey-onboarding/terminology.md)
-      + [Le Admin Console](/help/journey-onboarding/admin-console.md)
-      + [Attribution de profils de produit Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md)
-      + [Accès à Cloud Manager](/help/journey-onboarding/cloud-manager.md)
-      + [Création d’un programme](/help/journey-onboarding/create-program.md)
+      + [Terminologie d’AEM as a Cloud Service](/help/journey-onboarding/terminology.md)
+      + [Admin Console](/help/journey-onboarding/admin-console.md)
+      + [Affecter des profils de produits Cloud Manager](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+      + [Accéder à Cloud Manager](/help/journey-onboarding/cloud-manager.md)
+      + [Créer un programme](/help/journey-onboarding/create-program.md)
       + [Créer des environnements](/help/journey-onboarding/create-environments.md)
-      + [Attribution de profils de produit AEM](/help/journey-onboarding/assign-profiles-aem.md)
+      + [Attribuer des profils de produit AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tâches du développeur et du responsable de déploiement](/help/journey-onboarding/developers.md)
-      + [Tâches utilisateur AEM](/help/journey-onboarding/aem-users.md)
+      + [Tâches utilisateur d’AEM](/help/journey-onboarding/aem-users.md)
       + [Groupes d’utilisateurs](/help/journey-onboarding/user-groups.md)
    + Parcours complémentaire des démonstrations de référence d’AEM {#demo-add-on}
       + [Présentation](/help/journey-sites/demos-add-on/overview.md)
@@ -151,10 +151,10 @@ ht-degree: 94%
       + [Créer un programme](/help/journey-sites/demos-add-on/create-program.md)
       + [Créer un site de démonstration](/help/journey-sites/demos-add-on/create-site.md)
       + [Activer Screens](/help/journey-sites/demos-add-on/screens.md)
-      + [Gestion de votre site de démonstration](/help/journey-sites/demos-add-on/manage.md)
+      + [Gérer votre site de démonstration](/help/journey-sites/demos-add-on/manage.md)
    + Autres concepts d’intégration {#concepts}
       + [Présentation de Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
-      + [Équipe et profils de produit AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [Équipe et profils de produits AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
 + Parcours de migration d’AEM as a Cloud Service {#migration-journey}
    + [Prise en main du déplacement d’AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Phase de préparation](/help/journey-migration/readiness.md)
@@ -281,7 +281,7 @@ ht-degree: 94%
          + [Configuration de la segmentation avec ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Enregistrement, connexion et profil utilisateur](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
       + Campagne {#campaign}
-         + [Création de newsletters avec AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
+         + [Créer des newsletters avec AEM](/help/sites-cloud/authoring/campaign/creating-newsletters.md)
    + Administration {#administering}
       + Fragments de contenu {#content-fragments}
          + [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
@@ -349,7 +349,7 @@ ht-degree: 94%
       + [Intégration à Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Exporter des fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign Classic](/help/sites-cloud/integrating/integrating-campaign-classic.md)
 + Ressources {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
@@ -388,7 +388,7 @@ ht-degree: 94%
       + [Gestion des droits numériques des ressources](/help/assets/drm.md)
       + [Mise en filigrane de ressources](/help/assets/watermark-assets.md)
       + [Traitement des ressources à l’aide des API [!DNL Creative Cloud] ](/help/assets/cc-api-integration.md)
-      + [Balises de couleur pour les images](/help/assets/color-tag-images.md)
+      + [Balises de couleurs pour les images](/help/assets/color-tag-images.md)
    + Configuration, administration et extension d’[!DNL Assets] {#admin}
       + [Documents pour les développeurs et guides de référence des API](/help/assets/developer-reference-material-apis.md)
       + [Schéma de métadonnées de dossier](/help/assets/folder-metadata-schema.md)
@@ -424,7 +424,7 @@ ht-degree: 94%
       + [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
       + [Aperçu – Représentation JSON](/help/assets/content-fragments/content-fragments-json-preview.md)
    + Dynamic Media {#dynamicmedia}
-      + Parcours Dynamic Media : principes de base{#dm-journey}
+      + Parcours Dynamic Media : principes de base {#dm-journey}
          + [Première partie : présentation de Dynamic Media - Cas d’utilisation - Flux des ressources dans le système](/help/assets/dynamic-media/dm-journey-part1.md)
          + [Deuxième partie : anatomie d’une URL Dynamic Media - Principes fondamentaux des paramètres d’image prédéfinis - À propos des visionneuses d’images, des visionneuses à 360° et des visionneuses de supports variés](/help/assets/dynamic-media/dm-journey-part2.md)
       + [Archive de newsletter sur Dynamic Media par Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
@@ -452,7 +452,7 @@ ht-degree: 94%
       + [Gestion des ressources Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
       + [Prise en charge 3D](/help/assets/dynamic-media/assets-3d.md)
-      + [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
+      + [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
       + [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md)
       + [Images panoramiques](/help/assets/dynamic-media/panoramic-images.md)
       + [Visionneuses de médias mixtes](/help/assets/dynamic-media/mixed-media-sets.md)
@@ -478,7 +478,7 @@ ht-degree: 94%
       + [Fin de vie des visionneuses DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Intégration avec Adobe Workfront {#integrations}
       + [Intégrations à  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
-      + [Configuration du mappage des métadonnées des ressources](/help/assets/configure-asset-metadata-mapping.md)
+      + [Configurer le mappage des métadonnées des ressources](/help/assets/configure-asset-metadata-mapping.md)
       + [Installer le [!DNL enhanced connector] pour [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Suppression des dépendances externes pour les installations existantes](/help/assets/remove-external-dependencies.md)
       + [Configurer le  [!DNL enhanced connector]  pour  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
@@ -512,7 +512,7 @@ ht-degree: 94%
          + [Amélioration des performances des formulaires volumineux avec le chargement différé](/help/forms/lazy-loading-adaptive-forms.md)
       + Ajout de composants à un formulaire adaptatif {#add-components-to-an-adaptive-form}
          + [Utilisation de CAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms.md)
-         + [Utilisation des composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
+         + [Utiliser des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
          + [Appliquer la signature tactile](/help/forms/signing-forms-using-scribble.md)
       + Configuration de la disposition et application d’un style à un formulaire adaptatif {#configure-layout-of-an-adaptive-form}
          + [Définition de la disposition d’un formulaire adaptatif](/help/forms/layout-capabilities-adaptive-forms.md)
@@ -593,7 +593,7 @@ ht-degree: 94%
       + [Installation du lecteur Screens](/help/screens-cloud/managing-players-registration/installing-screens-cloud-player.md)
       + [Enregistrement du lecteur](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md)
       + [Attribution d’un lecteur à un affichage](/help/screens-cloud/managing-players-registration/assigning-player-display.md)
-   + Utilisation de fonctionnalités de base du produit {#core-product-features}
+   + Utiliser les fonctionnalités de base du produit {#core-product-features}
       + [Prise en charge des miniatures pour les vidéos](/help/screens-cloud/using-core-product-features/thumbnail-support-videos.md)
    + Développer dans Screens as a Cloud Service {#developing-screens-cloud}
       + [API REST](/help/screens-cloud/developing/rest-apis-screens-cloud.md)
@@ -638,7 +638,7 @@ ht-degree: 94%
    + [Migration](/help/commerce-cloud/migration.md)
    + [FAQ](/help/commerce-cloud/faq.md)
 + Découplé {#headless}
-   + [Qu’est-ce qu’un CMS sans affichage ?](/help/headless/what-is-headless.md)
+   + [Qu’est-ce qu’un CMS Headless ?](/help/headless/what-is-headless.md)
    + [Présentation d’AEM découplé](/help/headless/introduction.md)
    + Configuration {#setup}
       + [Présentation](/help/headless/setup/introduction.md)
@@ -648,18 +648,18 @@ ht-degree: 94%
       + [Fragment de contenu](/help/headless/setup/create-content-fragment.md)
       + [Point d’entrée GraphQL](/help/headless/setup/create-api-request.md)
    + Fragments de contenu {#content-fragments}
-      + [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html)
-      + [Console Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html)
-      + [Modèles de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html)
-      + [Gestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html)
+      + [Présentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments.html?lang=fr)
+      + [Console Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=fr)
+      + [Modèles de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html?lang=fr)
+      + [Gestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html?lang=fr)
       + Création{#authoring}
-         + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html)
-         + [Éditeur de texte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html)
-         + [Contenu associé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html)
-         + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html#managing-variations)
-      + [Métadonnées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html)
-      + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html)
-      + [Prévisualisation JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html)
+         + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=fr)
+         + [Éditeur de texte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html?lang=fr)
+         + [Contenu associé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html?lang=fr)
+         + [Variations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=fr#managing-variations)
+      + [Métadonnées](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-metadata.html?lang=fr)
+      + [Arborescence de la structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-structure-tree.html?lang=fr)
+      + [Prévisualisation JSON](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-json-preview.html?lang=fr)
    + API GraphQL {#graphql-api}
       + [API GraphQL pour les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
       + [Gérer les points d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
@@ -687,7 +687,7 @@ ht-degree: 94%
          + [Comment assembler l’ensemble](/help/journey-headless/developer/put-it-all-together.md)
          + [Comment mettre en ligne votre application découplée](/help/journey-headless/developer/go-live.md)
          + [Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM](/help/journey-headless/developer/create-spa.md)
-      + Parcours d’architecture de contenu découplé{#architect}
+      + Parcours d’architecture de contenu découplé {#architect}
          + [Aperçu du parcours d’architecture de contenu découplé AEM](/help/journey-headless/architect/overview.md)
          + [Modélisation de contenu pour le découplage avec AEM – Introduction](/help/journey-headless/architect/introduction.md)
          + [En savoir plus sur les bases de la modélisation de contenu pour le découplage avec AEM](/help/journey-headless/architect/basics.md)
