@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: a873b23f7dac8742820300ef154b94a72e4b8a23
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 41%
+ht-degree: 52%
 
 ---
 
@@ -25,7 +25,7 @@ La date de publication de la version 2022.9.0 de Cloud Manager dans AEM as a Clo
 
 ## Nouveautés {#what-is-new}
 
-* La version de la variable [AEM archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) La version 39 de a été mise à jour pour utiliser Cloud Manager.
+* L’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) utilisé par Cloud Manager a été mis à jour à la version 39.
 * L’interface utilisateur du tableau de bord des licences indiquera désormais aux utilisateurs si un programme Sites est configuré avec un CDN au-dessus d’AEM as a Cloud Service.
 
 ## Correctifs {#bug-fixes}
