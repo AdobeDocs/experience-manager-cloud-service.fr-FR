@@ -9,7 +9,7 @@ audience: developer
 feature: Commerce Integration Framework
 exl-id: 30f1f263-1b78-46ae-99ed-61861c488b2a
 source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '623'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ En outre, les propriétés de champ de boîte de dialogue standard telles que `n
 
 >[!CAUTION]
 >
->Comme le composant `cifproductfield`, le composant `cifcategoryfield` nécessite également la bibliothèque clif `cif.shell.picker` Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété `extraClientlibs`. Consultez [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) dans la documentation sur les composants principaux AEM.
+>Comme le composant `cifproductfield`, le composant `cifcategoryfield` nécessite également la bibliothèque clif `cif.shell.picker` Pour ajouter une bibliothèque cliente à une boîte de dialogue, vous pouvez utiliser la propriété `extraClientlibs`. Consultez [Personnalisation des boîtes de dialogue](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=fr#customizing-dialogs) dans la documentation sur les composants principaux AEM.
 >[!CAUTION]
 >
 >À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Nous vous recommandons vivement d’utiliser `uid` ou `urlPath` comme identifiant de catégorie. Nous continuons à prendre en charge `id` et `idAndUrlPath` uniquement pour les projets utilisant les composants principaux CIF version 1.x.
