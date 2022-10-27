@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -106,4 +106,4 @@ Vous pouvez accéder via XML aux variables et secrets d’environnement comme su
 
 Consultez le document [Configuration d’un projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) pour un exemple d’utilisation des deux types de variables dans un fichier `pom.xml`.
 
-Voir [documentation officielle de Maven](https://maven.apache.org/settings.html#quick-overview) pour plus d’informations.
+Consultez la [documentation officielle de Maven](https://maven.apache.org/settings.html#quick-overview) pour plus d’informations.
