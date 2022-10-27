@@ -5,7 +5,7 @@ exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
 workflow-type: tm+mt
 source-wordcount: '2416'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -123,7 +123,7 @@ Une fois la restructuration du projet terminée, vous pouvez reprendre le dével
 
 Le pipeline Cloud Manager prend en charge l’exécution de tests par rapport à l’environnement d’évaluation.
 
-Suivez les bonnes pratiques des documents ci-dessous concernant les tests de qualité du code :
+Suivez les bonnes pratiques des documents ci-dessous concernant les tests de qualité du code :
 
 * [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md), un document qui décrit le processus d’écriture de scripts de test et explique le concept de couverture recommandée d’au moins 50 %.
 * [Présentation des règles de qualité de code personnalisées](/help/implementing/cloud-manager/custom-code-quality-rules.md) qui vise à décrire les règles de qualité de code personnalisées exécutées par Cloud Manager, créées en fonction des bonnes pratiques en matière d’ingénierie AEM.
@@ -153,7 +153,7 @@ Une fois que l’accès à un [clone de production](#proof-of-migration) est ét
 >[!NOTE]
 > La section [Stratégie et chronologie de migration du contenu](#content-strategy-and-timeline) explique en détail comment extrapoler les données collectées et créer un plan de migration.
 
-La collecte de données peut vous aider à planifier les activités de migration et les tâches associées. Les temps d’extraction et d’ingestion sont particulièrement utiles car les points de données peuvent être associés à une taille spécifique du jeu de migration. Par conséquent, ces points de données peuvent être extrapolés pour établir une formule :
+La collecte de données peut vous aider à planifier les activités de migration et les tâches associées. Les temps d’extraction et d’ingestion sont particulièrement utiles car les points de données peuvent être associés à une taille spécifique du jeu de migration. Par conséquent, ces points de données peuvent être extrapolés pour établir une formule :
 
 * Durée totale de l’[extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
 * Durée totale de l’[ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
@@ -168,16 +168,16 @@ Ces points de données peuvent également vous aider à [établir des indicateur
 
 En fonction des points de données que vous avez collectés (voir ci-dessus), vous pouvez créer un plan de migration qui peut être intégré dans un plan de macro-projet. Cette étape permet à tous les principaux intervenants de visualiser et de planifier les activités de migration.
 
-Le tableau suivant illustre un plan de migration type :
+Le tableau suivant illustre un plan de migration type :
 
 | Itération de la migration | Date de début | Date de fin estimée | Dépendances | Durée estimée (en jours) | Détails supplémentaires / Actions |
 |---|---|---|---|---|---|
 | PRDCLONE-AUTEUR-INITIAL-USRMAP-CSSTAGE-AUTEUR |  |  |  |  |  |
 | PRDCLONE-PUBLICATION-COMPLEMENT-CSSTAGE-AUTEUR |  |  |  |  |  |
 
-Comme vous pouvez le voir dans le tableau ci-dessus, il est utile de suivre un format de dénomination spécifique pour identifier les itérations de migration, par exemple : **PRDCLONE** pour l&#39;environnement AEM source, **AUTEUR/PUBLICATION** pour l&#39;environnement AEM as a Cloud Service, **CSSTAGE-AUTEUR** pour l’instance AEM as a Cloud Service, etc.
+Comme vous pouvez le voir dans le tableau ci-dessus, il est utile de suivre un format de dénomination spécifique pour identifier les itérations de migration, par exemple : **PRDCLONE** pour l&#39;environnement AEM source, **AUTEUR/PUBLICATION** pour l&#39;environnement AEM as a Cloud Service, **CSSTAGE-AUTEUR** pour l’instance AEM as a Cloud Service, etc.
 
-Voici quelques détails importants qui influencent votre plan de migration :
+Voici quelques détails importants qui influencent votre plan de migration :
 
 **Le nombre total d&#39;extractions nécessaires**
 
@@ -194,13 +194,13 @@ Voici quelques détails importants qui influencent votre plan de migration :
 
 Vous pouvez utiliser le suivi de la migration pour noter les durées de l’exécution initiale et de complément. Ces points de données vous aideront à formuler des exigences réalistes en matière de gel du contenu avant le complément final.
 
-L’outil de suivi vous aidera également à :
+L’outil de suivi vous aidera également à :
 
 * Identifier tout écart par rapport au planificateur qui nécessite des ajustements du plan ou des délais d’activation
 * Fournir un statut réaliste qui peut être utilisé dans toutes les communications nécessaires
 * Planifier les migrations initiales ou futures de complément
 
-Le tableau suivant illustre un suivi de migration fonctionnel :
+Le tableau suivant illustre un suivi de migration fonctionnel :
 
 | Source (Environnement / Instance / URL) | Destination (Environnement / Instance / URL) | Nom du jeu de migration, type (initial ou complément) | Taille du jeu de migration (Mo) | Mappage utilisateur (Oui/Non) | Durée de l’extraction (Début, Fin, Temps pris) | Durée d’ingestion (Début, Fin, Temps pris) | Problèmes / Résolutions / Détails |
 |---|---|---|---|---|---|---|---|
@@ -235,7 +235,7 @@ La section suivante présente les étapes importantes et les tâches associées 
 * Demandez un clone de production qui :
    * Se trouve dans la même zone réseau.
    * Fournit du contenu de production tel que des utilisateurs et des groupes.
-   * Clone l’auteur et la publication : un nœud chacun dans le cas d’un cluster ou d’une batterie de publication.
+   * Clone l’auteur et la publication : un nœud chacun dans le cas d’un cluster ou d’une batterie de publication.
 * Sélectionnez un sous-ensemble du contenu qui sera migré en tenant compte des éléments suivants :
    * Il s’agit d’un mélange de tous les types de contenu disponibles.
    * Il contient tous les utilisateurs et groupes, au cas où le [mappage utilisateur](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md) serait obligatoire.
