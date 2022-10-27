@@ -7,13 +7,13 @@ exl-id: 7e55d7b7-3a82-4665-b4aa-9b47094d91c9
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Arborescence de la structure du fragment de contenu {#content-fragment-structure-tree}
 
-Utilisez la fonction Arborescence de structure de l’éditeur de fragment de contenu dans AEM pour vous aider à comprendre votre contenu sans affichage.
+Utilisez la fonctionnalité arborescence de structure de l’éditeur de fragment de contenu d’AEM pour mieux comprendre votre contenu Headless.
 
 Dans l’éditeur de fragments de contenu, vous pouvez sélectionner l’icône d’arborescence de structure :
 
