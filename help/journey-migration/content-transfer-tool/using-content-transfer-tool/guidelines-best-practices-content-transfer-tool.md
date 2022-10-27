@@ -2,10 +2,10 @@
 title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 98b81d918d60722ddb3f1c7736bc5b3506e05f6f
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1654'
-ht-degree: 100%
+source-wordcount: '1597'
+ht-degree: 94%
 
 ---
 
@@ -26,13 +26,11 @@ Une nouvelle version de l’outil de transfert de contenu est disponible, qui in
 * L’amélioration de l’expérience utilisateur grâce à une meilleure gestion des statuts de chargement, des barrières de sécurité et des erreurs
 * La conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
 
-Pour commencer à utiliser la nouvelle version (v2.0.10), vous devez désinstaller les anciennes versions de l’outil de transfert de contenu. Cette étape est nécessaire car la nouvelle version produit un changement architectural majeur. Avec la version 2.0.10, vous devrez également créer des jeux de migration et réexécuter l’extraction et l’ingestion sur les nouveaux jeux de migration. Si une migration est déjà en cours, vous pouvez continuer à utiliser la version antérieure du CTT jusqu’à ce que la migration soit terminée.
+Pour commencer à utiliser la nouvelle version, vous devez désinstaller les anciennes versions de l’outil de transfert de contenu. Cette étape est nécessaire car la nouvelle version produit un changement architectural majeur. Avec la version 2.0.10, vous devrez également créer des jeux de migration et réexécuter l’extraction et l’ingestion sur les nouveaux jeux de migration. Si une migration est déjà en cours, vous pouvez continuer à utiliser la version antérieure du CTT jusqu’à ce que la migration soit terminée.
 
 Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version de l’outil de transfert de contenu :
 
 * Il est conseillé de procéder à un [nettoyage de révision](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et à des [contrôles de cohérence de l’entrepôt de données](https://helpx.adobe.com/fr/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) sur le référentiel **source** pour identifier les problèmes potentiels et réduire la taille du référentiel.
-
-* Si le réseau de diffusion de contenu (CDN) de l’instance d’auteur AEM Cloud est configuré pour disposer d’une liste blanche d’adresses IP, il faut s’assurer que les adresses IP de l’environnement source sont aussi ajoutées à la liste autorisée pour que l’environnement source et l’environnement AEM Cloud puissent communiquer entre eux.
 
 * Lors de la phase d’ingestion, il est recommandé d’exécuter l’ingestion en activant le mode d’*effacement*. Dans ce cas, le référentiel existant (auteur ou publication) de l’environnement AEM Cloud Service cible sera complètement supprimé, puis mis à jour à l’aide des données du jeu de migration. Ce mode est beaucoup plus rapide que le mode sans effacement, où le jeu de migration est appliqué par-dessus le contenu existant.
 
@@ -60,11 +58,11 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Si vous utilisez un *environnement sandbox*, assurez-vous que celui-ci est à jour et mis à niveau vers la dernière version. Si vous utilisez un *environnement de production*, il est automatiquement mis à jour.
 
-* Pour utiliser l’outil de transfert de contenu, vous devez être un utilisateur administrateur sur votre instance source et appartenir au groupe d’**administrateurs** AEM local dans l’instance Cloud Service vers laquelle vous transférez du contenu. Les utilisateurs sans ce privilège ne pourront pas lancer d’ingestions.
+* Pour démarrer une ingestion, vous devez appartenir à l’AEM locale. **administrateurs** dans l’instance de Cloud Service à laquelle vous transférez du contenu. Les utilisateurs non privilégiés ne pourront pas commencer les ingérations sans fournir manuellement le jeton de migration.
 
 * Lorsque l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, elle supprime l’intégralité du référentiel existant et crée un référentiel dans lequel ingérer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur doit être rajouté au groupe d’**administrateurs** afin de récupérer le jeton d’accès pour l’outil de transfert de contenu.
 
-* L’outil de transfert de contenu ne prend pas en charge la fusion de contenu provenant de plusieurs sources dans l’instance Cloud Service cible si le contenu provenant des deux sources est déplacé vers les mêmes chemins d’accès sur la cible. Pour déplacer le contenu provenant de plusieurs sources vers une seule instance de Cloud Service cible, vous devez vous assurer qu’il n’y a pas de chevauchement des chemins de contenu des sources.
+* Les intuitions ne prennent pas en charge la fusion de contenu provenant de plusieurs sources dans l’instance de Cloud Service cible si le contenu provenant des deux sources est déplacé vers les mêmes chemins d’accès sur la cible. Pour déplacer le contenu provenant de plusieurs sources vers une seule instance de Cloud Service cible, vous devez vous assurer qu’il n’y a pas de chevauchement des chemins de contenu des sources.
 
 * La clé d’extraction est valable 14 jours à compter du moment où elle a été créée/renouvelée. Elle peut être renouvelée à tout moment. Si la clé d’extraction a expiré, vous ne pourrez pas effectuer d’extraction.
 

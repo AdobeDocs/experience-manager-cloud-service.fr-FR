@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 501441717f541439ac8d914f1e419491399e6667
+source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 96%
+source-wordcount: '1292'
+ht-degree: 94%
 
 ---
 
@@ -34,16 +34,8 @@ Il est possible de télécharger l’outil de transfert de contenu dans un fichi
 
 L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour réussir l’exécution d’une extraction, les points d’entrée suivants doivent être accessibles à partir de l’instance AEM en cours d’exécution :
 
-* L’environnement AEM as a Cloud Service cible : `author-p<program_id>-e<env_id>.adobeaemcloud.com`
 * Le service d’enregistrement blob Azure : `casstorageprod.blob.core.windows.net`
 * Le point d’entrée de l’IO de mappage des utilisateurs : `usermanagement.adobe.io`
-
-Pour tester la connectivité à l’environnement AEM as a Cloud Service cible, lancez la commande cURL suivante à partir du shell de l’instance source (remplacez `program_id`, `environment_id` et `migration_token`) :
-
-`curl -i https://author-p<program_id>-e<environment_id>.adobeaemcloud.com/api/migration/migrationSet -H "Authorization: Bearer <migration_token>"`
-
->[!NOTE]
->Si vous recevez un `HTTP/2 200`, la connexion à AEM as a Cloud Service a réussi.
 
 ### Activation de la journalisation SSL {#enable-ssl-logging}
 
@@ -111,7 +103,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
 Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration Manager, vous devez installer la dernière version de l’outil de transfert de contenu sur votre instance source Adobe Experience Manager (AEM). Consultez cette section pour savoir comment renseigner le jeu de migration.
 
-1. Après avoir installé la dernière version (v2.0.10) de l’outil de transfert de contenu sur votre instance Adobe Experience Manager source, accédez à **Opérations - Migration de contenu**.
+1. Après avoir installé la dernière version de l’outil de transfert de contenu sur votre instance Adobe Experience Manager source, accédez à **Opérations - Migration de contenu**
 
 1. Cliquez sur **Créer un jeu de migration**.
 
