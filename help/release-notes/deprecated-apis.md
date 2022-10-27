@@ -5,7 +5,7 @@ exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
 source-git-commit: ed57f15e2e85d1b2d957d396f9d93725d389375c
 workflow-type: tm+mt
 source-wordcount: '1063'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -190,11 +190,11 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>org.apache.sling.commons.log.logback<br>org.apache.sling.commons.log.logback.webconsole</td>
     <td>Cette API interne Logback nʼest pas prise en charge par AEM as a Cloud Service.</td>
     <td>1/27/2022</td>
-    <td>supprimée</td>
+    <td>supprimé</td>
   </tr>
   <tr>
     <td>com.github.jknack.handlebars.js</td>
-    <td>Mise à niveau de Handlebars requise de la version 4.0.5 vers la version 4.3.0 en raison d’une vulnérabilité de sécurité. Ce package n’est plus présent dans les Guidons mis à niveau.</td>
+    <td>Mise à niveau de Handlebars requise de la version 4.0.5 à la version 4.3.0 en raison d’une vulnérabilité de sécurité. Ce package n’est plus présent dans les mises à niveau de Handlebars.</td>
     <td>5/5/2022</td>
     <td>8/5/2022</td>
   </tr>
