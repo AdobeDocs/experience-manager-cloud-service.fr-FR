@@ -3,7 +3,7 @@ title: Tests fonctionnels
 description: Découvrez les trois différents types de tests fonctionnels intégrés au processus de déploiement AEM as a Cloud Service pour garantir la qualité et la fiabilité de votre code.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '898'
 ht-degree: 100%
 
