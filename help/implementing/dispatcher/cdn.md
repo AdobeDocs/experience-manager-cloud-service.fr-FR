@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 74%
+ht-degree: 76%
 
 ---
 
@@ -74,15 +74,15 @@ Voir [Exemples de configurations de fournisseur CDN](#sample-configurations) pou
 
 Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
 
-Après avoir obtenu la variable `X-AEM-Edge-Key`, vous pouvez tester que la requête est correctement acheminée comme suit.
+Après avoir obtenu le `X-AEM-Edge-Key`, vous pouvez tester la requête afin de déterminer si elle est correctement acheminée comme suit :
 
-Sous Linux :
+Sous Linux :
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com -H "X-Forwarded-Host: example.com" -H "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
 ```
 
-Sous Windows:
+Sous Windows :
 
 ```
 curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwarded-Host: example.com" --header "X-AEM-Edge-Key: <PROVIDED_EDGE_KEY>"
