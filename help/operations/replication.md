@@ -5,7 +5,7 @@ exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
 source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
 workflow-type: tm+mt
 source-wordcount: '1258'
-ht-degree: 87%
+ht-degree: 99%
 
 ---
 
@@ -174,14 +174,14 @@ L’ensemble `ReplicationStatus` d’une ressource n’est modifié que si l’a
 
 ### Méthodes d’invalidation de contenu {#invalidating-content}
 
-Vous pouvez directement invalider le contenu à l’aide de l’invalidation du contenu Sling (SCD) de l’auteur (méthode préférée) ou en utilisant l’API de réplication pour appeler l’agent de réplication de vidage du dispatcher de publication. Reportez-vous à la section [Mise en cache](/help/implementing/dispatcher/caching.md) pour plus d’informations.
+Vous pouvez directement invalider le contenu à l’aide de l’invalidation du contenu Sling (SCD) de l’auteur (méthode préférée) ou en utilisant l’API de réplication pour appeler l’agent de réplication de vidage du Dispatcher de publication. Reportez-vous à la page [Mise en cache](/help/implementing/dispatcher/caching.md) pour plus d’informations.
 
 **Limites de capacité de l’API de réplication**
 
-Il est recommandé de répliquer moins de 100 chemins à la fois, 500 étant la limite stricte. Au-dessus de la limite stricte, une `ReplicationException` sera générée.
-Si la logique de votre application ne nécessite pas de réplication atomique, cette limite peut être dépassée en définissant la variable `ReplicationOptions.setUseAtomicCalls` sur false, qui accepte n’importe quel nombre de chemins, mais crée en interne des compartiments pour rester en dessous de cette limite.
+Il est recommandé de répliquer moins de 100 chemins d’accès à la fois, avec une limite stricte de 500 chemins d’accès. Au-delà de cette limite stricte, une `ReplicationException` est générée.
+Si la logique de votre application ne nécessite pas de réplication atomique, cette limite peut être dépassée en définissant `ReplicationOptions.setUseAtomicCalls` sur False. Ainsi, un nombre quelconque de chemins d’accès sera accepté, mais des compartiments seront créés en interne pour rester au-dessous de cette limite.
 
-La taille du contenu transmis par appel de réplication ne doit pas dépasser `10 MB`. Cela inclut les noeuds et les propriétés, mais pas les fichiers binaires (les modules de workflow et les modules de contenu sont considérés comme des fichiers binaires).
+La taille du contenu transmis par appel de réplication ne doit pas dépasser `10 MB`. Cela inclut les nœuds et les propriétés, mais pas les fichiers binaires (les modules de workflow et les modules de contenu sont considérés comme des fichiers binaires).
 
 
 ## Résolution des problèmes {#troubleshooting}
