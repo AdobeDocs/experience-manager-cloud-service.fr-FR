@@ -8,7 +8,7 @@ exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
 source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
 workflow-type: tm+mt
 source-wordcount: '6346'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -815,7 +815,7 @@ Dans un formulaire de demande de prêt, vous voulez savoir si le demandeur de pr
 
 * Un champ de texte,**[!UICONTROL ID de client Geometrixx]**, pour indiquer l’ID du client.
 
-Lorsque vous entrez une règle Lorsque sur le bouton radio pour implémenter ce comportement, la règle s’affiche comme suit dans l’éditeur de règles visuel. 
+Lorsque vous entrez une règle Lorsque sur le bouton radio pour implémenter ce comportement, la règle s’affiche comme suit dans l’éditeur de règles visuel.
 
 ![When-rule-example](assets/when-rule-example.png)
 
