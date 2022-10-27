@@ -6,7 +6,7 @@ exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
@@ -20,9 +20,9 @@ Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l�
 >
 >Voir également :
 >
->* [Qu&#39;est-ce que l&#39;absence de tête ?](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
+>* [Que désigne l’expression « Headless » ?](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
 >
->* [Sans tête et AEM](/help/headless/introduction.md) pour une présentation du développement sans affichage pour AEM Sites as a Cloud Service.
+>* [Headless et AEM](/help/headless/introduction.md) pour une présentation du Headless Development de AEM Sites as a Cloud Service.
 
 
 >[!NOTE]
