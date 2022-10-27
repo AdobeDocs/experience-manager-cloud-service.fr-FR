@@ -13,7 +13,7 @@ exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
 source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
 workflow-type: tm+mt
 source-wordcount: '1415'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ Pour utiliser CAPTCHA dans les formulaires adaptatifs :
 1. Dans le menu déroulant **[!UICONTROL Service Captcha]**, sélectionnez **[!UICONTROL reCaptcha]** pour activer le service reCAPTCHA si vous l’avez configuré comme décrit dans [Service ReCAPTCHA de Google](#google-recaptcha). Sélectionnez une configuration dans la liste déroulante Paramètres.
 1. Sélectionnez le type **[!UICONTROL Normal]** ou **[!UICONTROL Compact]** pour le widget reCAPTCHA. Vous pouvez également sélectionner l’option **[!UICONTROL Invisible]** pour ne montrer le test CAPTCHA que dans le cas d’une activité suspecte. Le badge protégé par reCAPTCHA, affiché ci-dessous, s’affiche sur les formulaires protégés.
 
-   ![Google protégé par le badge reCAPTCHA](assets/google-recaptcha-v2.png)
+   ![Badge protégé par reCAPTCHA de Google](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
