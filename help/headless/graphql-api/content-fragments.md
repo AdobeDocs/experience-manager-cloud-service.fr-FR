@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les fragments de contenu dans Adobe Exp
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2708'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -107,24 +107,24 @@ Vous pouvez également effectuer les opérations suivantes :
 
 ### Bonnes pratiques de requête GraphQL (Dispatcher) {#graphql-query-best-practices}
 
-Le [Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) sont la méthode recommandée :
+Les [Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) constituent la méthode recommandée pour les raisons suivantes :
 
-* ils sont mis en cache
-* ils sont gérés de manière centralisée par AEM as a Cloud Service
+* Elles sont mises en cache.
+* Elles sont gérées de manière centralisée par AEM as a Cloud Service.
 
 Les requêtes directes et/ou POST ne sont pas recommandées, car elles ne sont pas mises en cache. Par conséquent, dans une instance par défaut, Dispatcher est configuré pour bloquer ces requêtes.
 
 >[!NOTE]
 >
->Pour autoriser les requêtes directes et/ou POST dans Dispatcher, vous pouvez demander à votre administrateur système de :
+>Pour autoriser les requêtes directes et/ou POST dans Dispatcher, vous pouvez demander à votre administrateur système de :
 >
->* Créez une variable d’environnement Cloud Manager appelée `ENABLE_GRAPHQL_ENDPOINT`
->* avec la valeur `true`
+>* Créer une variable d’environnement Cloud Manager appelée `ENABLE_GRAPHQL_ENDPOINT`
+>* avec la valeur `true`.
 
 
 >[!NOTE]
 >
->La possibilité d’effectuer des requêtes directes peut être abandonnée à un moment donné.
+>Il se peut que la possibilité d’effectuer des requêtes directes devienne obsolète à un moment donné.
 
 ### IDE GraphiQL {#graphiql-ide}
 
@@ -348,7 +348,7 @@ Voir [Modèle de requête – Toutes les villes avec une variante nommée](/help
 
 >[!NOTE]
 >
->Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur par défaut (de secours).
+>Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur (de secours) par défaut.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -587,7 +587,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
          >[!NOTE]
          >
-         >Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur par défaut (de secours).
+         >Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur (de secours) par défaut.
 
          * Voir [Exemple de requête – Toutes les villes avec une variante nommée](#sample-cities-named-variation)
    * Et les opérations :
