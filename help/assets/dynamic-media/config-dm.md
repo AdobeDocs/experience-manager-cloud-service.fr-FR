@@ -6,7 +6,7 @@ exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
 source-git-commit: 58aee2ad24b38fd8abc197961adda524832d2614
 workflow-type: tm+mt
 source-wordcount: '3596'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -228,7 +228,7 @@ Voir [Configurer les paramètres généraux de Dynamic Media](/help/assets/dynam
 
 La gestion des couleurs de Dynamic Media vous permet de corriger les couleurs des ressources. Avec la correction des couleurs, les ressources ingérées conservent leur espace colorimétrique (RVB, CMJN, Gris) et leur profil de couleur intégré. Lorsque vous demandez un rendu dynamique, la couleur de l’image est corrigée dans l’espace colorimétrique cible en utilisant une sortie CMJN, RVB ou grise.
 
-Voir [Configuration des paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md).
+Consultez [Configuration des paramètres d’image prédéfinis](/help/assets/dynamic-media/managing-image-presets.md).
 
 Pour configurer les propriétés de couleur par défaut afin d’activer la correction des couleurs lorsque vous demandez des images :
 
@@ -439,7 +439,7 @@ La file d’attente de workflows Granite est utilisée pour le workflow **[!UICO
 
 #### Mise à jour du nombre maximal de connexions de téléchargement au serveur Dynamic Media Classic (Scene7) {#update-max-s7-upload-connections}
 
-Le paramètre Connexion de chargement de Dynamic Media Classic (Scene7) synchronise les ressources de Experience Manager sur les serveurs Dynamic Media Classic.
+Le paramètre de connexion de téléchargement de Dynamic Media Classic (Scene7) permet de synchroniser Experience Manager Assets avec les serveurs de Dynamic Media Classic.
 
 >[!NOTE]
 >
