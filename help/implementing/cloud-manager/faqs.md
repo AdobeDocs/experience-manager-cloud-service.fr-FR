@@ -5,7 +5,7 @@ exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
 source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
 workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Par exemple, consultez l’[exemple de code de projet wknd](https://github.com/a
 
 ## Mon build échoue avec une erreur mentionnant maven-scr-plugin après la bascule de Java 8 à Java 11. Que puis-je faire ? {#build-fails-maven-scr-plugin}
 
-Votre version de Cloud Manager AEM peut échouer lorsque vous tentez de passer de Java 8 à 11. Si vous rencontrez l’erreur ci-dessous, vous devez supprimer le `maven-scr-plugin` et convertir toutes les annotations OSGi en annotations OSGi R6.
+Votre build AEM Cloud Manager échoue en cas de tentative de basculement de Java 8 à Java 11. Si vous rencontrez l’erreur ci-dessous, vous devez supprimer le `maven-scr-plugin` et convertir toutes les annotations OSGi en annotations OSGi R6.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
@@ -44,19 +44,19 @@ Il s’agit d’un problème connu dû au fait que Cloud Manager utilisait une 
 
 ## La vérification de la qualité du code a échoué et notre déploiement est bloqué. Y a-t-il un moyen de contourner cette vérification ? {#deployment-stuck}
 
-Oui. Tous les échecs de vérification de la qualité du code, à l’exception de l’évaluation de sécurité, ne sont pas des mesures critiques. Ils peuvent donc être contournés dans le cadre d’un pipeline de déploiement en développant les éléments dans l’interface utilisateur des résultats.
+Oui. Tous les échecs de vérification liés à la qualité du code, à l’exception de l’évaluation de la sécurité, ne sont pas des mesures critiques. Ils peuvent donc être contournés, dans le cadre d’un pipeline de déploiement, en développant les éléments dans l’interface utilisateur des résultats.
 
 Un utilisateur ayant un rôle de [responsable de déploiement, responsable de projet ou propriétaire d’entreprise](/help/onboarding/aem-cs-team-product-profiles.md#cloud-manager-product-profiles) peut, au choix, contourner les problèmes, auquel cas le pipeline continue, ou les accepter, auquel cas le pipeline s’arrête avec un échec.
 
-Voir les documents [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) et [Configuration de pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) pour plus d’informations.
+Voir les documents [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md#three-tiered-gate) et [Configurer des pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#non-production-pipelines) pour plus d’informations.
 
 ## Puis-je utiliser SNAPSHOT pour la version du projet Maven ? {#use-snapshot}
 
 Oui. Pour les déploiements de développeurs, les fichiers `pom.xml` de la branche Git doivent contenir `-SNAPSHOT` à la fin de la valeur `<version>`.
 
-Cela permet de conserver les déploiements ultérieurs alors que la version n’a pas été modifiée. Pour les déploiements de développeurs, aucune version automatique n’est ajoutée ou générée pour la build maven.
+Cela permet de continuer à installer le déploiement suivant lorsque la version n’a pas été modifiée. Pour les déploiements de développeurs, aucune version automatique n’est ajoutée ou générée pour la build maven.
 
-Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée une balise pour vous dans Git. Cette balise peut être référencée ultérieurement, si nécessaire.
+Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans git. Cette balise peut être référencée ultérieurement, si nécessaire.
 
 Pour plus d’informations sur la gestion des versions, reportez-vous à la section [documentée ici.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
 
@@ -66,7 +66,7 @@ En cas de déploiement d’évaluation et de production, une version automatique
 
 Pour le contrôle de version personnalisé dans les déploiements d’évaluation et de production, définissez une version maven en trois parties, telle que `1.0.0`. Passez à la version supérieure à chaque déploiement en production.
 
-Cloud Manager ajoute automatiquement sa version aux versions d’évaluation et de production et crée une branche Git. Aucune configuration spécifique n’est nécessaire. Si vous ne définissez pas de version Maven comme décrit précédemment, le déploiement s’effectuera quand même et une version sera automatiquement définie.
+Cloud Manager ajoute automatiquement sa version aux builds d’évaluation et de production et crée même une branche Git. Aucune configuration spécifique n’est nécessaire. Si vous ne définissez pas de version Maven comme décrit précédemment, le déploiement s’effectuera quand même et une version sera automatiquement définie.
 
 ## Ma build Maven échoue lors des déploiements de Cloud Manager, mais elle est pourtant créée localement sans la moindre erreur. Qu’est-ce qui ne va pas ? {#maven-build-fail}
 
