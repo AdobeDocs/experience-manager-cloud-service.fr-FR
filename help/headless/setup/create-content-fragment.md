@@ -5,7 +5,7 @@ exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
 source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
 workflow-type: tm+mt
 source-wordcount: '348'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -25,21 +25,21 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 Les auteurs de contenu créeront tout nombre de fragments de contenu pour représenter le contenu qu’ils créent. Ce sera leur principale tâche dans AEM. Pour les besoins de ce guide de prise en main, nous n’aurons besoin d’en créer qu’un.
 
-1. Connectez-vous à AEM as a Cloud Service et, dans le menu principal, sélectionnez **Navigation** -> **Fragments de contenu**.
+1. Connectez-vous à AEM as a Cloud Service et, à partir du menu principal, sélectionnez **Navigation** -> **Fragments de contenu**.
 
-1. Appuyez ou cliquez sur le [dossier que vous avez créé précédemment.](create-assets-folder.md)
+1. Appuyez ou cliquez sur le [dossier que vous avez créé précédemment](create-assets-folder.md).
 1. Appuyez ou cliquez sur **Créer**.
 1. La création d’un fragment de contenu est présentée sous la forme d’une boîte de dialogue.
 Sélectionnez l’emplacement et le modèle que vous souhaitez utiliser pour créer votre fragment de contenu.
 
-   * Les modèles disponibles dépendent de la [**configuration du cloud** que vous avez définie pour le dossier de ressources](create-assets-folder.md) dans lequel vous créez le fragment de contenu.
+   * Les modèles disponibles dépendent de la [**configuration cloud** que vous avez définie pour le dossier de ressources](create-assets-folder.md) dans lequel vous créez le fragment de contenu.
    * Si votre modèle n’est pas disponible, vérifiez la configuration de votre dossier de ressources.
 
    Ajoutez le titre, le nom et, si nécessaire, la description.
 
    ![Boîte de dialogue Créer un fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cfc-console-create.png)
 
-1. Appuyez ou cliquez sur **Créer** ou  **Créer et ouvrir**.
+1. Appuyez ou cliquez sur **Créer** ou **Créer et ouvrir**.
 
 Les fragments de contenu peuvent faire référence à d’autres fragments de contenu, ce qui permet d’obtenir une structure de contenu imbriquée si nécessaire.
 
