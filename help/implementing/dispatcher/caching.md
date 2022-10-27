@@ -6,18 +6,18 @@ exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
 source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
 workflow-type: tm+mt
 source-wordcount: '2580'
-ht-degree: 52%
+ht-degree: 71%
 
 ---
 
-# Présentation {#intro}
+# Présentation  {#intro}
 
 Le trafic transite par le réseau de diffusion de contenu vers une couche de serveur web Apache, qui prend en charge les modules, y compris Dispatcher. Afin d’améliorer les performances, Dispatcher est principalement utilisé comme cache pour limiter le traitement sur les noeuds de publication.
 Des règles peuvent être appliquées à la configuration de Dispatcher pour modifier les paramètres d’expiration de cache par défaut, ce qui entraîne la mise en cache sur le réseau de diffusion de contenu. Notez que Dispatcher respecte également les en-têtes d’expiration de cache qui en résultent si `enableTTL` est activé dans la configuration de Dispatcher, ce qui implique qu’il actualisera du contenu spécifique même en dehors du contenu en cours de republication.
 
 Cette page décrit également comment le cache de Dispatcher est invalidé et comment la mise en cache fonctionne au niveau du navigateur en ce qui concerne les bibliothèques côté client.
 
-## La mise en cache {#caching}
+## Mise en cache {#caching}
 
 ### HTML/texte {#html-text}
 
@@ -132,7 +132,7 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
    * Recherchez les fichiers vhost dans `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`.
    * Supprimez ou mettez en commentaire la ligne : `Header append Vary User-Agent env=!dont-vary` de tous les fichiers vhost, à l’exception de default.vhost, qui est en lecture seule.
 * Utilisez l’en-tête `Surrogate-Control` pour contrôler la mise en cache du réseau CDN indépendamment de la mise en cache du navigateur.
-* Envisagez d’appliquer les directives [`stale-while-revalidate`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) et [`stale-if-error`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) afin de permettre l’actualisation de l’arrière-plan et d’éviter les pertes de cache, en maintenant le contenu à jour et rapide pour les utilisateurs.
+* Envisagez d’appliquer les directives [`stale-while-revalidate`](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) et [`stale-if-error`](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) afin de permettre l’actualisation de l’arrière-plan et d’éviter les pertes de cache, en maintenant le contenu à jour et rapide pour les utilisateurs.
    * Il existe de nombreuses façons d’appliquer ces directives, mais en ajoutant un `stale-while-revalidate` de 30 minutes à tous les en-têtes de contrôle du cache est un bon point de départ.
 * Voici quelques exemples de divers types de contenu qui peuvent être utilisés comme vous guider lors de la configuration de vos propres règles de mise en cache. Réfléchissez à la spécificité de votre configuration et de vos exigences et testez-les soigneusement :
 
@@ -184,7 +184,7 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
       </LocationMatch>
       ```
 
-   * Mettez en cache des ressources modifiables de la gestion des actifs numériques, telles que des images et des vidéos, pendant 24 h, avec actualisation de l’arrière-plan après 12 h afin d’éviter la fonction MISS.
+   * Mettez en cache des ressources modifiables de la gestion des actifs numériques (DAM), telles que des images et des vidéos, pendant 24 h, avec actualisation de l’arrière-plan après 12 h afin d’éviter la fonction MISS.
 
       ```
       <LocationMatch "^/content/dam/.*\.(?i:jpe?g|gif|js|mov|mp4|png|svg|txt|zip|ico|webp|pdf)$">
@@ -211,17 +211,17 @@ Lorsque l’instance de publication reçoit une nouvelle version d’une page ou
 
 Adobe recommande de s’appuyer sur des en-têtes de cache standard pour contrôler le cycle de vie de la diffusion du contenu. Cependant, si nécessaire, il est possible d’invalider le contenu directement dans Dispatcher.
 
-La liste suivante contient des scénarios dans lesquels vous souhaitez peut-être invalider explicitement le cache (tout en écoutant éventuellement la fin de l’invalidation) :
+La liste suivante contient des scénarios dans lesquels vous souhaitez peut-être invalider explicitement le cache (tout en écoutant éventuellement la fin de l’invalidation) :
 
 * Après avoir publié du contenu tel que des fragments d’expérience ou des fragments de contenu, invalidation du contenu publié et mis en cache qui référence ces éléments.
-* La notification d’un système externe une fois les pages référencées ont été correctement invalidées.
+* Notification d’un système externe une fois que les pages référencées ont été correctement invalidées.
 
-Il existe deux méthodes pour invalider explicitement le cache :
+Il existe deux méthodes pour invalider explicitement le cache :
 
-* L’approche recommandée consiste à utiliser Sling Content Distribution (SCD) à partir de l’auteur.
+* L’approche recommandée consiste à utiliser Sling Content Distribution (SCD) à partir de l’environnement de création.
 * En utilisant l’API de réplication pour appeler l’agent de réplication de vidage de publication de Dispatcher.
 
-Les approches diffèrent en termes de disponibilité de niveau, de capacité à dédupliquer les événements et de garantie de traitement des événements. Le tableau ci-dessous résume ces options :
+Les approches diffèrent en termes de disponibilité de niveau, de capacité à dédupliquer les événements et de garantie de traitement des événements. Le tableau ci-dessous résume ces options :
 
 <table style="table-layout:auto">
  <tbody>
@@ -237,19 +237,19 @@ Les approches diffèrent en termes de disponibilité de niveau, de capacité à 
   <tr>
     <td>API Sling Content Distribution (SCD)</td>
     <td>Création</td>
-    <td>Utilisation possible de l’API Discovery ou activation de la variable <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">mode de déduplication</a>.</td>
+    <td>Utilisation possible de l’API Discovery ou de l’activation du <a href="https://github.com/apache/sling-org-apache-sling-distribution-journal/blob/e18f2bd36e8b43814520e87bd4999d3ca77ce8ca/src/main/java/org/apache/sling/distribution/journal/impl/publisher/DistributedEventNotifierManager.java#L146-L149">mode de déduplication</a>.</td>
     <td>Au moins une fois.</td>
     <td>
      <ol>
        <li>AJOUTER</li>
-       <li>DELETE</li>
+       <li>SUPPRIMER</li>
        <li>INVALIDER</li>
      </ol>
      </td>
     <td>
      <ol>
-       <li>Niveau hiérarchique/d’état</li>
-       <li>Niveau hiérarchique/d’état</li>
+       <li>Niveau hiérarchique/de statut</li>
+       <li>Niveau hiérarchique/de statut</li>
        <li>Ressource de niveau uniquement</li>
      </ol>
      </td>
@@ -268,24 +268,24 @@ Les approches diffèrent en termes de disponibilité de niveau, de capacité à 
     <td>Meilleur effort.</td>
     <td>
      <ol>
-       <li>ACTIVATE</li>
-       <li>DEACTIVATE</li>
-       <li>DELETE</li>
+       <li>ACTIVER</li>
+       <li>DÉSACTIVER</li>
+       <li>SUPPRIMER</li>
      </ol>
      </td>
     <td>
      <ol>
-       <li>Niveau hiérarchique/d’état</li>
-       <li>Niveau hiérarchique/d’état</li>
-       <li>Niveau hiérarchique/d’état</li>
+       <li>Niveau hiérarchique/de statut</li>
+       <li>Niveau hiérarchique/de statut</li>
+       <li>Niveau hiérarchique/de statut</li>
      </ol>
      </td>
     <td>
      <ol>
        <li>Publie du contenu et invalide le cache.</li>
-       <li>À partir du niveau de création/publication : supprime le contenu et invalide le cache.</li>
-       <li><p><strong>À partir du niveau de création</strong> - Supprime le contenu et invalide le cache (s’il est déclenché à partir du niveau Auteur AEM sur l’agent de publication).</p>
-           <p><strong>À partir du niveau de publication</strong> - Invalide uniquement le cache (s’il est déclenché à partir du niveau Publication AEM sur l’agent de purge ou de vidage ressource seule).</p>
+       <li>À partir du niveau de création/publication - supprime le contenu et invalide le cache.</li>
+       <li><p><strong>À partir du niveau de création</strong> - Supprime le contenu et invalide le cache (s’il est déclenché à partir du niveau de création AEM sur l’agent de publication).</p>
+           <p><strong>À partir du niveau de publication</strong> - Invalide uniquement le cache (s’il est déclenché à partir du niveau Publication AEM sur l’agent de vidage ou de vidage ressource seule).</p>
        </li>
      </ol>
      </td>
@@ -293,9 +293,9 @@ Les approches diffèrent en termes de disponibilité de niveau, de capacité à 
   </tbody>
 </table>
 
-Notez que les deux actions directement liées à l’invalidation du cache sont l’invalidation de l’API Sling Content Distribution (SCD) et la désactivation de l’API de réplication.
+Veuillez noter que les deux actions directement liées à l’invalidation du cache sont l’invalidation de l’API Sling Content Distribution (SCD) et la désactivation de l’API de réplication.
 
-De plus, à partir de la table, nous observons que :
+De plus, à partir du tableau, nous observons que :
 
 * L’API SCD est nécessaire lorsque chaque événement doit être garanti, par exemple lors d’une synchronisation avec un système externe qui nécessite des connaissances précises. S’il existe un événement de mise à l’échelle de niveau publication au moment de l’appel d’invalidation, un événement supplémentaire est généré lorsque chaque nouvelle publication traite l’invalidation.
 
@@ -308,9 +308,9 @@ En conclusion, si vous souhaitez invalider le cache de Dispatcher, l’option re
 >[!NOTE]
 >Lorsque vous utilisez les instructions présentées ci-dessous, sachez que vous devez tester le code personnalisé dans un environnement de développement AEM Cloud Service et non localement.
 
-Lors de l’utilisation de l’action SCD de l’auteur, le modèle de mise en oeuvre est le suivant :
+Lors de l’utilisation de l’action SCD depuis l&#39;environnement de création, le modèle d’implémentation est le suivant :
 
-1. À partir de l’auteur, écrivez du code personnalisé pour appeler la distribution de contenu sling. [API](https://sling.apache.org/documentation/bundles/content-distribution.html), en transmettant l’action invalider avec une liste de chemins :
+1. À partir de l’environnement de création, écrivez du code personnalisé pour appeler l’[API](https://sling.apache.org/documentation/bundles/content-distribution.html) de distribution de contenu sling, en transmettant l’action invalider avec une liste de chemins :
 
 ```
 @Reference
@@ -379,21 +379,21 @@ public class InvalidatedHandler implements EventHandler {
 
 <!-- Optionally, instead of using the isLeader approach, one could add an OSGi configuration for the PID org.apache.sling.distribution.journal.impl.publisher.DistributedEventNotifierManager and property deduplicateEvent=true. But we'll stick with just one strategy and not mention it (double-check this).**review this**-->
 
-* (Facultatif) Exécutez la logique métier dans le `invalidated(String[] paths, String packageId)` ci-dessus.
+* (Facultatif) Exécutez la logique commerciale de la méthode `invalidated(String[] paths, String packageId)` ci-dessus.
 
 >[!NOTE]
 >
->Le réseau de diffusion de contenu Adobe n’est pas vidé lorsque Dispatcher est invalidé. Le réseau de diffusion de contenu géré par l’Adobe respecte les TTL et il n’est donc pas nécessaire de le vider.
+>Le réseau de diffusion de contenu Adobe n’est pas vidé lorsque Dispatcher est invalidé. Le réseau CDN géré par Adobe respecte les durées de vies et il n’est donc pas nécessaire qu’il soit vidé.
 
 ### API de réplication {#replication-api}
 
-Le modèle de mise en oeuvre présenté ci-dessous lors de l’utilisation de l’action de désactivation de l’API de réplication :
+Ci-dessous, se trouve présenté le modèle d’implémentation lors de l’utilisation de l’action de désactivation de l’API de réplication :
 
 1. Au niveau de la publication, appelez l’API de réplication pour déclencher l’agent de réplication de vidage de publication de Dispatcher.
 
 Le point de terminaison de l’agent de vidage n’est pas configurable, mais il est plutôt préconfiguré pour pointer vers Dispatcher, avec le service de publication qui s’exécute en même temps que l’agent de vidage.
 
-L’agent de vidage peut généralement être déclenché par un code personnalisé basé sur des événements ou des workflows OSGi.
+L’agent de vidage peut généralement être déclenché par des codes personnalisés basés sur des événements ou des workflows OSGi.
 
 ```
 String[] paths = …
