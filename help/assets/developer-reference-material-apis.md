@@ -187,7 +187,7 @@ Pour en savoir plus sur les algorithmes de chargement ou pour créer vos propres
 * [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
 
 >[!NOTE]
-La bibliothèque aem-upload et l’outil de ligne de commande utilisent tous deux la variable [bibliothèque node-httptransfer](https://github.com/adobe/node-httptransfer/)
+La bibliothèque de téléchargement d’AEM et l’outil de ligne de commande utilisent tous deux la [bibliothèque node-httptransfer](https://github.com/adobe/node-httptransfer/)
 
 ### API de chargement de ressources obsolètes {#deprecated-asset-upload-api}
 
@@ -212,7 +212,7 @@ Pour la configuration du workflow de post-traitement, utilisez les workflows sta
 
 ## Prise en charge des étapes d’un workflow de post-traitement {#post-processing-workflows-steps}
 
-Si vous effectuez une mise à niveau à partir d’une version précédente d’[!DNL Experience Manager], vous pouvez utiliser les microservices de ressources pour traiter les ressources. Les microservices de ressources natifs en mode cloud sont plus simples à configurer et à utiliser. Certaines étapes appliquées dans le workflow [!UICONTROL Ressource de mise à jour de la gestion des actifs numériques] de la version précédente ne sont pas prises en charge. Pour plus d’informations sur les classes prises en charge, consultez [Référence de l’API Java ou Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
+Si vous effectuez une mise à niveau à partir d’une version précédente d’[!DNL Experience Manager], vous pouvez utiliser les microservices de ressources pour traiter les ressources. Les microservices de ressources natifs en mode cloud sont plus simples à configurer et à utiliser. Certaines étapes appliquées dans le workflow [!UICONTROL Ressource de mise à jour de la gestion des actifs numériques (DAM)] de la version précédente ne sont pas prises en charge. Pour plus d’informations sur les classes prises en charge, consultez [Référence de l’API Java ou Javadocs](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
 
 Les modèles de workflow techniques suivants ont été remplacés par des microservices de ressources ou la prise en charge n’est pas disponible :
 
