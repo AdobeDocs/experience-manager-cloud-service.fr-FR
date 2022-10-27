@@ -1,15 +1,15 @@
 ---
-title: Utilisation de fragments de contenu (Ressources - Fragments de contenu)
-description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages, idéal pour la création de pages et la diffusion sans interface utilisateur.
+title: Utiliser des fragments de contenu (Ressources - Fragments de contenu)
+description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour la création de pages et la diffusion découplée.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
 workflow-type: tm+mt
 source-wordcount: '2075'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
-# Utilisation de fragments de contenu {#working-with-content-fragments}
+# Utiliser des fragments de contenu {#working-with-content-fragments}
 
 Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements ou sur plusieurs canaux, idéal pour une diffusion découplée.
 
@@ -34,13 +34,13 @@ Les fragments de contenu peuvent également être livrés au format JSON, à l�
 
 >[!NOTE]
 >
->Les fragments de contenu sont stockés sous la forme **Ressources**. Ils sont désormais principalement gérés avec la variable **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** mais ils peuvent toujours être gérés à partir de la console **Ressources** console. Cette section traite de la gestion à partir de la fonction **Ressources** console.
+>Les fragments de contenu sont stockés sous la forme de **Ressources**. Ils sont désormais principalement gérés avec la console **[Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md)** mais ils peuvent toujours être gérés à partir de la console **Ressources**. Cette section traite de la gestion à partir de la console **Ressources**.
 
 Cette page et les suivantes portent sur les tâches de création, de configuration, de gestion et d’utilisation de vos fragments de contenu :
 
 * [Activation de la fonctionnalité de fragments de contenu pour votre instance](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md) : activation, création et définition de vos modèles.
-* [Gestion des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md)  : créez des fragments de contenu, puis modifiez-les, publiez-les et référencez-les.
+* [Gérer les fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md) - créer vos fragments de contenu ; puis modifier, publier et référencer
 * [Variations – création de fragments de contenu](/help/assets/content-fragments/content-fragments-variations.md) : créez le contenu du fragment et créez des variantes du maître.
 * [Texte (Markdown)](/help/assets/content-fragments/content-fragments-markdown.md) : utilisation de la syntaxe Markdown pour votre fragment.
 * [Utilisation du contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md) : ajout de contenu associé.
