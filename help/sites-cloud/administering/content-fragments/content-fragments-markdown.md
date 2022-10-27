@@ -1,5 +1,5 @@
 ---
-title: Texte (Markdown)
+title: Markdown
 description: Découvrez comment l’éditeur de fragment de contenu utilise la syntaxe Markdown pour vous permettre de créer facilement du contenu, tant pour la création de pages que pour la diffusion sans en-tête.
 feature: Content Fragments
 role: User
@@ -7,13 +7,13 @@ exl-id: 4e9b076e-7429-466b-bb53-2164da379650
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 91%
+ht-degree: 95%
 
 ---
 
-# Texte (Markdown) {#markdown}
+# Markdown {#markdown}
 
-Quand vous êtes [création](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragment de contenu utilise *markdown* pour vous permettre d’écrire facilement du contenu pour la création de pages et la diffusion sans interface utilisateur :
+Lors de la [création](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md#authoring-your-content), l’éditeur de fragment de contenu utilise la syntaxe *Markdown* pour vous permettre d’écrire facilement du contenu pour la création de pages et la diffusion headless :
 
 ![Éditeur de balisage](/help/sites-cloud/administering/content-fragments/assets/cfm-markdown-01.png)
 
@@ -129,7 +129,7 @@ Vous pouvez utiliser des blocs de citations imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non ordonnée, insérez le symbole &amp;ast; avant les éléments de la liste. Par exemple :
+Pour créer une liste non ordonnée, insérez le symbole * avant les éléments de la liste. Par exemple :
 
     `* item in list`
 
