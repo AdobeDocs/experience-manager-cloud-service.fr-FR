@@ -5,7 +5,7 @@ exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
 source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -186,5 +186,5 @@ Bien qu’il soit recommandé de passer à la partie suivante du parcours de tra
 
 * [Manipulation de base d’AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md) : découvrez les principes de base de l’interface utilisateur d’AEM pour pouvoir naviguer facilement et effectuer les tâches essentielles, comme celles vous permettant de trouver votre contenu.
 * [Identification du contenu à traduire](/help/sites-cloud/administering/translation/rules.md) : découvrez comment les règles de traduction identifient le contenu à traduire.
-* [Configuration de la structure d’intégration de traduction](/help/sites-cloud/administering/translation/integration-framework.md) : découvrez comment configurer la structure d’intégration de traduction pour l’intégrer à des services de traduction tiers.
+* [Configuration du framework d’intégration de la traduction](/help/sites-cloud/administering/translation/integration-framework.md) : découvrez comment configurer le framework d’intégration de la traduction pour l’intégrer à des services de traduction tiers.
 * [Gestion de projets de traduction](/help/sites-cloud/administering/translation/managing-projects.md) : découvrez comment créer et gérer des projets de traduction automatique et humaine dans AEM.
