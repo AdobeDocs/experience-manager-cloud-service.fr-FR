@@ -5,7 +5,7 @@ exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
 source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -23,12 +23,12 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle (2022.5.0) est le 9 juin 2022.
+La date de publication de la version actuelle (2022.5.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 9 juin 2022.
 La prochaine version (2022.6.0) est prévue pour le 30 juin 2022.
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo Présentation de la version de mai 2022 pour un résumé des fonctionnalités ajoutées dans la version 2022.5.0 :
+Consultez la vidéo Aperçu de la version de mai 2022 pour obtenir un résumé des fonctionnalités ajoutées dans la version 2022.5.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/343321/?quality=12)
 
@@ -36,29 +36,29 @@ Regardez la vidéo Présentation de la version de mai 2022 pour un résumé des 
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Sites] {#prerelease-features-sites}
 
-* Diverses fonctionnalités de GraphQL
-* A [nouvelle console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) optimisé pour une utilisation sans affichage des fragments de contenu
+* Diverses fonctionnalités GraphQL
+* [Nouvelle console](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) optimisée pour une utilisation headless des fragments de contenu
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* [Imagerie dynamique Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) prend désormais en charge le format de fichier AVIF. Améliorez davantage la Google Core Web Vital (avec la plus grande peinture contextuelle), l’AVIF offrant une réduction de taille supplémentaire de 20 % par rapport à WebP. Au total, l’AVIF offre une réduction de taille moyenne de 41 % sur le JPEG (dans certaines images même si elle atteint 76 %).
+* L’[imagerie dynamique Dynamic Media](https://medium.com/adobetech/one-solution-fits-all-smart-imaging-with-aem-dynamic-media-be690b62df9f) prend désormais en charge le format de fichier AVIF. Améliorez davantage les Signaux Web essentiels de Google (Largest Contentful Paint) avec l’AVIF, qui offre une réduction de taille supplémentaire de 20 % par rapport à WebP. Au total, l’AVIF offre une réduction de taille moyenne de 41 % sur le JPEG (pouvant aller jusqu’à 76 % dans certaines images).
 
-* [!UICONTROL Experience Manager Assets Brand Portal] exécute désormais des tâches automatiques toutes les douze heures afin de supprimer toutes les ressources Brand Portal publiées sur AEM. Par conséquent, vous n’avez pas besoin de supprimer manuellement les ressources du dossier Contribution pour que la taille du dossier reste inférieure à la limite de seuil. [Nouveautés d’Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr).
+* [!UICONTROL Experience Manager Assets Brand Portal] exécute désormais des tâches automatiques toutes les douze heures afin de supprimer toutes les ressources Brand Portal publiées sur AEM. Par conséquent, vous n’avez pas besoin de supprimer manuellement les ressources du dossier Contribution pour que la taille du dossier reste inférieure à la limite de seuil. [Nouveautés d’Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=fr).
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#prerelease-features-assets}
 
-Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sensei AI pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion ;](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs, comprises entre 1 et 4, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
+Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Adobe Sensei pour [faire la distinction entre les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion](/help/assets/color-tag-images.md). Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image. Vous pouvez configurer le nombre de couleurs, comprises entre 1 et 14, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs.
 
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-* **Intégration de Forms adaptatif à Microsoft® Power Automate**: Vous pouvez désormais configurer un formulaire adaptatif pour exécuter un flux cloud Microsoft® Power Automate Cloud lors de l’envoi. Le formulaire adaptatif configuré envoie les données, les pièces jointes et le document d’enregistrement capturés à Power Automate Cloud Flow pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client.
+* **Intégrer des formulaires adaptatifs à Microsoft® Power Automate** : vous pouvez désormais configurer un formulaire adaptatif pour exécuter un flux cloud Microsoft® Power Automate lors de l’envoi. Le formulaire adaptatif configuré envoie les données capturées, les pièces jointes et le document d’enregistrement au flux Cloud Power Automate pour traitement. Il vous permet de créer une expérience de capture de données personnalisée tout en tirant parti de la puissance de Microsoft® Power Automate pour élaborer des logiques commerciales autour des données capturées et automatiser les workflows client.
 
-* **Assistant de création d’un formulaire adaptatif**: Vous pouvez utiliser l’assistant convivial destiné aux entreprises pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
+* **Assistant de création d’un formulaire adaptatif** : vous pouvez utiliser l’assistant convivial destiné aux utilisateurs professionnels pour créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
    ![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png)
 
@@ -79,13 +79,13 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 
 ### Nouveautés {#what-is-new-foundation}
 
-* L’option &quot;Ajouter une arborescence&quot; sous l’écran de l’administrateur de l’agent de réplication **Onglet Répartir**, précédemment annoncé comme obsolète, sera supprimé le 20 juin 2022 ou peu de temps après. Les modules avec une arborescence de contenu doivent plutôt être répliqués à l’aide de [Gérer la publication](/help/operations/replication.md#manage-publication) ou le [Processus de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow).
+* L’option « Ajouter une arborescence » sous l’**onglet Distribution** de l’écran de l’administrateur d’agent de réplication, précédemment annoncée comme obsolète, sera supprimée le 20 juin 2022 ou peu de temps après. Les modules avec arborescence de contenu doivent plutôt être répliqués à l’aide des workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow).
 
-* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu de plus de 10 Mo (noeuds avec des propriétés, sans inclure les fichiers binaires) est obsolète et sera appliquée le 12 septembre 2022 ou peu de temps après. Au lieu de cela, [Gérer la publication](/help/operations/replication.md#manage-publication) ou le [Processus de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) doit être utilisé pour répliquer ces modules de contenu volumineux. En juillet, un message d’avertissement s’affiche dans l’écran de l’administrateur de l’agent de réplication. **Onglet Répartir** si vous tentez de répliquer ces packages de contenu volumineux et également dans le journal d’erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces packages de contenu volumineux. En septembre, les avertissements seront remplacés par des erreurs. Ajustez vos processus en conséquence.
+* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu de plus de 10 Mo (nœuds avec propriétés, sans inclure les fichiers binaires) est obsolète et sera supprimée le 12 septembre 2022 ou peu de temps après. À la place, les workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) seront utilisés pour répliquer ces modules de contenu volumineux. En juillet, un message d’avertissement s’affichera dans l’écran de l’administrateur de l’agent de réplication, sous l’**onglet Distribution**, si vous tentez de répliquer ces modules de contenu volumineux. Il apparaîtra également dans le journal d’erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces modules de contenu volumineux. En septembre, les avertissements seront remplacés par des erreurs. Veuillez ajuster vos processus en conséquence.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Experience Manager] {#prerelease-features-foundation}
 
-* AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
+* AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
 
 ## Couche de sécurité [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation-security}
 
