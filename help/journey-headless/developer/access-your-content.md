@@ -5,7 +5,7 @@ exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1359'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -91,7 +91,7 @@ Pour vraiment accéder à GraphQL pour AEM (et à son contenu), un point d’ent
 
 Le contenu renvoyé, à l’aide de l’API AEM GraphQL, peut ensuite être utilisé par vos applications.
 
-Pour vous aider à saisir et à tester directement des requêtes, une implémentation de l’interface GraphiQL standard est également disponible avec GraphQL AEM (qui peut être installée avec AEM). Elle vous offre des fonctionnalités telles que la mise en surbrillance de la syntaxe, la saisie semi-automatique et la suggestion automatique, ainsi qu’un historique et une documentation en ligne.
+Pour vous aider à saisir et à tester directement des requêtes, une implémentation de l’interface GraphQL standard est également disponible avec GraphQL AEM (qui peut être installée avec AEM). Elle vous offre des fonctionnalités telles que la mise en surbrillance de la syntaxe, la saisie semi-automatique et la suggestion automatique, ainsi qu’un historique et une documentation en ligne.
 
 >[!NOTE]
 >
@@ -243,8 +243,8 @@ Avant de commencer à lancer des requêtes sur votre contenu, suivez les étapes
 
 * Activez votre point d’entrée ;
    * Utilisez Outils -> Général -> GraphQL.
-   * [Activation de votre point d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
-      * Cela permet également d’activer l’IDE GraphiQL.
+   * [Activer votre point d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
+      * Cela permet également d’activer l’IDE GraphiQL.
 
 ### Exemple de structure {#sample-structure}
 
