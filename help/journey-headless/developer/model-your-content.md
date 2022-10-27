@@ -5,7 +5,7 @@ exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -214,7 +214,7 @@ Au tout début, vous devez activer les modèles de fragment de contenu pour votr
 >
 >Voir Ressources supplémentaires – Fragments de contenu dans l’explorateur de configurations
 
-Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez effectuer cette opération sous **Outils** -> **Général** -> **Modèles de fragment de contenu**. Par exemple :
+Ensuite, les modèles de fragments de contenu peuvent être créés et la structure définie. Vous pouvez effectuer cette action sous **Outils** -> **Général** -> **Modèles de fragment de contenu**. Par exemple :
 
 ![Modèle de fragment de contenu ](assets/cfm-model.png)
 
