@@ -7,7 +7,7 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: 5937ee8328be1af7e7f3f4765e24d65b074e02f1
 workflow-type: tm+mt
 source-wordcount: '1272'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -39,9 +39,9 @@ Consultez les sections relatives à la prise en charge de la plateforme et aux [
 >
 >* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
 >
->* Adobe prend en charge les versions 1.7.4 et ultérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version améliorée du connecteur, voir l’étape 5(a) de [instructions d’installation du connecteur amélioré](workfront-connector-install.md).
+>* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur amélioré. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version du connecteur amélioré, consultez l’étape 5(a) des [instructions d’installation du connecteur amélioré](workfront-connector-install.md).
 >
->* Consultez [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen, voir [Guide Exam](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* Consultez la section [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen, consultez le [Guide d’examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 
 ## Comparer les différentes intégrations entre [!DNL Assets] et [!DNL Workfront] {#feature-parity-matrix}
