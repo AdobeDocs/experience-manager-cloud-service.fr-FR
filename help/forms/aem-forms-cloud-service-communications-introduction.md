@@ -5,7 +5,7 @@ exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
 workflow-type: tm+mt
 source-wordcount: '1137'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Un relevé de carte de crédit peut être créé à l’aide des API Communicati
 
 ## Génération de documents
 
-Les API de génération de documents de communication permettent de combiner un modèle (XFA ou PDF) avec des données client (XML) afin de générer des documents dans des formats PDF et d’impression tels que PS, PCL, DPL, IPL et ZPL. Ces API utilisent des modèles PDF et XFA avec des [données XML](communications-known-issues-limitations.md#form-data) pour générer un seul document à la demande ou plusieurs documents à l’aide d’une tâche par lots.
+Les API de génération de documents de communication permettent de combiner un modèle (XFA ou PDF) avec des données client (XML) pour générer des documents aux formats PDF et d’impression tels que PS, PCL, DPL, IPL et ZPL. Ces API utilisent des modèles PDF et XFA avec des [données XML](communications-known-issues-limitations.md#form-data) pour générer un seul document à la demande ou plusieurs documents à l’aide d’un traitement par lots.
 
 En règle générale, vous créez un modèle à l’aide de [Designer](use-forms-designer.md) et utilisez les API Communications pour fusionner les données avec le modèle. Votre application peut envoyer le document de sortie à une imprimante réseau, à une imprimante locale ou à un système de stockage pour archivage. Les workflows standard et personnalisés se présentent comme suit :
 
@@ -101,7 +101,7 @@ Les API de manipulation de documents Communications permettent de combiner, de r
 
 ### Assemblage de documents PDF
 
-Vous pouvez utiliser les API de manipulation de documents pour assembler deux ou plusieurs documents PDF ou XDP en un seul document ou Portfolio de PDF. Vous pouvez assembler des documents PDF de différentes manières, dont voici quelques exemples :
+Vous pouvez utiliser les API de manipulation de documents pour assembler deux documents PDF ou XDP ou plus dans un seul document PDF ou portfolio PDF. Vous pouvez assembler des documents PDF de différentes manières, dont voici quelques exemples :
 
 * Assemblage dans un document PDF unique
 * Création d’un portfolio PDF
@@ -114,7 +114,7 @@ Schéma : assemblage d’un document PDF unique à partir de plusieurs document
 
 ### Désassemblage de documents PDF
 
-Vous pouvez utiliser les API de manipulation de documents pour désassembler un document de PDF. Ces API peuvent extraire des pages du document source ou diviser un document source en fonction de signets. Cette tâche est particulièrement utile lorsque le document PDF d’origine a été créé à partir de plusieurs documents séparés, par exemple un ensemble d’articles.
+Vous pouvez utiliser les API de manipulation de documents pour désassembler un document PDF. Ces API peuvent extraire des pages du document source ou diviser un document source en fonction de signets. Cette tâche est particulièrement utile lorsque le document PDF d’origine a été créé à partir de plusieurs documents séparés, par exemple un ensemble d’articles.
 
 * Extraction de pages d’un document source
 * Division d’un document source en fonction de signets
@@ -124,7 +124,7 @@ Schéma : division d’un document source en plusieurs documents en fonction de
 
 ### Conversion et validation de documents conformes à la norme PDF/A
 
-Vous pouvez utiliser les API de manipulation de documents pour convertir un document de PDF en document conforme au PDF/A et déterminer si un document de PDF est compatible avec le PDF/A. PDF / A est un format d’archivage, prévu pour la conservation sur le long terme du contenu d’un document. Les polices sont incorporées dans le document et le fichier est décompressé. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. De plus, un document PDF/A ne contient aucune donnée audio et vidéo.
+Vous pouvez utiliser les API de manipulation de documents pour convertir un document PDF en document conforme au format PDF/A et déterminer si un document PDF est conforme au format PDF/A. PDF / A est un format d’archivage, prévu pour la conservation sur le long terme du contenu d’un document. Les polices sont incorporées dans le document et le fichier est décompressé. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. De plus, un document PDF/A ne contient aucune donnée audio et vidéo.
 
 ## Types d’API de communication
 
