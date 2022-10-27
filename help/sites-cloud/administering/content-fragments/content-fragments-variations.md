@@ -1,19 +1,19 @@
 ---
 title: Variations – création de contenu de fragment
-description: Découvrez comment les variations vous permettent de créer du contenu pour le fragment, puis de créer des variantes de ce contenu en fonction de vos besoins. Vous bénéficiez ainsi d’une plus grande flexibilité pour la diffusion sans interface utilisateur et la création de pages.
+description: Les variations permettent de créer du contenu pour le fragment, puis de créer des variations de ce contenu selon l’objectif recherché. Vous bénéficiez ainsi d’une plus grande flexibilité pour la diffusion headless et la création de pages.
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
 workflow-type: tm+mt
 source-wordcount: '2310'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
-# Variations – création de contenu de fragment{#variations-authoring-fragment-content}
+# Variations – créer du contenu de fragment{#variations-authoring-fragment-content}
 
-[Variations](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonctionnalité importante des fragments de contenu d’AEM, car ils vous permettent de créer et de modifier des copies du contenu maître pour les utiliser sur des canaux spécifiques et/ou dans des scénarios, ce qui rend la création de pages et la diffusion de contenu sans interface utilisateur de chargement encore plus flexible.
+Les [variations](/help/sites-cloud/administering/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sont une fonction importante des fragments de contenu AEM, car elles permettent de créer et de modifier des copies du contenu principal pour une utilisation sur des canaux et/ou scénarios spécifiques, ce qui rend aussi bien la création de pages que la diffusion de votre contenu découplé encore plus flexible.
 
 À partir de l’onglet **Variations**, vous pouvez :
 
@@ -219,7 +219,7 @@ L’anglais est disponible par défaut.
 D’autres langues sont disponibles en tant que modules de modèle de langues sur le portail Distribution logicielle :
 * [Français (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 * [Allemand (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+* [Italien (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 * [Espagnol (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=fr?package=/content/software-distribution/en/details.html?lang=fr/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
@@ -372,7 +372,7 @@ Il existe différentes méthodes pour ajouter des [images](/help/sites-cloud/adm
 
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
-title="Variations – création de contenu de fragment"
+title="Variations – créer du contenu de fragment"
 abstract="Découvrez comment créer des variantes de contenu à utiliser avec des canaux spécifiques."
 additional-url="https://video.tv.adobe.com/v/333295" text="Variations de fragments de contenu"
 
