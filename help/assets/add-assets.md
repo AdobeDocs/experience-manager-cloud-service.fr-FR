@@ -7,7 +7,7 @@ exl-id: 0e624245-f52e-4082-be21-13cc29869b64
 source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
 workflow-type: tm+mt
 source-wordcount: '3029'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -157,7 +157,7 @@ Un compte ou un compartiment de stockage externe d’Azure ou d’AWS est néces
 
 >[!NOTE]
 >
->Les comptes de stockage externes peuvent avoir des règles de nom de fichier/dossier différentes de celles de l’outil d’importation en bloc. Voir [Gestion des noms de fichier lors de l’importation en bloc](#filename-handling-bulkimport) pour plus d’informations sur les noms interdits/avec échappement.
+>Les comptes de stockage externe peuvent avoir une réglementation en matière de nom de fichier/dossier différente de celle de l’outil Importer en bloc. Consultez [Gestion des noms de fichier lors de l’importation en bloc](#filename-handling-bulkimport) pour plus d’informations sur les noms interdits/placés dans une séquence d’échappement.
 
 
 ### Configuration de l’outil d’importation en bloc {#configure-bulk-ingestor-tool}
@@ -186,7 +186,7 @@ Pour configurer l’outil dʼimportation en bloc, procédez comme suit :
 
 1. Sélectionnez le **[!UICONTROL Mode d’importation]**. Les modes suivants sont disponibles : **Ignorer**, **Remplacer** ou **Créer une version**. Le mode par défaut est Ignorer. Dans ce mode, l’outil d’ingestion ignore l’importation d’une ressource si elle existe déjà. Voir la signification de [Remplacer et créer des options de version](#handling-upload-existing-file).
 
-1. Indiquez un chemin d’accès afin de définir un emplacement dans la gestion des ressources numériques où les ressources doivent être importées à l’aide du champ **[!UICONTROL Dossier cible des ressources]**. Par exemple, `/content/dam/imported_assets`.
+1. Indiquez un chemin d’accès afin de définir un emplacement dans la gestion des ressources numériques (DAM) où les ressources doivent être importées à l’aide du champ **[!UICONTROL Dossier cible des ressources]**. Par exemple, `/content/dam/imported_assets`.
 
 1. (Facultatif) Spécifiez le fichier de métadonnées à importer, fourni au format CSV, dans le champ **[!UICONTROL Fichier de métadonnées]**. Spécifiez le fichier CSV dans l’emplacement de l’objet blob source et indiquez le chemin d’accès lors de la configuration de l’outil d’importation en bloc. Le format de fichier CSV référencé dans ce champ est identique à celui du format de fichier CSV lorsque vous [Importez et exportez des métadonnées de ressources en bloc](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/metadata-import-export.html?lang=fr). Si vous sélectionnez lʼoption **Supprimer le fichier source après lʼimportation**, filtrez les fichiers CSV à l’aide des champs **Exclure** ou **Inclure le type MIME** ou **Filtrer par chemin dʼaccès/fichier**. Vous pouvez utiliser une expression régulière pour filtrer les fichiers CSV dans ces champs.
 
@@ -224,12 +224,12 @@ Lors de l’importation en bloc, [!DNL Experience Manager] recherche les dossier
 
 **Noms interdits dans l’importation en bloc**
 
-Les caractères suivants ne sont pas autorisés dans les noms de fichier et de dossier :
+Les caractères suivants ne sont pas autorisés dans les noms de fichier et de dossier :
 
 * Caractères de contrôle et d’utilisation privée (0x00 à 0x1F, \u0081, \uE000)
 * Noms de fichiers ou de dossiers se terminant par un point (.)
 
-Les fichiers ou les dossiers dont les noms correspondent à ces conditions sont ignorés pendant le processus d’importation et marqués comme échoués.
+Les fichiers ou les dossiers dont les noms correspondent à ces conditions sont ignorés pendant le processus d’importation et marqués comme un échec.
 
 **Gestion du nom des ressources dans l’importation en bloc**
 
