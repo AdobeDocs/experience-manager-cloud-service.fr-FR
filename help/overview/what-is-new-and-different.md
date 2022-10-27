@@ -5,7 +5,7 @@ exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
 workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 92%
+ht-degree: 93%
 
 ---
 
@@ -150,7 +150,7 @@ Les opérations sont également très différentes du fait des éléments suivan
 
 >[!TIP]
 >
->Pour obtenir un aperçu complet du processus d’intégration, reportez-vous à la section [parcours d’intégration.](/help/journey-onboarding/overview.md)
+>Pour obtenir un aperçu complet du processus d’intégration, reportez-vous à la section [Parcours d’intégration](/help/journey-onboarding/overview.md).
 
 ## Développement {#developing}
 
