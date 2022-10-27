@@ -7,7 +7,7 @@ exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
 source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
 workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -29,12 +29,12 @@ Par exemple, supposons que vous souhaitez présenter les images d’une casquett
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources avec l’interface utilisateur tactile](/help/assets/manage-digital-assets.md).
 
-Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
+Lorsque vous créez un ensemble d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
 
 | Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
 | Nombre de ressources en double par ensemble | Aucun doublon | 20 |
-| Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+| Nombre maximal d’images par ensemble | 5 à 10 images par ensemble | 1000 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
@@ -136,12 +136,12 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 >
 >Les visionneuses d’images ne sont pas prises en charge pour les ressources dont le nom de fichier contient une virgule « , ».
 
-Lorsque vous créez une visionneuse d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
+Lorsque vous créez un ensemble d’images, Adobe recommande les bonnes pratiques suivantes et applique les limites suivantes :
 
 | Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
 | Nombre de ressources en double par ensemble | Aucun doublon | 20 |
-| Nombre maximal d’images par visionneuse | 5 à 10 images par visionneuse | 1000 |
+| Nombre maximal d’images par ensemble | 5 à 10 images par ensemble | 1000 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
