@@ -5,7 +5,7 @@ exl-id: d631d6df-7507-4752-862b-9094af9759a0
 source-git-commit: ba4e2427873fc9f5d91ee4f520df01018000a4c7
 workflow-type: tm+mt
 source-wordcount: '1851'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Ce document décrit comment utiliser Maven pour gérer ces tâches. Cependant, i
 
 >[!NOTE]
 >
->Package **création** est désormais détenu par la variable [Module externe Apache Jackrabbit FileVault Package Maven.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
->* Le `content-package-maven-plugin` ne prend plus en charge les packages à partir de la version 1.0.2.
->* Cet article décrit la **déploiement** Le module externe Maven de module de contenu de l’Adobe effectue le des modules construits vers AEM.
+>La **création** de packages incombe désormais au [plug-in Maven Apache Jackrabbit FileVault.](https://jackrabbit.apache.org/filevault-package-maven-plugin/)
+>* Le `content-package-maven-plugin` ne prend plus en charge les packages à partir de la version 1.0.2.
+>* Cet article décrit comment le **déploiement** des packages construits dans AEM est effectué par le plug-in Maven Content Package d’Adobe.
 
 
 ## Modules et structure de projet AEM {#aem-project-structure}
