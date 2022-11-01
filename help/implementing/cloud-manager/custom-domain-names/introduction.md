@@ -2,10 +2,10 @@
 title: Introduction aux noms de domaine personnalisés
 description: L’interface utilisateur Cloud Manager permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: fe08925c86a82a600eabd5a7d4ad6e38b3e76dfe
+source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 92%
+source-wordcount: '665'
+ht-degree: 84%
 
 ---
 
@@ -64,3 +64,7 @@ L’ajout d’un nom de domaine personnalisé nécessite une interaction entre l
 | 5 | Vérifiez le statut de l’enregistrement DNS | Client | [Vérification du statut de l’enregistrement DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5a | Si le statut de l’enregistrement DNS échoue avec `DNS status not detected` | Client | [Vérification du statut de l’enregistrement DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
 | 5b | Si le statut de l’enregistrement DNS échoue avec `DNS resolves incorrectly` | Client | [Vérification du statut de l’enregistrement DNS](/help/implementing/cloud-manager/custom-domain-names/check-dns-record-status.md) |
+
+>[!TIP]
+>
+>La configuration de noms de domaine personnalisés avec AEM as a Cloud Service est généralement un processus simple. Cependant, il peut arriver que des problèmes de délégation de domaine se produisent, ce qui peut prendre entre 1 et 2 jours ouvrables. Pour cette raison, il est vivement recommandé d’installer les domaines bien avant leur date d’activation. Voir le document [Vérification de l’état du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
