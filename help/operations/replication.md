@@ -2,9 +2,9 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 30428716603a53f3a549a18541de593bbfe879df
+source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
 workflow-type: tm+mt
-source-wordcount: '1258'
+source-wordcount: '1262'
 ht-degree: 99%
 
 ---
@@ -84,7 +84,7 @@ Vous pouvez également y parvenir en créant un modèle de workflow qui utilise 
 * `enableVersion` (valeur booléenne, valeur par défaut : `true`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
 * `agentId` (valeur de chaîne, la valeur par défaut signifie que seuls les agents pour la publication sont utilisés). Il est recommandé d’être explicite concernant agentId ; par exemple, attribuez-lui la valeur : publier. L’application à l’agent de la valeur `preview` entraîne la publication sur le service d’aperçu.
 * `filters` (valeur de chaîne, valeur par défaut, tous les chemins sont activés). Les valeurs disponibles sont les suivantes :
-   * `onlyActivated` : seuls les chemins marqués comme activés seront activés.
+   * `onlyActivated` : active uniquement les pages qui ont (déjà) été activées. Cette option agit, en quelque sorte, comme une réactivation.
    * `onlyModified` : activez uniquement les chemins déjà activés et dont la date de modification est postérieure à la date d’activation.
    * Vous pouvez utiliser la commande OU avec une barre verticale « | ». Par exemple, `onlyActivated|onlyModified`.
 
