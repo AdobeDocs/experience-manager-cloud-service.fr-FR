@@ -3,9 +3,9 @@ title: Notes de mise à jour de Cloud Manager 2022.7.0 dans Adobe Experience�
 description: Consultez les notes de mise à jour de Cloud Manager 2022.7.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: c19e4efb-69d6-4915-9e63-c47cd91e941b
-source-git-commit: 1ec1b3f58f7614140d584d3bc7fc113527d6511d
-workflow-type: ht
-source-wordcount: '200'
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
+workflow-type: tm+mt
+source-wordcount: '173'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,6 @@ La date de publication de Cloud Manager version 2022.7.0 dans AEM as a Cloud 
 ## Nouveautés {#what-is-new}
 
 * Les utilisateurs de Cloud Manager peuvent désormais accéder à des tutoriels vidéo utiles à partir de la vignette **Bienvenue** de la page de destination à tout moment.
-* La fenêtre contextuelle sous l’onglet **[Restaurer le contenu](/help/operations/backup.md)** de la page de détails des environnements affiche désormais une liste pratique des commandes Git permettant à l’utilisateur d’afficher localement les modifications.
 
 ## Correctifs {#bug-fixes}
 

@@ -3,9 +3,9 @@ title: Notes de mise à jour de Cloud Manager 2022.6.0 dans Adobe Experience�
 description: Consultez les notes de mise à jour de Cloud Manager 2022.6.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 0a348836-74cd-4fd4-aef4-6ffbd6483c24
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: e05c2fa2cfb035ed363e2c80d4aac33b022bd435
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '313'
 ht-degree: 100%
 
 ---
@@ -24,8 +24,6 @@ La date de mise à jour de Cloud Manager version 2022.6.0 dans AEM as a Clo
 
 ## Nouveautés {#what-is-new}
 
-* L’interface utilisateur de Cloud Manager permet désormais la [restauration de contenu en libre-service](/help/operations/backup.md) vers un état adapté de l’environnement AEM Cloud.
-   * Cette fonctionnalité sera déployée par étapes au cours des semaines postérieures à la mise à jour de la version 2022.06.0.
 * Une nouvelle carte de bienvenue sur la page de destination de Cloud Manager permet aux utilisateurs d’accéder rapidement aux tutoriels d’intégration et aux mesures de progression liées au client.
    * Cette fonctionnalité sera déployée progressivement au cours de la semaine suivant la publication de la version 2022.06.0.
 * Les utilisateurs disposant des autorisations requises peuvent accéder au nouveau [Tableau de bord des licences](/help/implementing/cloud-manager/license-dashboard.md) sur la page de destination de Cloud Manager pour afficher les détails des droits disponibles pour le client.
