@@ -8,9 +8,9 @@ user-guide-description: Ressources d’aide autonome et liens vers la documentat
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 733a4e6a4b4d485a36bcc2b9f043bd6295920bb9
+source-git-commit: 435d42e750f868970bed8f6b3f30a2762c5ce395
 workflow-type: tm+mt
-source-wordcount: '3725'
+source-wordcount: '3728'
 ht-degree: 99%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 99%
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
+         + [Notes de mise à jour de la version 2022.10.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-10-0.md)
          + [Notes de mise à jour de la version 2022.9.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-9-0.md)
          + [Notes de mise à jour de la version 2022.8.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-8-0.md)
          + [Notes de mise à jour de la version 2022.7.0](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-2022-7-0.md)
@@ -223,7 +224,7 @@ ht-degree: 99%
          + [Rechercher](/help/sites-cloud/authoring/getting-started/search.md)
          + [Configuration de l’environnement du compte](/help/sites-cloud/authoring/getting-started/account-environment.md)
          + [Votre boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md)
-         + [Raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
+         + [Raccourcis clavier ](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
       + [Parcours de création de contenu découplé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/journeys/author/overview.html?lang=fr)
       + Principes de création {#fundamentals}
          + [Environnement et outils](/help/sites-cloud/authoring/fundamentals/environment-tools.md)
@@ -348,7 +349,7 @@ ht-degree: 99%
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exporter des fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
-      + [Intégration à Adobe Campaign ](/help/sites-cloud/integrating/campaign.md)
+      + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Ressources {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
    + [Aperçu et nouveautés](/help/assets/overview.md)
@@ -428,7 +429,7 @@ ht-degree: 99%
       + [Archive de newsletter sur Dynamic Media par Experience League](/help/assets/dynamic-media/dynamic-media-newsletter.md)
       + [Configuration de Dynamic Media](/help/assets/dynamic-media/administering-dynamic-media.md)
       + [Utilisation de Dynamic Media](/help/assets/dynamic-media/dynamic-media.md)
-      + [Configurez Dynamic Media](/help/assets/dynamic-media/config-dm.md)
+      + [Configurez Dynamic Media ](/help/assets/dynamic-media/config-dm.md)
       + [Facultatif - Configuration de Dynamic Media, paramètres généraux](/help/assets/dynamic-media/dm-general-settings.md)
       + [Facultatif - Configuration de Dynamic Media et configuration de la publication](/help/assets/dynamic-media/dm-publish-settings.md)
       + [Résolution des problèmes liés à Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md)
@@ -449,13 +450,13 @@ ht-degree: 99%
       + [Imagerie dynamique avec rapport pixel d’appareil côté client](/help/assets/dynamic-media/client-side-dpr.md)
       + [Gestion des ressources Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
-      + [Prise en charge 3D](/help/assets/dynamic-media/assets-3d.md)
-      + [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
+      + [Prise en charge de la 3D](/help/assets/dynamic-media/assets-3d.md)
+      + [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
       + [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md)
       + [Images panoramiques](/help/assets/dynamic-media/panoramic-images.md)
       + [Visionneuses de médias mixtes](/help/assets/dynamic-media/mixed-media-sets.md)
       + [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md)
-      + [Vidéo  dans Dynamic Media](/help/assets/dynamic-media/video.md)
+      + [Vidéo dans Dynamic Media](/help/assets/dynamic-media/video.md)
       + [Bannières de carrousel](/help/assets/dynamic-media/carousel-banners.md)
       + [Images interactives](/help/assets/dynamic-media/interactive-images.md)
       + [Vidéos interactives](/help/assets/dynamic-media/interactive-videos.md)
@@ -480,7 +481,7 @@ ht-degree: 99%
       + [Installer le [!DNL enhanced connector] pour [!DNL Workfront]](/help/assets/workfront-connector-install.md)
       + [Suppression des dépendances externes pour les installations existantes](/help/assets/remove-external-dependencies.md)
       + [Configurer le  [!DNL enhanced connector]  pour  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
-      + [Mettre à jour [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
+      + [Mise à jour de [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
 + Forms {#forms}
    + [Présentation](/help/forms/home.md)
    + [Fonctions clés](/help/forms/key-features.md)
