@@ -2,9 +2,9 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 73adc2a9cad7f3e5dde723d1b3d695f8cec3ca69
+source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
 workflow-type: tm+mt
-source-wordcount: '1987'
+source-wordcount: '1975'
 ht-degree: 100%
 
 ---
@@ -306,7 +306,7 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
    * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
       * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
       * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une valeur ou supprimer une valeur commune.
-   * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`. Vous devez être prudent lors de la modification de ces champs afin d’éviter toute perte de données.
+   * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.
 
 >[!NOTE]
 >
