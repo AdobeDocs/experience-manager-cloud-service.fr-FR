@@ -1,17 +1,17 @@
 ---
-title: Équipe et profils de produit AEM as a Cloud Service
-description: Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service accordent et limitent l’accès à vos solutions Adobe sous licence.
+title: Équipe et profils de produits AEM as a Cloud Service
+description: Découvrez comment AEM équipe as a Cloud Service et les profils de produits peuvent accorder et limiter l’accès à vos solutions d’Adobe sous licence.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: d4786b5d527092027e8e825d0a2475a8be6a710a
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 89%
+source-wordcount: '748'
+ht-degree: 74%
 
 ---
 
-# Équipe et profils de produit AEM as a Cloud Service {#product-profiles}
+# Équipe et profils de produits AEM as a Cloud Service {#product-profiles}
 
-Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service accordent et limitent l’accès à vos solutions Adobe sous licence.
+Découvrez comment AEM équipe as a Cloud Service et les profils de produits peuvent accorder et limiter l’accès à vos solutions d’Adobe sous licence.
 
 ## Profils de produit {#profiles}
 
@@ -31,7 +31,9 @@ Vos membres d’équipe d’AEM as a Cloud Service seront ajoutés et affect
 
 >[!NOTE]
 >
->Chaque utilisateur affecté à un profil de produit AEM as a Cloud Service a un accès (lecture seule) à Cloud Manager.
+>Chaque utilisateur affecté à un profil de produit as a Cloud Service AEM dispose d’un accès en lecture seule à Cloud Manager via le **Utilisateur de Cloud Manager** rôle.
+>
+>Utilisateurs avec uniquement la variable **Utilisateur de Cloud Manager** Le rôle peut se connecter à Cloud Manager et accéder aux environnements de création AEM (s’ils existent) à l’aide de la fonction **Programmes** options de menu. Le **Utilisateur de Cloud Manager** Le rôle n’est pas suffisant pour accéder aux détails du programme. Si cet accès est nécessaire, les utilisateurs doivent recevoir des rôles supplémentaires de la part de leur administrateur système.
 
 >[!TIP]
 >

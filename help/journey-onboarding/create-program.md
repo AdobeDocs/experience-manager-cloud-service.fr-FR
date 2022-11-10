@@ -3,10 +3,10 @@ title: Créer un programme
 description: Découvrez comment utiliser Cloud Manager pour créer votre premier programme.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 97%
+source-wordcount: '604'
+ht-degree: 95%
 
 ---
 
@@ -38,10 +38,6 @@ Il existe deux types de programmes différents :
 * Un **programme sandbox** est généralement créé pour les besoins de formation, à des fins de démonstration, d’activation, de preuve de concept ou de documentation.
 
 Étant donné qu’ils servent des objectifs différents, les différents environnements disposent d’options différentes. Cependant, leur processus de création est similaire. Pour ce parcours d’intégration, nous allons créer un environnement de sandbox.
-
->[!NOTE]
->
->Par défaut, un utilisateur ayant accès à un environnement AEM dispose également du rôle Cloud > Manager User . Ce rôle en lui-même n’est pas suffisant pour donner à l’utilisateur l’accès à la vue des détails du programme. Un utilisateur disposant uniquement du rôle d’utilisateur Cloud Manager peut accéder à l’URL de création de l’environnement AEM (s’il existe des environnements) à l’aide des options de menu du programme. Ces utilisateurs doivent contacter leur administrateur s’ils souhaitent obtenir l’accès au niveau du programme.
 
 ## Créer un programme sandbox {#create-sandbox}
 
@@ -75,3 +71,4 @@ Suivez les autres ressources pour en savoir plus sur les aspects suivants :
 * [Créer des programmes sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) : découvrez comment utiliser Cloud Manager pour créer votre propre programme sandbox à des fins de formation, de démonstration, de preuve de concept ou à d’autres fins hors production.
 * [Créer des programmes de production](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) : découvrez comment utiliser Cloud Manager pour créer votre propre programme de production afin d’héberger le trafic en direct.
 * [Utiliser Adobe Cloud Manager - Programmes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/programs.html?lang=fr) : les programmes Cloud Manager représentent des ensembles d’environnements AEM prenant en charge des ensembles logiques d’initiatives professionnelles, correspondant généralement à un contrat de niveau de service (SLA) acheté.
+* [AEM équipe as a Cloud Service et profils de produits](/help/onboarding/aem-cs-team-product-profiles.md) - Découvrez comment AEM équipe as a Cloud Service et les profils de produits peuvent accorder et limiter l’accès à vos solutions d’Adobe sous licence.

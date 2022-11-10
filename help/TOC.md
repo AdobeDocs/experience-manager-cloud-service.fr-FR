@@ -8,9 +8,9 @@ user-guide-description: Ressources d’aide autonome et liens vers la documentat
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 435d42e750f868970bed8f6b3f30a2762c5ce395
+source-git-commit: d310b48d3abe8ffba2f25a27899cd042a186db84
 workflow-type: tm+mt
-source-wordcount: '3728'
+source-wordcount: '3739'
 ht-degree: 99%
 
 ---
@@ -145,7 +145,6 @@ ht-degree: 99%
       + [Attribuer des profils de produit AEM](/help/journey-onboarding/assign-profiles-aem.md)
       + [Tâches du développeur et du responsable de déploiement](/help/journey-onboarding/developers.md)
       + [Tâches utilisateur d’AEM](/help/journey-onboarding/aem-users.md)
-      + [Groupes d’utilisateurs](/help/journey-onboarding/user-groups.md)
    + Parcours complémentaire des démonstrations de référence d’AEM {#demo-add-on}
       + [Présentation](/help/journey-sites/demos-add-on/overview.md)
       + [Installation](/help/journey-sites/demos-add-on/installation.md)
@@ -156,6 +155,7 @@ ht-degree: 99%
    + Autres concepts d’intégration {#concepts}
       + [Présentation de Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [Équipe et profils de produits AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
+      + [Groupes d’utilisateurs de notifications](/help/journey-onboarding/user-groups.md)
 + Parcours de migration d’AEM as a Cloud Service {#migration-journey}
    + [Prise en main du déplacement d’AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Phase de préparation](/help/journey-migration/readiness.md)
@@ -899,6 +899,7 @@ ht-degree: 99%
    + [Opérations et maintenance sur AEM as a Cloud Service](/help/operations/home.md)
    + [Recherche et indexation de contenu](/help/operations/indexing.md)
    + [Service de réplication de contenu](/help/operations/replication.md)
+   + [Surveillance des infrastructures et des services dans AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Tâches de maintenance](/help/operations/maintenance.md)
    + [Sauvegarde et restauration](/help/operations/backup.md)
    + [Tâches asynchrones](/help/operations/asynchronous-jobs.md)

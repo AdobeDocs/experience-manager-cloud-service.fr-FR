@@ -3,10 +3,10 @@ title: Accéder à Cloud Manager
 description: Découvrez comment accéder à Cloud Manager afin de pouvoir configurer les ressources de votre projet.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: fbf1e0b7cefb1dc981d7ee106283280fb2225007
+source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 98%
+source-wordcount: '1055'
+ht-degree: 97%
 
 ---
 
@@ -32,10 +32,6 @@ Cloud Manager est un composant essentiel d’AEM as a Cloud Service et constitue
 En règle générale, un membre de l’équipe affecté au profil de produit **Propriétaire de l’entreprise** est chargé d’ajouter vos ressources cloud telles que les programmes et les environnements. Cette personne comprend les besoins de l’entreprise et effectue la configuration initiale de Cloud Manager.
 
 Pour les besoins de ce parcours d’intégration, vous (en tant qu’administrateur système) êtes déjà affecté au profil de produit **Propriétaire de l’entreprise** et configurerez les ressources cloud. Selon les exigences réelles du projet, les propriétaires d’entreprise peuvent être ou non les mêmes que l’administrateur système.
-
->[!NOTE]
->
->Par défaut, un utilisateur ayant accès à un environnement AEM dispose également du rôle Cloud > Manager User . Ce rôle en lui-même n’est pas suffisant pour donner à l’utilisateur l’accès à la vue des détails du programme. Un utilisateur disposant uniquement du rôle d’utilisateur Cloud Manager peut accéder à l’URL de création de l’environnement AEM (s’il existe des environnements) à l’aide des options de menu du programme. Ces utilisateurs doivent contacter leur administrateur s’ils souhaitent obtenir l’accès au niveau du programme.
 
 ## Accédez à Cloud Manager en tant qu’administrateur système et propriétaire de l’entreprise {#access-sysadmin-bo}
 
@@ -138,3 +134,4 @@ Suivez les autres ressources pour en savoir plus sur les aspects suivants :
 
 * [Présentation de Cloud Manager](/help/onboarding/cloud-manager-introduction.md) -
 En savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
+* [AEM équipe as a Cloud Service et profils de produits](/help/onboarding/aem-cs-team-product-profiles.md) - Découvrez comment AEM équipe as a Cloud Service et les profils de produits peuvent accorder et limiter l’accès à vos solutions d’Adobe sous licence.
