@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: b1715c819a6d049c88de8f0bc7061951bbcd5248
+source-git-commit: a8d632818dd0514d63a5cb544e4b64301819483f
 workflow-type: tm+mt
-source-wordcount: '914'
-ht-degree: 15%
+source-wordcount: '896'
+ht-degree: 16%
 
 ---
 
@@ -14,10 +14,6 @@ ht-degree: 15%
 # Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
-
->[!NOTE]
->
->La disponibilité du SDK as a Cloud Service correspondant AEM est retardée, avec une cible du 11 novembre.
 
 >[!NOTE]
 >
