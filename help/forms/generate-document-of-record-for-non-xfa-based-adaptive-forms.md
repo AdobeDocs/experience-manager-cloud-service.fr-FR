@@ -2,10 +2,10 @@
 title: Génération d’un document d’enregistrement pour les formulaires adaptatifs
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 21db238b0808d6131c2a22de3d47ba7f7bd2f48b
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '3659'
-ht-degree: 99%
+source-wordcount: '4100'
+ht-degree: 87%
 
 ---
 
@@ -330,27 +330,35 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
 1. Sélectionnez un panneau (panneau racine) dans le document d’enregistrement, puis appuyez sur ![configurer](assets/configure.png).
 1. Appuyez sur ![dortab](assets/dortab.png). L’onglet Document d’enregistrement s’affiche.
 1. Sélectionnez le modèle par défaut ou un modèle personnalisé pour le rendu du document d’enregistrement. Si vous sélectionnez le modèle par défaut, une vignette d’aperçu du document d’enregistrement s’affiche sous la liste déroulante Modèle.
+1. Si vous sélectionnez un modèle par défaut ou un modèle personnalisé, une partie ou la totalité des propriétés suivantes s’affichent sous l’onglet Document d’enregistrement. Spécifiez les propriétés mentionnées ci-dessous pour définir l’aspect du document d’enregistrement :
 
-   ![brandingtemplate](assets/brandingtemplate.png)
+   1. **Propriétés de base**:
+      * **Modèle**: Si vous choisissez de sélectionner un modèle personnalisé, parcourez une sélection XDP sur votre [!DNL AEM Forms] serveur. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur [!DNL AEM Forms], vous devriez au préalable charger le fichier XDP sur votre serveur [!DNL AEM Forms].
+      * **Couleur d’accentuation** : la couleur dans laquelle le texte de l’en-tête et les lignes de séparation sont affichées dans le document ou l’enregistrement PDF.
+      * **Famille de polices** : famille de polices du texte dans le document d’enregistrement au format PDF.
+      * **Inclure les objets de formulaire qui ne sont pas liés au modèle de données**: La définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans le document d’enregistrement.
+      * **Exclure les champs masqués du document d’enregistrement**: La définition de la propriété identifie les champs masqués à exclure du document d’enregistrement.
+      * **Masquer la description des panneaux**: La définition de la propriété exclut la description du panneau/tableau du document d’enregistrement. Applicable au panneau et au tableau.
 
-   Si vous choisissez de sélectionner un modèle personnalisé, sélectionnez un fichier XDP sur votre serveur [!DNL AEM Forms]. Si vous souhaitez utiliser un modèle qui n’est pas sur votre serveur [!DNL AEM Forms], vous devriez au préalable charger le fichier XDP sur votre serveur [!DNL AEM Forms].
+      ![Propriétés de base](/help/forms/assets/basicpropertiesdor.png)
 
-1. Si vous sélectionnez un modèle par défaut ou un modèle personnalisé, une partie ou la totalité des propriétés suivantes s’affichent sous l’onglet Document d’enregistrement. Spécifiez-les en conséquence :
+   1. **Propriétés des champs de formulaire**:
+      * **Pour les composants Case à cocher et Bouton radio, affichez uniquement les valeurs sélectionnées.**: La définition de la propriété affiche uniquement les valeurs sélectionnées de la case à cocher et du bouton radio dans [!UICONTROL Document d’enregistrement].
+      * **Séparateur pour plusieurs valeurs**: Vous pouvez choisir n’importe quel séparateur, tel qu’une virgule ou un saut de ligne, pour afficher plusieurs valeurs.
+      * **Alignement des options**: Vous pouvez sélectionner l’alignement de votre choix (horizontal, vertical, identique au formulaire adaptatif) pour définir l’alignement des champs (case à cocher ou bouton radio, par exemple) sur lesquels afficher l’affichage. [!UICONTROL Document d’enregistrement]. Par défaut, l’alignement vertical est défini pour les champs de la variable [!UICONTROL Document d’enregistrement]. La définition des propriétés à partir de la propriété [!UICONTROL Propriétés du champ de formulaire] de document d’enregistrement remplace les propriétés définies dans la variable [!UICONTROL Alignement des éléments] pour les champs d’un formulaire adaptatif. Si vous sélectionnez [!UICONTROL Identique au formulaire adaptatif] , l’alignement tel que configuré dans une instance d’auteur de formulaire adaptatif est utilisé pour [!UICONTROL Document d’enregistrement] champs.
+      * **Nombre d&#39;options d&#39;alignement horizontal**: vous pouvez définir le nombre d’options à afficher sur le document d’enregistrement pour l’alignement horizontal.
 
-   * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, sélectionner une image dans le gestionnaire des ressources numériques (DAM) ou en charger une à partir de votre ordinateur.
-   * **Titre du formulaire**
-   * **Texte d’en-tête**
-   * **Libellé de cause de non-responsabilité**
-   * **Clause de non-responsabilité**
-   * **Texte de la clause de non-responsabilité**
-   * **Couleur d’accentuation** : la couleur dans laquelle le texte de l’en-tête et les lignes de séparation sont affichées dans le document ou l’enregistrement PDF
-   * **Famille de polices** : famille de polices du texte dans le document d’enregistrement au format PDF
-   * **Pour les composants de case à cocher et de bouton radio, afficher uniquement les valeurs sélectionnées**
-   * **Séparateur pour plusieurs valeurs sélectionnées**
-   * **Inclure les objets de formulaire qui ne sont pas associés à un modèle de données**
-   * **Exclure les champs masqués du document d’enregistrement**
-   * **Masquer la description des panneaux**
+      ![Propriétés des champs de formulaire](/help/forms/assets/formfieldpropertiesdor.png)
 
+   1. **Propriétés du gabarit de page**:
+      * **Image du logo** : vous pouvez choisir d’utiliser l’image du logo à partir du formulaire adaptatif, sélectionner une image dans le gestionnaire des ressources numériques (DAM) ou en charger une à partir de votre ordinateur.
+      * **Titre du formulaire**: Titre du DE.
+      * **Texte d’en-tête**: Texte qui apparaît dans la section d’en-tête du document d’enregistrement.
+      * **Libellé de la clause de non-responsabilité**: Libellé de la clause de non-responsabilité.
+      * **Clause de non-responsabilité**: Texte spécifiant la portée des droits et des obligations sur le document d’enregistrement.
+      * **Texte de la clause de non-responsabilité**: Texte de la clause de non-responsabilité.
+
+      ![Propriétés du gabarit de page ](/help/forms/assets/masterpagepropertiesdor.png)
    >[!NOTE]
    >
    >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à la version 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous de la présence des éléments suivants dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :
@@ -367,7 +375,30 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
    </proto>
    ```
 
-1. Pour enregistrer les modifications d’identité graphique, appuyez sur Terminé.
+1. Pour enregistrer les modifications de marque, appuyez sur **[!UICONTROL Terminé]**.
+
+## Prise en charge des documents d’enregistrement dans l’éditeur de formulaire adaptatif {#dor-support-in-adaptiveform}
+
+Vous pouvez configurer la variable [!UICONTROL Document d’enregistrement] modèle directement à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif.
+
+Effectuez les étapes suivantes à partir de l’instance d’auteur de l’éditeur de formulaire adaptatif :
+
+1. Sélectionnez la **[!UICONTROL Conteneur de formulaires adaptatifs (racine)]** composant.
+1. Cliquez sur ![Icône Configurer](/help/forms/assets/configure-icon.svg) pour ouvrir la **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.
+1. Ouvrez le **[!UICONTROL Modèle de document d’enregistrement]** et sélectionnez l’une des options suivantes :
+   * **[!UICONTROL Aucun]**: Lorsque cette option est sélectionnée, la valeur [!UICONTROL Document d’enregistrement] modèle créé pour votre formulaire adaptatif.
+
+   * **[!UICONTROL Associer le modèle de formulaire comme modèle de document d’enregistrement]**:lorsque cette option est sélectionnée, le formulaire XFA est utilisé comme modèle de document d’enregistrement.
+
+   * **[!UICONTROL Générer un document d’enregistrement]**: Lorsque cette option est sélectionnée, la variable [!UICONTROL Document d’enregistrement] est généré automatiquement pour votre formulaire adaptatif.
+
+1. Appuyez sur ![Enregistrer](/help/forms/assets/check-button.png) pour enregistrer les propriétés.
+
+![Prise en charge des modèles de document d’enregistrement](/help/forms/assets/dor-templatesupport.png)
+
+>[!NOTE]
+>
+>When [!UICONTROL Document d’enregistrement] est créé à l’aide d’un éditeur de modèle de formulaire adaptatif, alors seules deux options sont disponibles sous [!UICONTROL Modèle de document d’enregistrement] Onglet comme [!UICONTROL Aucun] et [!UICONTROL Générer un document d’enregistrement].
 
 ## Mises en page de tableau et de colonne pour les panneaux d’un document d’enregistrement {#table-and-column-layouts-for-panels-in-document-of-record}
 

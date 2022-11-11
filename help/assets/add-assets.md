@@ -4,10 +4,10 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 1ef60a024d6ffe704ef48df97ca998af3cd6b8a8
+source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
 workflow-type: tm+mt
-source-wordcount: '3029'
-ht-degree: 100%
+source-wordcount: '3064'
+ht-degree: 93%
 
 ---
 
@@ -21,9 +21,9 @@ Outre la méthode la plus courante qui consiste à utiliser le navigateur, il ex
 
 [!DNL Experience Manager] permet de charger et de gérer n’importe quel fichier binaire. Cependant, les formats de fichiers les plus courants prennent en charge des services supplémentaires, tels que l’extraction de métadonnées ou la génération d’aperçus et de rendus. Pour plus d’informations, reportez-vous aux [formats de fichiers pris en charge](file-format-support.md).
 
-Vous pouvez également choisir d’effectuer un traitement supplémentaire sur les fichiers chargés. Plusieurs profils de traitement de ressources peuvent être configurés sur le dossier dans lequel les ressources sont chargées, afin d’ajouter des services de traitement des images, des rendus ou des métadonnées spécifiques. Voir [Traitement des ressources lorsqu’elles sont chargées](#process-when-uploaded).
+Vous pouvez également choisir d’effectuer un traitement supplémentaire sur les fichiers chargés. Plusieurs profils de traitement de ressources peuvent être configurés sur le dossier dans lequel les ressources sont chargées afin d’ajouter des métadonnées, des rendus ou des services de traitement d’images spécifiques. Voir [Traitement des ressources lorsqu’elles sont chargées](#process-when-uploaded).
 
-[!DNL Assets] fournit les méthodes de chargement suivantes. Adobe vous recommande de comprendre votre cas d’utilisation et l’applicabilité d’une option de chargement avant de l’utiliser.
+[!DNL Assets] Indiquez les méthodes de chargement suivantes. Adobe vous recommande de comprendre votre cas d’utilisation et l’applicabilité d’une option de chargement avant de l’utiliser.
 
 | Méthode de chargement | Quand l’utiliser ? | Personnage principal |
 |---------------------|----------------|-----------------|
@@ -109,7 +109,7 @@ Vous pouvez charger une ressource avec le même chemin d’accès (même nom et 
    >
    >L’option permettant de remplacer des ressources n’est pas disponible si la ressource est verrouillée ou extraite.
 
-* Créer une autre version : une nouvelle version de la ressource existante est créée dans le référentiel. Vous pouvez afficher les deux versions dans le [!UICONTROL Journal] et revenir à la version précédente si nécessaire.
+* Créer une autre version : une nouvelle version de la ressource existante est créée dans le référentiel. Vous pouvez afficher les deux versions dans la [!UICONTROL Chronologie] et peut revenir à la version précédente si nécessaire.
 * Conserver les deux : si vous choisissez de conserver les deux ressources, la nouvelle ressource est renommée.
 
 Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UICONTROL Conserver]**. Pour supprimer la ressource en double que vous avez chargée, appuyez/cliquez sur **[!UICONTROL Supprimer]**.
@@ -118,7 +118,7 @@ Pour conserver le duplicata de ressource dans [!DNL Assets], cliquez sur **[!UIC
 
 [!DNL Experience Manager Assets] vous empêche de charger des ressources dont le nom de fichier contient des caractères interdits. Si vous essayez de charger une ressource dont le nom de fichier contient un ou plusieurs caractères interdits, [!DNL Assets] affiche un message d’avertissement à ce sujet et interrompt l’opération jusqu’à ce que vous supprimiez les caractères concernés ou utilisiez un nom autorisé.
 
-Pour prendre en compte les conventions d’appellation en vigueur dans votre entreprise, la boîte de dialogue [!UICONTROL Charger les ressources] vous permet de spécifier des noms longs pour les fichiers chargés. Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici et séparés par des espaces) :
+Pour respecter des conventions d’appellation de fichiers spécifiques à votre entreprise, la variable [!UICONTROL Chargement de ressources] vous permet de spécifier des noms longs pour les fichiers que vous chargez. Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici et séparés par des espaces) :
 
 * Caractères non valides pour le nom de dossier de la ressource : `* / : [ \\ ] | # % { } ? &`
 * Caractères non valides pour le nom de dossier de la ressource : `* / : [ \\ ] | # % { } ? \" . ^ ; + & \t`
@@ -133,13 +133,13 @@ L’outil d’ingestion de ressources en masse peut traiter efficacement un trè
 
 Pour charger un plus grand nombre de fichiers, utilisez l’une des méthodes suivantes. Voir aussi les [cas d’utilisation et méthodes](#upload-methods-comparison)
 
-* [API de chargement de ressources](developer-reference-material-apis.md#asset-upload) : utilisez un script ou un outil de chargement personnalisé qui utilise les API pour ajouter un traitement supplémentaire des ressources (par exemple, traduire des métadonnées ou renommer des fichiers), si nécessaire.
+* [API de chargement de ressources](developer-reference-material-apis.md#asset-upload): Utilisez un script ou un outil de chargement personnalisé qui utilise les API pour ajouter une gestion supplémentaire des ressources (par exemple, la traduction des métadonnées ou le changement de nom des fichiers), si nécessaire.
 * Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) : utile pour les professionnels de la création et du marketing qui chargent des ressources depuis leur système de fichiers local. Utilisez-la pour charger des dossiers imbriqués disponibles en local.
 * [Outil d’ingestion en masse](#asset-bulk-ingestor) : utilisez-le pour l’ingestion de grandes quantités de ressources, occasionnellement ou au départ, lors du déploiement de [!DNL Experience Manager].
 
 ### Outil d’importation en bloc de ressources {#asset-bulk-ingestor}
 
-Cet outil est fourni uniquement au groupe des administrateurs pour l’ingestion à grande échelle de ressources à partir de magasins de données Azure ou S3. Consultez la vidéo présentant la configuration et l’ingestion.
+L’outil est fourni uniquement au groupe des administrateurs à utiliser pour l’ingestion à grande échelle de ressources à partir de banques de données Azure ou S3. Consultez la vidéo présentant la configuration et l’ingestion.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329680/?quality=12&learn=on)
 
@@ -171,6 +171,8 @@ Pour configurer l’outil dʼimportation en bloc, procédez comme suit :
 1. Sélectionnez le type de source de données dans la liste déroulante **[!UICONTROL Importer la source]**.
 
 1. Indiquez les valeurs permettant de créer une connexion avec la source de données. Par exemple, si vous sélectionnez **Stockage Azure Blob** comme source de données, spécifiez les valeurs du compte de stockage Azure, du conteneur dʼobjets blob Azure et de la clé d’accès Azure.
+
+1. Sélectionnez le mode d&#39;authentification requis dans la liste déroulante. **Clé d’accès Azure** fournit un accès complet au compte de stockage Azure, tandis que **Azure SAS Token** permet à l’administrateur de limiter les fonctionnalités du jeton à l’aide d’autorisations et de stratégies d’expiration.
 
 1. Indiquez le nom du dossier racine qui contient les ressources de la source de données dans le champ **[!UICONTROL Dossier source]**.
 
@@ -220,7 +222,7 @@ Sélectionnez la configuration et cliquez sur **[!UICONTROL Exécution dʼessai]
 
 Lorsque vous importez des ressources ou des dossiers en bloc, [!DNL Experience Manager Assets] importe toute la structure de ce qui existe dans la source d’import. [!DNL Experience Manager] suit les règles intégrées pour les caractères spéciaux dans les noms de ressources et de dossiers ; par conséquent, ces noms de fichier doivent être assainis. Pour les noms de dossier et de ressource, le titre défini par l’utilisateur reste inchangé et est stocké dans `jcr:title`.
 
-Lors de l’importation en bloc, [!DNL Experience Manager] recherche les dossiers existants pour éviter de réimporter les ressources et les dossiers et vérifie également les règles d’assainissement appliquées dans le dossier parent où l’importation a lieu. Si les règles d’assainissement sont appliquées dans le dossier parent, les mêmes règles sont appliquées à la source d’importation. Pour un nouvel import, les règles d’assainissement suivantes sont appliquées pour gérer les noms de fichiers des ressources et des dossiers.
+Lors de l’importation en bloc, [!DNL Experience Manager] recherche les dossiers existants pour éviter de réimporter les ressources et les dossiers et vérifie également les règles d’assainissement appliquées dans le dossier parent où l’importation a lieu. Si les règles d’assainissement sont appliquées dans le dossier parent, les mêmes règles sont appliquées à la source d’importation. Pour un nouvel import, les règles d’assainissement suivantes sont appliquées pour gérer les noms de fichier des ressources et des dossiers.
 
 **Noms interdits dans l’importation en bloc**
 
@@ -377,7 +379,7 @@ Les détails techniques du protocole et des API de chargement, ainsi que les lie
 
 * Le chargement binaire direct est une nouvelle méthode de chargement de ressources. Il est pris en charge par défaut par les clients et fonctionnalités du produit, comme l’interface utilisateur d’[!DNL Experience Manager], [!DNL Adobe Asset Link] et l’appli de bureau [!DNL Experience Manager]. Le code personnalisé ou étendu par les équipes techniques des clients doit utiliser les nouvelles API et les nouveaux protocoles de chargement.
 
-* Adobe recommande de ne pas ajouter plus de 1 000 ressources par dossier dans [!DNL Experience Manager Assets]. Bien que vous puissiez ajouter d’autres ressources à un dossier, il est possible que vous rencontriez des problèmes de performances, notamment une navigation plus lente vers ces dossiers.
+* Adobe recommande de ne pas ajouter plus de 1 000 ressources par dossier dans [!DNL Experience Manager Assets]. Bien que vous puissiez ajouter d’autres ressources à un dossier, il est possible que vous rencontriez des problèmes de performances tels qu’une navigation plus lente vers ces dossiers.
 
 * Lorsque vous sélectionnez **[!UICONTROL Remplacer]** dans la boîte de dialogue [!UICONTROL Conflit de noms], l’ID de la ressource est régénéré pour la nouvelle ressource. Cet ID est différent de celui de la ressource précédente. Si la fonction [Statistiques sur les ressources](/help/assets/assets-insights.md) est activée pour effectuer le suivi des impressions/clics avec [!DNL Adobe Analytics], l’ID de ressource régénéré invalide les données capturées pour la ressource dans [!DNL Analytics].
 

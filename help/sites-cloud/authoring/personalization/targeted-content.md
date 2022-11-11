@@ -2,10 +2,10 @@
 title: Création de contenu ciblé en mode Ciblage
 description: Le mode Ciblage et le composant cible fournissent des outils permettant de créer du contenu pour les expériences.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
 workflow-type: tm+mt
-source-wordcount: '5342'
-ht-degree: 100%
+source-wordcount: '5414'
+ht-degree: 98%
 
 ---
 
@@ -22,7 +22,25 @@ Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. Le mode Ciblage et
 * Simulez l’expérience utilisateur.
 * Pour une personnalisation plus importante, configurez le composant cible.
 
-Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (pour utiliser Adobe Target, vous devez disposer d’un compte Adobe Target valide). Si vous utilisez Adobe Target, vous devez commencer par configurer l’intégration. Reportez-vous aux instructions pour l’intégration à Adobe Target. <!--See the[instructions for integrating with Adobe Target](/help/sites-administering/target.md).-->
+>[!NOTE]
+>
+>Le mode Ciblage est disponible dans l’éditeur de page et dans l’éditeur de fragments d’expérience.
+>
+>La documentation suivante s’applique aux deux (car ils fonctionnent tous les deux sur la même base), bien qu’elle soit écrite pour l’éditeur de page.
+
+>[!CAUTION]
+>
+>Lors du ciblage dans l’éditeur de page, seuls les composants de fragment d’expérience peuvent être ciblés.
+>
+>D’autres types de composant peuvent être convertis en fragment d’expérience à l’aide de la variable **Convertir en variation de fragment d’expérience** dans la barre d’outils du composant.
+
+<!--
+>Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
+>
+>![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+-->
+
+Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (pour utiliser Adobe Target, vous devez disposer d’un compte d’Adobe Target valide). Si vous utilisez Adobe Target, vous devez commencer par configurer l’intégration. Voir [instructions pour l’intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![Ciblage de contenu](../assets/targeted-content.png)
 
@@ -496,7 +514,7 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
    * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, appuyez ou cliquez sur l’icône de calendrier, sélectionnez une date, puis spécifiez l’heure de fin de l’activité.
 
 1. Pour spécifier la priorité de l’activité, utilisez le curseur pour choisir **Faible**, **Normale** ou **Élevée**.
-1. Si vous avez configuré Adobe Analytics avec votre compte Adobe Target, le menu déroulant de la **source de création de rapports** s’affiche. Sélectionnez **Adobe Target** ou **Adobe Analytics** en tant que source.
+1. Si vous avez configuré Adobe Analytics avec votre compte Adobe Target, le menu déroulant de la **source de création de rapports** s’affiche. Sélectionnez **Adobe Target** ou **Adobe Analytics** en tant que source.
 
    Si vous avez sélectionné **Adobe Analytics**, sélectionnez la société et une suite de rapports. Si vous sélectionnez **Adobe Target**, aucune action n’est nécessaire.
 

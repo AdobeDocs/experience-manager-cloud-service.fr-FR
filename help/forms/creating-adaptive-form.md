@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: bcd9f3cfe6c22a6db51a9e6f96576bb8cdde7d0c
+source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
 workflow-type: tm+mt
-source-wordcount: '1217'
-ht-degree: 30%
+source-wordcount: '1359'
+ht-degree: 27%
 
 ---
 
@@ -64,6 +64,11 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 1. Dans l&#39;onglet Source , sélectionnez un modèle :
 
    * Lorsque vous sélectionnez un modèle modifiable, un thème et une action d’envoi spécifiés dans le modèle sont automatiquement sélectionnés, et l’événement **[!UICONTROL Créer]** est activé. Vous pouvez accéder au **[!UICONTROL Style]** ou **[!UICONTROL Envoi]** onglets pour sélectionner un autre thème ou une autre action d’envoi. Si le modèle modifiable sélectionné ne spécifie pas de thème, le bouton de création reste désactivé. Vous pouvez accéder au **[!UICONTROL Styles]** pour sélectionner manuellement un thème.
+
+      >[!NOTE]
+      >
+      > Vous pouvez également créer des [!UICONTROL Document d’enregistrement] à l’aide d’un éditeur de formulaire adaptatif. Pour plus d’informations, voir [Prise en charge des documents d’enregistrement dans l’éditeur de formulaire adaptatif](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
    * Lorsque vous sélectionnez un modèle statique, les options données, style, envoi, diffusion et aperçu ne sont pas disponibles. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
 
 1. Dans l’onglet Style , sélectionnez un thème :
@@ -159,3 +164,15 @@ Vous pouvez modifier le modèle de formulaire d’un formulaire adaptatif (basé
    * Pour un formulaire adaptatif est basé sur un modèle de formulaire, vous pouvez choisir un autre<!-- form template, --> schéma XML ou JSON, ou un autre modèle de données de formulaire pour le même modèle de formulaire.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer les propriétés.
+
+Vous pouvez également modifier les propriétés du modèle de formulaire à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif.
+
+1. Sélectionnez la **[!UICONTROL Conteneur de formulaires adaptatifs (racine)]** composant.
+1. Cliquez sur ![Icône Configurer](/help/forms/assets/configure-icon.svg) pour ouvrir la **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.
+1. Sélectionnez la **[!UICONTROL Modèle de données]** et effectuez l’une des opérations suivantes :
+
+   * Si le formulaire adaptatif est dépourvu de modèle de formulaire, vous pouvez choisir un modèle de formulaire et sélectionner en conséquence <!-- a form template, --> Schéma XML ou JSON ou modèle de données de formulaire.
+   * Si le formulaire adaptatif est basé sur un modèle de formulaire, vous ne pouvez pas le modifier. Vous pouvez en choisir un autre <!-- form template, --> Schéma XML ou JSON ou modèle de données de formulaire pour le même modèle de formulaire, selon le cas.
+1. Appuyez sur ![Enregistrer](/help/forms/assets/check-button.png) pour enregistrer les propriétés.
+
+![Prise en charge de schéma FDM](/help/forms/assets/fdmsupport.png)

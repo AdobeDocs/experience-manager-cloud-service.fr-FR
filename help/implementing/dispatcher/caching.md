@@ -3,14 +3,14 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: c2160e7aee8ba0b322398614524ba385ba5c56cf
+source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
 workflow-type: tm+mt
-source-wordcount: '2580'
-ht-degree: 71%
+source-wordcount: '2663'
+ht-degree: 69%
 
 ---
 
-# Présentation  {#intro}
+# Présentation {#intro}
 
 Le trafic transite par le réseau de diffusion de contenu vers une couche de serveur web Apache, qui prend en charge les modules, y compris Dispatcher. Afin d’améliorer les performances, Dispatcher est principalement utilisé comme cache pour limiter le traitement sur les noeuds de publication.
 Des règles peuvent être appliquées à la configuration de Dispatcher pour modifier les paramètres d’expiration de cache par défaut, ce qui entraîne la mise en cache sur le réseau de diffusion de contenu. Notez que Dispatcher respecte également les en-têtes d’expiration de cache qui en résultent si `enableTTL` est activé dans la configuration de Dispatcher, ce qui implique qu’il actualisera du contenu spécifique même en dehors du contenu en cours de republication.
@@ -196,6 +196,19 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
 ### Comportement de la requête HEAD {#request-behavior}
 
 Lorsqu’une demande d’HEAD est reçue sur le réseau de diffusion de contenu Adobe pour une ressource qui est **not** mise en cache, la requête est transformée et reçue par Dispatcher et/ou l’instance d’AEM en tant que requête de GET. Si la réponse peut être mise en cache, les requêtes HEAD suivantes seront diffusées à partir du réseau de diffusion de contenu. Si la réponse ne peut pas être mise en cache, les requêtes HEAD suivantes seront transmises à Dispatcher et/ou à l’instance AEM pendant une période qui dépend de la variable `Cache-Control` TTL.
+
+### Paramètres de campagne marketing {#marketing-parameters}
+
+Les URL de site Web incluent souvent des paramètres de campagne marketing qui servent à suivre le succès d’une campagne. Pour utiliser efficacement le cache du Dispatcher, il est recommandé de configurer le `ignoreUrlParams` property as [documenté](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
+
+Le `ignoreUrlParams` ne doit pas être commentée et doit référencer le fichier `conf.dispatcher.d/cache/marketing_query_parameters.any`, qui peut être modifié en supprimant les commentaires des lignes correspondant aux paramètres relatifs à vos canaux marketing. Vous pouvez également ajouter d’autres paramètres.
+
+```
+/ignoreUrlParams {
+{{ /0001 { /glob "*" /type "deny" }}}
+{{ $include "../cache/marketing_query_parameters.any"}}
+}
+```
 
 ## Invalidation du cache du Dispatcher {#disp}
 

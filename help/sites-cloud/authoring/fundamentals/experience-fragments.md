@@ -2,10 +2,10 @@
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 456b754fad3dc2d8f684f344b69d57d47b823b03
+source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 100%
+source-wordcount: '1971'
+ht-degree: 79%
 
 ---
 
@@ -186,7 +186,7 @@ Pour créer un fragment d’expérience :
 
 1. Cliquez sur **Créer**.
 
-   Un message s’affiche. Sélectionnez :
+   Un message s’affiche. Sélectionner:
 
    * **Terminé** pour revenir à la console
    * **Ouvrir** pour ouvrir l’éditeur de fragments
@@ -308,6 +308,62 @@ Lors de la modification d’un fragment d’expérience, les blocs de création 
 
 ![Sélection de blocs de création](/help/sites-cloud/authoring/assets/xf-14.png)
 
+## Personnalisation sur votre fragment d’expérience {#personalization-experience-fragment}
+
+La personnalisation sur votre fragment d’expérience vous permet, en tant que marketeur, de définir une seule fois les audiences cibles du fragment d’expérience, puis de réutiliser le fragment dans n’importe quelle page. Celui-ci :
+
+* élimine la nécessité de spécifier les variations requises pour chaque audience chaque fois que le fragment est utilisé ;
+* maintient le style dans l’ensemble des offres
+
+Vous pouvez créer un fragment d’expérience avec plusieurs composants regroupés dans ce fragment unique. Vous pouvez également créer des variantes du fragment pour chaque segment d’audience spécifique, puis réutiliser ces fragments d’expérience sur les canaux requis.
+
+La personnalisation est réalisée en définissant la variable **Personnalisation** propriétés sur le fragment d’expérience ou la variation, ou le dossier contenant les fragments ; cela signifie que l’héritage peut remplacer les propriétés de personnalisation.
+
+La configuration de ces propriétés active également la propriété **Ciblage** dans l’éditeur de fragments d’expérience.
+
+### Définition de la personnalisation pour votre fragment d’expérience {#defining-personalization-experience-fragment}
+
+Pour personnaliser votre fragment :
+
+1. Accédez à l’emplacement requis dans la **Fragments d’expérience** console.
+
+1. Sélectionnez un dossier ou votre fragment, puis **Propriétés** dans la barre d’outils.
+
+   >[!NOTE]
+   >
+   >Les propriétés de personnalisation définies sur un dossier sont héritées par tous les dossiers enfants, par le biais de la sous-arborescence, et les fragments d’expérience (et leurs variations) au sein de cette sous-arborescence. Ils peuvent être remplacés en rompant l’héritage.
+
+1. Ouvrez le **Personnalisation** pour définir et enregistrer vos paramètres. Par exemple, sur un dossier :
+
+   ![Fragment d’expérience - Propriétés de personnalisation](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
+
+   >[!CAUTION]
+   >
+   >Lorsqu’un fragment est incorporé dans une page Sites, et **Personnalisation** a été configuré, seule la version de personnalisation de la page sera utilisée au moment du rendu de la page.
+   >
+   >Pour que le ciblage effectué sur les composants d’un fragment fonctionne au rendu de la page, les conditions suivantes doivent être remplies :
+   >
+   >Le **Chemin d’accès ContextHub** sélectionné dans le **Personnalisation** doit être :
+   >
+   >* le même chemin que celui configuré pour la page sur laquelle le fragment sera rendu ;
+      >OU:
+   >* un chemin contenant un sous-ensemble des magasins définis dans ContextHub configuré pour la page ;
+
+   >
+   > 
+Le **Chemin d’accès aux segments** sélectionné dans le **Personnalisation** doit être :
+   * chemin d’accès identique à celui configuré pour la page sur laquelle le fragment sera rendu Ou
+   * un chemin contenant un sous-ensemble des segments configurés pour la page ;
+
+
+### Définition du ciblage pour votre fragment d’expérience {#defining-targeting-experience-fragment}
+
+Une fois les propriétés de personnalisation configurées, le mode Ciblage est disponible lorsque le fragment est ouvert pour modification.
+
+![Éditeur de fragment d’expérience - mode Ciblage](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
+
+Ce mode fonctionne de la même manière que pour la modification de pages. Voir [Mode Ciblage pour l’éditeur de page](/help/sites-cloud/authoring/personalization/targeted-content.md) pour plus d’informations.
+
 ## Détails de votre fragment d’expérience {#details-of-your-experience-fragment}
 
 Les détails de votre fragment sont visibles :
@@ -324,10 +380,8 @@ Les détails sont affichés dans toutes les vues de la console **Éditeur de Fra
    Les propriétés sont disponibles dans plusieurs onglets :
 
    >[!CAUTION]
-   >
-   >Ces onglets s’affichent lorsque vous ouvrez les **propriétés** à partir de la console Fragments d’expérience.
-   >
-   >Si vous **ouvrez les propriétés** lors de la modification d’un fragment d’expérience, les [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriées s’affichent.
+   Ces onglets s’affichent lorsque vous ouvrez les **propriétés** à partir de la console Fragments d’expérience.
+   Si vous **ouvrez les propriétés** lors de la modification d’un fragment d’expérience, les [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriées s’affichent.
 
    ![Propriétés du fragment d’expérience](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -356,8 +410,7 @@ Les détails sont affichés dans toutes les vues de la console **Éditeur de Fra
 Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut à partir du navigateur.
 
 >[!NOTE]
->
->Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publication de fragments d’expérience {#publishing-experience-fragments}
 
