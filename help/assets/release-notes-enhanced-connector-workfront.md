@@ -2,9 +2,9 @@
 title: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8bcfcae211b2203915e7facc361188a0f5739547
+source-git-commit: 31198a1279e07d0a1afe41100d3cfe59d02fd686
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '830'
 ht-degree: 52%
 
 ---
@@ -57,7 +57,7 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
          `200` car le code de réponse signifie la suppression réussie des abonnements d’événements incorrects.
    >[!NOTE]
    >
-   >Si vous avez déjà supprimé les mauvais abonnements aux événements avant d’exécuter les étapes mentionnées dans cette procédure, vous pouvez ignorer l’étape 4.
+   >Si vous avez déjà supprimé les mauvais abonnements aux événements avant d’exécuter les étapes mentionnées dans cette procédure, vous pouvez ignorer la dernière étape de cette procédure.
 
 
 >[!IMPORTANT]
