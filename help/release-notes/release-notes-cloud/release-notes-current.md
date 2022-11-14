@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: ac209259b8e8ac7c1734c0662dd640809b4e2932
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 16%
+source-wordcount: '1107'
+ht-degree: 13%
 
 ---
 
@@ -75,6 +75,18 @@ Regardez la vidéo Présentation de la version d’octobre 2022 pour un résumé
 * Experience Manager Assets maintenant [prend en charge le jeton SAS](/help/assets/add-assets.md#asset-bulk-ingestor) en plus de la clé d’accès pour l’authentification lors de la connexion à la source de données Azure Blob Storage pour l’ingestion de ressources à l’aide de l’outil d’importation en bloc.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
+
+### Nouvelles fonctionnalités disponibles dans [!DNL Forms] channel {#new-features-available-in-channel}
+
+* [Assistant de Forms adaptatif](/help/forms/creating-adaptive-form.md): AEM Forms fournit un assistant convivial destiné à l’entreprise afin de créer rapidement un Forms adaptatif. L’assistant dispose d’une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif. Cette version apporte les améliorations suivantes à l’assistant :
+
+   * Sélectionnez ou désélectionnez des champs : L’assistant vous permet de créer un formulaire adaptatif basé sur des schémas de modèle de données de formulaire et JSON. Vous pouvez désormais sélectionner un sous-ensemble de champs dans un schéma à inclure dans un formulaire adaptatif. Les champs sélectionnés sont convertis en composants de capture de données de formulaire adaptatif correspondants pour créer rapidement les formulaires adaptatifs souhaités.
+
+   * Utiliser des modèles statiques : Les clients qui ont déjà investi dans des modèles statiques hérités peuvent continuer leur parcours d’adoption du cloud en utilisant des modèles statiques dans l’assistant pour créer des formulaires adaptatifs. Les clients disposent ainsi d’un temps supplémentaire pour migrer les anciens modèles statiques vers des modèles modifiables modernes.
+
+* [Suppression des champs masqués d’un document d’enregistrement (DE) lors du traitement côté serveur](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Vous pouvez générer le document du PDF d’enregistrement pour les utilisateurs finaux contenant uniquement les champs qui leur ont été visibles lors de l’expérience de capture de données. Lors de l’envoi du formulaire, le serveur valide les champs qui ont été masqués à l’utilisateur final en fonction des données envoyées et exclut du document d’enregistrement par souci de cohérence.
+
+
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 

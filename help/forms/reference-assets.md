@@ -4,9 +4,9 @@ seo-title: Reference Themes
 description: AEM Forms fournit les thèmes de formulaires adaptatifs que vous pouvez obtenir à partir de la Distribution de logiciels et utiliser pour conférer un style à un formulaire.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 094e90050747d5412f34b79cd5a11b8f5e05e6eb
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '513'
 ht-degree: 56%
 
 ---
@@ -14,8 +14,7 @@ ht-degree: 56%
 
 # Ressources de référence pour Forms as a Cloud Service {#reference-themes}
 
-Vous pouvez obtenir les thèmes de référence, les modèles et les modèles de données de formulaire en installant le [Package de ressources de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Cela vous permet de démarrer et d’accélérer rapidement votre développement de Forms adaptatif. Vous pouvez utiliser [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr) pour déployer ce package dans votre environnement as a Cloud Service AEM Forms.
-
+Vous pouvez obtenir les thèmes de référence, les modèles et les modèles de données de formulaire en installant le [Package de ressources de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Cela vous permet de démarrer et d’accélérer rapidement votre développement de Forms adaptatif. Vous pouvez utiliser [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr) pour déployer ce package dans votre environnement Forms as a Cloud Service.
 Les ressources de référence incluses dans le module sont les suivantes :
 
 ## Thèmes {#themes}
