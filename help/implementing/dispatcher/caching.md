@@ -3,9 +3,9 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: e354443e4f21cd1bc61593b95f718fbb1126ea5a
+source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2666'
 ht-degree: 69%
 
 ---
@@ -199,9 +199,9 @@ Lorsqu’une demande d’HEAD est reçue sur le réseau de diffusion de contenu 
 
 ### Paramètres de campagne marketing {#marketing-parameters}
 
-Les URL de site Web incluent souvent des paramètres de campagne marketing qui servent à suivre le succès d’une campagne. Pour utiliser efficacement le cache du Dispatcher, il est recommandé de configurer le `ignoreUrlParams` property as [documenté](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
+Les URL de site Web incluent souvent des paramètres de campagne marketing qui servent à suivre le succès d’une campagne. Pour utiliser efficacement le cache du Dispatcher, il est recommandé de configurer le `ignoreUrlParams` property as [documenté ici](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#ignoring-url-parameters).
 
-Le `ignoreUrlParams` ne doit pas être commentée et doit référencer le fichier `conf.dispatcher.d/cache/marketing_query_parameters.any`, qui peut être modifié en supprimant les commentaires des lignes correspondant aux paramètres relatifs à vos canaux marketing. Vous pouvez également ajouter d’autres paramètres.
+Le `ignoreUrlParams` ne doit pas être commentée et doit référencer le fichier `conf.dispatcher.d/cache/marketing_query_parameters.any`. Le fichier peut être modifié en supprimant les commentaires des lignes correspondant aux paramètres relatifs à vos canaux marketing. Vous pouvez également ajouter d’autres paramètres.
 
 ```
 /ignoreUrlParams {
