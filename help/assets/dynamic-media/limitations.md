@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: fb63e2d4-2c8c-48dd-a0dc-fdfbbfb57b30
-source-git-commit: e669fc821402f84fae58f457d5d9d1680c39ffaf
+source-git-commit: a3b16a47be8ec28a02763655d49a9bb469fbc118
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 79%
 
 ---
@@ -30,7 +30,7 @@ Lorsque vous créez une visionneuse à 360° ou une visionneuse d’images, ou q
 
 | Ressource - Type de limite | Bonne pratique | Limite imposée | Modification de la limite le 31 décembre 2022 |
 | --- | --- | --- | --- |
-| **Image** - Nombre de recadrages intelligents par image | 5 | 100 | 20 |
+| **Image** - Nombre de recadrages intelligents par image | 5 | 100 | Non applicable |
 | **Tous les jeux** - Nombre de ressources en double par visionneuse | Aucun doublon | 20 | Non applicable |
 | **Tous les jeux** - Nombre maximal de ressources par visionneuse | 5 à 10 images par ensemble | 1000 | Non applicable |
 | **Visionneuse à 360°** - Nombre maximal de lignes/colonnes par visionneuse 2D | 12 à 18 images par visionneuse | 1000 | Non applicable |
