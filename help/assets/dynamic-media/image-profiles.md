@@ -4,9 +4,9 @@ description: Découvrez comment créer des profils d’image Dynamic Media conte
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 7ab618893ab18dde6dbbceaf098fe7334b503d07
+source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
 workflow-type: tm+mt
-source-wordcount: '3351'
+source-wordcount: '3344'
 ht-degree: 97%
 
 ---
@@ -84,14 +84,13 @@ Adobe vous recommande d’examiner tous les recadrages et tous les échantillons
 
 La résolution maximale prise en charge pour la taille de fichier d’entrée est de 16K.
 
-Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
-
 >[!NOTE]
 La résolution 16K est une résolution d’affichage d’environ 16 000 pixels horizontalement. La résolution de 16K la plus communément discutée est de 15 360 × 8 640, ce qui double le nombre de pixels de 8K UHD dans chaque dimension, pour un total de quatre fois plus de pixels. Cette résolution est de 132,7 mégapixels, 16 fois plus de pixels qu’une résolution de 4K et 64 fois plus de pixels qu’une résolution de 1080p.
 
 | Format d’image  | Extension de fichier insensible à la casse | Type MIME | Espace colorimétrique d’entrée pris en charge | Taille maximale du fichier d’entrée pris en charge | Format d’image pris en charge ? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRVB | 4 Go | Oui |
+| CMJN |  |  |  |  | Non |
 | EPS |  |  |  |  | Non |
 | GIF | `.gif` | image/gif | sRVB | 15 Go | Oui ; la première image du GIF animé est utilisée pour le rendu. Vous ne pouvez pas configurer ni modifier la première image. |
 | JPEG | `.jpg` et `.jpeg` | image/jpeg | sRVB | 15 Go | Oui |
