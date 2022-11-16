@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6446f5e334c3802505d6a41035b6d2ab3ad2b72c
+source-git-commit: 272225bbeea4443bf97349d11805dbb3386fd2cc
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1092'
 ht-degree: 13%
 
 ---
@@ -25,14 +25,13 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 >[!CAUTION]
 >
->**Période d’exclusion de la maintenance du vendredi et de Noël noir**
+>**Période d’exclusion de maintenance planifiée**
 >
 > Aucune maintenance automatique d’AEMaaCS ne sera exécutée pendant les périodes suivantes, commençant et se terminant à minuit (00:00) CET :
 >
 >* Lundi 21 novembre au lundi 5 décembre
 >* Lundi 19 décembre au mardi 3 janvier
->
-> Ces périodes couvrent le Noël, le Lundi cybernétique, Noël et le Nouvel An.
+
 
 ## Date de publication {#release-date}
 
