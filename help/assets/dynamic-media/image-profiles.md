@@ -4,10 +4,10 @@ description: Découvrez comment créer des profils d’image Dynamic Media conte
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: ce14d830db2f3e163102d748f5fbaa2de4da17b5
+source-git-commit: 568109e90df20aae3181975b1b83fd0dd1857eb3
 workflow-type: tm+mt
-source-wordcount: '3344'
-ht-degree: 97%
+source-wordcount: '3390'
+ht-degree: 96%
 
 ---
 
@@ -56,9 +56,9 @@ L’accentuation est décrite dans [Accentuation des images](/help/assets/dynami
 
 Lorsque vous implémentez le recadrage intelligent sur les images, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
-| Type de limite | Bonne pratique | Limite imposée | Modification de la limite le 31 décembre 2022 |
-| --- | --- | --- | --- |
-| Nombre de recadrages intelligents par image | 5 | 100 | 20 |
+| Type de limite | Bonne pratique | Limite imposée |
+| --- | --- | --- |
+| Nombre de recadrages intelligents par image | 5 | 100 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
@@ -71,7 +71,8 @@ Chaque génération de recadrage intelligent créée nécessite un traitement su
 Vous avez le choix entre deux options de recadrage d’image. Vous pouvez également choisir d’automatiser la création de nuanciers de couleurs et d’images ou de conserver le contenu de recadrage dans toutes les résolutions cibles.
 
 >[!IMPORTANT]
-Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
+• Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
+・ Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
 
 | Option | Quand l’utiliser | Description |
 | --- | --- | --- |
@@ -199,7 +200,8 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 ## Modification du recadrage intelligent ou de l’échantillon intelligent d’une seule image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-Adobe vous recommande de consulter les recadrages intelligents et les échantillons intelligents générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
+• Adobe vous recommande de consulter les recadrages intelligents et les échantillons intelligents générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
+・ Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
 
 Vous pouvez réaligner ou redimensionner manuellement la fenêtre de recadrage intelligent d’une image pour affiner davantage son point focal.
 
@@ -231,6 +233,10 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 1. Près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**, puis sélectionnez **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
 
 ## Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+• Adobe vous recommande de consulter les recadrages intelligents et les échantillons intelligents générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
+・ Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
 
 Après l’application d’un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 
