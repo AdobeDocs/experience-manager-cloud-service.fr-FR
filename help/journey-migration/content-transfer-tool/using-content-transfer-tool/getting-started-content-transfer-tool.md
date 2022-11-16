@@ -4,8 +4,8 @@ description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
 workflow-type: tm+mt
-source-wordcount: '1327'
-ht-degree: 95%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
