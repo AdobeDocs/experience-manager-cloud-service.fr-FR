@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: 1dfef0f1157ead7f1240e9a41794436197136daa
 workflow-type: tm+mt
-source-wordcount: '1292'
-ht-degree: 98%
+source-wordcount: '1327'
+ht-degree: 95%
 
 ---
 
@@ -36,6 +36,9 @@ L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle n
 
 * Le service d’enregistrement blob Azure : `casstorageprod.blob.core.windows.net`
 * Le point d’entrée de l’IO de mappage des utilisateurs : `usermanagement.adobe.io`
+
+>[!NOTE]
+>Si l’extraction échoue en raison de l’erreur suivante : &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException : Échec de la construction du chemin PKIX : sun.security.provider.certpath.SunCertPathBuilderException : impossible de trouver un chemin de certification valide à la cible demandée&quot;, cela peut être résolu en important le certificat d’autorité de certification approprié.
 
 ### Activation de la journalisation SSL {#enable-ssl-logging}
 
