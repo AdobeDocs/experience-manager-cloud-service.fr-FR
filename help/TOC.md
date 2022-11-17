@@ -8,9 +8,9 @@ user-guide-description: Ressources d’aide autonome et liens vers la documentat
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 5d4da55a8485f9b1793dc0b997be40244188b052
+source-git-commit: 6d5ca58e8545da89dc424304586bc8a1afc07540
 workflow-type: tm+mt
-source-wordcount: '3766'
+source-wordcount: '3786'
 ht-degree: 98%
 
 ---
@@ -645,6 +645,7 @@ ht-degree: 98%
 + Découplé {#headless}
    + [Qu’est-ce qu’un CMS Headless ?](/help/headless/what-is-headless.md)
    + [Présentation d’AEM découplé](/help/headless/introduction.md)
+   + [Portail des développeurs (ressources supplémentaires)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
    + Configuration {#setup}
       + [Présentation](/help/headless/setup/introduction.md)
       + [Configuration](/help/headless/setup/create-configuration.md)
@@ -692,6 +693,7 @@ ht-degree: 98%
          + [Comment assembler l’ensemble](/help/journey-headless/developer/put-it-all-together.md)
          + [Comment mettre en ligne votre application découplée](/help/journey-headless/developer/go-live.md)
          + [Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM](/help/journey-headless/developer/create-spa.md)
+         + [Portail des développeurs (ressources supplémentaires)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
       + Parcours d’architecture de contenu découplé {#architect}
          + [Aperçu du parcours d’architecture de contenu découplé AEM](/help/journey-headless/architect/overview.md)
          + [Modélisation de contenu pour le découplage avec AEM – Introduction](/help/journey-headless/architect/introduction.md)
