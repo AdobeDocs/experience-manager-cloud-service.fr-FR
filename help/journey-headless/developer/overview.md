@@ -3,9 +3,9 @@ title: AEM Parcours de développement CMS sans affichage
 description: Découvrez le développement sans interface à l’aide d’Adobe Experience Manager (AEM) as a Headless CMS. Découvrez comment utiliser des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL pour alimenter la diffusion de contenu sans affichage.
 landing-page-description: Découvrez la diffusion et la mise en œuvre du contenu découplé. Apprenez-en plus sur le développement de votre stratégie au sein de votre entreprise.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: 06aec2fa43db2393416dd5efab886d9c301ffdb2
+source-git-commit: 64862456bfbffe1799a3f0b6ea3353f45e60c52f
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1051'
 ht-degree: 69%
 
 ---
@@ -61,6 +61,8 @@ Bien que vous puissiez accéder directement à une partie spécifique du parcour
 | 7 | [Comment tout assembler – votre application et votre contenu dans AEM découplé](put-it-all-together.md) | Découvrez comment prendre votre projet AEM et le préparer pour la mise en ligne avec le SDK AEM découplé. |
 | 8 | [Comment mettre en ligne votre application découplée](go-live.md) | Découvrez comment déployer l’application en direct et prendre votre code local dans Git et le déplacer vers Cloud Manager Git pour le pipeline CI/CD. |
 | 9 | [Facultatif – Comment créer des applications d’une seule page (SPA) avec AEM](create-spa.md) | Découvrez comment combiner des diffusions en tête et sans tête et comment créer des SPA modifiables à l’aide d’AEM structure de l’Éditeur d’SPA. |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Prochaines étapes {#what-is-next}
 
