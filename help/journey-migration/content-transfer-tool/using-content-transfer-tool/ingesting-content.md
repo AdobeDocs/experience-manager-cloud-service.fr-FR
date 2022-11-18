@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: e8b4fe047c9656aa592fc851279dc6a189144023
+source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 96%
+source-wordcount: '956'
+ht-degree: 92%
 
 ---
 
@@ -26,6 +26,11 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 1. Présentation de Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu. Accédez aux **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
+
+
+1. Consultez la liste de contrôle d’ingestion et assurez-vous que toutes les étapes ont été effectuées. Il s’agit des étapes nécessaires pour garantir la réussite de l’ingestion. Vous pourrez accéder à la variable **Suivant** étape uniquement si la liste de contrôle est terminée.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
 1. Fournissez les informations requises pour créer une ingestion.
 

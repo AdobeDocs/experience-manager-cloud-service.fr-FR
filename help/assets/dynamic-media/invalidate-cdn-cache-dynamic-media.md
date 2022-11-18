@@ -4,7 +4,7 @@ description: Découvrez comment l’invalidation du contenu de réseau de diffus
 feature: Asset Management
 role: Admin,User
 exl-id: c631079b-8082-4ff7-a122-dac1b20d8acd
-source-git-commit: 5c8e3a7ea87b70707b2613ffc7b4f51341303614
+source-git-commit: 532d32334456b4b791e3a5ffe17a780f378dd1cc
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 100%
@@ -23,11 +23,11 @@ Les ressources Dynamic Media sont mises en cache par le réseau de diffusion de 
 
 Si vous avez activé [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md) sur votre compte et que vous utilisez le réseau CDN groupé avec Adobe, vous pouvez purger toutes les URL avec différentes chaînes de requête en purgeant l’URL de base unique.
 
-Par exemple, invalider `https://weekendsite.scene7.com/is/image/grundfos/image` invalide également les URL suivantes :
+Par exemple, invalider `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image` invalide également les URL suivantes :
 
-* `https://weekendsite.scene7.com/is/image/grundfos/image`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?wid=300`
-* `https://weekendsite.scene7.com/is/image/grundfos/image?$PLP$`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?wid=300`
+* `https://weekendsite.scene7.com/is/image/<CUSTOMER-NAME>/image?$PLP$`
 * et ainsi de suite.
 
 Cependant, cette invalidation ne concerne pas les domaines génériques qui ne prennent pas en charge l’imagerie dynamique, comme `s7d1.scene7.com`. Ces domaines ont toujours besoin de l’URL complète pour que l’invalidation fonctionne avec succès.
