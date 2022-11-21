@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 4b716f3a41e431b47c8f439d4d24610b79f22736
+source-git-commit: 319a9bc2aa6d82d0fb322cd1f2ca37e95c33e97d
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 92%
+source-wordcount: '1029'
+ht-degree: 85%
 
 ---
 
@@ -40,6 +40,10 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
    >[!NOTE]
    >
    >Si la source était en Auteur, il est recommandé de l’ingérer dans le niveau Auteur sur la cible. De même, si la source était en Publication, la cible doit également être en Publication.
+
+   >[!NOTE]
+   >
+   >Si le niveau cible est `Author`, l’instance d’auteur sera arrêtée pendant la durée de l’ingestion et ne sera pas disponible pour les utilisateurs (par exemple, les auteurs ou toute personne effectuant la maintenance, etc.). Il s’agit de protéger le système et d’empêcher toute modification qui pourrait être perdue ou provoquer un conflit d’ingestion. Assurez-vous que votre équipe est au courant de ce fait. Notez également que l’environnement apparaîtra en veille pendant l’ingestion par l’auteur.
 
    >[!NOTE]
    >

@@ -2,10 +2,10 @@
 title: Validation des transferts de contenu
 description: Utiliser l’outil de transfert de contenu pour valider les transferts de contenu
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 015f3b0232861ac961922245650cb02db44daf77
+source-git-commit: 99ecf1309b9fa7613bfb9c99de9677700082f128
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 96%
+ht-degree: 94%
 
 ---
 
@@ -136,7 +136,7 @@ En plus d’être inclus dans le journal d’ingestion, le rapport de validation
 
 ### Échec de la validation. Et maintenant ?  {#validation-fail}
 
-La première étape consiste à déterminer si l’ingestion a vraiment échoué ou si le contenu extrait est déjà présent dans l’environnement cible. Cela peut se produire si une ingestion est répétée avec l’option **Effacer le contenu existant sur l’instance Cloud avant l’ingestion** désactivée.
+La première étape consiste à déterminer si l’ingestion a vraiment échoué ou si le contenu extrait est déjà présent dans l’environnement cible. Cela peut se produire si une ingestion est répétée avec la variable **Effacer le contenu existant sur l’instance cloud avant l’ingestion** Option désactivée.
 
 Pour vérifier, choisissez un chemin dans le rapport de validation et vérifiez s’il est présent dans l’environnement cible. S’il s’agit d’un environnement de publication, vous pouvez vous limiter à vérifier directement les pages et les ressources. Si vous avez besoin d’aide pour cette étape, veuillez ouvrir un ticket auprès de l’assistance clientèle.
 
