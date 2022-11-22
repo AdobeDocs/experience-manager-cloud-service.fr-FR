@@ -10,10 +10,10 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: fbd2fdcb61bcbae49f07c3da26b14d56d50b1cab
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 98%
+source-wordcount: '2214'
+ht-degree: 89%
 
 ---
 
@@ -183,6 +183,18 @@ Le `UrlProvider` est préconfiguré pour générer des liens profonds vers des p
 
 Dans les instances de publication, en revanche, les adresses URL des pages de catalogue doivent rester stables pour ne pas perdre les gains de classement dans les moteurs de recherche, par exemple. Pour cette raison, les instances de publication ne généreront pas de liens profonds vers des pages de catalogue spécifiques par défaut. Pour modifier ce comportement, la _Stratégie de page spécifique du fournisseur d’URL CIF_ peut être configurée pour toujours générer des adresses URL de page spécifiques.
 
+### Plusieurs pages de catalogue {#multiple-product-pages}
+
+Lorsque les éditeurs souhaitent avoir un contrôle total sur la navigation de niveau supérieur d’un site, l’utilisation d’une seule page de catalogue pour effectuer le rendu des catégories de niveau supérieur d’un catalogue peut ne pas être souhaitée. Au lieu de cela, les éditeurs peuvent créer plusieurs pages de catalogue, une pour chaque catégorie du catalogue qu’ils souhaitent inclure dans la navigation de niveau supérieur.
+
+Pour ce cas d’utilisation, chacune des pages du catalogue peut avoir une référence à un produit et à une page de catégorie spécifique à la catégorie configurée pour la page du catalogue. Le `UrlProvider` les utiliseront pour créer des liens pour les pages et les catégories de la catégorie configurée. Toutefois, pour des raisons de performances, seuls les enfants de la page de catalogue directe de la racine de navigation/de la page d’entrée d’un site sont pris en compte.
+
+Il est recommandé que les pages de produit et de catégorie d’une page de catalogue soient descendantes vers cette page de catalogue, sinon les composants tels que Navigation ou Chemin de navigation risquent de ne pas fonctionner correctement.
+
+>[!NOTE]
+>
+> La prise en charge complète de plusieurs pages de catalogue nécessite [Composants principaux CIF 2.10.0](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) ou plus récent.
+
 ## Personnalisations {#customization}
 
 ### Formats d’URL personnalisés {#custom-url-format}
@@ -217,11 +229,11 @@ _**Compromis entre la longueur de lʼURL et les informations codées.**_
 
 En fonction de la taille du catalogue, en particulier de la taille et de la profondeur de lʼarbre des catégories, il peut ne pas être raisonnable dʼencoder lʼ`url_path` complet des catégories dans lʼadresse URL. Dans ce cas, la longueur de lʼURL peut être réduite uniquement en incluant la `url_key` de la catégorie à la place. Cela permet de prendre en charge presque toutes les fonctionnalités disponibles lors de l’utilisation du `url_path` de la catégorie.
 
-En outre, utilisez les [Mappages Sling](#sling-mapping) afin de combiner le code SKU avec la `url_key` du produit. Dans la plupart des systèmes de commerce sur Internet, le code SKU respecte un format particulier. La séparation du code SKU de la `url_key` pour les requêtes entrantes ne devrait pas présenter de problème. Dans cette optique, il devrait être possible de réécrire lʼadresse URL dʼune page produit en `/p/{{category}}/{{sku}}-{{url_key}}.html`, et lʼURL dʼune catégorie en `/c/{{url_key}}.html`, respectivement. Les préfixes `/p` et `/c` sont toujours nécessaires pour distinguer les pages produit et de catégories des autres pages de contenu.
+En outre, utilisez les [Mappages Sling](#sling-mapping) afin de combiner le code SKU avec la `url_key` du produit. Dans la plupart des systèmes de commerce sur Internet, le code SKU respecte un format particulier. La séparation du code SKU de la `url_key` pour les requêtes entrantes ne devrait pas présenter de problème. Dans cette optique, il devrait être possible de réécrire lʼadresse URL dʼune page produit en `/p/{{category}}/{{sku}}-{{url_key}}.html`, et lʼURL dʼune catégorie en `/c/{{url_key}}.html`, respectivement. Le `/p` et `/c` Un préfixe est toujours nécessaire pour distinguer les pages de produits et de catégories des autres pages de contenu.
 
 ### Migration vers un nouveau format d’URL {#migrate-url-formats}
 
-De nombreux formats d’URL par défaut sont d’une manière ou d’une autre compatibles entre eux, ce qui signifie que les URL formatées par l’un peuvent être analysées par un autre. Cela permet la migration entre les formats d’URL.
+De nombreux formats d’URL par défaut sont d’une manière ou d’une autre compatibles, ce qui signifie que les URL formatées par l’un peuvent être analysées par un autre. Cela permet la migration entre les formats d’URL.
 
 D’un autre côté, les moteurs de recherche auront besoin d’un certain temps pour analyser à nouveau toutes les pages du catalogue avec le nouveau format d’URL. Pour prendre en charge ce processus et améliorer l’expérience de l’utilisateur final, il est recommandé de fournir des redirections qui redirigent l’utilisateur des anciennes URL vers les nouvelles.
 
