@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
 workflow-type: tm+mt
-source-wordcount: '752'
-ht-degree: 100%
+source-wordcount: '753'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Suivez les étapes ci-dessous pour configurer ces éléments :
 1. Accédez à la [Adobe Developer Console](https://console.adobe.io) à l’aide de votre Adobe ID.
 1. Créez un projet ou ouvrez un formulaire existant.
 1. Ajout d’une API – Cliquez sur **Ajouter au projet** et sélectionnez **API**.
-1. Sélectionnez l’API User Management. Vous devrez peut-être obtenir des autorisations supplémentaires pour disposer de cette option.
+1. Sélectionnez l’API User Management. Pour que cette option soit disponible, vous devez disposer des autorisations d’administrateur système.
 1. Créez des informations d’identification JWT.
 1. Générez une paire de clés ou chargez une clé publique (RSA ne convient pas). Un bouton intitulé **Générer une paire de clés publique/privée** le fera pour vous. Veillez à enregistrer les deux clés, publique et privée.
 1. Accédez à l’API User Management.
