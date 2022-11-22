@@ -2,10 +2,10 @@
 title: Tests de l’interface utilisateur
 description: Le test personnalisé d’interface utilisateur est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications personnalisées.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: 31e84b7383cd9774b0eaf8ee0f2fe39bcd77fa15
 workflow-type: tm+mt
-source-wordcount: '1338'
-ht-degree: 99%
+source-wordcount: '1407'
+ht-degree: 94%
 
 ---
 
@@ -51,7 +51,7 @@ Pour inclure un fichier `testing.properties` dans l’artefact de build, ajoutez
 <includes>
     <include>Dockerfile</include>
     <include>wait-for-grid.sh</include>
-    <include>testing.properties</include> <!- opt-in test module in Cloud Manager -->
+    <include>testing.properties</include> <!-- opt-in test module in Cloud Manager -->
 </includes>
 [...]
 ```
@@ -194,6 +194,24 @@ Une fois que le point d’entrée du statut de Selenium donne une réponse posit
 L’image Docker doit générer des rapports de test au format XML JUnit et les enregistrer dans le chemin spécifié par la variable d’environnement `REPORTS_PATH`. Le format XML JUnit est un format très répandu pour les rapports de résultats de tests. Si l’image Docker utilise Java et Maven, les modules de test standard tels que le [plug-in Maven Surefire](https://maven.apache.org/surefire/maven-surefire-plugin/) et le [plug-in Maven Failsafe](https://maven.apache.org/surefire/maven-failsafe-plugin/) peuvent générer ces rapports prêts à l’emploi.
 
 Si l’image Docker est implémentée avec d’autres langages de programmation ou des exécuteurs de tests, consultez la documentation des outils choisis pour savoir comment générer des rapports XML JUnit.
+
+### Capture d’écran et vidéos {#capture-screenshots}
+
+L’image Docker peut générer une sortie de test supplémentaire (par exemple, des captures d’écran, des vidéos) et les enregistrer dans le chemin spécifié par la variable d’environnement. `REPORTS_PATH`. Tout fichier situé sous le `REPORTS_PATH` sont inclus dans l’archive des résultats du test.
+
+Si une archive de résultats de test a été créée lors de l’exécution d’un test de l’interface utilisateur, le fichier journal de test contient à la fin une référence à l’emplacement de l’archive de résultats de test.
+
+```
+[...]
+
+===============================================================
+The detailed test results can be downloaded from the URL below.
+Note: the link will expire after 60 days
+
+    https://results-host/test-results.zip
+
+===============================================================
+```
 
 ### Charger des fichiers {#upload-files}
 
