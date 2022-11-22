@@ -2,7 +2,7 @@
 title: Utilisation de plusieurs référentiels
 description: Découvrez comment gérer plusieurs référentiels Git lorsque vous utilisez Cloud Manager.
 exl-id: 1b9cca36-c2d7-4f9e-9733-3f1f4f8b2c7a
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: a7ae6d75d6820f48d3d45cb5830f888a87d51de1
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 41%
@@ -109,17 +109,17 @@ jobs:
       # Checkout the main project
       - name: Checkout main project
         run:
-          git clone -b ${MAIN_BRANCH} ${MAIN_REPOSITORY}.git main 
+          git clone -b ${MAIN_BRANCH} ${MAIN_REPOSITORY} ${MAIN_BRANCH} 
       # Move sub project
       - name: Move project to main project
         run: |
-          rm -rf main/${PROJECT_DIR} 
-          mv sub main/${PROJECT_DIR}
+          rm -rf ${MAIN_BRANCH}/${PROJECT_DIR} 
+          mv sub ${MAIN_BRANCH}/${PROJECT_DIR}
       - name: Commit Changes
         run: |
-          git -C main add -f ${PROJECT_DIR}
-          git -C main commit -F ../commit.txt
-          git -C main push
+          git -C ${MAIN_BRANCH} add -f ${PROJECT_DIR}
+          git -C ${MAIN_BRANCH} commit -F ../commit.txt
+          git -C ${MAIN_BRANCH} push
 ```
 
 L’utilisation d’une action GitHub est très flexible. Tout mappage entre les branches des référentiels Git peut être effectué, de même que tout mappage de projets Git distincts dans la disposition des répertoires du projet principal.
