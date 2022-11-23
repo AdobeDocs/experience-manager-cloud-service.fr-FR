@@ -3,7 +3,7 @@ title: Phase de mise en œuvre dans Cloud Acceleration Manager
 description: Cette page présente un aperçu de la phase de mise en œuvre dans Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 source-git-commit: dbf01e5bd9ee83e378b4297d2f3d341d548f9238
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '683'
 ht-degree: 100%
 
