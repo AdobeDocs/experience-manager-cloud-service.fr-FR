@@ -2,10 +2,10 @@
 title: Utilisation de l’outil de mappage des utilisateurs
 description: Utilisation de l’outil de mappage des utilisateurs
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
-source-git-commit: 68ade018185892528854a9438953ee7eb4b90f27
+source-git-commit: a9e30f6a15bbc9fc830849e05e1814a2cdd50fd5
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 98%
+source-wordcount: '816'
+ht-degree: 90%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 98%
 L’outil de mappage des utilisateurs utilise une API pour rechercher les utilisateurs du système Adobe IMS (Identity Management System) par email et renvoyer leur ID IMS. Cette API nécessite que l’utilisateur crée un ID client pour son organisation, un secret client et un jeton d’accès ou de porteur.
 
 ## Configuration de l’outil de mappage des utilisateurs {#setting-up-user-mapping}
+
+**Condition requise :** Le mappage des utilisateurs requiert que chaque utilisateur soit mappé à son identifiant IMS avec une adresse email dans son profil dans AEM et dans IMS.  Notez que même si l’utilisateur utilise une adresse électronique comme ID utilisateur pour se connecter, le mappage ne fonctionne pas pour cet utilisateur, sauf si l’adresse électronique figure également dans le profil, ainsi que dans IMS.
 
 Suivez les étapes ci-dessous pour configurer ces éléments :
 
