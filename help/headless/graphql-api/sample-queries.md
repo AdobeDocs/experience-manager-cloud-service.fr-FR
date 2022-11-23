@@ -4,7 +4,7 @@ description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du conte
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1456'
 ht-degree: 100%
 
@@ -1667,4 +1667,4 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 | San Francisco |  États-Unis |  883306 |  city:beach<br>city:na |
 | San Jose |  États-Unis |  102635 |  city:na |
 | Stuttgart |  Allemagne |  634830 |  city:emea |
-|  Zurich |  Suisse |  415367 |  ville:capital<br>city:emea |
+|  Zurich |  Suisse |  415367 |  city:capital<br>city:emea |
