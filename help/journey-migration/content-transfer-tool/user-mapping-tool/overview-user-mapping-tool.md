@@ -2,10 +2,10 @@
 title: Présentation de l’outil de mappage des utilisateurs
 description: Présentation de l’outil de mappage des utilisateurs
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 99af299c3f401ce898366a75563d2b933f120e40
 workflow-type: tm+mt
-source-wordcount: '363'
-ht-degree: 100%
+source-wordcount: '361'
+ht-degree: 89%
 
 ---
 
@@ -26,7 +26,7 @@ L’un des changements majeurs apportés à AEM as a Cloud Service est l’utili
 
 ## Outil de mappage des utilisateurs {#mapping-tool}
 
-L’outil de transfert de contenu (sans mappage utilisateur) migre les utilisateurs et les groupes associés au contenu en cours de migration. L’outil de mappage des utilisateurs fait partie de l’outil de transfert de contenu. Son seul objectif est de modifier les utilisateurs et les groupes afin qu’ils puissent être correctement reconnus par IMS, la fonctionnalité d’authentification unique utilisée par AEM as a Cloud Service. Une fois ces modifications effectuées, l’outil de transfert de contenu migre les utilisateurs et les groupes du contenu spécifié comme d’habitude.
+L’outil de transfert de contenu (sans mappage utilisateur) migre les utilisateurs et les groupes associés au contenu en cours de migration. L’outil de mappage des utilisateurs fait partie de l’outil de transfert de contenu. Son seul objectif est de modifier les utilisateurs afin qu’ils puissent être correctement reconnus par IMS, la fonctionnalité d’authentification unique utilisée par AEM as a Cloud Service. Une fois ces modifications effectuées, l’outil de transfert de contenu migre les utilisateurs et les groupes du contenu spécifié comme d’habitude.
 
 ### Prochaines étapes {#whats-next}
 
