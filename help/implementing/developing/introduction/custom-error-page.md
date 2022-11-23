@@ -2,10 +2,10 @@
 title: Pages d’erreur personnalisées
 description: AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP, qui peut être personnalisé.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: db997127c6cbba434b86990852d1ba590d5f12a5
 workflow-type: tm+mt
-source-wordcount: '503'
-ht-degree: 100%
+source-wordcount: '576'
+ht-degree: 87%
 
 ---
 
@@ -67,6 +67,12 @@ La [personnalisation des pages affichées par le gestionnaire d’erreurs](#how-
 Dans le cas contraire, le code de réponse est défini sur 500, mais le script `500.jsp` n’est pas exécuté.
 
 Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire d’erreurs doit être identique à la classe d’exception (ou superclasse). Pour gérer toutes ces exceptions, vous pouvez créer un script `/apps/sling/servlet/errorhandler/Throwable.jsp` ou `/apps/sling/servlet/errorhandler/Exception.jsp`.
+
+>[!NOTE]
+>
+>Dans AEM en tant que Cloud Service, le CDN diffuse une page d’erreur générique chaque fois qu’une erreur 5XX est reçue du serveur principal. Pour permettre au serveur principal de transmettre la réponse, vous devez ajouter l’en-tête suivant à la réponse :
+>`x-aem-error-pass: true`
+>Cela fonctionne uniquement pour les réponses provenant d’AEM ou de la couche Apache/Dispatcher. D’autres erreurs inattendues provenant des couches d’infrastructure intermédiaires afficheront toujours la page d’erreur générique.
 
 >[!CAUTION]
 >
