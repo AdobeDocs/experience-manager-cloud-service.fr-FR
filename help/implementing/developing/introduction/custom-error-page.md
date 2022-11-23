@@ -2,9 +2,9 @@
 title: Pages d’erreur personnalisées
 description: AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP, qui peut être personnalisé.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: db997127c6cbba434b86990852d1ba590d5f12a5
+source-git-commit: 570e7d71fc8b3db33e93394d0aa53cb159636fb7
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '575'
 ht-degree: 87%
 
 ---
@@ -70,9 +70,9 @@ Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire
 
 >[!NOTE]
 >
->Dans AEM en tant que Cloud Service, le CDN diffuse une page d’erreur générique chaque fois qu’une erreur 5XX est reçue du serveur principal. Pour permettre au serveur principal de transmettre la réponse, vous devez ajouter l’en-tête suivant à la réponse :
->`x-aem-error-pass: true`
->Cela fonctionne uniquement pour les réponses provenant d’AEM ou de la couche Apache/Dispatcher. D’autres erreurs inattendues provenant des couches d’infrastructure intermédiaires afficheront toujours la page d’erreur générique.
+>Dans AEM en tant que Cloud Service, le CDN diffuse une page d’erreur générique lorsqu’une erreur 5XX est reçue du serveur principal. Pour permettre au serveur principal de transmettre la réponse, vous devez ajouter l’en-tête suivant à la réponse : `x-aem-error-pass: true`.
+>
+>Cela ne fonctionne que pour les réponses provenant d’AEM ou de la couche Apache/Dispatcher. D’autres erreurs inattendues provenant des couches d’infrastructure intermédiaires afficheront toujours la page d’erreur générique.
 
 >[!CAUTION]
 >
