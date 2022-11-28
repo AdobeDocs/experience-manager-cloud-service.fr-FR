@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 69cb9b9015ed3a7acdcc42c7e25fb45b479a7f4e
+source-git-commit: 093a83b7e76167b1962639b245332e515df2447b
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 76%
+source-wordcount: '1145'
+ht-degree: 74%
 
 ---
 
@@ -90,7 +90,8 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 
 >[!NOTE]
 >
->Lorsque vous utilisez votre propre réseau de diffusion de contenu, il n’est pas nécessaire d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau de diffusion de contenu Adobe est effectué à l’aide du domaine par défaut. `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+>Lorsque vous utilisez votre propre réseau de diffusion de contenu, vous n’avez pas besoin d’installer les domaines et les certificats dans Cloud Manager. Le routage dans le réseau de diffusion de contenu Adobe est effectué à l’aide du domaine par défaut. `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com` qui doit être envoyé dans la requête `Host` en-tête . Remplacement de la requête `Host` avec un nom de domaine personnalisé peut entraîner un incorrectement routage de la requête par le réseau de diffusion de contenu Adobe.
+
 
 >[!NOTE]
 >
