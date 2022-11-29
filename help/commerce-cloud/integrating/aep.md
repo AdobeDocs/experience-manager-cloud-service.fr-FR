@@ -10,13 +10,13 @@ role: Architect, Developer
 level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
-source-git-commit: 2ebe9ddccd0b657b8aaeaf005c0ecb5b16079dee
+exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
+source-git-commit: c2fd3d33eb02ea671d9811ad527bf167a279ff01
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2080'
 ht-degree: 3%
 
 ---
-
 
 # Composants principaux AEM-CIF et intégration Adobe Experience Platform {#aem-cif-aep-integration}
 
@@ -226,7 +226,7 @@ Pour initialiser les composants principaux React et CIF basés sur React, créez
 
    >[!IMPORTANT]
    >
-   >Bien que vous soyez déjà familiarisé avec la variable [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) fichier à partir de __AEM Guides - Projet CIF Venia__, quelques modifications doivent être apportées à ce fichier. Tout d’abord, passez en revue les __TODO__ commentaires. Ensuite, à l’intérieur de la variable `eventsCollector` , recherchez la propriété `eventsCollector > aed` et mettre à jour l’objet `orgId` et `datastreamId` aux valeurs correctes. [En savoir plus](./aep.md#add-aep-values-to-aem).
+   >Bien que vous soyez déjà familiarisé avec la variable [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) fichier à partir de __AEM Guides - Projet CIF Venia__, quelques modifications doivent être apportées à ce fichier. Tout d’abord, passez en revue les __TODO__ commentaires. Ensuite, à l’intérieur de la variable `eventsCollector` , recherchez la propriété `eventsCollector > aed` et mettre à jour l’objet `orgId` et `datastreamId` aux valeurs correctes. [En savoir plus](./aep.md#add-aep-values-to-aem)
 
 1. Créez un `App.js` avec le contenu suivant. Ce fichier ressemble à un fichier de point de départ de l’application React standard et contient des hooks React et personnalisés et l’utilisation de React Context pour faciliter l’intégration de l’Experience Platform.
 
@@ -471,10 +471,31 @@ Le projet PWA Studio vous permet de créer des vitrines de Progressive Web Appli
 
 À ce jour, les événements suivants sont pris en charge :
 
-- addToCart
-- pageView
-- customUrl
-- referrerUrl
+__Événements XDM d’expérience :__
+
+1. Ajouter au panier (AEM)
+1. Afficher la page (AEM)
+1. Afficher le produit (AEM)
+1. Requête de recherche envoyée (AEM)
+1. Réponse de recherche reçue (AEM)
+
+When [Composants de pré-génération](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) sont réutilisés dans le projet AEM Commerce :
+
+__Événements XDM d’expérience :__
+
+1. Supprimer du panier
+1. Ouvrir le panier
+1. Afficher le panier
+1. achat instantané
+1. Démarrer le paiement
+1. Terminer le passage en caisse
+
+__Evénements XDM de profil :__
+
+1. Se connecter
+1. Créer un compte
+1. Modifier le compte
+
 
 ## Ressources supplémentaires {#additional-resources}
 
@@ -482,5 +503,5 @@ Pour plus d&#39;informations, consultez les ressources suivantes :
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Présentation du connecteur Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+- [Événements de connecteur Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
 - [Présentation de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-
