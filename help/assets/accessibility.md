@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
+source-git-commit: 201f365643d82cb3c7d43fa8c31650ee46dc3b29
 workflow-type: tm+mt
 source-wordcount: '1913'
 ht-degree: 100%
@@ -44,7 +44,8 @@ Possible topics to cover in this article are below.
 Pour lire un rapport contenant des détails sur le niveau de conformité, voir la page [Rapport de conformité pour l’accessibilité](https://www.adobe.com/accessibility/compliance.html) (ACR).
 
 <!-- TBD: Add link after release.
-To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](/). -->
+To know how [!DNL Dynamic Media] is accessible, see [accessibility in [!DNL Dynamic Media]](). 
+-->
 
 ## Technologies d’assistance {#at-support}
 
@@ -60,7 +61,7 @@ Les utilisateurs en situation de handicap font fréquemment appel au matériel e
 
 Dans [!DNL Experience Manager], les fonctionnalités d’accessibilité répondent à deux exigences clés des utilisateurs de [!DNL Experience Manager] et de leurs clients.
 
-* Pour les concepteurs et les créateurs de contenu, il existe des fonctionnalités permettant de créer et de publier du contenu accessible, qui est ensuite utilisé par leurs clients et les visiteurs du site web. Le contenu peut être utilisé par des personnes présentant un handicap à l’aide de technologies d’assistance. Pour plus d’informations, reportez-vous aux [Directives d’accessibilité web](/help/compliance/accessibility/quick-guide-wcag.md).
+* Pour les concepteurs et les créateurs de contenu, il existe des fonctionnalités permettant de créer et de publier du contenu accessible, qui est ensuite utilisé par leurs clients et les visiteurs du site web. Le contenu peut être utilisé par des personnes présentant un handicap à l’aide de technologies d’assistance. Pour plus d’informations, reportez-vous aux [Directives d’accessibilité Web](/help/compliance/accessibility/quick-guide-wcag.md).
 * [!DNL Experience Manager] permet de plus à ses utilisateurs et à ses administrateurs en situation de handicap d’accéder à l’interface utilisateur et aux contrôles pour créer et gérer du contenu. La personne présentant un handicap peut faire appel aux technologies d’assistance pour naviguer, utiliser et gérer les fonctionnalités d’[!DNL Assets].
 
 Les principales fonctionnalités d’[!DNL Assets] sont plus accessibles qu’auparavant et sont régulièrement mises à jour afin d’améliorer la conformité aux normes mondiales. Les opérations CRUD d’[!DNL Assets] intègrent un certain degré d’accessibilité Les workflows DAM tels que l’ajout, la gestion, la recherche et la distribution de ressources sont accessibles à l’aide de raccourcis clavier, d’un texte de lecteur d’écran, d’un contraste de couleur, etc.
@@ -71,9 +72,9 @@ De nombreux éléments de l’interface utilisateur exploitables ou sur lesquels
 
 <!-- TBD items:
 
-* The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
-* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’. What about setting preferences and impersonating a user?
-* Using the [!DNL Experience Manager] tag browser and operating the buttons like delete tag? This info can go into ‘basic handling’ info aka article to ‘understand and use the workspace’.
+* The button/menu to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
+* How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
+* Using the [!DNL Experience Manager] tag browser and operating the buttons like delete tag? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * Read-only form fields can be focused with the keyboard. Can users tab to these fields to understand the contents and are they able to copy text from the fields?
 -->
 
@@ -83,8 +84,8 @@ Les actions suivantes d’[!DNL Assets] fonctionnent avec les raccourcis clavier
 
 | Interface utilisateur ou scénario | Raccourci clavier | Action |
 |---|---|---|
-| Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées Haut et Bas | Accéder aux fichiers et aux dossiers dans la même hiérarchie. |
-| Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées gauche et droite | Accéder aux fichiers et aux dossiers situés au-dessus ou au-dessous du dossier en cours. |
+| Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées Haut et Bas | Accédez aux fichiers et aux dossiers dans la même hiérarchie. |
+| Mode Colonnes de l’interface utilisateur d’[!DNL Assets] | Touches fléchées gauche et droite | Accédez aux fichiers et aux dossiers situés au-dessus ou au-dessous du dossier en cours. |
 | Navigation dans les dossiers d’[!DNL Assets] | `/` | Lancer la recherche en ouvrant la zone Omni-recherche. |
 | Console [!DNL Assets] |  | Activer/désactiver les rails |
 | Console [!DNL Assets] | `Alt + 1` | Ouvrir l’arborescence de contenu. |

@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 82f959a8a4f02486c1b3431b40534cdb95853dd6
+source-git-commit: 7e32c997a69feb8447609bf984ba731008489095
 workflow-type: tm+mt
-source-wordcount: '2289'
-ht-degree: 90%
+source-wordcount: '2498'
+ht-degree: 88%
 
 ---
 
@@ -18,22 +18,20 @@ Avec AEM as a Cloud Service, Adobe s’éloigne d’un modèle centré sur les 
 Voici la liste des principaux changements par rapport à AEM version 6.5 et antérieure :
 
 1. Les utilisateurs n’ont plus accès au gestionnaire d’index d’une seule instance AEM pour déboguer, configurer ou gérer l’indexation. Le gestionnaire d’index n’est utilisé que pour le développement local et les déploiements sur site.
-
 1. Les utilisateurs ne changent pas d’index sur une seule instance AEM et n’ont plus à s’inquiéter des vérifications de cohérence ni de la réindexation.
-
 1. En général, les changements d’index sont amorcés avant le passage à la production afin de ne pas contourner les passerelles de qualité dans les pipelines CI/CD de Cloud Manager et de ne pas affecter les indicateurs de performance clés métier en production.
-
 1. Toutes les mesures associées, y compris les performances de recherche en production, sont à la disposition des clients au moment de l’exécution afin de fournir une vue holistique sur les sujets de recherche et d’indexation.
-
 1. Les clients pourront configurer des alertes en fonction de leurs besoins.
-
 1. Les SRE surveillent l’intégrité du système 24 heures sur 24, 7 jours sur 7 et prendront les mesures nécessaires le plus tôt possible.
-
 1. La configuration de l’index est modifiée par le biais de déploiements. Les modifications apportées à la définition de l’index sont configurées comme les autres modifications apportées au contenu.
-
 1. À un niveau élevé dans AEM as a Cloud Service, avec l’introduction du [modèle de déploiement bleu/vert](#index-management-using-blue-green-deployments), deux ensembles d’index coexisteront : l’un pour l’ancienne version (bleu), et l’autre pour la nouvelle version (vert).
-
 1. Les clients peuvent voir si la tâche d’indexation est terminée sur la page de version Cloud Manager et recevront une notification lorsque la nouvelle version sera prête à recevoir le trafic.
+
+Restrictions :
+
+* Actuellement, la gestion des index dans AEM as a Cloud Service n’est prise en charge que pour les index de type `lucene`.
+* Seuls les analyseurs standard sont pris en charge (c’est-à-dire ceux fournis avec le produit). Les analyseurs personnalisés ne sont pas pris en charge.
+* En interne, d’autres index peuvent être configurés et utilisés pour les requêtes. Par exemple, les requêtes écrites selon l’index `damAssetLucene` peuvent, sur Skyline, être exécutées par rapport à une version Elasticsearch de cet index. Cette différence n’est généralement pas visible par l’application et par l’utilisateur, mais certains outils tels que la fonctionnalité `explain` signalent un index différent. Pour connaître les différences entre les index Lucene et les index Elastic, consultez [la documentation Elastic dans Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Les clients n’ont pas besoin de configurer directement les index Elasticsearch et ne peuvent pas le faire.
 
 ## Utilisation {#how-to-use}
 
@@ -146,6 +144,64 @@ Dans `ui.apps.structure/pom.xml`, la section `filters` pour ce plug-in, doit con
 ```
 
 Une fois la nouvelle définition d’index ajoutée, la nouvelle application doit être déployée via Cloud Manager. Au moment du déploiement, deux tâches sont démarrées, chargées d’ajouter (et de fusionner si nécessaire) les définitions d’index à MongoDB et Azure Segment Store pour la création et la publication, respectivement. Les référentiels sous-jacents sont réindexés avec les nouvelles définitions d’index, avant que la commutation bleu/vert n’ait lieu.
+
+### REMARQUE
+
+Si vous constatez l’erreur suivante dans la validation filevault <br>
+`[ERROR] ValidationViolation: "jackrabbit-nodetypes: Mandatory child node missing: jcr:content [nt:base] inside node with types [nt:file]"` <br>
+Vous pouvez ensuite suivre l’une des étapes suivantes pour résoudre le problème : <br>
+1. Développez filevault vers la version 1.0.4 et ajoutez les éléments suivants au modèle pom de niveau supérieur :
+
+```xml
+<allowIndexDefinitions>true</allowIndexDefinitions>
+```
+
+Vous trouverez ci-dessous un exemple de l’emplacement de la configuration ci-dessus dans le modèle pom.
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    <configuration>
+        <properties>
+        ...
+        </properties>
+        ...
+        <allowIndexDefinitions>true</allowIndexDefinitions>
+        <repositoryStructurePackages>
+        ...
+        </repositoryStructurePackages>
+        <dependencies>
+        ...
+        </dependencies>
+    </configuration>
+</plugin>
+```
+
+1. Désactivez la validation du type de noeud. Définissez la propriété suivante dans la section jackrabbit-nodetypes de la configuration du module externe filevault :
+
+```xml
+<isDisabled>true</isDisabled>
+```
+
+Vous trouverez ci-dessous un exemple de l’emplacement de la configuration ci-dessus dans le modèle pom.
+
+```xml
+<plugin>
+    <groupId>org.apache.jackrabbit</groupId>
+    <artifactId>filevault-package-maven-plugin</artifactId>
+    ...
+    <configuration>
+    ...
+        <validatorsSettings>
+        ...
+            <jackrabbit-nodetypes>
+                <isDisabled>true</isDisabled>
+            </jackrabbit-nodetypes>
+        </validatorsSettings>
+    </configuration>
+</plugin>
+```
 
 >[!TIP]
 >
@@ -276,7 +332,7 @@ Si un index doit être supprimé dans une version ultérieure de l’application
                 </properties>
             </rep:root>
         </indexRules>
-    </acme.product-custom-3>
+</acme.product-custom-3>
 ```
 
 S’il n’est plus nécessaire de personnaliser un index prêt à l’emploi, vous devez copier la définition d’index prête à l’emploi. Par exemple, si vous avez déjà déployé `damAssetLucene-8-custom-3`, mais que vous n’avez plus besoin des personnalisations et que vous souhaitez revenir à l’index `damAssetLucene-8` par défaut, vous devez ajouter un index `damAssetLucene-8-custom-4` contenant la définition d’index de `damAssetLucene-8`.
