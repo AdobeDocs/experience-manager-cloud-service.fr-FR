@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 77cba988368c07438835148d08f1e8cc6e469b7b
+source-git-commit: 93e25fcbe07d3262d924f97551e19661ea80a034
 workflow-type: tm+mt
-source-wordcount: '995'
-ht-degree: 100%
+source-wordcount: '998'
+ht-degree: 99%
 
 ---
 
@@ -118,27 +118,27 @@ Cnsultez également la section [Utilisation de ressources 3D dans Dynamic Medi
 
 Les formats de documents pris en charge pour les fonctionnalités de gestion des ressources sont les suivants.
 
-| Format de fichier | Génération de miniatures | Extraction de texte intégral | Largeur/Hauteur | Gestion des métadonnées | [Ressources connectées](use-assets-across-connected-assets-instances.md) |
-| ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |
-| DOC | - | - | - | ✓ | ✓ |
-| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| EPUB | - | ✓ | - | - | - |
-| HTML | - | ✓ | - | ✓ | ✓ |
-| ODF | ✓ | ✓ | ✓ | - | - |
-| ODM | ✓ | ✓ | ✓ | - | - |
-| ODP | ✓ | ✓ | ✓ | - | - |
-| ODS | ✓ | ✓ | ✓ | - | - |
-| ODT | ✓ | ✓ | ✓ | ✓ | ✓ |
-| OFG | ✓ | ✓ | ✓ | - | - |
-| PDF | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PPT | - | - | - | ✓ | ✓ |
-| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| PS | - | - | ✓ | - | - |
-| RTF | - | ✓ | - | ✓ | ✓ |
-| TXT | ✓ | ✓ | - | ✓ | ✓ |
-| XLS | - | - | - | ✓ | ✓ |
-| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ |
-| XML | - | ✓ | - | - | - |
+| Format de fichier | Génération de miniatures | Extraction de texte intégral | Largeur/Hauteur | Gestion des métadonnées | [Ressources connectées](use-assets-across-connected-assets-instances.md) | Aperçu complet du document |
+| ----------- | -------------------- | ------------------- | ------------ | ------------------- | ---------------- |--------|
+| DOC | - | - | - | ✓ | ✓ | ✓ |
+| DOCX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| EPUB | - | ✓ | - | - | - | - |
+| HTML | - | ✓ | - | ✓ | ✓ | - |
+| ODF | ✓ | ✓ | ✓ | - | - | - |
+| ODM | ✓ | ✓ | ✓ | - | - | - |
+| ODP | ✓ | ✓ | ✓ | - | - | - |
+| ODS | ✓ | ✓ | ✓ | - | - | - |
+| ODT | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| OFG | ✓ | ✓ | ✓ | - | - | - |
+| PDF | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PPT | - | - | - | ✓ | ✓ | ✓ |
+| PPTX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| PS | - | - | ✓ | - | - | - |
+| RTF | - | ✓ | - | ✓ | ✓ | ✓ |
+| TXT | ✓ | ✓ | - | ✓ | ✓ | ✓ |
+| XLS | - | - | - | ✓ | ✓ | ✓ |
+| XLSX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
+| XML | - | ✓ | - | - | - | - |
 
 ## Formats vidéo {#video-formats}
 
@@ -209,7 +209,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Dynamic Media - Formats de document pris en charge {#document-support-dynamic-media}
 
-| Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
+| Format | Transférer (format d’entrée) | Créer un paramètre prédéfini d’image (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique |
 | ------ | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- |
 | AI | ✓ | - | - | - | - |
 | INDD | ✓ | - | - | - | - |
@@ -221,7 +221,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Dynamic Media - Formats d’images pixellisées prises en charge {#image-support-dynamic-media}
 
-| Format | Transférer (format d’entrée) | Créer un paramètre d’image prédéfini (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique | Types de visionneuses qui prennent en charge ce format |
+| Format | Transférer (format d’entrée) | Créer un paramètre prédéfini d’image (format de sortie) | Prévisualiser un rendu dynamique | Diffuser un rendu dynamique | Télécharger un rendu dynamique | Types de visionneuses qui prennent en charge ce format |
 | ------- | --------------------- | ----------------------------------- | ------------------------- | ------------------------- | -------------------------- | ---------------------------------- |
 | BMP | ✓ | - | - | - | - | [Image](/help/assets/dynamic-media/image-sets.md), [Supports variés](/help/assets/dynamic-media/mixed-media-sets.md) et [360°](/help/assets/dynamic-media/spin-sets.md) |
 | EPS | ✓ | ✓ | ✓ | ✓ | ✓ | - |
