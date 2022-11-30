@@ -2,10 +2,10 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 174e9b2410745ec766dbcd071a3508a509b8367a
+source-git-commit: 0e33ef91ce3668e7ce6aff98053c9f798b940dfd
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 78%
+source-wordcount: '1068'
+ht-degree: 75%
 
 ---
 
@@ -49,6 +49,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
        <li>Les versions de plus de 30 jours sont supprimées</li>
        <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
        <li>Quelle que soit la règle ci-dessus, la version la plus récente est conservée.</li>
+       <li>Il est recommandé que les clients, qui ont des exigences réglementaires pour effectuer le rendu des pages du site exactement comme elles s’affichaient à une date spécifique, s’intègrent à des services externes spécialisés.<li>
      </ol></td>
   </td>
   </tr>
@@ -60,6 +61,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
        <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
        <li>Pour le contrôle du DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
        <li>Pour le contrôle des pages, les journaux de plus de 3 jours sont supprimés.</li>
+       <li>Il est recommandé que les clients, qui ont des exigences réglementaires pour produire des journaux d’audit non modifiables, s’intègrent à des services externes spécialisés.<li>
      </ol></td>
    </td>
   </tr>
