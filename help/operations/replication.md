@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9260e3cfffdbff3469e92847af8d12c2eb52f5b1
+source-git-commit: b40c46ff5d4399e6feff0ccaf37bdf0336c88016
 workflow-type: tm+mt
-source-wordcount: '1262'
-ht-degree: 99%
+source-wordcount: '1374'
+ht-degree: 91%
 
 ---
 
@@ -18,6 +18,14 @@ Adobe Experience Manager as a Cloud Service utilise la fonctionnalité de [distr
 >Pour en savoir plus, consultez [Distribution](/help/overview/architecture.md#content-distribution).
 
 ## Méthodes de publication de contenu {#methods-of-publishing-content}
+
+>[!NOTE]
+>
+>Si vous souhaitez publier du contenu en bloc, utilisez la variable [Processus de publication de l’arborescence de contenu](#publish-content-tree-workflow).
+>Cette étape de workflow est conçue spécifiquement pour Cloud Service et peut gérer efficacement de grandes payloads.
+>Il n’est pas recommandé de créer votre propre code personnalisé de publication en masse.
+>Si vous devez personnaliser pour une raison quelconque, vous pouvez déclencher cette étape de workflow/workflow à l’aide des API de workflow existantes.
+>Bien qu’il soit toujours recommandé de ne publier que le contenu qui doit être publié et de ne pas essayer de publier un grand nombre de contenu si cela n’est pas nécessaire, il n’existe aucune limite quant à la quantité de contenu que vous pouvez envoyer par le biais du workflow Publier l’arborescence de contenu .
 
 ### Publication/annulation de publication rapide – Publication/annulation de publication planifiée {#publish-unpublish}
 
