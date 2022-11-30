@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 18f8a0737dbcce643a5949fb5f942e73f066fa59
+source-git-commit: 6c2baf7fde73abc831db906c7a6471751be3572d
 workflow-type: tm+mt
-source-wordcount: '2666'
-ht-degree: 69%
+source-wordcount: '2753'
+ht-degree: 66%
 
 ---
 
@@ -72,6 +72,8 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
      </LocationMatch>
    ```
 
+* Bien que le contenu HTML défini sur privé ne soit pas mis en cache sur le réseau de diffusion de contenu, il peut l’être sur le Dispatcher si [Mise en cache sensible aux autorisations](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr) est configuré de manière efficace, en veillant à ce que seuls les utilisateurs autorisés puissent diffuser le contenu.
+
    >[!NOTE]
    >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
 
@@ -80,7 +82,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 
-* En utilisant la structure de bibliothèque côté client d’AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, puisque toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique.  En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que vous puissiez découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache est défini sur non modifiable (immutable) ou 30 jours (30 days) pour les navigateurs plus anciens qui ne respectent pas la valeur non modifiable.
+* Lors de l’utilisation de la structure de bibliothèque côté client AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, car toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique.  En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que vous puissiez découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache est défini sur non modifiable (immutable) ou 30 jours (30 days) pour les navigateurs plus anciens qui ne respectent pas la valeur non modifiable.
 * Voir la section [Bibliothèques côté client et cohérence des versions](#content-consistency) pour en savoir plus.
 
 ### Images et tout contenu suffisamment volumineux pour être stocké dans le stockage blob {#images}
@@ -116,6 +118,8 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
 
 >[!NOTE]
 >Il est recommandé de modifier l’ancien comportement par défaut pour qu’il soit cohérent avec le nouveau comportement (identifiants de programme supérieurs à 65 000) en définissant la variable d’environnement Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS sur true. Si le programme est déjà actif, vérifiez que le contenu se comporte comme prévu une fois les modifications appliquées.
+
+Actuellement, les images dans l’espace de stockage blob marquées comme privées ne peuvent pas être mises en cache dans le Dispatcher à l’aide de [Mise en cache sensible aux autorisations](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). L’image est toujours demandée à l’origine de l’AEM et diffusée si l’utilisateur est autorisé.
 
 >[!NOTE]
 >Les autres méthodes, y compris celle du [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne permettront pas de remplacer les valeurs.
