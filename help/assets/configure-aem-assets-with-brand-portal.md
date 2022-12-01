@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 3255e988c5ec9a0de33660061aeb21d91c3bc4d3
+source-git-commit: 54057d6b5563de3455dddb7866c7c93a3b0294ec
 workflow-type: tm+mt
-source-wordcount: '2449'
-ht-degree: 66%
+source-wordcount: '2420'
+ht-degree: 62%
 
 ---
 
@@ -29,13 +29,13 @@ Vous avez besoin des éléments suivants pour activer Brand Portal sur votre Exp
 
 >[!NOTE]
 >
->Une Experience Manager Assets en tant que [!DNL Cloud Service] est autorisée à se connecter à un seul client Brand Portal. Vous pouvez avoir plusieurs environnements (développement, production et évaluation) pour votre Experience Manager Assets as a [!DNL Cloud Service] dans laquelle Brand Portal est activé sur un environnement.
+>Un environnement de production configuré est requis pour Experience Manager Assets as a [!DNL Cloud Service] pour se connecter au client Brand Portal.
 
 **Étapes d’activation de Brand Portal**
 
-Vous pouvez activer Brand Portal lors de la création des environnements pour votre Experience Manager Assets as a [!DNL Cloud Service] ou séparément. Supposons que les environnements ont déjà été créés et que vous deviez activer Brand Portal.
+Vous pouvez activer Brand Portal lors de la création des environnements de production pour votre Experience Manager Assets as a [!DNL Cloud Service] ou séparément. Supposons que l’environnement ait déjà été créé et que vous deviez à présent activer Brand Portal.
 
-1. Connectez-vous à Adobe Cloud Manager et accédez à **[!UICONTROL Environnements]**.
+1. Connectez-vous à Adobe Cloud Manager et accédez à **[!UICONTROL Environnements]**.
 
    La page **[!UICONTROL Environnements]** affiche la liste de tous les environnements existants.
 
@@ -69,9 +69,9 @@ Vous pouvez activer Brand Portal lors de la création des environnements pour vo
 * [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#adding-environments)
 
 
-**Connectez-vous à votre client Brand Portal** :
+**Connexion à votre client Brand Portal**:
 
-Après activation de votre client Brand Portal dans Cloud Manager, vous pouvez vous connecter à Brand Portal à partir de l’Admin Console ou directement à l’aide de l’URL du client.
+Après l’activation de votre client Brand Portal dans Cloud Manager, vous pouvez vous connecter à Brand Portal à partir de Admin Console ou directement à l’aide de l’URL du client.
 
 L’URL par défaut de votre client Brand Portal est : `https://<tenant-id>.brand-portal.adobe.com/`.
 
@@ -79,8 +79,8 @@ dans lequel l’identifiant client est l’organisation IMS.
 
 Suivez les étapes suivantes si vous n’êtes pas sûr de l’URL de Brand Portal :
 
-1. Connectez-vous à l’[Admin Console](https://adminconsole.adobe.com/) et accédez à **[!UICONTROL Produits]**.
-1. Dans le rail de gauche, sélectionnez **[!UICONTROL Brand Portal Adobe Experience Manager – Brand Portal]**.
+1. Connectez-vous à [Admin Console](https://adminconsole.adobe.com/) et accédez à **[!UICONTROL Produits]**.
+1. Dans le panneau de gauche, sélectionnez **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
 1. Cliquez sur **[!UICONTROL Accéder à Brand Portal]** pour ouvrir directement Brand Portal dans le navigateur.
 
    Vous pouvez également copier l’URL du client Brand Portal à partir du lien **[!UICONTROL Accéder à Brand Portal]** et la coller dans votre navigateur pour ouvrir l’interface de Brand Portal.
@@ -256,7 +256,7 @@ Dans Adobe Developer Console, les projets et les API sont configurés au niveau 
 
 Procédez comme suit pour générer les informations d’identification du compte de service et la charge utile JWT :
 
-1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Connectez-vous à la console Adobe Developer avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -403,7 +403,7 @@ Vous pouvez maintenant tester la configuration en vérifiant l’agent de distri
 
 Perform the following steps to validate the configuration:
 
-1. Log in to AEM Assets.
+1. Login to AEM Assets.
 
 1. From the **Tools** panel, navigate to **[!UICONTROL Deployment]** > **[!UICONTROL Distribution]**.
 
