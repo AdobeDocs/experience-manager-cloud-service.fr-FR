@@ -1,12 +1,12 @@
 ---
 title: Intégration [!DNL Experience Manager Assets] avec  [!DNL Adobe Workfront]
-description: Présentation de l’intégration entre [!DNL Assets] et [!DNL Workfront]
+description: Présentation de l’intégration entre  [!DNL Assets]  et  [!DNL Workfront]
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
-source-git-commit: 5937ee8328be1af7e7f3f4765e24d65b074e02f1
+source-git-commit: 20dbcff249e3fc1beab24600cd54ce1bf4085d38
 workflow-type: tm+mt
-source-wordcount: '1272'
+source-wordcount: '1267'
 ht-degree: 63%
 
 ---
@@ -39,7 +39,7 @@ Consultez les sections relatives à la prise en charge de la plateforme et aux [
 >
 >* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
 >
->* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur amélioré. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version du connecteur amélioré, consultez l’étape 5(a) des [instructions d’installation du connecteur amélioré](workfront-connector-install.md).
+>* Adobe prend en charge les versions 1.7.4 et supérieures du connecteur. Les versions précédentes et personnalisées ne sont pas prises en charge. Pour vérifier la version du connecteur amélioré, consultez l’étape 5(a) des [instructions d’installation du connecteur amélioré](workfront-connector-install.md).
 >
 >* Consultez la section [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen, consultez le [Guide d’examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
@@ -50,7 +50,7 @@ Vous trouverez ci-dessous les détails des fonctionnalités disponibles à trave
 
 | Fonctionnalité | Description | [!DNL Workfront] et [!DNL Assets Essentials] *Aucun connecteur (OOTB)* | [!DNL Workfront] pour [!DNL AEM] connector *Nécessite Connecteur* | [!DNL Workfront for Experience Manager enhanced connector] *Nécessite Connecteur* | Workfront et [!DNL Experience Manager as a Cloud Service] *Aucun connecteur (OOTB)* |
 |----|----|----|------|-----|-----|
-| Méthodes de déploiement | Approprié pour quelle offre [!DNL Assets]. | Assets Essentials | Cloud Service, Adobe Managed Services, On-Premise | Cloud Service, Adobe Managed Services, On-Premise | Cloud Service, Adobe Managed Services, On-Premise |
+| Méthodes de déploiement | Approprié pour quelle offre [!DNL Assets]. | Assets Essentials | Cloud Service, Adobe Managed Services, On-Premise | Cloud Service, Adobe Managed Services, On-Premise | Cloud Service |
 | **Général** |
 | Envoyer des fichiers numériques depuis [!DNL Workfront] vers [!DNL Assets] | La dernière version d’un document WF peut être chargée vers AEM Assets, et sera liée en tant que nouvelle version du document. | ✓ | ✓ | ✓ | ✓ |
 | Lier manuellement des dossiers AEM à des objets Workfront | Les dossiers AEM existants peuvent être liés en tant que dossier Workfront. Ses ressources enfants sont liées en tant que nouveaux documents Workfront. | ✓ | ✓ | ✓ | ✓ |
@@ -66,7 +66,7 @@ Vous trouverez ci-dessous les détails des fonctionnalités disponibles à trave
 | Rediriger les utilisateurs vers AEM en cas de clic sur les ressources liées dans Workfront | Les utilisateurs sont redirigés vers AEM pour prévisualiser une ressource liée dans Workfront. | ✓ | ✓ | ✓ | À venir |
 | Créer automatiquement des dossiers AEM liés dans Workfront | Créez automatiquement des dossiers d’AEM liés dans Workfront à l’aide des états du projet. Configurez automatiquement les dossiers d’AEM en fonction des Portfolios, programmes et projets Workfront. | Non | Non | ✓ | Non |
 | Accès direct aux référentiels d’AEM à partir de Workfront | Permet aux utilisateurs d’accéder aux référentiels AEM disponibles configurés dans Workfront. | ✓ | Non | Non | ✓ |
-| Création automatique de dossiers d’AEM liés dans Workfront | Créer automatiquement les dossiers d’AEM liés dans Workfront à l’aide de l’option disponible dans l’onglet Documents . | ✓ | Non | Non | ✓ |
+| Création de dossiers d’AEM liés dans Workfront | Créez manuellement des dossiers d’AEM liés dans Workfront à l’aide de l’option disponible dans l’onglet Documents . | ✓ | Non | Non | ✓ |
 | Synchronisation des commentaires | Synchroniser automatiquement les commentaires des ressources de [!DNL Workfront] vers [!DNL Assets] | Non | ✓ | ✓ | Non |
 | Prise en charge de plusieurs environnements Workfront se connectant à un seul environnement AEM | Les utilisateurs de plusieurs environnements Workfront peuvent se connecter à un seul environnement AEM. | ✓ | Non | Non | ✓ |
 | Prise en charge de plusieurs environnements AEM se connectant à un seul environnement Workfront | Les utilisateurs d’un seul environnement Workfront peuvent envoyer ou lier des ressources entre plusieurs environnements AEM. | ✓ | ✓ | ✓ | ✓ |
