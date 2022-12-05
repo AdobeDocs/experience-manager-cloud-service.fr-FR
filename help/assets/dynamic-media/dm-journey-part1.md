@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
+source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
 workflow-type: tm+mt
-source-wordcount: '3710'
+source-wordcount: '3712'
 ht-degree: 99%
 
 ---
@@ -254,7 +254,7 @@ Après le chargement, il existe différentes manières de prévisualiser les ren
 ![Prévisualisation d’un rendu d’une ressource en fonction du paramètre d’image prédéfini Grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Prévisualisation d’un rendu d’une ressource en fonction du paramètre d’image prédéfini « Grand » sélectionné. Cliquez sur le bouton URL. Le chemin d’URL qui en résulte contient le nom du paramètre d’image prédéfini « Grand » et peut être utilisé dans une page web._
 
-L’URL ci-dessus est en ligne ! [Faites un essai](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$).
+L’URL ci-dessus est en ligne ! [Essayez](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target=&quot;_blank&quot;}.
 
 Pour prévisualiser une ressource, une autre méthode consiste à sélectionner la ressource image, puis à sélectionner un paramètre prédéfini de _Visionneuses_ comme illustré ci-dessous.
 

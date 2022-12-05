@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: c82707d07d888c48d3c02a76d58171720a6279eb
+source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
 workflow-type: tm+mt
-source-wordcount: '2878'
-ht-degree: 100%
+source-wordcount: '2900'
+ht-degree: 98%
 
 ---
 
@@ -47,15 +47,15 @@ L’identifiant ou le nom de la ressource, `AdobeStock_28563982`, est en vert. N
 
 Enfin, les paramètres de traitement des images, `?wid=1000&fmt=jpeg&qlt=85`, sont indiqués en jaune à la fin.
 
-L’intégralité du chemin de l’URL est actif. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85).
+L’intégralité du chemin de l’URL est actif. [Essayez](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?wid=1000&amp;fmt=jpeg&amp;qlt=85){target=&quot;_blank&quot;}.
 
 La fenêtre de votre navigateur reste ouverte sur l’URL Dynamic Media et l’image de surveillance. Regardons de plus près comment créer des rendus de l’image en modifiant simplement l’URL.
 
 ### Rendu de l’image de montre via l’URL
 
-Supprimez d’abord manuellement uniquement les règles de traitement des images dans le chemin de l’URL ; laissez le nom du serveur, le nom du compte et l’identifiant de ressource ou le nom de l’image. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982).
+Supprimez d’abord manuellement uniquement les règles de traitement des images dans le chemin de l’URL ; laissez le nom du serveur, le nom du compte et l’identifiant de ressource ou le nom de l’image. [Essayez](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982){target=&quot;_blank&quot;}.
 
-Ajoutez maintenant un paramètre de traitement d’image à la fin de l’URL. Dans le champ URL, à droite du nom de l’image, saisissez `?wid=500`, puis appuyez sur **[!UICONTROL Entrée]**. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500).
+Ajoutez maintenant un paramètre de traitement d’image à la fin de l’URL. Dans le champ URL, à droite du nom de l’image, saisissez `?wid=500`, puis appuyez sur **[!UICONTROL Entrée]**. [Essayez](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=500){target=&quot;_blank&quot;}.
 
 Notez qu’un nouveau rendu de la montre est généré. Il est essentiel de comprendre, à partir de cet exercice simple de modification de la largeur de l’image, que l’image vue est entièrement générée de manière dynamique.
 
@@ -64,9 +64,9 @@ Dès que vous appuyez sur **[!UICONTROL Entrée]**, le navigateur revient au ser
 
 Dynamic Media propose de nombreux paramètres de traitement des images que vous pouvez utiliser pour affiner vos ressources d’image sur les pages web. Vous pouvez [consulter une liste d’entre eux ici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=fr).
 
-Essayez maintenant d’ajouter un paramètre de rotation à l’image de montre. Et la fin du chemin de l’URL, qui suit immédiatement `wid=1000`, saisissez `&rotate=90`, puis appuyez sur **[!UICONTROL Entrée]**. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90).
+Essayez maintenant d’ajouter un paramètre de rotation à l’image de montre. Et la fin du chemin de l’URL, qui suit immédiatement `wid=1000`, saisissez `&rotate=90`, puis appuyez sur **[!UICONTROL Entrée]**. [Essayez](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=90){target=&quot;_blank&quot;}.
 
-La montre est encore légèrement inclinée à gauche. Remplacez la valeur de rotation de `90` par `92`, puis appuyez sur **[!UICONTROL Entrée]**. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9).
+La montre est encore légèrement inclinée à gauche. Remplacez la valeur de rotation de `90` par `92`, puis appuyez sur **[!UICONTROL Entrée]**. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000&amp;rotate=9).{target=&quot;_blank&quot;}.
 
 Encore une fois, au moment où vous appuyez **[!UICONTROL Entrée]**, un nouveau rendu de la montre est généré presque instantanément. Voilà le type de performances auxquelles vous pouvez vous attendre, ce qui explique pourquoi Dynamic Media peut envoyer plus de 800 000 requêtes d’image, _par seconde_, lors d’un week-end chargé ou d’un jour férié majeur.
 
@@ -128,7 +128,7 @@ Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est 
 ![Application du paramètre d’image prédéfini *Medium* pour générer un rendu d’image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Application du paramètre d’image prédéfini Medium pour générer un rendu d’image_
 
-Vous copiez l’URL puis la collez dans votre navigateur pour vérifier l’aspect de l’image. [Faites un essai](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$). Dans votre navigateur, notez que le nom du paramètre d’image prédéfini _Medium_ est présent dans le chemin d’accès URL complet.
+Vous copiez l’URL puis la collez dans votre navigateur pour vérifier l’aspect de l’image. [Essayez](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}. Dans votre navigateur, notez que le nom du paramètre d’image prédéfini _Medium_ est présent dans le chemin d’accès URL complet.
 
 Vous pouvez voir le type de clarté affiché dans l’image. Cette qualité est en partie due à la façon dont la casserole de chocolat a été photographiée. Mais c’est aussi parce qu’avec Dynamic Media vous pouvez stocker des images plus grandes que celles diffusées sur les canaux numériques.
 
@@ -159,7 +159,7 @@ _Début de la création d’une visionneuse d’images_
 
 Pour créer la visionneuse d’images, choisissez **[!UICONTROL Visionneuse d’images]** dans le menu déroulant **[!UICONTROL Créer]**. Notez que le menu contient également des options pour créer une **[!UICONTROL visionneuse de supports variés]**, une **[!UICONTROL visionneuse à 360°]** et une **[!UICONTROL visionneuse de carrousel]**. Vous créez ces visionneuses de la même manière qu’une visionneuse d’images.
 
-Une visionneuse de supports variés peut contenir des images, des visionneuses d’échantillons, des visionneuses à 360°, et des visionneuses des vidéos et de vidéos adaptatives. [Faites un essai](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Une visionneuse à 360° simule l’action consistant à faire pivoter un objet pour l’examiner. Les visionneuses à 360° permettent d’afficher des détails visuels importants sous n’importe quel angle. [Faites un essai](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400).
+Une visionneuse de supports variés peut contenir des images, des visionneuses d’échantillons, des visionneuses à 360°, et des visionneuses des vidéos et de vidéos adaptatives. [Faites un essai](https://s7d9.scene7.com/s7viewers/html5/MixedMediaViewer.html?asset=Scene7SharedAssets/Mixed_Media_Set_Sample). Une visionneuse à 360° simule l’action consistant à faire pivoter un objet pour l’examiner. Les visionneuses à 360° permettent d’afficher des détails visuels importants sous n’importe quel angle. [Essayez](https://s7d9.scene7.com/s7viewers/html5/SpinViewer.html?asset=Scene7SharedAssets/SpinSet_Sample&amp;stagesize=500,400){target=&quot;_blank&quot;}.
 
 La création d’une visionneuse d’images est simple. Il vous suffit d’ajouter les ressources d’image que vous souhaitez inclure dans la visionneuse.
 
@@ -185,13 +185,13 @@ Dans l’aperçu, vous pouvez sélectionner les échantillons de chaussures de c
 ![La visionneuse d’images Running utilisant la visionneuse Fenêtre déroulante](/help/assets/dynamic-media/assets/dm-image-set-flyout-viewer.png)
 _La visionneuse d’images `Running` utilisant la visionneuse Fenêtre déroulante._
 
-Dans ce cas, l’observateur `Flyout` a été sélectionné. À ce stade, vous pouvez prévisualiser la visionneuse d’images dans l’observateur. Mais il est préférable de l’afficher dans votre navigateur, de la même manière que le verrait un client. Vous pouvez sélectionner **[!UICONTROL URL]** dans le coin inférieur gauche, puis copier l’URL et la coller dans votre navigateur. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout).
+Dans ce cas, l’observateur `Flyout` a été sélectionné. À ce stade, vous pouvez prévisualiser la visionneuse d’images dans l’observateur. Mais il est préférable de l’afficher dans votre navigateur, de la même manière que le verrait un client. Vous pouvez sélectionner **[!UICONTROL URL]** dans le coin inférieur gauche, puis copier l’URL et la coller dans votre navigateur. [Essayez](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/Flyout){target=&quot;_blank&quot;}.
 
 L’URL unique vous permet d’utiliser la visionneuse d’images et l’observateur in situ sur votre site web. Vous avez peut-être remarqué dans l’exemple précédent la mention **[!UICONTROL Incorporer]** à droite du bouton URL. En sélectionnant **[!UICONTROL Incorporer]**, vous pouvez copier le code de cette visionneuse d’images ou cet observateur et l’ajouter à une page web ou à un composant Experience Manager Sites.
 
 La visionneuse Fenêtre déroulante est une visionneuse prête à l’emploi par défaut dont vous pouvez modifier les propriétés. Vous pouvez également, de la même manière que vous créez un paramètre d’image prédéfini, créer votre propre observateur personnalisé.
 
-Maintenant, supposons que votre équipe de vente et de marketing n’aime pas la visionneuse Fenêtre déroulante. Ils aiment la fonction de zoom, mais souhaitent que les clients voient l’effet de zoom directement sur les chaussures. Dans ce cas, il vous suffit d’appliquer la visionneuse Zoom intégré à la visionneuse d’images, puis de copier et coller son URL dans votre navigateur pour voir comment elle se comporte. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom).
+Maintenant, supposons que votre équipe de vente et de marketing n’aime pas la visionneuse Fenêtre déroulante. Ils aiment la fonction de zoom, mais souhaitent que les clients voient l’effet de zoom directement sur les chaussures. Dans ce cas, il vous suffit d’appliquer la visionneuse Zoom intégré à la visionneuse d’images, puis de copier et coller son URL dans votre navigateur pour voir comment elle se comporte. [Essayez](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target=&quot;_blank&quot;}.
 
 Lorsque vous déplacez le pointeur de la souris sur la chaussure, vous effectuez un zoom avant sur cette image, et vous pouvez voir plus de détails en déplaçant le pointeur. Ce niveau de détail est proportionnel à la taille de l’image qui a été initialement téléchargée dans Dynamic Media.
 
@@ -201,8 +201,8 @@ Vous en savez maintenant un peu plus sur les visionneuses d’images et les outi
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 
-* Visionneuse `ZoomVertical_dark` appliquée à une ressource image. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark).
-* Visionneuse `Zoom_light` appliquée à une image. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light).
+* Visionneuse `ZoomVertical_dark` appliquée à une ressource image. [Essayez](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_96311480&amp;config=jpearldemo/ZoomVertical_dark){target=&quot;_blank&quot;}.
+* Visionneuse `Zoom_light` appliquée à une image. [Essayez](https://s7d1.scene7.com/s7viewers/html5/BasicZoomViewer.html?asset=jpearldemo/AdobeStock_38827423&amp;config=jpearldemo/Zoom_light){target=&quot;_blank&quot;}.
 
 ## Facultatif - En savoir plus
 
