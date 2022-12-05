@@ -11,9 +11,9 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 1200dc41af22ae8f34f33d176de1c0db7c7ae424
+source-git-commit: 9e425601c493740050d61e8025ea3f9e3dbdc4d8
 workflow-type: tm+mt
-source-wordcount: '2900'
+source-wordcount: '2902'
 ht-degree: 98%
 
 ---
@@ -59,7 +59,7 @@ Ajoutez maintenant un paramètre de traitement d’image à la fin de l’URL. D
 
 Notez qu’un nouveau rendu de la montre est généré. Il est essentiel de comprendre, à partir de cet exercice simple de modification de la largeur de l’image, que l’image vue est entièrement générée de manière dynamique.
 
-Maintenant, remplacez la valeur de largeur de `500` pixels par `1000` pixels, puis appuyez sur **[!UICONTROL Entrée]**. [Faites un essai](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000).
+Maintenant, remplacez la valeur de largeur de `500` pixels par `1000` pixels, puis appuyez sur **[!UICONTROL Entrée]**. [Essayez](https://s7d1.scene7.com/is/image/jpearldemo/AdobeStock%5F28563982?wid=1000){target=&quot;_blank}.
 Dès que vous appuyez sur **[!UICONTROL Entrée]**, le navigateur revient au serveur d’images Dynamic Media. Il génère un nouveau rendu de la montre, en fonction de la nouvelle valeur de largeur que vous venez de saisir, puis renvoie la nouvelle image au navigateur et la met en cache.
 
 Dynamic Media propose de nombreux paramètres de traitement des images que vous pouvez utiliser pour affiner vos ressources d’image sur les pages web. Vous pouvez [consulter une liste d’entre eux ici](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=fr).
@@ -128,7 +128,9 @@ Lorsque vous avez terminé, vous enregistrez le paramètre prédéfini, qui est 
 ![Application du paramètre d’image prédéfini *Medium* pour générer un rendu d’image](/help/assets/dynamic-media/assets/dm-medium-image-preset.png)
 _Application du paramètre d’image prédéfini Medium pour générer un rendu d’image_
 
-Vous copiez l’URL puis la collez dans votre navigateur pour vérifier l’aspect de l’image. [Essayez](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}. Dans votre navigateur, notez que le nom du paramètre d’image prédéfini _Medium_ est présent dans le chemin d’accès URL complet.
+Vous copiez l’URL puis la collez dans votre navigateur pour vérifier l’aspect de l’image. [Essayez](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_74043302?$Medium$){target=&quot;_blank&quot;}.
+
+Dans votre navigateur, notez que le nom du paramètre d’image prédéfini _Medium_ est présent dans le chemin d’accès URL complet.
 
 Vous pouvez voir le type de clarté affiché dans l’image. Cette qualité est en partie due à la façon dont la casserole de chocolat a été photographiée. Mais c’est aussi parce qu’avec Dynamic Media vous pouvez stocker des images plus grandes que celles diffusées sur les canaux numériques.
 
