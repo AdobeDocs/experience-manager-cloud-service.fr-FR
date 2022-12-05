@@ -4,7 +4,7 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: ad5bc4b1ae80421bc843d323c214c64334609de6
+source-git-commit: bc46064093c22d8902a673e76fdb53c626a5cbb0
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 93%
@@ -238,7 +238,7 @@ Les fichiers ou les dossiers dont les noms correspondent à ces conditions sont 
 Pour les noms de fichiers de ressources, le nom et le chemin JCR sont assainis à l’aide de l’API : `JcrUtil.escapeIllegalJcrChars`.
 
 * Les caractères Unicode ne sont pas modifiés.
-* Remplacez les caractères spéciaux par leur code d’échappement d’URL, par exemple, `new asset.png` est remplacé par `new%20asset.png` :
+* Remplacez les caractères spéciaux par leur code d’échappement d’URL, par exemple, `new%asset.png` est remplacé par `new%25asset.png` :
 
    ```
                    URL escape code   
@@ -247,16 +247,14 @@ Pour les noms de fichiers de ressources, le nom et le chemin JCR sont assainis �
    %               %25
    '               %27
    *               %2A
-   .               %2E
    /               %2F
    :               %3A
    [               %5B
-   \n              %5Cn
-   \r              %5Cr
-   \t              %5Ct
+   \n              %0A
+   \r              %0D
+   \t              %09
    ]               %5D
    |               %7C
-   space char      %20
    ```
 
 **Gestion du nom du dossier dans l’importation en bloc**
