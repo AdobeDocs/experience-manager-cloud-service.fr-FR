@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: e16d107dff1817e8b62de86e295590b13d853bf0
+source-git-commit: aea668753222e981a7f2c8bd71bc6c790aa32a15
 workflow-type: tm+mt
-source-wordcount: '3708'
-ht-degree: 100%
+source-wordcount: '3710'
+ht-degree: 99%
 
 ---
 
@@ -261,7 +261,7 @@ Pour prévisualiser une ressource, une autre méthode consiste à sélectionner 
 ![Prévisualisation d’une ressource en fonction du paramètre prédéfini « ZoomVertical_light » de la visionneuse](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Prévisualisation d’une ressource en fonction du paramètre prédéfini de visionneuse « ZoomVertical_light » sélectionné. Le pointeur de la souris (`+`) a été déplacé sur la montre pour effectuer un zoom avant. Remarquez les boutons URL et Incorporer._
 
-Le rendu ci-dessus est en ligne ! [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light).
+Le rendu ci-dessus est en ligne ! [Essayez](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}.
 
 ## Facultatif - En savoir plus
 
