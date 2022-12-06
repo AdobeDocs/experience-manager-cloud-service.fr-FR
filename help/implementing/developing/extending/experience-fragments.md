@@ -2,10 +2,10 @@
 title: Présentation des fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: 912ecb02f0f38fc2766a81445c448f869964f94a
 workflow-type: tm+mt
-source-wordcount: '1527'
-ht-degree: 100%
+source-wordcount: '1651'
+ht-degree: 92%
 
 ---
 
@@ -48,6 +48,19 @@ Par exemple :
 Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts supplémentaires ; le module [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) est utilisé comme transformateur. Cette configuration se trouve dans l’emplacement suivant :
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
+
+### Configuration de la génération de rendu par HTML {#configuring-html-rendition-generation}
+
+Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le pipeline est défini à l’adresse `/libs/experience-fragments/config/rewriter/experiencefragments`. Le transformateur de HTML prend en charge les options suivantes :
+
+* `allowedCssClasses`
+   * Une expression RegEx correspondant aux classes CSS qui doivent être conservées dans le rendu final.
+   * Cela s’avère utile si le client souhaite supprimer certaines classes CSS spécifiques.
+* `allowedTags`
+   * Liste des balises de HTML à autoriser dans le rendu final.
+   * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h6, br, noscript, div, link et script
+
+Il est recommandé de configurer le module de réécriture à l’aide d’une superposition. Voir [Recouvrements dans AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
 
 ## Modèles de fragments d’expérience {#templates-for-experience-fragments}
 
