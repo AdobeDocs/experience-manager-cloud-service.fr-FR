@@ -2,10 +2,10 @@
 title: Modification de programmes
 description: Découvrez comment modifier vos programmes de production et Sandbox pour ajuster leurs options après les avoir créés.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: d805ed744af0e5c95863a1c67439b384cc5d11b2
+source-git-commit: b56b8b448060cd446c6f17689882bc0515e27d25
 workflow-type: tm+mt
-source-wordcount: '450'
-ht-degree: 100%
+source-wordcount: '513'
+ht-degree: 87%
 
 ---
 
@@ -55,6 +55,12 @@ Pour modifier un programme, procédez comme suit.
 1. Cliquez sur **Mettre à jour** pour enregistrer vos modifications dans le programme.
 
 Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
+
+Si la sécurité de votre programme de production a été améliorée, une **Sécurité renforcée** est disponible dans la **Modifier le programme** pour confirmer que la fonctionnalité est principale pour le programme.
+
+![Principal de sécurité amélioré pour un programme](assets/edit-program-enhanced.png)
+
+Ce paramètre ne peut pas être modifié une fois le programme créé. Pour plus d’informations sur l’option de sécurité améliorée, reportez-vous à la section [Création de programmes de production](creating-production-programs.md) document.
 
 ## Suppression de programmes Sandbox {#delete-sandbox-program}
 
