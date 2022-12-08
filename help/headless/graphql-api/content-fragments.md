@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f773671e3c62e2dff6f843d42a5b36211e2d1fc3
-workflow-type: ht
-source-wordcount: '2708'
-ht-degree: 100%
+source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
+workflow-type: tm+mt
+source-wordcount: '4179'
+ht-degree: 60%
 
 ---
 
@@ -101,18 +101,22 @@ GraphQL permet de réaliser des requêtes pour renvoyer, au choix :
 
 * Une **[liste d’entrées](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-Vous pouvez également effectuer les opérations suivantes :
+AEM fournit des fonctionnalités pour convertir les requêtes (les deux types) en [Requêtes persistantes, qui peuvent être mises en cache](/help/headless/graphql-api/persisted-queries.md) par Dispatcher et le réseau de diffusion de contenu.
 
-* [Requêtes persistantes, mises en cache](/help/headless/graphql-api/persisted-queries.md)
+### Bonnes pratiques de requête GraphQL (Dispatcher et CDN) {#graphql-query-best-practices}
 
-### Bonnes pratiques de requête GraphQL (Dispatcher) {#graphql-query-best-practices}
-
-Les [Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) constituent la méthode recommandée pour les raisons suivantes :
+Le [Requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) sont la méthode recommandée à utiliser sur les instances de publication en tant que :
 
 * Elles sont mises en cache.
 * Elles sont gérées de manière centralisée par AEM as a Cloud Service.
 
-Les requêtes directes et/ou POST ne sont pas recommandées, car elles ne sont pas mises en cache. Par conséquent, dans une instance par défaut, Dispatcher est configuré pour bloquer ces requêtes.
+>[!NOTE]
+>
+>En règle générale, il n’y a pas de dispatcher/CDN sur l’auteur. Il n’y a donc pas d’intérêt à utiliser des requêtes persistantes dans cet environnement. à part les tester.
+
+Les requêtes GraphQL utilisant des requêtes de POST ne sont pas recommandées, car elles ne sont pas mises en cache. Par conséquent, sur une instance par défaut, Dispatcher est configuré pour bloquer ces requêtes.
+
+Bien que GraphQL prenne également en charge les requêtes de GET, celles-ci peuvent atteindre des limites (par exemple, la longueur de l’URL) qui peuvent être évitées à l’aide de requêtes persistantes.
 
 >[!NOTE]
 >
@@ -121,6 +125,8 @@ Les requêtes directes et/ou POST ne sont pas recommandées, car elles ne sont p
 >* Créer une variable d’environnement Cloud Manager appelée `ENABLE_GRAPHQL_ENDPOINT`
 >* avec la valeur `true`.
 
+
+<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -146,6 +152,10 @@ Les cas d’utilisation peuvent dépendre du type d’environnement AEM as a Clo
 
 Les autorisations sont celles requises pour accéder aux ressources.
 
+Les requêtes GraphQL sont exécutées avec l’autorisation de l’utilisateur AEM de la requête sous-jacente. Si l’utilisateur ne dispose pas d’un accès en lecture à certains fragments (stockés en tant que ressources), ils ne feront pas partie du jeu de résultats.
+
+En outre, l’utilisateur doit avoir accès à un point de terminaison GraphQL pour pouvoir exécuter des requêtes GraphQL.
+
 ## Création de schémas {#schema-generation}
 
 GraphQL est une API dans laquelle les données doivent être clairement structurées et organisées par type.
@@ -160,7 +170,7 @@ Pour les fragments de contenu, les schémas GraphQL (structure et types) reposen
 >
 >En d’autres termes, vous devez vous assurer qu’aucune donnée sensible n’est disponible, car elle peut être divulguée de cette façon ; par exemple, cela concerne des informations qui peuvent être présentes sous forme de noms de champ dans la définition de modèle.
 
-Par exemple, si un utilisateur a créé un modèle de fragment de contenu nommé `Article`, AEM génère l’objet `article` de type `ArticleModel`. Les champs de ce type correspondent aux champs et aux types de données définis dans le modèle.
+Par exemple, si un utilisateur a créé un modèle de fragment de contenu appelé `Article`, puis AEM génère un type GraphQL `ArticleModel`. Les champs de ce type correspondent aux champs et aux types de données définis dans le modèle. En outre, il crée certains points d’entrée pour les requêtes de ce type, comme `articleByPath` ou `articleList`.
 
 1. Un modèle de fragment de contenu :
 
@@ -173,11 +183,15 @@ Par exemple, si un utilisateur a créé un modèle de fragment de contenu nommé
 
    * Trois d’entre eux ont été contrôlés par l’utilisateur : `author`, `main` et `referencearticle`.
 
-   * Les autres champs ont été ajoutés automatiquement par AEM et représentent des méthodes utiles pour fournir des informations sur un certain fragment de contenu ; dans cet exemple, `_path`, `_metadata` et `_variations`. Ces [champs d’assistance](#helper-fields) sont précédés d’un `_` pour distinguer ce qui a été défini par l’utilisateur de ce qui a été généré automatiquement.
+   * Les autres champs ont été automatiquement ajoutés par AEM et représentent des méthodes utiles pour fournir des informations sur un certain fragment de contenu ; dans cet exemple, (la variable [champ d’assistance](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Après qu’un utilisateur a créé un fragment de contenu reposant sur le modèle d’article, il peut être interrogé via GraphQL. Vous trouverez des exemples à la section [Exemples de Requêtes](/help/headless/graphql-api/sample-queries.md#graphql-sample-queries) (basée sur un [modèle de structure de fragment de contenu à utiliser avec GraphQL](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)).
 
 Dans GraphQL pour AEM, le schéma est flexible. Cela signifie qu’il est généré automatiquement à chaque fois qu’un modèle de fragment de contenu est créé, mis à jour ou supprimé. Les caches de schémas de données sont également actualisés lorsque vous mettez à jour un modèle de fragment de contenu.
+
+<!-- move the following to a separate "in depth" page -->
+
+Les caches de schémas de données sont également actualisés lorsque vous mettez à jour un modèle de fragment de contenu.
 
 Le service Sites GraphQL écoute (en arrière-plan) toutes les modifications apportées à un modèle de fragment de contenu. Lorsque des mises à jour sont détectées, seule cette partie du schéma est régénérée. Cette optimisation permet de gagner du temps et d’apporter de la stabilité.
 
@@ -199,6 +213,8 @@ Par exemple, si vous :
 
 Le schéma est desservi par le même point d’entrée que les requêtes GraphQL, le client gérant le fait que le schéma est appelé avec l’extension `GQLschema`. Par exemple, l’exécution d’une requête `GET` simple sur `/content/cq:graphql/global/endpoint.GQLschema` entraîne la sortie du schéma avec le type de contenu : `text/x-graphql-schema;charset=iso-8859-1`.
 
+<!-- move through to here to a separate "in depth" page -->
+
 ### Génération de schémas – Modèles non publiés {#schema-generation-unpublished-models}
 
 Lorsque des fragments de contenu sont imbriqués, il se peut qu’un modèle de fragment de contenu parent soit publié, mais pas un modèle référencé.
@@ -215,46 +231,46 @@ Le schéma comporte des champs individuels de deux catégories de base :
 
 * Champs que vous générez.
 
-   Une sélection de [types de champs](#field-types) est utilisée pour créer des champs en fonction de la configuration du modèle de fragment de contenu. Les noms des champs proviennent du champ **Nom de la propriété** du **Type de données**.
+   Une sélection de [Types de données](#Data-types) sont utilisés pour créer des champs en fonction de la configuration de votre modèle de fragment de contenu. Les noms des champs proviennent de la variable **Nom de la propriété** du champ **Type de données** .
 
-   * Il faut également tenir compte de la propriété **Rendre comme**, car les utilisateurs peuvent configurer certains types de données, par exemple comme une seule ligne de texte ou avec plusieurs champs.
+   * Il y a également la **Render As** , car les utilisateurs peuvent configurer certains types de données. Par exemple, un champ de texte d’une seule ligne peut être configuré pour contenir plusieurs textes d’une seule ligne en choisissant `multifield` dans la liste déroulante.
 
 * GraphQL pour AEM génère également un certain nombre de [champs d’assistance](#helper-fields).
 
-   Ils servent à identifier un fragment de contenu ou à obtenir plus d’informations sur un fragment.
-
-### Types de champs {#field-types}
+### Types de données {#data-types}
 
 GraphQL pour AEM prend en charge une liste de types. Tous les types de données de modèles de fragments de contenu pris en charge et les types GraphQL correspondants sont représentés :
 
 | Modèle de fragment de contenu – Type de données | Type GraphQL | Description |
 |--- |--- |--- |
 | Une seule ligne de texte | Chaîne, [Chaîne] |  Utilisé pour les chaînes simples telles que les noms d’auteurs, les noms d’emplacements, etc.. |
-| Plusieurs lignes de texte | Chaîne |  Utilisé pour la sortie de texte, tel que le corps d’un article |
+| Plusieurs lignes de texte | Chaîne, [Chaîne] |  Utilisé pour la sortie de texte, tel que le corps d’un article |
 | Nombre |  Flottant, [Flottant] | Utilisé pour afficher le nombre à virgule flottante et les nombres réguliers |
 | Booléen |  Booléen |  Utilisé pour afficher les cases à cocher → simples instructions vrai/faux |
 | Date et heure | Calendrier |  Utilisé pour afficher la date et l’heure au format ISO 8086 : Selon le type sélectionné, trois versions sont disponibles dans AEM GraphQL : `onlyDate`, `onlyTime`, `dateTime` |
 | Énumération |  Chaîne |  Utilisé pour afficher une option à partir d’une liste d’options définies lors de la création du modèle |
 |  Balises |  [Chaîne] |  Utilisé pour afficher une liste de chaînes représentant les balises utilisées dans AEM |
-| Référence de contenu |  Chaîne |  Utilisé pour afficher le chemin vers une autre ressource dans AEM |
+| Référence de contenu |  Chaîne, [Chaîne] |  Utilisé pour afficher le chemin vers une autre ressource dans AEM |
 | Référence du fragment |  *Un type de modèle* |  Utilisé pour référencer un autre fragment de contenu d’un certain type de modèle, défini lors de la création du modèle |
 
 ### Champs d’assistance {#helper-fields}
 
 Outre les types de données des champs générés par l’utilisateur, GraphQL pour AEM génère également un certain nombre de champs *d’assistance* afin de faciliter l’identification d’un fragment de contenu ou de fournir des informations supplémentaires sur un fragment de contenu.
 
+Ces [champs d’assistance](#helper-fields) sont précédés d’un `_` pour distinguer ce qui a été défini par l’utilisateur de ce qui a été généré automatiquement.
+
 #### Chemin {#path}
 
-Le champ de chemin est utilisé comme identificateur dans GraphQL. Il représente le chemin d’accès de la ressource de fragment de contenu dans le référentiel AEM. Nous l’avons choisi comme identificateur d’un fragment de contenu, car il :
+Le champ de chemin d’accès est utilisé comme identifiant dans AEM GraphQL. Il représente le chemin d’accès de la ressource de fragment de contenu dans le référentiel AEM. Nous l’avons choisi comme identificateur d’un fragment de contenu, car il :
 
 * est unique dans AEM ;
 * peut facilement être récupéré.
 
-Le code suivant affiche les chemins de tous les fragments de contenu créés à partir du modèle de fragment de contenu `Person`.
+Le code suivant affiche les chemins d’accès de tous les fragments de contenu créés en fonction du modèle de fragment de contenu. `Author`, comme indiqué dans le tutoriel WKND.
 
-```xml
+```graphql
 {
-  personList {
+  authorList {
     items {
       _path
     }
@@ -262,15 +278,15 @@ Le code suivant affiche les chemins de tous les fragments de contenu créés à 
 }
 ```
 
-Pour récupérer un fragment de contenu unique d’un type spécifique, vous devez commencer par déterminer son chemin d’accès. par exemple :
+Pour récupérer un fragment de contenu unique d’un type spécifique, vous devez commencer par déterminer son chemin d’accès. Par exemple :
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/sofia-sj-berg") {
     item {
       _path
       firstName
-      name
+      lastName
     }
   }
 }
@@ -303,11 +319,10 @@ Par exemple, si vous souhaitez récupérer le titre d’un fragment de contenu, 
 
 Pour rechercher des métadonnées :
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/sofia-sj-berg") {
     item {
-      _path
       _metadata {
         stringMetadata {
           name
@@ -334,9 +349,9 @@ Voir [Modèle de recherche de métadonnées – Répertorier les métadonnées d
 
 Le champ `_variations` a été implémenté pour simplifier la recherche de variations d’un fragment de contenu. Par exemple :
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/wknd-shared/en/contributors/ian-provo") {
     item {
       _variations
     }
@@ -344,11 +359,15 @@ Le champ `_variations` a été implémenté pour simplifier la recherche de vari
 }
 ```
 
+>[!NOTE]
+>
+>Notez que la variable `_variations` ne contient pas de champ `master` variation, car techniquement, les données d’origine (référencées comme *Principal* dans l’interface utilisateur) n’est pas considérée comme une variation explicite.
+
 Voir [Modèle de requête – Toutes les villes avec une variante nommée](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation).
 
 >[!NOTE]
 >
->Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur (de secours) par défaut.
+>Si la variation donnée n’existe pas pour un fragment de contenu, les données d’origine (également appelées variation principale) sont renvoyées comme valeur par défaut (de secours).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -358,24 +377,51 @@ Voir [Modèle de requête – Toutes les villes avec une variante nommée](/help
 
 GraphQL permet de placer des variables dans la requête. Pour plus d’informations, voir la [documentation GraphQL des Variables](https://graphql.org/learn/queries/#variables).
 
-Par exemple, pour obtenir tous les fragments de contenu de type `Article` qui présentent une variation spécifique, vous pouvez spécifier la variable `variation` dans GraphiQL.
+Par exemple, pour obtenir tous les fragments de contenu de type `Author` dans une variation spécifique (le cas échéant), vous pouvez spécifier l’argument . `variation` dans GraphiQL.
 
 ![Variables GraphQL](assets/cfm-graphqlapi-03.png "Variables GraphQL")
 
-```xml
-### query
-query GetArticlesByVariation($variation: String!) {
-    articleList(variation: $variation) {
-        items {
-            _path
-            author
-        }
+**Requête**:
+
+```graphql
+query($variation: String!) {
+  authorList(variation: $variation) {
+    items {
+      _variation
+      lastName
+      firstName
     }
+  }
 }
- 
-### in query variables
+```
+
+**Variables de requête**:
+
+```json
 {
-    "variation": "Introduction"
+  "variation": "another"
+}
+```
+
+Cette requête renverra la liste complète des auteurs. Les auteurs sans `another` la variation revient aux données d’origine (`_variation` rapport `master` dans ce cas).
+
+Si vous souhaitez limiter la liste aux auteurs qui fournissent la variation spécifiée (et ignorer les auteurs qui reviennent aux données d’origine), vous devez appliquer une [filter](#filtering):
+
+```graphql
+query($variation: String!) {
+  authorList(variation: $variation, filter: {
+    _variation: {
+      _expressions: {
+        value: $variation
+      }
+    }
+  }) {
+    items {
+      _variation
+      lastName
+      firstName
+    }
+  }
 }
 ```
 
@@ -387,18 +433,22 @@ Par exemple, vous pouvez inclure ici le champ `adventurePrice` dans une requête
 
 ![Directives GraphQL](assets/cfm-graphqlapi-04.png "Directives GraphQL")
 
-```xml
-### query
+**Requête**:
+
+```graphql
 query GetAdventureByType($includePrice: Boolean!) {
   adventureList {
     items {
-      adventureTitle
-      adventurePrice @include(if: $includePrice)
+      title
+      price @include(if: $includePrice)
     }
   }
 }
- 
-### in query variables
+```
+
+**Variables de requête**:
+
+```json
 {
     "includePrice": true
 }
@@ -410,30 +460,93 @@ Vous pouvez également utiliser le filtrage dans vos requêtes GraphQL pour renv
 
 Le filtrage utilise une syntaxe basée sur des expressions et des opérateurs logiques.
 
-Par exemple, la requête (de base) suivante filtre toutes les personnes dont le nom est `Jobs` ou `Smith` :
+La partie la plus atomique est une expression unique qui peut être appliquée au contenu d&#39;un certain champ. Il compare le contenu du champ avec une valeur constante donnée.
 
-```xml
-query {
-  personList(filter: {
-    name: {
+Par exemple, l’expression
+
+```graphql
+{
+  value: "some text"
+  _op: EQUALS
+}
+```
+
+compare le contenu du champ à la valeur `some text` et réussit si le contenu est égal à la valeur . Sinon, l’expression échouera.
+
+Les
+
+Les opérateurs suivants peuvent être utilisés pour comparer les champs à une certaine valeur :
+
+| Opérateur | Type(s) | L’expression réussit si ... |
+|--- |--- |--- |
+| `EQUALS` | `String`, `ID`, `Boolean` | ...la valeur est exactement la même que le contenu du champ. |
+| `EQUALS_NOT` | `String`, `ID` | ... la valeur est *not* identique au contenu du champ |
+| `CONTAINS` | `String` | ... le contenu du champ contient la valeur (`{ value: "mas", _op: CONTAINS }` correspond à `Christmas`, `Xmas`, `master`, ...) |
+| `CONTAINS_NOT` | `String` | ... le contenu du champ est *not* contient la valeur |
+| `STARTS_WITH` | `ID` | ... l’identifiant commence par une certaine valeur (`{ value: "/content/dam/", _op: STARTS_WITH` correspond à `/content/dam/path/to/fragment`, mais pas `/namespace/content/dam/something` |
+| `EQUAL` | `Int`, `Float` | ...la valeur est exactement la même que le contenu du champ. |
+| `UNEQUAL` | `Int`, `Float` | ... la valeur est *not* identique au contenu du champ |
+| `GREATER` | `Int`, `Float` | ...le contenu du champ est supérieur à la valeur |
+| `GREATER_EQUAL` | `Int`, `Float` | ...le contenu du champ est supérieur ou égal à la valeur |
+| `LOWER` | `Int`, `Float` | ...le contenu du champ est inférieur à la valeur |
+| `LOWER_EQUAL` | `Int`, `Float` | ...le contenu du champ est inférieur ou égal à la valeur |
+| `AT` | `Calendar`, `Date`, `Time` | ...le contenu du champ est exactement identique à la valeur (paramètre de fuseau horaire inclus) |
+| `NOT_AT` | `Calendar`, `Date`, `Time` | ... le contenu du champ est *not* identique à la valeur |
+| `BEFORE` | `Calendar`, `Date`, `Time` | ...le moment indiqué par la valeur est antérieur au moment indiqué par le contenu du champ. |
+| `AT_OR_BEFORE` | `Calendar`, `Date`, `Time` | ...le moment indiqué par la valeur est avant ou au même moment indiqué par le contenu du champ. |
+| `AFTER` | `Calendar`, `Date`, `Time` | ... le moment indiqué par la valeur est le moment où le contenu du champ indique le point dans le temps. |
+| `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ...le moment indiqué par la valeur est postérieur ou en même temps identifié par le contenu du champ. |
+
+Certains types permettent également de spécifier des options supplémentaires qui modifient la manière dont une expression est évaluée :
+
+| Option | Type(s) | Description |
+|--- |--- |--- |
+| _ignoreCase | Chaîne | Ignore la casse d’une chaîne, par exemple une valeur de `time` correspond à `TIME`, `time`, `tImE`, ... |
+| _sensibilité | Flottant | Permet à une certaine marge de considérer les valeurs flottantes comme identiques (pour contourner les limitations techniques en raison de la représentation interne des valeurs flottantes ; à éviter, car cette option peut avoir un impact négatif sur les performances. |
+
+Les expressions peuvent être combinées à un ensemble à l’aide d’un opérateur logique (`_logOp`) :
+
+* `OR` - l’ensemble d’expressions réussira si au moins une expression réussit
+* `AND` : l’ensemble d’expressions réussit si toutes les expressions réussissent (par défaut).
+
+Chaque champ peut être filtré par son propre ensemble d’expressions. Les ensembles d’expressions de tous les champs mentionnés dans l’argument de filtre seront finalement combinés par son propre opérateur logique.
+
+Une définition de filtre (transmise comme `filter` à une requête) contient :
+
+* Une sous-définition pour chaque champ (le champ est accessible via son nom, par exemple il y a une `lastName` dans le filtre pour la variable `lastName` champ dans le type de champ)
+* Chaque sous-définition contient le paramètre `_expressions` , fournissant le jeu d’expressions et la variable `_logOp` champ définissant l’opérateur logique avec lequel les expressions doivent être combinées
+* Chaque expression est définie par la valeur (`value` ) et l’opérateur (`_operator` ) le contenu d’un champ doit être comparé à
+
+Notez que vous pouvez omettre `_logOp` si vous souhaitez combiner des éléments avec `AND` et `_operator` si vous souhaitez vérifier l’égalité, car il s’agit des valeurs par défaut.
+
+L’exemple suivant illustre une requête complète qui filtre toutes les personnes ayant une `lastName` de `Provo` ou contenant `sjö`, indépendamment de l’affaire :
+
+```graphql
+{
+  authorList(filter: {
+    lastname: {
       _logOp: OR
       _expressions: [
         {
-          value: "Jobs"
+          value: "sjö",
+          _operator: CONTAINS,
+          _ignoreCase: true
         },
         {
-          value: "Smith"
+          value: "Provo"
         }
       ]
     }
   }) {
     items {
-      name
+      lastName
       firstName
     }
   }
 }
 ```
+
+Bien que vous puissiez également filtrer les champs imbriqués, il n’est pas recommandé, car cela peut entraîner des problèmes de performances.
 
 Pour accéder à d’autres exemples, voir :
 
@@ -445,67 +558,121 @@ Pour accéder à d’autres exemples, voir :
 
 * [Modèles de requêtes basées sur le projet WKND](/help/headless/graphql-api/sample-queries.md#sample-queries-using-wknd-project)
 
-<!-- CQDOC-19418 -->
+## Tri {#sorting}
 
-<!--
-## Sorting {#sorting}
+Cette fonctionnalité vous permet de trier les résultats de la requête en fonction d’un champ spécifié.
 
-This feature allows you to sort the query results according to a specified field.
+Les critères de tri :
 
-For example:
+* est une liste de valeurs séparées par des virgules représentant le chemin du champ.
+   * le premier champ de la liste définit l&#39;ordre de tri Principal, le second champ est utilisé si deux valeurs du critère de tri Principal sont égales, le troisième si les deux premiers critères sont égaux, etc.
+   * notation pointillée, c’est-à-dire field1.subfield.subfield, etc..
+* avec une direction de commande facultative
+   * ASC (ascendant) ou DESC (descendant); comme l’attribut ASC par défaut est appliqué
+   * la direction peut être spécifiée par champ ; cela signifie que vous pouvez trier un champ par ordre croissant, un autre par ordre décroissant (name, firstName DESC).
+
+Par exemple :
 
 ```graphql
 query {
-  articleList(sort:"author, _uuid DESC") {
+  authorList(sort: "lastName, firstName") {
     items {
-      author
-      _path
+      firstName
+      lastName
     }
   }
 }
 ```
 
-## Paging {#paging}
-
-This feature allows you to perform paging on query types that returns a list. Two methods are provided:
-
-* `offset` and `limit` in a `List` query
-* `first` and `after` in a `Paginated` query
-
-### List query - offset and limit {#list-offset-limit}
-
-In a `...List`query you can use `offset` and `limit` to return a specific subset of results:
-
-* `offset`: Specifies the first data set to return
-* `limit`: Specifies the maximum number of data sets to be returned
-
-For example, to output the page of results containing up to five articles, starting from the fifth article from the *complete* results list:
+Et aussi :
 
 ```graphql
-query {
-   articleList(offset: 5, limit:5) {
+{
+  authorList(sort: "lastName DESC, firstName DESC") {
     items {
-      author
-      _path
+        lastName
+        firstName
     }
   }
 }
 ```
+
+<!-- to be included? -->
+
+Vous pouvez également trier un champ dans un fragment imbriqué au format de `nestedFragmentname.fieldname`.
 
 >[!NOTE]
 >
->* Paging is impacted by the order to the jcr query result set. By default it uses `jcr:path` to make sure the order is always the same. If a different sort order is used, and if that sorting cannot be done at jcr query level, then there will be a negative performance impact as the paging cannot be done in memory.
+>Cela peut avoir un impact négatif sur les performances.
+
+Par exemple :
+
+```graphql
+query {
+  articleList(sort: "authorFragment.lastName")  {
+    items {
+      title
+      authorFragment {
+        firstName
+        lastName
+        birthDay
+      }
+      slug
+    }
+  }
+}
+```
+
+## Pagination {#paging}
+
+Cette fonctionnalité vous permet d’effectuer une pagination sur les types de requête qui renvoient une liste. Deux méthodes sont fournies :
+
+* `offset` et `limit` dans `List` query
+* `first` et `after` dans `Paginated` query
+
+### Requête de liste - décalage et limite {#list-offset-limit}
+
+Dans un `...List`requête que vous pouvez utiliser `offset` et `limit` pour renvoyer un sous-ensemble spécifique de résultats :
+
+* `offset`: Spécifie le premier jeu de données à renvoyer.
+* `limit`: Spécifie le nombre maximal de jeux de données à renvoyer.
+
+Par exemple, pour générer la page de résultats contenant jusqu’à cinq articles, à partir du cinquième article de la *complete* liste de résultats :
+
+```graphql
+query {
+   articleList(offset: 5, limit: 5) {
+    items {
+      authorFragment {
+        lastName
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+
+<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+
+>[!NOTE]
 >
->* The higher the offset, the more time it will take to skip the items from the complete jcr query result set. An alternative solution for large result sets is to use the Paginated query with `first` and `after` method.
+>* La pagination nécessite un ordre de tri stable pour fonctionner correctement sur plusieurs requêtes demandant différentes pages du même jeu de résultats. Par défaut, il utilise le chemin d’accès au référentiel de chaque élément du jeu de résultats pour s’assurer que l’ordre est toujours le même. Si un ordre de tri différent est utilisé et si ce tri ne peut pas être effectué au niveau de la requête jcr, il y aura un impact négatif sur les performances, car l’ensemble de résultats doit être chargé en mémoire avant que les pages puissent être déterminées.
+>
+>* Plus le décalage est élevé, plus il faudra de temps pour ignorer les éléments du jeu de résultats complet de la requête jcr. Une autre solution pour les jeux de résultats volumineux consiste à utiliser la requête Paginée avec `first` et `after` .
 
-### Paginated query - first and after {#paginated-first-after}
 
-The `...Paginated` query type reuses most of the `...List` query type features (filtering, sorting), but instead of using `offset`/`limit` arguments, it uses the standard `first`/`after` arguments defined by [GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
+### Requête paginée - Première et après {#paginated-first-after}
 
-* `first`: The `n` first items to return. The default is `50`.
-* `after`: The cursor-id as returned in the complete result set - if `cursor` is selected.
+Le `...Paginated` le type de requête réutilise la plupart des `...List` fonctions de type requête (filtrage, tri), mais au lieu d’utiliser `offset`/`limit` arguments, il utilise la variable `first`/`after` arguments tels que définis par [Spécification des connexions au curseur GraphQL](https://relay.dev/graphql/connections.htm). Vous trouverez une introduction moins formelle dans la [Présentation de GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
 
-For example, output the page of results containing up to five adventures, starting from the given cursor item in the *complete* results list:
+* `first`: Le `n` les premiers éléments à renvoyer.
+La valeur par défaut est `50`.
+La valeur maximale est `100`.
+* `after`: Le curseur qui détermine le début de la page demandée ; notez que l’élément représenté par le curseur n’est pas inclus dans le jeu de résultats ; le curseur d’un élément est déterminé par `cursor` du champ `edges` structure.
+
+Par exemple, générez la page de résultats contenant jusqu’à cinq aventures, en commençant par l’élément de curseur donné dans la variable *complete* liste de résultats :
 
 ```graphql
 query {
@@ -513,7 +680,7 @@ query {
         edges {
           cursor
           node {
-            adventureTitle
+            title
           }
         }
         pageInfo {
@@ -524,34 +691,37 @@ query {
 }
 ```
 
+<!-- When available link to BP -->
+<!-- Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. For more information, see the [Best Practices document](link). -->
+
 >[!NOTE]
 >
->* Paging defaults use `_uuid` for ordering to ensure the order of results is always the same. When `sort` is used, `_uuid` is added as a last order-by field.
+>* Par défaut, la pagination utilise l’UUID du noeud de référentiel représentant le fragment pour assurer que l’ordre des résultats est toujours le même. When `sort` est utilisé, l’UUID est implicitement utilisé pour assurer un tri unique ; même pour deux éléments avec des clés de tri identiques.
 >
->* Performance is expected to be degraded if sort/filter parameters cannot be executed at jcr query level, as the query first has to gather the results in memory then sort them, then finally apply paging. Therefore it is recommended to use filter/sort fields stored at root level.
--->
+>* En raison de contraintes techniques internes, les performances se dégradent si le tri et le filtrage sont appliqués aux champs imbriqués. Il est donc recommandé d’utiliser des champs de filtrage/tri stockés au niveau racine. Il s’agit également de la méthode recommandée si vous souhaitez interroger des jeux de résultats paginés volumineux.
+
 
 ## GraphQL pour AEM – Résumé des extensions {#graphql-extensions}
 
 Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM, il existe quelques extensions :
 
-<!-- CQDOC-19418 -->
+* Si vous prévoyez une liste de résultats :
+   * Ajoutez `List` au nom du modèle ; par exemple, `cityList`
+   * Voir [Exemple de requête – Toutes les informations sur toutes les villes](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
-<!--
-* If you expect a list of results:
-  * add `List` to the model name; for example,  `cityList`
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
-  
-  You can then:
-  
-  * [Sort the results](#sorting)
+   Vous pouvez ensuite :
 
-  * Return a page of results using either:
+   * [Tri des résultats](#sorting)
 
-    * [A List query with offset and limit](#list-offset-limit)
-    * [A Paginated query with first and after](#paginated-first-after)
-  * See [Sample Query - All Information about All Cities](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
--->
+      * `ASC` : croissant
+      * `DESC` : décroissant
+   * Renvoi d’une page de résultats à l’aide de l’une des méthodes suivantes :
+
+      * [Requête Liste avec décalage et limite](#list-offset-limit)
+      * [Une requête paginée avec les première et après](#paginated-first-after)
+   * Voir [Exemple de requête – Toutes les informations sur toutes les villes](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
+
+
 
 * Si vous avez besoin d’un seul résultat :
    * Utilisez le nom du modèle ; p. ex. city.
@@ -627,18 +797,6 @@ Pour accéder au point d’entrée GraphQL à partir d’un site web externe, vo
 ## Authentification {#authentication}
 
 Voir [Authentification pour les requêtes distantes AEM GraphQL sur les fragments de contenu](/help/headless/security/authentication.md).
-
-<!-- to be addressed later -->
-
-<!--
-## Sorting {#sorting}
--->
-
-<!-- to be addressed later -->
-
-<!--
-## Paging {#paging}
--->
 
 ## FAQ {#faqs}
 
