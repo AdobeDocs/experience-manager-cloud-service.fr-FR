@@ -3,13 +3,13 @@ title: Création de la structure de contenu pour votre application
 description: Découvrez comment créer la structure qui sert de base à tout votre contenu headless à l’aide des modèles de fragment de contenu AEM.
 hidefromtoc: true
 index: false
-source-git-commit: 6010fb398ec8c04ae9153f313585bcf38ccaa26d
+exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 1%
 
 ---
-
 
 # Création de la structure de contenu pour votre application {#content-structure}
 

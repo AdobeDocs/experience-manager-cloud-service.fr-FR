@@ -3,10 +3,10 @@ title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requ
 description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: dba0223fd05956934fe5a3405f21fcd099637726
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
 source-wordcount: '1554'
-ht-degree: 94%
+ht-degree: 92%
 
 ---
 
@@ -29,7 +29,7 @@ Pour obtenir de l’aide à ce sujet, voir les éléments suivants :
 
 * Un [exemple de structure de fragment de contenu](#content-fragment-structure-graphql)
 
-* Un certain nombre d’[exemples de requêtes GraphQL](#graphql-sample-queries), basés sur l’exemple de structure de fragments de contenu (modèles de fragments de contenu et fragments de contenu associés).
+* Et certains [exemple de requêtes GraphQL](#graphql-sample-queries), en fonction de l’exemple de structure de fragment de contenu (modèles de fragment de contenu et fragments de contenu associés).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"

@@ -2,13 +2,13 @@
 title: Notes de mise à jour de Cloud Manager 2022.11.0 dans Adobe Experience Manager as a Cloud Service
 description: Consultez les notes de mise à jour de Cloud Manager 2022.11.0 dans AEM as a Cloud Service.
 feature: Release Information
-source-git-commit: 1fce3525a0c48a68f268634e52f3872a49b7545f
+exl-id: 1014efb5-dddb-4997-8cef-afe6dfa61462
+source-git-commit: 5d9cd24ad11d03f61fa1a84227423d833e00841a
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 40%
+ht-degree: 62%
 
 ---
-
 
 # Notes de mise à jour de Cloud Manager 2022.11.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
 
@@ -30,9 +30,9 @@ La date de publication de la version 2022.11.0 de Cloud Manager dans AEM as a Cl
 >
 > Cette fonctionnalité sera déployée par étapes au cours des prochaines semaines pour tous les clients.
 
-* Lorsqu’un environnement associé à un pipeline a un état qui ne permet pas l’exécution du pipeline, l’action d’exécution est désactivée avec une info-bulle d’explication.
+* Lorsqu’un environnement associé à un pipeline a un statut qui ne permet pas l’exécution du pipeline, l’action d’exécution est désactivée avec une info-bulle d’explication.
 * Un message amélioré a été ajouté à l’interface utilisateur lors de la **Ajout d’un programme** est désactivé en raison de droits insuffisants pour le client.
 
 ## Correctifs {#bug-fixes}
 
-* Les commentaires pendant le pipeline de modification de production ont été améliorés pour capturer les occurrences peu fréquentes d’un ou de plusieurs environnements manquants.
+* Les commentaires pendant la modification du pipeline de production ont été améliorés pour capturer les occurrences peu fréquentes d’un ou de plusieurs environnements manquants.

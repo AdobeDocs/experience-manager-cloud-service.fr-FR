@@ -3,13 +3,13 @@ title: Personnalisation du contenu d’un exemple d’application React
 description: Utilisez un exemple d’application React pour savoir comment personnaliser du contenu à l’aide de l’ensemble de fonctionnalités sans interface utilisateur dans AEM as a Cloud Service.
 hidefromtoc: true
 index: false
-source-git-commit: 62c8be81d0d46e69b44cc803419fafcce2e93d33
+exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1371'
 ht-degree: 0%
 
 ---
-
 
 # Personnalisation du contenu d’un exemple d’application React {#customize-app}
 

@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 9ad36e1b81d41a49cd318bbbb6ff8f4aaf6efd4a
+source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
 workflow-type: tm+mt
-source-wordcount: '4179'
-ht-degree: 60%
+source-wordcount: '4174'
+ht-degree: 58%
 
 ---
 
@@ -122,11 +122,9 @@ Bien que GraphQL prenne également en charge les requêtes de GET, celles-ci peu
 >
 >Pour autoriser les requêtes directes et/ou POST dans Dispatcher, vous pouvez demander à votre administrateur système de :
 >
->* Créer une variable d’environnement Cloud Manager appelée `ENABLE_GRAPHQL_ENDPOINT`
+>* Créez un [Variable d’environnement Cloud Manager](/help/implementing/cloud-manager/environment-variables.md) appelé `ENABLE_GRAPHQL_ENDPOINT`
 >* avec la valeur `true`.
 
-
-<!-- maybe add a link to the documentation that explains how to create that environment variable -->
 
 >[!NOTE]
 >
@@ -261,7 +259,7 @@ Ces [champs d’assistance](#helper-fields) sont précédés d’un `_` pour dis
 
 #### Chemin {#path}
 
-Le champ de chemin d’accès est utilisé comme identifiant dans AEM GraphQL. Il représente le chemin d’accès de la ressource de fragment de contenu dans le référentiel AEM. Nous l’avons choisi comme identificateur d’un fragment de contenu, car il :
+Le champ de chemin d’accès est utilisé comme identifiant dans AEM GraphQL. Il représente le chemin d’accès de la ressource de fragment de contenu dans le référentiel AEM. Nous l’avons choisi comme identifiant d’un fragment de contenu, car il :
 
 * est unique dans AEM ;
 * peut facilement être récupéré.
@@ -501,8 +499,8 @@ Certains types permettent également de spécifier des options supplémentaires 
 
 | Option | Type(s) | Description |
 |--- |--- |--- |
-| _ignoreCase | Chaîne | Ignore la casse d’une chaîne, par exemple une valeur de `time` correspond à `TIME`, `time`, `tImE`, ... |
-| _sensibilité | Flottant | Permet à une certaine marge de considérer les valeurs flottantes comme identiques (pour contourner les limitations techniques en raison de la représentation interne des valeurs flottantes ; à éviter, car cette option peut avoir un impact négatif sur les performances. |
+| `_ignoreCase` | `String` | Ignore la casse d’une chaîne, par exemple une valeur de `time` correspond à `TIME`, `time`, `tImE`, ... |
+| `_sensitiveness` | `Float` | Permet une certaine marge pour `float` valeurs à considérer comme identiques (pour contourner les limitations techniques en raison de la représentation interne des `float` les valeurs; à éviter, car cette option peut avoir un impact négatif sur les performances. |
 
 Les expressions peuvent être combinées à un ensemble à l’aide d’un opérateur logique (`_logOp`) :
 
@@ -513,7 +511,7 @@ Chaque champ peut être filtré par son propre ensemble d’expressions. Les ens
 
 Une définition de filtre (transmise comme `filter` à une requête) contient :
 
-* Une sous-définition pour chaque champ (le champ est accessible via son nom, par exemple il y a une `lastName` dans le filtre pour la variable `lastName` champ dans le type de champ)
+* Une sous-définition pour chaque champ (le champ est accessible via son nom, par exemple il y a une `lastName` dans le filtre pour la variable `lastName` champ dans le Type de données (champ)
 * Chaque sous-définition contient le paramètre `_expressions` , fournissant le jeu d’expressions et la variable `_logOp` champ définissant l’opérateur logique avec lequel les expressions doivent être combinées
 * Chaque expression est définie par la valeur (`value` ) et l’opérateur (`_operator` ) le contenu d’un champ doit être comparé à
 
@@ -652,15 +650,15 @@ query {
 }
 ```
 
-<!-- When available link to BP and replace "jcr query level" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
 
-<!-- When available link to BP and replace "jcr query result set" with a more neutral term. -->
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
 
 >[!NOTE]
 >
->* La pagination nécessite un ordre de tri stable pour fonctionner correctement sur plusieurs requêtes demandant différentes pages du même jeu de résultats. Par défaut, il utilise le chemin d’accès au référentiel de chaque élément du jeu de résultats pour s’assurer que l’ordre est toujours le même. Si un ordre de tri différent est utilisé et si ce tri ne peut pas être effectué au niveau de la requête jcr, il y aura un impact négatif sur les performances, car l’ensemble de résultats doit être chargé en mémoire avant que les pages puissent être déterminées.
+>* La pagination nécessite un ordre de tri stable pour fonctionner correctement sur plusieurs requêtes demandant différentes pages du même jeu de résultats. Par défaut, il utilise le chemin d’accès au référentiel de chaque élément du jeu de résultats pour s’assurer que l’ordre est toujours le même. Si un ordre de tri différent est utilisé et si ce tri ne peut pas être effectué au niveau de la requête JCR, il y aura un impact négatif sur les performances, car l’ensemble de résultats doit être chargé en mémoire avant que les pages puissent être déterminées.
 >
->* Plus le décalage est élevé, plus il faudra de temps pour ignorer les éléments du jeu de résultats complet de la requête jcr. Une autre solution pour les jeux de résultats volumineux consiste à utiliser la requête Paginée avec `first` et `after` .
+>* Plus le décalage est élevé, plus il faudra de temps pour ignorer les éléments du jeu de résultats de requête JCR complet. Une autre solution pour les jeux de résultats volumineux consiste à utiliser la requête Paginée avec `first` et `after` .
 
 
 ### Requête paginée - Première et après {#paginated-first-after}

@@ -1,15 +1,15 @@
 ---
 title: Extraction de contenu via l’API GraphQL
-description: Découvrez comment utiliser les fragments de contenu et l’API GraphQL en tant que système de gestion de contenu sans interface.
+description: Découvrez comment utiliser les fragments de contenu et l’API GraphQL en tant que système de gestion de contenu headless.
 hidefromtoc: true
 index: false
-source-git-commit: a832ed1d81866a6470b47d8e30f5c242b10d1422
+exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
+source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 1%
 
 ---
-
 
 # Extraction de contenu via l’API GraphQL {#extract-content}
 
@@ -27,9 +27,9 @@ Tout d’abord, vous apprendrez à exécuter deux types de requêtes différents
 
 Vous démarrez sur l’Explorateur GraphQL. Vous pouvez créer et exécuter des requêtes sur votre contenu sans affichage.
 
-![Éditeur de requêtes GraphQL](assets/extract-content/query-editor.png)
+![GraphQL Query Editor](assets/extract-content/query-editor.png)
 
-Si vous souhaitez accéder à l’Explorateur GraphQL vous-même en dehors des instructions in-app, il se trouve à l’aide de l’icône d’Adobe située en haut à gauche de la page. Cela ouvre la navigation globale d’AEM. À partir de là, vous choisissez la variable **Outils** puis **Général** -> **Éditeur de requêtes GraphQL**.
+Si vous souhaitez accéder à l’Explorateur GraphQL vous-même en dehors des instructions in-app, l’icône d’Adobe située en haut à gauche de la page s’affiche. Cela ouvre la navigation globale d’AEM. À partir de là, vous choisissez la variable **Outils** puis **Général** -> **Éditeur de requêtes GraphQL**.
 
 >[!TIP]
 >

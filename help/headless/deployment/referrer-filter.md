@@ -3,7 +3,7 @@ title: Configuration du filtre Référent avec AEM découplé
 description: Le filtre Référent Adobe Experience Manager permet d’accéder à partir d’hôtes tiers. Une configuration OSGi pour le filtre Référent est nécessaire pour activer l’accès au point d’entrée GraphQL pour les applications découplées.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: d8cc024fa5128e4b27098d1bff92588487fe101a
+source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
 workflow-type: tm+mt
 source-wordcount: '277'
 ht-degree: 69%
