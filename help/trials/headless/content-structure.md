@@ -4,9 +4,9 @@ description: Découvrez comment créer la structure qui sert de base à tout vot
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1149'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,21 @@ ht-degree: 1%
 Les fragments de contenu permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Grâce à elles, vous pouvez préparer du contenu prêt à être utilisé à plusieurs emplacements et sur plusieurs canaux, idéal pour une diffusion sans interface. Les modèles de fragment de contenu sont utilisés pour définir la structure de ce contenu et sont la première chose que vous devez créer pour gérer votre contenu sans affichage.
 
 Pour vous aider à comprendre comment cela se fait, ce module d’AEM Trials vous guide tout au long du processus avec une visite rapide et interactive, en créant d’abord le modèle, puis en ajoutant sa structure. Ce document complète la visite guidée intégrée au produit, couvrant les mêmes étapes et la liaison à des ressources supplémentaires, le cas échéant.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_br_test"
+>title="Lancement de l’éditeur de modèles"
+>abstract="La création d’un modèle de fragment de contenu commence par la création d’un élément de modèle dans le workflow d’administration du modèle, puis l’ajout d’éléments de structure à l’aide de l’éditeur de modèle de fragment de contenu.<br><br>Cliquez ci-dessous pour lancer la fonctionnalité dans un nouvel onglet et suivez ce document d’apprentissage pour créer votre premier fragment de contenu."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview_guide_newline_test"
+>title="Lancement de l’éditeur de modèles"
+>abstract="La création d’un modèle de fragment de contenu commence par la création d’un élément de modèle dans le workflow d’administration du modèle, puis l’ajout d’éléments de structure à l’aide de l’éditeur de modèle de fragment de contenu.\n\nCliquez ci-dessous pour lancer la fonctionnalité dans un nouvel onglet, puis suivez ce document d’apprentissage pour créer votre premier fragment de contenu."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_overview"
+>title="Création de la structure de contenu pour votre application"
+>abstract="Lorsque vous suivez notre série de guides interactifs, vous apprendrez à créer la structure (également appelée modèle de fragment de contenu) qui sert de base à tout votre contenu sans interface."
 
 ## Console du modèle de fragment de contenu {#content-fragment-model-console}
 

@@ -4,9 +4,9 @@ description: Utilisez un exemple d’application React pour savoir comment perso
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1400'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,11 @@ ht-degree: 0%
 AEM Essais pour les sans-tête est préchargé avec une simple application React pour présenter du contenu sans-tête. Dans ce module, vous apprendrez à prévisualiser cette application et à modifier son contenu en permutant une image et en créant un moment Shoppable pour elle.
 
 L’application elle-même est basée sur la structure des fragments de contenu. À l’aide de l’éditeur de fragment de contenu d’AEM, vous pouvez modifier le contenu de vos applications. Pour vous aider à comprendre comment cela se fait, ce module d’AEM Trials vous guide tout au long du processus avec une visite rapide et interactive. Ce document sert de complément à la visite interactive, couvrant les mêmes étapes et la liaison à des ressources supplémentaires, le cas échéant.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_react_app"
+>title="Personnalisation du contenu dans un exemple d’application React"
+>abstract="Nous avons configuré une application React moderne que vous pouvez utiliser pour apprendre à personnaliser le contenu à l’aide de l’ensemble de fonctionnalités sans interface."
 
 ## Éditeur de fragment de contenu {#fragment-editor}
 

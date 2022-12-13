@@ -4,9 +4,9 @@ description: Utilisez le modèle de fragment de contenu que vous avez créé pr�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '814'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 1%
 # Créer du contenu sans affichage {#create-content}
 
 En suivant le module d’apprentissage intégré au produit, apprenez à utiliser [les modèles de fragment de contenu que vous avez créés précédemment ;](content-structure.md) pour créer du contenu qui peut être utilisé pour la création de pages ou comme base pour votre contenu sans en-tête. Ce document sert de complément à la visite interactive, couvrant les mêmes étapes et la liaison à des ressources supplémentaires, le cas échéant.
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content"
+>title="Créer un contenu"
+>abstract="En vous basant sur les modèles que vous avez créés dans le module 1, vous apprendrez à créer du contenu qui peut être utilisé pour la création de pages ou comme base de votre contenu sans en-tête."
 
 ## Fragments de contenu {#introduction}
 

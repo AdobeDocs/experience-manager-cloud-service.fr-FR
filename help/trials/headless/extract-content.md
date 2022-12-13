@@ -4,9 +4,9 @@ description: Découvrez comment utiliser les fragments de contenu et l’API Gra
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 02112c4db42fe1108bd398229a159a7763ec9a0c
+source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1216'
 ht-degree: 1%
 
 ---
@@ -23,13 +23,18 @@ Tout d’abord, vous apprendrez à exécuter deux types de requêtes différents
 >
 >Si vous souhaitez plus d’informations sur l’API GraphQL, reportez-vous à la section [Section Ressources supplémentaires](#additional-resources) à la fin de ce module pour le guide de l’API GraphQL.
 
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql"
+>title="Extraction de contenu à l’aide de l’API GraphQL"
+>abstract="Dans ce module, vous découvrirez comment utiliser les fragments de contenu et l’API GraphQL en tant que système de gestion de contenu sans affichage."
+
 ## Explorateur GraphQL {#graphql-explorer}
 
-Vous démarrez sur l’Explorateur GraphQL. Vous pouvez créer et exécuter des requêtes sur votre contenu sans affichage.
+Vous démarrez dans l’Explorateur GraphQL. Vous pouvez créer et exécuter des requêtes sur votre contenu sans affichage.
 
-![GraphQL Query Editor](assets/extract-content/query-editor.png)
+![Éditeur de requêtes GraphQL](assets/extract-content/query-editor.png)
 
-Si vous souhaitez accéder à l’Explorateur GraphQL vous-même en dehors des instructions in-app, l’icône d’Adobe située en haut à gauche de la page s’affiche. Cela ouvre la navigation globale d’AEM. À partir de là, vous choisissez la variable **Outils** puis **Général** -> **Éditeur de requêtes GraphQL**.
+Si vous souhaitez accéder à l’Explorateur GraphQL vous-même en dehors des instructions in-app, il se trouve à l’aide de l’icône d’Adobe située en haut à gauche de la page. Cela ouvre la navigation globale d’AEM. À partir de là, vous choisissez la variable **Outils** puis **Général** -> **Éditeur de requêtes GraphQL**.
 
 >[!TIP]
 >
