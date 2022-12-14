@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: df892e49307a5c125016f3b21e4b5551020eb2b6
+source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
 workflow-type: tm+mt
-source-wordcount: '2753'
-ht-degree: 66%
+source-wordcount: '2833'
+ht-degree: 64%
 
 ---
 
@@ -220,7 +220,10 @@ En règle générale, il n’est pas nécessaire d’invalider le cache de Dispa
 
 ### Invalidation du cache du Dispatcher pendant l’activation/la désactivation {#cache-activation-deactivation}
 
-Comme les versions précédentes d’AEM, la publication ou l’annulation de publication des pages efface le contenu du cache de Dispatcher. Si un problème de mise en cache est suspecté, les clients doivent republier les pages en question et s’assurer qu’un hôte virtuel correspondant à la variable `ServerAlias` localhost, qui est requis pour l’invalidation du cache de Dispatcher.
+Comme les versions précédentes d’AEM, la publication ou l’annulation de publication des pages efface le contenu du cache de Dispatcher. Si un problème de mise en cache est suspecté, vous devez republier les pages en question et vous assurer qu’un hôte virtuel correspondant à la variable `ServerAlias` localhost, qui est requis pour l’invalidation du cache de Dispatcher.
+
+>[!NOTE]
+>Pour une invalidation Dispatcher correcte, assurez-vous que les requêtes de &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;.adobeaemcloud.com&quot; et &quot;.adobeaemcloud.net&quot; sont toutes mises en correspondance et gérées par une configuration vhost afin que cette requête puisse être traitée. Pour ce faire, vous pouvez faire l’une ou l’autre des correspondances globales &quot;*&quot; dans une configuration vhost fourre-tout en suivant le modèle de la référence. [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) ou en s’assurant que la liste mentionnée précédemment est capturée par l’un des hôtes virtuels.
 
 Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’une ressource de l’auteur, elle utilise l’agent de vidage pour invalider les chemins appropriés sur son Dispatcher. Le chemin d’accès mis à jour est supprimé du cache de Dispatcher, ainsi que de ses parents, jusqu’à un niveau (vous pouvez le configurer avec l’événement [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#invalidating-files-by-folder-level)).
 
