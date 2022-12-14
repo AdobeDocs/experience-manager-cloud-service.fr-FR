@@ -2,10 +2,10 @@
 title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
 workflow-type: tm+mt
-source-wordcount: '2402'
-ht-degree: 99%
+source-wordcount: '2456'
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ Vous devez tout d’abord charger la SPA externe vers votre projet AEM.
 
 Maintenant que la SPA externe fait partie de votre projet AEM, vous devez la configurer dans AEM.
 
-### Inclusion des modules du SDK SPA Adobe {#include-spa-sdk-packages}
+### Inclusion des modules du SDK de SPA Adobe {#include-spa-sdk-packages}
 
 Pour tirer parti des fonctionnalités de SPA AEM, vous pouvez utiliser les dépendances des trois modules suivants.
 
@@ -260,11 +260,11 @@ Il existe un certain nombre d’exigences à satisfaire pour ajouter des composa
 
 ### Conteneurs virtuels {#virtual-containers}
 
-La possibilité d’ajouter des conteneurs, même si le conteneur correspondant n’est pas encore créé dans AEM, est prise en charge. Le concept et l’approche sont semblables à ceux des [composants feuilles virtuels.](#virtual-leaf-components)
+La possibilité d’ajouter des conteneurs, même si le conteneur correspondant n’est pas encore créé dans AEM, est prise en charge. Le concept et l’approche sont semblables à celles des [composants feuilles virtuels.](#virtual-leaf-components)
 
-Le développeur front-end peut ajouter les composants de conteneur aux emplacements appropriés dans la SPA et ces composants affichent des espaces réservés lorsqu’ils sont ouverts dans l’éditeur d’AEM. L’auteur peut ensuite ajouter des composants et leur contenu au conteneur, ce qui crée les nœuds requis dans la structure JCR.
+L’équipe de développement front-end peut ajouter les composants de conteneur aux emplacements appropriés dans la SPA et ces composants affichent des espaces réservés lorsqu’ils sont ouverts dans l’éditeur d’AEM. L’auteur peut ensuite ajouter des composants et leur contenu au conteneur, ce qui crée les nœuds requis dans la structure JCR.
 
-Par exemple, si un conteneur existe déjà à l’adresse `/root/responsivegrid` et si le développeur souhaite ajouter un nouveau conteneur enfant :
+Par exemple, si un conteneur existe déjà à l’adresse `/root/responsivegrid` et que l’équipe de développement souhaite ajouter un nouveau conteneur enfant :
 
 ![Emplacement du conteneur](assets/container-location.png)
 
@@ -274,15 +274,15 @@ Lors de la modification de la page contenant ce composant dans AEM, un espace r�
 
 ![Espace réservé du conteneur](assets/container-placeholder.png)
 
-![Emplacement du conteneur dans le JCR](assets/container-jcr-structure.png)
+![Emplacement du conteneur dans JCR](assets/container-jcr-structure.png)
 
 Une fois que l’auteur ajoute un composant enfant au conteneur, le nouveau nœud de conteneur est créé avec le nom correspondant dans la structure JCR.
 
 ![Conteneur avec contenu](assets/container-with-content.png)
 
-![Conteneur avec contenu dans le JCR](assets/container-with-content-jcr.png)
+![Conteneur avec contenu dans JCR](assets/container-with-content-jcr.png)
 
-Vous pouvez désormais ajouter plus de composants et de contenu au conteneur en fonction des besoins de l’auteur, et les modifications seront conservées.
+Vous pouvez désormais ajouter plus de composants et de contenu au conteneur, selon les besoins de l’auteur, et les modifications seront conservées.
 
 #### Exigences et restrictions {#container-limitations}
 
@@ -358,6 +358,10 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 1. Vérifiez la modification de la page dans AEM.
 
    * Déployez le projet pour AEM et accédez à la page `test` créée. Le contenu de la page est désormais rendu et les composants AEM sont modifiables.
+
+## Limites de structure {#framework-limitations}
+
+Le composant RemotePage s’attend à ce que l’implémentation fournisse un manifeste de ressource comme celui [se trouve ici.](https://github.com/shellscape/webpack-manifest-plugin) Le composant RemotePage, en revanche, a été testé uniquement pour fonctionner avec l’infrastructure React (et Next.js via le composant distant page-suivant). Il ne prend donc pas en charge le chargement à distance d’applications à partir d’autres structures, telles que Angular.
 
 ## Ressources supplémentaires {#additional-resources}
 
