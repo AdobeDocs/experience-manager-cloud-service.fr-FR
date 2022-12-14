@@ -3,7 +3,7 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e90b400d37cb380476a941c526fdadcd615c118a
+source-git-commit: 666125abe28ed71e85fdcf4a3b44f26e61c7795f
 workflow-type: tm+mt
 source-wordcount: '4174'
 ht-degree: 58%
@@ -245,7 +245,7 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 | Plusieurs lignes de texte | Chaîne, [Chaîne] |  Utilisé pour la sortie de texte, tel que le corps d’un article |
 | Nombre |  Flottant, [Flottant] | Utilisé pour afficher le nombre à virgule flottante et les nombres réguliers |
 | Booléen |  Booléen |  Utilisé pour afficher les cases à cocher → simples instructions vrai/faux |
-| Date et heure | Calendrier |  Utilisé pour afficher la date et l’heure au format ISO 8086 : Selon le type sélectionné, trois versions sont disponibles dans AEM GraphQL : `onlyDate`, `onlyTime`, `dateTime` |
+| Date et heure | Calendrier |  Utilisé pour afficher la date et l’heure au format ISO 8601. Selon le type sélectionné, trois versions sont disponibles dans AEM GraphQL : `onlyDate`, `onlyTime`, `dateTime` |
 | Énumération |  Chaîne |  Utilisé pour afficher une option à partir d’une liste d’options définies lors de la création du modèle |
 |  Balises |  [Chaîne] |  Utilisé pour afficher une liste de chaînes représentant les balises utilisées dans AEM |
 | Référence de contenu |  Chaîne, [Chaîne] |  Utilisé pour afficher le chemin vers une autre ressource dans AEM |
