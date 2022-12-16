@@ -2,7 +2,7 @@
 title: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 296c456470c8187c246426ae89abca6a48aa54be
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '948'
 ht-degree: 46%
@@ -154,4 +154,3 @@ La version 1.9.1 de [!DNL Workfront for Experience Manager enhanced connector] 
 >
 >* [Intégrer  [!DNL Workfront for Experience Manager enhanced connector]  avec Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=fr)
 >* [Intégrer  [!DNL Workfront for Experience Manager enhanced connector]  avec Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-integrations.html?lang=fr)
-

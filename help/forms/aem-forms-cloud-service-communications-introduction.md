@@ -2,10 +2,10 @@
 title: Présentation de la fonctionnalité Communications de Forms as a Cloud Service
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 22018450f6d4383f3df6a9f5382a0ad6b4058480
+source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
-source-wordcount: '1137'
-ht-degree: 100%
+source-wordcount: '1442'
+ht-degree: 81%
 
 ---
 
@@ -21,7 +21,7 @@ Cette fonctionnalité fournit des API pour générer et manipuler les documents.
 
 * Des API HTTP pour une intégration plus facile aux systèmes existants Des API distinctes pour les opérations à la demande (faible latence) et par lots (opérations à débit élevé) sont incluses.
 
-* un accès sécurisé aux données. Les API Communications se connectent aux données et n’y accèdent que depuis des référentiels de données désignés par les clients, ce qui sécurisent les communications de façon très fiable.
+* un accès sécurisé aux données. Les API de communication se connectent aux données et y accèdent uniquement à partir de référentiels de données désignés par le client, ce qui rend les communications extrêmement sécurisées.
 
 ![Exemple de relevé de carte de crédit](assets/statement.png)
 Un relevé de carte de crédit peut être créé à l’aide des API Communications. Cet exemple de relevé utilise le même modèle, mais des données distinctes pour chaque client selon son utilisation de la carte de crédit.
@@ -126,13 +126,37 @@ Schéma : division d’un document source en plusieurs documents en fonction de
 
 Vous pouvez utiliser les API de manipulation de documents pour convertir un document PDF en document conforme au format PDF/A et déterminer si un document PDF est conforme au format PDF/A. PDF / A est un format d’archivage, prévu pour la conservation sur le long terme du contenu d’un document. Les polices sont incorporées dans le document et le fichier est décompressé. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. De plus, un document PDF/A ne contient aucune donnée audio et vidéo.
 
+## Utilitaires de document
+
+Les API synchrones des utilitaires de document vous permettent de convertir des documents entre les formats de fichiers PDF et XDP, ainsi que d’interroger des informations sur un document de PDF. Il est possible, par exemple, de vérifier si un document PDF contient des commentaires ou des pièces jointes.
+
+### Récupérer les propriétés de documents PDF
+
+Vous pouvez [requête d’un document PDF](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) pour obtenir les informations suivantes :
+
+* Is a PDF Document : Vérifiez si le document source est un document PDF.
+* Est un formulaire à remplir : Vérifiez si le document du PDF source est un formulaire à remplir.
+* Type de formulaire : Récupérez le type de formulaire du document.
+* Recherchez Pièces jointes : Vérifiez si le document du PDF source contient des pièces jointes.
+* Rechercher des commentaires : Vérifiez si le document du PDF source comporte des commentaires de révision.
+* Est un module PDF : Vérifiez si le document est un package de PDF.
+* Obtenez la version du PDF : Récupération de la variable [version du document du PDF](https://en.wikipedia.org/wiki/History_of_PDF).
+* Version d’Acrobat recommandée : Récupérez la version requise d’Acrobat (Reader) pour ouvrir le document du PDF.
+* Is a XFA Document : Vérifiez si le document du PDF source est un document de PDF basé sur XFA.
+* Is Shell PDF : Vérifiez si le document du PDF source est PDF shell. Un PDF shell contient uniquement un flux XFA, des ressources de polices et d’images, ainsi qu’une page vierge ou contenant un avertissement indiquant que le document doit être ouvert à l’aide d’Acrobat ou d’Adobe Reader. Le fichier shell PDF est utilisé avec la transformation PDF pour optimiser la livraison des transformations PDFForm uniquement.
+* Obtenez la version XFA : Récupération de la variable [Version XFA pour un document de PDF basé sur XFA](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+
+### Convertir des documents PDF en documents XDP
+
+Le [PDF à l’API XDP](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) convertit un document PDF en fichier XDP. Pour réussir la conversion d’un document PDF en fichier XDP, le document PDF doit contenir un flux XFA dans le dictionnaire.
+
 ## Types d’API de communication
 
 Communications fournit des API HTTP pour la génération de documents à la demande et par lots :
 
-* Les **[API synchrones](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents à la demande, à faible latence et à enregistrement unique. Ces API sont plus adaptées aux cas d’utilisation basés sur une action de l’utilisateur. Par exemple, la génération d’un document une fois qu’un utilisateur a rempli un formulaire.
+* Les **[API synchrones](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents à la demande, à faible latence et à enregistrement unique. Ces API sont plus adaptées aux cas d’utilisation basés sur une action de l’utilisateur. Par exemple, la génération d’un document une fois qu’un utilisateur a rempli un formulaire.
 
-* Les **[API par lot (API asynchrones)](https://www.adobe.io/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents multiples, à débit élevé et planifiés. Ces API génèrent des documents par lots. Il peut s’agir, par exemple, de factures de téléphone, de relevés de carte de crédit et de relevés de prestations générés tous les mois.
+* Les **[API par lot (API asynchrones)](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)** sont adaptées aux scénarios de génération de documents multiples, à débit élevé et planifiés. Ces API génèrent des documents par lots. Il peut s’agir, par exemple, de factures de téléphone, de relevés de carte de crédit et de relevés de prestations générés tous les mois.
 
 ## Intégration 
 
