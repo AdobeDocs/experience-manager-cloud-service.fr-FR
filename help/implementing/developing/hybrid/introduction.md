@@ -2,10 +2,10 @@
 title: Introduction et présentation des applications sur une seule page (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
 workflow-type: tm+mt
-source-wordcount: '1984'
-ht-degree: 100%
+source-wordcount: '2076'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,18 @@ Cet article présente les concepts de base des SPA, puis passe en revue l’édi
 
 L’objectif de cette introduction et de cette présentation est de montrer aux développeurs AEM pourquoi les SPA sont pertinentes, comment elles fonctionnent, comment elles sont gérées par l’éditeur de SPA AEM et en quoi elles diffèrent d’une application AEM standard.
 
-La présentation repose sur les fonctionnalités AEM standard et l’exemple d’application de projet SPA WKND. Pour suivre cette présentation, [téléchargez et installez l’exemple d’application de projet SPA WKND via GitHub ici.](https://github.com/adobe/aem-guides-wknd-spa)
+## Conditions requises {#requirements}
+
+La présentation repose sur les fonctionnalités AEM standard et l’exemple d’application de projet SPA WKND. Pour suivre cette présentation, vous devez disposer des éléments suivants.
+
+* [Dernier SDK de développement d’AEMaaCS](/help/release-notes/release-notes-cloud/release-notes-current.md)
+   * Il doit être exécuté en tant qu’environnement de développement local.
+   * Vous devez disposer des droits d’administrateur sur le système.
+* [Exemple d’application de projet WKND SPA disponible sur GitHub](https://github.com/adobe/aem-guides-wknd-spa)
+   * Téléchargez la [dernière version de l’application React](https://github.com/adobe/aem-guides-wknd-spa/releases) nommé similaire à `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+   * Téléchargez la [derniers exemples d’images pour l’application](https://github.com/adobe/aem-guides-wknd-spa/releases) nommé similaire à `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [Utilisation du gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) pour installer les deux packages comme vous le feriez pour tout autre package dans AEM.
+   * L’application n’a pas besoin d’être installée à l’aide de Maven aux fins de cette procédure pas à pas.
 
 >[!CAUTION]
 >
@@ -239,7 +250,7 @@ Les SPA peuvent être activés avec différents niveaux d’intégration au sein
 
 ## Étapes suivantes {#next-steps}
 
-Maintenant que vous comprenez l’expérience de modification SPA dans AEM et savez comment une SPA est liée à l’éditeur de SPA, nous allons examiner de plus près la conception des SPA.
+Maintenant que vous comprenez l’expérience de modification de SPA dans AEM et que vous savez comment une SPA est liée à l’éditeur de SPA, nous allons examiner de plus près la conception des SPA.
 
 * La section [Prise en main des SPA dans AEM avec React](getting-started-react.md) indique comment une SPA de base est créée pour fonctionner avec l’éditeur de SPA dans AEM à l’aide de React
 * La section [Prise en main des SPA dans AEM avec Angular](getting-started-angular.md) indique comment une SPA de base est créée pour fonctionner avec l’éditeur de SPA dans AEM à l’aide d’Angular
