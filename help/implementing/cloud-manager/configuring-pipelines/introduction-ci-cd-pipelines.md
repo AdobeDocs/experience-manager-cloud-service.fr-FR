@@ -3,12 +3,13 @@ title: Pipelines CI/CD
 description: Découvrez les pipelines CI/CD de Cloud Manager et comment les utiliser pour déployer votre code efficacement.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: 6c246444f48440c64af0951e75f2071c00e477fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '1377'
-ht-degree: 100%
+source-wordcount: '1368'
+ht-degree: 99%
 
 ---
+
 
 # Pipeline CI/CD Cloud Manager {#intro-cicd}
 
@@ -120,9 +121,9 @@ Les pipelines front-end aident vos équipes à rationaliser votre processus de c
 >
 >Un utilisateur disposant du rôle **Responsable de déploiement** peut créer et exécuter plusieurs pipelines front-end simultanément.
 >
->Toutefois, il existe une limite maximale de 300 pipelines par programme (pour tous les types de pipelines). Il peut s’agir de pipelines de qualité de code front-end ou de déploiement front-end.
+>Toutefois, il existe une limite maximale de 300 pipelines par programme (pour tous les types de pipelines).
 
-Les pipelines front-end peuvent être des pipelines de type qualité de code ou déploiement.
+Les pipelines front-end peuvent être des pipelines de qualité de code ou des pipelines de déploiement.
 
 ### Avant de configurer des pipelines front-end {#before-start}
 

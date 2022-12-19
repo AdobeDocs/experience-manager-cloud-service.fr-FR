@@ -1,13 +1,14 @@
 ---
 title: Développer des sites avec le pipeline front-end
-description: Grâce au pipeline front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité.
+description: Grâce au pipeline front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certaines considérations particulières du processus de génération front-end qui doivent être données.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 100%
+source-wordcount: '1157'
+ht-degree: 88%
 
 ---
+
 
 # Développer des sites avec le pipeline front-end {#developing-site-with-front-end-pipeline}
 
@@ -16,6 +17,20 @@ ht-degree: 100%
 >[!TIP]
 >
 >Si vous ne connaissez pas encore l’utilisation du pipeline front-end et les avantages qu’il peut apporter, consultez le [parcours de création rapide de site](/help/journey-sites/quick-site/overview.md) pour savoir comment déployer rapidement un nouveau site et personnaliser son thème de manière totalement indépendante du développement back-end.
+
+## Contrat de création front-end {#front-end-build-contract}
+
+Semblable au [environnement de création full-stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) le pipeline front-end possède son propre environnement. Les développeurs disposent d’une certaine flexibilité dans ce pipeline tant que le contrat de version front-end suivant est respecté.
+
+Le pipeline front-end requiert le projet front-end Node.js pour utiliser la variable `build` directive de script pour générer la version qui sera déployée par le pipeline front-end. C’est-à-dire que Cloud Manager utilise la commande . `npm run build` pour générer le projet déployable sur la propriété `dist` dossier.
+
+Le contenu de la variable `dist` est ce qui est finalement déployé vers AEM as a Cloud Service à partir du pipeline Cloud Manager.
+
+### Versions des noeuds {#node-versions}
+
+Par défaut, le pipeline front-end utilise le noeud 14, mais les versions 16 et 16 sont également disponibles.
+
+Vous pouvez utiliser la variable `CM_CUSTOM_VAR_NODE_VERSION` pour définir la version souhaitée.
 
 ## Source unique de vérité {#single-source-of-truth}
 

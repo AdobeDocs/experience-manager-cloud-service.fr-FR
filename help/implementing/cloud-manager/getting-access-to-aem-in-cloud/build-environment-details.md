@@ -2,12 +2,13 @@
 title: Environnement de création
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 95%
+source-wordcount: '1003'
+ht-degree: 94%
 
 ---
+
 
 # Environnement de création {#build-environment}
 
@@ -225,3 +226,7 @@ Cette même technique peut être utilisée pour installer des modules spécifiqu
 >[!NOTE]
 >
 >Installer un package système de cette manière ne l’installe pas dans l’environnement d’exécution utilisé pour Adobe Experience Manager. Si vous avez besoin d’installer un package système dans l’environnement AEM, contactez votre représentant Adobe.
+
+>[!TIP]
+>
+>Pour plus d’informations sur l’environnement de génération front-end, consultez le document . [Développement de sites avec le pipeline front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
