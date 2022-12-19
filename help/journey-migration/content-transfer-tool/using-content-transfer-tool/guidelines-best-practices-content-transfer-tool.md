@@ -2,10 +2,10 @@
 title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: c6a27c996458259904b6532c69a1bd33e2f725c6
+source-git-commit: b0d219f712b1dbbfa70d66ac14c0a66dc89ebbab
 workflow-type: tm+mt
-source-wordcount: '1597'
-ht-degree: 94%
+source-wordcount: '1595'
+ht-degree: 93%
 
 ---
 
@@ -68,7 +68,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu non publié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour plus d’informations, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#running-ctt-on-publish).
 
-* Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’intégralité de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants avec leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#cloud-migration).
+* Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’intégralité de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs existants à leurs identifiants IMS, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#cloud-migration).
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
