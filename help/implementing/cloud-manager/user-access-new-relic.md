@@ -2,7 +2,7 @@
 title: New Relic One
 description: Découvrez le service de surveillance des performances de l’application New Relic One (APM) pour AEM as a Cloud Service et comment y accéder.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: abc3be85679724fd4a8ce1ddcbd2ac5cca151953
+source-git-commit: 524212d1c68ef31d7fa01dc22296ddae54a0a3d1
 workflow-type: tm+mt
 source-wordcount: '1607'
 ht-degree: 99%
@@ -146,11 +146,11 @@ Si vous ne recevez pas d’e-mail de New Relic :
 
 Les restrictions suivantes s’appliquent à l’ajout d’utilisateurs à New Relic One :
 
-* 25 utilisateurs au maximum peuvent être ajoutés. Si le nombre maximal d’utilisateurs a été atteint, supprimez des utilisateurs afin de pouvoir en ajouter de nouveaux.
+* 30 utilisateurs au maximum peuvent être ajoutés. Si le nombre maximal d’utilisateurs a été atteint, supprimez des utilisateurs afin de pouvoir en ajouter de nouveaux.
 * Les utilisateurs ajoutés à New Relic seront du type **Restreint**, pour plus d’informations, consultez [la documentation de New Relic.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)%20any%20New%20Relic%20features.)
 * AEM as a Cloud Service ne propose que la solution New Relic One APM et ne prend pas en charge les intégrations d’alertes, de journalisation ou d’API.
 
-Pour obtenir de l’aide ou des conseils supplémentaires sur les offres de New Relic One pour votre programme AEM as a Cloud Service, veuillez ouvrir un ticket de support via le [Portail d’assistance AEM](https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html).
+Pour obtenir de l’aide ou des conseils supplémentaires sur les offres de New Relic One pour votre programme AEM as a Cloud Service, veuillez ouvrir un ticket de support via le [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## Questions fréquentes sur New Relic One {#faqs}
 
@@ -172,7 +172,7 @@ Remarque :
 
 ### Qui peut accéder aux données du service cloud de New Relic One ? {#access-new-relic-cloud}
 
-Un accès complet en lecture est accordé à un maximum de 10 membres de votre équipe. L’accès en lecture comprend toutes les mesures APM collectées par l’agent New Relic One.
+Un accès complet en lecture est accordé à un maximum de 30 membres de votre équipe. L’accès en lecture comprend toutes les mesures APM collectées par l’agent New Relic One.
 
 ### La configuration personnalisée de la fonction SSO est-elle prise en charge ? {#custom-sso}
 
