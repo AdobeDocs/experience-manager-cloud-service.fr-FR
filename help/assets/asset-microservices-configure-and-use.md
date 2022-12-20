@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 2478276c8f8a2c92a63e24e50520e8d81b9a4e26
+source-git-commit: 5545cd1739db41dbabf06cff916811123e7e09be
 workflow-type: tm+mt
-source-wordcount: '2899'
-ht-degree: 100%
+source-wordcount: '2902'
+ht-degree: 97%
 
 ---
 
@@ -111,10 +111,10 @@ Le profil personnalisé peut transformer des formats d’image, de vidéo, de do
 
 Les développeurs peuvent utiliser [!DNL Asset Compute Service] pour [créer des applications personnalisées](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=fr) qui répondent aux cas d’utilisation pris en charge. [!DNL Experience Manager] peut appeler ces applications personnalisées à partir de l’interface utilisateur en utilisant des profils personnalisés configurés par les administrateurs. [!DNL Asset Compute Service] prend en charge les cas d’utilisation suivants d’appel de services externes :
 
-* Utilisez l’[API ImageCutout](https://github.com/AdobeDocs/photoshop-api-docs-pre-release#imagecutout) d’[!DNL Adobe Photoshop] et enregistrez le résultat en tant que rendu.
+* Utilisez l’[API ImageCutout](https://developer.adobe.com/photoshop/photoshop-api-docs/) d’[!DNL Adobe Photoshop] et enregistrez le résultat en tant que rendu.
 * Appelez des systèmes tiers pour mettre à jour des données (par exemple, un système PIM).
 * Utilisez l’API [!DNL Photoshop] pour générer une variété de rendus basés sur le modèle Photoshop.
-* Utilisez l’[API Adobe Lightroom](https://github.com/AdobeDocs/lightroom-api-docs#supported-features) pour optimiser les ressources ingérées et les enregistrer en tant que rendus.
+* Utilisez l’[API Adobe Lightroom](https://developer.adobe.com/photoshop/photoshop-api-docs/) pour optimiser les ressources ingérées et les enregistrer en tant que rendus.
 
 >[!NOTE]
 >
@@ -129,17 +129,17 @@ Pour créer un profil personnalisé, procédez comme suit :
 1. Fournissez les informations suivantes.
 
    * Nom de fichier de chaque rendu et extension de fichier prise en charge.
-   * [URL de point d’entrée d’une application personnalisée Firefly](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=fr). L’application doit provenir de la même organisation que le compte Experience Manager.
+   * [URL de point d’entrée d’une application personnalisée App Builder](https://experienceleague.adobe.com/docs/asset-compute/using/extend/deploy-custom-application.html?lang=fr). L’application doit provenir de la même organisation que le compte Experience Manager.
    * Paramètres Ajouter un service pour [transmettre des informations ou des paramètres supplémentaires à l’application personnalisée](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=fr#extend).
    * Types MIME inclus et exclus pour limiter le traitement à quelques formats de fichiers spécifiques.
 
    Cliquez sur **[!UICONTROL Enregistrer]**.
 
-Les applications personnalisées sont des applications [Project Firefly](https://github.com/AdobeDocs/project-firefly) sans interface. L’application personnalisée récupère tous les fichiers fournis s’ils sont configurés avec un profil de traitement. L’application doit filtrer les fichiers.
+Les applications personnalisées sont sans interface [Créateur d’applications de projet](https://developer.adobe.com/app-builder/docs/overview/) applications. Votre application personnalisée récupère tous les fichiers fournis s’ils sont configurés avec un profil de traitement. L’application doit filtrer les fichiers.
 
 >[!CAUTION]
 >
->Si l’application Firefly et le compte [!DNL Experience Manager] ne proviennent pas de la même organisation, l’intégration ne fonctionne pas.
+>Si l’application App Builder et [!DNL Experience Manager] ne proviennent pas de la même organisation, l’intégration ne fonctionne pas.
 
 ### Exemple de profil personnalisé {#custom-profile-example}
 
@@ -268,9 +268,9 @@ Suivez les étapes décrites dans la section [appliquer un modèle de workflow �
 
 >[!MORELIKETHIS]
 >
->* [Présentation d’Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html).
->* [Comprendre l’extensibilité et savoir quand l’utiliser](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html).
->* [Comment créer des applications personnalisées](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html).
+>* [Présentation d’Asset Compute Service](https://experienceleague.adobe.com/docs/asset-compute/using/introduction.html?lang=fr).
+>* [Comprendre l’extensibilité et savoir quand l’utiliser](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr).
+>* [Comment créer des applications personnalisées](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=fr).
 >* [Types MIME pris en charge pour divers cas d’utilisation](/help/assets/file-format-support.md).
 
 
