@@ -2,10 +2,10 @@
 title: Présentation de la fonctionnalité Communications de Forms as a Cloud Service
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
 workflow-type: tm+mt
-source-wordcount: '1442'
-ht-degree: 81%
+source-wordcount: '1136'
+ht-degree: 98%
 
 ---
 
@@ -126,29 +126,31 @@ Schéma : division d’un document source en plusieurs documents en fonction de
 
 Vous pouvez utiliser les API de manipulation de documents pour convertir un document PDF en document conforme au format PDF/A et déterminer si un document PDF est conforme au format PDF/A. PDF / A est un format d’archivage, prévu pour la conservation sur le long terme du contenu d’un document. Les polices sont incorporées dans le document et le fichier est décompressé. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. De plus, un document PDF/A ne contient aucune donnée audio et vidéo.
 
-## Utilitaires de document
+<!-- 
 
-Les API synchrones des utilitaires de document vous permettent de convertir des documents entre les formats de fichiers PDF et XDP, ainsi que d’interroger des informations sur un document de PDF. Il est possible, par exemple, de vérifier si un document PDF contient des commentaires ou des pièces jointes.
+## Document utilities
 
-### Récupérer les propriétés de documents PDF
+Document utilities synchronous APIs helps you convert documents between PDF and XDP file formats, and query information about a PDF document. For example, you can determine whether a PDF document contains comments or attachments. 
 
-Vous pouvez [requête d’un document PDF](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) pour obtenir les informations suivantes :
+### Retrieve PDF document properties
 
-* Is a PDF Document : Vérifiez si le document source est un document PDF.
-* Est un formulaire à remplir : Vérifiez si le document du PDF source est un formulaire à remplir.
-* Type de formulaire : Récupérez le type de formulaire du document.
-* Recherchez Pièces jointes : Vérifiez si le document du PDF source contient des pièces jointes.
-* Rechercher des commentaires : Vérifiez si le document du PDF source comporte des commentaires de révision.
-* Est un module PDF : Vérifiez si le document est un package de PDF.
-* Obtenez la version du PDF : Récupération de la variable [version du document du PDF](https://en.wikipedia.org/wiki/History_of_PDF).
-* Version d’Acrobat recommandée : Récupérez la version requise d’Acrobat (Reader) pour ouvrir le document du PDF.
-* Is a XFA Document : Vérifiez si le document du PDF source est un document de PDF basé sur XFA.
-* Is Shell PDF : Vérifiez si le document du PDF source est PDF shell. Un PDF shell contient uniquement un flux XFA, des ressources de polices et d’images, ainsi qu’une page vierge ou contenant un avertissement indiquant que le document doit être ouvert à l’aide d’Acrobat ou d’Adobe Reader. Le fichier shell PDF est utilisé avec la transformation PDF pour optimiser la livraison des transformations PDFForm uniquement.
-* Obtenez la version XFA : Récupération de la variable [Version XFA pour un document de PDF basé sur XFA](https://en.wikipedia.org/wiki/XFA#XFA_versions).
+You can [query a PDF document](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Extraction/) for the following information:
 
-### Convertir des documents PDF en documents XDP
+* Is a PDF Document: Check whether the source document is a PDF document.
+* Is a fillable form: Check whether the source PDF document is a fillable form.
+* Form Type: Retrieve the form type of the document.
+* Check for Attachments: Check whether the source PDF document has any attachments.
+* Check for Comments: Check whether the source PDF document has any review comments.
+* Is a PDF Package: Check whether the document is a PDF package.
+* Get the PDF Version: Retrieve the [version of the PDF document](https://en.wikipedia.org/wiki/History_of_PDF).
+* Recommended Acrobat Version: Retrieve the required version of Acrobat (Reader) to open the PDF document.
+* Is an XFA Document: Check whether the source PDF document is an XFA-based PDF document.
+* Is Shell PDF: Check whether the source PDF document is shell PDF. A shell PDF contains only an XFA stream, font and image resources, and one page that is either blank or contains a warning that the document must be opened using Acrobat or Adobe Reader. The shell PDF is used with PDF transformation to optimize delivery of PDFForm transformations only.
+* Get the XFA Version: Retrieve the [XFA Version for an XFA-based PDF document](https://en.wikipedia.org/wiki/XFA#XFA_versions).
 
-Le [PDF à l’API XDP](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) convertit un document PDF en fichier XDP. Pour réussir la conversion d’un document PDF en fichier XDP, le document PDF doit contenir un flux XFA dans le dictionnaire.
+### Convert PDF Documents into XDP Documents
+
+The [PDF to XDP API](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/references/pdf-utility-sync/#tag/Document-Conversion) converts a PDF document to an XDP file. For a PDF document to be successfully converted to an XDP file, the PDF document must contain an XFA stream in the dictionary. -->
 
 ## Types d’API de communication
 
