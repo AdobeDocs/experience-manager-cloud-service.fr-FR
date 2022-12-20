@@ -4,9 +4,9 @@ description: Utilisez le modèle de fragment de contenu que vous avez créé pr�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
+source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '900'
 ht-degree: 1%
 
 ---
@@ -19,6 +19,13 @@ En suivant le module d’apprentissage intégré au produit, apprenez à utilise
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Créer un contenu"
 >abstract="En vous basant sur les modèles que vous avez créés dans le module 1, vous apprendrez à créer du contenu qui peut être utilisé pour la création de pages ou comme base de votre contenu sans en-tête."
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
+>title="Lancement de la console Fragment de contenu"
+>abstract="Dans AEM CMS sans interface, les &quot;fragments de contenu&quot; sont tous des éléments de contenu qui s’intègrent à la structure prédéfinie appelée &quot;modèle de fragment de contenu&quot;. Dans cette présentation, vous apprendrez à créer du contenu pour votre modèle de fragment de contenu.<br><br>Cliquez ci-dessous pour lancer la fonctionnalité dans un nouvel onglet et suivez ce document d’apprentissage pour créer votre premier fragment de contenu."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Espace réservé pour la vidéo d’introduction"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniature vidéo : Ajout de contenu - la recette gagnante"
 
 ## Fragments de contenu {#introduction}
 
