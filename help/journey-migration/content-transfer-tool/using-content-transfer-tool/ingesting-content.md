@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
-source-wordcount: '1181'
-ht-degree: 74%
+source-wordcount: '1375'
+ht-degree: 64%
 
 ---
 
@@ -142,6 +142,18 @@ L&#39;application automatique des mises à jour permet de tenir automatiquement 
 Si l’exécution de Release Orchestration est toujours en cours de démarrage, l’interface utilisateur affiche ce message d’erreur. Vous pouvez choisir de continuer de toute façon, en acceptant le risque, en cochant le champ et en appuyant de nouveau sur le bouton.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
+
+### Échec de l’ingestion de complément
+
+Une cause commune à une [Ingestion de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) L’échec est un conflit dans les identifiants de noeud. Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
+
+>java.lang.RuntimeException : org.apache.jackrabbit.oak.api.CommitFailedException : OakConstraint0030 : Propriété de contrainte d’unicité violée [jcr:uuid] ayant la valeur a1a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5 : /some/path/jcr:content, /some/other/path/jcr:content
+
+Chaque noeud d’AEM doit disposer d’un uuid unique. Cette erreur indique qu’un noeud en cours d’ingestion possède le même uuid que celui qui existe déjà dans un autre chemin d’accès sur l’instance cible.
+Cela peut se produire si un noeud est déplacé sur la source entre une extraction et une [Extraction de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
+Cela peut également se produire si un noeud de la cible est déplacé entre une ingestion et une ingestion de complément ultérieure.
+
+Ce conflit doit être résolu manuellement. Une personne familière avec le contenu doit décider lequel des deux noeuds doit être supprimé, en gardant à l’esprit tout autre contenu qui y fait référence. La solution peut nécessiter que l’extraction de complément soit effectuée à nouveau sans le noeud offensif.
 
 ## Prochaines étapes {#whats-next}
 
