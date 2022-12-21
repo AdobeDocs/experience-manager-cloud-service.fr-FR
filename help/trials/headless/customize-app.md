@@ -4,9 +4,9 @@ description: Utilisez un exemple d’application React pour savoir comment perso
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 1456891dc3b13b3d79fa8ee9f3ded37e92cfbc85
+source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
 workflow-type: tm+mt
-source-wordcount: '1481'
+source-wordcount: '1465'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,6 @@ L’application elle-même est basée sur la structure des fragments de contenu.
 >title="Lancement de l’éditeur de fragment de contenu"
 >abstract="AEM Essais pour les sans-tête est préchargé avec une simple application React pour présenter du contenu sans-tête. L’application est basée sur la structure des fragments de contenu. À l’aide de l’éditeur de fragment de contenu d’AEM, vous pouvez modifier le contenu de votre application.<br><br>Lancez la fonctionnalité dans un nouvel onglet en cliquant ci-dessous, puis suivez ce guide."
 >additional-url="https://video.tv.adobe.com/v/328618" text="Espace réservé pour la vidéo d’introduction"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home_c1.png" text="Miniature vidéo : Modification du contenu d’une application en un flash"
 
 ## Éditeur de fragment de contenu {#fragment-editor}
 
