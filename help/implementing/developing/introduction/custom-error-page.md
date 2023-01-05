@@ -2,7 +2,7 @@
 title: Pages d’erreur personnalisées
 description: AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP, qui peut être personnalisé.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: ab68c03b29f3d2179b33c61a6d853d80ccb17615
+source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
 workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 87%

@@ -48,7 +48,7 @@ Pour tirer pleinement parti du canal de version préliminaire, quatre étapes so
 
 ## Marquage de vos calendriers {#mark-calendars}
 
-Les versions mensuelles sont planifiées bien à l’avance et les dates de publication sont publiées le [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html#aem-as-cloud-service)
+Les versions mensuelles sont planifiées bien à l’avance et les dates de publication sont publiées le [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
 
 Prenez note des dates de publication afin de prévoir le temps de passer en revue et de tester les fonctionnalités à venir.
 

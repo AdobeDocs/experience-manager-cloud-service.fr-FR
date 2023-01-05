@@ -2,7 +2,7 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Découvrez les conseils pour développer sur AEM as a Cloud Service et sur les manières importantes dont il diffère d’AEM sur site et d’une expérience d’ dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 88d7728758927f16ed0807de8d261ca1b4b8b104
+source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
 workflow-type: tm+mt
 source-wordcount: '2590'
 ht-degree: 90%
@@ -220,7 +220,7 @@ Le [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/e
 
 ### Configuration {#email-configuration}
 
-Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html#configuring-the-mail-service).
+Dans AEM, les emails doivent être envoyés à l’aide du [service de messagerie Day CQ OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr#configuring-the-mail-service).
 
 Voir la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/notification.html?lang=fr) pour plus d’informations sur la configuration des paramètres des e-mails. Pour AEM as a Cloud Service, notez les modifications nécessaires suivantes pour le service `com.day.cq.mailer.DefaultMailService OSGI` :
 

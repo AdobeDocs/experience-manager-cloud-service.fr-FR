@@ -119,7 +119,7 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
 >[!NOTE]
 >Il est recommandé de modifier l’ancien comportement par défaut pour qu’il soit cohérent avec le nouveau comportement (identifiants de programme supérieurs à 65 000) en définissant la variable d’environnement Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS sur true. Si le programme est déjà actif, vérifiez que le contenu se comporte comme prévu une fois les modifications appliquées.
 
-Actuellement, les images dans l’espace de stockage blob marquées comme privées ne peuvent pas être mises en cache dans le Dispatcher à l’aide de [Mise en cache sensible aux autorisations](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html). L’image est toujours demandée à l’origine de l’AEM et diffusée si l’utilisateur est autorisé.
+Actuellement, les images dans l’espace de stockage blob marquées comme privées ne peuvent pas être mises en cache dans le Dispatcher à l’aide de [Mise en cache sensible aux autorisations](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr). L’image est toujours demandée à l’origine de l’AEM et diffusée si l’utilisateur est autorisé.
 
 >[!NOTE]
 >Les autres méthodes, y compris celle du [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne permettront pas de remplacer les valeurs.

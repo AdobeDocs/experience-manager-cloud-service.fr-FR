@@ -2,7 +2,7 @@
 title: Tests de l’interface utilisateur
 description: Le test personnalisé d’interface utilisateur est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications personnalisées.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 31e84b7383cd9774b0eaf8ee0f2fe39bcd77fa15
+source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 94%

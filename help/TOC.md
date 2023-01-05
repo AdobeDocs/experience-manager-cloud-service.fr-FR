@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 91d3e2ea02f34963688dd9ee44aed17f55752587
+source-git-commit: 156cf55a33184bd986628d775475ed1f841e8ef4
 workflow-type: tm+mt
-source-wordcount: '3823'
+source-wordcount: '3827'
 ht-degree: 97%
 
 ---
@@ -760,7 +760,7 @@ ht-degree: 97%
          + [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
       + [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md)
       + [Création de rapports de contrat SLA](/help/implementing/cloud-manager/sla-reporting.md)
-      + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
+      + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Notifications](/help/implementing/cloud-manager/notifications.md)
       + Certificats SSL {#manage-ssl-certificates}
          + [Présentation](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
@@ -785,6 +785,7 @@ ht-degree: 97%
       + [Structure de projet AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Module de structure du référentiel de projet AEM](/help/implementing/developing/introduction/repository-structure-package.md)
       + [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+      + [AEM Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Conseils de développement pour AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
       + [Journalisation](/help/implementing/developing/introduction/logging.md)
       + [Configurations et l’explorateur de configurations](/help/implementing/developing/introduction/configurations.md)

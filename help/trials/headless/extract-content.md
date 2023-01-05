@@ -36,11 +36,11 @@ Tout d’abord, vous apprendrez à exécuter deux types de requêtes différents
 
 ## Explorateur GraphQL {#graphql-explorer}
 
-Vous démarrez dans l’Explorateur GraphQL. Vous pouvez créer et exécuter des requêtes sur votre contenu sans affichage.
+Vous démarrez sur l’Explorateur GraphQL. Vous pouvez créer et exécuter des requêtes sur votre contenu sans affichage.
 
-![GraphQL Query Editor](assets/extract-content/query-editor.png)
+![Éditeur de requêtes GraphQL](assets/extract-content/query-editor.png)
 
-Si vous souhaitez accéder à l’Explorateur GraphQL vous-même en dehors des instructions in-app, il se trouve à l’aide de l’icône d’Adobe située en haut à gauche de la page. Cela ouvre la navigation globale d’AEM. À partir de là, vous choisissez la variable **Outils** puis **Général** -> **Éditeur de requêtes GraphQL**.
+Si vous souhaitez accéder à l’Explorateur GraphQL vous-même en dehors des instructions in-app, l’icône d’Adobe située en haut à gauche de la page s’affiche. Cela ouvre la navigation globale d’AEM. À partir de là, vous choisissez la variable **Outils** puis **Général** -> **Éditeur de requêtes GraphQL**.
 
 >[!TIP]
 >

@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 218dd65d1969f92317ae1d9877e2e37bb201ea6a
+source-git-commit: 33bf3dbf6118a9d93e0fe021736b74079100a214
 workflow-type: tm+mt
 source-wordcount: '1092'
-ht-degree: 13%
+ht-degree: 17%
 
 ---
 
@@ -25,12 +25,12 @@ La section suivante concerne les notes de mise à jour générales de la version
 
 >[!CAUTION]
 >
->**Période d’exclusion de maintenance planifiée**
+>**Période d’exclusion de la maintenance planifiée**
 >
-> Aucune maintenance automatique d’AEMaaCS ne sera exécutée pendant les périodes suivantes, commençant et se terminant à minuit (00:00) CET :
+> Aucune maintenance automatique d’Adobe Experience Manager as a Cloud Service ne sera réalisée pendant les périodes suivantes, qui commencent et se terminent à minuit (00:00) CET :
 >
->* Lundi 21 novembre au lundi 12 décembre
->* Lundi 19 décembre au mardi 3 janvier
+>* Du lundi 21 novembre au lundi 12 décembre
+>* Du lundi 19 décembre au mardi 3 janvier
 
 
 ## Date de publication {#release-date}
@@ -60,7 +60,7 @@ Regardez la vidéo Présentation de la version d’octobre 2022 pour un résumé
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* Experience Manager Assets vous permet désormais de charger des documents dans d’autres types de format pris en charge et[ prévisualisez-les à l’aide de la visionneuse de Documents Cloud incluse.](/help/assets/manage-pdf-documents.md). Les types de format pris en charge sont TXT, RTF, DOC, DOCX, PPT, PPTX, XLS et XLSX.
+* Experience Manager Assets vous permet désormais de charger des documents dans d’autres types de format pris en charge et[ prévisualisez-les à l’aide de la visionneuse de Documents Cloud incluse.](/help/assets/manage-pdf-documents.md). Les types de format pris en charge sont les suivants : TXT, RTF, DOC, DOCX, PPT, PPTX, XLS et XLSX.
 
    ![Rendu PDF pour d’autres formats](/help/release-notes/assets/multi-page-other-formats.png)
 
