@@ -4,7 +4,7 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: a01a9e34fed9182c6c1e7325b2035c63acf875dd
+source-git-commit: 55e117bba7037d44eaadab8bd2de7164e23b47fa
 workflow-type: tm+mt
 source-wordcount: '3064'
 ht-degree: 93%
@@ -259,11 +259,11 @@ Pour les noms de fichiers de ressources, le nom et le chemin JCR sont assainis �
 
 **Gestion du nom du dossier dans l’importation en bloc**
 
-Pour les noms de fichiers de dossiers, le nom et le chemin JCR sont assainis à l’aide de l’API : `JcrUtil.createValidName`.
+Pour les noms de fichiers de dossiers, le nom et le chemin JCR sont assainis à l’aide de l’API : `DamUtil.getSanitizedFolderName`.
 
 * Les caractères majuscules sont convertis en minuscules.
 * Les caractères Unicode ne sont pas modifiés.
-* Remplacez les caractères spéciaux par un tiret (’-’), par exemple, `new asset.png` est remplacé par `new-asset.png` :
+* Remplacez les caractères spéciaux par un tiret (’-’), par exemple, `new folder` est remplacé par `new-folder` :
 
    ```
    "                           
