@@ -2,10 +2,10 @@
 title: Variables d’environnement Cloud Manager
 description: Les variables d’environnement standard peuvent être configurées et gérées via Cloud Manager. Elle sont fournies à l’environnement d’exécution, pour une utilisation dans la configuration OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: abce1369b3b97a1e9ff7d0c8434b671cc7c5f8c2
+source-git-commit: 6c2d5c4c1dd9ca56cf3ab5487d9a8794f4fbd97b
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 97%
+source-wordcount: '1015'
+ht-degree: 86%
 
 ---
 
@@ -107,3 +107,29 @@ Vous pouvez accéder via XML aux variables et secrets d’environnement comme su
 Consultez le document [Configuration d’un projet](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/setting-up-project.md#password-protected-maven-repository-support-password-protected-maven-repositories) pour un exemple d’utilisation des deux types de variables dans un fichier `pom.xml`.
 
 Consultez la [documentation officielle de Maven](https://maven.apache.org/settings.html#quick-overview) pour plus d’informations.
+
+## Disponibilité des variables d’environnement {#availability}
+
+Les variables d’environnement peuvent être utilisées à plusieurs endroits.
+
+### Création, aperçu et publication {#author-preview-publish}
+
+Les variables d’environnement standard et les secrets peuvent être utilisés dans les environnements de création, de prévisualisation et de publication.
+
+### Dispatcher {#dispatcher}
+
+Seules les variables d’environnement régulières peuvent être utilisées sur le Dispatcher. Les secrets ne peuvent pas être utilisés.
+
+Toutefois, les variables d’environnement ne peuvent pas être utilisées dans `IfDefine` directives.
+
+>[!TIP]
+>
+>Vous devez valider l’utilisation des variables d’environnement avec la variable [dispatcher localement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) avant le déploiement.
+
+### Configurations OSGi {#osgi}
+
+Les variables d’environnement standard et les secrets peuvent être utilisés dans les configurations OSGi.
+
+### Variables de pipeline {#pipeline}
+
+Outre les variables d’environnement, il existe également des variables de pipeline, qui sont exposées pendant la phase de création. [Pour en savoir plus sur les variables de pipeline, cliquez ici.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
