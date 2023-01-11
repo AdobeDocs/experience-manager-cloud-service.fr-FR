@@ -2,10 +2,10 @@
 title: AEM as a Cloud Service sur Unified Shell
 description: AEM as a Cloud Service sur Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 76b7fb1d354664ec9fa773623ea4dee09164bec8
+source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 82%
+source-wordcount: '399'
+ht-degree: 68%
 
 ---
 
@@ -52,6 +52,11 @@ Pour passer au thème sombre, cliquez sur l’icône de votre profil. Une fenêt
 
 ![image](/help/overview/assets/unifiedshell4.png)
 
+## Identification de l&#39;environnement as a Cloud Service AEM {#identify-aemaacs-environment}
+
+AEM as a Cloud Service fournit trois types d’environnements : Production, Évaluation et Développement. Voir [Types d’environnement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en) pour plus d’informations. Avec cette intégration avec Unified Shell, le type d&#39;environnement dans lequel l&#39;utilisateur est connecté au service de création s&#39;affiche dans l&#39;en-tête supérieur via un libellé comme illustré ci-dessous.
+
+![image](/help/overview/assets/unifiedshell_header_label.png)
 
 ## Accéder à la boîte de réception AEM {#accessing-the-aem-inbox}
 
