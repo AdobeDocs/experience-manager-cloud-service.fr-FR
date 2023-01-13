@@ -2,10 +2,10 @@
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
 exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
-source-git-commit: 3af790d9b42eb2f685258eb18352ec4cd752efcc
+source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 95%
+source-wordcount: '1182'
+ht-degree: 93%
 
 ---
 
@@ -40,11 +40,11 @@ Avant d’utiliser AEM Developer Tools, vous devez :
 
 Lorsque vous avez rempli la variable [conditions requises](#requirements) ci-dessus, vous pouvez installer le module externe comme suit :
 
-1. Ouvrez le [site web AEM Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
+1. Ouvrez le [site web AEM Developer Tools](https://eclipse.adobe.com/aem/dev-tools/). <!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
 1. Copiez le **Lien d’installation**.
 
-   Notez que vous pouvez également télécharger un fichier d’archives au lieu d’utiliser le lien d’installation. Cela permet une installation hors ligne, mais sans recevoir les notifications de mise à jour automatique.
+   Notez que vous pouvez également télécharger un fichier d’archives au lieu d’utiliser le lien d’installation. Cette méthode permet une installation hors ligne, mais vous ne recevez pas les notifications de mise à jour automatique manquées de cette manière.
 
 1. Dans Eclipse, ouvrez le menu **Help** (Aide).
 1. Cliquez sur **Install New Software** (Installer un nouveau logiciel).
