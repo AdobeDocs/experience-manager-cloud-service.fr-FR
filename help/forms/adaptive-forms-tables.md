@@ -1,26 +1,22 @@
 ---
 title: Tableaux dans les formulaires adaptatifs
-seo-title: Tables in Adaptive Forms
-description: Le composant Tableau dans [!DNL AEM Forms] vous permet de créer des tableaux dans des formulaires adaptatifs qui sont réactifs face aux dispositions pour appareils mobiles et d’utiliser des composants de tableau XDP.
-seo-description: The Table component in [!DNL AEM Forms] lets you create tables in Adaptive Forms that are responsive to mobile layouts, and also allows using XDP table components.
-uuid: 03436c81-42f0-430f-9e52-14a4ab0e877d
-topic-tags: author
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc418da9-496f-4a2b-bfe4-2add3ac4f468
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+seo-title: Tables in adaptive forms
+description: Le composant Tableau d’AEM Forms permet de créer des tableaux dans les formulaires adaptatifs qui sont sensibles aux mises en page des périphériques mobiles. Il permet aussi d’utiliser des composants de table XDP.
+seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
+products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
+feature: Adaptive Forms
+source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
 workflow-type: tm+mt
-source-wordcount: '2311'
-ht-degree: 100%
+source-wordcount: '2418'
+ht-degree: 90%
 
 ---
 
-
-# Tableaux dans les formulaires adaptatifs {#tables-in-adaptive-forms}
+# Tableaux dans un formulaire adaptatif {#tables-in-adaptive-forms}
 
 L’utilisation des tableaux est un moyen efficace, simplifié et organisé de présenter des données complexes. Cela permet aux utilisateurs d’identifier facilement les informations et leur fournit des données organisées sous forme de lignes et de colonnes. La plupart des formulaires des services financiers et des agences gouvernementales requièrent des tableaux de données volumineux pour saisir des données numériques et effectuer des calculs.
 
-[!DNL AEM Forms] fournit un composant Tableau dans l’explorateur de composants de la barre latérale permettant de créer des tableaux dans les formulaires adaptatifs. Voici quelques-unes des capacités clés fournies :
+AEM Forms fournit un composant Tableau dans l’explorateur de composants de la barre latérale permettant de créer des tableaux dans les formulaires adaptatifs. Voici quelques-unes des capacités clés fournies :
 
 * Disposition réactive sur périphériques mobiles
 * Lignes et colonnes configurables
@@ -54,25 +50,30 @@ Vous pouvez fusionner deux cellules du corps ou plus en sélectionnant les cellu
 
 Vous pouvez ajouter et supprimer une ligne ou une colonne, ou encore déplacer une ligne vers le haut et vers le bas dans un tableau.
 
-Pour ajouter ou supprimer une ligne ou une colonne ou déplacer une ligne, cliquez sur une cellule dans une ligne ou une colonne. Un menu contextuel s’affiche en haut de la colonne et à gauche de la ligne. Le menu de la partie supérieure fournit des options permettant d’ajouter ou de supprimer la colonne, alors que le menu de gauche permet d’ajouter, de supprimer ou de déplacer la ligne.
+#### Ajouter, supprimer ou déplacer une ligne
 
-* L’opération Ajouter ajoute une ligne au-dessous ou une colonne à droite de la ligne ou de la colonne sélectionnée.
-* L’opération Supprimer permet de supprimer la ligne ou la colonne sélectionnée.
-* L’opération Déplacer permet de déplacer la ligne sélectionnée vers le haut et vers le bas.
+Pour ajouter, supprimer ou déplacer une rangée, cliquez sur une cellule de la rangée. ouvrir l’explorateur de contenu ![Explorateur de contenu](/help/forms/assets/Smock_Layers_18_N.svg) et sélectionnez la rangée correspondante, elle surligne la rangée sélectionnée avec l’option de barre d’outils à partir de laquelle vous pouvez ajouter, supprimer ou déplacer la rangée vers le haut ou vers le bas.
+* Le **[!UICONTROL Déplacer vers le haut]** et **[!UICONTROL Déplacer vers le bas]** déplace la ligne sélectionnée vers le haut et vers le bas.
 
-Le menu déroulant pour la ligne propose également l’opération Modifier pour modifier les propriétés, les paramètres et les options de style de la ligne.
+* Le **[!UICONTROL Ajouter une colonne]** ajoute une ligne au-dessous de la ligne sélectionnée.
 
-![add-delete-move-row-column](assets/add-delete-move-row-column.png)
+* Le **[!UICONTROL Supprimer la colonne]** supprime la ligne sélectionnée.
+
+![add-delete-move-row-column](assets/add-delete-move-row.png)
+
+Double-cliquez sur la ligne pour configurer les propriétés d’une ligne, telles que Nom, Référence de liaison, Paramètres de répétition, Classe CSS.
+![add-delete-move-row-column](assets/row-properties-image.png)
+
+
+#### Ajouter ou supprimer une colonne
+
+Pour ajouter ou supprimer une colonne, cliquez sur la cellule de texte dans la section d’en-tête. Une barre d’outils s’ouvre avec les options d’ajout ou de suppression d’une colonne :
+
+![add-delete-move-row-column](assets/add-delet-column.png)
 
 >[!NOTE]
 >
->* Alors qu’il est possible d’ajouter un nombre quelconque de lignes à un tableau, le nombre maximal de colonnes que vous pouvez ajouter est de six. En outre, vous ne pouvez pas supprimer la ligne d’en-tête du tableau.
->
->* La conversion automatisée d’un formulaire PDF en formulaire adaptatif peut créer des tableaux sans en-têtes. Vous pouvez ajouter des colonnes à des tableaux sans en-têtes et en supprimer. Des en-têtes masqués sont ajoutés à ces tableaux pour vous aider à ajouter et supprimer des colonnes. Ces en-têtes sont visibles lors de la création, mais restent masqués dans le formulaire publié.
-
-
-
-
+>Alors qu’il est possible d’ajouter un nombre quelconque de lignes à un tableau, le nombre maximal de colonnes que vous pouvez ajouter est de six. En outre, vous ne pouvez pas supprimer la ligne d’en-tête du tableau.
 
 ### Ajout d’une description de tableau {#add-table-description}
 
@@ -113,6 +114,14 @@ Pour activer le tri :
 
    Vous pouvez également apporter des modifications au tableau en mode **Prévisualisation** et cliquer de nouveau sur l’en-tête de colonne pour trier les valeurs de colonne.
 
+## Définir la largeur d’une colonne pour un tableau {#set-column-width}
+
+Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
+
+1. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur la touche **[!UICONTROL Tableau]** et appuyez sur l’icône Configure (![Configurer](assets/configure-icon.svg)).
+
+1. Entrez la liste des valeurs séparées par des virgules dans la variable **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, en spécifiant 2, 4, 6 comme valeurs dans le champ **[!UICONTROL Largeur de colonne]**, la largeur des colonnes est définie sur 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième. 2/12 comme largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
+
 ## Configuration du style de tableau {#configure}
 
 Vous pouvez définir le style d’un tableau à l’aide du mode Style dans la barre d’outils de la page. Exécutez les étapes suivantes pour passer en mode Style et modifier le style du tableau.
@@ -126,9 +135,9 @@ Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 >[!NOTE]
 >
->Vous pouvez modifier le thème de couleur de l’en-tête et des lignes de corps en modifiant les valeurs des variables LESS. Pour plus d’informations, voir [Thèmes dans [!DNL AEM Forms]](themes.md)
+>Vous pouvez modifier le thème de couleur de l’en-tête et des rangées de contenu en modifiant les valeurs de [Variables LESS](https://lesscss.org//). Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/themes.md).
 
-## Ajouter ou supprimer une ligne de façon dynamique {#add-or-delete-a-row-dynamically}
+## Ajout ou suppression dynamique d’une ligne {#add-or-delete-a-row-dynamically}
 
 Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou la suppression dynamique de lignes au moment de l’exécution.
 
@@ -136,9 +145,9 @@ Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou l
 1. Dans l’onglet Paramètres de répétition, spécifiez les valeurs minimale et maximale pour limiter le nombre de lignes du tableau.
 1. Cliquez sur **Terminé**.
 
-Lors de l’exécution, vous verrez les boutons **+** et *-* pour ajouter ou supprimer une ligne.
+Au moment de l’exécution ou de l’aperçu, vous verrez **+** et ![Bouton Supprimer](/help/forms/assets/Smock_Delete.svg) pour ajouter ou supprimer une rangée.
 
-![ajout-suppression-dynamique-de lignes](assets/add-delete-rows-dynamically.png)
+![ajout-suppression-dynamique-de lignes](assets/add-delete-layout.png)
 
 >[!NOTE]
 >
@@ -146,7 +155,7 @@ Lors de l’exécution, vous verrez les boutons **+** et *-* pour ajouter ou sup
 
 ## Expressions dans un tableau {#expressions-in-a-table}
 
-Les tableaux des formulaires adaptatifs permettent d’écrire des expressions en JavaScript pour induire des comportements, tels qu’afficher ou masquer un tableau ou une ligne, additionner tous les nombres et afficher le total dans une cellule, activer ou désactiver une cellule, valider une entrée utilisateur, etc. Ces expressions utilisent le modèle de script API des formulaires adaptatifs.
+Les tableaux des formulaires adaptatifs permettent d’écrire des expressions en JavaScript pour induire des comportements, tels qu’afficher ou masquer un tableau ou une ligne, ajouter tous les nombres et afficher le total dans une cellule, activer ou désactiver une cellule, valider une entrée utilisateur, etc. Ces expressions utilisent le modèle de script API des formulaires adaptatifs.
 
 Alors que les tableaux et les lignes ne prennent en charge que les expressions de visibilité pour contrôler leur visibilité en fonction de la valeur renvoyée par une expression, les cellules prennent en charge les expressions suivantes :
 
@@ -164,11 +173,11 @@ Alors que les tableaux et les lignes ne prennent en charge que les expressions d
 
 L’expression de visibilité d’un tableau ou d’une ligne peut être définie dans l’onglet Propriétés du panneau de la boîte de dialogue Modifier le composant correspondant. Les expressions pour une cellule peuvent être définies dans l’onglet Script de la boîte de dialogue Modifier le composant correspondant.
 
-Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez [Référence à l’API de la bibliothèque JavaScript pour les formulaires adaptatifs](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html).
+Pour obtenir la liste complète des classes de formulaires adaptatifs, des événements, des objets et des API publiques, consultez la [référence d’API de bibliothèque JavaScript pour les formulaires adaptatifs.](https://helpx.adobe.com/fr/experience-manager/6-5/forms/javascript-api/index.html)
 
-## Mises en page pour appareils mobiles {#mobile-layouts}
+## Dispositions pour appareils mobiles {#mobile-layouts}
 
-Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les appareils mobiles en raison de leurs dispositions fluides et réactives. [!DNL AEM Forms] offre deux types de dispositions de tableaux pour les appareils mobiles - En-têtes à gauche et Colonnes réductibles.
+Les tableaux des formulaires adaptatifs fournissent une expérience sans précédent pour les périphériques mobiles en raison de leurs dispositions fluides et réactives. AEM Forms offre deux types de dispositions de tableaux pour les appareils mobiles - En-têtes à gauche et Colonnes réductibles.
 
 Vous pouvez configurer une disposition de tableau pour appareils mobiles depuis l’onglet Style de la boîte de dialogue Modifier le composant.
 
@@ -204,9 +213,9 @@ Colonne développée d’un tableau sur un appareil mobile
 
 ## Fusion de données dans un tableau {#merge-data-in-a-table}
 
-Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors de l’exécution avec des données provenant d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur où s’exécute le serveur [!DNL AEM Forms] ou dans le référentiel CRX.
+Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors de l’exécution avec des données provenant d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur sur lequel le serveur AEM Forms est exécuté ou dans le référentiel CRX.
 
-Prenons l’exemple du tableau récapitulatif de transaction bancaire suivant, que nous voulons renseigner avec des données provenant d’un fichier XML.
+Prenons l’exemple du tableau récapitulatif des transactions bancaires suivant que nous voulons renseigner avec des données provenant d’un fichier XML.
 
 ![data-merge-table](assets/data-merge-table.png)
 
@@ -278,17 +287,17 @@ Le fichier XML contenant les données au format suivant :
 
 Dans l’exemple XML, les données d’une ligne sont définies par les balises `<Row1>`, qui sont le nom d’élément de la ligne du tableau. Dans la balise `<Row1>`, les données de chaque cellule sont définies dans la balise pour son nom d’élément, notamment `<tableItem1>`, `<tableItem2>`, `<tableItem3>` et `<type>`.
 
-Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiquer le formulaire adaptatif contenant le tableau à l’emplacement XML absolu avec le mode WCM désactivé. Par exemple, si le formulaire adaptatif se trouve sous *https://`servername`/myForms/bankTransaction.html* et que le fichier de données XML est enregistré sous *C:/myTransactions/bankSummary.xml*, vous pouvez afficher le tableau avec des données à l’adresse URL suivante :
+Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiquer le formulaire adaptatif contenant le tableau à l’emplacement XML absolu avec le mode WCM désactivé. Par exemple, si le formulaire adaptatif se trouve sous *https://localhost:4502/myForms/bankTransaction.html* et que le fichier de données XML est enregistré sous *C:/myTransactions/bankSummary.xml*, vous pouvez afficher le tableau avec des données à l’adresse URL suivante :
 
-*https://`servername`/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
+*https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
 ![data-merged-table](assets/data-merged-table.png)
 
-## Utilisation des composants XDP et des types complexes de schéma XSD {#use-xdp-components-and-xsd-complex-types}
+## Utilisation des composants XDP et des types complexes de schéma XSD {#use-xdp-components-and-xsd-complex-types}
 
 Si vous avez créé un formulaire adaptatif en fonction d’un modèle de formulaire XFA, les éléments XFA sont disponibles dans l’onglet Modèle de données de l’outil de recherche de contenu AEM. Vous pouvez faire glisser ces éléments XFA, notamment des tableaux, dans le formulaire adaptatif.
 
-L’élément de tableau XFA est mappé sur le composant Tableau et fonctionne dans les formulaires adaptatifs prêts à l’emploi. Toutes les propriétés et fonctionnalités de tableau XDP sont conservées lors du déplacement dans le formulaire adaptatif, et vous pouvez effectuer n’importe quelle opération sur celui-ci comme vous le feriez avec le tableau initial du formulaire adaptatif. Par exemple, si une ligne dans un tableau XDP est marquée comme pouvant être répétée, elle sera répétée dans les formulaires adaptatifs également.
+L’élément de tableau XFA est mappé sur le composant Tableau et fonctionne dans les formulaires adaptatifs prêts à l’emploi. Toutes les propriétés et fonctionnalités de tableau XDP sont conservées lors du déplacement dans le formulaire adaptatif, et vous pouvez effectuer n’importe quelle opération sur celui-ci comme vous le feriez avec le tableau natif du formulaire adaptatif. Par exemple, si une ligne dans un tableau XDP est marquée comme pouvant être répétée, elle sera répétée dans les formulaires adaptatifs également.
 
 En outre, vous pouvez faire glisser et déposer le sous-formulaire XDP pour ajouter une nouvelle ligne au tableau. Toutefois, notez que déposer un sous-formulaire imbriqué ne fonctionne pas.
 
@@ -310,4 +319,3 @@ Vous pouvez aussi faire glisser et déposer un groupe d’éléments de type com
 * Dans un tableau par défaut, chaque cellule de contenu est associée à un nom d’élément prédéfini. Si vous ajoutez un autre tableau dans le formulaire adaptatif, les cellules de contenu par défaut du nouveau tableau auront le même nom d’élément que dans le premier. Dans ce cas, les données générées lors de l’envoi du formulaire comprennent uniquement les données des cellules de contenu par défaut de l’un des tableaux. Par conséquent, assurez-vous que vous renommez les noms d’élément pour les cellules de contenu par défaut pour qu’elles restent uniques et éviter toute perte de données.
 
    Notez que cela s’applique uniquement aux cellules de contenu par défaut. Si vous ajoutez d’autres lignes ou colonnes à un tableau, des noms d’éléments uniques seront générés automatiquement pour les cellules de contenu non définies par défaut.
-
