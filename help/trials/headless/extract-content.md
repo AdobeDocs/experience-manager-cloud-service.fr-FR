@@ -4,59 +4,45 @@ description: Découvrez comment utiliser les fragments de contenu et l’API Gra
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 4269bc9650f197ae33fcef40a847f8b200097e45
+source-git-commit: bcab02cbd84955ecdc239d4166ae38e5f79b3264
 workflow-type: tm+mt
-source-wordcount: '1287'
-ht-degree: 1%
+source-wordcount: '847'
+ht-degree: 0%
 
 ---
 
+
 # Extraction de contenu via l’API GraphQL {#extract-content}
-
-Jusqu&#39;à présent dans AEM procès pour sans tête, vous avez [création de vos propres modèles de fragments de contenu ;](content-structure.md) et créer votre propre contenu sans tête ; [Fragments de contenu.](create-content.md) Vous pouvez maintenant apprendre à utiliser les fragments de contenu et l’API GraphQL en tant que système de gestion de contenu headless pour diffuser votre contenu.
-
-GraphQL fournit une API basée sur les requêtes qui permet aux applications clientes externes d’interroger AEM uniquement le contenu dont elles ont besoin à l’aide d’un seul appel API.
-
-Tout d’abord, vous apprendrez à exécuter deux types de requêtes différents : **list** et **byPath** requêtes. Vous apprendrez ensuite comment récupérer du contenu à partir du fragment de contenu que vous avez créé précédemment. Ce document sert de complément à la visite interactive, couvrant les mêmes étapes et la liaison à des ressources supplémentaires, le cas échéant.
-
->[!TIP]
->
->Si vous souhaitez plus d’informations sur l’API GraphQL, reportez-vous à la section [Section Ressources supplémentaires](#additional-resources) à la fin de ce module pour le guide de l’API GraphQL.
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql"
 >title="Extraction de contenu à l’aide de l’API GraphQL"
->abstract="Dans ce module, vous découvrirez comment utiliser les fragments de contenu et l’API GraphQL en tant que système de gestion de contenu sans affichage."
+>abstract="Dans ce module, vous découvrez comment utiliser les fragments de contenu et l’API GraphQL en tant que système de gestion de contenu sans interface."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="Lancement de GraphQL Explorer"
->abstract="GraphQL fournit une API basée sur les requêtes qui permet aux applications clientes externes d’interroger AEM uniquement pour le contenu dont elles ont besoin, à l’aide d’un seul appel API. Suivez ce guide pour savoir comment exécuter deux types de requêtes différents, puis récupérer du contenu du fragment de contenu que vous avez créé dans un module précédent.<br><br>Lancez la fonctionnalité dans un nouvel onglet en cliquant ci-dessous."
->additional-url="https://video.tv.adobe.com/v/328618" text="Espace réservé pour la vidéo d’introduction"
+>abstract="GraphQL fournit une API basée sur les requêtes qui permet aux applications clientes externes d’interroger AEM uniquement pour le contenu dont elles ont besoin, à l’aide d’un seul appel API. Suivez ce module pour savoir comment exécuter deux types de requêtes différents. Découvrez ensuite comment récupérer le contenu du fragment de contenu que vous avez créé dans le module précédent.<br><br>Lancez ce module dans un nouvel onglet en cliquant ci-dessous."
+>additional-url="https://video.tv.adobe.com/v/328618" text="Vidéo Extraction d’une entrée de contenu"
 
-## Explorateur GraphQL {#graphql-explorer}
+>[!CONTEXTUALHELP]
+>id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"
+>title="Beau travail ! Vous avez appris les deux types de requêtes de base et comment interroger votre propre contenu. Vous comprenez désormais comment utiliser l’API GraphQL d’AEM pour créer des requêtes efficaces qui diffusent le contenu dans un format que vous attendez de l’application."
+>abstract=""
 
-Vous démarrez sur l’Explorateur GraphQL. Vous pouvez créer et exécuter des requêtes sur votre contenu sans affichage.
+## Requête pour une liste d’exemples de contenu {#list-query}
 
-![Éditeur de requêtes GraphQL](assets/extract-content/query-editor.png)
+Cliquez sur le bouton **Lancement de GraphQL Explorer** Le bouton ci-dessus ouvre l’Explorateur GraphQL dans un nouvel onglet.
 
-Si vous souhaitez accéder à l’Explorateur GraphQL vous-même en dehors des instructions in-app, l’icône d’Adobe située en haut à gauche de la page s’affiche. Cela ouvre la navigation globale d’AEM. À partir de là, vous choisissez la variable **Outils** puis **Général** -> **Éditeur de requêtes GraphQL**.
+![GraphQL Query Editor](assets/extract-content/query-editor.png)
 
->[!TIP]
->
->Si vous souhaitez en savoir plus sur la navigation dans AEM, reportez-vous à la section [Section Ressources supplémentaires](#additional-resources) de ce document pour plus d’informations sur AEM gestion de base.
+L’Explorateur GraphQL vous permet de créer et de valider des requêtes par rapport à votre contenu headless avant de les utiliser pour alimenter le contenu de votre application ou de votre site web. Voyons comment c&#39;est fait !
 
-AEM les essais sont accompagnés d’un point de terminaison préchargé avec du contenu à partir duquel vous pouvez extraire le contenu à des fins de test.
+1. Votre AEM essai sans interface est fourni avec un point de terminaison préchargé avec des fragments de contenu à partir duquel vous pouvez extraire du contenu à des fins de test. Sélectionnez la **AEM des ressources de démonstration** point d’entrée à partir de la fonction **Point d’entrée** menu déroulant dans le coin supérieur droit de l’éditeur.
 
-![Sélectionner le point de fin](assets/extract-content/select-endpoint.png)
+   ![Sélectionner le point de fin](assets/extract-content/select-endpoint.png)
 
-Sélectionnez la **AEM des ressources de démonstration** point d’entrée à partir de la fonction **Point d’entrée** menu déroulant dans le coin supérieur droit de l’éditeur, le cas échéant.
-
-## Copie et exécution d’une requête de liste {#list-query}
-
-Commencez par une requête de liste simple afin de vous orienter sur le fonctionnement des API GraphQL d’AEM as a Cloud Service. Cet exemple de requête de liste renvoie une liste de tout le contenu qui utilise un modèle de fragment de contenu spécifique. Les pages de stock et de catégorie utilisent généralement ce format de requête.
-
-1. Copiez le fragment de code suivant.
+1. Copiez le fragment de code suivant pour une requête de liste du préchargé. **AEM des ressources de démonstration** point de terminaison . Une requête de liste renvoie une liste de tout le contenu qui utilise un modèle de fragment de contenu spécifique. Les pages de stock et de catégorie utilisent généralement ce format de requête.
 
    ```text
    {
@@ -79,25 +65,23 @@ Commencez par une requête de liste simple afin de vous orienter sur le fonction
     }
    ```
 
-1. Remplacez ensuite le contenu existant dans l’éditeur de requêtes en collant le code copié.
+1. Remplacez le contenu existant dans l’éditeur de requêtes en collant le code copié.
 
    ![Requête de liste](assets/extract-content/list-query.png)
 
 1. Une fois collé, cliquez sur le bouton **Play** en haut à gauche de l’éditeur de requêtes pour exécuter la requête.
 
-1. Une fois la requête exécutée, les résultats s’affichent dans le panneau de droite, en regard de l’éditeur de requêtes. Si la requête est incorrecte, une erreur s’affiche dans le panneau de droite.
+1. Les résultats s’affichent dans le panneau de droite, en regard de l’éditeur de requêtes. Si la requête est incorrecte, une erreur s’affiche dans le panneau de droite.
 
    ![Liste des résultats de requête](assets/extract-content/list-query-results.png)
 
-Vous venez de valider une requête de liste pour une liste complète de tous les fragments de contenu. Ce processus permet de s’assurer que la réponse correspond à l’attente de votre application, avec des résultats qui illustrent la manière dont vos applications et sites web récupéreront le contenu créé dans AEM.
+Vous venez de valider une requête de liste pour obtenir une liste complète de tous les fragments de contenu. Ce processus permet de s’assurer que la réponse correspond à l’attente de votre application, avec des résultats qui illustrent la manière dont vos applications et sites web récupéreront le contenu créé dans AEM.
 
-Les différents canaux et plateformes sur lesquels votre contenu doit apparaître peuvent désormais utiliser cette requête ou similaire pour récupérer votre contenu sans interface.
+## Requête pour un élément spécifique de contenu d’exemple {#bypath-query}
 
-## Copie et exécution d’une requête byPath {#bypath-query}
+L’exécution d’une requête byPath vous permet de récupérer du contenu pour un fragment de contenu spécifique. Les pages Détails du produit et les pages qui se concentrent sur un ensemble spécifique de contenu nécessitent généralement ce type de requête. Voyons comment ça marche !
 
-L’exécution d’une requête byPath vous permet de récupérer des ressources pour un fragment de contenu spécifique. Les pages Détails du produit et les pages qui se concentrent sur un ensemble spécifique de contenu nécessitent généralement ce type de requête.
-
-1. Copiez le fragment de code suivant.
+1. Copiez le fragment de code suivant pour une requête byPath du préchargé. **AEM des ressources de démonstration** point de terminaison .
 
    ```text
     {
@@ -122,39 +106,35 @@ L’exécution d’une requête byPath vous permet de récupérer des ressources
    }
    ```
 
-1. Remplacez ensuite le contenu existant dans l’éditeur de requêtes en collant le code copié.
+1. Remplacez le contenu existant dans l’éditeur de requêtes en collant le code copié.
 
    ![requête byPath](assets/extract-content/bypath-query.png)
 
 1. Une fois collé, cliquez sur le bouton **Play** en haut à gauche de l’éditeur de requêtes pour exécuter la requête.
 
-1. Une fois la requête exécutée, les résultats s’affichent dans le panneau de droite, en regard de l’éditeur de requêtes. Si la requête est incorrecte, une erreur s’affiche dans le panneau de droite.
-
-1. Une fois la requête exécutée, les résultats s’affichent dans le panneau de droite, en regard de l’éditeur de requêtes. Si la requête est incorrecte, une erreur s’affiche dans le panneau de droite.
+1. Les résultats s’affichent dans le panneau de droite, en regard de l’éditeur de requêtes. Si la requête est incorrecte, une erreur s’affiche dans le panneau de droite.
 
    ![résultats de la requête byPath](assets/extract-content/bypath-query-results.png)
 
-Vous venez de valider une requête de liste pour une liste complète de tous les fragments de contenu. Ce processus permet de s’assurer que la réponse correspond à l’attente de votre application, avec des résultats qui illustrent la manière dont vos applications et sites web récupéreront le contenu créé dans AEM.
+Vous venez de valider une requête byPath pour récupérer un fragment de contenu spécifique identifié par le chemin d’accès de ce fragment.
 
-Les différents canaux et plateformes sur lesquels votre contenu doit apparaître peuvent désormais utiliser cette requête ou similaire pour récupérer votre contenu sans interface.
+## Interrogation de votre propre contenu {#own-queries}
 
-## Exécution de requêtes sur votre propre contenu {#own-queries}
-
-Maintenant que vous avez exécuté les deux Principaux types de requêtes, vous êtes prêt à configurer et exécuter des requêtes pour le contenu que vous avez créé vous-même.
+Maintenant que vous avez exécuté les deux Principaux types de requêtes, vous êtes prêt à interroger votre propre contenu !
 
 1. Pour exécuter des requêtes sur vos propres fragments de contenu, modifiez le point de terminaison à partir du **AEM des ressources de démonstration** vers le dossier **Votre projet** dossier.
 
    ![Sélectionner votre propre point de terminaison](assets/extract-content/select-endpoint.png)
 
-1. Vous devez d&#39;abord sélectionner et supprimer tout le contenu existant dans l&#39;éditeur de requêtes. Saisissez ensuite un crochet ouvert. `{` et appuyez sur Ctrl+Espace ou Option+Espace pour obtenir la liste à saisie automatique des modèles définis dans votre modèle de fragment de contenu. Sélectionnez le modèle que vous avez créé et qui se termine par `List` dans la liste.
+1. Supprimez tout le contenu existant dans l&#39;éditeur de requêtes. Saisissez ensuite un crochet ouvert. `{` et appuyez sur Ctrl+Espace ou Option+Espace pour obtenir la liste à saisie automatique des modèles définis dans votre point de terminaison. Sélectionnez le modèle que vous avez créé et qui se termine par `List` dans les options.
 
    ![Modèles de saisie automatique dans l’éditeur de requêtes](assets/extract-content/auto-complete-models.png)
 
-1. Définissez les éléments que la requête doit contenir pour le modèle de fragment de contenu que vous avez sélectionné. Encore une fois, tapez crochet ouvert. `{`, puis appuyez sur Ctrl+Espace ou Option+Espace pour obtenir une liste à saisie automatique. Sélectionner `items` dans la liste.
+1. Définissez les éléments que la requête doit contenir pour le modèle de fragment de contenu que vous avez sélectionné. Encore une fois, tapez crochet ouvert. `{`, puis appuyez sur Ctrl+Espace ou Option+Espace pour obtenir une liste à saisie automatique. Sélectionner `items` dans les options.
 
    ![Remplissage automatique des éléments dans l’éditeur de requêtes](assets/extract-content/auto-complete-items.png)
 
-1. Définissez les champs que la requête doit contenir pour le modèle de fragment de contenu que vous avez sélectionné. Encore une fois, tapez crochet ouvert. `{`, puis appuyez sur Ctrl+Espace ou Option+Espace pour obtenir une liste de saisie automatique des champs disponibles dans le modèle de fragment de contenu. Sélectionnez dans la liste les champs de votre modèle.
+1. Définissez les champs que la requête doit contenir pour le modèle de fragment de contenu que vous avez sélectionné. Une fois de plus, saisissez un crochet ouvert. `{`, puis appuyez sur Ctrl+Espace ou Option+Espace pour obtenir une liste de saisie automatique des champs disponibles dans le modèle de fragment de contenu. Sélectionnez dans la liste les champs de votre modèle.
 
    ![Remplir automatiquement les champs dans l’éditeur de requêtes](assets/extract-content/auto-complete-fields.png)
 
@@ -168,22 +148,6 @@ Maintenant que vous avez exécuté les deux Principaux types de requêtes, vous 
 
    ![Résultats de votre propre requête](assets/extract-content/custom-query-results.png)
 
-C’est ainsi que votre contenu peut être diffusé aux expériences numériques omnicanal. Voir [Section Ressources supplémentaires](#additional-resources) pour d’autres exemples de requêtes et découvrez ce que vous pouvez faire de plus avec l’API GraphQL.
+1. Les résultats s’affichent dans le panneau de droite, en regard de l’éditeur de requêtes.
 
-## Vous avez appris à interroger du contenu ! {#conclusion}
-
-Très bon travail ! Vous avez appris les deux types de requêtes de base et comment interroger votre propre contenu. Veillez à consulter le [Section Ressources supplémentaires](#additional-resources) pour d’autres exemples de requêtes et découvrez ce que vous pouvez faire de plus avec l’API GraphQL.
-
-Si vous souhaitez découvrir comment le contenu extrait est ensuite utilisé dans une application React personnalisée, veillez à consulter le module . [Personnalisation du contenu dans un exemple d’application React.](customize-app.md)
-
-Vous pouvez revenir à l’écran d’accueil de votre évaluation en cliquant sur **Solutions** en haut à droite de la barre de navigation et en sélectionnant **Experience Manager**.
-
-![Naviguer à la page d’accueil](assets/extract-content/home.png)
-
-## Ressources supplémentaires {#additional-resources}
-
-Pour plus d’informations sur les fragments de contenu et les AEM, consultez cette documentation supplémentaire.
-
-* [Guide de l’API GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/explore-graphql-api.html)
-* [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Documentation sur la navigation et l’utilisation d’AEM pour les nouveaux utilisateurs
-* [Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/graphql-api/sample-queries.html)
+C’est ainsi que votre contenu peut être diffusé aux expériences numériques omnicanal.
