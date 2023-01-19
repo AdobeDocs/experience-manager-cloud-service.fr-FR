@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de Cloud Manager 2022.12.0 dans Adobe Experience Manager as a Cloud Service
-description: Consultez les notes de mise à jour de Cloud Manager 2022.12.0 dans AEM as a Cloud Service.
+title: Notes de mise à jour de Cloud Manager 2023.1.0 dans Adobe Experience Manager as a Cloud Service
+description: Consultez les notes de mise à jour de Cloud Manager 2024.1.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 516c0027f917ea1e54286b268e7a0fb4c4e2b3d7
+source-git-commit: 5aabdf22a040a031a3fa2a1a9f70247cf2e38f2e
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 48%
+source-wordcount: '190'
+ht-degree: 36%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager 2022.12.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notes de mise à jour de Cloud Manager 2023.1.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Cette page présente les notes de mise à jour de Cloud Manager 2022.12.0 dans AEM as a Cloud Service.
+Cette page documente les notes de mise à jour de la version 2023.1.0 de Cloud Manager en AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,15 +21,20 @@ Cette page présente les notes de mise à jour de Cloud Manager 2022.12.0 dans
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2022.12.0 de Cloud Manager dans AEM as a Cloud Service est le 29 novembre 2022. La prochaine version est prévue pour le 19 janvier 2023.
+La date de publication de la version 2023.1.0 de Cloud Manager dans AEM as a Cloud Service est le 19 janvier 2023. La prochaine version est prévue pour le 16 février 2023.
 
 ## Nouveautés {#what-is-new}
 
-* Notifications pour [Mises à jour de maintenance AEM](/help/overview/what-is-new-and-different.md#aem-updates) apparaît dans l’interface utilisateur de Cloud Manager. Cette modification sera introduite progressivement dans les semaines qui suivront la version 2022.12.0.
-* Lorsqu’une ingestion via la variable [Outil de transfert de contenu (CTT)](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) est en cours, l’état de l’environnement dans Developer Console et dans Cloud Manager s’affiche comme `Ingestion in Progress`.
-* La disponibilité et la fiabilité des [pipelines de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) ont été améliorées.
+* Des améliorations ont été apportées à la convivialité en mettant à jour les styles de curseur qui font la distinction entre l’action des utilisateurs et le pointeur par défaut.
+
+* Les rapports de test de l’interface utilisateur personnalisée sont désormais copiés dans le stockage Cloud Manager et sont accessibles via l’appel de l’API Cloud Manager.
+
+* Les utilisateurs peuvent désormais effectuer une transition entre les états du widget d’activation à l’aide des flèches gauche-droite.
+
+   ![Transitions du widget d’activation](assets/go-live-transitions.gif)
+
+* Libre-service [création de programmes compatibles avec HIPAA](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) est désormais possible lorsque les droits et autorisations correspondants sont disponibles.
 
 ## Correctifs {#bug-fixes}
 
-* Une modification a été apportée pour empêcher [pipelines front-end](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) de s’exécuter pendant l’exécution d’un pipeline sur le même environnement.
-* Une modification a été apportée pour empêcher une `PATCH /program//environment//variables` requête pour les environnements avec la propriété `FAILED` statut.
+* Cloud Manager empêche deux exécutions de pipeline de commencer (ou presque) en même temps, évitant ainsi les échecs de pipeline.
