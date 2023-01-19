@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager 2023.1.0 dans Adobe Experience�
 description: Consultez les notes de mise à jour de Cloud Manager 2024.1.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 5aabdf22a040a031a3fa2a1a9f70247cf2e38f2e
+source-git-commit: 26a2ed4ee613b77c192652ae9afa99d5a86f72ce
 workflow-type: tm+mt
-source-wordcount: '190'
-ht-degree: 36%
+source-wordcount: '207'
+ht-degree: 33%
 
 ---
 
@@ -26,6 +26,8 @@ La date de publication de la version 2023.1.0 de Cloud Manager dans AEM as a Clo
 ## Nouveautés {#what-is-new}
 
 * Des améliorations ont été apportées à la convivialité en mettant à jour les styles de curseur qui font la distinction entre l’action des utilisateurs et le pointeur par défaut.
+
+* Dans les listes d’environnements et d’exécutions de pipeline, vous pouvez désormais accéder aux détails en cliquant sur la ligne individuelle.
 
 * Les rapports de test de l’interface utilisateur personnalisée sont désormais copiés dans le stockage Cloud Manager et sont accessibles via l’appel de l’API Cloud Manager.
 
