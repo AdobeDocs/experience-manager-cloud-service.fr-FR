@@ -6,9 +6,9 @@ feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
 source-git-commit: 153cc482047c3235b0f62bb94051c884b4cf29d4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1869'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Cette approche permet une gestion évolutive et plus performante des chargements
 >[!NOTE]
 Consultez le code client pour implémenter cette approche dans la [bibliothèque de chargement aem](https://github.com/adobe/aem-upload) open-source.
 [!IMPORTANT]
-Dans certains cas, les modifications peuvent ne pas se propager entièrement entre les demandes au Experience Manager en raison de la nature cohérente du stockage dans Cloud Service. Cela génère 404 réponses pour lancer ou terminer des appels de chargement en raison de la non-propagation des créations de dossiers requises. Les clients doivent s’attendre à recevoir 404 réponses et les gérer en implémentant une nouvelle tentative avec une stratégie de sauvegarde.
+Dans certains cas, les modifications peuvent ne pas se propager entièrement entre les requêtes à Experience Manager en raison de la nature cohérente du stockage dans Cloud Service. Cela génère des réponses 404 lors de l’initialisation ou de la complétion d’appels de téléchargement en raison de la non-propagation des créations de dossiers requises. Les client(e)s doivent s’attendre à recevoir des réponses 404 et à les gérer en implémentant une nouvelle tentative avec une stratégie backoff.
 
 ### Lancement du chargement {#initiate-upload}
 
