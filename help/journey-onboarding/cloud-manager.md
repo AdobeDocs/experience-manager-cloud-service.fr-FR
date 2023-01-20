@@ -4,9 +4,9 @@ description: Découvrez comment accéder à Cloud Manager afin de pouvoir confi
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
 source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1055'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -134,4 +134,4 @@ Suivez les autres ressources pour en savoir plus sur les aspects suivants :
 
 * [Présentation de Cloud Manager](/help/onboarding/cloud-manager-introduction.md) -
 En savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
-* [AEM équipe as a Cloud Service et profils de produits](/help/onboarding/aem-cs-team-product-profiles.md) - Découvrez comment AEM équipe as a Cloud Service et les profils de produits peuvent accorder et limiter l’accès à vos solutions d’Adobe sous licence.
+* [Équipe et profils de produits AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) - Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service peuvent accorder et limiter l’accès à vos solutions Adobe sous licence.
