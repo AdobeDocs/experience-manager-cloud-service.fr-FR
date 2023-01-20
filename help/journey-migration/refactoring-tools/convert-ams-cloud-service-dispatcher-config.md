@@ -2,9 +2,9 @@
 title: Conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager as a Cloud Service
 description: Conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager as a Cloud Service
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1342'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Cette section contient des instructions étape par étape pour convertir une con
 
 1. Supprimer ou mettre en commentaires les sections d’hôte virtuel qui ne font pas référence au port 80
 
-   Si des sections de vos fichiers d’hôtes virtuels font toujours référence exclusivement à d’autres ports que le port 80, par exemple :
+   Si vous avez encore des sections dans vos fichiers d’hôtes virtuels qui font exclusivement référence à d’autres ports que le port 80, par exemple,
 
    `<VirtualHost *:443>`
    `...`
@@ -89,7 +89,7 @@ Si des erreurs s’affichent au sujet de fichiers d’inclusion manquants, véri
 
 1. **Renommer les fichiers de fermes**
 
-   Toutes les fermes dans conf.dispatcher.d/enabled_farms doivent être renommées pour correspondre au modèle *.farm. Par exemple, un fichier de ferme appelé customerX_farm.any doit être renommé customerX.farm.
+   Toutes les fermes contenues dans conf.dispatcher.d/enabled_farms doivent être renommées pour correspondre au modèle *.farm. Par exemple, un fichier de ferme appelé customerX_farm.any doit être renommé customerX.farm.
 
 1. **Vérifier le cache**
 
