@@ -3,9 +3,9 @@ title: Présentation des programmes Sandbox
 description: Découvrez en quoi les programmes Sandbox diffèrent des programmes de production.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Les domaines personnalisés et les listes d’adresses IP autorisées ne sont pa
 
 ### Aucun réseau avancé {#advanced-networking}
 
-[Fonctionnalités de mise en réseau avancées](/help/security/configuring-advanced-networking.md) (par exemple, l’approvisionnement en libre-service de VPN, de ports non standard, d’adresses IP de sortie dédiées, etc.) ne sont pas disponibles dans les programmes sandbox.
+Les [fonctionnalités de réseau avancé](/help/security/configuring-advanced-networking.md) (par exemple, la configuration en libre-service de réseaux VPN, de ports non standards, d’adresses IP de sortie dédiées, etc.) ne sont pas disponibles dans les programmes sandbox.
 
 ### Mises à jour AEM manuelles {#updates}
 
