@@ -1,11 +1,11 @@
 ---
-title: Arborescence de structure de fragment de contenu (ressources - fragments de contenu)
+title: Arborescence de la structure du fragment de contenu (Ressources - Fragments de contenu)
 description: Utilisez la fonction Arborescence de structure de l’éditeur de fragment de contenu dans AEM pour mieux comprendre votre contenu découplé.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '114'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
