@@ -3,9 +3,9 @@ title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
 source-git-commit: 2bfabfc2c12faf6f813ecd5b11b289117724d9ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3019'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,7 @@ La barre d’outils vous donne accès à de nombreuses options. La disponibilit�
 
    ![Bouton Annotation](/help/sites-cloud/authoring/assets/annotations.png)
 
-### Notification d’état {#status-notification}
+### Notification de statut {#status-notification}
 
 Si la page fait partie d’un ou de plusieurs [workflows](/help/sites-cloud/authoring/workflows/overview.md), ces informations s’affichent dans une barre de notification située en haut de l’écran lorsque vous la modifiez.
 
@@ -297,7 +297,7 @@ Les options de modification disponibles dépendent du composant. Pour certains c
 
 * Les composants construits à partir de plusieurs composants de base vous demandent tout d’abord de confirmer à quel jeu d’options de modification vous souhaitez accéder :
 
-### Faire glisser et déposer des éléments dans des composants {#drag-and-drop-assets-into-component}
+### Faire glisser et déposez des éléments dans des composants {#drag-and-drop-assets-into-component}
 
 Pour certains types de composants (comme les images), vous pouvez faire glisser et déposer des éléments depuis l’explorateur de ressources directement dans le composant pour mettre à jour le contenu.
 
@@ -330,7 +330,7 @@ Pour déplacer un composant de paragraphe :
 >
 >Vous pouvez également utiliser la technique du [couper/coller](#component-toolbar) pour déplacer un composant.
 
-## Modification de la mise en page du composant {#edit-component-layout}
+## Modification de la disposition du composant {#edit-component-layout}
 
 Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Disposition](/help/sites-cloud/authoring/features/responsive-layout.md) pour ajuster un composant, vous pouvez sélectionner l’action **Disposition** pour un composant afin d’en modifier la mise en page. Cela vous évite de devoir quitter le mode Modifier, ce qui se traduit par un gain de temps.
 
@@ -360,14 +360,14 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 >
 >L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis cliquez sur un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné, tandis que les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
 >
->Si vous devez modifier la mise en page globale de la page et affecter ainsi plusieurs composants, basculez vers le [mode de mise en page](/help/sites-cloud/authoring/features/responsive-layout.md).
+>Si vous devez modifier la disposition globale de la page et affecter ainsi plusieurs composants, basculez vers le [mode Disposition](/help/sites-cloud/authoring/features/responsive-layout.md).
 
 ## Composants hérités {#inherited-components}
 
-L’héritage est le mécanisme par lequel le contenu peut être automatiquement envoyé d’un composant vers un autre. Les composants hérités peuvent être le produit de divers scénarios, notamment :
+L’héritage est le mécanisme par lequel le contenu peut être automatiquement envoyé d’un composant vers un autre. Les composants hérités peuvent être le produit de divers scénarios :
 
 * [Gestion de plusieurs sites](/help/sites-cloud/administering/msm/overview.md)
-* [Lancements](/help/sites-cloud/authoring/launches/overview.md) (quand basé sur une Live Copy).
+* [Lancements](/help/sites-cloud/authoring/launches/overview.md) (quand basés sur une Live Copy)
 
 Vous pouvez annuler (puis réactiver) l’héritage. Selon le composant, cette option peut être disponible à partir de la barre d’outils du composant, s’il se trouve sur une page faisant partie d’une Live Copy ou d’un lancement (en fonction d’une Live Copy).
 
@@ -393,7 +393,7 @@ Vous pouvez facilement passer à l’[éditeur de modèles](/help/sites-cloud/au
 
 Vous pouvez déterminer facilement le modèle sur lequel la page est basée en sélectionnant cette dernière en mode [Colonnes](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) ou [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view).
 
-## État de Live Copy {#live-copy-status}
+## Statut de la Live Copy {#live-copy-status}
 
 Le [mode de page État de Live Copy](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) donne un aperçu rapide de l’état de la live copy et des composants qui sont ou non hérités.
 
@@ -442,7 +442,7 @@ Lors de la création, le mode Aperçu est accessible par l’intermédiaire de l
 
 L’option **Afficher comme publié(e)** est disponible dans le menu [Informations sur la page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information). La page s’affiche sur un nouvel onglet, actualise le contenu et affiche la page telle qu’elle se présentera dans l’environnement de publication.
 
-## Verrouillage d’une page    {#locking-a-page}
+## Verrouillage d’une page  {#locking-a-page}
 
 AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
 
@@ -466,11 +466,11 @@ Une fois la page verrouillée, les informations d’affichage de la console sont
 
 >[!CAUTION]
 >
->Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière ne peut être déverrouillée que (par les clients) à l’aide de l’utilisateur qui a été emprunté à l’identité.
+>Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière peut uniquement être déverrouillée (par les clients) avec l’utilisateur ou l’utilisatrice dont l’identité a été empruntée.
 >
->Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur qui les a verrouillées.
+>Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur ou de l’utilisatrice qui les a verrouillées.
 >
->Si l’utilisateur qui a verrouillé la page n’est pas disponible pour déverrouiller la page, contactez le service clientèle pour évaluer les options de suppression du verrouillage.
+>Si l’utilisateur ou l’utilisatrice qui a verrouillé la page n’est pas disponible pour la déverrouiller, contactez le service clientèle afin d’évaluer les options de suppression du verrouillage.
 
 ## Déverrouillage d’une page {#unlocking-a-page}
 
@@ -482,11 +482,11 @@ Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme
 
 >[!CAUTION]
 >
->Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière ne peut être déverrouillée que par la suite (par les clients) à l’aide de l’utilisateur qui a été emprunté à l’identité.
+>Le verrouillage d’une page peut être réalisé lorsque vous empruntez l’identité d’un utilisateur. Cependant, une page verrouillée de cette manière peut ensuite uniquement être déverrouillée (par les clients) avec l’utilisateur ou l’utilisatrice dont l’identité a été empruntée.
 >
->Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur qui les a verrouillées.
+>Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur ou de l’utilisatrice qui les a verrouillées.
 >
->Si l’utilisateur qui a verrouillé la page n’est pas disponible pour déverrouiller la page, contactez le service clientèle pour évaluer les options de suppression du verrouillage.
+>Si l’utilisateur ou l’utilisatrice qui a verrouillé la page n’est pas disponible pour la déverrouiller, contactez le service clientèle afin d’évaluer les options de suppression du verrouillage.
 
 <!--
 >[!CAUTION]
@@ -514,7 +514,7 @@ Les icônes suivantes permettent d’annuler ou de rétablir une opération. Cel
 
 >[!NOTE]
 >
->Voir [Annulation et rétablissement des modifications de page : la théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
+>Consultez [Annulation et rétablissement des modifications de page : la théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
 
 ## Annulation et rétablissement des modifications de page : la théorie {#undoing-and-redoing-page-edits-the-theory}
 
