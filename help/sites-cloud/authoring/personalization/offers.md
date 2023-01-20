@@ -1,39 +1,39 @@
 ---
-title: Création et gestion des offres (console Offres)
-description: Utilisez la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
+title: Créer et gérer des offres (console Offres)
+description: Utiliser la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
 source-git-commit: ca389013fd1e703e7decd1aae968589b12a43489
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1393'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
-# Création et gestion d’offres (Console d’offres) {#creating-and-managing-offers}
+# Création et gestion d’offres (Console Offres) {#creating-and-managing-offers}
 
-Le **Offres** La console sera abandonnée à l’avenir. Donc, à partir de maintenant, c&#39;est :
+La console **Offres** sera abandonnée à l’avenir. Donc, à partir de maintenant :
 
-* Uniquement disponibles pour les clients qui ont *hérité* offres déjà définies (c’est-à-dire préexistantes)
+* Elle n’est disponible que pour les client(e)s qui ont des offres *héritées* déjà définies (c’est-à-dire préexistantes).
 * Il est recommandé de convertir de telles offres héritées en offres de fragments d’expérience.
-   * Dès que la dernière offre héritée est convertie/supprimée, la variable **Offres** ne sera plus disponible.
+   * Dès que la dernière offre héritée est convertie/supprimée, la console **Offres** n’est plus disponible.
 
 ![Consoles de personnalisation](/help/sites-cloud/authoring/assets/offers-consoles.png)
 
 >[!NOTE]
 >
->Les clients qui disposent d’offres héritées préexistantes peuvent toujours utiliser la variable **Offres** console pour afficher les offres existantes et créer de nouvelles offres héritées.
+>Les client(e)s qui disposent d’offres héritées préexistantes peuvent toujours utiliser la console **Offres** pour afficher les offres existantes et créer de nouvelles offres héritées.
 >
->Les clients qui ne disposent pas d’offres héritées préexistantes ne verront pas la variable **Offres** console.
+>Les client(e)s qui ne disposent pas d’offres héritées préexistantes ne verront pas la console **Offres**.
 >
->Tous les clients peuvent utiliser **Offres de fragments d’expérience** pour créer et gérer des offres.
+>Tou(te)s les client(e)s peuvent utiliser les **Offres de fragments d’expérience** pour créer et gérer des offres.
 
-## Conversion d’une offre héritée en fragment d’expérience {#convert-legacy-offer-to-experience-fragment}
+## Convertir une offre héritée en fragment d’expérience {#convert-legacy-offer-to-experience-fragment}
 
-A **Convertir en variation de fragment d’expérience** a été implémentée pour vous aider à convertir votre offre héritée en fragment d’expérience :
+Une option et un workflow **Convertir en variation de fragment d’expérience** ont été implémentés pour vous aider à convertir votre offre héritée en fragment d’expérience :
 
 >[!NOTE]
 >
->Il s’agit du processus recommandé pour convertir des offres héritées en fragments d’expérience.
+>Il s’agit du workflow recommandé pour convertir des offres héritées en fragments d’expérience.
 
 >[!NOTE]
 >
@@ -41,68 +41,68 @@ A **Convertir en variation de fragment d’expérience** a été implémentée p
 
 >[!CAUTION]
 >
->Le **Convertir en variation de fragment d’expérience** est disponible pour tous les composants principaux.
+>L’option **Convertir en variation de fragment d’expérience** est disponible pour tous les composants principaux.
 >
 >Cette option ne sera pas prise en charge pour les composants personnalisés. Pour ces composants, vous devez convertir manuellement le contenu en fragment d’expérience.
 
 >[!CAUTION]
 >
->Dès que la dernière offre héritée est convertie/supprimée :
+>Dès que la dernière offre héritée est convertie/supprimée :
 >
->* Le **Offres** ne sera plus disponible.
->* L’icône cible de la barre d’outils des autres composants concernés n’apparaîtra plus.
+>* La console **Offres** n’est plus disponible.
+>* L’icône cible de la barre d’outils des autres composants concernés n’apparaît plus.
 
 
 1. Ouvrez une page contenant l’offre à modifier.
 
-1. Basculer vers **Ciblage** pour cette page.
+1. Passez en mode **Ciblage** dans cette page.
 
 1. Sélectionnez **Commencer le ciblage**.
 
 1. Sélectionnez le composant (ciblé) approprié.
 
-1. La barre d’outils du composant fournit une option pour **Convertir en variation de fragment d’expérience**:
+1. La barre d’outils du composant fournit une option pour **Convertir en variation de fragment d’expérience** :
 
-   ![Conversion d’une offre héritée en fragment d’expérience](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
+   ![Convertir une offre héritée en fragment d’expérience](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 
-1. Une boîte de dialogue s’affiche. Vous pouvez y sélectionner les **Action**:
+1. Une boîte de dialogue s’affiche. Vous pouvez y sélectionner l’**action** requise :
 
-   * Créer un fragment d’expérience
-   * Ajouter du contenu à un fragment d’expérience existant
+   * Créer un nouveau fragment d’expérience
+   * Ajouter le contenu à un fragment d’expérience existant
 
-   Pour ce scénario, sélectionnez **Création d’un fragment d’expérience**.
+   Pour ce scénario, sélectionnez **Créer un fragment d’expérience**.
 
    ![Boîte de dialogue Convertir en variation de fragment d’expérience](/help/sites-cloud/authoring/assets/offers-convert-dialog.png)
 
-1. Renseignez les champs requis de la boîte de dialogue :
+1. Renseignez les champs requis de la boîte de dialogue :
 
    * **Chemin d’accès parent**
-Définition du chemin parent du nouveau fragment d’expérience
+Définissez le chemin d’accès parent du nouveau fragment d’expérience
    * **Modèle**
 Sélectionnez le modèle à utiliser pour créer le fragment d’expérience.
    * **Titre du fragment**
 Indiquez le titre.
-   * **Balises de fragment**
+   * **Balises du fragment**
 Ajoutez des balises, le cas échéant.
 
-1. Confirmer avec **Terminé**.
+1. Confirmez avec **Terminé**.
 
-   Si vous accédez maintenant à la **Offres de fragments d’expérience** , vous verrez votre nouveau fragment d’expérience, ainsi que ses variations associées.
+   Si vous accédez maintenant à la console **Offres de fragments d’expérience**, vous verrez votre nouveau fragment d’expérience, ainsi que ses variations associées.
 
-### Ciblage à l’aide du modèle Offres {#targeting-offers-template}
+### Ciblage à l’aide du modèle d’offre {#targeting-offers-template}
 
 >[!CAUTION]
 >
->Cette option est disponible uniquement pour les clients qui disposent d’offres héritées préexistantes.
+>Cette option est disponible uniquement pour les client(e)s qui disposent d’offres héritées préexistantes.
 >
->Comme avec le **Offres** console , elle ne sera plus disponible non plus :
+>Comme la console **Offres**, elle ne sera plus disponible non plus :
 >
->* une fois la dernière offre héritée convertie en fragments d’expérience
->* lorsque les offres héritées sont obsolètes (à l’avenir) ;
+>* une fois la dernière offre héritée convertie en fragment d’expérience ;
+>* lorsque les offres héritées seront obsolètes (à l’avenir).
 >
->Par conséquent, l’option recommandée consiste à utiliser des fragments d’expérience, et non pas cette option.
+>Par conséquent, il est recommandé d’utiliser les fragments d’expérience, et non pas cette option.
 
-Pour les clients qui disposent d’offres héritées préexistantes, la variable **Utiliser le modèle d’offre** Les options sont visibles lors du ciblage des composants qui sont **not** Fragments d’expérience :
+Pour les client(e)s qui disposent d’offres héritées préexistantes, l’option **Utiliser un modèle d’offre** est visible lors du ciblage des composants qui ne sont **pas** des fragments d’expérience :
 
 ![Boîte de dialogue Convertir en variation de fragment d’expérience](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
@@ -112,7 +112,7 @@ Pour les clients qui disposent d’offres héritées préexistantes, la variable
 >
 >Cette console sera abandonnée à l’avenir, car elle offre un moyen hérité de personnaliser le contenu.
 >
->Tu as du temps pour te préparer. Découvrez comment [convertir vos offres héritées existantes en offre de fragment d’expérience ;](#convert-legacy-offer-to-experience-fragment).
+>Vous avez le temps de vous préparer. Découvrez comment [convertir vos offres héritées existantes en offre de fragment d’expérience](#convert-legacy-offer-to-experience-fragment).
 
 Utilisez la console Offres pour créer des offres que vous pourrez [utiliser dans le cadre d’expériences associées à des activités](/help/sites-cloud/authoring/personalization/targeted-content.md). La création d’offres dans la console Offres permet de gagner du temps lorsque plusieurs expériences nécessitent la même offre :
 
