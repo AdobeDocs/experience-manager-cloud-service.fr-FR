@@ -3,9 +3,9 @@ title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1811'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -63,9 +63,11 @@ Les fragments de contenu, basés sur un modèle de fragment de contenu, sont map
    * Les données d’éléments sont stockées sous le sous-nœud maître :
       `jcr:content/data/master`
 
-   * Les variations sont stockées sous un sous-noeud portant le nom de la variation : par exemple, `jcr:content/data/myvariation`
+   * Les variations sont stockées sous un sous-nœud portant le nom de la variation :
+par exemple, `jcr:content/data/myvariation`.
 
-   * Les données de chaque élément sont stockées dans le sous-noeud respectif comme une propriété avec le nom d’élément : par exemple, le contenu de l’élément `text` est stocké en tant que propriété `text` on `jcr:content/data/master`
+   * Les données de chaque élément sont stockées dans le sous-nœud respectif en tant que propriété avec le nom d’élément :
+par exemple, le contenu de l’élément `text` est stocké en tant que propriété `text` sur `jcr:content/data/master`.
 
 * Les métadonnées et le contenu associé sont stockés sous `jcr:content/metadata`
 Hormis le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur 
@@ -97,7 +99,7 @@ Pour une intégration au composant de base Assets :
 >
 >Le [composant Fragment de contenu fait partie des composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr). Voir [Développement de composants de base](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr) pour plus d’informations.
 
-Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant de base de **[fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html)** [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant de base de **[fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)**.
+Les fragments de contenu peuvent être référencés dans les pages AEM, exactement comme n’importe quel autre type de ressource. AEM fournit le composant de base de **[fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)** [qui permet d’inclure des fragments de contenu sur vos pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md#adding-a-content-fragment-to-your-page). Vous pouvez également étendre ce composant de base de **[fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr)**.
 
 * Le composant utilise la propriété `fragmentPath` pour référencer le fragment de contenu. La propriété `fragmentPath` est traitée de la même façon que les propriétés similaires d’autres types de ressources, par exemple, lorsque le fragment de contenu est déplacé vers un autre emplacement.
 
@@ -180,7 +182,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
    L’interface permet les actions suivantes :
 
-   * gérer les données de base (par exemple, obtenir le nom) ; get/set title/description)
+   * Gestion des informations de base (par exemple, obtenir le nom ou obtenir/définir le titre/la description)
    * Accès aux métadonnées
    * Accès aux éléments :
 
@@ -347,4 +349,4 @@ Si vous souhaitez définir un intervalle d’enregistrement automatique de 5 mi
 
 Pour plus d’informations, voir :
 
-* [Composants de base – composant de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html) (recommandé)
+* [Composants de base – composant de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) (recommandé)
