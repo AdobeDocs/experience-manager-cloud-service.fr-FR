@@ -11,9 +11,9 @@ docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -23,23 +23,23 @@ Vous pouvez utiliser les composants **Signature tactile** et **Étape de signatu
 
 ![Boîte de dialogue de signature tactile](assets/scribble-signature.png)
 
-## Diverses options disponibles dans la fenêtre de signature
+## Diverses options disponibles dans la fenêtre de signature.
 
-* **A :** Cliquez sur le bouton **Pinceau** pour dessiner votre signature sur la zone de travail.
-* **B :** Cliquez sur le bouton **Effacer** pour effacer la signature sur la zone de travail.
-* **C :** Cliquez sur le bouton **Géolocalisation** pour ajouter une géolocalisation avec la signature.
-* **D :** Cliquez sur le bouton **Clavier** pour saisir votre nom sur la zone de travail.
+* **A :** cliquez sur l’icône **Pinceau** pour tracer votre signature sur la zone de travail.
+* **B :** cliquez sur l’icône **Effacer** pour effacer la signature sur la zone de travail.
+* **C :** cliquez sur l’icône **Géolocalisation** pour ajouter une géolocalisation avec la signature.
+* **D :** cliquez sur l’icône **Clavier** pour saisir votre nom sur la zone de travail.
 
-Une fois que vous avez appuyé sur Terminé ![aem_forms_save](assets/aem_forms_save.png) dans la fenêtre de signature tactile, vous ne pouvez pas modifier la signature. Si vous souhaitez modifier la signature, vous devez ignorer la signature actuelle et la signer à nouveau à l’aide de l’option Paint Brush/Keyboard ci-dessus.
+Une fois que vous avez appuyé sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) dans la fenêtre de signature tactile, vous ne pouvez plus modifier la signature. Si vous souhaitez modifier la signature, vous devez ignorer la signature actuelle et signer à nouveau à l’aide de l’option Pinceau/Clavier ci-dessus.
 
-Vous pouvez appuyer sur le bouton **Configurer** ![](assets/configure.png) pour définir les proportions du canevas de signature tactile.
-* Lorsque le rapport d’aspect du canevas de signature tactile est inférieur à 1, les informations de géolocalisation sont ajoutées au bas du canevas de signature tactile.
-
-
-* Lorsque le rapport d’aspect du canevas de signature tactile est supérieur à 1, les informations de géolocalisation sont ajoutées au côté droit du canevas de signature tactile.
+Vous pouvez appuyer sur l’icône **Configurer** ![](assets/configure.png) pour définir le format de la zone de travail de signature tactile.
+* Lorsque le format de la zone de travail de signature tactile est inférieur à 1, les informations de géolocalisation sont ajoutées au bas de la zone de travail de signature tactile.
 
 
-![signature tactile en bas](assets/scribble-signature-aspectratio.PNG)
+* Lorsque le format de la zone de travail de signature tactile est supérieur à 1, les informations de géolocalisation sont ajoutées au côté droit de la zone de travail de signature tactile.
+
+
+![Bas de la signature tactile](assets/scribble-signature-aspectratio.PNG)
 
 
 
