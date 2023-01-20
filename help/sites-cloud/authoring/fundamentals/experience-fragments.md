@@ -3,9 +3,9 @@ title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: ccf5cdf56867ca077d7ff71bfb2f1f4af1b32bd9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1971'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -186,7 +186,7 @@ Pour créer un fragment d’expérience :
 
 1. Cliquez sur **Créer**.
 
-   Un message s’affiche. Sélectionner:
+   Un message s’affiche. Sélectionner :
 
    * **Terminé** pour revenir à la console
    * **Ouvrir** pour ouvrir l’éditeur de fragments
@@ -308,68 +308,69 @@ Lors de la modification d’un fragment d’expérience, les blocs de création 
 
 ![Sélection de blocs de création](/help/sites-cloud/authoring/assets/xf-14.png)
 
-## Personnalisation sur votre fragment d’expérience {#personalization-experience-fragment}
+## Personnalisation de votre fragment d’expérience {#personalization-experience-fragment}
 
-La personnalisation sur votre fragment d’expérience vous permet, en tant que marketeur, de définir une seule fois les audiences cibles du fragment d’expérience, puis de réutiliser le fragment dans n’importe quelle page. Celui-ci :
+La personnalisation de votre fragment d’expérience vous permet, en tant que spécialiste marketing, de définir les audiences cibles pour le fragment d’expérience une seule fois, puis de réutiliser le fragment dans n’importe quelle page. Cela :
 
-* élimine la nécessité de spécifier les variations requises pour chaque audience chaque fois que le fragment est utilisé ;
-* maintient le style dans l’ensemble des offres
+* élimine le besoin de spécifier les variations requises pour chaque audience à chaque fois que le fragment est utilisé ;
+* maintient le style à travers les offres.
 
-Vous pouvez créer un fragment d’expérience avec plusieurs composants regroupés dans ce fragment unique. Vous pouvez également créer des variantes du fragment pour chaque segment d’audience spécifique, puis réutiliser ces fragments d’expérience sur les canaux requis.
+Vous pouvez créer un fragment d’expérience comportant plusieurs composants regroupés dans ce fragment unique. Vous pouvez également créer des variations du fragment pour chaque segment ciblé spécifique, puis réutiliser ces fragments d’expérience sur les canaux requis.
 
-La personnalisation est réalisée en définissant la variable **Personnalisation** propriétés sur le fragment d’expérience ou la variation, ou le dossier contenant les fragments ; cela signifie que l’héritage peut remplacer les propriétés de personnalisation.
+La personnalisation s’effectue en définissant les propriétés de **Personnalisation** du fragment d’expérience ou de la variation, ou du dossier contenant les fragments. Ainsi, l’héritage peut remplacer les propriétés de personnalisation.
 
-La configuration de ces propriétés active également la propriété **Ciblage** dans l’éditeur de fragments d’expérience.
+La configuration de ces propriétés active également le mode **Ciblage** dans l’éditeur de fragments d’expérience.
 
-### Définition de la personnalisation pour votre fragment d’expérience {#defining-personalization-experience-fragment}
+### Définir la personnalisation de votre fragment d’expérience {#defining-personalization-experience-fragment}
 
-Pour personnaliser votre fragment :
+Pour personnaliser votre fragment, procédez comme suit :
 
-1. Accédez à l’emplacement requis dans la **Fragments d’expérience** console.
+1. Accédez à l’emplacement requis dans la console **Fragments d’expérience**.
 
-1. Sélectionnez un dossier ou votre fragment, puis **Propriétés** dans la barre d’outils.
+1. Sélectionnez un dossier ou votre fragment, puis cliquez sur **Propriétés** dans la barre d’outils.
 
    >[!NOTE]
    >
-   >Les propriétés de personnalisation définies sur un dossier sont héritées par tous les dossiers enfants, par le biais de la sous-arborescence, et les fragments d’expérience (et leurs variations) au sein de cette sous-arborescence. Ils peuvent être remplacés en rompant l’héritage.
+   >Les propriétés de personnalisation définies pour un dossier sont héritées par tous les dossiers enfants de la sous-arborescence, ainsi que par les fragments d’expérience (et leurs variations) de cette sous-arborescence. Les propriétés peuvent être modifiées en annulant l’héritage.
 
-1. Ouvrez le **Personnalisation** pour définir et enregistrer vos paramètres. Par exemple, sur un dossier :
+1. Ouvrez l’onglet **Personnalisation** pour définir et enregistrer vos paramètres. Par exemple, pour un dossier :
 
    ![Fragment d’expérience - Propriétés de personnalisation](/help/sites-cloud/authoring/assets/xf-personalization-properties.png)
 
    >[!CAUTION]
    >
-   >Lorsqu’un fragment est incorporé dans une page Sites, et **Personnalisation** a été configuré, seule la version de personnalisation de la page sera utilisée au moment du rendu de la page.
+   >Lorsqu’un fragment est incorporé dans une page Sites et que la **Personnalisation** a été configurée, seule la version de personnalisation de la page sera utilisée au moment du rendu de la page.
    >
-   >Pour que le ciblage effectué sur les composants d’un fragment fonctionne au rendu de la page, les conditions suivantes doivent être remplies :
+   >Pour que le ciblage effectué sur les composants d’un fragment fonctionne lors du rendu de la page, les conditions suivantes doivent être remplies :
    >
-   >Le **Chemin d’accès ContextHub** sélectionné dans le **Personnalisation** doit être :
+   >Le **Chemin d’accès ContextHub** sélectionné dans l’onglet **Personnalisation** doit correspondre à l’une des valeurs suivantes :
    >
-   >* le même chemin que celui configuré pour la page sur laquelle le fragment sera rendu ;
-      >OU:
-   >* un chemin contenant un sous-ensemble des magasins définis dans ContextHub configuré pour la page ;
+   >* le même chemin d’accès que celui configuré pour la page sur laquelle le fragment sera rendu
+      >Ou :
+   >* un chemin contenant un sous-ensemble des magasins définis dans le chemin d’accès ContextHub configuré pour la page.
 
    >
    > 
-Le **Chemin d’accès aux segments** sélectionné dans le **Personnalisation** doit être :
-   * chemin d’accès identique à celui configuré pour la page sur laquelle le fragment sera rendu Ou
-   * un chemin contenant un sous-ensemble des segments configurés pour la page ;
+Le **Chemin d’accès de segments** sélectionné dans l’onglet **Personnalisation** doit correspondre à l’une des valeurs suivantes :
+   * le même chemin d’accès que celui configuré pour la page sur laquelle le fragment sera rendu
+Ou
+   * un chemin d’accès contenant un sous-ensemble des segments configurés pour la page.
 
 
-### Définition du ciblage pour votre fragment d’expérience {#defining-targeting-experience-fragment}
+### Définir le ciblage de votre fragment d’expérience {#defining-targeting-experience-fragment}
 
-Une fois les propriétés de personnalisation configurées, le mode Ciblage est disponible lorsque le fragment est ouvert pour modification.
+Une fois les propriétés de personnalisation configurées, le mode Ciblage est disponible lorsque le fragment est ouvert en vue d’être modifié.
 
-![Éditeur de fragment d’expérience - mode Ciblage](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
+![Éditeur de fragments d’expérience - Mode Ciblage](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
-Ce mode fonctionne de la même manière que pour la modification de pages. Voir [Mode Ciblage pour l’éditeur de page](/help/sites-cloud/authoring/personalization/targeted-content.md) pour plus d’informations.
+Ce mode fonctionne de la même manière que pour la modification de pages. Consultez la section [Mode Ciblage pour l’éditeur de page](/help/sites-cloud/authoring/personalization/targeted-content.md) pour plus d’informations.
 
 ## Détails de votre fragment d’expérience {#details-of-your-experience-fragment}
 
 Les détails de votre fragment sont visibles :
 
 1. Accédez à l’emplacement de vos fragments d’expérience (ne poursuivez pas l’exploration vers le bas jusqu’aux variations du fragment).
-Les détails sont affichés dans toutes les vues de la console **Éditeur de Fragments**, en **mode Liste**, notamment les détails d’une [exportation vers Target](/help/sites-cloud/integrating/integrating-adobe-target.md) :
+Les détails sont affichés dans toutes les vues de la console **Fragments d’expérience**, en **mode Liste**, notamment les détails d’une [exportation vers Target](/help/sites-cloud/integrating/integrating-adobe-target.md) :
 
    ![Détails du fragment d’expérience](/help/sites-cloud/authoring/assets/xf-15.png)
 
@@ -403,7 +404,7 @@ Les détails sont affichés dans toutes les vues de la console **Éditeur de Fra
    * **Personnalisation**
       * **Chemin d’accès ContextHub**
       * **Chemin d’accès de segments**
-      * **Brand Portal.**
+      * **Marque**
 
 ## Rendu HTML brut {#the-plain-html-rendition}
 
