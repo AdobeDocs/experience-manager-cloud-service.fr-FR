@@ -6,9 +6,9 @@ feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: a7c187ba-885e-45bf-a538-3c235b09a0f1
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '768'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 93%
 
 PWA Studio s’intègre de manière transparente à Adobe Commerce par le biais de GraphQL. Il offre des options illimitées pour créer des storefronts innovants et attrayants ainsi que d’autres expériences numériques.
 
-Les fragments de contenu sont des éléments de contenu dotés d’une structure prédéfinie qui leur permettent d’être utilisés sans interface à l’aide de GraphQL en tant qu’API dans différents formats (par exemple, JSON, Markdown) et rendus indépendamment. Les fragments de contenu incluent tous les types de données et champs requis par GraphQL pour s’assurer que votre application ne demande que les éléments disponibles et reçoit les éléments attendus. La flexibilité qu’ils offrent en termes de structure les rend parfaitement utilisables à plusieurs emplacements et sur plusieurs canaux.
+Les fragments de contenu sont des éléments de contenu dotés d’une structure prédéfinie qui leur permet d’être utilisés de manière découplée à l’aide de GraphQL en tant qu’API dans différents formats (par exemple, JSON et Markdown) et rendus indépendamment. Les fragments de contenu incluent tous les types de données et champs requis par GraphQL pour s’assurer que votre application ne demande que les éléments disponibles et reçoit les éléments attendus. La flexibilité qu’ils offrent en termes de structure les rend parfaitement utilisables à plusieurs emplacements et sur plusieurs canaux.
 
 La conception de la structure dont vous avez besoin est simple avec l’éditeur de modèles de fragments de contenu d’Adobe Experience Manager. Le principal défi de l’intégration des fragments de contenu Adobe Experience Manager (ou de toute autre donnée) à votre application PWA Studio consiste à récupérer des données à partir de plusieurs points d’entrée GraphQL. En effet, prêt à l’emploi, PWA Studio fonctionne avec un seul point d’entrée GraphQL d’Adobe Commerce.
 
@@ -117,7 +117,7 @@ En fonction de votre cas d’utilisation, vous souhaitez créer vos propres mod�
 Les configurations de production peuvent varier sous plusieurs aspects.
 
 * Vous pouvez disposer d’un point d’entrée GraphQL fédéré unique qui combine des données GraphQL AEM et Adobe Commerce au lieu de personnaliser le client Apollo.
-* Votre application PWA Studio peut utiliser directement l’URL de point d’entrée GraphQL d’AEM, sans proxy avec UPWARD. Le proxy peut également être déplacé vers une autre couche (CDN, par exemple).
+* Votre application PWA Studio peut utiliser directement l’URL de point d’entrée GraphQL d’AEM, sans proxy avec UPWARD. Le proxy peut également être déplacé vers une autre couche (par exemple, CDN).
 * L’approche qui vous convient le mieux dépend aussi grandement de la manière dont vous diffusez l’application de PWA Studio à l’utilisateur final.
 
 Cette extension est fournie avec deux exemples.
