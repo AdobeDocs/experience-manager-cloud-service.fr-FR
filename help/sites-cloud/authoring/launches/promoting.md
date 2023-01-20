@@ -3,9 +3,9 @@ title: Conversion de lancements
 description: Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -46,7 +46,7 @@ Vous pouvez convertir des lancements à partir de la console de **sites** ou de 
 1. Ouvrez :
    * La console **Sites** lors de la navigation dans les pages source :
       1. Ouvrez le [rail de références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références seront affichées.
-      1. Sélectionner **Lancements** (par exemple, Lancements (1)) pour afficher une liste des lancements spécifiques.
+      1. Sélectionnez **Lancements** (par exemple Lancements (1)) pour afficher une liste de lancements particuliers.
       1. Sélectionnez le lancement en question pour afficher les actions disponibles.
       1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
    * La console **Sites** lors de la navigation dans les pages de lancement :
