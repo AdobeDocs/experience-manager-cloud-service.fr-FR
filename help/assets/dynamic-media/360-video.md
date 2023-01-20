@@ -5,9 +5,9 @@ feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 source-git-commit: 033692b82ee366b70f69ca35d55bfac59da3157f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '929'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -43,18 +43,18 @@ Voir [Modification de la vidéo 360/VR](https://helpx.adobe.com/fr/premiere-pro
 Les ressources vidéo 360 chargées dans [!DNL Experience Manager] sont considérées comme des fichiers **multimédias** sur une page de ressource, tout comme une ressource vidéo normale.
 
 ![6_5_360video-selecttopreview](assets/6_5_360video-selecttopreview.png)
-*Ressource vidéo 360 chargée affichée en mode Carte. La ressource est considérée comme multimédia.*
+*Ressource vidéo 360 chargée et affichée en mode Carte. La ressource est considérée comme multimédia.*
 
 **Chargement de ressources pour une utilisation avec la visionneuse de vidéos 360 :**
 
-1. Création d’un dossier dédié à votre ressource vidéo 360.
+1. Créez un dossier dédié à votre ressource vidéo 360.
 1. [Appliquez un profil de vidéo adaptative au dossier](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
 
-   Le rendu d’un contenu vidéo 360 requiert plus d’exigences pour la résolution vidéo source et pour la résolution des rendus codés que pour le contenu vidéo standard non 360.
+   Les exigences du rendu de contenu vidéo 360 sont plus élevées pour la résolution vidéo source et pour la résolution des rendus codée que pour le contenu vidéo standard.
 
-   Vous pouvez utiliser le profil de vidéo adaptative prêt à l’emploi qui est déjà fourni avec Dynamic Media. Toutefois, la qualité de la vidéo 360 est inférieure à celle que vous obtenez pour les vidéos non 360 codées avec les mêmes paramètres rendus avec une visionneuse vidéo non 360. Par conséquent, si une vidéo 360 de qualité supérieure est requise, procédez comme suit :
+   Vous pouvez utiliser le profil de vidéo adaptative prêt à l’emploi qui est déjà fourni avec Dynamic Media. Toutefois, la qualité de la vidéo 360 sera sensiblement inférieure à celle que vous obtiendriez pour une vidéo standard encodée avec les mêmes paramètres et rendue avec une visionneuse vidéo standard. Par conséquent, si une vidéo 360 de qualité supérieure est requise, procédez comme suit :
 
-   * Idéalement, votre contenu vidéo 360 d’origine a l’une des résolutions suivantes :
+   * Idéalement, votre contenu vidéo 360 d’origine a l’une des résolutions suivantes :
 
       * 1080p – 1920 x 1080, connu sous le nom de résolution Full HD ou FHD ou,
       * 2160p – 3840 x 2160, connu sous le nom de résolution 4K, UHD ou Ultra HD. Cette résolution d’affichage importante est le plus souvent utilisée sur les téléviseurs et moniteurs d’ordinateur Premium. La résolution 2160p est souvent appelée « 4K », car la largeur est proche de 4 000 pixels. En d’autres termes, elle offre quatre fois plus de pixels que la résolution 1080p.
@@ -63,7 +63,7 @@ Les ressources vidéo 360 chargées dans [!DNL Experience Manager] sont consid�
       * Width=auto; Height=720; Bit rate=2500 kbps
       * Width=auto; Height=1080; Bit rate=5000 kbps
       * Width=auto; Height=1440; Bit rate=6600 kbps
-   * Traitez le contenu vidéo 360 dans un dossier dédié exclusivement aux ressources vidéo 360.
+   * Traitez le contenu vidéo 360 dans un dossier destiné exclusivement aux ressources vidéo 360.
 
    Cette approche impose des exigences plus élevées au réseau et au processeur de l’utilisateur final.
 
@@ -108,7 +108,7 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/
 
    ![6_5_360video-selecttopreview-1](assets/6_5_360video-selecttopreview-1.png)
 
-   Pour prévisualiser la vidéo, sélectionnez la ressource vidéo 360.
+   Pour prévisualiser la vidéo, sélectionnez la ressource vidéo 360.
 
 1. Dans la page d’aperçu, dans le coin supérieur gauche de la page, sélectionnez le menu déroulant puis sélectionnez **[!UICONTROL Visionneuses]**.
 
@@ -119,7 +119,7 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/
    * Pour modifier l’angle d’affichage de la scène statique, faites glisser le pointeur sur la vidéo.
    * Pour commencer la lecture, sélectionnez le bouton **[!UICONTROL Lecture]** de la vidéo. Pendant la lecture de la vidéo, faites glisser le pointeur sur la vidéo pour modifier l’angle de visionnage.
 
-   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Capture d&#39;écran de 360 vidéos.*
+   ![6_5_360video-preview-video360-social ](assets/6_5_360video-preview-video360-social.png)*Capture d’écran d’une vidéo 360.*
 
    * Dans la liste des visionneuses, sélectionnez **[!UICONTROL Video360VR]**.
 
