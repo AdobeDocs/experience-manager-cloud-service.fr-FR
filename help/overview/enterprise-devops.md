@@ -3,9 +3,9 @@ title: Opérations de développement d’entreprise (DevOps)
 description: Découvrez les processus, les méthodes et les communications requis pour faciliter le déploiement et simplifier la collaboration.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1002'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -108,7 +108,7 @@ Le code doit toujours être propagé du bas vers le haut :
 * Il est ensuite testé dans les environnements intermédiaires.
 * À ce stade seulement, le code doit être déployé dans les environnements de production.
 
-Le code (par exemple, la fonctionnalité d’application web personnalisée et les modèles de conception) est généralement transféré en exportant et en important des modules entre les différents référentiels de contenu. Le cas échéant, cette réplication peut être configurée en tant que processus automatique.
+Le code (par exemple, les fonctionnalités d’applications web et les modèles de conception personnalisés) est généralement transféré en exportant et en important des modules entre les différents référentiels de contenu. Lorsque c’est approprié, cette réplication peut être configurée en tant que processus automatique.
 
 Les projets AEM as a Cloud Service déclenchent souvent le déploiement du code :
 
