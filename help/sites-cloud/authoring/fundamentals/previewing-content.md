@@ -3,9 +3,9 @@ title: Prévisualisation du contenu
 description: Découvrez comment utiliser le service d’aperçu AEM pour prévisualiser le contenu avant sa mise en ligne.
 exl-id: 6b4b57f6-2e66-4c83-94d9-bc1e0daab0f3
 source-git-commit: 5a804895013e19592f918341bbc7921261b26945
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -46,11 +46,11 @@ Consultez le document [Gestion des environnements](/help/implementing/cloud-mana
 
 Le contenu peut également être publié pour la prévisualisation à l’aide d’un [workflow de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) avec le paramètre `agentId` défini sur `preview` ou à l’aide de l’[API de réplication](/help/operations/replication.md#replication-api) avec un `AgentFilter` configuré pour la prévisualisation.
 
-## Annulation de la publication de contenu à partir de l’aperçu {#unpublishing-content-from-preview}
+## Annuler la publication de contenu à partir de l’aperçu {#unpublishing-content-from-preview}
 
-Annulation de la publication de contenu à partir de **Aperçu** L’environnement est fondamentalement le même processus que [annulation de la publication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) de la **Publier** environnement.
+Annuler la publication de contenu à partir de l’environnement **Aperçu** est fondamentalement le même processus que l’[annulation de la publication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) de l’environnement **Publier**.
 
-La seule différence réside dans le fait que vous pouvez sélectionner la variable **Destination** to **Aperçu**.
+La seule différence réside dans le fait que vous pouvez sélectionner la **Destination** à afficher en **aperçu**.
 
 ## Configuration des paramètres OSGi pour le niveau d’aperçu {#configuring-osgi-settings-for-the-preview-tier}
 
