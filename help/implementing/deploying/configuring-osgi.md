@@ -4,9 +4,9 @@ description: Configuration d’OSGi à l’aide de valeurs secrètes et spécifi
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3311'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -174,7 +174,7 @@ Deux méthodes sont possibles pour créer des configurations OSGi, comme décrit
 Les fichiers de configuration OSGi au format JSON peuvent être écrits manuellement directement dans le projet AEM. C’est souvent la méthode la plus rapide pour créer des configurations OSGi relatives à des composants OSGi bien connus, et en particulier pour les composants OSGi personnalisés, conçus et mis au point par le développeur qui définit également les configurations. Cette approche peut également être utilisée pour copier/coller et mettre à jour des configurations pour un même composant OSGi sur différents dossiers de mode d’exécution.
 
 1. Dans votre IDE, ouvrez le projet `ui.apps`, recherchez ou créez le dossier de configuration (`/apps/.../config.<runmode>`) qui cible les modes d’exécution auxquels la nouvelle configuration OSGi doit s’appliquer
-1. Dans ce dossier de configuration, créez une `<PID>.cfg.json` fichier . Le PID est l’identité persistante du composant OSGi. Il s’agit généralement du nom de classe complet de l’implémentation du composant OSGi. Par exemple :
+1. Dans ce dossier de configuration, créez un fichier `<PID>.cfg.json`. Le PID est l’identité persistante du composant OSGi. Il s’agit généralement du nom de classe complet de l’implémentation du composant OSGi. Par exemple :
    `/apps/.../config/com.example.workflow.impl.ApprovalWorkflow.cfg.json`
 Notez que les noms des fichiers de configuration OSGi d’usine appliquent la convention de dénomination `<factoryPID>-<name>.cfg.json`.
 1. Ouvrez le nouveau fichier `.cfg.json` et définissez les combinaisons clé/valeur pour les paires propriété et valeur OSGi, en appliquant le [format de configuration OSGi JSON](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
@@ -202,7 +202,7 @@ Il est possible d’utiliser la console web AEM de l’environnement d’exécut
 1. La configuration OSGi au format JSON s’affichera dans la section Propriétés de configuration sérialisées.
    ![Imprimante de configuration du programme d’installation OSGi](./assets/configuring-osgi/osgi-installer-configurator-printer.png)
 1. Dans votre IDE, ouvrez le projet `ui.apps`, recherchez ou créez le dossier de configuration (`/apps/.../config.<runmode>`) qui cible les modes d’exécution auxquels la nouvelle configuration OSGi doit s’appliquer.
-1. Dans ce dossier de configuration, créez une `<PID>.cfg.json` fichier . Le PID est la même valeur qu’à l’étape 5.
+1. Dans ce dossier de configuration, créez un fichier `<PID>.cfg.json`. Le PID est la même valeur qu’à l’étape 5.
 1. Collez les propriétés de configuration sérialisées de l’étape 10 dans le fichier `.cfg.json`.
 1. Enregistrez les modifications dans le nouveau fichier `.cfg.json`.
 1. Ajoutez et validez votre nouveau fichier de configuration OSGi sur Git.
@@ -300,11 +300,11 @@ Si, par exemple, `$[secret:server_password]` est utilisé, un fichier texte nomm
 >
 >Les extensions de fichier ne sont pas autorisées pour le fichier texte.
 >
->Pour l’exemple ci-dessus, le fichier texte doit être nommé . **server_password** - sans extension de fichier.
+>Pour l’exemple ci-dessus, le fichier texte doit donc être nommé **server_password**, sans extension de fichier.
 
-Le `org.apache.felix.configadmin.plugin.interpolation.secretsdir` est une propriété de structure Sling ; donc, cette propriété n’est pas définie dans la console felix (/system/console), mais elle est définie dans le fichier sling.properties utilisé lors de l’exécution du système. Ce fichier se trouve dans le sous-répertoire /conf du dossier Jar/install extrait (crx-quickstart/conf).
+`org.apache.felix.configadmin.plugin.interpolation.secretsdir` est une propriété de framework Sling. Par conséquent, cette propriété n’est pas définie dans la console Felix (/system/console), mais dans le fichier sling.properties utilisé lors du démarrage du système. Ce fichier se trouve dans le sous-répertoire /conf du dossier Jar/install extrait (crx-quickstart/conf).
 
-exemple : ajoutez cette ligne à la fin du fichier &#39;crx-quickstart/conf/sling.properties&#39; pour configurer &#39;crx-quickstart/secret_dir&#39; en tant que dossier secret :
+Exemple : ajoutez la ligne suivante à la fin du fichier « crx-quickstart/conf/sling.properties » pour configurer « crx-quickstart/secretsdir » en tant que dossier secret :
 
 ```
 org.apache.felix.configadmin.plugin.interpolation.secretsdir=${sling.home}/secretsdir
@@ -414,7 +414,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1" : "$[env:my_var1]" "my_var2" : "abc", "my_var3" : 500 }
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -439,7 +443,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2" : "abc", "my_var3" : 500 }
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -449,7 +457,11 @@ config.dev
 </td>
 <td>
 <pre>
-{ "my_var1" : "$[env:my_var1]" "my_var2" : "abc", "my_var3" : 500 }
+{ 
+ "my_var1" : "$[env:my_var1]"
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
@@ -472,7 +484,11 @@ config
 </td>
 <td>
 <pre>
-{ "my_var1": "val1", "my_var2" : "abc", "my_var3" : 500 }
+{ 
+ "my_var1": "val1",
+ "my_var2": "abc",
+ "my_var3": 500
+}
 </pre>
 </td>
 </tr>
