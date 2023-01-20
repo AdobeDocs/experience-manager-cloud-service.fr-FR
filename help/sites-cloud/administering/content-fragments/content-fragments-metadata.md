@@ -1,13 +1,13 @@
 ---
-title: Métadonnées – propriétés des fragments
-description: Découvrez comment afficher et modifier les propriétés de métadonnées dans AEM fragments de contenu, pour la diffusion de contenu sans interface utilisateur et la création de pages.
+title: Métadonnées - Propriétés des fragments
+description: Découvrez comment afficher et modifier les propriétés des métadonnées dans les fragments de contenu AEM, pour la diffusion de contenu découplé et la création de pages.
 feature: Content Fragments
 role: User
 exl-id: c1b90118-4501-4f93-bd2d-6552e0d17aee
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
