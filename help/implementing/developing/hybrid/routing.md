@@ -3,9 +3,9 @@ title: Routage du modèle de SPA
 description: Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Pour obtenir une description détaillée, consultez la section [PageModelManager
 
 Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’historique HTML5 `pushState` et `replaceState` sont encapsulées pour garantir qu’un fragment donné du modèle a été récupéré au préalable et est accessible. Le composant front-end enregistré est ensuite informé que le modèle a été modifié.
 
-## Routage de modèles manuel ou automatique {#manual-vs-automatic-model-routing}
+## Routage manuel ou automatique {#manual-vs-automatic-model-routing}
 
 `ModelRouter` automatise la récupération des fragments du modèle. Cependant, comme tout outil automatisé, il comporte des restrictions. Si nécessaire, il est possible de désactiver ou de configurer `ModelRouter` pour ignorer les chemins d’accès à l’aide des propriétés des métadonnées (voir la section Propriétés des métadonnées dans le document [Composant de page SPA ](page-component.md)). Les développeurs front-end peuvent alors mettre en œuvre leur propre couche de routage de modèle en demandant à la fonction `PageModelManager` de charger tout fragment de modèle donné à l’aide de la fonction `getData()`.
 
@@ -35,7 +35,7 @@ Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’hist
 
 ## Contrat de routage {#routing-contract}
 
-L’implémentation actuelle repose sur l’hypothèse que le projet SPA utilise l’API d’historique HTML5 pour le routage vers les différentes pages de l’application.
+L’implémentation actuelle repose sur l’hypothèse que le projet de SPA utilise l’API d’historique HTML5 pour le routage vers les différentes pages de l’application.
 
 ### Configuration {#configuration}
 
@@ -47,7 +47,7 @@ Par défaut, ce comportement est automatiquement activé. Pour le désactiver, l
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Notez que chaque itinéraire du SPA doit correspondre à une ressource accessible dans AEM (par exemple, &quot; `/content/mysite/mypage"`) depuis le `PageModelManager` essaiera automatiquement de charger le modèle de page correspondant une fois l’itinéraire sélectionné. Cependant, la SPA peut, si nécessaire, définir une « liste bloquée » d’itinéraires que `PageModelManager` doit ignorer :
+Notez que chaque route de la SPA doit correspondre à une ressource accessible dans AEM (par exemple, &quot;`/content/mysite/mypage"`), étant donné que le `PageModelManager` essaiera automatiquement de charger le modèle de page correspondant une fois la route sélectionnée. Cependant, la SPA peut, si nécessaire, définir une « liste bloquée » d’itinéraires que `PageModelManager` doit ignorer :
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
