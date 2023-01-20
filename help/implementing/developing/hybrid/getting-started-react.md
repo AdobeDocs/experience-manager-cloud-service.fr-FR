@@ -3,9 +3,9 @@ title: Prise en main des SPA dans AEM avec React
 description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Puisque cet exemple est basé sur le framework React, il existe deux dépendance
 
 Plus de détails à ce sujet sont disponibles [sur GitHub ici](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
-`aem-clientlib-generator` est configuré dans le fichier `clientlib.config.js`comme suit.
+`aem-clientlib-generator` est configuré dans le fichier `clientlib.config.js` comme suit.
 
 ```
 module.exports = {
@@ -144,7 +144,7 @@ Lorsque le composant est instancié de manière statique à l’aide du modèle 
 
 ### App.js {#app-js}
 
-En effectuant le rendu de l’application, `index.js` appelle `App.js`, présenté ici dans une version simplifiée afin que l’accent porte sur le contenu important.
+En effectuant le rendu de l’application, `index.js` appelle `App.js`, présenté ici dans une version simplifiée afin de pouvoir se concentrer sur le contenu important.
 
 ```
 import {Page, withModel } from '@adobe/aem-react-editable-components';
