@@ -3,9 +3,9 @@ title: Guide de référence pour l’API JavaScript ContextHub
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4622'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -58,7 +58,7 @@ Le tableau suivant répertorie les noms des événements qui se produisent pour 
 | `ContextHub.Constants.EVENT_UI_CONTAINER_OPENED` | Déclenché lorsque l’IU ContextHub est ouverte | `ui-container-opened` |
 | `ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED` | Déclenché lorsque l’IU ContextHub est réduite | `ui-container-closed` |
 | `ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED` | Déclenché lorsqu’une propriété est modifiée | `ui-property-modified` |
-| `ContextHub.Constants.EVENT_UI_RENDERED` | Déclenché chaque fois que l’IU ContextHub est générée (par exemple, après une modification de propriété) | `ui-rendered` |
+| `ContextHub.Constants.EVENT_UI_RENDERED` | Déclenché à chaque fois que l’IU ContextHub est rendue (par exemple, après un changement de propriété) | `ui-rendered` |
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | Déclenché lorsque le conteneur d’IU est initialisé | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | Indique le mode d’IU actif | `/_/active-ui-mode` |
 
@@ -207,7 +207,7 @@ Renvoie la valeur associée à une clé.
 
 ##### Paramètres {#parameters-getitem}
 
-* **`key` :** (chaîne). Clé pour laquelle il faut retourner la valeur.
+* **`key` :** (chaîne) clé pour laquelle il faut retourner la valeur.
 
 ##### Renvoie {#returns-getitem}
 
@@ -433,7 +433,7 @@ Une valeur `string` représentant l’URL du service.
 
 #### init(name, config)  {#init-name-config-1}
 
-Initialise l’objet `ContextHub.Store.JSONPStore`.
+initialise l’objet `ContextHub.Store.JSONPStore`.
 
 ##### Paramètres {#parameters-init-1}
 
@@ -463,7 +463,7 @@ Déclenche l’événement ready lorsque la requête est terminée. Si l’URL d
 
 ##### Paramètres {#parameters-queryservice}
 
-* **`reload` :** (booléen). Une valeur true supprime la réponse mise en cache et force l’appel du service JSONP.
+* **`reload` :** (booléen) une valeur true supprime la réponse mise en cache et force l’appel du service JSONP.
 
 #### reset {#reset}
 
@@ -531,7 +531,7 @@ Détermine si un cookie existe.
 
 ##### Renvoie {#returns-exists}
 
-Une valeur `boolean` true indique que le cookie existe.
+Une valeur `boolean` indique que le cookie existe.
 
 ##### Exemple {#example-exists}
 
@@ -614,7 +614,7 @@ Supprime un cookie. Pour supprimer le cookie, la valeur est définie sur une cha
 
 ##### Renvoie {#returns-removeitem-1}
 
-Cette fonction ne retourne pas de valeur.
+Cette fonction ne renvoie pas de valeur.
 
 ##### Exemple {#example-removeitem-1}
 
