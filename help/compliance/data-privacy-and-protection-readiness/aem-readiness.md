@@ -3,9 +3,9 @@ title: Règlements sur la protection et la confidentialité des données – Pr�
 description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service relative aux différents règlements sur la protection et la confidentialité des données ; notamment le Règlement général sur la protection des données (RGPD) de l’UE et la Loi sur la protection de la vie privée des consommateurs de Californie, ainsi que la manière de se conformer à ces règlements lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '730'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe propose de la documentation et des procédures (avec des API si disponible
 >
 >Les données d’un autre service à la demande d’Adobe, ainsi que toute demande associée d’accès à des informations personnelles, nécessiteront des actions relatives à ce service.
 >
->Pour plus d’informations, voir la section [Centre de traitement des données personnelles d’Adobe](https://www.adobe.com/privacy.html).
+>Pour plus d’informations, voir la section [Centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy.html).
 
 ## Présentation {#introduction}
 
@@ -91,7 +91,7 @@ Voir la section [Préparation d’AEM Sites aux réglementations sur la protect
 
 ## Intégration d’Adobe Experience Manager as a Cloud Service avec Adobe Target et Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Ces intégrations d’Adobe Experience Manager as a Cloud Service s’appliquent aux services prêts pour la protection des données et la confidentialité (par exemple, le RGPD). Aucune donnée personnelle provenant d’Adobe Target ou d’Adobe Analytics n’est stockée dans AEM en lien avec les intégrations.
+Ces intégrations d’Adobe Experience Manager as a Cloud Service sont compatibles avec les services relatifs à la protection et à la confidentialité des données (par exemple, RGPD). Aucune donnée personnelle provenant d’Adobe Target ou d’Adobe Analytics n’est stockée dans AEM en lien avec les intégrations.
 Pour plus d’informations, voir :
 
 * [Adobe Target – Présentation de la confidentialité](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/privacy.html?lang=fr)
