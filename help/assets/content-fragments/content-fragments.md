@@ -3,9 +3,9 @@ title: Utiliser des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour la création de pages et la diffusion découplée.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2075'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -60,8 +60,8 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
 
-* Canal physique; par exemple, bureau, mobile.
-* Forme de diffusion sur un canal physique ; par exemple, la &quot;page des détails du produit&quot;, la &quot;page de catégorie de produit&quot; pour ordinateur de bureau ou &quot;web mobile&quot;, &quot;application mobile&quot; pour mobile.
+* Canal physique (par exemple, bureau ou mobile).
+* Forme de diffusion dans un canal physique (par exemple, la « page de détails du produit », la « page de catégorie de produit » pour le bureau, ou le « web mobile » et « l’application mobile » pour le mobile).
 
 Cependant, vous ne voulez probablement pas utiliser exactement le même contenu pour tous les canaux et vous devez optimiser votre contenu en fonction des différents canaux.
 
