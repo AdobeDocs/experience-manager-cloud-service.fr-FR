@@ -1,17 +1,17 @@
 ---
 title: Équipe et profils de produits AEM as a Cloud Service
-description: Découvrez comment AEM équipe as a Cloud Service et les profils de produits peuvent accorder et limiter l’accès à vos solutions d’Adobe sous licence.
+description: Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service accordent et limitent l’accès à vos solutions Adobe sous licence.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '748'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Équipe et profils de produits AEM as a Cloud Service {#product-profiles}
 
-Découvrez comment AEM équipe as a Cloud Service et les profils de produits peuvent accorder et limiter l’accès à vos solutions d’Adobe sous licence.
+Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service accordent et limitent l’accès à vos solutions Adobe sous licence.
 
 ## Profils de produit {#profiles}
 
@@ -31,13 +31,13 @@ Vos membres d’équipe d’AEM as a Cloud Service seront ajoutés et affect
 
 >[!NOTE]
 >
->Chaque utilisateur affecté à un profil de produit as a Cloud Service AEM dispose d’un accès en lecture seule à Cloud Manager via le **Utilisateur de Cloud Manager** rôle.
+>Chaque utilisateur/utilisatrice affecté(e) à un profil de produit AEM as a Cloud Service dispose d’un accès en lecture seule à Cloud Manager via le rôle **Utilisateur de Cloud Manager**.
 >
->Utilisateurs avec uniquement la variable **Utilisateur de Cloud Manager** Le rôle peut se connecter à Cloud Manager et accéder aux environnements de création AEM (s’ils existent) à l’aide de la fonction **Programmes** options de menu. Le **Utilisateur de Cloud Manager** Le rôle n’est pas suffisant pour accéder aux détails du programme. Si cet accès est nécessaire, les utilisateurs doivent recevoir des rôles supplémentaires de la part de leur administrateur système.
+>Les utilisateurs disposant uniquement du rôle **Utilisateur de Cloud Manager** peuvent se connecter à Cloud Manager et accéder aux environnements de création AEM (s’ils existent) à l’aide des options de menu **Programmes**. Le rôle **Utilisateur de Cloud Manager** n’est pas suffisant pour accéder aux détails du programme. Si cet accès est nécessaire, les utilisateurs doivent faire appel à leur administrateur/administratrice système pour recevoir des rôles supplémentaires.
 
 >[!TIP]
 >
->* Pour en savoir plus sur AEM profils de produits, consultez le document . [Attribution de profils de produit AEM.](/help/journey-onboarding/assign-profiles-aem.md)
+>* Pour en savoir plus sur les profils de produits AEM, consultez le document [Attribuer des profils de produit AEM.](/help/journey-onboarding/assign-profiles-aem.md)
 >* Pour plus d’informations sur le processus d’intégration, reportez-vous à la section [parcours d’intégration.](/help/journey-onboarding/overview.md)
 
 
@@ -51,7 +51,7 @@ Cloud Manager dispose de profils de produit préconfigurés qui peuvent être c
 
 Chacun des profils de produit est associé à des autorisations spécifiques.
 
-* **Propriétaire de l’entreprise** - Dans ce rôle, vous avez l’autorisation d’ajouter un nouveau programme ou de modifier un programme, d’ajouter ou de mettre à jour un environnement, de déployer du code dans AEM environnement ou d’exécuter des contrôles qualité du code.
+* **Propriétaire de l’entreprise** - Ce rôle vous donne l’autorisation d’ajouter ou de modifier un programme, d’ajouter ou de mettre à jour un environnement, de déployer du code dans un environnement AEM ou d’exécuter des contrôles qualité du code.
 * **Responsable de déploiement** - Ce rôle vous donne l’autorisation d’ajouter ou de mettre à jour un environnement, d’exécuter n’importe quel pipeline et de déployer du code dans un environnement AEM ou d’exécuter des contrôles qualité du code.
 * **Développeur** - Ce rôle vous donne l’autorisation de générer des jetons d’accès personnel à Git.
 * **Responsable de programme** - Ce rôle vous donne l’autorisation de planifier des pipelines, de remplacer les points de contrôle qualité à 3 niveaux et de fournir l’approbation de production.
@@ -70,6 +70,6 @@ Votre équipe Cloud Manager comprend au moins :
 
 >[!TIP]
 >
->* Pour en savoir plus sur les profils de produits Cloud Manager, consultez le document . [Affectation de membres d’équipe à des profils de produit Cloud Manager.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
+>* Pour en savoir plus sur les profils de produits Cloud Manager, consultez le document [Attribuer des membres d’équipe à des profils de produit Cloud Manager.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
 >* Pour plus d’informations sur le processus d’intégration, reportez-vous à la section [parcours d’intégration.](/help/journey-onboarding/overview.md)
 
