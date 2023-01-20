@@ -9,9 +9,9 @@ kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
 source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1099'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -132,7 +132,7 @@ Les propriétés suivantes peuvent être configurées :
    >
    > À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Si votre projet utilise la version 2.0.0 des composants principaux CIF, vous devez activer la prise en charge de l’UID de catalogue et utiliser un UID de catégorie valide comme « identifiant de catégorie racine de catalogue ».
 
-La configuration illustrée ci-dessus est à titre de référence. Les projets doivent fournir leurs propres configurations.
+La configuration illustrée ci-dessus est fournie à titre de référence. Les projets doivent fournir leurs propres configurations.
 
 Pour des configurations plus complexes à l’aide de plusieurs structures de site AEM combinées à différents catalogues commerciaux, consultez le tutoriel [Configuration multi-magasin Commerce](configuring/multi-store-setup.md).
 
@@ -141,5 +141,5 @@ Pour des configurations plus complexes à l’aide de plusieurs structures de si
 - [Archétype de projet AEM](https://github.com/adobe/aem-project-archetype)
 - [Magasin de référence Venia AEM](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuration multi-magasin Commerce](configuring/multi-store-setup.md)
-- [Configuration de plusieurs systèmes de commerce](configuring/multiple-commerce-systems-setup.md)
+- [Configuration de plusieurs systèmes commerciaux](configuring/multiple-commerce-systems-setup.md)
 
