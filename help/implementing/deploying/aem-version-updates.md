@@ -4,45 +4,45 @@ description: Mises à jour de la version d’AEM
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 20%
+ht-degree: 100%
 
 ---
 
 
 # Mises à jour de la version d’AEM {#aem-version-updates}
 
-## Présentation  {#introduction}
+## Présentation {#introduction}
 
-AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour s’assurer que vos projets utilisent la version AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la dernière version d’AEM sans interruption de service pour les utilisateurs.
+AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour garantir que vos projets utilisent la version d’AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la version d’AEM la plus récente sans aucune interruption de service pour les utilisateurs et utilisatrices.
 
 >[!NOTE]
 >
->Si la mise à jour de l’environnement de production échoue, Cloud Manager restaure automatiquement l’environnement d’évaluation. Cela permet de s’assurer automatiquement qu’une fois la mise à jour terminée, les environnements d’évaluation et de production se trouvent sur la même version AEM.
+>Si la mise à jour de l’environnement de production échoue, Cloud Manager restaurera automatiquement l’environnement d’évaluation. Cette opération s’effectue automatiquement afin de s’assurer qu’une fois la mise à jour terminée, les environnements d’évaluation et de production utilisent la même version d’AEM.
 
-Il existe deux types de mises à jour AEM version :
+Il existe deux types de mises à jour de la version d’AEM :
 
-* **AEM mises à jour de maintenance**
+* **Mises à jour de maintenance AEM**
 
    * Elles peuvent être publiées quotidiennement.
-   * Sont principalement à des fins de maintenance, y compris les derniers correctifs de bogues et les mises à jour de sécurité.
-   * ont un impact minimal, car les modifications sont appliquées régulièrement ;
+   * Elles sont principalement destinées à la maintenance et comprennent les derniers correctifs de bugs et les mises à jour de sécurité.
+   * Elles ont un impact minimal, car les modifications apportées à AEM sont appliquées régulièrement.
 
-* **Nouvelles mises à jour de fonctionnalités**
+* **Mises à jour de nouvelles fonctionnalités**
 
-   * Sont publiées selon un calendrier mensuel prévisible.
+   * Elles sont publiées selon un calendrier mensuel et prévisible.
 
-AEM mises à jour passent par un pipeline de validation de produit intense et entièrement automatisé, impliquant plusieurs étapes, ce qui n’assure aucune interruption de service pour les systèmes en production. Les contrôles d’intégrité servent à surveiller l’état de l’application. Si ces contrôles échouent lors d’une mise à jour d’AEM as a Cloud Service, la version ne sera pas publiée et Adobe examinera les raisons pour lesquelles la mise à jour a provoqué ce comportement inattendu.
+Les mises à jour d’AEM passent par un pipeline de validation de produit avancé et entièrement automatisé, impliquant plusieurs étapes et ne perturbant pas le service des systèmes en production. Les contrôles d’intégrité servent à surveiller l’état de l’application. Si ces contrôles échouent lors d’une mise à jour d’AEM as a Cloud Service, la version ne sera pas publiée et Adobe examinera les raisons pour lesquelles la mise à jour a provoqué ce comportement inattendu.
 
-[Tests de produit et tests fonctionnels du client,](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) qui empêchent les mises à niveau de produit et les transmissions de code client de casser les systèmes de production, sont également validés lors d’une mise à jour de version d’AEM.
+[Les tests de produits et les tests fonctionnels du client](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) qui empêchent que les mises à niveau de produit et les publications de code client interrompent la production, sont également validés lors d’une mise à jour de la version d’AEM.
 
 >[!NOTE]
 >
->Si le code personnalisé a été envoyé vers l’évaluation et non vers la production, la prochaine mise à jour AEM supprimera ces modifications pour refléter la balise git de la dernière version de production réussie du client. Par conséquent, le code personnalisé qui n’était disponible que lors de l’évaluation devra être déployé à nouveau.
+>Si du code personnalisé a été soumis à l’évaluation et non à la production, la prochaine mise à jour d’AEM supprimera ces modifications afin de refléter la balise Git de la dernière version de production réussie du client. Par conséquent, le code personnalisé qui n’avait été déployé qu’en phase d’évaluation devra être déployé à nouveau.
 
 ## Magasin de nœuds composites {#composite-node-store}
 
-Dans la plupart des cas, les mises à jour n’entraînent aucune interruption, y compris pour l’instance de création, qui est un cluster de noeuds. Les mises à jour en continu sont possibles en raison de la fonctionnalité de magasin de nœuds composites dans Oak.
+Dans la plupart des cas, les mises à jour n’entraînent aucune interruption, y compris pour l’instance de création qui est un cluster de nœuds. Les mises à jour en continu sont possibles en raison de la fonctionnalité de magasin de nœuds composites dans Oak.
 
-Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. Dans un déploiement en continu, la nouvelle version verte AEM contient sa propre version `/libs` (référentiel non modifiable basé sur TarMK), distinct de l’ancienne version bleue de l’AEM, bien que les deux fassent référence à un référentiel modifiable partagé basé sur DocumentMK qui contient des zones comme `/content` , `/conf` , `/etc` et autres. Parce que le bleu et le vert possèdent leur propre version de `/libs`, elles peuvent toutes deux être principales pendant la mise à jour en continu, en prenant toutes deux en charge le trafic jusqu’à ce que le bleu soit complètement remplacé par le vert.
+Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. Dans un déploiement en continu, la nouvelle version verte d’AEM contient son propre `/libs` (référentiel non modifiable basé sur TarMK), distinct de l’ancienne version bleue d’AEM, bien que les deux fassent référence à un référentiel modifiable partagé et basé sur DocumentMK qui contient des zones comme `/content`, `/conf`, `/etc` et d’autres. Comme les versions bleue et verte possèdent leur propre version de `/libs`, elles peuvent toutes deux être actives pendant la mise à jour en continu, se partageant le trafic jusqu’à ce que la version verte remplace complètement la bleue.
