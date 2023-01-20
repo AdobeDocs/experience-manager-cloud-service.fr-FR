@@ -3,9 +3,9 @@ title: Utilisation de conditions de masquage
 description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '615'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -43,13 +43,13 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 Lors de la définition de votre expression de masquage, veuillez tenir compte des points suivants :
 
-* Pour être valide, la portée dans laquelle la propriété est trouvée doit être exprimée (par exemple, `cqDesign.myProperty`).
+* Pour être valide, la portée dans laquelle se trouve la propriété doit être exprimée (`cqDesign.myProperty`, par exemple).
 * Les valeurs sont en lecture seule.
 * Les fonctions (si nécessaire) doivent être limitées à un ensemble donné fourni par le service.
 
 ## Exemple {#example}
 
-Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Par exemple, considérez le [composant principal Liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html) tel qu’il est implémenté dans le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
+Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Par exemple, considérez le [composant principal Liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=fr) tel qu’il est implémenté dans le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 [En utilisant l’éditeur de modèles](/help/sites-cloud/authoring/features/templates.md), l’auteur de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition de l’auteur de pages. Il est ainsi possible d’activer ou de désactiver des options permettant de définir une liste comme étant statique, une liste de pages enfants, une liste de pages balisées, etc.
 
