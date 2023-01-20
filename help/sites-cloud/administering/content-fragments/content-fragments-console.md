@@ -1,14 +1,14 @@
 ---
 title: Console Fragments de contenu
 description: Découvrez comment gérer les fragments de contenu à partir de la console Fragments de contenu.
-landing-page-description: Découvrez comment gérer les fragments de contenu à partir de la console Fragments de contenu , qui se concentre sur l’utilisation de volume élevé de fragments de contenu pour les cas d’utilisation sans affichage, mais également utilisés lors de la création de pages.
+landing-page-description: Découvrez comment gérer les fragments de contenu à partir de la console Fragments de contenu, qui est axée sur l’utilisation de volumes importants de fragments de contenu pour les cas d’utilisation découplée, mais également qui est utilisée lors de la création de pages.
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '901'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ La console Fragments de contenu est dédiée à la gestion, à la recherche et �
 
 >[!NOTE]
 >
->Une sélection de [des raccourcis clavier peuvent être utilisés dans cette console.](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+>Une sélection de [raccourcis clavier peuvent être utilisés dans cette console](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Votre équipe de projet peut personnaliser la console si nécessaire. Voir [Personnalisation de la console de fragments de contenu](/help/implementing/developing/extending/content-fragment-console-customizing.md) pour plus de détails.
+>Votre équipe de projet peut personnaliser la console en cas de besoin. Voir [Personnalisation de la console Fragments de contenu](/help/implementing/developing/extending/content-fragment-console-customizing.md) pour plus de détails.
 
 La console Fragments de contenu est directement accessible à partir du niveau supérieur de la navigation globale :
 
@@ -60,11 +60,11 @@ Vous pouvez constater ici qu’il existe trois zones principales :
    * Consulter la liste de tous les fragments de contenu dans la branche sélectionnée de l’arborescence. :
       * L’emplacement est indiqué par les chemins de navigation. Ceux-ci peuvent également être utilisés pour modifier l’emplacement.
       * Les fragments de contenu du dossier sélectionné et tous les dossiers enfants s’affichent. :
-         * [Divers champs d&#39;information](#selectuse-available-columns) à propos d’un fragment de contenu fournit des liens ; en fonction du champ, ces éléments peuvent :
-            * Ouvrez le fragment approprié dans l’éditeur.
-            * Affichage des informations sur les références
+         * [Plusieurs champs d’information](#selectuse-available-columns) à propos d’un fragment de contenu fournissent des liens ; en fonction du champ, ces éléments peuvent :
+            * Ouvrir le fragment approprié dans l’éditeur
+            * Afficher des informations à propos des références
             * Afficher des informations sur les versions linguistiques du fragment
-         * Vous pouvez [sélectionnez un ou plusieurs fragments de contenu pour afficher les actions disponibles.](#actions-selected-content-fragment)
+         * Vous pouvez [sélectionnez un ou plusieurs fragments de contenu pour afficher les actions disponibles](#actions-selected-content-fragment)
       * Vous pouvez sélectionner un en-tête de colonne pour trier le tableau en fonction de cette colonne. Sélectionnez à nouveau pour basculer entre ordre ascendant et descendant.
    * **[Créer](#creating-new-content-fragment)** un fragment de contenu.
    * [Filtrer](#filtering-fragments) les fragments de contenu en fonction d’une sélection de prédicats et enregistrer le filtre en vue d’une utilisation ultérieure.
@@ -97,9 +97,9 @@ La sélection d’un fragment spécifique ouvre une barre d’outils axée sur l
 >
 >Des actions telles que Publier, Annuler la publication, Supprimer, Déplacer, Renommer ou Copier déclenchent un traitement asynchrone. Il est possible de surveiller la progression de ce traitement via l’interface utilisateur des traitements asynchrones AEM.
 
-## Informations fournies sur vos fragments de contenu {#information-content-fragments}
+## Les informations fournies sur vos fragments de contenu {#information-content-fragments}
 
-Le panneau principal/droit (mode Tableau) de la console fournit diverses informations sur vos fragments de contenu. Certains éléments fournissent également des liens directs vers d’autres actions et/ou informations :
+Le panneau principal/droit (vue du tableau) de la console fournit diverses informations sur vos fragments de contenu. Certains éléments fournissent également des liens directs vers d’autres actions et/ou informations :
 
 * **Nom**
    * Fournit un lien pour ouvrir le fragment dans l’éditeur.
@@ -120,7 +120,7 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
    * Informations uniquement
 * **Référencé par**
 
-   * Fournit un lien qui ouvre une boîte de dialogue répertoriant toutes les références parentes de ce fragment ; notamment le référencement de fragments de contenu, de fragments d’expérience et de pages. Pour ouvrir une référence spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
+   * Fournit un lien qui ouvre une boîte de dialogue répertoriant toutes les références parentes de ce fragment, notamment le référencement de fragments de contenu, de fragments d’expérience et de pages. Pour ouvrir une référence spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
 
       ![Console Fragments de contenu - Boîte de dialogue Références](assets/cfc-console-references-dialog.png)
 
@@ -130,19 +130,19 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
 
       ![Console Fragments de contenu - Indicateur de langue](assets/cfc-console-language-indicator.png)
 
-      * Cliquez/appuyez sur le décompte pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
+      * Cliquez/appuyez sur le décompte pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le **Titre** dans la boîte de dialogue.
 
          ![Console Fragments de contenu - Boîte de dialogue Langue](assets/cfc-console-languages-dialog.png)
 
 ## Sélectionner les colonnes disponibles {#select-available-columns}
 
-Comme pour d’autres consoles, vous pouvez configurer les colonnes visibles et disponibles pour une action :
+Comme pour d’autres consoles, vous pouvez configurer les colonnes visibles et disponibles pour une action :
 
-![Console Fragments de contenu - configuration des colonnes](assets/cfc-console-column-icon.png)
+![Console Fragments de contenu - Configuration des colonnes](assets/cfc-console-column-icon.png)
 
-Vous y trouverez une liste de colonnes que vous pouvez masquer ou afficher :
+Vous y trouverez une liste de colonnes que vous pouvez masquer ou afficher :
 
-![Console Fragments de contenu - configuration des colonnes](assets/cfc-console-column-selection.png)
+![Console Fragments de contenu - Configuration des colonnes](assets/cfc-console-column-selection.png)
 
 ## Créer un fragment de contenu {#creating-new-content-fragment}
 
