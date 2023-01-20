@@ -3,9 +3,9 @@ title: Création de contenu ciblé en mode Ciblage
 description: Le mode Ciblage et le composant cible fournissent des outils permettant de créer du contenu pour les expériences.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
 source-git-commit: f619cc2b1fcc697ebe7af7370b6839fe5ce40419
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5414'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,13 +26,13 @@ Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. Le mode Ciblage et
 >
 >Le mode Ciblage est disponible dans l’éditeur de page et dans l’éditeur de fragments d’expérience.
 >
->La documentation suivante s’applique aux deux (car ils fonctionnent tous les deux sur la même base), bien qu’elle soit écrite pour l’éditeur de page.
+>Bien qu’elle soit écrite pour l’éditeur de page, la documentation suivante s’applique aux deux, car ils fonctionnent tous les deux sur la même base.
 
 >[!CAUTION]
 >
->Lors du ciblage dans l’éditeur de page, seuls les composants de fragment d’expérience peuvent être ciblés.
+>Lors du ciblage dans l’éditeur de page, seuls les composants de fragments d’expérience peuvent être ciblés.
 >
->D’autres types de composant peuvent être convertis en fragment d’expérience à l’aide de la variable **Convertir en variation de fragment d’expérience** dans la barre d’outils du composant.
+>D’autres types de composant peuvent être convertis en fragment d’expérience à l’aide de l’icône **Convertir en variation de fragment d’expérience** dans la barre d’outils du composant.
 
 <!--
 >Other component types can be converted to an Experience Fragment using the **Convert to experience fragment variation** icon on the component toolbar:
@@ -40,7 +40,7 @@ Créez du contenu ciblé à l’aide du mode Ciblage d’AEM. Le mode Ciblage et
 >![Converting component to Experience Fragment](/help/sites-cloud/authoring/assets/offers-convert-legacy-icon.png)
 -->
 
-Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (pour utiliser Adobe Target, vous devez disposer d’un compte d’Adobe Target valide). Si vous utilisez Adobe Target, vous devez commencer par configurer l’intégration. Voir [instructions pour l’intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
+Vous pouvez utiliser AEM ou Adobe Target comme moteur de ciblage (pour utiliser Adobe Target, vous devez disposer d’un compte d’Adobe Target valide). Si vous utilisez Adobe Target, vous devez commencer par configurer l’intégration. Reportez-vous aux [instructions pour l’intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
 ![Ciblage de contenu](../assets/targeted-content.png)
 
@@ -520,13 +520,13 @@ Pour configurer les objectifs et les paramètres si vous utilisez Adobe Target 
 
    ![Source de création de rapports](../assets/targeted-reporting-source.png)
 
-1. Dans la zone **Mesure d’objectif**, sous **Mon objectif principal**, sélectionnez la mesure de succès dont vous souhaitez effectuer le suivi (Conversion, Chiffre d’affaires, Engagement) et saisissez la manière dont cette mesure est évaluée (ou l’action entreprise par l’audience pour indiquer qu’un objectif a été atteint). Consultez la définition des mesures d’objectif dans le tableau précédent et la [documentation d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) sur les mesures de succès.
+1. Dans la zone **Mesure d’objectif**, sous **Mon objectif principal**, sélectionnez la mesure de succès dont vous souhaitez effectuer le suivi (Conversion, Chiffre d’affaires, Engagement) et saisissez la manière dont cette mesure est évaluée (ou l’action entreprise par l’audience pour indiquer qu’un objectif a été atteint). Consultez la définition des mesures d’objectif dans le tableau précédent et la [documentation d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr) sur les mesures de succès.
 
    Vous pouvez renommer l’objectif en cliquant sur le bouton de sélection dans le coin supérieur droit et en sélectionnant **Renommer**.
 
    Si vous devez supprimer tous les champs, cliquez sur le bouton de sélection dans le coin supérieur droit et sélectionnez **Effacer tous les champs**.
 
-   Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Reportez-vous à la définition de la comptabilisation des mesures de succès dans le tableau précédent et à la [Documentation d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
+   Toutes les mesures comportent également des paramètres avancés que vous pouvez définir. Sélectionnez **Paramètres avancés** pour y accéder. Reportez-vous à la définition de la comptabilisation des mesures de succès dans le tableau précédent et à la [Documentation d’Adobe Target](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=fr).
 
    >[!NOTE]
    >
