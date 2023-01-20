@@ -3,9 +3,9 @@ title: Mise en page réactive
 description: AEM permet de réaliser une mise en page réactive pour vos pages
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1766'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ Vous obtenez ainsi un système de paragraphes qui permet de positionner les comp
 Le conteneur de mises en page présente les caractéristiques suivantes :
 
 * Il permet un alignement horizontal sur la grille et offre aussi la possibilité de placer les composants côte à côte dans la grille et de définir quand ils doivent être réduits ou développés.
-* Utilise des points d’arrêt prédéfinis (par exemple, pour un téléphone, une tablette, etc.) pour que vous puissiez définir le comportement du contenu pour l’orientation ou les appareils associés.
+* Il utilise des points d’arrêt prédéfinis (pour téléphone ou tablette, par exemple) pour que vous puissiez définir le comportement du contenu pour l’orientation ou les appareils associés.
    * Vous pouvez par exemple personnaliser la taille du composant ou spécifier si le composant doit être affiché ou non sur des appareils spécifiques.
 * Il peut être imbriqué pour permettre le contrôle des colonnes.
 
