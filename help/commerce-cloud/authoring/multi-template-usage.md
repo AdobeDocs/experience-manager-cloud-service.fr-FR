@@ -11,9 +11,9 @@ kt: 3455
 thumbnail: 28969.jpg
 exl-id: 06417775-1a0b-4487-86f3-83f2fe12458e,8c611756-5719-488d-a519-a12c5c90c614
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '187'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 >[!NOTE]
 >
-> Cette fonctionnalité fonctionne uniquement pour les storefronts basés sur CIF (Venia, par exemple).
+> Cette fonctionnalité fonctionne uniquement pour les storefronts basés sur CIF (par exemple Venia).
 
 Les [composant principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) permettent aux auteurs de contenu de créer des pages de catégories et de produits supplémentaires. Ces pages peuvent être enrichies par du contenu marketing supplémentaire et configurées pour cibler des catégories et des produits spécifiques. La vidéo suivante passe cette fonctionnalité en revue.
 
