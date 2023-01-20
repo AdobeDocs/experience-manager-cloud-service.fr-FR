@@ -3,9 +3,9 @@ title: Configuration IMS à utiliser lors de l’intégration à Adobe Analytic
 description: En savoir plus sur la configuration IMS à utiliser lors de l’intégration à Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '894'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -151,7 +151,7 @@ En retournant sur AEM, vous pouvez terminer la configuration IMS en ajoutant les
 1. Ici, vous pouvez utiliser les [Détails de la configuration du projet dans la Developer Console d’Adobe](#details-stored-for-the-ims-integration-project) :
 
    * **Titre** : votre texte.
-   * **Serveur d’autorisation**: Copiez/collez ceci à partir du `aud` de la ligne **Payload** section ci-dessous, par exemple : `https://ims-na1.adobelogin.com` dans l’exemple ci-dessous
+   * **Serveur d’autorisation** : copiez/collez cette information à partir de la ligne `aud` de la section **Payload** ci-dessous, par exemple `https://ims-na1.adobelogin.com` dans l’exemple ci-dessous
    * **Clé API** : copiez-la à partir de la section **Informations d’identification** de la [Présentation du projet](#details-stored-for-the-ims-integration-project).
    * **Secret client** : générez-le dans l’[onglet Secret client de la section Compte de service (JWT)](#details-stored-for-the-ims-integration-project) et copiez-le.
    * **Payload** : copiez-le depuis l’[onglet Génération du JWT de la section Compte de service (JWT)](#details-stored-for-the-ims-integration-project).
