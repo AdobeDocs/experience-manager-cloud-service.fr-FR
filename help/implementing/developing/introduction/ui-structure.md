@@ -3,9 +3,9 @@ title: Structure de l’interface utilisateur d’AEM
 description: 'L’interface utilisateur d’AEM s’accompagne de plusieurs principes sous-jacents et se compose d’une série d’éléments clés :'
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '916'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -107,7 +107,7 @@ L’onglet Ressources vous permet de faire votre choix parmi un éventail de res
 
 ![Onglet Ressources](assets/ui-side-panel-assets.png)
 
-### Panneau latéral – Groupes de ressources {#side-panel-asset-groups}
+### Panneau latéral - Groupes de ressources {#side-panel-asset-groups}
 
 L’onglet Ressources comprend un menu déroulant que vous pouvez utiliser pour sélectionner les groupes de ressources spécifiques.
 
@@ -119,7 +119,7 @@ L’onglet Composants vous propose un éventail de composants à sélectionner. 
 
 ![Onglet Composants](assets/ui-side-panel-components.png)
 
-### Panneau latéral – Arborescence de contenu {#side-panel-content-tree}
+### Panneau latéral - Arborescence de contenu {#side-panel-content-tree}
 
 Dans l’onglet Arborescence de contenu, vous pouvez afficher la hiérarchie du contenu de la page. Cliquer sur une entrée dans l’onglet permet d’accéder à l’élément et de le sélectionner sur la page dans l’éditeur.
 
@@ -158,7 +158,7 @@ Le sélecteur de calques se présente sous la forme d’un menu déroulant dans 
 
 ### Barre d’outils des composants {#component-toolbar}
 
-Lorsque vous cliquez sur une instance d’un composant (simple clic ou double-clic lent), sa barre d’outils est affichée. La barre d’outils contient les actions spécifiques (par exemple, copier, coller, ouvrir l’éditeur) disponibles pour l’instance de composant sur la page.
+Lorsque vous cliquez sur une instance d’un composant (simple clic ou double-clic lent), sa barre d’outils est affichée. La barre d’outils contient les actions spécifiques (par exemple, copier, coller, ouvrir l’éditeur) qui sont disponibles pour l’instance du composant sur la page.
 
 En fonction de l’espace disponible, les barres d’outils de composant sont placées dans le coin supérieur, ou inférieur, droit du composant approprié.
 
