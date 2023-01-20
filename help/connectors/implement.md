@@ -3,9 +3,9 @@ title: Implémentation d’un connecteur AEM
 description: Implémentation d’un connecteur AEM
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '968'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Outre la documentation statique ci-dessus, Adobe et la communauté AEM proposent
 
 * Le [forum AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) de la communauté Adobe est un site actif sur lequel vous pouvez poser des questions et obtenir des réponses de vos pairs.
 * D’autres ressources techniques Adobe sont disponibles pour certains niveaux de partenaire. En savoir plus sur le programme [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
-* Si votre entreprise souhaite obtenir une assistance en matière d’implémentation, contactez l’équipe [Services professionnels](https://www.adobe.com/marketing-cloud/service-support/professional-consulting-training.html) d’Adobe ou utilisez le [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) pour obtenir la liste des partenaires d’Adobe dans le monde entier.
+* Si votre entreprise souhaite obtenir une assistance en matière d’implémentation, contactez l’équipe [Services professionnels](https://www.adobe.com/fr/marketing-cloud/service-support/professional-consulting-training.html) d’Adobe ou utilisez le [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) pour obtenir la liste des partenaires d’Adobe dans le monde entier.
 
 Règles de structure du module
 -----------------------
