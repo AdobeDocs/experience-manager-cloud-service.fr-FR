@@ -3,9 +3,9 @@ title: Référence des prédicats de Query Builder
 description: Référence des prédicats pour l’API Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
 source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2268'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -249,8 +249,8 @@ Il ne prend pas en charge l’extraction de facettes.
 <!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
 * **`exact`** – Si la propriété `exact` est définie sur `true`, le chemin d’accès exact doit correspondre, mais il peut contenir des caractères génériques simples (`*`), qui correspondent aux noms, mais pas `/` ; si elle est définie sur `false` (par défaut) tous les descendants sont inclus (facultatif).
 * **`flat`** – Effectue uniquement des recherches dans les enfants directs (ce qui revient à ajouter `/*` dans xpath) (utilisé uniquement si `exact` n’est pas défini sur « true », facultatif)
-* **`self`** – Effectue des recherches dans la sous-arborescence, mais inclut le nœud de base indiqué comme chemin d’accès (pas de caractères génériques)..
-   * *Remarque importante*: Un problème a été identifié avec `self` dans l’implémentation actuelle de querybuilder et son utilisation dans les requêtes peut ne pas produire les résultats de recherche corrects. Modification de l’implémentation actuelle de `self` n’est pas non plus faisable, car elle peut interrompre les applications existantes qui s’y rapportent. Pour cette raison, `self` a été abandonnée et il est conseillé d’éviter de l’utiliser.
+* **`self`** – Effectue des recherches dans la sous-arborescence, mais inclut le nœud de base indiqué comme chemin d’accès (pas de caractères génériques).
+   * *Remarque importante* : un problème a été identifié avec la propriété `self` dans l’implémentation actuelle de QueryBuilder et son utilisation dans les requêtes peut ne pas retourner des résultats de recherche corrects. Il n’est pas non plus possible de modifier l’implémentation actuelle de la propriété `self`, car cela pourrait interrompre l’exécution des applications existantes qui reposent dessus. Pour cette raison, la propriété `self` a été abandonnée et il est recommandé d’éviter de l’utiliser.
 
 ### property {#property}
 
@@ -268,7 +268,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
    * `equals` pour la correspondance exacte (par défaut)
    * `unequals` pour la comparaison des inégalités
    * `like` pour utiliser la fonction xpath `jcr:like` (facultatif)
-   * `not` pour aucune correspondance (par exemple, `not(@prop)` dans xpath, le paramètre value est ignoré)
+   * `not` pour l’absence de correspondance (par exemple, `not(@prop)` dans xpath, le paramètre de valeur sera ignoré).
    * `exists` pour une vérification d’existence
       * `true` la propriété doit exister
       * `false` est identique à `not` et est la valeur par défaut
@@ -278,7 +278,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
 
 Ce prédicat met en correspondance une propriété JCR par rapport à un intervalle. Ce prédicat s’applique à des propriétés de type linéaire telles que `LONG`, `DOUBLE` et `DECIMAL`. Pour `DATE`, reportez-vous au prédicat [`daterange`](#daterange) qui présente une entrée de format de date optimisée.
 
-Vous pouvez définir une limite inférieure, une limite supérieure ou les deux. L’opération (par exemple, inférieure ou inférieure à ou égale à) peut également être spécifiée individuellement pour les limites inférieure et supérieure.
+Vous pouvez définir une limite inférieure, une limite supérieure ou les deux. L’opération (par exemple, inférieure, ou inférieure à ou égale à) peut également être spécifiée individuellement pour les limites inférieure et supérieure.
 
 Il ne prend pas en charge l’extraction de facettes.
 
@@ -373,7 +373,7 @@ Il ne prend pas en charge l’extraction de facettes.
 
 * **`tagsearch`** – Mot-clé à rechercher dans les titres de balise
 * **`property`** – Propriété (ou chemin relatif à la propriété) à prendre en compte (valeur par défaut `cq:tags`)
-* **`lang`** - pour effectuer une recherche uniquement dans un certain titre de balise localisé (par exemple : `de`)
+* **`lang`** – Pour rechercher uniquement dans un titre de balise localisé donné (par exemple, `de`)
 * **`all`** – Valeur booléenne permettant de rechercher le texte intégral de la balise, c’est-à-dire tous les titres, la description, etc. (est prioritaire sur `lang`)
 
 ### type {#type}
