@@ -1,11 +1,11 @@
 ---
 title: Métadonnées - Propriétés des fragments (Ressources - Fragments de contenu)
-description: Découvrez comment afficher et modifier les propriétés de métadonnées des fragments de contenu.
+description: Vous pouvez afficher et modifier les propriétés des métadonnées des fragments de contenu.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '202'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
