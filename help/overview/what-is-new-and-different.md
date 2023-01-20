@@ -3,9 +3,9 @@ title: Nouveautés et différences – Adobe Experience Manager as a Cloud Servi
 description: Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 575be022704e998e63162f19c37ece877efef627
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1903'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,23 +67,23 @@ Cela permet une mise à l’échelle automatique pour divers schémas d’utilis
 
 ## Mises à jour d’AEM {#aem-updates}
 
-AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour s’assurer que vos projets utilisent la version AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la dernière version d’AEM sans interruption de service pour les utilisateurs.
+AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour garantir que vos projets utilisent la version d’AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la version d’AEM la plus récente sans aucune interruption de service pour les utilisateurs et utilisatrices.
 
 >[!NOTE]
 >
->Si la mise à jour de l’environnement de production échoue, Cloud Manager restaure automatiquement l’environnement d’évaluation. Cela permet de s’assurer automatiquement qu’une fois la mise à jour terminée, les environnements d’évaluation et de production se trouvent sur la même version AEM.
+>Si la mise à jour de l’environnement de production échoue, Cloud Manager restaurera automatiquement l’environnement d’évaluation. Cette opération s’effectue automatiquement afin de s’assurer qu’une fois la mise à jour terminée, les environnements d’évaluation et de production utilisent la même version d’AEM.
 
-Il existe deux types de mises à jour AEM version :
+Il existe deux types de mises à jour de la version d’AEM :
 
-* **AEM mises à jour de maintenance**
+* **Mises à jour de maintenance AEM**
 
    * Elles peuvent être publiées quotidiennement.
-   * Sont principalement à des fins de maintenance, y compris les derniers correctifs de bogues et les mises à jour de sécurité.
-   * ont un impact minimal, car les modifications sont appliquées régulièrement ;
+   * Elles sont principalement destinées à la maintenance et comprennent les derniers correctifs de bugs et les mises à jour de sécurité.
+   * Elles ont un impact minimal, car les modifications apportées à AEM sont appliquées régulièrement.
 
-* **Nouvelles mises à jour de fonctionnalités**
+* **Mises à jour avec de nouvelles fonctionnalités**
 
-   * Sont publiées selon un calendrier mensuel prévisible.
+   * Elles sont publiées selon un calendrier mensuel et prévisible.
 
 >[!TIP]
 >
