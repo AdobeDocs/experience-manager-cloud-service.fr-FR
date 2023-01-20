@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
 source-git-commit: d52372e69af2800703e20f36407a9b381db6264e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2310'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -307,7 +307,7 @@ Elles seront ajoutées à la séquence de paragraphes du fragment sans aucune mi
 
 >[!CAUTION]
 Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
-Toutefois, le formatage de la ressource (par exemple, sa taille) doit être effectué dans la variable [éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
+Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
 
 >[!NOTE]
 Il existe différentes méthodes pour ajouter des [images](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
@@ -343,7 +343,7 @@ Cette option est disponible lorsque l’option **Autoriser la référence de fra
 
 >[!CAUTION]
 Ces ressources ne peuvent pas être déplacées ni supprimées sur une page de référence ; ce type d’opération doit être effectué dans l’éditeur de fragment.
-Toutefois, le formatage de la ressource (par exemple, sa taille) doit être effectué dans la variable [éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
+Toutefois, la mise en forme de la ressource (par exemple, sa taille) doit être effectuée dans l’[éditeur de page](/help/sites-cloud/authoring/fundamentals/content-fragments.md). La représentation de la ressource dans l’éditeur de fragment est uniquement destinée à la création du flux de contenu.
 
 >[!NOTE]
 Il existe différentes méthodes pour ajouter des [images](/help/sites-cloud/administering/content-fragments/content-fragments.md#fragments-with-visual-assets) au fragment et/ou à la page.
@@ -373,8 +373,8 @@ Il existe différentes méthodes pour ajouter des [images](/help/sites-cloud/adm
 [!CONTEXTUALHELP]
 id="aemcloud_sites_contentfragments_variations"
 title="Variations – créer du contenu de fragment"
-abstract="Découvrez comment créer des variantes de contenu à utiliser avec des canaux spécifiques."
-additional-url="https://video.tv.adobe.com/v/333295" text="Variations de fragments de contenu"
+abstract="Découvrez comment créer des variations de contenu à utiliser avec des canaux spécifiques."
+additional-url="https://video.tv.adobe.com/v/333295/?captions=fre_fr" text="Variations de fragments de contenu"
 
 ### Création d’une variation {#creating-a-variation}
 
