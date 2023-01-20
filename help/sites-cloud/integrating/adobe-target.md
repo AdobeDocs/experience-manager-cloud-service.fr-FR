@@ -3,15 +3,15 @@ title: Intégration à Adobe Target
 description: Intégration à Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 source-git-commit: e6fc31a5c4b3bb62f7d6e639eae7e1f222b2f5ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '727'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Intégration à Adobe Target{#integrating-with-adobe-target}
 
-Dans le cadre d’Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/solutions/testing-targeting/testandtarget.html) vous permet d’améliorer la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. Adobe Target est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments ciblés à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne. AEM as a Cloud Service a adopté le workflow de ciblage qui est utilisé dans Adobe Target Standard. Si vous utilisez Target, vous connaissez l’environnement d’édition de ciblage d’AEM as a Cloud Service.
+Dans le cadre d’Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/fr/solutions/testing-targeting/testandtarget.html) vous permet d’améliorer la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. Adobe Target est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments ciblés à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne. AEM as a Cloud Service a adopté le workflow de ciblage qui est utilisé dans Adobe Target Standard. Si vous utilisez Target, vous connaissez l’environnement d’édition de ciblage d’AEM as a Cloud Service.
 
 Intégrez vos sites AEM à Adobe Target pour personnaliser le contenu dans vos pages :
 
@@ -31,10 +31,10 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 
 * Experience Platform Launch est l’outil par défaut permettant d’instrumenter un site AEM avec des fonctionnalités Target (bibliothèques JS). Par conséquent, l’intégration d’AEM as a Cloud Service avec Launch et Adobe Target s’effectue de façon conjointe (voir les liens ci-dessous).
 
-   * [Intégration à Adobe Target à l’aide d’Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims-adobe-io.html)
-   * [Intégrer Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-   * [Intégration d’AEM à Adobe Launch par le biais d’Adobe I/O](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
-   * [Présentation de l’intégration d’AEM à Experience Platform Launch, Analytics et Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+   * [Intégration à Adobe Target à l’aide d’Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims-adobe-io.html?lang=fr)
+   * [Intégrer Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=fr)
+   * [Intégration d’AEM à Adobe Launch par le biais d’Adobe I/O](https://docs.adobe.com/content/help/fr/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html)
+   * [Présentation de l’intégration d’AEM à Experience Platform Launch, Analytics et Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=fr)
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >
 >Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 >
->Voir [Préalables à l’intégration à Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html#securing-the-activity-settings-node) pour plus d’informations.
+>Voir [Préalables à l’intégration à Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=fr#securing-the-activity-settings-node) pour plus d’informations.
 
 Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html?lang=fr) qui envoie les données de visiteur à Adobe Target. Notez que les composants de page requièrent un code spécifique pour activer le ciblage du contenu. (consultez [Développement pour le contenu ciblé](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html?lang=fr)).
 
@@ -72,8 +72,8 @@ Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](http
 Intégrer AEM as a Cloud Service à Adobe Target nécessite des connaissances sur Adobe Target, la gestion des activités AEM et la gestion des audiences AEM. Vous devez connaître les éléments suivants :
 
 * Adobe Target (consultez la [documentation sur Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=fr)).
-* Console des activités AEM (consultez [Gestion des activités](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html)).
-* Audiences AEM (voir [Gestion des audiences](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html?lang=fr)).
+* Console des activités AEM (consultez la section [Gestion des activités](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/activitylib.html?lang=fr)).
+* Audiences AEM (consultez la section [Gestion des audiences](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/managing-audiences.html?lang=fr)).
 
 >[!NOTE]
 >
