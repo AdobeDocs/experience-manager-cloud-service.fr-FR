@@ -3,9 +3,9 @@ title: Fondements techniques d’AEM
 description: Présentation des fondements techniques d’AEM, y compris la manière dont AEM est structuré et les technologies fondamentales comme JCR, Sling et OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2191'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Le schéma suivant décrit tous les paramètres de requête invisibles, mais pui
 Sling est *centré sur le contenu*. Cela signifie que le traitement est axé sur le contenu au moment où chaque requête (HTTP) est mappée avec le contenu sous la forme d’une ressource JCR (un nœud de référentiel) :
 
 * La première cible est la ressource (nœud JCR) qui contient le contenu
-* Deuxièmement, la représentation, ou le script, se trouve à partir des propriétés de la ressource en combinaison avec certaines parties de la requête (par exemple, les sélecteurs et/ou l’extension).
+* Ensuite, la représentation, ou script, est localisée à partir des propriétés de ressource en combinaison avec certaines parties de la requête (par exemple des sélecteurs et/ou l’extension)
 
 ### Sling RESTful {#restful-sling}
 
@@ -123,8 +123,8 @@ Avec Sling, vous spécifiez le script à appliquer pour le rendu d’une entité
 
 La requête est décomposée et les informations nécessaires sont extraites. Une recherche de la ressource demandée (nœud de contenu) est effectuée dans le référentiel :
 
-* First Sling vérifie si un noeud existe à l’emplacement spécifié dans la requête ; par exemple, `../content/corporate/jobs/developer.html`
-* Si aucun noeud n’est trouvé, l’extension est supprimée et la recherche est répétée. par exemple, `../content/corporate/jobs/developer`
+* D’abord, Sling vérifie si un nœud existe à l’emplacement spécifié dans la requête. Par exemple, `../content/corporate/jobs/developer.html`
+* Si aucun nœud n’est identifié, l’extension est supprimée et la recherche recommence. Par exemple, `../content/corporate/jobs/developer`
 * Si aucun nœud n’est trouvé, Sling retourne le code http 404 (Not Found).
 
 Sling permet également à des éléments autres que des nœuds JCR d’être des ressources, mais il s’agit là d’une fonctionnalité avancée.
@@ -146,7 +146,7 @@ Tous les scripts Sling sont stockés dans des sous-dossiers `/apps` (modifiables
 
 Un certain nombre d’autres points sont à noter :
 
-* Lorsque la méthode (GET, POST) est requise, elle est spécifiée en majuscules, conformément à la spécification HTTP par exemple : `jobs.POST.esp`
+* Si la méthode (GET, POST) est requise, elle est indiquée en majuscules selon la spécification HTTP, par exemple `jobs.POST.esp`
 * Différents moteurs de script sont pris en charge, mais les scripts courants recommandés sont HTL et JavaScript.
 
 La liste des moteurs de script pris en charge par l’instance donnée d’AEM figure dans la Felix Management Console (`http://<host>:<port>/system/console/slingscripting`).
@@ -278,7 +278,7 @@ Cette extension permet d’appliquer les actions suivantes à l’un des modules
 * Mettre à jour
 * Désinstaller
 * Voir l’état actuel
-* Accédez à des informations plus détaillées (par exemple, nom symbolique, version, emplacement, etc.) sur les lots spécifiques.
+* Accéder à des informations plus détaillées (par exemple, nom symbolique, version, emplacement, etc.) pour des bundles en particulier
 
 Voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md) pour plus d’informations.
 
