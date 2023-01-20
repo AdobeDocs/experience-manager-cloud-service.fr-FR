@@ -3,9 +3,9 @@ title: Déploiement de votre code
 description: Découvrez comment déployer votre code à l’aide des pipelines de Cloud Manager dans AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
 source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1221'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Le processus de build déploie votre code en trois phases.
 
 La phase de **Déploiement dans l’environnement** comprend ces étapes.
 
-* **Validation** - Cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles, par exemple, le test de l’existence de la branche configurée et de la disponibilité des environnements.
+* **Validation** - Cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles, par exemple, en s’assurant de l’existence de la branche configurée et de la disponibilité des environnements.
 * **Test unitaire et version** - Cette étape exécute un processus de création en conteneur.
    * Consultez le document [Détails d’environnement de génération](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) pour plus d’informations sur l’environnement de génération.
 * **Analyse du code** - Cette étape évalue la qualité du code de votre application.
@@ -124,7 +124,7 @@ Tous les déploiements de Cloud Service suivent un processus continu pour garant
 
 >[!NOTE]
 >
->Le cache de Dispatcher est effacé sur chaque déploiement. Il est ensuite réchauffé avant que les nouveaux noeuds de publication n’acceptent le trafic.
+>Le cache du Dispatcher est effacé à chaque déploiement. Il est ensuite préchauffé avant que les nouveaux nœuds de publication n’acceptent le trafic.
 
 ## Réexécution d’un déploiement en production {#Reexecute-Deployment}
 
