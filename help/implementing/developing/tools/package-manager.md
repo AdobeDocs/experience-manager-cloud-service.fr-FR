@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3585'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Les packs de contenu créés pour les applications AEM as a Cloud Service doiven
 
 >[!NOTE]
 >
->Les packs ne peuvent renfermer que du contenu. Toute fonctionnalité (par exemple, le contenu stocké sous `/apps`) doit être [déployé à l’aide de votre pipeline CI/CD dans Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
+>Les packs ne peuvent renfermer que du contenu. Toute fonctionnalité (par exemple, contenu stocké sous `/apps`) doit être [déployée à l’aide de votre pipeline CI/CD dans Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
 
 >[!IMPORTANT]
 >
@@ -110,7 +110,7 @@ D’autres actions sont disponibles sous le bouton **Plus**.
 
 ### Statut du pack {#package-status}
 
-Chaque entrée de la liste des packs comporte un indicateur de statut qui vous permet de connaître d&#39;un coup d’œil le statut du pack. Si vous passez la souris sur le statut, vous verrez apparaître une info-bulle contenant le détail du statut.
+Chaque entrée de la liste des packs comporte un indicateur de statut qui vous permet de connaître d’un coup d’œil le statut du pack. Si vous passez la souris sur le statut, vous verrez apparaître une info-bulle contenant le détail du statut.
 
 ![Statut du pack](assets/package-status.png)
 
@@ -400,7 +400,7 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 
 Cette validation vérifie quelles autorisations sont ajoutées, comment elles seront gérées (fusion/remplacement) et si les autorisations actuelles seront affectées.
 
-**Comment c’est rapporté ?**
+**Comment est-ce rapporté ?**
 
 Les autorisations sont décrites dans le Journal d’activités du Gestionnaire de modules.
 
@@ -493,7 +493,7 @@ Avant l’installation de votre pack, le Gestionnaire de packs crée automatique
 
    * **Extraire uniquement** - Extraire le pack uniquement afin qu’aucun instantané ne soit créé et que la désinstallation ne soit pas possible
    * **Enregistrer le seuil** - Nombre de nœuds transitoires jusqu’au déclenchement de la sauvegarde automatique (augmentez si vous rencontrez des exceptions de modifications simultanées).
-   * **Extraire les sous-packs** - Activer l&#39;extraction automatique des sous-packs
+   * **Extraire les sous-packs** - Activer l’extraction automatique des sous-packs
    * **Gestion du contrôle d’accès** - Spécifie comment les informations de contrôle d’accès définies dans le pak sont traitées lors de l’installation du pack (les options sont les mêmes que les[paramètres avancés des packs](#advanced-settings))
    * **Gestion des dépendances** - Spécifier comment les dépendances sont gérées lors de l’installation
 
@@ -523,7 +523,7 @@ Si l’instance n’est pas en cours d’exécution, les packs placés dans le d
 
 ### Désinstaller les packs {#uninstalling-packages}
 
-La désinstallation d’un pack ramène le contenu du référentiel à l&#39;instantané réalisé automatiquement par le gestionnaire de packs avant l’installation.
+La désinstallation d’un pack ramène le contenu du référentiel à l’instantané réalisé automatiquement par le gestionnaire de packs avant l’installation.
 
 1. [Accédez au Gestionnaire de modules.](#accessing)
 
