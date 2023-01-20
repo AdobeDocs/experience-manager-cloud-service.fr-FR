@@ -1,21 +1,21 @@
 ---
-title: Raccourcis clavier pour la console Fragments de contenu
-description: Plusieurs raccourcis clavier sont disponibles dans les AEM, notamment pour la gestion des fragments de contenu.
+title: Raccourcis clavier de la console Fragments de contenu
+description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la gestion des fragments de contenu.
 feature: Content Fragments
 role: User
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
-# Raccourcis clavier pour la console Fragments de contenu {#keyboard-shortcuts-content-fragments-console}
+# Raccourcis clavier de la console Fragments de contenu {#keyboard-shortcuts-content-fragments-console}
 
-Une sélection de raccourcis clavier est disponible dans la console Fragments de contenu.
+Une sélection de raccourcis clavier est disponible à l’utilisation dans la console Fragments de contenu.
 
-Plusieurs raccourcis clavier sont disponibles dans AEM. Certaines s’appliquent lorsque [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), les autres au général [utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à la [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), tandis que d’autres correspondent à l’[utilisation générale des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -25,20 +25,20 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certaines s’appliquent
 
 >[!NOTE]
 >
->Les raccourcis ne sont pas sensibles à la casse,
+>Les raccourcis ne sont pas sensibles à la casse.
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
 | Aucun fragment de contenu sélectionné | `n` | Ouvrir la boîte de dialogue de création |
 | Sélectionner un ou plusieurs fragments de contenu | `m` | Ouvrir la boîte de dialogue de déplacement |
 | Sélectionner un ou plusieurs fragments de contenu | `Backspace` | Ouvrir la boîte de dialogue de suppression |
-| Sélectionner un ou plusieurs fragments de contenu | `r` | Ouvrir la boîte de dialogue de changement de nom |
+| Sélectionner un ou plusieurs fragments de contenu | `r` | Ouvrir la boîte de dialogue de renommage |
 | Sélectionner un ou plusieurs fragments de contenu | `Ctrl-c` | Ouvrir la boîte de dialogue de copie |
-| Sélectionner un ou plusieurs fragments de contenu | `p` | Ouvrir la boîte de dialogue Publier maintenant |
-| Sélectionner un ou plusieurs fragments de contenu | `u` | Ouvrir la boîte de dialogue Annuler la publication maintenant |
-| Toute boîte de dialogue ouverte | `esc` | La boîte de dialogue est ignorée |
+| Sélectionner un ou plusieurs fragments de contenu | `p` | Ouvrir la boîte de dialogue de publication immédiate |
+| Sélectionner un ou plusieurs fragments de contenu | `u` | Ouvrir la boîte de dialogue d’annulation immédiate de la publication |
+| Toute boîte de dialogue ouverte | `esc` | Boîte de dialogue désactivée |
 
-Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau. Certaines s’appliquent lorsque [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), les autres au général [utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs et utilisatrices de poste de travail. Certains s’appliquent à la [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), tandis que d’autres correspondent à l’[utilisation générale des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
