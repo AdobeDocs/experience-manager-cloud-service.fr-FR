@@ -3,9 +3,9 @@ title: Configuration de votre environnement de compte
 description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '490'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Présentation de la date relative**
 
-   Pour améliorer la lisibilité, AEM effectuera le rendu des dates des sept derniers jours sous forme de dates relatives (par exemple, il y a trois jours) et des dates plus anciennes sous forme de dates exactes (par exemple, 20 mars 2017).
+   Pour améliorer la lisibilité, AEM effectue le rendu des dates parmi les sept derniers jours en tant que dates relatives (par exemple, il y a trois jours) et des dates antérieures en tant que dates précises (par exemple, le 20 mars 2017).
 
    Cette option définit la manière dont les dates sont affichées dans le système. Les options suivantes sont disponibles :
 
