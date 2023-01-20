@@ -3,9 +3,9 @@ title: Utilisation des adaptateurs Sling
 description: Sling propose un modèle Adaptateur permettant de convertir facilement les objets qui mettent en œuvre l’interface Adaptable
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2221'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -121,11 +121,11 @@ Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `ada
   </tr>
   <tr>
    <td><a href="https://sling.apache.org/apidocs/sling5/org/apache/sling/api/scripting/SlingScript.html">SlingScript</a></td>
-   <td>Si cette ressource est un script (par exemple, un fichier jsp) pour lequel un moteur de script est enregistré auprès de sling.</td>
+   <td>Si cette ressource est un script (un fichier jsp, par exemple) pour lequel un moteur de script est enregistré auprès de sling.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/products/servlet/2.2/javadoc/javax/servlet/Servlet.html">Servlet</a></td>
-   <td>Si cette ressource est un script (fichier jsp, par exemple) pour lequel un moteur de script est enregistré auprès de sling ou s’il s’agit d’une ressource de servlet.</td>
+   <td>Si cette ressource est un script (un fichier jsp, par exemple) pour lequel un moteur de script est enregistré auprès de sling ou s’il s’agit de ressource de servlet.</td>
   </tr>
   <tr>
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Long</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Double.html">Double</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Calendar</a><br /> <a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://java.sun.com/j2se/1.5.0/docs/api/java/util/Calendar.html">Calendar[]</a><br /> <a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">Value[]</a></td>
@@ -288,7 +288,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
    <td>Ressource étiquetée (== this).</td>
   </tr>
   <tr>
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Noeud</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
    <td>Nœud de la page.</td>
   </tr>
   <tr>
@@ -300,7 +300,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 **[Component](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/wcm/api/components/Component.html)** s’adapte à :
 
-| [Ressource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource du composant. |
+| [Resource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource du composant. |
 |---|---|
 | [LabeledResource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/commons/LabeledResource.html) | Ressource étiquetée (== this). |
 | [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud du composant. |
@@ -319,7 +319,7 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
    <td>Ressource étiquetée (== this).</td>
   </tr>
   <tr>
-   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Noeud</a></td>
+   <td><a href="https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html">Node</a></td>
    <td>Nœud de ce modèle.</td>
   </tr>
   <tr>
@@ -333,26 +333,26 @@ Pas encore de cible, mais implémente l’interface Adaptable et peut être util
 
 **Authorizable**, **User** et **Group** s’adaptent à :
 
-| [Noeud](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Renvoie le nœud racine utilisateur/groupe. |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Renvoie le nœud racine utilisateur/groupe. |
 |---|---|
-| [ReplicationStatus](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie l’état de réplication pour le nœud racine utilisateur/groupe. |
+| [ReplicationStatus](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/replication/ReplicationStatus.html) | Renvoie le statut de réplication pour le nœud racine utilisateur/groupe. |
 
 #### Gestion des ressources numériques (DAM) {#dam}
 
 **Asset** s’adapte à :
 
-| [Ressource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de l’actif. |
+| [Resource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de l’actif. |
 |---|---|
-| [Noeud](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la ressource. |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la ressource. |
 | … | Tous les éléments auxquels la ressource de l’actif peut être adaptée. |
 
 #### Balisage {#tagging}
 
 **Tag** s’adapte à :
 
-| [Ressource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de la balise. |
+| [Resource](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/api/resource/Resource.html) | Ressource de la balise. |
 |---|---|
-| [Noeud](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la balise. |
+| [Node](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Nœud de la balise. |
 | … | Tous les éléments auxquels la ressource de la balise peut être adaptée. |
 
 #### Autres {#other}
