@@ -3,9 +3,9 @@ title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query B
 description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Un prédicat personnalisé peut également réaliser d’autres actions qui ne s
 
 Un évaluateur gère l’évaluation de certains prédicats qui constituent les contraintes définissant une requête.
 
-Elle mappe une contrainte de recherche de niveau supérieur (telle que `width>200`) à une requête JCR spécifique qui correspond au modèle de contenu réel (par exemple, `metadata/@width > 200`). Il peut également filtrer manuellement les nœuds et vérifier leurs contraintes.
+Il mappe une contrainte de recherche de plus haut niveau (par exemple `width>200`) sur une requête JCR spécifique adaptée au modèle de contenu actuel (par exemple `metadata/@width > 200`). Il peut également filtrer manuellement les nœuds et vérifier leurs contraintes.
 
 >[!TIP]
 >
@@ -60,7 +60,7 @@ En guise d’illustration, cette section décrit comment créer un évaluateur d
 
 * `cq:lastReplicated` qui stocke la date de la dernière action de réplication.
 * `cq:lastReplicatedBy` qui stocke l’ID de l’utilisateur qui a déclenché la dernière action de réplication.
-* `cq:lastReplicationAction` qui stocke la dernière action de réplication (par exemple, Activation, Désactivation).
+* `cq:lastReplicationAction` qui stocke la dernière action de réplication (par exemple, activation ou désactivation).
 
 #### Requête sur les métadonnées de réplication avec les évaluateurs de prédicats par défaut {#querying-replication-metadata-with-default-predicate-evaluators}
 
@@ -134,7 +134,7 @@ Le projet `cq-search` contient la classe abstraite `AbstractPredicateEvaluator`.
 >La procédure suivante explique comment créer une expression `Xpath` afin de filtrer des données. Une autre option consisterait à mettre en œuvre la méthode `includes` qui sélectionne les données sur la base de la ligne. Pour plus d’informations, voir la [documentation Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/search/eval/PredicateEvaluator.html).
 
 1. Créez une classe Java qui étend `com.day.cq.search.eval.AbstractPredicateEvaluator`.
-1. Annotez votre classe avec un `@Component`, par exemple des affichages de fragment de code au [format diff unifié](https://en.wikipedia.org/wiki/Diff#Unified_format).
+1. Annotez votre classe avec un `@Component`, par exemple des affichages de fragment de code au [format diff unifié](https://fr.wikipedia.org/wiki/Diff#Unified_format).
 
    ```text
    @@ -19,8 +19,11 @@
