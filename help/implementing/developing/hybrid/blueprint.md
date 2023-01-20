@@ -3,9 +3,9 @@ title: Plan directeur d’applications sur une seule page (SPA)
 description: Ce document décrit le contrat général et indépendant du framework que tout framework de SPA devrait respecter afin de mettre en œuvre des composants de SPA modifiables dans AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2057'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -227,7 +227,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 Les composants de projet doivent générer au minimum les attributs de données suivants pour permettre à l’éditeur d’interagir avec eux.
 
-* `data-cq-data-path`: Chemin d’accès relatif du composant tel qu’il est fourni par la variable `PageModel` (par exemple, `"root/responsivegrid/image"`). Cet attribut ne doit pas être ajouté aux pages.
+* `data-cq-data-path` : chemin d’accès relatif du composant, tel qu’il est fourni par le `PageModel` (`"root/responsivegrid/image"`, par exemple). Cet attribut ne doit pas être ajouté aux pages.
 
 En résumé, pour pouvoir être identifié comme modifiable par l’éditeur de page, un composant de projet doit respecter le contrat suivant :
 
@@ -277,6 +277,6 @@ Découvrez comment fonctionne une SPA simple et testez-en une en consultant les 
 
 ## Informations complémentaires {#further-reading}
 
-Pour plus d’informations sur les applications sur une seule page dans AEM, consultez les documents suivants :
+Pour plus d’informations sur les applications d’une seule page dans AEM, consultez les documents suivants :
 
 * [Présentation de l’éditeur d’application sur une seule page](editor-overview.md) pour un aperçu de ces applications dans AEM et du modèle de communication
