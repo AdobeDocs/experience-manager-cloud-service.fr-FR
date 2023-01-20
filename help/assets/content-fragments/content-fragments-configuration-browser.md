@@ -1,11 +1,11 @@
 ---
-title: Fragments de contenu - Explorateur de configuration (Ressources - Fragments de contenu)
-description: Découvrez comment activer la fonctionnalité de fragment de contenu dans l’explorateur de configurations.
+title: Fragments de contenu - Navigateur de configurations (Ressources - Fragments de contenu)
+description: Découvrez comment activer certaines fonctionnalités de fragments de contenu dans le navigateur de configurations.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
 source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
