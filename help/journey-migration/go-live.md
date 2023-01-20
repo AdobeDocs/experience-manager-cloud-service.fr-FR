@@ -3,9 +3,9 @@ title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1729'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -144,7 +144,7 @@ Passez en revue cette liste d’activités pour vous assurer d’effectuer une m
          * [Introduction à la gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
          * [Gestion du certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)
       * Gestion des noms de domaine personnalisés (DNS)
-         * Pour vous assurer que la coupure DNS n’entraîne pas de problèmes inattendus, il est préférable de créer un sous-domaine de test auquel connecter votre instance de production avant de passer en ligne et d’effectuer un tour de test UAT. Ainsi, si votre domaine est example.com, vous pouvez créer un sous-domaine test.example.com et l’appliquer à la production. Lors du test UAT du domaine, vous souhaiterez rechercher des éléments tels que la redirection des liens, la mise en cache et les configurations Dispatcher.
+         * Pour vous assurer que le changement de DNS n’entraînera pas de problèmes inattendus, il est recommandé de créer un sous-domaine de test pour connecter votre instance de production avant la mise en ligne, ainsi que d’effectuer une batterie de tests UAT. Ainsi, si votre domaine est exemple.com, vous pouvez créer un sous-domaine test.exemple.com et l’appliquer à l’instance de production. Lors du test UAT du domaine, les éléments tels que la redirection des liens, la mise en cache et les configurations de Dispatcher nécessitent toute votre attention.
          * [Introduction aux noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
          * [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md)
          * [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md)
@@ -153,7 +153,7 @@ Passez en revue cette liste d’activités pour vous assurer d’effectuer une m
       * Avec un TTL très élevé, les mises à jour de votre enregistrement DNS prendront plus de temps à se propager.
 * Exécutez des tests de performance et de sécurité qui répondent aux besoins et aux objectifs de votre entreprise.
 * Effectuez une coupure et assurez-vous que la mise en service réelle est effectuée sans aucun nouveau déploiement ni mise à jour du contenu.
-* Créez des groupes de notification utilisateur de Admin Console. Voir [Groupes d’utilisateurs pour les notifications](/help/journey-onboarding/user-groups.md)
+* Créez des groupes de notification pour les utilisateurs d’Admin Console. Consultez la section [Groupes d’utilisateurs pour les notifications](/help/journey-onboarding/user-groups.md).
 
 Vous pouvez toujours vous référer à cette liste au cas où vous auriez besoin de recalibrer vos tâches lors de la migration.
 
