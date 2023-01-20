@@ -3,13 +3,13 @@ title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
 source-git-commit: cc50520d7ee2bb3e7d1491154d531aa84ac9e956
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1512'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# SPA et rendu côté serveur{#spa-and-server-side-rendering}
+# SPA et rendu côté serveur (SSR){#spa-and-server-side-rendering}
 
 Les applications sur une seule page (SPA) peuvent offrir à l’utilisateur une expérience riche et dynamique qui réagit et se comporte de manière familière, souvent tout simplement comme une application native. [À cette fin, le client doit charger le contenu à l’avance, puis se charger de la lourde tâche consistant à gérer l’interaction utilisateur](introduction.md#how-does-a-spa-work), réduisant ainsi le volume de communication nécessaire entre le client et le serveur, ce qui rend l’application plus réactive.
 
@@ -26,13 +26,13 @@ Le rendu côté serveur fournit habituellement une certaine valeur lorsque la r�
 * **SEO :** est-il toujours nécessaire d’utiliser le rendu côté serveur pour que votre site soit correctement indexé par les moteurs de recherche qui génèrent du trafic ? Gardez à l’esprit que les principaux robots de moteur de recherche évaluent désormais JS.
 * **Vitesse de la page :** le rendu côté serveur améliore-t-il la vitesse de façon mesurable dans les environnements réels et ajoute-t-il à l’expérience globale de l’utilisateur ?
 
-Adobe ne recommande la mise en œuvre du rendu côté serveur que si au moins l’une de ces deux questions reçoit une réponse « oui » claire pour votre projet. Les sections suivantes décrivent comment effectuer cette opération à l’aide de Adobe I/O Runtime, qui fait partie de la section [App Builder](https://developer.adobe.com/app-builder).
+Adobe ne recommande la mise en œuvre du rendu côté serveur que si au moins l’une de ces deux questions reçoit une réponse « oui » claire pour votre projet. Les sections suivantes décrivent comment utiliser Adobe I/O Runtime, qui fait partie de [App Builder](https://developer.adobe.com/app-builder).
 
-## Adobe I/O Runtime {#adobe-i-o-runtime}
+## Adobe I/O Runtime {#adobe-i-o-runtime}
 
-Si vous [êtes certain que votre projet nécessite la mise en œuvre du rendu côté serveur](#when-to-use-ssr), la solution recommandée par Adobe est d’utiliser Adobe I/O Runtime.
+Si vous [êtes certain(e) que votre projet nécessite la mise en œuvre du rendu côté serveur](#when-to-use-ssr), la solution recommandée par Adobe est d’utiliser Adobe I/O Runtime.
 
-Pour plus d’informations sur Adobe I/O Runtime, voir
+Pour plus d’informations sur Adobe I/O Runtime, consultez
 
 * [https://developer.adobe.com/runtime](https://developer.adobe.com/runtime) - pour une présentation de la fonction Exécution d’App Builder
 * [https://developer.adobe.com/app-builder](https://developer.adobe.com/app-builder) - pour plus d’informations sur le produit App Builder complet
@@ -45,9 +45,9 @@ Les sections suivantes décrivent comment Adobe I/O Runtime peut être utilisé 
 
 >[!NOTE]
 >
->Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements.  Voir le document [CI/CD pour les applications App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/) pour plus d’informations.
+>Adobe recommande un espace de travail Adobe I/O Runtime distinct par environnement (évaluation, production, test, etc.). Il est ainsi possible d’obtenir des modèles de cycle de vie de développement de systèmes (SDLC) types, avec différentes versions d’une application unique, déployée dans différents environnements.  Pour plus d’informations, consultez le document [CI/CD pour les applications App Builder](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/).
 >
->Un espace de travail distinct n’est pas nécessaire pour chaque instance (auteur, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
+>Un espace de travail distinct n’est pas nécessaire pour chaque instance (création, publication), sauf s’il existe des différences dans l’implémentation de l’environnement d’exécution (runtime) par type d’instance.
 
 ## Configuration du moteur de rendu distant {#remote-content-renderer-configuration}
 
@@ -85,7 +85,7 @@ Avec le rendu côté serveur, le [workflow d’interaction des composants](intro
 
 ![AEM Adobe I/O piloté par SSE CMS](assets/ssr-cms-drivenaemnode-adobeio.png)
 
-## Flux de communication piloté par Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
+## Flux de communication piloté par Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
 La section précédente décrit l’implémentation standard et recommandée du rendu côté serveur dans le cadre des SPA dans AEM, AEM se chargeant du démarrage et du traitement du contenu.
 
