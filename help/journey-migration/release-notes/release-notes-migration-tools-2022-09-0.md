@@ -4,9 +4,9 @@ description: Notes de mise à jour pour les outils de migration dans AEM as a�
 feature: Release Information
 exl-id: 581370ba-e3e8-487e-af83-a1eacbda2763
 source-git-commit: dd4515bdbba81dcec0868c3058c7745775cc80ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '162'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -22,10 +22,10 @@ La date de publication de Best Practices Analyzer v2.1.34 est le 12 septembre 
 
 ### Nouveautés {#what-is-new-bpa}
 
-* BPA peut désormais détecter et signaler si le client a ajouté une configuration de journal personnalisée. AEM as a Cloud Service ne prend pas en charge les fichiers journaux personnalisés. Tous les fichiers journaux doivent être transmis à `error.log`
+* BPA peut désormais détecter et signaler si le client a ajouté une configuration de journal personnalisée. AEM as a Cloud Service ne prend pas en charge les fichiers journaux personnalisés. Tous les fichiers journaux doivent être transmis à `error.log`.
 * BPA peut désormais générer des rapports sur les différents types MIME binaires présents dans le référentiel du client et les nombres qui y sont associés.
 
 ### Correctifs {#bug-fixes-bpa}
 
-* L’interface utilisateur BPA présentait des problèmes de rendu lors de l’affichage d’un grand nombre de résultats sous un seul modèle. Ce problème a été résolu.
-* Le BPA signalait incorrectement certains résultats comme des changements non compatibles avec la gravité critique. Ce problème a été résolu.
+* L’interface utilisateur de BPA présentait des problèmes de rendu lors de l’affichage d’un grand nombre de résultats sous un seul motif. Ce problème a été résolu.
+* BPA signalait de manière incorrecte certains résultats comme des modifications non compatibles avec gravité critique. Ce problème a été résolu.
