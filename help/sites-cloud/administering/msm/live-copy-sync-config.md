@@ -5,9 +5,9 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2337'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Cette section contient des informations sur les configurations du déploiement i
 
 >[!CAUTION]
 >
->Il n’est **pas** recommandé de mettre à jour ou de modifier une configuration de déploiement prête à l’emploi. Si une action active personnalisée est requise, elle doit être ajoutée dans une configuration de déploiement personnalisée.
+>Il n’est **pas** recommandé de mettre à jour ou de modifier une configuration de déploiement prête à l’emploi. Si une action en direct et personnalisée est requise, elle doit être ajoutée dans une configuration de déploiement personnalisée.
 
 ### Déclencheurs de déploiement {#rollout-triggers}
 
@@ -54,7 +54,7 @@ If the installed rollout configuration actions do not meet your requirements, yo
 | Activer au moment de l’activation du plan directeur | Publie la Live Copy lorsque la source est publiée | En cas d’activation | `targetActivate` |
 | Désactiver au moment de la désactivation du plan directeur | Désactive la Live Copy lorsque la source est désactivée | En cas de désactivation | `targetDeactivate` |
 | Pousser au moment de la modification | Envoie le contenu à la Live Copy lorsque la source est modifiée<br>Utilisez cette configuration de déploiement avec parcimonie, car elle emploie le déclencheur En cas de modification. | En cas de modification | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren` |
-| Envoyer au moment de la modification (superficielle) | Envoie le contenu à la Live Copy lorsque la page de plan directeur est modifiée, sans mettre à jour les références (par exemple, pour les copies superficielles).<br>Utilisez cette configuration de déploiement avec parcimonie, car elle utilise le déclencheur En cas de modification . | En cas de modification | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
+| Envoyer au moment de la modification (superficielle) | Envoie le contenu à la Live Copy lors de la modification de la page du plan directeur, sans mettre à jour les références (par exemple pour les copies superficielles)<br>Utilisez cette configuration de déploiement avec parcimonie, car elle emploie le déclencheur En cas de modification. | En cas de modification | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`orderChildren` |
 | Convertir le lancement | Configuration de déploiement standard pour la promotion des pages de lancement. | En cas de déploiement | `contentUpdate`<br>`contentCopy`<br>`contentDelete`<br>`referencesUpdate`<br>`orderChildren`<br>`markLiveRelationship` |
 
 ### Actions de synchronisation {#synchronization-actions}
