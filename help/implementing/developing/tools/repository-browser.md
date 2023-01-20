@@ -5,9 +5,9 @@ description: Le navigateur de référentiel fournit une vue en lecture seule dan
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
 source-git-commit: 46d8d78bd14f6e311d62266aa19825f82f82030d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '899'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -66,13 +66,13 @@ Vous pouvez utiliser le volet de navigation de gauche pour naviguer dans la hié
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-Vous pouvez également accéder directement à un chemin en le saisissant dans la variable **Chemin** , comme illustré ci-dessous. Cela permet également d’étendre son emplacement dans la vue de hiérarchie du contenu sur la gauche.
+Vous pouvez également accéder directement à un chemin d’accès en le saisissant dans le champ **Chemin d’accès**, comme illustré ci-dessous. Cela permet également de développer son emplacement dans l’affichage hiérarchique du contenu sur la gauche.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-Lorsque vous cliquez sur un dossier à gauche, le champ Chemin est automatiquement renseigné avec son emplacement. Cela s’avère utile pour copier et coller la valeur en vue d’une utilisation ultérieure.
+Lorsque vous cliquez sur un dossier sur la gauche, le champ Chemin d’accès est automatiquement renseigné avec son emplacement. Cela s’avère utile pour copier et coller la valeur en vue d’une utilisation ultérieure.
 
-De plus, lorsque vous cliquez sur un dossier, l’URL est modifiée dynamiquement afin d’inclure le chemin d’accès à ce dossier. Cela permet des URL pouvant être signées.
+De plus, lorsque vous cliquez sur un dossier, l’URL est modifiée dynamiquement afin d’inclure le chemin d’accès à ce dossier. Ainsi, les URL peuvent être ajoutées aux signets.
 
 Pour la publication, par défaut, le navigateur de référentiel affiche uniquement le contenu public, de sorte que certains dossiers comme `/conf` ou `/home` ne seront pas visibles.
 
