@@ -3,9 +3,9 @@ title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2994'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -208,7 +208,7 @@ Plusieurs ressources d’aide sont disponibles :
 
 ## Barre d’outils Actions {#actions-toolbar}
 
-Chaque fois qu’une ressource est sélectionnée (par exemple, une page ou une ressource), diverses actions sont indiquées par des icônes avec un texte explicatif dans la barre d’outils. Ces actions dépendent de différents éléments :
+Lorsque vous sélectionnez une ressource (une page ou un actif, par exemple), diverses actions sont indiquées par des icônes, avec un texte explicatif dans la barre d’outils. Ces actions dépendent de différents éléments :
 
 * La console active
 * Le contexte actuel
