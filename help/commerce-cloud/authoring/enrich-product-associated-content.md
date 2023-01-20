@@ -11,9 +11,9 @@ kt: 7065
 thumbnail: 333205.jpg
 exl-id: d0062779-7e90-4f09-8878-eded877580ef
 source-git-commit: 16b27bc4f56519a0f1d2dfd9bd0b3090e77a8cc1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '421'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Découvrez comment les professionnels du marketing peuvent enrichir les données
 
 >[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
-Les ressources numériques peuvent être associées à un ou plusieurs SKU de produit. Une fois associée, la ressource numérique peut être découverte avec des recherches de mots-clés basées sur le SKU. La ressource apparaît également automatiquement en tant que contenu associé lors de la modification d’une page qui comprend le produit approprié, ce qui facilite encore la création de votre prochaine expérience numérique.
+Les ressources numériques peuvent être associées à un ou plusieurs SKU de produit. Une fois associée, la ressource numérique peut être découverte avec des recherches de mots-clés basées sur le SKU. La ressource s’affiche également automatiquement en tant que contenu associé lors de la modification d’une page qui comporte le produit approprié, ce qui facilite encore la création de votre prochaine expérience digitale.
 
 ## Fragments d’expérience {#experience-fragments}
 
@@ -41,7 +41,7 @@ Les fragments de contenu sont une fonctionnalité d’Adobe Experience Manager
 
 ## Pages de contenu {#content-pages}
 
-Les pages de contenu peuvent être associées à un ou plusieurs SKU de produit. Une fois associée, la page peut être découverte avec des recherches de mots-clés basées sur le SKU. Les pages de contenu peuvent également être incluses dynamiquement dans une page de catalogue de produits à l’aide d’un espace réservé et d’une association.
+Les pages de contenu peuvent être associées à un ou plusieurs SKU de produit. Une fois associée, la page peut être découverte avec des recherches de mots-clés basées sur le SKU. Les pages de contenu peuvent également être incluses de manière dynamique sur une page de catalogue de produits par le biais d’un espace réservé et d’une association.
 
 
 ## Ressources connexes {#related}
