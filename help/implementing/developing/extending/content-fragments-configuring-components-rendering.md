@@ -3,9 +3,9 @@ title: Fragments de contenu – Configuration des composants pour le rendu
 description: Fragments de contenu – Configuration des composants pour le rendu
 exl-id: 6606dc3b-f1b8-4941-8fd0-f69cbd414afa
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '522'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -73,22 +73,22 @@ La configuration OSGi est la suivante :
   <tr>
    <td><strong>Type de ressource</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>le type de ressource à enregistrer ; par exemple, <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>Le type de ressource à enregistrer ; par exemple, <br />. <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Propriété de référence</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>Le nom de la propriété qui contient la référence au fragment ; par exemple, <code>fragmentPath</code> ou <code>fileReference</code></td>
+   <td>Le nom de la propriété qui contient la référence au fragment ; par exemple, <code>fragmentPath</code> ou <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Propriété d’élément(s)</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>Le nom de la propriété qui contient le ou les noms des éléments dont le rendu doit être effectué ; par exemple,<code>elementName</code></td>
+   <td>Le nom de la propriété qui contient le ou les noms des éléments dont le rendu doit être effectué ; par exemple,<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Propriété de variation</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>Le nom de la propriété qui contient le nom de la variation à rendre ; par exemple,<code>variationName</code></td>
+   <td>Le nom de la propriété qui contient le nom de la variation dont le rendu doit être effectué ; par exemple,<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
