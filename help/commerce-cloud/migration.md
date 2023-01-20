@@ -3,9 +3,9 @@ title: Migration vers le module complémentaire CIF (Commerce Integration Framew
 description: Comment migrer vers le module complémentaire CIF (Commerce Integration Framework) d’AEM à partir d’une ancienne version
 exl-id: 0db03a05-f527-4853-b52f-f113bce929cf
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -51,4 +51,4 @@ Si vous utilisez le plan directeur de catalogue avec CIF classique, vous devez m
 
 ## Données et interaction d’achat non mises en cache
 
-Les requêtes côté client pour les données et interactions non mises en cache (par exemple, ajout au panier, recherche) doivent accéder directement au point de terminaison de commerce (solution de commerce ou couche d’intégration) via CDN/Dispatcher. Supprimez tous les appels pour lesquels AEM ne servait que de proxy.
+Les requêtes côté client pour les données et interactions non mises en cache (par exemple, l’ajout au panier, la recherche) doivent accéder directement au point d’entrée de commerce (solution de commerce ou couche d’intégration) via le réseau CDN ou le Dispatcher. Supprimez tous les appels pour lesquels AEM servait uniquement de proxy.
