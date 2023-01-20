@@ -6,7 +6,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 6ea869b3067d168c661ea925e112857c4bbd70e9
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -58,9 +58,9 @@ Pour plus d’informations sur la migration du modèle de configuration hérité
 
 ## Disposition du contenu {#content-disposition}
 
-Pour le niveau publication, la valeur par défaut pour la diffusion des objets Blob est en tant que pièce jointe. Il peut être remplacé à l’aide de la méthode standard [en-tête de disposition du contenu](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Disposition) dans le dispatcher.
+Pour le niveau de publication, les objets Blob sont diffusés par défaut en tant que pièce jointe. Vous pouvez modifier ce paramètre en utilisant l’[en-tête standard de disposition du contenu](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Content-Disposition) dans le Dispatcher.
 
-Vous trouverez ci-dessous un exemple de la manière dont la configuration doit se présenter :
+La configuration doit se présenter ainsi :
 
 ```
 <LocationMatch "^\/content\/dam.*\.(pdf).*">
@@ -103,7 +103,7 @@ Le tableau ci-dessous présente les modules Apache pris en charge :
 | `mod_include (no directives supported)` | [https://httpd.apache.org/docs/2.4/mod/mod_include.html](https://httpd.apache.org/docs/2.4/mod/mod_include.html) |
 
 
-Les clients ne peuvent pas ajouter de modules arbitraires, mais des modules supplémentaires peuvent être envisagés pour inclusion à l’avenir. Les clients peuvent trouver la liste des directives disponibles pour une version de Dispatcher donnée en exécutant la commande de liste autorisée du programme de validation dans le SDK.
+Les clients ne peuvent pas ajouter de modules arbitraires, mais des modules supplémentaires peuvent être envisagés pour inclusion à l’avenir. Pour obtenir la liste des directives disponibles pour une version de Dispatcher donnée, les client(e)s peuvent exécuter la commande de liste autorisée du programme de validation dans le SDK.
 
 Les directives autorisées dans les fichiers de configuration Apache peuvent être répertoriées en exécutant la commande de liste autorisée du programme de validation :
 

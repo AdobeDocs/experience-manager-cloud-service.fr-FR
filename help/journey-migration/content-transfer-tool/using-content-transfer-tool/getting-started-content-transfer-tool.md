@@ -5,7 +5,7 @@ exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
 source-git-commit: eacd418ead2cc754a055449a99037b6541f55f6a
 workflow-type: tm+mt
 source-wordcount: '1326'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle n
 * Le point d’entrée de l’IO de mappage des utilisateurs : `usermanagement.adobe.io`
 
 >[!NOTE]
->Si l’extraction échoue en raison de l’erreur suivante : &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException : Échec de la construction du chemin PKIX : sun.security.provider.certpath.SunCertPathBuilderException : impossible de trouver un chemin de certification valide à la cible demandée&quot;, cela peut être résolu en important le certificat d’autorité de certification approprié.
+>Si l’extraction échoue en raison de l’erreur suivante : &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&quot;, cela peut être résolu en important le certificat d’autorité de certification approprié.
 
 ### Activation de la journalisation SSL {#enable-ssl-logging}
 
@@ -107,7 +107,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
 Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleration Manager, vous devez installer la dernière version de l’outil de transfert de contenu sur votre instance source Adobe Experience Manager (AEM). Consultez cette section pour savoir comment renseigner le jeu de migration.
 
-1. Après avoir installé la dernière version de l’outil de transfert de contenu sur votre instance Adobe Experience Manager source, accédez à **Opérations - Migration de contenu**
+1. Après avoir installé la dernière version de l’outil de transfert de contenu sur votre instance Adobe Experience Manager source, accédez à **Opérations - Migration de contenu**.
 
 1. Cliquez sur **Créer un jeu de migration**.
 

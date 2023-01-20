@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
 workflow-type: tm+mt
 source-wordcount: '1145'
-ht-degree: 74%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 74%
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_cdn"
 >title="Réseau de diffusion de contenu dans AEM as a Cloud Service"
->abstract="AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des noeuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM."
+>abstract="AEM as a Cloud Service est fourni avec un réseau CDN. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds du réseau CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM."
 
 AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM.
 
@@ -23,16 +23,16 @@ Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des ex
 
 Consultez également les vidéos suivantes [Cloud 5 AEM CDN Partie 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html?lang=fr) et [Cloud 5 AEM CDN Partie 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html?lang=fr) pour obtenir plus d’informations sur le réseau de diffusion de contenu dans AEM as a Cloud Service.
 
-## Réseau de diffusion de contenu géré AEM  {#aem-managed-cdn}
+## Réseau CDN géré par AEM  {#aem-managed-cdn}
 
-Consultez les sections ci-dessous pour utiliser l’interface utilisateur en libre-service de Cloud Manager afin de préparer la diffusion de contenu à l’aide du réseau de diffusion de contenu prêt à l’emploi AEM :
+Suivez les sections ci-dessous pour utiliser l’interface utilisateur en libre-service de Cloud Manager pour préparer la diffusion de contenu à l’aide du réseau CDN prêt à l’emploi d’AEM :
 
 1. [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
 
 >[!NOTE]
 >
->Les domaines personnalisés sont pris en charge dans Cloud Manager **only** si vous utilisez le réseau de diffusion de contenu géré par AEM. Si vous apportez votre propre réseau de diffusion de contenu et [pointez-le vers le réseau de diffusion de contenu géré AEM](#point-to-point-CDN) vous devrez utiliser ce réseau de diffusion de contenu spécifique pour gérer les domaines qui ne sont pas Cloud Manager.
+>Les domaines personnalisés sont pris en charge dans Cloud Manager **seulement** si vous utilisez le réseau CDN géré par AEM. Si vous apportez votre propre réseau CDN et [que vous le pointez vers le réseau CDN géré par AEM](#point-to-point-CDN) vous devrez utiliser ce réseau CDN spécifique  et non Cloud Manager pour gérer les domaines.
 
 **Limitation du trafic**
 
@@ -42,7 +42,7 @@ Consultez [Gestion des listes autorisées d’adresses IP](/help/implementing/cl
 
 >[!CAUTION]
 >
->Seules les requêtes provenant des adresses IP autorisées seront diffusées par AEM réseau de diffusion de contenu géré. Si vous pointez votre propre réseau de diffusion de contenu sur le réseau géré par AEM, assurez-vous que les adresses IP de votre réseau de diffusion de contenu sont incluses dans la liste autorisée.
+>Seules les requêtes provenant des adresses IP autorisées seront traitées par le biais du réseau CDN géré par AEM. Si vous pointez votre propre réseau CDN sur le réseau géré par AEM, assurez-vous que les adresses IP de votre réseau CDN sont incluses dans la liste autorisée.
 
 ## Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM {#point-to-point-CDN}
 
@@ -61,7 +61,7 @@ Si un client doit utiliser son réseau de diffusion de contenu existant, il peut
 
 Instructions de configuration :
 
-1. Pointez votre réseau de diffusion de contenu sur l’entrée du réseau de diffusion de contenu Adobe en tant que domaine d’origine. Par exemple, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
+1. Pointez votre réseau CDN sur l’entrée du réseau CDN d’Adobe en tant que domaine d’origine. Par exemple, `publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Le SNI doit également être défini sur l’entrée du réseau CDN Adobe..
 1. Définissez l’en-tête hôte sur le domaine d’origine. Par exemple : `Host:publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com`.
 1. Définissez l’en-tête `X-Forwarded-Host` avec le nom de domaine afin qu’AEM puisse déterminer l’en-tête hôte. Par exemple : `X-Forwarded-Host:example.com`.
@@ -70,9 +70,9 @@ Instructions de configuration :
    * Ce paramétrage est nécessaire afin que le réseau de diffusion de contenu d’Adobe puisse valider la source des requêtes et transmettre les en-têtes `X-Forwarded-*` à l’application AEM. Par exemple,`X-Forwarded-For` est utilisé pour déterminer l’adresse IP du client. Il incombe donc à l’appelant approuvé (c’est-à-dire au réseau de diffusion de contenu géré par le client) de s’assurer que les en-têtes `X-Forwarded-*` sont corrects (voir la note ci-dessous).
    * L’accès à l’entrée du réseau de diffusion de contenu d’Adobe peut être aussi bloqué lorsqu’une balise `X-AEM-Edge-Key` n’est pas présente. Informez Adobe si vous avez besoin d’un accès direct à l’entrée du CDN d’Adobe (à bloquer).
 
-Voir [Exemples de configurations de fournisseur CDN](#sample-configurations) pour consulter des exemples de configuration provenant de principaux fournisseurs de réseau de diffusion de contenu.
+Voir [Exemples de configurations de fournisseur de réseau CDN](#sample-configurations) pour consulter des exemples de configuration provenant de principaux fournisseurs de réseau CDN.
 
-Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le trafic de bout en bout fonctionne correctement.
+Avant d’accepter le trafic en direct, vous devez vérifier auprès du service clientèle d’Adobe que le routage du trafic de bout en bout fonctionne correctement.
 
 Après avoir obtenu le `X-AEM-Edge-Key`, vous pouvez tester la requête afin de déterminer si elle est correctement acheminée comme suit :
 
@@ -101,23 +101,23 @@ curl https://publish-p<PROGRAM_ID>-e<ENV-ID>.adobeaemcloud.com --header "X-Forwa
 >
 >Les environnements de programme Sandbox ne prennent pas en charge un réseau CDN fourni par le client.
 
-Le saut supplémentaire entre le réseau de diffusion de contenu client et le réseau de diffusion de contenu AEM n’est nécessaire que dans le cas d’une interruption du cache. En utilisant les stratégies d’optimisation du cache décrites dans cet article, l’ajout d’un réseau de diffusion de contenu client ne doit qu’introduire une latence négligeable.
+Le passage du réseau CDN client au réseau CDN géré par AEM n’est nécessaire que dans le cas d’une interruption du cache. En utilisant les stratégies d’optimisation du cache décrites dans cet article, l’ajout d’un réseau CDN client ne doit introduire qu’une latence négligeable.
 
-Notez que cette configuration de réseau de diffusion de contenu client est prise en charge pour le niveau de publication, mais pas au niveau auteur.
+Notez que cette configuration de réseau CDN client est prise en charge pour le niveau de publication, mais pas au niveau de la création.
 
-### Exemples de configurations de fournisseur CDN {#sample-configurations}
+### Exemples de configurations de fournisseur de réseau CDN {#sample-configurations}
 
-Vous trouverez ci-dessous plusieurs exemples de configuration de plusieurs principaux fournisseurs de réseau de diffusion de contenu.
+Vous trouverez ci-dessous plusieurs exemples de configuration de quelques grands fournisseurs de réseau CDN.
 
 **Akamai**
 
 ![Akamai1](assets/akamai1.png "Akamai")
 ![Akamai2](assets/akamai2.png "Akamai")
 
-**Amazon CloudFront**
+**Amazon CloudFront**
 
-![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
-![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
+![CloudFront1](assets/cloudfront1.png "Amazon CloudFront")
+![CloudFront2](assets/cloudfront2.png "Amazon CloudFront")
 
 **Cloudflare**
 
@@ -133,7 +133,7 @@ Le réseau de diffusion de contenu géré par AEM ajoute des en-têtes à chaque
 
 >[!NOTE]
 >
->Dans le cas du réseau de diffusion de contenu géré par le client, ces en-têtes reflètent l’emplacement du serveur proxy du réseau de diffusion de contenu des clients plutôt que le client réel.  Par conséquent, pour le réseau de diffusion de contenu géré par le client, les en-têtes de géolocalisation doivent être gérés par le réseau de diffusion de contenu client.
+>Dans le cas du réseau CDN géré par le client, ces en-têtes reflètent l’emplacement du serveur proxy du réseau CDN des clients plutôt que le client réel.  Par conséquent, pour le réseau CDN géré par le client, les en-têtes de géolocalisation doivent être gérés par le réseau CDN client.
 
 Les valeurs des codes de pays sont les codes Alpha-2 décrits [ici](https://fr.wikipedia.org/wiki/ISO_3166-1).
 

@@ -7,7 +7,7 @@ exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
 source-git-commit: deb604c6edfe4feb2ded00827fd2f96638e9335b
 workflow-type: tm+mt
 source-wordcount: '2345'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -274,11 +274,11 @@ Votre configuration de ferme comporte quatre sections où vous pouvez inclure vo
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-Vous pouvez également inclure la variable **default** version de ces fichiers, dont les noms sont précédés du mot `default_`, par exemple : `../filters/default_filters.any`.
+Vous pouvez également inclure la version **par défaut** de ces fichiers, dont les noms sont précédés du mot `default_`, par exemple `../filters/default_filters.any`.
 
-**include statement at (...), outside any known location: ...**
+**inclut l’instruction à (...), en dehors de tout emplacement connu : ...**
 
-Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êtes pas autorisé à utiliser la variable `$include` , par exemple, l’instruction suivante génère cette erreur :
+Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’avez pas l’autorisation d’utiliser l’instruction `$include`. Par exemple, les éléments suivants généreraient cette erreur :
 
 ```
 /invalidate {
@@ -293,7 +293,7 @@ Cette erreur est générée lorsque vous ne spécifiez pas d’inclusion pour `/
 
 **filter must not use glob pattern to allow requests**
 
-Il n’est pas sécurisé d’autoriser les requêtes avec une `/glob` règle de style, qui est comparée à la ligne de requête complète, par exemple :
+Il n’est pas sécurisé d’autoriser des requêtes avec une règle de style `/glob`, qui est mise en correspondance avec la ligne de requête complète, par exemple :
 
 ```
 /0100 {
@@ -315,7 +315,7 @@ Les fichiers inclus doivent être nommés comme suit :
 
 >[!TIP]
 >
->Pour pouvoir inclure plus de fichiers de manière beaucoup moins limitée, vous pouvez passer en mode de configuration Dispatcher flexible. Consultez le document [Validation et débogage à l’aide des outils de Dispatcher](/help/implementing/dispatcher/validation-debug.md) pour plus d’informations sur le mode flexible.
+>Pour pouvoir inclure plus de fichiers de manière beaucoup moins limitée, vous pouvez décider de passer en mode de configuration Dispatcher flexible. Consultez le document [Validation et débogage à l’aide des outils de Dispatcher](/help/implementing/dispatcher/validation-debug.md) pour plus d’informations sur le mode flexible.
 
 Vous pouvez également inclure la version **par défaut** des règles de réécriture, dont le nom est `conf.d/rewrites/default_rewrite.rules`.
 Notez qu’il n’existe pas de version par défaut des fichiers de variables.

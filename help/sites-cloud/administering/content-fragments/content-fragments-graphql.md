@@ -7,7 +7,7 @@ exl-id: ef48f737-a5b3-4913-9f37-6b9f681bc048
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
 source-wordcount: '731'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l�
 >
 >* [Que désigne l’expression « Headless » ?](/help/headless/what-is-headless.md) pour une présentation des concepts et de la terminologie Headless.
 >
->* [Headless et AEM](/help/headless/introduction.md) pour une présentation du Headless Development de AEM Sites as a Cloud Service.
+>* [Headless et AEM](/help/headless/introduction.md) pour une présentation du Headless Development d’AEM Sites as a Cloud Service.
 
 
 >[!NOTE]
@@ -36,7 +36,7 @@ Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l�
 
 ## CMS découplé {#headless-cms}
 
-Un système de gestion de contenu sans affichage (CMS) est un système de gestion de contenu principal uniquement, conçu et créé explicitement comme un référentiel de contenu qui rend le contenu accessible par le biais d’une API, à afficher sur n’importe quel appareil.
+Un système de gestion de contenu découplé, ou CMS découplé, est un système de gestion de contenu (CMS) back-end uniquement créé dès le départ comme un référentiel de contenu qui rend le contenu accessible via une API pour l’afficher sur n’importe quel appareil.
 
 En termes de création de fragments de contenu dans AEM, cela signifie que :
 

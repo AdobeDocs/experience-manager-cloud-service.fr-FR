@@ -5,7 +5,7 @@ exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
 source-git-commit: 01ff58fee9d309de75afcb556726e1cf32b9f70a
 workflow-type: tm+mt
 source-wordcount: '665'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ L’utilisation de noms de domaine personnalisés avec AEMaaCS présente certain
 
 >[!NOTE]
 >
->Les domaines personnalisés sont pris en charge dans Cloud Manager **only** si vous utilisez le réseau de diffusion de contenu géré par AEM. Si vous apportez votre propre réseau de diffusion de contenu et [pointez-le vers le réseau de diffusion de contenu géré AEM](/help/implementing/dispatcher/cdn.md) vous devrez utiliser ce réseau de diffusion de contenu spécifique pour gérer les domaines qui ne sont pas Cloud Manager.
+>Les domaines personnalisés sont pris en charge dans Cloud Manager **seulement** si vous utilisez le réseau CDN géré par AEM. Si vous apportez votre propre réseau CDN et [que vous le pointez vers le réseau CDN géré par AEM](/help/implementing/dispatcher/cdn.md), vous devrez utiliser ce réseau CDN spécifique et non Cloud Manager pour gérer les domaines.
 
 ## Workflow {#workflow}
 
@@ -55,7 +55,7 @@ L’ajout d’un nom de domaine personnalisé nécessite une interaction entre l
 
 | Étape | Description | Responsabilité | En savoir plus |
 |--- |--- |--- |---|
-| 1 | Ajout d’un certificat SSL à Cloud Manager | Client | [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
+| 1 | Ajouter un certificat SSL à Cloud Manager | Client | [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md) |
 | 2 | Ajout d’un enregistrement TXT pour vérifier le domaine | Client | [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) |
 | 3 | Examinez le statut de vérification du domaine | Client | [Vérification de l’état du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
 | 3a | Si la vérification du domaine échoue avec le statut `Domain Verification Failure` | Client | [Vérification de l’état du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) |
@@ -67,4 +67,4 @@ L’ajout d’un nom de domaine personnalisé nécessite une interaction entre l
 
 >[!TIP]
 >
->La configuration de noms de domaine personnalisés avec AEM as a Cloud Service est généralement un processus simple. Cependant, il peut arriver que des problèmes de délégation de domaine se produisent, ce qui peut prendre entre 1 et 2 jours ouvrables. Pour cette raison, il est vivement recommandé d’installer les domaines bien avant leur date d’activation. Voir le document [Vérification de l’état du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
+>Le processus de configuration de noms de domaine personnalisés avec AEM as a Cloud Service s’avère généralement simple. Cependant, des problèmes de délégation de domaine peuvent survenir. Leur résolution peut alors prendre entre 1 et 2 jours ouvrables. C’est pourquoi il est vivement recommandé d’installer les domaines bien avant leur date d’activation. Consultez le document [Vérification du statut du nom de domaine](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.

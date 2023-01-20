@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 21447e625d418bbb3f96c08991294e66659f7f51
 workflow-type: tm+mt
 source-wordcount: '2701'
-ht-degree: 93%
+ht-degree: 99%
 
 ---
 
@@ -235,7 +235,7 @@ Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd
 
 >[!NOTE]
 >
->Voir [Rechargement et validation automatiques](#automatic-loading) pour une alternative efficace à l’exécution `validate.sh` après chaque modification de configuration.
+>Consultez la section [Rechargement et validation automatiques](#automatic-loading) pour une alternative efficace à l’exécution de `validate.sh` après chaque modification de la configuration.
 
 ### Phase 1 {#first-phase}
 
@@ -288,11 +288,11 @@ Votre configuration de ferme comporte quatre sections où vous pouvez inclure vo
 | `/rules` | `../cache/rules.any` |
 | `/virtualhosts` | `../virtualhosts/virtualhosts.any` |
 
-Vous pouvez également inclure la variable **default** version de ces fichiers, dont les noms sont précédés du mot `default_`, par exemple : `../filters/default_filters.any`.
+Vous pouvez également inclure la version **par défaut** de ces fichiers, dont les noms sont précédés du mot `default_`, par exemple `../filters/default_filters.any`.
 
-**include statement at (...), outside any known location: ...**
+**inclut l’instruction à (...), en dehors de tout emplacement connu : ...**
 
-Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’êtes pas autorisé à utiliser la variable `$include` , par exemple, l’instruction suivante génère cette erreur :
+Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’avez pas l’autorisation d’utiliser l’instruction `$include`. Par exemple, les éléments suivants généreraient cette erreur :
 
 ```
 /invalidate {
@@ -307,7 +307,7 @@ Cette erreur est générée lorsque vous ne spécifiez pas d’inclusion pour `/
 
 **filter must not use glob pattern to allow requests**
 
-Il n’est pas sécurisé d’autoriser les requêtes avec une `/glob` règle de style, qui est comparée à la ligne de requête complète, par exemple :
+Il n’est pas sécurisé d’autoriser des requêtes avec une règle de style `/glob`, qui est mise en correspondance avec la ligne de requête complète, par exemple :
 
 ```
 /0100 {
@@ -319,22 +319,22 @@ Cette instruction est destinée à autoriser les requêtes de fichiers `css`, ma
 
 **included file (...) does not match any known file**
 
-Par défaut, deux types de fichiers dans votre configuration d’hôte virtuel Apache peuvent être spécifiés sous la forme d’inclusions : réécrit et variables.
+Par défaut, il existe deux types de fichiers dans la configuration de l’hôte virtuel Apache qui peuvent être spécifiés comme inclus : les réécritures et les variables.
 
 | Type | Nom du fichier d’inclusion |
 |-----------|---------------------------------|
 | Réécritures | `conf.d/rewrites/rewrite.rules` |
 | Variables | `conf.d/variables/custom.vars` |
 
-En mode flexible, d’autres fichiers peuvent également être inclus, à condition qu’ils se trouvent dans des sous-répertoires (à n’importe quel niveau) de `conf.d` du répertoire , avec le préfixe suivant.
+En mode flexible, d’autres fichiers peuvent également être inclus, à condition qu’ils se trouvent dans des sous-répertoires (peu importe le niveau) du répertoire `conf.d`, avec le préfixe suivant.
 
-| Inclure le préfixe de répertoire supérieur du fichier |
+| Préfixe de répertoire supérieur du fichier d’inclusion |
 |-------------------------------------|
 | `conf.d/includes` |
 | `conf.d/modsec` |
 | `conf.d/rewrites` |
 
-Par exemple, vous pouvez inclure un fichier dans un répertoire nouvellement créé sous `conf.d/includes` comme suit :
+Par exemple, vous pouvez inclure un fichier dans un répertoire nouvellement créé sous le répertoire `conf.d/includes` comme suit :
 
 ```
 Include conf.d/includes/mynewdirectory/myincludefile.conf
@@ -448,7 +448,7 @@ Les journaux des environnements cloud sont exposés par le biais du service de j
 
 >[!NOTE]
 >
->En raison d’une limitation du système d’exploitation Windows, cette fonctionnalité est disponible uniquement pour les utilisateurs de macOS et Linux.
+>En raison d’une limitation du système d’exploitation Windows, cette fonctionnalité est uniquement disponible pour les utilisateurs et utilisatrices de Linux et macOS.
 
 Au lieu d’exécuter la validation locale (`validate.sh`) et de démarrer le conteneur Docker (`docker_run.sh`) chaque fois que la configuration est modifiée, vous pouvez également exécuter le script `docker_run_hot_reload.sh`.  Le script recherche toutes les modifications apportées à la configuration et la recharge automatiquement, puis exécute à nouveau la validation. L’utilisation de cette option vous permet de gagner beaucoup de temps lors du débogage.
 

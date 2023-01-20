@@ -1,6 +1,6 @@
 ---
-title: Composants principaux AEM-CIF et intégration Adobe Experience Platform
-description: Découvrez comment envoyer à l’Experience Platform des données d’événement storefront à partir d’une page de produit générée AEM à l’aide de CIF - Experience Platform Connector.
+title: Composants principaux AEM-CIF et intégration à Adobe Experience Platform
+description: Découvrez comment envoyer des données d’événement de storefront vers Experience Platform à partir d’une page produit générée par AEM à l’aide du connecteur Experience Platform - CIF.
 sub-product: Commerce
 version: Cloud Service
 activity: setup
@@ -14,47 +14,47 @@ exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
 source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
 workflow-type: tm+mt
 source-wordcount: '2080'
-ht-degree: 3%
+ht-degree: 96%
 
 ---
 
-# Composants principaux AEM-CIF et intégration Adobe Experience Platform {#aem-cif-aep-integration}
+# Composants principaux AEM-CIF et intégration à Adobe Experience Platform {#aem-cif-aep-integration}
 
-Le [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) les composants principaux fournissent une intégration transparente avec [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=en) pour transférer les événements storefront et leurs données d’interactions côté client, telles que __ajouter au panier__.
+Les composants principaux [Commerce Integration Framework (CIF)](https://github.com/adobe/aem-core-cif-components) fournissent une intégration transparente à [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-overview.html?lang=fr), ce qui permet de transférer les événements de storefront et leurs données à partir d’interactions côté client, telles que l’__ajout au panier__.
 
-Le [AEM Composants principaux CIF](https://github.com/adobe/aem-core-cif-components) Le projet fournit une bibliothèque JavaScript appelée [Connecteur Adobe Experience Platform pour Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) pour collecter des données d’événement à partir de votre vitrine Commerce. Ces données d’événement sont envoyées à l’Experience Platform où elles sont utilisées dans d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target, pour créer un profil à 360 degrés couvrant un parcours client. En connectant les données Commerce à d’autres produits dans Adobe Experience Cloud, vous pouvez exécuter des tâches telles que l’analyse du comportement des utilisateurs sur votre site, effectuer des tests AB et créer des campagnes personnalisées.
+Le projet de [Composants principaux AEM CIF](https://github.com/adobe/aem-core-cif-components) fournit une bibliothèque JavaScript appelée [Connecteur Adobe Experience Platform pour Adobe Commerce](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) afin de collecter des données d’événement à partir de votre storefront Commerce. Ces données d’événement sont envoyées à Experience Platform, où elles sont utilisées dans d’autres produits Adobe Experience Cloud, tels qu’Adobe Analytics et Adobe Target, pour créer un profil à 360 degrés couvrant un parcours client. En connectant les données de Commerce à d’autres produits dans Adobe Experience Cloud, vous pouvez exécuter des tâches comme analyser le comportement des utilisateurs et utilisatrices sur votre site, effectuer un AB Testing et créer des campagnes personnalisées.
 
-En savoir plus sur les [Collecte de données Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html) suite de technologies qui vous permettent de collecter des données d’expérience client à partir de sources côté client.
+En savoir plus sur la suite de technologies de [Collecte de données Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/collection/home.html?lang=fr), qui vous permet de collecter des données d’expérience client à partir de sources côté client.
 
-## Envoyer `addToCart` données d’événement à l’Experience Platform {#send-addtocart-to-aep}
+## Envoer des données d’événement `addToCart` vers Experience Platform {#send-addtocart-to-aep}
 
-Les étapes suivantes indiquent comment envoyer la variable `addToCart` données d’événement des pages de produit générées par AEM vers l’Experience Platform à l’aide de CIF - Experience Platform Connector. En utilisant l’extension de navigateur du débogueur Adobe Experience Platform, vous pouvez tester et réviser les données envoyées.
+Les étapes suivantes indiquent comment envoyer les données d’événement `addToCart` des pages produit générées par AEM vers Experience Platform à l’aide du connecteur Experience Platform - CIF. L’extension de navigateur Adobe Experience Platform Debugger vous permet de tester et de passer en revue les données envoyées.
 
-![Examinez les données d’événement addToCart dans Adobe Experience Platform Debugger.](../assets/aep-integration/EventData-AEM-AEP.png)
+![Passer en revue les données d’événement addToCart dans Adobe Experience Platform Debugger](../assets/aep-integration/EventData-AEM-AEP.png)
 
 ## Prérequis {#prerequisites}
 
-Vous devez utiliser un environnement de développement local pour terminer cette démonstration. Cela inclut une instance AEM en cours d’exécution configurée et connectée à une instance Adobe Commerce. Examinez les exigences et les étapes de la [configuration d’un développement local avec le SDK AEM as Cloud Service](../develop.md).
+Vous devez utiliser un environnement de développement local pour mener à bien cette démonstration. Cela inclut une instance AEM en cours d’exécution configurée et connectée à une instance Adobe Commerce. Examinez les exigences et les étapes de la [configuration d’un développement local avec le SDK AEM as Cloud Service](../develop.md).
 
-Vous devez également accéder à [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html) et les autorisations pour créer le schéma, le jeu de données et les jeux de données pour la collecte de données. Pour plus d’informations, voir [Gestion des autorisations](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html).
+Vous devez également accéder à [Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-ui/ui-guide.html?lang=fr) et disposer des autorisations pour créer le schéma, le jeu de données et les flux de données pour la collecte de données. Pour plus d’informations, consultez la section [Gestion des autorisations](https://experienceleague.adobe.com/docs/experience-platform/collection/permissions.html?lang=fr).
 
-## Configuration d’AEM Commerce as a Cloud Service {#aem-setup}
+## Configurer AEM Commerce as a Cloud Service {#aem-setup}
 
-Pour qu’une __AEM Commerce as a Cloud Service__ environnement local avec le code et la configuration nécessaires, procédez comme suit.
+Pour bénéficier d’un environnement local __AEM Commerce as a Cloud Service__ fonctionnel avec le code et la configuration nécessaires, procédez comme suit.
 
 ### Configuration locale
 
-Suivez la [Configuration locale](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#local-setup) Cette section décrit les étapes à suivre pour disposer d’un environnement Commerce as a Cloud Service AEM opérationnel.
+Suivez les étapes de [Configuration locale](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=fr#configuration-locale) pour disposer d’un environnement AEM Commerce as a Cloud Service fonctionnel.
 
 ### Configuration du projet
 
-Suivez la [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?#project) Cette section décrit les étapes à suivre pour créer un projet AEM Commerce (CIF).
+Suivez les étapes de l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/developing/develop.html?lang=fr#project) pour créer un projet AEM Commerce (CIF).
 
 >[!TIP]
 >
->Dans l’exemple suivant, le projet AEM Commerce est nommé : `My Demo Storefront`, vous pouvez toutefois choisir votre propre nom de projet.
+>Dans l’exemple suivant, le projet AEM Commerce se nomme `My Demo Storefront`. Vous pouvez toutefois choisir votre propre nom de projet.
 
-![AEM Commerce Project](../assets/aep-integration/aem-project-with-commerce.png)
+![Projet AEM Commerce](../assets/aep-integration/aem-project-with-commerce.png)
 
 
 Créez et déployez le nouveau projet AEM Commerce vers le SDK AEM local en exécutant la commande suivante à partir du répertoire racine du projet.
@@ -63,15 +63,15 @@ Créez et déployez le nouveau projet AEM Commerce vers le SDK AEM local en exé
 $ mvn clean install -PautoInstallSinglePackage
 ```
 
-Déploiement local `My Demo StoreFront` site de commerce avec le code et le contenu par défaut ressemble à ce qui suit :
+Le site Commerce `My Demo StoreFront` localement déployé avec le code et le contenu par défaut ressemble à ce qui suit :
 
-![Site de commerce par défaut AEM](../assets/aep-integration/demo-aem-storefront.png)
+![Site AEM Commerce par défaut](../assets/aep-integration/demo-aem-storefront.png)
 
-### Installation des dépendances du connecteur Peregrine et CIF-AEP
+### Installer des dépendances du connecteur CIF-AEP et de Peregrine
 
-Pour collecter et envoyer les données d’événement à partir des pages de catégorie et de produit de ce site AEM Commerce, vous devez installer la clé `npm` dans la variable `ui.frontend` du projet Commerce AEM.
+Pour collecter et envoyer les données d’événement à partir des pages de catégorie et de produit de ce site AEM Commerce, vous devez installer les packages `npm` clés dans le module `ui.frontend` du projet AEM Commerce.
 
-Accédez au `ui.frontend` et installez les packages requis en exécutant les commandes suivantes à partir de la ligne de commande.
+Accédez au module `ui.frontend` et installez les packages requis en exécutant les commandes suivantes à partir de la ligne de commande.
 
 ```bash
 npm i --save lodash.get@^4.4.2 lodash.set@^4.3.2
@@ -86,14 +86,14 @@ npm i --save @adobe/aem-core-cif-experience-platform-connector --force
 
 >[!IMPORTANT]
 >
->Le `--force` est parfois requis, car [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) est restrictif avec les dépendances entre pairs prises en charge. En règle générale, cela ne doit pas poser de problème.
+>L’argument `--force` est parfois requis, car [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) est restrictif avec les dépendances de pairs prises en charge. En règle générale, cela ne doit pas poser de problème.
 
 
-### Configuration de Maven à utiliser `--force` argument
+### Configurer Maven pour utiliser l’argument `--force`
 
-Dans le cadre du processus de génération Maven, l’installation de nettoyage npm (à l’aide de `npm ci`) est déclenchée. Cela nécessite également la fonction `--force` argument .
+Dans le cadre du processus de création Maven, l’installation de nettoyage npm (à l’aide de `npm ci`) est déclenchée. Cela nécessite également l’argument `--force`.
 
-Accédez au fichier POM racine du projet. `pom.xml` et recherchez la variable `<id>npm ci</id>` bloc d&#39;exécution. Mettez à jour le bloc pour qu&#39;il ressemble à ce qui suit :
+Accédez au fichier POM racine `pom.xml` du projet et recherchez le bloc d’exécution `<id>npm ci</id>`. Mettez à jour le bloc pour qu’il ressemble à ce qui suit :
 
 ```xml
 <execution>
@@ -109,11 +109,11 @@ Accédez au fichier POM racine du projet. `pom.xml` et recherchez la variable `<
 
 ### Modifier le format de configuration Babel
 
-Basculer depuis la valeur par défaut `.babelrc` Format du fichier de configuration relatif au fichier vers `babel.config.js` format. Il s’agit d’un format de configuration à l’échelle du projet qui permet d’appliquer les modules externes et les paramètres prédéfinis à la variable `node_module` avec un meilleur contrôle.
+Basculez depuis le format par défaut de fichier de configuration relative au fichier `.babelrc` au format `babel.config.js`. Il s’agit d’un format de configuration à l’échelle du projet qui permet d’appliquer les modules externes et les paramètres prédéfinis au `node_module` avec un meilleur contrôle.
 
-1. Accédez au `ui.frontend` et supprimer le module existant `.babelrc` fichier .
+1. Accédez au module `ui.frontend` et supprimer le fichier `.babelrc` existant.
 
-1. Créez un `babel.config.js` qui utilise le fichier `peregrine` prédéfinie.
+1. Créez un fichier `babel.config.js` qui utilise le paramètre prédéfini `peregrine`.
 
    ```javascript
    const peregrine = require('@magento/babel-preset-peregrine');
@@ -130,11 +130,11 @@ Basculer depuis la valeur par défaut `.babelrc` Format du fichier de configurat
    }
    ```
 
-### Configuration de webpack pour l’utilisation de Babel
+### Configurer webpack pour l’utilisation de Babel
 
-Pour transférer les fichiers JavaScript à l’aide du chargeur Babel (`babel-loader`) et webpack, vous devez modifier la variable `webpack.common.js` fichier .
+Pour transférer les fichiers JavaScript à l’aide du chargeur Babel (`babel-loader`) et de webpack, vous devez modifier le fichier `webpack.common.js`.
 
-Accédez au `ui.frontend` et mettre à jour le module `webpack.common.js` afin que la règle suivante soit incluse dans le fichier `module` valeur de propriété :
+Accédez au module `ui.frontend` et mettez à jour le fichier `webpack.common.js` afin que la règle suivante soit incluse dans la valeur de propriété `module` :
 
 ```javascript
 {
@@ -144,16 +144,16 @@ Accédez au `ui.frontend` et mettre à jour le module `webpack.common.js` afin q
 }
 ```
 
-### Configuration du client Apollo
+### Configurer le client Apollo
 
-Le [Client Apollo](https://www.apollographql.com/docs/react/) est utilisé pour gérer les données locales et distantes avec GraphQL. Il stocke également les résultats des requêtes GraphQL dans un cache local, normalisé et en mémoire.
+Le [client Apollo](https://www.apollographql.com/docs/react/) est utilisé pour gérer les données locales et distantes avec GraphQL. Il stocke également les résultats des requêtes GraphQL dans un cache local, normalisé et en mémoire.
 
-Pour [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) pour travailler efficacement, vous avez besoin d’une `possibleTypes.js` fichier . Pour générer ce fichier, voir [Génération automatique de possiblesTypes](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Voir également la section [Implémentation de référence du PWA Studio](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) et un exemple de [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js) fichier .
+Pour que [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-configuration/) fonctionne efficacement, vous avez besoin d’un fichier `possibleTypes.js`. Pour générer ce fichier, voir [Génération automatique de types possibles](https://www.apollographql.com/docs/react/data/fragments/#generating-possibletypes-automatically). Voir également la section [Implémentation de référence PWA Studio](https://github.com/magento/pwa-studio/blob/1977f38305ff6c0e2b23a9da7beb0b2f69758bed/packages/pwa-buildpack/lib/Utilities/graphQL.js#L106-L120) et un exemple de fichier [`possibleTypes.js`](../assets/aep-integration/possibleTypes.js).
 
 
-1. Accédez au `ui.frontend` et enregistrez le fichier en tant que `./src/main/possibleTypes.js`
+1. Accédez au module `ui.frontend` et enregistrez le fichier en tant que `./src/main/possibleTypes.js`.
 
-1. Mettez à jour le `webpack.common.js` fichier `DefinePlugin` pour remplacer les variables statiques requises pendant la génération.
+1. Mettez à jour la section `DefinePlugin` du fichier `webpack.common.js` pour remplacer les variables statiques obligatoires pendant la génération.
 
    ```javascript
    const { DefinePlugin } = require('webpack');
@@ -170,13 +170,13 @@ Pour [`InMemoryCache`](https://www.apollographql.com/docs/react/caching/cache-co
    ]
    ```
 
-### Initialisation des composants principaux Peregrine et CIF
+### Initialiser les composants principaux de Peregrine et CIF
 
-Pour initialiser les composants principaux React et CIF basés sur React, créez la configuration requise et les fichiers JavaScript.
+Pour initialiser les composants principaux de CIF et Peregrine basés sur React, créez la configuration et les fichiers JavaScript requis.
 
-1. Accédez au `ui.frontend` et créez le dossier suivant : `src/main/webpack/components/commerce/App`
+1. Accédez au module `ui.frontend` et créez le dossier suivant : `src/main/webpack/components/commerce/App`.
 
-1. Créez un `config.js` avec le contenu suivant :
+1. Créez un fichier `config.js` avec le contenu suivant :
 
    ```javascript
    // get and parse the CIF store configuration from the <head>
@@ -226,9 +226,9 @@ Pour initialiser les composants principaux React et CIF basés sur React, créez
 
    >[!IMPORTANT]
    >
-   >Bien que vous soyez déjà familiarisé avec la variable [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) fichier à partir de __AEM Guides - Projet CIF Venia__, quelques modifications doivent être apportées à ce fichier. Tout d’abord, passez en revue les __TODO__ commentaires. Ensuite, à l’intérieur de la variable `eventsCollector` , recherchez la propriété `eventsCollector > aed` et mettre à jour l’objet `orgId` et `datastreamId` aux valeurs correctes. [En savoir plus](./aep.md#add-aep-values-to-aem)
+   >Bien que vous soyez peut-être déjà familiarisé(e) avec le fichier [`config.js`](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.frontend/src/main/components/App/config.js) grâce à __AEM Guides - Projet CIF Venia__, quelques modifications doivent être apportées à ce fichier. Tout d’abord, passez en revue les commentaires __Tâches__. Ensuite, à l’intérieur de la propriété `eventsCollector`, recherchez l’objet `eventsCollector > aed` et mettez à jour les propriétés `orgId` et `datastreamId` avec les valeurs correctes. [En savoir plus](./aep.md#add-aep-values-to-aem).
 
-1. Créez un `App.js` avec le contenu suivant. Ce fichier ressemble à un fichier de point de départ de l’application React standard et contient des hooks React et personnalisés et l’utilisation de React Context pour faciliter l’intégration de l’Experience Platform.
+1. Créez un fichier `App.js` avec le contenu suivant. Ce fichier ressemble à un fichier de point de départ standard de l’application React et contient des crochets React et personnalisés, ainsi que l’utilisation de contexte React pour faciliter l’intégration d’Experience Platform.
 
    ```javascript
    import config from './config';
@@ -323,153 +323,153 @@ Pour initialiser les composants principaux React et CIF basés sur React, créez
    };
    ```
 
-   Le `EventCollectorContext` exporte le contexte React qui :
+   Le `EventCollectorContext` exporte le contexte React qui :
 
    - charge la bibliothèque commerce-events-sdk et commerce-events-collector,
-   - les initialise avec une configuration donnée pour Experience Platform et/ou ACDS ;
-   - s’abonne à tous les événements de Peregrine et les transfère au SDK events.
+   - les initialise avec une configuration donnée pour Experience Platform et/ou ACDS,
+   - et s’abonne à tous les événements de Peregrine et les transfère au SDK d’événements.
 
-   Vous pouvez consulter les détails de mise en oeuvre de la variable `EventCollectorContext` [here](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
+   Vous pouvez consulter les détails de mise en œuvre du `EventCollectorContext` [ici](https://github.com/adobe/aem-core-cif-components/blob/3d4e44d81fff2f398fd2376d24f7b7019f20b31b/extensions/experience-platform-connector/src/events-collector/EventCollectorContext.js).
 
-### Créer et déployer le projet AEM mis à jour
+### Créez et déployez le projet AEM mis à jour.
 
-Pour vous assurer que les modifications d’installation, de code et de configuration du package ci-dessus sont correctes, recréez et déployez le projet Commerce AEM mis à jour à l’aide de la commande Maven suivante : `$ mvn clean install -PautoInstallSinglePackage`.
+Pour vous assurer que les modifications de configuration, de code et d’installation du package ci-dessus sont correctes, recréez et déployez le projet AEM Commerce mis à jour à l’aide de la commande Maven suivante : `$ mvn clean install -PautoInstallSinglePackage`.
 
-## Configuration des Experience Platform {#aep-setup}
+## Configurer Experience Platform {#aep-setup}
 
-Pour recevoir et stocker les données d’événement provenant des pages de commerce AEM telles que la catégorie et le produit, procédez comme suit :
+Pour recevoir et stocker les données d’événement provenant des pages d’AEM Commerce telles que la catégorie et le produit, effectuez les étapes suivantes :
 
 >[!AVAILABILITY]
 >
->Assurez-vous que vous faites partie de la __Profils de produit__ under __Adobe Experience Platform__ et __Collecte de données Adobe Experience Platform__. Si nécessaire, contactez votre administrateur système pour créer, mettre à jour ou affecter __Profils de produit__ sous le [Admin Console](https://adminconsole.adobe.com/).
+>Assurez-vous que vous faites partie des __Profils de produit__ corrects sous __Adobe Experience Platform__ et __Collecte de données Adobe Experience Platform__. Si nécessaire, contactez votre administrateur ou administratrice système pour créer, mettre à jour ou attribuer les __Profils de produit__ sous l’[Admin Console](https://adminconsole.adobe.com/).
 
 ### Créer un schéma avec un groupe de champs Commerce
 
-Pour définir la structure des données d’événement de commerce, vous devez créer un schéma de modèle de données d’expérience (XDM). Un schéma est un ensemble de règles qui représente et valide la structure et le format des données.
+Pour définir la structure des données d’événement de Commerce, vous devez créer un schéma de modèle de données d’expérience (XDM). Un schéma est un ensemble de règles qui représente et valide la structure et le format des données.
 
-1. Dans le navigateur, accédez au __Adobe Experience Platform__ page d’accueil du produit. Par exemple, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1. Dans le navigateur, accédez à la page d’accueil du produit __Adobe Experience Platform__. Par exemple, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
-1. Recherchez la variable __Schémas__ dans la section de navigation de gauche, cliquez sur le bouton __Création d’un schéma__ dans la section supérieure droite, puis sélectionnez __XDM ExperienceEvent__.
+1. Recherchez le menu __Schémas__ dans la section de navigation de gauche, cliquez sur le bouton __Créer un schéma__ dans la section supérieure droite, puis sélectionnez __XDM ExperienceEvent__.
 
-   ![Création d’un schéma AEP](../assets/aep-integration/AEP-Schema-EventSchema-1.png)
+   ![Créer un schéma AEP](../assets/aep-integration/AEP-Schema-EventSchema-1.png)
 
-1. Nommez votre schéma à l’aide de la fonction __Propriétés du schéma > Nom d’affichage__ et ajoutez des groupes de champs à l’aide de la fonction  __Composition > Groupes de champs > Ajouter__ bouton .
+1. Donnez un nom à votre schéma à l’aide du champ __Propriétés du schéma > Nom d’affichage__ et ajoutez des groupes de champs à l’aide du bouton __Composition > Groupes de champs > Ajouter__.
 
    ![Définition d’un schéma AEP](../assets/aep-integration/AEP-Schema-Definition.png)
 
-1. Dans le __Ajouter des groupes de champs__ boîte de dialogue, recherchez `Commerce`, sélectionnez la variable __Détails du commerce__ puis cliquez sur __Ajouter des groupes de champs__.
+1. Dans la boîte de dialogue __Ajouter des groupes de champs__, recherchez `Commerce`, cochez la case __Détails de Commerce__, puis cliquez sur __Ajouter des groupes de champs__.
 
    ![Définition d’un schéma AEP](../assets/aep-integration/AEP-Schema-Field-Group.png)
 
 
 >[!TIP]
 >
->Voir [Principes de base de la composition des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html) pour plus d’informations.
+>Consultez la section [Principes de base de la composition des schémas](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=fr) pour plus d’informations.
 
 ### Créer un jeu de données
 
-Pour stocker les données d’événement, vous devez créer un jeu de données conforme à la définition de schéma. Un jeu de données est une structure de stockage et de gestion pour une collecte de données, généralement sous la forme d’un tableau, qui contient un schéma (des colonnes) et des champs (des lignes).
+Pour stocker les données d’événement, vous devez créer un jeu de données conforme à la définition de schéma. Un jeu de données est une structure de stockage et de gestion pour une collecte de données, qui se présente généralement sous la forme d’un tableau comportant un schéma (colonnes) et des champs (lignes).
 
-1. Dans le navigateur, accédez au __Adobe Experience Platform__ page d’accueil du produit. Par exemple, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1. Dans le navigateur, accédez à la page d’accueil du produit __Adobe Experience Platform__. Par exemple, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
-1. Recherchez la variable __Jeux de données__ dans la section de navigation de gauche, puis cliquez sur l’icône __Création d’un jeu de données__ dans la section supérieure droite.
+1. Recherchez le menu __Jeux de données__ dans la section de navigation de gauche, puis cliquez sur le bouton __Créer un jeu de données__ dans la section supérieure droite.
 
-   ![Création de jeux de données AEP](../assets/aep-integration/AEP-Datasets-Create.png)
+   ![Créer des jeux de données AEP](../assets/aep-integration/AEP-Datasets-Create.png)
 
-1. Sur la nouvelle page, sélectionnez __Création d’un jeu de données à partir d’un schéma__ carte.
+1. Sur la nouvelle page, sélectionnez la vignette __Créer un jeu de données à partir d’un schéma__.
 
-   ![Option de schéma de création de jeux de données AEP](../assets/aep-integration/AEP-Datasets-Schema-Option.png)
+   ![Option Créer un jeu de données à partir d’un schéma AEP](../assets/aep-integration/AEP-Datasets-Schema-Option.png)
 
-- Sur la nouvelle page, __rechercher et sélectionner__ le schéma que vous avez créé à l’étape précédente, puis cliquez sur le bouton __Suivant__ bouton .
+- Sur la nouvelle page, __recherchez et sélectionnez__ le schéma que vous avez créé à l’étape précédente, puis cliquez sur le bouton __Suivant__.
 
-   ![AEP Créer des jeux de données Sélectionner un schéma](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+   ![Sélectionner un schéma pour créer des jeux de données AEP](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
-1. Nommez votre jeu de données à l’aide de la fonction __Configurer un jeu de données > Nom__ et cliquez sur le champ __Terminer__ bouton .
+1. Nommez votre jeu de données à l’aide du champ __Configurer le jeu de données > Nom__, puis cliquez sur le bouton __Terminer__.
 
-   ![Nom des jeux de données de création AEP](../assets/aep-integration/AEP-Datasets-Name.png)
+   ![Nom de jeux de données créés AEP](../assets/aep-integration/AEP-Datasets-Name.png)
 
 >[!TIP]
 >
->Voir [Présentation des jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) pour plus d’informations.
+>Consultez la [Présentation des jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=fr) pour plus d’informations.
 
 
 ### Créer un flux de données
 
-Pour créer un flux de données dans l’Experience Platform, procédez comme suit.
+Pour créer un flux de données dans Experience Platform, procédez comme suit.
 
-1. Dans le navigateur, accédez au __Adobe Experience Platform__ page d’accueil du produit. Par exemple, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
+1. Dans le navigateur, accédez à la page d’accueil du produit __Adobe Experience Platform__. Par exemple, <https://experience.adobe.com/#/@YOUR-ORG-NAME/sname:prod/platform/home>.
 
-1. Recherchez la variable __Datastreams__ dans la section de navigation de gauche, puis cliquez sur l’icône __Nouvelle structure de données__ dans la section supérieure droite.
+1. Recherchez le menu __Flux de données__ dans la section de navigation de gauche, puis cliquez sur le bouton __Nouveau flux de données__ dans la section supérieure droite.
 
-   ![AEP Créer des flux de données](../assets/aep-integration/AEP-Datastream-Create.png)
+   ![Créer des flux de données AEP](../assets/aep-integration/AEP-Datastream-Create.png)
 
-1. Nommez votre flux de données à l’aide de la fonction __Nom__ champ obligatoire. Sous , __Schéma d’événement__ , sélectionnez le schéma que vous venez de créer, puis cliquez sur __Enregistrer__.
+1. Nommez votre flux de données à l’aide du champ __Nom__ obligatoire. Sous le champ __Schéma d’événement__, sélectionnez le schéma que vous venez de créer, puis cliquez sur __Enregistrer__.
 
-   ![AEP Define Datastreams](../assets/aep-integration/AEP-Datastream-Define.png)
+   ![Définir des flux de données AEP](../assets/aep-integration/AEP-Datastream-Define.png)
 
-1. Ouvrez le Datastream que vous venez de créer, puis cliquez sur __Ajouter un service__.
+1. Ouvrez le flux de données que vous venez de créer, puis cliquez sur __Ajouter un service__.
 
-   ![Ajout de service aux flux de données AEP](../assets/aep-integration/AEP-Datastream-Add-Service.png)
+   ![Ajouter un service aux flux de données AEP](../assets/aep-integration/AEP-Datastream-Add-Service.png)
 
-1. Sous , __Service__ , sélectionnez le champ __Adobe Experience Platform__ . Sous __Jeu de données d’événement__ , sélectionnez le nom du jeu de données de l’étape précédente et cliquez sur __Enregistrer__.
+1. Sous le champ __Service__, sélectionnez l’option __Adobe Experience Platform__. Sous le champ __Jeu de données d’événement__, sélectionnez le nom du jeu de données de l’étape précédente et cliquez sur __Enregistrer__.
 
-   ![Ajout de détails sur les flux de données AEP](../assets/aep-integration/AEP-Datastream-Add-Service-Define.png)
+   ![Détails d’ajout de service aux flux de données AEP](../assets/aep-integration/AEP-Datastream-Add-Service-Define.png)
 
 >[!TIP]
 >
->Voir [Présentation du flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) pour plus d’informations.
+>Consultez la [Présentation des flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=fr) pour plus d’informations.
 
-## Ajout de la valeur du flux de données dans AEM configuration Commerce {#add-aep-values-to-aem}
+## Ajouter de la valeur du flux de données dans la configuration AEM Commerce {#add-aep-values-to-aem}
 
-Après avoir terminé la configuration de l’Experience Platform ci-dessus, vous devez avoir `datastreamId` dans le rail gauche des détails de la banque de données et `orgId` dans le coin supérieur droit du __Image de profil > Informations du compte > Informations utilisateur__ modale.
+Une fois que vous avez terminé la configuration d’Experience Platform présentée ci-dessus, `datastreamId` doit apparaître dans le rail de gauche des détails du flux de données et `orgId` dans le coin supérieur droit de la fenêtre modale __Photo de profil > Informations du compte > Informations utilisateur__.
 
-![Identifiant des flux de données AEP](../assets/aep-integration/AEP-Datastream-ID.png)
+![Identifiant de flux de données AEP](../assets/aep-integration/AEP-Datastream-ID.png)
 
-1. Dans le fichier AEM Commerce du projet `ui.frontend` , mettre à jour le module `config.js` et plus précisément, le fichier `eventsCollector > aep` propriétés de l’objet.
+1. Dans le module `ui.frontend` du projet AEM Commerce, mettez à jour le fichier `config.js` et, plus précisément, les propriétés de l’objet `eventsCollector > aep`.
 
-1. Créer et déployer le projet Commerce AEM mis à jour
-
-
-## Déclencheur `addToCart` événement et vérification de la collecte de données {#event-trigger-verify}
-
-Les étapes ci-dessus terminent la configuration d’AEM Commerce et d’Experience Platform. Vous pouvez désormais déclencher une `addToCart` et vérifier la collecte de données à l’aide du débogueur et du jeu de données Experience Platform __Mesures et graphiques__ bascule dans l’interface utilisateur du produit.
-
-Pour déclencher l’événement, vous pouvez utiliser AEM service de création ou de publication de votre configuration locale. Pour cet exemple, utilisez AEM auteur en vous connectant à votre compte.
-
-1. Sur la page Sites , sélectionnez la variable __My Demo StoreFront > us > en__ page et clic __Modifier__ dans la barre d’actions supérieure.
-
-1. Dans la barre d’actions supérieure, cliquez sur __Afficher comme publié(e)__, puis cliquez sur une catégorie préférée dans la navigation du storefront.
-
-1. Cliquez sur n’importe quelle carte de produit préférée dans la __Page de produit__, puis sélectionnez __couleur, taille__ pour activer la variable __Ajouter au panier__ bouton .
+1. Créez et déployez le projet AEM Commerce mis à jour.
 
 
-1. Ouvrez le __Débogueur Adobe Experience Platform__ dans le panneau d’extension du navigateur et sélectionnez __SDK Experience Platform Wed__ dans le rail de gauche.
+## Déclencher l’événement `addToCart` et vérifier la collecte de données {#event-trigger-verify}
 
-   ![Débogueur AEP](../assets/aep-integration/AEP-Debugger.png)
+Les étapes ci-dessus terminent la configuration d’AEM Commerce et d’Experience Platform. Vous pouvez désormais déclencher un événement `addToCart` et vérifier la collecte de données à l’aide du débogueur Experience Platform et du bouton __Mesures et graphiques__ correspondant au jeu de données dans l’interface utilisateur du produit.
+
+Pour déclencher l’événement, vous pouvez utiliser le service de création ou de publication d’AEM à partir de votre configuration locale. Pour cet exemple, utilisez le service de création d’AEM en vous connectant à votre compte.
+
+1. Sur la page Sites, sélectionnez la page __My Demo StoreFront > us > en__ et cliquez sur __Modifier__ dans la barre d’action supérieure.
+
+1. Dans la barre d’action supérieure, cliquez sur __Afficher comme publié__, puis cliquez sur n’importe quelle catégorie souhaitée dans la navigation du storefront.
+
+1. Cliquez sur n’importe quelle fiche produit souhaitée dans la __Page produit__, puis sélectionnez __couleur et taille__ pour activer le bouton __Ajouter au panier__.
 
 
-1. Revenez au __Page de produit__ et cliquez sur __Ajouter au panier__ bouton . Cela envoie les données à l’Experience Platform. Le __Débogueur Adobe Experience Platform__ l’extension affiche les détails de l’événement.
+1. Ouvrez l’extension __Adobe Experience Platform Debugger__ dans le panneau d’extensions du navigateur et sélectionnez le __SDK Web Experience Platform__ dans le rail de gauche.
 
-   ![Données d’événement de module complémentaire du débogueur AEP](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
+   ![AEP Debugger](../assets/aep-integration/AEP-Debugger.png)
 
 
+1. Revenez à la __Page produit__ et cliquez sur le bouton __Ajouter au panier__. Cela envoie les données à Experience Platform. L’extension __Adobe Experience Platform Debugger__ affiche les détails de l’événement.
 
-1. Dans l’interface utilisateur du produit Experience Platform, accédez au __Jeux de données > My Demo StoreFront__, sous __Activité du jeu de données__ . Si la variable __Mesures et graphiques__ est activé, les statistiques event-data s’affichent.
-
-   ![Statistiques sur les jeux de données Experience Platform](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
+   ![Données d’événement d’ajout au panier AEP Debugger](../assets/aep-integration/AEP-Debugger-AddToCart-EventData.png)
 
 
 
-## Détails de mise en oeuvre {#implementation-details}
+1. Dans l’interface utilisateur du produit Experience Platform, accédez à __Jeux de données > My Demo StoreFront__ sous l’onglet __Activité du jeu de données__. Si le bouton (bascule) __Mesures et graphiques__ est activé, les statistiques des données d’événement s’affichent.
 
-Le [Connecteur Experience Platform CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) repose sur la fonction [Connecteur Experience Platform pour Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), qui fait partie de la fonction [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) projet.
+   ![Statistiques des données du jeu de données Experience Platform](../assets/aep-integration/AEP-Dataset-AddToCart-EventData.png)
 
-Le projet PWA Studio vous permet de créer des vitrines de Progressive Web Application (PWA) alimentées par Adobe Commerce ou Magento Open Source. Le projet contient également une bibliothèque de composants appelée [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) pour ajouter une logique aux composants visuels. Le [Bibliothèque de pré-génération](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) fournit également les hooks React personnalisés utilisés par [Connecteur Experience Platform](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) pour une intégration transparente avec Experience Platform.
+
+
+## Détails d’implémentation {#implementation-details}
+
+Le [connecteur Experience Platform CIF](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) repose sur le [connecteur Experience Platform pour Adobe Commerce](https://marketplace.magento.com/magento-experience-platform-connector.html), qui fait partie du projet [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/).
+
+Le projet PWA Studio vous permet de créer des storefronts de Progressive Web Application (PWA) alimentés par Adobe Commerce ou Magento Open Source. Le projet contient également une bibliothèque de composants appelée [Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) pour ajouter une logique aux composants visuels. La [bibliothèque Peregrin](https://developer.adobe.com/commerce/pwa-studio/api/peregrine/) fournit également les crochets React personnalisés utilisés par le [connecteur Experience Platform](https://github.com/adobe/aem-core-cif-components/tree/master/extensions/experience-platform-connector) pour une intégration facile à Experience Platform.
 
 
 ## Événements pris en charge {#supported-events}
 
-À ce jour, les événements suivants sont pris en charge :
+À ce jour, les événements suivants sont pris en charge :
 
 __Événements XDM d’expérience :__
 
@@ -479,7 +479,7 @@ __Événements XDM d’expérience :__
 1. Requête de recherche envoyée (AEM)
 1. Réponse de recherche reçue (AEM)
 
-When [Composants de pré-génération](https://developer.adobe.com/commerce/pwa-studio/guides/packages/peregrine/) sont réutilisés dans le projet AEM Commerce :
+When [Composants de pré-génération](https://developer.adobe.com/commerce/pwa-studio/guides/packages/périodicité/) sont réutilisés dans le projet AEM Commerce :
 
 __Événements XDM d’expérience :__
 
@@ -499,9 +499,9 @@ __Evénements XDM de profil :__
 
 ## Ressources supplémentaires {#additional-resources}
 
-Pour plus d&#39;informations, consultez les ressources suivantes :
+Pour plus d’informations, consultez les ressources suivantes :
 
-- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
-- [Présentation du connecteur Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html)
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
+- [Présentation du connecteur Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=fr)
 - [Événements de connecteur Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/events.html)
-- [Présentation de Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+- [Présentation d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=fr)

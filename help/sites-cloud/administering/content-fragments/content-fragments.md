@@ -7,7 +7,7 @@ exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
 workflow-type: tm+mt
 source-wordcount: '2070'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -63,8 +63,8 @@ Pour vous aider à faire cela, vous pouvez prévisualiser l’[Arborescence de s
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
 
-* Canal physique; par exemple, bureau, mobile.
-* Forme de diffusion sur un canal physique ; par exemple, la &quot;page des détails du produit&quot;, la &quot;page de catégorie de produit&quot; pour ordinateur de bureau ou &quot;web mobile&quot;, &quot;application mobile&quot; pour mobile.
+* Canal physique (par exemple, bureau ou mobile).
+* Forme de diffusion dans un canal physique (par exemple, la « page de détails du produit », la « page de catégorie de produit » pour le bureau, ou le « web mobile » et « l’application mobile » pour le mobile).
 
 Cependant, vous ne voulez probablement pas utiliser exactement le même contenu pour tous les canaux et vous devez optimiser votre contenu en fonction des différents canaux.
 

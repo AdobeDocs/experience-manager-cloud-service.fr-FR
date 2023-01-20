@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
 workflow-type: tm+mt
 source-wordcount: '1375'
-ht-degree: 64%
+ht-degree: 75%
 
 ---
 
@@ -31,7 +31,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
 
-1. Consultez la liste de contrôle d’ingestion et assurez-vous que toutes les étapes ont été effectuées. Il s’agit des étapes nécessaires pour garantir la réussite de l’ingestion. Vous pourrez accéder à la variable **Suivant** étape uniquement si la liste de contrôle est terminée.
+1. Consultez la liste de contrôle d’ingestion et assurez-vous que toutes les étapes ont été effectuées. Ces étapes constituent un préalable indispensable à la réussite de l’ingestion. Vous devez d’abord terminer la liste de contrôle avant de pouvoir passer à l’étape **suivante**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -46,7 +46,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    >[!NOTE]
    >
-   >Si le niveau cible est `Author`, l’instance d’auteur sera arrêtée pendant la durée de l’ingestion et ne sera pas disponible pour les utilisateurs (par exemple, les auteurs ou toute personne effectuant la maintenance, etc.). Il s’agit de protéger le système et d’empêcher toute modification qui pourrait être perdue ou provoquer un conflit d’ingestion. Assurez-vous que votre équipe est au courant de ce fait. Notez également que l’environnement apparaîtra en veille pendant l’ingestion par l’auteur.
+   >Si le niveau cible est `Author`, l’instance de création sera arrêtée pendant la durée de l’ingestion et ne sera pas disponible pour les utilisateurs et utilisatrices (par exemple, les auteurs ou autrices ou toute personne effectuant la maintenance, etc.). Cela permet de protéger le système et d’empêcher toute modification qui pourrait être perdue ou entraîner un conflit d’ingestion. Assurez-vous d’en informer votre équipe. Notez également que l’environnement apparaîtra en veille pendant l’ingestion de l’instance de création.
 
    >[!NOTE]
    >
@@ -66,7 +66,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. Vous pouvez ensuite surveiller la phase d’ingestion en mode liste des Tâches d’ingestion. et utilisez le menu d’action de l’ingestion pour afficher le journal au fur et à mesure de l’ingestion.
+1. Vous pouvez ensuite surveiller la phase d’ingestion en mode liste des Tâches d’ingestion. Vous pouvez également utiliser le menu Action de l’ingestion pour consulter le journal consignant la progression de l’ingestion.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -157,4 +157,4 @@ Ce conflit doit être résolu manuellement. Une personne familière avec le cont
 
 ## Prochaines étapes {#whats-next}
 
-Une fois que vous avez terminé l’ingestion de contenu dans Target, vous pouvez afficher les journaux de chaque étape (extraction et ingestion) et rechercher les erreurs. Consultez la section [Affichage des journaux d’un jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=fr) pour en savoir plus.
+Une fois que vous avez terminé l’ingestion de contenu dans Target, vous pouvez consulter les journaux de chaque étape (extraction et ingestion) et rechercher les erreurs. Consultez la section [Affichage des journaux d’un jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=fr) pour en savoir plus.

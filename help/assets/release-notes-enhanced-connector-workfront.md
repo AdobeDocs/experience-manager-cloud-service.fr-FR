@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
 workflow-type: tm+mt
 source-wordcount: '948'
-ht-degree: 46%
+ht-degree: 86%
 
 ---
 
@@ -55,64 +55,64 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
 
 * Lorsque vous définissez une seule valeur pour un champ à plusieurs valeurs dans Workfront, la valeur du champ n’est pas mappée correctement à Experience Manager.
 
-* Experience Manager affiche la variable `SERVER_ERROR` sur le **[!UICONTROL Lier des fichiers et des dossiers externes]** lors de l’accès aux dossiers de ressources en raison d’autorisations non valides sur `/content/dam/collections`.
+* Experience Manager affiche `SERVER_ERROR` sur l’écran **[!UICONTROL Lier des fichiers et des dossiers externes]** lors de l’accès aux dossiers de ressources en raison d’autorisations non valides sur `/content/dam/collections`.
 
-* Activation de la variable **[!UICONTROL Publication de ressources sur Brand Portal]** sur la page de configuration du connecteur amélioré de Workfront, crée un événement incorrect. L’événement n’est pas supprimé, même après avoir désactivé l’option.
+* L’activation de l’option **[!UICONTROL Publier des ressources dans Brand Portal]** sur la page de configuration du connecteur amélioré de Workfront crée un événement incorrect. L’événement n’est pas supprimé, même une fois l’option désactivée.
 
    Pour résoudre le problème :
 
-   1. Effectuez la mise à niveau vers la version 1.9.5 du connecteur amélioré.
+   1. Effectuez la mise à niveau vers la version 1.9.5 du connecteur amélioré.
 
-   1. Désactivez le **[!UICONTROL Publication de ressources sur Brand Portal]** sous les paramètres avancés.
+   1. Désactivez l’option **[!UICONTROL Publier des ressources dans Brand Portal]** sous les paramètres avancés.
 
-   1. Activez la variable **[!UICONTROL Publication de ressources sur Brand Portal]** .
+   1. Activez l’option **[!UICONTROL Publier des ressources dans Brand Portal]**.
 
-   1. Supprimez les mauvais abonnements aux événements.
+   1. Supprimez les abonnements aux événements incorrects.
 
-      1. Exécutez des appels de GET pour `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`
+      1. Effectuez des appels GET vers `/attask/eventsubscription/api/v1/subscriptions?page=<page-number>`.
 
          Exécutez un appel API pour chaque numéro de page.
 
-      1. Recherchez le texte suivant pour rechercher des abonnements à des événements qui correspondent à l’URL suivante et ne comportent pas de `objId`:
+      1. Recherchez le texte suivant pour trouver les abonnements aux événements qui correspondent à l’URL suivante et ne comportent pas de `objId` :
 
          ```
               "objId": "",
              "url": "<your-aem-domain>/bin/workfront-tools/events/linkedfolderprojectupdate<your-aem-domain>/
          ```
 
-         Assurez-vous que le contenu entre `"objId": "",` et `"url"` correspond à la réponse JSON. Pour ce faire, il est recommandé de copier depuis n’importe quel abonnement à un événement comportant une `objId` puis supprimez le nombre.
+         Assurez-vous que le contenu entre `"objId": "",` et `"url"` correspond à la réponse JSON. Pour ce faire, il est recommandé d’effectuer une copie depuis n’importe quel abonnement à un événement comportant un `objId` puis de supprimer le nombre.
 
-      1. Notez l’ID d’abonnement de l’événement.
+      1. Notez l’ID d’abonnement à l’événement.
 
-      1. Supprimez le mauvais abonnement à un événement. Lancer un appel API Delete à `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`
+      1. Supprimez l’abonnement à un événement incorrect. Effectuez un appel API de suppression à `<your-aem-domain>/attask/eventsubscription/api/v1/subscriptions/<event-subscription-ID-from-previous-step>`.
 
-         `200` car le code de réponse signifie la suppression réussie des abonnements d’événements incorrects.
+         Le code de réponse `200` indique la suppression réussie des abonnements à des événements incorrects.
    >[!NOTE]
    >
-   >Si vous avez déjà supprimé les mauvais abonnements aux événements avant d’exécuter les étapes mentionnées dans cette procédure, vous pouvez ignorer la dernière étape de cette procédure.
+   >Si vous avez déjà supprimé les abonnements aux événements incorrects avant d’exécuter les étapes mentionnées dans cette procédure, vous pouvez ignorer la dernière étape.
 
-### Version d’octobre 2022 {#october-2022-release}
+### Version d’octobre 2022 {#october-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] La version 1.9.4, publiée le 7 octobre, comprend les mises à jour suivantes :
+La version 1.9.4 de [!DNL Workfront for Experience Manager enhanced connector], publiée le 7 octobre, comprend les mises à jour suivantes :
 
-* Impossible d’afficher l’onglet Abonnements à un événement sur la page de configuration du connecteur améliorée en raison d’un grand nombre d’événements.
+* Impossible d’afficher l’onglet Abonnements aux événements sur la page de configuration du connecteur améliorée en raison d’un grand nombre d’événements.
 
 * Workfront ne parvient pas à récupérer la liste des dossiers existants dans un projet, ce qui entraîne la création de dossiers en double.
 
-### Version de septembre 2022 {#september-2022-release}
+### Version de septembre 2022 {#september-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] La version 1.9.3, publiée le 16 septembre, comprend les mises à jour suivantes :
+La version 1.9.3 de [!DNL Workfront for Experience Manager enhanced connector], publiée le 16 septembre, comprend les mises à jour suivantes :
 
-* Impossible de charger un fichier de plus de 8 Go.
-* Problèmes lors de la publication automatique de ressources envoyées de Workfront à AEM.
+* Impossible de charger un fichier de plus de 8 Go.
+* Problèmes lors de la publication automatique de ressources envoyées depuis Workfront vers AEM.
 * Le champ Chemin d’accès racine n’est pas disponible pour le champ Balises lors de la modification d’un formulaire de schéma de métadonnées par défaut.
-* Problèmes lors de l’ajout de nouvelles versions dans Workfront à l’aide de processus AEM.
+* Problèmes lors de l’ajout de nouvelles versions dans Workfront à l’aide de workflows AEM.
 * Lorsque vous exécutez une recherche AEM de ressources disponibles dans Workfront, AEM affiche un message d’erreur.
-* Lorsque vous créez un workflow d’AEM pour la création d’une tâche à partir d’une ressource et que vous ne définissez pas de nom de tâche parent, la tâche n’est pas créée dans Workfront.
+* Lorsque vous créez un workflow AEM pour la création d’une tâche à partir d’une ressource et que vous ne définissez pas de nom de tâche parent, la tâche n’est pas créée dans Workfront.
 
-### Version d’août 2022 {#august-2022-release}
+### Version d’août 2022 {#august-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] La version 1.9.2, publiée le 3 août, comprend les mises à jour suivantes :
+La version 1.9.2 de [!DNL Workfront for Experience Manager enhanced connector], publiée le 3 août, comprend les mises à jour suivantes :
 
 * L’étape de workflow **[!UICONTROL Charger le document]** ne parvient pas à joindre un document à Workfront.
 

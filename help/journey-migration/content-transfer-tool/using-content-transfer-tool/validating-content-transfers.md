@@ -5,7 +5,7 @@ exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
 source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 94%
 
 ## Prise en main {#getting-started}
 
-Les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Cette fonction de validation fonctionne en comparant un résumé des chemins d’accès de tous les noeuds impliqués pendant l’extraction, avec un résumé des chemins d’accès de tous les noeuds impliqués pendant l’ingestion. Si des chemins de nœud inclus dans le résumé d’extraction sont absents du résumé d’ingestion, la validation est considérée comme ayant échoué et une validation manuelle supplémentaire peut être nécessaire.
+Les utilisateurs peuvent déterminer de manière fiable si tout le contenu extrait par l’outil de transfert de contenu a bien été ingéré dans l’instance cible. Cette fonctionnalité de validation fonctionne en comparant un résumé des chemins d’accès de tous les nœuds impliqués lors de l’extraction avec un résumé des chemins d’accès de tous les nœuds impliqués lors de l’ingestion. Si des chemins de nœud inclus dans le résumé d’extraction sont absents du résumé d’ingestion, la validation est considérée comme ayant échoué et une validation manuelle supplémentaire peut être nécessaire.
 
 >[!INFO]
 >
@@ -136,7 +136,7 @@ En plus d’être inclus dans le journal d’ingestion, le rapport de validation
 
 ### Échec de la validation. Et maintenant ?  {#validation-fail}
 
-La première étape consiste à déterminer si l’ingestion a vraiment échoué ou si le contenu extrait est déjà présent dans l’environnement cible. Cela peut se produire si une ingestion est répétée avec la variable **Effacer le contenu existant sur l’instance cloud avant l’ingestion** Option désactivée.
+La première étape consiste à déterminer si l’ingestion a vraiment échoué ou si le contenu extrait est déjà présent dans l’environnement cible. Cela peut se produire si une ingestion est répétée avec l’option **Effacer le contenu existant sur l’instance Cloud avant l’ingestion** désactivée.
 
 Pour vérifier, choisissez un chemin dans le rapport de validation et vérifiez s’il est présent dans l’environnement cible. S’il s’agit d’un environnement de publication, vous pouvez vous limiter à vérifier directement les pages et les ressources. Si vous avez besoin d’aide pour cette étape, veuillez ouvrir un ticket auprès de l’assistance clientèle.
 

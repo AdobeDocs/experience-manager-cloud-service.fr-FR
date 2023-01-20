@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
 source-wordcount: '1021'
-ht-degree: 86%
+ht-degree: 88%
 
 ---
 
@@ -34,7 +34,7 @@ Les cas d’utilisation les plus courants des variables d’environnement inclue
 
 >[!NOTE]
 >
->Vous devez être membre du [**Responsable de déploiement** rôle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) afin d’ajouter ou de modifier des variables d’environnement.
+>Vous devez être membre du rôle [**Responsable de déploiement**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) afin d’ajouter ou de modifier des variables d’environnement.
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celui que vous souhaitez gérer.

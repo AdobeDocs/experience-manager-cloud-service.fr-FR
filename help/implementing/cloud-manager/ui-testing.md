@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 0ea7255f4dfc5c9f2e99cb144ef58152a2565822
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -195,11 +195,11 @@ L’image Docker doit générer des rapports de test au format XML JUnit et les 
 
 Si l’image Docker est implémentée avec d’autres langages de programmation ou des exécuteurs de tests, consultez la documentation des outils choisis pour savoir comment générer des rapports XML JUnit.
 
-### Capture d’écran et vidéos {#capture-screenshots}
+### Captures d’écran et vidéos {#capture-screenshots}
 
-L’image Docker peut générer une sortie de test supplémentaire (par exemple, des captures d’écran, des vidéos) et les enregistrer dans le chemin spécifié par la variable d’environnement. `REPORTS_PATH`. Tout fichier situé sous le `REPORTS_PATH` sont inclus dans l’archive des résultats du test.
+L’image Docker peut générer une sortie de test supplémentaire (par exemple, des captures d’écran ou des vidéos) et les enregistrer dans le chemin spécifié par la variable d’environnement `REPORTS_PATH`. Tout fichier situé sous la variable d’environnement `REPORTS_PATH` est inclus dans l’archive des résultats du test.
 
-Si une archive de résultats de test a été créée lors de l’exécution d’un test de l’interface utilisateur, le fichier journal de test contient à la fin une référence à l’emplacement de l’archive de résultats de test.
+Si une archive de résultats de test a été créée lors de l’exécution du test de l’interface utilisateur, le fichier journal de test contient à la fin une référence à l’emplacement de l’archive des résultats du test.
 
 ```
 [...]

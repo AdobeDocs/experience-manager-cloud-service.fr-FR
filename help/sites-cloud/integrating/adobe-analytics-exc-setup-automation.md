@@ -1,23 +1,23 @@
 ---
 title: Intégration d’Adobe Analytics à l’automatisation de la configuration des Experience Cloud
-description: L’automatisation de la configuration des Experience Cloud offre un moyen simple et automatisé d’intégrer et d’instrumenter Experience Manager Sites avec les balises Experience Platform et Adobe Analytics à l’aide d’une interface d’assistant de l’interface utilisateur simple. Découvrez comment utiliser la configuration automatisée avec votre propre site.
+description: L’automatisation de la configuration d’Experience Cloud offre un moyen simple et automatisé d’intégrer et d’utiliser Experience Manager Sites avec les balises Experience Platform et Adobe Analytics à l’aide d’une interface simple d’assistant de l’interface utilisateur. Découvrez comment utiliser la configuration automatisée avec votre propre site.
 feature: Administering
 role: Admin
 exl-id: 351ead2c-7b0d-4bd9-a020-47516948d467
 source-git-commit: f91885a7d15c0ff927c6e10f65852f787cf26eb3
 workflow-type: tm+mt
 source-wordcount: '756'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Intégration d’Adobe Analytics à l’automatisation de la configuration des Experience Cloud {#integrate-adobe-analytics-automation-setup}
 
-L’automatisation de la configuration des Experience Cloud offre un moyen simple et automatisé d’intégrer et d’instrumenter Experience Manager Sites avec les balises Experience Platform et Adobe Analytics à l’aide d’une interface d’assistant de l’interface utilisateur simple.
+L’automatisation de la configuration d’Experience Cloud offre un moyen simple et automatisé d’intégrer et d’utiliser Experience Manager Sites avec les balises Experience Platform et Adobe Analytics à l’aide d’une interface simple d’assistant de l’interface utilisateur.
 
 Il n’a jamais été aussi simple d’intégrer Adobe Analytics à AEM Sites. Grâce à l’automatisation de la configuration d’Experience Cloud, la configuration, l’intégration et l’instrumentation de votre site pour capturer les analyses de performance afin de comprendre à quel point vos clients s’engagent et convertissent sont prises en charge en quelques clics.
 
-Cette vidéo explore la manière dont un site AEM est intégré à Experience Platform Tags and Analytics à l’aide de l’automatisation de la configuration de l’Experience Cloud :
+Cette vidéo explore la manière dont un site AEM est intégré aux balises Experience Platform et à Analytics à l’aide de l’automatisation de la configuration d’Experience Cloud :
 
 >[!VIDEO](https://video.tv.adobe.com/v/345372/?quality=12)
 
@@ -27,19 +27,19 @@ La configuration de l’automatisation est conçue pour fonctionner d’emblée 
 
 ## Prérequis {#prerequisites}
 
-Avant d’utiliser cette fonctionnalité, il est important de suivre ces instructions pour vous assurer que les services prérequis ont été correctement configurés dans votre environnement :
+Avant d’utiliser cette fonctionnalité, il est recommandé de suivre les instructions ci-dessous pour vous assurer que les services prérequis ont été correctement configurés dans votre environnement :
 
-1. Connectez-vous à Adobe Admin Console (https://adminconsole.adobe.com/).
+1. Connectez-vous à Adobe Admin Console (https://adminconsole.adobe.com/).
 1. Assurez-vous que l’identifiant de l’organisation IMS approprié est sélectionné dans le coin supérieur droit.
-1. Cliquez sur l’option de navigation Produits .
-1. Vérifiez que &quot;Adobe Experience Manager as a Cloud Service&quot; a été configuré pour l’organisation IMS.
-1. Vérifiez que &quot;Adobe Analytics&quot; a été configuré pour l’organisation IMS.
+1. Cliquez sur l’option Navigation dans les produits.
+1. Vérifiez qu’« Adobe Experience Manager as a Cloud Service » a été configuré pour l’organisation IMS.
+1. Vérifiez qu’« Adobe Analytics » a été configuré pour l’organisation IMS.
 1. Accédez à Cloud Manager (https://experience.adobe.com/cloud-manager).
 1. Sélectionnez le programme approprié.
-1. Vérifiez que l’environnement se trouve sur la dernière version de Cloud Service (dans le cas contraire, sélectionnez Mettre à jour dans les options de menu).
-1. Exécutez un pipeline de pile complète dans Cloud Manager.
+1. Vérifiez que l’environnement dispose de la dernière version de Cloud Service (si ce n’est pas le cas, sélectionnez Mettre à jour dans les options de menu).
+1. Exécutez un pipeline de pile pleine dans Cloud Manager.
 
-L’environnement doit maintenant être prêt pour l’automatisation de la configuration des Experience Cloud.
+L’environnement doit maintenant être prêt pour l’automatisation de la configuration d’Experience Cloud.
 
 ## Configuration
 
@@ -57,7 +57,7 @@ L’environnement doit maintenant être prêt pour l’automatisation de la conf
    La configuration de l’automatisation se produit de manière asynchrone. La **Vérification de l’état d’intégration** affiche l’état actuel de l’intégration.
 
    * **En cours** - indique que la tâche est en cours d’exécution.
-   * **Intégration terminée** : indique que la tâche a terminé l’intégration d’Analytics et de Balises, la configuration des extensions Balises et des règles Balises et la création d’une suite de rapports dans Adobe Analytics.
+   * **Intégration terminée** : indique que la tâche a terminé l’intégration d’Analytics et des balises, la configuration des extensions de balises et des règles de balises, ainsi que la création d’une suite de rapports dans Adobe Analytics.
    * **Échec** : indique que la tâche automatisée n’a pas pu se terminer correctement. Vérifiez les fichiers journaux de cette tâche en cliquant sur le lien Journaux.
 
 ## Validation de la configuration AEM
@@ -66,7 +66,7 @@ Une fois l’automatisation terminée, vérifiez que votre site déclenche déso
 
 1. Ouvrez une page de votre site à l’aide de l’**éditeur Sites**.
 1. Utilisez l’option **Afficher comme publié(e)** pour charger une version publiée de la page.
-1. Utilisez les outils de développement du navigateur pour examiner le trafic réseau et que **Balises** et `AppMeasurement.js` Les fichiers sont maintenant chargés.
+1. Utilisez les outils de développement du navigateur pour inspecter le trafic réseau et vérifier que les **balises** et les fichiers `AppMeasurement.js` sont maintenant chargés.
 1. Inspectez la console du navigateur pour voir que les événements au niveau de la page et du composant sont déclenchés et collectés par la couche de données client Adobe.
 
 ## Validation de la configuration d’Analytics

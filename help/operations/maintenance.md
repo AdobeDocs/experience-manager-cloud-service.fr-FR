@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: f1d1009db31585ff82c02080a6ab7ea7ca5bf66b
 workflow-type: tm+mt
 source-wordcount: '1068'
-ht-degree: 75%
+ht-degree: 95%
 
 ---
 
@@ -44,7 +44,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge de version</td>
     <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant le 1er mars 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée, auquel moment il peut également la configurer avec des valeurs personnalisées.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->La purge sera activée par défaut pour les nouveaux environnements (ceux créés à partir du 1er mars 2023) avec les valeurs ci-dessous, et les clients pourront effectuer une configuration avec des valeurs personnalisées.
+    <td>Pour les environnements existants (ceux créés avant le 1er mars 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée ; à ce moment-là il peut également la configurer avec des valeurs personnalisées.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->La purge sera activée par défaut pour les nouveaux environnements (ceux créés à partir du 1er mars 2023) avec les valeurs ci-dessous, et les clients pourront effectuer une configuration avec des valeurs personnalisées.
      <ol>
        <li>Les versions de plus de 30 jours sont supprimées</li>
        <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
@@ -56,7 +56,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant le 1er mars 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée, auquel moment il peut également la configurer avec des valeurs personnalisées.<br><br> <!-- See above for the two line breaks -->La purge des nouveaux environnements (créés à partir du 1er mars 2023) sera activée par défaut sous la variable <code>/content</code> du référentiel, selon le comportement suivant :
+    <td>Pour les environnements existants (ceux créés avant le 1er mars 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée ; à ce moment-là il peut également la configurer avec des valeurs personnalisées.<br><br> <!-- See above for the two line breaks -->La purge des nouveaux environnements (ceux créés à partir du 1er mars 2023) sera activée par défaut sous le nœud <code>/content</code> du référentiel, selon le comportement suivant :
      <ol>
        <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
        <li>Pour le contrôle du DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
@@ -76,7 +76,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <td>Client</td>
     <td>
     <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>.</p>
-    <p>Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. Activez la tâche de maintenance en ajoutant un autre noeud sous le noeud ci-dessus. Nommez-le <code>granite_TaskPurgeTask</code>, avec attribut <code>sling:resourceType</code> défini sur <code>granite/operations/components/maintenance/task</code> et attribut <code>granite.maintenance.name</code> défini sur <code>TaskPurge</code>. Configurez les propriétés OSGI. Voir <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> pour la liste des propriétés.</p>
+    <p>Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus. Nommez-le <code>granite_TaskPurgeTask</code>, avec l’attribut <code>sling:resourceType</code> défini sur <code>granite/operations/components/maintenance/task</code> et l’attribut <code>granite.maintenance.name</code> défini sur <code>TaskPurge</code>. Configurez les propriétés OSGI. Voir <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> pour la liste des propriétés.</p>
   </td>
   </tr>
     <tr>
@@ -124,7 +124,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <p><strong>windowSchedule=weekly</strong> (cette valeur ne doit pas être modifiée)</p>
     <p><strong>windowStartTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s’exécuter.</p>
     <p><strong>windowEndTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
-    <p><strong>windowScheduleWeekdays= tableau de 2 valeurs comprises entre 1 et 7 (par exemple, [5,5])</strong> La première valeur du tableau correspond au jour de début planifié de la tâche, tandis que la seconde correspond au jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
+    <p><strong>windowScheduleWeekdays= tableau de 2 valeurs de 1 à 7 (ex. : [5,5])</strong> La première valeur du tableau désigne le jour de début planifié du traitement et la seconde le jour de fin où le traitement doit être arrêté. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
     </td>
   </tr>
   <tr>
@@ -135,7 +135,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <p><strong>windowSchedule=daily</strong> (cette valeur ne doit pas être modifiée)</p>
     <p><strong>windowStartTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent commencer à s’exécuter.</p>
     <p><strong>windowEndTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
-    <p><strong>windowScheduleWeekdays=Tableau de 2 valeurs comprises entre 1 et 7 (par exemple, [5,5])</strong> La première valeur du tableau correspond au jour de début planifié de la tâche, tandis que la seconde correspond au jour de fin où la tâche serait arrêtée. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
+    <p><strong>windowScheduleWeekdays= tableau de 2 valeurs de 1 à 7 (ex. : [5,5])</strong> La première valeur du tableau désigne le jour de début planifié du traitement et la seconde le jour de fin où le traitement doit être arrêté. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. En l’absence de valeur, les tâches sont planifiées chaque jour, comme régi par le paramètre windowScheduleWeekdays tous les mois.</p>
     </td> 
     </tr>

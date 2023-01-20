@@ -5,7 +5,7 @@ exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 94%
+ht-degree: 98%
 
 ---
 
@@ -90,7 +90,7 @@ Les combinaisons fournisseur/version actuellement disponibles sont les suivantes
 | `sun` | `8` |
 | `sun` | `11` |
 
-Ce tableau fait référence aux numéros de version des produits. Les numéros de build Java ou les chemins d’installation peuvent refléter les anciennes conventions de version Java telles que 1.8 pour Java 8.
+Ce tableau fait référence aux numéros de version des produits. Les numéros de version Java ou les chemins d’installation peuvent refléter les anciennes conventions de version Java, comme 1.8 pour Java 8.
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ Certaines versions nécessitent d’autres packages système pour fonctionner en
         </profile>
 ```
 
-Cette même technique peut être utilisée pour installer des modules spécifiques à une langue, par exemple, en utilisant `gem` pour RubyGems ou `pip` pour les packages Python.
+Cette même technique peut être utilisée pour installer des packages spécifiques à la langue, par exemple utiliser `gem` pour les packages RubyGems ou `pip` pour les packages Python.
 
 >[!NOTE]
 >

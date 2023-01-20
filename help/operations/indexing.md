@@ -5,7 +5,7 @@ exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
 source-git-commit: 6fd5f8e7a9699f60457e232bb3cfa011f34880e9
 workflow-type: tm+mt
 source-wordcount: '2498'
-ht-degree: 88%
+ht-degree: 96%
 
 ---
 
@@ -49,7 +49,7 @@ Une définition d’index peut être :
 
 1. Index prêt à l’emploi. Exemple : `/oak:index/cqPageLucene-2`.
 1. Personnalisation d’un index prêt à l’emploi. Ces personnalisations sont définies par le client. Exemple : `/oak:index/cqPageLucene-2-custom-1`.
-1. Index entièrement personnalisé. Exemple : `/oak:index/acme.product-1-custom-2`. Pour éviter les collisions de noms, nous exigeons que les index entièrement personnalisés comportent un préfixe, par exemple : `acme.`
+1. Index entièrement personnalisé. Exemple : `/oak:index/acme.product-1-custom-2`. Pour éviter les collisions de noms, il est nécessaire que les index entièrement personnalisés comportent un préfixe, par exemple, `acme.`.
 
 Notez que la personnalisation d’un index prêt à l’emploi, ainsi que les index entièrement personnalisés, doivent contenir `-custom-`. Seuls les index entièrement personnalisés doivent commencer par un préfixe.
 
@@ -73,7 +73,7 @@ The package from the above sample is built as `com.adobe.granite:new-index-conte
 
 >[!NOTE]
 >
->La propriété suivante doit être définie pour tout module de contenu contenant des définitions d’index dans le fichier de propriétés du module de contenu, situé à l’emplacement `/META-INF/vault/properties.xml` :
+>La propriété suivante doit être définie pour tout module de contenu contenant des définitions d’index dans le fichier de propriétés du package de contenu, situé à l’emplacement `/META-INF/vault/properties.xml` :
 >
 >`noIntermediateSaves=true`
 
@@ -83,7 +83,7 @@ Les définitions d’index sont désormais marquées comme étant personnalisée
 
 * La définition d’index elle-même (par exemple, `/oak:index/ntBaseLucene-custom-1`)
 
-Pour déployer un index personnalisé, la définition d’index (`/oak:index/definitionname`) doit être diffusée via `ui.apps`, à l’aide du processus de déploiement de Cloud Manager et via Git. Dans le filtre FileVault, par exemple : `ui.apps/src/main/content/META-INF/vault/filter.xml`, répertoriez chaque index personnalisé et personnalisé individuellement, par exemple : `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La définition d’index personnalisée elle-même sera alors stockée dans le fichier `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, comme suit :
+Pour déployer un index personnalisé, la définition d’index (`/oak:index/definitionname`) doit être diffusée via `ui.apps`, à l’aide du processus de déploiement de Cloud Manager et via Git. Dans le filtre FileVault, par exemple, `ui.apps/src/main/content/META-INF/vault/filter.xml`, répertoriez individuellement chaque index personnalisé, par exemple, `<filter root="/oak:index/damAssetLucene-7-custom-1"/>`. La définition d’index personnalisée elle-même sera alors stockée dans le fichier `ui.apps/src/main/content/jcr_root/_oak_index/damAssetLucene-7-custom-1/.content.xml`, comme suit :
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -272,11 +272,11 @@ Une fois qu’Adobe a modifié un index prêt à l’emploi tel que « damAsset
 
 ### Limites actuelles {#current-limitations}
 
-Actuellement, la gestion des index n’est prise en charge que pour les index de type `lucene`, avec `compatVersion` défini sur `2`. En interne, d’autres index peuvent être configurés et utilisés pour les requêtes, par exemple les index Elasticsearch. Requêtes écrites sur la propriété `damAssetLucene` peut, sur AEM as a Cloud Service, être exécuté par rapport à une version Elasticsearch de cet index. Cette différence est invisible pour l’utilisateur final de l’application, mais certains outils tels que le `explain` signale un index différent. Pour connaître les différences entre les index Lucene et Elasticsearch, voir [la documentation de l’Elasticsearch dans Apache Jackrabbit Oak ;](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Les clients ne peuvent pas et n’ont pas besoin de configurer directement les index Elasticsearch.
+Actuellement, la gestion des index n’est prise en charge que pour les index de type `lucene`, avec la `compatVersion` définie sur `2`. En interne, d’autres index peuvent être configurés et utilisés pour les requêtes, par exemple les index Elasticsearch. Les requêtes écrites sur l’index `damAssetLucene` peuvent être exécutées sur une version Elasticsearch de cet index dans AEM as a Cloud Service. Cette différence n’est pas visible par l’utilisateur ou l’utilisatrice final(e) de l’application, mais certains outils tels que la fonctionnalité `explain` signalent un index différent. Pour connaître les différences entre les index Lucene et Elasticsearch, consultez [la documentation d’Elasticsearch dans Apache Jackrabbit Oak](https://jackrabbit.apache.org/oak/docs/query/elastic.html). Les index Elasticsearch ne peuvent pas et n’ont pas besoin d’être configurés directement par les client(e)s.
 
 Seuls les analyseurs intégrés sont pris en charge (c’est-à-dire ceux fournis avec le produit). Les analyseurs personnalisés ne sont pas pris en charge.
 
-Pour optimiser les performances opérationnelles, les index ne doivent pas être trop volumineux. La taille totale de tous les index peut servir de guide : Si cela augmente de plus de 100 % après l’ajout d’index personnalisés et si les index standard ont été ajustés sur un environnement de développement, les définitions d’index personnalisées doivent être ajustées. AEM as a Cloud Service peut empêcher le déploiement d’index qui auraient un impact négatif sur la stabilité et les performances du système.
+Pour de meilleures performances opérationnelles, les index ne doivent pas être trop volumineux. La taille totale de tous les index peut être utilisée comme indice : si elle augmente de plus de 100 % après l’ajout d’index personnalisés et l’ajustement des index standards sur un environnement de développement, les définitions des index personnalisés doivent être ajustées. AEM as a Cloud Service peut empêcher le déploiement d’index qui auraient un impact négatif sur la stabilité et les performances du système.
 
 ### Ajout d’un index {#adding-an-index}
 

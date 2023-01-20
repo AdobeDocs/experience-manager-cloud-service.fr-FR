@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 5877f3c84ab6303520dd4697144e9b18d717b74f
 workflow-type: tm+mt
 source-wordcount: '3837'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -287,7 +287,7 @@ ht-degree: 97%
          + [Structuration de la gestion multisite du contenu ciblé](/help/sites-cloud/authoring/personalization/multisite-structure.md)
          + [Gestion des activités](/help/sites-cloud/authoring/personalization/activities.md)
          + [Gestion des audiences](/help/sites-cloud/authoring/personalization/audiences.md)
-         + [Création et gestion d’offres (Console d’offres)](/help/sites-cloud/authoring/personalization/offers.md)
+         + [Création et gestion d’offres (Console Offres)](/help/sites-cloud/authoring/personalization/offers.md)
          + [Compréhension de la segmentation](/help/sites-cloud/authoring/personalization/segmentation.md)
          + [Configuration de la segmentation avec ContextHub](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
          + [Enregistrement, connexion et profil utilisateur](/help/sites-cloud/authoring/personalization/user-and-group-sync-for-publish-tier.md)
@@ -355,7 +355,7 @@ ht-degree: 97%
       + [Intégration à Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Intégration à Adobe Analytics  Configuration automatisée](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Analytics](/help/sites-cloud/integrating/integration-adobe-analytics-ims.md)
-      + [Intégration à Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
+      + [Intégration à Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
       + [Exporter des fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
@@ -415,7 +415,7 @@ ht-degree: 97%
       + [Métadonnées XMP](/help/assets/xmp-metadata.md)
       + [Fonctionnalités de MediaLibrary](/help/assets/medialibrary.md)
       + [Importation et exportation des métadonnées des ressources](/help/assets/metadata-import-export.md)
-      + [Configuration des restrictions de chargement des ressources](/help/assets/configure-asset-upload-restrictions.md)
+      + [Configuration des restrictions de téléchargement des ressources](/help/assets/configure-asset-upload-restrictions.md)
    + Partage et distribution de ressources {#brand-portal}
       + [Configuration d’ [!DNL Assets] avec [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [Publication de ressources sur [!DNL Brand Portal]](/help/assets/publish-to-brand-portal.md)
@@ -512,7 +512,7 @@ ht-degree: 97%
       + [Vérification et correction des formulaires convertis](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=fr#welcome-to-review-and-correct-editor)
    + Création et publication d’un formulaire adaptatif {#create-an-adaptive-form}
       + Avant de commencer {#before-you-start}
-         + [Présentation de la création d’un Forms adaptatif](/help/forms/introduction-forms-authoring.md)
+         + [Présentation de la création de formulaires adaptatifs](/help/forms/introduction-forms-authoring.md)
          + [Création d’un modèle](/help/forms/template-editor.md)
          + [Création d’un thème](/help/forms/themes.md)
          + [Connexion de vos sources de données à Cloud Service](/help/forms/data-integration.md)
@@ -549,7 +549,7 @@ ht-degree: 97%
       + Amélioration de l’accessibilité d’un formulaire adaptatif {#accessible-adaptive-forms}
          + [Création d’un formulaire adaptatif accessible](/help/forms/creating-accessible-adaptive-forms.md)
       + [Configurer le Portail Formulaires](/help/forms/configure-forms-portal.md)
-   + Intégrer {#integrate}
+   + Intégration {#integrate}
       + Intégration d’un formulaire à une ou plusieurs sources de données {#use-form-data-model}
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
          + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
@@ -563,7 +563,7 @@ ht-degree: 97%
       + [Intégration à Sites](https://github.com/adobe/aem-core-forms-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/fd/components/aemform/v1/aemform)
       + [Intégration à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
       + [Intégration d’un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-      + [Incorporation de Forms adaptatif dans AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
+      + [Incorporation de formulaires adaptatifs dans d’AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
    + Création et utilisation des processus {#create-form-centric-workflows}
       + [Utilisation d’étapes basées sur l’utilisation de Forms dans une référence des étapes du workflow](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilisation de variables dans un processus orienté Forms](/help/forms/variable-in-aem-workflows.md)
@@ -640,7 +640,7 @@ ht-degree: 97%
          + [Recommandations de produits](/help/commerce-cloud/authoring/product-recommendations.md)
       + Administration {#administering}
          + [Configuration multi-magasin](/help/commerce-cloud/configuring/multi-store-setup.md)
-         + [Configuration de plusieurs systèmes de commerce](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
+         + [Configuration de plusieurs systèmes commerciaux](/help/commerce-cloud/configuring/multiple-commerce-systems-setup.md)
          + [Configuration des URL pour l’optimisation du moteur de recherche](/help/commerce-cloud/configuring/advanced-url-configuration.md)
          + [Options de mise en cache](/help/commerce-cloud/configuring/caching.md)
          + [En-têtes HTTP personnalisés](/help/commerce-cloud/configuring/custom-http-headers.md)
@@ -655,7 +655,7 @@ ht-degree: 97%
 + Découplé {#headless}
    + [Qu’est-ce qu’un CMS Headless ?](/help/headless/what-is-headless.md)
    + [Présentation d’AEM découplé](/help/headless/introduction.md)
-   + [Portail des développeurs (ressources supplémentaires)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+   + [Portail des développeurs (ressources supplémentaires)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
    + Configuration {#setup}
       + [Présentation](/help/headless/setup/introduction.md)
       + [Configuration](/help/headless/setup/create-configuration.md)
@@ -703,7 +703,7 @@ ht-degree: 97%
          + [Comment assembler l’ensemble](/help/journey-headless/developer/put-it-all-together.md)
          + [Comment mettre en ligne votre application découplée](/help/journey-headless/developer/go-live.md)
          + [Facultatif – Comment créer des applications sur une seule page (SPA) avec AEM](/help/journey-headless/developer/create-spa.md)
-         + [Portail des développeurs (ressources supplémentaires)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+         + [Portail des développeurs (ressources supplémentaires)](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=fr)
       + Parcours d’architecture de contenu découplé {#architect}
          + [Aperçu du parcours d’architecture de contenu découplé AEM](/help/journey-headless/architect/overview.md)
          + [Modélisation de contenu pour le découplage avec AEM – Introduction](/help/journey-headless/architect/introduction.md)
@@ -886,7 +886,7 @@ ht-degree: 97%
       + [Extension des fragments d’expérience](/help/implementing/developing/extending/experience-fragments.md)
       + [Personnalisation et extensions de fragments de contenu](/help/implementing/developing/extending/content-fragments-customizing.md)
       + [Fragments de contenu – Configuration des composants pour le rendu](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
-      + [Personnalisation de la console de fragments de contenu](/help/implementing/developing/extending/content-fragment-console-customizing.md)
+      + [Personnaliser la console Fragments de contenu](/help/implementing/developing/extending/content-fragment-console-customizing.md)
       + Gestion des formulaires de recherche {#manage-search-forms}
          + [Configuration des formulaires de recherche](/help/implementing/developing/extending/search-forms.md)
          + [Configuration des filtres de recherche pour boîte de réception](/help/implementing/developing/extending/configure-inbox-search-rail.md)

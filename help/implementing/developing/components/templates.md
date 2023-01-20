@@ -5,11 +5,11 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
 source-wordcount: '3300'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
-# Modèles de page  {#page-templates}
+# Modèles de page {#page-templates}
 
 Lors de la création d’une page, vous devez sélectionner un modèle. Le modèle de page est utilisé comme base pour la nouvelle page. Le modèle définit la structure de la page créée, le contenu initial et les composants qui peuvent être utilisés (propriétés de conception). Il offre plusieurs avantages :
 
@@ -188,7 +188,7 @@ Pour créer un dossier, vous pouvez procéder de l’une des façons suivantes 
    * Type : `String`
    * Valeur : titre (du dossier) que vous souhaitez afficher dans la console **Modèles**.
 
-1. Outre les autorisations et les privilèges de création standard (par exemple, `content-authors`) vous devez maintenant attribuer un ou plusieurs groupes et définir les droits d’accès requis (listes de contrôle d’accès) pour que vos auteurs puissent créer des modèles dans le nouveau dossier.
+1. Outre les autorisations et les droits de création standard (par exemple, `content-authors`), vous devez maintenant attribuer le(s) groupe(s) et définir les droits d’accès nécessaires (listes de contrôle d’accès, ACL) pour que les créateurs puissent créer des modèles dans le nouveau dossier.
 
    Le groupe `template-authors` est le groupe par défaut qui doit être affecté. Pour plus d’informations, consultez la section [ACL et groupes](#acls-and-groups).
 
@@ -456,7 +456,7 @@ Lorsque vous [modifiez un modèle, vous pouvez définir la mise en page](/help/s
 
 <!-- that can also be [configured](/help/sites-administering/configuring-responsive-layout.md). -->
 
-### Stratégies de contenu {#content-policies}
+### Politiques de contenu {#content-policies}
 
 Les stratégies de contenu définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle). Les stratégies de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
 

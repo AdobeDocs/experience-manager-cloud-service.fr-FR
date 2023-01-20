@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
 workflow-type: tm+mt
 source-wordcount: '2590'
-ht-degree: 90%
+ht-degree: 92%
 
 ---
 
@@ -208,7 +208,7 @@ Les sections ci-dessous décrivent comment demander, configurer et envoyer des e
 
 ### Activation de l’e-mail sortant {#enabling-outbound-email}
 
-Par défaut, les ports utilisés pour envoyer des e-mails sont désactivés. Pour activer un port, configurez les [réseau avancé](/help/security/configuring-advanced-networking.md), en veillant à définir pour chaque environnement nécessaire la variable `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` les règles de transfert de port de endpoint, qui mappe le port prévu (par exemple, 465 ou 587) à un port proxy.
+Par défaut, les ports utilisés pour envoyer des e-mails sont désactivés. Pour activer un port, configurez la [mise en réseau avancée](/help/security/configuring-advanced-networking.md) en veillant à définir pour chaque environnement nécessaire les règles de transfert du port de point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking`, ce qui mappe le port prévu (par exemple, 465 ou 587) à un port proxy.
 
 Il est recommandé de configurer une mise en réseau avancée avec un paramètre `kind` défini sur `flexiblePortEgress`, car Adobe peut optimiser les performances du trafic de sortie de port flexible. Si une adresse IP sortante unique est nécessaire, choisissez un paramètre `kind` de `dedicatedEgressIp`. Si vous avez déjà configuré un VPN pour d’autres raisons, vous pouvez également utiliser l’adresse IP unique fournie par cette variante de mise en réseau avancée.
 

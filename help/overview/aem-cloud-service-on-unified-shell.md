@@ -5,7 +5,7 @@ exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
 source-git-commit: aeb8244b4da17a0675b86a69727807abf45ca84a
 workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 68%
+ht-degree: 82%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 68%
 
 ## Présentation {#overview}
 
-AEM as a Cloud Service (service d’auteur) est intégré à l’environnement de travail unifié afin d’améliorer l’expérience utilisateur et de l’unifier avec toutes les autres applications Experience Cloud. L’impact de cette intégration est visible dans l’en-tête supérieur de l’application, comme illustré ci-dessous.
+AEM as a Cloud Service (service de création) est intégré à Unified Shell pour améliorer l’expérience client et l’unifier avec toutes les autres applications Experience Cloud. L’impact de cette intégration est visible dans l’en-tête supérieur de l’application, comme illustré ci-dessous.
 
 ![image](/help/overview/assets/unifiedshell_header.png)
 
@@ -23,14 +23,14 @@ Les avantages sont les suivants :
 * Changement aisé entre les entreprises ou basculement vers une autre application
 * Amélioration de l’aide sur les produits
 * Bouton de retour d’information facile sur le produit pour signaler les problèmes ou partager des idées avec Adobe
-* Accès aux notifications et annonces de produits globales en plus des notifications spécifiques à AEM as a Cloud Service
+* Accéder aux annonces et notifications de produits globales en plus des notifications spécifiques à AEM as a Cloud Service
 
 ## Désactiver Unified Shell {#disabling-unified-shell}
 
 Lorsqu’il est prêt à l’emploi, AEM as a Cloud Service active Unified Shell. Toutefois, si la partie supérieure de l’en-tête a été personnalisée, il est recommandé de désactiver Unified Shell afin d’éviter tout problème lié aux personnalisations. Pour désactiver Unified Shell, procédez comme suit :
 
 >[!NOTE]
->Un Shell unifié ne peut être désactivé que par un compte disposant de droits d’administrateur.
+>Unified Shell ne peut être désactivé que par un compte disposant des droits d’administration.
 
 1. Allez à **Outils - services Cloud**.
 

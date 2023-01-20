@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 8a55e011a93ce069f067192f58bd36399a39130b
 workflow-type: tm+mt
 source-wordcount: '627'
-ht-degree: 92%
+ht-degree: 98%
 
 ---
 
@@ -25,9 +25,9 @@ Une nouvelle version de l’outil de transfert de contenu est disponible, qui in
 
 * Une méthode en libre-service pour extraire une seule fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
 * L’amélioration de l’expérience utilisateur grâce à une meilleure gestion des statuts de chargement, des barrières de sécurité et des erreurs
-* Les journaux d’ingestion sont conservés et sont toujours disponibles pour le dépannage.
+* La conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
 
-Pour commencer à utiliser la nouvelle version, vous devez désinstaller les anciennes versions de l’outil de transfert de contenu, car l’outil a connu un changement majeur d’architecture.
+Pour commencer à utiliser la nouvelle version, vous devrez désinstaller les anciennes versions de l’outil de transfert de contenu, car l’outil a subi un changement majeur d’architecture.
 
 >[!NOTE]
 >

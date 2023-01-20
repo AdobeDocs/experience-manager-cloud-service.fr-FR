@@ -188,7 +188,7 @@ Le composant `AEMText` est désormais modifiable sur AEM.
 ### Pages AEM modifiables {#aem-authorable-pages}
 
 1. Identifiez une page à ajouter pour la création dans la SPA. Cet exemple utilise `/content/wknd-spa-react/us/en/home.html`.
-1. Créez un fichier (par exemple, `Page.js`) pour le composant de page modifiable. Ici, nous pouvons réutiliser le composant de page fourni dans `@adobe/cq-react-editable-components`.
+1. Créez un nouveau fichier (par exemple, `Page.js`) pour le composant de page modifiable. Ici, nous pouvons réutiliser le composant de page fourni dans `@adobe/cq-react-editable-components`.
 1. Répétez l’étape 4 de la section [Composants feuille AEM modifiables.](#authorable-leaf-components) Utilisez la fonction Wrapper `withMappable` sur le composant.
 1. Comme précédemment, appliquez `MapTo` aux types de ressources AEM pour tous les composants enfants de la page.
 

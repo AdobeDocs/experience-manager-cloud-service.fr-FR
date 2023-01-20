@@ -5,7 +5,7 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
 workflow-type: tm+mt
 source-wordcount: '1182'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -36,9 +36,9 @@ Avant d’utiliser AEM Developer Tools, vous devez :
 >
 >Sous macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Voir le contenu du paquet** pour trouver le fichier `eclipse.ini`**.**
 
-## Installation d’AEM Developer Tools for Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
+## Comment installer AEM Developer Tools pour Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
-Lorsque vous avez rempli la variable [conditions requises](#requirements) ci-dessus, vous pouvez installer le module externe comme suit :
+Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous pouvez installer le plug-in comme suit :
 
 1. Ouvrez le [site web AEM Developer Tools](https://eclipse.adobe.com/aem/dev-tools/). <!-- RB: This URL is generating a 404 error in the experience-manager-cloud-service.en LinkCheckExl report . The website appears to be dead; no redirects at all. Clicking "Installation Link" does not do anything. Only the link "Download archive" works. The "Online Documentation" link just takes you to the AEM Docs home page. Not sure if this topic is still needed?? -->
 
@@ -58,7 +58,7 @@ Lorsque vous avez rempli la variable [conditions requises](#requirements) ci-des
 1. Acceptez les contrats de licence et cliquez sur **Finish** (Terminer).
 1. Cliquez sur **Restart Now** (Redémarrer maintenant) pour redémarrer Eclipse.
 
-## La perspective AEM {#the-aem-perspective}
+## La Perspective AEM {#the-aem-perspective}
 
 Dans Eclipse, une perspective détermine les actions et les vues disponibles dans une fenêtre et permet une interaction axée sur les tâches avec les ressources dans Eclipse. Pour plus d’informations sur les perspectives, consultez la [documentation d’Eclipse.](https://help.eclipse.org)
 
@@ -118,7 +118,7 @@ Suivez les étapes ci-après pour créer l’exemple de projet :
    >
    >Sur une nouvelle installation (plus précisément, si les dépendances Maven n’ont jamais été téléchargées), vous risquez de créer le projet avec des erreurs. Dans ce cas, veuillez suivre la procédure décrite dans [Résolution d’une définition de projet non valide](#resolving-invalid-project-definition).
 
-## Importation de projets existants {#how-to-import-existing-projects}
+## Comment importer des projets existants {#how-to-import-existing-projects}
 
 Vous pouvez utiliser la fonction **New Project** (Nouveau projet) pour créer la structure qui vous convient :
 
