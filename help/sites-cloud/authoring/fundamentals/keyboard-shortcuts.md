@@ -3,15 +3,15 @@ title: Raccourcis clavier pour la modification de pages
 description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la modification de pages
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '238'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Raccourcis clavier pour la modification de pages {#keyboard-shortcuts-when-editing-pages}
+# Raccourcis clavier pour la modification de page {#keyboard-shortcuts-when-editing-pages}
 
-Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent lors de la modification de pages, d’autres au [utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), et en particulier au [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont disponibles dans AEM. Certains raccourcis clavier peuvent être utilisés lors de la modification de pages, d’autres lors de l’[utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), et d’autres encore spécifiquement pour la [console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -21,7 +21,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
-| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Basculer entre **Aperçu** et la valeur actuellement sélectionnée [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> (par exemple, **Modifier**, **Disposition**, etc.* |
+| N’importe quel mode de fenêtre d’édition | `Ctrl-Shift-m` | Permet de basculer entre le mode **Aperçu** et le [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)</a> actuellement sélectionné (par exemple : **Éditer**, **Disposition**, etc.)* |
 | Mode d’**édition** | `Ctrl-z` | [Annuler la dernière modification](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rétablir la dernière modification](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Sélectionner plusieurs paragraphes |
@@ -37,7 +37,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 >
 >Une fois que l’utilisateur commence à interagir avec la page en mode Aperçu, le raccourci `Ctrl-Shift-m` n’est plus disponible. L’utilisateur doit cliquer sur la barre supérieure de l’éditeur ou revenir au mode d’édition pour que le raccourci soit de nouveau disponible.
 
-Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs d’ordinateur de bureau qui utilisent le [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), et en particulier au [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
+Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs et utilisatrices de bureau lorsqu’ils interagissent dans les [consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md), et certains spécifiquement dans la [console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
