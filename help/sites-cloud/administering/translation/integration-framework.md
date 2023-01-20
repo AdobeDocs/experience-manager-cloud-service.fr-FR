@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
 source-git-commit: 294743b3ca309cc0de3295cb55679e647bb10756
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1523'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Associez une page au fournisseur de traduction que vous utilisez pour traduire l
 
 ### Association des pages à une structure d’intégration de traduction {#associating-pages-with-a-translation-integration-framework}
 
-Associez une page à la structure d’intégration de traduction qui définit la façon dont vous souhaitez effectuer la traduction de la page et des pages descendantes.
+Associez une page au framework d’intégration de traduction qui définit la façon dont vous souhaitez effectuer la traduction de la page et des pages descendantes.
 
 1. Dans la console Sites, sélectionnez la page à configurer et cliquez ou appuyez sur **Afficher les propriétés**.
 1. Cliquez ou appuyez sur l’onglet **Cloud Services**.
