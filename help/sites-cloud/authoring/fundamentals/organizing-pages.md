@@ -3,9 +3,9 @@ title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2561'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -90,7 +90,7 @@ Le **Titre** et le **Nom** de la page peuvent être créés séparément, mais i
 >
 >Lorsque vous définissez un nom de page, une règle de base à respecter consiste à faire en sorte que le nom de la page reste court, mais aussi significatif que possible pour faciliter la compréhension du lecteur. Consultez le [Guide de style W3C](https://www.w3.org/Provider/Style/TITLE.html) sur l’élément `title` pour obtenir des informations supplémentaires.
 >
->Gardez également à l’esprit que certains navigateurs (par exemple, les anciennes versions d’IE) ne peuvent accepter que les URL d’une certaine longueur. Il existe donc également une raison technique de garder les noms de page courts.
+>N’oubliez pas que certains navigateurs (par exemple, les anciennes versions d’IE) n’acceptent que les URL n’excédant pas une certaine longueur. C’est pourquoi il existe également une raison technique à garder les noms de pages courts.
 
 Lors de la création d’une page, AEM [valide son nom en fonction des conventions](/help/implementing/developing/introduction/naming-conventions.md) imposées par AEM et JCR.
 
