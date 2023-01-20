@@ -3,9 +3,9 @@ title: Présentation de l’éditeur de SPA
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1636'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -148,7 +148,7 @@ Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création
 
 ## Conditions requises et restrictions {#requirements-limitations}
 
-Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application sur une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Consultez le document [Prise en main des SPA dans AEM avec React](getting-started-react.md) afin de disposer des informations minimales nécessaires pour faire fonctionner la vôtre.
+Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application d’une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Consultez le document [Prise en main des SPA dans AEM avec React](getting-started-react.md) afin de disposer des informations minimales nécessaires pour faire fonctionner la vôtre.
 
 ### Frameworks pris en charge {#supported-frameworks}
 
@@ -163,7 +163,7 @@ Les versions précédentes de ces frameworks peuvent fonctionner avec le SDK de 
 
 Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Consultez le document [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) pour connaître les exigences qu’un framework doit satisfaire afin de créer une couche spécifique composée des modules, composants et services nécessaires avec l’éditeur de SPA d’AEM.
 
-### Utiliser plusieurs sélecteurs {#multiple-selectors}
+### Utilisation de plusieurs sélecteurs {#multiple-selectors}
 
 Il est possible de définir et personnaliser d’autres sélecteurs dans le cadre d’une SPA développée pour le SDK de l’éditeur de SPA d’AEM. Toutefois, cette prise en charge nécessite que le sélecteur `model` soit le premier et que l’extension soit `.json`, conformément aux exigences de l’exportateur JSON.
 
@@ -172,9 +172,9 @@ Il est possible de définir et personnaliser d’autres sélecteurs dans le cadr
 Si vous souhaitez utiliser l’éditeur statique d’un composant de texte créé dans une SPA, une configuration supplémentaire est nécessaire.
 
 1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas du projet SPA WKND, il s’agit d’un élément `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
-1. Définition de la configuration `editElementQuery` sur le du composant de texte d’AEM correspondant `cq:InplaceEditingConfig` qui pointe vers ce sélecteur, par exemple : `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
+1. Définissez la configuration `editElementQuery` sur la `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
 
-Pour plus d’informations sur la propriété `editElementQuery` et la configuration de l’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi.](/help/implementing/developing/extending/rich-text-editor.md)
+Pour plus d’informations sur la propriété `editElementQuery` et la configuration de l’éditeur de texte enrichi, consultez la section [Configuration de l’éditeur de texte enrichi.](/help/implementing/developing/extending/rich-text-editor.md)
 
 ### Restrictions {#limitations}
 
