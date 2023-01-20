@@ -3,9 +3,9 @@ title: Vérification du statut du nom de domaine
 description: Découvrez comment déterminer si Cloud Manager a vérifié votre nom de domaine personnalisé avec succès.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
 source-git-commit: d22d657361ea6c4885babd76e6b4c10f88378994
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '663'
-ht-degree: 72%
+ht-degree: 100%
 
 ---
 
@@ -52,35 +52,35 @@ Cloud Manager déclenche automatiquement une vérification TXT lorsque vous sé
 
 ## Erreurs de nom de domaine {#domain-error}
 
-Vous trouverez ci-dessous quelques erreurs courantes de nom de domaine et leurs résolutions courantes.
+Vous trouverez ci-dessous quelques erreurs courantes de nom de domaine et leurs résolutions standard.
 
 ### Erreur de domaine non installé {#domain-not-installed}
 
-Cette erreur peut se produire lors de la validation du domaine de l’enregistrement TXT même après avoir vérifié que l’enregistrement a été mis à jour de manière appropriée.
+Cette erreur peut se produire lors de la validation du domaine de l’enregistrement TXT, même après avoir vérifié que l’enregistrement a été mis à jour de manière appropriée.
 
-#### Cause d’erreur {#cause}
+#### Cause de l’erreur {#cause}
 
-Permet de verrouiller rapidement un domaine sur le compte initial qui l’a enregistré, et aucun autre compte ne peut enregistrer un sous-domaine sans demander l’autorisation. De plus, Fastly ne vous permet d’affecter qu’un seul domaine apex et ses sous-domaines associés à un seul service et compte Fastly. Si vous disposez d’un compte Fastly qui lie les mêmes apex et sous-domaines utilisés pour vos domaines AEM Cloud Service, cette erreur s’affichera.
+Fastly verrouille un domaine sur le compte initial qui l’a enregistré et aucun autre compte ne peut enregistrer de sous-domaine sans demander l’autorisation. De plus, Fastly ne vous permet d’affecter qu’un seul domaine apex et ses sous-domaines associés à un seul service et compte Fastly. Si vous disposez d’un compte Fastly qui lie les mêmes apex et sous-domaines utilisés pour vos domaines AEM Cloud Service, cette erreur s’affichera.
 
 #### Résolution d’erreurs {#resolution}
 
-L&#39;erreur est corrigée comme suit :
+L’erreur est résolue comme suit :
 
 * Supprimez les apex et les sous-domaines du compte existant avant d’installer le domaine dans Cloud Manager.
 
 * Utilisez cette option pour associer le domaine apex et tous les sous-domaines au compte Fastly AEM as a Cloud Service. Consultez [Utilisation des domaines dans la documentation Fastly](https://docs.fastly.com/en/guides/working-with-domains) pour plus d’informations.
 
-* Si votre domaine apex comporte plusieurs sous-domaines pour AEM sites as a Cloud Service as a Cloud Service et non AEM que vous souhaitez lier à différents comptes Fastly, essayez d’installer le domaine dans Cloud Manager. Si l’installation du domaine échoue, créez un ticket d’assistance clientèle à l’aide de Fastly afin que l’Adobe puisse suivre l’option Fastly en votre nom.
+* Si votre domaine apex comporte plusieurs sous-domaines pour des sites AEM as a Cloud Service et hors AEM as a Cloud Service que vous souhaitez lier à différents comptes Fastly, essayez d’installer le domaine dans Cloud Manager. Si l’installation du domaine échoue, créez un ticket d’assistance clientèle avec Fastly afin qu’Adobe puisse faire un suivi auprès de Fastly en votre nom.
 
 >[!TIP]
 >
->La résolution des problèmes de délégation de domaine avec Fastly prend généralement 1 à 2 jours ouvrés. Pour cette raison, il est vivement recommandé d’installer les domaines bien avant leur date d’activation.
+>La résolution des problèmes de délégation de domaine avec Fastly prend généralement 1 à 2 jours ouvrés. Pour cette raison, il est vivement recommandé d’installer les domaines bien avant leur date d’activation.
 
 >[!NOTE]
 >
->Ne routez pas le DNS de votre site vers les adresses IP as a Cloud Service si le domaine n’a pas été installé correctement.
+>Ne routez pas le DNS de votre site vers les adresses IP d’AEM as a Cloud Service si le domaine n’a pas été correctement installé.
 
-## Configurations de réseau de diffusion de contenu préexistantes pour les noms de domaine personnalisés {#pre-existing-cdn}
+## Configurations de réseau CDN préexistantes pour les noms de domaine personnalisés {#pre-existing-cdn}
 
 Si vous disposez d’une configuration de réseau CDN préexistante pour vos noms de domaine personnalisés, un message d’information s’affichera dans les pages **Noms de domaine personnalisés** et **Environnement**, vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
 
