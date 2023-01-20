@@ -4,9 +4,9 @@ description: Les entreprises peuvent avoir besoin de solutions commerciales tier
 thumbnail: cif-third-party-architecture.jpg
 exl-id: 3ebdb8eb-65ba-46be-aca3-6c06c8d1600c,42dd8922-540d-4a93-9e45-b5e83dc11e16
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '521'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
