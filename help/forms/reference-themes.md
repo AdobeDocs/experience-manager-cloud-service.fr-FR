@@ -4,23 +4,23 @@ seo-title: Reference Themes
 description: AEM Forms fournit les thèmes de formulaires adaptatifs que vous pouvez obtenir à partir de la Distribution de logiciels et utiliser pour conférer un style à un formulaire.
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
-source-git-commit: 3ca1996ac3a19151c0c05bd972f0aec07edabf69
-workflow-type: tm+mt
+exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
+source-git-commit: bca7d28ab6cd846df0c51a8bece17e11304129df
+workflow-type: ht
 source-wordcount: '514'
-ht-degree: 56%
+ht-degree: 100%
 
 ---
 
+# Ressources de référence pour Forms as a Cloud Service {#reference-themes}
 
-# Ressources de référence pour Forms as a Cloud Service {#reference-themes}
+Vous pouvez obtenir les thèmes de référence, les modèles et les modèles de données de formulaire en installant le [Package de ressources de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Vous pourrez ainsi commencer rapidement et accélérer votre développement de formulaires adaptatifs. Vous pouvez utiliser le [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr) pour déployer ce package dans votre environnement AEM Forms as a Cloud Service.
 
-Vous pouvez obtenir les thèmes de référence, les modèles et les modèles de données de formulaire en installant le [Package de ressources de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.0.0.zip). Cela vous permet de démarrer et d’accélérer rapidement votre développement de Forms adaptatif. Vous pouvez utiliser [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/package-manager.html?lang=fr) pour déployer ce package dans votre environnement as a Cloud Service AEM Forms.
-
-Les ressources de référence incluses dans le module sont les suivantes :
+Le package comprend les ressources de référence suivantes :
 
 ## Thèmes {#themes}
 
-Les [thèmes](/help/forms/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Les thèmes suivants sont inclus :
+Les [thèmes](/help/forms/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Les thèmes suivants sont inclus :
 
 * Beryl
 * Tranquil
@@ -28,11 +28,11 @@ Les [thèmes](/help/forms/themes.md) vous permettent de styliser vos formulaires
 * Urbane
 * Canva
 
-Chaque thème comporte un style unique et élégant que vous pouvez utiliser pour créer des formulaires adaptatifs attrayants pour vos utilisateurs. Il contient un style unique pour les sélecteurs tels qu’un panneau, une zone de texte, une boîte de dialogue numérique, un bouton radio, un tableau et un commutateur. Les styles dans ces thèmes sont basés sur des exigences. Par exemple, dans un scénario particulier vous avez besoin d’un thème minimaliste avec des polices très lisibles. Le thème Urbane vous permet d’obtenir cet aspect.
+Chaque thème comporte un style unique et élégant que vous pouvez utiliser pour créer des formulaires adaptatifs attrayants pour vos utilisateurs. Il contient un style unique pour les sélecteurs tels qu’un panneau, une zone de texte, une boîte de dialogue numérique, un bouton radio, un tableau et un commutateur. Les styles dans ces thèmes sont basés sur des exigences. Par exemple, dans un scénario particulier vous avez besoin d’un thème minimaliste avec des polices très lisibles. Le thème Urbane permet d’obtenir cette apparence.
 
 ![Thèmes de référence](/help/forms/assets/ref-themes.png)
 
-Les thèmes inclus dans ce module sont réactifs et le style de ces thèmes est défini pour les affichages mobiles et de bureau. La plupart des navigateurs modernes sur différents périphériques peuvent sans problème rendre des formulaires auxquels est appliqué l’un de ces thèmes.
+Les thèmes inclus dans ce package sont réactifs, avec un style défini pour des affichages mobiles et de bureau. La plupart des navigateurs modernes sur différents périphériques peuvent sans problème rendre des formulaires auxquels est appliqué l’un de ces thèmes.
 
 Pour plus d’informations sur l’installation du module, voir [Comment travailler avec les modules](/help/implementing/developing/tools/package-manager.md).
 
@@ -105,7 +105,7 @@ U.S. Web Design Standards theme, as the name suggests, uses typefaces and styles
 
 ## Modèles
 
-Les modèles vous permettent de faire glisser des composants pour définir la structure initiale d’un formulaire adaptatif. Les ressources suivantes sont incluses :
+Les modèles vous permettent de glisser-déposer des composants afin de définir la structure initiale d’un formulaire adaptatif. Les ressources suivantes sont incluses :
 
 ### De base {#basic}
 
@@ -115,18 +115,18 @@ Le modèle de base permet de créer rapidement un formulaire d’inscription.
 
 ### Vide {#blank}
 
-Le modèle de base fournit un canevas vide pour vous permettre de créer la structure initiale des formulaires adaptatifs pour votre organisation.
+Le modèle de base fournit une zone de travail vide, dans laquelle vous pouvez créer la structure initiale des formulaires adaptatifs de votre organisation.
 
 ## Modèle de données de formulaire
 
 ### Microsoft® Dynamics 365
 
-Le modèle de données Microsoft Dynamics 365 vous aide à utiliser Microsoft Dynamics 365 comme source de données. Il fournit également des exemples de services pour lire, mettre à jour, supprimer et ajouter des données à la source de données Microsoft Dynamics 365.
+Le modèle de données Microsoft Dynamics 365 permet d’utiliser Microsoft Dynamics 365 comme source de données. Il fournit également des exemples de services pour lire, mettre à jour, supprimer et ajouter des données à la source de données Microsoft Dynamics 365.
 
-![Modèle de données de formulaire Microsoft® Dynamics 365](/help/forms/assets/microsoft-dynamic-fdm.png)
+![Modèle de données de formulaire Microsoft® Dynamics 365](/help/forms/assets/microsoft-dynamic-fdm.png)
 
 ### Salesforce
 
-Le modèle de données Salesforce vous aide à utiliser Salesforce comme source de données. Il fournit également des exemples de services pour lire, mettre à jour, supprimer et ajouter des données à Salesforce.
+Le modèle de données Salesforce permet d’utiliser Salesforce comme source de données. Il fournit également des exemples de services pour lire, mettre à jour, supprimer et ajouter des données à Salesforce.
 
 ![Modèle de données de formulaire Salesforce](/help/forms/assets/salesforce-fdm.png)
