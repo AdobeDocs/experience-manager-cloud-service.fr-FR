@@ -3,9 +3,9 @@ title: Exportation de fragments d’expérience vers Adobe Target
 description: Exportation de fragments d’expérience vers Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
 source-git-commit: d3b2b779b2b435309255e7a4f7957a94be520b34
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2249'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -183,7 +183,7 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
    * **Type d’API** : par défaut : REST (XML est obsolète)
 
-   * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration de cloud Analytics utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu.
+   * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration d’Analytics Cloud utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu.
 
       <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
@@ -257,7 +257,7 @@ Vous pouvez créer des structures multiples pour une même configuration Target.
 
    <!-- ![chlimage_1-163](assets/chlimage_1-163.png) -->
 
-1. Sélectionnez les variables que vous souhaitez rendre visibles au système Adobe Target en cochant la case **Partager** dans les colonnes appropriées.
+1. Sélectionnez les variables que vous souhaitez rendre visibles pour le système Adobe Target en cochant la case **Partager** dans les colonnes appropriées.
 
    <!-- ![chlimage_1-164](assets/chlimage_1-164.png) -->
 
