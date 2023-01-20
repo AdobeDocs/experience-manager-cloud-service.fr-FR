@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 33bf3dbf6118a9d93e0fe021736b74079100a214
+source-git-commit: 4cedade107f220a7f17e75af4b95cf8449e63c82
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1061'
 ht-degree: 100%
 
 ---
@@ -22,16 +22,6 @@ La section suivante concerne les notes de mise à jour générales de la version
 >[!NOTE]
 >
 >Voir [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=fr) pour plus d’informations sur les mises à jour de la documentation qui ne sont pas directement liées à une version.
-
->[!CAUTION]
->
->**Période d’exclusion de la maintenance planifiée**
->
-> Aucune maintenance automatique d’Adobe Experience Manager as a Cloud Service ne sera réalisée pendant les périodes suivantes, qui commencent et se terminent à minuit (00:00) CET :
->
->* Du lundi 21 novembre au lundi 12 décembre
->* Lundi 19 décembre au mardi 3 janvier
-
 
 ## Date de publication {#release-date}
 
