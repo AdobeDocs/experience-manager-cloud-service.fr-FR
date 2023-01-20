@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 7a6d4a63-faf8-4e1c-95da-90db2027a2dd
 source-git-commit: 21ee6ec3ffef602bfbac7d89bb6c3454869deda9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '525'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ Vous pouvez utiliser des blocs de citations imbriqués. Par exemple :
 
 Vous pouvez créer des listes ordonnées et non ordonnées.
 
-Pour créer une liste non ordonnée, insérez le symbole &amp;ast; avant les éléments de la liste. Par exemple :
+Pour créer une liste non ordonnée, insérez le symbole * avant les éléments de la liste. Par exemple :
 
     `* item in list`
 
