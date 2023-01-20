@@ -3,9 +3,9 @@ title: Comment créer un portail Formulaires sur une page Experience Manager S
 description: Découvrez comment créer un portail Formulaires et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
 source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1764'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Pour importer des composants du portail Formulaires prêts à l’emploi sur AEM
 
    Modifiez également `appTitle`, `appId` et `groupId` dans la commande ci-dessus pour refléter votre environnement.
 
-   Une fois le projet prêt, mettez à jour la variable `<core.forms.components.version>x.y.z</core.forms.components.version>` dans le niveau supérieur `pom.xml` du projet Archetype pour refléter la dernière version de [core-forms-components](https://github.com/adobe/aem-core-forms-components) dans votre `AEM Archetype` projet.
+   Une fois que le projet est prêt, mettez à jour la propriété `<core.forms.components.version>x.y.z</core.forms.components.version>` dans le niveau supérieur `pom.xml` de l’archétype du projet pour refléter la dernière version des [core-forms-components](https://github.com/adobe/aem-core-forms-components) dans votre `AEM Archetype` projet.
 
 1. **Déploiement du projet dans votre environnement de développement local :** vous pouvez utiliser la commande suivante pour effectuer un déploiement dans votre environnement de développement local.
 
