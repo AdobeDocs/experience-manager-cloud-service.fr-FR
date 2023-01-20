@@ -3,9 +3,9 @@ title: En savoir plus sur le développement CMS découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez la technologie découplée et pourquoi l’utiliser.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
 source-git-commit: 2abceb1333877c41c61d1036ab82ec40058011fe
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1623'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ La diffusion de contenu en mode découplé s’appuie souvent sur les API GraphQ
 
 Quelle que soit l’API choisie, en définissant un système découplé basé sur des API courantes, vous pouvez tirer parti du navigateur le plus récent et d’autres technologies web, comme les applications web progressives (PWA). Les API créent une interface standard facilement extensible et adaptable.
 
-En règle générale, le contenu est rendu côté client. Cela signifie normalement qu’une personne appelle votre contenu sur un appareil mobile, que votre CMS le diffuse, puis que l’appareil mobile (le client) est responsable du rendu du contenu que vous avez diffusé. Si l’appareil est vieux ou lent, votre expérience numérique sera également lente.
+En règle générale, le contenu est rendu côté client. Normalement, cela signifie qu’une personne appelle votre contenu sur un appareil mobile, que votre CMS le diffuse, puis que l’appareil mobile (le ou la client(e)) assure le rendu du contenu que vous avez fourni. Si l’appareil est vieux ou lent, votre expérience numérique sera également lente.
 
 Le découplage du contenu et de la présentation permet de mieux contrôler ces problèmes de performances côté client. Le rendu côté serveur (SSR) transfère la responsabilité du rendu du navigateur du client vers le serveur. En tant que fournisseur du contenu, vous pouvez ainsi offrir un niveau de performance garanti à votre audience, si nécessaire.
 
