@@ -3,7 +3,7 @@ title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1975'
 ht-degree: 100%
 
@@ -310,7 +310,7 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
 
 >[!NOTE]
 >
->Le composant de page peut être configuré pour spécifier les champs disponibles en vue de la modification en bloc. Reportez-vous à la section Configuration de votre page en vue de la modification en masse des propriétés.
+>Le composant de page peut être configuré pour spécifier les champs disponibles en vue de la modification en bloc. Reportez-vous à la section Configuration de votre page en vue de la modification en bloc des propriétés.
 
 <!--
 >The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
