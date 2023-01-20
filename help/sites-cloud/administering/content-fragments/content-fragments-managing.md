@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
 source-git-commit: 6204830f30c28daba3ff87ba60acd0150847b523
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1915'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,15 +41,15 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 
 ## Console Fragments de contenu {#content-fragments-console}
 
-La console Fragments de contenu permet d’accéder directement à vos fragments et aux tâches associées. Pour plus d’informations, voir :
+La console Fragments de contenu permet d’accéder directement à vos fragments et aux tâches qui s’y rapportent. Pour plus d’informations, consultez la section suivante :
 
-* [Structure et gestion de base de la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
+* [Structure de base et gestion de la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#basic-structure-handling-content-fragments-console)
 
-* [Informations fournies sur vos fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
+* [Les informations fournies sur vos fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments)
 
 * [Actions pour un fragment de contenu dans la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment)
 
-* [Personnalisation des colonnes disponibles dans la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
+* [Personnaliser les colonnes disponibles dans la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#select-available-columns)
 
 * [Rechercher et filtrer dans la console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#filtering-fragments)
 
@@ -290,11 +290,11 @@ Pour supprimer un fragment :
 
 ## Recherche des références parentes du fragment {#parent-references-fragment}
 
-Les détails des références parentes sont accessibles à partir de la **Références** de la colonne [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+Les détails des références parentes sont accessibles à partir de la colonne **Références** de la [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
-## Recherche de copies de langue du fragment {#language-copies-fragment}
+## Recherche des copies de langue du fragment {#language-copies-fragment}
 
-Les détails des copies de langue sont accessibles à partir du **Langue** de la colonne [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
+Les détails des copies de langue sont accessibles à partir de la colonne **Langue** de la [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#information-content-fragments).
 
 ## Chronologie pour les fragments de contenu {#timeline-for-content-fragments}
 
