@@ -3,9 +3,9 @@ title: Repository Modernizer
 description: Repository Modernizer
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '300'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Repository Modernizer crée une structure de projet AEM Cloud Service compatible
 
 * Le module `ui.apps` se déploie sur `/apps` et contient l’intégralité du code.
 
-* `ui.content` Le module se déploie sur des zones pouvant être écrites à l’exécution (par exemple, `/content`, `/conf`, `/home`, ou tout ce qui n’est pas `/apps`) et contient tout le contenu et la configuration.
+* Le module `ui.content` se déploie sur des zones pouvant être écrites à l’exécution (par exemple, `/content`, `/conf`, `/home` ou toute zone autre que `/apps`) et contient l’ensemble du contenu et de la configuration.
 
 * Le module `all` est un module de conteneur qui contient les sous-modules `ui.apps` et `ui.content`.
 
