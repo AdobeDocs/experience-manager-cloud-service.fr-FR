@@ -3,9 +3,9 @@ title: Tout assembler – Votre application et votre contenu dans AEM découplé
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment aborder votre projet AEM, notamment les fragments de contenu, les appels GraphQL, les appels API REST et votre application, mais aussi comment préparer ce projet pour la mise en ligne.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1069'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -40,11 +40,11 @@ Le SDK AEM permet de créer et de déployer du code personnalisé. Il s’agit d
 
 Différent du SDK AEM, le **SDK découplé** AEM est un ensemble de bibliothèques qui peuvent être utilisées par les clients pour interagir rapidement et facilement avec les API AEM découplé sur HTTP.
 
-Pour plus d’informations sur le SDK AEM découplé, consultez la [documentation ici](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html).
+Pour plus d’informations sur le SDK AEM découplé, consultez la [documentation ici](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/aem-headless-sdk.html?lang=fr).
 
 ## Outils de développement supplémentaires {#additional-development-tools}
 
-Outre le SDK AEM, vous avez besoin d’outils supplémentaires qui facilitent le développement et le test local de votre code et contenu :
+Outre le SDK AEM, vous avez besoin d’outils supplémentaires qui facilitent le développement et le test local de votre code et de votre contenu :
 
 * Java™
 * Git
@@ -54,15 +54,15 @@ Outre le SDK AEM, vous avez besoin d’outils supplémentaires qui facilitent le
 
 Comme AEM est une application Java™, vous devez installer Java™ et le SDK Java™ pour prendre en charge le développement d’AEM as a Cloud Service.
 
-Git est ce que vous utilisez pour gérer le contrôle de code source et archiver les modifications apportées à Cloud Manager, puis les déployer sur une instance de production.
+Utilisez le référentiel Git pour gérer le contrôle de code source et pour archiver les modifications apportées à Cloud Manager, puis pour les déployer sur une instance de production.
 
 AEM utilise Apache Maven pour créer des projets générés à partir de l’archétype de projet AEM Maven. Tous les environnements de développement intégré majeurs prennent en charge l’intégration de Maven.
 
-Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm. Il s’agit de facto du gestionnaire de modules Node.js, utilisé pour gérer les dépendances JavaScript.
+Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, qui est de facto le gestionnaire de modules Node.js utilisé pour gérer les dépendances JavaScript.
 
 ## Composants d’un système AEM en un coup d’œil {#components-of-an-aem-system-at-a-glance}
 
-Regardons ensuite les parties constituantes d&#39;un environnement AEM.
+Regardons maintenant les éléments qui constituent un environnement AEM.
 
 Un environnement d’AEM complet est constitué d’un auteur, d’une publication et d’un Dispatcher. Ces mêmes composants sont disponibles dans l’exécution de développement local afin de vous permettre de prévisualiser plus facilement votre code et votre contenu avant la mise en ligne.
 
@@ -74,38 +74,38 @@ Un environnement d’AEM complet est constitué d’un auteur, d’une publicati
 
 ## Workflow de développement local {#the-local-development-workflow}
 
-Le projet de développement local est basé sur Apache Maven et utilise Git pour le contrôle de code source. Pour mettre à jour le projet, les développeurs peuvent utiliser leur environnement de développement intégré préféré, tel qu’Eclipse, Visual Studio Code ou IntelliJ, entre autres.
+Le projet de développement local est basé sur Apache Maven et utilise Git pour le contrôle de code source. Pour mettre à jour le projet, les développeurs peuvent utiliser leur environnement de développement intégré préféré, tel qu’Eclipse, Visual Studio Code ou IntelliJ, entre autres.
 
-Pour tester le code ou les mises à jour de contenu ingérés par votre application sans interface utilisateur graphique, vous devez déployer les mises à jour sur l’exécution AEM locale, qui inclut les instances locales des services de création et de publication AEM.
+Pour tester le code ou les mises à jour de contenu ingérées par votre application découplée, vous devez déployer les mises à jour sur l’exécution locale AEM, qui inclut les instances locales des services de création et de publication AEM.
 
 Veillez à tenir compte des différences entre chaque composant dans l’exécution locale AEM, car il est important de tester vos mises à jour là où elles comptent le plus. Par exemple, testez les mises à jour du contenu sur l’instance de création ou testez le nouveau code sur l’instance de publication.
 
-Dans un système de production, un Dispatcher et un serveur Apache http se trouvent toujours en face d’une instance de publication AEM. Ils fournissent des services de mise en cache et de sécurité pour le système AEM. Il est donc essentiel de tester le code et les mises à jour de contenu par rapport au dispatcher.
+Dans un système de production, un Dispatcher et un serveur Apache http se trouvent toujours en face d’une instance de publication AEM. Ils fournissent des services de mise en cache et de sécurité pour le système AEM. Il est donc essentiel de tester le code et les mises à jour de contenu par rapport au Dispatcher.
 
 ## Prévisualisation locale de votre code et de votre contenu avec l’environnement de développement local {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-Pour préparer votre projet sans interface AEM pour le lancement, vous devez vous assurer que toutes les parties constituantes de votre projet fonctionnent correctement.
+Pour préparer votre projet découplé AEM à son lancement, vous devez vous assurer que tous les éléments constituant votre projet fonctionnent correctement.
 
 Pour cela, vous devez tout assembler (code, contenu et configuration), puis le tester dans un environnement de développement local pour vous préparer en temps réel.
 
 L’environnement de développement local se compose de trois principaux éléments :
 
-1. Le projet AEM : ce projet contient tout le code personnalisé, la configuration et le contenu sur lesquels les développeurs AEM vont travailler.
-1. Exécution locale de l’AEM : versions locales des services d’auteur et de publication AEM utilisés pour déployer le code du projet AEM
+1. Le projet AEM : il contient tout le code personnalisé, la configuration et le contenu sur lesquels les développeurs AEM vont travailler.
+1. L’exécution locale AEM : les versions locales des services de création et de publication AEM utilisés pour déployer le code du projet AEM.
 1. L’exécution locale du Dispatcher : la version locale du serveur web Apache httpd qui comprend le module de Dispatcher.
 
 Une fois l’environnement de développement local configuré, vous pouvez simuler la diffusion de contenu vers l’application React en déployant localement un serveur de nœuds statique.
 
 <!-- THIS TOPIC IS 404. IT DOES NOT APPEAR IN THE TOC OR ANYWHERE ELSE To get a more in-depth look at setting up a local development environment and all dependencies needed for content preview, see [Production Deployment documentation](https://experienceleague.adobe.com/docs/experience-manager-learn/headless-tutorial/graphql/multi-step/production-deployment.html). -->
 
-## Et après ? {#whats-next}
+## Prochaines étapes {#whats-next}
 
 Maintenant que vous avez terminé cette partie du parcours de développement découplé AEM, vous devriez pouvoir :
 
 * Familiarisez-vous avec les outils de développement AEM
 * Découvrez le workflow de développement local
 
-Poursuivez votre parcours AEM sans interface utilisateur graphique en consultant le document. [Comment passer à l’application sans affichage](/help/journey-headless/developer/go-live.md) où vous mettez en ligne votre projet AEM sans tête !
+Poursuivez votre parcours dans AEM découplé en consultant le document [Comment mettre en ligne votre application en mode découplé](/help/journey-headless/developer/go-live.md) dans lequel vous mettez en ligne votre projet AEM découplé !
 
 ## Ressources supplémentaires {#additional-resources}
 
