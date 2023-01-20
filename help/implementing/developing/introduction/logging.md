@@ -3,9 +3,9 @@ title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2351'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -309,7 +309,7 @@ cm-p1234-e5678-aem-publish-b86c6b466-qpfvp - - 17/Jul/2020:09:14:42 +0000  "GET 
 <td>-</td>
 </tr>
 <tr>
-<td>Utilisateur</td>
+<td>User</td>
 <td>-</td>
 </tr>
 <tr>
@@ -549,7 +549,7 @@ La bande passante réseau associée aux journaux envoyés à Splunk est considé
 
 Dans la demande d’assistance, les clients doivent indiquer :
 
-* l’adresse du point d’entrée Splunk HEC ; : Ce point de terminaison doit disposer d’un certificat SSL valide et être accessible au public.
+* l’adresse du point d’entrée Splunk HEC ; : Ce point d’entrée doit disposer d’un certificat SSL valide et être accessible au public.
 * l’index Splunk ;
 * le port Splunk ;
 * le jeton Splunk HEC. Pour plus d’informations, consultez [cette page](https://docs.splunk.com/Documentation/Splunk/8.0.4/Data/HECExamples).
@@ -564,7 +564,7 @@ Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de
 >
 >La fonctionnalité de transfert Splunk n’est pas possible à partir d’une adresse IP de sortie dédiée.
 
-Assurez-vous que la requête initiale comprend tous les environnements de développement qui doivent être activés, en plus des environnements d’évaluation/de production. Splunk doit disposer d’un certificat SSL et faire face au public.
+Assurez-vous que la requête initiale comprend tous les environnements de développement qui doivent être activés, en plus des environnements d’évaluation/de production. Splunk doit disposer d’un certificat SSL et être accessible au public.
 
 Si de nouveaux environnements de développement créés après la requête initiale sont destinés à un transfert de Splunk, mais qu’ils ne sont pas activés, une requête supplémentaire doit être envoyée.
 
