@@ -3,9 +3,9 @@ title: Cadre de balisage AEM
 description: Balisage de contenu et utilisation du cadre de balisage AEM afin de la classer et de l’organiser.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1570'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -26,11 +26,11 @@ Pour baliser le contenu et utiliser le cadre de balisage AEM, procédez comme su
 * Le `NodeType` du nœud de contenu balisé doit inclure le mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 * Le [`TagID`](#tagid) est ajouté à la propriété [`cq:tags`](#cq-tags-property) du nœud de contenu et est résolu sur un nœud de type [`cq:Tag`.](#cq-tag-node-type)
 
-## Type de nœud cq:Tag {#cq-tag-node-type}
+## cq : balisage du type de nœud {#cq-tag-node-type}
 
-La déclaration d’une balise est capturée dans le référentiel dans un nœud de type `cq:Tag.`.
+La déclaration d’une balise est capturée dans le référentiel dans un nœud de type `cq:Tag.`
 
-* Une balise peut être un mot simple (par exemple, `sky`) ou représentent une taxonomie hiérarchique (par exemple, `fruit/apple`, c&#39;est-à-dire le fruit générique et la pomme plus spécifique).
+* Une balise peut être constituée d’un simple mot (`sky`, par exemple) ou représenter une taxonomie hiérarchique (`fruit/apple` par exemple, c’est-à-dire le fruit en tant que catégorie générique et la pomme en étant plus spécifique).
 * Les balises sont identifiées par un `TagID` unique.
 * Une balise comprend des méta-informations facultatives, telles qu’un titre, des titres localisés et une description. Le titre doit être affiché dans les interfaces utilisateur au lieu du `TagID`, le cas échéant.
 
@@ -64,7 +64,7 @@ Dans AEM, le chemin d’accès de base est `/content/cq:tags` et le nœud racine
 
 ### Espace de noms des balises {#tag-namespace}
 
-Les espaces de noms permettent de regrouper des éléments. Le cas d’utilisation le plus courant consiste à disposer d’un espace de noms par site (par exemple, public par rapport à interne) ou par application plus grande (par exemple, Sites ou Ressources), mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour n’afficher que le sous-ensemble de balises (c’est-à-dire les balises d’un espace de noms donné) applicable au contenu actuel.
+Les espaces de noms permettent de regrouper des éléments. Le cas d’utilisation le plus courant consiste à disposer d’un espace de noms par site (par exemple, public ou interne) ou par grande application (par exemple, Sites ou Ressources), mais les espaces de noms peuvent être utilisés pour d’autres besoins. Les espaces de noms sont utilisés dans l’interface utilisateur pour n’afficher que le sous-ensemble de balises (c’est-à-dire les balises d’un espace de noms donné) applicable au contenu actuel.
 
 L’espace de noms de la balise est le premier niveau de la sous-arborescence de taxonomie, à savoir le nœud situé juste en dessous du [nœud racine de taxonomie.](#taxonomy-root-node) Un espace de noms est un nœud de type `cq:Tag` dont le parent n’est pas de type `cq:Tag`.
 
@@ -76,7 +76,7 @@ Une balise conteneur est un nœud de type `cq:Tag` contenant le nombre et le typ
 
 En outre, les balises conteneurs (ou super-balises) d’une taxonomie font office de sous-cumul de toutes les sous-balises. Par exemple, le contenu balisé avec `fruit/apple` est considéré comme étant également balisé avec `fruit`. Dès lors, une recherche de contenu balisé simplement avec `fruit` renverra également le contenu balisé avec `fruit/apple`.
 
-### Résolution d’ID de balise {#resolving-tagids}
+### Résolution d’identifiant de balise {#resolving-tagids}
 
 Si l’ID de balise contient le signe deux-points (`:`), celui-ci sépare l’espace de noms de la balise ou de la sous-taxonomie, qui sont alors séparés par des barres obliques (`/`). En l’absence de signe deux-points dans l’ID de balise, l’espace de noms par défaut est impliqué.
 
@@ -150,7 +150,7 @@ Les définitions essentielles relatives aux types de nœud inclus dans AEM sont 
     mixin
 ```
 
-## Propriété cq:tags {#cq-tags-property}
+## cq : propriété des balises {#cq-tags-property}
 
 La propriété `cq:tags` est une table de chaînes `String` utilisée pour stocker un ou plusieurs `TagID` lorsque les auteurs ou les visiteurs du site les appliquent au contenu. La propriété n’a de sens que lorsqu’elle est ajoutée à un nœud qui est défini avec le mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
 
