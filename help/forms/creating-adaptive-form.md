@@ -6,16 +6,16 @@ role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1359'
-ht-degree: 27%
+ht-degree: 100%
 
 ---
 
 # Création d’un formulaire adaptatif {#creating-an-adaptive-form}
 
 
-Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial destiné à l’entreprise afin de créer rapidement un Forms adaptatif. L’assistant dispose d’une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
+Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial pour les utilisateurs professionnels, qui permet de créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
 <!-- 
 
@@ -45,14 +45,14 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
 
 Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants :
 
-* **Un modèle de formulaire adaptatif**: Un modèle fournit une structure de base et définit l’aspect (mises en page et styles) d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’apparence et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Par exemple, l’envoi des données collectées à une source de données. Le service cloud prend en charge deux types de modèles :
+* **Un modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Par exemple, l’envoi des données collectées à une source de données. Le service cloud prend en charge deux types de modèles :
 
-   * **Modèle modifiable**: Vous pouvez [créer](template-editor.md) ou [importer un modèle modifiable existant](migrate-to-forms-as-a-cloud-service.md). Vous pouvez également déployer le [archetype le plus récent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en#:~:text=The%20AEM%20Archetype%20is%20made%20up%20of%20modules%3A,and%20request%20filters.%20it.tests%3A%20are%20Java-based%20integration%20tests.) pour obtenir des exemples de modèles modifiables.
-   * **Modèle statique**: Il s’agit de modèles hérités qui ne sont recommandés que pour les clients effectuant la migration depuis des installations Adobe Managed Services (AMS) et AEM Forms On-Premise (AEM 6.5 Forms ou version antérieure). Elles vous permettent de continuer à exploiter votre investissement existant dans les modèles statiques. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
+   * **Modèle modifiable** : vous pouvez [créer un modèle modifiable](template-editor.md) ou en [importer un existant](migrate-to-forms-as-a-cloud-service.md). Vous pouvez également déployer l’[archétype le plus récent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr#:~:text=L%E2%80%99arch%C3%A9type%20AEM%20est%20constitu%C3%A9,les%20servlets%20et%20les%20filtres%20de%20requ%C3%AAte.%20it.tests%3A%20are%20Java-based%20integration%20tests.) pour obtenir des exemples de modèles modifiables.
+   * **Modèle statique** : il s’agit de modèles hérités qui ne sont recommandés que pour les clients effectuant la migration depuis des installations Adobe Managed Services (AMS) et AEM Forms On-Premise (AEM 6.5 Forms ou version antérieure). Ainsi, vous pouvez continuer à tirer profit de votre investissement existant dans les modèles statiques. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
 
-* **Un thème de formulaire adaptatif**: Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Vous pouvez [créer un thème](themes.md) ou [importer un thème existant](import-export-forms-templates.md#uploading-a-theme). Vous pouvez également déployer le [archetype le plus récent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#create-project) pour quelques exemples de thèmes.
+* **Un thème de formulaire adaptatif** : un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Vous pouvez [créer un thème](themes.md) ou [importer un thème existant](import-export-forms-templates.md#uploading-a-theme). Vous pouvez également déployer l’[archétype le plus récent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr#create-project) pour obtenir des exemples de thèmes.
 
-* **Autorisations**: Ajoutez vos utilisateurs à [!DNL forms-users] pour leur fournir les autorisations nécessaires à la création d’un formulaire adaptatif. Pour obtenir la liste détaillée des groupes d’utilisateurs spécifiques aux formulaires, voir [Groupes et autorisations](forms-groups-privileges-tasks.md).
+* **Autorisations** : ajoutez vos utilisateurs et utilisatrices à [!DNL forms-users] pour leur fournir les autorisations de création d’un formulaire adaptatif. Pour obtenir la liste détaillée des groupes d’utilisateurs spécifiques aux formulaires, voir [Groupes et autorisations](forms-groups-privileges-tasks.md).
 
 1. Accédez à l’instance d’auteur [!DNL Experience Manager Forms]. Il peut s’agir d’une instance cloud ou d’une instance de développement local.
 
@@ -60,23 +60,23 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
    Une fois connecté, dans le coin supérieur gauche, appuyez sur **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents.]**.
 
-1. Appuyer **[!UICONTROL Créer]**  > **[!UICONTROL Forms adaptatif]**. L’assistant s’ouvre.
-1. Dans l&#39;onglet Source , sélectionnez un modèle :
+1. Appuyez sur **[!UICONTROL Créer]** > **[!UICONTROL Formulaires adaptatifs]**. Cette action permet d’ouvrir l’assistant.
+1. Dans l’onglet Source, sélectionnez un modèle :
 
-   * Lorsque vous sélectionnez un modèle modifiable, un thème et une action d’envoi spécifiés dans le modèle sont automatiquement sélectionnés, et l’événement **[!UICONTROL Créer]** est activé. Vous pouvez accéder au **[!UICONTROL Style]** ou **[!UICONTROL Envoi]** onglets pour sélectionner un autre thème ou une autre action d’envoi. Si le modèle modifiable sélectionné ne spécifie pas de thème, le bouton de création reste désactivé. Vous pouvez accéder au **[!UICONTROL Styles]** pour sélectionner manuellement un thème.
+   * La sélection d’un modèle modifiable sélectionne automatiquement un thème et une action d’envoi spécifiés dans le modèle, et le bouton **[!UICONTROL Créer]** est activé. Vous pouvez accéder aux onglets **[!UICONTROL Style]** ou **[!UICONTROL Envoi]** pour sélectionner un autre thème ou une autre action d’envoi. Si le modèle modifiable sélectionné ne spécifie pas de thème, le bouton de création reste désactivé. Vous pouvez accéder à l’onglet **[!UICONTROL Styles]** pour sélectionner manuellement un thème.
 
       >[!NOTE]
       >
-      > Vous pouvez également créer des [!UICONTROL Document d’enregistrement] à l’aide d’un éditeur de formulaire adaptatif. Pour plus d’informations, voir [Prise en charge des documents d’enregistrement dans l’éditeur de formulaire adaptatif](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+      > Vous pouvez également créer un modèle de [!UICONTROL Document d’enregistrement] à l’aide d’un éditeur de formulaires adaptatifs. Pour plus d’informations, voir [Prise en charge des documents d’enregistrement dans l’éditeur de formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
-   * Lorsque vous sélectionnez un modèle statique, les options données, style, envoi, diffusion et aperçu ne sont pas disponibles. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
+   * Lorsque vous sélectionnez un modèle statique, les options de données, de style, d’envoi, de diffusion et de prévisualisation ne sont pas disponibles. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
 
-1. Dans l’onglet Style , sélectionnez un thème :
-   * Lorsque le modèle sélectionné spécifie un thème, celui-ci est automatiquement sélectionné dans l&#39;assistant. Vous pouvez également choisir un thème différent dans l’onglet Style .
-   * Si le modèle sélectionné ne spécifie aucun thème, vous pouvez utiliser l’onglet Style pour choisir un thème. Le **[!UICONTROL Créer]** n’est activé qu’après la sélection d’un thème.
-1. (Facultatif) Dans l’onglet Données, sélectionnez un modèle de données :
-   * **Modèle de données de formulaire**: A [Modèle de données de formulaire](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisissez Modèle de données de formulaire si le formulaire adaptatif que vous créez implique la récupération et l’écriture de données à partir de et vers plusieurs sources de données.
-   * **Schéma JSON**: [Schéma JSON](adaptive-form-json-schema-form-model.md) représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre entreprise. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets de modèle de données de l’explorateur de contenu lors de la création d’un Forms adaptatif et tous les champs sont également ajoutés au formulaire adaptatif nouvellement créé.
+1. Dans l’onglet Style, sélectionnez un thème :
+   * Lorsque le modèle sélectionné spécifie un thème, celui-ci est automatiquement sélectionné dans l’assistant. Vous pouvez également choisir un thème différent dans l’onglet Style.
+   * Si le modèle sélectionné ne spécifie aucun thème, vous pouvez utiliser l’onglet Style pour en choisir un. Le bouton **[!UICONTROL Créer]** n’est activé qu’après la sélection d’un thème.
+1. (Facultatif) Dans l’onglet Données, sélectionnez un modèle de données :
+   * **Modèle de données de formulaire** : un [modèle de données de formulaire](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
+   * **Schéma JSON** : [le schéma JSON](adaptive-form-json-schema-form-model.md) représente la structure dans laquelle les données sont générées ou utilisées par le système back-end de votre organisation. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets de modèle de données de l’explorateur de contenu lors de la création de formulaires adaptatifs et tous les champs sont également ajoutés au formulaire adaptatif nouvellement créé.
 
    Par défaut, tous les champs du modèle de données sont sélectionnés. Lorsque vous créez le formulaire adaptatif, tous les champs de modèle de données sélectionnés sont convertis en composants de formulaire adaptatif correspondants. L’assistant vous fournit des cases à cocher pour sélectionner uniquement les champs qui doivent être inclus dans le formulaire adaptatif.
 
@@ -86,23 +86,23 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
    
    -->
 
-1. Dans l’onglet Envoi , sélectionnez une action d’envoi :
+1. Dans l’onglet Envoi, sélectionnez l’action d’envoi :
 
-   * Lorsque vous sélectionnez un modèle, l’action d’envoi indiquée dans le modèle est automatiquement sélectionnée. Vous pouvez sélectionner une autre action d’envoi dans l’onglet Envoi . Le **[!UICONTROL Envoi]** affiche toutes les actions d’envoi disponibles.
+   * Lorsque vous sélectionnez un modèle, l’action d’envoi spécifiée dans le modèle est sélectionnée automatiquement. Vous pouvez sélectionner une autre action d’envoi dans l’onglet Envoi. L’onglet **[!UICONTROL Envoi]** affiche toutes les actions d’envoi disponibles.
 
-   * Lorsque le modèle sélectionné ne spécifie aucune action d’envoi, vous pouvez utiliser la variable **[!UICONTROL Envoi]** pour sélectionner une action d’envoi
+   * Lorsque le modèle sélectionné ne spécifie aucune action d’envoi, vous pouvez utiliser l’onglet **[!UICONTROL Envoi]** pour sélectionner une action d’envoi
 
-1. (Facultatif) Dans l’onglet Diffusion , vous pouvez spécifier une date de publication ou d’annulation de publication pour un formulaire adaptatif.
+1. (Facultatif) Dans l’onglet Diffusion, vous pouvez spécifier une date de publication ou d’annulation de publication pour un formulaire adaptatif.
 
-1. Appuyez sur **[!UICONTROL Créer]**. Une boîte de dialogue pour spécifier le titre, le nom et l’emplacement d’enregistrement du formulaire adaptatif s’affiche :
+1. Appuyez sur **[!UICONTROL Créer]**. Une boîte de dialogue pour spécifier le titre, le nom et l’emplacement d’enregistrement du formulaire adaptatif s’affiche :
 
-   * **[!UICONTROL Titre]** Indique le nom d’affichage du formulaire. Le titre vous permet d’identifier le formulaire dans l’interface utilisateur [!DNL Experience Manager Forms] d’AEM Forms.
+   * **[!UICONTROL Titre]** Spécifie le nom d’affichage du formulaire. Le titre vous permet d’identifier le formulaire dans l’interface utilisateur [!DNL Experience Manager Forms] d’AEM Forms.
    * **[!UICONTROL Nom :]** indique le nom du formulaire. Un nœud portant le nom indiqué est alors créé dans le référentiel. Lorsque vous commencez à saisir un titre, une valeur pour le champ de nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ de nom peut contenir uniquement des caractères alphanumériques, des traits d’union et des tirets bas. Toutes les entrées non valides sont remplacées par un tiret.
-   * **[!UICONTROL Chemin :]** Indique l’emplacement d’enregistrement du formulaire adaptatif. Vous pouvez enregistrer le formulaire adaptatif directement à l’adresse `/content/dam/formsanddocuments` ou créez un dossier tel que `/content/dam/formsanddocuments/adaptiveforms` pour enregistrer un formulaire adaptatif. Assurez-vous de créer le dossier avant de l’utiliser dans le chemin d’accès. Le **[!UICONTROL Chemin :]** ne crée pas automatiquement de dossier.
+   * **[!UICONTROL Chemin d’accès :]** indique l’emplacement d’enregistrement du formulaire adaptatif. Vous pouvez enregistrer le formulaire adaptatif directement sur `/content/dam/formsanddocuments` ou créer un dossier tel que `/content/dam/formsanddocuments/adaptiveforms` pour enregistrer un formulaire adaptatif. Assurez-vous de créer le dossier avant de l’utiliser dans le chemin d’accès. Le champ **[!UICONTROL Chemin d’accès]** ne crée pas de dossier automatiquement.
 
-1. Appuyez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et s’ouvre dans l’éditeur de Forms adaptatif. L’éditeur affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé selon vos besoins.
+1. Appuyez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et s’ouvre dans l’éditeur de formulaires adaptatifs. L’éditeur affiche le contenu disponible dans le modèle. Il affiche également la barre latérale permettant de personnaliser le formulaire nouvellement créé selon vos besoins.
 
-   Selon le type de formulaire adaptatif, les éléments de formulaire présents dans le <!--XFA form template, XML schema or --> Le schéma JSON ou le modèle de données de formulaire s’affichent dans la variable **[!UICONTROL Objets de modèle de données]** de l’onglet **[!UICONTROL Explorateur de contenu]** dans la barre latérale. Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif.
+   En fonction du type de formulaire adaptatif, les éléments de formulaire présents dans le <!--XFA form template, XML schema or --> schéma JSON ou le modèle de données de formulaire associé sont affichés dans l’onglet **[!UICONTROL Objets de modèle de données]** de l’**[!UICONTROL explorateur de contenu]** dans la barre latérale. Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif.
 
 <!-- ## Create an Adaptive Form based on a Form Data Model {#fdm}
 
@@ -155,7 +155,7 @@ Do the following to use XML or JSON schema as form model for an Adaptive Form:
 
 ## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model}
 
-Vous pouvez modifier le modèle de formulaire d’un formulaire adaptatif (basé sur JSON ou modèle de données de formulaire). Vous ne pouvez pas passer d’un modèle de formulaire à un autre.
+Vous pouvez modifier le modèle d’un formulaire adaptatif (basé sur JSON ou modèle de données de formulaire). Vous ne pouvez pas passer d’un modèle de formulaire à un autre.
 
 1. Sélectionnez le document adaptatif et appuyez sur l’icône **Propriétés**.
 1. Ouvrez l’onglet **[!UICONTROL Modèle de formulaire]** et effectuez l’une des actions suivantes.
@@ -167,12 +167,12 @@ Vous pouvez modifier le modèle de formulaire d’un formulaire adaptatif (basé
 
 Vous pouvez également modifier les propriétés du modèle de formulaire à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif.
 
-1. Sélectionnez la **[!UICONTROL Conteneur de formulaires adaptatifs (racine)]** composant.
-1. Cliquez sur ![Icône Configurer](/help/forms/assets/configure-icon.svg) pour ouvrir la **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.
-1. Sélectionnez la **[!UICONTROL Modèle de données]** et effectuez l’une des opérations suivantes :
+1. Sélectionnez le composant **[!UICONTROL Conteneur de formulaires adaptatifs (racine)]**.
+1. Cliquez sur l’![icône Configurer](/help/forms/assets/configure-icon.svg) pour ouvrir les **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.
+1. Sélectionnez l’onglet **[!UICONTROL Modèle de données]** et effectuez l’une des actions suivantes :
 
-   * Si le formulaire adaptatif est dépourvu de modèle de formulaire, vous pouvez choisir un modèle de formulaire et sélectionner en conséquence <!-- a form template, --> Schéma XML ou JSON ou modèle de données de formulaire.
-   * Si le formulaire adaptatif est basé sur un modèle de formulaire, vous ne pouvez pas le modifier. Vous pouvez en choisir un autre <!-- form template, --> Schéma XML ou JSON ou modèle de données de formulaire pour le même modèle de formulaire, selon le cas.
+   * Si le formulaire adaptatif ne dispose pas de modèle de formulaire, vous pouvez choisir un autre modèle de formulaire et, en conséquence, sélectionner <!-- a form template, -->un schéma XML ou JSON ou un modèle de données de formulaire.
+   * Si le formulaire adaptatif est basé sur un modèle de formulaire, vous ne pouvez pas modifier ce dernier. Vous pouvez choisir un autre <!-- form template, --> schéma XML ou JSON ou un autre modèle de données de formulaire pour le même modèle de formulaire, selon le cas.
 1. Appuyez sur ![Enregistrer](/help/forms/assets/check-button.png) pour enregistrer les propriétés.
 
-![Prise en charge de schéma FDM](/help/forms/assets/fdmsupport.png)
+![FDM-Schema-Support](/help/forms/assets/fdmsupport.png)
