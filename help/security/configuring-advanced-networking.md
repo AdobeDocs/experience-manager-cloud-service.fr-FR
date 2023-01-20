@@ -3,9 +3,9 @@ title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
 source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3053'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -48,13 +48,14 @@ Une sortie de port flexible est recommandée si vous n’avez pas besoin de VPN 
 
 ### Configuration {#configuring-flexible-port-egress-provision}
 
-Une fois par programme, le point d’entrée `/program/<programId>/networkInfrastructures` POST est invoqué, simplement en transmettant la valeur du `flexiblePortEgress` pour le paramètre de `kind` et de région. Le point d’entrée répond avec le `network_id`, ainsi que d’autres informations, y compris le statut. L&#39;ensemble complet des paramètres et la syntaxe exacte, ainsi que des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peut être référencé dans la documentation de l’API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
+Une fois par programme, le point d’entrée `/program/<programId>/networkInfrastructures` POST est invoqué, simplement en transmettant la valeur du `flexiblePortEgress` pour le paramètre de `kind` et de région. Le point d’entrée répond avec le `network_id`, ainsi que d’autres informations, y compris le statut. Le jeu complet de paramètres et la syntaxe exacte, ainsi que des informations importantes comme les paramètres qui ne peuvent pas être modifiés plus tard, [peuvent être référencés dans la documentation de l’API.](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/createNetworkInfrastructure)
 
 Une fois l’appel lancé, l’approvisionnement de l’infrastructure réseau prend généralement environ 15 minutes. Un appel au [point d’entrée GET de l’infrastructure réseau de Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/getNetworkInfrastructure) affiche l’état « ready ».
 
 Si la configuration de sortie de port flexible à l’échelle du programme est prête, le point d’entrée `PUT /program/<program_id>/environment/<environment_id>/advancedNetworking` doit être invoqué pour chaque environnement afin d’activer la mise en réseau au niveau de l’environnement et de déclarer éventuellement toute règle de transfert de port. Les paramètres sont configurables par environnement afin d’offrir une certaine flexibilité.
 
-Les règles de transfert de port doivent être déclarées pour tout port de destination autre que le port 80/443, mais uniquement si vous n’utilisez pas le protocole http ou https, en spécifiant le jeu d’hôtes de destination (noms ou adresses IP, et avec des ports). Pour chaque hôte de destination, les clients doivent mapper le port de destination prévu à un port entre 30 000 et 30 999.
+Les règles de transfert de port doivent être déclarées pour tout port de destination autre que le port 80/443, uniquement si le protocole http ou https n’est pas utilisé,
+en spécifiant le jeu d’hôtes de destination (noms ou adresses IP, avec les ports). Pour chaque hôte de destination, les clients doivent mapper le port de destination prévu à un port entre 30 000 et 30 999.
 
 L’API doit répondre en quelques secondes seulement et indiquer un statut de mise à jour et, après environ 10 minutes, le point d’entrée `GET` indique que la mise en réseau avancée est activée.
 
@@ -336,7 +337,7 @@ Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dé
 ## Clients avec une adresse sortante dédiée héritée {#legacy-dedicated-egress-address-customers}
 
 Si vous avez reçu une adresse IP de sortie dédiée avant le 30/09/2021, votre fonction d’adresse IP de sortie dédiée ne prend en charge que les ports HTTP et HTTPS.
-Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés. En outre, un point de terminaison de sortie dédié peut uniquement parler à une cible via HTTP/HTTPS sur les ports 80/443, respectivement.
+Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés. De plus, un point de terminaison de sortie dédié peut uniquement communiquer avec une cible via HTTP/HTTPS sur les ports 80/443, respectivement.
 
 ## Réseau privé virtuel (VPN) {#vpn}
 
