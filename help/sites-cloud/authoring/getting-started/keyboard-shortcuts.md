@@ -3,15 +3,15 @@ title: Raccourcis clavier pour les consoles
 description: Utilisez ces raccourcis clavier pour gagner du temps lors de la création
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
 source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '373'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 # Raccourcis clavier pour les consoles {#keyboard-shortcuts-for-consoles}
 
-Les raccourcis suivants sont disponibles pour les consoles Sites, Assets, Utilisateurs, Groupes, Projets et Fragments d’expérience. Il existe également des raccourcis spécifiques pour la variable [Console Fragments de contenu](#keyboard-shortcuts-for-the-content-fragments-console).
+Les raccourcis suivants sont disponibles pour les consoles Sites, Ressources, Utilisateurs, Groupes, Projets et Fragments d’expérience. Il existe également des raccourcis spécifiques pour la [Console Fragments de contenu](#keyboard-shortcuts-for-the-content-fragments-console).
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
@@ -82,6 +82,6 @@ Vous pouvez désactiver les raccourcis clavier à deux emplacements :
 
 Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent à l’utilisation de consoles et d’autres à la [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
-## Raccourcis clavier pour la console Fragments de contenu {#keyboard-shortcuts-for-the-content-fragments-console}
+## Raccourcis clavier de la console Fragments de contenu {#keyboard-shortcuts-for-the-content-fragments-console}
 
-Certains raccourcis clavier s’appliquent à la fonction [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md)
+Certains raccourcis clavier s’appliquent à la [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
