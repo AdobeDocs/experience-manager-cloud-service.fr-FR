@@ -3,9 +3,9 @@ title: Extension d’ [!DNL Adobe Experience Manager]  as a Cloud Service à l�
 description: Extension d’ [!DNL Adobe Experience Manager] as a Cloud Service à l’aide d’Adobe Developer App Builder.
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
 source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '589'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
