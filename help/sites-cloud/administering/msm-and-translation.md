@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Vous pouvez généralement créer un gabarit de site dans une langue, pour un pa
 >
 >Limitez l’utilisation de Multi Site Manager au contenu d’une seule langue.
 >
->Par exemple, utilisez le gabarit anglais pour créer la version anglaise des pages pour les États-Unis, le Canada, la Grande-Bretagne, etc. et utilisez le gabarit français pour créer la version française des pages pour la France, la Suisse, le Canada, etc.
+>Par exemple, utilisez le gabarit anglais pour créer la version anglaise des pages pour les États-Unis, le Canada, le Royaume-Uni, etc. et utilisez le gabarit français pour créer la version française des pages pour la France, la Suisse, le Canada, etc.
 
 Le diagramme suivant illustre la manière dont les principaux concepts sont en corrélation (mais n’affiche pas tous les niveaux/éléments impliqués) :
 
