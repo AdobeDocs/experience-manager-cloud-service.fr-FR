@@ -3,9 +3,9 @@ title: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteu
 description: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
 source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3714'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ Cette section décrit certaines bonnes pratiques générales d’optimisation po
 
 ### URL {#urls}
 
-Il existe certaines bonnes pratiques acceptées dans les URL.
+Il existe certaines bonnes pratiques reconnues dans les URL.
 
 Dans votre projet AEM, lors de l’évaluation des URL, posez-vous la question suivante :
 
-*&quot;Si un utilisateur voit cette URL et qu’aucun des contenus de la page n’est visible, peut-il décrire ce qu’était cette page ?&quot;*
+*« Si une personne voyait cette URL mais pas le contenu de la page, aurait-elle une idée du contenu de cette page ? »*
 
-Si la réponse est oui, il est probable que l’URL fonctionne bien pour un moteur de recherche.
+Si la réponse est oui, alors l’URL fonctionne probablement bien pour un moteur de recherche.
 
 Voici quelques conseils généraux sur la façon d’optimiser les URL pour les moteurs de recherche :
 
@@ -39,9 +39,9 @@ Voici quelques conseils généraux sur la façon d’optimiser les URL pour les 
 * Évitez si possible d’utiliser des paramètres de requête. Si nécessaire, limitez-les à deux ou moins.
 
    * Utilisez la structure de répertoires pour indiquer l’architecture d’informations, si disponible.
-   * Si une structure de répertoires n’est pas une option, utilisez des sélecteurs Sling dans l’URL plutôt que des chaînes de requête. Outre la valeur d’optimisation pour les moteurs de recherche fournie, les sélecteurs sling rendent les pages mises en cache pour Dispatcher.
+   * Si une structure de répertoires n’est pas désirable, utilisez des sélecteurs Sling dans l’URL plutôt que des chaînes de requêtes. En plus de fournir une valeur pour l’optimisation du moteur de recherche, les sélecteurs Sling permettent la mise en cache des pages pour le Dispatcher.
 
-* Plus une URL est lisible, mieux c’est. la présence de mots-clés dans l’URL augmente la valeur .
+* Plus une URL est lisible, mieux c’est ; faites figurer des mots-clés pour valoriser l’URL.
 
    * Si vous utilisez des sélecteurs sur une page, il est préférable d’opter pour des sélecteurs avec une valeur sémantique.
    * Si une personne ne peut pas lire votre URL, un moteur de recherche ne le peut pas non plus.
@@ -50,11 +50,11 @@ Voici quelques conseils généraux sur la façon d’optimiser les URL pour les 
 est préférable à 
 `mybrand.com/products/product-detail.1234.html`
 
-* Évitez les sous-domaines lorsque cela est possible, car les moteurs de recherche les traitent comme des entités différentes, ce qui fragmente la valeur d’optimisation pour les moteurs de recherche du site.
+* Évitez autant que possible les sous-domaines, car les moteurs de recherche les traitent comme des entités différentes et réduisent la valeur du site pour l’optimisation du moteur de recherche.
 
    * Utilisez plutôt des sous-chemins de premier niveau. Par exemple, utilisez `es.mybrand.com/home.html` plutôt que `www.mybrand.com/es/home.html`.
 
-   * Planifiez votre hiérarchie de contenu de manière à ce qu’elle corresponde à la présentation du contenu, conformément à cette directive.
+   * Planifiez la hiérarchie de contenu afin qu’elle corresponde à la façon dont le contenu est présenté, conformément à cette consigne.
 
 * L’efficacité des mots-clés dans les URL réduit à mesure qu’augmentent la longueur de l’URL et la position du mot-clé. En d’autres termes, plus c’est court, mieux c’est.
 
@@ -73,12 +73,12 @@ est préférable à
 
 * Soutenez la non-sensibilité à la casse dans les requêtes d’URL.
 
-   * Configurez Dispatcher pour réécrire toutes les requêtes entrantes en minuscules.
+   * Configurez le Dispatcher afin de réécrire toutes les requêtes entrantes en minuscules.
    * Formez les auteurs de contenu afin qu’ils créent toutes les pages en utilisant des minuscules.
 
 * Assurez-vous que chaque page est diffusée uniquement à partir d’un protocole.
 
-   * Il arrive que des sites soient diffusés via `http` jusqu’à ce qu’un utilisateur arrive sur une page avec, par exemple, un formulaire de passage en caisse ou de connexion, où il passe alors en `https`. Lorsque vous créez un lien à partir de cette page, si l’utilisateur peut revenir à `http` pages et y accéder `https`, le moteur de recherche les suit comme deux pages distinctes.
+   * Il arrive que des sites soient diffusés via `http` jusqu’à ce qu’un utilisateur arrive sur une page avec, par exemple, un formulaire de passage en caisse ou de connexion, où il passe alors en `https`. En cas de liaison depuis cette page, si l’utilisateur ou l’utilisatrice peut revenir aux pages `http` et y accéder par `https`, le moteur de recherche les suit comme deux pages distinctes.
 
    * Actuellement, Google préfère les pages `https` aux pages `http`. Pour cette raison, il est parfois plus facile pour tous les acteurs de diffuser l’ensemble du site par `https`.
 
@@ -100,13 +100,13 @@ Cette section décrit les étapes requises de façon à configurer AEM afin qu�
 
 ### Utilisation de sélecteurs Sling {#using-sling-selectors}
 
-Auparavant, l’utilisation des paramètres de requête était la pratique acceptée lors de la création d’une application web d’entreprise.
+Auparavant, des paramètres de requête étaient généralement utilisés lors de la création d’une application web d’entreprise.
 
 La tendance des dernières années a été de les supprimer afin que les URL soient plus lisibles. Sur de nombreuses plates-formes, cela implique la mise en œuvre de redirections sur le serveur web ou réseau de diffusion de contenu, mais Sling simplifie cela. Les sélecteurs Sling :
 
 * améliorent la lisibilité des URL ;
-* Permet de mettre en cache vos pages sur Dispatcher, améliorant souvent la sécurité.
-* permettent de traiter le contenu directement, plutôt que de disposer d’une servlet générique qui récupère le contenu. Vous bénéficiez ainsi des avantages des listes de contrôle d’accès que vous appliquez à votre référentiel et des filtres que vous appliquez sur Dispatcher.
+* permettent de mettre les pages en cache sur le Dispatcher et améliorent souvent la sécurité ;
+* permettent de traiter le contenu directement, plutôt que de disposer d’une classe servlet générique qui récupère le contenu. Vous pouvez ainsi profiter des avantages des listes ACL que vous appliquez au référentiel et des filtres que vous appliquez sur le Dispatcher.
 
 #### Utilisation de sélecteurs pour les servlets {#using-selectors-for-servlets}
 
@@ -115,7 +115,7 @@ AEM offre deux options lors de la rédaction de servlets :
 * Servlets **bin**
 * Servlets **Sling**
 
-Les exemples suivants illustrent la manière d’enregistrer des servlets qui suivent ces deux modèles et l’avantage obtenu en utilisant des servlets Sling.
+Les exemples suivants illustrent comment enregistrer des servlets qui suivent ces deux schémas, ainsi que l’avantage obtenu grâce à l’utilisation des servlets Sling.
 
 #### Servlets bin (un niveau vers le bas) {#bin-servlets-one-level-down}
 
@@ -140,9 +140,9 @@ L’URL résultante utilisée doit ressembler à ce qui suit :
 Avec cette approche, quelques points doivent être pris en considération :
 
 * L’URL elle-même perd sa valeur en termes d’optimisation pour les moteurs de recherche. Les utilisateurs accédant au site, y compris les moteurs de recherche, ne reçoivent aucune valeur sémantique de l’URL, car l’URL représente un chemin programmatique et non la hiérarchie du contenu.
-* La présence de paramètres de requête dans l’URL signifie que Dispatcher ne sera pas en mesure de mettre en cache la réponse.
+* La présence de paramètres de requête dans l’URL signifie que le Dispatcher ne pourra pas mettre la réponse en cache.
 * Si vous souhaitez sécuriser cette servlet, vous devez mettre en œuvre votre propre logique de sécurité personnalisée dans la servlet.
-* Dispatcher doit être configuré (avec soin) pour exposer `/bin/myApp/myServlet`. Exposer simplement `/bin` permettrait d’accéder à certaines servlets qui ne doivent pas être ouvertes pour les visiteurs du site.
+* Le Dispatcher doit être configuré (avec soin) afin d’exposer `/bin/myApp/myServlet`. Exposer simplement `/bin` permettrait d’accéder à certaines servlets qui ne doivent pas être ouvertes pour les visiteurs du site.
 
 #### Servlets Sling (un niveau vers le bas) {#sling-servlets-one-level-down}
 
@@ -167,13 +167,13 @@ L’URL résultante utilisée doit ressembler à ce qui suit :
 Les avantages de cette approche sont les suivants :
 
 * Vous pouvez coder la valeur de l’optimisation pour les moteurs de recherche, acquise grâce à la sémantique présente dans la hiérarchie du site et le nom de la page.
-* Comme aucun paramètre de requête n’est présent, Dispatcher peut mettre en cache la réponse. En outre, toute mise à jour apportée à la page gérée invalide ce cache lorsque la page est activée.
-* Toutes les listes de contrôle d’accès appliquées à `/content/my-brand/my-page` prennent effet lorsqu’un utilisateur tente d’accéder à ce servlet.
-* Dispatcher sera déjà configuré pour diffuser ce contenu en fonction de la diffusion du site web. Aucune configuration supplémentaire n’est nécessaire.
+* Comme aucun paramètre de requête n’est présent, le Dispatcher peut mettre la réponse en cache. En outre, toutes les mises à jour apportées à la page adressée invalident ce cache lorsque la page est activée.
+* Toutes les listes ACL appliquées à `/content/my-brand/my-page` prennent effet lorsqu’un utilisateur ou une utilisatrice tente d’accéder à cette servlet.
+* Le Dispatcher aura déjà été configuré pour diffuser ce contenu en tant que fonction de diffusion du site web. Aucune configuration supplémentaire n’est nécessaire.
 
 ### Réécriture d’URL {#url-rewriting}
 
-Dans AEM, toutes les pages web sont stockées sous `/content/my-brand/my-content`. Cela peut être utile du point de vue de la gestion des données de référentiel. Toutefois, il ne s’agit pas nécessairement de la manière dont vous souhaitez que vos clients voient votre site et cela peut être en conflit avec la recommandation d’optimisation pour les moteurs de recherche selon laquelle les URL doivent être aussi courtes que possible. En outre, vous pouvez diffuser plusieurs sites web à partir de la même instance AEM et de noms de domaine différents.
+Dans AEM, toutes les pages web sont stockées sous `/content/my-brand/my-content`. Cela peut être utile du point de vue de la gestion des données de référentiel. Toutefois, il ne s’agit pas nécessairement de la manière dont vous souhaitez que vos clients voient votre site et cela peut être en conflit avec la recommandation d’optimisation pour les moteurs de recherche selon laquelle les URL doivent être aussi courtes que possible. En outre, vous pouvez diffuser plusieurs sites web depuis la même instance AEM et différents noms de domaines.
 
 Cette section décrit les options disponibles dans AEM pour gérer ces URL et les présenter aux utilisateurs d’une manière plus lisible et tenant davantage compte de l’optimisation pour les moteurs de recherche.
 
@@ -229,21 +229,21 @@ Dans une installation AEM standard :
 
 Les définitions de mappage peuvent être ajoutées à cet emplacement pour mapper des requêtes entrantes, réécrire des URL sur des pages dans AEM, ou les deux.
 
-Pour créer un mappage, créez un `sling:Mapping` noeud à cet emplacement sous `/http` ou `/https`. En fonction des propriétés `sling:match` et `sling:internalRedirect` définies sur ce nœud, AEM redirigera tout le trafic pour l’URL correspondante vers la valeur spécifiée dans la propriété `internalRedirect`.
+Pour créer un mappage, créez un nœud `sling:Mapping` à cet emplacement sous `/http` ou `/https`. En fonction des propriétés `sling:match` et `sling:internalRedirect` définies sur ce nœud, AEM redirigera tout le trafic pour l’URL correspondante vers la valeur spécifiée dans la propriété `internalRedirect`.
 
-Bien qu’il s’agisse de l’approche documentée dans la documentation officielle d’AEM et de Sling, cette mise en œuvre ne fournit qu’une prise en charge limitée des expressions régulières par rapport aux options disponibles en utilisant directement `SlingResourceResolver`. En outre, l’implémentation de mappages de cette manière peut entraîner des problèmes d’invalidation du cache de Dispatcher.
+Bien qu’il s’agisse de l’approche documentée dans la documentation officielle d’AEM et de Sling, cette mise en œuvre ne fournit qu’une prise en charge limitée des expressions régulières par rapport aux options disponibles en utilisant directement `SlingResourceResolver`. De plus, une telle mise en œuvre des mappages peut entraîner des problèmes d’invalidation du cache du Dispatcher.
 
 Voici un exemple de la manière dont ce problème se produit :
 
 1. Un utilisateur visite votre site web et demande `https://www.mydomain.com/my-page.html`.
-1. Dispatcher transfère cette demande au serveur de publication.
+1. Le Dispatcher transmet cette requête au serveur de publication.
 1. En utilisant `/etc/map`, le serveur de publication résout cette requête en `/content/my-brand/my-page` et effectue le rendu de la page.
 
-1. Dispatcher met la réponse en cache à l’adresse `/my-page.html` et renvoie la réponse à l’utilisateur.
-1. Un auteur de contenu modifie cette page et l’active.
-1. L’agent de vidage de Dispatcher envoie une demande d’invalidation pour `/content/my-brand/my-page`**.** Étant donné que Dispatcher ne comporte pas de page mise en cache dans ce chemin, l’ancien contenu reste mis en cache et obsolète.
+1. Le Dispatcher met la réponse en cache à l’adresse `/my-page.html` et renvoie la réponse à l’utilisateur.
+1. Un créateur/une créatrice de contenu modifie cette page et l’active.
+1. L’agent de vidage du Dispatcher envoie une demande d’invalidation pour `/content/my-brand/my-page`**.** Étant donné que le Dispatcher ne possède pas de page mise en cache dans ce chemin, l’ancien contenu reste en cache et est périmé.
 
-Il existe des moyens de configurer des règles de purge par message personnalisées qui mappent l’URL plus courte à l’URL plus longue à des fins d’invalidation du cache.
+Il existe plusieurs façons de configurer des règles de vidage du Dispatcher personnalisées qui mappent les URL plus courtes aux URL plus longues à des fins d’invalidation du cache.
 
 Toutefois, il existe également une manière plus simple de gérer cela :
 
@@ -288,7 +288,7 @@ Toutefois, il existe également une manière plus simple de gérer cela :
 
 Jusqu’à présent, vous avez mis en œuvre des mappages avec la logique dans vos composants pour utiliser ces mappages lors de la génération des URL sur les pages.
 
-La dernière pièce du puzzle est de gérer ces URL raccourcies lorsqu’elles entrent dans Dispatcher, où se trouve l’emplacement `mod_rewrite` entre en jeu. Le plus grand avantage de l’utilisation de `mod_rewrite` est que les URL sont mappées à leur forme longue. *before* ils sont envoyés au module de Dispatcher. Cela signifie que Dispatcher demande l’URL longue au serveur de publication et la met en cache en conséquence. Par conséquent, les vidages de Dispatcher qui arrivent du serveur de publication peuvent invalider ce contenu.
+La gestion de ces URL raccourcies lorsqu’elles entrent dans le Dispatcher constitue la pièce finale du puzzle ; c’est là que `mod_rewrite` entre en jeu. L’utilisation de `mod_rewrite` a pour principal avantage que les URL sont mappées vers leur forme complète *avant* leur envoi au module de Dispatcher. Cela signifie que le Dispatcher demande l’URL longue au serveur de publication et la met en cache en conséquence. Par conséquent, toutes les demandes de vidage du Dispatcher entrant à partir du serveur de publication invalideront correctement ce contenu.
 
 Pour mettre en œuvre ces règles, vous pouvez ajouter des éléments `RewriteRule` sous votre hôte virtuel dans la configuration Apache HTTP Server. Si vous souhaitez développer les URL raccourcies de l’exemple précédent, vous pouvez mettre en œuvre une règle qui ressemble à ce qui suit :
 
@@ -303,7 +303,7 @@ Pour mettre en œuvre ces règles, vous pouvez ajouter des éléments `RewriteRu
 
 ### Balises d’URL canoniques {#canonical-url-tags}
 
-Les balises d’URL réglementaires sont des balises de lien placées dans l’en-tête d’un document HTML pour savoir comment les moteurs de recherche doivent traiter une page au cours de l’indexation du contenu. L’avantage qu’ils offrent est de s’assurer qu’une page (différentes versions de) est indexée de la même manière, même si l’URL de la page peut contenir des différences.
+Les balises d’URL réglementaires sont des balises de lien placées dans l’en-tête d’un document HTML pour savoir comment les moteurs de recherche doivent traiter une page au cours de l’indexation du contenu. Elles présentent l’avantage de s’assurer qu’une page (et ses différentes versions) sera indexée comme étant la même, même si l’URL menant vers la page peut contenir des différences.
 
 Par exemple, si un site offre une version d’une page compatible avec les imprimantes, un moteur de recherche indexerait potentiellement cette page indépendamment de la version standard de la page. La balise canonique indique au moteur de recherche qu’elles sont identiques.
 
@@ -320,9 +320,9 @@ Les deux appliqueraient la balise suivante à la tête de la page :
 
 `href` peut être relatif ou absolu. Le code doit être inclus dans le balisage de la page pour déterminer l’URL canonique de la page et générer cette balise.
 
-### Configuration du Dispatcher pour l’insensibilité à la casse {#configuring-the-dispatcher-for-case-insensitivity}
+### Configuration du Dispatcher pour la non-sensibilité à la casse {#configuring-the-dispatcher-for-case-insensitivity}
 
-Il est recommandé de diffuser toutes les pages en utilisant des minuscules. Cependant, vous ne souhaitez pas qu’un utilisateur obtienne une erreur 404 lorsqu’il accède à votre site web avec une URL contenant des lettres majuscules. Pour cette raison, Adobe recommande d’ajouter une règle de réécriture dans la configuration Apache HTTP Server de façon à mapper toutes les URL entrantes vers une version en lettres minuscules. En outre, les auteurs de contenu doivent être formés pour créer leurs pages avec des noms en minuscules.
+Il est recommandé de diffuser toutes les pages en utilisant des minuscules. Cependant, vous ne souhaitez pas qu’un utilisateur obtienne une erreur 404 lorsqu’il accède à votre site web avec une URL contenant des lettres majuscules. Pour cette raison, Adobe recommande d’ajouter une règle de réécriture dans la configuration Apache HTTP Server de façon à mapper toutes les URL entrantes vers une version en lettres minuscules. En outre, les créateurs de contenu doivent être formés pour créer leurs pages avec des noms en minuscules.
 
 Pour configurer Apache afin de forcer le trafic entrant à être écrit en minuscules, ajoutez les éléments suivants à la configuration `vhost` :
 
@@ -331,7 +331,7 @@ RewriteEngine On
 RewriteMap lowercase int:tolower
 ```
 
-Ajoutez également le code suivant en haut de la page `htaccess` fichier :
+De plus, ajoutez le code suivant au tout début du fichier `htaccess` :
 
 ```xml
 RewriteCond $1 [A-Z]
@@ -340,7 +340,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### Mise en œuvre de robots.txt pour protéger les environnements de développement {#implementing-robots-txt-to-protect-development-environments}
 
-Les moteurs de recherche *doivent* normalement vérifier la présence d’un fichier `robots.txt` à la racine du site avant d’analyser votre site. Bien que les principaux moteurs de recherche tels que Google, Yahoo ou Bing le respectent tous, certains moteurs de recherche étrangers ne le font pas.
+Les moteurs de recherche *doivent* normalement vérifier la présence d’un fichier `robots.txt` à la racine du site avant d’analyser votre site. Si les principaux moteurs de recherche comme Google, Yahoo ou Bing le font, d’autres ne le font pas.
 
 La façon la plus simple de bloquer l’accès à l’ensemble de votre site consiste à placer un fichier nommé `robots.txt` à la racine du site avec le contenu suivant :
 
@@ -351,17 +351,17 @@ Disallow: /
 
 Sur un environnement de production, vous pouvez également choisir de désactiver certains chemins que vous ne voulez pas voir indexer.
 
-La mise en garde au moment de placer l’objet `robots.txt` à la racine du site, les requêtes de purge de Dispatcher peuvent effacer ce fichier et les mappages d’URL placent probablement la racine du site à un autre emplacement que la balise `DOCROOT` comme défini dans la configuration Apache HTTP Server. Pour cette raison, il est courant de placer ce fichier sur l’instance de création à la racine du site et de le répliquer dans l’instance de publication.
+Lorsque vous placez le fichier `robots.txt` à la racine du site, il est possible que les requêtes de vidage du Dispatcher effacent ce fichier. Les mappages d’URL placeront alors probablement la racine du site à un emplacement différent du `DOCROOT`, comme défini dans la configuration Apache HTTP Server. Pour cette raison, il est courant de placer ce fichier sur l’instance de création à la racine du site et de le répliquer dans l’instance de publication.
 
 ### Création d’un plan de site XML sur AEM {#building-an-xml-sitemap-on-aem}
 
-Les robots d’indexation utilisent les plans de site XML pour mieux comprendre la structure des sites web. Bien qu’il n’y ait aucune garantie que la fourniture d’un plan de site entraîne l’amélioration du classement SEO, il s’agit d’une bonne pratique convenue. Vous pouvez gérer manuellement un fichier XML sur le serveur web pour l’utiliser comme plan du site, mais il est recommandé de générer le plan du site par programmation, ce qui garantit que, lorsque les auteurs créent du contenu, le plan du site reflète automatiquement leurs modifications.
+Les robots d’indexation utilisent les plans de site XML pour mieux comprendre la structure des sites web. Bien que le fait de fournir un plan de site ne garantisse pas un meilleur référencement sur les moteurs de recherche, c’est une pratique recommandée. Vous pouvez conserver manuellement un fichier XML sur le serveur web afin qu’il soit utilisé comme plan de site, mais il est conseillé de le générer par programmation, ce qui garantit que, lorsque les créateurs créent du contenu, le plan de site reflète automatiquement leurs modifications.
 
 AEM utilise le [module de plan de site Apache Sling](https://github.com/apache/sling-org-apache-sling-sitemap) pour générer des plans de site XML, un module qui offre un large éventail d’options permettant aux développeurs et aux éditeurs de tenir à jour un plan de site XML Sites.
 
-Le module plan de site Apache Sling fait la distinction entre un plan de site de niveau supérieur et un plan de site imbriqué, tous deux générés pour toute ressource qui possède la variable `sling:sitemapRoot` définie sur `true`. En règle générale, les plans de site sont rendus à l’aide de sélecteurs situés au chemin du plan de site de niveau supérieur de l’arborescence, qui est la ressource qui n’a aucun autre ancêtre racine du plan de site. Cette racine de plan de site de niveau supérieur expose également l’index de plan de site, qui est normalement ce que le propriétaire d’un site doit configurer dans le portail de configuration du moteur de recherche ou ajouter au site. `robots.txt`.
+Le module de plan de site Apache Sling fait la distinction entre un plan de site de niveau supérieur et un plan de site imbriqué, tous deux générés pour toute ressource dont la propriété `sling:sitemapRoot` est définie sur `true`. En règle générale, les plans de site sont rendus à l’aide de sélecteurs localisés par le chemin du plan de site de niveau supérieur de l’arborescence, qui correspond à la ressource qui n’a aucun autre ancêtre racine du plan de site. Cette racine de plan de site de niveau supérieur expose également l’index de plan de site, qui est normalement ce que le propriétaire d’un site doit configurer dans le portail de configuration du moteur de recherche ou ajouter au fichier `robots.txt` du site.
 
-Prenons l’exemple d’un site qui définit une racine de plan de site de niveau supérieur à l’adresse `my-page` et une racine de plan de site imbriquée à l’emplacement `my-page/news`, afin de générer un plan de site dédié pour les pages de la sous-arborescence news. Les URL pertinentes résultantes seraient :
+Prenons l’exemple d’un site qui définit une racine de plan de site de niveau supérieur à l’adresse `my-page` et une racine de plan de site imbriqué à l’emplacement `my-page/news`, afin de générer un plan de site dédié pour les pages de la sous-arborescence news. Les URL pertinentes résultantes seraient :
 
 * `<https://www.mydomain.com/my-brand/my-page.sitemap-index.xml>`
 * `<https://www.mydomain.com/my-brand/my-page.sitemap.xml>`
@@ -377,16 +377,16 @@ Pour activer la tâche en arrière-plan qui génère le plan de site XML, un `Si
 
 ![Plan de site Apache Sling – Planificateur](assets/sling-sitemap-scheduler.png)
 
-La tâche de génération du plan de site peut s’exécuter sur les instances de niveau création et publication. Dans la plupart des cas, il est recommandé d’exécuter la génération sur les instances de niveau publication, car les URL canoniques appropriées ne peuvent être générées qu&#39;à ce niveau (en raison des règles de mappage des ressources Sling généralement présentes uniquement sur les instances de niveau publication). Cependant, il est possible d’intégrer en tant que plug-in une implémentation personnalisée du mécanisme d’externalisation utilisé pour générer les URL canoniques en implémentant l’interface [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html). Si une implémentation personnalisée peut générer les URL canoniques d’un plan de site sur les instances de niveau création, le `SitemapScheduler` peut être configuré pour le mode d’exécution création et la charge de travail de génération du plan de site XML peut être répartie entre les instances du cluster de services création. Dans ce scénario, une attention particulière doit être accordée à la manipulation de contenus qui n’ont pas encore été publiés, qui ont été modifiés ou qui ne sont visibles que par un groupe restreint d’utilisateurs.
+La tâche de génération du plan de site peut s’exécuter sur les instances de niveau création et publication. Dans la plupart des cas, il est recommandé d’exécuter la génération sur les instances de niveau publication, car les URL canoniques appropriées ne peuvent être générées qu’à ce niveau (en raison des règles de mappage des ressources Sling généralement présentes uniquement sur les instances de niveau publication). Cependant, il est possible d’intégrer en tant que plug-in une implémentation personnalisée du mécanisme d’externalisation utilisé pour générer les URL canoniques en implémentant l’interface [SitemapLinkExternalizer](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/externalizer/SitemapLinkExternalizer.html). Si une implémentation personnalisée peut générer les URL canoniques d’un plan de site sur les instances de niveau création, le `SitemapScheduler` peut être configuré pour le mode d’exécution création et la charge de travail de génération du plan de site XML peut être répartie entre les instances du cluster de services création. Dans ce scénario, une attention particulière doit être accordée à la manipulation de contenus qui n’ont pas encore été publiés, qui ont été modifiés ou qui ne sont visibles que par un groupe restreint d’utilisateurs.
 
-AEM Sites contient une implémentation par défaut d’un `SitemapGenerator` qui parcourt une arborescence de pages pour générer un plan de site. Il est préconfiguré pour ne générer que les URL canoniques d’un site et des alternatives linguistiques, le cas échéant. Il peut également être configuré pour inclure la date de dernière modification d’une page, si nécessaire. Pour ce faire, activez l’option *Ajouter la dernière modification* de la configuration *Optimisation du moteur de recherche Adobe AEM - Générateur de plan de site de l’arborescence de page* et sélectionnez une *Dernière modification de source*. Lorsque les plans de site sont générés au niveau de publication, il est recommandé d’utiliser la variable `cq:lastModified` date.
+AEM Sites contient une implémentation par défaut d’un `SitemapGenerator` qui parcourt une arborescence de pages pour générer un plan de site. Il est préconfiguré pour ne générer que les URL canoniques d’un site et des alternatives linguistiques, le cas échéant. Il peut également être configuré pour inclure la date de dernière modification d’une page, si nécessaire. Pour ce faire, activez l’option *Ajouter la dernière modification* de la configuration *Optimisation du moteur de recherche Adobe AEM - Générateur de plan de site de l’arborescence de page* et sélectionnez une *Dernière modification de source*. Lorsque les plans de site sont générés au niveau de publication, il est recommandé d’utiliser la date `cq:lastModified`.
 
 ![Optimisation du moteur de recherche Adobe AEM - Configuration du générateur de plans de site de l’arborescence de page](assets/sling-sitemap-pagetreegenerator.png)
 
 Pour limiter le contenu d’un plan de site, les interfaces de service suivantes peuvent être mises en œuvre si nécessaire :
 
 * Un [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html) peut être mis en œuvre pour masquer des pages dans les plans de site XML générés par le générateur de plans de site spécifique à AEM Sites.
-* Un [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) ou [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) peut être mis en œuvre pour filtrer les produits ou les catégories à partir des plans de site XML générés par les générateurs de plans de site spécifiques du [Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html).
+* Un [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) ou [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html) peut être mis en œuvre pour filtrer les produits ou les catégories à partir des plans de site XML générés par les générateurs de plans de site spécifiques du [Commerce Integration Framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=fr).
 
 Si les implémentations par défaut ne fonctionnent pas dans un cas d’utilisation particulier ou si les points d’extension ne sont pas suffisamment flexibles, un `SitemapGenerator` personnalisé peut être mis en œuvre pour prendre le contrôle intégral du contenu d’un plan de site généré. L’exemple suivant illustre la procédure à suivre, en utilisant la logique de mise en œuvre par défaut pour AEM Sites. Il utilise le [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) comme point de départ pour parcourir une arborescence de pages :
 
@@ -470,11 +470,11 @@ Lors du lancement d’un site avec une nouvelle structure, la mise en œuvre et 
 * Au fil du temps, les URL héritées ont accumulé de la valeur en matière de référencement sur les moteurs de recherche. La mise en œuvre d’une redirection permet au moteur de recherche d’appliquer cette valeur à la nouvelle URL.
 * Les utilisateurs de votre site peuvent avoir créé des signets sur ces pages. En mettant en œuvre des redirections, vous êtes assuré de diriger l’utilisateur vers la page du nouveau site qui correspond le mieux à l’emplacement auquel il tentait d’accéder sur l’ancien site.
 
-Veillez à consulter la section Ressources supplémentaires qui suit pour obtenir des instructions sur l’implémentation des redirections 301 et un outil afin de tester le fonctionnement normal de vos redirections.
+Veillez à consulter la section Ressources supplémentaires qui suit pour obtenir des instructions sur la mise en œuvre des redirections 301, ainsi que pour en savoir plus sur un outil permettant de tester que vos redirections fonctionnent comme prévu.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Pour plus d’informations, voir les ressources supplémentaires suivantes :
+Pour plus d’informations, consultez les ressources supplémentaires suivantes :
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)
