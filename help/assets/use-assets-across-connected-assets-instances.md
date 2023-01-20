@@ -7,14 +7,14 @@ feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
 source-git-commit: 01d54ba56ccab372396829a012c4da8ef4a57fe2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3797'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Utilisation des ressources connectées pour partager des ressources DAM dans [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
+# Utilisation des ressources connectées pour partager des ressources de gestion des ressources numériques dans [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 Dans les grandes entreprises, l’infrastructure requise pour créer des sites web peut être distribuée. Il arrive que les fonctionnalités et les ressources numériques de création de sites web permettant de créer ces sites web se trouvent dans différents déploiements. Cette situation peut être motivée par la répartition géographique des déploiements existants, nécessaire pour travailler conjointement. Elle peut être aussi due à l’acquisition conduisant à des infrastructures hétérogènes, y compris différentes versions d’[!DNL Experience Manager], que la société mère souhaite utiliser conjointement.
 
@@ -68,7 +68,7 @@ Les différents rôles impliqués pour configurer et la fonctionnalité et leurs
 
 Experience Manager vous permet de connecter un déploiement DAM à distance en tant que source à plusieurs déploiements [!DNL Sites] Experience Manager. Toutefois, vous pouvez connecter un déploiement [!DNL Sites] à un seul déploiement DAM à distance.
 
-Évaluez le nombre optimal d’instances Sites à connecter à un déploiement DAM distant. Adobe recommande de connecter progressivement les instances Sites au déploiement et de tester l’absence d’impact sur les performances au niveau de la gestion des actifs numériques distants, car chaque instance Sites connectée contribue au trafic de données sur la gestion des actifs numériques distants.
+Évaluez le nombre optimal d’instances Sites à connecter à un déploiement DAM à distance. Adobe recommande de connecter progressivement les instances Sites au déploiement et de vérifier l’absence d’impact sur les performances au niveau de la gestion des actifs numériques à distance, car chaque instance Sites connectée contribue au trafic de données sur la gestion des actifs numériques à distance.
 
 Les diagrammes suivants illustrent les scénarios pris en charge :
 
@@ -263,9 +263,9 @@ Configurez la fonction Ressources connectées uniquement lorsque vous devez util
 
 +++
 
-+++**Peux-tu connecter plusieurs [!DNL Sites] déploiements vers un déploiement DAM distant après la configuration des ressources connectées ?**
++++**Est-il possible de connecter plusieurs déploiements [!DNL Sites] à un déploiement DAM à distance après la configuration des ressources connectées ?**
 
-Oui, vous pouvez connecter plusieurs [!DNL Sites] se déploie sur un déploiement DAM distant après la configuration des ressources connectées. Pour plus d’informations, consultez l’[Architecture des ressources connectées](#connected-assets-architecture).
+Oui, vous pouvez connecter plusieurs déploiements [!DNL Sites] à un déploiement DAM à distance après la configuration des ressources connectées. Pour plus d’informations, consultez l’[Architecture des ressources connectées](#connected-assets-architecture).
 
 +++
 
