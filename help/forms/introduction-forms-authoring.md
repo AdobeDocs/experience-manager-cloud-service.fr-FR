@@ -9,13 +9,13 @@ topic-tags: author, introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: tm+mt
+exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
+source-git-commit: 51d7198ccf24ca0b46c4e4a34cb1d1ee8ed7e2c0
+workflow-type: ht
 source-wordcount: '2409'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
-
 
 # Éditeur de formulaires adaptatifs {#introduction-to-authoring-adaptive-forms}
 
@@ -37,9 +37,9 @@ Les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle
 
    >[!NOTE]
    >
-   > Vous pouvez modifier les propriétés du modèle de formulaire à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif. Pour plus d’informations, voir [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+   > Vous pouvez modifier les propriétés du modèle de formulaire à partir de l’éditeur de formulaires adaptatifs ou de l’éditeur de modèles de formulaires adaptatifs. Pour plus d’informations, consultez l’article [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
-Pour créer un formulaire adaptatif, voir [Création d’un formulaire adaptatif](creating-adaptive-form.md).
+Pour créer un formulaire adaptatif, consultez l’article [créer un formulaire adaptatif](creating-adaptive-form.md).
 
 ## Interface utilisateur de création de formulaires adaptatifs {#adaptive-form-authoring-ui}
 
@@ -155,7 +155,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Pièce jointe</td>
-   <td><p>Ajoute un bouton qui permet aux utilisateurs de rechercher et de joindre des documents annexes au formulaire.</p> <p><strong>Remarque :</strong> Le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichiers dans des formulaires adaptatifs activés pour Adobe Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/fr/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formats de fichiers pris en charge</a>.</p> </td>
+   <td><p>Ajoute un bouton qui permet aux utilisateurs et utilisatrices de rechercher et de joindre des documents annexes au formulaire.</p> <p><strong>Remarque :</strong> Le composant Pièce jointe prend en charge un ensemble prédéfini de formats de fichiers dans des formulaires adaptatifs activés pour Adobe Sign. Pour plus d’informations, voir <a href="https://helpx.adobe.com/fr/document-cloud/help/supported-file-formats-fill-sign.html#main-pars_text">Formats de fichiers pris en charge</a>.</p> </td>
   </tr>
   <tr>
    <td>Liste des pièces jointes</td>
