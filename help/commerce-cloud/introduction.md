@@ -4,9 +4,9 @@ description: Présentation et aperçu de Content and Commerce. Experience Manage
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
 source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -64,7 +64,7 @@ CIF est conçu vous permettre d’innover en continu grâce à un module complé
 
 ### Intégrations {#integrations}
 
-Connectez votre écosystème (une solution commerciale, par exemple) à l’Experience Cloud à l’aide de  [Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS sans serveur basé sur un micro-service, et [Implémentation de référence de CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
+Connectez votre réseau (une solution de commerce, par exemple) à Experience Cloud à l’aide d’[Adobe I/O Runtime](https://www.adobe.io/apis/experienceplatform/runtime.html), un PaaS sans serveur basé sur micro-service, et de l’[implémentation de référence de CIF](https://github.com/adobe/commerce-cif-graphql-integration-reference).
 
 ## Modèles et bonnes pratiques éprouvés {#proven}
 
