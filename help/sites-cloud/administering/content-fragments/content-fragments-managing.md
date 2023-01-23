@@ -241,8 +241,8 @@ Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de
 ## Publication et référencement d’un fragment {#publishing-and-referencing-a-fragment}
 
 >[!CAUTION]
-Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
-Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
+>Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+>Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
 Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication. Pour ce faire, utilisez la fonctionnalité Ressources standard.
 
@@ -260,17 +260,17 @@ Les fragments de contenu doivent être publiés pour être utilisés dans l’en
 De plus, lorsque vous [publiez une page qui utilise ce fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
 
 >[!CAUTION]
-Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
+>Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
 
 ## Annuler la publication d’un fragment {#unpublishing-a-fragment}
 
 Pour annuler la publication de fragments de contenu, sélectionnez un ou plusieurs fragments, puis cliquez sur **Annuler la publication**.
 
 >[!NOTE]
-L’action **Annuler la publication** est visible lorsque des fragments publiés sont disponibles.
+>L’action **Annuler la publication** est visible lorsque des fragments publiés sont disponibles.
 
 >[!CAUTION]
-Si le fragment est déjà référencé à partir d’un autre fragment ou d’une page, alors un message d’avertissement s’affiche et vous devez confirmer que vous souhaitez poursuivre.
+>Si le fragment est déjà référencé à partir d’un autre fragment ou d’une page, alors un message d’avertissement s’affiche et vous devez confirmer que vous souhaitez poursuivre.
 
 ## Suppression d’un fragment {#deleting-a-fragment}
 
@@ -280,13 +280,13 @@ Pour supprimer un fragment :
 2. Sélectionnez le fragment.
 
    >[!NOTE]
-   L’action **Supprimer** n’est pas proposée comme action rapide.
+   >L’action **Supprimer** n’est pas proposée comme action rapide.
 
 3. Sélectionnez **Supprimer** dans la barre d’outils.
 4. Confirmez l’action **Supprimer**.
 
    >[!CAUTION]
-   Si le fragment est déjà référencé à partir d’un autre fragment ou d’une page, un message d’avertissement s’affiche et vous devez confirmer que vous souhaitez procéder à une **suppression forcée**. Le fragment et son composant de fragment de contenu seront supprimés de toutes les pages de contenu.
+   >Si le fragment est déjà référencé à partir d’un autre fragment ou d’une page, un message d’avertissement s’affiche et vous devez confirmer que vous souhaitez procéder à une **suppression forcée**. Le fragment et son composant de fragment de contenu seront supprimés de toutes les pages de contenu.
 
 ## Recherche des références parentes du fragment {#parent-references-fragment}
 
@@ -299,7 +299,7 @@ Les détails des copies de langue sont accessibles à partir de la colonne **Lan
 ## Chronologie pour les fragments de contenu {#timeline-for-content-fragments}
 
 >[!NOTE]
-Cette fonctionnalité n’est disponible que dans la console **Ressources**.
+>Cette fonctionnalité n’est disponible que dans la console **Ressources**.
 
 Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.md#timeline) fournit les informations et les actions spécifiques aux fragments de contenu :
 
@@ -319,14 +319,13 @@ Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.
    * **Supprimer**
 
 >[!NOTE]
-Les commentaires :
-* Une fonctionnalité standard pour toutes les ressources
-* Réalisés dans la chronologie
-* Liés à la ressource de fragment
->
-Les annotations (pour les fragments de contenu) sont :
-* Entrées dans l’éditeur de fragments
-* Spécifiques à un segment de texte sélectionné au sein du fragment
+>Les commentaires :
+>* Une fonctionnalité standard pour toutes les ressources
+>* Réalisés dans la chronologie
+>* Liés à la ressource de fragment
+>Les annotations (pour les fragments de contenu) sont :
+>* Entrées dans l’éditeur de fragments
+>* Spécifiques à un segment de texte sélectionné au sein du fragment
 >
 
 
@@ -337,7 +336,7 @@ Par exemple :
 ## Comparaison des versions de fragments {#comparing-fragment-versions}
 
 >[!NOTE]
-Cette fonctionnalité n’est disponible que dans la console **Ressources**.
+>Cette fonctionnalité n’est disponible que dans la console **Ressources**.
 
 L’action de **comparer à la version actuelle** est disponible dans la [chronologie](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) après avoir sélectionné une version spécifique.
 
@@ -360,14 +359,14 @@ Elles sont affichées dans des versions côte à côte dans lesquelles :
 * **Terminé** vous ramène à la console
 
 >[!NOTE]
-Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison des fragments.
+>Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison des fragments.
 
 ![comparaison](assets/cfm-managing-06.png)
 
 ## Restauration vers une version spécifique   {#reverting-to-a-version}
 
 >[!NOTE]
-Cette fonctionnalité n’est disponible que dans la console **Ressources**.
+>Cette fonctionnalité n’est disponible que dans la console **Ressources**.
 
 Vous pouvez restaurer vers une version spécifique de votre fragment :
 
