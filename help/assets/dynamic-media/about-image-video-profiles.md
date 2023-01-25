@@ -4,10 +4,10 @@ description: Un profil d’image ou vidéo permet de déterminer les options à 
 feature: Asset Management,Image Profiles,Video Profiles
 role: Admin,User
 exl-id: 8c8f0a57-13f5-4903-8d76-bfb6ee83323c
-source-git-commit: f2f805043ab3037cb8dcc8636ab162c9d0f80e19
+source-git-commit: 419ec6604ee8c93510cb8bf4e1d46bc9b9c9383a
 workflow-type: tm+mt
-source-wordcount: '1261'
-ht-degree: 100%
+source-wordcount: '1376'
+ht-degree: 89%
 
 ---
 
@@ -55,7 +55,7 @@ Voir [Réglage de la taille du lot du workflow de retraitement](#adjusting-load)
 
 <!-- LEAVE IN PLACE, MAY BE USED IN THE FUTURE
 
-Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media’s Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
+Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job and so on until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. 
 
 -->
 
@@ -74,13 +74,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Dans la liste déroulante située dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Journal]**.
 1. Dans le coin inférieur gauche de la page, à droite du champ [!UICONTROL Commentaire], sélectionnez l’icône représentant un signe d’insertion (**^**).
 
-   ![Workflow de retraitement des ressources 1](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Capture d’écran des ressources en Experience Manager présentant un dossier sélectionné de ressources, la liste déroulante Frise chronologique mise en surbrillance, le bouton Démarrer le processus mis en surbrillance et l’icône en forme de carat située à droite du champ Commentaire sont également mises en surbrillance.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. Sélectionnez **[!UICONTROL Démarrer le workflow]**.
 1. Dans la liste déroulante **[!UICONTROL Démarrer le processus]**, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
 1. (Facultatif) Dans la zone de texte **Entrer le titre du processus**, saisissez le nom du workflow. Si nécessaire, vous pouvez utiliser le nom pour faire référence à l’instance de workflow.
 
-   ![Retraiter les ressources 2](/help/assets/dynamic-media/assets/reprocess-assets2.png)
+   ![Capture d’écran de l’interface utilisateur de la chronologie avec &quot;Scene7: Retraiter les ressources&quot; sélectionné dans la liste déroulante Démarrer le processus et le bouton Démarrer mis en surbrillance.](/help/assets/dynamic-media/assets/reprocess-assets2.png)
 
 1. Sélectionnez **[!UICONTROL Démarrer]**, puis **[!UICONTROL Confirmer]**.
 
@@ -95,13 +95,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
 1. Dans [!DNL Experience Manager], sélectionnez **[!UICONTROL Adobe Experience Manager]** pour accéder à la console de navigation globale, puis sélectionnez l’icône **[!UICONTROL Outils]** (marteau) > **[!UICONTROL Workflow > Modèles]**.
 1. Sur la page Modèles de processus, en mode Carte ou Liste, sélectionnez **[!UICONTROL Scene7 : Retraiter les ressources]**.
 
-   ![Page Modèles de processus avec le workflow Scene7 : Retraiter les ressources sélectionné en mode Carte](/help/assets/dynamic-media/assets/reprocess-assets7.png)
+   ![Capture d’écran de la page Modèles de processus avec &quot;Scene7 : Workflow Retraiter les ressources sélectionné dans le mode Carte du Experience Manager.](/help/assets/dynamic-media/assets/reprocess-assets7.png)
 
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**. Un nouvel onglet de navigateur ouvre la page du modèle de processus Scene7 : Retraiter les ressources.
 1. Dans le coin supérieur droit de la page du modèle de processus Scene7 : Retraiter les ressources, sélectionnez **[!UICONTROL Modifier]** pour « déverrouiller » le workflow.
 1. Dans le workflow, sélectionnez le composant Transfert par lots Scene7 pour ouvrir la barre d’outils, puis sélectionnez l’icône **[!UICONTROL Configurer]** de cette barre d’outils.
 
-   ![Composant Transfert par lots Scene7](/help/assets/dynamic-media/assets/reprocess-assets8.png)
+   ![Capture d’écran du composant &quot;Transfert par lots Scene7&quot; sur &quot;Scene7 : Retraiter les ressources avec le pointeur de la souris survolant l’icône &quot;Configurer&quot;.](/help/assets/dynamic-media/assets/reprocess-assets8.png)
 
 1. Dans la boîte de dialogue **[!UICONTROL Transfert par lots vers Scene7 – Propriétés des étapes]**, définissez les éléments suivants :
    * Dans les zones de texte **[!UICONTROL Titre]** et **[!UICONTROL Description]**, saisissez un titre et une description pour la tâche, le cas échéant.
@@ -111,13 +111,13 @@ Batch size is the number of assets that are amalgamated into a single IPS (Dynam
    * Dans le champ **[!UICONTROL Taille du lot]**, saisissez le nombre maximum de ressources (entre 50 et 1 000) à traiter dans une tâche de chargement par lots du serveur Dynamic Media.
    * Sélectionnez **[!UICONTROL Avancer sur dépassement de délai]** si vous souhaitez avancer à l’expiration du délai. Désélectionnez cette option si vous souhaitez passer à la boîte de réception à l’expiration du délai.
 
-   ![Boîte de dialogue des propriétés](/help/assets/dynamic-media/assets/reprocess-assets3.png)
+   ![Capture d’écran de la page &quot;Transfert par lots vers Scene7 - Propriétés des étapes&quot;.](/help/assets/dynamic-media/assets/reprocess-assets3.png)
 
 1. Dans le coin supérieur droit de la boîte de dialogue **[!UICONTROL Transfert par lots vers Scene7 – Propriétés des étapes]**, sélectionnez **[!UICONTROL Terminé]**.
 
 1. Dans le coin supérieur droit de la page du modèle de workflow Scene7 : Retraiter les ressources, sélectionnez **[!UICONTROL Synchroniser]**. Lorsque **[!UICONTROL Synchronisé]** est affiché, cela signifie que le modèle d’exécution du workflow est correctement synchronisé et prêt à retraiter les ressources dans un dossier.
 
-   ![Synchronisation du modèle de workflow](/help/assets/dynamic-media/assets/reprocess-assets1.png)
+   ![Capture d’écran des ressources en Experience Manager présentant un dossier sélectionné de ressources, la liste déroulante Frise chronologique mise en surbrillance, le bouton Démarrer le processus mis en surbrillance et l’icône en forme de carat située à droite du champ Commentaire sont également mises en surbrillance.](/help/assets/dynamic-media/assets/reprocess-assets1.png)
 
 1. Fermez l’onglet du navigateur qui affiche le modèle de workflow Scene7 : Retraiter les ressources.
 

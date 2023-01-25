@@ -4,10 +4,10 @@ description: Découvrez comment créer des profils d’image Dynamic Media conte
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 08c4474c71d39ba95191225279bbfca92bb64d7c
+source-git-commit: 163b6b19f0401213813d8de30caf8144855b4e4c
 workflow-type: tm+mt
-source-wordcount: '3524'
-ht-degree: 93%
+source-wordcount: '3488'
+ht-degree: 92%
 
 ---
 
@@ -17,15 +17,15 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 >[!IMPORTANT]
 >
->• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
-• Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
+>Les profils d’image ne s’appliquent pas aux fichiers PDF, GIF animé ou INDD (Adobe InDesign).
 
 ## Option Accentuation {#unsharp-mask}
 
-Lors de la création d’un profil d’image, vous pouvez utiliser l’option **[!UICONTROL Masque flou]** pour affiner un effet de filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre « Masque flou » d’Adobe Photoshop.
+Lors de la création d’un profil d’image, vous pouvez utiliser l’option **[!UICONTROL Masque flou]** pour affiner un effet de filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre Accentuation d’Adobe Photoshop.
 
 >[!NOTE]
-Le masque flou est appliqué uniquement aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de plus grandes tailles dans le ptiff ne sont pas affectés par l’accentuation. En revanche, les rendus de plus petites tailles, tels que les miniatures, sont modifiés (et affichent l’accentuation).
+>
+>Le masque flou est appliqué uniquement aux rendus réduits au sein du PTIFF (pyramid tiff), dont la résolution est réduite de plus de 50 %. Cela signifie que les rendus de plus grandes tailles dans le ptiff ne sont pas affectés par l’accentuation. En revanche, les rendus de plus petites tailles, tels que les miniatures, sont modifiés (et affichent l’accentuation).
 
 L’option **[!UICONTROL Accentuation]** propose les options de filtre suivantes :
 
@@ -80,8 +80,8 @@ Pour contrôler l’utilisation du recadrage intelligent et optimiser le temps d
 Vous avez le choix entre deux options de recadrage d’image. Vous pouvez également choisir d’automatiser la création de nuanciers de couleurs et d’images ou de conserver le contenu de recadrage dans toutes les résolutions cibles.
 
 >[!IMPORTANT]
-• Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
-• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
+>
+>Adobe vous recommande d’examiner tous les recadrages et tous les échantillons générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
 
 | Option | Quand l’utiliser | Description |
 | --- | --- | --- |
@@ -95,12 +95,13 @@ Vous avez le choix entre deux options de recadrage d’image. Vous pouvez égale
 La résolution maximale prise en charge pour la taille de fichier d’entrée est de 16K.
 
 >[!NOTE]
-La résolution 16K est une résolution graphique affichant environ 16 000 pixels horizontalement. La définition typique de la résolution 16K est de 15 360 x 8 640, soit le double du nombre de pixels de la 8K (UHD) dans chaque dimension, pour un total de quatre fois plus de pixels. Cette résolution est de 132,7 mégapixels, soit 16 fois plus de pixels que la résolution 4K et 64 fois plus que la résolution 1080p.
+>
+>La résolution 16K est une résolution graphique affichant environ 16 000 pixels horizontalement. La définition typique de la résolution 16K est de 15 360 x 8 640, soit le double du nombre de pixels de la 8K (UHD) dans chaque dimension, pour un total de quatre fois plus de pixels. Cette résolution est de 132,7 mégapixels, soit 16 fois plus de pixels que la résolution 4K et 64 fois plus que la résolution 1080p.
 
 | Format d’image  | Extension de fichier insensible à la casse | Type MIME | Espace colorimétrique d’entrée pris en charge | Taille maximale du fichier d’entrée pris en charge | Format d’image pris en charge ? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRVB | 4 Go | Oui |
-| CMJN |  |  |  |  | Non |
+| CMJN |  |  |  |  | Oui |
 | EPS |  |  |  |  | Non |
 | GIF | `.gif` | image/gif | sRVB | 15 Go | Oui ; la première image du GIF animé est utilisée pour le rendu. Vous ne pouvez pas configurer ni modifier la première image. |
 | JPEG | `.jpg` et `.jpeg` | image/jpeg | sRVB | 15 Go | Oui |
@@ -209,16 +210,17 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 ## Modification du recadrage intelligent ou de l’échantillon intelligent d’une seule image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-• Adobe vous recommande de consulter les recadrages intelligents et les échantillons intelligents générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
-• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
+>
+>Adobe vous recommande de consulter les recadrages intelligents et les échantillons intelligents générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
 
 Vous pouvez réaligner ou redimensionner manuellement la fenêtre de recadrage intelligent d’une image pour affiner davantage son point focal.
 
 Une fois que vous avez modifié et enregistré un recadrage intelligent, la modification se propage partout où vous utilisez le recadrage pour ces images spécifiques.
 
 >[!IMPORTANT]
-Lorsque vous réalignez ou redimensionnez manuellement la fenêtre de recadrage intelligent d’une ressource, cette modification est conservée, même si vous décidez par la suite de retraiter la ressource. Toutefois, si vous modifiez la largeur, la hauteur ou les deux dans la zone **[!UICONTROL Recadrage d’image réactive]** du profil d’image, cette ressource est alors soumise à un nouveau traitement.
-Voir [Retraitement des ressources Dynamic Media dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>
+>Lorsque vous réalignez ou redimensionnez manuellement la fenêtre de recadrage intelligent d’une ressource, cette modification est conservée, même si vous décidez par la suite de retraiter la ressource. Toutefois, si vous modifiez la largeur, la hauteur ou les deux dans la zone **[!UICONTROL Recadrage d’image réactive]** du profil d’image, cette ressource est alors soumis à un nouveau traitement.
+>Voir [Retraitement des ressources Dynamic Media dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, si nécessaire.
 
@@ -244,16 +246,17 @@ Voir aussi [Modification du recadrage intelligent ou de l’échantillon intelli
 ## Modification du recadrage intelligent ou de l’échantillon intelligent de plusieurs images {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
-• Adobe vous recommande de consulter les recadrages intelligents et les échantillons intelligents générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
-• Le format d’image CMJN n’est pas pris en charge avec le recadrage intelligent.
+>
+>Adobe vous recommande de consulter les recadrages intelligents et les échantillons intelligents générés afin de vous assurer qu’ils sont appropriés et pertinents pour votre marque et vos valeurs.
 
 Après l’application d’un profil d’image (contenant un recadrage intelligent) sur un dossier, un recadrage est appliqué à toutes les images de ce dossier. Si vous le souhaitez, vous pouvez réaligner ou redimensionner *manuellement* la fenêtre de recadrage intelligent dans plusieurs images pour affiner davantage leur point focal.
 
 Une fois que vous avez modifié et enregistré un recadrage intelligent, la modification se propage partout où vous utilisez le recadrage pour ces images spécifiques.
 
 >[!IMPORTANT]
-Lorsque vous réalignez ou redimensionnez manuellement la fenêtre de recadrage intelligent de plusieurs ressources, ces modifications sont conservées, même si vous décidez par la suite de traiter à nouveau ces ressources. Toutefois, si vous modifiez la largeur, la hauteur ou les deux dans la zone **[!UICONTROL Recadrage d’image réactive]** du profil d’image, ces ressources sont alors soumises à un nouveau traitement.
-Voir [Retraitement des ressources Dynamic Media dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
+>
+>Lorsque vous réalignez ou redimensionnez manuellement la fenêtre de recadrage intelligent de plusieurs ressources, ces modifications sont conservées, même si vous décidez par la suite de traiter à nouveau ces ressources. Toutefois, si vous modifiez la largeur, la hauteur ou les deux dans la zone **[!UICONTROL Recadrage d’image réactive]** du profil d’image, ces ressources sont alors soumises à un nouveau traitement.
+>Voir [Retraitement des ressources Dynamic Media dans un dossier](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets).
 
 Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des recadrages supplémentaires, si nécessaire.
 
