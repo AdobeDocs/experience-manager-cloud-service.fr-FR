@@ -3,10 +3,10 @@ title: Support de nouveaux paramètres régionaux pour la localisation de formul
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. les langues anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-taïwanais (zh-TW) et coréen (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: f8bbc6605e77cf2858c69dae96e9ab32698d1f16
+source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 34%
+ht-degree: 33%
 
 ---
 
@@ -34,8 +34,8 @@ Pour ajouter de nouveaux paramètres régionaux lors de l’exécution des formu
 1. [Clonage de votre référentiel](#1-clone-the-repository-clone-the-repository)
 1. [Ajouter des paramètres régionaux au service GuideLocalizationService](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Ajouter un dossier spécifique au nom du paramètre régional](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-1. [Ajouter une bibliothèque XFA cliente pour des paramètres régionaux](#3-add-xfa-client-library-for-a-locale)
-1. [Ajouter une bibliothèque cliente de formulaires adaptatifs pour des paramètres régionaux](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+3,1 [Ajout d’une bibliothèque cliente XFA pour un paramètre régional](#3-add-xfa-client-library-for-a-locale)
+3,2 [Ajout de la bibliothèque cliente du formulaire adaptatif pour un paramètre régional](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Validation des modifications dans le référentiel et déploiement du pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
