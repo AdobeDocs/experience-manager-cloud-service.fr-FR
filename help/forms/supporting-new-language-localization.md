@@ -3,10 +3,10 @@ title: Support de nouveaux paramètres régionaux pour la localisation de formul
 seo-title: Supporting new locales for adaptive forms localization
 description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. les langues anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-taïwanais (zh-TW) et coréen (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
-source-git-commit: eb722054f6a51320a7772bf666f656418f8392cd
+source-git-commit: 848c6a4ea403f644408407aed0a7e06c3524d942
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 33%
+ht-degree: 34%
 
 ---
 
@@ -34,8 +34,8 @@ Pour ajouter de nouveaux paramètres régionaux lors de l’exécution des formu
 1. [Clonage de votre référentiel](#1-clone-the-repository-clone-the-repository)
 1. [Ajouter des paramètres régionaux au service GuideLocalizationService](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
 1. [Ajouter un dossier spécifique au nom du paramètre régional](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
-3,1 [Ajout d’une bibliothèque cliente XFA pour un paramètre régional](#3-add-xfa-client-library-for-a-locale)
-3,2 [Ajout de la bibliothèque cliente du formulaire adaptatif pour un paramètre régional](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+   * [Ajouter une bibliothèque XFA cliente pour des paramètres régionaux](#3-add-xfa-client-library-for-a-locale)
+   * [Ajouter une bibliothèque cliente de formulaires adaptatifs pour des paramètres régionaux](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
 1. [Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
 1. [Validation des modifications dans le référentiel et déploiement du pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
 
@@ -63,9 +63,9 @@ Pour ajouter de nouveaux paramètres régionaux lors de l’exécution des formu
 #### 3.1 Ajout de la bibliothèque cliente XFA pour un paramètre régional dans le dossier locale-name
 
 1. Créez un noeud appelé `[locale-name]_xfa` et saisissez comme `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, avec catégorie `xfaforms.I18N.<locale>`et ajoutez les fichiers suivants :
-* **I18N.js** qui définit `xfalib.locale.Strings` pour `<locale>`, comme défini dans `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-* **js.txt** qui contient les éléments suivants :
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+   * **I18N.js** qui définit `xfalib.locale.Strings` pour `<locale>`, comme défini dans `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+   * **js.txt** qui contient les éléments suivants :
+      */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
 #### 3.2. Ajout de la bibliothèque cliente Formulaire adaptatif pour un dossier locale-name {#add-adaptive-form-client-library-for-a-locale-br}
 
@@ -77,9 +77,9 @@ Pour ajouter de nouveaux paramètres régionaux lors de l’exécution des formu
 
 1. Ajouter **js.txt** contenant les éléments suivants :
 
-   ```text
+   ```
      i18n.js
-       LogMessages.js
+     LogMessages.js
    ```
 
 ### 4. Ajout de la prise en charge des paramètres régionaux pour le dictionnaire {#add-locale-support-for-the-dictionary-br}
@@ -143,7 +143,7 @@ En l’absence d’informations de paramètres régionaux, le formulaire adaptat
 
 Get [exemple de bibliothèque cliente](/help/forms/assets/locale-support-sample.zip) pour ajouter la prise en charge des nouveaux paramètres régionaux. Vous devez modifier le contenu du dossier dans les paramètres régionaux requis.
 
-### Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
+## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 
 * Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif.
 
