@@ -1,130 +1,152 @@
 ---
-title: Prise en charge de nouveaux paramètres régionaux pour la localisation des formulaires adaptatifs
-seo-title: Supporting new locales for Adaptive Forms localization
-description: AEM Forms permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. Les paramètres régionaux pris en charge par défaut sont l’anglais, le français, l’allemand et le japonais.
-seo-description: AEM Forms allows you to add new locales for localizing Adaptive Forms. The supported locales by default are English, French, German, and Japanese.
-uuid: 7f9fab6b-8d93-46bb-8c7c-7b723d5159ea
-content-type: reference
-products: SG_EXPERIENCEMANAGER/6.5/FORMS
-topic-tags: Configuration
-discoiquuid: d4e2acb0-8d53-4749-9d84-15b8136e610b
-docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+title: Support de nouveaux paramètres régionaux pour la localisation de formulaires adaptatifs
+seo-title: Supporting new locales for adaptive forms localization
+description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. les langues anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-taïwanais (zh-TW) et coréen (ko-KR).
+seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
+source-git-commit: f8bbc6605e77cf2858c69dae96e9ab32698d1f16
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 100%
+source-wordcount: '1141'
+ht-degree: 34%
 
 ---
-
 
 # Prise en charge de nouveaux paramètres régionaux pour la localisation des formulaires adaptatifs{#supporting-new-locales-for-adaptive-forms-localization}
 
 ## À propos des dictionnaires de paramètres régionaux {#about-locale-dictionaries}
 
-La localisation des formulaires adaptatifs repose sur deux types de dictionnaire de paramètres régionaux :
+La localisation des formulaires adaptatifs repose sur deux types de dictionnaires de paramètres régionaux : 
 
-**Dictionnaire spécifique au formulaire** : contient des chaînes utilisées dans des formulaires adaptatifs. Par exemple, étiquettes, noms de champs, messages d’erreur, descriptions d’aide, etc. Il est géré sous forme de jeu de fichiers XLIFF pour chaque jeu de paramètres régionaux et accessible à l’adresse `https://<host>:<port>/libs/cq/i18n/translator.html`.
+* **Dictionnaire spécifique au formulaire** : il contient des chaînes utilisées dans des formulaires adaptatifs. Par exemple, étiquettes, noms de champs, messages d’erreur, descriptions d’aide, etc. Il est géré sous forme de jeu de fichiers XLIFF pour chaque jeu de paramètres régionaux et accessible à l’adresse `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
-**Dictionnaires globaux** : la bibliothèque client AEM comporte deux dictionnaires globaux, gérés en tant qu’objets JSON. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous pouvez trouver ces dictionnaires dans CRXDe Lite, à l’adresse /libs/fd/xfaforms/clientlibs/I18N. Ces emplacements contiennent des dossiers distincts pour chaque jeu de paramètres régionaux. Les dictionnaires globaux n’étant généralement pas mis à jour fréquemment, la conservation des fichiers JavaScript distincts pour chaque jeu de paramètres régionaux permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur.
+* **Dictionnaires globaux** : la bibliothèque client AEM comporte deux dictionnaires globaux, gérés en tant qu’objets JSON. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous trouverez ces dictionnaires à l’adresse `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Ces emplacements contiennent des dossiers distincts pour chaque langue. Comme les dictionnaires globaux ne sont pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque langue permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur.
 
-### Comment fonctionne la localisation des formulaires adaptatifs {#how-localization-of-adaptive-form-works}
+Procédure de prise en charge d’une nouvelle localisation pour AEM Forms :
 
-Deux méthodes permettent d’identifier les paramètres régionaux du formulaire adaptatif. Lors du rendu d’un formulaire adaptatif, il identifie les paramètres régionaux nécessaires :
+1. [Ajoutez la localisation pour les paramètres régionaux non pris en charge](#add-localization-support-for-non-supported-locales-add-localization-support-for-non-supported-locales)
+1. [Utilisation de paramètres régionaux ajoutés dans Adaptive Forms](#use-added-locale-in-adaptive-forms-use-added-locale-in-af)
 
-* en examinant le sélecteur `[local]` dans l’URL du formulaire adaptatif. Le format de l’URL est `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`. L’utilisation du sélecteur `[local]` permet de mettre en cache un formulaire adaptatif ;
+## Ajoutez la localisation pour les paramètres régionaux non pris en charge {#add-localization-support-for-non-supported-locales}
+
+AEM Forms prend actuellement en charge la localisation de contenu Adaptive Forms en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-taïwanais (zh-TW) et coréen (ko-KR).
+
+Pour ajouter de nouveaux paramètres régionaux lors de l’exécution des formulaires adaptatifs :
+
+1. [Clonage de votre référentiel](#1-clone-the-repository-clone-the-repository)
+1. [Ajouter des paramètres régionaux au service GuideLocalizationService](#1-add-a-locale-to-the-guide-localization-service-add-a-locale-to-the-guide-localization-service-br)
+1. [Ajouter un dossier spécifique au nom du paramètre régional](#3-add-locale-name-specific-folder-add-locale-name-specific-folder)
+1. [Ajouter une bibliothèque XFA cliente pour des paramètres régionaux](#3-add-xfa-client-library-for-a-locale)
+1. [Ajouter une bibliothèque cliente de formulaires adaptatifs pour des paramètres régionaux](#4-add-adaptive-form-client-library-for-a-locale-add-adaptive-form-client-library-for-a-locale-br)
+1. [Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire](#5-add-locale-support-for-the-dictionary-add-locale-support-for-the-dictionary-br)
+1. [Validation des modifications dans le référentiel et déploiement du pipeline](#7-commit-the-changes-in-the-repository-and-deploy-the-pipeline-commit-changes-in-repo-deploy-pipeline)
+
+### 1. Cloner le référentiel {#clone-the-repository}
+
+1. Sur la ligne de commande, accédez à l’emplacement où vous souhaitez cloner le référentiel du Cloud Service Forms.
+1. Exécutez la commande [récupéré à partir de Cloud Manager.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git) Elle est similaire à `git clone https://git.cloudmanager.adobe.com/<my-org>/<my-program>/`.
+1. Utilisez le nom d’utilisateur et le mot de passe Git pour cloner le référentiel.
+1. Ouvrez le dossier de référentiel du Cloud Service Forms cloné dans l’éditeur de votre choix.
+
+### 2. Ajout d’un paramètre régional au service de localisation du guide {#add-a-locale-to-the-guide-localization-service-br}
+
+1. Recherchez la variable `Guide Localization Service.cfg.json` et ajoutez les paramètres régionaux que vous souhaitez ajouter à la liste des paramètres régionaux pris en charge.
+
+   >[!NOTE]
+   >
+   >* Créez un fichier portant le nom `Guide Localization Service.cfg.json` s’il n’est pas déjà présent.
+
+
+### 3. Ajout d’une bibliothèque cliente de dossiers spécifique au nom du paramètre régional {#add-locale-name-specific-folder}
+
+1. Dans le dossier UI.content, créez `etc/clientlibs` dossier.
+1. Créez plus loin un dossier appelé `locale-name` under `etc/clientlibs` pour servir de conteneur pour xfa et af clientlibs.
+
+#### 3.1 Ajout de la bibliothèque cliente XFA pour un paramètre régional dans le dossier locale-name
+
+1. Créez un noeud appelé `[locale-name]_xfa` et saisissez comme `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, avec catégorie `xfaforms.I18N.<locale>`et ajoutez les fichiers suivants :
+* **I18N.js** qui définit `xfalib.locale.Strings` pour `<locale>`, comme défini dans `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+* **js.txt** qui contient les éléments suivants :
+   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js I18N.js /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
+
+#### 3.2. Ajout de la bibliothèque cliente Formulaire adaptatif pour un dossier locale-name {#add-adaptive-form-client-library-for-a-locale-br}
+
+1. Créez un noeud appelé `[locale-name]_af` et saisissez comme `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, avec la catégorie comme `guides.I18N.<locale>` et les dépendances en tant que `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`.
+1. Créez un dossier appelé `javascript` et ajoutez les fichiers suivants :
+
+   * **i18n.js** qui définit `guidelib.i18n`, comportant des motifs « calendarSymbols », `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` pour `<locale>` conformément aux spécifications XFA décrites dans [Spécification du jeu de paramètres régionaux](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf).
+   * **LogMessages.js** qui définit `guidelib.i18n.strings` et `guidelib.i18n.LogMessages` pour `<locale>`, défini dans `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
+
+1. Ajouter **js.txt** contenant les éléments suivants :
+
+   ```text
+     i18n.js
+       LogMessages.js
+   ```
+
+### 4. Ajout de la prise en charge des paramètres régionaux pour le dictionnaire {#add-locale-support-for-the-dictionary-br}
+
+Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez ne se trouve pas parmi `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
+
+1. Création d’un dossier `languages` under `etc`, s’il n’est pas déjà présent.
+
+1. Ajoutez une propriété comprenant plusieurs valeurs `languages` au nœud, s’il ne sont pas déjà présents.
+1. Ajoutez les valeurs des paramètres régionaux par défaut `<locale-name>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, si elles ne sont pas déjà présentes.
+
+1. Ajoutez `<locale>` aux valeurs de la propriété `languages` de `/etc/languages`.
+
+
+```text
+Add the newly created folders in the `filter.xml` under etc/META-INF/[folder hierarchy] as:
+<filter root="/etc/clientlibs/[locale-name]"/>
+<filter root="/etc/languages"/>
+```
+
+Avant de valider les modifications dans le référentiel Git d’AEM, vous devez accéder à votre [Informations sur le référentiel Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#accessing-git).
+
+### 5. Validez les modifications dans le référentiel et déployez le pipeline {#commit-chnages-in-repo-deploy-pipeline}
+
+Validez les modifications dans le référentiel GIT après l’ajout d’une nouvelle prise en charge des paramètres régionaux. Déployez votre code à l’aide du pipeline de pile complet. En savoir plus [configuration d’un pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=en#setup-pipeline) pour ajouter une nouvelle prise en charge des paramètres régionaux.
+
+Une fois le pipeline terminé, le nouveau paramètre régional ajouté apparaît dans l’environnement AEM.
+
+### Utilisation de paramètres régionaux ajoutés dans le Forms adaptatif {#use-added-locale-in-af}
+
+Procédure d’utilisation et de rendu d’un formulaire adaptatif à l’aide d’un paramètre régional nouvellement ajouté :
+
+1. Connectez-vous à votre instance d’auteur AEM.
+1. Accédez à **Forms** >  **Forms et documents**.
+1. Sélectionnez un formulaire adaptatif et cliquez sur **Ajouter un dictionnaire** et **Ajout D’Un Dictionnaire Au Projet De Traduction** s’affiche.
+1. Spécifiez la variable **Titre du projet** et sélectionnez la variable **Langues cibles** dans le menu déroulant du **Ajout D’Un Dictionnaire Au Projet De Traduction** assistant.
+1. Cliquez sur **Terminé** et exécutez le projet de traduction créé.
+1. Sélectionnez un formulaire adaptatif et cliquez sur **Aperçu en tant que HTML**.
+1. Ajouter `&afAcceptLang=<locale-name>` dans l’URL d’un formulaire adaptatif.
+1. Actualisez la page et le formulaire adaptatif est rendu dans un paramètre régional spécifié.
+
+Il existe deux méthodes pour identifier les paramètres régionaux d’un formulaire adaptatif. Lors du rendu d’un formulaire adaptatif, il identifie les paramètres régionaux nécessaires :
+
+* examinant le sélecteur `[local]` dans l’URL du formulaire adaptatif. Le format d’URL est le suivant : `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. L’utilisation du sélecteur `[local]` permet de mettre en cache un formulaire adaptatif ;
 
 * en examinant les paramètres ci-dessous dans l’ordre spécifié :
 
    * Paramètre de requête `afAcceptLang`
 Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre le paramètre de demande 
-`afAcceptLang` pour forcer les paramètres régionaux. Par exemple, l’URL ci-dessous force le rendu du formulaire dans les paramètres régionaux japonais :
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+`afAcceptLang` pour forcer les paramètres régionaux. Par exemple, l’URL suivante force le rendu du formulaire dans la langue française-canadienne :
+      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
 
    * La langue du navigateur défini pour l’utilisateur, qui est spécifiée dans la demande par le biais de l’en-tête `Accept-Language`.
 
-   * Paramètre de langue de l’utilisateur spécifié dans AEM.
+S’il n’existe pas de bibliothèque client pour les paramètres régionaux nécessaires, il cherche une bibliothèque cliente correspondant au code de langue présent dans les paramètres régionaux. Par exemple, si le paramètre régional requis est `en_ZA` (en anglais d’Afrique du Sud) et la bibliothèque cliente pour `en_ZA` n’existe pas, le formulaire adaptatif utilise la bibliothèque cliente pour `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant aux paramètres régionaux `en`.
 
-   * Les paramètres régionaux du navigateur sont activés par défaut. Pour modifier les paramètres régionaux du navigateur :
-      * Ouvrez Configuration Manager. L’URL est `http://[server]:[port]/system/console/configMgr`
-      * Recherchez et ouvrez la configuration **[!UICONTROL du canal Web du formulaire adaptatif et de la communication interactive]**.
-      * Modifiez le statut de l’option **[!UICONTROL Utiliser les paramètres régionaux du navigateur]** et **[!UICONTROL enregistrez]** la configuration.
 
-Une fois que le paramètre régional est identifié, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire pour les paramètres régionaux nécessaires est introuvable, il utilise le dictionnaire pour la langue dans laquelle le formulaire adaptatif a été créé.
+Une fois le paramètre régional identifié, le formulaire adaptatif sélectionne le dictionnaire propre au formulaire. Si le dictionnaire spécifique au formulaire correspondant au paramètre régional requis est introuvable, il utilise le dictionnaire correspondant à la langue dans laquelle le formulaire adaptatif est créé.
 
 En l’absence d’informations de paramètres régionaux, le formulaire adaptatif est distribué dans la langue d’origine du formulaire. La langue d’origine est la langue utilisée lors du développement du formulaire adaptatif.
 
-S’il n’existe pas de bibliothèque client pour les paramètres régionaux nécessaires, il cherche une bibliothèque cliente correspondant au code de langue présent dans les paramètres régionaux. Par exemple, si les paramètres régionaux nécessaires sont `en_ZA` (anglais d’Afrique du sud) et qu’il n’existe pas de bibliothèque cliente correspondant à `en_ZA`, le formulaire adaptatif utilise la bibliothèque cliente correspondant à la langue `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant aux paramètres régionaux `en`.
+Get [exemple de bibliothèque cliente](/help/forms/assets/locale-support-sample.zip) pour ajouter la prise en charge des nouveaux paramètres régionaux. Vous devez modifier le contenu du dossier dans les paramètres régionaux requis.
 
-## Ajout de la prise en charge de la localisation pour les paramètres régionaux non pris en charge {#add-localization-support-for-non-supported-locales}
+### Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 
-[!DNL AEM Forms] prend actuellement en charge la localisation du contenu des formulaires adaptatifs vers l’anglais (en), l’espagnol (es), le français (fr), l’italien (it), l’allemand (de), le japonais (ja), le portugais du Brésil (pt-br), le chinois (zh-tn), le chinois de Taïwan (zh-tw) et le coréen (ko-kr).
+* Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif.
 
-Pour ajouter de nouveaux paramètres régionaux lors de l’exécution des formulaires adaptatifs :
-
-1. [Ajouter des paramètres régionaux au service GuideLocalizationService](supporting-new-language-localization.md#p-add-a-locale-to-the-guide-localization-service-br-p)
-
-1. [Ajouter une bibliothèque XFA cliente pour des paramètres régionaux](supporting-new-language-localization.md#p-add-xfa-client-library-for-a-locale-br-p)
-
-1. [Ajouter une bibliothèque cliente de formulaires adaptatifs pour des paramètres régionaux](supporting-new-language-localization.md#p-add-adaptive-form-client-library-for-a-locale-br-p)
-1. [Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire](supporting-new-language-localization.md#p-add-locale-support-for-the-dictionary-br-p)
-1. [Redémarrer le serveur](supporting-new-language-localization.md#p-restart-the-server-p)
-
-### Ajouter des paramètres régionaux au Guide Localization Service {#add-a-locale-to-the-guide-localization-service-br}
-
-1. Accédez à `https://'[server]:[port]'/system/console/configMgr`.
-1. Cliquer pour modifier le composant **Guide Localization Service**.
-1. Ajouter le paramètre régional que vous souhaitez à la liste des paramètres régionaux de supports
-
-![GuideLocalizationService](assets/configservice.png)
-
-### Ajouter la bibliothèque XFA cliente pour des paramètres régionaux {#add-xfa-client-library-for-a-locale-br}
-
-Créez un nœud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec la catégorie `xfaforms.I18N.<locale>` et ajoutez les fichiers ci-dessous à la bibliothèque cliente :
-
-* **I18N.js** qui définit `xfalib.locale.Strings` pour `<locale>`, comme défini dans `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
-
-* **js.txt** qui contient les éléments suivants :
-
-```text
-/libs/fd/xfaforms/clientlibs/I18N/Namespace.js
-I18N.js
-/etc/clientlibs/fd/xfaforms/I18N/LogMessages.js
-```
-
-### Ajouter une bibliothèque cliente de formulaires adaptatifs pour des paramètres régionaux {#add-adaptive-form-client-library-for-a-locale-br}
-
-Créez un nœud de type `cq:ClientLibraryFolder` sous `etc/<folderHierarchy>`, avec la catégorie `guides.I18N.<locale>` et les dépendances `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`.
-
-Ajouter les fichiers suivants à la bibliothèque cliente :
-
-* **i18n.js** qui définit `guidelib.i18n`, comportant des motifs « calendarSymbols », `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` pour `<locale>` conformément aux spécifications XFA décrites dans [Spécification du jeu de paramètres régionaux](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf). Vous pouvez également voir comment les autres paramètres locaux sont définis sur `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
-* **LogMessages.js** qui définit `guidelib.i18n.strings` et `guidelib.i18n.LogMessages` pour `<locale>`, défini dans `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
-* **js.txt** qui contient les éléments suivants :
-
-```text
-i18n.js
-LogMessages.js
-```
-
-### Ajouter la prise en charge des paramètres régionaux pour la langue du dictionnaire {#add-locale-support-for-the-dictionary-br}
-
-Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez ne se trouve pas parmi `en`, `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`.
-
-1. Créez un nœud `nt:unstructured` `languages` sous `etc`, s’il n’existe pas déjà.
-
-1. Ajoutez une propriété comprenant plusieurs valeurs `languages` au nœud, s’il ne sont pas déjà présents.
-1. Ajoutez les valeurs des paramètres régionaux par défaut `<locale>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, si elles ne sont pas déjà présentes.
-
-1. Ajoutez `<locale>` aux valeurs de la propriété `languages` de `/etc/languages`.
-
-L’élément `<locale>` s’affiche au niveau de `https://'[server]:[port]'/libs/cq/i18n/translator.html`.
-
-### Redémarrer le serveur {#restart-the-server}
-
-Redémarrez le serveur AEM pour que les paramètres régionaux ajoutés entrent en vigueur.
-
-## Exemples de bibliothèques pour ajouter la prise en charge de l’espagnol {#sample-libraries-for-adding-support-for-spanish}
-
-Exemples de bibliothèques clientes pour ajouter la prise en charge de l’espagnol
-
-[Obtenir le fichier](assets/sample.zip)
+* Lorsque de nouveaux champs sont ajoutés dans un formulaire adaptatif existant :
+   * **Pour la traduction automatique**: Recréez le dictionnaire et exécutez le projet de traduction. Les champs ajoutés à un formulaire adaptatif après la création d’un projet de traduction ne sont pas traduits.
+   * **Pour la traduction humaine**: Exporter le dictionnaire via `[server:port]/libs/cq/i18n/gui/translator.html`. Mettez à jour le dictionnaire des champs nouvellement ajoutés et téléchargez-le.
