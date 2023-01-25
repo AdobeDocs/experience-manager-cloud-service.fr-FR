@@ -1,13 +1,13 @@
 ---
 title: Extraction de contenu via l’API GraphQL
-description: Découvrez comment utiliser les fragments de contenu et l’API GraphQL en tant que système de gestion de contenu headless.
+description: Découvrez comment utiliser les fragments de contenu et l’API GraphQL en tant que système de gestion de contenu sans interface.
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 9997e0ea1d78ab2c8bab46a95a664e8537f16b13
 workflow-type: tm+mt
-source-wordcount: '732'
-ht-degree: 1%
+source-wordcount: '725'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,6 @@ ht-degree: 1%
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide"
 >title="Lancement de GraphQL Explorer"
 >abstract="GraphQL fournit une API basée sur les requêtes qui permet aux applications clientes externes d’interroger AEM uniquement pour le contenu dont elles ont besoin, à l’aide d’un seul appel API. Suivez ce module pour savoir comment exécuter deux types de requêtes différents. Découvrez ensuite comment récupérer le contenu du fragment de contenu que vous avez créé dans le module précédent.<br><br>Lancez ce module dans un nouvel onglet en cliquant ci-dessous."
->additional-url="https://video.tv.adobe.com/v/328618/?captions=fre_fr" text="Vidéo Extraction d’une entrée de contenu"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_graphql_guide_footer"

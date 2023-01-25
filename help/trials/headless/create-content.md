@@ -4,9 +4,9 @@ description: Utilisez le modèle de fragment de contenu que vous avez créé pr�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: 4a99ce530f3ca13f52648ffc0782d62cd5ebf395
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '459'
 ht-degree: 3%
 
 ---
@@ -22,8 +22,7 @@ ht-degree: 3%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Lancement de la console Fragment de contenu"
->abstract="La création de contenu cohérent et de haute qualité qui fonctionne de manière transparente sur vos applications et sites web vous permet d’offrir de superbes expériences client. Ce module vous guide tout au long de la création de votre premier fragment de contenu pour illustrer la façon de le réaliser. Regardez la vidéo pour comprendre pourquoi il s’agit d’une étape importante.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
->additional-url="https://video.tv.adobe.com/v/328618/?captions=fre_fr" text="Vidéo Créer une entrée de contenu"
+>abstract="La création de contenu cohérent et de haute qualité qui fonctionne de manière transparente sur vos applications et sites web vous permet d’offrir de superbes expériences client. Ce module vous guide tout au long de la création de votre premier fragment de contenu pour illustrer la façon de le réaliser.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
