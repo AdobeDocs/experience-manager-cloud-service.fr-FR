@@ -2,7 +2,7 @@
 title: Développer des sites avec le pipeline front-end
 description: Grâce au pipeline front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certaines considérations particulières du processus de génération front-end qui doivent être données.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 868382c37c3744642e96353aecfc4369105a42ec
+source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 88%
@@ -28,7 +28,7 @@ Le contenu de la variable `dist` est ce qui est finalement déployé vers AEM as
 
 ### Versions des noeuds {#node-versions}
 
-Par défaut, le pipeline front-end utilise le noeud 14, mais les versions 16 et 16 sont également disponibles.
+Par défaut, le pipeline front-end utilise le noeud 14, mais les versions 12 et 16 sont également disponibles.
 
 Vous pouvez utiliser la variable `CM_CUSTOM_VAR_NODE_VERSION` pour définir la version souhaitée.
 
