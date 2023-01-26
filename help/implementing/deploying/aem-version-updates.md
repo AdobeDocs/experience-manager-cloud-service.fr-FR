@@ -3,10 +3,10 @@ title: Mises à jour de la version d’AEM
 description: Mises à jour de la version d’AEM
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: becc07c0042cdfb5de86dc8895801c00c882f8a1
-workflow-type: ht
+source-git-commit: c3e1559923699d300d78a71195bd5658c3323331
+workflow-type: tm+mt
 source-wordcount: '399'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 ## Présentation {#introduction}
 
-AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour garantir que vos projets utilisent la version d’AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la version d’AEM la plus récente sans aucune interruption de service pour les utilisateurs et utilisatrices.
+AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour garantir que vos projets utilisent la version d’AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la dernière version AEM sans interruption de service pour les utilisateurs.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ Il existe deux types de mises à jour de la version d’AEM :
    * Elles sont principalement destinées à la maintenance et comprennent les derniers correctifs de bugs et les mises à jour de sécurité.
    * Elles ont un impact minimal, car les modifications apportées à AEM sont appliquées régulièrement.
 
-* **Mises à jour de nouvelles fonctionnalités**
+* **Mises à jour avec de nouvelles fonctionnalités**
 
    * Elles sont publiées selon un calendrier mensuel et prévisible.
 
