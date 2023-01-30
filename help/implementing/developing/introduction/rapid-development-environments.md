@@ -2,9 +2,9 @@
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour des itérations de développement rapides sur un environnement cloud.
 hidefromtoc: true
-source-git-commit: 084ebface5a28cdf5dbacf21b79934046062a847
+source-git-commit: 755e24ab8add432bf399e2674870d781f532302f
 workflow-type: tm+mt
-source-wordcount: '2350'
+source-wordcount: '2396'
 ht-degree: 7%
 
 ---
@@ -72,6 +72,11 @@ Pour plus d’informations sur l’utilisation de Cloud Manager pour créer des 
 
 Une fois que vous avez ajouté un RDE pour votre programme à l’aide de Cloud Manager, vous pouvez interagir avec celui-ci en configurant les outils de ligne de commande, comme décrit dans les étapes suivantes :
 
+>[!IMPORTANT]
+>
+>Assurez-vous que vous disposez de la dernière version de [Noeud et NPM installés](https://nodejs.org/en/download/) pour que l’interface de ligne de commande d’Adobe I/O et les modules externes connexes fonctionnent correctement.
+
+
 1. Installez les outils de l’interface de ligne de commande d’Adobe I/O en suivant la procédure [here](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 1. Installez le module externe de gestion de cloud des outils de l’interface de ligne de commande d’Adobe I/O et configurez-le comme décrit [here](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 1. Installez les outils de l’interface de ligne de commande d’Adobe I/O AEM le module externe RDE en exécutant les commandes suivantes :
@@ -120,6 +125,16 @@ Une fois que vous avez ajouté un RDE pour votre programme à l’aide de Cloud 
    Vous pouvez également vérifier que vous disposez de ce rôle de développeur si vous pouvez vous connecter à la console de développement en exécutant cette commande :
 
    `aio cloudmanager:environment:open-developer-console`
+
+>[!TIP]
+>
+>   Si vous voyez la variable `Warning: cloudmanager:list-programs is not a aio command.` , vous devez installer le [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) en exécutant la commande ci-dessous :
+>
+>   
+```
+>   aio plugins:install @adobe/aio-cli-plugin-cloudmanager
+>   ```
+
 
 ## Utilisation de RDE lors du développement d’une nouvelle fonctionnalité {#using-rde-while-developing-a-new-feature}
 
