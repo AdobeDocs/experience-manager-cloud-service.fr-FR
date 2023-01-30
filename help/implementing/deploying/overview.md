@@ -3,10 +3,10 @@ title: Déploiement sur AEM as a Cloud Service
 description: Déploiement sur AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
-source-wordcount: '3346'
-ht-degree: 100%
+source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+workflow-type: tm+mt
+source-wordcount: '3415'
+ht-degree: 96%
 
 ---
 
@@ -171,6 +171,7 @@ above appears to be internal, to confirm with Brian -->
 >id="aemcloud_packagemanager"
 >title="Gestionnaire de modules – Migration de modules de contenu modifiable"
 >abstract="Explorez l’utilisation du gestionnaire de modules pour les cas d’utilisation où un module de contenu doit être installé un par un, ce qui inclut l’importation de contenu spécifique de l’environnement de production vers l’environnement d’évaluation afin de déboguer un problème de production, le transfert de petits modules de contenu de l’environnement on-premise vers les environnements AEM cloud, etc."
+>abstract="Explorez l’utilisation du gestionnaire de packages pour les cas d’utilisation où un module de contenu doit être installé &quot;un module&quot; qui inclut l’importation de contenu spécifique de la production vers l’évaluation afin de déboguer un problème de production, le transfert de petit module de contenu de l’environnement on-premise vers les environnements AEM cloud, etc."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#cloud-migration" text="Outil de transfert de contenu"
 
 Il existe des cas d’utilisation où un module de contenu doit être installé de façon ponctuelle. Par exemple, pour déboguer un problème de production, vous devez importer du contenu spécifique de la production vers l’évaluation. Pour ces scénarios, le [Gestionnaire de package](/help/implementing/developing/tools/package-manager.md) peut être utilisé dans les environnements AEM as a Cloud Service.
@@ -281,27 +282,30 @@ Si un échec est signalé ou détecté après le déploiement, il est possible q
 
 ## Modes d’exécution {#runmodes}
 
-Dans les solutions AEM existantes, les clients peuvent exécuter des instances avec des modes d’exécution arbitraires et appliquer la configuration OSGI ou installer des lots OSGI sur ces instances. Les modes d’exécution définis incluent généralement le *service* (auteur et publication) et l’environnement (développement, évaluation et production).
+Dans les solutions AEM existantes, les clients peuvent exécuter des instances avec des modes d’exécution arbitraires et appliquer la configuration OSGI ou installer des lots OSGI sur ces instances. Les modes d’exécution définis incluent généralement la variable *service* (création et publication) et l’environnement (code, développement, évaluation, production).
 
 AEM as a Cloud Service, en revanche, est plus précis sur les modes d’exécution disponibles et sur la manière dont les lots OSGI et la configuration OSGI peuvent être mappés sur ces modes :
 
-* Les modes d’exécution de configuration OSGI doivent faire référence au développement, à l’évaluation et à la production pour l’environnement, ou à l’auteur et à la publication pour le service. La combinaison de `<service>.<environment_type>` est prise en charge dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Les modes d’exécution de la configuration OSGI doivent faire référence à RDE, dev, stage, prod pour l’environnement ou author, publish pour le service. La combinaison de `<service>.<environment_type>` est prise en charge dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le module de contenu sous `install/author` ou `install/publish`.
 
 Comme les solutions AEM existantes, il n’existe aucun moyen d’utiliser les modes d’exécution en vue d’installer le contenu uniquement pour des environnements ou services spécifiques. S’il était nécessaire d’amorcer un environnement de développement avec des données ou du code HTML qui n’est pas en évaluation ni en production, le gestionnaire de modules pourrait être utilisé.
 
 Les configurations de mode d’exécution prises en charge sont les suivantes :
 
-* **config** (*valeur par défaut qui s’applique à tous les services AEM*)
+* **config** (*La valeur par défaut s’applique à tous les services AEM.*)
 * **config.author** (*s’applique à tous les services Auteur AEM*)
 * **config.author.dev** (*s’applique au service Auteur de développement AEM*)
+* **config.author.rde** (*S’applique au service d’auteur RDE AEM*)
 * **config.author.stage** (*s’applique au service Auteur d’évaluation AEM*)
 * **config.author.prod** (*s’applique au service Auteur de production AEM*)
 * **config.publish** (*s’applique au service Publication AEM*)
 * **config.publish.dev** (*s’applique au service de publication de développement AEM*)
+* **config.publish.rde** (*S’applique au service de publication RDE AEM*)
 * **config.publish.stage** (*s’applique au service Publication d’évaluation AEM*)
 * **config.publish.prod** (*s’applique au service Publication de production AEM*)
 * **config.dev** (*s’applique aux services de développement AEM*)
+* **config.rde** (*S’applique aux services RDE*)
 * **config.stage** (*s’applique aux services d’évaluation AEM*)
 * **config.prod** (*s’applique aux services de production AEM*)
 
