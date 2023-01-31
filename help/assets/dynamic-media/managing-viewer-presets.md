@@ -1,13 +1,14 @@
 ---
 title: Gestion des paramètres prédéfinis de visionneuse
 description: Découvrez comment créer et gérer des paramètres prédéfinis de visionneuse dans Dynamic Media.
+contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: 1b9864c4532d15068b6edbd187a78a0ee0fdcfb4
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4194'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -69,7 +70,7 @@ Tous les paramètres de visionneuse prédéfinis fournis avec Dynamic Media sont
 * Smartphone Android™
 * Tablette Android™
 
-<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows® Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
+<!-- OUTDATED 2/25/22 * For video, extra support for MP4 playback is provided for [BlackBerry&reg;](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) and [Windows&reg; Phone](https://docs.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs). -->
 
 ### Types de médias riches pour les paramètres prédéfinis de visionneuse {#rich-media-types-for-viewer-presets}
 
@@ -137,7 +138,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
    <td><strong>Zoom vertical</strong></td>
    <td><p>La visionneuse Zoom vertical permet d’optimiser l’expérience de visionnage d’une imagerie de produit afin d’offrir aux utilisateurs la meilleure représentation d’un produit. L’emplacement vertical des échantillons présente les avantages suivants :</p>
     <ul>
-     <li>Il garantit que les échantillons se trouvent en tête de page.<br/> Lorsqu’ils sont horizontaux, en fonction de la taille de l’écran du poste de travail de l’utilisateur, les échantillons ne sont pas visibles tant que l’utilisateur ne faisait pas défiler la page vers le bas. Placés verticalement dans la visionneuse, les échantillons sont visibles quelle que soit la taille de l’écran de l’utilisateur.</li>
+     <li>Vérifie que les échantillons sont "au-dessus du pli".<br/> Avec des échantillons horizontaux, selon la taille de l’écran de l’utilisateur, les échantillons ne sont pas visibles tant que l’utilisateur n’a pas fait défiler la page vers le bas. Placés verticalement dans la visionneuse, les échantillons sont visibles quelle que soit la taille de l’écran de l’utilisateur.</li>
      <li>Il optimise la taille de l’image principale.<br />Avec les échantillons horizontaux, il est nécessaire de réserver de la place sur la page afin de vous assurer qu’ils sont visibles. Ce positionnement a réduit la taille de l’image principale. Toutefois, avec une disposition verticale des échantillons, vous n’avez pas besoin d’allouer cet espace. Ainsi, vous pouvez agrandir la taille de l’image principale.</li>
     </ul> </td>
   </tr>
@@ -156,7 +157,7 @@ Consultez aussi les [Démonstrations en direct](https://landing.adobe.com/en/na/
 
 Pour en savoir plus sur les versions de navigateur web et de système d’exploitation compatibles avec les visionneuses, consultez les notes de mise à jour des visionneuses.
 
-Voir « Notes de mise à jour sur les visionneuses » dans la table des matières du [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html).
+Voir « Notes de mise à jour sur les visionneuses » dans la table des matières du [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr).
 
 >[!NOTE]
 >
@@ -194,7 +195,7 @@ Voir « Notes de mise à jour sur les visionneuses » dans la table des matiè
    <td><code>html5_carouselviewer_numeric_light.css</code></td>
   </tr>
   <tr>
-   <td>Flyout</td>
+   <td>Fenêtre déroulante</td>
    <td>Zoom_fenêtre déroulante</td>
    <td><code>html5_flyoutviewer.css</code></td>
   </tr>
@@ -421,13 +422,13 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 
       L’éditeur visuel vous permet de voir l’effet d’une propriété spécifique sur un style. Définissez ou modifiez une propriété pour immédiatement en visualiser l’effet sur la visionneuse en utilisant l’échantillon à la gauche de l’éditeur.
 
-      Les propriétés de style CSS de chaque type de paramètre prédéfini de visionneuse sont décrites dans la rubrique d’aide Personnalisation de la visionneuse *`<viewer name>`* dans le [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Par exemple, si vous créez un paramètre prédéfini de visionneuse de type `Mixed_Media`, consultez [Personnaliser une visionneuse de médias mixtes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=fr) pour une liste et une description de chaque propriété.
+      Les propriétés de style CSS de chaque type de paramètre prédéfini de visionneuse sont décrites dans la rubrique d’aide Personnalisation de la visionneuse *`<viewer name>`* dans le [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr). Par exemple, si vous créez un paramètre prédéfini de visionneuse de type `Mixed_Media`, consultez [Personnaliser une visionneuse de médias mixtes](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=fr) pour une liste et une description de chaque propriété.
 
    * Si vous avez défini des paramètres de style dans un fichier CSS distinct, vous pouvez charger le fichier CSS dans Experience Manager Assets. Pour rechercher le fichier CSS chargé et l’associer au paramètre prédéfini de visionneuse, sélectionnez **[!UICONTROL Importer le fichier CSS]** sous le menu déroulant **[!UICONTROL Type sélectionné]** (si nécessaire, faites défiler l’éditeur visuel pour le voir).
 
       Lorsque vous importez un fichier CSS, l’éditeur visuel vérifie que le CSS utilise des marqueurs de visionneuse adaptés. Si vous créez par exemple une visionneuse de zoom, toutes les règles CSS que vous importez doivent être définies à l’aide de son nom de classe de visionneuse `.s7mixedmediaviewer` défini sur un élément de visionneuse parent.
 
-      Vous pouvez importer des CSS arbitraires créés manuellement, à condition qu’ils définissent correctement les marqueurs CSS d’une visionneuse donnée. (Les marqueurs CSS sont décrits dans la rubrique d’aide Personnalisation de la visionneuse *&lt;nom de visionneuse>* du [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html). Par exemple, pour en savoir plus sur les marqueurs CSS de la visionneuse de zoom, reportez-vous à [Personnalisation de la visionneuse de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=fr).) Il se peut toutefois que l’éditeur visuel ne comprenne pas certaines valeurs CSS. Dans de tels cas, l’éditeur visuel tente d’ignorer les erreurs de sorte que le code CSS reste fonctionnel.
+      Vous pouvez importer des CSS arbitraires créés manuellement, à condition qu’ils définissent correctement les marqueurs CSS d’une visionneuse donnée. (Les marqueurs CSS sont décrits dans la rubrique d’aide Personnalisation de la visionneuse *&lt;nom de visionneuse>* du [Guide de référence des visionneuses](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=fr). Par exemple, pour en savoir plus sur les marqueurs CSS de la visionneuse de zoom, reportez-vous à [Personnalisation de la visionneuse de zoom](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=fr).) Il se peut toutefois que l’éditeur visuel ne comprenne pas certaines valeurs CSS. Dans de tels cas, l’éditeur visuel tente d’ignorer les erreurs de sorte que le code CSS reste fonctionnel.
    >[!NOTE]
    >
    >Si vous préférez modifier le CSS directement dans sa forme brute, sélectionnez **[!UICONTROL Afficher/masquer CSS]** sous le menu déroulant Type sélectionné (si nécessaire, faites défiler l’éditeur visuel pour le voir).

@@ -1,13 +1,14 @@
 ---
 title: Images interactives
 description: Découvrir comment utiliser les images interactives dans Dynamic Media.
+contentOwner: Rick Brough
 feature: Interactive Images
 role: User
 exl-id: 89eef5e6-d508-4f33-b54e-24d4df49f8c3
-source-git-commit: 77f1b744dabd72fc26d3b0607db9561e6cb7fa66
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '4176'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -64,7 +65,7 @@ Si vous utilisez un gestionnaire de contenu web tiers, intégrez la nouvelle vid
 >* Vous souhaitez ajouter de l’interactivité à votre image en déclenchant des aperçus rapides.
 >* Votre implémentation d’Experience Manager n’utilise *pas* de structure d’intégration eCommerce pour extraire les données de produit dans Experience Manager à partir de toute solution d’e-commerce. De telles solutions peuvent inclure IBM WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
 >
->Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
+Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
 Commencez par identifier les variables dynamiques utilisées par votre mise en œuvre de l’aperçu rapide existant afin de pouvoir entrer les données de zone réactive pour créer l’image interactive.
 
@@ -101,7 +102,7 @@ Au cours de ce processus, il est important de parcourir différentes zones de vo
 
 Dans le cas le plus simple, la seule partie variable dans l’URL de l’aperçu rapide est le SKU du produit. Dans ce cas, la valeur du SKU est la seule donnée dont vous avez besoin pour ajouter des zones réactives à l’image de bannière.
 
-Toutefois, dans des cas complexes, l’URL d’aperçu rapide comporte différents éléments variables en plus du SKU. Par exemple, les éléments variables peuvent inclure l’ID de catégorie, le code couleur et le code de taille. Dans ce cas, chaque élément est une variable distincte dans votre définition de données d’images interactives dans la fonctionnalité d’image interactive publicitaire d’Experience Manager Assets.
+Toutefois, dans des cas complexes, l’URL d’aperçu rapide comporte différents éléments variables en plus du SKU. Par exemple, les éléments variables peuvent inclure l’ID de catégorie, le code couleur et le code de taille. Dans ce cas, chaque élément est une variable distincte dans votre définition de données d’images interactives dans la fonctionnalité d’image interactive publicitaire d’Experience Manager Assets.
 
 Consultez les exemples suivants d’URL d’aperçu rapide et les variables de zones réactives résultantes :
 
@@ -115,7 +116,7 @@ Consultez les exemples suivants d’URL d’aperçu rapide et les variables de z
       <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
       <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
-    </ul> <p>La seule partie variable de L’URL est la valeur du paramètre de chaîne de requête productId =, et il s’agit clairement d’une valeur de SKU. Par conséquent, seuls les champs SKU des zones réactives doivent être renseignés avec des valeurs comme <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong> et <strong><code>1898294</code></strong>.</p> </td>
+    </ul> <p>La seule partie variable de l’URL est la valeur du paramètre de chaîne de requête productId =, et il s’agit clairement d’une valeur de SKU. Par conséquent, seuls les champs SKU des zones réactives doivent être renseignés avec des valeurs comme <strong><code>866558</code></strong>, <strong><code>1196184</code></strong>, <strong><code>1081492</code></strong> et <strong><code>1898294</code></strong>.</p> </td>
   </tr>
   <tr>
     <td><p>SKU unique, trouvé dans le chemin d’accès à l’URL.</p> </td>
@@ -145,9 +146,9 @@ Consultez les exemples suivants d’URL d’aperçu rapide et les variables de z
 
 **Exemple**
 
-Vous pouvez appliquer la même approche utilisée dans les trois exemples ci-dessus à la [page web de démonstration](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html).
+Vous pouvez appliquer la même approche utilisée dans les trois exemples ci-dessus à la [page web de démonstration](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr).
 
-La page web de démonstration présente plusieurs vignettes de produit, chacune d’entre elles disposant d’un bouton d’aperçu rapide libellé « Plus ». À l’aide de l’outil de débogage de votre navigateur web toujours activé, sélectionnez chaque bouton et notez les URL d’aperçu rapide enregistrées. Une fois que vous avez activé l’aperçu rapide des quatre produits disponibles sur la page, vous obtenez la liste suivante de demandes d’aperçu rapide exécutées en arrière-plan :
+La page web de démonstration comporte plusieurs miniatures de produit, chacune disposant d’un bouton d’aperçu rapide intitulé &quot;En savoir plus&quot;. À l’aide de l’outil de débogage de votre navigateur web toujours activé, sélectionnez chaque bouton et notez les URL d’aperçu rapide enregistrées. Une fois que vous avez activé l’aperçu rapide des quatre produits disponibles sur la page, vous obtenez la liste suivante de demandes d’aperçu rapide exécutées en arrière-plan :
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -203,7 +204,7 @@ Une fois que vous avez enregistré le paramètre prédéfini de visionneuse, il 
 
 Si vous avez déjà chargé les images que vous souhaitez utiliser, passez à l’étape suivante [Ajout de zones réactives à une bannière d’image](#adding-hotspots-to-an-image-banner).
 
-**Pour charger une bannière d’image:**
+**Pour charger une bannière d’image :**
 
 1. Chargez les bannières d’images que vous souhaitez rendre interactives.
 
@@ -220,8 +221,7 @@ Lorsque vous ajoutez des zones réactives, vous pouvez les définir comme un éc
 Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
->
->Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Utilisez ou créez plutôt des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Utilisez ou créez plutôt des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 Les options Annuler et Rétablir, proches du coin supérieur droit de la page, sont prises en charge au cours de la session de création/modification actuelle.
 
@@ -230,15 +230,14 @@ Lorsque vous avez fini de créer votre image interactive, vous pouvez utiliser l
 Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interactive-images).
 
 >[!NOTE]
->
->Lorsque vous ajoutez des zones réactives à une image dans une image interactive ou une bannière de carrousel, les informations de ces zones sont stockées au même emplacement de métadonnées. Cet emplacement dépend de l’emplacement de l’image, qu’il s’agisse d’une image interactive ou d’une bannière de carrousel. Cette fonctionnalité signifie que vous pouvez réutiliser facilement la même image (avec ses données de zone réactive définies) dans les visionneuses.
->Notez cependant que les bannières de carrousel prennent en charge les images à zones cliquables, qui peuvent également contenir des zones réactives. Les images interactives n’en comportent pas. Gardez cela en tête si vous envisagez de créer une image interactive ou une bannière de carrousel qui utilise la même image. Vous pouvez créer des images interactives et des bannières de carrousel en utilisant des copies distinctes de la même image à la place.
->Voir aussi [Bannières de carrousel](/help/assets/dynamic-media/carousel-banners.md).
+Lorsque vous ajoutez des zones réactives à une image dans une image interactive ou une bannière de carrousel, les informations de ces zones sont stockées au même emplacement de métadonnées. Cet emplacement dépend de l’emplacement de l’image, qu’il s’agisse d’une image interactive ou d’une bannière de carrousel. Cette fonctionnalité signifie que vous pouvez réutiliser facilement la même image (avec ses données de zone réactive définies) dans les visionneuses.
+Notez cependant que les bannières de carrousel prennent en charge les images à zones cliquables, qui peuvent également contenir des zones réactives. Les images interactives n’en comportent pas. Gardez cela en tête si vous envisagez de créer une image interactive ou une bannière de carrousel qui utilise la même image. Vous pouvez créer des images interactives et des bannières de carrousel en utilisant des copies distinctes de la même image à la place.
+Voir aussi [Bannières de carrousel](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
->Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
+Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
 
-**Pour ajouter des zones réactives à une bannière d’image:**
+**Pour ajouter des zones réactives à une bannière d’image :**
 
 1. En mode Ressources, accédez à la bannière d’image à laquelle vous souhaitez ajouter de l’interactivité.
 1. Utilisez l’une des méthodes suivantes :
@@ -285,7 +284,7 @@ Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experi
       * Indiquez la largeur et la hauteur du fragment d’expérience tel que vous souhaitez qu’il apparaisse dans la bannière.
 
          >[!NOTE]
-         >Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Utilisez ou créez plutôt des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+         Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Utilisez ou créez plutôt des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 
 
@@ -299,7 +298,7 @@ Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experi
    Voir [Intégration d’une image interactive à votre site web](#integrating-an-interactive-image-with-your-website).
 
    >[!NOTE]
-   >Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
+   Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
 
 ### (Facultatif) Aperçu des images interactives {#optional-previewing-interactive-images}
 
@@ -307,7 +306,7 @@ Vous pouvez utiliser la prévisualisation pour afficher une représentation de l
 
 Lorsque vous êtes satisfait de l’image interactive, vous pouvez la publier.
 Voir [Incorporation de la visionneuse de vidéos ou d’images dans une page web](/help/assets/dynamic-media/embed-code.md).
-Voir [Liaison d’URL à une application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
+Consultez [Liaison d’URL à une application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md). La méthode de liaison basée sur une URL n’est pas possible si votre contenu interactif contient des liens avec des URL relatives, en particulier des liens vers des pages Experience Manager Sites.
 Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 **Pour prévisualiser des images interactives:**
@@ -325,7 +324,7 @@ Voir [Publication de ressources](/help/assets/dynamic-media/publishing-dynamicme
 
 Lorsque vous chargez une image de bannière, que vous ajoutez des zones réactives à l’image et que vous publiez l’image interactive, vous pouvez l’ajouter dans une page de votre site web.
 
-Si vous êtes un client Experience Manager Sites, vous pouvez ajouter l’image interactive en faisant glisser le composant Interactive Media dans votre page. Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+Si vous êtes un client Experience Manager Sites, vous pouvez ajouter l’image interactive en faisant glisser le composant Interactive Media dans votre page. Voir [Ajout de ressources Dynamic Media aux pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
 
 Si vous êtes un client Experience Manager Assets autonome, vous pouvez ajouter manuellement l’image interactive à votre site web, comme indiqué dans cette section.
 
@@ -337,7 +336,7 @@ Le code intégré copié est défini pour un environnement réactif afin qu’il
 
 **Exemple**
 
-En prenant comme exemple le [site web de démonstration](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html), notez que l’image des trois personnes est une balise `IMG` statique :
+En prenant comme exemple le [site web de démonstration](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=fr), notez que l’image des trois personnes est une balise `IMG` statique :
 
 ```xml {.line-numbers}
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
@@ -346,7 +345,7 @@ En prenant comme exemple le [site web de démonstration](https://experienceleagu
 L’intégration revient simplement à supprimer la balise `IMG` et à la remplacer par le code intégré copié à partir d’Experience Manager Assets. Vous pouvez voir que le résultat [montre l’image interactive Shoppable sur la page avec trois zones réactives en cercle](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=fr).
 
 >[!NOTE]
->À ce stade, les zones réactives de l’image interactive Shoppable du site web de démonstration sont en mode affichage uniquement. Elles ne sont pas encore intégrées aux aperçus rapides existants.
+À ce stade, les zones réactives de l’image interactive Shoppable du site web de démonstration sont en mode affichage uniquement. Elles ne sont pas encore intégrées aux aperçus rapides existants.
 
 Pour appliquer un « recadrage » à une image interactive shoppable pour rendre plus réactif votre environnement, ajoutez l’attribut de configuration Image interactive `ZoomView.iscommand` au chemin d’accès. Dans ce cas, le composant `ZoomView` est appelé et `iscommand` est la commande de diffusion d’image de recadrage que vous appliquez.
 
@@ -359,7 +358,7 @@ Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rap
 ## Intégration d’une image interactive dans un aperçu rapide existant {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
->Cette tâche ne s’applique que si vous êtes un client Experience Manager Assets autonome.
+Cette tâche ne s’applique que si vous êtes un client Experience Manager Assets autonome.
 
 La dernière étape de cette procédure intègre l’image interactive à un aperçu rapide existant sur votre site web. Pour ce qui est de l’intégration, il n’existe pas de solution qui fonctionne dans tous les cas. Chaque mise en œuvre d’aperçu rapide est unique et une approche spécifique est donc nécessaire. Ainsi, il est utile de faire appel à l’assistance d’un informaticien responsable du front-end.
 
@@ -419,27 +418,27 @@ En utilisant nos exemples précédents d’URL d’aperçu rapide, vous pouvez v
  <tbody>
   <tr>
    <td><p>SKU unique, trouvé dans la chaîne de requête</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>SKU unique, trouvé dans le chemin d’accès à l’URL</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>SKU et ID de catégorie dans la chaîne de requête</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
  </tbody>
 </table>
@@ -490,6 +489,6 @@ Voici le code source complet :
 
 Le [site web de démonstration final avec l’image interactive entièrement intégrée](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=fr).
 
-## Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
+## Création de pop-ups personnalisés à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
 Voir [Création d’une fenêtre contextuelle personnalisée Windows® à l’aide de l’aperçu rapide](/help/assets/dynamic-media/custom-pop-ups.md).

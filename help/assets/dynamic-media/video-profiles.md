@@ -1,13 +1,14 @@
 ---
 title: Profils vidéo Dynamic Media
 description: Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Vous pouvez également ajouter un recadrage intelligent à vos vidéos.
+contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '3656'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -23,7 +24,7 @@ Voici d’autres facteurs qui déterminent la qualité des vidéos :
 
 * **Taille du lecteur vidéo**
 
-   Par défaut, la largeur du profil de codage de vidéo adaptative est définie sur Auto. Encore une fois, lors de la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
+   Par défaut, la &quot;Largeur&quot; du profil de codage vidéo adaptatif est définie sur &quot;Auto&quot;. Encore une fois, lors de la lecture, la meilleure qualité est utilisée en fonction de la taille du lecteur.
 
 Voir [Bonnes pratiques en matière de codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -56,7 +57,7 @@ Le tableau ci-après identifie les profils de codage recommandés pour la diffus
    <td><strong>Débit vidéo (kbit/s)</strong></td>
    <td><strong>Taux de rafraîchissement vidéo (i/s)</strong></td>
    <td><strong>Codec audio</strong></td>
-   <td><strong>Débit audio (kbit/s)</strong></td>
+   <td><strong>Débit audio  (kbit/s)</strong></td>
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
@@ -242,7 +243,7 @@ Vous pouvez maintenant appliquer le profil aux dossiers contenant des vidéos. V
 
 ## Utilisation de paramètres de codage vidéo personnalisés {#using-custom-added-video-encoding-parameters}
 
-Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de paramètres de codage vidéo avancés qui ne figurent pas dans l’interface utilisateur lors de la création ou de la modification d’un profil vidéo dans Experience Manager. Vous pouvez ajouter de façon personnalisée un ou plusieurs paramètres avancés, tels que minBitrate et maxBitrate, dans votre profil existant.
+Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de paramètres de codage vidéo avancés qui ne figurent pas dans l’interface utilisateur lors de la création ou de la modification d’un profil vidéo dans Experience Manager. Vous pouvez ajouter de façon personnalisée un ou plusieurs paramètres avancés, tels que minBitrate et maxBitrate, dans votre profil existant.
 
 **Pour utiliser des paramètres de codage vidéo personnalisés, procédez comme suit** :
 

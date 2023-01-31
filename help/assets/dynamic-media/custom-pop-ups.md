@@ -1,17 +1,18 @@
 ---
-title: Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide
-description: « Découvrez comment l’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles Windows ».
+title: Création de pop-ups personnalisés à l’aide de l’aperçu rapide
+description: Découvrez comment l’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec les informations sur les produits pour générer un achat. Vous pouvez déclencher l’affichage d’un contenu personnalisé dans la fenêtre contextuelle.
+contentOwner: Rick Brough
 feature: Interactive Images,Interactive Videos,Carousel Banners
 role: Admin,User
 exl-id: c2bc6ec8-d46e-4681-ac3e-3337b9e6ae5c
-source-git-commit: 462ce45d24cf8bcad6963011d2d57d9d7da45550
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1002'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
+# Création de pop-ups personnalisés à l’aide de l’aperçu rapide {#using-quickviews-to-create-custom-pop-ups}
 
 L’aperçu rapide par défaut est utilisé dans les expériences de commerce électronique où une fenêtre contextuelle s’affiche avec des informations sur le produit afin de générer un achat. Cependant, vous pouvez déclencher le contenu personnalisé à afficher dans les fenêtres contextuelles. En fonction de la visionneuse que vous utilisez, les clients peuvent sélectionner une zone réactive, une image miniature ou une zone cliquable pour afficher des informations ou du contenu associé.
 
@@ -193,7 +194,7 @@ Bien que chaque visionneuse ait un mode de fonctionnement distinct, le processus
    </script>
    ```
 
-1. Téléchargez une page HTML de test sur votre serveur web et ouvrez-la. La visionneuse affiche le séparateur `DIV` de la fenêtre contextuelle lorsqu’un utilisateur appelle un aperçu rapide.
+1. Téléchargez une page HTML de test sur votre serveur Web et ouvrez-la. La visionneuse affiche le séparateur `DIV` de la fenêtre contextuelle lorsqu’un utilisateur appelle un aperçu rapide.
 1. **Affichage de la fenêtre contextuelle personnalisée en mode plein écran**
 
    Certaines visionneuses, comme la visionneuse de vidéos interactives, prennent en charge l’affichage en mode plein écran. Toutefois, l’utilisation de la fenêtre contextuelle comme décrit dans les étapes précédentes provoque l’affichage de celle-ci derrière la visionneuse en mode plein écran.

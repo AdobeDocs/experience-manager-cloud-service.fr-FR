@@ -1,10 +1,11 @@
 ---
 title: Intégration de visionneuses Dynamic Media à Adobe Analytics et Experience Platform Tags
 description: En savoir plus sur l’extension Visionneuses Dynamic Media pour Experience Platform Tags et les visionneuses Dynamic Media 5.13. Elle permet aux clients Adobe Analytics et utilisateurs de balises Platform d’utiliser des événements et des données spécifiques aux visionneuses dans leur configuration Experience Platform Tags.
+contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: 3060b6b411c3ce2f0b70e08628bccfece3e1fd49
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '6679'
 ht-degree: 97%

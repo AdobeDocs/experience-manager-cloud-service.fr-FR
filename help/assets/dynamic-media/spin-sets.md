@@ -1,13 +1,14 @@
 ---
 title: Visionneuses à 360°
 description: Découvrez comment utiliser des visionneuses à 360° dans Dynamic Media.
+contentOwner: Rick Brough
 feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
-source-git-commit: a2bbc64051214efa83d74d414e2e5f1407433127
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1927'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
@@ -15,7 +16,7 @@ ht-degree: 95%
 
 Une visionneuse à 360° simule l’action consistant à faire pivoter un objet pour l’examiner. Les visionneuses à 360° permettent de voir des éléments depuis tous les angles, révélant les détails visuels clés depuis chaque angle.
 
-Une visionneuse à 360° simule une expérience de visionnage à 360°. Dynamic Media fournit des visionneuses à 360° à axe unique avec lesquelles les observateurs peuvent faire pivoter un élément. En outre, les utilisateurs peuvent effectuer un zoom et un panoramique de « forme libre » sur n’importe quelle vue en quelques clics de souris. Ainsi, les utilisateurs peuvent examiner un élément de plus près, depuis un point de vue spécifique.
+Une visionneuse à 360° simule une expérience de visionnage à 360°. Dynamic Media fournit des visionneuses à 360° à axe unique avec lesquelles les observateurs peuvent faire pivoter un élément. De plus, les utilisateurs peuvent effectuer un zoom et un panoramique &quot;en forme libre&quot; sur n’importe quelle vue en quelques clics de souris. Ainsi, les utilisateurs peuvent examiner un élément de plus près, depuis un point de vue spécifique.
 
 Les visionneuses à 360° sont désignées par une bannière contenant le mot **[!UICONTROL SPINSET]**. En outre, si la visionneuse à 360° est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de la dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
 
@@ -25,15 +26,15 @@ Les visionneuses à 360° sont désignées par une bannière contenant le mot **
 >
 >Pour plus d’informations sur l’interface utilisateur d’Assets, voir [Gestion des ressources à l’aide de l’interface utilisateur tactile](/help/assets/manage-digital-assets.md) et l’appliquer à un nouveau dossier dans lequel vos ressources de visionneuse d’images seront chargées.
 
-Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
 | Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
-| Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
+| Nombre maximal de lignes/colonnes par visionneuse 2D | 12 à 18 images par visionneuse | 1000 |
 
-Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
+Consultez également la section [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
-## Démarrage rapide : Visionneuse à 360° {#quick-start-spin-sets}
+## Démarrage rapide : visionneuses à 360° {#quick-start-spin-sets}
 
 Pour démarrer rapidement, procédez comme suit :
 
@@ -117,11 +118,11 @@ Cette section décrit comment créer des visionneuses à 360°.
 >
 >L’ordre dans lequel les images apparaissent dans une visionneuse à 360° a une importance. Veillez à les mettre dans le bon ordre afin que la rotation offre une vue à 360° parfaite.
 
-Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
+Lorsque vous créez une visionneuse à 360°, Adobe recommande les bonnes pratiques suivantes et applique la limite suivante :
 
 | Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
-| Nombre maximal de lignes/colonnes par jeu 2D | 12 à 18 images par visionneuse | 1000 |
+| Nombre maximal de lignes/colonnes par visionneuse 2D | 12 à 18 images par visionneuse | 1000 |
 
 Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 

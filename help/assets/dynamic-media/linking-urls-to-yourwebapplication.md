@@ -1,9 +1,10 @@
 ---
 title: Liaison d’URL à votre application web
 description: Apprenez comment lier des URL à votre application web dans Dynamic Media.
+contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
-source-git-commit: 1d42305b6a597dc95bff8b34eee8279eb0e511f3
+source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
 workflow-type: tm+mt
 source-wordcount: '1275'
 ht-degree: 100%
@@ -46,7 +47,7 @@ Vous pouvez obtenir une chaîne URL qui est générée par un paramètre d’ima
 
 Il existe différents moyens d’obtenir une chaîne URL. Néanmoins, les étapes ci-dessous ne vous présentent qu’une seule méthode.
 
-**Obtention de l’URL d’une ressource:**
+**Obtention de l’URL d’une ressource :**
 
 1. Accédez à la ressource *publiée* dont vous souhaitez copier l’URL du paramètre d’image ou de visionneuse prédéfini, puis sélectionnez la ressource pour l’ouvrir.
 
@@ -94,7 +95,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 * XML
 * ZIP
 
-**Obtention de l’URL d’une ressource statique:**
+**Obtention de l’URL d’une ressource statique :**
 
 1. Accédez à la ressource statique *publiée* dont vous souhaitez copier l’URL et sélectionnez-la pour l’ouvrir.
 
