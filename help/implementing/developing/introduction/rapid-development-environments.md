@@ -2,9 +2,9 @@
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour des itérations de développement rapides sur un environnement cloud.
 hidefromtoc: true
-source-git-commit: 966644ae0027264f25a3aaf3b2f777fb3e97c556
+source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2476'
 ht-degree: 7%
 
 ---
@@ -202,6 +202,8 @@ La réponse pour un déploiement réussi ressemble à ce qui suit :
 Vous pouvez éventuellement référencer un référentiel distant :
 
 `aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+
+Par défaut, les artefacts sont déployés sur les niveaux Auteur et Publication, mais l’indicateur &quot;-s&quot; peut être utilisé pour cibler un niveau spécifique.
 
 <u>Déploiement d’une configuration OSGI</u>
 
@@ -415,9 +417,10 @@ Bien que le RDE soit à de nombreux égards similaire à un environnement de dé
 
 Pour ces raisons, il est recommandé, après avoir validé le code dans un environnement RDE, de déployer le code dans un environnement de développement Cloud à l’aide du pipeline hors production. Enfin, testez le code avant de le déployer avec le pipeline de production.
 
-Notez également les points à prendre en compte concernant les solutions suivantes :
+Notez également les points suivants :
 
 * Les RDE ne prennent actuellement pas en charge l’affichage et le débogage du code frontal déployé à l’aide du pipeline front-end de Cloud Manager.
+* Les RDE ne prennent actuellement pas en charge le canal de version préliminaire.
 
 
 ## De combien de RDE ai-je besoin ? {#how-many-rds-do-i-need}
