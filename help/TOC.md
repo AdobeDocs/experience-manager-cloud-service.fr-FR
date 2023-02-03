@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 592810c45c89d569644263c01b843d51761ebe8d
+source-git-commit: edb6e23341289308837509eef444a8642b903bb7
 workflow-type: tm+mt
-source-wordcount: '3849'
+source-wordcount: '3857'
 ht-degree: 98%
 
 ---
@@ -66,6 +66,8 @@ ht-degree: 98%
          + [Notes de mise à jour de la version 2020.4.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-4-0.md)
          + [Notes de mise à jour de la version 2020.3.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-3-0.md)
          + [Notes de mise à jour de la version 2020.2.0](/help/release-notes/release-notes-cloud/2020/release-notes-2020-2-0.md)
+   + Notes de mise à jour d’AEMaaCS de maintenance {#maintenance}
+      + [Dernières notes de mise à jour de maintenance](/help/release-notes/maintenance/latest.md)
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md)
       + 2022 {#2022}
@@ -473,7 +475,7 @@ ht-degree: 98%
       + [Vidéos interactives](/help/assets/dynamic-media/interactive-videos.md)
       + [Vidéo 360 VR](/help/assets/dynamic-media/360-video.md)
       + [Intégration des visionneuses Dynamic Media aux balises Adobe Analytics et Adobe Experience Platform](/help/assets/dynamic-media/tags.md)
-      + [Création de fenêtres contextuelles personnalisées à l’aide de l’aperçu rapide](/help/assets/dynamic-media/custom-pop-ups.md)
+      + [Création de pop-ups personnalisés à l’aide de l’aperçu rapide](/help/assets/dynamic-media/custom-pop-ups.md)
       + [Diffusion d’images optimisées pour un site réactif](/help/assets/dynamic-media/responsive-site.md)
       + [Aperçu de ressources Dynamic Media](/help/assets/dynamic-media/previewing-assets.md)
       + [Ajout de ressources Dynamic Media à des pages](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md)
@@ -834,7 +836,7 @@ ht-degree: 98%
       + Développement hybride et SPA {#hybrid}
          + [Approche hybride et SPA avec AEM](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [Activation de l’exportateur JSON pour un composant](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/components-templates/enabling-json-exporter.html?lang=fr)
-         + [Introduction et présentation des applications sur une seule page (SPA)](/help/implementing/developing/hybrid/introduction.md)
+         + [Introduction et présentation des applications monopage (SPA)](/help/implementing/developing/hybrid/introduction.md)
          + [Tutoriel sur SPA WKND](/help/implementing/developing/hybrid/wknd-tutorial.md)
          + [Prise en main avec React](/help/implementing/developing/hybrid/getting-started-react.md)
          + [Prise en main avec Angular](/help/implementing/developing/hybrid/getting-started-angular.md)
