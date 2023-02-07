@@ -2,18 +2,14 @@
 title: Génération de jetons d’accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 41458eb1fba12e8ef45a32d3bb6fc5dd732f78ec
+source-git-commit: 9f7157be1a9e7b635b9c7d0f0c653646e6f1b43b
 workflow-type: tm+mt
-source-wordcount: '2199'
-ht-degree: 36%
+source-wordcount: '2132'
+ht-degree: 37%
 
 ---
 
 # Génération de jetons d’accès pour les API côté serveur {#generating-access-tokens-for-server-side-apis}
-
->[!AVAILABILITY]
->
->Adobe est en train de déployer progressivement les nouvelles fonctionnalités de révocation d’informations d’identification et d’informations d’identification multiples décrites dans cet article. Si, en vérifiant l’onglet Intégrations de la console de développement d’AEM de votre entreprise, vous constatez que l’écran est différent des captures d’écran ci-dessous, cela signifie que les nouvelles modifications n’ont pas encore été déployées dans votre entreprise. Dans ce cas, reportez-vous à la section [documentation héritée](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md).
 
 Certaines architectures reposent sur des appels à AEM as a Cloud Service à l’aide d’une application hébergée sur un serveur en dehors de l’infrastructure AEM. Il peut s’agir, par exemple, d’une application mobile qui appelle un serveur, puis effectue des requêtes d’API auprès d’AEM as a Cloud Service.
 
