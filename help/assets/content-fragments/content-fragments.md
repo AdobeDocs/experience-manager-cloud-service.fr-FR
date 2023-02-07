@@ -2,10 +2,10 @@
 title: Utiliser des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour la création de pages et la diffusion découplée.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: ht
-source-wordcount: '2075'
-ht-degree: 100%
+source-git-commit: 4478cee8f9a20e0b70bfe2fa8767e3262188cb33
+workflow-type: tm+mt
+source-wordcount: '2071'
+ht-degree: 98%
 
 ---
 
@@ -79,7 +79,7 @@ Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses e
 >[!NOTE]
 >
 >Les **fragments de contenu** et les **[fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md)** représentent deux fonctions distinctes d’AEM :
->* Les **fragments de contenu** sont du contenu éditorial, qui peut être utilisé pour accéder à des données structurées, y compris du texte, des chiffres et des dates. Il s’agit d’un contenu pur, avec définition et structure, mais sans conception visuelle et/ou mise en page supplémentaires.
+>* **Fragments de contenu** sont du contenu éditorial, avec définition et structure, mais sans conception visuelle ni mise en page supplémentaires. Ils peuvent être utilisés pour accéder à des données structurées, notamment du texte, des nombres et des dates.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
