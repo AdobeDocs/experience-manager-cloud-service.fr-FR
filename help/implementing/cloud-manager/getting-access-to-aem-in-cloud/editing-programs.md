@@ -2,9 +2,9 @@
 title: Modification de programmes
 description: Découvrez comment modifier vos programmes de production et Sandbox pour ajuster leurs options après les avoir créés.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: 2638843c5646d3190327ae1dbd5348a9c207d674
+source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
-source-wordcount: '513'
+source-wordcount: '517'
 ht-degree: 87%
 
 ---
@@ -18,9 +18,11 @@ Les utilisateurs disposant des autorisations requises peuvent modifier les [prog
 * Ajouter un deuxième droit non utilisé sur une solution à un programme existant ou à titre de nouveau programme.
 * Supprimer les programmes Sandbox.
 
->[!NOTE]
->
->Vous devez être membre du rôle **Propriétaire de l’entreprise** pour modifier des programmes ou supprimer des programmes Sandbox.
+## Autorisations {#permissions}
+
+Vous devez être membre du rôle **Propriétaire de l’entreprise** pour modifier des programmes ou supprimer des programmes Sandbox.
+
+## Modifier un programme {#editing}
 
 Pour modifier un programme, procédez comme suit.
 
