@@ -3,9 +3,9 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 762c30f83a15aba24b56a8d4a6059b371b87aae2
+source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2832'
 ht-degree: 92%
 
 ---
@@ -72,7 +72,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
      </LocationMatch>
    ```
 
-* Bien que le contenu HTML défini sur privé ne soit pas mis en cache sur le réseau de diffusion de contenu, il peut l’être sur le Dispatcher si [Mise en cache sensible aux autorisations](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr) est configuré de manière efficace, en veillant à ce que seuls les utilisateurs autorisés puissent diffuser le contenu.
+* Bien que le contenu HTML défini sur privé ne soit pas mis en cache sur le réseau de diffusion de contenu, il peut l’être sur le Dispatcher si [Mise en cache sensible aux autorisations](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr) est configuré, en s’assurant que seuls les utilisateurs autorisés peuvent recevoir le contenu.
 
    >[!NOTE]
    >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
