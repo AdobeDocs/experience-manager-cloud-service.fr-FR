@@ -2,10 +2,10 @@
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7a9c601dd42aed9fbd0113e71c1c7a58b5bba8f7
-workflow-type: ht
-source-wordcount: '1732'
-ht-degree: 100%
+source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+workflow-type: tm+mt
+source-wordcount: '1749'
+ht-degree: 99%
 
 ---
 
@@ -36,6 +36,9 @@ Consultez la section ci-dessous pour comprendre les points importants à prendre
 
 * Le nettoyage de la mémoire d’entrepôt de données a été exécuté au cours des 7 jours précédents sur la source. Pour plus d’informations, voir [Récupération de l’espace mémoire de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=fr#data-store-garbage-collection).
 
+### Autres considérations à prendre en compte lors de l’utilisation d’AzCopy
+
+La précopie à l’aide d’AzCopy n’est actuellement pas prise en charge sous Windows lors de l’extraction CTT.
 
 ### Considérations supplémentaires si l’instance d’AEM source est configurée pour utiliser une banque de données Amazon S3 ou Azure Blob Storage. {#additional-considerations-amazons3-azure}
 
