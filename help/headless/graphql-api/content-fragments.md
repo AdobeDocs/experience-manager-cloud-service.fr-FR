@@ -3,9 +3,9 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 24dda46f8a3ac5179ae3bc95fba38c5d1f0660ca
+source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
 workflow-type: tm+mt
-source-wordcount: '4174'
+source-wordcount: '4173'
 ht-degree: 58%
 
 ---
@@ -470,8 +470,6 @@ Par exemple, l’expression
 ```
 
 compare le contenu du champ à la valeur `some text` et réussit si le contenu est égal à la valeur . Sinon, l’expression échouera.
-
-Les
 
 Les opérateurs suivants peuvent être utilisés pour comparer les champs à une certaine valeur :
 
