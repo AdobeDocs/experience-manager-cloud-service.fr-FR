@@ -2,9 +2,9 @@
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour des itérations de développement rapides sur un environnement cloud.
 hidefromtoc: true
-source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
+source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2664'
 ht-degree: 6%
 
 ---
@@ -201,9 +201,13 @@ La réponse pour un déploiement réussi ressemble à ce qui suit :
 
 Vous pouvez éventuellement référencer un référentiel distant :
 
-`aio aem:rde:install 'https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip'`
+`aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 Par défaut, les artefacts sont déployés sur les niveaux Auteur et Publication, mais l’indicateur &quot;-s&quot; peut être utilisé pour cibler un niveau spécifique.
+
+>[!IMPORTANT]
+>
+>La configuration du dispatcher pour le projet WKND n’est pas déployée via l’installation du package de contenu ci-dessus. Vous devrez le déployer séparément, en suivant les étapes &quot;Déploiement d’une configuration Apache/Dispatcher&quot;.
 
 <u>Déploiement d’une configuration OSGI</u>
 
