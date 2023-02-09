@@ -2,10 +2,10 @@
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour des itérations de développement rapides sur un environnement cloud.
 hidefromtoc: true
-source-git-commit: ca6e0fa5a4f34c84a523821a6615f4c70e457fcf
+source-git-commit: 6751a14ba38d038b006b8499feb517b7ae2d00bd
 workflow-type: tm+mt
-source-wordcount: '2476'
-ht-degree: 7%
+source-wordcount: '2634'
+ht-degree: 6%
 
 ---
 
@@ -406,6 +406,20 @@ Voir [documentation du mode d’exécution](/help/implementing/deploying/overvie
 >[!NOTE]
 >
 >La configuration OSGI RDE est unique dans la mesure où elle hérite des valeurs de toutes les propriétés OSGI déclarées par le lot. `dev` mode d’exécution.
+
+Les RDE sont différents des autres environnements dans lesquels le contenu peut être installé dans un dossier install.rde (ou install.author.rde ou install.publish.rde) sous /apps. Cela vous permet de valider le contenu sur git et de le diffuser dans l’éditeur de texte enrichi à l’aide de l’outil de ligne de commande.
+
+## Renseignement avec du contenu {#populating-content}
+
+Lorsqu’un RDE est réinitialisé, tout le contenu est supprimé. Par conséquent, si vous le souhaitez, une action explicite doit être entreprise pour ajouter du contenu. Une bonne pratique consiste à assembler un ensemble de contenu à utiliser comme contenu de test pour valider ou déboguer des fonctionnalités dans le RDE. Il existe plusieurs stratégies possibles pour renseigner le RDE avec ce contenu :
+
+1. Synchroniser explicitement le module de contenu avec l’éditeur de texte enrichi à l’aide de l’outil de ligne de commande
+
+1. Placez et validez l’exemple de contenu dans git dans un dossier install.rde sous /apps, puis synchronisez le module de contenu global avec l’éditeur de texte enrichi à l’aide de l’outil de ligne de commande.
+
+1. Utilisation de Package Manager
+
+Notez que vous êtes limité à 1 Go lors de la synchronisation de modules de contenu.
 
 ## Journalisation {#logging}
 
