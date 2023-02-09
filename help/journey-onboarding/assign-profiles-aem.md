@@ -4,10 +4,10 @@ description: Une fois que vos ressources Cloud sont configurées, vous devez acc
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 050e5966728e157bf2ae51f99a31f68a1d347e4b
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 100%
+source-wordcount: '769'
+ht-degree: 96%
 
 ---
 
@@ -33,6 +33,10 @@ Pour utiliser AEM, les membres de votre équipe doivent être affectés à au mo
 * `AEM Administrators` - Ce groupe comprend les utilisateurs responsables des fonctionnalités avancées ou d’AEM.
 
 Chaque utilisateur affecté à un profil de produit AEM aura également un accès en lecture seule à Cloud Manager. L’accès en écriture à Cloud Manager peut être accordé via d’autres profils de produit.
+
+>[!CAUTION]
+>
+>Ne modifiez ou ne supprimez pas les profils de produit nommés Administrateurs AEM ou Utilisateurs AEM. La modification de ces noms de profil peut rompre la connexion à l’instance cloud AEM.
 
 ## Conditions préalables {#prerequisites}
 
