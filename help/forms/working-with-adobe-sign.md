@@ -6,21 +6,15 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3072'
 ht-degree: 100%
 
 ---
 
 
 # Utilisation d’[!DNL Adobe Sign] dans un formulaire adaptatif {#using-adobe-sign-in-an-adaptive-form}
-
-
->[!NOTE]
->
->La fonctionnalité d’utilisation des rôles Adobe Sign dans un formulaire adaptatif se trouve dans le canal de version préliminaire d’août 2021. Cette fonctionnalité sera donc disponible à tous dans la version de septembre 2021.
-
 
 [!DNL Adobe Sign] permet des processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commerciaux, des ressources humaines, etc.
 
@@ -314,7 +308,7 @@ Après [modification des propriétés de formulaire adaptatif pour Adobe Sign](w
 
    Appliquez des signatures numériques au formulaire adaptatif à l’aide des éléments suivants :
 
-   * Signatures cloud : signez avec un [ID numérique](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) hébergé par un prestataire de confiance.
+   * Signatures cloud : signez avec un [ID numérique](https://helpx.adobe.com/fr/sign/kb/digital-certificate-providers.html) hébergé par un prestataire de confiance.
    * Adobe Acrobat ou Reader : téléchargez et ouvrez le document avec Adobe Acrobat ou Reader pour le signer à l’aide d’une carte à puce, un jeton USB ou un ID numérique basé sur des fichiers.
 
    Après avoir ajouté le champ de signature cloud au formulaire adaptatif, effectuez les étapes suivantes pour terminer le processus de configuration :

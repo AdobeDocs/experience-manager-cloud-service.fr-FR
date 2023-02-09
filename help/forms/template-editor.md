@@ -2,10 +2,10 @@
 title: Comment créer un modèle de formulaire adaptatif ?
 description: Créez des modèles de formulaire adaptatif en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 434071de17d6ff56ede561735f7214d96f98cfa0
-workflow-type: ht
-source-wordcount: '1806'
-ht-degree: 100%
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+workflow-type: tm+mt
+source-wordcount: '1920'
+ht-degree: 94%
 
 ---
 
@@ -184,6 +184,23 @@ Perform the following steps to show and hide templates:
     * To show or hide out of the box Adaptive Form templates that were added in AEM 6.0 Forms or AEM 6.1 Forms releases but are now deprecated, check or uncheck the **Include AEM 6.0 AF Templates** option. If this option is checked, in order to take effect, it requires the **Include Out of the box AF and AD Templates** configuration to be enabled.
 
 1. Click **Save**. The display options for the out of the box templates are changed. -->
+
+## Enregistrement d’un formulaire adaptatif en tant que modèle {#saving-adaptive-form-as-template}
+
+Vous pouvez également enregistrer un formulaire adaptatif comme modèle pour une utilisation ultérieure. Pour enregistrer un formulaire adaptatif en tant que modèle :
+
+1. Sélectionnez un formulaire adaptatif pour l’enregistrer en tant que modèle.
+1. Cliquez sur **[!UICONTROL Enregistrer en tant que modèle]**. Une boîte de dialogue s’affiche.
+1. Spécifier **[!UICONTROL Titre]** (champ obligatoire), **[!UICONTROL Emplacement]** (champ obligatoire) et **[!UICONTROL Description]** (champ facultatif) pour le modèle.
+1. Cliquez sur **[!UICONTROL Créer]**.
+
+   ![Enregistrer comme formulaire en tant que modèle](/help/forms/assets/saveformastemplate.png)
+
+
+
+>[!NOTE]
+>
+>Pour utiliser la même stratégie de conteneur que pour le formulaire adaptatif source, il est recommandé d’enregistrer le modèle dans le même dossier que le formulaire adaptatif source. Si le modèle est enregistré dans un autre dossier que celui créé, il utilise une stratégie de conteneur par défaut.
 
 ## Recommandations {#recommendations}
 

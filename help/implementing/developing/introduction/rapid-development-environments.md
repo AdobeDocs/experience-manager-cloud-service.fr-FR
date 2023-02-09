@@ -1,10 +1,9 @@
 ---
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour des itérations de développement rapides sur un environnement cloud.
-hidefromtoc: true
-source-git-commit: 10d74413ece591de52b7dbebd59191cace81e238
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2903'
 ht-degree: 6%
 
 ---
@@ -450,3 +449,20 @@ Le nombre de RDE requis dépend de la composition et des processus d’une organ
 À l’autre extrême, une équipe disposant d’un seul RDE peut utiliser des processus internes pour coordonner les développeurs qui peuvent utiliser l’environnement à un moment donné. Cela peut se produire chaque fois qu’un développeur atteint un jalon de fonctionnalité intermédiaire et est prêt à valider dans un environnement cloud où il peut rapidement apporter les modifications dont il a besoin.
 
 Un modèle intermédiaire est un modèle où une organisation achète un certain nombre de RDE, de sorte qu’il y a une plus grande probabilité qu’un RDE inutilisé soit disponible. Une stratégie pourrait consister à allouer un RDE par équipe de travail ou fonction majeure. Des processus internes peuvent être utilisés pour coordonner l’utilisation des environnements.
+
+## En quoi un environnement de développement rapide de Cloud Service AEM Forms (RDE) diffère-t-il des autres environnements ? {#how-are-forms-rds-different-from-cloud-development-environments}
+
+Les développeurs Forms peuvent utiliser l’ environnement de développement rapide AEM Forms Cloud Service pour développer rapidement des processus, des processus et des personnalisations adaptatifs tels que la personnalisation des composants principaux, les intégrations à des systèmes tiers, etc. L’environnement de développement rapide du Cloud Service AEM Forms (RDE) ne prend pas en charge les fonctionnalités nécessitant un document d’enregistrement, comme la génération d’un document d’enregistrement lors de l’envoi d’un formulaire adaptatif. Les fonctionnalités répertoriées ci-dessous utilisent un document d’enregistrement. Ils ne sont pas disponibles pour un environnement de développement rapide (RDE) :
+
+* Configuration d’un document d’enregistrement pour un formulaire adaptatif
+* Génération d’un document d’enregistrement lors de l’envoi d’un formulaire adaptatif ou avec une étape de processus
+* Envoyer un document d’enregistrement en tant que pièce jointe avec l’action Envoyer par messagerie ou avec l’étape Envoyer par messagerie dans un workflow
+* Utilisation d’Adobe Sign dans un formulaire adaptatif ou dans une étape de processus
+* API de communication
+
+Vous rencontrez un message d’erreur lors de l’utilisation d’une fonctionnalité qui nécessite un document d’enregistrement.
+
+>[!NOTE]
+>
+> Il n’y a aucune modification entre l’interface utilisateur de l’environnement de développement rapide (RDE) et d’autres environnements Cloud Service pour Forms. Toutes les options liées au document d’enregistrement, comme la sélection d’un modèle de document d’enregistrement pour un formulaire adaptatif, continuent d’apparaître dans l’interface utilisateur. Ces environnements ne disposent d’aucune fonctionnalité de document d’enregistrement pour tester ces options. Ainsi, lorsque vous sélectionnez une option de document d’enregistrement, aucune action n’est effectuée et un message d’erreur s’affiche ou est renvoyé.
+

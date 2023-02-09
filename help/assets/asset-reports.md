@@ -1,20 +1,20 @@
 ---
 title: Rapports sur l’utilisation et le partage
-description: Des rapports sur vos ressources dans [!DNL Adobe Experience Manager Assets] vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
+description: Des rapports sur vos ressources dans  [!DNL Adobe Experience Manager Assets]  vous permettent de comprendre l’utilisation, l’activité et le partage de vos ressources numériques.
 contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
+source-git-commit: ede33e43bdfd4b6aa4670fe74c2133a7a3b54b75
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 100%
+source-wordcount: '890'
+ht-degree: 92%
 
 ---
 
 # Rapports de ressources {#asset-reports}
 
-Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles concernant votre utilisation du système, la façon dont les utilisateurs interagissent avec les ressources et la façon dont les ressources sont téléchargées et partagées.<!-- downloaded and -->
+Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles sur l’utilisation de votre système, la manière dont les utilisateurs interagissent avec les ressources et les ressources qui sont <!-- downloaded and --> partagé.
 
 Utilisez les informations figurant dans les rapports de manière à obtenir des mesures de succès essentielles pour évaluer l’adoption d’[!DNL Assets] au sein de votre entreprise et par les clients.
 
@@ -29,6 +29,7 @@ Lorsqu’un rapport est généré, vous êtes averti par <!-- through an email (
 [!DNL Experience Manager Assets] génère les rapports standard suivants :
 
 * Chargement
+* Téléchargement
 * Expiration
 * Modification
 * Publication
@@ -60,7 +61,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    ![Sélectionner le type de rapport](assets/choose_report.png)
 
-1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier dans le référentiel CRX où le rapport est stocké. Par défaut, le chemin du dossier est `/content/dam`. Vous pouvez spécifier un autre chemin.
+1. Configurez les détails du rapport, tels que le titre, la description, la miniature et le chemin du dossier. Par défaut, le chemin du dossier est `/content/dam`. Vous pouvez spécifier un autre chemin pour exécuter le rapport sur un dossier spécifique.
 
    ![Page d’ajout de détails de rapport](assets/report_configuration.png)
 
@@ -104,6 +105,10 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
    ![Un rapport généré](assets/report_page.png)
 
    Cliquez sur **[!UICONTROL Télécharger]** dans la barre d’outils pour télécharger le rapport au format CSV.
+
+   >[!NOTE]
+   >
+   >Vous pouvez générer des rapports en fonction des événements générés au cours des 360 derniers jours. Experience Manager conserve les données d’ID utilisateur pendant 30 jours.
 
 ## Ajout de colonnes personnalisées  aux rapports {#add-custom-columns}
 

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 983f1b815fd213863ddbcd83ac7e3f076c57d761
+source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
-source-wordcount: '1716'
-ht-degree: 100%
+source-wordcount: '2227'
+ht-degree: 89%
 
 ---
 
@@ -33,40 +33,43 @@ L’intégration de données prend en charge l’authentification OAuth2.0, de b
 >
 >[!UICONTROL Experience Manager Forms] ne prend pas en charge les bases de données relationnelles.
 
-<!-- ## Configure relational database {#configure-relational-database}
+## Configurer la base de données relationnelle {#configure-relational-database}
 
-You can configure relational databases using [!DNL Experience Manager] Web Console Configuration. Do the following:
+### Prérequis
 
-1. Go to [!DNL Experience Manager] web console at `https://server:host/system/console/configMgr`.
-1. Look for **[!UICONTROL Apache Sling Connection Pooled DataSource]** configuration. Tap to open the configuration in edit mode.
-1. In the configuration dialog, specify the details for the database you want to configure, such as:
+Avant de configurer des bases de données relationnelles à l’aide de [!DNL Experience Manager] Configuration de la console web, il est obligatoire de [activation de la mise en réseau avancée via l’API cloud manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), car les ports sont désactivés par défaut.
 
-    * Name of the data source
-    * Data source service property that stores the data source name
-    * Java class name for the JDBC driver
-    * JDBC connection URI
-    * Username and password to establish connection with the JDBC driver
+### Etapes de configuration de la base de données relationnelle
+
+Vous pouvez configurer des bases de données relationnelles à l’aide de [!DNL Experience Manager] Configuration de la console web. Procédez comme suit :
+
+1. Accédez à [!DNL Experience Manager] console web à l’adresse `https://server:host/system/console/configMgr`.
+1. Localiser **[!UICONTROL Pools de connexions JDBC Day Commons]** configuration. Appuyez pour ouvrir la configuration en mode édition.
+<br>
+
+![Pool de connecteurs JDBC](/help/forms/assets/jdbc_connector.png)
+<br>
+1. Dans la boîte de dialogue de configuration, spécifiez les détails de la base de données que vous souhaitez configurer, tels que :
+
+   * Nom de classe Java pour le pilote JDBC
+   * URI de connexion JDBC
+   * Nom d’utilisateur et mot de passe pour établir la connexion avec le pilote JDBC
+   * Spécifiez une requête SQL SELECT dans le champ **[!UICONTROL Requête de validation]** pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. En fonction de votre base de données, définissez l’une des options suivantes :
+      * SELECT 1 (MySQL et MS SQL)
+      * SELECT 1 from dual (Oracle)
+   * Sélectionnez la **Lecture seule par défaut** de sorte qu’il ne puisse pas être modifié.
+   * Sélectionner **Validation automatique par défaut** pour valider automatiquement les modifications.
+   * Spécifiez la taille du pool et le temps d’attente du pool en millisecondes.
+   * Nom de la source de données
+   * Propriété de service de source de données qui stocke le nom de la source de données
 
    >[!NOTE]
    >
-   >Ensure that you encrypt sensitive information like passwords before configuring the data source. To encrypt:
-   >
-   >    
-   >    
-   >    1. Go to https://'[server]:[port]'/system/console/crypto.
-   >    1. In the **[!UICONTROL Plain Text]** field, specify the password or any string to encrypt and tap **[!UICONTROL Protect]**.
-   >    
-   >    
-   >    
-   >The encrypted text appears in the Protected Text field that you can specify in the configuration.
+   > Voir [Connexions SQL à l’aide de JDBC DataSourcePool](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html#mysql-driver-dependencies) pour plus d’informations.
 
-1. Enable **[!UICONTROL Test on Borrow]** or **[!UICONTROL Test on Return]** to specify that the objects are validated before being borrowed or returned from and to the pool, respectively.
-1. Specify a SQL SELECT query in the **[!UICONTROL Validation Query]** field to validate connections from the pool. The query must return at least one row. Based on your database, specify one of the following:
+1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer la configuration.
 
-    * SELECT 1 (MySQL and MS SQL) 
-    * SELECT 1 from dual (Oracle)
-
-1. Tap **[!UICONTROL Save]** to save the configuration. -->
+Vous pouvez désormais utiliser la base de données relationnelle configurée avec votre modèle de données de formulaire.
 
 <!-- ## Configure [!DNL Experience Manager] user profile {#configure-aem-user-profile}
 
@@ -113,9 +116,9 @@ Pour configurer le dossier pour les configurations de service cloud :
 
 ## Configuration des services web RESTful {#configure-restful-web-services}
 
-Le service web RESTful peut être décrit en utilisant les [spécifications Swagger](https://swagger.io/specification/v2/) au format JSON ou YAML dans un fichier de définition [!DNL Swagger]. Pour configurer le service web RESTful dans [!DNL Experience Manager] as a Cloud Service, vérifiez que le fichier [!DNL Swagger] ([Swagger Version 2.0](https://swagger.io/specification/v2/)) est présent dans votre système de fichiers ou l’URL où le fichier est hébergé.
+Le service web RESTful peut être décrit en utilisant les [spécifications Swagger](https://swagger.io/specification/v2/) au format JSON ou YAML dans un fichier de définition [!DNL Swagger]. Pour configurer le service Web RESTful dans [!DNL Experience Manager] as a Cloud Service, assurez-vous que la variable [!DNL Swagger] fichier ([Swagger version 2.0](https://swagger.io/specification/v2/)) ou [!DNL Swagger] fichier ([Swagger version 3.0](https://swagger.io/specification/v3/)) sur votre système de fichiers ou l’URL d’hébergement du fichier.
 
-Procédez comme suit pour configurer les services RESTful :
+### Configuration des services RESTful pour Open API Specification version 2.0 {#configure-restful-services-swagger-version2.0}
 
 1. Accédez à **[!UICONTROL Outils > Cloud Services > Sources de données]**. Appuyez pour sélectionner le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -125,7 +128,7 @@ Procédez comme suit pour configurer les services RESTful :
 1. Spécifiez les informations suivantes pour le service RESTful :
 
    * Sélectionnez l’URL ou le fichier dans la liste déroulante [!UICONTROL Source Swagger] et spécifiez l’[!DNL Swagger URL] vers le fichier de définition du [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
-   * En fonction de l’entrée de la source[!DNL  Swagger], les champs suivants sont prérenseignés avec des valeurs :
+   * Selon la variable[!DNL  Swagger] Saisie source. Les champs suivants sont pré-renseignés avec des valeurs :
 
       * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source [!DNL Swagger].
       * Hôte : nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
@@ -138,6 +141,33 @@ Procédez comme suit pour configurer les services RESTful :
    <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
+
+### Configuration des services RESTful Open API Specification version 2.0 {#configure-restful-services-swagger-version3.0}
+
+1. Accédez à **[!UICONTROL Outils > Cloud Services > Sources de données]**. Appuyez pour sélectionner le dossier dans lequel vous souhaitez créer une configuration cloud.
+
+   Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](configure-data-sources.md#cloud-folder).
+
+1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Spécifiez les informations suivantes pour le service RESTful :
+
+   * Sélectionnez l’URL ou le fichier dans la liste déroulante [!UICONTROL Source Swagger] et spécifiez l’[!DNL Swagger 3.0 URL] vers le fichier de définition du [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
+   * Selon la variable[!DNL  Swagger] Entrée source : le nom des serveurs s’affiche automatiquement.
+   * Sélectionnez le type d’authentification (Aucun, OAuth2.0, Authentification de base, Clé API ou Authentification personnalisée) pour accéder au service RESTful et spécifiez les détails de l’authentification.
+
+   Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
+
+   <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+
+1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
+
+Voici quelques-unes des opérations non prises en charge par la version 3.0 de RESTful services Swagger :
+* Rappels
+* oneof/any
+* Référence distante
+* Différents corps de requête pour différents types MIME pour une seule opération
+
+Vous pouvez consulter [Spécification OpenAPI 3.0](https://swagger.io/specification/v3/) pour plus d’informations.
 
 ### Configurer le client HTTP du modèle de données de formulaire pour optimiser les performances {#fdm-http-client-configuration}
 
@@ -225,7 +255,7 @@ Définissez la propriété `importAllowlistPattern` de la configuration de la **
 }
 ```
 
-Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=en#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en#deployment-process) sur votre instance de Cloud Service.
+Pour définir les valeurs d’une configuration, [générez des configurations OSGi à l’aide du SDK AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=fr#generating-osgi-configurations-using-the-aem-sdk-quickstart) et [déployez la configuration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr#deployment-process) sur votre instance de Cloud Service.
 
 ## Configuration des services OData {#config-odata}
 
@@ -256,7 +286,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 
 <!--## Certificate-based mutual authentication for RESTful and SOAP web services {#mutual-authentication}
 
-When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other’s identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
+When you enable mutual authentication for form data model, both the data source and [!DNL Experience Manager] Server running Form Data Model authenticate each other's identity before sharing any data. You can use mutual authentication for REST and SOAP-based connections (data sources). To configure mutual authentication for a Form Data Model on your [!DNL Experience Manager Forms] environment:
 
 1. Upload the private key (certificate) to [!DNL Experience Manager Forms] server. To upload the private key:
    1. Log in to your [!DNL Experience Manager Forms] server as an administrator.
