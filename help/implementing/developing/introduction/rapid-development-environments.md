@@ -1,10 +1,10 @@
 ---
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour des itérations de développement rapides sur un environnement cloud.
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
 workflow-type: tm+mt
-source-wordcount: '2898'
-ht-degree: 6%
+source-wordcount: '3062'
+ht-degree: 5%
 
 ---
 
@@ -26,6 +26,8 @@ Une fois les modifications testées dans un RDE, elles peuvent être déployées
 Les RDE peuvent être utilisés pour les configurations de code, de contenu et Apache ou Dispatcher. Contrairement aux environnements de développement cloud standard, les développeurs peuvent utiliser des outils de ligne de commande locaux pour synchroniser le code créé localement avec un RDE.
 
 Chaque programme est configuré avec un RDE. Dans le cas de comptes Sandbox, ils seront mis en veille après quelques heures de non-utilisation.
+
+Lors de la création, les RDE sont définis sur la version d’AEM la plus récente disponible. Une réinitialisation de RDE, qui peut être effectuée à l’aide de Cloud Manager, enchaîne le RDE et le définit sur la dernière version d’AEM disponible.
 
 En règle générale, un RDE est utilisé par un seul développeur à la fois, pour tester et déboguer une fonctionnalité spécifique. Une fois la session de développement terminée, le RDE peut être réinitialisé à l’état par défaut pour l’utilisation suivante.
 
@@ -64,6 +66,8 @@ Suivez ces étapes pour utiliser Cloud Manager afin de créer un RDE pour votre 
 1. Cliquez sur **Enregistrer** pour ajouter l’environnement spécifié.
 
 L’écran **Aperçu** affiche désormais votre nouvel environnement dans la carte **Environnements.**
+
+Lors de la création, les RDE sont définis sur la version d’AEM la plus récente disponible. Une réinitialisation de RDE, qui peut également être effectuée à l’aide de Cloud Manager, enchaîne le RDE et le définit sur la dernière version d’AEM disponible.
 
 Pour plus d’informations sur l’utilisation de Cloud Manager pour créer des environnements, gérer les personnes qui y ont accès et affecter des domaines personnalisés, voir [la documentation de Cloud Manager.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md)
 
@@ -141,7 +145,12 @@ Adobe recommande le processus suivant pour développer une nouvelle fonctionnali
 
 * Lorsqu’un jalon intermédiaire est atteint et validé localement avec le SDK as a Cloud Service AEM, le code doit être validé dans une branche de fonctionnalité Git qui ne fait pas encore partie de la ligne principale, bien que la validation de ce dernier soit facultative. Ce qui constitue un &quot;jalon intermédiaire&quot; varie en fonction des habitudes de l’équipe. Par exemple, quelques nouvelles lignes de code, une demi-journée de travail ou l’achèvement d’une sous-fonctionnalité.
 
-* Réinitialisez le RDE s’il a été utilisé par une autre fonctionnalité et si vous souhaitez [la réinitialiser à un état par défaut](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->La réinitialisation prend quelques minutes et tout le contenu et le code existants seront supprimés. Vous pouvez utiliser la commande d’état RDE pour confirmer que le RDE est prêt.
+* Réinitialisez le RDE s’il a été utilisé par une autre fonctionnalité et si vous souhaitez [la réinitialiser à un état par défaut](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->La réinitialisation prend quelques minutes et tout le contenu et le code existants seront supprimés. Vous pouvez utiliser la commande d’état RDE pour confirmer que le RDE est prêt. Le RDE reviendra avec la version la plus récente AEM.
+
+   >[!IMPORTANT]
+   >
+   > Si vos environnements d’évaluation et de production ne reçoivent pas les mises à jour de mise à jour d’AEM automatique et sont bien en retard par rapport à la version d’AEM la plus récente, gardez à l’esprit que le code qui s’exécute sur l’éditeur de texte enrichi peut ne pas correspondre à la façon dont le code fonctionnera sur l’évaluation et la production. Dans ce cas, il est particulièrement important d’effectuer des tests approfondis du code lors de l’évaluation avant de le déployer en production.
+
 
 * À l’aide de l’interface de ligne de commande RDE, synchronisez le code local avec le RDE. Les options incluent l’installation d’un module de contenu, d’un lot spécifique, d’un fichier de configuration OSGI, d’un fichier de contenu et d’un fichier zip d’une configuration Apache/Dispatcher. Il est également possible de référencer un module de contenu distant. Voir [Outils de ligne de commande RDE](#rde-cli-commands) pour plus d’informations. Vous pouvez utiliser la commande status pour vérifier que le déploiement a réussi. Vous pouvez éventuellement utiliser le gestionnaire de modules pour installer des modules de contenu.
 
@@ -337,6 +346,8 @@ aio aem:rde:delete com.adobe.granite.csrf.impl.CSRFFilter
 ## Réinitialiser {#reset-rde}
 
 La réinitialisation de l’éditeur de texte enrichi supprime tout le code personnalisé, les configurations et le contenu des instances d’auteur et de publication. Cela peut s’avérer utile, par exemple, si le RDE a été utilisé pour tester une fonctionnalité spécifique et que vous souhaitez la réinitialiser à un état par défaut afin de tester une autre fonctionnalité.
+
+Une réinitialisation définit le RDE sur la version d’AEM la plus récente disponible.
 
 <!-- Alexandru: hiding for now, please don't delete
 
