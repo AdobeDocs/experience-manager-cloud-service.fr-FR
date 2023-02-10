@@ -2,10 +2,10 @@
 title: Présentation de Cloud Manager
 description: Découvrez comment Cloud Manager prend en charge votre projet AEM par le biais de ses programmes, environnements et pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 2d793f22e554c2a4bde8831b5053d1640ba07c70
+source-git-commit: 50217b0ff63eb87123c3a1238822441a56c1995e
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 100%
+source-wordcount: '852'
+ht-degree: 98%
 
 ---
 
@@ -49,6 +49,8 @@ Vous pouvez également accéder à la page Programmes et produits de Cloud Manag
 | Suppression de pipeline | Autoriser la suppression du pipeline |  | x |  |  |
 | Annuler l’exécution | Annuler l’exécution actuelle |  | x |  |  |
 | Génération d’un jeton d’accès personnel | Accéder à Git |  | x |  | x |
+| Créer un RDE | Création d’un environnement de développement rapide | x |  |  | x |
+| Réinitialiser RDE | Réinitialisation d’un environnement de développement rapide | x |  |  | x |
 
 >[!NOTE]
 >
