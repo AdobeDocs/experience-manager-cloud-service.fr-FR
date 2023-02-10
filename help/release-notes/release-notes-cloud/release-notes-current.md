@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 mini-toc-levels: 1
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1032'
 ht-degree: 23%
 
 ---
@@ -66,17 +66,18 @@ Consultez la vidéo Aperçu de la version de décembre 2023 pour un résumé des
 
 ### Nouvelles fonctionnalités de la préversion d’[!DNL Forms] {#prerelease-features-forms}
 
-* **[Utilisation des composants principaux de capture de données pour créer le Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md)**: Utilisez l’éditeur de Forms adaptatif pour créer des formulaires basés sur des composants de capture de données normalisés (composants principaux). Ces composants fournissent des fonctionnalités de personnalisation, un temps de développement réduit et des coûts de maintenance réduits pour vos expériences d’inscription numérique.
+* **[Utilisation des composants principaux de capture de données pour créer le Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Utilisation de l’éditeur de Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) pour créer des formulaires basés sur des composants de capture de données normalisés (composants principaux). Ces composants fournissent des fonctionnalités de personnalisation, un temps de développement réduit et des coûts de maintenance réduits pour vos expériences d’inscription numérique.
 * **[Prise en charge du pipeline Frontend pour le style d’un Forms adaptatif basé sur des composants principaux](/help/forms/using-themes-in-core-components.md)**: Utilisez des thèmes basés sur BEM facilement personnalisables pour les Forms adaptatives basées sur les composants principaux en les déployant avec le pipeline de déploiement Frontend afin d’améliorer l’aspect de vos formulaires.
 * **[Générer un document d’enregistrement pour le Forms adaptatif basé sur les composants principaux](/help/forms/generate-document-of-record-core-components.md)**: Créez un enregistrement pour le formulaire adaptatif basé sur les composants principaux lors de l’envoi pour un archivage à long terme, en version imprimée ou au format de document.
 
-![](/help/forms/assets/sample-core-components-based-adaptive-form.png)
+![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **Partager un formulaire adaptatif pour révision**: Utilisez le mécanisme de révision de Forms adaptatif pour permettre à un ou plusieurs réviseurs de réviser le formulaire.
 * **[Envoyer le Forms adaptatif à Microsoft SharePoint et Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Rationalisation de l’envoi des données avec possibilité d’envoyer directement des données de formulaire adaptatif à Microsoft SharePoint et Microsoft OneDrive. Vous pouvez envoyer des données basées sur des schémas et des données sans schéma. Ces actions d’envoi s’ajoutent aux actions d’envoi déjà disponibles.
 * **[Création de formulaires efficace à l’aide de la fonction Enregistrer un formulaire adaptatif en tant que modèle](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Rationalisez votre processus de création de formulaires en enregistrant un formulaire adaptatif en tant que modèle et en réutilisant les modèles pour votre prochain formulaire adaptatif.
-* **[Connexion du modèle de données Forms à des bases de données prenant en charge JDBC](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html)**: Connectez AEM Forms as a Cloud Service à une base de données qui prend en charge JDBC pour lire et écrire des données dans ces bases de données.
-* **Connecter le modèle de données de formulaire à des points de terminaison REST qui prennent en charge la spécification d’API ouverte version 3.0**: Connectez AEM Forms as a Cloud Service aux points de terminaison REST qui prennent en charge la spécification API ouverte version 3.0 pour envoyer et recevoir des données.
+* **[Connexion d’AEM Forms à des bases de données prises en charge par JDBC](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Connectez facilement votre modèle de données AEM Forms à des bases de données qui prennent en charge JDBC, ce qui vous permet de lire et d’écrire des données en toute simplicité.
+* **[Intégration aux points de fin REST à l’aide de l’API Open 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Connectez les modèles de données de formulaire as a Cloud Service AEM Forms aux points de terminaison REST qui prennent en charge la spécification d’API ouverte version 3.0, ce qui vous permet d’envoyer et de recevoir facilement des données.
+* **[Partager un formulaire adaptatif pour révision](/help/forms/create-reviews-forms.md)**: Utilisez le mécanisme de révision de Forms adaptatif pour permettre à un ou plusieurs réviseurs de réviser le formulaire.
+
 
 ## Module complémentaire CIF {#cloud-services-cif}
 

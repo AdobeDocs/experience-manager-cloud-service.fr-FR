@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3932'
 ht-degree: 95%
 
 ---
@@ -509,9 +509,9 @@ ht-degree: 95%
       + [Configuration d’un environnement de développement local](/help/forms/setup-local-development-environment.md)
       + [Installation et configuration de Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Configurer le connecteur de stockage unifié](/help/forms/configure-unified-storage-connector.md)
-   + Migration {#setup-environment}
+   + Migrer {#setup-environment}
       + [Migration vers [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
-   + Administration {#administering}
+   + Configuration et administration {#administering}
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
       + [Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources](/help/forms/import-export-forms-templates.md)
    + Intégration {#integrate}
@@ -562,26 +562,28 @@ ht-degree: 95%
             + [Création d’une action Envoyer personnalisée](/help/forms/custom-submit-action-form.md)
          + [Préremplissage des champs de formulaires adaptatifs](/help/forms/prepopulate-adaptive-form-fields.md)
          + [Generate Document of Record (Générer un document d’enregistrement)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [Ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif](/help/forms/supporting-new-language-localization.md)
          + Ajout ou amélioration des métadonnées {#manage-metadata}
             + [Ajout, suppression ou modification des métadonnées d’un formulaire adaptatif](/help/forms/manage-form-metadata.md)
             + [Réutilisation des propriétés de métadonnées d’un formulaire adaptatif](/help/forms/reusing-adaptive-forms.md)
          + Amélioration de l’accessibilité d’un formulaire adaptatif {#accessible-adaptive-forms}
             + [Création d’un formulaire adaptatif accessible](/help/forms/creating-accessible-adaptive-forms.md)
          + [Configurer le Portail Formulaires](/help/forms/configure-forms-portal.md)
-      + Modèle de données de formulaire {#use-form-data-model}
-         + [Connexion de vos sources de données à Cloud Service](/help/forms/data-integration.md)
-         + [Configuration des sources de données](/help/forms/configure-data-sources.md)
-         + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
-         + [Configuration du stockage [!DNL Azure] ](/help/forms/configure-azure-storage.md)
-         + [Configurer les services cloud  [!DNL Microsoft Dynamics 365] et [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
-         + [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)
-         + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
-         + [Utilisation d’un modèle de données de formulaire](/help/forms/using-form-data-model.md)
-      + Processus basés sur Forms {#create-form-centric-workflows}
-         + [Utilisation d’étapes basées sur l’utilisation de Forms dans une référence des étapes du workflow](/help/forms/aem-forms-workflow-step-reference.md)
-         + [Utilisation de variables dans un processus orienté Forms](/help/forms/variable-in-aem-workflows.md)
-         + [Utilisation de l’option Absence du bureau](/help/forms/configure-out-of-office-settings.md)
-   + Utilisation des API de communications {#using-communications}
+         + [Créer et gérer des révisions](/help/forms/create-reviews-forms.md)
+   + Modèle de données de formulaire {#use-form-data-model}
+      + [Connexion de vos sources de données à Cloud Service](/help/forms/data-integration.md)
+      + [Configuration des sources de données](/help/forms/configure-data-sources.md)
+      + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
+      + [Configuration du stockage [!DNL Azure] ](/help/forms/configure-azure-storage.md)
+      + [Configurer les services cloud  [!DNL Microsoft Dynamics 365] et [!DNL Salesforce] ](/help/forms/configure-msdynamics-salesforce.md)
+      + [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)
+      + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
+      + [Utilisation d’un modèle de données de formulaire](/help/forms/using-form-data-model.md)
+   + Processus basés sur Forms {#create-form-centric-workflows}
+      + [Utilisation d’étapes basées sur l’utilisation de Forms dans une référence des étapes du workflow](/help/forms/aem-forms-workflow-step-reference.md)
+      + [Utilisation de variables dans un processus orienté Forms](/help/forms/variable-in-aem-workflows.md)
+      + [Utilisation de l’option Absence du bureau](/help/forms/configure-out-of-office-settings.md)
+   + API Communications {#using-communications}
       + [Présentation des API de communication](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [API Communications – Traitement synchrone](/help/forms/aem-forms-cloud-service-communications.md)
       + [API Communications – Traitement par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)

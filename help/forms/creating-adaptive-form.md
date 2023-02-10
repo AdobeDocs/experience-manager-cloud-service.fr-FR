@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1414'
-ht-degree: 93%
+source-wordcount: '1500'
+ht-degree: 87%
 
 ---
 
@@ -17,9 +17,12 @@ ht-degree: 93%
 
 Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial pour les utilisateurs professionnels, qui permet de créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
->[!NOTE]
->
-> Cet article décrit une ancienne approche pour créer un formulaire adaptatif. Pour créer un Forms adaptatif en fonction de la dernière approche, voir [Création d’un formulaire adaptatif (composants principaux)](creating-adaptive-form.md).
+Avant de commencer, découvrez le type de composants Forms disponibles :
+
+* [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) sont des composants de capture de données normalisés. Ces composants fournissent des fonctionnalités de personnalisation, un temps de développement réduit et des coûts de maintenance réduits pour vos expériences d’inscription numérique. Un développeur peut facilement personnaliser et mettre en forme ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer la Forms adaptative.
+
+* [Composants de base Forms adaptatifs](creating-adaptive-form.md) sont des composants de capture de données classiques (anciens). Vous pouvez continuer à les utiliser pour modifier les composants de base existants basés sur le formulaire adaptatif. Si vous créez des formulaires, Adobe recommande d’utiliser  [Composants principaux de Forms adaptatif](creating-adaptive-form-core-components.md) pour créer une Forms adaptative.
+
 
 
 <!-- 

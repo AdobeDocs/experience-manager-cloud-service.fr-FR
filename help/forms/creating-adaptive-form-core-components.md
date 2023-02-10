@@ -4,23 +4,23 @@ description: Découvrez comment créer un formulaire adaptatif à l’aide de [!
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 50%
+source-wordcount: '1349'
+ht-degree: 51%
 
 ---
 
 
 # Création d’un formulaire adaptatif (composants principaux) {#creating-an-adaptive-form-core-components}
 
-Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial destiné aux entreprises pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif. Adaptive Forms fournit deux types de composants :
+Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial destiné aux entreprises pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
-* Les composants principaux de Forms adaptatif sont des composants de capture de données normalisés. Ces composants fournissent des fonctionnalités de personnalisation, un temps de développement réduit et des coûts de maintenance réduits pour vos expériences d’inscription numérique. Un développeur peut facilement personnaliser ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer la Forms adaptative.
+Avant de commencer, découvrez le type de composants Forms disponibles :
 
-* Les composants de base Forms adaptatifs sont des composants de capture de données classiques (anciens).
+* [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): Il s’agit de composants de capture de données normalisés. Ces composants fournissent des fonctionnalités de personnalisation, un temps de développement réduit et des coûts de maintenance réduits pour vos expériences d’inscription numérique. Un développeur peut facilement personnaliser et mettre en forme ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer la Forms adaptative.
 
-Cet article décrit une approche la plus récente pour créer un formulaire adaptatif. Pour créer un Forms adaptatif en fonction de l’ancienne approche, voir [Création d’un formulaire adaptatif (composants de base)](creating-adaptive-form.md)
+* [Composants de base Forms adaptatifs](creating-adaptive-form.md): Il s’agit de composants de capture de données classiques (anciens). Vous pouvez continuer à les utiliser pour modifier les composants de base existants basés sur le formulaire adaptatif. Si vous créez des formulaires, Adobe recommande d’utiliser  [Composants principaux de Forms adaptatif](creating-adaptive-form-core-components.md) pour créer une Forms adaptative.
 
 ![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png)
 
@@ -89,30 +89,7 @@ Désormais, vous pouvez faire glisser les composants principaux de Forms adaptat
 
 ## Composants principaux de Forms adaptatif disponibles
 
-Les composants principaux de Forms adaptatif sont des composants de capture de données normalisés. Ces composants fournissent des fonctionnalités de personnalisation, un temps de développement réduit et des coûts de maintenance réduits pour vos expériences d’inscription numérique. Les composants principaux suivants sont disponibles prêts à l’emploi :
-
-* Accordéon Forms adaptatif : La fonction d’accordéon permet à l’utilisateur de révéler et de masquer des sections du contenu associé dans un formulaire adaptatif.
-
-* Bouton Forms adaptatif
-* Groupe de cases à cocher Adaptive Forms
-* Sélecteur de date de Forms adaptatif
-* Liste déroulante Forms adaptative
-* Entrée de courrier électronique de Forms adaptative
-* Pièces jointes adaptatives Forms
-* Onglets horizontaux de Forms adaptatif
-* Image Forms adaptative
-* Entrée de numéro de Forms adaptatif
-* Panneau Forms adaptatif
-* Bouton radio Forms adaptatif
-* Bouton de réinitialisation de Forms adaptatif
-* Bouton d’envoi de Forms adaptatif
-* Entrée téléphonique du Forms adaptatif
-* Texte Forms adaptatif
-* Zone de texte Forms adaptatif
-* Titre du Forms adaptatif
-* Disposition de l’assistant de Forms adaptatif
-* En-tête
-* Pied de page
+Les composants principaux de Forms adaptatif sont des composants de capture de données normalisés. Ces composants fournissent des fonctionnalités de personnalisation, réduisent le temps de développement et réduisent les coûts de maintenance pour vos expériences d’inscription numérique. [Documentation sur les composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) comporte une liste détaillée des composants disponibles ainsi que des informations détaillées sur les fonctionnalités de chaque composant. Vous pouvez également [https://aemcomponents.dev/](https://aemcomponents.dev/) pour afficher les composants principaux disponibles en action.
 
 ## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model}
 
