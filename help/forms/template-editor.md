@@ -2,7 +2,7 @@
 title: Comment créer un modèle de formulaire adaptatif ?
 description: Créez des modèles de formulaire adaptatif en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
+source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 87%
@@ -158,7 +158,7 @@ Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formula
 
 
 
-### Associer un schéma de modèle de données de formulaire à un modèle {#associating-form-data-model-schema-in-template}
+## Associer un schéma de modèle de données de formulaire à un modèle {#associating-form-data-model-schema-in-template}
 
 Les auteurs peuvent associer une [!UICONTROL Schéma de modèle de données de formulaire] à un modèle de formulaire adaptatif dans l’éditeur de modèles. Il permet aux auteurs de sélectionner un schéma dans l’éditeur de modèles. Lorsque vous associez un schéma à un modèle et qu’un auteur de formulaire crée un formulaire basé sur le modèle, le schéma est présélectionné pour le formulaire. Il permet aux auteurs de formulaires de réglementer l’utilisation du schéma et de gagner du temps pour l’auteur de formulaires. Pour sélectionner un schéma de modèle de données de formulaire dans l’éditeur de modèles :
 
