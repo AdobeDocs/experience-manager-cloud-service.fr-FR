@@ -1,9 +1,9 @@
 ---
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour des itérations de développement rapides sur un environnement cloud.
-source-git-commit: 1d34834af35451b072afde536ee8aaa5155c58b3
+source-git-commit: 79f58c14625ed3e7a9d684006b3abbc97334ceeb
 workflow-type: tm+mt
-source-wordcount: '3062'
+source-wordcount: '3069'
 ht-degree: 5%
 
 ---
@@ -447,6 +447,7 @@ Pour ces raisons, il est recommandé, après avoir validé le code dans un envir
 
 Notez également les points suivants :
 
+* Les RDE n’incluent pas de niveau d’aperçu
 * Les RDE ne prennent actuellement pas en charge l’affichage et le débogage du code frontal déployé à l’aide du pipeline front-end de Cloud Manager.
 * Les RDE ne prennent actuellement pas en charge le canal de version préliminaire.
 
