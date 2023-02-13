@@ -2,10 +2,10 @@
 title: Comment créer un modèle de formulaire adaptatif ?
 description: Créez des modèles de formulaire adaptatif en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: fce9900a1979875fc725318a6cd735341d0b6275
 workflow-type: tm+mt
-source-wordcount: '1920'
-ht-degree: 94%
+source-wordcount: '2017'
+ht-degree: 87%
 
 ---
 
@@ -50,8 +50,7 @@ Contient les options suivantes :
    * **Informations sur la page** : permet de spécifier des informations telles que l’heure de publication, les vignettes, les bibliothèques côté client, la stratégie de page et la bibliothèque côté client de conceptions de pages.
 
    <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
-   * **Sélecteur de mode** : permet de changer de mode.
-Vous pouvez choisir le mode **[!UICONTROL Structure]**, **[!UICONTROL Contenu initial]** ou **[!UICONTROL Contrôle de mise en page]**. Le mode Structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le Mode Contenu initial vous permet de personnaliser le contenu du formulaire.
+   * **Sélecteur de mode :** Permet de changer de mode. Vous pouvez choisir **[!UICONTROL Structure]** mode, **[!UICONTROL Contenu initial]**, **[!UICONTROL Contrôle de mise en page]** mode . Le mode Structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le Mode Contenu initial vous permet de personnaliser le contenu du formulaire.
    * **Aperçu** : permet de prévisualiser le modèle avant de le publier. Vous pouvez utiliser le sélecteur de calques et l’aperçu pour activer/désactiver les modes de modification et d’aperçu.
 * **Barre latérale** : fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
 * **Barre d’outils de composant** : quand vous choisissez un composant, vous voyez une barre d’outils qui vous permet de personnaliser le composant.
@@ -151,12 +150,24 @@ Lorsque vous créez un formulaire adaptatif, vous pouvez voir le modèle affich�
 
 ## Importation ou exportation d’un modèle {#importing-or-exporting-a-template}
 
-Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formulaire adaptatif créé à l’aide d’un modèle personnalisé, celui-ci n’est pas téléchargé. Lorsque vous importez le formulaire dans une autre instance [!DNL AEM Forms], il est importé sans son modèle. Si le modèle d’un formulaire importé n’est pas disponible, le formulaire n’est pas rendu. Vous pouvez compresser le modèle personnalisé à partir du nœud `/conf` dans `https://<server>:<port>/crx/packmgr` et le transférer dans l’instance dans laquelle vous souhaitez charger le formulaire. [!DNL AEM Forms]. Vous pouvez également [créer un modèle à l’aide d’AEM Archetype et le déployer sur votre instance de Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=fr#prerequisites).
+Un formulaire fonctionne avec son modèle. Lorsque vous téléchargez un formulaire adaptatif créé à l’aide d’un modèle personnalisé, celui-ci n’est pas téléchargé. Lorsque vous importez le formulaire sur un autre [!DNL AEM Forms] , il est importé sans son modèle. Si le modèle d’un formulaire importé n’est pas disponible, le formulaire n’est pas rendu. Vous pouvez compresser le modèle personnalisé à partir du nœud `/conf` dans `https://<server>:<port>/crx/packmgr` et le transférer dans l’instance dans laquelle vous souhaitez charger le formulaire. [!DNL AEM Forms]. Vous pouvez également [créer un modèle à l’aide d’AEM Archetype et le déployer sur votre instance de Cloud Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/pages-templates.html?lang=fr#prerequisites).
 
 >[!NOTE]
 >
-> * Vous pouvez associer un [!UICONTROL Schéma de modèle de données de formulaire] à un modèle de formulaire adaptatif dans un éditeur de modèles. Voir [Création d’un formulaire adaptatif](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model) pour plus d’informations.
 > * Vous pouvez également configurer le modèle [!UICONTROL Document d’enregistrement] directement à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif. Pour de plus amples informations, voir [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+
+
+
+### Associer un schéma de modèle de données de formulaire à un modèle {#associating-form-data-model-schema-in-template}
+
+Les auteurs peuvent associer une [!UICONTROL Schéma de modèle de données de formulaire] à un modèle de formulaire adaptatif dans l’éditeur de modèles. Il permet aux auteurs de sélectionner un schéma dans l’éditeur de modèles. Lorsque vous associez un schéma à un modèle et qu’un auteur de formulaire crée un formulaire basé sur le modèle, le schéma est présélectionné pour le formulaire. Il permet aux auteurs de formulaires de réglementer l’utilisation du schéma et de gagner du temps pour l’auteur de formulaires. Pour sélectionner un schéma de modèle de données de formulaire dans l’éditeur de modèles :
+
+1. Appuyer **[!UICONTROL Explorateur de contenu]** située sur le côté gauche.
+1. Accédez au conteneur de formulaires **[!UICONTROL Paramètre]**.
+1. Sélectionner **[!UICONTROL Modèle de données]**.
+1. Choisissez votre modèle de données de formulaire via **[!UICONTROL Sélectionner un modèle de données de formulaire]** et enregistrez la configuration.
+
+![Form-Data-Model-Association-in-Forms](/help/forms/assets/select-form-data-model-img.png)
 
 
 

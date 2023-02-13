@@ -2,9 +2,9 @@
 title: Génération d’un document d’enregistrement pour les formulaires adaptatifs
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
 workflow-type: tm+mt
-source-wordcount: '3214'
+source-wordcount: '3172'
 ht-degree: 79%
 
 ---
@@ -116,11 +116,16 @@ Après avoir utilisé le modèle pendant un certain temps, l’entreprise décid
 
 ![Modèle mis à jour](assets/we-retail-new-invoice.png)
 
-Le développeur charge et applique le modèle mis à jour au formulaire adaptatif. Le formulaire adaptatif détecte et affiche automatiquement la liste des champs où la liaison a changé.
+<!--
 
-![Erreur de liaison](assets/we-retail-binding-error.png)
+The developer uploads and applies to the updated template to the adaptive form. The adaptive form automatically detects and displays list of fields where binding has changed.
 
-Le développeur de formulaires associe les champs de formulaires adaptatifs au modèle de document d’enregistrement correspondant.
+![Binding Error](assets/we-retail-binding-error.png)
+
+The form developer binds Adaptive Forms fields with corresponding Document of Record template.
+
+-->
+
 >[!VIDEO](assets/we-retail-binding.mp4)
 
 Désormais, lorsque le formulaire adaptatif est envoyé, un document d’enregistrement mis à jour est généré.
