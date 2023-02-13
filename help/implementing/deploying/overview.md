@@ -3,10 +3,10 @@ title: Déploiement sur AEM as a Cloud Service
 description: Déploiement sur AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 8e9ff8f77ac4920f87adcba0258cfccb15f9a5b9
+source-git-commit: 0481267958fe8ac4b28b2742924d2bc2c337eebc
 workflow-type: tm+mt
-source-wordcount: '3415'
-ht-degree: 96%
+source-wordcount: '3497'
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 96%
 
 ## Présentation {#introduction}
 
-Les principes fondamentaux du développement de code sont similaires dans AEM as a Cloud Service par rapport aux solutions AEM On Premise et Managed Services. Les développeurs écrivent du code et le testent localement. Il est ensuite envoyé vers les environnements distants AEM as a Cloud Service. Cloud Manager, qui était un outil de diffusion de contenu facultatif pour Managed Services, est requis. Il s’agit désormais du seul mécanisme permettant de déployer du code vers les environnements AEM as a Cloud Service.
+Les principes fondamentaux du développement de code sont similaires dans AEM as a Cloud Service par rapport aux solutions AEM On Premise et Managed Services. Les développeurs écrivent du code et le testent localement. Il est ensuite envoyé vers les environnements distants AEM as a Cloud Service. Cloud Manager, qui était un outil de diffusion de contenu facultatif pour Managed Services, est requis. Il s’agit désormais du seul mécanisme de déploiement du code pour AEM les environnements de développement, d’évaluation et de production as a Cloud Service. Pour une validation rapide des fonctionnalités et un débogage avant de déployer ces environnements, le code peut être synchronisé d’un environnement local à un [Environnement de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 La mise à jour de la [version d’AEM](/help/implementing/deploying/aem-version-updates.md) est toujours un événement de déploiement distinct de la publication de [code personnalisé](#customer-releases). Il en résulte que les versions de code personnalisé doivent être testées par rapport à la version d’AEM en cours de production, car c’est sur celle-ci qu’elles seront déployées. Les mises à jour de version d’AEM ayant lieu par la suite seront fréquentes et appliquées automatiquement. Elles sont conçues pour être rétrocompatibles avec le code client déjà déployé.
 
@@ -170,7 +170,6 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Gestionnaire de modules – Migration de modules de contenu modifiable"
->abstract="Explorez l’utilisation du gestionnaire de modules pour les cas d’utilisation où un module de contenu doit être installé un par un, ce qui inclut l’importation de contenu spécifique de l’environnement de production vers l’environnement d’évaluation afin de déboguer un problème de production, le transfert de petits modules de contenu de l’environnement on-premise vers les environnements AEM cloud, etc."
 >abstract="Explorez l’utilisation du gestionnaire de packages pour les cas d’utilisation où un module de contenu doit être installé &quot;un module&quot; qui inclut l’importation de contenu spécifique de la production vers l’évaluation afin de déboguer un problème de production, le transfert de petit module de contenu de l’environnement on-premise vers les environnements AEM cloud, etc."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#cloud-migration" text="Outil de transfert de contenu"
 
@@ -279,6 +278,12 @@ Si des modifications sont apportées aux index, il est important que la version 
 ### Codage conservateur pour les restaurations {#conservative-coding-for-rollbacks}
 
 Si un échec est signalé ou détecté après le déploiement, il est possible qu’une restauration de la version bleue soit nécessaire. Il serait judicieux de s’assurer que le code bleu est compatible avec toutes les structures créées par la version verte puisque les nouvelles structures (tout contenu modifiable) ne seront pas annulées. Si l’ancien code n’est pas compatible, des correctifs devront être appliqués dans les versions ultérieures du client.
+
+## Environnements de développement rapide (RDE) {#rde}
+
+[Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md) (ou les RDE pour abréger) permettent aux développeurs de déployer et d’examiner rapidement les modifications, ce qui réduit le temps nécessaire au test des fonctionnalités qui ont déjà fait leurs preuves dans un environnement de développement local.
+
+Contrairement aux environnements de développement standard qui déploient le code via le pipeline Cloud Manager, les développeurs utilisent des outils de ligne de commande pour synchroniser le code d’un environnement de développement local avec l’éditeur de texte enrichi. Une fois les modifications testées dans un éditeur de texte enrichi, elles doivent être déployées dans un environnement de développement cloud standard via le pipeline Cloud Manager, qui placera le code par le biais des points de contrôle qualité appropriés.
 
 ## Modes d’exécution {#runmodes}
 

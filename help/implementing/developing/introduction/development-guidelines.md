@@ -2,10 +2,10 @@
 title: Conseils de développement pour AEM as a Cloud Service
 description: Découvrez les conseils pour développer sur AEM as a Cloud Service et sur les manières importantes dont il diffère d’AEM sur site et d’une expérience d’ dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: e305f9fa7d1c485362bddb8fcd7c9e3e2edefe10
+source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
 workflow-type: tm+mt
-source-wordcount: '2590'
-ht-degree: 92%
+source-wordcount: '2591'
+ht-degree: 91%
 
 ---
 
@@ -166,7 +166,7 @@ Les clients peuvent accéder à CRXDE Lite sur l’environnement de développeme
 
 En revanche, il est possible de lancer le navigateur de référentiels à partir de Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et d’aperçu. En savoir plus sur le navigateur de référentiels [ici](/help/implementing/developing/tools/repository-browser.md).
 
-Un ensemble d’outils pour le débogage des environnements de développeur d’AEM as a Cloud Service est disponible dans Developer Console pour les environnements de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
+Un ensemble d’outils de débogage AEM environnements de développement as a Cloud Service est disponible dans Developer Console pour les environnements RDE, de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
