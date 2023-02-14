@@ -4,9 +4,9 @@ description: Modifications notables apportées à [!DNL Adobe Experience Manager
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: fe662a515a52bcf4648585366422064edce1a7fd
+source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1004'
 ht-degree: 100%
 
 ---
@@ -62,7 +62,6 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | Extraction de ressources à partir de l’archive ZIP | Non pris en charge. | Voir la section [Extraction de fichiers ZIP dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=fr#extractzip). |
 | Évaluations des ressources | Non pris en charge. | Le widget d’évaluation dans l’éditeur de schéma de métadonnées n’est pas pris en charge. |
 | Filtre de disposition du contenu | Non pris en charge. | `ContentDispositionFilter` est un cas d’utilisation courant qui permet aux administrateurs de configurer [!DNL Experience Manager] pour qu’ils diffusent des fichiers HTML et qu’ils ouvrent des fichiers PDF en ligne au lieu de les télécharger. Sur les instances de publication, vous pouvez gérer la disposition à l’aide de la configuration de Dispatcher. Sur les instances d’auteur, Adobe ne recommande pas de modifier l’en-tête de disposition du contenu. Voir [Filtre de disposition du contenu dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/content-disposition-filter.html?lang=fr). |
-| [Téléchargement du rapport](/help/assets/asset-reports.md) | Non pris en charge. | Pour l’instant, le rapport de téléchargement qui informe de l’utilisation des ressources n’est pas disponible. Voir [Rapport de téléchargement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=fr). |
 | Modèle de séance photo du produit | Non pris en charge. | Voir [Modèle de séance photo du produit dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/managing-product-information.html?lang=fr). |
 | Traduction intelligente | Non pris en charge. | La [traduction intelligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html?lang=fr) n’est pas prise en charge dans [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | WebDAV | Non pris en charge. | Pour obtenir des alternatives, consultez Intégration de [[!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md) ou les [Documents de référence pour les développeurs](/help/assets/developer-reference-material-apis.md). |
