@@ -4,10 +4,10 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 998b71903f3ea0c3c1082ecc800331811c2af8cf
+source-git-commit: c9d901db6873965643f5ababe544be3aa635a8e4
 workflow-type: tm+mt
-source-wordcount: '3992'
-ht-degree: 100%
+source-wordcount: '4086'
+ht-degree: 97%
 
 ---
 
@@ -445,6 +445,16 @@ Pour comparer des copies de langue au gabarit de langue :
 
 1. Les deux pages (de lancement et source) s’ouvrent côte à côte.
    * Pour des informations complètes sur l’utilisation de cette fonction, consultez [Différence entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
+
+## Déplacement ou changement de nom d’une page source {#move-source}
+
+Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie de langue en fonction du nouveau nom/emplacement de la page. L’ancienne copie de langue basée sur le nom/l’emplacement précédent sera toujours là.
+
+Dans ce scénario, la bonne pratique consiste à procéder comme suit :
+1. Annulez la publication des copies de langue associées à la page source que vous souhaitez déplacer.
+1. Supprimez-les.
+1. Créez de nouvelles copies de langue à partir de la page source nouvellement déplacée.
+1. Publiez les copies de langue nouvellement créées.
 
 ## Importation et exportation de tâches de traduction {#import-export}
 
