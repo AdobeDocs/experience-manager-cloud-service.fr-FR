@@ -2,10 +2,10 @@
 title: Génération d’un document d’enregistrement pour les formulaires adaptatifs
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: 90a10fd4e414f3457fa9658a50ccd0cf935fdb69
+source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
 workflow-type: tm+mt
-source-wordcount: '3172'
-ht-degree: 79%
+source-wordcount: '3109'
+ht-degree: 80%
 
 ---
 
@@ -29,7 +29,7 @@ Vous pouvez :
 
 Avant de commencer à apprendre et à préparer les ressources requises pour un document d’enregistrement :
 
-**Modèle de base :** un modèle XFA (fichier XDP) créé dans Forms Designer ou un formulaire Acrobat Form (AcroForm). Le [modèle de base](#base-template-of-a-document-of-record), également appelé métamodèle, est utilisé pour spécifier les informations de style et de marque pour un document d’enregistrement. Chargez votre modèle XFA (fichier XDP) sur votre instance AEM Forms au préalable..
+**Modèle de base :** un modèle XFA (fichier XDP) créé dans Forms Designer ou un formulaire Acrobat Form (AcroForm). Le [modèle de base](#base-template-of-a-document-of-record), également appelé métamodèle, est utilisé pour spécifier les informations de style et de marque pour un document d’enregistrement. Chargez votre modèle XFA (fichier XDP) sur votre instance AEM Forms au préalable. 
 
 **Formulaire adaptatif :** le formulaire adaptatif pour lequel le document d’enregistrement doit être généré.
 
@@ -326,8 +326,10 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Modèle**: Si vous souhaitez sélectionner un modèle personnalisé, recherchez et sélectionnez un XDP sur votre [!DNL AEM Forms] serveur. Si vous souhaitez utiliser un modèle qui n’est pas disponible sur votre [!DNL AEM Forms] , vous devez d’abord télécharger le fichier XDP sur votre [!DNL AEM Forms] serveur.
       * **Couleur d’accentuation**: Couleur dans laquelle le texte de l’en-tête et les lignes de séparateur sont rendus dans le document du PDF d’enregistrement.
       * **Famille de polices** : famille de polices du texte dans le document d’enregistrement au format PDF.
+
       * **Inclure les objets de formulaire qui ne sont pas liés au modèle de données**: La définition de la propriété inclut des champs non liés du formulaire adaptatif basé sur un schéma dans le document d’enregistrement.
-      * **Exclure les champs masqués du document d’enregistrement** : la définition de la propriété identifie les champs masqués à exclure du document d’enregistrement.
+      <!-- **Exclude hidden fields from the Document of Record**: Setting the property identifies the hidden fields for exclusion from Document of Record.-->
+
       * **Masquer la description des panneaux**: La définition de la propriété exclut la description du panneau/tableau du document d’enregistrement. Applicable au panneau et au tableau.
    1. **Propriétés des champs de formulaire** :
       * **Pour les composants Case à cocher et Bouton radio, afficher uniquement les valeurs sélectionnées** : la définition de la propriété affiche uniquement les valeurs sélectionnées de la case à cocher et du bouton radio dans [!UICONTROL document d’enregistrement].
@@ -341,7 +343,6 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Libellé clause de non-responsabilité** : libellé de la clause de non-responsabilité.
       * **Clause de non-responsabilité** : texte spécifiant la portée des droits et des obligations sur le document d’enregistrement.
       * **Texte de clause de non-responsabilité** : texte de la clause de non-responsabilité.
-
       ![Propriétés du gabarit de page](/help/forms/assets/dorpropertiesimg.png)
    >[!NOTE]
    >
@@ -394,4 +395,4 @@ Les paramètres du composant Document d’enregistrement sont disponible sous se
 **Paramètres des niveaux de formulaires**
 
 * **Inclure les champs non liés dans le document d’enregistrement** : la définition de la propriété comprend les champs non liés du schéma basé sur le formulaire adaptatif du document d’enregistrement. Par défaut, le paramètre est true.
-* **Exclure les champs du document d’enregistrement s’ils sont masqués :** Définissez la propriété pour exclure les champs masqués du document d’enregistrement lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant d’exclure ces champs du document d’enregistrement.
+<!-- **Exclude fields from DoR if hidden:** Set the property to exclude the hidden fields from Document of Record at form submission. When you enable [Revalidate on server](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), the server recomputes the hidden fields before excluding those fields from the Document of Record.->>
