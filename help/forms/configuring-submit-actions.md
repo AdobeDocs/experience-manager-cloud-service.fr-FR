@@ -2,10 +2,10 @@
 title: Configuration d’une action Envoyer pour un formulaire adaptatif
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
 workflow-type: tm+mt
-source-wordcount: '3065'
-ht-degree: 62%
+source-wordcount: '3131'
+ht-degree: 60%
 
 ---
 
@@ -185,6 +185,10 @@ Pour connecter AEM Forms à votre stockage Microsoft SharePoint :
    * Ajout des autorisations d’API `offline_access` et `Sites.Manage.All` pour fournir des autorisations de lecture/écriture.
    * Utilisez l’URL OAuth : `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Remplacer `<tenant-id>` avec le `tenant-id` de votre application à partir du portail Microsoft Azure.
 
+   >[!NOTE]
+   >
+   > Le **secret client** est obligatoire ou facultatif. Dépend de la configuration de votre application Azure Principale Directory. Si votre application est configurée pour utiliser un secret client, il est obligatoire de fournir le secret client.
+
 1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, la variable `Connection Successful` s’affiche.
 
 1. Maintenant, sélectionnez **Site SharePoint** > **Bibliothèque de documents** > **Dossier SharePoint**, pour enregistrer les données.
@@ -239,6 +243,10 @@ Pour connecter AEM Forms à votre stockage Microsoft OneDrive :
    * Sur le portail Microsoft Azure, ajoutez l’URI de redirection en tant que `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Remplacer `[author-instance]` avec l’URL de votre instance d’auteur.
    * Ajout des autorisations d’API `offline_access` et `Files.ReadWrite.All` pour fournir des autorisations de lecture/écriture.
    * Utilisez l’URL OAuth : `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Remplacer `<tenant-id>` avec le `tenant-id` de votre application à partir du portail Microsoft Azure.
+
+   >[!NOTE]
+   >
+   > Le **secret client** est obligatoire ou facultatif. Dépend de la configuration de votre application Azure Principale Directory. Si votre application est configurée pour utiliser un secret client, il est obligatoire de fournir le secret client.
 
 1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, la variable `Connection Successful` s’affiche.
 
