@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '805'
 ht-degree: 100%
@@ -68,9 +68,9 @@ Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Ado
 
 * Accès rapide au cockpit du produit : accédez facilement à des informations détaillées sur les produits en un seul clic dans l’éditeur de sites.
 
-   ![Activer la liste de souhaits](/help/assets/CIF/enable-wishlist.png)
+   ![Activation de la liste de souhaits](/help/assets/CIF/enable-wishlist.png)
 
-* Prise en charge de composants commerciaux marketing supplémentaires : les composants peuvent être configurés pour afficher un appel à l’action de type « ajouter au panier » et « ajouter à une liste de souhaits ».
+* Prise en charge de composants commerciaux marketing supplémentaires : les composants peuvent être configurés pour afficher un appel à l’action de type « Ajouter au panier » et « Ajouter à une liste de souhaits ».
 
    ![Raccourci de l’éditeur de sites vers le cockpit du produit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
@@ -97,7 +97,7 @@ Si vous continuez à utiliser des versions antérieures à TLS 1.0 et 1.1, vous
 
 ## Cloud Manager {#cloud-manager}
 
-Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Outils de migration {#migration-tools}
 

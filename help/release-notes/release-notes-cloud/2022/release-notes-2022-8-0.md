@@ -1,13 +1,13 @@
 ---
 title: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 6a4e9015e18556c04a71cba0dfa6c7f688c36cb6
+exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 23%
+ht-degree: 65%
 
 ---
-
 
 # Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -43,9 +43,9 @@ Regardez la vidéo Aperçu de la version d’août 2022 pour un résumé des fon
    * fournit une sortie de HTML optimale pour les emails grâce au [Styles CSS inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), la variable [Attribut HTML inliner](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner:-Technical-documentation), et la variable [assainisseur de HTMLs](https://github.com/adobe/aem-core-email-components/wiki/HTML-sanitizing:-Technical-documentation).
    * permet de créer des emails n’importe où.
 
-### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Sites] {#prerelease-features-sites}
+### Nouvelles fonctionnalités disponibles dans le canal de préversion [!DNL Sites] {#prerelease-features-sites}
 
-* Le [Console de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) permet aux utilisateurs d’afficher le nombre total de copies de langue associées à un fragment de contenu. Un accès en 1 clic a été fourni pour afficher toutes les copies de langue. Les utilisateurs peuvent également filtrer l’affichage du tableau en fonction des paramètres régionaux qui les intéressent.
+* Le [Console de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) permet aux utilisateurs d’afficher le nombre total de copies de langue associées à un fragment de contenu. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction de la langue de leur choix.
 
 ![Langues de fragments de contenu](/help/release-notes/assets/cfconsole-languages.png)
 
@@ -55,30 +55,30 @@ Regardez la vidéo Aperçu de la version d’août 2022 pour un résumé des fon
 
 * Vous pouvez maintenant configurer Adobe Experience Manager Assets sur [restreindre le type de ressources que les utilisateurs peuvent charger en fonction du type MIME ;](/help/assets/configure-asset-upload-restrictions.md).
 
-   ![Restrictions de chargement des ressources](/help/assets/assets/asset-upload-restrictions.png)
+   ![Restrictions de téléchargement des ressources](/help/assets/assets/asset-upload-restrictions.png)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Forms] {#prerelease-features-forms}
 
-* [Assistant de Forms adaptatif](/help/forms/creating-adaptive-form.md): AEM Forms fournit un assistant convivial destiné à l’entreprise afin de créer rapidement un Forms adaptatif. L’assistant dispose d’une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif. Cette version apporte les améliorations suivantes à l’assistant :
+* [Assistant de formulaires adaptatifs](/help/forms/creating-adaptive-form.md) : AEM Forms offre un assistant convivial pour l’utilisateur professionnel afin de créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif. Dans cette nouvelle version, l’assistant bénéficie des améliorations suivantes :
 
-   * Sélectionnez ou désélectionnez des champs : L’assistant vous permet de créer un formulaire adaptatif basé sur des schémas de modèle de données de formulaire et JSON. Vous pouvez désormais sélectionner un sous-ensemble de champs dans un schéma à inclure dans un formulaire adaptatif. Les champs sélectionnés sont convertis en composants de capture de données de formulaire adaptatif correspondants pour créer rapidement les formulaires adaptatifs souhaités.
+   * Sélection ou désélection des champs : l’assistant vous permet de créer un formulaire adaptatif basé sur des schémas de modèle de données de formulaires et JSON. Vous pouvez désormais sélectionner un sous-ensemble de champs dans un schéma à inclure dans un formulaire adaptatif. Les champs sélectionnés sont convertis en composants de capture de données correspondants dans le formulaire adaptatif afin de créer rapidement les formulaires adaptatifs souhaités.
 
-   * Utiliser des modèles statiques : Les clients qui ont déjà investi dans des modèles statiques hérités peuvent continuer leur parcours d’adoption du cloud en utilisant des modèles statiques dans l’assistant pour créer des formulaires adaptatifs. Les clients disposent ainsi d’un temps supplémentaire pour migrer les anciens modèles statiques vers des modèles modifiables modernes.
+   * Utilisation de modèles statiques : les client(e)s qui utilisent toujours les modèles statiques hérités peuvent poursuivre leur migration vers le cloud en utilisant des modèles statiques dans l’assistant pour créer des formulaires adaptatifs. Les client(e)s disposent ainsi de temps supplémentaire pour migrer des anciens modèles statiques vers des modèles modifiables modernes.
 
-* [Suppression des champs masqués d’un document d’enregistrement (DE) lors du traitement côté serveur](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md): Vous pouvez générer le document du PDF d’enregistrement pour les utilisateurs finaux contenant uniquement les champs qui leur ont été visibles lors de l’expérience de capture de données. Lors de l’envoi du formulaire, le serveur valide les champs qui ont été masqués à l’utilisateur final en fonction des données envoyées et exclut du document d’enregistrement par souci de cohérence.
+* [Suppression des champs masqués d’un document d’enregistrement (DoR) lors du traitement serveur](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) : vous pouvez générer le document d’enregistrement au format PDF à destination des utilisateurs et utilisatrices finaux contenant uniquement les champs qui leur étaient visibles lors de l’expérience de capture de données. Lors de l’envoi du formulaire, le serveur valide les champs qui étaient masqués à l’utilisateur ou l’utilisatrice final(e) en fonction des données envoyées et les exclut du document d’enregistrement par souci de cohérence.
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
 ### Nouveautés {#what-is-new-cif}
 
-* Association des pages d’AEM aux produits et aux catégories via AEM propriétés de page plus aperçu dans le cockpit du produit
-   ![association de page du cockpit du produit](/help/assets/CIF/product_cockpit_page_association.png)
+* Association des pages AEM aux produits et aux catégories à l’aide des propriétés de page AEM et aperçu dans le cockpit de produits
+   ![Association de page du cockpit de produits](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Cloud Manager {#cloud-manager}
 
-Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Outils de migration {#migration-tools}
 

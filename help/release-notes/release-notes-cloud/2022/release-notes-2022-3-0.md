@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
+source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
 workflow-type: tm+mt
 source-wordcount: '1153'
 ht-degree: 97%
@@ -79,9 +79,9 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 ### Nouveautés {#what-is-new-cif}
 
 * Optimisation du référencement pour les scénarios multi-magasin : les formats d’URL pour les pages d’information ou de recensement produit peuvent désormais être configurés au niveau du magasin grâce aux propriétés de configuration cloud CIF.
-* Le sélecteur de produits prend en charge les produits intermédiaires par le biais d’une nouvelle option de filtre dans l’interface utilisateur. Il permet aux spécialistes du contenu de préparer la gestion de contenu de produit pour les lancements de produits à venir.
-* Simplification de la gestion de la configuration et des erreurs CIF à l’aide du nom de configuration cloud CIF au lieu de l’URL du proxy de configuration
-* Sélection manuelle de la catégorie de composant de Liste de produits et de Carrousel. Elle permet aux spécialistes du contenu d’utiliser ces composants sur les pages de contenu, en dehors du catalogue..
+* Le sélecteur de produits prend en charge les produits intermédiaires par le biais d’une nouvelle option de filtre dans l’interface utilisateur. Cela permet aux spécialistes du contenu de préparer la gestion de contenu de produit pour les lancements de produits à venir.
+* Simplification de la gestion de la configuration et de la gestion des erreurs CIF à l’aide du nom de configuration cloud CIF au lieu de l’URL du proxy de configuration.
+* Sélection manuelle de catégories pour la liste de produits et les composants de carrousel. Elle permet aux spécialistes du contenu d’utiliser ces composants sur les pages de contenu, en dehors du catalogue..
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire CIF {#prerelease-features-cif}
 
@@ -103,7 +103,7 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 
 ## Cloud Manager {#cloud-manager}
 
-Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici](/help/implementing/cloud-manager/release-notes-cloud-manager/release-notes-cm-current.md).
+Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici.](/help/implementing/cloud-manager/release-notes/current.md)
 
 ## Outil de transfert de contenu {#ctt-release}
 
