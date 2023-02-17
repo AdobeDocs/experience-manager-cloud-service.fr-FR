@@ -2,10 +2,10 @@
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 1a2ff747361bb0def718bee2e8eb0a1055b8efcf
+source-git-commit: d07a4fd0a335295d399057ea1eef567e757e2d92
 workflow-type: tm+mt
-source-wordcount: '1749'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -100,8 +100,9 @@ En résumé, vous voudrez probablement télécharger le binaire Linux x86-64 à 
 >La version la plus récente de CTT doit être utilisée.
 
 La prise en charge d’AzCopy pour Amazon S3, le stockage Blob Azure et File Data Store est incluse dans la dernière version de CTT.
-Vous pouvez télécharger la dernière version du CTT à partir du portail [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
-
+Vous pouvez télécharger la dernière version du CTT à partir du portail [Distribution logicielle.
+](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
+Notez que seules les versions 2.0.0 et ultérieures seront prises en charge et il est conseillé d’utiliser la version la plus récente.
 
 ### 3. Configuration d’un fichier azcopy.config. {#configure-azcopy-config-file}
 
