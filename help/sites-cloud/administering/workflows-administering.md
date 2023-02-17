@@ -4,10 +4,10 @@ description: Découvrez comment administrer des instances de workflow
 feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: c03959a9acc22a119b2a4c8c473abc84b0b9bf0d
+source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 100%
+source-wordcount: '1165'
+ht-degree: 95%
 
 ---
 
@@ -63,6 +63,12 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
    ![wf-97-1](/help/sites-cloud/administering/assets/wf-97-1.png)
 
+   >[!NOTE]
+   >
+   >
+   >Pour arrêter ou interrompre un workflow, celui-ci doit être en attente d’une intervention de l’utilisateur, par exemple dans une étape de participant. Toute tentative d’abandon d’un workflow en cours d’exécution de tâches (threads principaux en cours d’exécution) peut ne pas produire les résultats escomptés.
+
+
 ## Affichage des workflows archivés {#viewing-archived-workflows}
 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
@@ -76,6 +82,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    >
    >* Utilisation de l’action **Terminer**
    >* Lorsqu’une page, qui est soumise à un workflow, est supprimée (de force), le workflow est arrêté.
+
 
 
 1. Sélectionnez un élément spécifique, puis **Ouvrir l’historique** pour afficher plus de détails :
