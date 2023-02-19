@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
+source-git-commit: 41e17fdae57244d83c8ee715326a0ee41488ba60
 workflow-type: tm+mt
-source-wordcount: '3705'
+source-wordcount: '3707'
 ht-degree: 94%
 
 ---
@@ -274,7 +274,7 @@ Vous pouvez modifier un profil de codage existant pour la vidéo afin de tirer p
    <td><code>keyframe</code></td>
    <td>Nombre cible d’images entre les images clés. Calculez cette valeur afin que vous puissiez générer une image clé toutes les 2 à 10 secondes. Par exemple, à 30 images par seconde, l’intervalle d’images clé doit être compris entre 60 et 300.<br /> <br /> Les intervalles d’images clé moindres améliorent le comportement de recherche de flux et de changement de flux pour les codages vidéo adaptatifs et peuvent également améliorer la qualité des vidéos avec beaucoup de mouvement. Cependant, puisque les images clés augmentent la taille du fichier, un intervalle d’images clés moindre entraîne généralement une qualité de vidéo globalement moins bonne à un débit donné.</td>
    <td><code>String</code></td>
-   <td><p>Numéro positif.</p> <p>La valeur par défaut est 300.</p> <p>La valeur recommandée pour HLS ou DASH (diffusion en continu adaptative) est comprise entre 60 et 90. (Pour afficher ou utiliser le DASH, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir <a href="/help/assets/dynamic-media/video.md#enable-dash">Activation de DASH sur votre compte</a>.)</p> </td>
+   <td><p>Numéro positif.</p> <p>La valeur par défaut est 300.</p> <p>La valeur recommandée pour HLS ou DASH (diffusion en continu adaptative) est comprise entre 60 et 90. (Pour utiliser DASH, les vidéos doivent d’abord être activées par le support technique d’Adobe sur votre compte. Voir <a href="/help/assets/dynamic-media/video.md#enable-dash">Activation de DASH sur votre compte</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -292,7 +292,7 @@ Vous pouvez modifier un profil de codage existant pour la vidéo afin de tirer p
    <td><code>audioBitrateCustom</code></td>
    <td>Définissez la valeur sur <code>true</code> afin de forcer un débit constant pour le flux audio, si le codec audio le permet.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>La valeur par défaut est <code>false</code>.</p> <p>La valeur recommandée pour HLS ou DASH est <code>false</code>. (Pour afficher ou utiliser le DASH, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir <a href="/help/assets/dynamic-media/video.md#enable-dash">Activation de DASH sur votre compte</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>La valeur par défaut est <code>false</code>.</p> <p>La valeur recommandée pour HLS ou DASH est <code>false</code>. (Pour utiliser le DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir <a href="/help/assets/dynamic-media/video.md#enable-dash">Activation de DASH sur votre compte</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 4b51ace98d547a6a31f30d6348508a71266dbfed
+source-git-commit: 499fcda8ab6639de8f41383b1334a1e92aa52656
 workflow-type: tm+mt
-source-wordcount: '10300'
-ht-degree: 85%
+source-wordcount: '10318'
+ht-degree: 84%
 
 ---
 
@@ -157,9 +157,9 @@ Du côté de la conception du lecteur, vous pouvez concevoir la fonctionnalité 
 
 Du côté lecture de la visionneuse, elle détecte automatiquement les fonctionnalités vidéo du navigateur. Il diffuse ensuite la vidéo à l’aide de HLS ou DASH, également appelé diffusion en continu de vidéo adaptative. Si ces méthodes de distribution n’existent pas, la diffusion progressive HTML5 est utilisée à la place.
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Pour afficher ou utiliser DASH, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](#enable-dash).)
+>Pour utiliser DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](#enable-dash).)
 
 Vous pouvez combiner dans un unique lecteur la possibilité de concevoir les composants de lecture à l’aide de HTML5 et CSS. Il peut comporter une lecture incorporée et utiliser la diffusion en continu adaptative et progressive selon les fonctionnalités du navigateur. Grâce à cette fonctionnalité, vous pouvez étendre la portée de votre contenu multimédia aux utilisateurs d’ordinateur et de mobile et garantir une expérience vidéo fluide.
 
@@ -174,9 +174,9 @@ La lecture vidéo se produit à l’aide du téléchargement vidéo HLS, DASH ou
 
 Toutefois, dans Experience Manager 6.3 et versions ultérieures, les vidéos sont désormais diffusées en continu via HTTPS (c’est-à-dire, HLS ou DASH), car l’URL du service de passerelle DM utilise toujours HTTPS également. Il n’y a aucun impact pour le client dans ce comportement par défaut. Autrement dit, la diffusion en continu de vidéo s’effectuera tout de même via HTTPS, à moins qu’elle ne soit pas prise en charge par le navigateur (voir le tableau ci-dessous).
 
->[!IMPORTANT]
+>[!NOTE]
 >
->Pour afficher ou utiliser DASH, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](#enable-dash).)
+>Pour utiliser DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](#enable-dash).)
 
 Par conséquent,
 
@@ -256,7 +256,7 @@ Le tableau ci-dessous décrit l’appareil, le navigateur et la méthode de lect
 
 >[!IMPORTANT]
 >
->*Pour afficher ou utiliser le DASH, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](#enable-dash).)
+>*Pour utiliser le DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](#enable-dash).)
 
 <!--  THIS LINE WAS REMOVED FROM THE TABLE ABOVE ON FEB 28, 2022 BASED ON CQDOC 18692 -RSB <tr>
    <td>Mobile</td>
@@ -1396,9 +1396,13 @@ L’API renvoie null en cas d’erreur. Les exceptions sont consignées dans les
 * `IOException` est consigné lorsqu’un problème de connexion à Dynamic Media se produit.
 * `UnsupportedOperationException` est consigné lorsqu’un événement `manifestType` paramètre transmis `ManifestType.DASH`, alors que la vidéo n’a pas été traitée au format DASH.
 
-Voici un exemple de l’API ci-dessus utilisant des servlets écrits dans *HTTPWhiteBoard* spécification.
+Voici un exemple de l’API ci-dessus utilisant des servlets écrits dans *HTTPWhiteBoard* spécification. Sélectionnez chaque onglet pour la syntaxe du code.
 
-**Ajouter une dépendance dans pom.xml**
+>[!BEGINTABS]
+
+>[!TAB Ajouter une dépendance dans pom.xml]
+
++++**Ajouter une dépendance dans pom.xml**
 
 ```java
 dependency> 
@@ -1409,7 +1413,7 @@ dependency>
 </dependency> 
 ```
 
->[!BEGINTABS]
++++
 
 >[!TAB Exemple de servlet]
 
@@ -1650,6 +1654,19 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 +++
 
 >[!ENDTABS]
+
++++**Ajouter une dépendance dans pom.xml**
+
+```java
+dependency> 
+     <groupId>com.day.cq.dam</groupId> 
+     <artifactId>cq-scene7-api</artifactId> 
+     <version>5.12.64</version> 
+     <scope>provided</scope> 
+</dependency> 
+```
+
++++
 
 +++**Exemple de servlet**
 
