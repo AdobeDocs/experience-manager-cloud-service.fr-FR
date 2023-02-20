@@ -3,9 +3,9 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 17b0604cb192a375c3097255812c89caa8580d5b
+source-git-commit: e156ed7348815e02c942cb8feace70c675956752
 workflow-type: tm+mt
-source-wordcount: '4173'
+source-wordcount: '4203'
 ht-degree: 58%
 
 ---
@@ -556,6 +556,10 @@ Pour accéder à d’autres exemples, voir :
 
 ## Tri {#sorting}
 
+>[!NOTE]
+>
+>Pour obtenir de meilleures performances, [Mise à jour des fragments de contenu pour la pagination et le tri dans le filtrage GraphQL](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+
 Cette fonctionnalité vous permet de trier les résultats de la requête en fonction d’un champ spécifié.
 
 Les critères de tri :
@@ -593,8 +597,6 @@ Et aussi :
 }
 ```
 
-<!-- to be included? -->
-
 Vous pouvez également trier un champ dans un fragment imbriqué au format de `nestedFragmentname.fieldname`.
 
 >[!NOTE]
@@ -620,6 +622,10 @@ query {
 ```
 
 ## Pagination {#paging}
+
+>[!NOTE]
+>
+>Pour obtenir de meilleures performances, [Mise à jour des fragments de contenu pour la pagination et le tri dans le filtrage GraphQL](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
 
 Cette fonctionnalité vous permet d’effectuer une pagination sur les types de requête qui renvoient une liste. Deux méthodes sont fournies :
 
