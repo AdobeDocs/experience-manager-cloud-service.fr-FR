@@ -4,10 +4,10 @@ description: Découvrez comment créer un formulaire adaptatif à l’aide de [!
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
+source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
 workflow-type: tm+mt
-source-wordcount: '1349'
-ht-degree: 51%
+source-wordcount: '1406'
+ht-degree: 49%
 
 ---
 
@@ -29,6 +29,7 @@ Avant de commencer, découvrez le type de composants Forms disponibles :
 
 Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants :
 
+* **Activation des composants principaux de Forms adaptatif pour votre environnement**: Si vous utilisez AEM archetype version 40 ou ultérieure, les composants principaux sont automatiquement activés pour votre environnement. Pour activer les composants principaux Forms adaptatifs pour votre environnement AEM Forms as a Cloud Service en fonction des anciennes versions de l’archétype, voir : [Activation des composants principaux de Forms adaptatif pour votre environnement](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
 * **Un modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Par exemple, l’envoi des données collectées à une source de données. Le service cloud fournit un modèle prêt à l’emploi, nommé vide :
 
    * Le `blank` est inclus dans chaque nouveau programme AEM Forms as a Cloud Service.
