@@ -4,10 +4,10 @@ description: Découvrez comment créer un formulaire adaptatif à l’aide de [!
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: e3eb2fb6e48b8821199fa5e81ce63d54ae4d82b7
+source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 49%
+source-wordcount: '1458'
+ht-degree: 47%
 
 ---
 
@@ -29,7 +29,8 @@ Avant de commencer, découvrez le type de composants Forms disponibles :
 
 Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants :
 
-* **Activation des composants principaux de Forms adaptatif pour votre environnement**: Si vous utilisez AEM archetype version 40 ou ultérieure, les composants principaux sont automatiquement activés pour votre environnement. Pour activer les composants principaux Forms adaptatifs pour votre environnement AEM Forms as a Cloud Service en fonction des anciennes versions de l’archétype, voir : [Activation des composants principaux de Forms adaptatif pour votre environnement](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project)
+* **Activation des composants principaux de Forms adaptatif pour votre environnement**: Lorsque vous créez un programme, les composants principaux de Forms adaptatif sont déjà activés pour votre environnement. Si vous disposez d’un environnement Forms as a Cloud Service basé sur Archetype 39 ou version antérieure, [Activation des composants principaux de Forms adaptatif pour votre environnement](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Lors de l’activation des composants principaux pour votre environnement, la variable **Forms adaptatif (composant principal)** modèle et thème de canevas sont ajoutés à votre environnement.
+
 * **Un modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Par exemple, l’envoi des données collectées à une source de données. Le service cloud fournit un modèle prêt à l’emploi, nommé vide :
 
    * Le `blank` est inclus dans chaque nouveau programme AEM Forms as a Cloud Service.
@@ -55,6 +56,11 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
    ![Modèle de composants principaux](/help/forms/assets/core-components-template.png)
 
    Lorsque vous sélectionnez un modèle, un thème et une action d’envoi spécifiés dans le modèle sont automatiquement sélectionnés, et l’événement **[!UICONTROL Créer]** est activé. Vous pouvez accéder aux onglets **[!UICONTROL Style]** ou **[!UICONTROL Envoi]** pour sélectionner un autre thème ou une autre action d’envoi. Si le modèle sélectionné ne spécifie aucun thème, le bouton de création reste désactivé. Vous pouvez accéder à l’onglet **[!UICONTROL Styles]** pour sélectionner manuellement un thème.
+
+   >[!NOTE]
+   >
+   >
+   > Si vous ne l’avez pas, **Forms adaptatif (composant principal)** modèle sur votre environnement, [Activation des composants principaux de Forms adaptatif pour votre environnement](setup-local-development-environment.md#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project). Lors de l’activation des composants principaux pour votre environnement, la variable **Forms adaptatif (composant principal)** est ajouté à votre environnement.
 
 1. Dans le **[!UICONTROL Style]** sélectionnez un thème :
 
