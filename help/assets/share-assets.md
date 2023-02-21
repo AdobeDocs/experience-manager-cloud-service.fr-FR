@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
-source-git-commit: 86bf6ba711740bd4c39070c2fa600d23f201ee7e
+source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
 workflow-type: tm+mt
-source-wordcount: '1287'
+source-wordcount: '1292'
 ht-degree: 100%
 
 ---
@@ -175,7 +175,7 @@ Les utilisateurs peuvent télécharger les ressources requises et les partager e
 
 Les spécialistes marketing et les utilisateurs de services dédiés peuvent facilement partager des ressources approuvées avec des professionnels de la création à l’aide des solutions suivantes :
 
-* **Appli de bureau Experience Manager** : cette application fonctionne sous Windows et Mac. Voir [Vue d’ensemble de l’appli de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html). Pour savoir comment un utilisateur autorisé peut facilement accéder aux ressources partagées, voir [Parcourir, rechercher et prévisualiser des ressources](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets). Les utilisateurs peuvent créer des ressources et les repartager avec leurs collaborateurs qui sont des utilisateurs d’Experience Manager (par exemple, en chargeant de nouvelles images). Voir [Chargement de ressources à l’aide de l’application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#upload-and-add-new-assets-to-aem).
+* **Appli de bureau Experience Manager** : cette application fonctionne sous Windows et Mac. Voir [Vue d’ensemble de l’appli de bureau AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr). Pour savoir comment un utilisateur autorisé peut facilement accéder aux ressources partagées, voir [Parcourir, rechercher et prévisualiser des ressources](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets). Les utilisateurs peuvent créer des ressources et les repartager avec leurs collaborateurs qui sont des utilisateurs d’Experience Manager (par exemple, en chargeant de nouvelles images). Voir [Chargement de ressources à l’aide de l’application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#upload-and-add-new-assets-to-aem).
 
 * **Adobe Asset Link** : les professionnels de la création peuvent rechercher et utiliser des ressources directement dans [!DNL Adobe InDesign], [!DNL Adobe Illustrator] et [!DNL Adobe Photoshop].
 
@@ -245,7 +245,7 @@ Voir [comment configurer [!DNL Assets] pour l’utiliser avec [!DNL Adobe Asset 
 ## Bonnes pratiques et résolution des problèmes {#bestpractices}
 
 * Les collections ou les dossiers de ressources dont le nom contient un espace blanc risquent de ne pas être partagés.
-* Si les utilisateurs ne peuvent pas télécharger les ressources partagées, contactez votre administrateur Experience Manager pour connaître les [limites de téléchargement](#maxdatasize).
+* Si les utilisateurs ne peuvent pas télécharger les ressources partagées, contactez votre administrateur Experience Manager pour connaître les limites de téléchargement. La valeur par défaut est de 100 Mo.
 * Pour qu’un utilisateur puisse prévisualiser une vidéo partagée à l’aide du partage de liens, la vidéo doit disposer d’un rendu vidéo statique disponible à l’emplacement `/jcr:content/renditions` du nœud de la vidéo, dans le référentiel. La prévisualisation ne dépend pas de la disponibilité d’un rendu [!DNL Dynamic Media].
 * Lors du téléchargement d’une ressource vidéo via le partage de liens, les rendus [!DNL Dynamic Media] ne sont pas inclus dans l’archive téléchargée.
 
