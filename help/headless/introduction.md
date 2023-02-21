@@ -1,12 +1,12 @@
 ---
-title: Présentation d’AEM découplé
-description: Découvrez Adobe Experience Manager (AEM) en tant que CMS découplé grâce à un ensemble de documents détaillés et de parcours découplés. Découvrez comment des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL sont utilisées pour créer des expériences découplées puissantes.
-landing-page-description: Apprenez comment utiliser et administrer Experience Manager découplé as a Cloud Service.
+title: Présentation de Headless pour AEM
+description: Découvrez Headless dans Adobe Experience Manager (AEM) avec une combinaison de documentation détaillée et de parcours headless. Découvrez comment des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL sont utilisées pour créer des expériences découplées puissantes.
+landing-page-description: Découvrez comment utiliser et administrer Headless dans Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 4e64683598ced4b9811e957082932971f0ec0bb1
+source-git-commit: 58a7886e32664dddfd3ca9c888717452ed5d362a
 workflow-type: tm+mt
-source-wordcount: '680'
-ht-degree: 100%
+source-wordcount: '675'
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ L’implémentation découplée renonce à la gestion des pages et des composant
 
 ![Modèles d’implémentation AEM](assets/aem-implementation-models.png)
 
-## Fonctionnalités d’AEM découplé {#aem-headless-features}
+## Fonctions {#aem-headless-features}
 
 AEM as a Cloud Service est un outil souple pour le modèle d’implémentation découplée avec trois fonctionnalités puissantes :
 
@@ -46,7 +46,7 @@ AEM as a Cloud Service est un outil souple pour le modèle d’implémentation d
    * L’API REST AEM Assets prend en charge les opérations CRUD sur les fragments de contenu.
    * La diffusion de contenu direct est également possible avec l’[Exportateur JSON du composant principal du fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr).
 
-## Vos premiers pas avec AEM découplé {#first-steps}
+## Vos premières étapes {#first-steps}
 
 Plusieurs ressources sont disponibles pour commencer à utiliser les fonctionnalités AEM découplé. Chaque guide est adapté à différents cas d’utilisation et différentes audiences.
 
