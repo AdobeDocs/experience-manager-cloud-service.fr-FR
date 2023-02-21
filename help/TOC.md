@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 1b9817005ec40d61e9fa613dbd8c56912605040b
+source-git-commit: 1561668046909e88c283145205c16b167c04ca8c
 workflow-type: tm+mt
-source-wordcount: '3944'
+source-wordcount: '3946'
 ht-degree: 94%
 
 ---
@@ -699,7 +699,7 @@ ht-degree: 94%
       + [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
       + [Requêtes GraphQL persistantes](/help/headless/graphql-api/persisted-queries.md)
       + [Optimisation des requêtes GraphQL](/help/headless/graphql-api/graphql-optimization.md)
-      + [Mise à jour des fragments de contenu pour le filtrage GraphQL](/help/headless/graphql-api/graphql-paging-sorting-content-update.md)
+      + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Exemples de requêtes GraphQL](/help/headless/graphql-api/sample-queries.md)
    + [API REST de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=fr)
    + Sécurité {#security}
@@ -804,7 +804,7 @@ ht-degree: 94%
       + [FAQ relatives à Cloud Manager](/help/implementing/cloud-manager/faqs.md)
    + Développement pour AEM as a Cloud Service {#developing}
       + [Structure de projet AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
-      + [Module de structure du référentiel de projet AEM](/help/implementing/developing/introduction/repository-structure-package.md)
+      + [Package de structure du référentiel de projet AEM](/help/implementing/developing/introduction/repository-structure-package.md)
       + [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
       + [AEM Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Conseils de développement pour AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
@@ -876,7 +876,7 @@ ht-degree: 94%
       + [Module externe Content Package Maven](/help/implementing/developing/tools/maven-plugin.md)
       + [Outil AEM Repo](/help/implementing/developing/tools/repo-tool.md)
       + [Utilisation de CRXDE Lite](/help/implementing/developing/tools/crxde.md)
-      + [Gestionnaire de packs](/help/implementing/developing/tools/package-manager.md)
+      + [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md)
       + [L’externaliseur de liens](/help/implementing/developing/tools/externalizer.md)
       + [Le navigateur de référentiels](/help/implementing/developing/tools/repository-browser.md)
    + Personnalisation  {#personalization}

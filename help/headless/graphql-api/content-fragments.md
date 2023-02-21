@@ -3,7 +3,7 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: e156ed7348815e02c942cb8feace70c675956752
+source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
 workflow-type: tm+mt
 source-wordcount: '4203'
 ht-degree: 58%
@@ -213,15 +213,15 @@ Le schéma est desservi par le même point d’entrée que les requêtes GraphQL
 
 <!-- move through to here to a separate "in depth" page -->
 
-### Génération de schémas – Modèles non publiés {#schema-generation-unpublished-models}
+### Génération de schémas – Modèles dépubliés {#schema-generation-unpublished-models}
 
 Lorsque des fragments de contenu sont imbriqués, il se peut qu’un modèle de fragment de contenu parent soit publié, mais pas un modèle référencé.
 
 >[!NOTE]
 >
->L’interface utilisateur d’AEM empêche cela, mais si la publication est effectuée par programmation ou avec des modules de contenu, elle peut être effectuée.
+>L’interface utilisateur d’AEM empêche cela, mais si la publication est effectuée par programmation ou avec des packages de contenu, elle peut être effectuée.
 
-Dans ce cas, AEM génère un schéma *incomplet* pour le modèle de fragment de contenu parent. Cela signifie que la référence au fragment, qui dépend du modèle non publié, est supprimée du schéma.
+Dans ce cas, AEM génère un schéma *incomplet* pour le modèle de fragment de contenu parent. Cela signifie que la référence au fragment, qui dépend du modèle dépublié, est supprimée du schéma.
 
 ## Champs {#fields}
 
@@ -558,7 +558,7 @@ Pour accéder à d’autres exemples, voir :
 
 >[!NOTE]
 >
->Pour obtenir de meilleures performances, [Mise à jour des fragments de contenu pour la pagination et le tri dans le filtrage GraphQL](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+>Pour obtenir de meilleures performances, [Mise à jour des fragments de contenu pour la pagination et le tri dans le filtrage GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Cette fonctionnalité vous permet de trier les résultats de la requête en fonction d’un champ spécifié.
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->Pour obtenir de meilleures performances, [Mise à jour des fragments de contenu pour la pagination et le tri dans le filtrage GraphQL](/help/headless/graphql-api/graphql-paging-sorting-content-update.md).
+>Pour obtenir de meilleures performances, [Mise à jour des fragments de contenu pour la pagination et le tri dans le filtrage GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Cette fonctionnalité vous permet d’effectuer une pagination sur les types de requête qui renvoient une liste. Deux méthodes sont fournies :
 
