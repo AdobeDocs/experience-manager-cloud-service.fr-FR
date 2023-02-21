@@ -1,7 +1,7 @@
 ---
 title: Mise à jour des fragments de contenu pour la pagination et le tri
 description: Découvrez comment mettre à jour les fragments de contenu pour la pagination et le tri dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu sans interface utilisateur.
-source-git-commit: 130f653a1b0db55ea6d49a87be1215001223bf78
+source-git-commit: d12e2c3c23b5c0eebe35038c6c461c7f05dedc55
 workflow-type: tm+mt
 source-wordcount: '741'
 ht-degree: 6%
@@ -32,7 +32,7 @@ Pour exécuter la procédure, procédez comme suit :
 
    Les variables disponibles sont les suivantes :
 
-   <table>
+   <table style="table-layout:auto">
     <tbody>
      <tr>
       <th> </th>
