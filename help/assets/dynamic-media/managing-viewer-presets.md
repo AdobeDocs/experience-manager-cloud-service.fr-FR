@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
-source-git-commit: b35455652bd16b6c56c0bd75ee87acfb50473f1c
+source-git-commit: 572e8ed320dcfb9619110b42229ef81adb726790
 workflow-type: tm+mt
-source-wordcount: '4369'
+source-wordcount: '4382'
 ht-degree: 93%
 
 ---
@@ -41,7 +41,7 @@ Voir aussi [Accessibilité clavier et navigation](https://experienceleague.adobe
 
 ## Gestion des paramètres prédéfinis de visionneuse {#managing-viewer-presets-1}
 
-Vous pouvez ajouter, modifier, supprimer, publier, annuler la publication et prévisualiser des paramètres prédéfinis de visionneuse dans Adobe Experience Manager en accédant à **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Ressources] > [!UICONTROL Paramètres prédéfinis de la visionneuse]**.
+Vous pouvez ajouter, modifier, supprimer, publier, dépublier et prévisualiser des paramètres prédéfinis de visionneuse dans Adobe Experience Manager en accédant à **[!UICONTROL Outils]** (icône de marteau) > **[!UICONTROL Ressources] > [!UICONTROL Paramètres prédéfinis de la visionneuse]**.
 
 ![6_5_tools-assets-viewerpresets](assets/6_5_tools-assets-viewerpresets.png)
 
@@ -442,8 +442,8 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
 1. Sur la page Éditeur de paramètres prédéfinis de la visionneuse, sélectionnez l’onglet **[!UICONTROL Comportement]**. Vous pouvez également sélectionner n’importe quel élément visuel de la visionneuse afin de le sélectionner pour le configurer.
 Par exemple, pour la variable *VideoPlayer* type, sous **[!UICONTROL Modificateurs]** > **[!UICONTROL Lecture]**, vous pouvez effectuer une sélection parmi trois options de diffusion en continu adaptative :
 
-   * **[!UICONTROL dash]** - Flux vidéo en tant que tiret uniquement.
-   * **[!UICONTROL hls]** - Diffusion vidéo en continu sous la forme de fichiers hls uniquement.
+   * **[!UICONTROL dash]** - Diffusion de vidéos en tant que DASH uniquement. Toutefois, sur les périphériques Safari/iOS, vous devez sélectionner **[!UICONTROL hls]** comme type.
+   * **[!UICONTROL hls]** - Flux vidéo en tant que HLS uniquement.
    * **[!UICONTROL auto]** - Bonne pratique. La création des flux DASH et HLS est optimisée pour le stockage. Par conséquent, Adobe recommande de toujours sélectionner **[!UICONTROL auto]** comme type de lecture. Les vidéos sont diffusées en continu sous la forme de tirets, hls ou progressifs, comme dans l’exemple suivant :
       * Si le navigateur prend en charge DASH, la diffusion en continu DASH est utilisée, tout d’abord.
       * Si le navigateur ne prend pas en charge DASH, la diffusion HLS en continu est utilisée, ensuite.
