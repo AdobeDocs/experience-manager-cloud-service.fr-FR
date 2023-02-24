@@ -7,10 +7,10 @@ role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 8e28cff5b964005278858b6c8dd8a0f5f8156eaa
-workflow-type: ht
-source-wordcount: '1218'
-ht-degree: 100%
+source-git-commit: b11979acc23efe5f1af690443180a6b456d589ed
+workflow-type: tm+mt
+source-wordcount: '1816'
+ht-degree: 74%
 
 ---
 
@@ -28,6 +28,21 @@ Vous pouvez migrer vos formulaires adaptatifs, thèmes, modèles et configuratio
 * Ce service ne permet de migrer du contenu d’[!DNL AEM Forms] que dans les environnements OSGi. La migration de contenu d’[!DNL AEM Forms] on JEE vers un environnement Cloud Service n’est pas prise en charge.
 
 * (Uniquement pour un environnement AEM 6.3 Forms ou d’une version antérieure mise à niveau vers AEM 6.4 Forms ou AEM 6.5 Forms) Les formulaires adaptatifs reposant sur des modèles et des thèmes prêts à l’emploi disponibles dans AEM 6.3 Forms ou une version antérieure ne sont pas pris en charge dans [!DNL AEM Forms] as a Cloud Service.
+
+* L’étape de vérification n’est pas disponible. Supprimez l’étape de vérification de vos formulaires adaptatifs existants avant de déplacer ces formulaires vers un environnement Cloud Service.
+
+* L’étape de signature d’Adaptive Forms n’est pas disponible. Supprimez l’étape Signature d’un formulaire adaptatif existant. Configurez votre formulaire adaptatif pour utiliser l’expérience de signature dans le navigateur. Il affichera ainsi l’accord Adobe Sign permettant de signer l’accord dans le navigateur lors de l’envoi d’un formulaire adaptatif. L’expérience de signature dans le navigateur permet d’accélérer le processus et de faire gagner du temps au signataire.
+
+## Différence avec AEM 6.5 Forms
+
+| Fonctionnalité | Différence avec AEM 6.5 Forms |
+|--------------|-----------|
+| HTML5 Forms (Forms mobile) | Le service ne prend pas en charge HTML5 Forms (Mobile Forms). Si vous effectuez le rendu de vos formulaires basés sur XDP sous HTML5 Forms, vous pouvez continuer à utiliser la fonctionnalité sur AEM 6.5 Forms. |
+| Formulaires adaptatifs | <li><b>Forms adaptatif basé sur XSD :</b> Le service ne prend pas en charge HTML5 Forms (Mobile Forms). Si vous effectuez le rendu de vos formulaires basés sur XDP sous HTML5 Forms, vous pouvez continuer à utiliser la fonctionnalité sur AEM 6.5 Forms. </li> <li><b> Modèles de formulaire adaptatif :</b> Utilisez le pipeline de génération et le référentiel Git correspondant de votre programme pour importer les modèles de formulaire adaptatif existants. </li><li><b>Éditeur de règles :</b> AEM Forms as a Cloud Service offre une fonction renforcée [Éditeur de règles](rule-editor.md#visual-rule-editor). L’éditeur de code n’est pas disponible sur Forms as a Cloud Service. L’utilitaire de migration vous permet de migrer les formulaires dotés de règles personnalisées (créées dans l’éditeur de code). L’utilitaire convertit ces règles en fonctions personnalisées prises en charge sur Forms as a Cloud Service. Vous pouvez utiliser les fonctions réutilisables avec l’éditeur de règles pour continuer à obtenir les résultats obtenus avec les scripts de règle. `onSubmitError` ou `onSubmitSuccess` Les fonctions sont désormais disponibles en tant qu’actions dans l’éditeur de règles. </li> <li><b>Brouillons et envois :</b> Le service ne conserve pas les métadonnées des brouillons et des Forms adaptatives envoyées. </li> <li><b> Service de préremplissage :</b> Par défaut, le service de préremplissage fusionne les données avec un formulaire adaptatif au niveau du client plutôt que de fusionner les données sur le serveur dans AEM Forms 6.5. Cette fonctionnalité permet d’améliorer le temps nécessaire au préremplissage d’un formulaire adaptatif. Vous pouvez toujours configurer pour exécuter l’action de fusion sur le serveur Adobe Experience Manager Forms. </li><li><b>Actions Envoyer :</b> Le **Email en tant que PDF** n’est pas disponible. L’action d’envoi **Email** fournit des options pour envoyer des pièces jointes et joindre un document d’enregistrement (DE) par email. </li> |
+| Modèle de données de formulaire | <li>Le modèle de données Forms ne prend en charge que les points de terminaison HTTP et HTTP pour envoyer des données. </li><li>Forms as a Cloud Service permet d’utiliser Microsoft Azure Blob, Microsoft SharePoint, Microsoft OneDrive et les services prenant en charge les opérations CRUD (Créer, lire, mettre à jour et supprimer) générales en tant que entrepôts de données. Le service ne prend pas en charge le connecteur JDBC, le protocole SSL mutuel pour le connecteur REST et l’authentification par certificat x509 pour les sources de données SOAP. </li> |
+| Service de conversion automatisée de formulaires | Le service ne fournit pas de métamodèle pour Automated forms conversion Service. Vous pouvez [téléchargez-le à partir de la documentation d’Automated forms conversion Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/extending-the-default-meta-model.html?lang=en#default-meta-model). |
+| Configurations | <li>Par défaut, seuls les protocoles HTTP et HTTPs sont pris en charge. [Contactez l’équipe d’assistance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#sending-email) pour activer les ports pour l’envoi d’e-mails et pour activer le protocole SMTP pour votre environnement. </li> <li>Si vous utilisez des lots personnalisés, recompilez votre code avec la dernière version d’adobe-aemfd-docmanager avant d’utiliser ces lots avec Forms as a Cloud Service.</li> |
+| API de manipulation de documents (service Assembler) | Le service ne prend pas en charge les opérations qui dépendent d’autres services ou applications : <li>La conversion de documents dans un format autre qu’un PDF au format PDF n’est pas prise en charge. Par exemple, Microsoft Word vers PDF, Microsoft Excel vers PDF et HTML vers PDF ne sont pas pris en charge.</li><li>Les conversions basées sur Distiller Adobe ne sont pas prises en charge. Par exemple, PostScript(PS) vers PDF</li><li>Les conversions basées sur le service Forms ne sont pas prises en charge. Par exemple, XDP aux PDF forms.</li><li>Le service ne prend pas en charge la conversion d’un PDF signé ou d’un PDF transparent dans un autre format de PDF.</li> |
 
 ## Prérequis {#prerequisites}
 
@@ -86,9 +101,9 @@ Pour rendre vos ressources [!DNL AEM Forms] compatibles avec Cloud Service et le
 
    Cloud Service ne prend pas en charge les scripts de l’éditeur de règles. L’outil **[!UICONTROL Migration des scripts de l’éditeur de code]** convertit tous les scripts de règle de votre environnement en fonctions réutilisables et applique les fonctions réutilisables à l’éditeur visuel à l’emplacement approprié. Ces fonctions réutilisables sont enregistrées sous forme de bibliothèques clientes et vous aident à conserver les fonctionnalités existantes intactes. L’outil applique automatiquement les fonctions réutilisables générées aux formulaires adaptatifs correspondants.
 
-   Utilisez le [gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr#contentmanagement) pour exporter les fonctions réutilisables (bibliothèques clientes) vers un module.
+   Utilisez le [gestionnaire de packages](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr#contentmanagement) pour exporter les fonctions réutilisables (bibliothèques clientes) vers un package.
 
-1. [Déployez](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#deploying-content-packages-via-cloud-manager-and-package-manager) le module de fonctions réutilisables (bibliothèques clientes), le [code personnalisé, les composants, les configurations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=fr#cloud-manager), les bibliothèques personnalisées spécifiques aux paramètres régionaux dans votre environnement [!DNL AEM] as a Cloud Service.
+1. [Déployez](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#deploying-content-packages-via-cloud-manager-and-package-manager) le package de fonctions réutilisables (bibliothèques clientes), le [code personnalisé, les composants, les configurations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=fr#cloud-manager), les bibliothèques personnalisées spécifiques aux paramètres régionaux dans votre environnement [!DNL AEM] as a Cloud Service.
 
    <!-- 1. Install the latest [Compatibility Package](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?#cloud-migration) to your cloned [!DNL AEM Forms] environment. -->
 
