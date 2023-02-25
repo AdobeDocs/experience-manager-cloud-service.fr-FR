@@ -3,10 +3,10 @@ title: Présentation d’ [!DNL AEM Forms]  as a Cloud Service
 description: Découvrez AEM Forms et apprenez à créer des documents et du contenu de formulaire pour les entreprises. Découvrez Platform-as-a-Service (PaaS) et apprenez à gérer des formulaires numériques et des processus d’entreprise à l’échelle de l’organisation, ainsi qu’à connecter Forms aux sources de données actives.
 landing-page-description: Découvrez comment utiliser les formulaires dans AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 95e1981faf9532aa56cc8a2e18166d08f35ecf29
+source-git-commit: e28eb4340f9beb2d350620d635dc00de11c6e32b
 workflow-type: tm+mt
-source-wordcount: '1251'
-ht-degree: 23%
+source-wordcount: '1158'
+ht-degree: 24%
 
 ---
 
@@ -44,11 +44,9 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-
-| Formulaires adaptatifs | Service de conversion automatisée de formulaires | API Communications | Intégrations | Forms Workflow |
-|---|---|---|---|---|
-| Adaptive Forms permet aux entreprises de créer et de gérer des formulaires interactifs pilotés par les données pour leurs sites web et d’autres canaux numériques réactifs et compatibles avec les appareils mobiles. | automated forms conversion Service permet aux entreprises de convertir des formulaires basés sur des PDF hérités en formulaires numériques interactifs qui peuvent être facilement gérés et distribués en ligne. | Les API de communications sont un ensemble d’API RESTful (interfaces de programmation d’applications) qui permettent aux entreprises d’automatiser la création, la gestion et la diffusion de communications personnalisées basées sur les données. | La plateforme peut s’intégrer à Adobe Sign et à DocuSign, ce qui facilite l’envoi et le suivi des demandes de signature numérique directement à partir de leurs formulaires adaptatifs pour les utilisateurs. </br></br>En outre, la plateforme peut s’intégrer à Adobe Analytics, ce qui permet aux entreprises d’obtenir des informations précieuses sur le comportement et les préférences des utilisateurs. </br></br> Enfin, AEM Forms Cloud Service permet aux utilisateurs d’incorporer directement des formulaires adaptatifs dans des pages AEM Sites, ce qui crée une expérience utilisateur transparente. | Les processus Forms dans Adobe Experience Manager (AEM) Forms sont conçus pour automatiser les processus d’entreprise impliquant des formulaires. Ces workflows automatisent le routage, la révision et l’approbation des formulaires lorsqu’ils passent par différentes étapes d’un processus d’entreprise. Les processus basés sur l’utilisation de Forms peuvent être créés visuellement à l’aide d’AEM Forms Workflow Designer et peuvent être intégrés à AEM Forms pour déclencher des processus lorsqu’un formulaire est envoyé. Les workflows peuvent être configurés pour acheminer les formulaires vers différents utilisateurs ou groupes en fonction de critères spécifiques et peuvent inclure des notifications et des rappels automatiques pour s’assurer que les formulaires sont traités en temps voulu. Dans l’ensemble, les processus basés sur l’utilisation de formulaires dans AEM Forms aident les entreprises à rationaliser leurs processus d’entreprise, à améliorer l’efficacité et à réduire les erreurs. |
-
+| Formulaires adaptatifs | Service de conversion automatisée de formulaires | API Communications | Forms Workflow | E-Sign | Forms Analytics |
+|---|---|---|---|---|---|
+| Adaptive Forms permet aux entreprises de créer et de gérer des formulaires interactifs pilotés par les données pour leurs sites web et d’autres canaux numériques réactifs et compatibles avec les appareils mobiles. | automated forms conversion Service permet aux entreprises de convertir des formulaires basés sur des PDF hérités en formulaires numériques interactifs qui peuvent être facilement gérés et distribués en ligne. | Les API de communications sont un ensemble d’API RESTful (interfaces de programmation d’applications) qui permettent aux entreprises d’automatiser la création, la gestion et la diffusion de communications personnalisées basées sur les données. | Les processus basés sur l’utilisation de Forms sont conçus pour automatiser les processus d’entreprise impliquant des formulaires et des services de document. Ces processus automatisent le routage, la révision et l’approbation des formulaires et de la génération de documents lorsqu’ils passent par différentes étapes d’un processus d’entreprise. | La plateforme peut s’intégrer à Adobe Analytics, ce qui permet aux entreprises d’obtenir des informations précieuses sur le comportement et les préférences des utilisateurs. | La plateforme fournit une intégration prête à l’emploi à Adobe Sign. Vous pouvez également l’intégrer à et à DocuSign, ce qui facilite l’envoi de Forms pour les signatures électroniques. |
 
 <!--
 | | |
