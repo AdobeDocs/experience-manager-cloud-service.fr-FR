@@ -3,10 +3,10 @@ title: Présentation d’ [!DNL AEM Forms]  as a Cloud Service
 description: Découvrez AEM Forms et apprenez à créer des documents et du contenu de formulaire pour les entreprises. Découvrez Platform-as-a-Service (PaaS) et apprenez à gérer des formulaires numériques et des processus d’entreprise à l’échelle de l’organisation, ainsi qu’à connecter Forms aux sources de données actives.
 landing-page-description: Découvrez comment utiliser les formulaires dans AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: e28eb4340f9beb2d350620d635dc00de11c6e32b
+source-git-commit: 2f9c4d85c55ee63a769c0137d4a70b2126228d5b
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 24%
+source-wordcount: '1144'
+ht-degree: 25%
 
 ---
 
@@ -15,6 +15,8 @@ ht-degree: 24%
 Adobe [!DNL Experience Manager Forms as a Cloud Service] propose aux entreprises une solution PaaS native cloud permettant de créer, de gérer, de publier et de mettre à jour des formulaires numériques complexes, tout en intégrant des données envoyées à des processus d’arrière-plan et des règles métier, et en enregistrant des données dans un magasin de données externe. Le service est toujours à jour, toujours disponible et évolue sans cesse.
 
 Vous pouvez utiliser ce service pour créer et déployer des formulaires numériques interactifs et attrayants. Par exemple, prenez une organisation qui cherche à numériser son parcours d’inscription des clients. Elle dispose de plusieurs sources de données avec des données client existantes. Elle cherche à préremplir les formulaires, à ajouter des signatures électroniques à ses formulaires et à archiver les formulaires remplis en tant que fichiers PDF. En outre, l’entreprise dispose de plusieurs formulaires imprimés (formulaires PDF), et elle cherche également à convertir tous ses formulaires imprimés en formulaires numériques.
+
+
 
 L’entreprise peut utiliser [!DNL AEM Forms] as a Cloud Service pour créer des formulaires numériques, connecter des formulaires à des sources de données existantes, intégrer des formulaires avec [!DNL Adobe Sign] pour ajouter des signatures électroniques aux formulaires et générer un document d’enregistrement pour archiver les formulaires envoyés en tant que fichiers PDF. L’entreprise peut également utiliser le service pour convertir ses formulaires PDF existants en formulaires numériques.
 
@@ -44,9 +46,9 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!ENDTABS] -->
 
-| Formulaires adaptatifs | Service de conversion automatisée de formulaires | API Communications | Forms Workflow | E-Sign | Forms Analytics |
-|---|---|---|---|---|---|
-| Adaptive Forms permet aux entreprises de créer et de gérer des formulaires interactifs pilotés par les données pour leurs sites web et d’autres canaux numériques réactifs et compatibles avec les appareils mobiles. | automated forms conversion Service permet aux entreprises de convertir des formulaires basés sur des PDF hérités en formulaires numériques interactifs qui peuvent être facilement gérés et distribués en ligne. | Les API de communications sont un ensemble d’API RESTful (interfaces de programmation d’applications) qui permettent aux entreprises d’automatiser la création, la gestion et la diffusion de communications personnalisées basées sur les données. | Les processus basés sur l’utilisation de Forms sont conçus pour automatiser les processus d’entreprise impliquant des formulaires et des services de document. Ces processus automatisent le routage, la révision et l’approbation des formulaires et de la génération de documents lorsqu’ils passent par différentes étapes d’un processus d’entreprise. | La plateforme peut s’intégrer à Adobe Analytics, ce qui permet aux entreprises d’obtenir des informations précieuses sur le comportement et les préférences des utilisateurs. | La plateforme fournit une intégration prête à l’emploi à Adobe Sign. Vous pouvez également l’intégrer à et à DocuSign, ce qui facilite l’envoi de Forms pour les signatures électroniques. |
+| Formulaires adaptatifs | API Communications | Service de conversion automatisée de formulaires | Forms Workflow | E-Sign | Forms Analytics | Modèle de données |
+|---|---|---|---|---|---| ---|
+| Créez et gérez des formulaires interactifs, dynamiques, réactifs, compatibles avec les mobiles et pilotés par les données pour vos sites web, applications et autres canaux numériques et d’impression. | Automatisez la création, la gestion et la diffusion de communications personnalisées basées sur les données avec les API RESTful (interfaces de programmation d’application) à la demande ou à des intervalles planifiés. | Convertissez des formulaires basés sur des PDF hérités en Forms adaptatif qui peuvent être facilement gérés et distribués en ligne. | Automatisez les processus d’entreprise impliquant des formulaires et des services de document. Affectez, acheminez, révisez et approuvez des formulaires et des documents à mesure qu’ils passent par différentes étapes d’un processus d’entreprise. | Intégration à Adobe Sign et DocuSign pour envoyer facilement des documents et des Forms aux utilisateurs à des fins de signatures électroniques. | Utilisez Adobe Analytics pour obtenir des informations précieuses sur le comportement et les préférences des utilisateurs. | Connectez facilement vos formulaires et documents à des sources de données externes pour récupérer et envoyer des données. |
 
 <!--
 | | |
@@ -64,51 +66,26 @@ The service provides OOTB support to connect with Adobe Analytics. Connecting fo
 
 >[!TAB &#x200B; Forms adaptatif sans affichage]
 
-[Forms adaptatif sans affichage](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) est une solution pour créer et gérer des formulaires web sans interface utilisateur graphique dans la plateforme Adobe Experience Manager. Cette fonctionnalité permet aux entreprises de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique. AEM Forms adaptatif sans affichage permet une plus grande flexibilité et évolutivité dans le développement et le déploiement de formulaires, ainsi qu’une meilleure expérience utilisateur grâce à la possibilité d’adapter la conception et les fonctionnalités de formulaire à des besoins spécifiques. En utilisant les fonctionnalités de la technologie AEM et sans interface utilisateur, cette solution offre une plate-forme robuste pour la création, la gestion et le déploiement de formulaires web pour divers cas d’utilisation et applications.
+|| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?lang=en)| Créer et gérer [formulaire web sans interface](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) dans la plateforme Adobe Experience Manager. Permet aux développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique. <br/> <br/> Ces formulaires sont conçus pour être envoyés sans avoir besoin d’une interface de HTML traditionnelle. En d’autres termes, ils vous permettent d’envoyer des données de formulaire par programmation via une API ou un code d’arrière-plan sans nécessiter d’éléments de formulaire visibles sur le front-end. <br/> <br/> Les formulaires sans affichage sont utiles dans divers scénarios, comme lors de la création d’applications d’une seule page, d’applications web progressives ou d’applications mobiles, où une interface de HTML classique peut ne pas être nécessaire ou pratique. En permettant aux développeurs d’envoyer des données de formulaire directement via des API ou du code d’arrière-plan, les formulaires sans en-tête permettent de rationaliser les workflows et d’améliorer les performances globales des applications web.|
+
+
 
 
 >[!TAB Composants principaux]
 
-Le [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) sont un ensemble de 24 composants Open Source compatibles avec BEM qui sont construits sur la base des composants principaux de la gestion de contenu web Adobe Experience Manager. Elles sont spécialement conçues pour être utilisées pour créer des Forms adaptatives, qui sont des formulaires qui s’adaptent au périphérique, au navigateur et à la taille d’écran de l’utilisateur.
+|| |—|—| |![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?lang=en) | Le [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) sont un ensemble de 24 composants Open Source compatibles avec BEM qui sont construits sur la base des composants principaux de la gestion de contenu web Adobe Experience Manager. Elles sont spécialement conçues pour être utilisées pour créer des Forms adaptatives, qui sont des formulaires qui s’adaptent au périphérique, au navigateur et à la taille d’écran de l’utilisateur. <br/> <br/> Ces composants peuvent être utilisés pour créer des expériences de capture et d’inscription de données exceptionnelles en proposant un large éventail d’options de champ de formulaire, notamment des champs de texte, des cases à cocher, des menus déroulants, etc. Ils comprennent également des fonctionnalités telles que la validation, la logique conditionnelle et la conception réactive, qui peuvent être utilisées pour créer des formulaires conviviaux et faciles à utiliser. <br/> <br/>  En outre, comme ces composants sont Open Source, les développeurs peuvent facilement personnaliser et étendre les composants pour répondre aux besoins spécifiques de leur entreprise. Et ces composants sont construits sur la méthodologie BEM qui garantit qu’ils sont extensibles et maintenables.|
 
-Ces composants peuvent être utilisés pour créer des expériences de capture et d’inscription de données exceptionnelles en proposant un large éventail d’options de champ de formulaire, notamment des champs de texte, des cases à cocher, des menus déroulants, etc. Ils comprennent également des fonctionnalités telles que la validation, la logique conditionnelle et la conception réactive, qui peuvent être utilisées pour créer des formulaires conviviaux et faciles à utiliser.
-
-En outre, comme ces composants sont Open Source, les développeurs peuvent facilement personnaliser et étendre les composants pour répondre aux besoins spécifiques de leur entreprise. Et ces composants sont construits sur une méthodologie BEM qui garantit qu&#39;ils sont extensibles et maintenables.
 
 
 >[!TAB Microsoft PowerAutomate Connector &#x200B;]
 
-Microsoft Power Automate Connector for AEM Forms est un connecteur qui vous permet d’intégrer Adobe Experience Manager (AEM) Forms à Microsoft Power Automate (précédemment appelé flux Microsoft). Power Automate est un service basé sur le cloud qui vous permet de créer des processus automatisés entre différentes applications et services.
+|| |—|—| |![](https://powerusers.microsoft.com/t5/image/serverpage/image-id/182924i17C4BEA1C045D731/image-size/large/is-moderation-mode/true?v=1.0&amp;px=999)| AEM Forms Power Automate Connector vous permet d’intégrer Adobe Experience Manager (AEM) Forms à Microsoft Power Automate (précédemment appelé flux Microsoft). Power Automate est un service basé sur le cloud qui vous permet de créer des processus automatisés entre différentes applications et services.  <br/> <br/> Avec AEM Form Power Automate Connector, vous pouvez créer des processus qui se déclenchent automatiquement en fonction de l’envoi d’un formulaire adaptatif. Par exemple, vous pouvez créer un workflow qui envoie automatiquement une notification électronique à une personne spécifique lorsqu’un utilisateur envoie un formulaire ou crée une tâche dans le planificateur Microsoft lorsqu’un utilisateur remplit un formulaire.  <br/> <br/> AEM Forms Power Automate Connector est un puissant outil qui vous permet d’automatiser et d’intégrer votre Forms adaptatif à d’autres applications et services qui se connectent à Microsoft Power Automate, ce qui vous permet de travailler avec un large éventail d’outils. Vous pouvez créer des workflows adaptés à vos besoins spécifiques, avec la possibilité d’ajouter des actions, des conditions et des déclencheurs personnalisés. En outre, Power Automate fournit des analyses et des rapports détaillés, ce qui vous permet de surveiller et d’optimiser vos workflows au fil du temps.|
 
-Avec Power Automate Connector for AEM Form, vous pouvez créer des processus qui se déclenchent automatiquement en fonction de l’envoi d’un formulaire adaptatif. Par exemple, vous pouvez créer un workflow qui envoie automatiquement une notification électronique à une personne spécifique lorsqu’un utilisateur envoie un formulaire ou crée une tâche dans le planificateur Microsoft lorsqu’un utilisateur remplit un formulaire.
-
-L’utilisation de Power Automate Connector for AEM Forms présente de nombreux avantages, notamment :
-
-* **Automatisation**: Vous pouvez automatiser les tâches de routine et rationaliser les processus, ce qui vous permet de gagner du temps et de réduire les erreurs.
-
-* **Intégration**: Le connecteur vous permet d’intégrer Adobe Experience Manager Forms à d’autres applications et services, ce qui vous permet de travailler avec un large éventail d’outils.
-
-* **Personnalisation**: Vous pouvez créer des workflows adaptés à vos besoins spécifiques, avec la possibilité d’ajouter des actions, des conditions et des déclencheurs personnalisés.
-
-* **Analytics**: Power Automate fournit des analyses et des rapports détaillés, ce qui vous permet de surveiller et d’optimiser vos workflows au fil du temps.
-
-Dans l’ensemble, Power Automate Connector for AEM Forms est un puissant outil qui vous permet d’automatiser et d’intégrer votre AEM Forms à d’autres applications et services, ce qui améliore l’efficacité et la productivité.
 
 >[!TAB Connecteurs de stockage Microsoft : OneDrive et SharePoint]
 
-Les connecteurs de stockage Microsoft AEM Forms pour OneDrive et SharePoint sont des connecteurs qui vous permettent d’intégrer Adobe Experience Manager (AEM) Forms à Microsoft OneDrive et SharePoint. Ces connecteurs vous permettent de stocker et de gérer des données et des documents AEM Forms dans les solutions de stockage dans le cloud Microsoft.
+|| |—|—| |![](/help/forms/assets/onedrive-and-sharepoint.jpg)|Les connecteurs de stockage Microsoft AEM Forms pour OneDrive et SharePoint sont des connecteurs qui vous permettent d’intégrer Adobe Experience Manager (AEM) Forms à Microsoft OneDrive et SharePoint. Ces connecteurs vous permettent de stocker et de gérer des données et des documents AEM Forms dans les solutions de stockage dans le cloud Microsoft. <br/> <br/> Ces connecteurs vous permettent de stocker et de gérer des données et des documents AEM Forms dans Microsoft OneDrive. Avec ce connecteur, vous pouvez charger des fichiers de données et des pièces jointes vers OneDrive et SharePoint directement depuis AEM Forms. <br/> <br/> L’utilisation des connecteurs de stockage AEM Forms Microsoft pour OneDrive et SharePoint présente plusieurs avantages : <ul><li> **Intégration**: Ces connecteurs vous permettent d’intégrer AEM Forms à des solutions de stockage dans le cloud Microsoft, ce qui vous permet d’exploiter la puissance de ces plateformes. </li> <li> **Collaboration**: OneDrive et SharePoint sont des plateformes de collaboration qui permettent aux membres de l’équipe de travailler ensemble sur des fichiers et des documents. En intégrant AEM Forms à ces plateformes, vous pouvez améliorer la collaboration et le travail d’équipe. </li> <li> **Sécurité**: OneDrive et SharePoint offrent des fonctionnalités de sécurité fiables, ce qui garantit que vos données et documents sont stockés et accessibles en toute sécurité. </li> <br/> Dans l’ensemble, les connecteurs de stockage AEM Forms Microsoft pour OneDrive et SharePoint sont de puissants outils qui vous permettent de stocker et de gérer des données et des documents AEM Forms dans Microsoft et de  des solutions de stockage dans le cloud, améliorant ainsi la collaboration et la sécurité.|
 
-Ces connecteurs vous permettent de stocker et de gérer des données et des documents AEM Forms dans Microsoft OneDrive. Avec ce connecteur, vous pouvez charger des fichiers de données et des pièces jointes vers OneDrive et SharePoint directement depuis AEM Forms.
-
-L’utilisation des connecteurs de stockage AEM Forms Microsoft pour OneDrive et SharePoint présente plusieurs avantages :
-
-* **Intégration**: Ces connecteurs vous permettent d’intégrer AEM Forms à des solutions de stockage dans le cloud Microsoft, ce qui vous permet d’exploiter la puissance de ces plateformes.
-
-* **Collaboration**: OneDrive et SharePoint sont des plateformes de collaboration qui permettent aux membres de l’équipe de travailler ensemble sur des fichiers et des documents. En intégrant AEM Forms à ces plateformes, vous pouvez améliorer la collaboration et le travail d’équipe.
-
-* **Sécurité**: OneDrive et SharePoint offrent des fonctionnalités de sécurité fiables, ce qui garantit que vos données et documents sont stockés et accessibles en toute sécurité.
-
-Dans l’ensemble, les connecteurs de stockage AEM Forms Microsoft pour OneDrive et SharePoint sont de puissants outils qui vous permettent de stocker et de gérer des données et des documents AEM Forms dans les solutions de stockage dans le cloud Microsoft, ce qui améliore la collaboration et la sécurité.
 
 >[!ENDTABS]
 
