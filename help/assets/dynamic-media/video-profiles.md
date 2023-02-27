@@ -5,16 +5,16 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 73b23ec17c987b1dbcbc868143e2b7159cf21408
+source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
 workflow-type: tm+mt
-source-wordcount: '3707'
-ht-degree: 94%
+source-wordcount: '3716'
+ht-degree: 91%
 
 ---
 
 # Profils vidéo Dynamic Media{#video-profiles}
 
-Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos source Principales à l’aide du profil de codage vidéo adaptatif, au cours de la lecture, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de connexion Internet de vos clients. Cette action est appelé diffusion en continu adaptative.
+Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos source Principales à l’aide du profil de codage vidéo adaptatif, au cours de la lecture, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de connexion Internet de vos clients. Cette action est appelée diffusion en continu à débit adaptatif.
 
 Voici d’autres facteurs qui déterminent la qualité des vidéos :
 
@@ -124,7 +124,7 @@ Voir [Application de profils vidéo à des dossiers spécifiques](#applying-vide
 
 Voir aussi [Recadrage intelligent d’images](image-profiles.md).
 
-## Création d’un profil vidéo pour la diffusion en continu adaptative {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Création d’un profil vidéo pour la diffusion en continu à débit adaptatif {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media est fourni avec un profil prédéfini de codage de vidéo adaptative (groupe de paramètres de chargement vidéo pour MP4 H.264) qui est optimisé pour la visualisation. Vous pouvez utiliser ce profil lorsque vous chargez vos vidéos.
 
@@ -132,7 +132,7 @@ Cependant, si ce profil prédéfini ne répond pas à vos besoins, vous pouvez c
 
 Lorsque vous créez le profil de codage vidéo, vous remarquerez que la plupart des options de codage sont préremplies avec les paramètres par défaut recommandés pour vous aider. Cependant, si vous sélectionnez une valeur autre que la valeur par défaut recommandée, la qualité vidéo risque d’être médiocre pendant la lecture et d’autres problèmes de performances.
 
-Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les valeurs suivantes sont donc validées pour s’assurer qu’elles sont identiques dans chaque paramètre prédéfini, rendant possible la diffusion en continu adaptative :
+Ainsi, pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les valeurs suivantes sont validées pour s’assurer qu’elles sont identiques pour chaque paramètre prédéfini de codage dans le profil, rendant possible la diffusion en continu à débit adaptatif :
 
 * Codec de format vidéo - MP4 H.264 (.mp4)
 * Codec audio
@@ -143,7 +143,7 @@ Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les
 * Profil H264
 * Taux d’échantillonnage audio
 
-Si les valeurs ne sont pas les mêmes, vous pouvez continuer à créer le profil tel quel. Cependant, la diffusion en continu adaptative n’est pas possible. Au lieu de cela, les utilisateurs obtiennent une diffusion en continu à débit unique. Il est recommandé de modifier les paramètres de codage pour utiliser les mêmes valeurs dans les paramètres prédéfinis individuels de codage du profil. (L’éditeur de profil vidéo/paramètre prédéfini applique la parité des paramètres de codage de vidéo adaptative si l’option Coder pour la diffusion en continu adaptative est activée.)
+Si les valeurs ne sont pas les mêmes, vous pouvez continuer à créer le profil tel quel. Cependant, la diffusion en continu à débit adaptatif n’est pas possible. Au lieu de cela, les utilisateurs obtiennent une diffusion en continu à débit unique. Il est recommandé de modifier les paramètres de codage pour utiliser les mêmes valeurs dans les paramètres prédéfinis individuels de codage du profil. (L’éditeur de profil vidéo/paramètre prédéfini applique la parité des paramètres de codage de vidéo adaptative si l’option Coder pour la diffusion en continu adaptative est activée.)
 
 Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu progressive](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -151,7 +151,7 @@ Voir aussi [Bonnes pratiques relatives au codage vidéo](/help/assets/dynamic-me
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Pour créer un profil vidéo en vue de la diffusion en continu adaptative** :
+**Création d’un profil vidéo pour la diffusion en continu à débit adaptatif**,
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
 1. Sélectionnez **[!UICONTROL Créer]**.
@@ -194,7 +194,7 @@ Si vous choisissez de ne pas utiliser l’option **[!UICONTROL Coder pour la dif
 
 Les codecs de format vidéo pris en charge sont H.264 (.mp4) et WebM.
 
-Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu adaptative](#creating-a-video-encoding-profile-for-adaptive-streaming).
+Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu à débit adaptatif](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
 Voir aussi [Bonnes pratiques relatives au codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -274,7 +274,7 @@ Vous pouvez modifier un profil de codage existant pour la vidéo afin de tirer p
    <td><code>keyframe</code></td>
    <td>Nombre cible d’images entre les images clés. Calculez cette valeur afin que vous puissiez générer une image clé toutes les 2 à 10 secondes. Par exemple, à 30 images par seconde, l’intervalle d’images clé doit être compris entre 60 et 300.<br /> <br /> Les intervalles d’images clé moindres améliorent le comportement de recherche de flux et de changement de flux pour les codages vidéo adaptatifs et peuvent également améliorer la qualité des vidéos avec beaucoup de mouvement. Cependant, puisque les images clés augmentent la taille du fichier, un intervalle d’images clés moindre entraîne généralement une qualité de vidéo globalement moins bonne à un débit donné.</td>
    <td><code>String</code></td>
-   <td><p>Numéro positif.</p> <p>La valeur par défaut est 300.</p> <p>La valeur recommandée pour HLS ou DASH (diffusion en continu adaptative) est comprise entre 60 et 90. (Pour utiliser le DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir <a href="/help/assets/dynamic-media/video.md#enable-dash">Activation de DASH sur votre compte</a>.)</p> </td>
+   <td><p>Numéro positif.</p> <p>La valeur par défaut est 300.</p> <p>La valeur recommandée pour HLS ou DASH (diffusion en continu à débit adaptatif) est comprise entre 60 et 90. (Pour utiliser le DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir <a href="/help/assets/dynamic-media/video.md#enable-dash">Activation de DASH sur votre compte</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -324,7 +324,7 @@ Pour définir des paramètres de traitement avancés pour d’autres types de re
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Modifier]**.
 1. Sur la page Profil de codage vidéo, modifiez le nom et la description, le cas échéant.
 1. La bonne pratique consiste à vérifier que la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée.
-Sélectionnez l’icône d’information pour obtenir une description de la diffusion en continu adaptative. (Si vous modifiez un profil de vidéo progressive, ne cochez pas cette case.)
+Sélectionnez l’icône d’information pour obtenir une description de la diffusion en continu à débit adaptatif. (Si vous modifiez un profil de vidéo progressive, ne cochez pas cette case.)
 1. Sous le titre Paramètres prédéfinis de codage vidéo, ajoutez, modifiez ou supprimez des paramètres prédéfinis de codage vidéo qui constituent le profil.
 
    Sélectionnez l’icône d’information en regard de chaque option des onglets **[!UICONTROL De base]** et **[!UICONTROL Avancé]** pour accéder à des descriptions supplémentaires ou des paramètres recommandés en fonction du codec vidéo sélectionné.
@@ -337,7 +337,7 @@ Sélectionnez l’icône d’information pour obtenir une description de la diff
 1. Sur la page Profils vidéo, cochez un nom de profil vidéo.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Copier]**.
 1. Sur la page Profil de codage vidéo, saisissez un nouveau nom pour le profil.
-1. La bonne pratique consiste à vérifier que la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée. Sélectionnez l’icône d’information pour obtenir une description de la diffusion en continu adaptative. (Si vous copiez un profil de vidéo progressive, ne cochez pas cette case.)
+1. La bonne pratique consiste à vérifier que la case **[!UICONTROL Coder pour la diffusion en continu adaptative]** est cochée. Sélectionnez l’icône d’information pour obtenir une description de la diffusion en continu à débit adaptatif. (Si vous copiez un profil de vidéo progressive, ne cochez pas cette case.)
 
    Dans le mode hybride de Dynamic Media, si un paramètre prédéfini vidéo WebM fait partie du profil vidéo, l’option **[!UICONTROL Coder pour la diffusion en continu adaptative]** n’est pas disponible, car tous les paramètres prédéfinis doivent être des paramètres MP4.
 1. Sous le titre Paramètres prédéfinis de codage vidéo, ajoutez, modifiez ou supprimez des paramètres prédéfinis de codage vidéo qui constituent le profil.
