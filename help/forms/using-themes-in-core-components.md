@@ -1,7 +1,7 @@
 ---
 title: Création et utilisation des thèmes
 description: Vous pouvez utiliser des thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif à l’aide de composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
-source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
+source-git-commit: 1357b36dc3d14d2ceceb6761cb005b592472890a
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 20%
@@ -86,7 +86,7 @@ Le `src/components` comporte des fichiers JavaScript et CSS spécifiques à tous
 
 Pour personnaliser le thème, vous pouvez démarrer le serveur proxy local pour afficher les personnalisations du thème en temps réel en fonction du contenu AEM réel.
 
-### 4. Changez le nom dans package.json et package_lock.json du thème Canevas {#changename-packagelock-packagelockjson}
+### 3. Changez le nom dans package.json et package_lock.json du thème Canevas {#changename-packagelock-packagelockjson}
 
 Mettez à jour le nom et la version du thème Zone de travail dans la `package.json` et `package_lock.json` fichiers .
 
@@ -96,7 +96,7 @@ Mettez à jour le nom et la version du thème Zone de travail dans la `package.j
 
 ![Rubrique du thème de la zone de travail](/help/forms/assets/changename_canvastheme.png)
 
-### 3. Créez le fichier .env dans un dossier de thème {#creating-env-file-theme-folder}
+### 4. Créez le fichier .env dans un dossier de thème {#creating-env-file-theme-folder}
 
 Créez un `.env` dans le dossier theme et ajoutez les paramètres suivants :
 
@@ -112,7 +112,7 @@ AEM_PROXY_PORT=7000
 
 ![Structure du thème du canevas](/help/forms/assets/env-file-canvas-theme.png)
 
-### 4. Démarrez un serveur proxy local. {#starting-a-local-proxy-server}
+### 5. Démarrage d’un serveur proxy local {#starting-a-local-proxy-server}
 
 1. Dans la ligne de commande, accédez à la racine du thème sur votre ordinateur local.
 1. Exécutez `npm install` pour que npm récupère les dépendances et installe le projet.
@@ -139,7 +139,7 @@ AEM_PROXY_PORT=7000
 
 Accédez à un formulaire adaptatif pour afficher le thème Zone de travail appliqué à un formulaire adaptatif.
 
-### 5. Personnaliser le thème {#customize-theme}
+### 6. Personnaliser le thème {#customize-theme}
 
 1. Dans l’éditeur, ouvrez le fichier . `<your-theme-sources>/src/site/_variables.scss`.
 
@@ -173,7 +173,7 @@ Le concepteur de thème prévisualise les modifications apportées au serveur pr
 
 Avant de valider les modifications dans le référentiel Git d’AEM, vous devez accéder à votre [Informations sur le référentiel Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git).
 
-### 6. Validation des modifications {#committing-the-changes}
+### 7. Validation des modifications {#committing-the-changes}
 
 Après avoir apporté des modifications au thème et l’avoir testé avec un serveur proxy local, validez les modifications dans le référentiel Git de votre Cloud Service AEM Forms. Elle rend le thème personnalisé disponible dans votre environnement de Cloud Service Forms pour que les auteurs de Forms adaptatif puissent l’utiliser.
 
@@ -216,7 +216,7 @@ Par exemple, utilisez cette commande
 Vos personnalisations sont désormais stockées en toute sécurité dans le référentiel Git.
 
 
-### 7. Exécution du pipeline front-end {#deploy-pipeline}
+### 8. Exécution du pipeline front-end {#deploy-pipeline}
 
 1. Créez le pipeline frontal pour déployer le thème personnalisé. En savoir plus [comment configurer un pipeline de première ligne pour déployer un thème personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
 1. Exécutez le pipeline front-end créé pour déployer le dossier de thème personnalisé sous **[!UICONTROL Style]** de l’assistant de création de formulaire adaptatif.
