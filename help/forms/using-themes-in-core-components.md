@@ -1,15 +1,15 @@
 ---
 title: Création et utilisation des thèmes
 description: Vous pouvez utiliser des thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif à l’aide de composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
-source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
+source-git-commit: 0205ffeabcb422ad70fd9439a1af246f438c52d5
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 20%
 
 ---
 
 
-# Présentation des thèmes de formulaire adaptatif à l’aide des composants principaux {#introduction-to-themes-for-af-using-core-components}
+# Thèmes dans Forms adaptatif (composants principaux) {#themes-for-af-using-core-components}
 
 Vous pouvez créer et appliquer des thèmes pour styliser un formulaire adaptatif à l’aide de composants principaux. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Le thème est géré indépendamment sans référence à un formulaire adaptatif.
 
