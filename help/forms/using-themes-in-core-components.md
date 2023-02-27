@@ -1,10 +1,10 @@
 ---
 title: Création et utilisation des thèmes
 description: Vous pouvez utiliser des thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif à l’aide de composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: e3fa30d5be29b4070a09873e8ca20036a788486a
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 21%
+source-wordcount: '1669'
+ht-degree: 20%
 
 ---
 
@@ -50,7 +50,8 @@ Pour personnaliser un thème,
 
 Pour personnaliser un thème Canevas :
 1. [Clonage du thème Zone de travail](#1-download-canvas-theme-download-canvas-theme)
-1. [Comprendre la structure de la structure du thème](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Comprendre la structure du thème](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
+1. [Changez de nom dans package.json et package_lock.json](#changename-packagelock-packagelockjson)
 1. [Créez le ](#3-create-the-env-file-in-a-theme-folder-creating-env-file-theme-folder)
 1. [Démarrer le serveur proxy local.](#4-start-a-local-proxy-server-starting-a-local-proxy-server)
 1. [Personnalisation du thème](#customize-the-theme-customizing-theme)
@@ -67,9 +68,9 @@ git clone https://github.com/adobe/aem-forms-theme-canvas
 
 >[!NOTE]
 >
-> L’onglet Style de l’assistant de création de formulaire affiche le même nom de thème que package.json .
+> L’onglet Style de l’assistant de création de formulaire affiche le même nom de thème que dans le fichier package.json.
 
-### 2. Comprendre la structure de la structure du thème {#structure-of-canvas-theme}
+### 2. Comprendre la structure du thème {#structure-of-canvas-theme}
 
 Un thème de formulaire adaptatif est un module contenant les ressources CSS, JavaScript et statiques qui définissent le style de votre formulaire et respectent la structure d’un thème de formulaire adaptatif. Un thème de formulaire adaptatif présente la structure suivante typique d’un projet front-end :
 
@@ -85,12 +86,22 @@ Le `src/components` comporte des fichiers JavaScript et CSS spécifiques à tous
 
 Pour personnaliser le thème, vous pouvez démarrer le serveur proxy local pour afficher les personnalisations du thème en temps réel en fonction du contenu AEM réel.
 
+### 4. Changez le nom dans package.json et package_lock.json du thème Canevas {#changename-packagelock-packagelockjson}
+
+Mettez à jour le nom et la version du thème Zone de travail dans la `package.json` et `package_lock.json` fichiers .
+
+>[!NOTE]
+>
+> Les noms ne doivent pas comporter `@aemforms` balise . Il doit s’agir d’un texte simple sous la forme d’un nom fourni par l’utilisateur.
+
+![Rubrique du thème de la zone de travail](/help/forms/assets/changename_canvastheme.png)
+
 ### 3. Créez le fichier .env dans un dossier de thème {#creating-env-file-theme-folder}
 
 Créez un `.env` dans le dossier theme et ajoutez les paramètres suivants :
 
 * **URL d’AEM**
-AEM_URL=https://[author-instance] ou http://localhost:[port]/
+AEM_URL=https://[author-instance]
 
 * **AEM nom du site**
 AEM_ADAPTIVE_FORM=Form_name
@@ -109,7 +120,7 @@ AEM_PROXY_PORT=7000
 
    ![npm run live](/help/forms/assets/theme_proxy.png)
 
-1. Lorsque le serveur proxy démarre, il ouvre automatiquement un navigateur sur `http://localhost:[port]/`.
+
 1. Appuyez ou cliquez sur **CONNEXION LOCALE (TÂCHES D’ADMINISTRATION UNIQUEMENT)** et connectez-vous avec les informations d’identification de l’utilisateur proxy fournies par l’administrateur AEM.
 
    ![Connexion locale](/help/forms/assets/local_signin.png)
@@ -166,20 +177,35 @@ Avant de valider les modifications dans le référentiel Git d’AEM, vous devez
 
 Après avoir apporté des modifications au thème et l’avoir testé avec un serveur proxy local, validez les modifications dans le référentiel Git de votre Cloud Service AEM Forms. Elle rend le thème personnalisé disponible dans votre environnement de Cloud Service Forms pour que les auteurs de Forms adaptatif puissent l’utiliser.
 
-Avant de valider les modifications apportées au référentiel git de votre Cloud Service AEM Forms, vous avez besoin d’un clone du référentiel sur votre ordinateur local. Pour cloner le référentiel :
+Avant de valider les modifications apportées au référentiel Git de votre Cloud Service AEM Forms, vous avez besoin d’un clone du référentiel sur votre ordinateur local. Pour cloner le référentiel :
 
-1. Ouvrez l’invite de commande et exécutez la commande ci-dessous après avoir remplacé [my-org] et [my-program] avec les valeurs fournies par votre administrateur AEM. Vous trouverez également des informations dans votre [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#accessing-git):
+1. Créez un référentiel de thèmes en cliquant sur le bouton **[!UICONTROL Référentiels]** .
+
+   ![créer un référentiel de thème](/help/forms/assets/createrepo_canvastheme.png)
+
+1. Cliquez sur **[!UICONTROL Ajouter un référentiel]** et spécifiez la variable **Nom du référentiel** dans le **Ajouter un référentiel** de la boîte de dialogue Cliquez sur **[!UICONTROL Enregistrer]**.
+
+   ![Ajout d’un thème de canevas](/help/forms/assets/addcanvasthemerepo.png)
+
+1. Cliquez sur **[!UICONTROL Copier l’URL du référentiel]** pour copier l’URL du référentiel créé.
+
+   ![URL du thème du canevas](/help/forms/assets/copyurl_canvastheme.png)
+
+1. Ouvrez l’invite de commande et clonez le référentiel cloud créé ci-dessus.
 
    ```
-   git clone https://git.cloudmanager.adobe.com/[my-org]/[my-org]/
+   git clone https://git.cloudmanager.adobe.com/aemforms/Canvasthemerepo/
    ```
-1. Déplacez le projet de thème que vous étiez en train de modifier dans le référentiel cloné avec une commande similaire à `mv <theme-sources> <cloned-repo>`.
-1. Apportez les modifications souhaitées dans les dossiers de composants de thème en modifiant son fichier CSS.
-1. Dans le répertoire du référentiel cloné, validez les fichiers de thème dans lesquels vous venez de déplacer avec les commandes suivantes.
+
+1. Déplacez les fichiers du référentiel de thème que vous modifiez dans le référentiel cloud avec une commande similaire à
+   `cp -r [source-theme-folder]/* [destination-cloud-repo]`
+Par exemple, utilisez cette commande 
+`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+1. Dans le répertoire du référentiel cloud, validez les fichiers de thème dans lesquels vous avez déplacé les commandes suivantes.
 
    ```text
-   git add <theme-file-name>
-   git commit -m "Adding theme sources"
+   git add .
+   git commit -a -m "Adding theme files"
    git push
    ```
 
@@ -190,10 +216,10 @@ Avant de valider les modifications apportées au référentiel git de votre Clou
 Vos personnalisations sont désormais stockées en toute sécurité dans le référentiel Git.
 
 
-### 7. Déploiement du pipeline front-end {#deploy-pipeline}
+### 7. Exécution du pipeline front-end {#deploy-pipeline}
 
-Déployez votre thème personnalisé à l’aide du pipeline frontal. En savoir plus [comment configurer un pipeline de première ligne pour déployer un thème personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
-
+1. Créez le pipeline frontal pour déployer le thème personnalisé. En savoir plus [comment configurer un pipeline de première ligne pour déployer un thème personnalisé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html#setup-pipeline).
+1. Exécutez le pipeline front-end créé pour déployer le dossier de thème personnalisé sous **[!UICONTROL Style]** de l’assistant de création de formulaire adaptatif.
 
 >[!NOTE]
 >
@@ -205,13 +231,13 @@ Déployez votre thème personnalisé à l’aide du pipeline frontal. En savoir 
 1. Ouvrez un formulaire adaptatif créé à l’aide des composants principaux.
 1. Démarrez le serveur proxy local à l’aide de l’invite de commande, puis cliquez sur **CONNEXION LOCALE (TÂCHES D’ADMINISTRATION UNIQUEMENT)**.
 1. Une fois connecté, vous êtes redirigé vers le navigateur et le thème appliqué s’affiche.
-1. Téléchargez le thème Canevas et extrayez le dossier zip téléchargé.
+1. Téléchargez la [Thème Canevas](https://github.com/adobe/aem-forms-theme-canvas) et extrayez le dossier zip téléchargé.
 1. Ouvrez le dossier zip extrait dans l’éditeur de votre choix.
 1. Créez un `.env` dans le dossier theme et ajoutez des paramètres : **URL AEM**, **AEM_ADAPTIVE_FORM** et **AEM_PROXY_PORT**.
 1. Ouvrez le fichier CSS de la zone de texte dans le dossier de thème Canevas et modifiez la couleur de sa bordure pour indiquer `red` et enregistrez les modifications.
 1. rouvrez le navigateur et vous verrez que les modifications sont répercutées immédiatement dans un formulaire adaptatif.
 1. Déplacez le dossier de thème de la zone de travail dans votre référentiel cloné.
-1. Validez les modifications et déployez le pipeline frontal.
+1. Validez les modifications et exécutez le pipeline frontal.
 
 Une fois le pipeline exécuté, le thème est disponible sous l’onglet Style .
 
