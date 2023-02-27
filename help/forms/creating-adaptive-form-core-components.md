@@ -4,7 +4,7 @@ description: Découvrez comment créer un formulaire adaptatif à l’aide de [!
 feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
-source-git-commit: 0d158082973cd0f0745f5e3f0391119e585fc743
+source-git-commit: 37274b28ab2343fd3cdfb4747c9dee701c699b46
 workflow-type: tm+mt
 source-wordcount: '1458'
 ht-degree: 47%
@@ -34,7 +34,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 * **Un modèle de formulaire adaptatif** : un modèle fournit une structure de base et définit l’aspect, c’est-à-dire la mise en page et les styles, d’un formulaire adaptatif. Il comporte des composants pré-formatés contenant certaines propriétés et une certaine structure de contenu. Il fournit également les options permettant de définir un thème et une action d’envoi. Le thème définit l’aspect et l’action d’envoi définit l’action à entreprendre lors de l’envoi d’un formulaire adaptatif. Par exemple, l’envoi des données collectées à une source de données. Le service cloud fournit un modèle prêt à l’emploi, nommé vide :
 
    * Le `blank` est inclus dans chaque nouveau programme AEM Forms as a Cloud Service.
-   * Vous pouvez installer le package de référence, via le gestionnaire de packages, pour ajouter le `blank` vers votre programme as a Cloud Service AEM Forms.
+   * Vous pouvez installer le package de référence, via Package Manager, pour ajouter le `blank` vers votre programme as a Cloud Service AEM Forms.
    * Vous pouvez également [créer un modèle de Forms adaptatif (composants principaux) ;](template-editor.md) à partir de zéro.
 
 * **Un thème de formulaire adaptatif** : un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants.  Le `Canvas` est inclus dans chaque nouveau programme AEM Forms as a Cloud Service.
