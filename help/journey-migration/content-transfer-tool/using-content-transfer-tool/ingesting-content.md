@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: acddd68b61173ab956cafcc7168fd7f898973638
+source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
-source-wordcount: '1375'
-ht-degree: 75%
+source-wordcount: '1660'
+ht-degree: 61%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 75%
 >id="aemcloud_ctt_ingestion"
 >title="Ingestion de contenu"
 >abstract="L’ingestion désigne l’ingestion de contenu à partir du jeu de migration dans l’instance Cloud Service cible. L’outil de transfert de contenu comporte une fonctionnalité pour traiter un complément de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#top-up-ingestion-process" text="Ingestion de complément"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="Ingestion de complément"
 
 Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
 >[!NOTE]
@@ -135,11 +135,28 @@ Vous pourrez déclencher une ingestion vers un environnement de destination seul
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
+### Impossible d’atteindre le service de migration {#unable-to-reach-migration-service}
+
+Une fois l’ingestion demandée, un message comme celui-ci peut être présenté à l’utilisateur : &quot;Le service de migration sur l’environnement de destination est actuellement inaccessible. Réessayez ultérieurement ou contactez le support Adobe.&quot;
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+
+Cela indique que Cloud Acceleration Manager n’a pas pu atteindre le service de migration de l’environnement cible pour démarrer l’ingestion. Cela peut se produire pour plusieurs raisons.
+
+>[!NOTE]
+> 
+> Le champ &quot;Jeton de migration&quot; s’affiche, car dans certains cas, la récupération de ce jeton est ce qui est en fait interdit. En le permettant manuellement, il peut permettre à l’utilisateur de démarrer rapidement l’ingestion, sans aide supplémentaire. Si le jeton est fourni et que le message s’affiche toujours, ce n’est pas la récupération du jeton qui a posé problème.
+
+* AEM as a Cloud Service conserve l’état de l’environnement et peut parfois devoir redémarrer le service de migration pour plusieurs raisons normales. Si ce service redémarre, il ne peut pas être atteint, mais il sera bientôt disponible.
+* Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Si, par exemple, l&#39;application d&#39;une mise à jour est lancée par Release Orchestration, le système peut être occupé et le service de migration régulièrement indisponible. C’est pourquoi il est fortement recommandé de suspendre les mises à jour lors d’une ingestion, ainsi que la possibilité de corrompre l’instance d’évaluation ou de production.
+* Si [La Liste autorisée IP a été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager empêche Cloud Acceleration Manager d’accéder au service de migration. Une adresse IP ne peut pas être ajoutée pour les assimilations, car elle est très dynamique. Actuellement, la seule solution consiste à désactiver la liste autorisée IP pendant l’exécution de l’ingestion.
+* D&#39;autres raisons peuvent nécessiter une enquête. Si l’ingestion continue d’échouer, contactez l’assistance clientèle Adobe.
+
 ### Les mises à jour automatiques par l’intermédiaire de la fonction Release Explorer sont toujours activées.
 
 L&#39;application automatique des mises à jour permet de tenir automatiquement les environnements à jour. Si la mise à jour est déclenchée lors d’une ingestion, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement. C’est l’une des raisons pour lesquelles un ticket d’assistance doit être consigné avant de commencer une ingestion (voir la &quot;Remarque&quot; ci-dessus), de sorte que la désactivation temporaire de Release Orchestration puisse être planifiée.
 
-Si l’exécution de Release Orchestration est toujours en cours de démarrage, l’interface utilisateur affiche ce message d’erreur. Vous pouvez choisir de continuer de toute façon, en acceptant le risque, en cochant le champ et en appuyant de nouveau sur le bouton.
+Si l’exécution de Release Orchestration est toujours en cours de démarrage, l’interface utilisateur présentera ce message. Vous pouvez choisir de continuer de toute façon, en acceptant le risque, en cochant le champ et en appuyant de nouveau sur le bouton.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
