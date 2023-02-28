@@ -2,9 +2,9 @@
 title: Tests de l’interface utilisateur
 description: Le test personnalisé d’interface utilisateur est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications personnalisées.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: b1eacc8432a73f015529975e6960afbe9dee7565
+source-git-commit: 3e31b065999d36717b81253d2773e41b76949954
 workflow-type: tm+mt
-source-wordcount: '2143'
+source-wordcount: '2141'
 ht-degree: 56%
 
 ---
@@ -221,7 +221,7 @@ Les variables d’environnement suivantes seront transmises à votre image Docke
 Les exemples de test d’Adobe fournissent des fonctions d’assistance pour accéder aux paramètres de configuration :
 
 * JavaScript : Voir [lib/config.js](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/config.js) module
-* Java : Voir [Config](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
+* Java : Voir [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java) class
 
 ### Attendre la préparation de Selenium {#waiting-for-selenium}
 
@@ -255,21 +255,9 @@ Les exemples de test fournis par Adobe créent par défaut des captures d’écr
 Vous pouvez utiliser les fonctions d’assistance pour créer des captures d’écran à travers vos tests.
 
 * JavaScript : [takeScreenshot, commande](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
-* Java : [Commandes](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
+* Java : [Commandes](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, le fichier journal de test contient une référence à l’emplacement de l’archive de résultats de test à la fin.
-
-```
-[...]
-
-===============================================================
-The detailed test results can be downloaded from the URL below.
-Note: the link will expire after 60 days
-
-    https://results-host/test-results.zip
-
-===============================================================
-```
+Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger à partir de Cloud Manager à l’aide de la fonction `Download Details` sous le bouton [**Tests de l’interface utilisateur personnalisée** étape .](/help/implementing/cloud-manager/deploy-code.md)
 
 ### Charger des fichiers {#upload-files}
 
@@ -282,7 +270,7 @@ Les tests doivent parfois charger des fichiers vers l’application en cours de 
    * Consultez la documentation et les bibliothèques du langage de programmation utilisé dans l’image Docker pour savoir comment exécuter une telle requête HTTP.
    * Les exemples de test d’Adobe fournissent des fonctions d’assistance pour le téléchargement de fichiers :
       * JavaScript : Voir [getFileHandleForUpload](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/wdio.commands.js) .
-      * Java : Voir [FileHandler](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) classe .
+      * Java : Voir [FileHandler](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/FileHandler.java) classe .
 1. Si le chargement aboutit, la requête renvoie une réponse `200 OK` de type `text/plain`.
    * Le contenu de la réponse est une gestion de fichier opaque.
    * Vous pouvez utiliser cette gestion à la place d’un chemin de fichier dans un élément `<input>` pour tester les chargements de fichiers dans votre application.
@@ -344,4 +332,4 @@ Pour exécuter les tests de l’interface utilisateur à partir de votre ordinat
 >
 >* Les fichiers journaux seront stockés dans la variable `target/reports` de votre référentiel.
 >
->Pour plus d’informations, reportez-vous à la section [AEM Référentiel d’exemples de test.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver/README.MD)
+>Pour plus d’informations, reportez-vous à la section [AEM Référentiel d’exemples de test.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)

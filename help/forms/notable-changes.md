@@ -3,10 +3,10 @@ title: Ce qui a changé entre AEM 6.5 Forms et AEM Cloud Services
 description: Êtes-vous un utilisateur Experience Manager Forms qui souhaitez effectuer une mise à niveau vers Adobe Experience Manager Forms as a Cloud Service ? Découvrez les modifications les plus importantes avant de mettre à niveau ou de migrer vers Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 27%
+source-wordcount: '1179'
+ht-degree: 26%
 
 ---
 
@@ -28,26 +28,16 @@ Adobe Experience Manager Forms as a Cloud Service apporte quelques modifications
 | Intégration à [!DNL Micosoft Power Automate] | ✅ | ⛌ |
 | Intégration à [!DNL DocuSign] | ✅ | ⛌ |
 | Connectivité facile avec Microsoft Dynamics et Salesforce | ✅ | ⛌ |
-| Connexion aisée avec le magasin de données Microsoft Azure | ✅ | ⛌ |
+| Connexion aisée avec les entrepôts de données Microsoft Azure | ✅ | ⛌ |
 | Éditeur de règles accentué | ✅ | ⛌ |
 | Assistant de création de formulaires | ✅ | ⛌ |
 | Prise en charge XCI personnalisée d’un document d’enregistrement | ✅ | ⛌ |
 | Forms adaptatif <sup>1</sup> | ✅ | ✅ |
-| Intégration de données à plusieurs sources de données | ✅ | ✅ |
 | API de communications (Document Services) <sup>2,3</sup> | ✅ | ✅ |
 | automated forms conversion Service <sup>4</sup> | ✅ | ✅ |
-| Intégration à [!DNL Adobe Sign] | ✅ | ✅ |
-| Intégration à [!DNL AEM Sites] | ✅ | ✅ |
-| Intégration à [!DNL Adobe Launch] | ✅ | ✅ |
-| Intégration à [!DNL Adobe Analytics] | ✅ | ✅ |
 | Portail Forms <sup>5</sup> | ✅ | ✅ |
-| Workflows AEM | ✅ | ✅ |
-| Document d’enregistrement | ✅ | ✅ |
-| Captcha invisible | ✅ | ✅ |
-| Configurations de modèles de données de formulaire réutilisables | ✅ | ✅ |
-| Document d’enregistrement basé sur Acrobat | ✅ | ✅ |
-| Authentification d’identité basée sur les identifiants de gouvernement pour Forms adaptatif activé par Adobe Sign | ✅ | ✅ |
-| HTML5 <sup>6</sup> | ⛌ | ✅ |
+| Modèle de données Forms <sup>6</sup> | ✅ | ✅ |
+| HTML5 Forms <sup>7</sup> | ⛌ | ✅ |
 | Document Security | ⛌ | ✅ |
 
 Avant de poursuivre le service, veuillez tenir compte des cas exceptionnels suivants :
@@ -96,12 +86,20 @@ Le service ne fournit pas de métamodèle pour Automated forms conversion Servic
 
 +++ 5. Portail Forms
 
-La prise en charge de l’utilisation anonyme du portail Forms n’est pas prête à l’emploi. Vous pouvez personnaliser le portail de formulaires pour activer l’affichage de formulaires pour les utilisateurs non connectés.
+La prise en charge de l’utilisation anonyme du portail Forms n’est pas disponible en standard (prête à l’emploi). Vous pouvez personnaliser Forms Portal pour activer l’affichage de formulaires pour les utilisateurs non connectés.
+
++++
+
++++ 6. Modèle de données de formulaire
+
+* Le modèle de données Forms ne prend en charge que les points de terminaison HTTP et HTTP pour envoyer des données. Le service ne prend pas en charge le protocole SSL mutuel pour le connecteur REST et l’authentification par certificat x509 pour les sources de données SOAP.
+
+* Forms as a Cloud Service permet d’utiliser Microsoft Azure Blob, Microsoft SharePoint, Microsoft OneDrive et les services prenant en charge les opérations CRUD (Create, Read, Update et Delete) générales en tant que entrepôts de données. Les spécifications Open API 2.0 et Open API sont prises en charge. Le service fournit également la prise en charge du connecteur JDBC.
 
 +++
 
 
-+++ 6. HTML5 Forms (Forms mobile)
++++ 7. Forms HTML5 (Forms mobile)
 
 * Le service ne prend pas en charge HTML5 Forms (Mobile Forms). Si vous effectuez le rendu de vos formulaires basés sur XDP sous HTML5 Forms, vous pouvez continuer à utiliser la fonctionnalité sur AEM 6.5 Forms.
 
@@ -110,13 +108,7 @@ La prise en charge de l’utilisation anonyme du portail Forms n’est pas prêt
 +++
 
 
-+++ 7. Modèle de données de formulaire
 
-* Le modèle de données Forms ne prend en charge que les points de terminaison HTTP et HTTP pour envoyer des données. Le service ne prend pas en charge le protocole SSL mutuel pour le connecteur REST et l’authentification par certificat x509 pour les sources de données SOAP.
-
-* Forms as a Cloud Service permet d’utiliser Microsoft Azure Blob, Microsoft SharePoint, Microsoft OneDrive et les services prenant en charge les opérations CRUD (Create, Read, Update et Delete) générales en tant que entrepôts de données. Les spécifications Open API 2.0 et Open API sont prises en charge. Le service fournit également la prise en charge du connecteur JDBC.
-
-+++
 
 
 +++ 8. Environnement du développeur

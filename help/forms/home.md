@@ -1,12 +1,12 @@
 ---
 title: Présentation d’ [!DNL AEM Forms]  as a Cloud Service
-description: Découvrez AEM Forms et apprenez à créer des documents et du contenu de formulaire pour les entreprises. Découvrez Platform-as-a-Service (PaaS) et apprenez à gérer des formulaires numériques et des processus d’entreprise à l’échelle de l’organisation, ainsi qu’à connecter Forms aux sources de données actives.
+description: Découvrez AEM Forms et découvrez comment il vous aide à créer des formulaires et des documents prêts à l’emploi. Découvrez Platform en tant que service (PaaS) et comment gérer des formulaires numériques d’entreprise et des processus d’entreprise, ainsi que connecter Forms à Adobe Sign et aux sources de données actuelles.
 landing-page-description: Découvrez comment utiliser les formulaires dans AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: 3b6bf70ffefeb067620d6071b339384c53820ab5
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 42%
+source-wordcount: '1108'
+ht-degree: 33%
 
 ---
 
@@ -14,34 +14,57 @@ ht-degree: 42%
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] propose aux entreprises une solution PaaS native cloud permettant de créer, de gérer, de publier et de mettre à jour des formulaires numériques complexes, tout en intégrant des données envoyées à des processus d’arrière-plan et des règles métier, et en enregistrant des données dans un magasin de données externe.
 
+Le service est toujours à jour, toujours disponible et évolue sans cesse. Les organisations peuvent utiliser [!DNL AEM Forms] as a Cloud Service et obtenez toutes ces fonctionnalités dans le cloud sans avoir besoin d’infrastructure locale. Ce service libère également les entreprises de cycles de mise à niveau complexes, car il est toujours à jour avec les dernières fonctionnalités.
+
+Adobe [!DNL Experience Manager Forms as a Cloud Service] est une solution axée sur le client qui prend en charge chaque étape du parcours :
+
+
+![](/help/forms/assets/customer-journey.png)
+
+
+
+
+
+## Faciliter l&#39;accès aux formulaires pour améliorer la sensibilisation
+
+Dans les grandes entreprises, les formulaires sont souvent créés et réutilisés en les copiant dans un système de gestion de contenu. La mise à jour d’une base de données volumineuse de formulaires et leur découverte peuvent s’avérer un défi considérable. AEM propose un portail de formulaires personnalisable qui permet aux clients de rechercher les formulaires dont ils ont besoin et d’y accéder via les canaux Web et mobiles.
+
+Vous pouvez personnaliser l’aspect, la valorisation de marque et les logos de Forms Portal pour répondre aux besoins spécifiques de votre entreprise.
+
 ## Numérisation et rationalisation de l’inscription et de l’intégration
 
 Vous pouvez utiliser ce service pour créer et déployer des formulaires numériques interactifs et attrayants. Par exemple, prenez une organisation qui cherche à numériser son parcours d’inscription des clients. Elle dispose de plusieurs sources de données avec des données client existantes. Elle cherche à préremplir les formulaires, à ajouter des signatures électroniques à ses formulaires et à archiver les formulaires remplis en tant que fichiers PDF. En outre, l’entreprise dispose de plusieurs formulaires imprimés (formulaires PDF), et elle cherche également à convertir tous ses formulaires imprimés en formulaires numériques.
 
 L’entreprise peut utiliser [!DNL AEM Forms] as a Cloud Service pour créer des formulaires numériques, connecter des formulaires à des sources de données existantes, intégrer des formulaires avec [!DNL Adobe Sign] pour ajouter des signatures électroniques aux formulaires et générer un document d’enregistrement pour archiver les formulaires envoyés en tant que fichiers PDF. L’entreprise peut également utiliser le service pour convertir ses formulaires PDF existants en formulaires numériques.
 
-![Collecte de données - Conception de formulaire réactive](/help/forms/assets/data-collection.jpeg "Expériences Forms adaptatives pour plusieurs appareils"){width="70%" align="center"}
+![Conception de formulaire réactive](/help/forms/assets/data-collection.jpeg "Expériences Forms adaptatives pour plusieurs appareils"){width="70%" align="center"}
 
-Conception de formulaire réactive
 
-Dans les grandes entreprises, les formulaires sont souvent créés et réutilisés en les copiant dans un système de gestion de contenu. Conserver à jour une base de données volumineuse de formulaires et rendre les formulaires détectables peut se révéler un défi de taille. AEM propose un portail de formulaires personnalisable qui permet aux clients de rechercher les formulaires dont ils ont besoin et d’y accéder via les canaux Web et mobiles.
+## Automatisation des workflows administratifs
 
-## Message personnalisé
+Utilisez des processus basés sur l’utilisation de formulaires pour automatiser le traitement et le routage des données de formulaire vers différents intervenants, tels que les gestionnaires ou les services, en vue de leur révision, approbation ou traitement ultérieur.
+
+Ces processus aident votre entreprise à minimiser les risques et à maintenir la conformité en assurant un traitement cohérent et audacieux des données de formulaire, en automatisant les tâches manuelles, en fournissant un contrôle d’accès basé sur les rôles et en contribuant à se conformer aux exigences réglementaires.
+
+
+## Diffuser des communications personnalisées
 
 Une composante importante d’une expérience numérique de libre-service efficace est la diffusion d’informations personnalisées en temps voulu, accessibles n’importe où et depuis n’importe quel périphérique. Les messages personnalisés diffusés en temps voulu peuvent améliorer les taux de conversion et la satisfaction des utilisateurs.
 
-Avec AEM Forms, les utilisateurs professionnels peuvent créer des expériences utilisateur personnalisées attrayantes en personnalisant des modèles de document et en incorporant des informations provenant de processus principaux aux modèles. Un ensemble d’API intuitives aide les règles de jeu d’entreprise qui déterminent à quel moment générer une communication en fonction d’une requête ou à intervalles réguliers par lots.
+Avec AEM Forms, les utilisateurs professionnels peuvent créer des expériences utilisateur personnalisées attrayantes en personnalisant des modèles de document et en incorporant des informations provenant de processus principaux aux modèles. Un ensemble d’API intuitives permet aux règles de jeu d’entreprise de décider quand générer une communication en fonction d’une requête ou à intervalles réguliers par lots.
 
 Il est facile de générer des documents personnalisés, tels que des reçus, des kits de bienvenue et des instructions. Les entreprises peuvent rediriger le trafic vers des portails Web personnalisés suite à une inscription ou à l’achat de services supplémentaires.
 
 
-![Communication personnalisée - Conception réactive](/help/forms/assets/personalized-communication.jpeg "Factures PDF personnalisées générées à la demande"){width="70%" align="center"}
+![Facture personnalisée](/help/forms/assets/personalized-communication.jpeg "Factures PDF personnalisées générées à la demande"){width="70%" align="center"}
 
-Facture personnalisée
 
-Le service est toujours à jour, toujours disponible et évolue sans cesse. Les organisations peuvent utiliser [!DNL AEM Forms] as a Cloud Service et obtenez toutes ces fonctionnalités dans le cloud sans avoir besoin d’infrastructure locale. Ce service libère également les entreprises de cycles de mise à niveau complexes, car il est toujours à jour avec les dernières fonctionnalités.
+## Optimisation des performances des formulaires
 
-## Fonctions clés {#key-features}
+Le service s’intègre à Adobe Analytics, ce qui vous permet de capturer et de suivre les mesures de performances des formulaires que vous avez publiés. L’analyse de ces mesures contribue à une prise de décisions éclairée fondée sur les données, eu égard aux modifications requises pour concevoir des formulaires ou des documents plus faciles à utiliser. Utilisez Adobe Analytics pour identifier les schémas d’interaction et les problèmes auxquels sont confrontés les utilisateurs lorsqu’ils utilisent des formulaires adaptatifs.
+
+
+## Commencer {#key-features}
 
 |  |  |
 |---|---|

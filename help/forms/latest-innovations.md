@@ -1,10 +1,10 @@
 ---
-title: Dernières innovations d’Adobe Experience Manager (AEM) Forms as a Cloud Service
+title: Découvrez les dernières innovations d’Adobe Experience Manager Forms as a Cloud Service.
 description: "Découvrez les dernières fonctionnalités d’ [!DNL AEM Forms] as a Cloud Service pour créer, gérer et publier des formulaires de niveau élevé et des processus d’entreprise."
 exl-id: 3a90b0aa-369a-4350-9904-79ef656b0f9a
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '682'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ An organization can sign up for [!DNL AEM Forms] as a Cloud Service and start us
 
 Voici quelques-unes des dernières innovations d’AEM Forms as a Cloud Service :
 
-|  |  |
+| Fonctionnalité | Détails |
 |---|---|
 | Forms adaptatif sans affichage | Création et gestion [Forms adaptatif sans affichage](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) dans la plateforme Adobe Experience Manager. Permet aux développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs via des API, plutôt que par le biais d’une interface utilisateur graphique classique. <br/> <br/> Ces formulaires sont conçus pour être envoyés sans avoir besoin d’une interface de HTML traditionnelle. En d’autres termes, ils vous permettent d’envoyer des données de formulaire par programmation via une API ou un code d’arrière-plan sans nécessiter d’éléments de formulaire visibles sur le front-end. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/assets/how-headless-adaprive-forms-work.png?)<br/> Les formulaires sans affichage sont utiles dans divers scénarios, comme lors de la création d’applications d’une seule page, d’applications web progressives ou d’applications mobiles, où une interface de HTML classique peut ne pas être nécessaire ou pratique. En permettant aux développeurs d’envoyer des données de formulaire directement via des API ou du code d’arrière-plan, les formulaires sans tête permettent de rationaliser les workflows et d’améliorer les performances globales des applications web. |
 | Composants principaux | Le [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) sont un ensemble de 24 composants Open Source compatibles avec BEM qui sont construits sur la base des composants principaux de la gestion de contenu web Adobe Experience Manager. Elles sont spécialement conçues pour être utilisées pour créer des Forms adaptatives, qui sont des formulaires qui s’adaptent au périphérique, au navigateur et à la taille d’écran de l’utilisateur. <br/> <br/> Ces composants peuvent être utilisés pour créer des expériences de capture et d’inscription de données exceptionnelles en proposant un large éventail d’options de champ de formulaire, notamment des champs de texte, des cases à cocher, des menus déroulants, etc. Ils comprennent également des fonctionnalités telles que la validation, la logique conditionnelle et la conception réactive, qui peuvent être utilisées pour créer des formulaires conviviaux et faciles à utiliser. <br/> ![](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/assets/sample-core-components-based-adaptive-form.png?)<br/>  En outre, comme ces composants sont Open Source, les développeurs peuvent facilement personnaliser et étendre les composants pour répondre aux besoins spécifiques de leur entreprise. Et ces composants sont construits sur une méthodologie BEM qui garantit qu&#39;ils sont extensibles et maintenables. |
