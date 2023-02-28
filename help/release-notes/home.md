@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: fda4fdd3a28caa0a35014fbf4b0bbac8800e343c
+source-git-commit: 554912f0e08fdf699b16ab9bf0b12ee84e8a682b
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 100%
+source-wordcount: '642'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Avec le modèle de mise à jour continue dans [!DNL Adobe Experience Manager] as
 * [Les nouvelles fonctionnalités sont publiées à une fréquence mensuelle prévisible et sont axées sur les nouvelles fonctionnalités et innovations de produits.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 * [Les versions de maintenance sont déployées fréquemment et portent sur les mises à jour de sécurité, les correctifs et les améliorations de performances. ](/help/release-notes/maintenance/latest.md) Ainsi, [!DNL Adobe Experience Manager] as a Cloud Service est toujours à jour avec les correctifs critiques.
 
-En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] as a Cloud Service offre la possibilité de prévisualiser les fonctionnalités à venir un mois complet à l’avance avant que les fonctionnalités ne soient mises en production. Cela vous permet d’évaluer l’impact d’une prochaine version sur une organisation en testant les fonctionnalités de votre propre environnement personnalisé et en formant/préparant les utilisateurs internes bien à l’avance.
+En plus de la vitesse d’innovation, [!DNL Adobe Experience Manager] as a Cloud Service offre la possibilité de prévisualiser les fonctionnalités à venir un mois complet à l’avance avant que les fonctionnalités ne soient mises en production. Cela vous permet d’évaluer l’impact d’une prochaine version sur une organisation en testant les fonctionnalités de votre propre environnement personnalisé et en formant/préparant les utilisateurs internes bien à l’avance. Si vous disposez d’un module complémentaire d’AEM, tel que des formulaires, vous pouvez vous assurer qu’il est également mis à jour en sélectionnant la solution dans la variable [paramètres du programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md).
 
 >[!NOTE]
 >
