@@ -3,33 +3,21 @@ title: Présentation d’ [!DNL AEM Forms]  as a Cloud Service
 description: Découvrez AEM Forms et découvrez comment il vous aide à créer des formulaires et des documents prêts à l’emploi. Découvrez Platform en tant que service (PaaS) et comment gérer des formulaires numériques d’entreprise et des processus d’entreprise, ainsi que connecter Forms à Adobe Sign et aux sources de données actuelles.
 landing-page-description: Découvrez comment utiliser les formulaires dans AEM as a Cloud Service.
 exl-id: aa5ef10c-ba78-4a9d-8b2b-a72a7a306888
-source-git-commit: f44a789984c38f6d34eb5c7d6999d5148b15aec8
+source-git-commit: 2a464a0a11396a1948ba7211d5c0534769e6659c
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1109'
 ht-degree: 33%
 
 ---
 
-# Présentation {#introduction}
+# Présentation d’AEM Forms as a Cloud Service {#introduction}
 
 Adobe [!DNL Experience Manager Forms as a Cloud Service] propose aux entreprises une solution PaaS native cloud permettant de créer, de gérer, de publier et de mettre à jour des formulaires numériques complexes, tout en intégrant des données envoyées à des processus d’arrière-plan et des règles métier, et en enregistrant des données dans un magasin de données externe.
 
 Le service est toujours à jour, toujours disponible et évolue sans cesse. Les organisations peuvent utiliser [!DNL AEM Forms] as a Cloud Service et obtenez toutes ces fonctionnalités dans le cloud sans avoir besoin d’infrastructure locale. Ce service libère également les entreprises de cycles de mise à niveau complexes, car il est toujours à jour avec les dernières fonctionnalités.
 
-Adobe [!DNL Experience Manager Forms as a Cloud Service] est une solution axée sur le client qui prend en charge chaque étape du parcours :
+Adobe [!DNL Experience Manager Forms as a Cloud Service] est une solution axée sur le client qui prend en charge chaque étape du parcours client :
 
-
-![](/help/forms/assets/customer-journey.png)
-
-
-
-
-
-## Faciliter l&#39;accès aux formulaires pour améliorer la sensibilisation
-
-Dans les grandes entreprises, les formulaires sont souvent créés et réutilisés en les copiant dans un système de gestion de contenu. La mise à jour d’une base de données volumineuse de formulaires et leur découverte peuvent s’avérer un défi considérable. AEM propose un portail de formulaires personnalisable qui permet aux clients de rechercher les formulaires dont ils ont besoin et d’y accéder via les canaux Web et mobiles.
-
-Vous pouvez personnaliser l’aspect, la valorisation de marque et les logos de Forms Portal pour répondre aux besoins spécifiques de votre entreprise.
 
 ## Numérisation et rationalisation de l’inscription et de l’intégration
 
@@ -40,12 +28,7 @@ L’entreprise peut utiliser [!DNL AEM Forms] as a Cloud Service pour créer des
 ![Conception de formulaire réactive](/help/forms/assets/data-collection.jpeg "Expériences Forms adaptatives pour plusieurs appareils"){width="70%" align="center"}
 
 
-## Automatisation des workflows administratifs
-
-Utilisez des processus basés sur l’utilisation de formulaires pour automatiser le traitement et le routage des données de formulaire vers différents intervenants, tels que les gestionnaires ou les services, en vue de leur révision, approbation ou traitement ultérieur.
-
-Ces processus aident votre entreprise à minimiser les risques et à maintenir la conformité en assurant un traitement cohérent et audacieux des données de formulaire, en automatisant les tâches manuelles, en fournissant un contrôle d’accès basé sur les rôles et en contribuant à se conformer aux exigences réglementaires.
-
+Dans les grandes entreprises, les formulaires sont souvent créés et réutilisés en les copiant dans un système de gestion de contenu. La mise à jour d’une base de données volumineuse de formulaires et leur découverte peuvent s’avérer un défi considérable. AEM propose un portail de formulaires personnalisable qui permet aux clients de rechercher les formulaires dont ils ont besoin et d’y accéder via les canaux Web et mobiles. Vous pouvez personnaliser l’aspect, la valorisation de marque et les logos de Forms Portal pour répondre aux besoins spécifiques de votre entreprise.
 
 ## Diffuser des communications personnalisées
 
@@ -53,10 +36,16 @@ Une composante importante d’une expérience numérique de libre-service effica
 
 Avec AEM Forms, les utilisateurs professionnels peuvent créer des expériences utilisateur personnalisées attrayantes en personnalisant des modèles de document et en incorporant des informations provenant de processus principaux aux modèles. Un ensemble d’API intuitives permet aux règles de jeu d’entreprise de décider quand générer une communication en fonction d’une requête ou à intervalles réguliers par lots.
 
+![Facture personnalisée](/help/forms/assets/personalized-communication.jpeg "Factures PDF personnalisées générées à la demande"){width="70%" align="center"}
+
 Il est facile de générer des documents personnalisés, tels que des reçus, des kits de bienvenue et des instructions. Les entreprises peuvent rediriger le trafic vers des portails Web personnalisés suite à une inscription ou à l’achat de services supplémentaires.
 
 
-![Facture personnalisée](/help/forms/assets/personalized-communication.jpeg "Factures PDF personnalisées générées à la demande"){width="70%" align="center"}
+## Automatisation des workflows administratifs
+
+Utilisez des processus basés sur l’utilisation de formulaires pour automatiser le traitement et le routage des données de formulaire vers différents intervenants, tels que les gestionnaires ou les services, en vue de leur révision, approbation ou traitement ultérieur.
+
+Ces processus aident votre entreprise à minimiser les risques et à maintenir la conformité en assurant un traitement cohérent et audacieux des données de formulaire, en automatisant les tâches manuelles, en fournissant un contrôle d’accès basé sur les rôles et en contribuant à se conformer aux exigences réglementaires.
 
 
 ## Optimisation des performances des formulaires
