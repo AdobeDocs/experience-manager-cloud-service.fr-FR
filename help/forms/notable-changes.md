@@ -3,9 +3,9 @@ title: Ce qui a changé entre AEM 6.5 Forms et AEM Cloud Services
 description: Êtes-vous un utilisateur Experience Manager Forms qui souhaitez effectuer une mise à niveau vers Adobe Experience Manager Forms as a Cloud Service ? Découvrez les modifications les plus importantes avant de mettre à niveau ou de migrer vers Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 7c157cbeb530627c1b888379896ddffda3f3efb3
 workflow-type: tm+mt
-source-wordcount: '1178'
+source-wordcount: '1215'
 ht-degree: 27%
 
 ---
@@ -103,14 +103,18 @@ La prise en charge de l’utilisation anonyme du portail Forms n’est pas prêt
 
 +++ 6. HTML5 Forms (Forms mobile)
 
-Le service ne prend pas en charge HTML5 Forms (Mobile Forms). Si vous effectuez le rendu de vos formulaires basés sur XDP sous HTML5 Forms, vous pouvez continuer à utiliser la fonctionnalité sur AEM 6.5 Forms.
+* Le service ne prend pas en charge HTML5 Forms (Mobile Forms). Si vous effectuez le rendu de vos formulaires basés sur XDP sous HTML5 Forms, vous pouvez continuer à utiliser la fonctionnalité sur AEM 6.5 Forms.
+
+* Si vous avez un cas d’utilisation pour capturer des données hors ligne et les synchroniser la prochaine fois que vous revenez en ligne, vous pouvez continuer à utiliser la variable [Espace de travail AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-aem-forms-workspace/introduction-html-workspace.html) sur AEM 6.5 Forms.
 
 +++
 
 
 +++ 7. Modèle de données de formulaire
 
-Le modèle de données Forms ne prend en charge que les points de terminaison HTTP et HTTP pour envoyer des données. Le service ne prend pas en charge le protocole SSL mutuel pour le connecteur REST et l’authentification par certificat x509 pour les sources de données SOAP. * Forms as a Cloud Service permet d’utiliser Microsoft Azure Blob, Microsoft SharePoint, Microsoft OneDrive et les services prenant en charge les opérations CRUD générales (créer, lire, mettre à jour et supprimer) en tant que entrepôts de données. Les spécifications Open API 2.0 et Open API sont prises en charge. Le service fournit également la prise en charge du connecteur JDBC.
+* Le modèle de données Forms ne prend en charge que les points de terminaison HTTP et HTTP pour envoyer des données. Le service ne prend pas en charge le protocole SSL mutuel pour le connecteur REST et l’authentification par certificat x509 pour les sources de données SOAP.
+
+* Forms as a Cloud Service permet d’utiliser Microsoft Azure Blob, Microsoft SharePoint, Microsoft OneDrive et les services prenant en charge les opérations CRUD (Create, Read, Update et Delete) générales en tant que entrepôts de données. Les spécifications Open API 2.0 et Open API sont prises en charge. Le service fournit également la prise en charge du connecteur JDBC.
 
 +++
 
