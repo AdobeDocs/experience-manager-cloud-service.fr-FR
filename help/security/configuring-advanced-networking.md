@@ -2,8 +2,8 @@
 title: Configuration de la mise en réseau avancée pour AEM as a Cloud Service
 description: Découvrez comment configurer des fonctionnalités de mise en réseau avancées telles qu’un VPN ou une adresse IP de sortie flexible ou dédiée pour AEM as a Cloud Service
 exl-id: 968cb7be-4ed5-47e5-8586-440710e4aaa9
-source-git-commit: dde06fb7b678de8bf07aae54ee411aab7208ab2c
-workflow-type: ht
+source-git-commit: 9efa730f7a8bdc01d19511100e611f9f15c64f19
+workflow-type: tm+mt
 source-wordcount: '3053'
 ht-degree: 100%
 
@@ -490,7 +490,7 @@ Le diagramme ci-dessous offre une représentation visuelle d’un ensemble de do
     <td>Les connexions à partir du VPN s’afficheraient sur le réseau de diffusion de contenu comme provenant de cette adresse IP. Pour autoriser uniquement les connexions venant du VPN à accéder à AEM, configurez Cloud Manager afin d’autoriser uniquement cette adresse IP et de bloquer tout le reste. Pour plus d’informations, consultez la section « Restreindre le VPN aux connexions entrantes ».</td>
   </tr>
   <tr>
-    <td><code>p{PROGRAM_ID}-gateway.external.adobeaemcloud.com</code></td>
+    <td><code>p{PROGRAM_ID}.{REGION}-gateway.external.adobeaemcloud.com</code></td>
     <td>S/O</td>
     <td>L’adresse IP de la passerelle VPN côté AEM. L’équipe d’ingénierie réseau d’un client peut l’utiliser pour autoriser uniquement les connexions VPN à sa passerelle VPN à partir d’une adresse IP spécifique. </td>
   </tr>
