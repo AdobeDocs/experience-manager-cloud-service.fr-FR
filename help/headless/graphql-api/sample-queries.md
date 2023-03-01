@@ -4,9 +4,9 @@ description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du conte
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1540'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Pour obtenir de l’aide à ce sujet, voir les éléments suivants :
 
 * Un [exemple de structure de fragment de contenu](#content-fragment-structure-graphql)
 
-* Et certains [exemple de requêtes GraphQL](#graphql-sample-queries), en fonction de l’exemple de structure de fragment de contenu (modèles de fragment de contenu et fragments de contenu associés).
+* Un certain nombre d’[exemples de requêtes GraphQL](#graphql-sample-queries), basés sur l’exemple de structure de fragment de contenu (modèles de fragments de contenu et fragments de contenu associés).
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_headless_graphql_sample"
@@ -1121,7 +1121,7 @@ Ces exemples de requêtes sont basés sur le projet WKND. Il s’agit des élém
 Cet exemple de requête interroge :
 
 * à la recherche de tous les fragments de contenu de type `article` ;
-* avec le `_path` et les propriétés de `authorFragment`.
+* avec le `_path` et les propriétés du `authorFragment`.
 
 **Exemple de requête**
 
@@ -1261,7 +1261,7 @@ Cet exemple de requête interroge :
 }
 ```
 
-### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle unique{#sample-wknd-nested-fragment-single-model}
+### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle unique {#sample-wknd-nested-fragment-single-model}
 
 Cette requête interroge :
 
@@ -1289,7 +1289,7 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle multiple{#sample-wknd-nested-fragment-multiple-model}
+### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle multiple {#sample-wknd-nested-fragment-multiple-model}
 
 Cette requête interroge :
 
@@ -1321,7 +1321,7 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références de contenu{#sample-wknd-fragment-specific-model-content-reference}
+### Exemple de requête pour un fragment de contenu d’un modèle spécifique avec des références de contenu {#sample-wknd-fragment-specific-model-content-reference}
 
 Cette requête possède deux versions :
 
@@ -1539,11 +1539,11 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête de liste utilisant le décalage et la limite {#sample-list-offset-limit}
+### Exemple de requête de liste utilisant offset et limit {#sample-list-offset-limit}
 
 Cette requête interroge :
 
-* pour la page de résultats contenant jusqu’à cinq articles, à partir du cinquième article de la *complete* liste de résultats
+* pour la page de résultats contenant jusqu’à cinq articles, en commençant par le cinquième article de la liste de résultats *complète*.
 
 **Exemple de requête**
 
@@ -1563,11 +1563,11 @@ Cette requête interroge :
 }
 ```
 
-### Exemple de requête de pagination utilisant d’abord et après  {#sample-pagination-first-after}
+### Exemple de requête de pagination utilisant first et after  {#sample-pagination-first-after}
 
 Cette requête interroge :
 
-* pour la page de résultats contenant jusqu’à cinq aventures, en commençant par l’élément de curseur donné dans la variable *complete* liste de résultats
+* pour la page de résultats contenant jusqu’à cinq aventures, en commençant par l’élément de curseur donné de la liste de résultats *complète*.
 
 **Exemple de requête**
 
@@ -1669,7 +1669,7 @@ Les fragments suivants sont utilisés pour le modèle approprié.
 | Smith | Joe |  |
 | Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
-| Tâches | Steve |  |
+| Jobs | Steve |  |
 
 #### Distinction {#fragment-award}
 
