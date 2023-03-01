@@ -2,10 +2,10 @@
 title: Tests d’audit de l’expérience
 description: Découvrez comment l’audit de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation des moteurs de recherche.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: 1a7a9ee78d09a9360922a63dfa315ef9d106209e
+source-git-commit: fe9d76362f7d2bd7d0ebe89d5161f0c1868e80a3
 workflow-type: tm+mt
-source-wordcount: '536'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +33,10 @@ Les résultats sont informatifs et permettent au responsable de déploiement de 
 
 Le contrôle de l’expérience est optimisé par Google Lighthouse, un outil open source de Google qui est activé dans tous les pipelines de production de Cloud Manager.
 
+>[!TIP]
+>
+>Vous configurez les pages incluses dans le contrôle de l’expérience lorsque vous [configurez votre pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+
 ## Comprendre les résultats de l’audit de l’expérience {#understanding-experience-audit-results}
 
 L’audit de l’expérience fournit des résultats de test au niveau de la page agrégés et détaillés via la [page d’exécution du pipeline de production.](/help/implementing/cloud-manager/deploy-code.md)
@@ -59,7 +63,6 @@ La mesure de modification peut avoir l’une des valeurs suivantes.
 * **N/A** : il n’y a pas de score précédent avec lequel effectuer la comparaison.
 
 ![Résultats de l’audit de l’expérience](/help/implementing/cloud-manager/assets/exp-audit-1.png)
-
 
 ### Scores au niveau de la page {#page-level-scores}
 
