@@ -3,7 +3,7 @@ title: Diffusion de ressources Dynamic Media
 description: Avec Dynamic Media, vous disposez de plusieurs options pour diffuser vos ressources Dynamic Media (vidéo et images) sur votre site web.
 contentOwner: Rick Brough
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '108'
 ht-degree: 100%
 
