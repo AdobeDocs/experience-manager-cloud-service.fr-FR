@@ -3,9 +3,9 @@ title: New Relic One
 description: Découvrez le service de surveillance des performances de l’application New Relic One (APM) pour AEM as a Cloud Service et comment y accéder.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
 source-git-commit: c265ce6f29dee1760049a8d296f00a3c2484fb77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1603'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -146,7 +146,7 @@ Si vous ne recevez pas d’e-mail de New Relic :
 
 Les restrictions suivantes s’appliquent à l’ajout d’utilisateurs à New Relic One :
 
-* 30 utilisateurs au maximum peuvent être ajoutés. Si le nombre maximal d’utilisateurs a été atteint, supprimez des utilisateurs afin de pouvoir en ajouter de nouveaux.
+* 30 utilisateurs ou utilisatrices au maximum peuvent être ajouté(e)s. Si le nombre maximal d’utilisateurs a été atteint, supprimez des utilisateurs afin de pouvoir en ajouter de nouveaux.
 * Les utilisateurs ajoutés à New Relic seront du type **Restreint**. Pour plus d’informations, consultez [la documentation de New Relic.](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service ne propose que la solution New Relic One APM et ne prend pas en charge les intégrations d’alertes, de journalisation ou d’API.
 
