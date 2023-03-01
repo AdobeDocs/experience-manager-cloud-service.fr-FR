@@ -12,9 +12,9 @@ hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
 source-git-commit: 803c4dc44189d58ddbd2669b00dd8107b2a926ae
-workflow-type: tm+mt
-source-wordcount: '3712'
-ht-degree: 99%
+workflow-type: ht
+source-wordcount: '3708'
+ht-degree: 100%
 
 ---
 
@@ -254,14 +254,14 @@ Après le chargement, il existe différentes manières de prévisualiser les ren
 ![Prévisualisation d’un rendu d’une ressource en fonction du paramètre d’image prédéfini Grande](/help/assets/dynamic-media/assets/dm-image-preset-with-url.png)
 _Prévisualisation d’un rendu d’une ressource en fonction du paramètre d’image prédéfini « Grand » sélectionné. Cliquez sur le bouton URL. Le chemin d’URL qui en résulte contient le nom du paramètre d’image prédéfini « Grand » et peut être utilisé dans une page web._
 
-L’URL ci-dessus est en ligne ! [Essayez](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target=&quot;_blank&quot;}.
+L’URL ci-dessus est en ligne ! [Faites un essai](http://s7d1.scene7.com/is/image/jpearldemo/AdobeStock_28563982?$Large$){target="_blank"}.
 
 Pour prévisualiser une ressource, une autre méthode consiste à sélectionner la ressource image, puis à sélectionner un paramètre prédéfini de _Visionneuses_ comme illustré ci-dessous.
 
 ![Prévisualisation d’une ressource en fonction du paramètre prédéfini « ZoomVertical_light » de la visionneuse](/help/assets/dynamic-media/assets/dm-viewer-preset.png)
 _Prévisualisation d’une ressource en fonction du paramètre prédéfini de visionneuse « ZoomVertical_light » sélectionné. Le pointeur de la souris (`+`) a été déplacé sur la montre pour effectuer un zoom avant. Remarquez les boutons URL et Incorporer._
 
-Le rendu ci-dessus est en ligne ! [Essayez](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target=&quot;_blank&quot;}.
+Le rendu ci-dessus est en ligne ! [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/ZoomVerticalViewer.html?asset=jpearldemo/AdobeStock_28563982&amp;config=jpearldemo/ZoomVertical_light){target="_blank"}.
 
 ## Facultatif - En savoir plus
 
