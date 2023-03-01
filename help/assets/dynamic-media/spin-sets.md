@@ -6,9 +6,9 @@ feature: Spin Sets
 role: User
 exl-id: ed470472-62d9-4684-971b-30df3919c180
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1927'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 Une visionneuse à 360° simule l’action consistant à faire pivoter un objet pour l’examiner. Les visionneuses à 360° permettent de voir des éléments depuis tous les angles, révélant les détails visuels clés depuis chaque angle.
 
-Une visionneuse à 360° simule une expérience de visionnage à 360°. Dynamic Media fournit des visionneuses à 360° à axe unique avec lesquelles les observateurs peuvent faire pivoter un élément. De plus, les utilisateurs peuvent effectuer un zoom et un panoramique &quot;en forme libre&quot; sur n’importe quelle vue en quelques clics de souris. Ainsi, les utilisateurs peuvent examiner un élément de plus près, depuis un point de vue spécifique.
+Une visionneuse à 360° simule une expérience de visionnage à 360°. Dynamic Media fournit des visionneuses à 360° à axe unique avec lesquelles les observateurs peuvent faire pivoter un élément. En outre, les utilisateurs et utilisatrices peuvent effectuer un zoom et un panoramique « libres » sur n’importe quelle vue en seulement quelques clics. Ainsi, les utilisateurs peuvent examiner un élément de plus près, depuis un point de vue spécifique.
 
 Les visionneuses à 360° sont désignées par une bannière contenant le mot **[!UICONTROL SPINSET]**. En outre, si la visionneuse à 360° est publiée, la date de publication, indiquée par l’icône représentant la **[!UICONTROL Terre]**, figure sur la bannière avec la date de la dernière modification, indiquée par l’icône représentant un **[!UICONTROL crayon]**.
 
