@@ -4,20 +4,20 @@ description: Le filtre Référent Adobe Experience Manager permet d’accéder �
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
 source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '277'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Filtre Référent {#referrer-filter}
 
-Le filtre Référent Adobe Experience Manager permet d’accéder à partir d’hôtes tiers.
+Le filtre de référent d’Adobe Experience Manager autorise l’accès à partir d’hôtes tiers.
 
-Une configuration OSGi pour le filtre de référent est nécessaire pour permettre l’accès au point de terminaison GraphQL pour les applications sans interface utilisateur via le POST HTTP. Lors de l’utilisation de AEM de requêtes persistantes sans affichage qui accèdent à AEM via un GET HTTP, aucune configuration de filtre de référent n’est nécessaire.
+Une configuration OSGi pour le filtre de référent est nécessaire pour autoriser l’accès au point d’entrée GraphQL pour les applications découplées via POST HTTP. Lors de l’utilisation de requêtes persistantes découplées AEM qui accèdent à AEM via GET HTTP, aucune configuration de filtre de référent n’est nécessaire.
 
 >[!WARNING]
-> AEM Referrer Filter n’est pas une usine de configuration OSGi, ce qui signifie qu’une seule configuration est principale sur un service AEM à la fois. Dans la mesure du possible, évitez d’ajouter des configurations de filtrage de référent personnalisées, car elles remplacent AEM configurations natives et peuvent interrompre la fonctionnalité du produit.
+> Le filtre de référent AEM n’est pas une configuration d’usine OSGi, ce qui signifie qu’une seule configuration à la fois est active sur un service AEM. Dans la mesure du possible, évitez d’ajouter des configurations de filtre de référent personnalisées, car elles remplacent les configurations natives AEM et peuvent altérer la fonctionnalité du produit.
 
 Pour ce faire, ajoutez une configuration OSGi appropriée pour le filtre Référent qui :
 
