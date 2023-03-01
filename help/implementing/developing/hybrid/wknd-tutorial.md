@@ -3,7 +3,7 @@ title: Projet SPA WKND
 description: Découvrez le développement d’applications sur une seule page (SPA) grâce à ce tutoriel en plusieurs parties. Vous serez guidé tout au long des opérations de configuration du projet, de mappage des composants, des outils de développement front-end et du routage d’applications pour mettre en œuvre vos propres SPA avec React et Angular.
 exl-id: 3e4445b7-6215-4126-aefa-bdba1ee1398d
 source-git-commit: 173f6cd2c07ddc3a3a343696b166af88bc2631ed
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '155'
 ht-degree: 100%
 
