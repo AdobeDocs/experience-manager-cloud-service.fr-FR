@@ -3,9 +3,9 @@ title: Présentation des fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1651'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -49,18 +49,18 @@ Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts su
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
-### Configuration de la génération de rendu par HTML {#configuring-html-rendition-generation}
+### Configurer la génération de rendu HTML {#configuring-html-rendition-generation}
 
-Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le pipeline est défini à l’adresse `/libs/experience-fragments/config/rewriter/experiencefragments`. Le transformateur de HTML prend en charge les options suivantes :
+Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le pipeline est défini au niveau du chemin `/libs/experience-fragments/config/rewriter/experiencefragments`. Le transformateur HTML prend en charge les options suivantes :
 
 * `allowedCssClasses`
    * Une expression RegEx correspondant aux classes CSS qui doivent être conservées dans le rendu final.
-   * Cela s’avère utile si le client souhaite supprimer certaines classes CSS spécifiques.
+   * Cela s’avère utile si le client ou la cliente souhaite supprimer certaines classes CSS spécifiques.
 * `allowedTags`
-   * Liste des balises de HTML à autoriser dans le rendu final.
-   * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h6, br, noscript, div, link et script
+   * Une liste des balises HTML autorisées dans le rendu final.
+   * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link et script.
 
-Il est recommandé de configurer le module de réécriture à l’aide d’une superposition. Voir [Recouvrements dans AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md)
+Il est recommandé de configurer le module Sling Rewriter à l’aide d’un recouvrement. Consultez la section [Recouvrements dans AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Modèles de fragments d’expérience {#templates-for-experience-fragments}
 
@@ -127,7 +127,7 @@ De tels groupes sont notamment utilisés pour incorporer du contenu dans des poi
 
 La fonction Exporter vers Target vous permet :
 
-* de créer un fragment d’expérience ,
+* de créer un fragment d’expérience,
 * d’y ajouter des composants ;
 * de l’exporter ensuite en tant qu’offre Adobe Target, au format HTML ou JSON.
 
