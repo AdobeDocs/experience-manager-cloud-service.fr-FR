@@ -4,7 +4,7 @@ description: Découvrez comment configurer des pipelines de production pour cré
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
 source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1520'
 ht-degree: 100%
 
