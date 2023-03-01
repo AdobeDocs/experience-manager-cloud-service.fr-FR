@@ -3,7 +3,7 @@ title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
 source-git-commit: 8f94d7ee3cfe436b5d41f2428b901ee1a5002993
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1498'
 ht-degree: 100%
 
