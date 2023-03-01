@@ -3,9 +3,9 @@ title: Création de programmes de production
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme de production afin d’héberger le trafic en direct.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '541'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -36,22 +36,22 @@ Pour créer un programme de production, procédez comme suit.
 
 1. Sélectionnez **Configuration pour la production** dans l’assistant de création de programme pour créer un programme de production.
 
-   1. Vous pouvez accepter le nom du programme par défaut ou le modifier.
-   1. Vous pouvez éventuellement faire glisser et déposer une miniature pour identifier votre programme.
+   1. Vous pouvez accepter le nom de programme par défaut ou le modifier.
+   1. Vous pouvez éventuellement faire glisser et déposer une image de miniature pour personnaliser votre programme.
    1. Cliquez ou appuyez sur **Continuer**.
 
    ![Créer un assistant de programme](assets/create-production-program.png)
 
-1. Si vous disposez de droits de sécurité améliorés, la variable **Sécurité renforcée** vous offre la possibilité de **Activation de la sécurité** pour votre programme de production. Si nécessaire, cochez l’option permettant d’activer une sécurité renforcée et appuyez ou cliquez sur . **Continuer**.
+1. Si vous disposez de droits de sécurité renforcée, accédez à l’onglet **Sécurité renforcée** pour **Activer la sécurité renforcée** pour votre programme de production. Cochez ensuite la case pour activer la sécurité renforcée, puis appuyez ou cliquez sur **Continuer**.
 
-   * La sécurité améliorée ne peut pas être activée ni désactivée après la création du programme.
-   * [En savoir plus](https://www.adobe.com/go/hipaa-ready) À propos de la mise en oeuvre de la solution prête pour l’HIPAA d’Adobe.
+   * La sécurité renforcée ne peut pas être activée ni désactivée après la création du programme.
+   * [En savoir plus](https://www.adobe.com/go/hipaa-ready) sur la mise en œuvre de la solution conforme à la norme HIPAA d’Adobe.
 
-   ![Option de sécurité améliorée](assets/create-production-program-enhanced.png)
+   ![Option de sécurité renforcée.](assets/create-production-program-enhanced.png)
 
 1. Dans l’onglet **Solutions et modules complémentaires**, sélectionnez les solutions à inclure dans le programme.
 
-   * Si vous avez sélectionné la variable **Activation de la sécurité** auparavant, vous ne pourrez sélectionner que le nombre de solutions pour lesquelles des droits HIPAA sont disponibles.
+   * Si vous avez coché la case **Activer la sécurité renforcée** à l’étape précédente, vous ne pourrez sélectionner que les solutions conformes à la norme HIPAA.
 
    ![Solutions sélectionnées](assets/setup-prod-select.png)
 
