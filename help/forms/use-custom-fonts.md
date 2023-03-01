@@ -2,8 +2,8 @@
 title: Utiliser des polices personnalisées
 description: Utiliser des polices personnalisées
 exl-id: 88214d36-fb97-4d46-a9fe-71dbc7826eb1
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
-workflow-type: ht
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
+workflow-type: tm+mt
 source-wordcount: '456'
 ht-degree: 100%
 
@@ -47,7 +47,6 @@ Pour ajouter des polices personnalisées à votre environnement Cloud Service 
        </configuration>
    </plugin>
    ```
-
 
 1. Ajoutez l’entrée de manifeste `<Font-Archive-Version>` au fichier .pom et définissez la valeur de la version sur 1 :
 

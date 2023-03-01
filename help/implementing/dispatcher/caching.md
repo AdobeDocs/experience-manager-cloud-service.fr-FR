@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: b0db2224e3dd7af01bf61fe29e8e24793ab33c5b
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2832'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -68,7 +68,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
       <LocationMatch "/content/secure/.*\.(html)$">.  // replace with the right regex
       Header unset Cache-Control
       Header unset Expires
-      Header always set Cache-Control “private”
+      Header always set Cache-Control "private"
      </LocationMatch>
    ```
 
@@ -82,7 +82,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 
-* Lors de l’utilisation de la structure de bibliothèque côté client AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, car toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique.  En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que vous puissiez découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache est défini sur non modifiable (immutable) ou 30 jours (30 days) pour les navigateurs plus anciens qui ne respectent pas la valeur non modifiable.
+* En utilisant le framework de bibliothèque côté client d’AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, puisque toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique.  En d’autres termes, du code HTML faisant référence aux bibliothèques clientes sera produit au besoin afin que vous puissiez découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache est défini sur non modifiable (immutable) ou 30 jours (30 days) pour les navigateurs plus anciens qui ne respectent pas la valeur non modifiable.
 * Voir la section [Bibliothèques côté client et cohérence des versions](#content-consistency) pour en savoir plus.
 
 ### Images et tout contenu suffisamment volumineux pour être stocké dans le stockage blob {#images}
@@ -119,7 +119,7 @@ Par défaut, le calque AEM ne met pas en cache le contenu blob.
 >[!NOTE]
 >Il est recommandé de modifier l’ancien comportement par défaut pour qu’il soit cohérent avec le nouveau comportement (identifiants de programme supérieurs à 65 000) en définissant la variable d’environnement Cloud Manager AEM_BLOB_ENABLE_CACHING_HEADERS sur true. Si le programme est déjà actif, vérifiez que le contenu se comporte comme prévu une fois les modifications appliquées.
 
-Actuellement, les images dans l’espace de stockage blob marquées comme privées ne peuvent pas être mises en cache dans le Dispatcher à l’aide de [Mise en cache sensible aux autorisations](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr). L’image est toujours demandée à l’origine de l’AEM et diffusée si l’utilisateur est autorisé.
+Actuellement, les images dans l’espace de stockage blob marquées comme privées ne peuvent pas être mises en cache dans le dispatcher à l’aide de l’option [Mise en cache sensible aux autorisations](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr). L’image est toujours demandée à l’origine d’AEM et diffusée si l’utilisateur est autorisé.
 
 >[!NOTE]
 >Les autres méthodes, y compris celle du [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne permettront pas de remplacer les valeurs.
@@ -220,10 +220,10 @@ En général, il n’est pas nécessaire d’invalider le cache du Dispatcher. V
 
 ### Invalidation du cache du Dispatcher pendant l’activation/la désactivation {#cache-activation-deactivation}
 
-Comme les versions précédentes d’AEM, la publication ou l’annulation de publication des pages efface le contenu du cache du Dispatcher. Si un problème de mise en cache est suspecté, vous devez republier les pages en question et vous assurer qu’un hôte virtuel correspondant à la variable `ServerAlias` localhost, qui est requis pour l’invalidation du cache de Dispatcher.
+Comme les versions précédentes d’AEM, la publication ou la dépublication des pages efface le contenu du cache du Dispatcher. Si un problème de mise en cache est suspecté, vous devez republier les pages en question et vous assurer qu’un hôte virtuel correspond à l’hôte local `ServerAlias`, ce qui est obligatoire pour l’invalidation du cache du Dispatcher.
 
 >[!NOTE]
->Pour une invalidation Dispatcher correcte, assurez-vous que les requêtes de &quot;127.0.0.1&quot;, &quot;localhost&quot;, &quot;.local&quot;, &quot;.adobeaemcloud.com&quot; et &quot;.adobeaemcloud.net&quot; sont toutes mises en correspondance et gérées par une configuration vhost afin que cette requête puisse être traitée. Pour ce faire, vous pouvez faire l’une ou l’autre des correspondances globales &quot;*&quot; dans une configuration vhost fourre-tout en suivant le modèle de la référence. [AEM archetype](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) ou en s’assurant que la liste mentionnée précédemment est capturée par l’un des hôtes virtuels.
+>Pour une invalidation correcte du Dispatcher, assurez-vous que les requêtes de « 127.0.0.1 », « localhost », « .local », « .adobeaemcloud.com », et « .adobeaemcloud.net » sont toutes mises en correspondance et gérées par une configuration vhost afin que cette requête puisse être traitée. Pour ce faire, vous pouvez soit effectuer une correspondance globale « * » dans une configuration vhost fourre-tout en suivant le modèle de la référence [archétype AEM](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/dispatcher.cloud/src/conf.d/available_vhosts/default.vhost) soit vous assurer que la liste mentionnée précédemment est capturée par l’un des hôtes virtuels.
 
 Lorsque l’instance de publication reçoit une nouvelle version d’une page ou d’une ressource de l’auteur(e), elle utilise l’agent de vidage pour invalider les chemins d’accès appropriés sur son Dispatcher. Le chemin d’accès mis à jour est supprimé du cache du Dispatcher, ainsi que ses parents, jusqu’à un certain niveau (que vous pouvez configurer à l’aide de [statfileslevel](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#invalidating-files-by-folder-level)).
 
@@ -421,7 +421,7 @@ ReplicationOptions options = new ReplicationOptions();
 options.setSynchronous(true);
 options.setFilter( new AgentFilter {
   public boolean isIncluded (Agent agent) {
-   return agent.getId().equals(“flush”);
+   return agent.getId().equals("flush");
   }
 });
 

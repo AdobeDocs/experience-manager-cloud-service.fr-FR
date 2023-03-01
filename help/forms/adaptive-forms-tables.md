@@ -5,14 +5,14 @@ description: Le composant Tableau d’AEM Forms permet de créer des tableaux da
 seo-description: The Table component in AEM Forms lets you create tables in adaptive forms that are responsive to mobile layouts, and also allows using XDP table components.
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
-source-git-commit: c9cfaff7f155dc85b2f2ee4e2851e3eb59f5871d
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2418'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Tableaux dans un formulaire adaptatif {#tables-in-adaptive-forms}
+# Tableaux dans le formulaire adaptatif {#tables-in-adaptive-forms}
 
 L’utilisation des tableaux est un moyen efficace, simplifié et organisé de présenter des données complexes. Cela permet aux utilisateurs d’identifier facilement les informations et leur fournit des données organisées sous forme de lignes et de colonnes. La plupart des formulaires des services financiers et des agences gouvernementales requièrent des tableaux de données volumineux pour saisir des données numériques et effectuer des calculs.
 
@@ -52,12 +52,13 @@ Vous pouvez ajouter et supprimer une ligne ou une colonne, ou encore déplacer u
 
 #### Ajouter, supprimer ou déplacer une ligne
 
-Pour ajouter, supprimer ou déplacer une rangée, cliquez sur une cellule de la rangée. ouvrir l’explorateur de contenu ![Explorateur de contenu](/help/forms/assets/Smock_Layers_18_N.svg) et sélectionnez la rangée correspondante, elle surligne la rangée sélectionnée avec l’option de barre d’outils à partir de laquelle vous pouvez ajouter, supprimer ou déplacer la rangée vers le haut ou vers le bas.
-* Le **[!UICONTROL Déplacer vers le haut]** et **[!UICONTROL Déplacer vers le bas]** déplace la ligne sélectionnée vers le haut et vers le bas.
+Pour ajouter, supprimer ou déplacer une ligne, cliquez sur une cellule de la ligne. ouvrez l’explorateur de contenu ![Explorateur de contenu](/help/forms/assets/Smock_Layers_18_N.svg) et sélectionnez la ligne correspondante, elle surligne la ligne sélectionnée avec l’option de barre d’outils à partir de laquelle vous pouvez ajouter, supprimer ou déplacer la ligne vers le haut ou vers le bas.
 
-* Le **[!UICONTROL Ajouter une colonne]** ajoute une ligne au-dessous de la ligne sélectionnée.
+* Les opérations **[!UICONTROL Déplacer vers le haut]** et **[!UICONTROL Déplacer vers le bas]** permettent de déplacer la ligne sélectionnée vers le haut et vers le bas.
 
-* Le **[!UICONTROL Supprimer la colonne]** supprime la ligne sélectionnée.
+* L’opération **[!UICONTROL Ajouter une colonne]** ajoute une ligne au-dessous de la ligne sélectionnée.
+
+* L’opération **[!UICONTROL Supprimer une colonne]** supprime la ligne sélectionnée.
 
 ![add-delete-move-row-column](assets/add-delete-move-row.png)
 
@@ -67,7 +68,7 @@ Double-cliquez sur la ligne pour configurer les propriétés d’une ligne, tell
 
 #### Ajouter ou supprimer une colonne
 
-Pour ajouter ou supprimer une colonne, cliquez sur la cellule de texte dans la section d’en-tête. Une barre d’outils s’ouvre avec les options d’ajout ou de suppression d’une colonne :
+Pour ajouter ou supprimer une colonne, cliquez sur la cellule de texte dans la section d’en-tête. Une barre d’outils s’ouvre avec les options d’ajout ou de suppression d’une colonne :
 
 ![add-delete-move-row-column](assets/add-delet-column.png)
 
@@ -120,7 +121,7 @@ Pour définir la largeur des colonnes d’un tableau, procédez comme suit :
 
 1. Dans l’onglet **[!UICONTROL Contenu]**, appuyez sur la touche **[!UICONTROL Tableau]** et appuyez sur l’icône Configure (![Configurer](assets/configure-icon.svg)).
 
-1. Entrez la liste des valeurs séparées par des virgules dans la variable **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, en spécifiant 2, 4, 6 comme valeurs dans le champ **[!UICONTROL Largeur de colonne]**, la largeur des colonnes est définie sur 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième. 2/12 comme largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
+1. Saisissez la liste des valeurs séparées par des virgules dans le champ **[!UICONTROL Largeur de colonne]** pour spécifier la largeur proportionnelle de chaque colonne du tableau. Par exemple, pour un tableau qui comprend 3 colonnes, en spécifiant 2, 4, 6 comme valeurs dans le champ **[!UICONTROL Largeur de colonne]**, la largeur des colonnes est définie sur 2/12 pour la première colonne, 4/12 pour la deuxième colonne et 6/12 pour la troisième. 2/12 comme largeur de la première colonne fait référence à un sixième de la largeur du tableau. De même, 4/12 définit la largeur de la deuxième colonne sur un tiers de celle du tableau et 6/12 définit la largeur de la troisième colonne sur la moitié de celle du tableau.
 
 ## Configuration du style de tableau {#configure}
 
@@ -135,7 +136,7 @@ Vous pouvez afficher les propriétés de style dans la barre latérale.
 
 >[!NOTE]
 >
->Vous pouvez modifier le thème de couleur de l’en-tête et des rangées de contenu en modifiant les valeurs de [Variables LESS](https://lesscss.org//). Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/themes.md).
+>Vous pouvez modifier le thème de couleur de l’en-tête et des rangées du corps en modifiant les valeurs des [variables LESS](https://lesscss.org//). Pour plus d’informations, voir [Thèmes dans AEM Forms](/help/forms/themes.md).
 
 ## Ajout ou suppression dynamique d’une ligne {#add-or-delete-a-row-dynamically}
 
@@ -145,7 +146,7 @@ Les tableaux fournissent une assistance prête à l’emploi pour l’ajout ou l
 1. Dans l’onglet Paramètres de répétition, spécifiez les valeurs minimale et maximale pour limiter le nombre de lignes du tableau.
 1. Cliquez sur **Terminé**.
 
-Au moment de l’exécution ou de l’aperçu, vous verrez **+** et ![Bouton Supprimer](/help/forms/assets/Smock_Delete.svg) pour ajouter ou supprimer une rangée.
+Lors de l’exécution ou de la prévisualisation, vous verrez les boutons **+** et ![Bouton de suppression](/help/forms/assets/Smock_Delete.svg) pour ajouter ou supprimer une rangée.
 
 ![ajout-suppression-dynamique-de lignes](assets/add-delete-layout.png)
 
@@ -215,7 +216,7 @@ Colonne développée d’un tableau sur un appareil mobile
 
 Les tableaux des formulaires adaptatifs permettent de renseigner le tableau lors de l’exécution avec des données provenant d’un fichier XML. Le fichier XML de données peut résider dans le système de fichiers local de l’ordinateur sur lequel le serveur AEM Forms est exécuté ou dans le référentiel CRX.
 
-Prenons l’exemple du tableau récapitulatif des transactions bancaires suivant que nous voulons renseigner avec des données provenant d’un fichier XML.
+Prenons l’exemple du tableau récapitulatif de transactions bancaires suivant, que nous voulons renseigner avec des données provenant d’un fichier XML.
 
 ![data-merge-table](assets/data-merge-table.png)
 

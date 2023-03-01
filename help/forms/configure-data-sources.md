@@ -5,7 +5,7 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: e353fd386d2dfbc39c76a0ab56b50c44f3c54afc
+source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
 workflow-type: tm+mt
 source-wordcount: '2139'
 ht-degree: 86%
@@ -281,8 +281,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
 
    >[!NOTE]
-   >
-   >Vous devez sélectionner le type d’authentification OAuth 2.0 pour vous connecter aux services [!DNL Microsoft® Dynamics] à l’aide du point d’entrée OData en tant que racine du service.
+   Vous devez sélectionner le type d’authentification OAuth 2.0 pour vous connecter aux services [!DNL Microsoft® Dynamics] à l’aide du point d’entrée OData en tant que racine du service.
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration de cloud pour le service OData.
 
