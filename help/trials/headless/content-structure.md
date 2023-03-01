@@ -1,62 +1,62 @@
 ---
-title: Création de la structure de contenu pour votre application
-description: Découvrez comment créer la structure qui sert de base à tout votre contenu headless à l’aide des modèles de fragment de contenu AEM.
+title: Créer la structure de contenu pour votre application
+description: Découvrez comment créer la structure qui sert de base à tout votre contenu découplé à l’aide des modèles de fragment de contenu AEM.
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 741fadcffc496cb1c32d1943f7759e8d70cf92ff
+source-git-commit: fa36470e50abdf6dd019a91665945ff6e68e40c2
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 2%
+ht-degree: 93%
 
 ---
 
 
-# Création de la structure de contenu pour votre application {#content-structure}
+# Créer la structure de contenu pour votre application {#content-structure}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Créer la structure de contenu pour votre application"
->abstract="Lorsque vous suivez cette série de guides interactifs, vous apprenez à créer une structure (appelée modèle de fragment de contenu) qui sert de base à votre contenu sans interface."
+>abstract="Avec notre série de guides interactifs, vous apprendrez à créer une structure (également appelée modèle de fragment de contenu) qui sert de base à tout votre contenu découplé."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
->title="Lancement de la console de modèles"
->abstract="Découvrez comment créer un schéma réutilisable, appelé modèle de fragment de contenu, pour votre contenu dans Adobe Experience Manager as a Cloud Service. Regardez la vidéo pour comprendre pourquoi il s’agit d’une étape importante. <br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
->additional-url="https://video.tv.adobe.com/v/3413261/?captions=fre_fr" text="Vidéo d&#39;introduction Structure de contenu"
+>title="Lancer la console de modèles"
+>abstract="Découvrez comment créer un schéma réutilisable, appelé modèle de fragment de contenu, pour votre contenu dans Adobe Experience Manager as a Cloud Service. Regardez la vidéo pour comprendre l’importance de cette étape. <br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
+>additional-url="https://video.tv.adobe.com/v/3413261/?captions=fre_fr" text="Vidéo d’introduction à la structure de contenu"
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide_footer"
->title="Félicitations ! Vous avez appris à créer un modèle de fragment de contenu pour représenter la structure de vos données sans interface utilisateur et vous avez fait la première étape de la diffusion de contenu omnicanal à l’échelle et de manière standard."
+>title="Félicitations ! Vous avez appris à créer un modèle de fragment de contenu pour représenter la structure de vos données découplées et vous avez réalisé la première étape de la diffusion de contenu omnicanal à l’échelle et de manière standard."
 >abstract=""
 
-## Création d’un modèle {#create-model}
+## Créer un modèle {#create-model}
 
-La console Modèles de fragments de contenu s’ouvre dans un nouvel onglet. Considérez la console de modèle de fragment de contenu comme votre bibliothèque de modèles, dans laquelle vous créez de nouveaux modèles et gérez les modèles existants.
+La console de modèle de fragment de contenu s’ouvre dans un nouvel onglet. Considérez la console de modèle de fragment de contenu comme votre bibliothèque de modèles, dans laquelle vous créez de nouveaux modèles et gérez les modèles existants.
 
 1. Cliquez sur le bouton **Créer** en haut à droite de l’écran pour commencer à créer un modèle de fragment de contenu.
 
-1. L’assistant Créer un modèle démarre et vous guide. Fournissez les informations obligatoires.
+1. L’assistant de création de modèles démarre et vous guide. Fournissez les informations requises.
 
-   * **Titre du modèle** - Il s’agit d’une brève description du modèle et indique généralement l’objectif du modèle.
-   * **Activer le modèle** - Cette option est cochée par défaut et doit être cochée pour pouvoir créer des fragments de contenu en fonction de ce modèle.
+   * **Titre du modèle** : il s’agit d’une brève description du modèle qui indique généralement l’objectif du modèle.
+   * **Activer le modèle** : cette option est activée par défaut et doit être cochée pour pouvoir créer des fragments de contenu basés sur ce modèle.
 
-1. Une fois les champs obligatoires renseignés, cliquez sur **Créer** en haut à gauche pour créer le modèle.
+1. Une fois les champs obligatoires remplis, cliquez sur **Créer** en haut à gauche pour créer le modèle.
 
-1. Le **Succès** confirme la création du modèle. Cliquez sur **Ouvrir** dans la boîte de dialogue pour ouvrir votre nouveau modèle de fragment de contenu dans l’éditeur d’un nouvel onglet. Passez ensuite à l’étape suivante pour ajouter des champs de données à votre modèle.
+1. La boîte de dialogue **Succès** confirme la création du modèle. Cliquez sur **Ouvrir** dans la boîte de dialogue pour ouvrir votre nouveau modèle de fragment de contenu dans l’éditeur, dans un nouvel onglet. Passez ensuite à l’étape suivante qui consiste à ajouter des champs de données à votre modèle.
 
-![Étapes deux et trois de la création d’un modèle de fragment de contenu](assets/do-not-localize/create-model-2-3.png)
+![Étapes 2 et 3 de la création d’un modèle de fragment de contenu.](assets/do-not-localize/create-model-2-3.png)
 
 ## Ajouter des champs au modèle {#configure-model}
 
-Avant de pouvoir utiliser votre modèle, vous devez définir la structure de ses données. L’éditeur de modèle de fragment de contenu vous permet de configurer les types de données et les propriétés qui définissent le contenu de votre modèle.
+Avant de pouvoir utiliser votre modèle, vous devez définir la structure de ses données. L’éditeur de modèles de fragments de contenu vous permet de configurer les types de données et les propriétés qui définissent le contenu de votre modèle.
 
-1. Faites glisser un champ depuis le **Types de données** à droite de l’éditeur et déposez-le sur votre modèle de fragment de contenu.
+1. Faites glisser un champ depuis le panneau **Types de données** à droite de l’éditeur et déposez-le sur votre modèle de fragment de contenu.
 
-1. Une fois un type de données placé, la variable **Types de données** remplacée automatiquement par **Propriétés** vous permettant de définir les détails du type de données que vous venez de placer.
+1. Une fois un type de données placé, la colonne **Types de données** est automatiquement remplacée par l’onglet **Propriétés** vous permettant de définir les détails du type de données que vous venez de placer.
 
 1. Une fois que vous avez ajouté tous les champs nécessaires au modèle de fragment de contenu, cliquez sur **Enregistrer** en haut à droite de la fenêtre.
 
 1. Le modèle est enregistré et vous revenez à la console du modèle de fragment de contenu.
 
-![Étapes 1, 2 et 3 de l’ajout de champs au modèle](assets/do-not-localize/define-model-fields-1-2-3.png)
+![Étapes 1, 2 et 3 de l’ajout de champs au modèle.](assets/do-not-localize/define-model-fields-1-2-3.png)
