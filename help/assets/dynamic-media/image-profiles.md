@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 feature: Asset Management,Image Profiles,Renditions
 role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
+source-git-commit: 59392c3a3dd7481d63ed0a79a018a4d6878011ed
 workflow-type: tm+mt
-source-wordcount: '3488'
+source-wordcount: '3490'
 ht-degree: 99%
 
 ---
@@ -57,9 +57,9 @@ L’accentuation est décrite dans [Accentuation des images](/help/assets/dynami
 
 Lorsque vous implémentez le recadrage intelligent sur les images, Adobe recommande les bonnes pratiques suivantes et applique la limite ci-dessous :
 
-| Type de limite | Bonne pratique | Limite imposée |
+| Ressource - Type de limite | Bonne pratique | Limite imposée |
 | --- | --- | --- |
-| Nombre de recadrages intelligents par image | 5 | 100 |
+| **Image** - Nombre de recadrages intelligents par image | 5 | 100 |
 
 Consultez également la section [limites de Dynamic Media](/help/assets/dynamic-media/limitations.md).
 
