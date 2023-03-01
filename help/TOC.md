@@ -8,10 +8,10 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: da53f453b0f2def98d92aae0e3e92d13eb748dab
+source-git-commit: 4416c43b408f576a547590796141a6b551e25681
 workflow-type: tm+mt
-source-wordcount: '3946'
-ht-degree: 94%
+source-wordcount: '3952'
+ht-degree: 95%
 
 ---
 
@@ -125,7 +125,7 @@ ht-degree: 94%
          + [Notes de mise à jour de la version 2021.12.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-12-0.md)
          + [Notes de mise à jour de la version 2021.11.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-11-0.md)
          + [Notes de mise à jour de la version 2021.10.0](/help/journey-migration/release-notes/release-notes-migration-tools-2021-10-0.md)
-   + Notes de mise à jour de Workfront pour le connecteur amélioré Experience Manager{#workfront}
+   + Notes de mise à jour de Workfront pour le connecteur amélioré Experience Manager {#workfront}
       + [Notes de mise à jour actuelles de Workfront pour le connecteur amélioré Experience Manager](/help/assets/release-notes-enhanced-connector-workfront.md)
    + [Nouveautés](/help/release-notes/what-is-new.md)
    + [Changements notables dans AEM Cloud Service](/help/release-notes/aem-cloud-changes.md)
@@ -165,12 +165,12 @@ ht-degree: 94%
       + [Présentation de Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [Équipe et profils de produits AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
       + [Groupes d’utilisateurs de notifications](/help/journey-onboarding/user-groups.md)
-+ Essais d’AEMaaCS {#trials}
-   + Essais sans tête {#headless}
-      + [Personnalisation du contenu d’un exemple d’application React](/help/trials/headless/customize-app.md)
-      + [Création de la structure de contenu pour votre application](/help/trials/headless/content-structure.md)
-      + [Créer du contenu sans affichage](/help/trials/headless/create-content.md)
-      + [Extraction de contenu via l’API GraphQL](/help/trials/headless/extract-content.md)
++ Essais AEMaaCS {#trials}
+   + Essais découplés {#headless}
+      + [Personnaliser du contenu dans un exemple d’application React](/help/trials/headless/customize-app.md)
+      + [Créer la structure de contenu pour votre application](/help/trials/headless/content-structure.md)
+      + [Créer du contenu découplé](/help/trials/headless/create-content.md)
+      + [Extraire du contenu grâce à l’API GraphQL](/help/trials/headless/extract-content.md)
 + Parcours de migration d’AEM as a Cloud Service {#migration-journey}
    + [Prise en main du déplacement d’AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Phase de préparation](/help/journey-migration/readiness.md)
@@ -509,9 +509,8 @@ ht-degree: 94%
    + Configuration et migration {#setup-configure-migrate}
       + [Intégration d’un environnement Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configuration d’un environnement de développement local](/help/forms/setup-local-development-environment.md)
-      + [Installation et configuration de Forms Designer](/help/forms/installing-configuring-designer.md)
       + [Configurer le connecteur de stockage unifié](/help/forms/configure-unified-storage-connector.md)
-      + [Migration vers [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Migration depuis [!DNL AEM 6.5 Forms] ou antérieur à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
       + [Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources](/help/forms/import-export-forms-templates.md)
    + Intégration {#integrate}
@@ -548,13 +547,12 @@ ht-degree: 94%
             + [Création d’un thème](/help/forms/themes.md)
             + [Ressources de référence](/help/forms/reference-assets.md)
             + [Création d’un schéma JSON pour un formulaire adaptatif](/help/forms/adaptive-form-json-schema-form-model.md)
-            + [Utilisation de Forms Designer](/help/forms/use-forms-designer.md)
             + [Amélioration des performances des formulaires volumineux avec le chargement différé](/help/forms/lazy-loading-adaptive-forms.md)
          + Ajout de composants à un formulaire adaptatif {#add-components-to-an-adaptive-form}
             + [Utilisation de CAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms.md)
             + [Utiliser des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
             + [Appliquer la signature tactile](/help/forms/signing-forms-using-scribble.md)
-            + [Ajout d’un tableau à un formulaire adaptatif](/help/forms/adaptive-forms-tables.md)
+            + [Ajouter un tableau à un formulaire adaptatif](/help/forms/adaptive-forms-tables.md)
             + [Ajout de la prise en charge des notes de bas de page à un formulaire adaptatif](/help/forms/footnotes-richtextsupport.md)
          + Configuration de la disposition et application d’un style à un formulaire adaptatif {#configure-layout-of-an-adaptive-form}
             + [Définition de la disposition d’un formulaire adaptatif](/help/forms/layout-capabilities-adaptive-forms.md)
@@ -588,6 +586,8 @@ ht-degree: 94%
       + [Présentation des API de communication](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [API Communications – Traitement synchrone](/help/forms/aem-forms-cloud-service-communications.md)
       + [API Communications – Traitement par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
+      + [Installation et configuration de Forms Designer](/help/forms/installing-configuring-designer.md)
+      + [Utilisation de Forms Designer pour créer des modèles](/help/forms/use-forms-designer.md)
       + [Utilisation des polices personnalisées dans les documents PDF](/help/forms/use-custom-fonts.md)
       + [Problèmes connus, bonnes pratiques et questions fréquemment posées](/help/forms/communications-known-issues-limitations.md)
    + Référence de l’API du développeur {#aem-forms-developer-api-reference}
@@ -685,7 +685,7 @@ ht-degree: 94%
       + [Console Fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=fr)
       + [Modèles de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-models.html?lang=fr)
       + [Gestion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-managing.html?lang=fr)
-      + Création{#authoring}
+      + Création {#authoring}
          + [Création](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-variations.html?lang=fr)
          + [Éditeur de texte](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-markdown.html?lang=fr)
          + [Contenu associé](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-assoc-content.html?lang=fr)
@@ -806,7 +806,7 @@ ht-degree: 94%
       + [Structure de projet AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md)
       + [Package de structure du référentiel de projet AEM](/help/implementing/developing/introduction/repository-structure-package.md)
       + [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
-      + [AEM Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md)
+      + [Environnements de développement rapide AEM](/help/implementing/developing/introduction/rapid-development-environments.md)
       + [Conseils de développement pour AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md)
       + [Journalisation](/help/implementing/developing/introduction/logging.md)
       + [Configurations et l’explorateur de configurations](/help/implementing/developing/introduction/configurations.md)
