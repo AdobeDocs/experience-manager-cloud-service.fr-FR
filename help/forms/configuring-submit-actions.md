@@ -2,9 +2,9 @@
 title: Configuration d’une action Envoyer pour un formulaire adaptatif
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 6a124b476b4dd18ea38d35438866a07958918461
+source-git-commit: 7a608304dc93e53815b488de4087f26e346be4b5
 workflow-type: tm+mt
-source-wordcount: '3131'
+source-wordcount: '3133'
 ht-degree: 60%
 
 ---
@@ -165,31 +165,31 @@ Avant d’utiliser l’action Envoyer **[!UICONTROL Appeler un processus AEM]**,
 
 ## Envoyer à SharePoint {#submit-to-sharedrive}
 
-Le **[!UICONTROL Envoyer à SharePoint]** L’action Envoyer connecte un formulaire adaptatif à un stockage SharePoint Microsoft. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft SharePoint connecté. Pour utiliser la variable **[!UICONTROL Envoyer à SharePoint]** Action d’envoi dans un formulaire adaptatif :
+Le **[!UICONTROL Envoyer à SharePoint]** L’action Envoyer connecte un formulaire adaptatif à un stockage SharePoint Microsoft®. Vous pouvez envoyer le fichier de données de formulaire, les pièces jointes ou le document d’enregistrement au stockage Microsoft® SharePoint connecté. Pour utiliser la variable **[!UICONTROL Envoyer à SharePoint]** Action d’envoi dans un formulaire adaptatif :
 
-1. [Création d’une configuration SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): Il connecte AEM Forms à votre stockage Microsoft SharePoint.
-2. [Utilisation de l’action d’envoi Envoyer à SharePoint dans un formulaire adaptatif](#use-sharepoint-configuartion-in-af): Il connecte votre formulaire adaptatif au SharePoint Microsoft configuré.
+1. [Création d’une configuration SharePoint](#create-a-sharepoint-configuration-create-sharepoint-configuration): Il connecte AEM Forms à votre stockage Microsoft® SharePoint.
+2. [Utilisation de l’action d’envoi Envoyer à SharePoint dans un formulaire adaptatif](#use-sharepoint-configuartion-in-af): Il connecte votre formulaire adaptatif à Microsoft® SharePoint configuré.
 
 ### Création d’une configuration SharePoint {#create-sharepoint-configuration}
 
-Pour connecter AEM Forms à votre stockage Microsoft SharePoint :
+Pour connecter AEM Forms à votre stockage Microsoft® SharePoint :
 
-1. Accédez à **Auteur AEM Forms** instance > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft SharePoint]**.
-1. Une fois que vous avez sélectionné le **[!UICONTROL Microsoft SharePoint]**, vous êtes redirigé vers **[!UICONTROL Explorateur SharePoint]**.
+1. Accédez à **Auteur AEM Forms** instance > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® SharePoint]**.
+1. Une fois que vous avez sélectionné le **[!UICONTROL Microsoft® SharePoint]**, vous êtes redirigé vers **[!UICONTROL Explorateur SharePoint]**.
 1. Sélectionnez une **Conteneur de configuration**. La configuration est stockée dans le conteneur de configuration sélectionné.
 1. Cliquez sur **[!UICONTROL Créer]**. L’assistant de configuration SharePoint s’affiche.
    ![Configuration de SharePoint](/help/forms/assets/sharepoint_configuration.png)
-1. Spécifiez la variable **[!UICONTROL Titre]**, **[!UICONTROL ID client]**, **[!UICONTROL Secret du client]** et **[!UICONTROL URL OAuth]**. Pour plus d’informations sur la manière de récupérer l’identifiant du client, le secret client, l’identifiant du client pour l’URL OAuth, voir [Documentation Microsoft](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * Vous pouvez récupérer la variable `Client ID` et `Client Secret` de votre application à partir du portail Microsoft Azure.
-   * Sur le portail Microsoft Azure, ajoutez l’URI de redirection en tant que `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Remplacer `[author-instance]` avec l’URL de votre instance d’auteur.
+1. Spécifiez la variable **[!UICONTROL Titre]**, **[!UICONTROL ID client]**, **[!UICONTROL Secret du client]** et **[!UICONTROL URL OAuth]**. Pour plus d’informations sur la manière de récupérer l’identifiant du client, le secret client, l’identifiant du client pour l’URL OAuth, voir [Documentation Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * Vous pouvez récupérer la variable `Client ID` et `Client Secret` de votre application à partir du portail Microsoft® Azure.
+   * Sur le portail Azure Microsoft®, ajoutez l’URI de redirection en tant que `https://[author-instance]/libs/cq/sharepoint/content/configurations/wizard.html`. Remplacer `[author-instance]` avec l’URL de votre instance d’auteur.
    * Ajout des autorisations d’API `offline_access` et `Sites.Manage.All` pour fournir des autorisations de lecture/écriture.
-   * Utilisez l’URL OAuth : `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Remplacer `<tenant-id>` avec le `tenant-id` de votre application à partir du portail Microsoft Azure.
+   * Utilisez l’URL OAuth : `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Remplacer `<tenant-id>` avec le `tenant-id` de votre application à partir du portail Microsoft® Azure.
 
    >[!NOTE]
    >
    > Le **secret client** est obligatoire ou facultatif. Dépend de la configuration de votre application Azure Principale Directory. Si votre application est configurée pour utiliser un secret client, il est obligatoire de fournir le secret client.
 
-1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, la variable `Connection Successful` s’affiche.
+1. Cliquez sur **[!UICONTROL Connecter]**. Une fois la connexion établie, la variable `Connection Successful` s’affiche.
 
 1. Maintenant, sélectionnez **Site SharePoint** > **Bibliothèque de documents** > **Dossier SharePoint**, pour enregistrer les données.
 
@@ -217,38 +217,38 @@ Vous pouvez utiliser la configuration SharePoint créée dans un formulaire adap
 1. Sélectionnez la **[!UICONTROL Configuration de stockage]**, où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les paramètres d’envoi.
 
-Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage Microsoft SharePoint spécifié.
+Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage Microsoft® SharePoint spécifié.
 La structure du dossier pour l’enregistrement des données est `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## Envoyer à OneDrive {#submit-to-onedrive}
 
-Le **[!UICONTROL Envoyer à OneDrive]** L’action Envoyer connecte un formulaire adaptatif à un lecteur Microsoft One. Vous pouvez envoyer les données de formulaire, le fichier, les pièces jointes ou le document d’enregistrement au stockage Microsoft OneDrive connecté. Pour utiliser la variable [!UICONTROL Envoyer à OneDrive] Action d’envoi dans un formulaire adaptatif :
+Le **[!UICONTROL Envoyer à OneDrive]** L’action Envoyer connecte un formulaire adaptatif à un Microsoft® OneDrive. Vous pouvez envoyer les données de formulaire, le fichier, les pièces jointes ou le document d’enregistrement au Microsoft® OneDrive Storage connecté. Pour utiliser la variable [!UICONTROL Envoyer à OneDrive] Action d’envoi dans un formulaire adaptatif :
 
-1. [Création d’une configuration OneDrive](#create-a-onedrive-configuration-create-onedrive-configuration): Il connecte AEM Forms à votre espace de stockage Microsoft OneDrive.
-2. [Utilisation de l’action d’envoi Envoyer à OneDrive dans un formulaire adaptatif](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Il connecte votre formulaire adaptatif à Microsoft OneDrive configuré.
+1. [Création d’une configuration OneDrive](#create-a-onedrive-configuration-create-onedrive-configuration): Il connecte AEM Forms à votre stockage Microsoft® OneDrive.
+2. [Utilisation de l’action d’envoi Envoyer à OneDrive dans un formulaire adaptatif](#use-onedrive-configuration-in-an-adaptive-form-use-onedrive-configuartion-in-af): Il connecte votre formulaire adaptatif à Microsoft® OneDrive configuré.
 
 ### Création d’une configuration OneDrive {#create-onedrice-configuration}
 
-Pour connecter AEM Forms à votre stockage Microsoft OneDrive :
+Pour connecter AEM Forms à votre stockage Microsoft® OneDrive :
 
-1. Accédez à **Auteur AEM Forms** instance > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft OneDrive]**.
-1. Une fois que vous avez sélectionné le **[!UICONTROL Microsoft OneDrive]**, vous êtes redirigé vers **[!UICONTROL Navigateur OneDrive]**.
+1. Accédez à **Auteur AEM Forms** instance > **[!UICONTROL Outils]** > **[!UICONTROL Cloud Services]** >  **[!UICONTROL Microsoft® OneDrive]**.
+1. Une fois que vous avez sélectionné le **[!UICONTROL Microsoft® OneDrive]**, vous êtes redirigé vers **[!UICONTROL Navigateur OneDrive]**.
 1. Sélectionnez une **Conteneur de configuration**. La configuration est stockée dans le conteneur de configuration sélectionné.
 1. Cliquez sur **[!UICONTROL Créer]**. L’assistant de configuration OneDrive s’affiche.
 
    ![Écran de configuration OneDrive](/help/forms/assets/onedrive-configuration.png)
 
-1. Spécifiez la variable **[!UICONTROL Titre]**, **[!UICONTROL ID client]**, **[!UICONTROL Secret du client]** et **[!UICONTROL URL OAuth]**. Pour plus d’informations sur la manière de récupérer l’identifiant du client, le secret client, l’identifiant du client pour l’URL OAuth, voir [Documentation Microsoft](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
-   * Vous pouvez récupérer la variable `Client ID` et `Client Secret` de votre application à partir du portail Microsoft Azure.
-   * Sur le portail Microsoft Azure, ajoutez l’URI de redirection en tant que `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Remplacer `[author-instance]` avec l’URL de votre instance d’auteur.
+1. Spécifiez la variable **[!UICONTROL Titre]**, **[!UICONTROL ID client]**, **[!UICONTROL Secret du client]** et **[!UICONTROL URL OAuth]**. Pour plus d’informations sur la manière de récupérer l’identifiant du client, le secret client, l’identifiant du client pour l’URL OAuth, voir [Documentation Microsoft®](https://learn.microsoft.com/en-us/graph/auth-register-app-v2).
+   * Vous pouvez récupérer la variable `Client ID` et `Client Secret` de votre application à partir du portail Microsoft® Azure.
+   * Sur le portail Azure Microsoft®, ajoutez l’URI de redirection en tant que `https://[author-instance]/libs/cq/onedrive/content/configurations/wizard.html`. Remplacer `[author-instance]` avec l’URL de votre instance d’auteur.
    * Ajout des autorisations d’API `offline_access` et `Files.ReadWrite.All` pour fournir des autorisations de lecture/écriture.
-   * Utilisez l’URL OAuth : `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Remplacer `<tenant-id>` avec le `tenant-id` de votre application à partir du portail Microsoft Azure.
+   * Utilisez l’URL OAuth : `https://login.microsoftonline.com/tenant-id/oauth2/v2.0/authorize`. Remplacer `<tenant-id>` avec le `tenant-id` de votre application à partir du portail Microsoft® Azure.
 
    >[!NOTE]
    >
    > Le **secret client** est obligatoire ou facultatif. Dépend de la configuration de votre application Azure Principale Directory. Si votre application est configurée pour utiliser un secret client, il est obligatoire de fournir le secret client.
 
-1. Cliquez sur **[!UICONTROL Connecter]**. Lors d’une connexion réussie, la variable `Connection Successful` s’affiche.
+1. Cliquez sur **[!UICONTROL Connecter]**. Une fois la connexion établie, la variable `Connection Successful` s’affiche.
 
 1. Maintenant, sélectionnez **[!UICONTROL Conteneur OneDrive]** > **[Dossier OneDrive]**  pour enregistrer les données.
 
@@ -276,12 +276,12 @@ Vous pouvez utiliser la configuration de stockage OneDrive créée dans un formu
 1. Sélectionnez la **[!UICONTROL Configuration de stockage]**, où vous souhaitez enregistrer vos données.
 1. Cliquez sur **[!UICONTROL Enregistrer]** pour enregistrer les paramètres d’envoi.
 
-Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage Microsoft OneDrive spécifié.
+Lorsque vous envoyez le formulaire, les données sont enregistrées dans le stockage Microsoft® OneDrive spécifié.
 La structure du dossier pour l’enregistrement des données est `/folder_name/form_name/year/month/date/submission_id/data`.
 
 ## Envoyer au stockage Blob Azure {#submit-to-azure-blob-storage}
 
-Le **[!UICONTROL Envoyer vers le stockage Azure Blob]**  L’action Envoyer connecte un formulaire adaptatif à un portail Microsoft Azure. Vous pouvez envoyer les données de formulaire, le fichier, les pièces jointes ou le document d’enregistrement aux conteneurs Azure Storage connectés. Pour utiliser l’action Envoyer pour le stockage Azure Blob :
+Le **[!UICONTROL Envoyer vers le stockage Azure Blob]**  L’action Envoyer connecte un formulaire adaptatif à un portail Azure Microsoft®. Vous pouvez envoyer les données de formulaire, le fichier, les pièces jointes ou le document d’enregistrement aux conteneurs Azure Storage connectés. Pour utiliser l’action Envoyer pour le stockage Azure Blob :
 
 1. [Création d’un conteneur de stockage Blob Azure](#create-a-azure-blob-storage-container-create-azure-configuration): Il connecte AEM Forms aux conteneurs de stockage Azure.
 2. [Utilisation de la configuration de stockage Azure dans un formulaire adaptatif ](#use-azure-storage-configuration-in-an-adaptive-form-use-azure-storage-configuartion-in-af): Il connecte votre formulaire adaptatif aux conteneurs de stockage Azure configurés.
@@ -298,7 +298,7 @@ Pour connecter AEM Forms à vos conteneurs de stockage Azure :
 
 1. Spécifiez la variable **[!UICONTROL Titre]**, **[!UICONTROL Compte de stockage Azure]** et **[!UICONTROL Clé d’accès Azure]**.
 
-   * Vous pouvez récupérer `Azure Storage Account` name et `Azure Access key` à partir des comptes de stockage sur le portail Microsoft Azure.
+   * Vous pouvez récupérer `Azure Storage Account` name et `Azure Access key` à partir des comptes de stockage sur le portail Azure Microsoft®.
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**.
 
@@ -376,7 +376,7 @@ L’auteur peut configurer la bibliothèque personnalisée JavaScript pour chaqu
 
 ## Gérer les erreurs sur l’action d’envoi {#error-handling-on-submit-action}
 
-Dans le cadre de la sécurité AEM et des conseils de renforcement, configurez les pages d’erreur personnalisées telles que 400.jsp, 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque les erreurs 400, 404 ou 500 s’affichent au moment d’envoyer un formulaire. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication. Vous pouvez également créer des pages JSP pour d’autres codes d’erreur HTTP.
+Dans le cadre des instructions de sécurité et de renforcement d’AEM, configurez les pages d’erreur personnalisées telles que 400.jsp, 404.jsp et 500.jsp. Ces gestionnaires sont appelés lorsque les erreurs 400, 404 ou 500 s’affichent au moment d’envoyer un formulaire. Les gestionnaires sont également appelés lorsque ces codes d’erreur sont déclenchés sur le nœud de publication. Vous pouvez également créer des pages JSP pour d’autres codes d’erreur HTTP.
 
 Lorsque vous préremplissez un modèle de données de formulaire ou un formulaire adaptatif basé sur un schéma avec des données XML ou JSON conformes à un schéma, ce qui signifie que les données ne contiennent pas de balises `<afData>`, `<afBoundData>` et `</afUnboundData>`, les données des champs non liés du formulaire adaptatif sont perdues. Le schéma peut être un schéma XML, un schéma JSON ou un modèle de données de formulaire. Les champs non liés sont des champs de formulaire adaptatif sans la propriété `bindref`.
 
