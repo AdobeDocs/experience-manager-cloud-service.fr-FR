@@ -7,7 +7,7 @@ exl-id: 365de3dc-51db-4dcf-94e2-104b5a5d33a8
 source-git-commit: 1631ec4b7174c9d98747fe290e21db3839777fcb
 workflow-type: tm+mt
 source-wordcount: '1224'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 94%
 
 [!DNL Adobe Workfront] est une application de gestion du travail qui vous permet de gérer l’ensemble du cycle de vie du travail en un seul endroit. L’intégration entre [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] permet aux entreprises d’améliorer la vitesse du contenu et le délai de mise sur le marché en établissant des liens intrinsèques entre le travail et la gestion des ressources numériques. Dans le cadre de la gestion de leur travail dans Workfront, les utilisateurs ont accès aux documents et images requis.
 
-Adobe des offres à [intégrer [!DNL Workfront] et [!DNL Adobe Experience Manager Assets] En mode natif (prise en charge d’Assets Essentials et d’Assets as a Cloud Service) ou à l’aide de Workfront pour le connecteur amélioré Experience Manager](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=fr). Dans le cas d’une intégration native, vous n’avez pas besoin de connecteur pour intégrer les deux solutions.
+Adobe offre la possibilité d’[intégrer  [!DNL Workfront]  et  [!DNL Adobe Experience Manager Assets]  de manière native (prise en charge d’Assets Essentials et d’Assets as a Cloud Service), ou à l’aide du connecteur amélioré Workfront pour Experience Manager](https://experienceleague.adobe.com/docs/workfront/using/documents/wf-aem-integrations/wf-aem-essentials/aem-asset-integrations.html?lang=fr). Dans le cas d’une intégration native, vous n’avez pas besoin de connecteur pour intégrer les deux solutions.
 
 >[!NOTE]
 >
->Adobe ne prend pas en charge l’utilisation de Workfront pour l’intégration améliorée du connecteur et du Experience Manager Experience Manager en parallèle.
+>Adobe ne prend pas en charge l’utilisation en parallèle du connecteur amélioré Workfront pour Experience Manager et de l’intégration d’Experience Manager.
 
 Grâce à l’intégration native d’Experience Manager et au [!DNL Workfront for Experience Manager enhanced connector], vous bénéficiez des fonctionnalités suivantes :
 
@@ -66,7 +66,7 @@ Vous trouverez ci-dessous les détails des fonctionnalités disponibles à trave
 | Rediriger les utilisateurs vers AEM en cas de clic sur les ressources liées dans Workfront | Les utilisateurs sont redirigés vers AEM pour prévisualiser une ressource liée dans Workfront. | ✓ | ✓ | À venir |
 | Créer automatiquement des dossiers AEM liés dans Workfront | Créez automatiquement des dossiers AEM liés dans Workfront à l’aide des statuts de projet. Configurez automatiquement les dossiers AEM en fonction des portfolios, programmes et projets Workfront. | Non | ✓ | Non |
 | Naviguer directement vers les référentiels AEM à partir de Workfront | Permet aux utilisateurs et utilisatrices de naviguer vers les référentiels AEM disponibles configurés dans Workfront. | ✓ | Non | ✓ |
-| Création de dossiers d’AEM liés dans Workfront | Créez manuellement des dossiers d’AEM liés dans Workfront à l’aide de l’option disponible dans l’onglet Documents . | ✓ | Non | ✓ |
+| Créer des dossiers AEM liés dans Workfront | Créez manuellement des dossiers AEM liés dans Workfront à l’aide de l’option disponible dans l’onglet Documents. | ✓ | Non | ✓ |
 | Synchronisation des commentaires | Synchroniser automatiquement les commentaires des ressources de [!DNL Workfront] vers [!DNL Assets] | Non | ✓ | Non |
 | Prendre en charge plusieurs environnements Workfront se connectant à un seul environnement AEM | Les utilisateurs et utilisatrices de plusieurs environnements Workfront peuvent se connecter à un seul environnement AEM. | ✓ | Non | ✓ |
 | Prendre en charge plusieurs environnements AEM se connectant à un seul environnement Workfront | Les utilisateurs et utilisatrices d’un seul environnement Workfront peuvent envoyer ou lier des ressources entre plusieurs environnements AEM. | ✓ | ✓ | ✓ |

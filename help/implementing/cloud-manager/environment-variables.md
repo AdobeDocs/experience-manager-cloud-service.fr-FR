@@ -5,7 +5,7 @@ exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
 source-git-commit: a8a7bd1f892c7c6eeb1753c8a55f884a33b397d4
 workflow-type: tm+mt
 source-wordcount: '1021'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -112,23 +112,23 @@ Consultez la [documentation officielle de Maven](https://maven.apache.org/settin
 
 Les variables d’environnement peuvent être utilisées à plusieurs endroits.
 
-### Création, aperçu et publication {#author-preview-publish}
+### Créer, prévisualiser et publier {#author-preview-publish}
 
 Les variables d’environnement standard et les secrets peuvent être utilisés dans les environnements de création, de prévisualisation et de publication.
 
 ### Dispatcher {#dispatcher}
 
-Seules les variables d’environnement standard peuvent être utilisées avec [Dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrets ne peuvent pas être utilisés.
+Seules les variables d’environnement normales peuvent être utilisées avec le [dispatcher.](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr) Les secrets ne peuvent pas être utilisés.
 
-Toutefois, les variables d’environnement ne peuvent pas être utilisées dans `IfDefine` directives.
+Toutefois, les variables d’environnement ne peuvent pas être utilisées dans les directives `IfDefine`.
 
 >[!TIP]
 >
->Vous devez valider l’utilisation des variables d’environnement avec la variable [dispatcher localement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html) avant le déploiement.
+>Vous devez valider l’utilisation des variables d’environnement avec le [dispatcher localement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/dispatcher-tools.html?lang=fr) avant le déploiement.
 
 ### Configurations OSGi {#osgi}
 
-Vous pouvez utiliser les variables et secrets d’environnement standard dans [Configurations OSGi.](/help/implementing/deploying/configuring-osgi.md)
+Les variables d’environnement normales et les secrets peuvent être utilisés dans les [configurations OSGi.](/help/implementing/deploying/configuring-osgi.md)
 
 ### Variables de pipeline {#pipeline}
 

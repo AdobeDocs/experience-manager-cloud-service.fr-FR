@@ -5,7 +5,7 @@ exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
 source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
 workflow-type: tm+mt
 source-wordcount: '1660'
-ht-degree: 61%
+ht-degree: 81%
 
 ---
 
@@ -24,7 +24,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 >Vous pouvez exécuter l’étape de précopie facultative pour accélérer considérablement la phase d’ingestion. L’étape de précopie est la plus efficace pour la première occurrence complète d’extraction et d’ingestion. Pour plus d’informations, consultez la section [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
 
 >[!NOTE]
->Vous souvenez-vous d’enregistrer un ticket d’assistance pour cette ingestion ? Voir [Points importants avant l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) pour cela et pour d’autres considérations afin de contribuer à la réussite de l’ingestion.
+>Avez-vous pensé à soumettre un ticket d’assistance pour cette ingestion ? Pour cela et afin d’obtenir de l’aide pour réussir l’ingestion, consultez les [Points importants avant d’utiliser l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr#important-considerations).
 
 1. Présentation de Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu. Accédez aux **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**.
 
@@ -152,25 +152,25 @@ Cela indique que Cloud Acceleration Manager n’a pas pu atteindre le service de
 * Si [La Liste autorisée IP a été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) Cloud Manager empêche Cloud Acceleration Manager d’accéder au service de migration. Une adresse IP ne peut pas être ajoutée pour les assimilations, car elle est très dynamique. Actuellement, la seule solution consiste à désactiver la liste autorisée IP pendant l’exécution de l’ingestion.
 * D&#39;autres raisons peuvent nécessiter une enquête. Si l’ingestion continue d’échouer, contactez l’assistance clientèle Adobe.
 
-### Les mises à jour automatiques par l’intermédiaire de la fonction Release Explorer sont toujours activées.
+### Les mises à jour automatiques par l’intermédiaire de l’orchestrateur de versions sont toujours activées.
 
-L&#39;application automatique des mises à jour permet de tenir automatiquement les environnements à jour. Si la mise à jour est déclenchée lors d’une ingestion, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement. C’est l’une des raisons pour lesquelles un ticket d’assistance doit être consigné avant de commencer une ingestion (voir la &quot;Remarque&quot; ci-dessus), de sorte que la désactivation temporaire de Release Orchestration puisse être planifiée.
+L’orchestrateur de versions applique les mises à jour automatiquement, ce qui permet de maintenir les environnements à jour. Si la mise à jour est déclenchée au cours d’une ingestion, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement. C’est l’une des raisons pour lesquelles un ticket d’assistance doit être soumis avant de commencer une ingestion (voir la « Remarque » ci-dessus), de sorte que la désactivation temporaire de l’orchestrateur de versions puisse être planifiée.
 
-Si l’exécution de Release Orchestration est toujours en cours de démarrage, l’interface utilisateur présentera ce message. Vous pouvez choisir de continuer de toute façon, en acceptant le risque, en cochant le champ et en appuyant de nouveau sur le bouton.
+Si l’exécution de Release Orchestration est toujours en cours de démarrage, l’interface utilisateur présentera ce message. Vous pouvez choisir de continuer tout de même, en acceptant le risque, en cochant le champ et en appuyant à nouveau sur le bouton.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### Échec de l’ingestion de complément
+### Échec de l’ingestion complémentaire
 
-Une cause commune à une [Ingestion de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) L’échec est un conflit dans les identifiants de noeud. Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
+Les conflits entre identifiants de nœud sont une cause courante de l’échec de l’[Ingestion complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
->java.lang.RuntimeException : org.apache.jackrabbit.oak.api.CommitFailedException : OakConstraint0030 : Propriété de contrainte d’unicité violée [jcr:uuid] ayant la valeur a1a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5 : /some/path/jcr:content, /some/other/path/jcr:content
+>java.lang.RuntimeException: org.apache.jackrabbit.oak.api.CommitFailedException: OakConstraint0030: Uniqueness constraint violated property [jcr:uuid] having value a1a1a1a1-b2b2-c3c3-d4d4-e5e5e5e5e5e5: /some/path/jcr:content, /some/other/path/jcr:content
 
-Chaque noeud d’AEM doit disposer d’un uuid unique. Cette erreur indique qu’un noeud en cours d’ingestion possède le même uuid que celui qui existe déjà dans un autre chemin d’accès sur l’instance cible.
-Cela peut se produire si un noeud est déplacé sur la source entre une extraction et une [Extraction de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
-Cela peut également se produire si un noeud de la cible est déplacé entre une ingestion et une ingestion de complément ultérieure.
+Chaque nœud d’AEM doit disposer d’un UUID unique. Cette erreur indique qu’un nœud en cours d’ingestion présente un uuid qui existe déjà au niveau d’un autre chemin d’accès sur l’instance cible.
+Cela peut se produire si un nœud est déplacé sur la source entre une extraction et une [extraction complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process) suivante.
+Cela peut également se produire si un nœud de la cible est déplacé entre une ingestion et une ingestion complémentaire suivante.
 
-Ce conflit doit être résolu manuellement. Une personne familière avec le contenu doit décider lequel des deux noeuds doit être supprimé, en gardant à l’esprit tout autre contenu qui y fait référence. La solution peut nécessiter que l’extraction de complément soit effectuée à nouveau sans le noeud offensif.
+Ce conflit doit être résolu manuellement. Une personne qui connait le contenu doit décider lequel des deux nœuds doit être supprimé, sans oublier tout autre contenu qui y fait référence. La solution peut nécessiter que l’extraction complémentaire soit effectuée à nouveau sans le nœud fautif.
 
 ## Prochaines étapes {#whats-next}
 

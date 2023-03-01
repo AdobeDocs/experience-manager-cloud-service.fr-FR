@@ -5,7 +5,7 @@ exl-id: 469fb1a1-7426-4379-9fe3-f5b0ebf64d74
 source-git-commit: eec03acf5d208236ddac338134f95fb3aaa5ee26
 workflow-type: tm+mt
 source-wordcount: '515'
-ht-degree: 92%
+ht-degree: 97%
 
 ---
 
@@ -36,7 +36,7 @@ AEM as a Cloud Service prend en charge :
 
 Dans tous les cas, la version du code personnalisé est la version capturée à partir du dernier déploiement réussi avant le point de restauration.
 
-L’objectif de temps de récupération (RTO) peut varier, mais en règle générale, la séquence de récupération prend entre 60 et 90 minutes en moyenne en fonction de plusieurs facteurs, tels que la taille du référentiel. Les environnements d’aperçu et les éditeurs multi-régions peuvent prolonger l’objectif de temps de restauration.
+L’objectif de temps de récupération (RTO) peut varier, mais en règle générale, la séquence de récupération prend entre 60 et 90 minutes en moyenne en fonction de plusieurs facteurs, tels que la taille du référentiel. Les environnements d’aperçu et les éditeurs multi-régions peuvent prolonger l’objectif de temps de restauration.
 
 Après une restauration, la version AEM est mise à jour vers la version la plus récente.
 

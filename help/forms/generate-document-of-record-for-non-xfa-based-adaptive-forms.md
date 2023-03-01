@@ -4,7 +4,7 @@ description: Cet article explique comment générer un modèle de document d’e
 source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
 workflow-type: tm+mt
 source-wordcount: '4065'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -430,7 +430,7 @@ Les paramètres du composant Document d’enregistrement sont disponible sous se
 **Paramètres des niveaux de formulaires**
 
 * **Inclure les champs non liés dans le document d’enregistrement** : la définition de la propriété comprend les champs non liés du schéma basé sur le formulaire adaptatif du document d’enregistrement. Par défaut, le paramètre est true.
-* **Exclure les champs du document d’enregistrement s’ils sont masqués :** Définissez la propriété pour exclure les champs masqués du document d’enregistrement lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant d’exclure ces champs du document d’enregistrement.
+* **Exclure les champs du document d’enregistrement s’ils sont masqués :** définissez la propriété pour exclure les champs masqués du document d’enregistrement lors de l’envoi du formulaire. Lorsque vous activez [Revalider sur le serveur](/help/forms/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form), le serveur recalcule les champs masqués avant d’exclure ces champs du document d’enregistrement.
 
 ## Utiliser un fichier XCI personnalisé
 

@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 56fe4fde38fd6662c30b313a887f9740e919e0dc
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 82%
+ht-degree: 93%
 
 ---
 
@@ -50,17 +50,17 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 
 -->
 
-* Le connecteur amélioré de Workfront prend désormais en charge la recherche de texte intégral sur les ressources et les dossiers.
+* Le connecteur amélioré de Workfront permet désormais d’effectuer une recherche de texte intégral sur les ressources et les dossiers.
 
 **Correctifs**
 
-* Les métadonnées de version de document ne se synchronisent pas correctement entre Workfront et Experience Manager.
-* Problèmes lors de la création d’un dossier lié à Experience Manager dans Workfront lorsque le dossier utilise un schéma dont la définition est manquante dans la configuration globale.
-* Le formulaire de l’éditeur de schéma de métadonnées cesse de répondre lorsque vous cliquez sur un champ en raison d’un temps de chargement plus long que prévu. Ajout d’une configuration OSGi spécifique pour que les formulaires personnalisés résolvent le problème. Les noms des formulaires personnalisés que vous ajoutez à l’éditeur de schéma de métadonnées sont disponibles dans les journaux.
+* Les métadonnées de version de document ne se synchronisent pas correctement entre Workfront et Experience Manager.
+* Problèmes lors de la création d’un dossier lié à Experience Manager dans Workfront lorsque le dossier utilise un schéma dont la définition est manquante dans la configuration globale.
+* Le formulaire de l’éditeur de schéma de métadonnées ne répond plus lorsque vous cliquez sur n’importe quel champ en raison d’un temps de chargement plus long que prévu. Ajout d’une configuration OSGi spécifique pour que les formulaires personnalisés résolvent le problème. Les noms des formulaires personnalisés que vous ajoutez à l’éditeur de schéma de métadonnées sont disponibles dans les journaux.
 
-### Version de novembre 2022 {#november-2022-release}
+### Version de novembre 2022 {#november-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] La version 1.9.5, publiée le 11 novembre, comprend les mises à jour suivantes :
+La version 1.9.5 de [!DNL Workfront for Experience Manager enhanced connector] publiée le 11 novembre comprend les mises à jour suivantes :
 
 * Lorsque vous définissez une seule valeur pour un champ à plusieurs valeurs dans Workfront, la valeur du champ n’est pas mappée correctement à Experience Manager.
 

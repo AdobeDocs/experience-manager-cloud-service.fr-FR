@@ -5,7 +5,7 @@ exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
 source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
 workflow-type: tm+mt
 source-wordcount: '2456'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -41,9 +41,9 @@ Vous devez tout d’abord charger la SPA externe vers votre projet AEM.
 
 Maintenant que la SPA externe fait partie de votre projet AEM, vous devez la configurer dans AEM.
 
-### Inclusion des modules du SDK de SPA Adobe {#include-spa-sdk-packages}
+### Inclusion des packages du SDK SPA Adobe {#include-spa-sdk-packages}
 
-Pour tirer parti des fonctionnalités de SPA AEM, vous pouvez utiliser les dépendances des trois modules suivants.
+Pour tirer parti des fonctionnalités de SPA AEM, vous pouvez utiliser les dépendances des trois packages suivants.
 
 * [`@adobe/aem-react-editable-components`](https://github.com/adobe/aem-react-editable-components)
 * [`@adobe/aem-spa-component-mapping`](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
@@ -53,7 +53,7 @@ Pour tirer parti des fonctionnalités de SPA AEM, vous pouvez utiliser les dépe
 
 #### Installation {#installation}
 
-Exécutez la commande npm suivante pour installer les modules requis.
+Exécutez la commande npm suivante pour installer les packages requis.
 
 ```shell
 npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-manager @adobe/aem-react-editable-components
@@ -359,9 +359,9 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
    * Déployez le projet pour AEM et accédez à la page `test` créée. Le contenu de la page est désormais rendu et les composants AEM sont modifiables.
 
-## Limites de structure {#framework-limitations}
+## Restrictions du framework {#framework-limitations}
 
-Le composant RemotePage s’attend à ce que l’implémentation fournisse un manifeste de ressource comme celui [se trouve ici.](https://github.com/shellscape/webpack-manifest-plugin) Le composant RemotePage, en revanche, a été testé uniquement pour fonctionner avec l’infrastructure React (et Next.js via le composant distant page-suivant). Il ne prend donc pas en charge le chargement à distance d’applications à partir d’autres structures, telles que Angular.
+Le composant RemotePage s’attend à ce que l’implémentation fournisse un manifeste de ressource comme [celui-ci.](https://github.com/shellscape/webpack-manifest-plugin) Le composant RemotePage, cependant, a été testé uniquement pour fonctionner avec le framework React (et Next.js via le composant remote-page-next) et il ne prend donc pas en charge le chargement à distance d’applications à partir d’autres frameworks tels qu’Angular.
 
 ## Ressources supplémentaires {#additional-resources}
 

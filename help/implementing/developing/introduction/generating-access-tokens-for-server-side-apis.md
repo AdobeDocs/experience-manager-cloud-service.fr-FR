@@ -9,7 +9,7 @@ ht-degree: 37%
 
 ---
 
-# Génération de jetons d’accès pour les API côté serveur {#generating-access-tokens-for-server-side-apis}
+# Générer des jetons d’accès pour les API côté serveur {#generating-access-tokens-for-server-side-apis}
 
 Certaines architectures reposent sur des appels à AEM as a Cloud Service à l’aide d’une application hébergée sur un serveur en dehors de l’infrastructure AEM. Il peut s’agir, par exemple, d’une application mobile qui appelle un serveur, puis effectue des requêtes d’API auprès d’AEM as a Cloud Service.
 
@@ -229,7 +229,7 @@ Si la clé privée est compromise, vous devez créer des informations d’identi
 
 Pour ce faire, procédez comme suit :
 
-1. Tout d’abord, ajoutez la nouvelle clé. Cela génère des informations d’identification avec une nouvelle clé privée et un nouveau certificat. La nouvelle clé privée sera marquée comme **current** et sera donc utilisé pour toutes les nouvelles informations d’identification de ce compte technique à venir. Notez que les informations d’identification associées aux anciennes clés privées restent valides jusqu’à la révocation. Pour ce faire, appuyez sur les trois points (**...**) sous votre compte technique actuel et appuyez sur **Ajout d’une clé privée**:
+1. Tout d’abord, ajoutez la nouvelle clé. Cela génère des informations d’identification avec une nouvelle clé privée et un nouveau certificat. La nouvelle clé privée sera marquée comme **current** et sera donc utilisé pour toutes les nouvelles informations d’identification de ce compte technique à venir. Notez que les informations d’identification associées aux anciennes clés privées seront toujours valides jusqu’à la révocation. Pour ce faire, appuyez sur les trois points (**...**) sous votre compte technique actuel et appuyez sur **Ajout d’une clé privée**:
 
    ![Ajout d’une clé privée](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 

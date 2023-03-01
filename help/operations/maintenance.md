@@ -5,7 +5,7 @@ exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
 source-git-commit: f1d1009db31585ff82c02080a6ab7ea7ca5bf66b
 workflow-type: tm+mt
 source-wordcount: '1068'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
        <li>Les versions de plus de 30 jours sont supprimées</li>
        <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
        <li>Quelle que soit la règle ci-dessus, la version la plus récente est conservée.</li>
-       <br>Il est recommandé aux clients qui ont des exigences réglementaires pour effectuer le rendu des pages du site exactement telles qu’elles s’affichaient à une date spécifique, de les intégrer à des services externes spécialisés.
+       <br>Il est recommandé aux client(e)s qui ont des exigences réglementaires pour effectuer le rendu des pages du site exactement telles qu’elles s’affichaient à une date spécifique de faire appel à des services externes spécialisés.
      </ol></td>
   </td>
   </tr>
@@ -61,7 +61,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
        <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
        <li>Pour le contrôle du DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
        <li>Pour le contrôle des pages, les journaux de plus de 3 jours sont supprimés.</li>
-       <br>Il est recommandé que les clients qui ont des exigences réglementaires pour produire des journaux d’audit non modifiables s’intègrent à des services externes spécialisés.
+       <br>Il est recommandé aux client(e)s qui ont des exigences réglementaires pour produire des journaux d’audit non modifiables de faire appel à des services externes spécialisés.
      </ol></td>
    </td>
   </tr>

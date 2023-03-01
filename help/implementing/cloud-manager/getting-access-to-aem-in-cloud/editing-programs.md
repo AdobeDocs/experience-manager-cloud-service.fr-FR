@@ -5,7 +5,7 @@ exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
 source-git-commit: d8815a17601f475267b50a6a527246f1433ed7eb
 workflow-type: tm+mt
 source-wordcount: '517'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -58,11 +58,11 @@ Pour modifier un programme, procédez comme suit.
 
 Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
 
-Si la sécurité de votre programme de production a été améliorée, une **Sécurité renforcée** est disponible dans la **Modifier le programme** pour confirmer que la fonctionnalité est principale pour le programme.
+Si la sécurité renforcée de votre programme de production a été activée, un onglet supplémentaire **Sécurité renforcée** est disponible dans la fenêtre **Modifier le programme** pour confirmer que la fonctionnalité est bien activée pour ce programme.
 
-![Principal de sécurité amélioré pour un programme](assets/edit-program-enhanced.png)
+![Sécurité renforcée activée pour un programme.](assets/edit-program-enhanced.png)
 
-Ce paramètre ne peut pas être modifié une fois le programme créé. Pour plus d’informations sur l’option de sécurité améliorée, reportez-vous à la section [Création de programmes de production](creating-production-programs.md) document.
+Ce paramètre ne peut pas être modifié une fois le programme créé. Pour plus d’informations sur l’option de sécurité renforcée, reportez-vous au document [Création de programmes de production](creating-production-programs.md).
 
 ## Suppression de programmes Sandbox {#delete-sandbox-program}
 

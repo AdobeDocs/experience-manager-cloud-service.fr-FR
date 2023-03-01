@@ -8,7 +8,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: 4f58f36e646677071d7f9a4aa56238d68c7689ba
 workflow-type: tm+mt
 source-wordcount: '2478'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -29,13 +29,13 @@ Vous avez besoin des éléments suivants pour activer Brand Portal sur votre in
 
 >[!NOTE]
 >
->Un environnement de production configuré est requis pour Experience Manager Assets as a [!DNL Cloud Service] pour se connecter au client Brand Portal.
+>Un environnement de production configuré est requis pour qu’une instance Experience Manager Assets as a [!DNL Cloud Service] puisse se connecter au client Brand Portal.
 
 **Étapes d’activation de Brand Portal**
 
-Vous pouvez activer Brand Portal lors de la création des environnements de production pour votre Experience Manager Assets as a [!DNL Cloud Service] ou séparément. Supposons que l’environnement ait déjà été créé et que vous deviez à présent activer Brand Portal.
+Vous pouvez activer Brand Portal au moment de la création des environnements de production pour votre instance Experience Manager Assets as a [!DNL Cloud Service] ou à un autre moment. Supposons que l’environnement a déjà été créé et que vous devez maintenant activer Brand Portal.
 
-1. Connectez-vous à Adobe Cloud Manager et accédez à **[!UICONTROL Environnements]**.
+1. Connectez-vous à Adobe Cloud Manager et accédez à **[!UICONTROL Environnements]**.
 
    La page **[!UICONTROL Environnements]** affiche la liste de tous les environnements existants.
 
@@ -66,12 +66,12 @@ Vous pouvez activer Brand Portal lors de la création des environnements de prod
 
 * [Ajouter des utilisateurs et des rôles dans Experience Manager Assets as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr)
 
-* [Gestion des environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#adding-environments)
+* [Gérer les environnements dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#adding-environments)
 
 
-**Connexion à votre client Brand Portal**:
+**Connexion à votre client Brand Portal** :
 
-Après l’activation de votre client Brand Portal dans Cloud Manager, vous pouvez vous connecter à Brand Portal à partir de Admin Console ou directement à l’aide de l’URL du client.
+Après l’activation de votre client Brand Portal dans Cloud Manager, vous pouvez vous connecter à Brand Portal à partir de l’Admin Console ou directement à l’aide de l’URL du client.
 
 L’URL par défaut de votre client Brand Portal est : `https://<tenant-id>.brand-portal.adobe.com/`.
 
@@ -79,8 +79,8 @@ dans lequel l’identifiant client est l’organisation IMS.
 
 Suivez les étapes suivantes si vous n’êtes pas sûr de l’URL de Brand Portal :
 
-1. Connectez-vous à [Admin Console](https://adminconsole.adobe.com/) et accédez à **[!UICONTROL Produits]**.
-1. Dans le panneau de gauche, sélectionnez **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
+1. Connectez-vous à l’[Admin Console](https://adminconsole.adobe.com/) et accédez à **[!UICONTROL Produits]**.
+1. Dans le panneau de gauche, sélectionnez **[!UICONTROL Adobe Experience Manager Brand Portal - Brand Portal]**.
 1. Cliquez sur **[!UICONTROL Accéder à Brand Portal]** pour ouvrir directement Brand Portal dans le navigateur.
 
    Vous pouvez également copier l’URL du client Brand Portal à partir du lien **[!UICONTROL Accéder à Brand Portal]** et la coller dans votre navigateur pour ouvrir l’interface de Brand Portal.
@@ -254,9 +254,9 @@ La clé publique (certificat) authentifie votre profil sur Adobe Developer Con
 
 Dans Adobe Developer Console, les projets et les API sont configurés au niveau du client Brand Portal. La configuration d’une API crée une connexion au compte de service (JWT). Il existe deux méthodes pour configurer l’API : générer une paire de clés (clés privée et publique) ou télécharger une clé publique. Pour configurer Experience Manager Assets avec Brand Portal, vous devez générer une clé publique (certificat) dans Experience Manager Assets et créer des informations d’identification dans Adobe Developer Console en téléchargeant la clé publique. Ces informations d’identification sont requises pour configurer le compte IMS dans Experience Manager Assets. Une fois le compte IMS configuré, vous pouvez configurer le service cloud Brand Portal dans Experience Manager Assets.
 
-Procédez comme suit pour générer les informations d’identification du compte de service et la charge utile JWT :
+Procédez comme suit pour générer les informations d’identification du compte de service et la payload JWT :
 
-1. Connectez-vous à la console Adobe Developer avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
+1. Connectez-vous à Adobe Developer Console avec les privilèges d’administrateur système sur l’organisation IMS (client Brand Portal). L’URL par défaut est [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
    >[!NOTE]
@@ -398,14 +398,14 @@ Pour configurer le service cloud Brand Portal, procédez comme suit :
 
 Vous pouvez maintenant tester la configuration en vérifiant l’agent de distribution et en publiant les ressources sur Brand Portal.
 
-**Placer sur la liste autorisée les adresses IP sortantes dans SPS si l’aperçu sécurisé est activé**
-Si vous utilisez Dynamic Media-Scene7 avec [aperçu sécurisé activé](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) pour une société), il est conseillé à l’administrateur de la société Scene7 [placer sur la liste autorisée les adresses IP sortantes publiques](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) pour les régions respectives utilisant l’interface utilisateur Flash de SPS (Scene7 Publishing System).
+**Placer sur la liste autorisée les adresses IP sortantes dans SPS si l’aperçu sécurisé est activé**
+En cas d’utilisation de Dynamic Media-Scene7 (avec l’[aperçu sécurisé activé](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) pour une entreprise), il est conseillé à l’administrateur ou à l’administratrice Scene7 de l’entreprise de [placer sur la liste autorisée les adresses IP publiques sortantes](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) pour les régions respectives à l’aide de l’IU flash SPS (système de publication Scene7).
 Les adresses IP sortantes sont les suivantes :
 
 | **Zone géographique** | **Adresse IP sortante** |
 |--- |--- |
-| N/A | 130.248.160.68,  20.94.203.130 |
-| EMEA | 185.34.189.3,  51.132.146.75 |
+| N/A | 130.248.160.68, 20.94.203.130 |
+| EMEA | 185.34.189.3, 51.132.146.75 |
 | APAC | 63.140.44.54 |
 
 <!--

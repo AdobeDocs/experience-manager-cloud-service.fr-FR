@@ -1,11 +1,11 @@
 ---
 title: Développer des sites avec le pipeline front-end
-description: Grâce au pipeline front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certaines considérations particulières du processus de génération front-end qui doivent être données.
+description: Grâce au pipeline front-end, les développeurs et développeuses front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certains éléments particuliers du processus de création front-end qui doivent être pris en compte.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
 source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
 workflow-type: tm+mt
 source-wordcount: '1157'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -20,17 +20,17 @@ ht-degree: 88%
 
 ## Contrat de création front-end {#front-end-build-contract}
 
-Semblable au [environnement de création full-stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) le pipeline front-end possède son propre environnement. Les développeurs disposent d’une certaine flexibilité dans ce pipeline tant que le contrat de version front-end suivant est respecté.
+Tout comme l’[environnement de création full-stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) le pipeline front-end possède son propre environnement. Les développeurs et développeuses disposent d’une certaine flexibilité dans ce pipeline tant que le contrat de création front-end suivant est respecté.
 
-Le pipeline front-end requiert le projet front-end Node.js pour utiliser la variable `build` directive de script pour générer la version qui sera déployée par le pipeline front-end. C’est-à-dire que Cloud Manager utilise la commande . `npm run build` pour générer le projet déployable sur la propriété `dist` dossier.
+Le pipeline front-end requiert le projet front-end Node.js pour utiliser la directive de script `build` afin de générer la version qui sera déployée par le pipeline front-end. C’est-à-dire que Cloud Manager utilise la commande `npm run build` pour générer le projet déployable dans le dossier `dist`.
 
-Le contenu de la variable `dist` est ce qui est finalement déployé vers AEM as a Cloud Service à partir du pipeline Cloud Manager.
+Le contenu du dossier `dist` est ce qui est finalement déployé vers AEM as a Cloud Service à partir du pipeline Cloud Manager.
 
-### Versions des noeuds {#node-versions}
+### Versions de Node {#node-versions}
 
-Par défaut, le pipeline front-end utilise le noeud 14, mais les versions 12 et 16 sont également disponibles.
+Par défaut, le pipeline front-end utilise Node 14, mais les versions 12 et 16 sont également disponibles.
 
-Vous pouvez utiliser la variable `CM_CUSTOM_VAR_NODE_VERSION` pour définir la version souhaitée.
+Vous pouvez utiliser la variable d’environnement `CM_CUSTOM_VAR_NODE_VERSION` pour définir la version souhaitée.
 
 ## Source unique de vérité {#single-source-of-truth}
 

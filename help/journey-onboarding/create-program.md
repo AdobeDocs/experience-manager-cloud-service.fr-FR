@@ -6,7 +6,7 @@ exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: 971ef47b66da6d7e032f6109afb4830d49c00071
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Il existe deux types de programmes différents :
 
 >[!TIP]
 >
->Si vous devez créer un programme de production, reportez-vous à la section [Ressources supplémentaires](#additional-resources) pour obtenir un lien vers la documentation décrivant les programmes en détail.
+>Si vous devez créer un programme de production, consultez la section [Ressources supplémentaires](#additional-resources) pour obtenir un lien vers la documentation décrivant les programmes en détail.
 
 ## Créer un programme sandbox {#create-sandbox}
 
@@ -53,7 +53,7 @@ Pour créer un programme Sandbox, procédez comme suit.
 
    ![Page de destination de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
 
-1. Dans l’assistant de création de programme, sélectionnez **Configurer un environnement de test**, indiquez un nom de programme, puis cliquez sur **Créer**.
+1. Dans l’assistant de création de programme, sélectionnez **Configurer un sandbox**, indiquez un nom de programme, puis cliquez sur **Créer**.
 
    ![Création d’un type de programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 

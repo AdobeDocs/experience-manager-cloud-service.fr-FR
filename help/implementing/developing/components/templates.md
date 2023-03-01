@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
 workflow-type: tm+mt
 source-wordcount: '3300'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -357,7 +357,7 @@ Si vous avez créé un modèle qui peut servir de base pour d’autres modèles,
 1. Créez un modèle qui servira de base pour votre type de modèle. Pour ce faire, procédez comme vous le feriez pour n’importe quel modèle de page, [en suivant ces instructions](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author).
 1. À l’aide de CRXDE Lite, copiez le nouveau modèle depuis le nœud `templates` dans le nœud `template-types` sous le [dossier de modèles](#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](#template-folders).
-1. Dans la copie du modèle qui se trouve sous le `template-types` noeud, supprimer tout `cq:template` et `cq:templateType` de toutes les propriétés `jcr:content` noeuds.
+1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez tous les `cq:template` et toutes les propriétés `cq:templateType` de tous les nœuds `jcr:content`.
 
 Vous pouvez également développer votre propre type de modèle en utilisant un exemple de modèle modifiable comme base (disponible sur GitHub).
 

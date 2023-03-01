@@ -5,7 +5,7 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: cac6692e10da4b271610edd495d4cb38507a726b
 workflow-type: tm+mt
 source-wordcount: '1182'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Avant d’utiliser AEM Developer Tools, vous devez :
 
 >[!NOTE]
 >
->Sous macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Voir le contenu du paquet** pour trouver le fichier `eclipse.ini`**.**
+>Sous macOS, vous devez cliquer avec le bouton droit de la souris sur **Eclipse.app**, puis sélectionner **Voir le contenu du package** pour trouver le fichier `eclipse.ini`**.**
 
 ## Comment installer AEM Developer Tools pour Eclipse {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -44,7 +44,7 @@ Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous po
 
 1. Copiez le **Lien d’installation**.
 
-   Notez que vous pouvez également télécharger un fichier d’archives au lieu d’utiliser le lien d’installation. Cette méthode permet une installation hors ligne, mais vous ne recevez pas les notifications de mise à jour automatique manquées de cette manière.
+   Notez que vous pouvez également télécharger un fichier d’archives au lieu d’utiliser le lien d’installation. Cela permet une installation hors ligne, mais sans recevoir les notifications de mise à jour automatique.
 
 1. Dans Eclipse, ouvrez le menu **Help** (Aide).
 1. Cliquez sur **Install New Software** (Installer un nouveau logiciel).
@@ -196,7 +196,7 @@ Une fois cette opération terminée, votre package devrait être exécuté sur v
 
 Si vous souhaitez recréer un package à partir de votre projet, cliquez avec le bouton droit de la souris sur `PROJECT.ui.apps` ou `PROJECT.ui.content` et choisissez **Run As** (Exécuter en tant que) > **Maven Install** (Installation Maven).
 
-Vous disposez désormais d’un dossier cible créé avec votre module à l’intérieur (appelé, par exemple `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`).
+Vous disposez désormais d’un dossier cible contenant votre package (nommé `PROJECT.ui.apps-0.0.1-SNAPSHOT.zip`, par exemple).
 
 ## Résolution des problèmes {#troubleshooting}
 
@@ -216,7 +216,7 @@ Eclipse télécharge les dépendances requises. Cela peut prendre un moment.
 
 Le site Web officiel Apache Sling IDE tooling for Eclipse fournit des informations utiles :
 
-* Le [**Outils Apache Sling IDE pour Eclipse** Guide de l’utilisateur](https://sling.apache.org/documentation/development/ide-tooling.html), cette documentation vous guide tout au long des concepts généraux, de l’intégration des serveurs et des fonctionnalités de déploiement prises en charge par les outils de développement AEM.
+* Le [**Guide d’utilisation Apache Sling IDE tooling for Eclipse**](https://sling.apache.org/documentation/development/ide-tooling.html) vous guide parmi les concepts généraux, l’intégration des serveurs et les fonctionnalités de déploiement pris en charge par AEM Development Tools.
 * La section [Dépannage](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * La [liste des problèmes connus](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
