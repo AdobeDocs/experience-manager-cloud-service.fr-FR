@@ -3,9 +3,9 @@ title: Présentation de la fonctionnalité Communications de Forms as a Cloud S
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1136'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Cette fonctionnalité fournit des API pour générer et manipuler les documents.
 
 * Des API HTTP pour une intégration plus facile aux systèmes existants Des API distinctes pour les opérations à la demande (faible latence) et par lots (opérations à débit élevé) sont incluses.
 
-* un accès sécurisé aux données. Les API de communication se connectent aux données et y accèdent uniquement à partir de référentiels de données désignés par le client, ce qui rend les communications extrêmement sécurisées.
+* un accès sécurisé aux données. Les API de communication se connectent aux données et n’y accèdent que depuis des référentiels de données désignés par les client(e)s, ce qui rend les communications hautement sécurisées.
 
 ![Exemple de relevé de carte de crédit](assets/statement.png)
 Un relevé de carte de crédit peut être créé à l’aide des API Communications. Cet exemple de relevé utilise le même modèle, mais des données distinctes pour chaque client selon son utilisation de la carte de crédit.
