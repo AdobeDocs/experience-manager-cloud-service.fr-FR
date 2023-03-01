@@ -3,9 +3,9 @@ title: Introduction et présentation des applications sur une seule page (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2076'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -31,10 +31,10 @@ La présentation repose sur les fonctionnalités AEM standard et l’exemple d�
    * Il doit être exécuté en tant qu’environnement de développement local.
    * Vous devez disposer des droits d’administrateur sur le système.
 * [Exemple d’application de projet WKND SPA disponible sur GitHub](https://github.com/adobe/aem-guides-wknd-spa)
-   * Téléchargez la [dernière version de l’application React](https://github.com/adobe/aem-guides-wknd-spa/releases) nommé similaire à `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
-   * Téléchargez la [derniers exemples d’images pour l’application](https://github.com/adobe/aem-guides-wknd-spa/releases) nommé similaire à `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Utilisation du gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) pour installer les deux packages comme vous le feriez pour tout autre package dans AEM.
-   * L’application n’a pas besoin d’être installée à l’aide de Maven aux fins de cette procédure pas à pas.
+   * Téléchargez la [dernière version de l’application React](https://github.com/adobe/aem-guides-wknd-spa/releases) dont le nom ressemble à `wknd-spa-react.all-X.Y.Z-SNAPSHOT.zip`.
+   * Téléchargez les [derniers exemples d’images pour l’application](https://github.com/adobe/aem-guides-wknd-spa/releases) dont le nom ressemble à `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [Utilisez le gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) pour installer les deux packages comme vous le feriez pour tout autre package dans AEM.
+   * L’application n’a pas besoin d’être installée à l’aide de Maven pour cette présentation.
 
 >[!CAUTION]
 >
