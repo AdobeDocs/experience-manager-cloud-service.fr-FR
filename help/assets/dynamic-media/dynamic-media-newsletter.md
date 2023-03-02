@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b81ac7529e7757fbd9f9fbc48e47e740ab9ecbf3
+workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Regardez les webinaires Skill Builder à la demande pour Dynamic Media Classic.
    * Regardez les sessions Dynamic Media du sommet Adobe en ligne 2020.
    * En savoir plus sur les audits gratuits Dynamic Media Classic d’Adobe.
-   * Faites la connaissance de `John Monroe`, responsable de programme senior pour les services de la réussite client.
+   * Respecter `John Monroe`, responsable de programme principal pour l’équipe du compte d’Adobe.
 
 * **[Février 2020, numéro 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=fr)**
 

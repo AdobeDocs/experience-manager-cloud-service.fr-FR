@@ -2,30 +2,30 @@
 title: Modifications notables apportées au module complémentaire CIF (Commerce Integration Framework)
 description: Modifications notables de Commerce Integration Framework (CIF) par rapport aux anciennes versions de CIF.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: b81ac7529e7757fbd9f9fbc48e47e740ab9ecbf3
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 100%
+source-wordcount: '454'
+ht-degree: 79%
 
 ---
 
 # Modifications notables apportées au module complémentaire CIF (Commerce Integration Framework){#notable-changes}
 
-Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fonctionnalités et possibilités de gestion pour vos projets AEM. Pour en savoir plus sur ces fonctionnalités, suivez le lien correspondant aux [modifications apportées à Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
+Adobe Experience Manager as a Cloud Service offre de nombreuses nouvelles fonctionnalités et possibilités de gestion de vos projets AEM. Pour en savoir plus sur ces fonctionnalités, suivez le lien correspondant aux [modifications apportées à Experience Manager as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
-Ce document met en évidence les différences importantes entre le module complémentaire CIF (Commerce Integration Framework) et les anciennes versions de CIF, connues principalement sous le nom de CIF Classic (Quickstart) et CIF Open Source.
+Ce document met en évidence les différences importantes entre le module complémentaire CIF (Commerce Integration Framework) et les anciennes versions de CIF, connues sous le nom de CIF Classic (Quickstart) et CIF Open Source.
 
 ## Installation et mises à jour
 
 Le module complémentaire CIF d’AEM est installé à l’aide de Cloud Manager. L’installation nécessite un crédit CIF, à l’exception des environnements de test dans lesquels CIF peut être installé sans crédits. Les crédits sont automatiquement reçus via la mise en service du module complémentaire CIF dans votre contrat AEM.
 
-Le module complémentaire est automatiquement mis à jour dans le cadre des mises à jour régulières de la version standard d’AEM as a Cloud Service.
+Le module complémentaire est automatiquement mis à jour dans le cadre de la mise à jour as a Cloud Service régulière AEM.
 
 **Versions CIF précédentes**
 
 * CIF Classic : aucune installation n’était nécessaire, CIF faisait partie de la version Quickstart. Les mises à jour CIF faisaient partie des mises à jour régulières d’AEM ou de service pack.
 * CIF Open-source for AEM On-premises : installation via GitHub. Les mises à jour faisaient partie des opérations de mise à jour manuelle/de maintenance.
-* CIF Open Source pour AEM Adobe Managed Services : installation via Customer Success Manager. Les mises à jour faisaient partie des opérations de mise à jour manuelle/de maintenance.
+* CIF Open Source pour AEM Adobe Managed Services : Installation par l’intermédiaire de l’équipe du compte d’Adobe. Les mises à jour faisaient partie des opérations de mise à jour manuelle/de maintenance.
 
 ## Configuration du point d’entrée
 
@@ -38,12 +38,12 @@ Le point d’entrée est configuré et mis à jour via l’interface utilisateur
 
 ## Déploiement du projet CIF Venia
 
-Projet disponible dans le [référentiel Git de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/managing-code/integrating-with-git.html?lang=fr) et déploiement effectué via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr)
+Projet disponible dans le [référentiel Git de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/integrating-with-git.html) et déploiement effectué via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/overview.html?lang=fr)
 
 **Versions CIF précédentes**
 
-* CIF Classic : via l’installation du package AEM
-* CIF Open Source : via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr)
+* CIF Classic : Au moyen de l’installation AEM package
+* CIF Open Source : via [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr)
 
 ## Données du catalogue de produits
 
