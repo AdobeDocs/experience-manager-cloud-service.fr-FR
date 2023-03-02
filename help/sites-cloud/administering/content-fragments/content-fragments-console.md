@@ -5,16 +5,16 @@ landing-page-description: Découvrez comment gérer les fragments de contenu à 
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b20ec4fb6068fe0ecfe74a6d1bff8038f330ff38
-workflow-type: ht
-source-wordcount: '901'
-ht-degree: 100%
+source-git-commit: db81eac064d4616cb6b1beae85abc0c55a993fce
+workflow-type: tm+mt
+source-wordcount: '913'
+ht-degree: 96%
 
 ---
 
 # Console Fragments de contenu  {#content-fragments-console}
 
-Découvrez comment la console Fragments de contenu optimise l’accès à vos fragments de contenu, ce qui vous permet de les créer, de les rechercher et de les gérer à travers des actions administratives telles que la publication, l’annulation de la publication et la copie.
+Découvrez comment la console Fragments de contenu optimise l’accès à vos fragments de contenu, ce qui vous permet de les créer, de les rechercher et de les gérer à travers des actions administratives telles que la publication, la dépublication et la copie.
 
 La console Fragments de contenu est dédiée à la gestion, à la recherche et à la création de fragments de contenu. Optimisée pour une utilisation dans un contexte headless, elle est également utilisée lors de la création de fragments de contenu à utiliser dans la création de pages.
 
@@ -65,7 +65,7 @@ Vous pouvez constater ici qu’il existe trois zones principales :
             * Afficher des informations à propos des références
             * Afficher des informations sur les versions linguistiques du fragment
          * Vous pouvez [sélectionnez un ou plusieurs fragments de contenu pour afficher les actions disponibles](#actions-selected-content-fragment)
-      * Vous pouvez sélectionner un en-tête de colonne pour trier le tableau en fonction de cette colonne. Sélectionnez à nouveau pour basculer entre ordre ascendant et descendant.
+      * Vous pouvez sélectionner un en-tête de colonne pour trier le tableau en fonction de cette colonne. sélectionnez à nouveau pour basculer entre croissant et décroissant. Actuellement, le tri est pris en charge sur la variable **Titre**, **Modifié**, et **Modifié par** colonnes.
    * **[Créer](#creating-new-content-fragment)** un fragment de contenu.
    * [Filtrer](#filtering-fragments) les fragments de contenu en fonction d’une sélection de prédicats et enregistrer le filtre en vue d’une utilisation ultérieure.
    * [Rechercher](#searching-fragments) les fragments de contenu.
@@ -87,7 +87,7 @@ La sélection d’un fragment spécifique ouvre une barre d’outils axée sur l
 ![Console Fragments de contenu - Barre d’outils pour un fragment sélectionné](assets/cfc-fragment-toolbar.png)
 
 * **Ouvrir**
-* **Publier** (et **Annuler la publication**)
+* **Publier** (et **Dépublier**)
 * **Copier**
 * **Déplacer**
 * **Renommer**
@@ -95,7 +95,7 @@ La sélection d’un fragment spécifique ouvre une barre d’outils axée sur l
 
 >[!NOTE]
 >
->Des actions telles que Publier, Annuler la publication, Supprimer, Déplacer, Renommer ou Copier déclenchent un traitement asynchrone. Il est possible de surveiller la progression de ce traitement via l’interface utilisateur des traitements asynchrones AEM.
+>Des actions telles que Publier, Dépublier, Supprimer, Déplacer, Renommer ou Copier déclenchent un traitement asynchrone. Il est possible de surveiller la progression de ce traitement via l’interface utilisateur des traitements asynchrones AEM.
 
 ## Les informations fournies sur vos fragments de contenu {#information-content-fragments}
 
