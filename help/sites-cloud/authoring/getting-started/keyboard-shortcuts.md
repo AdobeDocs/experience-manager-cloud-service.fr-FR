@@ -2,10 +2,10 @@
 title: Raccourcis clavier pour les consoles
 description: Utilisez ces raccourcis clavier pour gagner du temps lors de la création
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 7c9a8765c1d193a880ad4352f20660249effa881
-workflow-type: ht
-source-wordcount: '373'
-ht-degree: 100%
+source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
+workflow-type: tm+mt
+source-wordcount: '376'
+ht-degree: 96%
 
 ---
 
@@ -20,7 +20,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Ressources, Ut
 |  | `Left Arrow` | Naviguer vers le haut de la structure de l’arborescence/réduire le nœud d’arborescence |
 |  | `Down Arrow` | Se déplacer vers le bas d’une liste de pages au même niveau |
 |  | `Up Arrow` | Se déplacer vers le haut d’une liste de pages au même niveau |
-| Console : mode Colonnes | `Shift-Up/Down Arrow` | Se déplacer vers le haut d’une liste de pages au même niveau |
+| Console : mode Colonnes | `Shift-Up/Down Arrow` | Déplacer vers le haut/vers le bas et sélectionner une liste de pages au même niveau |
 |  | `Esc` | Se déplacer vers le haut d’une liste de pages au même niveau |
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-cloud/authoring/getting-started/search.md) |
