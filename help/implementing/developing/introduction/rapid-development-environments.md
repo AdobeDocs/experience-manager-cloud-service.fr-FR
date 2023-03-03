@@ -1,9 +1,9 @@
 ---
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour réaliser des itérations de développement rapides sur un environnement cloud.
-source-git-commit: e5a9f497e753f328ff14487f4985541c1c77ae0e
+source-git-commit: 74ccf3a22043bfc7ac47e8fa1c9d064ad88a886e
 workflow-type: tm+mt
-source-wordcount: '3259'
+source-wordcount: '3293'
 ht-degree: 64%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 64%
 
 >[!AVAILABILITY]
 >
->Cette fonctionnalité devrait être déployée progressivement pour les clients tout au long du mois de février.
+>Le déploiement de cette fonctionnalité est prévu pour les clients.
 
 Afin de déployer les modifications, les environnements de développement cloud actuels nécessitent l’utilisation d’un processus qui utilise des règles de sécurité et de qualité du code, appelé pipeline CI/CD. Dans les cas où des modifications rapides et itératives sont nécessaires, Adobe a introduit des environnements de développement rapide (RDE).
 
@@ -264,7 +264,7 @@ où la réponse d’un déploiement réussi ressemble à ce qui suit :
 
 Pour ce type de configuration, l’ensemble de la structure de dossiers doit se présenter sous la forme d’un fichier zip.
 
-Dans la `dispathcer` d’un projet AEM, vous pouvez compresser la configuration du dispatcher en exécutant la commande maven suivante :
+Dans la `dispatcher` d’un projet AEM, vous pouvez compresser la configuration du dispatcher en exécutant la commande maven suivante :
 
 `mvn clean package`
 
@@ -279,6 +279,10 @@ déployez ensuite la configuration à l’aide de la commande suivante :
 >[!TIP]
 >
 >La commande ci-dessus suppose que vous déployez le [WKND](https://github.com/adobe/aem-guides-wknd) configurations du Dispatcher du projet. Veillez à remplacer la variable `X.X.X` avec le numéro de version du projet WKND correspondant ou votre numéro de version spécifique au projet lors du déploiement de la configuration du dispatcher de votre projet.
+
+>[!NOTE]
+>
+>RDE prend en charge la configuration Dispatcher &quot;mode flexible&quot;, mais pas &quot;mode hérité&quot;. Voir [documentation du dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour plus d’informations sur les deux modes. Vous pouvez également consulter la documentation relative à la [migration vers le mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si vous ne l’avez pas déjà fait.
 
 Un déploiement réussi génère une réponse qui ressemble à ce qui suit :
 
