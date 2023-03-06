@@ -2,10 +2,10 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: d720d403cab4e51dd89a58aae5b4e29ca9da7f1c
-workflow-type: ht
+source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
+workflow-type: tm+mt
 source-wordcount: '2351'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -396,23 +396,23 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 Les niveaux de journal mod_rewrite sont définis par la variable REWRITE_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
 
-Elle peut être définie sur Error, Warn, Info, Debug et Trace1 à Trace8, avec la valeur par défaut Warn. Pour déboguer vos règles de réécriture (RewriteRules), il est recommandé de passer au niveau de journal Trace2.
+Il peut être défini sur error, warn, info, debug et trace1 - trace8, avec la valeur par défaut warn. Pour déboguer vos RewriteRules, il est recommandé d’augmenter le niveau de journal sur trace2.
 
 Pour plus d’informations, consultez la [documentation du module mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
 Pour définir le niveau de journal par environnement, utilisez la branche conditionnelle appropriée dans le fichier global.var, comme décrit ci-dessous :
 
 ```
-Define REWRITE_LOG_LEVEL Debug
+Define REWRITE_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define REWRITE_LOG_LEVEL Warn
+  Define REWRITE_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define REWRITE_LOG_LEVEL Error
+  Define REWRITE_LOG_LEVEL error
   ...
 </IfDefine>
 ```
@@ -474,23 +474,23 @@ Define REWRITE_LOG_LEVEL Debug
 
 Les niveaux de journal de Dispatcher sont définis par la variable DISP_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
 
-Elle peut être définie sur Error, Warn, Info, Debug et Trace1, avec la valeur par défaut Warn.
+Il peut être défini sur error, warn, info, debug et trace1, avec la valeur par défaut warn.
 
 Bien que la journalisation de Dispatcher prenne en charge plusieurs autres niveaux de granularité de la journalisation, nous recommandons d’utiliser les niveaux décrits ci-dessous pour AEM as a Cloud Service.
 
 Pour définir le niveau de journal par environnement, utilisez la branche conditionnelle appropriée dans le fichier `global.var`, comme décrit ci-dessous :
 
 ```
-Define DISP_LOG_LEVEL Debug
+Define DISP_LOG_LEVEL debug
   
 <IfDefine ENVIRONMENT_STAGE>
   ...
-  Define DISP_LOG_LEVEL Warn
+  Define DISP_LOG_LEVEL warn
   ...
 </IfDefine>
 <IfDefine ENVIRONMENT_PROD>
   ...
-  Define DISP_LOG_LEVEL Error
+  Define DISP_LOG_LEVEL error
   ...
 </IfDefine>
 ```
