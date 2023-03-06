@@ -2,7 +2,7 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service afin de configurer des paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: 37c948b8906bcf6dd7ee3acdc6c6b7d211a33058
+source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
 workflow-type: tm+mt
 source-wordcount: '2351'
 ht-degree: 97%
