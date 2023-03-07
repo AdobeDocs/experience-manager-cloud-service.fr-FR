@@ -2,7 +2,7 @@
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 5043caa54c3ba4553245a948758ee7da40c1e227
+source-git-commit: f93d3e75448eee3a16204475259573644c2ba1d5
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 89%
