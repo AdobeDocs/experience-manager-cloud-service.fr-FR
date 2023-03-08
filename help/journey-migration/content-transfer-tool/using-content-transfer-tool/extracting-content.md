@@ -2,10 +2,10 @@
 title: Extraction de contenu à partir de la source
 description: Extraction de contenu à partir de la source
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 509715eb6324a370e28d681111ee0fd3fa2a7b44
-workflow-type: ht
-source-wordcount: '765'
-ht-degree: 100%
+source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 98%
 
 ---
 
@@ -17,16 +17,13 @@ ht-degree: 100%
 >id="aemcloud_ctt_extraction"
 >title="Extraction de contenu"
 >abstract="L’extraction fait référence à l’extraction de contenu de l’instance AEM source dans une zone temporaire appelée jeu de migration. Un jeu de migration est un espace de stockage cloud fourni par Adobe pour stocker temporairement le contenu transféré entre l’instance AEM source et l’instance AEM Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#top-up-extraction-process" text="Extraction de complément"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-extraction-process" text="Extraction de complément"
 
 
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
 
 >[!NOTE]
->Si Amazon S3, Azure Data Store ou File Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’extraction. L’étape de précopie est la plus efficace pour la première occurrence complète d’extraction et d’ingestion. Pour ce faire, vous devez configurer un fichier `azcopy.config` avant d’exécuter l’extraction. Pour plus d’informations, consultez [Gestion des référentiels de contenu volumineux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr).
-
->[!IMPORTANT]
->Vous devez exécuter l’outil de mappage des utilisateurs avant d’extraire du contenu de la source. Consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=fr) pour plus d’informations.
+>Si Amazon S3, Azure Data Store ou File Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’extraction. L’étape de précopie est la plus efficace pour la première occurrence complète d’extraction et d’ingestion. Pour ce faire, vous devez configurer un fichier `azcopy.config` avant d’exécuter l’extraction. Pour plus d’informations, consultez [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md).
 
 1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans l’assistant **Transfert de contenu** et cliquez sur **Extraire**.
 
@@ -43,9 +40,6 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
    >[!NOTE]
    >Vous avez la possibilité de remplacer le conteneur d’évaluation pendant la phase d’extraction. Si l’option **Remplacer le conteneur d’évaluation** est désactivée, cela permet d’accélérer les extractions pour les migrations suivantes où les chemins d’accès au contenu ou les paramètres des versions d’inclusion n’ont pas été modifiés. Cependant, si les chemins d’accès au contenu ou les paramètres des versions ont changé, alors l’option **Remplacer le conteneur d’évaluation** doit être activée.
-
-   >[!IMPORTANT]
-   >Si le mappage des utilisateurs n’a pas été exécuté sur ce jeu de migration avant d’extraire le contenu de la source, un avertissement s’affiche indiquant que l’étape de mappage des utilisateurs est en attente, comme illustré dans la figure ci-dessus. Cliquez sur **Mappage des utilisateurs** pour exécuter l’outil de mappage des utilisateurs.
 
 1. Le champ **Extraction** affiche désormais le statut **RUNNING** pour indiquer que l’extraction est en cours d’exécution.
 
