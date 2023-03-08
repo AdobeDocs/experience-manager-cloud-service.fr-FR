@@ -2,10 +2,10 @@
 title: Gestion des activités
 description: 'La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques :'
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 100%
+source-wordcount: '2019'
+ht-degree: 99%
 
 ---
 
@@ -84,6 +84,10 @@ Ajoutez une activité ou modifiez une activité existante pour concentrer vos ef
 
 >[!NOTE]
 >
+>Pour être en mesure de **Sélection d’une configuration Target** vous devez être dans la variable **Auteurs d’activité Target** groupe.
+
+>[!NOTE]
+>
 >Les nouvelles activités Adobe Target doivent être *créées* dans l’éditeur de contenu ciblé et non dans la console **Activités**, car la synchronisation avec Adobe Target échouera.
 >
 >Vous pouvez toutefois modifier les activités existantes d’Adobe Target dans la console.
@@ -121,13 +125,13 @@ Si vous utilisez le test A/B Adobe Target :
    >
    >Après avoir créé une activité, vous devez la modifier de manière à ce qu’elle soit disponible.
 
-## Publication et annulation de la publication des activités {#publishing-and-unpublishing-activities}
+## Publication et dépublication des activités {#publishing-and-unpublishing-activities}
 
 Vous devez publier les activités afin de les rendre disponibles. À l’inverse, vous pouvez rendre les activités non disponibles en annulant leur publication.
 
 >[!NOTE]
 >
->Lorsque vous annulez la publication d’une activité, l’état de l’activité ne change que si vous actualisez la page.
+>Lorsque vous dépubliez une activité, l’état de l’activité ne change que si vous actualisez la page.
 
 Pour publier des activités ou annuler leur publication :
 
