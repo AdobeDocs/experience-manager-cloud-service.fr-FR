@@ -2,10 +2,10 @@
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: f93d3e75448eee3a16204475259573644c2ba1d5
+source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
-source-wordcount: '1878'
-ht-degree: 89%
+source-wordcount: '1846'
+ht-degree: 90%
 
 ---
 
@@ -37,9 +37,6 @@ Consultez la section ci-dessous pour comprendre les points importants à prendre
 * Vous devez accéder à [AzCopy](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) sur l’instance (ou la machine virtuelle) exécutant l’instance AEM source.
 
 * Le nettoyage de la mémoire d’entrepôt de données a été exécuté au cours des 7 jours précédents sur la source. Pour plus d’informations, voir [Récupération de l’espace mémoire de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
-
->[!NOTE]
->Actuellement, les rendus de texte ne fonctionnent pas correctement sur les ordinateurs Windows et il s’agit d’un problème connu. Cependant, nous allons résoudre ce problème dans la prochaine version et y apporter un correctif.
 
 ### Considérations supplémentaires si l’instance d’AEM source est configurée pour utiliser une banque de données Amazon S3 ou Azure Blob Storage. {#additional-considerations-amazons3-azure}
 
