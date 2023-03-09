@@ -3,10 +3,10 @@ title: Comment affecter un processus à un autre utilisateur, envoyer un e-mail 
 description: Les processus orientés formulaire vous permettent de créer rapidement des processus basés sur des formulaires adaptatifs. Vous pouvez utiliser Adobe Sign pour signer de manière électronique des documents, créer des processus métier basés sur des formulaires, récupérer et envoyer des données à plusieurs sources de données, et envoyer des notifications par e-mail.
 exl-id: e1403ba6-8158-4961-98a4-2954b2e32e0d
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
-source-git-commit: 6f6cf5657bf745a2e392a8bfd02572aa864cc69c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '7210'
-ht-degree: 99%
+source-wordcount: '7190'
+ht-degree: 94%
 
 ---
 
@@ -162,15 +162,15 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 ## Étape Convertir en PDF/A {#convert-pdfa}
 
-Le PDF/A est un format d’archivage prévu pour la conservation à long terme du contenu d’un document, avec incorporation des polices et décompression du fichier. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. Vous pouvez utiliser l’étape ***Convertir en PDF/A*** dans un workflow AEM pour convertir vos documents PDF au format PDF/A.
+PDF/A est un format d’archivage pour la conservation à long terme du contenu du document, en incorporant les polices et en décompressant le fichier. Par conséquent, un document PDF/A est généralement plus volumineux qu’un document PDF standard. Vous pouvez utiliser l’étape ***Convertir en PDF/A*** dans un workflow AEM pour convertir vos documents PDF au format PDF/A.
 
 L’étape de conversion en PDF/A présente les propriétés suivantes :
 
 **[!UICONTROL Document d’entrée]** : le document d’entrée peut être relatif à la payload, comporter un chemin d’accès absolu, être fourni en tant que payload ou être stocké dans une variable de type de données Document.
 
 **[!UICONTROL Options de conversion]** : cette propriété permet de spécifier les paramètres de conversion des documents PDF en documents PDF/A. Les différentes options disponibles sous cet onglet sont les suivantes :
-* **[!UICONTROL Conformité]** : indique la norme à laquelle le document PDF/A de sortie doit se conformer. Différentes normes PDF sont prises en charge, telles que PDF/A-1b, PDF/A-2b ou PDF/A-3b.
-* **[!UICONTROL Niveau de résultat]** : indique le niveau de résultat de la sortie de conversion, en tant que réussite ou échec, en résumé ou en détail.
+* **[!UICONTROL Conformité]** : indique la norme à laquelle le document PDF/A de sortie doit se conformer. Il prend en charge différentes normes de PDF telles que PDF/A-1b, PDF/A-2b ou PDF/A-3b.
+* **[!UICONTROL Niveau de résultat]**: Indique le niveau de résultat PassFail, Summary ou Details pour la sortie de conversion.
 * **[!UICONTROL Espace colorimétrique]** : indique l’espace colorimétrique prédéfini en tant que S_RGB, COATED_FOGRA27, JAPAN_COLOR_COATED ou SWOP qui peut être utilisé pour les fichiers de sortie au format PDF/A.
 * **[!UICONTROL Contenu facultatif]** : autorisez uniquement la visibilité d’objets graphiques et/ou d’annotations spécifiques dans le document PDF/A de sortie lorsqu’un ensemble de critères spécifié est rempli.
 
@@ -179,9 +179,9 @@ L’étape de conversion en PDF/A présente les propriétés suivantes :
 
 ## Étape Envoyer un courrier électronique {#send-email-step}
 
-Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’un formulaire adaptatif <!-- , link of an interactive communication--> ou avec un document PDF joint. L’étape Envoyer un courrier électronique prend en charge [le courrier électronique HTML](https://fr.wikipedia.org/wiki/HTML_email). Les courriers électroniques HTML sont réactifs et s’adaptent à différents clients de messagerie et tailles d’écran. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
+Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’un formulaire adaptatif <!-- , link of an interactive communication--> ou avec un document PDF joint. L’étape Envoyer un courrier électronique prend en charge [le courrier électronique HTML](https://en.wikipedia.org/wiki/HTML_email). Les courriers électroniques HTML sont réactifs et s’adaptent à différents clients de messagerie et tailles d’écran. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
 
-L’étape Envoyer un courrier électronique utilise le service de messagerie Day CQ pour envoyer des messages. Avant d’utiliser l’étape Envoyer un courrier électronique, assurez-vous que le service de messagerie est configuré. Par défaut, seuls les protocoles HTTP et HTTPs sont pris en charge. [Contactez l’ équipe d’assistance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#sending-email) pour activer les ports pour l’envoi de courriers électroniques et pour activer le protocole SMTP pour votre environnement. La restriction contribue à améliorer la sécurité de la plateforme.
+L’étape Envoyer un courrier électronique utilise le service de messagerie Day CQ pour envoyer des messages. Avant d’utiliser l’étape Envoyer un courrier électronique, assurez-vous que le service de messagerie est configuré. Par défaut, seuls les protocoles HTTP et HTTPs sont pris en charge. [Contactez l’ équipe d’assistance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) pour activer les ports pour l’envoi de courriers électroniques et pour activer le protocole SMTP pour votre environnement. La restriction contribue à améliorer la sécurité de la plateforme.
 
 L’étape Envoyer un courrier électronique possède les propriétés suivantes :
 
@@ -211,7 +211,7 @@ L’étape Envoyer un courrier électronique possède les propriétés suivantes
 
 * **[!UICONTROL Image :]** utilisez cette option pour inclure une image au courrier électronique. Après avoir sélectionné cette option, recherchez et sélectionnez l’image. L’option image est uniquement disponible pour les balises d’image (&lt;img src=&quot;&#42;&quot;/>) disponibles dans le modèle d’e-mail.
 
-**[!UICONTROL Adresse électronique du destinataire/expéditeur :]** sélectionnez l’option **[!UICONTROL Littéral]** pour spécifier manuellement une adresse électronique ou sélectionnez l’option **[!UICONTROL Récupérer à partir des métadonnées de processus]** pour récupérer l’adresse électronique d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **[!UICONTROL Récupérez à partir des métadonnées de processus]**. Sélectionnez l’option **[!UICONTROL Variable]** pour récupérer l’adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
+**[!UICONTROL Adresse électronique de l’expéditeur/du destinataire]**: Sélectionnez la **[!UICONTROL Littéral]** pour spécifier manuellement une adresse électronique ou sélectionner l’option **[!UICONTROL Récupération à partir des métadonnées de workflow]** pour récupérer l’adresse électronique à partir d’une propriété de métadonnées. Vous pouvez également spécifier une liste de tableaux de propriété de métadonnées pour l’option **[!UICONTROL Récupérez à partir des métadonnées de processus]**. Sélectionnez l’option **[!UICONTROL Variable]** pour récupérer l’adresse électronique à partir de la valeur stockée dans une variable de type de données Chaîne.
 
 * **[!UICONTROL La pièce jointe du fichier :]** l’actif disponible à l’emplacement spécifié est joint au courrier électronique. Le chemin d’accès de l’actif peut être lié à la charge utile ou au chemin d’accès absolu. Voici un exemple de chemin d’accès : [Répertoire_Charge_utile]/attachments/.
 
@@ -238,7 +238,7 @@ Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par
 
 **[!UICONTROL Enregistrez Chemin d’accès du document d’enregistrement généré :]** spécifiez l’emplacement pour conserver un fichier de document d’enregistrement. Vous pouvez remplacer le dossier de charge utile, placer le document d’enregistrement à un emplacement du répertoire de charge utile ou stocker le document d’enregistrement dans une variable de type de données Document.
 
-**[!UICONTROL Paramètre régional]** : spécifiez la langue du document d’enregistrement. Sélectionnez **[!UICONTROL Littéral]** pour sélectionner le paramètre régional dans une liste déroulante ou **[!UICONTROL Variable]** pour récupérer le paramètre régional à partir de la valeur stockée dans une variable de type de données Chaîne. Vous devez définir le code de la langue lors du stockage de la valeur de la langue dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
+**[!UICONTROL Paramètre régional]** : spécifiez la langue du document d’enregistrement. Sélectionnez **[!UICONTROL Littéral]** pour sélectionner le paramètre régional dans une liste déroulante ou **[!UICONTROL Variable]** pour récupérer le paramètre régional à partir de la valeur stockée dans une variable de type de données Chaîne. Définissez le code du paramètre régional lors du stockage de la valeur du paramètre régional dans une variable. Par exemple, spécifiez **en_US** pour l’anglais et **fr_FR** pour le français.
 
 ## Étape Invoquer DDX {#invokeddx}
 
@@ -248,12 +248,12 @@ L’étape Invoquer DDX présente les propriétés suivantes :
 
 **[!UICONTROL Documents d’entrée]** : utilisée pour définir les propriétés d’un document d’entrée. Les différentes options disponibles sous cet onglet sont les suivantes :
 * **[!UICONTROL Spécifier DDX à l’aide de]** : spécifie le document d’entrée relatif à la payload, dispose d’un chemin d’accès absolu, peut être fourni comme payload ou stocké dans une variable de type de données Document.
-* **[!UICONTROL Créer le map à partir de la payload]** : ajoute tous les documents sous le dossier de payload au map de document d’entrée pour l’étape Invoquer l’API dans l’Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans la carte.
-* **[!UICONTROL Map de document d’entrée]** : cette option est utilisée pour ajouter plusieurs entrées à l’aide du bouton **[!UICONTROL AJOUTER]**. Chaque entrée représente la clé du document dans le map et la source du document.
+* **[!UICONTROL Création d’une carte à partir de la charge utile]**: Ajoutez tous les documents situés sous le dossier de charge utile à Input Document’s Map pour l’API d’appel dans Assembler. Le nom du nœud pour chaque document est utilisé comme clé dans la carte.
+* **[!UICONTROL Input Document’s Map]**: L’option est utilisée pour ajouter plusieurs entrées à l’aide de **[!UICONTROL AJOUTER]** bouton . Chaque entrée représente la clé du document dans la carte et la source du document.
 
 **[!UICONTROL Options d’environnement]** : cette option est utilisée pour définir les paramètres de traitement de l’étape Invoquer l’API. Les différentes options disponibles sous cet onglet sont les suivantes :
 * **[!UICONTROL Valider uniquement]** : vérifie la validité du document DDX d’entrée.
-* **[!UICONTROL Échec en cas d’erreur]** : valeur booléenne indiquant si le service Invoquer l’API échoue en cas d’erreur ou non. Par défaut, sa valeur est définie sur False.
+* **[!UICONTROL Échec en cas d’erreur]**: Valeur booléenne pour indiquer si le service d’API d’appel échoue, en cas d’erreur ou non. Par défaut, sa valeur est définie sur False.
 * **[!UICONTROL Premier numéro Bates]** : indique le nombre qui s’incrémente automatiquement. Ce nombre qui s’incrémente automatiquement s’affiche automatiquement sur chaque page consécutive.
 * **[!UICONTROL Style par défaut]** : définit le style par défaut du fichier de sortie.
 
@@ -263,7 +263,7 @@ L’étape Invoquer DDX présente les propriétés suivantes :
 
 **[!UICONTROL Documents de sortie]** : indique l’emplacement d’enregistrement du fichier de sortie. Les différentes options disponibles sous cet onglet sont les suivantes :
 * **[!UICONTROL Enregistrer la sortie dans payload]** : enregistre les documents de sortie sous le dossier de payload, ou remplace la payload, si celle-ci est un fichier.
-* **[!UICONTROL Map du document de sortie]** : spécifie l’emplacement d’enregistrement explicite de chaque fichier de document en ajoutant une entrée par document. Chaque entrée représente le document et l’emplacement où l’enregistrer. S’il existe plusieurs documents de sortie, cette option est utilisée.
+* **[!UICONTROL Output Document&#39;s Map]**: Spécifie l’emplacement d’enregistrement explicite de chaque fichier de document en ajoutant une entrée par document. Chaque entrée représente le document et l’emplacement où l’enregistrer. S’il existe plusieurs documents de sortie, cette option est utilisée.
 
 ## Étape Invoquer le service de modèle de données de formulaire {#invoke-form-data-model-service-step}
 
@@ -485,7 +485,7 @@ Encrypt, Sign, and certify a document. [!DNL AEM Forms] supports both password b
 Send a document directly to a printer. It supports the following printing access mechanisms:
 
 * **[!UICONTROL Direct accessible printer]**: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.
-* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
+* **[!UICONTROL Indirect accessible printer]**: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX&reg; printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server's IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.
     -->
 
 ## Générer l’étape de sortie imprimée {#generatePrintedOutput}
@@ -500,11 +500,11 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 
 * **[!UICONTROL Sélectionner le fichier de modèle à l’aide de]**: spécifiez le chemin d’accès au fichier de modèle. Vous pouvez sélectionner le fichier de modèle à l’aide du chemin d’accès relatif à la payload, enregistré à un chemin d’accès absolu ou à l’aide d’une variable de type de données Document. Par exemple : [Payload_Directory]/Workflow/data.xml. Si le chemin d’accès n’existe pas dans le référentiel crx, un administrateur peut le créer avant de l’utiliser. De plus, vous pouvez également accepter la payload comme fichier de données d’entrée.
 
-* **[!UICONTROL Sélectionner le document de données à l’aide de]** : spécifiez le chemin d’accès d’un fichier de données d’entrée. Vous pouvez sélectionner le fichier de données d’entrée à l’aide du chemin d’accès relatif à la payload, enregistré à un chemin absolu ou à l’aide d’une variable de type de données Document. Par exemple : [Payload_Directory]/Workflow/data.xml. Si le chemin d’accès n’existe pas dans le référentiel crx, un administrateur peut le créer avant de l’utiliser.
+* **[!UICONTROL Sélectionner le document de données à l’aide de]**: Spécifiez le chemin d’accès d’un fichier de données d’entrée. Vous pouvez sélectionner le fichier de données d’entrée à l’aide du chemin d’accès relatif à la payload, enregistré à un chemin absolu ou à l’aide d’une variable de type de données Document. Par exemple : [Payload_Directory]/Workflow/data.xml. Si le chemin d’accès n’existe pas dans le référentiel crx, un administrateur peut le créer avant de l’utiliser.
 
 * **[!UICONTROL Printer Format]** : une valeur Print Format qui spécifie la langue de description de page à utiliser lorsqu’un fichier XDC n’est pas fourni, afin de générer le flux de sortie. Si vous fournissez une valeur littérale, sélectionnez l’une de ces valeurs :
 
-   * **[!UICONTROL color PCL]**: Utilisez l’option pour spécifier un fichier XDC pour PCL.
+   * **[!UICONTROL color PCL]**: Utilisez cette option pour spécifier un fichier XDC pour PCL.
    * **[!UICONTROL PostScript générique]**: Utilisez cette option pour spécifier un fichier XDC générique pour PostScript.
    * **[!UICONTROL ZPL 300 DPI]** : utilisez ZPL 300 DPI. Le fichier zpl300.xdc est utilisé.
    * **[!UICONTROL ZPL 600 DPI]** : utilisez ZPL 600 DPI. Le fichier zpl600.xdc est utilisé.
@@ -520,21 +520,21 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 
 **[!UICONTROL Propriétés de sortie]**
 
-* **[!UICONTROL Enregistrer le document de sortie à l’aide de]** : indiquez l’emplacement d’enregistrement du fichier de sortie. Vous pouvez enregistrer le fichier de sortie à un emplacement relatif à la payload, dans une variable ou spécifier un emplacement absolu pour enregistrer le fichier de sortie. Si le chemin d’accès n’existe pas dans le référentiel crx, un administrateur peut le créer avant de l’utiliser.
+* **[!UICONTROL Enregistrer le document de sortie à l’aide de]** : indiquez l’emplacement d’enregistrement du fichier de sortie. Vous pouvez enregistrer le fichier de sortie à un emplacement relatif à la charge utile, dans une variable, ou spécifier un emplacement absolu pour enregistrer le fichier de sortie. Si le chemin d’accès n’existe pas dans le référentiel crx, un administrateur peut le créer avant de l’utiliser.
 
 **[!UICONTROL Propriétés avancées]**
 
-* **[!UICONTROL Sélectionner l’emplacement racine du contenu à l’aide de]** : la racine du contenu est une valeur de chaîne qui spécifie l’URI, la référence absolue ou l’emplacement dans le référentiel pour récupérer les ressources relatives utilisées par la conception de formulaire. Par exemple, si la conception de formulaire fait relativement référence à une image, comme ../myImage.gif, le fichier myImage.gif doit être situé dans repository://. La valeur par défaut est repository://, qui pointe vers le niveau racine du référentiel.
+* **[!UICONTROL Sélectionner l’emplacement racine du contenu à l’aide de]** : la racine du contenu est une valeur de chaîne qui spécifie l’URI, la référence absolue ou l’emplacement dans le référentiel pour récupérer les ressources relatives utilisées par la conception de formulaire. Par exemple, si la conception de formulaire fait référence à une image relativement, comme `../myImage.gif`, `myImage.gif` must be `repository://`. La valeur par défaut est `repository://`, qui pointe vers le niveau racine du référentiel.
 
-   Lorsque vous sélectionnez une ressource dans votre application, le chemin d’accès de l’URI de la racine du contenu doit présenter la structure appropriée. Par exemple, si un formulaire est sélectionné à partir d’une application nommée SampleApp et placé dans SampleApp/1.0/forms/Test.xdp, l’URI de la racine du contenu doit être spécifié comme suit : repository://administrator@password/Applications/SampleApp/1.0/forms/ ou repository:/Applications/SampleApp/1.0/forms/ (lorsque l’autorité est nulle). Lorsque l’URI de la racine de contenu est spécifié de cette manière, les chemins d’accès de toutes les ressources référencées dans le formulaire seront résolus par rapport à cet URI.
+   Lorsque vous sélectionnez une ressource dans votre application, le chemin d’accès de l’URI de la racine du contenu doit présenter la structure appropriée. Par exemple, si un formulaire est sélectionné dans une application nommée SampleApp et est placé dans `SampleApp/1.0/forms/Test.xdp`, l’URI racine du contenu doit être spécifié comme suit : `repository://administrator@password/Applications/SampleApp/1.0/forms/`ou `repository:/Applications/SampleApp/1.0/forms/` (lorsque l’autorité est nulle). Lorsque l’URI de la racine de contenu est spécifié de cette manière, les chemins d’accès de toutes les ressources référencées dans le formulaire seront résolus par rapport à cet URI.
 
 * **[!UICONTROL Sélectionner un fichier XCI à l’aide de]** : les fichiers XCI sont utilisés pour décrire les polices et les autres propriétés utilisées pour les éléments de conception de formulaire. Vous pouvez conserver un fichier XCI relatif à la payload, à un chemin d’accès absolu ou à l’aide d’une variable de type de données Document.
 
 * **[!UICONTROL Locale]** : définit la langue utilisée pour générer le document PDF. Si vous fournissez une valeur littérale, sélectionnez une langue dans la liste ou l’une de ces valeurs :
-   * **[!UICONTROL Utiliser le serveur par défaut]**[!DNL AEM Forms] : (par défaut) utilisez le paramètre Paramètre régional qui est configuré sur le serveur Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](http://www.adobe.com/go/learn_aemforms_designer_65_fr).)
+   * **[!UICONTROL Utiliser le serveur par défaut]**[!DNL AEM Forms] : (par défaut) utilisez le paramètre Paramètre régional qui est configuré sur le serveur Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
    * **[!UICONTROL Pour utiliser une valeur personnalisée]** : 
-saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir une liste complète des codes des paramètres régionaux pris en charge, voir http://java.sun.com/j2se/1.5.0/docs/guide/intl/locale.doc.html.
+saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir la liste complète des codes de paramètres régionaux pris en charge, voir https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
 
 * **[!UICONTROL Copies]** : une valeur entière qui spécifie le nombre de copies à générer pour la sortie. La valeur par défaut est 1.
 

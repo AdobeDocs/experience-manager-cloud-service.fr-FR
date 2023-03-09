@@ -4,10 +4,10 @@ description: Extraction de contenu à partir de la source
 hide: true
 hidefromtoc: true
 exl-id: 9f43356c-ba51-48bc-97f5-f1f5db81e7f3
-source-git-commit: 22bbf15e33ab3d5608dc01ed293bb04b07cb6c8c
+source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 100%
+source-wordcount: '534'
+ht-degree: 70%
 
 ---
 
@@ -17,10 +17,10 @@ ht-degree: 100%
 
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
 >[!NOTE]
->Si Amazon S3 ou Azure Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’extraction. Pour ce faire, vous devez configurer un fichier `azcopy.config` avant d’exécuter l’extraction. Pour plus d’informations, consultez [Gestion des référentiels de contenu volumineux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr).
+>Si Amazon S3 ou Azure Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’extraction. Pour ce faire, vous devez configurer une `azcopy.config` avant d’exécuter l’extraction. Pour plus d’informations, consultez [Gestion des référentiels de contenu volumineux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=en).
 
 >[!IMPORTANT]
->Vous devez exécuter l’outil de mappage des utilisateurs avant d’extraire du contenu de la source. Consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/user-mapping-tool/using-user-mapping-tool.html?lang=fr) pour plus d’informations.
+>Vous devez exécuter l’outil de mappage des utilisateurs avant d’extraire du contenu de la source. Consultez [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en) pour plus d’informations.
 
 1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans l’assistant **Transfert de contenu** et cliquez sur **Extraire**.
 
@@ -31,10 +31,10 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/extraction-02.png)
 
    >[!NOTE]
-   >Vous avez la possibilité de remplacer le conteneur d’évaluation pendant la phase d’extraction.
+   >Vous pouvez éventuellement remplacer le conteneur d’évaluation pendant la phase d’extraction.
 
    >[!IMPORTANT]
-   >Si le mappage des utilisateurs n’a pas été exécuté sur ce jeu de migration avant d’extraire le contenu de la source, un avertissement s’affiche indiquant que l’étape de mappage des utilisateurs est en attente, comme illustré dans la figure ci-dessous. Cliquez sur **Mappage des utilisateurs** pour exécuter l’outil de mappage des utilisateurs.
+   >Si le mappage utilisateur n’a pas été exécuté sur ce jeu de migration avant d’extraire du contenu de la source, un avertissement s’affiche indiquant que l’étape de mappage utilisateur est en attente, comme illustré dans la figure ci-dessous. Sélectionner **Mappage des utilisateurs** pour exécuter l’outil de mappage des utilisateurs.
    >![image](/help/journey-migration/content-transfer-tool/assets-ctt/user-mapping-extract.png)
 
 1. Le champ **Extraction** affiche désormais le statut **RUNNING** pour indiquer que l’extraction est en cours d’exécution.
@@ -55,7 +55,7 @@ L’outil de transfert de contenu comporte une fonctionnalité pour traiter un c
 
 >[!NOTE]
 >Suite au transfert initial d’un contenu, il est recommandé d’effectuer fréquemment des compléments différentiels pour réduire la période de gel du transfert final de contenu différentiel avant de passer en ligne sur Cloud Service.
->En outre, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
+>Veillez également à ce que la structure de contenu du contenu existant ne soit pas modifiée au moment de l’extraction initiale au moment de l’exécution de l’extraction de complément. Les cumuls ne peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 Une fois le processus d’extraction terminé, vous pouvez transférer le contenu différentiel à l’aide de la méthode d’extraction de complément.
 
@@ -74,4 +74,4 @@ Suivez les étapes ci-dessous :
 
 ## Prochaines étapes {#whats-next}
 
-Une fois que vous avez appris à extraire du contenu de la source dans l’outil de transfert de contenu, vous êtes prêt à apprendre comment fonctionne le processus d’ingestion dans l’outil de transfert de contenu. Voir [Ingestion de contenu dans la cible](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour savoir comment ingérer votre jeu de migration à partir de l’outil de transfert de contenu.
+Une fois que vous avez appris à propos de l’extraction de contenu de la source dans l’outil de transfert de contenu, vous êtes prêt à apprendre le processus d’ingestion dans l’outil de transfert de contenu. Voir [Ingestion de contenu dans la cible](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md) pour savoir comment ingérer votre jeu de migration à partir de l’outil de transfert de contenu.
