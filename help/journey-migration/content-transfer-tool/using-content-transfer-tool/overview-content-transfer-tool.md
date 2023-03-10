@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 5a4592531377109fba88b5cdc9df027803feca7a
+source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
-source-wordcount: '581'
-ht-degree: 94%
+source-wordcount: '708'
+ht-degree: 77%
 
 ---
 
@@ -63,6 +63,25 @@ L’outil de transfert de contenu comporte une fonctionnalité pour traiter un c
 Au cours de la phase d’extraction, pour ***compléter*** un jeu de migration existant, l’option de *remplacement* doit être désactivée. Pour en savoir plus, voir [Extraction de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md#top-up-extraction-process).
 
 Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus du contenu actuel, l’option *Effacer* doit être désactivée. Pour en savoir plus, voir [Ingestion de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process).
+
+## Expiration du jeu de migration {#migration-set-expiry}
+
+>[!CONTEXTUALHELP]
+>id="aemcloud_ctt_migrationset_expiry"
+>title="Expiration d’un jeu de migration"
+>abstract="Découvrez l’expiration d’un jeu de migration."
+
+Tous les jeux de migration finiront par expirer après une longue période d’inactivité d’environ 90 jours. Une fois les indicateurs affichés sur la carte du projet et les lignes du tableau des tâches de migration pendant une période donnée, le jeu de migration expire et ses données ne sont plus disponibles. Le délai d’expiration peut facilement être prolongé en agissant sur le jeu de migration en :
+
+* modification de sa description
+* obtention de sa clé d’extraction
+* exécution d’une extraction sur celle-ci
+* exécution d’une ingestion à partir de celle-ci
+
+L’expiration d’un jeu de migration peut être surveillée sur la ligne Jeu de migration . Un indicateur visuel utile indiquant qu’un jeu de migration approche sa date d’expiration a également ajouté la carte du projet.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
+
 
 ## Prochaines étapes {#whats-next}
 

@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 3ccc225a665392552621c78615a31917eb44f1fd
+source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 81%
+source-wordcount: '1693'
+ht-degree: 78%
 
 ---
 
@@ -37,7 +37,8 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
 1. Fournissez les informations requises pour créer une ingestion.
 
-   * Sélectionnez le jeu de migration que vous venez d’extraire en tant que source.
+   * Sélectionnez le jeu de migration contenant les données extraites comme Source.
+      * Les jeux de migration expirent après une longue période d’inactivité. Il est donc prévu que l’ingestion se produise relativement peu de temps après l’exécution de l’extraction. Réviser [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
    * Sélectionnez l’environnement de destination. C’est à ce moment que le contenu du jeu de migration sera ingéré. Sélectionnez le niveau. (Auteur/Publication).
 
    >[!NOTE]
@@ -90,7 +91,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-04.png)
    
-   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=en#important-considerations) to learn more.
+   Also, refer to [Important Considerations for Using Content Transfer Tool](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html#important-considerations) to learn more.
 
 1. Once the ingestion is complete, the status under **Author ingestion** updates to **FINISHED**.
 

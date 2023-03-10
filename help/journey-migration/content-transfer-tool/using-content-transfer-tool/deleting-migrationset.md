@@ -2,10 +2,10 @@
 title: Suppression d’un jeu de migration dans l’outil de transfert de contenu
 description: Suppression d’un jeu de migration dans l’outil de transfert de contenu
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
-source-git-commit: b10fab405ae3afad36c727c91dd52ad3b8cee5f6
+source-git-commit: c61407d70fb65a7fdc72174881b23db4deca556a
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 94%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_delete_migrationset"
 >title="Suppression d’un jeu de migration"
->abstract="Découvrez comment supprimer un jeu de migration."
+>abstract="Découvrez la suppression d’un jeu de migration."
 
 Les jeux de migration peuvent être supprimés de Cloud Acceleration Manager.
 

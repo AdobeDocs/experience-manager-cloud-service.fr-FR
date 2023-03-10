@@ -2,10 +2,10 @@
 title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: b36756395cc516ab4e4725f718ed6de77d9872f8
+source-git-commit: 2c53d1cce6b1e889a0e49254621d02bd152bfbbf
 workflow-type: tm+mt
-source-wordcount: '1538'
-ht-degree: 94%
+source-wordcount: '1554'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ Une nouvelle version de l’outil de transfert de contenu est disponible, qui in
 * L’amélioration de l’expérience utilisateur grâce à une meilleure gestion des statuts de chargement, des barrières de sécurité et des erreurs
 * La conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
 
-Avant d’utiliser la nouvelle version vous devez désinstaller les anciennes versions de l’outil de transfert de contenu. Cette étape est nécessaire car la nouvelle version produit un changement architectural majeur. Avec la version 2.0.10, vous devrez également créer des jeux de migration et réexécuter l’extraction et l’ingestion sur les nouveaux jeux de migration. Si une migration est déjà en cours, vous pouvez continuer à utiliser la version antérieure du CTT jusqu’à ce que la migration soit terminée.
+Avant d’utiliser la nouvelle version vous devez désinstaller les anciennes versions de l’outil de transfert de contenu. Cette étape est nécessaire car la nouvelle version produit un changement architectural majeur. Avec la version 2.x, vous devrez créer de nouveaux jeux de migration et relancer l’extraction et l’ingestion sur les nouveaux jeux de migration.
 Les versions antérieures à la version 2.0.0 ne seront plus prises en charge et il est conseillé d’utiliser la version la plus récente.
 
 Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version de l’outil de transfert de contenu :
@@ -92,6 +92,8 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * Si vous avez l’intention d’effectuer des compléments, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 * Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
+
+* Un jeu de migration expire après une longue période d’inactivité, après laquelle ses données ne seront plus disponibles. Veuillez consulter [Expiration du jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) pour plus d’informations.
 
 ## Prochaines étapes {#whats-next}
 
