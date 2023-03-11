@@ -2,9 +2,9 @@
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '13853'
+source-wordcount: '13870'
 ht-degree: 71%
 
 ---
@@ -100,7 +100,7 @@ Voici quelques-uns des types spécifiques de contenu non textuel auquel un texte
 * Icônes : certains petits pictogrammes (images) communiquent parfois des informations spécifiques. Ils doivent être utilisés de manière uniforme sur une page et un site. Toutes les instances de l’icône sur une page ou un site doivent avoir le même texte secondaire bref et succinct, sauf si cela duplique de manière superflue le texte adjacent.
 * Graphiques et graphiques : Elles représentent généralement des données numériques. Ainsi, une option permettant de fournir un texte secondaire peut être d’inclure un bref résumé des principales tendances affichées dans le graphique ou le graphique. Si nécessaire, fournissez également une description plus détaillée dans le texte à l’aide de la variable **Description** dans le champ **Avancé** propriétés de l’image. Vous pouvez également fournir les données source sous forme tabulaire ailleurs dans la page ou le site.
 * Cartes, diagrammes, organigrammes : pour les graphiques produisant des données spatiales (par exemple, pour la description des relations entre des objets ou un processus), assurez-vous que le message clé est fourni au format texte et que ces informations textuelles sont placées à proximité de chaque point de données associé. Dans le cas des cartes, il est probable que l’utilisation d’un équivalent en texte intégral ne soit pas adaptée. Toutefois, si la carte est fournie pour aider les gens à trouver leur chemin vers un emplacement donné, alors le texte secondaire de l’image de la carte peut indiquer brièvement *Carte de X*, puis donner des indications vers cet emplacement en texte à un autre endroit, dans la page ou dans le champ **Description** de l’onglet **Avancé** du composant **Image**.
-* CAPTCHA : Un CAPTCHA est un *Test public de Turing entièrement automatisé pour informer les ordinateurs et les humains de leur éparpillement*. Il s’agit d’un contrôle de sécurité utilisé sur les pages web pour distinguer les humains des logiciels malveillants, mais qui peut entraîner des barrières à l’accessibilité. Il s’agit d’images qui demandent aux utilisateurs de décrire ce qu’ils voient pour réussir un test de sécurité. Il n’est pas possible de fournir un texte de remplacement à l’image. Vous devez donc envisager des solutions non graphiques alternatives. Le W3C offre plusieurs suggestions. Chacune de ces approches a ses mérites et ses inconvénients.
+* CAPTCHA : Un CAPTCHA est un *Test public de Turing entièrement automatisé pour informer les ordinateurs et les humains de leur éparpillement*. Il s’agit d’un contrôle de sécurité utilisé sur les pages web pour distinguer les humains des logiciels malveillants, mais qui peut causer des problèmes en matière d’accessibilité. Il s’agit d’images qui demandent aux utilisateurs de décrire ce qu’ils voient pour réussir un test de sécurité. Il n’est pas possible de fournir un texte de remplacement à l’image. Vous devez donc envisager des solutions non graphiques alternatives. Le W3C offre plusieurs suggestions. Chacune de ces approches a ses mérites et ses inconvénients.
 
    * Énigmes logiques
    * Utilisation d’une sortie audio plutôt que d’images
@@ -115,7 +115,7 @@ Le niveau de contraste entre l’arrière-plan et le texte au premier plan doit 
 
 * [Compréhension du critère de réussite 1.1.1](https://www.w3.org/WAI/WCAG21/Understanding/non-text-content.html)
 * [Comment remplir le critère de réussite 1.1.1](https://www.w3.org/WAI/WCAG21/quickref/#non-text-content)
-* [Explication des CAPTCHA et alternatives par le W3C](https://www.w3.org/TR/turingtest/)
+* [Explication du W3C et alternatives à CAPTCHA](https://www.w3.org/TR/turingtest/)
 
 <!--
 * [W3C: HTML5 Techniques for providing useful text alternatives (draft)](https://dev.w3.org/html5/alt-techniques/)
@@ -197,10 +197,10 @@ Si vous devez utiliser des sous-titres intégrés, incorporez le texte à la pis
 * [Compréhension du critère de réussite 1.2.2](https://www.w3.org/WAI/WCAG21/Understanding/captions-prerecorded.html)
 * [Comment remplir le critère de réussite 1.2.2](https://www.w3.org/WAI/WCAG21/quickref/#captions-prerecorded)
 
-<!--
-* [W3C: Synchronized Multimedia](https://www.w3.org/AudioVideo/)
-* [Captions, Transcripts, and Audio Descriptions - by WebAIM](https://webaim.org/techniques/captions/)
--->
+c
+* [W3C: Synchronized Multimedia (Multimédia synchronisé ; en anglais)](https://www.w3.org/AudioVideo/)
+* [Captions, Transcripts, and Audio Descriptions (Sous-titres, transcriptions et descriptions audio), par WebAIM (en anglais)](https://webaim.org/techniques/captions/)
+—>
 
 ### Audio-description ou version de remplacement pour un média temporel (pré-enregistré) (1.2.3) {#audio-description-or-media-alternative-prerecorded}
 
@@ -251,7 +251,7 @@ Suivez les instructions de la section [Sous-titres (pré-enregistrés)](#caption
 
 Ce document ne vise pas à fournir des instructions détaillées à ce sujet, mais vous trouverez des renseignements utiles en suivant les liens ci-après :
 
-* [WebAIM : Real Time Captioning (sous-titrage en temps réel ; en anglais)](https://webaim.org/techniques/captions/realtime)
+* [WebAIM : Sous-titrage en temps réel](https://webaim.org/techniques/captions/realtime)
 
 * [Projet AccessComputing (University of Washington) : est-il possible de générer des sous-titres automatiquement à l’aide de la reconnaissance vocale ?](https://www.washington.edu/accesscomputing/can-captions-be-generated-automatically-using-speech-recognition)
 
@@ -538,13 +538,13 @@ N’oubliez pas que les polices peuvent différer concernant les modes de restit
 Faites preuve de bon sens et défiez-vous de la lisibilité et de la convivialité lorsque vous sélectionnez les polices et le dimensionnement appropriés au contenu web.
 
 >[!NOTE]
-Les outils suivants peuvent vous aider à effectuer une conversion vers d’autres unités :
-* [Calculateur de Px à Em](https://www.omnicalculator.com/conversion/px-to-em)
-* [Conversion des tailles de polices : pixel-point-em-rem-percent](https://www.websemantics.uk/tools/)
-* [Convertisseur de Pixel à EM](https://www.w3schools.com/tags/ref_pxtoemconversion.asp)
+Effectuez une recherche web sur les expressions suivantes pour trouver des outils qui peuvent vous aider à effectuer une conversion vers d’autres unités :
+* Calculateur de Px à Em <!--  (https://www.omnicalculator.com/conversion/px-to-em) -->
+* Conversion des tailles de polices : pixel-point-em-rem-percent <!-- CAUSES 404 ERROR DESPITE URL BEING CORRECT https://www.websemantics.uk/tools/ -->
+* Convertisseur de Pixel à EM <!-- (https://www.w3schools.com/tags/ref_pxtoemconversion.asp) -->
 
 
-Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que l’[analyseur de contraste des couleurs du groupe Paciello](https://www.tpgi.com/resources/contrast-analyser.html) ou l’[outil de vérification du contraste des couleurs de WebAIM](https://webaim.org/resources/contrastchecker/), afin de vérifier les paires de couleurs et de signaler les éventuels problèmes de contraste.
+Pour vérifier les rapports de contraste, utilisez un outil de contraste des couleurs, tel que le [Analyseur de contraste des couleurs du groupe Paciello](https://www.tpgi.com/resources/contrast-analyser.html) ou le [Vérificateur de contraste des couleurs WebAIM](https://webaim.org/resources/contrastchecker/). Ces outils vous permettent de vérifier des paires de couleurs et de signaler tout problème de contraste.
 
 Si vous êtes moins intéressé par l’aspect de votre page, vous pouvez également choisir de ne pas spécifier de couleurs de texte d’arrière-plan et de premier plan. Aucune vérification du contraste n’est requise, car le navigateur de l’utilisateur détermine les couleurs du texte et de l’arrière-plan.
 
@@ -846,7 +846,7 @@ John Smith's publications
 >[!NOTE]
 L’extrait de code ci-dessus est une illustration ; il est recommandé d’utiliser le composant **Image**.
 
-Bien qu’il soit conseillé de fournir un texte de lien qui identifie l’objectif du lien sans avoir besoin de contexte supplémentaire, il est admis que ce n’est pas toujours possible. Vous pouvez utiliser des liens sans contexte dans les cas suivants, dont des exemples HTMLS se trouvent dans la section [Comment remplir le critère de réussite 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
+Bien qu’il soit recommandé de fournir un texte du lien qui identifie l’objectif du lien sans avoir besoin de contexte supplémentaire, il est reconnu que cela n’est pas toujours possible. Vous pouvez utiliser des liens sans contexte dans les cas suivants, dont des exemples HTMLS se trouvent dans la section [Comment remplir le critère de réussite 2.4.4](https://www.w3.org/WAI/WCAG21/quickref/#link-purpose-in-context).
 
 * Si le texte du lien fait partie d’une liste de liens étroitement liés et si l’élément de liste encadrant le lien fournit suffisamment de contexte.
 * Si l’objet d’un lien peut être clairement identifié dans le texte du paragraphe *précédent* (et non suivant).

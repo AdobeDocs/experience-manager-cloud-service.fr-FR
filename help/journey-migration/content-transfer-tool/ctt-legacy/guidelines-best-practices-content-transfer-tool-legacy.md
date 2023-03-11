@@ -4,10 +4,10 @@ description: Bonnes pratiques et instructions pour l’utilisation de l’outil 
 hide: true
 hidefromtoc: true
 exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
-source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
+source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
-source-wordcount: '1477'
-ht-degree: 55%
+source-wordcount: '1476'
+ht-degree: 54%
 
 ---
 
@@ -57,7 +57,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Le jeton d’accès peut expirer périodiquement, soit après une période spécifique, soit après la mise à niveau de l’environnement Cloud Service. Si le jeton d’accès a expiré, vous ne pouvez pas vous connecter à l’instance du Cloud Service. Dans ce cas, vous devez récupérer le nouveau jeton d’accès. L’icône d’état associée à un jeu de migration existant se transforme en nuage rouge et affiche un message lorsque vous le survolez.
 
-* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Le contenu spécifié dans le jeu de migration est ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Lors du déplacement du contenu vers une instance de production, installez CTT sur l’instance d’auteur source pour déplacer le contenu vers l’instance d’auteur cible. De même, installez CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour plus d’informations, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool).
+* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Le contenu spécifié dans le jeu de migration est ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Lors du déplacement du contenu vers une instance de production, installez CTT sur l’instance d’auteur source pour déplacer le contenu vers l’instance d’auteur cible. De même, installez CTT sur l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Voir [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) pour plus d’informations.
 
 * Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’*extraction* copie l’intégralité de `/home` dans le jeu de migration et le processus d’*ingestion* copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré. Pour mapper automatiquement les utilisateurs et les groupes existants avec leurs ID IMS, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/legacy-user-mapping-tool/using-user-mapping-tool-legacy.html?lang=en).
 
