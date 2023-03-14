@@ -5,9 +5,10 @@ description: Création d’un Forms d’engagement à l’aide des composants pr
 seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
-source-git-commit: 8f3ffc72507be1d28bc437041579578d6a479e23
+hidefromtoc: true
+source-git-commit: b68902ef4f7c61f77aa0d03ad718d5bf3023dea0
 workflow-type: tm+mt
-source-wordcount: '2453'
+source-wordcount: '2465'
 ht-degree: 1%
 
 ---
@@ -242,8 +243,6 @@ Configurez le référentiel local du thème :
 
    ![](/help/forms/assets/screenshot2028116429.png)
 
-   ![](/help/forms/assets/screenshot20228116569.png)
-
 
 1. Dans la fenêtre d’invite de commande, exécutez la commande suivante :
 
@@ -271,8 +270,7 @@ Configurez le référentiel local du thème :
 
    >[!NOTE]
    >
-   >Si un écran vierge s’affiche dans le navigateur après l’exécution de la fonction `npm run live` commande, modifier `localhost` dans l’URL du navigateur à 127.0.0.1 et accédez à **Entrée**.
-
+   >Si un écran vierge s’affiche dans le navigateur après l’exécution de la fonction `npm run live` pendant plus de 3 à 4 minutes, modifiez `localhost` dans l’URL du navigateur à 127.0.0.1 et accédez à **Entrée**.
 
 
    ![](/help/forms/assets/screenshot2028115129.png)
@@ -381,7 +379,8 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
    >[!NOTE]
    >
-   >Si un écran vierge s’affiche dans le navigateur après l’exécution de la fonction `npm start` commande, modifier `localhost` dans l’URL du navigateur à 127.0.0.1 et accédez à **Entrée**.
+   > 
+   > Si un écran vierge s’affiche dans le navigateur après l’exécution de la fonction `npm start` pendant plus de 3 à 4 minutes, modifiez `localhost` dans l’URL du navigateur à 127.0.0.1 et accédez à **Entrée**.
 
    ![](/help/forms/assets/screenshot2028118229.png)
 
@@ -529,7 +528,7 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
    >[!NOTE]
    >
-   >Si un écran vierge s’affiche dans le navigateur après l’exécution de la fonction `npm start` commande, modifier `localhost` dans l’URL du navigateur à 127.0.0.1 et accédez à **Entrée**.
+   >Si un écran vierge s’affiche dans le navigateur après l’exécution de la fonction `npm start` pendant plus de 3 à 4 minutes, modifiez `localhost` dans l’URL du navigateur à 127.0.0.1 et accédez à **Entrée**.
 
    ![](/help/forms/assets/screenshot2028127229.png)
 
