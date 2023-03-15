@@ -9,18 +9,14 @@ level: Beginner
 kt: 9457,9479,9480
 thumbnail: 339238.jpg
 exl-id: 3ddd452c-6291-4560-aabc-dcd6e628f7ab
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '101'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Bibliothèques de stockage d’App Builder
-
->[!IMPORTANT]
->
-> _Adobe Project Firefly, comme mentionné dans les vidéos de cette série, se nomme désormais App Builder_.
 
 ## Présentation des bibliothèques de stockage
 

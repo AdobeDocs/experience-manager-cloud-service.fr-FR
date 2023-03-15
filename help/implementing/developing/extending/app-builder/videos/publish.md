@@ -9,18 +9,14 @@ level: Beginner
 kt: 9462
 thumbnail: 339251.jpg
 exl-id: ebbc1249-ed82-47c3-96ce-27a4d9c8ee99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Publication d’applications App Builder
-
->[!IMPORTANT]
->
-> _Adobe Project Firefly, comme mentionné dans les vidéos de cette série, se nomme désormais App Builder_.
 
 Découvrez comment envoyer votre demande App Builder pour révision et approbation, et comment exécuter une nouvelle application publiée.
 
