@@ -2,8 +2,8 @@
 title: Test de qualité du code
 description: Découvrez comment fonctionne le test de qualité du code des pipelines et comment il peut améliorer la qualité de vos déploiements.
 exl-id: e2981be9-fb14-451c-ad1e-97c487e6dc46
-source-git-commit: d60659f443d130a195fd81cfe4773cd87df28264
-workflow-type: ht
+source-git-commit: ae586cc2f576aa4aee4cc611b5184e2bbda6696c
+workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 100%
 
@@ -112,15 +112,15 @@ La bonne solution consiste alors à supprimer le mot de passe codé en dur.
 
 Dans le cadre du processus d’analyse de la qualité, Cloud Manager effectue une analyse des packages de contenu générés par la version Maven. Cloud Manager propose des optimisations pour accélérer ce processus, qui sont efficaces lorsque certaines contraintes de conditionnement sont observées. La plus importante est l’optimisation effectuée pour les projets qui génèrent un seul package de contenu, généralement appelé package « all », qui contient un certain nombre d’autres packages de contenu générés par la version, qui sont marqués comme étant ignorés. Lorsque Cloud Manager détecte ce scénario, plutôt que de décompresser le package « all », les packages de contenu individuels sont analysés directement et triés en fonction des dépendances. Par exemple, considérez la sortie de génération suivante.
 
-* `all/myco-all-1.0.0-SNAPSHOT.zip` (module de contenu)
-* `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (module de contenu ignoré)
-* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (module de contenu ignoré)
+* `all/myco-all-1.0.0-SNAPSHOT.zip` (package de contenu)
+* `ui.apps/myco-ui.apps-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
+* `ui.content/myco-ui.content-1.0.0-SNAPSHOT.zip` (package de contenu ignoré)
 
-Si les seuls éléments contenus dans `myco-all-1.0.0-SNAPSHOT.zip` sont les deux modules de contenu ignorés, les deux modules intégrés seront analysés au lieu du module de contenu « all ».
+Si les seuls éléments contenus dans `myco-all-1.0.0-SNAPSHOT.zip` sont les deux packages de contenu ignorés, les deux packages intégrés seront analysés au lieu du package de contenu « all ».
 
 Pour les projets qui produisent des dizaines de packages incorporés, il a été démontré que cette optimisation permet de gagner jusqu’à 10 minutes par exécution de pipeline.
 
-Un cas particulier peut se produire lorsque le module de contenu « all » contient une combinaison de modules de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés mentionnés précédemment ainsi qu’un ou plusieurs lots OSGi, un nouveau package de contenu minimal est créé avec uniquement les lots OSGi. Ce module est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
+Un cas particulier peut se produire lorsque le package de contenu « all » contient une combinaison de packages de contenu ignorés et de lots OSGi. Par exemple, si `myco-all-1.0.0-SNAPSHOT.zip` contient les deux packages incorporés mentionnés précédemment ainsi qu’un ou plusieurs lots OSGi, un nouveau package de contenu minimal est créé avec uniquement les lots OSGi. Ce package est toujours nommé `cloudmanager-synthetic-jar-package` et les lots contenus sont placés dans `/apps/cloudmanager-synthetic-installer/install`.
 
 >[!NOTE]
 >

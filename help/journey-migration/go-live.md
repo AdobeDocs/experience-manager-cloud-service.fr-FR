@@ -2,8 +2,8 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 6e5743a1b31cf4992e6477050e434a651153fad1
-workflow-type: ht
+source-git-commit: 7f43e09c411b0402701b5c65639ca988702ab75e
+workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Lors de la mise en production, assurez-vous d’exécuter la migration du conten
 Lors de la migration de production, évitez d’exécuter l’outil de transfert de contenu à partir d’un clone, et ce, pour les raisons suivantes :
 
 * Si un client exige que les versions de contenu soient migrées pendant les migrations complémentaires, l’exécution de l’outil de transfert de contenu à partir d’un clone ne permet pas de migrer les versions. Même si le clone est fréquemment recréé à partir de l’auteur en direct, chaque fois qu’un clone est créé, les points de contrôle qui sont utilisés par l’outil de transfert de contenu pour calculer les deltas sont réinitialisés.
-* Puisqu’un clone ne peut pas être actualisé dans son ensemble, le module de requêtes ACL doit être utilisé pour combiner et installer le contenu ajouté ou modifié de la production au clone. Le problème avec cette approche est que tout contenu supprimé sur l’instance source n’aura jamais accès au clone, sauf s’il est supprimé manuellement de la source et du clone. Il est donc possible que le contenu supprimé en production ne soit pas supprimé sur le clone et sur AEM as a Cloud Service.
+* Puisqu’un clone ne peut pas être actualisé dans son ensemble, le package de requêtes ACL doit être utilisé pour combiner et installer le contenu ajouté ou modifié de la production au clone. Le problème avec cette approche est que tout contenu supprimé sur l’instance source n’aura jamais accès au clone, sauf s’il est supprimé manuellement de la source et du clone. Il est donc possible que le contenu supprimé en production ne soit pas supprimé sur le clone et sur AEM as a Cloud Service.
 
 **Optimiser la charge de votre source AEM lors de la migration du contenu**
 

@@ -2,7 +2,7 @@
 title: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service
 description: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 01087aa2ec621d6bebd4d62edbc320df8122f71d
+source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '1797'
 ht-degree: 98%
@@ -159,7 +159,7 @@ Cette nouvelle architecture comporte différents éléments principaux :
 
 Cloud Manager gère toutes les mises à jour des instances d’AEM as a Cloud Service. Cela est obligatoire, dans la mesure où il s’agit du seul moyen de créer, de tester et de déployer l’application du client, tant sur le niveau Auteur que sur les niveaux Aperçu et Publication. Ces mises à jour peuvent être déclenchées soit par Adobe lorsqu’une nouvelle version du service cloud AEM est prête, soit par le client lorsqu’une nouvelle version de son application est prête.
 
-Sur le plan technique, cela est mis en œuvre grâce au concept de pipeline de déploiement, couplé à chaque environnement à l’intérieur d’un programme. Lorsqu’un pipeline Cloud Manager est en cours d’exécution, il crée une version de l’application du client, tant pour le niveau Auteur que pour les niveaux Aperçu et Publication. Pour ce faire, il combine les modules client les plus récents à la dernière image de base Adobe. Une fois les nouvelles images créées et testées, Cloud Manager automatise entièrement le basculement vers la dernière version de l’image en mettant à jour tous les nœuds de service à l’aide d’un schéma de mise à jour continue. Cela n’entraîne aucun temps d’arrêt pour le service d’auteur ni pour le service de publication.
+Sur le plan technique, cela est mis en œuvre grâce au concept de pipeline de déploiement, couplé à chaque environnement à l’intérieur d’un programme. Lorsqu’un pipeline Cloud Manager est en cours d’exécution, il crée une version de l’application du client, tant pour le niveau Auteur que pour les niveaux Aperçu et Publication. Pour ce faire, il combine les packages clients les plus récents à la dernière image de base Adobe. Une fois les nouvelles images créées et testées, Cloud Manager automatise entièrement le basculement vers la dernière version de l’image en mettant à jour tous les nœuds de service à l’aide d’un schéma de mise à jour continue. Cela n’entraîne aucun temps d’arrêt pour le service d’auteur ni pour le service de publication.
 
 <!--- needs reworking -->
 
@@ -173,7 +173,7 @@ AEM as a Cloud Service utilise désormais la fonctionnalité [Sling Content Dis
 
 L’installation est automatisée, ce qui inclut la configuration automatique lorsque des nœuds de publication sont ajoutés, supprimés ou recyclés au moment de l’exécution.
 
-Une seule requête de publication ou d’annulation de publication peut inclure plusieurs ressources, mais elle renvoie un état unique qui est appliqué à toutes ; la requête en question aboutit, ou échoue, pour toutes les ressources du service AEM Publish. De cette façon, les ressources du service AEM Publish ne se trouvent jamais dans un état incohérent.
+Une seule requête de publication ou de dépublication peut inclure plusieurs ressources, mais elle renvoie un état unique qui est appliqué à toutes ; la requête en question aboutit, ou échoue, pour toutes les ressources du service AEM Publish. De cette façon, les ressources du service AEM Publish ne se trouvent jamais dans un état incohérent.
 
 **Diagramme de l’architecture de distribution de contenu de haut niveau**
 

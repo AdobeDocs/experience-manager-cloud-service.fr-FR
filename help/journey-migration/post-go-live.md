@@ -59,7 +59,7 @@ Pour savoir comment accéder aux journaux et les gérer via l’interface utilis
 >id="aemcloud_golive_support"
 >title="Aide et assistance"
 >abstract="Contactez notre équipe d’assistance AEM pour obtenir des clarifications ou des réponses à vos questions."
->additional-url="https://helpx.adobe.com/enterprise/using/support-for-experience-cloud.html" text="Assistance technique pour Experience Cloud"
+>additional-url="https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html" text="Assistance technique pour Experience Cloud"
 
 Si vous avez des questions sur l’accès à Cloud Service, contactez votre représentant Adobe ou [l’Assistance pour Experience Cloud](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour plus d’informations.
 
