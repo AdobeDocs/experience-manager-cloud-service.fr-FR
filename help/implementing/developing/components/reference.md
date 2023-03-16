@@ -2,10 +2,10 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
+source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
+workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -360,7 +360,7 @@ Le nœud enfant de type `cq:DropTargetConfig` définit une cible de dépôt dans
 
 ### Modification locale – cq:inplaceEditing {#cq-inplaceediting}
 
-Un éditeur local permet à l’utilisateur de modifier le contenu directement dans le flux de contenu, sans avoir besoin d’ouvrir une boîte de dialogue. Par exemple, les composants **Texte** et **Titre** standard possèdent tous deux un éditeur local.
+Un éditeur local permet à l’utilisateur de modifier le contenu directement dans le flux de contenu, sans avoir besoin d’ouvrir une boîte de dialogue. Par exemple, la variable **Texte** et **Titre** Les composants disposent tous deux d’un éditeur statique.
 
 Un éditeur local n’est pas nécessaire/déterminant pour chaque type de composant.
 
@@ -372,7 +372,7 @@ Le nœud `cq:inplaceEditing` (type de nœud `cq:InplaceEditingConfig`) définit 
 | `configPath` | `String` | Chemin d’accès de la configuration de l’éditeur, qui peut être spécifié par un nœud de configuration |
 | `editorType` | `String` | Les types disponibles sont les suivants : `plaintext` pour le contenu non HTML, `title` convertit les titres graphiques en texte en clair avant le début de la modification et `text` utilise l’éditeur de texte enrichi |
 
-La configuration suivante active la modification locale du composant et définit `plaintext` comme type d’éditeur :
+La configuration suivante active la modification statique du composant et définit `plaintext` comme type d’éditeur :
 
 ```text
     <cq:inplaceEditing
