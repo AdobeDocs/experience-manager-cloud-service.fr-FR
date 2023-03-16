@@ -2,10 +2,10 @@
 title: Tests de l’interface utilisateur
 description: Le test personnalisé d’interface utilisateur est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications personnalisées.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 6de0b7c961083d9be00837439757da95326a96da
+source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
 workflow-type: tm+mt
-source-wordcount: '2141'
-ht-degree: 56%
+source-wordcount: '2147'
+ht-degree: 54%
 
 ---
 
@@ -25,7 +25,7 @@ AEM fournit une suite intégrée de [points de contrôle de qualité Cloud Mana
 
 Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basés sur Selenium). En outre, un projet de tests d’interface utilisateur peut facilement être généré en utilisant [l’archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)
 
-Les tests de l’interface utilisateur sont exécutés dans le cadre d’un point de contrôle qualité spécifique pour chaque pipeline Cloud Manager avec une étape [dédiée au **Test personnalisé de l’interface utilisateur**.](/help/implementing/cloud-manager/deploy-code.md) Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
+Les tests de l’interface utilisateur sont exécutés dans le cadre d’un point de contrôle qualité spécifique pour chaque pipeline Cloud Manager avec une [**Tests de l’interface utilisateur personnalisée** step](/help/implementing/cloud-manager/deploy-code.md) in [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou facultatif [pipelines hors production.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
 
 Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker avec des tests écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [Création de tests d’interface utilisateur.](#building-ui-tests)
 
