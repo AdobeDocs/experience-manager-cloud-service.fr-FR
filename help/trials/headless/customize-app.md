@@ -4,10 +4,10 @@ description: Utilisez un exemple d’application React pour découvrir comment p
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 8ce4868ab62316514a34af84696b4d9b9c2821cf
+source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
 workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -93,7 +93,7 @@ Mettez à jour facilement les images et les ressources de vos applications avec 
 
 ## Ajout d’une référence à un nouveau fragment de contenu dans l’application {#create-moment}
 
-Maintenant que vous avez mis à jour l’image du cycliste, nous allons découvrir comment ajouter du nouveau contenu à une application en créant et en référençant un nouveau fragment de contenu. Vous allez ajouter un appel de produit géré par un fragment de contenu « moment d’achat » au deuxième panneau de l’application.
+Maintenant que vous avez mis à jour l’image du biker, nous allons découvrir comment ajouter du nouveau contenu à une application en créant et en référençant un nouveau fragment de contenu. Vous allez ajouter un appel de produit géré par un fragment de contenu « moment d’achat » au deuxième panneau de l’application.
 
 ![Exemple d’un moment d’achat](assets/do-not-localize/example-shoppable-moment.png)
 
