@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 6e4919e73ef3efdfc64174a1babab084596aba48
-workflow-type: ht
-source-wordcount: '1975'
-ht-degree: 100%
+source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+workflow-type: tm+mt
+source-wordcount: '2428'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Titre et balises**
 
-   * **Titre** – Le titre de la page est affiché à divers emplacements ; dans la liste de l’onglet **Sites Web** et les vues de carte/liste **Sites**, par exemple
+   * **Titre** - Le titre de la page est affiché à divers emplacements ; dans la liste de l’onglet **Sites web** et les vues de carte/liste **Sites**, par exemple
       * Ce champ est obligatoire.
    * **Balises** - Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
       * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
@@ -37,10 +37,12 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant de page de la version 2.14.0, ou ultérieure, des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 
-   * **Remplacer** : cochez la case pour définir le titre de rappel sur cette page.
-      * La valeur sera héritée par toutes les pages enfants à moins que leurs valeurs de **remplacement** ne soient également définies.
-   * **Remplacer la valeur** : texte de rappel à ajouter au titre de la page.
-      * La valeur est ajoutée au titre de la page après un caractère de barre verticale, par exemple « La Toscane en vélo | Toujours prêt pour le WKND »
+   * **Marque Slug**
+
+      * **Remplacer** : cochez la case pour définir le titre de rappel sur cette page.
+         * La valeur sera héritée par toutes les pages enfants à moins que leurs valeurs de **remplacement** ne soient également définies.
+      * **Remplacer la valeur** : texte de rappel à ajouter au titre de la page.
+         * La valeur est ajoutée au titre de la page après un caractère de barre verticale, par exemple « La Toscane en vélo | Toujours prêt pour le WKND »
 
 * **ID HTML**
 
@@ -105,14 +107,13 @@ Les propriétés sont réparties sur plusieurs onglets.
       * Par exemple, si vous définissez l’alias de `private` pour la page `/content/wknd/us/en/magazine/members-only`, alors cette page est également accessible via `/content/wknd/us/en/magazine/private`.
       * La création d’un alias permet de définir la propriété `sling:alias` sur le nœud de page, ce qui affecte uniquement la ressource, et non le chemin d’accès au référentiel.
       * Les pages accessibles par alias dans l’éditeur ne peuvent pas être publiées. Les [options de publication](/help/sites-cloud/authoring/fundamentals/publishing-pages.md) dans l’éditeur ne sont disponibles que pour les pages auxquelles vous pouvez accéder à partir de leur chemin d’accès réel.
-
-   <!--
-  >For further details see [Localized page names under SEO and URL Management Best Practices](/help/managing/seo-and-url-management.md#localized-page-names).
-  -->
+      * Pour plus d’informations, consultez [Noms de page localisés dans les Bonnes pratiques de SEO et de gestion des URL](/help/overview/seo-and-url-management.md#localized-page-names).
 
 * **Configuration**
 
-   * **Configuration du cloud** – Chemin d’accès à la configuration
+   * **Hérité de &lt;path>** - activer/désactiver l’héritage ; met à disposition de **Configuration du cloud** pour la sélection
+
+   * **Configuration du cloud** - Chemin d’accès à la configuration sélectionnée
 
 * **Paramètres de modèles**
 
@@ -132,14 +133,40 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * **Configuration de l’exportation** – Spécifie une configuration d’exportation.
 
-### Miniature {#thumbnail}
+* **SEO**
 
-Configuration de la miniature de la page
+   * **URL canonique** - peut être utilisé pour remplacer l’URL canonique de la page ; si rien n’est indiqué, l’URL de la page correspond à son URL canonique.
 
-* **Générer l’aperçu** – Génère un aperçu de la page à utiliser comme miniature.
-* **Télécharger l’image** – Transfère une image à utiliser comme miniature
-* **Sélectionner une image** – Sélectionne une ressource existante à utiliser comme miniature.
-* **Rétablir** – Cette option n’est disponible qu’après avoir effectué une modification de la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez l’annuler avant d’enregistrer.
+   * **Balises des robots** - sélectionnez les balises robots pour contrôler le comportement des moteurs de recherche.
+
+      >[!NOTE]
+      >
+      >Certaines des options sont en conflit. En cas de conflit, l’option la plus permissive est prioritaire.
+
+   * **Générer un plan de site** : lorsqu’il est sélectionné, un fichier sitemap.xml est généré pour cette page et ses descendants.
+
+### Images {#images}
+
+* **Image en vedette**
+
+   Sélectionnez et configurez l’image à afficher. Il est utilisé dans les composants qui référencent la page ; par exemple, teasers, listes de pages, etc.
+
+   * **Image**
+
+      Vous pouvez **Pick** une ressource ou recherchez un fichier à charger, puis **Modifier** ou **Effacer**.
+
+   * **Texte de remplacement** : texte utilisé pour représenter la signification et/ou la fonction de l’image ; par exemple, pour une utilisation par des lecteurs d’écran.
+
+   * **Hériter : valeur issue de la ressource DAM** : lorsque cette option est cochée, le texte de remplacement est renseigné avec la valeur de la variable `dc:description`métadonnées dans DAM
+
+* **Miniature**
+
+   Configuration de la miniature de la page
+
+   * **Générer l’aperçu** – Génère un aperçu de la page à utiliser comme miniature.
+   * **Télécharger l’image** – Transfère une image à utiliser comme miniature
+   * **Sélectionner une image** – Sélectionne une ressource existante à utiliser comme miniature.
+   * **Rétablir** – Cette option n’est disponible qu’après avoir effectué une modification de la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez l’annuler avant d’enregistrer.
 
 ### Réseaux sociaux {#social-media}
 
@@ -156,12 +183,11 @@ Configuration de la miniature de la page
 
 * **Configurations du service cloud** – Définition des propriétés des services cloud
 
-   <!--Define properties for [cloud services](/help/sites-developing/extending-cloud-config.md).
-  -->
-
 ### Personnalisation {#personalization}
 
 * **Configurations ContextHub**
+
+   * **Hérité de &lt;path>** - activer/désactiver l’héritage ; met à disposition de **Chemin d’accès ContextHub** et **Chemin d’accès aux segments** pour la sélection
 
    * **Chemin ContextHub** – Définit la [configuration ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **Chemin d’accès aux segments** – Définit le chemin d’accès aux [segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -176,15 +202,9 @@ Configuration de la miniature de la page
 
 * **Autorisations**
 
-   * Ajouter des autorisations
-   * Modifier le groupe d’utilisateurs fermé
-   * Afficher les autorisations effectives
-
-   <!--[Add Permissions](/help/sites-administering/user-group-ac-admin.md) -->
-
-   <!-- [Edit Closed User Group](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)-->
-
-   <!-- View the [Effective Permissions](/help/sites-administering/user-group-ac-admin.md)-->
+   * **Ajouter des autorisations**
+   * **Modifier le groupe d’utilisateurs fermé**
+   * Afficher les **autorisations effectives**
 
 ### Blueprint {#blueprint}
 
@@ -195,6 +215,8 @@ Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les
 * **Configurations du déploiement** – Détermine les circonstances dans lesquelles les modifications seront diffusées à la Live Copy.
 
 ### Live Copy {#live-copy}
+
+Cet onglet n’est visible que pour les pages configurées en tant que Live Copies.
 
 * **Synchroniser** – Synchroniser la Live Copy avec le plan directeur, en conservant les modifications locales.
 * **Réinitialiser** – Réinitialiser la Live Copy à l’état de plan directeur, en supprimant les modifications locales.
@@ -221,6 +243,33 @@ Lorsqu’un environnement de prévisualisation est activé, les éléments suiva
 
 * URL de prévisualisation : URL utilisée pour accéder au contenu dans l’environnement de prévisualisation.
 
+### Application web progressive {#progressive-web-app}
+
+Grâce à une configuration simple, un auteur de contenu peut désormais activer des fonctionnalités d’application web progressive (PWA) pour les expériences créées dans AEM Sites.
+
+>[!NOTE]
+>
+>Pour plus d’informations, voir [Activation des fonctionnalités d’applications web progressives](/help/sites-cloud/authoring/features/enable-pwa.md).
+
+* **Configurer l’expérience d’installation**
+
+   * **Activer PWA** - activer/désactiver la fonction ; permet aux utilisateurs d’installer le site en tant que PWA.
+   * **StartupURL** : URL de démarrage préférée
+   * **Mode d’affichage** : mode de masquage ou de présentation du navigateur à l’utilisateur sur l’appareil local
+   * **Orientation de l’écran** - comment le PWA va gérer les orientations de l’appareil
+   * **Couleur du thème** : couleur de l’application qui affecte la manière dont le système d’exploitation de l’utilisateur local affiche la barre d’outils de l’interface utilisateur native et les commandes de navigation.
+   * **Couleur de fond** : couleur d’arrière-plan de l’application, qui s’affiche au chargement de l’application.
+   * **Icône** : icône représentant l’application sur l’appareil de l’utilisateur.
+
+* **Gestion du cache (avancé)**
+
+   * **Stratégie de mise en cache et fréquence d’actualisation du contenu** : définit le modèle de mise en cache de votre PWA.
+   * **Fichiers à mettre en cache pour une utilisation hors ligne**
+      * **Prémise du cache du fichier (aperçu technique)** - les fichiers hébergés sur AEM seront enregistrés dans le cache du navigateur local lorsque le service worker est installé et avant d’être utilisé
+      * **Bibliothèques côté client** - bibliothèques côté client à mettre en cache pour une expérience hors ligne
+      * **Inclusions de chemin** - les requêtes réseau pour les chemins définis sont interceptées et le contenu mis en cache est renvoyé conformément à la stratégie de mise en cache configurée et à la fréquence d’actualisation du contenu.
+      * **Exclusions de chemin** - ces fichiers ne seront jamais mis en cache, quels que soient les paramètres sous Pré-mise en cache de fichier et inclusions de chemin.
+
 ## Modification des propriétés de page {#editing-page-properties-1}
 
 * Dans la console **Sites** :
@@ -228,7 +277,7 @@ Lorsqu’un environnement de prévisualisation est activé, les éléments suiva
    * En cliquant ou en appuyant sur **Propriétés**
       * Pour une seule page
       * Pour plusieurs pages (un seul sous-ensemble des propriétés est disponible pour la modification en masse)
-* À partir de l’éditeur de page:
+* À partir de l’éditeur de page :
    * En sélectionnant **Informations sur la page** (puis **Ouvrir les propriétés**)
 
 ### À partir de la console Sites – Une seule page {#from-the-sites-console-single-page}
