@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Définissez les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 628a95d7b7d0e84bfc8edecaaf127dd83ce1e578
+source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 83%
+source-wordcount: '2387'
+ht-degree: 81%
 
 ---
 
@@ -166,18 +166,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    * **Générer l’aperçu** – Génère un aperçu de la page à utiliser comme miniature.
    * **Télécharger l’image** – Transfère une image à utiliser comme miniature
    * **Sélectionner une image** – Sélectionne une ressource existante à utiliser comme miniature.
-   * **Rétablir** – Cette option n’est disponible qu’après avoir effectué une modification de la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez l’annuler avant d’enregistrer.
-
-### Réseaux sociaux {#social-media}
-
-* **Partage sur les réseaux sociaux**
-
-   Définit les options de partage disponibles sur la page. Affiche les options disponibles pour le [composant principal de partage](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/sharing.html?lang=fr).
-
-   * **Activer le partage utilisateur pour Facebook**
-   * **Activer le partage utilisateur pour Pinterest**
-   * **Variation de fragment d’expérience préférée**
-      * Définit la variation de fragment d’expérience utilisée pour générer les métadonnées de la page.
+   * **Rétablir** – Cette option n’est disponible qu’après avoir effectué une modification de la miniature. Si vous ne souhaitez pas conserver votre modification, vous pouvez la rétablir avant de l’enregistrer.
 
 ### Services cloud {#cloud-services}
 
@@ -208,7 +197,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 ### Blueprint {#blueprint}
 
-Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies pour [la gestion multisite.](/help/sites-cloud/administering/msm/overview.md)
+Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies et font partie de [Gestion multisite.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Live Copies actuelles** – Listes de pages basées sur (c.-à-d. Live Copies de) cette page de plan directeur.
 
@@ -216,7 +205,7 @@ Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les
 
 ### Live Copy {#live-copy}
 
-Cet onglet n’est visible que pour les pages configurées en tant que Live Copies.
+Cet onglet n’est visible que pour les pages configurées en tant que Live Copies. Comme pour les plans directeurs, les Live Copies font partie de [Gestion multisite.](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchroniser** – Synchroniser la Live Copy avec le plan directeur, en conservant les modifications locales.
 * **Réinitialiser** – Réinitialiser la Live Copy à l’état de plan directeur, en supprimant les modifications locales.
