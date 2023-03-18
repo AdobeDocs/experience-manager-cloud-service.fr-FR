@@ -2,10 +2,10 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f1d1009db31585ff82c02080a6ab7ea7ca5bf66b
+source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 100%
+source-wordcount: '1075'
+ht-degree: 88%
 
 ---
 
@@ -44,7 +44,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge de version</td>
     <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant le 1er mars 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée ; à ce moment-là il peut également la configurer avec des valeurs personnalisées.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->La purge sera activée par défaut pour les nouveaux environnements (ceux créés à partir du 1er mars 2023) avec les valeurs ci-dessous, et les clients pourront effectuer une configuration avec des valeurs personnalisées.
+    <td>Pour les environnements existants (ceux créés avant le 1er juin 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée, à ce moment-là il peut également la configurer avec des valeurs personnalisées.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->La purge des nouveaux environnements (créés à partir du 1er juin 2023) est activée par défaut avec les valeurs ci-dessous, et les clients peuvent la configurer avec des valeurs personnalisées.
      <ol>
        <li>Les versions de plus de 30 jours sont supprimées</li>
        <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>
@@ -56,7 +56,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge du journal d’audit</td>
     <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant le 1er mars 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée ; à ce moment-là il peut également la configurer avec des valeurs personnalisées.<br><br> <!-- See above for the two line breaks -->La purge des nouveaux environnements (ceux créés à partir du 1er mars 2023) sera activée par défaut sous le nœud <code>/content</code> du référentiel, selon le comportement suivant :
+    <td>Pour les environnements existants (ceux créés avant le 1er juin 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client l’a explicitement activée, à ce moment-là il peut également la configurer avec des valeurs personnalisées.<br><br> <!-- See above for the two line breaks -->La purge des nouveaux environnements (créés à partir du 1er juin 2023) sera activée par défaut sous la variable <code>/content</code> du référentiel, selon le comportement suivant :
      <ol>
        <li>Pour le contrôle de réplication, les journaux d’audit datant de plus de 3 jours sont supprimés.</li>
        <li>Pour le contrôle du DAM (Assets), les journaux d’audit datant de plus de 30 jours sont supprimés.</li>
@@ -92,7 +92,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <td>Client</td>
     <td>
     <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
-    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI.</p>
+    <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Voir la liste des propriétés OSGI sous "Configuration de purge des projets d’Adobe".</p>
   </td>
   </tr>
   </tbody>
