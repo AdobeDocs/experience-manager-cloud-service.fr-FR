@@ -3,10 +3,10 @@ title: Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service
 description: Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 74fbf5e3e910106f48a1ec6e316e3ea7c71e65aa
-workflow-type: ht
-source-wordcount: '3311'
-ht-degree: 100%
+source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
+workflow-type: tm+mt
+source-wordcount: '3312'
+ht-degree: 99%
 
 ---
 
@@ -165,7 +165,7 @@ Adobe Experience Manager as a Cloud Service nécessite des configurations spéci
 
 Utilisez des configurations secrètes spécifiques à un environnement pour stocker les valeurs secrètes de tous les environnements Adobe Experience Manager as a Cloud Service, y compris ceux d’évaluation et de production.
 
-## Création de configurations OSGi {#creating-sogi-configurations}
+## Création de configurations OSGi {#creating-osgi-configurations}
 
 Deux méthodes sont possibles pour créer des configurations OSGi, comme décrit ci-dessous. La première méthode est en général appliquée pour configurer des composants OSGi personnalisés qui possèdent des propriétés et des valeurs OSGi connues du développeur, la seconde pour les composants OSGi fournis par AEM.
 
@@ -189,8 +189,8 @@ Il est possible d’utiliser la console web AEM de l’environnement d’exécut
 >
 >L’interface utilisateur de configuration de la console web AEM écrit des fichiers `.cfg.json` dans le référentiel. N’oubliez pas d’en tenir compte afin d’éviter un comportement inattendu potentiel lors du développement local, lorsque les configurations OSGi définies par projet AEM peuvent différer des configurations générées.
 
-1. Connectez-vous en tant qu’administrateur à la console web de l’environnement Quickstart Jar du SDK AEM.
-1. Accédez à OSGi > Configuration.
+1. Connectez-vous à la console web AEM du SDK AEM à l’adresse `https://<host>:<port>/system/console` en tant qu’utilisateur administrateur
+1. Accédez à **OSGi** > **Configuration**
 1. Pour configurer, recherchez le composant OSGi et appuyez sur son titre pour le modifier.
    ![Configuration OSGi](./assets/configuring-osgi/configuration.png)
 1. Modifiez, si nécessaire, les valeurs des propriétés de configuration OSGi à l’aide de l’interface utilisateur web.
@@ -265,7 +265,7 @@ Les valeurs des variables ne doivent pas dépasser 2 048 caractères.
 >1. Les clients ne doivent pas référencer de variables dotées du préfixe `INTERNAL_` ou `ADOBE_`.
 >
 >1. Les variables d’environnement dotées du préfixe `AEM_` sont définies par le produit comme API publique à utiliser et définir par les clients.
->   Bien que les clients puissent utiliser et définir des variables d’environnement commençant par le préfixe `AEM_`, ils ne doivent pas définir leurs propres variables avec ce préfixe.
+   >   Bien que les clients puissent utiliser et définir des variables d’environnement commençant par le préfixe `AEM_`, ils ne doivent pas définir leurs propres variables avec ce préfixe.
 
 
 ### Valeurs par défaut {#default-values}
@@ -317,7 +317,6 @@ Si une propriété OSGI nécessite des valeurs différentes pour la création et
 * Des dossiers OSGi `config.author` et `config.publish` distincts sont nécessaires, comme décrit dans la section [Résolution du mode d’exécution](#runmode-resolution).
 * Deux options permettent de créer des noms de variable indépendants :
    * la première option, recommandée : dans tous les dossiers OSGI (comme `config.author` et `config.publish`) déclarés pour définir des valeurs différentes, utilisez le même nom de variable. Par exemple :
-
       `$[env:ENV_VAR_NAME;default=<value>]`, où la valeur par défaut correspond à la valeur par défaut de ce niveau (auteur ou publication). Lors de la définition de la variable d’environnement par le biais de [l’API Cloud Manager](#cloud-manager-api-format-for-setting-properties) ou d’un client, différenciez les niveaux à l’aide du paramètre « service », comme décrit dans cette [documentation de référence de l’API](https://developer.adobe.com/experience-cloud/cloud-manager/api-reference/). Le paramètre « service » lie la valeur de la variable au niveau OSGI approprié. Il peut s’agir de « création », « publication » ou « aperçu ».
    * la deuxième option, qui consiste à déclarer des variables distinctes à l’aide d’un préfixe tel que `author_<samevariablename>` et `publish_<samevariablename>` ;
 
@@ -344,11 +343,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -358,11 +357,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -387,11 +386,11 @@ config.stage
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -401,11 +400,11 @@ config.prod
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val2",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -415,11 +414,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -444,11 +443,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -458,11 +457,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1" : "$[env:my_var1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -485,11 +484,11 @@ config
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "val1",
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>
@@ -499,11 +498,11 @@ config.dev
 </td>
 <td>
 <pre>
-&lbrace; 
+{ 
  "my_var1": "$[env:my_var1;default=val1]"
  "my_var2": "abc",
  "my_var3": 500
-&rbrace;
+}
 </pre>
 </td>
 </tr>

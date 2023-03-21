@@ -3,10 +3,10 @@ title: Déploiement sur AEM as a Cloud Service
 description: Déploiement sur AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 0d586bf7e9ad6653f9a45c2fe9f0f8a156de5133
+source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
-source-wordcount: '3497'
-ht-degree: 92%
+source-wordcount: '3509'
+ht-degree: 91%
 
 ---
 
@@ -104,7 +104,7 @@ Après le basculement vers la nouvelle version de l’application :
    * Dossiers (ajout, modification, suppression)
    * Modèles modifiables (ajout, modification, suppression)
    * Configuration tenant compte du contexte (tout sous `/conf`) (ajout, modification, suppression)
-   * Scripts (les packages peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de package : <!-- MISDIRECTED REQUEST, 421 ERROR, CAN'T FIND CORRECT PATH See the [Jackrabbit filevault documentation](https://jackrabbit.incubator.apache.org/filevault/installhooks.html) about install hooks. --> Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs et administratrices, aux utilisateurs et utilisatrices système et aux membres du groupe administrateurs).
+   * Scripts (les packages peuvent déclencher des hooks d’installation à diverses étapes du processus d’installation de package : Voir la [documentation Jackrabbit filevault](https://jackrabbit.apache.org/filevault/installhooks.html) sur les hooks d’installation. Notez qu’AEM CS utilise actuellement la version 3.4.0 de Filevault, qui limite les hooks d’installation aux administrateurs, aux utilisateurs système et aux membres du groupe administrateurs).
 
 Il est possible de limiter l’installation de contenu modifiable à la création ou à la publication en incorporant des packages dans un dossier install.author ou install.publish sous `/apps`. Une restructuration pour refléter cette séparation a été réalisée dans AEM 6.5 et les détails relatifs à la restructuration de projet recommandée sont disponibles dans la [documentation d’AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr).
 
@@ -292,9 +292,9 @@ Dans les solutions AEM existantes, les clients peuvent exécuter des instances a
 AEM as a Cloud Service, en revanche, est plus précis sur les modes d’exécution disponibles et sur la manière dont les lots OSGI et la configuration OSGI peuvent être mappés sur ces modes :
 
 * Les modes d’exécution de la configuration OSGI doivent faire référence à RDE, dev, stage, prod pour l’environnement ou author, publish pour le service. La combinaison de `<service>.<environment_type>` est prise en charge dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
-* Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le package de contenu sous `install/author` ou `install/publish`.
+* Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le package de contenu sous `install.author` ou `install.publish`.
 
-Comme les solutions AEM existantes, il n’existe aucun moyen d’utiliser les modes d’exécution en vue d’installer le contenu uniquement pour des environnements ou services spécifiques. S’il était nécessaire d’amorcer un environnement de développement avec des données ou du code HTML qui n’est pas en évaluation ni en production, le gestionnaire de packages pourrait être utilisé.
+AEM as a Cloud Service ne permet pas d’utiliser des modes d’exécution pour installer du contenu pour des environnements ou des services spécifiques. Si un environnement de développement doit être ensemencé avec des données ou un HTML qui ne se trouve pas dans les environnements d’évaluation ou de production, le gestionnaire de modules peut être utilisé.
 
 Les configurations de mode d’exécution prises en charge sont les suivantes :
 
