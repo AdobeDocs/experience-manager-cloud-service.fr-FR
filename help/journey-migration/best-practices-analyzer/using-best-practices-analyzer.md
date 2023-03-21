@@ -2,7 +2,7 @@
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Utilisation de l’analyseur des bonnes pratiques
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: e11cb3215dc005bfd38959f3ceaaad25becad65c
 workflow-type: tm+mt
 source-wordcount: '2490'
 ht-degree: 99%
@@ -69,7 +69,6 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic3.png)
 
-
 1. Une fois son rapport généré, l’analyseur des bonnes pratiques affiche un résumé et le nombre de résultats sous forme de tableau organisé selon le type de résultat et le niveau d’importance. Pour obtenir plus de détails sur un résultat spécifique, vous pouvez cliquer sur le numéro correspondant au type de résultat dans le tableau.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic4.png)
@@ -83,7 +82,8 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic6.png)
 
    >[!NOTE]
-   >Vous pouvez forcer l’analyseur des bonnes pratiques à effacer son cache et à générer de nouveau le rapport en cliquant sur **Refresh Report** (Actualiser le rapport).
+   >
+Vous pouvez forcer l’analyseur des bonnes pratiques à effacer son cache et à générer de nouveau le rapport en cliquant sur **Refresh Report** (Actualiser le rapport).
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)
 
@@ -91,8 +91,6 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
    >Pendant sa régénération, le rapport affiche la progression en termes de pourcentage achevé, comme le montre l’illustration ci-dessous.
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic8.png)
-
-
 
 #### Utilisation de filtres dans le rapport Analyseur des bonnes pratiques (BPA)  {#bpa-filters}
 
@@ -111,7 +109,6 @@ Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-serv
 
    >[!NOTE]
    > Les résultats d’ACS Commons ne doivent pas être ignorés. Consultez la [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer le niveau de compatibilité avec AEM as a Cloud Service.
-
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -158,7 +155,6 @@ Consultez le tableau ci-dessous pour comprendre les niveaux d’importance :
 | ADVISORY | Ce résultat peut poser un problème de mise à niveau. Il est recommandé d’approfondir les investigations. |
 | MAJOR | Il est probable que ce résultat constitue un problème de mise à niveau qui doit être résolu. |
 | CRITIQUE | Il est très probable que ce résultat constitue un problème de mise à niveau qui doit être résolu pour éviter toute perte de fonction ou de performances. |
-
 
 ## Interprétation du rapport CSV de l’analyseur des bonnes pratiques {#cra-csv-report}
 
