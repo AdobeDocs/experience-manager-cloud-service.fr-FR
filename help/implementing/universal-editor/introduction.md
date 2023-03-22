@@ -1,17 +1,17 @@
 ---
-title: Présentation de l’éditeur universel
-description: Découvrez comment Universal Editor permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+title: Présentation de l’éditeur visuel universel
+description: Découvrez comment l’éditeur visuel universel (également appelé Editeur universel) permet de modifier n’importe quelle expérience sans tête et en mode plein écran. Découvrez comment cela peut aider les auteurs de contenu à offrir des expériences exceptionnelles, à accroître leur vitesse de diffusion du contenu et à offrir une expérience de développement dernier cri.
+source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
 
 
-# Présentation de l’éditeur universel {#introduction}
+# Présentation de l’éditeur visuel universel {#introduction}
 
-Découvrez comment Universal Editor permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
+Découvrez comment l’éditeur visuel universel (également appelé Editeur universel) permet de modifier n’importe quelle expérience sans tête et en mode plein écran. Découvrez comment cela peut aider les auteurs de contenu à offrir des expériences exceptionnelles, à accroître leur vitesse de diffusion du contenu et à offrir une expérience de développement dernier cri.
 
 ## Contexte {#background}
 
@@ -42,17 +42,14 @@ Les exigences d’une mise en oeuvre pour tirer parti d’Universal Editor sont 
 Un auteur de contenu doit avoir la même expérience puissante d’édition que celle proposée auparavant par l’éditeur de page d’AEM. Mais l’éditeur universel permet aux auteurs de contenu de modifier **any** contenu visuellement et dans le contexte et prend en charge :
 
 * **AEM des structures de page** - Imbriqué `cq:Components` de `cq:Pages`, y compris les fragments d’expérience
-* **AEM de fragments de contenu** - Modifier le contenu des fragments de contenu tel qu’ils apparaissent dans le contexte de l’expérience
-* **Documents** - Word, Excel, Google Docs, Markdown ou même un HTML brut sont conservés, par exemple sur GitHub.
-* **Contenu tiers** - Un système de module externe permet de rendre toute source de contenu externe modifiable.
+* **AEM de fragments de contenu** - Modifiez le contenu des fragments de contenu tels qu’ils apparaissent dans le contexte de l’expérience.
+* **Documents** - La preuve de concepts a montré que les documents Word, Excel, Google Docs ou Markdown peuvent également être modifiés de la même manière (il s’agit de travaux en cours).
 
 ### N’importe quel aspect {#any-aspect}
 
 Pour un auteur de contenu, le contenu ne concerne pas seulement les informations contenues, mais aussi leur rendu et leur réception. Le contenu est fourni avec des métadonnées et des règles d’instrumentation supplémentaires, que l’éditeur universel peut comprendre et modifier, notamment :
 
-* **Application de la mise en page et du style** - En utilisant un système de style, le professionnel du marketing et l’auteur de contenu peuvent appliquer différents styles à leur contenu et créer différentes dispositions telles que des colonnes, des carrousels, des onglets, des accordéons, etc.
-* **Exécution de l’expérience** - En publiant une nouvelle version de contenu qui défie le contenu existant, le spécialiste marketing peut tester les améliorations de contenu et mesurer l’impact.
-* **Personnalisation des variations** - En créant et en gérant des variations de contenu spécifiques à une audience donnée, les professionnels du marketing peuvent personnaliser le contenu diffusé.
+* **Application de la mise en page et du style** - En utilisant un système de style, le professionnel du marketing et l’auteur de contenu peuvent appliquer différents styles à leur contenu et créer différentes mises en page pour le contenu, telles que des colonnes, des carrousels, des onglets, des accordéons, etc.
 
 ## Valeur  {#value}
 
@@ -64,9 +61,9 @@ En découplant l’expérience d’édition de contenu d’un système de diffus
 * **Augmentation de la vitesse du contenu** - Pour rationaliser le processus de gestion des utilisateurs, l’éditeur universel permet de modifier le contenu dans l’aperçu afin de guider les utilisateurs en n’affichant que les options pertinentes pour ce contexte et en rendant le processus indépendant des sources de contenu.
 * **Expérience de développement dernier cri** - Pour prendre en charge les environnements d’applications hétérogènes réels, l’éditeur universel est complètement découplé et indépendant de la technologie, ce qui permet aux développeurs d’utiliser leur pile technologique préférée pour mettre en oeuvre l’expérience.
 
-## Éditeur universel et éditeur de fragment de contenu {#universal-editor-content-fragment-editor}
+## Éditeur visuel universel et éditeur de fragment de contenu {#universal-editor-content-fragment-editor}
 
-À première vue, il peut sembler que l’éditeur universel et l’éditeur de fragment de contenu offrent des fonctionnalités de modification similaires. Toutefois, ces éditeurs offrent des fonctionnalités très différentes et effectuent différents travaux de la part du spécialiste marketing.
+À première vue, il peut sembler que l’éditeur visuel universel et l’éditeur de fragment de contenu offrent des fonctionnalités de modification similaires. Toutefois, ces éditeurs offrent des fonctionnalités très différentes et effectuent différents travaux de la part du spécialiste marketing.
 
 ### Éditeur de fragment de contenu {#content-fragment-editor}
 
@@ -74,7 +71,7 @@ Un professionnel du marketing souhaite créer du contenu sans avoir à se soucie
 
 * La tâche sous-jacente à accomplir est de mettre à l’échelle la stratégie de contenu.
 
-### Éditeur universel {#universal-editor}
+### Éditeur visuel universel {#universal-editor}
 
 Un professionnel du marketing souhaite créer du contenu adapté à la mise en page d’un contexte donné pour offrir une expérience exceptionnelle.
 
@@ -82,9 +79,9 @@ Un professionnel du marketing souhaite créer du contenu adapté à la mise en p
 
 ## Feuille de route {#road-map}
 
-Il est important de noter que l’éditeur universel est un travail en cours et que les capacités présentées dans ce document sont une vision de l’éditeur final et pas nécessairement de ses capacités actuelles.
+Il est important de noter que l’éditeur universel est un travail en cours et que certaines des fonctionnalités présentées dans ce document sont une vision de l’éditeur final et ne sont pas nécessairement représentatives de ses capacités actuelles.
 
-Contactez votre Adobe pour plus d’informations sur les prochaines fonctionnalités prévues pour l’éditeur universel.
+Veuillez contacter votre Adobe pour plus d’informations sur les prochaines fonctionnalités prévues pour l’éditeur universel.
 
 ## Ressources supplémentaires {#additional-resources}
 
