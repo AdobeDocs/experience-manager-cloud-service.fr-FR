@@ -2,7 +2,7 @@
 title: Centre de notifications
 description: Tirez parti du Centre de notification pour prendre des mesures appropriées concernant les incidents et d'autres informations importantes
 hidefromtoc: true
-source-git-commit: a5977c667d831c47d41cd86b68e9196fbe726899
+source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Dans l&#39;écran Centre de notifications, vous pouvez sélectionner un programm
 
 Vous pouvez suivre les étapes ci-dessous pour configurer la réception de notifications :
 
-1. Créez les profils de produit suivants, comme décrit [dans cet article](/help/journey-onboarding/user-groups.md), en attribuant les identifiants d’Adobe appropriés de votre organisation à ces profils.
+1. Créez les profils de produit suivants, comme décrit [dans cet article](/help/journey-onboarding/notification-profiles.md), en attribuant les identifiants d’Adobe appropriés de votre organisation à ces profils.
 1. Déterminez les paramètres de configuration des notifications. [Sur cette page](https://experience.adobe.com/preferences/notification-section), assurez-vous que l’option Abonnement du Experience Manager est activée et que la variable **Autres** est sélectionnée. En outre, il est recommandé de définir la section Emails sur **Notifications instantanées** ainsi, vous recevez des notifications immédiatement après un incident.
 
 >[!NOTE]

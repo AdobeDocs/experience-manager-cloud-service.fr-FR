@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: c37c1c3eca0ae9d457f422efdaf5e29be03e6014
+source-git-commit: 5f664b92d9e5ff31e90ce8a5d7c35db683c4ef03
 workflow-type: tm+mt
-source-wordcount: '4006'
+source-wordcount: '4005'
 ht-degree: 94%
 
 ---
@@ -168,7 +168,7 @@ ht-degree: 94%
    + Autres concepts d’intégration {#concepts}
       + [Présentation de Cloud Manager](/help/onboarding/cloud-manager-introduction.md)
       + [Équipe et profils de produits AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md)
-      + [Groupes d’utilisateurs de notifications](/help/journey-onboarding/user-groups.md)
+      + [Profils de notification](/help/journey-onboarding/notification-profiles.md)
 + Essais AEMaaCS {#trials}
    + Essais découplés {#headless}
       + [Personnaliser du contenu dans un exemple d’application React](/help/trials/headless/customize-app.md)
