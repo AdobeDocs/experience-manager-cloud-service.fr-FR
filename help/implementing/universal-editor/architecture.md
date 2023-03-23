@@ -1,9 +1,9 @@
 ---
 title: Architecture d’éditeur universelle
 description: Découvrez l’architecture d’Universal Editor et le flux de données entre ses services et calques.
-source-git-commit: f454475b65da8f410812bbbe30ca5fc393be410a
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '662'
 ht-degree: 1%
 
 ---
@@ -79,6 +79,7 @@ Pour en savoir plus sur Universal Editor, consultez ces documents.
 
 * [Présentation de l’éditeur universel](introduction.md) - Découvrez comment Universal Editor permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
 * [Création de contenu avec l’éditeur universel](authoring.md) - Découvrez à quel point il est facile et intuitif pour les auteurs de contenu de créer du contenu à l’aide de l’éditeur universel.
+* [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 * [Prise en main d’Universal Editor dans AEM](getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 * [Attributs et types](attributes-types.md) - Découvrez les attributs et les types de données requis par Universal Editor.
 * [Authentification de l’éditeur universel](authentication.md) - Découvrez comment l’éditeur universel s’authentifie.

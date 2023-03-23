@@ -1,9 +1,9 @@
 ---
 title: Présentation de l’éditeur visuel universel
 description: Découvrez comment l’éditeur visuel universel (également appelé Editeur universel) permet de modifier n’importe quelle expérience sans tête et en mode plein écran. Découvrez comment cela peut aider les auteurs de contenu à offrir des expériences exceptionnelles, à accroître leur vitesse de diffusion du contenu et à offrir une expérience de développement dernier cri.
-source-git-commit: f242abbd7f53c523667d1d56a0f5b913bb26dee0
+source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -88,6 +88,7 @@ Veuillez contacter votre Adobe pour plus d’informations sur les prochaines fon
 Pour en savoir plus sur Universal Editor, consultez ces documents.
 
 * [Création de contenu avec l’éditeur universel](authoring.md) - Découvrez à quel point il est facile et intuitif pour les auteurs de contenu de créer du contenu à l’aide de l’éditeur universel.
+* [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 * [Prise en main d’Universal Editor dans AEM](getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 * [Architecture d’éditeur universelle](architecture.md) - Découvrez l’architecture d’Universal Editor et le flux de données entre ses services et calques.
 * [Attributs et types](attributes-types.md) - Découvrez les attributs et les types de données requis par Universal Editor.
