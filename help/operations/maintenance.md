@@ -2,10 +2,10 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
+source-git-commit: d4d1e97df58f8bd0951f0d5b0bf46e118b163457
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1111'
+ht-degree: 78%
 
 ---
 
@@ -114,6 +114,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <p><strong>windowSchedule=daily</strong> (cette valeur ne doit pas être modifiée)</p>
   <p><strong>windowStartTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent commencer à s’exécuter.</p>
   <p><strong>windowEndTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance quotidienne doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
+  <p>Une tâche de maintenance ne peut pas être exécutée plusieurs fois pendant cette période.</p>
   </td> 
   </tr>
   <tr>
@@ -124,6 +125,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <p><strong>windowSchedule=weekly</strong> (cette valeur ne doit pas être modifiée)</p>
     <p><strong>windowStartTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent commencer à s’exécuter.</p>
     <p><strong>windowEndTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance hebdomadaire doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
+    <p>Une tâche de maintenance ne peut pas être exécutée plusieurs fois pendant cette période.</p>
     <p><strong>windowScheduleWeekdays= tableau de 2 valeurs de 1 à 7 (ex. : [5,5])</strong> La première valeur du tableau désigne le jour de début planifié du traitement et la seconde le jour de fin où le traitement doit être arrêté. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
     </td>
   </tr>
@@ -135,6 +137,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <p><strong>windowSchedule=month</strong> (cette valeur ne doit pas être modifiée)</p>
     <p><strong>windowStartTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent commencer à s’exécuter.</p>
     <p><strong>windowEndTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
+    <p>Une tâche de maintenance ne peut pas être exécutée plusieurs fois pendant cette période.</p>
     <p><strong>windowScheduleWeekdays= tableau de 2 valeurs de 1 à 7 (ex. : [5,5])</strong> La première valeur du tableau désigne le jour de début planifié du traitement et la seconde le jour de fin où le traitement doit être arrêté. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
     <p><strong>windowFirstLastStartDay= 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. L’absence de valeur planifierait efficacement les tâches le jour régi par windowScheduleWeekdays (tous les mois).</p>
     </td>
