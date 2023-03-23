@@ -1,19 +1,19 @@
 ---
 title: Présentation de Headless pour AEM
-description: Découvrez Headless dans Adobe Experience Manager (AEM) avec une combinaison de documentation détaillée et de parcours Headless. Découvrez comment des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL sont utilisées pour créer des expériences découplées puissantes.
+description: Découvrez Headless dans Adobe Experience Manager (AEM) avec une combinaison de documentation détaillée et de parcours Headless. Découvrez comment des fonctionnalités telles que les modèles de fragment de contenu, les fragments de contenu et une API GraphQL sont utilisées pour alimenter les expériences sans interface.
 landing-page-description: Apprenez comment utiliser et administrer Headless dans Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
-source-git-commit: 597bb3b92159c685d3692f11359e13f8642a0857
+source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 98%
+source-wordcount: '699'
+ht-degree: 75%
 
 ---
 
 
 # Présentation d’Adobe Experience Manager en tant que CMS découplé {#introduction-aem-headless}
 
-Découvrez comment utiliser Adobe Experience Manager (AEM) en tant que CMS découplé, avec des fonctionnalités telles que les modèles de contenu, les fragments de contenu et une API GraphQL qui optimisent les expériences découplées à grande échelle.
+Découvrez comment utiliser Adobe Experience Manager (AEM) en tant que système de gestion de contenu (CMS) sans affichage, avec des fonctionnalités telles que les modèles de fragment de contenu, les fragments de contenu et une API GraphQL qui combinent des expériences sans affichage à grande échelle.
 
 Vous pouvez lire la documentation détaillée des différentes fonctionnalités impliquées et suivre certains des [Parcours découplés pour obtenir un aperçu des premières étapes](#first-steps).
 
@@ -25,7 +25,7 @@ Vous pouvez lire la documentation détaillée des différentes fonctionnalités 
 
 AEM découplé est une solution CMS d’Experience Manager qui permet l’utilisation de contenu structuré (fragments de contenu) dans AEM par n’importe quelle application via HTTP à l’aide de GraphQL. Les implémentations découplées permettent la diffusion d’expériences sur les plateformes et les canaux en fonction des besoins.
 
-L’implémentation découplée renonce à la gestion des pages et des composants, comme c’est généralement le cas avec les solutions hybrides et complètes, et se concentre sur la création de fragments de contenu réutilisables et neutres du point de vue du canal, ainsi que sur leur diffusion entre canaux. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences Web.
+L’implémentation sans affichage annule la gestion des pages et des composants, comme c’est le cas traditionnellement dans les solutions de pile et hybrides complètes. Il se concentre plutôt sur la création de fragments de contenu réutilisables et neutres pour les canaux et sur leur diffusion cross-canal. Il s’agit d’un modèle de développement moderne et dynamique pour l’implémentation d’expériences Web.
 
 ![Modèles d’implémentation AEM](assets/aem-implementation-models.png)
 
@@ -33,14 +33,14 @@ L’implémentation découplée renonce à la gestion des pages et des composant
 
 AEM as a Cloud Service est un outil souple pour le modèle d’implémentation découplée avec trois fonctionnalités puissantes :
 
-1. **Modèles de contenu**
-   * Les modèles de contenu sont une représentation structurée du contenu.
-   * Les modèles de contenu sont définis par des architectes des informations dans l’éditeur de modèles de fragments de contenu AEM.
-   * Les modèles de contenu servent de base aux fragments de contenu.
+1. **Modèles de fragment de contenu**
+   * Les modèles de fragment de contenu sont des représentations structurées de contenu.
+   * Les modèles de fragment de contenu sont définis par des architectes d’informations dans l’éditeur de modèle de fragment de contenu AEM.
+   * Les modèles de fragment de contenu servent de base pour les fragments de contenu.
 1. **Fragments de contenu**
-   * Les fragments de contenu sont créés sur un modèle de contenu.
-   * Ils sont créés par les auteurs de contenu à l’aide de l’éditeur de fragments de contenu d’AEM.
-   * Les fragments de contenu sont stockés dans AEM Assets et gérés dans l’interface utilisateur d’administration d’Assets.
+   * Un fragment de contenu est créé à partir d’un modèle de fragment de contenu.
+   * Les fragments de contenu sont créés par les auteurs de contenu, à l’aide de l’éditeur de fragments de contenu AEM.
+   * Les fragments de contenu sont stockés en tant qu’AEM Assets, mais peuvent être gérés via la console Ressources ou le [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md).
 1. **API de contenu pour la diffusion**
    * L’API AEM GraphQL prend en charge la diffusion de fragments de contenu.
    * L’API REST AEM Assets prend en charge les opérations CRUD sur les fragments de contenu.
