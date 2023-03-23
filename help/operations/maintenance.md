@@ -2,10 +2,10 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: 8209faed876f5ab37a0332d72327aad76228063b
+source-git-commit: 020d9a73141f650ebafcdec0a5976e5060fd16c2
 workflow-type: tm+mt
-source-wordcount: '1075'
-ht-degree: 88%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -75,7 +75,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <td>Purge des tâches ad hoc</td>
     <td>Client</td>
     <td>
-    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>.</p>
+    <p>Doit s’effectuer dans git. Remplacez le noeud de configuration de la fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>.</p>
     <p>Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration. Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus. Nommez-le <code>granite_TaskPurgeTask</code>, avec l’attribut <code>sling:resourceType</code> défini sur <code>granite/operations/components/maintenance/task</code> et l’attribut <code>granite.maintenance.name</code> défini sur <code>TaskPurge</code>. Configurez les propriétés OSGI. Voir <code>com.adobe.granite.taskmanagement.impl.purge.TaskPurgeMaintenanceTask</code> pour la liste des propriétés.</p>
   </td>
   </tr>
@@ -83,7 +83,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <td>Purge du workflow</td>
     <td>Client</td>
     <td>
-    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
+    <p>Doit s’effectuer dans git. Remplacez le noeud de configuration de la fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
     <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_WorkflowPurgeTask</code>) avec les propriétés adéquates. Configurez les propriétés OSGI. Consultez la <a href="https://experienceleague.adobe.com/docs/experience-manager-65/administering/operations/workflows-administering.html?lang=fr#regular-purging-of-workflow-instances">documentation sur les tâches de maintenance AEM 6.5</a>.</p>
   </td>
   </tr>
@@ -91,7 +91,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <td>Purge du projet</td>
     <td>Client</td>
     <td>
-    <p>Doit s’effectuer dans git. Remplacez le nœud de configuration de fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code> ou <code>granite_daily</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
+    <p>Doit s’effectuer dans git. Remplacez le noeud de configuration de la fenêtre de maintenance prêt à l’emploi sous <code>/libs</code> en créant des propriétés sous le dossier <code>/apps/settings/granite/operations/maintenance/granite_weekly</code>, <code>granite_daily</code> ou <code>granite_monthly</code>. Consultez le tableau de fenêtre de maintenance ci-dessous pour en savoir plus sur la configuration.</p>
     <p>Activez la tâche de maintenance en ajoutant un autre nœud sous le nœud ci-dessus (nommez-le <code>granite_ProjectPurgeTask</code>) avec les propriétés adéquates. Voir la liste des propriétés OSGI sous "Configuration de purge des projets d’Adobe".</p>
   </td>
   </tr>
@@ -132,12 +132,12 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
     <td>Client</td>
     <td>Définition de nœud JCR</td>
     <td>
-    <p><strong>windowSchedule=daily</strong> (cette valeur ne doit pas être modifiée)</p>
+    <p><strong>windowSchedule=month</strong> (cette valeur ne doit pas être modifiée)</p>
     <p><strong>windowStartTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent commencer à s’exécuter.</p>
     <p><strong>windowEndTime=HH:MM</strong> dans un format horaire de 24 heures. Définit à quel moment les tâches de maintenance associées à la fenêtre de maintenance mensuelle doivent arrêter de s’exécuter si elles ne sont pas déjà terminées.</p>
     <p><strong>windowScheduleWeekdays= tableau de 2 valeurs de 1 à 7 (ex. : [5,5])</strong> La première valeur du tableau désigne le jour de début planifié du traitement et la seconde le jour de fin où le traitement doit être arrêté. L’heure exacte du début et de la fin est régie par les paramètres windowStartTime et windowEndTime, respectivement.</p>
-    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. En l’absence de valeur, les tâches sont planifiées chaque jour, comme régi par le paramètre windowScheduleWeekdays tous les mois.</p>
-    </td> 
+    <p><strong>windowFirstLastStartDay= 0/1</strong> 0 pour planifier la première semaine du mois ou 1 pour planifier la dernière semaine du mois. L’absence de valeur planifierait efficacement les tâches le jour régi par windowScheduleWeekdays (tous les mois).</p>
+    </td>
     </tr>
     </tbody>
 </table>
