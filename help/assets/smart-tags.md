@@ -7,8 +7,8 @@ role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
 source-git-commit: 5bf764c84d6676b575371bd865538a3f2c13a2ab
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -224,7 +224,7 @@ Par défaut, la recherche [!DNL Experience Manager] associe les termes de recher
 
 * ressources dotées de balises dynamiques avec l’un des mots-clés.
 
-Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche des balises dynamiques. Dans l’exemple ci-dessus, l’ordre approximatif de l’affichage des résultats de recherche est le suivant :
+Les résultats de recherche qui correspondent à tous les termes de recherche des champs de métadonnées sont affichés en premier, suivis des résultats de recherche qui correspondent à l’un des termes de recherche des balises intelligentes. Dans l’exemple ci-dessus, l’ordre approximatif d’affichage des résultats de recherche est le suivant :
 
 1. correspondances de `woman running` dans les différents champs de métadonnées.
 1. correspondances de `woman running` dans les balises intelligentes.
