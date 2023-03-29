@@ -2,10 +2,10 @@
 title: Canal de version préliminaire d’Adobe Experience Manager as a Cloud Service
 description: Découvrez comment utiliser le canal de version préliminaire pour obtenir un aperçu des prochaines fonctionnalités d’AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: 9a76a1c2b5e3b7986654b0843842b015811679a2
-workflow-type: ht
-source-wordcount: '1306'
-ht-degree: 100%
+source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
+workflow-type: tm+mt
+source-wordcount: '1311'
+ht-degree: 86%
 
 ---
 
@@ -16,22 +16,22 @@ Découvrez comment utiliser le canal de version préliminaire pour obtenir un ap
 
 ## Présentation {#introduction}
 
-Adobe Experience Manager as a Cloud Service bénéficie de nouvelles fonctionnalités tous les mois, conformément à la [feuille de route des versions d’Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service offre de nouvelles fonctionnalités à cadence régulière, selon les [Experience Manager relâche la feuille de route.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
 
-Pour vous familiariser avec les fonctionnalités programmées pour le mois suivant, vous pouvez vous abonner au canal de version préliminaire. Il vous suffit de configurer vos environnements de développement ou tout environnement de sandbox. Vous pouvez prévisualiser les nouveautés dans l’interface utilisateur d’AEM et créer du code pour toute nouvelle API en version préliminaire.
+Pour vous familiariser avec les fonctionnalités programmées pour la mise en ligne de la version suivante, vous pouvez vous abonner au canal de version préliminaire, accessible par la configuration de vos environnements de développement ou de tout environnement de test. Vous pouvez prévisualiser les nouveautés dans l’interface utilisateur d’AEM et créer du code pour toute nouvelle API en version préliminaire.
 
-La liste des fonctionnalités de version préliminaire pour un mois donné est publiée dans les [notes de mise à jour mensuelles.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+La liste des fonctionnalités de la version préliminaire d’une fonctionnalité donnée est publiée dans la section [notes de mise à jour.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## Mises à jour d’AEM as a Cloud Service {#releases}
 
 AEM as a Cloud Service comporte deux types de mises à jour :
 
-* les **Versions mensuelles** ajoutent de nouvelles fonctionnalités à AEM as a Cloud Service
-* les **Mises à jour critiques** contiennent des mises à jour de sécurité, des améliorations des performances et des correctifs de bugs. Elles sont publiées tous les jours.
+* **Versions de fonctionnalités** ajouter des fonctionnalités à AEM as a Cloud Service, lors de l’activation ;
+* **Versions de maintenance** ajoutez des mises à jour de sécurité, des améliorations de performances et des correctifs de bogues, et appliquez-les régulièrement et fréquemment.
 
 Ce calendrier de publication permet d’offrir des mises à jour continues sans interruption de service.
 
-Le canal de version préliminaire vous permet de prévisualiser les fonctionnalités contenues dans la prochaine version mensuelle. Vous pouvez ainsi les tester et planifier leur implémentation dans vos propres projets. Vous prenez ainsi une longueur d’avance pour une possible implémentation de la prochaine version mensuelle.
+Le canal de version préliminaire vous permet de prévisualiser les fonctionnalités programmées pour la prochaine version des fonctionnalités afin d’évaluer les fonctionnalités à venir et de planifier leur mise en oeuvre possible pour vos propres projets. Il vous permet de planifier la prochaine mise à jour des fonctionnalités.
 
 Par exemple, si nous sommes au mois de mai et que vous êtes abonné(e) au canal de version préliminaire, vous pouvez tester les fonctionnalités de la version de juin.
 
@@ -48,7 +48,7 @@ Pour tirer pleinement parti du canal de version préliminaire, suivez les quatre
 
 ## Marquer votre calendrier {#mark-calendars}
 
-Le calendrier des versions mensuelles est établi bien à l’avance et les dates de publication sont publiées sur [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
+Les mises à jour des fonctionnalités sont planifiées bien à l’avance et les dates d’activation des fonctionnalités sont publiées le [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
 
 Notez les dates dans votre agenda afin de consacrer du temps à l’examen et aux tests des prochaines fonctionnalités.
 
@@ -58,11 +58,11 @@ Une fois les dates de publication ajoutées à votre calendrier, accédez au sit
 
 Chaque version est accompagnée de notes de mise à jour qui décrivent les nouveautés apportées par la version, mais également les fonctionnalités disponibles en version préliminaire. Prenez une longueur d’avance et tirez parti des dernières fonctionnalités d’AEMaaCS !
 
-Vous pouvez également [consulter les problèmes connus](/help/release-notes/known-issues.md), publiés avec chaque version, afin d’être informé(e) de tout problème technique qui pourrait empêcher le bon déroulement des tests ou l’adoption des nouvelles fonctionnalités.
+Vous pouvez également [consulter les problèmes connus](/help/release-notes/maintenance/latest.md), publiés avec chaque version, afin d’être informé(e) de tout problème technique qui pourrait empêcher le bon déroulement des tests ou l’adoption des nouvelles fonctionnalités.
 
 ## Activer le canal de version préliminaire pour accéder aux nouvelles fonctionnalités et les essayer {#new-features}
 
-Le canal de version préliminaire peut être activé dans tout environnement de développement ou de sandbox. Toutefois, il ne peut pas être activé dans les environnements d’évaluation et de production.
+Le canal de version préliminaire peut être activé dans tout environnement de développement ou de sandbox. La version préliminaire ne peut pas être activée dans les environnements d’évaluation ou de production.
 
 Les fonctionnalités de la version préliminaire peuvent être expérimentées de différentes manières :
 

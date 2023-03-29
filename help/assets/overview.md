@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: efc0f317cf4540db49b6caf7bb9f6fd31b311583
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 100%
+source-wordcount: '457'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ Les entreprises ont besoin de la prise en charge d’un large éventail de forma
 
 Pour commencer, il faut comprendre les [avantages de l’offre cloud native](#solution-benefits). Découvrez les [modifications notables apportées à Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) qui ont également eu un impact sur Experience Manager Assets, suivies des [modifications notables apportées à Assets](/help/assets/assets-cloud-changes.md).
 
-Lisez la suite pour connaître les [détails sur les nouvelles fonctionnalités Assets](#whats-new-assets) et les [problèmes connus](/help/release-notes/known-issues.md). Consultez la liste des [fonctionnalités obsolètes ou supprimées](/help/release-notes/deprecated-removed-features.md) pour savoir ce qui a été supprimé dans cette version et consultez cette [liste des fonctionnalités à venir](/help/release-notes/known-issues.md#upcoming-assets-capabilities) pour savoir ce qui est à venir. Enfin, utilisez ce [glossaire](/help/overview/terminology.md) pour mieux comprendre les termes Experience Manager.
+Lisez la suite pour connaître les [détails sur les nouvelles fonctionnalités Assets](#whats-new-assets) et les [problèmes connus](/help/release-notes/maintenance/latest.md). Consultez la liste des [fonctionnalité obsolète ou supprimée](/help/release-notes/deprecated-removed-features.md) pour savoir ce qui a été supprimé dans cette version. Enfin, utilisez ce [glossaire](/help/overview/terminology.md) pour mieux comprendre les termes Experience Manager.
 
 ## Avantages de la solution {#solution-benefits}
 

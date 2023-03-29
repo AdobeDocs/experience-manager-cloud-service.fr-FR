@@ -2,9 +2,9 @@
 title: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 description: Notes de mise à jour d’Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: 05b9e51f-467e-4c8e-baea-b1cf832597cd
-source-git-commit: 554912f0e08fdf699b16ab9bf0b12ee84e8a682b
+source-git-commit: 9a00889f06a5ecf277cd99d4adbc8341480caa17
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '643'
 ht-degree: 95%
 
 ---
@@ -39,10 +39,10 @@ Pour se préparer pour une version :
 
 ## Principales informations sur les versions {#key-articles}
 
-* [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Notes de mise à jour des fonctionnalités](/help/release-notes/release-notes-cloud/release-notes-current.md)
+* [Notes de mise à jour de la maintenance](/help/release-notes/maintenance/latest.md)
 * [Nouveautés](what-is-new.md)
 * [Modifications notables](aem-cloud-changes.md)
-* [Problèmes connus](known-issues.md)
 * [Fonctionnalités obsolètes et supprimées](deprecated-removed-features.md)
 
 ## Guides d’Experience Manager as a Cloud Service {#aem-guides}

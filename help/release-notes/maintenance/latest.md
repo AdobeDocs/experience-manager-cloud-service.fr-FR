@@ -1,52 +1,49 @@
 ---
-title: Dernières notes de mise à jour de maintenance d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Dernières notes de mise à jour de maintenance d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: edb8949b532b80a55106e706a49e2ada68722a67
+title: Notes de mise à jour de la maintenance actuelle de [!DNL Adobe Experience Manager] as a Cloud Service.
+description: Notes de mise à jour de la maintenance actuelle de [!DNL Adobe Experience Manager] as a Cloud Service.
+source-git-commit: 7e66c9f26211bd92119c74f311f3e9b3195a8d98
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 7%
+source-wordcount: '265'
+ht-degree: 6%
 
 ---
 
 
 # Notes de mise à jour de la maintenance {#maintenance-release-notes}
 
-La section suivante décrit les versions techniques de la dernière version de maintenance d’Experience Manager as a Cloud Service.
+La section suivante présente les notes techniques de mise à jour de la version de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 11289 {#release-11289}
+## Version 11382 {#release-11382}
 
-Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 11289, publiée publiquement le 7 mars 2023. Cette version de maintenance est une mise à jour de la version de maintenance 10912 précédente.
+Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 11382, publiée publiquement le 28 mars 2023. Cette version de maintenance est une mise à jour de la version de maintenance 11289 précédente.
 
 L’activation des fonctionnalités de cette version de maintenance vous fournira l’ensemble des fonctionnalités. Voir [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour plus d’informations.
 
-### Problèmes connus {#known-issues}
-
-Ne mettez pas à niveau si vous utilisez CORS. Un problème affectant la fonctionnalité de diffusion de contenu GraphQL a été identifié dans cette version. Une modification de la configuration Dispatcher d’AEM par défaut concernant la mise en cache des requêtes persistantes de GraphQL peut interrompre la diffusion du contenu GraphQL de ces requêtes. Ce problème sera corrigé dans notre prochaine version de maintenance.
-
 ### Problèmes résolus {#fixed-issues}
+
+- ASSETS-21023 - Correction du rendu de recadrage intelligent, grâce auquel les clients pouvaient observer une exception de pointeur nul sur l’instance de l’éditeur de tous les environnements AEM lorsqu’ils tentaient d’accéder à ces rendus via l’API.
+- SKYOPS-49280 - Lors de l’installation d’une configuration ou d’une mise à jour de lot à l’aide de RDE dans Publier, le résultat peut ne pas être observable, car le cache du Dispatcher de publication n’est pas invalidé.
 
 #### Sites {#sites-issues}
 
-- SITES-11584 Correction d’un problème lié aux Live Copies qui ne pouvaient pas être créées pour les pages avec des annotations.
-- SITES-11683 Désactivation des Live Copies MSM avec un héritage partiellement rompu
+- SITES-7796 - Possibilité pour l’auteur de contenu de publier le fragment de contenu de Principal et ses variantes respectives lors de l’exportation vers la cible
 
 #### Ressources {#assets-issues}
 
-- ASSETS-20879 Correction d’une régression qui empêchait le bon fonctionnement de l’interface utilisateur des rapports de ressources et générait des résultats incorrects dans les rapports générés.
-- ASSETS-21020 Correction d’un problème lié au téléchargement de ressource rompu : le profil d’image n’existe pas après le déplacement de la ressource.
-- ASSETS-21023 Correction d’un problème lié aux rendus d’image dans Dynamic Media qui empêchait l’accès via l’API.
+- ASSETS-20076 - Ajout de la prise en charge du filigrane vidéo correspondant à la prise en charge actuelle du filigrane d’image
+- ASSETS-21428 - Ajout d’exclusions pour les modifications CSS
 
 #### Forms {#forms-issues}
 
-- Aucun
+- CQ-4351502 - Mise à jour du mappage utilisateur du service pour autoriser l’accès en lecture dans Sites
 
 #### Plateforme {#platform-issues}
 
-- GRANITE-44467 - Correction d’un problème en raison duquel l’importation échouait lors de la mise à jour d’un noeud existant, Filevault sous certaines instances ne conservait pas les types de mixin et les noeuds enfants.
+- SITES-11040 - Activation conditionnelle de la mise en cache des requêtes persistantes de GraphQL dans Dispatcher
 
 ### Technologies intégrées {#embedded-tech}
 
-| Technologie | Version | Lien |
+| Technologie | d’Adobe Experience Manager Forms 6.5 | Lien |
 |---|---|---|
 | AEM OAK | 1.44-T20221206170501-6d59064 | [API 1.44.0 Oak](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html) |
 | API SLING AEM | Version 2.27.0 | [API Apache Sling 2.27.0](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
