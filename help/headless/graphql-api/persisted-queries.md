@@ -3,7 +3,7 @@ title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 872fe7a96f58df0e1e9cce29367cc71778fedb78
+source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 74%
@@ -272,6 +272,8 @@ Par défaut, AEM invalide le cache en fonction d’une définition de durée de 
 | Réseau de diffusion de contenu | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` | `graphqlStaleWhileRevalidate` |
 | Réseau de diffusion de contenu | `stale-if-error` | `surrogate-control : stale-if-error` | `surrogateControlStaleIfError` | `graphqlStaleIfError` |
 
+{style="table-layout:auto"}
+
 ### Instances de création {#author-instances}
 
 Pour les instances d’auteur, les valeurs par défaut sont les suivantes :
@@ -345,6 +347,8 @@ Le `cache-control` peut être défini au moment de la création (PUT) ou ultéri
 | `graphqlStaleIfError` | 86400 | *En fonction des besoins* | *En fonction des besoins* |
 | `graphqlSurrogateControl` | 600 | *En fonction des besoins* | *En fonction des besoins* |
 
+{style="table-layout:auto"}
+
 ### Gestion du cache avec une configuration OSGi {#cache-osgi-configration}
 
 Pour gérer le cache globalement, vous pouvez : [configuration des paramètres OSGi](/help/implementing/deploying/configuring-osgi.md) pour le **Configuration de Query Service persistante**.
@@ -363,6 +367,8 @@ Configuration OSGi par défaut pour les instances de publication :
    | `surrogateControlMaxAge` | reads | `graphqlSurrogateControl` |
    | `surrogateControlStaleWhileRevalidate` | reads | `graphqlStaleWhileRevalidate` |
    | `surrogateControlStaleIfError` | reads | `graphqlStaleIfError` |
+
+   {style="table-layout:auto"}
 
 * et, si elle n’est pas disponible, la configuration OSGi utilise la variable [valeurs par défaut pour les instances de publication](#publish-instances).
 
