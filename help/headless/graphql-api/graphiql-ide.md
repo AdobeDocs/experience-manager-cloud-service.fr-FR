@@ -3,10 +3,10 @@ title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 6e6bdc539f07fd15649a4f99d491f0486a511bdc
+source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
-source-wordcount: '1050'
-ht-degree: 96%
+source-wordcount: '1058'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,7 @@ Une mise en œuvre de l’IDE [GraphQL](https://graphql.org/learn/serving-over-h
 >
 >GraphiQL est inclus dans tous les environnements d’AEM (mais est accessible/visible uniquement lorsque vous configurez vos points d’entrée).
 >
->Dans les versions précédentes, un module était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut désormais être supprimé.
+>Dans les versions précédentes, un package était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut désormais être supprimé.
 
 >[!NOTE]
 >Vous devez avoir [configuré vos points de fin](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
@@ -31,7 +31,7 @@ L’outil **GraphiQL** vous permet de tester et de déboguer vos requêtes Graph
 * exécuter vos requêtes pour afficher immédiatement les résultats ;
 * gérer les **Variables de requête** ;
 * enregistrer et gérer les **Requêtes persistantes** ;
-* publier ou annuler la publication de **Requêtes persistantes** (par exemple : vers et à partir de `dev-publish`) ;
+* publier ou dépublier des **Requêtes persistantes** (par exemple : vers et à partir de `dev-publish`) ;
 * Afficher l’**Historique** de vos requêtes précédentes ;
 * utiliser l’**Explorateur de documentation** pour accéder à la documentation pour vous aider à apprendre et à comprendre les méthodes disponibles.
 
@@ -88,8 +88,6 @@ Dans les deux cas, la requête affichée dans le panneau de l’éditeur est la 
 
 ## Variables de requête {#query-variables}
 
-<!-- more details needed here? -->
-
 L’IDE GraphiQL vous permet également de gérer vos [variables de requête](/help/headless/graphql-api/content-fragments.md#graphql-variables).
 
 Par exemple :
@@ -99,6 +97,10 @@ Par exemple :
 ## Gérer le cache pour vos requêtes persistantes {#managing-cache}
 
 Les [requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) sont recommandées, car elles peuvent être mises en cache au niveau des couches Dispatcher et réseau CDN, ce qui améliore les performances de l’application cliente effectuant les requêtes. Par défaut, AEM invalidera le cache du réseau de diffusion de contenu (CDN) en fonction d’une durée de vie par défaut (TTL).
+
+>[!NOTE]
+>
+>Pour plus d’informations, voir [Mise en cache de vos requêtes persistantes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >
@@ -131,7 +133,7 @@ Les caches peuvent continuer à servir une réponse mise en cache en cas d’err
 
 ## Publier des requêtes persistantes {#publishing-persisted-queries}
 
-Une fois que vous avez sélectionné votre requête persistante dans la liste (panneau de gauche), vous pouvez utiliser les actions **Publier** et **Annuler la publication**. Cette opération les active dans votre environnement de publication (par exemple `dev-publish`) pour faciliter l’accès selon vos applications lors des tests.
+Une fois que vous avez sélectionné votre requête persistante dans la liste (panneau de gauche), vous pouvez utiliser les actions **Publier** et **Dépublier**. Cette opération les active dans votre environnement de publication (par exemple `dev-publish`) pour faciliter l’accès selon vos applications lors des tests.
 
 >[!NOTE]
 >
