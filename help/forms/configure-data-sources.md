@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
+source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
 workflow-type: tm+mt
-source-wordcount: '2139'
-ht-degree: 86%
+source-wordcount: '2135'
+ht-degree: 73%
 
 ---
 
@@ -26,13 +26,9 @@ L’intégration de données [!DNL Experience Manager Forms] permet de configure
 * SalesForce
 * Stockage Azure Blob de Microsoft®
 
-L’intégration de données prend en charge l’authentification OAuth2.0, de base ou par clé API par défaut, et permet de mettre en œuvre une authentification personnalisée pour accéder aux services web. Les services RESTful, SOAP et OData sont configurés dans [!DNL Experience Manager] as a Cloud Service <!--, JDBC for relational databases --> et le connecteur pour le profil utilisateur [!DNL Experience Manager] est configuré dans la console web [!DNL Experience Manager].
+L’intégration de données prend en charge l’authentification OAuth2.0, de base ou par clé API par défaut, et permet de mettre en œuvre une authentification personnalisée pour accéder aux services web. Bien que les services RESTful, SOAP et OData soient configurés dans [!DNL Experience Manager] as a Cloud Service, JDBC pour les bases de données relationnelles et connecteur pour [!DNL Experience Manager] profil utilisateur configuré dans [!DNL Experience Manager] console web.
 
->[!NOTE]
->
->[!UICONTROL Experience Manager Forms] ne prend pas en charge les bases de données relationnelles.
-
-## Configurer la base de données relationnelle {#configure-relational-database}
+## Configuration de la base de données relationnelle {#configure-relational-database}
 
 ### Prérequis
 
@@ -46,16 +42,16 @@ Avant de configurer des bases de données relationnelles à l’aide de [!DNL Ex
 Vous pouvez configurer des bases de données relationnelles à l’aide de [!DNL Experience Manager] Configuration de la console web. Procédez comme suit :
 
 1. Accédez à [!DNL Experience Manager] console web à l’adresse `https://server:host/system/console/configMgr`.
-1. Localiser **[!UICONTROL Pools de connexions JDBC Day Commons]** configuration. Appuyez pour ouvrir la configuration en mode édition.
+1. Localiser **[!UICONTROL Pools de connexions JDBC Day Commons]** configuration. Appuyez pour ouvrir la configuration en mode d’édition.
 
    ![Pool de connecteurs JDBC](/help/forms/assets/jdbc_connector.png)
 
-1. Dans la boîte de dialogue de configuration, spécifiez les détails de la base de données que vous souhaitez configurer, tels que :
+1. Dans la boîte de dialogue de configuration, spécifiez les détails de la base de données que vous souhaitez configurer, par exemple :
 
    * Nom de classe Java™ pour le pilote JDBC
    * URI de connexion JDBC
-   * Nom d’utilisateur et mot de passe pour établir la connexion avec le pilote JDBC
-   * Spécifiez une requête SQL SELECT dans le champ **[!UICONTROL Requête de validation]** pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. En fonction de votre base de données, définissez l’une des options suivantes :
+   * Nom d’utilisateur et mot de passe pour établir la connexion au pilote JDBC
+   * Spécifier une requête SQL SELECT dans la variable **[!UICONTROL Requête de validation]** pour valider les connexions à partir du pool. La requête doit renvoyer au moins une ligne. En fonction de votre base de données, indiquez l’une des options suivantes :
       * SELECT 1 (MySQL et MS SQL)
       * SELECT 1 from dual (Oracle)
    * Nom de la source de données
@@ -111,11 +107,11 @@ Pour configurer le dossier pour les configurations de service cloud :
 
    1. Dans le **[!UICONTROL navigateur de configuration]**, sélectionnez le dossier `global` et appuyez sur **[!UICONTROL Propriétés]**.
 
-   1. Dans la boîte de dialogue **[!UICONTROL Propriétés de configuration]**, activez **[!UICONTROL Configurations cloud]**.
+   1. Dans le **[!UICONTROL Propriétés de configuration]** boîte de dialogue, activer **[!UICONTROL Configurations du cloud]**.
 
    1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
 
-1. Dans le **[!UICONTROL navigateur de configuration]**, appuyez sur **[!UICONTROL Créer]**.
+1. Dans le **[!UICONTROL Explorateur de configuration]**, appuyez sur **[!UICONTROL Créer]**.
 1. Dans le **[!UICONTROL Créer une configuration]** , spécifiez un titre pour le dossier et activez **[!UICONTROL Configurations du cloud]**.
 1. Appuyez sur **[!UICONTROL Créer]** pour créer le dossier activé pour les configurations de service cloud.
 
@@ -129,8 +125,8 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](configure-data-sources.md#cloud-folder).
 
-1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
-1. Spécifiez les informations suivantes pour le service RESTful :
+1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, puis sélectionnez **[!UICONTROL Service RESTful]** de la **[!UICONTROL Type de service]** , recherchez et sélectionnez éventuellement une miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Spécifiez les détails suivants pour le service RESTful :
 
    * Sélectionnez l’URL ou le fichier dans la liste déroulante [!UICONTROL Source Swagger] et spécifiez l’[!DNL Swagger URL] vers le fichier de définition du [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
    * Selon la variable[!DNL  Swagger] Saisie source. Les champs suivants sont pré-renseignés avec des valeurs :
@@ -153,8 +149,8 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](configure-data-sources.md#cloud-folder).
 
-1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez éventuellement une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
-1. Spécifiez les informations suivantes pour le service RESTful :
+1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, puis sélectionnez **[!UICONTROL Service RESTful]** de la **[!UICONTROL Type de service]** , recherchez et sélectionnez éventuellement une miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Spécifiez les détails suivants pour le service RESTful :
 
    * Sélectionnez l’URL ou le fichier dans la liste déroulante [!UICONTROL Source Swagger] et spécifiez l’[!DNL Swagger 3.0 URL] vers le fichier de définition du [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
    * Selon la variable[!DNL  Swagger] Entrée source, les informations de connexion au serveur cible s&#39;affichent.
@@ -229,10 +225,10 @@ Pour configurer le service Web SOAP dans [!DNL Experience Manager] as a Cloud Se
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](configure-data-sources.md#cloud-folder).
 
-1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service Web SOAP]** dans la liste déroulante **[!UICONTROL Type de service]**, sélectionnez et sélectionnez une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
-1. Spécifiez les éléments suivants pour le service Web SOAP :
+1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, puis sélectionnez **[!UICONTROL Service Web SOAP]** de la **[!UICONTROL Type de service]** , recherchez et sélectionnez éventuellement une miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Spécifiez les éléments suivants pour le service Web SOAP :
 
-   * URL WSDL pour le service Web.
+   * URL WSDL du service Web.
    * Point d’entrée du service. Spécifiez une valeur dans ce champ pour remplacer le point d’entrée du service mentionné dans WSDL.
    * Sélectionnez le type d’authentification - Aucun, OAuth2.0, Authentification de base ou Authentification personnalisée - pour accéder au service SOAP et fournir en conséquence les détails de l’authentification.
 
@@ -273,7 +269,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](#cloud-folder).
 
 1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, cherchez et sélectionnez éventuellement une vignette pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
-1. Spécifiez les informations suivantes pour le service OData :
+1. Spécifiez les détails suivants pour le service OData :
 
    * URL racine du service pour le service OData à configurer.
    * Sélectionnez le type d’authentification - Aucun, OAuth2.0, Authentification de base, Clé API ou Authentification personnalisée - pour accéder au service OData et fournir en conséquence les détails de l’authentification.
