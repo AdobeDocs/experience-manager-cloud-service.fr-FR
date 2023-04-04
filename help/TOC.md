@@ -8,10 +8,10 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 48ec92d559f9d1ead096316e77e04f2e1e02526d
+source-git-commit: 196a2f221c637d58ea6642177f530f158888efe0
 workflow-type: tm+mt
-source-wordcount: '4009'
-ht-degree: 94%
+source-wordcount: '4015'
+ht-degree: 93%
 
 ---
 
@@ -517,6 +517,7 @@ ht-degree: 94%
       + [Migration depuis [!DNL AEM 6.5 Forms] ou antérieur à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
       + [Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources](/help/forms/import-export-forms-templates.md)
+      + [Thèmes de référence, modèles et modèles de données](/help/forms/reference-themes-templates-data-models.md)
    + Intégration {#integrate}
       + Services {#services}
          + [Intégration d’AEM Forms as a Cloud Service à Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
