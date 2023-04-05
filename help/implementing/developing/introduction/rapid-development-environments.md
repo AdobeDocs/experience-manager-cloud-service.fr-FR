@@ -1,10 +1,10 @@
 ---
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour réaliser des itérations de développement rapides sur un environnement cloud.
-source-git-commit: 74ccf3a22043bfc7ac47e8fa1c9d064ad88a886e
+source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
 workflow-type: tm+mt
-source-wordcount: '3293'
-ht-degree: 64%
+source-wordcount: '3314'
+ht-degree: 63%
 
 ---
 
@@ -218,6 +218,8 @@ Vous pouvez éventuellement référencer un référentiel distant :
 `aio aem:rde:install -t content-package "https://repo1.maven.org/maven2/com/adobe/aem/guides/aem-guides-wknd.all/2.1.0/aem-guides-wknd.all-2.1.0.zip"`
 
 Par défaut, les artefacts sont déployés sur les niveaux Auteur et Publication, mais l’indicateur &quot;-s&quot; peut être utilisé pour cibler un niveau spécifique.
+
+Tout module AEM peut être déployé, par exemple des modules comportant du code, du contenu ou un [module conteneur](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (également appelé package &quot;all&quot;).
 
 >[!IMPORTANT]
 >
