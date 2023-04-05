@@ -4,10 +4,10 @@ description: Découvrez comment utiliser les fragments de contenu et l’API Gra
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 30fca14949e379fb427252f43d9f31d062e7e445
+source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
 workflow-type: tm+mt
-source-wordcount: '725'
-ht-degree: 100%
+source-wordcount: '755'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,10 @@ ht-degree: 100%
 Ouvrez l’Explorateur GraphQL dans un nouvel onglet. Vous pouvez y créer et valider des requêtes sur votre contenu découplé avant de les utiliser pour alimenter le contenu de votre application ou site web.
 
 1. Votre version d’évaluation d’AEM Headless est fournie avec un point d’entrée préchargé de fragments de contenu à partir desquels vous pouvez extraire du contenu à des fins de test. Veillez à sélectionner le point d’entrée **Ressources de démonstration AEM** dans le menu déroulant **Point d’entrée** situé dans le coin supérieur droit de l’éditeur.
+
+1. Problème connu : si la variable **AEM des ressources de démonstration** Le point d’entrée n’est pas présent dans le menu déroulant, accédez à Package Manager (`/crx/packmgr` chemin d’accès dans votre environnement AEM) et réinstallez la variable `aem-demo-assets.ui.content-{VERSION}.zip` package :
+
+   ![Réinstaller le package](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. Copiez le fragment de code suivant pour obtenir une requête de liste du point d’entrée préchargé **Ressources de démonstration AEM**. La requête de liste renvoie une liste de tout le contenu qui utilise un modèle de fragment de contenu spécifique. Les pages de stock et de catégorie utilisent généralement ce format de requête.
 
