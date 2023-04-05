@@ -1,10 +1,10 @@
 ---
 title: Notes de mise à jour de la maintenance actuelle de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle de [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: c6acdd922c052d0db5bf1f05bc03329fbc44ca33
+source-git-commit: c56ed1878b89a1f31c5b7b44696511d51cfa5351
 workflow-type: tm+mt
-source-wordcount: '306'
-ht-degree: 8%
+source-wordcount: '342'
+ht-degree: 7%
 
 ---
 
@@ -19,12 +19,16 @@ Vous trouverez ci-dessous un résumé des améliorations continues apportées à
 
 L’activation des fonctionnalités de cette version de maintenance vous fournira l’ensemble des fonctionnalités. Voir [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour plus d’informations.
 
-### Problèmes résolus {#fixed-issues}
+### Problèmes connus {#known-issues-11382}
+
+- SITES-12573 - Les requêtes GraphQL utilisant des variables à l’intérieur d’un filtre échouent si une variable n’est pas spécifiée. Veuillez ne pas mettre à jour cette version si vous utilisez GraphQL avec AEM as a Cloud Service.
+
+### Problèmes résolus {#fixed-issues-11382}
 
 - ASSETS-21023 - Correction du rendu de recadrage intelligent, grâce auquel les clients pouvaient observer une exception de pointeur nul sur l’instance de l’éditeur de tous les environnements AEM lorsqu’ils tentaient d’accéder à ces rendus via l’API.
 - SKYOPS-49280 - Lors de l’installation d’une configuration ou d’une mise à jour de lot à l’aide de RDE dans Publier, le résultat peut ne pas être observable, car le cache du Dispatcher de publication n’est pas invalidé.
 
-#### Sites {#sites-issues}
+#### Sites {#sites-issues-11382}
 
 - SITES-7796 - Possibilité pour l’auteur de contenu de publier le fragment de contenu de Principal et ses variantes respectives lors de l’exportation vers la cible
 - SITES-97 - GraphQL : Pagination et tri, filtrage hybride
@@ -33,20 +37,20 @@ L’activation des fonctionnalités de cette version de maintenance vous fournir
 >
 > Dans SITES-97, certaines améliorations ont été apportées à l’implémentation de GraphQL, qui peuvent entraîner un comportement inattendu. Voir [Modifications d’AEM GraphQL concernant la gestion des valeurs nulles](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-21792.html?lang=fr) pour plus d’informations.
 
-#### Ressources {#assets-issues}
+#### Ressources {#assets-issues-11382}
 
 - ASSETS-20076 - Ajout de la prise en charge du filigrane vidéo correspondant à la prise en charge actuelle du filigrane d’image
 - ASSETS-21428 - Ajout d’exclusions pour les modifications CSS
 
-#### Forms {#forms-issues}
+#### Forms {#forms-issues-11382}
 
 - CQ-4351502 - Mise à jour du mappage utilisateur du service pour autoriser l’accès en lecture dans Sites
 
-#### Plateforme {#platform-issues}
+#### Plateforme {#platform-issues-11382}
 
 - SITES-11040 - Activation conditionnelle de la mise en cache des requêtes persistantes de GraphQL dans Dispatcher
 
-### Technologies intégrées {#embedded-tech}
+### Technologies intégrées {#embedded-tech-11382}
 
 | Technologie | d’Adobe Experience Manager Forms 6.5 | Lien |
 |---|---|---|
