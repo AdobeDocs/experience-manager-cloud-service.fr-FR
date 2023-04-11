@@ -2,7 +2,7 @@
 title: Tests de l’interface utilisateur
 description: Le test personnalisé d’interface utilisateur est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications personnalisées.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: a2507c65df5d42ac53fcbb0a81cc2fb897438f44
+source-git-commit: 53f1a6bb83e4ad52d00f9899db0a87c3cb3e2653
 workflow-type: tm+mt
 source-wordcount: '2147'
 ht-degree: 54%
@@ -23,15 +23,15 @@ Le test d’interface utilisateur personnalisé est une fonctionnalité facultat
 
 AEM fournit une suite intégrée de [points de contrôle de qualité Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) pour garantir la fluidité de la mise à jour des applications personnalisées. En particulier, les points de contrôle des tests informatiques prennent déjà en charge la création et l’automatisation de tests personnalisés à l’aide des API AEM.
 
-Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basés sur Selenium). En outre, un projet de tests d’interface utilisateur peut facilement être généré en utilisant [l’archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)
+Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basés sur Selenium). En outre, un projet de tests d’interface utilisateur peut facilement être généré en utilisant [l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr).
 
-Les tests de l’interface utilisateur sont exécutés dans le cadre d’un point de contrôle qualité spécifique pour chaque pipeline Cloud Manager avec une [**Tests de l’interface utilisateur personnalisée** step](/help/implementing/cloud-manager/deploy-code.md) in [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou facultatif [pipelines hors production.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
+Les tests de l’interface utilisateur sont exécutés dans le cadre d’un point de contrôle qualité spécifique pour chaque pipeline Cloud Manager avec une [**Tests de l’interface utilisateur personnalisée** step](/help/implementing/cloud-manager/deploy-code.md) in [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou facultatif [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
 
-Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker avec des tests écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [Création de tests d’interface utilisateur.](#building-ui-tests)
+Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker avec des tests écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [Création de tests d’interface utilisateur](#building-ui-tests).
 
 >[!TIP]
 >
->Adobe recommande de suivre la structure et le langage (JavaScript et WDIO) fournis dans l’[Archétype de projet AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)
+>Adobe recommande de suivre la structure et le langage (JavaScript et WDIO) fournis dans l’[Archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
 >
 >Adobe fournit également un exemple de module de test d’interface utilisateur basé sur Java et WebDriver. Reportez-vous à la section [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver) pour plus d’informations.
 
@@ -45,15 +45,15 @@ Cette section décrit les étapes requises pour configurer des tests d’interfa
 
       >[!NOTE]
       >
-      >Si votre référentiel a été créé avant la création automatique de Cloud Manager `it.tests` , vous pouvez également générer la dernière version à l’aide de la variable [AEM Archétype de projet.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+      >Si votre référentiel a été créé avant la création automatique de Cloud Manager `it.tests` , vous pouvez également générer la dernière version à l’aide de la variable [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests).
 
-   * Pour Java et WebDriver, utilisez l’exemple de code du [AEM Référentiel d’exemples de test.](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)
+   * Pour Java et WebDriver, utilisez l’exemple de code du [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
    * Pour les autres langages de programmation, reportez-vous à la section [Création de tests d’interface utilisateur](#building-ui-tests) dans ce document pour configurer le projet test.
 
 1. Assurez-vous que le test de l’interface utilisateur est activé conformément à la section . [Accord préalable client](#customer-opt-in) dans ce document.
 
-1. Développez vos cas de test et [exécutez les tests localement.](#run-ui-tests-locally)
+1. Développez vos cas de test et [exécuter les tests localement](#run-ui-tests-locally).
 
 1. Validez votre code dans le référentiel Cloud Manager et exécutez un pipeline Cloud Manager.
 
@@ -257,7 +257,7 @@ Vous pouvez utiliser les fonctions d’assistance pour créer des captures d’�
 * JavaScript : [takeScreenshot, commande](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java : [Commandes](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger à partir de Cloud Manager à l’aide de la fonction `Download Details` sous le bouton [**Tests de l’interface utilisateur personnalisée** étape .](/help/implementing/cloud-manager/deploy-code.md)
+Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger à partir de Cloud Manager à l’aide de la fonction `Download Details` sous le bouton [**Tests de l’interface utilisateur personnalisée** step](/help/implementing/cloud-manager/deploy-code.md).
 
 ### Charger des fichiers {#upload-files}
 
@@ -309,7 +309,7 @@ Pour exécuter les tests de l’interface utilisateur à partir de votre ordinat
 >* Les fichiers journaux sont stockés dans la variable `target/reports` dossier de votre référentiel
 >* Vous devez vous assurer que vous utilisez la dernière version de Chrome alors que le test télécharge automatiquement la dernière version de ChromeDriver à des fins de test.
 >
->Pour plus d’informations, reportez-vous à la section [AEM référentiel de l’archétype de projet.](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md)
+>Pour plus d’informations, reportez-vous à la section [Référentiel AEM archétype de projet](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Exemple de test Java {#java-sample}
 
@@ -332,4 +332,4 @@ Pour exécuter les tests de l’interface utilisateur à partir de votre ordinat
 >
 >* Les fichiers journaux seront stockés dans la variable `target/reports` de votre référentiel.
 >
->Pour plus d’informations, reportez-vous à la section [AEM Référentiel d’exemples de test.](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md)
+>Pour plus d’informations, reportez-vous à la section [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
