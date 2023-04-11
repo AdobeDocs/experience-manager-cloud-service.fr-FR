@@ -5,7 +5,7 @@ landing-page-description: Découvrez comment gérer les fragments de contenu à 
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 13e75e8b0f08463f5fd941263497f5cf0a31129c
+source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 96%
@@ -69,7 +69,7 @@ Vous pouvez constater ici qu’il existe trois zones principales :
    * **[Créer](#creating-new-content-fragment)** un fragment de contenu.
    * [Filtrer](#filtering-fragments) les fragments de contenu en fonction d’une sélection de prédicats et enregistrer le filtre en vue d’une utilisation ultérieure.
    * [Rechercher](#searching-fragments) les fragments de contenu.
-   * [Personnaliser la vue du tableau pour afficher les colonnes d’informations sélectionnées.](#selectuse-available-columns)
+   * [Personnaliser la vue du tableau pour afficher les colonnes d’informations sélectionnées.](#select-available-columns)
    * Utiliser **Ouvrir dans Assets** pour ouvrir directement l’emplacement actuel dans la console **Ressources**
 
       >[!NOTE]
