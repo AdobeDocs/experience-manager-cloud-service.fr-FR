@@ -2,10 +2,10 @@
 title: Conditions préalables pour l’outil de transfert de contenu
 description: Conditions préalables pour l’outil de transfert de contenu
 exl-id: 41a9cff1-4d89-480c-b9fc-5e8efc2a0705
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 93%
+source-wordcount: '547'
+ht-degree: 88%
 
 ---
 
@@ -23,7 +23,7 @@ Le tableau suivant résume les conditions préalables requises pour l’utilisat
 Veuillez consulter toutes les considérations ci-dessous :
 
 | Considérations | Éléments actuellement pris en charge |
-|--- |--- |
+|---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Version d’AEM | L’outil de transfert de contenu ne peut être exécuté que sur AEM version 6.3 ou ultérieure. |
 | Taille de l’entrepôt de segments | Un référentiel existant qui contient moins de 55 millions de nœuds JCR et jusqu’à 250 Go (taille compactée en ligne) sur *Auteur* et 50 Go sur *Publier* est actuellement pris en charge. Créez un ticket d’assistance auprès de l’assistance clientèle d’Adobe pour discuter des options relatives à la taille de l’entrepôt de segments au-dessus de ces limites. |
 | Taille totale du référentiel de contenu <br>*(entrepôt de segments + entrepôt de données)* | L’outil de transfert de contenu est conçu pour transférer jusqu’à 20 To de contenu pour le type de magasin de données File Data Store. Tout ce qui dépasse 20 To n’est actuellement pas pris en charge. Créez un ticket de support auprès de l’assistance clientèle d’Adobe pour discuter des options relatives au contenu de plus de 20 To. <br>Pour accélérer considérablement le processus de transfert de contenu pour les référentiels volumineux, une étape de [précopie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr#setting-up-pre-copy-step) facultative peut être utilisée. Cela s’applique aux types de magasin de données File Data Store, Amazon S3 et Azure Data Store. Pour Amazon S3 et Azure Data Store, les tailles de référentiel supérieures à 20 To sont prises en charge. |
@@ -34,4 +34,4 @@ Veuillez consulter toutes les considérations ci-dessous :
 
 ## Prochaines étapes {#whats-next}
 
-Une fois que vous avez examiné les conditions préalables et déterminé si vous pouvez utiliser l’outil de transfert de contenu dans votre projet de migration, reportez-vous à la section [Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr).
+Une fois que vous avez examiné les conditions préalables et déterminé si vous pouvez utiliser l’outil de transfert de contenu dans votre projet de migration, reportez-vous à la section [Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html).

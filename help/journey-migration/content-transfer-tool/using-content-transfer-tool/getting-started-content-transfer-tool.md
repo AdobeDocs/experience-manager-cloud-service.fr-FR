@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 8264aef85a1d76db1cc04e0a01839089ee5f4b66
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '1388'
-ht-degree: 88%
+ht-degree: 85%
 
 ---
 
@@ -177,7 +177,7 @@ Pour exécuter une vérification de taille, procédez comme suit :
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Cliquez sur **Check Size** (Vérifier la taille) pour démarrer le processus. Vous revenez alors à la vue Liste des jeux de migration et un message vous indique que **Check Size** (Vérifier la taille) est en cours d’exécution.
+1. Cliquez sur **Check Size** (Vérifier la taille) pour démarrer le processus. Vous revenez alors à la vue Liste des jeux de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 

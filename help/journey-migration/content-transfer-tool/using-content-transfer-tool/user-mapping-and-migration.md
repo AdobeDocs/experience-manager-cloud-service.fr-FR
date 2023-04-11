@@ -1,10 +1,10 @@
 ---
 title: Mappage des utilisateurs et migration des entités de sécurité
 description: Présentation du mappage des utilisateurs et de la migration des entités principales
-source-git-commit: aeb8f633b45908a87f15f9feeb3723f90470be92
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 30%
+source-wordcount: '757'
+ht-degree: 28%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 30%
 
 Dans le cadre du parcours de transition vers Adobe Experience Manager (AEM) as a Cloud Service, vous devez déplacer les utilisateurs et les groupes du système AEM existant vers AEM as a Cloud Service. Cette opération fait appel à l’outil de transfert de contenu.
 
-L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création. Pour ce faire, vous devez utiliser [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) afin de gérer les utilisateurs et les groupes d’utilisateurs. Les informations de profil d’utilisateur sont centralisées dans le système Adobe IMS (Identity Management System), qui permet l’authentification unique pour toutes les applications de cloud d’Adobe. Pour plus d’informations, consultez [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html?lang=fr#identity-management). En raison de cette modification, les utilisateurs existants doivent être mappés à leurs identifiants IMS pour éviter les doublons d’utilisateurs sur l’instance d’auteur du Cloud Service. Puisque les groupes des AEM traditionnels sont fondamentalement différents des groupes dans IMS, les groupes ne sont pas mappés, mais les deux ensembles de groupes doivent être réconciliés une fois la migration terminée.
+L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création. Pour ce faire, vous devez utiliser [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) afin de gérer les utilisateurs et les groupes d’utilisateurs. Les informations de profil d’utilisateur sont centralisées dans le système Adobe IMS (Identity Management System), qui permet l’authentification unique pour toutes les applications de cloud d’Adobe. Pour plus d’informations, consultez [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/overview/what-is-new-and-different.html#identity-management). En raison de cette modification, les utilisateurs existants doivent être mappés à leurs identifiants IMS pour éviter les doublons d’utilisateurs sur l’instance d’auteur du Cloud Service. Puisque les groupes des AEM traditionnels sont fondamentalement différents des groupes dans IMS, les groupes ne sont pas mappés, mais les deux ensembles de groupes doivent être réconciliés une fois la migration terminée.
 
 ## Mappage des utilisateurs et détails de migration {#user-mapping-detail}
 
@@ -49,6 +49,6 @@ Les cas spécifiques suivants sont consignés :
 
 ## Considérations supplémentaires {#additional-considerations}
 
-* Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est défini, les utilisateurs déjà transférés sur l’instance de Cloud Service seront supprimés avec l’ensemble du référentiel existant, et un nouveau référentiel sera créé pour intégrer du contenu. Cette opération réinitialise également tous les paramètres, y compris les autorisations sur l’instance Cloud Service cible, et est effective pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur administrateur doit être lu dans la variable **administrateurs** pour récupérer le jeton d’accès pour CTT.
+* Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est défini, les utilisateurs déjà transférés sur l’instance de Cloud Service seront supprimés avec l’ensemble du référentiel existant, et un nouveau référentiel sera créé pour intégrer du contenu. Cette opération réinitialise également tous les paramètres, y compris les autorisations sur l’instance Cloud Service cible, et est effective pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur administrateur doit être rajouté au **administrateurs** pour récupérer le jeton d’accès pour CTT.
 * Lorsque des compléments de contenu sont effectués, si le contenu n’est pas transféré car il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne sont pas transférés non plus, même si les utilisateurs et les groupes ont changé entre-temps. En effet, les utilisateurs et les groupes font l’objet d’un migration avec le contenu auquel ils sont associés.
 * Si l’instance AEM Cloud Service cible comporte un utilisateur avec un nom d’utilisateur différent mais la même adresse électronique que l’un des utilisateurs sur l’instance d’AEM source et que le mappage d’utilisateur est activé, un message d’erreur est écrit dans les journaux et l’utilisateur de l’AEM source n’est pas transféré, car un seul utilisateur avec une adresse électronique donnée est autorisé sur le système cible.

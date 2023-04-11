@@ -2,10 +2,10 @@
 title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1554'
-ht-degree: 90%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -42,7 +42,7 @@ Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version 
 * Une fois l’activité de transfert de contenu terminée, une structure de projet appropriée est nécessaire dans l’environnement Cloud Service pour s’assurer que le contenu s’affiche correctement.
 
 * Avant d’exécuter l’outil de transfert de contenu, vous devez vous assurer que l’espace disque disponible dans le sous-répertoire `crx-quickstart` de l’instance AEM source est suffisant. En effet, l’outil de transfert de contenu crée une copie locale du référentiel, ultérieurement chargée dans le jeu de migration.
-La formule générale pour calculer l’espace disque disponible requis est la suivante :
+La formule générale pour calculer l&#39;espace disque disponible requis est la suivante :
    `data store size + node store size * 1.5`
 
    * *volume de stockage des données* : l’outil de transfert de contenu utilise 64 Go, même si l’entrepôt de données en question est plus volumineux.
@@ -71,7 +71,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * La clé d’extraction est valable 14 jours à compter du moment où elle a été créée/renouvelée. Elle peut être renouvelée à tout moment. Si la clé d’extraction a expiré, vous ne pourrez pas effectuer d’extraction.
 
-* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Voir [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=en#running-tool) pour plus d’informations.
+* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Voir [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) pour plus d’informations.
 
 * Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le _Extraction_ Le processus copie l’intégralité de la `/home` dans le jeu de migration et effectue le mappage de l’utilisateur en ajoutant un champ provenant de l’adresse électronique de chaque utilisateur. Pour plus d’informations, voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Le _Ingestion_ Le processus copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré.
 

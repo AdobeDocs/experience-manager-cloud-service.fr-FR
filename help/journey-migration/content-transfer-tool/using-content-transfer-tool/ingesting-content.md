@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 7e5a966693b139efa42111d8b6d675674516cfc6
+source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 78%
+source-wordcount: '1722'
+ht-degree: 71%
 
 ---
 
@@ -39,7 +39,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    * Sélectionnez le jeu de migration contenant les données extraites comme Source.
       * Les jeux de migration expirent après une longue période d’inactivité. Il est donc prévu que l’ingestion se produise relativement peu de temps après l’exécution de l’extraction. Réviser [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
-   * Sélectionnez l’environnement de destination. C’est à ce moment que le contenu du jeu de migration sera ingéré. Sélectionnez le niveau. (Auteur/Publication).
+   * Sélectionnez l’environnement de destination. C’est à ce moment que le contenu du jeu de migration sera ingéré. Sélectionnez le niveau. (Auteur/Publication). Les environnements de développement rapide ne sont pas pris en charge.
 
    >[!NOTE]
    >
@@ -55,9 +55,13 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
    > 
    >Si l’ingestion avec une précopie est utilisée (pour S3 ou Azure Data Store), il est recommandé d’exécuter l’ingestion d’auteur en premier, seule. Cela permet d’accélérer l’ingestion de publication lorsqu’elle est exécutée ultérieurement.
 
+   >[!NOTE]
+   >
+   >Les intuitions ne prennent pas en charge une destination RDE (Rapid Development Environment). Ils n’apparaîtront pas comme choix de destination possible, même si l’utilisateur y a accès.
+
    >[!IMPORTANT]
    >
-   >Vous ne pourrez déclencher une ingestion dans l’environnement de destination que si vous appartenez au groupe local **Administrateurs AEM** du service de création Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
+   >Vous ne pourrez lancer une ingestion dans l’environnement de destination que si vous appartenez à l’environnement local. **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
 
    >[!IMPORTANT]
    >
@@ -67,7 +71,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam22.png)
 
-1. Vous pouvez ensuite surveiller la phase d’ingestion en mode liste des Tâches d’ingestion. Vous pouvez également utiliser le menu Action de l’ingestion pour consulter le journal consignant la progression de l’ingestion.
+1. Vous pouvez ensuite surveiller la phase d’ingestion dans la vue Liste des Tâches d’ingestion. Vous pouvez également utiliser le menu Action de l’ingestion pour consulter le journal consignant la progression de l’ingestion.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
@@ -103,7 +107,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 >id="aemcloud_ctt_ingestion_topup"
 >title="Ingestion de complément"
 >abstract="Utilisez la fonction de complément pour déplacer le contenu modifié depuis l’activité de transfert de contenu précédente. Une fois l’ingestion terminée, recherchez dans les journaux les erreurs/avertissements éventuels. Toute erreur doit être corrigée immédiatement, soit en traitant les problèmes signalés, soit en contactant l’assistance clientèle d’Adobe."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html?lang=fr" text="Affichage des journaux"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/viewing-logs.html" text="Affichage des journaux"
 
 L’outil de transfert de contenu comporte une fonctionnalité pour traiter un *complément* de contenu différentiel. Dans ce cas, seules les modifications effectuées depuis l’activité de transfert de contenu précédente sont transférées.
 
@@ -132,7 +136,7 @@ Vous devez récupérer manuellement le jeton de migration en cliquant sur le lie
 
 ### Impossible de démarrer l’ingestion {#unable-to-start-ingestion}
 
-Vous pourrez déclencher une ingestion vers un environnement de destination seulement si vous appartenez au groupe local **Administrateurs AEM** sur le service de création Cloud Service de destination. Si vous n’appartenez pas au groupe d’administrateurs AEM, une erreur s’affiche lorsque vous essayez de démarrer une ingestion, comme illustré ci-dessous. Vous pouvez demander à votre administrateur de vous ajouter au groupe local **Administrateurs AEM** ou demander directement le jeton, que vous pouvez ensuite coller dans le champ **Entrée du jeton de migration**.
+Vous ne pourrez lancer une ingestion dans l’environnement de destination que si vous appartenez à l’environnement local. **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination. Si vous n’appartenez pas au groupe d’administrateurs AEM, une erreur s’affiche lorsque vous essayez de démarrer une ingestion, comme illustré ci-dessous. Vous pouvez demander à votre administrateur de vous ajouter au groupe local **Administrateurs AEM** ou demander directement le jeton, que vous pouvez ensuite coller dans le champ **Entrée du jeton de migration**.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -175,4 +179,4 @@ Ce conflit doit être résolu manuellement. Une personne qui connait le contenu 
 
 ## Prochaines étapes {#whats-next}
 
-Une fois que vous avez terminé l’ingestion de contenu dans Target, vous pouvez consulter les journaux de chaque étape (extraction et ingestion) et rechercher les erreurs. Consultez la section [Affichage des journaux d’un jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html?lang=fr) pour en savoir plus.
+Une fois que vous avez terminé l’ingestion de contenu dans Target, vous pouvez consulter les journaux de chaque étape (extraction et ingestion) et rechercher les erreurs. Consultez la section [Affichage des journaux d’un jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/viewing-logs.html) pour en savoir plus.
