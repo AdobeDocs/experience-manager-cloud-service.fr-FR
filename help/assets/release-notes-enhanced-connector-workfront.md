@@ -2,10 +2,10 @@
 title: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 8ce5b0a163c8ddf7f9c9672eff6d752a58c464bb
+source-git-commit: a65f736f922bcb58c09773ff9c6d6f7104b6157d
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 89%
+source-wordcount: '1089'
+ht-degree: 85%
 
 ---
 
@@ -15,22 +15,21 @@ La section suivante présente les notes de mise à jour générales de [!DNL Wor
 
 ## Date de publication {#release-date}
 
-Date de publication de la dernière version 1.9.8 de [!DNL Workfront for Experience Manager enhanced connector] est le 3 mars 2023.
+Date de publication de la dernière version 1.9.9 de [!DNL Workfront for Experience Manager enhanced connector] est le 10 avril 2023.
 
 ## Principaux éléments de la mise à jour {#release-highlights}
 
-La dernière version de la variable [!DNL Workfront for Experience Manager enhanced connector] inclut les mises à jour suivantes :
+La dernière version de la variable [!DNL Workfront for Experience Manager enhanced connector] inclut les mises à jour :
 
-* Amélioration des performances dans Experience Manager lors de la création de dossiers liés à un projet dans Workfront.
+* Experience Manager affiche une `DateTimeParseException` lorsqu’elle reçoit la date de dernière modification de Workfront lors de la création du dossier lié.
 
-* Les suppressions de commentaires dans Workfront sont désormais répercutées dans Experience Manager.
+* Problèmes lors de la création de plusieurs dossiers de projet liés dans un délai court.
 
-* Possibilité de gérer le blocage des nouveaux clients net sur Experience Manager as a Cloud Service de la configuration du connecteur.
-
+* Impossible de configurer une limite de seuil pour le nombre de nouveaux dossiers liés au projet.
 
 >[!IMPORTANT]
 >
->Adobe vous recommande d’effectuer une [mise à niveau vers la dernière version, la version 1.9.8](../assets/update-workfront-enhanced-connector.md) de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe vous recommande d’effectuer une [mise à niveau vers la dernière version, la version 1.9.9](../assets/update-workfront-enhanced-connector.md) de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problèmes connus {#known-issues}
 
@@ -40,7 +39,18 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 
 ## Versions précédentes {#previous-releases}
 
-### Version de janvier 2022 {#january-2022-release}
+### Version de mars 2023 {#march-2023-release}
+
+[!DNL Workfront for Experience Manager enhanced connector] La version 1.9.8, publiée le 3 mars 2023, comprend les mises à jour suivantes :
+
+* Amélioration des performances dans Experience Manager lors de la création de dossiers liés à un projet dans Workfront.
+
+* Les suppressions de commentaires dans Workfront sont désormais répercutées dans Experience Manager.
+
+* Possibilité de gérer le blocage des nouveaux clients net sur Experience Manager as a Cloud Service de la configuration du connecteur.
+
+
+### Version de janvier 2023 {#january-2022-release}
 
 [!DNL Workfront for Experience Manager enhanced connector] La version 1.9.7, publiée le 2 février 2023, comprend les mises à jour suivantes :
 
