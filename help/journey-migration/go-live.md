@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -107,7 +107,7 @@ Veuillez tenir compte du fait que l’ingestion entière échoue si l’une des 
 Comparé à la section ci-dessus, l’ingestion n’échoue **pas** en raison des problèmes de ressources suivants. Toutefois, il est vivement recommandé de prendre les mesures appropriées dans ces scénarios :
 
 * Toute ressource dont le rendu original est manquant.
-* Tout dossier dont le nœud `jcr:content` est manquant.
+* Tout dossier dont le nœud `jcr:content` est manquant..
 
 Les deux éléments ci-dessus seront identifiés et signalés dans le rapport de l’[Analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
 
