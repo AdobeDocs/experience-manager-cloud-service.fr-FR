@@ -4,10 +4,10 @@ description: Intégration à Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 9df5c3326d80e1a6c1726395722d86556af1ee29
+source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 97%
+source-wordcount: '1047'
+ht-degree: 95%
 
 ---
 
@@ -18,7 +18,9 @@ Dans le cadre d’Adobe Experience Cloud, Adobe Target vous permet d’améli
 * d’utiliser l’interface utilisateur tactile pour créer une configuration Target dans AEM as a Cloud Service (configuration IMS requise) ;
 * d’ajouter et de configurer Adobe Target en tant qu’extension dans [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=fr).
 
-Adobe Launch est nécessaire afin de gérer les propriétés côté client pour Analytics et Target dans les pages AEM (bibliothèques/balises JS). Cela dit, l’intégration à Launch est nécessaire au « ciblage d’expérience ». Pour l’exportation des fragments d’expérience dans Target, vous n’avez besoin que de la configuration Adobe Target et d’IMS.
+Adobe Launch est nécessaire afin de gérer les propriétés côté client pour Analytics et Target dans les pages AEM (bibliothèques/balises JS). Cela dit, l’intégration à Launch est nécessaire au « ciblage d’expérience ». 
+
+Pour l’exportation de fragments d’expérience et/ou de fragments de contenu vers Target, vous avez uniquement besoin de la variable [Configuration Adobe Target et IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >
@@ -155,4 +157,4 @@ Pour savoir comment concevoir et publier, reportez-vous à cette [page](https://
 
 >[!NOTE]
 >
->Les configurations héritées sont toujours prises en charge pour les clients existants (sans possibilité de modifier des configurations ou d’en créer de nouvelle). Les configurations héritées feront partie des modules de contenu chargés par les clients à l’aide de VSTS.
+>Les configurations héritées sont toujours prises en charge pour les clients existants (sans possibilité de modifier des configurations ou d’en créer de nouvelle). Les configurations héritées feront partie des packages de contenu chargés par les clients à l’aide de VSTS.

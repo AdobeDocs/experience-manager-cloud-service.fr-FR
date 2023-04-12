@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 0fe0bd301fb09cdc631878926f2e40df51a2cc23
+source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
 workflow-type: tm+mt
-source-wordcount: '4203'
-ht-degree: 99%
+source-wordcount: '4768'
+ht-degree: 87%
 
 ---
 
@@ -703,6 +703,208 @@ query {
 >* En raison de contraintes techniques internes, les performances se dégradent si le tri et le filtrage sont appliqués aux champs imbriqués. Il est donc recommandé d’utiliser des champs de filtrage/tri stockés au niveau racine. Il s’agit également de la méthode recommandée si vous souhaitez interroger des jeux de résultats paginés volumineux.
 
 
+## Diffusion d’images optimisées pour le web dans des requêtes GraphQL {#web-optimized-image-delivery-in-graphql-queries}
+
+La diffusion d’images optimisées pour le web vous permet d’utiliser une requête Graphql pour :
+
+* Demande d’une URL à une image de ressource AEM
+
+* Transmettez des paramètres avec la requête, de sorte qu’un rendu spécifique de l’image soit automatiquement généré et renvoyé.
+
+   >[!NOTE]
+   >
+   >Le rendu spécifié n’est pas stocké dans AEM Assets. Le rendu est généré et conservé dans le cache pendant une courte période.
+
+* Renvoyer l’URL dans le cadre de la diffusion JSON
+
+Vous pouvez utiliser AEM pour :
+
+* Pass [Diffusion d’images optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) dans les requêtes GraphQL.
+
+Cela signifie que les commandes sont appliquées lors de l’exécution de la requête, de la même manière que les paramètres d’URL sur les demandes de GET pour ces images.
+
+Vous pouvez ainsi créer dynamiquement des rendus d’image pour la diffusion JSON, ce qui évite d’avoir à créer et stocker manuellement ces rendus dans le référentiel.
+
+La solution de GraphQL vous permet d’effectuer les opérations suivantes :
+
+* use `_dynamicUrl` sur le `ImageRef` reference
+
+* add `_assetTransform` dans l’en-tête de liste où vos filtres sont définis ;
+
+### Structure de la requête de transformation {#structure-transformation-request}
+
+`AssetTransform` (`_assetTransform`) est utilisé pour effectuer les demandes de transformation d’URL.
+
+La structure et la syntaxe sont les suivantes :
+
+* `format`: une énumération avec tous les formats pris en charge par son extension : GIF, PNG, PNG8, JPG, PJPG, BJPG, WEBP, WEBPLL ou WEBPLY
+* `seoName`: chaîne qui sera utilisée comme nom de fichier au lieu du nom de noeud
+* `crop`: une sous-structure de cadre, si la largeur ou la hauteur est omise, la hauteur ou la largeur est utilisée comme même valeur ;
+   * `xOrigin`: l’origine x de l’image et est obligatoire ;
+   * `yOrigin`: l’origine y du cadre et est obligatoire ;
+   * `width`: la largeur de l’image ;
+   * `height`: hauteur de l’image
+* `size`: une sous-structure de dimension, si la largeur ou la hauteur est omise, la hauteur ou la largeur est utilisée comme même valeur ;
+   * `width`: la largeur de la dimension ;
+   * `height`: la hauteur de la dimension ;
+* `rotation`: une énumération de toutes les rotations prises en charge : R90, R180, R270
+* `flip`: une énumération de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL
+* `quality`: un entier compris entre 1 et 100 indiquant le pourcentage de la qualité de l’image ;
+* `width`: entier qui définit la largeur de l’image de sortie, mais qui sera ignoré par le générateur d’images.
+* `preferWebp`: une valeur booléenne qui indique si webp est préférable (la valeur par défaut est false).
+
+La transformation d’URL est disponible pour tous les types de requête : par chemin, liste ou paginé.
+
+### Diffusion d’images optimisées pour le web avec des paramètres complets {#web-optimized-image-delivery-full-parameters}
+
+Voici un exemple de requête avec un ensemble complet de paramètres :
+
+```graphql
+{
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:"test"
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Diffusion d’images optimisées pour le web avec une seule variable de requête {#web-optimized-image-delivery-single-query-variable}
+
+L’exemple suivant illustre l’utilisation d’une variable de requête unique :
+
+```graphql
+query ($seoName: String!) {
+  articleList(
+    _assetTransform: {
+      format:GIF
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Diffusion d’images optimisées pour le web avec plusieurs variables de requête {#web-optimized-image-delivery-multiple-query-variables}
+
+L’exemple suivant illustre l’utilisation de plusieurs variables de requête :
+
+```graphql
+query ($seoName: String!, $format: AssetTransformFormat!) {
+  articleList(
+    _assetTransform: {
+      format:$format
+      seoName:$seoName
+      crop:{
+        xOrigin:10
+        yOrigin:20
+        width:50
+        height:45
+      }
+      size:{
+        height:100
+        width:200
+      }
+      rotation:R90
+      flip:HORIZONTAL_AND_VERTICAL
+      quality:55
+      width:123
+      preferWebp:true
+    }
+  ) {
+    items {
+      _path
+      featuredImage {
+        ... on ImageRef {
+          _dynamicUrl
+        }
+      }
+    }
+  }
+}
+```
+
+### Demande de diffusion d’images optimisée pour le web par URL {#web-optimized-image-delivery-request-url}
+
+Si vous enregistrez votre requête en tant que requête conservée (par exemple, avec le nom `dynamic-url-x`) vous pouvez alors [exécuter directement la requête conservée ;](/help/headless/graphql-api/persisted-queries.md#execute-persisted-query).
+
+Par exemple, pour exécuter directement les exemples précédents (enregistrés en tant que requêtes persistantes), utilisez les URL suivantes :
+
+* [Paramètre unique](#dynamic-image-delivery-single-specified-parameter); Requête persistante nommée `dynamic-url-x`
+
+   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic-url-x;seoName=xxx`
+
+      La réponse se présente comme suit :
+
+      ![Diffusion d’images à l’aide de paramètres](assets/cfm-graphiql-sample-image-delivery.png "Diffusion d’images à l’aide de paramètres")
+
+* [Paramètres multiples](#dynamic-image-delivery-multiple-specified-parameters); Requête persistante nommée `dynamic`
+
+   * `http://localhost:4502/graphql/execute.json/wknd-shared/dynamic;seoName=billiboy;format=GIF;`
+
+      >[!CAUTION]
+      >
+      >La fin `;`est obligatoire pour terminer correctement la liste des paramètres.
+
+### Limites de la diffusion d’images {#image-delivery-limitations}
+
+Les restrictions suivantes s’appliquent :
+
+* Modificateurs appliqués à toutes les images faisant partie de la requête (paramètres globaux)
+
+* Mise en cache des en-têtes
+
+   * Aucune mise en cache sur l’auteur
+   * Mise en cache lors de la publication - âge maximal de 10 minutes (ne peut pas être modifié par le client)
+
 ## GraphQL pour AEM – Résumé des extensions {#graphql-extensions}
 
 Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM, il existe quelques extensions :
@@ -761,7 +963,18 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
          >
          >Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur (de secours) par défaut.
 
-         * Voir [Exemple de requête – Toutes les villes avec une variante nommée](#sample-cities-named-variation)
+         * Voir [Exemple de requête – Toutes les villes avec une variante nommée](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
+   * Pour [diffusion d&#39;images](#image-delivery):
+
+      * `_dynamicUrl`: sur le `ImageRef` reference
+
+      * `_assetTransform`: dans l’en-tête de liste où vos filtres sont définis ;
+
+      * Voir :
+
+         * [Exemple de requête pour la diffusion d’images avec des paramètres complets](#image-delivery-full-parameters)
+
+         * [Exemple de requête pour la diffusion d’images avec un seul paramètre spécifié](#image-delivery-single-specified-parameter)
    * Et les opérations :
 
       * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -771,6 +984,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
          * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
          * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 

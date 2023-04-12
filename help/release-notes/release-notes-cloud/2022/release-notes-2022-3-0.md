@@ -2,16 +2,16 @@
 title: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 97%
+source-wordcount: '1150'
+ht-degree: 95%
 
 ---
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2022.3.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.3.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 
 * Les administrateurs peuvent désormais configurer le service de messagerie pour les téléchargements volumineux. Cette configuration permet aux utilisateurs d’[activer les notifications par e-mail pour les téléchargements volumineux](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) à partir de l’interface [!DNL Experience Manager Assets]. Une fois le processus de téléchargement terminé, l’utilisateur reçoit une notification par e-mail contenant le lien de téléchargement du dossier zip archivé.
 
-* La fonctionnalité [Gérer la publication](/help/assets/manage-publication.md) a été améliorée par le biais de son interface utilisateur. Les utilisateurs peuvent publier ou annuler la publication de contenu vers et depuis la destination sélectionnée, [ajouter du contenu](/help/assets/manage-publication.md#add-content) à la liste de publication à partir du référentiel DAM, [inclure des paramètres de dossier](/help/assets/manage-publication.md#include-folder-settings) pour publier le contenu des dossiers sélectionnés et appliquer des filtres, et [planifier une publication](/help/assets/manage-publication.md#publish-assets-later) à une date ou une heure ultérieure.
+* La fonctionnalité [Gérer la publication](/help/assets/manage-publication.md) a été améliorée par le biais de son interface utilisateur. Les utilisateurs peuvent publier ou dépublier du contenu vers et depuis la destination sélectionnée, [ajouter du contenu](/help/assets/manage-publication.md#add-content) à la liste de publication à partir du référentiel DAM, [inclure des paramètres de dossier](/help/assets/manage-publication.md#include-folder-settings) pour publier le contenu des dossiers sélectionnés et appliquer des filtres, et [planifier une publication](/help/assets/manage-publication.md#publish-assets-later) à une date ou une heure ultérieure.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#prerelease-features-assets}
 

@@ -1,17 +1,17 @@
 ---
 title: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 99%
+source-wordcount: '850'
+ht-degree: 96%
 
 ---
 
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2022.10.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.10.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 * AEM as a Cloud Service (service de création) est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Pour plus d’informations, consultez la section AEM as a [Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md).
 
-* Comme mentionné précédemment dans les notes de mise à jour, l’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu supérieurs à 10 Mo (nœuds avec les propriétés, sans les fichiers binaires) est obsolète. Sa mise hors service sera effective dans les prochains jours. Consultez les sections [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Workflow Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) pour connaître les méthodes de réplication recommandées de ces modules de contenu volumineux.
+* Comme mentionné précédemment dans les notes de mise à jour, l’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des packages de contenu supérieurs à 10 Mo (nœuds avec les propriétés, sans les fichiers binaires) est obsolète. Sa mise hors service sera effective dans les prochains jours. Consultez les sections [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Workflow Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) pour connaître les méthodes de réplication recommandées de ces packages de contenu volumineux.
 
 * La configuration de Dispatcher référence désormais un fichier qui répertorie les paramètres de requête de campagne marketing courants. Les clients peuvent choisir de supprimer les commentaires des paramètres souhaités afin d’améliorer la mise en cache. Pour plus d’informations, consultez la section [Paramètres de campagne marketing](/help/implementing/dispatcher/caching.md#marketing-parameters).
 

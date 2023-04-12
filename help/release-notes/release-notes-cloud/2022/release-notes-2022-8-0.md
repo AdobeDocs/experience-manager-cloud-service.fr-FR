@@ -2,16 +2,16 @@
 title: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 0eff8100-5990-4553-8373-445fb7e6fb27
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '628'
-ht-degree: 65%
+source-wordcount: '625'
+ht-degree: 61%
 
 ---
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2022.8.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.8.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >

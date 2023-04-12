@@ -2,16 +2,16 @@
 title: Notes de mise à jour de la version 2022.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 100%
+source-wordcount: '570'
+ht-degree: 95%
 
 ---
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2022.4.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.4.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des prob
 
 Un nouvel analyseur a été ajouté récemment :
 
-* `content-packages-validation` : valide une syntaxe et une structure de contenu correctement formées pour les modules qui seront installés lors du déploiement.
+* `content-packages-validation` : valide une syntaxe et une structure de contenu correctement formées pour les packages qui seront installés lors du déploiement.
 
 Il est vivement recommandé de mettre à jour votre projet Maven avec la dernière version de l’analyseur ou d’inclure l’analyseur si vous ne l’avez pas encore fait. Pour plus d’informations, voir la documentation [ici](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/build-analyzer-maven-plugin.html?lang=fr).
 

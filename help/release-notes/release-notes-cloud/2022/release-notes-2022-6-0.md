@@ -2,16 +2,16 @@
 title: Notes de mise à jour de la version 2022.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '642'
-ht-degree: 97%
+source-wordcount: '639'
+ht-degree: 94%
 
 ---
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2022.6.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.6.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Consultez la vidéo Aperçu de la version de juin 2022 pour obtenir un résumé 
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
-* Une nouvelle [interface utilisateur](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) est désormais disponible pour que les administrateurs et les créateurs de contenu puissent exécuter efficacement des actions (telles que publier, annuler la publication, copier, déplacer, etc.), rechercher/filtrer et créer des fragments de contenu pour des cas d’utilisation découplé.
+* Une nouvelle [interface utilisateur](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) est désormais disponible pour que les administrateurs et les créateurs de contenu puissent exécuter efficacement des actions (telles que publier, dépublier, copier, déplacer, etc.), rechercher/filtrer et créer des fragments de contenu pour des cas d’utilisation découplés.
 
    ![Console Fragments de contenu](/help/release-notes/assets/cf-ui.png)
 
@@ -94,7 +94,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Comme indiqué dans les notes de mise à jour de mai (2022.5.0), l’option « Ajouter une arborescence » sous l’onglet **Distribuer** de l’écran d’administration de l’agent de réplication a été supprimé. Les modules avec une arborescence de contenu doivent plutôt être répliqués à l’aide de [Gérer la publication](/help/operations/replication.md#manage-publication) ou du workflow [Publier l’arborescence de contenu](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
+* Comme indiqué dans les notes de mise à jour de mai (2022.5.0), l’option « Ajouter une arborescence » sous l’onglet **Distribuer** de l’écran d’administration de l’agent de réplication a été supprimé. Les packages avec une arborescence de contenu doivent plutôt être répliqués à l’aide de [Gérer la publication](/help/operations/replication.md#manage-publication) ou du workflow [Publier l’arborescence de contenu](/help/operations/replication.md#manage-publication#publish-content-tree-workflow).
 
 ## Cloud Manager {#cloud-manager}
 

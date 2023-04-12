@@ -2,16 +2,16 @@
 title: Notes de mise à jour de la version 2022.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1c40ab67-8fd7-4f29-b8c9-dd98b6d5b490
-source-git-commit: b591b0fd24267ae0036b26f137927d5588a28316
+source-git-commit: a66215277ca83c011f2f4df621d055049c4c93a7
 workflow-type: tm+mt
-source-wordcount: '1085'
-ht-degree: 100%
+source-wordcount: '1082'
+ht-degree: 97%
 
 ---
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2022.1.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.1.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -57,7 +57,7 @@ Consultez la vidéo [Aperçu de la version de décembre 2022](https://video.tv.a
 * Les administrateurs peuvent désormais configurer le service de messagerie pour les téléchargements volumineux. Cette configuration permet aux utilisateurs d’[activer les notifications par e-mail pour les téléchargements volumineux](/help/assets/download-assets-from-aem.md#enable-email-notifications-for-large-downloads) à partir de l’interface [!DNL Experience Manager Assets]. Une fois le processus de téléchargement terminé, l’utilisateur reçoit une notification par e-mail contenant le lien de téléchargement du dossier zip archivé.
 
 
-* La fonctionnalité [Gérer la publication](/help/assets/manage-publication.md) a été améliorée par le biais de son interface utilisateur. Les utilisateurs peuvent publier ou annuler la publication de contenu vers et depuis la destination sélectionnée, [ajouter du contenu](/help/assets/manage-publication.md#add-content) à la liste de publication à partir du référentiel DAM, [inclure des paramètres de dossier](/help/assets/manage-publication.md#include-folder-settings) pour publier le contenu des dossiers sélectionnés et appliquer des filtres, et [planifier une publication](/help/assets/manage-publication.md#publish-assets-later) à une date ou une heure ultérieure.
+* La fonctionnalité [Gérer la publication](/help/assets/manage-publication.md) a été améliorée par le biais de son interface utilisateur. Les utilisateurs peuvent publier ou dépublier du contenu vers et depuis la destination sélectionnée, [ajouter du contenu](/help/assets/manage-publication.md#add-content) à la liste de publication à partir du référentiel DAM, [inclure des paramètres de dossier](/help/assets/manage-publication.md#include-folder-settings) pour publier le contenu des dossiers sélectionnés et appliquer des filtres, et [planifier une publication](/help/assets/manage-publication.md#publish-assets-later) à une date ou une heure ultérieure.
 
 ### Correctifs {#bug-fixes}
 
@@ -89,7 +89,7 @@ Consultez la vidéo [Aperçu de la version de décembre 2022](https://video.tv.a
 * Le composant de recommandation de produit prend en charge d’autres types de page (page d’accueil, panier, confirmation de commande).
 * **Liste de souhaits**
    * Les visiteurs connectés peuvent ajouter des produits à une liste de souhaits.
-   * La gestion de la liste des souhaits et de ses produits est possible via myAccount
+   * La gestion de la liste des souhaits et de ses produits est possible via Mon compte.
    * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par une stratégie (par exemple un teaser de produit ou les informations de produit).
    * Disponible en tant que composant principal et dans AEM Venia Storefront
 

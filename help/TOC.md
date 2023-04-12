@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
+source-git-commit: af3b5950a36bbd4a8d1e0de9591d31c50fa774c8
 workflow-type: tm+mt
-source-wordcount: '4013'
+source-wordcount: '4023'
 ht-degree: 93%
 
 ---
@@ -34,6 +34,8 @@ ht-degree: 93%
    + [Informations sur la version](/help/release-notes/home.md)
    + Notes de mise à jour des fonctionnalités d’AEMaaCS {#release-notes}
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
+      + 2023 {#2023}
+         + [Notes de mise à jour de la version 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
       + 2022 {#2022}
          + [Notes de mise à jour de la version 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [Notes de mise à jour de la version 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -367,7 +369,8 @@ ht-degree: 93%
       + [Intégration à Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [Exporter des fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
+      + [Exportation de fragments d’expérience vers Adobe Target ](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Ressources {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)

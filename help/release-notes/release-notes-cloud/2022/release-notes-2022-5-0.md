@@ -2,16 +2,16 @@
 title: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 100%
+source-wordcount: '802'
+ht-degree: 97%
 
 ---
 
-# Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2022.5.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante concerne les notes de mise à jour générales de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
+La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.5.0 de [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -79,9 +79,9 @@ Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Ado
 
 ### Nouveautés {#what-is-new-foundation}
 
-* L’option « Ajouter une arborescence » sous l’**onglet Distribution** de l’écran de l’administrateur d’agent de réplication, précédemment annoncée comme obsolète, sera supprimée le 20 juin 2022 ou peu de temps après. Les modules avec arborescence de contenu doivent plutôt être répliqués à l’aide des workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow).
+* L’option « Ajouter une arborescence » sous l’**onglet Distribution** de l’écran de l’administrateur d’agent de réplication, précédemment annoncée comme obsolète, sera supprimée le 20 juin 2022 ou peu de temps après. Les packages avec arborescence de contenu doivent plutôt être répliqués à l’aide des workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow).
 
-* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu de plus de 10 Mo (nœuds avec propriétés, sans inclure les fichiers binaires) est obsolète et sera supprimée le 12 septembre 2022 ou peu de temps après. À la place, les workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) seront utilisés pour répliquer ces modules de contenu volumineux. En juillet, un message d’avertissement s’affichera dans l’écran de l’administrateur de l’agent de réplication, sous l’**onglet Distribution**, si vous tentez de répliquer ces modules de contenu volumineux. Il apparaîtra également dans le journal d’erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces modules de contenu volumineux. En septembre, les avertissements seront remplacés par des erreurs. Veuillez ajuster vos processus en conséquence.
+* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des packages de contenu de plus de 10 Mo (nœuds avec propriétés, sans inclure les fichiers binaires) est obsolète et sera supprimée le 12 septembre 2022 ou peu de temps après. À la place, les workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) seront utilisés pour répliquer ces packages de contenu volumineux. En juillet, un message d’avertissement s’affichera dans l’écran de l’administrateur de l’agent de réplication, sous l’**onglet Distribution**, si vous tentez de répliquer ces packages de contenu volumineux. Il apparaîtra également dans le journal d’erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces packages de contenu volumineux. En septembre, les avertissements seront remplacés par des erreurs. Veuillez ajuster vos processus en conséquence.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Experience Manager] {#prerelease-features-foundation}
 
