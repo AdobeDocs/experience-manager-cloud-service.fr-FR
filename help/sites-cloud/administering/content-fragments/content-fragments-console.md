@@ -5,10 +5,10 @@ landing-page-description: Découvrez comment gérer les fragments de contenu à 
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 449e189b117aca58b960e802f8b3b11e7a5ea523
+source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 96%
+source-wordcount: '952'
+ht-degree: 91%
 
 ---
 
@@ -56,6 +56,7 @@ Vous pouvez constater ici qu’il existe trois zones principales :
 * Le panneau de gauche :
    * Ici, vous pouvez masquer ou afficher l’arborescence de dossiers.
    * Vous pouvez sélectionner une branche spécifique de l’arborescence.
+   * Il peut être redimensionné pour afficher les dossiers imbriqués.
 * Le panneau principal/droit, à partir duquel vous pouvez :
    * Consulter la liste de tous les fragments de contenu dans la branche sélectionnée de l’arborescence. :
       * L’emplacement est indiqué par les chemins de navigation. Ceux-ci peuvent également être utilisés pour modifier l’emplacement.
@@ -64,8 +65,10 @@ Vous pouvez constater ici qu’il existe trois zones principales :
             * Ouvrir le fragment approprié dans l’éditeur
             * Afficher des informations à propos des références
             * Afficher des informations sur les versions linguistiques du fragment
-         * Vous pouvez [sélectionnez un ou plusieurs fragments de contenu pour afficher les actions disponibles](#actions-selected-content-fragment)
-      * Vous pouvez sélectionner un en-tête de colonne pour trier le tableau en fonction de cette colonne. sélectionnez à nouveau pour basculer entre croissant et décroissant. Actuellement, le tri est pris en charge sur la variable **Titre**, **Modifié**, et **Modifié par** colonnes.
+      * Lorsque vous placez le pointeur de la souris sur les en-têtes de colonne, un sélecteur d’action déroulante et des curseur de largeur s’affichent. Ils vous permettent d’effectuer les opérations suivantes :
+         * Tri : sélectionnez l’action appropriée pour croissant ou décroissant. Le tableau entier sera trié selon cette colonne. Le tri n&#39;est disponible que sur les colonnes appropriées.
+         * Redimensionner la colonne à l’aide de l’action ou des curseur de largeur
+      * Vous pouvez [sélectionnez un ou plusieurs fragments de contenu pour afficher les actions disponibles](#actions-selected-content-fragment)
    * **[Créer](#creating-new-content-fragment)** un fragment de contenu.
    * [Filtrer](#filtering-fragments) les fragments de contenu en fonction d’une sélection de prédicats et enregistrer le filtre en vue d’une utilisation ultérieure.
    * [Rechercher](#searching-fragments) les fragments de contenu.
@@ -154,7 +157,7 @@ En sélectionnant **Créer**, vous ouvrez la boîte de dialogue compacte **Nouve
 
 Le panneau de filtrage offre les options suivantes :
 
-* une sélection de prédicats qui peuvent être sélectionnés et combinés ;
+* une sélection de prédicats ; un ou plusieurs prédicats peuvent être sélectionnés et combinés pour créer le filtre.
 * l’opportunité d’**Enregistrer** votre configuration ;
 * l’option permettant de récupérer un filtre de recherche enregistré pour réutilisation.
 
