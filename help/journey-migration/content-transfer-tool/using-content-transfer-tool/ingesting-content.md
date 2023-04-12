@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: 7854a0217c5d2e7d260a6fbe893aef1e6d4a4c72
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 71%
+source-wordcount: '1687'
+ht-degree: 70%
 
 ---
 
@@ -20,8 +20,6 @@ ht-degree: 71%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#top-up-ingestion-process" text="Ingestion de complément"
 
 Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert de contenu, procédez comme suit :
->[!NOTE]
->Vous pouvez exécuter l’étape de précopie facultative pour accélérer considérablement la phase d’ingestion. L’étape de précopie est la plus efficace pour la première occurrence complète d’extraction et d’ingestion. Pour plus d’informations, consultez la section [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
 
 >[!NOTE]
 >Avez-vous pensé à soumettre un ticket d’assistance pour cette ingestion ? Pour cela et afin d’obtenir de l’aide pour réussir l’ingestion, consultez les [Points importants avant d’utiliser l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr#important-considerations).
@@ -29,7 +27,6 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 1. Présentation de Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu. Accédez aux **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
-
 
 1. Consultez la liste de contrôle d’ingestion et assurez-vous que toutes les étapes ont été effectuées. Ces étapes constituent un préalable indispensable à la réussite de l’ingestion. Vous devez d’abord terminer la liste de contrôle avant de pouvoir passer à l’étape **suivante**.
 
@@ -73,7 +70,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
 1. Vous pouvez ensuite surveiller la phase d’ingestion dans la vue Liste des Tâches d’ingestion. Vous pouvez également utiliser le menu Action de l’ingestion pour consulter le journal consignant la progression de l’ingestion.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
+   ![Image.](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
 1. Une fois l’ingestion terminée, cliquez sur le bouton (i) dans le coin supérieur droit de l’écran pour obtenir plus d’informations sur la tâche d’ingestion.
 
@@ -144,7 +141,7 @@ Vous ne pourrez lancer une ingestion dans l’environnement de destination que s
 
 Une fois l’ingestion demandée, un message comme celui-ci peut être présenté à l’utilisateur : &quot;Le service de migration sur l’environnement de destination est actuellement inaccessible. Réessayez ultérieurement ou contactez le support Adobe.&quot;
 
-![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
+![Image.](/help/journey-migration/content-transfer-tool/assets-ctt/error_cannot_reach_migser.png)
 
 Cela indique que Cloud Acceleration Manager n’a pas pu atteindre le service de migration de l’environnement cible pour démarrer l’ingestion. Cela peut se produire pour plusieurs raisons.
 
