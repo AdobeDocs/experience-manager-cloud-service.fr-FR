@@ -8,20 +8,20 @@ exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: a1830db797a88e43e17d73a2e8cbc979084f6328
 workflow-type: tm+mt
 source-wordcount: '1500'
-ht-degree: 84%
+ht-degree: 96%
 
 ---
 
-# Création d’un formulaire adaptatif (composants de base) {#creating-an-adaptive-form}
+# Créer un formulaire adaptatif (composants de base) {#creating-an-adaptive-form}
 
 
 Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial pour les utilisateurs professionnels, qui permet de créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
-Avant de commencer, découvrez le type de composants Forms disponibles :
+Avant de commencer, découvrez les types de composants de formulaires disponibles :
 
-* [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en) sont des composants de capture de données normalisés. Ces composants fournissent des fonctionnalités de personnalisation, un temps de développement réduit et des coûts de maintenance réduits pour vos expériences d’inscription numérique. Un développeur peut facilement personnaliser et mettre en forme ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer la Forms adaptative.
+* Les [composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) sont des composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. Adobe recommande d’utiliser ces composants modernes et extensibles pour développer des formulaires adaptatifs.
 
-* [Composants de base Forms adaptatifs](creating-adaptive-form.md) sont des composants de capture de données classiques (anciens). Vous pouvez continuer à les utiliser pour modifier les composants de base existants basés sur le formulaire adaptatif. Si vous créez des formulaires, Adobe recommande d’utiliser  [Composants principaux de Forms adaptatif](creating-adaptive-form-core-components.md) pour créer une Forms adaptative.
+* Les [composants de base de formulaires adaptatifs](creating-adaptive-form.md) sont des composants de capture de données classiques (anciens). Vous pouvez continuer à les utiliser pour modifier votre formulaire adaptatif existant basé sur les composants de base. Si vous créez des formulaires, Adobe recommande d’utiliser les [composants principaux de formulaires adaptatifs](creating-adaptive-form-core-components.md).
 
 
 
@@ -65,7 +65,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
 
 
-## Création d’un formulaire adaptatif (composants de base) {#create-an-adaptive-form-foundation-components}
+## Créer un formulaire adaptatif (composants de base) {#create-an-adaptive-form-foundation-components}
 
 1. Accédez à l’instance d’auteur [!DNL Experience Manager Forms]. Il peut s’agir d’une instance cloud ou d’une instance de développement local.
 
@@ -80,16 +80,16 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
       >[!NOTE]
       >
-      > Vous pouvez également créer des [!UICONTROL Document d’enregistrement] à l’aide d’un éditeur de Forms adaptatif. Pour plus d’informations, voir [Prise en charge des documents d’enregistrement dans l’éditeur de formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+      > Vous pouvez également créer un modèle de [!UICONTROL document d’enregistrement] à l’aide d’un éditeur de formulaires adaptatifs. Pour plus d’informations, voir [Prise en charge des documents d’enregistrement dans l’éditeur de formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * Lorsque vous sélectionnez un modèle statique, les options de données, de style, d’envoi, de diffusion et de prévisualisation ne sont pas disponibles. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
 
-1. Dans le **[!UICONTROL Style]** sélectionnez un thème :
+1. Dans l’onglet **[!UICONTROL Style]**, sélectionnez un thème :
 
    * Lorsque le modèle sélectionné spécifie un thème, celui-ci est automatiquement sélectionné dans l’assistant. Vous pouvez également choisir un thème différent dans l’onglet Style.
    * Si le modèle sélectionné ne spécifie aucun thème, vous pouvez utiliser l’onglet Style pour en choisir un. Le bouton **[!UICONTROL Créer]** n’est activé qu’après la sélection d’un thème.
 
-1. (Facultatif) Dans le **[!UICONTROL Données]** sélectionnez un modèle de données :
+1. (Facultatif) Dans l’onglet **[!UICONTROL Données]**, sélectionnez un modèle de données :
 
    * **Modèle de données de formulaire** : un [modèle de données de formulaire](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
 
@@ -103,7 +103,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
    
    -->
 
-1. Dans le **[!UICONTROL Envoi]** sélectionnez une action d’envoi :
+1. Dans l’onglet **[!UICONTROL Envoi]**, sélectionnez une action d’envoi :
 
    * Lorsque vous sélectionnez un modèle, l’action d’envoi spécifiée dans le modèle est sélectionnée automatiquement. Vous pouvez sélectionner une autre action d’envoi dans l’onglet Envoi. L’onglet **[!UICONTROL Envoi]** affiche toutes les actions d’envoi disponibles.
 
@@ -196,4 +196,4 @@ Vous pouvez également modifier les propriétés du modèle de formulaire à par
 
 >[!NOTE]
 >
-> Vous pouvez également enregistrer un formulaire adaptatif en tant que modèle. Pour plus d’informations, voir [Créer un modèle à l’aide d’un formulaire adaptatif](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).
+> Vous pouvez également enregistrer un formulaire adaptatif en tant que modèle. Pour plus d’informations, consultez [Créer un modèle à l’aide d’un formulaire adaptatif](/help/forms/template-editor.md#saving-an-adaptive-form-as-template-saving-adaptive-form-as-template).

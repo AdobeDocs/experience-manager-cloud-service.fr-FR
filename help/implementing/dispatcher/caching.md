@@ -3,10 +3,10 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 7b562dfc23678c39ec7c2b418b0e9ff505c4a08f
+source-git-commit: 6bca307dcf41b138b5b724a8eb198ac35e2d906e
 workflow-type: tm+mt
 source-wordcount: '2832'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -72,7 +72,7 @@ Cela peut s’avérer utile, par exemple, lorsque votre logique commerciale néc
      </LocationMatch>
    ```
 
-* Bien que le contenu HTML défini sur privé ne soit pas mis en cache sur le réseau de diffusion de contenu, il peut l’être sur le Dispatcher si [Mise en cache sensible aux autorisations](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr) est configuré, en s’assurant que seuls les utilisateurs autorisés peuvent recevoir le contenu.
+* Bien que le contenu HTML défini sur privé ne soit pas mis en cache sur le réseau CDN, il peut l’être sur le Dispatcher si la [Mise en cache sensible aux autorisations](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=fr) est configurée, afin que seuls les utilisateurs et utilisatrices autorisés puissent recevoir le contenu.
 
    >[!NOTE]
    >D’autres méthodes, y compris le [projet ACS Commons AEM dispatcher-ttl](https://adobe-consulting-services.github.io/acs-aem-commons/features/dispatcher-ttl/), ne remplaceront pas les valeurs.
@@ -319,7 +319,7 @@ De plus, à partir du tableau, nous observons que :
 
 * L’API SCD est nécessaire lorsque chaque événement doit être garanti, par exemple lors d’une synchronisation avec un système externe qui nécessite des connaissances précises. S’il existe un événement de mise à l’échelle de niveau de publication au moment de l’appel d’invalidation, un événement supplémentaire est généré lorsque chaque nouvelle publication traite l’invalidation.
 
-* L’utilisation de l’API de réplication n’est pas un cas d’utilisation courant, mais doit être utilisée lorsque le déclencheur d’invalidation du cache provient du niveau de publication et non du niveau de création. Cela peut s’avérer utile si la durée de vie du Dispatcher est configurée.
+* Utiliser l’API de réplication n’est pas fréquent, mais celle-ci doit être utilisée lorsque le déclencheur d’invalidation du cache provient du niveau de publication et non du niveau de création. Cela peut s’avérer utile si la durée de vie du Dispatcher est configurée.
 
 En conclusion, si vous souhaitez invalider le cache du Dispatcher, l’option recommandée est d’utiliser l’action d’invalidation de l’API SCD depuis l’environnement de création. De plus, vous pouvez également écouter l’événement afin de déclencher d’autres actions en aval.
 

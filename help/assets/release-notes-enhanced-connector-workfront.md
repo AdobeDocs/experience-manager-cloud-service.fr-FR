@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 2fb929cae03fa9ac0bf6d18d5eb3cf19bb35fa37
 workflow-type: tm+mt
 source-wordcount: '1090'
-ht-degree: 85%
+ht-degree: 89%
 
 ---
 
@@ -19,7 +19,7 @@ Date de publication de la dernière version 1.9.9 de [!DNL Workfront for Experie
 
 ## Principaux éléments de la mise à jour {#release-highlights}
 
-La dernière version de la variable [!DNL Workfront for Experience Manager enhanced connector] inclut les mises à jour suivantes :
+La dernière version de [!DNL Workfront for Experience Manager enhanced connector] inclut les mises à jour suivantes :
 
 * Experience Manager affiche une `DateTimeParseException` lorsqu’elle reçoit la date de dernière modification de Workfront lors de la création du dossier lié.
 
@@ -29,7 +29,7 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 
 >[!IMPORTANT]
 >
->Adobe vous recommande d’effectuer une [mise à niveau vers la dernière version, la version 1.9.9](../assets/update-workfront-enhanced-connector.md) de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe vous recommande d’effectuer une [mise à niveau vers la dernière version soit la version 1.9.9](../assets/update-workfront-enhanced-connector.md) de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problèmes connus {#known-issues}
 
@@ -56,11 +56,11 @@ La dernière version de la variable [!DNL Workfront for Experience Manager enhan
 
 * L’éditeur de métadonnées ne répertorie pas les propriétés de formulaires personnalisés Workfront après l’installation de la version 1.9.6.
 
-* La console de développement s’affiche. `/content/dam/jcr:content/metadata/wfProjectURL not found` message d’erreur après l’installation du connecteur amélioré Workfront et l’ouverture de la page d’accueil d’Assets.
+* La console de développement affiche le message d’erreur `/content/dam/jcr:content/metadata/wfProjectURL not found` après l’installation du connecteur amélioré Workfront et l’ouverture de la page d’accueil d’Assets.
 
-### Version de décembre 2022 {#december-2022-release}
+### Version de décembre 2022 {#december-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] La version 1.9.6, publiée le 9 décembre, comprend les mises à jour suivantes :
+La version 1.9.6 de [!DNL Workfront for Experience Manager enhanced connector] publiée le 09 décembre comprend les mises à jour suivantes :
 
 **Amélioration**
 

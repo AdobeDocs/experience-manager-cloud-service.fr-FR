@@ -7,7 +7,7 @@ exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 856ad73d31257bf40cd4594c313d0d7e09ba1cf9
 workflow-type: tm+mt
 source-wordcount: '1047'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Pour l’exportation de fragments d’expérience et/ou de fragments de contenu 
 
 ### Configuration IMS {#ims-configuration}
 
-Une configuration IMS pour Launch et Target est nécessaire pour intégrer correctement Target à AEM et Launch. Bien que la configuration IMS de Launch est préconfigurée dans AEM as a Cloud Service, celle de Target doit être créée (une fois Target approvisionné). Voir [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) et la vidéo [Intégration des Experience Platform Launch et des AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=fr) pour savoir comment créer la configuration IMS de Target.
+Une configuration IMS pour Launch et Target est nécessaire pour intégrer correctement Target à AEM et Launch. Bien que la configuration IMS de Launch est préconfigurée dans AEM as a Cloud Service, celle de Target doit être créée (une fois Target approvisionné). Consultez la [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md) et la vidéo [Intégrer Experience Platform Launch et AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/overview.html?lang=fr) pour savoir comment créer la configuration IMS cible.
 
 ### ID de client Adobe Target et code client Adobe Target {#tenant-client}
 

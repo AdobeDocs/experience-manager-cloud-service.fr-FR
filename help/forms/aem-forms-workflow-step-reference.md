@@ -6,7 +6,7 @@ google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '7190'
-ht-degree: 94%
+ht-degree: 86%
 
 ---
 
@@ -52,7 +52,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **[!UICONTROL Jours :]** le nombre de jours restants pour terminer la tâche. Le nombre de jours est calculé à partir du jour de l’affectation de la tâche à un utilisateur. Si cette option est sélectionnée, si une tâche n’est pas terminée et dépasse le nombre de jours spécifié dans le champ Jours, un gestionnaire de dépassement de délai est déclenché après la date d’expiration.
 * **[!UICONTROL Heures :]** le nombre d’heures restantes pour terminer la tâche. Le nombre d’heures est calculé à partir de l’heure de l’affectation de la tâche à un utilisateur. Si cette option est sélectionnée, si une tâche n’est pas terminée et dépasse le nombre d’heures spécifié dans le champ Heures, un gestionnaire de dépassement de délai est déclenché après l’heure de l’expiration.
 * **[!UICONTROL Expiration après l’échéance :]** sélectionnez cette option pour activer le champ Sélection du gestionnaire de dépassement de délai.
-* **[!UICONTROL Gestionnaire de dépassement de délai :]** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Les scripts placés dans le référentiel CRX à l’emplacement [apps]/fd/dashboard/scripts/timeoutHandler peuvent être sélectionnés. Le chemin spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser.
+* **[!UICONTROL Gestionnaire de dépassement de délai :]** sélectionnez le script à exécuter lorsque l’étape Affecter une tâche dépasse l’échéance. Les scripts placés dans le référentiel CRX à l’emplacement [apps]/fd/dashboard/scripts/timeoutHandler peuvent être sélectionnés. Le chemin d’accès spécifié n’existe pas dans le référentiel crx. Un administrateur crée le chemin d’accès avant de l’utiliser.
 * **[!UICONTROL Sélectionner l’action et ajouter un commentaire depuis la dernière tâche dans Détails de la tâche :]** sélectionnez cette option pour afficher la dernière action qui a été effectuée et le dernier commentaire reçu dans la section Détails de la tâche.
 * **[!UICONTROL Type :]** sélectionnez le type de document à remplir lors du lancement du processus. Vous pouvez sélectionner un formulaire adaptatif, un formulaire adaptatif en lecture seule, un document PDF non interactif.
 
@@ -113,7 +113,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
     -->
 
 * **[!UICONTROL Personne désignée]** > **[!UICONTROL Options d’affectation]** : indiquez la méthode à utiliser pour affecter la tâche à un utilisateur. Vous pouvez affecter la tâche de manière dynamique à un utilisateur ou un groupe à l’aide du script Programme de sélection des participants ou affecter la tâche à un utilisateur ou à un groupe AEM spécifique.
-* **[!UICONTROL Programme de sélection des participants :]** cette option est disponible lorsque l’option **[!UICONTROL Sélectionner de manière dynamique un utilisateur ou un groupe]** est activée dans le champ Options d’affectation. Vous pouvez utiliser un script ECMAScript ou un service pour sélectionner de manière dynamique un utilisateur ou un groupe. Pour plus d’informations, voir [Affecter de manière dynamique un processus à des utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape Participant dynamique Adobe Experience Manager personnalisé.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
+* **[!UICONTROL Programme de sélection des participants :]** cette option est disponible lorsque l’option **[!UICONTROL Sélectionner de manière dynamique un utilisateur ou un groupe]** est activée dans le champ Options d’affectation. Vous pouvez utiliser un ECMAScript ou un service pour sélectionner dynamiquement un utilisateur ou un groupe. Pour plus d’informations, voir [Affectation dynamique d’un workflow aux utilisateurs](https://helpx.adobe.com/fr/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) et [Création d’une étape de participant dynamique Adobe Experience Manager personnalisée.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=fr&amp;CID=RedirectAEMCommunityKautuk)
 
 * **[!UICONTROL Participants]** : le champ est disponible lorsque l’option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** est sélectionnée dans le champ Programme de **[!UICONTROL sélection des participants]**. Le champ vous permet de sélectionner des utilisateurs ou des groupes pour l’option RandomParticipantChooser.
 
@@ -128,8 +128,8 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 
 * **[!UICONTROL Adresse électronique du destinataire :]** vous pouvez stocker l’adresse électronique dans une variable, utiliser un littéral pour spécifier une adresse électronique permanente ou utiliser l’adresse électronique par défaut de la personne désignée spécifiée dans son profil. Vous pouvez utiliser le littéral ou une variable pour spécifier l’adresse électronique d’un groupe. L’option de variable permet de récupérer et d’utiliser de manière dynamique une adresse électronique. L’option **[!UICONTROL Utiliser l’adresse électronique par défaut de la personne désignée]** n’est destinée qu’à une seule personne désignée. Dans ce cas, l’adresse électronique stockée dans le profil utilisateur de la personne désignée est utilisée.
 
-* **[!UICONTROL Modèle de courrier électronique HTML]** : sélectionnez un modèle de courrier électronique pour la notification électronique. Pour modifier un modèle, modifiez le fichier situé à l’emplacement /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt dans le référentiel CRX.
-* **[!UICONTROL Autoriser la délégation à :]** la boîte de réception AEM permet à l’utilisateur connecté de déléguer le processus affecté à un autre utilisateur. Vous pouvez déléguer la tâche au sein du même groupe ou à l’utilisateur du processus d’un autre groupe. Si la tâche est affectée à un utilisateur unique et que l’option **[!UICONTROL Autoriser la délégation aux membres du groupe désigné]** est sélectionnée, vous ne pouvez pas déléguer la tâche à un utilisateur ou à un autre groupe.
+* **[!UICONTROL Modèle de courrier électronique HTML]**: Sélectionnez le modèle d&#39;email de l&#39;email de notification. Pour modifier un modèle, modifiez le fichier situé à l’emplacement /libs/fd/dashboard/templates/email/htmlEmailTemplate.txt dans le référentiel crx-repository.
+* **[!UICONTROL Autoriser la délégation à :]** la boîte de réception AEM permet à l’utilisateur connecté de déléguer le processus affecté à un autre utilisateur. Vous êtes autorisé à déléguer au sein du même groupe ou à l’utilisateur du workflow d’un autre groupe. Si la tâche est affectée à un seul utilisateur et que la fonction **[!UICONTROL Autoriser la délégation aux membres du groupe désigné]** est sélectionnée, puis il n’est pas possible de déléguer la tâche à un autre utilisateur ou groupe.
 * **[!UICONTROL Paramètres de partage :]**: la boîte de réception AEM propose des options permettant de partager une ou toutes les tâches de la boîte de réception avec d’autres utilisateurs :
    * Lorsque l’option **[!UICONTROL Autoriser les personnes désignées à partager explicitement dans la boîte de réception]** est sélectionnée, l’utilisateur peut sélectionner la tâche dans la boîte de réception AEM et la partager avec un autre utilisateur AEM.
    * Lorsque l’option **[!UICONTROL Autoriser les personnes désignées à partager via le partage de boîte de réception]** est sélectionnée et que les utilisateurs partagent leurs éléments de boîte de réception ou permettent à d’autres utilisateurs d’accéder à leurs éléments de boîte de réception, seules les tâches dont l’option mentionnée précédemment est activée sont partagées avec d’autres utilisateurs.
@@ -141,9 +141,9 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **[!UICONTROL Variable d’itinéraire :]** nom de la variable d’itinéraire. La variable d’itinéraire capture les actions personnalisées qu’un utilisateur sélectionne dans la boîte de réception AEM.
 * **[!UICONTROL Itinéraires :]** une tâche peut se composer de plusieurs itinéraires. Lorsque cette option est sélectionnée dans la boîte de réception AEM, l’itinéraire renvoie une valeur et les branches du processus en fonction de l’itinéraire sélectionné. Vous pouvez stocker des itinéraires dans une variable de tableau de type de données Chaîne ou sélectionner **[!UICONTROL Littéral]** pour ajouter manuellement des itinéraires.
 
-* **[!UICONTROL Titre d’itinéraires]** : indiquez le titre de l’itinéraire. Il s’affiche dans la boîte de réception AEM.
-* **[!UICONTROL Icône Corail]** : indiquez l’attribut HTML d’une icône corail. La bibliothèque Adobe CoralUI fournit un vaste ensemble d’icônes tactiles. Vous pouvez sélectionner et utiliser une icône pour l’itinéraire. Elle s’affiche avec le titre dans la boîte de réception AEM. Si vous stockez les itinéraires dans une variable, ils utilisent une icône de corail Balises par défaut.
-* **[!UICONTROL Autoriser la personne désignée à ajouter des commentaires]** : sélectionnez cette option pour activer les commentaires pour la tâche. Une personne désignée peut ajouter des commentaires à partir de la boîte de réception AEM au moment de l’envoi de la tâche.
+* **[!UICONTROL Titre d’itinéraires]** : indiquez le titre de l’itinéraire. Il s’affiche dans AEM boîte de réception.
+* **[!UICONTROL Icône Coral]**: Spécifiez l’attribut HTML d’une icône de corail. La bibliothèque Adobe CoralUI fournit un vaste ensemble d’icônes tactiles. Vous pouvez choisir et utiliser une icône pour l’itinéraire. Elle s’affiche avec le titre dans la boîte de réception AEM. Si vous stockez les itinéraires dans une variable, ils utilisent une icône de corail Balises par défaut.
+* **[!UICONTROL Autoriser les personnes désignées à ajouter des commentaires]**: Sélectionnez cette option pour activer les commentaires pour la tâche. Une personne désignée peut ajouter les commentaires dans AEM boîte de réception au moment de l’envoi de la tâche.
 * **[!UICONTROL Enregistrer le commentaire dans la variable]** : enregistrez le commentaire dans une variable de type de données Chaîne. Cette option s’affiche uniquement si vous cochez la case **[!UICONTROL Autoriser la personne désignée à ajouter un commentaire]**.
 
 * **[!UICONTROL Autoriser la personne désignée à ajouter des pièces jointes à la tâche]** : sélectionnez cette option pour activer les pièces jointes pour la tâche. Une personne désignée peut ajouter des pièces jointes à partir de la boîte de réception AEM au moment de l’envoi de la tâche. Vous pouvez également limiter la taille maximale **[!UICONTROL (Taille maximale du fichier)]** d’une pièce jointe. La taille par défaut est de 2 Mo.
@@ -151,7 +151,7 @@ Vous pouvez également utiliser le composant pour contrôler le comportement de 
 * **[!UICONTROL Enregistrez les pièces jointes de la tâche de sortie en utilisant]** : spécifiez l’emplacement du dossier des pièces jointes. Vous pouvez enregistrer les pièces jointes de la tâche de sortie à l’aide d’un chemin d’accès relatif à la charge utile ou dans une variable de tableau de type de données Document. Cette option s’affiche uniquement si vous cochez la case **[!UICONTROL Autoriser les personnes désignées à ajouter des pièces jointes à la tâche]** et sélectionnez **[!UICONTROL Formulaire adaptatif]**, **[!UICONTROL Formulaire adaptatif en lecture seule]** ou **[!UICONTROL document PDF non interactif]** dans la liste déroulante **[!UICONTROL Type]**. dans l’onglet **[!UICONTROL Formulaire/Document]**.
 
 * **[!UICONTROL Utiliser des métadonnées personnalisées :]** sélectionnez cette option pour activer le champ de métadonnées personnalisées. Les métadonnées personnalisées sont utilisées dans les modèles de courrier électronique.
-* **[!UICONTROL Métadonnées personnalisées :]** sélectionnez une métadonnée personnalisée pour les modèles de courrier électronique. La métadonnée personnalisée est disponible dans le référentiel CRX à l’emplacement apps/fd/dashboard/scripts/metadataScripts. Le chemin spécifié n’existe pas dans le référentiel CRX. Un administrateur crée le chemin d’accès avant de l’utiliser. Vous pouvez également utiliser un service pour les métadonnées personnalisées. Vous pouvez également étendre l’interface `WorkitemUserMetadataService` afin de fournir des métadonnées personnalisées.
+* **[!UICONTROL Métadonnées personnalisées :]** sélectionnez une métadonnée personnalisée pour les modèles de courrier électronique. Les métadonnées personnalisées sont disponibles dans le référentiel crx-repository sous apps/fd/dashboard/scripts/metadataScripts. Le chemin d’accès spécifié n’existe pas dans le référentiel crx. Un administrateur crée le chemin d’accès avant de l’utiliser. Vous pouvez également utiliser un service pour les métadonnées personnalisées. Vous pouvez également étendre l’interface `WorkitemUserMetadataService` afin de fournir des métadonnées personnalisées.
 * **[!UICONTROL Afficher les données des étapes précédentes]** : sélectionnez cette option pour permettre aux personnes désignées d’afficher les personnes désignées précédentes, les actions déjà effectuées sur la tâche, les commentaires ajoutés à la tâche et le document d’enregistrement de la tâche terminée, le cas échéant.
 * **[!UICONTROL Afficher les données des étapes suivantes :]** sélectionnez cette option pour permettre à la personne actuellement désignée d’afficher l’action effectuée et les commentaires ajoutés à la tâche par les personnes désignées suivantes. Cette option permet également à la personne actuellement désignée d’afficher un document d’enregistrement de la tâche terminée, le cas échéant.
 * **[!UICONTROL Visibilité du type de données :]** par défaut, une personne désignée peut afficher un document d’enregistrement, des personnes désignées, une action effectuée et les commentaires des personnes désignées précédentes et suivantes qui ont été ajoutés. Utilisez l’option de visibilité du type de données pour limiter le type de données visibles pour les personnes désignées.
@@ -179,7 +179,7 @@ L’étape de conversion en PDF/A présente les propriétés suivantes :
 
 ## Étape Envoyer un courrier électronique {#send-email-step}
 
-Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’un formulaire adaptatif <!-- , link of an interactive communication--> ou avec un document PDF joint. L’étape Envoyer un courrier électronique prend en charge [le courrier électronique HTML](https://en.wikipedia.org/wiki/HTML_email). Les courriers électroniques HTML sont réactifs et s’adaptent à différents clients de messagerie et tailles d’écran. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
+Utilisez l’étape Envoyer un courrier électronique pour, par exemple, envoyer un courrier électronique avec un document d’enregistrement, un lien d’un formulaire adaptatif, un lien d’un formulaire adaptatif <!-- , link of an interactive communication--> ou avec un document PDF joint. L’étape Envoyer un courrier électronique prend en charge [Email HTML](https://en.wikipedia.org/wiki/HTML_email). Les emails par HTML sont réactifs et s’adaptent à la taille de l’écran et au client de messagerie du destinataire. Vous pouvez utiliser un modèle de courrier électronique HTML pour définir l’aspect, le modèle de couleurs et le comportement du courrier électronique.
 
 L’étape Envoyer un courrier électronique utilise le service de messagerie Day CQ pour envoyer des messages. Avant d’utiliser l’étape Envoyer un courrier électronique, assurez-vous que le service de messagerie est configuré. Par défaut, seuls les protocoles HTTP et HTTPs sont pris en charge. [Contactez l’ équipe d’assistance](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html?lang=en#sending-email) pour activer les ports pour l’envoi de courriers électroniques et pour activer le protocole SMTP pour votre environnement. La restriction contribue à améliorer la sécurité de la plateforme.
 
@@ -201,7 +201,7 @@ L’étape Envoyer un courrier électronique possède les propriétés suivantes
 
 * **[!UICONTROL Littéral]** : utilisez cette option lorsque vous connaissez la valeur exacte à spécifier. Par exemple, [example@example.com](mailto:example@example.com).
 
-* **[!UICONTROL Métadonnées de processus :]** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus. Après avoir sélectionné cette option, saisissez le nom de la propriété des métadonnées dans la zone de texte vide en dessous de l’option Métadonnées de processus. Par exemple, emailAddress.
+* **[!UICONTROL Métadonnées de processus :]** utilisez cette option lorsque la valeur à utiliser est enregistrée dans une propriété de métadonnées de processus. Après avoir sélectionné l’option, saisissez le nom de la propriété de métadonnées dans la zone de texte vide sous l’option Métadonnées de processus . Par exemple, emailAddress.
 
 <!-- 
 
@@ -234,7 +234,7 @@ Vous avez la possibilité d’associer plusieurs formulaires adaptatifs à un pr
 
 **[!UICONTROL Sélectionnez le chemin de pièce jointe d’entrée en utilisant]** : chemin des pièces jointes. Ces pièces jointes sont incluses dans le document d’enregistrement. Vous pouvez conserver les pièces jointes à un emplacement relatif à la charge utile, spécifier un chemin absolu pour les pièces jointes ou récupérer les pièces jointes stockées dans une variable de tableau de type de données Document.
 
-Si vous spécifiez le chemin d’accès d’un dossier (des pièces jointes, par exemple), tous les fichiers directement disponibles dans le dossier sont joints au document d’enregistrement. Si des fichiers sont présents dans les dossiers directement disponibles dans le chemin d’accès de la pièce jointe spécifiée, les fichiers sont inclus dans le document d’enregistrement en tant que pièces jointes. Les dossiers présents dans les dossiers directement disponibles ces fichiers sont ignorés.
+Si vous spécifiez le chemin d’accès d’un dossier, par exemple des pièces jointes, tous les fichiers directement disponibles dans le dossier sont joints au document d’enregistrement. Si des fichiers sont disponibles dans les dossiers directement disponibles dans le chemin d’accès de la pièce jointe spécifiée, les fichiers sont inclus dans le document d’enregistrement sous forme de pièces jointes. Les dossiers présents dans les dossiers directement disponibles ces fichiers sont ignorés.
 
 **[!UICONTROL Enregistrez Chemin d’accès du document d’enregistrement généré :]** spécifiez l’emplacement pour conserver un fichier de document d’enregistrement. Vous pouvez remplacer le dossier de charge utile, placer le document d’enregistrement à un emplacement du répertoire de charge utile ou stocker le document d’enregistrement dans une variable de type de données Document.
 
@@ -269,9 +269,9 @@ L’étape Invoquer DDX présente les propriétés suivantes :
 
 Vous pouvez utiliser l’[[!DNL AEM Forms] intégration de données](data-integration.md) pour configurer des sources de données disparates et vous y connecter. Ces sources de données peuvent être un service web, un service REST, un service OData et une solution CRM. L’intégration de données [!DNL AEM Forms] vous permet de créer un modèle de données de formulaire regroupant plusieurs services afin d’effectuer des opérations de récupération, d’ajout et de mise à jour de données sur la base de données configurée. Vous pouvez utiliser **[!UICONTROL l’étape Invoquer le service de modèle de données de formulaire]** pour sélectionner un modèle de données de formulaire (FDM) et utiliser les services du FDM pour récupérer, mettre à jour ou ajouter des données aux sources de données disparates.
 
-Pour mieux comprendre les entrées des champs de l’étape, la table de base de données et le fichier JSON suivants sont utilisés à titre d’exemple :
+Pour expliquer les entrées des champs de l’étape, le tableau de base de données et le fichier JSON suivants sont utilisés comme exemple :
 
-**[!UICONTROL Exemple de table CustomerDetails]**
+**[!UICONTROL Exemple de tableau CustomerDetails]**
 
 <table>
  <tbody> 
@@ -385,8 +385,8 @@ L’étape Signer le document possède les propriétés suivantes :
 * **[!UICONTROL Sélectionnez le document à signer en utilisant]** : vous pouvez choisir un document à partir d’un emplacement relatif à la charge utile, utiliser la charge utile comme document, spécifier un chemin d’accès absolu au document ou récupérer le document stocké dans une variable de type de données Document.
 * **[!UICONTROL Jours avant l’échéance :]** un document est marqué comme dû (délai expiré) lorsqu’il n’y a plus aucune activité sur la tâche pour le nombre de jours spécifié dans le champ **[!UICONTROL Jours avant l’échéance]**. Le nombre de jours est calculé à partir du jour de l’affectation du document à un utilisateur pour signature.
 * **[!UICONTROL Fréquence des messages de rappel :]** vous pouvez envoyer un message de rappel à intervalle quotidien ou hebdomadaire. La semaine est calculée à compter du jour de l’affectation du document à un utilisateur pour signature.
-* **[!UICONTROL Processus de signature :]** vous pouvez signer un document dans un ordre séquentiel ou parallèle. Dans un ordre séquentiel, un signataire à la fois reçoit le document à signer. Une fois que le premier signataire a terminé la signature du document, il est envoyé au signataire suivant, et ainsi de suite. Dans l’ordre parallèle, plusieurs signataires signent un document en même temps.
-* **[!UICONTROL URL de redirection :]** spécifiez une URL de redirection. Une fois le document signé, vous pouvez rediriger la personne désignée vers une URL. En général, cette URL contient un message de remerciement ou des instructions supplémentaires.
+* **[!UICONTROL Processus de signature :]** vous pouvez signer un document dans un ordre séquentiel ou parallèle. Dans l’ordre séquentiel, un signataire reçoit le document à la fois pour signature. Une fois que le premier signataire a terminé la signature du document, le document est envoyé au second signataire, etc. Dans l’ordre parallèle, plusieurs signataires signent un document en même temps.
+* **[!UICONTROL URL de redirection :]** spécifiez une URL de redirection. Une fois le document signé, vous pouvez rediriger la personne désignée vers une URL. En règle générale, cette URL contient un message de remerciement ou d’autres instructions.
 * **[!UICONTROL Phase de processus :]** un processus peut avoir plusieurs étapes. Ces phases sont affichées dans la boîte de réception AEM. Vous pouvez définir ces phases dans les propriétés du modèle (**[!UICONTROL Sidekick]** > **[!UICONTROL Page]** > **[!UICONTROL Propriétés de la page]** > **[!UICONTROL Phases]**).
 * **[!UICONTROL Sélectionner les signataires :]** indiquez la méthode utilisée pour sélectionner des signataires pour le document. Vous pouvez affecter de manière dynamique le processus à un utilisateur ou à un groupe ou ajouter manuellement les informations d’un signataire.
 * **[!UICONTROL Script ou service pour sélectionner les signataires :]** cette option est disponible uniquement si l’option De manière dynamique est sélectionnée dans le champ Sélectionner les signataires. Vous pouvez spécifier un script ECMAScript ou un service pour sélectionner des signataires et des options de vérification pour un document.
@@ -492,7 +492,7 @@ Send a document directly to a printer. It supports the following printing access
 
 L’opération génère une sortie PCL, PostScript, ZPL, IPL, TPCL ou DPL à l’aide d’une conception de formulaire et d’un fichier de données. Le fichier de données est fusionné avec la conception de formulaire et mis en forme pour l’impression. La sortie générée par cette opération peut être envoyée directement vers une imprimante ou enregistrée en tant que fichier. Il est recommandé d’utiliser cette opération lorsque vous souhaitez utiliser des conceptions de formulaire ou des données à partir d’une application. Si vos conceptions de formulaire se trouvent sur le réseau, un système de fichiers local ou un emplacement HTTP, utilisez l’opération generatePrintedOutput.
 
-Par exemple, votre application nécessite la fusion d’une conception de formulaire avec un fichier de données. Les données contiennent des centaines d’enregistrements. En outre, la sortie doit être envoyée à une imprimante prenant en charge ZPL. La conception de formulaire et vos données d’entrée se trouvent dans une application. Utilisez l’opération generatePrintedOutput pour fusionner chaque enregistrement avec une conception de formulaire et envoyer la sortie à une imprimante prenant en charge ZPL.
+Par exemple, votre application requiert la fusion d’une conception de formulaire avec un fichier de données. Les données contiennent des centaines d’enregistrements. En outre, elle nécessite que la sortie soit envoyée à une imprimante prenant en charge ZPL. La conception de formulaire et vos données d’entrée se trouvent dans une application. Utilisez l’opération generatePrintedOutput pour fusionner chaque enregistrement avec une conception de formulaire et envoyer la sortie à une imprimante prenant en charge ZPL.
 
 L’opération Générer une sortie imprimée présente les propriétés suivantes :
 
@@ -505,17 +505,17 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 * **[!UICONTROL Printer Format]** : une valeur Print Format qui spécifie la langue de description de page à utiliser lorsqu’un fichier XDC n’est pas fourni, afin de générer le flux de sortie. Si vous fournissez une valeur littérale, sélectionnez l’une de ces valeurs :
 
    * **[!UICONTROL color PCL]**: Utilisez cette option pour spécifier un fichier XDC pour PCL.
-   * **[!UICONTROL PostScript générique]**: Utilisez cette option pour spécifier un fichier XDC générique pour PostScript.
+   * **[!UICONTROL PostScript générique]** : utilisez cette option pour spécifier un fichier XDC générique pour PostScript.
    * **[!UICONTROL ZPL 300 DPI]** : utilisez ZPL 300 DPI. Le fichier zpl300.xdc est utilisé.
    * **[!UICONTROL ZPL 600 DPI]** : utilisez ZPL 600 DPI. Le fichier zpl600.xdc est utilisé.
    * **[!UICONTROL IPL 300 DPI]** : utilisez IPL 300 DPI. Le fichier ipl300.xdc est utilisé.
    * **[!UICONTROL IPL 400 DPI]** : utilisez IPL 400 DPI. Le fichier ipl400.xdc est utilisé.
    * **[!UICONTROL TPCL 600 DPI]** : utilisez TPCL 600 DPI. Le fichier tpcl600.xdc est utilisé.
-   * **[!UICONTROL PostScript Plain]**: Utilisez cette option pour spécifier un fichier XDC en texte brut pour PostScript.
+   * **[!UICONTROL PostScript brut]** : utilisez cette option pour spécifier un fichier XDC texte brut pour PostScript.
    * **[!UICONTROL DPL300DPI]** : utilisez DPL 300 DPI. Le fichier dpl300.xdc est utilisé.
    * **[!UICONTROL DPL400DPI]** : utilisez DPL 400 DPI. Le fichier dpl400.xdc est utilisé.
    * **[!UICONTROL DPL600DPI]** : utilisez DPL 600 DPI. Le fichier dpl600.xdc est utilisé.
-   * **[!UICONTROL HP_PCL_5e]**: Utilisez cette option pour prendre en charge plusieurs appareils Canon.
+   * **[!UICONTROL HP_PCL_5e]** : utilisez cette option pour prendre en charge plusieurs appareils Canon.
 
 
 **[!UICONTROL Propriétés de sortie]**
@@ -526,12 +526,13 @@ L’opération Générer une sortie imprimée présente les propriétés suivant
 
 * **[!UICONTROL Sélectionner l’emplacement racine du contenu à l’aide de]** : la racine du contenu est une valeur de chaîne qui spécifie l’URI, la référence absolue ou l’emplacement dans le référentiel pour récupérer les ressources relatives utilisées par la conception de formulaire. Par exemple, si la conception de formulaire fait référence à une image relativement, comme `../myImage.gif`, `myImage.gif` must be `repository://`. La valeur par défaut est `repository://`, qui pointe vers le niveau racine du référentiel.
 
-   Lorsque vous sélectionnez une ressource dans votre application, le chemin d’accès de l’URI de la racine du contenu doit présenter la structure appropriée. Par exemple, si un formulaire est sélectionné dans une application nommée SampleApp et est placé dans `SampleApp/1.0/forms/Test.xdp`, l’URI racine du contenu doit être spécifié comme suit : `repository://administrator@password/Applications/SampleApp/1.0/forms/`ou `repository:/Applications/SampleApp/1.0/forms/` (lorsque l’autorité est nulle). Lorsque l’URI de la racine de contenu est spécifié de cette manière, les chemins d’accès de toutes les ressources référencées dans le formulaire seront résolus par rapport à cet URI.
+   Lorsque vous sélectionnez une ressource dans votre application, le chemin d’URI racine du contenu doit avoir la structure appropriée. Par exemple, si un formulaire est sélectionné dans une application nommée SampleApp et est placé dans `SampleApp/1.0/forms/Test.xdp`, l’URI racine du contenu doit être spécifié comme suit : `repository://administrator@password/Applications/SampleApp/1.0/forms/`ou `repository:/Applications/SampleApp/1.0/forms/` (lorsque l’autorité est nulle). Lorsque l’URI de la racine de contenu est spécifié de cette manière, les chemins d’accès de toutes les ressources référencées dans le formulaire seront résolus par rapport à cet URI.
 
 * **[!UICONTROL Sélectionner un fichier XCI à l’aide de]** : les fichiers XCI sont utilisés pour décrire les polices et les autres propriétés utilisées pour les éléments de conception de formulaire. Vous pouvez conserver un fichier XCI relatif à la payload, à un chemin d’accès absolu ou à l’aide d’une variable de type de données Document.
 
 * **[!UICONTROL Locale]** : définit la langue utilisée pour générer le document PDF. Si vous fournissez une valeur littérale, sélectionnez une langue dans la liste ou l’une de ces valeurs :
-   * **[!UICONTROL Utiliser le serveur par défaut]**[!DNL AEM Forms] : (par défaut) utilisez le paramètre Paramètre régional qui est configuré sur le serveur Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf).)
+   * **[!UICONTROL Utiliser le serveur par défaut]** :
+(par défaut) utilisez le paramètre régional qui est configuré sur le serveur [!DNL AEM Forms]. Le paramètre Paramètre régional est configuré à l’aide de la console d’administration. (Voir l’[aide de Designer](https://helpx.adobe.com/content/dam/help/fr/experience-manager/6-5/forms/pdf/using-designer.pdf).)
 
    * **[!UICONTROL Pour utiliser une valeur personnalisée]** : 
 saisissez le code de paramètre régional dans la zone littérale ou sélectionnez une variable de chaîne contenant le code de paramètre régional. Pour obtenir la liste complète des codes de paramètres régionaux pris en charge, voir https://docs.oracle.com/javase/1.5.0/docs/guide/intl/locale.doc.html.
@@ -543,27 +544,27 @@ saisissez le code de paramètre régional dans la zone littérale ou sélectionn
    * **[!UICONTROL Duplex Short Edge]** : utiliser l’impression recto verso et imprimer à l’aide de la pagination sur le bord court.
    * **[!UICONTROL Simplex]** : utiliser l’impression recto.
 
-## Étape Générer une sortie de PDF non interactive   {#generatePDFdocuments}
+## Étapes permettant de générer une sortie PDF non interactive   {#generatePDFdocuments}
 
-1. Faites glisser le flux de travail de sortie PDF non interactif sous l’onglet Forms Workflow dans Sidekick.
-1. Cliquez deux fois sur l’étape supplémentaire de flux de travail pour modifier le composant.
-1. Dans la boîte de dialogue Modifier le composant, configurez les documents d’entrée, les documents de sortie et les paramètres supplémentaires, puis cliquez sur **[!UICONTROL OK]**.
+1. Faites glisser le workflow Générer une sortie de PDF non interactif sous l’onglet Forms Workflow dans le sidekick.
+1. Double-cliquez sur l’étape de workflow ajoutée pour modifier le composant.
+1. Dans la boîte de dialogue Modifier le composant, configurez les documents d’entrée, les documents de sortie et d’autres paramètres, puis cliquez sur **[!UICONTROL OK]**.
 
 ### Documents d’entrée {#input-documents-3}
 
-* **Template File** : indique l’emplacement du modèle XDP. Ce champ est obligatoire.
+* **Fichier modèle**: Spécifie l’emplacement du modèle XDP. Ce champ est obligatoire.
 
-* **Data Document** : indique l’emplacement du fichier de données XML qui doit être fusionné avec le modèle.
+* **Document de données**: Spécifie l’emplacement du fichier XML de données à fusionner avec le modèle.
 
-### Documents de sortie {#output-document}
+### Document de sortie {#output-document}
 
-**Output Document** : indique le nom du formulaire PDF généré.
+**Output Document**: Indique le nom du formulaire de PDF généré.
 
 ### Paramètres supplémentaires {#additional-parameters-1}
 
-* **Content Root** : indique le chemin d’accès au dossier du référentiel dans lequel les fragments et les images utilisés dans le modèle XDP d’entrée sont stockés.
-* **Locale** : indique la langue par défaut du formulaire PDF généré.
-* **Acrobat Version** : indique la version d’Acrobat ciblée pour le formulaire PDF généré.
-* **** Linearized PDF : indique si le PDF généré doit être optimisé pour l’affichage Web.
-* **Tagged PDF** : indique si le PDF généré est accessible.
-* **XCI document** : indique le chemin d’accès au fichier XCI.
+* **Racine du contenu**: Spécifie le chemin d’accès au dossier dans le référentiel où sont stockés les fragments ou les images utilisés dans le modèle XDP d’entrée.
+* **Paramètres régionaux**: Indique le paramètre régional par défaut du formulaire de PDF généré.
+* **Version d’Acrobat**: Indique la version Acrobat ciblée pour le formulaire de PDF généré.
+* **PDF linéarisé** : indique si le PDF généré doit être optimisé pour l’affichage Web.
+* **PDF balisé**: Indique si le PDF généré doit être accessible.
+* **Document XCI**: Spécifie le chemin d’accès au fichier XCI.

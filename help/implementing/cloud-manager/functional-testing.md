@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: cd0b40ffa54eac0d7488b23329c4d2666c992da7
 workflow-type: tm+mt
 source-wordcount: '1124'
-ht-degree: 67%
+ht-degree: 94%
 
 ---
 
@@ -40,33 +40,33 @@ Les tests fonctionnels du produit rassemblent un ensemble de tests d’intégrat
 * [Pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md): Les tests fonctionnels du produit s’exécutent automatiquement chaque fois que vous déployez du nouveau code dans Cloud Manager et ne peuvent pas être ignorés.
 * [Pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md): Vous pouvez éventuellement sélectionner des tests fonctionnels du produit à exécuter chaque fois que vous exécutez votre pipeline hors production.
 
-Les tests fonctionnels du produit sont conservés sous la forme d’un projet open source. Reportez-vous à la section [tests fonctionnels du produit](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) dans GitHub pour plus d’informations.
+Les tests fonctionnels du produit sont conservés en tant que projet open source. Reportez-vous à la section [tests fonctionnels du produit](https://github.com/adobe/aem-test-samples/tree/aem-cloud/smoke) dans GitHub pour plus d’informations.
 
 ### Tests fonctionnels personnalisés {#custom-functional-testing}
 
 Bien que les tests fonctionnels du produit soient définis par Adobe, vous pouvez rédiger vos propres tests de qualité pour votre propre application. Cela sera exécuté en tant que test fonctionnel personnalisé dans le cadre de la [pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou facultatif [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) pour garantir la qualité de votre application.
 
-Les tests fonctionnels personnalisés sont exécutés à la fois pour les déploiements de code personnalisé et les mises à niveau push, ce qui rend particulièrement important la rédaction de bons tests fonctionnels qui empêchent AEM changements de code d’enfreindre le code de votre application. L’étape des tests fonctionnels personnalisés est toujours présente et ne peut pas être ignorée.
+Les tests fonctionnels personnalisés sont exécutés à la fois pour les déploiements de code personnalisé et les mises à niveau de notifications push, ce qui rend particulièrement cruciale la rédaction de bons tests fonctionnels qui empêchent les changements de code AEM d’enfreindre le code de votre application. L’étape des tests fonctionnels personnalisés est toujours présente et ne peut pas être ignorée.
 
 ### Test d’interface utilisateur personnalisé {#custom-ui-testing}
 
-Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications. Les tests d’interface utilisateur sont des tests basés sur Selenium conditionnés dans une image Docker afin de permettre un large choix de langues et de structures telles que Java et Maven, Node et WebDriver.io, ou tout autre framework et technologie reposant sur Selenium.
+Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications. Les tests de l’interface utilisateur sont basés sur Selenium et placés dans une image Docker afin de permettre un large choix de langues et de cadres, tels que Java et Maven, Node et WebDriver.io, ou encore d’autres cadres et technologies basés sur Selenium.
 
 Reportez-vous au document [Test d’interface utilisateur personnalisé](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) pour plus d’informations.
 
 ## Prise en main des tests fonctionnels {#getting-started-functional-tests}
 
-Lors de la création d’un référentiel de code dans Cloud Manager, une `it.tests` est automatiquement créé avec des exemples de cas de test.
+Lors de la création d’un référentiel de code dans Cloud Manager, un dossier `it.tests` est automatiquement créé avec des exemples de cas de test.
 
 >[!NOTE]
 >
->Si votre référentiel a été créé avant la création automatique de Cloud Manager `it.tests` , vous pouvez également générer la dernière version à l’aide de la variable [AEM Archétype de projet.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
+>Si votre référentiel a été créé avant la création automatique des dossiers `it.tests` par Cloud Manager, vous pouvez également générer la dernière version en date à l’aide de l’[archétype de projet AEM.](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/it.tests)
 
-Une fois que vous disposez du contenu de la variable `it.tests` , vous pouvez l’utiliser comme base pour vos propres tests, puis :
+Une fois que vous disposez du contenu du dossier `it.tests`, vous pouvez l’utiliser comme base pour vos propres tests. Ensuite :
 
 1. [Développez vos cas de test.](#writing-functional-tests)
 1. [Exécutez les tests localement.](#local-test-execution)
-1. Validez votre code dans le référentiel Cloud Manager et exécutez un pipeline Cloud Manager.
+1. Validez votre code dans le référentiel Cloud Manager et exécutez un pipeline Cloud Manager.
 
 ## Écriture de tests fonctionnels personnalisés {#writing-functional-tests}
 
@@ -76,7 +76,7 @@ Le code du test fonctionnel personnalisé est du code Java situé dans le dossie
 
 Les tests sont exécutés sur l’infrastructure de test gérée par Adobe, comprenant au moins deux instances d’auteur, deux instances de publication et une configuration de Dispatcher. Cela signifie que vos tests fonctionnels personnalisés s’exécutent sur l’ensemble de la pile AEM.
 
-### Structure de tests fonctionnels {#functional-tests-structure}
+### Structure des tests fonctionnels {#functional-tests-structure}
 
 Les tests fonctionnels personnalisés par le client doivent être placés dans un fichier JAR distinct produit par la même version de Maven que les artefacts à déployer dans AEM. En règle générale, il s’agit d’un module Maven distinct. Le fichier JAR obtenu doit contenir toutes les dépendances requises. Il est généralement créé avec le `maven-assembly-plugin` à l’aide du descripteur `jar-with-dependencies`.
 
@@ -131,17 +131,17 @@ Reportez-vous au [`aem-testing-clients`référentiel GitHub](https://github.com/
 
 ### Exécution locale du test {#local-test-execution}
 
-Avant d’activer les tests fonctionnels dans un pipeline Cloud Manager, il est recommandé d’exécuter les tests fonctionnels localement à l’aide de la variable [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ou une instance as a Cloud Service d’AEM réelle.
+Avant d’activer les tests fonctionnels dans un pipeline Cloud Manager, il est recommandé d’exécuter les tests fonctionnels localement à l’aide du [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ou d’une instance d’AEM as a Cloud Service réelle.
 
 #### Prérequis {#prerequisites}
 
-Les tests dans Cloud Manager seront exécutés à l’aide d’un utilisateur administrateur technique.
+Les tests dans Cloud Manager sont exécutés par un utilisateur administrateur technique.
 
-Pour exécuter les tests fonctionnels à partir de votre ordinateur local, créez un utilisateur avec des autorisations de type administrateur afin d’obtenir le même comportement.
+Pour exécuter les tests fonctionnels à partir de votre ordinateur local, créez un utilisateur ou une utilisatrice avec des autorisations de type administration afin d’obtenir le même comportement.
 
 #### Exécution dans un IDE {#running-in-an-ide}
 
-Les classes de test étant des tests JUnit, elles peuvent être exécutées à partir d’IDE Java standard tels qu’Eclipse, IntelliJ et NetBeans. Les tests fonctionnels de produit et les tests fonctionnels personnalisés étant basés sur la même technologie, les deux peuvent être exécutés localement en copiant les tests de produit dans vos tests personnalisés.
+Les classes de test étant des tests JUnit, elles peuvent être exécutées à partir d’IDE Java standard comme Eclipse, IntelliJ, et NetBeans. Les tests fonctionnels de produit et les tests fonctionnels personnalisés étant basés sur la même technologie, les deux peuvent être exécutés localement en copiant les tests de produit dans vos tests personnalisés.
 
 Cependant, lors de l’exécution de ces tests, il est nécessaire de définir un ensemble de propriétés système attendues par la bibliothèque `aem-testing-clients` (et les clients de test Sling sous-jacents).
 
@@ -159,7 +159,7 @@ Les propriétés système sont les suivantes.
 
 #### Exécution de tous les tests à l’aide de Maven {#using-maven}
 
-1. Ouvrez un conteneur et accédez à la `it.tests` dans votre référentiel.
+1. Ouvrez un conteneur et accédez au dossier `it.tests` dans votre référentiel.
 
 1. Exécutez la commande suivante fournissant les paramètres nécessaires pour démarrer les tests à l’aide de Maven.
 

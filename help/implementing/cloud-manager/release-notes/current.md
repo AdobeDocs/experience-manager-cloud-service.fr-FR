@@ -6,7 +6,7 @@ exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
 source-git-commit: bfd2cbd574cac8de226903f923e774875a54ca4b
 workflow-type: tm+mt
 source-wordcount: '131'
-ht-degree: 64%
+ht-degree: 77%
 
 ---
 
@@ -26,4 +26,4 @@ La date de publication de la version 2023.3.0 de Cloud Manager dans AEM as a Clo
 ## Correctifs {#bug-fixes}
 
 * Correction d’un problème en raison duquel le widget d’activation définissait incorrectement la date précédemment définie.
-* La mosaïque Commerce dans la **En savoir plus** de Cloud Manager accède désormais à l’utilisateur vers la page appropriée.
+* La vignette Commerce dans l’onglet **En savoir plus** de Cloud Manager permet à l’utilisateur ou à l’utilisatrice d&#39;accéder à bonne la page.

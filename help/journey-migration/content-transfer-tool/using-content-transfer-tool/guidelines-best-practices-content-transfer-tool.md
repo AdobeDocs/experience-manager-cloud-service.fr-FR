@@ -4,8 +4,8 @@ description: Bonnes pratiques et instructions pour l’utilisation de l’outil 
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1552'
+ht-degree: 90%
 
 ---
 
@@ -31,7 +31,7 @@ Une nouvelle version de l’outil de transfert de contenu est disponible, qui in
 * La conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
 
 Avant d’utiliser la nouvelle version vous devez désinstaller les anciennes versions de l’outil de transfert de contenu. Cette étape est nécessaire car la nouvelle version produit un changement architectural majeur. Avec la version 2.x, vous devrez créer de nouveaux jeux de migration et relancer l’extraction et l’ingestion sur les nouveaux jeux de migration.
-Les versions antérieures à la version 2.0.0 ne seront plus prises en charge et il est conseillé d’utiliser la version la plus récente.
+Les versions antérieures à la version 2.0.0 ne seront plus prises en charge et il est conseillé d’utiliser la version la plus récente.
 
 Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version de l’outil de transfert de contenu :
 

@@ -6,7 +6,7 @@ exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
 source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
 workflow-type: tm+mt
 source-wordcount: '4768'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -241,8 +241,8 @@ GraphQL pour AEM prend en charge une liste de types. Tous les types de données 
 
 | Modèle de fragment de contenu – Type de données | Type GraphQL | Description |
 |--- |--- |--- |
-| Une seule ligne de texte | Chaîne, [Chaîne] | Utilisé pour les chaînes simples telles que les noms d’auteur, les noms d’emplacement, etc. |
-| Plusieurs lignes de texte | Chaîne, [Chaîne] | Utilisé pour la sortie de texte, tel que le corps d’un article |
+| Une seule ligne de texte | Chaîne, [Chaîne] | Utilisé pour les chaînes simples telles que les noms de créateur ou de créatrice, les noms d’emplacements, etc. |
+| Plusieurs lignes de texte | Chaîne, [Chaîne] | Utilisé pour la sortie de texte, telle que le corps d’un article |
 | Nombre | Flottant, [Flottant] | Utilisé pour afficher le nombre à virgule flottante et les nombres réguliers |
 | Booléen | Booléen | Utilisé pour afficher les cases à cocher → simples instructions vrai/faux |
 | Date et heure | Calendrier | Utilisé pour afficher la date et l’heure au format ISO 8601. Selon le type sélectionné, trois versions sont disponibles dans AEM GraphQL : `onlyDate`, `onlyTime`, `dateTime` |
@@ -558,7 +558,7 @@ Pour accéder à d’autres exemples, voir :
 
 >[!NOTE]
 >
->Pour obtenir de meilleures performances, [Mise à jour des fragments de contenu pour la pagination et le tri dans le filtrage GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Pour obtenir de meilleures performances, effectuez la [mise à jour de vos fragments de contenu pour la pagination et le tri dans le filtrage GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Cette fonctionnalité vous permet de trier les résultats de la requête en fonction d’un champ spécifié.
 
@@ -625,7 +625,7 @@ query {
 
 >[!NOTE]
 >
->Pour obtenir de meilleures performances, [Mise à jour des fragments de contenu pour la pagination et le tri dans le filtrage GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+>Pour obtenir de meilleures performances, effectuez la [mise à jour de vos fragments de contenu pour la pagination et le tri dans le filtrage GraphQL](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md).
 
 Cette fonctionnalité vous permet d’effectuer une pagination sur les types de requête qui renvoient une liste. Deux méthodes sont proposées :
 

@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
 source-wordcount: '3509'
-ht-degree: 91%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 91%
 
 ## Présentation {#introduction}
 
-Les principes fondamentaux du développement de code sont similaires dans AEM as a Cloud Service par rapport aux solutions AEM On Premise et Managed Services. Les développeurs écrivent du code et le testent localement. Il est ensuite envoyé vers les environnements distants AEM as a Cloud Service. Cloud Manager, qui était un outil de diffusion de contenu facultatif pour Managed Services, est requis. Il s’agit désormais du seul mécanisme de déploiement du code pour AEM les environnements de développement, d’évaluation et de production as a Cloud Service. Pour une validation rapide des fonctionnalités et un débogage avant de déployer ces environnements, le code peut être synchronisé d’un environnement local à un [Environnement de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md).
+Les principes fondamentaux du développement de code sont similaires dans AEM as a Cloud Service par rapport aux solutions AEM On Premise et Managed Services. Les développeurs écrivent du code et le testent localement. Il est ensuite envoyé vers les environnements distants AEM as a Cloud Service. Cloud Manager, qui était un outil de diffusion de contenu facultatif pour Managed Services, est requis. Il s’agit désormais de l’unique mécanisme permettant de déployer du code vers les environnements de production, d’évaluation et de développement d’AEM as a Cloud Service. Pour une validation rapide des fonctionnalités et un débogage avant de déployer ces environnements, le code peut être synchronisé d’un environnement local vers un [Environnement de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md).
 
 La mise à jour de la [version d’AEM](/help/implementing/deploying/aem-version-updates.md) est toujours un événement de déploiement distinct de la publication de [code personnalisé](#customer-releases). Il en résulte que les versions de code personnalisé doivent être testées par rapport à la version d’AEM en cours de production, car c’est sur celle-ci qu’elles seront déployées. Les mises à jour de version d’AEM ayant lieu par la suite seront fréquentes et appliquées automatiquement. Elles sont conçues pour être rétrocompatibles avec le code client déjà déployé.
 
@@ -169,8 +169,8 @@ above appears to be internal, to confirm with Brian -->
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
->title="Gestionnaire de packages – Migration de packages de contenu modifiable"
->abstract="Explorez l’utilisation du gestionnaire de packages pour les cas d’utilisation où un module de contenu doit être installé &quot;un module&quot; qui inclut l’importation de contenu spécifique de la production vers l’évaluation afin de déboguer un problème de production, le transfert de petit module de contenu de l’environnement on-premise vers les environnements AEM cloud, etc."
+>title="Gestionnaire de modules – Migration de packages de contenu modifiable"
+>abstract="Explorez l’utilisation du gestionnaire de modules pour les cas d’utilisation où un package de contenu doit être installé de façon ponctuelle, ce qui inclut l’importation de contenu spécifique de l’environnement de production vers l’environnement d’évaluation afin de déboguer un problème de production, le transfert de petits packages de contenu de l’environnement on-premise vers les environnements AEM Cloud, etc."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#cloud-migration" text="Outil de transfert de contenu"
 
 Il existe des cas d’utilisation où un package de contenu doit être installé de façon ponctuelle. Par exemple, pour déboguer un problème de production, vous devez importer du contenu spécifique de la production vers l’évaluation. Pour ces scénarios, le [Gestionnaire de package](/help/implementing/developing/tools/package-manager.md) peut être utilisé dans les environnements AEM as a Cloud Service.
@@ -281,32 +281,32 @@ Si un échec est signalé ou détecté après le déploiement, il est possible q
 
 ## Environnements de développement rapide (RDE) {#rde}
 
-[Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md) (ou les RDE pour abréger) permettent aux développeurs de déployer et d’examiner rapidement les modifications, ce qui réduit le temps nécessaire au test des fonctionnalités qui ont déjà fait leurs preuves dans un environnement de développement local.
+Les [Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md) (RDE, en abrégé) permettent aux développeurs et aux développeuses de déployer et d’examiner rapidement les modifications afin de réduire la durée des tests des fonctionnalités ayant fait leurs preuves dans un environnement de développement local.
 
-Contrairement aux environnements de développement standard qui déploient le code via le pipeline Cloud Manager, les développeurs utilisent des outils de ligne de commande pour synchroniser le code d’un environnement de développement local avec l’éditeur de texte enrichi. Une fois les modifications testées dans un éditeur de texte enrichi, elles doivent être déployées dans un environnement de développement cloud standard via le pipeline Cloud Manager, qui placera le code par le biais des points de contrôle qualité appropriés.
+Contrairement aux environnements de développement standard qui déploient le code via le pipeline de Cloud Manager, les développeurs et les développeuses utilisent des outils de ligne de commande pour synchroniser le code d’un environnement de développement local avec le RDE. Une fois les modifications testées avec succès dans un RDE, elles doivent être déployées dans un environnement de développement Cloud standard via le pipeline de Cloud Manager, qui placera le code par le biais des points de contrôle qualité appropriés.
 
 ## Modes d’exécution {#runmodes}
 
-Dans les solutions AEM existantes, les clients peuvent exécuter des instances avec des modes d’exécution arbitraires et appliquer la configuration OSGI ou installer des lots OSGI sur ces instances. Les modes d’exécution définis incluent généralement la variable *service* (création et publication) et l’environnement (code, développement, évaluation, production).
+Dans les solutions AEM existantes, les clients et les clientes peuvent exécuter des instances avec des modes d’exécution arbitraires et appliquer la configuration OSGI ou installer des lots OSGI sur ces instances. Les modes d’exécution définis incluent généralement le *service* (création et publication) et l’environnement (RDE, développement, évaluation et production).
 
-AEM as a Cloud Service, en revanche, est plus précis sur les modes d’exécution disponibles et sur la manière dont les lots OSGI et la configuration OSGI peuvent être mappés sur ces modes :
+AEM as a Cloud Service, en revanche, est plus précis sur les modes d’exécution disponibles et sur la manière dont les bundles OSGI et la configuration OSGI peuvent être mappés sur ces modes :
 
-* Les modes d’exécution de la configuration OSGI doivent faire référence à RDE, dev, stage, prod pour l’environnement ou author, publish pour le service. La combinaison de `<service>.<environment_type>` est prise en charge dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
+* Les modes d’exécution de configuration OSGI doivent faire référence au RDE, au développement, à l’évaluation, à la production de l’environnement, ou à la création ou la publication pour le service. La combinaison de `<service>.<environment_type>` est prise en charge dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le package de contenu sous `install.author` ou `install.publish`.
 
 AEM as a Cloud Service ne permet pas d’utiliser des modes d’exécution pour installer du contenu pour des environnements ou des services spécifiques. Si un environnement de développement doit être ensemencé avec des données ou un HTML qui ne se trouve pas dans les environnements d’évaluation ou de production, le gestionnaire de modules peut être utilisé.
 
 Les configurations de mode d’exécution prises en charge sont les suivantes :
 
-* **config** (*La valeur par défaut s’applique à tous les services AEM.*)
+* **config** (*Par défaut, s’applique à tous les services AEM*)
 * **config.author** (*s’applique à tous les services Auteur AEM*)
 * **config.author.dev** (*s’applique au service Auteur de développement AEM*)
-* **config.author.rde** (*S’applique au service d’auteur RDE AEM*)
+* **config.author.rde** (*S’applique au service de création RDE d’AEM*)
 * **config.author.stage** (*s’applique au service Auteur d’évaluation AEM*)
 * **config.author.prod** (*s’applique au service Auteur de production AEM*)
 * **config.publish** (*s’applique au service Publication AEM*)
 * **config.publish.dev** (*s’applique au service de publication de développement AEM*)
-* **config.publish.rde** (*S’applique au service de publication RDE AEM*)
+* **config.publish.rde** (*S’applique au service de publication RDE d’AEM*)
 * **config.publish.stage** (*s’applique au service Publication d’évaluation AEM*)
 * **config.publish.prod** (*s’applique au service Publication de production AEM*)
 * **config.dev** (*s’applique aux services de développement AEM*)

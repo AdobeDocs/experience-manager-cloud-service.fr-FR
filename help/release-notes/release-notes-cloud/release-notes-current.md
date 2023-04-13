@@ -5,20 +5,20 @@ mini-toc-levels: 1
 source-git-commit: 085ce15ebe4d48d32a437f13e728f60cfc57d0fa
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 16%
+ht-degree: 33%
 
 ---
 
 
 # Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante décrit les notes de mise à jour des fonctionnalités de la version actuelle (la plus récente) de [!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour techniques de la version actuelle (la plus récente) d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
 >À partir de là, vous pouvez accéder aux notes de mise à jour des versions précédentes ; par exemple, celles de 2021, 2022 et ainsi de suite.
 >
->Consultez la section [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
+>Consultez la section [Feuille de route des versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour en savoir plus sur les activations de fonctionnalités à venir pour [!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Regardez la vidéo Aperçu de la version de février 2023 pour un résumé des f
 
 ### Nouvelles fonctionnalités disponibles dans [!DNL Forms] {#new-features-available-in-channel}
 
-* **[Utilisation des composants principaux de capture de données pour créer le Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en)**: [Utilisation de l’éditeur de Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) pour créer des formulaires basés sur des composants de capture de données normalisés (composants principaux). Ces composants fournissent des fonctionnalités de personnalisation, un temps de développement réduit et des coûts de maintenance réduits pour vos expériences d’inscription numérique.
+* **[Utiliser des composants principaux de capture de données pour créer des formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr)** : [utilisez l’éditeur de formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) pour créer des formulaires basés sur des composants de capture de données normalisés (composants principaux). Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique.
 
 * **[Prise en charge du pipeline Frontend pour le style d’un Forms adaptatif basé sur des composants principaux](/help/forms/using-themes-in-core-components.md)**: Utilisez des thèmes normalisés basés sur BEM pour les Forms adaptatives basées sur les composants principaux en les déployant avec le pipeline de déploiement Frontend afin d’améliorer l’aspect des formulaires et de vous aligner sur les directives de conception approuvées par votre entreprise.
 
@@ -70,7 +70,7 @@ Regardez la vidéo Aperçu de la version de février 2023 pour un résumé des f
 
 * **[Intégration aux points de fin REST à l’aide de l’API Open 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Intégrez en toute transparence dans les systèmes d’enregistrement qui prennent en charge l’API Open 3.0 pour stocker et récupérer des données à l’aide de modèles de données de formulaire.
 
-* **[Partager un formulaire adaptatif pour révision](/help/forms/create-reviews-forms.md)**: Utilisez le mécanisme de révision de Forms adaptatif pour permettre à un ou plusieurs réviseurs de réviser le formulaire.
+* **[Partager un formulaire adaptatif pour révision](/help/forms/create-reviews-forms.md)** : utilisez le mécanisme de révision des formulaires adaptatifs pour permettre à une ou plusieurs personnes de réviser le formulaire.
 
 
 ### Fonctionnalités d’ [!DNL Forms] préliminaires {#prerelease-features-forms}
@@ -93,7 +93,7 @@ Vous pouvez envoyer un courrier électronique à aem-forms-headless@adobe.com à
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 
-Vous trouverez les dernières notes de mise à jour de maintenance [here](/help/release-notes/maintenance/latest.md).
+Vous trouverez les dernières notes de mise à jour de maintenance [ici](/help/release-notes/maintenance/latest.md).
 
 ## Cloud Manager {#cloud-manager}
 

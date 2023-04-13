@@ -8,13 +8,13 @@ exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: 7c67b72a5dd10dd6c9db8be1812f66dc20e0f85a
 workflow-type: tm+mt
 source-wordcount: '890'
-ht-degree: 84%
+ht-degree: 91%
 
 ---
 
 # Rapports de ressources {#asset-reports}
 
-Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports fournissent des informations utiles sur l’utilisation de votre système, la manière dont les utilisateurs interagissent avec les ressources et les ressources qui sont <!-- downloaded and --> partagé.
+Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports contiennent des informations utiles sur l’utilisation de votre système, sur la façon dont les utilisateurs et utilisatrices interagissent avec les ressources et sur la façon dont les ressources sont <!-- downloaded and --> partagées.
 
 Utilisez les informations figurant dans les rapports de manière à obtenir des mesures de succès essentielles pour évaluer l’adoption d’[!DNL Assets] au sein de votre entreprise et par les clients.
 
@@ -108,7 +108,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
    >[!NOTE]
    >
-   >Vous pouvez générer des rapports en fonction des événements générés au cours des 360 derniers jours. Experience Manager conserve les données d’ID utilisateur pendant 30 jours.
+   >Vous pouvez générer des rapports en fonction des événements générés au cours des 360 derniers jours. Experience Manager conserve les données d’ID utilisateur pendant 30 jours.
 
 ## Ajout de colonnes personnalisées  aux rapports {#add-custom-columns}
 

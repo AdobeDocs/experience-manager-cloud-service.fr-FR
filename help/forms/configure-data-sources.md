@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 936aa33ca334523aa84300f540bde9543eb7ffb4
 workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 73%
+ht-degree: 89%
 
 ---
 
@@ -18,37 +18,37 @@ ht-degree: 73%
 
 L’intégration de données [!DNL Experience Manager Forms] permet de configurer des sources de données disparates et de s’y connecter. La prise en charge est assurée par défaut pour les types suivants :
 
-* Bases de données relationnelles - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], et [!DNL Oracle RDBMS]
+* Bases de données relationnelles - MySQL, [!DNL Microsoft SQL Server], [!DNL IBM DB2], et [!DNL Oracle RDBMS].
 * Services web RESTful
 * Services web SOAP
 * Services OData  (Version 4.0)
 * Microsoft® Dynamics 
 * SalesForce
-* Stockage Azure Blob de Microsoft®
+* Stockage d’objets blob Microsoft® Azure.
 
 L’intégration de données prend en charge l’authentification OAuth2.0, de base ou par clé API par défaut, et permet de mettre en œuvre une authentification personnalisée pour accéder aux services web. Bien que les services RESTful, SOAP et OData soient configurés dans [!DNL Experience Manager] as a Cloud Service, JDBC pour les bases de données relationnelles et connecteur pour [!DNL Experience Manager] profil utilisateur configuré dans [!DNL Experience Manager] console web.
 
-## Configuration de la base de données relationnelle {#configure-relational-database}
+## Configurer la base de données relationnelle {#configure-relational-database}
 
 ### Prérequis
 
-Avant de configurer des bases de données relationnelles à l’aide de [!DNL Experience Manager] Configuration de la console web, il est obligatoire de :
-* [Activation de la mise en réseau avancée via l’API de gestion du cloud](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), car les ports sont désactivés par défaut.
-* [Ajout de dépendances de pilote JDBC dans Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=en#mysql-driver-dependencies).
+Avant de configurer des bases de données relationnelles à l’aide de la Configuration de la console web [!DNL Experience Manager], il est obligatoire d’effectuer les actions suivantes :
+* [Activer la mise en réseau avancée via l’API Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/advanced-networking.html), car les ports sont désactivés par défaut.
+* [Ajouter des dépendances de pilote JDBC dans Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/sql-datasourcepool.html?lang=fr#mysql-driver-dependencies).
 
 
-### Etapes de configuration de la base de données relationnelle
+### Les étapes pour configurer la base de données relationnelle.
 
-Vous pouvez configurer des bases de données relationnelles à l’aide de [!DNL Experience Manager] Configuration de la console web. Procédez comme suit :
+Vous pouvez configurer des bases de données relationnelles à l’aide de la configuration de la console Web [!DNL Experience Manager]. Procédez comme suit :
 
-1. Accédez à [!DNL Experience Manager] console web à l’adresse `https://server:host/system/console/configMgr`.
-1. Localiser **[!UICONTROL Pools de connexions JDBC Day Commons]** configuration. Appuyez pour ouvrir la configuration en mode d’édition.
+1. Accédez à la console web [!DNL Experience Manager] à l’adresse `https://server:host/system/console/configMgr`.
+1. Localisez la configuration des **[!UICONTROL Pools de connexions JDBC Day Commons]**. Appuyez pour ouvrir la configuration en mode édition.
 
-   ![Pool de connecteurs JDBC](/help/forms/assets/jdbc_connector.png)
+   ![Pool de connecteurs JDBC](/help/forms/assets/jdbc_connector.png).
 
-1. Dans la boîte de dialogue de configuration, spécifiez les détails de la base de données que vous souhaitez configurer, par exemple :
+1. Dans la boîte de dialogue de configuration, spécifiez les détails de la base de données que vous souhaitez configurer, tels que :
 
-   * Nom de classe Java™ pour le pilote JDBC
+   * Nom de classe Java™ pour le pilote JDBC.
    * URI de connexion JDBC
    * Nom d’utilisateur et mot de passe pour établir la connexion au pilote JDBC
    * Spécifier une requête SQL SELECT dans la variable **[!UICONTROL Requête de validation]** pour valider les connexions à partir du pool. La requête doit renvoyer au moins une ligne. En fonction de votre base de données, indiquez l’une des options suivantes :
@@ -56,7 +56,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de [!DNL
       * SELECT 1 from dual (Oracle)
    * Nom de la source de données
 
-   Exemples de chaînes pour la configuration de la base de données relationnelle :
+   Exemples de chaînes pour la configuration de la base de données relationnelle :
 
    ```text
       "datasource.name": "sqldatasourcename-mysql",
@@ -112,14 +112,14 @@ Pour configurer le dossier pour les configurations de service cloud :
    1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
 
 1. Dans le **[!UICONTROL Explorateur de configuration]**, appuyez sur **[!UICONTROL Créer]**.
-1. Dans le **[!UICONTROL Créer une configuration]** , spécifiez un titre pour le dossier et activez **[!UICONTROL Configurations du cloud]**.
+1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, indiquez un titre pour le dossier et activez les **[!UICONTROL Configurations cloud]**.
 1. Appuyez sur **[!UICONTROL Créer]** pour créer le dossier activé pour les configurations de service cloud.
 
 ## Configuration des services web RESTful {#configure-restful-web-services}
 
-Le service web RESTful peut être décrit en utilisant les [spécifications Swagger](https://swagger.io/specification/v2/) au format JSON ou YAML dans un fichier de définition [!DNL Swagger]. Pour configurer le service Web RESTful dans [!DNL Experience Manager] as a Cloud Service, assurez-vous que la variable [!DNL Swagger] fichier ([Swagger version 2.0](https://swagger.io/specification/v2/)) ou [!DNL Swagger] fichier ([Swagger version 3.0](https://swagger.io/specification/v3/)) sur votre système de fichiers ou l’URL d’hébergement du fichier.
+Le service web RESTful peut être décrit en utilisant les [spécifications Swagger](https://swagger.io/specification/v2/) au format JSON ou YAML dans un fichier de définition [!DNL Swagger]. Pour configurer le service web RESTful dans [!DNL Experience Manager] as a Cloud Service, vérifiez que le fichier [!DNL Swagger] ([Swagger Version 2.0](https://swagger.io/specification/v2/)) ou le fichier [!DNL Swagger] ([Swagger Version 3.0](https://swagger.io/specification/v3/)) est présent dans votre système de fichiers ou l’URL où le fichier est hébergé.
 
-### Configuration des services RESTful pour Open API Specification version 2.0 {#configure-restful-services-open-api-2.0}
+### Configurez les services RESTful pour la version 2.0 de la spécification Open API {#configure-restful-services-open-api-2.0}.
 
 1. Accédez à **[!UICONTROL Outils > Cloud Services > Sources de données]**. Appuyez pour sélectionner le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -129,7 +129,7 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
 1. Spécifiez les détails suivants pour le service RESTful :
 
    * Sélectionnez l’URL ou le fichier dans la liste déroulante [!UICONTROL Source Swagger] et spécifiez l’[!DNL Swagger URL] vers le fichier de définition du [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
-   * Selon la variable[!DNL  Swagger] Saisie source. Les champs suivants sont pré-renseignés avec des valeurs :
+   * En fonction de l’entrée source [!DNL  Swagger], les champs suivants sont préremplis avec des valeurs :
 
       * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source [!DNL Swagger].
       * Hôte : nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
@@ -143,7 +143,7 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
 
-### Configuration des services RESTful pour Open API Specification version 3.0 {#configure-restful-services-open-api-3.0}
+### Configurez les services RESTful pour la version 3.0 de la spécification Open API {#configure-restful-services-open-api-3.0}.
 
 1. Accédez à **[!UICONTROL Outils > Cloud Services > Sources de données]**. Appuyez pour sélectionner le dossier dans lequel vous souhaitez créer une configuration cloud.
 
@@ -153,7 +153,7 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
 1. Spécifiez les détails suivants pour le service RESTful :
 
    * Sélectionnez l’URL ou le fichier dans la liste déroulante [!UICONTROL Source Swagger] et spécifiez l’[!DNL Swagger 3.0 URL] vers le fichier de définition du [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
-   * Selon la variable[!DNL  Swagger] Entrée source, les informations de connexion au serveur cible s&#39;affichent.
+   * En fonction de l’entrée source [!DNL  Swagger], les informations de connexion au serveur cible s’affichent.
    * Sélectionnez le type d’authentification (Aucun, OAuth2.0, Authentification de base, Clé API ou Authentification personnalisée) pour accéder au service RESTful et spécifiez les détails de l’authentification.
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
@@ -162,16 +162,16 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service RESTful.
 
-Voici quelques-unes des opérations non prises en charge par la version 3.0 de la spécification d’API d’ouverture des services RESTful :
-* Rappels
-* oneof/any
-* Référence distante
+Voici quelques-unes des opérations non prises en charge par la version 3.0 de la spécification Open API des services RESTful :
+* Les rappels.
+* l’un de/l’un des.
+* Référence à distance.
 * Liens
-* Différents corps de requête pour différents types MIME pour une seule opération
+* Différents corps de requête pour différents types MIME pour une seule opération.
 
-Vous pouvez consulter [Spécification OpenAPI 3.0](https://swagger.io/specification/v3/) pour plus d’informations.
+Vous pouvez consulter les [Spécifications OpenAPI 3.0](https://swagger.io/specification/v3/) pour plus d’informations.
 
-### Configurer le client HTTP du modèle de données de formulaire pour optimiser les performances {#fdm-http-client-configuration}
+### Configuration du client HTTP du modèle de données de formulaire pour optimiser les performances {#fdm-http-client-configuration}
 
 Le modèle de données de formulaire d’[!DNL Experience Manager Forms] lors de l’intégration des services web RESTful comme source de données comprend des configurations de client HTTP pour l’optimisation des performances.
 
@@ -207,7 +207,7 @@ Le fichier JSON suivant affiche un exemple :
 
    * Spécifiez le nombre maximal de connexions autorisées entre le modèle de données de formulaire et les services Web RESTful dans le champ **[!UICONTROL Limite de connexion au total]**. La valeur par défaut est de 20 connexions.
 
-   * Spécifiez le nombre maximal de connexions autorisées pour chaque itinéraire dans le champ **[!UICONTROL Limite de connexion par itinéraire]**. La valeur par défaut est deux connexions.
+   * Spécifiez le nombre maximal de connexions autorisées pour chaque itinéraire dans le champ **[!UICONTROL Limite de connexion par itinéraire]**. La valeur par défaut est « deux connexions ».
 
    * Indiquez la durée pendant laquelle une connexion HTTP persistante est maintenue en vie, dans le champ **[!UICONTROL Maintenir en vie]**. La valeur par défaut est de 15 secondes.
 
@@ -296,4 +296,4 @@ When you enable mutual authentication for form data model, both the data source 
 
 ## Étapes suivantes {#next-steps}
 
-Vous avez configuré la source de données. Vous pouvez ensuite créer un modèle de données de formulaire ou, si vous avez déjà créé un modèle de données de formulaire sans source de données, vous pouvez l’associer aux sources de données que vous avez configurées. Voir [Création d’un modèle de données de formulaire](create-form-data-models.md) pour plus de détails.
+Vous avez configuré la source de données. Vous pouvez ensuite créer un modèle de données de formulaire ou, si vous avez déjà créé un modèle de données de formulaire sans source de données, vous pouvez l’associer aux sources de données que vous venez de configurer. Voir [Créer un modèle de données de formulaire](create-form-data-models.md) pour plus de détails.

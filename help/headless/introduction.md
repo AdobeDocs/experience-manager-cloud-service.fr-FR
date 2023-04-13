@@ -1,12 +1,12 @@
 ---
 title: Présentation de Headless pour AEM
-description: Découvrez Headless dans Adobe Experience Manager (AEM) avec une combinaison de documentation détaillée et de parcours Headless. Découvrez comment des fonctionnalités telles que les modèles de fragment de contenu, les fragments de contenu et une API GraphQL sont utilisées pour alimenter les expériences sans interface.
+description: Découvrez Headless dans Adobe Experience Manager (AEM) avec une combinaison de documentation détaillée et de parcours headless. Découvrez comment des fonctionnalités telles que les modèles de fragment de contenu, les fragments de contenu et une API GraphQL sont utilisées pour alimenter les expériences sans interface.
 landing-page-description: Apprenez comment utiliser et administrer Headless dans Adobe Experience Manager as a Cloud Service.
 exl-id: 24300499-ae9c-49d0-aa25-f51e14d9cf79
 source-git-commit: 6d8d75cd0b01154f420dd3d5f14589bb8a2b8297
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -33,7 +33,7 @@ L’implémentation sans affichage annule la gestion des pages et des composants
 
 AEM as a Cloud Service est un outil souple pour le modèle d’implémentation découplée avec trois fonctionnalités puissantes :
 
-1. **Modèles de fragment de contenu**
+1. **Modèles de fragment de contenu.**
    * Les modèles de fragment de contenu sont des représentations structurées de contenu.
    * Les modèles de fragment de contenu sont définis par des architectes d’informations dans l’éditeur de modèle de fragment de contenu AEM.
    * Les modèles de fragment de contenu servent de base pour les fragments de contenu.
@@ -46,7 +46,7 @@ AEM as a Cloud Service est un outil souple pour le modèle d’implémentation d
    * L’API REST AEM Assets prend en charge les opérations CRUD sur les fragments de contenu.
    * La diffusion de contenu direct est également possible avec l’[Exportateur JSON du composant principal du fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr).
 
-## Vos premières étapes {#first-steps}
+## Premiers pas {#first-steps}
 
 Plusieurs ressources sont disponibles pour commencer à utiliser les fonctionnalités AEM découplé. Chaque guide est adapté à différents cas d’utilisation et différentes audiences.
 

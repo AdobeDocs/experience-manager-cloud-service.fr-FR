@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 6464b90e607d3de87d103c744b8e7c0ba9ed2178
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 93%
 
 ## Créer un modèle {#create-model}
 
-La console de modèle de fragment de contenu s’ouvre dans un nouvel onglet. Considérez la console de modèle de fragment de contenu comme votre bibliothèque de modèles, dans laquelle vous créez de nouveaux modèles et gérez les modèles existants.
+La console de modèles de fragments de contenu s’ouvre dans un nouvel onglet. Considérez la console de modèles de fragments de contenu comme votre bibliothèque de modèles, dans laquelle vous créez de nouveaux modèles et gérez les modèles existants.
 
 1. Cliquez sur le bouton **Créer** en haut à droite de l’écran pour commencer à créer un modèle de fragment de contenu.
 

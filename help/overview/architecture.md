@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '1797'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Trois types d’environnements sont disponibles avec AEM as a Cloud Service :
 
    Pour plus d’informations, consultez [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#using-cloud-manager).
 
-* **Environnement de développement rapide**: permet des itérations de développement rapides pour le débogage de code nouveau ou existant.
+* **Environnement de développement rapide** : permet des itérations de développement rapide pour le débogage de code nouveau ou existant.
 
 ## Programmes {#programs}
 
@@ -92,7 +92,7 @@ Un programme AEM est le conteneur qui comprend les éléments suivants :
 | Référentiel de code (Git) |  1 |
 | Image de base (Sites ou Assets) |  1 |
 | Ensemble d’environnements d’évaluation et de production (1:1) | 0 ou 1 |
-| Environnements hors production (RDE, développement ou démonstration) | 0 à N |
+| Environnements hors production (RDE, développement ou démonstration). | 0 à N |
 | Pipeline pour chaque environnement | 0 ou 1 |
 
 Initialement, deux types de programmes sont disponibles pour AEM as a Cloud Service :

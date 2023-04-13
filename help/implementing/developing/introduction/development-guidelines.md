@@ -1,11 +1,11 @@
 ---
-title: Conseils de développement pour AEM as a Cloud Service
-description: Découvrez les conseils pour développer sur AEM as a Cloud Service et sur les manières importantes dont il diffère d’AEM sur site et d’une expérience d’ dans AMS.
+title: Conseils de développement sur AEM as a Cloud Service
+description: Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
 workflow-type: tm+mt
 source-wordcount: '2591'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 91%
 
 >[!CONTEXTUALHELP]
 >id="development_guidelines"
->title="Conseils de développement pour AEM as a Cloud Service"
->abstract="Découvrez les conseils pour développer sur AEM as a Cloud Service et sur les manières importantes dont il diffère d’AEM sur site et d’une expérience d’ dans AMS."
+>title="Conseils de développement sur AEM as a Cloud Service"
+>abstract="Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS."
 >additional-url="https://video.tv.adobe.com/v/330555/?captions=fre_fr" text="Démonstration de la structure du package"
 
-Ce document présente des lignes directrices pour le développement sur AEM as a Cloud Service et sur les manières importantes dont il diffère de l’AEM sur site et de l’ dans AMS.
+Ce document présente les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 
-## Le code doit être pris en charge par les clusters {#cluster-aware}
+## Le code doit être adapté aux clusters {#cluster-aware}
 
 Le code s’exécutant dans AEM as a Cloud Service doit savoir qu’il s’exécute toujours dans une grappe. Cela signifie qu’il y a toujours plusieurs instances en cours d’exécution. Le code doit être résilient, d’autant plus qu’une instance peut être arrêtée à tout moment.
 
@@ -140,7 +140,7 @@ Une ligne dans le fichier de débogage commence généralement par DEBUG, puis f
 DEBUG 3 WebApp Panel: WebApp successfully deployed
 ```
 
-Les niveaux de journalisation sont les suivants :
+Les niveaux de journal sont les suivants :
 
 | 0 | Erreur fatale | L’action a échoué et le programme d’installation ne peut pas continuer. |
 |---|---|---|
@@ -166,7 +166,7 @@ Les clients peuvent accéder à CRXDE Lite sur l’environnement de développeme
 
 En revanche, il est possible de lancer le navigateur de référentiels à partir de Developer Console, ce qui vous permet d’accéder au référentiel en lecture seule pour tous les environnements sur les niveaux de création, de publication et d’aperçu. En savoir plus sur le navigateur de référentiels [ici](/help/implementing/developing/tools/repository-browser.md).
 
-Un ensemble d’outils de débogage AEM environnements de développement as a Cloud Service est disponible dans Developer Console pour les environnements RDE, de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
+Un ensemble d’outils pour le débogage des environnements de développement d’AEM as a Cloud Service est disponible dans la Developer Console pour les environnements de RDE, de développement, d’évaluation et de production. L’URL peut être déterminée en ajustant les URL du service d’auteur ou de publication comme suit :
 
 `https://dev-console/-<namespace>.<cluster>.dev.adobeaemcloud.com`
 
@@ -264,24 +264,24 @@ La propriété `smtp.starttls` sera automatiquement définie par AEM as a Cloud�
 
 L’hôte du serveur SMTP doit être défini sur celui de votre serveur de messagerie.
 
-## Éviter les propriétés à plusieurs valeurs volumineuses {#avoid-large-mvps}
+## Éviter les nombreuses propriétés à plusieurs valeurs {#avoid-large-mvps}
 
-Le référentiel de contenu Oak sous-jacent AEM as a Cloud Service n’est pas destiné à être utilisé avec un nombre excessif de propriétés à plusieurs valeurs (MVP). Une règle de base consiste à maintenir les PVM en dessous de 1 000. Toutefois, les performances réelles dépendent de nombreux facteurs.
+Le référentiel de contenu Oak sous-jacent à AEM as a Cloud Service n’est pas destiné à être utilisé avec un nombre excessif de propriétés à plusieurs valeurs (MVP, multi-value properties). Une règle de base consiste à maintenir les MVP en dessous de 1 000. Toutefois, les performances réelles dépendent de nombreux facteurs.
 
-Les avertissements sont consignés par défaut après avoir dépassé 1 000. Ils sont similaires à ce qui suit.
+Les avertissements sont consignés par défaut après avoir dépassé 1 000. Ils se présentent comme suit.
 
 ```text
 org.apache.jackrabbit.oak.jcr.session.NodeImpl Large multi valued property [/path/to/property] detected (1029 values). 
 ```
 
-Les MVP volumineux peuvent entraîner des erreurs en raison du document MongoDB dépassant 16 Mo, ce qui entraîne des erreurs similaires à celles-ci.
+En raison du document MongoDB dépassant 16 Mo, les MVP trop nombreuses peuvent entraîner des erreurs similaires à celles-ci.
 
 ```text
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-Veuillez consulter la [Documentation Apache Oak](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) pour plus d’informations.
+Pour plus d’informations, veuillez consulter la [documentation d’Apache Oak](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property).
 
-## Directives de développement [!DNL Assets] et cas pratiques {#use-cases-assets}
+## Directives de développement et cas pratiques concernant [!DNL Assets] {#use-cases-assets}
 
-Pour en savoir plus sur les cas d’utilisation de développement, les recommandations et les documents de référence pour Assets as a Cloud Service, voir [Références pour les développeurs pour Assets.](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis)
+Pour découvrir les cas d’utilisation de développement, les recommandations et les documents de référence pour Assets as a Cloud Service, consultez les [références de développement pour Assets](/help/assets/developer-reference-material-apis.md#assets-cloud-service-apis).

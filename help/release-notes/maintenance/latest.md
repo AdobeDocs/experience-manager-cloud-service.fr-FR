@@ -4,7 +4,7 @@ description: Notes de mise à jour de la maintenance actuelle de [!DNL Adobe Exp
 source-git-commit: ea71ca9fe259fbbf497a35930a10450bd4e26ce8
 workflow-type: tm+mt
 source-wordcount: '402'
-ht-degree: 6%
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ La section suivante présente les notes techniques de mise à jour de la version
 
 Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 11382, publiée publiquement le 28 mars 2023. Cette version de maintenance est une mise à jour de la version de maintenance 11289 précédente.
 
-L’activation des fonctionnalités de cette version de maintenance vous fournira l’ensemble des fonctionnalités. Voir [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour plus d’informations.
+L’activation des fonctionnalités de cette version de maintenance vous fournira l’ensemble des fonctionnalités. Consultez les [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour plus d’informations.
 
 ### Problèmes connus {#known-issues-11382}
 
@@ -54,9 +54,9 @@ L’activation des fonctionnalités de cette version de maintenance vous fournir
 
 ### Technologies intégrées {#embedded-tech-11382}
 
-| Technologie | d’Adobe Experience Manager Forms 6.5 | Lien |
+| Technologie | Version | Lien |
 |---|---|---|
 | AEM OAK | 1.44-T20221206170501-6d59064 | [API 1.44.0 Oak](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.44.0/index.html) |
-| API SLING AEM | Version 2.27.0 | [API Apache Sling 2.27.0](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
+| API SLING AEM | Version 2.27.0 | [API Apache Sling 2.27.0](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version 1.4.20-1.4.0 | [Spécification du langage de modèle de HTML](https://github.com/adobe/htl-spec) |
-| Composants principaux d’AEM | Version 2.21.2 | [AEM composants principaux WCM](https://github.com/adobe/aem-core-wcm-components) |
+| Composants principaux d’AEM | Version 2.21.2 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |

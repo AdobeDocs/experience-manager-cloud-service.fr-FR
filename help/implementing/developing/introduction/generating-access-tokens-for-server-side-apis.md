@@ -1,11 +1,11 @@
 ---
 title: Génération de jetons d’accès pour les API côté serveur
-description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
+description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé.
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: 9f7157be1a9e7b635b9c7d0f0c653646e6f1b43b
+source-git-commit: dd869397feca593f93ee8ed5030828e01cc45c4d
 workflow-type: tm+mt
 source-wordcount: '2132'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Le flux de serveur à serveur est décrit ci-dessous, ainsi qu’un flux simplif
 
 ## Flux de serveur à serveur {#the-server-to-server-flow}
 
-Un utilisateur disposant d’un rôle d’administrateur d’organisation IMS et qui est également membre du profil produit Utilisateurs AEM ou Administrateurs AEM sur l’auteur AEM, peut générer un ensemble d’informations d’identification as a Cloud Service, chacune étant une charge utile JSON qui inclut un certificat (la clé publique), une clé privée et un compte technique constitué d’un `clientId` et `clientSecret`. Ces informations d’identification peuvent ensuite être récupérées par un utilisateur disposant du rôle d’administrateur d’environnement as a Cloud Service AEM et doivent être installées sur un serveur non AEM et traitées avec précaution comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration avec une API AEM as a Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé avec Adobe Identity Management Services (IMS) pour un jeton d’accès IMS. Ce jeton d’accès peut ensuite être utilisé comme jeton d’authentification du porteur pour adresser des requêtes à AEM as a Cloud Service. Le certificat des informations d’identification expire par défaut après un an, mais il peut être actualisé si nécessaire, comme décrit [here](#refresh-credentials).
+Un utilisateur ou une utilisatrice disposant d’un rôle d’administration d’organisation IMS et qui est également membre du profil produit Utilisateurs AEM ou Administrateurs AEM dans la création AEM, peut générer un ensemble d’informations d’identification AEM as a Cloud Service, chacune étant une payload JSON incluant un certificat (la clé publique), une clé privée et un compte technique constitué d’un `clientId` et d’un `clientSecret`. Ces informations d’identification peuvent ensuite être récupérées par un utilisateur ou une utilisatrice disposant du rôle d’administration d’AEM as a Cloud Service et elles doivent être installées sur un serveur non AEM et traitées avec précaution comme une clé secrète. Ce fichier de format JSON contient toutes les données requises pour l’intégration à une API AEM as a Cloud Service. Les données sont utilisées pour créer un jeton JWT signé, qui est échangé avec les services Identity Management (IMS) d’Adobe contre un jeton d’accès IMS. Ce jeton d’accès peut ensuite être utilisé comme jeton d’authentification du porteur pour adresser des requêtes à AEM as a Cloud Service. Par défaut, le certificat des informations d’identification expire après un an, mais celles-ci peuvent être actualisées si nécessaire, comme décrit [ici](#refresh-credentials).
 
 Le flux de serveur à serveur comprend les étapes suivantes :
 
@@ -35,35 +35,35 @@ Le flux de serveur à serveur comprend les étapes suivantes :
 
 ### Extraction des informations d’identification AEM as a Cloud Service {#fetch-the-aem-as-a-cloud-service-credentials}
 
-Les utilisateurs ayant accès à AEM console de développement as a Cloud Service verront apparaître l’onglet Intégrations dans Developer Console pour un environnement donné. Un utilisateur disposant du rôle d’administrateur d’environnement as a Cloud Service AEM peut créer, afficher ou gérer des informations d’identification.
+Les utilisateurs et utilisatrices ayant accès à la Developer Console dans AEM as a Cloud Service y voient l’onglet Intégrations correspondant à un environnement donné. Un utilisateur ou une utilisatrice disposant du rôle d’administration d’environnement d’AEM as a Cloud Service peut créer, afficher ou gérer des informations d’identification.
 
-Cliquez sur le bouton **Créer un compte technique** , un nouvel ensemble d’informations d’identification sera créé, qui comprend l’identifiant client, le secret client, la clé privée, le certificat et la configuration pour les niveaux de création et de publication de l’environnement, quelle que soit la sélection de la capsule.
+Cliquez sur le bouton **Créer un nouveau compte technique** pour créer un nouvel ensemble d’informations d’identification, qui comprend l’identifiant client, le secret client, la clé privée, le certificat et la configuration pour les niveaux de création et de publication de l’environnement, quelle que soit le pod choisi.
 
 ![Créer un nouveau compte technique](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
-Un nouvel onglet du navigateur s’ouvre et affiche les informations d’identification. Vous pouvez utiliser cette vue pour télécharger les informations d’identification en appuyant sur l’icône de téléchargement située en regard du titre de l’état :
+Un nouvel onglet du navigateur s’ouvre et affiche les informations d’identification. Vous pouvez utiliser cette vue pour télécharger les informations d’identification en appuyant sur l’icône de téléchargement située à côté du titre du statut :
 
-![Téléchargement des informations d’identification](/help/implementing/developing/introduction/assets/s2s-credentialdownload.png)
+![Télécharger des informations d’identification](/help/implementing/developing/introduction/assets/s2s-credentialdownload.png)
 
-Une fois les informations d’identification créées, elles s’affichent sous le **Comptes techniques** dans le **Intégrations** section :
+Une fois les informations d’identification créées, elles s’affichent sous l’onglet **Comptes techniques** dans la section **Intégrations** :
 
 ![Afficher les informations d’identification](/help/implementing/developing/introduction/assets/s2s-viewcredentials.png)
 
-Les utilisateurs peuvent ensuite afficher les informations d’identification à l’aide de l’action Afficher . En outre, comme décrit plus loin dans l’article, les utilisateurs peuvent modifier les informations d’identification du même compte technique en créant une clé privée ou un nouveau certificat, dans les cas où le certificat doit être renouvelé ou révoqué.
+Les utilisateurs ou utilisatrices peuvent ensuite afficher les informations d’identification à l’aide de l’action Afficher. En outre, tel que décrit plus loin dans l’article, les utilisateurs et utilisatrices peuvent modifier les informations d’identification du même compte technique en créant une nouvelle clé privée ou un nouveau certificat, dans les cas où le certificat doit être renouvelé ou révoqué.
 
-Les utilisateurs disposant du rôle d’administrateur d’environnement as a Cloud Service AEM peuvent ultérieurement créer de nouvelles informations d’identification pour des comptes techniques supplémentaires. Cela s’avère utile lorsque différentes API ont des exigences d’accès différentes. Par exemple, lecture ou lecture-écriture.
+Les utilisateurs ou utilisatrices disposant du rôle d’administration d’environnement d’AEM as a Cloud Service peuvent ensuite créer de nouvelles informations d’identification pour des comptes techniques supplémentaires. Cela s’avère utile lorsque plusieurs API ont des exigences d’accès différentes. Par exemple, lecture et lecture-écriture.
 
 >[!NOTE]
 >
->Les clients peuvent créer jusqu’à 10 comptes techniques, y compris ceux qui ont déjà été supprimés.
+>Les clients et clientes peuvent créer jusqu’à 10 comptes techniques, y compris ceux qui ont déjà été supprimés.
 
 >[!IMPORTANT]
 >
->Un administrateur d’organisation IMS (généralement le même utilisateur qui a configuré l’environnement via Cloud Manager), qui doit également être membre du profil produit Utilisateurs AEM ou Administrateurs AEM sur l’auteur AEM, doit d’abord accéder à Developer Console et cliquer sur le bouton **Créer un compte technique** pour que les informations d’identification soient générées et récupérées ultérieurement par un utilisateur disposant des droits d’administrateur sur l’environnement as a Cloud Service AEM. Si l’administrateur de l’organisation IMS ne l’a pas fait, un message l’informera que le rôle d’administrateur de l’organisation IMS doit lui être attribué.
+>Un administrateur ou une administratrice d’organisation IMS (généralement le même utilisateur ou la même utilisatrice qui a configuré l’environnement via Cloud Manager), qui doit également être membre du profil de produit Utilisateurs AEM ou Administrateurs AEM dans la création AEM, doit d’abord accéder à la Developer Console et cliquer sur le bouton **Créer un nouveau compte technique** pour que les informations d’identification soient générées et récupérées ultérieurement par un utilisateur ou une utilisatrice disposant des autorisations d’administration pour l’environnement AEM as a Cloud Service. Si l’administrateur de l’organisation IMS ne l’a pas fait, un message l’informera que le rôle d’administrateur de l’organisation IMS doit lui être attribué.
 
 ### Installation des informations d’identification de service AEM sur un serveur non AEM {#install-the-aem-service-credentials-on-a-non-aem-server}
 
-L’application qui appelle AEM doit pouvoir accéder aux identifiants as a Cloud Service AEM, les traiter comme un secret.
+L’application qui appelle AEM doit pouvoir accéder aux informations d’identification d’AEM as a Cloud Service en les traitant comme un secret.
 
 ### Génération d’un jeton JWT et échange contre un jeton d’accès  {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
@@ -94,7 +94,7 @@ Il est possible de procéder au même échange dans n’importe quel langage cap
 Le jeton d’accès définit le moment de son expiration, généralement au bout de 24 heures. Le référentiel git contient un exemple de code pour gérer un jeton d’accès et l’actualiser avant son expiration.
 
 >[!NOTE]
->S’il existe plusieurs informations d’identification, veillez à référencer le fichier json approprié pour l’appel API à AEM qui sera appelé ultérieurement.
+>S’il existe plusieurs informations d’identification, veillez à indiquer le fichier json approprié pour l’appel API à AEM qui sera appelé ultérieurement.
 
 ### Appel de l’API AEM {#calling-the-aem-api}
 
@@ -106,70 +106,70 @@ curl -H "Authorization: Bearer <your_ims_access_token>" https://author-p123123-e
 
 ### Définissez les autorisations appropriées pour l’utilisateur du compte technique dans AEM {#set-the-appropriate-permissions-for-the-technical-account-user-in-aem}
 
-Tout d’abord, un nouveau profil de produit doit être créé dans Adobe Admin Console. Pour ce faire, procédez comme suit :
+Tout d’abord, un nouveau profil de produit doit être créé dans Adobe Admin Console. Pour ce faire, procédez comme suit :
 
-1. Accédez à Adobe Admin Console à l’adresse [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/)
-1. Appuyez sur la touche **Gérer** sous le lien **Produits et services** sur la gauche.
-1. Sélectionner **AEM as a Cloud Service**
-1. Appuyez sur la touche **Nouveau profil** button
+1. Accédez à Adobe Admin Console depuis la page [https://adminconsole.adobe.com/](https://adminconsole.adobe.com/)
+1. Cliquez sur le lien **Gérer** sous la colonne **Produits et services** sur la gauche.
+1. Sélectionnez **AEM as a Cloud Service**
+1. Appuyez sur le bouton **Nouveau profil**
 
    ![Nouveau profil](/help/implementing/developing/introduction/assets/s2s-newproductprofile.png)
 
-1. Nommez le profil et appuyez sur **Enregistrer**
+1. Donnez un nom au profil et appuyez sur **Enregistrer**
 
    ![Enregistrer le profil](/help/implementing/developing/introduction/assets/s2s-saveprofile.png)
 
 1. Sélectionnez le profil que vous venez de créer dans la liste des profils.
-1. Appuyez sur la touche **Ajouter un utilisateur** button
+1. Appuyez sur le bouton **Ajouter un utilisateur**
 
    ![Ajouter un utilisateur](/help/implementing/developing/introduction/assets/s2s-addusers.png)
 
 1. Ajoutez le compte technique que vous venez de créer (dans ce cas `84b2c3a2-d60a-40dc-84cb-e16b786c1673@techacct.adobe.com`) et appuyez sur **Enregistrer**
 
-   ![Ajout d’un compte technique](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
+   ![Ajouter un compte technique](/help/implementing/developing/introduction/assets/s2s-addtechaccount.png)
 
-1. Patientez 10 minutes pour que les modifications prennent effet et effectuez un appel API vers AEM avec un jeton d’accès généré à partir des nouvelles informations d’identification. En tant que commande cURL, elle serait représentée comme suit :
+1. Patientez 10 minutes pour que les modifications prennent effet et effectuez un appel API vers AEM avec un jeton d’accès généré à partir des nouvelles informations d’identification. En tant que commande cURL, il serait représenté comme suit :
 
    `curl -H "Authorization: Bearer <access_token>" https://author-pXXXXX-eXXXXX.adobeaemcloud.net/content/dam.json `
 
 
-Une fois l’appel API effectué, le profil de produit s’affiche en tant que groupe d’utilisateurs dans l’instance d’auteur as a Cloud Service AEM, avec le compte technique approprié en tant que membre de ce groupe.
+Une fois l’appel API effectué, le profil de produit s’affiche en tant que groupe d’utilisateurs et d’utilisatrices dans l’instance de création AEM as a Cloud Service, avec le compte technique approprié en tant que membre de ce groupe.
 
-Pour vérifier cela, vous devez :
+Pour ce faire, vous devez :
 
-1. Connexion à l’instance d’auteur
-1. Accédez à **Outils** - **Sécurité** et cliquez sur le bouton **Groupes** carte
-1. Localisez le nom du profil que vous avez créé dans la liste des groupes et cliquez dessus :
+1. Vous connecter à l’instance de création
+1. Accéder à **Outils** - **Sécurité** et cliquer sur la carte **Groupes**
+1. Localiser le nom du profil que vous avez créé dans la liste des groupes et cliquer dessus :
 
-   ![Profil du groupe](/help/implementing/developing/introduction/assets/s2s-groupprofile.png)
+   ![Profil de groupe](/help/implementing/developing/introduction/assets/s2s-groupprofile.png)
 
-1. Dans la fenêtre suivante, passez à la **Membres** et vérifiez si le compte technique y est correctement répertorié :
+1. Dans la fenêtre suivante, aller dans l’onglet **Membres** et vérifier si le compte technique y est correctement répertorié :
 
    ![Onglet Membres](/help/implementing/developing/introduction/assets/s2s-techaccountmembers.png)
 
 
-Vous pouvez également vérifier que le compte technique apparaît dans la liste des utilisateurs en procédant comme suit sur l’instance de création :
+Vous pouvez également vérifier que le compte technique apparaît dans la liste des utilisateurs et utilisatrices en procédant comme suit dans l’instance de création :
 
 1. Accédez à **Outils** - **Sécurité** - **Utilisateurs**
-1. Vérifiez que votre compte technique est la liste des utilisateurs et cliquez dessus.
-1. Cliquez sur le bouton **Groupes** pour vérifier que l’utilisateur fait partie du groupe correspondant à votre profil de produit. Cet utilisateur est également membre d’une poignée d’autres groupes, y compris Contributeurs :
+1. Vérifiez que votre compte technique est la liste des utilisateurs et utilisatrices puis cliquez dessus.
+1. Cliquez sur l’onglet **Groupes** pour vérifier que l’utilisateur ou l’utilisatrice fait partie du groupe correspondant à votre profil de produit. Cet utilisateur (ou cette utilisatrice) est également membre d’une poignée d’autres groupes, y compris Contributeurs :
 
    ![Appartenance à un groupe](/help/implementing/developing/introduction/assets/s2s-groupmembership.png)
 
 >[!NOTE]
 >
->Avant la mi-2023, avant qu’il ne soit possible de créer plusieurs informations d’identification, les clients n’étaient pas invités à créer un profil de produit dans la console d’administration des Adobes et le compte technique n’était donc pas associé à un groupe autre que &quot;Contributeurs&quot; dans l’instance as a Cloud Service AEM. Par souci de cohérence, il est recommandé, pour ce compte technique, de créer un profil de produit dans Adobe Admin Console comme décrit ci-dessus, puis d’ajouter le compte technique existant à ce groupe.
+>Avant la mi-2023 et qu’il ne soit possible de créer plusieurs informations d’identification, les clients et les clientes n’étaient pas invités à créer un profil de produit dans Adobe Admin Console et le compte technique n’était donc pas associé à un groupe autre que « Contributeurs » dans l’instance AEM as a Cloud Service. Par souci de cohérence, il est recommandé, pour ce compte technique, de créer un profil de produit dans Adobe Admin Console comme décrit ci-dessus, puis d’ajouter le compte technique existant à ce groupe.
 
-<u>**Définition des autorisations de groupe d’approbation**</u>
+<u>**Définir les autorisations de groupe appropriées**</u>
 
-Enfin, configurez le groupe avec les autorisations appropriées nécessaires pour appeler ou verrouiller correctement vos API. Pour ce faire, procédez comme suit :
+Configurez pour finir le groupe avec les autorisations appropriées nécessaires pour appeler ou verrouiller correctement vos API. Vous pouvez le faire en procédant comme suit :
 
-1. Connectez-vous à l’instance d’auteur appropriée et accédez à **Paramètres** - **Sécurité** - **Autorisations**
-1. Recherchez le nom du groupe correspondant au profil de produit dans le volet de gauche (dans ce cas, les API en lecture seule) et cliquez dessus :
+1. Connectez-vous à l’instance de création appropriée et accédez à **Paramètres** - **Sécurité** - **Autorisations**
+1. Recherchez le nom du groupe correspondant au profil de produit dans le volet de gauche (dans ce cas, API en lecture seule) et cliquez dessus :
 
    ![Rechercher un groupe](/help/implementing/developing/introduction/assets/s2s-searchforgroup.png)
 
-1. Cliquez sur le bouton Editer dans la fenêtre suivante :
+1. Cliquez sur le bouton Modifier dans la fenêtre suivante :
 
    ![Modifier les autorisations](/help/implementing/developing/introduction/assets/s2s-editpermissions.png) 
 
@@ -179,7 +179,7 @@ Enfin, configurez le groupe avec les autorisations appropriées nécessaires pou
 
 >[!INFO]
 >
->Pour en savoir plus sur Adobe Identity Management System (IMS) et les utilisateurs et groupes d’AEM, consultez la section [documentation](/help/security/ims-support.md).
+>Pour en savoir plus sur le système Adobe Identity Management (IMS) et les utilisateurs/utilisatrices et groupes d’AEM, consultez la [documentation](/help/security/ims-support.md).
 
 ## Flux de développement {#developer-flow}
 
@@ -202,10 +202,10 @@ Les développeurs peuvent également effectuer des appels d’API vers un projet
 
 ### Génération du jeton d’accès {#generating-the-access-token}
 
-1. Accédez au **Jeton local** under **Intégrations**
+1. Accédez au **Jeton local** sous **Intégrations**.
 1. Cliquez sur le bouton **Get Local Development Token** (Obtenir le jeton de développement local) de la Developer Console pour générer un jeton d’accès.
 
-### Appel de l’application AEM avec un jeton d’accès {#call-the-aem-application-with-an-access-token}
+### Appelez ensuite l’application AEM à l’aide du jeton d’accès. {#call-the-aem-application-with-an-access-token}
 
 Effectuez les appels d’API de serveur à serveur appropriés auprès de l’application non AEM vers un environnement AEM as a Cloud Service, y compris le jeton d’accès dans l’en-tête. Pour l’en-tête « Authorization », utilisez la valeur `"Bearer <access_token>"`.
 
@@ -213,41 +213,41 @@ Effectuez les appels d’API de serveur à serveur appropriés auprès de l’ap
 
 Par défaut, les informations d’identification AEM as a Cloud Service expirent au bout d’un an. Pour assurer la continuité du service, les développeurs ont la possibilité d’actualiser les informations d’identification, en prolongeant leur disponibilité pendant un an supplémentaire.
 
-Pour ce faire, vous pouvez :
+Pour ce faire, vous pouvez :
 
-* Utilisez la variable **Ajout d’un certificat** sous **Intégrations** - **Comptes techniques** dans Developer Console, comme illustré ci-dessous
+* Utiliser le bouton **Ajouter un certificat** sous **Intégrations** - **Comptes techniques** dans la Developer Console, tel qu’indiqué ci-dessous.
 
    ![Actualisation des informations d’identification](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* Après avoir appuyé sur le bouton, un ensemble d’informations d’identification contenant un nouveau certificat est généré. Installez les nouvelles informations d’identification sur votre serveur hors AEM et assurez-vous que la connectivité est correcte, sans supprimer les anciennes informations d’identification. 
+* Une fois que vous avez appuyé sur le bouton, un ensemble d’informations d’identification avec un nouveau certificat est généré. Installez les nouvelles informations d’identification sur votre serveur hors AEM et assurez-vous que la connectivité est correcte, sans supprimer les anciennes informations d’identification.
 * Assurez-vous que les nouvelles informations d’identification sont utilisées à la place des anciennes lors de la génération du jeton d’accès.
-* Vous pouvez éventuellement révoquer (puis supprimer) le certificat précédent afin qu’il ne puisse plus être utilisé pour s’authentifier avec AEM as a Cloud Service.
+* Vous pouvez éventuellement révoquer (puis supprimer) le certificat précédent afin qu’il ne puisse plus être utilisé pour s’authentifier avec AEM as a Cloud Service.
 
 ## Révocation des informations d’identification {#credentials-revocation}
 
-Si la clé privée est compromise, vous devez créer des informations d’identification avec un nouveau certificat et une nouvelle clé privée. Une fois que votre application a utilisé les nouvelles informations d’identification pour générer des jetons d’accès, vous pouvez révoquer et supprimer les anciens certificats.
+Si la clé privée est compromise, vous devez créer des informations d’identification avec un nouveau certificat et une nouvelle clé privée. Une fois que votre application se met à utiliser les nouvelles informations d’identification pour générer des jetons d’accès, vous pouvez révoquer et supprimer les anciens certificats.
 
 Pour ce faire, procédez comme suit :
 
-1. Tout d’abord, ajoutez la nouvelle clé. Cela génère des informations d’identification avec une nouvelle clé privée et un nouveau certificat. La nouvelle clé privée sera marquée comme **current** et sera donc utilisé pour toutes les nouvelles informations d’identification de ce compte technique à venir. Notez que les informations d’identification associées aux anciennes clés privées seront toujours valides jusqu’à la révocation. Pour ce faire, appuyez sur les trois points (**...**) sous votre compte technique actuel et appuyez sur **Ajout d’une clé privée**:
+1. Tout d’abord, ajoutez la nouvelle clé. Cela génère des informations d’identification avec une nouvelle clé privée et un nouveau certificat. La nouvelle clé privée sera marquée dans l’interface utilisateur comme **actuelle** et sera dorénavant utilisée pour toutes les nouvelles informations d’identification de ce compte technique. Notez que les informations d’identification associées aux anciennes clés privées restent valides jusqu’à leur révocation. Pour ce faire, appuyez sur les trois points (**...**) sous votre compte technique actuel et appuyez sur **Ajouter une clé privée** :
 
-   ![Ajout d’une clé privée](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
+   ![Ajouter une clé privée](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
-1. Press **Ajouter** à l’invite suivante :
+1. Appuyez sur **Ajouter** à l’invite suivante :
 
    ![Confirmer l’ajout d’une nouvelle clé privée](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   Un nouvel onglet de navigation avec les nouveaux détails s’ouvre et l’interface utilisateur est mise à jour afin d’afficher les deux clés privées, la nouvelle clé étant marquée comme **current**:
+   Un nouvel onglet de navigation avec les nouvelles informations d’identification s’ouvre et l’interface utilisateur est mise à jour afin d’afficher les deux clés privées, la nouvelle clé étant marquée comme **actuelle** :
 
    ![Clés privées dans l’interface utilisateur](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 
-1. Installez les nouvelles informations d’identification sur le serveur non AEM et assurez-vous que la connectivité fonctionne comme prévu. Voir [Section Flux serveur à serveur](#the-server-to-server-flow) pour plus d’informations sur la procédure à suivre
-1. Révoquez l’ancien certificat. Pour ce faire, sélectionnez les trois points (**...**) à droite du certificat et en appuyant sur **Révoquer**:
+1. Installez les nouvelles informations d’identification sur le serveur non AEM et assurez-vous que la connectivité fonctionne comme prévu. Consultez la [section Flux serveur à serveur](#the-server-to-server-flow) pour plus d’informations sur la procédure à suivre.
+1. Révoquez l’ancien certificat. Pour ce faire, sélectionnez les trois points (**...**) à droite du certificat et appuyez sur **Révoquer** :
 
    ![Révoquer le certificat](/help/implementing/developing/introduction/assets/s2s-revokecert.png)
 
-   Ensuite, confirmez la révocation dans l’invite suivante en appuyant sur la touche **Révoquer** button :
+   Ensuite, confirmez la révocation dans l’invite suivante en appuyant sur le bouton **Révoquer** :
 
-   ![Révoquer la confirmation du certificat](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
+   ![Confirmation de révocation du certificat](/help/implementing/developing/introduction/assets/s2s-revokecertificateconfirmation.png)
 
-1. Enfin, supprimez le certificat compromis.
+1. Pour finir, supprimez le certificat compromis.

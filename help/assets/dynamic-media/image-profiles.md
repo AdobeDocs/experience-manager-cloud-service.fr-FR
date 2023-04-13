@@ -7,8 +7,8 @@ role: User
 exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: fa29504ba4abf68131d96a5a8ecbd62b7a9299f9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3536'
+ht-degree: 89%
 
 ---
 
@@ -22,7 +22,7 @@ Lorsque vous chargez des images, vous pouvez les recadrer automatiquement en app
 
 ## Option Accentuation {#unsharp-mask}
 
-Lors de la création d’un profil d’image, vous pouvez utiliser l’option **[!UICONTROL Masque flou]** pour affiner un effet de filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre Accentuation d’Adobe Photoshop.
+Lors de la création d’un profil d’image, vous pouvez utiliser l’option **[!UICONTROL Masque flou]** pour affiner un effet de filtre d’accentuation sur l’image finale à résolution réduite. Vous pouvez contrôler l’intensité de l’effet, le rayon de l’effet (mesuré en pixels) et un seuil de contraste qui est ignoré. Cet effet utilise les mêmes options que le filtre « Accentuation » d’Adobe Photoshop.
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 1. Accédez à un *dossier* (et non à une ressource) auquel vous souhaitez appliquer un profil d’image.
 1. Selon l’affichage dossier dans lequel vous êtes, procédez comme suit :
    * En mode Carte, placez le pointeur sur le dossier, puis cochez la case pour le sélectionner.
-   * En mode Colonnes ou Liste, cochez la case située à gauche du nom du dossier.
+   * Dans la vue Colonnes ou Liste, cochez la case située à gauche du nom du dossier.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Traitement Dynamic Media]**.
 1. Sous **[!UICONTROL Profil d’image]**, dans la liste déroulante **[!UICONTROL Nom du profil]**, sélectionnez le profil à appliquer.

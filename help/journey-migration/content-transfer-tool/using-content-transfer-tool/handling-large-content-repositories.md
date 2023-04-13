@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
 source-wordcount: '1846'
-ht-degree: 91%
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,7 @@ Consultez la section ci-dessous pour comprendre les points importants à prendre
 
 * Le nettoyage de la mémoire d’entrepôt de données a été exécuté au cours des 7 jours précédents sur la source. Pour plus d’informations, voir [Récupération de l’espace mémoire de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
 
-### Considérations supplémentaires si l’instance d’AEM source est configurée pour utiliser une banque de données Amazon S3 ou Azure Blob Storage. {#additional-considerations-amazons3-azure}
+### Considérations supplémentaires si l’instance d’AEM source est configurée pour utiliser un magasin de données Amazon S3 ou Stockage Blob Azure. {#additional-considerations-amazons3-azure}
 
 * Comme le transfert de données en dehors de Amazon S3 et du stockage Blob Azure entraîne un coût, le coût du transfert sera relatif à la quantité totale de données dans votre conteneur de stockage existant (qu’il soit référencé dans AEM ou non). Pour plus d’informations, voir [Amazon S3](https://aws.amazon.com/s3/pricing/) et [Stockage Blob Azure](https://azure.microsoft.com/fr-fr/pricing/details/bandwidth/).
 
@@ -101,9 +101,8 @@ En résumé, vous voudrez probablement télécharger le binaire Linux x86-64 à 
 >La version la plus récente de CTT doit être utilisée.
 
 La prise en charge d’AzCopy pour Amazon S3, le stockage Blob Azure et File Data Store est incluse dans la dernière version de CTT.
-Vous pouvez télécharger la dernière version du CTT à partir du portail [Distribution logicielle.
-](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html)
-Notez que seules les versions 2.0.0 et ultérieures seront prises en charge et il est conseillé d’utiliser la version la plus récente.
+Vous pouvez télécharger la dernière version du CTT à partir du portail [Distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
+Notez que seules les versions 2.0.0 et ultérieures seront prises en charge et il est conseillé d’utiliser la version la plus récente.
 
 ### 3. Configuration d’un fichier azcopy.config. {#configure-azcopy-config-file}
 

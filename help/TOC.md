@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: af3b5950a36bbd4a8d1e0de9591d31c50fa774c8
 workflow-type: tm+mt
 source-wordcount: '4023'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
@@ -513,22 +513,22 @@ ht-degree: 93%
       + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Questions fréquemment posées](/help/forms/faq.md)
       + [Problèmes connus](/help/forms/known-issues.md)
-   + Configuration et migration {#setup-configure-migrate}
+   + Configurer et migrer {#setup-configure-migrate}
       + [Intégration d’un environnement Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configuration d’un environnement de développement local](/help/forms/setup-local-development-environment.md)
       + [Configurer le connecteur de stockage unifié](/help/forms/configure-unified-storage-connector.md)
-      + [Migration depuis [!DNL AEM 6.5 Forms] ou antérieur à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
+      + [Migrer de [!DNL AEM 6.5 Forms] ou une version antérieure à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
       + [Importer, exporter et organiser des formulaires adaptatifs, des formulaires PDF et d’autres ressources](/help/forms/import-export-forms-templates.md)
-   + Intégration {#integrate}
+   + Intégrer {#integrate}
       + Services {#services}
-         + [Intégration d’AEM Forms as a Cloud Service à Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
-         + [Intégration d’AEM Forms as a Cloud Service à DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
-         + [Intégration d’AEM Forms as a Cloud Service à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
-         + [Intégration d’un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
-         + [Incorporation d’un Forms adaptatif dans une page AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
+         + [Intégrer AEM Forms as a Cloud Service à Adobe Sign](/help/forms/adobe-sign-integration-adaptive-forms.md)
+         + [Intégrer AEM Forms as a Cloud Service à DocuSign](/help/forms/integrate-docusign-adaptive-forms.md)
+         + [Intégrer AEM Forms as a Cloud Service à Adobe Analytics](/help/forms/integrate-aem-forms-with-adobe-analytics.md)
+         + [Intégrer un formulaire adaptatif à Microsoft Power Automate](/help/forms/forms-microsoft-power-automate-integration.md)
+         + [Incorporer un formulaire adaptatif dans une page AEM Sites](/help/forms/embed-adaptive-form-aem-sites.md)
       + Modèle de données de formulaire {#use-form-data-model}
-         + [Connexion de vos sources de données à Cloud Service](/help/forms/data-integration.md)
+         + [Connecter vos sources de données à Cloud Service](/help/forms/data-integration.md)
          + [Configuration des sources de données](/help/forms/configure-data-sources.md)
          + [Configuration d’ [!DNL Microsoft Dynamics] OData](/help/forms/ms-dynamics-odata-configuration.md)
          + [Configuration du stockage [!DNL Azure] ](/help/forms/configure-azure-storage.md)
@@ -537,31 +537,31 @@ ht-degree: 93%
          + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/using-form-data-model.md)
    + Formulaires adaptatifs {#adaptive-forms-authoring}
-      + Création d’un Forms adaptatif - Composants principaux {#authoring-adaptive-forms-core-components}
+      + Création d’un formulaire adaptatif - Composants principaux {#authoring-adaptive-forms-core-components}
          + Création d’un formulaire adaptatif {#create-an-adaptive-form-on-forms-cs}
             + [Création d’un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md)
             + [Création de thèmes pour un formulaire adaptatif - Composants principaux](/help/forms/using-themes-in-core-components.md)
-            + [Génération d’un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
+            + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
             + [Document de travail du sommet](/help/forms/summit-2023-workbook.md)
-      + Création d’un Forms adaptatif - Composants de base {#authoring-adaptive-forms-foundation-components}
-         + Convertir vos PDF forms en Forms adaptatif {#afcs}
+      + Création d’un formulaire adaptatif - Composants de base {#authoring-adaptive-forms-foundation-components}
+         + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
             + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr)
             + [Conversion d’un formulaire PDF existant en formulaire adaptatif](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/convert-existing-forms-to-adaptive-forms.html?lang=fr)
             + [Vérification et correction des formulaires convertis](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/review-correct-ui-edited.html?lang=fr#welcome-to-review-and-correct-editor)
-         + Création d’un formulaire adaptatif {#create-an-adaptive-form-on-forms-cs}
+         + Créer un formulaire adaptatif {#create-an-adaptive-form-on-forms-cs}
             + [Présentation de la création de formulaires adaptatifs](/help/forms/introduction-forms-authoring.md)
-            + [Création d’un formulaire adaptatif](/help/forms/creating-adaptive-form.md)
+            + [Créer un formulaire adaptatif](/help/forms/creating-adaptive-form.md)
             + [Thèmes de référence, modèles et modèles de données](/help/forms/reference-themes-templates-data-models.md)
             + [Création d’un modèle](/help/forms/template-editor.md)
             + [Création d’un thème](/help/forms/themes.md)
-            + [Création d’un schéma JSON pour un formulaire adaptatif](/help/forms/adaptive-form-json-schema-form-model.md)
+            + [Créer un schéma JSON pour un formulaire adaptatif](/help/forms/adaptive-form-json-schema-form-model.md)
             + [Amélioration des performances des formulaires volumineux avec le chargement différé](/help/forms/lazy-loading-adaptive-forms.md)
          + Ajout de composants à un formulaire adaptatif {#add-components-to-an-adaptive-form}
             + [Utilisation de CAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms.md)
             + [Utiliser des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
             + [Appliquer la signature tactile](/help/forms/signing-forms-using-scribble.md)
             + [Ajouter un tableau à un formulaire adaptatif](/help/forms/adaptive-forms-tables.md)
-            + [Ajout de la prise en charge des notes de bas de page à un formulaire adaptatif](/help/forms/footnotes-richtextsupport.md)
+            + [Ajouter la prise en charge des notes de bas de page à un formulaire adaptatif](/help/forms/footnotes-richtextsupport.md)
          + Configuration de la disposition et application d’un style à un formulaire adaptatif {#configure-layout-of-an-adaptive-form}
             + [Définition de la disposition d’un formulaire adaptatif](/help/forms/layout-capabilities-adaptive-forms.md)
             + [Utilisation du mode Mise en page pour redimensionner les composants](/help/forms/resize-using-layout-mode.md)
@@ -577,7 +577,7 @@ ht-degree: 93%
             + [Configuration de la soumission asynchrone pour un formulaire adaptatif](/help/forms/asynchronous-submissions-adaptive-forms.md)
             + [Création d’une action Envoyer personnalisée](/help/forms/custom-submit-action-form.md)
          + [Préremplissage des champs de formulaires adaptatifs](/help/forms/prepopulate-adaptive-form-fields.md)
-         + [Generate Document of Record (Générer un document d’enregistrement)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
+         + [Générer un document d’enregistrement](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
          + [Ajouter la prise en charge de nouveaux paramètres régionaux à un formulaire adaptatif](/help/forms/supporting-new-language-localization.md)
          + Ajout ou amélioration des métadonnées {#manage-metadata}
             + [Ajout, suppression ou modification des métadonnées d’un formulaire adaptatif](/help/forms/manage-form-metadata.md)
@@ -586,22 +586,22 @@ ht-degree: 93%
             + [Création d’un formulaire adaptatif accessible](/help/forms/creating-accessible-adaptive-forms.md)
          + [Configurer le Portail Formulaires](/help/forms/configure-forms-portal.md)
          + [Créer et gérer des révisions](/help/forms/create-reviews-forms.md)
-   + Processus basés sur Forms {#create-form-centric-workflows}
+   + Workflows basés sur Forms {#create-form-centric-workflows}
       + [Utilisation d’étapes basées sur l’utilisation de Forms dans une référence des étapes du workflow](/help/forms/aem-forms-workflow-step-reference.md)
       + [Utilisation de variables dans un processus orienté Forms](/help/forms/variable-in-aem-workflows.md)
       + [Utilisation de l’option Absence du bureau](/help/forms/configure-out-of-office-settings.md)
    + API Communications {#using-communications}
-      + [Présentation des API de communication](/help/forms/aem-forms-cloud-service-communications-introduction.md)
+      + [Introduction aux API Communications](/help/forms/aem-forms-cloud-service-communications-introduction.md)
       + [API Communications – Traitement synchrone](/help/forms/aem-forms-cloud-service-communications.md)
       + [API Communications – Traitement par lots](/help/forms/aem-forms-cloud-service-communications-batch-processing.md)
-      + [Installation et configuration de Forms Designer](/help/forms/installing-configuring-designer.md)
-      + [Utilisation de Forms Designer pour créer des modèles](/help/forms/use-forms-designer.md)
+      + [Installer et configurer Forms Designer](/help/forms/installing-configuring-designer.md)
+      + [Utiliser Forms Designer pour créer des modèles](/help/forms/use-forms-designer.md)
       + [Utilisation des polices personnalisées dans les documents PDF](/help/forms/use-custom-fonts.md)
       + [Problèmes connus, bonnes pratiques et questions fréquemment posées](/help/forms/communications-known-issues-limitations.md)
    + Référence de l’API du développeur {#aem-forms-developer-api-reference}
-      + [Référence de l’API des communications du Cloud Service AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
-      + [Référence de l’API JavaScript du Cloud Service AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [Référence de l’API Java Cloud Service AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [Référence de l’API Communications du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
+      + [Référence de l’API JavaScript du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
+      + [Référence de l’API Java du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
    + Résolution des problèmes {#troubleshooting-aem-forms-cloud-service}
       + [Installation et configuration](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Mise en cache du Dispatcher et du CDN](/help/forms/troubleshooting-caching-performance.md)
@@ -706,8 +706,8 @@ ht-degree: 93%
       + [Gérer les points d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
       + [IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
       + [Requêtes GraphQL persistantes](/help/headless/graphql-api/persisted-queries.md)
-      + [Optimisation des requêtes GraphQL](/help/headless/graphql-api/graphql-optimization.md)
-      + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
+      + [Optimisation des requêtes GraphQL.](/help/headless/graphql-api/graphql-optimization.md)
+      + [Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.](/help/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Exemples de requêtes GraphQL](/help/headless/graphql-api/sample-queries.md)
    + [API REST de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/admin/assets-api-content-fragments.html?lang=fr)
    + Sécurité {#security}
@@ -787,7 +787,7 @@ ht-degree: 93%
          + [Tests fonctionnels](/help/implementing/cloud-manager/functional-testing.md)
          + [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
          + [Tests d’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
-      + [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md)
+      + [Accès aux journaux et gestion des journaux](/help/implementing/cloud-manager/manage-logs.md)
       + [Création de rapports de contrat SLA](/help/implementing/cloud-manager/sla-reporting.md)
       + [New Relic One](/help/implementing/cloud-manager/user-access-new-relic.md)
       + [Notifications](/help/implementing/cloud-manager/notifications.md)
@@ -821,7 +821,7 @@ ht-degree: 93%
       + [Fondements techniques d’AEM](/help/implementing/developing/introduction/aem-technologies.md)
       + [Documents de référence sur les API](/help/implementing/developing/reference-materials.md)
       + [Génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md)
-      + [Génération de jetons d’accès pour les API côté serveur (héritées)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
+      + [Générer des jetons d’accès pour les API côté serveur (hérité)](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis-legacy.md)
       + [Création rapide et personnalisation front-end d’un site](/help/implementing/developing/introduction/quick-site-creation.md)
       + [Développer des sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
       + [Personnalisation des modèles et thèmes de site](/help/implementing/developing/introduction/customizing-site-templates-themes.md)
