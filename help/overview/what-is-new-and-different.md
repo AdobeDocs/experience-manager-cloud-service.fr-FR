@@ -3,9 +3,9 @@ title: Nouveautés et différences – Adobe Experience Manager as a Cloud Servi
 description: Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
 source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1903'
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Cela permet une mise à l’échelle automatique pour divers schémas d’utilis
 
 ## Mises à jour d’AEM {#aem-updates}
 
-AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour garantir que vos projets utilisent la version d’AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la dernière version AEM sans interruption de service pour les utilisateurs.
+AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour garantir que vos projets utilisent la version d’AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la version d’AEM la plus récente sans aucune interruption de service pour les utilisateurs et utilisatrices.
 
 >[!NOTE]
 >
