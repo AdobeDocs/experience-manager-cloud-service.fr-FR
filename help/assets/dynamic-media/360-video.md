@@ -6,9 +6,9 @@ feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '989'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -30,8 +30,8 @@ Voir également [Gestion des paramètres prédéfinis de visionneuse](/help/asse
 
 Sélectionnez [Station spatiale 360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS) pour ouvrir une fenêtre de navigateur et visionner une vidéo à 360°. Pendant la lecture vidéo, faites glisser le pointeur vers un nouvel emplacement pour modifier l’angle de vue.
 
-![Image vidéo de la vidéo Station spatiale 360](assets/6_5_360videoiss_simplified.png)
-*Image vidéo de la station spatiale 360*
+![Image vidéo de la vidéo Station spatiale 360](assets/6_5_360videoiss_simplified.png)
+*Image vidéo de la station spatiale 360*
 
 ## Vidéo 360/VR et Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
@@ -43,8 +43,8 @@ Voir [Modification de la vidéo 360/VR](https://helpx.adobe.com/fr/premiere-pro
 
 Les ressources vidéo 360 chargées dans [!DNL Experience Manager] sont considérées comme des fichiers **multimédias** sur une page de ressource, tout comme une ressource vidéo normale.
 
-![Ressource vidéo 360 chargée affichée en mode Carte](assets/6_5_360video-selecttopreview.png)
-*Ressource vidéo 360 chargée affichée en mode Carte. La ressource est considérée comme multimédia.*
+![Ressource vidéo 360 chargée et affichée en mode Carte](assets/6_5_360video-selecttopreview.png)
+*Ressource vidéo 360 chargée et affichée en mode Carte. La ressource est considérée comme multimédia.*
 
 **Chargement de ressources pour une utilisation avec la visionneuse de vidéos 360 :**
 
@@ -53,7 +53,7 @@ Les ressources vidéo 360 chargées dans [!DNL Experience Manager] sont consid�
 
    Les exigences du rendu de contenu vidéo 360 sont plus élevées pour la résolution vidéo source et pour la résolution des rendus codée que pour le contenu vidéo standard.
 
-   Vous pouvez utiliser le profil de vidéo adaptative prêt à l’emploi qui est déjà fourni avec Dynamic Media. Toutefois, la qualité de la vidéo 360 sera sensiblement inférieure à celle que vous obtiendriez pour une vidéo standard encodée avec les mêmes paramètres et rendue avec une visionneuse vidéo standard. Par conséquent, si une vidéo 360 de qualité supérieure est requise, procédez comme suit :
+   Vous pouvez utiliser le profil de vidéo adaptative prêt à l’emploi qui est déjà fourni avec Dynamic Media. Toutefois, cela aboutira à une qualité de la vidéo 360 visiblement inférieure à celle que vous obtiendriez pour une vidéo standard encodée, avec les mêmes paramètres rendus avec une visionneuse vidéo standard. Par conséquent, si une vidéo 360 de qualité supérieure est requise, procédez comme suit :
 
    * Idéalement, votre contenu vidéo 360 d’origine a l’une des résolutions suivantes :
 
@@ -107,7 +107,7 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/
 
 1. Dans **[!UICONTROL Assets]**, accédez à une vidéo 360 que vous avez créée. Pour l’ouvrir en mode prévisualisation, sélectionnez la ressource vidéo 360.
 
-   ![Capture d’écran d’une ressource vidéo 360 téléchargée, comme dans le mode Carte du Experience Manager.](assets/6_5_360video-selecttopreview-1.png)
+   ![Capture d’écran d’une ressource vidéo 360 chargée et affichée en mode Carte d’Experience Manager.](assets/6_5_360video-selecttopreview-1.png)
 
    Pour prévisualiser la vidéo, sélectionnez la ressource vidéo 360.
 
@@ -120,13 +120,13 @@ Reportez-vous à la section [Ajout de ressources Dynamic Media aux pages](/help/
    * Pour modifier l’angle d’affichage de la scène statique, faites glisser le pointeur sur la vidéo.
    * Pour commencer la lecture, sélectionnez le bouton **[!UICONTROL Lecture]** de la vidéo. Pendant la lecture de la vidéo, faites glisser le pointeur sur la vidéo pour modifier l’angle de visionnage.
 
-   ![Capture d’écran d’un utilisateur sélectionnant la visionneuse Video360_Social pour prévisualiser une vidéo à 360 degrés.](assets/6_5_360video-preview-video360-social.png)*Capture d&#39;écran de 360 vidéos.*
+   ![Capture d’écran d’une personne sélectionnant la visionneuse Video360_Social pour prévisualiser une vidéo à 360 degrés.](assets/6_5_360video-preview-video360-social.png)*Capture d’écran d’une vidéo 360.*
 
    * Dans la liste des visionneuses, sélectionnez **[!UICONTROL Video360VR]**.
 
       Une vidéo de réalité virtuelle (VR) est un contenu vidéo immersif accessible grâce à un casque de réalité virtuelle. À l’instar des vidéos ordinaires, vous créez une vidéo de réalité virtuelle au début, lorsqu’elle est en cours d’enregistrement ou capturée à l’aide de caméras à 360°.
-   ![Capture d’écran d’un utilisateur pointant sa souris sur l’option Visionneuse Video360VR.](assets/6_5_360video-preview-video360vr.png)
-   *Capture d’écran d’une vidéo 360 VR*
+   ![Capture d’écran d’une personne pointant sa souris sur l’option Visionneuse Video360VR.](assets/6_5_360video-preview-video360vr.png)
+   *Capture d’écran d’une vidéo 360 VR.*
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Fermer]**.
 
