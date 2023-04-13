@@ -3,9 +3,9 @@ title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: 6d7bef4a2d11adc54e148146d79aa77c9de1d7e7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2064'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -37,12 +37,12 @@ Vous pouvez utiliser des fragments d’expérience :
 Sans les fragments d’expérience, il doit copier et coller ce fragment. La création et la gestion de ces expériences de copier/coller sont chronophages et sources d’erreurs pour l’utilisateur.
 Les fragments d’expérience rendent inutiles les opérations de copier/coller.
 * Pour gérer le scénario d’utilisation CMS sans interface.
-Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à l’utilisateur final.
+Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, mais pas pour diffuser du contenu au client. Un système/point de contact tiers utilise cette expérience, puis la diffuse à l’utilisateur final ou l’utilisatrice finale.
 
 >[!NOTE]
 >
 >Les **[fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md)** et les **fragments d’expérience** représentent deux fonctions distinctes d’AEM :
->* **Fragments de contenu** sont du contenu éditorial, avec définition et structure, mais sans conception visuelle ni mise en page supplémentaires. Ils peuvent être utilisés pour accéder à des données structurées, notamment du texte, des nombres et des dates.
+>* Les **fragments de contenu** sont des contenus éditoriaux, avec définition et structure, mais sans conception visuelle et/ou mise en page supplémentaires. Ils permettent d’accéder aux données structurées telles que les textes, les nombres et les dates, entre autres.
 >* Les **fragments d’expérience** désignent un contenu parfaitement mis en page : un fragment de page web.
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
@@ -196,7 +196,7 @@ Pour créer un fragment d’expérience :
 
 1. Cliquez sur **Créer**.
 
-   Un message s’affiche. Sélectionner :
+   Un message s’affiche. Sélectionnez :
 
    * **Terminé** pour revenir à la console
    * **Ouvrir** pour ouvrir l’éditeur de fragments
