@@ -4,9 +4,9 @@ description: Mises à jour de la version d’AEM
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
 source-git-commit: c3e1559923699d300d78a71195bd5658c3323331
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '399'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 94%
 
 ## Présentation {#introduction}
 
-AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour garantir que vos projets utilisent la version d’AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la dernière version AEM sans interruption de service pour les utilisateurs.
+AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour garantir que vos projets utilisent la version d’AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la version d’AEM la plus récente sans aucune interruption de service pour les utilisateurs et utilisatrices.
 
 >[!NOTE]
 >
