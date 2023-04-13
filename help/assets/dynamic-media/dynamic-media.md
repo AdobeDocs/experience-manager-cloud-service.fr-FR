@@ -5,7 +5,7 @@ contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes�
 * [Vidéo](video.md)
 * [Diffusion de ressources Dynamic Media](delivering-dynamic-media-assets.md)
 * [Gestion des ressources](managing-assets.md)
-* [Utilisation des aperçus rapides pour créer des fenêtres contextuelles personnalisées Windows](custom-pop-ups.md)
+* [Utilisation des aperçus rapides pour créer des fenêtres contextuelles personnalisées](custom-pop-ups.md)
 
 Voir également [Configuration de Dynamic Media](administering-dynamic-media.md).
 
