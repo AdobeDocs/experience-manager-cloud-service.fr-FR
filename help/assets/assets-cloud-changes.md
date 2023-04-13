@@ -5,7 +5,7 @@ feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
 source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1004'
 ht-degree: 100%
 
@@ -54,7 +54,7 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | [Détection des doublons de ressources ](/help/assets/manage-digital-assets.md#detect-duplicate-assets) | Fonctionne différemment. | Renseignez-vous sur [son fonctionnement dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/duplicate-detection.html?lang=fr). |
 | [Pour les rendus FPO (avec positionnement uniquement)](/help/assets/configure-fpo-renditions.md) | Fonctionne différemment. | Les profils de traitement utilisent les microservices de ressources pour générer des rendus FPO. Dans Experience Manager 6.5, une solution tierce telle qu’[!DNL ImageMagick] était disponible pour générer les rendus. |
 | Écriture différée des métadonnées | Fonctionne différemment. | Désactivé par défaut. Activez le lanceur de processus correspondant si nécessaire. L’écriture différée est gérée par les microservices de ressources. |
-| Traitement des ressources chargées à l’aide du gestionnaire de modules | Nécessite une intervention manuelle. | Retraitez manuellement les ressources à l’aide de l’action **[!UICONTROL Retraiter la ressource]**. |
+| Traitement des ressources chargées à l’aide du gestionnaire de packages | Nécessite une intervention manuelle. | Retraitez manuellement les ressources à l’aide de l’action **[!UICONTROL Retraiter la ressource]**. |
 | Détection du type MIME | Pas de prise en charge. | Si vous chargez une ressource numérique sans extension ou avec une extension incorrecte, elle peut ne pas être traitée comme vous le souhaitez. Les utilisateurs peuvent toujours stocker les fichiers binaires sans extension dans le module DAM. Voir la section [Détection de type MIME dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/detect-asset-mime-type-with-tika.html?lang=fr). |
 | Génération de sous-ressources pour des ressources composites | Pas de prise en charge. | Les cas d’utilisation dépendants tels que les annotations peuvent ne pas être remplis. Voir la section [Création de sous-ressources dans [!DNL Experience Manager] 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/managing-linked-subassets.html?lang=fr#generate-subassets). L’aperçu PDF de certains types de fichiers est disponible à partir de la [version 2021.7.0](/help/release-notes/release-notes-cloud/release-notes-current.md). |
 | Modifier les images | Non pris en charge. | La modification de ressources n’est pas prise en charge dans Experience Manager as a Cloud Service. Voir [comment cela fonctionnait dans Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-assets.html?lang=fr#editing-images). |
