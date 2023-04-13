@@ -1,19 +1,15 @@
 ---
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour réaliser des itérations de développement rapides sur un environnement cloud.
-source-git-commit: 95787669581c906a9cdc35a0ac450adf17b0b402
+source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
 workflow-type: tm+mt
-source-wordcount: '3314'
+source-wordcount: '3304'
 ht-degree: 63%
 
 ---
 
 
 # Environnements de développement rapide {#rapid-development-environments}
-
->[!AVAILABILITY]
->
->Le déploiement de cette fonctionnalité est prévu pour les clients.
 
 Afin de déployer les modifications, les environnements de développement cloud actuels nécessitent l’utilisation d’un processus qui utilise des règles de sécurité et de qualité du code, appelé pipeline CI/CD. Dans les cas où des modifications rapides et itératives sont nécessaires, Adobe a introduit des environnements de développement rapide (RDE).
 
