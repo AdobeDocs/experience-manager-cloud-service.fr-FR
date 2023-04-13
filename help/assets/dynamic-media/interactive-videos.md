@@ -6,9 +6,9 @@ feature: Interactive Videos
 role: User
 exl-id: e4859223-91de-47a1-a789-c2a9447e5f71
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5966'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -68,9 +68,9 @@ Au terme du tutoriel dans la dernière section Exemple, [votre page web de démo
 Étapes d’ajout de la vidéo interactive :
 
 1. **(Facultatif) Identifier des variables d’aperçu rapide** : commencez par identifier les variables dynamiques utilisées par votre mise en œuvre existante de l’aperçu rapide. Vous utilisez des variables pour mapper des vignettes de produit à l’aperçu rapide du produit correspondant lorsque vous créez votre vidéo interactive. Consulter [(Facultatif) Identification des variables d’aperçu rapide](#optional-identifying-quickview-variables).
-   **Cette étape n’est nécessaire que si toutes les conditions suivantes sont vraies :**
-   * Vous souhaitez ajouter de l’interactivité à votre vidéo en déclenchant des aperçus rapides.
-   * Votre mise en œuvre d’Experience Manager *n’utilise pas* de framework d’intégration de commerce électronique pour extraire des données de produit dans Experience Manager à partir d’une solution de commerce électronique, comme IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
+   **Cette étape n’est nécessaire que si les conditions ci-dessous se vérifient :**
+   * Vous souhaitez améliorer l’interactivité de votre vidéo en déclenchant des aperçus rapides.
+   * Votre mise en œuvre d’Experience Manager *n’utilise pas* de framework d’intégration d’e-commerce pour extraire des données de produit dans Experience Manager à partir d’une solution d&#39;e-commerce, comme IBM® WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
 
 1. **(Facultatif) Créer un paramètre prédéfini de visionneuse de vidéos interactives** : personnalisez l’aspect et le comportement des différents composants qui constituent la visionneuse, comme la barre vidéo et les miniatures interactives.
 Vous n’avez pas besoin de créer votre propre paramètre prédéfini de visionneuse de vidéos interactives si vous envisagez plutôt d’utiliser les paramètres de visionneuse de vidéos interactives prêts à l’emploi `Shoppable_Video_Light` ou `Shoppable_Video_Dark`.
@@ -441,7 +441,7 @@ Une fois la vidéo interactive enregistrée, elle s’ouvre immédiatement dans 
       </tr> 
       <tr> 
       <td>Pour modifier le libellé de texte d’une image miniature</td> 
-      <td><p>Par défaut, le libellé de texte utilise le <code>Title</code> champ de métadonnées. En l’absence de <code>Title</code>, le nom de fichier de l’image miniature est utilisé à la place, mais sans l’extension.</p> <p>Pour modifier le libellé de texte d’une vignette, sous l’onglet <strong>Actions</strong>, directement sous la ressource image qui s’affiche, entrez le texte de votre choix. Consultez l’image ci-dessous.</p> <p>Le nouveau libellé n’est utilisé que par la visionneuse vidéo proprement dite et le texte des vignettes affiché dans le segment de la chronologie. La modification du libellé n’affecte pas le champ Titre des métadonnées de la miniature ni son nom de fichier.</p> </td> 
+      <td><p>Par défaut, le libellé de texte utilise le champ de métadonnées <code>Title</code> de l’image miniature. En l’absence de <code>Title</code>, le nom de fichier de l’image miniature est utilisé à la place, mais sans l’extension.</p> <p>Pour modifier le libellé de texte d’une vignette, sous l’onglet <strong>Actions</strong>, directement sous la ressource image qui s’affiche, entrez le texte de votre choix. Consultez l’image ci-dessous.</p> <p>Le nouveau libellé n’est utilisé que par la visionneuse vidéo proprement dite et le texte des vignettes affiché dans le segment de la chronologie. La modification du libellé n’affecte pas le champ Titre des métadonnées de la miniature ni son nom de fichier.</p> </td> 
       </tr> 
       <tr> 
       <td>Pour rétablir une modification</td> 
