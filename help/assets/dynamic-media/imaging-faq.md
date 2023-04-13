@@ -7,9 +7,9 @@ role: User
 mini-toc-levels: 3
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
 source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3525'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ De plus, obtenez désormais un meilleur score Google Core Web Vital pour LCP (
 >
 >L’imagerie intelligente nécessite l’utilisation du réseau de diffusion de contenu prêt à l’emploi fourni avec Adobe Experience Manager - Dynamic Media. Aucun autre réseau CDN personnalisé n’est pris en charge avec cette fonctionnalité.
 
-L’imagerie dynamique tire parti de l’amélioration des performances grâce à une intégration complète au service haut de gamme CDN (Content Delivery Network) haut de gamme d’Adobe. Ce service trouve l’itinéraire Internet optimal entre les serveurs, les réseaux et les points de connexion. Au lieu d’utiliser l’itinéraire par défaut sur Internet, le service établit celui possédant la latence et le taux de perte de paquets les plus faibles.
+L’imagerie dynamique tire parti de sa parfaite intégration dans le meilleur service premium CDN (réseau de diffusion de contenu) de sa catégorie proposé par Adobe afin d’offrir un gain de performance accru. Ce service trouve l’itinéraire Internet optimal entre les serveurs, les réseaux et les points de connexion. Au lieu d’utiliser l’itinéraire par défaut sur Internet, le service établit celui possédant la latence et le taux de perte de paquets les plus faibles.
 
 Les exemples de ressources d’image suivants illustrent l’optimisation supplémentaire qu’apporte l’imagerie dynamique :
 
@@ -71,7 +71,7 @@ Consultez également la section [bfc](https://experienceleague.adobe.com/docs/dy
 
 ### À propos de l’optimisation du rapport pixel d’appareil {#dpr}
 
-Le ratio de pixels d’appareil (DPR), également appelé ratio de pixels CSS, est la relation entre les pixels physiques et les pixels logiques d’un appareil. Surtout avec l’avènement des écrans Retina, la résolution en pixels des appareils mobiles modernes augmente à un rythme rapide.
+Le rapport pixel d’appareil (DPR), également appelé rapport pixel CSS, est la relation entre les pixels physiques et les pixels logiques d’un appareil. Surtout avec l’avènement des écrans Retina, la résolution en pixels des appareils mobiles modernes augmente à un rythme rapide.
 
 L’activation de l’optimisation du rapport pixel du périphérique effectue le rendu de l’image à la résolution native de l’écran, ce qui la rend plus nette.
 
