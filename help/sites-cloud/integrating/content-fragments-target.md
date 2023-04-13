@@ -1,10 +1,10 @@
 ---
 title: Exportation de fragments de contenu vers Adobe Target
 description: Exportation de fragments de contenu vers Adobe Target
-source-git-commit: 78840c83d91d6e4f35ec7ca8d14f52024d3535ff
+source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
 workflow-type: tm+mt
-source-wordcount: '2193'
-ht-degree: 52%
+source-wordcount: '2228'
+ht-degree: 51%
 
 ---
 
@@ -321,7 +321,7 @@ Pour exporter un fragment de contenu d’AEM vers Target (après avoir spécifi�
 1. Accédez à votre fragment de contenu dans le **Ressources** console.
 1. Sélectionnez le fragment de contenu que vous souhaitez exporter vers la cible.
 
-1. Appuyez/cliquez sur **Exporter vers Adobe Target**.
+1. Appuyez/cliquez sur **Exporter vers des offres Adobe Target**.
 
    ![Exporter vers Adobe Target](assets/cfm-export-target-01.png)
 
@@ -336,6 +336,12 @@ Pour exporter un fragment de contenu d’AEM vers Target (après avoir spécifi�
    -->
 
 1. Appuyez/cliquez sur **Exportation sans publication** ou **Publier** selon les besoins.
+
+   >[!NOTE]
+   >
+   >Les actions affichées dépendent de l’état de votre fragment et des ressources associées.
+   >
+   >Si tout a déjà été publié et que rien n’a été modifié depuis, cette étape sera franchie.
 
    >[!NOTE]
    >
