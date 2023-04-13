@@ -3,9 +3,9 @@ title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 2af14814a4e8af22cfdc1caa2ff656020c79ce77
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1826'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -17,13 +17,13 @@ Découvrez les types d’environnements que vous pouvez créer et comment les cr
 
 Un utilisateur disposant des autorisations requises peut créer les types d’environnement suivants (dans les limites de ce qui est disponible pour le client spécifique).
 
-* **Production + Évaluation** - Les environnements de production et d’évaluation sont disponibles sous la forme d’une paire et sont utilisés à des fins de production et de test, respectivement.
+* **Production et évaluation** : les environnements de production et d’évaluation sont disponibles par paire et sont utilisés respectivement à des fins de production et de test.
 
 * **Développement** - Un environnement de développement peut être créé à des fins de développement et de test et sera associé uniquement aux pipelines qui ne sont pas en production.
 
-* **Développement rapide** - Un environnement de développement rapide (RDE) permet aux développeurs de déployer et de passer rapidement en revue les modifications, ce qui réduit le temps nécessaire au test des fonctionnalités dont il est prouvé qu’elles fonctionnent dans un environnement de développement local. Veuillez consulter [la documentation sur l’environnement de développement rapide ;](/help/implementing/developing/introduction/rapid-development-environments.md) pour plus d’informations sur l’utilisation d’un RDE.
+* **Développement rapide** : un environnement de développement rapide (RDE) permet à l’équipe de développement de déployer et d’examiner rapidement les modifications, ce qui réduit le temps nécessaire pour tester les fonctionnalités qui fonctionnent dans un environnement de développement local. Pour plus d’informations sur l’utilisation d’un RDE, veuillez consulter la [documentation sur l’environnement de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md).
 
-Les fonctionnalités de chaque environnement dépendent des solutions activées dans la variable [program](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) de l’environnement.
+Les fonctionnalités de chaque environnement dépendent des solutions activées dans son [programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
 
 * [Sites](/help/sites-cloud/home.md)
 * [Assets](/help/assets/home.md)
@@ -52,13 +52,13 @@ Les fonctionnalités de chaque environnement dépendent des solutions activées 
 
 1. Dans la boîte de dialogue **Ajouter un environnement** qui s’affiche :
 
-   * Sélectionnez une [**type d&#39;environnement**.](#environment-types)
+   * Sélectionnez un [**type d’environnement**.](#environment-types)
       * Le nombre d’environnements disponibles/utilisés est indiqué entre parenthèses derrière le nom du type d’environnement.
-   * Fournir un environnement **Nom**.
-   * Fournir un environnement **Description**.
-   * Sélectionnez une **région Principal** dans la liste déroulante.
-      * Notez que cette modification ne peut pas être modifiée après la création.
-   * Si vous ajoutez une **Production + Évaluation** , vous devez fournir un nom et une description de l’environnement pour vos environnements de production et d’évaluation.
+   * Entrez un **Nom** d’environnement.
+   * Fournissez une **Description** de l’environnement.
+   * Sélectionnez une **Région principale** dans la liste déroulante.
+      * Veuillez noter qu’elle ne peut pas être modifiée après la création.
+   * Si vous ajoutez un environnement de **production et d’évaluation**, vous devez indiquer un nom et une description à l’environnement de production et à celui d’évaluation.
       ![Boîte de dialogue Ajouter un environnement](assets/add-environment2.png)
 
 1. Cliquez sur **Enregistrer** pour ajouter l’environnement spécifié.
@@ -103,21 +103,21 @@ Lors de la création, une liste d’adresses IP autorisées par défaut est appl
 
 ![Service d’aperçu et sa liste autorisée](assets/preview-ip-allow.png)
 
-Un utilisateur disposant des autorisations requises doit effectuer les étapes suivantes avant de partager l’URL du service d’aperçu afin d’en assurer l’accès.
+Les utilisateurs et utilisatrices disposant des autorisations requises doivent effectuer les étapes suivantes avant de partager l’URL du service d’aperçu afin d’en assurer l’accès.
 
-1. Créez une liste d’adresses IP autorisées appropriée, appliquez-la au service d’aperçu et annulez immédiatement l’application de la variable liste autorisée `Preview Default [<envId>]`.
+1. Créez une liste d’adresses IP autorisées appropriée, appliquez-la au service d’aperçu et annulez immédiatement l’application de la liste autorisée `Preview Default [<envId>]`.
 
    * Consultez le document [Application et annulation de l’application de listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) pour plus d’informations.
 
 1. Utilisez le workflow de mise à jour de la **liste d’adresses IP autorisées** pour supprimer l’adresse IP par défaut et ajouter la ou les adresses IP, le cas échéant. Consultez le document [Gestion des listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) pour en savoir plus.
 
-Une fois l’accès au service de prévisualisation déverrouillé, l’icône de verrouillage devant le nom du service de prévisualisation ne s’affiche plus.
+Une fois l’accès au service d’aperçu déverrouillé, l’icône de verrouillage devant le nom du service d’aperçu ne s’affiche plus.
 
 Une fois activé, vous pouvez publier du contenu dans le service d’aperçu à l’aide de l’interface utilisateur de gestion de la publication d’AEM. Reportez-vous au document [Prévisualisation du contenu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) pour plus d’informations.
 
 >[!NOTE]
 >
->Votre environnement doit se trouver sur AEM version `2021.05.5368.20210529T101701Z` ou plus récent pour utiliser le service d’aperçu. Pour ce faire, vérifiez qu’un pipeline de mise à jour a bien été exécuté sur votre environnement.
+>Votre environnement doit utiliser la version AEM `2021.05.5368.20210529T101701Z` ou ultérieure pour utiliser le service d’aperçu. Pour ce faire, vérifiez qu’un pipeline de mise à jour a bien été exécuté sur votre environnement.
 
 ## Mise à jour des environnements {#updating-dev-environment}
 
