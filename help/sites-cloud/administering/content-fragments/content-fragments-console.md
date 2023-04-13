@@ -5,10 +5,10 @@ landing-page-description: Découvrez comment gérer les fragments de contenu à 
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: d02bfc6fc6502a96e270e87ea8567d7a55e33b3a
+source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 91%
+source-wordcount: '1028'
+ht-degree: 85%
 
 ---
 
@@ -162,6 +162,22 @@ Le panneau de filtrage offre les options suivantes :
 * l’option permettant de récupérer un filtre de recherche enregistré pour réutilisation.
 
 ![Console Fragments de contenu - Filtrage](assets/cfc-console-filter.png)
+
+### Filtrage rapide {#fast-filtering}
+
+Vous pouvez également sélectionner un prédicat en cliquant sur une valeur de colonne spécifique dans la liste. Vous pouvez sélectionner une ou plusieurs valeurs pour combiner des prédicats.
+
+Par exemple, sélectionnez **Publié** dans le **État** column :
+
+>[!NOTE]
+>
+>Le filtrage rapide n’est pris en charge que pour la variable **Modèle**, **État**, **Modifié par**, et **Publié par** colonnes.
+
+![Console Fragments de contenu - Filtrage](assets/cfc-console-fast-filter-01.png)
+
+Une fois cette option sélectionnée, elle s’affiche sous forme de prédicat de filtre et la liste est filtrée en conséquence :
+
+![Console Fragments de contenu - Filtrage](assets/cfc-console-fast-filter-02.png)
 
 ## Rechercher des fragments {#searching-fragments}
 
