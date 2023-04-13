@@ -5,9 +5,9 @@ feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
 source-git-commit: c9d901db6873965643f5ababe544be3aa635a8e4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4086'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -446,15 +446,15 @@ Pour comparer des copies de langue au gabarit de langue :
 1. Les deux pages (de lancement et source) s’ouvrent côte à côte.
    * Pour des informations complètes sur l’utilisation de cette fonction, consultez [Différence entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
 
-## Déplacement ou changement de nom d’une page source {#move-source}
+## Déplacement ou modification du nom d’une page source {#move-source}
 
-Si une page source déjà traduite doit être [renommé ou déplacé](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie de langue en fonction du nouveau nom/emplacement de la page. L’ancienne copie de langue basée sur le nom/l’emplacement précédent sera toujours là.
+Si une page source déjà traduite doit être [renommée ou déplacée](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page), la traduction de la page après le déplacement crée une copie dans la langue en fonction du nouveau nom ou emplacement de la page. L’ancienne copie dans la langue basée sur le nom et l’emplacement précédent sera toujours là.
 
-Dans ce scénario, la bonne pratique consiste à procéder comme suit :
-1. Annulez la publication des copies de langue associées à la page source que vous souhaitez déplacer.
+Dans ce scénario, la bonne pratique consiste à procéder comme suit :
+1. Annulez la publication des copies dans la langue associées à la page source que vous souhaitez déplacer.
 1. Supprimez-les.
-1. Créez de nouvelles copies de langue à partir de la page source nouvellement déplacée.
-1. Publiez les copies de langue nouvellement créées.
+1. Créez de nouvelles copies dans la langue à partir de la page source nouvellement déplacée.
+1. Publiez les copies dans la langue nouvellement créées.
 
 ## Importation et exportation de tâches de traduction {#import-export}
 
