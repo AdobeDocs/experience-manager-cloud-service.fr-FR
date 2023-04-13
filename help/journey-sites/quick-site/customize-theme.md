@@ -3,9 +3,9 @@ title: Personnaliser le thème du site
 description: Découvrez comment le thème du site est créé, comment le personnaliser et comment le tester à l’aide du contenu réel d’AEM.
 exl-id: b561bee0-3a64-4dd3-acb8-996f0ca5bfab
 source-git-commit: 9f5930fce8c2a7768cad696746a7c9fa3d8c2f9e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Lorsque la structure du projet de thème vous convient, démarrez le proxy local
 
    >[!TIP]
    >
-   >Si vous ne disposez pas de ces informations d’identification, contactez votre administrateur en référençant la variable [Configuration de la section Utilisateur proxy de l’article Créer un site à partir d’un modèle](/help/journey-sites/quick-site/create-site.md#proxy-user) dans ce parcours.
+   >Si vous ne disposez pas de ces informations d’identification, contactez votre administration en référençant la section [Configuration de l’utilisateur ou utilisatrice proxy de l’article Créer un site à partir d’un modèle](/help/journey-sites/quick-site/create-site.md#proxy-user) dans ce parcours.
 
 1. Une fois connecté, modifiez l’URL dans le navigateur afin qu’elle pointe vers le chemin d’accès de l’exemple de contenu que l’administrateur AEM vous a fourni.
 
