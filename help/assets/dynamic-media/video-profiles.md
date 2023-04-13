@@ -6,15 +6,15 @@ feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
 source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3716'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Profils vidéo Dynamic Media{#video-profiles}
 
-Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos source Principales à l’aide du profil de codage vidéo adaptatif, au cours de la lecture, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de connexion Internet de vos clients. Cette action est appelée diffusion en continu à débit adaptatif.
+Dynamic Media est fourni avec un profil prédéfini de codage vidéo adaptatif. Les paramètres de ce profil prêt à l’emploi sont optimisés pour offrir à vos clients la meilleure expérience de visionnage possible. Lorsque vous codez vos vidéos sources originales à l’aide du profil de codage de vidéo adaptative pendant la lecture, le lecteur vidéo ajuste automatiquement la qualité du flux vidéo en fonction de la vitesse de la connexion Internet de vos clients et de vos clientes. Cette action est connue sous le nom de diffusion en continu à débit adaptatif.
 
 Voici d’autres facteurs qui déterminent la qualité des vidéos :
 
@@ -45,7 +45,7 @@ Voir également [Profils de traitement des métadonnées, des images et des vid�
 
 ## Paramètres prédéfinis de codage vidéo adaptatif {#adaptive-video-encoding-presets}
 
-Le tableau suivant identifie les bonnes pratiques à appliquer lors du codage de profils pour la diffusion de vidéo adaptative en continu sur des appareils mobiles, des tablettes et des ordinateurs de bureau. Vous pouvez utiliser ces paramètres prédéfinis pour n’importe quelle vidéo de proportions.
+Le tableau suivant identifie les bonnes pratiques à appliquer lors du codage de profils pour la diffusion de vidéo avec débit adaptatif sur des appareils mobiles, des tablettes et des ordinateurs de bureau. Vous pouvez utiliser ces paramètres prédéfinis pour n’importe quel format de vidéo.
 
 <table>
  <tbody>
@@ -104,7 +104,7 @@ La taille maximale de fichier vidéo prise en charge par le recadrage intelligen
 * 30 images par seconde (i/s)
 * Taille de fichier de 300 Mo.
 
-Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, une vidéo de 60 i/s doit durer deux minutes et demie pour être prise en charge par Adobe Sensei et par le recadrage intelligent.
+Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 i/s. Si votre vidéo présente une fréquence d’images (IPS) supérieure, la durée de vidéo maximale prise en charge diminue. Par exemple, une vidéo de 60 i/s doit durer deux minutes et demie pour être prise en charge par Adobe Sensei et par le recadrage intelligent.
 
 ![Recadrage intelligent de vidéo](assets/smart-crop-video.png)
 
@@ -112,7 +112,7 @@ Adobe Sensei est limité à 9 000 images. C’est-à-dire cinq minutes à 30 
 >
 >Pour que le recadrage intelligent de vidéo fonctionne, vous devez inclure au moins un paramètre prédéfini de codage vidéo dans votre profil vidéo.
 
-Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Smart Crop Ratio]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition Paysage mobile avec des proportions de 16x9 et une définition Portrait mobile avec des proportions de 9x16. Autres proportions ou rapports de recadrage à partir desquels vous pouvez choisir d’inclure 1x1, 4x3 et 4x5.
+Pour utiliser le recadrage intelligent de vidéo, vous créez un profil de codage de vidéo adaptative ou progressive. Dans votre profil, utilisez l’outil **[!UICONTROL Smart Crop Ratio]** pour sélectionner des proportions prédéfinies. Par exemple, après avoir défini vos paramètres prédéfinis de codage vidéo, vous pouvez ajouter une définition Paysage mobile avec des proportions de 16x9 et une définition Portrait mobile avec des proportions de 9x16. Les autres proportions ou rapports de recadrage que vous pouvez choisir sont 1x1, 4x3 et 4x5.
 
 ![Modification d’un profil de codage vidéo avec le recadrage intelligent](assets/edit-smart-crop-video2.png)
 
@@ -124,7 +124,7 @@ Voir [Application de profils vidéo à des dossiers spécifiques](#applying-vide
 
 Voir aussi [Recadrage intelligent d’images](image-profiles.md).
 
-## Création d’un profil vidéo pour la diffusion en continu à débit adaptatif {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Créer un profil vidéo pour la diffusion en continu à débit adaptatif {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media est fourni avec un profil prédéfini de codage de vidéo adaptative (groupe de paramètres de chargement vidéo pour MP4 H.264) qui est optimisé pour la visualisation. Vous pouvez utiliser ce profil lorsque vous chargez vos vidéos.
 
@@ -132,7 +132,7 @@ Cependant, si ce profil prédéfini ne répond pas à vos besoins, vous pouvez c
 
 Lorsque vous créez le profil de codage vidéo, vous remarquerez que la plupart des options de codage sont préremplies avec les paramètres par défaut recommandés pour vous aider. Cependant, si vous sélectionnez une valeur autre que la valeur par défaut recommandée, la qualité vidéo risque d’être médiocre pendant la lecture et d’autres problèmes de performances.
 
-Ainsi, pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les valeurs suivantes sont validées pour s’assurer qu’elles sont identiques pour chaque paramètre prédéfini de codage dans le profil, rendant possible la diffusion en continu à débit adaptatif :
+Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les valeurs suivantes sont donc validées pour s’assurer qu’elles sont identiques dans chaque paramètre de codage individuel prédéfini, rendant possible la diffusion en continu à débit adaptatif :
 
 * Codec de format vidéo - MP4 H.264 (.mp4)
 * Codec audio
@@ -143,7 +143,7 @@ Ainsi, pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du prof
 * Profil H264
 * Taux d’échantillonnage audio
 
-Si les valeurs ne sont pas les mêmes, vous pouvez continuer à créer le profil tel quel. Cependant, la diffusion en continu à débit adaptatif n’est pas possible. Au lieu de cela, les utilisateurs obtiennent une diffusion en continu à débit unique. Il est recommandé de modifier les paramètres de codage pour utiliser les mêmes valeurs dans les paramètres prédéfinis individuels de codage du profil. (L’éditeur de profil vidéo/paramètre prédéfini applique la parité des paramètres de codage de vidéo adaptative si l’option Coder pour la diffusion en continu adaptative est activée.)
+Si les valeurs ne sont pas les mêmes, vous pouvez continuer à créer le profil tel quel. La diffusion en continu à débit adaptatif n’est cependant pas possible. Au lieu de cela, les utilisateurs obtiennent une diffusion en continu à débit unique. Il est recommandé de modifier les paramètres de codage pour utiliser les mêmes valeurs dans les paramètres prédéfinis individuels de codage du profil. (L’éditeur de profil vidéo/paramètre prédéfini applique la parité des paramètres de codage de vidéo adaptative si l’option Coder pour la diffusion en continu adaptative est activée.)
 
 Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu progressive](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -151,7 +151,7 @@ Voir aussi [Bonnes pratiques relatives au codage vidéo](/help/assets/dynamic-me
 
 Pour définir des paramètres de traitement avancés pour d’autres types de ressources, voir [Configuration du traitement des ressources](/help/assets/dynamic-media/config-dm.md#configuring-asset-processing).
 
-**Création d’un profil vidéo pour la diffusion en continu à débit adaptatif**,
+**Pour créer un profil vidéo en vue de la diffusion en continu à débit adaptatif**,
 
 1. Sélectionnez le logo Experience Manager et accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils vidéo]**.
 1. Sélectionnez **[!UICONTROL Créer]**.
@@ -194,7 +194,7 @@ Si vous choisissez de ne pas utiliser l’option **[!UICONTROL Coder pour la dif
 
 Les codecs de format vidéo pris en charge sont H.264 (.mp4) et WebM.
 
-Voir aussi [Création d’un profil de codage vidéo pour la diffusion en continu à débit adaptatif](#creating-a-video-encoding-profile-for-adaptive-streaming).
+Consultez également la section [Créer un profil de codage vidéo pour la diffusion en continu à débit adaptatif](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
 Voir aussi [Bonnes pratiques relatives au codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 
@@ -243,7 +243,7 @@ Vous pouvez maintenant appliquer le profil aux dossiers contenant des vidéos. V
 
 ## Utilisation de paramètres de codage vidéo personnalisés {#using-custom-added-video-encoding-parameters}
 
-Vous pouvez modifier un profil de codage existant pour la vidéo afin de tirer parti des paramètres de codage vidéo avancés qui ne figurent pas dans l’interface utilisateur lors de la création ou de la modification d’un profil vidéo dans Experience Manager. Vous pouvez ajouter de façon personnalisée un ou plusieurs paramètres avancés, tels que minBitrate et maxBitrate, dans votre profil existant.
+Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de paramètres de codage vidéo avancés qui ne figurent pas dans l’interface utilisateur lors de la création ou de la modification d’un profil vidéo dans Experience Manager. Vous pouvez ajouter de façon personnalisée un ou plusieurs paramètres avancés, tels que minBitrate et maxBitrate, dans votre profil existant.
 
 **Pour utiliser des paramètres de codage vidéo personnalisés, procédez comme suit** :
 
@@ -266,7 +266,7 @@ Vous pouvez modifier un profil de codage existant pour la vidéo afin de tirer p
   </tr>
   <tr>
    <td><code>h264Level</code></td>
-   <td>Niveau H.264 à utiliser pour le codage. Normalement, ce niveau est automatiquement déterminé en fonction des paramètres de codage que vous utilisez.</td>
+   <td>Niveau H.264 à utiliser pour le codage. Ce niveau est normalement déterminé automatiquement en fonction des paramètres de codage que vous utilisez.</td>
    <td><code>String</code></td>
    <td><p>10 x niveau h264</p> <p>Par exemple, 3.0 = 30, 1.3 = 13)</p> <p>Pas de valeur par défaut.</p> </td>
   </tr>
@@ -274,7 +274,7 @@ Vous pouvez modifier un profil de codage existant pour la vidéo afin de tirer p
    <td><code>keyframe</code></td>
    <td>Nombre cible d’images entre les images clés. Calculez cette valeur afin que vous puissiez générer une image clé toutes les 2 à 10 secondes. Par exemple, à 30 images par seconde, l’intervalle d’images clé doit être compris entre 60 et 300.<br /> <br /> Les intervalles d’images clé moindres améliorent le comportement de recherche de flux et de changement de flux pour les codages vidéo adaptatifs et peuvent également améliorer la qualité des vidéos avec beaucoup de mouvement. Cependant, puisque les images clés augmentent la taille du fichier, un intervalle d’images clés moindre entraîne généralement une qualité de vidéo globalement moins bonne à un débit donné.</td>
    <td><code>String</code></td>
-   <td><p>Numéro positif.</p> <p>La valeur par défaut est 300.</p> <p>La valeur recommandée pour HLS ou DASH (diffusion en continu à débit adaptatif) est comprise entre 60 et 90. (Pour utiliser le DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir <a href="/help/assets/dynamic-media/video.md#enable-dash">Activation de DASH sur votre compte</a>.)</p> </td>
+   <td><p>Numéro positif.</p> <p>La valeur par défaut est 300.</p> <p>La valeur recommandée pour HLS ou DASH (diffusion en continu à débit adaptatif) est comprise entre 60 et 90. (Pour utiliser la DASH pour vos vidéos, elle doit d’abord être activée par le support technique d’Adobe sur votre compte. Voir <a href="/help/assets/dynamic-media/video.md#enable-dash">Activer la DASH sur votre compte</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -292,7 +292,7 @@ Vous pouvez modifier un profil de codage existant pour la vidéo afin de tirer p
    <td><code>audioBitrateCustom</code></td>
    <td>Définissez la valeur sur <code>true</code> afin de forcer un débit constant pour le flux audio, si le codec audio le permet.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>La valeur par défaut est <code>false</code>.</p> <p>La valeur recommandée pour HLS ou DASH est <code>false</code>. (Pour utiliser le DASH pour vos vidéos, il doit d’abord être activé par le support technique d’Adobe sur votre compte. Voir <a href="/help/assets/dynamic-media/video.md#enable-dash">Activation de DASH sur votre compte</a>.)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>La valeur par défaut est <code>false</code>.</p> <p>La valeur recommandée pour HLS ou la DASH est <code>false</code>. (Pour utiliser la DASH pour vos vidéos, elle doit d’abord être activée par le support technique d’Adobe sur votre compte. Voir <a href="/help/assets/dynamic-media/video.md#enable-dash">Activer la DASH sur votre compte</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
