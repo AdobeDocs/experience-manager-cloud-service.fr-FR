@@ -6,9 +6,9 @@ feature: Viewer Presets,Viewers
 role: User
 exl-id: da2e1a10-f54b-440e-b70c-f04ad4caeac1
 source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4384'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -49,11 +49,11 @@ Vous pouvez ajouter, modifier, supprimer, publier, dépublier et prévisualiser 
 >
 >Par défaut, le système affiche 15 paramètres de visionneuse prédéfinis lorsque vous sélectionnez Visionneuses dans l’affichage des détails d’une ressource. Vous pouvez augmenter cette limite. Voir [Augmentation du nombre de paramètres prédéfinis de visionneuse qui s’affichent](#increasing-the-number-of-viewer-presets-that-display).
 
-### Prise en charge des visionneuses pour les pages web réactives {#viewer-support-for-responsive-designed-web-pages}
+### Prise en charge des visionneuses pour les pages web en responsive design {#viewer-support-for-responsive-designed-web-pages}
 
-Chaque page web a des besoins différents. Vous aurez parfois besoin d’une page web proposant un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura une mise en page statique. Autrement, elle est « réactive » et est affichée différemment en fonction du périphérique ou de la taille de fenêtre du navigateur. Pour répondre à ces besoins, toutes les visionneuses HTML5 prédéfinies prêtes à l’emploi fournies avec Dynamic Media prennent en charge les pages web statiques et les pages web adaptées.
+Chaque page web a des besoins différents. Vous aurez parfois besoin d’une page web proposant un lien qui ouvre la visionneuse HTML5 dans une fenêtre de navigateur distincte. Dans d’autres cas, vous aurez besoin d’intégrer directement la visionneuse HTML5 sur la page d’hébergement. Si c’est le cas, la page web aura une mise en page statique. Autrement, elle est « réactive » et est affichée différemment en fonction du périphérique ou de la taille de fenêtre du navigateur. Pour répondre à ces besoins, toutes les visionneuses prédéfinies et prêtes à l’emploi HTML5 fournies avec Dynamic Media sont compatibles tant avec les pages web statiques qu’avec les pages web en responsive design.
 
-Voir [Bibliothèque d’images statiques et réactives](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=fr#about-responsive-image-library) dans l’*assistance de l’API de rendu et de diffusion d’images de Dynamic Media* afin d’en savoir plus sur l’intégration des visionneuses réactives sur vos pages web.
+Voir [Bibliothèque d’images statiques et réactives](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=fr#about-responsive-image-library) dans l’*aide de l’API de rendu et de diffusion d’images Dynamic Media* afin d’en savoir plus sur l’intégration des visionneuses réactives à vos pages web.
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ Les administrateurs peuvent ajouter et personnaliser les types de médias riches
    <td><strong>Zoom vertical</strong></td>
    <td><p>La visionneuse Zoom vertical permet d’optimiser l’expérience de visionnage d’une imagerie de produit afin d’offrir aux utilisateurs la meilleure représentation d’un produit. L’emplacement vertical des échantillons présente les avantages suivants :</p>
     <ul>
-     <li>Cela garantit que les nuanciers se trouvent en tête de page.<br/> Avec des échantillons horizontaux, selon la taille de l’écran de l’utilisateur, les échantillons ne sont pas visibles tant que l’utilisateur n’a pas fait défiler la page vers le bas. Placés verticalement dans la visionneuse, les échantillons sont visibles quelle que soit la taille de l’écran de l’utilisateur.</li>
+     <li>Cela garantit que les nuanciers se trouvent en tête de page.<br/> Lorsqu’ils sont horizontaux, en fonction de la taille de l’écran du poste de travail de l’utilisateur ou de l’utilisatrice, les échantillons ne sont pas visibles tant que l’utilisateur ou l’utilisatrice ne fait pas défiler la page vers le bas. Placés verticalement dans la visionneuse, les échantillons sont visibles quelle que soit la taille de l’écran de l’utilisateur.</li>
      <li>Il optimise la taille de l’image principale.<br />Avec les échantillons horizontaux, il est nécessaire de réserver de la place sur la page afin de vous assurer qu’ils sont visibles. Ce positionnement a réduit la taille de l’image principale. Toutefois, avec une disposition verticale des échantillons, vous n’avez pas besoin d’allouer cet espace. Ainsi, vous pouvez agrandir la taille de l’image principale.</li>
     </ul> </td>
   </tr>
@@ -439,19 +439,19 @@ Voir [Remarques spéciales sur la création d’un paramètre prédéfini de vis
    >Pour une illustration de bouton, sélectionnez l’image x2 puis chargez l’illustration haute résolution. Lorsque vous travaillez avec des images interactives et des bannières favorisant les achats, vous pouvez également choisir parmi divers boutons de zone réactive prêts à l’emploi.
 
 1. (Facultatif) Près de la partie supérieure de la page Modification des paramètres de visionneuse prédéfinis, sélectionnez **[!UICONTROL Ordinateur de bureau]**, **[!UICONTROL Tablette]** ou **[!UICONTROL Téléphone]** pour définir de manière unique les styles visuels pour différents types d’appareils et d’écrans.
-1. Sur la page Éditeur de paramètres prédéfinis de la visionneuse, sélectionnez l’onglet **[!UICONTROL Comportement]**. Vous pouvez également sélectionner n’importe quel élément visuel de la visionneuse afin de le sélectionner pour le configurer.
-Par exemple, pour la variable *VideoPlayer* type, sous **[!UICONTROL Modificateurs]** > **[!UICONTROL Lecture]**, vous pouvez effectuer une sélection parmi trois options de diffusion en continu à débit adaptatif :
+1. Sur la page Éditeur de paramètres prédéfinis de la visionneuse, sélectionnez l’onglet **[!UICONTROL Comportement]**. Vous pouvez également sélectionner n’importe quel élément visuel de la visionneuse afin de le configurer.
+Par exemple, pour le type *VideoPlayer*, sous **[!UICONTROL Modificateurs]** > **[!UICONTROL Lecture]**, vous pouvez effectuer une sélection parmi trois options de diffusion en continu à débit adaptatif :
 
-   * **[!UICONTROL dash]** - Diffusion de vidéos en tant que DASH uniquement. Toutefois, sur les périphériques Safari/iOS, vous devez sélectionner **[!UICONTROL hls]** comme type.
-   * **[!UICONTROL hls]** - Flux vidéo en tant que HLS uniquement.
-   * **[!UICONTROL auto]** - Bonne pratique. La création des flux DASH et HLS est optimisée pour le stockage. Par conséquent, Adobe recommande de toujours sélectionner **[!UICONTROL auto]** comme type de lecture. Les vidéos sont diffusées en continu sous la forme de tirets, hls ou progressifs, comme dans l’exemple suivant :
-      * Si le navigateur prend en charge DASH, la diffusion en continu DASH est utilisée, tout d’abord.
-      * Si le navigateur ne prend pas en charge DASH, la diffusion HLS en continu est utilisée, ensuite.
-      * Si le navigateur ne prend pas en charge DASH ou HLS, la lecture progressive est utilisée, enfin.
+   * **[!UICONTROL dash]** - Diffusion de vidéos en tant que DASH uniquement. Toutefois, sur les périphériques Safari/iOS, vous devez sélectionner le type **[!UICONTROL hls]** à la place.
+   * **[!UICONTROL hls]** - Diffusion de vidéos en tant que HLS uniquement.
+   * **[!UICONTROL auto]** - Bonne pratique. La création des flux DASH et HLS est optimisée pour le stockage. Par conséquent, Adobe vous recommande de toujours sélectionner **[!UICONTROL auto]** comme type de lecture. Les vidéos sont diffusées en continu en tant que dash, hls ou progressives, comme dans l’exemple suivant :
+      * Si le navigateur prend en charge DASH, la diffusion en continu DASH est utilisée en premier lieu.
+      * Si le navigateur ne prend pas en charge DASH, la diffusion HLS en continu est utilisée en deuxième option.
+      * Si le navigateur ne prend en charge ni DASH ou ni HLS, la lecture progressive est utilisée en dernier lieu.
 
    >[!NOTE]
    >
-   >Pour afficher et utiliser la variable **[!UICONTROL dash]** , elle doit d’abord être activée par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](/help/assets/dynamic-media/video.md#enable-dash).
+   >Pour afficher et utiliser l’option **[!UICONTROL dash]**, celle-ci doit d’abord être activée par le support technique d’Adobe sur votre compte. Voir [Activation de DASH sur votre compte](/help/assets/dynamic-media/video.md#enable-dash).
 
 1. Dans le menu déroulant **[!UICONTROL Type sélectionné]**, sélectionnez un composant dont vous souhaitez modifier le comportement.
 
@@ -467,19 +467,19 @@ Par exemple, pour la variable *VideoPlayer* type, sous **[!UICONTROL Modificateu
    >Après avoir saisi une valeur dans le champ de texte, sélectionnez à un autre endroit de l’interface utilisateur pour envoyer la modification et fermer le clavier virtuel. Si vous sélectionnez **[!UICONTROL Entrée]**, aucune action ne se produit.
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
-1. Publiez votre nouveau paramètre de visionneuse prédéfini. Il est nécessaire de publier le paramètre prédéfini afin que vous puissiez utiliser l’URL qui en résulte sur votre site web.
+1. Publiez votre nouveau paramètre de visionneuse prédéfini. Il est nécessaire de publier le paramètre prédéfini avant de pouvoir utiliser son URL sur votre site Web.
 
    Consultez la section [Publication de paramètres prédéfinis de visionneuse](#publishing-viewer-presets).
 
    >[!IMPORTANT]
    >
-   >Pour les anciennes vidéos qui utilisent un profil de diffusion en continu à débit adaptatif, l’URL continue de fonctionner normalement (avec diffusion HLS en continu) jusqu’à ce que vous [Retraiter les ressources vidéo](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Après le retraitement, la même URL continuera à fonctionner, mais désormais avec *both* Diffusion en continu DASH et HLS activée.
+   >Pour les anciennes vidéos qui utilisent un profil de diffusion en continu à débit adaptatif, l’URL continue de fonctionner normalement (avec diffusion en continu HLS) jusqu’à ce que vous [retraitiez les ressources vidéo](/help/assets/dynamic-media/about-image-video-profiles.md#reprocessing-assets). Après le retraitement, la même URL continuera à fonctionner, mais en activant désormais *les deux types* de diffusion en continu DASH et HLS.
 
 ### Remarques spéciales sur la création d’un paramètre prédéfini de visionneuse interactive {#special-considerations-for-creating-an-interactive-viewer-preset}
 
 **À propos des modes d’affichage des miniatures dans le panneau :**
 
-Lorsque vous créez ou modifiez un paramètre prédéfini de visionneuse de vidéos interactives, vous avez le choix entre les paramètres de mode d’affichage à utiliser. Ce choix se produit lorsque vous sélectionnez `InteractiveSwatches` dans le menu déroulant **[!UICONTROL Composant sélectionné]** sous l’onglet **[!UICONTROL Comportement]**. Le mode d’affichage que vous choisissez affecte le mode d’affichage et le moment où les miniatures s’affichent pendant la lecture de la vidéo. Vous pouvez sélectionner le mode d’affichage `segment` (par défaut) ou le mode d’affichage `continuous`.
+Lorsque vous créez ou modifiez un paramètre prédéfini de visionneuse de vidéos interactives, vous avez le choix entre les paramètres de mode d’affichage à utiliser. Ce choix se produit lorsque vous sélectionnez `InteractiveSwatches` dans le menu déroulant **[!UICONTROL Composant sélectionné]** sous l’onglet **[!UICONTROL Comportement]**. Le mode d’affichage que vous choisissez affecte la façon dont les miniatures s’affichent pendant la lecture de la vidéo. Vous pouvez sélectionner le mode d’affichage `segment` (par défaut) ou le mode d’affichage `continuous`.
 
 <table>
  <tbody>
@@ -498,7 +498,7 @@ Lorsque vous créez ou modifiez un paramètre prédéfini de visionneuse de vid�
  </tbody>
 </table>
 
-**À propos du comportement de défilement automatique dans la visionneuse de vidéo interactive :**
+**À propos du comportement de défilement automatique dans la visionneuse de vidéo interactive :**
 
 Le comportement du défilement automatique des miniatures dans la visionneuse de vidéo interactive est indépendant du mode d’affichage que vous avez sélectionné.
 
