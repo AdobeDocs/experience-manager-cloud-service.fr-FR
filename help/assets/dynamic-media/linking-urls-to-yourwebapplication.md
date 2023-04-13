@@ -5,9 +5,9 @@ contentOwner: Rick Brough
 role: User
 exl-id: 3cd3f4d5-ebf0-4318-9a0d-1ea69453d57b
 source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1276'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -152,7 +152,7 @@ Dynamic Media prend en charge le déploiement de ressources statiques, qui sont 
 
    Il s’agit de l’URL complète d’un rendu vidéo publié.
 
-## Obtention d’une URL de vidéo pour la diffusion en continu à débit adaptatif (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
+## Obtenir une URL de vidéo pour la diffusion continue de débit adaptatif (HLS) {#obtaining-a-video-url-for-adaptive-streaming-hls}
 
 1. Dans Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Déploiement]** > **[!UICONTROL Cloud]** > **[!UICONTROL Services Cloud]**.
 1. Sur la page **[!UICONTROL Cloud Services]**, faites défiler l’écran jusqu’au titre **[!UICONTROL Dynamic Media Cloud Services]**, puis sélectionnez **[!UICONTROL Afficher les configurations]**.
