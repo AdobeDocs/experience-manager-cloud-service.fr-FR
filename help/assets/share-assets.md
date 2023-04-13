@@ -6,7 +6,7 @@ feature: Asset Management, Collaboration, Asset Distribution
 role: User, Admin
 exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 0d4db4fc19180cff5e15d58c4506933597ca7cce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1292'
 ht-degree: 100%
 
@@ -245,7 +245,7 @@ Voir [comment configurer [!DNL Assets] pour l’utiliser avec [!DNL Adobe Asset 
 ## Bonnes pratiques et résolution des problèmes {#bestpractices}
 
 * Les collections ou les dossiers de ressources dont le nom contient un espace blanc risquent de ne pas être partagés.
-* Si les utilisateurs ne peuvent pas télécharger les ressources partagées, contactez votre administrateur Experience Manager pour connaître les limites de téléchargement. La valeur par défaut est de 100 Mo.
+* Si les utilisateurs ou les utilisatrices ne peuvent pas télécharger les ressources partagées, contactez votre administrateur ou votre administratrice Experience Manager pour connaître les limites de téléchargement. La valeur par défaut est de 100 Mo.
 * Pour qu’un utilisateur puisse prévisualiser une vidéo partagée à l’aide du partage de liens, la vidéo doit disposer d’un rendu vidéo statique disponible à l’emplacement `/jcr:content/renditions` du nœud de la vidéo, dans le référentiel. La prévisualisation ne dépend pas de la disponibilité d’un rendu [!DNL Dynamic Media].
 * Lors du téléchargement d’une ressource vidéo via le partage de liens, les rendus [!DNL Dynamic Media] ne sont pas inclus dans l’archive téléchargée.
 
