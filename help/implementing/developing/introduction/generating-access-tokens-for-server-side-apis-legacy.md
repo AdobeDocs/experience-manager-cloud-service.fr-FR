@@ -1,15 +1,15 @@
 ---
 title: Génération de jetons d’accès pour les API côté serveur (hérité)
-description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
+description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé.
 hidefromtoc: true
 source-git-commit: aad1033828e400aaf4d9418f8e57afb61f05eecc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1438'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Génération de jetons d’accès pour les API côté serveur (héritées) {#generating-access-tokens-for-server-side-apis-legacy}
+# Générer des jetons d’accès pour les API côté serveur (hérité) {#generating-access-tokens-for-server-side-apis-legacy}
 
 Certaines architectures reposent sur des appels à AEM as a Cloud Service à l’aide d’une application hébergée sur un serveur en dehors de l’infrastructure AEM. Il peut s’agir, par exemple, d’une application mobile qui appelle un serveur, puis effectue des requêtes d’API auprès d’AEM as a Cloud Service.
 
