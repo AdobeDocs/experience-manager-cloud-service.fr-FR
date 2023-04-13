@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 77%
+ht-degree: 79%
 
 ---
 
@@ -68,8 +68,8 @@ Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus 
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
->title="Expiration d’un jeu de migration"
->abstract="Découvrez l’expiration d’un jeu de migration."
+>title="Expiration d&#39;un jeu de migration"
+>abstract="Découvrez à quoi correspond l&#39;expiration d&#39;un jeu de migration."
 
 Tous les jeux de migration finiront par expirer après une longue période d’inactivité d’environ 90 jours. Une fois les indicateurs affichés sur la carte du projet et les lignes du tableau des tâches de migration pendant une période donnée, le jeu de migration expire et ses données ne sont plus disponibles. Le délai d’expiration peut facilement être prolongé en agissant sur le jeu de migration en :
 

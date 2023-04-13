@@ -1,6 +1,6 @@
 ---
 title: Présentation de l’outil de mappage des utilisateurs (hérité)
-description: Présentation à l’outil de mappage des utilisateurs (hérité)
+description: Présentation de l’outil de mappage des utilisateurs (hérité)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true

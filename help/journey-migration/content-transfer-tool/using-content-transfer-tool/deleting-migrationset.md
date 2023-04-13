@@ -3,7 +3,7 @@ title: Suppression d’un jeu de migration dans l’outil de transfert de conten
 description: Suppression d’un jeu de migration dans l’outil de transfert de contenu
 exl-id: 7ec1c5ca-bac7-4617-8068-78569d7cb503
 source-git-commit: c61407d70fb65a7fdc72174881b23db4deca556a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 100%
 

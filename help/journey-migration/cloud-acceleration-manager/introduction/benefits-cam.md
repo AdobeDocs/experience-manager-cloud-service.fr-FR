@@ -3,7 +3,7 @@ title: Avantages de l’utilisation de Cloud Acceleration Manager
 description: Cette page présente les principaux avantages de l’utilisation de Cloud Acceleration Manager.
 exl-id: d7a6c4f6-0f50-4f44-8a62-4a5769c76bd5
 source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 100%
 

@@ -4,7 +4,7 @@ description: Présentation du mappage des utilisateurs et de la migration des en
 source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '757'
-ht-degree: 28%
+ht-degree: 32%
 
 ---
 
@@ -12,8 +12,8 @@ ht-degree: 28%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
->title="Mapping d’utilisateurs"
->abstract="L’outil de transfert de contenu vous permet de déplacer des utilisateurs et des groupes de votre système AEM existant vers AEM as a Cloud Service. Les utilisateurs existants doivent être mappés à leurs identifiants IMS pour éviter qu’ils ne soient dupliqués sur l’instance d’auteur du Cloud Service."
+>title="Mappage des utilisateurs"
+>abstract="L’outil de transfert de contenu vous permet de déplacer des utilisateurs et des groupes de votre système AEM existant vers AEM as a Cloud Service. Les utilisateurs existantes doivent être mappés à leurs identifiants IMS pour éviter qu&#39;ils ne soient dupliqués sur l&#39;instance de création de Cloud Service."
 
 >[!NOTE]
 >Pour connaître les versions précédentes de l’outil de mappage des utilisateurs, reportez-vous à la section [documentation héritée](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
@@ -31,7 +31,7 @@ L’outil de transfert de contenu et le Cloud Acceleration Manager migrent tous 
 * Si le système source est une instance d’auteur, le choix par défaut d’effectuer le mappage est _on_, puisqu’il s’agit du processus recommandé.
 * Si le système source est une instance de publication, le choix par défaut de procéder au mappage est _off_, car les utilisateurs ne sont normalement pas migrés ni utilisés sur les instances de publication.
 
-## Points importants lors du mappage et de la migration d’utilisateurs {#important-considerations}
+## Points importants lors du mappage et de la migration d&#39;utilisateurs {#important-considerations}
 
 
 ### Cas exceptionnels {#exceptional-cases}
