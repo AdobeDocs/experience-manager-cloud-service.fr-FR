@@ -5,9 +5,9 @@ feature: Administering
 role: Admin
 exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
 source-git-commit: 594efd18c7358505c859ca7e6269a3fc5e517926
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1165'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    >[!NOTE]
    >
    >
-   >Pour arrêter ou interrompre un workflow, celui-ci doit être en attente d’une intervention de l’utilisateur, par exemple dans une étape de participant. Toute tentative d’abandon d’un workflow en cours d’exécution de tâches (threads principaux en cours d’exécution) peut ne pas produire les résultats escomptés.
+   >Pour arrêter ou abandonner un workflow, celui-ci doit être en attente d’une intervention de l’utilisateur ou utilisatrice, par exemple dans une étape de participant ou participante. Toute tentative d’abandon d’un workflow en cours d’exécution de traitements (threads actifs en cours d’exécution) peut ne pas produire les résultats escomptés.
 
 
 ## Affichage des workflows archivés {#viewing-archived-workflows}
