@@ -10,9 +10,9 @@ kt: 9455, 9471, 9472, 9473
 thumbnail: 339168.jpg
 exl-id: 6e080945-8789-4dfa-b093-9df10c278e11
 source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '83'
+ht-degree: 100%
 
 ---
 
