@@ -83,6 +83,7 @@ Consultez cette section pour savoir comment afficher le rapport de l’analyseur
 
    >[!NOTE]
    >
+
 Vous pouvez forcer l’analyseur des bonnes pratiques à effacer son cache et à générer de nouveau le rapport en cliquant sur **Refresh Report** (Actualiser le rapport).
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/BPA_pic7.png)

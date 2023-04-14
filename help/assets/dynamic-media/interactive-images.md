@@ -64,8 +64,7 @@ Si vous utilisez un gestionnaire de contenu web tiers, intégrez la nouvelle vid
 >
 >* Vous souhaitez ajouter de l’interactivité à votre image en déclenchant des aperçus rapides.
 >* Votre implémentation d’Experience Manager n’utilise *pas* de structure d’intégration eCommerce pour extraire les données de produit dans Experience Manager à partir de toute solution d’e-commerce. De telles solutions peuvent inclure IBM WebSphere® Commerce, Elastic Path, SAP Hybris ou Intershop.
->
-Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
+>Si votre mise en œuvre d’Experience Manager utilise l’e-commerce, vous pouvez ignorer cette tâche et passer à la tâche suivante.
 
 Commencez par identifier les variables dynamiques utilisées par votre mise en œuvre de l’aperçu rapide existant afin de pouvoir entrer les données de zone réactive pour créer l’image interactive.
 
@@ -221,7 +220,7 @@ Lorsque vous ajoutez des zones réactives, vous pouvez les définir comme un éc
 Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md).
 
 >[!NOTE]
-Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Utilisez ou créez plutôt des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+>Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Utilisez ou créez plutôt des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 Les options Annuler et Rétablir, proches du coin supérieur droit de la page, sont prises en charge au cours de la session de création/modification actuelle.
 
@@ -230,12 +229,12 @@ Lorsque vous avez fini de créer votre image interactive, vous pouvez utiliser l
 Voir [(Facultatif) Aperçu des images interactives](#optional-previewing-interactive-images).
 
 >[!NOTE]
-Lorsque vous ajoutez des zones réactives à une image dans une image interactive ou une bannière de carrousel, les informations de ces zones sont stockées au même emplacement de métadonnées. Cet emplacement dépend de l’emplacement de l’image, qu’il s’agisse d’une image interactive ou d’une bannière de carrousel. Cette fonctionnalité signifie que vous pouvez réutiliser facilement la même image (avec ses données de zone réactive définies) dans les visionneuses.
-Notez cependant que les bannières de carrousel prennent en charge les images à zones cliquables, qui peuvent également contenir des zones réactives. Les images interactives n’en comportent pas. Gardez cela en tête si vous envisagez de créer une image interactive ou une bannière de carrousel qui utilise la même image. Vous pouvez créer des images interactives et des bannières de carrousel en utilisant des copies distinctes de la même image à la place.
-Voir aussi [Bannières de carrousel](/help/assets/dynamic-media/carousel-banners.md).
+>Lorsque vous ajoutez des zones réactives à une image dans une image interactive ou une bannière de carrousel, les informations de ces zones sont stockées au même emplacement de métadonnées. Cet emplacement dépend de l’emplacement de l’image, qu’il s’agisse d’une image interactive ou d’une bannière de carrousel. Cette fonctionnalité signifie que vous pouvez réutiliser facilement la même image (avec ses données de zone réactive définies) dans les visionneuses.
+>Notez cependant que les bannières de carrousel prennent en charge les images à zones cliquables, qui peuvent également contenir des zones réactives. Les images interactives n’en comportent pas. Gardez cela en tête si vous envisagez de créer une image interactive ou une bannière de carrousel qui utilise la même image. Vous pouvez créer des images interactives et des bannières de carrousel en utilisant des copies distinctes de la même image à la place.
+>Voir aussi [Bannières de carrousel](/help/assets/dynamic-media/carousel-banners.md).
 
 >[!NOTE]
-Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
+>Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
 
 **Pour ajouter des zones réactives à une bannière d’image :**
 
@@ -284,7 +283,7 @@ Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experi
       * Indiquez la largeur et la hauteur du fragment d’expérience tel que vous souhaitez qu’il apparaisse dans la bannière.
 
          >[!NOTE]
-         Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Utilisez ou créez plutôt des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
+         >Les outils de partage sur les réseaux sociaux ne sont pas pris en charge dans l’image interactive lorsque vous incorporez la visionneuse dans un fragment d’expérience. Utilisez ou créez plutôt des paramètres prédéfinis de visionneuse qui ne comportent pas d’outils de partage sur les réseaux sociaux. Ces paramètres prédéfinis de visionneuse vous permettent de l’incorporer dans des fragments d’expérience.
 
 
 
@@ -298,7 +297,7 @@ Voir [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experi
    Voir [Intégration d’une image interactive à votre site web](#integrating-an-interactive-image-with-your-website).
 
    >[!NOTE]
-   Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
+   >Si vous modifiez des images interactives avec des zones réactives et que vous recadrez l’image, les zones réactives sont supprimées.
 
 ### (Facultatif) Aperçu des images interactives {#optional-previewing-interactive-images}
 
@@ -345,7 +344,7 @@ En prenant comme exemple le [site web de démonstration](https://experienceleagu
 L’intégration revient simplement à supprimer la balise `IMG` et à la remplacer par le code intégré copié à partir d’Experience Manager Assets. Vous pouvez voir que le résultat [montre l’image interactive Shoppable sur la page avec trois zones réactives en cercle](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=fr).
 
 >[!NOTE]
-À ce stade, les zones réactives de l’image interactive Shoppable du site web de démonstration sont en mode affichage uniquement. Elles ne sont pas encore intégrées aux aperçus rapides existants.
+>À ce stade, les zones réactives de l’image interactive Shoppable du site web de démonstration sont en mode affichage uniquement. Elles ne sont pas encore intégrées aux aperçus rapides existants.
 
 Pour appliquer un « recadrage » à une image interactive shoppable pour rendre plus réactif votre environnement, ajoutez l’attribut de configuration Image interactive `ZoomView.iscommand` au chemin d’accès. Dans ce cas, le composant `ZoomView` est appelé et `iscommand` est la commande de diffusion d’image de recadrage que vous appliquez.
 
@@ -358,7 +357,7 @@ Vous êtes désormais prêt à intégrer l’image interactive à un aperçu rap
 ## Intégration d’une image interactive dans un aperçu rapide existant {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
-Cette tâche ne s’applique que si vous êtes un client Experience Manager Assets autonome.
+>Cette tâche ne s’applique que si vous êtes un client Experience Manager Assets autonome.
 
 La dernière étape de cette procédure intègre l’image interactive à un aperçu rapide existant sur votre site web. Pour ce qui est de l’intégration, il n’existe pas de solution qui fonctionne dans tous les cas. Chaque mise en œuvre d’aperçu rapide est unique et une approche spécifique est donc nécessaire. Ainsi, il est utile de faire appel à l’assistance d’un informaticien responsable du front-end.
 
@@ -418,27 +417,27 @@ En utilisant nos exemples précédents d’URL d’aperçu rapide, vous pouvez v
  <tbody>
   <tr>
    <td><p>SKU unique, trouvé dans la chaîne de requête</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>SKU unique, trouvé dans le chemin d’accès à l’URL</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>SKU et ID de catégorie dans la chaîne de requête</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
  </tbody>
 </table>

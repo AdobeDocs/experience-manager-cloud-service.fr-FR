@@ -356,11 +356,11 @@ Pour personnaliser votre fragment, procédez comme suit :
    >Le **Chemin d’accès ContextHub** sélectionné dans l’onglet **Personnalisation** doit correspondre à l’une des valeurs suivantes :
    >
    >* le même chemin d’accès que celui configuré pour la page sur laquelle le fragment sera rendu
-      >Ou :
+   >Ou :
    >* un chemin contenant un sous-ensemble des magasins définis dans le chemin d’accès ContextHub configuré pour la page.
-
    >
    > 
+
 Le **Chemin d’accès de segments** sélectionné dans l’onglet **Personnalisation** doit correspondre à l’une des valeurs suivantes :
    * le même chemin d’accès que celui configuré pour la page sur laquelle le fragment sera rendu
 Ou
@@ -391,8 +391,8 @@ Les détails sont affichés dans toutes les vues de la console **Fragments d’e
    Les propriétés sont disponibles dans plusieurs onglets :
 
    >[!CAUTION]
-   Ces onglets s’affichent lorsque vous ouvrez les **propriétés** à partir de la console Fragments d’expérience.
-   Si vous **ouvrez les propriétés** lors de la modification d’un fragment d’expérience, les [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriées s’affichent.
+   >Ces onglets s’affichent lorsque vous ouvrez les **propriétés** à partir de la console Fragments d’expérience.
+   >Si vous **ouvrez les propriétés** lors de la modification d’un fragment d’expérience, les [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriées s’affichent.
 
    ![Propriétés du fragment d’expérience](/help/sites-cloud/authoring/assets/xf-17.png)
 
@@ -421,7 +421,7 @@ Les détails sont affichés dans toutes les vues de la console **Fragments d’e
 Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut à partir du navigateur.
 
 >[!NOTE]
-Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
+>Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publication de fragments d’expérience {#publishing-experience-fragments}
 
