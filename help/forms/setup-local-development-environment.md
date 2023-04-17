@@ -2,10 +2,10 @@
 title: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 description: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: dea6c266e5c10135a320f923dc77d0fd2050988e
+source-git-commit: a4fd268cb143c1356de3db9d55b16ccb58b67d4b
 workflow-type: tm+mt
-source-wordcount: '2960'
-ht-degree: 100%
+source-wordcount: '3020'
+ht-degree: 98%
 
 ---
 
@@ -191,15 +191,14 @@ AEM Forms as a Cloud Services fournit un environnement SDK Docker qui facilite
    * (Apple macOS) Installez [Docker Desktop pour Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Il comprend Docker Engine, le client de ligne de commande Docker, Docker Composition, Docker Content Trust, Kubernetes et Credential Helper.
 
    * (Pour Linux®) Installez [Docker Engine](https://docs.docker.com/engine/install/#server) et [Docker Compose](https://docs.docker.com/compose/install/) sur votre ordinateur.
-
    >[!NOTE]
    >
    > * Pour Apple macOS, placez sur liste autorisée les dossiers contenant des instances d’auteur AEM locales.
    >
    > * Docker Desktop pour Windows prend en charge deux back-ends, Hyper-V
-   > (hérité) et WSL2 (moderne). Le partage de fichiers est automatiquement
-   > géré par Docker lors de l’utilisation de WSL2 (moderne). Vous devez
-   > configurer explicitement le partage de fichiers lors de l’utilisation d’Hyper-V (hérité).
+      > (hérité) et WSL2 (moderne). Le partage de fichiers est automatiquement
+      > géré par Docker lors de l’utilisation de WSL2 (moderne). Vous devez
+      > configurer explicitement le partage de fichiers lors de l’utilisation d’Hyper-V (hérité).
 
 
 1. Créez un dossier, par exemple aem-sdk, parallèlement à vos instances d’auteur et de publication, comme C:\aem-sdk.
@@ -242,7 +241,7 @@ Utilisez ce projet pour créer des formulaires adaptatifs, déployer des mises �
 >[!NOTE]
 >
 > Configurez un projet basé sur l’archétype AEM version 30 ou supérieure pour obtenir et utiliser les modèles de données de formulaire Microsoft® Dynamics 365 et Salesforce avec AEM Forms as a Cloud Service.
->Configurez un projet basé sur l’archétype AEM version 32 ou ultérieure pour obtenir et utiliser les thèmes Tranquil, Urbane et Ultramarine avec AEM Forms as a Cloud Service.
+Configurez un projet basé sur l’archétype AEM version 32 ou ultérieure pour obtenir et utiliser les thèmes Tranquil, Urbane et Ultramarine avec AEM Forms as a Cloud Service.
 
 Pour configurer le projet :
 
@@ -334,7 +333,7 @@ Votre environnement de développement local est prêt.
 
 ## Activer les composants principaux des formulaires adaptatifs pour un projet basé sur l’archétype AEM existant. {#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project}
 
-Si vous utilisez un programme basé sur la version 40 ou ultérieure de l’archétype AEM pour AEM Forms as a Cloud Service, les composants principaux sont automatiquement activés pour votre environnement.
+Si vous utilisez un programme basé sur la version 40 ou ultérieure de l’archétype AEM pour AEM Forms as a Cloud Service, les composants principaux sont automatiquement activés pour votre environnement. Lors de l’activation des composants principaux pour votre environnement, le modèle **Formulaires adaptatifs (composant principal)** et le thème de la zone de travail sont ajoutés à votre environnement. Si votre SDK AEM version antérieure à la version 2023.02.0, [assurez-vous que vous avez `prerelease` indicateur activé dans votre environnement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) car les composants principaux de Forms adaptatif faisaient partie de la version préliminaire avant la version 2023.02.0.
 
 Pour activer les composants principaux des formulaires adaptatifs pour votre environnement AEM Forms as a Cloud Service basés sur d’anciennes versions de l’archétype, incorporez les artefacts des exemples de composants principaux de la gestion de contenu web et les artefacts des composants principaux des formulaires (y compris des exemples) dans votre projet :
 
@@ -413,16 +412,16 @@ Pour activer les composants principaux des formulaires adaptatifs pour votre env
    ```
 
    >[!NOTE]
-   >Assurez-vous que les artefacts de composants principaux des formulaires adaptatifs suivants ne sont pas inclus dans votre projet.
-   >`<dependency>`
-   >`<groupId>com.adobe.aem</groupId>`
-   >`<artifactId>core-forms-components-apps</artifactId>`
-   >`</dependency>`
-   >et
-   >`<dependency>`
-   >`<groupId>com.adobe.aem</groupId>`
-   >`<artifactId>core-forms-components-core</artifactId>`
-   >`</dependency>`
+   Assurez-vous que les artefacts de composants principaux des formulaires adaptatifs suivants ne sont pas inclus dans votre projet.
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-apps</artifactId>`
+   `</dependency>`
+   et
+   `<dependency>`
+   `<groupId>com.adobe.aem</groupId>`
+   `<artifactId>core-forms-components-core</artifactId>`
+   `</dependency>`
 
 1. [Exécuter le pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr). Une fois le pipeline exécuté avec succès, les composants principaux des formulaires adaptatifs sont activés pour votre environnement. En outre, le modèle de formulaires adaptatifs (composants principaux) et le thème de la zone de travail sont ajoutés à votre environnement Forms as a Cloud Service.
 
