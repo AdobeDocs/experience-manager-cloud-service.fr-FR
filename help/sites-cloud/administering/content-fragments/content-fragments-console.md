@@ -5,10 +5,10 @@ landing-page-description: Découvrez comment gérer les fragments de contenu à 
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 6c15a4dc408d96a6532da67c1736bc3e96824321
+source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 85%
+source-wordcount: '1051'
+ht-degree: 80%
 
 ---
 
@@ -68,22 +68,33 @@ Vous pouvez constater ici qu’il existe trois zones principales :
       * Lorsque vous placez le pointeur de la souris sur les en-têtes de colonne, un sélecteur d’action déroulante et des curseur de largeur s’affichent. Ils vous permettent d’effectuer les opérations suivantes :
          * Tri : sélectionnez l’action appropriée pour croissant ou décroissant. Le tableau entier sera trié selon cette colonne. Le tri n&#39;est disponible que sur les colonnes appropriées.
          * Redimensionner la colonne à l’aide de l’action ou des curseur de largeur
-      * Vous pouvez [sélectionnez un ou plusieurs fragments de contenu pour afficher les actions disponibles](#actions-selected-content-fragment)
-   * **[Créer](#creating-new-content-fragment)** un fragment de contenu.
-   * [Filtrer](#filtering-fragments) les fragments de contenu en fonction d’une sélection de prédicats et enregistrer le filtre en vue d’une utilisation ultérieure.
-   * [Rechercher](#searching-fragments) les fragments de contenu.
-   * [Personnaliser la vue du tableau pour afficher les colonnes d’informations sélectionnées.](#select-available-columns)
-   * Utiliser **Ouvrir dans Assets** pour ouvrir directement l’emplacement actuel dans la console **Ressources**
 
-      >[!NOTE]
-      >
-      >La console **Ressources** permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
-      >
-      >* en utilisant le lien **Ouvrir dans Assets** (dans la console Fragments de contenu) ;
-      >* directement depuis le volet de navigation globale.
+## Actions {#actions}
+
+Dans la console, vous pouvez utiliser différentes actions, directement ou après la sélection d’un fragment spécifique :
+
+* Diverses actions sont directement [disponible à partir de la console](#available-actions)
+* Vous pouvez [sélectionnez un ou plusieurs fragments de contenu pour afficher les actions appropriées.](#actions-selected-content-fragment)
+
+### Actions (non sélectionnées) {#actions-unselected}
+
+Certaines actions sont disponibles à partir de la console, sans sélectionner de fragment de contenu spécifique :
+
+* **[Créer](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** un fragment de contenu.
+* [Filtrer](#filtering-fragments) les fragments de contenu en fonction d’une sélection de prédicats et enregistrer le filtre en vue d’une utilisation ultérieure.
+* [Rechercher](#searching-fragments) les fragments de contenu.
+* [Personnaliser la vue du tableau pour afficher les colonnes d’informations sélectionnées.](#select-available-columns)
+* Utiliser **Ouvrir dans Assets** pour ouvrir directement l’emplacement actuel dans la console **Ressources**
+
+   >[!NOTE]
+   >
+   >La console **Ressources** permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
+   >
+   >* en utilisant le lien **Ouvrir dans Assets** (dans la console Fragments de contenu) ;
+   >* directement depuis le volet de navigation globale.
 
 
-## Actions pour un fragment de contenu (sélectionné) {#actions-selected-content-fragment}
+### Actions pour un fragment de contenu (sélectionné) {#actions-selected-content-fragment}
 
 La sélection d’un fragment spécifique ouvre une barre d’outils axée sur les actions disponibles pour ce fragment. Vous pouvez également sélectionner plusieurs fragments. La sélection des actions sera adaptée en conséquence.
 
@@ -146,12 +157,6 @@ Comme pour d’autres consoles, vous pouvez configurer les colonnes visibles et 
 Vous y trouverez une liste de colonnes que vous pouvez masquer ou afficher :
 
 ![Console Fragments de contenu - Configuration des colonnes](assets/cfc-console-column-selection.png)
-
-## Créer un fragment de contenu {#creating-new-content-fragment}
-
-En sélectionnant **Créer**, vous ouvrez la boîte de dialogue compacte **Nouveau fragment de contenu** :
-
-![Console Fragments de contenu - Création d’un fragment](assets/cfc-console-create.png)
 
 ## Filtrer des fragments {#filtering-fragments}
 
