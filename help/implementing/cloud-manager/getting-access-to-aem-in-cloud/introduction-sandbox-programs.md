@@ -2,10 +2,10 @@
 title: Présentation des programmes Sandbox
 description: Découvrez en quoi les programmes Sandbox diffèrent des programmes de production.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
-source-wordcount: '438'
-ht-degree: 100%
+source-git-commit: 18c5d2ba77a97413d0d83235ad2baec9fe4b0238
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 88%
 
 ---
 
@@ -70,3 +70,9 @@ mis en veille, ils peuvent être réactivés manuellement.
 Les programmes Sandbox sont supprimés après 6 mois de mise en veille continue, après quoi ils peuvent être recréés.
 
 Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md).
+
+### Aucun support technique {#no-support}
+
+Étant donné qu’un programme d’environnement de test est généralement créé à des fins de formation, d’exécution de démonstrations, d’activation ou de preuve de concepts, la prise en charge technique n’est pas disponible pour les problèmes rencontrés dans un programme d’environnement de test.
+
+Si vous rencontrez des problèmes lors de la création et de la gestion de vos programmes Sandbox, cela reste dans le cadre de l’assistance technique.
