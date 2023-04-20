@@ -2,10 +2,10 @@
 title: Concepts de création
 description: Concepts de création dans AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 81%
 
 ---
 
@@ -33,9 +33,9 @@ L’auteur travaille dans ce qu’on appelle l’**environnement de création**.
 
 >[!NOTE]
 >
->Votre compte doit disposer des droits d’accès appropriés pour la création, la modification ou la publication de contenu.
+>Votre compte doit disposer des droits d’accès appropriés pour créer, modifier ou publier du contenu.
 
-En fonction de la configuration de votre instance et de vos droits d’accès personnels, vous pouvez effectuer diverses tâches sur votre contenu, par exemple :
+Selon la configuration de votre instance et de vos droits d’accès personnels, vous pouvez effectuer de nombreuses tâches sur votre contenu, notamment :
 
 * la génération d’un nouveau contenu ou modification du contenu existant sur une page ;
 * l’utilisation de modèles prédéfinis pour créer des pages de contenu ;
@@ -52,11 +52,17 @@ Certaines tâches administratives peuvent aussi vous aider à gérer votre conte
 >
 >AEM est également administré à partir de l’environnement de création.
 
+## Prévisualisation du contenu {#previewing-content}
+
+AEM propose également un service de prévisualisation de sites qui permet aux développeurs et aux auteurs de contenu de prévisualiser l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement.
+
+Voir [Aperçu du contenu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) pour plus de détails.
+
 ## Environnement de publication {#publish-environment}
 
 Une fois prêt, le contenu de votre site est publié dans l’**environnement de publication**. Ici, vos pages sont mises à la disposition de l’audience prévue, en fonction de l’aspect global de l’interface que vous avez conçue.
 
-Pour plus d’informations sur la publication et l’annulation de la publication de pages, consultez le document [Publication de pages.](/help/sites-cloud/authoring/fundamentals/publishing-pages.md)
+Pour plus d’informations sur la publication et la dépublication de pages, consultez le document [Publication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
 ## Dispatcher {#dispatcher}
 
