@@ -3,10 +3,10 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
-workflow-type: ht
-source-wordcount: '2701'
-ht-degree: 100%
+source-git-commit: 614834961c23348cd97e367074db0a767d31bba9
+workflow-type: tm+mt
+source-wordcount: '2732'
+ht-degree: 98%
 
 ---
 
@@ -279,7 +279,7 @@ et :
 
 **file included at unknown location: ...**
 
-Votre configuration de ferme comporte quatre sections où vous pouvez inclure votre propre fichier : `/clientheaders`, `filters`, `/rules` dans la section `/cache` et `/virtualhosts`. Les fichiers inclus doivent être nommés comme suit :
+Votre configuration de ferme comporte quatre sections où vous pouvez inclure vos propres fichiers : `/clientheaders`, `filters`, `/rules` in `/cache` et `/virtualhosts`. Les fichiers inclus doivent être nommés comme suit :
 
 | Section | Nom du fichier d’inclusion |
 |------------------|--------------------------------------|
@@ -443,6 +443,10 @@ Les niveaux de journal de ces modules sont définis par les variables `DISP_LOG_
 Lors de l’exécution locale du Dispatcher, les journaux sont directement imprimés dans la sortie du terminal. La plupart du temps, vous souhaitez que ces journaux soient en mode DEBUG, ce qui peut être réalisé en transmettant le niveau Debug comme paramètre lors de l’exécution de Docker. Par exemple : `DISP_LOG_LEVEL=Debug ./bin/docker_run.sh src docker.for.mac.localhost:4503 8080`.
 
 Les journaux des environnements cloud sont exposés par le biais du service de journalisation disponible dans Cloud Manager.
+
+>[!NOTE]
+>
+>Pour AEM environnements as a Cloud Service, le débogage est le niveau maximal de verbosité. Le niveau du journal de trace n’est pas pris en charge. Évitez donc de le définir lorsque vous travaillez dans des environnements cloud.
 
 ### Rechargement et validation automatiques {#automatic-reloading}
 
