@@ -2,10 +2,10 @@
 title: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service
 description: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -56,11 +56,11 @@ Cela :
 
 * permet à AEM as a Cloud Service de s’adapter aux variations de vos schémas de trafic.
 
-La mise à l’échelle des instances par client du service peut être automatique ou manuelle, et ce, sur les deux axes :
+La mise à l’échelle des instances par client du service s’applique aux deux axes :
 
-* Vertical : la mémoire allouée et la capacité du processeur peuvent être augmentées ou réduites pour un nombre fixe de nœuds.
+* Horizontal : le nombre de noeuds pour un service donné est augmenté ou diminué automatiquement, tout en autorisant des configurations par défaut individuelles.
 
-* Horizontal : le nombre de nœuds pour un service donné peut être augmenté ou réduit.
+* Vertical : la mémoire allouée et la capacité du processeur peuvent être augmentées ou réduites par le biais de la configuration pour un nombre fixe de noeuds afin de répondre aux besoins individuels si nécessaire.
 
 ## Environnements {#environments}
 
