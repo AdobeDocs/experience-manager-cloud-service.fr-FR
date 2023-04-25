@@ -4,14 +4,14 @@ description: Présentation de l’outil de mappage des utilisateurs (hérité)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
-source-git-commit: 69dfe7f98628ab67cc3a994c32b1530550ec6a01
+source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 84%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
-# Présentation de l’outil de mappage des utilisateurs {#overview-user-mapping-tool}
+# Présentation de l’outil de mappage des utilisateurs (hérité) {#overview-user-mapping-tool}
 
 
 <!-- Alexandru: drafting this for now
