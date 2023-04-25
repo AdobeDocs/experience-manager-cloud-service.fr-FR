@@ -4,10 +4,10 @@ description: Utilisez un exemple d’application React pour découvrir comment p
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: f3f7102496e846705718a65d69f59e110fbecae9
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +41,7 @@ Commencez dans l’éditeur de fragment de contenu avec l’exemple d’applicat
 
 ![Aperçu de l’application](assets/do-not-localize/preview-app-1.png)
 
-## Modifier un en-tête dans l’application {#edit-app}
+## Modification d’un en-tête dans l’application {#edit-app}
 
 L’éditeur de fragment de contenu affiche la disposition de base de l’application sous la forme d’un fragment de contenu de page. Les **Panneaux** représentent différentes pages de l’application, chacune d’elles étant son propre fragment de contenu. En modifiant ces fragments, vous pouvez changer le contenu de l’application.
 
@@ -63,7 +63,7 @@ L’éditeur de fragment de contenu affiche la disposition de base de l’applic
 
 C’est aussi simple que cela de mettre à jour le contenu d’une application React lorsqu’elle est intégrée à un CMS AEM découplé.
 
-## Changer une image dans l’application {#change-image}
+## Permutation d’une image dans l’application {#change-image}
 
 Maintenant que vous avez modifié un titre dans l’application, essayez de changer une image.
 

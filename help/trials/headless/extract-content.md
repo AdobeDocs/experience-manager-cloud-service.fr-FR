@@ -4,10 +4,10 @@ description: Découvrez comment utiliser les fragments de contenu et l’API Gra
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 09396211b428884f4d522fbcc2dd13086af51dfd
+source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 96%
+source-wordcount: '1092'
+ht-degree: 71%
 
 ---
 
@@ -34,10 +34,6 @@ ht-degree: 96%
 Ouvrez l’Explorateur GraphQL dans un nouvel onglet. Vous pouvez y créer et valider des requêtes sur votre contenu découplé avant de les utiliser pour alimenter le contenu de votre application ou site web.
 
 1. Votre version d’évaluation d’AEM Headless est fournie avec un point d’entrée préchargé de fragments de contenu à partir desquels vous pouvez extraire du contenu à des fins de test. Veillez à sélectionner le point d’entrée **Ressources de démonstration AEM** dans le menu déroulant **Point d’entrée** situé dans le coin supérieur droit de l’éditeur.
-
-1. Problème connu : si la variable **AEM des ressources de démonstration** Le point d’entrée n’est pas présent dans le menu déroulant, accédez à Package Manager (`/crx/packmgr` chemin d’accès dans votre environnement AEM) et réinstallez la variable `aem-demo-assets.ui.content-{VERSION}.zip` package :
-
-   ![Réinstaller le package](assets/do-not-localize/reinstall-aem-demo-assets-package.png)
 
 1. Copiez le fragment de code suivant pour obtenir une requête de liste du point d’entrée préchargé **Ressources de démonstration AEM**. La requête de liste renvoie une liste de tout le contenu qui utilise un modèle de fragment de contenu spécifique. Les pages de stock et de catégorie utilisent généralement ce format de requête.
 
@@ -71,6 +67,10 @@ Ouvrez l’Explorateur GraphQL dans un nouvel onglet. Vous pouvez y créer et va
    ![Requête de liste](assets/do-not-localize/list-query-1-3-4-5.png)
 
 Vous venez de valider une requête de liste afin d’obtenir une liste complète de tous les fragments de contenu. Ce processus permet de s’assurer que la réponse est bien celle attendue par votre application, avec des résultats qui illustrent la manière dont vos applications et sites web récupéreront le contenu créé dans AEM.
+
+>[!NOTE]
+>
+>Si vous ne pouvez pas sélectionner la variable **AEM des ressources de démonstration** dans la liste déroulante, contactez l’assistance clientèle d’Adobe ou contactez l’ [AEM canal du Slack d’essais.](https://adobe-dx-support.slack.com/)
 
 ## Requête pour obtenir un fragment de contenu spécifique {#bypath-query}
 
@@ -132,3 +132,64 @@ Maintenant que vous avez exécuté les deux principaux types de requêtes, vous 
    ![Exécution d’une requête personnalisée.](assets/do-not-localize/custom-query-3-4-5-6.png)
 
 C’est ainsi que votre contenu peut être diffusé aux expériences numériques omnicanales.
+
+## Requêtes persistantes {#persisted-queries}
+
+Les requêtes persistantes sont le mécanisme préféré pour exposer l’API GraphQL aux applications clientes. Une fois qu’une requête a été conservée, elle peut être demandée à l’aide d’une requête de GET et mise en cache pour une récupération rapide.
+
+Vous allez créer une requête persistante qui inclut les données que vous souhaitez utiliser à partir de votre application cliente.
+
+1. Vous utiliserez les données que vous avez créées précédemment en tant que fragment de contenu. Assurez-vous donc que la variable **Votre projet** le point de fin est sélectionné dans la variable **Point d’entrée** menu déroulant dans le coin supérieur droit de l’éditeur.
+
+1. Copiez le fragment de code suivant.
+
+   ```text
+      {
+      adventureList {
+       items {
+         title
+         description {
+           plaintext
+         }
+         title
+         price
+         image {
+           ... on ImageRef {
+             _publishUrl
+             mimeType
+           }
+         }
+       }
+     }
+   }
+   ```
+
+1. Remplacez le contenu existant dans l’éditeur de requêtes en collant le code copié.
+
+   >[!NOTE]
+   >
+   >Si vous n’avez pas utilisé les mêmes descriptions de champ que celles décrites dans les modules précédents, vous devrez mettre à jour les noms de champ dans cette requête.
+   >
+   >Utilisez la fonction de saisie automatique GraphQL (Ctrl+Espace ou Option+Espace) comme décrit précédemment pour identifier les propriétés disponibles.
+
+1. Cliquez ensuite sur le bouton **Lecture** en haut à gauche de l’éditeur de requêtes pour exécuter la requête.
+
+1. Les résultats s’affichent dans le panneau droit, en regard de l’éditeur de requêtes. Si la requête est incorrecte, une erreur s’affiche dans le panneau droit.
+
+   ![Créer une requête](assets/do-not-localize/own-query.png)
+
+1. Lorsque votre requête est satisfaite, cliquez sur le bouton **Enregistrer sous** dans la partie supérieure de l’éditeur de requêtes pour conserver la requête.
+
+1. Dans le **Nom de la requête** pop-up, attribuez le nom à votre requête `adventure-list`.
+
+1. Appuyez ou cliquez sur **Enregistrer sous**.
+
+   ![Requête persistante](assets/do-not-localize/persist-query.png)
+
+1. La requête est conservée comme confirmée par un message de bannière en bas de l’écran. La requête apparaît désormais également dans le panneau de gauche des requêtes persistantes dans la fenêtre.
+
+1. Pour que la requête persistante soit disponible publiquement, elle doit être publiée, tout comme la manière dont vos fragments de contenu doivent être publiés. Cliquez sur le bouton **Publier** en haut à droite de l’éditeur de requêtes pour publier la requête.
+
+1. La publication est confirmée par une notification de bannière.
+
+Vous disposez désormais d’une nouvelle requête conservée qui ne contiendra que les propriétés et les formats spécifiques que vous avez définis.
