@@ -4,9 +4,9 @@ description: Explorez la récupération de contenu JSON à partir de votre envir
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 3bfecf4d577c8cb81b1c1cf02b1f9299277fbc8b
+source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -29,13 +29,13 @@ ht-degree: 0%
 >title="Dans ce module, vous avez appris à utiliser le client AEM sans affichage pour JavaScript pour récupérer les données JSON de votre environnement d’évaluation à l’aide de requêtes persistantes GraphQL.<br><br>Vous comprenez maintenant comment utiliser ce client pour utiliser les données de votre propre application web."
 >abstract=""
 
-## Application CodePen {#codepen-app}
+## CodePen {#codepen}
 
-CodePen est un éditeur de code en ligne et un terrain de jeu pour le développement web front-end. Il vous permet d’écrire du code de HTML, CSS et JavaScript dans votre navigateur et de voir presque instantanément les résultats de votre travail. Vous pouvez également enregistrer votre travail et le partager avec d’autres personnes. Nous avons créé une application CodePen que vous pouvez utiliser pour récupérer des données JSON de votre environnement d’évaluation à l’aide de la fonction [AEM client sans affichage pour JavaScript](https://github.com/adobe/aem-headless-client-js). Vous pouvez utiliser cette application en l’état ou la dupliquer dans votre propre compte CodePen pour la personnaliser davantage.
+CodePen est un éditeur de code en ligne et un terrain de jeu pour le développement web front-end. Il vous permet d’écrire du code de HTML, CSS et JavaScript dans votre navigateur et d’afficher les résultats de votre travail presque instantanément. Vous pouvez également enregistrer votre travail et le partager avec d’autres personnes. Nous avons créé une application dans CodePen que vous pouvez utiliser pour récupérer des données JSON de votre environnement d’évaluation à l’aide de la fonction [AEM client sans affichage pour JavaScript](https://github.com/adobe/aem-headless-client-js). Vous pouvez utiliser cette application en l’état ou la dupliquer dans votre propre compte CodePen pour la personnaliser davantage.
 
-Cliquez sur le bouton &quot;Launch&quot; ci-dessus pour accéder à l’application CodePen, qui constitue un exemple minimal de récupération des données JSON avec JavaScript. L’exemple d’application est conçu pour effectuer le rendu de tout contenu JSON renvoyé, quelle que soit la structure du modèle de fragment de contenu sous-jacent. L’application récupère les données d’une `aem-demo-assets` Requête persistante incluse dans votre environnement d’évaluation. Vous devriez voir une réponse JSON similaire à ce qui suit :
+Cliquez sur le bouton **Lancement de l’exemple d’application CodePen** à partir du test, vous accédez à l’application dans CodePen. L’application sert d’exemple minimal pour récupérer des données JSON avec JavaScript. L’exemple d’application est conçu pour effectuer le rendu de tout contenu JSON renvoyé, quelle que soit la structure du modèle de fragment de contenu sous-jacent. Par défaut, l’application récupère les données d’une `aem-demo-assets` requête persistante incluse dans votre environnement d’évaluation. Vous devriez voir une réponse JSON similaire à ce qui suit :
 
-```
+```json
 {
   "data": {
     "adventureList": {
@@ -47,15 +47,15 @@ Cliquez sur le bouton &quot;Launch&quot; ci-dessus pour accéder à l’applicat
           ...
 ```
 
-Si une erreur s’affiche à la place, recherchez plus de détails dans la console du navigateur ou contactez-nous. [sur Slack](https://adobe-dx-support.slack.com).
+Si une erreur s’affiche à la place, recherchez plus de détails dans la console du navigateur ou contactez [sur Slack](https://adobe-dx-support.slack.com).
 
-Ensuite, vous allez configurer l’application pour récupérer les données de la requête persistante que vous avez créée dans un module précédent.
+Maintenant que vous connaissez un peu CodePen, vous allez configurer l’application pour récupérer les données de la requête persistante que vous avez créée dans un module précédent.
 
 ## Présentation du code JavaScript {#code-walkthrough}
 
-Le volet JS (JavaScript) sur CodePen contient les cerveaux de l’exemple d’application. À partir de la ligne 2, nous importons le client AEM sans affichage pour JavaScript à partir du réseau de diffusion de contenu Skypack. Skypack est utilisé pour faciliter le développement sans étape de génération, mais vous pouvez également utiliser le client AEM sans tête avec NPM ou Yarn dans vos propres projets. Consultez les instructions d’utilisation dans la section [LISEZMOI](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) pour plus de détails.
+Le **JS** Le volet situé à droite de CodePen contient le code JavaScript de l’exemple d’application. À partir de la ligne 2, nous importons le client AEM sans affichage pour JavaScript à partir du réseau de diffusion de contenu Skypack. Skypack est utilisé pour faciliter le développement sans étape de génération, mais vous pouvez également utiliser le client AEM sans tête avec NPM ou Yarn dans vos propres projets. Consultez les instructions d’utilisation dans la section [LISEZMOI](https://github.com/adobe/aem-headless-client-js#aem-headless-client-for-javascript) pour plus de détails.
 
-```
+```javascript
 import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headless-client-js@v3.2.0';
 ```
 
@@ -63,7 +63,7 @@ Sur la ligne 6, nous lisons les détails de votre hôte de publication à partir
 
 Nous configurons le client AEM sans affichage sur la ligne 12 afin d’utiliser une fonction d’exécution d’Adobe E/S pour proxy afin d’éviter des problèmes de CORS. Cela n’est pas nécessaire pour vos propres projets, mais il l’est pour que l’application CodePen fonctionne avec votre environnement d’évaluation. La fonction proxy est configurée pour utiliser la fonction `publishHost` qui a été fournie dans le paramètre de requête.
 
-```
+```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   // Use a proxy to avoid CORS issues
   serviceURL: 'https://102588-505tanocelot.adobeioruntime.net/api/v1/web/aem/proxy',
@@ -73,44 +73,44 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
 });
 ```
 
-Enfin, la fonction `fetchJsonFromGraphQL()` est utilisé pour effectuer la requête de récupération à l’aide du client AEM sans affichage. Il est appelé chaque fois que le code est modifié ou peut être déclenché en appuyant sur le lien &quot;Récupérer&quot;. Le réel `aemHeadlessClient.runPersistedQuery(..)` appel se produit à la ligne 34. Un peu plus tard, nous apporterons une modification à la manière dont ces données JSON sont rendues, mais pour l’instant, nous allons simplement les imprimer sur la page `#output` div à l’aide de `resultToPreTag(queryResult)` fonction .
+Enfin, la fonction `fetchJsonFromGraphQL()` est utilisé pour effectuer la requête de récupération à l’aide du client AEM sans affichage. Il est appelé chaque fois que le code est modifié ou peut être déclenché en cliquant sur la variable **Refetch** lien. Le réel `aemHeadlessClient.runPersistedQuery(..)` appel se produit à la ligne 34. Un peu plus tard, nous apporterons une modification à la manière dont ces données JSON sont rendues, mais pour l’instant, nous allons simplement les imprimer sur la page `#output` div à l’aide de `resultToPreTag(queryResult)` fonction .
 
-## Récupérer les données de votre requête persistante {#use-persisted-query}
+## Récupérer des données à partir de votre requête persistante {#use-persisted-query}
 
-Sur la ligne 25, nous indiquons à partir de quelle requête GraphQL persistante l’application doit récupérer les données. Le nom de la requête persistante est une combinaison du nom du point de terminaison (c.-à-d. `your-project` ou `aem-demo-assets`), suivie d’une barre oblique, puis du nom de la requête. Si vous avez suivi exactement les instructions du module précédent, la requête persistante que vous avez créée se trouve dans la variable `your-project` point de terminaison .
+Sur la ligne 25, nous indiquons à partir de quelle requête GraphQL persistante l’application doit récupérer les données. Le nom de la requête persistante est une combinaison du nom du point de terminaison (c.-à-d. `your-project` ou `aem-demo-assets`), suivie d’une barre oblique, puis du nom de la requête. Si vous avez suivi exactement les instructions du module précédent, la requête conservée que vous avez créée se trouve dans la variable `your-project` point de terminaison .
 
 1. Mettez à jour le `persistedQueryName` pour utiliser la requête persistante que vous avez créée dans le module précédent. Si vous avez suivi la suggestion de dénomination, vous avez créé une requête persistante nommée `adventure-list` dans le `your-project` et vous définiriez la variable `persistedQueryName` vers `your-project/adventure-list`:
 
-```javascript
-//
-// TODO: Use your persisted query here
-//
-persistedQueryName = 'your-project/adventure-list';
-```
+   ```javascript
+   //
+   // TODO: Use your persisted query here
+   //
+   persistedQueryName = 'your-project/adventure-list';
+   ```
 
-1. Une fois cette modification effectuée, l’application doit automatiquement s’actualiser et imprimer la réponse JSON brute de votre requête persistante vers le `#output` div. Si un message d’erreur s’affiche, vérifiez les détails supplémentaires dans la console. Contactez-nous [sur Slack](https://adobe-dx-support.slack.com) si vous rencontrez toujours des problèmes avec cette étape.
+1. Une fois cette modification effectuée, l’application doit automatiquement s’actualiser et imprimer la réponse JSON brute de votre requête persistante vers le `#output` div. Si un message d’erreur s’affiche, vérifiez les détails supplémentaires dans la console. Atteindre [sur Slack](https://adobe-dx-support.slack.com) si vous rencontrez toujours des problèmes avec cette étape.
 
 1. Ce fichier JSON contient-il les propriétés exactes dont votre application a besoin ? Si ce n’est pas le cas, revenez à la [Extraction de contenu à l’aide de l’API GraphQL](https://experience.adobe.com/experiencemanager/learn/extract_content_using_graphql) guide d’apprentissage pour apporter des modifications. N’oubliez pas d’enregistrer et de publier votre requête une fois que vous avez terminé.
 
 ## Modification du rendu JSON {#change-rendering}
 
-Actuellement, le fichier JSON est rendu tel quel dans une `pre` , ce qui n’est pas très créatif. Nous pouvons changer notre codePen pour utiliser la variable `resultToDom()` pour illustrer comment la réponse JSON peut être itérée afin de créer un résultat plus intéressant.
+Le fichier JSON est rendu tel quel dans une `pre` , ce qui n’est pas très créatif. Nous pouvons changer notre codePen pour utiliser la variable `resultToDom()` pour illustrer comment la réponse JSON peut être itérée afin de créer un résultat plus intéressant.
 
 1. Pour apporter cette modification, commentez la ligne 37 et supprimez le commentaire de la ligne 40 :
 
-```javascript
-// Output the results to a pre tag
-//resultToPreTag(queryResult);
+   ```javascript
+   // Output the results to a pre tag
+   //resultToPreTag(queryResult);
+   
+   // Alternatively, build a colorful div structure with the JSON results and render images inline
+   resultToDom(queryResult);
+   ```
 
-// Alternatively, build a colorful div structure with the JSON results and render images inline
-resultToDom(queryResult);
-```
+1. Cette fonction affiche également toutes les images incluses dans la réponse JSON sous la forme d’une `img` balise . Si la variable **Adventure** les fragments de contenu que vous avez créés n’incluent pas d’images, vous pouvez essayer de basculer pour utiliser la variable `aem-demo-assets/adventures-all` requête persistante en modifiant la ligne 25 :
 
-1. Cette fonction affiche également toutes les images incluses dans la réponse JSON sous la forme d’une `img` balise . Si les fragments de contenu &quot;Adventure&quot; que vous avez créés n’incluent pas d’images, vous pouvez essayer de basculer pour utiliser la variable `aem-demo-assets/adventures-all` requête persistante en modifiant la ligne 25 :
-
-```
-persistedQueryName = 'aem-demo-assets/adventures-all';
-```
+   ```javascript
+   persistedQueryName = 'aem-demo-assets/adventures-all';
+   ```
 
 Cette requête va générer une réponse JSON qui inclut des images, et la variable `resultToDom()` les rend en ligne.
 
