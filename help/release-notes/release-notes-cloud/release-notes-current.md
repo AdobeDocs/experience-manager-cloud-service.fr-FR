@@ -2,13 +2,13 @@
 title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
-source-git-commit: 34313a984b8ddb76211ed97dd11c437cbefa90c2
+exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
+source-git-commit: eb42c39af65f1e10417d855e5ad476cafc97da45
 workflow-type: tm+mt
 source-wordcount: '733'
-ht-degree: 33%
+ht-degree: 37%
 
 ---
-
 
 # Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
@@ -26,7 +26,7 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle des fonctionnalités (2023.2.0) est le 12 avril 2023. La prochaine version de la fonctionnalité (2023.4.0) est prévue pour le 4 mai 2023.
+La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle des fonctionnalités (2023.2.0) est le 12 avril 2023. La prochaine version de la fonctionnalité (2023.4.0) est prévue pour le 18 mai 2023.
 
 ## Vidéo de mise à jour {#release-video}
 
@@ -46,8 +46,8 @@ Regardez la vidéo Aperçu de la version de février 2023 pour un résumé des f
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
 * Nouvelle prise en charge du protocole (DASH - Dynamic Adaptive Streaming over HTTP) pour la diffusion en continu adaptative dans les diffusions vidéo Dynamic Media (avec CMAF activé) :
-   * La diffusion en continu adaptative (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos par l’utilisateur final.
-   * DASH est le protocole standard international pour la diffusion de vidéo adaptative en continu et est largement adopté dans le secteur.
+   * La diffusion en continu à débit adaptatif (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos aux utilisateurs et utilisatrices finaux
+   * Largement adopté dans le secteur, DASH est le protocole standard international pour la diffusion en continu à débit adaptatif de vidéos
    * Disponible dans NA, pour activation via un ticket d’assistance, bientôt disponible dans APAC, EMEA
 
 * Ajout de la prise en charge des images WebP pour extraire automatiquement les métadonnées, générer des miniatures et des rendus personnalisés. Les fonctionnalités Balisage intelligent et Recadrage intelligent sont désormais également prises en charge pour ces fichiers.
