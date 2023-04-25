@@ -2,8 +2,8 @@
 title: Fragments de contenu - Navigateur de configurations (Ressources - Fragments de contenu)
 description: Découvrez comment activer certaines fonctionnalités de fragments de contenu dans le navigateur de configurations.
 exl-id: 9fc911de-1d33-4811-8f58-ea21ce94bedb
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 100%
 

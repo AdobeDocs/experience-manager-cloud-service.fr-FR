@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 4f6901de479086ac40471885292ae82824516bd1
-workflow-type: ht
+source-git-commit: 42f7d82b69bed703f5f619c0b1d44046209ef7f2
+workflow-type: tm+mt
 source-wordcount: '1189'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -77,7 +77,7 @@ Pour télécharger des ressources, procédez comme suit :
    | **[!UICONTROL Créer un dossier distinct pour chaque ressource]** | Sélectionnez cette option pour créer un dossier pour chaque ressource contenant tous les rendus téléchargés de la ressource. Si cette option n’est pas sélectionnée, chaque ressource (et ses rendus s’ils sont sélectionnés pour le téléchargement) est contenue dans le dossier parent de l’archive générée. |
    | **[!UICONTROL E-mail]** | Sélectionnez cette option pour envoyer une notification par e-mail (contenant un lien vers votre téléchargement) à un autre utilisateur. Le destinataire doit être membre du groupe `dam-users`. Les modèles standard d’email sont disponibles aux emplacements suivants :<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Les modèles que vous personnalisez lors du déploiement sont disponibles aux emplacements suivants : <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Vous pouvez stocker des modèles personnalisés spécifiques au client à ces emplacements :<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Ressource(s)]** | Sélectionnez cette option pour télécharger la ressource dans son format d’origine.<br>L’option Sous-ressources est disponible si la ressource d’origine comporte des sous-ressources. |
-   | **[!UICONTROL Rendu(s)]** | Un rendu est une représentation binaire d’une ressource. Les ressources possèdent une représentation principale, à savoir celle du fichier transféré. Elles peuvent avoir un nombre illimité de représentations. <br> Avec cette option, vous pouvez sélectionner les rendus que vous souhaitez télécharger. Les rendus disponibles dépendent de la ressource que vous avez sélectionnée. |
+   | **[!UICONTROL Rendu(s)]** | Un rendu est une représentation binaire d’une ressource. Les ressources ont une Principale représentation : celle du fichier chargé. Elles peuvent avoir un nombre illimité de représentations. <br> Avec cette option, vous pouvez sélectionner les rendus que vous souhaitez télécharger. Les rendus disponibles dépendent de la ressource que vous avez sélectionnée. |
    | **[!UICONTROL Recadrages intelligents]** | Sélectionnez cette option pour télécharger tous les rendus de recadrage intelligent de la ressource sélectionnée depuis [!DNL Experience Manager]. Un fichier zip contenant les rendus de recadrage intelligent est créé et téléchargé sur votre ordinateur local. |
    | **[!UICONTROL Rendu(s) dynamique(s)]** | Sélectionnez cette option pour générer une série de rendus alternatifs en temps réel. Lorsque vous sélectionnez cette option, vous sélectionnez également les rendus à créer dynamiquement dans la liste [Paramètre d’image prédéfini](/help/assets/dynamic-media/image-presets.md). <br>De plus, vous pouvez sélectionner la taille, l’unité de mesure, le format, l’espace colorimétrique, la résolution, ainsi que les éventuels modificateurs d’image (pour inverser l’image, par exemple). Cette option n’est disponible que si vous avez activé [!DNL Dynamic Media]. |
 
@@ -105,7 +105,7 @@ La [!UICONTROL boîte de réception de téléchargement] affiche l’état du tr
 
 Le servlet par défaut d’[!DNL Experience Manager] permet aux utilisateurs et utilisatrices authentifiés d’émettre arbitrairement des requêtes de téléchargement simultanées de grande taille afin de créer des fichiers ZIP de ressources. La préparation des téléchargements peut avoir des conséquences sur les performances ou peut même surcharger le serveur et le réseau. Pour atténuer ces risques potentiels de déni de service, le composant OSGi `AssetDownloadServlet` est désactivé par défaut pour les instances de publication. Si vous n’avez pas besoin de la fonction de téléchargement sur les instances d’auteur, désactivez le servlet sur l’auteur.
 
-Pour permettre le téléchargement de fichiers depuis votre DAM (par exemple, lorsque vous utilisez un élément comme Asset Share Commons ou une autre implémentation de type portail), activez manuellement le servlet via une configuration OSGi. Adobe recommande de définir la taille de téléchargement autorisée sur la valeur la plus basse possible sans affecter les exigences de téléchargement au quotidien. Une valeur élevée peut avoir une incidence sur les performances.
+Pour autoriser le téléchargement de ressources à partir de la gestion des ressources numériques (par exemple, lors de l’utilisation d’un élément comme Asset Share Commons ou une autre mise en oeuvre de type portail), activez manuellement la servlet via une configuration OSGi. Adobe recommande de définir la taille de téléchargement autorisée aussi basse que possible sans affecter les exigences de téléchargement quotidiennes. Une valeur élevée peut avoir une incidence sur les performances.
 
 1. Créez un dossier avec une convention de nommage qui cible le mode d’exécution de publication, à savoir `config.publish` :
 

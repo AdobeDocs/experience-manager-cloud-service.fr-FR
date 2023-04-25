@@ -8,7 +8,7 @@ exl-id: 13f21d79-2a8d-4cb1-959e-c10cc44950ea
 source-git-commit: 3761d399de29645ec62cabf50bf6b26a64f3c7be
 workflow-type: tm+mt
 source-wordcount: '2441'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -272,7 +272,7 @@ Vous pouvez créer un groupe d’utilisateurs ou attribuer des autorisations à 
 
 **Pour fournir l’accès à un utilisateur à partir de la [!DNL User Admin Console] :**
 
-1. Ouvrez la console d’administration des utilisateurs d’[!DNL Experience Manager]. L’URL par défaut est `http://localhost:4502/userdamin`.
+1. Ouvrez l’Admin Console des utilisateurs d’[!DNL Experience Manager]. L’URL par défaut est `http://localhost:4502/userdamin`.
 
 1. Dans le volet de gauche, recherchez l’utilisateur en saisissant le `user_id` ou le `name`. Double-cliquez pour ouvrir les propriétés de l’utilisateur.
 

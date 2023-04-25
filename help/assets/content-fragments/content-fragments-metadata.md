@@ -2,10 +2,10 @@
 title: Métadonnées - Propriétés des fragments (Ressources - Fragments de contenu)
 description: Vous pouvez afficher et modifier les propriétés des métadonnées des fragments de contenu.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -17,15 +17,15 @@ Découvrez comment afficher et modifier les propriétés de métadonnées des fr
 
 Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments de contenu :
 
-1. Dans la console **Ressources**, naviguez jusqu’à l’emplacement de votre fragment de contenu.
-2. Vous pouvez :
+1. Dans le **Ressources** accédez à l’emplacement du fragment de contenu dans la console.
+2. Soit :
 
    * Sélectionnez [**Afficher les propriétés** pour ouvrir les boîtes de dialogue](/help/assets/manage-digital-assets.md#editing-properties). Une fois la collection ouverte pour consultation, vous pouvez également la modifier.
    * Ouvrez le fragment de contenu à modifier, puis sélectionnez **Métadonnées** dans le panneau latéral.
 
    ![métadonnées](assets/cfm-metadata-01.png)
 
-3. L’onglet **De base** fournit des options que vous pouvez afficher ou modifier :
+3. Le **De base** fournit des options que vous pouvez afficher ou modifier :
 
    * Une miniature, pour laquelle vous pouvez **charger une image**
    * Le **modèle de fragment de contenu** indique le modèle utilisé pour créer le fragment actif.

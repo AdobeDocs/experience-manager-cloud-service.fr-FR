@@ -126,7 +126,7 @@ Maintenant que vous en savez plus sur les bases, l’étape suivante consiste à
 
       * [Publication d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [Annulation de la publication d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+      * [Dépublication d’un modèle de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
       * [Modèles de fragment de contenu (publiés) verrouillés](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 

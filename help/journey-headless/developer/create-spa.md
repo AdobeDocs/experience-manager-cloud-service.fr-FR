@@ -45,7 +45,7 @@ Avant de commencer à travailler avec des SPA dans AEM, plusieurs conditions son
 
 ### Connaissances {#knowledge}
 
-* Expérience de développement de création de SPA avec des structures React ou Angular
+* Expérience de développement de création de SPA avec des frameworks React ou Angular
 * Compétences de base de création de fragments de contenu et de l’utilisation de l’éditeur dans AEM
 * Veillez à consulter le document [Couplage et découplage dans AEM](/help/implementing/developing/headful-headless.md) afin de comprendre les différents niveaux d’intégration de SPA possibles.
 
@@ -83,7 +83,7 @@ Pour une description complète de la façon dont AEM gère les SPA, consultez la
 
 ## Éditeur de SPA AEM {#aem-spa-editor}
 
-Les sites créés à l’aide de structures SPA courantes, telles que React et AngularJS, chargent leur contenu via le format JSON dynamique et ne fournissent pas la structure HTML dont l’éditeur de page AEM a besoin pour passer des commandes de modification.
+Les sites créés à l’aide de frameworks SPA courantes, telles que React et AngularJS, chargent leur contenu via le format JSON dynamique et ne fournissent pas le framework HTML dont l’éditeur de page AEM a besoin pour passer des commandes de modification.
 
 Pour activer la modification d’applications sur une seule page dans AEM, il faut qu’il y ait une correspondance entre la sortie JSON de l’application et le modèle de contenu dans le répertoire AEM afin d’enregistrer les modifications apportées au contenu.
 
@@ -121,7 +121,7 @@ Consultez ci-dessous les [ressources supplémentaires](#additional-resources) qu
 Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondissent certains concepts mentionnés dans ce document.
 
 * [Couplage et découplage dans AEM](/help/implementing/developing/headful-headless.md) : description des différents modèles de diffusion disponibles dans AEM
-* [Introduction et présentation des SPA.](/help/implementing/developing/hybrid/introduction.md) ; une bonne présentation des SPA en AEM
+* [Introduction et présentation des applications monopage (SPA).](/help/implementing/developing/hybrid/introduction.md) ; une bonne présentation des SPA en AEM
 * [Développement de SPA pour AEM](/help/implementing/developing/hybrid/developing.md) : consignes sur la manière de développer des SPA pour AEM
 * [Aperçu sur l’éditeur de SPA](/help/implementing/developing/hybrid/editor-overview.md) : informations détaillées sur le fonctionnement de l’éditeur de SPA
 * [Rendu côté serveur](/help/implementing/developing/hybrid/ssr.md) : comment configurer le rendu côté serveur pour les SPA AEM

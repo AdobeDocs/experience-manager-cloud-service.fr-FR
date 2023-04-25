@@ -7,7 +7,7 @@ exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
 source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
 workflow-type: tm+mt
 source-wordcount: '2397'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -15,17 +15,17 @@ ht-degree: 100%
 
 Un déploiement à l’échelle de l’entreprise d’Adobe Experience Manager Assets permet de stocker des quantités importantes de ressources. Dans certains cas, la recherche de la bonne ressource peut être difficile et longue si vous utilisez uniquement les fonctionnalités de recherche génériques d’Experience Manager.
 
-Utilisez les facettes de recherche dans le panneau Filtres pour ajouter plus de granularité à votre expérience de recherche et rendre ainsi la fonctionnalité de recherche plus efficace et souple. Les facettes de recherche ajoutent des dimensions multiples (prédicats) qui permettent d’effectuer des recherches plus complexes. Le panneau Filtres inclut quelques facettes standard. Vous pouvez également ajouter des facettes de recherche personnalisées.
+Utilisez les facettes de recherche du panneau Filtres pour ajouter plus de granularité à votre expérience de recherche et rendre la fonctionnalité de recherche plus efficace et plus polyvalente. Les facettes de recherche ajoutent plusieurs dimensions (prédicats) qui vous permettent d’effectuer des recherches plus complexes. Le panneau Filtres comprend quelques facettes standard. Vous pouvez également ajouter des facettes de recherche personnalisées.
 
 En résumé, les facettes de recherche permettent de rechercher des ressources de plusieurs façons plutôt que selon un seul ordre taxonomique prédéterminé. Vous pouvez facilement descendre dans la hiérarchie jusqu’au niveau de détail souhaité pour effectuer une recherche plus précise.
 
-Par exemple, si vous recherchez une image, vous pouvez indiquer si vous souhaitez une image bitmap ou vectorielle. Vous pouvez réduire davantage le champ de recherche en spécifiant le type MIME de l’image. De la même façon, si vous recherchez des documents, vous pouvez spécifier le format, par exemple PDF ou MS Word.
+Par exemple, si vous recherchez une image, vous pouvez choisir si vous souhaitez un bitmap ou une image vectorielle. Vous pouvez réduire davantage la portée de la recherche en spécifiant le type MIME de l’image. De même, lors de la recherche de documents, vous pouvez spécifier le format, par exemple PDF ou MS Word.
 
 ## Ajout d’un prédicat {#adding-a-predicate}
 
 Les facettes de recherche qui apparaissent dans le panneau Filtres sont définies dans le formulaire de recherche sous-jacent à l’aide de prédicats. Pour afficher d’autres facettes, ajoutez des prédicats au formulaire par défaut ou utilisez un formulaire personnalisé qui comprend les facettes de votre choix.
 
-Pour des recherches de texte intégral, ajoutez le prédicat `Fulltext` au formulaire. Utilisez le prédicat Propriété pour rechercher les ressources qui correspondent à une propriété unique que vous spécifiez. Utilisez le prédicat Options pour rechercher les ressources correspondant à une ou plusieurs valeurs pour une propriété spécifique. Ajoutez le prédicat Période pour rechercher les ressources créées au cours d’une période donnée.
+Pour des recherches de texte intégral, ajoutez le prédicat `Fulltext` au formulaire. Utilisez le prédicat Propriété pour rechercher des ressources qui correspondent à une seule propriété que vous spécifiez. Utilisez le prédicat Options pour rechercher des ressources qui correspondent à une ou plusieurs valeurs pour une propriété spécifique. Ajoutez le prédicat Période pour rechercher les ressources créées au cours d’une période spécifiée.
 
 1. Cliquez sur le logo Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
@@ -64,7 +64,7 @@ Pour des recherches de texte intégral, ajoutez le prédicat `Fulltext` au formu
 
 ## Ajout d’un prédicat Options {#adding-an-options-predicate}
 
-Le prédicat Options permet d’ajouter des options de recherche multiples dans le panneau Filtres. Vous pouvez choisir une ou plusieurs options dans le panneau Filtres pour rechercher des ressources. Par exemple, pour rechercher des actifs en fonction du type de fichier, configurez des options telles que Images, Multimédia, Documents et Archives dans le formulaire de recherche. Une fois ces options configurées, la recherche est effectuée sur les ressources de type GIF, JPEG, PNG, etc. lorsque vous sélectionnez l’option Images dans le panneau Filtres.
+Le prédicat Options vous permet d’ajouter plusieurs options de recherche dans le panneau Filtres . Vous pouvez choisir une ou plusieurs options dans le panneau Filtres pour rechercher des ressources. Par exemple, pour rechercher des ressources en fonction du type de fichier, configurez des options telles que Images, Multimédia, Documents et Archives dans le formulaire de recherche. Une fois ces options configurées, la recherche est effectuée sur les ressources de type GIF, JPEG, PNG, etc. lorsque vous sélectionnez l’option Images dans le panneau Filtres.
 
 Pour mapper les options à la propriété correspondante, créez une structure de nœud pour les options et fournissez le chemin du nœud parent dans la propriété Nom de la propriété du prédicat Options. Le nœud parent doit être du type `sling` : `OrderedFolder`. Les options doivent être du type `nt:unstructured`. Les propriétés `jcr:title` et `value` doivent être configurées pour les nœuds d’option.
 
@@ -121,29 +121,29 @@ Le prédicat `Multi Value Property` vous permet de rechercher plusieurs valeurs 
 1. Cliquez sur le logo Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de propriété à plusieurs valeurs]** de l’onglet **[!UICONTROL Sélectionner le prédicat]** jusqu’au volet principal.
-1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/dc:value`, par exemple. Vous pouvez également utiliser la boîte de dialogue de sélection pour sélectionner un nœud.
+1. Dans l’onglet **[!UICONTROL Paramètres]**, saisissez un libellé et un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/dc:value`, par exemple. Vous pouvez également utiliser la boîte de dialogue de sélection pour sélectionner un noeud.
 1. Assurez-vous que l’option **[!UICONTROL Prise en charge des délimiteurs]** est sélectionnée. Dans le champ **[!UICONTROL Délimiteurs d’entrée]**, spécifiez des délimiteurs pour séparer les valeurs individuelles. Par défaut, la virgule est spécifiée comme séparateur. Vous pouvez spécifier un autre délimiteur.
 1. Dans le champ **Description**, saisissez une description facultative, puis appuyez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Filtres dans l’interface utilisateur d’Assets. Le prédicat **[!UICONTROL Propriété à plusieurs valeurs]** est ajouté au panneau.
-1. Indiquez plusieurs valeurs dans le champ Valeur multiple, en les séparant par des délimiteurs, puis effectuez la recherche. Le prédicat récupère une correspondance de texte exacte pour les valeurs que vous avez spécifiées.
+1. Spécifiez plusieurs valeurs dans le champ à plusieurs valeurs séparées par des délimiteurs et effectuez la recherche. Le prédicat récupère une correspondance de texte exacte pour les valeurs que vous spécifiez.
 
 ## Ajout d’un prédicat de balises {#adding-a-tags-predicate}
 
-Le prédicat `Tags` vous permet de rechercher des ressources sur la base des balises. Par défaut, [!DNL Assets] recherche une ou plusieurs correspondances de balise dans les ressources en fonction des balises que vous avez spécifiées. En d’autres termes, la requête de recherche effectue une opération OR à l’aide des balises indiquées. Cependant, vous pouvez utiliser l’option de correspondance de toutes les balises pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
+Le prédicat `Tags` vous permet de rechercher des ressources sur la base des balises. Par défaut, [!DNL Assets] recherche une ou plusieurs correspondances de balise dans les ressources en fonction des balises que vous avez spécifiées. En d’autres termes, la requête de recherche effectue une opération OU à l’aide des balises spécifiées. Cependant, vous pouvez utiliser l’option Correspondre à toutes les balises pour rechercher les ressources qui incluent toutes les balises que vous spécifiez.
 
 1. Cliquez sur le logo Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Formulaires de recherche]**.
 1. Sur la page Formulaires de recherche, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur **Modifier** ![aemassets_edit](assets/aemassets_edit.png).
 1. Sur la page Modifier le formulaire de recherche, faites glisser **[!UICONTROL Prédicat de balises]** de l’onglet Sélectionner le prédicat jusqu’au volet principal.
 1. Dans l’onglet Paramètres, saisissez un texte d’espace réservé pour le prédicat. Indiquez le nom de la propriété sur laquelle sera axée la recherche dans le champ de propriété ; `jcr:content/metadata/cq:tags`, par exemple. Vous pouvez également sélectionner un nœud dans CRXDE à partir de la boîte de dialogue de sélection.
-1. Configurez la propriété Chemin d’accès aux balises racines de ce prédicat pour renseigner les différentes balises dans la liste Balises.
+1. Configurez la propriété Chemin d’accès aux balises racines de ce prédicat pour renseigner différentes balises dans la liste Balises.
 1. Sélectionnez **[!UICONTROL Option d’affichage de correspondance de toutes les balises]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
 
    ![Paramètres standard du prédicat de balises](assets/tags_predicate.png)
 
 1. Dans le champ **[!UICONTROL Description]**, saisissez une description facultative, puis cliquez/appuyez sur **[!UICONTROL Terminé]**.
 1. Accédez au panneau Rechercher. Le prédicat **[!UICONTROL Balises]** est ajouté au panneau Rechercher.
-1. Indiquez les balises sur la base desquelles vous souhaitez rechercher des ressources ou faites votre sélection dans la liste des suggestions.
-1. Sélectionnez **[!UICONTROL Correspondre à tous les critères]** pour rechercher les ressources qui contiennent toutes les balises que vous spécifiez.
+1. Spécifiez des balises en fonction desquelles vous souhaitez rechercher des ressources ou faites votre choix dans la liste de suggestions.
+1. Sélectionner **[!UICONTROL Correspondre à tous les]** pour rechercher des correspondances qui incluent toutes les balises que vous spécifiez.
 
 Vous pouvez trier la structure des balises par ordre croissant ou décroissant en fonction du **[!UICONTROL Nom]** (par ordre alphabétique), de la date de **[!UICONTROL Création]** ou de la date de **[!UICONTROL Modification]**. Dans l’illustration suivante, la structure des balises est triée par ordre alphabétique en fonction de la variable **[!UICONTROL Nom]**.
 
@@ -163,7 +163,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
   </tr>
   <tr>
    <td><p>Texte intégral</p> </td>
-   <td>Prédicat de recherche permettant d’effectuer une recherche de texte intégral dans un nœud de ressource entier. Il est mappé à l’opérateur <code>jcr</code>:<code>contains</code>. Vous pouvez indiquer un chemin d’accès relatif si vous souhaitez effectuer une recherche de texte intégral sur une partie spécifique du nœud de ressource.</td>
+   <td>Prédicat de recherche permettant d’effectuer une recherche de texte intégral dans un nœud de ressource entier. Il est mappé à l’opérateur <code>jcr</code>:<code>contains</code>. Vous pouvez spécifier un chemin relatif si vous souhaitez effectuer une recherche de texte intégral sur une partie spécifique du noeud de ressource.</td>
    <td>
     <ul>
      <li>Libellé</li>
@@ -173,18 +173,18 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin  Navigateur</td>
+   <td>Explorateur de chemins d’accès</td>
    <td>Prédicat de recherche permettant de rechercher des ressources dans des dossiers et des sous-dossiers à un chemin d’accès racine préconfiguré.</td>
    <td>
     <ul>
      <li>Espace réservé</li>
-     <li>Chemin racine</li>
+     <li>Chemin de base</li>
      <li>Description</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>Chemin</p> </td>
-   <td><p>Utilisez-le pour filtrer les résultats selon l’emplacement. Vous pouvez spécifier différents chemins d’accès sous la forme d’options.</p> </td>
+   <td><p>Utilisez-le pour filtrer les résultats selon l’emplacement. Vous pouvez spécifier différents chemins en tant qu’options.</p> </td>
    <td>
     <ul>
      <li>Libellé</li>
@@ -193,7 +193,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td><p>État de publication</p> </td>
+   <td><p>Statut de publication</p> </td>
    <td><p>Prédicat de recherche permettant de rechercher des ressources en fonction de leur état de publication.</p> </td>
    <td>
     <ul>
@@ -204,7 +204,7 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
   </tr>
   <tr>
    <td><p>Date relative</p> </td>
-   <td><p>Prédicat de recherche permettant de rechercher des ressources en fonction de leur date de création. Vous pouvez, par exemple, configurer des options telles que « il y a 2 mois », « il y a 3 semaines », etc. </p> </td>
+   <td><p>Prédicat de recherche permettant de rechercher des ressources en fonction de leur date de création. Vous pouvez, par exemple, configurer des options, telles qu’il y a 2 mois, il y a 3 semaines, etc. </p> </td>
    <td>
     <ul>
      <li>Libellé</li>
@@ -223,8 +223,8 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Date  Plage</p> </td>
-   <td><p>Prédicat de recherche permettant de rechercher des ressources créées pendant une période spécifiée pour une propriété de date. Vous pouvez spécifier des dates de début et de fin dans le panneau Rechercher à l’aide des sélecteurs de date.</p> </td>
+   <td><p>Plage Plage</p> </td>
+   <td><p>Prédicat de recherche permettant de rechercher des ressources créées pendant une période spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin à l’aide des sélecteurs de date.</p> </td>
    <td>
     <ul>
      <li>Libellé</li>
@@ -262,12 +262,12 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
    <td>
     <ul>
      <li>Nom de la propriété</li>
-     <li>Valeur de la propriété</li>
+     <li>Valeur de propriété</li>
      <li>Description</li>
     </ul> </td>
   </tr>
   <tr>
-   <td>État de publication</td>
+   <td>Statut de publication</td>
    <td>Prédicat de recherche permettant de rechercher des ressources en fonction de leur état de publication. </td>
    <td>
     <ul>
@@ -288,11 +288,11 @@ Tout comme vous ajoutez un prédicat Propriété ou un prédicat Options, vous p
   </tr>
   <tr>
    <td>Masqué</td>
-   <td>Prédicat de recherche permettant de définir une propriété de champ masqué pour rechercher des ressources.</td>
+   <td>Prédicat de recherche qui définit une propriété de champ masqué pour rechercher des ressources</td>
    <td>
     <ul>
      <li>Nom de la propriété</li>
-     <li>Valeur de la propriété</li>
+     <li>Valeur de propriété</li>
      <li>Description</li>
     </ul> </td>
   </tr>

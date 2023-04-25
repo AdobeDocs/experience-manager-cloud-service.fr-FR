@@ -18,7 +18,7 @@ Utilisez le connecteur de traduction pour traduire votre contenu découplé.
 
 Dans le document précédent du parcours de traduction AEM, [Configuration du connecteur de traduction](configure-connector.md), vous en avez appris plus sur le cadre de la traduction dans AEM. Vous devrez maintenant :
 
-* connaître les paramètres importants de la structure d’intégration de traduction dans AEM ;
+* comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
 Maintenant que votre connecteur est configuré, cet article vous guide tout au long de l’étape suivante de la traduction de votre contenu découplé.

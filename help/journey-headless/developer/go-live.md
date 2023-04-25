@@ -131,5 +131,5 @@ Si ce type de flexibilité est nécessaire pour votre projet, passez à la secti
 ## Ressources supplémentaires {#additional-resources}
 
 * [Présentation du déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md)
-* [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html)
+* [Utilisation de Cloud Manager pour déployer votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr)
 * [Intégration du référentiel Git de Cloud Manager à un référentiel Git externe et déploiement d’un projet AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=fr)

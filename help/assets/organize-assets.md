@@ -70,7 +70,7 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
    * **Dossiers reposant sur une date** : contiennent des ressources numériques en fonction d’une date de création ou d’une date de dernière modification.
 
 * Créez un répertoire de dossiers qui n’est pas susceptible de changer afin que les processus de personnalisation ou d’autonomisation puissent continuer à fonctionner. Par exemple, les profils de traitement affectés continuent à fonctionner.
-* Si une ressource a déjà été publiée, utilisez [!DNL Experience Manager] pour déplacer cette ressource vers un autre dossier et la republier depuis son nouvel emplacement. L’emplacement d’origine de la ressource publiée est toujours disponible ainsi que la ressource récemment republiée. Toutefois, la version d’origine de la ressource publiée est *« perdue »* pour [!DNL Experience Manager] et sa publication ne peut pas être annulée. Il est donc recommandé d’annuler d’abord la publication d’une ressource avant de la déplacer vers un autre dossier.
+* Si une ressource a déjà été publiée, utilisez [!DNL Experience Manager] pour déplacer cette ressource vers un autre dossier et la republier depuis son nouvel emplacement. L’emplacement d’origine de la ressource publiée est toujours disponible ainsi que la ressource récemment republiée. Toutefois, la version d’origine de la ressource publiée est *« perdue »* pour [!DNL Experience Manager] et elle ne peut pas être dépubliée. Il est donc recommandé de dépublier une ressource avant de la déplacer vers un autre dossier.
 
 ## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 

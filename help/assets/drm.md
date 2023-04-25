@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '1315'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Pour appliquer les exigences de licence des ressources, utilisez leurs informati
 Vous pouvez consulter l’état d’expiration d’une ressource aux emplacements suivants :
 
 * **Mode Carte** : lorsqu’une ressource arrive à expiration, un indicateur le signale sur la carte.
-* **Mode Liste** : pour une ressource arrivée à expiration, la colonne **[!UICONTROL État]** affiche la bannière **[!UICONTROL Expiré]**.
+* **Vue Liste** : pour une ressource arrivée à expiration, la colonne **[!UICONTROL État]** affiche la bannière **[!UICONTROL Expiré]**.
 * **Chronologie** : vous pouvez consulter l’état d’expiration d’une ressource dans la chronologie. Sélectionnez la ressource et choisissez ensuite Chronologie.
 * **Rail Références** : vous pouvez également afficher l’état d’expiration des ressources dans le rail **[!UICONTROL Références]**. Il gère les états d’expiration des ressources et les relations entre les ressources composites et les sous-ressources, les collections et les projets référencés.
 
@@ -93,7 +93,7 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
 1. Sélectionnez **[!UICONTROL Publier]** dans le menu, puis fermez la boîte de dialogue de confirmation.
 
-1. Quittez le mode de sélection. L’état de publication de la ressource s’affiche au bas de sa miniature en mode d’affichage Carte. En mode Liste, la colonne Publié indique le moment auquel la ressource a été publiée.
+1. Quittez le mode de sélection. L’état de publication de la ressource s’affiche au bas de la miniature de la ressource en mode Carte. Dans la vue Liste, la colonne Publié indique le moment auquel la ressource a été publiée.
 
 1. Pour afficher la page de détails de la ressource, sélectionnez une ressource dans l’interface [!DNL Assets], puis cliquez sur **[!UICONTROL Propriétés]**.
 
@@ -101,13 +101,13 @@ La console [!DNL Assets] peut afficher différents états des ressources. En fon
 
 1. Cliquez sur **[!UICONTROL Enregistrer]**, puis sur **[!UICONTROL Fermer]** pour afficher la console Ressources.
 
-1. L’état de publication de la ressource indique qu’elle a expiré au bas de sa miniature en mode d’affichage Carte. En mode Liste, l’état de la ressource s’affiche comme étant **[!UICONTROL arrivée à expiration]**.
+1. L’état de publication de la ressource indique qu’elle a expiré au bas de sa miniature en mode d’affichage Carte. Dans la vue Liste, l’état de la ressource s’affiche comme étant **[!UICONTROL arrivée à expiration]**.
 
 1. Dans la console [!DNL Assets], sélectionnez un dossier et créez une tâche de révision sur le dossier.
 
 1. Recherchez et approuvez/rejetez les ressources dans la tâche de révision, puis cliquez sur **[!UICONTROL Terminé]**.
 
-1. Accédez au dossier pour lequel vous avez créé la tâche de révision. L’état des ressources que vous avez approuvées/rejetées s’affiche en bas du mode Carte. En mode Liste, les états d’approbation et d’expiration sont affichés dans les colonnes correspondantes.
+1. Accédez au dossier pour lequel vous avez créé la tâche de révision. L’état des ressources que vous avez approuvées/rejetées s’affiche en bas en mode Carte. Dans la vue Liste, les états d’approbation et d’expiration sont affichés dans les colonnes correspondantes.
 
 1. Pour rechercher des ressources en fonction de leur état, cliquez sur **[!UICONTROL Rechercher]** pour afficher la barre de recherche.
 
@@ -129,7 +129,7 @@ Si vous sélectionnez une ressource protégée et que vous cliquez ensuite sur *
 
 Si la sélection contient plusieurs ressources protégées, sélectionnez-en une à la fois, acceptez le contrat de licence et procédez au téléchargement de la ressource.
 
-Une ressource est considérée comme protégée si l’une des conditions suivantes est remplie :
+Une ressource est considérée comme protégée si l’une de ces conditions est remplie :
 
 * La propriété de métadonnées de la ressource `xmpRights:WebStatement` pointe vers le chemin d’accès de la page qui contient le contrat de licence approprié.
 * La valeur de la propriété de métadonnées de la ressource `adobe_dam:restrictions` est un code HTML brut qui spécifie le contrat de licence.

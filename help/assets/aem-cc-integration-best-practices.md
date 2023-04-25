@@ -9,7 +9,7 @@ exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
 source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
 workflow-type: tm+mt
 source-wordcount: '3443'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 Adobe Experience Manager Assets est une solution de gestion des ressources numériques (DAM) qui peut s’intégrer à Adobe Creative Cloud pour aider les utilisateurs de DAM à travailler avec des équipes créatives, en rationalisant la collaboration en matière de création de contenu.
 
-Adobe Creative Cloud offre aux équipes créatives un écosystème de solutions et de services pour leur permettre de créer des ressources numériques. Il comprend des applications de bureau et mobiles, des services de cloud tels que le stockage avec une synchronisation sur poste de travail ou une expérience web, ainsi que des places de marché telles qu’Adobe Stock.
+Adobe Creative Cloud fournit aux équipes créatives un écosystème de solutions et de services pour les aider à créer des ressources numériques. Il comprend des applications de bureau et mobiles, des services cloud tels que le stockage avec synchronisation de bureau ou expérience web, ainsi que des plateformes marketing telles qu’Adobe Stock.
 
 Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de travail et DAM d’entreprise selon votre cas d’utilisation et découvrir quelles sont les bonnes pratiques associées aux workflows de connexion.
 
@@ -31,12 +31,12 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 |---|---|---|
 | Simplifier l’expérience pour les créatifs utilisant un poste de travail | Simplifiez l’accès aux ressources depuis une gestion des ressources numériques ([!DNL Assets]) pour les créatifs ou, plus largement, pour les utilisateurs sur poste de travail utilisant des applications de création de ressources natives. Ils ont besoin d’une méthode simple et rapide pour découvrir, utiliser (ouvrir), modifier et enregistrer les modifications dans Experience Manager, ainsi que pour charger de nouveaux fichiers. | Poste de travail Windows ou Mac ; applications Creative Cloud |
 | Fournir des ressources de grande qualité, prêtes à l’emploi depuis [!DNL Adobe Stock] | Les spécialistes marketing accélèrent le processus de création de contenu en contribuant à la recherche et à la découverte de ressources. Les créatifs utilisent les ressources approuvées directement dans leurs outils de création. | [!DNL Assets] ; marketplace [!DNL Adobe Stock] ; champs de métadonnées |
-| Distribution et partage de ressources par sociétés | Les services internes/succursales locales et les partenaires externes, les distributeurs et les agences utilisent les ressources approuvées, partagées par la société mère. La société souhaite partager de manière sécurisée et transparente les ressources créées pour une réutilisation plus large. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
+| Distribution et partage de ressources par organisations | Les services internes/succursales locales et les partenaires externes, les distributeurs et les agences utilisent les ressources approuvées, partagées par la société mère. La société souhaite partager de manière sécurisée et transparente les ressources créées pour une réutilisation plus large. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
 | Génération automatique des variations prédéfinies des ressources chargées | Traitez automatiquement les ressources à l’aide de la technologie de transformation et de gestion des médias unique d’Adobe pour les actions prédéfinies. Créez une logique personnalisée pour définir vos propres actions à l’aide des API et des microservices de ressources. | Interface utilisateur d’[!DNL Assets] |
 
 ## Offres d’Adobe pour répondre aux besoins en matière de collaboration {#adobe-offerings-to-support-the-collaboration-need}
 
-| Proposition de valeur pour les personnes impliquées | Offre d’Adobe | Surfaces impliquées |
+| Proposition de valeur pour les acteurs impliqués | Offre Adobe | Surfaces impliquées |
 |---|---|---|
 | Les utilisateurs créatifs découvrent des ressources à partir de [!DNL Experience Manager], les ouvrent et les utilisent, les modifient et chargent les modifications dans [!DNL Experience Manager] et chargent aussi de nouveaux fichiers dans [!DNL Experience Manager] sans quitter leur application [!DNL Creative Cloud]. | [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator et InDesign. |
 | Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans [!DNL Experience Manager] et le chargement de nouveaux fichiers dans [!DNL Experience Manager] à partir de l’environnement de poste de travail. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Application de bureau Experience Manager sous Windows et Mac |
@@ -61,10 +61,10 @@ Choix de la fonctionnalité à utiliser
 | Utilisation – placement de la ressource d’Experience Manager dans un document | Oui – incorporation | Oui – liaison ou incorporation | L’application de bureau Experience Manager donne accès aux ressources sous forme de fichiers sur le système de fichiers local. Ces liens dans les applications natives sont représentés par des chemins d’accès locaux. |
 | Modification – ouvrir pour modification | Oui – action d’extraction | Oui – action d’ouverture (dans le partage réseau) | L’[extraction dans AAL](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) enregistre la ressource dans le compte de stockage Creative Cloud de l’utilisateur (synchronisé par l’application Creative Cloud) par défaut. |
 | Modifier : travail en cours en dehors d’Experience Manager | Oui – ressource disponible dans le compte de stockage Creative Cloud de l’utilisateur synchronisé avec le poste de travail. | Oui |  |
-| Modification – téléchargement des modifications | Oui – [Action d’archivage](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html) avec des commentaires facultatifs | Oui |  |
+| Modification – téléchargement des modifications | Oui – [Action d’archivage](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html) avec des commentaires facultatifs | Oui |  |
 | Téléchargement – fichier unique | Oui – téléchargement du document actif | Oui | [Chargement via l’interface web](/help/assets/manage-digital-assets.md#uploading-assets) |
 | Téléchargement – plusieurs fichiers/structures de dossiers hiérarchiques | Non | Oui | [Chargement via l’interface web](/help/assets/manage-digital-assets.md#uploading-assets) ; outil ou script personnalisé |
-| Divers – utilisateur et connexion | L’utilisateur Creative Cloud connecté à l’application de bureau Creative Cloud est reconnu (SSO) | Utilisateur/connexion Experience Manager | Les utilisateurs des deux solutions sont comptabilisés par rapport au quota d’utilisateurs Experience Manager. |
+| Divers – utilisateur et connexion | L’utilisateur Creative Cloud connecté à l’appli de bureau Creative Cloud est reconnu (SSO). | Utilisateur/connexion Experience Manager | Les utilisateurs des deux solutions sont comptabilisés par rapport au quota d’utilisateurs Experience Manager. |
 | Divers – réseau et accès | Nécessite un accès depuis le poste de travail de l’utilisateur vers le déploiement d’Experience Manager sur le réseau | Nécessite un accès depuis le poste de travail de l’utilisateur vers le déploiement d’Experience Manager sur le réseau | Adobe Asset Link ne partage pas l’environnement du proxy réseau. |
 
 
@@ -74,7 +74,7 @@ Choix de la fonctionnalité à utiliser
 
 Pour prendre en charge les cas d’utilisation de la distribution des ressources, tenez compte des options suivantes :
 
-* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) pour un module complémentaire configurable pour Assets afin de publier des ressources.
+* [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr) pour un module complémentaire configurable pour Assets afin de publier des ressources.
 
 * Les solutions personnalisées sont créées à partir de la base de code [Asset Share Commons](https://opensource.adobe.com/asset-share-commons/).
 * [Partage de liens](/help/assets/share-assets.md) Experience Manager pour partager des ressources ad hoc à l’aide de liens.
@@ -135,40 +135,40 @@ Pour établir un workflow efficace entre les équipes créatives et marketing/m�
 
 ### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#why-assets-are-stored-in-dam}
 
-Le stockage des ressources dans la gestion des ressources numériques (DAM) permet d’en faciliter l’accès et de les retrouver plus aisément. Cela garantit que les ressources peuvent être exploitées par de nombreux utilisateurs au sein de votre organisation ou écosystème, qui comprend les partenaires, les clients, etc.
+Le stockage des ressources dans la gestion des ressources numériques (DAM) permet d’en faciliter l’accès et de les retrouver plus aisément. Cela permet de s’assurer que les ressources peuvent être exploitées par de nombreux utilisateurs au sein de l’organisation ou de l’écosystème, qui comprend des partenaires, des clients, etc.
 
 La plupart des entreprises choisissent de stocker uniquement les ressources pertinentes pour les processus marketing/métier en aval (publication sur des canaux tels que le canal web via Experience Manager Sites ou d’autres canaux traités par Adobe Experience Cloud : Marketing Cloud, Advertising Cloud et mesurés par Analytics Cloud, satisfaction des besoins des utilisateurs et partenaires, etc.). En outre, les entreprises stockent les ressources qui peuvent être soumises à un processus de révision/approbation dans la gestion des ressources numériques (DAM). De cette manière, la gestion des ressources numériques (DAM) stocke principalement les ressources ayant de grandes chances d’être exploitées, en évitant de stocker les ressources inactives.
 
-Le stockage des ressources est soumis à des considérations techniques et d’utilisation des ressources. La gestion des ressources numériques (DAM) fournit des services supplémentaires pour les ressources stockées, notamment l’extraction de métadonnées, le contrôle de version, la génération d’aperçus/de transcodage, la gestion des références et l’ajout d’informations de contrôle d’accès. Ces services utilisent davantage de temps et de ressources de votre infrastructure.
+Le stockage des ressources est soumis à des considérations techniques et d’utilisation des ressources. La gestion des ressources numériques (DAM) fournit des services supplémentaires pour les ressources stockées, notamment l’extraction de métadonnées, le contrôle de version, la génération d’aperçus/de transcodage, la gestion des références et l’ajout d’informations de contrôle d’accès. Ces services consomment du temps et des ressources d’infrastructure supplémentaires.
 
 Souvent, le stockage de toutes les ressources et mises à jour n’est pas souhaitable. Par exemple, si les mises à jour de ressources spécifiques sont de mauvaise qualité et utilisent les ressources en excès, les ressources peuvent être stockées dans la gestion des ressources numériques (DAM).
 
 #### Quand les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#when-assets-are-stored-in-dam}
 
-Les équipes créatives (et les organisations) ne sont généralement pas intéressées par le stockage des ressources à chaque étape de leur cycle de vie. Par exemple, elles évitent de stocker des ressources dans les cas suivants :
+Les équipes créatives (et les organisations) ne sont généralement pas intéressées par le stockage des ressources à chaque étape du cycle de vie des ressources. Par exemple, ils évitent de stocker des ressources dans les cas suivants :
 
-* Si les ressources doivent être finalisées ou sont soumises à expérimentation
-* Si les ressources ne passent pas le cycle de révision de l’équipe interne/créative
+* Ressources qui doivent encore être finalisées ou qui font l’objet d’expérimentations
+* Ressources qui ne parviennent pas à passer le cycle de révision de l’équipe créative/interne
 * L’équipe dispose de ressources plus pertinentes que celle en question pour présenter son travail à des équipes externes
 
 En règle générale, les classes de ressources suivantes sont stockées dans la gestion des ressources numériques (DAM) :
 
-* Les ressources ayant atteint une certaine maturité et que l’on estime prêtes à être partagées
-* Les ressources qui ont été présélectionnées par l’équipe créative
-* Les formats de ressources spécifiques qui sont utilisables ou demandés par le marketing, selon un contrat ou un accord spécifique (par exemple, des fichiers JPG convertis à partir de fichiers RAW, des TIFF/images à partir d’originaux PSD)
+* Actifs qui ont atteint une certaine maturité et sont considérés comme prêts à être partagés
+* Ressources présélectionnées par l’équipe créative
+* Formats de ressources spécifiques utilisables ou demandés par le marketing, selon un contrat ou un contrat spécifique (par exemple, des fichiers JPG convertis à partir de fichiers RAW, des TIFFs/images à partir d’originaux de PSD)
 
 #### Quand les mises à jour de ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#when-updates-to-assets-are-stored-in-dam}
 
 En règle générale, seules les mises à jour des ressources pertinentes pour un large ensemble d’utilisateurs de la gestion des ressources numériques doivent être stockées dans la gestion des ressources numériques (DAM). Cela garantit que les utilisateurs (marketing et fonctions similaires) voient uniquement les versions appropriées dans la chronologie des ressources de la gestion des ressources numériques (DAM).
 
-Généralement, il s’agit des modifications en rapport avec les principaux jalons dans le cycle de vie des ressources. Par exemple, la ressource initiale prête pour les spécialistes marketing ou une mise à jour officielle basée sur une demande/révision fournie par l’équipe créative doit être enregistrée et versionnée dans la gestion des ressources numériques (DAM).
+En règle générale, les modifications liées aux jalons principaux du cycle de vie des ressources. Par exemple, la ressource initiale prête pour les spécialistes marketing ou une mise à jour officielle basée sur une demande/révision fournie par l’équipe créative doit être enregistrée et versionnée dans la gestion des ressources numériques (DAM).
 
 Il peut s’agir, par exemple, d’une mise à jour de l’équipe créative pour révision par l’équipe marketing après une demande de modification de la ressource existante dans la gestion des ressources numériques (DAM). Elle doit être stockée et versionnée dans la gestion des ressources numériques (DAM) à des fins de référence ou pour revenir à la version précédente.
 
-Voici quelques exemples de mises à jour qui ne sont généralement pas pertinentes :
+Voici des exemples de mises à jour qui ne sont généralement pas pertinentes :
 
-* Les premières versions des ressources transférées avant qu’elles ne soient prêtes pour révision par le marketing
-* Les modifications fréquentes de la ressource par l’équipe créative pendant la phase de travail en cours et avant que l’équipe créative ne décide que la ressource est prête
+* Les premières versions des ressources chargées avant qu’elles ne soient prêtes pour la révision marketing
+* Modifications fréquentes de la ressource au cours de la phase de travail en cours avant que les équipes créatives et marketing ne décident que la ressource est prête
 
 ### Accès des utilisateurs à la gestion des ressources numériques (DAM)  {#user-access-to-dam}
 
@@ -187,20 +187,20 @@ Les agences externes et les indépendants sans accès direct à l’instance de 
 Utilisez les stratégies suivantes pour fournir un accès aux ressources finales/approuvées :
 
 * Utilisez l’application de bureau si Asset Link ne fonctionne pas.
-* Utilisez [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) pour distribuer les ressources en toute sécurité aux partenaires externes.
+* Utilisez [Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=fr) pour distribuer les ressources en toute sécurité aux partenaires externes.
 * Utilisez une implémentation personnalisée d’un portail de distribution et de source basé sur [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)
 * Utilisez la configuration du contrôle d’accès dans Experience Manager et l’infrastructure réseau nécessaire (mise en liste d’adresses IP autorisées et VPN, par exemple) pour permettre aux parties externes d’accéder à une zone de contenu dédiée dans la gestion des ressources numériques (DAM). Ils peuvent utiliser l’interface utilisateur web d’Experience Manager pour obtenir des ressources et charger du nouveau contenu dans la gestion des ressources numériques (DAM).
 
 #### Tâche en cours sur les ressources d’Experience Manager {#work-in-progress-on-assets-from-aem}
 
-Comme nous l’avons vu dans ce document, il est recommandé d’effectuer des mises à jour importantes sur les ressources, parfois appelées tâche en cours, sans que toutes les modifications enregistrées dans le fichier local ne soient chargées dans Experience Manager en tant que modifications. Cela accélère le travail d’un utilisateur sur poste de travail, limite la bande passante réseau utilisée et maintient le calendrier des ressources ciblé sur les mises à jour majeures et contrôlées.
+Comme nous l’avons vu dans ce document, il est recommandé d’effectuer des mises à jour importantes sur les ressources, parfois appelées tâche en cours, sans que toutes les modifications enregistrées dans le fichier local ne soient chargées dans Experience Manager en tant que modifications. Cela accélère le travail d’un utilisateur de bureau, limite la bande passante réseau utilisée et maintient la chronologie des ressources propre et concentrée sur des mises à jour majeures contrôlées.
 
-Adobe Asset Link est adapté à cas d’utilisation :
+Adobe Asset Link offre une bonne prise en charge de ce cas pratique :
 
-* Lorsque les utilisateurs de Photoshop, InDesign ou Illustrator souhaitent modifier un fichier, ils effectuent une opération d’extraction sur la ressource donnée.
+* Lorsque des utilisateurs de Photoshop, d’InDesign ou d’Illustrator ont l’intention de modifier un fichier, ils exécutent une opération d’extraction sur la ressource donnée.
 * La ressource est téléchargée en arrière-plan, placée dans le compte Creative Cloud des utilisateurs synchronisés sur le disque par l’application de bureau Creative Cloud et l’indicateur d’extraction est activé sur la ressource dans Experience Manager afin de minimiser les conflits de modification.
-* À ce stade, l’utilisateur utilise un fichier stocké localement dans l’emplacement synchronisé et peut continuer à travailler et à enregistrer les modifications nécessaires selon la fréquence nécessaire.
-* De plus, comme la ressource figure dans le compte Creative Cloud, elle est également disponible sur d’autres appareils appartenant à l’utilisateur (par exemple, elle peut être ouverte ou modifiée dans une application mobile Creative Cloud dédiée) et peut être partagée avec d’autres utilisateurs Creative Cloud à des fins de collaboration.
+* À partir de là, l’utilisateur travaille dans un fichier qui est stocké localement à l’emplacement synchronisé et peut continuer à travailler et à enregistrer les modifications nécessaires à n’importe quelle fréquence.
+* En outre, puisque la ressource se trouve dans le compte de Creative Cloud, elle est également disponible sur d’autres appareils que l’utilisateur peut avoir (par exemple, elle peut être ouverte ou modifiée dans une application mobile de Creative Cloud dédiée) et peut être partagée avec d’autres utilisateurs de Creative Cloud à des fins de collaboration.
 * Lorsque l’utilisateur créatif a terminé d’apporter des modifications, il peut effectuer une opération d’archivage sur ce fichier dans son application Creative Cloud, en fournissant un commentaire facultatif. La ressource correspondante dans Experience Manager est versionnée et mise à jour avec le nouveau binaire. Les utilisateurs d’Experience Manager comme les spécialistes marketing ou les utilisateurs du cœur de métier ont accès aux modifications importantes des ressources, ou jalons, via l’interface utilisateur de chronologie d’ Experience Manager Assets.
 
 L’application de bureau Experience Manager propose un partage réseau pour les ressources ouvertes dans l’application native. Par défaut, toutes les modifications apportées localement sont chargées automatiquement dans Experience Manager après un bref instant. Avec une telle configuration, les enregistrements fréquents durant la phase de tâche en cours seraient tous chargés dans Experience Manager et versionnés, ce qui créerait un trafic réseau important et des défis d’évolutivité potentiels, sans mentionner les versions inutiles dans Experience Manager.
@@ -215,11 +215,11 @@ Dans certains cas, il est possible que vous deviez charger simultanément un plu
 * Chargement de ressources fournies par les agences de création
 * Transfert de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des ressources numériques (DAM)
 
-Notez que cette description fait référence aux chargements de fichiers du point de vue des opérations (par exemple, chaque semaine ou à chaque séance photo), comme composante normale du workflow de l’utilisateur de bureau. Les migrations de ressources de grande taille ne sont pas abordées ici.
+Notez que cette description fait référence aux chargements de fichiers du point de vue des opérations (par exemple, chaque semaine ou à chaque séance photo), comme composante normale du workflow de l’utilisateur de bureau. Les migrations de ressources volumineuses ne sont pas abordées ici.
 
-Vous pouvez utiliser les fonctionnalités de transfert suivantes :
+Vous pouvez tirer parti des fonctionnalités de chargement suivantes :
 
-* Pour charger des dossiers volumineux/hiérarchiques en bloc, utilisez l’application de bureau Experience Manager qui propose une fonctionnalité de [chargement de dossiers](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#bulk-upload-assets). Vous pouvez également transférer des structures de dossiers hiérarchiques. Les ressources sont transférées en arrière-plan et, par conséquent, le transfert n’est pas associé à une session du navigateur web.
+* Pour charger des dossiers volumineux/hiérarchiques en bloc, utilisez l’application de bureau Experience Manager qui propose une fonctionnalité de [chargement de dossiers](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#bulk-upload-assets). Vous pouvez également transférer des structures de dossiers hiérarchiques. Les ressources sont chargées en arrière-plan et, par conséquent, elles ne sont pas liées à une session de navigateur web.
 * Pour charger quelques fichiers à partir d’un seul dossier, faites-les glisser directement jusqu’à l’interface web ou utilisez l’option Créer dans l’interface web d’Experience Manager Assets.
 * En fonction des besoins de votre entreprise, vous pouvez également utiliser un outil de chargement personnalisé.
 

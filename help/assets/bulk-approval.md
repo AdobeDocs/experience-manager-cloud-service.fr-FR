@@ -8,7 +8,7 @@ exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '793'
-ht-degree: 100%
+ht-degree: 79%
 
 ---
 
@@ -16,9 +16,9 @@ ht-degree: 100%
 
 Adobe Experience Manager permet de définir des workflows de révision ad hoc pour les ressources qui se trouvent dans un dossier ou dans une collection. Vous pouvez le partager avec des réviseurs ou des partenaires créatifs pour obtenir leurs commentaires. Vous pouvez soit associer le workflow de révision à un projet, soit créer une tâche de révision indépendante.
 
-Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires voulus de la fin des diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
+Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires prévus de l&#39;achèvement de diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
 
-Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ressources), vous recevez une notification de fin de révision.
+Une fois que le réviseur a terminé la révision (approuve ou refuse les ressources), vous recevez une notification de fin de révision.
 
 ## Création d’une tâche de révision pour des dossiers {#creating-a-review-task-for-folders}
 
@@ -31,7 +31,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    >[!NOTE]
    >
-   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) apparaissent dans la liste **[!UICONTROL Projets]**.
+   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) sont visibles dans la variable **[!UICONTROL Projets]** liste.
 
 1. Entrez un nom pour la tâche de révision, puis sélectionnez un approbateur dans la liste **[!UICONTROL Affecter à.]**
 
@@ -58,13 +58,13 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![review_task](assets/review_task.png)
 
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis appuyez/cliquez sur **[!UICONTROL Terminé]** pour confirmer.
-1. Accédez à l’IU Assets et ouvrez le dossier. Les icônes d’état d’approbation pour les ressources apparaissent dans les modes Carte et Liste.
+1. Accédez à l’interface utilisateur d’Assets et ouvrez le dossier. Les icônes d’état d’approbation des ressources s’affichent en mode Carte et Liste.
 
    **Mode Carte**
 
    ![chlimage_1-404](assets/chlimage_1-404.png)
 
-   **Mode Liste**
+   **Vue Liste**
 
    ![review_status_listview](assets/review_status_listview.png)
 
@@ -79,7 +79,7 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
 
    >[!NOTE]
    >
-   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) apparaissent dans la liste **[!UICONTROL Projets]**.
+   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) sont visibles dans la variable **[!UICONTROL Projets]** liste.
 
 1. Entrez un nom pour la tâche de révision, puis sélectionnez un approbateur dans la liste **[!UICONTROL Affecter à.]**
 
@@ -99,12 +99,12 @@ Une fois que le réviseur a terminé la révision (approuvé ou rejeté les ress
    ![review_task_collection](assets/review_task_collection.png)
 
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis appuyez/cliquez sur **[!UICONTROL Terminé]** pour confirmer.
-1. Accédez à la console Collections et ouvrez la collection. Les icônes d’état d’approbation pour les ressources apparaissent dans les modes Carte et Liste.
+1. Accédez à la console Collections et ouvrez la collection. Les icônes d’état d’approbation des ressources s’affichent en mode Carte et Liste.
 
    **Mode Carte**
 
    ![collection_reviewstatuscardview](assets/collection_reviewstatuscardview.png)
 
-   **Mode Liste**
+   **Vue Liste**
 
    ![collection_reviewstatuslistview](assets/collection_reviewstatuslistview.png)

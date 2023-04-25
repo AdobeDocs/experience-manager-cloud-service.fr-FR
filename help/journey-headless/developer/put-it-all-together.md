@@ -2,8 +2,8 @@
 title: Tout assembler – Votre application et votre contenu dans AEM découplé
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment aborder votre projet AEM, notamment les fragments de contenu, les appels GraphQL, les appels API REST et votre application, mais aussi comment préparer ce projet pour la mise en ligne.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
+source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+workflow-type: tm+mt
 source-wordcount: '1069'
 ht-degree: 100%
 
@@ -58,7 +58,7 @@ Utilisez le référentiel Git pour gérer le contrôle de code source et pour ar
 
 AEM utilise Apache Maven pour créer des projets générés à partir de l’archétype de projet AEM Maven. Tous les environnements de développement intégré majeurs prennent en charge l’intégration de Maven.
 
-Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, qui est de facto le gestionnaire de modules Node.js utilisé pour gérer les dépendances JavaScript.
+Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner avec les ressources front-end du sous-projet `ui.frontend` d’un projet AEM. Node.js est distribué avec npm, qui est de facto le gestionnaire de packages Node.js utilisé pour gérer les dépendances JavaScript.
 
 ## Composants d’un système AEM en un coup d’œil {#components-of-an-aem-system-at-a-glance}
 

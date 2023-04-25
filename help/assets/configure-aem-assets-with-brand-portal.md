@@ -8,7 +8,7 @@ exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
 source-git-commit: 4f58f36e646677071d7f9a4aa56238d68c7689ba
 workflow-type: tm+mt
 source-wordcount: '2478'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -402,7 +402,7 @@ Vous pouvez maintenant tester la configuration en vérifiant l’agent de distri
 En cas d’utilisation de Dynamic Media-Scene7 (avec l’[aperçu sécurisé activé](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) pour une entreprise), il est conseillé à l’administrateur ou à l’administratrice Scene7 de l’entreprise de [placer sur la liste autorisée les adresses IP publiques sortantes](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) pour les régions respectives à l’aide de l’IU flash SPS (système de publication Scene7).
 Les adresses IP sortantes sont les suivantes :
 
-| **Zone géographique** | **Adresse IP sortante** |
+| **Zone géographique** | **IP sortante** |
 |--- |--- |
 | N/A | 130.248.160.68, 20.94.203.130 |
 | EMEA | 185.34.189.3, 51.132.146.75 |

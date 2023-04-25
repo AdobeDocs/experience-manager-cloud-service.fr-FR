@@ -347,7 +347,7 @@ query {
 Pour obtenir des détails complets sur l’utilisation de l’API AEM GraphQL, ainsi que la configuration des éléments nécessaires, vous pouvez vous référer aux sections suivantes :
 
 * Apprendre à utiliser GraphQL avec AEM ;
-* l’exemple de structure de fragment de contenu ;
+* L’exemple de structure de fragment de contenu ;
 * Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes
 
 ## Et après ? {#whats-next}
@@ -364,7 +364,7 @@ Maintenant que vous avez appris à accéder à votre contenu en mode découplé 
 * [Apprendre à utiliser GraphQL avec AEM ;](/help/headless/graphql-api/content-fragments.md)
    * [Activation de votre point d’entrée GraphQL](/help/headless/graphql-api/graphql-endpoint.md)
    * [Installation de l’interface AEM GraphiQL](/help/headless/graphql-api/graphiql-ide.md)
-* [l’exemple de structure de fragment de contenu ;](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
+* [L’exemple de structure de fragment de contenu ;](/help/headless/graphql-api/sample-queries.md#content-fragment-structure-graphql)
 * [Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requêtes](/help/headless/graphql-api/sample-queries.md)
    * [Exemple de requête – Un fragment de ville unique et spécifique](/help/headless/graphql-api/sample-queries.md#sample-single-specific-city-fragment)
    * [Exemple de requête pour des métadonnées – Liste des métadonnées pour les distinctions intitulées GB](/help/headless/graphql-api/sample-queries.md#sample-metadata-awards-gb)

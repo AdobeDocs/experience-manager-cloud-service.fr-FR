@@ -142,7 +142,7 @@ Lors de la navigation dans le référentiel de ressources, les fonctionnalités 
 
 * Le lecteur d’écran indique des alternatives textuelles qui décrivent l’objectif ou la fonctionnalité des icônes et non pas leur nom.
 * Les utilisateurs peuvent accéder aux options de l’interface utilisateur interactive et les sélectionner dans la liste Références des ressources à l’aide des touches du clavier.
-* Les éléments figurant dans chaque ligne en mode Liste sont annoncés comme éléments de la même ligne par les lecteurs d’écran.
+* Les éléments figurant dans chaque ligne dans la vue Liste sont annoncés comme éléments de la même ligne par les lecteurs d’écran.
 * Lorsque vous naviguez à l’aide de la touche `Tab`, la sélection peut passer à l’option de fermeture dans l’aperçu de version.
 * Lorsque vous utilisez le clavier pour naviguer, les options exploitables mises en surbrillance dans l’interface utilisateur s’affichent de manière plus visible par un contraste amélioré. L’utilisateur peut ainsi identifier plus facilement la zone sélectionnée.
 * Utiliser la touche `Esc` pour supprimer les icônes d’action rapide du mode Miniature ne supprime pas la sélection via le clavier du dernier élément sélectionné.

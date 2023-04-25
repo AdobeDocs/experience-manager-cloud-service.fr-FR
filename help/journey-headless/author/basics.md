@@ -86,7 +86,7 @@ Une fois le fragment sélectionné, toutes les actions appropriées sont disponi
 <!-- ![Console actions - fragment selected](assets/cfm-managing-cf-console-selected-01.png) -->
 
 * **Ouvrir**
-* **Publier** (et **Annuler la publication**)
+* **Publier** (et **Dépublier**)
 * **Copier**
 * **Déplacer**
 * **Renommer**
@@ -94,7 +94,7 @@ Une fois le fragment sélectionné, toutes les actions appropriées sont disponi
 
 >[!NOTE]
 >
->Des actions telles que Publier, Annuler la publication, Supprimer, Déplacer, Renommer ou Copier déclenchent un traitement asynchrone. Il est possible de surveiller la progression de ce traitement via l’interface utilisateur des traitements asynchrones AEM.
+>Des actions telles que Publier, Dépublier, Supprimer, Déplacer, Renommer ou Copier déclenchent un traitement asynchrone. Il est possible de surveiller la progression de ce traitement via l’interface utilisateur des traitements asynchrones AEM.
 
 <!--
 The **Assets** console has dedicated **Action Toolbars**, and **Quick Actions** that you can use after selecting a resource (for example, a folder or content fragment).

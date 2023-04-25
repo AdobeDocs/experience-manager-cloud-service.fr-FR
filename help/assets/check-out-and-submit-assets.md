@@ -8,11 +8,11 @@ exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
 source-git-commit: 034899c2a717fafdc50cc269d6db3feb77d907c5
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
-# Archivage et extraction de fichiers dans le DAM [!DNL Experience Manager]  {#check-in-and-check-out-files-in-assets}
+# Archivage et extraction de fichiers dans la gestion des ressources numériques [!DNL Experience Manager] {#check-in-and-check-out-files-in-assets}
 
 [!DNL Adobe Experience Manager Assets] permet d’extraire des ressources pour les modifier et de les ré-archiver après y avoir apporté les modifications. Après avoir extrait une ressource, vous seul pouvez la modifier, l’annoter, la publier, la déplacer ou la supprimer. Le fait d’extraire une ressource entraîne son verrouillage. Les autres utilisateurs ne peuvent effectuer aucune de ces opérations sur la ressource tant que vous ne l’avez pas archivée dans [!DNL Assets]. Toutefois, ils peuvent modifier les métadonnées de la ressource verrouillée.
 
@@ -29,7 +29,7 @@ Pour vérifier si d’autres utilisateurs peuvent modifier la ressource que vous
 
    ![icône d’extraction en mode Carte](assets/checkout-icon-card-view.png)
 
-   Sélectionnez la ressource. Notez que la barre d’outils n’affiche aucune option permettant de modifier, d’annoter, de publier ou de supprimer la ressource.
+   Sélectionnez la ressource. Notez que la barre d’outils n’affiche aucune option vous permettant de modifier, d’annoter, de publier ou de supprimer la ressource.
 
    ![chlimage_1-472](assets/checkout-asset-toolbar-options.png)
 

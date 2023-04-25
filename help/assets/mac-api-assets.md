@@ -1,6 +1,6 @@
 ---
 title: API HTTP Assets
-description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans [!DNL Experience Manager Assets].
+description: Créer, lire, mettre à jour, supprimer et gérer des ressources numériques à l’aide de l’API HTTP dans  [!DNL Experience Manager Assets].
 contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
@@ -8,7 +8,7 @@ exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
 source-git-commit: a2c2a1f4ef4a8f0cf1afbba001d24782a6a2a24e
 workflow-type: tm+mt
 source-wordcount: '1515'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -16,14 +16,14 @@ ht-degree: 100%
 
 ## Présentation {#overview}
 
-L’API HTTP [!DNL Assets] permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, notamment les métadonnées, les rendus et les commentaires, ainsi que sur des contenus structurés grâce à des fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle inclut [la prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
+L’API HTTP [!DNL Assets] permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, notamment les métadonnées, les rendus et les commentaires, ainsi que sur des contenus structurés grâce à des fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle comprend [Prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
 
-Pour accéder à l’API, procédez comme suit :
+Pour accéder à l’API :
 
 1. Ouvrez le document du service API à l’adresse `https://[hostname]:[port]/api.json`.
 1. Suivez le lien du service [!DNL Assets] pointant vers `https://[hostname]:[server]/api/assets.json`.
 
-La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Vous pouvez faire appel au code de réponse pour d’autres analyses ou actions.
+La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers de PDF. Reposez sur le code de réponse pour une analyse ou des actions plus approfondies.
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: Profils de métadonnées
-description: Découvrez les profils de métadonnées pour les ressources. Apprenez à créer un profil de métadonnées et à l’appliquer aux ressources d’un dossier.
+description: Connaître les profils de métadonnées des ressources. Découvrez comment créer un profil de métadonnées et l’appliquer aux ressources de dossier.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -8,7 +8,7 @@ exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
 workflow-type: tm+mt
 source-wordcount: '1356'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
