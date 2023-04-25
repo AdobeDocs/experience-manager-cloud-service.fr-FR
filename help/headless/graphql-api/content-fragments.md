@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: 32f14d94e2eb9e9ec9e6d04b663733bf5087a736
+source-git-commit: 1d7cbec55c5f3fcfbc217bf53d006a56bdf37f4e
 workflow-type: tm+mt
-source-wordcount: '4768'
-ht-degree: 88%
+source-wordcount: '4746'
+ht-degree: 87%
 
 ---
 
@@ -698,7 +698,7 @@ query {
 
 >[!NOTE]
 >
->* Par défaut, la pagination utilise l’UUID du nœud du référentiel représentant le fragment afin de s’assurer que l’ordre des résultats est toujours le même. Lorsque `sort` est utilisé, l’UUID est implicitement utilisé pour assurer un tri unique, même pour deux éléments disposant de clés de tri identiques.
+>* Par défaut, la pagination utilise l’UUID du noeud de référentiel représentant le fragment pour assurer que l’ordre des résultats est toujours le même. Lorsque `sort` est utilisé, l’UUID est implicitement utilisé pour assurer un tri unique, même pour deux éléments disposant de clés de tri identiques.
 >
 >* En raison de contraintes techniques internes, les performances se dégradent si le tri et le filtrage sont appliqués aux champs imbriqués. Il est donc recommandé d’utiliser des champs de filtrage/tri stockés au niveau racine. Il s’agit également de la méthode recommandée si vous souhaitez interroger des jeux de résultats paginés volumineux.
 
@@ -909,6 +909,9 @@ Les restrictions suivantes s’appliquent :
 
 Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la spécification GraphQL standard. Pour les requêtes GraphQL avec AEM, il existe quelques extensions :
 
+* Si vous avez besoin d’un seul résultat :
+   * Utilisez le nom du modèle ; p. ex. city.
+
 * Si vous prévoyez une liste de résultats :
    * Ajoutez `List` au nom du modèle ; par exemple, `cityList`
    * Voir [Exemple de requête – Toutes les informations sur toutes les villes](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
@@ -926,13 +929,6 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
    * Voir [Exemple de requête – Toutes les informations sur toutes les villes](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities).
 
 
-
-* Si vous avez besoin d’un seul résultat :
-   * Utilisez le nom du modèle ; p. ex. city.
-
-* Si vous prévoyez une liste de résultats :
-   * Ajoutez `List` au nom du modèle ; par exemple, `cityList`
-   * Voir [Exemple de requête – Toutes les informations sur toutes les villes](/help/headless/graphql-api/sample-queries.md#sample-all-information-all-cities)
 
 * Si vous souhaitez utiliser un OU logique :
    * Utilisez ` _logOp: OR`
