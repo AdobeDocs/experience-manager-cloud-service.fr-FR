@@ -4,9 +4,9 @@ description: Découvrez comment utiliser AEM modèles de fragments de contenu po
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 49301c21e3b97b4bdf29fdccc53339149ac5a63b
+source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1062'
 ht-degree: 37%
 
 ---
@@ -68,11 +68,9 @@ L’éditeur de modèles de fragments de contenu vous permet de configurer les t
 
 1. Une fois les propriétés du champ définies, vous pouvez revenir au **Types de données** dans le panneau de droite et ajoutez des champs supplémentaires en les faisant glisser et en les déposant.
 
-1. Appuyez ou cliquez sur **Enregistrer** pour enregistrer votre modèle.
-
 Ainsi, vous pouvez ajouter autant de champs que nécessaire à votre modèle pour prendre en charge le type de structure de données dont vous aurez besoin. Les types de champs de données varient, mais le processus de leur ajout à votre modèle reste le même.
 
-Passez à la section suivante pour ajouter les champs nécessaires à la saisie du **Adventure** modèle.
+Passez à la section suivante pour ajouter les champs nécessaires pour renseigner et enregistrer le **Adventure** model
 
 ![Étapes 1, 2 et 3 de l’ajout de champs au modèle.](assets/do-not-localize/define-model-fields.png)
 
@@ -104,4 +102,3 @@ Suivez les mêmes étapes que ci-dessus pour ajouter ces champs supplémentaires
 1. Une fois que vous avez ajouté tous les champs nécessaires au modèle de fragment de contenu, cliquez sur **Enregistrer** en haut à droite de la fenêtre.
 
 1. Le modèle est enregistré et vous revenez à la console du modèle de fragment de contenu.
-

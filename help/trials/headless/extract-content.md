@@ -4,10 +4,10 @@ description: Découvrez comment utiliser les fragments de contenu et l’API Gra
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: a2064dcbec1c171b0a6de57b4197f4921d234428
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 71%
+source-wordcount: '1114'
+ht-degree: 69%
 
 ---
 
@@ -117,19 +117,19 @@ Maintenant que vous avez exécuté les deux principaux types de requêtes, vous 
 
 1. Pour exécuter des requêtes sur vos propres fragments de contenu, remplacez le point d’entrée du dossier **Ressources de démonstration AEM** par le dossier **Votre projet**.
 
-1. Supprimez tout le contenu existant dans l’éditeur de requêtes. Saisissez ensuite le crochet ouvert `{` et appuyez sur Ctrl + Espace ou Option + Espace pour obtenir la liste de saisie automatique des modèles définis dans votre point d’entrée. Sélectionnez le modèle que vous avez créé et qui se termine par `List` dans les options.
+1. Supprimez tout le contenu existant dans l’éditeur de requêtes. Saisissez ensuite le crochet ouvert `{` et appuyez sur Ctrl + Espace ou Option + Espace pour obtenir la liste de saisie automatique des modèles définis dans votre point d’entrée. Sélectionnez le modèle que vous avez créé et qui se termine par `List` dans les options. Si vous avez suivi les exemples des modules précédents, vous devez trouver `adventureList` dans la liste de saisie semi-automatique.
 
-   ![Lancement d’une requête personnalisée.](assets/do-not-localize/custom-query-1-2.png)
+   ![Lancement d’une requête personnalisée.](assets/do-not-localize/custom-query-1.png)
 
 1. Définissez les éléments que la requête doit contenir pour le modèle de fragment de contenu que vous avez sélectionné. Saisissez une nouvelle fois le crochet ouvert `{`, puis appuyez sur Ctrl + Espace ou Option + Espace pour obtenir une liste de saisie automatique. Sélectionnez `items` dans le menu des options.
 
 1. Appuyez ou cliquez sur le bouton **Enjoliver** pour mettre automatiquement en forme votre code afin qu’il soit plus facile à lire.
 
-1. Une fois l’opération terminée, appuyez ou cliquez sur le bouton **Lecture** en haut à gauche de l’éditeur pour exécuter la requête. L’éditeur complète automatiquement la partie `items` et la requête s’exécute.
+1. Une fois l’opération terminée, appuyez ou cliquez sur le bouton **Lecture** en haut à gauche de l’éditeur pour exécuter la requête. L’éditeur complète automatiquement la variable `items`, qui sont brièvement surlignées en jaune, et la requête s’exécute.
 
 1. Les résultats s’affichent dans le panneau de droite, à côté de l’éditeur de requêtes.
 
-   ![Exécution d’une requête personnalisée.](assets/do-not-localize/custom-query-3-4-5-6.png)
+   ![Exécution d’une requête personnalisée.](assets/do-not-localize/custom-query-2.png)
 
 C’est ainsi que votre contenu peut être diffusé aux expériences numériques omnicanales.
 
@@ -151,7 +151,6 @@ Vous allez créer une requête persistante qui inclut les données que vous souh
          description {
            plaintext
          }
-         title
          price
          image {
            ... on ImageRef {
