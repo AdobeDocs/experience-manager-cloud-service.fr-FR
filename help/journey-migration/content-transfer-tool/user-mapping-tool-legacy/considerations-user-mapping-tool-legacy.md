@@ -4,15 +4,18 @@ description: Points importants concernant l’outil de mappage des utilisateurs 
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
-source-git-commit: f7be351c85b8db6d11033c7cf064529a46c2802a
+source-git-commit: 154c3eb3dbee07e830f489212777540a18c952b3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '620'
+ht-degree: 81%
 
 ---
 
 # Points importants concernant l’outil de mappage des utilisateurs (hérité) {#important-considerations}
 
+>[!INFO]
+>
+>Cette documentation fait référence à une version obsolète de cet outil. Pour plus d’informations sur la dernière version, voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md).
 
 ## Cas exceptionnels {#exceptional-cases}
 
