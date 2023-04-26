@@ -2,10 +2,10 @@
 title: Affichage des journaux d’un jeu de migration dans l’outil de transfert de contenu
 description: Affichage des journaux d’un jeu de migration dans l’outil de transfert de contenu
 exl-id: aed1ac83-a2fb-425e-aca4-39cd0bb42fd3
-source-git-commit: fac037b59753ba1de960df47311c1febc2059d27
+source-git-commit: 9d236e459f13fec6f0aaf80f588d20760636b9bb
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 86%
+source-wordcount: '246'
+ht-degree: 84%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 86%
 >title="Affichage des journaux"
 >abstract="Une fois l’extraction de l’ingestion terminée, recherchez dans les journaux les erreurs/avertissements éventuels. Toute erreur doit être corrigée immédiatement soit en traitant les problèmes signalés, soit en contactant l’assistance d’Adobe."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html#troubleshooting?lang=fr" text="Résolution des problèmes"
->additional-url="https://helpx.adobe.com/fr/enterprise/admin-guide.html/fr/enterprise/using/support-for-experience-cloud.ug.html" text="Contacter le support technique d’Adobe"
+>additional-url="https://helpx.adobe.com/ca/enterprise/using/support-for-experience-cloud.html" text="Contacter le support technique d’Adobe"
 
 Une fois chaque étape terminée (extraction et ingestion), vérifiez les journaux et recherchez les erreurs.  Toute erreur doit être corrigée immédiatement soit en traitant les problèmes signalés, soit en contactant l’assistance d’Adobe.
 
