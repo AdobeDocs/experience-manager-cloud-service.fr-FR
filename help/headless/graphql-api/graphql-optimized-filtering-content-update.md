@@ -119,8 +119,7 @@ Pour exécuter la procédure, procédez comme suit :
    >* CF_MIGRATION_LIMIT = 1 000.
    >* CF_MIGRATION_INTERNAL = 60 (Sec).
    >* Durée approximative requise pour terminer la migration = 60 + (20 000/1 000 * 60) = 1 260 secondes = 21 minutes.
-      >  Les « 60 » secondes supplémentaires ajoutées au début sont dues au retard initial lors du démarrage du traitement.
-
+   >  Les « 60 » secondes supplémentaires ajoutées au début sont dues au retard initial lors du démarrage du traitement.
    >
    >Vous devez également savoir qu’il s’agit uniquement du temps *minimum* obligatoire pour terminer le traitement, sans inclure l’heure d’E/S. Le temps réel pourrait être beaucoup plus important que cette estimation.
 
