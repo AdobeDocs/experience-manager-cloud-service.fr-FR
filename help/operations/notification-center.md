@@ -2,43 +2,45 @@
 title: Centre de notifications
 description: Tirez parti du Centre de notification pour prendre des mesures appropriées concernant les incidents et d'autres informations importantes
 hidefromtoc: true
-source-git-commit: 55ecd685afa28226974f3415b550bd2e8d05e2e6
+exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
+source-git-commit: b72d22e8788c04ab4faa3616a4a0ce5e6d8ce991
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
-
 
 # Centre de notifications {#notification-center}
 
 >[!NOTE]
 >Cette fonctionnalité n’a pas été publiée.
 
-Une fois configurée, AEM as Cloud Service envoie des notifications sur les informations importantes pour lesquelles les clients doivent agir. Parmi les exemples de notifications, citons une file d’attente bloquée ou un jeu d’informations d’identification arrivant à expiration. L’ensemble complet des types de notification peut être consulté dans la variable [tableau ci-dessous](#current-notification-types), et s’étendra au fil du temps. Les notifications sont reçues par e-mail et en tant que nouvelle entrée sous le widget de notification, accessible en cliquant sur l’icône représentant une cloche dans le coin supérieur droit de Adobe Experience Cloud. Les paramètres de notification peuvent être configurés.
+AEM as Cloud Service envoie des notifications en cas d’incident critique nécessitant une action immédiate, ainsi que des recommandations proactives pour les optimisations. Par exemple, une file d’attente bloquée ou un jeu d’informations d’identification arrivant à expiration ; l’ensemble complet des types de notification peut être consulté dans la variable [tableau ci-dessous](#supported-notification-types), qui s’agrandira au fil du temps.
 
-Lorsqu’une notification est reçue, il est possible de cliquer dessus pour ouvrir AEM Centre de notification d’as a Cloud Service avec une fenêtre contextuelle présentant un contexte supplémentaire expliquant l’action recommandée pour un client.
+Ces notifications peuvent être configurées pour être reçues par email et sous le widget de notification, accessible en cliquant sur l’icône représentant une cloche dans le coin supérieur droit de Adobe Experience Cloud.
+
+Lorsqu’une notification est reçue, il est possible de cliquer dessus pour ouvrir le centre de notification d’AEM as a Cloud Service avec une fenêtre contextuelle présentant un contexte supplémentaire expliquant l’action à entreprendre par un client.
 
 Outre l’affichage d’informations sur la notification qui vient d’être cliquée, le Centre de notification sert de hub où vous pouvez afficher et gérer l’ensemble des notifications actuelles et antérieures. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
 
-Il existe deux catégories de notifications de haut niveau :
+Il existe deux catégories de notifications de haut niveau qui apparaissent dans le Centre de notifications :
 
-1. Incidents : un événement s’est produit, qui nécessite généralement une résolution rapide. Par exemple, la résolution d’une file d’attente bloquée
-1. Proactif : l’Adobe a une recommandation pour une action qu’un client doit entreprendre dans un avenir proche. Par exemple, pour arrêter de référencer une interface utilisateur obsolète.
+1. Les incidents opérationnels : un événement s’est produit, ce qui nécessite généralement une résolution rapide. Par exemple, la résolution d’une file d’attente bloquée.
+1. Recommandations proactives : l’Adobe a une recommandation pour une action qu’un client doit entreprendre prochainement. Par exemple, pour arrêter de référencer une interface utilisateur obsolète.
 
-Voir [tableau ci-dessous](#current-notification-types) pour les notifications actuellement prises en charge.
+Voir [tableau ci-dessous](#supported-notification-types) pour les notifications actuellement prises en charge.
 
-Dans l&#39;écran Centre de notifications, vous pouvez sélectionner un programme et un environnement spécifiques, ce qui a pour effet de filtrer cette portée.
+Dans le Centre de notification, vous pouvez sélectionner un programme et un environnement spécifiques, ce qui a pour effet de filtrer cette portée.
 
 ## Configuration {#configuration}
 
-Vous pouvez suivre les étapes ci-dessous pour configurer la réception de notifications :
+Pour configurer la réception de notifications, procédez comme suit :
 
-1. Créez les profils de produit suivants, comme décrit [dans cet article](/help/journey-onboarding/notification-profiles.md), en attribuant les identifiants d’Adobe appropriés de votre organisation à ces profils.
-1. Déterminez les paramètres de configuration des notifications. [Sur cette page](https://experience.adobe.com/preferences/notification-section), assurez-vous que l’option Abonnement du Experience Manager est activée et que la variable **Autres** est sélectionnée. En outre, il est recommandé de définir la section Emails sur **Notifications instantanées** ainsi, vous recevez des notifications immédiatement après un incident.
+1. Créez les profils de produit suivants, comme décrit [dans cet article](/help/journey-onboarding/notification-profiles.md), attribuant également les identifiants d’Adobe appropriés de votre organisation à ces profils. Cela permet à un administrateur de déterminer quels utilisateurs peuvent recevoir ces notifications.
+1. Chaque utilisateur affecté à l’étape précédente peut configurer la manière dont il souhaite recevoir ses notifications. Sur le [page Préférences de l’Experience Cloud](https://experience.adobe.com/preferences/notification-section), assurez-vous que l’abonnement du Experience Manager est activé et que la variable **Incidents opérationnels** et **Recommandations proactives** sont sélectionnées. En outre, il est recommandé de définir la section Emails sur **Notifications instantanées** par conséquent, les notifications sont reçues immédiatement en cas d’incident.
 
 >[!NOTE]
->Les abonnements fonctionnent au niveau de l’organisation, de sorte que les abonnés reçoivent des notifications pour tous les programmes et environnements de ces programmes.
+>Les notifications fonctionnent au niveau de l’organisation, de sorte que les abonnés reçoivent des notifications pour tous les programmes et environnements de ces programmes.
 
 ## Flux d’utilisateur détaillé {#detailed-user-flow}
 
@@ -62,11 +64,22 @@ Comme tous les tickets d’assistance, il apparaîtra dans la variable [Onglet C
 
 ![Prise en charge des Admin Console](/help/operations/assets/admin-console-support.png)
 
-## Types de notification actuels {#current-notification-types}
+## Quelles Notifications S’Affichent ? {#which-notification}
 
-Le tableau ci-dessous répertorie les types de notification actuellement pris en charge.
+AEM as a Cloud Service comporte plusieurs types de notifications, mais un seul sous-ensemble apparaît dans le Centre de notifications, comme illustré dans le tableau ci-dessous.
+
+| Type de notification | Description | Comment configurer | Apparaît dans le Centre de notification |
+|---|---|---|---|
+| Incidents opérationnels | Des incidents critiques nécessitant une action immédiate | Utilisateur affecté au profil de produit &quot;Notification d’incident - Cloud Service&quot;, case à cocher &quot;Incidents opérationnels&quot; sélectionnée dans [Préférences Experience Cloud](https://experience.adobe.com/preferences) | X |
+| Recommandations proactives | Optimisations qui doivent être planifiées | Utilisateur affecté au profil de produit &quot;Notification proactive - Cloud Service&quot;, case à cocher &quot;Recommandations proactives&quot; sélectionnée dans [Préférences Experience Cloud](https://experience.adobe.com/preferences) | X |
+| Statuts du pipeline de Cloud Manager | Informations sur l’état de vos pipelines | Utilisateur avec des rôles Propriétaire de l’entreprise, Responsable de programme ou Responsable de déploiement, case à cocher &quot;Autres&quot; sélectionnée dans [Préférences Experience Cloud](https://experience.adobe.com/preferences) |  |
+
+## Types de notification pris en charge {#supported-notification-types}
+
+Le tableau suivant répertorie les types de notification actuellement pris en charge.
 
 | Type de notification | Profil de produit associé | Correction |
 |---|---|---|
 | File d’attente de réplication bloquée | Incident | Débloquer la file d’attente en suivant les instructions de la section [Documentation de réplication](/help/operations/replication.md#troubleshooting) |
 | Expiration du certificat S2S | Proactif | Découvrez comment actualiser des informations d’identification dans le [Documentation sur la génération de jetons d’accès pour les API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials) |
+
