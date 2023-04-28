@@ -1,15 +1,15 @@
 ---
 title: Gérer la publication
-description: Publication ou annulation de la publication de ressources dans Experience Manager Assets, Dynamic Media et Brand Portal
+description: Publication ou dépublication de ressources dans Experience Manager Assets, Dynamic Media et Brand Portal
 contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: ca01102673211f17e58af36ef2a59d0e964022d5
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 100%
+source-wordcount: '1465'
+ht-degree: 97%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 
 En tant qu’administrateur [!DNL Adobe Experience Manager Assets], vous pouvez publier des ressources et des dossiers contenant des ressources de votre instance d’auteur sur [!DNL Experience Manager Assets], [!DNL Dynamic Media] et [!DNL Brand Portal]. Vous pouvez également planifier le workflow de publication d’une ressource ou d’un dossier à une date ou une heure ultérieure. Une fois ces éléments publiés, les utilisateurs peuvent accéder aux ressources et les distribuer à d’autres utilisateurs. Par défaut, vous pouvez publier des ressources et des dossiers sur [!DNL Experience Manager Assets]. Cependant, vous pouvez configurer [!DNL Experience Manager Assets] pour activer la publication sur [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr) et [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=fr).
 
-Vous pouvez publier ou annuler la publication de ressources au niveau de la ressource ou du dossier à l’aide de l’option **[!UICONTROL Publication rapide]** ou **[!UICONTROL Gérer la publication]**, disponibles dans l’interface [!DNL Experience Manager Assets]. Si vous apportez des modifications ultérieures à la ressource ou au dossier d’origine dans [!DNL Experience Manager Assets], les modifications ne sont pas répercutées dans l’instance de publication tant que vous n’avez pas republié à partir de [!DNL Experience Manager Assets]. Cela permet de s’assurer que les modifications en cours ne sont pas disponibles dans l’instance de publication. Seules les modifications approuvées publiées par un administrateur sont disponibles dans l’instance de publication.
+Vous pouvez publier ou dépublier des ressources au niveau de la ressource ou du dossier à l’aide de l’option **[!UICONTROL Publication rapide]** ou **[!UICONTROL Gérer la publication]**, disponibles dans l’interface [!DNL Experience Manager Assets]. Si vous apportez des modifications ultérieures à la ressource ou au dossier d’origine dans [!DNL Experience Manager Assets], les modifications ne sont pas répercutées dans l’instance de publication tant que vous n’avez pas republié à partir de [!DNL Experience Manager Assets]. Cela permet de s’assurer que les modifications en cours ne sont pas disponibles dans l’instance de publication. Seules les modifications approuvées publiées par un administrateur sont disponibles dans l’instance de publication.
 
 * [Publication de ressources à l’aide de la publication rapide](#quick-publish)
 * [Publication de ressources à l’aide de la fonction Gérer la publication](#manage-publication)
@@ -34,7 +34,7 @@ La publication rapide vous permet de publier immédiatement le contenu vers la d
 
 ## Publication de ressources à l’aide de la fonction Gérer la publication {#manage-publication}
 
-« Gérer la publication » permet de publier ou d’annuler la publication de contenu vers et depuis la destination sélectionnée, d’[ajouter du contenu](#add-content) à la liste de publication à partir du référentiel DAM, d’[inclure des paramètres de dossier](#include-folder-settings), de publier le contenu des dossiers sélectionnés et d’appliquer des filtres, et de [planifier une publication](#publish-assets-later) à une date ou à une heure ultérieure.
+« Gérer la publication » permet de publier ou de dépublier du contenu vers et depuis la destination sélectionnée, d’[ajouter du contenu](#add-content) à la liste de publication à partir du référentiel DAM, d’[inclure des paramètres de dossier](#include-folder-settings), de publier le contenu des dossiers sélectionnés et d’appliquer des filtres, et de [planifier une publication](#publish-assets-later) à une date ou à une heure ultérieure.
 
 Dans la console [!DNL Experience Manager Assets], accédez au dossier parent et sélectionnez toutes les ressources ou tous les dossiers à publier. Cliquez sur **[!UICONTROL Gérer la publication]** dans la barre d’outils. Si vous n’avez pas configuré [!DNL Dynamic Media] et [!DNL Brand Portal] dans votre instance [!DNL Experience Manager Assets], vous pouvez publier des ressources et des dossiers uniquement dans [!DNL Experience Manager Assets].
 
@@ -44,7 +44,7 @@ Les options suivantes sont disponibles dans l’interface [!UICONTROL Gérer la 
 
 * [!UICONTROL Actions]
    * `Publish` : publication de ressources et de dossiers vers la destination sélectionnée
-   * `Unpublish` : annulation de la publication de ressources et de dossiers à partir de la destination
+   * `Unpublish` : dépublication de ressources et de dossiers à partir de la destination
 
 * [!UICONTROL Destination]
    * `Publish` : publication de ressources et de dossiers sur [!DNL Experience Manager Assets] (`AEM`)
@@ -96,7 +96,7 @@ Après avoir appliqué les filtres, cliquez sur **[!UICONTROL OK]**, puis clique
 
 Dans l’illustration ci-dessus, vous pouvez voir différentes valeurs pour l’attribut **[!UICONTROL Cible de publication]**. Rappelons-nous que vous avez choisi de publier vers [!DNL Experience Manager Assets] (`Destination: Publish`). Alors, pourquoi indique-t-il que seuls un dossier et une ressource sont publiés vers `AEM`, et que les deux autres ressources sont publiées à la fois vers `AEM` et `Dynamic Media` ?
 
-Ici, vous devez comprendre le rôle des propriétés du dossier. Le **[!UICONTROL Mode de publication Dynamic Media]** d’un dossier joue un rôle important dans la publication. Pour afficher les propriétés d’un dossier, sélectionnez-le, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Pour une ressource, consultez les propriétés de son dossier parent.
+Ici, vous devez comprendre le rôle des propriétés du dossier. Un dossier **[!UICONTROL Mode de publication Dynamic Media]** joue un rôle important dans la publication. Pour afficher les propriétés d’un dossier, sélectionnez-le, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Pour une ressource, consultez les propriétés de son dossier parent.
 
 Le tableau suivant explique comment la publication se produit en fonction de la **[!UICONTROL Destination]** et du **[!UICONTROL Mode de publication Dynamic Media]** définis :
 
@@ -165,9 +165,9 @@ Seules les ressources sont publiées vers [!DNL Dynamic Media]. Cependant, le co
 Le processus de publication en mode **[!UICONTROL Immédiat]** et **[!UICONTROL Lors de l’activation]** est cohérent mais différent de la **[!UICONTROL Publication sélective]**. Consultez la [Configuration de la publication sélective au niveau des dossiers dans Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr). Après avoir configuré la publication sélective dans un dossier, vous pouvez effectuer l’une des opérations suivantes :
 
 * [Publier sélectivement des ressources dans Dynamic Media ou Experience Manager à l’aide de la fonction Gérer la publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#selective-publish-manage-publication)
-* [Annuler sélectivement la publication de ressources dans Dynamic Media ou Experience Manager à l’aide de la fonction Gérer la publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#selective-unpublish-manage-publication)
+* [Dépublier sélectivement des ressources dans Dynamic Media ou Experience Manager à l’aide de la fonction Gérer la publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#selective-unpublish-manage-publication)
 * [Publication de ressources dans Dynamic Media ou Experience Manager à l’aide de la publication rapide](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#quick-publish-aem-dm)
-* [Publier des ressources ou en annuler la publication de manière sélective au moyen des résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#selective-publish-unpublish-search-results)
+* [Publier ou dépublier des ressources de manière sélective au moyen des résultats de recherche](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/selective-publishing.html?lang=fr#selective-publish-unpublish-search-results)
 
 ## Publication de ressources sur Brand Portal {#publish-assets-to-brand-portal}
 
@@ -182,4 +182,19 @@ Vous pouvez publier des ressources, des dossiers et des collections dans l’ins
 * L’option [!UICONTROL Gérer la publication] n’est disponible que pour les comptes d’utilisateurs disposant d’autorisations de réplication.
 * Les dossiers vides ne sont pas publiés.
 * Si vous publiez une ressource en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
-* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références car elles peuvent être référencées par d’autres ressources publiées.
+* Lors de la dépublication d’une ressource complexe, dépubliez uniquement la ressource. Évitez de dépublier des références, car elles peuvent être référencées par d’autres ressources publiées.
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)

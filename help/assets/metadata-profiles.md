@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: cec07dad7a62439e26d9657459964b01ce6e3dba
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1386'
 ht-degree: 98%
 
 ---
@@ -124,3 +124,18 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 1. Cliquez sur le logo Experience Manager et accédez à **[!UICONTROL Ressources]**, puis au dossier duquel vous souhaitez supprimer un profil de métadonnées.
 1. Dans le dossier, cliquez sur la coche pour la sélectionner, puis sur **[!UICONTROL Propriétés]**.
 1. Sélectionnez l’onglet **[!UICONTROL Profils de métadonnées]**, puis **[!UICONTROL Aucun]** dans le menu déroulant, et cliquez sur **[!UICONTROL Enregistrer]**. Dans le cas des dossiers auxquels un profil est déjà affecté, le nom du profil est affiché directement sous celui du dossier.
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)

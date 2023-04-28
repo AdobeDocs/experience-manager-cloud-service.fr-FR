@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: 42298e0ff7d977a32c87e61e9e1f4b02a846f2c0
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4326'
-ht-degree: 100%
+source-wordcount: '4356'
+ht-degree: 86%
 
 ---
 
@@ -28,7 +28,7 @@ Lorsque vous organisez une collection de ressources, comme toutes les images `Na
 
 
 1. Dans le dossier Ressources numériques, accédez à l’emplacement où vous souhaitez créer un dossier. Dans le menu, cliquez sur **[!UICONTROL Créer]**. Sélectionnez **[!UICONTROL Nouveau dossier]**.
-1. Dans le champ **[!UICONTROL Titre]**, indiquez le nom du dossier. Par défaut, DAM utilise le titre que vous avez fourni comme nom du dossier. Une fois le dossier créé, vous pouvez remplacer le nom par défaut et entrer un autre nom de dossier.
+1. Dans le champ **[!UICONTROL Titre]**, indiquez le nom du dossier. Par défaut, DAM utilise le titre que vous avez fourni comme nom du dossier. Une fois le dossier créé, vous pouvez remplacer la valeur par défaut et spécifier un autre nom de dossier.
 1. Cliquez sur **[!UICONTROL Créer]**. Le dossier apparaît dans le dossier Ressources numériques.
 
 Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici et séparés par des espaces) :
@@ -118,7 +118,7 @@ Pour prévisualiser une ressource, procédez comme suit.
 
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
-1. Accédez à l’interface utilisateur d’Assets. Les propriétés des métadonnées modifiées, notamment le titre, la description et les balises, sont affichées sur la carte des ressources en mode Carte et dans les colonnes pertinentes en mode Liste.
+1. Accédez à l’interface utilisateur d’Assets. Les propriétés des métadonnées modifiées, notamment le titre, la description et les balises, sont affichées sur la carte des ressources dans la vue Carte et dans les colonnes pertinentes dans la vue Liste.
 
 <!-- TBD: Uncomment after verification for Dec release.
 
@@ -138,9 +138,9 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 ## Copie de ressources {#copying-assets}
 
-Lorsque vous copiez une ressource ou un dossier, l’intégralité de la ressource ou le dossier sont copiés, avec la structure du contenu. Une ressource copiée ou un dossier sont dupliqués à l’emplacement cible. La ressource stockée à l’emplacement source n’est pas modifiée.
+Lorsque vous copiez une ressource ou un dossier, l’intégralité de la ressource ou du dossier est copiée, ainsi que sa structure de contenu. Une ressource ou un dossier copié est dupliqué à l’emplacement cible. La ressource à l’emplacement source n’est pas modifiée.
 
-Quelques attributs uniques à une copie spécifique d’une ressource ne sont pas reportés. Voici quelques exemples :
+Certains attributs propres à une copie spécifique d’une ressource ne sont pas transférés. Voici quelques exemples :
 
 * ID de la ressource, date et heure de création, versions et historique des versions. Certaines de ces propriétés sont indiquées par les propriétés `jcr:uuid`, `jcr:created` et `cq:name`.
 
@@ -181,8 +181,8 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
    * Appuyez/cliquez sur **[!UICONTROL Annuler]** pour arrêter le processus.
    >[!NOTE]
    >
-   >* Vous pouvez attribuer le même nom à la ressource si aucune autre ressource portant ce nom n’existe dans le nouvel emplacement. Cependant, vous devez utiliser un nouveau nom si vous déplacez la ressource vers un emplacement dans lequel une ressource portant le même nom existe. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
-   >* Lors de l’attribution d’un nouveau nom à un fichier, aucun espace n’est autorisé dans le nom.
+   >* Vous pouvez spécifier le même nom pour la ressource si aucune ressource portant ce nom n’existe au nouvel emplacement. Cependant, vous devez utiliser un nom différent si vous déplacez la ressource vers un emplacement où il existe une ressource portant le même nom. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
+   >* Lors du changement de nom, le nom du fichier ne contient pas d’espace.
 
 
 1. Dans la boîte de dialogue **[!UICONTROL Sélectionner la destination]**, procédez comme suit :
@@ -260,23 +260,23 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource.
 
-De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvrement afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
+Désactivez également le bouton Forcer la suppression à l’aide d’une superposition afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
 
 1. Accédez à l’emplacement des ressources que vous souhaitez supprimer.
 
 1. Sélectionnez la ressource et cliquez sur l’icône **[!UICONTROL Supprimer]** de la barre d’outils ![delete_icon](assets/do-not-localize/delete-icon.png).
 
-1. Dans la boîte de dialogue de confirmation, cliquez sur :
+1. Dans la boîte de dialogue de confirmation, cliquez sur :
 
    * **[!UICONTROL Annuler]** pour arrêter l’action
-   * **[!UICONTROL Supprimer]** pour confirmer l’action :
+   * **[!UICONTROL Supprimer]** pour confirmer l’action :
 
       * Si la ressource ne comporte aucune référence, elle est supprimée.
       * Si la ressource comporte des références, un message d’erreur vous informe qu’**[!UICONTROL une ou plusieurs ressources sont référencées.]** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
 
    >[!NOTE]
    >
-   >Pour pouvoir supprimer une ressource, vous devez disposer des autorisations appropriées dans la gestion des actifs numériques/ressource. Si vous disposez uniquement d’autorisations de modification, vous pourrez seulement modifier les métadonnées de la ressource et ajouter des annotations à cette dernière. Toute suppression s’avérera impossible.
+   >Pour pouvoir supprimer une ressource, vous devez disposer des autorisations appropriées dans la gestion des actifs numériques/ressource. Si vous disposez uniquement des autorisations de modification, vous pouvez uniquement modifier les métadonnées de la ressource et ajouter des annotations à la ressource. Cependant, vous ne pouvez pas supprimer la ressource ou ses métadonnées.
 
    >[!NOTE]
    >
@@ -286,37 +286,37 @@ De plus, désactivez le bouton Forcer la suppression à l’aide d’un recouvre
 
 Consultez [Téléchargement des ressources à partir de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
-## Publication ou annulation de la publication de ressources {#publish-assets}
+## Publication ou dépublication de ressources {#publish-assets}
 
-1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou que vous souhaitez supprimer dans l’environnement de publication (annuler la publication).
+1. Accédez à l’emplacement de la ressource ou du dossier de ressources que vous souhaitez publier ou dépublier dans l’environnement de publication (dépublication).
 
 1. Sélectionnez la ressource ou le dossier à publier ou dont vous souhaitez annuler la publication, puis sélectionnez l’option **[!UICONTROL Gérer la publication]** ![gérer la publication](assets/do-not-localize/globe-publication.png) dans la barre d’outils. Pour publier rapidement, vous pouvez également sélectionner l’option **[!UICONTROL Publication rapide]** dans la barre d’outils. Si le dossier que vous souhaitez publier comprend un sous-dossier vide, ce dernier n’est pas publié.
 
-1. Sélectionnez l’option **[!UICONTROL Modifier]** ou **[!UICONTROL Annuler la publication]** selon vos besoins.
+1. Sélectionnez l’option **[!UICONTROL Modifier]** ou **[!UICONTROL Dépublier]** selon vos besoins.
 
-   ![Action Annuler la publication](assets/unpublish_action.png)
-   *Figure : options Publier et Annuler la publication et option de planification.*
+   ![Action Dépublier](assets/unpublish_action.png)
+   *Figure : options Publier et Dépublier, et option de planification.*
 
 1. Sélectionnez **[!UICONTROL Maintenant]** pour agir immédiatement sur la ressource ou sélectionnez **[!UICONTROL Plus tard]** pour planifier l’action. Sélectionnez une date et une heure si vous choisissez l’option **[!UICONTROL Plus tard]**. Cliquez sur **[!UICONTROL Suivant]**.
 
-1. Lors d’une publication, si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui ne sont pas publiées ou modifiées depuis la dernière publication s’affichent. Choisissez les références que vous souhaitez publier.
+1. Lors d’une publication, si la ressource fait référence à d’autres ressources, ses références sont répertoriées dans l’Assistant. Seules les références qui ont été dépubliées ou modifiées depuis la dernière publication s’affichent. Choisissez les références que vous souhaitez publier.
 
-1. Lors de l’annulation de la publication, si une ressource fait référence à d’autres ressources, sélectionnez les références dont vous souhaitez annuler la publication. Cliquez sur **[!UICONTROL Annuler la publication]**. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Annuler]** pour arrêter l’action ou sur **[!UICONTROL Annuler la publication]** pour confirmer que les ressources doivent être dépubliées à la date spécifiée.
+1. Lors de la dépublication, si une ressource fait référence à d’autres ressources, sélectionnez les références que vous souhaitez dépublier. Cliquez sur **[!UICONTROL Dépublier]**. Dans la boîte de dialogue de confirmation, cliquez sur **[!UICONTROL Annuler]** pour arrêter l’action ou sur **[!UICONTROL Dépublier]** pour confirmer que les ressources doivent être dépubliées à la date spécifiée.
 
-Gardez à l’esprit les limites et conseils suivants liés à la publication ou à l’annulation de la publication de ressources ou de dossiers :
+Gardez à l’esprit les limites et conseils suivants liés à la publication ou la dépublication de ressources ou de dossiers :
 
 * L’option [!UICONTROL Gérer la publication] n’est disponible que pour les comptes d’utilisateurs disposant d’autorisations de réplication.
-* Lors de l’annulation de la publication d’une ressource complexe, annulez uniquement la publication de la ressource. Évitez d’annuler la publication des références car elles peuvent être référencées par d’autres ressources publiées.
+* Lors de la dépublication d’une ressource complexe, dépubliez uniquement la ressource. Évitez de dépublier les références, car elles peuvent être référencées par d’autres ressources publiées.
 * Les dossiers vides ne sont pas publiés.
-* Si vous publiez une ressource qui est en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
+* Si vous publiez une ressource en cours de traitement, seul le contenu d’origine est publié. Les rendus sont absents. Attendez que le traitement soit terminé, puis publiez ou republiez la ressource une fois le traitement terminé.
 
 ## Groupe d’utilisateurs fermé {#closed-user-group}
 
 Les groupes d’utilisateurs fermés permettent de limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’[!DNL Experience Manager]. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
 
-Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de limiter l’accès à vos ressources. Vous pouvez également configurer une page de connexion pour le dossier.
+Les groupes d’utilisateurs fermés sont un moyen supplémentaire de restreindre l’accès à vos ressources. Vous pouvez également configurer une page de connexion pour le dossier.
 
-1. Sélectionnez un dossier dans l’IU Assets, puis appuyez/cliquez sur l’icône Propriétés de la barre d’outils pour afficher la page de propriétés.
+1. Sélectionnez un dossier dans l’interface utilisateur d’Assets, puis appuyez/cliquez sur l’icône Propriétés de la barre d’outils pour afficher la page des propriétés.
 1. Sous l’onglet **[!UICONTROL Autorisations]**, ajoutez les membres ou les groupes sous **[!UICONTROL Groupe d’utilisateurs fermé]**.
 
    ![add_user](assets/add_user.png)
@@ -329,7 +329,7 @@ Les groupes d’utilisateurs fermés constituent un moyen supplémentaire de lim
    >
    >Si vous ne spécifiez pas le chemin d’une page de connexion, [!DNL Experience Manager] affiche la page de connexion par défaut dans l’instance de publication.
 
-1. Publiez le dossier, puis tentez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
+1. Publiez le dossier, puis essayez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
 1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
 
 ## Recherche de ressources {#search-assets}
@@ -410,11 +410,11 @@ La chronologie permet d’afficher différents événements d’un élément sé
 
 >[!NOTE]
 >
->Dans la [console Collections](/help/assets/manage-collections.md#navigate-the-collections-console), la liste **[!UICONTROL Tout afficher]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la chronologie ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous accédez à l’intérieur des collections.
+>Dans la [console Collections](/help/assets/manage-collections.md#navigate-the-collections-console), la liste **[!UICONTROL Tout afficher]** contient des options permettant de n’afficher que les commentaires et les workflows. De plus, la chronologie ne s’affiche que pour les collections de niveau supérieur répertoriées dans la console. Elle ne s’affiche pas si vous naviguez dans l’une des collections.
 
 >[!NOTE]
 >
->La chronologie comprend plusieurs [options spécifiques aux fragments de contenu](content-fragments/content-fragments.md).
+>La chronologie contient plusieurs [options spécifiques aux fragments de contenu](content-fragments/content-fragments.md).
 
 ## Appliquer des annotations à des ressources {#annotating}
 
@@ -424,7 +424,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 >[!NOTE]
 >
->Pour les fragments de contenu, [les annotations sont créées dans l’éditeur de fragment](content-fragments/content-fragments.md).
+>Pour les fragments de contenu, [les annotations sont créées dans l’éditeur de fragments.](content-fragments/content-fragments.md).
 
 1. Accédez à l’emplacement de la ressource à laquelle vous souhaitez ajouter des annotations.
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Annoter]** à partir de l’une des options suivantes :
@@ -461,7 +461,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
    >[!NOTE]
    >
-   >Vous pouvez ajouter des annotations à des ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, consultez la section [Gestion de ressources vidéo](manage-video-assets.md). Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
+   >Vous pouvez également ajouter des annotations aux ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, consultez la section [Gestion de ressources vidéo](manage-video-assets.md). Toutefois, le format vidéo MXF n’est pas encore pris en charge avec les annotations vidéo.
 
 1. Pour sélectionner une autre couleur afin de différencier les utilisateurs, cliquez/appuyez sur l’icône Profil et ensuite sur **[!UICONTROL Mes préférences]**.
 
@@ -473,7 +473,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 >[!NOTE]
 >
->Vous pouvez également ajouter des annotations à une collection. Cependant, si une collection contient des collections enfants, vous ne pouvez ajouter des annotations/commentaires qu’à la collection parent. L’option Annoter n’est pas disponible pour les collections enfants.
+>Vous pouvez également ajouter des annotations à une collection. Toutefois, si une collection contient des collections enfants, vous pouvez ajouter des annotations/commentaires uniquement à la collection parent. L’option Annoter n’est pas disponible pour les collections enfants.
 
 ### Affichage des annotations enregistrées {#viewing-saved-annotations}
 
@@ -513,7 +513,7 @@ Vous pouvez également choisir de n’imprimer que les annotations ou le statut 
 
 Pour imprimer les annotations et le statut de révision, cliquez/appuyez sur l’icône **[!UICONTROL Imprimer]** et suivez les instructions de l’assistant. L’icône **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un statut de révision.
 
-1. Ouvrez la page d’aperçu d’une ressource à partir de l’interface utilisateur d’Assets.
+1. Dans l’interface utilisateur d’Assets, ouvrez la page d’aperçu d’une ressource.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour imprimer toutes les annotations et le statut de révision, ignorez l’étape 3 et passez directement à l’étape 4.
@@ -545,9 +545,9 @@ Pour imprimer les annotations et le statut de révision, cliquez/appuyez sur l�
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-   Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des statuts, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotations](/help/assets/manage-digital-assets.md#annotating).
+   Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des statuts, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-digital-assets.md#annotating).
 
-   Revenez au fichier PDF généré et actualisez-le. Le fichier PDF actualisé affiche désormais les modifications que vous avez effectuées.
+   Revenez au fichier de PDF rendu et actualisez-le. Le PDF actualisé reflète les modifications que vous avez apportées.
 
 ## Contrôle de version des ressources {#asset-versioning}
 
@@ -555,16 +555,16 @@ Le contrôle de version permet de créer un instantané des ressources numériqu
 
 Voici quelques scénarios de création de versions :
 
-* Vous modifiez une image dans une autre application et la chargez vers Assets. Une version de l’image est créée afin que votre image d’origine ne soit pas remplacée.
+* Vous modifiez une image dans une autre application et la chargez vers Assets. Une version de l’image est créée afin que l’image d’origine ne soit pas écrasée.
 * Vous modifiez les métadonnées d’une ressource.
 * Vous utilisez l’application de bureau [!DNL Experience Manager] pour extraire une ressource existante et enregistrer vos changements. Une nouvelle version est créée chaque fois que la ressource est enregistrée.
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
-La création de versions permet d’effectuer les opérations suivantes :
+La fonctionnalité de contrôle de version vous permet d’effectuer les opérations suivantes :
 
-* créer une version d’une ressource ;
-* afficher la révision actuelle d’une ressource ;
+* Créez une version d’une ressource.
+* Afficher la révision actuelle d’une ressource.
 * restaurer une version précédente de la ressource.
 
 1. Accédez à l’emplacement de la ressource pour laquelle vous souhaitez créer une version et appuyez/cliquez dessus pour afficher la page Ressource correspondante.
@@ -636,10 +636,10 @@ La création de versions permet d’effectuer les opérations suivantes :
 
 ## Collections {#collections}
 
-Une collection est un ensemble de ressources classées. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
+Une collection est un ensemble ordonné de ressources. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
 
-* Une collection peut comporter des ressources provenant de différents emplacements, car elle ne contient que les références à ces ressources. Chaque collection préserve l’intégrité du référentiel des ressources.
-* Vous pouvez partager des ressources avec plusieurs utilisateurs dont les niveaux de privilèges sont différents (modification, affichage, etc.).
+* Une collection peut inclure des ressources provenant de différents emplacements, car elle ne contient que des références à ces ressources. Chaque collection conserve l’intégrité référentielle des ressources.
+* Vous pouvez partager des collections avec plusieurs utilisateurs avec différents niveaux de privilèges, y compris la modification, l’affichage, etc.
 
 Pour plus d’informations sur la gestion des collections, voir [Gestion des collections](/help/assets/manage-collections.md).
 
@@ -662,3 +662,18 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 ```
 
 Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide de l’appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#browse-search-preview-assets) et [comment utiliser Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)

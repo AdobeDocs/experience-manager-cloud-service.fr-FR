@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
-source-git-commit: 20d54ccdd116c3dbede8fb20f7169a17a223f7a1
+source-git-commit: 91af800c8b2f83e689e057f304a8e144ae4cc5ed
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 100%
+source-wordcount: '1981'
+ht-degree: 95%
 
 ---
 
@@ -94,19 +94,19 @@ Il existe différentes manières d’incorporer des métadonnées dans des fichi
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP) est une norme ouverte utilisée par [!DNL Experience Manager Assets] pour la gestion des métadonnées. La norme permet le codage universel des métadonnées en l’incorporant dans tous les formats de fichier. Adobe et d’autres entreprises prennent en charge la norme XMP, car elle offre un modèle de contenu enrichi. Les utilisateurs de XMP standard et de [!DNL Experience Manager Assets] disposent d’une plate-forme puissante sur laquelle s’appuyer. Pour plus d’informations, voir la section [XMP](https://www.adobe.com/products/xmp.html).
+[!DNL Extensible Metadata Platform] (XMP) est une norme ouverte utilisée par [!DNL Experience Manager Assets] pour la gestion des métadonnées. La norme permet le codage universel des métadonnées en l’incorporant dans tous les formats de fichier. Adobe et d’autres entreprises prennent en charge la norme XMP, car elle offre un modèle de contenu enrichi. Si vous utilisez la norme XMP et [!DNL Experience Manager Assets], vous disposez d’une plateforme puissante sur laquelle vous appuyer. Pour plus d’informations, voir la section [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
-Les données stockées dans ces balises ID3 s’affichent lors de la lecture d’un fichier audio numérique sur un ordinateur ou un lecteur MP3 portable.
+Les données stockées dans ces balises ID3 s’affichent lorsque vous lisez un fichier audio numérique sur votre ordinateur ou un lecteur MP3 portable.
 
-Les balises ID3 sont destinées au format de fichier MP3. Informations supplémentaires sur les formats :
+Les balises ID3 sont conçues pour le format de fichier MP3. Informations supplémentaires sur les formats :
 
 * Les balises ID3 fonctionnent dans les fichiers MP3 et mp3PRO.
 * Le format WAV ne contient pas de balises.
 * Le format WMA possède des balises propriétaires qui n’autorisent pas l’implémentation Open Source.
 * Le format Ogg Vorbis utilise des commentaires Xiph incorporés dans le conteneur Ogg.
-* Le format AAC utilise un format de balisage propriétaire.
+* AAC utilise un format de balisage propriétaire.
 
 ### Exif {#exif}
 
@@ -141,7 +141,7 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
 
    >[!NOTE]
    >
-   >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des ressources de la liste des ressources en les désélectionnant. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
+   >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des ressources de la liste des ressources en les désélectionnant. Toutes les ressources sont sélectionnées par défaut dans la liste des ressources. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
    >* En haut de la liste des ressources, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
 
 
@@ -242,6 +242,20 @@ La création de workflows pilotés par les métadonnées permet d’automatiser 
 * Le workflow peut vérifier si une image contient un titre. Dans le cas contraire, le système vous avertit d’ajouter un titre.
 * Le workflow peut vérifier si une mention de droit d’auteur relative à un fichier permet la distribution ou non. Ainsi, le système envoie la ressource à un serveur ou à un autre.
 * Un workflow peut rechercher des ressources sans métadonnées obligatoires prédéfinies ou des ressources contenant des métadonnées *non valides*.
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

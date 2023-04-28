@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 95%
+source-wordcount: '1345'
+ht-degree: 94%
 
 ---
 
@@ -149,3 +149,18 @@ Une ressource est considérée comme protégée si l’une de ces conditions est
    >L’option **[!UICONTROL Télécharger]** n’est activée que si vous choisissez d’accepter le contrat de licence d’une ressource protégée. Cependant, si votre sélection comprend à la fois des ressources protégées et non protégées, seules ces dernières sont répertoriées dans le volet, et l’option **[!UICONTROL Télécharger]** est disponible pour le téléchargement des ressources non protégées. Pour accepter le contrat de licence de plusieurs ressources protégées en même temps, sélectionnez-les dans la liste, puis cliquez sur **[!UICONTROL Accepter]**.
 
 1. Pour télécharger la ressource ou ses rendus, sélectionnez **[!UICONTROL Télécharger]** dans la boîte de dialogue.
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)

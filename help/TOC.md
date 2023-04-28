@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 91b8fe48d72da9ef764732e5188bb8340b7a660a
+source-git-commit: 06a10f1ec7a3f4842a9cac1f1fe8a889a275cabb
 workflow-type: tm+mt
-source-wordcount: '4068'
+source-wordcount: '4066'
 ht-degree: 97%
 
 ---
@@ -420,7 +420,7 @@ ht-degree: 97%
       + [Schéma de métadonnées de dossier](/help/assets/folder-metadata-schema.md)
       + [Utilisation des profils d’image et vidéo](/help/assets/dynamic-media/about-image-video-profiles.md)
       + [Configuration de la transcription pour les ressources audio et vidéo](/help/assets/configure-transcription.md)
-      + [Ressources multilingues et traduction](/help/assets/translate-assets.md)
+      + [Traduire les ressources](/help/assets/translate-assets.md)
       + [Facettes de recherche](/help/assets/search-facets.md)
       + [API HTTP Assets](/help/assets/mac-api-assets.md)
       + [Prise en charge des fragments de contenu dans l’API HTTP Assets](/help/assets/content-fragments/assets-api-content-fragments.md)

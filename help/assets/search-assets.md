@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: d37193833d784f3f470780b8f28e53b473fd4e10
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4897'
+source-wordcount: '4925'
 ht-degree: 95%
 
 ---
@@ -46,7 +46,7 @@ Familiarisez-vous avec l’interface de recherche et les actions disponibles.
 
 *Figure : Présentation de l’interface des résultats de recherche [!DNL Experience Manager Assets].*
 
-**A.** Enregistrer la recherche en tant que collection dynamique. **B.** Filtres ou prédicats pour limiter les résultats de recherche. **C.** Afficher les fichiers, les dossiers ou les deux. **D.** Cliquer sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est la gestion des ressources numériques. **F.** Champ Omni-recherche avec mot-clé de recherche fourni par l’utilisateur. **G.** Sélectionner les résultats de recherche chargés. **H.** Nombre de résultats de recherche affichés par rapport au nombre total de résultats de recherche. **I.** Fermer la recherche. **J.** Basculer entre le mode carte et le mode liste.
+**A.** Enregistrer la recherche en tant que collection dynamique. **B.** Filtres ou prédicats pour limiter les résultats de recherche. **C.** Afficher les fichiers, les dossiers ou les deux. **D.** Cliquer sur Filtres pour ouvrir ou fermer le rail de gauche. **E.** L’emplacement de recherche est la gestion des ressources numériques. **F.** Champ Omni-recherche avec mot-clé de recherche fourni par l’utilisateur. **G.** Sélectionner les résultats de recherche chargés. **H.** Nombre de résultats de recherche affichés par rapport au nombre total de résultats de recherche. **I.** Fermer la recherche. **J.** Basculer entre les vues Carte et Liste.
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
@@ -76,7 +76,7 @@ Les résultats sont triés par pertinence, en commençant par les correspondance
 
 Pour rechercher rapidement les ressources appropriées, l’interface riche fournit des mécanismes de filtrage, de tri et de sélection. Vous pouvez filtrer les résultats selon plusieurs critères et afficher le nombre de ressources recherchées pour différents filtres. Vous pouvez également réexécuter la recherche en modifiant la requête dans le champ Omni-recherche. Lorsque vous modifiez les termes ou filtres de recherche, les autres filtres restent appliqués pour préserver le contexte de la recherche.
 
-Lorsque les résultats sont de nombreuses ressources, [!DNL Experience Manager] affiche les 100 premiers en mode carte et les 200 premiers en mode liste. Des ressources supplémentaires sont chargées lorsque l’utilisateur fait défiler le contenu. Il s’agit d’améliorer les performances. Regardez une démonstration vidéo du [nombre de ressources affichées](https://www.youtube.com/watch?v=LcrGPDLDf4o).
+Lorsque les résultats sont de nombreuses ressources, [!DNL Experience Manager] affiche les 100 premiers dans la vue Carte et les 200 premiers dans la vue Liste. Des ressources supplémentaires sont chargées lorsque l’utilisateur fait défiler le contenu. Il s’agit d’améliorer les performances. Regardez une démonstration vidéo du [nombre de ressources affichées](https://www.youtube.com/watch?v=LcrGPDLDf4o).
 
 Il arrive que des ressources inattendues apparaissent dans les résultats de la recherche. Pour plus d’informations, voir [Résultats inattendus](#unexpected-results).
 
@@ -265,13 +265,13 @@ La recherche visuelle ou par analogie présente les restrictions suivantes :
 
 La fonctionnalité de recherche peut présenter des limitations de performances dans les cas suivants :
 
-* Le chargement pour l’affichage des résultats de la recherche est plus rapide en mode carte qu’en mode liste.
+* Le chargement pour l’affichage des résultats de la recherche est plus rapide dans la vue Carte que dans la vue Liste.
 
 ## Conseils de recherche {#tips}
 
 * Si vous surveillez l’état de révision des ressources, utilisez l’option appropriée pour trouver les ressources qui sont approuvées ou en attente d’approbation.
 * Utilisez le prédicat Statistiques pour rechercher les ressources prises en charge en fonction de leurs statistiques d’utilisation obtenues auprès de diverses applications Creative. Les données d’utilisation sont regroupées sous Note d’utilisation, Impressions, Clics et Canaux de médias où les ressources apparaissent dans des catégories.
-* Cochez la case **[!UICONTROL Sélectionner tout]** pour sélectionner les ressources recherchées. [!DNL Experience Manager] affiche initialement 100 ressources en mode carte et 200 ressources en mode liste. Des ressources supplémentaires sont chargées lorsque vous faites défiler les résultats de la recherche. Vous pouvez sélectionner plus de ressources que les ressources chargées. Le nombre de ressources sélectionnées est affiché dans l’angle supérieur droit de la page des résultats de la recherche. Vous pouvez agir sur la sélection, par exemple télécharger les ressources sélectionnées, mettre à jour des propriétés de métadonnées en bloc pour les ressources sélectionnées ou ajouter les ressources sélectionnées à une collection. Lorsqu’il y a moins de ressources affichées que de ressources sélectionnées, une action est appliquée à toutes les ressources sélectionnées ou une boîte de dialogue affiche le nombre de ressources auxquelles elle est appliquée. Pour appliquer une action aux ressources qui n’ont pas été chargées, veillez à ce que toutes les ressources soient sélectionnées explicitement.
+* Cochez la case **[!UICONTROL Sélectionner tout]** pour sélectionner les ressources recherchées. [!DNL Experience Manager] affiche initialement 100 ressources dans la vue Carte et 200 ressources dans la vue Liste. Des ressources supplémentaires sont chargées lorsque vous faites défiler les résultats de la recherche. Vous pouvez sélectionner plus de ressources que les ressources chargées. Le nombre de ressources sélectionnées est affiché dans l’angle supérieur droit de la page des résultats de la recherche. Vous pouvez agir sur la sélection, par exemple télécharger les ressources sélectionnées, mettre à jour des propriétés de métadonnées en bloc pour les ressources sélectionnées ou ajouter les ressources sélectionnées à une collection. Lorsqu’il y a moins de ressources affichées que de ressources sélectionnées, une action est appliquée à toutes les ressources sélectionnées ou une boîte de dialogue affiche le nombre de ressources auxquelles elle est appliquée. Pour appliquer une action aux ressources qui n’ont pas été chargées, veillez à ce que toutes les ressources soient sélectionnées explicitement.
 * Pour rechercher les ressources qui ne contiennent pas les métadonnées obligatoires, voir [Métadonnées obligatoires](#mandatorymetadata).
 * La recherche utilise tous les champs de métadonnées. Une recherche générique, telle que la recherche du nombre 12, renvoie généralement de nombreux résultats. Pour de meilleurs résultats, utilisez des guillemets doubles (et non des guillemets simples) ou assurez-vous que le nombre est attaché à un mot sans caractère spécial (par exemple, `shoe12`).
 * La recherche en texte intégral prend en charge les opérateurs tels que `-` et `^`. Pour rechercher des informations sous forme de chaînes littérales, indiquez la phrase de recherche entre guillemets. Par exemple, utilisez `"Notebook - Beauty"` au lieu de `Notebook - Beauty`.
@@ -409,9 +409,9 @@ Vous pouvez effectuer les opérations suivantes avec les ressources que vous ave
 
 ### Tri des résultats de la recherche {#sort}
 
-Trier les résultats de la recherche pour découvrir plus rapidement les ressources requises. Vous pouvez trier les résultats de recherche en mode liste et uniquement lorsque vous sélectionnez **[[!UICONTROL Fichiers]](#searchui)** dans le panneau **[!UICONTROL Filtres]**. [!DNL Assets] utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
+Trier les résultats de la recherche pour découvrir plus rapidement les ressources requises. Vous pouvez trier les résultats de recherche dans la vue Liste et uniquement lorsque vous sélectionnez **[[!UICONTROL Fichiers]](#searchui)** dans le panneau **[!UICONTROL Filtres]**. [!DNL Assets] utilise le tri côté serveur pour trier rapidement toutes les ressources (quel que soit leur nombre) dans un dossier ou les résultats d’une requête. Le tri côté serveur fournit des résultats plus rapides et plus précis que le tri côté client.
 
-En mode Liste, vous pouvez trier les résultats de recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes : Nom, Titre, État, Dimensions, Taille, Évaluation, Utilisation, (Date de) création, (Date de) publication, Workflow et Extraits.
+Dans la vue Liste, vous pouvez trier les résultats de recherche tout comme vous pouvez trier les ressources de n’importe quel dossier. Le tri fonctionne sur ces colonnes : Nom, Titre, État, Dimensions, Taille, Évaluation, Utilisation, (Date de) création, (Date de) publication, Workflow et Extraits.
 
 Pour connaître les restrictions de la fonctionnalité de tri, voir [Restrictions](#limitations).
 
@@ -462,7 +462,21 @@ Vous pouvez créer des collections dynamiques en fonction des critères de reche
 | Aucun filtre de recherche ou prédicat n’est disponible. | <ul><li>Le filtre de recherche n’est pas configuré.</li><li>Il n’est pas disponible pour votre connexion.</li><li>(Moins probable) Les options de recherche ne sont pas personnalisées sur le déploiement que vous utilisez.</li></ul> | <ul><li>Contacter l’administrateur pour vérifier la disponibilité de personnalisations de la recherche.</li><li>Contacter l’administrateur pour vérifier si votre compte dispose du privilège ou d’autorisations permettant d’utiliser la personnalisation.</li><li>Contacter l’administrateur et vérifier les personnalisations disponibles pour le déploiement [!DNL Assets] que vous utilisez.</li></ul> |
 | Lors de la recherche d’images similaires visuellement, une image attendue est manquante. | <ul><li>L’image n’est pas disponible dans [!DNL Experience Manager].</li><li>L’image n’est pas indexée. Généralement lorsqu’elle a été téléchargée récemment.</li><li>L’image ne présente pas de balisage intelligent.</li></ul> | <ul><li>Ajoutez l’image à [!DNL Assets].</li><li>Contactez votre administrateur pour indexer à nouveau le référentiel. Veillez également à utiliser l’index approprié.</li><li>Contactez votre administrateur pour procéder au balisage intelligent des ressources appropriées.</li></ul> |
 | Lors de la recherche d’images similaires visuellement, une image inappropriée est affichée. | Comportement de recherche visuelle. | [!DNL Experience Manager] affiche autant de ressources potentiellement pertinentes que possible. Les images moins pertinentes, le cas échéant, sont ajoutées aux résultats, mais avec un classement inférieur dans les résultats de recherche. La qualité des correspondances et la pertinence des ressources recherchées diminuent à mesure que vous descendez dans les résultats de la recherche. |
-| Lors de la sélection de résultats de la recherche et d’action sur ces résultats, aucune action n’est réalisée sur certaines ressources recherchées. | L’option [!UICONTROL Sélectionner tout] ne sélectionne que les 100 premiers résultats de recherche en mode carte et les 200 premiers résultats de recherche en mode liste. |  |
+| Lors de la sélection de résultats de la recherche et d’action sur ces résultats, aucune action n’est réalisée sur certaines ressources recherchées. | L’option [!UICONTROL Sélectionner tout] ne sélectionne que les 100 premiers résultats de recherche dans la vue Carte et les 200 premiers résultats de recherche dans la vue Liste. |  |
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

@@ -11,10 +11,10 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 4edf66127696ce91466811e2ffdcfbbd73f7cc2c
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 100%
+source-wordcount: '1696'
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 100%
 La transcription est le processus de traduction de l’audio d’un fichier audio ou vidéo en texte (voix vers texte) à l’aide de la technologie de reconnaissance vocale.
 [!DNL Adobe Experience Manager Assets] est configuré avec les [!DNL Azure Media Services] qui génèrent automatiquement une transcription textuelle de la langue parlée dans un fichier audio ou vidéo pris en charge au format WebVTT (.vtt). Lorsqu’une ressource audio ou vidéo est traitée dans [!DNL Experience Manager Assets], le service de transcription génère automatiquement le rendu de transcription texte de la ressource audio ou vidéo et le stocke au même emplacement que la ressource d’origine dans votre référentiel de ressources. Le service de transcription d’[!DNL Experience Manager Assets] permet aux marketeurs de gérer efficacement leur contenu audio et vidéo en permettant de trouver plus facilement le contenu texte et en augmentant le retour sur investissement de ces ressources par la prise en charge de l’accessibilité et de la localisation.
 
-Les transcriptions sont des versions textuelles du contenu parlé ; par exemple, un film que vous visionnez sur n’importe quelle plateforme OTT comprend souvent des sous-titres pour faciliter son accessibilité ou pour utiliser le contenu dans d’autres langues. Ou encore, tout fichier audio ou vidéo utilisé à des fins de marketing, d’apprentissage ou de divertissement. Ces expériences commencent par une transcription qui est ensuite formatée ou traduite selon les besoins. La transcription audio ou vidéo est un processus long et susceptibles de contenir des erreurs lorsqu’elle est exécutée manuellement. Il est également difficile d’adapter manuellement le processus à grande échelle, compte tenu de la demande croissante de contenu audio-vidéo. [!DNL Experience Manager Assets] utilise la transcription basée sur l’IA d’Azure qui permet un traitement à grande échelle des ressources audio et vidéo et qui génère les transcriptions textuelles (fichiers .vtt) ainsi que les informations d’horodatage. Tout comme dans Assets, la fonctionnalité de transcription est prise en charge avec Dynamic Media.
+Les transcriptions sont des versions textuelles du contenu parlé ; par exemple, un film que vous visionnez sur n’importe quelle plateforme OTT comprend souvent des sous-titres pour faciliter son accessibilité ou pour utiliser le contenu dans d’autres langues. Ou encore, tout fichier audio ou vidéo utilisé à des fins de marketing, d’apprentissage ou de divertissement. Ces expériences commencent par une transcription qui est ensuite formatée ou traduite selon les besoins. La transcription audio ou vidéo est un processus long et susceptibles de contenir des erreurs lorsqu’elle est exécutée manuellement. Il est également difficile d’adapter manuellement le processus à grande échelle, compte tenu de la demande croissante de contenu audio-vidéo. [!DNL Experience Manager Assets] utilise la transcription basée sur l’IA d’Azure qui permet un traitement à grande échelle des ressources audio et vidéo et génère les transcriptions textuelles (fichiers .vtt) avec les détails de l’horodatage. Tout comme dans Assets, la fonctionnalité de transcription est prise en charge avec Dynamic Media.
 
 La fonction de transcription est disponible sans coût supplémentaire dans [!DNL Experience Manager Assets]. Toutefois, les administrateurs ont besoin des informations d’identification Azure de l’utilisateur pour configurer le service de transcription dans [!DNL Experience Manager Assets]. Vous pouvez également [obtenir les informations d’identification d’évaluation](https://azure.microsoft.com/en-us/pricing/details/media-services/) directement depuis Microsoft® pour découvrir la fonctionnalité de transcription audio ou vidéo dans Assets.
 
@@ -101,7 +101,7 @@ Une fois le profil de traitement configuré pour la transcription des fichiers a
 >
 >Un profil de traitement appliqué à un dossier fonctionne pour l’ensemble de l’arborescence. Il peut cependant être remplacé par un autre qui est appliqué à un sous-dossier.
 >
->Lorsque des ressources sont chargées dans un dossier, Experience Manager communique avec les propriétés du dossier conteneur pour identifier le profil de traitement. Si aucun dossier parent n’est appliqué, un dossier parent dans la hiérarchie est vérifié pour appliquer un profil de traitement.
+>Lorsque des ressources sont chargées dans un dossier, Experience Manager communique avec les propriétés du dossier conteneur pour identifier le profil de traitement. Si aucun dossier parent n’est appliqué, un dossier parent dans la hiérarchie est vérifié pour appliquer un profil de traitement.
 
 
 ## Générer la transcription de vos ressources audio ou vidéo {#generate-transcription}
@@ -166,3 +166,18 @@ Les formats de fichiers audio et vidéo suivants sont pris en charge pour la tra
 ## Conseils de dépannage {#troubleshooting}
 
 Connectez-vous à votre compte [!DNL Azure Media Services] avec les mêmes informations d’identification (que vous avez utilisées pour la configuration) pour vérifier le statut de la requête. Contactez l’assistance [!DNL Azure] si votre demande n’est pas traitée correctement.
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)

@@ -4,10 +4,10 @@ description: Modifications notables apportées à [!DNL Adobe Experience Manager
 feature: Release Information
 role: User,Leader,Architect,Admin
 exl-id: 93e7dbcd-016e-4ef2-a1cd-c554efb5ad34
-source-git-commit: 2e4f57f86346074432996901985671939bcafeb0
-workflow-type: ht
-source-wordcount: '1004'
-ht-degree: 100%
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+workflow-type: tm+mt
+source-wordcount: '1034'
+ht-degree: 99%
 
 ---
 
@@ -66,6 +66,21 @@ Pour effectuer une validation de bout en bout du code et du processus, y compris
 | Traduction intelligente | Non pris en charge. | La [traduction intelligente](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-feature-video-use.html?lang=fr) n’est pas prise en charge dans [!DNL Experience Manager] as a [!DNL Cloud Service]. |
 | WebDAV | Non pris en charge. | Pour obtenir des alternatives, consultez Intégration de [[!DNL Creative Cloud] ](/help/assets/aem-cc-integration-best-practices.md) ou les [Documents de référence pour les développeurs](/help/assets/developer-reference-material-apis.md). |
 | Interface utilisateur classique | Non pris en charge. | Seule l’interface utilisateur tactile est disponible. |
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

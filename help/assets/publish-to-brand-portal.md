@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: User
 exl-id: 1cc438bc-8cad-4421-af03-c1f6d750e0a8
-source-git-commit: 13ea0161771776f23d3789adfb8487df06a7e4b1
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1153'
-ht-degree: 100%
+source-wordcount: '1183'
+ht-degree: 98%
 
 ---
 
@@ -85,7 +85,7 @@ Connectez-vous à l’interface Brand Portal pour afficher les ressources publi
 
 ## Publication de dossiers sur Brand Portal {#publish-folders-to-brand-portal}
 
-Vous pouvez publier ou annuler la publication de dossiers de ressources immédiatement ou en planifier la publication à une date ou une heure ultérieure.
+Vous pouvez publier ou dépublier des dossiers de ressources immédiatement ou en planifier la publication à une date ou une heure ultérieure.
 
 ### Publication de dossiers sur Brand Portal {#publish-folders-to-bp}
 
@@ -93,9 +93,9 @@ Vous pouvez publier ou annuler la publication de dossiers de ressources immédia
 
    ![publish2bp](assets/publish2bp.png)
 
-1. **Publication instantanée des dossiers**
+1. **Publication immédiate des dossiers**
 
-   Pour publier les dossiers sélectionnés sur Brand Portal, effectuez l’une des opérations suivantes :
+   Pour publier les dossiers sélectionnés dans Brand Portal, effectuez l’une des opérations suivantes :
 
    * Dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**.
 
@@ -132,41 +132,41 @@ Vous pouvez publier ou annuler la publication de dossiers de ressources immédia
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
-### Annulation de la publication de dossiers sur Brand Portal {#unpublish-folders-from-brand-portal}
+### Dépublication de dossiers sur Brand Portal {#unpublish-folders-from-brand-portal}
 
-Vous pouvez supprimer n’importe quel dossier de ressources publié sur Brand Portal en en annulant la publication à partir de l’instance d’AEM Assets. Une fois que vous avez annulé la publication du dossier original, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
+Vous pouvez supprimer n’importe quel dossier de ressources publié sur Brand Portal en le dépubliant à partir de l’instance d’AEM Assets. Une fois que vous avez dépublié le dossier d’origine, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
 
-Vous pouvez annuler immédiatement la publication de dossiers de ressources depuis Brand Portal ou en programmer la publication à une date et une heure ultérieures.
+Vous pouvez dépublier immédiatement des dossiers de ressources depuis Brand Portal ou en programmer la publication à une date et une heure ultérieures.
 
-Pour annuler la publication de dossiers de ressources sur Brand Portal :
+Pour dépublier des dossiers de ressources de Brand Portal :
 
 1. Dans la console Assets, sélectionnez les dossiers de ressources dont vous souhaitez annuler la publication, puis cliquez sur **[!UICONTROL Gérer la publication]** dans la barre d’outils.
 
    ![publish2bp-1](assets/publish2bp.png)
 
-1. **Annulation immédiate de la publication des dossiers de ressources**
+1. **Dépublication immédiate de dossiers de ressources**
 
-   Pour annuler immédiatement la publication du dossier de ressources sélectionné sur Brand Portal :
+   Pour dépublier immédiatement le dossier de ressources sélectionné sur Brand Portal :
 
    1. Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**.
 
-   1. Dans **[!UICONTROL Action]**, sélectionnez **[!UICONTROL Annuler la publication sur Brand Portal]**.
+   1. Dans **[!UICONTROL Action]**, sélectionnez **[!UICONTROL Dépublier sur Brand Portal]**.
 
       Dans **[!UICONTROL Planification]**, sélectionnez **[!UICONTROL Maintenant]**.
 
       Cliquez sur **[!UICONTROL Suivant]**.
 
-   1. Confirmez votre sélection dans **[!UICONTROL Portée]** et cliquez sur **[!UICONTROL Annuler la publication sur Brand Portal]**.
+   1. Confirmez votre sélection dans **[!UICONTROL Portée]** et cliquez sur **[!UICONTROL Dépublier sur Brand Portal]**.
 
       ![confirm-unpublish](assets/confirm-unpublish.png)
 
-1. **Annulation ultérieure de la publication des dossiers de ressources**
+1. **Dépublication ultérieure des dossiers de ressources**
 
-   Pour planifier l’annulation de la publication d’un dossier de ressources à une date et une heure ultérieures :
+   Pour planifier la dépublication d’un dossier de ressources à une date et une heure ultérieures :
 
    1. Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**.
 
-   1. Dans **[!UICONTROL Action]**, sélectionnez **[!UICONTROL Annuler la publication dans Brand Portal]**.
+   1. Dans **[!UICONTROL Action]**, sélectionnez **[!UICONTROL Dépublier sur Brand Portal]**.
 
       Dans **[!UICONTROL Planification]**, sélectionnez **[!UICONTROL Plus tard]**.
 
@@ -174,13 +174,13 @@ Pour annuler la publication de dossiers de ressources sur Brand Portal :
 
    1. Confirmez votre sélection dans **[!UICONTROL Portée]** et cliquez sur **[!UICONTROL Suivant]**.
 
-   1. Spécifiez un **[!UICONTROL Titre de workflow]** sous **[!UICONTROL Processus]**. Cliquez sur **[!UICONTROL Annuler la publication ultérieurement]**.
+   1. Spécifiez un **[!UICONTROL Titre de workflow]** sous **[!UICONTROL Processus]**. Cliquez sur **[!UICONTROL Dépublier ultérieurement]**.
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
 ## Publication de collections sur Brand Portal {#publish-collections-to-brand-portal}
 
-Vous pouvez publier des collections ou en annuler la publication à partir de votre instance cloud AEM Assets.
+Vous pouvez publier ou dépublier des collections à partir de votre instance cloud AEM Assets.
 
 >[!NOTE]
 >
@@ -210,18 +210,18 @@ Vous trouverez ci-dessous les étapes de publication de collections d’AEM Ass
 
    ![collection publiée](assets/published_collection.png)
 
-### Annulation de la publication de collections {#unpublish-collections}
+### Dépublication de collections {#unpublish-collections}
 
-Vous pouvez supprimer n’importe quelle collection publiée sur Brand Portal en en annulant la publication à partir de l’instance d’AEM Assets. Une fois la publication de la collection d’origine annulée, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
+Vous pouvez supprimer n’importe quelle collection publiée sur Brand Portal en la dépubliant à partir de l’instance d’AEM Assets. Une fois la collection d’origine dépubliée, sa copie n’est plus disponible pour les utilisateurs de Brand Portal.
 
-Vous trouverez ci-dessous les étapes d’annulation de la publication d’une collection :
+Vous trouverez ci-dessous les étapes de dépublication d’une collection :
 
-1. Dans la console **Collections** de votre instance AEM Assets, sélectionnez la collection dont vous souhaitez annuler la publication.
+1. Dans la console **Collections** de votre instance AEM Assets, sélectionnez la collection que vous souhaitez dépublier.
 
    ![select_collection](assets/select_collection-1.png)
 
 1. Dans la barre d’outils, cliquez sur l’icône **[!UICONTROL Supprimer de Brand Portal]**.
-1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Annuler la publication]**.
+1. Dans la boîte de dialogue, cliquez sur **[!UICONTROL Dépublier]**.
 1. Fermez le message de confirmation. La collection est supprimée de l’interface de Brand Portal.
 
 Outre ce qui précède, vous pouvez également publier des schémas de métadonnées, des paramètres d’image prédéfinis, des facettes de recherche et des balises d’AEM Assets sur Brand Portal.
@@ -244,3 +244,18 @@ Pour plus d’informations, voir [Publication de balises sur Brand Portal](http
 
    <li>Step text</li>
    -->
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)

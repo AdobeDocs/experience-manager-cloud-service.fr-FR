@@ -4,9 +4,9 @@ description: Cet article décrit comment créer, modifier et utiliser les facett
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8a9a3f60d6d52f6cc18a079f372a55d15bb60790
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2425'
 ht-degree: 82%
 
 ---
@@ -94,7 +94,7 @@ Si vous souhaitez utiliser un nœud existant, indiquez-le à l’aide de la boî
 
 >[!NOTE]
 >
->Le prédicat Options est un wrapper personnalisé qui comprend des prédicats de propriété pour démontrer le comportement décrit. Pour l’heure, aucun point de terminaison REST n’est disponible pour la prise en charge native de cette fonctionnalité.
+>Le prédicat Options est un wrapper personnalisé qui comprend des prédicats de propriété pour démontrer le comportement décrit. Pour l’heure, aucun point d’entrée REST n’est disponible pour la prise en charge native de cette fonctionnalité.
 
 1. Appuyez sur le logo Experience Manager, puis accédez à **[!UICONTROL Outils > Général > Formulaires de recherche]**.
 1. Sur la page **[!UICONTROL Formulaires de recherche]**, sélectionnez **[!UICONTROL Rail de recherche d’administrateurs de ressources]**, puis appuyez sur l’icône Modifier.
@@ -322,6 +322,20 @@ Si le rôle d’administrateur ne vous a pas été attribué, voici la liste des
 | Modifier | Autorisations de lecture et d’écriture sur le nœud `/apps` dans CRX. |
 | Supprimer | Autorisations de lecture, d’écriture et de suppression sur le nœud `/apps` dans CRX. |
 | Aperçu | Autorisations de lecture, d’écriture et de suppression sur le nœud `/var/dam/content` dans CRX. De même que les autorisations de lecture et d’écriture sur le nœud `/apps`. |
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

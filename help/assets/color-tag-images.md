@@ -2,10 +2,10 @@
 title: Balises de couleurs pour les images
 description: Experience Manager Assets permet de distinguer les couleurs d’une image et de les appliquer automatiquement sous forme de balises. Vous pouvez ensuite utiliser ces balises pour rechercher et filtrer des images.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 2859fa68713b46083314d207abc4dec2e088a173
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 100%
+source-wordcount: '1225'
+ht-degree: 99%
 
 ---
 
@@ -27,8 +27,8 @@ La figure suivante illustre l’ordre des tâches que vous effectuez pour config
 |---|---|---|---|---|---|
 | JPEG | .jpg, .jpeg | image/jpeg | sRVB | 15 Go | 20 000 px x 20 000 px |
 | PNG | .png | image/png | sRVB | 15 Go | 20 000 px x 20 000 px |
-| TIFF | .tif, .tiff | image/tiff | sRVB | 4 Go (limitée par les spécifications de format) | 20 000 px x 20 000 px |
-| PSD | .psd | image/vnd.adobe.photoshop | sRVB | 2 Go (limitée par les spécifications de format) | 20 000 px x 20 000 px |
+| TIFF | .tif, .tiff | image/tiff | sRGB | 4 Go (limitée par les spécifications de format) | 20 000 px x 20 000 px |
+| PSD | .psd | image/vnd.adobe.photoshop | sRGB | 2 Go (limitée par les spécifications de format) | 20 000 px x 20 000 px |
 | GIF | .gif | image/gif | sRVB | 15 Go | 20 000 px x 20 000 px |
 | BMP | .bmp | image/bmp | sRVB | 4 Go (limitée par les spécifications de format) | 20 000 px x 20 000 px |
 
@@ -181,3 +181,18 @@ Pour rechercher des images en fonction des couleurs :
    Vous pouvez filtrer les images en fonction de la sélection d’une couleur. Les images dont la couleur sélectionnée fait partie des balises de couleurs intelligentes et se trouve au-dessus du [% de seuil de couverture/dominance](#manage-color-tagging-settings) s’affichent dans le volet de droite.
 
 1. Cliquez sur x dans la barre de recherche pour effacer le filtre.
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)

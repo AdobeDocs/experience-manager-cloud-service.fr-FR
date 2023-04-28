@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing,Collaboration,Video
 role: User
 exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
-source-git-commit: 0ba6ce129322df9ad108822e86e5acfdbf99e613
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '4886'
-ht-degree: 89%
+source-wordcount: '4916'
+ht-degree: 99%
 
 ---
 
@@ -24,7 +24,7 @@ Découvrez comment gérer et modifier les ressources vidéo dans [!DNL Adobe Exp
 
 1. Dans le dossier Ressources numériques ou ses sous-dossiers, accédez à l’emplacement où vous souhaitez ajouter les ressources numériques.
 1. Pour charger le contenu, cliquez sur **[!UICONTROL Créer]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Fichiers]**. Vous pouvez également faire glisser un fichier vers l’interface utilisateur. Voir [Ressources chargées](manage-digital-assets.md#uploading-assets) pour plus d’informations.
-1. Pour prévisualiser une vidéo en mode carte, cliquez sur l’option **[!UICONTROL Lecture]** ![option de lecture](assets/do-not-localize/play.png) du contenu vidéo. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. Les options [!UICONTROL Lecture] et [!UICONTROL Pause] ne sont pas disponibles dans la vue de liste.
+1. Pour prévisualiser une vidéo en mode carte, cliquez sur l’option **[!UICONTROL Lecture]** ![option de lecture](assets/do-not-localize/play.png) du contenu vidéo. Vous pouvez suspendre ou lire une vidéo en mode Carte uniquement. Les options [!UICONTROL Lecture] et [!UICONTROL Pause] ne sont pas disponibles dans la vue Liste.
 1. Pour prévisualiser la vidéo dans la page des détails de la ressource, sélectionnez **[!UICONTROL Modifier]** sur la carte. La vidéo se joue dans le lecteur vidéo natif du navigateur. Vous pouvez lire, suspendre, afficher la vidéo en plein écran et en contrôler le volume.
 
 ## Publication de ressources vidéo {#publish-video-assets}
@@ -37,7 +37,7 @@ Vous pouvez publier des ressources vidéo gérées dans Experience Manager Asset
 
 Pour publier des ressources vidéo sur YouTube, vous devez les baliser dans Experience Manager Assets avec des balises. Vous associez ces balises à une chaîne YouTube. Si la balise d’une ressource vidéo correspond à la balise d’une chaîne YouTube, la vidéo est publiée sur YouTube. La publication sur YouTube se produit avec une publication normale de la vidéo à condition qu’une balise associée soit utilisée.
 
-YouTube procède à son propre codage. Ainsi, le fichier vidéo d’origine qui a été chargé dans Experience Manager est publié sur YouTube au lieu de tout rendu vidéo créé par le codage Dynamic Media. Même s’il n’est pas nécessaire de traiter les vidéos à l’aide de Dynamic Media, il est supposé qu’elles le sont si un paramètre prédéfini de visionneuse est nécessaire pour la lecture.
+YouTube procède à son propre codage. De ce fait, le fichier vidéo d’origine chargé dans Experience Manager est publié sur YouTube et non pas dans un rendu vidéo créé par le codage Dynamic Media. Même s’il n’est pas nécessaire de traiter les vidéos à l’aide de Dynamic Media, il est supposé qu’elles le sont si un paramètre prédéfini de visionneuse est nécessaire pour la lecture.
 
 Lorsque vous ignorez le profil de traitement vidéo et que vous effectuez directement la publication sur YouTube, votre ressource vidéo ne dispose pas de miniature visible dans Experience Manager Assets. Cela signifie également que les vidéos qui ne sont pas codées ne fonctionneront avec aucun type de ressource Dynamic Media.
 
@@ -88,7 +88,7 @@ Google modifie régulièrement son interface utilisateur. De ce fait, les étape
 
 1. Effectuez l’une des opérations suivantes :
 
-   * Dans le tableau de bord de votre projet, dans la variable **[!UICONTROL Prise en main]** carte, sélectionnez **[!UICONTROL Exploration et activation des API]**.
+   * Dans le tableau de bord de votre projet, dans la carte **[!UICONTROL Prise en main]**, sélectionnez **[!UICONTROL Explorer et activer les API]**.
    * Dans le tableau de bord de votre projet, dans la carte **[!UICONTROL API]**, sélectionnez **[!UICONTROL Accéder à l’aperçu des API]**.
 
 1. En haut de la page **[!UICONTROL API &amp; services]**, sélectionnez **[!UICONTROL Activer les API et les services]**.<!-- NEXT STEP BELOW IS STEP 10 -->
@@ -223,10 +223,10 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte car vous 
    Vous pouvez éventuellement ajouter une description.
 
 1. Sélectionnez **[!UICONTROL Ajouter]**.
-1. La vérification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté au compte Google Cloud, ignorez cette étape.
+1. La vérification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté(e) au compte Google Cloud, ignorez cette étape.
 
    * Saisissez le nom d’utilisateur et le mot de passe Google associés à l’ID de projet Google et au texte JSON ci-dessus.
-   * Selon le nombre de canaux de votre compte, deux éléments ou plus sont affichés. Sélectionnez un canal. Ne sélectionnez pas l’adresse électronique ; ce n’est pas un canal.
+   * Deux éléments ou plus s’afficheront en fonction du nombre de canaux de votre compte. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail, car il ne s’agit pas d’un canal.
    * Dans la page suivante, sélectionnez **[!UICONTROL Accepter]** pour autoriser l’accès à ce canal.
 
 1. Sélectionnez **[!UICONTROL Autoriser]**.
@@ -237,7 +237,7 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte car vous 
 1. Pour afficher la liste des balises disponibles dans Experience Manager, sélectionnez l’icône de liste déroulante (flèche pointant vers le bas).
 1. Pour les ajouter, sélectionnez une ou plusieurs balises.
 
-   Pour supprimer une balise que vous avez ajoutée, sélectionnez-la, puis **[!UICONTROL X]**.
+   Pour supprimer une balise que vous avez ajoutée, sélectionnez-la puis sélectionnez **[!UICONTROL X]**.
 
 1. Lorsque vous avez terminé d’ajouter les balises souhaitées, sélectionnez **[!UICONTROL Enregistrer]**.
 
@@ -256,7 +256,7 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte car vous 
    Vous avez spécifié l’ID de projet lorsque vous avez précédemment [configuré les paramètres de Google Cloud](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings).
 Laissez cette boîte de dialogue ouverte. Vous y retournerez dans quelques instants.
 
-1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré plus tôt dans la tâche Configuration des paramètres du cloud Google .
+1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré plus tôt au cours de la tâche de configuration des paramètres de Google Cloud.
 1. Sélectionnez l’intégralité du texte JSON et copiez-le.
 1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
 1. **[!UICONTROL Cliquez sur OK]**.
@@ -269,10 +269,10 @@ Laissez cette boîte de dialogue ouverte. Vous y retournerez dans quelques insta
    Vous pouvez éventuellement ajouter une description.
 
 1. **[!UICONTROL Cliquez sur OK]**.
-1. La vérification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté au compte Google Cloud, ignorez cette étape.
+1. La vérification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté(e) au compte Google Cloud, ignorez cette étape.
 
    * Saisissez le nom d’utilisateur et le mot de passe Google associés à l’ID de projet Google et au texte JSON ci-dessus.
-   * Selon le nombre de canaux de votre compte, deux éléments ou plus sont affichés. Sélectionnez un canal. Ne sélectionnez pas l’adresse électronique ; ce n’est pas un canal.
+   * Deux éléments ou plus s’afficheront en fonction du nombre de canaux de votre compte. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail, car il ne s’agit pas d’un canal.
    * Dans la page suivante, sélectionnez **[!UICONTROL Accepter]** pour autoriser l’accès à ce canal.
 
 1. Sélectionnez **[!UICONTROL Autoriser]**.
@@ -283,7 +283,7 @@ Laissez cette boîte de dialogue ouverte. Vous y retournerez dans quelques insta
 1. Pour afficher la liste des balises disponibles dans Experience Manager, sélectionnez l’icône de liste déroulante (flèche pointant vers le bas).
 1. Pour les ajouter, sélectionnez une ou plusieurs balises.
 
-   Pour supprimer une balise que vous avez ajoutée, sélectionnez-la, puis **X**.
+   Pour supprimer une balise que vous avez ajoutée, sélectionnez-la puis sélectionnez **X**.
 
 1. Lorsque vous avez terminé d’ajouter les balises souhaitées, sélectionnez **[!UICONTROL OK]**.
 
@@ -316,7 +316,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de
    * Dans le champ de texte **[!UICONTROL Associer à la propriété]**, sélectionnez la valeur et copiez-la.
 Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lorsque vous créerez votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
-   * Sous **[!UICONTROL Choix]**, sélectionnez et copiez la valeur par défaut à utiliser. Notez que les choix sont regroupés en paires de deux. Le champ inférieur de la paire correspond à la valeur par défaut que vous souhaitez copier, comme valeur publique, non répertoriée ou privée.
+   * Sous **[!UICONTROL Choix]**, sélectionnez et copiez la valeur par défaut à utiliser. Notez que les choix sont regroupés par paires. Le champ inférieur de la paire correspond à la valeur par défaut que vous souhaitez copier, comme valeur publique, non répertoriée ou privée.
 Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lorsque vous créerez votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
 1. Près du coin supérieur droit de la page Éditeur de schéma de métadonnées, sélectionnez **[!UICONTROL Annuler]**.
@@ -336,7 +336,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de
    * Pour sélectionner le composant, sélectionnez **[!UICONTROL Libellé du champ]**.
    * Dans la partie droite de la page, sous l’onglet Paramètres, collez les valeurs de publication YouTube (valeur Libellé du champ et Associer à la propriété) copiées précédemment, dans les champs respectifs du formulaire. Collez la valeur Choix dans le champ Valeur par défaut.
 
-1. Ajoutez les valeurs de confidentialité YouTube copiées au profil en procédant comme suit :
+1. Ajoutez les valeurs copiées de confidentialité YouTube au profil en procédant comme suit :
 
    * Dans la partie droite de la page, sélectionnez l’onglet **[!UICONTROL Créer le formulaire]**.
    * (Facultatif) Faites glisser le composant appelé **[!UICONTROL En-tête de section]** vers la gauche et déposez-le dans la zone de formulaire.
@@ -363,9 +363,9 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 >Dans le mode de publication **[!UICONTROL Immédiatement]**, la ressource chargée (une fois synchronisée avec IPS) est automatiquement publiée sur le système de diffusion. Cela vaut pour Dynamic Media, mais pas pour YouTube. Pour publier sur YouTube, vous devez publier par le biais d’Experience Manager Author.
 
 >[!NOTE]
->Pour publier du contenu depuis YouTube, Experience Manager utilise le workflow **[!UICONTROL Publier sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
->Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
->Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que ce type de surveillance nécessite un accès administrateur.
+Pour publier du contenu depuis YouTube, Experience Manager utilise le workflow **[!UICONTROL Publier sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
+Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que ce type de surveillance nécessite un accès administrateur.
 
 **Pour publier des vidéos sur votre chaîne YouTube, procédez comme suit :**
 
@@ -373,7 +373,7 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 1. Sélectionnez la ressource vidéo (visionneuse de vidéos adaptative).
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Propriétés]**.
 1. Dans l’onglet De base, sous l’en-tête Métadonnées, sélectionnez **[!UICONTROL Boîte de dialogue Ouvrir la sélection]** à droite du champ Balises.
-1. Sur la page Sélectionner des balises , accédez aux balises à utiliser, puis sélectionnez une ou plusieurs balises.
+1. Sur la page Sélectionner des balises, accédez aux balises que vous souhaitez utiliser, puis sélectionnez une ou plusieurs balises.
 
    N’oubliez pas que les balises doivent être associées au canal YouTube.
 
@@ -397,14 +397,14 @@ Au bout de huit heures, si un message de statut indiquant **[!UICONTROL Téléch
 
 ### Liaison d’URL YouTube à votre application web {#linking-youtube-urls-to-your-web-application}
 
-Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée par Dynamic Media. Lorsque vous copiez l’URL YouTube, elle se trouve dans le Presse-papiers, de sorte que vous puissiez la coller si nécessaire sur les pages de votre site web ou de votre application.
+Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée par Dynamic Media. Une fois que vous avez copié l’URL de YouTube, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site Web ou de votre application.
 
 >[!NOTE]
->L’URL YouTube ne peut pas être copiée tant que vous n’avez pas publié la ressource vidéo sur YouTube.
+L’URL YouTube ne peut pas être copiée tant que vous n’avez pas publié la ressource vidéo sur YouTube.
 
 Pour lier des URL YouTube à votre application web, procédez comme suit :
 
-1. Accédez au *YouTube publié* ressource vidéo dont vous souhaitez copier l’URL, puis sélectionnez-la.
+1. Accédez à la ressource vidéo *publiée sur YouTube* dont vous souhaitez copier l’URL, puis sélectionnez-la.
 
    N’oubliez pas que les URL YouTube peuvent être copiées uniquement *après* la *publication* des ressources vidéo sur YouTube.
 
@@ -417,15 +417,15 @@ Pour lier des URL YouTube à votre application web, procédez comme suit :
 Lorsque vous dépubliez une ressource vidéo dans Experience Manager, la vidéo est supprimée de YouTube.
 
 >[!CAUTION]
->Si vous supprimez une vidéo directement sur YouTube, Experience Manager l’ignore et continue de se comporter comme si la vidéo était toujours publiée sur YouTube. Veillez toujours à dépublier une ressource vidéo sur YouTube via Experience Manager.
+Si vous supprimez une vidéo directement sur YouTube, Experience Manager l’ignore et continue de se comporter comme si la vidéo était toujours publiée sur YouTube. Veillez toujours à dépublier une ressource vidéo sur YouTube via Experience Manager.
 
 >[!NOTE]
->Pour supprimer du contenu depuis YouTube, Experience Manager utilise le processus **[!UICONTROL Dépublier sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
->Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+Pour supprimer du contenu depuis YouTube, Experience Manager utilise le processus **[!UICONTROL Dépublier sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
+Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Pour dépublier des vidéos afin de les supprimer de YouTube, procédez comme suit :**
 
-1. Accédez aux ressources vidéo dont vous souhaitez annuler la publication sur votre canal YouTube.
+1. Accédez aux ressources vidéo dont vous souhaitez annuler la publication sur votre chaîne YouTube.
 1. Dans un mode de sélection de ressources, sélectionnez une ou plusieurs ressources vidéo publiées.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Si nécessaire, sélectionnez l’icône des trois petits points (`. . .`) dans la barre d’outils pour afficher **[!UICONTROL Gérer la publication]**.
 1. Sur la page Gérer la publication, sélectionnez **[!UICONTROL Dépublier]**.
@@ -440,13 +440,13 @@ Lorsque vous téléchargez une nouvelle vidéo vers un dossier auquel un codage 
 
 Il est possible de surveiller la progression, notamment l’échec du codage ou de la publication YouTube.
 
-1. Afficher la progression du codage vidéo dans votre dossier de ressources :
+1. Consultez la progression du codage vidéo dans votre dossier de ressources :
 
    * En mode Carte, la progression du codage vidéo s’affiche sur la ressource en pourcentage. En cas d’erreur, ces informations s’affichent également sur la ressource.
 
    ![chlimage_1-429](/help/assets/dynamic-media/assets/chlimage_1-429.png)
 
-   * En mode Liste, la progression du codage vidéo s’affiche dans la colonne **[!UICONTROL État du traitement]**. Si une erreur se produit, le message suivant s’affiche dans la même colonne.
+   * Dans la vue Liste, la progression du codage vidéo s’affiche dans la colonne **[!UICONTROL État du traitement]**. Si une erreur se produit, le message suivant s’affiche dans la même colonne.
 
    ![chlimage_1-430](/help/assets/dynamic-media/assets/chlimage_1-430.png)
 
@@ -461,17 +461,17 @@ Il est possible de surveiller la progression, notamment l’échec du codage ou 
    Toutes les informations de workflow, telles que le codage, s’affichent dans la chronologie. Pour la publication YouTube, la chronologie du workflow comprend également le nom de la chaîne YouTube et l’URL de la vidéo YouTube. En outre, vous voyez toutes les notifications d’échec dans la chronologie du workflow une fois la publication terminée.
 
    >[!NOTE]
-   >L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
-   >* Configuration de la file d’attente des tâches Apache Sling
-   >* Adobe Granite Workflow External Process Job Handler
-   >* File d’attente du workflow Granite
+   L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
+   * Configuration de la file d’attente des tâches Apache Sling
+   * Gestionnaire des tâches de processus externe du workflow Adobe Granite
+   * File d’attente d’expiration du workflow Granite
 
    Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
 1. Pour les workflows en cours, consultez les instances de workflow disponibles sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Instances]**.
 
    >[!NOTE]
-   >Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
+   Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
 
@@ -484,22 +484,22 @@ Il est possible de surveiller la progression, notamment l’échec du codage ou 
 1. Pour les tâches qui ont échoué, consultez la section Échecs des processus disponible sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Échecs]**. L’**[!UICONTROL échec du processus]** répertorie toutes les activités du processus ayant échoué.
 
    >[!NOTE]
-   >Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
+   Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
-   >L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
-   >* Configuration de la file d’attente des tâches Apache Sling
-   >* Adobe Granite Workflow External Process Job Handler
-   >* File d’attente du workflow Granite
+   L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
+   * Configuration de la file d’attente des tâches Apache Sling
+   * Gestionnaire des tâches de processus externe du workflow Adobe Granite
+   * File d’attente d’expiration du workflow Granite
 
    Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
 1. Pour les workflows terminés, consultez l’archive de workflow sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Archive]**. La liste **[!UICONTROL Archive de workflow]** répertorie toutes les activités de workflow qui ont réussi.
 
    >[!NOTE]
-   >Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
+   Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
 
@@ -568,7 +568,7 @@ Pour traiter des ressources à l’aide d’un profil de traitement, ajoutez un 
 Vous pouvez ajouter des annotations aux ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](manage-video-assets.md).
 
 >[!NOTE]
->Le format vidéo MXF n’est pas encore pris en charge avec les annotations de ressources vidéo.
+Le format vidéo MXF n’est pas encore pris en charge avec les annotations de ressources vidéo.
 
 1. Dans la console [!DNL Assets], sélectionnez **[!UICONTROL Modifier]** sur la carte de ressources pour afficher la page de détails de la ressource.
 1. Pour lire la vidéo, cliquez sur **[!UICONTROL Aperçu]**.
@@ -590,8 +590,22 @@ Vous pouvez ajouter des annotations aux ressources vidéo. Lorsque vous annotez 
       * 8 Go pour le transcodage 720p.
    * La taille de fichier maximale que vous pouvez transcoder en résolution 4k est un fichier MP4 de 2,55 Go de résolution 4k, un débit de 12 Mbit/s et de 23 i/s.
 
+   **Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
->* [Documentation vidéo de Dynamic Media](/help/assets/dynamic-media/video.md).
->* [En savoir plus sur l’utilisation, les types et la configuration des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
+* [Documentation vidéo de Dynamic Media](/help/assets/dynamic-media/video.md).
+* [En savoir plus sur l’utilisation, les types et la configuration des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
 

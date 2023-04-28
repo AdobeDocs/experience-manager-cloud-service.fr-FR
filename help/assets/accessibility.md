@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
 exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
-source-git-commit: 3130f374859c1bb67f6311d2decfdd537eabf14f
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '1913'
-ht-degree: 100%
+source-wordcount: '1943'
+ht-degree: 99%
 
 ---
 
@@ -216,6 +216,21 @@ Lors du partage de ressources, les fonctionnalités suivantes améliorent l’ac
 * Un texte alternatif est disponible pour les images et les illustrations.
 * La navigation au clavier est possible.
 * Les ratios de contraste permettent de mettre en évidence certaines parties du site web de documentation.
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)
 
 ## Rédiger des commentaires {#a11y-feedback}
 

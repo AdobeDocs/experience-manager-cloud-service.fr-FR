@@ -2,10 +2,10 @@
 title: Configurer des restrictions de téléchargement des ressources
 description: Configurez Adobe Experience Manager Assets de façon à restreindre le type de ressources que les utilisateurs peuvent télécharger en fonction du type MIME. Cela permet d’éviter les téléchargements accidentels de fichiers à un format indésirable ou malveillants.
 exl-id: 094c31f3-f2e9-4b44-9995-c76fb78ca458
-source-git-commit: d2d0d8b0d484d2e5cd2bf44449e7d71d3da98eea
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+workflow-type: tm+mt
+source-wordcount: '363'
+ht-degree: 98%
 
 ---
 
@@ -56,3 +56,18 @@ Pour ajouter des formats d’image spécifiques aux types MIME autorisés et int
 ![Restrictions des ressources](assets/asset-restrictions.png)
 
 En définissant les paramètres renseignés sur l’image, vous pouvez télécharger des images aux formats .JPG, .PNG et .GIF sur Experience Manager Assets.
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)

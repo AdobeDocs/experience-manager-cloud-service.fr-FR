@@ -5,20 +5,20 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 0df4d40cb37ced97dcffaf20adc2132eaadae524
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '853'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 90%
 
 ---
 
-# Informations sur les ressources {#asset-insights}
+# Assets Insights {#asset-insights}
 
 La fonctionnalité Statistiques sur les ressources effectue le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’obtenir des informations sur les performances et la popularité des images.
 
 La fonction Statistiques sur les ressources capture les détails de l’activité des utilisateurs, comme le nombre de fois où une image est évaluée et a fait l’objet d’un clic, ainsi que le nombre d’impressions (nombre de fois où une image est chargée sur le site web). Elle attribue des scores aux images en fonction de ces statistiques. Vous pouvez utiliser les scores et les statistiques de performances pour sélectionner les images populaires à inclure dans les catalogues, les campagnes marketing et ainsi de suite. Vous pouvez même formuler des stratégies de renouvellement de licence et d’archivage en fonction de ces statistiques.
 
-Pour que la fonction Statistiques sur les ressources capture les statistiques d’utilisation des images à partir d’un site web, vous devez inclure le code intégré de l’image dans celui du site web.
+Pour que la fonction Statistiques sur les ressources capture les statistiques d’utilisation des images d’un site web, vous devez inclure le code incorporé de l’image dans le code du site web.
 
 Pour afficher les statistiques d’utilisation des ressources, commencez par configurer la fonction afin qu’elle récupère les données de rapports d’[!DNL Adobe Analytics]. Pour plus d’informations, consultez la section [Configuration des statistiques sur les ressources](#configure-asset-insights). Pour utiliser cette fonctionnalité, achetez la licence [!DNL Adobe Analytics] séparément.
 
@@ -36,7 +36,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
 
    Le score d’utilisation indique le nombre de fois que la ressource est utilisée dans diverses solutions.
 
-   Le score **[!UICONTROL Impressions]** correspond au nombre de fois que la ressource est chargée sur le site web. Le nombre affiché sous **[!UICONTROL Clics]** représente le nombre de fois que la ressource est cliquée.
+   Le **[!UICONTROL Impressions]** score correspond au nombre de fois où la ressource est chargée sur le site web. Le nombre affiché sous **[!UICONTROL Clics]** correspond au nombre de clics sur la ressource.
 
 1. Passez en revue la section **[!UICONTROL Statistiques d’utilisation]** pour savoir de quelles entités la ressource faisait partie et dans quelles solutions de création elle a récemment été utilisée. Plus l’utilisation est élevée, plus la ressource a de chances d’être populaire auprès des utilisateurs. Les données d’utilisation s’affichent sous les sections suivantes :
 
@@ -69,7 +69,7 @@ Vous pouvez afficher les scores de toutes les ressources d’un dossier simultan
 
 1. Dans l’interface utilisateur d’Assets, accédez au dossier contenant les ressources dont vous souhaitez consulter les statistiques.
 1. Cliquez sur l’option **[!UICONTROL Mise en page]** de la barre d’outils, puis sélectionnez **[!UICONTROL Mode Statistiques]**.
-1. La page affiche les scores d’utilisation pour les ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
+1. La page affiche les scores d’utilisation des ressources. Comparez les évaluations des différentes ressources et tirez-en des conclusions.
 
 <!-- TBD: Commenting as Web Console is not available. Document the appropriate OSGi config method if available in CS.
 
@@ -175,3 +175,18 @@ Using the demo package, you can enable Adobe Assets Insights to capture data fro
    >The external web page can be in [!DNL Experience Manager] itself.
 
 -->
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)

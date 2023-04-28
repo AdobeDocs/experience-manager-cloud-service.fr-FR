@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 0d0a3247e42e0f4a9b2965104814fe6bcd8e6128
+source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3473'
 ht-degree: 87%
 
 ---
@@ -228,3 +228,18 @@ Vous pouvez tirer parti des fonctionnalités de chargement suivantes :
 Si vous utilisez des partages de fichiers réseau pour gérer les ressources numériques, le fait d’utiliser uniquement un partage réseau mappé par l’application de bureau Experience Manager peut être considéré comme une alternative pratique. Si vous choisissez de ne plus utiliser les partages de fichiers réseau, l’interface utilisateur web d’Experience Manager propose un large éventail de fonctionnalités de gestion des ressources numériques qui vont bien au-delà de ce qui est possible sur un partage réseau (recherche, collections, métadonnées, collaboration, aperçus, etc.) et l’application de bureau Experience Manager fournit un lien pratique pour connecter le référentiel de gestion des ressources numériques (DAM) côté serveur au travail sur l’ordinateur de bureau.
 
 Évitez d’utiliser l’application de bureau Experience Manager pour gérer les ressources directement dans le partage réseau d’Experience Manager Assets. Par exemple, évitez d’utiliser l’application de bureau Experience Manager pour déplacer/copier plusieurs fichiers. Au lieu de cela, utilisez l’interface utilisateur web d’Experience Manager Assets pour faire glisser des dossiers à partir du Finder/de l’Explorateur vers le partage réseau ou utilisez la fonctionnalité de chargement de dossier d’ Experience Manager Assets.
+
+**Voir également**
+
+* [Traduire les ressources](translate-assets.md)
+* [API HTTP Assets](mac-api-assets.md)
+* [Formats de fichiers pris en charge par Assets](file-format-support.md)
+* [Recherche de ressources](search-assets.md)
+* [Ressources connectées](use-assets-across-connected-assets-instances.md)
+* [Rapports de ressources](asset-reports.md)
+* [Schémas de métadonnées](metadata-schemas.md)
+* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Gestion des métadonnées](manage-metadata.md)
+* [Facettes de recherche](search-facets.md)
+* [Gestion des collections](manage-collections.md)
+* [Importation de métadonnées en bloc](metadata-import-export.md)
