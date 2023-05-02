@@ -6,9 +6,9 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
+source-git-commit: 33baeea93c1fa2b74946699e53d2f428e77aee77
 workflow-type: tm+mt
-source-wordcount: '4931'
+source-wordcount: '4934'
 ht-degree: 92%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 92%
 
 [!DNL Adobe Experience Manager Assets] fournit des méthodes de recherche de ressources robustes qui vous aident à atteindre une vitesse de contenu plus élevée. Vos équipes peuvent réduire le temps de mise sur le marché grâce à une expérience de recherche de ressources intelligente et transparente, à l’aide de fonctionnalités prêtes à l’emploi et de méthodes personnalisées. La fonctionnalité de recherche de ressources est essentielle à l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs professionnels et les marketeurs ou pour une administration par les administrateurs DAM. Les recherches simples, avancées et personnalisées que vous pouvez effectuer via l’interface utilisateur [!DNL Assets] ou d’autres applications et surfaces permettent de répondre à ces cas d’utilisation.
 
-[!DNL Experience Manager Assets] prend en charge les cas d’utilisation suivants pour rechercher des ressources. Cet article décrit l’utilisation, les concepts, les configurations, les limites et la résolution des problèmes liés à ces cas d’utilisation.
+La recherche de ressources dans AEM prend en charge les cas d’utilisation suivants. Cet article décrit l’utilisation, les concepts, les configurations, les limites et la résolution des problèmes associés à ces cas d’utilisation.
 
 | Recherche de ressources | Configuration et administration de la fonctionnalité de recherche | Utilisation des résultats de recherche de ressources |
 |---|---|---|
@@ -38,9 +38,9 @@ Utilisez le panneau **[!UICONTROL Filtres]** pour rechercher des ressources, des
 
 La fonctionnalité de recherche [!DNL Experience Manager] prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir [Recherche de collections](/help/assets/manage-collections.md).
 
-## Présentation de l’interface de recherche {#searchui}
+## Présentation de l’interface de recherche de ressources {#searchui}
 
-Familiarisez-vous avec l’interface de recherche et les actions disponibles.
+Familiarisez-vous avec l’interface de recherche de ressources et les actions disponibles.
 
 ![Présentation de l’interface des résultats de recherche des ressources Experience Manager](assets/aem_search_results.png)
 
