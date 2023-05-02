@@ -3,9 +3,9 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: c419da88ccfe97cf8b80e68ddd402196c2ec58e3
+source-git-commit: 49ffc9ff848a5cca960263d6bcce5c4b6383a6d0
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: '1101'
 ht-degree: 94%
 
 ---
@@ -29,10 +29,6 @@ Suivez les sections ci-dessous pour utiliser l’interface utilisateur en libre-
 
 1. [Gestion des certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/introduction.md)
 1. [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/introduction.md)
-
->[!NOTE]
->
->Les domaines personnalisés sont pris en charge dans Cloud Manager **seulement** si vous utilisez le réseau CDN géré par AEM. Si vous apportez votre propre réseau CDN et [que vous le pointez vers le réseau CDN géré par AEM](#point-to-point-CDN) vous devrez utiliser ce réseau CDN spécifique  et non Cloud Manager pour gérer les domaines.
 
 **Limitation du trafic**
 
