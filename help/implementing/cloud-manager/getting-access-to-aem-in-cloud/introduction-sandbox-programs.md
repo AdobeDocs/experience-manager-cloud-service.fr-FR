@@ -2,7 +2,7 @@
 title: Présentation des programmes Sandbox
 description: Découvrez en quoi les programmes Sandbox diffèrent des programmes de production.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: e43dd379169b4048347ecce6d10652e9f8835333
+source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -64,16 +64,9 @@ Consultez le document [Mise à jour de l’environnement](/help/implementing/clo
 
 ### Mise en veille et suppression {#hibernation}
 
-Les environnements d’un programme Sandbox sont automatiquement mis en veille après huit heures d’inactivité. Une fois
-mis en veille, ils peuvent être réactivés manuellement.
+Les environnements d’un programme Sandbox sont automatiquement mis en veille après huit heures d’inactivité. Les environnements Sandbox sont supprimés après six mois consécutifs de veille.
 
-Les environnements Sandbox sont supprimés après six mois consécutifs d’hibernation, après lesquels ils peuvent être recréés.
-
->[!NOTE]
->
->Seuls les environnements de test sont automatiquement supprimés après six mois d’hibernation continue. Le programme sandbox avec son référentiel et son code est conservé.
-
-Pour plus d’informations, consultez [Mise en veille et réactivation d’environnements Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md).
+Reportez-vous à la section [Mise en veille et réactivation d’environnements Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) pour plus d’informations sur la réactivation des environnements et la suppression automatique des environnements de test.
 
 ### Aucun support technique {#no-support}
 

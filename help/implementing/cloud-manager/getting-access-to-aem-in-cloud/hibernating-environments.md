@@ -2,10 +2,10 @@
 title: Mise en veille et réactivation d’environnements Sandbox
 description: Découvrez comment les environnements d’un programme Sandbox passent automatiquement en mode veille et comment les réactiver.
 exl-id: c0771078-ea68-4d0d-8d41-2d9be86408a4
-source-git-commit: 5cb58b082323293409aad08d4e5dd9289283e0a6
+source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 100%
+source-wordcount: '691'
+ht-degree: 95%
 
 ---
 
@@ -114,5 +114,9 @@ Les environnements mis en veille permettent toujours les déploiements et les mi
 
 * Les environnements d’un programme Sandbox sont automatiquement mis en veille après huit heures d’inactivité.
    * L’inactivité est définie comme le fait que ni le service de création, ni les services de prévisualisation ou de publication ne reçoivent de requêtes.
-   * Une fois mis en veille, ils peuvent être réactivés manuellement.
+   * Une fois mis en veille, ils peuvent être [réactivé manuellement.](#de-hibernation-introduction)
 * Les programmes Sandbox sont supprimés après 6 mois de mise en veille continue, après quoi ils peuvent être recréés.
+
+>[!NOTE]
+>
+>Seuls les environnements de test sont automatiquement supprimés après six mois d’hibernation continue. Le programme sandbox avec son référentiel et son code est conservé.
