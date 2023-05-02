@@ -7,7 +7,7 @@ exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
 workflow-type: tm+mt
 source-wordcount: '1013'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
->title="Lancement de l’exemple d’application CodePen"
+>title="Lancer l’exemple d’application CodePen"
 >abstract="Ce guide passe en revue l’interrogation des données JSON de votre environnement d’évaluation vers une application web JavaScript de base. Nous utiliserons les fragments de contenu que vous avez modélisés et créés dans les modules d’apprentissage précédents. Par conséquent, veuillez d’abord consulter ces guides avant de passer à celui-ci.<br><br>Pour démontrer comment le contenu peut être interrogé à partir d’une application web JavaScript, nous avons configuré un codePen que vous pouvez utiliser en l’état ou dupliquer dans votre propre compte pour personnaliser davantage."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
->title="Dans ce module, vous avez appris à utiliser le client AEM sans affichage pour JavaScript pour récupérer les données JSON de votre environnement d’évaluation à l’aide de requêtes persistantes GraphQL.<br><br>Vous comprenez maintenant comment utiliser ce client pour utiliser les données de votre propre application web."
+>title="Dans ce module, vous avez appris à utiliser le client AEM Headless pour JavaScript afin de récupérer les données JSON de votre environnement d’évaluation à l’aide de requêtes GraphQL persistantes.<br><br>Vous comprenez maintenant comment utiliser ce client pour utiliser les données de votre propre application web."
 >abstract=""
 
 ## CodePen {#codepen}
