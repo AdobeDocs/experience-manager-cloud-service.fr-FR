@@ -1,25 +1,25 @@
 ---
-title: Recherche d’images et de ressources numériques dans [!DNL Adobe Experience Manager]
-description: Découvrez comment rechercher les ressources souhaitées dans [!DNL Adobe Experience Manager] à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
+title: Comment rechercher des ressources dans AEM ?
+description: Découvrez comment rechercher des ressources dans AEM à l’aide du panneau Filtres et comment utiliser les résultats qui s’affichent dans la recherche de ressources.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: bb067222423ba70c412a80e210bd79d0f72b7ccb
 workflow-type: tm+mt
-source-wordcount: '4925'
-ht-degree: 95%
+source-wordcount: '4931'
+ht-degree: 92%
 
 ---
 
-# Recherche de ressources dans [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Recherche de ressources dans AEM {#search-assets-in-aem}
 
-[!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Vos équipes peuvent réduire les délais de mise sur le marché grâce à une expérience de recherche intelligente et transparente, aux fonctionnalités prêtes à l’emploi et aux méthodes personnalisées. La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM. Les recherches simples, avancées et personnalisées que vous pouvez effectuer via l’interface utilisateur [!DNL Assets] ou d’autres applications et surfaces permettent de répondre à ces cas d’utilisation.
+[!DNL Adobe Experience Manager Assets] fournit des méthodes de recherche de ressources robustes qui vous aident à atteindre une vitesse de contenu plus élevée. Vos équipes peuvent réduire le temps de mise sur le marché grâce à une expérience de recherche de ressources intelligente et transparente, à l’aide de fonctionnalités prêtes à l’emploi et de méthodes personnalisées. La fonctionnalité de recherche de ressources est essentielle à l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs professionnels et les marketeurs ou pour une administration par les administrateurs DAM. Les recherches simples, avancées et personnalisées que vous pouvez effectuer via l’interface utilisateur [!DNL Assets] ou d’autres applications et surfaces permettent de répondre à ces cas d’utilisation.
 
-[!DNL Experience Manager Assets] prend en charge les cas d’utilisation suivants dont cet article décrit l’utilisation, les concepts, les configurations, les limitations et le dépannage.
+[!DNL Experience Manager Assets] prend en charge les cas d’utilisation suivants pour rechercher des ressources. Cet article décrit l’utilisation, les concepts, les configurations, les limites et la résolution des problèmes liés à ces cas d’utilisation.
 
-| Recherche de ressources | Configuration et administration de la fonctionnalité de recherche | Utilisation des résultats de recherche |
+| Recherche de ressources | Configuration et administration de la fonctionnalité de recherche | Utilisation des résultats de recherche de ressources |
 |---|---|---|
 | [Recherches de base](#searchbasics) | [Index de recherche](#searchindex) | [Tri des résultats](#sort) |
 | [Présentation de l’interface utilisateur de recherche](#searchui) | [Extraction de texte](#extracttextupload) | [Vérification des propriétés et des métadonnées d’une ressource](#checkinfo) |

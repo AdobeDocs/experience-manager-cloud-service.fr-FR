@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: cab182a7998be6a569cf16e4000184f7235082da
+source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 88%
+source-wordcount: '1722'
+ht-degree: 86%
 
 ---
 
@@ -143,9 +143,13 @@ Cela indique que Cloud Acceleration Manager n’a pas pu atteindre le service 
 
 ### Les mises à jour automatiques par l’intermédiaire de l’orchestrateur de versions sont toujours activées.
 
-L’orchestrateur de versions applique les mises à jour automatiquement, ce qui permet de maintenir les environnements à jour. Si la mise à jour est déclenchée au cours d’une ingestion, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement. C’est l’une des raisons pour lesquelles un ticket d’assistance doit être soumis avant de commencer une ingestion (voir la « Remarque » ci-dessus), de sorte que la désactivation temporaire de l’orchestrateur de versions puisse être planifiée.
+L’orchestrateur de versions applique les mises à jour automatiquement, ce qui permet de maintenir les environnements à jour. Si la mise à jour est déclenchée lors de l’ingestion, elle peut entraîner des résultats imprévisibles, y compris la corruption de l’environnement. C’est l’une des raisons pour lesquelles un ticket d’assistance doit être soumis avant de commencer une ingestion (voir la « Remarque » ci-dessus), de sorte que la désactivation temporaire de l’orchestrateur de versions puisse être planifiée.
 
 Si l’orchestrateur de versions est toujours en cours d’exécution au moment où une ingestion commence, l’interface utilisateur affichera ce message. Vous pouvez choisir de continuer tout de même, en acceptant le risque, en cochant le champ et en appuyant à nouveau sur le bouton.
+
+>[!NOTE]
+>
+> Le déploiement d’Release Orchestration sur les environnements de développement est en cours. Il est donc conseillé de suspendre les mises à jour de ces environnements.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
