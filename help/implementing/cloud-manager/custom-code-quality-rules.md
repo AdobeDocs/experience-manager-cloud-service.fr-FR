@@ -2,9 +2,9 @@
 title: Règles de qualité du code personnalisé
 description: Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du test de qualité du code. Elles sont basées sur les bonnes pratiques de l’ingénierie Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 0b71e15c956cd39907440be319347bd1a749eb0b
+source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3473'
 ht-degree: 100%
 
 ---
@@ -757,7 +757,7 @@ Tout comme la règle [Les packages ne doivent pas contenir de configurations OSG
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` définit le mode de création par défaut dans Experience Manager. Comme [l’interface utilisateur classique est abandonnée depuis Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=fr), un problème survient lorsque le mode de création par défaut est configuré sur l’interface utilisateur classique.
+La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` définit le mode de création par défaut dans Experience Manager. Comme l’interface utilisateur classique est abandonnée depuis Experience Manager 6.4, un problème survient lorsque le mode de création par défaut est configuré sur l’interface utilisateur classique.
 
 ### Les boîtes de dialogue de composants doivent être de type interface utilisateur tactile. {#oakpal-components-dialogs}
 
@@ -860,7 +860,7 @@ La migration de modèles statiques vers des modèles modifiables peut être larg
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Les composants de base hérités (c’est-à-dire les composants situés dans `/libs/foundation`) ont été [abandonnés pour plusieurs versions d’Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=fr) au profit des composants principaux. L’utilisation des composants de base comme base pour les composants personnalisés, que ce soit par recouvrement ou par héritage, n’est pas encouragée et ces composants doivent être convertis en composants principaux correspondants.
+Les composants de base hérités (c’est-à-dire les composants situés dans `/libs/foundation`) ont été abandonnés pour plusieurs versions d’Experience Manager au profit des composants principaux. L’utilisation des composants de base comme base pour les composants personnalisés, que ce soit par recouvrement ou par héritage, n’est pas encouragée et ces composants doivent être convertis en composants principaux correspondants.
 
 Il est possible de faciliter cette conversion grâce aux [outils de modernisation d’Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
 
