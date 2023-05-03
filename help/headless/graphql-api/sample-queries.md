@@ -3,10 +3,10 @@ title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requ
 description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 20e54ff697c0dc7ab9faa504d9f9e0e6ee585464
+source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 100%
+source-wordcount: '1596'
+ht-degree: 97%
 
 ---
 
@@ -1291,16 +1291,40 @@ Cette requête interroge :
 
 ### Exemple de requête pour un fragment de contenu imbriqué - Type de modèle multiple {#sample-wknd-nested-fragment-multiple-model}
 
+#### Type de modèle référencé unique
+
 Cette requête interroge :
 
 * à la recherche de différents fragments de contenu de type `bookmark` ;
-   * avec des références de fragments à d’autres fragments de types de modèles spécifiques `article` et `adventure`.
+   * avec des références de fragment à un autre fragment du type de modèle spécifique `article`
 
 >[!NOTE]
 >
->Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés.
+>Le champ `fragments` possède le type de données `fragment-reference`, avec le modèle `Article` sélectionné. Requête : `fragments` sous la forme d’un tableau de `[Article]`
 
-<!-- need replacement query -->
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Plusieurs types de modèles référencés
+
+Cette requête interroge :
+
+* à la recherche de différents fragments de contenu de type `bookmark` ;
+   * avec des références de fragments à d’autres fragments de types de modèles spécifiques `Article` et `Adventure`.
+
+>[!NOTE]
+>
+>Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés. Diffusion de requête `fragments` sous la forme d’un tableau de `[AllFragmentModels]` qui est déréférencé avec le type d’union.
 
 ```graphql
 {
