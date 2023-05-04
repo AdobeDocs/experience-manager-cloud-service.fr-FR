@@ -3,7 +3,7 @@ title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requ
 description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 0d289b8c7757cce2c2b578e74dc6d581e2f2dda5
+source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 97%
@@ -1296,11 +1296,11 @@ Cette requête interroge :
 Cette requête interroge :
 
 * à la recherche de différents fragments de contenu de type `bookmark` ;
-   * avec des références de fragment à un autre fragment du type de modèle spécifique `article`
+   * avec des références de fragment à d’autres fragments du type de modèle spécifique `Article`
 
 >[!NOTE]
 >
->Le champ `fragments` possède le type de données `fragment-reference`, avec le modèle `Article` sélectionné. Requête : `fragments` sous la forme d’un tableau de `[Article]`
+>Le champ `fragments` possède le type de données `fragment-reference`, avec le modèle `Article` sélectionné. Requête : `fragments` sous la forme d’un tableau de `[Article]`.
 
 ```graphql
 {
@@ -1315,7 +1315,7 @@ Cette requête interroge :
 }
 ```
 
-#### Plusieurs types de modèles référencés
+#### Types de modèle référencés multiples
 
 Cette requête interroge :
 
@@ -1324,7 +1324,7 @@ Cette requête interroge :
 
 >[!NOTE]
 >
->Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés. Diffusion de requête `fragments` sous la forme d’un tableau de `[AllFragmentModels]` qui est déréférencé avec le type d’union.
+>Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés. Requête : `fragments` sous la forme d’un tableau de `[AllFragmentModels]`, qui est déréférencé avec le type d’union.
 
 ```graphql
 {
