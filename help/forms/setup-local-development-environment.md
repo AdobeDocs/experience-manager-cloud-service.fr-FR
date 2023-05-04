@@ -2,10 +2,10 @@
 title: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 description: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 2a2becb12b7724720821f895b0631d8d82e4cd79
+source-git-commit: a1b186fec2d6de0934ffebc96967d36a967c044e
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 97%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -523,7 +523,7 @@ Pour activer les composants principaux des formulaires adaptatifs pour votre env
    `<artifactId>core-forms-components-core</artifactId>`
    `</dependency>`
 
-1. [Exécuter le pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr). Une fois le pipeline exécuté avec succès, les composants principaux des formulaires adaptatifs sont activés pour votre environnement. En outre, le modèle de formulaires adaptatifs (composants principaux) et le thème de la zone de travail sont ajoutés à votre environnement Forms as a Cloud Service.
+1. [Exécuter le pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr). Une fois le pipeline exécuté avec succès, les composants principaux des formulaires adaptatifs sont activés pour votre environnement. En outre, le modèle Forms adaptatif (composants principaux) et le thème Zone de travail sont ajoutés à votre environnement Forms as a Cloud Service.
 
 
 ## Mise à niveau de votre environnement de développement local {#upgrade-your-local-development-environment}
