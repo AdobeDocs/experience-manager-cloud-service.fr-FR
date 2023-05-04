@@ -4,9 +4,9 @@ description: Explorez la récupération de contenu JSON à partir de votre envir
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 3b64b909996674bcbe36f746bcfd15e1422a8a4b
+source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '987'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Lancer l’exemple d’application CodePen"
->abstract="Ce guide passe en revue l’interrogation des données JSON de votre environnement d’évaluation vers une application web JavaScript de base. Nous utiliserons les fragments de contenu que vous avez modélisés et créés dans les modules d’apprentissage précédents. Par conséquent, veuillez d’abord consulter ces guides avant de passer à celui-ci.<br><br>Pour démontrer comment le contenu peut être interrogé à partir d’une application web JavaScript, nous avons configuré un codePen que vous pouvez utiliser en l’état ou dupliquer dans votre propre compte pour personnaliser davantage."
+>abstract="Ce guide passe en revue l’interrogation des données JSON de votre environnement d’évaluation vers une application web JavaScript de base. Nous utiliserons les fragments de contenu que vous avez modélisés et créés dans les modules d’apprentissage précédents. Par conséquent, veuillez d’abord consulter ces guides avant de passer à celui-ci."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
@@ -61,7 +61,7 @@ import AdobeAemHeadlessClientJs from 'https://cdn.skypack.dev/@adobe/aem-headles
 
 Sur la ligne 6, nous lisons les détails de votre hôte de publication à partir de la variable `publishHost` paramètre de requête. Il s’agit de l’hôte à partir duquel le client AEM sans affichage récupérera des données. Cela est généralement codé dans votre application, mais nous utilisons un paramètre de requête pour faciliter le travail de l’application CodePen avec différents environnements.
 
-Nous configurons le client AEM sans affichage sur la ligne 12 afin d’utiliser une fonction d’exécution d’Adobe E/S pour proxy afin d’éviter des problèmes de CORS. Cela n’est pas nécessaire pour vos propres projets, mais il l’est pour que l’application CodePen fonctionne avec votre environnement d’évaluation. La fonction proxy est configurée pour utiliser la fonction `publishHost` qui a été fournie dans le paramètre de requête.
+Nous configurons le client AEM sans affichage à la ligne 12 :
 
 ```javascript
 const aemHeadlessClient = new AdobeAemHeadlessClientJs({
@@ -72,6 +72,10 @@ const aemHeadlessClient = new AdobeAemHeadlessClientJs({
   }
 });
 ```
+
+>[!NOTE]
+>
+>Le **serviceURL** est défini pour utiliser une fonction d’exécution Adobe E/S par proxy afin d’éviter les problèmes de CORS. Cela n’est pas nécessaire pour vos propres projets, mais il l’est pour que l’application CodePen fonctionne avec votre environnement d’évaluation. La fonction proxy est configurée pour utiliser la fonction **publishHost** qui a été fournie dans le paramètre de requête.
 
 Enfin, la fonction `fetchJsonFromGraphQL()` est utilisé pour effectuer la requête de récupération à l’aide du client AEM sans affichage. Il est appelé chaque fois que le code est modifié ou peut être déclenché en cliquant sur la variable **Refetch** lien. Le réel `aemHeadlessClient.runPersistedQuery(..)` appel se produit à la ligne 34. Un peu plus tard, nous apporterons une modification à la manière dont ces données JSON sont rendues, mais pour l’instant, nous allons simplement les imprimer sur la page `#output` div à l’aide de `resultToPreTag(queryResult)` fonction .
 
