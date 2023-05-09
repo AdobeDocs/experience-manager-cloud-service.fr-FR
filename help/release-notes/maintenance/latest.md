@@ -1,32 +1,41 @@
 ---
 title: Notes de mise à jour de la maintenance actuelle de [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle de [!DNL Adobe Experience Manager] as a Cloud Service.
-source-git-commit: 4aa4954f214545dcd768fdf955f1fc2f776da939
+exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
+source-git-commit: ea3a476f7f2d7d97a2428c6facf61b746dba7a23
 workflow-type: tm+mt
-source-wordcount: '275'
-ht-degree: 17%
+source-wordcount: '208'
+ht-degree: 25%
 
 ---
-
 
 # Notes de mise à jour de la maintenance {#maintenance-release-notes}
 
 La section suivante présente les notes techniques de mise à jour de la version de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 11835 {#release-11835}
+## Version 11873 {#release-11873}
 
-Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 11835, qui a été publiée publiquement le 19 avril 2023. Cette version de maintenance est une mise à jour de la version de maintenance 11382 précédente.
+Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 11873, publiée publiquement le 3 mai 2023. Cette version de maintenance est une mise à jour de la version de maintenance 11835 précédente.
 
 L’activation des fonctionnalités de cette version de maintenance vous fournira l’ensemble des fonctionnalités. Consultez les [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour plus d’informations.
 
-### Problèmes résolus {#fixed-issues-11835}
+### Améliorations {#enhancements}
 
-- SITES-12573 - Les requêtes GraphQL utilisant des variables à l’intérieur d’un filtre échouent si une variable n’est pas spécifiée. Veuillez ne pas mettre à jour cette version si vous utilisez GraphQL avec AEM as a Cloud Service.
-- SKYOPS-51970 - Régression identifiée de la version FACT utilisée dans l’étape buildImage, ce qui entraîne un mappage utilisateur non correspondant.
-- GRANITE-44542 - Des problèmes ont été signalés pour les clients qui n’ont pas spécifié de type de noeud de package (en fournissant un fichier .content.xml avec jcr:primaryType) pour les dossiers inclus dans le filtre de package. Ces dossiers étaient alors traités comme nt:folder, ce qui entraînait des problèmes dans plusieurs cas.
-- SKYOPS-56928 - La régression Apache HTTPD peut entraîner des erreurs 404. Si vous rencontrez ces problèmes, pour des raisons de sécurité, il est recommandé de restaurer la version précédente et d’éviter tout pipeline s’exécutant pendant cette période.
+- SITES-1200 - Améliorations de l’API de recherche avec le filtrage basé sur les balises
+- GRANITE-42939 - Ajout d’annotations et d’avertissements d’obsolescence au code oauth-server
 
-### Technologies intégrées {#embedded-tech-11835}
+### Problèmes connus {#known-issues-11873}
+
+Aucun.
+
+### Problèmes résolus {#fixed-issues-11873}
+
+- SKYSI-19884/SKYOPS-53745 - Correction d’un problème avec PublishPageRenderingErrorsHigh
+- GRANITE-4388 - Correction de la dégradation du débit après un grand nombre d’écritures de ressources DAM sur Mongo
+- SITES-11922 - Correction d’un problème lié à l’annulation de la publication de l’aperçu qui ne supprimait pas l’état de synchronisation
+- ASSETS-21648 - Correction d’un problème d’autorisation avec la fonctionnalité Asset Relate.
+
+### Technologies intégrées {#embedded-tech-11873}
 
 | Technologie | Version | Lien |
 |---|---|---|
