@@ -337,7 +337,7 @@ Afin de vérifier que le trafic est effectivement sortant sur l’adresse IP dé
 ## Clients avec une adresse sortante dédiée héritée {#legacy-dedicated-egress-address-customers}
 
 Si vous avez reçu une adresse IP de sortie dédiée avant le 30/09/2021, votre fonction d’adresse IP de sortie dédiée ne prend en charge que les ports HTTP et HTTPS.
-Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés. De plus, un point de terminaison de sortie dédié peut uniquement communiquer avec une cible via HTTP/HTTPS sur les ports 80/443, respectivement.
+Inclut le HTTP/1.1 et HTTP/2 lorsqu’ils sont chiffrés. De plus, un point d’entrée de sortie dédié peut uniquement communiquer avec une cible via HTTP/HTTPS sur les ports 80/443, respectivement.
 
 ## Réseau privé virtuel (VPN) {#vpn}
 

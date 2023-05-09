@@ -7,13 +7,13 @@ exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '1297'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
 # Identification du contenu à traduire {#identifying-content-to-translate}
 
-Les règles de traduction identifient le contenu à traduire pour les pages, les composants et les ressources incluses ou exclues dans les projets de traduction. Lorsqu’une page ou une ressource est en cours de traduction, AEM extrait ce contenu pour qu’il puisse être envoyé au service de traduction.
+Les règles de traduction identifient le contenu à traduire pour les pages, les composants et les ressources incluses ou exclues dans les projets de traduction. Lorsqu’une page ou une ressource est en cours de traduction, AEM extrait ce contenu afin qu’il puisse être envoyé au service de traduction.
 
 >[!TIP]
 >
@@ -48,7 +48,7 @@ Les règles comprennent les informations suivantes :
 
 Par exemple, vous pouvez créer une règle traduisant le contenu que les auteurs ajoutent à tous les composants de texte sur vos pages. La règle peut identifier le nœud `/content` et la propriété `text` du composant `core/wcm/components/text/v2/text`.
 
-Une [console](#translation-rules-ui) a été ajoutée pour configurer les règles de traduction. Les définitions dans l’interface utilisateur renseignent le fichier pour vous.
+Une [console](#translation-rules-ui) a été ajoutée pour configurer les règles de traduction. Les définitions de l’interface utilisateur renseignent le fichier à votre place.
 
 Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Traduction de contenu pour les sites multilingues](overview.md).
 
@@ -155,7 +155,7 @@ Par exemple, les règles suivantes entraînent la traduction de tout le contenu 
 
 Une console est également disponible pour configurer les règles de traduction.
 
-Pour y accéder :
+Pour y accéder, procédez comme suit :
 
 1. Accédez à **Outils** puis **Général**.
 
@@ -184,7 +184,7 @@ Vous pouvez modifier quatre attributs via l’interface utilisateur :
 
 ### isDeep {#isdeep}
 
-**`isDeep`** s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. S’il a la valeur false, il vérifie uniquement le nœud actuel.
+**`isDeep`** s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. Si la valeur est false, il vérifie uniquement le noeud actif.
 
 Par exemple, les nœuds enfants sont ajoutés à une tâche de traduction même lorsque la propriété `draftOnly` du nœud parent est définie sur true pour marquer le contenu comme étant un brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
 
@@ -214,7 +214,7 @@ Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans
 
 ### updateDestinationLanguage {#updatedestinationlanguage}
 
-**`updateDestinationLanguage`** est utilisé pour les propriétés qui n’ont pas de texte, mais comportent des codes de langue (par exemple, `jcr:language`). L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées en traduction.
+**`updateDestinationLanguage`** est utilisé pour les propriétés qui n’ont pas de texte, mais comportent des codes de langue (par exemple, `jcr:language`). L’utilisateur ne traduit pas le texte, mais le paramètre régional de langue de la source vers la cible. Ces propriétés ne sont pas envoyées pour traduction.
 
 Dans l’interface utilisateur, vous pouvez cocher/décocher **Traduire** dans l’onglet **Propriétés** pour modifier cette valeur, mais pour les propriétés spécifiques ayant comme valeur des codes de langue.
 
@@ -231,13 +231,13 @@ Le résultat dans le fichier xml ressemble à ce qui suit :
 
 ## Modification manuelle du fichier de règles {#editing-the-rules-file-manually}
 
-Le fichier `translation_rules.xml` qui est installé avec AEM contient un ensemble par défaut de règles de traduction. Vous pouvez modifier le fichier pour prendre en charge les exigences de vos projets de traduction. Par exemple, vous pouvez ajouter des règles de sorte que le contenu de vos composants personnalisés soit traduit.
+Le fichier `translation_rules.xml` qui est installé avec AEM contient un ensemble par défaut de règles de traduction. Vous pouvez modifier le fichier pour prendre en charge les exigences de vos projets de traduction. Par exemple, vous pouvez ajouter des règles afin que le contenu de vos composants personnalisés soit traduit.
 
-Si vous modifiez le fichier `translation_rules.xml`, conservez une copie de sauvegarde dans un module de contenu. La réinstallation de certains packages AEM peut remplacer le fichier `translation_rules.xml` actuel par le fichier d’origine. Pour restaurer vos règles dans cette situation, vous pouvez installer le module contenant votre copie de sauvegarde.
+Si vous modifiez le fichier `translation_rules.xml`, conservez une copie de sauvegarde dans un package de contenu. La réinstallation de certains packages AEM peut remplacer le fichier `translation_rules.xml` actuel par le fichier d’origine. Pour restaurer vos règles dans ce cas, vous pouvez installer le package contenant votre copie de sauvegarde.
 
 >[!NOTE]
 >
->Après avoir créé le module de contenu, recréez le module chaque fois que vous modifiez le fichier.
+>Après avoir créé le module de contenu, recréez-le chaque fois que vous modifiez le fichier.
 
 ## Exemple de fichier de règles de traduction {#example-translation-rules-file}
 

@@ -5,7 +5,7 @@ exl-id: 0fdc99e7-2103-448d-8217-d5d52c94acea
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -29,9 +29,9 @@ Les composants dans AEM :
 * sont développés à l’aide de [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr) ;
 * peuvent être développés pour créer des composants personnalisés qui étendent les fonctionnalités par défaut.
 
-Compte tenu de la nature modulaire des composants, vous pouvez effectuer les opérations suivantes :
+Les composants étant modulaires, vous pouvez :
 
-* Développer un nouveau composant sur votre instance locale.
+* Développez un nouveau composant sur votre instance locale.
 * Déployer ce composant sur votre environnement de test.
 * Déployer le composant sur votre environnement de création actif et permettre ainsi aux auteurs et/ou développeurs d’ajouter et de configurer du contenu.
 * Déployer le composant sur votre (vos) environnement(s) de publication actif(s), où il est utilisé pour effectuer le rendu du contenu à l’intention des visiteurs de votre site Web.
@@ -50,9 +50,9 @@ Les composants principaux sont fournis avec AEM as a Cloud Service et le [tutori
 
 ### Affichage des composants disponibles {#viewing-available-components}
 
-Pour avoir un aperçu de tous les composants disponibles dans votre instance AEM, utilisez la [console Composants](/help/sites-cloud/authoring/features/components-console.md).
+Pour un aperçu de tous les composants disponibles dans votre instance AEM, utilisez la méthode [Console Composants](/help/sites-cloud/authoring/features/components-console.md).
 
-Une autre méthode consiste à utiliser CRXDE Lite pour obtenir la liste de tous les composants disponibles dans le référentiel.
+Vous pouvez également utiliser CRXDE Lite pour obtenir la liste de tous les composants disponibles dans le référentiel.
 
 1. Dans **[!UICONTROL CRXDE Lite]**, sélectionnez **[!UICONTROL Outils]** dans la barre d’outils, puis sélectionnez **[!UICONTROL Requête]** pour ouvrir l’onglet **[!UICONTROL Requête]**.
 

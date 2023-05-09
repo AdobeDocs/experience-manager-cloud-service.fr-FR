@@ -23,7 +23,7 @@ La section suivante décrit l’utilisation du fournisseur de contenu Screens, u
 
 >[!NOTE]
 >**Prérequis**
->Avant de commencer à lire cette section, reportez-vous à la section [Configuration du fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=en) pour savoir comment accéder à cette interface utilisateur à partir du fournisseur de services Screens.
+>Avant de commencer à lire cette section, reportez-vous à la section [Configuration du fournisseur de services Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/configure-screens-cloud/navigating-to-screens-services-provider.html?lang=fr) pour savoir comment accéder à cette interface utilisateur à partir du fournisseur de services Screens.
 
 Pour vous connecter au fournisseur de contenu Screens, procédez comme suit :
 

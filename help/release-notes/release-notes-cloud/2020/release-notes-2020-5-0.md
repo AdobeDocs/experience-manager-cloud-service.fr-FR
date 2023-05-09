@@ -47,4 +47,4 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 * Certains liens de documentation de la page d’aperçu ne fonctionnaient pas correctement.
 * La boîte de dialogue Créer l’environnement ne s’affichait pas correctement dans Safari.
 * Certaines cartes de la page d’aperçu n’affichaient pas correctement les noms des entités.
-* Dans certains cas, la création d’image ne parvenait pas à télécharger les modules client.
+* Dans certains cas, la création d’image ne parvenait pas à télécharger les packages clients.

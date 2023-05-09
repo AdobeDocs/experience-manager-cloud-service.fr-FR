@@ -5,7 +5,7 @@ exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '622'
-ht-degree: 100%
+ht-degree: 57%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ## Présentation {#introduction}
 
-La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. Afficher les versions en alternance est une méthode inefficace avec un fort risque d’erreur. Pour comparer deux pages, il est plus facile pour un auteur d’avoir côte à côte la page en cours et une version antérieure.
+La création de contenu est un processus itératif. Pour être efficace lorsque vous créez du contenu, vous devez pouvoir voir ce qui a changé d’une version à l’autre. L’affichage d’une version de page, puis de l’autre, est inefficace et susceptible d’erreur. Un auteur souhaite pouvoir facilement comparer la page actuelle côte à côte à une autre version.
 
 De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 
@@ -36,27 +36,27 @@ Reportez-vous aux rubriques correspondantes afin de connaître la procédure de 
 
 ### Présentation des différences {#presentation-of-differences}
 
-La présentation des différences reste la même, quel que soit le contenu à comparer.
+Quel que soit le contenu comparé, la présentation de l’outil de comparaison reste la même.
 
-* Le contenu sélectionné en premier pour la comparaison est affiché à gauche (premier contenu).
-* Le contenu « à comparer » (auquel le premier contenu sélectionné est comparé) est affiché à droite.
+* Le contenu sélectionné au démarrage de l’outil de comparaison s’affiche à gauche (le point d’entrée de l’outil de comparaison).
+* Le contenu de la comparaison est affiché à droite (par rapport au contenu sélectionné).
 
-Par exemple, si vous comparez deux versions, la version en cours est affichée à gauche et la version précédente est affichée à droite.
+Par exemple, si vous comparez des versions, la version actuelle est affichée à gauche et la version précédente à droite.
 
-La source des deux pages est clairement indiquée dans la barre d’en-tête en haut de la fenêtre du navigateur.
+La source des deux pages s’affiche clairement dans la barre d’en-tête située en haut de la fenêtre du navigateur.
 
 ![Vue côte à côte des versions](/help/sites-cloud/authoring/assets/versions-side-by-side.png)
 
-L’outil de comparaison détecte les modifications effectuées sur les composants et le code HTML. Les éléments modifiés sont présentés en surbrillance avec des couleurs différentes.
+L’outil de comparaison détecte les modifications effectuées sur les composants et le code HTML. Les éléments qui ont été modifiés sont mis en surbrillance avec des couleurs différentes.
 
 **Modifications des composants**
 
-* Vert clair : composant ajouté
-* Rose : composant supprimé
+* Vert clair : composant ajouté
+* Rose : composant supprimé
 
-**Modifications HTML**
+**Modifications du HTML**
 
-* Vert foncé : HTML ajouté
+* Vert foncé - HTML ajouté
 * Rouge : HTML supprimé
 
 >[!NOTE]
@@ -85,12 +85,12 @@ Vous pouvez quitter le mode de comparaison côte à côte à tout moment en cliq
 
 ## Restrictions {#limitations}
 
-Dans certaines situations, l’outil de comparaison des pages peut ne pas détecter toutes les différences.
+Dans certains cas, l’outil de comparaison des pages peut ne pas détecter une différence comme prévu.
 
-* C’est le cas lorsque vous comparez des versions et des lancements. La fonctionnalité ne prend pas en compte les composants dynamiques comme les chemins de navigation, les menus, les listes de produits ou les logos (des composants qui dépendent de la structure du site pour le rendu du contenu).
-* Pour les versions, l’outil de comparaison ne recrée pas la règle de contrôle d’accès ni les relations Live Copy.
+* Lors de la comparaison des versions et lancements, la comparaison ne prend pas en compte les composants dynamiques tels que les chemins de navigation, les menus, les listes de produits ou les logos (composants qui dépendent de la structure du site pour effectuer le rendu de leur contenu).
+* Pour les versions, l’outil de comparaison ne recrée pas la politique de contrôle d’accès ni les relations Live Copy.
 * Si une page est déplacée, vous ne pouvez plus effectuer de comparaison avec les versions antérieures au déplacement.
-   * Si vous rencontrez des problèmes avec une comparaison, vérifiez dans la [chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) si la page a été déplacée.
+   * Si vous rencontrez des problèmes avec une comparaison, vérifiez la variable [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) pour la page afin de voir si la page a été déplacée.
 
 >[!NOTE]
 >
@@ -98,4 +98,4 @@ Dans certaines situations, l’outil de comparaison des pages peut ne pas détec
 
 >[!NOTE]
 >
->Pour plus d’informations sur le fonctionnement de l’outil de comparaison des pages, ainsi que les limites pouvant affecter cette comparaison, consultez la [documentation du développeur](/help/implementing/developing/introduction/page-diff.md) liée à cette fonctionnalité.
+>Pour plus d’informations sur le fonctionnement de l’outil de comparaison des pages, ainsi que sur les limites qui peuvent affecter cette comparaison, reportez-vous à la section [documentation destinée aux développeurs](/help/implementing/developing/introduction/page-diff.md) de cette fonctionnalité.

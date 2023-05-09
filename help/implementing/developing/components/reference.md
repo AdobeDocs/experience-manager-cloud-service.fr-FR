@@ -5,7 +5,7 @@ exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 99%
+ht-degree: 94%
 
 ---
 
@@ -29,10 +29,10 @@ Avant de commencer à configurer ou coder votre composant, vous devez vous poser
 
 * De quoi avez-vous besoin exactement pour le nouveau composant ?
 * Devez-vous créer votre composant de toutes pièces ou pouvez-vous hériter des bases d’un composant existant ?
-* Votre composant demande-t-il une logique pour sélectionner/manipuler le contenu ?
+* Votre composant aura-t-il besoin d’une logique pour sélectionner/manipuler le contenu ?
    * La logique doit rester distincte de la couche de l’interface utilisateur. HTL est conçu pour faciliter cette distinction.
-* Votre composant a-t-il besoin d’une mise en forme CSS ?
-   * La mise en forme CSS doit rester distincte des définitions de composants. Définissez des conventions pour nommer vos éléments HTML afin de pouvoir les modifier au moyen de fichiers CSS externes.
+* Votre composant aura-t-il besoin d’une mise en forme CSS ?
+   * La mise en forme CSS doit rester distincte des définitions de composants. Définissez des conventions pour nommer vos éléments de HTML afin que vous puissiez les modifier via des fichiers CSS externes.
 * Quelles sont les implications potentielles de votre nouveau composant sur la sécurité ?
 
 ### Réutilisation de composants existants {#reusing-components}
@@ -57,14 +57,14 @@ Ainsi, vous avez seulement besoin de redéfinir les modifications à apporter et
 
 Votre composant est rendu dans le langage [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Votre composant doit définir les balises HTML nécessaires pour réaliser le rendu du contenu selon les besoins, dans les environnements de création et de publication.
 
-Il est recommandé de garder le code responsable du balisage et du rendu distinct de celui qui contrôle la logique utilisée pour sélectionner le contenu du composant.
+Il est recommandé de séparer le code responsable du balisage et du rendu du code qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
 Cette approche est compatible avec [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=fr), un langage de modèle intentionnellement limité pour s’assurer qu’un vrai langage de programmation est utilisé afin de définir la logique métier sous-jacente. Ce mécanisme met en évidence le code appelé pour une vue donnée et, si nécessaire, autorise une logique spécifique pour différentes vues du même composant.
 
 Cette logique (facultative) peut être mise en œuvre de différentes manières et est appelée à partir de HTL avec des commandes spécifiques :
 
-* Utilisation de Java : [Use-API Java HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. Cela permet d’utiliser le code Java pour implémenter la logique de sélection et de configuration du contenu du composant.
-* Utilisation de JavaScript  : [Use-API JavaScript HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=fr) permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript. Cela permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+* Utilisation de Java : [Use-API Java HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. Vous pouvez ainsi utiliser du code Java pour implémenter la logique de sélection et de configuration du contenu du composant.
+* Utilisation de JavaScript - [Use-API JavaScript HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=fr) permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript. Cela permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 * Utilisation de bibliothèques côté client : les sites web modernes sont très dépendants du traitement côté client effectué par du code JavaScript et CSS complexe. Pour plus d’informations, consultez le document [Utilisation de bibliothèques côté client sur AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Structure des composants {#structure}
@@ -122,12 +122,12 @@ L’icône ou l’abréviation du composant est définie via les propriétés JC
 1. `abbreviation` – Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
    * L’abréviation devrait être limitée à deux caractères.
    * La saisie d’une chaîne vide crée l’abréviation à partir des deux premiers caractères de la propriété `jcr:title`.
-      * Par exemple « Im » pour Image
-      * Le titre localisé sera utilisé pour construire l’abréviation.
+      * Par exemple, &quot;Im&quot; pour &quot;Image&quot;
+      * Le titre localisé sera utilisé pour créer l’abréviation.
    * L’abréviation n’est traduite que si le composant possède une propriété `abbreviation_commentI18n`, qui est ensuite utilisée comme indice de traduction.
 1. `cq:icon.png` ou `cq:icon.svg` – Icône du composant, affichée dans le navigateur de composants
-   * La taille des icônes des composants standard est de 20 x 20 pixels.
-      * Les icônes plus grandes sont réduites (côté client).
+   * 20 x 20 pixels représente la taille des icônes des composants standard.
+      * Les icônes plus grandes seront réduites (côté client).
    * La couleur recommandée est rgb(112, 112, 112) > # 707070
    * L’arrière-plan des icônes de composants standard est transparent.
    * Seuls les fichiers `.png` et `.svg` sont pris en charge.
@@ -276,7 +276,7 @@ Une fois que vous avez créé un composant, vous devez l’activer pour pouvoir 
 
 ### Ajout de votre composant au modèle {#adding-your-component-to-the-template}
 
-Une fois qu’un composant a été défini, il doit être disponible pour utilisation. Pour permettre l’utilisation d’un composant dans un modèle, vous devez activer ce composant dans les règles du conteneur de disposition du modèle.
+Une fois qu’un composant a été défini, il doit être disponible pour utilisation. Pour permettre l’utilisation d’un composant dans un modèle, vous devez activer ce composant dans les politiques du conteneur de disposition du modèle.
 
 Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/features/templates.md) pour plus de détails sur la création des modèles.
 
@@ -295,7 +295,7 @@ En particulier, si vous vous intéressez au texte actuel d’un composant **Titr
 * Le contenu contient une propriété `jcr:title` contenant le texte actuel du titre saisi par l’auteur.
 * Il contient également une référence `sling:resourceType` à la définition du composant.
 
-Les propriétés définies dépendent des définitions individuelles. Bien qu’elles puissent être plus complexes que dans les exemples ci-dessus, elles suivent toujours les mêmes principes simples.
+Les propriétés définies dépendent des définitions individuelles. Bien qu&#39;elles puissent être plus complexes qu&#39;auparavant, elles suivent toujours les mêmes principes de base.
 
 ## Hiérarchie et héritage des composants {#component-hierarchy-and-inheritance}
 
@@ -460,11 +460,11 @@ Pour les développeurs, il est préférable d’accéder facilement à la docume
 
 * sa description ;
 * son utilisation prévue ;
-* la structure de contenu et les propriétés ;
-* les API exposées et les points d’extension.
-* etc.
+* Structure et propriétés du contenu
+* API exposées et points d’extension
+* Etc.
 
-Pour cette raison, il est assez simple de mettre à disposition toute la documentation existante dans le composant lui-même.
+Pour cette raison, il est assez facile de rendre tout balisage de documentation existant disponible dans le composant lui-même.
 
 Il suffit de placer un fichier `README.md` dans la structure du composant.
 

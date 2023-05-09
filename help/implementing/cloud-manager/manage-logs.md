@@ -1,5 +1,5 @@
 ---
-title: Accès aux journaux et leur gestion
+title: Accès aux journaux et gestion des journaux
 description: Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
 source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
@@ -10,7 +10,7 @@ ht-degree: 26%
 ---
 
 
-# Accès aux journaux et leur gestion {#manage-logs}
+# Accès aux journaux et gestion des journaux {#manage-logs}
 
 Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 

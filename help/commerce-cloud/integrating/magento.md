@@ -16,7 +16,7 @@ Experience Manager et Adobe Commerce sont intégrés de manière transparente 
 
 >[!NOTE]
 >
-> La version minimale de l’API GraphQL prise en charge est la version 2.3.5. Certaines fonctionnalités ne sont prises en charge que dans les versions plus récentes ou uniquement dans l’édition Adobe Commerce.
+> La version minimale de l’API GraphQL prise en charge est la version 2.3.5. Certaines fonctionnalités ne sont prises en charge que dans les versions plus récentes ou uniquement dans l’édition Adobe Commerce.
 
 >[!NOTE]
 >

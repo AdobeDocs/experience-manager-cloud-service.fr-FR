@@ -2,8 +2,8 @@
 title: Création d’un balisage dans des applications AEM
 description: Utiliser des balises ou étendre des balises par programmation dans une application AEM personnalisée
 exl-id: a106dce1-5d51-406a-a563-4dea83987343
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Pour plus d’informations sur le balisage :
 
 ## Vue d’ensemble de l’API de balisage {#overview-of-the-tagging-api}
 
-L’implémentation du [cadre de balisage](tagging-framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. `TagManager` garantit que les balises saisies en tant que valeurs dans la propriété de table de chaînes `cq:tags` ne sont pas dupliquées, supprime les `TagID` pointant vers des balises non existantes et met à jour les `TagID` pour les balises déplacées ou fusionnées. `TagManager` utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le module [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) :
+L’implémentation du [cadre de balisage](tagging-framework.md) dans AEM permet la gestion des balises et du contenu des balises à l’aide de l’API JCR. `TagManager` garantit que les balises saisies en tant que valeurs dans la propriété de table de chaînes `cq:tags` ne sont pas dupliquées, supprime les `TagID` pointant vers des balises non existantes et met à jour les `TagID` pour les balises déplacées ou fusionnées. `TagManager` utilise un écouteur d’observation JCR qui annule les modifications incorrectes. Les principales classes sont stockées dans le package [com.day.cq.tagging](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/day/cq/tagging/package-summary.html) :
 
 * `JcrTagManagerFactory` – renvoie une implémentation JCR d’un `TagManager`. C’est l’implémentation de référence de l’API de balisage.
 * `TagManager` – permet de résoudre et de créer des balises par chemins et noms.

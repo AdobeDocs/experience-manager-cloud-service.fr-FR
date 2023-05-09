@@ -8,7 +8,7 @@ exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 100%
+ht-degree: 75%
 
 ---
 
@@ -30,12 +30,12 @@ Vous pouvez configurer les fragments de formulaires adaptatifs uniquement pour l
    <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
 
 * **Identifier et marquer les valeurs globales**
-Les transactions Forms utilisent des éléments dynamiques pour capturer les données appropriées depuis les utilisateurs et les traiter afin de simplifier l’expérience de remplissage. Par exemple, votre formulaire contient le champ A dans le fragment X dont la valeur détermine la validité du champ B dans un autre. Dans ce cas, si le fragment X est marqué pour un chargement différé, la valeur du champ A doit être disponible pour valider le champ B, même si le fragment X n’est pas chargé. Pour obtenir ce résultat, vous pouvez marquer le champ A comme étant global, ce qui permet de s’assurer que sa valeur est disponible pour la validation du champ B lorsque le fragment X n’est pas chargé.
+Les transactions Forms utilisent des éléments dynamiques pour capturer les données appropriées depuis les utilisateurs et les traiter afin de simplifier l’expérience de remplissage. Par exemple, votre formulaire contient le champ A dans le fragment X dont la valeur détermine la validité du champ B dans un autre fragment. Dans ce cas, si le fragment X est marqué pour le chargement différé, la valeur du champ A doit être disponible pour valider le champ B même si le fragment X n’est pas chargé. Pour ce faire, vous pouvez marquer le champ A comme étant global, ce qui garantit que sa valeur est disponible pour la validation du champ B lorsque le fragment X n’est pas chargé.
 
    Pour plus d’informations sur la façon de créer une valeur de champ global, voir [Configuration du chargement différé](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **Règles d’écriture pour le contrôle de la visibilité des champs**
-Les formulaires incluent certains champs et sections qui ne s’appliquent pas à tous les utilisateurs et dans tous les cas. Les auteurs et les développeurs utilisent la visibilité ou les règles afficher-masquer pour contrôler leur visibilité en fonction des entrées de l’utilisateur. Par exemple, le champ Adresse du bureau n’est pas affiché pour les utilisateurs qui saisissent Sans emploi dans le champ Emploi. Pour plus d’informations sur les règles d’écriture, voir [Utilisation de l’éditeur de règles](rule-editor.md).
+Les formulaires incluent certains champs et sections qui ne s’appliquent pas à tous les utilisateurs et dans tous les cas. Les auteurs et les développeurs Forms utilisent la visibilité ou les règles d’affichage/masquage pour contrôler leur visibilité en fonction des entrées de l’utilisateur. Par exemple, le champ Adresse du bureau n’est pas affiché pour les utilisateurs qui choisissent Sans emploi dans le champ État de l’emploi d’un formulaire. Pour plus d’informations sur l’écriture de règles, voir [Utilisation de l’éditeur de règles](rule-editor.md).
 
    Vous pouvez utiliser les règles de visibilité dans les fragments chargés de manière différée de sorte que les champs conditionnels soient affichés uniquement lorsqu’ils sont obligatoires. En outre, marquez le champ conditionnel comme étant global pour vous y référer dans l’expression de visibilité du fragment chargé en différé.
 
@@ -51,7 +51,7 @@ Suivez les étapes ci-après pour activer le chargement différé sur un fragmen
 
    Le fragment est désormais activé pour le chargement différé.
 
-Vous pouvez marquer les valeurs des objets du fragment chargé en différé comme globales, de manière à pouvoir les utiliser dans des scripts lorsque le fragment contenant n’est pas chargé. Procédez comme suit :
+Vous pouvez marquer les valeurs des objets du fragment chargé en différé comme étant globales, de sorte qu’elles puissent être utilisées dans des scripts lorsque le fragment contenant n’est pas chargé. Procédez comme suit :
 
 1. Ouvrez le fragment de formulaire adaptatif en mode création.
 1. Appuyez sur le champ dont la valeur est à marquer comme globale, puis appuyez sur ![configure](assets/configure-icon.svg).
@@ -77,8 +77,8 @@ Voici certaines restrictions, recommandations et aspects importants à garder à
 
 Voici des aspects importants à garder à l’esprit lors du développement des scripts pour les panneaux de chargement différé :
 
-* Assurez-vous que les scripts initialize et calculate utilisés sur les champs d’un fragment à chargement différé sont idempotents par nature. Les scripts idempotents sont ceux qui ont le même effet, même après plusieurs exécutions.
-* Utilisez plutôt la propriété disponible globalement des champs pour modifier la valeur des champs situés dans un panneau de chargement différé à la disposition de tous les autres panneaux d’un formulaire.
-* Ne transférez pas la valeur de référence d’un champ dans un panneau différé, peu importe que le champ soit ou non marqué globalement sur tous les fragments.
-* Utilisez la fonction de réinitialisation des panneaux pour réinitialiser tout élément visible sur le panneau à l’aide de l’expression de clic suivante.\
+* Assurez-vous que les scripts initialize et calculate utilisés sur les champs d’un fragment à chargement différé sont idempotents par nature. Les scripts idempotents sont ceux qui ont le même effet même après plusieurs exécutions.
+* Utilisez la propriété disponible globalement des champs pour rendre la valeur des champs situés dans un panneau de chargement différé disponible pour tous les autres panneaux d’un formulaire.
+* Ne transférez pas la valeur de référence d’un champ dans un panneau différé, quel que soit le champ marqué globalement sur les fragments ou non.
+* Utilisez la fonction de réinitialisation du panneau pour réinitialiser tout ce qui est visible dans le panneau à l’aide de l’expression de clic suivante.\
    guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

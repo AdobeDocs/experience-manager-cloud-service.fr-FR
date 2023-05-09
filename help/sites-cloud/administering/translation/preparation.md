@@ -4,16 +4,16 @@ description: Découvrez comment préparer le contenu à traduire.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '768'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
 # Préparation du contenu à traduire {#preparing-content-for-translation}
 
-Les sites web multilingues fournissent généralement une certaine quantité de contenu dans plusieurs langues. Le site est créé dans une langue, puis traduit dans d’autres langues. En général, les sites multilingues comportent des branches de pages, chaque branche contenant les pages du site dans une langue distincte.
+Les sites web multilingues fournissent généralement une certaine quantité de contenu dans plusieurs langues. Le site est créé dans une langue, puis traduit dans d’autres langues. En règle générale, les sites multilingues se composent de branches de pages, où chaque branche contient les pages du site dans une langue différente.
 
 >[!TIP]
 >
@@ -54,7 +54,7 @@ La copie de langue pour laquelle vous créez initialement le contenu du site est
 
 Chaque branche de langue d’un site est appelée « copie de langue ». La page racine d’une copie de langue, appelée « racine de langue », identifie la langue du contenu de la copie de langue. Par exemple, `/content/wknd/fr` est la racine de langue de la copie en français. Les copies de langue doivent utiliser une [racine de langue configurée correctement](preparation.md#creating-a-language-root) afin que la langue appropriée soit ciblée lorsque des sources sont traduites.
 
-Pour préparer la traduction du site, procédez comme suit :
+Procédez comme suit pour préparer la traduction de votre site :
 
 1. Créez la racine de langue de votre gabarit de langue. Par exemple, la racine de langue en anglais du site de démonstration WKND est `/content/wknd/language-masters/en`. Vérifiez que la racine de langue est configurée conformément aux informations de la section [Création d’une racine de langue](preparation.md#creating-a-language-root).
 1. Créez le contenu de votre gabarit de langue.
@@ -64,7 +64,7 @@ Après avoir préparé le contenu à traduire, vous pouvez créer automatiquemen
 
 ## Création d’une racine de langue {#creating-a-language-root}
 
-Créez une racine de langue comme page racine d’une copie de langue qui identifie la langue du contenu. Après avoir créé la racine de langue, vous pouvez créer des projets de traduction incluant la copie de langue.
+Créez une racine de langue comme page racine d’une copie de langue qui identifie la langue du contenu. Après avoir créé la racine de langue, vous pouvez créer des projets de traduction qui incluent la copie de langue.
 
 Pour créer la racine de langue, créez une page, puis utilisez le code de langue ISO comme valeur de la propriété **Nom**. Le code de la langue doit être dans l’un des formats suivants :
 

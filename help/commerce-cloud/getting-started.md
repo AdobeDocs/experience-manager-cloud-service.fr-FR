@@ -8,8 +8,8 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 118945f407dab8ccad1ec018b588b64972fb5f12
-workflow-type: ht
+source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Pour connecter le module complémentaire CIF et les [composants principaux AEM C
 Cette variable d’environnement est utilisée à deux endroits :
 
 - Appels GraphQL d’AEM au serveur principal Commerce, via un client GraphQl partageable commun, utilisé par les composants principaux CIF AEM et les composants de projet client.
-- Configurez une URL de proxy GraphQL sur chaque environnement AEM, la variable est définie sur `/api/graphql`. Elle est utilisée par les outils de création de commerce AEM (module complémentaire CIF) et les composants côté client CIF.
+- Configurez une URL de proxy GraphQL sur chaque environnement AEM, la variable est définie sur `/api/graphql`. Elle est utilisée par les outils de création d’AEM Commerce (module complémentaire CIF) et les composants côté client CIF.
 
 Une autre URL de point d’entrée GraphQL peut être utilisée pour chaque environnement AEM as a Cloud Service. De cette façon, les projets peuvent connecter les environnements d’évaluation AEM avec les systèmes d’évaluation de commerce et l’environnement de production AEM à un système de production de commerce. Ce point d’entrée GraphQL doit être accessible au public, et les connexions VPN privées ou locales ne sont pas prises en charge. Vous pouvez éventuellement fournir un en-tête d’authentification afin d’utiliser des fonctionnalités CIF supplémentaires nécessitant une authentification.
 

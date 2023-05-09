@@ -2,10 +2,10 @@
 title: Personnalisation et ciblage de contenu
 description: Découvrez comment créer du contenu personnalisé et ciblé avec AEM
 exl-id: b9b5dbf6-d491-48a6-99b1-19bc1b651b8c
-source-git-commit: f2466cb5cda759f0c97cd69810d208d47fb73b98
-workflow-type: ht
+source-git-commit: 566cd449c536de4179e32c94df90b46d61e0103a
+workflow-type: tm+mt
 source-wordcount: '1056'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -118,7 +118,7 @@ AEM fournit le moteur de ciblage intégré [ContextHub](/help/implementing/devel
 Avec le moteur de ciblage [Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md), les informations recueillies suite aux visites de page font l’objet d’un suivi dans Adobe Target.
 
 * Avec ce moteur de ciblage, vous utilisez les segments que vous importez à partir d’Adobe Target pour définir les audiences de vos expériences.
-* Les activités qui utilisent le moteur Adobe Target sont [synchronisées sur Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
+* Les activités qui utilisent le moteur Adobe Target sont les suivantes : [synchronisé avec Target](/help/sites-cloud/authoring/personalization/activities.md#synchronizing-activities-with-adobe-target).
 
 Vous pouvez utiliser ce moteur lorsque vous avez [intégré Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 

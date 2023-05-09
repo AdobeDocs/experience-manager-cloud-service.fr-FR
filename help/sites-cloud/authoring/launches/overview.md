@@ -1,24 +1,24 @@
 ---
 title: Lancements
-description: La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
+description: Les lancements vous permettent de développer efficacement du contenu pour une version ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '907'
-ht-degree: 100%
+ht-degree: 54%
 
 ---
 
 # Lancements {#launches}
 
-La fonction Lancements permet de développer efficacement du contenu en vue d’une publication ultérieure.
+Les lancements vous permettent de développer efficacement du contenu pour une version ultérieure.
 
-Le lancement vous permet de préparer des modifications en vue d’une publication future (tout en conservant vos pages actives). Une fois vos modifications apportées aux pages de lancement, vous devez les convertir de nouveau en pages source, puis activer ces dernières (au niveau supérieur). L’opération de conversion duplique le contenu de lancement sur les pages source et peut être appliquée manuellement ou automatiquement (selon les champs définis lors de la création et de la modification du lancement).
+Un lancement est créé pour vous permettre de préparer les modifications pour une publication ultérieure (tout en conservant vos pages actives). Après avoir modifié et mis à jour vos pages de lancement, vous les reconvertissez à la source, puis activez les pages source (de niveau supérieur). La promotion duplique le contenu du lancement sur les pages source et peut être effectué manuellement ou automatiquement (en fonction des champs définis lors de la création et de la modification du lancement).
 
-Par exemple, les pages de produits saisonniers de votre boutique en ligne sont mises à jour tous les trimestres, de telle sorte que les offres spéciales soient en phase avec la saison. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des pages web en question. Pendant tout le trimestre, les modifications suivantes sont accumulées dans la copie de lancement :
+Par exemple, les pages de produits saisonniers de votre boutique en ligne sont mises à jour chaque trimestre afin que les produits présentés correspondent à la saison en cours. Pour préparer la prochaine mise à jour trimestrielle, vous pouvez créer un lancement des pages web appropriées. Tout au long du trimestre, les modifications suivantes sont cumulées dans la copie de lancement :
 
-* Modifications apportées aux pages source dans le cadre des tâches de maintenance normales. Ces modifications sont automatiquement dupliquées dans les pages de lancement.
-* Modifications effectuées directement sur les pages de lancement en vue du prochain trimestre.
+* Modifications apportées aux pages source suite à des tâches de maintenance normales. Ces modifications sont automatiquement dupliquées dans les pages de lancement.
+* Modifications effectuées directement sur les pages de lancement en vue du trimestre suivant.
 
 Vous pouvez également :
 
@@ -27,10 +27,10 @@ Vous pouvez également :
 
 À l’approche du trimestre suivant, vous convertissez les pages de lancement pour pouvoir modifier les pages source (contenant le contenu mis à jour). Vous pouvez convertir toutes les pages ou uniquement celles que vous avez modifiées.
 
-Les lancements peuvent également être :
+Les lancements peuvent également être :
 
-* Créés pour plusieurs branches racine. Même si vous pouvez créer un lancement pour le site dans son intégralité (et y apporter des modifications), cette méthode n’est pas pratique puisque l’ensemble du site doit être copié. Lorsque des centaines, voire des milliers de pages sont utilisées, les configurations et les performances du système dépendent de l’action de copie et ultérieurement des comparaisons nécessaires pour les tâches de conversion.
-* Imbriqués (un lancement dans un lancement). Vous pouvez ainsi créer un lancement à partir d’un lancement existant pour que les développeurs de contenu exploitent les modifications déjà apportées, au lieu de répercuter ces mêmes modifications à plusieurs reprises pour chaque lancement.
+* Créé pour plusieurs branches racine. Bien que vous puissiez créer le lancement pour l’ensemble du site (et y apporter les modifications), cela peut s’avérer impossible, car l’ensemble du site doit être copié. Lorsque des centaines, voire des milliers de pages sont utilisées, les configurations et les performances du système dépendent de l’action de copie et ultérieurement des comparaisons nécessaires pour les tâches de conversion.
+* Imbriqué (un lancement dans un lancement) pour vous permettre de créer un lancement à partir d’un lancement existant afin que les auteurs puissent tirer parti des modifications déjà apportées, plutôt que d’avoir à apporter les mêmes modifications plusieurs fois pour chaque lancement.
 
 Cette section explique comment créer, modifier et convertir (et, le cas échéant, [supprimer](/help/sites-cloud/authoring/launches/creating.md#deleting-a-launch)) les pages de lancement de la console Sites ou de la console [Lancements](#the-launches-console) :
 
@@ -42,28 +42,28 @@ Cette section explique comment créer, modifier et convertir (et, le cas échéa
 
 ## Lancements – Ordre des événements {#launches-the-order-of-events}
 
-La fonction Lancements vous permet de développer efficacement le contenu en vue d’une publication future d’une ou de plusieurs pages web activées.
+Les lancements vous permettent de développer efficacement du contenu pour une prochaine version d’une ou de plusieurs pages web activées.
 
-La fonction Lancements vous permet de :
+Les lancements vous permettent d’effectuer les opérations suivantes :
 
 * Créez une copie de vos pages source :
    * La copie est votre lancement.
    * Les pages source de niveau supérieur sont connues sous le nom de **Production**.
-      * Les pages source peuvent être extraites de plusieurs branches (distinctes).
+      * Les pages source peuvent provenir de plusieurs branches (distinctes).
 
    ![Ordre de fonctionnement des lancements](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Modifier la configuration de lancement :
-   * Ajoutez ou supprimez des pages et/ou des branches vers/à partir du lancement.
+   * Ajoutez ou supprimez des pages et/ou des branches au lancement.
    * Modifiez des propriétés de lancement, comme le **titre**, la **date de lancement** et l’indicateur **Prêt pour la production**.
-* Vous pouvez convertir et modifier le contenu manuellement ou automatiquement :
+* Vous pouvez convertir et publier le contenu manuellement ou automatiquement :
    * Manuellement :
-      * Convertissez votre contenu de lancement en **Cible** (pages source) lorsqu’il est prêt à être publié.
-      * Modifiez le contenu des pages source (après les avoir à nouveau converties).
-      * Convertissez toutes les pages ou uniquement celles qui ont été modifiées.
+      * Convertissez votre contenu de lancement en **Cible** (pages source) lorsqu’elles sont prêtes à être publiées.
+      * Publiez le contenu à partir des pages source (après promotion).
+      * Convertissez toutes les pages ou uniquement les pages modifiées.
    * Automatiquement, ce qui implique les étapes suivantes :
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
-      * L’indicateur **Prêt pour la production** : cette option n’est sélectionnable que lors de la modification d’un lancement.
+      * Le **Prêt pour la production** Indicateur : cette option ne peut être définie que lors de la modification d’un lancement.
       * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la **date** de **lancement** (**En direct**) spécifiée. Après la promotion, les pages de production sont automatiquement publiées.\
          Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 * Mettez à jour vos pages source et de lancement en parallèle :
@@ -72,9 +72,9 @@ La fonction Lancements vous permet de :
 
    ![Actions en parallèle](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
-* [Créer un lancement imbriqué](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) (lancement dans un lancement) :
+* [Création d’un lancement imbriqué](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - un lancement dans un lancement :
    * La source est un lancement existant.
-   * Vous pouvez [promouvoir un lancement imbriqué](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) dans n’importe quelle cible. Il peut s’agir d’un lancement parent ou des pages source de niveau supérieur (production).
+   * Vous pouvez [promouvoir un lancement imbriqué](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) à toute cible; il peut s’agir d’un lancement parent ou des pages source de niveau supérieur (production).
 
    ![Lancement imbriqué](/help/sites-cloud/authoring/assets/launches-nested.png)
 
@@ -88,10 +88,10 @@ La fonction Lancements vous permet de :
 >
 >Si vous rencontrez des difficultés, contactez votre administrateur système.
 
-## Lancements dans les références (console de sites) {#launches-in-references-sites-console}
+## Lancements dans les références (console Sites) {#launches-in-references-sites-console}
 
-1. Dans la console **Sites**, accédez à la source des lancements.
-1. Ouvrez le rail **Références** et sélectionnez la page source.
+1. Dans le **Sites** , accédez à la source du ou des lancements.
+1. Ouvrez le **Références** et sélectionnez la page source.
 1. Sélectionnez **Lancements**. Les lancements existants seront répertoriés, ainsi que l’accès à la **Console Lancements** :
 
    ![Références des lancements dans la console des sites](/help/sites-cloud/authoring/assets/launches-references.png)

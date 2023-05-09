@@ -5,7 +5,7 @@ exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '662'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
@@ -17,10 +17,10 @@ Lorsque vous appliquez le workflow, vous spécifiez les informations suivantes 
 
 * Workflow à appliquer.
    * Vous pouvez appliquer n’importe quel workflow (auquel vous avez accès, selon les affectations réalisées par votre administrateur AEM).
-* Éventuellement, un titre permettant d’identifier l’instance de workflow dans la boîte de réception d’un utilisateur.
-* La charge utile du workflow. Cela peut concerner une ou plusieurs pages.
+* Éventuellement, un titre qui permet d’identifier l’instance de workflow dans la boîte de réception d’un utilisateur.
+* la charge utile du workflow ; il peut s’agir d’une ou de plusieurs pages.
 
-Vous pouvez démarrer les workflows :
+Les workflows peuvent être démarrés à partir des éléments suivants :
 
 * [via la console Sites](#starting-a-workflow-from-the-sites-console).
 * [lors de la modification d’une page, via Informations sur la page](#starting-a-workflow-from-the-page-editor).
@@ -53,9 +53,9 @@ Vous pouvez démarrer un workflow des deux manières suivantes :
 * [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
-Dans les deux cas, vous aurez besoin d’effectuer les opérations suivantes :
+Dans les deux cas, vous devrez :
 
-* [Spécifier les détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
+* [Spécification des détails du workflow dans l’assistant Créer un workflow](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Démarrage d’un workflow à partir de la barre d’outils Sites {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -82,31 +82,31 @@ Dans la **Chronologie**, vous pouvez démarrer un workflow à appliquer à la re
 
 ### Spécification des détails du workflow dans l’assistant Créer un workflow {#specifying-workflow-details-in-the-create-workflow-wizard}
 
-L’assistant **Créer un workflow** vous permet de sélectionner le workflow et d’en spécifier les détails.
+Le **Créer un workflow** L’assistant vous aidera à sélectionner le workflow et à spécifier les détails requis.
 
-Après avoir ouvert l’assistant **Créer un workflow** de l’une des façons suivantes :
+Après avoir ouvert la **Créer un workflow** à partir de l’un des éléments suivants :
 
 * [Utiliser l’option Créer de la barre d’outils Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [Utiliser le rail Chronologie de la console Sites](#starting-a-workflow-from-the-timeline).
 
-Vous pouvez spécifier les détails du workflow :
+Vous pouvez spécifier les détails suivants :
 
-1. Dans l’étape **Propriétés**, les options de base du workflow sont définies :
+1. Dans le **Propriétés** , les options de base du workflow sont définies :
 
    * **Modèle de workflow**
    * **Titre du workflow**
 
-      * Vous pouvez spécifier un titre pour cette instance pour vous permettre de l’identifier ultérieurement.
+      * Vous pouvez spécifier un titre pour cette instance afin de l’identifier ultérieurement.
 
-   En fonction du modèle de workflow, les options suivantes sont également disponibles. Elles permettent de conserver le module créé comme charge utile une fois le workflow terminé.
+   Selon le modèle de workflow, les options suivantes sont également disponibles. Ils permettent de conserver le module créé en tant que charge utile une fois le workflow terminé.
 
-   * **Conserver le module de workflow**
+   * **Conserver le module de processus**
    * **Titre de module**
 
-      * Vous pouvez spécifier un titre pour le module, pour faciliter son identification.
+      * Pour faciliter l’identification, vous pouvez spécifier un titre pour le module.
    >[!NOTE]
    >
-   >L’option **Conserver le module de workflow** est disponible lorsque le workflow a été configuré pour la prise en charge multi-ressource et que plusieurs ressources ont été sélectionnées.
+   >L’option **Conserver le package de workflow** est disponible lorsque le workflow a été configuré pour la prise en charge multi-ressource et que plusieurs ressources ont été sélectionnées.
 
    <!--
    >The **Keep workflow package** option is available when the workflow has been configured for [Multi Resource Support](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) and multiple resources have been selected.
@@ -125,24 +125,24 @@ Vous pouvez spécifier les détails du workflow :
       * **Inclure les enfants** pour indiquer que les enfants de la ressource seront inclus dans le workflow.
 Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection selon les critères suivants :
 
-         * Inclure seulement les enfants immédiats.
-         * Inclure seulement les pages modifiées.
-         * Inclure seulement les pages déjà publiées.
+         * Inclure seulement les enfants immédiats
+         * Inclure seulement les pages modifiées
+         * Inclure seulement les pages déjà publiées
 
-         Tous les enfants spécifiés seront ajoutés à la liste de ressources auquel le workflow s’appliquera.
+         Tous les enfants spécifiés sont ajoutés à la liste des ressources auxquelles le workflow s’appliquera.
 
-      * **Supprimer la sélection** pour supprimer la ressource du workflow.
+      * **Supprimer la sélection** pour supprimer cette ressource du workflow.
 
    ![Définir la portée du workflow](/help/sites-cloud/authoring/assets/workflows-scope.png)
 
    >[!NOTE]
    >
-   >Si vous ajoutez des ressources, vous pouvez utiliser l’option **Retour** pour ajuster le paramètre **Conserver le module de workflow** à l’étape **Propriétés**.
+   >Si vous ajoutez des ressources, vous pouvez utiliser l’option **Retour** pour ajuster le paramètre **Conserver le package de workflow** à l’étape **Propriétés**.
 
 1. Utilisez l’option **Créer** pour fermer l’assistant et créer l’instance du workflow. Une notification s’affiche dans la console Sites.
 
 ## Démarrage d’un workflow à partir de l’éditeur de page {#starting-a-workflow-from-the-page-editor}
 
-Lors de la modification d’une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant contient l’option **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
+Lorsque vous modifiez une page, vous pouvez sélectionner **Informations sur la page** dans la barre d’outils. Le menu déroulant comporte l’option . **Démarrer dans le workflow**. Cette option ouvre une boîte de dialogue dans laquelle vous pouvez spécifier le workflow requis, ainsi qu’un titre si nécessaire :
 
 ![Démarrage d’un workflow à partir de l’éditeur de page](/help/sites-cloud/authoring/assets/workflows-create-page-editor.png)

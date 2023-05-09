@@ -90,7 +90,7 @@ Consultez la vidéo [Aperçu de la version de décembre 2022](https://video.tv.a
 * **Liste de souhaits**
    * Les visiteurs connectés peuvent ajouter des produits à une liste de souhaits.
    * La gestion de la liste des souhaits et de ses produits est possible via Mon compte.
-   * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par une stratégie (par exemple un teaser de produit ou les informations de produit).
+   * Le bouton « Ajouter à la liste de souhaits » peut être activé/désactivé au niveau des composants par une politique (par exemple un teaser de produit ou les informations de produit).
    * Disponible en tant que composant principal et dans AEM Venia Storefront
 
 ![Liste de souhaits](/help/assets/CIF/wishlist.png)

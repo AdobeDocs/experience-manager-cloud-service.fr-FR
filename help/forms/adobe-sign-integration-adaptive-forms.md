@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 609c3072-1c3d-43fa-898a-b4e62db8483b
-source-git-commit: 72c53bf69c36c265d25d136c0d2887cac2fe98fc
-workflow-type: ht
+source-git-commit: 7b233d95e27325a7edb22948669f6c0d96e1f380
+workflow-type: tm+mt
 source-wordcount: '1028'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 [!DNL Adobe Sign] permet des processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
 
-Dans un scénario [!DNL Adobe Sign] et de formulaires adaptatifs standard, un utilisateur remplit un formulaire adaptatif pour effectuer une demande de service. Par exemple, un formulaire de demande de carte bancaire et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, le formulaire est envoyé au prestataire de services qui décidera des actions à entreprise. Le prestataire de services passe en revue la demande et utilise [!DNL Adobe Sign] pour marquer la demande comme approuvée. Pour activer les workflows de signature électronique similaires, vous pouvez intégrer [!DNL Adobe Sign] à [!DNL AEM Forms].
+Dans un scénario [!DNL Adobe Sign] et de formulaires adaptatifs standard, un utilisateur remplit un formulaire adaptatif pour effectuer une demande de service. Par exemple, un formulaire de demande de carte bancaire et d’allocation. Lorsqu’un utilisateur remplit, envoie et signe le formulaire de demande, le formulaire est envoyé au fournisseur de services pour qu’il prenne d’autres mesures. Le prestataire de services passe en revue la demande et utilise [!DNL Adobe Sign] pour marquer la demande comme approuvée. Pour activer les workflows de signature électronique similaires, vous pouvez intégrer [!DNL Adobe Sign] à [!DNL AEM Forms].
 
 Pour utiliser [!DNL Adobe Sign] avec [!DNL AEM Forms], configurez [!DNL Adobe Sign] dans AEM Cloud Services :
 
@@ -63,7 +63,7 @@ Une fois les prérequis réunis, procédez comme suit pour configurer [!DNL Adob
 
    >[!NOTE]
    >
-   > Gardez la page **Créer une configuration Adobe Sign** ouverte. Ne la fermez pas. Vous pouvez récupérer l’**ID client** et le **Secret client** après la configuration des paramètres OAuth pour l’application [!DNL Adobe Sign] comme décrit dans les étapes à venir.
+   > Gardez la page **Créer une configuration Adobe Sign** ouverte. Ne la fermez pas. Vous pouvez récupérer l’**ID client** et le **secret client** après la configuration des paramètres OAuth pour l’application [!DNL Adobe Sign] comme décrit dans les étapes à venir.
 
 
 1. Configurez les paramètres OAuth pour l’application [!DNL Adobe Sign] :

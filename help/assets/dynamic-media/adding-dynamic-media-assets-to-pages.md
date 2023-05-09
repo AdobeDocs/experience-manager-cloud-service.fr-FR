@@ -8,7 +8,7 @@ exl-id: 2f2fd6cb-8b53-4167-a7e3-453f27549109
 source-git-commit: da4174929e1eb8e15447f936dc89a67391c72209
 workflow-type: tm+mt
 source-wordcount: '3216'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ L’ajout d’un composant Média 3D, Dynamic Media, Média interactif, Média p
 
    ![6_5_360video_wcmcomponentconfigure](assets/6_5_360video_wcmcomponentconfigure.png)
 
-1. En fonction du composant Dynamic Media que vous avez déposé sur la page, une boîte de dialogue de configuration s’ouvre. [Définissez les options du composant](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) selon vos besoins.
+1. En fonction du composant Dynamic Media que vous avez déposé sur la page, une boîte de dialogue de configuration s’ouvre. [Définition des options du composant](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#dynamic-media-components) si nécessaire.
 
    L’exemple ci-dessous illustre la boîte de dialogue du composant Dynamic Media **[!UICONTROL Média vidéo 360]** et les options disponibles dans la liste déroulante des paramètres prédéfinis de la visionneuse.
 
@@ -62,9 +62,9 @@ Si aucun composant Dynamic Media n’est disponible pour ajouter une page, cela 
 
 1. Dans la liste déroulante située sur le côté droit de la barre d’outils, à proximité du haut de la page, sélectionnez **[!UICONTROL Structure]**.
 
-   ![Stratégie](/help/assets/assets-dm/structure-mode.png)
+   ![Politique](/help/assets/assets-dm/structure-mode.png)
 
-1. À proximité du bas de la page, sélectionnez **[!UICONTROL Conteneur de mises en page]** pour ouvrir sa barre d’outils, puis sélectionnez l’icône Stratégie.
+1. À proximité du bas de la page, sélectionnez **[!UICONTROL Conteneur de mises en page]** pour ouvrir sa barre d’outils, puis sélectionnez l’icône Politique.
 1. Sur la page **[!UICONTROL Conteneur de mises en page]**, sous l’en-tête **[!UICONTROL Propriétés]**, assurez-vous que l’onglet **[!UICONTROL Composants autorisés]** est sélectionné.
 
    ![Composants autorisés](/help/assets/assets-dm/allowed-components.png)
@@ -269,7 +269,7 @@ Vous pouvez modifier les paramètres Dynamic Media ci-après en sélectionnant 
 
 ### Composant : Média interactif {#interactive-media-component}
 
-Le composant Interactive Media est destiné aux ressources présentant des éléments interactifs tels que des zones réactives ou des zones cliquables. Si vous disposez d’une image interactive, d’une vidéo interactive ou d’une bannière de carrousel, utilisez le composant **[!UICONTROL Interactive Media]**.
+Le composant Interactive Media est destiné aux ressources qui comportent de l’interactivité sur ces zones réactives ou zones cliquables. Si vous disposez d’une image interactive, d’une vidéo interactive ou d’une bannière de carrousel, utilisez la variable **[!UICONTROL Média interactif]** composant.
 
 Le composant Interactive Media est dynamique ; il propose des options différentes selon que vous ajoutez une image ou une vidéo. En outre, la visionneuse est réactive : la taille de l’écran change automatiquement en fonction de la taille à l’écran. Toutes les visionneuses sont des visionneuses HTML5.
 
@@ -298,17 +298,17 @@ Vous pouvez modifier les paramètres **[!UICONTROL Général]** ci-après en sé
 
    Vous pouvez modifier les paramètres **[!UICONTROL Ajouter au panier]** ci-après en sélectionnant **[!UICONTROL Modifier]** dans le composant.
 
-* **[!UICONTROL Afficher les ressources de produit]** : par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Désactivez la case pour ne pas afficher la ressource de produit.
+* **[!UICONTROL Afficher les ressources de produit]** : par défaut, cette valeur est sélectionnée. La ressource de produit affiche une image du produit telle que définie dans le module Commerce. Décochez la case pour ne pas afficher la ressource de produit.
 
-* **[!UICONTROL Afficher le prix des produits]** : par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’élément tel qu’il est défini dans le module Commerce. Désactivez la case pour ne pas afficher le prix du produit.
+* **[!UICONTROL Afficher le prix des produits]** : par défaut, cette valeur est sélectionnée. Le prix du produit affiche le prix de l’article tel que défini dans le module Commerce. Décochez la case pour ne pas afficher le prix du produit.
 
-* **[!UICONTROL Afficher le formulaire de produit]** : par défaut, cette valeur n’est pas sélectionnée. Le formulaire de produit contient toutes les variantes de produit, telles que la taille et la couleur. Désactivez la case pour ne pas afficher les variantes de produit.
+* **[!UICONTROL Afficher le formulaire de produit]** : par défaut, cette valeur n’est pas sélectionnée. Le formulaire de produit comprend toutes les variantes de produit, telles que la taille et la couleur. Décochez la case pour ne pas afficher les variantes de produit.
 
 ### Composant : média panoramique {#panoramic-media-component}
 
-Le composant de média panoramique est destiné aux ressources qui sont des images panoramiques sphériques. Ces images fournissent une expérience d’affichage à 360° d’une pièce, d’une propriété, d’un lieu ou d’un paysage. Pour qu’une image soit un panorama sphérique, elle doit posséder l’une ou l’autre des propriétés suivantes, ou les deux :
+Le composant Média panoramique est destiné aux ressources qui sont des images panoramiques sphériques. Ces images offrent une expérience d’affichage de 3 60° d’une pièce, d’une propriété, d’un emplacement ou d’un paysage. Pour qu’une image soit considérée comme un panorama sphérique, elle doit posséder l’une des caractéristiques suivantes, OU les deux :
 
-* Un rapport d’aspect de 2:1.
+* Un format de 2:1.
 * Balisé à l’aide des mots-clés `equirectangular` ou (`spherical` + `panorama`) ou (`spherical` + `panoramic`). Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md).
 
 Les critères de rapport d’aspect et de mots-clés s’appliquent tous deux aux ressources panoramiques pour la page des détails des ressources et le composant WCM **[!UICONTROL Média panoramique]**.
@@ -350,7 +350,7 @@ Si le paramètre prédéfini de la visionneuse que vous recherchez n’est pas v
 
 ### Utilisation de HTTP/2 pour la diffusion de ressources Dynamic Media {#using-http-to-delivery-dynamic-media-assets}
 
-HTTP/2 est le nouveau protocole web qui améliore la manière dont les serveurs et les navigateurs communiquent. Il permet un transfert rapide d’informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
+HTTP/2 est le nouveau protocole Web mis à jour qui améliore la communication entre les navigateurs et les serveurs. Il permet un transfert plus rapide des informations et réduit la puissance de traitement nécessaire. Les ressources Dynamic Media peuvent désormais être diffusées sur HTTP/2, un protocole qui garantit de meilleurs temps de réponse et de chargement.
 
 Voir [Diffusion du contenu sur HTTP2](/help/assets/dynamic-media/http2faq.md) pour tout savoir sur l’utilisation du protocole HTTP/2 avec votre compte Dynamic Media.
 

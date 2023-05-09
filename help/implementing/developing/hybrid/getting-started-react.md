@@ -2,16 +2,16 @@
 title: Prise en main des SPA dans AEM avec React
 description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '1144'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Prise en main des SPA dans AEM avec React {#getting-started-with-spas-in-aem-using-react}
 
-Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de structures SPA.
 
 La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente une SPA simplifiée dans le framework React, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA.
 
@@ -25,7 +25,7 @@ Cet article résume le fonctionnement de base d’une SPA simple et ce que vous 
 
 Pour plus de détails sur le fonctionnement des SPA dans AEM, consultez les documents suivants :
 
-* [Introduction et présentation des applications sur une seule page (SPA)](introduction.md)
+* [Introduction et présentation des applications monopage (SPA)](introduction.md)
 * [Présentation de l’éditeur de SPA](editor-overview.md)
 * [Plan directeur d’applications sur une seule page (SPA)](blueprint.md)
 
@@ -43,7 +43,7 @@ En plus de la dépendance React attendue, l’exemple de SPA tire parti de bibli
 
 ### Dépendances {#dependencies}
 
-Le fichier `package.json` définit les exigences du module SPA global. Les dépendances AEM minimales d’une SPA opérationnelle sont répertoriées ici.
+Le fichier `package.json` définit les exigences du package SPA global. Les dépendances AEM minimales d’une SPA opérationnelle sont répertoriées ici.
 
 ```
   "dependencies": {
@@ -97,11 +97,11 @@ module.exports = {
 
 ### Génération {#building}
 
-En réalité, la construction de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation, en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de construction est similaire à :
+En réalité, la construction de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation, en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de génération ressemblera à :
 
 `"build": "webpack && clientlib --verbose"`
 
-Une fois généré, le module peut être chargé dans une instance AEM.
+Une fois généré, le package peut être chargé dans une instance AEM.
 
 ### Archétype de projet AEM {#aem-project-archetype}
 
@@ -109,7 +109,7 @@ Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://experie
 
 ## Structure d’application {#application-structure}
 
-Si vous ajoutez les dépendances et que vous construisez votre application comme décrit précédemment, vous disposez d’un module SPA opérationnel que vous pouvez charger dans votre instance AEM.
+Si vous ajoutez les dépendances et que vous construisez votre application comme décrit précédemment, vous disposez d’un package SPA opérationnel que vous pouvez charger dans votre instance AEM.
 
 La section suivante de ce document explique comment une SPA est structurée dans AEM et décrit les fichiers importants qui pilotent l’application et leur interfonctionnement.
 

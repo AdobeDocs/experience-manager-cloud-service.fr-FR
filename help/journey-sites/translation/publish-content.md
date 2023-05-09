@@ -74,7 +74,7 @@ Ce chemin d’accès mène aux sous-dossiers pour chaque langue de traduction et
    ![Gérer les options de publication](assets/manage-publication-options.png)
 1. Dans la fenêtre **Gérer la publication**, vérifiez que le ou les chemins appropriés sont sélectionnés. Cliquez ou appuyez sur **Publier**.
    ![Gérer la portée de la publication](assets/manage-publication-scope.png)
-1. AEM confirme l’action de publication avec un message contextuel en bas de l’écran.
+1. AEM confirme l’action de publication avec un message pop-up en bas de l’écran.
    ![Bannière Ressources publiées](assets/resources-published-message.png)
 
 Votre contenu traduit est maintenant publié ! Il est désormais accessible et consommé.

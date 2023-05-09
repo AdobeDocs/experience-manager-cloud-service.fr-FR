@@ -21,11 +21,11 @@ Pour créer un programme Sandbox, procédez comme suit.
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Dans la page de destination de Cloud Manager, cliquez sur **Ajouter un programme** dans le coin supérieur droit de l’écran.
+1. Dans la page de destination de Cloud Manager, cliquez sur **Ajouter le programme** dans le coin supérieur droit de l’écran.
 
    ![Page de destination de Cloud Manager](assets/first_timelogin1.png)
 
-1. Dans l’assistant de création de programme, sélectionnez **Configurer un environnement de test**, indiquez un nom de programme, puis cliquez sur **Créer**.
+1. Dans l’assistant de création de programme, sélectionnez **Configurer un sandbox**, indiquez un nom de programme, puis cliquez sur **Créer**.
 
    ![Création d’un type de programme](assets/create-sandbox.png)
 

@@ -75,7 +75,7 @@ Maintenant que vous avez accédé à Cloud Manager, vous pouvez créer un pipeli
 
    ![Pipelines](assets/pipelines-add.png)
 
-1. Dans le menu contextuel qui s’affiche sous le bouton **Ajouter**, sélectionnez **Ajouter un pipeline hors production** aux fins du présent parcours.
+1. Dans le menu pop-up qui s’affiche sous le bouton **Ajouter**, sélectionnez **Ajouter un pipeline hors production** aux fins du présent parcours.
 
 1. Dans l’onglet **Configuration** de la boîte de dialogue **Ajouter un pipeline hors production** qui s’ouvre :
    * Sélectionnez **Pipeline de déploiement**.

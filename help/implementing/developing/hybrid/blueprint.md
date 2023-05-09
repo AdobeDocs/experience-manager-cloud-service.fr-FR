@@ -2,10 +2,10 @@
 title: Plan directeur d’applications sur une seule page (SPA)
 description: Ce document décrit le contrat général et indépendant du framework que tout framework de SPA devrait respecter afin de mettre en œuvre des composants de SPA modifiables dans AEM.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '2057'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -21,7 +21,7 @@ Pour que l’auteur puisse utiliser l’éditeur de page AEM pour modifier les d
 
 >[!NOTE]
 >
->Les exigences suivantes sont indépendantes de la structure. Si ces exigences sont satisfaites, un calque spécifique à l’infrastructure, constitué de modules, de composants et de services, peut être fourni.
+>Les exigences suivantes sont indépendantes du framework. Si ces conditions sont remplies, une couche spécifique à la structure composée de modules, composants et services peut être fournie.
 >
 >**Ces exigences sont déjà respectées pour les frameworks React et Angular dans AEM.** Les exigences de ce plan directeur ne sont pertinentes que si vous voulez mettre en œuvre un autre framework à utiliser avec AEM.
 

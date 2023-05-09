@@ -5,7 +5,7 @@ exl-id: 35950b81-6e45-4a75-bd27-8c28fd68e42e
 source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
 workflow-type: tm+mt
 source-wordcount: '2024'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -61,7 +61,6 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 ### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
 - **Connecteur de stockage unifié :** utilisez le connecteur de stockage unifié pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes :  Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
-
    <!--* Enable Forms Portal’s save and resume functionality and store adaptive forms drafts in a customer-managed data repository.-->
 
 - **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](aem-forms-cloud-service-communications.md) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
@@ -188,7 +187,7 @@ Vous pouvez écrire sur [!DNL formscsbeta@adobe.com] pour vous inscrire au progr
 
 ### Fonctionnalité bêta à venir de [!DNL Forms] {#may-what-is-new-forms-prerelease}
 
-Output as a Cloud service : le service Output vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode batch synchrone et asynchrone. Le service Output permet de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+Output as a Cloud service : le service Output vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode batch synchrone et asynchrone. Le service Output vous permet de créer des applications qui vous permettent :
 
 - Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
 - Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs.

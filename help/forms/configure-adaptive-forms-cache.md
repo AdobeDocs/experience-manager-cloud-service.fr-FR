@@ -12,7 +12,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '979'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,7 @@ Un cache est un mécanisme qui permet de raccourcir les temps d’accès aux don
 
    >[!NOTE]
    >
-   >Pour désactiver le cache, définissez la valeur du champ Nombre de formulaires adaptatifs sur **0**. Le cache est réinitialisé, et tous les formulaires et documents sont supprimés du cache lorsque vous désactivez ou modifiez la configuration du cache.
+   >Pour désactiver le cache, définissez la valeur du champ Nombre de Forms adaptatives sur **0**. Le cache est réinitialisé, et tous les formulaires et documents sont supprimés du cache lorsque vous désactivez ou modifiez la configuration du cache.
 
    ![Boîte de dialogue de configuration du cache HTML de formulaires adaptatifs](assets/cache-configuration-edit.png)
 
@@ -140,7 +140,7 @@ Lorsque vous sélectionnez et ajoutez des images ou des vidéos par le biais de 
 
 #### Solution {#Solution1}
 
-Après avoir publié les images et la vidéo, dépubliez explicitement et publiez les formulaires adaptatifs qui référencent ces ressources.
+Après avoir publié les images et la vidéo, dépubliez et publiez explicitement les formulaires adaptatifs qui référencent ces ressources.
 
 ### Certains formulaires adaptatifs incluant un fragment de contenu ou des fragments d’expérience ne sont pas automatiquement invalidés à partir du cache du Dispatcher. {#content-or-experience-fragment-not-auto-invalidated}
 
@@ -150,7 +150,7 @@ Lorsque vous ajoutez un fragment de contenu ou un fragment d’expérience à un
 
 #### Solution {#Solution2}
 
-Après avoir publié un fragment de contenu ou d’expérience mis à jour, dépubliez explicitement la publication et publiez les formulaires adaptatifs qui utilisent ces ressources.
+Après avoir publié un fragment de contenu ou d’expérience mis à jour, dépubliez et publiez explicitement les formulaires adaptatifs qui utilisent ces ressources.
 
 ### Seule la première instance d’un formulaire adaptatif est mise en cache {#only-first-insatnce-of-adptive-forms-is-cached}
 

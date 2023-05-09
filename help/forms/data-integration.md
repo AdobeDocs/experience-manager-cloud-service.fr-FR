@@ -6,7 +6,7 @@ exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 100%
+ht-degree: 74%
 
 ---
 
@@ -14,11 +14,11 @@ ht-degree: 100%
 
 ![Intégration de données](do-not-localize/data-integeration.png)
 
-Les infrastructures d’entreprise comprennent des systèmes principaux ou des sources de données telles que des bases de données, des services Web, des services REST, des services OData et des solutions CRM. Associés, ils constituent un système d’informations qui fournit des données aux applications d’entreprise pour effectuer les activités quotidiennes. En revanche, les applications capturent des données et les renvoient pour mettre à jour les sources de données.
+Les infrastructures d’entreprise comprennent des systèmes principaux ou des sources de données disparates comme des bases de données, des services web, des services REST, des services OData et des solutions de gestion de la relation client. Ensemble, ils créent un système d’information qui fournit des données aux applications d’entreprise pour effectuer des tâches quotidiennes. D’un autre côté, les applications capturent les données et les renvoient pour mettre à jour les sources de données.
 
 Les applications [!DNL AEM Forms] telles que les formulaires adaptatifs et les communications interactives nécessitent l’intégration à des sources de données à des fins de récupération des données client lors du rendu des formulaires et la création de communications interactives. Il existe des cas d’utilisation dans lesquels les données sont extraites de sources de données en fonction des entrées utilisateur dans les formulaires adaptatifs. De plus, les données de formulaire adaptatif envoyées peuvent être réécrites pour mettre à jour les sources de données respectives.
 
-Alors qu’un système modulaire distribué a des avantages propres, le défi consiste à intégrer et créer des associations de données dans plusieurs sources de données. L’intégration des données est essentielle au fonctionnement et à l’efficacité d’une infrastructure d’entreprise avec des sources de données distinctes connectées à des applications à des fins d’échange des données d’entreprise.
+Bien qu’un système modulaire et distribué présente ses propres avantages, le défi consiste à intégrer et à créer des associations de données entre les sources de données. L’intégration des données est la clé d’une infrastructure d’entreprise fonctionnelle et efficace avec des sources de données disparates connectées aux applications d’échange de données commerciales.
 
 ## Aperçu de l’intégration de données {#data-integration-overview}
 
@@ -26,8 +26,8 @@ Alors qu’un système modulaire distribué a des avantages propres, le défi co
 
 L’intégration de données [!DNL AEM Forms] permet de configurer et de connecter des sources de données disparates à [!DNL AEM Forms]. Elle fournit une interface utilisateur intuitive qui permet de créer un schéma de représentation de données unifiée des entités d’entreprise dans les sources de données connectées. La représentation unifiée est appelée modèle de données de formulaire, qui est une extension du schéma JSON. Les entités d’un modèle de données de formulaire sont appelées objets de modèle de données. Un modèle de données de formulaire vous permet d’effectuer les opérations suivantes :
 
-* Accédez aux objets de modèle de données, aux propriétés et aux services à partir de sources de données connectées.
-* Créez des objets et des propriétés de modèle de données personnalisés.
+* Accédez aux objets, aux propriétés et aux services du modèle de données à partir de sources de données connectées.
+* Création d’objets et de propriétés de modèle de données personnalisés
 * Créez des associations entre les objets de modèle de données dans et entre les sources de données.
 * Appelez les services d’objet de modèle de données pour interroger ou écrire des données vers et depuis des sources de données.
 
@@ -42,9 +42,9 @@ Une fois que vous avez créé un modèle de données de formulaire, vous pouvez 
 
 La première étape de l’implémentation de l’intégration de données consiste à identifier et à configurer les sources de données qui stockent les informations que vous souhaitez exploiter dans les formulaires adaptatifs et les cas d’utilisation de communications interactives. Ensuite, vous créez un modèle de données de formulaire qui utilise un objet, des propriétés et des services de modèle de données provenant d’une ou de plusieurs sources de données. Vous pouvez créer des formulaires adaptatifs et des communications interactives basés sur un modèle de données de formulaire dans lequel les champs de formulaire adaptatif ou les espaces réservés dans les communications interactives sont liés aux propriétés de source de données respectives.
 
-[!DNL AEM Forms] vous permet également de créer un modèle de données de formulaire indépendant des sources de données et d’associer ou de lier des objets et des propriétés de modèle de données dans le modèle de données de formulaire à la source de données ultérieurement. Il élimine les dépendances sur les sources de données lorsque vous travaillez sur un modèle de données de formulaire.
+[!DNL AEM Forms] vous permet également de créer un modèle de données de formulaire indépendant des sources de données et d’associer ou de lier des objets et des propriétés de modèle de données dans le modèle de données de formulaire à la source de données ultérieurement. Cela élimine toute dépendance aux sources de données lorsque vous travaillez sur un modèle de données de formulaire.
 
-Examinez les éléments suivants pour commencer, comprendre et implémenter l’intégration de données.
+Consultez les sections suivantes pour commencer, comprendre et mettre en oeuvre l’intégration des données.
 
 * [Configuration des sources de données](configure-data-sources.md)
 * [Création d’un modèle de données de formulaire](create-form-data-models.md)

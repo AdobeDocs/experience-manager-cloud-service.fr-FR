@@ -91,7 +91,7 @@ La solution consiste à ajouter un script de [configuration RepositoryInitialize
 
 Dans l’exemple d’erreur précédent, le package `myapp-base.ui.content-*.zip` inclut le contenu situé sous `/conf` et `/var/workflow`. Pour que le déploiement réussisse, les autorisations pour le `sling-distribution-importer` sous ces chemins d’accès est nécessaire.
 
-Voici un exemple [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) de configuration OSGi qui permet d’ajouter des autorisations supplémentaires pour l’utilisateur `sling-distribution-importer`. Cette configuration ajoute des autorisations sous `/var`. Une telle configuration doit être ajoutée au module d’application sous `/apps/myapp/config` (où myapp est le dossier dans lequel le code de votre application est stocké).
+Voici un exemple [`org.apache.sling.jcr.repoinit.RepositoryInitializer-DistributionService.config`](https://github.com/cqsupport/cloud-manager/blob/main/org.apache.sling.jcr.repoinit.RepositoryInitializer-distribution.config) de configuration OSGi qui permet d’ajouter des autorisations supplémentaires pour l’utilisateur `sling-distribution-importer`. Cette configuration ajoute des autorisations sous `/var`. Une telle configuration doit être ajoutée au package d’application sous `/apps/myapp/config` (où myapp est le dossier dans lequel le code de votre application est stocké).
 
 ## Mon déploiement de Cloud Manager échoue à l’étape de déploiement dans AEM as a Cloud Service et j’ai déjà ajouté une configuration OSGi RepositoryInitializer. Que puis-je faire d’autre ? {#build-failures}
 

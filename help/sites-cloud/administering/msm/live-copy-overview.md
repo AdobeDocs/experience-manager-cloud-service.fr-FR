@@ -7,7 +7,7 @@ exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -46,10 +46,10 @@ L’**aperçu de la Live Copy** peut être ouvert via le panneau latéral **Ré
 
 ### Propriétés d’une page de plan directeur {#properties-of-a-blueprint-page}
 
-L’**aperçu de la Live Copy** peut être ouvert lorsque lors de l’affichage des propriétés d’une page de plan directeur :
+Le **Présentation de la Live Copy** peut être ouvert lors de l’affichage des propriétés d’une page de plan directeur :
 
 1. Ouvrir **Propriétés** pour la page de plan directeur appropriée.
-1. Ouvrez l’onglet **Plan directeur** ; l’option **Aperçu de la Live Copy** apparaît dans la barre d’outils supérieure :
+1. Ouvrez le **Blueprint** tab - **Présentation de la Live Copy** s’affiche dans la barre d’outils supérieure :
 
    ![Onglet Propriétés du plan directeur](../assets/live-copy-blueprint-tab.png)
 

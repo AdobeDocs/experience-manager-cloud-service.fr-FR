@@ -2,8 +2,8 @@
 title: Configuration du projet
 description: Découvrez comment les projets AEM sont créés avec Maven et les normes que vous devez respecter lors de la création de votre propre projet.
 exl-id: 76af0171-8ed5-4fc7-b5d5-7da5a1a06fa8
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+workflow-type: tm+mt
 source-wordcount: '1415'
 ht-degree: 100%
 
@@ -238,13 +238,13 @@ Pour ce faire, configurez le plug-in maven-assembly dans votre projet.
          </plugin>
 ```
 
-## Omission des modules de contenu {#skipping-content-packages}
+## Ignorer les packages de contenu {#skipping-content-packages}
 
-Dans Cloud Manager, chaque build peut produire un certain nombre de modules de contenu. Pour diverses raisons, il peut être préférable de produire un module de contenu, mais de ne pas le déployer, par exemple, lors de la création de modules de contenu utilisés uniquement à des fins de test ou qui seront recompilés lors d’une autre étape du processus de build, c’est-à-dire sous la forme d’un sous-module d’un autre module.
+Dans Cloud Manager, chaque compilation peut produire un certain nombre de packages de contenu. Pour diverses raisons, il peut être préférable de produire un package de contenu, mais de ne pas le déployer, par exemple, lors de la création de packages de contenu utilisés uniquement à des fins de test ou qui seront recompilés lors d’une autre étape du processus de build, c’est-à-dire sous la forme d’un sous-package d’un autre package.
 
-Pour tenir compte de ces scénarios, Cloud Manager recherche une propriété nommée `cloudManagerTarget` dans les propriétés des modules de contenu créés. Si cette propriété est définie sur `none`, le module sera ignoré et non déployé.
+Pour tenir compte de ces scénarios, Cloud Manager recherche une propriété nommée `cloudManagerTarget` dans les propriétés des packages de contenu créés. Si cette propriété est définie sur `none`, le package est ignoré et n’est pas déployé.
 
-Le mécanisme permettant de définir cette propriété dépend de la manière dont le build produit le module de contenu. Par exemple, avec le `filevault-maven-plugin`, vous devez configurer le plug-in de la manière suivante. 
+Le mécanisme permettant de définir cette propriété dépend de la manière dont le build produit le package de contenu. Par exemple, avec le `filevault-maven-plugin`, vous devez configurer le plug-in de la manière suivante. 
 
 ```xml
         <plugin>
@@ -282,7 +282,7 @@ Dans de nombreux cas, le même code est déployé dans plusieurs environnements 
 
 Lorsqu’une exécution est lancée, la validation HEAD en cours pour le pipeline de branche est extraite. Le hachage de validation est visible dans l’interface utilisateur et via l’API. Une fois l’étape de build terminée, les artefacts obtenus sont stockés en fonction de ce hachage de validation et peuvent être réutilisés dans les exécutions ultérieures du pipeline.
 
-Les packages sont réutilisés sur plusieurs pipelines s’ils se trouvent dans le même programme. Lorsque vous recherchez des modules qui peuvent être réutilisés, AEM ignore les branches et réutilise les artefacts entre les branches.
+Les packages sont réutilisés sur plusieurs pipelines s’ils se trouvent dans le même programme. Lorsque vous recherchez des packages qui peuvent être réutilisés, AEM ignore les branches et réutilise les artefacts entre les branches.
 
 En cas de réutilisation, les étapes de build et de qualité du code sont effectivement remplacées par les résultats de l’exécution initiale. Le fichier journal de l’étape de build répertorie les artefacts et les informations d’exécution qui ont été utilisés pour les créer à lʼorigine.
 
@@ -307,8 +307,8 @@ Partez du principe que votre programme comporte deux pipelines de développement
 
 Les deux branches utilisent le même identifiant de validation.
 
-1. L’exécution du pipeline 1 commence par générer les modules normalement.
-1. Ensuite, l’exécution du pipeline 2 réutilisera les modules créés par le pipeline 1.
+1. L’exécution du pipeline 1 commence par générer les packages normalement.
+1. Ensuite, l’exécution du pipeline 2 réutilisera les packages créés par le pipeline 1.
 
 #### Exemple 2 {#example-2}
 

@@ -5,7 +5,7 @@ exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ Les composants peuvent être adaptés pour générer l’exportation JSON de leu
 
 L’exportation JSON est basée sur des [modèles Sling](https://sling.apache.org/documentation/bundles/models.html) et sur le framework d’[exportation des modèles Sling](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (lequel s’appuie lui-même sur des [annotations Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations)).
 
-Cela signifie que le composant doit avoir un modèle Sling pour effectuer une exportation JSON. Par conséquent, vous devez suivre ces deux étapes pour activer l’exportation JSON des composants.
+Cela signifie que le composant doit disposer d’un modèle Sling s’il doit exporter du code JSON. Par conséquent, vous devrez suivre ces deux étapes pour activer l’exportation JSON sur n’importe quel composant.
 
 * [Définition d’un modèle Sling pour le composant](#define-a-sling-model-for-the-component)
 * [Annotation de l’interface du modèle Sling](#annotate-the-sling-model-interface)
@@ -44,7 +44,7 @@ En outre, cela indique que la classe de modèles Sling peut être adaptée dans 
 
 >[!NOTE]
 >
->Les annotations Jackson ne sont généralement pas spécifiées au niveau de la classe de modèles Sling, mais plutôt au niveau de l’interface de modèle. Cela permet de vérifier que l’exportation JSON est considérée comme faisant partie de l’API du composant.
+>Les annotations Jackson ne sont généralement pas spécifiées au niveau de la classe de modèles Sling, mais plutôt au niveau de l’interface de modèle. Cela permet de s’assurer que l’exportation JSON est considérée comme faisant partie de l’API du composant.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Pour être prise en compte par le framework de l’exportateur JSON, l’interfa
 
 L’interface de modèle Sling correspondante (`MyComponent`) est alors marquée avec les [annotations Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) pour définir la manière dont les méthodes doivent être exportées (sérialisées).
 
-L’interface de modèle doit être correctement annotée afin de définir les méthodes qui doivent être sérialisées. Par défaut, on attribue un numéro de série à toutes les méthodes qui respectent la convention de dénomination habituelle pour des getters. En outre, leurs noms de propriétés JSON sont naturellement dérivés des noms des getters. Cela peut être évité en utilisant `@JsonIgnore` ou `@JsonProperty` pour renommer la propriété JSON.
+L’interface de modèle doit être correctement annotée pour définir les méthodes à sérialiser. Par défaut, on attribue un numéro de série à toutes les méthodes qui respectent la convention de dénomination habituelle pour des getters. En outre, leurs noms de propriétés JSON sont naturellement dérivés des noms des getters. Cela peut être évité en utilisant `@JsonIgnore` ou `@JsonProperty` pour renommer la propriété JSON.
 
 ## Exemple {#example}
 
@@ -81,4 +81,4 @@ Pour plus d’informations, voir :
 * [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 * [Création à l’aide de fragments de contenu](/help/sites-cloud/authoring/fundamentals/content-fragments.md)
-* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)
+* [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et [composant Fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr)

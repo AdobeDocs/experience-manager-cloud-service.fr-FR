@@ -1,28 +1,28 @@
 ---
 title: Mise en page réactive
-description: AEM permet de réaliser une mise en page réactive pour vos pages
+description: AEM permet de créer une mise en page réactive pour vos pages.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '1766'
-ht-degree: 100%
+ht-degree: 73%
 
 ---
 
 # Mise en page réactive {#responsive-layout}
 
-AEM permet de réaliser une mise en page réactive pour vos pages à l’aide du composant **Conteneur de mises en page**.
+AEM permet d’avoir une mise en page réactive pour vos pages à l’aide de la fonction **Conteneur de mises en page** composant.
 
-Vous obtenez ainsi un système de paragraphes qui permet de positionner les composants dans une grille réactive. Cette grille peut réorganiser la mise en page selon l’appareil ou la taille de la fenêtre et le format. Le composant est utilisé avec le mode [**Mise en page**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), ce qui permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
+Vous disposez ainsi d’un système de paragraphes qui vous permet de positionner les composants dans une grille réactive. Cette grille peut réorganiser la mise en page en fonction de l’appareil/de la taille de fenêtre et du format. Le composant est utilisé avec le mode [**Mise en page**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), ce qui permet de créer et de modifier votre mise en page réactive en fonction de l’appareil.
 
-Le conteneur de mises en page présente les caractéristiques suivantes :
+Conteneur de mises en page :
 
-* Il permet un alignement horizontal sur la grille et offre aussi la possibilité de placer les composants côte à côte dans la grille et de définir quand ils doivent être réduits ou développés.
+* Permet un alignement horizontal sur la grille, ainsi que la possibilité de placer côte à côte les composants dans la grille et de définir quand ils doivent être réduits/développés.
 * Il utilise des points d’arrêt prédéfinis (pour téléphone ou tablette, par exemple) pour que vous puissiez définir le comportement du contenu pour l’orientation ou les appareils associés.
-   * Vous pouvez par exemple personnaliser la taille du composant ou spécifier si le composant doit être affiché ou non sur des appareils spécifiques.
-* Il peut être imbriqué pour permettre le contrôle des colonnes.
+   * Par exemple, vous pouvez personnaliser la taille du composant ou si le composant peut être affiché sur des appareils spécifiques.
+* Peut être imbriqué pour permettre le contrôle des colonnes.
 
-L’utilisateur peut ensuite afficher un aperçu du contenu pour des appareils spécifiques à l’aide de l’émulateur.
+L’utilisateur peut ensuite afficher le rendu du contenu pour des appareils spécifiques à l’aide de l’émulateur.
 
 AEM effectue une mise en page réactive de vos pages en combinant plusieurs mécanismes :
 
@@ -37,9 +37,9 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 * [**Émulateur**](#selecting-a-device-to-emulate)
 Permet de créer et de modifier des sites web réactifs qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
 
-À l’aide de ces mécanismes de grille réactive, vous pouvez effectuer les opérations suivantes :
+Grâce à ces mécanismes de grille réactive, vous pouvez :
 
-* utiliser des points d’arrêt pour définir différentes mises en page en fonction de la largeur d’appareil (associée au type d’appareil et à l’orientation) ;
+* Utilisez des points d’arrêt pour définir différentes mises en page de contenu en fonction de la largeur de l’appareil (en fonction du type et de l’orientation de l’appareil).
 * utiliser ces points d’arrêt et les mises en page de contenu pour veiller à ce que le contenu s’ajuste à la taille de la fenêtre du navigateur sur le poste de travail ;
 * utiliser l’alignement horizontal sur la grille, ce qui permet de placer les composants dans la grille, de les redimensionner selon les besoins et de définir quand ils doivent être réduits ou développés pour être côte à côte ou l’un au-dessus de l’autre ;
 * masquer des composants pour des mises en page spécifiques à certains appareils ;
@@ -61,7 +61,7 @@ Lorsque vous créez le contenu de votre site web, vous voulez être certain que 
 
 Dans AEM, vous pouvez définir des mises en page qui dépendent de la largeur de l’appareil :
 
-* L’émulateur permet d’émuler ces mises en page sur divers appareils. Tout comme le type d’appareil, l’orientation, qui est sélectionnée à l’aide de l’option **Rotation du périphérique**, peut avoir une incidence sur le point d’arrêt sélectionné lors du changement de largeur.
+* L’émulateur vous permet d’émuler ces mises en page sur divers appareils. Tout comme le type d’appareil, l’orientation, qui est sélectionnée à l’aide de l’option **Rotation du périphérique**, peut avoir une incidence sur le point d’arrêt sélectionné lors du changement de largeur.
 * Les points d’arrêt sont des points qui séparent les définitions de mise en page.
    * Ils définissent la largeur maximale (en pixels) de n’importe quel appareil à l’aide d’une mise en page spécifique.
    * Les points d’arrêt sont généralement valides pour plusieurs appareils en fonction de la largeur de leur écran.
@@ -74,9 +74,9 @@ L’appareil **Bureau**, qui ne possède pas de largeur spécifique, est associ�
 >
 >Il est possible de définir des points d’arrêt pour chaque appareil, mais cela augmenterait la charge de travail requise pour la définition des mises en page et la maintenance.
 
-Lorsque vous sélectionnez, à l’aide de l’émulateur, un appareil spécifique pour l’émulation et la définition de la mise en page, le point d’arrêt associé est également sélectionné. Toute modification de mise en page est applicable aux appareils auxquels s’applique le point d’arrêt (c.-à-d. les appareils placés à gauche du marqueur du point d’arrêt actif, mais avant le marqueur du point d’arrêt suivant).
+Lors de l’utilisation de l’émulateur, vous sélectionnez un appareil spécifique pour l’émulation et la définition de mise en page. Le point d’arrêt associé est également mis en surbrillance. Toute modification de mise en page que vous apportez sera applicable aux autres appareils auxquels s’applique le point d’arrêt, c’est-à-dire aux appareils situés à gauche du marqueur de point d’arrêt principal, mais avant le marqueur de point d’arrêt suivant.
 
-Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défini avec une largeur de 540 pixels) pour l’émulation et la mise en page, le point d’arrêt **Téléphone** (défini à 768 pixels) est également activé. Toute modification de mise en page apportée à l’appareil **iPhone 6** est applicable aux autres appareils sous le point d’arrêt **Téléphone**, tels que l’**iPhone 5** (défini à 320 pixels).
+Par exemple, lorsque vous sélectionnez le périphérique **iPhone 6 Plus** (défini avec une largeur de 540 pixels) pour l’émulation et la mise en page, le point d’arrêt **Téléphone** (défini sur 768 pixels) sera également activé. Toutes les modifications apportées à la mise en page pour le **iPhone 6** s’applique à d’autres périphériques sous **Téléphone** point d’arrêt, tel que **iPhone 5** (définie sur 320 pixels).
 
 ![Émulateurs](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
 
@@ -105,7 +105,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    ![Bouton Sélectionner un périphérique](/help/sites-cloud/authoring/assets/responsive-layout-select-device-button.png)
 
-1. Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :
+1. Pour sélectionner un appareil spécifique à émuler, vous pouvez effectuer l’une des opérations suivantes :
 
    * utiliser l’icône Sélectionner un périphérique et sélectionner l’appareil dans la liste déroulante ;
    * appuyer ou cliquer sur l’indicateur de l’appareil dans la barre d’outils de l’émulateur.
@@ -120,7 +120,7 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 
    ![Le pli](/help/sites-cloud/authoring/assets/responsive-layout-fold.png)
 
-   * Le pli peut également être considéré comme le saut de ligne dans la page (à ne pas confondre avec les [points d’arrêt](#layout-definitions-device-emulation-and-breakpoints)) pour le contenu. Il est affiché à titre de référence pour indiquer quelle partie du contenu l’utilisateur verra sur son appareil avant de faire défiler.
+   * Le pli peut également être considéré comme un saut de ligne de page (à ne pas confondre avec le [points d’arrêt](#layout-definitions-device-emulation-and-breakpoints)) pour le contenu. Il est affiché à des fins pratiques pour indiquer la partie du contenu que l’utilisateur verra sur l’appareil avant de faire défiler l’écran.
    * La ligne du pli ne s’affiche pas si la hauteur de l’appareil émulé est supérieure à la taille de l’écran.
    * Le pli est affiché pour faciliter le travail de l’auteur et n’apparaît pas sur la page publiée.
 
@@ -130,8 +130,8 @@ Par exemple, lorsque vous sélectionnez l’appareil **iPhone 6 Plus** (défin
 Un **conteneur de mises en page** est un système de paragraphes qui présente les caractéristiques suivantes :
 
 * Il contient d’autres composants.
-* Il définit la mise en page.
-* Il est réactif face aux modifications.
+* Définit la mise en page.
+* Répond aux modifications.
 
 >[!NOTE]
 >
@@ -148,9 +148,9 @@ Un **conteneur de mises en page** est un système de paragraphes qui présente l
 
 >[!CAUTION]
 >
->Un conteneur de mises en page étant un système de paragraphes, sa suppression entraîne celle de la grille de mise en page et de tous les composants (et de leur contenu) qu’il contient.
+>Un conteneur de mises en page étant un système de paragraphes, la suppression du composant entraîne la suppression de la grille de mise en page et de tous les composants (ainsi que de leur contenu) qu’il contient.
 
-1. Si vous pointez ou appuyez sur l’espace réservé de la grille, le menu Action s’affiche.
+1. Si vous pointez ou appuyez sur l’espace réservé de la grille, le menu d’actions s’affiche.
 
    ![Ajout au conteneur de mises en page](/help/sites-cloud/authoring/assets/responsive-layout-container.png)
 
@@ -158,9 +158,9 @@ Un **conteneur de mises en page** est un système de paragraphes qui présente l
 
    ![Bouton Parent](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-1. Si le composant de mise en page est imbriqué, sélectionnez l’option **Parent** pour afficher une liste déroulante et sélectionner le conteneur de mises en page imbriqué, ou son ou ses parents.
+1. Si le composant de mise en page est imbriqué, sélectionnez l’option **Parent** présente une sélection déroulante, ce qui vous permet de sélectionner le conteneur de mises en page imbriqué ou ses parents.
 
-   Lorsque vous pointez sur le nom d’un conteneur dans la liste déroulante, ses contours s’affichent sur la page.
+   Lorsque vous placez le pointeur de la souris sur les noms de conteneur dans la liste déroulante, leurs contours s’affichent sur la page.
 
    * Les contours du conteneur de mises en page imbriqué du plus bas niveau s’affichent en bleu.
    * Les contours de chaque conteneur successif s’affichent dans une nuance de bleu plus claire.
@@ -182,8 +182,8 @@ Le mode **Mise en page** peut être activé de deux façons.
 * À l’aide du [menu de mode de la barre d’outils](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), en sélectionnant le mode **Mise en page**.
    * Sélectionnez le mode **Mise en page** de la même façon que vous passeriez en mode **Édition** ou en mode **Ciblage**.
    * Le mode **Mise en page** est un **mode** persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.
-* Lors de la [modification d’un composant individuel.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
-   * L’option **Mise en page** du menu Actions rapides du composant permet de passer au mode **Mise en page**.
+* When [modification d’un composant individuel.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+   * En utilisant la variable **Disposition** dans le menu d’actions rapides du composant, vous pouvez passer à **Disposition** mode .
    * Le mode **Mise en page** persiste pendant la modification du composant et bascule vers le mode d’**édition** lorsqu’un autre composant est sélectionné.
 
 Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses actions sur une grille :
@@ -203,9 +203,9 @@ Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses acti
 
    ![Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils pour ce mode s’affiche.
+* En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils de ce mode s’affiche.
 
-   La barre d’outils propose des options différentes selon l’état du composant de mise en page et des composants associés. Par exemple :
+   La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
 
    * **Parent** : permet de sélectionner le composant parent.
 

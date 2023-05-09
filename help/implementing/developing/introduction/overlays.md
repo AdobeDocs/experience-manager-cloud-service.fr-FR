@@ -5,7 +5,7 @@ exl-id: 24bdb1a9-6d77-43c7-a75e-28e6e0fd7608
 source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ Dans une instance standard, la fonctionnalité prédéfinie est conservée sous 
 
 >[!CAUTION]
 >
->[Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) et les méthodes connexes ne peuvent être utilisées qu’avec [Granite](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Cela signifie que la création d’un recouvrement avec une ossature n’est appropriée que pour l’interface utilisateur (IU) tactile standard.
+>Le [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md) et les méthodes associées ne peuvent être utilisées qu’avec [Granite](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). Cela signifie que la création d’un recouvrement avec une ossature n’est appropriée que pour l’interface utilisateur (IU) tactile standard.
 
 Il est conseillé de recourir aux recouvrements pour de nombreuses modifications ; par exemple, pour configurer vos consoles ou créer votre catégorie de sélection dans l’explorateur de ressources au niveau du panneau latéral (utilisé lors de la création de pages). Elles sont requises pour les raisons suivantes :
 

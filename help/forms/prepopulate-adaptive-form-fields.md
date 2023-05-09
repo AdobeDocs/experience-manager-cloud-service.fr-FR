@@ -9,7 +9,7 @@ exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
 source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
 workflow-type: tm+mt
 source-wordcount: '1948'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -128,7 +128,7 @@ Pour les champs dont le modèle est le schéma XML, les données sont remplies d
 
 >[!NOTE]
 >
->Il est recommandé de ne pas utiliser de champs non liés dans les panneaux liés (panneaux avec une valeur `bindRef` non vide qui ont été créés en faisant glisser des composants depuis le Sidekick ou l’onglet Sources de données). Cela peut entraîner une perte des données de ces champs non liés. Il est également recommandé que les noms des champs soient uniques dans le formulaire, notamment pour les champs non liés.
+>Il est recommandé de ne pas utiliser de champs non liés dans les panneaux liés (panneaux avec une valeur `bindRef` non vide qui ont été créés en faisant glisser des composants depuis le Sidekick ou l’onglet Sources de données). Cela peut entraîner la perte de données de ces champs non liés. En outre, il est recommandé que les noms des champs soient uniques dans le formulaire, en particulier pour les champs non liés.
 
 #### Exemple sans wrapper afData et afBoundData {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -199,15 +199,15 @@ Voici un exemple sans le wrapper `afData/afBoundData` :
 
 >[!NOTE]
 >
-> L’utilisation de champs non liés dans les panneaux liés (panneaux avec une valeur bindRef non vides qui ont été créés en faisant glisser des composants du Sidekick ou de l’onglet Sources de données) n’est **pas** recommandée car elle peut entraîner une perte de données des champs non liés. Il est recommandé d’utiliser des noms de champs uniques dans le formulaire, notamment pour les champs non liés.
+> L’utilisation de champs non liés dans les panneaux liés (panneaux avec une valeur bindRef non vides qui ont été créés en faisant glisser des composants depuis le sidekick ou l’onglet Sources de données) est **not** recommandé, car il peut entraîner une perte de données des champs non liés. Il est recommandé d’utiliser des noms de champs uniques dans le formulaire, notamment pour les champs non liés.
 
 ### Formulaire adaptatif sans modèle de formulaire {#adaptive-form-with-no-form-model}
 
 Pour les formulaires adaptatifs sans modèle de formulaire, les données de tous les champs se trouveront sous l’onglet `<data>` de la balise `<afUnboundData> tag`.
 
-Prenez également en compte les points suivants :
+Notez également les points suivants :
 
-Les balises XML des données utilisateur envoyées pour différents champs sont générées avec le nom des champs. Par conséquent, les noms des champs doivent être uniques.
+Les balises XML des données utilisateur envoyées pour différents champs sont générées à l’aide du nom des champs. Par conséquent, les noms des champs doivent être uniques.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?><afData>
@@ -245,7 +245,7 @@ Pour définir les valeurs d’une configuration, [générez des configurations O
 >[!NOTE]
 >
 > - Par défaut, le préremplissage est autorisé via les fichiers crx pour tous les types de formulaires adaptatifs (XSD, XDP, JSON, FDM et non basé sur un modèle de formulaire). Le préremplissage est autorisé uniquement avec les fichiers XML et JSON.
-> - Le protocole crx s’occupe de la sécurité des données préremplies et par conséquent, est activé par défaut. Le préremplissage par le biais d’autres protocoles à l’aide de l’expression regex peut entraîner une vulnérabilité. Dans la configuration, spécifiez une configuration d’URL sécurisée pour protéger vos données.
+> - Le protocole crx s’occupe de la sécurité des données préremplies et par conséquent, est activé par défaut. Le préremplissage via d’autres protocoles à l’aide d’une expression régulière générique peut entraîner une vulnérabilité. Dans la configuration, spécifiez une configuration d’URL sécurisée pour protéger vos données.
 
 
 ## Cas étrange des panneaux répétables {#the-curious-case-of-repeatable-panels}
@@ -257,7 +257,7 @@ En règle générale, les champs liés (schéma de formulaire) et non liés sont
 
 >[!NOTE]
 >
-> En règle générale, vous ne devez pas mélanger de champs liés et non liés s’ils sont recoupés dans les données remplies dans les champs non liés par l’utilisateur final. Si possible, vous devez modifier le schéma ou le modèle de formulaire XFA et ajouter une entrée pour les champs non liés pour qu’ils deviennent également liés et que ses données soient disponibles comme tout autre champ dans les données envoyées.
+> En règle générale, ne mélangez pas les champs liés et non liés s’ils sont recoupés dans des données remplies par l’utilisateur final dans des champs non liés. Si possible, vous devez modifier le schéma ou le modèle de formulaire XFA et ajouter une entrée pour les champs non liés, de sorte qu’il devienne également lié et que ses données soient disponibles comme d’autres champs dans les données envoyées.
 
 ## Protocoles pris en charge pour le préremplissage des données utilisateur {#supported-protocols-for-prefilling-user-data}
 
@@ -293,7 +293,7 @@ https://`servername`/content/forms/af/abc.html?wcmmode=disabled&dataRef=service:
 ```
 
 - SERVICE_NAME fait référence au nom du service de préremplissage OSGI. Voir [Création et exécution d’un service de préremplissage](prepopulate-adaptive-form-fields.md#create-and-run-a-prefill-service).
-- IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant à l’utilisateur connecté est un exemple de métadonnées qui pourraient être utilisées.
+- IDENTIFIER fait référence à toutes les métadonnées requises par le service de préremplissage OSGI pour récupérer les données de préremplissage. Un identifiant de l’utilisateur connecté est un exemple de métadonnées qui peut être utilisé.
 
 >[!NOTE]
 >
@@ -319,9 +319,9 @@ Vous pouvez également définir l’attribut `data` dans `slingRequest`, où l�
 %>
 ```
 
-Vous pouvez écrire une chaîne XML ou JSON simple contenant toutes les données et la définir dans slingRequest. Cette opération peut facilement être effectuée dans le JSP de rendu pour tout composant que vous souhaitez inclure dans la page où vous pouvez définir l’attribut data slingRequest.
+Vous pouvez écrire une chaîne XML ou JSON simple contenant toutes vos données et la définir dans slingRequest. Vous pouvez facilement le faire dans votre JSP de rendu pour tout composant que vous souhaitez inclure dans la page où vous pouvez définir l’attribut data slingRequest .
 
-Imaginons que vous souhaitez une conception spécifique pour votre page avec un type spécifique d’en-tête. Pour obtenir ce résultat, vous pouvez écrire votre propre fichier `header.jsp` à inclure dans votre composant de page et définir l’attribut.`data`
+Par exemple, lorsque vous souhaitez une conception spécifique pour votre page avec un type spécifique d’en-tête. Pour obtenir ce résultat, vous pouvez écrire votre propre fichier `header.jsp` à inclure dans votre composant de page et définir l’attribut.`data`
 
 Prenons un autre bon exemple dans lequel vous souhaitez préremplir les données à la connexion par le biais de comptes de réseau social tels que Facebook, Twitter ou LinkedIn. Dans ce cas, vous pouvez inclure un JSP simple dans `header.jsp` qui récupère les données du compte d’utilisateur et définit le paramètre data.
 
@@ -347,10 +347,10 @@ Le service de préremplissage est un service OSGi et fait partie du bundle OSGi.
 
 #### Création d’un service de préremplissage {#create-a-prefill-service}
 
-Le package standard (exemple de package de services de préremplissage) contient un exemple d’implémentation du service de préremplissage d’[!DNL AEM Forms]. Ouvrez le package standard dans un éditeur de code. Par exemple, ouvrez le projet standard dans Eclipse pour le modifier. Une fois le package standard ouvert dans un éditeur de code, procédez comme suit pour créer le service.
+Le package standard (exemple de package de services de préremplissage) contient un exemple d’implémentation du service de préremplissage d’[!DNL AEM Forms]. Ouvrez le package standard dans un éditeur de code. Par exemple, ouvrez le projet standard dans Eclipse pour le modifier. Après avoir ouvert le package standard dans un éditeur de code, procédez comme suit pour créer le service.
 
 1. Ouvrez le fichier src\main\java\com\adobe\test\Prefill.java pour le modifier.
-1. Dans le code, définissez la valeur de :
+1. Dans le code, définissez la valeur de :
 
    - `nodePath:` la variable de chemin de nœud pointant vers l’emplacement du référentiel crx contient le chemin du fichier (de préremplissage) de données. Par exemple, /content/prefilldata.xml
    - `label:` le paramètre label spécifie le nom d’affichage du service. Par exemple, service de préremplissage par défaut

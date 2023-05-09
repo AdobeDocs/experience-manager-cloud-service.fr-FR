@@ -5,7 +5,7 @@ exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
 source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
 workflow-type: tm+mt
 source-wordcount: '575'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -23,7 +23,7 @@ Pour répondre aux erreurs, AEM fournit un script `404.jsp` sous `/libs/sling/se
 
 >[!NOTE]
 >
->Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/implementing/deploying/configuring-osgi.md) est activé par défaut. Cela donne toujours comme résultat le code de réponse 200. Le gestionnaire d’erreurs par défaut répond en écrivant la trace de pile complète sur la réponse.
+>Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/implementing/deploying/configuring-osgi.md) est activé par défaut. Le code de réponse est toujours 200. Le gestionnaire d’erreur par défaut répond en écrivant la trace de pile complète à la réponse.
 >
 >Sur une instance de publication, le filtre de débogage de la gestion du contenu web CQ est **toujours** désactivé (même s’il est configuré comme étant activé).
 
@@ -75,7 +75,7 @@ Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire
 
 >[!CAUTION]
 >
->Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/implementing/deploying/configuring-osgi.md) est activé par défaut. Cela donne toujours comme résultat le code de réponse 200. Le gestionnaire d’erreurs par défaut répond en écrivant la trace de pile complète sur la réponse.
+>Sur une instance de création, le [filtre de débogage de la gestion du contenu web CQ](/help/implementing/deploying/configuring-osgi.md) est activé par défaut. Le code de réponse est toujours 200. Le gestionnaire d’erreur par défaut répond en écrivant la trace de pile complète à la réponse.
 >
 >Des réponses avec le code 500 sont nécessaires pour un gestionnaire d’erreurs personnalisé. Par conséquent, le [filtre de débogage de la gestion du contenu web CQ doit être désactivé.](/help/implementing/deploying/configuring-osgi.md) Cela garantit le renvoi du code de réponse 500 qui, à son tour, déclenche le gestionnaire d’erreurs Sling approprié.
 >

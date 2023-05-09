@@ -6,7 +6,7 @@ seo-description: You can import and export Adaptive Forms and templates from and
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1325'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -15,13 +15,13 @@ ht-degree: 100%
 
 Vous pouvez déplacer des formulaires, des thèmes, des modèles, des fragments de document, des thèmes et autres ressources entre différentes instances [!DNL AEM Forms]. Ce déplacement est nécessaire lors de la migration des systèmes ou du déplacement des formulaires d’un serveur de développement ou d’évaluation vers un serveur de production.
 
-Pour les ressources pour lesquelles le chargement et l’importation sont pris en charge via l’interface utilisateur [!DNL AEM Forms], l’utilisation de l’interface utilisateur de Forms est recommandée pour l’exportation ou l’importation. L’utilisation du gestionnaire de modules d’AEM pour l’exportation ou l’importation de ces ressources n’est pas recommandée.
+Pour les ressources pour lesquelles le chargement et l’importation sont pris en charge via l’interface utilisateur [!DNL AEM Forms], l’utilisation de l’interface utilisateur de Forms est recommandée pour l’exportation ou l’importation. L’utilisation du gestionnaire de packages d’AEM pour l’exportation ou l’importation de ces ressources n’est pas recommandée.
 
 ## Téléchargement et chargement de ressources de formulaires et documents {#download-or-upload-forms-amp-documents-assets}
 
 L’interface utilisateur de [!DNL AEM Forms] vous permet d’exporter des ressources d’une instance AEM en les téléchargeant sous forme de fichiers binaires ou de package CRX AEM. Vous pouvez ensuite importer le package CRX ou le fichier binaire AEM téléchargé dans une autre instance AEM.
 
-L’exportation et l’importation via l’interface utilisateur [!DNL AEM Forms] sont prises en charge pour toutes les ressources, à l’exception des modèles et des stratégies de contenu de formulaires adaptatifs. Par conséquent, lors de l’exportation d’un formulaire adaptatif depuis l’interface utilisateur [!DNL AEM Forms], le modèle de formulaire adaptatif associé et les stratégies de contenus ne sont pas automatiquement exportés comme d’autres ressources associées.
+L’exportation et l’importation via l’interface utilisateur [!DNL AEM Forms] sont prises en charge pour toutes les ressources, à l’exception des modèles et des politiques de contenu de formulaires adaptatifs. Par conséquent, lors de l’exportation d’un formulaire adaptatif depuis l’interface utilisateur [!DNL AEM Forms], le modèle de formulaire adaptatif associé et les politiques de contenus ne sont pas automatiquement exportés comme d’autres ressources associées.
 
 Pour ces types de ressources, vous devez utiliser le gestionnaire de modules d’AEM pour créer un package CRX sur le serveur AEM source et pour installer le module sur le serveur de destination. Pour plus d’informations sur la création et l’installation de packages, consultez [Déploiement sur AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr).
 
@@ -34,8 +34,8 @@ Pour télécharger des ressources de formulaires et de documents :
 1. Sélectionnez les ressources de formulaires et appuyez sur l’icône **[!UICONTROL Télécharger]**.
 1. Dans la/les ressources de téléchargement, choisissez l’une des options suivantes, puis appuyez sur **[!UICONTROL Télécharger]**.
 
-   * **Télécharger en tant que package CRX :** [!DNL AEM Forms] utilisez l’option pour télécharger et déplacer toutes les ressources sélectionnées et les dépendances connexes d’une instance vers une autre. Toutes les ressources et tous les dossiers sont téléchargés sous forme de package CRX. Toutes les ressources de formulaire, y compris les formulaires créés dans AEM (formulaires adaptatifs et fragments de formulaires adaptatifs), les documents PDF et les ressources (fichiers XSD, XFS et images), peuvent être téléchargés en tant que modules depuis l’interface utilisateur [!DNL AEM Forms].
-L’avantage du téléchargement des ressources sous forme de module est le téléchargement des ressources qui ont été utilisées par la ressource à télécharger. Par exemple, si vous avez un formulaire adaptatif qui utilise un modèle de formulaire, le schéma XSD et l’image. Lorsque vous sélectionnez ce formulaire adaptatif et vous le téléchargez sous forme de module, le module téléchargé contient également le modèle de formulaire, le schéma XSD et l’image. Toutes les propriétés de métadonnées (propriétés personnalisées incluses) associées à la ressource sont également téléchargées.
+   * **Télécharger en tant que package CRX :** [!DNL AEM Forms] utilisez l’option pour télécharger et déplacer toutes les ressources sélectionnées et les dépendances connexes d’une instance vers une autre. Toutes les ressources et tous les dossiers sont téléchargés sous forme de package CRX. Toutes les ressources de formulaire, y compris les formulaires créés dans AEM (formulaires adaptatifs et fragments de formulaires adaptatifs), les documents PDF et les ressources (fichiers XSD, XFS et images), peuvent être téléchargés en tant que packages depuis l’interface utilisateur [!DNL AEM Forms].
+L’avantage du téléchargement des ressources sous forme de package est le téléchargement des ressources qui ont été utilisées par la ressource à télécharger. Par exemple, si vous avez un formulaire adaptatif qui utilise un modèle de formulaire, le schéma XSD et l’image. Lorsque vous sélectionnez ce formulaire adaptatif et vous le téléchargez sous forme de package, le package téléchargé contient également le modèle de formulaire, le schéma XSD et l’image. Toutes les propriétés de métadonnées (propriétés personnalisées incluses) associées à la ressource sont également téléchargées.
 
    * **Télécharger la/les ressources sous forme de fichiers binaires :** utilisez cette option pour télécharger uniquement les modèles de formulaire (XDP), les formulaires PDF (PDF), les documents (PDF) et les ressources (images, schémas, feuilles de style). Vous pouvez modifier ces ressources dans des applications externes. Cette option permet de télécharger les ressources de formulaires qui possèdent des fichiers binaires, telles que des fichiers XSD, XDP, des images, des fichiers PDF et XDP comme un fichier .zip.
 Vous ne pouvez pas télécharger de formulaires adaptatifs, de communications interactives, de fragments de formulaires adaptatifs, de thèmes ni d’ensembles de formulaires avec l’option **[!UICONTROL Télécharger des ressources en tant que fichiers binaires]**. Pour télécharger ces ressources, vous devez utiliser l’option **[!UICONTROL Télécharger sous forme de package CRX]**.
@@ -44,7 +44,7 @@ Vous ne pouvez pas télécharger de formulaires adaptatifs, de communications in
 
    >[!NOTE]
    >
-   >Le module et les fichiers binaires AEM sont téléchargés sous forme d’archive (fichier .zip). Les modèles des ressources ne sont pas téléchargés avec les ressources. Vous devez exporter les modèles des ressources séparément.
+   >Le package et les fichiers binaires AEM sont téléchargés sous forme d’archive (fichier .zip). Les modèles des ressources ne sont pas téléchargés avec les ressources. Vous devez exporter les modèles de ressources séparément.
 
 ### Charger des ressources {#upload-forms-amp-documents-assets}
 
@@ -52,7 +52,7 @@ Pour charger des ressources de formulaires et documents :
 
 1. Connectez-vous à l’instance [!DNL AEM Forms].
 1. Appuyez sur l’icône Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png) > Icône de navigation ![Boussole](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulaires]** > **[!UICONTROL Formulaires et documents]**.
-1. Appuyez sur **Créer** > **Chargement de fichier**. Une boîte de dialogue de téléchargement de formulaires ou de module apparaît.
+1. Appuyez sur **Créer** > **Chargement de fichier**. Une boîte de dialogue de téléchargement de formulaires ou de package apparaît.
 1. Dans la boîte de dialogue, recherchez et sélectionnez le package ou l’archive à importer. Vous pouvez également sélectionner le document PDF, les fichiers XSD, les images, les feuilles de style et les formulaires XDP. Appuyez sur **[!UICONTROL Ouvrir]**. Le dossier ou le nom de fichier que vous sélectionnez ne doit pas contenir de caractères spéciaux.
 
    Dans la boîte de dialogue, vérifiez les détails des ressources en cours de chargement, puis appuyez sur **[!UICONTROL Charger]**.
@@ -61,11 +61,11 @@ Pour charger des ressources de formulaires et documents :
 
    >[!NOTE]
    >
-   >Le téléchargement du module ne remplace pas la hiérarchie des dossiers existante. Par exemple, si vous avez un formulaire adaptatif nommé « Training » à l’emplacement /content/dam/formsanddocuments sur un serveur. Vous téléchargez le formulaire adaptatif et le chargez sur un autre serveur. Le deuxième serveur dispose également d’un dossier nommé « Training » au même emplacement /content/dam/formsanddocuments. Le chargement échoue.
+   >Le téléchargement du package ne remplace pas la hiérarchie des dossiers existante. Par exemple, si vous avez un formulaire adaptatif nommé « Training » à l’emplacement /content/dam/formsanddocuments sur un serveur. Vous téléchargez le formulaire adaptatif et le chargez sur un autre serveur. Le deuxième serveur dispose également d’un dossier nommé « Training » au même emplacement /content/dam/formsanddocuments. Le chargement échoue.
 
 ## Téléchargement ou chargement d’un thème {#downloading-or-uploading-a-theme}
 
-Avec [!DNL AEM Forms], vous pouvez créer, télécharger et charger des thèmes. Un thème est créé comme d’autres ressources tels que les formulaires, les documents et les lettres. Vous pouvez créer un thème, le télécharger, puis le charger sur une instance distincte pour le réutiliser. Pour plus d’informations sur les thèmes, consultez [Thèmes](themes.md) dans [!DNL AEM Forms].
+Avec [!DNL AEM Forms], vous pouvez créer, télécharger et charger des thèmes. Un thème est créé comme d’autres ressources tels que les formulaires, les documents et les lettres. Vous pouvez créer un thème, le télécharger et le charger sur une instance distincte pour le réutiliser. Pour plus d’informations sur les thèmes, consultez [Thèmes](themes.md) dans [!DNL AEM Forms].
 
 ### Téléchargement d’un thème {#downloading-a-theme}
 
@@ -79,13 +79,13 @@ Pour télécharger un thème :
 
 ### Chargement d’un thème {#uploading-a-theme}
 
-Vous pouvez utiliser les thèmes créés avec des paramètres prédéfinis de style sur votre projet. Vous pouvez importer des modules de thème que d’autres créent en les chargeant sur votre projet.
+Vous pouvez utiliser des thèmes créés avec des paramètres prédéfinis de style sur votre projet. Vous pouvez importer des packages de thème que d’autres créent en les chargeant sur votre projet.
 
 Pour charger un thème :
 
 1. Dans Experience Manager, accédez à **[!UICONTROL Formulaires]** > **[!UICONTROL Thèmes de formulaires]**.
 1. Dans la page Thèmes, cliquez sur **[!UICONTROL Créer un formulaire]** > **[!UICONTROL Charger un fichier de formulaire]**.
-1. Dans l’invite de téléchargement de fichier, recherchez et sélectionnez un module de thème sur votre ordinateur et cliquez sur **[!UICONTROL Charger un formulaire]**. Le thème est chargé.
+1. Dans l’invite de téléchargement de fichier, recherchez et sélectionnez un package de thème sur votre ordinateur et cliquez sur **[!UICONTROL Charger un formulaire]**. Le thème est chargé.
 
 <!--
 
@@ -162,17 +162,17 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 ## Exporter une application de workflow {#export-a-workflow-application}
 
-Vous pouvez utiliser le gestionnaire de modules AEM pour exporter des applications de processus. Pour ce faire, procédez comme suit :
+Vous pouvez utiliser le gestionnaire de packages AEM pour exporter des applications de workflow. Pour ce faire, procédez comme suit :
 
-1. Ouvrez le gestionnaire de modules [!DNL AEM Forms].
-1. Cliquez sur **[!UICONTROL Créer un package]**. La boîte de dialogue **[!UICONTROL Nouveau module]** apparaît.
-1. Indiquez le nom, la version et le groupe du module. Cliquez sur **[!UICONTROL OK]**.
-1. Cliquez sur **[!UICONTROL Modifier]** et ouvrez l’onglet **[!UICONTROL Filtres]**. Cliquez sur **[!UICONTROL Ajouter un filtre]**. Indiquez le chemin de l’application de processus. Par exemple, /etc/fd/dashboard/startpoints/homemortgage. Cliquez sur **[!UICONTROL Ajouter une règle]**.
+1. Ouvrez le gestionnaire de packages [!DNL AEM Forms].
+1. Cliquez sur **[!UICONTROL Créer un package]**. La boîte de dialogue **[!UICONTROL Nouveau package]** apparaît.
+1. Indiquez le nom, la version et le groupe du package. Cliquez sur **[!UICONTROL OK]**.
+1. Cliquez sur **[!UICONTROL Modifier]** et ouvrez l’onglet **[!UICONTROL Filtres]**. Cliquez sur **[!UICONTROL Ajouter un filtre]**. Spécifiez le chemin d’accès de l’application de workflow. Par exemple, /etc/fd/dashboard/startpoints/homemortgage. Cliquez sur **[!UICONTROL Ajouter une règle]**.
 
 1. Ouvrez l’onglet **[!UICONTROL Avancé]**. Sélectionnez **[!UICONTROL Fusionner]** ou **[!UICONTROL Remplacer]** dans le champ Gestion de l’ACL. Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Cliquez sur **[!UICONTROL Générer]** pour créer le package.
 
-   Une fois le module créé, vous pouvez le télécharger et l’importer sur l’autre serveur. L’application de processus apparaît sur le serveur sur lequel le module est téléchargé.
+   Une fois le package créé, vous pouvez le télécharger et l’importer sur l’autre serveur. L’application de workflow apparaît sur le serveur sur lequel le package est téléchargé.
 
    >[!NOTE]
    >
@@ -196,13 +196,13 @@ Pour créer un dossier, procédez comme suit :
 
    >[!NOTE]
    >
-   >par défaut, la valeur du champ Nom est automatiquement renseignée à partir du titre. Le nom peut contenir uniquement des caractères alphanumériques, des tirets (-) et des traits de soulignement (_). Tout autre caractère spécial saisi dans le titre est automatiquement remplacé par un tiret. Vous êtes alors invité à confirmer le nouveau nom. Vous pouvez choisir de conserver le nom proposé ou de le modifier.
+   >par défaut, la valeur du champ Nom est automatiquement renseignée à partir du titre. Le nom ne peut contenir que des caractères alphanumériques ou des tirets (-) et des traits de soulignement (_). Tous les autres caractères spéciaux saisis dans le titre sont automatiquement remplacés par un trait d’union. Vous êtes invité à confirmer le nouveau nom. Vous pouvez continuer avec le nom proposé ou le modifier davantage.
 
 1. Un nouveau dossier avec le titre que vous avez défini s’affiche à l’emplacement spécifié dans la liste des ressources.
 
    Si un dossier portant le même nom que celui spécifié existe déjà, l’envoi échoue avec une erreur. Vous pouvez afficher le message d’erreur en pointant sur l’icône d’erreur ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) qui s’affiche en regard du champ Nom.
 
-   Vous pouvez appuyer sur le dossier que vous venez de créer afin de l’ouvrir et de créer des ressources ou des dossiers dans ce dossier. En outre, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le téléchargement, de le supprimer ou de modifier son nom.
+   Vous pouvez appuyer sur le dossier que vous venez de créer afin de l’ouvrir et de créer des ressources ou des dossiers dans ce dossier. De plus, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le télécharger, le supprimer ou modifier son nom.
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}
 

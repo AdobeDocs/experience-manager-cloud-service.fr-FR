@@ -33,7 +33,7 @@ La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 * D’autres règles de validation sont disponibles dans les types de données du modèle Fragment de contenu, notamment « unique », « obligatoire » et « traduisible ».
 
-* Possibilité de baliser les modèles de fragments de contenu et d’autoriser la création de fragments de contenu dans un dossier avec des stratégies par balises ou chemins d’accès.
+* Possibilité de baliser les modèles de fragments de contenu et d’autoriser la création de fragments de contenu dans un dossier avec des politiques par balises ou chemins d’accès.
 
 * Améliorations de la convivialité de l’éditeur de fragment de contenu, notamment l’action de publication et l’affichage du modèle sur lequel est basé un fragment.
 

@@ -9,7 +9,7 @@ ht-degree: 100%
 ---
 
 
-# Présentation  {#introduction}
+# Présentation {#introduction}
 
 Cette page décrit les paramètres configurables présents dans la fenêtre HTTP Adobe AEM Target.
 

@@ -1,13 +1,13 @@
 ---
 title: Prise en main d’Universal Editor dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
-source-git-commit: 031117db4154dc605ae8b0c95f87b829bb5cacd8
+exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
 
 ---
-
 
 # Prise en main d’Universal Editor dans AEM {#getting-started}
 

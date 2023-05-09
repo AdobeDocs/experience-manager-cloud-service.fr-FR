@@ -9,9 +9,9 @@ ht-degree: 100%
 
 ---
 
-# Intégration de SPA et d’Adobe Experience Platform Launch {#spa-and-adobe-experience-platform-launch-integration}
+# Intégration de SPA et d’Adobe Experience Platform Launch {#spa-and-adobe-experience-platform-launch-integration}
 
-Adobe Experience Platform Launch est la méthode recommandée pour implémenter Analytics, Target et Audience Manager dans des applications sur une seule page (SPA).
+Adobe Experience Platform Launch est la méthode recommandée pour implémenter Analytics, Target et Audience Manager dans des applications d’une seule page (SPA).
 
 ## Tutoriel {#tutorial}
 

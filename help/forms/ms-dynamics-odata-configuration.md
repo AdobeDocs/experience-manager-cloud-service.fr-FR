@@ -7,8 +7,8 @@ level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
-source-wordcount: '948'
-ht-degree: 100%
+source-wordcount: '982'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 * MS Dynamics OData Cloud Service (OData Service)-->
 <!--* Form Data Model with preconfigured [!DNL Microsoft Dynamics] entities and services.-->
 
-<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  MS Dynamics OData Cloud Service (OData Service) is available with all run modes. For more information on configuring run modes for an [!DNL Experience Manager] instance, see [Run Modes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes).
+<!-- Preconfigured [!DNL Microsoft Dynamics] entities and services in a Form Data Model are available on your [!DNL Experience Manager Forms] instance only if the run mode for the [!DNL Experience Manager] instance is set as `samplecontent` (default). -->  Le Cloud Service OData MS Dynamics (service OData) est disponible avec tous les modes d’exécution. Pour plus d’informations sur la configuration des modes d’exécution pour un événement [!DNL Experience Manager] instance, voir [Modes d’exécution](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#runmodes).
 
 ## Conditions préalables {#prerequisites}
 
@@ -105,7 +105,7 @@ Pour enregistrer un client OAuth sur l’ordinateur Active Directory Federatio
 
    * `resource` est l’URL de l’organisation de [!DNL Microsoft Dynamics].
 
-1. [!DNL Microsoft Dynamics] utilise le protocole HTTPS. Pour appeler les points de fin AD FS à partir du serveur [!DNL Forms], installez le certificat de site [!DNL Microsoft Dynamics] dans le magasin de certificats Java à l’aide de la commande `keytool` sur l’ordinateur exécutant [!DNL Experience Manager Forms].
+1. [!DNL Microsoft Dynamics] utilise le protocole HTTPS. Pour appeler les points d’entrée AD FS à partir du serveur [!DNL Forms], installez le certificat de site [!DNL Microsoft Dynamics] dans le magasin de certificats Java à l’aide de la commande `keytool` sur l’ordinateur exécutant [!DNL Experience Manager Forms].
 
 ## Configuration du service cloud pour votre service [!DNL Microsoft Dynamics] {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
@@ -124,7 +124,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL Assistant de création d’une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, cherchez et sélectionnez éventuellement une miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
 Dans l’onglet **[!UICONTROL Paramètres d’authentification]** :
 
-   1. Saisissez la valeur pour le champ **[!UICONTROL Racine du service]**. Accédez à l’instance Dynamics et à **[!UICONTROL Ressources de développement]** pour afficher la valeur du champ Racine du service. Par exemple, https://&lt;nom-client>/api/data/v9.1/
+   1. Saisissez la valeur de la variable **[!UICONTROL Racine du service]** champ . Accédez à l’instance Dynamics et à **[!UICONTROL Ressources de développement]** pour afficher la valeur du champ Racine du service. Par exemple, https://&lt;nom-client>/api/data/v9.1/
 
    1. Sélectionnez **[!UICONTROL OAuth 2.0]** comme type d’authentification.
 

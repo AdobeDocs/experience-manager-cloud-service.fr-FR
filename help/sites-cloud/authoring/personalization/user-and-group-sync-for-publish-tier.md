@@ -2,8 +2,8 @@
 title: Enregistrement, connexion et profil utilisateur
 description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+workflow-type: tm+mt
 source-wordcount: '1174'
 ht-degree: 100%
 
@@ -104,7 +104,7 @@ Il est possible d’accéder en temps réel à des services tiers pour récupér
 
 ## Autorisations (groupes d’utilisateurs fermés) {#permissions-closed-user-groups}
 
-Les stratégies d’accès au niveau Publication, également appelées CUG (Closed User Groups), sont définies dans l’auteur AEM comme [décrit ici](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=fr#applying-your-closed-user-group-to-content-pages). Pour limiter certains sections ou pages d’un site web à certains utilisateurs, appliquez les CUG selon les besoins à l’aide de l’auteur AEM, comme décrit ici, et dupliquez-les au niveau Publication.
+Les politiques d’accès au niveau Publication, également appelées CUG (Closed User Groups), sont définies dans l’auteur AEM comme [décrit ici](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=fr#applying-your-closed-user-group-to-content-pages). Pour limiter certains sections ou pages d’un site web à certains utilisateurs, appliquez les CUG selon les besoins à l’aide de l’auteur AEM, comme décrit ici, et dupliquez-les au niveau Publication.
 
 * Si les utilisateurs se connectent en s’authentifiant auprès d’un fournisseur d’identités (IdP) à l’aide de SAML, le gestionnaire d’authentification identifie les appartenances de groupe de l’utilisateur (qui doivent correspondre aux CUG pour le niveau Publication) et maintient l’association entre l’utilisateur et le groupe par le biais d’un enregistrement de référentiel.
 * Si la connexion est établie sans intégration IdP, le code personnalisé peut appliquer les mêmes relations de structure de référentiel.

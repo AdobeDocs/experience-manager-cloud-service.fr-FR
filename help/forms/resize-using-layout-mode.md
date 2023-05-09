@@ -118,7 +118,7 @@ Vous pouvez désactiver le mode Mise en page pour les formulaires avec une ancie
 Pour désactiver le mode Mise en page, procédez comme suit :
 
 1. Sélectionnez **[!UICONTROL Outils]** > **[!UICONTROL Général]** > **[!UICONTROL Modèles]** et ouvrez le modèle utilisé dans le formulaire en mode **[!UICONTROL Édition]**.
-1. Sélectionnez le conteneur de formulaires dans le volet de gauche et appuyez sur **[!UICONTROL Stratégie]**.
+1. Sélectionnez le conteneur de formulaires dans le volet de gauche et appuyez sur **[!UICONTROL Politique]**.
 
    ![Désactivation du mode Mise en page](assets/policy_disable_layout_mode.png)
 

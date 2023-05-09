@@ -2,10 +2,10 @@
 title: Utilisation des adaptateurs Sling
 description: Sling propose un modèle Adaptateur permettant de convertir facilement les objets qui mettent en œuvre l’interface Adaptable
 exl-id: 8ffe3bbd-01fe-44c2-bf60-7a4d25a6ba2b
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '2221'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -39,14 +39,14 @@ Il existe plusieurs scénarios d’utilisation :
 
 `adaptTo()` peut renvoyer une valeur nulle.
 
-Plusieurs raisons peuvent expliquer cela :
+Il existe plusieurs raisons à cela, notamment :
 
-* Cette implémentation ne prend pas en charge le type cible.
-* Une « adapter factory » qui gère ce cas n’est pas active (en raison de références de service manquantes, par exemple.)
-* La condition interne a échoué.
+* l’implémentation ne prend pas en charge le type de cible.
+* une fabrique d’adaptateur traitant ce cas n’est pas principale (par exemple, en raison de références de service manquantes)
+* la condition interne a échoué
 * Le service n’est pas disponible.
 
-Il est important de traiter ce cas de manière appropriée. Pour les rendus JSP, l’échec de JSP est acceptable si cela se traduit par un élément de contenu vide.
+Il est important que vous gériez le cas &quot;null&quot; avec élégance. Pour les rendus jsp, il peut être acceptable que le jsp échoue si cela entraîne un élément de contenu vide.
 
 ### Mise en cache {#caching}
 
@@ -54,7 +54,7 @@ Pour améliorer les performances, les implémentations peuvent mettre en cache l
 
 Cette mise en cache est exécutée pour tous les scénarios basés sur `AdapterFactory`.
 
-Cependant, il n’existe pas de règle absolue : l’objet peut soit être une nouvelle instance, soit une instance existante. Cela signifie que vous ne pouvez pas compter sur un comportement en particulier. Par conséquent, il est important, notamment dans `AdapterFactory`, que les objets soient réutilisables dans ce scénario.
+Cependant, il n’existe aucune règle générale : l’objet peut être soit une nouvelle instance, soit une instance existante. Cela signifie que vous ne pouvez pas vous fier à aucun des comportements. Par conséquent, il est important, notamment dans `AdapterFactory`, que les objets soient réutilisables dans ce scénario.
 
 ### Fonctionnement {#how-it-works}
 
@@ -69,7 +69,7 @@ Cependant, il n’existe pas de règle absolue : l’objet peut soit être une 
 
 * Une combinaison des deux.
 
-Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `adaptTo-targets` possibles. Cependant, pour des sous-classes spécifiques, telles que la ressource basée sur JCR, cela s’avère souvent impossible. Dans ce cas, les implémentations de `AdapterFactory` font généralement partie des classes privées d’un lot et ne sont donc pas exposées dans une API cliente ni répertoriées dans les JavaDocs. En théorie, il serait possible d’accéder à toutes les implémentations `AdapterFactory` à partir de l’exécutable de service [OSGi](/help/implementing/deploying/configuring-osgi.md) et d’observer leurs configurations « adaptables » (sources et cibles), mais pas de les mapper entre elles. En définitive, cela dépend de la logique interne, qui doit être documentée, d’où cette référence.
+Pour le premier cas, vous pouvez consulter les JavaDocs pour connaître les `adaptTo-targets` possibles. Cependant, pour des sous-classes spécifiques, telles que la ressource basée sur JCR, cela s’avère souvent impossible. Dans ce cas, les implémentations de `AdapterFactory` font généralement partie des classes privées d’un lot et ne sont donc pas exposées dans une API cliente ni répertoriées dans les JavaDocs. En théorie, il serait possible d’accéder à toutes les implémentations `AdapterFactory` à partir de l’exécutable de service [OSGi](/help/implementing/deploying/configuring-osgi.md) et d’observer leurs configurations « adaptables » (sources et cibles), mais pas de les mapper entre elles. En fin de compte, cela dépend de la logique interne, qui doit être documentée. D’où cette référence.
 
 ## Référence {#reference}
 

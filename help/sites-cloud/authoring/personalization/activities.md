@@ -1,11 +1,11 @@
 ---
 title: Gestion des activités
-description: 'La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques :'
+description: La console Activités vous permet de créer, d’organiser et de gérer les activités marketing de vos marques.
 exl-id: e7cab16d-7678-472d-b75f-7f67b303ba8d
 source-git-commit: 56a7f214a4a1a3a58c56f1e06e3a98532054ffee
 workflow-type: tm+mt
 source-wordcount: '2019'
-ht-degree: 99%
+ht-degree: 53%
 
 ---
 
@@ -19,16 +19,16 @@ La console Activités vous permet de créer, d’organiser et de gérer les [act
 
 >[!TIP]
 >
->Si vous utilisez Adobe Target comme moteur de ciblage, vous pouvez également [consulter les données de performances de vos activités](#viewing-performance-and-converting-winning-experiences-a-b-test). Si vous utilisez les tests A/B, vous pouvez [convertir les gagnants](#viewing-performance-and-converting-winning-experiences-a-b-test).
+>Si vous utilisez Adobe Target comme moteur de ciblage, vous pouvez également [afficher les données de performances de vos activités ;](#viewing-performance-and-converting-winning-experiences-a-b-test). Si vous utilisez des tests A/B, vous pouvez [convertir les gagnants](#viewing-performance-and-converting-winning-experiences-a-b-test).
 
-Dans la console Activités, les activités sont organisées par marque. Vous pouvez utiliser les marques et les dossiers afin de structurer l’organisation de vos activités. Vous accédez à la console Activités en appuyant/cliquant sur **Personnalisation** et en appuyant/cliquant sur **Activités**.
+Dans la console Activités , les activités sont organisées par marque. Vous pouvez utiliser des marques et des dossiers pour structurer l’organisation de vos activités. Vous accédez à la console Activités en appuyant/cliquant sur **Personnalisation** et en appuyant/cliquant **Activités**.
 
-Les activités sont disponibles en mode Ciblage pour [créer du contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md), où vous pouvez également créer des activités. Les activités que vous créez en mode Ciblage apparaissent dans la console Activités.
+Les activités sont disponibles en mode Ciblage pour [créer du contenu ciblé](/help/sites-cloud/authoring/personalization/targeted-content.md), où vous pouvez également créer des activités. Les activités que vous créez en mode Ciblage apparaissent dans la console Activités .
 
-Les activités sont présentées avec un libellé décrivant le type d’activité défini :
+Les activités sont affichées avec un libellé décrivant le type d’activité défini :
 
-* XT : ciblage d’expérience Adobe Target
-* A/B : test A/B Adobe Target
+* XT - Ciblage d’expérience Adobe Target
+* A/B - Test A/B Adobe Target
 * AEM : ciblage d’Adobe Experience Manager (piloté par ContextHub)
 
 ![Types d’activités](/help/sites-cloud/authoring/assets/activities-types.png)
@@ -62,14 +62,14 @@ Quand vous créez une marque avec la console Activités, elle apparaît égaleme
 
    ![Accès aux activités](/help/sites-cloud/authoring/assets/activities-navigation.png)
 
-1. Dans la console Activités, cliquez ou appuyez sur **Créer** et ensuite sur **Créer une marque**.
-1. Sélectionnez un modèle de marque et cliquez ou appuyez sur **Suivant**.
-1. Saisissez le titre de la marque tel qu’il doit apparaître dans les consoles Activités et Offres. Si vous le souhaitez, saisissez ou sélectionnez une ou plusieurs balises à associer à la marque.
+1. Dans la console Activités, cliquez ou appuyez sur **Créer** then **Créer une marque**.
+1. Sélectionnez le modèle de marque et cliquez ou appuyez sur **Suivant**.
+1. Saisissez le titre de la marque tel que vous souhaitez le voir apparaître dans les consoles Activités et Offres . Vous pouvez éventuellement saisir ou sélectionner une ou plusieurs balises à associer à la marque.
 1. Cliquez ou appuyez sur **Créer**. Votre marque apparaît dans la console Activités.
 
 ## Ajout/modification d’une activité à l’aide de la console Activités {#adding-editing-an-activity-using-the-activities-console}
 
-Ajoutez une activité ou modifiez une activité existante pour concentrer vos efforts marketing sur certaines audiences. Lorsque vous créez/modifiez une activité, vous spécifiez les informations suivantes :
+Ajoutez une activité ou modifiez une activité existante pour concentrer vos efforts marketing sur des audiences spécifiques. Lorsque vous créez/modifiez une activité, vous spécifiez les informations suivantes :
 
 * **Nom :** nom de l’activité.
 * **Moteur de ciblage :** [AEM](/help/sites-cloud/authoring/personalization/overview.md#aem) ou [Adobe Target](/help/sites-cloud/authoring/personalization/overview.md#adobe-target) comme moteur du contenu ciblé.
@@ -90,68 +90,68 @@ Ajoutez une activité ou modifiez une activité existante pour concentrer vos ef
 >
 >Les nouvelles activités Adobe Target doivent être *créées* dans l’éditeur de contenu ciblé et non dans la console **Activités**, car la synchronisation avec Adobe Target échouera.
 >
->Vous pouvez toutefois modifier les activités existantes d’Adobe Target dans la console.
+>Vous pouvez toutefois modifier les activités Adobe Target existantes dans la console.
 
-Pour ajouter une activité :
+Pour ajouter une activité :
 
 1. Cliquez ou appuyez sur une marque pour laquelle vous créez l’activité, puis cliquez ou appuyez sur **Créer** et ensuite sur **Créer une activité**. Si vous modifiez une activité, sélectionnez-la dans l’écran Zone maître et cliquez ou appuyez sur **Modifier l’activité**.
-1. Fournissez les informations suivantes, puis appuyez ou cliquez sur **Suivant** :
+1. Fournissez les informations suivantes, puis cliquez ou appuyez sur **Suivant**:
    * Nom de l’activité.
-   * Le moteur de ciblage à utiliser. ContextHub (AEM) est sélectionné par défaut. Si vous devez utiliser Adobe Target, créez l’activité dans l’éditeur de contenu ciblé.
-   * Si vous avez sélectionné Adobe Target comme moteur de ciblage, sélectionnez/modifiez la configuration de cloud à utiliser pour se connecter à Adobe Target. (Veillez à ne pas sélectionner une structure que vous avez créée pour la configuration de cloud.)
-   * L’objectif ou une description de l’activité (facultatif).
-   * Sélectionnez le type d’activité.
+   * Le moteur de ciblage à utiliser. ContextHub (AEM) est sélectionné par défaut. Si vous devez utiliser Adobe Target, créez l&#39;activité dans l&#39;éditeur de contenu ciblé.
+   * Si vous avez sélectionné Adobe Target comme moteur de ciblage, sélectionnez/modifiez la configuration de cloud à utiliser pour vous connecter à Adobe Target. (Veillez à ne pas sélectionner une structure que vous avez créée pour votre configuration cloud.)
+   * (Facultatif) Objectif ou description de l’activité.
+   * Sélectionnez le Type d’activité.
 1. Ajoutez une ou plusieurs expériences à l’activité. Cliquez ou appuyez sur **Ajouter une expérience**.
-1. Si vous utilisez le ciblage AEM ou le ciblage d’expérience Adobe Target :
+1. Si vous utilisez AEM ciblage ou ciblage d’expérience Adobe Target :
    1. Cliquez ou appuyez sur **Sélectionner l’audience** et sélectionnez le segment ciblé par votre expérience.
    1. Appuyez ou cliquez sur **Ajouter une expérience**, saisissez un nom, puis appuyez ou cliquez sur **OK**.
    1. Appuyez ou cliquez sur **Suivant**.
-Si vous utilisez le test A/B Adobe Target :
-   1. Cliquez ou appuyez sur le crayon dans la zone Audiences pour sélectionner une audience.
+Si vous utilisez des tests A/B Adobe Target :
+   1. Cliquez ou appuyez sur le crayon dans la zone audiences pour sélectionner une audience.
    1. Appuyez ou cliquez sur **Ajouter une expérience**, saisissez un nom, puis appuyez ou cliquez sur **OK**.
    1. Saisissez le pourcentage du trafic qui affiche chaque expérience.
    1. Appuyez ou cliquez sur **Suivant**.
-1. Pour indiquer le moment où l’activité commence, utilisez le menu déroulant **Démarrer** pour sélectionner l’une des valeurs suivantes :
+1. Pour indiquer le moment où l’activité commence, utilisez la variable **Début** pour sélectionner l’une des valeurs suivantes :
    * **Après activation :** l’activité commence lorsque la page contenant le contenu ciblé est activée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
+   * **Date et heure spécifiées :** Heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
 1. Pour spécifier le moment où l’activité se termine, utilisez le menu déroulant Fin pour sélectionner l’une des valeurs suivantes :
-   * **Si désactivés** : l’activité s’arrête lorsque la page contenant le contenu ciblé est désactivée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, appuyez ou cliquez sur l’icône de calendrier, sélectionnez une date, puis spécifiez l’heure de fin de l’activité.
-1. Pour spécifier la priorité de l’activité, utilisez le curseur pour choisir **Faible**, **Normale** ou **Élevée**.
+   * **Lorsque désactivé**: L’activité se termine lorsque la page contenant le contenu ciblé est désactivée.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de fin de l’activité.
+1. Pour spécifier une priorité pour l’activité, utilisez le curseur pour sélectionner l’une des options suivantes : **Faible**, **Normal** ou **Élevée**.
 1. Si vous utilisez Adobe Target comme moteur de ciblage, sélectionnez ce que vous souhaitez mesurer avec cette activité. Voir [Configuration de l’activité et définition des objectifs](/help/sites-cloud/authoring/personalization/targeted-content.md) pour plus d’informations sur les mesures de succès disponibles. Vous devez sélectionner au moins un objectif.
 1. Cliquez ou appuyez sur **Enregistrer**.
 
    >[!NOTE]
    >
-   >Après avoir créé une activité, vous devez la modifier de manière à ce qu’elle soit disponible.
+   >Après avoir créé une activité, vous devez la publier afin qu’elle soit disponible.
 
 ## Publication et dépublication des activités {#publishing-and-unpublishing-activities}
 
-Vous devez publier les activités afin de les rendre disponibles. À l’inverse, vous pouvez rendre les activités non disponibles en annulant leur publication.
+Vous devez publier les activités pour les rendre disponibles. À l’inverse, vous pouvez rendre les activités indisponibles en les dépubliant.
 
 >[!NOTE]
 >
 >Lorsque vous dépubliez une activité, l’état de l’activité ne change que si vous actualisez la page.
 
-Pour publier des activités ou annuler leur publication :
+Pour publier ou annuler la publication d’activités :
 
-1. Cliquez ou appuyez sur la marque puis sur la zone contenant l’activité que vous souhaitez publier ou dont vous souhaitez annuler la publication.
-1. Appuyez ou cliquez sur l’icône située en regard des activités que vous souhaitez publier ou dont vous souhaitez annuler la publication.
+1. Cliquez ou appuyez sur la marque, puis sur la zone contenant l’activité que vous souhaitez publier ou dont vous souhaitez annuler la publication.
+1. Appuyez ou cliquez sur l’icône en regard de l’activité ou des activités que vous souhaitez publier ou dont vous souhaitez annuler la publication.
 
    ![Publication à partir de la console Activités](/help/sites-cloud/authoring/assets/activities-console.png)
 
-1. Pour publier, appuyez ou cliquez sur **Publier**. Pour annuler la publication, appuyez ou cliquez sur **Annuler la publication**. Les activités sont publiées ou leur publication est annulée, et leur état change dans la console Activités (une actualisation peut être nécessaire).
+1. Pour publier, appuyez ou cliquez sur **Publier**. Pour annuler la publication, appuyez ou cliquez sur **Annuler la publication**. Votre activité ou vos activités sont publiées ou non publiées et leur état change dans la console Activités (une actualisation peut s’avérer nécessaire).
 
 ## Activités sur les instances de création et de publication {#activities-on-author-and-publish-instances}
 
-Lorsqu’une activité qui utilise le moteur ciblé Adobe Target est activée, une seconde activité est créée sur l’instance de publication :
+Lorsqu’une activité qui utilise le moteur ciblé Adobe Target est activée, une seconde activité est créée sur l’instance de publication :
 
-* L’activité sur l’instance de création suit l’activité sur l’instance de création et s’avère utile pour simuler l’expérience des visiteurs. Les analyses enregistrées pour cette activité ne reflètent que ce qui se produit sur l’instance de création.
-* L’activité sur l’instance de publication reflète l’activité sur le serveur de publication et y réagit. Il s’agit de l’activité qui s’exécute sur le site web public. Seule l’activité de publication est pertinente pour suivre et analyser l’utilisation du site public.
+* L’activité sur l’instance d’auteur effectue le suivi de l’activité sur l’instance d’auteur et est utile pour simuler l’expérience du visiteur. Les analyses enregistrées pour cette activité ne reflètent que ce qui se produit sur l’instance de création.
+* L’activité sur l’instance de publication reflète l’activité sur le serveur de publication et y répond. Il s’agit de l’activité qui s’exécute sur le site web public. Seule l’activité de publication est pertinente pour le suivi et l’analyse de l’utilisation du site public réel.
 
 ## Affichage des performances et conversion des expériences gagnantes (test A/B) {#viewing-performance-and-converting-winning-experiences-a-b-test}
 
-Vous pouvez afficher les performances de n’importe quelle activité Adobe Target (XT ou A/B). Si vous utilisez les tests A/B, vous pouvez également convertir l’expérience gagnante, qui devient alors l’expérience par défaut.
+Vous pouvez voir les performances de n’importe quelle activité Adobe Target (XT ou A/B). Si vous utilisez des tests A/B, vous pouvez également convertir l’expérience gagnante, qui devient alors l’expérience par défaut.
 
 Pour afficher les performances des activités et convertir les expériences gagnantes :
 
@@ -170,23 +170,23 @@ Pour afficher les performances des activités et convertir les expériences gagn
 
    ![Conversion de l’expérience gagnante](/help/sites-cloud/authoring/assets/activities-reports.png)
 
-   L’expérience gagnante est celle qui génère la meilleure progression dans les rapports, en fonction des taux de conversion.
+   Une expérience gagnante est l’expérience qui génère plus d’effet élévateur dans les rapports, en fonction du taux de conversion.
 
-1. Cliquez ou appuyez sur **Oui** pour confirmer que vous souhaitez convertir le gagnant, c’est-à-dire désactiver l’expérience actuelle et la remplacer par le contenu de l’expérience gagnante.
+1. Cliquez ou appuyez sur **Oui** pour confirmer que vous souhaitez convertir le gagnant, en désactivant l’expérience actuelle et en la remplaçant par le contenu de l’expérience gagnante.
 
 ## Synchronisation des activités avec Adobe Target {#synchronizing-activities-with-adobe-target}
 
-Les activités qui utilisent le moteur de ciblage Adobe Target sont synchronisées avec les campagnes Adobe Target. Une activité est automatiquement synchronisée avec Adobe Target lorsque les conditions suivantes sont réunies :
+Les activités qui utilisent le moteur de ciblage Adobe Target sont synchronisées avec les campagnes Adobe Target. Une activité est automatiquement synchronisée dans Adobe Target lorsque les conditions suivantes sont remplies :
 
 * L’activité contient au moins une expérience.
 * Au moins une expérience contient un segment mappé et une offre.
-* Chaque expérience contenue dans l’activité doit comporter le même nombre d’offres.
+* Chaque expérience de l’activité doit comporter le même nombre d’offres.
 
 Ces conditions s’appliquent aux activités sur les instances de création et de publication.
 
-Lorsqu’une activité est synchronisée, une campagne correspondante est créée dans Adobe Target :
+Lorsqu&#39;une activité est synchronisée, une campagne correspondante est créée dans Adobe Target :
 
-* Les activités sur l’instance de publication portent le même nom que la campagne correspondante d’Adobe Target.
+* Les activités sur l’instance de publication portent le même nom que la campagne Adobe Target correspondante.
 * Les activités sur l’instance de création correspondent à des campagnes Target du même nom avec le suffixe `_author`.
 
 ![Synchronisation avec Adobe Target](/help/sites-cloud/authoring/assets/activities-synch.png)
@@ -199,15 +199,15 @@ Les activités de publication sont synchronisées lorsque l’activité est publ
 
 Lorsque AEM synchronise une activité avec Adobe Target, AEM ajoute une propriété appelée `thirdPartyId`. La valeur de cette propriété est basée sur le chemin de l’activité dans le référentiel AEM. Dans Adobe Target, les campagnes ne peuvent avoir la même valeur pour la propriété `thirdPartyId`. Par conséquent, une activité ne se synchronise pas si une campagne existante (d’un autre type A/B ou XT) dans Adobe Target utilise la même valeur pour `thirdPartyId`.
 
-Cette situation peut se produire dans les cas suivants :
+Cette situation peut se produire dans les cas suivants :
 
 1. Une activité est créée et synchronisée avec Adobe Target.
-1. Sur une autre instance AEM, une activité est créée sous la même marque avec le même nom. La synchronisation de cette activité échoue à chaque tentative.
+1. Sur une autre instance d’AEM, une activité est créée sous la même marque et portant le même nom. La synchronisation de cette activité échoue en cas de tentative.
 
-Cette situation peut aussi se produire dans les cas suivants :
+Cette situation peut également se produire dans les cas suivants :
 
-1. Une activité est créée et synchronisée avec Adobe Target. L’activité est ensuite supprimée sur AEM.
-1. Une activité est créée sous la même marque avec le même nom que l’activité supprimée. La synchronisation de cette activité échoue à chaque tentative.
+1. Une activité est créée et synchronisée avec Adobe Target. L&#39;activité est alors supprimée sur AEM.
+1. Une activité est créée sous la même marque et en utilisant le même nom que l’activité supprimée. La synchronisation de cette activité échoue en cas de tentative.
 
 Pour éviter des problèmes de synchronisation, donnez toujours des noms uniques aux activités. Si une activité ne se synchronise pas, vous pouvez supprimer la campagne dans Adobe Target qui porte le même nom si elle n’est pas utilisée.
 

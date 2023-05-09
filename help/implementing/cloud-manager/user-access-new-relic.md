@@ -2,8 +2,8 @@
 title: New Relic One
 description: Découvrez le service de surveillance des performances de l’application New Relic One (APM) pour AEM as a Cloud Service et comment y accéder.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: c265ce6f29dee1760049a8d296f00a3c2484fb77
-workflow-type: ht
+source-git-commit: 6a633881be57b79ee167c3a16d514b903bc460ad
+workflow-type: tm+mt
 source-wordcount: '1603'
 ht-degree: 100%
 

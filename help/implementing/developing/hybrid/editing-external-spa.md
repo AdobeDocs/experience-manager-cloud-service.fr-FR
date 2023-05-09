@@ -288,7 +288,7 @@ Vous pouvez désormais ajouter plus de composants et de contenu au conteneur, se
 
 Il existe un certain nombre d’exigences à satisfaire pour ajouter des conteneurs virtuels, ainsi que certaines restrictions.
 
-* La stratégie permettant de déterminer les composants qui peuvent être ajoutés sera héritée du conteneur parent.
+* La politique permettant de déterminer les composants qui peuvent être ajoutés sera héritée du conteneur parent.
 * Le parent immédiat du conteneur à créer doit déjà exister dans AEM.
    * Si le conteneur `root/responsivegrid` existe déjà dans le conteneur AEM, un nouveau conteneur peut être créé en indiquant le chemin d’accès `root/responsivegrid/newContainer`.
    * Cependant, `root/responsivegrid/newContainer/secondNewContainer` n’est pas possible.
@@ -361,7 +361,7 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 ## Restrictions du framework {#framework-limitations}
 
-Le composant RemotePage s’attend à ce que l’implémentation fournisse un manifeste de ressource comme [celui-ci.](https://github.com/shellscape/webpack-manifest-plugin) Le composant RemotePage, cependant, a été testé uniquement pour fonctionner avec le framework React (et Next.js via le composant remote-page-next) et il ne prend donc pas en charge le chargement à distance d’applications à partir d’autres frameworks tels qu’Angular.
+Le composant RemotePage s’attend à ce que l’implémentation fournisse un manifeste de ressource comme [celui-ci.](https://github.com/shellscape/webpack-manifest-plugin) Le composant RemotePage, en revanche, a été testé uniquement pour fonctionner avec le framework React (et Next.js via le composant remote-page-next) et il ne prend donc pas en charge le chargement à distance d’applications à partir d’autres frameworks tels qu’Angular.
 
 ## Ressources supplémentaires {#additional-resources}
 

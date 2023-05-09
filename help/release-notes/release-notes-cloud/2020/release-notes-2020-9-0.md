@@ -120,6 +120,6 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour des
 
    Pour plus d’informations, voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
 
-* L’utilitaire Repository Modernizer peut être utilisé pour restructurer des modules de projet existants en modules compatibles avec la structure de projet définie pour AEM as a Cloud Service.
+* L’utilitaire Repository Modernizer peut être utilisé pour restructurer des packages de projets existants en packages compatibles avec la structure de projet définie pour AEM as a Cloud Service.
 
    Reportez-vous à [Ressource Git : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus de détails.

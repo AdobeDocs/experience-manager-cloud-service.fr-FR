@@ -205,7 +205,7 @@ Pour créer une configuration Adobe Launch, procédez comme suit :
 
 1. Indiquez un titre pour la configuration dans le champ **[!UICONTROL Titre]**.
 
-1. Sélectionnez la [configuration Adobe IMS associée](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html).
+1. Sélectionnez la [configuration Adobe IMS associée](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=fr).
 
 1. Sélectionnez le nom de la société utilisée lors de la [configuration d’Adobe Analytics](#Configure-adobe-analytics).
 

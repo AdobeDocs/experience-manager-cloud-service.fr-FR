@@ -39,7 +39,7 @@ Les mêmes opérations sont exécutées par Cloud Manager lors du déploiement v
 * Vous pouvez consulter l’icône **À propos d’Adobe Experience Manager** d’AEM Admin Console pour connaître la version d’AEM que vous exécutez en production.
 * Le fichier Quickstart Jar et les outils Dispatcher peuvent être téléchargés dans un fichier ZIP depuis le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Notez que l’accès aux listes de SDK est limité aux environnements AEM Managed Services ou AEM as a Cloud Service.
 * Les fichiers Java API Jar et Javadoc Jar peuvent être téléchargés via l’outil Maven, soit en ligne de commande, soit avec votre IDE préféré.
-* Les fichiers pom de projet Maven doivent faire référence au module API Jar suivant. Cette dépendance doit également être référencée dans tous les sous-modules pom.
+* Les fichiers pom de projet Maven doivent faire référence au package API Jar suivant. Cette dépendance doit également être référencée dans tous les sous-packages pom.
 
 ```
 <dependency>
@@ -65,7 +65,7 @@ Il est *facultatif* de l’actualiser après une version de maintenance quotidie
 
 Voici la procédure recommandée pour actualiser un environnement local :
 
-1. Assurez-vous que tout contenu utile est soit validé dans le projet dans le contrôle de code source, soit disponible dans un module de contenu modifiable pour importation ultérieure.
+1. Assurez-vous que tout contenu utile est soit validé dans le projet dans le contrôle de code source, soit disponible dans un package de contenu modifiable pour importation ultérieure.
 1. Le contenu du test de développement local doit être stocké séparément afin qu’il ne soit pas déployé dans le cadre de la génération du pipeline de Cloud Manager. En effet, ’il ne doit être utilisé que pour le développement local.
 1. Arrêtez le fichier quickstart en cours d’exécution.
 1. Déplacez le dossier `crx-quickstart` vers un autre dossier pour le conserver en lieu sûr.
@@ -75,11 +75,11 @@ Voici la procédure recommandée pour actualiser un environnement local :
 1. Démarrez le nouveau fichier QuickStart avec les modes d’exécution de votre choix (renommez le fichier ou transmettez les modes d’exécution via `-r`).
    * Assurez-vous qu’il n’y a aucun vestige de l’ancien fichier quickstart dans le dossier.
 1. Créez votre application AEM.
-1. Déployez votre application AEM vers AEM local via le gestionnaire de modules.
-1. Installez tous les modules de contenu modifiable nécessaires au test de l’environnement local via le gestionnaire de modules.
+1. Déployez votre application AEM vers AEM local via le gestionnaire de packages.
+1. Installez tous les packages de contenu modifiable nécessaires au test de l’environnement local via le gestionnaire de packages.
 1. Poursuivez le développement et déployez les modifications si nécessaire.
 
-Si du contenu doit être installé avec chaque nouvelle version de quickstart d’AEM, incluez-le dans un module de contenu et dans le contrôle de code source du projet. Installez-le ensuite à chaque fois.
+Si du contenu doit être installé avec chaque nouvelle version de quickstart d’AEM, incluez-le dans un package de contenu et dans le contrôle de code source du projet. Installez-le ensuite à chaque fois.
 
 Il est recommandé de mettre à jour fréquemment le SDK (par exemple, toutes les deux semaines) et de supprimer quotidiennement l’état local complet pour ne pas dépendre accidentellement de données avec état dans l’application.
 
@@ -87,9 +87,9 @@ Si vous dépendez de CryptoSupport ([soit en configurant les informations d’id
 
 Par défaut, AEM est configuré pour stocker les données clés dans le dossier de données d’un dossier, mais pour faciliter leur réutilisation dans le développement, le processus AEM peut être initialisé au premier démarrage avec « `-Dcom.adobe.granite.crypto.file.disable=true` ». Les données de chiffrement seront alors générées à l’emplacement « `/etc/key` ».
 
-Pour pouvoir réutiliser des modules de contenu contenant les valeurs chiffrées, procédez comme suit :
+Pour pouvoir réutiliser des packages de contenu contenant les valeurs chiffrées, procédez comme suit :
 
 * Lorsque vous démarrez le fichier quickstart.jar local, veillez à ajouter le paramètre ci-dessous : « `-Dcom.adobe.granite.crypto.file.disable=true` ». Il est recommandé de toujours l’ajouter, bien qu’il soit facultatif.
-* La toute première fois que vous démarrez une instance, créez un module contenant un filtre pour la racine « `/etc/key` ». Le secret sera alors réutilisé dans tous les environnements pour lesquels vous souhaitez qu’il le soit.
-* Exportez tout contenu modifiable contenant des secrets, ou recherchez les valeurs chiffrées via `/crx/de` pour les ajouter au module qui sera réutilisé dans toutes les installations.
-* Chaque fois que vous créez une instance (pour remplacer une instance par une nouvelle version ou parce que plusieurs environnements de développement doivent partager les informations d’identification pour les tests), installez le module généré aux étapes 2 et 3 afin de pouvoir réutiliser le contenu sans avoir à reconfigurer manuellement. C’est parce que la clé de chiffrement est maintenant synchronisée.
+* La toute première fois que vous démarrez une instance, créez un package contenant un filtre pour la racine « `/etc/key` ». Le secret sera alors réutilisé dans tous les environnements pour lesquels vous souhaitez qu’il le soit.
+* Exportez tout contenu modifiable contenant des secrets, ou recherchez les valeurs chiffrées via `/crx/de` pour les ajouter au package qui sera réutilisé dans toutes les installations.
+* Chaque fois que vous créez une instance (pour remplacer une instance par une nouvelle version ou parce que plusieurs environnements de développement doivent partager les informations d’identification pour les tests), installez le package généré aux étapes 2 et 3 afin de pouvoir réutiliser le contenu sans avoir à reconfigurer manuellement. C’est parce que la clé de chiffrement est maintenant synchronisée.

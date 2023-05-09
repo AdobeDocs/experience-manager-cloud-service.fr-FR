@@ -88,7 +88,7 @@ Vous pouvez également y parvenir en créant un modèle de workflow qui utilise 
 **Paramètres**
 
 * `includeChildren` (valeur booléenne, valeur par défaut : `false`). false signifie que seul le chemin d’accès est publié. true signifie que les enfants sont également publiés.
-* `replicateAsParticipant` (valeur booléenne, valeur par défaut : `false`). S’il est configuré comme `true`, la réplication utilise la balise `userid` de l’entité qui a exécuté l’étape de participant.
+* `replicateAsParticipant` (valeur booléenne, valeur par défaut : `false`). S’il est configuré comme `true`, la réplication utilise la balise `userid` du principal qui a exécuté l’étape de participant.
 * `enableVersion` (valeur booléenne, valeur par défaut : `true`). Ce paramètre détermine si une nouvelle version est créée lors de la réplication.
 * `agentId` (valeur de chaîne, la valeur par défaut signifie que seuls les agents pour la publication sont utilisés). Il est recommandé d’être explicite concernant agentId ; par exemple, attribuez-lui la valeur : publier. L’application à l’agent de la valeur `preview` entraîne la publication sur le service d’aperçu.
 * `filters` (valeur de chaîne, valeur par défaut, tous les chemins sont activés). Les valeurs disponibles sont les suivantes :
@@ -189,7 +189,7 @@ Vous pouvez directement invalider le contenu à l’aide de l’invalidation du 
 Il est recommandé de répliquer moins de 100 chemins d’accès à la fois, avec une limite stricte de 500 chemins d’accès. Au-delà de cette limite stricte, une `ReplicationException` est générée.
 Si la logique de votre application ne nécessite pas de réplication atomique, cette limite peut être dépassée en définissant `ReplicationOptions.setUseAtomicCalls` sur False. Ainsi, un nombre quelconque de chemins d’accès sera accepté, mais des compartiments seront créés en interne pour rester au-dessous de cette limite.
 
-La taille du contenu transmis par appel de réplication ne doit pas dépasser `10 MB`. Cela inclut les nœuds et les propriétés, mais pas les fichiers binaires (les modules de workflow et les modules de contenu sont considérés comme des fichiers binaires).
+La taille du contenu transmis par appel de réplication ne doit pas dépasser `10 MB`. Cela inclut les nœuds et les propriétés, mais pas les fichiers binaires (les packages de workflow et les packages de contenu sont considérés comme des fichiers binaires).
 
 
 ## Résolution des problèmes {#troubleshooting}

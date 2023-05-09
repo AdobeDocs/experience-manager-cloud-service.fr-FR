@@ -5,7 +5,7 @@ exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
 source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
 workflow-type: tm+mt
 source-wordcount: '1160'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ## Objectif {#purpose}
 
-Sling Resource Merger propose des services pour accéder à des ressources et les fusionner. Il fournit des mécanismes de différenciation (diff) pour les deux éléments suivants :
+Sling Resource Merger fournit des services pour accéder aux ressources et les fusionner. Il fournit des mécanismes de différenciation pour les deux :
 
 * **[Recouvrements](/help/implementing/developing/introduction/overlays.md)** de ressources à l’aide de [chemins de recherche](/help/implementing/developing/introduction/overlays.md#search-paths).
 
@@ -121,9 +121,9 @@ Ainsi, dans l’exemple de recouvrement ci-dessus, les nœuds suivants sont néc
 
 ### Cas d’utilisation {#use-cases}
 
-Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d’effectuer les opérations suivantes :
+Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’effectuer les opérations suivantes :
 
-* **Ajouter une propriété**
+* **Ajout d’une propriété**
 
    La propriété n’existe pas dans la définition `/libs`, mais elle est requise dans le recouvrement/remplacement `/apps`.
 
@@ -137,13 +137,13 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
    1. Créez le nœud correspondant dans `/apps`.
    1. Créez la propriété correspondante sur ce nœud (sous /`apps`).
 
-      * La priorité de la propriété sera basée sur la configuration de Sling Resource Resolver.
-      * Le type de la propriété peut être modifié.
+      * La propriété aura une priorité basée sur la configuration Sling Resource Resolver.
+      * La modification du type de propriété est prise en charge.
 
          Si vous utilisez un type de propriété différent de celui utilisé dans `/libs`, c’est le type que vous avez défini qui sera utilisé.
    >[!NOTE]
    >
-   >Le type de la propriété peut être modifié.
+   >La modification du type de propriété est prise en charge.
 
 * **Redéfinir une propriété créée automatiquement**
 
@@ -158,17 +158,17 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
 
    Le nœud et ses enfants sont définis dans `/libs`, mais une nouvelle configuration est requise dans le recouvrement/remplacement de `/apps`.
 
-   1. Combinez les actions des opérations suivantes :
+   1. Combinez les actions des éléments suivants :
 
-      1. Masquer les enfants d’un nœud (conserver les propriétés du nœud).
-      1. Redéfinir la (les) propriétés.
+      1. Masquer les enfants d’un noeud (en conservant les propriétés du noeud)
+      1. Redéfinir la propriété/les propriétés
 
 * **Masquer une propriété**
 
    La propriété est définie dans `/libs`, mais elle n’est pas requise dans le recouvrement/remplacement de `/apps`.
 
    1. Créez le nœud correspondant dans `/apps`.
-   1. Créez une propriété `sling:hideProperties` de type `String` ou `String[]`. Utilisez-la pour spécifier les propriétés à masquer/ignorer. Des caractères génériques peuvent également être utilisés. Par exemple :
+   1. Créez une propriété `sling:hideProperties` de type `String` ou `String[]`. Utilisez cette option pour spécifier les propriétés à masquer/ignorer. Vous pouvez également utiliser des caractères génériques. Par exemple :
 
       * `*`
       * `["*"]`
@@ -182,8 +182,8 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
    1. Créez le nœud correspondant sous /apps.
    1. Créez une propriété `sling:hideResource`
 
-      * type: `Boolean`
-      * value: `true`
+      * type : `Boolean`
+      * value : `true`
 
 * **Masquer les enfants d’un nœud (tout en conservant les propriétés du nœud)**
 
@@ -192,7 +192,7 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :
 
-      * type : `String[]`
+      * type : `String[]`
       * value : liste des nœuds enfants (tels que définis dans `/libs`) à masquer/ignorer
 
       Le caractère générique &amp;ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
@@ -209,16 +209,16 @@ Ces éléments, en liaison avec les fonctionnalités standard, vous permettent d
 
          Cela spécifie le nœud (comme dans `/libs`) devant lequel le nœud actif doit être positionné :
 
-         * type : `String`
-         * value: `<before-SiblingName>`
+         * type : `String`
+         * value : `<before-SiblingName>`
 
 ### Appel de Sling Resource Merger à partir de votre code {#invoking-the-sling-resource-merger-from-your-code}
 
-Sling Resource Merger comprend deux fournisseurs de ressources personnalisés : un pour les recouvrements et un autre pour les remplacements. Chacun d’eux peut être appelé dans votre code en utilisant un point de montage :
+Sling Resource Merger comprend deux fournisseurs de ressources personnalisés : un pour les recouvrements et un autre pour les remplacements. Chacun d’eux peut être appelé dans votre code à l’aide d’un point de montage :
 
 >[!NOTE]
 >
->Lorsque vous accédez à votre ressource, il est conseillé d’utiliser le point de montage approprié.
+>Lors de l’accès à votre ressource, il est recommandé d’utiliser le point de montage approprié.
 >
 >De cette manière, vous avez la garantie que Sling Resource Merger est appelé et que la ressource entièrement fusionnée est renvoyée (réduction de la structure qui doit être répliquée à partir de `/libs`).
 

@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.6.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 2c72973b-5a51-4744-bf88-50da0013ba31
-source-git-commit: 7b21a8af886c8e1f209e3b7cc5d94de5c58be1ac
+source-git-commit: 9a08514f11c86b783ae68940a0c3c58fcada3dc2
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 100%
@@ -107,7 +107,7 @@ La prochaine version est prévue pour le 15 juillet 2021.
 ### Correctifs d’[!DNL Assets]  {#bugs-fixed-assets}
 
 * Lors de l’ajout d’un propriétaire à un sous-dossier, [!DNL Assets] ajoute également le même utilisateur qu’un propriétaire du dossier parent. (CQ-4323737)
-* Lors de l’ajout de ressources aux collections, si un utilisateur applique un filtre sur la recherche Collections, il ne peut pas afficher les collections en mode Liste. (CQ-4323181)
+* Lors de l’ajout de ressources aux collections, si un utilisateur applique un filtre sur la recherche Collections, il ne peut pas afficher les collections dans la vue Liste. (CQ-4323181)
 * Lors de la recherche de fichiers et de dossiers, si l’utilisateur applique un filtre et sélectionne [!UICONTROL Fichiers et dossiers], seuls les fichiers sont affichés, mais pas le dossier. (CQ-4319543)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}

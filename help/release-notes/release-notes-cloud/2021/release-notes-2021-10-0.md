@@ -81,7 +81,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 * Les auteurs peuvent ajouter des liens vers les pages de produits et de catalogues dans les champs de texte à l’aide de l’éditeur de texte enrichi (RTE). Une icône CIF a été ajoutée à la barre d’outils de l’éditeur de texte enrichi pour ouvrir les sélecteurs afin de rechercher et sélectionner rapidement le produit ou la catégorie sans quitter le contexte.
 
-* Les fenêtres contextuelles de panier et de passage en caisse existantes ont été remplacées par des pages de panier et de passage en caisse AEM dédiées. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
+* Les fenêtres pop-up de panier et de passage en caisse existantes ont été remplacées par des pages de panier et de passage en caisse AEM dédiées. Les composants de ces pages sont créés à l’aide des composants Peregrine extensibles d’Adobe Commerce.
 
 * Les commerces peuvent masquer certaines catégories de catalogues de produits lors de la navigation à l’aide du serveur principal de Commerce. Le composant principal de navigation CIF respecte la configuration du serveur principal de Commerce « inclure dans le menu » pour afficher/masquer les catégories dans la navigation.
 
@@ -121,7 +121,7 @@ La prochaine version est prévue pour le 09 décembre 2021.
 
 * L’API Modifier un pipeline prend désormais en charge la modification de l’environnement utilisé lors des phases de déploiement.
 
-* Une optimisation du processus d’analyse OakPal a été introduite pour les modules volumineux.
+* Une optimisation du processus d’analyse OakPal a été introduite pour les packages volumineux.
 
 * Le fichier CSV de problème de qualité contient désormais l’horodatage de chaque problème.
 

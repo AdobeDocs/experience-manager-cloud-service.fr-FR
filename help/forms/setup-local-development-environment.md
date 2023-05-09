@@ -4,8 +4,8 @@ description: Configuration d’un environnement de développement local pour Ado
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
 source-git-commit: a1b186fec2d6de0934ffebc96967d36a967c044e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '3042'
+ht-degree: 96%
 
 ---
 

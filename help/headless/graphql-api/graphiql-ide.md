@@ -21,7 +21,7 @@ Une mise en œuvre de l’IDE [GraphQL](https://graphql.org/learn/serving-over-h
 >Dans les versions précédentes, un package était nécessaire pour installer l’IDE GraphiQL. Si vous l’avez installé, il peut désormais être supprimé.
 
 >[!NOTE]
->Vous devez avoir [configuré vos points de fin](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
+>Vous devez avoir [configuré vos points d’entrée](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
 
 
 L’outil **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :

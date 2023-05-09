@@ -7,7 +7,7 @@ exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
 source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
 workflow-type: tm+mt
 source-wordcount: '2898'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -18,15 +18,15 @@ Les modèles de fragment de contenu dans AEM définissent la structure du conten
 Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
 1. [Activez la fonctionnalité Modèle de fragment de contenu pour votre instance.](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md)
-1. [Créer](#creating-a-content-fragment-model) et [configurer](#defining-your-content-fragment-model) vos modèles de fragments de contenu
+1. [Créez](#creating-a-content-fragment-model) et [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu.
 1. [Activez vos modèles de fragment de contenu](#enabling-disabling-a-content-fragment-model) à utiliser lors de la création de fragments de contenu.
-1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources](#allowing-content-fragment-models-assets-folder) en configurant des **stratégies**.
+1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources requis](#allowing-content-fragment-models-assets-folder) en configurant des **politiques**.
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
 1. Accédez à **Outils**, **Général**, puis ouvrez les **modèles de fragment de contenu**.
 1. Accédez au dossier adapté à votre [configuration, ou sous-configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md).
-1. Utilisez le bouton **Créer** pour ouvrir l’assistant.
+1. Utilisation **Créer** pour ouvrir l’assistant.
 
    >[!CAUTION]
    >
@@ -36,7 +36,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 
    ![titre et description](assets/cfm-models-02.png)
 
-1. Utilisez le bouton **Créer** pour enregistrer le modèle vide. Un message indique que l’action a réussi. Vous pouvez alors sélectionner **Ouvrir** pour publier immédiatement le modèle ou **Terminé** pour revenir à la console.
+1. Utilisation **Créer** pour enregistrer le modèle vide. Un message indique le succès de l’action. Vous pouvez sélectionner **Ouvrir** pour modifier immédiatement le modèle ; ou **Terminé** pour revenir à la console.
 
 ## Définition de votre modèle de fragment de contenu {#defining-your-content-fragment-model}
 
@@ -49,9 +49,9 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 1. Accédez à **Outils**, **Général**, puis ouvrez les **modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Ouvrez le modèle requis pour l’**édition**. Utilisez l’action rapide ou sélectionnez le modèle puis l’action dans la barre d’outils.
+1. Ouvrez le modèle requis pour **Modifier**; utilisez l’action rapide ou sélectionnez le modèle, puis l’action dans la barre d’outils.
 
-   Une fois ouvert, l’éditeur de modèles affiche :
+   Une fois ouvert, l’éditeur de modèles affiche :
 
    * à gauche : les champs déjà définis
    * à droite : les **types de données** disponibles pour la création des champs (et les **propriétés** à utiliser une fois les champs créés).
@@ -78,7 +78,6 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
          >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
          >
          >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
-
       Par exemple :
 
       ![propriétés de champ](assets/cfm-models-05.png)
@@ -86,7 +85,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
 1. **Pour supprimer un champ**
 
-   Sélectionnez le champ, puis cliquez/appuyez sur l’icône représentant une corbeille. Vous serez alors invité à confirmer l’opération.
+   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône corbeille. Vous serez alors invité à confirmer l’opération.
 
    ![supprimer](assets/cfm-models-06.png)
 
@@ -231,10 +230,10 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >AEM dispose d’une protection récurrente pour :
 >
 >* Références du contenu
->  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
+   >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
 >* Références de fragment dans GraphQL
->  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
+   >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 
 ### Référence de contenu {#content-reference}
@@ -360,21 +359,21 @@ Pour désactiver un modèle marqué comme **Activé**, utilisez l’option **Dé
 
 ## Autorisation de modèles de fragments de contenu dans votre dossier de ressources {#allowing-content-fragment-models-assets-folder}
 
-Pour mettre en œuvre une gouvernance du contenu, vous pouvez configurer des **Stratégies** sur le dossier de ressources pour contrôler les modèles de fragment de contenu autorisés pour la création de fragments dans ce dossier.
+Pour mettre en œuvre une gouvernance du contenu, vous pouvez configurer des **Politiques** sur le dossier de ressources pour contrôler les modèles de fragment de contenu autorisés pour la création de fragments dans ce dossier.
 
 >[!NOTE]
 >
 >Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
 
-Pour configurer les **stratégies** des **modèles de fragments de contenu autorisés** :
+Pour configurer les **politiques** des **modèles de fragments de contenu autorisés** :
 
 1. Recherchez et ouvrez les **Propriétés** pour le dossier de ressources requis.
 
-1. Ouvrez l’onglet **Stratégies** pour configurer les éléments suivants :
+1. Ouvrez l’onglet **Politiques** pour configurer les éléments suivants :
 
    * **Hérité de`<folder>`**
 
-      Les stratégies sont automatiquement héritées lors de la création de dossiers enfants ; il peut se produire une reconfiguration de la stratégie (et une rupture de l’héritage) si des sous-dossiers doivent autoriser des modèles différents du dossier parent.
+      Les politiques sont automatiquement héritées lors de la création de dossiers enfants ; il peut se produire une reconfiguration de la politique (et une rupture de l’héritage) si des sous-dossiers doivent autoriser des modèles différents du dossier parent.
 
    * **Modèles de fragments de contenu autorisés par chemin**
 
@@ -383,13 +382,13 @@ Pour configurer les **stratégies** des **modèles de fragments de contenu autor
    * **Modèles de fragments de contenu autorisés par balise**
 
       Il est possible d’autoriser plusieurs modèles.
-   ![Stratégie de modèle de fragment de contenu](assets/cfm-model-policy-assets-folder.png)
+   ![Politique de modèle de fragment de contenu](assets/cfm-model-policy-assets-folder.png)
 
 1. **Enregistrez** les modifications.
 
 Les modèles de fragment de contenu autorisés pour un dossier sont résolus comme suit :
-* **Stratégies** pour les **modèles de fragments de contenu autorisés**.
-* Si elles sont absentes, essayez de déterminer la stratégie à l’aide des règles d’héritage.
+* **Politiques** pour les **modèles de fragments de contenu autorisés**.
+* Si elles sont absentes, essayez de déterminer la politique à l’aide des règles d’héritage.
 * Si la chaîne d’héritage ne produit pas de résultat, examinez la configuration de **Services cloud** pour ce dossier (directement dans un premier temps, puis par héritage).
 * Si aucun des éléments ci-dessus ne donne de résultats, il n’existe aucun modèle autorisé pour ce dossier.
 
@@ -399,22 +398,22 @@ Les modèles de fragment de contenu autorisés pour un dossier sont résolus com
 >
 >La suppression d’un modèle de fragment de contenu peut avoir un impact sur les fragments dépendants.
 
-Pour supprimer un modèle de fragment de contenu :
+Pour supprimer un modèle de fragment de contenu :
 
 1. Accédez à **Outils**, **Général**, puis ouvrez les **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Sélectionnez votre modèle, puis utilisez l’option **de suppression** de la barre d’outils.
+1. Sélectionnez votre modèle, puis **Supprimer** dans la barre d’outils.
 
    >[!NOTE]
    >
-   >Si le modèle est référencé, un avertissement s’affiche. Prenez alors les mesures qui s’imposent.
+   >Si le modèle est référencé, un avertissement s’affiche. Agissez de manière appropriée.
 
 ## Publication d’un modèle de fragment de contenu {#publishing-a-content-fragment-model}
 
 Les modèles de fragment de contenu doivent être publiés avant ou pendant la publication des fragments de contenu dépendants.
 
-Pour publier un modèle de fragment de contenu :
+Pour publier un modèle de fragment de contenu :
 
 1. Accédez à **Outils**, **Général**, puis ouvrez les **Modèles de fragment de contenu**.
 
@@ -426,21 +425,21 @@ L’état publié sera indiqué dans la console.
    >
    >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
-## Annulation de la publication d’un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
+## Dépublication d’un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
 
-Les modèles de fragment de contenu peuvent être annulés s’ils ne sont référencés par aucun fragment.
+Les modèles de fragment de contenu peuvent être dépubliés s’ils ne sont référencés par aucun fragment.
 
-Pour annuler la publication d’un modèle de fragment de contenu :
+Pour dépublier un modèle de fragment de contenu :
 
 1. Accédez à **Outils**, **Général**, puis ouvrez les **Modèles de fragment de contenu**.
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
-1. Sélectionnez votre modèle, puis l’option **Annuler la publication** dans la barre d’outils.
+1. Sélectionnez votre modèle, puis l’option **Dépublier** dans la barre d’outils.
 L’état publié sera indiqué dans la console.
 
-Si vous essayez d’annuler la publication d’un modèle actuellement utilisé par un ou plusieurs fragments, un avertissement d’erreur vous en informe :
+Si vous essayez de dépublier un modèle actuellement utilisé par un ou plusieurs fragments, un avertissement d’erreur vous en informe :
 
-![Message d’erreur de modèle de fragment de contenu lors de l’annulation de la publication d’un modèle en cours d’utilisation](assets/cfm-model-unpublish-error.png)
+![Message d’erreur de modèle de fragment de contenu lors de la dépublication d’un modèle en cours d’utilisation](assets/cfm-model-unpublish-error.png)
 
 Le message vous invite à vérifier le panneau [Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references) pour en savoir plus :
 

@@ -31,7 +31,7 @@ Consultez la section ci-dessous pour comprendre les points importants à prendre
 
 * Chaque jeu de migration copiera l’ensemble de l’entrepôt de données. Par conséquent, un seul jeu de migration doit être utilisé.
 
-* Vous devez accéder à [AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) sur l’instance (ou la machine virtuelle) exécutant l’instance AEM source.
+* Vous devez accéder à [AzCopy](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) sur l’instance (ou la machine virtuelle) exécutant l’instance AEM source.
 
 * Le nettoyage de la mémoire d’entrepôt de données a été exécuté au cours des 7 jours précédents sur la source. Pour plus d’informations, voir [Récupération de l’espace mémoire de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=fr#data-store-garbage-collection).
 
@@ -85,12 +85,12 @@ Vous pouvez utiliser l’onglet Mesures du conteneur pour déterminer la taille 
 
 ### 1. Installez AzCopy {#install-azcopy}
 
-[AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) est un outil de ligne de commande fourni par Microsoft qui doit être disponible sur l’instance source pour activer cette fonctionnalité.
+[AzCopy](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) est un outil de ligne de commande fourni par Microsoft qui doit être disponible sur l’instance source pour activer cette fonctionnalité.
 
-En résumé, vous voudrez probablement télécharger le binaire Linux x86-64 à partir de la [page de documents AzCopy](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) et le décompresser à un emplacement tel que /usr/bin.
+En résumé, vous voudrez probablement télécharger le binaire Linux x86-64 à partir de la [page de documents AzCopy](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) et le décompresser à un emplacement tel que /usr/bin.
 
 >[!IMPORTANT]
->Prenez note de l’emplacement où vous avez placé le fichier binaire, car vous aurez besoin du chemin d’accès complet pour celui-ci à une étape ultérieure.
+>Prenez note de l’emplacement auquel vous avez placé le fichier binaire, car vous aurez besoin du chemin d’accès complet pour celui-ci à une étape ultérieure.
 
 ### 2. Installez une version de l’outil de transfert de contenu (CTT) avec la prise en charge d’AzCopy. {#install-ctt-azcopy-support}
 
@@ -125,7 +125,7 @@ Votre fichier azcopy.config doit inclure les propriétés suivantes (veillez à 
 
 >[!NOTE]
 >
-> Si votre instance utilise des rôles IAM pour permettre à AEM d’accéder à S3, vous devez créer une stratégie et un utilisateur avec les actions ListBucket et GetObject activées pour le compartiment S3. Une fois configuré, utilisez la clé d’accès et la clé secrète de cet utilisateur.
+> Si votre instance utilise des rôles IAM pour permettre à AEM d’accéder à S3, vous devez créer une politique et un utilisateur avec les actions ListBucket et GetObject activées pour le compartiment S3. Une fois configuré, utilisez la clé d’accès et la clé secrète de cet utilisateur.
 
 ```
 azCopyPath=/usr/bin/azcopy

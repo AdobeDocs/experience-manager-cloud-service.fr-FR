@@ -18,7 +18,7 @@ Découvrez comment utiliser l’API GraphQL pour une diffusion découplée du co
 [Maintenant que vous avez créé des fragments de contenu](create-content-fragment.md), vous pouvez utiliser les API d’AEM pour une diffusion découplée.
 
 * [L’API GraphQL](/help/headless/graphql-api/content-fragments.md) permet de créer des requêtes d’accès et de diffusion de fragments de contenu. Cette API offre l’ensemble de fonctionnalités le plus robuste pour interroger et utiliser du contenu de fragment de contenu.
-   * Pour l’utiliser, les [points de fin doivent être définis et activés dans AEM](/help/headless/graphql-api/graphql-endpoint.md), et si nécessaire, l’[interface GraphiQL installée](/help/headless/graphql-api/graphiql-ide.md).
+   * Pour l’utiliser, les [points d’entrée doivent être définis et activés dans AEM](/help/headless/graphql-api/graphql-endpoint.md), et si nécessaire, l’[interface GraphiQL installée](/help/headless/graphql-api/graphiql-ide.md).
 * [L’API REST Assets](/help/assets/content-fragments/assets-api-content-fragments.md) permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
 Le reste de ce guide porte sur l’accès à GraphQL et la diffusion de fragments de contenu.

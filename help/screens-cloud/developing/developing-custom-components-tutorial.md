@@ -2,8 +2,8 @@
 title: Développement d’un composant personnalisé pour Screens as a Cloud Service
 description: Le tutoriel suivant décrit les étapes à suivre pour créer un composant personnalisé pour AEM Screens. AEM Screens réutilise de nombreux modèles de conception et technologies existants d’autres produits AEM. Ce tutoriel met en évidence les différences et les considérations spéciales lors du développement pour AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: 421ad8506435e8538be9c83df0b78ad8f222df0c
-workflow-type: ht
+source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 100%
 
@@ -28,12 +28,12 @@ Pour suivre ce tutoriel, vous avez besoin de :
 
 1. Environnement de développement local
 
-Les étapes du tutoriel et les captures d’écran sont effectuées à l’aide de **CRXDE-Lite**. Vous pouvez également utiliser des IDE pour compléter le tutoriel. Vous trouverez plus d’informations sur l’utilisation d’un IDE pour le développement [avec AEM ici.](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html#eclipse-ide)
+Les étapes du tutoriel et les captures d’écran sont effectuées à l’aide de **CRXDE-Lite**. Vous pouvez également utiliser des IDE pour compléter le tutoriel. Vous trouverez plus d’informations sur l’utilisation d’un IDE pour le développement [avec AEM ici.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=fr)
 
 
 ## Configuration du projet {#project-setup}
 
-Le code source d’un projet Screens est généralement géré sous la forme d’un projet Maven multimodule. Pour accélérer le tutoriel, un projet a été prégénéré à l’aide de l’[Archétype de projet AEM 13](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype). Vous trouverez plus de détails sur la [création d’un projet avec l’archétype de projet Maven AEM ici](https://helpx.adobe.com/fr/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html#maven-multimodule).
+Le code source d’un projet Screens est généralement géré sous la forme d’un projet Maven multimodule. Pour accélérer le tutoriel, un projet a été prégénéré à l’aide de l’[Archétype de projet AEM 13](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype). Vous trouverez plus de détails sur la [création d’un projet avec l’archétype de projet Maven AEM ici](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=fr).
 
 1. Téléchargez et installez les packages suivants à l’aide du [gestionnaire de packages CRX](http://localhost:4502/crx/packmgr/index.jsp) :
 
@@ -59,7 +59,7 @@ Le code source d’un projet Screens est généralement géré sous la forme d�
 
 1. Le package **screens-weretail-run.ui.apps** installe le code sous `/apps/weretail-run`.
 
-   Ce package contient le code responsable du rendu des composants personnalisés du projet. Ce package comprend le code de composant et tout code JavaScript ou CSS nécessaire. Ce paquet incorpore également **screens-weretail-run.core-0.0.1-SNAPSHOT.jar** qui contient tout code Java requis par le projet.
+   Ce package contient le code responsable du rendu des composants personnalisés du projet. Ce package comprend le code de composant et tout code JavaScript ou CSS nécessaire. Ce package incorpore également **screens-weretail-run.core-0.0.1-SNAPSHOT.jar** qui contient tout code Java requis par le projet.
 
    >[!NOTE]
    >
@@ -77,7 +77,7 @@ Le code source d’un projet Screens est généralement géré sous la forme d�
    * `/content/dam/we-retail-run`
    * `/content/screens/we-retail-run`
 
-   Ce paquet contient le contenu de départ et la structure de configuration nécessaires pour le projet. **`/conf/we-retail-run`** contient toutes les configurations pour le projet We.Retail Run. **`/content/dam/we-retail-run`** inclut les ressources numériques de départ pour le projet. **`/content/screens/we-retail-run`** contient la structure de contenu Screens. Le contenu sous tous ces chemins est principalement mis à jour dans AEM. Pour assurer la cohérence entre les environnements (local, Dev, Stage, Prod), une structure de contenu de base est souvent enregistrée dans le contrôle des sources.
+   Ce package contient le contenu de départ et la structure de configuration nécessaires pour le projet. **`/conf/we-retail-run`** contient toutes les configurations pour le projet We.Retail Run. **`/content/dam/we-retail-run`** inclut les ressources numériques de départ pour le projet. **`/content/screens/we-retail-run`** contient la structure de contenu Screens. Le contenu sous tous ces chemins est principalement mis à jour dans AEM. Pour assurer la cohérence entre les environnements (local, Dev, Stage, Prod), une structure de contenu de base est souvent enregistrée dans le contrôle des sources.
 
 1. **Accédez au projet AEM Screens > We.Retail Run :**
 
@@ -279,7 +279,7 @@ Les composants d’AEM Screens s’affichent différemment en mode d’édition
 
 1. Ajoutez les propriétés suivantes à la bibliothèque cliente partagée :
 
-   * `allowProxy` | Booléen | `true`
+   * `allowProxy`   Boolean   `true`
 
    * `categories`| Chaîne[] | `cq.screens.components`
 

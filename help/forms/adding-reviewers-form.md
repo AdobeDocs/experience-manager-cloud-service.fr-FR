@@ -11,14 +11,14 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
 
 # Association de réviseurs d’envoi à un formulaire {#associating-submission-reviewers-with-a-form}
 
-Lorsque vous créez un formulaire, vous pouvez spécifier les utilisateurs qui passent en revue les envois du formulaire via le portail de formulaires et qui font part de leur avis. Votre entreprise peut recueillir des avis et retravailler les formulaires envoyés.
+Lorsque vous créez un formulaire, vous pouvez spécifier les utilisateurs qui passent en revue les envois du formulaire via le portail de formulaires et qui font part de leurs commentaires. Votre entreprise peut recueillir des commentaires et retravailler les formulaires envoyés.
 
 [!DNL AEM Forms] vous permet d’associer un groupe de réviseurs à un formulaire. Les utilisateurs ajoutés à un groupe de révision d’un formulaire examinent les envois du formulaire en question et font part de leurs commentaires.
 
@@ -30,10 +30,10 @@ Les groupes de réviseurs assignés à un formulaire peuvent uniquement analyser
 
 Pour associer un groupe de réviseurs à un formulaire, modifiez le schéma de métadonnées des formulaires adaptatifs. Par défaut, vous ne pouvez pas ajouter un groupe de réviseurs à un formulaire envoyé.
 
-Pour modifier le schéma de métadonnées :
+Pour modifier le schéma de métadonnées :
 
-1. En mode Création, sous Experience Manager, cliquez sur **Outils** > **Actifs** > **Schémas de métadonnées**.
-1. Dans la page Formulaires de schéma, accédez à **Formulaires** > **Formulaires créés dans AEM.**
+1. En mode création, sous Experience Manager, cliquez sur **Outils** > **Ressources** > **Schémas de métadonnées**.
+1. Dans la page Forms du schéma, accédez à **Forms** > **Forms Créé dans AEM.**
 
    L’URL de la page est la suivante :
 

@@ -1,41 +1,41 @@
 ---
 title: Exemples de types de module d’IU ContextHub
-description: ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions
+description: ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions.
 exl-id: 31ff4444-8d96-4817-9676-ea5ad36dcda5
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '1126'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
 # Exemples de types de module d’IU ContextHub {#sample-contexthub-ui-module-types}
 
-ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions. Les informations suivantes sont disponibles :
+ContextHub fournit plusieurs exemples de module d’IU que vous pouvez utiliser dans vos solutions. Les informations suivantes sont fournies :
 
-* Les principales fonctionnalités du module IU.
-* L’emplacement du code source pour pouvoir l’ouvrir à des fins de formation.
-* La configuration du module d’IU.
+* Fonctionnalités principales du module d’IU.
+* Où trouver le code source afin de pouvoir l’ouvrir à des fins d’apprentissage.
+* Configuration du module d’IU.
 
-Pour plus d’informations sur l’ajout de modules d’IU à ContextHub, voir [Ajout d’un module d’IU](configuring-contexthub.md#adding-a-ui-module). Pour plus d’informations sur le développement de modules d’IU, voir [Création de types de module d’IU ContextHub](extending-contexthub.md#creating-contexthub-ui-module-types).
+Pour plus d’informations sur l’ajout de modules d’IU à ContextHub, voir [Ajout d’un module d’IU](configuring-contexthub.md#adding-a-ui-module). Pour plus d’informations sur le développement de modules d’IU, voir [Création de types de modules d’IU ContextHub](extending-contexthub.md#creating-contexthub-ui-module-types).
 
 ## Type de module d’IU contexthub.base {#contexthub-base-ui-module-type}
 
 Le type de module d’IU contexthub.base est le type de base pour tous les autres types de module d’IU. En tant que tel, il fournit des fonctionnalités génériques pour le rendu des données de magasin.
 
-Les fonctionnalités suivantes sont disponibles :
+Les fonctionnalités suivantes sont disponibles :
 
 * **Titre et icône :** spécifiez un titre pour le module d’IU et une icône. L’icône peut être référencée à l’aide d’une URL ou de la bibliothèque d’icônes de l’IU Coral.
-* **Données de magasin :** identifiez un ou plusieurs magasins à partir desquels récupérer les données.
-* **Contenu :** spécifiez le contenu visible dans le module d’IU tel qu’il apparaît dans la barre d’outils ContextHub.
+* **Stockage des données :** Identifiez un ou plusieurs magasins à partir desquels récupérer les données.
+* **Contenu :** Spécifiez le contenu qui s’affiche dans le module d’IU tel qu’il apparaît dans la barre d’outils ContextHub.
 * **Contenu de fenêtre contextuelle :** spécifiez le contenu visible dans la fenêtre contextuelle lorsque vous cliquez ou appuyez sur le module d’IU.
-* **Mode plein écran :** contrôle si le mode plein écran est autorisé.
+* **Mode Plein écran :** Permet de contrôler si le mode plein écran est autorisé.
 
 Le code source se trouve dans `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.
 
 ### Configuration {#configuration}
 
-Configurez le module d’IU contexthub.base à l’aide d’un objet JavaScript au format JSON. Ajoutez l’une des propriétés suivantes pour configurer les fonctionnalités du module d’IU :
+Configurez le module d’IU contexthub.base à l’aide d’un objet JavaScript au format JSON. Incluez l’une des propriétés suivantes pour configurer les fonctionnalités du module d’IU :
 
 * **image :** URL d’une image à afficher en tant qu’icône.
 * **icon :** nom d’une classe d’icône [IU Coral](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Si vous spécifiez une valeur pour les propriétés de l’icône et de l’image, l’image est utilisée.
@@ -43,10 +43,10 @@ Configurez le module d’IU contexthub.base à l’aide d’un objet JavaScript 
 * **fullscreen :** valeur booléenne qui indique si le module d’IU prend en charge le mode plein écran. Utilisez `true` pour prendre en charge le mode plein écran et `false` pour ne pas accepter le mode plein écran.
 * **template :** modèle [Handlebars](https://handlebarsjs.com/) qui spécifie le contenu à afficher dans la barre d’outils ContextHub. Utilisez au maximum deux balises `<p>`.
 * **storeMapping :** mappage de clé/magasin. Utilisez la clé dans les modèles Handlebar pour accéder aux données de magasin ContextHub associées.
-* **list :** tableau d’éléments à afficher en tant que liste dans une fenêtre contextuelle lorsque l’on clique sur le module d’IU. Si vous ajoutez cet élément, n’incluez pas popoverTemplate. La valeur est une table d’objets avec les clés suivantes :
-   * title : texte à afficher pour cet élément
-   * image : (facultatif) URL d’une image à afficher sur la gauche
-   * icon : (facultatif) classe d’icônes CIU à afficher sur la gauche et ignorée si une image est spécifiée
+* **list :** tableau d’éléments à afficher en tant que liste dans une fenêtre contextuelle lorsque l’on clique sur le module d’IU. Si vous ajoutez cet élément, n’incluez pas popoverTemplate. La valeur est un tableau d’objets avec les clés suivantes :
+   * title: Le texte à afficher pour cet élément
+   * image : (Facultatif) URL d’une image qui doit être affichée à gauche.
+   * icon : (Facultatif) Une classe d’icône CUI qui doit s’afficher à gauche ; ignoré si une image est spécifiée
    * selected : (facultatif) valeur booléenne qui spécifie si cet élément doit être affiché comme sélectionné (true=selected). Par défaut, les éléments sélectionnés sont visibles en gras. Utilisez une propriété `listType` pour configurer d’autres aspects (voir ci-dessous).
 * **listType :** style à utiliser pour les éléments de liste déroulante. Utilisez l’une des valeurs suivantes :
    * checkmark
@@ -119,7 +119,7 @@ Les instances du module d’IU contexthub.datetime ne requièrent pas de valeur 
 
 ## Type de module d’IU contexthub.location {#contexthub-location-ui-module-type}
 
-Le module d’IU `contexthub.location` affiche la longitude et la latitude du client. Le module présente une fenêtre contextuelle qui affiche une carte Google sur laquelle vous pouvez cliquer pour modifier l’emplacement actuel. Le module obtient des informations à partir d’un magasin ContextHub nommé geolocation et basé sur le magasin candidat [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate).
+Le module d’IU `contexthub.location` affiche la longitude et la latitude du client. Le module présente une fenêtre contextuelle qui affiche une carte Google sur laquelle vous pouvez cliquer pour modifier l’emplacement actuel. Le module obtient des informations à partir d’un magasin ContextHub nommé geolocation et basé sur [contexthub.geolocation](sample-stores.md#contexthub-geolocation-sample-store-candidate) magasin candidat.
 
 ![Module contexthub.location](assets/location-module.png)
 
@@ -210,7 +210,7 @@ Les instances du module d’IU `contexthub.tagcloud` ne nécessitent pas de vale
 
 ## Type de module d’IU granite.profile {#granite-profile-ui-module-type}
 
-Le module d’IU ContextHub `granite.profile` affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle révèle l’identifiant de connexion de l’utilisateur et permet de modifier la valeur du nom affiché. Le module obtient des informations à partir d’un magasin ContextHub nommé tagcloud et basé sur le magasin candidat [granite.profile](sample-stores.md#granite-profile-sample-store-candidate).
+Le module d’IU ContextHub `granite.profile` affiche le nom d’affichage de l’utilisateur actuel. La fenêtre contextuelle révèle l’identifiant de connexion de l’utilisateur et permet de modifier la valeur du nom affiché. Le module obtient des informations à partir d’un magasin ContextHub nommé profile , basé sur la variable [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) magasin candidat.
 
 ![Module granite.profil](assets/profile-module.png)
 

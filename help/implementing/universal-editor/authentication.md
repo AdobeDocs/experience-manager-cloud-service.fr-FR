@@ -1,13 +1,13 @@
 ---
 title: Authentification de l’éditeur universel
 description: Découvrez comment l’éditeur universel s’authentifie.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: fb86c510-3c41-4511-81b7-1bdf2f5e7dd3
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # Authentification de l’éditeur universel {#authentication}
 

@@ -142,9 +142,9 @@ Cette section est d’un niveau légèrement plus avancé. Vous n’en avez pas 
 
 Votre architecte de contenu aura créé tous les modèles de fragment de contenu requis pour votre projet actuel, ainsi que peut-être d’autres projets. Pour vous simplifier les choses ainsi qu’aux autres auteurs, vous pouvez limiter la liste des modèles disponibles pour un dossier spécifique.
 
-Après avoir créé votre dossier, vous pouvez ouvrir ses **Propriétés**. Cette section comporte différents onglets avec des informations et des détails de configuration sur le dossier. Pour les fragments de contenu, vous pouvez notamment utiliser l’onglet **Stratégies** pour définir des chemins d’accès ou des balises spécifiques pour ce dossier. Cette configuration limite les modèles de fragment de contenu disponibles dans le dossier, car cela signifie que les modèles de fragment de contenu doivent satisfaire à ces exigences avant de pouvoir être utilisés pour générer des fragments dans ce dossier.
+Après avoir créé votre dossier, vous pouvez ouvrir ses **Propriétés**. Cette section comporte différents onglets avec des informations et des détails de configuration sur le dossier. Pour les fragments de contenu, vous pouvez notamment utiliser l’onglet **Politiques** pour définir des chemins d’accès ou des balises spécifiques pour ce dossier. Cette configuration limite les modèles de fragment de contenu disponibles dans le dossier, car cela signifie que les modèles de fragment de contenu doivent satisfaire à ces exigences avant de pouvoir être utilisés pour générer des fragments dans ce dossier.
 
-![Création de propriétés de dossier – Stratégies](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
+![Création de propriétés de dossier – Politiques](/help/journey-headless/author/assets/headless-journey-author-folder-04.png)
 
 >[!NOTE]
 >

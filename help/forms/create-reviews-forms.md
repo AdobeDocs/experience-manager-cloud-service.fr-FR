@@ -4,10 +4,11 @@ seo-title: Creating and managing reviews in forms
 description: Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajouter des commentaires sur un élément disponible dans un formulaire.
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
 topic-tags: forms-manager
-source-git-commit: 400e9fa0263b3e9bdae10dc80d524b291f99496d
-workflow-type: ht
+exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '670'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
@@ -41,7 +42,7 @@ Une révision est un mécanisme permettant à un ou plusieurs réviseurs ou rév
 Cette section décrit ce qui se produit lorsqu’une révision est créée ou configurée.
 
 1. Une tâche de révision est créée et affectée à la personne qui vient d’être ajoutée.
-1. Tous les réviseurs se voient affecter une tâche de révision. La tâche apparaît dans leur section Notification. Le réviseur peut soit cliquer sur une notification, soit accéder à la boîte de réception pour afficher la tâche. Le réviseur peut cliquer pour ouvrir la tâche de révision, afficher le formulaire et commencer à ajouter des commentaires.
+1. Une tâche de révision est affectée à tous les réviseurs. La tâche apparaît dans la section Notifications. Un réviseur peut cliquer sur une notification ou accéder à la boîte de réception pour afficher la tâche. Le réviseur peut cliquer pour ouvrir la tâche de révision, afficher le formulaire et commencer à ajouter des commentaires.
 
    ![Alerte de notification du réviseur](assets/review-notification-img.png)
 
@@ -53,7 +54,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
 >[!NOTE]
 >
->Seules les révisions en cours peuvent être modifiées. La modification des révisions terminées est donc impossible.
+>Seules les révisions en cours peuvent être modifiées. Les révisions terminées ne peuvent pas être modifiées.
 
 1. Accédez à l’onglet Formulaires et sélectionnez un formulaire.
 
@@ -71,7 +72,7 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
    * **Échéance** : peut être modifiée. Vous pouvez modifier l’échéance selon n’importe quelle date et heure au-delà de la date et de l’heure actuelles.
 
-   * **Nom du réviseur** : peut être modifié. Vous pouvez ajouter ou supprimer des réviseurs. Si une tâche est échue, vous ne pourrez ajouter des réviseurs qu’après avoir étendu l’échéance au-delà de la date actuelle.
+   * **Nom du réviseur** : peut être modifié. Vous pouvez ajouter ou supprimer des réviseurs. Si une tâche est en retard, vous ne pouvez ajouter des réviseurs qu&#39;après avoir prolongé l&#39;échéance au-delà de la date actuelle.
 
 1. Modifiez les champs nécessaires, puis cliquez sur Terminé.
 
@@ -94,7 +95,7 @@ Cette section décrit ce qui se produit lorsque vous modifiez ou mettez fin à u
 
    Suppression d’un réviseur
 
-   1. Si la tâche affectée est incomplète, elle est terminée.
+   1. Si elle est incomplète, la tâche affectée est arrêtée.
    1. Le réviseur ou la réviseuse ne peut plus ajouter de commentaires dans le formulaire.
 
 1. Si un réviseur est ajouté :
@@ -108,9 +109,7 @@ Cette section décrit ce qui se produit lorsque vous modifiez ou mettez fin à u
 
 1. Lorsqu’une révision est terminée :
 
-   1. **Réviseurs** : pour chaque réviseur, il est mis fin à la tâche incomplète associée à la révision. La tâche n’apparaît plus avec l’état « Pending » (En attente) dans la section Notifications du réviseur.
-   1. **Initiateur** : la tâche affectée à l’initiateur de la révision est marquée comme étant terminée. La tâche est supprimée de la section de notification de l’initiateur de la révision.
-   1. **Tous** : la révision s’affiche dans la section des révisions précédentes. Plus aucun commentaire ne peut être ajouté.
+   1. **Réviseurs**: Pour chaque validant, la tâche incomplète associée à la révision est terminée. La tâche n’apparaît plus comme &quot;En attente&quot; dans la section Notifications du réviseur.
+   1. **Initiateur**: La tâche affectée à l’initiateur de la révision est marquée comme étant terminée. La tâche est supprimée de la section Notification de l’initiateur de la révision.
+   1. **Tous**: La révision s’affiche dans la section Révisions précédentes . Aucun autre commentaire ne peut être ajouté.
       ![Révision terminée](assets/review-complete-imgg.png).
-
-

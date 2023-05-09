@@ -44,7 +44,7 @@ Voir aussi [Formats 3D pris en charge par Experience Manager Assets](/help/asset
 
 Le composant 3D Media WCM et l’aperçu 3D sur la page Détails d’une ressource ne sont pas compatibles avec la dernière version de Chrome (97.x). Pour utiliser des ressources 3D, utilisez plutôt Firefox ou Safari ou une version antérieure de Chrome (96.x).
 
-## Démarrage rapide : ressources 3D dans Dynamic Media {#quick-start-three-d}
+## Démarrage rapide : ressources 3D dans Dynamic Media {#quick-start-three-d}
 
 La description du workflow étape par étape qui suit est conçue pour vous aider à démarrer et à utiliser rapidement des ressources 3D dans Dynamic Media.
 
@@ -74,7 +74,7 @@ Voir [Configuration des Cloud Services Dynamic Media](/help/assets/dynamic-medi
 
 
 
-1. **Publication de ressources 3D**
+1. **Publication de ressources 3D**
 
    * [Publication de ressources 3D Dynamic Media statiques](#publishing-three-d-assets)
    * [Autres méthodes de publication de ressources 3D Dynamic Media à l’aide de la visionneuse Dimensionnel](#alternate-publish-methods)
@@ -83,7 +83,7 @@ Voir [Configuration des Cloud Services Dynamic Media](/help/assets/dynamic-medi
 
 Cette section décrit deux manières différentes d’afficher des ressources 3D et d’interagir avec elles : dans la page des détails de la ressource et dans le composant Média 3D de Sites.
 
-La visionneuse 3D interactive comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
+La visionneuse 3D interactive comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
 
 Le délai nécessaire pour ouvrir une ressource 3D dans la page de détails de la ressource dépend de plusieurs facteurs. Ces facteurs sont notamment :
 
@@ -136,7 +136,7 @@ Lorsqu’une page web est en mode **[!UICONTROL Édition]**, aucune interaction 
 
 Voir aussi [Prévisualisation de ressources à l’aide de l’interface logicielle](/help/assets/dynamic-media/previewing-assets.md).
 
-**Pour afficher et interagir avec une ressource 3D dans un composant Média 3D:**
+**Pour afficher et interagir avec une ressource 3D dans un composant Média 3D :**
 
 1. Lorsqu’une page web est en mode **[!UICONTROL Édition]**, effectuez l’une des opérations suivantes :
 
@@ -176,9 +176,9 @@ Dynamic Media contient un composant Média 3D Dynamic Media que vous pouvez util
    ![3d-media-component-structure](/help/assets/dynamic-media/assets/3d-media-component-structurea.png)
 
 1. Pour sélectionner une zone vide et ouvrir sa barre d’outils associée, sélectionnez la zone vide dans la région **[!UICONTROL Conteneur de mises en page]**.
-1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Stratégie]** pour ouvrir l’**[!UICONTROL Éditeur de stratégies]**.
-1. Dans la section **[!UICONTROL Propriétés]**, sous l’onglet **[!UICONTROL Composants autorisés]**, faites défiler l’écran jusqu’à **[!UICONTROL Dynamic Media]**, puis développez la liste et cochez la case **[!UICONTROL Média 3D]**.
-1. Appuyez sur **[!UICONTROL Terminé]** pour enregistrer les modifications et fermer l’**[!UICONTROL Éditeur de stratégies]**.
+1. Dans la barre d’outils, sélectionnez l’icône **[!UICONTROL Politique]** pour ouvrir l’**[!UICONTROL Éditeur de politiques]**.
+1. Dans la section **[!UICONTROL Propriétés]**, sous l’onglet **[!UICONTROL Composants autorisés]**, faites défiler l’écran jusqu’à **[!UICONTROL Dynamic Media]**, puis développez la liste et cochez la case **[!UICONTROL Média 3D]**.
+1. Appuyez sur **[!UICONTROL Terminé]** pour enregistrer les modifications et fermer l’**[!UICONTROL Éditeur de politiques]**.
 
    Vous pouvez maintenant incorporer le composant Média 3D Dynamic Media dans toutes les pages qui utilisent ce modèle.
 
@@ -237,11 +237,11 @@ Voir [Ajouter le composant Média 3D à une page web](#adding-the-three-d-media-
 
 ## Publication de ressources 3D Dynamic Media statiques {#publishing-three-d-assets}
 
-Dynamic Media accepte différents formats de fichiers 3D pris en charge en tant que *contenu statique* dans Dynamic Media. La notion de contenu statique signifie que vous pouvez charger et publier des ressources 3D, mais que les fonctions d’imagerie *dynamique* ou de retouche d’images associées à la ressource 3D ne sont pas prises en charge. En effet, Dynamic Media Imaging Server ne reconnaît pas les formats 3D. Ainsi, après avoir publié une ressource 3D dans Dynamic Media, vous disposez d’une URL instantanée que vous pouvez copier. L’URL de la ressource 3D suit la structure d’URL Dynamic Media habituelle. Cependant, vous ne pouvez pas modifier les paramètres de l’URL de la ressource, contrairement aux ressources d’images traditionnelles de Dynamic Media.
+Dynamic Media accepte différents formats de fichiers 3D pris en charge en tant que *contenu statique* dans Dynamic Media. La notion de contenu statique signifie que vous pouvez charger et publier des ressources 3D, mais que les fonctions d’imagerie *dynamique* ou de retouche d’images associées à la ressource 3D ne sont pas prises en charge. En effet, Dynamic Media Imaging Server ne reconnaît pas les formats 3D. Ainsi, après avoir publié une ressource 3D dans Dynamic Media, vous disposez d’une URL instantanée que vous pouvez copier. L’URL de la ressource 3D suit la structure d’URL Dynamic Media habituelle. Cependant, vous ne pouvez pas modifier les paramètres de l’URL de la ressource, contrairement aux ressources d’images traditionnelles de Dynamic Media.
 
 Voir également [Obtenir une URL pour une ressource statique](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-a-static-asset).
 
-En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’une ressource, et à gauche de ses informations de date et d’heure, pour indiquer qu’elle est publiée. En **[!UICONTROL mode Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
+En **[!UICONTROL mode Carte]**, une petite icône en forme de globe apparaît directement sous le nom d’une ressource, et à gauche de ses informations de date et d’heure, pour indiquer qu’elle est publiée. Dans la vue **[!UICONTROL Liste]**, une colonne **[!UICONTROL Publié]** indique les ressources qui sont publiées et celles qui ne le sont pas.
 
 Si vous utilisez [!DNL Experience Manager] comme système de gestion de contenu web, utilisez cette méthode de publication pour ajouter directement les ressources 3D Dynamic Media dans votre page web.
 
@@ -249,7 +249,7 @@ Voir aussi [Publication de ressources Dynamic Media](/help/assets/dynamic-media/
 
 Voir aussi [Publier des pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md).
 
-**Pour publier des ressources 3D Dynamic Media statiques:**
+**Pour publier des ressources 3D Dynamic Media statiques, suivez les étapes suivantes :**
 
 1. Ouvrez une ressource 3D (format de fichier GLB, OBJ ou STL).
 1. Sur la page de Détails, dans la barre d’outils, sélectionnez **[!UICONTROL Publication rapide]**.

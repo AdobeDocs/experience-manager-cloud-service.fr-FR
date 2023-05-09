@@ -48,8 +48,8 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 >[!MORELIKETHIS]
 >
 >* [À propos d’Adobe Asset Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)
->* [Configuration de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html)
->* [Configuration d’Experience Manager pour une utilisation avec Asset Link](https://helpx.adobe.com/enterprise/using/configure-aem-assets-for-asset-link.html)
+>* [Configuration de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/configure-aem-assets-with-brand-portal.html?lang=fr)
+>* [Configuration d’Experience Manager pour une utilisation avec Asset Link](https://helpx.adobe.com/fr/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Création d’un workflow dans Experience Manager à l’aide de microservices de ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=fr#post-processing-workflows)
 
 
@@ -69,6 +69,6 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 * Les liens vers l’environnement d’évaluation sur la page des détails d’exécution de pipeline ne menaient pas toujours à l’emplacement correct.
 * Les étapes individuelles du processus de création d’environnement expiraient plus tôt que nécessaire, provoquant l’échec du processus.
 * La configuration Maven utilisée dans le conteneur de build a été mise à jour afin d’éviter les blocages lors du téléchargement des métadonnées d’artefact.
-* Dans certains cas, l’étape de création d’image ne parvenait pas à télécharger les modules clients.
+* Dans certains cas, l’étape de création d’image ne parvenait pas à télécharger les packages clients.
 * Certaines conditions peu fréquentes empêchaient la suppression des environnements.
 * Les notifications Experience Cloud n’étaient pas toujours reçues.

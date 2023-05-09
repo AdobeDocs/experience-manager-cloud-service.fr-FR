@@ -2,8 +2,8 @@
 title: Ajout d’un certificat SSL
 description: Découvrez comment ajouter votre propre certificat SSL à l’aide des outils en libre-service de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: 14e0255b3ce2ca44579b9fc3de6c7b7f5d8f34b6
-workflow-type: ht
+source-git-commit: d0d4b22cdca02d81ca755e4045ffccb110739303
+workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 100%
 
@@ -80,15 +80,15 @@ Une fois enregistré, votre certificat s’affiche sous la forme d’une nouvell
 
 Certaines erreurs peuvent se produire si un certificat n’est pas installé correctement ou répond aux exigences de Cloud Manager.
 
-### Stratégie de certificat {#certificate-policy}
+### Politique de certificat {#certificate-policy}
 
-Si l’erreur suivante s’affiche, veuillez vérifier la stratégie de votre certificat.
+Si l’erreur suivante s’affiche, veuillez vérifier la politique de votre certificat.
 
 ```text
 Certificate policy must conform with EV or OV, and not DV policy.
 ```
 
-Normalement, les stratégies de certificat sont identifiées par des valeurs OID incorporées. La génération d’un certificat dans du texte et la recherche de l’OID révèleront la stratégie du certificat.
+Normalement, les politiques de certificat sont identifiées par des valeurs OID incorporées. La génération d’un certificat dans du texte et la recherche de l’OID révèleront la politique du certificat.
 
 Vous pouvez générer les détails de votre certificat sous forme de texte à l’aide de l’exemple suivant comme guide.
 
@@ -109,15 +109,15 @@ certificate:
 ...
 ```
 
-Le modèle OID dans le texte définit le type de stratégie du certificat.
+Le modèle OID dans le texte définit le type de politique du certificat.
 
-| Modèle | Stratégie | Possible dans Cloud Manager |
+| Modèle | Politique | Possible dans Cloud Manager |
 |---|---|---|
 | `2.23.140.1.1` | EV | Oui |
 | `2.23.140.1.2.2` | OV | Oui |
 | `2.23.140.1.2.1` | DV | Non |
 
-À l’aide de `grep` ping pour les modèles OID dans le texte du certificat de sortie, vous pouvez confirmer votre stratégie de certificat.
+À l’aide de `grep` ping pour les modèles OID dans le texte du certificat de sortie, vous pouvez confirmer votre politique de certificat.
 
 ```shell
 # "EV Policy"

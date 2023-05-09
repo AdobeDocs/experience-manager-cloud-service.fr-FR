@@ -60,7 +60,7 @@ Cette section répertorie les capacités et fonctionnalités qui ont été suppr
 | [!DNL Foundation] | Prise en charge des sources de données Apache Sling (offre spéciale OSGi org.apache.sling.datasource) | S/O | Supprimé |
 | [!DNL Foundation] | Prise en charge des modèles de script JST (offre spéciale OSGi org.apache.sling.scripting.jst) | S/O | Supprimé |
 | [!DNL Foundation] | Prise en charge d’Apache Felix Http Whiteboard | OSGi Http Whiteboard | Mars 2022 |
-| [!DNL Foundation] | Prise en charge de com.adobe.granite.oauth.server | Intégration Adobe IMS | Mars 2023 |
+| [!DNL Foundation] | Prise en charge de com.adobe.granite.oauth.server | Intégration Adobe IMS |  mars 2023 |
 
 
 ## API Java {#java-api}

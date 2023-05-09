@@ -4,10 +4,10 @@ description: Découvrez comment réutiliser votre contenu dans tout votre projet
 feature: Administering
 role: Admin
 exl-id: a3d48884-081e-44f8-8055-ee3657757bfd
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -50,7 +50,7 @@ Le diagramme suivant illustre la manière dont les principaux concepts sont en c
 Dans ces scénarios et dans d’autres scénarios comparables, MSM ne gère pas les différentes versions de langues en tant que telles.
 
 * [MSM](msm/overview.md) gère le déploiement du contenu traduit d’un plan directeur (par exemple, un gabarit mondial) vers des Live Copies (par exemple, les sites locaux), dans les limites d’une langue.
-* Les fonctionnalités d’intégration de [traduction](translation/overview.md) d’AEM, combinées aux services de gestion de traduction tiers, gèrent les langues et le contenu de traduction dans ces différentes langues.
+* Le [translation](translation/overview.md) les fonctionnalités d’intégration d’AEM, en association avec des services de gestion de traduction tiers, gèrent les langues et la traduction de contenu dans ces différentes langues.
 
 Pour les cas d’utilisation plus avancés, MSM peut également être utilisé dans les gabarits de langue.
 

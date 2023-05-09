@@ -3,9 +3,9 @@ title: Présentation de la fonctionnalité Communications de Forms as a Cloud S
 description: Fusionner automatiquement les données avec des modèles XDP et PDF ou générer une sortie aux formats PCL, ZPL et PostScript
 exl-id: b6f05b2f-5665-4992-8689-d566351d54f1
 source-git-commit: 33e59ce272223e081710294a2e2508edb92eba52
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1136'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -101,9 +101,9 @@ Les API de manipulation de documents Communications permettent de combiner, de r
 
 ### Assemblage de documents PDF
 
-Vous pouvez utiliser les API de manipulation de documents pour assembler deux documents PDF ou XDP ou plus dans un seul document PDF ou portfolio PDF. Vous pouvez assembler des documents PDF de différentes manières, dont voici quelques exemples :
+Vous pouvez utiliser les API de manipulation de documents pour assembler deux documents PDF ou XDP ou plus dans un seul document PDF ou portfolio PDF. Vous trouverez ci-dessous quelques façons d’assembler des documents PDF :
 
-* Assemblage dans un document PDF unique
+* Assemblage d’un document de PDF simple
 * Création d’un portfolio PDF
 * Assemblage de documents chiffrés
 * Assemblage de documents à l’aide de la numérotation Bates
@@ -114,7 +114,7 @@ Schéma : assemblage d’un document PDF unique à partir de plusieurs document
 
 ### Désassemblage de documents PDF
 
-Vous pouvez utiliser les API de manipulation de documents pour désassembler un document PDF. Ces API peuvent extraire des pages du document source ou diviser un document source en fonction de signets. Cette tâche est particulièrement utile lorsque le document PDF d’origine a été créé à partir de plusieurs documents séparés, par exemple un ensemble d’articles.
+Vous pouvez utiliser les API de manipulation de documents pour désassembler un document PDF. Ces API peuvent extraire des pages du document source ou diviser un document source en fonction de signets. En règle générale, cette tâche est utile si le document du PDF a été créé à l’origine à partir de nombreux documents individuels, comme une collection d’instructions.
 
 * Extraction de pages d’un document source
 * Division d’un document source en fonction de signets

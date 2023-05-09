@@ -5,7 +5,7 @@ exl-id: fabd4468-3304-402f-9522-342da3bbae94
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 100%
+ht-degree: 76%
 
 ---
 
@@ -13,9 +13,9 @@ ht-degree: 100%
 
 Les pages d’Adobe Experience Manager reposent sur une disposition réactive. La [mise en page réactive](/help/sites-cloud/authoring/features/responsive-layout.md) adapte automatiquement votre contenu à l’appareil cible, éliminant ainsi la nécessité de créer du contenu pour des appareils spécifiques.
 
-Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule l’appareil mobile. Lorsque vous créez une page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur voit lorsqu’il accède à la page.
+Lorsque vous créez une page mobile, celle-ci est affichée d’une manière qui émule l’appareil mobile. Lors de la création de la page, vous pouvez basculer entre plusieurs émulateurs pour voir ce que l’utilisateur final voit lorsqu’il accède à la page.
 
-Les périphériques sont regroupés en fonction des catégories : fonction, intelligent et tactile, selon les fonctionnalités des périphériques pour effectuer le rendu d’une page. Lorsque l’utilisateur final accède à une page mobile, AEM détecte le périphérique et envoie la représentation qui correspond à son groupe de périphériques.
+Les périphériques sont regroupés dans les catégories fonctionnalité, intelligent et tactile selon les capacités des périphériques à effectuer le rendu d’une page. Lorsque l’utilisateur final accède à une page mobile, AEM détecte l’appareil et envoie la représentation qui correspond à son groupe d’appareils.
 
 >[!NOTE]
 >

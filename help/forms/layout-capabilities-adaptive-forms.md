@@ -6,7 +6,7 @@ exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -84,9 +84,9 @@ Cette disposition permet de placer le composant **[!UICONTROL Panneau de formula
 
 ## Mises en page pour appareils mobiles {#mobile-layouts}
 
-Ces dispositions permettent de naviguer de manière conviviale sur les appareils mobiles équipés d’écrans relativement petits. Les styles Avec onglets ou Assistant sont utilisés pour naviguer dans les formulaires. L’application d’une telle disposition permet de bénéficier d’une disposition unique pour l’ensemble du formulaire.
+Les dispositions pour appareils mobiles permettent une navigation conviviale sur les appareils mobiles dotés d’écrans relativement plus petits. Les mises en page mobiles utilisent des styles de tabulation ou d’assistant pour la navigation dans les formulaires. L’application d’une disposition mobile offre une disposition unique pour l’ensemble du formulaire.
 
-Avec cette disposition, le contrôle de la navigation s’effectue à l’aide d’une barre de navigation et d’un menu de navigation. La barre de navigation affiche des icônes **&lt;** et **>** pour indiquer les étapes de navigation **[!UICONTROL suivante]** et **[!UICONTROL précédente]** dans le formulaire.
+Cette disposition contrôle la navigation à l’aide d’une barre de navigation et d’un menu de navigation. La barre de navigation affiche des icônes **&lt;** et **>** pour indiquer les étapes de navigation **[!UICONTROL suivante]** et **[!UICONTROL précédente]** dans le formulaire.
 
 Les dispositions pour appareils mobiles sont disponibles à l’emplacement `/libs/fd/af/layouts/mobile/`. Les dispositions pour appareils mobiles ci-dessous sont disponibles par défaut dans les formulaires adaptatifs.
 
@@ -98,13 +98,13 @@ Lorsque vous utilisez une disposition pour appareils mobiles, le menu de formula
 
 ### [!UICONTROL Mise en page avec titres de panneau dans l’en-tête de formulaire] {#layout-with-panel-titles-in-the-form-header}
 
-Cette disposition, comme son nom l’indique, affiche les titres du panneau avec la barre et le menu de navigation. Les icônes Suivant et Précédent sont également disponibles à des fins de navigation.
+Cette disposition, comme son nom l’indique, affiche les titres des panneaux avec le menu de navigation et la barre de navigation. Cette disposition fournit également les icônes Suivant et Précédent pour la navigation.
 
 ![Dispositions pour appareils mobiles avec affichage du titre du panneau dans les en-têtes de formulaire](assets/mobile-layout1.png)
 
 ### [!UICONTROL Disposition sans titres de panneau dans l’en-tête de formulaire ] {#layout-without-panel-titles-in-the-form-header}
 
-Cette disposition, comme son nom l’indique, affiche uniquement le menu et la barre de navigation, sans les titres de panneau. Les icônes Suivant et Précédent sont également disponibles à des fins de navigation.
+Cette disposition, comme son nom l’indique, affiche uniquement le menu de navigation et la barre de navigation sans titre de panneau. Cette disposition fournit également les icônes Suivant et Précédent pour la navigation.
 
 ![Dispositions pour appareils mobiles sans affichage du titre du panneau dans les en-têtes de formulaire](assets/mobile-layout2.png)
 

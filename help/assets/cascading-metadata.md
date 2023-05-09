@@ -67,7 +67,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    >[!NOTE]
    >
-   >Lorsque vous ajoutez des choix, si vous cliquez sur le champ de liste déroulante, l’interface se déforme et l’icône de suppression des choix cesse de fonctionner. Ne cliquez pas sur la liste déroulante tant que vous n’avez pas enregistré les modifications. Si vous rencontrez ce problème, enregistrez le schéma, puis rouvrez-le pour poursuivre la modification.
+   >Lorsque vous ajoutez des choix, si vous cliquez sur le champ pop-up, l’interface se déforme et l’icône de suppression des choix cesse de fonctionner. Ne cliquez pas sur la liste déroulante tant que vous n’avez pas enregistré les modifications. Si vous rencontrez ce problème, enregistrez le schéma, puis rouvrez-le pour poursuivre la modification.
 
 1. (Facultatif) Ajoutez les autres champs obligatoires. Par exemple, format, codec et durée pour le type de ressource vidéo.
 

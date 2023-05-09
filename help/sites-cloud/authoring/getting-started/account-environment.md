@@ -2,10 +2,10 @@
 title: Configuration de votre environnement de compte
 description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '490'
-ht-degree: 100%
+ht-degree: 73%
 
 ---
 
@@ -19,7 +19,7 @@ Accédez tout d’abord à l’option [Utilisateur](#user-settings) dans l’en-
 
 ## Paramètres utilisateur {#user-settings}
 
-La boîte de dialogue **Paramètres utilisateur** donne accès aux options suivantes :
+Le **Utilisateur** La boîte de dialogue paramètres vous donne accès aux options suivantes :
 
 * Se faire passer pour
    * La fonction Se faire passer pour permet à un utilisateur de travailler au nom d’un autre. <!--With the [Impersonate as](/help/sites-administering/security.md#impersonating-another-user) functionality, a user can work on behalf of another user.-->
@@ -40,29 +40,29 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Langue**
 
-   Définit la langue à utiliser dans l’IU de l’environnement de création. Sélectionnez la langue de votre choix dans la liste des langues disponibles.
+   Cette option définit la langue à utiliser pour l’interface utilisateur de l’environnement de création. Sélectionnez la langue souhaitée dans la liste disponible.
 
 * **Gestion des fenêtres**
 
-   Définit le comportement ou l’ouverture des fenêtres. Vous avez le choix entre :
+   Cela définit le comportement ou l’ouverture des fenêtres. Vous avez le choix entre :
 
-   * **Fenêtres multiples** (par défaut)
+   * **Fenêtres multiples** (Par défaut)
 
       * Les pages s’ouvrent dans une nouvelle fenêtre.
    * **Une seule fenêtre**
 
-      * Les pages s’ouvrent dans la fenêtre actuelle.
+      * Les pages s’ouvrent dans la fenêtre active.
 
 
 * **Afficher les actions de bureau pour Assets**
 
-   Cette option nécessite l’utilisation de l’application de bureau AEM.
+   Cette option nécessite l’utilisation de l’appli de bureau AEM.
 
 * **Couleur de l’annotation**
 
-   Cette opération définit la couleur par défaut utilisée pour les annotations.
+   Cette option définit la couleur par défaut utilisée lors de la création d’annotations.
 
-   * Cliquez sur le bloc de couleurs pour ouvrir le sélecteur d’échantillon afin de choisir une couleur.
+   * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillons afin de sélectionner une couleur.
    * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**
@@ -85,7 +85,7 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
    * [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-   Cette option active les raccourcis clavier. Ils sont activés par défaut, mais il est possible de les désactiver, par exemple si un utilisateur a certaines exigences d’accessibilité.
+   Cette option active les raccourcis clavier. Par défaut, elles sont activées, mais peuvent être désactivées, par exemple si un utilisateur a certaines exigences d’accessibilité.
 
 * **Activer la page d’accueil des ressources**
 
@@ -93,4 +93,4 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Configuration Stock**
 
-   Cette option permet de définir la configuration Adobe Stock préférée. Elle n’est disponible que si l’administrateur système a activé l’[intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+   Cette option permet de spécifier la configuration Adobe Stock préférée. Elle n’est disponible que si votre administrateur système a activé . [Intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

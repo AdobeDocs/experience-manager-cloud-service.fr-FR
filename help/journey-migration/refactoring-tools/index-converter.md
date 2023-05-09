@@ -1,6 +1,6 @@
 ---
 title: Index Converter
-description: Convertisseur d’index
+description: Index Converter
 exl-id: ac02ca41-eb35-4f24-bf17-d00ce318423d
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Convertisseur d’index {#index-converter}
+# Index Converter {#index-converter}
 
 Index Converter est un utilitaire développé pour migrer les définitions d’index d’un client en vue du passage à AEM as a Cloud Service.
 

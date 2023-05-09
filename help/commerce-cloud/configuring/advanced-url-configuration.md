@@ -12,7 +12,7 @@ thumbnail: 34350.jpg
 exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
 source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
 workflow-type: tm+mt
-source-wordcount: '2214'
+source-wordcount: '2211'
 ht-degree: 100%
 
 ---
@@ -171,7 +171,7 @@ Les pages de produits spécifiques sont sélectionnées soit par le sku du produ
 | `{{page}}.html/{{sku}}/{{category}}/{{url_key}}.html` | oui | correspondance exacte uniquement |
 | `{{page}}.html/{{sku}}/{{url_path}}.html` | oui | oui |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 >[!NOTE]
 >

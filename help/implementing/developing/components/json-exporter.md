@@ -5,7 +5,7 @@ exl-id: d3ddffb7-cef9-4c86-aa31-175f13f9b4a5
 source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
 workflow-type: tm+mt
 source-wordcount: '404'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 AEM Content Services est conçu pour généraliser la description et la diffusion du contenu dans/depuis AEM, au-delà des pages web.
 
-Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
+Il assure la diffusion du contenu aux canaux autres que les pages web AEM classiques, à l’aide de méthodes normalisées qui peuvent être utilisées par tous les clients. Ces canaux peuvent inclure :
 
 * des applications sur une seule page ;
 * des applications mobiles natives ;
@@ -29,13 +29,13 @@ Avec AEM, la diffusion s’effectue à l’aide du sélecteur `model` et de l’
 
 `.model.json`
 
-1. Par exemple, une adresse URL comme :
+1. Par exemple, une URL telle que :
 
    ```shell
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks.model.json
    ```
 
-1. diffusera du contenu comme :
+1. Diffusera du contenu tel que :
 
    ![Modèle JSON du contenu WKND](assets/json-model-wknd.png)
 
@@ -47,13 +47,13 @@ Pour ce faire, utilisez le chemin du fragment dans son intégralité (via `jcr:c
 
 Votre page peut contenir un fragment de contenu unique ou plusieurs composants de différents types. Vous pouvez également utiliser des mécanismes tels que des composants de liste pour rechercher automatiquement du contenu pertinent.
 
-* Par exemple, une adresse URL comme :
+* Par exemple, une URL telle que :
 
    ```shell
    http://localhost:4502/content/wknd/language-masters/en/magazine/guide-la-skateparks/jcr:content/root/container/container/contentfragment.model.json
    ```
 
-* diffusera du contenu comme :
+* Diffusera du contenu tel que :
 
    ![Modèle JSON du fragment de contenu WKND](assets/json-model-wknd-content-fragment.png)
 
@@ -73,7 +73,7 @@ Voir également :
    * [API HTTP Assets](/help/assets/developer-reference-material-apis.md)
 * Modèles Sling :
    * [Modèles Sling – Association d’une classe de modèles à un type de ressource depuis la version 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
-* AEM avec JSON :
+* AEM avec JSON :
    * [Activation de l’exportateur JSON pour un composant](enabling-json-exporter.md)
 
 ## Documentation connexe {#related-documentation}

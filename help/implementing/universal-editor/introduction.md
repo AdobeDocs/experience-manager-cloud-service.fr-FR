@@ -1,13 +1,13 @@
 ---
 title: Présentation de l’éditeur visuel universel
 description: Découvrez comment l’éditeur visuel universel (également appelé Editeur universel) permet de modifier n’importe quelle expérience sans tête et en mode plein écran. Découvrez comment cela peut aider les auteurs de contenu à offrir des expériences exceptionnelles, à accroître leur vitesse de diffusion du contenu et à offrir une expérience de développement dernier cri.
-source-git-commit: 0e66c379e10d275610d85a699da272dc0c32a9a8
+exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 0%
 
 ---
-
 
 # Présentation de l’éditeur visuel universel {#introduction}
 

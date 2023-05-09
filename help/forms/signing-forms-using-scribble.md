@@ -11,9 +11,9 @@ docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
 source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 100%
+ht-degree: 84%
 
 ---
 
@@ -36,7 +36,7 @@ Vous pouvez appuyer sur l’icône **Configurer** ![](assets/configure.png) pour
 * Lorsque le format de la zone de travail de signature tactile est inférieur à 1, les informations de géolocalisation sont ajoutées au bas de la zone de travail de signature tactile.
 
 
-* Lorsque le format de la zone de travail de signature tactile est supérieur à 1, les informations de géolocalisation sont ajoutées au côté droit de la zone de travail de signature tactile.
+* Lorsque le rapport d’aspect de la zone de travail de signature tactile est supérieur à 1, les informations de géolocalisation sont ajoutées au côté droit de la zone de travail de signature tactile.
 
 
 ![Bas de la signature tactile](assets/scribble-signature-aspectratio.PNG)
@@ -58,18 +58,18 @@ Vous pouvez appuyer sur l’icône **Configurer** ![](assets/configure.png) pour
    >
    >Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature.
 
-1. Dans l’explorateur de contenu, appuyez sur **Conteneur de formulaires**, puis sur l’icône **Configurer** ![](assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs. Accédez à **Conteneur de formulaires adaptatifs** > **Signature électronique** et décochez l’option **Activer Adobe Sign**. Appuyez sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications.
+1. Dans l’explorateur de contenu, appuyez sur **Conteneur de formulaires**, puis sur l’icône **Configurer** ![](assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs. Accédez à **Conteneur de formulaires adaptatifs** > **Signature électronique** et désélectionnez l’option **Activer Adobe Sign** . Appuyez sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications.
 
    >[!NOTE]
    >
    >Lorsque vous ajoutez un composant Étape de signature à un formulaire adaptatif, l’option Activer Adobe Sign est sélectionnée automatiquement.
 
-1. Appuyez sur l’icône de ![configuration](assets/configure.png) **Configurer**. Elle ouvre l’explorateur de propriétés et affiche les propriétés Étape de signature. Configurez les propriétés suivantes :
+1. Appuyez sur l’icône de ![configuration](assets/configure.png) **Configurer**. Il ouvre l’explorateur de propriétés et affiche les propriétés de l’étape Signature. Configurez les propriétés suivantes :
 
    * **Nom de l’élément** : spécifiez le nom du composant.
 
-   * **Titre :** indiquez le titre unique du composant.
-   * **Message du modèle :** indiquez le message à afficher lorsque la signature PDF est chargée. Les services Adobe Sign mettent un certain temps à préparer et charger la signature PDF.
+   * **Titre :** Spécifiez le titre unique du composant.
+   * **Message du modèle :** Spécifiez le message à afficher pendant le chargement du PDF de signatures. Les services Adobe Sign prennent du temps pour préparer et charger le PDF de signatures.
    * **Service de signature :** sélectionnez l’option **Signature tactile**.
 
    * **Classe CSS** : spécifiez la classe CSS de la bibliothèque client, le cas échéant. Il est recommandé d’utiliser des [thèmes](themes.md) et des [styles en ligne](inline-style-adaptive-forms.md) au lieu de la classe CSS.
@@ -84,7 +84,7 @@ Vous pouvez appuyer sur l’icône **Configurer** ![](assets/configure.png) pour
 
    ![Écran de signature de la page EchoSign](assets/esignscribblesign.jpg)
 
-1. Cliquez sur **[!UICONTROL Signer]**. La boîte de dialogue de signature tactile apparaît. Signez le formulaire et cliquez sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer la signature.
+1. Cliquez sur **[!UICONTROL Sign]**. La boîte de dialogue de signature tactile s’affiche. Signez le formulaire et cliquez sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer la signature.
 
    ![Boîte de dialogue de signature tactile](assets/scribblewidget.png)
 

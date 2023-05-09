@@ -6,7 +6,7 @@ exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
 workflow-type: tm+mt
 source-wordcount: '1964'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -34,9 +34,9 @@ La barre d’outils contient les options nécessaires pour une expérience de cr
 
 ## Différents modes de modification {#editingmodes}
 
-Les auteurs peuvent créer et modifier du contenu textuel dans [!DNL Experience Manager] en utilisant les différents modes des composants. Les options de la barre d’outils pour la création et la mise en forme du contenu, et l’expérience utilisateur des composants compatibles avec l’éditeur de texte enrichi dans différents modes de modification, varient en fonction des configurations d’éditeur de texte enrichi.
+Les auteurs peuvent créer et modifier du contenu textuel dans [!DNL Experience Manager] en utilisant les différents modes des composants. Les options de la barre d’outils pour la création et la mise en forme de contenu, ainsi que l’expérience utilisateur des composants activés dans l’éditeur de texte enrichi dans différents modes de modification, varient selon les configurations de l’éditeur de texte enrichi.
 
-| Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée |
+| Mode d&#39;édition | Zone d’édition | Fonctions dont l’activation est recommandée |
 |--- |--- |--- |
 | En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une boîte de dialogue. | Fonctions minimales d’éditeur de texte enrichi. |
 | Éditeur de texte enrichi en plein écran | Couvre la page entière. | Toutes les fonctions requises d’éditeur de texte enrichi. |
@@ -67,7 +67,7 @@ Dans le mode de boîte de dialogue plein écran, outre une barre d’outils dét
 
 ### Modification dans une boîte de dialogue {#dialog-editing}
 
-Lorsque vous double-cliquez sur un composant, une boîte de dialogue apparaît pour modifier le contenu. La boîte de dialogue s’ouvre dans la partie supérieure de la page existante. Dans quelques scénarios spécifiques, la boîte de dialogue s’affiche comme fenêtre contextuelle. Par exemple, quand un composant Texte fait partie d’une colonne dans une mise en page à plusieurs colonnes et que la zone disponible pour la boîte de dialogue est moindre.
+Lorsqu’un composant fait l’objet d’un double clic, une boîte de dialogue s’ouvre pour modifier le contenu. La boîte de dialogue s’ouvre en haut de la page existante. Dans certains scénarios spécifiques, la boîte de dialogue s’ouvre sous la forme d’une fenêtre contextuelle. Par exemple, lorsqu’un composant Texte fait partie d’une colonne dans une mise en page à plusieurs colonnes et que la zone disponible pour la boîte de dialogue est moindre.
 
 ![Mode de modification dans une boîte de dialogue](assets/dialog_editing_modetouchui.png)
 
@@ -86,9 +86,9 @@ Cette fonctionnalité est mise à disposition par le biais d’une série de mod
 
 Les fonctions de base d’éditeur de texte enrichi sont activées, ou désactivées, par la valeur de la propriété `features` sur un nœud spécifique au module externe approprié.
 
-Le tableau ci-dessous répertorie les modules externes actuels et indique les informations suivantes :
+Le tableau suivant répertorie les modules externes actuels, avec les éléments suivants :
 
-* Les ID des modules externes avec un lien vers la documentation des API. L’ID est utilisé comme nom de nœud lors de l’[activation d’un module externe](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin).
+* ID de module externe avec un lien vers la documentation de l’API. L’ID est utilisé comme nom de noeud lorsque [activation d’un module externe](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin).
 * Les valeurs admises pour la propriété `features`.
 * Une description de la fonctionnalité fournie par le module externe.
 
@@ -96,15 +96,15 @@ Le tableau ci-dessous répertorie les modules externes actuels et indique les in
 |--- |--- |--- |
 | edit | `cut`, `copy`, `paste-default`, `paste-plaintext`, `paste-wordhtml` | [Couper, copier et les trois modes de collage](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#textstyles). |
 | [findreplace](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | `find`, `replace` | Rechercher et remplacer. |
-| [format](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [Mise en forme textuelle de base](configure-rich-text-editor-plug-ins.md#textstyles). |
-| [image](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | Prise en charge de base des images (faire glisser à partir du contenu ou de l’outil de recherche de contenu). Selon le navigateur, la prise en charge présente différents comportements pour les auteurs |
-| [keys](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | Pour définir cette valeur, voir [taille de tabulation](configure-rich-text-editor-plug-ins.md#tabsize). |
-| [justify](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | Alignement de paragraphe. |
-| [links](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [Liens hypertextes et ancres](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| [lists](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | Ce module externe contrôle à la fois la [mise en retrait et les listes](configure-rich-text-editor-plug-ins.md#indentmargin), y compris les listes imbriquées. |
-| [misctools](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | Divers outils permettent aux auteurs de saisir des [caractères spéciaux](configure-rich-text-editor-plug-ins.md#spchar) ou de modifier la source HTML. En outre, vous pouvez ajouter une [gamme de caractères spéciaux](configure-rich-text-editor-plug-ins.md#definerangechar) si vous voulez définir votre propre liste. |
-| Paraformat | `paraformat` | Les formats de paragraphe par défaut sont : Paragraphe, En-tête 1, En-tête 2 et En-tête 3 (`<p>`, `<h1>`, `<h2>` et `<h3>`). Vous pouvez [ajouter davantage de formats de paragraphe](configure-rich-text-editor-plug-ins.md#paraformats) ou prolonger la liste. |
-| spellcheck | `checktext` | [Vérificateur orthographique sensible à la langue](configure-rich-text-editor-plug-ins.md#adddict). |
+| [format](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | `bold`, `italic`, `underline` | [Mise en forme de texte de base](configure-rich-text-editor-plug-ins.md#textstyles). |
+| [image](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | `image` | Prise en charge de base des images (faire glisser à partir du contenu ou de l’outil de recherche de contenu). Selon le navigateur, la prise en charge présente différents comportements pour les auteurs |
+| [keys](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) | - | Pour définir cette valeur, voir [taille de tabulation](configure-rich-text-editor-plug-ins.md#tabsize). |
+| [justify](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | `justifyleft`, `justifycenter`, `justifyright` | Alignement des paragraphes. |
+| [links](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | `modifylink`, `unlink`, `anchor` | [Hyperliens et ancres](configure-rich-text-editor-plug-ins.md#linkstyles). |
+| [lists](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | `ordered`, `unordered`, `indent`, `outdent` | Ce module externe contrôle à la fois la [mise en retrait et les listes](configure-rich-text-editor-plug-ins.md#indentmargin), y compris les listes imbriquées. |
+| [misctools](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | `specialchars`, `sourceedit` | Divers outils permettent aux auteurs de saisir des [caractères spéciaux](configure-rich-text-editor-plug-ins.md#spchar) ou de modifier la source HTML. En outre, vous pouvez ajouter une [gamme de caractères spéciaux](configure-rich-text-editor-plug-ins.md#definerangechar) si vous voulez définir votre propre liste. |
+| Paraformat | `paraformat` | Les formats de paragraphe par défaut sont : Paragraphe, En-tête 1, En-tête 2 et En-tête 3 (`<p>`, `<h1>`, `<h2>` et `<h3>`). Vous pouvez [ajout de formats de paragraphe](configure-rich-text-editor-plug-ins.md#paraformats) ou étendez la liste. |
+| spellcheck | `checktext` | [Vérificateur orthographique prenant en compte la langue](configure-rich-text-editor-plug-ins.md#adddict). |
 | styles | `styles` | Prise en charge de l’application d’un style en utilisant une classe CSS. [Ajoutez de nouveaux styles de texte](configure-rich-text-editor-plug-ins.md#textstyles) si vous voulez ajouter (ou étendre) votre propre gamme de styles utilisables avec du texte. |
 | subsuperscript | `subscript`, `superscript` | Extensions des formats de base, en ajoutant l’indice et l’exposant. |
 | table | `table`, `removetable`, `insertrow`, `removerow`, `insertcolumn`, `removecolumn`, `cellprops`, `mergecells`, `splitcell`, `selectrow`, `selectcolumns` | Voir [Configuration des styles de tableau](configure-rich-text-editor-plug-ins.md#tablestyles) afin d’ajouter vos propres styles pour des tableaux entiers ou des cellules individuelles. |
@@ -145,14 +145,14 @@ Lorsque l’éditeur de texte enrichi est utilisé dans la boîte de dialogue ta
 
 ## Activation des fonctionnalités d’éditeur de texte enrichi en activant des modules externes {#enable-rte-functionalities-by-activating-plug-ins}
 
-Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de chaque module externe.
+Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features pour activer ou désactiver les différentes fonctionnalités de chaque module externe.
 
-Pour consulter des configurations détaillées des modules externes de l’éditeur de texte enrichi, voir [Activation et configuration des modules externes de l’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md).
+Pour obtenir des configurations détaillées des modules externes d’éditeur de texte enrichi, voir [comment activer et configurer les modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md).
 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
 
-Le [composant textuel Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que stratégies de contenu dans l’interface utilisateur, rendant ainsi inutile toute configuration technique. Les stratégies de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document. Pour plus d’informations, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md) ainsi que la [Documentation destinée aux développeurs relatifs aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
+Le [composant textuel Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor) permet aux éditeurs de modèle de configurer de nombreux modules externes de l’éditeur de texte enrichi en tant que politiques de contenu dans l’interface utilisateur, rendant ainsi inutile toute configuration technique. Les politiques de contenu peuvent fonctionner avec les configurations d’interface utilisateur de l’éditeur de texte enrichi décrites dans ce document. Pour plus d’informations, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md) ainsi que la [Documentation destinée aux développeurs relatifs aux composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=fr).
 
 >À titre de référence, les composants Texte par défaut (fournis dans le cadre d’une installation standard) se trouvent sous :
 >
@@ -216,17 +216,17 @@ Les séparateurs (`|`) dans un groupe d’options peuvent être spécifiés par 
 
 Le nœud pop-up sous le mode en ligne ou plein écran contient la liste des éléments contextuels utilisés. Chaque nœud enfant sous le nœud `popovers` (éléments contextuels) est nommé en fonction du module externe (format, par exemple). Il possède des « éléments » de propriété contenant la liste des fonctions du module externe (format#bold, par exemple).
 
-## Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et stratégies de contenu {#rtecontentpolicies}
+## Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu {#rtecontentpolicies}
 
-Les administrateurs peuvent contrôler les options de l’éditeur de texte enrichi à l’aide de stratégies de contenu, au lieu de procéder à la configuration en suivant les instructions ci-dessus, par exemple. Les stratégies de contenu définissent les propriétés de conception d’un composant lorsqu’il est utilisé dans le cadre d’un [modèle modifiable](/help/sites-cloud/authoring/features/templates.md). Par exemple, si un composant textuel qui utilise l’éditeur de texte enrichi est employé avec un modèle modifiable, la stratégie de contenu peut définir que l’option Gras doit être disponible, au même titre que quelques options de mise en forme de paragraphe. Les stratégies de contenu sont réutilisables et peuvent être appliquées à plusieurs modèles.
+Les administrateurs peuvent contrôler les options de l’éditeur de texte enrichi à l’aide de stratégies de contenu, par exemple au lieu d’effectuer la configuration comme décrit ci-dessus. Les stratégies de contenu définissent les propriétés de conception d’un composant lorsqu’il est utilisé dans le cadre d’une [modèle modifiable](/help/sites-cloud/authoring/features/templates.md). Par exemple, si un composant de texte qui utilise l’éditeur de texte enrichi est utilisé avec un modèle modifiable, la stratégie de contenu peut définir que l’option gras est disponible et que quelques options de mise en forme de paragraphe sont disponibles. Les stratégies de contenu sont réutilisables et peuvent être appliquées à plusieurs modèles.
 
-Les options disponibles dans l’éditeur de texte enrichi sont transmises depuis les configurations de l’interface utilisateur en amont vers les stratégies de contenu.
+Les options disponibles dans l’éditeur de texte enrichi sont transmises depuis les configurations de l’interface utilisateur en amont vers les politiques de contenu.
 
-* Les paramètres de configuration de l’interface utilisateur définissent les options disponibles pour les stratégies de contenu.
-* Si un élément a été supprimé ou n’est pas activé par la configuration d’interface utilisateur de l’éditeur de texte enrichi, la stratégie de contenu ne peut pas le configurer.
-* Un auteur n’a accès à une fonctionnalité de ce type que si elle est mise à sa disposition par les configurations de l’interface utilisateur et les stratégies de contenu.
+* Les paramètres de configuration de l’interface utilisateur définissent les options disponibles pour les politiques de contenu.
+* Si un élément a été supprimé ou n’est pas activé par la configuration d’interface utilisateur de l’éditeur de texte enrichi, la politique de contenu ne peut pas le configurer.
+* Un auteur n’a accès à une fonctionnalité de ce type que si elle est mise à sa disposition par les configurations de l’interface utilisateur et les politiques de contenu.
 
-Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor).
+Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor).
 
 ## Personnalisation de l’association entre les commandes et les icônes de la barre d’outils {#iconstoolbar}
 
@@ -273,8 +273,8 @@ Les fonctionnalités de l’éditeur de texte enrichi de [!DNL Experience Manage
 
 ## Bonnes pratiques et astuces {#best-practices-and-tips}
 
-* Pour une boîte de dialogue flottante, n’activez que les modules externes sans fenêtre contextuelle. Les modules externes sans fenêtre contextuelle sont plus petits et sont les mieux adaptés aux boîtes de dialogue flottantes.
-* Activez les modules externes avec une fenêtre contextuelle plus grande, comme le module externe `Paste`, uniquement en mode Boîte de dialogue plein écran ou en mode Plein écran. Les modules externes possédant une grande fenêtre contextuelle nécessitent davantage d’espace sur l’écran pour offrir une expérience de création optimale.
+* Pour une boîte de dialogue flottante, n’activez que les modules externes sans boîte de dialogue pop-up. Les plug-ins sans pop-up sont plus petits et sont les mieux adaptés aux boîtes de dialogue flottantes.
+* Activez les plug-ins avec un pop-up plus grand, comme le plug-in `Paste`, uniquement en mode Boîte de dialogue plein écran ou en mode Plein écran. Les plug-ins possédant un grand pop-up nécessitent davantage d’espace sur l’écran pour offrir une expérience de création optimale.
 * Si vous employez des modules externes personnalisés pour l’éditeur de texte enrichi CoralUI3, utilisez la bibliothèque `rte.coralui3`.
 
 >[!MORELIKETHIS]

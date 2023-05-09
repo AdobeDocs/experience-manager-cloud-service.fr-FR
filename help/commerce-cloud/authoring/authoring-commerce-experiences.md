@@ -93,7 +93,7 @@ Les composants affichent un indicateur visuel si la date utilisée est en cours 
 
 ## Omnisearch {#omnisearch}
 
-L’utilisation d’Omnisearch est un moyen facile pour les utilisateurs de trouver le contenu AEM et des données de catalogue de produits à l’aide de la recherche en texte intégral. Omisearch exécute une recherche en texte intégral dans AEM et le serveur principal Commerce pour trouver les objets du catalogue de produits dans le serveur principal Commerce et le contenu AEM. Les résultats AEM incluent également le contenu balisé avec des données de produit/catégorie.
+L’utilisation d’Omnisearch est un moyen facile pour les utilisateurs de trouver le contenu AEM et des données de catalogue de produits à l’aide de la recherche en texte intégral. Omnisearch exécute une recherche en texte intégral dans AEM et le serveur principal Commerce pour trouver les objets du catalogue de produits dans le serveur principal Commerce et le contenu AEM. Les résultats AEM incluent également le contenu balisé avec des données de produit/catégorie.
 
 ![Omnisearch](../assets/authoring/omnisearch.png)
 

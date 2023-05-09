@@ -1,30 +1,30 @@
 ---
 title: Conversion de lancements
-description: Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier.
+description: Vous devez convertir des pages de lancement pour que le contenu soit à nouveau déplacé dans la source (production) avant de le publier.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 100%
+ht-degree: 58%
 
 ---
 
 # Conversion de lancements {#promoting-launches}
 
-Vous devez convertir les pages de lancement pour redéplacer le contenu vers la source (production) avant de le publier. Lorsqu’une page de lancement est convertie, la page correspondante des pages sources est remplacée par la page convertie. Les options suivantes sont disponibles lors de la conversion d’une page de lancement :
+Vous devez convertir des pages de lancement pour que le contenu soit à nouveau déplacé dans la source (production) avant de le publier. Lorsqu’une page de lancement est convertie, la page correspondante des pages sources est remplacée par la page convertie. Les options suivantes sont disponibles lors de la promotion d’une page de lancement :
 
-* Faut-il convertir l’intégralité du lancement ou uniquement la page en cours ?
-* Faut-il convertir les pages enfants de la page en cours ?
+* Indique s’il faut convertir uniquement la page active ou l’intégralité du lancement.
+* Indique s’il faut convertir les pages enfants de la page active.
 * Faut-il convertir l’intégralité du lancement ou uniquement des pages qui ont été modifiées ?
-* Faut-il supprimer le lancement après la conversion ?
+* Permet de supprimer le lancement après la conversion.
 
 >[!NOTE]
 >
->Après avoir converti les pages de lancement en pages cibles (de **production**), vous pouvez activer les pages de **production** sous la forme d’une entité (pour accélérer le processus de rendu). Ajoutez les pages à un module de workflow et utilisez ce dernier comme charge utile pour un workflow qui active un module de pages. Vous devez créer le module de workflow avant la conversion du lancement Voir [Traitement de pages converties à l’aide du workflow AEM](#processing-promoted-pages-using-aem-workflow).
+>Après avoir converti les pages de lancement en pages cibles (**Production**), vous pouvez activer la variable **Production** pages en tant qu’entité (pour accélérer le processus). Ajoutez les pages à un module de workflow et utilisez-les comme charge utile pour un workflow qui active un module de pages. Vous devez créer le module de workflow avant de promouvoir le lancement. Voir [Traitement de pages converties à l’aide du workflow AEM](#processing-promoted-pages-using-aem-workflow).
 
 >[!CAUTION]
 >
->Un lancement simple ne peut pas être converti simultanément. Cela signifie que deux actions simultanées de conversion à partir du même lancement peuvent entraîner une erreur : `Launch could not be promoted` (ainsi que des erreurs de conflit dans le journal).
+>Un lancement unique ne peut pas être promu simultanément. Cela signifie que deux actions simultanées de conversion à partir du même lancement peuvent entraîner une erreur : `Launch could not be promoted` (ainsi que des erreurs de conflit dans le journal).
 
 >[!CAUTION]
 >
@@ -34,20 +34,20 @@ Vous devez convertir les pages de lancement pour redéplacer le contenu vers la 
 
 >[!NOTE]
 >
->Il s’agit de l’action manuelle consistant à convertir les pages de lancement lorsqu’il existe un seul niveau de lancement. Voir :
+>Cela couvre l’action manuelle de promotion des pages de lancement lorsqu’il n’y a qu’un seul niveau de lancement. Voir :
 >
->* [Conversion d’un lancement imbriqué](#promoting-a-nested-launch) lorsqu’il existe plusieurs lancements dans la structure.
+>* [Conversion d’un lancement imbriqué](#promoting-a-nested-launch) lorsqu’il y a plusieurs lancements dans la structure.
 >* [Lancements – Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
 >
 
 
-Vous pouvez convertir des lancements à partir de la console de **sites** ou de la console de **lancements** :
+Vous pouvez promouvoir des lancements à partir de l’une des **Sites** ou la console **Lancements** console :
 
 1. Ouvrez :
    * La console **Sites** lors de la navigation dans les pages source :
       1. Ouvrez le [rail de références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références seront affichées.
       1. Sélectionnez **Lancements** (par exemple Lancements (1)) pour afficher une liste de lancements particuliers.
-      1. Sélectionnez le lancement en question pour afficher les actions disponibles.
+      1. Sélectionnez le lancement spécifique pour afficher les actions disponibles.
       1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
    * La console **Sites** lors de la navigation dans les pages de lancement :
       1. Sélectionnez la page de lancement requise à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md).
@@ -55,7 +55,7 @@ Vous pouvez convertir des lancements à partir de la console de **sites** ou de 
    * La console **Lancements :**
       1. Sélectionnez votre lancement (appuyez/cliquez sur la miniature).
       1. Sélectionnez **Convertir**.
-1. Dans la première étape, vous pouvez spécifier :
+1. Dans la première étape, vous pouvez spécifier :
    * **Cible**
       * **Supprimer le lancement après la promotion**
    * **Portée**
@@ -71,8 +71,8 @@ Vous pouvez convertir des lancements à partir de la console de **sites** ou de 
 
       >[!NOTE]
       >
-      >Cette procédure porte sur la conversion d’un lancement simple. Si vous avez imbriqué des lancements, reportez-vous à la section [Conversion d’un lancement imbriqué](#promoting-a-nested-launch).
-1. Cliquez sur **Suivant** pour continuer.
+      >Cela couvre un seul lancement, si vous avez imbriqué des lancements, voir [Conversion d’un lancement imbriqué](#promoting-a-nested-launch).
+1. Sélectionner **Suivant** pour continuer.
 1. Vous pouvez passer en revue les pages à convertir. Elles dépendent de la plage de pages sélectionnée :
 
    ![Réviser la promotion](/help/sites-cloud/authoring/assets/launches-promote-review.png)
@@ -101,7 +101,7 @@ Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages so
    * **Cible**
       * **Convertir la cible** : vous pouvez convertir un lancement vers n’importe quelle source.
       * **Supprimer le lancement après la conversion** : après la conversion, le lancement sélectionné et les lancements imbriqués seront automatiquement supprimés.
-   * **Domaine** : ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Dans le second cas, vous pouvez choisir d’inclure/exclure des sous-pages. La configuration par défaut consiste à convertir uniquement les changements de page pour la page active :
+   * **Domaine** : ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Si ce dernier cas se produit, vous pouvez alors choisir d’inclure/exclure des sous-pages. La configuration par défaut consiste à promouvoir uniquement les modifications de page pour la page active :
       * **Convertir le lancement complet**
       * **Promouvoir les pages modifiées**
       * **Promouvoir les pages approuvées** en fonction du processus d’approbation du lancement
@@ -117,22 +117,22 @@ Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages so
 
    >[!NOTE]
    >
-   >Les pages répertoriées dépendent de la **portée** que vous avez définie et éventuellement des pages qui ont été modifiées.
+   >Les pages répertoriées dépendent de la variable **Portée** défini et éventuellement les pages qui ont été modifiées.
 
-1. Les modifications sont converties et répercutées dans la console de **lancements** :
+1. Vos modifications seront promues et répercutées dans la variable **Lancements** console :
 
    ![Dans la console de lancements](/help/sites-cloud/authoring/assets/launches-console.png)
 
 ## Traitement de pages converties à l’aide du workflow AEM {#processing-promoted-pages-using-aem-workflow}
 
-Utilisez des modèles de workflow pour effectuer un traitement en bloc des pages Lancements converties :
+Utilisez des modèles de workflow pour effectuer le traitement en bloc des pages de lancements promues :
 
 1. Créez un module de workflow.
-1. Lorsque les auteurs convertissent des pages de lancement, ils les stockent dans le module de workflow.
-1. Commencez un modèle de workflow en utilisant le module comme charge utile.
+1. Lorsque les auteurs convertissent des pages Launch, ils les stockent dans le module de workflow.
+1. Démarrez un modèle de workflow en utilisant le module comme charge utile.
 
-Pour lancer automatiquement un workflow lors de la conversion de pages, configurez un lanceur de workflow pour le nœud du module. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
+Pour lancer automatiquement un workflow lors de la conversion de pages, configurez un lanceur de workflow pour le nœud du package. <!--To start a workflow automatically when pages are promoted, [configure a workflow launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) for the package node.-->
 
-Vous pouvez, par exemple, générer automatiquement des demandes d’activation de page lorsque les auteurs convertissent des pages Lancements. Configurez un lanceur de workflow pour démarrer le workflow « Demander l’activation » lors de la modification du nœud de module.
+Par exemple, vous pouvez générer automatiquement des demandes d’activation de page lorsque les auteurs convertissent des pages de lancement. Configurez un lanceur de workflow pour démarrer le workflow Demander l’activation lorsque le noeud de module est modifié.
 
 ![Workflow de conversion](/help/sites-cloud/authoring/assets/launches-create-workflow.png)

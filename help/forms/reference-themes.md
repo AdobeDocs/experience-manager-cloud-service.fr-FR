@@ -5,10 +5,10 @@ description: AEM Forms fournit les thèmes de formulaires adaptatifs que vous po
 seo-description: AEM Forms provides adaptive forms themes that you can get from Software Distribution and use to style a form.
 discoiquuid: a1229970-5a5a-4f76-a880-278f972587cc
 exl-id: 03305b4a-d82d-4b8d-8804-249b10bdd358
-source-git-commit: bca7d28ab6cd846df0c51a8bece17e11304129df
-workflow-type: ht
+source-git-commit: 50d4be07b9563fb5047e9b313ae604cd7633a0e2
+workflow-type: tm+mt
 source-wordcount: '514'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -28,13 +28,13 @@ Les [thèmes](/help/forms/themes.md) vous permettent de styliser vos formulaires
 * Urbane
 * Canva
 
-Chaque thème comporte un style unique et élégant que vous pouvez utiliser pour créer des formulaires adaptatifs attrayants pour vos utilisateurs. Il contient un style unique pour les sélecteurs tels qu’un panneau, une zone de texte, une boîte de dialogue numérique, un bouton radio, un tableau et un commutateur. Les styles dans ces thèmes sont basés sur des exigences. Par exemple, dans un scénario particulier vous avez besoin d’un thème minimaliste avec des polices très lisibles. Le thème Urbane permet d’obtenir cette apparence.
+Chaque thème contient un style unique et élégant que vous pouvez utiliser pour créer des formulaires adaptatifs attrayants pour vos utilisateurs. Il contient des styles uniques pour les sélecteurs tels que le panneau, la zone de texte, la zone numérique, le bouton radio, le tableau et le commutateur. Les styles de ces thèmes sont basés sur les besoins. Par exemple, dans un scénario particulier, vous avez besoin d’un thème minimaliste avec des polices propres. Le thème Urbane permet d’obtenir cette apparence.
 
 ![Thèmes de référence](/help/forms/assets/ref-themes.png)
 
 Les thèmes inclus dans ce package sont réactifs, avec un style défini pour des affichages mobiles et de bureau. La plupart des navigateurs modernes sur différents périphériques peuvent sans problème rendre des formulaires auxquels est appliqué l’un de ces thèmes.
 
-Pour plus d’informations sur l’installation du module, voir [Comment travailler avec les modules](/help/implementing/developing/tools/package-manager.md).
+Pour plus d’informations sur l’installation du package, voir [Comment travailler avec les packages](/help/implementing/developing/tools/package-manager.md).
 
 ### Beryl {#beryl}
 
@@ -75,7 +75,7 @@ Liberty theme uses a minimalist approach to highlight the important. For example
 
 ### Tranquil {#tranquil}
 
-Le thème Tranquil fournit des nuances claires et foncées du modèle de couleurs Tranquil à différents composants d’un formulaire. Par exemple, les boutons radio, les panneaux et les onglets disposent de différentes nuances de vert.
+Le thème Tranquil fournit des nuances claires et sombres du jeu de couleurs Tranquil pour mettre en évidence différents composants d’un formulaire. Par exemple, les boutons radio, les panneaux et les onglets ont une nuance de vert différente.
 
 ![Thème Tranquil](/help/forms/assets/tranquil.png)
 
@@ -83,7 +83,7 @@ Le thème Tranquil fournit des nuances claires et foncées du modèle de couleur
 
 ### Ultramarine {#ultramarine}
 
-Le thème Ultramarine utilise des nuances de bleu profond pour mettre en évidence les composants tels que les onglets, les panneaux, les zones de texte et les boutons.
+Le thème Ultramarine utilise des nuances bleues profondes pour mettre en surbrillance les composants tels que les onglets, les panneaux, les zones de texte et les boutons.
 
 ![Thème Ultramarine](/help/forms/assets/ultramarine.png)
 <!--[Click to enlarge](assets/ultramarine-1.png)-->

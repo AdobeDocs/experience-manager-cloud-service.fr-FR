@@ -2,8 +2,8 @@
 title: Équipe et profils de produits AEM as a Cloud Service
 description: Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service accordent et limitent l’accès à vos solutions Adobe sous licence.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 69ac8e444a0f22649b48ec25b549ad60858f8b1b
-workflow-type: ht
+source-git-commit: 225b34f081a942d67dfc1f6faeb09763ea9fde03
+workflow-type: tm+mt
 source-wordcount: '748'
 ht-degree: 100%
 

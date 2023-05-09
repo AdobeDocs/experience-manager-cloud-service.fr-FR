@@ -4,10 +4,10 @@ description: Découvrez comment utiliser Dynamic Media afin de diffuser des res
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3ec3cb85-88ce-4277-a45c-30e52c75ed42
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Dynamic Media permet un affichage interactif, notamment le zoom, la rotation à
 
 ## Tâches que vous pouvez effectuer avec Dynamic Media {#what-you-can-do-with-dynamic-media}
 
-Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation générale des ressources est décrite en détail à la rubrique [Utilisation de ressources numériques](/help/assets/manage-digital-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
+Dynamic Media permet de gérer les ressources avant de les publier. L’utilisation des ressources en général est traitée en détail. [Utilisation de ressources numériques](/help/assets/manage-digital-assets.md). Les rubriques générales incluent le chargement, le téléchargement, la modification et la publication des ressources, l’affichage et la modification des propriétés et la recherche de ressources.
 
 Les fonctionnalités uniquement incluses dans Dynamic Media sont les suivantes :
 

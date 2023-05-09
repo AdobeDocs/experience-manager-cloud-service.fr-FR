@@ -3,9 +3,9 @@ title: Présentation des fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
 source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '1651'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -27,9 +27,9 @@ En l’absence de `/libs/cq/experience-fragments/components/xfpage/xfpage.html`,
 
 Le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut.
 
-Cela est possible à partir du navigateur. Cependant, le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du fragment d’expérience en utilisant uniquement l’URL.
+Cette option est disponible à partir du navigateur, mais son Principal objectif est d’autoriser d’autres applications (par exemple, des applications web tierces et des implémentations mobiles personnalisées) à accéder directement au contenu du fragment d’expérience, en utilisant uniquement l’URL.
 
-Le rendu HTML brut ajoute le protocole, l’hôte et le chemin d’accès au contexte à des chemins qui :
+Le rendu en HTML brut ajoute le protocole, l’hôte et le chemin d’accès contextuel aux chemins suivants :
 
 * sont du type `src`, `href` ou `action` ;
 
@@ -41,7 +41,7 @@ Par exemple :
 
 >[!NOTE]
 >
->Les liens font toujours référence à l’instance de publication. Ils sont destinés à être utilisés par des tiers, de sorte qu’ils soient toujours appelés à partir de l’instance de publication, et non de l’auteur.
+>Les liens font toujours référence à l’instance de publication. Elles sont destinées à être utilisées par des tiers. Par conséquent, le lien sera toujours appelé à partir de l’instance de publication, et non de l’auteur.
 
 ![Rendu HTML brut](assets/xf-14.png)
 
@@ -49,7 +49,7 @@ Le sélecteur de rendu brut utilise un transformateur plutôt que des scripts su
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
-### Configurer la génération de rendu HTML {#configuring-html-rendition-generation}
+### Configuration de la génération du rendu HTML {#configuring-html-rendition-generation}
 
 Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le pipeline est défini au niveau du chemin `/libs/experience-fragments/config/rewriter/experiencefragments`. Le transformateur HTML prend en charge les options suivantes :
 
@@ -60,7 +60,7 @@ Le rendu HTML est généré à l’aide des pipelines de réécriture Sling. Le 
    * Une liste des balises HTML autorisées dans le rendu final.
    * Par défaut, les balises suivantes sont autorisées (aucune configuration requise) : html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link et script.
 
-Il est recommandé de configurer le module Sling Rewriter à l’aide d’un recouvrement. Consultez la section [Recouvrements dans AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
+Il est recommandé de configurer la réécriture à l’aide d’un recouvrement. Consultez la section [Recouvrements dans AEM as a Cloud Service](/help/implementing/developing/introduction/overlays.md).
 
 ## Modèles de fragments d’expérience {#templates-for-experience-fragments}
 
@@ -103,7 +103,7 @@ propriété `cq:allowedTemplates` de ce dossier qui comprend tous les modèles d
 
 Le développement de composants à utiliser avec/dans les fragments d’expérience est conforme aux pratiques standard.
 
-La seule configuration supplémentaire consiste à s’assurer que les composants sont autorisés sur le modèle. Pour ce faire, la stratégie de contenu est utilisée.
+La seule configuration supplémentaire consiste à s’assurer que les composants sont autorisés sur le modèle. Pour ce faire, la politique de contenu est utilisée.
 
 <!--
 [Developing components](/help/sites-developing/components.md) for use with/in Experience Fragments follow standard practices.
@@ -268,7 +268,7 @@ Dans l’exemple ci-dessus, nous souhaitons réécrire les éléments suivants 
 * Pour un fragment d’expérience spécifique :
    `/content/experience-fragment/master`
 
-Les autres fragments d’expérience transitant par le système Exporter vers la cible sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
+Les autres fragments d’expérience transitant par le système Exporter vers Target sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
 
 #### rewriteLink {#rewritelink}
 

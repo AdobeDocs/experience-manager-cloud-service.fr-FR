@@ -11,8 +11,8 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 521c1bb8-7326-4ee8-aba3-f386727e2b34,75df606f-b22f-4f7e-bd8a-576d215f72bc
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
-workflow-type: ht
+source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+workflow-type: tm+mt
 source-wordcount: '2550'
 ht-degree: 100%
 
@@ -269,22 +269,22 @@ Il existe plusieurs options pour inclure une bibliothèque côté client. Examin
    >
    > Pour afficher tous les modèles disponibles à partir de l’écran Accueil AEM, accédez à **Outils** > **Général** > **Modèles**.
 
-1. Dans le coin supérieur gauche, sélectionnez l’icône **Informations sur la page**, puis cliquez sur **Stratégie de page**.
+1. Dans le coin supérieur gauche, sélectionnez l’icône **Informations sur la page**, puis cliquez sur **Politique de page**.
 
-   ![Élément de menu Stratégie de page](../assets/style-cif-component/page-policy-menu.png)
+   ![Élément de menu Politique de page](../assets/style-cif-component/page-policy-menu.png)
 
-1. La stratégie de page du modèle Landing Page s’ouvre alors :
+1. La politique de page du modèle Landing Page s’ouvre alors :
 
-   ![Stratégie de page – Landing Page](../assets/style-cif-component/page-policy-properties.png)
+   ![Politique de page – Landing Page](../assets/style-cif-component/page-policy-properties.png)
 
    Sur le côté droit figure la liste des **catégories** de bibliothèques clientes qui vont être incluses sur toutes les pages qui utilisent ce modèle.
 
    * `venia.dependencies` – Fournit les bibliothèques de fournisseurs dont `venia.site` dépend.
    * `venia.site` – Il s’agit de la catégorie de `clientlib-site` que le module `ui.frontend` génère.
 
-   Notez que d’autres modèles utilisent la même stratégie (**Page du contenu**, **Landing Page**, etc.). En réutilisant la même stratégie, nous pouvons nous assurer que les mêmes bibliothèques clientes sont incluses sur toutes les pages.
+   Notez que d’autres modèles utilisent la même politique (**Page du contenu**, **Landing Page**, etc.). En réutilisant la même politique, nous pouvons nous assurer que les mêmes bibliothèques clientes sont incluses sur toutes les pages.
 
-   Utiliser des stratégies de modèle et de page pour gérer l’inclusion des bibliothèques clientes présente l’avantage de permettre de changer la stratégie par modèle. Par exemple, il se peut que vous gériez deux marques différentes au sein de la même instance AEM. Chaque marque comporte son propre style ou *thème*, mais les bibliothèques et le code de base sont les mêmes. Autre exemple : si vous disposez d’une bibliothèque cliente plus grande que vous ne souhaitez afficher que sur certaines pages, vous pouvez créer une stratégie de page unique réservée à ce modèle.
+   Utiliser des politiques de modèle et de page pour gérer l’inclusion des bibliothèques clientes présente l’avantage de permettre de changer la politique par modèle. Par exemple, il se peut que vous gériez deux marques différentes au sein de la même instance AEM. Chaque marque comporte son propre style ou *thème*, mais les bibliothèques et le code de base sont les mêmes. Autre exemple : si vous disposez d’une bibliothèque cliente plus grande que vous ne souhaitez afficher que sur certaines pages, vous pouvez créer une politique de page unique réservée à ce modèle.
 
 ## Développement de webpack local {#local-webpack-development}
 

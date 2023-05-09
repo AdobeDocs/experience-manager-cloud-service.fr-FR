@@ -1,19 +1,19 @@
 ---
 title: Utilisation des versions de page
-description: Création, comparaison et restauration des versions d’une page
+description: Création, comparaison et restauration de versions d’une page
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
 source-git-commit: 2d1b40b8d6f7b6ca5ce112331a7d389816739494
 workflow-type: tm+mt
 source-wordcount: '1521'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
-# Utiliser des versions de page {#working-with-page-versions}
+# Utilisation des versions de page {#working-with-page-versions}
 
 Le contrôle de version permet de créer un « instantané » d’une page à un moment donné. Avec le contrôle de version, vous pouvez effectuer les opérations suivantes :
 
-* Créer une version d’une page donnée.
+* Créez une version d’une page.
 * Rétablir une version précédente d’une ou de plusieurs pages pour :
    * Annuler les modifications apportées aux pages.
    * Restaurer les pages qui ont été supprimées.
@@ -39,8 +39,8 @@ Vous pouvez créer une version de votre ressource depuis :
 
    ![Versions dans le rail de la frise chronologique](/help/sites-cloud/authoring/assets/versions-timeline-rail.png)
 
-1. Sélectionnez **Enregistrer comme version**.
-1. Saisissez un **libellé** et un **commentaire** si nécessaire.
+1. Sélectionner **Enregistrer comme version**.
+1. Saisissez un **Libellé** et **Commentaire** si nécessaire.
 
    ![Ajout d’un libellé pour une version](/help/sites-cloud/authoring/assets/versions-add-label.png)
 
@@ -48,17 +48,17 @@ Vous pouvez créer une version de votre ressource depuis :
 
    Les informations dans la frise chronologique sont mises à jour pour indiquer la nouvelle version.
 
-### Créer une version - Créer avec une ressource sélectionnée {#creating-a-new-version-create-with-a-selected-resource}
+### Création d’une version – Création avec une ressource sélectionnée {#creating-a-new-version-create-with-a-selected-resource}
 
 1. Accédez à la page pour laquelle créer une version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
-1. Sélectionnez l’option **Créer** dans la barre d’outils.
+1. Sélectionnez la **Créer** dans la barre d’outils.
 1. La même boîte de dialogue s’ouvre. Vous pouvez saisir un **libellé** et un **commentaire** si nécessaire.
 1. Confirmez la nouvelle version avec l’option **Créer**.
 
 La frise chronologique s’ouvrira avec les informations mises à jour afin d’indiquer la nouvelle version.
 
-## Rétablir des versions {#reinstating-versions}
+## Rétablissement de versions {#reinstating-versions}
 
 Une fois que vous avez créé une version de votre page, différentes méthodes permettent de rétablir une version antérieure :
 
@@ -85,22 +85,22 @@ Une fois que vous avez créé une version de votre page, différentes méthodes 
 >1. Créez des versions d’une page.
 >1. Les libellés et les noms de nœud de version initiaux sont 1.0, 1.1, 1.2, etc.
 >1. Rétablissez la première version, soit 1.0.
->1. Recréez des versions.
->1. Les libellés et les noms de nœud générés sont à présent 1.0.0, 1.0.1, 1.0.2, etc.
+>1. Créez à nouveau de nouvelles versions.
+>1. Les libellés et noms de noeud générés seront désormais 1.0.0, 1.0.1, 1.0.2, etc.
 
 
-### Rétablir une version {#revert-to-a-version}
+### Rétablissement d’une version {#revert-to-a-version}
 
 Pour **rétablir** la version précédente d’une page sélectionnée :
 
 1. Naviguez pour afficher la page pour laquelle restaurer une ancienne version.
 1. Sélectionnez la page en [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**. Les versions de la page sélectionnée sont répertoriées.
-1. Sélectionnez la version à restaurer. Les options possibles s’affichent :
+1. Sélectionnez la version à restaurer. Les options possibles s’affichent :
 
    ![Revenir à cette version](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Sélectionnez **Revenir à cette version**. La version sélectionnée est restaurée et les informations dans la frise chronologique sont mises à jour.
+1. Sélectionnez **Revenir à cette version**. La version sélectionnée est restaurée et les informations de la chronologie sont mises à jour.
 
 ### Restaurer la version {#restore-version}
 
@@ -115,6 +115,7 @@ Cette méthode permet de rétablir des versions de pages spécifiées dans le do
    >Si :
    >* vous avez sélectionné une seule page, qui n’a jamais eu de page enfant,
    >* ou aucune des pages du dossier ne comporte de version,
+
    >
    >l’affichage sera vide, car aucune version n’est applicable.
 
@@ -158,35 +159,35 @@ Cette méthode permet de restaurer une version d’une arborescence à une date 
 
 ## Aperçu d’une version {#previewing-a-version}
 
-Vous pouvez prévisualiser une version spécifique :
+Vous pouvez prévisualiser une version spécifique :
 
 1. Accédez à la page à comparer.
 1. Sélectionnez la page en [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**.
-1. Les versions de la page sont répertoriées. Sélectionnez la version à prévisualiser :
+1. Les versions de la page sont répertoriées. Sélectionnez la version à prévisualiser :
 
    ![Aperçu de la version](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Sélectionnez **Aperçu**. La page sera affichée sous un nouvel onglet.
+1. Sélectionnez **Aperçu**. La page s’affiche dans un nouvel onglet.
 
    >[!CAUTION]
    >
-   >Si une page a été déplacée, vous ne pouvez plus afficher l’aperçu des versions antérieures au déplacement.
+   >Si une page a été déplacée, vous ne pouvez plus effectuer d’aperçu sur les versions antérieures au déplacement.
    >
-   >Si vous rencontrez des problèmes avec un aperçu, vérifiez dans la [chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) si la page a été déplacée.
+   >Si vous rencontrez des problèmes avec un aperçu, vérifiez la variable [Chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline) pour la page afin de voir si la page a été déplacée.
 
-## Comparer une version avec la page actuelle {#comparing-a-version-with-current-page}
+## Comparaison d’une ancienne version avec la page actuelle {#comparing-a-version-with-current-page}
 
-Pour comparer la version actuelle de la page avec une version précédente :
+Pour comparer une version précédente à la page active :
 
 1. Accédez à la page à comparer.
 1. Sélectionnez la page en [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez la colonne **Chronologie**, puis sélectionnez **Afficher tout** ou **Versions**.
-1. Les versions de la page sont répertoriées. Sélectionnez la version à comparer :
+1. Les versions de la page sont répertoriées. Sélectionnez la version à comparer :
 
    ![Comparaison des versions](/help/sites-cloud/authoring/assets/versions-revert.png)
 
-1. Sélectionnez **Comparer à actuel**. L’[outil de comparaison des pages](/help/sites-cloud/authoring/features/page-diff.md) s’ouvre et affiche les différences.
+1. Sélectionner **Comparer à actuel**. Le [comparaison des pages](/help/sites-cloud/authoring/features/page-diff.md) s’ouvre et affiche les différences.
 
 ## Distorsion du temps Timewarp {#timewarp}
 
@@ -200,16 +201,16 @@ La création de contenu étant un processus continu et collaboratif, l’objecti
 
 Pour ce faire :
 
-* Le système recherche la version de page qui était active à l’heure sélectionnée.
-* Cela signifie que la version affichée a été créée/activée *avant* le moment sélectionné dans Timewarp.
+* Le système recherche la version de page principale à l’heure sélectionnée.
+* Cela signifie que la version affichée a été créée/activée. *before* point dans le temps sélectionné dans Timewarp.
 * Si vous accédez à une page qui a été supprimée, celle-ci est également affichée, à condition toutefois que les anciennes versions de la page soient toujours disponibles dans le référentiel.
 * Si aucune version publiée n’a été trouvée, la fonction Timewarp revient à l’état actuel de la page dans l’environnement de création (et ce, afin d’éviter une erreur/page 404, ce qui rendrait impossible toute poursuite de la navigation).
 
-### Utiliser la distorsion du temps {#using-timewarp}
+### Utilisation de Timewarp {#using-timewarp}
 
-Timewarp est un [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) de l’éditeur de page. Son lancement est semblable à celui de n’importe quel autre mode.
+Timewarp est une [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) de l’éditeur de page. Pour le démarrer, il vous suffit de le basculer comme vous le feriez pour tout autre mode.
 
-1. Démarrez l’éditeur de la page à l’endroit où vous souhaitez lancer la fonction Timewarp, puis sélectionnez **Timewarp** dans la sélection du mode.
+1. Démarrez l’éditeur de la page sur laquelle vous souhaitez démarrer Timewarp, puis sélectionnez **Timewarp** dans la sélection de mode.
 
    ![Mode Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-mode.png)
 
@@ -217,7 +218,7 @@ Timewarp est un [mode](/help/sites-cloud/authoring/fundamentals/environment-tool
 
    ![Date cible du mode Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp-target.png)
 
-1. La page s’affiche en fonction de la date définie. Le mode Timewarp est indiqué par la barre d’état bleue située dans la partie supérieure de la fenêtre. Utilisez les liens de la barre d’état pour sélectionner une nouvelle date cible ou quitter le mode Timewarp.
+1. La page s’affiche en fonction du jeu de dates. Le mode Timewarp est indiqué à partir de la barre d’état bleue située en haut de la fenêtre. Utilisez les liens de la barre d’état pour sélectionner une nouvelle date cible ou quitter le mode Timewarp.
 
    ![En mode Timewarp](/help/sites-cloud/authoring/assets/versions-timewarp.png)
 

@@ -4,16 +4,16 @@ description: Découvrez comment déployer des ensembles de règles dans Dynamic�
 contentOwner: Rick Brough
 role: User
 exl-id: f8010125-ba89-406a-bede-f6aa2f858c70
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '766'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
 # Utilisation d’ensembles de règles pour transformer des URL {#using-rulesets-to-transform-urls}
 
-Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques. Chaque règle définit au moins une condition et une action. Une règle évalue si les données XML remplissent les conditions et, si tel est le cas, déclenche les actions appropriées. Les exemples d’ensembles de règles comprennent les éléments suivants :
+Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transformer les URL. Les ensembles de règles sont des ensembles d’instructions écrites dans un langage de scripts (comme JavaScript) qui évaluent des données XML et déclenchent certaines actions si ces données remplissent des conditions spécifiques. Chaque règle définit au moins une condition et une action. Une règle évalue si les données XML remplissent les conditions et, si tel est le cas, déclenche les actions appropriées. Voici quelques exemples d’ensembles de règles :
 
 * Ajout d’un suffixe de type MIME. De nombreux services et sites web ont besoin de suffixes d’image, comme l’ajout de `.jpg` à une URL.
 * Création d’un chemin de dossier vers l’URL pour le SEO (Search Engine Optimization, ou optimisation du moteur de recherche).
@@ -24,7 +24,7 @@ Vous pouvez déployer des ensembles de règles dans Dynamic Media pour transfor
 
    Consultez [Comment Adobe Dynamic Media Classic prend en charge le SEO](/help/assets/dynamic-media/assets/s7_seo.pdf).
 
-* Définition de la mise en page du contenu pour déclencher le téléchargement.
+* Définition de la disposition du contenu pour déclencher un téléchargement.
 * Simplifiez le service d’images pour la création de modèles d’URL pour la personnalisation. Par exemple, transformez `rgb{XX,YY,ZZ}` en `\redXX\greenYY\blueZZ` qui est conforme RTF.
 
 * Effectuez la demande de certains caractères à coder tels que `$`, `{` et `}`, et certains caractères à décoder vers ImageServer. Par exemple, Facebook ne fonctionne pas bien avec les URL contenant des caractères spéciaux.
@@ -75,7 +75,7 @@ Consultez également la section [Utilisation de « ressource » au lieu d’un
 1. Sur la page du **[!UICONTROL Publication du serveur d’images]**, sous le groupe **[!UICONTROL Gestion de catalogue]**, localisez le **[!UICONTROL Chemin de fichier de définitions de règles]**, puis sélectionnez **[!UICONTROL Sélectionner]**.
 1. Sur la page **[!UICONTROL Sélectionner le fichier de définitions de règles (XML)]**, accédez à votre fichier d’ensemble de règles, puis dans le coin inférieur droit de la page, sélectionnez **[!UICONTROL Sélectionner]**.
 1. Dans l’angle inférieur droit de la page Configuration, sélectionnez **[!UICONTROL Fermer]**.
-1. Exécutez une tâche de Publication de serveur d’images.
+1. Exécutez une tâche de publication Image Server.
 
    Les conditions d’ensemble de règles sont appliquées aux demandes aux serveurs d’images Dynamic Media en ligne.
 

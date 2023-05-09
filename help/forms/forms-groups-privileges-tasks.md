@@ -5,13 +5,13 @@ exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
 source-git-commit: d67e46e2f798e56e322d5c4aad536e718c7aae1a
 workflow-type: tm+mt
 source-wordcount: '139'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
 # Groupes et autorisations {#aem-forms-on-osgi-groups-and-privileges}
 
-Vous pouvez [créer des groupes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=fr#accessing) et affecter des stratégies et des [utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html#accessing) aux groupes. Ces stratégies contrôlent les autorisations des utilisateurs qui font partie du groupe.
+Vous pouvez [créer des groupes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=fr#accessing) et affecter des politiques et des [utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=fr#accessing) aux groupes. Ces politiques contrôlent les autorisations des utilisateurs qui font partie du groupe.
 
 Une fois que vous avez configuré [!DNL AEM Forms] as a Cloud Service, les groupes répertoriés dans le tableau ci-dessous, tels que [!DNL forms-users] et forms-power-user, sont automatiquement disponibles pour l’affectation :
 
@@ -27,7 +27,7 @@ Une fois que vous avez configuré [!DNL AEM Forms] as a Cloud Service, les group
     <ul> 
      <li>Créer, prévisualiser, publier et soumettre des formulaires adaptatifs</li> 
     <!-- <li>Create, preview, and publish interactive communications and document fragments</li> -->
-     <li>Charger les ressources vers une instance AEM</li> 
+     <li>Chargement de ressources vers une instance AEM</li> 
      <li>Créer des thèmes</li> 
     </ul> </td> 
   </tr>
@@ -38,9 +38,9 @@ Une fois que vous avez configuré [!DNL AEM Forms] as a Cloud Service, les group
      <li>Créer, prévisualiser, publier et soumettre des formulaires adaptatifs</li> 
      <!-- <li>Create, preview, and publish interactive communications and document fragments</li> 
      <li>Create scripts for Adaptive Forms using code editor</li> -->
-     <li>Charger des ressources, y compris des scripts</li> 
+     <li>Chargement de ressources, y compris de scripts</li> 
      <li>Créer des thèmes</li> 
-     <li>Importer des modules contenant des données XDP</li> 
+     <li>Importer des packages contenant des données XDP</li> 
     </ul> </td> 
   </tr>
   <!-- <tr>

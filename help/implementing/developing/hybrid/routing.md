@@ -2,14 +2,14 @@
 title: Routage du modèle de SPA
 description: Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
-# Routage du modèle de SPA{#spa-model-routing}
+# Routage du modèle de SPA {#spa-model-routing}
 
 Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 
@@ -41,7 +41,7 @@ L’implémentation actuelle repose sur l’hypothèse que le projet de SPA util
 
 `ModelRouter` prend en charge le concept de routage de modèle en écoutant les appels `pushState` et `replaceState` pour récupérer au préalable les fragments de modèle. En interne, il déclenche le chargement de `PageModelManager` pour charger le modèle correspondant à une URL donnée, et lance un `cq-pagemodel-route-changed` que d’autres modules peuvent écouter.
 
-Par défaut, ce comportement est automatiquement activé. Pour le désactiver, l’application sur une seule page doit effectuer le rendu de la propriété meta suivante :
+Par défaut, ce comportement est activé automatiquement. Pour la désactiver, le SPA doit effectuer le rendu de la propriété meta suivante :
 
 ```
 <meta property="cq:pagemodel_router" content="disabled"\>

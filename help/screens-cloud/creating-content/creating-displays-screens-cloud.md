@@ -5,7 +5,7 @@ exl-id: 0f9faa4b-b50e-40f8-a8ed-280f8bd0a9b8
 source-git-commit: 9e0ab778e97658bc8d7669b1f582f3bcddd47915
 workflow-type: tm+mt
 source-wordcount: '668'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Une fois que vous avez publié votre canal, il est temps de créer votre affichage dans le fournisseur de services Screens.
 
-Un affichage est un groupe virtuel d’écrans généralement positionnés les uns à côté des autres. L’affichage est en général permanent dans une installation. C’est l’objet avec lequel les auteurs de contenu travaillent. Ils le désignent par ailleurs toujours par le terme d’affichage logique pour le distinguer de ses équivalents physiques.
+Un affichage est un groupe virtuel d’écrans généralement positionnés les uns à côté des autres. L’affichage est généralement permanent par rapport à une installation. Il s’agit de l’objet avec lequel les auteurs de contenu travailleront et désigneront toujours comme affichage logique plutôt que comme leurs parties de compteur physiques.
 
 ## Objectif {#objective}
 

@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Presets,Viewers,Renditions
 role: User
 exl-id: ad21b52e-594f-4421-9b5a-2382d032ec5a
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -32,7 +32,7 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 
    >[!NOTE]
    >
-   >* Les rendus statiques apparaissent dans la moitié supérieure du volet. Les rendus dynamiques apparaissent dans la moitié inférieure. Avec des rendus dynamiques uniquement, vous pouvez utiliser l’URL pour afficher l’image. Le bouton **[!UICONTROL URL]** apparaît uniquement lorsque vous sélectionnez un rendu dynamique. Le bouton **[!UICONTROL RESS]** ne s’affiche que lorsque vous sélectionnez un paramètre d’image prédéfini réactif.
+   >* Les rendus statiques apparaissent dans la moitié supérieure du volet. Les rendus dynamiques apparaissent dans la moitié inférieure. Avec les rendus dynamiques uniquement, vous pouvez utiliser l’URL pour afficher l’image. Le **[!UICONTROL URL]** n’apparaît que si vous sélectionnez un rendu dynamique. Le **[!UICONTROL RESS]** s’affiche uniquement si vous sélectionnez un paramètre d’image prédéfini réactif.
    >
    >* Le système affiche plusieurs rendus lorsque vous sélectionnez **[!UICONTROL Rendus]** dans l’affichage des détails d’une ressource. Vous pouvez augmenter le nombre de paramètres prédéfinis visibles. Voir [Augmentation du nombre de paramètres d’image prédéfinis affichés](managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display).
 
@@ -42,7 +42,7 @@ Vous pouvez appliquer un paramètre d’image prédéfini à une image lorsque v
 1. Procédez de l’une des manières suivantes :
 
    * Pour prévisualiser le paramètre d’image prédéfini, sélectionnez un rendu dynamique.
-   * Pour afficher la fenêtre contextuelle, sélectionnez **[!UICONTROL URL]**, **[!UICONTROL Incorporer]** ou **[!UICONTROL RESS]**.
+   * Pour afficher la fenêtre pop-up, sélectionnez **[!UICONTROL URL]**, **[!UICONTROL Incorporer]** ou **[!UICONTROL RESS]**.
 
    >[!NOTE]
    >

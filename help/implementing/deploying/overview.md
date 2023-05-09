@@ -80,7 +80,7 @@ Pour plus d’informations sur la configuration d’OSGI, voir la section [Confi
 
 ## Contenu modifiable {#mutable-content}
 
-Dans certains cas, il peut s’avérer utile de préparer les changements de contenu dans le contrôle de code source afin qu’il puisse être déployé par Cloud Manager chaque fois qu’un environnement est mis à jour. Par exemple, il peut être raisonnable d’amorcer certaines structures de dossiers racine ou d’aligner les modifications dans les modèles modifiables afin d’y activer les stratégies pour les composants qui ont été mis à jour par le déploiement de l’application.
+Dans certains cas, il peut s’avérer utile de préparer les changements de contenu dans le contrôle de code source afin qu’il puisse être déployé par Cloud Manager chaque fois qu’un environnement est mis à jour. Par exemple, il peut être raisonnable d’amorcer certaines structures de dossiers racine ou d’aligner les modifications dans les modèles modifiables afin d’y activer les politiques pour les composants qui ont été mis à jour par le déploiement de l’application.
 
 Il existe deux stratégies pour décrire le contenu qui sera déployé par Cloud Manager vers le référentiel modifiable, les packages de contenu modifiable et les instructions repoinit.
 

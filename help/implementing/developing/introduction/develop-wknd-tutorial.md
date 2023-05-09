@@ -1,11 +1,11 @@
 ---
 title: Prise en main du développement d’AEM Sites – Tutoriel WKND
-description: Vous découvrez le développement dans AEM ? Vous avez besoin d’une mise à niveau sur les meilleures pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes.
+description: Vous ne connaissez pas le développement de l'AEM ? Vous avez besoin d’une mise à niveau sur les bonnes pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre comment AEM mettre en oeuvre un site web dans AEM en utilisant les dernières normes et technologies.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '242'
-ht-degree: 100%
+ht-degree: 62%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 Vous ne connaissez pas bien le développement d’Adobe Experience Manager as a Cloud Service ? Besoin d’une actualisation sur les toutes dernières pratiques ? Voici l’endroit idéal pour bien commencer !
 
-L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre AEM comment implémenter un site web dans AEM en utilisant les normes et les technologies les plus récentes. Ce tutoriel poursuit un double objectif : vous faire assimiler les bases de la plate-forme AEM et vous faire connaître quelques-uns des modèles de conception courants.
+L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre comment AEM mettre en oeuvre un site web dans AEM en utilisant les dernières normes et technologies. L’espoir est qu’à la fin de ce tutoriel, vous comprendrez les bases de la plateforme AEM et la connaissance de certains des modèles de conception courants.
 
 ## Tutoriel du développeur WKND {#wknd-developer-tutorial}
 

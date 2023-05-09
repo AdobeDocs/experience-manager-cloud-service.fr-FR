@@ -2,8 +2,8 @@
 title: Déploiement de votre code
 description: Découvrez comment déployer votre code à l’aide des pipelines de Cloud Manager dans AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 14395cf97b23896e929e215e7e0b9e33620637eb
-workflow-type: ht
+source-git-commit: 63e38485e2f15c6947c7fba1848d47eda4cc900e
+workflow-type: tm+mt
 source-wordcount: '1221'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ La phase de **Déploiement dans l’environnement** comprend ces étapes.
    * Consultez le document [Détails d’environnement de génération](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) pour plus d’informations sur l’environnement de génération.
 * **Analyse du code** - Cette étape évalue la qualité du code de votre application.
    * Consultez le document [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) pour plus d’informations sur le processus de test.
-* **Images de build** - Ce processus est responsable de la transformation du contenu et des modules du Dispatcher générés par l’étape de build en images Docker et en configuration Kubernetes.
+* **Images de build** - Ce processus est responsable de la transformation du contenu et des packages du Dispatcher générés par l’étape de build en images Docker et en configuration Kubernetes.
 * **Déploiement sur l’environnement d’évaluation** - L’image est déployée dans l’environnement d’évaluation en vue de la [phase de test d’évaluation.](#stage-testing)
 
 ![Déploiement dans l’environnement d’évaluation](assets/stage-deployment.png)

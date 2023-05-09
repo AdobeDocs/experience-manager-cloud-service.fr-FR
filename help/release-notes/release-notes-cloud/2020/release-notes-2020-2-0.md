@@ -24,7 +24,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 ### Nouveautés {#what-is-new}
 
 * La version de l’archétype d’Adobe Experience Manager a été mise à jour vers la version 22.
-* Les environnements d’évaluation et de production dans les programmes d’environnement de test/démonstration peuvent désormais être mis à jour via l’interface utilisateur Cloud Manager.
+* Les environnements d’évaluation et de production dans les programmes de sandbox/démonstration peuvent désormais être mis à jour via l’interface utilisateur Cloud Manager.
 * Les URL utilisées dans les notifications Experience Cloud ont été optimisées afin d’éviter une redirection supplémentaire.
 * Les étapes d’exécution de pipeline qui ont expiré l’indiquent maintenant explicitement.
 * L’étape d’analyse du code comporte désormais un journal téléchargeable.
@@ -32,6 +32,6 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 ### Correctifs  {#bug-fixes}
 
-* Les stratégies de sécurité du navigateur empêchaient parfois le fonctionnement correct de certains boutons de l’écran d’exécution du pipeline.
+* Les politiques de sécurité du navigateur empêchaient parfois le fonctionnement correct de certains boutons de l’écran d’exécution du pipeline.
 * Les liens Aperçu, Environnements et Activité étaient parfois disponibles sur la page d’entrée de Cloud Manager.
 * Certaines défaillances lors du déploiement peuvent empêcher la création de pipelines.

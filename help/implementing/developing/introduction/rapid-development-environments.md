@@ -1,13 +1,13 @@
 ---
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour réaliser des itérations de développement rapides sur un environnement cloud.
-source-git-commit: 2de6e2b6357f6cd03be2736d09cb4687ff337450
+exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '3304'
 ht-degree: 98%
 
 ---
-
 
 # Environnements de développement rapide {#rapid-development-environments}
 
@@ -499,4 +499,3 @@ Les développeurs et développeuses Forms peuvent utiliser un environnement de d
 ## Tutoriel sur le RDE
 
 Pour en savoir plus sur le RDE dans AEM as a Cloud Service, reportez-vous au [tutoriel vidéo qui explique comment le configurer et comment l’utiliser et qui montre le cycle de vie du développement](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/overview.html).
-

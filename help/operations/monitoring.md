@@ -2,8 +2,8 @@
 title: Surveillance des infrastructures et des services dans AEM as a Cloud Service
 description: Surveillance des infrastructures et des services dans AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: b1f6dfed5ac5a352750ea708324cd1a52997fc06
-workflow-type: ht
+source-git-commit: eb4c49b8d173d1d402d22824bc98e4713ab54c31
+workflow-type: tm+mt
 source-wordcount: '575'
 ht-degree: 100%
 

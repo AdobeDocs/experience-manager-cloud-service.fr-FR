@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1141'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Vous pouvez créer un formulaire adaptatif basé sur un modèle de formulaire XFA (fichier `*.XDP`.). Cette réutilisation vous permet de conserver vos investissements dans les formulaires XFA existants. Pour plus d’informations sur l’utilisation d’un modèle de formulaire XFA pour créer un formulaire adaptatif, voir [Création d’un formulaire adaptatif basé sur un modèle](creating-adaptive-form.md).
 
-Vous pouvez réutiliser des champs du fichier XDP dans votre formulaire adaptatif. Ces champs sont appelés champs liés. Les propriétés des champs liés (comme les scripts, les libellés et le format d’affichage) sont copiées à partir du fichier XDP. Vous pouvez également choisir de remplacer la valeur de certaines de ces propriétés.
+Vous pouvez réutiliser des champs du fichier XDP dans votre formulaire adaptatif. Ces champs sont appelés champs liés. Les propriétés des champs liés (tels que les scripts, les libellés et le format d’affichage) sont copiées à partir du fichier XDP. Vous pouvez également choisir de remplacer la valeur de certaines de ces propriétés.
 
 [!DNL AEM Forms] permet de conserver les champs des formulaires adaptatifs synchronisés avec les modifications apportées ultérieurement aux champs correspondants du fichier XDP. Cet article explique comment activer cette synchronisation.
 
@@ -38,17 +38,17 @@ Pour utiliser les informations fournies dans cet article, il est recommandé de 
 
 * XFA (XML Forms Architecture)
 
-Pour utiliser les ressources fournies pour l’exemple de cet article, téléchargez l’exemple de module, comme expliqué dans la section suivante, voir [Exemple de module](synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
+Pour utiliser les ressources fournies pour l’exemple de cet article, téléchargez l’exemple de package, comme expliqué dans la section suivante, voir [Exemple de package](synchronizing-adaptive-forms-xfa.md#p-sample-package-p).
 
-## Exemple de module {#sample-package}
+## Exemple de package {#sample-package}
 
-Cet article utilise un exemple pour montrer comment synchroniser le formulaire adaptatif avec un modèle de formulaire XFA mis à jour. Les ressources utilisées dans l’exemple sont disponibles dans un module qui peut être téléchargé à partir de la section [Téléchargements](synchronizing-adaptive-forms-xfa.md#p-downloads-p) de cet article.
+Cet article utilise un exemple pour montrer comment synchroniser le formulaire adaptatif avec un modèle de formulaire XFA mis à jour. Les ressources utilisées dans l’exemple sont disponibles dans un package qui peut être téléchargé à partir de la section [Téléchargements](synchronizing-adaptive-forms-xfa.md#p-downloads-p) de cet article.
 
-Une fois le module chargé, vous pouvez afficher ces ressources dans l’interface utilisateur [!DNL AEM Forms].
+Une fois le package chargé, vous pouvez afficher ces ressources dans l’interface utilisateur [!DNL AEM Forms].
 
-Installez le module à l’aide du gestionnaire de modules : `https://<server>:<port>/crx/packmgr/index.jsp`
+Installez le package à l’aide du gestionnaire de packages : `https://<server>:<port>/crx/packmgr/index.jsp`
 
-Le module contient les ressources suivantes :
+Le package contient les ressources suivantes :
 
 1. `sample-form.xdp` : modèle de formulaire XFA utilisé comme exemple.
 
@@ -58,12 +58,12 @@ Le module contient les ressources suivantes :
 
 1. Accédez à https://&lt;serveur>:&lt;port>/aem/forms.html. Entrez vos informations d’identification si nécessaire.
 1. Ouvrez le fichier sample-af-xfa pour le modifier en mode création.
-1. Dans le navigateur de contenu dans la barre latérale, sélectionnez l’onglet Objets de modèle de données. Faites glisser NumericField1 et TextField1 jusqu’au formulaire adaptatif.
+1. Dans l’explorateur de contenu de la barre latérale, sélectionnez l’onglet Objets de modèle de données . Faites glisser NumericField1 et TextField1 sur le formulaire adaptatif.
 1. Remplacez le titre de NumericField1 de **Numeric Field** par **AF Numeric Field.**
 
 >[!NOTE]
 >
->dans les étapes précédentes, nous avons remplacé une propriété d’un champ dans le fichier XDP. Cette propriété ne sera donc pas synchronisée si la propriété correspondante du fichier XDP est modifiée ultérieurement.
+>Dans les étapes précédentes, nous avons remplacé une propriété d’un champ dans le fichier XDP. Cette propriété ne sera donc pas synchronisée si la propriété correspondante du fichier XDP est modifiée ultérieurement.
 
 ## Détection des modifications dans le fichier XDP {#detecting-changes-in-xdp-file}
 

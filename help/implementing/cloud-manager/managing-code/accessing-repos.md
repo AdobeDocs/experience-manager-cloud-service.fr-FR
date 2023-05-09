@@ -5,7 +5,7 @@ exl-id: 0c0671a3-e400-46f3-ad86-166a6cfdd44b
 source-git-commit: 4729574eb31e01077f0d2a35efcef6d134f6aa5c
 workflow-type: tm+mt
 source-wordcount: '229'
-ht-degree: 8%
+ht-degree: 55%
 
 ---
 
@@ -19,19 +19,19 @@ Cloud Manager facilite la récupération des informations de votre référentiel
 
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
-1. Accédez à **Pipelines** de votre **Aperçu du programme** et recherchez les **Accès aux informations sur le référentiel** pour accéder à votre référentiel git et le gérer.
+1. Accédez à la vignette **Pipelines** à partir de votre page **Aperçu du programme** et recherchez le bouton **Accéder aux informations sur le référentiel** pour accéder à votre référentiel Git et le gérer.
 
-   ![Bouton Accéder aux informations de Repo sur la carte Environnements](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
+   ![Bouton Accéder aux informations sur le référentiel de la vignette d’environnements](/help/implementing/cloud-manager/assets/repos/access-repo1.png)
 
-1. Cliquez sur le bouton **Afficher les informations sur le référentiel** pour ouvrir une boîte de dialogue afin d’afficher :
+1. Cliquez sur le bouton **Afficher les informations sur le référentiel** pour ouvrir une boîte de dialogue affichant les éléments suivants :
 
-   * URL vers le référentiel git de Cloud Manager.
-   * Nom d’utilisateur Git.
-   * Le mot de passe Git, dont la valeur s’affiche lorsque la variable **Générer un mot de passe** est sélectionné.
+   * L’URL vers le référentiel Git de Cloud Manager.
+   * Le nom d’utilisateur Git.
+   * Le mot de passe Git, dont la valeur s’affiche lorsqu’on clique sur le bouton **Générer un mot de passe**.
 
    ![](/help/implementing/cloud-manager/assets/repos/access-repo-create.png)
 
-À l’aide de ces informations d’identification, l’utilisateur peut cloner une copie locale du référentiel et apporter des modifications à ce référentiel local. Une fois prêt, il peut valider toutes les modifications de code dans le référentiel de code distant dans Cloud Manager.
+À l’aide de ces informations d’identification, l’utilisateur peut cloner une copie locale du référentiel et apporter des modifications à ce référentiel local. Une fois prêt, il peut valider toutes les modifications de code vers le référentiel de code distant de Cloud Manager.
 
 Le **Accès aux informations sur le référentiel** est également disponible sur la **Non-production** onglet de pipeline de **Pipelines** carte.
 

@@ -1,13 +1,13 @@
 ---
 title: Assistant Copie de la langue
-description: Apprenez à utiliser l’assistant Copie de la langue dans AEM.
+description: Découvrez comment utiliser l’Assistant Copie de la langue dans AEM.
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 

@@ -1,32 +1,32 @@
 ---
 title: Système de style
-description: Le système de style permet à un auteur de modèles de définir des classes de style dans la stratégie de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
+description: Le système de style permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '1327'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
 # Système de style{#style-system}
 
-Le système de style permet à un auteur de modèles de définir des classes de style dans la stratégie de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
+Le système de style permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
 
-Cela rend inutile le développement d’un composant personnalisé pour chaque style ou la personnalisation d’une boîte de dialogue de composant pour activer une telle fonctionnalité de style. On obtient ainsi des composants plus réutilisables, pouvant être adaptés, rapidement et aisément, aux besoins des auteurs de contenu sans développement back-end dans AEM.
+Cela évite d’avoir à développer un composant personnalisé pour chaque style ou à personnaliser la boîte de dialogue du composant pour activer cette fonctionnalité de style. Elle génère des composants plus réutilisables qui peuvent être rapidement et facilement adaptés aux besoins des auteurs de contenu sans AEM développement principal.
 
 ## Cas d’utilisation {#use-case}
 
-Les auteurs de modèles doivent être en mesure de configurer non seulement le mode de fonctionnement des composants pour les auteurs de contenu, mais aussi diverses variantes visuelles d’un composant.
+Les créateurs de modèles doivent non seulement pouvoir configurer le fonctionnement des composants pour les créateurs de contenu, mais aussi configurer un certain nombre de variantes visuelles d’un composant.
 
-De même, les auteurs de contenu ne doivent pas seulement pouvoir structurer et organiser leur contenu. Ils doivent également être en mesure de choisir leur présentation visuelle.
+De même, les auteurs de contenu doivent non seulement pouvoir structurer et organiser leur contenu, mais aussi sélectionner la manière dont il est présenté visuellement.
 
 Le système de style constitue une solution unifiée pour répondre à la fois aux exigences des auteurs de contenus et de modèles :
 
 * Les auteurs de modèles peuvent définir des classes de style dans la stratégie de contenu des composants.
-* Les auteurs de contenu peuvent sélectionner ces classes dans un menu déroulant lorsqu’ils modifient le composant sur une page pour appliquer les styles correspondants.
+* Les auteurs de contenu peuvent ensuite sélectionner ces classes dans une liste déroulante lors de la modification du composant sur une page afin d’appliquer les styles correspondants.
 
-La classe de style est ensuite insérée sur l’élément wrapper du composant, de façon à ce que le développeur de composants n’ait pas besoin de gérer les styles (en plus de fournir leurs règles CSS).
+La classe de style est ensuite insérée sur l’élément wrapper du composant, de sorte que le développeur de composants n’ait pas à gérer les styles au-delà de la fourniture de leurs règles CSS.
 
 ## Présentation {#overview}
 
@@ -42,13 +42,13 @@ L’utilisation du système de style se passe généralement comme suit.
 
 1. Le développeur AEM place le code CSS (et en option, JS) fourni dans une [bibliothèque cliente](/help/implementing/developing/introduction/clientlibs.md) et le déploie.
 
-1. Le développeur AEM ou l’auteur de modèles configure les modèles de page et modifie la stratégie de chaque composant stylisé, en ajoutant les classes CSS définies, en attribuant des noms conviviaux à chaque style et en indiquant les styles qui peuvent être combinés.
+1. Le développeur AEM ou l’auteur de modèles configure les modèles de page et modifie la politique de chaque composant stylisé, en ajoutant les classes CSS définies, en attribuant des noms conviviaux à chaque style et en indiquant les styles qui peuvent être combinés.
 
 1. L’auteur des pages AEM peut alors choisir les styles conçus dans l’éditeur de page via le menu de style de la barre d’outils du composant.
 
 Notez que seules les trois dernières étapes sont réalisées dans AEM. Cela signifie que l’ensemble du développement des codes CSS et JavaScript peut être réalisé sans AEM.
 
-La mise en œuvre des styles nécessite uniquement le déploiement dans AEM et la sélection des modèles souhaités parmi les composants.
+En fait, la mise en oeuvre des styles ne nécessite que le déploiement sur AEM et la sélection dans les composants des modèles souhaités.
 
 Le diagramme suivant illustre l’architecture du système de style.
 
@@ -62,9 +62,9 @@ Les sections suivantes, [En tant qu’auteur de contenu](#as-a-content-author) e
 
 Si vous souhaitez utiliser le système de style pour vos propres composants, procédez comme suit :
 
-1. Installez les CSS en tant que bibliothèques clientes, comme évoqué dans la section [Aperçu](#overview).
-1. Configurez les classes CSS que vous souhaitez rendre disponibles à vos auteurs de contenu, comme décrit dans la section [En tant qu’auteur de modèles](#as-a-template-author).
-1. Les auteurs de contenu peuvent alors utiliser les styles, comme décrit dans la section [En tant qu’auteur de contenu](#as-a-content-author).
+1. Installez le CSS en tant que bibliothèques clientes, comme décrit dans la section . [Présentation](#overview).
+1. Configurez les classes CSS que vous souhaitez mettre à la disposition des auteurs de contenu, comme décrit dans la section . [En tant qu’auteur de modèles](#as-a-template-author).
+1. Les auteurs de contenu peuvent alors utiliser les styles comme décrit dans la section [En tant qu’auteur de contenu](#as-a-content-author).
 
 ### En tant qu’auteur de contenu {#as-a-content-author}
 
@@ -87,24 +87,24 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
    ![Modifier le modèle](/help/sites-cloud/authoring/assets/style-system-edit-template.png)
 
-1. Modifiez la police du composant **Titre** en appuyant ou en cliquant sur le bouton **Stratégie** du composant.
+1. Modifiez la police du composant **Titre** en appuyant ou en cliquant sur le bouton **Politique** du composant.
 
-   ![Modifier la stratégie](/help/sites-cloud/authoring/assets/style-system-edit-policy.png)
+   ![Modifier la politique](/help/sites-cloud/authoring/assets/style-system-edit-policy.png)
 
 1. Dans l’onglet Styles des propriétés, vous pouvez voir comment les styles ont été configurés.
 
    ![Modification des propriétés](/help/sites-cloud/authoring/assets/style-system-properties.png)
 
    * **Nom de groupe** : les styles peuvent être regroupés dans le menu des styles que l’auteur du contenu voit pendant la configuration du style du composant.
-   * **Les styles peuvent être combinés :** permet de sélectionner simultanément plusieurs styles au sein de ce groupe.
-   * **Nom du style :** description du style que l’auteur de contenu verra pendant la configuration du style du composant.
-   * **Classes CSS :** nom réel de la classe CSS associée au style.
+   * **Les styles peuvent être combinés :** Permet de sélectionner simultanément plusieurs styles au sein de ce groupe.
+   * **Nom du style :** Description du style qui s’affichera à l’auteur du contenu lors de la configuration du style du composant.
+   * **Classes CSS :** Nom réel de la classe CSS associée au style.
 
-   Utilisez les poignées pour définir l’ordre des groupes et des styles au sein des groupes. Utilisez les icônes d’ajout ou de suppression pour ajouter ou supprimer des groupes ou des styles dans les groupes.
+   Utilisez les poignées de glissement pour organiser l’ordre des groupes et les styles au sein des groupes. Utilisez les icônes d’ajout ou de suppression pour ajouter ou supprimer des groupes ou des styles dans les groupes.
 
 >[!CAUTION]
 >
->Pour pouvoir fonctionner, les classes CSS (ainsi que toute classe JavaScript nécessaire) configurées en tant que propriétés de style d’une stratégie de composants doivent être déployées comme [bibliothèques clientes](/help/implementing/developing/introduction/clientlibs.md).
+>Pour pouvoir fonctionner, les classes CSS (ainsi que toute classe JavaScript nécessaire) configurées en tant que propriétés de style d’une politique de composants doivent être déployées comme [bibliothèques clientes](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Configuration {#setup}
 
@@ -122,7 +122,7 @@ Pour qu’un composant fonctionne avec le système de style d’AEM et affiche l
 >[!NOTE]
 >Cette méthode utilise des [recouvrements](/help/implementing/developing/introduction/overlays.md) en faisant appel à [Sling Resource Merger](/help/implementing/developing/introduction/sling-resource-merger.md).
 
-Une fois le composant configuré, les styles définis par les auteurs de pages seront automatiquement insérés par AEM sur l’élément de décoration qu’AEM ajoute automatiquement autour de chaque composant modifiable. Le composant lui-même n’a besoin d’effectuer aucune autre action pour que cela se produise.
+Une fois le composant configuré, les styles configurés par les auteurs de pages seront automatiquement insérés par AEM sur l’élément décoratif qui AEM automatiquement encapsulé autour de chaque composant modifiable. Le composant lui-même n’a besoin d’effectuer aucune autre action pour que cela se produise.
 
 ### Activer l’onglet Styles dans la boîte de dialogue Modifier {#enable-styles-tab-edit}
 
@@ -142,7 +142,7 @@ L’onglet de la boîte de dialogue Modifier peut être inclus de la même mani�
 
 ### Styles avec noms d’éléments {#styles-with-element-names}
 
-Les développeurs peuvent aussi configurer une liste de noms d’éléments autorisés pour les styles du composant avec la propriété de table de chaînes `cq:styleElements`. Ensuite, dans l’onglet Styles de la stratégie, dans la boîte de dialogue de conception, l’auteur de modèles peut aussi choisir un nom d’élément pour chaque style. Cela permet de définir le nom de l’élément wrapper.
+Les développeurs peuvent aussi configurer une liste de noms d’éléments autorisés pour les styles du composant avec la propriété de table de chaînes `cq:styleElements`. Ensuite, dans l’onglet Styles de la politique, dans la boîte de dialogue de conception, l’auteur de modèles peut aussi choisir un nom d’élément pour chaque style. Cela définit le nom de l’élément wrapper.
 
 Cette propriété est définie sur le nœud `cq:Component`. Par exemple :
 
@@ -150,11 +150,12 @@ Cette propriété est définie sur le nœud `cq:Component`. Par exemple :
 
 >[!CAUTION]
 >
->Évitez de définir des noms d’éléments pour les styles pouvant être combinés. Lorsque plusieurs noms d’éléments sont définis, l’ordre de priorité est le suivant :
+>Évitez de définir des noms d’éléments pour les styles pouvant être combinés. Lorsque plusieurs noms d’éléments sont définis, l’ordre de priorité est le suivant :
 >
 >1. HTL est prioritaire sur tout le reste : `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
->1. Ensuite, au sein de plusieurs styles actifs, le premier style de la liste des styles configurés dans la stratégie du composant est sélectionné.
+>1. Ensuite, au sein de plusieurs styles actifs, le premier style de la liste des styles configurés dans la politique du composant est sélectionné.
 >1. Enfin, le nom `cq:htmlTag`/ `cq:tagName` du composant est considéré comme une valeur de repli.
+
 >
 
 

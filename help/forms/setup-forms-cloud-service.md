@@ -4,8 +4,8 @@ description: Découvrez comment configurer un environnement [!DNL AEM Forms] as 
 exl-id: 42f53662-fbcf-4676-9859-bf187ee9e4af
 source-git-commit: 4d91808aa46cf34772a88a2864c1e3acf27102f7
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 100%
+source-wordcount: '614'
+ht-degree: 95%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 ## Choix des rôles {#personas-aem-forms-project}
 
-<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Before onboarding to an [!DNL AEM Forms] as a Cloud Service environment, decide personas and structure a team for your project. A typical [!DNL AEM Forms] project team has the following personas:
+<!-- When you sign up for the service, Adobe creates an Organization identifier for your company in the Adobe Identity Management System (IMS), where your users and their permissions can be managed. So, --> Avant de vous inscrire à un [!DNL AEM Forms] Environnement as a Cloud Service, déterminez les personnages et structurez une équipe pour votre projet. Un [!DNL AEM Forms] l’équipe de projet a les personnages suivants :
 
 * **Concepteur d’expérience utilisateur** : il définit le style, la disposition et le branding des ressources [!DNL AEM Forms].
 
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 * (Pour les sandbox uniquement) Après l’intégration du service, [créez](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/configuring-pipeline.html?lang=fr#how-to-use) et [exécutez](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr) les pipelines de production et hors production. Les dernières fonctionnalités d’[!DNL AEM Forms] as a Cloud Service sont ainsi activées et intégrées à votre environnement.
 
-Vous pouvez utiliser Forms as a Cloud Service pour créer un formulaire adaptatif (inscription numérique) ou pour générer une communication client. Après avoir terminé l’[Intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html) à [!DNL Adobe Experience Manager] as a Cloud Service, effectuez l’une des actions suivantes pour activer les fonctionnalités d’inscription numérique ou de communication client. Vous pouvez également activer les deux fonctionnalités :
+Vous pouvez utiliser Forms as a Cloud Service pour créer un formulaire adaptatif (inscription numérique) ou pour générer une communication client. Après avoir terminé l’[Intégration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=fr) à [!DNL Adobe Experience Manager] as a Cloud Service, effectuez l’une des actions suivantes pour activer les fonctionnalités d’inscription numérique ou de communication client. Vous pouvez également activer les deux fonctionnalités :
 
 1. Connectez-vous à Cloud Manager et ouvrez votre instance AEM Forms as a Cloud Service.
 

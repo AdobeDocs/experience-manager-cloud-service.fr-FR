@@ -8,7 +8,7 @@ exl-id: 022ee347-54ec-4cec-b808-9eb3a9e51424
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '3442'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -52,7 +52,7 @@ Par exemple, la syntaxe d’une expression régulière avec correspondance litt�
 
 ### À propos du tri séquentiel
 
-Vous pouvez éventuellement définir l’ordre d’affichage des images après le regroupement de la visionneuse d’images ou de la visionneuse à 360° dans [!DNL Dynamic Media]. Par défaut, les ressources sont classées par ordre alphanumérique. Cependant, vous pouvez utiliser une liste d’expressions régulières séparées par des virgules pour définir l’ordre.
+Vous pouvez éventuellement définir l’ordre d’affichage des images après le regroupement de la visionneuse d’images ou de la visionneuse à 360° dans [!DNL Dynamic Media]. Par défaut, vos ressources sont classées par ordre alphanumérique. Cependant, vous pouvez utiliser une liste d’expressions régulières séparées par des virgules pour définir l’ordre.
 
 En ce qui concerne l’automatisation du tri séquentiel, vous spécifiez des règles pour forcer le tri des ressources selon une méthode déterminée, si nécessaire. Supposons, par exemple, que votre première ressource soit toujours nommée `_main` et que vous souhaitiez qu’elle soit suivie de `_alt1`, `_alt2`, `_alt3`, etc. Dans ce cas, vous pouvez créer une règle de tri séquentiel selon la syntaxe suivante :
 

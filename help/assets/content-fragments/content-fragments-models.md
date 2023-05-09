@@ -18,7 +18,7 @@ Pour utiliser des modèles de fragments de contenu, procédez comme suit :
 1. [Activez la fonctionnalité Modèle de fragment de contenu pour votre instance.](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 1. [Créez](#creating-a-content-fragment-model) et [configurez](#defining-your-content-fragment-model) vos modèles de fragments de contenu.
 1. [Activez vos modèles de fragment de contenu](#enabling-disabling-a-content-fragment-model) à utiliser lors de la création de fragments de contenu.
-1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources requis](#allowing-content-fragment-models-assets-folder) en configurant des **stratégies**.
+1. [Autorisez vos modèles de fragments de contenu sur les dossiers de ressources requis](#allowing-content-fragment-models-assets-folder) en configurant des **politiques**.
 
 ## Création d’un modèle de fragment de contenu {#creating-a-content-fragment-model}
 
@@ -357,21 +357,21 @@ Pour désactiver un modèle marqué comme **Activé**, utilisez l’option **Dé
 
 ## Autorisation de modèles de fragments de contenu dans votre dossier de ressources {#allowing-content-fragment-models-assets-folder}
 
-Pour mettre en œuvre une gouvernance du contenu, vous pouvez configurer des **Stratégies** sur le dossier de ressources pour contrôler les modèles de fragment de contenu autorisés pour la création de fragments dans ce dossier.
+Pour mettre en œuvre une gouvernance du contenu, vous pouvez configurer des **Politiques** sur le dossier de ressources pour contrôler les modèles de fragment de contenu autorisés pour la création de fragments dans ce dossier.
 
 >[!NOTE]
 >
 >Le mécanisme est similaire à [l’autorisation de modèles de page](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) pour une page et ses enfants, dans les propriétés avancées d’une page.
 
-Pour configurer les **stratégies** des **modèles de fragments de contenu autorisés** :
+Pour configurer les **politiques** des **modèles de fragments de contenu autorisés** :
 
 1. Recherchez et ouvrez les **Propriétés** pour le dossier de ressources requis.
 
-1. Ouvrez l’onglet **Stratégies** pour configurer les éléments suivants :
+1. Ouvrez l’onglet **Politiques** pour configurer les éléments suivants :
 
    * **Hérité de`<folder>`**
 
-      Les stratégies sont automatiquement héritées lors de la création de dossiers enfants ; il peut se produire une reconfiguration de la stratégie (et une rupture de l’héritage) si des sous-dossiers doivent autoriser des modèles différents du dossier parent.
+      Les politiques sont automatiquement héritées lors de la création de dossiers enfants ; il peut se produire une reconfiguration de la politique (et une rupture de l’héritage) si des sous-dossiers doivent autoriser des modèles différents du dossier parent.
 
    * **Modèles de fragments de contenu autorisés par chemin**
 
@@ -380,13 +380,13 @@ Pour configurer les **stratégies** des **modèles de fragments de contenu autor
    * **Modèles de fragments de contenu autorisés par balise**
 
       Il est possible d’autoriser plusieurs modèles.
-   ![Stratégie de modèle de fragment de contenu](assets/cfm-model-policy-assets-folder.png)
+   ![Politique de modèle de fragment de contenu](assets/cfm-model-policy-assets-folder.png)
 
 1. **Enregistrez** les modifications.
 
 Les modèles de fragment de contenu autorisés pour un dossier sont résolus comme suit :
-* **Stratégies** pour les **modèles de fragments de contenu autorisés**.
-* Si elles sont absentes, essayez de déterminer la stratégie à l’aide des règles d’héritage.
+* **Politiques** pour les **modèles de fragments de contenu autorisés**.
+* Si elles sont absentes, essayez de déterminer la politique à l’aide des règles d’héritage.
 * Si la chaîne d’héritage ne produit pas de résultat, examinez la configuration de **Services cloud** pour ce dossier (directement dans un premier temps, puis par héritage).
 * Si aucun des éléments ci-dessus ne donne de résultats, il n’existe aucun modèle autorisé pour ce dossier.
 

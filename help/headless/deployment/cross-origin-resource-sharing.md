@@ -16,7 +16,7 @@ ht-degree: 100%
 >
 >Pour un aperçu détaillé de la politique de partage des ressources CORS dans AEM, voir [Description du partage des ressources Cross-Origin (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=fr#understand-cross-origin-resource-sharing-(cors)).
 
-Pour accéder au point d’entrée GraphQL, une stratégie CORS doit être configurée et ajoutée à un projet AEM qui soit [déployé vers AEM via Cloud Manager](/help/implementing/cloud-manager/deploy-code.md). Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités. Plusieurs configurations CORS peuvent être créées et déployées dans différents environnements. Vous trouverez des exemples dans la section [Site de référence WKND](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig)
+Pour accéder au point d’entrée GraphQL, une politique CORS doit être configurée et ajoutée à un projet AEM qui soit [déployé vers AEM via Cloud Manager](/help/implementing/cloud-manager/deploy-code.md). Vous devez pour cela ajouter un fichier de configuration CORS OSGi approprié pour le ou les points d’entrée souhaités. Plusieurs configurations CORS peuvent être créées et déployées dans différents environnements. Vous trouverez des exemples dans la section [Site de référence WKND](https://github.com/adobe/aem-guides-wknd/tree/master/ui.config/src/main/content/jcr_root/apps/wknd/osgiconfig)
 
 La configuration CORS doit spécifier une origine de site web approuvée `alloworigin` ou `alloworiginregexp` pour laquelle l’accès doit être accordé.
 

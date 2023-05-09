@@ -51,7 +51,7 @@ Avant de commencer à travailler avec des SPA dans AEM, plusieurs conditions son
 
 ### Outils {#tools}
 
-* Accès aux environnements de test pour tester le déploiement de votre projet
+* Accès aux sandbox pour tester le déploiement de votre projet
 * Instance de développement locale pour la modélisation et le test des données
 * SPA externe existante (facultatif, selon le modèle d’intégration choisi)
 * Archétype de projet AEM
@@ -87,7 +87,7 @@ Les sites créés à l’aide de frameworks SPA courantes, telles que React et A
 
 Pour activer la modification d’applications sur une seule page dans AEM, il faut qu’il y ait une correspondance entre la sortie JSON de l’application et le modèle de contenu dans le répertoire AEM afin d’enregistrer les modifications apportées au contenu.
 
-La prise en charge des applications sur une seule page dans AEM s’accompagne d’une fine couche JS qui interagit avec le code JS de l’application lorsqu’elle est chargée dans l’éditeur de pages avec lequel des événements peuvent être envoyés. L’emplacement des commandes d’édition peut être activé pour permettre une modification en contexte. Cette fonction repose sur le concept de point de terminaison de l’API Content Services, étant donné que le contenu de l’application sur une seule page doit être chargé par le biais de Content Services.
+La prise en charge des applications sur une seule page dans AEM s’accompagne d’une fine couche JS qui interagit avec le code JS de l’application lorsqu’elle est chargée dans l’éditeur de pages avec lequel des événements peuvent être envoyés. L’emplacement des commandes d’édition peut être activé pour permettre une modification en contexte. Cette fonction repose sur le concept de point d’entrée de l’API Content Services, étant donné que le contenu de l’application sur une seule page doit être chargé par le biais de Content Services.
 
 Pour une description complète de la façon dont AEM gère l’éditeur de SPA, consultez la section [Ressources supplémentaires](#additional-resources) pour obtenir des liens vers une documentation plus détaillée.
 

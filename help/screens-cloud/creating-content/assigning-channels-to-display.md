@@ -5,7 +5,7 @@ exl-id: ba001c18-7b05-4ae2-aa7f-9ebb320fedd0
 source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -42,7 +42,7 @@ Suivez les étapes ci-dessous pour attribuer un canal à un affichage :
    1. Choisissez la priorité.
 
       >[!NOTE]
-      >La priorité est utilisée pour contrôler les attributions au cas où plusieurs d’entre elles correspondent aux critères de lecture. Celle présentant la valeur la plus élevée est toujours prioritaire par rapport aux valeurs plus faibles. Par exemple, s’il existe deux canaux A et B, A ayant une priorité de 1 et B une priorité de 2, alors le canal B est affiché, car il présente une priorité supérieure à celle de A.
+      >La priorité est utilisée pour contrôler les attributions au cas où plusieurs d’entre elles correspondent aux critères de lecture. Celle présentant la valeur la plus élevée est toujours prioritaire par rapport aux valeurs plus faibles. Par exemple, s’il existe deux canaux A et B. A a une priorité de 1 et B a une priorité de 2, alors le canal B s’affiche, car il a une priorité plus élevée que A.
    1. Sélectionnez la date de début et la date de fin dans **Activation**.
 
 1. Cliquez sur **+ Ajouter une périodicité** pour ajouter un planning de périodicité à votre canal.

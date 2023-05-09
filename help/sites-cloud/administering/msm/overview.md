@@ -4,10 +4,10 @@ description: Découvrez comment réutiliser du contenu avec les puissantes fonct
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '2683'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -66,9 +66,9 @@ Il existe de nombreux cas d’utilisation pour MSM et les Live Copies. Voici qu
 
 * **National – Siège social et filiales régionales**
 
-   Une autre possibilité est qu’une entreprise disposant d’un réseau de concessionnaires souhaite créer des sites web distincts pour chaque concession, chacun de ces sites étant une variante du site principal fourni par le siège social. Il peut s’agir d’une entreprise unique ayant plusieurs sites régionaux ou d’un système de franchise nationale constitué d’un franchisé central et de plusieurs franchisés locaux.
+   Une autre possibilité est qu’une entreprise disposant d’un réseau de concessionnaires souhaite créer des sites web distincts pour chaque concession, chacun de ces sites étant une variante du site principal fourni par le siège social. Il peut s’agir d’une seule entreprise avec plusieurs bureaux régionaux, ou d’un système de franchise national constitué d’un franchiseur central et de plusieurs franchisés locaux.
 
-   Le siège social peut fournir les informations de base et les entités régionales peuvent y ajouter des informations locales, comme les coordonnées, les heures d’ouverture et les événements.
+   Le siège peut fournir les informations de base, tandis que les entités régionales peuvent ajouter des informations locales, telles que les coordonnées, les heures d&#39;ouverture et les événements.
 
    ```xml
    /content
@@ -79,7 +79,7 @@ Il existe de nombreux cas d’utilisation pour MSM et les Live Copies. Voici qu
        |- branch-frankfurt
    ```
 
-* **Plusieurs versions**
+* **Versions multiples**
 
    MSM peut créer des versions d’une sous-branche spécifique. Par exemple, un sous-site d’assistance peut contenir des détails sur les différentes versions d’un produit spécifique, où les informations de base restent constantes et seules les fonctionnalités mises à jour doivent être modifiées :
 
@@ -114,7 +114,7 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
    * MSM vous aide à gérer plusieurs sites web qui partagent du contenu commun. Par exemple, les sites web sont souvent offerts aux audiences internationales de sorte que la majeure partie du contenu soit commun à tous les pays, avec un sous-ensemble du contenu spécifique à chaque pays. MSM vous permet de [créer des Live Copies qui mettent automatiquement à jour un ou plusieurs sites en fonction de votre site source](creating-live-copies.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Cela vous permet également d’appliquer une structure de base commune, d’utiliser le contenu commun dans tous les sites, de conserver la même apparence et de concentrer les efforts sur la gestion du contenu qui diffère réellement d’un site à l’autre. Créer un site de la manière suivante :
       * requiert une configuration de plan directeur prédéfinie pour spécifier la source ;
       * crée une Live Copy de la source (prédéfinie).
-      * Fournit à l’utilisateur le bouton **Déployer**.
+      * Fournit à l’utilisateur l’accès **Déploiement** bouton .
 
 * **Créer une Live Copy** (**Sites**)
 
@@ -206,7 +206,7 @@ La forme de base de la Live Copy comprend les éléments suivants :
 
 * Les pages Live Copy qui reflètent les pages sources sélectionnées sur une base 1:1.
 * Une définition de configuration.
-* Des relations en direct définies pour chaque ressource :
+* Une relation en direct définie pour chaque ressource :
    * Liez la ressource de Live Copy à son plan directeur ou sa source.
    * Les pages Live Copy sont utilisées pour les opérations d’héritage et de déploiement.
 
@@ -274,9 +274,9 @@ Le déploiement est l’action MSM centrale qui synchronise les Live Copies ave
 
 ### Configurations du déploiement {#rollout-configurations}
 
-Une configuration de déploiement définit quand et comment une Live Copy est synchronisée avec le contenu source. Une configuration de déploiement consiste en un déclencheur et d’une ou plusieurs actions de synchronisation :
+Une configuration de déploiement définit quand et comment une Live Copy est synchronisée avec le contenu source. Une configuration de déploiement se compose d’un déclencheur et d’une ou de plusieurs actions de synchronisation :
 
-* **Déclencheur** – Un déclencheur est un événement qui provoque la synchronisation d’une action en direct, comme l’activation d’une page source. MSM définit les déclencheurs que vous pouvez utiliser.
+* **Déclencheur** - Un déclencheur est un événement qui provoque la synchronisation de l’action en direct, comme l’activation d’une page source. MSM définit les déclencheurs que vous pouvez utiliser.
 * **Actions de synchronisation** : les actions de synchronisation sont exécutées sur Live Copy pour la synchroniser avec la source. Par exemple, la copie de contenu, l’organisation de nœuds enfants et l’activation de la page Live Copy sont des actions de synchronisation. MSM propose un certain nombre d’actions de synchronisation.
 
 >[!NOTE]
@@ -319,12 +319,12 @@ Les étapes suivantes décrivent la procédure standard d’utilisation de MSM p
 1. Déterminez la configuration de déploiement à utiliser.
 
    1. MSM [installe plusieurs configurations de déploiement](live-copy-sync-config.md#installed-rollout-configurations) pouvant répondre à un certain nombre de cas d’utilisation.
-   1. Vous pouvez également [créer une configuration de déploiement](live-copy-sync-config.md#creating-a-rollout-configuration) si nécessaire.
+   1. En option, vous pouvez [créer une configuration de déploiement ;](live-copy-sync-config.md#creating-a-rollout-configuration) si nécessaire.
 
-1. Déterminez à quel endroit vous devez [spécifier les configurations de déploiement à utiliser](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) et procédez aux configurations en fonction de vos besoins.
+1. Déterminer où vous devez [spécifier les configurations de déploiement à utiliser ;](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) et effectuez la configuration selon les besoins.
 1. Si nécessaire, [créez une configuration de plan directeur](creating-live-copies.md#creating-a-blueprint-configuration) qui identifie le contenu source de la Live Copy.
 1. [Créez une Live Copy.](creating-live-copies.md#creating-a-live-copy)
-1. Apportez des modifications au contenu source selon vos besoins. Vous devez suivre le processus normal d’examen et d’approbation du contenu établi par votre entreprise.
+1. Apportez des modifications au contenu source selon vos besoins. Vous devez utiliser le processus normal de révision et d’approbation de contenu établi par votre entreprise.
 1. [Déployez](creating-live-copies.md#rolling-out-a-blueprint) le plan directeur ou [synchronisez la Live Copy](creating-live-copies.md#synchronizing-a-live-copy) avec les modifications.
 
 ## Personnalisation de MSM {#customizing-msm}

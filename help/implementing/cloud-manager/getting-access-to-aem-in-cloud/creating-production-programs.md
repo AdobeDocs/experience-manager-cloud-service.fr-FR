@@ -3,7 +3,7 @@ title: Création de programmes de production
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme de production afin d’héberger le trafic en direct.
 exl-id: 4ccefb80-de77-4998-8a9d-e68d29772bb4
 source-git-commit: bfa1b56e5c066557c1b369b5f13335080a965055
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '541'
 ht-degree: 100%
 

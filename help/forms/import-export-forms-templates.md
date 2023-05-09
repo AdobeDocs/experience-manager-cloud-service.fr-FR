@@ -8,7 +8,7 @@ exl-id: f5105fb7-b8c0-4656-8095-b21d392746c0
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '1211'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Vous pouvez déplacer des formulaires adaptatifs et des ressources connexes telles que des thèmes de formulaire adaptatif, des modèles de données de formulaire, des modèles de formulaire adaptatif, des fragments de document et des formulaires PDF entre des instances [!DNL AEM Forms]. Vous pouvez importer et exporter des ressources dans un package CRX ou dans des formats de fichiers binaires.
 
-Lorsque vous exportez un formulaire adaptatif, les stratégies de contenu et les modèles ne sont pas exportés. Utilisez le [gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#how-rolling-deployments-work) pour exporter de telles ressources.
+Lorsque vous exportez un formulaire adaptatif, les politiques de contenu et les modèles ne sont pas exportés. Utilisez le [gestionnaire de packages](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#how-rolling-deployments-work) pour exporter de telles ressources.
 
 ## Téléchargement de formulaires adaptatifs, de PDF forms ou de ressources connexes {#download-forms-amp-documents-assets}
 
@@ -37,11 +37,11 @@ Vous ne pouvez pas télécharger de formulaires adaptatifs, de fragments de form
 
    >[!NOTE]
    >
-   >Le module et les fichiers binaires AEM sont téléchargés sous forme d’archive (fichier .zip). Les modèles des ressources ne sont pas téléchargés avec les ressources. Vous devez exporter les modèles des ressources séparément.
+   >Le package et les fichiers binaires AEM sont téléchargés sous forme d’archive (fichier .zip). Les modèles des ressources ne sont pas téléchargés avec les ressources. Vous devez exporter les modèles de ressources séparément.
 
 ## Chargement de formulaires adaptatifs, de PDF forms ou de ressources connexes {#upload-forms-amp-documents-assets}
 
-Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Dans le cas d’un fichier ZIP, les chemins relatifs de toutes les ressources prises en charge sont affichés. Les éléments non pris en charge à l’intérieur de l’archive ZIP sont ignorés et ne sont pas répertoriés. Cependant, si l’archive ZIP contient uniquement des éléments non pris en charge, un message d’erreur s’affiche à la place de la boîte de dialogue contextuelle.
+Vous pouvez charger les types de ressource pris en charge individuellement ou sous la forme d’une archive ZIP. Pour un fichier ZIP, les chemins d’accès relatifs de toutes les ressources prises en charge s’affichent. Les ressources non prises en charge dans le fichier ZIP sont ignorées et ne sont pas répertoriées. Cependant, si l’archive ZIP contient uniquement des éléments non pris en charge, un message d’erreur s’affiche à la place de la boîte de dialogue pop-up.
 Pour charger un formulaire ou une ressource connexe :
 
 1. Connectez-vous à l’instance [!DNL AEM Forms].
@@ -150,17 +150,17 @@ You can import assets that are exported into a .cmp file. A .cmp file can have o
 
 ## Exporter une application de workflow {#export-a-workflow-application}
 
-Vous pouvez utiliser le gestionnaire de modules pour exporter des applications de processus. Pour ce faire, procédez comme suit :
+Vous pouvez utiliser le gestionnaire de packages pour exporter des applications de workflow. Pour ce faire, procédez comme suit :
 
-1. Ouvrez le gestionnaire de modules [!DNL AEM Forms]. L’URL du gestionnaire de modules est `https://[server]:[port]/crx/packmgr`.
+1. Ouvrez le gestionnaire de packages [!DNL AEM Forms]. L’URL du gestionnaire de packages est `https://[server]:[port]/crx/packmgr`.
 1. Cliquez sur **[!UICONTROL Créer un package]**. La boîte de dialogue **[!UICONTROL Nouveau package]** apparaît.
 1. Indiquez le nom, la version et le groupe du package. Cliquez sur **[!UICONTROL OK]**.
-1. Cliquez sur **[!UICONTROL Modifier]** et ouvrez l’onglet **[!UICONTROL Filtres]**. Cliquez sur **[!UICONTROL Ajouter un filtre]**. Indiquez le chemin de l’application de processus. Par exemple, /etc/fd/dashboard/startpoints/homemortgage. Cliquez sur **[!UICONTROL Ajouter une règle]**.
+1. Cliquez sur **[!UICONTROL Modifier]** et ouvrez l’onglet **[!UICONTROL Filtres]**. Cliquez sur **[!UICONTROL Ajouter un filtre]**. Spécifiez le chemin d’accès de l’application de workflow. Par exemple, /etc/fd/dashboard/startpoints/homemortgage. Cliquez sur **[!UICONTROL Ajouter une règle]**.
 
 1. Ouvrez l’onglet **[!UICONTROL Avancé]**. Sélectionnez **[!UICONTROL Fusionner]** ou **[!UICONTROL Remplacer]** dans le champ Gestion de l’ACL. Cliquez sur **[!UICONTROL Enregistrer]**.
 1. Cliquez sur **[!UICONTROL Générer]** pour créer le package.
 
-   Une fois le module créé, vous pouvez le télécharger et l’importer sur l’autre serveur. L’application de processus apparaît sur le serveur sur lequel le module est téléchargé.
+   Une fois le package créé, vous pouvez le télécharger et l’importer sur l’autre serveur. L’application de workflow apparaît sur le serveur sur lequel le package est téléchargé.
 
    >[!NOTE]
    >
@@ -182,13 +182,13 @@ Vous pouvez utiliser des dossiers pour classer et organiser les fichiers. L’or
 
    >[!NOTE]
    >
-   >Par défaut, la valeur du champ Nom est automatiquement renseignée à partir du titre. Le nom peut contenir uniquement des caractères alphanumériques, des tirets (-) et des traits de soulignement (_). Tout autre caractère spécial saisi dans le titre est automatiquement remplacé par un tiret. Vous êtes alors invité à confirmer le nouveau nom. Vous pouvez choisir de conserver le nom proposé ou de le modifier.
+   >Par défaut, la valeur du champ Nom est automatiquement renseignée à partir du titre. Le nom ne peut contenir que des caractères alphanumériques ou des tirets (-) et des traits de soulignement (_). Tous les autres caractères spéciaux saisis dans le titre sont automatiquement remplacés par un trait d’union. Vous êtes invité à confirmer le nouveau nom. Vous pouvez choisir de conserver le nom proposé ou de le modifier.
 
 1. Un nouveau dossier avec le titre que vous avez défini s’affiche à l’emplacement spécifié dans la liste des ressources.
 
    Si un dossier portant le même nom que celui spécifié existe déjà, l’envoi échoue avec une erreur. Vous pouvez afficher le message d’erreur en pointant sur l’icône d’erreur ![aem6forms_error_alert](assets/Smock_Alert_18_N.svg) qui s’affiche en regard du champ Nom.
 
-   Vous pouvez appuyer sur le dossier que vous venez de créer afin de l’ouvrir et de créer des ressources ou des dossiers dans ce dossier. En outre, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le téléchargement, de le supprimer ou de modifier son nom.
+   Vous pouvez appuyer sur le dossier que vous venez de créer afin de l’ouvrir et de créer des ressources ou des dossiers dans ce dossier. De plus, vous pouvez sélectionner un dossier et choisir de le mettre en file d’attente pour le télécharger, le supprimer ou modifier son nom.
 
 
 <!-- ### Create copies of one or more assets or letters {#create-copies-of-one-or-more-assets-or-letters}

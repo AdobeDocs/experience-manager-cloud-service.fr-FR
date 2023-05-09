@@ -5,7 +5,7 @@ exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '2043'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -29,7 +29,7 @@ Ensemble, ces outils visent à vous aider à localiser rapidement et facilement 
 
 À l’aide des **Formulaires de recherche**, vous pouvez personnaliser et étendre ces panneaux en fonction de vos besoins spécifiques.
 
-Les **Formulaires de recherche** fournissent une sélection immédiate de [prédicats](#predicates-and-their-settings) que vous pouvez combiner et définir. Les [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) sont accessibles en sélectionnant :
+Les **Formulaires de recherche** fournissent une sélection immédiate de [prédicats](#predicates-and-their-settings) que vous pouvez combiner et définir. Le [boîtes de dialogue de configuration de ces formulaires](#configuring-your-search-forms) est accessible via :
 
 * **Outils**
    * **Général**
@@ -145,7 +145,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Date  Plage</td>
+   <td>Plage Plage</td>
    <td>Recherchez des ressources créées dans une plage spécifiée pour une propriété de date. Dans le panneau Rechercher, vous pouvez spécifier des dates de début et de fin.</td>
    <td>
     <ul>
@@ -192,7 +192,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Texte intégral</td>
-   <td>Prédicat de recherche pour les recherches en texte intégral.. Il est mappé à l’opérateur jcr:contains.</td>
+   <td>Prédicat de recherche pour les recherches de texte intégral. Il est mappé à l’opérateur jcr:contains.</td>
    <td>
     <ul>
      <li>Espace réservé</li>
@@ -210,7 +210,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Masqué Filtrer</td>
+   <td>Masqué  Filtrer</td>
    <td>Filtrez selon la propriété et la valeur, invisible pour l’utilisateur.</td>
    <td>
     <ul>
@@ -281,7 +281,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Page État</td>
+   <td>État État</td>
    <td>Filtrez des pages en fonction de leur état.</td>
    <td>
     <ul>
@@ -302,12 +302,12 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Chemin  Navigateur</td>
+   <td>Explorateur de chemins d’accès</td>
    <td>Fournissez un navigateur de chemins d’accès pour effectuer une recherche sous un chemin racine prédéfini.</td>
    <td>
     <ul>
      <li>Espace réservé</li>
-     <li>Chemin racine</li>
+     <li>Chemin de base</li>
      <li>Description</li>
     </ul> 
    </td>
@@ -337,7 +337,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    </td>
   </tr>
   <tr>
-   <td>État de publication</td>
+   <td>Statut de publication</td>
    <td>Filtrez des ressources en fonction de leur état de publication.</td>
    <td>
     <ul>
@@ -547,13 +547,13 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
 
 ## Configuration des formulaires de recherche {#configuring-your-search-forms}
 
-### Création/ouverture d’une configuration personnalisée {#creating-opening-a-customized-configuration}
+### Création et ouverture d’une configuration personnalisée {#creating-opening-a-customized-configuration}
 
 1. Accédez à **Outils**, **Général**, **Formulaires de recherche**.
 
 1. Sélectionnez la configuration que vous souhaitez personnaliser.
-1. Utilisez l’icône **Modifier** pour ouvrir la configuration pour la mise à jour.
-1. S’il s’agit d’une nouvelle personnalisation, vous allez probablement [ajouter de nouveaux champs de prédicat et définir les paramètres](#add-edit-a-predicate-field-and-define-field-settings) requis. S’il s’agit d’une personnalisation existante, vous pouvez sélectionner un champ existant et [mettre à jour les paramètres](#add-edit-a-predicate-field-and-define-field-settings).
+1. Utilisez la variable **Modifier** pour ouvrir la configuration à mettre à jour.
+1. S’il s’agit d’une nouvelle personnalisation, vous allez probablement [ajouter de nouveaux champs de prédicat et définir les paramètres](#add-edit-a-predicate-field-and-define-field-settings) requis. Si une personnalisation existante est existante, vous pouvez sélectionner un champ existant et [mettre à jour les paramètres](#add-edit-a-predicate-field-and-define-field-settings).
 1. Sélectionnez **Terminé** pour enregistrer la configuration. Vos modifications seront visibles lors de la prochaine utilisation de la configuration.
 
    >[!NOTE]
@@ -564,11 +564,11 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
    >* `/apps/commerce/gui/content/facets/<option>`
 
 
-### Ajout/modification d’un champ de prédicat et définition des paramètres de champ {#add-edit-a-predicate-field-and-define-field-settings}
+### Ajout et modification d’un champ de prédicat et définition des paramètres de champ {#add-edit-a-predicate-field-and-define-field-settings}
 
-Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
+Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
 
-1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
+1. [Ouvrir la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
 1. Si vous souhaitez ajouter un nouveau champ, ouvrez l’onglet **Sélectionner le prédicat** et faites glisser le prédicat souhaité vers l’emplacement souhaité. Par exemple, le **prédicat de période** :
 
    ![ajout d’un prédicat](assets/csf-add-predicate.png)
@@ -602,8 +602,8 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
 ### Suppression d’un champ de prédicat {#deleting-a-predicate-field}
 
-1. [Ouvrez la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
-1. Sélectionnez le champ de prédicat (à droite), ouvrez l’onglet **Paramètres**, puis sélectionnez l’icône **Supprimer** (dans le coin inférieur gauche).
+1. [Ouvrir la configuration personnalisée](#creating-opening-a-customized-configuration) pour la mise à jour.
+1. Sélectionnez le champ de prédicat (à droite), ouvrez le **Paramètres** , puis sélectionnez la variable **Supprimer** (en bas à gauche).
 
    ![icône de suppression](assets/csf-delete-icon.png)
 
@@ -659,8 +659,8 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
 1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administrateurs de sites**. Sélectionnez ensuite **Modifier**.
 
-1. En fonction de la configuration, ajoutez des **options** ou une **propriété d’options** à la configuration.
-1. Mettez à jour les champs, en particulier :
+1. Selon la configuration, ajoutez une **Options** ou **Propriété Options** à la configuration.
+1. Mettez à jour les champs, notamment :
 
    * **Nom de la propriété**
 

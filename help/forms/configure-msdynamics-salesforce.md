@@ -5,7 +5,7 @@ exl-id: 2a43b2db-2dfb-4c79-88be-ea770b44dac1
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '936'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ Pour configurer le service cloud [!DNL Microsoft Dynamics 365], procédez comme 
 1. Sur l’instance d’auteur [!DNL AEM Forms], accédez à **[!UICONTROL Outils]** ![marteau](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Sources de données]**. La liste des dossiers de wrapper disponibles inclut un dossier avec le titre `DappTitle` tout en [générant le projet d’archétype d’AEM](setup-local-development-environment.md##forms-cloud-service-local-development-environment).
 1. Appuyez sur le nom du dossier, sélectionnez **[!UICONTROL Configuration cloud Microsoft Dynamics 365]**, puis appuyez sur **[!UICONTROL Propriétés]**.
 1. Dans l’onglet **[!UICONTROL Paramètres d’authentification]** :
-   1. Saisissez la valeur pour le champ **[!UICONTROL Racine du service]**. Accédez à l’instance Dynamics et à [Ressources de développement](https://docs.microsoft.com/fr-fr/powerapps/developer/data-platform/view-download-developer-resources) pour afficher la valeur du champ Racine du service. Par exemple, `https://<tenant-name>.dynamics.com/api/data/v9.1/`
+   1. Saisissez la valeur de la variable **[!UICONTROL Racine du service]** champ . Accédez à l’instance Dynamics et à [Ressources de développement](https://docs.microsoft.com/fr-fr/powerapps/developer/data-platform/view-download-developer-resources) pour afficher la valeur du champ Racine du service. Par exemple, `https://<tenant-name>.dynamics.com/api/data/v9.1/`
    1. Spécifiez l’ID client (appelé ID d’application) et le secret client pour l’application connectée.
    1. Remplacez `{tenant}` par un ID client dans les champs **[!UICONTROL URL OAuth]**, **[!UICONTROL URL du jeton d’actualisation]** et **[!UICONTROL URL de jeton d’accès]**.
    1. Spécifiez l’URL de l’instance dynamique dans le champ **[!UICONTROL Ressource]** pour configurer [!UICONTROL Microsoft Dynamics] avec un modèle de données de formulaire. Utilisez l’URL racine du service pour dériver l’URL de l’instance dynamique. Par exemple, `https://<tenant-name>.dynamics.com`.

@@ -1,20 +1,20 @@
 ---
 title: Utilisation des balises
-description: Les balises sont un moyen simple et rapide de classer le contenu de votre site web.
+description: Les balises sont une méthode rapide et facile de classer le contenu dans un site web.
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '567'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
 # Utilisation des balises {#using-tags}
 
-Les balises sont un moyen simple et rapide de classer le contenu de votre site web. Les balises sont en quelque sorte des mots-clés ou des libellés qu’il est possible d’associer à une page, à une ressource ou à tout autre type de contenu, pour permettre aux fonctions de recherche de retrouver le contenu en question et son contenu associé.
+Les balises sont une méthode rapide et facile de classer le contenu dans un site web. Les balises peuvent être considérées comme des mots-clés ou des étiquettes pouvant être jointes à une page, à une ressource ou à un autre contenu pour permettre aux recherches de trouver ce contenu et le contenu associé.
 
 * Consultez Administration des balises pour savoir comment créer et gérer des balises et déterminer à quel contenu elles ont été appliquées. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* Voir [Balisage pour les développeurs](/help/implementing/developing/introduction/tagging-framework.md) pour plus d’informations sur l’environnement de balisage et sur l’inclusion et l’extension de balises dans les applications personnalisées.
+* Consultez la section [Balisage pour l’équipe de développement](/help/implementing/developing/introduction/tagging-framework.md) pour plus d’informations sur l’environnement de balisage et sur l’inclusion et l’extension de balises dans les applications personnalisées.
 
 ## Dix raisons d’utiliser les balises {#ten-reasons-to-use-tagging}
 
@@ -27,9 +27,9 @@ Les balises sont un moyen simple et rapide de classer le contenu de votre site w
 1. **Optimisation pour les moteurs de recherche** : les balises appliquées sous forme de propriétés de page s’affichent automatiquement dans les métabalises de la page pour que les moteurs de recherche puissent les identifier.
 1. **Utilisation simple** : les balises se créent facilement à partir d’un mot et en cliquant sur un bouton. Ensuite, un titre, une description et un nombre illimité de libellés peuvent être utilisés pour associer plus de termes à la balise.
 1. **Cohérence** : le système de balisage est un composant central d’AEM. Il est utilisé par toutes les applications AEM pour catégoriser le contenu. En outre, l’API de balisage est mise à la disposition des développeurs pour leur permettre de créer des applications prenant en charge le balisage avec un accès aux mêmes taxonomies.
-1. **Structuration et souplesse** : AEM est idéal pour travailler avec des informations structurées, grâce à l’imbrication des pages et des chemins d’accès. Il s’avère tout aussi puissant pour le traitement des informations non structurées grâce à sa fonctionnalité intégrée de recherche en texte intégral. Le balisage combine les avantages liés à la structuration et à la souplesse.
+1. **Structuration et souplesse** : AEM est idéal pour travailler avec des informations structurées, grâce à l’imbrication des pages et des chemins d’accès. Il est tout aussi puissant lorsque vous utilisez des informations non structurées, en raison de la recherche de texte intégral intégrée. Le balisage combine les avantages de la structure et de la flexibilité.
 
-Lors de la conception de la structure du contenu d’un site et du schéma de métadonnées des ressources, pensez à l’approche légère et accessible qu’offre le balisage.
+Lors de la conception de la structure de contenu d’un site et du schéma de métadonnées des ressources, tenez compte de l’approche légère et accessible fournie par le balisage.
 
 ## Application de balises {#applying-tags}
 
@@ -41,7 +41,7 @@ Pour appliquer les balises prédéfinies, dans la fenêtre **Propriétés de la 
 
 ## Publication de balises {#publishing-tags}
 
-De la même manière que vous pouvez publier et annuler la publication de pages, vous pouvez effectuer les opérations suivantes sur les balises et les espaces de noms :
+De la même manière que vous pouvez publier et dépublier des pages, vous pouvez effectuer les opérations suivantes sur les balises et les espaces de noms :
 
 ### Activer {#activate}
 

@@ -71,11 +71,11 @@ Consultez [cet article](best-practices.md) pour plus d’informations à ce suje
 
 ### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
 
-Aucun privilège de **déploiement** ne peut être défini ou supprimé pour les entités d’AEM (utilisateurs ou groupes).
+Aucun privilège de **déploiement** ne peut être défini ou supprimé pour les principaux d’AEM (utilisateurs ou groupes).
 
 Vous pouvez cependant :
 
-* modifier l’interface utilisateur du produit pour masquer les actions de déploiement pour une entité de sécurité donnée ;
+* modifier l’interface utilisateur du produit pour masquer les actions de déploiement pour un principal de sécurité donné ;
 * supprimer les privilèges d’écriture de l’arborescence Live Copy pour les auteurs qui ne sont pas autorisés à procéder à un déploiement.
 
 ### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_move » ?  {#moved-pages}

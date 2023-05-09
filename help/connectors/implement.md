@@ -2,8 +2,8 @@
 title: Implémentation d’un connecteur AEM
 description: Implémentation d’un connecteur AEM
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 100%
 
@@ -26,8 +26,8 @@ AEM est une solution de gestion de l’expérience web haut de gamme qui propose
 * Récupération de ressources d’AEM. Il peut s’agir, par exemple, d’un système de gestion de contenu (CMS) externe faisant référence à une ressource stockée dans AEM Assets. Autre exemple : un système PIM lié à une image dans AEM Assets.
 * Stockage de ressources dans l’infrastructure AEM. Il peut s’agir, par exemple, d’un système de gestion des ressources marketing (MRM) qui stocke une ressource approuvée dans AEM Assets.
 * Configuration et rendu d’un composant d’interface utilisateur personnalisé. Vous pouvez, par exemple, autoriser un auteur à faire glisser un composant vidéo et à configurer une vidéo spécifique pour qu’elle soit lue sur le site en direct.
-* Utilisation d’une ressource avec un service partenaire. Il s’agit, par exemple, de l’envoi d’une ressource vers une plate-forme vidéo lorsqu’une page est publiée.
-* Analyse d’un site, d’une page ou d’une ressource dans AEM Admin Console. Il peut s’agir, par exemple, de recommandations d’optimisation du moteur de recherche pour une page existante ou non publiée.
+* Utilisation d’une ressource avec un service partenaire. Il s’agit, par exemple, de l’envoi d’une ressource vers une plateforme vidéo lorsqu’une page est publiée.
+* Analyse d’un site, d’une page ou d’une ressource dans AEM Admin Console. Il peut s’agir, par exemple, de recommandations d’optimisation du moteur de recherche pour une page existante ou dépubliée.
 * Accès au niveau de la page aux données utilisateur gérées par un service externe. Il peut s’agir, par exemple, de l’exploitation d’informations démographiques pour personnaliser l’expérience sur le site. Apprenez-en plus sur ContextHub, un framework qui permet de stocker, de manipuler et de présenter des données de contexte.
 * Traduction d’une copie de site ou de métadonnées de ressource. Rendez-vous sur la page [AEM Translation Framework Bootstrap Connector](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) pour obtenir un exemple qui utilise AEM Translation Framework, l’implémentation privilégiée pour les connecteurs de traduction.
 
@@ -49,10 +49,10 @@ Outre la documentation statique ci-dessus, Adobe et la communauté AEM proposent
 * D’autres ressources techniques Adobe sont disponibles pour certains niveaux de partenaire. En savoir plus sur le programme [Adobe Exchange](https://partners.adobe.com/exchangeprogram/experiencecloud).
 * Si votre entreprise souhaite obtenir une assistance en matière d’implémentation, contactez l’équipe [Services professionnels](https://www.adobe.com/fr/marketing-cloud/service-support/professional-consulting-training.html) d’Adobe ou utilisez le [Solution Partner Finder](https://solutionpartners.adobe.com/home/partnerFinder.html) pour obtenir la liste des partenaires d’Adobe dans le monde entier.
 
-Règles de structure du module
+Règles de structure du package
 -----------------------
 
-Afin de prendre en charge les déploiements continus, les modules AEM as a Cloud Service, dont les connecteurs sont des exemples, présentent une séparation stricte entre le contenu « non modifiable » et le contenu « modifiable ». Les modules doivent être clairement séparés entre ceux qui incluent :
+Afin de prendre en charge les déploiements continus, les packages AEM as a Cloud Service, dont les connecteurs sont des exemples, présentent une séparation stricte entre le contenu « non modifiable » et le contenu « modifiable ». Les packages doivent être clairement séparés entre ceux qui incluent :
 
 * `/apps`
 * `/content` et `/conf`
@@ -86,4 +86,4 @@ AEM as a Cloud Service est une solution basée dans le cloud. Certaines directiv
 Test du connecteur AEM
 -------------------------
 
-Pour créer des connecteurs (ou modifier des connecteurs existants), vous devez utiliser les techniques de développement de l’environnement local. L’équipe en charge des partenaires mettra à la disposition des partenaires ISV un environnement de test dans lequel ils pourront déployer leur connecteur AEM sur une application Vanilla pour s’assurer qu’il fonctionne.
+Pour créer des connecteurs (ou modifier des connecteurs existants), vous devez utiliser les techniques de développement de l’environnement local. L’équipe en charge des partenaires mettra à la disposition des partenaires ISV un sandbox dans lequel ils pourront déployer leur connecteur AEM sur une application Vanilla pour s’assurer qu’il fonctionne.

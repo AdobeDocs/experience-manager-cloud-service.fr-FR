@@ -19,7 +19,7 @@ Les outils de modernisation d’AEM fournissent une suite d’utilitaires qui pe
 Les outils de modernisation d’AEM permettent de convertir facilement :
 
 * Les modèles statiques en modèles modifiables
-* Les configurations de la conception en stratégies
+* Les configurations de la conception en politiques
 * Les composants de base en composants principaux
 * L’interface utilisateur classique en interface utilisateur tactile
 

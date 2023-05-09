@@ -7,7 +7,7 @@ exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
 source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -27,7 +27,7 @@ Pour vous assurer que le déploiement n’est pas bloqué, les définitions poss
 
 Le comportement par défaut d’AEM prêt à l’emploi est que le contenu publié n’est pas affecté. Ainsi, si une page créée manuellement dans la branche Live Copy a été publiée, ce contenu est toujours publié avec la gestion du conflit et le déploiement.
 
-Outre les fonctionnalités standard, des gestionnaires de conflit personnalisés peuvent être ajoutés pour mettre en œuvre différentes règles. Elles peuvent également permettre des actions de publication sous forme de processus individuel.
+Outre les fonctionnalités standard, des gestionnaires de conflit personnalisés peuvent être ajoutés pour mettre en œuvre différentes règles. Ils peuvent également permettre des actions de publication sous la forme d’un processus individuel.
 
 ### Exemple de scénario {#example-scenario}
 
@@ -62,11 +62,11 @@ AEM possède un [comportement prédéfini lorsque la gestion des conflits a ét�
 
 ## Gestionnaires de conflit {#conflict-handlers}
 
-AEM utilise des gestionnaires de conflit pour résoudre des conflits de page qui émergent lors du déploiement du contenu du plan directeur vers la Live Copy. Le changement de nom des pages est la méthode habituelle (mais pas la seule) pour résoudre de tels conflits. Plusieurs gestionnaires de conflit peuvent être opérationnels pour permettre de sélectionner différents comportements.
+AEM utilise des gestionnaires de conflit pour résoudre des conflits de page qui émergent lors du déploiement du contenu du plan directeur vers la Live Copy. Le changement de nom des pages est la méthode habituelle (mais pas la seule) pour résoudre de tels conflits. Plusieurs gestionnaires de conflit peuvent être opérationnels pour permettre une sélection de comportements différents.
 
-AEM comporte les éléments suivants :
+AEM fournit :
 
-* [Gestionnaire de conflits par défaut](#default-conflict-handler) :
+* Le [gestionnaire de conflit par défaut](#default-conflict-handler):
    * `ResourceNameRolloutConflictHandler`
 * Possibilité de mettre en œuvre un [gestionnaire personnalisé](#customized-handlers)
 * Le mécanisme de classement des services qui permet de définir la priorité de chaque gestionnaire individuel
@@ -77,7 +77,7 @@ AEM comporte les éléments suivants :
 Le gestionnaire de conflits par défaut est `ResourceNameRolloutConflictHandler`
 
 * Avec ce gestionnaire, la page du plan directeur prévaut.
-* Le classement des services pour ce gestionnaire est défini sur Bas, c’est-à-dire en dessous de la valeur par défaut pour la propriété `service.ranking`, car l’hypothèse est que les gestionnaires personnalisés doivent posséder un classement supérieur. Cependant, le classement n’est pas le minimum absolu pour s’assurer de la flexibilité lorsque cela est nécessaire.
+* Le classement des services pour ce gestionnaire est défini sur Bas, c’est-à-dire en dessous de la valeur par défaut pour la propriété `service.ranking`, car l’hypothèse est que les gestionnaires personnalisés doivent posséder un classement supérieur. Cependant, le classement n’est pas le minimum absolu pour garantir de la flexibilité lorsque cela est nécessaire.
 
 Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, la page de la Live Copy `/b` est déplacée dans la branche Live Copy vers `/b_msm_moved`.
 
@@ -104,9 +104,9 @@ Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, l
 
 ### Gestionnaires personnalisés {#customized-handlers}
 
-Les gestionnaires de conflit personnalisés permettent de mettre en œuvre vos propres règles. À l’aide du mécanisme de classement des services, vous pouvez également définir leur mode d’interaction avec les autres gestionnaires.
+Les gestionnaires de conflit personnalisés permettent de mettre en œuvre vos propres règles. Grâce au mécanisme de classement des services, vous pouvez également définir la manière dont ils interagissent avec d’autres gestionnaires.
 
-Les gestionnaires de conflit personnalisés peuvent être :
+Les gestionnaires de conflit personnalisés peuvent :
 
 * nommés selon vos besoins ;
 * développés/configurés selon vos besoins.
@@ -125,7 +125,7 @@ Si vous [désactivez manuellement la gestion des conflits,](#rollout-manager-and
 
 Dans ce cas, la Live Copy prévaut effectivement. La page du plan directeur `/b` n’est pas copiée, et la page de la Live Copy `/b` reste intacte.
 
-* Plan directeur : `/b`
+* Blueprint: `/b`
 
    N’est pas copié du tout et est ignoré.
 

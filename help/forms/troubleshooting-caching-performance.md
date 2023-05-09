@@ -20,13 +20,13 @@ Vous pouvez rencontrer certains des problèmes suivants lors de la configuration
 
 Vous pouvez sélectionner et ajouter des images ou des vidéos depuis l’explorateur de ressources à un formulaire adaptatif. Lorsque ces images sont modifiées dans l’éditeur de ressources, la version mise en cache d’un formulaire adaptatif contenant de telles images n’est pas invalidée. Le formulaire adaptatif continue d’afficher des images plus anciennes.
 
-Pour résoudre ce problème, après avoir publié les images et la vidéo, annulez explicitement la publication et publiez les formulaires adaptatifs qui font référence à ces ressources.
+Pour résoudre ce problème, après avoir publié les images et la vidéo, dépubliez et publiez explicitement les formulaires adaptatifs qui font référence à ces ressources.
 
 ## Certains formulaires adaptatifs incluant un fragment de contenu ou des fragments d’expérience ne sont pas automatiquement invalidés à partir du cache du Dispatcher. {#content-fragments-experience-fragments-not-invalidated}
 
 Vous pouvez ajouter un fragment de contenu ou un fragment d’expérience à un formulaire adaptatif. Lorsque ces fragments sont modifiés et publiés indépendamment, la version mise en cache d’un formulaire adaptatif contenant ces fragments n’est pas invalidée. Le formulaire adaptatif continue d’afficher des fragments plus anciens.
 
-Pour résoudre ce problème, après avoir publié un fragment de contenu ou un fragment d’expérience mis à jour, annulez explicitement la publication et publiez les formulaires adaptatifs qui utilisent ces ressources.
+Pour résoudre ce problème, après avoir publié un fragment de contenu ou un fragment d’expérience mis à jour, dépubliez et publiez explicitement les formulaires adaptatifs qui utilisent ces ressources.
 
 ## Seule la première instance de formulaires adaptatifs est mise en cache. {#only-first-instance-cached}
 

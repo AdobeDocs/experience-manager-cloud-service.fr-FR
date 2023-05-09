@@ -5,7 +5,7 @@ exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
 source-git-commit: cba5dccd3b66220bbcd6d3b4dd5298702902b0e5
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -107,7 +107,7 @@ Suivez cette section pour explorer la carte d’activité de Transfert de conten
    >[!NOTE]
    >Veuillez consulter les [conditions préalables](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/prerequisites-content-transfer-tool.html) et les [bonnes pratiques et instructions](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr) avant d’utiliser l’outil de transfert de contenu.
 
-1. Vous devez télécharger et installer l’outil de transfert de contenu pour renseigner le jeu de migration et terminer la phase d’extraction du transfert de contenu. Lisez la section [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html) pour savoir comment utiliser l’outil de transfert de contenu.
+1. Vous devez télécharger et installer l’outil de transfert de contenu pour renseigner le jeu de migration et terminer la phase d’extraction du transfert de contenu. Lisez la section [Prise en main de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr) pour savoir comment utiliser l’outil de transfert de contenu.
 
 1. Pour ingérer du contenu à partir du jeu de migration dans un environnement sur AEM as a Cloud Service, vous devez démarrer une ingestion. Accédez à **Tâches d’ingestion** et cliquez sur **Nouvelle ingestion**. Lisez la section [Ingestion de contenu dans Target](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/ingesting-content.html?lang=fr) pour savoir comment terminer la phase d’ingestion du transfert de contenu.
 

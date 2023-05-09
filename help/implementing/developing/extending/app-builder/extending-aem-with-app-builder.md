@@ -4,8 +4,8 @@ description: Extension d’ [!DNL Adobe Experience Manager] as a Cloud Service �
 exl-id: 50d82745-5deb-4bfa-961b-714842403601
 source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '562'
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ L’App Builder permet aux clients d’étendre facilement les capacités d’A
 * Extensibilité des services principaux : étendez les fonctionnalités de l’application principale en étendant le comportement par défaut grâce à des fonctionnalités personnalisées et à la logique métier.
 * Extensibilité de l’expérience utilisateur : étendez l’expérience principale pour prendre en charge les besoins de l’entreprise ou créer des propriétés numériques et des applications storefronts et back-office spécifiques aux clients.
 
-App Builder est disponible pour les clients et les partenaires d’entreprise via notre Aperçu développeur depuis l’été 2020. La disponibilité générale de l’App Builder est prévue pour décembre 2021. Nous invitons les développeurs à tester l’App Builder via notre [Programme d’évaluation](https://adobe.ly/appbuilder-trial).
+Depuis l’été 2020, l’App Builder est disponible pour la clientèle et les partenaires d’entreprise via notre Aperçu du développeur. La disponibilité générale de l’App Builder est prévue pour décembre 2021. Nous invitons les développeurs à tester l’App Builder via notre [Programme d’évaluation](https://adobe.ly/appbuilder-trial).
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ App Builder est disponible pour les clients et les partenaires d’entreprise vi
 
 ## Architecture {#architecture}
 
-Au lieu d’une solution prête à l’emploi, Adobe Developer App Builder fournit une plateforme de développement commune, cohérente et normalisée permettant d’étendre les solutions cloud Adobe telles qu’AEM, parmi les suivantes :
+Au lieu d’une solution prête à l’emploi, Adobe Developer App Builder fournit une plateforme de développement commune, cohérente et normalisée permettant d’étendre les solutions Adobe Cloud telles qu’AEM, parmi les suivantes :
 
 * Adobe Developer Console : pour le développement de microservices et d’extensions personnalisés, permet aux développeurs de créer et de gérer des projets tout en accédant à tous les outils et API dont ils ont besoin pour créer des modules externes et des intégrations.
 * Outils de développement : outils Open Source, SDK et bibliothèques permettant aux développeurs de créer facilement des extensions et des intégrations personnalisées. Utilisez React Spectrum (dans la boîte à outils de l’interface utilisateur d’Adobe) pour disposer d’une interface utilisateur commune à toutes les applications d’Adobe.

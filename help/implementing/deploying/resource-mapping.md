@@ -1,6 +1,6 @@
 ---
 title: Mappage de ressource
-description: Découvrez comment définir des redirections, des URL Vanity et les hôtes virtuels pour AEM à l’aide du mappage de ressource.
+description: Découvrez comment définir des redirections, des URL Vanity et des hôtes virtuels pour AEM à l’aide du mappage de ressources.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
@@ -9,15 +9,15 @@ exl-id: 1a1bb23c-d1d1-4e2b-811b-753e6a90a01b
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '547'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
 # Mappage de ressource{#resource-mapping}
 
-Le mappage de ressource permet de définir des redirections, des URL Vanity et des hôtes virtuels pour AEM.
+Le mappage de ressources permet de définir des redirections, des URL de redirection vers un microsite et des hôtes virtuels pour AEM.
 
-Par exemple, vous pouvez utiliser ces mappages pour :
+Par exemple, vous pouvez utiliser ces mappages pour :
 
 * faire précéder toutes les requêtes de `/content` afin que la structure interne soit masquée pour les visiteurs de votre site web ;
 * définir une redirection afin que toutes les requêtes en direction de la page `/content/en/gateway` de votre site Web soient redirigées vers `https://gbiv.com/`.
@@ -40,9 +40,9 @@ car le mappage ajoutera automatiquement le préfixe `/content` à `/we-retail/en
 >
 >Voir la documentation Sling et les sections [Mappages pour la résolution de ressource](https://sling.apache.org/site/resources.html) et [Ressources](https://sling.apache.org/site/mappings-for-resource-resolution.html) pour plus d’informations.
 
-## Affichage des définitions du mappage {#viewing-mapping-definitions}
+## Affichage des définitions de mappage {#viewing-mapping-definitions}
 
-Les mappages forment deux listes que le résolveur de ressources JCR analyse (du haut vers le bas) pour trouver une correspondance.
+Les mappages forment deux listes que le résolveur de ressources JCR évalue (de haut en bas) pour trouver une correspondance.
 
 Ces listes peuvent être visualisées (ainsi que des informations de configuration) sous l’option **JCR ResourceResolver** de la console Felix ; par exemple, `https://<*host*>:<*port*>/system/console/jcrresolver` :
 
@@ -54,11 +54,11 @@ Ces listes peuvent être visualisées (ainsi que des informations de configurati
 
 * **Mapping Map Entries (Entrées de mappage)** La liste des entrées utilisées par les méthodes ResourceResolver.map pour mapper les chemins d’accès des ressources aux URL.
 
-Les deux listes affichent différentes entrées, y compris celles définies par défaut par les applications. Cela vise souvent à simplifier les URL pour l’utilisateur. 
+Les deux listes affichent différentes entrées, y compris celles définies par défaut par la ou les applications. Ils visent souvent à simplifier les URL de l’utilisateur.
 
-Les listes associe **un modèle**, une expression régulière correspondant à la demande, avec **un remplacement** qui définit la redirection à appliquer.
+La paire de listes a **Modèle**, une expression régulière associée à la requête, avec une **Remplacement** qui définit la redirection à imposer.
 
-Par exemple :
+Par exemple :
 
 **Modèle** `^[^/]+/[^/]+/welcome$`
 
@@ -80,9 +80,9 @@ De nouvelles définitions de mappage sont créées dans le référentiel.
 >
 >Il existe de nombreuses ressources disponibles qui permettent d’expliquer comment définir les expressions régulières ; par exemple, [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
-### Création des définitions de mappage dans AEM {#creating-mapping-definitions-in-aem}
+### Création de définitions de mappage dans AEM {#creating-mapping-definitions-in-aem}
 
-Dans une installation d’AEM standard, vous pouvez trouver le dossier :
+Dans une installation standard d’AEM, vous trouverez le dossier suivant :
 
 `/etc/map/http`
 

@@ -1,27 +1,27 @@
 ---
 title: Utilisation de conditions de masquage
-description: Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non.
+description: Vous pouvez utiliser des conditions de masquage pour déterminer si une ressource de composant est générée ou non.
 exl-id: 2a96f246-fb0f-4298-899e-ebbf9fc1c96f
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '615'
-ht-degree: 100%
+ht-degree: 56%
 
 ---
 
 # Utilisation de conditions de masquage {#using-hide-conditions}
 
-Des conditions de masquage peuvent être utilisées pour déterminer si une ressource de composant est rendue ou non. Cela peut être le cas, par exemple, lorsqu’un créateur de modèles configure le composant principal [Composant de liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=fr) dans l’[éditeur de modèles](/help/sites-cloud/authoring/features/templates.md) et décide de désactiver les options afin de créer la liste sur la base des pages enfants. Si vous désactivez cette option dans la boîte de dialogue de création, une propriété est définie, de sorte que, lorsque le composant de liste est rendu, la condition de masquage soit évaluée et l’option d’affichage des pages enfants ne soit pas présentée.
+Vous pouvez utiliser des conditions de masquage pour déterminer si une ressource de composant est générée ou non. Par exemple, lorsqu’un créateur de modèles configure le composant principal [composant de liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=fr) dans le [éditeur de modèles](/help/sites-cloud/authoring/features/templates.md) et décide de désactiver les options pour créer la liste en fonction des pages enfants. La désactivation de cette option dans la boîte de dialogue de conception définit une propriété de sorte que lorsque le composant de liste est rendu, la condition de masquage est évaluée et l’option d’affichage des pages enfants n’est pas affichée.
 
 ## Présentation {#overview}
 
-Les boîtes de dialogue peuvent devenir très complexes et contenir de nombreuses options. Cependant, l’utilisateur ne pourra peut-être exploiter qu’une petite partie de celles mises à sa disposition. Cela peut avoir une incidence considérable sur l’expérience utilisateur.
+Les boîtes de dialogue peuvent devenir très complexes et contenir de nombreuses options. Cependant, l’utilisateur ne pourra peut-être exploiter qu’une petite partie de celles mises à sa disposition. Cela peut entraîner une surcharge des expériences de l’interface utilisateur pour les utilisateurs.
 
-Grâce aux conditions de masquage, les administrateurs, développeurs et super-utilisateurs ont la possibilité de masquer des ressources sur la base d’un ensemble de règles. Cette fonctionnalité permet de déterminer les ressources qui doivent être affichées lorsqu’un auteur modifie le contenu.
+En utilisant les conditions de masquage, les administrateurs, les développeurs et les super-utilisateurs ont un moyen de masquer les ressources en fonction d’un ensemble de règles. Cette fonction leur permet de décider quelles ressources afficher lorsqu’un auteur modifie le contenu.
 
 >[!NOTE]
 >
->Le masquage d’une ressource sur la base d’une expression ne remplace pas les autorisations ACL. Le contenu peut toujours être modifié, mais il n’est pas simplement affiché.
+>Le masquage d’une ressource à partir d’une expression ne remplace pas les autorisations ACL. Le contenu reste modifiable mais n’est tout simplement pas affiché.
 
 ## Détails relatifs à la mise en œuvre et à l’utilisation {#implementation-and-usage-details}
 
@@ -29,7 +29,7 @@ Grâce aux conditions de masquage, les administrateurs, développeurs et super-u
 
 L’implémentation utilise l’[API ELResolver](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/docs/server/el.html) de Granite et ajoute une variable personnalisée `cqDesign` via ExpressionCustomizer.
 
-Voici quelques exemples de conditions de masquage sur un nœud de conception situé sous `etc/design` ou sous la forme d’une stratégie de contenu.
+Voici quelques exemples de conditions de masquage sur un nœud de conception situé sous `etc/design` ou sous la forme d’une politique de contenu.
 
 ```
 ${cqDesign.myProperty}
@@ -51,11 +51,11 @@ Lors de la définition de votre expression de masquage, veuillez tenir compte de
 
 Vous trouverez des exemples de conditions de masquage dans AEM et dans les [composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) en particulier. Par exemple, considérez le [composant principal Liste](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=fr) tel qu’il est implémenté dans le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-[En utilisant l’éditeur de modèles](/help/sites-cloud/authoring/features/templates.md), l’auteur de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition de l’auteur de pages. Il est ainsi possible d’activer ou de désactiver des options permettant de définir une liste comme étant statique, une liste de pages enfants, une liste de pages balisées, etc.
+[En utilisant l’éditeur de modèles](/help/sites-cloud/authoring/features/templates.md), l’auteur de modèles peut définir, dans la boîte de dialogue de conception, les options du composant de liste mises à la disposition de l’auteur de pages. Des options telles que l’autorisation ou non d’une liste statique, d’une liste de pages enfants, d’une liste de pages balisées, etc. peuvent être activées ou désactivées.
 
-Si un auteur de modèles choisit de désactiver l’option des pages enfants, une propriété de conception est définie et une condition de masquage est évaluée par rapport à celle-ci, ce qui empêche le rendu de cette option pour l’auteur de pages.
+Si un auteur de modèles choisit de désactiver l’option des pages enfants, une propriété de conception est définie et une condition de masquage est évaluée par rapport à celle-ci, ce qui entraîne l’absence de rendu de l’option pour l’auteur de pages.
 
-1. Par défaut, l’auteur de la page peut utiliser le composant principal Liste pour créer une liste à l’aide des pages enfants en choisissant l’option **Pages enfants**.
+1. Par défaut, l’auteur de la page peut utiliser le composant principal Liste pour créer une liste à l’aide de pages enfants en sélectionnant l’option . **Pages enfants**.
 
    ![Paramètres du composant Liste](assets/hide-conditions-list-settings.png)
 
@@ -63,7 +63,7 @@ Si un auteur de modèles choisit de désactiver l’option des pages enfants, un
 
    ![Boîte de dialogue de conception du composant Liste](assets/hide-conditions-list-design.png)
 
-1. Un nœud de stratégie est créé sous `/conf/wknd/settings/wcm/policies/wknd/components/list` avec une propriété `disableChildren` définie sur `true`.
+1. Un nœud de politique est créé sous `/conf/wknd/settings/wcm/policies/wknd/components/list` avec une propriété `disableChildren` définie sur `true`.
 
    ![Structure de nœud de la condition de masquage](assets/hide-conditions-node-structure.png)
 

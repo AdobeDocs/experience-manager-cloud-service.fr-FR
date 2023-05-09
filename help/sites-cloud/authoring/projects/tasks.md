@@ -1,23 +1,23 @@
 ---
 title: Utilisation de tâches
-description: Les tâches représentent les éléments de travail à effectuer sur le contenu. Elles sont utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours
+description: Les tâches représentent des éléments de travail à effectuer sur le contenu et sont utilisées dans les projets pour déterminer le niveau d’exhaustivité des tâches en cours.
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
 source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
 workflow-type: tm+mt
 source-wordcount: '578'
-ht-degree: 100%
+ht-degree: 45%
 
 ---
 
 # Utilisation de tâches {#working-with-tasks}
 
-Les tâches représentent des éléments de travail à effectuer sur le contenu. Lorsqu’une tâche vous est assignée, elle apparaît dans Workflow Inbox. Une valeur de tâche est indiquée dans la colonne Type pour les éléments de tâche.
+Les tâches représentent des éléments de travail à effectuer sur le contenu. Lorsqu’une tâche vous est assignée, elle apparaît dans la Boîte de réception de Workflow. Les éléments de tâche ont une valeur de tâche dans la colonne Type .
 
 Les tâches sont également utilisées dans les projets pour déterminer le niveau de réalisation des tâches en cours, y compris des tâches de workflow.
 
 ## Suivi de la progression du projet {#tracking-project-progress}
 
-Vous pouvez surveiller l’état d’avancement de votre projet en examinant les tâches actives/terminées au sein du projet, représentées par la mosaïque **Tâches**. L’état d’avancement de votre projet peut être déterminé par les éléments suivants :
+Vous pouvez suivre la progression du projet en examinant les tâches principales/terminées dans un projet représenté par le **Tâches** mosaïque. La progression du projet peut être déterminée par :
 
 * **Mosaïque Tâches :** un état d’avancement global du projet est présenté dans la mosaïque Tâches disponible sur la page des détails du projet.
 
@@ -27,10 +27,10 @@ Ces deux éléments répertorient les tâches de workflow, ainsi que les tâches
 
 ### Mosaïque Tâches {#task-tile}
 
-Si un projet contient des tâches associées, une mosaïque Tâches s’affiche au sein du projet. La mosaïque Tâches affiche l’état actuel du projet. Cet état inclut les tâches existantes dans le workflow et ne contient aucune tâche générée ultérieurement à mesure que se déroule le workflow. La mosaïque Tâches contient les informations suivantes :
+Si un projet comporte des tâches associées, une mosaïque Tâche s’affiche dans le projet. La mosaïque Tâche affiche l’état actuel du projet. Cet état inclut les tâches existantes dans le workflow et ne contient aucune tâche générée ultérieurement à mesure que se déroule le workflow. Les informations suivantes sont visibles dans la mosaïque de la tâche :
 
 * Pourcentage de tâches terminées
-* Pourcentage de tâches actives
+* Pourcentage de tâches principales
 * Pourcentage de tâches en retard
 
 ![Mosaïque Tâches](/help/sites-cloud/authoring/assets/projects-tasks-breakdown.png)
@@ -41,7 +41,7 @@ Outre le suivi de l’avancée du projet, vous pouvez également afficher plus d
 
 #### Liste de tâches {#task-list}
 
-Cliquez sur les points de suspension (...) dans la mosaïque Tâches pour afficher la liste des tâches liées au projet. Les tâches sont divisées par workflow parent. Les détails de la tâche s’affichent avec les métadonnées, comme la date d’échéance, le cessionnaire, la priorité et l’état.
+Cliquez sur les points de suspension (...) dans la mosaïque Tâche pour afficher la liste des tâches liées au projet. Les tâches sont divisées par workflow parent. Les détails de la tâche s’affichent avec les métadonnées, comme la date d’échéance, la personne désignée, la priorité et le statut.
 
 ![Liste de tâches](/help/sites-cloud/authoring/assets/projects-task-list.png)
 
@@ -53,18 +53,18 @@ Pour plus d’informations sur une tâche particulière, dans la liste Tâches, 
 
 ### Affichage et modification des commentaires de tâche {#viewing-and-modifying-task-comments}
 
-Dans les détails de la tâche, vous pouvez modifier ou ajouter des commentaires. En outre, tous les commentaires existant dans un projet sont visibles dans la zone Commentaires.
+Dans Détails de la tâche, vous pouvez modifier ou ajouter des commentaires. En outre, tous les commentaires d’un projet sont visibles dans la zone Commentaires .
 
 ![Commentaires sur les tâches](/help/sites-cloud/authoring/assets/projects-tasks-comments.png)
 
 ### Ajout de tâches {#adding-tasks}
 
-Vous pouvez ajouter de nouvelles tâches aux projets. Ces tâches apparaissent alors dans la mosaïque Tâches et vous pouvez les utiliser dans la boîte de réception des notifications.
+Vous pouvez ajouter de nouvelles tâches aux projets. Ces tâches apparaissent ensuite dans la mosaïque Tâches et sont disponibles dans la boîte de réception Notifications pour effectuer des actions.
 
-Pour ajouter une tâche :
+Pour ajouter une tâche, procédez comme suit :
 
 1. Dans le projet, accédez à la mosaïque **Tâches** et appuyez/cliquez sur l’icône +. La fenêtre **Ajouter une tâche** s’affiche.
-1. Entrez les informations relatives à la tâche. Le titre de la tâche et le groupe auquel elle est affectée sont obligatoires. Les informations complémentaires (par exemple, le chemin d’accès au contenu, la description, la priorité de la tâche et la date d’échéance) sont facultatives. En outre, vous pouvez utiliser l’onglet **Avancé** pour saisir le nom de la tâche, qui est utilisé pour nommer l’URL.
+1. Saisissez des informations sur la tâche. Le titre de la tâche et le groupe auquel elle est affectée sont obligatoires. Des informations supplémentaires telles que le chemin d’accès au contenu, la description, la priorité de la tâche et la date d’échéance sont facultatives. En outre, vous pouvez sélectionner la variable **Avancé** pour saisir le nom de la tâche, qui est utilisé pour nommer l’URL.
 
    ![Ajouter une tâche](/help/sites-cloud/authoring/assets/projects-add-task.png)
 
@@ -72,10 +72,10 @@ Pour ajouter une tâche :
 
 ## Utilisation des tâches dans la boîte de réception {#working-with-tasks-in-the-inbox}
 
-Un autre moyen d’accéder aux tâches consiste à passer par la boîte de réception. Vous pouvez ouvrir le contenu à partir de la boîte de réception afin d’appliquer les modifications requises. Une fois cette opération effectuée, définissez l’état de la tâche sur « Terminé ». Les tâches s’affichent également dans votre boîte de réception lorsqu’elles sont affectées à un groupe d’utilisateurs auquel vous appartenez. Dans ce cas, tout membre du groupe peut effectuer le travail et accomplir la tâche.
+Une autre méthode d’accès aux tâches consiste à utiliser la boîte de réception. Dans la boîte de réception, vous pouvez ouvrir le contenu pour mettre en oeuvre les modifications requises. Une fois cette opération effectuée, définissez l’état de la tâche sur « Terminé ». Les tâches s’affichent également dans votre boîte de réception lorsqu’elles sont affectées à un groupe d’utilisateurs auquel vous appartenez. Dans ce cas, tout membre du groupe peut effectuer le travail et terminer la tâche.
 
 ![Tâches dans la boîte de réception](/help/sites-cloud/authoring/assets/projects-task-inbox.png)
 
-Pour terminer une tâche, sélectionnez la tâche et cliquez sur **Terminé**. Ajoutez des informations à la tâche, puis cliquez sur **Terminé**. Reportez-vous à la section [Votre boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) pour plus d’informations.
+Pour terminer une tâche, sélectionnez la tâche, puis cliquez sur **Terminer**. Ajoutez des informations à la tâche, puis cliquez sur **Terminé**. Voir [Votre boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) pour plus d’informations.
 
 ![Notifications de tâche](/help/sites-cloud/authoring/assets/projects-task-notifications.png)

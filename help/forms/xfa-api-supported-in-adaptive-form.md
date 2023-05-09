@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -76,7 +76,7 @@ Lorsqu’un formulaire adaptatif est créé à l’aide d’un fichier XDP, vous
   </tr>
   <tr>
    <td><p>Champ Mot de passe </p> </td>
-   <td><p>Zone de mot de passe</p> </td>
+   <td><p>Champ de mot de passe</p> </td>
   </tr>
   <tr>
    <td><p>Image</p> </td>

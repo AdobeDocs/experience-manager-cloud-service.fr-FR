@@ -33,12 +33,12 @@ Ce document vous aide à comprendre comment configurer un connecteur AEM pour le
 * comprendre les paramètres importants de la structure d’intégration de traduction dans AEM ;
 * savoir configurer votre propre connexion à votre service de traduction.
 
-## Structure d’intégration de la traduction {#tif}
+## Framework d’intégration de la traduction {#tif}
 
-La structure d’intégration de la traduction dans AEM s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM. Elle implique trois étapes de base.
+Le framework d’intégration de la traduction dans AEM s’intègre à des services de traduction tiers pour orchestrer la traduction du contenu d’AEM. Elle implique trois étapes de base.
 
 1. Connectez-vous à un fournisseur de services de traduction.
-1. Créez une configuration de structure d’intégration de traduction.
+1. Créez une configuration de framework d’intégration de traduction.
 1. Associez la configuration à votre contenu.
 
 Les sections suivantes décrivent ces étapes de manière plus détaillée.

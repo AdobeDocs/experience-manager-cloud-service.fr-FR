@@ -2,8 +2,8 @@
 title: Développer des sites avec le pipeline front-end
 description: Grâce au pipeline front-end, les développeurs et développeuses front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certains éléments particuliers du processus de création front-end qui doivent être pris en compte.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: 2afdd0682d1baf39d737ee7a5721657e639739a7
-workflow-type: ht
+source-git-commit: a6b228023d7bd2a40e4db3a1d2c3900a5c24031c
+workflow-type: tm+mt
 source-wordcount: '1157'
 ht-degree: 100%
 

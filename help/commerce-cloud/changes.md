@@ -2,7 +2,7 @@
 title: Modifications notables apportées au module complémentaire CIF (Commerce Integration Framework)
 description: Modifications notables de Commerce Integration Framework (CIF) par rapport aux anciennes versions de CIF.
 exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: b81ac7529e7757fbd9f9fbc48e47e740ab9ecbf3
+source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 79%
@@ -17,7 +17,7 @@ Ce document met en évidence les différences importantes entre le module compl�
 
 ## Installation et mises à jour
 
-Le module complémentaire CIF d’AEM est installé à l’aide de Cloud Manager. L’installation nécessite un crédit CIF, à l’exception des environnements de test dans lesquels CIF peut être installé sans crédits. Les crédits sont automatiquement reçus via la mise en service du module complémentaire CIF dans votre contrat AEM.
+Le module complémentaire CIF d’AEM est installé à l’aide de Cloud Manager. L’installation nécessite un crédit CIF, à l’exception des sandbox dans lesquels CIF peut être installé sans crédits. Les crédits sont automatiquement reçus via la mise en service du module complémentaire CIF dans votre contrat AEM.
 
 Le module complémentaire est automatiquement mis à jour dans le cadre de la mise à jour as a Cloud Service régulière AEM.
 

@@ -4,8 +4,8 @@ description: Découvrez les méthodes que vous pouvez utiliser pour sélectionne
 contentOwner: Rick Brough
 role: User
 exl-id: a6f366ab-41b8-4909-b815-e6c4b938bf77
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '728'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Utilisez le sélecteur de produits pour choisir un produit lorsque vous souhaite
 
    ![chlimage_1-525](assets/chlimage_1-525.png)
 
-   Sélectionnez **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (mode **[!UICONTROL Liste]** ou mode **[!UICONTROL Carte]**).
+   Sélectionnez **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (**[!UICONTROL Vue Liste]** ou **[!UICONTROL Vue Carte]**).
 
    ![chlimage_1-526](assets/chlimage_1-526.png)
 
@@ -104,7 +104,7 @@ Reportez-vous également à la section [Sélecteur de ressources](/help/assets/s
 
    ![chlimage_1-534](assets/chlimage_1-534.png)
 
-   Sélectionnez **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (en mode **[!UICONTROL Liste]**, en mode **[!UICONTROL Colonne]** ou en mode **[!UICONTROL Carte]**).
+   Sélectionnez **[!UICONTROL Afficher sous]** pour changer l’affichage des produits (**[!UICONTROL Vue Liste]**, **[!UICONTROL Vue Colonne]** ou **[!UICONTROL Vue Carte]**).
 
    ![chlimage_1-535](assets/chlimage_1-535.png)
 

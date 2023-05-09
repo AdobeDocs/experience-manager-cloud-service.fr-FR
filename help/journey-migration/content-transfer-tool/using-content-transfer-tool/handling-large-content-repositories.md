@@ -130,7 +130,7 @@ Votre fichier azcopy.config doit inclure les propriétés suivantes (veillez à 
 
 >[!NOTE]
 >
-> Si votre instance utilise des rôles IAM pour permettre à AEM d’accéder à S3, vous devez créer une stratégie et un utilisateur avec les actions ListBucket et GetObject activées pour le compartiment S3. Une fois configuré, utilisez la clé d’accès et la clé secrète de cet utilisateur.
+> Si votre instance utilise des rôles IAM pour permettre à AEM d’accéder à S3, vous devez créer une politique et un utilisateur avec les actions ListBucket et GetObject activées pour le compartiment S3. Une fois configuré, utilisez la clé d’accès et la clé secrète de cet utilisateur.
 
 ```
 azCopyPath=/usr/bin/azcopy

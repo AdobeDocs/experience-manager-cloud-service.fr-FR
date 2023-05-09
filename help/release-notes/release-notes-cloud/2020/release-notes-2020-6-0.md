@@ -64,7 +64,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * Un utilisateur du programme Sandbox possédant le rôle *Propriétaire d’entreprise* ou *Responsable de déploiement* dans Cloud Manager peut désormais supprimer ses jeux d’environnements de production et d’évaluation via l’interface utilisateur de Cloud Manager. L’option de suppression est désormais disponible à partir de la carte Environnement dans la page **Aperçu du programme**, mais aussi dans la page **Environnements**. La sélection de l’option de suppression dans l’environnement de production ou d’évaluation supprime également l’autre dans le jeu d’environnements.
 
-   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html).
+   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr).
 
 * Repères sur la landing page pour informer l’utilisateur sur la navigation de base.
 
@@ -86,7 +86,7 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * L’étape de création valide désormais que tous les packages de contenu générés comprennent toutes les propriétés obligatoires : nom, groupe et version.
 
-* L’étape de génération confirme désormais qu’elle a produit au moins un module de contenu.
+* L’étape de génération confirme désormais qu’elle a produit au moins un package de contenu.
 
 ### Correctifs {#bug-fixes-cm}
 
@@ -145,7 +145,7 @@ Les éléments de l’interface utilisateur sont compatibles avec les lecteurs d
 
 * La couleur et le contraste de certains éléments de l’interface utilisateur ont été mis à jour afin que les utilisateurs disposant d’une vision limitée ou qui ne perçoivent pas les couleurs puissent distinguer ces éléments de l’interface utilisateur. Par exemple, la couleur des icônes d’évaluation par étoiles dans la section [!UICONTROL Notation] de l’onglet [!UICONTROL Avancé] des [!UICONTROL Propriétés] dans les modes Ressource et Carte a été redéfinie sur un contraste approprié. (CQ-4295106)
 
-* Les lecteurs d’écran peuvent désormais lire les entrées du menu contextuel de zone de liste de la zone combinée (dans divers champs de différentes pages) en tant que liste d’options. (CQ-4294017)
+* Les lecteurs d’écran peuvent désormais lire les entrées du menu pop-up de zone de liste de la zone combinée (dans divers champs de différentes pages) en tant que liste d’options. (CQ-4294017)
 
 * Pour appliquer un workflow à une ressource, vous pouvez accéder à la flèche chevron de la [!UICONTROL chronologie] via le clavier. (CQ-4289268)
 
@@ -161,7 +161,7 @@ Les éléments de l’interface utilisateur sont compatibles avec les lecteurs d
 
 * De nombreuses options exploitables dans l’interface utilisateur Assets n’indiquent pas le focus en cas d’utilisation du clavier. (CQ-4272694)
 
-* Les utilisateurs de lecteurs d’écran peuvent désormais savoir quand les lignes en mode Liste peuvent être sélectionnées à l’aide du clavier. Les informations sont annoncées lorsque la souris survole les lignes. (CQ-4271824)
+* Les utilisateurs de lecteurs d’écran peuvent désormais savoir quand les lignes dans la vue Liste peuvent être sélectionnées à l’aide du clavier. Les informations sont annoncées lorsque la souris survole les lignes. (CQ-4271824)
 
 * Certains champs de formulaires, tels que les champs Nom d’utilisateur et Mot de passe de la page de connexion, reposent uniquement sur des valeurs d’espace réservé pour donner un libellé accessible. (CQ-4271716)
 
@@ -175,8 +175,8 @@ Cette version comprend les autres améliorations suivantes :
 
 * Possibilité de retraiter des ressources avec des profils de traitement des ressources. Les utilisateurs peuvent ainsi contrôler entièrement le processus (effectuer le traitement complet des ressources, appliquer simplement un profil de traitement spécifique et décider si le workflow de post-traitement doit être exécuté).
 * Les requêtes de recherche renvoient maintenant les résultats plus rapidement, car l’instance de grappe associée a été redémarrée en arrière-plan (auparavant, l’exécution de la recherche initiale pouvait durer plus longtemps).
-* Tri par nom lorsque vous affichez des ressources en mode Liste de l’interface Assets et dans les résultats de recherche. Voir [Rechercher des ressources](/help/assets/search-assets.md#sort).
-* Tri sur le critère Créé (Date) lorsque vous affichez des ressources en mode Liste de l’interface Assets et dans les résultats de recherche. Voir [Rechercher des ressources](/help/assets/search-assets.md#sort).
+* Tri par nom lorsque vous affichez des ressources dans la vue Liste de l’interface Assets et dans les résultats de recherche. Voir [Rechercher des ressources](/help/assets/search-assets.md#sort).
+* Tri sur le critère Créé (Date) lorsque vous affichez des ressources dans la vue Liste de l’interface Assets et dans les résultats de recherche. Voir [Rechercher des ressources](/help/assets/search-assets.md#sort).
 * Prise en charge de la conversion de fichiers EPS en images à l’aide des microservices de ressources.
 
 ### Correctifs {#assets-bug-fixes}

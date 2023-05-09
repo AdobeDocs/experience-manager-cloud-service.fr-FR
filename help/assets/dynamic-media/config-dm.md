@@ -4,10 +4,10 @@ description: Découvrez la configuration de Dynamic Media dans Adobe Experience
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 8e07bc85-ef26-4df4-8e64-3c69eae91e11
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '3795'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -278,9 +278,9 @@ Vous pouvez définir les propriétés de correction des couleurs suivantes :
 
 Par exemple, vous pouvez définir l’**[!UICONTROL Espace colorimétrique RVB par défaut]** sur *sRVB* et l’**[!UICONTROL Espace colorimétrique CMJN par défaut]** sur *WebCoated*.
 
-Cela aura les effets suivants :
+Cela permet d’effectuer les opérations suivantes :
 
-* Active la correction des couleurs pour les images RVB et CMJN.
+* Active la correction des couleurs pour les images RGB et CMJN.
 * Les images RVB qui n’ont pas de profil colorimétrique sont considérées comme se trouvant dans l’espace colorimétrique *sRVB*.
 * Les images CMJN qui n’ont pas de profil colorimétrique sont considérées comme se trouvant dans l’espace colorimétrique *WebCoated*.
 * Les rendus dynamiques qui renvoient une sortie RVB le font dans l’espace colorimétrique *sRVB*.
@@ -291,7 +291,7 @@ Cela aura les effets suivants :
 Vous pouvez définir les types de ressources traités par Dynamic Media et personnaliser les paramètres de traitement des ressources avancé. Vous pouvez, par exemple, spécifier les paramètres de traitement des ressources de façon à ce qu’ils effectuent les opérations suivantes :
 
 * Conversion d’un Adobe PDF en ressource de catalogue électronique.
-* Conversion d’un document Adobe Photoshop (.psd) en ressource de modèle de bannière afin de permettre la personnalisation.
+* Convertissez un document Adobe Photoshop (.PSD) en ressource de modèle de bannière à des fins de personnalisation.
 * Pixellisation d’un fichier Adobe Illustrator (.ai) ou d’un fichier PostScript® encapsulé Adobe Photoshop (.eps).
 * Des [profils vidéo](/help/assets/dynamic-media/video-profiles.md) et des [profils d’images](/help/assets/dynamic-media/image-profiles.md) peuvent être utilisés pour définir le traitement des vidéos et des images.
 
@@ -429,7 +429,7 @@ Si vous n’avez pas accès à OSGi, reportez-vous à la section [Configuration 
 
 1. Dans le champ **[!UICONTROL Maximum Parallel Jobs]** (Nombre maximal de tâches en parallèle), modifiez le nombre en fonction de la valeur souhaitée.
 
-   Par défaut, le nombre maximal de tâches en parallèle dépend du nombre de cœurs de processeur disponibles. Par exemple, sur un serveur à 4 cœurs, 2 threads de traitement sont attribués. (Une valeur comprise entre 0,0 et 1,0 est basée sur un ratio ou tout nombre supérieur à attribuera le nombre de threads de traitement.)
+   Par défaut, le nombre maximal de tâches parallèles dépend du nombre de coeurs de processeur disponibles. Par exemple, sur un serveur à 4 cœurs, 2 threads de traitement sont attribués. (Une valeur comprise entre 0,0 et 1,0 est basée sur un ratio ou tout nombre supérieur à attribuera le nombre de threads de traitement.)
 
    Dans la plupart des cas d’utilisation, le paramètre par défaut de 0,5 est suffisant.
 

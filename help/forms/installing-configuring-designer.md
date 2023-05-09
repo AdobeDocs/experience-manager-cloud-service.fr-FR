@@ -22,8 +22,8 @@ Pour installer et configurer Designer, vous avez besoin de la configuration mat�
 * Systèmes d’exploitation 32 bits : 16 Go d’espace disque ; systèmes d’exploitation 64 bits : 20 Go d’espace disque.
 * Mémoire graphique – 128 Mo de GPU (256 Mo recommandé)
 * 2,35 Go d’espace disponible sur le disque dur
-* Résolution d’écran 1 024 X 768 pixels ou plus
-* Accélération matérielle de la vidéo (en option)
+* Résolution d’écran de 1 024 x 768 pixels ou plus
+* Accélération matérielle de la vidéo (facultatif)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC.
 * Droits d’administrateur pour l’installation de Designer.
 

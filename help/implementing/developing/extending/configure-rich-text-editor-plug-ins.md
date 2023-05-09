@@ -7,13 +7,13 @@ exl-id: 91619662-e865-47d1-8bec-0739f402353a
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '4301'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
 # Configuration des modules externes d’éditeur de texte enrichi {#configure-the-rich-text-editor-plug-ins}
 
-Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features afin d’activer ou de désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes d’éditeur de texte enrichi.
+Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features pour activer ou désactiver une ou plusieurs fonctions de l’éditeur de texte enrichi. Cet article décrit comment configurer spécifiquement les modules externes d’éditeur de texte enrichi.
 
 Pour plus d’informations sur les autres configurations d’éditeur de texte enrichi, voir [Configuration de l’éditeur de texte enrichi](/help/implementing/developing/extending/rich-text-editor.md).
 
@@ -23,7 +23,7 @@ Pour plus d’informations sur les autres configurations d’éditeur de texte e
 
 ## Activation d’un module externe et configuration de la propriété features {#activateplugin}
 
-Pour activer un module externe, suivez ces étapes. Certaines étapes sont uniquement nécessaires lorsque vous configurez un module externe pour la première fois, car les nœuds correspondants n’existent pas.
+Pour activer un module externe, procédez comme suit. Certaines étapes ne sont nécessaires que lorsque vous configurez un module externe pour la première fois, car les noeuds correspondants n’existent pas.
 
 Par défaut, les modules externes `format`, `link`, `list`, `justify` et `control`, ainsi que toutes leurs fonctions, sont activés dans l’éditeur de texte enrichi.
 
@@ -75,7 +75,7 @@ La boîte de dialogue de recherche et de remplacement devient transparente lorsq
 
 ## Configuration des modes de collage {#pastemodes}
 
-Lors de l’utilisation de l’éditeur de texte enrichi, les auteurs peuvent copier le contenu selon l’un des trois modes suivants :
+Lors de l’utilisation de l’éditeur de texte enrichi, les auteurs peuvent coller du contenu dans l’un des trois modes suivants :
 
 * **Mode Navigateur** : collage de texte avec la mise en œuvre de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables.
 
@@ -99,17 +99,17 @@ Pour configurer l’éditeur de texte enrichi afin qu’il affiche les icônes r
 1. Accédez au nœud `rtePlugins/edit`. Voir [Activation d’un module externe](#activateplugin) si le nœud n’existe pas.
 1. Créez la propriété `features` sur le nœud `edit` et ajoutez une ou plusieurs des fonctions. Enregistrez toutes les modifications.
 
-### Configuration du comportement de l’icône Coller (Ctrl + V) et du raccourci {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
+### Configuration du comportement de l’icône et du raccourci Coller (Ctrl + V) {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
-Vous pouvez préconfigurer le comportement de l’icône **[!UICONTROL Coller (Ctrl + V)]** en procédant comme suit. Cette configuration définit également le comportement du raccourci clavier Ctrl + V que les auteurs utilisent pour coller du contenu.
+Vous pouvez préconfigurer le comportement de la variable **[!UICONTROL Coller (Ctrl+V)]** à l’aide des étapes suivantes. Cette configuration définit également le comportement du raccourci clavier Ctrl+V que les auteurs utilisent pour coller du contenu.
 
-Cette configuration permet trois scénarios d’utilisation, à savoir :
+La configuration permet d’utiliser les trois types de cas suivants :
 
-* Collage de texte avec la mise en œuvre de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables. Configuré à l’aide de `browser` ci-dessous.
+* Coller du texte à l’aide de l’implémentation de collage par défaut du navigateur. Il ne s’agit pas d’une méthode recommandée, car elle peut introduire des balises indésirables. Configuré à l’aide de `browser` ci-dessous.
 
 * Collage du contenu du Presse-papiers en tant que texte brut. Cela supprime tous les éléments de style et de mise en forme du contenu copié avant insertion dans le composant [!DNL Experience Manager]. Configuré à l’aide de `plaintext` ci-dessous.
 
-* Collage du texte, y compris des tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle. Configuré à l’aide de `wordhtml` ci-dessous.
+* Collez le texte, y compris les tableaux, avec la mise en forme lors de la copie à partir de MS Word. La copie et le collage de texte depuis une autre source, telle qu’une page web ou MS Excel ne sont pas pris en charge et conservent uniquement une mise en forme partielle. Configuré à l’aide de `wordhtml` ci-dessous.
 
 1. Dans votre composant, accédez au nœud `<rtePlugins-node>/edit`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Dans le nœud `edit`, créez une propriété à l’aide des informations suivantes :
@@ -191,15 +191,15 @@ Voici un exemple de structure `htmlPasteRules` valide :
 
 ## Configuration des styles de texte {#textstyles}
 
-Les auteurs peuvent appliquer des styles pour modifier l’apparence d’une portion de texte. Les styles reposent sur les classes CSS que vous prédéfinissez dans votre feuille de style CSS. Le contenu stylisé est inclus dans les balises `span` à l’aide de l’attribut `class` pour faire référence à la classe CSS. Par exemple :
+Les auteurs peuvent appliquer des styles pour modifier l’aspect d’une partie de texte. Les styles sont basés sur les classes CSS que vous avez prédéfinies dans votre feuille de style CSS. Le contenu stylisé est inclus dans les balises `span` à l’aide de l’attribut `class` pour faire référence à la classe CSS. Par exemple :
 
 `<span class=monospaced>Monospaced Text Here</span>`
 
-Lorsque le module externe Styles est activé pour la première fois, aucun style n’est disponible par défaut. La liste contextuelle est vide. Pour fournir des styles aux auteurs, procédez comme suit :
+Lorsque le module externe Styles est activé pour la première fois, aucun style par défaut n’est disponible. La liste contextuelle est vide. Pour fournir des styles aux auteurs, procédez comme suit :
 
 * Activez le sélecteur de liste déroulante Style.
 * Spécifiez un ou plusieurs emplacements des feuilles de style.
-* Spécifiez les différents styles qui peuvent être sélectionnés dans la liste déroulante Style.
+* Spécifiez les différents styles qui peuvent être sélectionnés dans la liste pop-up Style.
 
 Pour les configurations ultérieures (par exemple, afin d’ajouter davantage de styles), suivez les instructions pour faire référence à une nouvelle feuille de style et spécifier les styles supplémentaires.
 
@@ -233,7 +233,7 @@ Ensuite, spécifiez l’emplacement de la ou des feuilles de style à référenc
 
    * **Nom** `externalStyleSheets`
    * **Type** `String[]` (multichaîne ; cliquez sur **Multi** dans CRXDE)
-   * **Valeur(s)** Chemin d’accès et nom de fichier de chaque feuille de style à inclure. Utilisez les chemins de référentiel.
+   * **Valeurs** Chemin et nom de fichier de chaque feuille de style à inclure. Utilisez les chemins d’accès au référentiel.
 
    >[!NOTE]
    >
@@ -257,7 +257,7 @@ L’éditeur de texte enrichi utilise un élément DOM de conteneur doté d’un
  }
 ```
 
-### Spécification des styles disponibles dans la liste contextuelle {#stylesindropdown}
+### Spécification des styles disponibles dans la liste pop-up {#stylesindropdown}
 
 1. Dans la définition du composant, accédez au nœud `<rtePlugins-node>/styles` tel que créé dans [Activation du sélecteur de liste déroulante Style](#styleselectorlist).
 1. Sous le nœud `styles`, créez un nœud (également appelé `styles`) destiné à contenir la liste mise à disposition :
@@ -280,7 +280,7 @@ L’éditeur de texte enrichi utilise un élément DOM de conteneur doté d’un
 
    * **Nom** `text`
    * **Type** `String`
-   * **Valeur** Description du style ; apparaît dans la boîte de dialogue de sélection de la liste déroulante Style.
+   * **Valeur** Description du style ; s’affiche dans la zone de sélection de la liste déroulante Style .
 
 1. Enregistrez les modifications.
 
@@ -288,7 +288,7 @@ L’éditeur de texte enrichi utilise un élément DOM de conteneur doté d’un
 
 ### Configuration de l’éditeur de texte enrichi pour des coupures de mots optimales en japonais {#jpwordwrap}
 
-Les auteurs qui utilisent [!DNL Experience Manager] pour créer du contenu en japonais peuvent appliquer un style aux caractères afin d’éviter un saut de ligne lorsqu’il n’est pas nécessaire. Les auteurs peuvent ainsi couper les phrases où ils le souhaitent. Le style de cette fonctionnalité repose sur la classe CSS prédéfinie dans la feuille de style CSS.
+Les auteurs qui utilisent [!DNL Experience Manager] pour créer du contenu en japonais peuvent appliquer un style aux caractères afin d’éviter un saut de ligne lorsqu’il n’est pas nécessaire. Les auteurs peuvent ainsi couper les phrases où ils le souhaitent. Le style de cette fonctionnalité est basé sur la classe CSS prédéfinie dans la feuille de style CSS.
 
 Pour créer le style que les auteurs peuvent appliquer au texte japonais, procédez comme suit :
 
@@ -322,20 +322,20 @@ Pour créer le style que les auteurs peuvent appliquer au texte japonais, procé
 
 ## Configuration des formats de paragraphe {#paraformats}
 
-Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur peut les sélectionner et les affecter à l’aide du sélecteur Format. Les balises block comprennent, par exemple, le paragraphe standard &lt;p> et les titres standard &lt;h1>, &lt;h2> et ainsi de suite.
+Tout texte saisi dans l’éditeur de texte enrichi est placé dans une balise block dont la valeur par défaut est `<p>`. En activant le module externe `paraformat`, vous spécifiez d’autres balises block, qui peuvent être affectées à des paragraphes, à l’aide d’une liste déroulante de sélection. Les formats de paragraphe déterminent le type de paragraphe en affectant la balise block appropriée. L’auteur peut les sélectionner et les affecter à l’aide du sélecteur Format . Les exemples de balises block incluent, entre autres, le paragraphe standard. &lt;p> et en-têtes &lt;h1>, &lt;h2>, etc.
 
 >[!CAUTION]
 >
->Ce module externe n’est pas adapté au contenu présentant une structure complexe, tel que les listes et les tableaux.
+>Ce plug-in ne convient pas au contenu avec une structure complexe, telle que des listes ou des tableaux.
 
 >[!NOTE]
 >
 >Si une balise block (par exemple, une balise `<hr>`) ne peut pas être affectée à un paragraphe, ce n’est pas un cas d’utilisation valide pour un module externe `paraformat`.
 
-Lorsque le module externe Formats des paragraphes est activé pour la première fois, aucun format de paragraphe n’est disponible par défaut. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
+Lorsque le module externe Formats de paragraphe est activé pour la première fois, aucun format de paragraphe par défaut n’est disponible. La liste contextuelle est vide. Pour fournir des formats de paragraphes aux auteurs, procédez comme suit :
 
-* Activez la liste du sélecteur contextuel [!UICONTROL Format].
-* Spécifiez les balises block qui peuvent être sélectionnées comme formats de paragraphes dans le menu contextuel.
+* Activez la liste du sélecteur pop-up [!UICONTROL Format].
+* Spécifiez les balises block qui peuvent être sélectionnées comme formats de paragraphes dans le menu pop-up.
 
 Pour les reconfigurations ultérieures, par exemple, afin d’ajouter davantage de formats, suivez uniquement la partie correspondante des instructions.
 
@@ -385,14 +385,14 @@ Les formats de paragraphe sont mis à disposition pour être sélectionnés :
 
    * **Nom** `description`
    * **Type** `String`
-   * **Valeur** Texte descriptif pour ce format, par exemple, paragraphe, titre 1, titre 2, etc. Ce texte s’affiche dans la liste de sélection Format.
+   * **Valeur** Texte descriptif pour ce format, par exemple, paragraphe, titre 1, titre 2, etc. Ce texte est affiché dans la liste de sélection Format .
 
 1. Enregistrez les modifications.
 
-   Répétez la procédure pour chaque format requis.
+   Répétez les étapes pour chaque format requis.
 
 >[!CAUTION]
->Si vous définissez des formats personnalisés, les formats par défaut (`<p>`, `<h1>`, `<h2>` et `<h3>`) sont supprimés. Recréez le format `<p>`, car il s’agit du format par défaut.
+Si vous définissez des formats personnalisés, les formats par défaut (`<p>`, `<h1>`, `<h2>` et `<h3>`) sont supprimés. Recréez le format `<p>`, car il s’agit du format par défaut.
 
 ## Configuration des caractères spéciaux {#spchar}
 
@@ -401,7 +401,7 @@ Dans une installation [!DNL Experience Manager] standard, lorsque le module exte
 Vous pouvez configurer l’éditeur de texte enrichi de manière à mettre à disposition votre sélection de caractères, en définissant des caractères distincts ou une séquence entière.
 
 >[!CAUTION]
->Si vous ajoutez vos caractères spéciaux, ils remplacent la sélection par défaut. Si nécessaire, redéfinissez ces caractères dans votre sélection.
+Si vous ajoutez vos caractères spéciaux, ils remplacent la sélection par défaut. Si nécessaire, redéfinissez ces caractères dans votre sélection.
 
 ### Définition d’un caractère unique {#definesinglechar}
 
@@ -437,7 +437,7 @@ Vous pouvez configurer l’éditeur de texte enrichi de manière à mettre à di
 
 1. Enregistrez les modifications.
 
-Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s’affiche. Voir ci-dessous sous l’exemple du caractère demi. Répétez les étapes ci-dessus pour rendre plus de caractères spéciaux disponibles aux auteurs.
+Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s’affiche. Voir ci-dessous sous l’exemple du caractère demi. Répétez les étapes ci-dessus pour rendre plus de caractères spéciaux disponibles pour les auteurs.
 
 ![Dans CRXDE, ajoutez un caractère unique pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi](assets/chlimage_1-106.png " Dans CRXDE, ajoutez un caractère unique pour qu’il soit disponible dans la barre d’outils d’éditeur de texte enrichi")
 
@@ -463,23 +463,23 @@ Dans CRXDE, une fois la propriété enregistrée, le caractère représenté s�
 
 1. Enregistrez les modifications.
 
-   Par exemple, la définition d’une série de 9998 à 10000 vous permet de bénéficier des caractères suivants.
+   Par exemple, définissez une plage comprise entre 9 998 et 1 0000 vous fournit les caractères suivants.
 
    ![Définition dans CRXDE d’une série de caractères pour qu’elle soit disponible dans l’éditeur de texte enrichi](assets/chlimage_1-107.png)
 
    *Figure : Définition dans CRXDE d’une série de caractères pour qu’elle soit disponible dans l’éditeur de texte enrichi*
 
-   ![Les caractères spéciaux disponibles dans l’éditeur de texte enrichi sont affichés pour les auteurs dans une fenêtre contextuelle](assets/rtepencil.png " Les caractères spéciaux disponibles dans l’éditeur de texte enrichi sont affichés pour les auteurs dans une fenêtre contextuelle")
+   ![Les caractères spéciaux disponibles dans l’éditeur de texte enrichi sont affichés pour les auteurs dans une fenêtre pop-up](assets/rtepencil.png " Les caractères spéciaux disponibles dans l’éditeur de texte enrichi sont affichés pour les auteurs dans une fenêtre pop-up")
 
 ## Configuration des styles de tableau {#tablestyles}
 
-Les styles sont généralement appliqués au texte, mais un jeu de styles distinct peut également être appliqué à un tableau ou à certaines cellules de tableau. Ces styles sont à la disposition des auteurs au niveau de la boîte du sélecteur de style dans la boîte de dialogue de propriétés de la cellule ou du tableau. Les styles sont disponibles lors de la modification d’un tableau dans un composant Texte (ou dérivé), et non dans le composant Tableau standard.
+Les styles sont généralement appliqués au texte, mais un ensemble distinct de styles peut également être appliqué à un tableau ou à quelques cellules de tableau. Ces styles sont à la disposition des auteurs au niveau de la boîte du sélecteur de style dans la boîte de dialogue de propriétés de la cellule ou du tableau. Les styles sont disponibles lors de la modification d’un tableau dans un composant Texte (ou dérivé), et non dans le composant Tableau standard.
 
 >[!NOTE]
->Vous pouvez définir des styles pour les tableaux et les cellules uniquement pour l’IU classique.
+Vous pouvez définir des styles pour les tableaux et les cellules pour l’IU classique uniquement.
 
 >[!NOTE]
->La copie et le collage de tableaux dans ou à partir d’un composant d’éditeur de texte enrichi dépendent du navigateur. Ils ne sont pas pris en charge nativement pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant d’éditeur de texte enrichi dans Mozilla Firefox dans les IU classique et tactile, la mise en page du tableau n’est pas conservée.
+La copie et le collage de tableaux dans ou depuis un composant d’éditeur de texte enrichi dépendent du navigateur. Il n’est pas pris en charge par défaut pour tous les navigateurs. Vous pouvez obtenir des résultats variables selon la structure du tableau et le navigateur. Par exemple, lorsque vous copiez et collez un tableau dans un composant d’éditeur de texte enrichi dans Mozilla Firefox dans les IU classique et tactile, la mise en page du tableau n’est pas conservée.
 
 1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/table`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Créez la propriété `features` sur le nœud `table` :
@@ -489,14 +489,14 @@ Les styles sont généralement appliqués au texte, mais un jeu de styles distin
    * **Valeur** `*`
 
    >[!NOTE]
-   >Si vous ne souhaitez pas activer toutes les fonctionnalités de tableau, vous pouvez créer la propriété `features`, comme suit :
-   >* **Type** `String[]`
-   >* **Valeurs** Un ou deux des éléments ci-dessous, au besoin :
+   Si vous ne souhaitez pas activer toutes les fonctionnalités de tableau, vous pouvez créer la propriété `features`, comme suit :
+   * **Type** `String[]`
+   * **Valeurs** Un ou deux des éléments ci-dessous, au besoin :
       * `table` pour permettre de modifier les propriétés du tableau, dont les styles.
       * `cellprops` pour permettre de modifier les propriétés des cellules, dont les styles.
 
 
-1. Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement d’une feuille de style](#locationofstylesheet), car il s’agit de la même procédure que lorsque vous définissez des [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
+1. Définissez l’emplacement des feuilles de style CSS pour y faire référence. Voir [Spécification de l’emplacement de votre feuille de style](#locationofstylesheet) comme c’est le cas lors de la définition de [styles de texte](#textstyles). L’emplacement peut être défini si vous avez défini d’autres styles.
 1. Sous le nœud `table`, créez les nœuds suivants selon les besoins :
 
    * Pour définir des styles pour le tableau entier (disponibles sous **[!UICONTROL Propriétés du tableau]**) :
@@ -521,7 +521,7 @@ Les styles sont généralement appliqués au texte, mais un jeu de styles distin
       * **Nom** `cssName`
       * **Type** `String`
       * **Valeur** Nom de la classe CSS (sans préfixe `.`, par exemple, `cssClass` au lieu de `.cssClass`)
-   * Pour définir un texte descriptif à afficher dans le sélecteur contextuel,
+   * Pour définir un texte descriptif à afficher dans le sélecteur pop-up,
 
       * **Nom** `text`
       * **Type** `String`
@@ -534,7 +534,7 @@ Répétez les étapes ci-dessus pour chaque style requis.
 
 ### Configuration d’en-têtes masqués dans les tableaux pour l’accessibilité {#hiddenheader}
 
-Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire d’indiquer un texte masqué à l’intérieur de la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres dispositifs d’assistance d’aider les utilisateurs, indépendamment de leur validité, à comprendre l’objectif de la colonne.
+Dans certains cas, vous pouvez créer des tableaux de données sans texte visuel dans un en-tête de colonne en supposant que l’objectif de l’en-tête est induit par la relation visuelle de la colonne avec d’autres colonnes. Dans ce cas, il est nécessaire de fournir du texte interne masqué dans la cellule d’en-tête pour permettre aux lecteurs d’écran et aux autres technologies d’assistance d’aider les lecteurs ayant divers besoins à comprendre l’objectif de la colonne.
 
 Pour améliorer l’accessibilité dans de telles situations, l’éditeur de texte enrichi prend en charge les cellules d’en-tête masquées. De plus, il fournit des paramètres de configuration associés aux en-têtes masqués dans les tableaux. Ces paramètres permettent d’appliquer des styles CSS à des en-têtes masqués en mode modification et aperçu. Pour aider les auteurs à identifier les en-têtes masqués en mode modification, incluez les paramètres ci-dessous dans votre code :
 
@@ -555,7 +555,7 @@ Si vous spécifiez la chaîne CSS et la chaîne Style dans le code, la classe 
 Lorsque le module externe Contrôle d’orthographe est activé, l’éditeur de texte enrichi utilise les dictionnaires de chaque langue appropriée. Ils sont sélectionnés en fonction de la langue du site web, d’après la propriété language de la sous-arborescence ou à partir de la langue de l’adresse URL, par exemple. Pour la branche `/en/`, la vérification est effectuée pour l’anglais ; pour la branche `/de/`, pour l’allemand.
 
 >[!NOTE]
->Le message « Échec de la vérification orthographique » s’affiche si le système tente d’effectuer une vérification pour une langue non installée.
+Le message « Échec de la vérification orthographique » s’affiche si le système tente d’effectuer une vérification pour une langue non installée.
 
 Une installation Experience Manager standard comprend les dictionnaires pour les langues suivantes :
 
@@ -563,27 +563,27 @@ Une installation Experience Manager standard comprend les dictionnaires pour le
 * Anglais britannique (en_gb)
 
 >[!NOTE]
->Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
+Les dictionnaires standard sont situés à l’emplacement `/libs/cq/spellchecker/dictionaries`, avec les fichiers Lisez-moi correspondants. Ne modifiez pas les fichiers.
 
-Pour ajouter d’autres dictionnaires, si nécessaire, procédez comme suit.
+Pour ajouter d’autres dictionnaires, le cas échéant, procédez comme suit.
 
 1. Accédez à la page [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
-1. Sélectionnez la langue de votre choix et téléchargez le fichier ZIP contenant les définitions de l’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
+1. Sélectionnez la langue requise et téléchargez le fichier ZIP contenant les définitions d’orthographe. Extrayez le contenu de l’archive dans votre système de fichiers.
 
    >[!CAUTION]
-   >Seuls les dictionnaires au format `MySpell` pour OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers archives, il est recommandé de les vérifier après les avoir téléchargés.
+   Seuls les dictionnaires au format `MySpell` pour OpenOffice.org v2.0.1 ou version inférieure, sont pris en charge. Comme les dictionnaires sont désormais des fichiers d’archive, il est recommandé de vérifier l’archive après son téléchargement.
 
-1. Recherchez les fichiers .aff et.dic. Conservez le nom en lettres minuscules. Par exemple, `de_de.aff` et `de_de.dic`.
+1. Recherchez les fichiers .aff et .dic. Conservez le nom du fichier en minuscules. Par exemple, `de_de.aff` et `de_de.dic`.
 1. Chargez les fichiers .aff et.dic dans le référentiel à l’emplacement `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
->Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte.
->Pour exécuter le vérificateur orthographique, appuyez/cliquez sur le bouton Vérificateur orthographique de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et souligne les mots mal orthographiés.
->Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
+Le vérificateur orthographique de l’éditeur de texte enrichi est disponible sur demande. Il n’est pas exécuté automatiquement lorsque vous commencez à saisir du texte.
+Pour exécuter le vérificateur orthographique, appuyez/cliquez sur le bouton Vérificateur orthographique de la barre d’outils. L’éditeur de texte enrichi vérifie l’orthographe des mots et met en surbrillance les mots mal orthographiés.
+Si vous incorporez des modifications que le vérificateur orthographique suggère, l’état des modifications apportées au texte et les mots mal orthographiés n’est plus mis en surbrillance. Pour exécuter le vérificateur orthographique, appuyez/cliquez de nouveau sur le bouton Vérificateur orthographique.
 
 ## Configuration de la taille de l’historique pour les actions d’annulation et de rétablissement {#undohistory}
 
-L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir quelques-unes des dernières modifications. Par défaut, 50 modifications sont stockées dans l’historique. Vous pouvez configurer cette valeur, au besoin.
+L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir quelques dernières modifications. Par défaut, 50 modifications sont stockées dans l’historique. Vous pouvez configurer cette valeur, au besoin.
 
 1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/undo`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Sur le nœud `undo`, créez la propriété :
@@ -596,9 +596,9 @@ L’éditeur de texte enrichi permet aux auteurs d’annuler ou de rétablir que
 
 ## Configuration de la taille de tabulation {#tabsize}
 
-Lorsque le caractère de tabulation est activé dans un texte, un nombre prédéfini d’espaces est inséré. Par défaut, il s’agit de trois espaces insécables et d’un espace.
+Lorsque le caractère de tabulation est enfoncé dans un texte, un nombre prédéfini d’espaces est inséré ; par défaut, il s’agit de trois espaces insécables et d’un espace.
 
-Pour définir la taille de la tabulation :
+Pour définir la taille de tabulation :
 
 1. Dans votre composant, accédez au nœud `<rtePlugins-node>/keys`. Créez les nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Sur le nœud `keys`, créez la propriété :
@@ -614,7 +614,7 @@ Pour définir la taille de la tabulation :
 Lorsque la mise en retrait est activée (par défaut), vous pouvez définir la taille du retrait :
 
 >[!NOTE]
->Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte. Elle n’affecte pas la mise en retrait des listes.
+Cette taille de retrait n’est appliquée qu’aux paragraphes (blocs) de texte. Elle n’affecte pas la mise en retrait des listes.
 
 1. Dans votre composant, recherchez le nœud `<rtePlugins-node>/lists`. Créez ces nœuds s’ils n’existent pas. Pour plus d’informations, voir [Activation d’un module externe](#activateplugin).
 1. Sur le nœud `lists`, créez le paramètre `identSize` :
@@ -646,10 +646,10 @@ Lors de l’ajout de liens dans [!DNL Experience Manager], vous pouvez définir 
    * **Type** `nt:unstructured`
 
    >[!NOTE]
-   >Le nœud `../items/text` possède la propriété :
-   >* **Nom** `xtype`
-   >* **Type** `String`
-   >* **Valeur** `richtext`
+   Le nœud `../items/text` possède la propriété :
+   * **Nom** `xtype`
+   * **Type** `String`
+   * **Valeur** `richtext`
 
    L’emplacement du nœud `../items/text` peut varier en fonction de la structure de votre boîte de dialogue. Deux exemples sont `/apps/myProject>/components/text/dialog/items/text` et `/apps/<myProject>/components/text/dialog/items/panel/items/text`.
 

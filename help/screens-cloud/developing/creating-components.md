@@ -1,11 +1,11 @@
 ---
 title: Création de composants
-description: Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages web. Suivez cette page pour en savoir plus sur la création de canaux et le rendu de composants.
+description: Les composants AEM servent à stocker, mettre en forme et générer le rendu du contenu diffusé dans vos pages web. Consultez cette page pour en savoir plus sur la création de canaux et de composants de rendu.
 exl-id: a81e812e-29ed-45de-b2d0-1fb0a8c5ce1a
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '289'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -15,7 +15,7 @@ Les composants AEM servent à stocker, mettre en forme et générer le rendu du 
 
 ## Création de canaux {#authoring-channels}
 
-Le canal est l’objet central du contenu qui est diffusé à un ensemble d’écrans. Par conséquent, un auteur de contenu ouvre généralement un canal dans l’éditeur pour ajouter ou modifier du contenu. Étant donné que le canal est un nœud ***cq:Page***, il applique le même schéma UX traditionnel pour ajouter et modifier des composants dans le canal.
+Le canal est l’objet central du contenu diffusé à un ensemble d’affichages. Par conséquent, un auteur de contenu ouvre généralement un canal dans l’éditeur pour ajouter ou modifier du contenu. Étant donné que le canal est un nœud ***cq:Page***, il applique le même schéma UX traditionnel pour ajouter et modifier des composants dans le canal.
 
 Cependant, dans la mesure où les composants d’un canal sont généralement rendus en mode Plein écran, l’expérience de création est dégradée lorsque vous essayez de modifier des composants uniques ou de composer de nouvelles séquences. Par conséquent, le canal dépend des sélecteurs pour effectuer le rendu des différentes vues des composants. L’environnement de création met à profit le sélecteur de modification pour activer le rendu de canal personnalisé.
 
@@ -34,7 +34,7 @@ Pour garantir une création correcte, les composants doivent fournir les deux re
 
 Les composants intégrés tirent parti des catégories de bibliothèques clientes suivantes :
 
-| **Composant** | **Bibliothèque cliente** |
+| **Component** | **Bibliothèque cliente** |
 |---|---|
 | *cq.screens.components.edit* | CSS et JS devant être chargés lors de la création |
 | *cq.screens.components.production* | CSS et JS devant être chargés lorsque le canal est en cours d’exécution |

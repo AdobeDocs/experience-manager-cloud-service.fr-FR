@@ -48,7 +48,7 @@ Un certain nombre d’exigences s’imposent avant de vous engager dans la tradu
 
 ### Outils {#tools}
 
-* Accès aux environnements de test pour tester la traduction de votre contenu
+* Accès aux sandbox pour tester la traduction de votre contenu
 * Informations d’identification pour vous connecter à votre service de traduction préféré
 * Accréditation en tant que membre du groupe `project-administrators` dans AEM
 

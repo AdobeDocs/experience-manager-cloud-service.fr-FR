@@ -5,7 +5,7 @@ exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
 source-git-commit: 64d801b108229866394e993811a67f983be5df6c
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -61,9 +61,9 @@ Outre l’affichage des annotations, le mode Annotation vous permet de créer, m
 
    ![Ajout d’une annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
-   Utilisez alors le champ et/ou l’icône appropriée pour effectuer ce qui suit :
+   Ici, vous pouvez utiliser le champ et/ou l’icône appropriés pour :
 
-   * Entrez le texte de l’annotation.
+   * Saisissez le texte de l’annotation.
    * Créez une esquisse (traits et formes) pour mettre en surbrillance une zone du composant.
 
       ![Bouton d’esquisse d’annotation](/help/sites-cloud/authoring/assets/annotation-sketch.png)

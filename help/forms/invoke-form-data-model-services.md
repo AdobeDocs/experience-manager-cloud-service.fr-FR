@@ -10,7 +10,7 @@ discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '480'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -31,7 +31,7 @@ L’API `guidelib.dataIntegrationUtils.executeOperation` appelle un service depu
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
 ```
 
-La structure de l’API `guidelib.dataIntegrationUtils.executeOperation` spécifie les détails sur l’opération de service. La syntaxe de la structure se présente comme suit.
+La structure de l’API `guidelib.dataIntegrationUtils.executeOperation` spécifie les détails sur l’opération de service. La syntaxe de la structure est la suivante.
 
 ```javascript
 var operationInfo = {
@@ -49,7 +49,7 @@ outputFieldN
 }
 ```
 
-La structure de l’API spécifie les détails suivants concernant l’opération de service.
+La structure de l’API spécifie les détails suivants sur l’opération de service.
 
 <table>
  <tbody>

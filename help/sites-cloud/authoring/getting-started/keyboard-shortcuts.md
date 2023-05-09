@@ -1,11 +1,11 @@
 ---
 title: Raccourcis clavier pour les consoles
-description: Utilisez ces raccourcis clavier pour gagner du temps lors de la création
+description: Gagnez du temps lors de la création à l’aide de ces raccourcis clavier
 exl-id: 68508d05-a98d-483a-aa6d-f743ee29c284
-source-git-commit: 1698b78c3d58714c6e1d354143964741ee17d60e
+source-git-commit: bdefc8ccdb44bec7a72d9223614b3a6ba5c65225
 workflow-type: tm+mt
 source-wordcount: '376'
-ht-degree: 96%
+ht-degree: 65%
 
 ---
 
@@ -20,7 +20,7 @@ Les raccourcis suivants sont disponibles pour les consoles Sites, Ressources, Ut
 |  | `Left Arrow` | Naviguer vers le haut de la structure de l’arborescence/réduire le nœud d’arborescence |
 |  | `Down Arrow` | Se déplacer vers le bas d’une liste de pages au même niveau |
 |  | `Up Arrow` | Se déplacer vers le haut d’une liste de pages au même niveau |
-| Console : mode Colonnes | `Shift-Up/Down Arrow` | Déplacer vers le haut/vers le bas et sélectionner une liste de pages au même niveau |
+| Console : mode Colonnes | `Shift-Up/Down Arrow` | Déplacer vers le haut/vers le bas et sélectionner une liste de pages au même niveau |
 |  | `Esc` | Se déplacer vers le haut d’une liste de pages au même niveau |
 | Consoles | `?` | Aide des raccourcis clavier |
 |  | `/` | Appeler la [recherche](/help/sites-cloud/authoring/getting-started/search.md) |
@@ -47,19 +47,19 @@ Les touches de modification utilisées pour les raccourcis clavier varient selon
 
 ## Navigateurs et raccourcis clavier {#browsers-and-keyboard-shortcuts}
 
-AEM évite les raccourcis courants déjà utilisés par les navigateurs les plus populaires, mais le comportement du navigateur par défaut n’est pas remplacé par les raccourcis AEM.
+AEM évite les raccourcis courants déjà utilisés par les navigateurs les plus populaires, mais le comportement par défaut du navigateur n’est pas remplacé par les raccourcis AEM.
 
-En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régionaux et toutes les dispositions de clavier.
+En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régionaux et toutes les mises en page au clavier.
 
 >[!NOTE]
 >
->Les raccourcis AEM ne remplacent pas le comportement du navigateur par défaut.
+>AEM raccourcis ne remplacent pas le comportement par défaut du navigateur.
 >
->En cas de conflits entre les raccourcis AEM et ceux du navigateur, les raccourcis AEM ne fonctionneront plus, afin de permettre l’utilisation de la fonctionnalité du navigateur.
+>Dans le cas où des conflits doivent se produire entre les raccourcis d’AEM et de navigateur, AEM raccourcis ne fonctionneront pas, en raison des fonctionnalités du navigateur.
 
 >[!CAUTION]
 >
->Les raccourcis clavier AEM pourraient entrer en conflit avec des lecteurs d’écran, certaines fonctions de navigateur et d’autres outils d’accessibilité.
+>AEM raccourcis clavier peuvent interférer avec les lecteurs d’écran, certaines fonctionnalités de navigateur et d’autres outils d’accessibilité.
 >
 >Adobe recommande de [désactiver les raccourcis clavier AEM](#deactivating-keyboard-shortcuts) lors de l’utilisation d’un lecteur d’écran.
 
@@ -67,9 +67,9 @@ En outre, les raccourcis clavier sont les mêmes pour tous les paramètres régi
 
 AEM propose des raccourcis clavier pour certaines des fonctions courantes (modification, propriétés, copier/coller, affichage de plusieurs menus de rail latéral, etc.).
 
-Pour les utilisateurs qui n’utilisent pas de raccourcis clavier ou ont certaines exigences d’accessibilité, tous les raccourcis clavier peuvent être désactivés.
+Pour les utilisateurs qui n’utilisent pas de raccourcis clavier ou qui ont certaines exigences d’accessibilité, tous les raccourcis clavier peuvent être désactivés.
 
-Vous pouvez désactiver les raccourcis clavier à deux emplacements :
+Vous pouvez désactiver les raccourcis clavier à deux emplacements :
 
 * [Mes préférences](/help/sites-cloud/authoring/getting-started/account-environment.md#my-preferences)
 * Le [menu Aide](/help/sites-cloud/authoring/getting-started/basic-handling.md#accessing-help)

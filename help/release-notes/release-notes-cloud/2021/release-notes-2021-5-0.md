@@ -5,7 +5,7 @@ exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
 source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
 workflow-type: tm+mt
 source-wordcount: '1355'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -80,7 +80,7 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
 ### Fonctionnalité bêta à venir de [!DNL Forms] {#what-is-new-forms-prerelease}
 
-Output as a Cloud service : le service Output vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode batch synchrone et asynchrone. Le service Output permet de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
+Output as a Cloud service : le service Output vous permet de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode batch synchrone et asynchrone. Le service Output vous permet de créer des applications qui vous permettent :
 
 * Générer des documents de formulaire définitifs en complétant des fichiers de modèle avec des données XML.
 * Générez des formulaires de sortie dans divers formats, y compris les flux d’impression PDF non interactifs.
@@ -122,7 +122,7 @@ La prochaine version est prévue pour le 3 juin 2021.
 
 * L’onglet Solutions des processus Ajouter un programme et Modifier le programme affiche la solution, même si une seule solution est disponible pour le programme.
 
-* Si la génération ne produisait aucun module de contenu, le message d’erreur du journal de l’étape de génération n’était pas clair.
+* Le message d’erreur dans le journal de l’étape de génération lorsque la version ne produisait aucun package de contenu déployé n’était pas clair.
 
 ### Correctifs {#bug-fixes-cm-may}
 

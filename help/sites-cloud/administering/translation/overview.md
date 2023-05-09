@@ -7,7 +7,7 @@ exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
 source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
 workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -28,10 +28,10 @@ La traduction du contenu implique les étapes suivantes :
 1. [Associer les pages de votre gabarit de langue](integration-framework.md#configuring-pages-for-translation) au service de traduction et aux configurations de structure.
 1. [Identifier le type de contenu](rules.md) à traduire.
 1. [Préparez le contenu à traduire](preparation.md) en créant le gabarit de langue et les pages racine des copies de langue.
-1. [Créer des projets de traduction](managing-projects.md) pour collecter le contenu à traduire et préparer le processus de traduction.
-1. Utiliser les projets de translation pour [gérer le processus de traduction du contenu](managing-projects.md).
+1. [Créez des projets de traduction](managing-projects.md) pour collecter le contenu à traduire et préparer le processus de traduction.
+1. Utilisez les projets de translation pour [gérer le processus de traduction du contenu](managing-projects.md).
 
-Si votre fournisseur de services de traduction ne fournit pas de connecteur pour l’intégration à AEM, AEM prend en charge l’extraction et la réinsertion manuelles du contenu de translation au format XML.
+Si votre fournisseur de services de traduction ne fournit pas de connecteur pour l’intégration avec AEM, AEM prend en charge l’extraction et la réinsertion manuelles du contenu de traduction au format XML.
 
 >[!NOTE]
 >

@@ -4,10 +4,10 @@ description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment 
 feature: Content Fragments
 role: User
 exl-id: fe6ea615-43aa-41cd-a21c-50d855084154
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 
 >[!NOTE]
 >
->Les raccourcis ne sont pas sensibles à la casse.
+>Les raccourcis ne respectent pas la casse.
 
 | Emplacement | Raccourci | Description |
 |---|---|---|
@@ -35,7 +35,7 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains s’appliquent 
 | Sélectionner un ou plusieurs fragments de contenu | `r` | Ouvrir la boîte de dialogue de renommage |
 | Sélectionner un ou plusieurs fragments de contenu | `Ctrl-c` | Ouvrir la boîte de dialogue de copie |
 | Sélectionner un ou plusieurs fragments de contenu | `p` | Ouvrir la boîte de dialogue de publication immédiate |
-| Sélectionner un ou plusieurs fragments de contenu | `u` | Ouvrir la boîte de dialogue d’annulation immédiate de la publication |
+| Sélectionner un ou plusieurs fragments de contenu | `u` | Ouvrir la boîte de dialogue de dépublication immédiate |
 | Toute boîte de dialogue ouverte | `esc` | Boîte de dialogue désactivée |
 
 Plusieurs raccourcis clavier sont également disponibles pour les utilisateurs et utilisatrices de poste de travail. Certains s’appliquent à la [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md), tandis que d’autres correspondent à l’[utilisation générale des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md).

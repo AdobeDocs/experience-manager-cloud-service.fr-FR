@@ -5,7 +5,7 @@ exl-id: ad7627cd-3c97-47b7-8a13-0aae39aa8169
 source-git-commit: e9c1ec6807f86ab00f89ef292a89a0c8efdf802b
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -19,15 +19,15 @@ La création de sites web et de contenu accessibles avec AEM as a Cloud Service 
 
 * les auteurs qui utilisent ces fonctionnalités pour créer des sites web accessibles.
 
-   La création de contenu accessible est un processus. AEM fournit les fonctionnalités, mais les auteurs de contenu doivent s’assurer de suivre les techniques requises pour créer du contenu accessible.
+   La création de contenu accessible est un processus. AEM fournit les fonctionnalités, mais les auteurs de contenu doivent s’assurer qu’ils suivent les techniques requises pour créer du contenu accessible.
 
-* Les développeurs de modèles doivent également être conscients de ces problèmes lors de la mise en œuvre de la conception du site web.
+* Les développeurs de modèles doivent également être conscients de ces problèmes lors de la mise en oeuvre de la conception de site web.
 
 Adobe Experience Manager as a Cloud Service fonctionne selon les [directives](#wcag-accessibility-guidelines) fournies par le [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Rapports de conformité à l’accessibilité pour les solutions Adobe](https://www.adobe.com/accessibility/compliance.html).
+>Pour plus d’informations, consultez la section [Rapports de conformité sur l’accessibilité des solutions Adobe](https://www.adobe.com/accessibility/compliance.html).
 
 ## World Wide Web Consortium {#world-wide-web-consortium}
 

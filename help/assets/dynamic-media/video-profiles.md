@@ -5,8 +5,8 @@ contentOwner: Rick Brough
 feature: Asset Management,Video Profiles,Renditions
 role: User
 exl-id: 07bfd353-c105-4677-a094-b70c1098fb7f
-source-git-commit: 223d37e036194b6a7174f4ef551065285b930eb7
-workflow-type: ht
+source-git-commit: 2009e549eadd97d4d2bfcccd728ece17ecfeede5
+workflow-type: tm+mt
 source-wordcount: '3716'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Consultez également la section [Bonnes pratiques pour organiser vos ressources 
 >
 >Pour générer les métadonnées d’une vidéo et les miniatures associées, la vidéo doit passer par le processus de codage dans Dynamic Media. Dans Adobe Experience Manager, le workflow **[!UICONTROL Vidéo de codage de média dynamique]** code la vidéo si vous avez activé Dynamic Media et configuré des services cloud vidéo. Ce workflow capture l’historique de traitement des workflows et les informations d’échec. Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](/help/assets/dynamic-media/video.md#monitoring-video-encoding-and-youtube-publishing-progress). Si vous avez activé Dynamic Media et configuré les services cloud vidéo, le workflow **[!UICONTROL Vidéo de codage de média dynamique]** prend automatiquement effet lorsque vous chargez une vidéo. (Si vous n’utilisez pas Dynamic Media, le workflow **[!UICONTROL Ressource de mise à jour DAM]** prend effet.)
 >
->Les métadonnées sont utiles lorsque vous recherchez des ressources. Les miniatures sont des images vidéo statiques qui sont générées lors du codage. Elles sont requises par le système Experience Manager et utilisées dans l’interface utilisateur pour vous aider à identifier visuellement des vidéos en mode Carte, dans les résultats de recherche et dans la liste des ressources. Vous pouvez consulter les miniatures générées en sélectionnant l’icône Rendus (palette de peintre) d’une vidéo codée.
+>Les métadonnées sont utiles lorsque vous recherchez des ressources. Les miniatures sont des images vidéo statiques qui sont générées lors du codage. Elles sont requises par le système Experience Manager et utilisées dans l’interface utilisateur pour vous aider à identifier visuellement des vidéos dans la vue Cartes, dans la vue Résultats de recherche et dans la vue Liste des ressources. Vous pouvez consulter les miniatures générées en sélectionnant l’icône Rendus (palette de peintre) d’une vidéo codée.
 
 Une fois le profil vidéo créé, vous l’appliquez à un ou à plusieurs dossiers. Voir [Application d’un profil vidéo à des dossiers](#applying-a-video-profile-to-folders).
 
@@ -130,11 +130,11 @@ Dynamic Media est fourni avec un profil prédéfini de codage de vidéo adaptat
 
 Cependant, si ce profil prédéfini ne répond pas à vos besoins, vous pouvez choisir de créer votre propre profil de codage de vidéo adaptative. Lorsque vous utilisez le paramètre **[!UICONTROL Coder pour la diffusion en continu adaptative]**, toutes les configurations prédéfinies de codage que vous ajoutez au profil sont validées. Cette fonctionnalité garantit que toutes les vidéos ont les mêmes proportions. En outre, les vidéos codées sont traitées comme un ensemble à débit multiple pour la diffusion en continu.
 
-Lorsque vous créez le profil de codage vidéo, vous remarquerez que la plupart des options de codage sont préremplies avec les paramètres par défaut recommandés pour vous aider. Cependant, si vous sélectionnez une valeur autre que la valeur par défaut recommandée, la qualité vidéo risque d’être médiocre pendant la lecture et d’autres problèmes de performances.
+Lorsque vous créez le profil de codage vidéo, vous remarquerez que la plupart des options de codage sont préremplies avec les paramètres par défaut recommandés pour vous aider. Cependant, si vous sélectionnez une valeur autre que la valeur par défaut recommandée, la qualité vidéo risque d’être médiocre pendant la lecture et vous risquez de rencontrer d’autres problèmes de performances.
 
-Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les valeurs suivantes sont donc validées pour s’assurer qu’elles sont identiques dans chaque paramètre de codage individuel prédéfini, rendant possible la diffusion en continu à débit adaptatif :
+Pour tous les paramètres prédéfinis de codage vidéo MP4 H.264 du profil, les valeurs suivantes sont donc validées pour s’assurer qu’elles sont identiques dans chaque paramètre de codage individuel prédéfini, rendant possible la diffusion en continu à débit adaptatif :
 
-* Codec de format vidéo - MP4 H.264 (.mp4)
+* Codec du format vidéo - MP4 H.264 (.mp4)
 * Codec audio
 * Débit audio
 * Conserver les proportions
@@ -302,7 +302,7 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
 1. Dans le coin inférieur droit de la page, sélectionnez **[!UICONTROL Ajouter]**.
 1. Utilisez l’une des méthodes suivantes :
 
-   * Répétez les étapes 3 et 4 pour ajouter un autre paramètre à votre profil de codage vidéo.
+   * Répétez les étapes 3 et 4 pour ajouter un autre paramètre à votre profil de codage vidéo.
    * Dans le coin supérieur gauche de la page, sélectionnez **[!UICONTROL Enregistrer tout]**.
 
 1. Dans le coin supérieur gauche de la page CRXDE Lite, sélectionnez l’icône **[!UICONTROL Retour à l’accueil]** pour revenir à Experience Manager.
@@ -311,7 +311,7 @@ Vous pouvez modifier un profil de codage vidéo existant pour tirer parti de par
 
 Vous pouvez modifier les profils vidéo que vous avez créés pour ajouter, modifier ou supprimer des paramètres vidéo prédéfinis.
 
-Par défaut, vous ne pouvez pas modifier le profil **[!UICONTROL Codage vidéo adaptatif]** prédéfini prêt à l’emploi fourni avec Dynamic Media. Vous pouvez aussi facilement copier le profil et l’enregistrer sous un nouveau nom. Vous pouvez ensuite modifier les paramètres prédéfinis souhaités dans le profil copié.
+Par défaut, vous ne pouvez pas modifier le profil **[!UICONTROL Codage vidéo adaptatif]** prédéfini prêt à l’emploi fourni avec Dynamic Media. Vous pouvez aussi facilement copier le profil et l’enregistrer sous un nouveau nom. Vous pouvez ensuite modifier les paramètres prédéfinis de votre choix dans le profil copié.
 
 Voir aussi [Bonnes pratiques relatives au codage vidéo](/help/assets/dynamic-media/video.md#best-practices-for-encoding-videos).
 

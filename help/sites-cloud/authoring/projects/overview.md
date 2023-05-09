@@ -5,26 +5,26 @@ exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
 source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
 workflow-type: tm+mt
 source-wordcount: '1259'
-ht-degree: 100%
+ht-degree: 76%
 
 ---
 
 # Projets {#projects}
 
-Les projets permettent de regrouper des ressources dans une seule entité. Un environnement commun et partagé permet de gérer facilement vos projets. Dans AEM, les types de ressources que vous pouvez associer à un projet s’appellent des mosaïques. Les mosaïques peuvent inclure des informations de projet et d’équipe, des ressources numériques, des workflows et d’autres types d’informations, comme le précise en détail la section [Mosaïques de projet](#project-tiles).
+Les projets vous permettent de regrouper des ressources dans une seule entité. Un environnement commun et partagé facilite la gestion de vos projets. Les types de ressources que vous pouvez associer à un projet sont appelés mosaïques dans AEM. Les mosaïques peuvent inclure des informations de projet et d’équipe, des ressources numériques, des workflows et d’autres types d’informations, comme le précise en détail la section [Mosaïques de projet](#project-tiles).
 
 >[!CAUTION]
 >
 >Pour que les utilisateurs participant à des projets voient d’autres utilisateurs/groupes lorsqu’ils se servent de fonctionnalités de la console Projets comme créer des projets, créer des tâches/workflows, afficher et contrôler l’équipe, ils doivent disposer d’un accès en lecture à `/home/users` et à `/home/groups`. Pour ce faire, le plus facile consiste à octroyer au groupe **projects-users** un accès en lecture à `/home/users` et à `/home/groups`.
 
-En tant qu’utilisateur, vous pouvez effectuer les opérations suivantes :
+En tant qu’utilisateur, vous pouvez effectuer les opérations suivantes :
 
-* Créer des projets
+* Création de projets
 * Associer du contenu et des dossiers de ressources à un projet
-* Supprimer des projets
+* Suppression de projets
 * Supprimer les liens de contenu d’un projet
 
-Reportez-vous aux rubriques supplémentaires suivantes :
+Reportez-vous aux rubriques supplémentaires suivantes :
 
 * [Gestion de projets](/help/sites-cloud/authoring/projects/managing.md)
 * [Utilisation de tâches](/help/sites-cloud/authoring/projects/tasks.md)
@@ -36,17 +36,17 @@ Dans AEM, la console Projets permet d’accéder à vos projets et de les gérer
 
 ![Console Projets](/help/sites-cloud/authoring/assets/projects-console.png)
 
-* Sélectionnez **Chronologie**, puis un projet pour afficher sa chronologie.
+* Sélectionner **Chronologie** puis un projet pour afficher sa chronologie.
 * Cliquez/appuyez sur **Sélectionner** pour passer en mode de sélection.
 * Cliquez sur **Créer** pour ajouter des projets.
-* L’option **Activer/désactiver les projets actifs** vous permet de basculer entre tous les projets et uniquement ceux qui sont actifs.
-* L’option **Afficher la vue Statistiques** permet d’afficher les statistiques de projet relatives à la réalisation de tâches.
+* **Activation/désactivation de projets Principaux** permet de basculer entre tous les projets et uniquement ceux qui sont principaux.
+* **Afficher la vue Statistiques** vous permet d’afficher les statistiques de projet concernant les tâches terminées.
 
 ## Mosaïques de projet {#project-tiles}
 
-Dans la console Projets, vous devez associer différents types d’informations à vos projets. Elles sont connues sous le nom de **mosaïques**. Toutes les mosaïques, ainsi que le type d’informations qu’elles contiennent, sont décrites dans cette section.
+Avec les projets, vous associez différents types d’informations à vos projets. Elles sont appelées **Mosaïques**. Chacune des mosaïques et le type d’informations qu’elles contiennent sont décrits dans cette section.
 
-Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles est décrite dans les sections ci-après :
+Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles est décrite dans les sections suivantes :
 
 * Ressources et collections de ressources
 * Expériences
@@ -54,7 +54,7 @@ Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles
 * Informations sur le projet
 * Équipe
 * Pages d’entrée
-* Courriels
+* E-mails
 * Workflows
 * Lancements
 * Tâches
@@ -71,7 +71,7 @@ Vous chargez des ressources directement dans la mosaïque. En outre, vous pouvez
 
 ### Collections de ressources {#asset-collections}
 
-Comme avec les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans Assets.
+Comme pour les ressources, vous pouvez ajouter des [collections de ressources](/help/assets/manage-collections.md) directement à votre projet. Vous définissez les collections dans Assets.
 
 ![Collection de ressources](/help/sites-cloud/authoring/assets/projects-asset-collections.png)
 
@@ -111,17 +111,17 @@ Des membres d’équipe peuvent être attribués et supprimés de cette mosaïqu
 
 ### Tâche de traduction {#translation-job}
 
-La mosaïque Tâche de traduction est l’endroit où vous commencez une traduction et où vous pouvez voir le statut de toutes vos traductions. Pour configurer votre traduction, consultez [Création de projets de traduction](/help/assets/translate-assets.md).
+La mosaïque Tâche de traduction est l’endroit où vous commencez une traduction et où vous pouvez voir le statut de toutes vos traductions. Pour configurer votre traduction, voir [Création de projets de traduction](/help/assets/translate-assets.md).
 
 ![Tâche de traduction](/help/sites-cloud/authoring/assets/projects-translation-job.png)
 
-Cliquez sur les points de suspension en bas de la carte **Tâche de traduction** pour afficher les ressources du workflow de traduction. La liste des tâches de traduction contient également des entrées pour les balises et les métadonnées des ressources. Ces entrées indiquent que les métadonnées et les balises des ressources sont également traduites.
+Cliquez sur les points de suspension en bas de la carte **Tâche de traduction** pour afficher les ressources du workflow de traduction. La liste des tâches de traduction affiche également les entrées des métadonnées et des balises de ressources. Ces entrées indiquent que les métadonnées et les balises des ressources sont également traduites.
 
 ![Détails de la tâche de traduction](/help/sites-cloud/authoring/assets/projects-translation-job-detail.png)
 
 ### Équipe {#team}
 
-Dans cette mosaïque, vous pouvez définir les membres de l’équipe de projet. En mode d’édition, vous pouvez saisir le nom des membres d’équipe et attribuer des rôles utilisateur.
+Dans cette mosaïque, vous pouvez définir les membres de l’équipe de projet. Lors de la modification, vous pouvez saisir le nom du membre de l’équipe et attribuer le rôle d’utilisateur.
 
 ![Mosaïque Équipe](/help/sites-cloud/authoring/assets/projects-team-tile.png)
 
@@ -135,7 +135,7 @@ Vous pouvez configurer votre projet pour qu’il suive certains workflows. Si de
 
 ![Workflows](/help/sites-cloud/authoring/assets/project-workflows.png)
 
-Vous pouvez configurer votre projet pour qu’il suive certains workflows. Selon le type de projet que vous sélectionnez, différents workflows sont disponibles.
+Vous pouvez configurer votre projet pour qu’il suive certains workflows. Selon le projet que vous choisissez, différents workflows sont disponibles.
 
 Ils sont décrits à la section [Utilisation des workflows de projet](/help/sites-cloud/authoring/projects/workflows.md).
 
@@ -163,16 +163,16 @@ En fonction du modèle sélectionné, plusieurs options s’offrent à vous, not
 
 ## Rôles utilisateur dans un projet {#user-roles-in-a-project}
 
-Différents rôles utilisateur sont définis dans un modèle de projet et utilisés pour deux principales raisons :
+Les différents rôles utilisateur sont définis dans un modèle de projet et sont utilisés pour deux Principales raisons :
 
 1. Autorisations. Les rôles utilisateur peuvent faire partie de l’une des trois catégories répertoriées : Observateur, Éditeur, Propriétaire. Par exemple, un photographe ou un rédacteur aura les mêmes privilèges qu’un éditeur. Les autorisations déterminent ce que les utilisateurs peuvent faire avec le contenu d’un projet.
-1. Workflows. Les workflows déterminent l’utilisateur associé à telles ou telles tâches d’un projet. Les tâches peuvent être associées à un rôle de projet. Par exemple, une tâche peut être attribuée à des photographes, de sorte que tous les membres de l’équipe disposant du rôle Photographe se la voient attribuer.
+1. Workflows. Les workflows déterminent les tâches affectées à un projet. Les tâches peuvent être associées à un rôle de projet. Par exemple, une tâche peut être affectée aux photographes afin que tous les membres de l’équipe qui détiennent le rôle Photographe obtiennent la tâche.
 
-Pour vous permettre de gérer les autorisations de sécurité et de contrôle, tous les projets prennent en charge les rôles par défaut suivants :
+Pour vous permettre de gérer les autorisations de sécurité et de contrôle, tous les projets prennent en charge les rôles par défaut suivants:
 
 | Rôle | Description | Autorisations | Appartenance à un groupe |
 |---|---|---|---|
-| Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son statut. | Droits en lecture seule sur un projet | Groupe `workflow-users` |
+| Observateur | Un utilisateur disposant de ce rôle peut afficher les détails du projet, y compris son statut. | Autorisations en lecture seule sur un projet | Groupe `workflow-users` |
 | Éditeur | Un utilisateur disposant de ce rôle peut charger et modifier le contenu d’un projet. | Accès en lecture et en écriture à un projet, aux métadonnées associées et aux ressources connexes ; droits permettant à l’utilisateur de charger une liste de plans et passer en revue et approuver des ressources ; droits en écriture sur /etc/commerce ; droits de modification sur un projet spécifique | Groupe workflow-users |
 | Propriétaire | Un utilisateur disposant de ce rôle peut lancer un projet. Le propriétaire peut créer un projet, lancer une tâche pour un projet et déplacer les ressources approuvées vers le dossier Production. Toutes les autres tâches de projet peuvent également être visualisées et implémentées par le propriétaire. | Droits en écriture sur `/etc/commerce` | Groupe `dam-users` (pour pouvoir créer un projet), groupe administrateurs-projet (pour pouvoir déplacer des ressources) |
 

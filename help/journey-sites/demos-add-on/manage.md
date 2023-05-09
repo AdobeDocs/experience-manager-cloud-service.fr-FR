@@ -56,7 +56,7 @@ Les utilitaires de démonstration en libre-service fournissent un certain nombre
 * **Cache dʼauteur principal** : cet outil permet de récupérer plusieurs ressources au sein de l’instance Adobe Experience Manager, en accélérant leur temps de récupération. Cette opération peut prendre plusieurs secondes.
 * **Application Android** : outils d’installation et de lancement de l’application Android de démonstration. Permet de créer un site basé sur lʼ&#x200B;**Application monopage WKND** pour alimenter cette page. Utilisation à partir d’un appareil Android, d’un émulateur ou de la plateforme Bluestacks.
 * **Préférences utilisateur** : désactivation des boîtes de dialogue contextuelles de tutoriel.
-* **Configuration de GraphQL** : configuration rapide du point de terminaison global GraphQL.
+* **Configuration de GraphQL** : configuration rapide du point d’entrée global GraphQL.
 
 ## Suppression de sites et de modèles de démonstration {#deleting}
 

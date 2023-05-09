@@ -2,10 +2,10 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '1694'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -54,7 +54,7 @@ Il permet aussi de rechercher des nœuds par nom de nœud. Entrez le nom du nœu
 
 Le **Volet de l’explorateur** affiche une arborescence de tous les nœuds du référentiel.
 
-Cliquez sur un nœud pour afficher ses propriétés dans l’onglet **Propriétés**. Après avoir cliqué sur un nœud, vous pouvez sélectionner une action dans la barre d’outils. Cliquez à nouveau sur le nœud pour le renommer.
+Cliquez sur un nœud pour afficher ses propriétés dans l’onglet **Propriétés**. Après avoir cliqué sur un nœud, vous pouvez sélectionner une action dans la barre d’outils. Cliquez de nouveau sur le noeud pour le renommer.
 
 Filtre de navigation dans l’arborescence (l’icône en forme de paire de jumelles) vous permet de filtrer les nœuds du référentiel pour lesquels le nom contient le texte saisi. S’applique uniquement aux nœuds qui ont été chargés localement.
 
@@ -84,11 +84,11 @@ L’onglet **Contrôle d’accès** affiche les autorisations en fonction du che
 Les autorisations sont ventilées dans les catégories suivantes.
 
 * **Politiques de contrôle d’accès applicables** – les politiques qui peuvent être appliquées à la sélection en cours
-* **Stratégies de contrôle d’accès local** – les stratégies actuelles appliquées localement à la sélection en cours
-* **Stratégies de contrôle d’accès en vigueur** – les stratégies actuelles appliquées à la sélection en cours, qui peuvent être définies localement ou héritées des nœuds parents
+* **Politiques de contrôle d’accès local** – les politiques actuelles appliquées localement à la sélection en cours
+* **Politiques de contrôle d’accès en vigueur** – les politiques actuelles appliquées à la sélection en cours, qui peuvent être définies localement ou héritées des nœuds parents
 
 >[!NOTE]
->Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL.
+Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL.
 
 ### Onglet Réplication {#replication-tab}
 
@@ -166,7 +166,7 @@ L’option **Préférences** permet de définir la langue de l’interface utili
 
 ## Création d’un dossier {#creating-a-folder}
 
-Pour créer un dossier avec CRXDE Lite :
+Pour créer un dossier avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le volet de navigation, cliquez avec le bouton droit sur le dossier sous lequel vous souhaitez créer le nouveau dossier, sélectionnez **Créer...**, puis **Créer un dossier...**.
@@ -177,7 +177,7 @@ Pour créer un dossier avec CRXDE Lite :
 
 ## Création d’un nœud {#creating-a-node}
 
-Pour créer un nœud avec CRXDE Lite :
+Pour créer un noeud avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le [**volet Explorateur**,](#explorer-pane) cliquez avec le bouton droit sur le nœud où vous souhaitez créer le nouveau nœud, sélectionnez **Créer**, puis **Créer un nœud**.
@@ -188,12 +188,12 @@ Pour créer un nœud avec CRXDE Lite :
 Vous pouvez désormais adapter le nœud à vos besoins en modifiant les propriétés ou en ajoutant de nouveaux nœuds.
 
 >[!NOTE]
->La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
->La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer un nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
+La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
+La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer un nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
 
 ## Création d’une propriété {#creating-a-property}
 
-Pour créer une propriété avec CRXDE Lite :
+Pour créer une propriété avec CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le [**volet Explorateur**,](#explorer-pane) sélectionnez le nœud dans lequel vous souhaitez ajouter la nouvelle propriété.
@@ -220,18 +220,18 @@ CRXDE Lite permet d’importer et/ou exporter des définitions de type de nœud
 Pour exporter une définition de type de nœud dans CRXDE Lite :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
-1. Sélectionnez le nœud en question.
+1. Sélectionnez le noeud requis.
 1. Sélectionnez **Outils**, puis **Exporter le type de nœud**.
 1. La définition s’affichera en notation CND dans un nouvel onglet de votre navigateur.
 1. Enregistrez les informations si nécessaire.
 
-Pour importer une définition de type de nœud :
+Pour importer une définition de type de noeud :
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Sélectionnez **Outils**, puis **Importer le type de nœud**.
 1. Un nouvel onglet s’ouvre dans le [**volet de modification**](#edit-pane) intitulé **Type de nœud d’importation**.
 1. Saisissez la notation CND pour la définition dans la zone de texte de l’onglet **Type de nœud d’importation**.
-1. Cochez **Autoriser la mise à jour** si vous mettez à jour une définition existante.
+1. Vérifier **Autoriser la mise à jour** si vous mettez à jour une définition existante.
 1. Cliquez sur **Importer**.
 
 ## Journalisation {#logging}
@@ -240,7 +240,7 @@ CRXDE Lite permet d’afficher le fichier `error.log` qui se trouve sur le syst
 
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Dans le menu déroulant situé à droite de l’[**onglet Console**](#console-tab) au bas de la fenêtre, sélectionnez **Journaux du serveur**.
-1. Cliquez sur l’icône **Stop** pour afficher les messages.
+1. Cliquez sur le bouton **Arrêter** pour afficher les messages.
 
 Vous pouvez :
 

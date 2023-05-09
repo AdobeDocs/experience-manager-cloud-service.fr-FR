@@ -1,13 +1,13 @@
 ---
 title: Création et utilisation des thèmes
 description: Vous pouvez utiliser les thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif avec des composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
-source-git-commit: 1357b36dc3d14d2ceceb6761cb005b592472890a
-workflow-type: ht
+exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
+source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+workflow-type: tm+mt
 source-wordcount: '1666'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
-
 
 # Thèmes dans les formulaires adaptatifs (composants principaux) {#themes-for-af-using-core-components}
 

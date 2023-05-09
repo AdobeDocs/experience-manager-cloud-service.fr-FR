@@ -10,7 +10,7 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 100%
+ht-degree: 52%
 
 ---
 
@@ -49,7 +49,7 @@ Les mots-clés des formulaires adaptatifs sont prédéfinis, les identifiants r�
   <tr>
    <td><p>resetData</p> </td>
    <td><p>runPendingExpressions</p> </td>
-   <td><p>repeatable</p> </td>
+   <td><p>répétable</p> </td>
   </tr>
   <tr>
    <td><p>calcExp</p> </td>
@@ -64,7 +64,7 @@ Les mots-clés des formulaires adaptatifs sont prédéfinis, les identifiants r�
   <tr>
    <td><p>valueCommitScript</p> </td>
    <td><p>autoSaveStart</p> </td>
-   <td><p>visit</p> </td>
+   <td><p>visite</p> </td>
   </tr>
   <tr>
    <td><p>validateExp</p> </td>
@@ -74,7 +74,7 @@ Les mots-clés des formulaires adaptatifs sont prédéfinis, les identifiants r�
   <tr>
    <td><p>placeholderText</p> </td>
    <td><p>autoSaveStartExpression</p> </td>
-   <td><p>children</p> </td>
+   <td><p>enfants</p> </td>
   </tr>
   <tr>
    <td><p>value</p> </td>
@@ -132,7 +132,7 @@ Les mots-clés des formulaires adaptatifs sont prédéfinis, les identifiants r�
    <td><p>index</p> </td>
   </tr>
   <tr>
-   <td><p>height</p> </td>
+   <td><p>hauteur</p> </td>
    <td><p>showComment</p> </td>
    <td><p>visible</p> </td>
   </tr>

@@ -2,8 +2,8 @@
 title: Documents de référence sur les API
 description: AEM dispose d’API complètes et puissantes que vous pouvez exploiter pour votre projet d’expérience numérique.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 100%
 
@@ -82,4 +82,4 @@ La structure du SDK de l’éditeur d’application d’une seule page AEM fourn
 
 >[!TIP]
 >
->Pour plus d’informations sur les applications d’une seule page (SPA), consultez la section [Introduction et présentation des SPA](/help/implementing/developing/hybrid/introduction.md).
+>Pour plus d’informations sur les applications d’une seule page (SPA), consultez la section [Introduction et présentation des applications monopage (SPA)](/help/implementing/developing/hybrid/introduction.md).

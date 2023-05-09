@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Mixed Media Sets
 role: User
 exl-id: 7ccde741-38d2-44c9-9378-f2721384aab7
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '1501'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Les visionneuses de médias mixtes sont désignées par une bannière contenant 
 
 Pour démarrer rapidement, procédez comme suit :
 
-1. [Chargez vos ressources](#uploading-assets).
+1. [Chargement des ressources](#uploading-assets).
 
    Commencez par charger les images et les vidéos pour les visionneuses de médias mixtes. Le cas échéant, créez les [Visionneuses d’images](/help/assets/dynamic-media/image-sets.md) et [Visionneuses à 360°](/help/assets/dynamic-media/spin-sets.md). Comme les utilisateurs peuvent zoomer sur les images dans la visionneuse de médias mixtes, assurez-vous de tenir compte du zoom lorsque vous sélectionnez des images. Assurez-vous que les images font au moins 2 000 pixels dans leur plus grande dimension.
 
@@ -90,7 +90,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
    ![chlimage_1-138](assets/chlimage_1-349.png)
 
-1. Dans le **[!UICONTROL Titre]** de la visionneuse de médias mixtes, saisissez un nom pour la visionneuse. Le nom apparaît dans la bannière située sur la visionneuse de médias mixtes. Vous pouvez aussi saisir une description.
+1. Dans le **[!UICONTROL Titre]** de la visionneuse de médias mixtes, saisissez un nom pour la visionneuse. Le nom apparaît dans la bannière de la visionneuse de médias mixtes. Vous pouvez aussi saisir une description.
 
    ![chlimage_1-139](assets/chlimage_1-350.png)
 
@@ -100,7 +100,7 @@ Lorsque vous ajoutez des ressources à votre visionneuse, elles sont automatique
 
 1. Pour sélectionner les ressources à inclure dans votre jeu de médias mixtes, sélectionnez le sélecteur de ressources. Sélectionnez-les, puis sélectionnez **[!UICONTROL Sélectionner]**.
 
-   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en sélectionnant **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis sélectionnez l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en sélectionnant l’icône **[!UICONTROL Afficher]** et en choisissant ensuite le mode **[!UICONTROL Liste]**, **[!UICONTROL Colonnes]** ou **[!UICONTROL Carte]**.
+   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en sélectionnant **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis sélectionnez l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en sélectionnant l’icône **[!UICONTROL Vue]** et en choisissant ensuite la vue **[!UICONTROL Liste]**, **[!UICONTROL Colonnes]** ou **[!UICONTROL Carte]**.
 
    Voir [Utilisation de sélecteurs](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -127,8 +127,8 @@ Vous pouvez effectuer différentes tâches de modification sur les ressources da
 * Ajouter des ressources à la visionneuse de médias mixtes.
 * Réorganiser des ressources de la visionneuse de médias mixtes.
 * Supprimer des ressources de la visionneuse de médias mixtes.
-* Appliquer des paramètres prédéfinis de visionneuse.
-* Modifier la vignette par défaut.
+* Appliquez des paramètres prédéfinis de visionneuse.
+* Modifiez la miniature par défaut.
 
 **Pour modifier une visionneuse de médias mixtes :**
 

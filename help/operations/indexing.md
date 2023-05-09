@@ -57,7 +57,7 @@ Notez que la personnalisation d’un index prêt à l’emploi, ainsi que les in
 
 >[!NOTE]
 >
->Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-6`, copiez la dernière définition d’index d’usine à partir d’un *Environnement Cloud Service* à l’aide du gestionnaire de modules CRX DE (`/crx/packmgr/`). Renommez ensuite la configuration, par exemple en `damAssetLucene-6-custom-1`, puis ajoutez ensuite vos personnalisations. Vous vous assurez ainsi que les configurations requises ne sont pas supprimées par inadvertance. Par exemple, le nœud `tika` sous `/oak:index/damAssetLucene-6/tika` est requis dans l’index personnalisé du service cloud. Il n’existe pas dans le SDK *Cloud.
+>Si vous personnalisez un index prêt à l’emploi, par exemple `damAssetLucene-6`, copiez la dernière définition d’index d’usine à partir d’un *Environnement Cloud Service* à l’aide du gestionnaire de packages CRX DE (`/crx/packmgr/`). Renommez ensuite la configuration, par exemple en `damAssetLucene-6-custom-1`, puis ajoutez ensuite vos personnalisations. Vous vous assurez ainsi que les configurations requises ne sont pas supprimées par inadvertance. Par exemple, le nœud `tika` sous `/oak:index/damAssetLucene-6/tika` est requis dans l’index personnalisé du service cloud. Il n’existe pas dans le SDK *Cloud.
 
 Vous devez préparer un nouveau package de définition d’index qui contient la définition d’index réelle, en suivant ce modèle de dénomination :
 

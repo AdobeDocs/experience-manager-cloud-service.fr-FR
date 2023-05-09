@@ -2,8 +2,8 @@
 title: Accès au fournisseur de services Screens
 description: Cette page décrit comment accéder au fournisseur de services Screens.
 exl-id: 9eff6fe8-41d4-4cf3-b412-847850c4e09c
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '266'
 ht-degree: 100%
 

@@ -1,17 +1,17 @@
 ---
 title: Modification des propriétés de page
-description: Définissez les propriétés requises pour une page
+description: Définition des propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
 workflow-type: tm+mt
 source-wordcount: '2387'
-ht-degree: 81%
+ht-degree: 69%
 
 ---
 
 # Modification des propriétés de page {#editing-page-properties}
 
-Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy, et d’autres pas, et les informations Live Copy seront disponibles suivant le cas.
+Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy alors que d’autres ne le sont pas et les informations de Live Copy seront disponibles, le cas échéant.
 
 ## Propriétés de page {#page-properties}
 
@@ -21,23 +21,23 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Titre et balises**
 
-   * **Titre** - Le titre de la page est affiché à divers emplacements ; dans la liste de l’onglet **Sites web** et les vues de carte/liste **Sites**, par exemple
+   * **Titre** – Le titre de la page est affiché à divers emplacements ; dans la liste de l’onglet **Sites web** et les vues Carte/Liste **Sites**, par exemple
       * Ce champ est obligatoire.
-   * **Balises** - Vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
+   * **Balises** - Vous pouvez y ajouter ou supprimer des balises de la page en mettant à jour la liste dans la zone de sélection.
       * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
-      * Vous pouvez saisir une nouvelle balise en entrant son nom dans une zone de sélection vide.
+      * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
          * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
-         * Elle s’affiche alors avec une petite étoile à droite indiquant qu’il s’agit d’une nouvelle balise.
-      * Vous pouvez faire votre choix parmi les balises existantes dans la liste déroulante.
-      * Un « x » apparaît lorsque vous passez le pointeur de la souris sur une entrée de balise dans la zone de sélection ; vous pouvez vous en servir pour supprimer cette balise de la page.
+         * La nouvelle balise s’affiche alors avec une petite étoile à droite indiquant qu’il s’agit d’une nouvelle balise.
+      * Avec la fonctionnalité de liste déroulante, vous pouvez effectuer un choix parmi des balises existantes.
+      * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisée pour supprimer cette balise pour cette page.
       * Pour plus d’informations sur les balises, voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md).
-   * **Masquer dans la navigation** - Indique si la page doit être affichée ou masquée dans la navigation entre les pages du site qui en résulte.
+   * **Masquer dans la navigation** - Indique si la page est affichée ou masquée dans la navigation de la page du site résultant.
 
 * **Valorisation de marque**
 
    Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant de page de la version 2.14.0, ou ultérieure, des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 
-   * **Marque Slug**
+   * **Slug de marque**
 
       * **Remplacer** : cochez la case pour définir le titre de rappel sur cette page.
          * La valeur sera héritée par toutes les pages enfants à moins que leurs valeurs de **remplacement** ne soient également définies.
@@ -50,7 +50,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Autres titres et descriptions**
 
-   * **Titre de la page** – Titre à utiliser sur la page. Habituellement utilisé par les composants du titre. Si ce champ reste vide, le **titre** est utilisé.
+   * **Titre de la page** – Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si elle est vide, **Titre** sera utilisé.
    * **Titre de navigation** – Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si ce champ est vide, le **Titre** est utilisé.
    * **Sous-titre** – Sous-titre à utiliser sur la page.
    * **Description** – Votre description de la page, son objectif ou tout autre détail que vous souhaiteriez ajouter.
@@ -74,9 +74,9 @@ Les propriétés sont réparties sur plusieurs onglets.
    * Laissez ces champs (**Heure d’activation** et **Heure de désactivation**) vides pour les pages que vous souhaitez publier immédiatement et qui sont disponibles dans l’environnement de publication jusqu’à ce qu’elles soient désactivées (scénario normal).
 
 
-* **URL Vanity**
+* **URL de redirection**
 
-   * Permet de saisir une URL Vanity pour cette page. Vous pouvez ainsi disposer d’une URL plus courte et/ou plus explicite.
+   * Permet de saisir une URL Vanity pour cette page, ce qui peut vous permettre d’avoir une URL plus courte et/ou plus expressive.
    * Par exemple, si l’URL Vanity est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site web `http://example.com`, `http://example.com/welcome` sera l’URL Vanity de `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
@@ -84,7 +84,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    >L’URL Vanity :
    >
    >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
-   >* ne prend pas en charge les modèles d’expression régulière.
+   >* Ne prenez pas en charge les modèles d’expression régulière.
    >* ne doit pas être définie sur une page existante.
 
 
@@ -265,7 +265,7 @@ Grâce à une configuration simple, un auteur de contenu peut désormais activer
    * [En créant une page](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page) (sous-ensemble des propriétés)
    * En cliquant ou en appuyant sur **Propriétés**
       * Pour une seule page
-      * Pour plusieurs pages (un seul sous-ensemble des propriétés est disponible pour la modification en masse)
+      * Pour plusieurs pages (seul un sous-ensemble des propriétés peut être modifié en masse)
 * À partir de l’éditeur de page :
    * En sélectionnant **Informations sur la page** (puis **Ouvrir les propriétés**)
 
@@ -308,10 +308,10 @@ Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utili
 >There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
 -->
 
-Vous pouvez sélectionner plusieurs pages en vue d’une modification en masse de différentes façons :
+Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de différentes manières, notamment :
 
-* Lors de l’exploration de la console **Sites**
-* Après avoir utilisé la fonction **Rechercher** pour localiser un ensemble de pages
+* Lorsque vous parcourez les **Sites** console
+* Après avoir utilisé **Rechercher** pour localiser un ensemble de pages
 
 Sélectionnez les pages et cliquez ou appuyez ensuite sur l’option **Propriétés** pour afficher les propriétés en bloc :
 
@@ -327,10 +327,10 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
 
 * **Mode**
 
-   * La liste des pages affectées
-      * Vous pouvez, au besoin, en sélectionner/désélectionner.
+   * Liste des pages affectées
+      * Vous pouvez sélectionner/désélectionner si nécessaire.
       * Onglets
-         * Comme c’est le cas lors de l’affichage des propriétés d’une seule page, celles-ci sont organisées sous des onglets.
+         * Comme pour l’affichage des propriétés d’une seule page, les propriétés sont classées sous onglets.
    * Un sous-ensemble de propriétés
       * Les propriétés qui sont disponibles sur toutes les pages sélectionnées, et qui ont été définies explicitement comme étant disponibles pour la modification en masse, sont visibles.
       * Si vous réduisez la sélection à une seule page, toutes les propriétés sont alors visibles.
@@ -343,7 +343,7 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
 
    * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
       * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
-      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une valeur ou supprimer une valeur commune.
+      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
    * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.
 
 >[!NOTE]

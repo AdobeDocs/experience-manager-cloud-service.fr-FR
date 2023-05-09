@@ -5,7 +5,8 @@ description: Vous pouvez utiliser le formulaire adaptatif (composants principaux
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
+source-git-commit: 65489caa5f04b3dd6893e2218fb2bb151380c5ad
 workflow-type: tm+mt
 source-wordcount: '2185'
 ht-degree: 19%
@@ -272,4 +273,3 @@ Pour modifier une configuration ou une propriété du formulaire adaptatif incor
 ![AF-layout-support](/help/forms/assets/afsite-layoutsupport.gif)
 
 AEM page de sites conserve une référence au formulaire adaptatif. Lorsque vous traduisez une page AEM Sites, elle traduit automatiquement un formulaire adaptatif et les ressources référencées qui lui sont associées à l’aide de la fonction [projets de traduction](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/translation/managing-projects.html?lang=en#adding-pages-assets-to-a-translation-job) dans d’autres langues.
-

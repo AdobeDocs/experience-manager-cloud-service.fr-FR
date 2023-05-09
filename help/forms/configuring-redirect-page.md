@@ -8,7 +8,7 @@ exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '186'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -21,7 +21,7 @@ Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle le
 1. Dans la barre latérale, cliquez sur **[!UICONTROL Envoi]**.
 
 1. Indiquez L’URL de la page de redirection sous **[!UICONTROL Page de remerciement]** dans la section **[!UICONTROL Envoi]**.
-1. Sous Action Envoyer, vous pouvez éventuellement configurer le paramètre à transmettre à la page de redirection pour l’action Envoyer vers le point de fin REST.
+1. Sous Action Envoyer, vous pouvez éventuellement configurer le paramètre à transmettre à la page de redirection pour l’action Envoyer vers le point d’entrée REST.
 
    ![Configuration de la page de redirection](assets/redirect-url.png)
 

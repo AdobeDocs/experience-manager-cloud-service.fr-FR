@@ -1,11 +1,11 @@
 ---
 title: Utilisation des workflows de projet
-description: Plusieurs workflows de projet sont directement disponibles.
+description: Divers workflows de projet sont disponibles prêts à l’emploi.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
 source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
 workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 70%
 
 ---
 
@@ -19,14 +19,14 @@ Les workflows de projet disponibles et prêts à l’emploi sont les suivants :
 * **Demander l’adresse électronique** : ce workflow demande une adresse électronique.
 * **Gestion des actifs numériques (DAM) – Créer et traduire la copie et Gestion des actifs numériques (DAM) – Créer une copie de langue** : crée des fichiers binaires, des métadonnées et des balises traduits pour les ressources et les dossiers.
 
-Selon le modèle de projet sélectionné, certains workflows sont disponibles :
+Selon le modèle de projet que vous sélectionnez, certains workflows sont disponibles :
 
 |  | **Projet simple** | **Projet de traduction** |
 |---|:-:|:-:|
 | Workflow d’approbation de projet | x |  |
 | Demander le lancement | x |  |
 | Demander la page d’entrée | x |  |
-| Adresse de demande | x |  |
+| Demander une adresse | x |  |
 | DAM Créer copie de langue&amp;ast; |  | x |
 | DAM Créer et traduire copie de langue&amp;ast; |  | x |
 
@@ -34,9 +34,9 @@ Selon le modèle de projet sélectionné, certains workflows sont disponibles :
 >
 >&amp;ast; Ces workflows ne sont pas lancés via la mosaïque **Workflow** dans les projets. Reportez-vous à la section [Création de copies de langue pour les ressources](/help/sites-cloud/administering/translation/managing-projects.md).
 
-Les étapes permettant de lancer et de terminer les workflows sont identiques quel que soit le workflow choisi. Seules les étapes changent.
+Les étapes de démarrage et d’achèvement des workflows sont les mêmes, quel que soit le workflow choisi. Seules les étapes changent.
 
-Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie de langue ou Gestion des actifs numériques (DAM) – Créer et traduire la copie de langue). Les informations sur les tâches en attente d’un projet sont répertoriées dans la mosaïque **Tâches**. Les notifications correspondant aux tâches à achever s’affichent en regard de l’icône d’utilisateur.
+Vous commencez un workflow directement dans les projets (à l’exception de Gestion des actifs numériques (DAM) – Créer une copie de langue ou Gestion des actifs numériques (DAM) – Créer et traduire la copie de langue). Les informations sur les tâches en attente d’un projet sont répertoriées dans la section **Tâches** mosaïque. Les notifications relatives aux tâches à effectuer s’affichent en regard de l’icône utilisateur.
 
 Pour plus d’informations sur l’utilisation des workflows dans AEM, reportez-vous aux sections suivantes :
 
@@ -51,18 +51,18 @@ Cette section décrit les workflows disponibles pour les projets.
 Dans le workflow d’approbation de projet, vous attribuez du contenu à un utilisateur et passez en revue ce contenu, puis vous l’approuvez.
 
 1. Dans votre projet Simple, sélectionnez le signe **`+`** dans la mosaïque **Workflows**, puis sélectionnez **Workflow d’approbation de projet**.
-1. Entrez un titre et sélectionnez la personne à laquelle l’affecter dans la liste Équipe. Le cas échéant, entrez une description, le chemin d’accès au contenu, la priorité de tâche et la date d’échéance.
+1. Saisissez un titre et sélectionnez à qui l’affecter dans la liste Équipe. Le cas échéant, entrez une description, le chemin d’accès au contenu, la priorité de tâche et la date d’échéance.
 
    ![Demande d’approbation](/help/sites-cloud/authoring/assets/projects-approval.png)
 
-1. Cliquez sur **Créer**. Le workflow commence. La tâche apparaît dans la mosaïque **Tâches**.
+1. Cliquez sur **Créer**. Le workflow commence. La tâche apparaît dans la **Tâches** mosaïque.
 
 ## Workflow Demander le lancement {#request-launch-workflow}
 
 Ce workflow vous permet de demander un lancement.
 
 1. Dans votre projet simple, sélectionnez l’option de connexion **+** dans la mosaïque **Workflows**, puis sélectionnez **Workflow Demander le lancement**.
-1. Entrez le titre du lancement et indiquez le chemin d’accès à la source du lancement. Vous pouvez également ajouter une description et une date active, le cas échéant. Sélectionnez l’option Hériter des données actives de la page source ou excluez les sous-pages selon la manière dont le lancement doit se produire.
+1. Saisissez un titre pour le lancement et indiquez le chemin d’accès source du lancement. Vous pouvez également ajouter une description et une date d’activation, le cas échéant. Sélectionnez Hériter des données actives de la page source ou excluez des sous-pages selon le comportement souhaité du lancement.
 
    ![Demander le lancement](/help/sites-cloud/authoring/assets/projects-request-launch.png)
 

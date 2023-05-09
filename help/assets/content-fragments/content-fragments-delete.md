@@ -1,6 +1,6 @@
 ---
 title: Fragments de contenu - Considérations sur la suppression (Ressources - Fragments de contenu)
-description: Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
+description: Examinez ces points importants avant de définir vos politiques de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
 exl-id: 69c08f2f-4d51-4aea-957e-ee81c4604377
 source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 81%
 
 # Fragments de contenu – considérations sur la suppression {#content-fragments-delete-considerations}
 
-Examinez ces points importants avant de définir vos stratégies de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
+Examinez ces points importants avant de définir vos politiques de suppression de fragments de contenu dans AEM. Les fragments de contenu forment un puissant outil de diffusion de contenu découplé. Les implications de leur suppression doivent être soigneusement examinées.
 
 ## Autorisations – Supprimer ou ne pas supprimer {#permissions-delete-or-not-delete}
 

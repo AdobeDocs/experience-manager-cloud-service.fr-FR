@@ -2,8 +2,8 @@
 title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: cc50520d7ee2bb3e7d1491154d531aa84ac9e956
-workflow-type: ht
+source-git-commit: a9eb03d4db478a4db8e6d2436bd06dcde70a3eeb
+workflow-type: tm+mt
 source-wordcount: '1512'
 ht-degree: 100%
 
@@ -85,7 +85,7 @@ Avec le rendu côté serveur, le [workflow d’interaction des composants](intro
 
 ![AEM Adobe I/O piloté par SSE CMS](assets/ssr-cms-drivenaemnode-adobeio.png)
 
-## Flux de communication piloté par Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
+## Flux de communication piloté par Adobe I/O Runtime {#adobe-i-o-runtime-driven-communication-flow}
 
 La section précédente décrit l’implémentation standard et recommandée du rendu côté serveur dans le cadre des SPA dans AEM, AEM se chargeant du démarrage et du traitement du contenu.
 
@@ -184,7 +184,7 @@ Pour qu’un servlet récupère et renvoie du contenu pouvant être injecté dan
 1. Assurez-vous que votre serveur distant est accessible.
 1. Ajoutez l’un des fragments de code suivants au modèle HTL d’un composant AEM.
 1. Vous pouvez éventuellement créer ou modifier les configurations OSGi.
-1. Parcourir le contenu de votre site
+1. Parcourir le contenu de votre site.
 
 En général, le modèle HTL d’un composant de page est le principal destinataire d’une telle fonctionnalité.
 

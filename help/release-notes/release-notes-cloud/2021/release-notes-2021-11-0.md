@@ -107,7 +107,7 @@ La prochaine version est prévue pour le 09 décembre 2021.
 
 * L’API Modifier un pipeline prend désormais en charge la modification de l’environnement utilisé lors des phases de déploiement.
 
-* Une optimisation du processus d’analyse OakPal a été introduite pour les modules volumineux.
+* Une optimisation du processus d’analyse OakPal a été introduite pour les packages volumineux.
 
 * Le fichier CSV de problème de qualité contient désormais l’horodatage de chaque problème.
 

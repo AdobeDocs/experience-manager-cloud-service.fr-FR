@@ -35,14 +35,14 @@ La section suivante décrit comment configurer le pipeline CI/CD et déployer vo
 1. Sélectionnez vos options dans l’assistant **Configurer le pipeline**. Cliquez sur **Enregistrer**.
 
    >[!NOTE]
-   >Pour en savoir plus sur les options de l’assistant de configuration du pipeline, voir [Configuration des paramètres du pipeline à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=en) pour plus d’informations.
+   >Pour en savoir plus sur les options de l’assistant de configuration du pipeline, voir [Configuration des paramètres du pipeline à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/configure-pipeline.html?lang=fr) pour plus d’informations.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 
 1. Une fois le pipeline de configuration terminé, la carte d’appel à l’action est mise à jour, comme illustré ci-dessous. Cliquez sur Déployer.
 
    >[!NOTE]
-   >Pour en savoir plus sur les étapes du déploiement dans Cloud Manager, voir [Déploiement de votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=en) pour plus d’informations.
+   >Pour en savoir plus sur les étapes du déploiement dans Cloud Manager, voir [Déploiement de votre code](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=fr) pour plus d’informations.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline3.png)
 

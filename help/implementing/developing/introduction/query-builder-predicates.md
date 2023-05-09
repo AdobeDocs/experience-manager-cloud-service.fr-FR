@@ -2,10 +2,10 @@
 title: Référence des prédicats de Query Builder
 description: Référence des prédicats pour l’API Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 3c7e6d2213e059b1b8a90feea4672a4436873a01
-workflow-type: ht
-source-wordcount: '2268'
-ht-degree: 100%
+source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
+workflow-type: tm+mt
+source-wordcount: '2283'
+ht-degree: 97%
 
 ---
 
@@ -76,7 +76,7 @@ Ce prédicat permet de trier les résultats. Si un classement basé sur plusieur
 
 * **`orderby`** – Nom de propriété JCR indiqué par un caractère @ initial, par exemple `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou un autre prédicat dans la requête, par exemple `2_property`, sur la base duquel le tri doit être effectué.
 * **`sort`** – Sens du tri, soit `desc` pour décroissant, soit `asc` pour croissant (valeur par défaut).
-* **`case`** – Si cette valeur est définie sur `ignore`, le tri n’est pas sensible à la casse, ce qui signifie que `a` vient avant `B` ; si cette valeur est vide ou ignorée, le tri est sensible à la casse, ce qui signifie que `B` vient avant `a`.
+* **`case`** – Si cette valeur est définie sur `ignore`, le tri ne respecte pas la casse, ce qui signifie que `a` vient avant `B` ; si cette valeur est vide ou ignorée, le tri respecte a casse, ce qui signifie que `B` vient avant `a`.
 
 ## Prédicats {#predicates}
 
@@ -106,7 +106,7 @@ Ce prédicat limite le résultat aux fragments de contenu.
 
 ### `dateComparison` {#datecomparison}
 
-Ce prédicat compare entre elles deux propriétés de date JCR. Permet d’établir des comparaisons de type « est égale à », « est différente de », « est supérieure à » ou encore « est supérieure ou égale à ».
+Ce prédicat compare entre elles deux propriétés de date JCR. Peuvent tester s’ils sont égaux, inégaux, supérieurs ou supérieurs ou égaux.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
 
@@ -177,7 +177,7 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d�
 
 ### language {#language}
 
-Ce prédicat identifie des pages AEM dans une langue spécifique. Ce prédicat examine la propriété language de la page et le chemin d’accès de la page qui inclut souvent la langue ou le paramètre régional dans une structure de site de niveau supérieur.
+Ce prédicat identifie des pages AEM dans une langue spécifique. Cela tient compte de la propriété de langue de la page et du chemin de page qui inclut souvent la langue ou le paramètre régional dans une structure de site de niveau supérieur.
 
 Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
 
@@ -245,8 +245,8 @@ Il ne prend pas en charge l’extraction de facettes.
 * **`path`** – Cette propriété définit le modèle de chemin.
    * Selon la propriété `exact`, il existe une correspondance avec l’ensemble de la sous-arborescence (comme l’ajout de `//*` dans xpath, mais sans englober le chemin de base), ou seulement une correspondance avec le chemin exact, avec la possibilité d’inclure des caractères génériques (`*`).
       * La valeur par défaut est `true`
-
-<!---   * If the `self`property is set, the entire subtree including the base node will be searched.--->
+&lt;!— * Si la variable 
+`self`est définie, toute la sous-arborescence, y compris le noeud de base, sera recherchée.—>
 * **`exact`** – Si la propriété `exact` est définie sur `true`, le chemin d’accès exact doit correspondre, mais il peut contenir des caractères génériques simples (`*`), qui correspondent aux noms, mais pas `/` ; si elle est définie sur `false` (par défaut) tous les descendants sont inclus (facultatif).
 * **`flat`** – Effectue uniquement des recherches dans les enfants directs (ce qui revient à ajouter `/*` dans xpath) (utilisé uniquement si `exact` n’est pas défini sur « true », facultatif)
 * **`self`** – Effectue des recherches dans la sous-arborescence, mais inclut le nœud de base indiqué comme chemin d’accès (pas de caractères génériques).

@@ -5,7 +5,7 @@ exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
 source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
 workflow-type: tm+mt
 source-wordcount: '506'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -64,7 +64,7 @@ curl -g -u user:password 'http://localhost:4502/libs/granite/security/search/aut
 
 **Récupération des données utilisateur :**
 
-Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyé par la commande ci-dessus :
+Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyée par la commande ci-dessus :
 
 ```shell
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile.-1.json'
@@ -79,7 +79,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Désactivation d’un utilisateur {#disable-user}
 
 1. Ouvrez la console Administration utilisateur et recherchez l’utilisateur en question, comme décrit ci-dessus.
-2. Survolez l’utilisateur avec le curseur, puis cliquez sur l’icône sélectionnée. Le profil devient gris pour indiquer qu’il est sélectionné.
+2. Pointez sur l’utilisateur et cliquez sur l’icône de sélection. Le profil devient gris pour indiquer qu’il est sélectionné.
 
 3. Appuyez sur le bouton **Désactiver** dans le menu supérieur pour désactiver l’utilisateur :
 
@@ -99,7 +99,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### API HTTP  {#http-api-1}
 
-Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver l’utilisateur **[!UICONTROL cavery]** `userId` et supprimer ses profils disponibles à l’emplacement par défaut.
+Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver l’`userId` **[!UICONTROL cavery]** et supprimer ses profils disponibles à l’emplacement par défaut.
 
 **Découverte du répertoire de base (home) des utilisateurs :**
 

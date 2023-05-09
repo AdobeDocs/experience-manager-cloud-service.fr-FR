@@ -1,7 +1,7 @@
 ---
 title: Modification du contenu de la page zéro avec Designer
 seo-title: Changing Page Zero content in Designer
-description: Savez-vous comment modifier le message affiché sur la page zéro d’un PDF XFA ouvert avec un programme de visualisation PDF non Adobe ?
+description: Savez-vous comment modifier le message affiché sur la page zéro d’un PDF XFA lors de son affichage dans une visionneuse non Adobe PDF ?
 seo-description: Do you know how you can change the message displayed on Page Zero of an XFA PDF when viewing it in a non-Adobe PDF viewer?
 uuid: ac23fb21-3f15-48ea-aeeb-4ecc12b771ac
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,7 +11,7 @@ docset: aem65
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 100%
+ht-degree: 69%
 
 ---
 
@@ -33,7 +33,7 @@ La version [!DNL AEM Forms] de Designer vous permet de modifier le message affic
 1. Dans la boîte de dialogue [!UICONTROL Propriétés du formulaire], cliquez sur le signe ![plus](assets/plus.png) (icône plus) pour ajouter une propriété personnalisée.
 
 1. Spécifiez **_pagezerocontent** en tant que nom de propriété.
-1. Ajoutez le nouveau message de la page zéro au format Rich Text, en tant que valeur. Par exemple :
+1. Ajoutez le nouveau message Page zéro, au format Texte enrichi, en tant que valeur. Par exemple :
 
 
    `<body xmlns="https://www.w3.org/1999/xhtml" xmlns:xfa="https://www.xfa.org/schema/xfa-data/1.0/"><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">You are seeing this message maybe because you are using a non Adobe PDF Viewer or an Old version of Adobe Reader. You can upgrade to the latest version of Adobe Reader for Windows, Mac, or Linux by visiting <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/reader_download.</p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in"><span style="xfa-spacerun:yes"> </code></p><p style="font-family:'Times';font-size:12pt;letter-spacing:0in">For more assistance with Adobe Reader visit <span style="xfa-spacerun:yes"> </code>https://www.adobe.com/go/acrreader.</p></body>`
@@ -46,4 +46,4 @@ La version [!DNL AEM Forms] de Designer vous permet de modifier le message affic
 
 >[!NOTE]
 >
->La propriété personnalisée créée peut ne pas s’afficher correctement dans la boîte de dialogue Propriétés du formulaire lors de la réouverture du formulaire. Toutefois, le formulaire fonctionne correctement et affiche le message mis à jour sur la page zéro.
+>La propriété personnalisée que vous venez de créer peut ne pas s’afficher correctement dans la boîte de dialogue Propriétés du formulaire lors de la réouverture du formulaire. Cependant, il fonctionne correctement et le formulaire affiche le message mis à jour de la page zéro.

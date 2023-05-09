@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '1212'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -18,7 +18,7 @@ Vous pouvez utiliser la fonction Aperçu pour afficher une ressource numérique 
 
 Une visionneuse est un ensemble de différents paramètres, ou « paramètres prédéfinis ». Par exemple, la taille d’affichage de la visionneuse, le comportement du zoom, les modèles de couleurs, les bordures et les polices, qui déterminent la manière dont les utilisateurs voient les ressources multimédias enrichies sur leurs écrans d’ordinateur et appareils mobiles.
 
-En plus de la fonction Aperçu dédiée aux vidéos, aux visionneuses à 360° et aux visionneuses d’images, vous pouvez également prévisualiser une ressource à l’aide des paramètres prédéfinis de visionneuse que vous avez créés. Vous pouvez aussi utiliser des paramètres d’image prédéfinis pour prévisualiser des rendus d’images.
+Outre l’utilisation de la fonction d’aperçu dédiée pour la vidéo, les visionneuses à 360° et les visionneuses d’images, vous pouvez prévisualiser une ressource à l’aide des paramètres prédéfinis de visionneuse que vous avez créés. Vous pouvez également utiliser des paramètres d’image prédéfinis pour prévisualiser les rendus des images.
 
 * [Application de paramètres d’image prédéfinis](/help/assets/dynamic-media/image-presets.md)
 * [Application de paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/viewer-presets.md)
@@ -32,7 +32,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
 **Prévisualisation d’une ressource :**
 
 1. Dans **[!UICONTROL Experience Manager]**, sur la page **[!UICONTROL Navigation]**, sélectionnez **[!UICONTROL Ressources]**, puis **[!UICONTROL Fichiers]** pour accéder aux ressources.
-1. Dans le coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Afficher]**, sélectionnez **[!UICONTROL Mode Liste]**.
+1. Dans le coin supérieur droit de la page, dans la liste déroulante **[!UICONTROL Afficher]**, sélectionnez **[!UICONTROL Vue Liste]**.
 1. (Facultatif) Utilisez la colonne **[!UICONTROL Type]** pour trier les ressources en fonction du type que vous souhaitez prévisualiser.
 1. Sous la colonne **[!UICONTROL Titre]**, sélectionnez le nom du titre (et non l’image miniature) de la ressource à prévisualiser.
 1. Selon le type de ressource que vous avez sélectionné, procédez de l’une des manières suivantes :
@@ -71,7 +71,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
         </ul> <p><strong>Pour prévisualiser une ressource dans une visionneuse particulière</strong></p>
         <ul>
         <li>En haut à gauche de la page, sélectionnez l’icône pour afficher la liste déroulante. Sélectionnez <strong>Visionneuses</strong> dans la liste, puis sélectionnez une visionneuse à appliquer à la ressource.</li>
-        </ul><p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br>Si vous utilisez un écran tactile, appuyez deux fois sur l’image pour effectuer un zoom avant par étapes. Lorsque vous avez atteint le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser le zoom. Placez-vous sur l’image et faites glisser pour effectuer un panoramique.</p> </td>
+        </ul><p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br>Si vous utilisez un écran tactile, appuyez deux fois sur l’image pour effectuer un zoom avant par étapes. Lorsque vous atteignez le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser l’état du zoom. Faites glisser sur l’image pour effectuer un panoramique.</p> </td>
       </tr>
       <tr>
       <td>Multimédia</td>
@@ -92,7 +92,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
       <td><p><strong>Pour prévisualiser une ressource dans une visionneuse particulière</strong></p>
         <ul>
         <li>En haut à gauche de la page, sélectionnez l’icône pour afficher la liste déroulante. Sélectionnez <strong>Visionneuses</strong> dans la liste, puis sélectionnez une visionneuse à appliquer à la ressource.</li>
-        </ul> <p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br /> Si vous utilisez un écran tactile, appuyez deux fois sur l’image pour effectuer un zoom avant par étapes. Lorsque vous avez atteint le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser le zoom. Placez-vous sur l’image et faites glisser pour effectuer un panoramique.</p></td>
+        </ul> <p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br /> Si vous utilisez un écran tactile, appuyez deux fois sur l’image pour effectuer un zoom avant par étapes. Lorsque vous atteignez le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser l’état du zoom. Faites glisser sur l’image pour effectuer un panoramique.</p></td>
       </tr>
       <tr>
       <td>Visionneuse à 360°</td>
@@ -101,16 +101,16 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
       <td><p><strong>Pour prévisualiser une ressource dans une visionneuse particulière</strong></p>
         <ul>
         <li>En haut à gauche de la page, sélectionnez l’icône pour afficher la liste déroulante. Sélectionnez <strong>Visionneuses</strong> dans la liste, puis sélectionnez une visionneuse à appliquer à la ressource.</li>
-        </ul><p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br /> Si vous utilisez un écran tactile, appuyez deux fois sur l’image pour effectuer un zoom avant par étapes. Lorsque vous avez atteint le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser le zoom. Placez-vous sur l’image et faites glisser pour effectuer un panoramique.</p> </td>
+        </ul><p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br /> Si vous utilisez un écran tactile, appuyez deux fois sur l’image pour effectuer un zoom avant par étapes. Lorsque vous atteignez le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser l’état du zoom. Faites glisser sur l’image pour effectuer un panoramique.</p> </td>
       </tr>
       <tr>
-      <td>Visionneuse de médias mixtes</td>
+      <td>Visionneuse de supports variés</td>
       <td>Non</td>
       <td>Oui</td>
       <td><p><strong>Pour prévisualiser une ressource dans une visionneuse particulière</strong></p>
         <ul>
         <li>En haut à gauche de la page, sélectionnez l’icône pour afficher la liste déroulante. Sélectionnez <strong>Visionneuses</strong> dans la liste, puis sélectionnez une visionneuse à appliquer à la ressource.</li>
-        </ul> <p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br /> Si vous utilisez un écran tactile, appuyez deux fois sur l’image pour effectuer un zoom avant par étapes. Lorsque vous avez atteint le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser le zoom. Placez-vous sur l’image et faites glisser pour effectuer un panoramique.</p> </td>
+        </ul> <p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br /> Si vous utilisez un écran tactile, appuyez deux fois sur l’image pour effectuer un zoom avant par étapes. Lorsque vous atteignez le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser l’état du zoom. Faites glisser sur l’image pour effectuer un panoramique.</p> </td>
       </tr>
       <tr>
       <td>Ensemble de carrousel</td>
@@ -131,7 +131,7 @@ Pour activer ou désactiver les paramètres prédéfinis de visionneuse dans l�
         </ul> <p><strong>Pour prévisualiser une ressource dans une visionneuse particulière</strong></p>
         <ul>
         <li>En haut à gauche de la page, sélectionnez l’icône pour afficher la liste déroulante. Sélectionnez <strong>Visionneuses</strong>, puis sélectionnez une visionneuse à appliquer à la ressource.</li>
-        </ul> <p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br /> Si vous utilisez un écran tactile, appuyez deux fois sur l’image pour effectuer un zoom avant par étapes. Lorsque vous avez atteint le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser le zoom. Placez-vous sur l’image et faites glisser pour effectuer un panoramique.</p> </td>
+        </ul> <p>Utilisez les icônes <strong>+</strong> et <strong>-</strong> pour augmenter ou réduire le zoom de l’image sélectionnée. Pour rétablir l’image au taux de zoom d’origine, sélectionnez <strong>Réinitialiser</strong>.<br /> Si vous utilisez un écran tactile, appuyez deux fois sur l’image pour effectuer un zoom avant par étapes. Lorsque vous atteignez le zoom maximal, appuyez à nouveau deux fois sur l’image pour réinitialiser l’état du zoom. Faites glisser sur l’image pour effectuer un panoramique.</p> </td>
       </tr>
     </tbody>
     </table>

@@ -2,20 +2,20 @@
 title: Comment créer un modèle de formulaire adaptatif ?
 description: Créez des modèles de formulaire adaptatif en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: b4cc89f32dcdddf93f12f087a20395e055ea85bb
-workflow-type: ht
+source-git-commit: c101ed97388b06dc71edfc9e13fac8a3e889c249
+workflow-type: tm+mt
 source-wordcount: '2017'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
 # Création d’un modèle de formulaire adaptatif {#adaptive-form-templates}
 
-Lorsque vous concevez un formulaire, vous ajoutez des champs et des composants pour définir la structure, le contenu et les actions de formulaire dans l’éditeur. Vous ajoutez des champs et des composants dans le `guideRootPanel` du conteneur de formulaires. Avec l’éditeur de modèles, vous pouvez créer un modèle contenant la structure de base et le contenu initial que les auteurs peuvent utiliser pour créer des formulaires.
+Lorsque vous concevez un formulaire, vous ajoutez des champs et des composants pour définir la structure, le contenu et les actions de formulaire dans l’éditeur. Vous ajoutez des champs et des composants dans le `guideRootPanel` du conteneur de formulaires. Avec l’éditeur de modèles, vous pouvez créer un modèle qui contient la structure de base et le contenu initial que les auteurs peuvent utiliser pour créer des formulaires.
 
-Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de certaines zones de texte, de boutons de navigation, ainsi qu’un bouton permettant de soumettre un formulaire d’inscription. Vous pouvez créer un modèle avec les composants que les auteurs peuvent utiliser pour créer un formulaire qui soit cohérent avec d’autres formulaires d’inscription. Lorsque les auteurs utilisent le modèle pour créer un formulaire adaptatif, le nouveau formulaire hérite de la structure et des composants que vous avez spécifiés dans le modèle. L’éditeur de modèles permet d’effectuer les opérations suivantes :
+Par exemple, vous souhaitez que tous les auteurs de formulaire disposent de certaines zones de texte, de boutons de navigation, ainsi qu’un bouton permettant de soumettre un formulaire d’inscription. Vous pouvez créer un modèle avec les composants que les auteurs peuvent utiliser pour créer un formulaire compatible avec d’autres formulaires d’inscription. Lorsque les auteurs utilisent le modèle pour créer un formulaire adaptatif, le nouveau formulaire hérite de la structure et des composants que vous avez spécifiés dans le modèle. L’éditeur de modèles vous permet d’effectuer les opérations suivantes :
 
-* Ajout de composants d’en-tête et de pied de page d’un formulaire dans le calque de structure.
+* Ajoutez les composants d’en-tête et de pied de page d’un formulaire dans le calque de structure.
 * Fournissez le contenu initial pour le formulaire.
 * Spécifiez un thème, des actions Envoyer.
 
@@ -47,9 +47,8 @@ Lorsque vous ouvrez un modèle à des fins d’édition, vous pouvez voir les co
 Contient les options suivantes :
 
    * **Activer/désactiver le panneau latéral** : affiche ou masque la barre latérale.
-   * **Informations sur la page** : permet de spécifier des informations telles que l’heure de publication/dépublication, les vignettes, les bibliothèques côté client, la stratégie de page et la bibliothèque côté client de conceptions de pages.
-
-   <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
+   * **Informations sur la page** : permet de spécifier des informations telles que l’heure de publication/dépublication, les vignettes, les bibliothèques côté client, la politique de page et la bibliothèque côté client de conceptions de pages.
+      <!-- * **Emulator**: Lets you simulate and customize the look for different devices.-->
    * **Sélecteur de mode :** vous permet de changer de mode. Vous pouvez choisir le mode **[!UICONTROL Structure]**, **[!UICONTROL Contenu initial]**, ou **[!UICONTROL Contrôle de mise en page]**. Le mode Structure vous permet d’ajouter et de personnaliser l’en-tête et le pied de page. Le Mode Contenu initial vous permet de personnaliser le contenu du formulaire.
    * **Aperçu** : permet de prévisualiser le modèle avant de le publier. Vous pouvez utiliser le sélecteur de calques et l’aperçu pour activer/désactiver les modes de modification et d’aperçu.
 * **Barre latérale** : fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
@@ -65,11 +64,11 @@ Un modèle de formulaire adaptatif est créé à l’aide de deux calques :
 * Structure
 * Contenu initial
 
-Le sélecteur de calque est disponible en regard de l’option Aperçu dans le coin supérieur droit de l’écran.
+Le sélecteur de calques est disponible en regard de l’option Aperçu dans le coin supérieur droit de l’écran.
 
 ### Structure {#structure}
 
-Lorsque vous sélectionnez le calque de structure dans l’éditeur de modèles, vous pouvez voir les conteneurs de dispositions au-dessus et au-dessous du conteneur de formulaires adaptatifs. Les auteurs peuvent utiliser ces conteneurs de dispositions pour l’en-tête et le pied de page. Vous pouvez ajouter, modifier ou personnaliser l’en-tête et le pied de page. Faites glisser et déposez le composant d’en-tête de formulaire adaptatif dans le conteneur de dispositions au-dessus du conteneur de formulaires adaptatifs pour personnaliser l’en-tête de modèle. Faites glisser et déposez le composant de pied de page de formulaire adaptatif dans le conteneur de dispositions au-dessous du conteneur de formulaires adaptatifs pour personnaliser le pied de page de modèle.
+Lorsque vous sélectionnez le calque de structure dans l’éditeur de modèles, vous pouvez voir les conteneurs de dispositions au-dessus et au-dessous du conteneur de formulaires adaptatifs. Les auteurs peuvent utiliser ces conteneurs de mise en page pour l’en-tête et le pied de page. Vous pouvez ajouter, modifier ou personnaliser l’en-tête et le pied de page. Faites glisser et déposez le composant d’en-tête de formulaire adaptatif dans le conteneur de dispositions au-dessus du conteneur de formulaires adaptatifs pour personnaliser l’en-tête de modèle. Faites glisser et déposez le composant Pied de page de formulaire adaptatif dans le conteneur de mises en page sous le conteneur de formulaires adaptatifs pour personnaliser le pied de page du modèle.
 
 ![Conteneur de dispositions dans le calque de structure](assets/header-layer-selector.png)
 
@@ -77,7 +76,7 @@ Conteneurs de dispositions dans le calque de structure
 
 **A.** Conteneur de dispositions pour le composant En-tête **B.** Conteneur de dispositions pour le composant Pied de page
 
-Faites glisser et déposez le composant d’en-tête de formulaire adaptatif dans le conteneur de dispositions au-dessus du conteneur de formulaires adaptatifs. Une fois que vous avez ajouté le composant, vous pouvez spécifier les propriétés qui vous permettent d’ajouter un logo et d’indiquer un titre.
+Faites glisser et déposez le composant d’en-tête de formulaire adaptatif dans le conteneur de dispositions au-dessus du conteneur de formulaires adaptatifs. Après avoir ajouté le composant, vous pouvez spécifier ses propriétés qui vous permettent d’ajouter un logo et de fournir son titre.
 
 De même, lorsque vous faites glisser et déposez le composant de pied de page dans le conteneur de dispositions au-dessous du conteneur de formulaires adaptatifs, vous pouvez fournir les informations de copyright et les détails de l’entreprise.
 
@@ -87,13 +86,13 @@ En-tête et pied de page ajoutés dans le calque de structure
 
 #### Verrouillage/déverrouillage des composants dans le calque de structure {#locking-unlocking-components-in-the-structure-layer}
 
-Lorsque vous modifiez le modèle avec le calque de structure sélectionné, vous pouvez déverrouiller l’en-tête et le pied de page du modèle. Si un composant est déverrouillé dans le modèle, les auteurs du formulaire peuvent modifier le composant dans le formulaire adaptatif qui utilise le modèle. Le verrouillage d’un composant empêche les auteurs du formulaire de le modifier dans le formulaire adaptatif. L’option de verrouillage est disponible dans la barre d’outils des composants.
+Lorsque vous modifiez le modèle avec le calque de structure sélectionné, vous pouvez déverrouiller l’en-tête et le pied de page du modèle. Si un composant est déverrouillé dans le modèle, les auteurs du formulaire peuvent modifier le composant dans le formulaire adaptatif qui utilise le modèle. Le verrouillage d’un composant empêche les auteurs du formulaire de le modifier dans le formulaire adaptatif. L’option Verrouiller est disponible dans la barre d’outils du composant.
 
-Par exemple, vous pouvez ajouter le composant d’en-tête dans le modèle. Lorsque vous sélectionnez le composant, vous pouvez voir une option de verrouillage dans la barre d’outils de composant. En règle générale, l’en-tête comprend le nom et le logo de la société, et vous ne souhaitez pas que les auteurs du formulaire modifient ces informations dans un modèle. Dans un formulaire adaptatif créé à l’aide du modèle avec le composant d’en-tête verrouillé, les auteurs du formulaire ne peuvent pas changer le logo ni le nom de la société.
+Par exemple, vous ajoutez le composant d’en-tête dans le modèle. Lorsque vous sélectionnez le composant, vous pouvez voir une option de verrouillage dans la barre d’outils du composant. En règle générale, l’en-tête comprend le nom et le logo de la société, et vous ne souhaitez pas que les auteurs de formulaires modifient le logo et l’en-tête d’un modèle. Dans un formulaire adaptatif créé à l’aide du modèle avec le composant d’en-tête verrouillé, les auteurs du formulaire ne peuvent pas changer le logo ni le nom de la société.
 
 >[!NOTE]
 >
->Le verrouillage ou déverrouillage de l’image ou du logo dans le composant d’en-tête, de manière individuelle, n’est pas recommandé. Vous pouvez déverrouiller le composant d’en-tête.
+>Il n’est pas recommandé de verrouiller ou de déverrouiller une image ou un logo dans le composant d’en-tête, individuellement. Vous pouvez déverrouiller le composant d’en-tête.
 
 ### Contenu initial {#initial-content}
 
@@ -102,24 +101,24 @@ Lorsque l’option Contenu initial est sélectionnée, le conteneur de formulair
 Les auteurs de formulaires l’utilisent comme base pour créer un formulaire. La structure de flux de contenu est spécifiée dans le calque Contenu initial du modèle. Pour passer à la modification du contenu initial du modèle de formulaire, avant Aperçu dans la barre d’outils de la page, appuyez sur ![canvas-drop-down](assets/canvas-drop-down.png) **>** **[!UICONTROL Contenu initial]**.
 
 
-Dans le calque Contenu initial, vous créez le modèle de formulaire adaptatif que les auteurs utilisent en tant que base. La création d’un modèle est semblable à la création d’un formulaire : vous utilisez les options disponibles dans la barre latérale. Celle-ci fournit les navigateurs de contenu, de propriétés, de ressources et de composants.
+Dans le calque Contenu initial, vous créez le modèle de formulaire adaptatif que les auteurs utilisent en tant que base. La création d’un modèle est similaire à la création d’un formulaire. Vous utilisez les options disponibles dans la barre latérale. La barre latérale fournit des navigateurs de contenu, de propriétés, de ressources et de composants.
 
 <!-- See [Sidebar](introduction-forms-authoring.md#sidebar). -->
 
 >[!NOTE]
 >
->Lorsque vous sélectionnez le stockage de contenu ou StorePDF en tant qu’action Envoyer, vous obtenez une option permettant de spécifier le chemin de stockage. Si vous spécifiez le chemin dans le modèle, tous les formulaires créés à partir de ce modèle ont le même chemin d’accès. Vous pouvez spécifier le chemin de stockage correct. Vous pouvez également veiller à ce que les auteurs de formulaires le mettent à jour pour empêcher que les données de chaque formulaire soient stockées au même emplacement.
+>Lorsque vous sélectionnez le stockage de contenu ou StorePDF en tant qu’action Envoyer, vous obtenez une option permettant de spécifier le chemin de stockage. Si vous spécifiez le chemin dans le modèle, tous les formulaires créés à partir de celui-ci ont le même chemin d’accès. Vous pouvez spécifier le chemin de stockage approprié ou vous assurer que les auteurs de formulaires le mettent à jour pour empêcher que les données de chaque formulaire soient stockées au même emplacement.
 
 #### Création d’un modèle de formulaire adaptatif avec des onglets et des panneaux {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
-Par exemple, si vous souhaitez créer un modèle avec les onglets suivants :
+Par exemple, vous souhaitez créer un modèle avec les onglets suivants :
 
 * Informations générales
-* Informations professionnelle
+* Informations professionnelles
 
 Vous avez ajouté un logo, fourni un titre et ajouté un pied de page dans le calque de structure. Verrouillez l’en-tête et le pied de page pour empêcher les auteurs de formulaires de les modifier lorsqu’ils utilisent le modèle pour créer des formulaires.
 
-Modifiez le type Structure en type Contenu initial pour le calque et commencez à ajouter du contenu au formulaire. Pour créer une structure à onglets, ajoutez un panneau enfant dans le guideRootPanel du conteneur de formulaires adaptatifs. Pour ajouter un panneau :
+Remplacez le calque Structure par Contenu initial, puis commencez à ajouter du contenu au formulaire. Pour créer une structure à onglets, ajoutez un panneau enfant dans le guideRootPanel du conteneur de formulaires adaptatifs. Pour ajouter un panneau :
 
 * Vous pouvez ajouter un panneau en appuyant sur le bouton **[!UICONTROL +]** lorsque vous sélectionnez l’option **[!UICONTROL Faire glisser les composants ici.]**
 
@@ -130,11 +129,11 @@ Pour créer les onglets Informations générales et Informations professionnelle
 
 #### Ajout de contenu dans les onglets {#adding-content-in-tabs}
 
-Une fois que vous avez ajouté les panneaux et que vous les avez structurés sous forme d’onglets, vous pouvez ajouter des champs dans les onglets. Lorsque vous sélectionnez un onglet dans l’éditeur, vous pouvez voir l’option **[!UICONTROL Faire glisser les composants]** ici. Vous pouvez faire glisser et déposer les composants tels que les zones de texte, les éléments de liste et les boutons. Vous pouvez faire glisser les composants depuis le navigateur de composants et les déposer dans la barre latérale.
+Une fois que vous avez ajouté les panneaux et que vous les avez structurés sous forme d’onglets, vous pouvez ajouter des champs dans les onglets. Lorsque vous sélectionnez un onglet dans l’éditeur, le **[!UICONTROL Faire glisser des composants ici]** . Vous pouvez faire glisser et déposer des composants tels que des zones de texte, des éléments de liste et des boutons. Vous pouvez faire glisser et déposer des composants à partir de l’explorateur de composants dans la barre latérale.
 
 Chaque composant possède des propriétés qui améliorent la capture et la manipulation des données. Par exemple, vous pouvez activer la propriété **[!UICONTROL Champ obligatoire]** d’un composant. Les auteurs peuvent définir un message que vos clients voient lorsqu’ils omettent de remplir un champ obligatoire. Spécifiez le message dans la propriété **[!UICONTROL Message de champ obligatoire]**.
 
-Dans l’exemple de modèle, les champs Nom, Numéro de téléphone et Date de naissance sont ajoutés dans l’onglet Informations générales. Dans l’onglet Informations professionnelles, les champs Employé actuellement, de type d’emploi et Formation ont été ajoutés.
+Dans l&#39;exemple de modèle, les champs Nom, Numéro de téléphone et Date de naissance sont ajoutés dans l&#39;onglet Informations générales . Dans l&#39;onglet Informations professionnelles , les champs Actuellement employé, Type d&#39;emploi, Qualification des études sont ajoutés.
 
 Après avoir ajouté des champs, vous pouvez ajouter des boutons tels qu’Envoyer et Réinitialiser.
 

@@ -16,7 +16,7 @@ ht-degree: 100%
 Vous pouvez annuler la publication de contenu à partir d’AEM Screens. La fonction Gérer les publications vous permet de diffuser des mises à jour de contenu de l’auteur à publier sur le lecteur. Vous pouvez publier ou annuler la publication de contenu pour l’ensemble du projet AEM Screens ou uniquement pour un de vos canaux, un de vos emplacements, un de vos lecteurs ou une de vos applications.
 
 >[!IMPORTANT]
->Une fois que vous avez créé votre ou vos canaux dans votre projet, il est obligatoire de les publier afin d’afficher le ou les canaux en mode Liste d’inventaire dans le fournisseur de services AEM Screens.
+>Une fois que vous avez créé votre ou vos canaux dans votre projet, il est obligatoire de les publier afin d’afficher le ou les canaux dans la vue Liste d’inventaire dans le fournisseur de services AEM Screens.
 
 ## Objectif {#objective}
 

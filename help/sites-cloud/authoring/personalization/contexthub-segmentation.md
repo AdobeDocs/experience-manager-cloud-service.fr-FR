@@ -2,10 +2,10 @@
 title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: 43f0c3611f63b3e1ea9085d828d5daab7b361a8e
-workflow-type: ht
+source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+workflow-type: tm+mt
 source-wordcount: '1697'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -102,22 +102,22 @@ Pour définir votre nouveau segment, procédez comme suit :
    * Valeur maximale : `1000000`
 
 1. Dans la console des segments, modifiez le segment que vous venez de créer pour l’ouvrir dans l’éditeur de segments.
-1. Faites glisser une comparaison ou une référence vers l’éditeur de segment dans lequel elle apparaîtra dans le conteneur ET par défaut.
+1. Faites glisser une comparaison ou une référence vers l’éditeur de segments qui apparaîtra dans le conteneur ET par défaut.
 1. Double-cliquez ou appuyez sur l’option de configuration de la nouvelle référence ou du nouveau segment pour modifier les paramètres. Dans cet exemple, des personnes situées à Bâle font l’objet d’un test.
 
    ![Test de personnes à Bâle](../assets/contexthub-comparing-property-value.png)
 
-   Si possible, veillez à toujours définir un **type de données** pour vous assurer que vos comparaisons sont évaluées correctement. Voir la rubrique [Comparaisons](#comparisons) pour plus d’informations.
+   Si possible, veillez à toujours définir un **type de données** pour vous assurer que vos comparaisons sont évaluées correctement. Voir [Comparaisons](#comparisons) pour plus d’informations.
 
 1. Cliquez sur **Terminé** pour enregistrer votre définition :
-1. Ajoutez d’autres composants, en fonction de vos besoins. Vous pouvez formuler des expressions booléennes à l’aide des composants de conteneur pour des comparaisons ET et OU (voir la rubrique [Utilisation des conteneurs ET et OU](#using-and-and-or-containers) ci-dessous). Avec l’éditeur de segment, vous pouvez supprimer les composants qui ne sont plus utiles ou les faire glisser vers un nouvel emplacement dans l’instruction.
+1. Ajoutez d’autres composants, en fonction de vos besoins. Vous pouvez formuler des expressions booléennes à l’aide des composants de conteneur pour des comparaisons ET et OU (voir la rubrique [Utilisation des conteneurs ET et OU](#using-and-and-or-containers) ci-dessous). Avec l’éditeur de segment, vous pouvez supprimer les composants qui ne sont plus nécessaires ou les faire glisser vers de nouveaux emplacements dans l’instruction.
 
 ### Utilisation des conteneurs ET et OU {#using-and-and-or-containers}
 
-Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Cette tâche sera plus facile si vous tenez compte de certains aspects élémentaires :
+Avec les composants de conteneur ET et OU, vous pouvez créer des segments complexes dans AEM. Pour ce faire, il est utile de tenir compte de quelques points de base :
 
 * Le niveau supérieur de la définition est toujours le conteneur ET qui est initialement créé ; cela ne peut pas être changé, mais n’a pas d’effet sur le reste de votre définition de segment.
-* Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme les crochets de votre expression booléenne.
+* Assurez-vous que l’imbrication de votre conteneur a un sens. Les conteneurs peuvent être considérés comme des crochets de votre expression booléenne.
 
 L’exemple suivant permet de sélectionner les visiteurs qui sont considérés comme appartenant à notre groupe cible Suisse :
 
@@ -137,7 +137,7 @@ Vous pouvez imbriquer plusieurs opérateurs ET et OU selon les besoins.
 
 ### Utilisation de références de script {#using-script-references}
 
-À l’aide du composant Référence de script, l’évaluation d’une propriété de segment peut être déléguée à un script externe. Une fois le script correctement configuré, il peut être utilisé comme n’importe quel autre composant d’une condition de segment.
+À l’aide du composant Référence de script, l’évaluation d’une propriété de segment peut être déléguée à un script externe. Une fois le script correctement configuré, il peut être utilisé comme tout autre composant d’une condition de segment.
 
 #### Définition d’une référence de script {#defining-a-script-to-reference}
 
@@ -184,8 +184,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 #### Référencement d’un script {#referencing-a-script}
 
 1. Créez un segment ContextHub.
-1. Ajoutez le composant **Référence de script** à l’emplacement souhaité du segment.
-1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. S’il est [correctement configuré](#defining-a-script-to-reference), le script doit être disponible dans le menu déroulant **Nom du script**.
+1. Ajouter **Référence de script** à l’emplacement souhaité du segment.
+1. Ouvrez la boîte de dialogue de modification du composant **Référence de script**. If [correctement configuré](#defining-a-script-to-reference), le script doit être disponible dans la variable **Nom du script** menu déroulant.
 
 ## Organisation des segments {#organizing-segments}
 
@@ -263,7 +263,7 @@ Une fois le segment défini, les résultats potentiels peuvent être testés ave
 1. Affichez l’aperçu d’une page.
 1. Cliquez sur l’icône ContextHub pour afficher la barre d’outils ContextHub.
 1. Sélectionnez une personne qui correspond au segment que vous avez créé.
-1. ContextHub permet de résoudre les segments applicables pour la personne sélectionnée.
+1. ContextHub résout les segments applicables pour la personne sélectionnée.
 
 Par exemple, notre définition de segment simple identifiant les utilisateurs à Bâle repose sur l’emplacement de l’utilisateur. Le chargement d’une personne spécifique correspondant à ces critères indique si ce segment a été résolu avec succès :
 
@@ -277,11 +277,11 @@ Ou s’il n’est pas résolu :
 >
 >Toutes les caractéristiques sont résolues immédiatement, bien que la plupart ne soient modifiées qu’au rechargement de la page.
 
-Ces tests peuvent également être effectués sur les pages de contenu et en combinaison avec le contenu ciblé et les **Activités** et **Expériences** associées.
+De tels tests peuvent également être effectués sur les pages de contenu et en combinaison avec du contenu ciblé et des **Activités** et **Expériences**.
 
-Si vous avez configuré une activité et une expérience, vous pouvez tester facilement votre segment avec l’activité. Pour plus d’informations sur la configuration d’une activité, voir la [documentation relative à la création de contenu ciblé](targeted-content.md).
+Si vous avez configuré une activité et une expérience, vous pouvez tester facilement votre segment avec l’activité. Pour plus d’informations sur la configuration d’une activité, voir [documentation sur la création de contenu ciblé](targeted-content.md).
 
-1. En mode de modification d’une page sur laquelle vous avez configuré du contenu ciblé, vous pouvez constater que le contenu est ciblé via une icône de flèche sur le contenu.
+1. En mode d’édition d’une page sur laquelle vous avez configuré du contenu ciblé, vous pouvez constater que le contenu est ciblé par le biais d’une icône de flèche sur le contenu.
 1. Basculez vers le mode Aperçu et, avec ContextHub, passez à une personne qui ne correspond pas à la segmentation configurée pour l’expérience.
 1. Passez à une personne qui correspond à la segmentation configurée pour l’expérience et constatez que l’expérience change en conséquence.
 

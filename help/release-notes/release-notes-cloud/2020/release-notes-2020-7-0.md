@@ -2,7 +2,7 @@
 title: Notes de mise à jour de la version 2020.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.7.0. »
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
 workflow-type: tm+mt
 source-wordcount: '1038'
 ht-degree: 99%
@@ -47,7 +47,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 * L’assistant de déplacement de ressources ne se charge pas comme prévu pour les ressources incluses dans les collections. (CQ-4296756)
 * Les valeurs de `dam:size` et `dam:sha1` sont exclues de l’écriture différée XMP. (CQ-4237355)
-* Lors de l’annulation de la publication de ressources en bloc, [!DNL Brand Portal] génère une erreur suggérant que l’URI de requête est trop longue. (CQ-4299474)
+* Lors de la dépublication de ressources en bloc, [!DNL Brand Portal] génère une erreur suggérant que l’URI de requête est trop longue. (CQ-4299474)
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 

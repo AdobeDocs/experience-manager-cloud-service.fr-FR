@@ -6,7 +6,7 @@ exl-id: 37eae99d-542d-4580-b93f-f454008880b1
 source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
 workflow-type: tm+mt
 source-wordcount: '1563'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
@@ -18,7 +18,7 @@ Dans AEM as a Cloud Service, tous les aspects opérationnels concernant l’inde
 
 Les requêtes sont un moyen d’accéder au contenu, mais elles ne sont pas la seule possibilité. Dans de nombreuses situations, l’accès au contenu du référentiel est plus efficace par d’autres moyens. Vous devez déterminer si les requêtes sont la meilleure manière, et la plus efficace, d’accéder au contenu pour votre cas d’utilisation.
 
-### Conception du référentiel et de la taxonomie {#repository-and-taxonomy-design}
+### Référentiel et conception de taxonomie {#repository-and-taxonomy-design}
 
 Lors de la conception de la taxonomie d’un référentiel, plusieurs facteurs doivent être pris en compte. Il s’agit entre autres des contrôles d’accès, de la localisation et de l’héritage des propriétés de composant et de page, et bien plus encore.
 
@@ -26,19 +26,19 @@ Lors de la conception d’une taxonomie qui tient compte de ces facteurs, il est
 
 De plus, lors de la conception d’une taxonomie, il faut considérer si l’ordre importe. Dans les cas où un ordre explicite n’est pas nécessaire et qu’un grand nombre de nœuds frères est attendu, il est préférable d’utiliser un type de nœud non ordonné tel que `sling:Folder` ou `oak:Unstructured`. Dans les cas où un ordre est obligatoire, `nt:unstructured` et `sling:OrderedFolder` serait plus approprié.
 
-### Requêtes au sein de composants {#queries-in-components}
+### Requêtes dans les composants {#queries-in-components}
 
-Comme les requêtes peuvent être l’une des opérations les plus intensives sur un système AEM, il est conseillé de les exclure de vos composants. L’exécution de plusieurs requêtes chaque fois qu’une page est rendue peut souvent dégrader les performances du système. Deux stratégies sont conseillées pour éviter l’exécution de requêtes lors du rendu de composants : le **[parcours transversal des nœuds](#traversing-nodes)** et la **[pré-récupération des résultats.](#prefetching-results)**
+Comme les requêtes peuvent être l’une des opérations les plus taxatrices effectuées sur un système AEM, il est préférable de les éviter dans vos composants. L’exécution de plusieurs requêtes à chaque rendu d’une page peut souvent dégrader les performances du système. Deux stratégies sont conseillées pour éviter l’exécution de requêtes lors du rendu de composants : le **[parcours transversal des nœuds](#traversing-nodes)** et la **[pré-récupération des résultats.](#prefetching-results)**
 
-### Parcours transversal des nœuds {#traversing-nodes}
+### Parcours des noeuds {#traversing-nodes}
 
-Si le référentiel est conçu de manière à permettre une connaissance préalable de l’emplacement des données requises, le code qui récupère ces données à partir des chemins nécessaires peut être déployé sans avoir à exécuter des requêtes pour les localiser.
+Si le référentiel est conçu de manière à permettre une connaissance préalable de l’emplacement des données requises, le code qui récupère ces données des chemins nécessaires peut être déployé sans avoir à exécuter de requêtes pour les trouver.
 
-Le rendu de contenu correspondant à une certaine catégorie en est un exemple. L’une des approches consiste à organiser le contenu avec une propriété de catégorie qui peut être interrogée pour remplir un composant présentant des éléments dans une catégorie.
+Par exemple, le rendu du contenu correspondant à une certaine catégorie. Une méthode consiste à organiser le contenu avec une propriété de catégorie qui peut être interrogée pour renseigner un composant qui affiche des éléments dans une catégorie.
 
-Une meilleure approche consiste à structurer ce contenu dans une taxonomie par catégorie afin qu’il puisse être récupéré manuellement.
+Une meilleure approche serait de structurer ce contenu dans une taxonomie par catégorie afin qu’il puisse être récupéré manuellement.
 
-Par exemple, si le contenu est stocké dans une taxonomie similaire à :
+Par exemple, si le contenu est stocké dans une taxonomie similaire à :
 
 ```xml
 /content/myUnstructuredContent/parentCategory/childCategory/contentPiece
@@ -46,15 +46,15 @@ Par exemple, si le contenu est stocké dans une taxonomie similaire à :
 
 Le nœud `/content/myUnstructuredContent/parentCategory/childCategory` peut simplement être récupéré ; ses tâches enfants peuvent être analysées et utilisées pour le rendu du composant.
 
-En outre, lorsque vous traitez un jeu de résultats de petite taille ou homogène, il est parfois plus rapide de parcourir transversalement le référentiel et de rassembler les nœuds nécessaires plutôt que de créer une requête pour renvoyer le même jeu de résultats. En règle générale, les requêtes doivent être évitées dans la mesure du possible.
+En outre, lorsque vous traitez un jeu de résultats petit ou homogène, il peut être plus rapide de parcourir le référentiel et de rassembler les noeuds requis, plutôt que de concevoir une requête pour renvoyer le même jeu de résultats. En règle générale, les requêtes doivent être évitées lorsque cela est possible.
 
-### Pré-extraction des résultats {#prefetching-results}
+### Prérécupération des résultats {#prefetching-results}
 
 Parfois, le contenu ou les exigences liées à un composant ne permettent pas d’utiliser le parcours transversal des nœuds comme méthode de récupération des données requises. Dans ce cas, les requêtes requises doivent être exécutées avant le rendu du composant afin que des performances optimales soient garanties.
 
 Si les résultats requis pour le composant peuvent être calculés au moment de sa création et qu’aucun changement de contenu n’est attendu, la requête peut être exécutée après que des modifications soient effectuées.
 
-Si les données ou le contenu changent régulièrement, la requête peut être exécutée selon un calendrier ou via un écouteur pour les mises à jour des données sous-jacentes. Ensuite, les résultats peuvent être enregistrés dans un emplacement partagé au sein du référentiel. Tous les composants qui ont besoin de ces données peuvent ensuite extraire les valeurs de ce nœud unique sans avoir à exécuter une requête lors de l’exécution.
+Si les données ou le contenu changent régulièrement, la requête peut être exécutée selon un planning ou via un écouteur pour la mise à jour des données sous-jacentes. Ensuite, les résultats peuvent être écrits à un emplacement partagé dans le référentiel. Tous les composants qui ont besoin de ces données peuvent ensuite extraire les valeurs de ce nœud unique sans avoir à exécuter une requête lors de l’exécution.
 
 Une stratégie similaire peut être utilisée pour conserver le résultat dans un cache en mémoire, qui est renseigné au démarrage et mis à jour chaque fois que des modifications sont effectuées (à l’aide d’un JCR `ObservationListener`ou d’un Sling`ResourceChangeListener`).
 

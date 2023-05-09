@@ -1,14 +1,14 @@
 ---
 title: Vidéo 360/VR
-description: Découvrez comment utiliser les vidéos à 360° et de réalité virtuelle (VR) dans Dynamic Media.
+description: Découvrez comment utiliser les vidéos 360 et de réalité virtuelle (VR) dans Dynamic Media.
 contentOwner: Rick Brough
 feature: 360 VR Video
 role: User
 exl-id: ffd092d3-2188-47b0-a475-8bfa660c03c1
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '989'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Sélectionnez [Station spatiale 360](https://s7d1.scene7.com/s7viewers/html5/Vid
 
 ## Vidéo 360/VR et Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-Vous pouvez utiliser Adobe Premier Pro pour visualiser et modifier des séquences vidéo 360/VR. Par exemple, vous pouvez placer des logos et du texte correctement dans une scène et appliquer des effets et des transitions conçus spécialement pour les médias équirectangulaires.
+Vous pouvez utiliser Adobe Premier Pro pour visualiser et modifier des séquences vidéo 360/VR. Par exemple, vous pouvez placer correctement des logos et du texte dans une scène et appliquer des effets et des transitions conçus spécifiquement pour les médias équirectangulaires.
 
 Voir [Modification de la vidéo 360/VR](https://helpx.adobe.com/fr/premiere-pro/how-to/edit-360-vr-video.html).
 

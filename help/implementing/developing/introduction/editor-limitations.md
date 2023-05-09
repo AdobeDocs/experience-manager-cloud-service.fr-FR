@@ -1,17 +1,17 @@
 ---
 title: Limites de l’éditeur
-description: L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
+description: L’éditeur de l’interface utilisateur tactile utilise des superpositions pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '317'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
 # Limites de l’éditeur {#editor-limitations}
 
-L’éditeur de l’interface utilisateur tactile emploie des couches pour interagir avec le contenu confiné dans un iFrame. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions lorsque cela s’avère possible.
+L’éditeur de l’interface utilisateur tactile utilise des superpositions pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs. Cette page résume ces limites et fournit des solutions ou des solutions lorsque cela s’avère possible.
 
 ## Limites fonctionnelles {#functional-limitations}
 
@@ -27,15 +27,15 @@ Lors de la [modification d’une page](/help/sites-cloud/authoring/fundamentals/
 
 Les pages ne peuvent pas être nommées `structure`. Les pages nommées `structure` ne seront pas modifiables dans l’éditeur de page.
 
-## Limitations CSS {#css-limitations}
+## Limitations de CSS {#css-limitations}
 
 Un développeur peut être confronté aux limites suivantes concernant les interactions de l’éditeur avec CSS.
 
 ### Éléments à positionnement absolu {#absolutely-positioned-elements}
 
-Les éléments à positionnement absolu peuvent occasionner des problèmes au niveau de la position de leur incrustation.
+Les éléments positionnés de manière absolue peuvent entraîner des problèmes de position de leur superposition.
 
-* Si cela se produit, assurez-vous que les dimensions de l’élément à positionnement absolu sont correctes, car l’éditeur créera une incrustation ayant exactement les mêmes dimensions.
+* Si cela se produit, assurez-vous que les dimensions de l’élément à positionnement absolu sont correctes, car l’éditeur crée une superposition avec les mêmes dimensions.
 
 ### Unités vh {#vh-units}
 

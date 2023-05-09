@@ -1,21 +1,21 @@
 ---
-title: Module de structure du référentiel de projet AEM
-description: Les projets Maven Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-module de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-modules de code du projet sont déployés.
+title: Package de structure du référentiel de projet AEM
+description: Les projets Maven Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: 430179bf13c1fff077c515eed0676430e9e7f341
-workflow-type: ht
+source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 100%
 
 ---
 
-# Module de structure du référentiel de projet AEM
+# Package de structure du référentiel de projet AEM
 
-Les projets Maven pour Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés. Cela permet de s’assurer que l’installation des packs dans Experience Manager as a Cloud Service est automatiquement commandée par les dépendances des ressources JCR. Les dépendances manquantes peuvent conduire à des scénarios où des sous-structures seraient installées avant leurs structures parents et seraient donc supprimées de manière inattendue, ce qui interromprait le déploiement.
+Les projets Maven pour Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés. Cela permet de s’assurer que l’installation des packages dans Experience Manager as a Cloud Service est automatiquement commandée par les dépendances des ressources JCR. Les dépendances manquantes peuvent conduire à des scénarios où des sous-structures seraient installées avant leurs structures parents et seraient donc supprimées de manière inattendue, ce qui interromprait le déploiement.
 
 Si votre package de code se déploie dans un emplacement **non couvert** par le package de code, toutes les ressources ancêtres (ressources JCR plus proches de la racine JCR) doivent être recensées dans le package de structure du référentiel pour établir ces dépendances.
 
-![Module de structure du référentiel](./assets/repository-structure-packages.png)
+![Package de structure du référentiel](./assets/repository-structure-packages.png)
 
 Le package de structure de référentiel définit l’état commun attendu `/apps` que le validateur de package utilise pour déterminer les zones « à l’abri des conflits potentiels », car il s’agit de racines standard.
 

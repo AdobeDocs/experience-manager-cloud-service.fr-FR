@@ -5,13 +5,13 @@ exl-id: 8013ac2c-d1a7-4940-bb65-15e3ed7652d6
 source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
 # Prise en main des SPA dans AEM avec Angular {#getting-started-with-spas-in-aem-using-angular}
 
-Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de structures SPA.
 
 La fonction de création d’application sur une seule page constitue une solution complète pour la prise en charge de ce type d’application dans AEM. Cet article présente une SPA simplifiée dans le framework Angular, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA.
 
@@ -25,7 +25,7 @@ Cet article résume le fonctionnement de base d’une SPA simple et ce que vous 
 
 Pour plus de détails sur le fonctionnement des SPA dans AEM, consultez les documents suivants :
 
-* [Introduction et présentation des applications sur une seule page (SPA)](introduction.md)
+* [Introduction et présentation des applications monopage (SPA)](introduction.md)
 * [Présentation de l’éditeur de SPA](editor-overview.md)
 * [Plan directeur d’applications sur une seule page (SPA)](blueprint.md)
 
@@ -43,7 +43,7 @@ En plus de la dépendance Angular attendue, l’exemple de SPA tire parti de bib
 
 ### Dépendances {#dependencies}
 
-Le fichier `package.json` définit les exigences du module SPA global. Les dépendances AEM minimales requises sont répertoriées ici.
+Le fichier `package.json` définit les exigences du package SPA global. Les dépendances AEM minimales requises sont répertoriées ici.
 
 ```
 "dependencies": {
@@ -59,7 +59,7 @@ Le fichier `package.json` définit les exigences du module SPA global. Les dépe
 
 Plus de détails à ce sujet sont disponibles [sur GitHub ici](https://github.com/wcm-io-frontend/aem-clientlib-generator).
 
-`aem-clientlib-generator` est configuré dans le fichier `clientlib.config.js`comme suit.
+`aem-clientlib-generator` est configuré dans le fichier `clientlib.config.js` comme suit.
 
 ```
 module.exports = {
@@ -90,11 +90,11 @@ module.exports = {
 
 ### Génération {#building}
 
-En réalité, la construction de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation, en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de construction est similaire à :
+En réalité, la construction de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation, en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de génération ressemblera à :
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
-Une fois généré, le module peut être chargé dans une instance AEM.
+Une fois généré, le package peut être chargé dans une instance AEM.
 
 ### Archétype de projet AEM {#aem-project-archetype}
 
@@ -102,7 +102,7 @@ Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://experie
 
 ## Structure d’application {#application-structure}
 
-Si vous ajoutez les dépendances et que vous construisez votre application comme décrit précédemment, vous disposez d’un module SPA opérationnel que vous pouvez charger dans votre instance AEM.
+Si vous ajoutez les dépendances et que vous construisez votre application comme décrit précédemment, vous disposez d’un package SPA opérationnel que vous pouvez charger dans votre instance AEM.
 
 La section suivante de ce document explique comment une SPA est structurée dans AEM et décrit les fichiers importants qui pilotent l’application et leur interfonctionnement.
 

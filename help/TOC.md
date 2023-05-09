@@ -77,7 +77,7 @@ ht-degree: 97%
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
-         + [Notes de mise à jour d’ 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
+         + [Notes de mise à jour de la version 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [Notes de mise à jour de la version 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [Notes de mise à jour de la version 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
       + 2022 {#2022}
@@ -179,7 +179,7 @@ ht-degree: 97%
       + [Créer la structure de contenu pour votre application](/help/trials/headless/content-structure.md)
       + [Créer du contenu découplé](/help/trials/headless/create-content.md)
       + [Extraire du contenu grâce à l’API GraphQL](/help/trials/headless/extract-content.md)
-      + [Récupération du contenu JSON avec JavaScript](/help/trials/headless/code-playground.md)
+      + [Récupérer du contenu JSON avec JavaScript](/help/trials/headless/code-playground.md)
 + Parcours de migration d’AEM as a Cloud Service {#migration-journey}
    + [Prise en main du déplacement d’AEM as a Cloud Service](/help/journey-migration/getting-started.md)
    + [Phase de préparation](/help/journey-migration/readiness.md)

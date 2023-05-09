@@ -4,10 +4,10 @@ description: Découvrez la diffusion de contenu HTTP/2.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '795'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -29,18 +29,18 @@ L’article du site web [What you must know about HTTP/2](https://www.engadget.c
 
 L’amélioration des performances varie considérablement en fonction de nombreux facteurs. Par exemple, le code de votre site web, la manière dont vous utilisez Dynamic Media, le périphérique, l’écran et l’emplacement du client.
 
-Les tests d’Adobe ont donné les résultats suivants :
+Les tests effectués par l’Adobe lui-même ont donné les résultats suivants :
 
-* Pour les images, le temps de réponse s’est amélioré de 7 % à 28 % selon l’appareil et le navigateur. Les gains de performance les plus notables ont été enregistrés sur les appareils iOS.
-* Pour les visionneuses, les performances en matière de temps de chargement ont augmenté de 15 %.
+* Pour les images, le temps de réponse s’est amélioré de 7 % à 28 % selon l’appareil et le navigateur. Les gains de performances les plus notables ont été enregistrés sur les appareils iOS.
+* Pour les visionneuses, les performances de chargement ont été améliorées à 15 %.
 
-La démonstration suivante illustre la différence entre le chargement HTTP/1 et le chargement HTTP/2 :
+La démonstration suivante illustre la différence entre le chargement HTTP/1 et HTTP/2 :
 
 [https://http2.akamai.com/demo](https://http2.akamai.com/demo)
 
 ## Puis-je passer à HTTP/2 ? {#am-i-eligible-to-switch-over-to-http}
 
-Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
+Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
 
 * Utilisez le protocole HTTPS sécurisé pour vos demandes de médias riches.
 * Utilisez le CDN (réseau de diffusion de contenu) fourni par Adobe dans le cadre de votre licence Dynamic Media Classic.
@@ -64,7 +64,7 @@ Pour utiliser HTTP/2, vous devez satisfaire aux exigences suivantes :
    Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**. Recherchez le champ intitulé **[!UICONTROL Nom du serveur publié]**.
 
    * Vérifiez que vous utilisez le protocole sécurisé HTTPS pour les demandes de médias riches.
-   * Vérifiez que vous utilisez le CDN par le biais d’Adobe et non le CDN géré avec une relation directe.
+   * Vérifiez que vous utilisez le réseau de diffusion de contenu par Adobe et que vous n’êtes pas géré avec une relation directe.
    * Assurez-vous d’utiliser un domaine dédié. C’est-à-dire `images.company.com` ou `mycompany.scene7.com`, et non d’un domaine Dynamic Media tel que `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
    Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à votre compte.
@@ -87,7 +87,7 @@ Les demandes sont traitées dans l’ordre dans lequel le service clientèle les
 
 ## Quels risques présente la transition vers HTTP/2 ? {#what-are-the-risks-with-moving-to-http}
 
-La transition vers HTTP/2 efface le cache au niveau du CDN, car elle implique la définition d’une nouvelle configuration de CDN.
+La transition vers HTTP/2 efface votre cache sur le réseau de diffusion de contenu, car elle implique de passer à une nouvelle configuration du réseau de diffusion de contenu.
 
 Le contenu non mis en cache atteint directement les serveurs Adobe d’origine jusqu’à ce que le cache soit reconstruit. Grâce à cette action, Adobe prévoit de gérer plusieurs transitions client à la fois. Cette méthode garantit des performances acceptables lors de l’extraction de requêtes à partir de l’origine.
 

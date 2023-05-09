@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Image Sets
 role: User
 exl-id: 2eb71f24-73d9-4b5c-8605-923a0e3d1505
-source-git-commit: 35caac30887f17077d82f3370f1948e33d7f1530
-workflow-type: ht
+source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+workflow-type: tm+mt
 source-wordcount: '2135'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -22,9 +22,9 @@ Les visionneuses d’images sont désignées par une bannière comportant le mot
 
 Dans une visionneuse d’images, vous pouvez également créer des échantillons en créant une visionneuse d’images et en ajoutant des miniatures.
 
-Cette application est utile lorsque vous souhaitez afficher un élément avec une couleur, un modèle ou une finition différente. Pour créer une visionneuse d’images avec des échantillons de couleur, vous avez besoin d’une image pour chaque couleur, modèle ou finition que vous souhaitez présenter aux utilisateurs. Vous avez également besoin d’un échantillon de couleurs, de modèle ou de finition pour chaque couleur, modèle ou finition.
+Cette application est utile lorsque vous souhaitez afficher un élément avec une couleur, un modèle ou une finition différente. Pour créer une visionneuse d’images avec des échantillons de couleur, vous avez besoin d’une image pour chaque couleur, modèle ou finition que vous souhaitez présenter aux utilisateurs. Vous avez également besoin d’un échantillon de couleur, de motif ou de finition pour chaque couleur, motif ou finition.
 
-Par exemple, supposons que vous souhaitez présenter les images d’une casquette avec différentes couleurs de visière : rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d’une prise de vue avec une visière rouge, une avec une verte et une avec une bleue. Vous avez également besoin d’un échantillon de couleurs rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs cliquent dans la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
+Supposons, par exemple, que vous souhaitiez présenter des images de calques avec des couleurs différentes ; les factures sont rouge, vert et bleu. Dans ce cas, vous avez besoin de trois prises de vue de la même casquette. Vous avez besoin d&#39;une prise avec un rouge, une avec un vert, et une avec une facture bleue. Vous avez également besoin d’un échantillon de couleur rouge, vert et bleu. Les échantillons de couleurs servent de miniatures sur lesquelles les utilisateurs cliquent dans la visionneuse des séries d’échantillons pour voir les visières rouge, verte ou bleue.
 
 >[!NOTE]
 >
@@ -108,7 +108,7 @@ Vous pouvez charger des images pour les visionneuses d’images comme vous le fe
 
 Avant de créer une visionneuse d’images, assurez-vous que la taille et le format des images sont corrects.
 
-Pour créer une visionneuse d’images à plusieurs vues, vous avez besoin d’images qui montrent un élément depuis différents points de vue ainsi que différents aspects du même élément. L’objectif est de mettre en avant les fonctionnalités importantes d’un élément afin que les utilisateurs aient un tableau complet de son apparence et son fonctionnement.
+Pour créer une visionneuse d’images à vues multiples, vous avez besoin d’images qui présentent un élément de différents points de vue ou qui présentent différents aspects d’un même élément. L’objectif est de mettre en avant les fonctionnalités importantes d’un élément afin que les utilisateurs aient un tableau complet de son apparence et son fonctionnement.
 
 Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’images, assurez-vous que la plus grande dimension des images comporte au moins 2000 pixels. Experience Manager Assets prend en charge de nombreux formats de fichier image, mais les formats sans perte TIFF, PNG et EPS sont recommandés.
 
@@ -116,10 +116,10 @@ Comme les utilisateurs peuvent zoomer sur les images dans les visionneuses d’i
 >
 >Si vous utilisez des miniatures pour indiquer des échantillons de produit, procédez comme suit :
 >
->Créez des vignettes ou des prises de vue différentes de la même image la présentant avec différentes couleurs, modèles et finitions. Vous avez également besoin de fichiers de miniatures qui correspondent aux différentes couleurs, modèles et finitions. Par exemple, pour présenter des miniatures avec une visionneuse d’images de la même veste en noir, marron et vert, vous avez besoin :
+>Créez des vignettes ou des prises de vue différentes de la même image la présentant avec différentes couleurs, modèles et finitions. Vous avez également besoin de fichiers miniatures qui correspondent aux différentes couleurs, modèles ou finitions. Par exemple, pour présenter des miniatures avec une visionneuse d’images présentant la même veste en noir, marron et vert, vous avez besoin des éléments suivants :
 >
->* D’une prise de vue en noir, en marron et en vert de la même veste.
->* Une miniature de couleur noire, marron et verte.
+>* Une photo noire, marron et verte de la même veste.
+>* Miniature en noir, marron et vert.
 
 
 ## Créez une visionneuse d’images {#creating-image-sets}
@@ -155,7 +155,7 @@ Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
 
    ![6_5_imagesets-createpulldown](assets/6_5_imagesets-createpulldown.png)
 
-1. Dans le champ **[!UICONTROL Titre]** de la page de l’éditeur de visionneuse d’images, tapez un nom pour la visionneuse d’images. Le nom apparaît dans la bannière située sur la visionneuse d’images. Vous pouvez aussi saisir une description.
+1. Dans le champ **[!UICONTROL Titre]** de la page de l’éditeur de visionneuse d’images, tapez un nom pour la visionneuse d’images. Le nom apparaît dans la bannière de la visionneuse d’images. Vous pouvez aussi saisir une description.
 
    ![6_5_imageset-creatingnewset](assets/6_5_imageset-creatingnewset.png)
 
@@ -166,7 +166,7 @@ Voir aussi [Limites de Dynamic Media](/help/assets/dynamic-media/limitations.md)
    * Au milieu de la page de l’éditeur de visionneuse d’images, sélectionnez **[!UICONTROL Appuyer pour ouvrir le sélecteur de ressources]**.
    Appuyez pour sélectionner les ressources que vous souhaitez inclure dans la visionneuse d’images. Les ressources sélectionnées sont cochées. Lorsque vous avez terminé, en haut à droite de la page, sélectionnez **[!UICONTROL Sélectionner]**.
 
-   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en sélectionnant **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis sélectionnez l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en sélectionnant l’icône Affichage et en sélectionnant **[!UICONTROL Mode Colonnes]**, **[!UICONTROL Mode Carte]** ou **[!UICONTROL Mode Liste]**.
+   Le sélecteur de ressources vous permet de rechercher des ressources en saisissant un mot-clé, puis en sélectionnant **[!UICONTROL Retour]**. Vous pouvez également appliquer des filtres pour affiner vos résultats de recherche. Vous pouvez filtrer par chemin, collection, type de fichier et balise. Sélectionnez le filtre, puis sélectionnez l’icône **[!UICONTROL Filtre]** de la barre d’outils. Modifiez l’affichage en sélectionnant l’icône Affichage et en sélectionnant **[!UICONTROL Vue Colonnes]**, **[!UICONTROL Vue Carte]** ou **[!UICONTROL Vue Liste]**.
 
    Voir [Utilisation de sélecteurs](/help/assets/dynamic-media/working-with-selectors.md).
 
@@ -226,8 +226,8 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
 * Ajouter des images à la visionneuse d’images.
 * Réorganiser des images dans la visionneuse d’images.
 * Supprimer des ressources de la visionneuse d’images.
-* Appliquer des paramètres prédéfinis de visionneuse.
-* Supprimer la visionneuse d’images.
+* Appliquez des paramètres prédéfinis de visionneuse.
+* Supprimez la visionneuse d’images.
 
 **Pour modifier les visionneuses d’images :**
 
@@ -237,9 +237,9 @@ Vous pouvez effectuer diverses tâches de modification sur les visionneuses d’
    * Pointez sur une ressource de visionneuse d’image, sélectionnez **[!UICONTROL Sélectionner]** (icône de coche), puis sélectionnez **[!UICONTROL Modifier]** dans la barre d’outils.
    * Appuyez sur une ressource de visionneuse d’images, puis sélectionnez **[!UICONTROL Modifier]** (icône de crayon) dans la barre d’outils.
 
-1. Pour modifier les images d’une visionneuse d’images, procédez comme suit :
+1. Pour modifier les images de la visionneuse d’images, effectuez l’une des opérations suivantes :
 
-   * Pour réorganiser les ressources, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône de réorganisation pour déplacer des éléments).
+   * Pour réorganiser les ressources, faites glisser une image vers un nouvel emplacement (sélectionnez l’icône de réorganisation pour déplacer les éléments).
    * Pour trier les éléments dans l’ordre ascendant ou descendant, cliquez sur l’en-tête de colonne.
    * Pour ajouter une ressource ou mettre à jour une ressource existante, cliquez sur **[!UICONTROL Ajouter une ressource]**. Accédez à une ressource, sélectionnez-la, puis sélectionnez **[!UICONTROL Sélectionner]** en haut à droite de la page.
 

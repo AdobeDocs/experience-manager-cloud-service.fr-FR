@@ -2,10 +2,10 @@
 title: Fondements techniques d’AEM
 description: Présentation des fondements techniques d’AEM, y compris la manière dont AEM est structuré et les technologies fondamentales comme JCR, Sling et OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '2191'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -52,7 +52,7 @@ AEM repose sur [Sling](https://sling.apache.org/site/index.html), un framework d
 
 ### Introduction à Sling {#introduction-to-sling}
 
-Avec Sling, le type de contenu à diffuser n’est pas la première considération en matière de traitement. Il s’agit plutôt de savoir si l’URL se résout en un objet de contenu pour lequel un script peut ensuite être identifié afin d’effectuer le rendu. Les auteurs de contenu web bénéficient ainsi d’un excellent support pour créer des pages facilement personnalisables selon leurs besoins.
+Avec Sling, le type de contenu à diffuser n’est pas la première considération en matière de traitement. Il s’agit plutôt de savoir si l’URL se résout en un objet de contenu pour lequel un script peut ensuite être identifié afin d’effectuer le rendu. Cela offre une excellente prise en charge aux auteurs de contenu web pour créer des pages facilement personnalisées selon leurs besoins.
 
 Les avantages liés à cette flexibilité sont évidents dans les applications comportant un vaste éventail d’éléments de contenu différents ou dans les cas où des pages facilement personnalisables sont nécessaires. C’est en particulier le cas pour la mise en œuvre d’un système de gestion de contenu web comme AEM.
 
@@ -68,7 +68,7 @@ Le schéma suivant décrit tous les paramètres de requête invisibles, mais pui
 
 ### Sling est centré sur le contenu {#sling-is-content-centric}
 
-Sling est *centré sur le contenu*. Cela signifie que le traitement est axé sur le contenu au moment où chaque requête (HTTP) est mappée avec le contenu sous la forme d’une ressource JCR (un nœud de référentiel) :
+Sling est *centré sur le contenu*. Cela signifie que le traitement est axé sur le contenu, car chaque requête (HTTP) est mappée sur le contenu sous la forme d’une ressource JCR (un nœud de référentiel) :
 
 * La première cible est la ressource (nœud JCR) qui contient le contenu
 * Ensuite, la représentation, ou script, est localisée à partir des propriétés de ressource en combinaison avec certaines parties de la requête (par exemple des sélecteurs et/ou l’extension)
@@ -86,15 +86,15 @@ En raison de son approche centrée sur le contenu, Sling implémente un serveur 
 
 Dans Sling, le traitement est piloté par l’URL de la requête de l’utilisateur. C’est l’URL qui définit le contenu à afficher par les scripts appropriés. Pour ce faire, les informations sont extraites de l’URL.
 
-Si nous analysons l’URL suivante :
+Si nous analysons l’URL suivante :
 
 ```text
 https://myhost/tools/spy.printable.a4.html/a/b?x=12
 ```
 
-Nous pouvons la décomposer comme suit :
+Nous pouvons le diviser en plusieurs parties composites :
 
-| protocol | host |  | content path | selector(s) | extension |  | suffix |  | param(s) |
+| protocol | host |  | content path | selector(s) | extension |  | suffixe |  | param(s) |
 |---|---|---|---|---|---|---|---|---|---|
 | `https://` | `myhost` | `/` | `tools/spy` | `.printable.a4.` | `html` | `/` | `a/b` | `?` | `x=12` |
 
@@ -121,7 +121,7 @@ Avec Sling, vous spécifiez le script à appliquer pour le rendu d’une entité
 
 #### Mappage des requêtes avec les ressources {#mapping-requests-to-resources}
 
-La requête est décomposée et les informations nécessaires sont extraites. Une recherche de la ressource demandée (nœud de contenu) est effectuée dans le référentiel :
+La requête est décomposée et les informations nécessaires sont extraites. Le référentiel est recherché pour la ressource demandée (noeud de contenu) :
 
 * D’abord, Sling vérifie si un nœud existe à l’emplacement spécifié dans la requête. Par exemple, `../content/corporate/jobs/developer.html`
 * Si aucun nœud n’est identifié, l’extension est supprimée et la recherche recommence. Par exemple, `../content/corporate/jobs/developer`
@@ -131,7 +131,7 @@ Sling permet également à des éléments autres que des nœuds JCR d’être de
 
 ### Localisation du script {#locating-the-script}
 
-Lorsque la ressource appropriée (nœud de contenu) est localisée, le **type de ressource sling** est extrait. C’est un chemin qui localise le script à utiliser pour le rendu du contenu.
+Lorsque la ressource appropriée (nœud de contenu) est localisée, le **type de ressource sling** est extrait. Il s’agit d’un chemin d’accès qui localise le script à utiliser pour le rendu du contenu.
 
 Le chemin spécifié par le `sling:resourceType` peut être :
 
@@ -175,7 +175,7 @@ En reprenant l’exemple ci-dessus, si le `sling:resourceType` est `hr/jobs` alo
    * l’emplacement `/apps/sling/servlet/errorhandler` pour les scripts personnalisés ;
    * ou l’emplacement du script standard `/libs/sling/servlet/errorhandler/404.jsp`.
 
-Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est spécifique, mieux c’est. En d’autres termes, plus le sélecteur correspond meilleur est le résultat, quelle que soit l’extension de requête ou la correspondance de nom de méthode.
+Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est précise, mieux elle est; en d’autres termes, plus le sélecteur correspond mieux, quelle que soit l’extension de requête ou la correspondance de nom de méthode.
 
 Par exemple, envisagez une demande d’accès à la ressource
 
@@ -230,9 +230,9 @@ Ceci est dû au fait que `/y` possède la propriété `sling:resourceSuperType` 
 
 #### Les scripts Sling ne peuvent pas être appelés directement {#sling-scripts-cannot-be-called-directly}
 
-Dans Sling, les scripts ne peuvent pas être appelés directement car cela est contraire au strict concept d’un serveur REST. Sinon, vous mélangeriez les ressources et les représentations.
+Dans Sling, les scripts ne peuvent pas être appelés directement, car cela violerait le concept strict d’un serveur REST ; vous mélangeriez des ressources et des représentations.
 
-Si vous appelez la représentation (le script) directement, vous masquez la ressource dans le script, donc le framework (Sling) ne peut plus la détecter. Ainsi, vous perdez certaines fonctionnalités :
+Si vous appelez la représentation (le script) directement, vous masquez la ressource dans le script, donc le framework (Sling) ne peut plus la détecter. Vous perdez ainsi certaines fonctionnalités :
 
 * Le traitement automatique des méthodes http autres que GET, y compris :
    * les méthodes POST, PUT, DELETE qui sont gérées avec une implémentation par défaut de Sling
@@ -258,9 +258,9 @@ OSGi désigne une architecture permettant de développer et de déployer des app
 * Services mis en œuvre dans le conteneur
 * Un contrat entre le conteneur et votre application
 
-Ces services et contrats forment une architecture permettant à des éléments distincts de se détecter dynamiquement pour la collaboration.
+Ces services et contrats fournissent une architecture qui permet à des éléments individuels de se découvrir dynamiquement les uns les autres à des fins de collaboration.
 
-Le framework OSGi offre ensuite le chargement/déchargement dynamique, la configuration et le contrôle de ces bundles, sans nécessiter de redémarrage.
+Une structure OSGi vous offre ensuite un chargement/déchargement dynamique, une configuration et un contrôle de ces lots, sans nécessiter de redémarrage.
 
 >[!NOTE]
 >
@@ -268,9 +268,9 @@ Le framework OSGi offre ensuite le chargement/déchargement dynamique, la config
 >
 >En particulier, la page Basic Education (formation de base) contient un ensemble de présentations et de tutoriels.
 
-Cette architecture vous permet d’étendre Sling en lui ajoutant des modules spécifiques aux applications. Sling, et donc AEM, utilise l’implémentation [Apache Felix](https://felix.apache.org/) d’OSGi. Ce sont deux ensembles de bundles OSGi exécutés dans un framework OSGi.
+Cette architecture vous permet d’étendre Sling en lui ajoutant des modules spécifiques aux applications. Sling, et donc AEM, utilise l’implémentation [Apache Felix](https://felix.apache.org/) d’OSGi. Il s’agit de deux groupes OSGi s’exécutant dans une structure OSGi.
 
-Cette extension permet d’appliquer les actions suivantes à l’un des modules dans votre installation :
+Vous pouvez ainsi effectuer les actions suivantes sur l’un des packages de votre installation :
 
 * Installer
 * Démarrer

@@ -8,8 +8,8 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 6f28a52b-52f8-4b30-95cd-0f9cb521de62
-source-git-commit: f5e465d90477f1b49e4ff1c5ca9dd47cc5d539bb
-workflow-type: ht
+source-git-commit: d054f960f13b7308dbf42556ef60a971e880197e
+workflow-type: tm+mt
 source-wordcount: '1004'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ Les logiciels suivants doivent être installés localement :
 
 ### Accès au module complémentaire CIF
 
-Il est possible de télécharger le module complémentaire CIF en tant que fichier zip à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Le fichier zip contient le module complémentaire CIF sous la forme d’une **archive de fonctionnalités Sling** ; il ne s’agit pas d’un module AEM. Notez que l’accès aux listes de SDK est limité aux environnements disposant d’une licence AEM as a Cloud Service.
+Il est possible de télécharger le module complémentaire CIF en tant que fichier zip à partir du [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Le fichier zip contient le package complémentaire CIF sous la forme d’une **archive de fonctionnalités Sling** ; il ne s’agit pas d’un package AEM. Notez que l’accès aux listes de SDK est limité aux environnements disposant d’une licence AEM as a Cloud Service.
 
 >[!TIP]
 >
@@ -102,7 +102,7 @@ Pour le développement local du module complémentaire CIF avec le SDK AEM as a 
 >
 >Veillez à démarrer le SDK AEM as a Cloud Service dans la même fenêtre de terminal selon la variable d’environnement définie à l’étape 5. Si vous le lancez dans une fenêtre de terminal distincte ou que vous double-cliquez sur le fichier .jar, assurez-vous que la variable d’environnement est visible.
 
-Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les bundles liés au module complémentaire CIF, le module de contenu et les configurations OSGI, comme défini dans le fichier de modèle de fonctionnalité.
+Vérifiez la configuration via la console OSGI : `http://localhost:4502/system/console/osgi-installer`. La liste doit inclure les bundles liés au module complémentaire CIF, le package de contenu et les configurations OSGI, comme défini dans le fichier de modèle de fonctionnalité.
 
 ## Configuration du projet {#project}
 
@@ -131,7 +131,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
  -D includeCommerce=y
 ```
 
-Les composants principaux CIF peuvent être utilisés dans n’importe quel projet en incluant le module `all` fourni ou individuellement en utilisant le module de contenu CIF et les bundles OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
+Les composants principaux CIF peuvent être utilisés dans n’importe quel projet en incluant le package `all` fourni ou individuellement en utilisant le package de contenu CIF et les bundles OSGI associés. Pour ajouter manuellement des composants principaux CIF à un projet, utilisez les dépendances suivantes :
 
 ```java
 <dependency>

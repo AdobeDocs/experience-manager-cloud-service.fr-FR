@@ -2,10 +2,10 @@
 title: Intégration à Adobe Target
 description: Intégration à Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: e6fc31a5c4b3bb62f7d6e639eae7e1f222b2f5ed
-workflow-type: ht
+source-git-commit: f40a2db6616aeaaf13f8ae19ab429a7301e6c05a
+workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 100%
+ht-degree: 89%
 
 ---
 
@@ -15,10 +15,10 @@ Dans le cadre d’Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com
 
 Intégrez vos sites AEM à Adobe Target pour personnaliser le contenu dans vos pages :
 
-* Mettez en œuvre le ciblage du contenu.
+* Mettez en oeuvre le ciblage du contenu.
 * Utilisez les audiences Target pour créer des expériences personnalisées.
-* Envoyez des données contextuelles à Target lorsque des visiteurs interagissent avec vos pages.
-* Suivez les taux de conversion.
+* Envoyez des données contextuelles à Target lorsque les visiteurs interagissent avec vos pages.
+* Suivi des taux de conversion.
 
 >[!NOTE]
 >
@@ -59,13 +59,13 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >
 >Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
 >
->Voir [Préalables à l’intégration à Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=fr#securing-the-activity-settings-node) pour plus d’informations.
+>Voir [Conditions préalables à l’intégration à Adobe Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-requirements.html?lang=fr#securing-the-activity-settings-node) pour plus d’informations.
 
 Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/personalization/content-targeting-touch.html?lang=fr) qui envoie les données de visiteur à Adobe Target. Notez que les composants de page requièrent un code spécifique pour activer le ciblage du contenu. (consultez [Développement pour le contenu ciblé](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/target.html?lang=fr)).
 
 >[!NOTE]
 >
->Lorsque vous ciblez un composant dans le mode Auteur AEM, il effectue une série d’appels côté serveur vers Adobe Target afin d’enregistrer la campagne, de configurer des offres et de récupérer des segments Adobe Target (si cela est configuré). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
+>Lorsque vous ciblez un composant dans AEM auteur, le composant effectue une série d’appels côté serveur vers Adobe Target pour enregistrer la campagne, configurer des offres et récupérer des segments Adobe Target (s’ils sont configurés). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
 
 ## Sources d’informations sur le contexte {#background-information-sources}
 
@@ -79,8 +79,8 @@ Intégrer AEM as a Cloud Service à Adobe Target nécessite des connaissances 
 >
 >Lorsque vous travaillez avec Adobe Target, le nombre maximal d’artefacts autorisés dans une campagne est le suivant :
 >
->* 50 emplacements
->* 2 000 expériences
->* 50 mesures
->* 50 segments de création de rapports
+>* 50 emplacements
+>* 2 000 expériences
+>* 50 mesures
+>* 50 segments de création de rapports
 

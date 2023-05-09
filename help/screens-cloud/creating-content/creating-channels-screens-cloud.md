@@ -5,7 +5,7 @@ exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
 source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -84,7 +84,7 @@ Les modèles suivants sont disponibles lors de l’utilisation de l’assistant 
 
 | Modèles disponibles | Description |
 |--- |--- |
-| Dossier de canaux | Permet de créer un dossier où stocker une collection de canaux. |
+| Dossier de canaux | Permet de créer un dossier pour stocker une collection de canaux. |
 | Canal de séquence | Permet de créer un canal qui lit les composants de manière séquentielle (l’un après l’autre comme une série de diapositives). |
 | Canal d’écran partagé barre en L gauche ou droite | Permet aux auteurs de contenus d’afficher différents types de ressources dans des zones de taille appropriée. |
 

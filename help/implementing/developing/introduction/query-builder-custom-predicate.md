@@ -2,10 +2,10 @@
 title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder
 description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -17,9 +17,9 @@ Ce document décrit comment étendre [Query Builder](query-builder-api.md) en me
 
 [Query Builder](query-builder-api.md) met à votre disposition un moyen efficace d’appliquer des requêtes au référentiel de contenu. AEM est fourni avec [un ensemble d’évaluateurs de prédicats](#query-builder-predicates.md) qui vous aident à appliquer des requêtes à vos données.
 
-Toutefois, vous pouvez simplifier vos requêtes en mettant en œuvre un évaluateur de prédicat personnalisé qui masque une partie de la complexité et assure une meilleure sémantique.
+Cependant, vous pouvez simplifier vos requêtes en implémentant un évaluateur de prédicat personnalisé qui masque une certaine complexité et garantit une meilleure sémantique.
 
-Un prédicat personnalisé peut également réaliser d’autres actions qui ne sont pas directement possibles avec XPath, par exemple :
+Un prédicat personnalisé peut également effectuer d’autres tâches qui ne sont pas directement possibles avec XPath, par exemple :
 
 * Requêtes sur des données à l’aide d’un autre service
 * Filtrage personnalisé basé sur le calcul
@@ -52,7 +52,7 @@ Il mappe une contrainte de recherche de plus haut niveau (par exemple `width>200
 
 >[!TIP]
 >
->Pour plus d’informations sur `PredicateEvaluator` et le module `com.day.cq.search`, voir la [documentation Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Pour plus d’informations sur `PredicateEvaluator` et le package `com.day.cq.search`, voir la [documentation Java](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Mise en œuvre d’un évaluateur de prédicat personnalisé pour les métadonnées de réplication {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 

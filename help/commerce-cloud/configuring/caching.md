@@ -63,4 +63,4 @@ Avec la mise en cache TTL, un développeur définit généralement une ou plusie
 
 - [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia)
 - [Configuration de la mise en cache GraphQL](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=fr)

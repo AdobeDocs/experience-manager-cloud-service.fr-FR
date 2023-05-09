@@ -2,10 +2,10 @@
 title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: b93ec12616742910e35a3dac4224b690cd2c7116
-workflow-type: ht
+source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
+workflow-type: tm+mt
 source-wordcount: '2567'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -81,7 +81,7 @@ Pour que les bibliothèques clientes situées sous `/apps` soient accessibles, u
 1. Pour spécifier la ou les catégories auxquelles appartient la bibliothèque, sélectionnez le nœud `cq:ClientLibraryFolder`, ajoutez la propriété suivante, puis cliquez sur **Enregistrer tout** :
    * Nom : `categories`
    * Type : chaîne
-   * Valeur : nom de la catégorie
+   * Valeur : Nom de la catégorie
    * Multi : sélectionné
 1. Pour que les bibliothèques clientes soient accessibles par proxy sous `/etc.clientlibs`, sélectionnez le nœud `cq:ClientLibraryFolder`, ajoutez la propriété suivante, puis cliquez sur **Enregistrer tout** :
    * Nom : `allowProxy`
@@ -155,7 +155,7 @@ Le composant `/libs/cq/granite/components/dumplibs/dumplibs` génère une page d
 
 `https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
-Les informations affichées sont le chemin d’accès à la bibliothèque et son type (CSS ou JS), ainsi que les valeurs des attributs de bibliothèque, tels que categories et dependencies. Les tableaux suivants présentent les bibliothèques dans chaque catégorie et canal.
+Les informations incluent le chemin et le type de bibliothèque (CSS ou JS), ainsi que les valeurs des attributs de bibliothèque, tels que les catégories et les dépendances. Les tableaux suivants de la page affichent les bibliothèques dans chaque catégorie et canal.
 
 ### Affichage de la sortie générée {#see-generated-output}
 
@@ -206,9 +206,9 @@ Par exemple, `/etc/clientlibs/myclientlibs/publicmain` comporte une dépendance 
 
 ### Incorporation de code d’autres bibliothèques {#embedding-code-from-other-libraries}
 
-Vous pouvez incorporer du code d’une bibliothèque cliente dans une autre bibliothèque cliente. Lors de l’exécution, les fichiers JS et CSS générés de la bibliothèque d’intégration contiennent le code de la bibliothèque incorporée.
+Vous pouvez incorporer du code d’une bibliothèque cliente dans une autre bibliothèque cliente. Au moment de l’exécution, les fichiers JS et CSS générés de la bibliothèque d’intégration incluent le code de la bibliothèque incorporée.
 
-Incorporer du code s’avère utile pour fournir l’accès aux bibliothèques qui sont stockées dans des zones sécurisées du référentiel.
+L’incorporation de code s’avère utile pour permettre l’accès aux bibliothèques stockées dans des zones sécurisées du référentiel.
 
 #### Dossiers de bibliothèques clientes spécifiques à une application {#app-specific-client-library-folders}
 
@@ -270,27 +270,27 @@ L’ouverture du fichier `publicmain.css` fait apparaître le code suivant :
 
 1. Dans la barre d’adresse de votre navigateur web, ajoutez le texte suivant à l’URL de votre code HTML :
    * `?debugClientLibs=true`
-1. Au chargement de la page, affichez sa source.
-1. Cliquez sur le lien fourni comme href de l’élément link pour ouvrir le fichier et afficher le code source.
+1. Au chargement de la page, affichez la source de la page.
+1. Cliquez sur le lien fourni comme href de l’élément de lien pour ouvrir le fichier et afficher le code source.
 
 ### Utilisation de préprocesseurs {#using-preprocessors}
 
 AEM autorise les préprocesseurs enfichables et prend en charge [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) pour CSS et JavaScript, ainsi que [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) pour JavaScript avec YUI défini comme préprocesseur par défaut d’AEM.
 
-Les préprocesseurs enfichables garantissent une certaine souplesse d’utilisation :
+Les préprocesseurs enfichables permettent une utilisation flexible, notamment :
 
 * Définition de ScriptProcessors pouvant traiter des sources de script
-* Processeurs configurables avec des options
-* Processeurs pouvant être utilisés pour la minification, mais aussi pour des cas de figure des non minifiés
-* Bibliothèque cliente (clientlib) pouvant définir le processeur à utiliser
+* Les processeurs peuvent être configurés avec des options
+* Les processeurs peuvent être utilisés pour la minification, mais également pour les cas non minimisés.
+* La bibliothèque cliente peut définir le processeur à utiliser.
 
 >[!NOTE]
 >
->Par défaut, AEM utilise YUI Compressor. Pour connaître la liste des problèmes connus, consultez la [documentation GitHub de YUI Compressor](https://github.com/yui/yuicompressor/issues). Basculer vers le compresseur GCC pour des bibliothèques clientes spécifiques permet de résoudre certains problèmes observés lors de l’utilisation de YUI.
+>Par défaut, AEM utilise le YUI Compressor. Pour connaître la liste des problèmes connus, consultez la [documentation GitHub de YUI Compressor](https://github.com/yui/yuicompressor/issues). Le passage au compresseur GCC pour des clientlibs spécifiques peut résoudre certains problèmes observés lors de l’utilisation de YUI.
 
 >[!CAUTION]
 >
->Ne placez pas de bibliothèque ayant fait l’objet d’une minification dans une bibliothèque cliente. Fournissez plutôt la bibliothèque brute et, si une minification est requise, utilisez les options des préprocesseurs.
+>Ne placez pas de bibliothèque minimisée dans une bibliothèque cliente. Fournissez plutôt la bibliothèque brute et, si une minification est requise, utilisez les options des préprocesseurs.
 
 #### Utilisation {#usage}
 
@@ -343,7 +343,7 @@ Pour plus d’informations sur les options GCC, consultez la [documentation de G
 
 #### Définition de l’outil de minification par défaut du système {#set-system-default-minifier}
 
-YUI est défini comme outil de minification par défaut dans AEM. Pour le définir sur GCC, procédez comme suit.
+YUI est défini comme minificateur par défaut dans AEM. Pour modifier ce paramètre en GCC, procédez comme suit.
 
 1. Accédez à Apache Felix Config Manager à l’adresse `http://<host>:<portY/system/console/configMgr`.
 1. Recherchez et modifiez le **Gestionnaire de bibliothèques HTML Adobe Granite**.

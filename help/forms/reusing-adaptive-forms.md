@@ -7,7 +7,7 @@ exl-id: fb8cf3a9-fd19-46bf-b40e-2af76ca68b9f
 source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
 workflow-type: tm+mt
 source-wordcount: '534'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -17,7 +17,7 @@ Si vous souhaitez utiliser certaines des propriétés d’un formulaire adaptati
 
 >[!NOTE]
 >
->L’état et les détails de révision ne sont pas copiés. Par exemple, si votre formulaire adaptatif est copié après avoir été publié, le formulaire collé se trouve dans l’état « non publié ». De même, si un élément copié est en cours de révision, l’élément collé ne se trouve pas sous la même révision.
+>L’état et les détails de révision ne sont pas copiés. Par exemple, si votre formulaire adaptatif est copié après avoir été publié, le formulaire collé se trouve dans l’état « Dépublié ». De même, si un élément copié est en cours de révision, l’élément collé ne se trouve pas sous la même révision.
 
 ## Copie d’un formulaire adaptatif {#copy-an-adaptive-form}
 
@@ -33,7 +33,7 @@ Copiez un formulaire adaptatif en utilisant l’une des méthodes suivantes :
 
    Si le mode d’affichage Carte est actif, accédez au mode de sélection en cliquant sur l’icône de sélection ![aem6forms_check-circle](assets/aem6forms_check-circle.png), puis cliquez sur tous les formulaires adaptatifs à copier.
 
-   Si le mode Liste est actif, cochez les cases à cocher de tous les formulaires adaptatifs pour les sélectionner.
+   Si la vue Liste est active, cochez les cases à cocher de tous les formulaires adaptatifs pour les sélectionner.
 
    >[!NOTE]
    >
@@ -63,4 +63,4 @@ Le contenu d’un formulaire adaptatif collé peut être modifié en utilisant l
 
 1. **Republication :**
 
-   L’élément collé est différent de celui qui a été copié. Vous pouvez le publier en tant que nouvel élément afin de le mettre à la disposition des utilisateurs finaux. Pour savoir comment publier un fichier, <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->
+   La ressource collée est différente de la ressource copiée. Vous pouvez le publier en tant que nouvelle ressource pour le rendre disponible pour les utilisateurs finaux. Pour savoir comment publier un fichier, <!-- see [Publishing and unpublishing forms](publishing-unpublishing-forms.md) -->

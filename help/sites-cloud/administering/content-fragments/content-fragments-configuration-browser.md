@@ -1,11 +1,11 @@
 ---
-title: Fragments‧de‧contenu‧-‧Navigateur‧de‧configurations
+title: Fragments de contenu - Navigateur de configurations
 description: Découvrez comment activer certaines fonctionnalités de fragments de contenu et de GraphQL dans le navigateur de configurations afin de tirer profit des fonctionnalités de diffusion découplée AEM.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 944665bc7cac1f00811187a508a18800c3d73f2a
-workflow-type: ht
+source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+workflow-type: tm+mt
 source-wordcount: '365'
 ht-degree: 100%
 

@@ -2,18 +2,18 @@
 title: Comment créer un portail Formulaires sur une page Experience Manager Sites
 description: Découvrez comment créer un portail Formulaires et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: 05bdc24974d2b82c1350bf6f75873cd7027f7d4a
-workflow-type: ht
+source-git-commit: a243664302c75fcb3125d68838353bd87cf24de3
+workflow-type: tm+mt
 source-wordcount: '1764'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
 # Création d’une liste de formulaires adaptatifs sur un portail {#publish-forms-on-portal}
 
-Dans les scénarios typiques de déploiement de portail basés sur l’utilisation de formulaires, le développement des formulaires et le développement du portail sont deux activités bien distinctes. Tandis que les créateurs de formulaires créent des formulaires et les stockent dans un référentiel, les développeurs Web créent une application Web permettant de répertorier les formulaires et de gérer leurs envois. Les formulaires sont copiés sur la plateforme Web car il n’existe aucune communication entre le référentiel des formulaires et l’application Web.
+Dans un scénario de déploiement de portail basé sur l’utilisation de formulaires standard, le développement de formulaires et le développement de portail sont deux activités distinctes. Lorsque les concepteurs de formulaires créent et stockent des formulaires dans un référentiel, les développeurs Web créent une application Web pour répertorier les formulaires et gérer l’envoi de formulaires. Forms est copié sur la plateforme web, car il n’existe aucune communication entre le référentiel de formulaires et l’application web.
 
-Ces scénarios entraînent généralement des problèmes de gestion et des retards de production. Par exemple, lorsqu’une nouvelle version d’un formulaire est disponible dans le référentiel, vous devez remplacer le formulaire sur la plateforme Web, modifier l’application Web, puis déployer à nouveau le formulaire sur le site public. Le redéploiement de l’application Web risque d’entraîner un temps d’arrêt au niveau du serveur. En règle générale, les temps d’arrêt de serveur sont dus à une activité planifiée et, par conséquent, les modifications ne peuvent pas être transférées au site public instantanément.
+De tels scénarios entraînent souvent des problèmes de gestion et des retards de production. Par exemple, si une version plus récente d’un formulaire est disponible dans le référentiel, vous devez remplacer le formulaire sur la plateforme web, modifier l’application web et redéployer le formulaire sur le site public. Le redéploiement de l’application web peut entraîner un temps d’arrêt du serveur. En règle générale, le temps d’arrêt du serveur est une activité planifiée et les modifications ne peuvent donc pas être transmises instantanément au site public.
 
 AEM Forms fournit des composants de portail qui réduisent les frais de gestion et les délais de production. Les composants permettent aux développeurs Web de créer et de personnaliser un portail Formulaires sur les sites Web créés à l’aide d’Adobe Experience Manager (AEM).
 
@@ -34,9 +34,9 @@ AEM Forms fournit les composants de portail suivants prêts à l’emploi :
 
 * Recherche et énumérateur : ce composant vous permet d’énumérer les formulaires du référentiel de formulaires sur la page du portail et propose des options de configuration pour énumérer les formulaires selon des critères spécifiés.
 
-* Brouillons et envois : alors que le composant Recherche et énumérateur affiche les formulaires rendus publics par l’auteur de formulaires, le composant Brouillons et envois affiche les formulaires enregistrés en tant que brouillons en vue d’être remplis ultérieurement et les formulaires envoyés. Ce composant offre un environnement personnalisé à tout utilisateur connecté.
+* Brouillons et envois : alors que le composant Recherche et énumérateur affiche les formulaires rendus publics par l’auteur de formulaires, le composant Brouillons et envois affiche les formulaires enregistrés en tant que brouillons en vue d’être remplis ultérieurement et les formulaires envoyés. Ce composant fournit une expérience personnalisée à tout utilisateur connecté.
 
-* Link : ce composant vous permet de créer un lien vers un formulaire depuis n’importe quel emplacement sur la page.
+* Lien : Ce composant permet de créer un lien vers un formulaire n’importe où sur la page.
 
 Vous pouvez [importer les composants prêts à l’emploi du portail Formulaires](#import-forms-portal-components-aem-archetype) à partir de l’archétype de projet AEM. Après l’importation, effectuez les configurations suivantes :
 * [Configuration d’un stockage externe](#configure-azure-storage-adaptive-forms)

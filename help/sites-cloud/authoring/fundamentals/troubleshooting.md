@@ -1,11 +1,11 @@
 ---
 title: Résolution des problèmes d’AEM lors de la création
-description: Problèmes pouvant survenir lors de l’utilisation d’AEM
+description: Problèmes que vous pouvez rencontrer lors de l’utilisation d’AEM
 exl-id: b9c0584d-255e-486d-b829-09e07499ecd2
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '235'
-ht-degree: 100%
+ht-degree: 78%
 
 ---
 
@@ -18,10 +18,10 @@ La section suivante traite de certains problèmes susceptibles d’être rencont
 * **Problème** :
    * Vous avez modifié une page et l’avez publiée sur le site de publication, mais l’*ancienne* version de la page est toujours visible sur le site de publication.
 * **Raison** :
-   * Les raisons peuvent être multiples, mais sont généralement liées à la mémoire cache (de votre navigateur local ou du dispatcher), bien qu’il s’agisse parfois d’un problème de la file d’attente de réplication.
+   * Cela peut avoir plusieurs causes, le plus souvent le cache (votre navigateur local ou Dispatcher), bien que cela puisse parfois poser un problème avec la file d’attente de réplication.
 * **Solutions** :
-   * Plusieurs solutions sont possibles :
-   * Vérifiez que la page a bien été répliquée. Vérifiez l’état de la page et, si nécessaire, l’état de la file d’attente de réplication.
+   * Il existe différentes possibilités :
+   * Vérifiez que la page a bien été répliquée. Vérifiez le statut de la page et, si nécessaire, le statut de la file d’attente de réplication.
    * Effacez la mémoire cache du navigateur local et accédez de nouveau à votre page.
    * Ajoutez `?` à la fin de l’URL de la page. Par exemple :
       * `http://<host>:<port>/sites.html/content?`

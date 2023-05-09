@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 51d7198ccf24ca0b46c4e4a34cb1d1ee8ed7e2c0
-workflow-type: ht
+source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+workflow-type: tm+mt
 source-wordcount: '2409'
-ht-degree: 100%
+ht-degree: 71%
 
 ---
 
@@ -87,7 +87,7 @@ Affiche la hiérarchie des objets du formulaire. L’auteur peut accéder au com
 
    * **Objets de modèle de données**
 Permet de voir la hiérarchie des modèles de formulaire.
-Vous pouvez faire glisser des éléments du modèle de formulaire sur le formulaire adaptatif. Les éléments ajoutés sont automatiquement convertis en composants de formulaire, tout en conservant leurs propriétés d’origine. Vous pouvez voir les objets de modèle de données lorsque votre formulaire utilise un schéma XML, un schéma JSON ou un modèle XDP.
+Vous pouvez faire glisser des éléments du modèle de formulaire sur le formulaire adaptatif. Les éléments ajoutés sont automatiquement convertis en composants de formulaire tout en conservant leurs propriétés d’origine. Vous pouvez voir des objets de modèle de données lorsque votre formulaire utilise un schéma XML, un schéma JSON ou un modèle XDP.
 
 * **Explorateur de propriétés**
 
@@ -111,11 +111,11 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Bloc Adobe Sign</td>
-   <td>Ajoute un bloc de texte avec des espaces réservés pour que les champs soient remplis lors de la signature à l’aide d’Adobe Sign.</td>
+   <td>Ajoute un bloc de texte contenant des espaces réservés pour le remplissage des champs lors de la signature à l’aide d’Adobe Sign.</td>
   </tr>
   <tr>
    <td>Bouton</td>
-   <td>Ajoute un bouton que vous pouvez configurer afin d’effectuer des actions telles que Enregistrer, Réinitialiser, Passer au suivant, Revenir au précédent, etc..</td>
+   <td>Ajoute un bouton que vous pouvez configurer pour exécuter des actions telles que Enregistrer, Réinitialiser, Passer au suivant, Passer au précédent, etc.</td>
   </tr>
   <tr>
    <td>Captcha</td>
@@ -127,23 +127,23 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Case à cocher</td>
-   <td>Ajoute une case à cocher..</td>
+   <td>Ajoute une case à cocher.</td>
   </tr>
   <tr>
    <td>Champ de saisie de date</td>
-   <td>Le composant de champ de saisie de date permet aux utilisateurs de saisir dans trois zones séparées le jour, le mois et l’année. Vous pouvez personnaliser l’apparence du composant et modifier le format de date. Ainsi, la date peut être saisie au format MM/JJ/AAAA ou JJ/MM/AAAA.</td>
+   <td>Utilisez le composant Champ de saisie de date dans votre formulaire pour permettre aux clients de remplir séparément dans trois cases le jour, le mois et l’année. Vous pouvez personnaliser l’aspect du composant et modifier le format de date. Par exemple, vous pouvez laisser vos clients saisir des dates au format MM/JJ/AAAA ou JJ/MM/AAAA.</td>
   </tr>
   <tr>
    <td>Sélecteur de date</td>
-   <td>Ajoute un champ de calendrier pour sélectionner une date..</td>
+   <td>Ajoute un champ de calendrier pour sélectionner une date.</td>
   </tr>
   <tr>
    <td>Fragment de document</td>
-   <td>Ajoute des composants réutilisables d’une correspondance.</td>
+   <td>Permet d’ajouter des composants réutilisables d’une correspondance.</td>
   </tr>
   <tr>
    <td>Groupe de fragments de document</td>
-   <td>Ajoute le groupe de fragments de document associés que vous pouvez utiliser dans un modèle de lettre en tant que même unité.</td>
+   <td>Vous permet d’ajouter un groupe de fragments de document associés que vous pouvez utiliser dans un modèle de lettre en tant qu’unité unique.</td>
   </tr>
   <tr>
    <td>Liste déroulante</td>
@@ -151,7 +151,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Ajoute un champ pour capturer une adresse électronique. Le composant Courrier électronique, par défaut, valide les adresses électroniques à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Ajoute un champ pour capturer l’adresse électronique. Par défaut, le composant Email valide les adresses email à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Pièce jointe</td>
@@ -159,7 +159,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Liste des pièces jointes</td>
-   <td>Ajoute un champ qui répertorie toutes les pièces jointes téléchargées à l’aide du composant Pièce jointe.</td>
+   <td>Ajoute un champ qui répertorie toutes les pièces jointes téléchargées à l’aide du composant Pièce jointe .</td>
   </tr>
   <tr>
    <td>Pied de page<br /> </td>
@@ -171,7 +171,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Image</td>
-   <td>Permet d’insérer une image.</td>
+   <td>Vous permet d’insérer une image.</td>
   </tr>
   <tr>
    <td>Choix d’image</td>
@@ -179,7 +179,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Bouton Suivant</td>
-   <td>Ajoute un bouton pour accéder au panneau suivant dans un formulaire.</td>
+   <td>Ajoute un bouton permettant d’accéder au panneau suivant d’un formulaire.</td>
   </tr>
   <tr>
    <td>Zone numérique</td>
@@ -191,31 +191,31 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Panneau</td>
-   <td><p>Ajoute un panneau ou un sous-panneau..</p> <p>Vous pouvez également ajouter un composant de panneau à partir de la barre d’outils du panneau parent à l’aide du bouton <span class="uicontrol">Add Child Panel</code> (Ajouter un panneau enfant). De même, vous pouvez ajouter une barre d’outils spécifique au panneau à l’aide du bouton <span class="uicontrol">Ajouter une barre d’outils de panneau</code>. Vous pouvez configurer la position de la barre d’outils du panneau à l’aide de la boîte de dialogue Modifier le panneau.</code></code></p> </td>
+   <td><p>Ajoute un panneau ou un sous-panneau.</p> <p>Vous pouvez également ajouter un composant de panneau à partir de la barre d’outils du panneau parent à l’aide du bouton <span class="uicontrol">Add Child Panel</code> (Ajouter un panneau enfant). De même, vous pouvez ajouter une barre d’outils spécifique au panneau à l’aide du bouton <span class="uicontrol">Ajouter une barre d’outils de panneau</code>. Vous pouvez configurer la position de la barre d’outils du panneau à l’aide de la boîte de dialogue Modifier le panneau.</code></code></p> </td>
   </tr>
   <tr>
    <td>Zone de mot de passe</td>
-   <td>Ajoute un champ destiné à la saisie d’un mot de passe..</td>
+   <td>Ajoute un champ destiné à la saisie d’un mot de passe.</td>
   </tr>
   <tr>
    <td>Bouton Précédent</td>
    <td>Ajoute un bouton permettant de revenir à la page ou au panneau précédents.</td>
   </tr>
   <tr>
-   <td>Bouton radio</td>
-   <td>Ajoute des cases d’option..</td>
+   <td>Bouton Radio</td>
+   <td>Ajoute des boutons radio.</td>
   </tr>
   <tr>
    <td>Bouton Réinitialiser</td>
-   <td>Ajoute un bouton permettant de réinitialiser des champs de formulaire..</td>
+   <td>Ajoute un bouton pour réinitialiser les champs de formulaire.</td>
   </tr>
   <tr>
    <td>Bouton Enregistrer</td>
-   <td>Ajoute un bouton pour enregistrer les données de formulaire.</td>
+   <td>Ajoute un bouton permettant d’enregistrer les données de formulaire.</td>
   </tr>
   <tr>
    <td>Signature tactile</td>
-   <td>Ajoute un champ destiné à la saisie de signatures tactiles..</td>
+   <td>Ajoute un champ destiné à la saisie de signatures tactiles.</td>
   </tr>
   <tr>
    <td>Séparateur</td>
@@ -223,7 +223,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Étape de signature</td>
-   <td>Affiche les informations fournies dans le formulaire et les champs de signature pour que l’utilisateur puisse vérifier et signer le formulaire.</td>
+   <td>Affiche les informations fournies dans le formulaire et les champs de signature permettant à l’utilisateur de vérifier et de signer le formulaire.</td>
   </tr>
   <tr>
    <td>Texte</td>
@@ -239,7 +239,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Basculer</td>
-   <td>Ajoute un bouton bascule qui exécute une opération de bascule ou active/désactive une action. Vous ne pouvez pas ajouter plus de deux options dans le composant Basculer. Un bouton ne peut avoir que deux valeurs : Activé ou Désactivé, obligatoire ne s’applique pas. Au moins une valeur est enregistrée, quelle que soit la saisie utilisateur. <br /> </td>
+   <td>Ajoute un commutateur qui exécute une action de basculement ou d’activation/désactivation. Vous ne pouvez pas ajouter plus de deux options dans le composant Basculer. Un bouton ne peut avoir que deux valeurs : Activé ou Désactivé, obligatoire ne s’applique pas. Au moins une valeur est enregistrée, quelle que soit la saisie utilisateur. <br /> </td>
   </tr>
   <tr>
    <td>Tableau</td>
@@ -252,7 +252,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
      <li>Le type International est validé par <code>^[+][0-9]{0,14}$</code>.</li>
      <li>Le type USPhoneNumber est validé par <code>{'+1 ('999') '999-9999}</code>.</li>
      <li>Le type UKPhoneNumber est validé par <code>text{'+'99 999 999 9999}</code>.</li>
-     <li>Le type Custom ne fournit pas de modèle de validation par défaut. Il prend la valeur du dernier type de numéro de téléphone sélectionné. Vous pouvez également spécifier votre propre motif de validation personnalisé.</li>
+     <li>Type Personnalisé ne fournit pas de modèle de validation par défaut. Il prend la valeur du dernier type de numéro de téléphone sélectionné. Vous pouvez également spécifier votre propre modèle de validation personnalisé.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -261,7 +261,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Zone de texte </td>
-   <td><p>Ajoute une zone de texte dans laquelle un utilisateur peut spécifier les informations nécessaires.. </p> <p>Par défaut, le composant de zone de texte accepte uniquement du texte brut. Vous pouvez activer un composant de zone de texte afin de permettre la prise en charge du texte brut. Un composant de texte compatible avec le texte brut permet d’ajouter des en-têtes, de modifier les styles de caractère (gras, italique, souligné), de créer les listes ordonnées et non ordonnées, de modifier l’arrière-plan et la couleur du texte et d’ajouter des hyperliens. Pour activer le texte enrichi pour une zone de texte, activez l’option <strong>Autoriser le texte enrichi</strong> dans les propriétés du composant.</p> </td>
+   <td><p>Ajoute une zone de texte dans laquelle un utilisateur peut spécifier les informations requises. </p> <p>Par défaut, le composant Zone de texte accepte uniquement du texte brut. Vous pouvez activer un composant de zone de texte afin de permettre la prise en charge du texte brut. Un composant de texte enrichi fournit des options permettant d’ajouter des en-têtes, de modifier les styles de caractères (gras, italique, soulignement des caractères), de créer des listes ordonnées et non ordonnées, de modifier l’arrière-plan du texte et la couleur du texte, ainsi que d’ajouter des liens hypertexte. Pour activer le texte enrichi pour une zone de texte, activez l’option <strong>Autoriser le texte enrichi</strong> dans les propriétés du composant.</p> </td>
   </tr>
   <tr>
    <td>Titre</td>
@@ -276,7 +276,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
 
 ### Barre d’outils de la page {#page-toolbar}
 
-La barre d’outils de la page, située en haut de l’écran, propose des options permettant d’afficher un aperçu du formulaire, d’en modifier les propriétés, puis d’en modifier la disposition. Vous pouvez prévisualiser le formulaire lors de son écriture et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
+La barre d’outils de la page supérieure propose des options permettant de prévisualiser le formulaire, de modifier ses propriétés et de modifier sa mise en page. Vous pouvez prévisualiser le formulaire lors de sa création et apporter des modifications en conséquence. Dans la barre d’outils de la page, vous voyez :
 
 * **Activer/désactiver le panneau latéral** ![toggle-side-panel](assets/Smock_RailLeft_18_N.svg) : affiche ou masque la barre latérale.
 
@@ -291,7 +291,7 @@ La barre d’outils de la page, située en haut de l’écran, propose des optio
 
    * **Développeur** : permet à un développeur de :
 
-      * Découvrir la composition des formulaires.
+      * Découvrez les formulaires composés.
       * Déboguer en temps réel afin de mieux résoudre les problèmes.
 
       * **Conception**. Permet d’activer ou de désactiver les composants personnalisés ou les composants prêts à l’emploi qui ne sont pas répertoriés dans la barre latérale.
@@ -304,7 +304,7 @@ La barre d’outils de la page, située en haut de l’écran, propose des optio
 
 Lorsque vous sélectionnez un composant, une barre d’outils s’affiche, vous permettant de l’utiliser. Vous avez la possibilité de couper, coller, déplacer et spécifier les propriétés des composants. Vous avez le choix entre :
 
-A. **Configurer** : lorsque vous appuyez sur **[!UICONTROL Configurer]**, les propriétés du composant sont visibles dans la barre latérale. La configuration de ces propriétés permet de personnaliser la saisie de données. Vous pouvez changer le nom de l’élément du composant et indiquer le texte d’étiquette du champ Titre du composant. Le nom d’élément permet de capturer des valeurs que les utilisateurs saisissent à l’aide du composant. Dans les propriétés du composant, vous indiquez le comportement du composant et gérez l’entrée de l’utilisateur. Configurez les propriétés de la barre latérale pour capturer les données utilisateur et les utiliser ultérieurement. Les propriétés du conteneur de formulaires adaptatifs permettent de spécifier des bibliothèques clients, des mises en page, des thèmes, des documents d’enregistrement, des paramètres d’enregistrement, des paramètres d’envoi et des paramètres de métadonnées.
+A. **Configurer** : lorsque vous appuyez sur **[!UICONTROL Configurer]**, les propriétés du composant sont visibles dans la barre latérale. La configuration de ces propriétés vous permet de personnaliser l’expérience de capture de données. Vous pouvez modifier le nom de l’élément du composant, spécifier le texte du libellé dans le champ Titre du composant. Le nom de l’élément vous permet de capturer les valeurs saisies par les utilisateurs à l’aide du composant. Dans les propriétés du composant, vous spécifiez le comportement du composant et gérez les entrées utilisateur. Configurez les propriétés dans la barre latérale pour capturer les données utilisateur et les utiliser pour un traitement ultérieur. Les propriétés du conteneur de formulaires adaptatifs permettent de spécifier des bibliothèques clients, des mises en page, des thèmes, des documents d’enregistrement, des paramètres d’enregistrement, des paramètres d’envoi et des paramètres de métadonnées.
 
 B. **Copier** : permet de copier un composant et le coller ailleurs dans le formulaire. Lorsque vous collez un composant, ce dernier obtient un nouveau nom d’élément mais conserve les propriétés du composant copié.
 
@@ -320,7 +320,7 @@ G. **Éditeur de règles** : permet d’ouvrir l’éditeur de règles. Pour pl
 
 H. **Groupe** : permet de sélectionner plusieurs composants permettant de couper, copier ou coller plusieurs composants ensemble.
 
-I. **Parent** : permet de sélectionner le parent d’un composant. Par exemple, un champ de texte se trouve dans une sous-section, qui réside elle-même dans une section. La section réside dans le panneau racine de guide, et le conteneur du formulaire adaptatif est le parent d’un panneau racine de guide. Pour chaque composant s’affichent toutes les options avec la hiérarchie triée de bas en haut.
+I. **Parent** : permet de sélectionner le parent d’un composant. Par exemple, un champ de texte se trouve dans une sous-section, qui réside dans une section. La section réside dans le panneau racine de guide, et le conteneur du formulaire adaptatif est le parent d’un panneau racine de guide. Pour chaque composant s’affichent toutes les options avec la hiérarchie triée de bas en haut.
 
 Par exemple, si vous tapez **[!UICONTROL Parent]** pour une zone de texte, vous pouvez voir les éléments suivants :
 
@@ -329,12 +329,12 @@ Par exemple, si vous tapez **[!UICONTROL Parent]** pour une zone de texte, vous
 * guideRootPanel
 * Conteneur de formulaires adaptatifs
 
-J.**Autres** : Fournit des options permettant d’utiliser le composant sélectionné.
+J. **Autres**: Fournit d’autres options pour utiliser le composant sélectionné.
 
 * Afficher l’expression SOM
-* Enregistrer un panneau en tant que fragment (pour les panneaux uniquement)
+* Enregistrement d’un panneau en tant que fragment (pour les panneaux uniquement)
 * Ajouter un panneau enfant (pour les panneaux uniquement)
-* Ajouter une barre d’outils de panneau (pour les panneaux uniquement)
+* Barre d’outils Ajouter un panneau (pour les panneaux uniquement)
 * Remplacer (pas pour les panneaux)
 
 ### Page de formulaires adaptatifs {#af-page}
@@ -348,11 +348,11 @@ La structure de contenu contient généralement les composants principaux ci-des
 * **guideContainer** : racine d’un formulaire adaptatif, indiquée sous la forme **[!UICONTROL Début du formulaire adaptatif]** dans l’interface utilisateur du formulaire. Dans ce composant, vous pouvez spécifier les éléments suivants :
 
    * *Mise en page du formulaire adaptatif pour mobiles* : définit l’apparence du formulaire sur les appareils mobiles.
-   * *Page de remerciement* : définit la page vers laquelle l’utilisateur est redirigé après l’envoi du formulaire.
-   * *Action d’envoi* : définit la manière dont le formulaire est traité sur le serveur lorsque l’utilisateur l’envoie.
-   * *Style* : indique le chemin d’accès au fichier CSS utilisé pour personnaliser l’apparence du formulaire.
+   * *Page de remerciement*: Définit la page vers laquelle l’utilisateur est redirigé après l’envoi du formulaire.
+   * *Action Envoyer*: Définit le mode de traitement du formulaire sur le serveur une fois que l’utilisateur l’a envoyé.
+   * *Style*: Spécifie le chemin d’accès au fichier CSS utilisé pour personnaliser l’aspect du formulaire.
 
-* **rootPanel** : panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le nœud d’éléments. Une mise en page peut être associée à chaque panneau qui comprend le panneau racine. La mise en page du panneau détermine la disposition du formulaire. Par exemple, dans la mise en page en accordéon, les éléments constitutifs sont disposés sous la forme d’étapes en accordéon.
+* **rootPanel** : panneau racine d’un formulaire adaptatif. Il peut contenir des sous-panneaux sous le noeud éléments . Une disposition peut être associée à chaque panneau, y compris le panneau racine. La disposition du panneau détermine la disposition du formulaire. Par exemple, dans la mise en page en accordéon, les éléments constitutifs sont disposés sous la forme d’étapes en accordéon.
 
 * **toolbar:** : une barre d’outils globale est associée à un conteneur de formulaires adaptatifs. Il s’agit d’une barre d’outils à l’échelle du formulaire. Cette barre d’outils peut être ajoutée à l’aide de l’action **[!UICONTROL Ajouter une barre d’outils]** de la barre d’édition, ce qui permet aux auteurs d’ajouter des actions telles que Envoyer, Enregistrer, réinitialiser, etc.
 

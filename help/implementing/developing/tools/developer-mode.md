@@ -7,13 +7,13 @@ exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
 source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
 # Mode Développeur {#developer-mode}
 
-Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) sont disponibles, notamment le mode Développeur. Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations techniques sur la page en cours.
+Lors de la modification de pages dans AEM, plusieurs [modes](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) sont disponibles, y compris le mode Développeur. Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations techniques sur la page en cours.
 
 Deux onglets sont disponibles :
 
@@ -36,7 +36,7 @@ Ils aident les développeurs à :
 
 ## Ouverture du mode Développeur {#opening-developer-mode}
 
-Le mode Développeur est mis en œuvre sous la forme d’un panneau latéral dans l’éditeur de page. Pour ouvrir le panneau, sélectionnez **Développeur** dans le sélecteur de mode au niveau de la barre d’outils de l’éditeur de page :
+Le mode Développeur est mis en oeuvre sous la forme d’un panneau latéral dans l’éditeur de page. Pour ouvrir le panneau, sélectionnez **Développeur** dans le sélecteur de mode au niveau de la barre d’outils de l’éditeur de page :
 
 ![Ouverture du mode Développeur](assets/developer-mode.png)
 
@@ -52,10 +52,10 @@ Le panneau est divisé en deux onglets :
 Il présente une arborescence de composants qui :
 
 * décrit la chaîne de composants et de modèles rendus sur la page. L’arborescence peut être développée pour afficher le contexte dans la hiérarchie.
-* indique le temps de calcul côté serveur nécessaire pour effectuer le rendu du composant ;
-* permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant, tels que :
-   * Le chemin du référentiel
-   * Les liens vers les scripts (accessibles dans CRXDE Lite)
+* Affiche le temps de calcul côté serveur nécessaire au rendu du composant.
+* Permet de développer l’arborescence et de sélectionner des composants spécifiques dans l’arborescence. La sélection permet d’accéder aux détails du composant. par exemple :
+   * Chemin du référentiel
+   * Liens vers les scripts (accessibles en CRXDE Lite)
    * Les informations sur le composant, comme indiqué dans la section [Console des composants](/help/sites-cloud/authoring/features/components-console.md)
 * Les composants sélectionnés dans l’arborescence sont indiqués par une bordure bleue dans l’éditeur.
 

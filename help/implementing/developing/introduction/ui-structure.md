@@ -2,10 +2,10 @@
 title: Structure de l’interface utilisateur d’AEM
 description: 'L’interface utilisateur d’AEM s’accompagne de plusieurs principes sous-jacents et se compose d’une série d’éléments clés :'
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: ca849bd76e5ac40bc76cf497619a82b238d898fa
-workflow-type: ht
+source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -74,7 +74,7 @@ Lors de la création de pages, les zones structurelles sont les suivantes.
 
 ### Cadre de contenu {#content-frame}
 
-Le rendu du contenu de la page est effectué dans le cadre de contenu. Ce cadre de contenu est totalement indépendant de l’éditeur, afin de garantir l’absence de conflits dus à CSS ou JavaScript.
+Le contenu de la page est rendu dans le cadre de contenu. Le cadre de contenu est totalement indépendant de l’éditeur, afin de s’assurer qu’il n’y a aucun conflit en raison de CSS ou JavaScript.
 
 Le cadre de contenu se situe dans la partie droite de la fenêtre, sous la barre d’outils.
 
@@ -103,7 +103,7 @@ Par défaut, le panneau latéral est masqué. Lorsqu’il est sélectionné, soi
 
 ### Panneau latéral – Ressources {#side-panel-assets}
 
-L’onglet Ressources vous permet de faire votre choix parmi un éventail de ressources. Vous pouvez également effectuer un filtrage sur un terme spécifique ou bien sélectionner un groupe.
+Dans l’onglet Ressources , vous pouvez sélectionner une ressource parmi celles disponibles. Vous pouvez également filtrer selon un terme spécifique ou sélectionner un groupe.
 
 ![Onglet Ressources](assets/ui-side-panel-assets.png)
 
@@ -115,7 +115,7 @@ L’onglet Ressources comprend un menu déroulant que vous pouvez utiliser pour 
 
 ### Panneau latéral – Composants {#side-panel-components}
 
-L’onglet Composants vous propose un éventail de composants à sélectionner. Vous pouvez également effectuer un filtrage sur un terme spécifique ou bien sélectionner un groupe.
+Dans l’onglet Composants , vous pouvez sélectionner l’un des différents composants. Vous pouvez également filtrer selon un terme spécifique ou sélectionner un groupe.
 
 ![Onglet Composants](assets/ui-side-panel-components.png)
 
@@ -146,7 +146,7 @@ AEM s’accompagne de plusieurs calques qui sont déjà implémentés pour la cr
 
 >[!NOTE]
 >
->Les calques constituent une puissante solution qui affecte la manière dont l’utilisateur affiche le contenu de la page et interagit avec celui-ci. Lorsque vous développez vos propres calques, vous devez veiller à ce qu’ils soient effacés lorsque vous les quittez.
+>Les calques sont un concept puissant qui affecte la vue de l’utilisateur et son interaction avec le contenu de la page. Lorsque vous développez vos propres calques, vous devez vous assurer que le calque est nettoyé à sa sortie.
 
 ### Sélecteur de calques {#layer-switcher}
 

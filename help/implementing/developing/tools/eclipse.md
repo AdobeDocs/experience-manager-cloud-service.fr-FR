@@ -5,7 +5,7 @@ exl-id: 7f9c0f99-e230-440a-8bc9-a0ab7465e3bf
 source-git-commit: 3c8035e4db5729f58bae29136a32a0b9944d6a2f
 workflow-type: tm+mt
 source-wordcount: '1190'
-ht-degree: 69%
+ht-degree: 66%
 
 ---
 
@@ -46,13 +46,13 @@ Une fois les [conditions préalables](#requirements) ci-dessus réunies, vous po
 
    Vous pouvez également télécharger une archive au lieu d’utiliser le lien d’installation. Cela permet une installation hors ligne, mais sans recevoir les notifications de mise à jour automatique.
 
-1. Dans Eclipse, ouvrez le menu **Help** (Aide).
-1. Cliquez sur **Install New Software** (Installer un nouveau logiciel).
+1. Dans Eclipse, ouvrez le **Aide** .
+1. Cliquez sur **Installer le nouveau logiciel**.
 1. Cliquez sur **Add...** (Ajouter).
 1. Dans le **Nom** champ, entrer `AEM Developer Tools`.
 1. Dans le **Emplacement** , copiez l’URL d’installation.
 1. Cliquez sur **Add** (Ajouter).
-1. Cochez les deux modules externes **AEM** et **Sling**.
+1. Cochez les deux **AEM** et **Sling** modules externes.
 1. Cliquez sur **Next** (Suivant).
 1. Dans la fenêtre **Install Details** (Détails de l’installation), cliquez de nouveau sur **Next** (Suivant).
 1. Acceptez les contrats de licence et cliquez sur **Finish** (Terminer).
@@ -73,7 +73,7 @@ _Outils de développement Experience Manager pour Eclipse_ fournissent une persp
 
 Le _Outils de développement Experience Manager pour Eclipse_ s’accompagne d’un exemple de projet multimodule qui vous permet de vous familiariser rapidement avec la configuration d’un projet dans Eclipse. Il sert également de guide des bonnes pratiques pour plusieurs fonctionnalités AEM. [En savoir plus sur l’archétype du projet](https://github.com/adobe/aem-project-archetype).
 
-Suivez les étapes ci-après pour créer l’exemple de projet :
+Pour créer l’exemple de projet, procédez comme suit :
 
 1. Dans le menu **Fichier** > **Nouveau** > **Projet**, accédez à la section **AEM** et sélectionnez **Exemple de projet multi-module AEM**.
 

@@ -5,7 +5,7 @@ exl-id: f4949331-5302-46d3-a004-b813bb95ec2f
 source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
 workflow-type: tm+mt
 source-wordcount: '275'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -13,13 +13,13 @@ ht-degree: 100%
 
 La console des composants vous permet de parcourir tous les composants définis pour votre instance et d’afficher les informations clés pour chacun d’eux.
 
-Elle est accessible via **Outils** -> **Général** -> **Composants**. En l’absence d’arborescence, seul l’aperçu en liste est disponible.
+Elle est accessible via **Outils** -> **Général** -> **Composants**. En l’absence d’arborescence, seul la vue Liste est disponible.
 
 ![Console Composants](/help/sites-cloud/authoring/assets/components-console.png)
 
 >[!NOTE]
 >
->La console des composants affiche tous les composants du système. L’[Explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) affiche les composants qui sont disponibles pour les auteurs et masque tous les groupes de composants qui commencent par un point ( `.`).
+>La console des composants affiche tous les composants du système. L’[Explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) affiche les composants qui sont disponibles pour les auteurs et masque tous les groupes de composants qui commencent par un point (`.`).
 
 ## Rechercher {#search-field}
 
@@ -29,7 +29,7 @@ Avec l’icône **Contenu uniquement** (en haut à gauche), vous pouvez ouvrir l
 
 ### Détails des composants {#component-details}
 
-Pour afficher les détails correspondant à un composant spécifique, appuyez/cliquez sur la ressource requise. Trois onglets fournissent :
+Pour afficher des détails sur un composant spécifique, appuyez/cliquez sur la ressource requise. Trois onglets sont proposés :
 
 * **Propriétés**
 
@@ -40,16 +40,16 @@ Pour afficher les détails correspondant à un composant spécifique, appuyez/cl
    * Afficher les propriétés générales du composant.
       * Observez comment l’icône ou l’abréviation a été définie pour le composant. <!-- View how the [icon or abbreviation has been defined](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) for the component.-->
       * Cliquez sur la source de l’icône pour accéder à ce composant.
-   * Affichez le **Type de ressource** et le **Type de super-ressource** (s’il est défini) du composant.
+   * Afficher la variable **Type de ressource** et **Resource Super Type** (s’il est défini) pour le composant.
       * Cliquez sur le type de super-ressource pour accéder à ce composant.
 
    >[!NOTE]
    >
    >Étant donné que les `/apps` ne sont pas modifiables à l’exécution, la console Composants est en lecture seule.
 
-* **Stratégies**
+* **Politiques**
 
-   ![Stratégies de la console de composants](/help/sites-cloud/authoring/assets/components-console-policies.png)
+   ![Politiques de la console de composants](/help/sites-cloud/authoring/assets/components-console-policies.png)
 
 * **Utilisation en direct**
 

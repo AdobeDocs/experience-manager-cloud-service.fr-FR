@@ -11,7 +11,7 @@ ht-degree: 100%
 
 # Mappage du modèle dynamique avec les composants pour les SPA {#dynamic-model-to-component-mapping-for-spas}
 
-Ce document décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK JavaScript SPA pour AEM.
+Ce document décrit le fonctionnement du mappage du modèle dynamique avec les composants dans le SDK de SPA JavaScript pour AEM.
 
 ## Module ComponentMapping {#componentmapping-module}
 

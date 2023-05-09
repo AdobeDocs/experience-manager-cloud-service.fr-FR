@@ -7,7 +7,7 @@ exl-id: 03449606-0fb4-4a9f-9abb-6b17c27a6046
 source-git-commit: eadcf71aa96298383b05e61251dfeb5f345df6b9
 workflow-type: tm+mt
 source-wordcount: '1476'
-ht-degree: 54%
+ht-degree: 55%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 54%
 
 Consultez la section ci-dessous pour accéder aux conseils et connaître les bonnes pratiques relatives à l’utilisation de l’outil de transfert de contenu :
 
-* Exécuter [Nettoyage des révisions](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et [contrôles de cohérence de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=en) sur le **source** pour identifier les problèmes potentiels et réduire la taille du référentiel.
+* Exécuter [Nettoyage des révisions](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et [contrôles de cohérence de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16550.html?lang=fr) sur le **source** pour identifier les problèmes potentiels et réduire la taille du référentiel.
 
 * Si la configuration du réseau de diffusion de contenu (CDN) de l’auteur AEM Cloud est configurée pour avoir une liste autorisée d’adresses IP, assurez-vous que les adresses IP de l’environnement source sont également ajoutées à la liste autorisée. Cela permet de s’assurer que l’environnement source et l’environnement AEM Cloud peuvent communiquer entre eux.
 

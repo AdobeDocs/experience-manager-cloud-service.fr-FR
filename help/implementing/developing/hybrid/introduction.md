@@ -1,17 +1,17 @@
 ---
-title: Introduction et présentation des applications sur une seule page (SPA)
+title: Introduction et présentation des applications monopage (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
 source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '2076'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# Introduction et présentation des applications sur une seule page (SPA) {#spa-introduction}
+# Introduction et présentation des applications monopage (SPA) {#spa-introduction}
 
-Les applications sur une seule page (SPA) peuvent améliorer considérablement l’expérience des utilisateurs de sites web. Le souhait des développeurs est de pouvoir créer des sites avec des structures SPA. Les auteurs, pour leur part, souhaitent modifier facilement du contenu dans AEM pour un site conçu à l’aide de telles structures.
+Les applications monopage (SPA) peuvent améliorer considérablement votre expérience des sites web. Les développeurs souhaitent pouvoir créer des sites à l’aide de structures SPA et les auteurs souhaitent modifier facilement du contenu dans AEM pour un site créé à l’aide de ces structures.
 
 L’éditeur de SPA constitue une solution complète pour la prise en charge des SPA dans AEM. Cet article décrit l’utilisation d’une SPA élémentaire à des fins de création et indique comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 
@@ -70,14 +70,14 @@ Plus rapide, fluide et ressemblant davantage à une application native, une SPA,
 
 #### Développeurs {#developers}
 
-* Les développeurs veulent une séparation nette entre les aspects liés au contenu et à la présentation.
+* L’équipe de développement veut une séparation nette entre les aspects liés au contenu et à la présentation.
 * Une séparation nette rend le système plus extensible tout en autorisant un développement front-end indépendant.
 
 ### Comment fonctionne une SPA ?  {#how-does-a-spa-work}
 
 L’idée principale sous-jacente à une SPA est que les appels à un serveur et la dépendance envers un serveur sont réduits afin de minimiser les retards liés à la latence du serveur, de sorte que la SPA s’approche de la réactivité d’une application native.
 
-Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque le visiteur passe à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
+Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque vous passez à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
 
 ![Expériences séquentielles ou fluides](assets/spa-sequential-vs-fluid.png)
 
@@ -125,7 +125,7 @@ D’autres outils de création, tels que le glisser-déposer de composants suppl
 
 >[!NOTE]
 >
->L’éditeur de SPA ne modifie pas le modèle objet de document (DOM) de l’application. La SPA elle-même est responsable du DOM.
+>L’éditeur de SPA ne modifie pas le modèle DOM de l’application. La SPA elle-même est responsable du DOM.
 >
 >Pour découvrir le fonctionnement de cet aspect, passez à la section suivante de cet article, [Applications SPA et éditeur de SPA AEM](#spa-apps-and-the-aem-spa-editor).
 
@@ -161,7 +161,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
 ### Chargement d’une SPA {#loading-a-spa-application}
 
-1. Si ce n’est pas déjà fait, chargez l’application du projet du SPA WKND sur le serveur de publication ou à l’aide de l’option **Afficher comme publié(e)** du menu **Informations sur la page** de l’éditeur de page.
+1. Si ce n’est pas déjà fait, chargez l’application du projet de la SPA WKND sur le serveur de publication ou à l’aide de l’option **Afficher comme publié(e)** du menu **Informations sur la page** de l’éditeur de page.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -242,7 +242,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
 ## Couplage et découplage dans AEM {#headful-headless}
 
-Les SPA peuvent être activés avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développés et gérés en dehors d’AEM. De plus, les SPA peuvent être exploités dans AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points de terminaison, et ce, en mode découplé.
+Les SPA peuvent être activés avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développés et gérés en dehors d’AEM. De plus, les SPA peuvent être exploités dans AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points d’entrée, et ce, en mode découplé.
 
 >[!TIP]
 >

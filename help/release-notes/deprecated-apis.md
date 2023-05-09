@@ -2,10 +2,10 @@
 title: API obsolètes
 description: Notes de mise à jour dédiées aux API obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 89a50c17c10a19b394db5709692fb065c19e878f
-workflow-type: ht
+source-git-commit: 983e26980cace26d1e62334cb44088d9e3e5c34a
+workflow-type: tm+mt
 source-wordcount: '1076'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -154,7 +154,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
     <td>org.apache.sling.atom.taglib<br>org.apache.sling.atom.taglib.media</td>
     <td>API héritée d’AEM 6.x.</td>
     <td>08/04/2019</td>
-    <td>29/09/21</td>
+    <td>29/09/2021</td>
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
