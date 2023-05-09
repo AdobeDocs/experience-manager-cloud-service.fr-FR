@@ -6,13 +6,13 @@ seo-description: Build Engaging Forms Using Core Components and Headless
 topic-tags: develop
 hide: true
 hidefromtoc: true
-source-git-commit: f65c5241e1e61e5a0bd9981778939caa313de76a
+exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '3412'
-ht-degree: 3%
+source-wordcount: '3360'
+ht-degree: 4%
 
 ---
-
 
 # Création d’un Forms d’engagement à l’aide des composants principaux et sans affichage
 
@@ -22,7 +22,7 @@ Dans ce laboratoire pratique, vous apprenez :
 
 Comment utiliser AEM Forms pour créer facilement des formulaires adaptatifs à l’aide des derniers composants principaux cohérents avec AEM Sites, activer les expériences de capture de données omnicanal en fournissant les formulaires adaptatifs sous forme de formulaires sans interface sur le web, les appareils mobiles et les conversations. Vous découvrez également les bonnes pratiques en matière de style, de personnalisations et de développement frontal.
 
-## Principales acquisitions
+## Principaux points à retenir
 
 * **Agilité commerciale**: En tant qu’utilisateur professionnel, je peux facilement créer une expérience de formulaire pour plusieurs canaux.
 
@@ -60,8 +60,7 @@ Dans cette leçon, vous vous familiarisez avec l’environnement as a Cloud Serv
 
 ### Exercice
 
-1. Ouvrez votre navigateur et saisissez l’URL de l’environnement de création du Cloud Service. Par exemple :
-   [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/start.html](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/start.html)
+1. Ouvrez votre navigateur et saisissez l’URL de l’environnement de création du Cloud Service.
 
 1. Connectez-vous à l’environnement de création du Cloud Service. Les informations de connexion à votre environnement de création seront partagées avec vous au cours du laboratoire.
 
@@ -407,8 +406,8 @@ Vérifions l&#39;exécution des règles sous cette forme sans tête :
 
 Apportons des modifications au formulaire sur le serveur en tant qu’utilisateur professionnel et affichons automatiquement les modifications répercutées dans le formulaire sans en-tête.
 
-1. Ouvrez l’interface de gestion d’AEM Forms dans le navigateur. Par exemple : [https://author-p105303-e986623.adobeaemcloud.com/ui#/aem/aem/forms.html/content/dam/formsanddocuments](https://author-p105303-e986623.adobeaemcloud.com/ui%23/aem/aem/forms.html/content/dam/formsanddocuments).
-
+1. Ouvrez l’interface de gestion d’AEM Forms dans le navigateur.
+\
 1. Sélectionnez la **enregistrement** formulaire et clic **Modifier.** Il ouvre le formulaire dans l’éditeur de formulaires adaptatifs.
 
    ![](/help/forms/assets/screenshot2028118529.png)
@@ -513,7 +512,7 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
 1. Définissez les valeurs suivantes pour les variables du fichier .env . Après la mise à jour des variables, enregistrez le fichier. Utilisez la variable **Ctrl + S** changer de combinaison pour enregistrer le fichier.
 
-   * **AEM_URL**: Spécifiez l’URL de l’environnement de publication du service cloud. Par exemple : [https://publish-p105303-e986623.adobeaemcloud.com](https://publish-p105303-e986623.adobeaemcloud.com/)
+   * **AEM_URL**: Spécifiez l’URL de l’environnement de publication du service cloud.
 
    * **AEM_FORM_PATH**: Spécifiez le chemin d’accès au formulaire adaptatif créé dans la leçon précédente. Par exemple, /content/forms/af/registration/
 
@@ -637,14 +636,12 @@ Maintenant que vous avez appris à créer des formulaires adaptatifs et à les d
 
 ## Ressources
 
-* [Présentation des composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)
+* [Présentation des composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr)
 
-* [Créer un formulaire adaptatif à l’aide des composants principaux](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [Créer un formulaire adaptatif à l’aide des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=fr)
 
 * [Mise à jour de la mise en forme pour le formulaire adaptatif basé sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=en)
 
 * [Formulaires adaptatifs sans affichage](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=en)
 
 * [Utilisation du kit de démarrage React sans tête](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/get-started/create-and-publish-a-headless-form.html?lang=en)
-
-

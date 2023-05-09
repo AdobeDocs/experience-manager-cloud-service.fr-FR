@@ -1,9 +1,10 @@
 ---
-title: Génération d’un document d’enregistrement pour les formulaires adaptatifs
+title: Génération d’un document d’enregistrement pour Forms adaptatif
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
-source-git-commit: 3d713304512065819ed16bbc9604f2cf9d1cf43f
+exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
 workflow-type: tm+mt
-source-wordcount: '4065'
+source-wordcount: '4066'
 ht-degree: 98%
 
 ---

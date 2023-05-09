@@ -5,7 +5,7 @@ description: La révision est un mécanisme qui permet aux réviseurs d’effect
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
+source-git-commit: daeb407e27b9f1d390fe40151ca16ec0196712e6
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 6%
@@ -29,8 +29,8 @@ En utilisant la variable [Étape Attribuer](https://experienceleague.adobe.com/d
 1. Appuyer ![settings_icon](assets/settings_icon.png) dans la barre d’actions. Le **[!UICONTROL Assign Task]** s’ouvre.
 1. Ouvrir [!UICONTROL Formulaire et document] et ouvrez [!UICONTROL Pré-renseigné] et indiquez :
 
-* Sélectionner le fichier de données d’entrée en utilisant
-* Sélectionner les pièces jointes d’entrée en utilisant
+   * Sélectionner le fichier de données d’entrée en utilisant
+   * Sélectionner les pièces jointes d’entrée en utilisant
 
    ![Étape de révision](/help/forms/assets/assigntask-review1.gif)
 

@@ -1,11 +1,11 @@
 ---
-title: Génération d’un document d’enregistrement pour les formulaires adaptatifs
+title: Générer un document d’enregistrement pour Forms adaptatif
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
-source-git-commit: b0e49296344a4f52a07699a308eb0cbeef897bb9
-workflow-type: ht
+source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+workflow-type: tm+mt
 source-wordcount: '3109'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -216,7 +216,7 @@ Le tableau suivant décrit les composants de formulaire adaptatif et les composa
   </tr>
   <tr>
    <td>Bouton Réinitialiser</td>
-   <td>Bouton Réinitialiser</td>
+   <td>Bouton de réinitialisation</td>
    <td>false</td>
    <td> </td>
   </tr>
@@ -247,7 +247,7 @@ Le tableau suivant décrit les composants de formulaire adaptatif et les composa
   <tr>
    <td>Panneau<br /> </td>
    <td>Sous-formulaire<br /> </td>
-   <td>Le panneau répétable se mappe au sous-formulaire répétable.</td>
+   <td>Le panneau répétable est mappé à un sous-formulaire répétable.</td>
   </tr>
  </tbody>
 </table>
@@ -294,8 +294,8 @@ Pour créer un modèle de base, procédez comme suit dans Forms Designer.
 1. Cliquez sur **[!UICONTROL Fichier]** > **[!UICONTROL Nouveau]**.
 1. Sélectionnez l’option **[!UICONTROL Basé sur un modèle]**.
 
-1. Choisissez la catégorie **[!UICONTROL Formulaires - Document d’enregistrement]**.
-1. Sélectionnez **[!UICONTROL Modèle de base de DE]**.
+1. Sélectionnez la **[!UICONTROL Forms - Document d’enregistrement]** catégorie.
+1. Sélectionner **[!UICONTROL Modèle de base de DE]**.
 1. Cliquez sur **[!UICONTROL Suivant]** et renseignez les informations nécessaires.
 
 1. (Facultatif) Modifiez le style et l’aspect à appliquer aux champs du document d’enregistrement.
@@ -380,7 +380,7 @@ Champs dans un panneau rendu dans une mise en page Colonne dans le document d’
 
 ## Paramètres d’un document d’enregistrement {#document-of-record-settings}
 
-Les paramètres d’un document d’enregistrement permettent de sélectionner les options à inclure dans le document d’enregistrement. Par exemple, une banque accepte les informations suivantes dans un formulaire : nom, âge, numéro de sécurité sociale et numéro de téléphone. Le formulaire génère un numéro de compte bancaire et les informations sur la banque. Vous pouvez choisir de n’afficher que le nom, le numéro de sécurité sociale, le compte bancaire et les informations bancaires dans le document d’enregistrement.
+Les paramètres d’un document d’enregistrement permettent de sélectionner les options à inclure dans le document d’enregistrement. Par exemple, une banque accepte le nom, l’âge, le numéro de sécurité sociale et le numéro de téléphone dans un formulaire. Le formulaire génère un numéro de compte bancaire et les détails de la banque. Vous pouvez choisir de n’afficher que le nom, le numéro de sécurité sociale, le compte bancaire et les informations bancaires dans le document d’enregistrement.
 
 Les paramètres du composant Document d’enregistrement sont disponible sous ses propriétés. Pour accéder aux propriétés d’un composant, sélectionnez le composant et cliquez sur ![cmppr](assets/cmppr.png) dans le recouvrement. Les propriétés sont répertoriées dans la barre latérale. Vous y trouvez les paramètres suivants.
 

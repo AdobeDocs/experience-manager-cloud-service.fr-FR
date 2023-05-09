@@ -1,9 +1,10 @@
 ---
 title: Exportation de fragments de contenu vers Adobe Target
 description: Exportation de fragments de contenu vers Adobe Target
-source-git-commit: 61266ca2caf4cbc02b79a14349c73dced456b5a3
+exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
+source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2229'
 ht-degree: 51%
 
 ---
@@ -193,7 +194,7 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
       >[!NOTE]
       >
-      >Le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/implement-target-for-client-side-web.html?lang=fr), est une nouvelle bibliothèque d’implémentation pour Adobe Target qui a été conçue pour les implémentations web classiques et les applications d’une seule page.
+      >Le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), est une nouvelle bibliothèque d’implémentation pour Adobe Target qui a été conçue pour les implémentations web classiques et les applications d’une seule page.
       >
       >mbox.js est obsolète et sera supprimé ultérieurement.
       >
