@@ -7,7 +7,7 @@ exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
 workflow-type: tm+mt
 source-wordcount: '1062'
-ht-degree: 37%
+ht-degree: 43%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 37%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview"
 >title="Créer la structure de contenu pour votre application"
->abstract="Lorsque vous suivez cette série de guides interactifs, vous apprenez à créer une structure (appelée modèle de fragment de contenu) qui sert de structure de base à votre contenu sans en-tête."
+>abstract="Avec notre série de guides interactifs, vous apprendrez à créer une structure (également appelée Modèle de fragment de contenu) qui sert de base à tout votre contenu découplé."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Lancer la console de modèles"
->abstract="Découvrez comment créer un schéma réutilisable, appelé modèle de fragment de contenu, pour votre contenu dans Adobe Experience Manager as a Cloud Service. Regardez la vidéo pour comprendre l’importance de cette étape. <br><br>Dans ce module d’apprentissage, nous utiliserons un site de voyage comme exemple et nous vous guidons pour créer un modèle qui représente un voyage. Nous nous référencerons à ce modèle dans les modules ultérieurs. Vous devrez donc suivre le schéma d’affectation des noms fourni.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
+>abstract="Découvrez comment créer un schéma réutilisable, appelé modèle de fragment de contenu, pour votre contenu dans Adobe Experience Manager as a Cloud Service. Regardez la vidéo pour comprendre l’importance de cette étape. <br><br>Dans ce module d’apprentissage, nous utiliserons un site de voyage comme exemple et nous vous guiderons pour créer un modèle de séjour. Nous nous réfèrerons à ce modèle dans les modules ultérieurs. Vous devrez donc suivre le schéma d’affectation des noms fourni.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
 >additional-url="https://video.tv.adobe.com/v/3413261/?captions=fre_fr" text="Vidéo d’introduction à la structure de contenu"
 
 >[!CONTEXTUALHELP]

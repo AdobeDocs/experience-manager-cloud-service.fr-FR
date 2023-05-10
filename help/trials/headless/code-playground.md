@@ -1,13 +1,13 @@
 ---
 title: Rendu de votre contenu dans une application simple
-description: Explorez la récupération de contenu JSON à partir de votre environnement d’évaluation à l’aide d’une application d’exemple CodePen et du client AEM sans affichage pour JavaScript.
+description: Explorez la récupération de contenu JSON à partir de votre environnement d’évaluation à l’aide d’un exemple d’application CodePen et du client AEM Headless pour JavaScript.
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
 source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
 workflow-type: tm+mt
 source-wordcount: '987'
-ht-degree: 5%
+ht-degree: 14%
 
 ---
 
@@ -16,13 +16,13 @@ ht-degree: 5%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript"
->title="Rendu de votre contenu dans une application simple"
->abstract="Explorez la récupération de contenu JSON à partir de votre environnement d’évaluation à l’aide d’une application d’exemple CodePen et du client AEM sans affichage pour JavaScript."
+>title="Rendre votre contenu dans une application simple"
+>abstract="Explorez la récupération de contenu JSON à partir de votre environnement d’évaluation à l’aide d’un exemple d’application CodePen et du client AEM Headless pour JavaScript."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide"
 >title="Lancer l’exemple d’application CodePen"
->abstract="Ce guide passe en revue l’interrogation des données JSON de votre environnement d’évaluation vers une application web JavaScript de base. Nous utiliserons les fragments de contenu que vous avez modélisés et créés dans les modules d’apprentissage précédents. Par conséquent, veuillez d’abord consulter ces guides avant de passer à celui-ci."
+>abstract="Ce guide explique en détail comment interroger des données JSON de votre environnement d’évaluation dans une application web JavaScript de base. Nous utiliserons les fragments de contenu que vous avez modélisés et créés dans les modules d’apprentissage précédents. Par conséquent, veuillez d’abord consulter ces guides avant de passer à celui-ci."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_fetch_json_with_javascript_guide_footer"
