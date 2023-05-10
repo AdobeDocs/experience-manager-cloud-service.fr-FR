@@ -2,10 +2,10 @@
 title: Règles de qualité du code personnalisé
 description: Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du test de qualité du code. Elles sont basées sur les bonnes pratiques de l’ingénierie Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: eb633db8fe64a62661c094b88f0ce8d9950ed6d7
+source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
 workflow-type: tm+mt
-source-wordcount: '3473'
-ht-degree: 100%
+source-wordcount: '3508'
+ht-degree: 99%
 
 ---
 
@@ -17,6 +17,10 @@ ht-degree: 100%
 >abstract="Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du test de qualité du code. Elles sont basées sur les bonnes pratiques de l’ingénierie Adobe Experience Manager."
 
 Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du [test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md). Elles sont basées sur les bonnes pratiques de l’ingénierie Experience Manager.
+
+>[!NOTE]
+>
+>Les règles SonarQube complètes ne peuvent pas être téléchargées en raison d’informations propriétaires Adobes. Vous pouvez télécharger la liste complète des règles [via ce lien.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples des règles.
 
 >[!NOTE]
 >
