@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '1388'
-ht-degree: 91%
+source-wordcount: '1406'
+ht-degree: 89%
 
 ---
 
@@ -91,6 +91,10 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
    La boîte de dialogue suivante sera présentée. Notez qu’un jeu de migration expirera après une longue période d’inactivité. Une fois les avertissements affichés sur la carte du projet et les lignes du tableau des tâches de migration pour une période donnée, le jeu de migration expirera et ses données ne seront plus disponibles. Réviser [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
+
+   >[!NOTE]
+   >
+   >Le nom doit respecter les mêmes conventions qu’un noeud AEM. Il ne peut donc pas contenir les caractères suivants : . / : [ ] | *
 
 1. Votre liste de migration doit maintenant apparaître dans la vue Liste. Cliquez sur le symbole des trois petits points (**...**) pour ouvrir la liste déroulante, puis cliquez sur **Copier la clé d’extraction**. Vous aurez besoin de cette clé pendant la phase d’extraction. Copiez cette clé d’extraction.
 

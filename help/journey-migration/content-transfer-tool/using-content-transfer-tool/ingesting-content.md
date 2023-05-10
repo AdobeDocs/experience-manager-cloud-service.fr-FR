@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 79f5133e681261fa8f7604f1fc9c3fbf5c6a5f59
+source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
 workflow-type: tm+mt
-source-wordcount: '1722'
-ht-degree: 86%
+source-wordcount: '1753'
+ht-degree: 85%
 
 ---
 
@@ -59,7 +59,9 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23.png)
 
-1. Une fois l’ingestion terminée, cliquez sur le bouton (i) dans le coin supérieur droit de l’écran pour obtenir plus d’informations sur la tâche d’ingestion.
+1. Cliquez sur **(i)** sur la ligne pour obtenir plus d’informations sur la tâche d’ingestion. Vous pouvez voir la durée de chaque étape de l’ingestion lorsqu’elle est en cours d’exécution ou terminée en cliquant sur **...** puis **Afficher les durées**. Les informations de l’extraction sont également affichées pour réaliser ce qui est ingéré.
+
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam23b.png)
 
 <!-- Alexandru: hiding temporarily, until it's reviewed 
 

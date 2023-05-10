@@ -2,10 +2,10 @@
 title: Extraction de contenu à partir de la source
 description: Extraction de contenu à partir de la source
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: 614b2d9e0b3c34bdef854115dce91effed0b36f8
+source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 87%
 
 ---
 
@@ -49,13 +49,13 @@ Pour extraire votre jeu de migration à partir de l’outil de transfert de cont
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam16.png)
 
-   Vous pouvez également surveiller la progression de la phase d’extraction à partir de Cloud Acceleration Manager en consultant la page du transfert de contenu.
+   Vous pouvez également surveiller la progression de la phase d’extraction à partir de Cloud Acceleration Manager en consultant la page du transfert de contenu, puis la consulter plus en détail en cliquant sur **...** puis **Afficher les détails**.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam17.png)
 
-1. Une fois l’extraction terminée, passez en revue les autres colonnes telles que **Source** et **Chemins** pour obtenir plus d’informations sur le jeu de migration que vous avez renseigné, en cliquant sur **...** puis sur **Afficher les détails**.
+1. Une fois l’extraction terminée, passez en revue les autres colonnes comme **Source** et **Chemins** pour plus d’informations sur le jeu de migration que vous avez renseigné en cliquant sur **...** puis **Afficher les détails** pour afficher les détails, y compris la durée de chaque étape de l’extraction. Affichez cette boîte de dialogue pendant l’extraction pour voir comment les étapes progressent.
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18.png)
+   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam18b.png)
 
 
 ## Extraction de complément {#top-up-extraction-process}
