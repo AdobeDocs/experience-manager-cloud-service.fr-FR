@@ -2,7 +2,7 @@
 title: Prise en main d’Universal Editor dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: a933073346e6b7c3b4256269f5796a64a6dfbfa8
 workflow-type: tm+mt
 source-wordcount: '809'
 ht-degree: 0%
@@ -109,7 +109,7 @@ Les attributs d’instrumentation ajoutés à la page se composent principalemen
 Les connexions utilisées dans l’application sont stockées sous la forme `<meta>` balises de la page `<head>`.
 
 ```html
-<meta name="urn:auecon:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>` - Il s’agit d’un nom court réutilisé dans le document pour identifier la connexion. Par exemple : `aemconnection`
