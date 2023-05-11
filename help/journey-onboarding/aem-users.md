@@ -4,10 +4,10 @@ description: Une fois que l’administrateur système a configuré les ressource
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: 86700cce-139f-451e-9c21-b38b6332f773
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 100%
+source-wordcount: '581'
+ht-degree: 93%
 
 ---
 
@@ -81,5 +81,7 @@ Si vous souhaitez découvrir comment les développeurs et les responsables de d�
 
 ## Ressources supplémentaires {#additional-resources}
 
-[Guide rapide pour la création de pages](/help/sites-cloud/authoring/getting-started/quick-start.md) - Commencez ici pour un aperçu rapide des principes de base de la création dans AEM.
+Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
+
+[Guide de démarrage rapide pour la création de pages](/help/sites-cloud/authoring/getting-started/quick-start.md) - Commencez ici pour un aperçu rapide des principes de base de la création dans AEM.
 [Parcours de création headless](/help/journey-headless/author/overview.md) : si vous souhaitez créer du contenu headless, suivez cette introduction guidée.

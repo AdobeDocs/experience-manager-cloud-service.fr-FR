@@ -3,10 +3,10 @@ title: Accéder à Cloud Manager
 description: Découvrez comment accéder à Cloud Manager afin de pouvoir configurer les ressources de votre projet.
 role: Admin, User, Developer
 exl-id: c9476ac9-8318-493e-a48d-94ff5a6433a7
-source-git-commit: 225b34f081a942d67dfc1f6faeb09763ea9fde03
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 100%
+source-wordcount: '1097'
+ht-degree: 95%
 
 ---
 
@@ -130,8 +130,9 @@ Continuez votre parcours d’intégration en consultant le document [Créer un p
 
 ## Ressources supplémentaires {#additional-resources}
 
-Suivez les autres ressources pour en savoir plus sur les aspects suivants :
+Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
 
 * [Présentation de Cloud Manager](/help/onboarding/cloud-manager-introduction.md) -
 En savoir plus sur Cloud Manager, les programmes Cloud Manager et les environnements.
 * [Équipe et profils de produits AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) - Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service peuvent accorder et limiter l’accès à vos solutions Adobe sous licence.
+* [AEM conseils et astuces concernant les champions - interface utilisateur de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/cloud-manager-ui.md) - Regardez cette vidéo pour un aperçu de l’interface utilisateur de Cloud Manager d’un AEM champion.

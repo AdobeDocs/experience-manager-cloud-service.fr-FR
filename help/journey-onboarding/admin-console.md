@@ -2,10 +2,10 @@
 title: Accéder à Admin Console
 description: Une fois que vous avez compris la préparation nécessaire à l’intégration et les bases de la structure AEMaaCS, vous êtes prêt à vous connecter pour la première fois à Admin Console.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 100%
+source-wordcount: '1111'
+ht-degree: 98%
 
 ---
 
@@ -104,6 +104,8 @@ Maintenant que vous avez lu ce document, vous devriez :
 Vous êtes prêt à poursuivre votre parcours d’intégration en apprenant à [affecter des membres de l’équipe aux profils de produit Cloud Manager](assign-profiles-cloud-manager.md) afin que vos collègues puissent également accéder à AEMaaCS.
 
 ## Ressources supplémentaires {#additional-resources}
+
+Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
 
 * [Présentation d’Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) - Présentation complète d’Admin Console
 * [Créer ou mettre à jour votre Adobe ID](https://helpx.adobe.com/fr/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Découvrez comment créer un Adobe ID, le modifier et gérer plusieurs Adobe ID.

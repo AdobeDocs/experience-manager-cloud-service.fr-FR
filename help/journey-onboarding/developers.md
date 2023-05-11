@@ -4,10 +4,10 @@ description: Une fois que l’administrateur système a configuré les ressource
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 709a80683357b0d56280ff14aa5f4ba6bf2c6b23
+source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
 workflow-type: tm+mt
-source-wordcount: '1400'
-ht-degree: 100%
+source-wordcount: '1419'
+ht-degree: 98%
 
 ---
 
@@ -143,6 +143,8 @@ Si vous souhaitez savoir comment les auteurs de contenu accèdent à AEM as a�
 >Maintenant que vous êtes intégré, vous pouvez [découvrir comment ajouter facilement le module complémentaire de démonstration de référence d’AEM](/help/journey-sites/demos-add-on/overview.md) à un environnement sandbox avec une configuration minimale d’AEM et être en mesure de tester les puissantes fonctionnalités d’AEM avec de riches exemples basés sur les bonnes pratiques.
 
 ## Ressources supplémentaires {#additional-resources}
+
+Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
 
 * [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md) : découvrez comment accéder à votre référentiel Git et comment le gérer à l’aide de la gestion de compte Git en libre-service à partir de Cloud Manager.
 * [Utiliser Git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) : découvrez comment utiliser les référentiels Git de Cloud Manager et comment intégrer votre propre référentiel Git On-premise géré par le client avec Cloud Manager.

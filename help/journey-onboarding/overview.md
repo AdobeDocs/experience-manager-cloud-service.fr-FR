@@ -2,10 +2,10 @@
 title: Présentation du Parcours d’intégration d’AEM as a Cloud Service
 description: Commencez ici pour avoir un aperçu du parcours guidé tout au long du processus d’intégration pour AEM as a Cloud Service.
 exl-id: 892577db-05dc-49ff-bb2c-203efdb89c8c
-source-git-commit: 75c0e8cbaa409fa48750e794c27ace98eda107d0
+source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 100%
+source-wordcount: '1228'
+ht-degree: 95%
 
 ---
 
@@ -95,3 +95,9 @@ Un [Parcours de documentation](/help/journey-documentation/documentation-journey
 Les parcours de documentation sont conçus autour des principes de bonne pratique, reposent sur les dernières recherches d’Adobe, sur l’expérience éprouvée de mise en œuvre des consultants Adobe, ainsi que sur les retours de projets clients.
 
 Si vous souhaitez savoir comment Adobe recommande d’intégrer votre équipe à une nouvelle application AEM as a Cloud Service, voici par où commencer.
+
+## Ressources supplémentaires {#additional-resources}
+
+Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
+
+* [AEM Conseils et astuces pour les champions - Manuel d’intégration de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/onboarding-playbook.md) - Regardez cette vidéo pour découvrir les conseils d’intégration de Cloud Manager et les astuces d’un AEM champion.
