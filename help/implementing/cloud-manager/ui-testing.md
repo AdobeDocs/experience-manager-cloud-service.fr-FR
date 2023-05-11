@@ -2,10 +2,10 @@
 title: Tests de l’interface utilisateur
 description: Le test personnalisé d’interface utilisateur est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications personnalisées.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 24796bd7d9c5e726cda13885bc4bd7e4155610dc
+source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
 workflow-type: tm+mt
-source-wordcount: '2238'
-ht-degree: 92%
+source-wordcount: '2305'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +23,9 @@ Le test d’interface utilisateur personnalisé est une fonctionnalité facultat
 
 AEM fournit une suite intégrée de [points de contrôle de qualité Cloud Manager](/help/implementing/cloud-manager/custom-code-quality-rules.md) pour garantir la fluidité de la mise à jour des applications personnalisées. En particulier, les points de contrôle informatiques prennent déjà en charge la création et l’automatisation des tests personnalisés à l’aide des API d’AEM.
 
-Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basés sur Selenium). En outre, un projet de tests d’interface utilisateur peut être facilement généré à l’aide de [l’archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr).
+Les tests de l’interface utilisateur sont conditionnés dans une image Docker afin de permettre un large choix de langues et de structures (telles que Cypress.IO, Selenium, Java et Maven, et Javascript). En outre, un projet de tests d’interface utilisateur peut être facilement généré à l’aide de [l’archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)
+
+Adobe encourage l’utilisation de Cypress.IO, car il propose un rechargement en temps réel et une attente automatique, ce qui permet de gagner du temps et d’améliorer la productivité pendant les tests. Cypress.IO fournit également une syntaxe simple et intuitive, ce qui facilite l&#39;apprentissage et l&#39;utilisation, même pour ceux qui sont nouveaux à tester.
 
 Les tests de l’interface utilisateur sont exécutés dans le cadre d’un point de contrôle qualité spécifique pour chaque pipeline Cloud Manager avec une [**Tests de l’interface utilisateur personnalisée** step](/help/implementing/cloud-manager/deploy-code.md) in [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou facultatif [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
 
@@ -203,20 +205,20 @@ Cette section décrit les conventions que l’image Docker contenant vos tests d
 
 ### Variables d’environnement {#environment-variables}
 
-Les variables d’environnement suivantes seront transmises à votre image Docker au moment de l’exécution.
+Les variables d’environnement suivantes seront transmises à votre image Docker au moment de l’exécution, selon votre structure.
 
-| Variable | Exemples | Description |
-|---|---|---|
-| `SELENIUM_BASE_URL` | `http://my-ip:4444` | URL du serveur Selenium |
-| `SELENIUM_BROWSER` | `chrome` | Implémentation du navigateur utilisée par le serveur Selenium |
-| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | URL de l’instance de création AEM |
-| `AEM_AUTHOR_USERNAME` | `admin` | Nom d’utilisateur pour la connexion à l’instance de création AEM |
-| `AEM_AUTHOR_PASSWORD` | `admin` | Mot de passe de connexion à l’instance de création AEM |
-| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | URL de l’instance de publication AEM |
-| `AEM_PUBLISH_USERNAME` | `admin` | Nom d’utilisateur pour la connexion à l’instance de publication AEM |
-| `AEM_PUBLISH_PASSWORD` | `admin` | Mot de passe de connexion à l’instance de publication AEM |
-| `REPORTS_PATH` | `/usr/src/app/reports` | Chemin d’accès où le rapport XML des résultats du test doit être enregistré |
-| `UPLOAD_URL` | `http://upload-host:9090/upload` | URL vers laquelle le fichier doit être chargé afin de le rendre accessible à Selenium |
+| Variable | Exemples | Description | Framework de test |
+|---|---|---|---|
+| `SELENIUM_BASE_URL` | `http://my-ip:4444` | URL du serveur Selenium | Selenium uniquement |
+| `SELENIUM_BROWSER` | `chrome` | Implémentation du navigateur utilisée par le serveur Selenium | Selenium uniquement |
+| `AEM_AUTHOR_URL` | `http://my-ip:4502/context-path` | URL de l’instance de création AEM | Tous |
+| `AEM_AUTHOR_USERNAME` | `admin` | Nom d’utilisateur pour la connexion à l’instance de création AEM | Tous |
+| `AEM_AUTHOR_PASSWORD` | `admin` | Mot de passe de connexion à l’instance de création AEM | Tous |
+| `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | URL de l’instance de publication AEM | Tous |
+| `AEM_PUBLISH_USERNAME` | `admin` | Nom d’utilisateur pour la connexion à l’instance de publication AEM | Tous |
+| `AEM_PUBLISH_PASSWORD` | `admin` | Mot de passe de connexion à l’instance de publication AEM | Tous |
+| `REPORTS_PATH` | `/usr/src/app/reports` | Chemin d’accès où le rapport XML des résultats du test doit être enregistré | Tous |
+| `UPLOAD_URL` | `http://upload-host:9090/upload` | L’URL vers laquelle le fichier doit être chargé afin de le rendre accessible à la structure de test. | Tous |
 
 Les exemples de test d’Adobe fournissent des fonctions d’assistance pour accéder aux paramètres de configuration :
 
@@ -224,6 +226,10 @@ Les exemples de test d’Adobe fournissent des fonctions d’assistance pour acc
 * Java : voir la classe [Config](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Config.java).
 
 ### Attendre la préparation de Selenium {#waiting-for-selenium}
+
+>[!NOTE]
+>
+>Cette section s’applique uniquement lorsque Selenium est l’infrastructure de test choisie.
 
 Avant le début des tests, l’image Docker doit garantir que le serveur Selenium est opérationnel. L’attente du service de Selenium est un processus en deux étapes.
 
@@ -310,14 +316,12 @@ ou par rapport à une instance as a Cloud Service d’AEM réelle.
 
    ```shell
    mvn verify -Pui-tests-local-execution \
-   -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
-   -DAEM_AUTHOR_USERNAME=<user> \
-   -DAEM_AUTHOR_PASSWORD=<password> \
-   -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
-   -DAEM_PUBLISH_USERNAME=<user> \
-   -DAEM_PUBLISH_PASSWORD=<password> \
-   -DHEADLESS_BROWSER=true \
-   -DSELENIUM_BROWSER=chrome
+    -DAEM_AUTHOR_URL=https://author-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_AUTHOR_USERNAME=<user> \
+    -DAEM_AUTHOR_PASSWORD=<password> \
+    -DAEM_PUBLISH_URL=https://publish-<program-id>-<environment-id>.adobeaemcloud.com \
+    -DAEM_PUBLISH_USERNAME=<user> \
+    -DAEM_PUBLISH_PASSWORD=<password> \
    ```
 
 >[!NOTE]

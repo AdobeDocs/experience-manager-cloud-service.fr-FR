@@ -3,10 +3,10 @@ title: Configuration de pipelines hors production
 description: Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans des environnements de production.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 0dd1cfba81eb8dfab3e002333868ec79ebc5e96c
+source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
 workflow-type: tm+mt
-source-wordcount: '1403'
-ht-degree: 87%
+source-wordcount: '1369'
+ht-degree: 90%
 
 ---
 
@@ -94,12 +94,6 @@ Pour terminer la configuration du pipeline hors production de code front-end, pr
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) sur la carte **Pipelines** sur la page **Aperçu du programme**.
 
 ### Code full stack {#full-stack-code}
-
->[!NOTE]
->
->* Cette fonctionnalité n’est pas encore disponible pour l’ensemble de la population. Il devrait être déployé en juin 2023.
->* Si vous souhaitez tester la fonctionnalité et fournir des commentaires pour l’amélioration, contactez votre représentant Adobe.
-
 
 Un pipeline de code full stack déploie simultanément des versions de code front-end et back-end contenant une ou plusieurs applications de serveur AEM avec une configuration HTTPD/Dispatcher. Consultez le document [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#full-stack-pipeline) pour plus d’informations sur ce type de pipeline.
 
