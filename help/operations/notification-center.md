@@ -3,9 +3,9 @@ title: Centre de notifications
 description: Tirez parti du Centre de notification pour prendre des mesures appropriées concernant les incidents et d'autres informations importantes
 hidefromtoc: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: b72d22e8788c04ab4faa3616a4a0ce5e6d8ce991
+source-git-commit: 283493187142e1aeaaf272818bb9b7921841ed67
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,9 @@ Dans le Centre de notification, vous pouvez sélectionner un programme et un env
 Pour configurer la réception de notifications, procédez comme suit :
 
 1. Créez les profils de produit suivants, comme décrit [dans cet article](/help/journey-onboarding/notification-profiles.md), attribuant également les identifiants d’Adobe appropriés de votre organisation à ces profils. Cela permet à un administrateur de déterminer quels utilisateurs peuvent recevoir ces notifications.
-1. Chaque utilisateur affecté à l’étape précédente peut configurer la manière dont il souhaite recevoir ses notifications. Sur le [page Préférences de l’Experience Cloud](https://experience.adobe.com/preferences/notification-section), assurez-vous que l’abonnement du Experience Manager est activé et que la variable **Incidents opérationnels** et **Recommandations proactives** sont sélectionnées. En outre, il est recommandé de définir la section Emails sur **Notifications instantanées** par conséquent, les notifications sont reçues immédiatement en cas d’incident.
+1. Chaque utilisateur affecté à l’étape précédente peut configurer la manière dont il souhaite recevoir ses notifications. Sur le [page Préférences de l’Experience Cloud](https://experience.adobe.com/preferences/notification-section), assurez-vous que l’abonnement du Experience Manager est activé et que la variable **Incidents opérationnels** et **Recommandations proactives** les cases à cocher sont sélectionnées pour les colonnes in-app et email (voir l’image ci-dessous). En outre, il est recommandé de définir la section Emails sur **Notifications instantanées** par conséquent, les notifications sont reçues immédiatement en cas d’incident.
+
+![Configuration des abonnements](/help/operations/assets/configure-subscriptions.png)
 
 >[!NOTE]
 >Les notifications fonctionnent au niveau de l’organisation, de sorte que les abonnés reçoivent des notifications pour tous les programmes et environnements de ces programmes.
