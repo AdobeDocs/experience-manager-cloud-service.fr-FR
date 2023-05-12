@@ -2,10 +2,10 @@
 title: Création de programmes Sandbox
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme Sandbox à des fins de formation, de démonstration, de point de vente ou à d’autres fins hors production.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: cf6941759dfc1e50928009490c7c518a89ed093e
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '464'
+ht-degree: 67%
 
 ---
 
@@ -23,17 +23,31 @@ Pour créer un programme Sandbox, procédez comme suit.
 
 1. Dans la page de destination de Cloud Manager, cliquez sur **Ajouter le programme** dans le coin supérieur droit de l’écran.
 
-   ![Page de destination de Cloud Manager](assets/first_timelogin1.png)
+   ![Page de destination de Cloud Manager](assets/cloud-manager-my-programs.png)
 
-1. Dans l’assistant de création de programme, sélectionnez **Configurer un sandbox**, indiquez un nom de programme, puis cliquez sur **Créer**.
+1. Dans l’assistant de création de programme, sélectionnez **Configuration d’un environnement de test** et indiquez un nom de programme.
 
    ![Création d’un type de programme](assets/create-sandbox.png)
 
+1. Vous pouvez éventuellement ajouter une image au programme en la faisant glisser et en la déposant sur le **Ajout d’une image de programme** cibler ou cliquer dessus pour sélectionner une image dans l’explorateur de fichiers. Cliquez ou appuyez sur **Continuer**.
+
+   * L’image sert uniquement de mosaïque dans la fenêtre de présentation du programme et permet d’identifier le programme.
+
+1. Dans le **Configuration de votre environnement de test** , sélectionnez les solutions que vous souhaitez activer dans votre programme sandbox en cochant les options de la section **Solutions et modules complémentaires** table.
+
+   * Utilisez les chevrons en regard des noms des solutions pour afficher des modules complémentaires facultatifs supplémentaires pour les solutions.
+
+   * Le **Sites** et **Ressources** Les solutions sont toujours incluses dans les programmes sandbox et ne peuvent pas être désélectionnées.
+
+   ![Sélection de solutions et de modules complémentaires pour un environnement de test](assets/sandbox-solutions-add-ons.png)
+
+1. Une fois que vous avez sélectionné les solutions et modules complémentaires pour votre programme sandbox, appuyez sur cliquez sur . **Créer**.
+
 Une nouvelle carte de programme sandbox s’affiche sur la page d’entrée avec un indicateur de statut au fur et à mesure que le processus de configuration progresse.
 
-![Création d’un sandbox à partir de la page d’aperçu](assets/program-create-setupdemo2.png)
+![Création d’un sandbox à partir de la page d’aperçu](assets/sandbox-setup.png)
 
-## Accès à votre Sandbox {#access}
+## Accès aux environnements de test {#access}
 
 Vous pouvez afficher les détails de la configuration de votre sandbox et accéder à l’environnement (une fois disponible) en consultant la page d’aperçu du programme.
 

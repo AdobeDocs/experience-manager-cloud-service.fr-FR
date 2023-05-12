@@ -3,10 +3,10 @@ title: Créer un programme
 description: Découvrez comment utiliser Cloud Manager pour créer votre premier programme.
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 97%
+source-wordcount: '686'
+ht-degree: 87%
 
 ---
 
@@ -51,11 +51,15 @@ Pour créer un programme Sandbox, procédez comme suit.
 
 1. Dans la page de destination de Cloud Manager, cliquez sur **Ajouter le programme** dans le coin supérieur droit de l’écran.
 
-   ![Page de destination de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/first_timelogin1.png)
+   ![Page de destination de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. Dans l’assistant de création de programme, sélectionnez **Configurer un sandbox**, indiquez un nom de programme, puis cliquez sur **Créer**.
+1. Dans l’assistant de création de programme, sélectionnez **Configuration d’un environnement de test** et indiquez le nom du programme, puis appuyez ou cliquez sur **Continuer**.
 
    ![Création d’un type de programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
+
+1. Dans le **Configuration de votre environnement de test** , vous pouvez choisir les solutions que vous souhaitez activer dans votre programme sandbox. Le **Sites** et **Ressources** Les solutions sont toujours incluses dans les programmes sandbox et sont automatiquement sélectionnées. Cela suffit pour notre exemple d’intégration. Cliquez sur **Créer**.
+
+   ![Sélection de solution](assets/set-up-sandbox-onboarding.png)
 
 Une nouvelle carte de programme sandbox s’affiche sur la page d’entrée avec un indicateur de statut au fur et à mesure que le processus de configuration progresse.
 
