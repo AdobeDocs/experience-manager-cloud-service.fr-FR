@@ -2,7 +2,7 @@
 title: Prise en main d’Universal Editor dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: e62ddc2a72d12ad356decc0e2a933d8c7d308469
+source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
 workflow-type: tm+mt
 source-wordcount: '810'
 ht-degree: 0%
@@ -109,14 +109,14 @@ Les attributs d’instrumentation ajoutés à la page se composent principalemen
 Les connexions utilisées dans l’application sont stockées sous la forme `<meta>` balises de la page `<head>`.
 
 ```html
-<meta name="urn:adobe:aem:editor:aemconnection:<referenceName>" content="<protocol>:<url>">
+<meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
 * `<referenceName>` - Il s’agit d’un nom court réutilisé dans le document pour identifier la connexion. Par exemple : `aemconnection`
 * `<protocol>` - Indique le module externe de persistance du service de persistance de l’éditeur universel à utiliser. Par exemple : `aem`
 * `<url>` - Il s’agit de l’URL vers le système où les modifications doivent être conservées. Par exemple : `http://localhost:4502`
 
-L&#39;identifiant `adobe:aem:editor:aemconnection` représente la connexion à Adobe Universal Editor.
+L&#39;identifiant `adobe:aem:editor` représente la connexion à Adobe Universal Editor.
 
 `itemid`s utilisera la variable `urn` pour raccourcir l’identifiant.
 
@@ -136,8 +136,8 @@ itemid="urn:<referenceName>:<resource>"
 ```html
 <html>
 <head>
-    <meta name="urn:adobe:aem:editor:aemconnection:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:adobe:aem:editor:aemconnection:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aem:editor:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aem:editor:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>
