@@ -2,9 +2,9 @@
 title: Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.
 description: Découvrez comment mettre à jour vos fragments de contenu pour le filtrage GraphQL optimisé dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu découplée.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 02e27a8eee18893e0183b3ace056b396a9084b12
+source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '913'
 ht-degree: 80%
 
 ---
@@ -50,18 +50,9 @@ Pour exécuter la procédure, procédez comme suit :
       <th>Type</th>
       <th>Remarques</th>
      </tr>
-     <tr>
+
+   <tr>
       <td>1</td>
-      <td>« AEM_RELEASE_CHANNEL » </td>
-      <td>« Version préliminaire » </td>
-      <td> </td>
-      <td>Tous </td>
-      <td> </td>
-      <td>Variable </td>
-      <td>Obligatoire pour activer la fonction. </td>
-     </tr>
-     <tr>
-      <td>2</td>
       <td>« CF_MIGRATION_ENABLED » </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -71,7 +62,7 @@ Pour exécuter la procédure, procédez comme suit :
       <td>Active(!=0) ou désactive (0) le déclenchement du traitement de la migration des fragments de contenu. </td>
      </tr>
      <tr>
-      <td>3</td>
+      <td>2</td>
       <td>« CF_MIGRATION_ENFORCE » </td>
       <td>`1` </td>
       <td>`0` </td>
@@ -81,7 +72,7 @@ Pour exécuter la procédure, procédez comme suit :
       <td>Assurer (!=0) la remigration des fragments de contenu.<br>La définition de cet indicateur sur 0 entraînera une migration incrémentielle des CF. Cela signifie que si le traitement est arrêté pour une raison quelconque, la prochaine exécution du traitement lancera la migration là où elle s’est arrêtée. Notez que la toute première migration est recommandée (value=1). </td>
      </tr>
      <tr>
-      <td>4</td>
+      <td>3</td>
       <td>« CF_MIGRATION_BATCH » </td>
       <td>`50` </td>
       <td>`50` </td>
@@ -91,7 +82,7 @@ Pour exécuter la procédure, procédez comme suit :
       <td>Taille du lot pour l’enregistrement du nombre de fragments de contenu après la migration.<br>Cela correspond au nombre de CF qui seront enregistrés dans le référentiel dans un lot et peut être utilisé pour optimiser le nombre d’écritures dans le référentiel. </td>
      </tr>
      <tr>
-      <td>5</td>
+      <td>4</td>
       <td>« CF_MIGRATION_LIMIT » </td>
       <td>`1 000` </td>
       <td>`1 000` </td>
@@ -101,7 +92,7 @@ Pour exécuter la procédure, procédez comme suit :
       <td>Nombre maximal de fragments de contenu à traiter à la fois.<br>Voir aussi les notes de « CF_MIGRATION_INTERVAL ». </td>
      </tr>
      <tr>
-      <td>6</td>
+      <td>5</td>
       <td>« CF_MIGRATION_INTERVAL » </td>
       <td>`60` </td>
       <td>`600` </td>
