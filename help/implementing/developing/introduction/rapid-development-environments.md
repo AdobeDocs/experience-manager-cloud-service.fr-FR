@@ -2,10 +2,10 @@
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour réaliser des itérations de développement rapides sur un environnement cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
 workflow-type: tm+mt
-source-wordcount: '3304'
-ht-degree: 98%
+source-wordcount: '3325'
+ht-degree: 97%
 
 ---
 
@@ -450,6 +450,8 @@ Lorsqu’un RDE est réinitialisé, tout le contenu est supprimé. Par conséque
 1. Synchronisez explicitement le package de contenu avec le RDE à l’aide de l’outil de ligne de commande
 
 1. Placez et validez l’exemple de contenu dans git dans un dossier install.rde sous /apps, puis synchronisez le package de contenu global avec le RDE à l’aide de l’outil de ligne de commande.
+
+1. Utilisez la variable [outil de copie de contenu](/help/implementing/developing/tools/content-copy.md) pour copier un jeu de contenu défini à partir d’environnements de production, d’évaluation ou de développement ou d’un autre RDE.
 
 1. Utiliser le gestionnaire de modules
 
