@@ -3,16 +3,16 @@ title: Créer des environnements
 description: Découvrez comment utiliser Cloud Manager pour créer vos premiers environnements.
 role: Admin, User, Developer
 exl-id: 31940e1e-fe27-4c5f-b67f-41affebea63a
-source-git-commit: 5c5db0d133adfbbb678930ef27d8ade10fd0c3be
+source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 86%
+source-wordcount: '732'
+ht-degree: 56%
 
 ---
 
 # Créer des environnements {#create-environments}
 
-Dans cette partie du [parcours d’intégration](overview.md), découvrez comment utiliser Cloud Manager pour créer vos premiers environnements.
+Dans cette partie du [parcours d&#39;intégration,](overview.md) vous apprenez à utiliser Cloud Manager pour créer vos premiers environnements.
 
 ## Objectif {#objective}
 
@@ -28,23 +28,23 @@ Après avoir lu ce document, vous pourrez :
 
 Les environnements se trouvent sous les programmes dans la hiérarchie de Cloud Manager. Les programmes vous permettent d’organiser votre solution et d’accorder à certains membres de l’équipe l’accès à ces programmes, tandis que les environnements appartiennent à des programmes spécifiques et sont les instances individuelles des solutions d’Adobe au sein de ces programmes. Les environnements sont utilisés à des fins spécifiques, telles que la création de contenu ou le test de nouveaux développements. Les pipelines CI/CD de Cloud Manager facilitent le déploiement de code vers ces environnements à partir de référentiels Git.
 
-Reprenons l’exemple de client théorique WKND Travel and Adventure Entreprises, qui est un client qui se concentre sur les médias liés au voyage pouvant avoir deux programmes : un programme Sites pour sa division WKND Magazine et un programme Assets pour la division WKND Media. Chaque programme aurait probablement deux environnements, par exemple un environnement de production qui sert le trafic réel du site et un environnement de développement pour tester le nouveau code de l’application.
+Si vous vous souvenez de l’exemple de la théorie des entreprises de voyage et d’aventure WKND, qui est un client qui se concentre sur les médias liés au voyage, il se peut qu’elles aient deux programmes. C’est-à-dire un programme Sites pour sa division WKND Magazine et un programme Ressources pour la division WKND Media. Chaque programme aurait probablement deux environnements, par exemple un environnement de production qui sert le trafic réel du site et un environnement de développement pour tester le nouveau code de l’application.
 
 Il existe quatre types d’environnements différents :
 
 * **Production et évaluation** - Les environnements de production et d’évaluation sont disponibles par paire et sont utilisés respectivement à des fins de production et de test.
-* **Développement** - Un environnement de développement peut être créé à des fins de développement et de test et sera associé uniquement aux pipelines qui ne sont pas en production.
-* **Développement rapide** : un environnement de développement rapide (RDE) permet à l’équipe de développement de déployer et d’examiner rapidement les modifications, ce qui réduit le temps nécessaire pour tester les fonctionnalités qui fonctionnent dans un environnement de développement local.
+* **Développement** - Un environnement de développement peut être créé à des fins de développement et de test et peut uniquement être associé à des pipelines hors production.
+* **Développement rapide** - Un environnement de développement rapide (RDE) permet aux développeurs de déployer et de passer rapidement en revue les modifications, ce qui réduit le temps nécessaire pour tester les fonctionnalités dont il a été prouvé qu’elles fonctionnent dans un environnement de développement local.
 
-Pour les besoins de ce parcours d’intégration, afin de commencer à utiliser un minimum, vous allez créer un environnement de développement que vous pourrez utiliser pour explorer les capacités d’AEM as a Cloud Service.
+Pour les besoins de ce parcours d’intégration, afin de commencer à utiliser un minimum d’intégration, vous créez un environnement de développement que vous pouvez utiliser pour explorer les capacités d’AEM as a Cloud Service.
 
 ## Créer des environnements {#creating-environments}
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Cliquez sur le programme pour lequel vous souhaitez ajouter un environnement.
+1. Sélectionnez le programme pour lequel vous souhaitez ajouter un environnement.
 
-1. Dans la page **Aperçu du programme**, cliquez sur **Ajouter un environnement** dans la carte **Environnements** pour ajouter un environnement.
+1. Pour ajouter un environnement, à partir du **Aperçu du programme** , sur la page **Environnements** carte, sélectionnez **Ajouter un environnement**.
 
    ![Carte Environnements](/help/implementing/cloud-manager/assets/no-environments.png)
 
@@ -76,15 +76,17 @@ Maintenant que vous avez lu cette partie du parcours d’intégration, vous devr
 * Connaître la différence entre les différents environnements.
 * Être en mesure de créer votre propre environnement.
 
-Vos ressources cloud ont été créées et sont prêtes à être consultées par votre équipe. En tant qu’administrateur système, vous devez d’abord affecter des membres de votre équipe aux profils de produits AEM as a Cloud Service à partir d’Adobe Admin Console, afin qu’ils puissent accéder à ces ressources.
+Vos ressources cloud ont été créées et sont prêtes à être consultées par votre équipe. En tant qu’administrateur système, vous devez d’abord affecter les membres de votre équipe aux profils de produits dans AEM as a Cloud Service depuis Adobe Admin Console afin qu’ils puissent accéder à ces ressources.
 
-Par conséquent, continuez votre parcours d’intégration en consultant le document [Affecter des membres de l’équipe aux profils de produits d’AEM as a Cloud Service.](assign-profiles-aem.md) Dans ce document, vous découvrirez comment accorder aux membres de votre équipe les droits dont ils ont besoin pour accéder à vos nouveaux environnements.
+Par conséquent, continuez votre parcours d’intégration en consultant le document [Affecter des membres de l’équipe aux profils de produits d’AEM as a Cloud Service](assign-profiles-aem.md). Dans ce document, vous apprenez à accorder aux membres de votre équipe les droits d’accès à vos nouveaux environnements.
 
 ## Ressources supplémentaires {#additional-resources}
 
 Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
 
-* [Gérer les environnements](/help/implementing/cloud-manager/manage-environments.md) : découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
-* [Utiliser Adobe Cloud Manager - Environnements](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=fr) : les environnements Cloud Manager sont composés de services de création, de publication et de Dispatcher AEM. Découvrez comment différents environnements prennent en charge les rôles et peuvent être utilisés à l’aide de différents pipelines CI/CD.
-* [AEM conseils et astuces concernant les champions - Types d’environnement de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Regardez cette vidéo pour un aperçu des types d’environnements Cloud Manager d’un champion d’AEM.
+* [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) - Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
+* [Utilisation d’Adobe Cloud Manager - Environnements](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/environments.html?lang=fr) - Les environnements Cloud Manager sont composés de services de création, de publication et de Dispatcher AEM. Découvrez comment différents environnements prennent en charge les rôles et peuvent être utilisés à l’aide de différents pipelines CI/CD.
 * [Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md) - Consultez cette documentation pour plus d’informations sur l’utilisation d’un RDE
+
+<!-- ERROR: Not Found (HTTP error 404) * [AEM Champion Tips and Tricks - Cloud Manager Environment Types](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/expert-resources/aem-champions/environment-types.md) - Watch this video for an overview of Cloud Manager environment types from an AEM champion. -->
+
