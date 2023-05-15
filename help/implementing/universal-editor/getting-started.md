@@ -2,9 +2,9 @@
 title: Prise en main d’Universal Editor dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: a933073346e6b7c3b4256269f5796a64a6dfbfa8
+source-git-commit: 1a98abc3baffe2de63a6030d9d65b7137603bec5
 workflow-type: tm+mt
-source-wordcount: '809'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Les connexions utilisées dans l’application sont stockées sous la forme `<me
 * `<protocol>` - Indique le module externe de persistance du service de persistance de l’éditeur universel à utiliser. Par exemple : `aem`
 * `<url>` - Il s’agit de l’URL vers le système où les modifications doivent être conservées. Par exemple : `http://localhost:4502`
 
-Identifiant court `auecon` signifie Adobe Universal Editor Connection.
+L&#39;identifiant `adobe:aem:editor:aemconnection` représente la connexion à Adobe Universal Editor.
 
 `itemid`s utilisera la variable `urn` pour raccourcir l’identifiant.
 
@@ -136,8 +136,8 @@ itemid="urn:<referenceName>:<resource>"
 ```html
 <html>
 <head>
-    <meta name="urn:auecon:aemconnection" content="aem:https://localhost:4502">
-    <meta name="urn:auecon:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
+    <meta name="urn:adobe:aem:editor:aemconnection:aemconnection" content="aem:https://localhost:4502">
+    <meta name="urn:adobe:aem:editor:aemconnection:fcsconnection" content="fcs:https://example.franklin.adobe.com/345fcdd">
 </head>
 <body>
         <aside>

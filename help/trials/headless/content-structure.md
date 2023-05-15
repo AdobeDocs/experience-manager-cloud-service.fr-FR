@@ -4,10 +4,10 @@ description: Découvrez comment utiliser AEM modèles de fragments de contenu po
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: 7134951a588eae3ee0c7c11abea17a34eac21474
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 43%
+source-wordcount: '1019'
+ht-degree: 42%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 43%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_overview_guide"
 >title="Lancer la console de modèles"
->abstract="Découvrez comment créer un schéma réutilisable, appelé modèle de fragment de contenu, pour votre contenu dans Adobe Experience Manager as a Cloud Service. Regardez la vidéo pour comprendre l’importance de cette étape. <br><br>Dans ce module d’apprentissage, nous utiliserons un site de voyage comme exemple et nous vous guiderons pour créer un modèle de séjour. Nous nous réfèrerons à ce modèle dans les modules ultérieurs. Vous devrez donc suivre le schéma d’affectation des noms fourni.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
+>abstract="Découvrez comment créer un schéma réutilisable, appelé modèle de fragment de contenu, pour votre contenu dans Adobe Experience Manager as a Cloud Service. Regardez la vidéo pour comprendre l’importance de cette étape. <br><br>Dans ce module d’apprentissage, nous utiliserons un site de voyage comme exemple et nous vous guiderons pour créer un modèle de séjour.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
 >additional-url="https://video.tv.adobe.com/v/3413261/?captions=fre_fr" text="Vidéo d’introduction à la structure de contenu"
 
 >[!CONTEXTUALHELP]
@@ -34,13 +34,13 @@ ht-degree: 43%
 
 La console de modèles de fragments de contenu s’ouvre dans un nouvel onglet. Considérez la console de modèles de fragments de contenu comme votre bibliothèque de modèles, dans laquelle vous créez de nouveaux modèles et gérez les modèles existants.
 
-Dans notre exemple, nous allons créer un modèle qui représente la structure de données d’un voyage présenté sur un site Web de voyage. Nous ferons référence à un voyage dans ce modèle sous la forme d’une **L&#39;aventure.**
+Dans notre exemple, nous allons créer un modèle qui représente la structure de données d’un voyage présenté sur un site Web de voyage. Nous nous référerons à un voyage utilisant ce modèle en tant que **Adventure**.
 
 1. Cliquez sur le bouton **Créer** en haut à droite de l’écran pour commencer à créer un modèle de fragment de contenu.
 
 1. L’assistant Créer un modèle démarre et vous guide tout au long de la création de votre modèle. Fournissez les informations requises.
 
-   * **Titre du modèle** : il s’agit d’une brève description du modèle qui indique généralement l’objectif du modèle. Nous appellerons notre nouveau modèle `Adventure`.
+   * **Titre du modèle** - Il s’agit d’une brève étiquette du modèle qui indique généralement l’objectif du modèle. Nous appellerons notre nouveau modèle `Adventure`.
    * **Activer le modèle** : cette option est activée par défaut et doit être cochée pour pouvoir créer des fragments de contenu basés sur ce modèle.
 
 1. Une fois les champs obligatoires remplis, cliquez sur **Créer** en haut à gauche pour créer le modèle.
@@ -51,13 +51,13 @@ Dans notre exemple, nous allons créer un modèle qui représente la structure d
 
 ## Utilisation de l’éditeur de modèles {#configure-model}
 
-Nous avons maintenant un modèle appelé **Adventure** pour représenter les voyages sur un site web de voyage, mais sans détails comme la durée, la destination, les activités, etc. Avant de pouvoir utiliser votre modèle, vous devez définir la structure de ses données.
+Nous avons maintenant un modèle appelé **Adventure**, mais il ne contient aucun détail comme la durée, la destination, les activités, etc. Avant de pouvoir utiliser votre modèle, vous devez définir la structure de ses données.
 
 L’éditeur de modèles de fragments de contenu vous permet de configurer les types de données et les propriétés qui définissent le contenu de votre modèle.
 
 >[!TIP]
 >
->Nous ajouterons quelques champs importants pour la variable **Adventure**. Dans les modules ultérieurs, nous utiliserons et ajouterons au modèle. Par conséquent, veuillez suivre le schéma d’affectation des noms fourni.
+>Il est important de suivre les schémas de nommage dans les instructions suivantes, car nous nous référerons à ces noms spécifiques dans les modules ultérieurs.
 
 1. Faites glisser un **Texte sur une seule ligne** du champ **Types de données** à droite de l’éditeur et déposez-le sur votre modèle de fragment de contenu.
 
@@ -76,11 +76,11 @@ Passez à la section suivante pour ajouter les champs nécessaires pour renseign
 
 ## Ajouter des champs au modèle {#additional-fields}
 
-Vous avez déjà un champ pour le titre de l&#39;aventure. Vous devez maintenant ajouter des champs pour capturer la description, le prix et une image représentative du voyage.
+Vous avez déjà un champ pour le titre de l&#39;aventure. Vous devez maintenant ajouter des champs pour capturer la description, le prix et une image représentative de l’aventure.
 
 >[!TIP]
 >
->Le **Adventure** Le modèle est basé sur l’exemple de site WKND pour AEM. Vous pouvez [Visitez le site ici](https://wknd.site/us/en/adventures/yosemite-backpacking.html) pour en savoir plus, si vous le souhaitez, mais sa connaissance n&#39;est pas nécessaire pour ces modules d&#39;apprentissage.
+>Le **Adventure** Le modèle est basé sur l’exemple de site WKND pour AEM. Vous pouvez [Visitez le site ici](https://wknd.site/us/en/adventures/yosemite-backpacking.html) pour afficher le contenu qui utilise la variable **Adventure** modèle.
 
 Suivez les mêmes étapes que ci-dessus pour ajouter ces champs supplémentaires. La seule différence réside dans les propriétés que vous devez définir.
 

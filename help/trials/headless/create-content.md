@@ -4,7 +4,7 @@ description: Utilisez le modèle de fragment de contenu que vous avez créé pr�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 73ff4edc591e64e797e14d00d6f87759e3f1301a
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 65%
@@ -57,7 +57,7 @@ Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, 
 
 1. L’éditeur de fragment de contenu affiche les champs que vous avez définis dans le modèle sélectionné. Vous pouvez ajouter du contenu à chaque champ pour compléter votre fragment de contenu. Votre progression est enregistrée automatiquement.
 
-1. Fournissez une **Titre** pour votre fragment en saisissant `Tuscan adventure`.
+1. Fournissez une **Titre** pour votre fragment en saisissant `Tuscan Adventure`.
 
 1. Fournissez une **Description** pour votre fragment en collant dans le texte suivant.
 

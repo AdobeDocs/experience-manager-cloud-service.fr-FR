@@ -4,10 +4,10 @@ description: Utilisez un exemple d’application React pour découvrir comment p
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 2f4e38ba9bb2e0aab4dc126719a922fc983f8711
+source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 95%
+source-wordcount: '1036'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 95%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide"
 >title="Lancer l’éditeur de fragment de contenu"
->abstract="Votre essai d’AEM découplé est intégré à un exemple d’application React. Vous pouvez ainsi voir à quel point il est facile pour n’importe qui de gérer le contenu indépendamment sans avoir à passer par le temps de développement.<br><br>Lancez ce module dans un nouvel onglet en cliquant ci-dessous, puis suivez ce guide."
+>abstract="Maintenant, découvrons comment fonctionne la création de contenu sans interface. Votre essai d’AEM découplé est intégré à un exemple d’application React. Vous pouvez ainsi voir à quel point il est facile pour n’importe qui de gérer le contenu indépendamment sans avoir à passer par le temps de développement.<br><br>Lancez ce module dans un nouvel onglet en cliquant ci-dessous, puis suivez ce guide."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_react_app_guide_footer"
