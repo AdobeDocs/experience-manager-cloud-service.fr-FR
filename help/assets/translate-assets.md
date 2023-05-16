@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management,Translation
 role: Admin,User
 exl-id: 98df1412-a957-48a3-81c2-7dfe1d5e6d31
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '2620'
-ht-degree: 75%
+source-wordcount: '2642'
+ht-degree: 76%
 
 ---
 
 # Traduire les ressources dans AEM {#multilingual-assets}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/multilingual-assets.html?lang=fr) |
+| AEM as a Cloud Service | Cet article |
 
 Les ressources multilingues sont des ressources comportant des fichiers binaires, des métadonnées et des balises dans plusieurs langues. En règle générale, les fichiers binaires, les métadonnées et les balises d’une ressource existent dans une langue, et sont ensuite traduits dans d’autres langues pour être utilisés dans des projets multilingues. Adobe Experience Manager Assets vous permet d’automatiser les processus de traduction des ressources (y compris les fichiers binaires, les métadonnées et les balises) afin de générer des ressources dans d’autres langues à utiliser dans des projets multilingues.
 

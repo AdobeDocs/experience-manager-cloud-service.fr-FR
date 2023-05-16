@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Insights,Asset Reports
 role: User,Leader
 exl-id: e268453b-e7c0-4aa4-bd29-2686edb5f99a
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '883'
-ht-degree: 90%
+source-wordcount: '905'
+ht-degree: 89%
 
 ---
 
-# Assets Insights {#asset-insights}
+# Assets Insights {#asset-insights}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/asset-insights.html?lang=en) |
+| AEM as a Cloud Service | Cet article |
 
 La fonctionnalité Statistiques sur les ressources effectue le suivi des évaluations des utilisateurs et des statistiques d’utilisation des images utilisées dans les sites web tiers, les campagnes marketing et les solutions de création d’Adobe. Elle permet d’obtenir des informations sur les performances et la popularité des images.
 
@@ -43,7 +48,7 @@ Vous pouvez afficher les scores de statistiques sur les ressources à partir de 
    * **[!UICONTROL Ressource]** : nombre de fois où la ressource faisait partie d’une collection ou d’une ressource composite.
    * **[!UICONTROL Web et mobile]** : nombre de fois où la ressource faisait partie de sites web et d’applications.
    * **[!UICONTROL Social]** : nombre de fois où la ressource a été utilisée dans d’autres solutions, telles qu’[!DNL Adobe Campaign].
-   * **[!UICONTROL Courrier électronique]** : nombre de fois où la ressource a été utilisée dans des campagnes par email.
+   * **[!UICONTROL E-mail]** : nombre de fois où la ressource a été utilisée dans des campagnes par e-mail.
 
    ![usage_statistics](assets/usage_statistics.png)
 

@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Management,DRM
 role: User,Admin
 exl-id: fa5f94df-1c15-4593-afcb-1d24508da2bf
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '1345'
-ht-degree: 94%
+source-wordcount: '1367'
+ht-degree: 95%
 
 ---
 
 # Gestion des droits numériques pour les ressources numériques {#digital-rights-management-in-assets}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/drm.html?lang=fr) |
+| AEM as a Cloud Service | Cet article |
 
 Les ressources numériques sont souvent associées à une licence qui prévoit les conditions et la durée de leur utilisation. En utilisant la plateforme d’[!DNL Experience Manager], vous pouvez gérer efficacement les informations d’expiration et de licence des ressources.
 

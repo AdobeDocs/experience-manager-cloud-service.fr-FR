@@ -5,14 +5,19 @@ contentOwner: AG
 feature: Asset Reports,Asset Management
 role: Admin,User
 exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
-source-wordcount: '918'
+source-wordcount: '940'
 ht-degree: 91%
 
 ---
 
 # Rapports de ressources {#asset-reports}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/asset-reports.html?lang=fr) |
+| AEM as a Cloud Service | Cet article |
 
 Les rapports de ressources vous permettent d’évaluer l’utilité de votre déploiement [!DNL Adobe Experience Manager Assets]. Avec [!DNL Assets], vous pouvez générer divers rapports pour vos ressources numériques. Les rapports contiennent des informations utiles sur l’utilisation de votre système, sur la façon dont les utilisateurs et utilisatrices interagissent avec les ressources et sur la façon dont les ressources sont <!-- downloaded and --> partagées.
 
