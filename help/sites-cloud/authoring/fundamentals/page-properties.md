@@ -2,9 +2,9 @@
 title: Modification des propriétés de page
 description: Définition des propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: ba1f2b7f1f61f7ba094047171e42e3cc8811a1b6
+source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
 workflow-type: tm+mt
-source-wordcount: '2387'
+source-wordcount: '2363'
 ht-degree: 69%
 
 ---
@@ -345,11 +345,3 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
       * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous appuyez sur **Terminé**.
       * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
    * Les champs qui sont communs, mais pour lesquels des valeurs différentes sont renseignées dans les différentes pages, sont signalés par une valeur spéciale, par exemple par le texte `<Mixed Entries>`.
-
->[!NOTE]
->
->Le composant de page peut être configuré pour spécifier les champs disponibles en vue de la modification en bloc. Reportez-vous à la section Configuration de votre page en vue de la modification en bloc des propriétés.
-
-<!--
->The page component can be configured to specify the fields available for bulk editing. See [Configuring your page for bulk editing of page properties](/help/sites-developing/bulk-editing.md).
--->
