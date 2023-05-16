@@ -3,7 +3,7 @@ title: Mises à jour de la version d’AEM
 description: Découvrez comment AEM as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) afin de conserver vos projets sur la dernière version.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: 59bc2b5af22ef23775195f098517cec40d98d66b
+source-git-commit: 7cdc7bb56565cccc04a2dcb74a6c8088ed4e7847
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 65%
@@ -51,6 +51,6 @@ Si la mise à jour de l’environnement de production échoue, Cloud Manager re
 
 Dans la plupart des cas, les mises à jour n’entraînent aucune interruption, y compris pour l’instance de création qui est un cluster de nœuds. Les mises à jour en continu sont possibles en raison des [la fonctionnalité de magasin de noeuds composites dans Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. Dans un roulement [déploiement bleu-vert,](/help/implementing/deploying/overview.md#index-management-using-blue-green-deployments) la nouvelle version d’AEM verte contient sa propre version `/libs` (référentiel non modifiable basé sur TarMK), distinct de l’ancienne version bleue de l’AEM, bien que les deux fassent référence à un référentiel modifiable partagé basé sur DocumentMK qui contient des zones comme `/content` , `/conf` , `/etc` et autres.
+Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. Dans un roulement [déploiement bleu-vert,](/help/implementing/deploying/overview.md#how-rolling-deployments-work) la nouvelle version d’AEM verte contient sa propre version `/libs` (référentiel non modifiable basé sur TarMK), distinct de l’ancienne version bleue de l’AEM, bien que les deux fassent référence à un référentiel modifiable partagé basé sur DocumentMK qui contient des zones comme `/content` , `/conf` , `/etc` et autres.
 
 Comme les versions bleue et verte possèdent leur propre version de `/libs`, elles peuvent toutes deux être actives pendant la mise à jour en continu, se partageant le trafic jusqu’à ce que la version verte remplace complètement la bleue.
