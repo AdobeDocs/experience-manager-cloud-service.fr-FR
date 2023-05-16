@@ -2,10 +2,10 @@
 title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
 workflow-type: tm+mt
-source-wordcount: '2022'
-ht-degree: 100%
+source-wordcount: '2054'
+ht-degree: 97%
 
 ---
 
@@ -142,11 +142,15 @@ La liste des instances existantes s’affiche :
 
 Sous chaque instance de contexte de produit, il y a des instances couvrant les services Auteur ou Publication dans les environnements de production, d’évaluation ou de développement. Chaque instance est associée aux rôles Profils de produit ou Cloud Manager. Ces profils de produits servent à attribuer l’accès aux utilisateurs et aux groupes avec le privilège requis.
 
-Le profil **Administrator_xxx** sera utilisé pour accorder des privilèges d’administrateur à l’instance AEM associée, tandis que le profil **User_xxx** sera utilisé pour ajouter des utilisateurs ordinaires.
+Le **AEM Administrateurs_xxx** Le profil sera utilisé pour accorder des privilèges d’administrateur dans l’instance d’AEM associée pendant que la fonction **AEM Users_xxx** profile est utilisé pour ajouter des utilisateurs réguliers.
 
 Tous les utilisateurs et groupes ajoutés au profil de produit pourront se connecter à cette instance, comme illustré dans l’exemple ci-dessous :
 
 ![Profil du produit](/help/security/assets/ims8.png)
+
+>[!WARNING]
+>
+>Le **Administrateurs AEM** le nom du profil de produit ne doit pas être modifié. Modification du nom de la variable **Administrateurs AEM** product profile supprime les droits d’administrateur de tous les utilisateurs affectés à ce profil.
 
 ### Connexion à Adobe Experience Manager as a Cloud Service {#logging-in-to-aem}
 
