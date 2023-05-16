@@ -1,25 +1,27 @@
 ---
 title: Mises à jour de la version d’AEM
-description: Mises à jour de la version d’AEM
+description: Découvrez comment AEM as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) afin de conserver vos projets sur la dernière version.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: f977c6d8fa3ebd4b082e48da8b248178f9a2f34b
+source-git-commit: 58ad2e4dec1c55426846f16918b3de13846ac03d
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 100%
+source-wordcount: '483'
+ht-degree: 65%
 
 ---
 
 
 # Mises à jour de la version d’AEM {#aem-version-updates}
 
-## Présentation {#introduction}
+Découvrez comment AEM as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) afin de conserver vos projets sur la dernière version.
 
-AEM as a Cloud Service utilise désormais l’intégration continue et la diffusion continue (CI/CD) pour garantir que vos projets utilisent la version d’AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la version d’AEM la plus récente sans aucune interruption de service pour les utilisateurs et utilisatrices.
+## CI/CD {#ci-cd}
 
->[!NOTE]
->
->Si la mise à jour de l’environnement de production échoue, Cloud Manager restaurera automatiquement l’environnement d’évaluation. Cette opération s’effectue automatiquement afin de s’assurer qu’une fois la mise à jour terminée, les environnements d’évaluation et de production utilisent la même version d’AEM.
+AEM as a Cloud Service utilise l’intégration continue et la diffusion continue (CI/CD) pour s’assurer que vos projets utilisent la version AEM la plus récente. Cela signifie que les instances de production et d’évaluation sont mises à jour vers la version d’AEM la plus récente sans aucune interruption de service pour les utilisateurs et utilisatrices.
+
+Les mises à jour de version sont appliquées automatiquement aux instances de production et d’évaluation uniquement. [AEM mises à jour doivent être appliquées manuellement à toutes les autres instances.](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment)
+
+## Type de mises à jour {#update-types}
 
 Il existe deux types de mises à jour de la version d’AEM :
 
@@ -31,11 +33,15 @@ Il existe deux types de mises à jour de la version d’AEM :
 
 * **Mises à jour avec de nouvelles fonctionnalités**
 
-   * Elles sont publiées selon un calendrier mensuel et prévisible.
+   * Sont publiées sur un [planification mensuelle prévisible.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr)
+
+## Échec de la mise à jour {#update-failure}
 
 Les mises à jour d’AEM passent par un pipeline de validation de produit avancé et entièrement automatisé, impliquant plusieurs étapes et ne perturbant pas le service des systèmes en production. Les contrôles d’intégrité servent à surveiller l’état de l’application. Si ces contrôles échouent lors d’une mise à jour d’AEM as a Cloud Service, la version ne sera pas publiée et Adobe examinera les raisons pour lesquelles la mise à jour a provoqué ce comportement inattendu.
 
 [Les tests de produits et les tests fonctionnels du client](/help/implementing/cloud-manager/overview-test-results.md#functional-testing) qui empêchent que les mises à niveau de produit et les publications de code client interrompent la production, sont également validés lors d’une mise à jour de la version d’AEM.
+
+Si la mise à jour de l’environnement de production échoue, Cloud Manager restaurera automatiquement l’environnement d’évaluation. Cette opération s’effectue automatiquement afin de s’assurer qu’une fois la mise à jour terminée, les environnements d’évaluation et de production utilisent la même version d’AEM.
 
 >[!NOTE]
 >
@@ -43,6 +49,8 @@ Les mises à jour d’AEM passent par un pipeline de validation de produit avanc
 
 ## Magasin de nœuds composites {#composite-node-store}
 
-Dans la plupart des cas, les mises à jour n’entraînent aucune interruption, y compris pour l’instance de création qui est un cluster de nœuds. Les mises à jour en continu sont possibles en raison de la fonctionnalité de magasin de nœuds composites dans Oak.
+Dans la plupart des cas, les mises à jour n’entraînent aucune interruption, y compris pour l’instance de création qui est un cluster de nœuds. Les mises à jour en continu sont possibles en raison des [la fonctionnalité de magasin de noeuds composites dans Oak.](https://jackrabbit.apache.org/oak/docs/nodestore/compositens.html)
 
-Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. Dans un déploiement en continu, la nouvelle version verte d’AEM contient son propre `/libs` (référentiel non modifiable basé sur TarMK), distinct de l’ancienne version bleue d’AEM, bien que les deux fassent référence à un référentiel modifiable partagé et basé sur DocumentMK qui contient des zones comme `/content`, `/conf`, `/etc` et d’autres. Comme les versions bleue et verte possèdent leur propre version de `/libs`, elles peuvent toutes deux être actives pendant la mise à jour en continu, se partageant le trafic jusqu’à ce que la version verte remplace complètement la bleue.
+Cette fonctionnalité permet à AEM de faire référence à plusieurs référentiels simultanément. Dans un roulement [déploiement bleu-vert,](/help/operations/indexing.md#what-is-blue-green-deployment) la nouvelle version d’AEM verte contient sa propre version `/libs` (référentiel non modifiable basé sur TarMK), distinct de l’ancienne version bleue de l’AEM, bien que les deux fassent référence à un référentiel modifiable partagé basé sur DocumentMK qui contient des zones comme `/content` , `/conf` , `/etc` et autres.
+
+Comme les versions bleue et verte possèdent leur propre version de `/libs`, elles peuvent toutes deux être actives pendant la mise à jour en continu, se partageant le trafic jusqu’à ce que la version verte remplace complètement la bleue.
