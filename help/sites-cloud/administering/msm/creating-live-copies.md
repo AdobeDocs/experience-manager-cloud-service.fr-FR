@@ -4,10 +4,10 @@ description: Découvrez comment créer et synchroniser des Live Copies pour uti
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: 17d828f7813657aaeca49bfc87447c2bc24e712d
 workflow-type: tm+mt
-source-wordcount: '4274'
-ht-degree: 87%
+source-wordcount: '4322'
+ht-degree: 86%
 
 ---
 
@@ -136,6 +136,10 @@ Pour créer une Live Copy :
 
 1. (Facultatif) Pour spécifier une ou plusieurs configurations de déploiement à utiliser pour la Live Copy, utilisez la liste déroulante **Configurations de déploiement** pour les sélectionner. Les configurations sélectionnées s’affichent sous le sélecteur déroulant.
 1. Cliquez ou appuyez sur **Créer**. Un message de confirmation s’affiche. Vous pouvez sélectionner l’une des options suivantes : **Ouvrir** ou **Terminé**.
+
+   >[!NOTE]
+   >
+   >Une boîte de dialogue d’erreur peut s’afficher avec le message &quot;Échec de l’envoi du formulaire&quot;. Cela se produit en raison d’un délai d’expiration du réseau. Cependant, le processus de création de la Live Copy s’exécute en arrière-plan. Patientez quelques minutes et vérifiez que les pages de la Live Copy ont été correctement créées.
 
 ### Création d’une Live Copy d’un site à partir d’une configuration de plan directeur {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
