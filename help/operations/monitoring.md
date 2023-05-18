@@ -2,10 +2,10 @@
 title: Surveillance des infrastructures et des services dans AEM as a Cloud Service
 description: Surveillance des infrastructures et des services dans AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: eb4c49b8d173d1d402d22824bc98e4713ab54c31
+source-git-commit: 34fed4e64b49ab32e7025c9654d930e3fa362a52
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 100%
+source-wordcount: '600'
+ht-degree: 95%
 
 ---
 
@@ -32,6 +32,10 @@ Tous vos environnements AEM as a Cloud Service sont sous surveillance pour assur
 ### Surveillance personnalisée {#custom-monitoring}
 
 Grâce à la surveillance personnalisée, les clients ont la possibilité de fournir jusqu’à cinq URL de propriété web distinctes avant la variable [Mise en production](/help/journey-migration/go-live.md). Ces URL doivent être valides et renvoyer un code de réponse HTTP 200. Ces moniteurs prennent en charge les clients qui [placent leur propre réseau CDN](/help/implementing/dispatcher/cdn.md#point-to-point-CDN) en amont du réseau CDN Adobe et de tout routage de trafic externe utilisé en amont d’AEM as a Cloud Service qui n’est pas sous le contrôle d’Adobe. Les alertes résultant des contrôles de surveillance personnalisée impliquent les équipes et les processus d’assistance d’Adobe.
+
+>[!NOTE]
+>
+> Cette fonctionnalité n’est proposée qu’aux clients bénéficiant d’une assistance cloud avancée. Si vous avez des questions, contactez l’assistance via la console d’administration.
 
 ## Surveillance des modules internes {#module-monitoring}
 
