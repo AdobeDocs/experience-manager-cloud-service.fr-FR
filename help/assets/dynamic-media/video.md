@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Video Profiles
 role: User
 exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
-source-git-commit: 96d11aad425ba7c78a685b3509cd96749d938229
+source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
 workflow-type: tm+mt
-source-wordcount: '5887'
-ht-degree: 98%
+source-wordcount: '5868'
+ht-degree: 99%
 
 ---
 
@@ -424,10 +424,6 @@ Voici quelques avantages clés de l’activation de DASH sur votre compte :
 * Permet de rendre la diffusion vidéo plus accessible à vos clientes et clients.
 * Vous pouvez également obtenir l’URL de streaming au moyen des API.
 
-   >[!IMPORTANT]
-   >
-   >L’activation de DASH sur votre compte est actuellement disponible uniquement en Asie-Pacifique et en Amérique du Nord ; Bientôt en Europe, Moyen-Orient, Afrique.
-
 Vous lancez une demande d’utilisation du DASH ; il n’est pas activé automatiquement sur votre compte.
 
 Pour activer le DASH sur votre compte, créez un dossier de support comme décrit ci-dessous. Dans ce dossier, indiquez que vous souhaitez activer le DASH sur votre compte Dynamic Media et sur Experience Manager.
@@ -435,7 +431,7 @@ Pour activer le DASH sur votre compte, créez un dossier de support comme décri
 **Pour activer le DASH sur votre compte :**
 
 1. [Utilisez l’Admin Console pour commencer la création d’un nouveau dossier de support.](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
-1. Suivez les instructions pour créer un dossir de support en veillant à fournir les informations suivantes :
+1. Pour créer un cas d’assistance, suivez les instructions tout en vous assurant de fournir les informations suivantes :
 
    * nom, adresse électronique et numéro de téléphone du contact principal.
    * Nom de votre compte Dynamic Media.
