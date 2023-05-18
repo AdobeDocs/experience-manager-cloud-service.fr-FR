@@ -2,9 +2,9 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1a42cfaa1010686279bc11ca92f50afc75d89e9d
+source-git-commit: 6b2ce7a4fb355e9ce78fbd7e0efee65c09fed932
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1381'
 ht-degree: 91%
 
 ---
@@ -70,7 +70,7 @@ Vous pouvez également y parvenir en créant un modèle de workflow qui utilise 
    ![Étape du processus](/help/operations/assets/processstep.png)
 
 1. Cliquez sur l’étape Processus dans le flux et sélectionnez **Configurer** en appuyant sur l’icône en forme de clé à molette.
-1. Cliquez sur l’onglet **Processus** et sélectionnez `Publish Content Tree` dans la liste déroulante.
+1. Cliquez sur l’onglet **Processus** et sélectionnez `Publish Content Tree` dans la liste déroulante., puis cochez la case **Avance du gestionnaire** case à cocher
 
    ![Activation d’arborescence](/help/operations/assets/newstep.png)
 
