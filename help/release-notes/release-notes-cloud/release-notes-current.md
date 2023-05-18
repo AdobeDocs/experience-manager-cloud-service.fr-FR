@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 371a8a0af731c1d9c139d08e4c773c0654dafd4e
+source-git-commit: d202b0543020b277de982e3965475074a71b286d
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '730'
 ht-degree: 37%
 
 ---
@@ -50,7 +50,7 @@ Regardez la vidéo Aperçu de la version de février 2023 pour un résumé des f
    * Largement adopté dans le secteur, DASH est le protocole standard international pour la diffusion en continu à débit adaptatif de vidéos
    * Disponible dans NA, pour activation via un ticket d’assistance, bientôt disponible dans APAC, EMEA
 
-* Ajout de la prise en charge des images WebP pour extraire automatiquement les métadonnées, générer des miniatures et des rendus personnalisés. Les fonctionnalités Balisage intelligent et Recadrage intelligent sont désormais également prises en charge pour ces fichiers.
+* Ajout de la prise en charge des images WebP pour extraire automatiquement les métadonnées, générer des miniatures et des rendus personnalisés. La fonctionnalité de balise intelligente est désormais prise en charge pour ces fichiers.
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
 
