@@ -2,7 +2,7 @@
 title: Environnements de développement rapide
 description: Découvrez comment tirer parti des environnements de développement rapide pour réaliser des itérations de développement rapides sur un environnement cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 0095cb1fff99a52f5a048833b3d5a65643c1056d
+source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
 source-wordcount: '3325'
 ht-degree: 97%
@@ -118,13 +118,7 @@ Une fois que vous avez ajouté un RDE pour votre programme à l’aide de Cloud�
    3. Workspace: <no workspace selected>
    ```
 
-1. Vérifiez la réussite de la connexion en exécutant
-
-   `aio cloudmanager:list-programs`
-
-   Cette opération affiche la liste de tous les programmes de votre organisation configurée.
-
-   Notez que l’opération ci-dessus nécessite que vous soyez membre du profil de produit **Développeur - Cloud Service** pour Cloud Manager. Consultez [cette page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus de détails.
+   Notez que cette étape nécessite que vous soyez membre de Cloud Manager **Développeur - Cloud Service** Profil du produit. Consultez [cette page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus de détails.
 
    Vous pouvez également vérifier que vous disposez de ce rôle de développeur si vous pouvez vous connecter à Developer Console à l’aide de la commande suivante :
 
@@ -138,6 +132,13 @@ Une fois que vous avez ajouté un RDE pour votre programme à l’aide de Cloud�
    ```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
+
+1. Vérifiez la réussite de la connexion en exécutant
+
+   `aio cloudmanager:list-programs`
+
+   Cette opération affiche la liste de tous les programmes de votre organisation configurée.
+
 
 Pour plus d’informations et des démonstrations, consultez le tutoriel vidéo [configuration d’un RDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/developing/rde/how-to-setup.html).
 
