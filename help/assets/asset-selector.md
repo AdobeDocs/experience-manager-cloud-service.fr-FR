@@ -3,9 +3,9 @@ title: Sélecteur de ressources pour [!DNL Adobe Experience Manager] as a [!DNL 
 description: Utilisez le sélecteur de ressources pour rechercher, rechercher et récupérer les métadonnées et les rendus des ressources dans votre application.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: 22d2a2235c8696fce76369d3ffe369bcbaa3f6f2
+source-git-commit: af36101d8fecd7fab2300f93d40bba4c92f8eafe
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2378'
 ht-degree: 4%
 
 ---
@@ -30,6 +30,8 @@ Le sélecteur de ressources offre de nombreux avantages, tels que :
 * Possibilité de changer de référentiels au sein d’une organisation IMS pour la sélection de ressources.
 
 * Possibilité de trier les ressources par nom, dimensions et taille, et de les afficher en mode Liste, Grille, Galerie ou Cascade.
+
+Le but de cet article est de montrer comment utiliser le sélecteur de ressources avec une [!DNL Adobe] application sous Shell unifié ou lorsque vous avez déjà généré un imsToken pour l’authentification. Dans cet article, ces workflows sont appelés flux non SUSI.
 
 Effectuez les tâches suivantes pour intégrer et utiliser le sélecteur de ressources avec votre [!DNL Experience Manager Assets as a Cloud Service] référentiel :
 
@@ -361,8 +363,8 @@ Vous pouvez utiliser les propriétés du sélecteur de ressources pour personnal
 |---|---|---|---|---|
 | *rail* | booléen | Non | false | Si marqué `true`, le sélecteur de ressources s’affiche dans un rail de gauche. S’il est marqué `false`, le sélecteur de ressources s’affiche dans la vue modale. |
 | *imsOrg* | chaîne | Oui |  | Adobe de l’identifiant du système Identity Management (IMS) attribué lors de la mise en service [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] pour votre organisation. Le `imsOrg` clé est requise pour vous authentifier si l’organisation à laquelle vous accédez se trouve sous Adobe IMS ou non. |
-| *imsToken* | chaîne | Non |  | Jeton de support IMS utilisé pour l’authentification. `imsToken` n’est pas nécessaire si vous utilisez le flux SUSI. Cependant, il est requis si vous utilisez le flux non SUSI. |
-| *apiKey* | chaîne | Non |  | Clé d’API utilisée pour accéder au service AEM Discovery. `apiKey` n’est pas nécessaire si vous utilisez le flux SUSI. Toutefois, il est requis dans un flux non SUSI. |
+| *imsToken* | chaîne | Non |  | Jeton de support IMS utilisé pour l’authentification. `imsToken` est requis si vous utilisez le flux non SUSI. |
+| *apiKey* | chaîne | Non |  | Clé d’API utilisée pour accéder au service AEM Discovery. `apiKey` est requis si vous utilisez le flux non SUSI. |
 | *rootPath* | chaîne | Non | /content/dam/ | Chemin du dossier à partir duquel le sélecteur de ressources affiche vos ressources. `rootPath` peut également être utilisé sous la forme d’encapsulation. Par exemple, étant donné le chemin suivant, `/content/dam/marketing/subfolder/`, le sélecteur de ressources ne vous permet pas de parcourir les dossiers parents, mais affiche uniquement les dossiers enfants. |
 | *path* | chaîne | Non |  | Chemin d’accès utilisé pour accéder à un répertoire spécifique de ressources lors du rendu du sélecteur de ressources. |
 | *filterSchema* | tableau | Non |  | Modèle utilisé pour configurer les propriétés de filtre. Cela s’avère utile lorsque vous souhaitez limiter certaines options de filtre dans le sélecteur de ressources. |
