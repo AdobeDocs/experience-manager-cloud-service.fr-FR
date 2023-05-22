@@ -2,10 +2,10 @@
 title: Surveillance des infrastructures et des services dans AEM as a Cloud Service
 description: Surveillance des infrastructures et des services dans AEM as a Cloud Service
 exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
-source-git-commit: 34fed4e64b49ab32e7025c9654d930e3fa362a52
+source-git-commit: f55439552e253b8b71b40525454130c6f163e6d4
 workflow-type: tm+mt
-source-wordcount: '600'
-ht-degree: 95%
+source-wordcount: '607'
+ht-degree: 94%
 
 ---
 
@@ -35,7 +35,7 @@ Grâce à la surveillance personnalisée, les clients ont la possibilité de fou
 
 >[!NOTE]
 >
-> Cette fonctionnalité n’est proposée qu’aux clients bénéficiant d’une assistance cloud avancée. Si vous avez des questions, contactez l’assistance via la console d’administration.
+> Cette fonctionnalité est uniquement proposée aux clients qui ont [Prise en charge avancée du cloud.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Si vous avez des questions, contactez l’assistance via la console d’administration.
 
 ## Surveillance des modules internes {#module-monitoring}
 
