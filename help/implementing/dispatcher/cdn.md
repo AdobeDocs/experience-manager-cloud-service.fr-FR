@@ -6,7 +6,7 @@ exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
 source-wordcount: '1023'
-ht-degree: 52%
+ht-degree: 62%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 52%
 
 AEM as a Cloud Service est fourni avec un réseau de diffusion de contenu intégré. Son principal objectif est de réduire la latence en fournissant du contenu pouvant être mis en cache à partir des nœuds CDN en périphérie, près du navigateur. Il est entièrement géré et configuré afin de permettre des performances optimales des applications AEM.
 
-Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des exigences de performances et de sécurité du client. Pour le niveau de publication, les clients peuvent éventuellement y pointer à partir de leur propre réseau de diffusion de contenu, qu’ils doivent gérer. Ce scénario est autorisé au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client dispose d’une intégration héritée avec son fournisseur de réseau de diffusion de contenu difficile à abandonner.
+Le réseau de diffusion de contenu géré par AEM satisfait à la plupart des exigences de performances et de sécurité du client. Pour le niveau de publication, les clients et clientes peuvent éventuellement privilégier leur propre réseau CDN, mais il leur appartiendra de le gérer. Ce scénario sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client ou la cliente possède une ancienne intégration avec son fournisseur CDN, et qu’il soit difficile de l’abandonner.
 
 <!-- ERROR: NEITHER URL IS FOUND (HTTP ERROR 404) Also, see the following videos [Cloud 5 AEM CDN Part 1](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part1.html) and [Cloud 5 AEM CDN Part 2](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-cdn-part2.html) for additional information about CDN in AEM as a Cloud Service. -->
 
@@ -45,7 +45,7 @@ Consultez le document [Gestion des listes d’adresses IP autorisées](/help/im
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
 >title="Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré par AEM"
->abstract="AEM as a Cloud Service offre aux clients une option pour utiliser son réseau CDN. Pour le niveau de publication, les clients peuvent éventuellement y pointer à partir de leur propre réseau de diffusion de contenu, qu’ils doivent gérer. Ce scénario est autorisé au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client dispose d’une intégration héritée avec son fournisseur de réseau de diffusion de contenu difficile à abandonner."
+>abstract="AEM as a Cloud Service offre aux clients une option pour utiliser son réseau CDN. Pour le niveau de publication, les clients et clientes peuvent éventuellement privilégier leur propre réseau CDN, mais il leur appartiendra de le gérer. Ce scénario sera possible au cas par cas, en fonction de certaines conditions préalables, y compris, mais sans s’y limiter, le fait que le client ou la cliente possède une ancienne intégration avec son fournisseur CDN, et qu’il soit difficile de l’abandonner."
 
 Si un client doit utiliser son réseau de diffusion de contenu existant, il peut le gérer et le pointer vers le réseau de diffusion de contenu géré par AEM, à condition que les conditions suivantes soient satisfaites :
 
