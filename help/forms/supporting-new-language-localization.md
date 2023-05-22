@@ -5,21 +5,21 @@ description: AEM Forms vous permet d’ajouter de nouveaux paramètres régiona
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1188'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Prise en charge de nouveaux paramètres régionaux pour la localisation des formulaires adaptatifs {#supporting-new-locales-for-adaptive-forms-localization}
 
-AEM Forms fournit une prise en charge immédiate des langues suivantes : anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais-brésilien (pt-BR), chinois (zh-CN), chinois-Taïwan (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN).
+AEM Forms fournit une prise en charge immédiate des paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR). Vous pouvez également ajouter la prise en charge d’autres paramètres régionaux comme l’hindi (hi_IN).
 
 ## Présentation des dictionnaires de paramètres régionaux {#about-locale-dictionaries}
 
 La localisation des formulaires adaptatifs repose sur deux types de dictionnaires de paramètres régionaux : 
 
-* **Dictionnaire spécifique au formulaire** : il contient des chaînes utilisées dans des formulaires adaptatifs. Par exemple, les libellés, les noms de champ, les messages d’erreur et les descriptions d’aide. Il est géré sous forme de jeu de fichiers XLIFF pour chaque jeu de paramètres régionaux et accessible à l’adresse `[author-instance]/libs/cq/i18n/gui/translator.html`.
+* **Dictionnaire spécifique au formulaire** : il contient des chaînes utilisées dans des formulaires adaptatifs. Par exemple, les étiquettes, les noms de champ, les messages d’erreur et les descriptions d’aide. Il est géré sous forme de jeu de fichiers XLIFF pour chaque jeu de paramètres régionaux et accessible à l’adresse `[author-instance]/libs/cq/i18n/gui/translator.html`.
 
 * **Dictionnaires globaux** : la bibliothèque client AEM comporte deux dictionnaires globaux, gérés en tant qu’objets JSON. Ces dictionnaires contiennent les messages d’erreur par défaut, les noms des mois, les symboles de devise, les modèles de date et d’heure, etc. Vous trouverez ces dictionnaires à l’adresse `[author-instance]/libs/fd/xfaforms/clientlibs/I18N`. Ces emplacements contiennent des dossiers distincts pour chaque paramètre régional. Étant donné que les dictionnaires globaux ne sont pas mis à jour fréquemment, conserver des fichiers JavaScript distincts pour chaque paramètre régional permet aux navigateurs de les mettre en cache et de réduire l’utilisation de la bande passante du réseau lors de l’accès à différents formulaires adaptatifs sur le même serveur.
 
@@ -74,7 +74,7 @@ I18N.js
 
 ##### 3.2. Ajouter une bibliothèque cliente de formulaires adaptatifs pour un dossier locale-name de paramètre régional
 
-1. Créez un noeud appelé `[locale-name]_af` et saisissez comme `cq:ClientLibraryFolder` under `etc/clientlibs/locale_name`, avec la catégorie comme `guides.I18N.<locale>` et les dépendances en tant que `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`.
+1. Créez un nœud appelé `[locale-name]_af` avec le type `cq:ClientLibraryFolder` sous `etc/clientlibs/locale_name`, avec la catégorie `guides.I18N.<locale>` et les dépendances `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` et `guide.common`.
 1. Créez un dossier appelé `javascript` et ajoutez les fichiers suivants :
 
    * **i18n.js** qui définit `guidelib.i18n`, comportant des motifs « calendarSymbols », `datePatterns`, `timePatterns`, `dateTimeSymbols`, `numberPatterns`, `numberSymbols`, `currencySymbols`, `typefaces` pour `<locale>` conformément aux spécifications XFA décrites dans [Spécification du jeu de paramètres régionaux](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf).
@@ -97,7 +97,7 @@ Exécutez cette étape uniquement si l’élément `<locale>` que vous ajoutez n
 1. Ajoutez les valeurs des paramètres régionaux par défaut `<locale-name>` `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr`, si elles ne sont pas déjà présentes.
 
 1. Ajoutez `<locale>` aux valeurs de la propriété `languages` de `/etc/languages`.
-1. Ajoutez les dossiers nouvellement créés dans le `filter.xml` sous etc/META-INF/[hiérarchie de dossiers] comme :
+1. Ajoutez les dossiers que vous venez de créer au `filter.xml` sous etc/META-INF/[hiérarchie de dossiers] en tant que :
 
    ```
    <filter root="/etc/clientlibs/[locale-name]"/>
@@ -126,9 +126,9 @@ Effectuez les étapes suivantes pour utiliser et générer un formulaire adaptat
 
 Deux méthodes permettent d’identifier les paramètres régionaux d’un formulaire adaptatif. Lors du rendu d’un formulaire adaptatif, il identifie les paramètres régionaux nécessaires :
 
-* Récupération de la variable `[local]` sélecteur dans l’URL du formulaire adaptatif. Le format de l’URL est `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. L’utilisation du sélecteur `[local]` permet de mettre en cache un formulaire adaptatif ;
+* Récupération du sélecteur `[local]` dans l’URL du formulaire adaptatif. Le format de l’URL est `http://host:[port]/content/forms/af/[afName].[locale].html?wcmmode=disabled`. L’utilisation du sélecteur `[local]` permet de mettre en cache un formulaire adaptatif ;
 
-* Récupération des paramètres suivants dans l’ordre indiqué :
+* La récupération des paramètres suivants dans l’ordre indiqué :
 
    * Paramètre de requête `afAcceptLang`
 Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre le paramètre de demande 
@@ -148,7 +148,7 @@ Procurez-vous l’[exemple de bibliothèque cliente](/help/forms/assets/locale-s
 
 ## Bonnes pratiques pour la prise en charge d’une nouvelle localisation {#best-practices}
 
-* Adobe recommande de créer un projet de traduction après avoir créé un formulaire adaptatif.
+* Adobe recommande de créer un projet de traduction après la création d’un formulaire adaptatif.
 
 * Lorsque de nouveaux champs sont ajoutés dans un formulaire adaptatif existant :
    * **Pour la traduction automatique** : recréez le dictionnaire et exécutez le projet de traduction. Les champs ajoutés à un formulaire adaptatif après la création d’un projet de traduction ne sont pas traduits.
