@@ -3,7 +3,7 @@ title: Prise en charge des notes de bas de page
 description: Prise en charge de l’éditeur de texte enrichi pour les notes de bas de page.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '369'
 ht-degree: 100%
 
