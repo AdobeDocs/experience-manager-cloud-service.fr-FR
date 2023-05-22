@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: bf3b7286bbf77f5a45884d4d3a40c020fe42411f
 workflow-type: tm+mt
 source-wordcount: '2305'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 
@@ -27,7 +27,7 @@ Les tests de l’interface utilisateur sont conditionnés dans une image Docker 
 
 Adobe encourage l’utilisation de Cypress.IO, car il propose un rechargement en temps réel et une attente automatique, ce qui permet de gagner du temps et d’améliorer la productivité pendant les tests. Cypress.IO fournit également une syntaxe simple et intuitive, ce qui facilite l&#39;apprentissage et l&#39;utilisation, même pour ceux qui sont nouveaux à tester.
 
-Les tests de l’interface utilisateur sont exécutés dans le cadre d’un point de contrôle qualité spécifique pour chaque pipeline Cloud Manager avec une [**Tests de l’interface utilisateur personnalisée** step](/help/implementing/cloud-manager/deploy-code.md) in [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou facultatif [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
+Les tests de l’interface utilisateur sont exécutés dans le cadre d’un point de contrôle qualité spécifique pour chaque pipeline Cloud Manager avec une étape de [**Tests de l’interface utilisateur personnalisée** ](/help/implementing/cloud-manager/deploy-code.md) dans les [pipelines de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou dans les [pipelines hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md). Tous les tests de l’interface utilisateur, y compris les régressions et les nouvelles fonctionnalités, permettent de détecter et de signaler des erreurs.
 
 Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écrits en Java, les tests de l’interface utilisateur peuvent être une image Docker avec des tests écrits dans n’importe quelle langue, à condition qu’ils respectent les conventions définies dans la section [Création de tests d’interface utilisateur](#building-ui-tests).
 
@@ -263,13 +263,13 @@ Vous pouvez utiliser les fonctions d’assistance pour créer des captures d’�
 * JavaScript : [commande takeScreenshot](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/test-module/lib/commons.js)
 * Java : [commandes](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/test-module/src/main/java/com/adobe/cq/cloud/testing/ui/java/ui/tests/lib/Commands.java)
 
-Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger à partir de Cloud Manager à l’aide de la fonction `Download Details` sous le bouton [**Tests de l’interface utilisateur personnalisée** step](/help/implementing/cloud-manager/deploy-code.md).
+Si une archive de résultats de test est créée lors de l’exécution d’un test de l’interface utilisateur, vous pouvez la télécharger à partir de Cloud Manager. Pour cela, cliquez sur le bouton `Download Details` sous l’étape [**Tests de l’interface utilisateur personnalisée**.](/help/implementing/cloud-manager/deploy-code.md)
 
 ### Charger des fichiers {#upload-files}
 
 Les tests doivent parfois charger des fichiers vers l’application en cours de test. Afin que le déploiement de Selenium puisse s’adapter à vos tests, il n’est pas possible de charger directement une ressource vers Selenium. Au lieu de cela, le chargement d’un fichier nécessite de suivre les étapes suivantes.
 
-1. Chargez le fichier à l’URL spécifiée par la variable d’environnement `UPLOAD_URL`. 
+1. Chargez le fichier à l’URL spécifiée par la variable d’environnement `UPLOAD_URL`.
    * Le chargement doit être effectué dans une requête POST avec un formulaire en plusieurs parties.
    * Le formulaire en plusieurs parties doit comporter un seul champ de fichier.
    * Celui-ci doit être équivalent à `curl -X POST ${UPLOAD_URL} -F "data=@file.txt"`.

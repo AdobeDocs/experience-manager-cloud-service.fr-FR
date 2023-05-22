@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 3a00faaf285be693243e3fb55159149520293610
 workflow-type: tm+mt
 source-wordcount: '1113'
-ht-degree: 86%
+ht-degree: 95%
 
 ---
 
@@ -40,26 +40,26 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
 
 [!DNL Workfront for Experience Manager enhanced connector] La version 1.9.9, publiée le 10 avril 2023, comprend les mises à jour suivantes :
 
-* Experience Manager affiche une `DateTimeParseException` lorsqu’elle reçoit la date de dernière modification de Workfront lors de la création du dossier lié.
+* Experience Manager affiche une exception `DateTimeParseException` lorsqu’il reçoit la date de dernière modification de Workfront lors de la création du dossier lié.
 
-* Problèmes lors de la création de plusieurs dossiers de projet liés dans un délai court.
+* Problèmes lors de la création de plusieurs dossiers de projet liés dans un court laps de temps.
 
 * Impossible de configurer une limite de seuil pour le nombre de nouveaux dossiers liés au projet.
 
 ### Version de mars 2023 {#march-2023-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] La version 1.9.8, publiée le 3 mars 2023, comprend les mises à jour suivantes :
+La version 1.9.8 de [!DNL Workfront for Experience Manager enhanced connector], publiée le 03 mars 2023, comprend les mises à jour suivantes :
 
 * Amélioration des performances dans Experience Manager lors de la création de dossiers liés à un projet dans Workfront.
 
 * Les suppressions de commentaires dans Workfront sont désormais répercutées dans Experience Manager.
 
-* Possibilité de gérer le blocage des nouveaux clients net sur Experience Manager as a Cloud Service de la configuration du connecteur.
+* Possibilité de gérer le blocage des nouveaux clients et des nouvelles clientes sur Experience Manager as a Cloud Service à partir de la configuration du connecteur.
 
 
-### Version de janvier 2023 {#january-2022-release}
+### Version de janvier 2023 {#january-2022-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] La version 1.9.7, publiée le 2 février 2023, comprend les mises à jour suivantes :
+La version 1.9.7 de [!DNL Workfront for Experience Manager enhanced connector] publiée le 02 février 2023 comprend les mises à jour suivantes :
 
 * L’éditeur de métadonnées ne répertorie pas les propriétés de formulaires personnalisés Workfront après l’installation de la version 1.9.6.
 

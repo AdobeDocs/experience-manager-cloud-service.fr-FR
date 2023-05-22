@@ -8,7 +8,7 @@ exl-id: 4c93b448-ff8b-4c63-9c9b-dca53cd1af20
 source-git-commit: 6c9a44940ea9e52bd27a233c7aa24e320a24076c
 workflow-type: tm+mt
 source-wordcount: '1050'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ Dans cette newsletter unique archivée, vous trouverez des ressources précieuse
    * Regardez les webinaires Skill Builder à la demande pour Dynamic Media Classic.
    * Regardez les sessions Dynamic Media du sommet Adobe en ligne 2020.
    * En savoir plus sur les audits gratuits Dynamic Media Classic d’Adobe.
-   * Respecter `John Monroe`, responsable de programme principal pour l’équipe du compte d’Adobe.
+   * Faites la connaissance de `John Monroe`, responsable de programme senior pour l’équipe compte Adobe.
 
 * **[Février 2020, numéro 2](https://experienceleague.adobe.com/tools/dynamic-media-demo/newsletter/Dynamic_Media_Newsletter_02_2020_Feb.html?lang=fr)**
 

@@ -6,7 +6,7 @@ exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
 source-git-commit: d202b0543020b277de982e3965475074a71b286d
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 37%
+ht-degree: 97%
 
 ---
 
@@ -26,29 +26,29 @@ La section suivante concerne les notes de mise à jour techniques de la version 
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] la version actuelle des fonctionnalités (2023.2.0) est le 12 avril 2023. La prochaine version de la fonctionnalité (2023.4.0) est prévue pour le 25 mai 2023.
+La date de publication de la version actuelle (2023.2.0) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 12 avril 2023. La prochaine version de la fonctionnalité (2023.4.0) est prévue pour le 25 mai 2023.
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo Aperçu de la version de février 2023 pour un résumé des fonctionnalités ajoutées dans la version 2023.2.0 :
+Consultez la vidéo Aperçu de la mise à jour de février 2023 pour un résumé des fonctionnalités ajoutées dans la version 2023.2.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416885/?quality=12)
 
 ## [!DNL Experience Manager Sites] as a [!DNL Cloud Service] {#sites}
 
-### Nouvelles fonctionnalités de [!DNL Experience Manager Sites] premise {#prerelease-sites}
+### Nouvelles fonctionnalités de [!DNL Experience Manager Sites] version préliminaire {#prerelease-sites}
 
-* Exportez des fragments de contenu d’AEM en tant que service cloud pour Adobe de la cible en tant qu’offres JSON.
-* La prise en charge de la pagination et du tri GraphQL, ainsi que des améliorations de la mise en cache interne, permettent désormais d’améliorer les performances des applications clientes découplées lors de la récupération de jeux de contenu volumineux d’AEM à l’aide de requêtes et de filtres GraphQL complexes.
+* Exportez des fragments de contenu d’AEM as a Cloud Service vers Adobe Target en tant qu’offres JSON.
+* La prise en charge de la pagination et du tri GraphQL, ainsi que des améliorations de la mise en cache interne, permettent désormais d’accroître les performances des applications clientes découplées lors de la récupération de jeux de contenu volumineux d’AEM à l’aide de requêtes et de filtres GraphQL complexes.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* Nouvelle prise en charge du protocole (DASH - Dynamic Adaptive Streaming over HTTP) pour la diffusion en continu adaptative dans les diffusions vidéo Dynamic Media (avec CMAF activé) :
-   * La diffusion en continu à débit adaptatif (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos aux utilisateurs et utilisatrices finaux
-   * Largement adopté dans le secteur, DASH est le protocole standard international pour la diffusion en continu à débit adaptatif de vidéos
-   * Disponible dans NA, pour activation via un ticket d’assistance, bientôt disponible dans APAC, EMEA
+* Prise en charge du nouveau protocole (DASH, Dynamic Adaptive Streaming over HTTP) pour le streaming adaptatif dans les diffusions vidéo Dynamic Media (avec CMAF activé) :
+   * Le streaming adaptatif (DASH/HLS) garantit une meilleure expérience de visionnage des vidéos à l’utilisateur ou l’utilisatrice final.
+   * Largement adopté dans le secteur, DASH est le protocole standard international pour le streaming à débit adaptatif de vidéos
+   * Disponible en Amérique du Nord, pour activation via un ticket d’assistance, bientôt disponible en APAC, EMEA
 
 * Ajout de la prise en charge des images WebP pour extraire automatiquement les métadonnées, générer des miniatures et des rendus personnalisés. La fonctionnalité de balise intelligente est désormais prise en charge pour ces fichiers.
 
@@ -58,38 +58,38 @@ Regardez la vidéo Aperçu de la version de février 2023 pour un résumé des f
 
 * **[Utiliser des composants principaux de capture de données pour créer des formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr)** : [utilisez l’éditeur de formulaires adaptatifs](/help/forms/creating-adaptive-form-core-components.md) pour créer des formulaires basés sur des composants de capture de données normalisés (composants principaux). Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique.
 
-* **[Prise en charge du pipeline Frontend pour le style d’un Forms adaptatif basé sur des composants principaux](/help/forms/using-themes-in-core-components.md)**: Utilisez des thèmes normalisés basés sur BEM pour les Forms adaptatives basées sur les composants principaux en les déployant avec le pipeline de déploiement Frontend afin d’améliorer l’aspect des formulaires et de vous aligner sur les directives de conception approuvées par votre entreprise.
+* **[Prise en charge du pipeline frontal pour la mise en forme des formulaires adaptatifs basés sur des composants principaux](/help/forms/using-themes-in-core-components.md)**: utilisez des thèmes basés sur la méthodologie AEM pour les formulaires adaptatifs basés sur les composants principaux en les déployant avec le pipeline de déploiement frontal afin d’améliorer l’aspect de vos formulaires et respecter les directives de conception approuvées de votre organisation.
 
-* **[Générer un document d’enregistrement pour le Forms adaptatif basé sur les composants principaux](/help/forms/generate-document-of-record-core-components.md)**: Créez un document d’enregistrement contenant les données envoyées pour le Forms adaptatif créé à l’aide des composants principaux pour l’archivage ou la référence aux utilisateurs finaux, sur papier ou au format de document.
+* **[Génération d’un document d’enregistrement pour les formulaires adaptatifs basés sur les composants principaux](/help/forms/generate-document-of-record-core-components.md)**: créez un document d’enregistrement contenant les données envoyées pour les formulaires adaptatifs créés à l’aide des composants principaux pour l’archivage ou la référence aux utilisateurs et utilisatrices finaux, sur papier ou au format document.
 
 ![https://www.aemcomponents.dev/](/help/forms/assets/sample-core-components-based-adaptive-form.png)
 
-* **[Création de formulaires efficace à l’aide de la fonction Enregistrer un formulaire adaptatif en tant que modèle](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)**: Accélérez et normalisez le développement de formulaires en enregistrant les formulaires existants approuvés par la marque en tant que modèles de formulaire pour une réutilisation rapide.
+* **[Création de formulaires efficace à l’aide de la fonction Enregistrer un formulaire adaptatif en tant que modèle](/help/forms/template-editor.md#save-an-adaptive-form-as-template-saving-adaptive-form-as-template)** : accélérez et normalisez la création de formulaires en enregistrant les formulaires existants approuvés par la marque en tant que modèles de formulaire pour une réutilisation rapide.
 
-* **[Connexion d’AEM Forms à des bases de données prises en charge par JDBC](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)**: Connectez-vous à des bases de données d’entreprise directement à partir d’AEM Cloud Service à l’aide du protocole JDBC, sans avoir à les exposer via l’API REST.
+* **[Connexion d’AEM Forms à des bases de données prises en charge par JDBC](/help/forms/configure-data-sources.md#configure-relational-database-configure-relational-database)** : connectez-vous à des bases de données d’entreprise directement à partir d’AEM Cloud Service à l’aide du protocole JDBC, sans avoir à les exposer via l’API REST.
 
-* **[Intégration aux points de fin REST à l’aide de l’API Open 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)**: Intégrez en toute transparence dans les systèmes d’enregistrement qui prennent en charge l’API Open 3.0 pour stocker et récupérer des données à l’aide de modèles de données de formulaire.
+* **[Intégration aux points d’entrée REST à l’aide de l’API Open 3.0](/help/forms/configure-data-sources.md#configure-restful-services-open-api-specification-version-20-configure-restful-services-swagger-version30)** : réalisez aisément des intégrations à des systèmes d’enregistrement qui prennent en charge l’API Open 3.0 pour stocker et récupérer des données à l’aide de modèles de données de formulaire.
 
 * **[Partager un formulaire adaptatif pour révision](/help/forms/create-reviews-forms.md)** : utilisez le mécanisme de révision des formulaires adaptatifs pour permettre à une ou plusieurs personnes de réviser le formulaire.
 
 
-### Fonctionnalités d’ [!DNL Forms] préliminaires {#prerelease-features-forms}
+### Fonctionnalités de la version préliminaire de [!DNL Forms] {#prerelease-features-forms}
 
-* **[Envoyer le Forms adaptatif à Microsoft SharePoint et Microsoft OneDrive](/help/forms/configuring-submit-actions.md)**: Améliorez l’agilité des utilisateurs professionnels afin de lancer rapidement de nouveaux formulaires et de stocker les données envoyées dans les outils quotidiens qu’ils utilisent comme le site Microsoft SharePoint ou le dossier OneDrive.
+* **[Envois de formulaires adaptatifs à Microsoft SharePoint et Microsoft OneDrive](/help/forms/configuring-submit-actions.md)** : améliorez l’agilité des utilisateurs et utilisatrices professionnels pour ouvrir rapidement de nouveaux formulaires et stockez les données envoyées dans les outils quotidiens qu’ils et elles utilisent comme les sites Microsoft SharePoint ou les dossiers OneDrive.
 
-![Envoyer le Forms adaptatif à Microsoft SharePoint et Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
+![Envoi de formulaires adaptatifs à Microsoft SharePoint et Microsoft OneDrive](/help/forms/assets/onedrive-and-sharepoint.jpg)
 
 
-## Programme d’adoption précoce de Forms adaptatif sans tête {#forms-early-adopter}
+## Programme des formulaires adaptatifs découplés destiné aux utilisateurs et utilisatrices précoces {#forms-early-adopter}
 
-Utilisez Headless Adaptive Forms pour permettre aux développeurs de créer, publier et gérer des formulaires interactifs accessibles et interactifs via les API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs sans affichage vous aident à :
+Utilisez les formulaires adaptatifs découplés pour permettre à vos développeurs et développeuses de créer, publier et gérer des formulaires interactifs accessibles via des API, plutôt que par le biais d’une interface utilisateur graphique classique. Les formulaires adaptatifs découplés vous aident à :
 
-* créer des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix ;
-* Intégration native de formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de conversation
-* réutilisation de vos composants d’IU propriétaires avec des applications de formulaires
-* tirer parti de la puissance d’Adobe Experience Manager Forms
+* créer des formulaires multicanaux de haute qualité dans le langage de programmation de votre choix ;
+* intégrer nativement les formulaires à vos applications de bureau et mobiles, à vos sites web et à vos applications de chat ;
+* réutiliser vos composants d’IU propriétaires avec des applications de formulaires ;
+* tirer profit de la puissance d’Adobe Experience Manager Forms.
 
-Vous pouvez envoyer un courrier électronique à aem-forms-headless@adobe.com à partir de votre ID de courrier électronique officiel pour rejoindre le programme des premiers adopteurs.
+Vous pouvez envoyer un e-mail à aem-forms-headless@adobe.com à partir de votre ID d’e-mail officiel pour rejoindre le programme d’utilisateurs et utilisatrices précoces.
 
 ## Notes de mise à jour de la maintenance {#maintenance}
 

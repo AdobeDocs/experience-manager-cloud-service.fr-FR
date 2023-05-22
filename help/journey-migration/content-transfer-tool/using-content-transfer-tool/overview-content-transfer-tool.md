@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
 workflow-type: tm+mt
 source-wordcount: '708'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Le transfert de contenu comporte deux phases :
    Pour plus d’informations, voir [Processus d’extraction au cours du transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
 
    >[!NOTE]
-   >Le mappage utilisateur est désormais exécuté automatiquement dans le cadre de la phase d’extraction sur l’auteur (mais peut éventuellement être désactivé sur l’auteur ou activé sur la publication). Voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour plus d’informations.
+   >Le mappage des utilisateurs et utilisatrices est désormais exécuté automatiquement dans le cadre de la phase d’extraction sur l’instance de création (mais il peut être désactivé sur l’instance de création ou activé sur l’instance de publication). Consultez [Mappage des utilisateurs et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour plus d’informations.
 
 1. **Ingestion** : l’ingestion désigne l’ingestion de contenu à partir du *jeu de migration* dans l’instance Cloud Service cible.
 
@@ -68,17 +68,17 @@ Lors de la phase d’ingestion, pour appliquer le contenu différentiel en plus 
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_migrationset_expiry"
->title="Expiration d&#39;un jeu de migration"
->abstract="Découvrez à quoi correspond l&#39;expiration d&#39;un jeu de migration."
+>title="Expiration d’un jeu de migration"
+>abstract="Découvrez à quoi correspond l’expiration d’un jeu de migration."
 
-Tous les jeux de migration finiront par expirer après une longue période d’inactivité d’environ 90 jours. Une fois les indicateurs affichés sur la carte du projet et les lignes du tableau des tâches de migration pendant une période donnée, le jeu de migration expire et ses données ne sont plus disponibles. Le délai d’expiration peut facilement être prolongé en agissant sur le jeu de migration en :
+Tous les jeux de migration expirent après une longue période d’inactivité d’environ 90 jours. Les indicateurs s’affichent sur la carte du projet et les lignes du tableau des tâches de migration pendant un certain temps, puis le jeu de migration expire et ses données deviennent indisponibles. Le délai d’expiration du jeu de migration peut facilement être prolongé en :
 
-* modification de sa description
-* obtention de sa clé d’extraction
-* exécution d’une extraction sur celle-ci
-* exécution d’une ingestion à partir de celle-ci
+* modifiant sa description
+* obtenant sa clé d’extraction
+* exécutant une extraction vers le jeu
+* exécutant une ingestion à partir du jeu
 
-L’expiration d’un jeu de migration peut être surveillée sur la ligne Jeu de migration . Un indicateur visuel utile indiquant qu’un jeu de migration approche sa date d’expiration a également ajouté la carte du projet.
+Vous pouvez surveiller l’expiration d’un jeu de migration sur la ligne Jeu de migration. Un indicateur visuel utile indiquant que la date d’expiration d’un jeu de migration approche a été ajouté à la carte du projet.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam29.png)
 

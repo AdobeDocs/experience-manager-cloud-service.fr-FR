@@ -6,7 +6,7 @@ exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
 source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
 workflow-type: tm+mt
 source-wordcount: '1058'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ L’outil **GraphiQL** vous permet de tester et de déboguer vos requêtes Graph
 * gérer les **Variables de requête** ;
 * enregistrer et gérer les **Requêtes persistantes** ;
 * publier ou dépublier des **Requêtes persistantes** (par exemple : vers et à partir de `dev-publish`) ;
-* Afficher l’**Historique** de vos requêtes précédentes ;
+* afficher l’**Historique** de vos requêtes précédentes ;
 * utiliser l’**Explorateur de documentation** pour accéder à la documentation pour vous aider à apprendre et à comprendre les méthodes disponibles.
 
 Vous pouvez accéder à l’éditeur de requêtes à partir de :
@@ -100,7 +100,7 @@ Les [requêtes persistantes](/help/headless/graphql-api/persisted-queries.md) so
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Mise en cache de vos requêtes persistantes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
+>Pour plus d’informations, consultez [Mise en cache de vos requêtes persistantes](/help/headless/graphql-api/persisted-queries.md#caching-persisted-queries).
 
 >[!NOTE]
 >

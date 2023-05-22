@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: cdc86e5661ec90f96f670e777a9c98b3dcd4a7ac
 workflow-type: tm+mt
 source-wordcount: '1051'
-ht-degree: 80%
+ht-degree: 94%
 
 ---
 
@@ -65,9 +65,10 @@ Vous pouvez constater ici qu’il existe trois zones principales :
             * Ouvrir le fragment approprié dans l’éditeur
             * Afficher des informations à propos des références
             * Afficher des informations sur les versions linguistiques du fragment
-      * Lorsque vous placez le pointeur de la souris sur les en-têtes de colonne, un sélecteur d’action déroulante et des curseur de largeur s’affichent. Ils vous permettent d’effectuer les opérations suivantes :
-         * Tri : sélectionnez l’action appropriée pour croissant ou décroissant. Le tableau entier sera trié selon cette colonne. Le tri n&#39;est disponible que sur les colonnes appropriées.
-         * Redimensionner la colonne à l’aide de l’action ou des curseur de largeur
+      * Lorsque vous placez le pointeur de la souris sur les en-têtes de colonne, un sélecteur d’actions déroulant et des curseurs de largeur s’affichent. Ils vous permettent d’effectuer les opérations suivantes :
+         * Trier : sélectionnez l’action appropriée pour trier par ordre croissant ou décroissant.
+Le tableau entier sera trié en fonction de cette colonne. Le tri n’est disponible que sur les colonnes appropriées.
+         * Redimensionnez la colonne à l’aide de l’action ou des curseurs de largeur.
 
 ## Actions {#actions}
 
@@ -162,7 +163,7 @@ Vous y trouverez une liste de colonnes que vous pouvez masquer ou afficher :
 
 Le panneau de filtrage offre les options suivantes :
 
-* une sélection de prédicats ; un ou plusieurs prédicats peuvent être sélectionnés et combinés pour créer le filtre.
+* une sélection de prédicats ; un ou plusieurs prédicats peuvent être sélectionnés et combinés pour créer le filtre.
 * l’opportunité d’**Enregistrer** votre configuration ;
 * l’option permettant de récupérer un filtre de recherche enregistré pour réutilisation.
 
@@ -172,15 +173,15 @@ Le panneau de filtrage offre les options suivantes :
 
 Vous pouvez également sélectionner un prédicat en cliquant sur une valeur de colonne spécifique dans la liste. Vous pouvez sélectionner une ou plusieurs valeurs pour combiner des prédicats.
 
-Par exemple, sélectionnez **Publié** dans le **État** column :
+Par exemple, sélectionnez **Publié** dans la colonne **Statut** :
 
 >[!NOTE]
 >
->Le filtrage rapide n’est pris en charge que pour la variable **Modèle**, **État**, **Modifié par**, et **Publié par** colonnes.
+>Le filtrage rapide est uniquement pris en charge pour les colonnes **Modèle**, **Statut**, **Modifié par**, et **Publié par**.
 
 ![Console Fragments de contenu - Filtrage](assets/cfc-console-fast-filter-01.png)
 
-Une fois cette option sélectionnée, elle s’affiche sous forme de prédicat de filtre et la liste est filtrée en conséquence :
+Une fois cette option sélectionnée, elle s’affiche sous forme de prédicat de filtre et la liste est filtrée en conséquence :
 
 ![Console Fragments de contenu - Filtrage](assets/cfc-console-fast-filter-02.png)
 

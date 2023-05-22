@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 9e67b4f68fe450e80249c3959e3517c6cba3275d
 workflow-type: tm+mt
 source-wordcount: '2382'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -396,7 +396,7 @@ Fri Jul 17 02:29:34.517189 2020 [mpm_worker:notice] [pid 1:tid 140293638175624] 
 
 Les niveaux de journal mod_rewrite sont définis par la variable REWRITE_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
 
-Il peut être défini sur error, warn, info, debug et trace1 - trace8, avec la valeur par défaut warn. Pour déboguer vos RewriteRules, il est recommandé d’augmenter le niveau de journal sur trace2.
+Il peut être défini sur Error, Warn, Info, Debug et Trace1 à Trace8, avec la valeur par défaut Warn. Pour déboguer vos règles de réécriture, il est recommandé de passer au niveau de journal Trace2.
 
 Pour plus d’informations, consultez la [documentation du module mod_rewrite](https://httpd.apache.org/docs/current/mod/mod_rewrite.html#logging).
 
@@ -474,7 +474,7 @@ Define REWRITE_LOG_LEVEL debug
 
 Les niveaux de journal de Dispatcher sont définis par la variable DISP_LOG_LEVEL dans le fichier `conf.d/variables/global.var`.
 
-Il peut être défini sur error, warn, info, debug et trace1, avec la valeur par défaut warn.
+Il peut être défini sur Error, Warn, Info, Debug et Trace1, avec la valeur par défaut Warn.
 
 Bien que la journalisation de Dispatcher prenne en charge plusieurs autres niveaux de granularité de la journalisation, nous recommandons d’utiliser les niveaux décrits ci-dessous pour AEM as a Cloud Service.
 

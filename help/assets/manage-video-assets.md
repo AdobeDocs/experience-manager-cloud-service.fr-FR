@@ -228,10 +228,10 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte car vous 
    Vous pouvez éventuellement ajouter une description.
 
 1. Sélectionnez **[!UICONTROL Ajouter]**.
-1. La vérification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté(e) au compte Google Cloud, ignorez cette étape.
+1. La vérification YouTube/Google s’affiche. Si vous n’avez pas encore effectué de connexion au compte Google Cloud, ignorez cette étape.
 
    * Saisissez le nom d’utilisateur et le mot de passe Google associés à l’ID de projet Google et au texte JSON ci-dessus.
-   * Deux éléments ou plus s’afficheront en fonction du nombre de canaux de votre compte. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail, car il ne s’agit pas d’un canal.
+   * Selon le nombre de canaux de votre compte, deux éléments ou plus s’affichent. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail ; ce n’est pas un canal.
    * Dans la page suivante, sélectionnez **[!UICONTROL Accepter]** pour autoriser l’accès à ce canal.
 
 1. Sélectionnez **[!UICONTROL Autoriser]**.
@@ -261,7 +261,7 @@ Laissez la boîte de dialogue Créer une configuration YouTube ouverte car vous 
    Vous avez spécifié l’ID de projet lorsque vous avez précédemment [configuré les paramètres de Google Cloud](/help/assets/dynamic-media/video.md#configuring-google-cloud-settings).
 Laissez cette boîte de dialogue ouverte. Vous y retournerez dans quelques instants.
 
-1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré plus tôt au cours de la tâche de configuration des paramètres de Google Cloud.
+1. À l’aide d’un éditeur de texte brut, ouvrez le fichier JSON que vous avez téléchargé et enregistré au cours de la tâche Configuration des paramètres de Google Cloud.
 1. Sélectionnez l’intégralité du texte JSON et copiez-le.
 1. Revenez à la boîte de dialogue Paramètres du compte YouTube. Dans le champ **[!UICONTROL Configuration JSON]**, collez le texte JSON.
 1. **[!UICONTROL Cliquez sur OK]**.
@@ -274,10 +274,10 @@ Laissez cette boîte de dialogue ouverte. Vous y retournerez dans quelques insta
    Vous pouvez éventuellement ajouter une description.
 
 1. **[!UICONTROL Cliquez sur OK]**.
-1. La vérification YouTube/Google s’affiche. Si vous n’êtes pas déjà connecté(e) au compte Google Cloud, ignorez cette étape.
+1. La vérification YouTube/Google s’affiche. Si vous n’avez pas encore effectué de connexion au compte Google Cloud, ignorez cette étape.
 
    * Saisissez le nom d’utilisateur et le mot de passe Google associés à l’ID de projet Google et au texte JSON ci-dessus.
-   * Deux éléments ou plus s’afficheront en fonction du nombre de canaux de votre compte. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail, car il ne s’agit pas d’un canal.
+   * Selon le nombre de canaux de votre compte, deux éléments ou plus s’affichent. Sélectionnez un canal. Ne sélectionnez pas l’adresse e-mail ; ce n’est pas un canal.
    * Dans la page suivante, sélectionnez **[!UICONTROL Accepter]** pour autoriser l’accès à ce canal.
 
 1. Sélectionnez **[!UICONTROL Autoriser]**.
@@ -310,19 +310,19 @@ Pour créer le profil de traitement des métadonnées, vous allez d’abord copi
 1. Dans la partie droite de la page, sous l’onglet **[!UICONTROL Paramètres]**, procédez comme suit :
 
    * Dans le champ de texte **[!UICONTROL Associer à la propriété]**, sélectionnez la valeur et copiez-la.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lorsque vous créerez votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
+Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir besoin de cette valeur plus tard, lorsque vous allez créer votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
    * Sous **[!UICONTROL Choix]**, sélectionnez la valeur par défaut à utiliser (comme « Personnes et blogs » ou « Science et technologie ») et copiez-la.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lorsque vous créerez votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
+Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir besoin de cette valeur plus tard, lorsque vous allez créer votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
 1. Sous l’en-tête Publication YouTube, sélectionnez **[!UICONTROL Confidentialité YouTube]**.
 1. Dans la partie droite de la page, sous l’onglet **[!UICONTROL Paramètres]**, procédez comme suit :
 
    * Dans le champ de texte **[!UICONTROL Associer à la propriété]**, sélectionnez la valeur et copiez-la.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lorsque vous créerez votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
+Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir besoin de cette valeur plus tard, lorsque vous allez créer votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
-   * Sous **[!UICONTROL Choix]**, sélectionnez et copiez la valeur par défaut à utiliser. Notez que les choix sont regroupés par paires. Le champ inférieur de la paire correspond à la valeur par défaut que vous souhaitez copier, comme valeur publique, non répertoriée ou privée.
-Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de cette valeur ultérieurement lorsque vous créerez votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
+   * Sous **[!UICONTROL Choix]**, sélectionnez et copiez la valeur par défaut à utiliser. Notez que les choix sont groupés par paires. Le champ inférieur de la paire correspond à la valeur par défaut que vous souhaitez copier, comme valeur publique, non répertoriée ou privée.
+Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir besoin de cette valeur plus tard, lorsque vous allez créer votre profil de traitement des métadonnées. Laissez l’éditeur de texte ouvert.
 
 1. Près du coin supérieur droit de la page Éditeur de schéma de métadonnées, sélectionnez **[!UICONTROL Annuler]**.
 1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, sélectionnez **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de métadonnées]**.
@@ -341,7 +341,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Vous aurez besoin de
    * Pour sélectionner le composant, sélectionnez **[!UICONTROL Libellé du champ]**.
    * Dans la partie droite de la page, sous l’onglet Paramètres, collez les valeurs de publication YouTube (valeur Libellé du champ et Associer à la propriété) copiées précédemment, dans les champs respectifs du formulaire. Collez la valeur Choix dans le champ Valeur par défaut.
 
-1. Ajoutez les valeurs copiées de confidentialité YouTube au profil en procédant comme suit :
+1. Ajoutez les valeurs de confidentialité Youtube copiées dans le profil en procédant comme suit :
 
    * Dans la partie droite de la page, sélectionnez l’onglet **[!UICONTROL Créer le formulaire]**.
    * (Facultatif) Faites glisser le composant appelé **[!UICONTROL En-tête de section]** vers la gauche et déposez-le dans la zone de formulaire.
@@ -378,9 +378,9 @@ Pour obtenir des informations de progression plus détaillées, vous pouvez surv
 1. Sélectionnez la ressource vidéo (visionneuse de vidéos adaptative).
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Propriétés]**.
 1. Dans l’onglet De base, sous l’en-tête Métadonnées, sélectionnez **[!UICONTROL Boîte de dialogue Ouvrir la sélection]** à droite du champ Balises.
-1. Sur la page Sélectionner des balises, accédez aux balises que vous souhaitez utiliser, puis sélectionnez une ou plusieurs balises.
+1. Accédez aux balises à utiliser sur la page Sélectionner des balises, puis sélectionnez une ou plusieurs balises.
 
-   N’oubliez pas que les balises doivent être associées au canal YouTube.
+   N’oubliez pas que les balises doivent être associées à la chaîne YouTube.
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Sélectionner]**.
 1. Dans le coin supérieur droit de la page des propriétés de la vidéo, sélectionnez **[!UICONTROL Enregistrer et fermer]**.
@@ -402,7 +402,7 @@ Au bout de huit heures, si un message de statut indiquant **[!UICONTROL Téléch
 
 ### Liaison d’URL YouTube à votre application web {#linking-youtube-urls-to-your-web-application}
 
-Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée par Dynamic Media. Une fois que vous avez copié l’URL de YouTube, elle se trouve dans le presse-papiers ce qui vous permet de la coller dans les pages de votre site Web ou de votre application.
+Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée par Dynamic Media. Lorsque vous copiez l’URL Youtube, cette dernière est conservée dans le presse-papiers, ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
 >[!NOTE]
 L’URL YouTube ne peut pas être copiée tant que vous n’avez pas publié la ressource vidéo sur YouTube.
@@ -430,7 +430,7 @@ Voir [Surveillance du codage vidéo et de la progression de la publication sur Y
 
 **Pour dépublier des vidéos afin de les supprimer de YouTube, procédez comme suit :**
 
-1. Accédez aux ressources vidéo dont vous souhaitez annuler la publication sur votre chaîne YouTube.
+1. Accédez aux ressources vidéo que vous souhaitez dépublier de votre chaîne YouTube.
 1. Dans un mode de sélection de ressources, sélectionnez une ou plusieurs ressources vidéo publiées.
 1. Dans la barre d’outils, sélectionnez **[!UICONTROL Gérer la publication]**. Si nécessaire, sélectionnez l’icône des trois petits points (`. . .`) dans la barre d’outils pour afficher **[!UICONTROL Gérer la publication]**.
 1. Sur la page Gérer la publication, sélectionnez **[!UICONTROL Dépublier]**.
@@ -463,12 +463,12 @@ Il est possible de surveiller la progression, notamment l’échec du codage ou 
 
    ![chlimage_1-432](/help/assets/dynamic-media/assets/chlimage_1-432.png)
 
-   Toutes les informations de workflow, telles que le codage, s’affichent dans la chronologie. Pour la publication YouTube, la chronologie du workflow comprend également le nom de la chaîne YouTube et l’URL de la vidéo YouTube. En outre, vous voyez toutes les notifications d’échec dans la chronologie du workflow une fois la publication terminée.
+   Toutes les informations de workflow, telles que le codage, s’affichent dans la chronologie. Pour la publication YouTube, la chronologie du workflow comprend également le nom de la chaîne YouTube et l’URL de la vidéo YouTube. En outre, vous pouvez consulter toutes les notifications d’échec dans le journal du workflow une fois la publication terminée.
 
    >[!NOTE]
    L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
    * Configuration de la file d’attente des tâches Apache Sling
-   * Gestionnaire des tâches de processus externe du workflow Adobe Granite
+   * Gestionnaire de tâches de processus externe du workflow Adobe Granite
    * File d’attente d’expiration du workflow Granite
 
    Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
@@ -496,7 +496,7 @@ Il est possible de surveiller la progression, notamment l’échec du codage ou 
    >[!NOTE]
    L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
    * Configuration de la file d’attente des tâches Apache Sling
-   * Gestionnaire des tâches de processus externe du workflow Adobe Granite
+   * Gestionnaire de tâches de processus externe du workflow Adobe Granite
    * File d’attente d’expiration du workflow Granite
 
    Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
@@ -579,7 +579,7 @@ Le format vidéo MXF n’est pas encore pris en charge avec les annotations de 
 1. Pour lire la vidéo, cliquez sur **[!UICONTROL Aperçu]**.
 1. Pour annoter la vidéo, cliquez sur **[!UICONTROL Annoter]**. Une annotation est ajoutée à ce moment de la vidéo. Lorsque vous annotez, vous pouvez dessiner sur le canevas et inclure un commentaire avec le dessin. Les commentaires sont automatiquement enregistrés. Pour quitter l’assistant d’annotation, cliquez sur **[!UICONTROL Fermer]**.
 1. Pour passer à un point spécifique de la vidéo, indiquez le moment en secondes dans le champ **texte** et cliquez sur **Aller**. Par exemple, pour sauter les 20 premières secondes de la vidéo, saisissez 20 dans le champ texte.
-1. Pour l’afficher dans la chronologie, cliquez sur une annotation. Pour supprimer l’annotation de la chronologie, cliquez sur **[!UICONTROL Supprimer]**.
+1. Pour l’afficher dans le journal, cliquez sur une annotation. Pour supprimer l’annotation du journal, cliquez sur **[!UICONTROL Supprimer]**.
 
 ## Bonnes pratiques et restrictions {#tips-limitations}
 

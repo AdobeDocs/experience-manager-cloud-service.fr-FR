@@ -8,7 +8,7 @@ exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ Les entreprises ont besoin de la prise en charge d’un large éventail de forma
 
 Pour commencer, il faut comprendre les [avantages de l’offre cloud native](#solution-benefits). Découvrez les [modifications notables apportées à Experience Manager as a [!DNL Cloud Service]](/help/release-notes/aem-cloud-changes.md) qui ont également eu un impact sur Experience Manager Assets, suivies des [modifications notables apportées à Assets](/help/assets/assets-cloud-changes.md).
 
-Lisez la suite pour connaître les [détails sur les nouvelles fonctionnalités Assets](#whats-new-assets) et les [problèmes connus](/help/release-notes/maintenance/latest.md). Consultez la liste des [fonctionnalité obsolète ou supprimée](/help/release-notes/deprecated-removed-features.md) pour savoir ce qui a été supprimé dans cette version. Enfin, utilisez ce [glossaire](/help/overview/terminology.md) pour mieux comprendre les termes Experience Manager.
+Lisez la suite pour connaître les [détails sur les nouvelles fonctionnalités Assets](#whats-new-assets) et les [problèmes connus](/help/release-notes/maintenance/latest.md). Consultez la liste des [fonctionnalités obsolètes ou supprimées](/help/release-notes/deprecated-removed-features.md) pour savoir ce qui a été supprimé dans cette version. Enfin, utilisez ce [glossaire](/help/overview/terminology.md) pour mieux comprendre les termes Experience Manager.
 
 ## Avantages de la solution {#solution-benefits}
 

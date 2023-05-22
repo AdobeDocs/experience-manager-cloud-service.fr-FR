@@ -5,7 +5,7 @@ exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
 source-git-commit: fb6fd4a86f94ae282d95c73ecb702a372d7c1f86
 workflow-type: tm+mt
 source-wordcount: '691'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -103,7 +103,7 @@ Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider le
 >
 > Vous pouvez obtenir la collection d’API Postman à partir de [cet emplacement](https://docs.microsoft.com/fr-fr/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 >
-> Veuillez consulter la documentation de MSFT OAuth . [here](https://learn.microsoft.com/en-us/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) pour plus d’informations.
+> Veuillez consulter la documentation de MSFT OAuth [ici](https://learn.microsoft.com/fr-fr/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) pour plus détails.
 
 ### Intégration à AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 

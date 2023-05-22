@@ -5,7 +5,7 @@ exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
 source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
 workflow-type: tm+mt
 source-wordcount: '1727'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -153,7 +153,7 @@ Passez en revue cette liste d’activités pour vous assurer d’effectuer une m
       * Avec un TTL très élevé, les mises à jour de votre enregistrement DNS prendront plus de temps à se propager.
 * Exécutez des tests de performance et de sécurité qui répondent aux besoins et aux objectifs de votre entreprise.
 * Effectuez une coupure et assurez-vous que la mise en service réelle est effectuée sans aucun nouveau déploiement ni mise à jour du contenu.
-* Créez des profils de notification utilisateur Admin Console. Voir [Profils de notification](/help/journey-onboarding/notification-profiles.md)
+* Créez des profils de notification pour les utilisateurs et les utilisatrices de l’Admin Console. Consultez [Profils de notification](/help/journey-onboarding/notification-profiles.md)
 
 Vous pouvez toujours vous référer à cette liste au cas où vous auriez besoin de recalibrer vos tâches lors de la migration.
 

@@ -5,7 +5,7 @@ exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
 source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
 workflow-type: tm+mt
 source-wordcount: '1552'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Une nouvelle version de l’outil de transfert de contenu est disponible, qui in
 * L’amélioration de l’expérience utilisateur grâce à une meilleure gestion des statuts de chargement, des barrières de sécurité et des erreurs
 * La conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
 
-Avant d’utiliser la nouvelle version vous devez désinstaller les anciennes versions de l’outil de transfert de contenu. Cette étape est nécessaire car la nouvelle version produit un changement architectural majeur. Avec la version 2.x, vous devrez créer de nouveaux jeux de migration et relancer l’extraction et l’ingestion sur les nouveaux jeux de migration.
+Avant d’utiliser la nouvelle version vous devez désinstaller les anciennes versions de l’outil de transfert de contenu. Cette étape est nécessaire car la nouvelle version produit un changement architectural majeur. Avec la version 2.x, vous devrez également créer des jeux de migration et réexécuter l’extraction et l’ingestion sur les nouveaux jeux de migration.
 Les versions antérieures à la version 2.0.0 ne seront plus prises en charge et il est conseillé d’utiliser la version la plus récente.
 
 Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version de l’outil de transfert de contenu :
@@ -42,7 +42,7 @@ Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version 
 * Une fois l’activité de transfert de contenu terminée, une structure de projet appropriée est nécessaire dans l’environnement Cloud Service pour s’assurer que le contenu s’affiche correctement.
 
 * Avant d’exécuter l’outil de transfert de contenu, vous devez vous assurer que l’espace disque disponible dans le sous-répertoire `crx-quickstart` de l’instance AEM source est suffisant. En effet, l’outil de transfert de contenu crée une copie locale du référentiel, ultérieurement chargée dans le jeu de migration.
-La formule générale pour calculer l&#39;espace disque disponible requis est la suivante :
+La formule générale pour calculer l’espace disque disponible requis est la suivante :
    `data store size + node store size * 1.5`
 
    * *volume de stockage des données* : l’outil de transfert de contenu utilise 64 Go, même si l’entrepôt de données en question est plus volumineux.
@@ -71,9 +71,9 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * La clé d’extraction est valable 14 jours à compter du moment où elle a été créée/renouvelée. Elle peut être renouvelée à tout moment. Si la clé d’extraction a expiré, vous ne pourrez pas effectuer d’extraction.
 
-* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Voir [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html#running-tool) pour plus d’informations.
+* L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour en savoir plus, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#running-tool).
 
-* Les utilisateurs et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le _Extraction_ Le processus copie l’intégralité de la `/home` dans le jeu de migration et effectue le mappage de l’utilisateur en ajoutant un champ provenant de l’adresse électronique de chaque utilisateur. Pour plus d’informations, voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Le _Ingestion_ Le processus copie tous les utilisateurs et groupes référencés dans les listes de contrôle d’accès du contenu migré.
+* Les utilisateurs, utilisatrices et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’_extraction_ copie l’intégralité de `/home` dans le jeu de migration et effectue le mappage des utilisateurs et utilisatrices en ajoutant un champ provenant de l’adresse e-mail de chaque utilisateur ou utilisatrice. Pour plus d’informations, consultez [Mappage des utilisateurs et utilisatrices et migration principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Le processus d’_ingestion_ copie tous les utilisateurs et utilisatrices ainsi que les groupes référencés dans les listes de contrôle d’accès (ACL) du contenu migré.
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
@@ -93,7 +93,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
-* Un jeu de migration expire après une longue période d’inactivité, après laquelle ses données ne seront plus disponibles. Veuillez consulter [Expiration du jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html#migration-set-expiry) pour plus d’informations.
+* Un jeu de migration expire après une longue période d’inactivité, après laquelle ses données ne sont plus disponibles. Pour en savoir plus, veuillez consulter [Expiration du jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#migration-set-expiry).
 
 ## Prochaines étapes {#whats-next}
 

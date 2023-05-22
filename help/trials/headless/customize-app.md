@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
 workflow-type: tm+mt
 source-wordcount: '1036'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -93,7 +93,7 @@ Mettez à jour facilement les images et les ressources de vos applications avec 
 
 ## Ajout d’une référence à un nouveau fragment de contenu dans l’application {#create-moment}
 
-Maintenant que vous avez mis à jour l’image du biker, nous allons découvrir comment ajouter du nouveau contenu à une application en créant et en référençant un nouveau fragment de contenu. Vous allez ajouter un appel de produit géré par un fragment de contenu « moment d’achat » au deuxième panneau de l’application.
+Maintenant que vous avez mis à jour l’image du cycliste, nous allons découvrir comment ajouter du nouveau contenu à une application en créant et en référençant un nouveau fragment de contenu. Vous allez ajouter un appel de produit géré par un fragment de contenu « moment d’achat » au deuxième panneau de l’application.
 
 ![Exemple d’un moment d’achat](assets/do-not-localize/example-shoppable-moment.png)
 

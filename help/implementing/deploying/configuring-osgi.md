@@ -6,7 +6,7 @@ exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
 source-git-commit: 26ca2addb14f62588035323ce886ae890919b759
 workflow-type: tm+mt
 source-wordcount: '3312'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -189,8 +189,8 @@ Il est possible d’utiliser la console web AEM de l’environnement d’exécut
 >
 >L’interface utilisateur de configuration de la console web AEM écrit des fichiers `.cfg.json` dans le référentiel. N’oubliez pas d’en tenir compte afin d’éviter un comportement inattendu potentiel lors du développement local, lorsque les configurations OSGi définies par projet AEM peuvent différer des configurations générées.
 
-1. Connectez-vous à la console web AEM du SDK AEM à l’adresse `https://<host>:<port>/system/console` en tant qu’utilisateur administrateur
-1. Accédez à **OSGi** > **Configuration**
+1. Connectez-vous en tant qu’administrateur ou administratrice à la console Web de Quickstart Jar du SDK AEM à l’adresse `https://<host>:<port>/system/console`.
+1. Accédez à **OSGi** > **Configuration**.
 1. Pour configurer, recherchez le composant OSGi et appuyez sur son titre pour le modifier.
    ![Configuration OSGi](./assets/configuring-osgi/configuration.png)
 1. Modifiez, si nécessaire, les valeurs des propriétés de configuration OSGi à l’aide de l’interface utilisateur web.

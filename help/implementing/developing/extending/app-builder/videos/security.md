@@ -18,6 +18,6 @@ ht-degree: 100%
 
 # Sécurité d’App Builder
 
-Découvrez la sécurité de l’action Adobe Runtime, l’authentification et l’autorisation des utilisateurs et d’AppBuilder.
+Découvrez la sécurité de l’action Adobe Runtime, l’authentification et l’autorisation des utilisateurs et utilisatrices et d’AppBuilder.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339249/?quality=12&learn=on)

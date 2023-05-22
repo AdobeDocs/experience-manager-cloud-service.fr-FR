@@ -5,7 +5,7 @@ exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
 source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
 workflow-type: tm+mt
 source-wordcount: '1311'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -16,22 +16,22 @@ Découvrez comment utiliser le canal de version préliminaire pour obtenir un ap
 
 ## Présentation {#introduction}
 
-Adobe Experience Manager as a Cloud Service offre de nouvelles fonctionnalités à cadence régulière, selon les [Experience Manager relâche la feuille de route.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
+Adobe Experience Manager as a Cloud Service bénéficie régulièrement de nouvelles fonctionnalités, conformément à la [feuille de route des versions d’Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
 
-Pour vous familiariser avec les fonctionnalités programmées pour la mise en ligne de la version suivante, vous pouvez vous abonner au canal de version préliminaire, accessible par la configuration de vos environnements de développement ou de tout environnement de test. Vous pouvez prévisualiser les nouveautés dans l’interface utilisateur d’AEM et créer du code pour toute nouvelle API en version préliminaire.
+Pour vous familiariser avec les fonctionnalités programmées pour la prochaine mise à jour, vous pouvez vous abonner au canal de version préliminaire. Il vous suffit de configurer vos environnements de développement ou tout environnement de sandbox. Vous pouvez prévisualiser les nouveautés dans l’interface utilisateur d’AEM et créer du code pour toute nouvelle API en version préliminaire.
 
-La liste des fonctionnalités de la version préliminaire d’une fonctionnalité donnée est publiée dans la section [notes de mise à jour.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+La liste des fonctionnalités de version préliminaire pour une mise à jour donnée est publiée dans les [notes de mise à jour.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
 ## Mises à jour d’AEM as a Cloud Service {#releases}
 
 AEM as a Cloud Service comporte deux types de mises à jour :
 
-* **Versions de fonctionnalités** ajouter des fonctionnalités à AEM as a Cloud Service, lors de l’activation ;
-* **Versions de maintenance** ajoutez des mises à jour de sécurité, des améliorations de performances et des correctifs de bogues, et appliquez-les régulièrement et fréquemment.
+* Une fois activées, les **mises à jour** ajoutent de nouvelles fonctionnalités à AEM as a Cloud Service.
+* Les **versions de maintenance** ajoutent des mises à jour de sécurité, des améliorations de performances et des correctifs. Elles sont appliquées régulièrement et fréquemment.
 
 Ce calendrier de publication permet d’offrir des mises à jour continues sans interruption de service.
 
-Le canal de version préliminaire vous permet de prévisualiser les fonctionnalités programmées pour la prochaine version des fonctionnalités afin d’évaluer les fonctionnalités à venir et de planifier leur mise en oeuvre possible pour vos propres projets. Il vous permet de planifier la prochaine mise à jour des fonctionnalités.
+Le canal de version préliminaire vous permet de prévisualiser les fonctionnalités contenues dans la prochaine mise à jour. Vous pouvez ainsi les tester et planifier leur mise en œuvre dans vos propres projets. Vous prenez ainsi une longueur d’avance pour une possible mise en œuvre de la prochaine mise à jour.
 
 Par exemple, si nous sommes au mois de mai et que vous êtes abonné(e) au canal de version préliminaire, vous pouvez tester les fonctionnalités de la version de juin.
 
@@ -48,7 +48,7 @@ Pour tirer pleinement parti du canal de version préliminaire, suivez les quatre
 
 ## Marquer votre calendrier {#mark-calendars}
 
-Les mises à jour des fonctionnalités sont planifiées bien à l’avance et les dates d’activation des fonctionnalités sont publiées le [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
+Le calendrier des mises à jour est établi bien à l’avance et les dates de publication sont publiées sur [Adobe Experience League.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
 
 Notez les dates dans votre agenda afin de consacrer du temps à l’examen et aux tests des prochaines fonctionnalités.
 
@@ -62,7 +62,7 @@ Vous pouvez également [consulter les problèmes connus](/help/release-notes/mai
 
 ## Activer le canal de version préliminaire pour accéder aux nouvelles fonctionnalités et les essayer {#new-features}
 
-Le canal de version préliminaire peut être activé dans tout environnement de développement ou de sandbox. La version préliminaire ne peut pas être activée dans les environnements d’évaluation ou de production.
+Le canal de version préliminaire peut être activé dans tout environnement de développement ou de sandbox. Toutefois, il ne peut pas être activé dans les environnements d’évaluation et de production.
 
 Les fonctionnalités de la version préliminaire peuvent être expérimentées de différentes manières :
 

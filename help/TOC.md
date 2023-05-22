@@ -11,7 +11,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: cf927f5cc1fca3720716349b1758a47c7b395218
 workflow-type: tm+mt
 source-wordcount: '4074'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -72,8 +72,8 @@ ht-degree: 97%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
-         + [Notes de mise à jour de la maintenance de la version 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
-         + [Notes de mise à jour de la maintenance de la version 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
+         + [Notes de mise à jour de la maintenance 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
+         + [Notes de mise à jour de la maintenance 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
       + [Notes de mise à jour de la version actuelle](/help/implementing/cloud-manager/release-notes/current.md)
       + 2023 {#2023}
@@ -208,14 +208,14 @@ ht-degree: 97%
          + [Prise en main de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md)
          + [Validation des transferts de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md)
          + [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md)
-         + [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
+         + [Mappage des utilisateurs et utilisatrices et migration des entités principales](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md)
          + [Extraction de contenu à partir de la source](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md)
          + [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
          + [Affichage des journaux d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/viewing-logs.md)
          + [Suppression d’un jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/deleting-migrationset.md)
          + [Exécution de l’outil de transfert de contenu sur une instance de publication](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/running-content-transfer-tool-publish-instance.md)
          + [Dépannage de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/troubleshooting-content-transfer-tool.md)
-         + Outil de mappage des utilisateurs hérité (hérité){#legacy-user-mapping-tool}
+         + Outil de mappage hérité (hérité){#legacy-user-mapping-tool}
             + [Présentation](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Points importants](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Utilisation de l’outil de mappage des utilisateurs](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
@@ -374,8 +374,8 @@ ht-degree: 97%
       + [Intégration à Adobe Learning Manager](/help/sites-cloud/integrating/integrating-adobe-learning-manager.md)
       + [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md)
       + [Configuration IMS à utiliser lors de l’intégration à Adobe Target](/help/sites-cloud/integrating/integration-adobe-target-ims.md)
-      + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
-      + [Exportation de fragments d’expérience vers Adobe Target ](/help/sites-cloud/integrating/experience-fragments-target.md)
+      + [Exportation de fragments de contenu vers Adobe Target](/help/sites-cloud/integrating/content-fragments-target.md)
+      + [Exportation de fragments d’expérience vers Adobe Target](/help/sites-cloud/integrating/experience-fragments-target.md)
       + [Intégration à Adobe Campaign](/help/sites-cloud/integrating/campaign.md)
 + Ressources {#assets}
    + [[!DNL Assets] as a  [!DNL Cloud Service]](/help/assets/home.md)
@@ -514,7 +514,7 @@ ht-degree: 97%
 + Forms {#forms}
    + Présentation {#forms-overview}
       + [Présentation](/help/forms/home.md)
-      + [Principales innovations Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
+      + [Principales innovations d’Adobe Experience Manager Forms](/help/forms/latest-innovations.md)
       + [Modifications notables](/help/forms/notable-changes.md)
       + [Architecture](/help/forms/aem-forms-cloud-service-architecture.md)
       + [Questions fréquemment posées](/help/forms/faq.md)
@@ -549,7 +549,7 @@ ht-degree: 97%
             + [Création de thèmes pour un formulaire adaptatif - Composants principaux](/help/forms/using-themes-in-core-components.md)
             + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
             + [Création d’une Forms adaptative - Composants principaux dans une page AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
-            + [Document de travail du sommet](/help/forms/summit-2023-workbook.md)
+            + [Soumettre le document de travail](/help/forms/summit-2023-workbook.md)
       + Création d’un formulaire adaptatif - Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
             + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr)
@@ -979,7 +979,7 @@ ht-degree: 97%
    + [Présentation de l’éditeur universel](/help/implementing/universal-editor/introduction.md)
    + [Création de contenu avec l’éditeur universel](/help/implementing/universal-editor/authoring.md)
    + [Publication de contenu avec l’éditeur universel](/help/implementing/universal-editor/publishing.md)
-   + [Prise en main d’Universal Editor dans AEM](/help/implementing/universal-editor/getting-started.md)
-   + [Architecture d’éditeur universelle](/help/implementing/universal-editor/architecture.md)
+   + [Prise en main de l’éditeur universel dans AEM](/help/implementing/universal-editor/getting-started.md)
+   + [Architecture de l’éditeur universel](/help/implementing/universal-editor/architecture.md)
    + [Attributs et types](/help/implementing/universal-editor/attributes-types.md)
    + [Authentification de l’éditeur universel](/help/implementing/universal-editor/authentication.md)

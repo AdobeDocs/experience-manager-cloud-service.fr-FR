@@ -7,7 +7,7 @@ exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
 source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
 workflow-type: tm+mt
 source-wordcount: '1047'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -18,9 +18,9 @@ Dans le cadre d’Adobe Experience Cloud, Adobe Target vous permet d’améli
 * d’utiliser l’interface utilisateur tactile pour créer une configuration Target dans AEM as a Cloud Service (configuration IMS requise) ;
 * d’ajouter et de configurer Adobe Target en tant qu’extension dans [Adobe Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html?lang=fr).
 
-Adobe Launch est nécessaire afin de gérer les propriétés côté client pour Analytics et Target dans les pages AEM (bibliothèques/balises JS). Cela dit, l’intégration à Launch est nécessaire au « ciblage d’expérience ». 
+Adobe Launch est nécessaire afin de gérer les propriétés côté client pour Analytics et Target dans les pages AEM (bibliothèques/balises JS). Cela dit, l’intégration à Launch est nécessaire au « ciblage d’expérience ».
 
-Pour l’exportation de fragments d’expérience et/ou de fragments de contenu vers Target, vous avez uniquement besoin de la variable [Configuration Adobe Target et IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
+Pour l’exportation de fragments d’expérience et/ou de fragments de contenu vers Target, vous avez uniquement besoin de la [configuration d’Adobe Target et IMS](/help/sites-cloud/integrating/integration-adobe-target-ims.md).
 
 >[!NOTE]
 >

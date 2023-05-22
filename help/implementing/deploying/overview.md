@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
 workflow-type: tm+mt
 source-wordcount: '3509'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -294,7 +294,7 @@ AEM as a Cloud Service, en revanche, est plus précis sur les modes d’exécut
 * Les modes d’exécution de configuration OSGI doivent faire référence au RDE, au développement, à l’évaluation, à la production de l’environnement, ou à la création ou la publication pour le service. La combinaison de `<service>.<environment_type>` est prise en charge dans cet ordre particulier (par exemple, `author.dev` ou `publish.prod`). Les jetons OSGI doivent être référencés directement à partir du code plutôt que d’utiliser la méthode `getRunModes`, qui n’inclut plus `environment_type` au moment de l’exécution. Pour plus d’informations, voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/deploying/configuring-osgi.md).
 * Les modes d’exécution des lots OSGI sont limités au service (auteur et publication). Les lots OSGI par mode d’exécution doivent être installés dans le package de contenu sous `install.author` ou `install.publish`.
 
-AEM as a Cloud Service ne permet pas d’utiliser des modes d’exécution pour installer du contenu pour des environnements ou des services spécifiques. Si un environnement de développement doit être ensemencé avec des données ou un HTML qui ne se trouve pas dans les environnements d’évaluation ou de production, le gestionnaire de modules peut être utilisé.
+AEM as a Cloud Service ne permet pas d’utiliser des modes d’exécution pour installer du contenu destiné à des environnements ou des services spécifiques. Si un environnement de développement doit être alimenté avec des données ou un HTML qui ne se trouvent pas dans les environnements d’évaluation ou de production, le gestionnaire de modules peut être utilisé.
 
 Les configurations de mode d’exécution prises en charge sont les suivantes :
 

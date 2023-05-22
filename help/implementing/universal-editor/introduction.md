@@ -3,7 +3,7 @@ title: Présentation de l’éditeur visuel universel
 description: Découvrez comment l’éditeur visuel universel (également appelé éditeur universel) agit en tant qu’éditeur WYSIWYG (ce que vous voyez est ce que vous obtenez) pour pouvoir modifier n’importe quelle expérience couplée et découplée. Découvrez comment cela peut aider les créateurs et les créatrices de contenu à proposer des expériences exceptionnelles, à accroître la vitesse de leur contenu et à offrir une expérience de développement à la pointe de la technologie.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 100%
 

@@ -1,46 +1,46 @@
 ---
-title: Prise en main d’Universal Editor dans AEM
+title: Prise en main de l’éditeur universel dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: de33ea3efed87170b081ea467f12a997e0d41a83
 workflow-type: tm+mt
 source-wordcount: '810'
-ht-degree: 0%
+ht-degree: 98%
 
 ---
 
-# Prise en main d’Universal Editor dans AEM {#getting-started}
+# Prise en main de l’éditeur universel dans AEM {#getting-started}
 
 Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 
 >[!TIP]
 >
->Si vous préférez plonger directement dans un exemple, vous pouvez consulter la section [Exemple d’application Universal Editor sur GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
+>Si vous préférez plonger directement dans un exemple, vous pouvez consulter la section [Exemple d’application de l’éditeur universel sur GitHub.](https://github.com/adobe/universal-editor-sample-editable-app)
 
 ## Étapes d’intégration {#onboarding}
 
-Bien qu’Universal Editor puisse modifier du contenu à partir de n’importe quelle source, ce document utilise une application AEM comme exemple.
+Bien que l’éditeur universel puisse modifier du contenu à partir de n’importe quelle source, ce document utilise une application AEM comme exemple.
 
 Il existe plusieurs étapes pour intégrer votre application AEM et l’instrumenter pour utiliser l’éditeur universel.
 
 1. [Demandez l’accès à l’éditeur universel.](#request-access)
-1. [Incluez la bibliothèque principale Universal Editor.](#core-library)
+1. [Incluez la bibliothèque principale de l’éditeur universel.](#core-library)
 1. [Ajoutez la configuration OSGi nécessaire.](#osgi-configurations)
-1. [Instrument de la page.](#instrument-page)
+1. [Instrumentez la page.](#instrument-page)
 
-Ce document vous guidera tout au long de ces étapes.
+Ce document vous guidera tout au fil de ces étapes.
 
 ## Demande d’accès à l’éditeur universel {#request-access}
 
-Vous devez d’abord demander l’accès à l’éditeur universel. Accédez à [https://experience.adobe.com/#/aem/editor,](https://experience.adobe.com/#/aem/editor) connectez-vous et validez si vous avez accès à l’éditeur universel.
+Vous devez d’abord demander l’accès à l’éditeur universel. Accédez à [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), connectez-vous et vérifiez si vous avez accès à l’éditeur universel.
 
-Si vous n&#39;avez pas accès, vous pouvez le demander via un formulaire lié à la même page.
+Si vous n’y avez pas accès, vous pouvez le demander via un formulaire lié sur la même page.
 
 ![Demande d’accès à l’éditeur universel](assets/request-access.png)
 
-Cliquez sur **Demande d’accès** et remplissez le formulaire selon les instructions pour demander l’accès. Un représentant de l’Adobe examinera votre demande et contactera pour discuter de votre cas d’utilisation.
+Cliquez sur **Demande d’accès** et remplissez le formulaire selon les instructions pour demander l’accès. Un représentant ou une représentante Adobe examinera votre demande et vous contactera pour discuter de votre cas d’utilisation.
 
-## Inclure la bibliothèque Core d’Universal Editor {#core-library}
+## Inclure la bibliothèque principale de l’éditeur universel {#core-library}
 
 Avant de pouvoir être instrumentée pour une utilisation avec l’éditeur universel, votre application doit inclure la dépendance suivante.
 
@@ -54,28 +54,28 @@ Pour activer l’instrumentation, l’importation suivante doit être ajoutée �
 import "@adobe/universal-editor-cors";
 ```
 
-### Alternative pour les applications non React {#alternative}
+### Alternative pour les applications autres que React {#alternative}
 
-Si vous ne mettez pas en oeuvre d’application React et/ou avez besoin d’un rendu côté serveur, une autre méthode consiste à inclure les éléments suivants dans le corps du document.
+Si vous ne mettez pas en œuvre d’application React ou que avez besoin d’un rendu côté serveur, une autre méthode consiste à inclure les éléments suivants dans le corps du document.
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/adobe/universal-editor-cors/dist/universal-editor-embedded.js" async></script>
 ```
 
-## Ajout des configurations OSGi nécessaires {#osgi-configurations}
+## Ajouter les configurations OSGi nécessaires {#osgi-configurations}
 
-Pour pouvoir modifier AEM contenu avec votre application à l’aide de l’éditeur universel, les paramètres CORS et de cookie doivent être définis dans AEM.
+Pour pouvoir modifier du contenu AEM avec votre application à l’aide de l’éditeur universel, les paramètres CORS et des cookies doivent être définis dans AEM.
 
-Les éléments suivants [Les configurations OSGi doivent être définies sur l’instance de création AEM.](/help/implementing/deploying/configuring-osgi.md)
+Les [configurations OSGi suivantes doivent être définies sur l’instance de création AEM.](/help/implementing/deploying/configuring-osgi.md)
 
-* `SameSite Cookies = None` in `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
-* Supprimez les OPTIONS X-FRAME : En-tête SAMEORIGIN dans `org.apache.sling.engine.impl.SlingMainServlet`
+* `SameSite Cookies = None` dans `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
+* Supprimez l’en-tête X-FRAME-OPTIONS: SAMEORIGIN dans `org.apache.sling.engine.impl.SlingMainServlet`
 
 ### com.day.crx.security.token.impl.impl.TokenAuthenticationHandler {#samesite-cookies}
 
-Le cookie de jeton de connexion doit être envoyé à AEM en tant que domaine tiers. Par conséquent, le cookie du même site doit être défini explicitement sur `None`.
+Le cookie du jeton de connexion doit être envoyé à AEM en tant que domaine tiers. Par conséquent, le cookie du même site doit être défini explicitement sur `None`.
 
-Cette propriété doit être définie dans la variable `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler` Configuration OSGi.
+Cette propriété doit être définie dans la configuration OSGi `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -86,9 +86,9 @@ Cette propriété doit être définie dans la variable `com.day.crx.security.tok
 
 ### org.apache.sling.engine.impl.SlingMainServlet {#sameorigin}
 
-X-Frame-Options: SAMEORIGIN empêche le rendu AEM pages dans un iframe. La suppression de l’en-tête permet de charger les pages.
+X-Frame-Options: SAMEORIGIN empêche le rendu de pages AEM dans un iframe. La suppression de l’en-tête permet de charger les pages.
 
-Cette propriété doit être définie dans la variable `org.apache.sling.engine.impl.SlingMainServlet` Configuration OSGi.
+Cette propriété doit être définie dans la configuration OSGi `org.apache.sling.engine.impl.SlingMainServlet`.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -98,38 +98,38 @@ Cette propriété doit être définie dans la variable `org.apache.sling.engine.
           sling.additional.response.headers="[X-Content-Type-Options=nosniff]"/>
 ```
 
-## Instrument de la page {#instrument-page}
+## Instrumenter la page {#instrument-page}
 
-Le service Universal Editor requiert une [nom de ressource uniforme (URN)](https://en.wikipedia.org/wiki/Uniform_Resource_Name) pour identifier et utiliser le système principal approprié pour le contenu de l’application en cours de modification. Par conséquent, un schéma d’URL est nécessaire pour mapper le contenu aux ressources de contenu.
+Le service de l’éditeur universel requiert un [nom de ressource uniforme (URN)](https://fr.wikipedia.org/wiki/Uniform_Resource_Name) pour identifier et utiliser le système principal approprié pour le contenu de l’application en cours de modification. Par conséquent, un schéma URN est nécessaire pour mapper le contenu aux ressources de contenu.
 
-Les attributs d’instrumentation ajoutés à la page se composent principalement de [Microdonnées de HTML,](https://developer.mozilla.org/en-US/docs/Web/HTML/Microdata) une norme du secteur qui peut également être utilisée pour rendre le HTML plus sémantique, rendre les documents de HTML indexables, etc.
+Les attributs d’instrumentation ajoutés à la page se composent principalement de [microdonnées HTML](https://developer.mozilla.org/fr/docs/Web/HTML/Microdata), une norme du secteur qui peut également être utilisée pour rendre le HTML plus sémantique, rendre les documents de HTML indexables, etc.
 
 ### Création de connexions {#connections}
 
-Les connexions utilisées dans l’application sont stockées sous la forme `<meta>` balises de la page `<head>`.
+Les connexions utilisées dans l’application sont stockées sous la forme de balises `<meta>` dans la page `<head>`.
 
 ```html
 <meta name="urn:adobe:aem:editor:<referenceName>" content="<protocol>:<url>">
 ```
 
-* `<referenceName>` - Il s’agit d’un nom court réutilisé dans le document pour identifier la connexion. Par exemple : `aemconnection`
-* `<protocol>` - Indique le module externe de persistance du service de persistance de l’éditeur universel à utiliser. Par exemple : `aem`
-* `<url>` - Il s’agit de l’URL vers le système où les modifications doivent être conservées. Par exemple : `http://localhost:4502`
+* `<referenceName>` : il s’agit d’un nom court réutilisé dans le document pour identifier la connexion. Par exemple, `aemconnection`
+* `<protocol>` : indique le plug-in de persistance du service de persistance de l’éditeur universel à utiliser. Par ex. `aem`
+* `<url>` : il s’agit de l’URL vers le système où les modifications doivent être conservées. Par ex. `http://localhost:4502`
 
 L&#39;identifiant `adobe:aem:editor` représente la connexion à Adobe Universal Editor.
 
-`itemid`s utilisera la variable `urn` pour raccourcir l’identifiant.
+Les `itemid` utilisent le préfixe `urn` pour raccourcir l’identifiant.
 
 ```html
 itemid="urn:<referenceName>:<resource>"
 ```
 
-* `<referenceName>` - Il s’agit de la référence nommée mentionnée dans la variable `<meta>` balise . Par exemple : `aemconnection`
-* `<resource>` - Il s’agit d’un pointeur vers la ressource du système cible. Par exemple, un chemin de contenu AEM tel que `/content/page/jcr:content`
+* `<referenceName>` : il s’agit de la référence nommée mentionnée dans la balise `<meta>`. Par ex. `aemconnection`
+* `<resource>` : il s’agit d’un pointeur vers la ressource du système cible. Par ex., un chemin de contenu AEM tel que `/content/page/jcr:content`
 
 >[!TIP]
 >
->Voir le document [Attributs et types](attributes-types.md) pour plus d’informations sur les attributs et les types de données requis par Universal Editor.
+>Consultez le document [Attributs et types](attributes-types.md) pour plus d’informations sur les attributs et les types de données requis par l’éditeur universel.
 
 ### Exemple de connexion {#example}
 
@@ -161,19 +161,19 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## Vous êtes prêt à utiliser l’éditeur universel {#youre-ready}
+## Vous pouvez désormais utiliser l’éditeur universel. {#youre-ready}
 
-Votre application est désormais instrumentée pour utiliser l’éditeur universel.
+Votre application est désormais instrumentée pour utiliser l’éditeur universel !
 
-Reportez-vous au document [Création de contenu avec l’éditeur universel](authoring.md) pour savoir à quel point il est facile et intuitif pour les auteurs de contenu de créer du contenu à l’aide de l’éditeur universel.
+Reportez-vous au document [Création de contenu avec l’éditeur universel](authoring.md) pour découvrir à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 
 ## Ressources supplémentaires {#additional-resources}
 
-Pour en savoir plus sur Universal Editor, consultez ces documents.
+Pour en savoir plus sur l’éditeur universel, consultez ces documents.
 
-* [Présentation de l’éditeur universel](introduction.md) - Découvrez comment Universal Editor permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
-* [Création de contenu avec l’éditeur universel](authoring.md) - Découvrez à quel point il est facile et intuitif pour les auteurs de contenu de créer du contenu à l’aide de l’éditeur universel.
-* [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
-* [Architecture d’éditeur universelle](architecture.md) - Découvrez l’architecture d’Universal Editor et le flux de données entre ses services et calques.
-* [Attributs et types](attributes-types.md) - Découvrez les attributs et les types de données requis par Universal Editor.
+* [Présentation de l’éditeur universel](introduction.md) – Découvrez comment l’éditeur universel permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en œuvre afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et d’offrir une expérience de développement à la pointe de la technologie.
+* [Création de contenu avec l’éditeur universel](authoring.md) – Découvrez à quel point il est facile et intuitif pour les personnes en charges de la création de créer du contenu à l’aide de l’éditeur universel.
+* [Publication de contenu avec l’éditeur universel](publishing.md) – Découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
+* [Architecture de l’éditeur universel](architecture.md) – Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et couches.
+* [Attributs et types](attributes-types.md) - Découvrez les attributs et les types de données requis par l’éditeur universel.
 * [Authentification de l’éditeur universel](authentication.md) - Découvrez comment l’éditeur universel s’authentifie.

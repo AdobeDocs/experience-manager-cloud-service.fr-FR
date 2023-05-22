@@ -5,7 +5,7 @@ exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
 source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
 workflow-type: tm+mt
 source-wordcount: '3659'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,10 +29,10 @@ Avant de commencer à configurer ou coder votre composant, vous devez vous poser
 
 * De quoi avez-vous besoin exactement pour le nouveau composant ?
 * Devez-vous créer votre composant de toutes pièces ou pouvez-vous hériter des bases d’un composant existant ?
-* Votre composant aura-t-il besoin d’une logique pour sélectionner/manipuler le contenu ?
+* Votre composant aura-t-il besoin d’une logique pour sélectionner/manipuler le contenu ?
    * La logique doit rester distincte de la couche de l’interface utilisateur. HTL est conçu pour faciliter cette distinction.
-* Votre composant aura-t-il besoin d’une mise en forme CSS ?
-   * La mise en forme CSS doit rester distincte des définitions de composants. Définissez des conventions pour nommer vos éléments de HTML afin que vous puissiez les modifier via des fichiers CSS externes.
+* Votre composant aura-t-il besoin d’une mise en forme CSS ?
+   * La mise en forme CSS doit rester distincte des définitions de composants. Définissez des conventions pour nommer vos éléments HTML afin que vous puissiez les modifier via des fichiers CSS externes.
 * Quelles sont les implications potentielles de votre nouveau composant sur la sécurité ?
 
 ### Réutilisation de composants existants {#reusing-components}
@@ -63,8 +63,8 @@ Cette approche est compatible avec [HTL](https://experienceleague.adobe.com/docs
 
 Cette logique (facultative) peut être mise en œuvre de différentes manières et est appelée à partir de HTL avec des commandes spécifiques :
 
-* Utilisation de Java : [Use-API Java HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. Vous pouvez ainsi utiliser du code Java pour implémenter la logique de sélection et de configuration du contenu du composant.
-* Utilisation de JavaScript - [Use-API JavaScript HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=fr) permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript. Cela permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+* Utilisation de Java : [Use-API Java HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=fr) permet à un fichier HTL d’accéder aux méthodes d’assistance dans une classe Java personnalisée. Cela vous permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
+* Utilisation de JavaScript : [Le HTL JavaScript Use-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-javascript.html?lang=fr) permet à un fichier HTL d’accéder au code d’assistance écrit en JavaScript. Cela permet d’utiliser le code JavaScript pour implémenter la logique de sélection et de configuration du contenu du composant.
 * Utilisation de bibliothèques côté client : les sites web modernes sont très dépendants du traitement côté client effectué par du code JavaScript et CSS complexe. Pour plus d’informations, consultez le document [Utilisation de bibliothèques côté client sur AEM as a Cloud Service](/help/implementing/developing/introduction/clientlibs.md).
 
 ## Structure des composants {#structure}
@@ -122,11 +122,11 @@ L’icône ou l’abréviation du composant est définie via les propriétés JC
 1. `abbreviation` – Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
    * L’abréviation devrait être limitée à deux caractères.
    * La saisie d’une chaîne vide crée l’abréviation à partir des deux premiers caractères de la propriété `jcr:title`.
-      * Par exemple, &quot;Im&quot; pour &quot;Image&quot;
+      * Par exemple, « Im » pour « Image »
       * Le titre localisé sera utilisé pour créer l’abréviation.
    * L’abréviation n’est traduite que si le composant possède une propriété `abbreviation_commentI18n`, qui est ensuite utilisée comme indice de traduction.
 1. `cq:icon.png` ou `cq:icon.svg` – Icône du composant, affichée dans le navigateur de composants
-   * 20 x 20 pixels représente la taille des icônes des composants standard.
+   * La taille des icônes des composants standard est de 20 x 20 pixels.
       * Les icônes plus grandes seront réduites (côté client).
    * La couleur recommandée est rgb(112, 112, 112) > # 707070
    * L’arrière-plan des icônes de composants standard est transparent.
@@ -295,7 +295,7 @@ En particulier, si vous vous intéressez au texte actuel d’un composant **Titr
 * Le contenu contient une propriété `jcr:title` contenant le texte actuel du titre saisi par l’auteur.
 * Il contient également une référence `sling:resourceType` à la définition du composant.
 
-Les propriétés définies dépendent des définitions individuelles. Bien qu&#39;elles puissent être plus complexes qu&#39;auparavant, elles suivent toujours les mêmes principes de base.
+Les propriétés définies dépendent des définitions individuelles. Bien qu’elles puissent être plus complexes qu’auparavant, elles suivent toujours les mêmes principes de base.
 
 ## Hiérarchie et héritage des composants {#component-hierarchy-and-inheritance}
 
@@ -360,7 +360,7 @@ Le nœud enfant de type `cq:DropTargetConfig` définit une cible de dépôt dans
 
 ### Modification locale – cq:inplaceEditing {#cq-inplaceediting}
 
-Un éditeur local permet à l’utilisateur de modifier le contenu directement dans le flux de contenu, sans avoir besoin d’ouvrir une boîte de dialogue. Par exemple, la variable **Texte** et **Titre** Les composants disposent tous deux d’un éditeur statique.
+Un éditeur local permet à l’utilisateur ou à l’utilisatrice de modifier le contenu directement dans le flux de contenu, sans avoir besoin d’ouvrir une boîte de dialogue. Par exemple, les composants standard **Texte** et **Titre** possèdent tous deux un éditeur local.
 
 Un éditeur local n’est pas nécessaire/déterminant pour chaque type de composant.
 
@@ -372,7 +372,7 @@ Le nœud `cq:inplaceEditing` (type de nœud `cq:InplaceEditingConfig`) définit 
 | `configPath` | `String` | Chemin d’accès de la configuration de l’éditeur, qui peut être spécifié par un nœud de configuration |
 | `editorType` | `String` | Les types disponibles sont les suivants : `plaintext` pour le contenu non HTML, `title` convertit les titres graphiques en texte en clair avant le début de la modification et `text` utilise l’éditeur de texte enrichi |
 
-La configuration suivante active la modification statique du composant et définit `plaintext` comme type d’éditeur :
+La configuration suivante active la modification locale du composant et définit `plaintext` comme type d’éditeur :
 
 ```text
     <cq:inplaceEditing
@@ -460,11 +460,11 @@ Pour les développeurs, il est préférable d’accéder facilement à la docume
 
 * sa description ;
 * son utilisation prévue ;
-* Structure et propriétés du contenu
+* structure et propriétés du contenu
 * API exposées et points d’extension
 * Etc.
 
-Pour cette raison, il est assez facile de rendre tout balisage de documentation existant disponible dans le composant lui-même.
+Pour cette raison, il est assez facile de rendre tout markdown de documentation existant disponible dans le composant lui-même.
 
 Il suffit de placer un fichier `README.md` dans la structure du composant.
 

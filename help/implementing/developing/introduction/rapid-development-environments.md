@@ -5,7 +5,7 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
 workflow-type: tm+mt
 source-wordcount: '3325'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -216,7 +216,7 @@ Vous pouvez éventuellement référencer un référentiel distant :
 
 Par défaut, les artefacts sont déployés sur les deux niveaux Création et Publication, mais l’indicateur « -s » peut être utilisé pour cibler un niveau spécifique.
 
-Tout module AEM peut être déployé, par exemple des modules comportant du code, du contenu ou un [module conteneur](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (également appelé package &quot;all&quot;).
+Tout package AEM peut être déployé, par exemple des packages comportant du code, du contenu ou un [package conteneur](/help/implementing/developing/introduction/aem-project-content-package-structure.md#container-packages) (également appelé package « all »).
 
 >[!IMPORTANT]
 >
@@ -281,7 +281,7 @@ déployez ensuite la configuration à l’aide de la commande suivante :
 
 >[!NOTE]
 >
->RDE prend en charge la configuration Dispatcher &quot;mode flexible&quot;, mais pas &quot;mode hérité&quot;. Voir [documentation du dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour plus d’informations sur les deux modes. Vous pouvez également consulter la documentation relative à la [migration vers le mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si vous ne l’avez pas déjà fait.
+>Le RDE prend en charge la configuration Dispatcher « mode flexible », mais pas « mode hérité ». Consultez la [documentation du Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour plus d’informations sur ces deux modes. Vous pouvez également consulter la documentation relative à la [migration vers le mode flexible](/help/implementing/dispatcher/validation-debug.md#migrating), si vous ne l’avez pas déjà fait.
 
 Un déploiement réussi génère une réponse qui ressemble à ce qui suit :
 

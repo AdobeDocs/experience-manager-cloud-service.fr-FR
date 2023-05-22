@@ -8,7 +8,7 @@ exl-id: ef617b01-0019-4379-8d58-c03215d7e28f
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
 source-wordcount: '940'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -25,7 +25,7 @@ Utilisez les informations figurant dans les rapports de manière à obtenir des 
 
 Le framework de création de rapports [!DNL Assets] exploite des tâches [!DNL Sling] de façon à traiter de manière asynchrone les demandes de rapports en respectant l’ordre. Il est extensible pour les référentiels de grande taille. Le traitement asynchrone des rapports augmente l’efficacité et la vitesse de génération des rapports.
 
-L’interface de gestion des rapports est intuitive et contient des options et des contrôles précis pour accéder aux rapports archivés et afficher les états d’exécution des rapports (succès, échec et mise en file d’attente).
+L’interface de gestion des rapports est intuitive et contient des options et des contrôles précis pour accéder aux rapports archivés et afficher les statuts d’exécution des rapports (succès, échec et mise en file d’attente).
 
 Lorsqu’un rapport est généré, vous êtes averti par <!-- through an email (optional) and --> une notification de boîte de réception. Vous pouvez afficher, télécharger ou supprimer un rapport de la page de liste des rapports, où tous les rapports précédemment générés sont affichés.
 
@@ -117,7 +117,7 @@ Les administrateurs d’[!DNL Adobe Experience Manager] peuvent facilement gén�
 
 ## Ajout de colonnes personnalisées  aux rapports {#add-custom-columns}
 
-Vous pouvez ajouter des colonnes personnalisées aux rapports suivants afin d’afficher plus de données selon vos besoins :
+Vous pouvez également ajouter des colonnes personnalisées à ces rapports pour adapter l’affichage des données à vos besoins :
 
 <!-- Remove download report.
 * Upload
@@ -171,7 +171,7 @@ To remove reports that you no longer require, configure the DAM Report Purge ser
 
 ## Informations de dépannage {#tips-troubleshoot}
 
-* Si la variable [!UICONTROL Rapport Utilisation du disque] ne génère pas et si vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont traitées correctement. Pour résoudre ce problème, retraitez les ressources puis générez de nouveau le rapport.
+* Si le [!UICONTROL rapport d’utilisation des disques] n’est pas généré et que vous utilisez [!DNL Dynamic Media], assurez-vous que toutes les ressources sont traitées correctement. Pour résoudre ce problème, retraitez les ressources puis générez de nouveau le rapport.
 
 <!-- These notes were present in generate report section above. Removing commented text from in between the instructions to preserve the numbering of the ordered list.
 

@@ -5,7 +5,7 @@ exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
 source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
 workflow-type: tm+mt
 source-wordcount: '2353'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -70,7 +70,7 @@ Pour obtenir une description complète du fonctionnement de l’outil et de la f
 Pour ce faire, commencez par consulter la documentation détaillant les outils de base dont vous avez besoin pour refactoriser votre code :
 
 
-* Lors de la planification, il est utile de disposer dʼune liste des éléments qui doivent être refactorisés afin d&#39;être compatibles avec AEM as a Cloud Service. Vous pouvez consulter les [Conseils de développement](/help/implementing/developing/introduction/development-guidelines.md) pour en savoir plus sur la refactorisation et l’optimisation du code pour Cloud Service.
+* Lors de la planification, il est utile de disposer dʼune liste des éléments qui doivent être refactorisés afin d’être compatibles avec AEM as a Cloud Service. Vous pouvez consulter les [Conseils de développement](/help/implementing/developing/introduction/development-guidelines.md) pour en savoir plus sur la refactorisation et l’optimisation du code pour Cloud Service.
 * Découvrez comment effectuer la [Gestion des configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=fr#what-is-a-configuration) dans AEM as a Cloud Service.
 * Découvrez comment configurer un environnement de développement local en téléchargeant le [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=fr).
 * Pour terminer, familiarisez-vous avec lʼ[API Java AEM as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
@@ -85,13 +85,13 @@ Vous pouvez également consulter les ressources suivantes :
 
    >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
-### Un changement d&#39;état d&#39;esprit {#a-change-in-mindset}
+### Un changement d’état d’esprit {#a-change-in-mindset}
 
 Développer et exécuter du code dans AEM as a Cloud Service nécessite un changement d’état d’esprit. Le code doit être résilient, d’autant plus qu’une instance peut être arrêtée à tout moment. Le code s’exécutant dans Cloud Service doit savoir qu’il s’exécute toujours dans une grappe. Cela signifie qu’il y a toujours plusieurs instances en cours d’exécution.
 
 Certaines modifications sont nécessaires pour que les projets Maven d’AEM soient compatibles avec le cloud. AEM as a Cloud Service exige une séparation du *contenu* et du *code* dans des packages distincts pour le déploiement dans AEM :
 
-* `/apps` et `/libs` sont considérées comme des zones immuables d’AEM, car ils ne peuvent pas être modifiés après le démarrage d’AEM (c’est-à-dire au moment de l’exécution). Cela inclut les opérations de création, de mise à jour ou de suppression. Toute tentative de modification d’une zone immuable au moment de l&#39;exécution échouera.
+* `/apps` et `/libs` sont considérées comme des zones immuables d’AEM, car ils ne peuvent pas être modifiés après le démarrage d’AEM (c’est-à-dire au moment de l’exécution). Cela inclut les opérations de création, de mise à jour ou de suppression. Toute tentative de modification d’une zone immuable au moment de l’exécution échouera.
 
 * Toutes les autres zones du référentiel (par exemple, `/content` , `/conf` , `/var` , `/home` , `/etc` , `/oak:index` , `/system` , `/tmp`) sont toutes des zones modifiables, ce qui signifie qu’elles peuvent être modifiées au moment de l’exécution.
 
@@ -180,11 +180,11 @@ Le tableau suivant illustre un plan de migration type :
 | PRDCLONE-AUTEUR-INITIAL-USRMAP-CSSTAGE-AUTEUR |  |  |  |  |  |
 | PRDCLONE-PUBLICATION-COMPLEMENT-CSSTAGE-AUTEUR |  |  |  |  |  |
 
-Comme vous pouvez le voir dans le tableau ci-dessus, il est utile de suivre un format de dénomination spécifique pour identifier les itérations de migration, par exemple : **PRDCLONE** pour l&#39;environnement AEM source, **AUTEUR/PUBLICATION** pour l&#39;environnement AEM as a Cloud Service, **CSSTAGE-AUTEUR** pour l’instance AEM as a Cloud Service, etc.
+Comme vous pouvez le voir dans le tableau ci-dessus, il est utile de suivre un format de dénomination spécifique pour identifier les itérations de migration, par exemple : **PRDCLONE** pour l’environnement AEM source, **AUTEUR/PUBLICATION** pour l’environnement AEM as a Cloud Service, **CSSTAGE-AUTEUR** pour l’instance AEM as a Cloud Service, etc.
 
 Voici quelques détails importants qui influencent votre plan de migration :
 
-**Le nombre total d&#39;extractions nécessaires**
+**Le nombre total d’extractions nécessaires**
 
 * Les extractions Auteur et Publication dans des environnements spécifiques sont considérées comme deux extractions parallèles, car elles sont indépendantes l’une de l’autre.
 * Le nombre d’extractions de complément basé sur la croissance du référentiel dans des périodes de temps spécifiques.
@@ -243,7 +243,7 @@ La section suivante présente les étapes importantes et les tâches associées 
    * Clone l’auteur et la publication : un nœud chacun dans le cas d’un cluster ou d’une batterie de publication.
 * Sélectionnez un sous-ensemble du contenu qui sera migré en tenant compte des éléments suivants :
    * Il s’agit d’un mélange de tous les types de contenu disponibles.
-   * Contient tous les utilisateurs et groupes
+   * Contient tous les utilisateurs, utilisatrices et groupes
 * Inclut 25 % du contenu ou jusqu’à 1 To de contenu, selon ce qui est moins élevé.
 * Exécutez au moins une opération de migration intégrale et [complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process), depuis le clone de production vers l’environnement hors production d’AEM as a Cloud Service.
 * Résolvez tous les problèmes potentiels tels que :

@@ -18,6 +18,6 @@ ht-degree: 100%
 
 # Publication d’applications App Builder
 
-Découvrez comment envoyer votre demande App Builder pour révision et approbation, et comment exécuter une nouvelle application publiée.
+Découvrez comment envoyer votre application App Builder pour révision et approbation, et comment exécuter une nouvelle application publiée.
 
 >[!VIDEO](https://video.tv.adobe.com/v/339251/?quality=12&learn=on)

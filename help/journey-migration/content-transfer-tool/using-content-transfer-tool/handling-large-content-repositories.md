@@ -5,7 +5,7 @@ exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
 source-git-commit: cf09c7774b633ae2cf1c5b28fee2bd8191d80bb3
 workflow-type: tm+mt
 source-wordcount: '1846'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 92%
 >id="aemcloud_ctt_precopy"
 >title="Gestion des référentiels de contenu volumineux"
 >abstract="Pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service, le CTT peut utiliser AzCopy comme étape de pré-copie facultative. Une fois cette étape préalable configurée, dans la phase d’extraction, AzCopy copie les blobs d’Amazon S3 ou Azure Blob Storage vers la boutique blob du jeu de migration. Au cours de la phase d’ingestion, AzCopy copie les objets blob de la boutique blob du jeu de migration vers la boutique blob d‘AEM as a Cloud Service."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr#setting-up-pre-copy-step" text="Prise en main d’étape AzCopy en tant qu’étape de pré-copie"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/handling-large-content-repositories.html?lang=fr#setting-up-pre-copy-step" text="Prise en main d’étape AzCopy en tant qu’étape de pré-copie"
 
 La copie d’un grand nombre d’objets Blob avec l’outil de transfert de contenu (CTT) peut prendre plusieurs jours.
 Pour accélérer considérablement les phases d’extraction et d’ingestion de l’activité de transfert de contenu afin de déplacer le contenu vers AEM as a Cloud Service, le CTT peut utiliser [AzCopy](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) comme étape de pré-copie facultative. Cette étape de pré-copie peut être utilisée lorsque l’instance AEM source est configurée pour utiliser une banque de données Amazon S3, Azure Blob Storage ou File Data Store. L’étape de précopie est la plus efficace pour la première occurrence complète d’extraction et d’ingestion. Toutefois, l’utilisation de la précopie pour les complément ultérieurs n’est pas recommandée (si la taille du complément est inférieure à 200 Go), car cela peut allonger la durée de l’ensemble du processus. Une fois cette étape préalable configurée, dans la phase d’extraction, AzCopy copie les objets blob d’Amazon S3, d’Azure Blob Storage ou du File Data Store vers le magasin d’objets blob du jeu de migration. Au cours de la phase d’ingestion, AzCopy copie les objets blob de la boutique blob du jeu de migration vers la boutique blob d‘AEM as a Cloud Service.
@@ -26,9 +26,9 @@ Pour accélérer considérablement les phases d’extraction et d’ingestion de
 
 Consultez la section ci-dessous pour comprendre les points importants à prendre en compte avant de commencer :
 
-* À partir de la version 2.0.16 de CTT, la configuration de prévisualisation est effectuée automatiquement lorsque le lot est installé. De plus, si la taille du jeu de migration est supérieure à 200 Go, le processus d’extraction utilisera automatiquement la fonctionnalité de prévisibilité. Le fichier azcopy.config est créé dans le répertoire crx-quickstart/cloud-migration/ . Vous n’avez pas besoin d’effectuer manuellement la configuration de prévisualisation si vous utilisez la version 2.0.16 de CTT ou une version ultérieure.
+* À partir de la version 2.0.16 de CTT, la configuration de la précopie s’effectue automatiquement lorsque le bundle est installé. De plus, si la taille du jeu de migration est supérieure à 200 Go, le processus d’extraction utilise automatiquement la fonctionnalité de précopie. Le fichier azcopy.config est créé dans le répertoire crx-quickstart/cloud-migration/. Vous n’avez pas besoin d’effectuer manuellement la configuration de la précopie si vous utilisez la version 2.0.16 de CTT ou une version ultérieure.
 
-* La version d’AEM source doit être 6.3 à 6.5.
+* La version d’AEM source doit être comprise entre 6.3 et 6.5.
 
 * L’entrepôt de données d’AEM source est configuré pour utiliser Amazon S3 ou Azure Blob Storage. Pour plus d’informations, voir [Configuration des entrepôts de nœuds et de données dans AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=fr).
 
@@ -36,7 +36,7 @@ Consultez la section ci-dessous pour comprendre les points importants à prendre
 
 * Vous devez accéder à [AzCopy](https://docs.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) sur l’instance (ou la machine virtuelle) exécutant l’instance AEM source.
 
-* Le nettoyage de la mémoire d’entrepôt de données a été exécuté au cours des 7 jours précédents sur la source. Pour plus d’informations, voir [Récupération de l’espace mémoire de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html#data-store-garbage-collection).
+* Le nettoyage de la mémoire d’entrepôt de données a été exécuté au cours des 7 jours précédents sur la source. Pour plus d’informations, voir [Récupération de l’espace mémoire de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=fr#data-store-garbage-collection).
 
 ### Considérations supplémentaires si l’instance d’AEM source est configurée pour utiliser un magasin de données Amazon S3 ou Stockage Blob Azure. {#additional-considerations-amazons3-azure}
 
@@ -55,7 +55,7 @@ Consultez la section ci-dessous pour comprendre les points importants à prendre
 ## Configuration pour utiliser AzCopy en tant qu’étape de pré-copie {#setting-up-pre-copy-step}
 
 >[!NOTE]
->À partir de la version 2.0.16 de CTT, la configuration de prévisualisation est effectuée automatiquement lorsque le lot est installé. De plus, si la taille du jeu de migration est supérieure à 200 Go, le processus d’extraction utilisera automatiquement la fonctionnalité de prévisibilité. Le fichier azcopy.config est créé dans le répertoire crx-quickstart/cloud-migration/ . Si vous souhaitez mettre à jour manuellement la configuration du fichier, consultez les sections ci-dessous.
+>À partir de la version 2.0.16 de CTT, la configuration de la précopie s’effectue automatiquement lorsque le bundle est installé. De plus, si la taille du jeu de migration est supérieure à 200 Go, le processus d’extraction utilise automatiquement la fonctionnalité de précopie. Le fichier azcopy.config est créé dans le répertoire crx-quickstart/cloud-migration/. Si vous souhaitez mettre à jour manuellement la configuration du fichier, consultez les sections ci-dessous.
 
 Consultez cette section pour savoir comment configurer l’utilisation d’AzCopy en tant qu’étape de pré-copie avec l’outil de transfert de contenu afin de migrer le contenu vers AEM as a Cloud Service :
 
@@ -204,7 +204,7 @@ instructions sur l’utilisation d’AzCopy (pré-copie), ou non, dans la boîte
 
 Pour tirer parti d’AzCopy lors de l’ingestion, AEM as a Cloud Service version 2021.6.5561 ou ultérieure est nécessaire.
 
-Consultez la liste « Tâches d’ingestion » dans Cloud Acceleration  Manager et les journaux d’ingestion pour voir la progression.  Les entrées de journal concernant les tâches AzCopy réussies s’affichent comme suit (sous réserve de quelques différences). La consultation périodique des journaux peut vous alerter d’un problème dès son apparition et vous permettre d’apporter une solution rapide.
+Consultez la liste « Tâches d’ingestion » dans Cloud Acceleration Manager et les journaux d’ingestion pour voir la progression.  Les entrées de journal concernant les tâches AzCopy réussies s’affichent comme suit (sous réserve de quelques différences). La consultation périodique des journaux peut vous alerter d’un problème dès son apparition et vous permettre d’apporter une solution rapide.
 
 ```
 *************** Beginning AzCopy pre-copy phase ***************

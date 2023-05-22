@@ -7,7 +7,7 @@ hidefromtoc: true
 source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
 workflow-type: tm+mt
 source-wordcount: '842'
-ht-degree: 87%
+ht-degree: 96%
 
 ---
 
@@ -21,7 +21,7 @@ L’outil de mappage des utilisateurs utilise une API pour rechercher les utilis
 
 ## Configuration de l’outil de mappage des utilisateurs {#setting-up-user-mapping}
 
-**Condition requise :** Le mappage des utilisateurs requiert que chaque utilisateur soit mappé à son identifiant IMS avec une adresse email dans son profil dans AEM et dans IMS.  Notez que même si l’utilisateur utilise une adresse électronique comme ID utilisateur pour se connecter, le mappage ne fonctionne pas pour cet utilisateur, sauf si l’adresse électronique figure également dans le profil, ainsi que dans IMS.
+**Condition requise :** le mappage des utilisateurs et utilisatrices requiert que chaque utilisateur ou utilisatrice à mapper à son identifiant IMS dispose d’une adresse e-mail dans son profil dans AEM et dans IMS.  Notez que même si l’utilisateur ou l’utilisatrice utilise une adresse e-mail comme ID pour se connecter, le mappage ne fonctionne pas pour cette personne, sauf si l’adresse e-mail figure également dans le profil, ainsi que dans IMS.
 
 Suivez les étapes ci-dessous pour configurer ces éléments :
 
@@ -54,7 +54,7 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access5.png)
 
-   Renseignez les champs dans **Configuration de l’API User Management** comme décrit ci-dessous. 
+   Renseignez les champs dans **Configuration de l’API User Management** comme décrit ci-dessous.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access3.png)
 
@@ -100,7 +100,7 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
 
 Si le processus de mappage des utilisateurs est arrêté pour l’une des raisons suivantes :
 
-* L’utilisateur a sélectionné **Arrêter le mappage des utilisateurs**
+* l’utilisateur a sélectionné **Arrêter le mappage des utilisateurs**
 * le jeton d’accès a expiré pendant le processus ou
 * une autre raison
 

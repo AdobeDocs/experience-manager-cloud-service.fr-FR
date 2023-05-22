@@ -1,17 +1,17 @@
 ---
-title: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '978'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Notes de mise à jour 2023.1.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2023.1.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
-La section suivante présente les notes de mise à jour des fonctionnalités de la version 2023.1.0 de [!DNL Experience Manager] as a Cloud Service.
+La section suivante concerne les notes de mise à jour techniques de la version 2023.1.0 d’[!DNL Experience Manager] as a Cloud Service.
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ La section suivante présente les notes de mise à jour des fonctionnalités de 
 
 ## Date de publication {#release-date}
 
-La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] La version 2023.1.0 de la fonctionnalité est le 9 février 2023. La prochaine version de la fonctionnalité (2023.2.0) est prévue pour le 12 avril 2023.
+La date de publication de la version 2023.1.0 d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] est le 9 février 2023. La prochaine disponibilité des fonctionnalités (2023.2.0) est prévue pour le 12 avril 2023.
 
 ## Vidéo de mise à jour {#release-video}
 

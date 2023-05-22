@@ -1,17 +1,17 @@
 ---
-title: Points importants concernant l’outil de mappage des utilisateurs (hérité)
-description: Points importants concernant l’outil de mappage des utilisateurs (hérité)
+title: Points importants concernant l’outil de mappage utilisateur (hérité)
+description: Points importants concernant l’outil de mappage utilisateur (hérité)
 exl-id: 0d39a5be-93e1-4b00-ac92-c2593c02b740
 hide: true
 hidefromtoc: true
 source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
 workflow-type: tm+mt
 source-wordcount: '620'
-ht-degree: 81%
+ht-degree: 96%
 
 ---
 
-# Points importants concernant l’outil de mappage des utilisateurs (hérité) {#important-considerations}
+# Points importants concernant l’outil de mappage utilisateur (hérité) {#important-considerations}
 
 >[!INFO]
 >
@@ -21,7 +21,7 @@ ht-degree: 81%
 
 Les cas spécifiques suivants seront consignés :
 
-1. Si un utilisateur n’a pas d’adresse électronique dans le champ `profile/email` de son nœud *jcr*, l’utilisateur ou le groupe en question sera migré, mais pas mappé.  Cela sera le cas même si l’adresse électronique est utilisée comme nom d’utilisateur pour la connexion.
+1. Si un utilisateur ou une utilisatrice n’a pas d’adresse e-mail dans le champ `profile/email` de son nœud *jcr*, l’utilisateur, l’utilisatrice ou le groupe en question sera migré, mais pas mappé.  Cela sera le cas même si l’adresse e-mail est utilisée comme nom d’utilisateur pour la connexion.
 
 1. Si un courrier électronique donné est introuvable sur le système IMS (Adobe Identity Management System) pour l’ID d’organisation utilisé (ou si l’ID IMS ne peut pas être récupéré pour une autre raison), l’utilisateur ou le groupe en question sera migré, mais pas mappé.
 
@@ -29,7 +29,7 @@ Les cas spécifiques suivants seront consignés :
 
 1. Si un utilisateur existe sur l’instance d’AEM Cloud Service cible avec le même nom d’utilisateur (rep:principalName) que l’un des utilisateurs de l’instance d’AEM source, l’utilisateur ou le groupe en question ne fera pas l’objet d’une migration.
 
-1. Si un utilisateur est migré sans avoir au préalable été mappé via le mappage utilisateur, il ne pourra pas se connecter à l’aide de son identifiant IMS sur le système cloud cible.  Ils peuvent se connecter à l’aide de la méthode d’AEM traditionnelle, mais gardez à l’esprit que ce n’est normalement pas ce qui est recherché ou attendu.
+1. Si un utilisateur ou une utilisatrice est migré sans avoir au préalable été mappé via le mappage utilisateur, sur le système cloud cible, il ou elle ne pourra pas se connecter à l’aide de son identifiant IMS.  La connexion sera possible à l’aide de la méthode AEM traditionnelle, mais gardez à l’esprit que ce n’est normalement pas ce qui est recherché ou attendu.
 
 ## Considérations supplémentaires {#additional-considerations}
 

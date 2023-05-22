@@ -6,7 +6,7 @@ exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
 source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
 workflow-type: tm+mt
 source-wordcount: '1369'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -40,8 +40,8 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 
 1. Sous l’onglet **Configuration** de la boîte de dialogue **Ajouter un pipeline hors production**, sélectionnez le type de pipeline hors production que vous souhaitez ajouter.
 
-   * **Pipeline de qualité du code** - Créez un pipeline qui génère votre code, exécute des tests unitaires et évalue la qualité du code, mais ne se déploie PAS.
-   * **Pipeline de déploiement** - Créez un pipeline qui génère votre code, exécute des tests unitaires, évalue la qualité du code et se déploie dans un environnement.
+   * **Pipeline de qualité du code** – Créez un pipeline qui génère votre code, exécute des tests unitaires et évalue la qualité du code, mais ne le déploie PAS.
+   * **Pipeline de déploiement** – Créez un pipeline qui génère votre code, exécute des tests unitaires, évalue la qualité du code et le déploie dans un environnement.
 
    ![Boîte de dialogue Ajouter un pipeline hors production](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-config.png)
 
@@ -52,7 +52,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
       * **Manuel** - utilisez cette option pour démarrer manuellement le pipeline.
       * **Lors des modifications Git** - cette option démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
 
-1. Si vous choisissez de créer une **Pipeline de déploiement** vous devez également définir la variable **Comportement des échecs de mesure importants**.
+1. Si vous choisissez de créer un **pipeline de déploiement**, vous devez également définir le **comportement des échecs de mesure importants**.
 
    * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
    * **Défaillance immédiate** - si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
@@ -116,11 +116,11 @@ Pour terminer la configuration du pipeline hors production de code full stack, p
       * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à les sélectionner.
    * **Ignorer la configuration de niveau Web** - Lorsque cette case est cochée, le pipeline ne déploie pas votre configuration de niveau web.
 
-   * **Pipeline** - Si votre pipeline est un pipeline de déploiement, vous pouvez choisir d’exécuter une phase de test. Cochez les options que vous souhaitez activer dans cette phase. Si aucune des options n’est sélectionnée, la phase de test ne s’affichera pas lors de l’exécution du pipeline.
+   * **Pipeline** – Si votre pipeline est un pipeline de déploiement, vous pouvez choisir d’exécuter une phase de test. Cochez les options que vous souhaitez activer pour cette phase. Si vous ne sélectionnez aucune option, la phase de test ne s’affichera pas lors de l’exécution du pipeline.
 
-      * **Tests fonctionnels du produit** - Exécuter [tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) par rapport à l’environnement de développement.
-      * **Tests fonctionnels personnalisés** - Exécuter [tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) par rapport à l’environnement de développement.
-      * **Tests de l’interface utilisateur personnalisée** - Exécuter [tests d’interface utilisateur personnalisés](/help/implementing/cloud-manager/ui-testing.md) pour les applications personnalisées.
+      * **Tests fonctionnels du produit** – Exécutez des [tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) dans l’environnement de développement.
+      * **Tests fonctionnels personnalisés** – Exécutez des [tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) dans l’environnement de développement.
+      * **Tests de l’interface utilisateur personnalisée** – Exécutez des [tests de l’interface utilisateur personnalisée](/help/implementing/cloud-manager/ui-testing.md) pour les applications personnalisées.
 
    ![Pipeline full stack](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-full-stack.png)
 

@@ -1,21 +1,21 @@
 ---
 title: Thèmes de référence, modèles et modèles de données de formulaire
 seo-title: Reference Themes, Templates, and Form Data models
-description: AEM Forms fournit des thèmes de formulaires adaptatifs, des modèles et des modèles de données de formulaire que vous pouvez obtenir à partir de Distribution logicielle.
+description: AEM Forms fournit des thèmes de formulaires adaptatifs, des modèles et des modèles de données de formulaire que vous pouvez obtenir à partir de la distribution logicielle.
 seo-description: AEM Forms provides adaptive forms themes, templates, and form data models that you can get from Software Distribution
 exl-id: 81588759-22da-4123-92fe-5ca97e97f1e4
 source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
 workflow-type: tm+mt
 source-wordcount: '779'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
 # Thèmes de référence, modèles et modèles de données de formulaire {#reference-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Service fournit plusieurs thèmes de référence, modèles et modèles de données de formulaire pour vous aider à commencer rapidement la création de Forms adaptatif. Vous pouvez télécharger le [module de contenu de référence du portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) et utilisez la fonction [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) pour installer le [package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) dans votre environnement de production, de développement ou de développement local pour envoyer ces ressources de référence à votre environnement.
+AEM Forms as a Cloud Service fournit plusieurs thèmes de référence, modèles et modèles de données de formulaire pour vous aider à commencer rapidement la création de formulaires adaptatifs. Vous pouvez télécharger le [package de contenu de référence du portail de distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) et utiliser la fonction [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) pour installer le [package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) dans votre environnement de production, de développement ou de développement local pour envoyer ces ressources de référence à votre environnement.
 
-Les thèmes, modèles et modèles de données de formulaire inclus dans le module de contenu de référence sont les suivants :
+Les thèmes, modèles et modèles de données de formulaire inclus dans le package de contenu de référence sont les suivants :
 
 
 | Thèmes | Modèles | Modèle de données de formulaire |
@@ -25,22 +25,22 @@ Les thèmes, modèles et modèles de données de formulaire inclus dans le modul
 | Urbane |  |  |
 | Ultramarine |  |  |
 | Beryl |  |  |
-| Santé |  |  |
+| Healthcare |  |  |
 | FSI |  |  |
 
 ## Thèmes de référence {#reference-themes}
 
-Les [thèmes](/help/forms/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Vous pouvez obtenir les thèmes suivants en installant le [Package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+Les [thèmes](/help/forms/themes.md) vous permettent de styliser vos formulaires sans aucune connaissance approfondie de CSS. Vous pouvez obtenir les thèmes suivants en installant le [package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) :
 
 * Beryl
 * Canvas 3.0
 * Tranquil
 * Urbane
 * Ultramarine
-* Santé
+* Healthcare
 * FSI (Financial Services &amp; Insurance)
 
-Chaque thème contient un style unique et élégant que vous pouvez utiliser pour créer des formulaires adaptatifs attrayants pour vos utilisateurs. Il contient des styles uniques pour les sélecteurs tels que le panneau, la zone de texte, la zone numérique, le bouton radio, le tableau et le commutateur. Les styles de ces thèmes sont basés sur les besoins. Par exemple, dans un scénario particulier, vous avez besoin d’un thème minimaliste avec des polices propres. Le thème Liberté permet d&#39;obtenir cet aspect.
+Chaque thème contient un style unique et élégant que vous pouvez utiliser pour créer des formulaires adaptatifs attrayants pour vos utilisateurs et vos utilisatrices. Il contient des styles uniques pour les sélecteurs tels que le panneau, la zone de texte, la zone numérique, le bouton radio, le tableau et le commutateur. Les styles de ces thèmes varient selon les besoins. Par exemple, dans un scénario particulier, vous avez besoin d’un thème minimaliste avec des polices très lisibles. Le thème Liberty permet d’obtenir cette apparence.
 
 ![Thèmes de référence](assets/ref-themes.png)
 
@@ -50,13 +50,13 @@ Pour plus d’informations sur l’installation du package, voir [Comment travai
 
 ## Beryl {#beryl}
 
-Le thème Beryl met l’accent sur l’utilisation de l’image d’arrière-plan, la transparence et de grandes icônes aplaties. Dans la capture d’écran ci-dessous, vous pouvez voir à quoi ressemble le thème Beryl, et comment il peut augmenter le style de votre formulaire.
+Le thème Beryl souligne l’utilisation d’une image d’arrière-plan, de la transparence et de grandes icônes aplaties. Dans la capture d’écran ci-dessous, vous pouvez voir à quoi ressemble le thème Beryl, et comment il peut augmenter le style de votre formulaire.
 
 ![Thème Beryl](assets/beryl.png)
 
 ## Canvas 3.0 {#canvas}
 
-La version 3.0 du canevas est le thème par défaut de la Forms adaptative. Elle met l’accent sur l’utilisation des couleurs de base, de la transparence et des icônes plates. Dans la capture d’écran ci-dessous, vous pouvez voir à quoi ressemble le thème Canevas 3.0.
+Canvas 3.0 est le thème par défaut des formulaires adaptatifs. Il souligne l’utilisation des couleurs de base, de la transparence et des icônes aplaties. Dans la capture d’écran ci-dessous, vous pouvez voir à quoi ressemble le thème Canvas 3.0.
 
 ![Thème Beryl](assets/canvas.png)
 
@@ -77,46 +77,46 @@ Le thème Urbane met en évidence une apparence minimaliste et fonctionnelle de 
 
 ## Ultramarine {#ultramarine}
 
-Le thème Ultramarine utilise des nuances bleues profondes pour mettre en surbrillance les composants tels que les onglets, les panneaux, les zones de texte et les boutons.
+Le thème Ultramarine met en évidence les composants tels que les onglets, les panneaux, les zones de texte et les boutons avec des tons bleu foncé.
 
 ![Thème Ultramarine](assets/ultramarine.png)
 
-## Santé {#healthcare}
+## Healthcare {#healthcare}
 
-Le thème des soins de santé utilise des nuances vertes profondes pour mettre en évidence les composants tels que les onglets, les panneaux, les zones de texte et les boutons.
+Le thème Healthcare met en évidence les composants tels que les onglets, les panneaux, les zones de texte et les boutons avec des tons vert foncé.
 
 ![Thème FSI](assets/healthcare.png)
 
 
 ## FSI (Financial Services &amp; Insurance)
 
-Le thème FSI met l’accent sur l’aspect minimaliste et fonctionnel de votre formulaire. Lorsque vous appliquez le thème FSI à votre formulaire, vous pouvez voir que les composants du panneau sont jaunes.
+Le thème FSI donne un aspect minimaliste et fonctionnel à votre formulaire. Lorsque vous appliquez le thème FSI à votre formulaire, les composants du panneau sont jaunes.
 
 ![Thème FSI](assets/fsi.png)
 
 ## Modèles de référence {#reference-templates}
 
 
-[Modèles](/help/forms/themes.md) vous permet de définir la structure, le contenu et les actions du formulaire initial. Vous pouvez obtenir les modèles suivants en installant le [Package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+Les [modèles](/help/forms/themes.md) vous permettent de définir la structure, le contenu et les actions de votre formulaire initial. Vous pouvez obtenir les modèles suivants en installant le [package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) :
 
 * De base
 * Vide
 
-Le modèle de base vous permet de créer rapidement un formulaire d’inscription. Vous pouvez également l’utiliser pour prévisualiser les fonctionnalités des composants de base de Forms adaptatif. Il fournit une disposition d’assistant pour la présentation section par section des données. Utilisez le modèle vierge pour commencer à créer un formulaire adaptatif à partir d’un canevas vierge.
+Le modèle de base permet de créer rapidement un formulaire d’inscription. Vous pouvez également l’utiliser pour prévisualiser les fonctionnalités des composants de base des formulaires adaptatifs. Il fournit une disposition d’assistant pour la présentation section par section des données. Utilisez le modèle vierge pour commencer à créer un formulaire adaptatif à partir d’un canevas vierge.
 
 
 ## Modèles de données de formulaire de référence {#reference-models}
 
-Le Forms adaptatif peut alors interagir avec les serveurs Microsoft Dynamics 365 et Salesforce pour activer les workflows métier. Par exemple :
+Les formulaires adaptatifs peuvent ainsi interagir avec les serveurs Microsoft Dynamics 365 et Salesforce pour activer les workflows métier. Par exemple :
 
-* Écrivez des données dans Microsoft Dynamics 365 et Salesforce lors de l’envoi du formulaire adaptatif.
-* Écrivez des données dans Microsoft Dynamics 365 et Salesforce par le biais d’entités personnalisées définies dans le modèle de données de formulaire et vice versa.
-* Query Microsoft Dynamics 365 et le serveur Salesforce pour les données et préremplir le Forms adaptatif.
-* Lecture des données à partir du serveur Microsoft Dynamics 365 et Salesforce.
+* Écrivez des données sur Microsoft Dynamics 365 et Salesforce sur les envois de formulaires adaptatifs.
+* Écrivez des données dans Microsoft Dynamics 365 et Salesforce via des entités personnalisées définies dans le modèle de données de formulaire et vice versa.
+* Demandez des données aux serveurs Microsoft Dynamics 365 et Salesforce et préremplissez des formulaires adaptatifs.
+* Lisez des données à partir des serveurs Microsoft Dynamics 365 et Salesforce.
 
-Vous pouvez obtenir les modèles de données de formulaire suivants en installant le [Package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+Vous pouvez obtenir les modèles de données de formulaire suivants en installant le [package de contenu de référence](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip) :
 
 * Microsoft® Dynamics 365
 * Salesforce
 
-Pour plus d’informations sur l’utilisation de ces modèles, voir [Configuration des services cloud Microsoft Dynamics 365 et Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=en#configure-dynamics-cloud-service)
+Pour plus d’informations sur l’utilisation de ces modèles, consultez [Configuration des services cloud Microsoft Dynamics 365 et Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=fr#configure-dynamics-cloud-service).

@@ -1,17 +1,17 @@
 ---
 title: Modification des propriétés de page
-description: Définition des propriétés requises pour une page
+description: Définir les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
 source-git-commit: 5a43b6db8a5743b87d6eafdad31418e6cb45d22b
 workflow-type: tm+mt
 source-wordcount: '2363'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
 # Modification des propriétés de page {#editing-page-properties}
 
-Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy alors que d’autres ne le sont pas et les informations de Live Copy seront disponibles, le cas échéant.
+Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy alors que d’autres ne le sont pas et les informations de la Live Copy seront disponibles, le cas échéant.
 
 ## Propriétés de page {#page-properties}
 
@@ -23,21 +23,21 @@ Les propriétés sont réparties sur plusieurs onglets.
 
    * **Titre** – Le titre de la page est affiché à divers emplacements ; dans la liste de l’onglet **Sites web** et les vues Carte/Liste **Sites**, par exemple
       * Ce champ est obligatoire.
-   * **Balises** - Vous pouvez y ajouter ou supprimer des balises de la page en mettant à jour la liste dans la zone de sélection.
+   * **Balises** : vous pouvez ajouter des balises sur la page, ou en supprimer, en mettant à jour la liste dans la zone de sélection.
       * La balise sélectionnée est alors répertoriée sous la zone de sélection. Vous pouvez supprimer une balise de cette liste à l’aide du symbole x.
       * Vous pouvez saisir une nouvelle balise en saisissant son nom dans une zone de sélection vide.
-         * La nouvelle balise est créée lorsque vous appuyez sur Entrée.
-         * La nouvelle balise s’affiche alors avec une petite étoile à droite indiquant qu’il s’agit d’une nouvelle balise.
+         * La nouvelle balise est en réalité créée lorsque vous appuyez sur Entrée.
+         * Elle est marquée d’une petite étoile sur la droite indiquant qu’il s’agit d’une nouvelle balise.
       * Avec la fonctionnalité de liste déroulante, vous pouvez effectuer un choix parmi des balises existantes.
-      * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisée pour supprimer cette balise pour cette page.
-      * Pour plus d’informations sur les balises, voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md).
-   * **Masquer dans la navigation** - Indique si la page est affichée ou masquée dans la navigation de la page du site résultant.
+      * Un x s’affiche lorsque vous placez le pointeur de la souris sur une entrée de balise dans la zone de sélection, qui peut être utilisé pour supprimer cette balise pour cette page.
+      * Pour plus d’informations sur les balises, consultez la section [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md).
+   * **Masquer dans la navigation** : indique si la page est affichée ou masquée dans la navigation entre les pages du site qui en résulte.
 
 * **Valorisation de marque**
 
    Appliquez une identité de marque cohérente sur plusieurs pages en ajoutant un rappel à chaque titre de page. Cette fonctionnalité nécessite l’utilisation du composant de page de la version 2.14.0, ou ultérieure, des [composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
 
-   * **Slug de marque**
+   * **Slug de la marque**
 
       * **Remplacer** : cochez la case pour définir le titre de rappel sur cette page.
          * La valeur sera héritée par toutes les pages enfants à moins que leurs valeurs de **remplacement** ne soient également définies.
@@ -50,7 +50,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Autres titres et descriptions**
 
-   * **Titre de la page** – Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si elle est vide, **Titre** sera utilisé.
+   * **Titre de la page** – Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si le champ est vide, le **Titre** sera utilisé.
    * **Titre de navigation** – Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si ce champ est vide, le **Titre** est utilisé.
    * **Sous-titre** – Sous-titre à utiliser sur la page.
    * **Description** – Votre description de la page, son objectif ou tout autre détail que vous souhaiteriez ajouter.
@@ -76,7 +76,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **URL de redirection**
 
-   * Permet de saisir une URL Vanity pour cette page, ce qui peut vous permettre d’avoir une URL plus courte et/ou plus expressive.
+   * Permet de saisir une URL de redirection pour cette page, ce qui peut vous permettre d’avoir une URL plus courte ou plus expressive.
    * Par exemple, si l’URL Vanity est définie sur `welcome` sur la page identifiée par le chemin `/v1.0/startpage` pour le site web `http://example.com`, `http://example.com/welcome` sera l’URL Vanity de `http://example.com/content/v1.0/startpage`
 
    >[!CAUTION]
@@ -84,7 +84,7 @@ Les propriétés sont réparties sur plusieurs onglets.
    >L’URL Vanity :
    >
    >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
-   >* Ne prenez pas en charge les modèles d’expression régulière.
+   >* Ne prennent pas en charge les modèles d’expression régulière.
    >* ne doit pas être définie sur une page existante.
 
 
@@ -111,9 +111,9 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Configuration**
 
-   * **Hérité de &lt;path>** - activer/désactiver l’héritage ; met à disposition de **Configuration du cloud** pour la sélection
+   * **Hérité de &lt;path>** - activer/désactiver l’héritage ; active la disponibilité de la **Configuration du cloud** pour la sélection.
 
-   * **Configuration du cloud** - Chemin d’accès à la configuration sélectionnée
+   * **Configuration du cloud** – Chemin d’accès à la configuration sélectionnée
 
 * **Paramètres de modèles**
 
@@ -135,29 +135,29 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **SEO**
 
-   * **URL canonique** - peut être utilisé pour remplacer l’URL canonique de la page ; si rien n’est indiqué, l’URL de la page correspond à son URL canonique.
+   * **URL canonique** - peut être utilisée pour remplacer l’URL canonique de la page ; si rien n’est indiqué, l’URL de la page correspond à son URL canonique.
 
-   * **Balises des robots** - sélectionnez les balises robots pour contrôler le comportement des moteurs de recherche.
+   * **Balises robots** - sélectionner les balises robots pour contrôler le comportement des robots des moteurs de recherche.
 
       >[!NOTE]
       >
-      >Certaines des options sont en conflit. En cas de conflit, l’option la plus permissive est prioritaire.
+      >Certaines des options sont en conflit les unes avec les autres. En cas de conflit, l’option la plus permissive est prioritaire.
 
-   * **Générer un plan de site** : lorsqu’il est sélectionné, un fichier sitemap.xml est généré pour cette page et ses descendants.
+   * **Générer un plan de site** : lorsque cette option est sélectionnée, un fichier sitemap.xml est généré pour cette page et ses descendants.
 
 ### Images {#images}
 
 * **Image en vedette**
 
-   Sélectionnez et configurez l’image à afficher. Il est utilisé dans les composants qui référencent la page ; par exemple, teasers, listes de pages, etc.
+   Sélectionnez et configurez l’image à afficher. Cette option est utilisée dans les composants qui référencent la page, par exemple, les teasers, les listes de pages, etc.
 
    * **Image**
 
-      Vous pouvez **Pick** une ressource ou recherchez un fichier à charger, puis **Modifier** ou **Effacer**.
+      Vous pouvez **Choisir** une ressource ou rechercher un fichier à charger, puis sélectionner **Modifier** ou **Effacer**.
 
-   * **Texte de remplacement** : texte utilisé pour représenter la signification et/ou la fonction de l’image ; par exemple, pour une utilisation par des lecteurs d’écran.
+   * **Texte secondaire** : texte utilisé pour représenter la signification et/ou la fonction de l’image, par exemple, pour une utilisation par des lecteurs d’écran.
 
-   * **Hériter : valeur issue de la ressource DAM** : lorsque cette option est cochée, le texte de remplacement est renseigné avec la valeur de la variable `dc:description`métadonnées dans DAM
+   * **Hériter - Valeur issue de la ressource DAM** : lorsque cette option est cochée, le texte secondaire est renseigné avec la valeur des métadonnées `dc:description`dans DAM.
 
 * **Miniature**
 
@@ -176,7 +176,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Configurations ContextHub**
 
-   * **Hérité de &lt;path>** - activer/désactiver l’héritage ; met à disposition de **Chemin d’accès ContextHub** et **Chemin d’accès aux segments** pour la sélection
+   * **Hérité de &lt;path>** : active/désactive l’héritage ; active la disponibilité du **Chemin d’accès ContextHub** et du **Chemin d’accès des segments** pour la sélection
 
    * **Chemin ContextHub** – Définit la [configuration ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md)
    * **Chemin d’accès aux segments** – Définit le chemin d’accès aux [segments](/help/sites-cloud/authoring/personalization/contexthub-segmentation.md)
@@ -197,7 +197,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 ### Blueprint {#blueprint}
 
-Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies et font partie de [Gestion multisite.](/help/sites-cloud/administering/msm/overview.md)
+Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies, et font partie de la [gestion multisite.](/help/sites-cloud/administering/msm/overview.md)
 
 * **Live Copies actuelles** – Listes de pages basées sur (c.-à-d. Live Copies de) cette page de plan directeur.
 
@@ -205,7 +205,7 @@ Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les
 
 ### Live Copy {#live-copy}
 
-Cet onglet n’est visible que pour les pages configurées en tant que Live Copies. Comme pour les plans directeurs, les Live Copies font partie de [Gestion multisite.](/help/sites-cloud/administering/msm/overview.md).
+Cet onglet n’est visible que pour les pages configurées en tant que Live Copies. Comme pour les plans directeurs, les Live Copies font partie de la [gestion multisite.](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchroniser** – Synchroniser la Live Copy avec le plan directeur, en conservant les modifications locales.
 * **Réinitialiser** – Réinitialiser la Live Copy à l’état de plan directeur, en supprimant les modifications locales.
@@ -234,30 +234,30 @@ Lorsqu’un environnement de prévisualisation est activé, les éléments suiva
 
 ### Application web progressive {#progressive-web-app}
 
-Grâce à une configuration simple, un auteur de contenu peut désormais activer des fonctionnalités d’application web progressive (PWA) pour les expériences créées dans AEM Sites.
+Grâce à une configuration simple, une personne en charge de la création de contenu peut désormais activer des fonctionnalités d’application web progressive (PWA) pour les expériences créées dans AEM Sites.
 
 >[!NOTE]
 >
->Pour plus d’informations, voir [Activation des fonctionnalités d’applications web progressives](/help/sites-cloud/authoring/features/enable-pwa.md).
+>Pour plus d’informations, consultez la section [Activation des fonctionnalités d’applications web progressives](/help/sites-cloud/authoring/features/enable-pwa.md).
 
 * **Configurer l’expérience d’installation**
 
-   * **Activer PWA** - activer/désactiver la fonction ; permet aux utilisateurs d’installer le site en tant que PWA.
-   * **StartupURL** : URL de démarrage préférée
-   * **Mode d’affichage** : mode de masquage ou de présentation du navigateur à l’utilisateur sur l’appareil local
-   * **Orientation de l’écran** - comment le PWA va gérer les orientations de l’appareil
-   * **Couleur du thème** : couleur de l’application qui affecte la manière dont le système d’exploitation de l’utilisateur local affiche la barre d’outils de l’interface utilisateur native et les commandes de navigation.
-   * **Couleur de fond** : couleur d’arrière-plan de l’application, qui s’affiche au chargement de l’application.
-   * **Icône** : icône représentant l’application sur l’appareil de l’utilisateur.
+   * **Activer PWA** : active/désactive la fonction ; permet d’installer le site en tant que PWA.
+   * **StartupURL** : URL de démarrage préférée
+   * **Mode d’affichage** : définit la manière dont le navigateur doit être masqué ou présenté sur l’appareil local
+   * **Orientation de l’écran** : définit comment le PWA gère les orientations de l’appareil
+   * **Couleur du thème** : la couleur de l’application utilisée pour l’affichage de la barre d’outils et des commandes de navigation de l’interface utilisateur native par le système d’exploitation de l’utilisateur ou de l’utilisatrice local
+   * **Couleur d’arrière-plan** : la couleur d’arrière-plan de l’application qui s’affiche au chargement de l’application
+   * **Icône** : l’icône qui représente l’application sur l’appareil de l’utilisateur
 
 * **Gestion du cache (avancé)**
 
-   * **Stratégie de mise en cache et fréquence d’actualisation du contenu** : définit le modèle de mise en cache de votre PWA.
+   * **Stratégie de mise en cache et fréquence d’actualisation du contenu** : définit le modèle de mise en cache de votre PWA
    * **Fichiers à mettre en cache pour une utilisation hors ligne**
-      * **Prémise du cache du fichier (aperçu technique)** - les fichiers hébergés sur AEM seront enregistrés dans le cache du navigateur local lorsque le service worker est installé et avant d’être utilisé
-      * **Bibliothèques côté client** - bibliothèques côté client à mettre en cache pour une expérience hors ligne
-      * **Inclusions de chemin** - les requêtes réseau pour les chemins définis sont interceptées et le contenu mis en cache est renvoyé conformément à la stratégie de mise en cache configurée et à la fréquence d’actualisation du contenu.
-      * **Exclusions de chemin** - ces fichiers ne seront jamais mis en cache, quels que soient les paramètres sous Pré-mise en cache de fichier et inclusions de chemin.
+      * **Prémise en cache des fichiers (aperçu technique)** : ces fichiers hébergés sur AEM seront enregistrés dans la mémoire cache du navigateur local lorsque l’agent de service effectue l’installation et avant son utilisation
+      * **Bibliothèques côté client** : bibliothèques côté client à mettre en cache pour une expérience hors ligne
+      * **Inclusions des chemins** : les demandes réseau pour les chemins définis sont interceptées et le contenu mis en cache est renvoyé conformément à la stratégie de mise en cache et à la fréquence d’actualisation configurées pour le contenu
+      * **Exclusions des chemins** : ces fichiers ne seront jamais mis en cache, quels que soient les paramètres définis dans Prémise en cache des fichiers et dans Inclusions des chemins
 
 ## Modification des propriétés de page {#editing-page-properties-1}
 
@@ -308,9 +308,9 @@ Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utili
 >There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
 -->
 
-Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de différentes manières, notamment :
+Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de différentes manières, notamment :
 
-* Lorsque vous parcourez les **Sites** console
+* Lorsque vous parcourez la console **Sites**
 * Après avoir utilisé **Rechercher** pour localiser un ensemble de pages
 
 Sélectionnez les pages et cliquez ou appuyez ensuite sur l’option **Propriétés** pour afficher les propriétés en bloc :
@@ -330,7 +330,7 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
    * Liste des pages affectées
       * Vous pouvez sélectionner/désélectionner si nécessaire.
       * Onglets
-         * Comme pour l’affichage des propriétés d’une seule page, les propriétés sont classées sous onglets.
+         * Comme pour l’affichage des propriétés d’une seule page, les propriétés sont classées dans des onglets.
    * Un sous-ensemble de propriétés
       * Les propriétés qui sont disponibles sur toutes les pages sélectionnées, et qui ont été définies explicitement comme étant disponibles pour la modification en masse, sont visibles.
       * Si vous réduisez la sélection à une seule page, toutes les propriétés sont alors visibles.

@@ -1,17 +1,17 @@
 ---
-title: Présentation de l’outil de mappage des utilisateurs (hérité)
-description: Présentation de l’outil de mappage des utilisateurs (hérité)
+title: Présentation de l’outil de mappage des utilisateurs et des utilisatrices (hérité)
+description: Présentation de l’outil de mappage des utilisateurs et des utilisatrices (hérité)
 exl-id: 17ed5721-093e-4491-b8c4-3dadcaa6598b
 hide: true
 hidefromtoc: true
 source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
 workflow-type: tm+mt
 source-wordcount: '306'
-ht-degree: 75%
+ht-degree: 92%
 
 ---
 
-# Présentation de l’outil de mappage des utilisateurs (hérité) {#overview-user-mapping-tool}
+# Présentation de l’outil de mappage des utilisateurs et des utilisatrices (hérité) {#overview-user-mapping-tool}
 
 >[!INFO]
 >
@@ -36,7 +36,7 @@ L’un des changements majeurs apportés à AEM as a Cloud Service est l’utili
 
 ## Outil de mappage des utilisateurs {#mapping-tool}
 
-L’outil de transfert de contenu (sans mappage utilisateur) migre les utilisateurs et les groupes associés au contenu en cours de migration. L’outil de mappage des utilisateurs fait partie de l’outil de transfert de contenu. Son seul objectif est de modifier les utilisateurs afin qu’ils puissent être correctement reconnus par IMS, la fonctionnalité d’authentification unique utilisée par AEM as a Cloud Service. Une fois ces modifications effectuées, l’outil de transfert de contenu migre les utilisateurs et les groupes du contenu spécifié comme d’habitude.
+L’outil de transfert de contenu (sans mappage utilisateur) migre les utilisateurs et les groupes associés au contenu en cours de migration. L’outil de mappage des utilisateurs et des utilisatrices fait partie de l’outil de transfert de contenu. Son seul objectif est de modifier les utilisateurs, les utilisatrices et les groupes afin qu’ils puissent être correctement reconnus par IMS, la fonctionnalité d’authentification unique utilisée par AEM as a Cloud Service. Une fois ces modifications effectuées, l’outil de transfert de contenu migre les utilisateurs, les utilisatrices et les groupes du contenu spécifié comme d’habitude.
 
 ### Prochaines étapes {#whats-next}
 
