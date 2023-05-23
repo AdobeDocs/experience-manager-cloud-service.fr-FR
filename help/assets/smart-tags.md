@@ -1,19 +1,19 @@
 ---
-title: Balisage automatique des ressources avec le service dynamique [!DNL Adobe Sensei]
-description: Balisez les ressources à l’aide d’un service d’intelligence artificielle qui applique des balises commerciales contextuelles et descriptives.
+title: Comment ajouter des balises intelligentes aux ressources dans AEM ?
+description: Ajoutez des balises intelligentes aux ressources dans AEM avec un service artificiellement intelligent qui applique des balises commerciales contextuelles et descriptives.
 contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
 workflow-type: tm+mt
-source-wordcount: '2445'
-ht-degree: 97%
+source-wordcount: '2462'
+ht-degree: 94%
 
 ---
 
 
-# Ajout de balises actives à vos ressources et amélioration de l’expérience de recherche {#smart-tag-assets-for-faster-search}
+# Ajout de balises intelligentes aux ressources dans AEM {#smart-tags-assets-aem}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -24,13 +24,13 @@ Les entreprises qui traitent des ressources numériques utilisent de plus en plu
 
 Comparé aux vocabulaires des langages naturels, le balisage basé sur la taxonomie métier aide à aligner les ressources avec les activités d’une entreprise et à veiller à ce que les mieux adaptées apparaissent dans les recherches. Par exemple, un constructeur de voitures peut baliser les images de voitures avec les noms de modèles afin de n’afficher que les images appropriées lors de recherches servant à concevoir une campagne de promotion.
 
-En arrière-plan, cette fonctionnalité utilise le cadre d’intelligence artificielle d’[Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. [!DNL Experience Manager Assets] applique automatiquement les balises intelligentes aux ressources chargées, par défaut.
+En arrière-plan, cette fonctionnalité utilise le cadre d’intelligence artificielle d’[Adobe Sensei](https://business.adobe.com/why-adobe/experience-cloud-artificial-intelligence.html) pour entraîner son algorithme de reconnaissance d’images par rapport à votre structure de balises et de votre taxonomie métier. Cette intelligence de contenu est ensuite utilisée pour appliquer les balises pertinentes sur un ensemble de ressources différentes. AEM applique automatiquement, par défaut, les balises intelligentes aux ressources chargées.
 
 <!-- TBD: Create a flowchart for how training works in CS.
 ![flowchart](assets/flowchart.gif) 
 -->
 
-## Types de ressource pris en charge {#smart-tags-supported-file-formats}
+## Types de ressources pris en charge pour les balises intelligentes dans AEM {#smart-tags-supported-file-formats}
 
 Vous pouvez baliser les types de ressources suivants :
 
@@ -59,7 +59,7 @@ Vous pouvez baliser les types de ressources suivants :
 | image/psd |  |  |
 | image/vnd.adobe.photoshop |  |  |
 
-[!DNL Experience Manager] ajoute automatiquement les balises intelligentes aux ressources textuelles et vidéo par défaut. Pour ajouter automatiquement des balises intelligentes aux images, suivez la procédure ci-dessous.
+AEM ajoute automatiquement les balises intelligentes aux ressources textuelles et aux vidéos par défaut. Pour ajouter automatiquement des balises intelligentes aux images, suivez la procédure ci-dessous.
 
 * [Comprendre les directives et les modèles relatifs aux balises](#understand-tag-models-guidelines).
 * [Entraîner le modèle](#train-model).
@@ -189,9 +189,9 @@ Pour vérifier que le service de balises intelligentes est entraîné sur vos ba
 [!DNL Experience Manager] can automatically tag the assets that users upload to DAM. To do so, administrators configure a workflow to add an available step that tags assets. See [how to enable Smart Tags for uploaded assets](/help/assets/smart-tags-configuration.md#enable-smart-tagging-for-uploaded-assets).
 -->
 
-## Balisage de ressources texte avec des balises intelligentes {#tag-assets}
+## Balisage de ressources texte avec des balises intelligentes dans AEM {#tag-assets}
 
-Tous les types de ressources pris en charge sont automatiquement balisés par [!DNL Experience Manager Assets] lors du chargement. Le balisage est activé et fonctionne, par défaut. [!DNL Experience Manager] applique les balises appropriées en temps quasi réel. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
+Tous les types de ressources pris en charge sont automatiquement balisés par [!DNL Experience Manager Assets] lors du chargement. Le balisage est activé et fonctionne, par défaut. AEM applique les balises intelligentes appropriées en temps quasi réel. <!-- TBD: You can also apply the tagging workflow on-demand. The workflow applies to both, assets and folders. -->
 
 * Pour les images et les vidéos, les balises intelligentes sont basées sur certains aspects visuels.
 
