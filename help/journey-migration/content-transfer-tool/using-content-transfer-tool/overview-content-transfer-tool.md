@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: ac35bbe5ad78e07cc5292e089f3d71c6a8ed6ccc
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 100%
+source-wordcount: '717'
+ht-degree: 98%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 Développé par Adobe, l’outil de transfert de contenu est utilisé pour déplacer du contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible.
 
-Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes).
+Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes).  Voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour plus d’informations.
 
 Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version afin d’exploiter tous les avantages qu’elle offre :
 

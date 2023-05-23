@@ -2,10 +2,10 @@
 title: Validation des transferts de contenu
 description: Utiliser l’outil de transfert de contenu pour valider les transferts de contenu
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: b6c9d7411e84b18926aa525efe25296002c2d3d2
+source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 100%
+source-wordcount: '1070'
+ht-degree: 84%
 
 ---
 
@@ -77,7 +77,7 @@ La partie supérieure du journal d’ingestion contiendra une entrée semblable 
 Une fois l’ingestion terminée et la validation lancée, l’entrée de journal suivante est notée dans le journal d’ingestion :
 
 ```
-Gathering artifacts for migration validation...  
+Gathering artifacts for migration validation...
 ```
 
 Les détails de la validation suivront cette entrée. Voici un exemple d’une migration importante :
@@ -131,6 +131,24 @@ En plus d’être inclus dans le journal d’ingestion, le rapport de validation
 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
+
+## Validation de la migration de l’entité de sécurité {#how-to-validate-principal-migration}
+
+Voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour lire les détails des migrations principales et les raisons pour lesquelles cela est nécessaire.
+
+Une fois l&#39;extraction et l&#39;ingestion terminées, un résumé et un rapport de la migration principale seront disponibles. Ces informations peuvent être utilisées pour valider les utilisateurs et les groupes qui ont été migrés avec succès et, peut-être, pour déterminer pourquoi certains n’ont pas été migrés.
+
+Pour afficher ces informations, accédez à Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu. Accédez à **Tâches d’ingestion** et localisez l’ingestion que vous souhaitez vérifier. Cliquez sur les trois points (**...**) pour cette ingestion, puis cliquez sur **Afficher le résumé principal** dans la liste déroulante.
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
+
+Une boîte de dialogue s’affiche avec les informations de résumé. Utilisez les icônes d’aide pour lire une description plus complète. Cliquez sur le bouton **Télécharger le rapport** pour télécharger le rapport complet séparé par des virgules (CSV).
+
+![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-dialog.png)
+
+>[!NOTE]
+>
+>Si le mappage utilisateur est désactivé, une autre variante de cette boîte de dialogue s’affiche. Il indique que le mappage des utilisateurs a été désactivé et n’affichera pas les 3 champs donnant des valeurs de mappage des utilisateurs.
 
 ## Résolution des problèmes {#troubleshooting}
 

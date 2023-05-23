@@ -2,10 +2,10 @@
 title: Mappage des utilisateurs et utilisatrices et migration des entités principales
 description: Présentation du mappage des utilisateurs et des utilisatrices et de la migration des entités principales
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 100%
+source-wordcount: '788'
+ht-degree: 96%
 
 ---
 
@@ -53,3 +53,7 @@ Les cas spécifiques suivants sont consignés :
 * Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est défini, les utilisateurs déjà transférés sur l’instance de Cloud Service seront supprimés avec l’ensemble du référentiel existant, et un nouveau référentiel sera créé pour intégrer du contenu. Cette opération réinitialise également tous les paramètres, y compris les autorisations sur l’instance Cloud Service cible, et est effective pour un utilisateur administrateur ajouté au groupe **administrateurs**. La personne en charge de l’administration doit être réajoutée au groupe **administrateurs** pour récupérer le jeton d’accès à l’outil de transfert de contenu.
 * Lorsque des rechargements de contenu sont effectués, si le contenu n’est pas transféré parce qu’il n’a pas été modifié depuis le transfert précédent, les utilisateurs, les utilisatrices et les groupes associés à ce contenu ne seront pas transférés non plus, même s’ils ont changé entre-temps. En effet, les utilisateurs, les utilisatrices et les groupes font l’objet d’une migration avec le contenu auquel ils sont associés.
 * Si l’instance AEM Cloud Service cible a un utilisateur ou une utilisatrice avec un nom d’utilisateur différent, mais la même adresse e-mail que l’un des utilisateurs ou l’une des utilisatrices de l’instance AEM source, et que le mappage des utilisateurs est activé, un message d’erreur est consigné dans les journaux et l’utilisateur ou l’utilisatrice AEM source n’est pas transféré(e), car un seul utilisateur ou une seule utilisatrice avec une adresse e-mail donnée est autorisé(e) sur le système cible.
+
+## Résumé final et rapport {#final-report}
+
+Une fois l’extraction et l’ingestion terminées, un rapport est généré avec les principaux détails de migration. Voir [Validation de la migration de l’entité de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) pour plus de détails.
