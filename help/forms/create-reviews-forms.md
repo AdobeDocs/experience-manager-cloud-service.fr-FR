@@ -1,40 +1,39 @@
 ---
 title: Création et gestion de révisions dans des formulaires
 seo-title: Creating and managing reviews in forms
-description: Une révision est un mécanisme permettant à un ou plusieurs réviseurs d’ajouter des commentaires sur un élément disponible dans un formulaire.
-seo-description: A Review is a mechanism that allows one or more reviewers to comment on an asset that is available in a form.
+description: Une révision est un mécanisme qui permet à un ou plusieurs réviseurs de commenter un formulaire.
+seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
-exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: 3efd7d81424369ce6430802373129ab91b7356ab
 workflow-type: tm+mt
-source-wordcount: '670'
-ht-degree: 77%
+source-wordcount: '652'
+ht-degree: 29%
 
 ---
 
-# Création et gestion de révisions des actifs d’un formulaire{#creating-and-managing-reviews-for-assets-in-forms}
+# Création et gestion de révisions des formulaires{#creating-and-managing-reviews-to-forms}
 
 ## Révision {#review}
 
-Une révision est un mécanisme permettant à un ou plusieurs réviseurs ou réviseuses d’ajouter des commentaires sur un élément disponible dans un formulaire.
+Une révision est un mécanisme qui permet à un ou plusieurs réviseurs de commenter des formulaires.
 
 ## Configuration d’une révision {#setting-up-a-review}
 
-1. Accédez à l’onglet Formulaires et sélectionnez un formulaire.
-1. Si aucune révision n’est en cours dans le formulaire, l’icône de démarrage d’une révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) s’affiche dans la barre Action. Cliquez sur l’icône de démarrage d’une révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+1. Accédez à l’explorateur de formulaires et sélectionnez un formulaire à réviser.
+1. Si aucune révision du formulaire n’est en cours, une **Commencer la révision** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) s’affiche dans la barre Action. Cliquez sur le bouton **Commencer la révision** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) icône .
 1. Saisissez les informations suivantes :
 
-   * Titre : (obligatoire). Il peut contenir des caractères alphanumériques, des tirets ou des traits de soulignement.
-   * Description : (factultative). Description de la finalité ou du contenu de la révision.
-   * Echéance : (facultative). Date de fin de la révision. Une fois l’échéance passée, la tâche est indiquée comme étant « En retard ».
-   * Réviseurs : au moins un réviseur doit être indiqué. La saisie d’un nom de groupe ou d’utilisateur/utilisatrice répertorie tous les noms correspondants, à l’exception du groupe d’utilisateurs ou d’utilisatices du service. Sélectionnez un nom, puis cliquez sur Ajouter.
+   * **Titre**: Obligatoire, peut contenir des caractères alphanumériques, des tirets et des traits de soulignement.
+   * **Description**: Description facultative de l’objectif/du contenu à réviser.
+   * **Deadline**: (Facultatif) la date de fin de la révision. Une fois l’échéance passée, la tâche est indiquée comme étant « En retard ».
+   * **Nom du réviseur**: Un minimum de un est obligatoire. Utilisez la liste déroulante pour ajouter des réviseurs, en saisissant une liste de noms de tous les noms correspondants. sélectionnez un nom, puis cliquez sur **Ajouter**. Dans la section suivante du **Réviseurs** affiche le nom de tous les réviseurs.
 
-1. Cliquez sur Démarrer pour lancer une révision.
+1. Cliquez sur le bouton **Début** pour commencer une révision.
 
->[!NOTE]
->
->* L’administrateur ou l’administratrice peut accéder à tous les groupes associés aux utilisateurs et utilisatrices du formulaire.
->* Le groupe Utilisateurs et utilisatrices de service ne peut pas être sélectionné pour la révision.
+   >[!NOTE]
+   >
+   >* L’administrateur peut accéder à tous les groupes associés aux utilisateurs du formulaire.
+   >* Le groupe Utilisateurs et utilisatrices de service ne peut pas être sélectionné pour la révision.
 
 
 ### Actions survenant lorsqu’une révision est configurée {#actions-that-occur-when-a-review-is-set-up}
@@ -48,46 +47,42 @@ Cette section décrit ce qui se produit lorsqu’une révision est créée ou co
 
    Alerte de notification du réviseur
 
-1. La zone de commentaire est accessible aux personnes effectuant la révision du formulaire. Les autres utilisateurs et utilisatrices peuvent voir les commentaires, mais ne sont pas habilités à en rédiger.
+1. La zone de commentaire est accessible aux réviseurs du formulaire. D&#39;autres peuvent lire les commentaires mais ne les ajoutent pas.
 
 ## Gestion d’une révision {#managing-a-review}
 
 >[!NOTE]
 >
->Seules les révisions en cours peuvent être modifiées. Les révisions terminées ne peuvent pas être modifiées.
+>* Seules les révisions en cours peuvent être modifiées.
+>* Les révisions terminées ne peuvent pas être modifiées.
+
 
 1. Accédez à l’onglet Formulaires et sélectionnez un formulaire.
 
-1. Si une révision de ressource est en cours et que vous en êtes l’initiateur, l’icône Gérer la révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) s’affiche dans la barre Action. Seule la personne initiant la révision peut gérer (mettre à jour/terminer) la révision.
+1. Si une révision d’un formulaire est en cours et que vous en êtes l’initiateur, une **Gérer la révision** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) s’affiche dans la barre d’actions. Seul l’initiateur de la révision peut gérer (mettre à jour/terminer) la révision.
 
-   Cliquez sur l’icône Gérer la révision ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png).
+   Cliquez sur le bouton **Gérer la révision** ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png)icône .
 
    Cette icône est désactivée pour les utilisateurs autres que l’initiateur.
 
-1. Un écran affiche alors les informations suivantes :
+1. Vous obtenez maintenant un écran qui affiche des informations :
 
-   * **Titre** : ne peut pas être modifié.
+   * **Nom de la révision** : ce champ ne peut pas être modifié.
 
-   * **Description** : peut être modifiée.
+   * **Description de la révision** : ce champ peut être modifié.
 
-   * **Échéance** : peut être modifiée. Vous pouvez modifier l’échéance selon n’importe quelle date et heure au-delà de la date et de l’heure actuelles.
+   * **Échéance** : ce champ peut être modifié. Vous pouvez modifier l’échéance selon n’importe quelle date et heure au-delà de la date et de l’heure actuelles.
 
-   * **Nom du réviseur** : peut être modifié. Vous pouvez ajouter ou supprimer des réviseurs. Si une tâche est en retard, vous ne pouvez ajouter des réviseurs qu&#39;après avoir prolongé l&#39;échéance au-delà de la date actuelle.
+   * **Réviseurs**: Disponible pour modification. Vous pouvez ajouter ou supprimer des réviseurs. Si une tâche est en retard, vous ne pouvez ajouter des réviseurs qu&#39;après avoir prolongé l&#39;échéance au-delà de la date actuelle.
 
-1. Modifiez les champs nécessaires, puis cliquez sur Terminé.
-
-   ![État Mis à jour de la révision dans le Gestionnaire des tâches](assets/manage-review-img.png)
-
-   État Mis à jour de la révision dans le Gestionnaire des tâches
-
-1. Pour mettre fin à la révision, cliquez sur Terminer la révision.
+1. Pour mettre fin à la révision, cliquez sur **Fin**.
 
 ### Actions survenant lorsqu’une révision est modifiée {#actions-that-occur-when-a-review-is-modified}
 
-Cette section décrit ce qui se produit lorsque vous modifiez ou mettez fin à une révision :
+Cette section décrit ce qui se passe dans **Mise à jour/fin de révision**:
 
-1. Si la description de la révision est modifiée, la tâche correspondante des réviseurs/réviseuses et de la personne ayant lancé la révision est mise à jour.
-1. Si l’échéance de la révision est modifiée, la nouvelle date est appliquée à la tâche correspondante pour les réviseurs.
+1. Si la description de la révision est modifiée, la tâche correspondante des réviseurs et de l’initiateur est mise à jour.
+1. Si la date limite de révision est modifiée, la tâche correspondante pour les réviseurs est mise à jour avec la nouvelle date.
 
 1. Si un réviseur est supprimé :
 
@@ -112,4 +107,4 @@ Cette section décrit ce qui se produit lorsque vous modifiez ou mettez fin à u
    1. **Réviseurs**: Pour chaque validant, la tâche incomplète associée à la révision est terminée. La tâche n’apparaît plus comme &quot;En attente&quot; dans la section Notifications du réviseur.
    1. **Initiateur**: La tâche affectée à l’initiateur de la révision est marquée comme étant terminée. La tâche est supprimée de la section Notification de l’initiateur de la révision.
    1. **Tous**: La révision s’affiche dans la section Révisions précédentes . Aucun autre commentaire ne peut être ajouté.
-      ![Révision terminée](assets/review-complete-imgg.png).
+   ![Révision terminée](assets/review-complete-imgg.png).
