@@ -2,10 +2,10 @@
 title: Présentation de l’outil de transfert de contenu
 description: Présentation de l’outil de transfert de contenu
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 25bfcd521e9bbc54bff3b87d17cdeb0f99a68511
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 98%
+source-wordcount: '648'
+ht-degree: 81%
 
 ---
 
@@ -14,24 +14,19 @@ ht-degree: 98%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Présentation"
->abstract="Développé par Adobe, l’outil de transfert de contenu est utilisé pour déplacer du contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
+>abstract="L’outil de transfert de contenu est un outil développé par Adobe qui peut être utilisé pour lancer la migration de contenu existant d’une instance d’AEM source (on-premise ou AMS) vers l’instance AEM Cloud Service cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr" text="Conseils et bonnes pratiques"
 
-Développé par Adobe, l’outil de transfert de contenu est utilisé pour déplacer du contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible.
+L’outil de transfert de contenu est un outil développé par Adobe qui peut être utilisé pour lancer la migration de contenu existant d’une instance d’AEM source (on-premise ou AMS) vers l’instance AEM Cloud Service cible.
 
 Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes).  Voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour plus d’informations.
 
-Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version afin d’exploiter tous les avantages qu’elle offre :
+L’outil de transfert de contenu intègre le processus de transfert de contenu à Cloud Acceleration Manager. Cela permet à l’utilisateur de bénéficier de tous les avantages suivants :
 
 * Une méthode en libre-service pour extraire une seule fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
-* L’amélioration de l’expérience utilisateur grâce à une meilleure gestion des statuts de chargement, des barrières de sécurité et des erreurs
+* Amélioration de l’expérience utilisateur grâce à de meilleurs états de chargement, garde-fous et gestion des erreurs
 * La conservation des journaux d’ingestion et leur constante disponibilité à des fins de dépannage
-
-Pour commencer à utiliser la nouvelle version, vous devrez désinstaller les anciennes versions de l’outil de transfert de contenu, car l’outil a subi un changement majeur d’architecture.
-
->[!NOTE]
->
-> Dans les cas où une migration est déjà en cours, vous pouvez continuer à utiliser la version antérieure du CTT jusqu’à ce que la migration soit terminée. Pour consulter la documentation relative à la version précédente du CTT, reportez-vous à la [documentation héritée](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md).
+* Les rapports de migration des entités de sécurité et de validation sont disponibles.
 
 ## Phases de l’outil de transfert de contenu {#phases-content-transfer-tool}
 

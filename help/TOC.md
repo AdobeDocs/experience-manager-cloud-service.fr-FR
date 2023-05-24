@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: cf927f5cc1fca3720716349b1758a47c7b395218
+source-git-commit: 8197b4f4e5cda21532c3660c2f0ec4855ba53a6a
 workflow-type: tm+mt
-source-wordcount: '4074'
+source-wordcount: '4011'
 ht-degree: 99%
 
 ---
@@ -219,19 +219,6 @@ ht-degree: 99%
             + [Présentation](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/overview-user-mapping-tool-legacy.md)
             + [Points importants](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md)
             + [Utilisation de l’outil de mappage des utilisateurs](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/using-user-mapping-tool-legacy.md)
-         + Outil de transfert de contenu hérité {#legacy}
-            + [Présentation](/help/journey-migration/content-transfer-tool/ctt-legacy/overview-content-transfer-tool-legacy.md)
-            + [Conditions préalables pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/ctt-legacy/prerequisites-content-transfer-tool-legacy.md)
-            + [Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/ctt-legacy/guidelines-best-practices-content-transfer-tool-legacy.md)
-            + [Prise en main de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/ctt-legacy/getting-started-content-transfer-tool-legacy.md)
-            + [Validation des transferts de contenu](/help/journey-migration/content-transfer-tool/ctt-legacy/validating-content-transfers-legacy.md)
-            + [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/ctt-legacy/handling-large-content-repositories-legacy.md)
-            + [Extraction de contenu à partir de la source](/help/journey-migration/content-transfer-tool/ctt-legacy/extracting-content-legacy.md)
-            + [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/ctt-legacy/ingesting-content-legacy.md)
-            + [Affichage des journaux d’un jeu de migration](/help/journey-migration/content-transfer-tool/ctt-legacy/viewing-logs-legacy.md)
-            + [Suppression d’un jeu de migration](/help/journey-migration/content-transfer-tool/ctt-legacy/deleting-migrationset-legacy.md)
-            + [Exécution de l’outil de transfert de contenu sur une instance de publication](/help/journey-migration/content-transfer-tool/ctt-legacy/running-content-transfer-tool-publish-instance-legacy.md)
-            + [Dépannage de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/ctt-legacy/troubleshooting-content-transfer-tool-legacy.md)
    + Outils de refactorisation du code {#refactoring-tools}
       + [Expérience unifiée](/help/journey-migration/unified-experience.md)
       + [Repository Modernizer](/help/journey-migration/refactoring-tools/repo-modernizer.md)
