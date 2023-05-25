@@ -4,9 +4,9 @@ description: Découvrez comment l’imagerie intelligente avec l’IA Adobe Sens
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: 3
+mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: 5cc750b3ea9a911355220f8b95f769000be9f41a
+source-git-commit: 2b1030a32733154491aa178f390038ef7d552151
 workflow-type: tm+mt
 source-wordcount: '3630'
 ht-degree: 93%
@@ -15,7 +15,7 @@ ht-degree: 93%
 
 # Imagerie dynamique {#smart-imaging}
 
-## Qu’est-ce que l’imagerie dynamique ?  {#what-is-smart-imaging}
++++**Qu’est-ce que l’imagerie dynamique ?**{#what-is-smart-imaging}
 
 La technologie d’imagerie dynamique applique les fonctionnalités d’intelligence artificielle d’Adobe Sensei et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
@@ -60,7 +60,9 @@ Consultez également la section [Optimisation des images avec des formats d’im
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-## Quels sont les principaux avantages de la plus récente technologie d’imagerie dynamique ?  {#what-are-the-key-benefits-of-smart-imaging}
++++
+
++++## Quels sont les principaux avantages de la dernière technologie d’imagerie dynamique ? {#what-are-the-key-benefits-of-smart-imaging}
 
 L’imagerie dynamique offre de meilleures performances de diffusion d’images en optimisant automatiquement la taille du fichier image en fonction du navigateur client utilisé, de l’affichage de l’appareil et des conditions réseau. Les images sont les éléments qui demandent le plus de temps lors du chargement d’une page. Aussi, toute amélioration des performances peut-elle avoir une incidence considérable sur les indicateurs IPC, tels que des taux de conversion plus élevés, une augmentation du temps passé sur le site et un taux de rebond moindre.
 
@@ -72,7 +74,9 @@ Les principaux avantages de la dernière technologie d’imagerie dynamique sont
 * Rapport pixel de l’appareil (`dpr`)
 * Bande passante réseau (`network`)
 
-### À propos de la conversion au format du navigateur (bfc) {#bfc}
++++
+
+**À propos de la conversion au format du navigateur (bfc)** {#bfc}
 
 L’activation de la conversion au format du navigateur en ajoutant `bfc=on` dans l’URL de l’image convertit automatiquement les JPEG et PNG en AVIF avec perte, WebP avec perte, JPEGXR avec perte, JPEG2000 avec perte, en fonction des différents navigateurs. Pour les navigateurs qui ne prennent pas en charge ces formats, l’imagerie dynamique continue de délivrer le JPEG ou le fichier PNG. Avec le format , la qualité du nouveau format est recalculée par l’imagerie dynamique.
 
@@ -80,7 +84,7 @@ L’imagerie dynamique peut également être désactivée en ajoutant `bfc=off` 
 
 Consultez également la section [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=fr) dans l’API de diffusion et de rendu d’images Dynamic Media.
 
-### À propos de l’optimisation du rapport pixel d’appareil {#dpr}
+**À propos du ratio de pixels de périphérique (dpr)** optimisation {#dpr}
 
 Le rapport pixel d’appareil (DPR), également appelé rapport pixel CSS, est la relation entre les pixels physiques et les pixels logiques d’un appareil. Surtout avec l’avènement des écrans Retina, la résolution en pixels des appareils mobiles modernes augmente à un rythme rapide.
 
@@ -106,7 +110,7 @@ Actuellement, la densité en pixels de l’affichage provient des valeurs d’en
 
 Consultez également la section [Lorsque vous utilisez des images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) et [Lorsque vous utilisez le recadrage intelligent](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-### À propos de l’optimisation de la bande passante du réseau {#network}
+**À propos de l’optimisation de la bande passante du réseau** {#network}
 
 L’activation de la bande passante réseau ajuste automatiquement la qualité de l’image diffusée en fonction de la bande passante réseau réelle. Lorsque la bande passante réseau est insuffisante, l’optimisation du DPR est automatiquement désactivée, même si elle est déjà activée.
 
@@ -118,7 +122,7 @@ Si vous le souhaitez, votre entreprise peut se désabonner de l’optimisation d
 
 Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté client détectées du réseau de diffusion de contenu groupé. Ces valeurs sont parfois inexactes. Par exemple, l’iPhone5 avec un DPR=2 et l’iPhone12 avec un `dpr=3` affichent tous deux un `dpr=2`. Néanmoins, pour les appareils haute résolution, envoyer un `dpr=2` est préférable à envoyer un `dpr=1`. La meilleure façon de surmonter cette inexactitude consiste toutefois à utiliser le RPD côté client, pour obtenir des valeurs parfaitement précises. Cette méthode fonctionne pour n’importe quel appareil, qu’il s’agisse d’Apple ou de tout autre appareil existant. Consultez la section [Utilisation de l’imagerie dynamique avec Rapport pixel d’appareil côté client](/help/assets/dynamic-media/client-side-dpr.md).
 
-### Autres principaux avantages de l’imagerie dynamique
+**Autres principaux avantages de l’imagerie dynamique**
 
 * Amélioration du classement d’optimisation du référencement Google pour les pages web qui utilisent la technologie d’imagerie dynamique la plus récente.
 * Diffusion immédiate de contenus optimisés (au moment de l’exécution).
@@ -127,7 +131,9 @@ Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté
 * Auparavant également, les images d’origine et dérivées étaient mises en cache et un processus en deux étapes était nécessaire pour invalider le cache. Avec la technologie d’imagerie dynamique la plus récente, seules les images dérivées sont mises en cache, ce qui rend possible un processus d’invalidation du cache en une seule étape.
 * Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la version de l’imagerie dynamique la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente. Par exemple, « Timing Allow Origin », « X-Robot » comme suggéré dans [Ajout d’une valeur d’en-tête personnalisée aux réponses d’image Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## L’imagerie intelligente entraîne-t-elle des frais de licence ? {#are-there-any-licensing-costs-associated-with-smart-imaging}
++++
+
++++**L’imagerie dynamique entraîne-t-elle des frais de licence ?** {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
 Non. L’imagerie dynamique est incluse dans votre licence existante. Cette règle est vraie pour Dynamic Media Classic ou pour Experience Manager Dynamic Media (On-premise, AMS et Experience Manager as a Cloud Service).
 
@@ -135,7 +141,9 @@ Non. L’imagerie dynamique est incluse dans votre licence existante. Cette règ
 >
 >L’imagerie dynamique n’est pas disponible pour les utilisateurs Dynamic Media – Hybrid.
 
-## Comment fonctionne l’imagerie intelligente ? {#how-does-smart-imaging-work}
++++
+
++++**Comment fonctionne l’imagerie dynamique ?** {#how-does-smart-imaging-work}
 
 Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caractéristiques utilisateur et les convertit au format approprié en fonction du navigateur utilisé. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
 
@@ -152,6 +160,8 @@ Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caract
 * Pour les navigateurs qui ne prennent pas en charge ces formats, le format d’image demandé initialement est diffusé.
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
+
++++
 
 ## Quels sont les formats d’image pris en charge ? {#what-image-formats-are-supported}
 
