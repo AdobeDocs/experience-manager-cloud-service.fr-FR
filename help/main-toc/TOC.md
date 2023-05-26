@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b4aa3495538eebc2e87383e1490bc60403025fb0
+source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
 workflow-type: tm+mt
-source-wordcount: '4012'
+source-wordcount: '4011'
 ht-degree: 99%
 
 ---
@@ -462,7 +462,7 @@ ht-degree: 99%
       + [Paramètres prédéfinis de lot](/help/assets/dynamic-media/batch-set-presets-dm.md)
       + [Invalidation du cache de réseau CDN par le biais de Dynamic Media](/help/assets/dynamic-media/invalidate-cdn-cache-dynamic-media.md)
       + [Invalidation du cache de réseau CDN par le biais de Dynamic Media Classic](/help/assets/dynamic-media/invalidate-cdn-cache-dm-classic.md)
-      + [Imagerie dynamique FAQ](/help/assets/dynamic-media/imaging-faq.md)
+      + [Imagerie dynamique](/help/assets/dynamic-media/imaging-faq.md)
       + [Imagerie dynamique avec rapport pixel d’appareil côté client](/help/assets/dynamic-media/client-side-dpr.md)
       + [Gestion des ressources Dynamic Media](/help/assets/dynamic-media/delivering-dynamic-media-assets.md)
       + [Activation de la protection de lien dynamique dans Dynamic Media](/help/assets/dynamic-media/hotlink-protection.md)
