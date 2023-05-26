@@ -1,21 +1,21 @@
 ---
-title: Imagerie dynamique FAQ
+title: Imagerie dynamique
 description: Découvrez comment l’imagerie intelligente avec l’IA Adobe Sensei applique les caractéristiques de visualisation uniques de chaque utilisateur pour diffuser automatiquement les images optimisées pour leur expérience, ce qui se traduit par des performances accrues et une meilleure interaction.
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
 mini-toc-levels: null
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: b5c887d6a6ad1db5094609a8bc1b738c9ba5e8d6
+source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
 workflow-type: tm+mt
-source-wordcount: '3541'
-ht-degree: 87%
+source-wordcount: '3531'
+ht-degree: 86%
 
 ---
 
 # FAQ sur l’imagerie dynamique {#smart-imaging}
 
-+++**Qu’est-ce que l’imagerie dynamique ?**
+## À propos de l’imagerie dynamique
 
 La technologie d’imagerie dynamique applique les fonctionnalités d’intelligence artificielle d’Adobe Sensei et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
@@ -60,9 +60,7 @@ Consultez également la section [Optimisation des images avec des formats d’im
 
 In terms of images, the goal is to serve the best quality images as efficiently as possible. -->
 
-+++
-
-+++**Quels sont les principaux avantages de la plus récente technologie d’imagerie dynamique ?**
+**Avantages de l’imagerie dynamique**
 
 L’imagerie dynamique offre de meilleures performances de diffusion d’images en optimisant automatiquement la taille du fichier image en fonction du navigateur client utilisé, de l’affichage de l’appareil et des conditions réseau. Les images sont les éléments qui demandent le plus de temps lors du chargement d’une page. Aussi, toute amélioration des performances peut-elle avoir une incidence considérable sur les indicateurs IPC, tels que des taux de conversion plus élevés, une augmentation du temps passé sur le site et un taux de rebond moindre.
 
@@ -70,11 +68,11 @@ Les principaux avantages de la dernière technologie d’imagerie dynamique sont
 
 * Le format AVIF de nouvelle génération est désormais pris en charge.
 * La conversion avec perte des PNG en WebP et AVIF est désormais possible. Le format PNG étant sans perte, les WebP et AVIF étaient auparavant livrés sans perte.
-* Conversion au format du navigateur (`bfc`)
-* Rapport pixel de l’appareil (`dpr`)
-* Bande passante réseau (`network`)
+* [Conversion au format du navigateur](#bfc)
+* [Rapport pixel de l’appareil](#dpr)
+* [Bande passante réseau](#bandwidth)
 
-**À propos de la conversion au format du navigateur (bfc)**
+### À propos de la conversion au format du navigateur {#bfc}
 
 L’activation de la conversion au format du navigateur en ajoutant `bfc=on` dans l’URL de l’image convertit automatiquement les JPEG et PNG en AVIF avec perte, WebP avec perte, JPEGXR avec perte, JPEG2000 avec perte, en fonction des différents navigateurs. Pour les navigateurs qui ne prennent pas en charge ces formats, l’imagerie dynamique continue de délivrer le JPEG ou le fichier PNG. Avec le format , la qualité du nouveau format est recalculée par l’imagerie dynamique.
 
@@ -82,7 +80,7 @@ L’imagerie dynamique peut également être désactivée en ajoutant `bfc=off` 
 
 Consultez également la section [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=fr) dans l’API de diffusion et de rendu d’images Dynamic Media.
 
-**À propos du ratio de pixels de périphérique (dpr)** optimisation
+### A propos de l’optimisation du rapport de pixels de périphérique** {#dpr}
 
 Le rapport pixel d’appareil (DPR), également appelé rapport pixel CSS, est la relation entre les pixels physiques et les pixels logiques d’un appareil. Surtout avec l’avènement des écrans Retina, la résolution en pixels des appareils mobiles modernes augmente à un rythme rapide.
 
@@ -108,7 +106,7 @@ Actuellement, la densité en pixels de l’affichage provient des valeurs d’en
 
 Consultez également la section [Lorsque vous utilisez des images](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-images) et [Lorsque vous utilisez le recadrage intelligent](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md#when-working-with-smart-crop).
 
-**À propos de l’optimisation de la bande passante du réseau**
+### À propos de l’optimisation de la bande passante du réseau {#bandwidth}
 
 L’activation de la bande passante réseau ajuste automatiquement la qualité de l’image diffusée en fonction de la bande passante réseau réelle. Lorsque la bande passante réseau est insuffisante, l’optimisation du DPR est automatiquement désactivée, même si elle est déjà activée.
 
@@ -128,8 +126,6 @@ Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté
 * Indépendance vis-à-vis du temps de vie (TTL). Auparavant, un TTL minimal de 12 heures était obligatoire pour le fonctionnement de l’imagerie dynamique.
 * Auparavant également, les images d’origine et dérivées étaient mises en cache et un processus en deux étapes était nécessaire pour invalider le cache. Avec la technologie d’imagerie dynamique la plus récente, seules les images dérivées sont mises en cache, ce qui rend possible un processus d’invalidation du cache en une seule étape.
 * Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la version de l’imagerie dynamique la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente. Par exemple, « Timing Allow Origin », « X-Robot » comme suggéré dans [Ajout d’une valeur d’en-tête personnalisée aux réponses d’image Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
-
-+++
 
 +++**L’imagerie dynamique entraîne-t-elle des coûts de licence ?**
 
@@ -158,6 +154,26 @@ Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caract
 * Pour les navigateurs qui ne prennent pas en charge ces formats, le format d’image demandé initialement est diffusé.
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
+
++++
+
++++**Est-il possible de désactiver l’imagerie dynamique quelle que soit la raison ?**
+
+Oui. Vous pouvez désactiver l’imagerie dynamique en ajoutant l’un des modificateurs suivants :
+
+* `bfc=off` pour désactiver la conversion au format du navigateur. Consultez également la section [Conversion au format du navigateur](#bfc).
+* `dpr=off` pour désactiver le rapport pixel de l’appareil. Consultez également la section [Rapport pixel de l’appareil](#dpr).
+* `network=off` pour désactiver la bande passante réseau. Consultez également la section [Bande passante réseau](#network).
+
++++
+
++++**Est-il possible d’&quot;ajuster&quot; l’imagerie dynamique ?**
+
+Oui. L’imagerie dynamique offre trois options que vous pouvez activer ou désactiver.
+
+* [Conversion au format du navigateur](#bfc)
+* [Rapport pixel de l’appareil](#dpr)
+* [Bande passante réseau](#network)
 
 +++
 
@@ -343,26 +359,6 @@ Cet en-tête vous indique ce qui suit :
 +++**Puis-je désactiver l’optimisation AVIF dans l’imagerie dynamique ?**
 
 Oui. Si vous souhaitez revenir au service WebP par défaut, créez un dossier de support de la même façon. Vous pouvez comme d’habitude désactiver l’imagerie dynamique en ajoutant le paramètre `bfc=off` à l’URL de l’image. Cependant, vous ne pouvez pas sélectionner le format WebP ou AVIF dans le modificateur d’URL pour l’imagerie dynamique. Cette fonctionnalité est conservée au niveau du compte de votre société.
-
-+++
-
-+++**Est-il possible de désactiver l’imagerie dynamique quelle que soit la raison ?**
-
-Oui. Vous pouvez désactiver l’imagerie dynamique en ajoutant l’un des modificateurs suivants :
-
-* `bfc=off` pour désactiver la conversion au format du navigateur. Consultez également la section [Conversion au format du navigateur](#bfc).
-* `dpr=off` pour désactiver le rapport pixel de l’appareil. Consultez également la section [Rapport pixel de l’appareil](#dpr).
-* `network=off` pour désactiver la bande passante réseau. Consultez également la section [Bande passante réseau](#network).
-
-+++
-
-+++**Est-il possible d’&quot;ajuster&quot; l’imagerie dynamique ?**
-
-Oui. L’imagerie dynamique offre trois options que vous pouvez activer ou désactiver.
-
-* [Conversion au format du navigateur](#bfc)
-* [Rapport pixel de l’appareil](#dpr)
-* [Bande passante réseau](#network)
 
 +++
 
