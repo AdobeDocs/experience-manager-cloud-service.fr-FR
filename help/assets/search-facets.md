@@ -4,14 +4,19 @@ description: Cet article décrit comment créer, modifier et utiliser les facett
 feature: Search,Metadata
 role: User,Admin
 exl-id: f994c1bf-3f9d-4cb2-88f4-72a9ad6fa999
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '2425'
+source-wordcount: '2445'
 ht-degree: 82%
 
 ---
 
 # Facettes de recherche {#search-facets}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/search-facets.html?lang=fr) |
+| AEM as a Cloud Service | Cet article |
 
 Un déploiement à l’échelle de l’entreprise d’Adobe Experience Manager Assets permet de stocker des quantités importantes de ressources. Dans certains cas, la recherche de la bonne ressource peut être difficile et longue si vous utilisez uniquement les fonctionnalités de recherche génériques d’Experience Manager.
 

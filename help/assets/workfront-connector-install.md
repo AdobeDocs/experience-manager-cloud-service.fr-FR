@@ -4,14 +4,19 @@ description: Installation de la version [!DNL Workfront for Experience Manager e
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 648f0d4899237484f24faa003a796bdd1f508cb2
+source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
 workflow-type: tm+mt
-source-wordcount: '635'
-ht-degree: 100%
+source-wordcount: '655'
+ht-degree: 98%
 
 ---
 
 # Installation de la version [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-connector-install.html) |
+| AEM as a Cloud Service | Cet article |
 
 Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] installe le connecteur amélioré. Avant de procéder à l’installation, vérifiez la prise en charge de la plateforme et d’autres [conditions préalables pour le connecteur](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
