@@ -4,11 +4,11 @@ description: Découvrez comment l’imagerie intelligente avec l’IA Adobe Sens
 contentOwner: Rick Brough
 feature: Asset Management,Renditions
 role: User
-mini-toc-levels: null
+mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: fca1da512c4015e77c1a982a551db354a0b1cace
+source-git-commit: c7555ef31d7657b4a90764224f4c8c58a6228157
 workflow-type: tm+mt
-source-wordcount: '3531'
+source-wordcount: '3539'
 ht-degree: 86%
 
 ---
@@ -80,7 +80,7 @@ L’imagerie dynamique peut également être désactivée en ajoutant `bfc=off` 
 
 Consultez également la section [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc.html?lang=fr) dans l’API de diffusion et de rendu d’images Dynamic Media.
 
-### A propos de l’optimisation du rapport de pixels de périphérique** {#dpr}
+### A propos de l’optimisation du rapport des pixels de périphérique {#dpr}
 
 Le rapport pixel d’appareil (DPR), également appelé rapport pixel CSS, est la relation entre les pixels physiques et les pixels logiques d’un appareil. Surtout avec l’avènement des écrans Retina, la résolution en pixels des appareils mobiles modernes augmente à un rythme rapide.
 
@@ -127,17 +127,7 @@ Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté
 * Auparavant également, les images d’origine et dérivées étaient mises en cache et un processus en deux étapes était nécessaire pour invalider le cache. Avec la technologie d’imagerie dynamique la plus récente, seules les images dérivées sont mises en cache, ce qui rend possible un processus d’invalidation du cache en une seule étape.
 * Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la version de l’imagerie dynamique la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente. Par exemple, « Timing Allow Origin », « X-Robot » comme suggéré dans [Ajout d’une valeur d’en-tête personnalisée aux réponses d’image Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-+++**L’imagerie dynamique entraîne-t-elle des coûts de licence ?**
-
-Non. L’imagerie dynamique est incluse dans votre licence existante. Cette règle est vraie pour Dynamic Media Classic ou pour Experience Manager Dynamic Media (On-premise, AMS et Experience Manager as a Cloud Service).
-
->[!IMPORTANT]
->
->L’imagerie dynamique n’est pas disponible pour les utilisateurs Dynamic Media – Hybrid.
-
-+++
-
-+++**Comment fonctionne l’imagerie intelligente ?**
+## Fonctionnement de l’imagerie dynamique**
 
 Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caractéristiques utilisateur et les convertit au format approprié en fonction du navigateur utilisé. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
 
@@ -154,6 +144,30 @@ Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caract
 * Pour les navigateurs qui ne prennent pas en charge ces formats, le format d’image demandé initialement est diffusé.
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
+
+## Formats d’image pris en charge dans l’imagerie dynamique
+
+Les formats suivants sont pris en charge dans le cadre de l’imagerie dynamique :
+
+* JPEG
+* PNG
+
+Pour le format de fichier image JPEG, la qualité du nouveau format est recalculée par l’imagerie dynamique.
+
+Pour les formats de fichiers image qui prennent en charge la transparence, tels que le PNG, vous pouvez configurer l’imagerie dynamique pour qu’elle diffuse des fichiers AVIF et WebP avec perte. Pour la conversion en formats avec perte, l’imagerie dynamique utilise la qualité mentionnée dans l’URL de l’image, ou la qualité configurée dans le compte d’entreprise Dynamic Media.
+
+## Commandes de diffusion d’images ignorées et prises en charge par l’imagerie dynamique
+
+Les seules commandes de diffusion d’images qui sont ignorées par l’imagerie dynamique sont les suivantes : `fmt` et `qlt`. Toutes les commandes restantes sont prises en charge.
+
+
++++**L’imagerie dynamique entraîne-t-elle des coûts de licence ?**
+
+Non. L’imagerie dynamique est incluse dans votre licence existante. Cette règle est vraie pour Dynamic Media Classic ou pour Experience Manager Dynamic Media (On-premise, AMS et Experience Manager as a Cloud Service).
+
+>[!IMPORTANT]
+>
+>L’imagerie dynamique n’est pas disponible pour les utilisateurs Dynamic Media – Hybrid.
 
 +++
 
@@ -174,19 +188,6 @@ Oui. L’imagerie dynamique offre trois options que vous pouvez activer ou désa
 * [Conversion au format du navigateur](#bfc)
 * [Rapport pixel de l’appareil](#dpr)
 * [Bande passante réseau](#network)
-
-+++
-
-+++**Quels sont les formats d’image pris en charge ?**
-
-Les formats suivants sont pris en charge dans le cadre de l’imagerie dynamique :
-
-* JPEG
-* PNG
-
-Pour le format de fichier image JPEG, la qualité du nouveau format est recalculée par l’imagerie dynamique.
-
-Pour les formats de fichiers image qui prennent en charge la transparence, tels que le PNG, vous pouvez configurer l’imagerie dynamique pour qu’elle diffuse des fichiers AVIF et WebP avec perte. Pour la conversion en formats avec perte, l’imagerie dynamique utilise la qualité mentionnée dans l’URL de l’image, ou la qualité configurée dans le compte d’entreprise Dynamic Media.
 
 +++
 
@@ -395,12 +396,6 @@ Nombre Il n’existe actuellement aucune configuration de ce type.
 +++**L’imagerie dynamique ajuste-t-elle le paramètre de sortie de qualité en pourcentage ?**
 
 Oui. L’imagerie dynamique ajuste automatiquement le pourcentage de qualité. Ce pourcentage de qualité est déterminé à l’aide d’un algorithme de machine learning développé par Adobe. Ce pourcentage n’est pas spécifique à la plage.
-
-+++
-
-+++**Quelles commandes de diffusion d’images sont prises en charge ou ignorées ?**
-
-Les seules commandes à être ignorées sont `fmt` et `qlt`. Toutes les commandes restantes sont prises en charge.
 
 +++
 
