@@ -2,7 +2,7 @@
 title: Parcours d’architecture de contenu découplé AEM
 description: Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: 3f6c96da3fd563b4c8db91ab1bc08ea17914a8c1
+source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
 workflow-type: tm+mt
 source-wordcount: '789'
 ht-degree: 100%
@@ -12,6 +12,8 @@ ht-degree: 100%
 # Parcours d’architecture de contenu découplé AEM {#aem-headless-content-architect-journey}
 
 Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet découplé.
+
+{{headless-trials-promotion}}
 
 ## Présentation {#introduction}
 
