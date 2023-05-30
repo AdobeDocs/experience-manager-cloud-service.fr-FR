@@ -6,9 +6,9 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
 workflow-type: tm+mt
-source-wordcount: '3816'
+source-wordcount: '3829'
 ht-degree: 99%
 
 ---
@@ -316,6 +316,7 @@ Vous pouvez ajouter des ressources au déploiement [!DNL Sites]. Toutefois, ces 
 ## Restrictions et bonnes pratiques {#tip-and-limitations}
 
 * Pour obtenir des informations sur l’utilisation des ressources, configurez la fonctionnalité [Assets Insight](/help/assets/assets-insights.md) sur l’instance [!DNL Sites].
+* L’utilisation de l’explorateur de chemins d’accès dans les composants de création n’est pas prise en charge dans les ressources connectées.
 
 ### Autorisations et gestion des ressources {#permissions-and-managing-assets}
 
