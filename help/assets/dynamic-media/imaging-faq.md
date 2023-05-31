@@ -6,16 +6,16 @@ feature: Asset Management,Renditions
 role: User
 mini-toc-levels: 2
 exl-id: 863784d9-0c91-4deb-8edd-1354a21581c3
-source-git-commit: c48885dc11b0162f0288962a53e1d95574a3d406
+source-git-commit: 6f9ddcf31a1869bb8bebb566d05c371e996fe354
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3535'
 ht-degree: 86%
 
 ---
 
-# FAQ sur l’imagerie dynamique {#smart-imaging}
+# Imagerie dynamique {#smart-imaging}
 
-## À propos de l’imagerie dynamique
+## À propos de l’imagerie dynamique{#about-smart-imaging}
 
 La technologie d’imagerie dynamique applique les fonctionnalités d’intelligence artificielle d’Adobe Sensei et fonctionne avec les « paramètres d’image prédéfinis » existants. Elle permet d’améliorer les performances de la diffusion d’images en optimisant automatiquement le format, la taille et la qualité des images en fonction des fonctionnalités du navigateur client.
 
@@ -127,7 +127,7 @@ Les valeurs DPR et de bande passante réseau sont basées sur les valeurs côté
 * Auparavant également, les images d’origine et dérivées étaient mises en cache et un processus en deux étapes était nécessaire pour invalider le cache. Avec la technologie d’imagerie dynamique la plus récente, seules les images dérivées sont mises en cache, ce qui rend possible un processus d’invalidation du cache en une seule étape.
 * Les clients qui utilisent des en-têtes personnalisés dans leur jeu de règles bénéficient de la version de l’imagerie dynamique la plus récente, car ces en-têtes ne sont pas bloqués, contrairement à la version précédente. Par exemple, « Timing Allow Origin », « X-Robot » comme suggéré dans [Ajout d’une valeur d’en-tête personnalisée aux réponses d’image Dynamic Media Classic](https://helpx.adobe.com/fr/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html).
 
-## Fonctionnement de l’imagerie dynamique
+## Fonctionnement de l’imagerie dynamique{#how-smart-imaging-works}
 
 Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caractéristiques utilisateur et les convertit au format approprié en fonction du navigateur utilisé. Ces conversions de format s’effectuent de manière à garantir une représentation fidèle. L’imagerie dynamique convertit automatiquement les images dans différents formats en fonction des capacités du navigateur de la manière suivante.
 
@@ -145,7 +145,7 @@ Lorsqu’un client demande une image, l’imagerie dynamique vérifie les caract
 
 Si la taille de l’image d’origine est inférieure à celle produite par l’imagerie dynamique, l’image d’origine est diffusée.
 
-## Prise en charge du format d’image dans l’imagerie dynamique
+## Prise en charge du format d’image dans l’imagerie dynamique{#image-format-support}
 
 Les formats suivants sont pris en charge dans le cadre de l’imagerie dynamique :
 
@@ -156,11 +156,11 @@ Pour le format de fichier image JPEG, la qualité du nouveau format est recalcul
 
 Pour les formats de fichiers image qui prennent en charge la transparence, tels que le PNG, vous pouvez configurer l’imagerie dynamique pour qu’elle diffuse des fichiers AVIF et WebP avec perte. Pour la conversion en formats avec perte, l’imagerie dynamique utilise la qualité mentionnée dans l’URL de l’image, ou la qualité configurée dans le compte d’entreprise Dynamic Media.
 
-## Prise en charge des commandes du service d’images dans l’imagerie dynamique
+## Prise en charge des commandes du service d’images dans l’imagerie dynamique{#imaging-serving-command-support}
 
 Commandes de diffusion d’images `fmt` et `qlt` ne sont pas prises en charge ; toutes les commandes restantes sont prises en charge.
 
-## Questions fréquentes sur l’imagerie dynamique
+## Questions fréquentes sur l’imagerie dynamique{#smart-imaging-faq}
 
 +++**L’imagerie dynamique entraîne-t-elle des coûts de licence ?**
 
