@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
 workflow-type: tm+mt
 source-wordcount: '1408'
 ht-degree: 97%
@@ -106,7 +106,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 **Pour appliquer un profil de façon globale, effectuez l’une des opérations suivantes :**
 
-* Accédez à `https://[aem_server]/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` et appliquez le profil approprié, puis cliquez sur **[!UICONTROL Enregistrer]**.
+* Accédez à `https://[aem_server]/mnt/overlay/dam/gui/content/assets/v2/foldersharewizard.html/content/dam` et appliquez le profil approprié, puis cliquez sur **[!UICONTROL Enregistrer]**.
 
 * Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`. Ajoutez la propriété `metadataProfile:/etc/dam/metadata/dynamicmedia/<name of metadata profile>`. Cliquez sur **Enregistrer tout**.
 
