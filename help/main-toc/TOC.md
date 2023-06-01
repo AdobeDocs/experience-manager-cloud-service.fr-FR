@@ -8,10 +8,10 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f9e05b8d8fa6286c121f32e1e1f390a149471921
+source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
 workflow-type: tm+mt
-source-wordcount: '4011'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -509,6 +509,7 @@ ht-degree: 99%
    + Configurer et migrer {#setup-configure-migrate}
       + [Intégration d’un environnement Cloud Service](/help/forms/setup-forms-cloud-service.md)
       + [Configuration d’un environnement de développement local](/help/forms/setup-local-development-environment.md)
+      + [Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
       + [Configurer le connecteur de stockage unifié](/help/forms/configure-unified-storage-connector.md)
       + [Migrer de [!DNL AEM 6.5 Forms] ou une version antérieure à [!DNL AEM Forms] as a Cloud Service](/help/forms/migrate-to-forms-as-a-cloud-service.md)
       + [Groupes et autorisations](/help/forms/forms-groups-privileges-tasks.md)
@@ -970,3 +971,4 @@ ht-degree: 99%
    + [Architecture de l’éditeur universel](/help/implementing/universal-editor/architecture.md)
    + [Attributs et types](/help/implementing/universal-editor/attributes-types.md)
    + [Authentification de l’éditeur universel](/help/implementing/universal-editor/authentication.md)
+
