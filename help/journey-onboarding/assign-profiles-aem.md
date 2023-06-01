@@ -4,14 +4,19 @@ description: Une fois que vos ressources Cloud sont configurées, vous devez acc
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: fd14d9f88fed4ef0f90b5dd0c92c53b1a298bd76
 workflow-type: tm+mt
-source-wordcount: '788'
-ht-degree: 95%
+source-wordcount: '805'
+ht-degree: 93%
 
 ---
 
 # Attribuer des profils de produit AEM {#assign-profiles-aem}
+
+>[!CONTEXTUALHELP]
+>id="assets_user_entitlements"
+>title="Attribution de profils de produit AEM"
+>abstract="Vous n’êtes pas autorisé à utiliser Experience Manager Assets. Contactez votre administrateur."
 
 Dans cette partie du [parcours d’intégration,](overview.md) vous apprendrez comment accorder l’accès à AEM à votre équipe à l’aide de profils de produits AEM.
 
