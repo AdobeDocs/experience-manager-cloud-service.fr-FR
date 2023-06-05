@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 493a2bae1d97424b4a1664e9f421d3f19b0cb477
+source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
 workflow-type: tm+mt
-source-wordcount: '4027'
+source-wordcount: '4030'
 ht-degree: 98%
 
 ---
@@ -374,6 +374,7 @@ ht-degree: 98%
    + [Accessibilité dans [!DNL Assets]](/help/assets/accessibility.md)
    + Gestion des ressources numériques {#manage}
       + [Sélecteur de ressources micro-front](/help/assets/asset-selector.md)
+      + [Sélecteur de destination micro-front](/help/assets/destination-selector.md)
       + [Partage de ressources](/help/assets/share-assets.md)
       + [Surveillance des activités et des tâches de gestion des ressources numériques (DAM)](/help/assets/assets-activity-history.md)
       + [Prise en main des microservices de ressources](/help/assets/asset-microservices-configure-and-use.md)
