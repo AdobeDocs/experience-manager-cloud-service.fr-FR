@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 6fd5f8e7a9699f60457e232bb3cfa011f34880e9
+source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
 workflow-type: tm+mt
-source-wordcount: '2498'
-ht-degree: 96%
+source-wordcount: '2491'
+ht-degree: 87%
 
 ---
 
@@ -24,7 +24,7 @@ Voici la liste des principaux changements par rapport à AEM version 6.5 et ant
 1. Les clients pourront configurer des alertes en fonction de leurs besoins.
 1. Les SRE surveillent l’intégrité du système 24 heures sur 24, 7 jours sur 7 et prendront les mesures nécessaires le plus tôt possible.
 1. La configuration de l’index est modifiée par le biais de déploiements. Les modifications apportées à la définition de l’index sont configurées comme les autres modifications apportées au contenu.
-1. À un niveau élevé dans AEM as a Cloud Service, avec l’introduction du [modèle de déploiement bleu/vert](#index-management-using-blue-green-deployments), deux ensembles d’index coexisteront : l’un pour l’ancienne version (bleu), et l’autre pour la nouvelle version (vert).
+1. À un niveau élevé sur AEM as a Cloud Service, avec l’introduction de la [modèle de déploiement en continu](#index-management-using-rolling-deployments) deux ensembles d’index existent : un jeu pour l’ancienne version et un autre pour la nouvelle version.
 1. Les clients peuvent voir si la tâche d’indexation est terminée sur la page de version Cloud Manager et recevront une notification lorsque la nouvelle version sera prête à recevoir le trafic.
 
 Restrictions :
@@ -143,7 +143,7 @@ Dans `ui.apps.structure/pom.xml`, la section `filters` pour ce plug-in, doit con
 <filter><root>/oak:index</root></filter>
 ```
 
-Une fois la nouvelle définition d’index ajoutée, la nouvelle application doit être déployée via Cloud Manager. Au moment du déploiement, deux tâches sont démarrées, chargées d’ajouter (et de fusionner si nécessaire) les définitions d’index à MongoDB et Azure Segment Store pour la création et la publication, respectivement. Les référentiels sous-jacents sont réindexés avec les nouvelles définitions d’index, avant que la commutation bleu/vert n’ait lieu.
+Une fois la nouvelle définition d’index ajoutée, la nouvelle application doit être déployée via Cloud Manager. Lors du déploiement, deux tâches sont démarrées et sont chargées d’ajouter (et de fusionner si nécessaire) les définitions d’index à MongoDB et Azure Segment Store pour l’auteur et la publication, respectivement. Les référentiels sous-jacents sont réindexés avec les nouvelles définitions d’index, avant que la reprise du commutateur ne soit effectuée.
 
 ### REMARQUE
 
@@ -207,19 +207,19 @@ Vous trouverez ci-dessous un exemple de l’emplacement de la configuration ci-d
 >
 >Pour plus de détails sur la structure de package requise pour AEM as a Cloud Service, reportez-vous au document [Structure de projets AEM](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
 
-## Gestion des index à l’aide de déploiements bleu/vert {#index-management-using-blue-green-deployments}
+## Gestion des index à l’aide de déploiements en continu {#index-management-using-rolling-deployments}
 
 ### Qu’est-ce que la gestion des index ? {#what-is-index-management}
 
 La gestion des index consiste à ajouter, supprimer et modifier des index. Changer la *définition* d’un index est rapide, mais appliquer le changement (opération souvent appelée « création d’un index » ou, pour les index existants, « réindexation ») nécessite du temps. Cette opération n’est pas instantanée : le référentiel doit être analysé pour que les données soient indexées.
 
-### Qu’est-ce que le déploiement bleu/vert ? {#what-is-blue-green-deployment}
+### Que sont les déploiements en continu ? {#what-are-rolling-deployments}
 
-Le déploiement bleu/vert peut réduire les temps d’inactivité. Il autorise également des mises à niveau sans interruption de service et des restaurations rapides. L’ancienne version de l’application (bleue) s’exécute en même temps que la nouvelle version (verte).
+Un déploiement en continu peut réduire les temps d’arrêt. Il autorise également des mises à niveau sans interruption de service et des restaurations rapides. L’ancienne version de l’application s’exécute en même temps que la nouvelle version de l’application.
 
 ### Zones en lecture seule et en lecture-écriture {#read-only-and-read-write-areas}
 
-Certaines zones du référentiel (parties en lecture seule) peuvent être différentes dans l’ancienne version (bleue) et dans la nouvelle version (verte) de l’application. Les zones en lecture seule du référentiel sont généralement « `/app` » et « `/libs` ». Dans l’exemple suivant, des italiques sont utilisés pour marquer les zones en lecture seule, tandis que du gras est utilisé pour les zones en lecture-écriture.
+Certaines zones du référentiel (parties en lecture seule du référentiel) peuvent être différentes dans l’ancienne et dans la nouvelle version de l’application. Les zones en lecture seule du référentiel sont généralement `/app` et `/libs`. Dans l’exemple suivant, des italiques sont utilisés pour marquer les zones en lecture seule, tandis que du gras est utilisé pour les zones en lecture-écriture.
 
 * **/**
 * */apps (lecture seule)*
@@ -233,13 +233,13 @@ Certaines zones du référentiel (parties en lecture seule) peuvent être diffé
 
 Les zones de lecture-écriture du référentiel sont partagées entre toutes les versions de l’application, tandis que pour chaque version de l’application, il existe un ensemble spécifique de `/apps` et `/libs`.
 
-### Gestion des index sans déploiement bleu/vert {#index-management-without-blue-green-deployment}
+### Gestion des index sans déploiements en continu {#index-management-without-rolling-deployments}
 
 Lors du développement ou de l’utilisation d’installations sur site, les index peuvent être ajoutés, supprimés ou modifiés au moment de l’exécution. Les index sont utilisés dès qu’ils sont disponibles. Si un index n’est pas encore censé être utilisé dans l’ancienne version de l’application, il est généralement créé lors d’un temps d’arrêt planifié. Il en va de même lors de la suppression d’un index ou de la modification d’un index existant. Lors de la suppression d’un index, celui-ci cesse d’être disponible dès sa suppression.
 
-### Gestion des index avec déploiement bleu/vert {#index-management-with-blue-green-deployment}
+### Gestion des index avec déploiements en continu {#index-management-with-rolling-deployments}
 
-Avec des déploiements bleu/vert, il n’existe pas de temps d’arrêt. Pendant une mise à niveau, pendant un certain temps, l’ancienne version (par exemple, la version 1) de l’application, ainsi que la nouvelle version (la version 2), s’exécutent simultanément, sur le même référentiel. Si la version 1 nécessite la disponibilité d’un certain index, celui-ci ne doit pas être supprimé dans la version 2 : l’index doit être supprimé ultérieurement, par exemple dans la version 3. À ce stade, vous devez être sûr que la version 1 de l’application n’est plus en cours d’exécution. En outre, les applications doivent être écrites de manière à ce que la version 1 fonctionne correctement, même si la version 2 est en cours d’exécution et si des index de la version 2 sont disponibles.
+Avec les déploiements continus, il n’y a pas de temps d’arrêt. Pendant un certain temps lors d’une mise à jour, l’ancienne version (par exemple, version 1) de l’application, ainsi que la nouvelle version (version 2), s’exécutent simultanément sur le même référentiel. Si la version 1 nécessite la disponibilité d&#39;un certain index, celui-ci ne doit pas être supprimé dans la version 2. L&#39;index doit être supprimé ultérieurement, par exemple dans la version 3. À ce stade, il est garanti que la version 1 de l&#39;application n&#39;est plus en cours d&#39;exécution. En outre, les applications doivent être écrites de manière à ce que la version 1 fonctionne correctement, même si la version 2 est en cours d’exécution et si des index de la version 2 sont disponibles.
 
 Une fois la mise à niveau vers la nouvelle version terminée, les anciens index peuvent être récupérés par le système. Les anciens index peuvent rester disponibles un certain temps afin d’accélérer les restaurations (si une restauration doit être nécessaire).
 
