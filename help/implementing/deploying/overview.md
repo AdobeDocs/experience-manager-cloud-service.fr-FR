@@ -3,10 +3,10 @@ title: Déploiement sur AEM as a Cloud Service
 description: Déploiement sur AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 4eb7b1a32f0e266f12f67fdd2d12935698eeac95
+source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
 workflow-type: tm+mt
-source-wordcount: '3509'
-ht-degree: 100%
+source-wordcount: '3541'
+ht-degree: 89%
 
 ---
 
@@ -51,6 +51,10 @@ La vidéo suivante présente un aperçu général du déploiement du code vers A
 
 ### Déploiements via Cloud Manager {#deployments-via-cloud-manager}
 
+<!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
+
+![image](https://git.corp.adobe.com/storage/user/9001/files/e91b880e-226c-4d5a-93e0-ae5c3d6685c8) -->
+
 Les clients déploient le code personnalisé dans les environnements cloud via Cloud Manager. Il est à noter que Cloud Manager transforme des packages de contenu assemblés localement en artefact conforme au modèle de fonctionnalité Sling, qui décrit une application AEM as a Cloud Service lors de l’exécution dans un environnement cloud. Par conséquent, lorsque vous examinez les packages dans le [Gestionnaire de package](/help/implementing/developing/tools/package-manager.md) sur les environnements cloud, le nom inclut « cp2fm » et toutes les métadonnées des packages transformés sont supprimées. Ils ne peuvent pas être interactifs, ce qui signifie qu’ils ne peuvent pas être téléchargés, répliqués, ni ouverts. Vous trouverez [ici](https://github.com/apache/sling-org-apache-sling-feature-cpconverter) une documentation détaillée sur le convertisseur.
 
 Les packages de contenu écrits pour les applications AEM as a Cloud Service doivent présenter une distinction claire entre le contenu modifiable et non modifiable, et Cloud Manager n’installera que le contenu modifiable, en renvoyant un message du type :
@@ -63,7 +67,7 @@ Le reste de cette section décrit la composition et les implications des package
 
 L’ensemble du contenu et du code conservés dans le référentiel non modifiable doit être archivé dans git et déployé via Cloud Manager. En d’autres termes, contrairement aux solutions AEM actuelles, le code n’est jamais déployé directement sur une instance AEM en cours d’exécution. Cela garantit que le code en cours d’exécution est identique pour une version donnée dans n’importe quel environnement cloud, ce qui élimine le risque de variation non intentionnelle du code en production. Par exemple, la configuration OSGI doit être validée dans le contrôle de code source plutôt que d’être gérée au moment de l’exécution via le gestionnaire de configuration de la console web AEM.
 
-Les modifications d’application dues au modèle de déploiement bleu/vert étant activées par un commutateur, elles ne peuvent pas dépendre des modifications du référentiel modifiable, à l’exception des utilisateurs du service, de leurs listes de contrôle d’accès, de leurs types de nœuds et des modifications de la définition d’index.
+Les modifications d’application dues au modèle de déploiement étant activées par un commutateur, elles ne peuvent pas dépendre des modifications du référentiel modifiable, à l’exception des utilisateurs du service, de leurs listes de contrôle d’accès, de leurs types de noeuds et des modifications de la définition d’index.
 
 Pour les clients qui disposent de bases de code, il est essentiel de passer par l’exercice de restructuration du référentiel décrit dans la documentation d’AEM en vue de s’assurer que le contenu qui se trouvait auparavant sous /etc est déplacé vers le bon emplacement.
 
@@ -235,23 +239,23 @@ Le fragment `POM.xml` Maven suivant montre comment les packages tiers peuvent ê
 
 ## Fonctionnement des déploiements en continu {#how-rolling-deployments-work}
 
-Comme les mises à jour d’AEM, les versions des clients sont déployées à l’aide d’une stratégie de déploiement en continu afin d’éliminer les temps d’arrêt de la grappe d’auteurs dans les bonnes circonstances. La séquence générale des événements est décrite ci-dessous, où **Bleu** est l’ancienne version du code client et **Vert** est la nouvelle version. Les versions bleue et verte exécutent toutes deux la même version du code AEM.
+Comme les mises à jour d’AEM, les versions des clients sont déployées à l’aide d’une stratégie de déploiement en continu afin d’éliminer les temps d’arrêt de la grappe d’auteurs dans les bonnes circonstances. La séquence générale des événements est décrite ci-dessous, où les noeuds comportant à la fois l’ancienne et la nouvelle versions du code client exécutent la même version du code AEM.
 
-* La version bleue est active, tandis qu’une version finale verte est créée et disponible.
-* S’il existe des définitions d’index nouvelles ou mises à jour, les index correspondants sont traités. Notez que le déploiement bleu utilisera toujours les anciens index, mais le vert utilisera toujours les nouveaux.
-* La version verte commence alors que la version bleue est encore en service.
-* La version bleue fonctionne et reste en service pendant que la version verte est contrôlée pour vérifier le statut de préparation au moyen de contrôles d’intégrité.
-* Les nœuds verts qui sont prêts acceptent le trafic et remplacent les nœuds bleus, qui sont désactivés.
-* Au fil du temps, les nœuds bleus sont remplacés par des nœuds verts jusqu’à ce que seuls les nœuds verts restent, ce qui permet de terminer le déploiement.
-* Tout contenu modifiable nouveau ou modifié est déployé.
+* Les noeuds avec l’ancienne version sont principaux et un candidat de version pour la nouvelle version est créé et devient disponible.
+* S’il existe des définitions d’index nouvelles ou mises à jour, les index correspondants sont traités. Notez que les noeuds avec l’ancienne version utiliseront toujours les anciens index, tandis que les noeuds avec la nouvelle version utiliseront toujours les nouveaux index.
+* Les noeuds avec la nouvelle version démarrent alors que les anciennes versions diffusent toujours du trafic.
+* Les noeuds avec l’ancienne version sont en cours d’exécution et continuent de servir pendant que les noeuds avec la nouvelle version sont vérifiés pour vérifier leur état de préparation au moyen de contrôles de l’intégrité.
+* Les noeuds dotés de la nouvelle version qui sont prêts acceptent le trafic et remplacent les noeuds par l’ancienne version, qui est supprimée.
+* Au fil du temps, les noeuds avec l’ancienne version sont remplacés par des noeuds avec la nouvelle version jusqu’à ce que seuls les noeuds avec de nouvelles versions restent, ce qui permet d’effectuer le déploiement.
+* Tout contenu modifiable nouveau ou modifié est ensuite déployé.
 
 ## Index {#indexes}
 
-Les nouveaux index ou les index modifiés entraîneront une étape supplémentaire d’indexation ou de réindexation avant que la nouvelle version (verte) puisse prendre en charge le trafic. Vous trouverez dans [cet article](/help/operations/indexing.md) des informations détaillées sur la gestion des index dans AEM as a Cloud Service. Vous pouvez vérifier le statut de la tâche d’indexation sur la page de version Cloud Manager et vous recevrez une notification lorsque la nouvelle version sera prête à recevoir le trafic.
+Les index nouveaux ou modifiés entraîneront une étape supplémentaire d’indexation ou de réindexation avant que la nouvelle version ne puisse prendre en charge le trafic. Vous trouverez dans [cet article](/help/operations/indexing.md) des informations détaillées sur la gestion des index dans AEM as a Cloud Service. Vous pouvez vérifier le statut de la tâche d’indexation sur la page de version Cloud Manager et vous recevrez une notification lorsque la nouvelle version sera prête à recevoir le trafic.
 
 >[!NOTE]
 >
->Le temps nécessaire pour un déploiement en continu varie en fonction de la taille de l’index, car la version verte ne peut pas accepter de trafic tant que le nouvel index n’a pas été généré.
+>Le temps nécessaire à un déploiement en continu varie en fonction de la taille de l’index, car la nouvelle version ne peut pas accepter de trafic tant que le nouvel index n’a pas été généré.
 
 Pour le moment, AEM as a Cloud Service ne fonctionne pas avec les outils de gestion d’index tels que ACS Commons Verify Oak Index.
 
@@ -269,15 +273,15 @@ En outre, l’ancienne version doit être testée pour vérifier sa compatibilit
 
 ### Utilisateurs du service et modifications des listes de contrôle d’accès {#service-users-and-acl-changes}
 
-La modification des utilisateurs du service ou des listes de contrôle d’accès nécessaires pour accéder au contenu ou au code peut entraîner des erreurs dans les anciennes versions d’AEM, ce qui permet à des personnes qui ne sont plus des utilisateurs du service d’accéder à ce contenu ou à ce code. Pour remédier à ce problème, il est recommandé d’effectuer des modifications réparties sur au moins 2 versions, la première version jouant le rôle de passerelle avant de procéder au nettoyage dans la version suivante.
+La modification des utilisateurs du service ou des listes de contrôle d’accès nécessaires pour accéder au contenu ou au code peut entraîner des erreurs dans les anciennes versions d’AEM, ce qui permet à des personnes qui ne sont plus des utilisateurs du service d’accéder à ce contenu ou à ce code. Pour remédier à ce problème, il est recommandé d’apporter des modifications réparties sur au moins deux versions, la première version jouant le rôle de passerelle avant de procéder au nettoyage dans la version suivante.
 
 ### Modifications des index {#index-changes}
 
-Si des modifications sont apportées aux index, il est important que la version bleue continue à utiliser ses index jusqu’à son arrêt, tandis que la version verte utilise son propre jeu d’index modifié. Le développeur doit suivre les techniques de gestion des index décrites [dans cet article](/help/operations/indexing.md).
+Si des modifications sont apportées aux index, il est important que la nouvelle version continue à utiliser ses index jusqu’à ce qu’il soit arrêté, tandis que l’ancienne version utilise son propre jeu d’index modifié. Le développeur doit suivre les techniques de gestion des index décrites [dans cet article](/help/operations/indexing.md).
 
 ### Codage conservateur pour les restaurations {#conservative-coding-for-rollbacks}
 
-Si un échec est signalé ou détecté après le déploiement, il est possible qu’une restauration de la version bleue soit nécessaire. Il serait judicieux de s’assurer que le code bleu est compatible avec toutes les structures créées par la version verte puisque les nouvelles structures (tout contenu modifiable) ne seront pas annulées. Si l’ancien code n’est pas compatible, des correctifs devront être appliqués dans les versions ultérieures du client.
+Si un échec est signalé ou détecté après le déploiement, il est possible qu’une restauration de l’ancienne version soit nécessaire. Il est recommandé de s’assurer que le nouveau code est compatible avec toutes les structures créées par cette nouvelle version, puisque les nouvelles structures (tout contenu modifiable) ne seront pas restaurées. Si l’ancien code n’est pas compatible, des correctifs devront être appliqués dans les versions ultérieures du client.
 
 ## Environnements de développement rapide (RDE) {#rde}
 
