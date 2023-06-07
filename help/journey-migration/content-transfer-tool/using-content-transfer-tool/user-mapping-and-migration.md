@@ -2,10 +2,10 @@
 title: Mappage des utilisateurs et utilisatrices et migration des entités principales
 description: Présentation du mappage des utilisateurs et des utilisatrices et de la migration des entités principales
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: caa04391077d594a828a42a1a5a6a03daa107168
 workflow-type: tm+mt
-source-wordcount: '808'
-ht-degree: 24%
+source-wordcount: '832'
+ht-degree: 21%
 
 ---
 
@@ -25,9 +25,13 @@ Dans le cadre du parcours de transition vers Adobe Experience Manager (AEM) as a
 
 L’un des changements majeurs apportés à AEM as a Cloud Service est l’utilisation entièrement intégrée des Adobe ID pour l’accès au niveau création. Ce processus nécessite l’utilisation de la fonction [Adobe Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour la gestion des utilisateurs et des groupes d’utilisateurs. Les informations de profil utilisateur sont centralisées dans Adobe Identity Management System (IMS), qui permet l’authentification unique dans toutes les applications cloud d’Adobe. Pour plus d’informations, consultez [Identity Management](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/what-is-new-and-different.html#identity-management). En raison de cette modification, les utilisateurs existants doivent être mappés à leurs identifiants IMS afin d’éviter les doublons d’utilisateurs sur l’instance d’auteur du Cloud Service. Puisque les groupes de la plateforme AEM traditionnelle sont fondamentalement différents de ceux dans IMS, ils ne sont pas mappés, mais les deux ensembles de groupes doivent être réconciliés une fois la migration terminée.
 
-## Mappage des utilisateurs et des utilisatrices et détails de migration {#user-mapping-detail}
+## Détails de la migration des utilisateurs {#user-migration-detail}
 
-L’outil de transfert de contenu et le Cloud Acceleration Manager migrent tous les utilisateurs associés au contenu en cours de migration. Ce mappage est effectué automatiquement et son exécution peut être contrôlée par un bouton (bascule) avant le démarrage de l’extraction. Le paramètre par défaut du bouton (bascule) peut être remplacé par l’utilisateur ou l’utilisatrice lors du démarrage de l’extraction.
+L’outil de transfert de contenu et Cloud Acceleration Manager migreront vers le système cloud tous les utilisateurs associés au contenu en cours de migration.
+
+## Détails du mappage des utilisateurs {#user-mapping-detail}
+
+Les utilisateurs AEM peuvent être mappés aux utilisateurs Adobe IMS correspondants avec la même adresse électronique.  Ce mappage peut être effectué automatiquement dans le CTT et son exécution peut être contrôlée par un bouton bascule avant le démarrage de l’extraction. Le paramètre par défaut du bouton (bascule) peut être remplacé par l’utilisateur ou l’utilisatrice lors du démarrage de l’extraction.
 
 * Si le système source est une instance d’auteur, le choix par défaut d’effectuer le mappage est _on_, car il s’agit du processus recommandé.
 * Si le système source est une instance de publication, le choix par défaut de procéder au mappage est _off_, car les utilisateurs ne sont normalement pas migrés ou utilisés sur les instances de publication.
