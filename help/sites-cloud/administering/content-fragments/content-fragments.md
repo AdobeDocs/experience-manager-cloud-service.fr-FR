@@ -4,10 +4,10 @@ description: Découvrez comment les fragments de contenu dans Adobe Experience�
 feature: Content Fragments
 role: User
 exl-id: d12b1dda-85ce-4665-b8b1-915b74231bb8
-source-git-commit: 448851bdbcdf626ef1b8cf2765ba54bb0576bec8
+source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
 workflow-type: tm+mt
-source-wordcount: '2058'
-ht-degree: 70%
+source-wordcount: '2127'
+ht-degree: 68%
 
 ---
 
@@ -59,6 +59,7 @@ Pour vous aider à faire cela, vous pouvez prévisualiser l’[Arborescence de s
 >* [Fragments de contenu – Configuration des composants pour le rendu](/help/implementing/developing/extending/content-fragments-configuring-components-rendering.md)
 >* [Prise en charge des fragments de contenu dans l’API HTTP AEM Assets](/help/assets/content-fragments/assets-api-content-fragments.md)
 >* [API AEM GraphQL à utiliser avec les fragments de contenu](/help/headless/graphql-api/content-fragments.md)
+>* [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](/help/assets/reuse-assets-using-msm.md) (disponible uniquement via le **Ressources** console)
 
 
 Le nombre de canaux de communication augmente tous les ans. En règle générale, les canaux font référence au mécanisme de diffusion :
@@ -87,7 +88,7 @@ Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses e
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 >
->Pour plus d’informations, voir également [Présentation des fragments de contenu et des fragments d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
+>Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
 
 ## Fragments de contenu et services de contenu {#content-fragments-and-content-services}
 
@@ -112,6 +113,16 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 >[!NOTE]
 >
 >AEM prend également en charge la traduction des fragments de contenu. Consultez [Traduction des actifs](/help/assets/translate-assets.md) pour plus d’informations.
+
+## Publication et aperçu {#publish-and-preview}
+
+Comme pour tout le contenu, vous voudrez éventuellement publier vos fragments de contenu dans le **[Service de publication](/help/overview/architecture.md#runtime-architecture)**.
+
+Avant cela, vous pouvez également prévisualiser une expérience diffusée à l’aide de fragments de contenu en [publication de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md##publishing-and-previewing-a-fragment) à l’AEM **[Service de prévisualisation](/help/overview/architecture.md#runtime-architecture)**.
+
+>[!CAUTION]
+>
+>Publication sur le **Service de prévisualisation** n’est disponible que depuis le **Fragments de contenu** console.
 
 ## Type de contenu {#content-type}
 

@@ -2,10 +2,10 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
 workflow-type: tm+mt
-source-wordcount: '3058'
-ht-degree: 100%
+source-wordcount: '3090'
+ht-degree: 98%
 
 ---
 
@@ -45,6 +45,10 @@ Le contenu commence sur l’instance d’auteur où les auteurs le créent. L’
 ### Instance de publication {#publish}
 
 Une fois que le contenu a été créé sur l’instance d’auteur, il doit être publié pour permettre à d’autres services de l’utiliser. Une instance de publication contient tous les contenus publiés.
+
+### Service de prévisualisation {#preview}
+
+Avant de publier sur l’instance de publication, vous pouvez également publier votre fragment de contenu sur le **Service de prévisualisation** pour le test et la révision. Cette opération s’effectue à partir de la fonction **Fragments de contenu** console.
 
 ### Réplication {#replication}
 

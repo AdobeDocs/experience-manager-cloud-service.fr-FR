@@ -2,10 +2,10 @@
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
 description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM et comment créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f1a97c4bbb07accb33aa449a07ced0c0ac255b9e
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 96%
+source-wordcount: '2917'
+ht-degree: 95%
 
 ---
 
@@ -179,6 +179,10 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
    >[!NOTE]
    >
    >Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
+
+   >[!CAUTION]
+   >
+   >Si vous souhaitez utiliser MSM (qui crée des copies de fragments de contenu), toute **Unique** Les contraintes doivent être supprimées de tous les types de données utilisés dans les modèles de fragment de contenu respectifs.
 
 * Consultez la section **[Référence de contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 

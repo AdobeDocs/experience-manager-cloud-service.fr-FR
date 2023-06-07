@@ -1,21 +1,20 @@
 ---
 title: Gérer la publication
 description: Publication ou dépublication de ressources dans Experience Manager Assets, Dynamic Media et Brand Portal
-contentOwner: Vishabh Gupta
 mini-toc-levels: 1
 feature: Asset Management, Publishing, Collaboration, Asset Processing
 role: User, Architect, Admin
 exl-id: 691a0925-0061-4c62-85ac-8257b96dddf2
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 8466595f988d3a10806d4654885c14a622d14057
 workflow-type: tm+mt
-source-wordcount: '1465'
-ht-degree: 97%
+source-wordcount: '1630'
+ht-degree: 85%
 
 ---
 
 # Gestion de la publication dans Experience Manager Assets {#manage-publication-in-aem}
 
-En tant qu’administrateur [!DNL Adobe Experience Manager Assets], vous pouvez publier des ressources et des dossiers contenant des ressources de votre instance d’auteur sur [!DNL Experience Manager Assets], [!DNL Dynamic Media] et [!DNL Brand Portal]. Vous pouvez également planifier le workflow de publication d’une ressource ou d’un dossier à une date ou une heure ultérieure. Une fois ces éléments publiés, les utilisateurs peuvent accéder aux ressources et les distribuer à d’autres utilisateurs. Par défaut, vous pouvez publier des ressources et des dossiers sur [!DNL Experience Manager Assets]. Cependant, vous pouvez configurer [!DNL Experience Manager Assets] pour activer la publication sur [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr) et [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=fr).
+En tant qu’administrateur [!DNL Adobe Experience Manager Assets], vous pouvez publier des ressources et des dossiers contenant des ressources de votre instance d’auteur sur [!DNL Experience Manager Assets], [!DNL Dynamic Media] et [!DNL Brand Portal]. Vous pouvez également planifier la publication d’une ressource ou d’un dossier à une date ou une heure ultérieure. Une fois ces éléments publiés, les utilisateurs peuvent accéder aux ressources et les distribuer à d’autres utilisateurs. Par défaut, vous pouvez publier des ressources et des dossiers sur [!DNL Experience Manager Assets]. Cependant, vous pouvez configurer [!DNL Experience Manager Assets] pour activer la publication sur [[!DNL Dynamic Media]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/config-dm.html?lang=fr) et [[!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=fr).
 
 Vous pouvez publier ou dépublier des ressources au niveau de la ressource ou du dossier à l’aide de l’option **[!UICONTROL Publication rapide]** ou **[!UICONTROL Gérer la publication]**, disponibles dans l’interface [!DNL Experience Manager Assets]. Si vous apportez des modifications ultérieures à la ressource ou au dossier d’origine dans [!DNL Experience Manager Assets], les modifications ne sont pas répercutées dans l’instance de publication tant que vous n’avez pas republié à partir de [!DNL Experience Manager Assets]. Cela permet de s’assurer que les modifications en cours ne sont pas disponibles dans l’instance de publication. Seules les modifications approuvées publiées par un administrateur sont disponibles dans l’instance de publication.
 
@@ -24,6 +23,7 @@ Vous pouvez publier ou dépublier des ressources au niveau de la ressource ou du
 * [Publication ultérieure des ressources](#publish-assets-later)
 * [Publication de ressources vers Dynamic Media](#publish-assets-to-dynamic-media)
 * [Publication de ressources sur Brand Portal](#publish-assets-to-brand-portal)
+* [Demander la publication](#request-publication)
 * [Restrictions et conseils](#limitations-and-tips)
 
 ## Publication de ressources à l’aide de la publication rapide {#quick-publish}
@@ -61,7 +61,7 @@ Pour continuer, cliquez sur **[!UICONTROL Suivant]**. Selon la sélection, l’o
 
 ### Ajouter du contenu {#add-content}
 
-La publication vers [!DNL Experience Manager Assets] vous permet d’ajouter davantage de contenu (ressources et dossiers) à la liste de publication. Vous pouvez ajouter d’autres ressources ou dossiers à la liste dans les référentiels DAM. Cliquez sur **[!UICONTROL Ajouter du contenu]** pour ajouter plus de contenu.
+La publication vers [!DNL Experience Manager Assets] vous permet d’ajouter davantage de contenu (ressources et dossiers) à la liste de publication. Vous pouvez ajouter d’autres ressources ou dossiers à la liste dans les référentiels DAM. Cliquez sur **[!UICONTROL Ajouter du contenu]** pour ajouter du contenu.
 
 Vous pouvez ajouter plusieurs ressources à partir d’un dossier ou ajouter plusieurs dossiers à la fois. Cependant, vous ne pouvez pas ajouter de ressources à partir de plusieurs dossiers à la fois.
 
@@ -96,7 +96,7 @@ Après avoir appliqué les filtres, cliquez sur **[!UICONTROL OK]**, puis clique
 
 Dans l’illustration ci-dessus, vous pouvez voir différentes valeurs pour l’attribut **[!UICONTROL Cible de publication]**. Rappelons-nous que vous avez choisi de publier vers [!DNL Experience Manager Assets] (`Destination: Publish`). Alors, pourquoi indique-t-il que seuls un dossier et une ressource sont publiés vers `AEM`, et que les deux autres ressources sont publiées à la fois vers `AEM` et `Dynamic Media` ?
 
-Ici, vous devez comprendre le rôle des propriétés du dossier. Un dossier **[!UICONTROL Mode de publication Dynamic Media]** joue un rôle important dans la publication. Pour afficher les propriétés d’un dossier, sélectionnez-le, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Pour une ressource, consultez les propriétés de son dossier parent.
+Ici, vous devez comprendre le rôle des propriétés du dossier. Le **[!UICONTROL Mode de publication Dynamic Media]** d’un dossier joue un rôle important dans la publication. Pour afficher les propriétés d’un dossier, sélectionnez-le, puis cliquez sur **[!UICONTROL Propriétés]** dans la barre d’outils. Pour une ressource, consultez les propriétés de son dossier parent.
 
 Le tableau suivant explique comment la publication se produit en fonction de la **[!UICONTROL Destination]** et du **[!UICONTROL Mode de publication Dynamic Media]** définis :
 
@@ -177,24 +177,27 @@ Vous pouvez publier des ressources, des dossiers et des collections dans l’ins
 * [Publication de dossiers sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=fr#publish-folders-to-brand-portal)
 * [Publication de collections sur Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/publish-to-brand-portal.html?lang=fr#publish-collections-to-brand-portal)
 
+## Demander la publication {#request-publication}
+
+Le `Request Publication` permet d’authentifier le workflow des ressources avant de les publier sur . [!DNL AEM] Environnement de ressources. [!DNL AEM] fournit différents niveaux d’autorisations à différents utilisateurs. Vous pouvez *contributor* qui charge des ressources, mais ne peut pas les publier tant que les chargements ne sont pas vérifiés. En outre, la variable *Administration* vous pouvez gérer les workflows de lecture et d’écriture des ressources.
+
+L’option Demander la publication est disponible pour les utilisateurs suivants :
+* **Contributeur :** Si vous êtes un utilisateur pouvant contribuer à la variable [!DNL AEM] Assets, vous disposez alors d’un accès limité à la variable [!DNL AEM] Workflow des ressources. `Manage publication` est masqué pour vous. En tant que contributeur, vous ne pouvez contribuer qu’en ajoutant des ressources, mais vous ne pouvez pas les publier ni disposer d’un accès en lecture au workflow.
+
+* **Utilisateur du workflow :** Cet utilisateur ne peut pas publier de ressources, mais dispose d’un accès en lecture au workflow. En tant qu’utilisateur de workflow, vous pouvez :
+   * publication de requête
+   * view `Manage publication` button
+   * planifier le workflow et afficher les options `schedule now` et `schedule later`
+
+* **Administrateur :** En tant que type d’administrateur d’utilisateur, vous pouvez gérer les étapes globales du workflow pour les ressources. `Manage publication` est visible par vous. Si la destination `publish` est sélectionné, vous pouvez planifier une ressource ultérieurement pour l’étape du workflow.
+
+>[!NOTE]
+>
+>If [!DNL Dynamic Media] est sélectionné comme destination, puis l’étape de workflow est désactivée pour **utilisateur de workflow** et **admin** utilisateurs.
+
 ## Restrictions et conseils {#limitations-and-tips}
 
-* L’option [!UICONTROL Gérer la publication] n’est disponible que pour les comptes d’utilisateurs disposant d’autorisations de réplication.
+* `Manage publication` est disponible pour les utilisateurs disposant au moins d’autorisations de lecture sur le workflow.
 * Les dossiers vides ne sont pas publiés.
 * Si vous publiez une ressource en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez attendre la fin du traitement avant de publier ou republier la ressource une fois le traitement terminé.
 * Lors de la dépublication d’une ressource complexe, dépubliez uniquement la ressource. Évitez de dépublier des références, car elles peuvent être référencées par d’autres ressources publiées.
-
-**Voir également**
-
-* [Traduire les ressources](translate-assets.md)
-* [API HTTP Assets](mac-api-assets.md)
-* [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
-* [Ressources connectées](use-assets-across-connected-assets-instances.md)
-* [Rapports de ressources](asset-reports.md)
-* [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
-* [Gestion des métadonnées](manage-metadata.md)
-* [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)

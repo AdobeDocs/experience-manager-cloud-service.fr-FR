@@ -3,10 +3,10 @@ title: Requêtes GraphQL persistantes
 description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: 0cac51564468c414866d29c8f0be82f77625eaeb
+source-git-commit: c3d7cd591bce282bb4d3b5b5d0ee2e22fd337a83
 workflow-type: tm+mt
-source-wordcount: '1541'
-ht-degree: 100%
+source-wordcount: '1687'
+ht-degree: 90%
 
 ---
 
@@ -355,7 +355,11 @@ Pour gérer le cache globalement, vous pouvez [configurer les paramètres OSGi](
 
 >[!NOTE]
 >
->La configuration OSGi n’est appropriée que pour les instances de publication. La configuration existe sur les instances de création, mais elle est ignorée.
+>Pour le contrôle du cache, la configuration OSGi est appropriée uniquement pour les instances de publication. La configuration existe sur les instances de création, mais elle est ignorée.
+
+>[!NOTE]
+>
+>Le **Configuration de Query Service persistante** est également utilisé pour [configuration du code de réponse à la requête](#configuring-query-response-code).
 
 Configuration OSGi par défaut pour les instances de publication :
 
@@ -371,6 +375,26 @@ Configuration OSGi par défaut pour les instances de publication :
    {style="table-layout:auto"}
 
 * et, si elle n’est pas disponible, la configuration OSGi utilise les [valeurs par défaut des instances de publication](#publish-instances).
+
+## Configuration du code de réponse de requête {#configuring-query-response-code}
+
+Par défaut, la variable `PersistedQueryServlet` envoie une `200` lors de l’exécution d’une requête, quel que soit le résultat réel.
+
+Vous pouvez [configuration des paramètres OSGi](/help/implementing/deploying/configuring-osgi.md) pour le **Configuration de Query Service persistante** pour contrôler quel code d’état est renvoyé par la variable `/execute.json/persisted-query` point de terminaison , en cas d’erreur dans la requête persistante.
+
+>[!NOTE]
+>
+>Le **Configuration de Query Service persistante** est également utilisé pour [gestion du cache](#cache-osgi-configration).
+
+Le champ `Respond with application/graphql-response+json` (`responseContentTypeGraphQLResponseJson`) peut être défini selon les besoins :
+
+* `false` (valeur par défaut) : Peu importe que la requête persistante soit réussie ou non. Le `/execute.json/persisted-query` renverra le code d’état `200` et le `Content-Type` L’en-tête renvoyé sera `application/json`.
+
+* `true`: Le point de terminaison renvoie `400` ou `500` le cas échéant, lorsqu’il existe une forme d’erreur lors de l’exécution de la requête persistante. Également la valeur renvoyée `Content-Type` sera `application/graphql-response+json`.
+
+   >[!NOTE]
+   >
+   >Pour plus d’informations, voir https://graphql.github.io/graphql-over-http/draft/#sec-Status-Codes
 
 ## Encoder l’URL de requête devant être utilisé par une application {#encoding-query-url}
 

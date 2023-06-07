@@ -3,10 +3,10 @@ title: Utilisation de l’IDE GraphiQL dans AEM
 description: Découvrez comment utiliser l’IDE GraphiQL dans Adobe Experience Manager.
 feature: Content Fragments,GraphQL API
 exl-id: be2ebd1b-e492-4d77-b6ef-ffdea9a9c775
-source-git-commit: 4f2b5fa59d3c68dd1244fa5b2a8dc30d848ba4a4
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1058'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,6 @@ Une mise en œuvre de l’IDE [GraphQL](https://graphql.org/learn/serving-over-h
 >[!NOTE]
 >Vous devez avoir [configuré vos points d’entrée](/help/headless/graphql-api/graphql-endpoint.md) dans le [navigateur de configuration](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md) avant d’utiliser l’IDE GraphiQL.
 
-
 L’outil **GraphiQL** vous permet de tester et de déboguer vos requêtes GraphQL en vous permettant de :
 * sélectionner le **Point d’entrée** approprié pour la configuration Sites que vous souhaitez utiliser pour vos requêtes ;
 * saisir directement de nouvelles requêtes ;
@@ -31,7 +30,7 @@ L’outil **GraphiQL** vous permet de tester et de déboguer vos requêtes Graph
 * exécuter vos requêtes pour afficher immédiatement les résultats ;
 * gérer les **Variables de requête** ;
 * enregistrer et gérer les **Requêtes persistantes** ;
-* publier ou dépublier des **Requêtes persistantes** (par exemple : vers et à partir de `dev-publish`) ;
+* publier ou annuler la publication, **Requêtes persistantes**, **Publier** ou **Aperçu** le service; par exemple, vers/depuis `dev-publish`
 * afficher l’**Historique** de vos requêtes précédentes ;
 * utiliser l’**Explorateur de documentation** pour accéder à la documentation pour vous aider à apprendre et à comprendre les méthodes disponibles.
 
@@ -131,13 +130,27 @@ Les caches peuvent continuer à servir une réponse mise en cache en cas d’err
 
 1. Sélectionnez **Enregistrer** pour conserver les modifications.
 
-## Publier des requêtes persistantes {#publishing-persisted-queries}
+## Publication et prévisualisation des requêtes persistantes {#publishing-previewing-persisted-queries}
 
-Une fois que vous avez sélectionné votre requête persistante dans la liste (panneau de gauche), vous pouvez utiliser les actions **Publier** et **Dépublier**. Cette opération les active dans votre environnement de publication (par exemple `dev-publish`) pour faciliter l’accès selon vos applications lors des tests.
+Une fois que vous avez sélectionné votre requête conservée dans la liste (panneau de gauche), vous pouvez utiliser la variable **Publier** action.
+
+La requête sera alors activée dans l&#39;environnement que vous sélectionnez. Vous pouvez choisir l’une des options suivantes : **Publier** environnement (par exemple, `dev-publish`), ou votre **Aperçu** pour un accès facile à vos applications lors des tests.
+
+![GraphiQL - Requête persistante publiée](assets/cfm-graphiql-publish.png "GraphiQL - Publier la requête persistante")
 
 >[!NOTE]
 >
 >La définition du paramètre `Time To Live` {&quot;cache-control&quot;:&quot;parameter&quot;:value} du cache de la requête persistante a une valeur par défaut de 2 heures (7 200 secondes).
+
+## Annulation de la publication de requêtes persistantes {#unpublishing-persisted-queries}
+
+Comme lors de la publication, une fois que vous avez sélectionné votre requête conservée dans la liste (panneau de gauche), vous pouvez utiliser la variable **Annuler la publication** action.
+
+La requête sera alors désactivée à partir de l’environnement que vous sélectionnez. soit votre **Publier** ou votre **Aperçu** environnement.
+
+>[!NOTE]
+>
+>Vous devez également vous assurer que vous avez apporté les modifications nécessaires à votre application cliente, afin d’éviter tout problème potentiel.
 
 ## Copie de l’URL pour accéder directement à la requête {#copy-url}
 

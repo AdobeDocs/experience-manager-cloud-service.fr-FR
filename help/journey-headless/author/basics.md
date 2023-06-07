@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 60ddcb3f2fd2219b0b1672791703582920825e81
+source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
 workflow-type: tm+mt
-source-wordcount: '1668'
-ht-degree: 100%
+source-wordcount: '1711'
+ht-degree: 95%
 
 ---
 
@@ -28,16 +28,19 @@ Cet article s’appuie sur ces éléments afin que vous compreniez comment crée
 
 Avant de vous familiariser avec les fragments de contenu, voici une introduction (très) rapide à l’utilisation d’AEM...mais rien ne remplace vraiment l’expérience de connexion et d’utilisation du système.
 
-### Auteur et publication {#author-preview-publish}
+### Créer, prévisualiser et publier {#author-preview-publish}
 
-Une installation AEM se compose généralement d’au moins deux environnements :
+Une installation AEM se compose généralement de trois environnements :
 
 * Création
 * Publication
+* Prévisualisation
 
 Vous vous connectez et utilisez l’environnement de création pour générer votre contenu. Une fois prêt, vous publiez votre contenu afin qu’il soit largement disponible. Pour les applications découplées, il serait destiné aux autres applications, pour les pages web, il serait destiné aux lecteurs sur le web.
 
 Pour plus d’informations, consultez les concepts de création.
+
+Dans la **Fragments de contenu** vous pouvez également publier sur la console **Service de prévisualisation**, pour le test et la prévisualisation, avant la publication. Voir Publication et aperçu d’un fragment.
 
 ### Connexion {#signing-in}
 
@@ -263,9 +266,13 @@ Les modèles de fragment de contenu sont essentiels à vos fragments de contenu,
 
 Une fois le fragment terminé, vous pouvez le **Publier** pour qu’il soit disponible pour les applications découplées.
 
-Les actions de publication sont disponibles dans l’éditeur (ou dans la barre d’outils des consoles **Fragments de contenu** ou **Ressources**) :
+Les actions de publication sont disponibles dans l’éditeur :
 
 ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
+
+>[!NOTE]
+>
+>Vous pouvez également publier votre fragment à partir du **Ressources** ou **Fragments de contenu** console.
 
 ## Prochaines étapes {#whats-next}
 
@@ -289,21 +296,26 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
 
    * [Sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
 
-   * Publication
-
-      * [Publication rapide](/help/assets/manage-publication.md#quick-publish)
-
-      * [Gérer la publication](/help/assets/manage-publication.md#manage-publication)
-
 * [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md)
 
    * [Gestion des fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md)
 
-      * [Application de la configuration à votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+   * [Application de la configuration à votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [Création d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+   * [Création d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Variations – Création de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-variations.md)
 
+   * Publication
+
+      * Dans l’éditeur, ou **Ressources** console
+
+         * [Publication rapide](/help/assets/manage-publication.md#quick-publish)
+
+         * [Gérer la publication](/help/assets/manage-publication.md#manage-publication)
+      * Dans la **Fragments de contenu** Console
+
+         * [Publication et aperçu d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
    * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -311,6 +323,7 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
       * [Modèles de fragment de contenu – Propriétés](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+
 
 
 * Guides de prise en main

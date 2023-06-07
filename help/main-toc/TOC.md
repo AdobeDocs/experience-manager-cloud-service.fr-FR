@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
+source-git-commit: 106cc7d006e796126f98f6632fa1086a46e5b9ee
 workflow-type: tm+mt
-source-wordcount: '4030'
+source-wordcount: '4036'
 ht-degree: 98%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 98%
       + [Notes de mise à jour de la version actuelle](/help/release-notes/release-notes-cloud/release-notes-current.md)
       + 2023 {#2023}
          + [Notes de mise à jour de la version 2023.1.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-1-0.md)
+         + [Notes de mise à jour de la version 2023.2.0](/help/release-notes/release-notes-cloud/2023/release-notes-2023-2-0.md)
       + 2022 {#2022}
          + [Notes de mise à jour de la version 2022.10.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-10-0.md)
          + [Notes de mise à jour de la version 2022.8.0](/help/release-notes/release-notes-cloud/2022/release-notes-2022-8-0.md)
@@ -949,6 +950,7 @@ ht-degree: 98%
    + [Centre d’actions](/help/operations/actions-center.md)
    + [Recherche et indexation de contenu](/help/operations/indexing.md)
    + [Service de réplication de contenu](/help/operations/replication.md)
+   + [Autres régions de publication](/help/operations/additional-publish-regions.md)
    + [Surveillance des infrastructures et des services dans AEM as a Cloud Service](/help/operations/monitoring.md)
    + [Tâches de maintenance](/help/operations/maintenance.md)
    + [Sauvegarde et restauration](/help/operations/backup.md)
@@ -972,4 +974,3 @@ ht-degree: 98%
    + [Architecture de l’éditeur universel](/help/implementing/universal-editor/architecture.md)
    + [Attributs et types](/help/implementing/universal-editor/attributes-types.md)
    + [Authentification de l’éditeur universel](/help/implementing/universal-editor/authentication.md)
-

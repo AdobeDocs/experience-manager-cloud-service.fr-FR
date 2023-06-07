@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: ca58b4df232dc658d7843ede2386710c4da43fcb
 workflow-type: tm+mt
-source-wordcount: '4954'
-ht-degree: 92%
+source-wordcount: '5094'
+ht-degree: 90%
 
 ---
 
@@ -411,6 +411,10 @@ Vous pouvez effectuer les opérations suivantes avec les ressources que vous ave
 * Télécharger une ou plusieurs ressources
 * Utiliser les actions de bureau pour ouvrir ces ressources dans l’application de bureau
 * Créer des collections dynamiques
+* Création d’une version
+* démarrer un workflow.
+* Lier ou dissocier des ressources
+* Appliquez des filtres à l’aide du panneau Filtres qui s’affiche automatiquement après avoir effectué la recherche, afin de limiter les résultats de la recherche.
 
 ### Tri des résultats de la recherche {#sort}
 
@@ -450,6 +454,18 @@ Une collection est un ensemble ordonné de ressources pouvant inclure des ressou
 * Une liste dynamique (collection dynamique) qui peuple la collection de ressources en fonction de critères de recherche
 
 Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gestion des collections](/help/assets/manage-collections.md).
+
+### Création d’une version {#create-version}
+
+Créez une version pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ressource et cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Version]**. Ajoutez un libellé facultatif ou un commentaire, puis cliquez sur **[!UICONTROL Créer]**. Vous pouvez également sélectionner plusieurs ressources et créer simultanément des versions à leur intention.
+
+### Créer un workflow {#create-workflow}
+
+Tout comme la fonctionnalité de création de version, vous pouvez créer un workflow pour les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Créer]** > **[!UICONTROL Workflow]**. Sélectionnez le modèle de workflow, spécifiez un titre pour le workflow, puis cliquez sur **[!UICONTROL Début]**.
+
+### Lier et dissocier des ressources {#relate-unrelate-assets}
+
+Lier et dissocier les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Relate]** ou **[!UICONTROL Sans relation]**.
 
 ## Résultats de recherche inattendus et problèmes {#unexpected-results}
 

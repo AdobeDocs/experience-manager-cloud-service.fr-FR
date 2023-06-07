@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la console Fragments de contenu pour g�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: b351582a405f5c419f3aa386faddccd6ecef3a43
+source-git-commit: 6063c587c1d65587c44e551f3a5c2f3c34ced011
 workflow-type: tm+mt
-source-wordcount: '1907'
-ht-degree: 84%
+source-wordcount: '2071'
+ht-degree: 87%
 
 ---
 
@@ -37,7 +37,7 @@ L’[éditeur de fragment de contenu](#opening-the-fragment-editor) fournit diff
 
 >[!NOTE]
 >
->Les fragments de contenu sont stockés sous forme de **ressources**. Ils sont principalement gérés à partir de la console **Fragments de contenu** mais peuvent également être gérés à partir de la console **Ressources**.
+>Les fragments de contenu sont stockés sous forme de **ressources**. Ils sont principalement gérés à partir de la console **Fragments de contenu** mais peuvent également être gérés à partir de la console [Ressources](/help/assets/content-fragments/content-fragments-managing.md).
 
 ## Console Fragments de contenu {#content-fragments-console}
 
@@ -102,7 +102,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
 >[!CAUTION]
 >
->Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administrateur système.
+>Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). En cas de problème, veuillez contacter votre administrateur ou administratrice système.
 
 1. Utilisez la console **Fragments de contenu** afin de naviguer jusqu’à l’emplacement de votre fragment de contenu.
 1. Ouvrez le fragment à modifier en le sélectionnant, puis en cliquant sur **Ouvrir** dans la barre d’outils.
@@ -166,8 +166,8 @@ Certaines fonctions de la barre d’outils supérieure sont disponibles dans dif
 * La liste déroulante marquée des trois points (**...**) donne accès à des actions supplémentaires :
    * **Mettre à jour les références de page**
       * Cette option met à jour toutes les références de la page.
-   * **[Publication rapide](#publishing-and-referencing-a-fragment)**
-   * **[Gérer la publication](#publishing-and-referencing-a-fragment)**
+   * **[Publication rapide](/help/assets/manage-publication.md#quick-publish)**
+   * **[Gérer la publication](/help/assets/manage-publication.md#manage-publication)**
 
 <!--
 This updates any page references and ensures that the Dispatcher is flushed as required. -->
@@ -187,7 +187,7 @@ L’éditeur possède différentes options :
 
    >[!CAUTION]
    >
-   >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Si vous rencontrez des problèmes, contactez votre administrateur système.
+   >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). En cas de problème, veuillez contacter votre administrateur ou administratrice système.
 
    >[!NOTE]
    >
@@ -208,7 +208,7 @@ Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des v
 1. Lorsqu’un fragment de contenu est ouvert pour modification, AEM vérifie l’existence d’un jeton basé sur les cookies indiquant s’il existe une *session de modification* :
 
    1. Si le jeton est trouvé, le fragment est considéré comme faisant partie de la session de modification existante.
-   2. Si le jeton est *not* disponible et que l’utilisateur commence à modifier le contenu, une version est créée et un jeton est envoyé au client pour cette nouvelle session de modification, où il est enregistré dans un cookie.
+   2. Si le jeton n’est *pas* disponible et que l’utilisateur ou l’utilisatrice commence à modifier le contenu, une version est créée et un jeton est envoyé au client pour cette nouvelle session de modification, où il est enregistré dans un cookie.
 
 2. Lors d’une session de modification *active*, le contenu en cours de modification est automatiquement enregistré toutes les 600 secondes (par défaut).
 
@@ -232,55 +232,81 @@ Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer d
 
 ## Association de contenu au fragment {#associating-content-with-your-fragment}
 
-Vous pouvez également [association de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) avec un fragment. Cela fournit une connexion de sorte que les ressources (c’est-à-dire les images) puissent être (éventuellement) utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
+Vous pouvez également [associer du contenu](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) à un fragment. Cela fournit une connexion afin que les ressources (les images, par exemple) puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
 ## Affichage et modification des métadonnées (propriétés) du fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
 Vous pouvez afficher et modifier les propriétés d’un fragment à l’aide de l’onglet [Métadonnées](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md).
 
-## Publication et référencement d’un fragment {#publishing-and-referencing-a-fragment}
+## Publication et aperçu d’un fragment {#publishing-and-previewing-a-fragment}
+
+Vous pouvez publier vos fragments de contenu sur :
+
+* la valeur **[Service de publication](/help/overview/architecture.md#runtime-architecture)** - pour un accès public complet
+
+* la valeur **[Service de prévisualisation](/help/overview/architecture.md#runtime-architecture)** - pour prévisualiser le contenu avant sa disponibilité complète
+
+   >[!CAUTION]
+   Publication de fragments de contenu dans le **Service de prévisualisation** n’est disponible que depuis le [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md); en utilisant la variable **Publier** action.
+
+   >[!NOTE]
+   Pour plus d’informations sur les environnements d’aperçu, voir :
+   * [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
+   * [Configuration des paramètres OSGi pour le niveau d’aperçu](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+   * [Débogage de l’aperçu à l’aide de Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
+
+
+Pour publier vos fragments de contenu à l’aide du **Publier** dans la barre d’outils de la fonction [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):
 
 >[!CAUTION]
-Si votre fragment est basé sur un modèle, vous devez vous assurer que la variable [Le modèle a été publié](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
+Si votre fragment est basé sur un modèle, vous devez vous assurer que le [modèle a été publié](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model).
 Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
 
-Les fragments de contenu doivent être publiés pour être utilisés dans l’environnement de publication.
+1. Sélectionnez un ou plusieurs de vos fragments dans la liste.
 
-* À partir de l’option **Publier** dans la barre d’outils de la [console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment).
-   * **Maintenant** : après confirmation, le fragment sera publié immédiatement.
-   * **Planning** : vous pouvez sélectionner la date et l’heure de publication du fragment.
+1. Dans la barre d’outils, sélectionnez **Publier** puis l’un des éléments suivants pour ouvrir la boîte de dialogue appropriée :
 
-   Si nécessaire, vous devrez spécifier la **Date d’activation** et les références à publier. Par exemple :
+   * **Maintenant** - sélectionnez l’une des options suivantes : **Service de publication**, ou la variable **Service Preview**; après confirmation, le fragment sera publié immédiatement.
+   * **Planification** - en plus du service requis, vous pouvez également sélectionner la date et l’heure de publication du fragment.
+
+   Si nécessaire, vous devrez spécifier les références à publier. Par défaut, les références sont également publiées dans le service Preview pour s’assurer qu’il n’y a aucune coupure dans le contenu.
+Par exemple, pour une requête de publication planifiée :
    ![Boîte de dialogue Publier](assets/cfm-publish-01.png)
 
-* À partir de l’[éditeur de fragment de contenu](#toolbar-actions-in-the-content-fragment-editor).
-   * [**Publication rapide**](/help/assets/manage-publication.md#quick-publish)
-   * [**Gérer la publication**](/help/assets/manage-publication.md#manage-publication)
+1. Confirmez l’action de publication.
 
-De plus, lorsque vous [publiez une page qui utilise ce fragment](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing), celui-ci est répertorié dans les références de la page.
+Vous pouvez également publier sur le **Service de publication** de la [Éditeur de fragment de contenu](#toolbar-actions-in-the-content-fragment-editor) en utilisant :
+* **Publication rapide**
+* **Gérer la publication**
+
+>[!NOTE]
+Après vous [publier une page qui utilise le fragment ;](/help/sites-cloud/authoring/fundamentals/content-fragments.md#publishing); le fragment sera répertorié dans les références de page.
 
 >[!CAUTION]
 Une fois qu’un fragment a été publié et/ou référencé, AEM affiche un avertissement lorsqu’un auteur ouvre à nouveau ce fragment en mode d’édition. Il s’agit de signaler que les modifications apportées au fragment seront également répercutées sur les pages référencées.
 
 ## Dépublication d’un fragment {#unpublishing-a-fragment}
 
-Pour dépublier des fragments de contenu, sélectionnez un ou plusieurs fragments, puis cliquez sur **Dépublier**.
+Pour annuler la publication de fragments de contenu, sélectionnez un ou plusieurs fragments, puis **Annuler la publication** dans la barre d’outils de la fonction [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment). Vous pouvez sélectionner **Maintenant** ou **Planifié**.
+
+Lorsque la boîte de dialogue correspondante s’ouvre, vous pouvez sélectionner le service approprié :
+![Boîte de dialogue Annuler la publication](assets/cfm-unpublish-01.png)
 
 >[!NOTE]
-L’action **Dépublier** est visible lorsque des fragments publiés sont disponibles.
+Le **Annuler la publication** ne sera visible que lorsque les fragments publiés sont disponibles.
 
 >[!CAUTION]
 Si le fragment est déjà référencé à partir d’un autre fragment ou d’une page, alors un message d’avertissement s’affiche et vous devez confirmer que vous souhaitez poursuivre.
 
 ## Suppression d’un fragment {#deleting-a-fragment}
 
-Pour supprimer un fragment :
+Pour supprimer un fragment :
 
 1. Dans la console **Fragments de contenu**, naviguez jusqu’à l’emplacement de votre fragment de contenu.
 2. Sélectionnez le fragment.
 
    >[!NOTE]
-   Le **Supprimer** n’est pas disponible en tant qu’action rapide.
+   L’action **Supprimer** n’est pas proposée comme action rapide.
 
 3. Sélectionnez **Supprimer** dans la barre d’outils.
 4. Confirmez l’action **Supprimer**.
@@ -312,19 +338,19 @@ Outre les options standard, la [Chronologie](/help/assets/manage-digital-assets.
 
    * Ajouter une **étiquette** et/ou un **commentaire** (sélectionner un fragment existant, puis une version spécifique)
 
-   * **Enregistrer comme version** (sélectionnez un fragment existant, puis la flèche vers le haut située au bas de la chronologie)
+   * **Enregistrer comme version** (sélectionner un fragment existant, puis la flèche vers le haut située en bas du journal)
 
 * Actions pour les annotations
 
    * **Supprimer**
 
 >[!NOTE]
-Les commentaires sont les suivants :
+Les commentaires sont les suivants :
 * Fonctionnalité standard de toutes les ressources
-* Créé dans la chronologie
+* Créé dans le journal
 * Lié à la ressource de fragment
 >
-Les annotations (pour les fragments de contenu) sont les suivantes :
+Les annotations (pour les fragments de contenu) sont les suivantes :
 * Entré dans l’éditeur de fragments
 * Spécifique à un segment de texte sélectionné dans le fragment
 >
@@ -339,9 +365,9 @@ Par exemple :
 >[!NOTE]
 Cette fonctionnalité n’est disponible que dans la console **Ressources**.
 
-Le **Comparer à actuel** est disponible à partir de la fonction [Chronologie](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) après avoir sélectionné une version spécifique.
+L’action **Comparer avec la version actuelle** est disponible à partir du [Journal](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) après avoir sélectionné une version spécifique.
 
-Cette action s’ouvre :
+Cette action ouvre :
 
 * la version **actuelle** (la plus récente) (à gauche) ;
 
@@ -355,12 +381,12 @@ Elles sont affichées dans des versions côte à côte dans lesquelles :
    * le texte inséré est en vert ;
    * le texte remplacé est en bleu.
 
-* L’icône Plein écran vous permet d’ouvrir l’une des versions seule ; puis revenir à la vue parallèle
+* L’icône Plein écran vous permet d’ouvrir l’une des versions seule puis de basculer à nouveau sur la vue parallèle.
 * Vous pouvez **rétablir** la version spécifique
-* **Terminé** vous renvoie à la console.
+* **Terminé** vous ramène à la console.
 
 >[!NOTE]
-Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison de fragments.
+Vous ne pouvez pas modifier le contenu d’un fragment lors de la comparaison de fragments.
 
 ![comparaison](assets/cfm-managing-06.png)
 
@@ -369,9 +395,9 @@ Vous ne pouvez pas modifier le contenu du fragment lors de la comparaison de fra
 >[!NOTE]
 Cette fonctionnalité n’est disponible que dans la console **Ressources**.
 
-Vous pouvez restaurer à une version spécifique de votre fragment :
+Vous pouvez rétablir une version spécifique de votre fragment :
 
-* Directement à partir de la [Chronologie](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
+* Directement à partir du [Journal](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#timeline-for-content-fragments).
 
    Sélectionnez la version requise, puis l’action **Revenir à cette version**.
 

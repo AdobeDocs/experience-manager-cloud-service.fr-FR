@@ -2,10 +2,10 @@
 title: Utiliser des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour la création de pages et la diffusion découplée.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: ca41657057211cb0736a866771253b166fa139b4
+source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 69%
+source-wordcount: '2135'
+ht-degree: 68%
 
 ---
 
@@ -46,6 +46,7 @@ Cette page et les suivantes portent sur les tâches de création, de configurati
 * [Utilisation du contenu associé](/help/assets/content-fragments/content-fragments-assoc-content.md) : ajout de contenu associé.
 * [Métadonnées – propriétés des fragments](/help/assets/content-fragments/content-fragments-metadata.md) : affichage et modification des propriétés des fragments.
 * Utilisez [Fragments de contenu, ainsi que GraphQL, pour diffuser du contenu](/help/assets/content-fragments/content-fragments-graphql.md) à utiliser dans vos applications. Pour vous aider, vous pouvez prévisualiser la [sortie JSON](/help/assets/content-fragments/content-fragments-json-preview.md).
+* [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](#reusing-content-fragments-with-msm-assets)
 
 >[!NOTE]
 >
@@ -84,7 +85,7 @@ Ces fragments de contenu peuvent ensuite être assemblés pour offrir diverses e
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 >
->Pour plus d’informations, voir également [Présentation des fragments de contenu et des fragments d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
+>Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
 
 ## Fragments de contenu et services de contenu {#content-fragments-and-content-services}
 
@@ -109,6 +110,16 @@ Associé aux fonctionnalités d’exportation JSON des composants de base AEM, 
 >[!NOTE]
 >
 >AEM prend également en charge la traduction des fragments de contenu. Consultez [Traduction des actifs](/help/assets/translate-assets.md) pour plus d’informations.
+
+## Réutilisation de fragments de contenu avec MSM pour Assets {#reusing-content-fragments-with-msm-assets}
+
+Lorsque vous y accédez par le **Ressources** console vous pouvez utiliser MSM et créer des Live Copies pour vos fragments.
+
+Pour plus d’informations, voir [Réutilisation de fragments de contenu à l’aide de MSM pour Assets](/help/assets/reuse-assets-using-msm.md).
+
+>[!CAUTION]
+>
+>Si vous souhaitez utiliser MSM (qui crée des copies de fragments de contenu), toute **Unique** Les contraintes doivent être supprimées de tous les types de données utilisés dans les [Modèles de fragment de contenu](/help/assets/content-fragments/content-fragments-models.md).
 
 ## Type de contenu {#content-type}
 
