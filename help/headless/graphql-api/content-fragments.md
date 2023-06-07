@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: fa178192d74dfa9eb44835e31a111daf00f6d7d1
+source-git-commit: 7e6a42f5804ddef918df859811ba48f27ebbf19a
 workflow-type: tm+mt
-source-wordcount: '4789'
-ht-degree: 97%
+source-wordcount: '4934'
+ht-degree: 96%
 
 ---
 
@@ -936,6 +936,13 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
 
 
 
+
+* Le filtre `includeVariations` est inclus dans la variable `List` et `Paginated` types de requête.  Pour récupérer les variations du fragment de contenu dans les résultats de la requête, vous devez définir le filtre `includeVariations` sur `true`.
+
+   * Voir [Exemple de requête pour plusieurs fragments de contenu et leurs variantes d’un modèle donné](/help/headless/graphql-api/sample-queries.md#sample-wknd-multiple-fragment-variations-given-model)
+   >[!CAUTION]
+   >Le filtre `includeVariations` et le champ généré par le système `_variation` ne peut pas être utilisé ensemble dans la même définition de requête.
+
 * Si vous souhaitez utiliser un OU logique :
    * Utilisez ` _logOp: OR`
    * Voir [Exemple de requête – Toutes les personnes qui portent le nom « Jobs » ou « Smith »](/help/headless/graphql-api/sample-queries.md#sample-all-persons-jobs-smith)
@@ -965,6 +972,10 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
          >
          >Si la variation donnée n’existe pas pour un fragment de contenu, la variation principale est renvoyée comme valeur (de secours) par défaut.
 
+         >[!CAUTION]
+         >
+         >Vous ne pouvez pas utiliser le champ généré par le système `_variation` avec le filtre `includeVariations`.
+
          * Voir [Exemple de requête – Toutes les villes avec une variante nommée](/help/headless/graphql-api/sample-queries.md#sample-cities-named-variation)
    * Pour la [diffusion d’images](#image-delivery) :
 
@@ -977,6 +988,17 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
          * [Exemple de requête pour la diffusion d’images avec des paramètres complets](#image-delivery-full-parameters)
 
          * [Exemple de requête pour la diffusion d’images avec un seul paramètre spécifié](#image-delivery-single-specified-parameter)
+   * `_tags` : pour afficher les identifiants des fragments de contenu ou des variations contenant des balises ; il s’agit d’un tableau d’identifiants `cq:tags`.
+
+      * Reportez-vous à [Exemple de requête : noms de toutes les villes balisées en tant qu’Escapades en ville](/help/headless/graphql-api/sample-queries.md#sample-names-all-cities-tagged-city-breaks).
+      * Reportez-vous à [Exemple de requête pour les variations de fragments de contenu d’un modèle donné auxquelles est associée une balise spécifique](/help/headless/graphql-api/sample-queries.md#sample-wknd-fragment-variations-given-model-specific-tag).
+      * Voir [Exemple de requête avec filtrage par identifiant _tags et excluant des variantes](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-not-variations)
+      * Voir [Exemple de requête avec filtrage par identifiant _tags et inclusion de variantes](/help/headless/graphql-api/sample-queries.md#sample-filtering-tag-with-variations)
+
+      >[!NOTE]
+      >
+      >Vous pouvez également interroger les balises en répertoriant les métadonnées d’un fragment de contenu.
+
    * Et les opérations :
 
       * `_operator` : pour appliquer des opérateurs spécifiques ; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -986,6 +1008,7 @@ Le fonctionnement de base des requêtes avec GraphQL pour AEM est conforme à la
          * Voir [Exemple de requête : effectuer un filtrage sur un tableau avec un élément qui doit se produire au moins une fois](/help/headless/graphql-api/sample-queries.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase` : pour ignorer la casse lors de l’application de la requête
          * Voir [Exemple de requête : toutes les villes dont le nom contient SAN, indépendamment de la casse](/help/headless/graphql-api/sample-queries.md#sample-all-cities-san-ignore-case)
+
 
 
 

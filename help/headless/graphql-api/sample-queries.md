@@ -3,10 +3,10 @@ title: Apprendre à utiliser GraphQL avec AEM – Exemple de contenu et de requ
 description: Découvrez comment utiliser GraphQL avec AEM pour diffuser du contenu en mode découplé en explorant des exemples de contenu et de requêtes.
 feature: Content Fragments,GraphQL API
 exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
-source-git-commit: 12df921d7a6dbc46ee9effcdabe948a692eb64d9
+source-git-commit: 063d8a23c0634de7c5c25b4e617cc536c2dc3a3b
 workflow-type: tm+mt
-source-wordcount: '1596'
-ht-degree: 97%
+source-wordcount: '1760'
+ht-degree: 95%
 
 ---
 
@@ -356,6 +356,58 @@ Si vous créez une nouvelle variante, appelée « Centre de Berlin » (`berlin
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Exemple de requête - Noms de toutes les villes Balisés en tant qu’Escapades en ville {#sample-names-all-cities-tagged-city-breaks}
+
+Si vous :
+
+* créez une variété de balises, nommées `Tourism` : `Business`, `City Break`, `Holiday`
+* et que vous les affectez à la variation principale de diverses instances `City`,
+
+vous pouvez alors utiliser une requête pour renvoyer les détails de `name` et de `tags` de toutes les entrées balisées comme des Escapades en ville dans le schéma `city`.
+
+**Exemple de requête**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**Exemples de résultats**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1533,6 +1585,62 @@ Cette requête interroge :
 }
 ```
 
+### Exemple de requête pour plusieurs fragments de contenu et leurs variations dans un modèle donné. {#sample-wknd-multiple-fragment-variations-given-model}
+
+Cette requête interroge :
+
+* les fragments de contenu de type `article` et toutes les variations.
+
+**Exemple de requête**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### Exemple de requête pour les variations de fragments de contenu dans un modèle donné auxquelles est associée une balise spécifique.{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+Cette requête interroge :
+
+* les fragments de contenu de type `article` avec une ou plusieurs variations comportant la balise `WKND : Activity / Hiking`.
+
+**Exemple de requête**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
 ### Exemple de requête pour plusieurs fragments de contenu d’un paramètre régional donné {#sample-wknd-multiple-fragments-given-locale}
 
 Cette requête interroge :
@@ -1610,6 +1718,84 @@ Cette requête interroge :
         }
     }
 }
+```
+
+### Exemple de requête avec filtrage par identifiant _tags et excluant des variantes {#sample-filtering-tag-not-variations}
+
+Cette requête interroge :
+
+* pour les fragments de contenu de type `vehicle` comportant la balise `big-block`
+* exclusion de variations
+
+**Exemple de requête**
+
+```graphql
+query {
+  vehicleList(
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    items {
+      _variation
+      _path
+      type
+      name
+      model
+      fuel
+      _tags
+    }
+  }
+} 
+```
+
+### Exemple de requête avec filtrage par identifiant _tags et inclusion de variantes {#sample-filtering-tag-with-variations}
+
+Cette requête interroge :
+
+* pour les fragments de contenu de type `vehicle` comportant la balise `big-block`
+* inclusion de variations
+
+**Exemple de requête**
+
+```graphql
+{
+  enginePaginated(after: "SjkKNmVkODFmMGQtNTQyYy00NmQ4LTljMzktMjhlNzQwZTY1YWI2Cmo5", first: 9 ,includeVariations:true, sort: "name",
+    filter: {
+    _tags: {
+      _expressions: [
+        {
+          value: "vehicles:big-block"
+          _operator: CONTAINS
+        }
+      ]
+    }
+  }) {
+    edges{
+    node {
+        _variation
+        _path
+        name
+        type
+        size
+        _tags
+        _metadata {
+          stringArrayMetadata {
+            name
+            value
+          }
+        }
+    }
+      cursor
+    }
+  }
+} 
 ```
 
 ## Exemple de structure de fragment de contenu (utilisée avec GraphQL) {#content-fragment-structure-graphql}

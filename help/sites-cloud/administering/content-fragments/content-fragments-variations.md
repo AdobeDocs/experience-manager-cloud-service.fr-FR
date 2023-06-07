@@ -4,10 +4,10 @@ description: Les variations permettent de créer du contenu pour le fragment, pu
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 0361ae6e7de7b92f8c3ebbf531e9382df44c246f
+source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 81%
+source-wordcount: '2480'
+ht-degree: 82%
 
 ---
 
@@ -20,7 +20,7 @@ Les [variations](/help/sites-cloud/administering/content-fragments/content-fragm
 * [saisir le contenu](#authoring-your-content) de votre fragment ;
 * [créer et gérer les variations](#managing-variations) du contenu **maître** ;
 
-effectuer diverses autres actions selon le type de données que vous modifiez, par exemple :
+Vous pouvez effectuer diverses autres actions selon le type de données que vous modifiez, par exemple :
 
 * [Insertion de ressources visuelles dans votre fragment](#inserting-assets-into-your-fragment) (images)
 
@@ -40,24 +40,37 @@ effectuer diverses autres actions selon le type de données que vous modifiez, p
 
 ## Création de contenu {#authoring-your-content}
 
-Lorsque vous ouvrez votre fragment de contenu pour le modifier, la variable **Variations** s’ouvre par défaut. Ici, vous pouvez créer le contenu, par Principal ou toute variante que vous avez. Le fragment structuré contient différents champs, avec divers types de données, qui ont été définis dans le modèle de contenu.
+Lorsque vous ouvrez votre fragment de contenu pour le modifier, la variable **Variations** s’ouvre par défaut. Ici, vous pouvez créer le contenu, par Principal ou toute variante que vous avez. Le fragment structuré contient différents champs avec divers types de données, qui ont été définis dans le modèle de contenu.
 
 Par exemple :
 
 ![éditeur plein écran](assets/cfm-variations-02.png)
+
 Vous pouvez :
 
-* effectuer des modifications directement dans l’onglet **Variations**.
+* Apportez des modifications à votre contenu directement dans l’onglet **Variations**. Chaque type de données fournit différentes options de modification, par exemple :
 
-   * Chaque type de données propose différentes options de modification.
+   * Pour les champs **Plusieurs lignes de texte**, vous pouvez également ouvrir l’[éditeur plein écran](#full-screen-editor) pour :
 
-* Pour les champs **Plusieurs lignes de texte**, vous pouvez également ouvrir l’[éditeur plein écran](#full-screen-editor) pour :
+      * sélectionner le [format](#formats) ;
+      * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
+      * accéder à un éventail d’[actions](#actions).
+   * Pour les champs **Référence de fragment**, l’option [Modifier le fragment de contenu](#fragment-references-edit-content-fragment) peut être disponible, selon la définition du modèle.
 
-   * sélectionner le [format](#formats) ;
-   * voir davantage d’options de modification (pour le format [Texte enrichi](#rich-text)) ;
-   * accéder à un éventail d’[actions](#actions).
 
-* Pour les champs **Référence de fragment**, l’option **[Modifier le fragment de contenu](#fragment-references-edit-content-fragment)** peut être disponible, selon la définition du modèle.
+* Attribuez des **Balises** à la variation actuelle. Les balises peuvent être ajoutées, mises à jour et supprimées.
+
+   * Les [balises](/help/sites-cloud/authoring/features/tags.md) sont particulièrement puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées dans le but de rechercher du contenu (par balises) et d’appliquer des opérations en bloc.
+
+      * Les recherches d’une balise renvoient le fragment avec la variation balisée en surbrillance.
+      * Vous pouvez également utiliser les balises de variation pour regrouper des variations pour un profil de réseau de diffusion de contenu (CDN) spécifique (pour la mise en cache CDN), au lieu d’utiliser le nom de la variation.
+
+      Par exemple, vous pouvez baliser les fragments pertinents en tant que « lancement de Noël » pour ne les parcourir que sous forme de sous-ensemble, ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
+   >[!NOTE]
+   >
+   >Vous pouvez également ajouter des **balises** (à la variation **principale**) dans le cadre des [métadonnées](/help/sites-cloud/administering/content-fragments/content-fragments-metadata.md).
+
+* [Créez et gérez les variations](#managing-variations) du contenu **principal**.
 
 ### Éditeur plein écran {#full-screen-editor}
 
@@ -196,7 +209,7 @@ Par exemple :
 
 ### Chargement de contenu {#uploading-content}
 
-Pour simplifier le processus de création de fragments de contenu, vous pouvez transférer du texte préparé dans un éditeur externe et l’ajouter directement au fragment.
+Pour simplifier le processus de création de fragments de contenu, vous pouvez charger du texte préparé dans un éditeur externe et l’ajouter directement au fragment.
 
 ### Résumé de texte {#summarizing-text}
 
@@ -391,6 +404,10 @@ Pour créer une variation :
    >[!NOTE]
    Lors de la création d’une variation, c’est toujours le **Maître** qui est copié et non pas la variation ouverte.
 
+
+   >[!NOTE]
+   Lorsque vous créez une variation, toutes les **balises** actuellement affectées à la variation **principale** sont copiées dans la nouvelle variation.
+
 ### Modifier une variation {#editing-a-variation}
 
 Vous pouvez apporter des modifications au contenu de la variation après l’une des opérations suivantes :
@@ -437,7 +454,7 @@ Lors de la modification d’une variation, vous avez accès à l’action de syn
 >[!CAUTION]
 La synchronisation n’est disponible que pour copier les modifications *du **Maître**dans la variation*.
 Seul l’élément actif de la variation est synchronisé.
-La synchronisation fonctionne uniquement sur le type de données **Plusieurs lignes de texte**.
+La synchronisation fonctionne uniquement avec le type de données **texte multiligne**.
 Le transfert des modifications n’est pas proposé *entre une variation et le **Maître***.
 
 1. Ouvrez votre fragment de contenu dans l’éditeur de fragments. Assurez-vous que la variable **Principal** a été modifié.
