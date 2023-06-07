@@ -2,10 +2,10 @@
 title: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service
 description: Présentation de l’architecture d’Adobe Experience Manager as a Cloud Service.
 exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
-source-git-commit: c67be5b7f5dc454511753faa16bc46b10e72dde4
+source-git-commit: 1e9ca4f18c3698dbf4bbc0f104559e14f429e28e
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 96%
+source-wordcount: '1827'
+ht-degree: 94%
 
 ---
 
@@ -124,7 +124,15 @@ Cette nouvelle architecture comporte différents éléments principaux :
       * L’intégration et le traitement des ressources utilisent un service de calcul dédié d’Assets.
    * Le niveau de prévisualisation comprend un nœud d’aperçu unique. Celui-ci est utilisé pour l’assurance qualité du contenu avant publication au niveau de publication.
 
-   * Le niveau Publication comprend plusieurs nœuds au sein d’une seule batterie de publication : ils peuvent fonctionner indépendamment les uns des autres. Chaque nœud est constitué d’un éditeur AEM et d’un serveur web équipé du module AEM Dispatcher. La mise à l’échelle s’effectue automatiquement en fonction des besoins en matière de trafic sur le site.
+   * Le niveau Publication comprend deux noeuds ou plus au sein d’une seule ferme de publication.
+
+      * Les noeuds peuvent fonctionner indépendamment les uns des autres.
+
+      * Chaque nœud est constitué d’un éditeur AEM et d’un serveur web équipé du module AEM Dispatcher.
+
+      * La mise à l’échelle s’effectue automatiquement en fonction des besoins en matière de trafic sur le site.
+
+      * Par défaut, il existe une seule ferme de publication dans la région Principale, mais [zones de publication supplémentaires](/help/operations/additional-publish-regions.md) peut être sous licence.
 
       * Les utilisateurs finaux, ou les visiteurs du site, consultent le site web via le service AEM Publish.
 

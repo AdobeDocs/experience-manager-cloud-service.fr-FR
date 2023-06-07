@@ -2,12 +2,13 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 4631ab86ae1b4405e31d8bb8eae8edbbe2272c2c
+source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
 workflow-type: tm+mt
-source-wordcount: '1826'
-ht-degree: 100%
+source-wordcount: '2302'
+ht-degree: 78%
 
 ---
+
 
 # Gestion des environnements {#managing-environments}
 
@@ -56,14 +57,67 @@ Les fonctionnalités de chaque environnement dépendent des solutions activées 
       * Le nombre d’environnements disponibles/utilisés est indiqué entre parenthèses derrière le nom du type d’environnement.
    * Entrez un **Nom** d’environnement.
    * Fournissez une **Description** de l’environnement.
+   * Si vous ajoutez une **Production + Évaluation** , vous devez fournir un nom et une description de l’environnement pour vos environnements de production et d’évaluation.
    * Sélectionnez une **Région principale** dans la liste déroulante.
       * Veuillez noter qu’elle ne peut pas être modifiée après la création.
-   * Si vous ajoutez un environnement de **production et d’évaluation**, vous devez indiquer un nom et une description à l’environnement de production et à celui d’évaluation.
-      ![Boîte de dialogue Ajouter un environnement](assets/add-environment2.png)
+      * Selon vos droits disponibles, vous pouvez configurer [plusieurs régions.](#multiple-regions)
+
+   ![Boîte de dialogue Ajouter un environnement](assets/add-environment2.png)
 
 1. Cliquez sur **Enregistrer** pour ajouter l’environnement spécifié.
 
 L’écran **Aperçu** affiche désormais votre nouvel environnement dans la carte **Environnements**. Vous pouvez désormais configurer des pipelines pour votre nouvel environnement.
+
+## Plusieurs régions de publication {#multiple-regions}
+
+Un utilisateur avec la variable **Propriétaire de l’entreprise** Le rôle peut configurer des environnements de production et d’évaluation afin d’inclure jusqu’à trois régions de publication supplémentaires en plus de la région Principale. D’autres régions de publication peuvent améliorer la disponibilité. Voir [Documentation sur les régions de publication supplémentaires](/help/operations/additional-publish-regions.md) pour plus d’informations.
+
+>[!TIP]
+>
+>Vous pouvez utiliser la variable [API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/guides/api-usage/creating-programs-and-environments/#creating-aem-cloud-service-environments) pour interroger une liste actuelle des régions disponibles.
+
+### Ajout de plusieurs régions de publication à un nouvel environnement {#add-regions}
+
+Lors de l’ajout d’un nouvel environnement, vous pouvez choisir de configurer des régions supplémentaires en plus de la région Principale.
+
+1. Sélectionnez la **région Principal**.
+   * Notez que cela ne peut pas être modifié après la création de l’environnement.
+1. Sélectionner l’option **Ajout de zones de publication** et une nouvelle **Régions de publication supplémentaires** s’affiche.
+1. Dans le **Régions de publication supplémentaires** , sélectionnez une région supplémentaire.
+1. La région sélectionnée est ajoutée sous la liste déroulante pour indiquer sa sélection.
+   * Appuyez ou cliquez sur le X en regard de la région sélectionnée pour la désélectionner.
+1. Sélectionnez une autre région dans la **Régions de publication supplémentaires** pour ajouter une autre région.
+1. Appuyez ou cliquez sur **Enregistrer** lorsque vous êtes prêt à créer votre environnement.
+
+![Sélection de plusieurs régions](assets/select-multiple-regions.png)
+
+Les régions sélectionnées s’appliquent aux environnements de production et d’évaluation.
+
+Si vous ne spécifiez aucune région supplémentaire, [vous pouvez le faire ultérieurement une fois les environnements créés.](#edit-regions)
+
+Si vous souhaitez configurer la variable [réseau avancé](/help/security/configuring-advanced-networking.md) pour le programme, il est recommandé de le faire avant d’ajouter d’autres régions de publication aux environnements à l’aide de l’API Cloud Manager. Sinon, le trafic des régions de publication supplémentaires passera par le proxy de la région Principale.
+
+### Modification de plusieurs régions de publication {#edit-regions}
+
+Si vous n’avez initialement spécifié aucune région supplémentaire, vous pouvez le faire après la création des environnements si vous disposez des droits nécessaires.
+
+Vous pouvez également supprimer d’autres régions de publication. Cependant, vous ne pouvez ajouter ou supprimer que des régions dans une seule transaction. Si vous devez ajouter une région et en supprimer une, ajoutez d’abord, enregistrez votre modification, puis supprimez (ou vice versa).
+
+1. Dans la console Aperçu du programme de votre programme, cliquez sur le bouton représentant des points de suspension de votre environnement de production, puis sélectionnez **Modifier** dans le menu.
+
+   ![Modifier l’environnement](assets/select-edit-environment.png)
+
+1. Dans le **Modifier l’environnement de production** , apportez les modifications nécessaires aux autres régions de publication.
+   * Utilisez la variable **Régions de publication supplémentaires** pour sélectionner d’autres régions.
+   * Cliquez sur le X en regard des régions de publication supplémentaires sélectionnées pour les désélectionner.
+
+   ![Modifier l’environnement](assets/edit-environment.png)
+
+1. Appuyez ou cliquez sur **Enregistrer** pour enregistrer les modifications.
+
+Les modifications apportées à l’environnement de production s’appliquent aux environnements de production et d’évaluation. Les modifications apportées à plusieurs zones de publication ne peuvent être modifiées que dans l’environnement de production.
+
+Si vous souhaitez configurer la variable [réseau avancé](/help/security/configuring-advanced-networking.md) pour le programme, il est recommandé de le faire avant d’ajouter d’autres régions de publication aux environnements. Sinon, le trafic des régions de publication supplémentaires passera par le proxy de la région Principale.
 
 ## Détails de l’environnement {#viewing-environment}
 
