@@ -4,7 +4,7 @@ description: Tirez parti du Centre d’actions pour agir facilement sur les inci
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: ca7cad567a5f83cd1edc14def6d961b8ba3b7f1f
+source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 22%
@@ -40,7 +40,7 @@ Pour configurer la réception de notifications par courrier électronique par le
 
 ## Flux d’utilisateur détaillé {#detailed-user-flow}
 
-Cliquez sur l’e-mail pour accéder au Centre d’alertes. Une fenêtre contextuelle s’affiche pour indiquer le contexte de la notification sur laquelle vous avez cliqué. Dans certains cas, des liens sont renvoyés vers des informations supplémentaires décrivant comment prendre des mesures correctives.
+Cliquez sur l’e-mail pour accéder au Centre d’actions. Une fenêtre contextuelle s’affiche pour indiquer le contexte de la notification sur laquelle vous avez cliqué. Dans certains cas, des liens sont renvoyés vers des informations supplémentaires décrivant comment prendre des mesures correctives.
 
 ![Détails de l’incident](/help/operations/assets/incident-details.png)
 
@@ -64,7 +64,7 @@ Comme tous les tickets d’assistance, il apparaîtra dans l’[onglet Cas d’a
 
 AEM as a Cloud Service comporte plusieurs types de notifications, mais seul un sous-ensemble apparaît dans le Centre d’actions, comme illustré dans le tableau ci-dessous.
 
-| Type de notification | Description | Comment configurer | Apparaît dans le Centre d’alertes |
+| Type de notification | Description | Comment configurer | Apparaît dans le Centre d’actions |
 |---|---|---|---|
 | Incidents opérationnels | Des incidents critiques nécessitant une action immédiate | Utilisateur affecté au profil de produit &quot;Notification d’incident - Cloud Service&quot; | X |
 | Recommandations proactives | Optimisations qui doivent être planifiées | Utilisateur affecté au profil de produit &quot;Notification proactive - Cloud Service&quot; | X |
