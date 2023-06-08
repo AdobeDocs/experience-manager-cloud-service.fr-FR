@@ -4,15 +4,18 @@ description: Découvrez comment créer ou ajouter facilement un formulaire adapt
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: 4d32a1768a97505ec2e7288904dde0c9120041a7
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3196'
 ht-degree: 1%
 
 ---
 
 
 # Création ou ajout d’un formulaire adaptatif à une page AEM Sites {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+|Attention|[!BADGE documentation de version préliminaire]{type=Caution tooltip="État jaune"}
+<span class="preview"> Il s’agit d’une documentation préliminaire qui peut être modifiée.</span>
 
 Avec AEM Forms, vous pouvez facilement incorporer des formulaires adaptatifs dans vos pages web. Cela permet à vos visiteurs de remplir et d’envoyer facilement des formulaires sans jamais quitter la page sur laquelle ils se trouvent. Ce faisant, ils peuvent rester en contact sans effort avec d’autres éléments du site web tout en interagissant activement avec le formulaire.
 
@@ -122,7 +125,7 @@ Pour activer la fonctionnalité complète du composant Conteneur de Forms adapta
 
 +++
 
-+++ Activer **[!UICONTROL Conteneur Forms adaptatif]
++++ Activer le conteneur Forms adaptatif
 
 Pour activer [!UICONTROL Conteneur Forms adaptatif] dans la stratégie du modèle, procédez comme suit :
 
@@ -246,7 +249,7 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 
 ### Utilisation du service de préremplissage de brouillon du portail Forms {#forms-portal-prefill-service}
 
-Vous pouvez utiliser le service de préremplissage de brouillon du portail Forms pour préremplir les champs d’un formulaire à l’aide d’un brouillon du formulaire adaptatif enregistré. Avant d’utiliser le service de préremplissage de brouillon du portail Forms, assurez-vous que [Les composants du portail Forms adaptatif sont activés et configurés. ](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) pour votre environnement.
+Vous pouvez utiliser le service de préremplissage de brouillon du portail Forms pour préremplir les champs d’un formulaire à l’aide d’un brouillon du formulaire adaptatif enregistré. Avant d’utiliser le service de préremplissage de brouillon de Forms Portal, assurez-vous que [Les composants du portail Forms adaptatif sont activés et configurés.](configure-forms-portal.md#configure-azure-storage-for-adaptive-forms-configure-azure-storage-adaptive-forms) pour votre environnement.
 
 1. Ouvrez l’éditeur de page AEM Sites ou le fragment d’expérience contenant le formulaire adaptatif.
 1. Ouvrez les propriétés de la page et configurez la configuration du cloud.
@@ -267,7 +270,7 @@ Lors de l’envoi d’un formulaire, vous pouvez rediriger l’utilisateur vers 
 1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
 1. Ouvrez le **[!UICONTROL Envoi]** .
 
-   * Pour configurer une URL de redirection, pour l’option Lors de l’envoi, sélectionnez l’option Rediriger vers l’URL et indiquez une adresse absolue, une URL de redirection ou le chemin relatif d’une page AEM Sites.
+   * Pour configurer une URL de redirection, pour l’option Lors de l’envoi, sélectionnez l’option Rediriger vers l’URL , puis fournissez une adresse absolue, une URL de redirection ou le chemin relatif d’une page AEM Sites.
 
    * Pour configurer un message de remerciement ou personnalisé, sélectionnez l’option Afficher le message dans le champ Contenu du message pour l’option Envoyer. Il s’agit d’une zone de texte enrichi. Vous pouvez utiliser l’option Plein écran pour afficher tous les éléments de texte enrichi disponibles.
 
