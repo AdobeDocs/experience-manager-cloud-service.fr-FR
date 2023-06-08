@@ -4,9 +4,9 @@ description: Découvrez comment créer ou ajouter facilement un formulaire adapt
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3182'
 ht-degree: 1%
 
 ---
@@ -277,4 +277,4 @@ Lors de l’envoi d’un formulaire, vous pouvez rediriger l’utilisateur vers 
 * [Donner un style à votre Forms adaptatif basé sur les composants principaux](using-themes-in-core-components.md)
 * [Utilisation de l’éditeur de règles pour ajouter un comportement dynamique à Forms adaptatif](rule-editor.md)
 * [Modification de la mise en page d’un formulaire adaptatif](/help/sites-cloud/authoring/features/responsive-layout.md)
-* [Générer un document d’enregistrement](generate-document-of-record-core-components.md)
+
