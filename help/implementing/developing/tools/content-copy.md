@@ -1,13 +1,13 @@
 ---
 title: Outil de copie de contenu
 description: L’outil de copie de contenu permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production as a Cloud Service AEM vers des environnements inférieurs à des fins de test.
-source-git-commit: 4a5470ae8fe5a8e7f615009bf5f6b180aee4669b
+exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
+source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 64%
+source-wordcount: '1227'
+ht-degree: 60%
 
 ---
-
 
 # Outil de copie de contenu {#content-copy}
 
@@ -38,8 +38,8 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 
 | Fonctionnalité copie de contenu | Groupe d’administrateurs AEM | Rôle de responsable de déploiement |
 |---|---|---|
-| Créer et modifier des [jeux de contenu](#create-content-set) | Requise | Non requis |
-| Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requise | Requise |
+| Créer et modifier des [jeux de contenu](#create-content-set) | Requis | Non requis |
+| Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
 
 ## Créer un jeu de contenu {#create-content-set}
 
@@ -55,7 +55,7 @@ Avant qu’un contenu ne puisse être copié, un jeu de contenu doit être défi
 
    ![Jeux de contenu](assets/content-sets.png)
 
-1. Sur le **Détails** de l’assistant, attribuez un nom et une description au jeu de contenu, puis appuyez ou cliquez sur **Continuer**.
+1. Dans l’onglet **Détails** de l’assistant, indiquez le nom et la description du jeu de contenu, puis appuyez ou cliquez sur **Continuer**.
 
    ![Détails du jeu de contenu](assets/add-content-set-details.png)
 
@@ -102,13 +102,16 @@ Notez que lorsque vous modifiez votre jeu de contenu, vous devrez peut-être dé
 
 Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour copier du contenu. Pour copier du contenu, procédez comme suit.
 
+>[!NOTE]
+> La copie de contenu ne doit pas être lancée sur un environnement lorsqu’un [transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md) s’exécute dans cet environnement.
+
 1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation et le programme appropriés.
 
 1. Accédez à l’écran **Environnements** à partir de la page **Aperçu**.
 
 1. Accédez à la page **Jeux de contenu** à partir de l’écran **Environnements**.
 
-1. Sélectionnez un jeu de contenu dans la console, puis sélectionnez **Copier le contenu** dans le menu représentant des points de suspension.
+1. Sélectionnez un jeu de contenu dans la console, puis **Copier le contenu** dans le menu représentant des points de suspension.
 
    ![Copier le contenu](assets/copy-content.png)
 
@@ -159,7 +162,7 @@ Une fois que vous avez commencé à copier du contenu, le processus peut avoir l
 | Terminé | L’opération de copie de contenu est terminée avec succès. |
 | Annulé | L’utilisateur annule une opération de copie de contenu après l’avoir démarrée |
 
-### Annulation d’un processus de copie {#cancelling}
+### Annulation d’un processus de copie {#canceling}
 
 Si vous devez abandonner une opération de copie de contenu après l’avoir démarrée, vous avez la possibilité de l’annuler.
 
@@ -183,6 +186,6 @@ L’outil de copie de contenu présente les limites suivantes.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
-* L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou nouvellement créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
+* L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou le contenu nouvellement créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu uniquement depuis la dernière opération de copie de contenu, vous devez créer un jeu de contenu et spécifier les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.
 * Les informations de version ne sont pas incluses dans une copie de contenu.
