@@ -1,19 +1,19 @@
 ---
-title: Notes de mise à jour de Cloud Manager 2023.5.0 dans Adobe Experience Manager as a Cloud Service
-description: Consultez les notes de mise à jour de Cloud Manager 2023.5.0 dans AEM as a Cloud Service.
+title: Notes de mise à jour de Cloud Manager 2023.6.0 dans Adobe Experience Manager as a Cloud Service
+description: Consultez les notes de mise à jour de Cloud Manager 2023.6.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 4340b957cea86452f916ab615b383aabacc21676
+source-git-commit: 80a5f58119dc304161d324491cd65c50e981ccd4
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 41%
+source-wordcount: '210'
+ht-degree: 37%
 
 ---
 
 
-# Notes de mise à jour de Cloud Manager 2023.5.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
+# Notes de mise à jour de Cloud Manager 2023.6.0 dans Adobe Experience Manager as a Cloud Service {#release-notes}
 
-Cette page présente les notes de mise à jour de Cloud Manager version 2023.5.0 dans AEM as a Cloud Service.
+Cette page présente les notes de mise à jour de Cloud Manager version 2023.6.0 dans AEM as a Cloud Service.
 
 >[!NOTE]
 >
@@ -21,15 +21,16 @@ Cette page présente les notes de mise à jour de Cloud Manager version 2023.5
 
 ## Date de publication {#release-date}
 
-La date de publication de la version 2023.5.0 de Cloud Manager dans AEM as a Cloud Service est le 11 mai 2023. La prochaine version est prévue pour le 8 juin 2023.
+La date de publication de la version 2023.6.0 de Cloud Manager dans AEM as a Cloud Service est le 8 juin 2023. La prochaine version est prévue pour le 6 juillet 2023.
 
 ## Nouveautés {#what-is-new}
 
-* La prise en charge des tests de produit, fonctionnels et de l’interface utilisateur a été étendue à [test de pipeline hors production.](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md)
-* En plus d’activer les tests en amont, [La prise en charge des tests de l’interface utilisateur a été étendue aux tests Cypress.](/help/implementing/cloud-manager/ui-testing.md)
-* [Copie de contenu en libre-service](/help/implementing/developing/tools/content-copy.md) est désormais disponible d’un environnement supérieur à un environnement inférieur via l’interface utilisateur de Cloud Manager.
-* L’étape de validation de l’exécution du pipeline a été améliorée afin de valider l’état des files d’attente de réplication plus tôt dans le processus d’exécution. Cela permet de s’assurer que les étapes de déploiement ne sont pas affectées par les files d’attente bloquées qui doivent être gérées par AEM utilisateurs administrateurs directement dans l’environnement de création.
+* Lors de la création d’une [programme ou environnement,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) le nom est désormais limité à l’acceptation de caractères alphanumériques et d’un ensemble limité de caractères spéciaux.
+* Lors de la reprise d’une [pipeline de production,](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) une boîte de dialogue de confirmation s’affiche maintenant à l’étape d’approbation.
+* Pour le **[Tests fonctionnels du client](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)** et **[Tests de l’interface utilisateur personnalisée](/help/implementing/cloud-manager/ui-testing.md)** étapes de pipeline, nouvelle `INCOMPLETE` est désormais possible, ce qui indique que ces tests n’étaient pas présents et donc pas effectués.
+   * Dans ce cas, le pipeline n’échoue pas et passe à l’étape suivante.
 
 ## Correctifs {#bug-fixes}
 
-* La création d’environnement n’échoue plus lorsque des caractères multi-octets sont utilisés dans le nom de l’environnement.
+* Le [pipeline de configuration de niveau web](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipelines) ne sont plus incorrectement activés pour les programmes Assets uniquement.
+* Une validation plus robuste a été ajoutée pour empêcher certains types d’échecs lors de la mise en service de l’environnement.
