@@ -5,7 +5,7 @@ landing-page-description: Découvrez comment gérer les fragments de contenu à 
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: b6205858f3129cb7488b55192088ec0442a28716
+source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 90%
@@ -128,7 +128,7 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
 * **Aperçu**
    * Informations uniquement:
       * **Synchronisation**: Le fragment de contenu est synchronisé sur la **Auteur** et **Aperçu** services.
-      * **Désynchronisé**: Le fragment de contenu n’est pas synchronisé sur la page **Auteur** et ****Aperçu** services. Vous devez **Publier** to **Aperçu** pour s’assurer que les deux instances redeviennent synchronisées.
+      * **Désynchronisé**: Le fragment de contenu n’est pas synchronisé sur la page **Auteur** et **Aperçu** services. Vous devez **Publier** to **Aperçu** pour s’assurer que les deux instances redeviennent synchronisées.
       * blank: Le fragment de contenu n’existe pas sur le **Aperçu** service.
 * **Modifié**
    * Informations uniquement
