@@ -4,10 +4,10 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: 05723d602362fd8fe8ed2318d42a669f00f79f87
+source-git-commit: d3194e646b326009dc204838ac74fc880952f286
 workflow-type: tm+mt
 source-wordcount: '4086'
-ht-degree: 92%
+ht-degree: 91%
 
 ---
 
@@ -311,7 +311,7 @@ Le tableau ci-dessous décrit les différents statuts qu’une tâche ou un él�
 
 | État | Description |
 |---|---|
-| **Brouillon** | La tâche de traduction n’a pas été démarrée. Lors de leur création, les tâches de traduction présentent le statut **Brouillon**. |
+| **Brouillon** | La tâche de traduction n’a pas été démarrée. Les tâches de traduction se trouvent dans **Version préliminaire** lors de leur création. |
 | **Envoyé** | Les fichiers de la tâche de traduction ont ce statut lorsqu’ils ont été correctement envoyés au service de traduction. Ce statut est défini après l’exécution de la commande **Demander la portée** ou **Commencer**. |
 | **Demander la portée** | Pour le processus de traduction humaine, les fichiers de la tâche ont été soumis au fournisseur de traduction pour la définition de la portée. Ce statut est défini après l’exécution de la commande **Demander la portée**. |
 | **Portée terminée** | Le fournisseur a défini la portée de la tâche de traduction. |
