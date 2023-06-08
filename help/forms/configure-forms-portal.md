@@ -2,7 +2,7 @@
 title: Comment créer un portail Formulaires sur une page Experience Manager Sites
 description: Découvrez comment créer un portail Formulaires et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: a243664302c75fcb3125d68838353bd87cf24de3
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 90%
@@ -39,8 +39,11 @@ AEM Forms fournit les composants de portail suivants prêts à l’emploi :
 * Lien : Ce composant permet de créer un lien vers un formulaire n’importe où sur la page.
 
 Vous pouvez [importer les composants prêts à l’emploi du portail Formulaires](#import-forms-portal-components-aem-archetype) à partir de l’archétype de projet AEM. Après l’importation, effectuez les configurations suivantes :
+
 * [Configuration d’un stockage externe](#configure-azure-storage-adaptive-forms)
+
 * [Activation des composants du portail Formulaires](#enable-forms-portal-components)
+
 * [Configuration des composants du portail Formulaires](#configure-forms-portal-components)
 
 ## Importation des composants du portail Formulaires {#import-forms-portal-components-aem-archetype}

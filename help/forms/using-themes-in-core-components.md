@@ -2,7 +2,7 @@
 title: Création et utilisation des thèmes
 description: Vous pouvez utiliser les thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif avec des composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 99%
@@ -49,6 +49,7 @@ Pour personnaliser un thème :
 * Vous devez avoir des [connaissances de base de Git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#accessing-git) et des référentiels Git Cloud Service
 
 Pour personnaliser un thème Zone de travail :
+
 1. [Clonez le thème Zone de travail](#1-download-canvas-theme-download-canvas-theme)
 1. [Comprenez la structure du thème](#2-understand-structure-of-the-canvas-theme-structure-of-canvas-theme)
 1. [Modifiez le nom dans package.json et package_lock.json](#changename-packagelock-packagelockjson)
