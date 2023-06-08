@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 7823f35e0b78584cfb17f0efed7f36e3a2cb408d
+source-git-commit: 0ef684cde1fe4fa47214fddf2c2a75d1743943e2
 workflow-type: tm+mt
-source-wordcount: '4049'
+source-wordcount: '4055'
 ht-degree: 98%
 
 ---
@@ -203,6 +203,9 @@ ht-degree: 98%
       + Analyseur des bonnes pratiques {#best-practices-analyzer}
          + [Présentation](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Utilisation de l’analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
+      + Transformateur de contenu {#content-transformer}
+         + [Présentation](/help/journey-migration/content-transformer/overview.md)
+         + [Utilisation de Content Transformer](/help/journey-migration/content-transformer/using.md)
       + Outil de transfert de contenu {#content-transfer-tool}
          + [Présentation](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
          + [Conditions préalables pour l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/prerequisites-content-transfer-tool.md)
