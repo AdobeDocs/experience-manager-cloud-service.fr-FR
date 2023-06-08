@@ -5,10 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-exl-id: cde9523e-5409-4edd-af0f-2c2575cc22ea
-source-git-commit: 3d713304512065819ed16bbc9604f2cf9d1cf43f
+source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
 workflow-type: tm+mt
-source-wordcount: '3072'
+source-wordcount: '3073'
 ht-degree: 99%
 
 ---
@@ -195,7 +194,11 @@ Vous pouvez avoir un ou plusieurs destinataires pour un contrat Adobe Sign. Lors
       >
       >Assurez-vous que l’adresse e-mail du premier destinataire ou du seul destinataire (s’il existe un destinataire unique) n’est pas identique au compte [!DNL Adobe Sign] utilisé pour configurer les services cloud AEM.
 
-   * **[!UICONTROL Méthode d’authentification du destinataire] :** indiquez la méthode d’authentification d’un destinataire avant d’ouvrir le contrat Adobe Sign. Vous pouvez choisir le téléphone, la base de connaissances, l’authentification par identité sociale et l’[ID gouvernement](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html).
+   * **[!UICONTROL Méthode d’authentification du destinataire] :** indiquez la méthode d’authentification d’un destinataire avant d’ouvrir le contrat Adobe Sign. Vous pouvez choisir entre téléphone, base de connaissances, authentification basée sur l’identité sociale et [Identifiant du gouvernement](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html) pour [!DNL Adobe Acrobat Sign].
+
+      <!-- 
+      For [!DNL Adobe Acrobat Sign for Government] you can choose between phone and knowledge-based authentication.
+      -->
    >[!NOTE]
    >
    >    * Par défaut, l’authentification par identité sociale offre une option d’authentification via Facebook, Google et LinkedIn. Vous pouvez contacter le service d’assistance [!DNL Adobe Sign] pour activer d’autres fournisseurs d’authentification sociale.
@@ -255,7 +258,7 @@ Vous pouvez également associer un bindref à l’ID de contrat (agreementId). I
          </afUnboundData>
          <afBoundData>
             <config xmlns:xfa="http://www.xfa.org/schema/xfa-data/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-               <agreementID>3AAABLblqZhC2MWu7GFauKh45j_t2ih8mAtmbdIcNSl1HgQubhMJfDaDfylyN7NQiYRam_44ISKm45enIOafHqWZrdaxShf9r</agreementID>
+               <userName>3AAABLblqZhC2MWu7GFauKh45j_t2ih8mAtmbdIcNSl1HgQubhMJfDaDfylyN7NQiYRam_44ISKm45enIOafHqWZrdaxShf9r</userName>
                <dateOfBirth>0001-01-01</dateOfBirth>
             </config>
          </afBoundData>
@@ -311,6 +314,11 @@ Après [modification des propriétés de formulaire adaptatif pour Adobe Sign](w
    * Signatures cloud : signez avec un [ID numérique](https://helpx.adobe.com/fr/sign/kb/digital-certificate-providers.html) hébergé par un prestataire de confiance.
    * Adobe Acrobat ou Reader : téléchargez et ouvrez le document avec Adobe Acrobat ou Reader pour le signer à l’aide d’une carte à puce, un jeton USB ou un ID numérique basé sur des fichiers.
 
+      <!-- 
+      >[!NOTE]
+      >
+      > * [!DNL Adobe Acrobat Sign for Government] can use Digitial Signature but can not use Cloud Signatures in the current version.
+      -->
    Après avoir ajouté le champ de signature cloud au formulaire adaptatif, effectuez les étapes suivantes pour terminer le processus de configuration :
 
    * [Activation d’Adobe Sign pour un formulaire adaptatif](#enableadobsignforanadaptiveform)

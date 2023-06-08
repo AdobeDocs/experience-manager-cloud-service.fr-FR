@@ -3,11 +3,10 @@ title: Administration d’instances de workflow
 description: Découvrez comment administrer des instances de workflow
 feature: Administering
 role: Admin
-exl-id: d2adb5e8-3f0e-4a3b-b7d0-dbbc5450e45f
-source-git-commit: 0a87842923298be1a801a85519ac85fae5ef7933
+source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
 workflow-type: tm+mt
-source-wordcount: '1165'
-ht-degree: 90%
+source-wordcount: '1281'
+ht-degree: 73%
 
 ---
 
@@ -27,10 +26,19 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 ## Suivi du statut des instances de workflow {#monitoring-the-status-of-workflow-instances}
 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
-1. Sélectionnez **Instances** pour afficher la liste des instances de workflow en cours.
+1. Sélectionner **Instances** pour afficher la liste des instances de workflow en cours d’exécution.
+1. Sur le rail supérieur, dans le coin droit, les instances de workflow affichent **Exécuter des workflows**, **État**, et **Détails**.
+1. **Exécuter des workflows** indique le nombre de workflows en cours d’exécution et leur état. par exemple, dans les images données, sont affichés le nombre de **Exécuter des workflows** et le **État** de l’instance AEM.
+   ![status-health](/help/sites-cloud/administering/assets/status-healthy.png)
+   ![statut-malsain](/help/sites-cloud/administering/assets/status-unhealthy.png)
+1. Pour **Détails de l’état** des instances de workflow, cliquez sur **Détails**, pour afficher la variable **nombre d’instances de workflows en cours d’exécution**, **instances de workflow terminées**, **instances de workflow annulées**, **instances de workflow en échec**, etc. par exemple, ci-dessous, les images données qui affichent **Détails de l’état** avec **État : Santé** et **État : Malsain**.
+   ![status-details-health](/help/sites-cloud/administering/assets/status-details-healthy.png)
 
-   ![wf-97](/help/sites-cloud/administering/assets/wf-97.png)
+   ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
+   >[!NOTE]
+   >
+   > Pour maintenir l’instance de workflow en bonne santé, suivez les bonnes pratiques à l’adresse [purge régulière des instances de workflow](#regular-purging-of-workflow-instances) ou [bonnes pratiques relatives aux workflows](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-best-practices.html?lang=en).
 
 ## Rechercher des instances de workflow {#search-workflow-instances}
 
@@ -45,7 +53,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    * Modèle de workflow : sélectionnez un modèle de workflow
    * Cessionnaire : sélectionnez un cessionnaire de workflow
    * Type : tâche, élément de workflow ou échec de workflow
-   * État de la tâche : Active, Complète ou Terminée
+   * Statut de la tâche : active, complète ou terminée
    * Où j’en suis : Propriétaire ET cessionnaire, Propriétaire uniquement, Cessionnaire uniquement
    * Date de début : date de début avant ou après une date spécifiée
    * Date de fin : date de fin avant ou après une date spécifiée
@@ -66,7 +74,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    >[!NOTE]
    >
    >
-   >Pour arrêter ou abandonner un workflow, celui-ci doit être en attente d’une intervention de l’utilisateur ou utilisatrice, par exemple dans une étape de participant ou participante. Toute tentative d’abandon d’un workflow en cours d’exécution de traitements (threads actifs en cours d’exécution) peut ne pas produire les résultats escomptés.
+   >Pour interrompre ou interrompre un workflow, celui-ci doit être en attente d’une intervention de l’utilisateur, par exemple dans une étape de participant. Toute tentative d’abandon d’un workflow en cours d’exécution de traitements (threads actifs en cours d’exécution) peut ne pas produire les résultats escomptés.
 
 
 ## Affichage des workflows archivés {#viewing-archived-workflows}
@@ -75,14 +83,15 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 
 1. Sélectionnez **Archiver** pour afficher la liste des instances de workflow qui se sont terminées avec succès.
 
-   ![wf-98](/help/sites-cloud/administering/assets/wf-98.png)
+   ![archived-instances](/help/sites-cloud/administering/assets/archived-instances.png)
 
    >[!NOTE]
+   >
+   >
    >L’état d’abandon est considéré comme une interruption réussie, car il se produit suite à une action de l’utilisateur ; par exemple :
    >
    >* l’utilisation de la fonction **Arrêter** action
-   >* Lorsqu’une page, qui est soumise à un workflow, est supprimée (de force), le workflow est arrêté.
-
+   >* lorsqu’une page, soumise à un workflow, est supprimée (de force), le workflow est arrêté.
 
 
 1. Sélectionnez un élément spécifique, puis **Ouvrir l’historique** pour afficher plus de détails :
@@ -95,14 +104,14 @@ Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous perme
 
 * **Détails de l’échec**
 Ouvre une fenêtre pour afficher le 
-**Message d’échec**, l’**Étape** et la **Pile des échecs**.
+**Message d’échec**, **Step et **Pile des échecs**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.
 
 * **Relancer l’étape** Exécute à nouveau l’instance du composant d’étape de test. Utilisez la commande Relancer l’étape après avoir corrigé la cause de l’erreur initiale. Par exemple, relancez l’étape après avoir corrigé un bogue dans le script que l’étape de processus exécute.
 * **Arrêter** Arrêtez le workflow si l’erreur a provoqué une situation irrémédiable pour le workflow. Par exemple, le workflow peut se baser sur des conditions environnementales comme des informations figurant dans le référentiel qui ne sont plus valides pour l’instance de workflow.
-* **Arrêter et réessayer** Similaire à **Arrêter**, à ceci près qu’une nouvelle instance de workflow est lancée à l’aide de la charge utile, du titre et de la description d’origine.
+* **Arrêt et reprise** similaire à **Arrêter** mais qu’une nouvelle instance de workflow est lancée à l’aide de la charge utile, du titre et de la description d’origine.
 
 Pour examiner les échecs, puis reprendre ou arrêter le workflow par la suite, utilisez les étapes suivantes :
 
@@ -111,15 +120,15 @@ Pour examiner les échecs, puis reprendre ou arrêter le workflow par la suite, 
 1. Sélectionnez **Échecs** pour afficher la liste des instances de workflow qui ne se sont pas terminées avec succès.
 1. Sélectionnez un élément spécifique, puis l’action appropriée :
 
-   ![wf-47](/help/sites-cloud/administering/assets/wf-47.png)
+![workflow-failure](/help/sites-cloud/administering/assets/workflow-failure.png)
 
 ## Purge régulière des instances de workflow {#regular-purging-of-workflow-instances}
 
 Réduire le nombre d’instances de workflow améliore les performances du moteur de workflows. Vous pouvez donc purger régulièrement les instances de workflow terminées ou en cours d’exécution du référentiel.
 
-Configurez la **configuration de la purge du workflow Adobe Granite** pour purger les instances de workflow en fonction de leur âge et de leur statut. Vous pouvez également purger les instances de workflow de tous les modèles ou d’un modèle spécifique.
+Configurez la **configuration de la purge du workflow Adobe Granite** pour purger les instances de workflows en fonction de leur âge et de leur statut. Vous pouvez également purger les instances de workflow de tous les modèles ou d’un modèle spécifique.
 
-Vous pouvez également créer plusieurs configurations du service pour purger les instances de workflow qui répondent à différents critères. Par exemple, créez une configuration qui purge les instances d’un modèle de workflow particulier lorsqu’elles s’exécutent beaucoup plus longtemps que prévu. Créez une autre configuration qui purge tous les workflows terminés après un certain nombre de jours afin de minimiser la taille du référentiel.
+Vous pouvez également créer plusieurs configurations du service pour purger les instances de workflow qui répondent à différents critères. Par exemple, créez une configuration qui purge les instances d’un modèle de workflow particulier lorsqu’elles s’exécutent beaucoup plus longtemps que prévu. Créez une autre configuration qui purge tous les workflows terminés après quelques jours afin de minimiser la taille du référentiel.
 
 Pour configurer le service, vous pouvez configurer les fichiers de configuration OSGi (voir [Fichiers de configuration OSGi](/help/implementing/deploying/configuring-osgi.md)). Le tableau suivant décrit les propriétés dont vous avez besoin pour l’une ou l’autre de ces méthodes.
 
@@ -177,7 +186,7 @@ Vous pouvez définir la taille maximale de la boîte de réception en configuran
 
 ## Utilisation de variables de workflow pour les banques de données détenues par le client {#using-workflow-variables-customer-datastore}
 
-Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées et les données définies par l’utilisateur dans votre propre enregistrement géré au lieu de celui fourni par Adobe. Ces sections décrivent comment configurer ces variables pour un enregistrement externe.
+Les données traitées par les workflows sont stockées dans l’enregistrement fourni par Adobe (JCR). Par nature, ces données peuvent être sensibles. Vous pouvez enregistrer toutes les métadonnées/données définies par l’utilisateur dans votre propre stockage géré au lieu d’Adobe le stockage fourni. Ces sections décrivent comment configurer ces variables pour un enregistrement externe.
 
 ### Définition du modèle pour utiliser l’enregistrement externe des métadonnées {#set-model-for-external-storage}
 
