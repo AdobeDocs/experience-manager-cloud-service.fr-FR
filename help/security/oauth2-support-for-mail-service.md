@@ -2,10 +2,10 @@
 title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 4997c506e1cd467255fe11cb596fb64d74a511af
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 100%
+source-wordcount: '695'
+ht-degree: 99%
 
 ---
 
@@ -23,7 +23,7 @@ Pour plus d’informations sur le service de messagerie d’AEM as a Cloud Servi
 1. Recherchez le **répertoire Azure principal** dans la barre de recherche et cliquez sur le résultat. Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Cliquez sur **Enregistrement de l’application** - **Nouvel enregistrement**
 
-   ![](assets/oauth-outlook1.png)
+   ![Démarrage du processus d’enregistrement de l’application](assets/oauth-outlook1.png)
 
 1. Renseignez les informations selon vos besoins, puis cliquez sur **Enregistrer**
 1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations API**
@@ -135,8 +135,7 @@ Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider le
    * `email`
    * `profile`
 1. Créez un fichier de propriétés OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-sous 
-`/apps/<my-project>/osgiconfig/config` avec la syntaxe suivante :
+sous `/apps/<my-project>/osgiconfig/config` avec la syntaxe suivante :
 
    ```
    {

@@ -2,9 +2,9 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 91a13f8b23136298e0ccf494e51fccf94fa1e0b4
+source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1341'
 ht-degree: 46%
 
 ---
@@ -53,7 +53,7 @@ Vous trouverez des informations plus détaillées sur la gestion de la publicati
 
 Vous pouvez déclencher une réplication d’arborescence en choisissant **Outils – Workflow – Modèles** et en copiant le modèle de workflow prêt à l’emploi **Publier l’arborescence de contenu**, comme illustré ci-dessous :
 
-![](/help/operations/assets/publishcontenttreeworkflow.png)
+![La carte de processus Publier l’arborescence de contenu](/help/operations/assets/publishcontenttreeworkflow.png)
 
 Ne modifiez pas ou n’appelez pas le modèle d’origine. Assurez-vous plutôt de copier le modèle, puis de modifier ou d’appeler cette copie.
 
