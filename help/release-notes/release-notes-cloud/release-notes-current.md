@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
 source-wordcount: '1049'
 ht-degree: 41%
@@ -76,10 +76,6 @@ Consultez la vidéo Aperçu de la version d’avril 2023 pour obtenir un résum�
 
 ### Fonctionnalités de la version préliminaire de [!DNL Forms] {#prerelease-features-forms}
 
-* [Amélioration de l’intégration et de la conformité de Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms s’intègre désormais à Adobe Acrobat Sign for Government, offrant un niveau avancé de conformité et de sécurité pour les signatures électroniques avec des envois de formulaires adaptatifs pour les comptes associés aux administrations (ministères et agences gouvernementales).
-
-  L’intégration à Adobe Acrobat Sign for Government permet à nos partenaires et clients gouvernementaux d’utiliser des signatures électroniques dans Adaptive Forms pour certains secteurs d’activité les plus critiques et les plus sensibles. Cette couche supplémentaire de sécurité garantit que toutes les signatures électroniques sont entièrement conformes à la conformité FedRAMP Modérate, offrant ainsi à nos clients gouvernementaux une certaine tranquillité d’esprit.
-
 * [Forms adaptatif dans AEM éditeur de page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Vous pouvez désormais utiliser AEM éditeur de page pour créer et ajouter rapidement plusieurs formulaires aux pages de vos sites. Cette fonctionnalité permet aux auteurs de contenu de créer des expériences de capture de données transparentes dans les pages Sites à l’aide de la puissance des composants de formulaires adaptatifs, notamment le comportement dynamique, les validations, l’intégration de données, la génération d’un document d’enregistrement et l’automatisation des processus d’entreprise. Vous pouvez :
 
    * Créez un formulaire adaptatif en faisant glisser les composants de formulaire vers le composant de conteneur de Forms adaptatif dans l’éditeur AEM Sites ou les fragments d’expérience.
@@ -87,6 +83,10 @@ Consultez la vidéo Aperçu de la version d’avril 2023 pour obtenir un résum�
    * Ajoutez plusieurs formulaires à une page Sites, en rationalisant l’expérience utilisateur et en offrant une plus grande flexibilité.
 
      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
+
+* [Amélioration de l’intégration et de la conformité de Adobe Acrobat Sign](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms s’intègre désormais à Adobe Acrobat Sign for Government, offrant un niveau avancé de conformité et de sécurité pour les signatures électroniques avec des envois de formulaires adaptatifs pour les comptes associés aux administrations (ministères et agences gouvernementales).
+
+  L’intégration à Adobe Acrobat Sign for Government permet à nos partenaires et clients gouvernementaux d’utiliser des signatures électroniques dans Adaptive Forms pour certains secteurs d’activité les plus critiques et les plus sensibles. Cette couche supplémentaire de sécurité garantit que toutes les signatures électroniques sont entièrement conformes à la conformité FedRAMP Modérate, offrant ainsi à nos clients gouvernementaux une certaine tranquillité d’esprit.
 
 * Amélioration de la gestion des erreurs avec les gestionnaires d’erreurs personnalisés dans l’éditeur de règles : Vous pouvez désormais appeler une fonction personnalisée (à l’aide de la bibliothèque cliente) en réponse à une erreur renvoyée par un service externe et fournir une réponse personnalisée aux utilisateurs finaux ou prendre des mesures spécifiques pour les erreurs renvoyées par un service. Par exemple, vous pouvez appeler un workflow personnalisé dans le serveur principal pour des codes d’erreur spécifiques ou informer le client que le service est hors service.
 

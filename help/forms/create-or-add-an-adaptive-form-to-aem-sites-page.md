@@ -4,9 +4,9 @@ description: Découvrez comment créer ou ajouter facilement un formulaire adapt
 feature: Adaptive Forms
 hide: true
 hidefromtoc: true
-source-git-commit: d9c5934c03b9c5aa91bafa09569d441fc7868937
+source-git-commit: 3209b3098544275bd31ee19842bef0eb2e7a29d8
 workflow-type: tm+mt
-source-wordcount: '3061'
+source-wordcount: '3073'
 ht-degree: 1%
 
 ---
@@ -136,14 +136,15 @@ Pour activer [!UICONTROL Conteneur Forms adaptatif] dans la stratégie du modèl
 
 ## Créer un formulaire adaptatif {#create-an-adaptive-form-in-sites-editor-or-experience-fragment}
 
-Vous pouvez créer entièrement un nouveau formulaire, en le adaptant spécifiquement à vos besoins et à vos préférences de conception, directement dans une page de sites AEM ou dans un fragment d’expérience. Pour les formulaires à usage unique, il est recommandé d’effectuer une création directe sur une page de sites AEM, tandis que les fragments d’expérience sont idéaux pour les formulaires qui doivent être réutilisés sur plusieurs pages de votre site web.
+Vous pouvez créer entièrement un nouveau formulaire, en le adaptant spécifiquement à vos besoins et préférences de conception, directement dans une page AEM Sites ou dans un fragment d’expérience. Pour les formulaires à usage unique, il est recommandé d’effectuer une création directe sur une page AEM Sites, tandis que les fragments d’expérience sont idéaux pour les formulaires qui doivent être réutilisés sur plusieurs pages de votre site web.
 
 * [Création d’un formulaire dans une page AEM Sites](#create-an-adaptive-form-in-sites-editor)
 * [Création d’un formulaire dans un fragment d’expérience](#create-an-adaptive-form-in-experience-fragment)
+* [Convertir un formulaire adaptatif dans une page AEM Sites en fragment d’expérience](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)
 
 ### Création d’un formulaire dans une page AEM Sites {#create-an-adaptive-form-in-sites-editor}
 
-Vous pouvez utiliser le composant Conteneur de formulaires adaptatifs dans l’éditeur AEM Sites pour créer un formulaire personnalisé. Le composant vous permet de créer un formulaire en le faisant glisser et en le déposant. Les composants de formulaire sont basés sur les composants principaux. Vous pouvez facilement les personnaliser en fonction des besoins de votre entreprise.
+Vous pouvez utiliser le composant Conteneur de formulaires adaptatifs dans AEM éditeur de page pour créer un formulaire personnalisé. Le composant vous permet de créer un formulaire en le faisant glisser et en le déposant. Les composants de formulaire sont basés sur les composants principaux. Vous pouvez facilement les personnaliser en fonction des besoins de votre entreprise.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
@@ -169,7 +170,7 @@ Pour créer un formulaire adaptatif dans un fragment d’expérience :
 
 Ensuite, vous [Définition de l’action Envoyer](#configure-submit-action-for-form) et propriétés avancées.
 
-### Convertir un formulaire adaptatif dans une page AEM Sites en fragment d’expérience
+### Convertir un formulaire adaptatif dans une page AEM Sites en fragment d’expérience {#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment}
 
 Vous pouvez convertir un formulaire adaptatif existant dans un éditeur de page de sites en fragment d’expérience afin de réutiliser le formulaire sur plusieurs pages ou sites.
 
