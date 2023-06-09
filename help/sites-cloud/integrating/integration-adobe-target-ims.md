@@ -2,9 +2,9 @@
 title: Configuration IMS à utiliser lors de l’intégration à Adobe Target
 description: En savoir plus sur la configuration IMS à utiliser lors de l’intégration à Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '863'
 ht-degree: 100%
 
 ---
@@ -72,9 +72,9 @@ Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Target 
 1. Tous les projets que vous avez s’affichent. Sélectionnez **Créer un projet** - L’emplacement et l’utilisation de celui-ci dépendent de :
 
    * Si vous n’avez pas encore de projet, l’option **Créer un projet** sera au centre, en bas.
-      ![Créer un projet - Premier projet](assets/integration-target-ims-02.png)
+     ![Créer un projet - Premier projet](assets/integration-target-ims-02.png)
    * Si vous disposez déjà de projets, ceux-ci sont répertoriés et l’option **Créer un projet** sera en haut à droite.
-      ![Créer un projet - Projets multiples](assets/integration-target-ims-03.png)
+     ![Créer un projet - Projets multiples](assets/integration-target-ims-03.png)
 
 
 1. Sélectionnez **Ajouter au projet**, puis **API** :
@@ -87,9 +87,9 @@ Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Target 
    >
    >Si vous êtes abonné à Adobe Target, mais que vous ne le voyez pas répertorié, cochez la case [Conditions préalables](#prerequisites).
 
-   ![](assets/integration-target-ims-12.png)
+   ![Sélectionnez Adobe Target](assets/integration-target-ims-12.png)
 
-1. **Chargement de votre clé publique**, puis, une fois l’opération terminée, passez à **Suivant** :
+1. **Chargez votre clé publique**, puis, une fois l’opération terminée, choisissez **Suivant** :
 
    ![Charger votre clé publique](assets/integration-target-ims-13.png)
 
@@ -105,7 +105,6 @@ Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Target 
    >
    >* Adobe Target Standard - Seul l’**espace de travail par défaut** est disponible.
    >* Adobe Target Premium - Tous les espaces de travail disponibles sont répertoriés, comme illustré ci-dessous.
-
 
    ![Sélection des profils de produit et enregistrement de l’API configurée](assets/integration-target-ims-16.png)
 
@@ -141,7 +140,7 @@ Dans la console Projets de la Developer Console Adobe, vous pouvez voir la list
 Sélectionnez **Affichage** (à droite d’une entrée de projet spécifique) pour afficher des détails supplémentaires sur la configuration. Ces informations comprennent les éléments suivants :
 
 * Présentation du projet
-* Statistiques
+* Insights
 * Informations d’identification
    * Compte de service (JWT)
       * Détails sur l’identification
@@ -185,7 +184,6 @@ Pour vous assurer que la configuration fonctionne comme prévu :
    Par exemple :
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. Sélectionnez votre configuration.
 1. Sélectionnez **Contrôle de l’intégrité** dans la barre d’outils, puis **Vérifier**.
