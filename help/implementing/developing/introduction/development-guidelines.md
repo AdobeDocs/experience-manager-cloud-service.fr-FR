@@ -2,10 +2,10 @@
 title: Conseils de développement sur AEM as a Cloud Service
 description: Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 5a8d66c2ca2bed664d127579a8fdbdf3aa45c910
+source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 99%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -71,9 +71,11 @@ En plus de fournir des délais d’expiration, une gestion appropriée de ces d�
 
 AEM as a Cloud Service ne prend en charge que l’interface utilisateur tactile pour le code client tiers. L’interface utilisateur classique n’est pas disponible pour la personnalisation.
 
-## Éviter les fichiers binaires natifs {#avoid-native-binaries}
+## Pas de fichiers binaires natifs ni de bibliothèques natives {#avoid-native-binaries}
 
-Le code ne pourra pas télécharger de fichiers binaires au moment de l’exécution ni les modifier. Par exemple, il ne sera pas en mesure de décompresser les fichiers `jar` ou `tar`.
+Les binaires et bibliothèques natifs ne doivent pas être déployés sur ou installés dans des environnements cloud.
+
+En outre, le code ne doit pas tenter de télécharger des fichiers binaires natifs ou des extensions java natives (par exemple, JNI) au moment de l’exécution.
 
 ## Pas de fichiers binaires de diffusion via AEM as a Cloud Service {#no-streaming-binaries}
 
@@ -130,9 +132,9 @@ Des niveaux de journal distincts peuvent être définis pour les différents env
 
 | Environnement | Emplacement de configuration OSGi par mode d’exécution | `org.apache.sling.commons.log.level` valeur de propriété |
 | - | - | - |
-|  Développement | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
-|  Étape | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ATTENTION |
-|  Production | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERREUR |
+| Développement | /apps/example/config/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | DEBUG |
+| Évaluation | /apps/example/config.stage/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | WARN |
+| Production | /apps/example/config.prod/org.apache.sling.commons.log.LogManager.factory.config~example.cfg.json | ERROR |
 
 Une ligne dans le fichier de débogage commence généralement par DEBUG, puis fournit le niveau de journalisation, l’action d’installation et le message du journal. Par exemple :
 
