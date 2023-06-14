@@ -8,10 +8,10 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: b104c7ddd102b3600384bf7472b166131e334c35
+source-git-commit: 663dae5785c13d74524054287869310d1fce5bd6
 workflow-type: tm+mt
-source-wordcount: '4064'
-ht-degree: 98%
+source-wordcount: '4079'
+ht-degree: 97%
 
 ---
 
@@ -73,6 +73,7 @@ ht-degree: 98%
    + Notes de mise à jour de la maintenance d’AEMaaCS {#maintenance}
       + [Notes de mise à jour de la maintenance actuelle](/help/release-notes/maintenance/latest.md)
       + 2023 {#2023}
+         + [Notes de mise à jour de la maintenance 2023.4.0](/help/release-notes/maintenance/2023/2023.4.0.md)
          + [Notes de mise à jour de la maintenance 2023.2.0](/help/release-notes/maintenance/2023/2023.2.0.md)
          + [Notes de mise à jour de la maintenance 2023.1.0](/help/release-notes/maintenance/2023/2023.1.0.md)
    + Notes de mise à jour de Cloud Manager {#cloud-manager}
@@ -546,6 +547,7 @@ ht-degree: 98%
             + [Création de thèmes pour un formulaire adaptatif - Composants principaux](/help/forms/using-themes-in-core-components.md)
             + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
             + [Création d’une Forms adaptative - Composants principaux dans une page AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Utilisation de la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configuration d’une page de redirection ou d’un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
       + Création d’un formulaire adaptatif - Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}

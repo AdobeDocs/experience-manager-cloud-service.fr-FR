@@ -3,10 +3,10 @@ title: Déploiement sur AEM as a Cloud Service
 description: Déploiement sur AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: a70bd2ffddcfb729812620743ead7f57860457f3
+source-git-commit: 3dd65a9bd67a0a029483d580dd819fb7ac2a10be
 workflow-type: tm+mt
-source-wordcount: '3541'
-ht-degree: 89%
+source-wordcount: '3542'
+ht-degree: 88%
 
 ---
 
@@ -115,7 +115,7 @@ Il est possible de limiter l’installation de contenu modifiable à la créatio
 >[!NOTE]
 >Les packages de contenu sont déployés sur tous les types d’environnements (développement, évaluation et production). Il n’est pas possible de limiter le déploiement à un environnement spécifique. Cette limitation est en place pour garantir l’option d’une série de tests d’exécution automatisée. Le contenu spécifique à un environnement nécessite une installation manuelle via le [Gestionnaire de package.](/help/implementing/developing/tools/package-manager.md)
 
-En outre, il n’existe aucun mécanisme permettant d’annuler les modifications du package de contenu modifiable après leur application. Si les clients détectent un problème, ils peuvent choisir de le résoudre dans la prochaine version de leur code ou, en dernier recours, restaurer l’ensemble du système à un moment donné avant le déploiement.
+En outre, il n’existe aucun mécanisme permettant de restaurer les modifications du module de contenu modifiable après leur application. Si les clients détectent un problème, ils peuvent choisir de le résoudre dans la prochaine version de leur code ou, en dernier recours, restaurer l’ensemble du système à un moment donné avant le déploiement.
 
 Les packages tiers inclus doivent être validés comme compatibles avec AEM as a Cloud Service, sans quoi leur inclusion entraînera un échec du déploiement.
 
@@ -130,9 +130,9 @@ Dans les cas suivants, il est préférable d’utiliser l’approche du codage m
 * Création/suppression d’utilisateurs
 * Ajout de listes de contrôle d’accès
 
-   >[!NOTE]
-   >
-   >La définition des listes de contrôle d’accès requiert que les structures de nœud soient déjà présentes. Par conséquent, il peut être nécessaire de créer au préalable des instructions de chemin.
+  >[!NOTE]
+  >
+  >La définition des listes de contrôle d’accès requiert que les structures de nœud soient déjà présentes. Par conséquent, il peut être nécessaire de créer au préalable des instructions de chemin.
 
 * Ajout d’un chemin (par exemple, pour les structures de dossiers racine)
 * Ajout de CND (définitions de types de nœuds)

@@ -2,10 +2,10 @@
 title: Configuration de l’équipe de développement des grands comptes
 description: Découvrez comment configurer et mettre à l’échelle votre équipe de développement d’entreprise et comment AEM as a Cloud Service peut prendre en charge votre processus de développement.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: a31c3693c9b2af9bd7f9d7f1f6fb0a61a4411df0
+source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 53%
+source-wordcount: '1445'
+ht-degree: 51%
 
 ---
 
@@ -98,7 +98,7 @@ Avec le référentiel git de Cloud Manager et le pipeline de production, le code
 
 En revanche, en l’absence d’un tel système, chaque équipe pouvant effectuer un déploiement distinct, il est possible qu’une mise à jour d’une seule équipe entraîne des problèmes de stabilité en production. En outre, il est nécessaire de prévoir une coordination et des temps d’arrêt planifiés pour déployer les mises à jour. Avec un nombre croissant d’équipes, l’effort de coordination deviendra beaucoup plus complexe et rapidement ingérable.
 
-Si un problème est détecté au niveau des points de contrôle qualité, la production ne sera pas affectée, et le problème pourra être détecté et corrigé sans que le personnel Adobe n’ait à intervenir. Sans Cloud Service et sans avoir à toujours tester l’ensemble du déploiement, les déploiements partiels peuvent entraîner des pannes qui nécessitent une demande de restauration ou même une restauration complète à partir d’une sauvegarde. Les tests partiels peuvent aussi entraîner d’autres problèmes qui devront être résolus ultérieurement, ce qui nécessitera à nouveau la coordination et l’assistance du personnel d’Adobe.
+Si un problème est détecté au niveau des points de contrôle qualité, la production ne sera pas affectée, et le problème pourra être détecté et corrigé sans que le personnel Adobe n’ait à intervenir. Sans Cloud Service et sans toujours tester l’ensemble du déploiement, les déploiements partiels peuvent entraîner des pannes nécessitant une demande de restauration ou même une restauration complète à partir d’une sauvegarde. Les tests partiels peuvent aussi entraîner d’autres problèmes qui devront être résolus ultérieurement, ce qui nécessitera à nouveau la coordination et l’assistance du personnel d’Adobe.
 
 >[!TIP]
 >

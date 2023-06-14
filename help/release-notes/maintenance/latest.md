@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 66c77dd90fb220993e113fb3c4cfbaec879c1dee
+source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 74%
+source-wordcount: '355'
+ht-degree: 37%
 
 ---
 
@@ -13,30 +13,47 @@ ht-degree: 74%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 12142 {#release-12142}
+## Version 12255 {#release-12255}
 
-Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 12142, publiée publiquement le 31 mai 2023. Cette mise à jour de maintenance est une mise à jour de la version de maintenance 11983 précédente.
+Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 12255, publiée publiquement le 13 juin 2023. Cette mise à jour de maintenance est une mise à jour de la version de maintenance 12142 précédente.
 
 L’activation des fonctionnalités de cette version de maintenance vous fournira l’ensemble des fonctionnalités. Consultez les [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour plus d’informations.
 
-### Améliorations {#enhancements-12142}
+### Améliorations {#enhancements-12255}
 
 Aucun.
 
-### Problèmes connus {#known-issues-12142}
+### Problèmes connus {#known-issues-12255}
 
-Aucun.
+- ASSETS-25729 - Le menu de sélecteur d’affichage est désactivé.
+- ASSETS-25728 - L’option Retraiter les ressources n’est pas disponible dans la vue de recherche
 
-### Problèmes résolus {#fixed-issues-12142}
+### Problèmes résolus {#fixed-issues-12255}
 
-- SITES-13636 - Correction d’un problème en raison duquel il manquait des dépendances clientlib de l’image et de la bibliothèque cliente du site de carrousel.
-- SITES-13475 - Correction d’un problème de saut de compatibilité descendante pour PanelContainer.js dans 2.22.10 version des composants principaux.
+- Diverses mises à jour liées à l’accessibilité
+- ASSETS-15116 - Option &quot;Aller à l’emplacement&quot; disponible dans la vue de recherche Assets
+- ASSETS-17453 - (Dynamic Media) Impossible de sélectionner une miniature personnalisée pour les vidéos
+- ASSETS-19279 - Archive de téléchargement des ressources pour les fichiers volumineux
+- ASSETS-19544 - Dernière modification par l’utilisateur pour les mises à jour de ressources
+- ASSETS-20146 - (IU tactile) Rapports sur les téléchargements de ressources Échec en raison des erreurs de validation s’affichent toujours en haut de la page de liste pour les rapports.
+- ASSETS-21056 - Optimisation des performances de référence des ressources pour réduire les écritures
+- ASSETS-21909 - Impossible d’afficher la vidéo de recadrage intelligent lorsque vtt ne parvient pas à télécharger
+- ASSETS-22261 - La structure de dossiers des téléchargements Linkshare est incohérente avec les téléchargements de l’interface utilisateur Assets
+- ASSETS-22550 - Le panneau Filtre de recherche s’ouvre désormais par défaut.
+- ASSETS-22920 - L’annulation de la publication du dossier à partir de Brand Portal ne marque pas les ressources dans comme non publiées.
+- ASSETS-22922 - Les paramètres prédéfinis de visionneuse désactivés s’affichent dans le composant Dynamic Media
+- ASSETS-23461 - Publication rapide Brand Portal à partir de la vue de recherche Ressources
+- ASSETS-23466 - La gestion des liens inaccessibles de l’InDesign Server ne parvient pas à résoudre les liens AAL contenant des espaces
+- ASSETS-23469 - Les filtres de ressources par défaut entrent en conflit avec les filtres personnalisés
+- ASSETS-23981 - Fonction de tri pour les titres qui ne fonctionnent pas dans les liens de collection
+- ASSETS-24723 - Les ressources publiées ont été retraitées sans intervention de l’utilisateur.
+- GRANITE-45385 - Migration de l’activation de l’arborescence pour utiliser la tâche sling au lieu du workflow
 
-### Technologies intégrées {#embedded-tech-12142}
+### Technologies intégrées {#embedded-tech-12255}
 
 | Technologie | Version | Lien |
 |---|---|---|
 | AEM OAK | 1.50-T20230405052634-f9df4aa | [API Oak 1.50.0](https://www.javadoc.io/doc/org.apache.jackrabbit/oak-api/1.50.0/index.html) |
 | API SLING AEM | Version 2.27.0 | [API Apache Sling 2.27.0](https://www.javadoc.io/doc/org.apache.sling/org.apache.sling.api/latest/index.html) |
 | AEM HTL | Version 1.4.20-1.4.0 | [Spécification du modèle de langage HTML](https://github.com/adobe/htl-spec) |
-| Composants principaux d’AEM | Version 2.22.12 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
+| Composants principaux d’AEM | Version 2.23.0 | [Composants principaux de la gestion de contenu web d’AEM](https://github.com/adobe/aem-core-wcm-components) |
