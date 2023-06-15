@@ -2,10 +2,10 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: ecc15501b6187380c2039afdf68cbef909c54721
+source-git-commit: e5142052423abee7a2e2ed64affb2b04a93bf0d1
 workflow-type: tm+mt
-source-wordcount: '2302'
-ht-degree: 78%
+source-wordcount: '2336'
+ht-degree: 77%
 
 ---
 
@@ -47,7 +47,7 @@ Les fonctionnalités de chaque environnement dépendent des solutions activées 
 
    * L’option **Ajouter un environnement** est également disponible dans l’onglet **Environnements**.
 
-      ![Onglet Environnements](assets/environments-tab.png)
+     ![Onglet Environnements](assets/environments-tab.png)
 
    * L’option **Ajouter un environnement** peut être désactivée en raison d’un niveau d’autorisation insuffisant ou de ressources sous licence.
 
@@ -129,7 +129,7 @@ Vous pouvez utiliser la carte **Environnements** sur la page Aperçu pour accéd
 
    * Vous pouvez également cliquer sur le bouton **Tout afficher** dans la carte **Environnements** pour accéder directement à l’onglet **Environnements**.
 
-      ![Option Tout afficher](assets/environment-showall.png)
+     ![Option Tout afficher](assets/environment-showall.png)
 
 1. L’onglet **Environnements** ouvre et répertorie tous les environnements du programme.
 
@@ -231,12 +231,15 @@ L’option de suppression est également disponible dans l’onglet **Environnem
 >* Les environnements de production et d’évaluation créés dans un programme de production ne peuvent pas être supprimés.
 >* Les environnements de production et d’évaluation d’un programme Sandbox peuvent être supprimés.
 
-
 ## Gestion de l’accès {#managing-access}
 
 Sélectionnez **Gérer l’accès** depuis le menu représentant des points de suspension de l’environnement dans la carte **Environnements**. Vous pouvez accéder directement à l’instance d’auteur et gérer l’accès pour votre environnement.
 
 ![Option Gérer l’accès](assets/environ-access.png)
+
+>[!TIP]
+>
+>Voir le document [AEM équipe as a Cloud Service et profils de produits](/help/onboarding/aem-cs-team-product-profiles.md) pour découvrir comment AEM équipe as a Cloud Service et les profils de produits peuvent accorder et limiter l’accès à vos solutions d’Adobe sous licence.
 
 ## Accès à la Developer Console {#accessing-developer-console}
 
