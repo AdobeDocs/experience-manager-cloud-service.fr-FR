@@ -4,10 +4,10 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
 workflow-type: tm+mt
-source-wordcount: '3585'
-ht-degree: 94%
+source-wordcount: '3788'
+ht-degree: 89%
 
 ---
 
@@ -44,6 +44,37 @@ Les packages de contenu créés pour les applications AEM as a Cloud Service doi
 >N’essayez pas d’effectuer une nouvelle installation si une telle erreur s’affiche. L’installation se déroule correctement en arrière-plan. Si vous redémarrez l’installation, plusieurs processus d’importation simultanés peuvent provoquer des conflits.
 
 Pour plus d’informations sur la gestion des packages pour AEMaaCS, consultez le document [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md) dans le guide d’utilisation du déploiement.
+
+## Taille du module {#package-size}
+
+Adobe recommande de ne pas créer de packages volumineux. Cela permet d’éviter des problèmes de délai d’expiration lors du téléchargement et du téléchargement des modules.
+
+En règle générale, un package doit être transmis dans son intégralité dans un délai de 60 secondes. La formule suivante est fournie à titre de guide.
+
+```text
+MaxPackageSize (in MB) = ConnectionSpeed (in MB/s) * 60 s
+```
+
+Comme le trafic réseau est variable et qu&#39;il est toujours inférieur à la valeur théorique maximale annoncée, essayez d&#39;utiliser un outil de test de vitesse de connexion Internet en ligne.
+
+Les vitesses Internet sont presque toujours différentes pour les téléchargements et les téléchargements. En supposant que vous deviez télécharger et télécharger des modules, vous devez utiliser la valeur la plus faible (généralement la vitesse de chargement) dans votre calcul.
+
+### Exemple {#example}
+
+En utilisant un outil de test de vitesse Internet, je vois que ma vitesse de chargement actuelle est d&#39;environ 100 Mbit/s.
+
+```text
+100 Mbps = 12.5 MB/s
+12.5 MB/s * 60 s = 750 MB
+```
+
+Donc tous les packages que je crée doivent être inférieurs à 750 Mo.
+
+>[!NOTE]
+>
+>Les vitesses du réseau sont soumises aux conditions locales actuelles. Même avec un test de vitesse récent, votre débit réel peut varier.
+>
+>Par conséquent, la formule fournie est uniquement une directive et la taille maximale réelle du module recommandée peut varier.
 
 ## Gestionnaire de packages {#package-manager}
 
@@ -237,6 +268,10 @@ De nombreuses actions peuvent être entreprises sur un package.
 
 Il n’est pas obligatoire de concevoir immédiatement le package après lʼavoir créé. Un package non conçu ne contient aucun contenu et se compose uniquement des données du filtre et des autres métadonnées.
 
+>[!TIP]
+>
+>Pour éviter les dépassements de délai, Adobe recommande [de ne pas créer de packages volumineux.](#package-size)
+
 ### Concevoir un package {#building-a-package}
 
 Un package est souvent conçu au moment où vous [créez le package](#creating-a-new-package), mais vous pouvez y revenir ultérieurement pour concevoir ou reconcevoir le package. Cela peut s’avérer utile si le contenu du référentiel ou les filtres du package ont été modifiés.
@@ -248,6 +283,10 @@ Un package est souvent conçu au moment où vous [créez le package](#creating-a
 1. Cliquez sur **Concevoir**. Une boîte de dialogue vous demande de confirmer que vous souhaitez concevoir le package, car tout contenu existant du package sera remplacé.
 
 1. Cliquez sur **OK**. AEM crée le package et répertorie tout le contenu ajouté au package dans la liste des activités. Une fois l’opération terminée, AEM affiche un message de confirmation indiquant que le package a été conçu et (lorsque vous fermez la boîte de dialogue) met à jour les informations de la liste de packages.
+
+>[!TIP]
+>
+>Pour éviter les dépassements de délai, Adobe recommande [de ne pas créer de packages volumineux.](#package-size)
 
 ### Modifier un package {#edit-package}
 
@@ -313,6 +352,10 @@ Une fois un package créé, vous pouvez afficher son contenu.
 
 1. AEM télécharge le package sur votre ordinateur.
 
+>[!TIP]
+>
+>Pour éviter les dépassements de délai, Adobe recommande [de ne pas créer de packages volumineux.](#package-size)
+
 ### Chargement des packages à partir du système de fichiers {#uploading-packages-from-your-file-system}
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
@@ -331,6 +374,10 @@ Une fois un package créé, vous pouvez afficher son contenu.
 1. Cliquez sur **OK**, le package sélectionné est chargé et la liste des packages est mise à jour en conséquence.
 
 Le contenu du package existe désormais sur AEM, mais pour rendre le contenu disponible, veillez à [installer le package](#installing-packages).
+
+>[!TIP]
+>
+>Pour éviter les dépassements de délai, Adobe recommande [de ne pas créer de packages volumineux.](#package-size)
 
 ### Validation de packages {#validating-packages}
 
