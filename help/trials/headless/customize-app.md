@@ -4,10 +4,10 @@ description: Utilisez un exemple d’application React pour découvrir comment p
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: ac94981e477e1fe8b883460ed9be009b4c1c088d
+source-git-commit: 469ebc7c3cae6dbfc38077e841db3c61ca16c680
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 97%
+source-wordcount: '1038'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ Commencez dans l’éditeur de fragment de contenu avec l’exemple d’applicat
 
 1. Appuyez ou cliquez sur le bouton **Aperçu** en haut à droite de l’écran de l’éditeur.
 
-1. L’application de démonstration s’ouvre dans un nouvel onglet. L’application est pour la marque fictive de plein air WKND. Cliquez pour parcourir l’exemple de contenu.
+1. L’application de démonstration s’ouvre dans un nouvel onglet. L’application est pour la marque fictive de plein air WKND. Faites défiler la page vers le bas pour parcourir l’exemple de contenu.
 
 1. Revenez à l’onglet du navigateur de l’éditeur de fragments de contenu pour continuer.
 
