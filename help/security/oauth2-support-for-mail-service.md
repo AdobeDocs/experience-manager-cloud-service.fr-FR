@@ -2,10 +2,10 @@
 title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 57667c1dda50b2a6a4ac2fccc428f5ccb252563c
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 99%
+source-wordcount: '723'
+ht-degree: 95%
 
 ---
 
@@ -135,15 +135,15 @@ Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider le
    * `email`
    * `profile`
 1. Créez un fichier de propriétés OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-sous `/apps/<my-project>/osgiconfig/config` avec la syntaxe suivante :
+sous `/apps/<my-project>/osgiconfig/config` avec la syntaxe ci-dessous. Notez que les valeurs smtp.host et smtp.port reflètent la configuration de réseau avancée, comme décrit dans la section [Tutoriel sur le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
 
    ```
    {
-    "smtp.host": "<smtp hostname>"
+    "smtp.host": "$[env:AEM_PROXY_HOST;default=proxy.tunnel]",
     "smtp.user": "<user account that logged into get the oauth tokens>",
     "smtp.password": "value not used",
-    "smtp.port": 587,
-    "from.address": "<from address used for sending>"
+    "smtp.port": 30465,
+    "from.address": "<from address used for sending>",
     "smtp.ssl": false,
     "smtp.starttls": true,
     "smtp.requiretls": true,
