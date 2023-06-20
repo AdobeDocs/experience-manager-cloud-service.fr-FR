@@ -2,10 +2,10 @@
 title: Participation aux workflows
 description: Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1545'
-ht-degree: 65%
+source-wordcount: '1542'
+ht-degree: 64%
 
 ---
 
@@ -24,13 +24,13 @@ Les workflows incluent généralement des étapes qui nécessitent qu’une pers
 
 Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**), diverses alertes et/ou notifications s’affichent :
 
-* Votre [notification](/help/sites-cloud/authoring/getting-started/inbox.md) indicateur (barre d’outils) sera incrémenté :
+* Votre [notification](/help/sites-cloud/authoring/getting-started/inbox.md) Indicateur (barre d’outils) est incrémenté :
 
-   ![Barre d’outils Notification](/help/sites-cloud/authoring/assets/workflows-notifications.png)
+  ![Barre d’outils Notification](/help/sites-cloud/authoring/assets/workflows-notifications.png)
 
-* L’élément est répertorié dans votre [boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md) de notifications :
+* L’élément est répertorié dans votre notification. [Boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md):
 
-   ![Notifications dans la boîte de réception](/help/sites-cloud/authoring/assets/workflows-inbox.png)
+  ![Notifications dans la boîte de réception](/help/sites-cloud/authoring/assets/workflows-inbox.png)
 
 * Lorsque vous utilisez l’éditeur de page, la barre d’état affiche :
    * Le nom du ou des workflows appliqués à la page ; par exemple, Demande d’activation.
@@ -39,18 +39,18 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
       * utilisez les flèches gauche/droite pour parcourir les informations d’état des différents workflows.
       * cliquer/appuyer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le workflow que vous souhaitez afficher dans la barre d’état.
 
-   ![Page avec plusieurs workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
+  ![Page avec plusieurs workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
-   >[!NOTE]
-   >
-   >La barre d’état est uniquement visible pour les utilisateurs disposant de droits de workflow ; par exemple, les membres du groupe `workflow-users`.
-   >
-   >
-   >Les actions s’affichent lorsque l’utilisateur actuel est directement impliqué dans l’étape actuelle du workflow.
+  >[!NOTE]
+  >
+  >La barre d’état est uniquement visible pour les utilisateurs disposant de droits de workflow ; par exemple, les membres du groupe `workflow-users`.
+  >
+  >
+  >Les actions s’affichent lorsque l’utilisateur actuel est directement impliqué dans l’étape actuelle du workflow.
 
-* When **Chronologie** est ouvert pour la ressource. L’étape du workflow s’affiche. Lorsque vous cliquez/appuyez sur la bannière d’alerte, les actions disponibles s’affichent également :
+* When **Chronologie** est ouvert pour la ressource, l’étape du workflow s’affiche. Lorsque vous cliquez/appuyez sur la bannière d’alerte, les actions disponibles s’affichent également :
 
-   ![Workflow dans la chronologie](/help/sites-cloud/authoring/assets/workflows-timeline.png)
+  ![Workflow dans la chronologie](/help/sites-cloud/authoring/assets/workflows-timeline.png)
 
 ### Réalisation d’une étape de participant {#completing-a-participant-step}
 
@@ -219,19 +219,19 @@ Les détails du workflow sont affichés dans les onglets et les actions appropri
 
 * Onglet **ÉLÉMENT DE TRAVAIL** :
 
-   Onglet ![ÉLÉMENT DE TRAVAIL](/help/sites-cloud/authoring/assets/workflows-work-item.png)
+  Onglet ![ÉLÉMENT DE TRAVAIL](/help/sites-cloud/authoring/assets/workflows-work-item.png)
 
 * Onglet **INFORMATIONS DU WORKFLOW** :
 
-   Onglet ![WORKFLOW](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
+  Onglet ![WORKFLOW](/help/sites-cloud/authoring/assets/workflows-workflow-info.png)
 
-   Si des étapes de workflow ont été configurées pour le modèle, vous pouvez afficher la progression en fonction de ces éléments :<!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
+  Si des étapes de workflow ont été configurées pour le modèle, vous pouvez afficher la progression en fonction de ces éléments :<!--If [Workflow Stages](/help/sites-developing/workflows.md#workflow-stages) have been configured for the model, you can view the progress according to these:-->
 
-   ![Étapes de workflow](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
+  ![Étapes de workflow](/help/sites-cloud/authoring/assets/workflows-workflow-stages.png)
 
 * Onglet **COMMENTAIRES** :
 
-   ![Onglet COMMENTAIRES](/help/sites-cloud/authoring/assets/workflows-comments.png)
+  ![Onglet COMMENTAIRES](/help/sites-cloud/authoring/assets/workflows-comments.png)
 
 Vous pouvez ouvrir les détails de l’élément de travail à partir de :
 

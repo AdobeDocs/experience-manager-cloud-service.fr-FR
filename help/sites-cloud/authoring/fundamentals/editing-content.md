@@ -2,10 +2,10 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 81d58f25af8b023774ce8653154597d92a7ac70b
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '3019'
-ht-degree: 65%
+source-wordcount: '3004'
+ht-degree: 62%
 
 ---
 
@@ -42,51 +42,51 @@ La barre d&#39;outils permet d&#39;accéder à de nombreuses options. Selon votr
 
 * **Activer/désactiver le panneau latéral**
 
-   Cela ouvre/ferme le panneau latéral, qui contient la balise [Explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [Explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser), et [Arborescence de contenu](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
+  Cela ouvre/ferme le panneau latéral, qui contient la balise [Explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser), [Explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser), et [Arborescence de contenu](/help/sites-cloud/authoring/fundamentals/environment-tools.md#content-tree).
 
-   ![Bascule du panneau latéral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+  ![Bascule du panneau latéral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
 * **Informations sur la page**
 
-   Permet d’accéder au [Informations sur la page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) menu comprenant les détails de la page et les actions qui peuvent être entreprises sur la page, notamment l’affichage et la modification des informations de la page, l’affichage des propriétés de la page et la publication/annulation de la publication de la page.
+  Permet d’accéder au [Informations sur la page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) menu comprenant les détails de la page et les actions qui peuvent être entreprises sur la page, notamment l’affichage et la modification des informations de la page, l’affichage des propriétés de la page et la publication/annulation de la publication de la page.
 
-   ![Bouton Informations sur la page](/help/sites-cloud/authoring/assets/page-information-icon.png)
+  ![Bouton Informations sur la page](/help/sites-cloud/authoring/assets/page-information-icon.png)
 
 * **Emulateur**
 
-   Active/désactive la variable [barre d’outils de l’émulateur](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate), qui est utilisé pour émuler l’aspect de la page sur un autre appareil. Cette option est automatiquement basculée en mode de mise en page.
+  Active/désactive la variable [barre d’outils de l’émulateur](/help/sites-cloud/authoring/features/responsive-layout.md#selecting-a-device-to-emulate), qui est utilisé pour émuler l’aspect de la page sur un autre appareil. Cette option est automatiquement basculée en mode de mise en page.
 
-   ![Bouton Émulateur](/help/sites-cloud/authoring/assets/emulator.png)
+  ![Bouton Émulateur](/help/sites-cloud/authoring/assets/emulator.png)
 
 * **ContextHub**
 
-   Ouvre [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). Uniquement disponible en mode Aperçu.
+  Ouvre [ContextHub](/help/sites-cloud/authoring/personalization/contexthub.md). Uniquement disponible en mode Aperçu.
 
-   ![Bouton ContextHub](/help/sites-cloud/authoring/assets/context-hub.png)
+  ![Bouton ContextHub](/help/sites-cloud/authoring/assets/context-hub.png)
 
 * **Titre de la page**
 
-   C&#39;est purement informatif.
+  C&#39;est purement informatif.
 
-   ![Titre de la page](/help/sites-cloud/authoring/assets/page-title.png)
+  ![Titre de la page](/help/sites-cloud/authoring/assets/page-title.png)
 
 * **Sélecteur de mode**
 
-   Affiche le [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en cours et vous permet d’en sélectionner un autre, tel que Modifier, Disposition, Timewarp ou Ciblage.
+  Affiche le [mode](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) en cours et vous permet d’en sélectionner un autre, tel que Modifier, Disposition, Timewarp ou Ciblage.
 
-   ![Bouton Sélecteur de mode](/help/sites-cloud/authoring/assets/mode-selector.png)
+  ![Bouton Sélecteur de mode](/help/sites-cloud/authoring/assets/mode-selector.png)
 
 * **Aperçu**
 
-   Permet d’activer le [mode Aperçu](#preview-mode). Cette option affiche la page telle qu’elle apparaîtra une fois publiée.
+  Permet d’activer le [mode Aperçu](#preview-mode). Cette option affiche la page telle qu’elle apparaîtra une fois publiée.
 
-   ![Bouton Aperçu](/help/sites-cloud/authoring/assets/preview.png)
+  ![Bouton Aperçu](/help/sites-cloud/authoring/assets/preview.png)
 
 * **Annoter**
 
-   Permet d’ajouter des [annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) sur la page lors de la révision d’une page. Après la première annotation, l’icône prend la forme d’un nombre indiquant le nombre d’annotations sur la page.
+  Permet d’ajouter des [annotations](/help/sites-cloud/authoring/fundamentals/annotations.md) sur la page lors de la révision d’une page. Après la première annotation, l’icône prend la forme d’un nombre indiquant le nombre d’annotations sur la page.
 
-   ![Bouton Annotation](/help/sites-cloud/authoring/assets/annotations.png)
+  ![Bouton Annotation](/help/sites-cloud/authoring/assets/annotations.png)
 
 ### Notification de statut {#status-notification}
 
@@ -112,21 +112,21 @@ Si la page est soumise à plusieurs workflows, leur nombre est indiqué à droit
 
 ## Espace réservé du composant {#component-placeholder}
 
-L’espace réservé du composant est un indicateur qui indique où un composant sera positionné lorsque vous le déposez, au-dessus du composant que vous survolez actuellement.
+L’espace réservé du composant est un indicateur indiquant où est positionné un composant lorsque vous le déposez, au-dessus du composant que vous survolez actuellement.
 
 * Lors de l’ajout d’un nouveau composant à la page (en le faisant glisser depuis l’explorateur de composants) :
 
-   ![Espace réservé lors de l’ajout d’un nouveau composant à une page](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
+  ![Espace réservé lors de l’ajout d’un nouveau composant à une page](/help/sites-cloud/authoring/assets/editing-component-placeholder.png)
 
 * Lors du déplacement d’un composant existant :
 
-   ![Espace réservé lors du déplacement d’un composant existant sur une page](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
+  ![Espace réservé lors du déplacement d’un composant existant sur une page](/help/sites-cloud/authoring/assets/editing-component-placeholder-existing.png)
 
 ## Insertion d’un composant {#inserting-a-component}
 
 ### Insertion d’un composant depuis l’explorateur de composants {#inserting-a-component-from-the-components-browser}
 
-Vous pouvez ajouter un nouveau composant à l’aide de l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). L’[espace réservé du composant](#component-placeholder) indique où le composant va être positionné :
+Vous pouvez ajouter un nouveau composant à l’aide de l’option [explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Le [espace réservé du composant](#component-placeholder) affiche l’emplacement du composant :
 
 1. Assurez-vous que votre page est en mode [**Modifier**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Ouvrez l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
@@ -146,15 +146,15 @@ Vous pouvez ajouter un nouveau composant à l’aide de la case **Faire glisser 
 
    * Sélectionnez la **Insérer un composant** (+) à partir de la barre d’outils d’un composant existant ou de la fonction **Faire glisser des composants ici** de la boîte.
 
-      ![Insertion d’un composant](/help/sites-cloud/authoring/assets/editing-insert-component.png)
+     ![Insertion d’un composant](/help/sites-cloud/authoring/assets/editing-insert-component.png)
 
    * Si vous utilisez un ordinateur de bureau, vous pouvez double-cliquer sur la zone **Faire glisser les composants ici**.
 
    * La boîte de dialogue **Insérer un nouveau composant** s’affiche pour vous permettre de sélectionner le composant nécessaire :
 
-      ![Boîte de dialogue Insérer un nouveau composant](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
+     ![Boîte de dialogue Insérer un nouveau composant](/help/sites-cloud/authoring/assets/editing-insert-component-selection.png)
 
-1. Le composant sélectionné est alors ajouté au bas de la page. [Modifiez](#edit-content) le composant selon les besoins.
+1. Le composant sélectionné est ajouté au bas de la page. [Modifier](#edit-content) le composant selon les besoins.
 
 ### Insertion d’un composant à partir de l’Explorateur de ressources {#inserting-a-component-using-the-assets-browser}
 
@@ -166,7 +166,7 @@ Pour créer un composant en faisant glisser l’un des types de ressources ci-de
 
 1. Assurez-vous que votre page est en mode [**Modifier**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes).
 1. Ouvrez le [explorateur de ressources](/help/sites-cloud/authoring/fundamentals/environment-tools.md#assets-browser).
-1. Faites glisser la ressource vers la position requise. Le [espace réservé du composant](#component-placeholder) vous indique où le composant sera positionné.
+1. Faites glisser la ressource vers la position requise. Le [espace réservé du composant](#component-placeholder) vous indique l’emplacement du composant.
 
    Un composant, adapté au type de ressource, est créé à l’emplacement requis ; il contient la ressource sélectionnée.
 
@@ -184,83 +184,83 @@ Si, lors de l’exploration des ressources, vous estimez que vous devez apporter
 
 La sélection d’un composant ouvre la barre d’outils, qui permet d’accéder à diverses actions pouvant être réalisées sur le composant.
 
-Les actions disponibles pour l’utilisateur sont affichées comme il convient ; ces actions ne peuvent pas toutes être décrites ici.
+Les actions disponibles pour l’utilisateur sont affichées comme il convient ; toutes les actions ne peuvent pas être décrites ici.
 
 ![Barre d’outils des composants](/help/sites-cloud/authoring/assets/editing-component-toolbar.png)
 
 * **Modifier**
 
-   [En fonction du type de composant](/help/sites-cloud/authoring/fundamentals/components.md), vous pouvez [en modifier le contenu](#edit-content). Une barre d’outils est souvent disponible.
+  [Dépend du type de composant.](/help/sites-cloud/authoring/fundamentals/components.md), vous pouvez ainsi : [modifier le contenu du composant ;](#edit-content). Souvent, une barre d’outils est fournie.
 
-   ![Bouton Modifier](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
+  ![Bouton Modifier](/help/sites-cloud/authoring/assets/editing-component-toolbar-edit.png)
 
 * **Configurer**
 
-   [En fonction du type de composant](/help/sites-cloud/authoring/fundamentals/components.md), vous pouvez modifier et configurer ses propriétés. En général, une boîte de dialogue s’ouvre.
+  [Dépend du type de composant.](/help/sites-cloud/authoring/fundamentals/components.md), vous pouvez ainsi modifier et configurer les propriétés du composant. Souvent, une boîte de dialogue s’ouvre.
 
-   ![Bouton Configurer](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
+  ![Bouton Configurer](/help/sites-cloud/authoring/assets/editing-component-toolbar-configure.png)
 
 * **Copier**
 
-   Le composant est alors copié dans le Presse-papiers. Après l’action de collage, le composant d’origine reste.
+  Le composant est alors copié dans le Presse-papiers. Après l’action de collage, le composant d’origine reste.
 
-   ![Bouton Copier](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
+  ![Bouton Copier](/help/sites-cloud/authoring/assets/editing-component-toolbar-copy.png)
 
 * **Couper**
 
-   Le composant est alors copié dans le Presse-papiers. Après l’action de collage, le composant d’origine est supprimé.
+  Le composant est alors copié dans le Presse-papiers. Après l’action de collage, le composant d’origine est supprimé.
 
-   ![Bouton Couper](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
+  ![Bouton Couper](/help/sites-cloud/authoring/assets/editing-component-toolbar-cut.png)
 
 * **Supprimer**
 
-   Cela supprime le composant de la page avec votre confirmation.
+  Cela supprime le composant de la page avec votre confirmation.
 
-   ![Bouton Supprimer](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
+  ![Bouton Supprimer](/help/sites-cloud/authoring/assets/editing-component-toolbar-delete.png)
 
 * **Insérer le composant**
 
-   La boîte de dialogue s’ouvre alors pour [ajouter un nouveau composant](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  La boîte de dialogue s’ouvre alors pour [ajouter un nouveau composant](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![Bouton Insérer](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
+  ![Bouton Insérer](/help/sites-cloud/authoring/assets/editing-component-toolbar-insert.png)
 
 * **Coller**
 
-   Le composant est alors collé du Presse-papiers sur la page. Si l’original est conservé, cela dépend de l’utilisation de la copie ou de la coupure.
+  Le composant est alors collé du Presse-papiers sur la page. Si l’original est conservé, cela dépend de l’utilisation de la copie ou de la coupure.
 
    * Vous pouvez effectuer un collage sur la même page ou sur une autre.
    * L’élément collé est collé au-dessus de l’élément dans lequel vous sélectionnez l’action de collage.
    * L’action Pate ne s’affiche que si du contenu se trouve dans le Presse-papiers.
 
-   ![Bouton Coller](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
+  ![Bouton Coller](/help/sites-cloud/authoring/assets/editing-component-toolbar-paste.png)
 
-   >[!NOTE]
-   >
-   >Si vous effectuez un collage sur une autre page qui était déjà ouverte avant l’opération de couper/copier, vous devez actualiser la page pour afficher le contenu collé.
+  >[!NOTE]
+  >
+  >Si vous effectuez un collage sur une autre page qui était déjà ouverte avant l’opération de couper/copier, vous devez actualiser la page pour afficher le contenu collé.
 
 * **Groupe**
 
-   Vous pouvez ainsi sélectionner plusieurs composants à la fois. Vous pouvez obtenir le même résultat sur un ordinateur de bureau à l’aide d’une **Ctrl+Clic** ou **Commande + clic**.
+  Vous pouvez ainsi sélectionner plusieurs composants à la fois. Vous pouvez obtenir le même résultat sur un ordinateur de bureau à l’aide d’une **Ctrl+Clic** ou **Commande + clic**.
 
-   ![Bouton Groupe](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
+  ![Bouton Groupe](/help/sites-cloud/authoring/assets/editing-component-toolbar-group.png)
 
 * **Parent**
 
-   Permet de sélectionner le composant parent du composant sélectionné.
+  Permet de sélectionner le composant parent du composant sélectionné.
 
-   ![Bouton Parent](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
+  ![Bouton Parent](/help/sites-cloud/authoring/assets/editing-component-toolbar-parent.png)
 
 * **Mise en page**
 
-   Cela vous permet de modifier la variable [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas la fonction [Mode Mise en page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) pour la page entière.
+  Cela vous permet de modifier la variable [layout](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout) du composant sélectionné. Cela s’applique uniquement au composant sélectionné et n’active pas la fonction [Mode Mise en page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes) pour la page entière.
 
-   ![Bouton Mise en page](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
+  ![Bouton Mise en page](/help/sites-cloud/authoring/assets/editing-component-toolbar-layout.png)
 
 * **Convertir en variation de fragment d’expérience**
 
-   Permet de créer un [fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) à partir du composant sélectionné ou de l’ajouter à un fragment d’expérience existant.
+  Permet de créer un [fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) à partir du composant sélectionné ou de l’ajouter à un fragment d’expérience existant.
 
-   ![Bouton Convertir en variation de fragment d’expérience](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
+  ![Bouton Convertir en variation de fragment d’expérience](/help/sites-cloud/authoring/assets/editing-component-toolbar-xf.png)
 
 ## Modifier le contenu {#edit-content}
 
@@ -277,23 +277,23 @@ Les options de modification exactes dépendent du composant. Pour certains compo
 
 * Composant textuel
 
-   ![Barre d’outils du composant textuel](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
+  ![Barre d’outils du composant textuel](/help/sites-cloud/authoring/assets/editing-text-component-toolbar.png)
 
 * Composant d’image
 
-   ![Barre d’outils du composant d’image](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
+  ![Barre d’outils du composant d’image](/help/sites-cloud/authoring/assets/editing-image-component-toolbar.png)
 
-   >[!NOTE]
-   >
-   >L’édition ne fonctionne pas sur un composant d’image vide.
-   >
-   >Vous devez faire glisser ou charger une image (à l’aide de l’option Configurer) avant de commencer à la modifier.
+  >[!NOTE]
+  >
+  >L’édition ne fonctionne pas sur un composant d’image vide.
+  >
+  >Vous devez faire glisser ou charger une image (à l’aide de l’option Configurer) avant de commencer à la modifier.
 
 * Composant d’image - Plein écran
 
-   [Le passage en mode Plein écran](#edit-content-full-screen-mode) pour le composant d’image permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
+  [Le passage en mode Plein écran](#edit-content-full-screen-mode) pour le composant d’image permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
 
-   ![Mode Plein écran du composant d’image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
+  ![Mode Plein écran du composant d’image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
 * Les composants construits à partir de plusieurs composants de base vous demandent tout d’abord de confirmer à quel jeu d’options de modification vous souhaitez accéder :
 
@@ -377,15 +377,15 @@ Par exemple :
 
 * Annuler l’héritage
 
-   ![Bouton Annuler l’héritage](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
+  ![Bouton Annuler l’héritage](/help/sites-cloud/authoring/assets/editing-cancel-inheritance.png)
 
 * Réactiver l’héritage (si l’héritage est déjà annulé)
 
-   ![Bouton Réactiver l’héritage](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
+  ![Bouton Réactiver l’héritage](/help/sites-cloud/authoring/assets/editing-reenable-inheritance.png)
 
 * L’action de déploiement est également disponible dans le plan directeur ou la source Live Copy.
 
-   ![Bouton Déployer](/help/sites-cloud/authoring/assets/editing-rollout.png)
+  ![Bouton Déployer](/help/sites-cloud/authoring/assets/editing-rollout.png)
 
 ## Modification du modèle de page {#editing-the-page-template}
 
@@ -420,7 +420,6 @@ Deux options sont disponibles pour prévisualiser une page :
 >* Les liens dans le contenu sont visibles, mais ne sont pas accessibles en mode d’ édition .
 >* Si vous souhaitez naviguer à l’aide des liens, utilisez l’une des options d’aperçu.
 >* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Shift-M` pour basculer entre le mode Aperçu et le dernier mode sélectionné.
-
 
 >[!NOTE]
 >
@@ -511,7 +510,6 @@ Les icônes suivantes permettent d’annuler ou de rétablir une opération. Cel
 >* Le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `Ctrl-Z` est également disponible pour annuler les actions d’édition de la page.
 >* Le raccourci clavier `Ctrl-Y` est également disponible pour annuler les actions d’édition de la page.
 
-
 >[!NOTE]
 >
 >Consultez [Annulation et rétablissement des modifications de page : la théorie](#undoing-and-redoing-page-edits-the-theory) pour en savoir plus sur ce qu’il est possible de faire lorsque vous annulez ou rétablissez des modifications de page.
@@ -541,5 +539,4 @@ Vous pouvez utiliser les options Annuler et Rétablir pour les types de modifica
 >* Des autorisations spéciales sont nécessaires pour annuler et rétablir des modifications affectant des fichiers et des images.
 >* L’historique des modifications apportées aux fichiers et aux images dure au moins dix heures. Au-delà de cette période, l’annulation des modifications n’est toutefois pas garantie. Votre administrateur peut modifier l’heure par défaut de dix heures.
 >* L’administrateur système peut configurer divers aspects des fonctions Annuler/Rétablir en fonction des exigences de votre instance.
-   <!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->
-
+<!--* Your system administrator can [configure various aspects of the Undo/Redo features](/help/sites-administering/config-undo.md) according to the requirements for your instance.-->

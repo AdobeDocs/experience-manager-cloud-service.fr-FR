@@ -2,10 +2,10 @@
 title: Configuration IMS à utiliser lors de l’intégration à Adobe Analytics
 description: En savoir plus sur la configuration IMS à utiliser lors de l’intégration à Adobe Analytics
 exl-id: 12bd1573-373a-4001-be71-c8f155ef6896
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 100%
+source-wordcount: '887'
+ht-degree: 92%
 
 ---
 
@@ -55,7 +55,7 @@ La première étape de la configuration consiste à créer une configuration IMS
 
    >[!CAUTION]
    >
-   >Gardez cette configuration ouverte. Elle sera de nouveau nécessaire pour la [Réalisation de la configuration IMS dans AEM](#completing-the-ims-configuration-in-aem).
+   >Gardez cette configuration ouverte. Elle est nécessaire à nouveau lorsque [Réalisation de la configuration IMS dans AEM](#completing-the-ims-configuration-in-aem).
 
    ![Téléchargement du certificat](assets/integrate-analytics-ims-02.png)
 
@@ -71,12 +71,12 @@ Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Analyti
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Tous les projets que vous avez s’affichent. Sélectionnez **Créer un projet** - L’emplacement et l’utilisation de celui-ci dépendent de :
+1. Tous les projets que vous avez sont affichés. Sélectionnez **Créer un projet** - L’emplacement et l’utilisation de celui-ci dépendent de :
 
-   * Si vous n’avez pas encore de projet, l’option **Créer un projet** sera au centre, en bas.
-      ![Créer un projet - Premier projet](assets/integration-analytics-ims-02.png)
-   * Si vous disposez déjà de projets, ceux-ci sont répertoriés et l’option **Créer un projet** sera en haut à droite.
-      ![Créer un projet - Projets multiples](assets/integration-analytics-ims-03.png)
+   * Si vous n’avez pas encore de projet, **Créer un projet** est centre, bas.
+     ![Créer un projet - Premier projet](assets/integration-analytics-ims-02.png)
+   * Si vous disposez déjà de projets, ceux-ci sont répertoriés et **Créer un projet** est en haut à droite.
+     ![Créer un projet - Projets multiples](assets/integration-analytics-ims-03.png)
 
 
 1. Sélectionnez **Ajouter au projet** suivi de **API** :
@@ -107,7 +107,7 @@ Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Analyti
 
    ![Sélectionner les profils de produit requis](assets/integration-analytics-ims-16.png)
 
-1. La configuration sera confirmée.
+1. La configuration est confirmée.
 
 ### Attribution de privilèges à l’intégration {#assigning-privileges-to-the-integration}
 
@@ -131,7 +131,7 @@ Dans la Developer Console d’Adobe - Projets, vous pouvez voir la liste de tou
 Sélectionnez une entrée de projet spécifique pour afficher plus de détails sur la configuration. Ces informations comprennent les éléments suivants :
 
 * Présentation du projet
-* Statistiques
+* Insights
 * Informations d’identification
    * Compte de service (JWT)
       * Détails sur l’identification
@@ -160,7 +160,7 @@ En retournant sur AEM, vous pouvez terminer la configuration IMS en ajoutant les
 
 1. Confirmez en sélectionnant **Créer**.
 
-1. Votre configuration Adobe Analytics s’affichera dans la console AEM.
+1. Votre configuration Adobe Analytics s’affiche dans la console AEM.
 
    ![Configuration IMS](assets/integrate-analytics-ims-11.png)
 
@@ -175,7 +175,6 @@ Pour vous assurer que la configuration fonctionne comme prévu :
    Par exemple :
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. Sélectionnez votre configuration.
 1. Sélectionnez **Contrôle de l’intégrité** dans la barre d’outils, suivi de **Vérifier**.
@@ -198,7 +197,7 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank, it is generated from the title).
 
    You can also select the required template (if more than one is available).
 
@@ -220,5 +219,5 @@ The configuration can now be referenced for a Cloud Service to use the Analytics
 
 1. Complete other parameters as required, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that will be sent to Adobe Analytics. 
+1. You can now proceed to [Adding an Analytics Framework](/help/sites-administering/adobeanalytics-connect.md) to configure parameters that are sent to Adobe Analytics. 
 -->

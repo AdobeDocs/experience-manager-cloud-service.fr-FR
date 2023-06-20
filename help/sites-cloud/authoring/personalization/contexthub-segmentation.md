@@ -2,10 +2,10 @@
 title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: a278b3925180f4baa3b82af84080c947a72c9844
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1697'
-ht-degree: 88%
+source-wordcount: '1694'
+ht-degree: 83%
 
 ---
 
@@ -71,7 +71,7 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
 >
 >Par conséquent, lors de la [création d’un segment](#creating-a-new-segment), vous devez sélectionner un **type de données** chaque fois que les types de valeurs comparées sont connus. Par exemple :
 >
->Lorsque vous comparez la propriété `profile/age`, vous savez déjà que le type comparé sera un **nombre**. Donc, même si la propriété `profile/age` n’est pas définie, une comparaison `profile/age` inférieure à 30 retournera **faux**, comme prévu.
+>Lors de la comparaison de la propriété `profile/age`, vous savez déjà que le type comparé est une **nombre**, même si `profile/age` n’est pas défini, il s’agit d’une comparaison `profile/age` moins de 30 est renvoyé **false**, comme vous l’attendriez.
 
 ### Références {#references}
 
@@ -96,7 +96,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
    ![Nouveau segment](../assets/contexthub-new-segment.png)
 
-   Chaque segment comporte un paramètre d’amplification utilisé comme facteur de pondération. Une valeur plus élevée indique que le segment sera sélectionné de préférence à un segment ayant une valeur plus basse dans les cas où plusieurs segments sont valides.
+   Chaque segment comporte un paramètre d’amplification utilisé comme facteur de pondération. Un nombre plus élevé indique que le segment est sélectionné de préférence à un segment dont le nombre est plus faible dans les cas où plusieurs segments sont valides.
 
    * Valeur minimale : `0`
    * Valeur maximale : `1000000`
@@ -199,8 +199,8 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
-   * Le **Nom** devient le nom du nœud dans le référentiel.
-      * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   * Le **Nom** devient le nom du noeud dans le référentiel.
+      * Il est généré automatiquement en fonction du titre et adapté en fonction des [AEM les conventions d’affectation des noms.](/help/implementing/developing/introduction/naming-conventions.md)
       * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](../assets/contexthub-create-folder.png)
@@ -212,7 +212,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 1. Le dossier s’affiche dans la liste des segments.
    * La manière dont vous triez vos colonnes aura une incidence sur l’emplacement d’affichage du nouveau dossier dans la liste.
    * Vous pouvez appuyer ou cliquer sur les en-têtes de colonne pour adapter votre tri.
-      ![Le nouveau dossier](../assets/contexthub-folder.png)
+     ![Le nouveau dossier](../assets/contexthub-folder.png)
 
 ### Modifier les dossiers existants {#modify-folders}
 

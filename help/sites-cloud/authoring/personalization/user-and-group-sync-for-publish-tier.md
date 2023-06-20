@@ -2,10 +2,10 @@
 title: Enregistrement, connexion et profil utilisateur
 description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1174'
-ht-degree: 100%
+source-wordcount: '1168'
+ht-degree: 90%
 
 ---
 
@@ -23,7 +23,7 @@ Les applications web offrent souvent des fonctions de gestion de compte permetta
 
 >[!IMPORTANT]
 >
->Pour que la fonctionnalité décrite dans cet article soit opérationnelle, la fonction de synchronisation des données utilisateur doit être activée, ce qui nécessite, pour le moment, une demande au service clientèle indiquant le programme et les environnements appropriés. Si elles ne sont pas activées, les informations utilisateur seront conservées pendant une courte période (1 à 24 heures) avant de disparaître.
+>Pour que la fonctionnalité décrite dans cet article soit opérationnelle, la fonction de synchronisation des données utilisateur doit être activée, ce qui nécessite, pour le moment, une demande au service clientèle indiquant le programme et les environnements appropriés. Si elle n’est pas activée, les informations utilisateur sont conservées pendant une courte période (1 à 24 heures) avant de disparaître.
 
 ## L’enregistrement {#registration}
 
@@ -83,7 +83,7 @@ L’interface `com.adobe.granite.auth.oauth.provider` peut être implémentée a
 
 ### Sessions réactives et jetons encapsulés {#sticky-sessions-and-encapsulated-tokens}
 
-AEM as a Cloud Service active des sessions réactives basées sur les cookies, ce qui garantit qu’un utilisateur final est dirigé vers le même nœud de publication pour chaque requête. Pour améliorer les performances, la fonction de jeton encapsulé est activée par défaut, de sorte que l’enregistrement utilisateur dans le référentiel n’ait pas besoin d’être référencé pour chaque requête. Si le nœud de publication avec lequel l’utilisateur final a une affinité est remplacé, son enregistrement d’ID utilisateur est disponible sur le nouveau nœud de publication, comme décrit dans la section de synchronisation des données ci-dessous.
+AEM as a Cloud Service active des sessions réactives basées sur les cookies, ce qui garantit qu’un utilisateur final est dirigé vers le même nœud de publication pour chaque requête. Pour améliorer les performances, la fonction de jeton encapsulé est activée par défaut, de sorte que l’enregistrement de l’utilisateur dans le référentiel ne doit pas être référencé pour chaque requête. Si le noeud de publication auquel un utilisateur final a une affinité est remplacé, son enregistrement d’ID utilisateur est disponible sur le nouveau noeud de publication, comme décrit dans la section de synchronisation des données ci-dessous.
 
 ## Profil utilisateur {#user-profile}
 
@@ -104,7 +104,7 @@ Il est possible d’accéder en temps réel à des services tiers pour récupér
 
 ## Autorisations (groupes d’utilisateurs fermés) {#permissions-closed-user-groups}
 
-Les politiques d’accès au niveau Publication, également appelées CUG (Closed User Groups), sont définies dans l’auteur AEM comme [décrit ici](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=fr#applying-your-closed-user-group-to-content-pages). Pour limiter certains sections ou pages d’un site web à certains utilisateurs, appliquez les CUG selon les besoins à l’aide de l’auteur AEM, comme décrit ici, et dupliquez-les au niveau Publication.
+Les politiques d’accès au niveau Publication, également appelées CUG (Closed User Groups), sont définies dans l’auteur AEM comme [décrit ici](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/cug.html?lang=fr#applying-your-closed-user-group-to-content-pages). Pour restreindre la participation de certains utilisateurs à certaines sections ou pages d’un site web, appliquez les groupes d’utilisateurs fermés selon les besoins à l’aide de l’AEM auteur, comme décrit ici, et répliquez-les au niveau publication.
 
 * Si les utilisateurs se connectent en s’authentifiant auprès d’un fournisseur d’identités (IdP) à l’aide de SAML, le gestionnaire d’authentification identifie les appartenances de groupe de l’utilisateur (qui doivent correspondre aux CUG pour le niveau Publication) et maintient l’association entre l’utilisateur et le groupe par le biais d’un enregistrement de référentiel.
 * Si la connexion est établie sans intégration IdP, le code personnalisé peut appliquer les mêmes relations de structure de référentiel.

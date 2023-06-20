@@ -2,10 +2,10 @@
 title: Modification de lancements
 description: Après avoir créé un lancement pour votre page (ou ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement des pages.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 71%
+source-wordcount: '552'
+ht-degree: 72%
 
 ---
 
@@ -27,7 +27,6 @@ Lors de la modification de la page, une indication apparaît dans la barre d’o
 >Vous n’êtes pas autorisé à déplacer une page au cours d’un lancement. Tenter cette action déclenchera un message d’avertissement :
 >
 >* Avertissement : Cette page est la source du lancement. Le déplacement de cette page n’est pas autorisé.
-
 
 ### Modification de l’objet des pages de lancement en Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -55,9 +54,9 @@ Pour suivre les modifications que vous avez apportées, vous pouvez afficher le 
 
    ![Comparaison du lancement à la source](/help/sites-cloud/authoring/assets/launches-compare.png)
 
-1. Les deux pages (lancement et source) s’ouvrent côte à côte.
+1. Les deux pages (lancement et source) sont ouvertes côte à côte.
 
-   Pour des informations complètes sur l’utilisation de cette fonction, consultez [Différence entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
+   Pour des informations complètes sur l’utilisation de cette fonction, consultez la section [Comparaison entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Modification des pages source utilisées {#changing-the-source-pages-used}
 

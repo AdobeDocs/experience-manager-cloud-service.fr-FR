@@ -2,10 +2,10 @@
 title: Conversion de lancements
 description: Vous devez convertir des pages de lancement pour que le contenu soit à nouveau déplacé dans la source (production) avant de le publier.
 exl-id: 5f5ed17c-43db-4ef6-ab79-c491326fa01c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 58%
+source-wordcount: '814'
+ht-degree: 54%
 
 ---
 
@@ -40,18 +40,17 @@ Vous devez convertir des pages de lancement pour que le contenu soit à nouveau 
 >* [Lancements – Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events) pour en savoir plus sur la conversion et la publication automatiques.
 >
 
-
 Vous pouvez promouvoir des lancements à partir de l’une des **Sites** ou la console **Lancements** console :
 
 1. Ouvrez :
    * La console **Sites** lors de la navigation dans les pages source :
-      1. Ouvrez le [rail de références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références seront affichées.
+      1. Ouvrez le [rail de références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) et sélectionnez la page source souhaitée à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md) (ou sélectionnez et ouvrez le rail de références, l’ordre n’a pas d’importance). Toutes les références s’affichent.
       1. Sélectionnez **Lancements** (par exemple Lancements (1)) pour afficher une liste de lancements particuliers.
       1. Sélectionnez le lancement spécifique pour afficher les actions disponibles.
       1. Sélectionnez **Convertir le lancement** pour ouvrir l’assistant.
    * La console **Sites** lors de la navigation dans les pages de lancement :
       1. Sélectionnez la page de lancement requise à l’aide du [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md).
-      1. L’action **Promouvoir** sera disponible dans la barre d’outils.
+      1. Le **Convertir** est disponible dans la barre d’outils.
    * La console **Lancements :**
       1. Sélectionnez votre lancement (appuyez/cliquez sur la miniature).
       1. Sélectionnez **Convertir**.
@@ -65,13 +64,13 @@ Vous pouvez promouvoir des lancements à partir de l’une des **Sites** ou la c
       * **Convertir la page active**
       * **Convertir la page active et les sous-pages**
 
-      Par exemple, lorsque vous sélectionnez l’option visant à convertir uniquement les pages modifiées :
+     Par exemple, lorsque vous sélectionnez l’option visant à convertir uniquement les pages modifiées :
 
-      ![Convertir le lancement](/help/sites-cloud/authoring/assets/launches-promote.png)
+     ![Convertir le lancement](/help/sites-cloud/authoring/assets/launches-promote.png)
 
-      >[!NOTE]
-      >
-      >Cela couvre un seul lancement, si vous avez imbriqué des lancements, voir [Conversion d’un lancement imbriqué](#promoting-a-nested-launch).
+     >[!NOTE]
+     >
+     >Cela couvre un seul lancement, si vous avez imbriqué des lancements, voir [Conversion d’un lancement imbriqué](#promoting-a-nested-launch).
 1. Sélectionner **Suivant** pour continuer.
 1. Vous pouvez passer en revue les pages à convertir. Elles dépendent de la plage de pages sélectionnée :
 
@@ -100,7 +99,7 @@ Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages so
 1. Saisissez les informations demandées :
    * **Cible**
       * **Convertir la cible** : vous pouvez convertir un lancement vers n’importe quelle source.
-      * **Supprimer le lancement après la conversion** : après la conversion, le lancement sélectionné et les lancements imbriqués seront automatiquement supprimés.
+      * **Supprimer le lancement après la promotion** - Après la promotion, le lancement sélectionné et les lancements imbriqués dans celui-ci sont supprimés.
    * **Domaine** : ici, vous pouvez indiquer s’il faut convertir l’intégralité du lancement ou uniquement les pages qui ont été modifiées. Si ce dernier cas se produit, vous pouvez alors choisir d’inclure/exclure des sous-pages. La configuration par défaut consiste à promouvoir uniquement les modifications de page pour la page active :
       * **Convertir le lancement complet**
       * **Promouvoir les pages modifiées**
@@ -119,7 +118,7 @@ Après avoir créé un lancement imbriqué, vous pouvez le convertir en pages so
    >
    >Les pages répertoriées dépendent de la variable **Portée** défini et éventuellement les pages qui ont été modifiées.
 
-1. Vos modifications seront promues et répercutées dans la variable **Lancements** console :
+1. Vos modifications sont promues et répercutées dans la variable **Lancements** console :
 
    ![Dans la console de lancements](/help/sites-cloud/authoring/assets/launches-console.png)
 

@@ -2,10 +2,10 @@
 title: Configuration IMS à utiliser lors de l’intégration à Adobe Target
 description: En savoir plus sur la configuration IMS à utiliser lors de l’intégration à Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 100%
+source-wordcount: '856'
+ht-degree: 92%
 
 ---
 
@@ -53,7 +53,7 @@ La première étape de la configuration consiste à créer une configuration IMS
 
    >[!CAUTION]
    >
-   >Gardez cette configuration ouverte. Elle sera de nouveau nécessaire pour la [Réalisation de la configuration IMS dans AEM](#completing-the-ims-configuration-in-aem).
+   >Gardez cette configuration ouverte. Elle est nécessaire à nouveau lorsque [Réalisation de la configuration IMS dans AEM](#completing-the-ims-configuration-in-aem).
 
    ![Télécharger le certificat](assets/integrate-target-ims-02.png)
 
@@ -69,11 +69,11 @@ Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Target 
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Tous les projets que vous avez s’affichent. Sélectionnez **Créer un projet** - L’emplacement et l’utilisation de celui-ci dépendent de :
+1. Tous les projets que vous avez sont affichés. Sélectionnez **Créer un projet** - L’emplacement et l’utilisation de celui-ci dépendent de :
 
-   * Si vous n’avez pas encore de projet, l’option **Créer un projet** sera au centre, en bas.
+   * Si vous n’avez pas encore de projet, **Créer un projet** est centre, bas.
      ![Créer un projet - Premier projet](assets/integration-target-ims-02.png)
-   * Si vous disposez déjà de projets, ceux-ci sont répertoriés et l’option **Créer un projet** sera en haut à droite.
+   * Si vous disposez déjà de projets, ceux-ci sont répertoriés et **Créer un projet** est en haut à droite.
      ![Créer un projet - Projets multiples](assets/integration-target-ims-03.png)
 
 
@@ -108,10 +108,10 @@ Ouvrez la Developer Console d’Adobe pour créer un projet avec Adobe Target 
 
    ![Sélection des profils de produit et enregistrement de l’API configurée](assets/integration-target-ims-16.png)
 
-1. La création sera confirmée.
+1. La création est confirmée.
 
 <!--
-1. The creation will be confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
+1. The creation is confirmed, you can now **Continue to integration details**; these are needed for [Completing the IMS Configuration in AEM](#completing-the-ims-configuration-in-aem).
 
    ![](assets/integrate-target-ims-07.png)
 -->
@@ -169,7 +169,7 @@ En retournant sur AEM, vous pouvez terminer la configuration IMS en ajoutant les
 
 1. Confirmez avec **Créer**.
 
-1. Votre configuration Adobe Target s’affichera dans la console AEM.
+1. Votre configuration Adobe Target s’affiche dans la console AEM.
 
    ![Configuration IMS](assets/integrate-target-ims-11.png)
 
@@ -207,7 +207,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
    The **Create Configuration** dialog will open.
 
-1. Enter a **Title** and, if you want, a **Name** (if left blank this will be generated from the title).
+1. Enter a **Title** and, if you want, a **Name** (if left blank it is generated from the title).
 
    You can also select the required template (if more than one is available).
 
@@ -265,7 +265,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 1. Select **OK** on the message, followed by **OK** on the dialog to confirm the configuration.
 
-1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that will be sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
+1. You can now proceed to [Adding a Target Framework](/help/sites-administering/target-configuring.md#adding-a-target-framework) to configure ContextHub or ClientContext parameters that are sent to Target. Note this may not be required for exporting AEM Experience Fragments to Target.
 
 ### Tenant ID and Client Code {#tenant-client}
 
@@ -281,7 +281,7 @@ In both cases, be aware that:
 
 * By default, the Client Code (if added first) will also be automatically copied into the Tenant ID field.
 * You have the option to change the default Tenant ID set.
-* Accordingly, the backend calls to Target will be based on the **Tenant ID** and the client side calls to Target will be based on the **Client Code**.
+* Accordingly, the backend calls to Target are based on the **Tenant ID** and the client side calls to Target are based on the **Client Code**.
 
 As stated previously, the default case is the most common for AEM as a Cloud Service. Either way, make sure **both** fields contain the correct information depending on your requirements.
 

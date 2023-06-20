@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Publication et dépublication de pages à l’aide d’AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1812'
-ht-degree: 84%
+source-wordcount: '1804'
+ht-degree: 77%
 
 ---
 
@@ -46,10 +46,9 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 >
 >Si vous ne disposez pas des privilèges requis pour publier une page spécifique :
 >
->* Un workflow sera déclenché pour informer la personne appropriée de votre demande de publication.
+>* Un workflow est déclenché pour informer la personne appropriée de votre demande de publication.
 >* Ce workflow a peut-être été personnalisé par votre équipe de développement.
 >* Un message s’affiche brièvement pour vous informer que le workflow a été déclenché.
-
 
 >[!NOTE]
 >
@@ -65,14 +64,14 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 1. Selon que la page comporte des références qui doivent être publiées :
 
-   * La page sera publiée directement, s’il n’y a aucune référence à publier.
-   * Si la page comporte des références à publier, celles-ci seront répertoriées dans l’assistant **Publier**, où vous pourrez accomplir ce qui suit :
+   * La page est publiée directement s’il n’y a aucune référence à publier.
+   * Si la page comporte des références qui doivent être publiées, celles-ci sont répertoriées dans la variable **Publier** , où vous pouvez effectuer l’une des opérations suivantes :
       * Spécifier les ressources, balises et autres éléments à publier conjointement avec la page, puis cliquer sur **Publier** pour terminer l’opération.
       * Sélectionner **Annuler** pour abandonner l’opération.
 
    ![Publication de références avec la page](/help/sites-cloud/authoring/assets/publishing-references.png)
 
-1. L’option **Publier** réplique la page dans l’environnement de publication. Une bannière d’informations est affichée dans l’éditeur de page pour confirmer l’opération de publication.
+1. L’option **Publier** réplique la page dans l’environnement de publication. Dans l’éditeur de page, une bannière d’informations s’affiche pour confirmer l’action de publication.
 
    ![Bannière d’informations sur l’état de publication](/help/sites-cloud/authoring/assets/publishing-info.png)
 
@@ -129,17 +128,18 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    * **Action**
 
-      Publier ou dépublier des pages sélectionnées.
+     Publier ou dépublier des pages sélectionnées.
 
    * **Planification**
 
-      Choisissez d’effectuer cette action maintenant ou ultérieurement.
+     Choisissez d’effectuer cette action maintenant ou ultérieurement.
 
-      La publication différée lance un workflow pour publier la ou les pages sélectionnées à l’heure indiquée. A l’inverse, l’annulation de la publication différée lance un workflow pour annuler la publication de la ou des pages sélectionnées à un moment précis.
+     La publication différée lance un workflow pour publier la ou les pages sélectionnées à l’heure indiquée. A l’inverse, l’annulation de la publication différée lance un workflow pour annuler la publication de la ou des pages sélectionnées à un moment précis.
 
-      >[!NOTE]
-      >
-      >Pour annuler une publication/dépublier ultérieurement, rendez-vous dans la [console Workflow](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) pour mettre un terme au workflow correspondant.
+     >[!NOTE]
+     >
+     >Pour annuler une publication/dépublier ultérieurement, rendez-vous dans la [console Workflow](/help/sites-cloud/administering/workflows-administering.md#suspending-resuming-and-terminating-a-workflow-instance) pour mettre un terme au workflow correspondant.
+
    ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-options.png)
 
 1. Cliquez sur **Suivant** pour continuer.
@@ -168,11 +168,11 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    ![Options de gestion de la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-references.png)
 
-   La boîte de dialogue **Références publiées** affiche alors les références du contenu sélectionné. Par défaut, elles sont toutes sélectionnées. Dès lors, elles seront toutes publiées ou dépubliées. Vous pouvez toutefois les désélectionner pour qu’elles ne soient pas incluses dans l’opération.
+   La boîte de dialogue **Références publiées** affiche alors les références du contenu sélectionné. Par défaut, ils sont tous sélectionnés et publiés/non publiés, mais vous pouvez décocher la case pour les désélectionner afin qu’ils ne soient pas inclus dans l’action.
 
    Cliquez sur **Terminé** pour enregistrer vos modifications ou sur **Annuler** pour annuler la sélection et revenir à l’assistant.
 
-   De retour dans l’assistant, la colonne **Références** est mise à jour afin de tenir compte des références que vous avez choisi de publier ou de dépublier.
+   De retour dans l’assistant, le **Références** est mise à jour afin de prendre en compte votre sélection de références à publier ou dont la publication doit être annulée.
 
    ![Sélection de pages dans la boîte de dialogue Gérer la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 
@@ -203,7 +203,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    >[!NOTE]
    >
-   >L’étape **Workflows** est affichée en fonction des droits dont dispose ou non votre utilisateur. Pour plus d’informations, reportez-vous à la remarque précédente sur cette page concernant les privilèges de publication, ainsi qu’aux sections Gestion de l’accès aux workflows et [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md).
+   >Le **Workflows** s’affiche en fonction des droits dont dispose ou non votre utilisateur. Pour plus d’informations, reportez-vous à la remarque précédente sur cette page concernant les privilèges de publication, ainsi qu’aux sections Gestion de l’accès aux workflows et [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md).
 
    Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
 
@@ -287,14 +287,14 @@ Vous pouvez déterminer l’état de publication d’une page :
 
 * Dans les [informations d’aperçu des ressources de la console Sites](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
 
-   ![État de la publication en mode Carte](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
+  ![État de la publication en mode Carte](/help/sites-cloud/authoring/assets/publishing-status-console-card.png)
 
-   L’état de publication est indiqué dans les modes d’affichage [Carte](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [Colonnes](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) et [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) de la console Sites.
+  L’état de publication est indiqué dans les modes d’affichage [Carte](/help/sites-cloud/authoring/getting-started/basic-handling.md#card-view), [Colonnes](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) et [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view) de la console Sites.
 
 * Dans la [chronologie](/help/sites-cloud/authoring/getting-started/basic-handling.md#timeline)
 
-   ![État de publication en mode Chronologie](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
+  ![État de publication en mode Chronologie](/help/sites-cloud/authoring/assets/publishing-status-timeline.png)
 
 * Dans le menu [Informations sur la page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) lors de la modification d’une page
 
-   ![État de publication dans le menu Informations sur la page](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)
+  ![État de publication dans le menu Informations sur la page](/help/sites-cloud/authoring/assets/publishing-status-page-information.png)

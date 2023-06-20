@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2994'
-ht-degree: 72%
+source-wordcount: '2986'
+ht-degree: 71%
 
 ---
 
@@ -15,9 +15,8 @@ Ce document donne un aperçu des opérations de gestion de base dans l’environ
 
 >[!NOTE]
 >
->* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles. Des informations spécifiques sur les consoles individuelles et leurs fonctionnalités associées seront traitées plus en détail sur d’autres pages.
+>* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles. Des informations spécifiques sur les consoles individuelles et leurs fonctionnalités associées sont traitées plus en détail sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
-
 
 ## Interface utilisateur pour écrans tactiles {#a-touch-enabled-ui}
 
@@ -89,79 +88,79 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
 * [Navigation globale](#global-navigation)
 
-   Sélectionnez le lien **Adobe Experience Manager** pour naviguer entre les consoles.
+  Sélectionnez le lien **Adobe Experience Manager** pour naviguer entre les consoles.
 
-   ![Navigation globale](/help/sites-cloud/authoring/assets/global-navigation.png)
+  ![Navigation globale](/help/sites-cloud/authoring/assets/global-navigation.png)
 
 * [Rechercher](/help/sites-cloud/authoring/getting-started/search.md)
 
-   ![Icône Rechercher](/help/sites-cloud/authoring/assets/search-icon.png)
+  ![Icône Rechercher](/help/sites-cloud/authoring/assets/search-icon.png)
 
-   Vous pouvez également utiliser la [touche de raccourci](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
+  Vous pouvez également utiliser la [touche de raccourci](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) `/` (barre oblique) pour appeler la recherche à partir de n’importe quelle console.
 
 * [Solutions](https://www.adobe.com/fr/experience-cloud.html)
 
-   ![Bouton Solutions](/help/sites-cloud/authoring/assets/solutions.png)
+  ![Bouton Solutions](/help/sites-cloud/authoring/assets/solutions.png)
 
 * [Aide](#accessing-help)
 
-   ![Bouton Aide](/help/sites-cloud/authoring/assets/help.png)
+  ![Bouton Aide](/help/sites-cloud/authoring/assets/help.png)
 
 * [Notifications](/help/sites-cloud/authoring/getting-started/inbox.md)
 
-   ![Bouton Notifications](/help/sites-cloud/authoring/assets/notifications.png)
+  ![Bouton Notifications](/help/sites-cloud/authoring/assets/notifications.png)
 
-   Cette icône contiendra un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
+  Cette icône comporte un badge indiquant le nombre de notifications incomplètes actuellement attribuées.
 
 * [Propriétés de l’utilisateur](/help/sites-cloud/authoring/getting-started/account-environment.md)
 
-   ![Bouton Propriétés de l’utilisateur](/help/sites-cloud/authoring/assets/user-properties.png)
+  ![Bouton Propriétés de l’utilisateur](/help/sites-cloud/authoring/assets/user-properties.png)
 
 * [Sélecteur de rail](#rail-selector)
 
-   ![Bouton Sélecteur de rail](/help/sites-cloud/authoring/assets/rail-selector.png)
+  ![Bouton Sélecteur de rail](/help/sites-cloud/authoring/assets/rail-selector.png)
 
-   Les options présentées dépendent de la console active. Par exemple, dans la console **Sites**, vous ne pouvez sélectionner que le contenu (valeur par défaut), la chronologie, les références ou le panneau latéral de filtrage.
+  Les options présentées dépendent de la console active. Par exemple, dans la console **Sites**, vous ne pouvez sélectionner que le contenu (valeur par défaut), la chronologie, les références ou le panneau latéral de filtrage.
 
-   ![Exemple de sélecteur de rail](/help/sites-cloud/authoring/assets/rail-selector-example.png)
+  ![Exemple de sélecteur de rail](/help/sites-cloud/authoring/assets/rail-selector-example.png)
 
 * Chemin de navigation
 
-   ![Chemin de navigation dans la barre de navigation](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
+  ![Chemin de navigation dans la barre de navigation](/help/sites-cloud/authoring/assets/breadcrumbs-navigation.png)
 
-   Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console **Sites**, vous pouvez parcourir les différents niveaux de votre site web.
+  Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console **Sites**, vous pouvez parcourir les différents niveaux de votre site web.
 
-   Il vous suffit de cliquer sur le texte du chemin de navigation pour afficher une liste déroulante répertoriant les niveaux de la hiérarchie de l’élément actuellement sélectionné. Cliquez sur une entrée pour accéder à cet emplacement.
+  Il vous suffit de cliquer sur le texte du chemin de navigation pour afficher une liste déroulante répertoriant les niveaux de la hiérarchie de l’élément actuellement sélectionné. Cliquez sur une entrée pour accéder à cet emplacement.
 
-   ![Exemple de chemin de navigation développé](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
+  ![Exemple de chemin de navigation développé](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
 * Bouton **Créer**
 
-   ![Bouton Créer](/help/sites-cloud/authoring/assets/create.png)
+  ![Bouton Créer](/help/sites-cloud/authoring/assets/create.png)
 
-   Une fois que vous cliquez dessus, les options affichées sont adaptées à la console ou au contexte.
+  Une fois que vous cliquez dessus, les options affichées sont adaptées à la console ou au contexte.
 
 * [Vues](#viewing-and-selecting-resources)
 
-   L’icône Vues se trouve à l’extrémité droite de la barre d’outils AEM. Comme elle indique également la vue actuelle, elle change. Par exemple, la vue par défaut, **Mode Colonnes** affiche :
+  L’icône Vues se trouve à l’extrémité droite de la barre d’outils AEM. Comme elle indique également la vue actuelle, elle change. Par exemple, la vue par défaut, **Mode Colonnes** affiche :
 
-   ![Bouton Vues](/help/sites-cloud/authoring/assets/views-button.png)
+  ![Bouton Vues](/help/sites-cloud/authoring/assets/views-button.png)
 
-   Vous pouvez basculer entre la vue Colonnes, Carte et Liste. Dans la vue Liste, les paramètres de vue sont également affichés.
+  Vous pouvez basculer entre la vue Colonnes, Carte et Liste. Dans la vue Liste, les paramètres de vue sont également affichés.
 
-   ![Vues](/help/sites-cloud/authoring/assets/view.png)
+  ![Vues](/help/sites-cloud/authoring/assets/view.png)
 
-   >[!NOTE]
-   >
-   >L’option **Paramètres** est disponible uniquement dans la vue **Liste**.
+  >[!NOTE]
+  >
+  >L’option **Paramètres** est disponible uniquement dans la vue **Liste**.
 
 * Navigation au clavier
 
-   Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. Ce processus s’appuie sur la fonctionnalité de la touche **TAB** (tabulation) dans un navigateur standard (ou **OPT+TAB**) pour vous déplacer entre les éléments de la page pouvant recevoir le focus.
+  Vous pouvez naviguer sur un site web en utilisant exclusivement le clavier. Ce processus s’appuie sur la fonctionnalité de la touche **TAB** (tabulation) dans un navigateur standard (ou **OPT+TAB**) pour vous déplacer entre les éléments de la page pouvant recevoir le focus.
 
-   Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. Cette option apparaît lorsque vous passez d’une option d’en-tête à une autre. Elle permet d’accélérer la navigation en ignorant les éléments standard de la barre d’outils (produit) et en accédant directement au contenu principal.
+  Dans la console **Sites**, vous pouvez ajouter l’option **Passer au contenu principal**. Cette option apparaît lorsque vous passez d’une option d’en-tête à une autre. Elle permet d’accélérer la navigation en ignorant les éléments standard de la barre d’outils (produit) et en accédant directement au contenu principal.
 
-   ![Passer au contenu principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
+  ![Passer au contenu principal](/help/sites-cloud/authoring/assets/skip-to-main-content.png)
 
 ## Accès à l’Aide    {#accessing-help}
 
@@ -169,42 +168,41 @@ Plusieurs ressources d’aide sont disponibles :
 
 * **Barre d’outils Console**
 
-   Selon votre emplacement, la variable **Aide** ouvre les ressources appropriées :
+  Selon votre emplacement, la variable **Aide** ouvre les ressources appropriées :
 
-   ![Icône d’aide](/help/sites-cloud/authoring/assets/help-console.png)
+  ![Icône d’aide](/help/sites-cloud/authoring/assets/help-console.png)
 
 * **Navigation**
 
-   La première fois que vous naviguez dans le système, [une série de diapositives présente la navigation au sein d’AEM](#product-navigation).
+  La première fois que vous naviguez dans le système, [une série de diapositives présente la navigation au sein d’AEM](#product-navigation).
 
-   ![Tutoriel](/help/sites-cloud/authoring/assets/tutorial.png)
+  ![Tutoriel](/help/sites-cloud/authoring/assets/tutorial.png)
 
 * **Éditeur de page**
 
-   La première fois que vous modifiez une page, une série de diapositives présente l’éditeur de page.
+  La première fois que vous modifiez une page, une série de diapositives présente l’éditeur de page.
 
-   ![Tutoriel de l’éditeur](/help/sites-cloud/authoring/assets/editor-tutorial.png)
+  ![Tutoriel de l’éditeur](/help/sites-cloud/authoring/assets/editor-tutorial.png)
 
-   Parcourez cet aperçu comme vous le feriez avec l’[aperçu de navigation du produit](#product-navigation) la première fois que vous accédez à une console.
+  Parcourez cet aperçu comme vous le feriez avec l’[aperçu de navigation du produit](#product-navigation) la première fois que vous accédez à une console.
 
-   Dans le menu [**Informations sur la page**, sélectionnez l’option **Aide**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) pour afficher de nouveau cette présentation à tout moment.
+  Dans le menu [**Informations sur la page**, sélectionnez l’option **Aide**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#accessing-help) pour afficher de nouveau cette présentation à tout moment.
 
 * **Console Outils**
 
-   Dans la **Outils** vous pouvez également accéder à la console externe. **Ressources**:
+  Dans la **Outils** vous pouvez également accéder à la console externe. **Ressources**:
 
    * **Documentation** : affichez la documentation de Web Experience Management.
    * **Ressources pour les développeurs** : ressources et téléchargements pour les développeurs.
 
-   >[!NOTE]
-   >
-   >Vous pouvez accéder à un aperçu des raccourcis clavier disponibles à tout moment à l’aide de la touche `?` (point d’interrogation) lorsque vous vous trouvez dans une console.
-   >
-   >Pour une présentation de tous les raccourcis clavier, reportez-vous à la documentation suivante :
-   >
-   >* [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
-   >* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
+  >[!NOTE]
+  >
+  >Vous pouvez accéder à un aperçu des raccourcis clavier disponibles à tout moment à l’aide de la touche `?` (point d’interrogation) lorsque vous vous trouvez dans une console.
+  >
+  >Pour une présentation de tous les raccourcis clavier, reportez-vous à la documentation suivante :
+  >
+  >* [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
+  >* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
 ## Barre d’outils Actions {#actions-toolbar}
 
@@ -307,11 +305,11 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
 
 * Appuyez ou cliquez sur la miniature pour sélectionner la ressource.
 
-   * Une fois la ressource sélectionnée, une coche s’affiche au-dessus de la miniature et le nom de la ressource est également mis en surbrillance.
+   * Lorsqu’elle est sélectionnée, une coche est superposée sur la miniature et le nom de la ressource est également mis en surbrillance.
    * Les détails de la ressource sélectionnée sont affichés dans la dernière colonne.
    * La barre d’outils d’action devient disponible.
 
-   Lorsqu’une page est sélectionnée en mode Colonne, la page sélectionnée s’affiche dans la dernière colonne avec les détails suivants :
+  Lorsqu’une page est sélectionnée en mode Colonne, la page sélectionnée s’affiche dans la dernière colonne avec les détails suivants :
 
    * Titre de la page
    * Nom de page (partie de l’URL de la page)
@@ -319,7 +317,6 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
    * Détails de la modification
    * Langage de page
    * Publication et prévisualisation des détails
-
 
 ### Mode Carte {#card-view}
 
@@ -336,7 +333,7 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
 
 * [Actions rapides](#quick-actions) sont également disponibles dans cette vue, comme la sélection et les actions courantes, telles que la modification.
 
-   ![Actions rapides](/help/sites-cloud/authoring/assets/quick-actions.png)
+  ![Actions rapides](/help/sites-cloud/authoring/assets/quick-actions.png)
 
 * Vous pouvez parcourir l’arborescence vers le bas en appuyant/cliquant sur des cartes (en veillant à éviter les actions rapides), ou vers le haut en utilisant le [chemin de navigation dans l’en-tête](#the-header).
 
@@ -348,16 +345,16 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
 * Vous pouvez parcourir l’arborescence vers le bas en appuyant/cliquant sur le nom de la ressource, ou vers le haut en utilisant le [chemin de navigation dans l’en-tête](#the-header).
 * Pour sélectionner facilement tous les éléments de la liste, utilisez la case à cocher située dans le coin supérieur gauche de la liste.
 
-   ![Tout sélectionner dans la vue Liste](/help/sites-cloud/authoring/assets/list-view-select-all.png)
+  ![Tout sélectionner dans la vue Liste](/help/sites-cloud/authoring/assets/list-view-select-all.png)
 
    * Lorsque tous les éléments de la liste sont sélectionnés, cette case à cocher s’affiche.
 
       * Cliquez ou appuyez sur la case à cocher pour tout désélectionner.
+
    * Lorsque seuls certains éléments sont sélectionnés, un signe moins apparaît.
 
       * Cliquez ou appuyez sur la case à cocher pour tout sélectionner.
       * Cliquez ou appuyez à nouveau sur la case à cocher pour tout désélectionner.
-
 
 * Sélectionnez les colonnes à afficher à l’aide de l’option **Afficher les paramètres** située sous le bouton Vues. Les colonnes suivantes peuvent être affichées :
 
@@ -371,20 +368,21 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
    * **Visiteurs uniques**
    * **Durée sur la page**
 
-      ![Sélectionner des colonnes](/help/sites-cloud/authoring/assets/select-columns.png)
-   Par défaut, la colonne **Nom** est affichée ; ce nom fait partie de l’URL de la page. Dans certains cas, il se peut que l’auteur doive accéder à des pages rédigées dans une autre langue. Aussi, le fait de voir le nom de la page (qui reste généralement identique) peut s’avérer très utile si l’auteur ne connaît pas la langue de la page.
+     ![Sélectionner des colonnes](/help/sites-cloud/authoring/assets/select-columns.png)
+
+  Par défaut, la colonne **Nom** est affichée ; ce nom fait partie de l’URL de la page. Dans certains cas, il se peut que l’auteur doive accéder à des pages rédigées dans une autre langue. Aussi, le fait de voir le nom de la page (qui reste généralement identique) peut s’avérer très utile si l’auteur ne connaît pas la langue de la page.
 
 * Modifiez l’ordre des éléments à l’aide de la barre verticale en pointillés tout à droite de chaque élément de la liste.
 
-   >[!NOTE]
-   >
-   >La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
+  >[!NOTE]
+  >
+  >La modification de l’ordre fonctionne uniquement dans un dossier ordonné dont la valeur `jcr:primaryType` est `sling:OrderedFolder`.
 
-   ![Ordre des colonnes](/help/sites-cloud/authoring/assets/column-order.png)
+  ![Ordre des colonnes](/help/sites-cloud/authoring/assets/column-order.png)
 
-   Cliquez ou appuyez sur la barre de sélection verticale, puis faites glisser l’élément vers un nouvel emplacement dans la liste.
+  Cliquez ou appuyez sur la barre de sélection verticale, puis faites glisser l’élément vers un nouvel emplacement dans la liste.
 
-   ![Liste d’ordre](/help/sites-cloud/authoring/assets/order-list.png)
+  ![Liste d’ordre](/help/sites-cloud/authoring/assets/order-list.png)
 
 ## Sélecteur de rail {#rail-selector}
 

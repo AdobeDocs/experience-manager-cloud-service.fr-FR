@@ -2,10 +2,10 @@
 title: Votre boîte de réception
 description: Gestion de vos tâches avec la boîte de réception
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 82%
+source-wordcount: '905'
+ht-degree: 77%
 
 ---
 
@@ -30,7 +30,6 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 >* [Projets](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projets – Utilisation des Tâches](/help/sites-cloud/authoring/projects/tasks.md)
 >* [Workflows](/help/sites-cloud/authoring/workflows/overview.md)
-
 
 ## Boîte de réception dans l’en-tête {#inbox-in-the-header}
 
@@ -86,26 +85,26 @@ Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres 
 
 * **Vue Calendrier**
 
-   Pour **Vue Calendrier** vous pouvez configurer les éléments suivants :
+  Pour **Vue Calendrier** vous pouvez configurer les éléments suivants :
 
    * **Group by**
    * **Planification** ou **Aucun**
    * **Taille des cartes**
 
-   ![Boîte de réception – Paramètres d’affichage du calendrier](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
+  ![Boîte de réception – Paramètres d’affichage du calendrier](/help/sites-cloud/authoring/assets/inbox-calendar-settings.png)
 
 * **Vue Liste**
 
-   Pour **Mode Liste** vous pouvez configurer le mécanisme de tri :
+  Pour **Mode Liste** vous pouvez configurer le mécanisme de tri :
 
    * **Tri**
    * **Ordre de tri**
 
-   ![Boîte de réception – Paramètres de la vue Liste](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
+  ![Boîte de réception – Paramètres de la vue Liste](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-   Vous pouvez également déléguer votre calendrier à d’autres fins, demander la délégation à d’autres utilisateurs ou encore gérer vos délégations.
+  Vous pouvez également déléguer votre calendrier à d’autres fins, demander la délégation à d’autres utilisateurs ou encore gérer vos délégations.
 
-   ![Boîte de réception – Paramètres de délégation de la vue Liste](/help/sites-cloud/authoring/assets/inbox-delegation.png)
+  ![Boîte de réception – Paramètres de délégation de la vue Liste](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
 ## Action sur un élément {#taking-action-on-an-item}
 
@@ -126,6 +125,7 @@ Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres 
       * Afficher les propriétés de l’élément
       * Ouvrir un tableau de bord ou un assistant pour effectuer d’autres actions
       * Ouvrir la documentation associée
+
    * **Revenir** à une étape précédente
    * Afficher la charge utile pour un workflow
    * Créer un projet à partir de l’élément
@@ -136,11 +136,10 @@ Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres 
    >
    >* Éléments de workflow – [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
 
+2. En fonction de l’élément sélectionné, une action est lancée, par exemple :
 
-2. Une action démarre en fonction de l’élément sélectionné, par exemple :
-
-   * Une boîte de dialogue correspondant à l’opération s’ouvre.
-   * Un assistant d’action démarre.
+   * Une boîte de dialogue correspondant à l’action s’ouvre.
+   * Un assistant d&#39;action est démarré
    * Une page de documentation s’ouvre.
 
    Par exemple, **Déléguer** ouvre une boîte de dialogue :
@@ -152,7 +151,6 @@ Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres 
    * Confirmer l’action appropriée, par exemple Réaffecter.
    * Annuler l’action
    * Sélectionner la flèche vers l’arrière pour revenir à la boîte de réception ; par exemple, si une page de documentation ou un assistant d’action a été ouvert, vous pouvez revenir à la boîte de réception.
-
 
 ## Création d’une tâche {#creating-a-task}
 
@@ -176,7 +174,7 @@ Vous pouvez créer des tâches à partir de la boîte de réception :
 
    * **Avancé**
 
-      * **Nom** : ce champ est utilisé pour former l’URL ; s’il est vide, le nom est basé sur le champ **Titre**.
+      * **Nom**: Utilisé pour former l’URL et, s’il est vide, il est basé sur la variable **Titre**.
 
    ![Options avancées de la tâche d’ajout de boîte de réception](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
@@ -205,9 +203,11 @@ Pour certaines tâches, vous pouvez créer une [Projet](/help/sites-cloud/author
       * **Date de début**
       * **Date d’échéance**
       * **Utilisateur** et rôle
+
    * **Avancé**
 
       * **Nom**
+
    >[!NOTE]
    >
    >Voir [Création d’un projet](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) pour obtenir des informations complètes.

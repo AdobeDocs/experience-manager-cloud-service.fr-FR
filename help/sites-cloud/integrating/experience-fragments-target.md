@@ -2,10 +2,10 @@
 title: Exportation de fragments d’expérience vers Adobe Target
 description: Exportation de fragments d’expérience vers Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
 source-wordcount: '2250'
-ht-degree: 74%
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,6 @@ ht-degree: 74%
 >
 >* Les fragments d’expérience AEM sont exportés dans l’espace de travail par défaut d’Adobe Target.
 >* AEM doit être intégré à Adobe Target conformément aux instructions de la section [Intégration à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
-
 
 Vous pouvez exporter les [Fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md), créés dans Adobe Experience Manager as a Cloud Service (AEM), dans Adobe Target (Target). Ceux-ci peuvent ensuite être utilisés comme offres dans les activités Target, pour tester et personnaliser les expériences en fonction des besoins.
 
@@ -56,7 +55,6 @@ Les fragments d’expérience peuvent être exportés vers l’espace de travail
 >* [Adobe Target - Comment utiliser les fragments d’expérience d’Adobe Experience Manager (AEM) ?](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=fr)
 >* [AEM 6.5 - Configuration manuelle de l’intégration avec Adobe Target - Création d’une configuration de cloud Target](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/target-configuring.html?lang=fr#creating-a-target-cloud-configuration)
 
-
 ## Conditions préalables {#prerequisites}
 
 Plusieurs actions sont requises :
@@ -77,7 +75,7 @@ Avant d’exporter un fragment, vous devez ajouter la **configuration cloud** po
 * sélectionner un espace de travail Target comme destination ;
 * sélectionner un domaine d’externaliseur pour réécrire des références dans le fragment d’expérience (facultatif).
 
-Vous pouvez sélectionner les options obligatoires dans les **propriétés de page** du dossier ou du fragment concerné. La spécification sera héritée, le cas échéant.
+Les options requises peuvent être sélectionnées dans **Propriétés de la page** du dossier, du fragment ou des deux ; la spécification est héritée si nécessaire.
 
 1. Accédez à la console **Fragments d’expérience**.
 
@@ -130,7 +128,7 @@ Vous pouvez sélectionner les options obligatoires dans les **propriétés de pa
 
 Après avoir [ajouté la configuration cloud](#add-the-cloud-configuration) pour utiliser Experience Platform Launch, pour intégrer initialement AEM à Adobe Target, vous devez également effectuer l’intégration manuelle à Adobe Target à l’aide d’une configuration héritée.
 
-### Création d’une configuration de cloud Target {#creating-a-target-cloud-configuration}
+### Création d’une configuration du cloud Target {#creating-a-target-cloud-configuration}
 
 Pour permettre à AEM d’interagir avec Adobe Target, créez une configuration de cloud Target. Pour créer la configuration, vous fournissez le code client Adobe Target et les informations d’identification de l’utilisateur.
 
@@ -138,7 +136,7 @@ Vous créez la configuration de cloud Target une seule fois, car vous pouvez l�
 
 Vous pouvez configurer la configuration de cloud pour synchroniser les segments depuis Adobe Target. Si vous activez la synchronisation, les segments sont importés de Target en arrière-plan dès que la configuration du cloud est enregistrée.
 
-Procédez comme suit pour créer une configuration cloud Target dans AEM :
+Procédez comme suit pour créer une configuration du cloud Target dans AEM :
 
 1. Accédez aux **Services cloud hérités** via le **logo AEM** > **Outils** > **Cloud Services** > **Services cloud hérités**.
 Par exemple : ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
@@ -185,51 +183,50 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
    * **Configuration d’A4T Analytics Cloud** : sélectionnez la configuration d’Analytics Cloud utilisée pour les objectifs et les mesures des activités de Target. Vous avez besoin de cette option si vous utilisez Adobe Analytics en tant que source de création de rapports lors du ciblage de contenu.
 
-      <!-- Is this needed?
+     <!-- Is this needed?
      If you do not see your cloud configuration, see note in [Configuring A4T Analytics Cloud Configuration](#configuring-a-t-analytics-cloud-configuration).
      -->
 
-   * **Utiliser le ciblage précis** : par défaut, cette case est cochée. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Voir la remarque suivante.
+   * **Utiliser le ciblage précis** : par défaut, cette case est cochée. Si cette option est sélectionnée, la configuration du service cloud attend le chargement du contexte avant de charger le contenu. Lisez la remarque suivante.
 
-   * **Synchroniser les segments à partir d’Adobe Target** : sélectionnez cette option pour télécharger les segments définis dans Target pour les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme AEM de &quot;segment&quot; équivaut à l’&quot;audience&quot; de Target.)
+   * **Synchroniser les segments à partir d’Adobe Target** : sélectionnez cette option pour télécharger les segments définis dans Target pour les utiliser dans AEM. Vous devez sélectionner cette option lorsque la propriété Type d’API est REST, car les segments incorporés ne sont pas pris en charge, et vous devez toujours utiliser les segments de Target. (Notez que le terme AEM « segment » est l’équivalent d’« audience » dans Target.)
 
    * **Bibliothèque cliente** : par défaut, cette valeur est définie sur AT.js (mbox.js est obsolète).
 
-      >[!NOTE]
-      >
-      >Le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), est une nouvelle bibliothèque d’implémentation pour Adobe Target qui a été conçue pour les implémentations web classiques et les applications d’une seule page.
-      >
-      >mbox.js est obsolète et sera supprimé ultérieurement.
-      >
-      >Adobe vous recommande d’utiliser AT.js au lieu de mbox.js comme bibliothèque cliente.
-      >
-      >AT.js offre plusieurs améliorations par rapport à la bibliothèque mbox.js :
-      >
-      >* Amélioration des temps de chargement des pages pour les implémentations web
-      >* Amélioration de la sécurité
-      >* Meilleures options de mise en oeuvre pour les applications d’une seule page
-      >* AT.js contient les composants qui étaient inclus dans target.js. Il n’y a donc plus d’appel à target.js.
-
-      >
-      >Vous pouvez sélectionner AT.js ou mbox.js dans le menu déroulant **Bibliothèque cliente**.
+     >[!NOTE]
+     >
+     >Le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), est une nouvelle bibliothèque d’implémentation pour Adobe Target qui a été conçue pour les implémentations web classiques et les applications d’une seule page.
+     >
+     >mbox.js est obsolète et sera supprimé ultérieurement.
+     >
+     >Adobe vous recommande d’utiliser AT.js comme bibliothèque cliente au lieu de mbox.js.
+     >
+     >AT.js offre plusieurs améliorations par rapport à la bibliothèque mbox.js :
+     >
+     >* Amélioration des temps de chargement des pages pour les implémentations web
+     >* Amélioration de la sécurité
+     >* Meilleures options d’implémentation pour les applications d’une seule page
+     >* AT.js contient les composants qui étaient inclus dans target.js. Il n’y a donc plus d’appel à target.js.
+     >
+     >Vous pouvez sélectionner AT.js ou mbox.js dans le menu déroulant **Bibliothèque cliente**.
 
    * **Utilisation du système de gestion des balises pour diffuser la bibliothèque cliente** : sélectionnez cette option pour utiliser la bibliothèque cliente depuis Adobe Launch ou un autre système de gestion des balises (ou DTM, qui est obsolète).
 
    * **Fichier AT.js personnalisé** : parcourez l’arborescence pour charger votre fichier AT.js personnalisé. Laissez vide pour utiliser la bibliothèque par défaut.
 
-      >[!NOTE]
-      >
-      >Par défaut, lorsque vous souscrivez à l’assistant de configuration Adobe Target, le ciblage précis est activé.
-      >
-      >Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, un ciblage précis peut créer un délai de quelques millisecondes avant le chargement du contenu.
-      >
-      >Le ciblage précis est toujours activé sur l’instance de création. Toutefois, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (**http://localhost:4502/etc/cloudservices.html**). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
-      >
-      >Si vous avez ***déjà*** créé les composants ciblés et si vous modifiez ce paramètre, vos modifications n’affectent pas ces composants. Vous devez apporter directement des modifications à ces composants.
+     >[!NOTE]
+     >
+     >Par défaut, lorsque vous souscrivez à l’assistant de configuration Adobe Target, le ciblage précis est activé.
+     >
+     >Le ciblage précis implique que cette configuration du service cloud attend le chargement du contexte avant de charger le contenu. Par conséquent, en termes de performances, un ciblage précis peut créer un délai de quelques millisecondes avant le chargement du contenu.
+     >
+     >Le ciblage précis est toujours activé sur l’instance de création. Toutefois, sur l’instance de publication, vous pouvez choisir de le désactiver en désactivant la coche en regard de Ciblage précis dans la configuration du service cloud (**http://localhost:4502/etc/cloudservices.html**). Vous pouvez également activer et désactiver le ciblage précis pour chaque composant, quel que soit votre paramètre dans la configuration du service cloud.
+     >
+     >Si vous avez ***déjà*** créé les composants ciblés et si vous modifiez ce paramètre, vos modifications n’affectent pas ces composants. Vous devez apporter des modifications directement à ces composants.
 
 1. Cliquez sur **Se connecter à Adobe Target** pour lancer la connexion à Target. Si la connexion est réussie, le message **Connexion réussie** s’affiche. Cliquez sur **OK** dans le message et **OK** dans la boîte de dialogue.
 
-### Ajout d’une structure Target {#adding-a-target-framework}
+### Ajout d’un framework Target {#adding-a-target-framework}
 
 <!-- Is this section needed? -->
 
@@ -263,9 +260,9 @@ Vous pouvez créer des structures multiples pour une même configuration Target.
 
    >[!NOTE]
    >
-   >La synchronisation des paramètres n’est qu’une seule voie : d’AEM à Adobe Target.
+   >La synchronisation des paramètres ne fonctionne que dans un sens : d’AEM à Adobe Target.
 
-La structure est créée. Pour répliquer la structure sur l’instance de publication, utilisez la méthode **Activation de la structure** dans le sidekick.
+La structure est créée. Pour répliquer le framework sur l’instance de publication, utilisez la méthode **Activation du framework** dans le sidekick.
 
 <!--
 ### Associating Activities With the Target Cloud Configuration  {#associating-activities-with-the-target-cloud-configuration}
@@ -335,7 +332,7 @@ Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spé
    >
    >Si le fragment d’expérience a déjà été exporté, sélectionnez **Mise à jour dans Adobe Target**.
 
-1. Appuyez/cliquez sur **Exportation sans publication** ou **Publier** selon les besoins.
+1. Appuyez/cliquez sur **Exporter sans publication** ou **Publier** selon les besoins.
 
    >[!NOTE]
    >
@@ -355,11 +352,11 @@ Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spé
 
 >[!NOTE]
 >
->Vous pouvez également effectuer l’exportation à partir de l’éditeur de page, à l’aide de commandes comparables dans la variable [Informations sur la page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information) .
+>Vous pouvez également effectuer l’exportation à partir de l’éditeur de page à l’aide de commandes comparables dans le menu [Informations sur la page](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-information).
 
 ## Utilisation de vos fragments d’expérience dans Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Après avoir effectué les tâches précédentes, le fragment d’expérience s’affiche sur la page Offres de Target. Veuillez jeter un coup d’oeil au [documentation spécifique de Target](https://experiencecloud.adobe.com/resources/help/fr_FR/target/target/aem-experience-fragments.html) pour en savoir plus sur ce que vous pouvez y réaliser.
+Après avoir effectué les tâches précédentes, le fragment d’expérience s’affiche sur la page Offres de Target. Jetez un coup d’œil à la [documentation spécifique de Target](https://experiencecloud.adobe.com/resources/help/fr_FR/target/target/aem-experience-fragments.html) pour en savoir plus sur ce qu’il est possible de faire.
 
 >[!NOTE]
 >
@@ -367,17 +364,18 @@ Après avoir effectué les tâches précédentes, le fragment d’expérience s�
 
 ## Suppression d’un fragment d’expérience déjà exporté vers Adobe Target {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-La suppression d’un fragment d’expérience qui a déjà été exporté vers Target peut entraîner des problèmes si le fragment est déjà utilisé pour une offre dans Target. La suppression du fragment rendrait l’offre inutilisable, car le contenu du fragment est diffusé par AEM.
+La suppression d’un fragment d’expérience qui a déjà été exporté vers Target peut entraîner des problèmes si le fragment est déjà utilisé pour une offre dans Target. La suppression du fragment rendrait l’offre inutilisable, car le fragment de contenu est fourni par AEM.
 
-Pour éviter de telles situations :
+Pour éviter de telles situations :
 
 * Si le fragment d’expérience n’est pas actuellement utilisé dans une activité, AEM permet à l’utilisateur de le supprimer sans message d’avertissement.
 * Si le fragment d’expérience est actuellement utilisé par une activité dans Target, un message d’erreur avertit l’utilisateur AEM des conséquences possibles de la suppression du fragment sur l’activité.
 
-   Le message d’erreur apparu dans AEM n’empêche pas à l’utilisateur de forcer la suppression du fragment d’expérience. Lorsque le fragment d’expérience est supprimé :
+  Le message d’erreur apparu dans AEM n’empêche pas à l’utilisateur de forcer la suppression du fragment d’expérience. Lorsque le fragment d’expérience est supprimé :
 
    * l’offre Target qui utilise le fragment d’expérience AEM peut souffrir d’un comportement indésirable ;
 
       * l’offre effectue toujours le rendu, car le code HTML du fragment d’expérience a été transmis à Target ;
       * les références du fragment d’expérience peuvent ne pas fonctionner correctement si les ressources référencées ont également été supprimées dans AEM.
+
    * Bien sûr, toute modification supplémentaire apportée au fragment d’expérience est impossible, car le fragment d’expérience n’existe plus dans AEM.

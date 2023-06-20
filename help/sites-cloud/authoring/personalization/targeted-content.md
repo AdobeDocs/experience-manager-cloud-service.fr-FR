@@ -2,10 +2,10 @@
 title: Création de contenu ciblé en mode Ciblage
 description: Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 41027653bffb064b3c313d6512b0314336f6c8dc
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '5414'
-ht-degree: 51%
+source-wordcount: '5412'
+ht-degree: 53%
 
 ---
 
@@ -86,7 +86,7 @@ En outre, vous pouvez gérer les objectifs et les mesures pour toutes les activi
 
 Lorsque vous ajoutez une activité, elle apparaît également dans la variable [Console Activités](/help/sites-cloud/authoring/personalization/activities.md).
 
-Pour ajouter une activité :
+Pour ajouter une activité :
 
 1. Utilisez la variable **Marque** menu déroulant pour sélectionner la marque pour laquelle vous souhaitez créer l’activité.
 
@@ -129,7 +129,7 @@ Procédez comme suit pour lancer le processus de ciblage de contenu pour une act
 >
 >Pour utiliser la procédure de ciblage, vous devez être membre du groupe d’utilisateurs créateurs d’activités ciblées.
 
-Pour ajouter une activité :
+Pour ajouter une activité :
 
 1. Dans le **Marque** , sélectionnez la marque contenant l’activité sur laquelle vous travaillez.
 1. Dans le **Activité** menu déroulant, sélectionnez l’activité pour laquelle vous créez du contenu ciblé.
@@ -151,7 +151,7 @@ Après vous [lancer le processus de ciblage ;](#the-targeting-process-create-tar
 
 >[!CAUTION]
 >
->Soyez prudent lorsque vous désactivez le ciblage d’un composant déjà ciblé dans l’instance d’auteur. L’activité correspondante sera automatiquement supprimée de l’instance de publication.
+>Soyez prudent lorsque vous désactivez le ciblage d’un composant déjà ciblé dans l’instance d’auteur. L’activité correspondante est également automatiquement supprimée de l’instance de publication.
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ Effectuez la procédure suivante après [lancer le processus de ciblage ;](#the-
 
    ![Bouton Cible](../assets/targeted-target-button.png)
 
-   Le contenu du composant est l’offre de l’expérience par défaut. Lorsqu’un composant est ciblé, son nœud par défaut sera répliqué pour chaque expérience. Cela est nécessaire afin de modifier le nœud de contenu adéquat lors d’une création spécifique à une expérience. Pour ces expériences autres que l’expérience par défaut, [ajoutez une offre personnalisée](#adding-a-custom-offer) ou [une offre de bibliothèque](#adding-an-offer-from-an-offer-library).
+   Le contenu du composant est l’offre de l’expérience par défaut. Lorsqu’un composant est ciblé, son noeud par défaut est répliqué pour chaque expérience. Cela est nécessaire afin de modifier le nœud de contenu adéquat lors d’une création spécifique à une expérience. Pour ces expériences autres que l’expérience par défaut, [ajoutez une offre personnalisée](#adding-a-custom-offer) ou [une offre de bibliothèque](#adding-an-offer-from-an-offer-library).
 
 #### Création d’une offre en ajoutant un composant cible {#creating-an-offer-by-adding-a-target-component}
 
@@ -487,33 +487,33 @@ Pour plus d’informations sur les mesures de succès, voir [Documentation d’A
 
 Pour configurer les paramètres en cas d’utilisation du ciblage AEM :
 
-1. Pour indiquer le moment où l’activité commence, utilisez la variable **Début** pour sélectionner l’une des valeurs suivantes :
+1. Pour spécifier le moment où l’activité commence, utilisez le menu déroulant **Démarrer** pour sélectionner l’une des valeurs suivantes :
 
    * **Lorsqu’il est activé**: L’activité démarre lorsque la page contenant le contenu ciblé est activée.
    * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
 
 1. Pour spécifier le moment où l’activité se termine, utilisez la variable **Fin** pour sélectionner l’une des valeurs suivantes :
 
-   * **Lorsque désactivé**: L’activité se termine lorsque la page contenant le contenu ciblé est désactivée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de fin de l’activité.
+   * **Lorsqu’elle est désactivée** : l’activité se termine lorsque la page qui contient le contenu ciblé est désactivée.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône de calendrier, sélectionnez une date et spécifiez l’heure de fin de l’activité.
 
-1. Pour spécifier une priorité pour l’activité, utilisez le curseur pour sélectionner l’une des options suivantes : **Faible**, **Normal** ou **Élevée**.
+1. Pour spécifier une priorité pour l’activité, utilisez le curseur pour sélectionner l’une des options suivantes : **Faible**, **Normale** ou **Élevée**.
 
 ### Configuration des objectifs et des paramètres (Adobe Target) {#configuring-goals-settings-adobe-target}
 
 Pour configurer des objectifs et des paramètres en cas d’utilisation d’Adobe Target :
 
-1. Pour indiquer le moment où l’activité commence, utilisez la variable **Début** pour sélectionner l’une des valeurs suivantes :
+1. Pour spécifier le moment où l’activité commence, utilisez le menu déroulant **Démarrer** pour sélectionner l’une des valeurs suivantes :
 
    * **Lorsqu’il est activé**: L’activité démarre lorsque la page contenant le contenu ciblé est activée.
    * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de début de l’activité.
 
 1. Pour spécifier le moment où l’activité se termine, utilisez la variable **Fin** pour sélectionner l’une des valeurs suivantes :
 
-   * **Lorsque désactivé**: L’activité se termine lorsque la page contenant le contenu ciblé est désactivée.
-   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône du calendrier, sélectionnez une date et indiquez l’heure de fin de l’activité.
+   * **Lorsqu’elle est désactivée** : l’activité se termine lorsque la page qui contient le contenu ciblé est désactivée.
+   * **Date et heure spécifiées :** heure spécifique. Lorsque vous sélectionnez cette option, cliquez ou appuyez sur l’icône de calendrier, sélectionnez une date et spécifiez l’heure de fin de l’activité.
 
-1. Pour spécifier une priorité pour l’activité, utilisez le curseur pour sélectionner l’une des options suivantes : **Faible**, **Normal** ou **Élevée**.
+1. Pour spécifier une priorité pour l’activité, utilisez le curseur pour sélectionner l’une des options suivantes : **Faible**, **Normale** ou **Élevée**.
 1. Si vous avez configuré Adobe Analytics avec votre compte Adobe Target, le menu déroulant de la **source de création de rapports** s’affiche. Sélectionnez **Adobe Target** ou **Adobe Analytics** en tant que source.
 
    Si vous avez sélectionné **Adobe Analytics**, sélectionnez la société et une suite de rapports. Si vous sélectionnez **Adobe Target**, aucune action n’est requise.

@@ -2,10 +2,10 @@
 title: Mise en page réactive
 description: AEM permet de créer une mise en page réactive pour vos pages.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 73%
+source-wordcount: '1745'
+ht-degree: 64%
 
 ---
 
@@ -28,14 +28,14 @@ AEM effectue une mise en page réactive de vos pages en combinant plusieurs méc
 
 * Composant [**Conteneur de mises en page**](#adding-a-layout-container-and-its-content-edit-mode)
 
-   Ce composant, qui est disponible dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser), fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut également être défini comme le système de paragraphes par défaut de votre page.
+  Ce composant, qui est disponible dans l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser), fournit un système de paragraphes/grille qui permet d’ajouter et de positionner des composants dans une grille réactive. Il peut également être défini comme le système de paragraphes par défaut de votre page.
 
 * [**Mode Mise en page**](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes)
 
-   Une fois que le conteneur de mises en page est positionné sur la page, vous pouvez utiliser le mode **Mise en page** pour placer le contenu dans la grille réactive.
+  Une fois que le conteneur de mises en page est positionné sur la page, vous pouvez utiliser le mode **Mise en page** pour placer le contenu dans la grille réactive.
 
 * [**Émulateur**](#selecting-a-device-to-emulate)
-Permet de créer et de modifier des sites web réactifs qui réorganisent la mise en page en fonction de l’appareil ou de la taille de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut ensuite afficher un aperçu du contenu à l’aide de l’émulateur.
+Vous pouvez ainsi créer et modifier des sites web réactifs qui réorganisent la mise en page en fonction de la taille de l’appareil ou de la fenêtre en redimensionnant les composants de manière interactive. L’utilisateur peut alors voir comment le contenu est rendu à l’aide de l’émulateur.
 
 Grâce à ces mécanismes de grille réactive, vous pouvez :
 
@@ -74,9 +74,9 @@ L’appareil **Bureau**, qui ne possède pas de largeur spécifique, est associ�
 >
 >Il est possible de définir des points d’arrêt pour chaque appareil, mais cela augmenterait la charge de travail requise pour la définition des mises en page et la maintenance.
 
-Lors de l’utilisation de l’émulateur, vous sélectionnez un appareil spécifique pour l’émulation et la définition de mise en page. Le point d’arrêt associé est également mis en surbrillance. Toute modification de mise en page que vous apportez sera applicable aux autres appareils auxquels s’applique le point d’arrêt, c’est-à-dire aux appareils situés à gauche du marqueur de point d’arrêt principal, mais avant le marqueur de point d’arrêt suivant.
+Lors de l’utilisation de l’émulateur, vous sélectionnez un appareil spécifique pour l’émulation et la définition de mise en page, et le point d’arrêt associé est également mis en surbrillance. Toutes les modifications apportées à la mise en page s’appliquent à d’autres appareils auxquels s’applique le point d’arrêt. En d’autres termes, tous les appareils placés à gauche du principal marqueur de point d’arrêt, mais avant le marqueur de point d’arrêt suivant.
 
-Par exemple, lorsque vous sélectionnez le périphérique **iPhone 6 Plus** (défini avec une largeur de 540 pixels) pour l’émulation et la mise en page, le point d’arrêt **Téléphone** (défini sur 768 pixels) sera également activé. Toutes les modifications apportées à la mise en page pour le **iPhone 6** s’applique à d’autres périphériques sous **Téléphone** point d’arrêt, tel que **iPhone 5** (définie sur 320 pixels).
+Par exemple, lorsque vous sélectionnez le périphérique **iPhone 6 Plus** (défini avec une largeur de 540 pixels) pour l’émulation et la mise en page, le point d’arrêt **Téléphone** (défini sur 768 pixels) est également activé. Toutes les modifications apportées à la mise en page pour le **iPhone 6** s’appliquent à d’autres périphériques sous **Téléphone** point d’arrêt, tel que **iPhone 5** (définie sur 320 pixels).
 
 ![Émulateurs](/help/sites-cloud/authoring/assets/responsive-layout-emulators.png)
 
@@ -124,7 +124,6 @@ Par exemple, lorsque vous sélectionnez le périphérique **iPhone 6 Plus** (dé
    * La ligne du pli ne s’affiche pas si la hauteur de l’appareil émulé est supérieure à la taille de l’écran.
    * Le pli est affiché pour faciliter le travail de l’auteur et n’apparaît pas sur la page publiée.
 
-
 ## Ajout d’un conteneur de mises en page et de son contenu (mode d’édition) {#adding-a-layout-container-and-its-content-edit-mode}
 
 Un **conteneur de mises en page** est un système de paragraphes qui présente les caractéristiques suivantes :
@@ -158,16 +157,16 @@ Un **conteneur de mises en page** est un système de paragraphes qui présente l
 
    ![Bouton Parent](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
-1. Si le composant de mise en page est imbriqué, sélectionnez l’option **Parent** présente une sélection déroulante, ce qui vous permet de sélectionner le conteneur de mises en page imbriqué ou ses parents.
+1. Si le composant de mise en page est imbriqué, sélectionnez l’option **Parent** présente une liste déroulante, ce qui vous permet de sélectionner le conteneur de mises en page imbriqué ou ses parents.
 
    Lorsque vous placez le pointeur de la souris sur les noms de conteneur dans la liste déroulante, leurs contours s’affichent sur la page.
 
-   * Les contours du conteneur de mises en page imbriqué du plus bas niveau s’affichent en bleu.
-   * Les contours de chaque conteneur successif s’affichent dans une nuance de bleu plus claire.
+   * Le conteneur de mises en page imbriqué le plus bas est indiqué en bleu.
+   * Chaque conteneur successif est entouré d’une nuance de bleu plus claire.
 
    ![Conteneurs imbriqués](/help/sites-cloud/authoring/assets/responsive-layout-nested.png)
 
-1. Cette opération sélectionne l’ensemble de la grille avec son contenu. La barre d’outils s’affiche. Vous pouvez alors sélectionner une action comme **Supprimer**.
+1. La grille entière est mise en surbrillance avec son contenu. La barre d’outils de l’action s’affiche, dans laquelle vous pouvez sélectionner une action, telle que **Supprimer.**
 
 ## Définition des mises en page (mode Mise en page) {#defining-layouts-layout-mode}
 
@@ -188,55 +187,56 @@ Le mode **Mise en page** peut être activé de deux façons.
 
 Une fois le mode Mise en page sélectionné, vous pouvez effectuer diverses actions sur une grille :
 
-* Redimensionnez les composants de contenu à l’aide des points bleus. Le redimensionnement s’aligne toujours sur la grille. Lors du redimensionnement, la grille d’arrière-plan s’affiche pour faciliter l’alignement :
+* Redimensionnez les composants de contenu à l’aide des points bleus. Le redimensionnement s’accroche toujours à la grille. Lors du redimensionnement, la grille d’arrière-plan s’affiche pour faciliter l’alignement :
 
-   ![Redimensionnement des composants](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
+  ![Redimensionnement des composants](/help/sites-cloud/authoring/assets/responsive-layout-resizing.png)
 
-   >[!NOTE]
-   >
-   >Les proportions et les rapports sont conservés lorsque des composants, tels que des **images**, sont redimensionnés.
+  >[!NOTE]
+  >
+  >Les proportions et les ratios sont conservés lorsque des composants tels que **Images** sont redimensionnées.
 
 * Cliquez ou appuyez sur un composant de contenu. La barre d’outils propose les options suivantes :
    * **Parent** : permet de sélectionner l’intégralité du composant Conteneur de mises en pages pour effectuer une opération.
-   * **Flotter sur une nouvelle ligne** : le composant est déplacé vers une nouvelle ligne selon l’espace disponible dans la grille.
-   * **Masquer le composant** : le composant devient invisible (il peut être restauré à partir de la barre d’outils du conteneur de mises en page).
+   * **Flotter sur une nouvelle ligne** - Le composant est déplacé sur une nouvelle ligne, selon l’espace disponible dans la grille.
+   * **Masquer le composant** - Le composant est rendu invisible (il peut être restauré à partir de la barre d’outils du conteneur de mises en page).
 
-   ![Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
+  ![Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide.png)
 
-* En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils de ce mode s’affiche.
+* En mode **Mise en page**, appuyez ou cliquez sur **Faire glisser les composants ici** pour sélectionner l’intégralité du composant. La barre d’outils s’affiche pour ce mode.
 
-   La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
+  La barre d’outils propose différentes options en fonction de l’état du composant de mise en page et des composants qui lui sont associés. Par exemple :
 
    * **Parent** : permet de sélectionner le composant parent.
 
-      ![Bouton Parent](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
+     ![Bouton Parent](/help/sites-cloud/authoring/assets/responsive-layout-parent-button.png)
 
    * **Afficher les composants masqués** : affiche tous les composants ou des composants individuels. Le chiffre indique le nombre actuel de composants masqués. Le compteur indique le nombre de composants masqués.
 
-      ![Bouton Afficher les composants masqués](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
+     ![Bouton Afficher les composants masqués](/help/sites-cloud/authoring/assets/responsive-layout-show-button.png)
 
-   * **Rétablir la disposition du point d’arrêt** : rétablit la mise en page par défaut. Aucune mise en page personnalisée n’est donc imposée.
+   * **Rétablissement de la disposition du point d’arrêt** - Revenez à la mise en page par défaut. Aucune mise en page personnalisée n’est imposée.
 
-      ![Bouton Rétablir la disposition du point d’arrêt](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
+     ![Bouton Rétablir la disposition du point d’arrêt](/help/sites-cloud/authoring/assets/responsive-layout-revert-button.png)
 
    * **Flotter sur une nouvelle ligne** : déplace le composant d’une position vers le haut si l’espace est suffisant.
 
-      ![Bouton Flotter sur une nouvelle ligne](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
+     ![Bouton Flotter sur une nouvelle ligne](/help/sites-cloud/authoring/assets/responsive-layout-float-button.png)
 
    * **Masquer le composant** : masque le composant actif.
 
-      ![Bouton Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
-   >[!NOTE]
-   >
-   >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
+     ![Bouton Masquer le composant](/help/sites-cloud/authoring/assets/responsive-layout-hide-button.png)
+
+  >[!NOTE]
+  >
+  >Dans l’exemple ci-dessus, les actions de flottement et de masquage sont disponibles, car ce conteneur de mises en page est imbriqué dans un conteneur de mises en page parent.
 
    * **Afficher les composants**
-Sélectionnez les composants parents pour afficher la barre d’outils comportant 
-l’option **Afficher les composants masqués**. Dans cet exemple, deux composants sont masqués.
+Sélectionnez les composants parents pour afficher la barre d’outils comportant l’option **Afficher les composants masqués**. Dans cet exemple, deux composants sont masqués.
 
-      ![Afficher les composants](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
-   Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
+     ![Afficher les composants](/help/sites-cloud/authoring/assets/responsive-layout-unhide.png)
 
-   ![Bouton Restaurer tout](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+  Si vous sélectionnez l’option **Afficher les composants masqués**, les composants actuellement masqués s’affichent en bleu à leur position initiale.
 
-   Sélectionnez **Restaurer tout** pour afficher tous les composants masqués.
+  ![Bouton Restaurer tout](/help/sites-cloud/authoring/assets/responsive-layout-restore-all.png)
+
+  Sélectionnez **Restaurer tout** pour afficher tous les composants masqués.

@@ -2,10 +2,10 @@
 title: Création de lancements
 description: Vous pouvez créer un lancement pour permettre la mise à jour d’une nouvelle version de pages web existantes en vue d’une activation ultérieure.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1045'
-ht-degree: 74%
+source-wordcount: '1042'
+ht-degree: 73%
 
 ---
 
@@ -28,7 +28,6 @@ Vous pouvez éventuellement indiquer la **date de lancement** (et l’heure) pou
 >Ces pages ne peuvent pas être modifiées. Le message suivant s’affiche :
 >
 >* **Cette page ne fait pas partie du lancement. Accéder à la page de production**
-
 
 ## Création d’un lancement {#creating-a-launch}
 
@@ -80,7 +79,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 1. À l’étape **Propriétés** de l’assistant, vous pouvez définir les paramètres suivants :
 
    * **Titre du lancement** : nom du lancement. Le nom doit avoir un sens pour les auteurs.
-   * **avec le contenu existant** : le contenu d’origine sera utilisé pour créer le lancement.
+   * **avec du contenu existant**: le contenu d’origine est utilisé pour créer le lancement.
    * **en utilisant un nouveau modèle pour remplacer la page** : voir [Création d’un lancement avec un nouveau modèle](#create-launch-with-new-template) pour plus de détails.
    * **Hériter des données actives de la page source** : sélectionnez cette option pour mettre automatiquement à jour le contenu des pages de lancement lors de la modification des pages source. Cette option transforme le lancement en [Live Copy](/help/sites-cloud/administering/msm/overview.md). Par défaut, cette option est sélectionnée.-->
    * **Date de lancement** : date et heure d’activation de la copie de lancement (selon l’indicateur **Prêt pour la production**. Voir [Lancements – Ordre des événements](/help/sites-cloud/authoring/launches/overview.md#launches-the-order-of-events)).
@@ -113,7 +112,7 @@ La sélection de cette option va :
 
 >[!CAUTION]
 >
->Comme un autre modèle est utilisé, la nouvelle page est vide. En raison de la structure de page différente, aucun contenu ne sera copié.
+>Comme un autre modèle est utilisé, la nouvelle page est vide. En raison de la structure de page différente, aucun contenu n’est copié.
 >
 >Ce mécanisme peut être utilisé pour modifier le modèle d’une [page existante](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#creating-a-new-page), bien que la perte du contenu doit être envisagée.
 

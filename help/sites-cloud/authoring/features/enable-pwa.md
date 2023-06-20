@@ -2,10 +2,10 @@
 title: Activation des fonctionnalités d’application web progressive
 description: AEM Sites permet à l’auteur du contenu d’activer des fonctionnalités d’application web progressive sur n’importe quel site par le biais d’une configuration simple plutôt que par un codage.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 3910b47c5d25679d03409380d91afaa6ff5ab265
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2004'
-ht-degree: 100%
+source-wordcount: '2000'
+ht-degree: 94%
 
 ---
 
@@ -22,7 +22,7 @@ Grâce à une configuration simple, un auteur de contenu peut désormais activer
 >* la compréhension des stratégies de mise en cache ;
 >* l’assistance de votre équipe de développement.
 >
->Avant d’utiliser cette fonctionnalité, il est recommandé de discuter de cette question avec votre équipe de développement afin de définir le meilleur moyen de l’exploiter au sein de votre projet.
+>Avant d’utiliser cette fonctionnalité, il est recommandé de discuter de cette question avec votre équipe de développement afin de définir la meilleure manière de l’utiliser pour votre projet.
 
 ## Présentation {#introduction}
 
@@ -50,7 +50,7 @@ L’auteur devra coordonner ces étapes techniques avec l’équipe de développ
 
 ### Utilisez les composants principaux {#adjust-components}
 
-Les composants principaux de la version 2.15.0 et des versions ultérieures prennent entièrement en charge les fonctionnalités PWA d’AEM Sites. Comme AEMaaCS inclut toujours la dernière version des composants principaux, vous pouvez utiliser les fonctionnalités PWA prêtes à l’emploi. Votre projet AEMaaCS répond automatiquement à cette exigence.
+Les composants principaux de la version 2.15.0 et des versions ultérieures prennent entièrement en charge les fonctionnalités PWA d’AEM Sites. Comme AEMaaCS inclut toujours la dernière version des composants principaux, vous pouvez utiliser les fonctionnalités de PWA prêtes à l’emploi. Votre projet AEMaaCS répond automatiquement à cette exigence.
 
 >[!NOTE]
 >
@@ -123,7 +123,6 @@ Une fois [les conditions préalables](#prerequisites) satisfaites, il est très 
 
       ![Définir des chemins hors ligne PWA](../assets/pwa-offline.png)
 
-
 1. appuyer et cliquer sur **Enregistrer et fermer**.
 
 Votre site est maintenant configuré et vous pouvez [l’installer en tant qu’application locale.](#using-pwa-enabled-site)
@@ -136,7 +135,7 @@ Maintenant que vous avez [configuré votre site pour prendre en charge le PWA,](
 1. Une nouvelle icône apparaît dans la barre d’adresse du navigateur, indiquant que le site peut être installé en tant qu’application locale.
    * Selon le navigateur, l’icône peut varier et le navigateur peut également afficher une notification (comme une bannière ou une boîte de dialogue) indiquant qu’il est possible de procéder à l’installation en tant qu’application locale.
 1. Installez l’application.
-1. L’application sera installée sur l’écran d’accueil de votre appareil.
+1. L’application est installée sur l’écran d’accueil de votre appareil.
 1. Ouvrez l’application, parcourez le site et vérifiez que les pages sont disponibles hors ligne.
 
 ## Options détaillées {#detailed-options}
@@ -182,12 +181,12 @@ Ces paramètres rendent des parties de ce site disponibles hors ligne et localem
 
 * **Stratégie de mise en cache et fréquence d’actualisation du contenu** : ce paramètre définit le modèle de mise en cache de votre PWA.
    * **Modérée** : [ce paramètre](https://web.dev/stale-while-revalidate/) est valable pour la plupart des sites et est défini comme valeur par défaut.
-      * Avec ce paramètre, le contenu affiché pour la première fois par l’utilisateur sera chargé à partir du cache et pendant que l’utilisateur consomme ce contenu, le reste du contenu du cache sera revalidé.
+      * Avec ce paramètre, le contenu affiché pour la première fois par l’utilisateur est chargé à partir du cache et, lorsque l’utilisateur consomme ce contenu, le reste du contenu du cache est revalidé.
    * **Fréquente** : ce paramètre est recommandé pour les sites qui ont besoin de mises à jour très rapides, tels que les sites d’enchères.
       * Avec ce paramètre, l’application recherche d’abord le contenu le plus récent sur le réseau et, si celui-ci n’est pas disponible, elle se réfère au cache local.
    * **Rare** : concerne les sites qui sont pour ainsi dire statiques, tels que les pages de référence.
       * Avec ce paramètre, l’application recherche d’abord le contenu dans le cache et, s’il n’est pas disponible, elle se réfère au réseau pour le récupérer.
-* **Prémise en cache des fichiers** : ces fichiers hébergés sur AEM seront enregistrés dans le cache du navigateur local lorsque l’agent de service s’installe et avant son utilisation. Cette option garantit que l’application Web est entièrement fonctionnelle lorsqu’elle est hors ligne.
+* **Pré-mise en cache des fichiers** - Ces fichiers hébergés sur AEM sont enregistrés dans le cache du navigateur local lorsque le service worker est installé et avant d’être utilisé. Cette option garantit que l’application Web est entièrement fonctionnelle lorsqu’elle est hors ligne.
 * **Inclusions des chemins** : les demandes réseau pour les chemins définis sont interceptées et le contenu mis en cache est renvoyé conformément à la **stratégie de mise en cache et à la fréquence d’actualisation** configurées pour le contenu.
 * **Exclusions du cache** : ces fichiers ne seront jamais mis en cache, quels que soient les paramètres définis dans **Prémise en cache des fichiers** et dans **Inclusions des chemins**.
 

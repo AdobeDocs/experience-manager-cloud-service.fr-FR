@@ -2,10 +2,10 @@
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée et, avec l’éditeur de modèles, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '4596'
-ht-degree: 67%
+source-wordcount: '4579'
+ht-degree: 63%
 
 ---
 
@@ -91,7 +91,7 @@ Lors de la création d’un modèle modifiable :
 >
 >Ne saisissez jamais d’informations qui doivent être internationalisées dans un modèle. <!-- Never enter any information that needs to be [internationalized](/help/sites-developing/i18n.md) into a template.-->
 >
->Pour les éléments de modèle tels que les en-têtes et les pieds de page qui doivent être localisés, utilisez les [fonctionnalités de localisation des composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr)
+>Pour les éléments de modèle tels que les en-têtes et les pieds de page qui doivent être localisés, utilisez la variable [fonctions de localisation des composants principaux.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=fr)
 
 ### Création d’un dossier de modèles - Administrateur {#creating-a-template-folder-admin}
 
@@ -120,7 +120,7 @@ Vous devez créer un dossier de modèles pour votre projet afin de contenir les 
    * **Nom du modèle**
    * **Description**
 
-1. Sélectionnez **Créer**. Un message de confirmation s’affiche. Sélectionnez **Ouvrir** pour commencer à modifier le modèle ou **Terminé** pour revenir à la console de modèles.
+1. Sélectionnez **Créer**. Une confirmation s’affiche, sélectionnez **Ouvrir** pour commencer à modifier le modèle ou **Terminé** pour revenir à la console de modèles.
 
    >[!NOTE]
    >
@@ -202,11 +202,11 @@ Un modèle peut être rendu disponible ou indisponible pour certaines branches d
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
-   L’ordre des chemins n’est pas pertinent, tous les chemins sont analysés et tous les modèles sont récupérés.
+   L’ordre des chemins n’a aucune importance. Tous les chemins sont analysés et tous les modèles sont récupérés.
 
    >[!NOTE]
    >
-   >Si la variable **Modèles autorisés** La liste est vide, l’arborescence est ascendante jusqu’à ce qu’une valeur/liste soit trouvée.
+   >Si la variable **Modèles autorisés** La liste est laissée vide, puis l’arborescence est ascendante jusqu’à ce qu’une valeur/liste soit trouvée.
    >
    >
    >Voir [Disponibilité des modèles](/help/implementing/developing/components/templates.md#template-availability) : les principes des modèles autorisés restent identiques.
@@ -262,7 +262,7 @@ Lorsque les composants sont verrouillés, vous pouvez ajouter du contenu qui ne 
 
 #### Contenu initial {#template-initial-content}
 
-Lorsqu’un composant a été déverrouillé, vous pouvez définir le [contenu initial](#editing-a-template-initial-content-author) qui sera copié dans les pages créées à partir du modèle. Ces composants déverrouillés peuvent être modifiés dans les pages créées.
+Lorsqu’un composant a été déverrouillé, vous pouvez définir la variable [contenu initial](#editing-a-template-initial-content-author) qui est copié dans les pages créées à partir du modèle. Ces composants déverrouillés peuvent être modifiés dans les pages créées.
 
 >[!NOTE]
 >
@@ -313,7 +313,7 @@ Une fois ajouté, chaque composant est marqué par :
 >
 >Lorsque vous ajoutez un composant **Titre** prêt à l’emploi au modèle, il contient le texte **structure** par défaut.
 >
->Si vous le modifiez et que vous ajoutez votre propre texte, le texte mis à jour sera utilisé pour les pages créées à partir du modèle.
+>Si vous la modifiez et ajoutez votre propre texte, ce texte mis à jour est utilisé lorsqu’une page est créée à partir du modèle.
 >
 >Si vous laissez le texte par défaut (structure), le titre propose par défaut le nom de la page suivante.
 
@@ -368,7 +368,7 @@ Vous pouvez ajouter une nouvelle politique en sélectionnant le bouton d’ajout
 
 ![Bouton Ajouter une politique](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-La politique existante sélectionnée dans le menu déroulant **Sélectionner une politique** peut être copiée comme nouvelle politique à l’aide du bouton de copie en regard du menu déroulant. Vous devez ensuite attribuer un nouveau titre dans le champ **Titre de la politique**. Par défaut, la politique copiée sera intitulée **Copie de X**, X étant le titre de la politique copiée.
+La politique existante sélectionnée dans le menu déroulant **Sélectionner une politique** peut être copiée comme nouvelle politique à l’aide du bouton de copie en regard du menu déroulant. Vous devez ensuite attribuer un nouveau titre dans le champ **Titre de la politique**. Par défaut, la stratégie copiée est intitulée **Copie de X**, où X est le titre de la stratégie copiée.
 
 ![Bouton Copier la politique](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
@@ -427,7 +427,7 @@ Les paramètres de stratégie et de propriétés d’un conteneur de mises en pa
 
 >[!NOTE]
 >
->La configuration d’une stratégie est obligatoire pour les composants de conteneur, car elle vous permet de définir les composants qui seront disponibles dans le conteneur.
+>La configuration d’une stratégie est obligatoire pour les composants de conteneur, car elle vous permet de définir les composants disponibles dans le conteneur.
 
 La fenêtre de paramétrage est divisée en deux, comme pour l&#39;utilisation générale de la fenêtre.
 
@@ -478,14 +478,14 @@ Vous déverrouillez/verrouillez des composants pour définir si le contenu peut 
 Lorsqu’un composant a été déverrouillé :
 
 * Un indicateur de cadenas ouvert s’affiche dans la bordure.
-* La barre d’outils du composant sera ajustée en conséquence.
+* La barre d’outils du composant est ajustée en conséquence.
 * Le contenu déjà saisi ne s’affichera plus dans **Structure** mode .
    * Le contenu déjà saisi est considéré comme du contenu initial et n’est visible qu’en mode **Contenu initial**.
 * Les parents du composant déverrouillé ne peuvent être ni déplacés, ni coupés, ni supprimés.
 
 ![Bouton Verrouiller le composant](/help/sites-cloud/authoring/assets/templates-unlock-component.png)
 
-Cela comprend le déverrouillage des composants de conteneur afin que d’autres composants puissent être ajoutés, soit en mode **Contenu initial**, soit sur les pages résultantes. Si vous avez déjà ajouté des composants/du contenu au conteneur avant de le déverrouiller, ceux-ci ne s’afficheront plus en mode **Structure**, mais en mode **Contenu initial**. En mode **Structure**, seul le composant de conteneur est affiché avec sa liste de **Composants autorisés**.
+Cela comprend le déverrouillage des composants de conteneur afin que d’autres composants puissent être ajoutés, soit en mode **Contenu initial**, soit sur les pages résultantes. Si vous avez déjà ajouté des composants/du contenu au conteneur avant de le déverrouiller, ceux-ci ne s’affichent plus lorsque dans **Structure** , mais elles s’affichent dans **Contenu initial** mode . Dans **Mode Structure**, seul le composant de conteneur s’affiche avec sa liste de **Composants autorisés**.
 
 ![Composants autorisés](/help/sites-cloud/authoring/assets/templates-allowed-components.png)
 
@@ -513,18 +513,18 @@ Même si l’ensemble du contenu créé en mode **Structure** est visible en mod
 
 * Les composants déverrouillés pouvant être modifiés sont marqués. Lorsqu’ils sont sélectionnés, ils ont une bordure bleue :
 
-   ![Mode Contenu initial](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
+  ![Mode Contenu initial](/help/sites-cloud/authoring/assets/templates-initial-content-mode.png)
 
 * Les composants déverrouillés comportent une barre d’outils permettant de modifier et de configurer le contenu :
 
-   ![Composant déverrouillé](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
+  ![Composant déverrouillé](/help/sites-cloud/authoring/assets/templates-unlocked-components.png)
 
 * Si un composant de conteneur a été déverrouillé (en mode **Structure**), vous pouvez ajouter de nouveaux composants au conteneur (en mode **Contenu initial**). Les composants ajoutés en mode **Contenu initial** peuvent être déplacés ou supprimés dans les pages créées.
 
-   Vous pouvez ajouter le composant à l’aide de la zone **Faire glisser les composants ici** ou de l’option **Insérer un nouveau composant** de la barre d’outils du conteneur approprié.
+  Vous pouvez ajouter le composant à l’aide de la zone **Faire glisser les composants ici** ou de l’option **Insérer un nouveau composant** de la barre d’outils du conteneur approprié.
 
-   ![Ajouter un composant](/help/sites-cloud/authoring/assets/templates-add-component.png)
-   ![Ajouter un composant](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
+  ![Ajouter un composant](/help/sites-cloud/authoring/assets/templates-add-component.png)
+  ![Ajouter un composant](/help/sites-cloud/authoring/assets/templates-add-component-dialog.png)
 
 * Si le contenu initial du modèle est mis à jour après la création des pages en fonction du modèle, ces pages ne seront pas affectées par les modifications apportées au contenu initial du modèle.
 
@@ -540,7 +540,7 @@ Vous pouvez définir la disposition du modèle pour différents appareils. La [m
 
 >[!NOTE]
 >
->Les modifications apportées à la mise en page se répercutent en mode **Contenu initial**, mais aucune modification n’est visible en mode **Structure**.
+>Les modifications apportées à la mise en page sont répercutées dans **Contenu initial** , mais aucune modification n’est visible dans **Structure** mode .
 
 ![Modifier la mise en page d’un modèle](/help/sites-cloud/authoring/assets/templates-edit-layout.png)
 
@@ -566,24 +566,24 @@ Vous pouvez appliquer une politique de contenu au modèle ou aux pages créées.
 
 * Vous pouvez sélectionner une politique existante pour la page dans le menu déroulant **Sélectionner une politique**.
 
-   ![Sélecteur de politique](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
+  ![Sélecteur de politique](/help/sites-cloud/authoring/assets/templates-policy-selector.png)
 
-   Vous pouvez ajouter une nouvelle politique en sélectionnant le bouton d’ajout en regard du menu déroulant **Sélectionner une politique**. Vous devez ensuite attribuer un nouveau titre dans le champ **Titre de la politique**.
+  Vous pouvez ajouter une nouvelle politique en sélectionnant le bouton d’ajout en regard du menu déroulant **Sélectionner une politique**. Vous devez ensuite attribuer un nouveau titre dans le champ **Titre de la politique**.
 
-   ![Bouton Ajouter une politique](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
+  ![Bouton Ajouter une politique](/help/sites-cloud/authoring/assets/templates-add-policy-button.png)
 
-   La politique existante sélectionnée dans le menu déroulant **Sélectionner une politique** peut être copiée comme nouvelle politique à l’aide du bouton de copie en regard du menu déroulant. Vous devez ensuite attribuer un nouveau titre dans le champ **Titre de la politique**. Par défaut, la politique copiée sera intitulée **Copie de X**, X étant le titre de la politique copiée.
+  La politique existante sélectionnée dans le menu déroulant **Sélectionner une politique** peut être copiée comme nouvelle politique à l’aide du bouton de copie en regard du menu déroulant. Vous devez ensuite attribuer un nouveau titre dans le champ **Titre de la politique**. Par défaut, la stratégie copiée est intitulée **Copie de X**, où X est le titre de la stratégie copiée.
 
-   ![Bouton Copier la politique](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
+  ![Bouton Copier la politique](/help/sites-cloud/authoring/assets/templates-copy-policy-button.png)
 
 * Définissez le titre de la politique dans le champ **Titre de la politique**. Une politique doit comporter un titre pour faciliter sa sélection dans le menu déroulant **Sélectionner une politique**.
 
-   ![Titre de la politique](/help/sites-cloud/authoring/assets/templates-policy-title.png)
+  ![Titre de la politique](/help/sites-cloud/authoring/assets/templates-policy-title.png)
 
 * Vous pouvez saisir la description de la politique dans le champ **Description de la politique** (facultatif).
 * Dans la section **D’autres modèles utilisent également la politique sélectionnée**, vous pouvez facilement voir les autres modèles qui utilisent la politique sélectionnée dans le menu déroulant **Sélectionner une politique**.
 
-   ![Utilisation des politiques](/help/sites-cloud/authoring/assets/templates-policy-use.png)
+  ![Utilisation des politiques](/help/sites-cloud/authoring/assets/templates-policy-use.png)
 
 #### Propriétés de page {#page-properties}
 
@@ -593,17 +593,17 @@ Vous pouvez appliquer une politique de contenu au modèle ou aux pages créées.
 
 * Spécifiez les bibliothèques clientes à appliquer aux pages créées avec ce modèle. Saisissez le nom d’une bibliothèque dans le champ de la section **Bibliothèques clientes**.
 
-   ![Bibliothèques clientes](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
+  ![Bibliothèques clientes](/help/sites-cloud/authoring/assets/templates-client-side-libraries.png)
 
 * Si plusieurs bibliothèques s’avèrent nécessaires, cliquez sur le bouton Ajouter pour ajouter un champ supplémentaire pour le nom de la bibliothèque.
 
-   ![Bouton Ajouter](/help/sites-cloud/authoring/assets/templates-add-button.png)
+  ![Bouton Ajouter](/help/sites-cloud/authoring/assets/templates-add-button.png)
 
-   Ajoutez autant de champs que nécessaire pour les bibliothèques clientes.
+  Ajoutez autant de champs que nécessaire pour les bibliothèques clientes.
 
 * Définissez la position relative des bibliothèques, en fonction de vos besoins, en faisant glisser les champs à l’aide de la poignée.
 
-   ![Poignée de glissement](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
+  ![Poignée de glissement](/help/sites-cloud/authoring/assets/templates-drag-handle.png)
 
 >[!NOTE]
 >
@@ -633,13 +633,16 @@ Lors de la création de modèles, tenez compte des points suivants :
 
       * Elles sont immédiatement appliquées aux pages résultantes.
       * La publication du modèle modifié est toujours nécessaire pour que les visiteurs puissent voir les modifications.
+
    * Modifications apportées aux stratégies de contenu et aux configurations de conception :
 
       * Elles s’appliquent immédiatement aux pages créées.
       * La publication des modifications est nécessaire pour que les visiteurs puissent voir les modifications.
+
    * Modifications apportées au contenu initial :
 
       * Elles s’appliquent uniquement aux pages créées après les modifications apportées au modèle.
+
    * Les modifications apportées à la mise en page dépendent de l’appartenance du composant modifié :
 
       * Structure seule : appliquée immédiatement

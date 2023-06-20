@@ -2,10 +2,10 @@
 title: Ajout d’annotations de page
 description: Utilisez le mode d’annotation pour laisser des annotations et des schémas sur les pages, car vous utiliserez des pense-bêtes pour faciliter le processus de révision du contenu.
 exl-id: a9cb9745-8140-4795-a5f9-fb3a1a299bd8
-source-git-commit: 64d801b108229866394e993811a67f983be5df6c
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 97%
+source-wordcount: '698'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Outre l’affichage des annotations, le mode Annotation vous permet de créer, m
 
 1. Cliquez ou appuyez sur l’icône Ajouter une annotation (symbole plus à gauche de la barre d’outils) pour commencer à ajouter des annotations.
 
-1. Cliquez ou appuyez sur le composant requis (les composants qui peuvent être annotés sont encadrés en bleu) pour ajouter l’annotation et ouvrir la boîte de dialogue :
+1. Cliquez ou appuyez sur le composant requis (les composants pouvant être annotés sont mis en surbrillance avec une bordure bleue) pour ajouter l’annotation et ouvrir la boîte de dialogue :
 
    ![Ajout d’une annotation](/help/sites-cloud/authoring/assets/annotation-adding.png)
 
@@ -66,13 +66,13 @@ Outre l’affichage des annotations, le mode Annotation vous permet de créer, m
    * Saisissez le texte de l’annotation.
    * Créez une esquisse (traits et formes) pour mettre en surbrillance une zone du composant.
 
-      ![Bouton d’esquisse d’annotation](/help/sites-cloud/authoring/assets/annotation-sketch.png)
+     ![Bouton d’esquisse d’annotation](/help/sites-cloud/authoring/assets/annotation-sketch.png)
 
-      Le curseur prend la forme d’un pointeur lorsque vous créez une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
+     Le curseur prend la forme d’un pointeur lorsque vous créez une esquisse. Vous pouvez tracer plusieurs lignes distinctes. La ligne d’esquisse reflète la couleur de l’annotation et peut être une flèche, un cercle ou un ovale.
 
    * Choisissez ou changez la couleur :
 
-      ![Bouton d’échantillon de nuance d’annotation](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
+     ![Bouton d’échantillon de nuance d’annotation](/help/sites-cloud/authoring/assets/annotation-color-swatch.png)
 
 1. Pour fermer la boîte de dialogue de l’annotation, cliquez ou appuyez en dehors de la boîte de dialogue. Une vue tronquée de l’annotation s’affiche avec les schémas :
 

@@ -2,10 +2,10 @@
 title: Rechercher
 description: Trouvez votre contenu plus rapidement grâce à la recherche exhaustive
 exl-id: 8a799e9a-1461-4e79-ae90-1978af6cf0ed
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 70%
+source-wordcount: '491'
+ht-degree: 63%
 
 ---
 
@@ -33,16 +33,16 @@ Avec le rail de recherche, vous pouvez accomplir ce qui suit :
 
 Pour rechercher et filtrer vos ressources :
 
-1. Ouvrir **Rechercher** (avec la loupe dans la barre d’outils) et saisissez le terme à rechercher. Des suggestions sont faites et peuvent être sélectionnées :
+1. Ouvrir **Rechercher** (avec la loupe dans la barre d’outils) et saisissez le terme à rechercher. Les suggestions sont faites et peuvent être sélectionnées :
 
    ![Terme recherché](/help/sites-cloud/authoring/assets/search-term.png)
 
-   Par défaut, les résultats de la recherche sont limités à votre emplacement actuel (c’est-à-dire la console et le type de ressource associé) :
+   Par défaut, les résultats de la recherche sont limités à votre emplacement actuel (c’est-à-dire la console et le type de ressource associé) :
 
    ![Emplacement de recherche](/help/sites-cloud/authoring/assets/search-term-location.png)
 
 1. Si nécessaire, vous pouvez supprimer le filtre d’emplacement (sélectionnez **X** sur le filtre que vous souhaitez supprimer) pour effectuer une recherche dans toutes les consoles/tous les types de ressources.
-1. Les résultats s’affichent, regroupés selon la console et le type de ressource associé.
+1. Les résultats s&#39;affichent, regroupés selon la console et le type de ressource associé.
 
    Vous pouvez sélectionner une ressource spécifique (pour appliquer d’autres actions) ou accéder à d’autres actions en sélectionnant le type de ressource concerné, par exemple **Afficher tous les sites** :
 
@@ -67,7 +67,6 @@ Pour rechercher et filtrer vos ressources :
    >
    >* Selon le type de ressource que vous avez sélectionné ; par exemple, les critères Ressources et Communautés sont, de manière compréhensible, spécialisés.
    >* Votre instance comme les formulaires de recherche peuvent être personnalisés (approprié selon l’emplacement dans AEM).
-
 
 <!--
   >* Your instance as the [Search Forms](/help/sites-administering/search-forms.md) can be customized (appropriate to the location within AEM).
@@ -97,7 +96,7 @@ Outre la recherche par un large éventail de facettes, vous pouvez enregistrer u
 
    ![Enregistrement d’une recherche avec un nom](/help/sites-cloud/authoring/assets/search-save-name.png)
 
-1. La recherche enregistrée sera disponible dans le sélecteur lors de votre prochain accès au panneau de recherche :
+1. La recherche enregistrée est disponible dans le sélecteur lors de votre prochain accès au panneau de recherche :
 
    ![Recherches enregistrées](/help/sites-cloud/authoring/assets/saved-searches.png)
 

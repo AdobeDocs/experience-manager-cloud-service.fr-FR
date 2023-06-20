@@ -4,9 +4,9 @@ description: Explorez la récupération de contenu JSON à partir de votre envir
 hidefromtoc: true
 index: false
 exl-id: b7dc70f2-74a2-49f7-ae7e-776eab9845ae
-source-git-commit: 1949ee211b4f816e05aa779deb9e287347f006ad
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '986'
 ht-degree: 14%
 
 ---
@@ -81,7 +81,7 @@ Enfin, la fonction `fetchJsonFromGraphQL()` est utilisé pour effectuer la requ�
 
 ## Récupérer des données à partir de votre requête persistante {#use-persisted-query}
 
-Sur la ligne 25, nous indiquons à partir de quelle requête GraphQL persistante l’application doit récupérer les données. Le nom de la requête persistante est une combinaison du nom du point de terminaison (c.-à-d. `your-project` ou `aem-demo-assets`), suivie d’une barre oblique, puis du nom de la requête. Si vous avez suivi exactement les instructions du module précédent, la requête conservée que vous avez créée se trouve dans la variable `your-project` point de terminaison .
+Sur la ligne 25, nous indiquons à partir de quelle requête GraphQL persistante l’application doit récupérer les données. Le nom de la requête persistante est une combinaison du nom du point de terminaison (c.-à-d. `your-project` ou `aem-demo-assets`), suivie d’une barre oblique, puis du nom de la requête. Si vous avez suivi exactement les instructions précédentes du module, la requête que vous avez créée est dans la variable `your-project` point de terminaison .
 
 1. Mettez à jour le `persistedQueryName` pour utiliser la requête persistante que vous avez créée dans le module précédent. Si vous avez suivi la suggestion de dénomination, vous avez créé une requête persistante nommée `adventure-list` dans le `your-project` et vous définiriez la variable `persistedQueryName` vers `your-project/adventure-list`:
 

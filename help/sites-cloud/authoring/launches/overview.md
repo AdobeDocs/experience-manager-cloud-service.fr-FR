@@ -2,10 +2,10 @@
 title: Lancements
 description: Les lancements vous permettent de développer efficacement du contenu pour une version ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 54%
+source-wordcount: '903'
+ht-degree: 48%
 
 ---
 
@@ -51,7 +51,7 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
    * Les pages source de niveau supérieur sont connues sous le nom de **Production**.
       * Les pages source peuvent provenir de plusieurs branches (distinctes).
 
-   ![Ordre de fonctionnement des lancements](/help/sites-cloud/authoring/assets/launches-order.png)
+  ![Ordre de fonctionnement des lancements](/help/sites-cloud/authoring/assets/launches-order.png)
 
 * Modifier la configuration de lancement :
    * Ajoutez ou supprimez des pages et/ou des branches au lancement.
@@ -64,23 +64,23 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
    * Automatiquement, ce qui implique les étapes suivantes :
       * Le champ **Date de** **lancement** (**En direct**) : ce paramètre peut être défini lors de la création ou de la modification du lancement.
       * Le **Prêt pour la production** Indicateur : cette option ne peut être définie que lors de la modification d’un lancement.
-      * Si l’indicateur **Prêt pour la production** est défini, le lancement sera automatiquement converti en pages de production à la **date** de **lancement** (**En direct**) spécifiée. Après la promotion, les pages de production sont automatiquement publiées.\
-         Si aucune date n’a été définie, l’indicateur n’a aucun effet.
+      * Si la variable **Prêt pour la production** est défini, le lancement est automatiquement promu aux pages de production sur l’élément **Launch**(**En direct**) **date**. Après la promotion, les pages de production sont automatiquement publiées.\
+        Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 * Mettez à jour vos pages source et de lancement en parallèle :
    * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy).
    * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source.
 
-   ![Actions en parallèle](/help/sites-cloud/authoring/assets/launches-parallel.png)
+  ![Actions en parallèle](/help/sites-cloud/authoring/assets/launches-parallel.png)
 
 * [Création d’un lancement imbriqué](/help/sites-cloud/authoring/launches/creating.md#creating-a-nested-launch) - un lancement dans un lancement :
    * La source est un lancement existant.
    * Vous pouvez [promouvoir un lancement imbriqué](/help/sites-cloud/authoring/launches/promoting.md#promoting-a-nested-launch) à toute cible; il peut s’agir d’un lancement parent ou des pages source de niveau supérieur (production).
 
-   ![Lancement imbriqué](/help/sites-cloud/authoring/assets/launches-nested.png)
+  ![Lancement imbriqué](/help/sites-cloud/authoring/assets/launches-nested.png)
 
-   >[!CAUTION]
-   >
-   >La suppression d’un lancement supprime le lancement lui-même et tous les lancements imbriqués qui en sont des descendants.
+  >[!CAUTION]
+  >
+  >La suppression d’un lancement supprime le lancement lui-même et tous les lancements imbriqués qui en sont des descendants.
 
 >[!NOTE]
 >
@@ -92,11 +92,11 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
 
 1. Dans le **Sites** , accédez à la source du ou des lancements.
 1. Ouvrez le **Références** et sélectionnez la page source.
-1. Sélectionnez **Lancements**. Les lancements existants seront répertoriés, ainsi que l’accès à la **Console Lancements** :
+1. Sélectionner **Lancements**, les lancements existants sont répertoriés, ainsi que l’accès au **Console de lancements**:
 
    ![Références des lancements dans la console des sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
-1. Appuyez/cliquez sur le lancement qui vous intéresse. La liste des actions possibles s’affiche :
+1. Appuyez/cliquez sur le lancement approprié. La liste des actions possibles s’affiche :
 
    ![Actions à effectuer sur les lancements dans la console des sites](/help/sites-cloud/authoring/assets/launches-references-actions.png)
 
@@ -108,11 +108,11 @@ La console Lancements fournit un aperçu de vos lancements et permet d’appliqu
 
 * La **Console Lancements** dans la partie inférieure de la section **Lancements** du rail **Références** lors du parcours du contenu source dans la console Sites.
 
-   ![Lance la console dans les références des lancements de la console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
+  ![Lance la console dans les références des lancements de la console Sites](/help/sites-cloud/authoring/assets/launches-references.png)
 
 * Le bouton **Lancements** en haut à droite lors du parcours du contenu du lancement dans la console Sites :
 
-   ![Option Lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
+  ![Option Lancements dans la console Sites](/help/sites-cloud/authoring/assets/launches-console-navigate-launch-content.png)
 
 * Ou directement, par exemple, avec :
-   `https://<host>:<port>/libs/launches/content/launches.html`
+  `https://<host>:<port>/libs/launches/content/launches.html`

@@ -2,10 +2,10 @@
 title: Application de workflows aux pages
 description: Lors de la création de pages, vous avez la possibilité d’utiliser des workflows pour exécuter des actions sur vos pages. Il est possible d’appliquer plusieurs workflows.
 exl-id: 86e71f0e-e53e-40bc-901d-2a1ab347bd0a
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 72%
+source-wordcount: '661'
+ht-degree: 70%
 
 ---
 
@@ -31,7 +31,6 @@ Les workflows peuvent être démarrés à partir des éléments suivants :
 >
 >* Application de workflows à des ressources de gestion des ressources numériques.
 >* [Utilisation des workflows de projet](/help/sites-cloud/authoring/projects/workflows.md).
-
 
 <!-- 
 >* [How to apply workflows to DAM assets](/help/assets/assets-workflow.md).
@@ -104,6 +103,7 @@ Vous pouvez spécifier les détails suivants :
    * **Titre de module**
 
       * Pour faciliter l’identification, vous pouvez spécifier un titre pour le module.
+
    >[!NOTE]
    >
    >L’option **Conserver le package de workflow** est disponible lorsque le workflow a été configuré pour la prise en charge multi-ressource et que plusieurs ressources ont été sélectionnées.
@@ -122,14 +122,14 @@ Vous pouvez spécifier les détails suivants :
 
    * Une ressource existante pour afficher d’autres actions :
 
-      * **Inclure les enfants** pour indiquer que les enfants de la ressource seront inclus dans le workflow.
+      * **Inclure les enfants** pour indiquer que les enfants de cette ressource sont inclus dans le workflow.
 Une boîte de dialogue s’ouvre pour vous permettre d’affiner la sélection selon les critères suivants :
 
          * Inclure seulement les enfants immédiats
          * Inclure seulement les pages modifiées
          * Inclure seulement les pages déjà publiées
 
-         Tous les enfants spécifiés sont ajoutés à la liste des ressources auxquelles le workflow s’appliquera.
+        Tous les enfants spécifiés sont ajoutés à la liste des ressources auxquelles le workflow s’appliquera.
 
       * **Supprimer la sélection** pour supprimer cette ressource du workflow.
 

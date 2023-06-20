@@ -2,16 +2,16 @@
 title: Intégration à Adobe Target
 description: Intégration à Adobe Target
 exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
-source-git-commit: f40a2db6616aeaaf13f8ae19ab429a7301e6c05a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '727'
-ht-degree: 89%
+source-wordcount: '726'
+ht-degree: 86%
 
 ---
 
 # Intégration à Adobe Target{#integrating-with-adobe-target}
 
-Dans le cadre d’Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/fr/solutions/testing-targeting/testandtarget.html) vous permet d’améliorer la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. Adobe Target est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments ciblés à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne. AEM as a Cloud Service a adopté le workflow de ciblage qui est utilisé dans Adobe Target Standard. Si vous utilisez Target, vous connaissez l’environnement d’édition de ciblage d’AEM as a Cloud Service.
+Dans le cadre d’Adobe Marketing Cloud, [Adobe Target](https://www.adobe.com/fr/solutions/testing-targeting/testandtarget.html) vous permet d’améliorer la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. Adobe Target est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments ciblés à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne. AEM as a Cloud Service a adopté le workflow de ciblage qui est utilisé dans Adobe Target Standard. Si vous utilisez Target, vous connaissez l’environnement d’édition de ciblage dans AEM as a Cloud Service.
 
 Intégrez vos sites AEM à Adobe Target pour personnaliser le contenu dans vos pages :
 
@@ -54,7 +54,6 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 >* Les API 4.x sont configurées avec [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
-
 >[!CAUTION]
 >
 >Vous devez sécuriser le nœud de paramètres d’activité **c:ActivitySettings** sur l’instance de publication de sorte qu’il ne soit pas accessible pour les utilisateurs normaux. Le nœud de paramètres d’activité doit être accessible uniquement au service gérant la synchronisation de l’activité avec Adobe Target.
@@ -83,4 +82,3 @@ Intégrer AEM as a Cloud Service à Adobe Target nécessite des connaissances 
 >* 2 000 expériences
 >* 50 mesures
 >* 50 segments de création de rapports
-

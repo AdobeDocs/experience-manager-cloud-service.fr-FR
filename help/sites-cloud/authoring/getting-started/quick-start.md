@@ -2,10 +2,10 @@
 title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 07702fbebc768ee877d68219eff5551b09c7ff3e
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1585'
-ht-degree: 77%
+source-wordcount: '1572'
+ht-degree: 69%
 
 ---
 
@@ -33,7 +33,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
 
 * Réorganisation des pages
 
-   * Cette opération peut être effectuée dans la vue [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). Les changements seront appliqués et visibles dans d’autres vues.
+   * Vous pouvez le faire dans [Mode Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#list-view). Les modifications sont appliquées et visibles dans d’autres vues.
 
 ### Création de pages {#page-authoring}
 
@@ -52,7 +52,6 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
 >
 >* [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
 >* [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
-
 
 ### Recherche de votre page {#finding-your-page}
 
@@ -91,11 +90,11 @@ La sélection d’une page dépend du mode utilisé dans la console :
 
 1. Mode Colonnes :
 
-   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature afin d’indiquer que la page a été sélectionnée.
+   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
 
 1. Vue Liste :
 
-   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature afin d’indiquer que la page a été sélectionnée.
+   * Appuyez/cliquez sur la miniature de la ressource requise ; une coche apparaît sur la miniature pour indiquer qu’elle a été sélectionnée.
 
 1. Mode Carte :
 
@@ -103,7 +102,8 @@ La sélection d’une page dépend du mode utilisé dans la console :
 
       * Sur un appareil mobile : appuyez de manière prolongée sur la carte
       * Sur un ordinateur de bureau : utilisez l’[action rapide](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) représentée par l’icône illustrant une coche :
-   * Une coche apparaît sur la carte afin d’indiquer que la page a été sélectionnée.
+
+   * Une coche apparaît sur la carte pour indiquer que la page a été sélectionnée.
 
    ![Exemple de carte](/help/sites-cloud/authoring/assets/card.png)
 
@@ -112,7 +112,7 @@ La sélection d’une page dépend du mode utilisé dans la console :
 Les [actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) sont disponibles :
 
 1. [Accédez à la page](#finding-your-page) sur laquelle vous souhaitez effectuer une action.
-1. Placez le pointeur de la souris sur la carte qui représente la ressource requise. Les actions rapides s’affichent ensuite :
+1. Placez le pointeur de la souris sur la carte qui représente la ressource requise. Les actions rapides s’affichent :
 
    ![Actions de carte](/help/sites-cloud/authoring/assets/card-actions.png)
 
@@ -138,9 +138,9 @@ Pour modifier votre page :
       * Sélectionnez l’onglet des composants (l’[explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser)).
       * Faites glisser le composant requis sur la page.
 
-      Vous pouvez ouvrir (et fermer) le panneau latéral en cliquant sur l’icône suivante :
+     Vous pouvez ouvrir (et fermer) le panneau latéral en cliquant sur l’icône suivante :
 
-      ![Bouton bascule du panneau latéral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
+     ![Bouton bascule du panneau latéral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
    * [Modifier le contenu d’un composant existant](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) sur la page :
 
@@ -148,17 +148,21 @@ Pour modifier votre page :
       * Ouvrez l’éditeur statique pour le composant en appuyant longuement ou en double-cliquant lentement. Les actions disponibles s’affichent (pour certains composants, il s’agit d’une sélection limitée).
       * Pour afficher toutes les actions disponibles, passez en mode plein écran à l’aide de :
 
-         ![Bouton Plein écran](/help/sites-cloud/authoring/assets/full-screen.png)
+        ![Bouton Plein écran](/help/sites-cloud/authoring/assets/full-screen.png)
+
    * [Configurez les propriétés d’un composant existant :](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-edit-dialog)
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Utilisez la variable **Configurer** (clé à molette) pour ouvrir la boîte de dialogue.
+
    * [Déplacer un composant](/help/sites-cloud/authoring/fundamentals/editing-content.md#moving-a-component) soit :
 
       * Faites glisser le composant vers son nouvel emplacement.
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Couper** puis **Coller** suivant vos besoins.
+
    * [Copiez (et collez)](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
       * Ouvrez la barre d’outils du composant en appuyant ou en cliquant. Cliquez sur les icônes **Copier** puis **Coller** suivant vos besoins.
+
    >[!NOTE]
    >
    >Vous pouvez **coller** les composants sur la même page ou sur une autre. Si vous collez un composant sur une autre page qui était déjà ouverte avant l’opération de couper/copier, il vous faut actualiser la page en question.
@@ -166,14 +170,17 @@ Pour modifier votre page :
    * [Supprimer](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-toolbar) un composant :
 
       * Ouvrez la barre d’outils du composant (en appuyant ou en cliquant), puis cliquez sur l’icône **Supprimer**.
+
    * [Ajouter des annotations](/help/sites-cloud/authoring/fundamentals/annotations.md#annotations) à la page :
 
       * En mode **Annotation** (icône de bulle), ajoutez des annotations à l’aide de l’icône **Ajouter une annotation** (plus). Quittez le mode Annotation en cliquant sur la croix (X) en haut à droite.
 
-         ![Bouton Annotations](/help/sites-cloud/authoring/assets/annotations.png)
+        ![Bouton Annotations](/help/sites-cloud/authoring/assets/annotations.png)
+
    * [Prévisualiser une page](/help/sites-cloud/authoring/fundamentals/editing-content.md#preview-mode) (pour vérifier comment elle apparaîtra dans l’environnement de publication) :
 
       * Sélectionner **Aperçu** dans la barre d’outils.
+
    * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide de la fonction **Modifier** sélecteur déroulant.
 
    >[!NOTE]
@@ -196,7 +203,6 @@ Il existe deux (principales) méthodes de [modification des propriétés de page
 
    1. Les propriétés de la page s’affichent. Vous pouvez effectuer des mises à jour selon les besoins, puis les enregistrer à l’aide de la fonction Enregistrer.
 
-
 * When [modification de votre page](#editing-your-page-content):
 
    1. Ouvrez le **Informations sur la page** .
@@ -218,7 +224,6 @@ Il existe deux méthodes principales : [publication de votre page](/help/sites-c
 
       ![Bouton Publication rapide](/help/sites-cloud/authoring/assets/quick-publish.png)
 
-
 * When [modification de votre page](#editing-your-page-content):
 
    1. Ouvrez le **Informations sur la page** .
@@ -226,11 +231,11 @@ Il existe deux méthodes principales : [publication de votre page](/help/sites-c
 
 * La dépublication d’une page à partir de la console ne peut se faire que par l’intermédiaire de l’option **Gérer la publication**, disponible uniquement sur la barre d’outils (et non via les actions rapides).
 
-   ![Bouton Gérer la publication](/help/sites-cloud/authoring/assets/manage-publication.png)
+  ![Bouton Gérer la publication](/help/sites-cloud/authoring/assets/manage-publication.png)
 
-   Le **Annuler la publication de la page** est toujours disponible via l&#39;option **Informations sur la page** dans l’éditeur.
+  Le **Annuler la publication de la page** est toujours disponible via l&#39;option **Informations sur la page** dans l’éditeur.
 
-   Voir [Publication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) pour plus d’informations.
+  Voir [Publication de pages](/help/sites-cloud/authoring/fundamentals/publishing-pages.md#unpublishing-pages) pour plus d’informations.
 
 ### Déplacement, copier-coller ou suppression d’une page {#move-copy-and-paste-or-delete-your-page}
 
@@ -247,12 +252,15 @@ Ces actions peuvent toutes être déclenchées par :
    * [Copier](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#copying-and-pasting-a-page) :
 
       * Vous devez ensuite accéder au nouvel emplacement et coller la page.
+
    * [Déplacer](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#moving-or-renaming-a-page) :
 
       * L’assistant s’ouvre pour collecter les informations nécessaires au déplacement de la page. Suivez les instructions à l’écran.
+
    * [Supprimer](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#deleting-a-page) :
 
-      * Vous serez alors invité à confirmer l’opération.
+      * Vous êtes invité à confirmer l’action.
+
    >[!NOTE]
    >
    >La suppression n’est pas proposée comme action rapide.
@@ -305,13 +313,14 @@ Le même mécanisme de base est appliqué pour restaurer ou pour comparer des ve
 
    ![Option du mode Chronologie](/help/sites-cloud/authoring/assets/timeline.png)
 
-   Si une version de votre page a déjà été enregistrée, elle sera répertoriée dans la chronologie.
+   Si une version de votre page a déjà été enregistrée, elle est répertoriée dans la chronologie.
 
 1. Appuyez/cliquez sur la version à restaurer, ce qui permet d’afficher d’autres boutons d’action :
 
    * **Revenir à cette version**
 
       * La version est restaurée.
+
    * **Afficher les différences**
 
       * La page s’ouvre avec les différences (entre les deux versions) mises en surbrillance.

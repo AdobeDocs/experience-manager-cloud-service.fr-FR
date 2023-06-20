@@ -2,10 +2,10 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2157'
-ht-degree: 68%
+source-wordcount: '2153'
+ht-degree: 65%
 
 ---
 
@@ -46,7 +46,7 @@ D’autres [ressources d’aide sont accessibles depuis les consoles](/help/site
 
 ## Explorateur de composants {#components-browser}
 
-Les composants sont les blocs de création du contenu AEM. Vous placez plusieurs composants sur une page et configurez leurs options afin de créer votre page de contenu avec AEM.
+Les composants sont les blocs de création du contenu AEM. Vous placez plusieurs composants sur une page et configurez leurs options pour créer votre page de contenu avec AEM.
 
 L’explorateur de composants présente tous les composants que vous pouvez utiliser sur la page active. Vous pouvez les faire glisser à l’emplacement approprié, puis les modifier pour ajouter votre contenu.
 
@@ -60,21 +60,21 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 * **Appareil mobile (par exemple, iPad)**
 
-   L’explorateur de composants couvre entièrement la page en cours de modification.
+  L’explorateur de composants couvre entièrement la page en cours de modification.
 
-   Pour ajouter un composant à votre page, maintenez appuyé le composant requis et déplacez-le vers la droite (l’explorateur de composants se ferme pour afficher à nouveau la page) où vous pouvez positionner le composant.
+  Pour ajouter un composant à votre page, maintenez appuyé le composant requis et déplacez-le vers la droite (l’explorateur de composants se ferme pour afficher à nouveau la page) où vous pouvez positionner le composant.
 
-   ![Explorateur de composants sur mobile](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
+  ![Explorateur de composants sur mobile](/help/sites-cloud/authoring/assets/component-browser-mobile.png)
 
 * **Poste de travail**
 
-   L’explorateur de composants s’ouvre sur le côté gauche de la fenêtre.
+  L’explorateur de composants s’ouvre sur le côté gauche de la fenêtre.
 
-   Pour ajouter un composant à votre page, cliquez sur le composant requis et faites-le glisser vers l’emplacement requis.
+  Pour ajouter un composant à votre page, cliquez sur le composant requis et faites-le glisser vers l’emplacement requis.
 
-   ![Explorateur de composants sur bureau](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
+  ![Explorateur de composants sur bureau](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-   Les composants sont représentés par
+  Les composants sont représentés par
 
    * Nom du composant
    * Groupe de composants (en gris)
@@ -82,16 +82,16 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
       * Les icônes des composants standard sont monochromes.
       * Les abréviations correspondent toujours aux deux premiers caractères du nom du composant.
 
-   Dans la barre d’outils supérieure de l’explorateur de **composants**, vous pouvez effectuer les opérations suivantes :
+  Dans la barre d’outils supérieure de l’explorateur de **composants**, vous pouvez effectuer les opérations suivantes :
 
    * Filtrer les composants par nom
    * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante
 
-   Pour obtenir une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **fragment de contenu** :
+  Pour obtenir une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **fragment de contenu** :
 
-   ![Informations de l’explorateur de composants](/help/sites-cloud/authoring/assets/component-browser-information.png)
+  ![Informations de l’explorateur de composants](/help/sites-cloud/authoring/assets/component-browser-information.png)
 
-   Pour plus d’informations sur les composants disponibles, voir [Console Composants](/help/sites-cloud/authoring/features/components-console.md).
+  Pour plus d’informations sur les composants disponibles, voir [Console Composants](/help/sites-cloud/authoring/features/components-console.md).
 
 >[!NOTE]
 >
@@ -136,19 +136,19 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 * **Appareil mobile**
 
-   L’explorateur de ressources couvre entièrement la page en cours de modification.
+  L’explorateur de ressources couvre entièrement la page en cours de modification.
 
-   Pour ajouter une ressource à votre page, maintenez appuyé la ressource requise, puis déplacez-la vers la droite : l’explorateur de ressources se ferme pour afficher à nouveau la page, où vous pouvez ajouter la ressource au composant requis.
+  Pour ajouter une ressource à votre page, maintenez appuyé la ressource requise, puis déplacez-la vers la droite : l’explorateur de ressources se ferme pour afficher à nouveau la page, où vous pouvez ajouter la ressource au composant requis.
 
-   ![Explorateur de ressources sur mobile](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
+  ![Explorateur de ressources sur mobile](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
 * **Poste de travail**
 
-   L’explorateur de ressources s’ouvre sur le côté gauche de la fenêtre.
+  L’explorateur de ressources s’ouvre sur le côté gauche de la fenêtre.
 
-   Pour ajouter une ressource à votre page, cliquez sur la ressource requise et faites-la glisser vers le composant ou l’emplacement requis.
+  Pour ajouter une ressource à votre page, cliquez sur la ressource requise et faites-la glisser vers le composant ou l’emplacement requis.
 
-   ![Explorateur de ressources sur bureau](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
+  ![Explorateur de ressources sur bureau](/help/sites-cloud/authoring/assets/assets-browser-desktop.png)
 
 >[!NOTE]
 >
@@ -172,7 +172,7 @@ Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côt
 
 Étant donné qu’une page est souvent composée de nombreux composants du même type, l’arborescence des composants affiche un texte descriptif (en gris) après le nom du type de composant (en noir). Le texte descriptif provient des propriétés courantes du composant, telles que le titre ou le texte.
 
-Les types de composants sont affichés dans la langue de l’utilisateur, tandis que le texte descriptif du composant dépend de la langue de la page.
+Les types de composants sont affichés dans la langue de l’utilisateur, tandis que le texte de description du composant provient de la langue de la page.
 
 Cliquez sur le chevron en regard d’un composant pour réduire ou développer ce niveau.
 
@@ -182,13 +182,13 @@ Cliquez sur le composant pour le mettre en surbrillance dans l’éditeur de pag
 
 * Par exemple, une page de base :
 
-   ![Arborescence de contenu mise en surbrillance](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
+  ![Arborescence de contenu mise en surbrillance](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
-   Les composants d’une page de base auront les options habituelles.
+  Les composants d’une page de base auront les options habituelles.
 
-   Si le composant sur lequel vous cliquez est éditable, une icône de clé à molette s’affiche à droite du nom. Cliquez sur cette icône pour lancer directement la boîte de dialogue de modification du composant.
+  Si le composant sur lequel vous cliquez est éditable, une icône de clé à molette s’affiche à droite du nom. Cliquez sur cette icône pour lancer directement la boîte de dialogue de modification du composant.
 
-   ![Bouton Modifier l’arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree-edit.png)
+  ![Bouton Modifier l’arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree-edit.png)
 
 * Une page faisant partie d’une page [Live Copy](/help/sites-cloud/administering/msm/overview.md), où les composants sont hérités d’une autre page.
 
@@ -270,7 +270,7 @@ Plusieurs modes sont possibles lors de la modification d’une page, ce qui perm
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
 * [Mode Développeur](/help/implementing/developing/tools/developer-mode.md)
-* [Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) : permet d’afficher la page comme elle sera présentée dans l’environnement de publication ou de naviguer au moyen des liens figurant dans le contenu.
+* [Aperçu](/help/sites-cloud/authoring/fundamentals/editing-content.md#previewing-pages) - utilisé pour afficher la page telle qu’elle est affichée dans l’environnement de publication ; ou pour naviguer à l’aide de liens dans le contenu.
 * [Annoter](/help/sites-cloud/authoring/fundamentals/annotations.md) : permet d’ajouter ou d’afficher des annotations sur la page.
 
 Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supérieur droit ; l’icône active se changera alors pour refléter le mode sélectionné :
@@ -284,7 +284,6 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 >* Le mode Développeur n’est pas disponible sur les appareils mobiles en raison de restrictions d’espace.
 >* Utilisez le [raccourci clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) (`Ctrl-Shift-M`) pour basculer entre le mode **Prévisualisation** et le mode actuellement sélectionné (par exemple, **Modifier**, **Disposition**, etc.).
 >
-
 
 ## Sélection du chemin d’accès {#path-selection}
 
@@ -316,7 +315,7 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 * Vous pouvez à tout moment utiliser le champ de recherche en haut de la boîte de dialogue. Cliquez sur le **X** dans le champ de recherche pour effacer la recherche.
 * Pour affiner votre recherche, vous pouvez afficher les options de filtre et filtrer vos résultats en fonction du chemin d’accès.
 
-   ![Option Filtres](/help/sites-cloud/authoring/assets/filters-option.png)
+  ![Option Filtres](/help/sites-cloud/authoring/assets/filters-option.png)
 
 ## Raccourcis clavier {#keyboard-shortcuts}
 

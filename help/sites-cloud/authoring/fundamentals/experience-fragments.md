@@ -2,10 +2,10 @@
 title: Fragments d’expérience
 description: Utilisez des fragments d’expérience Adobe Experience Manager as a Cloud Service pour rendre vos expériences réutilisables et flexibles.
 exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
-source-git-commit: 9c3153efe4aacd1666663cd5eb718f75329202af
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '2064'
-ht-degree: 88%
+source-wordcount: '2052'
+ht-degree: 81%
 
 ---
 
@@ -47,7 +47,7 @@ Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, m
 >
 >Les fragments d’expérience peuvent être composés de contenu sous la forme de fragments de contenu, mais pas l’inverse.
 >
->Pour plus d’informations, voir également [Présentation des fragments de contenu et des fragments d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
+>Pour plus d’informations, voir également [Présentation des fragments de contenu et d’expérience dans AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=fr#content-fragments).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, m
 Les fragments d’expérience doivent être utilisés :
 
 * Lorsque vous souhaitez réutiliser des expériences.
-   * Expériences qui seront réutilisées avec le même contenu ou un contenu similaire.
+   * Expériences réutilisées avec un même contenu ou un contenu similaire.
 * Lorsque vous utilisez AEM en tant que plateforme de diffusion de contenu à des tiers.
    * Toute solution qui souhaite utiliser AEM comme plateforme de diffusion de contenu.
    * Intégration de contenu dans des points de contact tiers.
@@ -83,15 +83,15 @@ La création de dossiers vous permet d’effectuer les opérations suivantes :
 
 * Créer une structure significative pour vos fragments d’expérience ; en fonction de la classification, par exemple
 
-   >[!NOTE]
-   >
-   >Il n’est pas nécessaire d’aligner la structure de vos fragments d’expérience sur la structure de page de votre site.
+  >[!NOTE]
+  >
+  >Il n’est pas nécessaire d’aligner la structure de vos fragments d’expérience sur la structure de page de votre site.
 
 * [Allouer les modèles autorisés au niveau du dossier](#configure-allowed-templates-folder)
 
-   >[!NOTE]
-   >
-   >Vous pouvez utiliser l’[éditeur de modèles](/help/sites-cloud/authoring/features/templates.md) pour créer votre propre modèle.
+  >[!NOTE]
+  >
+  >Vous pouvez utiliser l’[éditeur de modèles](/help/sites-cloud/authoring/features/templates.md) pour créer votre propre modèle.
 
 Le projet WKND structure certains fragments d’expérience en fonction de `Contributors`. La structure utilisée illustre également l’utilisation d’autres fonctionnalités, telles que la gestion multisite (y compris des copies de langue).
 
@@ -241,7 +241,7 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
 
    * **Modèle**
    * **Titre**
-   * **Nom** : si rien n’est indiqué dans ce champ, le nom est déduit du titre
+   * **Nom** - si rien n’est indiqué, il provient du titre
    * **Description**
    * **Balises de variation**
 
@@ -250,7 +250,7 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
    ![Propriétés de la variation](/help/sites-cloud/authoring/assets/xf-07.png)
 
 
-1. Confirmez en cliquant sur **Terminé**. La nouvelle variation est alors affichée dans le panneau.
+1. Confirmer avec **Terminé**, la nouvelle variation s’affiche dans le panneau.
 
 ## Utilisation du fragment d’expérience {#using-your-experience-fragment}
 
@@ -293,7 +293,7 @@ Pour créer un bloc de création :
 
    ![Attribution d’un nom au bloc de création](/help/sites-cloud/authoring/assets/xf-11.png)
 
-1. Le **bloc de création** s’affiche dans l’onglet de gauche (**Local**) et peut être sélectionné pour effectuer d’autres actions :
+1. Le **Bloc de création** s’affiche dans le panneau de gauche (**Local**), et peuvent être sélectionnés pour une action ultérieure :
 
    ![Bloc de création dans le rail](/help/sites-cloud/authoring/assets/xf-12.png)
 
@@ -341,7 +341,7 @@ Pour personnaliser votre fragment, procédez comme suit :
 
    >[!NOTE]
    >
-   >Les propriétés de personnalisation définies pour un dossier sont héritées par tous les dossiers enfants de la sous-arborescence, ainsi que par les fragments d’expérience (et leurs variations) de cette sous-arborescence. Les propriétés peuvent être modifiées en annulant l’héritage.
+   >Les propriétés de personnalisation définies sur un dossier sont héritées par tous les dossiers enfants, par le biais de la sous-arborescence, et les fragments d’expérience (et leurs variantes) au sein de cette sous-arborescence. Les propriétés peuvent être modifiées en annulant l’héritage.
 
 1. Ouvrez l’onglet **Personnalisation** pour définir et enregistrer vos paramètres. Par exemple, pour un dossier :
 
@@ -349,27 +349,25 @@ Pour personnaliser votre fragment, procédez comme suit :
 
    >[!CAUTION]
    >
-   >Lorsqu’un fragment est incorporé dans une page Sites et que la **Personnalisation** a été configurée, seule la version de personnalisation de la page sera utilisée au moment du rendu de la page.
+   >Lorsqu’un fragment est incorporé dans une page Sites, et **Personnalisation** a été configuré, alors seule la version de personnalisation de la page est utilisée au moment du rendu de la page.
    >
    >Pour que le ciblage effectué sur les composants d’un fragment fonctionne lors du rendu de la page, les conditions suivantes doivent être remplies :
    >
    >Le **Chemin d’accès ContextHub** sélectionné dans l’onglet **Personnalisation** doit correspondre à l’une des valeurs suivantes :
    >
-   >* le même chemin d’accès que celui configuré pour la page sur laquelle le fragment sera rendu
-      >Ou :
+   >* le même chemin que celui configuré pour la page sur laquelle le fragment est rendu ;
+   >Ou :
    >* un chemin contenant un sous-ensemble des magasins définis dans le chemin d’accès ContextHub configuré pour la page.
-
    >
    > 
 Le **Chemin d’accès de segments** sélectionné dans l’onglet **Personnalisation** doit correspondre à l’une des valeurs suivantes :
-   * le même chemin d’accès que celui configuré pour la page sur laquelle le fragment sera rendu
-Ou
+   >
+   * le même chemin que celui configuré pour la page sur laquelle le fragment est rendu Ou
    * un chemin d’accès contenant un sous-ensemble des segments configurés pour la page.
-
 
 ### Définir le ciblage de votre fragment d’expérience {#defining-targeting-experience-fragment}
 
-Une fois les propriétés de personnalisation configurées, le mode Ciblage est disponible lorsque le fragment est ouvert en vue d’être modifié.
+Une fois les propriétés de personnalisation configurées, le mode Ciblage est disponible lorsque le fragment est ouvert pour modification.
 
 ![Éditeur de fragments d’expérience - Mode Ciblage](/help/sites-cloud/authoring/assets/xf-targeting-mode.png)
 
@@ -391,7 +389,9 @@ Les détails sont affichés dans toutes les vues de la console **Fragments d’e
    Les propriétés sont disponibles dans plusieurs onglets :
 
    >[!CAUTION]
+   >
    Ces onglets s’affichent lorsque vous ouvrez les **propriétés** à partir de la console Fragments d’expérience.
+   >
    Si vous **ouvrez les propriétés** lors de la modification d’un fragment d’expérience, les [propriétés de page](/help/sites-cloud/authoring/fundamentals/page-properties.md) appropriées s’affichent.
 
    ![Propriétés du fragment d’expérience](/help/sites-cloud/authoring/assets/xf-17.png)
@@ -421,6 +421,7 @@ Les détails sont affichés dans toutes les vues de la console **Fragments d’e
 Utiliser le sélecteur `.plain.` de l’URL permet d’accéder au rendu HTML brut à partir du navigateur.
 
 >[!NOTE]
+>
 Même s’il est directement disponible à partir du navigateur, [le principal objectif consiste à autoriser d’autres applications (des applications web tierces et des implémentations mobiles personnalisées, par exemple) à accéder directement au contenu du composant Fragment d’expérience en utilisant uniquement l’URL](/help/implementing/developing/extending/experience-fragments.md#the-plain-html-rendition).
 
 ## Publication de fragments d’expérience {#publishing-experience-fragments}

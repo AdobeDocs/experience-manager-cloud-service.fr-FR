@@ -2,10 +2,10 @@
 title: Outil de comparaison des pages
 description: De fait, l’outil de comparaison des pages permet d’afficher côte à côte deux pages pour les comparer en mettant en évidence leurs différences.
 exl-id: 6e5c7f14-c980-48e3-8bdd-a7ec10a9e680
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 57%
+source-wordcount: '616'
+ht-degree: 44%
 
 ---
 
@@ -19,7 +19,7 @@ De fait, l’outil de comparaison des pages permet d’afficher côte à côte d
 
 >[!NOTE]
 >
->L’utilisateur doit disposer de l’autorisation **Modifier/Créer/Supprimer** sur le nœud `/content/versionhistory` pour pouvoir utiliser la fonctionnalité.
+>L’utilisateur doit disposer de la variable **Modifier/Créer/Supprimer** autorisation sur le noeud `/content/versionhistory` pour utiliser la fonctionnalité.
 >
 >Consultez la section consacrée à l’[outil de comparaison des pages](/help/implementing/developing/introduction/page-diff.md#operation-details) pour plus d’informations sur cette fonction.
 
@@ -65,7 +65,7 @@ L’outil de comparaison détecte les modifications effectuées sur les composan
 
 ### Affichage en mode plein écran {#fullscreen-and-exiting}
 
-Si vous souhaitez vous concentrer sur un contenu spécifique, vous pouvez cliquer sur l’icône du mode plein écran pour l’un ou l’autre des deux « côtés » de votre comparaison. Cela vous permet d’afficher la version en plein écran dans la fenêtre du navigateur.
+Pour vous concentrer sur un contenu particulier, vous pouvez cliquer sur l’icône Plein écran de l’un ou l’autre des &quot;côtés&quot; de la comparaison côte à côte afin de l’agrandir dans la fenêtre du navigateur.
 
 ![Bouton Plein écran](/help/sites-cloud/authoring/assets/versions-full-screen.png)
 

@@ -4,10 +4,10 @@ description: Intégration à Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 588825f910b3b9ad6a491c57322971200cea1d15
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 99%
+source-wordcount: '1042'
+ht-degree: 90%
 
 ---
 
@@ -51,7 +51,7 @@ Dans les deux cas, il faut savoir que :
 
 * par défaut, le code client (s’il est ajouté en premier) est également automatiquement copié dans le champ d’ID client ;
 * vous avez la possibilité de modifier le jeu d’ID client par défaut.
-* Par conséquent, les appels du serveur principal vers Target sont basés sur l’ID client et les appels vers Target côté client sont basés sur le Code client.
+* Par conséquent, les appels du serveur principal vers Target sont basés sur l’identifiant du client et les appels côté client vers Target sont basés sur le code client.
 
 Comme nous l’avons indiqué plus haut, le premier cas est le plus courant pour AEM as a Cloud Service. Dans les deux cas, veillez à ce que les **deux** champs contiennent les informations appropriées en fonction de vos besoins.
 
@@ -62,7 +62,6 @@ Comme nous l’avons indiqué plus haut, le premier cas est le plus courant pour
 > 1. saisissez de nouveau l’ID client ;
 > 2. reconnectez-vous à Target ;
 > 3. enregistrez la configuration.
-
 
 ### Modification de la configuration de Target {#edit-target-configuration}
 
@@ -113,7 +112,7 @@ Les **extensions** sont le conteneur qui gère les paramètres de bibliothèque 
 3. Sélectionnez le bouton **Configure** (Configurer). Notez la fenêtre de configuration avec les informations d’identification du compte Target importées et la version at.js de cette extension.
 4. Sélectionnez **Save** (Enregistrer) pour ajouter l’extension Target à votre propriété Launch. Vous devriez être en mesure de voir l’extension Target répertoriée dans la liste **Installed Extensions** (Extensions installées).
    ![Enregistrer l’extension](assets/configure_extension1.png "Enregistrer l’extension")
-5. Répétez les étapes ci-dessus pour rechercher l’extension **Adobe ContextHub** et l’installer (cela est nécessaire pour l’intégration avec les paramètres contexthub, en fonction du ciblage allant être effectué).
+5. Répétez les étapes ci-dessus pour rechercher la variable **Adobe ContextHub** et l’installer (cela est nécessaire pour l’intégration avec les paramètres contexthub, en fonction du ciblage effectué).
 
 ### Création d’un élément de données {#data-element}
 
@@ -131,7 +130,7 @@ Dans **Règle**, définissez et ordonnez une séquence d’actions qui sera exé
 
 1. Ajoutez un ensemble d’actions comme illustré dans la capture d’écran.
    ![Actions](assets/rules1.png "Actions")
-2. Dans Add Params to All Mboxes (Ajouter les paramètres à tous les mbox), ajoutez l’élément de données configuré précédemment (voir élément de données ci-dessus) au paramètre qui va être envoyé dans l’appel de mbox.
+2. Dans Ajouter des paramètres à toutes les mbox, ajoutez l’élément de données configuré précédemment (voir élément de données ci-dessus) au paramètre envoyé dans l’appel de mbox.
    ![Mbox](assets/map_data1.png "Actions")
 
 ### Concevoir et publier {#build-publish}
@@ -157,4 +156,4 @@ Pour savoir comment concevoir et publier, reportez-vous à cette [page](https://
 
 >[!NOTE]
 >
->Les configurations héritées sont toujours prises en charge pour les clients existants (sans possibilité de modifier des configurations ou d’en créer de nouvelle). Les configurations héritées feront partie des packages de contenu chargés par les clients à l’aide de VSTS.
+>Les configurations héritées sont toujours prises en charge pour les clients existants (sans possibilité de modifier des configurations ou d’en créer de nouvelle). Les configurations héritées font partie des modules de contenu chargés par les clients à l’aide de VSTS.

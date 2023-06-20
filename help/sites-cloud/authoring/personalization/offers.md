@@ -2,9 +2,9 @@
 title: Créer et gérer des offres (console Offres)
 description: Utiliser la console Offres pour créer des offres que vous pourrez utiliser dans le cadre d’expériences associées à des activités
 exl-id: 81d2fda2-06a9-48f6-820a-dd9e11d94fcc
-source-git-commit: c27870c39da80d664f208d658994eec83a19589f
+source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
 workflow-type: tm+mt
-source-wordcount: '1393'
+source-wordcount: '1392'
 ht-degree: 53%
 
 ---
@@ -51,7 +51,6 @@ Une option et un workflow **Convertir en variation de fragment d’expérience**
 >
 >* La console **Offres** n’est plus disponible.
 >* L’icône cible de la barre d’outils des autres composants concernés n’apparaît plus.
-
 
 1. Ouvrez une page contenant l’offre à modifier.
 
@@ -102,7 +101,7 @@ Ajoutez des balises, le cas échéant.
 >
 >Par conséquent, il est recommandé d’utiliser les fragments d’expérience, et non pas cette option.
 
-Pour les client(e)s qui disposent d’offres héritées préexistantes, l’option **Utiliser un modèle d’offre** est visible lors du ciblage des composants qui ne sont **pas** des fragments d’expérience :
+Pour les clients qui disposent d’offres héritées préexistantes, la variable **Utiliser le modèle d’offre** Les options sont visibles lors du ciblage des composants qui **not** Fragments d’expérience :
 
 ![Boîte de dialogue Convertir en variation de fragment d’expérience](/help/sites-cloud/authoring/assets/offers-legacy-target-non-experience-fragment.png)
 
@@ -132,8 +131,8 @@ Lorsque vous créez une marque à l’aide de la console Offres, elle apparaît 
    ![Accès à la console Offres](/help/sites-cloud/authoring/assets/offers-navigation.png)
 
 1. Cliquez ou appuyez sur **Créer**, puis sur **Créer** **une marque**.
-1. Sélectionnez le modèle de marque et cliquez ou appuyez sur **Suivant**.
-1. Saisissez le titre de la marque tel que vous souhaitez le voir apparaître dans les consoles Offres et Activités . Vous pouvez éventuellement saisir ou sélectionner une ou plusieurs balises à associer à la marque.
+1. Sélectionnez le modèle de la marque, puis cliquez ou appuyez sur **Suivant**.
+1. Saisissez le titre de la marque tel que vous souhaitez le voir apparaître dans les consoles Offres et Activités . Vous pouvez également saisir ou sélectionner une ou plusieurs balises à associer à la marque.
 1. Cliquez ou appuyez sur **Créer**.
 
 ### Ajout d’un fichier à une bibliothèque d’offres {#add-a-folder-to-an-offer-library}
