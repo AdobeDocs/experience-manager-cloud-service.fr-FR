@@ -4,10 +4,10 @@ description: Configuration de  [!DNL Workfront for Experience Manager enhanced c
 role: Admin
 feature: Integrations
 exl-id: d4e1247a-342c-4bc4-83bf-4e4902468fb3
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
 workflow-type: tm+mt
-source-wordcount: '1723'
-ht-degree: 99%
+source-wordcount: '1787'
+ht-degree: 86%
 
 ---
 
@@ -22,6 +22,7 @@ Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experienc
 
 >[!IMPORTANT]
 >
+>* Depuis juin 2022, Adobe a lancé une nouvelle intégration native pour connecter Workfront à Adobe Experience Manager Assets as a Cloud Service. Cette intégration est devenue la méthode requise pour connecter ces deux solutions. Toute nouvelle implémentation future du connecteur amélioré (1.9.8 et versions ultérieures) pour connecter Workfront à AEM Assets as a Cloud Service est bloquée. Pour plus d’informations sur la configuration de cette intégration, voir [Configuration de l’intégration Experience Manager Assets as a Cloud Service](workfront-connector-configure.md).
 >* Adobe nécessite le déploiement et la configuration de [!DNL Adobe Workfront for Experience Manager enhanced connector] uniquement par le biais de partenaires certifiés ou [!DNL Adobe Professional Services]. S’il est déployé et configuré sans partenaire certifié ou sans [!DNL Adobe Professional Services], il n’est pas pris en charge par Adobe.
 >
 >* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
@@ -30,10 +31,9 @@ Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experienc
 >
 >* Consultez la section [Examen de certification des partenaires pour Workfront pour le connecteur amélioré Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Pour plus d’informations sur l’examen, consultez le [Guide d’examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 ## Configuration des abonnements aux événements {#event-subscriptions}
 
-Les abonnements aux événements sont utilisés pour informer AEM des événements qui se produisent dans [!DNL Adobe Workfront]. Il existe trois fonctionnalités [!DNL Workfront for Experience Manager enhanced connector] qui nécessitent des abonnements aux événements pour fonctionner :
+Les abonnements aux événements sont utilisés pour informer AEM des événements qui se produisent dans [!DNL Adobe Workfront]. Il y a trois [!DNL Workfront for Experience Manager enhanced connector] fonctionnalités qui nécessitent des abonnements à des événements pour fonctionner :
 
 * Création automatique de dossiers liés au projet.
 * Synchronisation des modifications des valeurs des formulaires personnalisés du document Workfront avec les métadonnées des ressources AEM.
@@ -45,7 +45,7 @@ Pour utiliser ces fonctionnalités, activez les abonnements aux événements.
 * Sélectionnez l’[!UICONTROL intégration personnalisée Workfront] que vous avez créée dans la section 6.
 * Cliquez sur [!UICONTROL Activation des abonnements aux événements Workfront].
 
-   ![Abonnement à un événement](/help/assets/assets/event-subs.png)
+  ![Abonnement à un événement](/help/assets/assets/event-subs.png)
 
 ## Configuration des dossiers liés {#linked-folders}
 
@@ -60,11 +60,11 @@ Pour vous abonner aux événements, procédez comme suit :
 1. Accédez à l’onglet Dossiers liés au projet dans les services cloud.
 1. Chemin d’accès parent du dossier lié : sélectionnez un dossier dans la gestion des ressources numériques (DAM) où vous souhaitez créer les dossiers liés. Si ce paramètre n’est pas renseigné, il est défini par défaut sur /content/dam. Assurez-vous que le schéma de métadonnées des outils Workfront et le schéma de métadonnées du dossier Dossier lié Workfront ont été appliqués au dossier sélectionné.
 1. Structure de dossiers liés : entrez des valeurs séparées par des virgules. Chaque valeur doit être `DE:<some-project-custom-form-field>`, Portfolio, Programme, Année, Nom ou une « valeur de chaîne littérale » (cette dernière avec des guillemets). Elle est actuellement définie sur Portfolio,Program,Year,DE:Project Type,Name.
-1. Créez le titre du dossier lié dans Workfront à l’aide de la case à cocher Noms de structure de dossiers doit être cochée si le titre du dossier dans Workfront doit inclure tous les dossiers de la structure. Sinon, il s’agira du titre du dernier dossier.
+1. Créez le titre du dossier lié dans Workfront à l’aide de la case à cocher Noms de structure de dossiers doit être cochée si le titre du dossier dans Workfront doit inclure tous les dossiers de la structure. Sinon, il s’agit du titre du dernier dossier.
 1. Le multichamp Sous-dossiers permet de spécifier une liste de dossiers à créer en tant que dossier enfant du dossier lié.
-1. État du projet : sélectionnez l’état sur lequel le projet doit être défini pour créer le dossier lié.
-1. Créez un dossier lié dans les projets avec un portfolio : liste des Portfolios auxquels le projet doit appartenir pour créer le dossier lié. Laissez cette liste vide pour créer le dossier lié pour l’ensemble du portefeuille de projets.
-1. Créez un dossier lié dans les projets avec un champ de formulaire personnalisé : champ de formulaire personnalisé et valeur correspondante que le projet doit avoir pour créer le dossier lié. Cette configuration sera ignorée si elle n’est pas renseignée. Sélectionnez `CUSTOM FORMS: Create DAM Linked Folder` pour le champ et saisissez `Yes` pour la valeur.
+1. État du projet : Sélectionnez l’état pour lequel le projet doit être défini afin de créer le dossier lié.
+1. Créez un dossier lié dans les projets avec un portfolio : Liste des Portfolios auxquels le projet doit appartenir afin que vous puissiez créer le dossier lié. Laissez cette liste vide pour créer le dossier lié pour l’ensemble du portefeuille de projets.
+1. Créez un dossier lié dans les projets avec un champ de formulaire personnalisé : Champ de formulaire personnalisé et valeur correspondante que le projet doit avoir pour que vous puissiez créer le dossier lié. Cette configuration est ignorée si elle est laissée vide. Sélectionnez `CUSTOM FORMS: Create DAM Linked Folder` pour le champ et saisissez `Yes` pour la valeur.
 1. Cliquez sur Activer la création automatique de dossiers liés. Si vous revenez à l’onglet Abonnements aux événements, un événement de création est désormais disponible.
 
 ![configuration des dossiers liés](/help/assets/assets/wf-linked-folder-config.png)
@@ -104,7 +104,7 @@ Pour configurer les mappages, procédez comme suit :
    * Champs de formulaire personnalisé de la tâche
    * Champs de présentation du projet (ID, nom, description ou numéro de référence)
 
-1. Dans le cas où le champ [!DNL Workfront] sélectionné dans le [!UICONTROL champ de formulaire personnalisé Workfront] est un champ de saisie semi-automatique des utilisateurs Workfront, il sera nécessaire de préciser quel champ Utilisateur Workfront vous souhaitez mapper. Pour ce faire, cochez la case Obtenir la valeur du champ d’objet référencé de Workfront, puis indiquez le nom du [!UICONTROL Champ de formulaire personnalisé Utilisateur Workfront] à partir duquel récupérer la valeur à mapper.
+1. Dans le cas où la variable [!DNL Workfront] champ sélectionné dans [!UICONTROL Champ de formulaire personnalisé Workfront] est un champ de type Utilisateur Workfront , il est nécessaire de spécifier le champ Utilisateur Workfront que vous souhaitez mapper. Pour ce faire, cochez la case Obtenir la valeur du champ d’objet référencé de Workfront, puis indiquez le nom du [!UICONTROL Champ de formulaire personnalisé Utilisateur Workfront] à partir duquel récupérer la valeur à mapper.
 
    ![configuration du mappage de métadonnées](/help/assets/assets/wf-metadata-mapping-config1.png)
 
@@ -182,7 +182,7 @@ Pour conserver l’historique des versions des ressources dans AEM, configurez l
 
 ## Joindre des formulaires personnalisés {#attach-custom-forms}
 
-Cette étape de workflow permet aux utilisateurs de joindre un formulaire personnalisé à un artefact [!DNL Workfront]. Cette étape de workflow peut être ajoutée à n’importe quel modèle de workflow. L’artefact [!DNL Workfront] concerné par cette étape sera recherché à l’aide d’un chemin d’accès relatif à partir de la payload.
+Cette étape de workflow permet aux utilisateurs de joindre un formulaire personnalisé à un artefact [!DNL Workfront]. Cette étape de workflow peut être ajoutée à n’importe quel modèle de workflow. L’artefact [!DNL Workfront] concerné par cette étape est recherché à l’aide d’un chemin d’accès relatif à partir de la payload.
 
 Dans l’éditeur de workflow d’Experience Manager, modifiez les propriétés de l’étape de workflow [!UICONTROL Workfront - Joindre un formulaire personnalisé].
 
@@ -192,7 +192,7 @@ Dans l’éditeur de workflow d’Experience Manager, modifiez les propriétés
 
 1. Dans Experience Manager, accédez à **[!UICONTROL Outils]** > **[!UICONTROL Services cloud]** > **[!UICONTROL Configuration des outils Workfront]**, puis ouvrez l’onglet **[!UICONTROL Avancé]**.
 
-1. Sélectionnez **[!UICONTROL Publier automatiquement les ressources lorsqu’elles sont envoyées depuis Workfront]**. Cette option permet la publication automatique des ressources lorsqu’elles sont envoyées de Workfront vers AEM. Cette fonctionnalité peut être activée de manière conditionnelle en spécifiant un champ de formulaire personnalisé Workfront et la valeur sur laquelle elle doit être définie. Chaque fois qu’un document est envoyé à AEM, s’il satisfait à la condition, la ressource est automatiquement publiée.
+1. Sélectionnez **[!UICONTROL Publier automatiquement les ressources lorsqu’elles sont envoyées depuis Workfront]**. Cette option permet la publication automatique des ressources lorsqu’elles sont envoyées de Workfront vers AEM. Cette fonctionnalité peut être activée de manière conditionnelle en spécifiant un champ de formulaire personnalisé Workfront et la valeur sur laquelle elle doit être définie. Chaque fois qu’un document est envoyé à AEM, s’il satisfait la condition, la ressource est automatiquement publiée.
 
 1. Sélectionnez **[!UICONTROL Publier toutes les ressources du projet sur Brand Portal à la fin du projet]**. Cette option permet la publication automatique des ressources sur [!DNL Brand Portal] lorsque le statut du projet Workfront auquel elles appartiennent passe sur `Complete`.
 
