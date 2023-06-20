@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
 workflow-type: tm+mt
-source-wordcount: '1406'
-ht-degree: 89%
+source-wordcount: '1439'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 89%
 
 Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais du [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
-Seules les versions 2.0.0 et ultérieures seront prises en charge. Il est conseillé d’utiliser la version la plus récente.
+Seules les versions 2.0.0 et ultérieures sont prises en charge et il est conseillé d’utiliser la version la plus récente.
 
 >[!NOTE]
 >Téléchargez l’outil de transfert de contenu depuis le portail de [distribution logicielle](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html).
@@ -34,16 +34,16 @@ Seules les versions 2.0.0 et ultérieures seront prises en charge. Il est conse
 >
 >Une erreur de connexion peut également se produire si un jeu de migration a été supprimé de Cloud Acceleration Manager.
 
-L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour réussir l’exécution d’une extraction, les points d’entrée suivants doivent être accessibles à partir de l’instance AEM en cours d’exécution :
+L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour réussir l’exécution d’une extraction, les points de terminaison suivants doivent être accessibles à partir de l’instance AEM en cours d’exécution :
 
-* Le service d’enregistrement blob Azure : `casstorageprod.blob.core.windows.net`
+* Le service de stockage d’objets blob Azure : `casstorageprod.blob.core.windows.net`
 
 >[!NOTE]
 >Si l’extraction échoue en raison de l’erreur suivante : &quot;javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target&quot;, cela peut être résolu en important le certificat d’autorité de certification approprié.
 
 ### Activation de la journalisation SSL {#enable-ssl-logging}
 
-Comprendre les problèmes de connexion SSL/TLS peut parfois être difficile. Pour résoudre les problèmes de connexion lors d’un processus d’extraction, vous pouvez activer la journalisation SSL via la console système de l’environnement d’AEM source en procédant comme suit :
+Comprendre les problèmes de connexion SSL/TLS peut parfois être difficile. Pour résoudre les problèmes de connexion lors d’un processus d’extraction, vous pouvez activer la journalisation SSL via la console système de l’environnement AEM source en procédant comme suit :
 
 1. Accédez à la console web Adobe Experience Manager sur votre instance source en accédant à **Outils - Opérations - Console web** ou directement à l’URL à l’adresse *https://serveraddress:serverport/system/console/configMgr*
 1. Recherchez **Configuration du service d’extraction de l’outil de transfert de contenu**
@@ -52,6 +52,8 @@ Comprendre les problèmes de connexion SSL/TLS peut parfois être difficile. Pou
 
    ![image](/help/journey-migration/content-transfer-tool/assets/enable_ssl_logging.png)
 
+>[!NOTE]
+>Cet indicateur est uniquement destiné au débogage des problèmes SSL. Assurez-vous que l’indicateur est désactivé avant d’exécuter l’extraction, car cela peut nécessiter un grand volume d’espace disque. Cela peut potentiellement remplir la capacité du lecteur et entraîner l’échec du processus d’extraction.
 
 ## Exécution de l’outil de transfert de contenu {#running-tool}
 
@@ -69,7 +71,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_extraction_setup"
 >title="Phase de configuration de l’extraction"
->abstract="Découvrez comment créer et gérer un jeu de migration et comment copier la clé d&#39;extraction."
+>abstract="Découvrez comment créer et gérer un jeu de migration et comment copier la clé d’extraction."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/migration/content-transfer-tool.html#migration?lang=fr" text="Tutoriel – Utilisation de l’outil de transfert de contenu"
 
 <!-- Contextualhelp id "aemcloud_ctt_extraction_setup" needs to be added here -->
@@ -84,11 +86,11 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
    >[!NOTE]
    >
-   >Vous pouvez créer au maximum cinq jeux de migration, y compris les jeux expirés, par projet dans Cloud Acceleration Manager.
+   >Vous pouvez créer au maximum cinq jeux de migration, y compris les jeux ayant expiré, par projet dans Cloud Acceleration Manager.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam2.png)
 
-   La boîte de dialogue suivante sera présentée. Notez qu’un jeu de migration expirera après une longue période d’inactivité. Une fois les avertissements affichés sur la carte du projet et les lignes du tableau des tâches de migration pour une période donnée, le jeu de migration expirera et ses données ne seront plus disponibles. Réviser [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
+   La boîte de dialogue suivante s’affiche. Notez qu’un jeu de migration expire après une longue période d’inactivité. Une fois les avertissements affichés sur la carte du projet et les lignes du tableau des tâches de migration pendnat un certain temps, le jeu de migration expire et ses données deviennent indisponibles. Consultez [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam3.png)
 
@@ -120,7 +122,7 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleratio
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam5.png)
 
-1. Collez la clé d’extraction qui a été copiée à partir de l’instance CAM plus tôt dans le champ d’entrée Clé d’extraction du formulaire **Créer un jeu de migration**. Une fois que vous avez effectué cette opération, les champs Nom du jeu de migration et Nom du projet (CAM) de Cloud Acceleration Manager sont automatiquement renseignés. Ils doivent correspondre au nom du jeu de migration dans CAM et au nom du projet CAM que vous avez créé. Vous pouvez maintenant ajouter des chemins de contenu. Une fois que vous avez ajouté des chemins de contenu, vous pouvez enregistrer le jeu de migration. Vous pouvez exécuter l’extraction en incluant ou en excluant les versions.
+1. Collez la clé d’extraction qui a été copiée à partir de l’instance CAM plus tôt dans le champ d’entrée Clé d’extraction du formulaire **Créer un jeu de migration**. Ensuite, les champs Nom du jeu de migration et Nom du projet (CAM) de Cloud Acceleration Manager sont automatiquement renseignés. Ils doivent correspondre au nom du jeu de migration dans CAM et au nom du projet CAM que vous avez créé. Vous pouvez maintenant ajouter des chemins de contenu. Après avoir ajouté des chemins de contenu, enregistrez le jeu de migration. Vous pouvez exécuter l’extraction en incluant ou en excluant les versions.
 
    >[!NOTE]
    >
@@ -147,7 +149,6 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleratio
       >* `/home`
       >* `/etc` (il est possible de sélectionner certains chemins `/etc` dans le CTT)
 
-
 1. Cliquez sur **Enregistrer** après avoir rempli tous les champs de l’écran **Créer un jeu de migration**.
 
 <!-- 1. You will view your migration set in the **Content Transfer** wizard, as shown in the figure below.
@@ -167,7 +168,8 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleratio
 ### Vérification de la taille du jeu de migration {#migration-set-size}
 
 Après la création d’un jeu de migration, il est vivement recommandé d’exécuter une vérification de taille sur le jeu de migration avant de lancer un processus d’extraction.
-En effectuant une vérification de taille sur le jeu de migration, vous pourrez :
+En effectuant une vérification de taille sur le jeu de migration, vous pouvez :
+
 * déterminer s’il y a suffisamment d’espace disque dans le sous-référentiel `crx-quickstart` pour terminer l’extraction ;
 * déterminer si la taille du jeu de migration est conforme aux restrictions concernant les produits pris en charge et éviter les échecs d’ingestion de contenu.
 
@@ -181,15 +183,15 @@ Pour exécuter une vérification de taille, procédez comme suit :
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam9.png)
 
-1. Cliquez sur **Check Size** (Vérifier la taille) pour démarrer le processus. Vous revenez alors à la vue Liste des jeux de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
+1. Cliquez sur **Check Size** (Vérifier la taille) pour démarrer le processus. Vous revenez alors à la vue Liste jeu de migration et un message vous indique que **Vérifier la taille** est en cours d’exécution.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam10.png)
 
-1. Une fois que le processus **Vérifier la taille** est terminé, le statut passe sur **TERMINÉ**. Sélectionnez le même jeu de migration et cliquez sur **Vérifier la taille** pour afficher les résultats. Voici ci-dessous un exemple de résultats de **Check Size** (Vérifier la taille) sans avertissement.
+1. Après **Vérifier la taille** est terminé, l’état passe à **FINISHED**. Sélectionnez le même jeu de migration et cliquez sur **Vérifier la taille** pour afficher les résultats. Voici ci-dessous un exemple de résultats de **Check Size** (Vérifier la taille) sans avertissement.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Si les résultats de **Check Size** (Vérifier la taille) indiquent qu’il n’y a pas suffisamment d’espace disque ou que le jeu de migration dépasse les limites du produit, le statut **WARNING** (AVERTISSEMENT) s’affiche.
+1. Si la variable **Vérifier la taille** les résultats indiquent qu’il n’y a pas suffisamment d’espace disque ou que le jeu de migration dépasse les limites de produit, ou les deux, un **AVERTISSEMENT** s’affiche.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    
