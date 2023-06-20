@@ -4,7 +4,7 @@ description: Installation de la version [!DNL Workfront for Experience Manager e
 role: Admin
 feature: Integrations
 exl-id: 2907a3b2-e28c-4194-afa8-47eadec6e39a
-source-git-commit: 5568be57db4e270fcee22e637fc40f07529e0ecd
+source-git-commit: 393ec79e820632e879a377e697ecd09f4571c0b7
 workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 71%
@@ -22,7 +22,10 @@ Un utilisateur disposant d’un accès administrateur dans [!DNL Adobe Experienc
 
 >[!IMPORTANT]
 >
->* Depuis juin 2022, Adobe a lancé une nouvelle intégration native pour connecter Workfront à Adobe Experience Manager Assets as a Cloud Service. Cette intégration est devenue la méthode requise pour connecter ces deux solutions. Toute nouvelle implémentation future du connecteur amélioré (1.9.8 et versions ultérieures) pour connecter Workfront à AEM Assets as a Cloud Service est bloquée. Pour plus d’informations sur la configuration de cette intégration, voir [Configuration de l’intégration Experience Manager Assets as a Cloud Service](workfront-connector-configure.md).
+>Depuis juin 2022, Adobe a lancé une nouvelle intégration native pour connecter Workfront à Adobe Experience Manager Assets as a Cloud Service. Cette intégration est devenue la méthode requise pour connecter ces deux solutions. Toute nouvelle implémentation future du connecteur amélioré (1.9.8 et versions ultérieures) pour connecter Workfront à AEM Assets as a Cloud Service est bloquée. Pour plus d’informations sur la configuration de cette intégration, voir [Configuration de l’intégration Experience Manager Assets as a Cloud Service](workfront-connector-configure.md).
+
+>[!IMPORTANT]
+>
 >* Adobe nécessite le déploiement et la configuration de [!DNL Adobe Workfront for Experience Manager enhanced connector] uniquement par le biais de partenaires certifiés ou [!DNL Adobe Professional Services]. S’il est déployé et configuré sans partenaire certifié ou sans [!DNL Adobe Professional Services], il n’est pas pris en charge par Adobe.
 >
 >* Adobe peut publier des mises à jour d’[!DNL Adobe Workfront] et d’[!DNL Adobe Experience Manager] qui rendent ce connecteur redondant ; si cela se produit, les clients peuvent être amenés à cesser d’utiliser ce connecteur.
