@@ -2,10 +2,10 @@
 title: Tests de l’interface utilisateur
 description: Le test personnalisé d’interface utilisateur est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications personnalisées.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: 84b2648fe06b556534b53023769abaa69ef1ec2b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2411'
-ht-degree: 75%
+source-wordcount: '2401'
+ht-degree: 74%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 75%
 >[!CONTEXTUALHELP]
 >id="aemcloud_nonbpa_uitesting"
 >title="Tests de l’interface utilisateur"
->abstract="Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker afin de permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basés sur Selenium)."
+>abstract="Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications. Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker pour permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basés sur Selenium)."
 
 Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications.
 
@@ -47,9 +47,9 @@ Cette section décrit les étapes requises pour configurer des tests d’interfa
 
    * Pour JavaScript et WDIO, utilisez l’exemple de code généré automatiquement dans le dossier `ui.tests` de votre référentiel Cloud Manager.
 
-      >[!NOTE]
-      >
-      >Si votre référentiel a été créé avant la création automatique des dossiers `ui.tests` par Cloud Manager, vous pouvez également générer la dernière version en date à l’aide de l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
+     >[!NOTE]
+     >
+     >Si votre référentiel a été créé avant la création automatique des dossiers `ui.tests` par Cloud Manager, vous pouvez également générer la dernière version en date à l’aide de l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
 
    * Pour Java et WebDriver, utilisez l’exemple de code du [Référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
@@ -167,7 +167,7 @@ Pour que Cloud Manager génère et exécute vos tests d’interface utilisateur,
 * Le fichier doit se trouver sous le sous-module Maven pour les tests de l’interface utilisateur, à côté du fichier `pom.xml` du sous-module de tests de l’interface utilisateur.
 * Le fichier doit se trouver à la racine du fichier `tar.gz` créé.
 
-La génération et l’exécution des tests de l’interface utilisateur seront ignorées si ce fichier n’est pas présent.
+Les tests de l’interface utilisateur sont générés et les exécutions sont ignorées si ce fichier n’est pas présent.
 
 Pour inclure un fichier `testing.properties` dans l’artefact de build, ajoutez une instruction `include` dans le fichier `assembly-ui-test-docker-context.xml`.
 
@@ -191,13 +191,13 @@ Si vous utilisez les exemples fournis par Adobe :
 
 * Pour le dossier `ui.tests` JavaScript généré à partir de l’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests), vous pouvez exécuter la commande ci-dessous pour ajouter la configuration requise.
 
-   ```shell
-   echo "ui-tests.version=1" > testing.properties
-   
-   if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
-     awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
-   fi
-   ```
+  ```shell
+  echo "ui-tests.version=1" > testing.properties
+  
+  if ! grep -q "testing.properties" "assembly-ui-test-docker-context.xml"; then
+    awk -v line='                <include>testing.properties</include>' '/<include>wait-for-grid.sh<\/include>/ { printf "%s\n%s\n", $0, line; next }; 1' assembly-ui-test-docker-context.xml > assembly-ui-test-docker-context.xml.new && mv assembly-ui-test-docker-context.xml.new assembly-ui-test-docker-context.xml
+  fi
+  ```
 
 * Les exemples de test Cypress et Java Selenium fournis par Adobe disposent déjà de l’indicateur d’inclusion.
 
@@ -207,7 +207,7 @@ Cette section décrit les conventions que l’image Docker contenant vos tests d
 
 ### Variables d’environnement {#environment-variables}
 
-Les variables d’environnement suivantes seront transmises à votre image Docker au moment de l’exécution, selon votre structure.
+Les variables d’environnement suivantes sont transmises à votre image Docker au moment de l’exécution, selon votre structure.
 
 | Variable | Exemples | Description | Framework de test |
 |---|---|---|---|
@@ -242,7 +242,7 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 
 ### Prérequis {#prerequisites}
 
-* Les tests dans Cloud Manager sont exécutés par un utilisateur administrateur technique.
+* Les tests dans Cloud Manager sont exécutés à l’aide d’un utilisateur administrateur technique.
 
 >[!NOTE]
 >
@@ -254,7 +254,7 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 |----------------------|-------|-----------------------------------------------------------------------|
 | CPU | 2.0 | Quantité de temps réservé au processeur par exécution de test |
 | Mémoire | 1Gi | Quantité de mémoire allouée au test, valeur en gibioctets |
-| Expiration | 30m | Durée au bout de laquelle le test sera arrêté. |
+| Expiration | 30m | Durée au bout de laquelle le test est terminé. |
 | Durée recommandée | 15m | Adobe recommande d’écrire les tests pour qu’ils ne prennent pas plus de temps que cette durée. |
 
 >[!NOTE]
@@ -343,7 +343,7 @@ Avant d’activer les tests d’interface utilisateur dans un pipeline Cloud Man
 
 >[!NOTE]
 >
->Les fichiers journaux seront stockés dans le dossier `target/` de votre référentiel.
+>Les fichiers journaux sont stockés dans le dossier `target/` de votre référentiel.
 >
 >Pour plus d’informations, reportez-vous à la section [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
@@ -390,6 +390,6 @@ Avant d’activer les tests d’interface utilisateur dans un pipeline Cloud Man
 
 >[!NOTE]
 >
->Les fichiers journaux seront stockés dans le dossier `target/reports` de votre référentiel.
+>Les fichiers journaux sont stockés dans le dossier `target/reports` de votre référentiel.
 >
 >Pour plus d’informations, reportez-vous à la section [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
