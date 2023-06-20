@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: beb6ac3dbb036559510e6a2e2700b28c433ef98d
+source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 37%
+source-wordcount: '372'
+ht-degree: 36%
 
 ---
 
@@ -27,6 +27,7 @@ Aucun.
 
 - ASSETS-25729 - Le menu de sélecteur d’affichage est désactivé.
 - ASSETS-25728 - L’option Retraiter les ressources n’est pas disponible dans la vue de recherche
+- ASSETS-22603 - Certaines colonnes du rapport de ressources de type Téléchargement affichent des valeurs &quot;null&quot; dans l’interface utilisateur. Le fichier CSV téléchargeable n’est pas affecté.
 
 ### Problèmes résolus {#fixed-issues-12255}
 
