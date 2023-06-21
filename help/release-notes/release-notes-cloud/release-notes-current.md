@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: d4d44f452406e452372e409c6594ef4a256b9682
+source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
 workflow-type: tm+mt
 source-wordcount: '1095'
-ht-degree: 31%
+ht-degree: 32%
 
 ---
 
@@ -41,7 +41,7 @@ Consultez la vidéo Aperçu de la version d’avril 2023 pour obtenir un résum�
 * Exportez des fragments de contenu d’AEM as a Cloud Service vers Adobe Target en tant qu’offres JSON.
 * La prise en charge de la pagination et du tri GraphQL, ainsi que des améliorations de la mise en cache interne, permettent désormais d’accroître les performances des applications clientes découplées lors de la récupération de jeux de contenu volumineux d’AEM à l’aide de requêtes et de filtres GraphQL complexes.
 
-### Nouvelles fonctionnalités d’ [!DNL Experience Manager Sites] premise {#prerelease-sites}
+### Nouvelles fonctionnalités de la préversion de [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * Les fragments de contenu et leurs références peuvent désormais être publiés dans la [Service d’aperçu AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) en utilisant la variable [Console de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), permettant aux utilisateurs de prévisualiser l’expérience finale sur une application d’aperçu découplée avant la mise en ligne.
 
