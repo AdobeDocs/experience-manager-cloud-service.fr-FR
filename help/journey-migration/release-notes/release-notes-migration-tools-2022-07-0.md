@@ -3,10 +3,10 @@ title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.7.0
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: cc52dfac1e7495d6a792bc7525720695022db8eb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 100%
+source-wordcount: '429'
+ht-degree: 95%
 
 ---
 
@@ -42,7 +42,7 @@ La date de publication de l’outil de transfert de contenu v2.0.12 est le 19 
 * Pour aider à déboguer les problèmes de connexion SSL/TLS lors des extractions, les utilisateurs peuvent désormais activer la journalisation SSL.
 * Pour aider à déboguer les problèmes de connectivité source, les noms de sous-domaines sont désormais imprimés dans les journaux lorsque la connexion à Azure échoue.
 * Pour aider à déboguer les problèmes qui surviennent lors de la pré-copie, les journaux AzCopy sont désormais ajoutés aux journaux d’extraction en cas d’échec de la pré-copie.
-* Pour éviter que les résultats de vérification de la taille ne soient obsolètes, les utilisateurs ne pourront réexécuter la vérification de la taille qu’une fois la vérification précédente terminée.
+* Pour éviter que la taille de contrôle ne soit obsolète, les utilisateurs ne peuvent réexécuter la taille de contrôle qu’une fois la taille de contrôle précédente terminée.
 
 ### Correctifs {#bug-fixes-ctt}
 

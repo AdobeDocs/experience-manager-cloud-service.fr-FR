@@ -2,10 +2,10 @@
 title: Création de rendus vidéo dans Screens as a Cloud Service
 description: Cette page décrit comment créer des rendus vidéo dans Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 100%
+source-wordcount: '341'
+ht-degree: 86%
 
 ---
 
@@ -48,10 +48,10 @@ Pour créer des rendus vidéo dans Screens as a Cloud Service à partir du fourn
    ![](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
-   >Veillez à utiliser le nom du codage commençant par « screens- ». Seuls ces rendus vidéo seront considérés comme pouvant lire l’expérience vidéo dans Screens as a Cloud Service. Saisissez le débit qui fonctionne avec vos vidéos (2 500 Kbit/s pour une vidéo de 720 px et 5 000 Kbit/s pour une vidéo de 1 080 px).
+   >Veillez à utiliser le nom du codage commençant par &quot;screens-&quot;. Seuls ces rendus vidéo sont considérés comme lisant l’expérience vidéo dans Screens as a Cloud Service. Saisissez le débit qui fonctionne avec vos vidéos (2 500 Kbit/s pour une vidéo de 720 px et 5 000 Kbit/s pour une vidéo de 1 080 px).
 
    >[!NOTE]
-   >Vous pouvez ajouter plusieurs rendus vidéo avec des valeurs de largeur/hauteur/débit variables pour utiliser vos vidéos. N’oubliez pas que tous les rendus Screens seront téléchargés par les appareils Screens, même si l’appareil ne lit que le rendu vidéo.
+   >Vous pouvez ajouter plusieurs rendus vidéo avec des valeurs de largeur/hauteur/débit variables pour utiliser vos vidéos. Tous les écrans et rendus sont téléchargés par les appareils Screens, même si l’appareil lit uniquement le rendu vidéo.
 
 1. Cliquez sur **Enregistrer**.
 
@@ -66,4 +66,3 @@ Pour créer des rendus vidéo dans Screens as a Cloud Service à partir du fourn
    >[!NOTE]
    >* Vous pouvez créer plusieurs profils de traitement et les appliquer aux dossiers correspondants, de sorte que les vidéos contenues dans ces dossiers obtiennent les rendus vidéo spécifiques.
    >* Lorsque vous chargez des vidéos dans le dossier où le profil de traitement est appliqué, les vidéos sont traitées et les rendus configurés sont créés, qui sont ensuite utilisés par les périphériques Screens pour lire les vidéos.
-

@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.7.0. »
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1038'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -88,7 +88,7 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 
 * Les pipelines de Cloud Manager prennent désormais en charge les variables et les secrets définis par le client.
 
-   Pour plus d’informations, consultez Variables de pipeline.
+  Pour plus d’informations, consultez Variables de pipeline.
 
 * Les référentiels Maven privés liés à l’authentification sont désormais pris en charge.
 
@@ -121,7 +121,7 @@ Consultez Utilisation de la prise en charge de Java 11 pour plus d’informatio
 
 ### Nouveautés {#what-is-new-foundations}
 
-* [Les journaux peuvent être transférés vers des comptes Splunk](/help/implementing/developing/introduction/logging.md#splunk-logs), ce qui permet aux entreprises d’exploiter leur investissement dans Splunk.
+* [Les journaux peuvent être transférés vers des comptes Splunk.](/help/implementing/developing/introduction/logging.md#splunk-logs), qui permet aux entreprises d’utiliser leur investissement Splunk.
 
 * [Une adresse IP de sortie statique et dédiée](/help/implementing/developing/introduction/development-guidelines.md#dedicated-egress-ip-address) peut être affectée au trafic sortant programmé dans le code Java, ce qui peut s’avérer utile pour certaines intégrations.
 
@@ -137,7 +137,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 * La version antérieure de CRA ne pouvait pas s’exécuter sur Adobe Experience Manager (AEM) 6.1. Nous avons ajouté la prise en charge explicite de l’autorisation des utilisateurs dans le groupe d’administrateurs.
 
-   Voir [Installation de CRA sur AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=fr#installing-on-aem61) pour plus d’informations.
+  Voir [Installation de CRA sur AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=fr#installing-on-aem61) pour plus d’informations.
 
 * L’horodatage d’expiration affiché sur le rapport résumé était incorrect.
 

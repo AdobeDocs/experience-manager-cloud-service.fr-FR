@@ -2,14 +2,14 @@
 title: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 761f1605-c421-4f3a-8f90-af23f4f047b1
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 95%
+ht-degree: 88%
 
 ---
 
-# Notes de mise à jour 2022.3.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2022.3.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.3.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -91,13 +91,13 @@ Consultez la vidéo [Aperçu de la version de mars 2022](https://video.tv.adobe
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Pour une résolution plus efficace et efficiente des problèmes liés aux fonctionnalités personnalisées dans les environnements cloud, nous avons lancé un nouvel outil de développement, à savoir le [navigateur de référentiels](/help/implementing/developing/tools/repository-browser.md). Vous pouvez lancer ce navigateur léger en lecture seule et en HTML à partir de la Developer Console. Visionnez le référentiel de contenu aux niveaux éditeur, auteur et aperçu, et dans tous les environnements, en production, en évaluation et en développement. Parcourez la structure de contenu, affichez les propriétés, prévisualisez et téléchargez des fichiers binaires.
+* Pour une résolution plus efficace et plus efficace des problèmes liés aux fonctionnalités personnalisées dans les environnements cloud, nous avons lancé un nouvel outil de développement - [Explorateur de référentiels](/help/implementing/developing/tools/repository-browser.md). Il s’agit d’un navigateur léger, en lecture seule et par HTML que vous pouvez lancer à partir de Developer Console. Visionnez le référentiel de contenu aux niveaux éditeur, auteur et aperçu, et dans tous les environnements, en production, en évaluation et en développement. Parcourez la structure de contenu, affichez les propriétés, prévisualisez et téléchargez des fichiers binaires.
 
-   ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
+  ![repobrowserrelnotes](/help/release-notes/assets/repobrowserrelnotes.png)
 
 * Les informations d’identification utilisées pour authentifier les appels API serveur à serveur (par exemple, pour les demandes d’API GraphQL) peuvent désormais être actualisées avant expiration en libre-service à partir de Developer Console. Pour plus d’informations, consultez la [documentation](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md#refresh-credentials).
 
-* Les tâches de maintenance de purge de version et de journaux d’audit qui n’avaient pas été activées auparavant seront activées pour les nouveaux environnements. Consultez les valeurs associées dans cet article [Tâche de maintenance](/help/operations/maintenance.md).
+* Les tâches de maintenance de purge de version et de purge des journaux d’audit, qui n’avaient pas été activées auparavant, sont désormais activées pour les nouveaux environnements. Consultez les valeurs associées dans cet article [Tâche de maintenance](/help/operations/maintenance.md).
 
 * Les outils du dispatcher du SDK AEM as a Cloud Service prennent désormais en charge les ordinateurs Mac doté d’une puce M1.
 
@@ -113,7 +113,7 @@ La date de publication de l’outil de transfert de contenu version v1.9.0 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Garde-fous de vérification de la taille : la fonctionnalité Vérification de la taille de l’outil de transfert de contenu permet de réduire le nombre de transferts de contenu ayant échoué. Grâce à la fonction de Vérification de la taille, les utilisateurs peuvent 1) déterminer s’ils disposent d’un espace disque suffisant dans le sous-répertoire `crx-quickstart` avant extraction, et 2) estimer la taille du jeu de migration et vérifier s’il est pris en charge. Si l’une de ces vérifications est enfreinte, les utilisateurs verront apparaître des avertissements dans l’interface utilisateur de CTT. Grâce à ce garde-fous de sécurité, vous pouvez éviter les échecs de transfert de contenu et discuter de manière proactive des options de migration avec l’assistance clientèle d’Adobe. Consultez la [Détermination de la taille du jeu de migration et de l’espace disque](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#migration-set-size) pour plus d’informations.
+* Garde-fous de vérification de la taille : la fonctionnalité Vérification de la taille de l’outil de transfert de contenu permet de réduire le nombre de transferts de contenu ayant échoué. Grâce à la fonction Vérifier la taille , les utilisateurs peuvent 1) déterminer s’ils disposent d’un espace disque suffisant dans la variable `crx-quickstart` sous-répertoire avant extraction, et 2) estimer la taille du jeu de migration et vérifier s’il est pris en charge. Si l’une de ces vérifications est enfreinte, les utilisateurs verront apparaître des avertissements dans l’interface utilisateur de CTT. Grâce à ce garde-fous de sécurité, vous pouvez éviter les échecs de transfert de contenu et discuter de manière proactive des options de migration avec l’assistance clientèle d’Adobe. Consultez la [Détermination de la taille du jeu de migration et de l’espace disque](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#migration-set-size) pour plus d’informations.
 
 ## Analyseur des bonnes pratiques {#bpa-release}
 

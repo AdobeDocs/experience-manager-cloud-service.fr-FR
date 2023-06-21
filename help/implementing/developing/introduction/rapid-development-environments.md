@@ -1,17 +1,17 @@
 ---
 title: Environnements de développement rapide
-description: Découvrez comment tirer parti des environnements de développement rapide pour réaliser des itérations de développement rapides sur un environnement cloud.
+description: Découvrez comment utiliser des environnements de développement rapide pour des itérations de développement rapides sur un environnement cloud.
 exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
-source-git-commit: 5bfa5a1df940b8903acd08f4c3cb7443adb897d8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3325'
-ht-degree: 98%
+source-wordcount: '3317'
+ht-degree: 94%
 
 ---
 
 # Environnements de développement rapide {#rapid-development-environments}
 
-Afin de déployer les modifications, les environnements de développement cloud actuels nécessitent l’utilisation d’un processus qui utilise des règles de sécurité et de qualité du code, appelé pipeline CI/CD. Dans les cas où des modifications rapides et itératives sont nécessaires, Adobe a introduit des environnements de développement rapide (RDE).
+Pour déployer des modifications, les environnements de développement cloud actuels nécessitent l’utilisation d’un processus qui utilise des règles de sécurité et de qualité de code étendues appelées pipeline CI/CD. Dans les cas où des modifications rapides et itératives sont nécessaires, Adobe a introduit des environnements de développement rapide (RDE).
 
 Les RDE permettent aux développeurs de déployer et d’examiner rapidement les modifications, afin de réduire la durée des tests des fonctionnalités éprouvées dans un environnement de développement local.
 
@@ -26,7 +26,7 @@ Vous pouvez visionner d’autres vidéos présentant [comment le configurer](htt
 
 Les RDE peuvent être utilisés pour les configurations de code, de contenu et Apache ou Dispatcher. Contrairement aux environnements de développement cloud standard, les développeurs peuvent utiliser des outils de ligne de commande locaux pour synchroniser le code créé localement avec un RDE.
 
-Chaque programme est configuré avec un RDE. Notez que les comptes sandbox seront mis en veille après quelques heures d’inactivité.
+Chaque programme est configuré avec un RDE. Dans le cas de comptes Sandbox, ils sont mis en veille après quelques heures de non-utilisation.
 
 Lors de la création, les RDE sont définis sur la dernière version d’AEM disponible. Une réinitialisation du RDE, qui peut être effectuée à l’aide de Cloud Manager, enchaîne le RDE et le définit sur la dernière version d’AEM disponible.
 
@@ -50,7 +50,7 @@ Pour créer un RDE pour votre programme à l’aide de Cloud Manager, procédez
 
    * L’option **Ajouter un environnement** est également disponible dans l’onglet **Environnements**.
 
-      ![Onglet Environnements](/help/implementing/cloud-manager/assets/environments-tab.png)
+     ![Onglet Environnements](/help/implementing/cloud-manager/assets/environments-tab.png)
 
    * L’option **Ajouter un environnement** peut être désactivée en raison d’un niveau d’autorisation insuffisant ou de ressources sous licence.
 
@@ -128,8 +128,7 @@ Une fois que vous avez ajouté un RDE pour votre programme à l’aide de Cloud�
    >
    >Si vous rencontrez l’erreur `Warning: cloudmanager:list-programs is not a aio command.`, vous devez installer [aio-cli-plugin-cloudmanager](https://github.com/adobe/aio-cli-plugin-cloudmanager) en exécutant la commande ci-dessous :
    >
-   >
-   ```
+   >```
    >aio plugins:install @adobe/aio-cli-plugin-cloudmanager
    >```
 
@@ -148,11 +147,11 @@ Pour développer une nouvelle fonctionnalité, Adobe recommande le workflow suiv
 
 * Lorsqu’un jalon intermédiaire est atteint et validé localement avec le SDK AEM as a Cloud Service, le code doit être validé dans une branche de fonctionnalité Git qui ne fait pas encore partie de la ligne principale, bien que la validation de ce dernier soit facultative. Ce qui constitue un « jalon intermédiaire » varie en fonction des habitudes de l’équipe. Par exemple, quelques nouvelles lignes de code, une demi-journée de travail ou l’achèvement d’une sous-fonctionnalité.
 
-* Réinitialisez le RDE s’il a été utilisé par une autre fonctionnalité et si vous souhaitez le [réinitialiser à un état par défaut](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->La réinitialisation prend quelques minutes et supprime tout le contenu et le code existants. Vous pouvez utiliser la commande de statut RDE pour confirmer que le RDE est prêt. Le RDE reviendra avec la version la plus récente d’AEM.
+* Réinitialisez le RDE s’il a été utilisé par une autre fonctionnalité et si vous souhaitez le [réinitialiser à un état par défaut](#reset-rde). <!-- Alexandru: hiding for now, please don't delete This can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). -->La réinitialisation prend quelques minutes et tout le contenu et le code existants sont supprimés. Vous pouvez utiliser la commande de statut RDE pour confirmer que le RDE est prêt. Le RDE reviendra avec la version la plus récente d’AEM.
 
-   >[!IMPORTANT]
-   >
-   > Si vos environnements d’évaluation et de production ne reçoivent pas les actualisations de mise à jour d’AEM automatique et sont très en retard par rapport à la version d’AEM la plus récente, gardez à l’esprit que le code qui s’exécute sur le RDE peut ne pas correspondre à la façon dont le code fonctionnera sur l’évaluation et la production. Dans ce cas, il est particulièrement important d’effectuer des tests approfondis du code lors de l’évaluation avant de le déployer en production.
+  >[!IMPORTANT]
+  >
+  > Si vos environnements d’évaluation et de production ne reçoivent pas les actualisations de mise à jour d’AEM automatique et sont très en retard par rapport à la version d’AEM la plus récente, gardez à l’esprit que le code qui s’exécute sur le RDE peut ne pas correspondre à la façon dont le code fonctionnera sur l’évaluation et la production. Dans ce cas, il est particulièrement important d’effectuer des tests approfondis du code lors de l’évaluation avant de le déployer en production.
 
 
 * À l’aide de l’interface de ligne de commande RDE, synchronisez le code local avec le RDE. Les options incluent l’installation d’un package de contenu, d’une offre groupée spécifique, d’un fichier de configuration OSGI, d’un fichier de contenu et d’un fichier zip d’une configuration Apache/Dispatcher. Il est également possible de référencer un package de contenu distant. Consultez la section [Outils de ligne de commande RDE](#rde-cli-commands) pour plus d’informations. Vous pouvez utiliser la commande Statut pour vérifier que le déploiement a réussi. Vous pouvez éventuellement utiliser le gestionnaire de modules pour installer des packages de contenu.
@@ -185,11 +184,11 @@ Cependant, avec une coordination étroite, il est possible pour plusieurs dével
 
 * Pour obtenir une liste des commandes, saisissez :
 
-   `aio aem:rde`
+  `aio aem:rde`
 
 * Pour obtenir une aide détaillée sur une commande, saisissez :
 
-   `aio aem rde <command> --help`
+  `aio aem rde <command> --help`
 
 ### Déploiement sur l’outil RDE {#deploying-to-rde}
 
@@ -352,7 +351,7 @@ Vous pouvez supprimer des configurations et des lots déployés précédemment s
 
 Par exemple, si `com.adobe.granite.demo.MyServlet.cfg.json` a été installé, la référence `bsn` est juste `com.adobe.granite.demo.MyServlet`, sans le suffixe **cfg.json**.
 
-La suppression des packages ou fichiers de contenu n’est pas prise en charge. Pour les supprimer, le RDE doit être réinitialisé à son état par défaut.
+La suppression des packages ou fichiers de contenu n’est pas prise en charge. Pour les supprimer, le RDE doit être réinitialisé, ce qui le renverra à un état par défaut.
 
 Consultez l’exemple ci-dessous pour plus de détails :
 
@@ -366,17 +365,17 @@ Pour plus d’informations et des démonstrations, consultez le tutoriel vidéo 
 
 ## Réinitialiser {#reset-rde}
 
-La réinitialisation du RDE supprime tout le code personnalisé, les configurations et le contenu des instances de création et de publication. Cette opération peut s’avérer utile, par exemple, si le RDE a été utilisé pour tester une fonctionnalité spécifique et que vous souhaitez réinitialiser l’environnement à son état par défaut afin de tester une autre fonctionnalité.
+La réinitialisation du RDE supprime tout le code personnalisé, les configurations et le contenu des instances de création et de publication. Cette réinitialisation est utile, par exemple, si le RDE a été utilisé pour tester une fonctionnalité spécifique et que vous souhaitez la réinitialiser à un état par défaut afin que vous puissiez tester une autre fonctionnalité.
 
 Une réinitialisation définit le RDE sur la version d’AEM la plus récente disponible.
 
 <!-- Alexandru: hiding for now, please don't delete
 
-Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code will be deleted from the RDE.
+Resetting can be done via [Cloud Manager](#reset-the-rde-cloud-manager) or via the [command line](#reset-the-rde-command-line). Resetting takes a few minutes and all existing content and code is deleted from the RDE.
 
 >[NOTE!]
 >
->You must be assigned the Cloud Manager Developer role in order to be able to use the reset feature. If not, a reset action will result in an error.
+>You must be assigned the Cloud Manager Developer role to use the reset feature. If not, a reset action results in an error.
 
 ### Reset the RDE via Command Line {#reset-the-rde-command-line}
 
@@ -400,7 +399,7 @@ Vous pouvez utiliser Cloud Manager pour réinitialiser votre RDE en procédant 
 
    * Vous pouvez également cliquer sur le bouton **Tout afficher** dans la carte **Environnements** pour accéder directement à l’onglet **Environnements**.
 
-      ![Option Tout afficher](/help/implementing/cloud-manager/assets/environment-showall.png)
+     ![Option Tout afficher](/help/implementing/cloud-manager/assets/environment-showall.png)
 
 1. La fenêtre **Environnements** s’affiche et répertorie tous les environnements du programme.
 
@@ -464,7 +463,7 @@ Les niveaux de journal peuvent être définis en modifiant les configurations OS
 
 ## En quoi les RDE diffèrent-ils des environnements de développement cloud ? {#how-are-rds-different-from-cloud-development-environments}
 
-Bien que le RDE et l’environnement de développement cloud partagent de nombreuses similitudes, ils diffèrent légèrement au niveau de leur architecture afin de permettre une synchronisation rapide du code. Le mécanisme de transfert du code vers le RDE est différent : la synchronisation du code s’effectue à partir d’un environnement de développement local pour les RDE et via Cloud Manager pour les environnements de développement cloud.
+Bien que le RDE soit à de nombreux égards similaire à un environnement de développement cloud, il existe des différences architecturales mineures pour permettre une synchronisation rapide du code. Le mécanisme de transfert du code vers le RDE est différent : la synchronisation du code s’effectue à partir d’un environnement de développement local pour les RDE et via Cloud Manager pour les environnements de développement cloud.
 
 Pour ces raisons, il est recommandé, après la validation du code dans un environnement RDE, de déployer le code dans un environnement de développement cloud à l’aide du pipeline hors production. La dernière étape consiste à tester le code avant de le déployer avec le pipeline de production.
 

@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: af5eb5aeb34e2f0ead98e0a0acb412b19bcfe517
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1355'
-ht-degree: 99%
+source-wordcount: '1352'
+ht-degree: 95%
 
 ---
 
@@ -47,19 +47,19 @@ La version suivante (2021.6.0) sera publiée le 28 juin 2021.
 
 * Vous pouvez télécharger les ressources partagées à l’aide de la fonctionnalité Partage de liens. Ce téléchargement utilise désormais un service asynchrone qui offre des téléchargements plus rapides et ininterrompus, même pour les téléchargements très volumineux. Voir la section [Téléchargement de ressources](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![Boîte de réception de téléchargement](/help/assets/assets/download-inbox.png)
+  ![Boîte de réception de téléchargement](/help/assets/assets/download-inbox.png)
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire {#what-is-new-assets-prerelease}
 
 * Les schémas de métadonnées peuvent être appliqués directement aux propriétés du dossier.
 
-   ![Ajout d’un schéma de métadonnées à partir des propriétés du dossier](/help/assets/assets/metadata-schema-folder-properties.png)
+  ![Ajout d’un schéma de métadonnées à partir des propriétés du dossier](/help/assets/assets/metadata-schema-folder-properties.png)
 
 * L’outil d’ingestion en masse de ressources vous permet d’ajouter des métadonnées lors d’une ingestion en masse.
 
 * Une amélioration de l’expérience utilisateur affiche le nombre de ressources présentes dans un dossier. Pour plus de 1 000 ressources dans un dossier, [!DNL Assets] affiche 1000+.
 
-   ![Nombre de ressources dans un dossier affichées dans l’interface](/help/assets/assets/browse-folder-number-of-assets.png)
+  ![Nombre de ressources dans un dossier affichées dans l’interface](/help/assets/assets/browse-folder-number-of-assets.png)
 
 ### Correctifs d’[!DNL Assets]  {#assets-bugs-fixed}
 
@@ -110,7 +110,7 @@ La prochaine version est prévue pour le 3 juin 2021.
 
 * Le point d’entrée du référentiel dans l’API publique inclut désormais l’URL de Git.
 
-* Le journal de déploiement téléchargé par un utilisateur de Cloud Manager sera plus informatif et comprendra désormais des détails sur les échecs et les scénarios de succès.
+* Les journaux de déploiement téléchargés par un utilisateur de Cloud Manager sont plus pertinents et incluent des détails sur les échecs et les scénarios de succès.
 
 * Les échecs intermittents rencontrés lors de la publication du code vers le git d’Adobe ont maintenant été résolus.
 
@@ -148,7 +148,7 @@ La date de publication de l’outil de transfert de contenu version v1.4.6 est 
 
 * Une nouvelle instruction de connexion a été ajoutée au journal des erreurs du démarrage rapide si l’utilisateur ne dispose pas de l’autorisation d’exécution sur le fichier exécutable Java.
 
-* Lorsqu’un utilisateur supprime un jeu de migration de l’interface utilisateur de CTT, où une extraction a été effectuée, le dossier `tmp` associé à ce jeu de migration est supprimé afin d’économiser de l’espace.
+* Lorsqu’un utilisateur supprime un jeu de migration de l’interface utilisateur du CTT, où une extraction a été effectuée, la variable `tmp` le dossier associé à ce jeu de migration est supprimé afin d’économiser de l’espace.
 
 ### Correctifs {#bug-fixes-ctt-latest}
 

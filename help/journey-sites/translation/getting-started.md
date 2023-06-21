@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 9bfc3995-ac8e-488e-b68f-9e1b5b4a3176
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1412'
-ht-degree: 100%
+source-wordcount: '1406'
+ht-degree: 94%
 
 ---
 
@@ -57,7 +57,7 @@ Un certain nombre d’exigences s’imposent avant de vous lancer dans la traduc
 
 ## Stockage du contenu par AEM {#content-in-aem}
 
-En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu. Toutefois, il sera utile de connaître les concepts de base et la terminologie lorsque vous utiliserez les outils de traduction AEM. Plus important encore, vous devez comprendre votre propre contenu et sa structure pour pouvoir le traduire efficacement.
+En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu. Toutefois, il est utile de connaître les concepts et la terminologie de base, car vous utiliserez ensuite AEM outils de traduction. Plus important encore, vous devez comprendre votre propre contenu et la manière dont il est structuré pour le traduire efficacement.
 
 ### La console Sites {#sites-console}
 
@@ -175,7 +175,7 @@ La structure finale peut ressembler à ce qui suit.
     |- ...
 ```
 
-Vous devez prendre note du chemin spécifique de votre contenu, car il sera ensuite nécessaire pour configurer votre traduction.
+Vous devez prendre note du chemin spécifique de votre contenu, car il est nécessaire ultérieurement pour configurer votre traduction.
 
 >[!NOTE]
 >

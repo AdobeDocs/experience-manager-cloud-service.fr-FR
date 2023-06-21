@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: addfa18ed8fa45b1cfc17d4e35cbdde47b491507
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1753'
-ht-degree: 93%
+source-wordcount: '1732'
+ht-degree: 80%
 
 ---
 
@@ -28,7 +28,7 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-01.png)
 
-1. Consultez la liste de contrôle d’ingestion et assurez-vous que toutes les étapes ont été effectuées. Ces étapes constituent un préalable indispensable à la réussite de l’ingestion. Vous devez d’abord terminer la liste de contrôle avant de pouvoir passer à l’étape **suivante**.
+1. Consultez la liste de contrôle d’ingestion et assurez-vous que toutes les étapes ont été effectuées. Ces étapes constituent un préalable indispensable à la réussite de l’ingestion. Passez à la **Suivant** étape uniquement si la liste de contrôle est terminée.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/Ingestion-checklist.png)
 
@@ -36,20 +36,20 @@ Pour ingérer le jeu de migration obtenu à l’aide de l’outil de transfert d
 
    * Sélectionnez le jeu de migration contenant les données extraites en tant que source.
       * Les jeux de migration expirent après une longue période d’inactivité. Il est donc probable que l’ingestion se produise peu de temps après l’exécution de l’extraction. Consultez [Expiration du jeu de migration](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md#migration-set-expiry) pour plus d’informations.
-   * Sélectionnez l’environnement de destination. C’est à ce moment que le contenu du jeu de migration sera ingéré. Sélectionnez le niveau. (Création/Publication). Les environnements de développement rapide ne sont pas pris en charge.
+   * Sélectionnez l’environnement de destination. C’est dans cet environnement que le contenu du jeu de migration est ingéré. Sélectionnez le niveau. (Création/Publication). Les environnements de développement rapide ne sont pas pris en charge.
 
    >[!NOTE]
    >Les remarques suivantes s’appliquent à l’ingestion de contenu :
    > Si la source était en Auteur, il est recommandé de l’ingérer dans le niveau Auteur sur la cible. De même, si la source était en Publication, la cible doit également être en Publication.
-   > Si le niveau cible est `Author`, l’instance de création sera arrêtée pendant la durée de l’ingestion et ne sera pas disponible pour les utilisateurs et utilisatrices (par exemple, les auteurs ou autrices ou toute personne effectuant la maintenance, etc.). Cela permet de protéger le système et d’empêcher toute modification qui pourrait être perdue ou entraîner un conflit d’ingestion. Assurez-vous d’en informer votre équipe. Notez également que l’environnement apparaîtra en veille pendant l’ingestion de l’instance de création.
+   > Si le niveau cible est `Author`, l’instance d’auteur est arrêtée pendant la durée de l’ingestion et devient indisponible pour les utilisateurs (par exemple, les auteurs ou toute personne effectuant la maintenance). La raison est de protéger le système et d’empêcher toute modification qui pourrait être perdue ou provoquer un conflit d’ingestion. Assurez-vous que votre équipe est au courant de ce fait. Notez également que l’environnement apparaît en veille pendant l’ingestion par l’auteur.
    > Vous pouvez exécuter l’étape de précopie facultative pour accélérer considérablement la phase d’ingestion. Pour plus d’informations, voir [Ingestion avec AzCopy](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#ingesting-azcopy).
    > Si l’ingestion avec une précopie est utilisée (pour S3 ou Azure Data Store), il est recommandé d’exécuter l’ingestion d’auteur en premier, seule. Cela permet d’accélérer l’ingestion de publication lorsqu’elle est exécutée ultérieurement.
-   > Les ingestions ne prennent pas en charge une destination d’environnement de développement rapide (RDE). Elles n’apparaîtront pas comme choix de destination possible, même si l’utilisateur ou l’utilisatrice y a accès.
+   > Les intuitions ne prennent pas en charge une destination RDE (Rapid Development Environment) et n’apparaissent pas comme un choix de destination possible, même si l’utilisateur y a accès.
 
    >[!IMPORTANT]
    > Les remarques importantes suivantes s’appliquent à l’ingestion de contenu :
-   > Vous pourrez déclencher une ingestion vers un environnement de destination seulement si vous appartenez au groupe local **Administrateurs AEM** sur le service de création Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
-   > Si le paramètre **Effacer** est activé avant l’ingestion, il supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel ingérer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. Vous devez être de nouveau ajouté au groupe d’administrateurs pour démarrer une ingestion.
+   > Vous ne pouvez lancer une ingestion vers l’environnement de destination que si vous appartenez à l’environnement local. **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination. Si vous ne parvenez pas à démarrer une ingestion, reportez-vous à la section [Impossible de démarrer l’ingestion](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#unable-to-start-ingestion) pour plus d’informations.
+   > Si le paramètre **Effacer** est activé avant l’ingestion, il supprime l’intégralité du référentiel existant et crée un nouveau référentiel dans lequel ingérer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. Vous devez être rajouté au groupe administrateurs pour commencer une ingestion.
 
 1. Cliquez sur **Ingérer**.
 
@@ -118,11 +118,11 @@ Vous devez récupérer manuellement le jeton de migration en cliquant sur le lie
 
 >[!NOTE]
 >
->Le jeton sera disponible pour les utilisateurs qui appartiennent au groupe local **Administrateurs AEM** sur le service de création Cloud Service de destination.
+>Le jeton est disponible pour les utilisateurs qui appartiennent au **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination.
 
 ### Impossible de démarrer l’ingestion {#unable-to-start-ingestion}
 
-Vous pourrez déclencher une ingestion vers un environnement de destination seulement si vous appartenez au groupe local **Administrateurs AEM** sur le service de création Cloud Service de destination. Si vous n’appartenez pas au groupe d’administrateurs AEM, une erreur s’affiche lorsque vous essayez de démarrer une ingestion, comme illustré ci-dessous. Vous pouvez demander à votre administrateur de vous ajouter au groupe local **Administrateurs AEM** ou demander directement le jeton, que vous pouvez ensuite coller dans le champ **Entrée du jeton de migration**.
+Vous ne pouvez lancer une ingestion vers l’environnement de destination que si vous appartenez à l’environnement local. **Administrateurs AEM** groupe sur le service de création du Cloud Service de destination. Si vous n’appartenez pas au groupe d’administrateurs AEM, une erreur s’affiche lorsque vous essayez de démarrer une ingestion, comme illustré ci-dessous. Vous pouvez demander à votre administrateur de vous ajouter au groupe local **Administrateurs AEM** ou demander directement le jeton, que vous pouvez ensuite coller dans le champ **Entrée du jeton de migration**.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_nonadmin_ingestion.png)
 
@@ -138,7 +138,7 @@ Cela indique que Cloud Acceleration Manager n’a pas pu atteindre le service 
 > 
 > Le champ « Jeton de migration » s’affiche, car dans certains cas, la récupération de ce jeton est ce qui est en fait interdit. En autorisant sa mise à disposition manuelle, cela peut permettre à l’utilisateur ou l’utilisatrice de démarrer rapidement l’ingestion, sans aide supplémentaire. Si le jeton est fourni et que le message s’affiche toujours, ce n’est pas la récupération du jeton qui a posé problème.
 
-* AEM as a Cloud Service conserve l’état de l’environnement et peut parfois devoir redémarrer le service de migration pour plusieurs raisons normales. Si ce service redémarre, il ne peut pas être atteint, mais sera rapidement disponible.
+* AEM as a Cloud Service conserve l’état de l’environnement et peut parfois devoir redémarrer le service de migration pour plusieurs raisons normales. Si ce service redémarre, il ne peut pas être atteint, mais il est généralement disponible rapidement.
 * Il est possible qu’un autre processus soit en cours d’exécution sur l’instance. Si, par exemple, l’application d’une mise à jour est lancée par Release Orchestration, le système peut être occupé et le service de migration régulièrement indisponible. C’est pour cette raison, ainsi qu’en raison du risque de corruption de l’instance d’évaluation ou de production, il est fortement recommandé de suspendre les mises à jour lors d’une ingestion.
 * Si une [liste autorisée d’adresses IP a été appliquée](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) via Cloud Manager, cela empêche Cloud Acceleration Manager d’accéder au service de migration. Une adresse IP ne peut pas être ajoutée pour les ingestions, car leur adresse est très dynamique. Actuellement, la seule solution consiste à désactiver la liste autorisée d’adresses IP pendant l’exécution de l’ingestion.
 * D’autres raisons peuvent nécessiter un examen. Si l’ingestion continue d’échouer, veuillez contacter l’assistance clientèle Adobe.

@@ -7,10 +7,10 @@ topic-tags: develop
 hide: true
 hidefromtoc: true
 exl-id: e1eb0812-c92e-4a18-aabb-5a70b9e6fc7d
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 100%
+source-wordcount: '3359'
+ht-degree: 99%
 
 ---
 
@@ -62,7 +62,7 @@ Dans cette leçon, vous vous familiarisez avec l’environnement d’AEM Forms 
 
 1. Ouvrez votre navigateur et saisissez l’URL de l’environnement de création de Cloud Service.
 
-1. Connectez-vous à l’environnement de création de Cloud Service. Les informations de connexion à votre environnement de création vous seront communiquées pendant l’atelier.
+1. Connectez-vous à l’environnement de création de Cloud Service. Les informations de connexion de votre environnement de création sont partagées avec vous au cours du laboratoire.
 
 1. Une fois la connexion établie, accédez à l’interface utilisateur d’AEM Forms. Cliquez sur **Forms**.
 
@@ -268,7 +268,6 @@ Configurez le référentiel local du thème :
    > * Si vous recevez un message vous demandant de mettre à jour npm via la commande `npm notice Run npm nstall -g npm@9.6.0`, ignorez-le.
    > * N’exécutez pas d’autres commandes npm, sauf si cela est indiqué dans le classeur.
 
-
 1. Exécutez maintenant la commande suivante pour prévisualiser le formulaire.
 
    ```Shell
@@ -367,7 +366,7 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
    * **AEM_FORM_PATH** : spécifiez le chemin d’accès au formulaire adaptatif créé dans la leçon précédente. Par exemple, `/content/forms/af/registration/`
 
-      ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
+     ![](/help/forms/assets/screenshot202023-03-0820at202.49.1820pm.png)
 
 1. Ouvrez la fenêtre de commande, vérifiez que vous vous trouvez dans le répertoire react-starter-kit-aem-headless-forms, puis exécutez la commande suivante :
 
@@ -518,7 +517,7 @@ Pour effectuer le rendu du formulaire hébergé dans votre environnement de publ
 
    * **AEM_FORM_PATH** : spécifiez le chemin d’accès au formulaire adaptatif créé dans la leçon précédente. Par exemple, /content/forms/af/registration/
 
-      ![](/help/forms/assets/screenshot2028126929.png)
+     ![](/help/forms/assets/screenshot2028126929.png)
 
 1. Ouvrez la fenêtre de commande, assurez-vous que vous êtes au répertoire **react-starter-kit-aem-headless-forms**, puis exécutez la commande suivante :
 

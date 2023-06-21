@@ -2,10 +2,10 @@
 title: Présentation de l’éditeur de SPA
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1636'
-ht-degree: 89%
+source-wordcount: '1630'
+ht-degree: 84%
 
 ---
 
@@ -35,7 +35,7 @@ Le composant de page d’une application sur une seule page ne fournit pas les c
 
 ### Gestion du modèle de page {#page-model-management}
 
-La résolution et la gestion du modèle de page sont déléguées à une bibliothèque `PageModel` fournie à cet effet. La SPA doit utiliser la bibliothèque de modèle de page pour pouvoir être initialisée et créée par l’éditeur de SPA. La bibliothèque de modèle de page est fournie indirectement au composant de page AEM via le npm `aem-react-editable-components`. Le modèle de page est un interpréteur entre AEM et la SPA. Il doit donc être toujours présent. Lorsque la page est créée, une bibliothèque supplémentaire `cq.authoring.pagemodel.messaging` doit être ajoutée afin de permettre la communication avec l’éditeur de page.
+La résolution et la gestion du modèle de page sont déléguées à une bibliothèque `PageModel` fournie à cet effet. Le SPA doit utiliser la bibliothèque de modèle de page afin qu’elle puisse être initialisée et créée par l’éditeur SPA. La bibliothèque de modèle de page est fournie indirectement au composant de page AEM via le npm `aem-react-editable-components`. Le modèle de page est un interpréteur entre AEM et la SPA. Il doit donc être toujours présent. Lorsque la page est créée, une bibliothèque supplémentaire `cq.authoring.pagemodel.messaging` doit être ajouté pour permettre la communication avec l’éditeur de page.
 
 Si le composant de page SPA hérite du composant principal de la page, deux options sont possibles pour faire en sorte que la catégorie de la bibliothèque cliente `cq.authoring.pagemodel.messaging` soit disponible :
 
@@ -78,7 +78,7 @@ En gardant à l’esprit les éléments clés de l’éditeur de SPA, le workflo
 1. La SPA est chargée dans un cadre distinct.
 1. La SPA demande du contenu JSON et effectue le rendu des composants côté client.
 1. L’éditeur de SPA détecte les composants rendus et génère des incrustations.
-1. L’auteur clique sur l’incrustation et affiche la barre d’outils de modification du composant.
+1. L’auteur clique sur le recouvrement, affichant la barre d’outils de modification du composant.
 1. L’éditeur de SPA conserve les modifications avec une requête POST envoyée au serveur.
 1. L’éditeur de SPA demande le JSON mis à jour, qui est envoyé à la SPA avec un événement DOM.
 1. La SPA restitue à nouveau le composant concerné en mettant à jour son DOM.
@@ -90,7 +90,6 @@ En gardant à l’esprit les éléments clés de l’éditeur de SPA, le workflo
 >* La SPA est toujours responsable de son affichage.
 >* L’éditeur de SPA est isolé de la SPA elle-même.
 >* En cours de production (publication), l’éditeur de SPA n’est jamais chargé.
-
 
 ### Workflow d’édition de pages client-serveur {#client-server-page-editing-workflow}
 
@@ -161,7 +160,7 @@ Les versions précédentes de ces frameworks peuvent fonctionner avec le SDK de 
 
 ### Autres frameworks {#additional-frameworks}
 
-Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Consultez le document [Plan directeur d’applications sur une seule page (SPA)](blueprint.md) pour connaître les exigences qu’un framework doit satisfaire afin de créer une couche spécifique composée des modules, composants et services nécessaires avec l’éditeur de SPA d’AEM.
+Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Veuillez consulter la [Blueprint SPA](blueprint.md) document pour connaître les exigences qu’une structure doit satisfaire pour créer une couche spécifique à une structure composée de modules, de composants et de services à utiliser avec l’éditeur SPA d’AEM.
 
 ### Utilisation de plusieurs sélecteurs {#multiple-selectors}
 

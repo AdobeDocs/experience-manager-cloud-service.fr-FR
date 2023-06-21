@@ -2,10 +2,10 @@
 title: Créer un site de démonstration
 description: Créez un site de démonstration dans AEM basé sur une bibliothèque de modèles préconfigurés.
 exl-id: e76fd283-12b2-4139-9e71-2e145b9620b1
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 100%
+source-wordcount: '842'
+ht-degree: 98%
 
 ---
 
@@ -51,7 +51,7 @@ Une fois que le pipeline a déployé le module complémentaire de démonstration
 
    ![Assistant de création de site](assets/site-creation-wizard.png)
 
-1. Dans l’écran suivant, indiquez un titre pour votre site ou votre projet Screens. Un nom de site peut être fourni ou sera généré à partir du titre s’il est omis. Appuyez ou cliquez sur **Créer**.
+1. Dans l’écran suivant, indiquez un titre pour votre site ou votre projet Screens. Un nom de site peut être fourni ou généré à partir du titre, s’il est omis. Appuyez ou cliquez sur **Créer**.
 
    * Le titre du site s’affiche dans la barre de titre des navigateurs.
    * Le nom du site fait alors partie de l’URL.

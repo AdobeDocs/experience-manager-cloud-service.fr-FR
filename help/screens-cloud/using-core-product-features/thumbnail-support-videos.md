@@ -3,10 +3,10 @@ title: Prise en charge des miniatures pour les vidéos dans Screens as a Cloud 
 description: Cette page décrit comment ajouter la prise en charge des miniatures pour les vidéos dans Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 100%
+source-wordcount: '490'
+ht-degree: 91%
 
 ---
 
@@ -30,7 +30,7 @@ La prise en charge des miniatures vous permet d’effectuer les opérations suiv
 ## Utilisation de miniatures dans les vidéos {#using-thumbnails}
 
 >[!IMPORTANT]
->**Prérequis**
+>**Conditions préalables**
 >Avant d’apprendre à utiliser des miniatures pour les vidéos, assurez-vous de savoir comment créer des rendus vidéo pour les canaux dans un projet Screens as a Cloud Service. Pour plus d’informations, rendez-vous [ici](/help/screens-cloud/configuring/creating-screens-video-renditions-cloud-service.md).
 
 Suivez les étapes ci-dessous pour utiliser des miniatures dans les vidéos :
@@ -62,13 +62,13 @@ Suivez les étapes ci-dessous pour utiliser des miniatures dans les vidéos :
 
 1. Cliquez sur **Aperçu**.
 
-1. Si une vidéo est définie sur le composant, elle sera lue. Si ce n’est pas le cas, et que la miniature est définie, la miniature sera affichée. Sinon, le composant est considéré comme non configuré et sera ignoré.
+1. Si une vidéo est définie sur le composant, elle est lue. Si ce n’est pas le cas, et que la miniature est définie, la miniature est lue. Dans le cas contraire, le composant est considéré comme non configuré et est ignoré.
 
 ## Cas d’utilisation pris en charge lors de l’utilisation de miniatures dans des vidéos {#understand-use-case}
 
 La miniature dans les vidéos prend en charge les cas d’utilisation suivants :
 
-* Un composant vidéo sans configuration sera ignoré.
+* Un composant vidéo sans configuration est ignoré.
 
 * Un composant vidéo dont seule la miniature est définie affichera la miniature.
 

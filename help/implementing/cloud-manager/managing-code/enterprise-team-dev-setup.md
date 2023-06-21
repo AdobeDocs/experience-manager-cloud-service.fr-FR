@@ -2,10 +2,10 @@
 title: Configuration de l’équipe de développement des grands comptes
 description: Découvrez comment configurer et mettre à l’échelle votre équipe de développement d’entreprise et comment AEM as a Cloud Service peut prendre en charge votre processus de développement.
 exl-id: 85f8779b-12cb-441b-a34d-04641184497a
-source-git-commit: f19c4c71cf3b70331b9ccc56adf0bfd31e7edb2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 51%
+source-wordcount: '1444'
+ht-degree: 47%
 
 ---
 
@@ -45,7 +45,7 @@ Par exemple, les applications Adobe Creative Cloud comme Adobe Photoshop ou Adob
 
 Les équipes qui contribuent à ce projet suivent le processus suivant.
 
-Chaque équipe utilise son propre workflow de développement et dispose d’un référentiel git distinct. Un référentiel git partagé supplémentaire est utilisé pour les projets d’intégration. Ce référentiel Git contient la structure racine du référentiel Git de Cloud Manager, y compris la configuration du Dispatcher partagé.
+Chaque équipe utilise son propre workflow de développement et dispose d’un référentiel git distinct. Un référentiel git partagé supplémentaire est utilisé pour les projets d’intégration. Ce référentiel git contient la structure racine du référentiel git de Cloud Manager, y compris la configuration du Dispatcher partagé.
 
 L’intégration d’un nouveau projet nécessite une liste dans le fichier de projet Maven Reactor à la racine du référentiel Git partagé. Pour la configuration du Dispatcher, un nouveau fichier de configuration est créé dans le projet de Dispatcher. Ce fichier est ensuite inclus par la configuration Dispatcher principale. Chaque équipe est responsable de son propre fichier de configuration de Dispatcher. Les modifications apportées au référentiel Git partagé sont rares et ne sont généralement requises que lorsqu’un nouveau projet est intégré. Le travail principal est effectué par chaque équipe de projet dans son propre référentiel Git.
 
@@ -86,7 +86,7 @@ Les membres de chaque équipe extraient généralement le code du référentiel 
 
 ![Extraction locale et SDK](/help/implementing/cloud-manager/assets/team-setup3.png)
 
-Il est possible d’utiliser cette configuration concrète comme plan directeur, puis de la personnaliser selon les besoins de l’entreprise. Le concept flexible d’embranchement et de fusion de Git permet de créer des variantes des processus ci-dessus, personnalisées selon les besoins de chaque équipe. AEM as a Cloud Service prend en charge toutes ces variations sans sacrifier la valeur de base du pipeline parfaitement défini de Cloud Manager.
+Il est possible d’utiliser cette configuration concrète comme plan directeur, puis de la personnaliser selon les besoins de l’entreprise. Le concept flexible d’embranchement et de fusion de Git permet de créer des variantes des workflows ci-dessus, personnalisées selon les besoins de chaque équipe. AEM as a Cloud Service prend en charge toutes ces variations sans sacrifier la valeur de base du pipeline parfaitement défini de Cloud Manager.
 
 >[!TIP]
 >
@@ -96,7 +96,7 @@ Il est possible d’utiliser cette configuration concrète comme plan directeur,
 
 Avec le référentiel git de Cloud Manager et le pipeline de production, le code de production complet est toujours exécuté par tous les points de contrôle qualité, le considérant comme une unité de déploiement. Ainsi, le système de production est toujours opérationnel sans interruption ni interruption.
 
-En revanche, en l’absence d’un tel système, chaque équipe pouvant effectuer un déploiement distinct, il est possible qu’une mise à jour d’une seule équipe entraîne des problèmes de stabilité en production. En outre, il est nécessaire de prévoir une coordination et des temps d’arrêt planifiés pour déployer les mises à jour. Avec un nombre croissant d’équipes, l’effort de coordination deviendra beaucoup plus complexe et rapidement ingérable.
+En revanche, en l’absence d’un tel système, chaque équipe pouvant effectuer un déploiement distinct, il est possible qu’une mise à jour d’une seule équipe entraîne des problèmes de stabilité en production. En outre, il est nécessaire de prévoir une coordination et des temps d’arrêt planifiés pour déployer les mises à jour. Avec un nombre croissant d&#39;équipes, l&#39;effort de coordination devient beaucoup plus complexe et rapidement ingérable.
 
 Si un problème est détecté au niveau des points de contrôle qualité, la production ne sera pas affectée, et le problème pourra être détecté et corrigé sans que le personnel Adobe n’ait à intervenir. Sans Cloud Service et sans toujours tester l’ensemble du déploiement, les déploiements partiels peuvent entraîner des pannes nécessitant une demande de restauration ou même une restauration complète à partir d’une sauvegarde. Les tests partiels peuvent aussi entraîner d’autres problèmes qui devront être résolus ultérieurement, ce qui nécessitera à nouveau la coordination et l’assistance du personnel d’Adobe.
 

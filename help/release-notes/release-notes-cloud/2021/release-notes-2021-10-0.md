@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: ab584923-5f06-4b54-941b-e00bc1158b81
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 100%
+source-wordcount: '1438'
+ht-degree: 96%
 
 ---
 
@@ -44,7 +44,7 @@ Regardez la vidéo [Aperçu de la mise à jour d’octobre 2021](https://video.
 
 ### Nouvelle fonctionnalité dans le canal de version préliminaire [!DNL Assets] {#assets-prerelease-features}
 
-* Le recadrage intelligent et l’échantillon d’images de [!DNL Dynamic Media] sont désormais optimisés par les derniers services Sensei, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles seront conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
+* Le recadrage intelligent et l’échantillon d’images de [!DNL Dynamic Media] sont désormais optimisés par les derniers services Sensei, qui génèrent des recadrages et des échantillons améliorés. Une amélioration a également été lancée afin de générer un contenu de recadrage différent, pour les mêmes proportions mais avec des résolutions différentes. En outre, les modifications manuelles sont conservées lors du retraitement, si la largeur et la hauteur du profil d’image ne changent pas.
 
 * Les balises intelligentes sont automatiquement appliquées aux ressources à l’aide des microservices de ressources, au lieu des services de contenu dynamique. Le modèle sous-jacent est mis à jour afin d’améliorer les résultats du balisage et de réduire les biais. <!-- As it uses asset microservices, it is now possible to develop custom workers using Stock10-based Smart Tags. -->
 
@@ -98,10 +98,10 @@ La prochaine version est prévue pour le 09 décembre 2021.
 
 ### Nouveautés {#what-is-new-cm-nov}
 
-* Les utilisateurs peuvent désormais exploiter les nouveaux pipelines front-end pour déployer exclusivement le code front-end de manière accélérée. Pour en savoir plus, consultez la section [Pipelines front-end de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end).
+* Les utilisateurs peuvent désormais utiliser de nouveaux pipelines front-end pour déployer le code front-end de manière accélérée et exclusive. Voir [Pipelines frontaux de Cloud Manager](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) pour en savoir plus.
 
-   >[!IMPORTANT]
-   >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` pour tirer parti des nouveaux pipelines front-end.
+  >[!IMPORTANT]
+  >Vous devez être sur AEM version `2021.10.5933.20211012T154732Z` pour utiliser de nouveaux pipelines front-end.
 
 * La durée du pipeline de qualité du code est considérablement réduite en exécutant l’analyse du code de manière plus efficace sans avoir à créer une image AEM entière. Cette modification sera déployée progressivement au cours des semaines qui suivront la publication de la version.
 

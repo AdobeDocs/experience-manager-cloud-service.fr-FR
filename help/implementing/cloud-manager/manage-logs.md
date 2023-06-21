@@ -2,10 +2,10 @@
 title: Accès aux journaux et gestion des journaux
 description: Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 26%
+source-wordcount: '270'
+ht-degree: 27%
 
 ---
 
@@ -54,7 +54,7 @@ Vous pouvez également consulter les logs de queue à partir de l&#39;interface 
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
 ```
 
-Pour obtenir l’identifiant de l’environnement (1884 dans cet exemple) et les options de service ou de nom de journal disponibles, vous pouvez utiliser les commandes suivantes.
+Pour obtenir l’ID d’environnement (1884 dans cet exemple) et les options de service ou de nom de journal disponibles, vous pouvez utiliser les commandes suivantes.
 
 ```shell
 $ aio cloudmanager:list-environments

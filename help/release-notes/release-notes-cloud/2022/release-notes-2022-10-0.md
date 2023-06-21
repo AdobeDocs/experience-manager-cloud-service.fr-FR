@@ -1,15 +1,15 @@
 ---
-title: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '850'
-ht-degree: 96%
+source-wordcount: '842'
+ht-degree: 91%
 
 ---
 
-# Notes de mise à jour 2022.10.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2022.10.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.10.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -50,14 +50,14 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 * Experience Manager Assets vous permet désormais de télécharger des documents dans d’autres types de format pris en charge et de [les prévisualiser à l’aide de la visionneuse Document Cloud incluse](/help/assets/manage-pdf-documents.md). Les types de format pris en charge sont les suivants : TXT, RTF, DOC, DOCX, PPT, PPTX, XLS et XLSX.
 
-   ![Rendu PDF pour d’autres formats](/help/release-notes/assets/multi-page-other-formats.png)
+  ![Rendu PDF pour d’autres formats](/help/release-notes/assets/multi-page-other-formats.png)
 
 
 ### Nouvelles fonctionnalités de la préversion d’[!DNL Assets] {#prerelease-features-assets}
 
 * Experience Manager Assets utilise désormais un framework d’intelligence artificielle amélioré pour les balises intelligentes d’image. Celui-ci améliore la pertinence et la précision des balises intelligentes disponibles pour toutes les ressources d’image lors de l’ingestion. En outre, les informations d’orientation sont renseignées dans `cq:tags`, ce qui permet d’obtenir de meilleurs résultats de recherche à l’aide du filtre d’orientation.
 
-   Si vous souhaitez participer à la version Bêta, [remplissez ce formulaire](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) avant le 14 novembre.
+  Si vous souhaitez participer à la version Bêta, [remplissez ce formulaire](https://forms.office.com/pages/responsepage.aspx?id=Wht7-jR7h0OUrtLBeN7O4epXZrTVKKdJkUiHeolccf9UNEwyNEpHVEFaODdBNFZQSlFDREZQOVRRTy4u) avant le 14 novembre.
 
 * Experience Manager Assets [prend désormais en charge le jeton SAS](/help/assets/add-assets.md#asset-bulk-ingestor), en plus de la clé d’accès, pour l’authentification lors de la connexion à la source de données Azure Blob Storage, à des fins d’ingestion de ressources à l’aide de l’outil d’importation en bloc.
 
@@ -87,7 +87,7 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 * AEM as a Cloud Service (service de création) est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Pour plus d’informations, consultez la section AEM as a [Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md).
 
-* Comme mentionné précédemment dans les notes de mise à jour, l’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des packages de contenu supérieurs à 10 Mo (nœuds avec les propriétés, sans les fichiers binaires) est obsolète. Sa mise hors service sera effective dans les prochains jours. Consultez les sections [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Workflow Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) pour connaître les méthodes de réplication recommandées de ces packages de contenu volumineux.
+* Comme mentionné précédemment dans les notes de mise à jour, l’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu de plus de 10 Mo (noeuds avec des propriétés, sans inclure les fichiers binaires) est désormais obsolète et appliquée. Voir [Gérer la publication](/help/operations/replication.md#manage-publication) ou le [Processus de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) pour les approches suggérées de réplication de ces modules de contenu volumineux.
 
 * La configuration de Dispatcher référence désormais un fichier qui répertorie les paramètres de requête de campagne marketing courants. Les clients peuvent choisir de supprimer les commentaires des paramètres souhaités afin d’améliorer la mise en cache. Pour plus d’informations, consultez la section [Paramètres de campagne marketing](/help/implementing/dispatcher/caching.md#marketing-parameters).
 

@@ -4,10 +4,10 @@ description: Validation et débogage à l’aide des outils Dispatcher (hérité
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: 33dfe795140f2780f7f2cf876f3ebc725310214d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2345'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 94%
 
 ---
 
@@ -81,7 +81,7 @@ Les fichiers suivants sont personnalisables et seront transférés vers votre in
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des entrées `<VirtualHost>` qui correspondent aux noms d’hôtes et permettent à Apache de gérer chaque trafic de domaine avec des règles différentes. Les fichiers sont créés dans le répertoire `available_vhosts` et activés avec un lien symbolique dans le répertoire `enabled_vhosts`. À partir des fichiers `.vhost`, d’autres fichiers tels que les réécritures (rewrites) et les variables seront inclus.
+Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des entrées `<VirtualHost>` qui correspondent aux noms d’hôtes et permettent à Apache de gérer chaque trafic de domaine avec des règles différentes. Les fichiers sont créés dans le répertoire `available_vhosts` et activés avec un lien symbolique dans le répertoire `enabled_vhosts`. Dans la `.vhost` Les fichiers, d’autres fichiers tels que les réécritures et les variables sont inclus.
 
 * `conf.d/rewrites/rewrite.rules`
 
@@ -101,7 +101,7 @@ Ce fichier est inclus dans le fichier `dispatcher_vhost.conf`. Vous pouvez modif
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des fermes correspondant aux noms d’hôtes et permettant au module Dispatcher de gérer chaque ferme avec des règles différentes. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un lien symbolique dans le répertoire `enabled_farms`. À partir des fichiers `.farm`, d’autres fichiers tels que les filtres, les règles de cache et d’autres seront inclus.
+Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des fermes correspondant aux noms d’hôtes et permettant au module Dispatcher de gérer chaque ferme avec des règles différentes. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un lien symbolique dans le répertoire `enabled_farms`. Dans la `.farm` Les fichiers, d’autres fichiers tels que les filtres, les règles de cache et d’autres sont inclus.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -125,7 +125,7 @@ Les fichiers ci-dessus font référence aux fichiers de configuration non modifi
 
 Ces fichiers font partie du framework de base. Ils respectent les normes et les bonnes pratiques. Les fichiers sont considérés comme non modifiables, car leur modification ou suppression locale n’aura aucun impact sur votre déploiement ; ils ne seront pas transférés vers votre instance cloud.
 
-Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers non modifiables répertoriés ci-dessous, suivis de toute instruction ou remplacement supplémentaire. Lorsque la configuration Dispatcher est déployée dans un environnement cloud, la dernière version des fichiers non modifiables est utilisée, quelle que soit la version utilisée dans le développement local.
+Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers non modifiables répertoriés ci-dessous, suivis de toute instruction ou remplacement supplémentaire. Lorsque la configuration de Dispatcher est déployée dans un environnement cloud, la dernière version des fichiers non modifiables est utilisée, quelle que soit la version utilisée dans le développement local.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -218,10 +218,10 @@ Phase 3 finished
 Le script effectue les opérations suivantes :
 
 1. Il exécute le programme de validation. Si la configuration n’est pas valide, le script échoue.
-2. Il exécute la commande `httpd -t` pour tester si la syntaxe est correcte de sorte qu’Apache httpd puisse démarrer. En cas de réussite, la configuration doit être prête pour le déploiement.
+2. Il exécute la variable `httpd -t` pour tester si la syntaxe est correcte, de sorte qu’apache httpd puisse démarrer. En cas de réussite, la configuration doit être prête pour le déploiement.
 3. Vérifie que le sous-ensemble des fichiers de configuration du SDK du Dispatcher, qui sont censés être immuables (comme décrit dans la [section Structure de fichiers](##legacy-mode-file-structure)) n’a pas été modifié. Cette nouvelle vérification a été introduite avec le SDK AEM version v2021.1.4738 qui inclut également Dispatcher Tools version 2.0.36. Avant cette mise à jour, les clients auraient pu supposer à tort que toute modification locale du SDK de ces fichiers immuables est également appliquée à l’environnement cloud.
 
-Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd -t` est également exécutée et toute erreur est incluse dans le journal `Build Images step failure` de Cloud Manager.
+Lors d’un déploiement de Cloud Manager, la variable `httpd -t` la vérification de syntaxe est également exécutée et toutes les erreurs sont incluses dans Cloud Manager. `Build Images step failure` log.
 
 ### Phase 1 {#first-phase}
 
@@ -353,14 +353,14 @@ Cloud manager validator 2.0.xx
 
 ### Phase 2 {#second-phase}
 
-Cette phase vérifie la syntaxe Apache en démarrant Docker dans une image. Docker doit être installé localement, mais notez qu’il n’est pas nécessaire qu’AEM soit en cours d’exécution.
+Cette phase vérifie la syntaxe Apache en démarrant Docker dans une image. Docker doit être installé localement, mais il n’est pas nécessaire que AEM soit en cours d’exécution.
 
 >[!NOTE]
 >Les utilisateurs de Windows doivent utiliser Windows 10 Professionnel ou d’autres distributions prenant en charge Docker. Il s’agit d’un prérequis pour l’exécution et le débogage de Dispatcher sur un ordinateur local.
 
 Cette phase peut également être exécutée indépendamment via `validator full -d out src/dispatcher`, qui génère un répertoire de sortie, dont a besoin la commande suivante `bin/docker_run.sh out host.docker.internal:4503 8080`.
 
-Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd -t` est également exécutée et toutes les erreurs sont incluses dans le journal des échecs de l’étape de création d’images de Cloud Manager.
+Lors d’un déploiement de Cloud Manager, la variable `httpd -t` la vérification de syntaxe est exécutée et toutes les erreurs sont incluses dans le journal des échecs de l’étape de création d’images de Cloud Manager.
 
 ### Phase 3 {#third-phase}
 

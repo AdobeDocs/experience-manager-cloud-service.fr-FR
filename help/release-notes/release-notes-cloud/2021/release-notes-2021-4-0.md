@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 775332b5-24ce-430e-97a2-6eeb80877c64
-source-git-commit: a2c844d6f72c22ed085690ff98572a52e97de40d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 100%
+source-wordcount: '1533'
+ht-degree: 91%
 
 ---
 
@@ -41,7 +41,7 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * Modèles de contenu, type de données Balises amélioré – Il est désormais possible de configurer le type de données Balises pour permettre la création de balises uniques ou multiples.
 
-* Modèles de contenu, nouveau type de données Espace réservé d’onglet – Le nouveau type de données Espace réservé d’onglet permet de regrouper les types de données dans des sections qui seront rendues sous les onglets de l’éditeur de fragment de contenu.
+* Modèles de contenu, nouveau type de données Espace réservé d’onglet : le nouveau type de données Espace réservé d’onglet permet de regrouper les types de données dans des sections rendues sous des onglets dans l’éditeur de fragment de contenu.
 
 ### Bogues corrigés dans [!DNL Sites] {#bug-fixes-sites}
 
@@ -95,25 +95,25 @@ La version suivante (2021.5.0) sera publiée le 27 mai 2021.
 
 * **Utilisation de la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign**
 
-   Optimisé par des algorithmes d’apprentissage automatique avancés, le processus d’ID gouvernement d’Adobe Sign permet aux entreprises du monde entier de sécuriser une authentification de grande qualité de l’identité de leur destinataire. Vous pouvez maintenant utiliser la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign.
+  Optimisé par des algorithmes d’apprentissage automatique avancés, le processus Adobe Sign Government ID permet aux entreprises du monde entier d’assurer une authentification de haute qualité de l’identité de leur destinataire. Vous pouvez maintenant utiliser la méthode d’authentification d’identité ID gouvernement dans les formulaires adaptatifs prenant en charge Adobe Sign.
 
-   ID gouvernement est une méthode d’authentification d’identité Premium qui demande au destinataire de [charger l’image d’un document d’identité émis par le gouvernement (permis de conduire, carte d’identité nationale, passeport)](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html), puis qui évalue ce document pour s’assurer qu’il est authentique.
+  L’ID de gouvernement est une méthode d’authentification d’identité premium qui indique au destinataire de [télécharger l&#39;image d&#39;un document d&#39;identité délivré par le gouvernement (permis de conduire, carte d&#39;identité nationale, passeport)](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html), puis évalue ce document pour s’assurer qu’il est authentique.
 
 * **Prise en charge de l’utilisation de l’expérience de signature dans les formulaires pour les envois asynchrones de formulaires adaptatifs**
 
-   Vous pouvez maintenant utiliser l’expérience de signature dans les formulaires pour les envois asynchrones de formulaires adaptatifs. Vous avez également la possibilité d’incorporer un formulaire adaptatif dans une page [!DNL Experience Manager Sites] et d’utiliser l’expérience de signature dans les formulaires pour les envois de formulaires adaptatifs.
+  Vous pouvez maintenant utiliser l’expérience de signature dans les formulaires pour les envois asynchrones de formulaires adaptatifs. Vous avez également la possibilité d’incorporer un formulaire adaptatif dans une page [!DNL Experience Manager Sites] et d’utiliser l’expérience de signature dans les formulaires pour les envois de formulaires adaptatifs.
 
 * **Prise en charge de l’utilisation d’une variable pour spécifier une pièce jointe lors du remplissage préalable d’un formulaire adaptatif pour une étape d’affectation d’une tâche**
 
-   Lors du remplissage préalable d’un formulaire adaptatif pour une étape d’affectation d’une tâche, vous pouvez désormais utiliser une variable de type document pour sélectionner une pièce jointe d’entrée pour le formulaire adaptatif.
+  Lors du remplissage préalable d’un formulaire adaptatif pour une étape d’affectation d’une tâche, vous pouvez désormais utiliser une variable de type document pour sélectionner une pièce jointe d’entrée pour le formulaire adaptatif.
 
 * **Prise en charge de l’utilisation de l’option littérale pour définir la valeur d’une variable de type JSON**
 
-   Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un processus AEM. L’option littérale vous permet de spécifier un fichier JSON sous la forme d’une chaîne.
+  Vous pouvez utiliser l’option littérale pour définir la valeur d’une variable de type JSON à l’étape de définition de la variable d’un processus AEM. L’option littérale vous permet de spécifier un fichier JSON sous la forme d’une chaîne.
 
 * **Utilisation de l’environnement de développement local pour créer un document d’enregistrement**
 
-   Vous pouvez utiliser un fichier XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et dans le SDK AEM Forms as a Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée uniquement aux instances de Cloud Service.
+  Vous pouvez utiliser un fichier XDP comme modèle de document d’enregistrement sur les instances de Cloud Service et dans le SDK AEM Forms as a Cloud Service (environnement de développement local). Auparavant, la prise en charge était limitée uniquement aux instances de Cloud Service.
 
 ### Bogues corrigés dans [!DNL Forms] {#bug-fixes-forms}
 
@@ -165,7 +165,7 @@ La prochaine version est prévue pour le 6 mai 2021.
 
 * Il n’est plus possible de modifier ni de supprimer involontairement les projets créés par Cloud Manager dans Adobe I/O Developer Console.
 
-* Lorsqu’un utilisateur ajoute un nouvel environnement, il est informé qu’une fois qu’un environnement est créé, il ne peut pas être déplacé vers une autre région.
+* Lorsqu’un utilisateur ajoute un nouvel environnement, il est informé qu’une fois un environnement créé, il ne peut pas être déplacé vers une autre région.
 
 * Les variables d’environnement peuvent désormais être incluses dans un service spécifique, qu’il s’agisse de création ou de publication. Nécessite AEM version 2021.03.5104.20210328T185548Z, ou ultérieure.
 

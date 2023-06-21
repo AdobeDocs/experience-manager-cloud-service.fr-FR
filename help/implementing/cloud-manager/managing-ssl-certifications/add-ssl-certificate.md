@@ -2,10 +2,10 @@
 title: Ajout d’un certificat SSL
 description: Découvrez comment ajouter votre propre certificat SSL à l’aide des outils en libre-service de Cloud Manager.
 exl-id: 104b5119-4a8b-4c13-99c6-f866b3c173b2
-source-git-commit: d0d4b22cdca02d81ca755e4045ffccb110739303
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '579'
-ht-degree: 100%
+source-wordcount: '574'
+ht-degree: 86%
 
 ---
 
@@ -25,21 +25,21 @@ Les commandes suivantes `openssl` peuvent être utilisées pour convertir des ce
 
 * Convertir PFX en PEM
 
-   ```shell
-   openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
-   ```
+  ```shell
+  openssl pkcs12 -in certificate.pfx -out certificate.cer -nodes
+  ```
 
 * Convertir P7B en PEM
 
-   ```shell
-   openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
-   ```
+  ```shell
+  openssl pkcs7 -print_certs -in certificate.p7b -out certificate.cer
+  ```
 
 * Convertir DER en PEM
 
-   ```shell
-   openssl x509 -inform der -in certificate.cer -out certificate.pem
-   ```
+  ```shell
+  openssl x509 -inform der -in certificate.cer -out certificate.pem
+  ```
 
 ## Ajout d’un certificat {#adding-a-cert}
 
@@ -65,7 +65,6 @@ Pour ajouter un certificat à l’aide de Cloud Manager, procédez comme suit.
       * Vous devez corriger toutes les erreurs avant de pouvoir enregistrer votre certificat.
       * Consultez la section [Erreurs de certificat](#certificate-errors) pour en savoir plus sur la résolution des erreurs courantes.
 
-
 1. Cliquez sur **Enregistrer** pour enregistrer votre certificat.
 
 Une fois enregistré, votre certificat s’affiche sous la forme d’une nouvelle ligne dans le tableau.
@@ -74,7 +73,7 @@ Une fois enregistré, votre certificat s’affiche sous la forme d’une nouvell
 
 >[!NOTE]
 >
->Un utilisateur doit appartenir aux rôles de **Propriétaire de l’entreprise** ou **Responsable du déploiement** pour pouvoir installer un certificat SSL dans Cloud Manager.
+>Un utilisateur doit être membre de la fonction **Propriétaire de l’entreprise** ou **Responsable de déploiement** rôle permettant d’installer un certificat SSL dans Cloud Manager.
 
 ## Erreurs de certificat {#certificate-errors}
 
@@ -154,7 +153,7 @@ openssl rsa -noout -modulus -in ssl.key | openssl md5
 
 >[!NOTE]
 >
->La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver une clé privée correspondant à votre certificat `main/server`, vous devrez entrer à nouveau la clé du certificat en générant un nouveau CSR et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
+>La sortie de ces deux commandes doit être exactement la même. Si vous ne parvenez pas à trouver la clé privée correspondante pour votre `main/server` , vous devez recréer le certificat en générant une nouvelle demande de signature de certificat et/ou en demandant un certificat mis à jour à votre fournisseur SSL.
 
 ### Dates de validité du certificat {#certificate-validity-dates}
 

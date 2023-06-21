@@ -2,10 +2,10 @@
 title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: b06e734fd6874946323cdc71073ecb1c50945845
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2456'
-ht-degree: 100%
+source-wordcount: '2447'
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Les conditions préalables sont simples.
 
 * Assurez-vous que l’instance d’AEM s’exécute localement.
 * Créez un projet de base de SPA AEM à l’aide de [l’archétype de projet AEM.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr?#available-properties)
-   * Il servira de base au projet AEM qui sera mis à jour pour inclure la SPA externe.
+   * Forms est la base du projet AEM qui est mis à jour pour inclure le SPA externe.
    * Pour les exemples de ce document, nous utilisons [le projet SPA WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=fr#spa-editor) comme point de départ.
 * Gardez la SPA React externe que vous souhaitez intégrer active et à portée de main.
 
@@ -81,7 +81,7 @@ Dans cet exemple, `ModelManager` est initialisé et un `ModelStore` vide est cr�
 
 ### Composants feuille AEM modifiables {#authorable-leaf-components}
 
-1. Créez/identifiez un composant AEM pour lequel un composant React modifiable sera créé. Dans cet exemple, nous utilisons le composant texte du projet WKND.
+1. Créez/identifiez un composant AEM pour lequel un composant React autorisable est créé. Dans cet exemple, nous utilisons le composant texte du projet WKND.
 
    ![Composant texte WKND](assets/external-spa-text-component.png)
 
@@ -237,7 +237,7 @@ Le composant `TestPage` ressemble à ce qui suit après l’ajout du composant v
 >
 >Assurez-vous que le composant `AEMText` a son `resourceType` défini dans la configuration pour activer cette fonction.
 
-Vous pouvez maintenant déployer les modifications sur AEM en suivant les étapes de la section [Vérification de la modification du contenu texte dans AEM.](#verify-text-edit) Un espace réservé sera affiché pour le nœud encore non existant `text_20`.
+Vous pouvez maintenant déployer les modifications sur AEM en suivant les étapes de la section [Vérification de la modification du contenu texte dans AEM.](#verify-text-edit) Un espace réservé s’affiche pour les variables qui ne sont actuellement pas existantes. `text_20` noeud .
 
 ![Le nœud text_20 dans aem](assets/external-spa-text20-aem.png)
 
@@ -253,7 +253,7 @@ Il existe un certain nombre d’exigences à satisfaire pour ajouter des composa
 * Le nœud de page fourni au chemin d’accès dans `pagePath` doit exister dans le projet AEM.
 * Le nom du nœud à créer doit être fourni dans le `itemPath`.
 * Le composant peut être créé à n’importe quel niveau.
-   * Si nous fournissons un `itemPath='text_20'` dans l’exemple précédent, le nœud sera créé directement sous la page, c.-à-d. `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+   * Si vous fournissez un `itemPath='text_20'` dans l’exemple précédent, le nouveau noeud est créé directement sous la page, soit `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * Le chemin d’accès où le nœud doit être créé doit être valide lorsqu’il est fourni par `itemPath`.
    * Dans cet exemple, `root/responsivegrid` doit exister pour que le nœud `text_20` puisse y être créé.
 * Seule la création de composants feuille est prise en charge. Les conteneurs et pages virtuels seront pris en charge dans les versions futures.
@@ -282,13 +282,13 @@ Une fois que l’auteur ajoute un composant enfant au conteneur, le nouveau nœu
 
 ![Conteneur avec contenu dans JCR](assets/container-with-content-jcr.png)
 
-Vous pouvez désormais ajouter plus de composants et de contenu au conteneur, selon les besoins de l’auteur, et les modifications seront conservées.
+Il est désormais possible d’ajouter davantage de composants et de contenu au conteneur, selon les besoins de l’auteur, et les modifications sont conservées.
 
 #### Exigences et restrictions {#container-limitations}
 
 Il existe un certain nombre d’exigences à satisfaire pour ajouter des conteneurs virtuels, ainsi que certaines restrictions.
 
-* La politique permettant de déterminer les composants qui peuvent être ajoutés sera héritée du conteneur parent.
+* La stratégie permettant de déterminer les composants qui peuvent être ajoutés est héritée du conteneur parent.
 * Le parent immédiat du conteneur à créer doit déjà exister dans AEM.
    * Si le conteneur `root/responsivegrid` existe déjà dans le conteneur AEM, un nouveau conteneur peut être créé en indiquant le chemin d’accès `root/responsivegrid/newContainer`.
    * Cependant, `root/responsivegrid/newContainer/secondNewContainer` n’est pas possible.
@@ -326,7 +326,7 @@ Par exemple, supposons que nous ayons une SPA dans lequel l’application est re
 
 Si l’application SPA React externe comporte plusieurs pages, [elle peut utiliser le routage pour déterminer la page ou le composant à rendre.](/help/implementing/developing/hybrid/routing.md) Le cas d’utilisation typique consiste à faire correspondre l’URL actuellement principale au chemin d’accès fourni pour un itinéraire. Pour activer la modification sur de telles applications activées pour le routage, le chemin d’accès à comparer doit être modifié pour pouvoir s’adapter aux informations spécifiques à AEM.
 
-Dans l’exemple suivant, nous avons une application React simple de deux pages. La page à rendre est déterminée en comparant le chemin d’accès fourni au routeur avec l’URL active. Par exemple, si nous suivons `mydomain.com/test`, `TestPage` sera rendu.
+Dans l’exemple suivant, nous avons une application React simple de deux pages. La page à rendre est déterminée en comparant le chemin d’accès fourni au routeur avec l’URL active. Par exemple, si nous sommes sur `mydomain.com/test`, `TestPage` est rendue.
 
 ![Routage dans une SPA externe](assets/external-spa-routing.png)
 
@@ -351,9 +351,8 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
       * Le chemin d’accès requis pour le routage
       * L’URL d’origine de l’instance AEM dans laquelle la SPA est modifiée
       * La racine du projet sur AEM, telle que déterminée lors de la première étape
+
    * Ces valeurs peuvent être définies en tant que variables d’environnement pour plus de flexibilité.
-
-
 
 1. Vérifiez la modification de la page dans AEM.
 

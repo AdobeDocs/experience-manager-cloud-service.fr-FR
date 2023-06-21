@@ -2,10 +2,10 @@
 title: Structure de l’interface utilisateur d’AEM
 description: 'L’interface utilisateur d’AEM s’accompagne de plusieurs principes sous-jacents et se compose d’une série d’éléments clés :'
 exl-id: ac211716-d699-4fdb-a286-a0a1122c86c5
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '916'
-ht-degree: 86%
+source-wordcount: '915'
+ht-degree: 84%
 
 ---
 
@@ -25,7 +25,7 @@ Tous les modules utilisent la même disposition de base. Dans AEM, cela se tradu
 
 La disposition adhère au style Responsive Design et s’adapte à la taille de l’appareil ou de la fenêtre que vous utilisez.
 
-Par exemple, si la résolution passe sous 1 024 pixels (comme c’est le cas sur un appareil mobile), l’affichage est adapté en conséquence :
+Par exemple, lorsque la résolution est inférieure à 1 024 px (comme sur un appareil mobile), l’affichage est ajusté en conséquence :
 
 ![Vue mobile de la console Sites](assets/ui-sites-mobile.png)
 

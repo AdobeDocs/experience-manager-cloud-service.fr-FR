@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2932'
 ht-degree: 99%
@@ -143,7 +143,7 @@ Les applications personnalisées sont des applications [Project App Builder](h
 
 ### Exemple de profil personnalisé {#custom-profile-example}
 
-Pour illustrer l’utilisation d’un profil personnalisé, considérons un exemple d’utilisation dans lequel il s’agit d’appliquer du texte personnalisé à des images de campagne. Vous pouvez créer un profil de traitement qui exploite l’API Photoshop pour modifier les images.
+Pour illustrer l’utilisation d’un profil personnalisé, considérons un exemple d’utilisation dans lequel il s’agit d’appliquer du texte personnalisé à des images de campagne. Vous pouvez créer un profil de traitement qui utilise l’API Photoshop pour modifier les images.
 
 L’intégration d’Asset Compute Service permet à Experience Manager de transmettre ces paramètres à l’application personnalisée à l’aide du champ [!UICONTROL Paramètres de service]. L’application personnalisée appelle ensuite l’API Photoshop et transmet ces valeurs à l’API. Par exemple, vous pouvez transmettre le nom de la police ainsi que la couleur, l’épaisseur et la taille du texte pour ajouter le texte personnalisé aux images de campagne.
 
@@ -161,7 +161,7 @@ Appliquez des profils de traitement aux dossiers en utilisant l’une des métho
 
 * Les administrateurs peuvent sélectionner une définition de profil de traitement dans **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]** et utiliser l’action **[!UICONTROL Appliquer le profil au(x) dossier(s)]**. Cette action ouvre un navigateur de contenu qui vous permet d’accéder à des dossiers spécifiques, de les sélectionner et de confirmer l’application du profil.
 * Les utilisateurs peuvent sélectionner un dossier dans l’interface utilisateur Assets, exécuter l’action **[!UICONTROL Propriétés]** pour ouvrir l’écran des propriétés du dossier, cliquer sur l’onglet **[!UICONTROL Traitement des ressources]** puis, dans la liste [!UICONTROL Profil de traitement], sélectionner le profil de traitement approprié pour ce dossier. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
-   ![Application d’un profil de traitement à un dossier à partir de l’onglet Propriétés de l’élément](assets/folder-properties-processing-profile.png)
+  ![Application d’un profil de traitement à un dossier à partir de l’onglet Propriétés de l’élément](assets/folder-properties-processing-profile.png)
 
 * Les utilisateurs peuvent sélectionner des dossiers ou des ressources spécifiques dans l’interface utilisateur d’Assets pour appliquer un profil de traitement, puis sélectionner l’option ![icône de retraitement des ressources](assets/do-not-localize/reprocess-assets-icon.png) **[!UICONTROL Retraiter les ressources]** dans les options disponibles dans la partie supérieure.
 
@@ -194,7 +194,7 @@ Les workflows de post-traitement, ou [workflows Auto-start](https://experiencele
 Pour ajouter une configuration de workflow de post-traitement à [!DNL Experience Manager], procédez comme suit :
 
 * Création d’un ou de plusieurs modèles de workflow. Ces modèles personnalisés sont appelés *modèles de workflow de post-traitement* dans cette documentation. Il s’agit de modèles de flux de workflow [!DNL Experience Manager] standard.
-* Ajoutez les étapes de workflow spécifiques à ces modèles. Passez en revue les étapes du processus par défaut et ajoutez toutes les étapes par défaut requises au workflow personnalisé. Les étapes sont exécutées sur les ressources en fonction d’une configuration de modèle de workflow. Par exemple, si vous souhaitez que le balisage intelligent soit appliqué automatiquement lors du transfert des ressources, ajoutez l’étape à votre modèle personnalisé de workflow de post-traitement.
+* Ajoutez les étapes de workflow spécifiques à ces modèles. Passez en revue les étapes du processus par défaut et ajoutez toutes les étapes par défaut requises au workflow personnalisé. Les étapes sont exécutées sur les ressources en fonction d’une configuration de modèle de workflow. Par exemple, si vous souhaitez que le balisage intelligent soit appliqué automatiquement lors du chargement des ressources, ajoutez l’étape à votre modèle personnalisé de workflow de post-traitement.
 * Ajoutez l’étape [!UICONTROL Processus terminé du workflow Ressource de mise à jour DAM] à la fin. En ajoutant cette étape, vous êtes certain que Experience Manager sait à quel moment le traitement se termine et la ressource peut être marquée comme traitée ; en d’autres termes, *Nouvelle* s’affiche sur la ressource.
 * Création d’une configuration pour le service d’exécution de workflow personnalisé, lequel permet de configurer l’exécution d’un modèle de workflow de post-traitement selon le chemin d’accès (emplacement du dossier) ou une expression régulière.
 
@@ -287,7 +287,6 @@ Suivez les étapes décrites dans la section [appliquer un modèle de workflow �
 >* [Comprendre l’extensibilité et savoir quand l’utiliser](https://experienceleague.adobe.com/docs/asset-compute/using/extend/understand-extensibility.html?lang=fr).
 >* [Comment créer des applications personnalisées](https://experienceleague.adobe.com/docs/asset-compute/using/extend/develop-custom-application.html?lang=fr).
 >* [Types MIME pris en charge pour divers cas d’utilisation](/help/assets/file-format-support.md).
-
 
 <!-- TBD: 
 * How/where can admins check what's already configured and provisioned.

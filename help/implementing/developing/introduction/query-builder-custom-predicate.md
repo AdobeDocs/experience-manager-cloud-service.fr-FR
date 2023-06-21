@@ -2,10 +2,10 @@
 title: Mise en œuvre d’un évaluateur de prédicat personnalisé pour Query Builder
 description: Query Builder, associé à AEM, met à votre disposition un moyen efficace et personnalisable d’appliquer des requêtes au référentiel de contenu.
 exl-id: 8c2f8c22-1851-4313-a1c9-10d6d9b65824
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 94%
+source-wordcount: '668'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,6 @@ Un prédicat personnalisé peut également effectuer d’autres tâches qui ne s
 >
 >* [Ouvrez le projet aem-search-custom-predicate-evaluator sur GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 >* Téléchargez le projet sous la forme d’[un fichier ZIP](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip).
-
 
 >[!NOTE]
 >
@@ -106,7 +105,7 @@ Tout d’abord, vous devez mettre à jour les dépendances Maven de votre projet
 
 >[!NOTE]
 >
->La portée de la dépendance `cq-search` est définie sur `provided`, car `cq-search` sera fourni par le conteneur `OSGi`.
+>La portée de la variable `cq-search` La dépendance est définie sur `provided` car `cq-search` est fourni par la fonction `OSGi` conteneur.
 
 Le fragment suivant présente les différences dans le fichier `pom.xml` au [format diff unifié](https://fr.wikipedia.org/wiki/Diff#Unified_format).
 

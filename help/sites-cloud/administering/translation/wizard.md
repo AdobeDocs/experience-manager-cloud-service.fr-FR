@@ -4,10 +4,10 @@ description: Découvrez comment utiliser l’Assistant Copie de la langue dans A
 feature: Language Copy
 role: Admin
 exl-id: bf8bdc53-0248-47de-bb9d-c884a7179ab0
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '286'
-ht-degree: 94%
+source-wordcount: '285'
+ht-degree: 89%
 
 ---
 
@@ -45,7 +45,7 @@ Pour accéder à cet assistant :
 
    >[!NOTE]
    >
-   >Si vous avez sélectionné plusieurs langues à l’étape précédente, plusieurs projets de traduction seront créés.
+   >Si vous avez sélectionné plusieurs langues à l’étape précédente, plusieurs projets de traduction sont créés.
 
    ![Étape de traduction de l’assistant](../assets/language-copy-wizard-translate.png)
 

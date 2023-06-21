@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3495'
-ht-degree: 87%
+ht-degree: 86%
 
 ---
 
@@ -92,7 +92,7 @@ Pour prendre en charge les cas d’utilisation de la distribution des ressources
 * **Travail en cours ou travail créatif en cours (WIP) :** phase dans le cycle de vie des ressources où une ressource est soumise à de multiples modifications et n’est généralement pas encore prête à être partagée avec les équipes élargies.
 * **Ressources prêtes après création :** ressources prêtes à être partagées avec l’équipe élargie ou sélectionnées/approuvées par l’équipe créative pour le partage avec les équipes marketing ou métier.
 
-* **Approbation des ressources :** processus d’approbation traitant des ressources déjà transférées dans la gestion des ressources numériques (DAM), qui inclut généralement les approbations de marque, les validations juridiques, etc.
+* **Approbation des ressources** : processus d’approbation traitant des ressources déjà chargées dans la gestion des ressources numériques, qui inclut généralement les approbations de marque, les validations juridiques, etc.
 * **Ressource finale :** ressource qui a passé l’ensemble des approbations/balisages de métadonnées et qui est prête à être utilisée par l’équipe élargie. Une telle ressource est stockée dans la gestion des ressources numériques (DAM) et est accessible à tous les utilisateurs (ou à tous les utilisateurs intéressés). Il peut être utilisé dans les canaux marketing ou par des équipes créatives pour créer des conceptions.
 
 * **Mise à jour/modification mineure des ressources :** modification rapide et petite d’une ressource numérique. Cette opération est souvent effectuée en réponse à une demande de retouche ou de modification mineure, de révision ou d’approbation de fichier (par exemple, repositionnement, modification de la taille du texte, ajustement de la saturation/luminosité, couleur, etc.).
@@ -140,9 +140,9 @@ Pour établir un workflow efficace entre les équipes créatives et marketing/m�
 
 ### Pourquoi les ressources sont-elles stockées dans la gestion des ressources numériques (DAM) ? {#why-assets-are-stored-in-dam}
 
-Le stockage des ressources dans la gestion des ressources numériques (DAM) permet d’en faciliter l’accès et de les retrouver plus aisément. Cela permet de s’assurer que les ressources peuvent être exploitées par de nombreux utilisateurs au sein de l’organisation ou de l’écosystème, qui comprend des partenaires, des clients, etc.
+Le stockage des ressources dans la gestion des ressources numériques (DAM) permet d’en faciliter l’accès et de les retrouver plus aisément. Cela permet de s’assurer que les ressources peuvent être utilisées par de nombreux utilisateurs au sein de l’organisation ou de l’écosystème, ce qui inclut des partenaires, des clients, etc.
 
-La plupart des entreprises choisissent de stocker uniquement les ressources pertinentes pour les processus marketing/métier en aval (publication sur des canaux tels que le canal web via Experience Manager Sites ou d’autres canaux traités par Adobe Experience Cloud : Marketing Cloud, Advertising Cloud et mesurés par Analytics Cloud, satisfaction des besoins des utilisateurs et partenaires, etc.). En outre, les entreprises stockent les ressources qui peuvent être soumises à un processus de révision/approbation dans la gestion des ressources numériques (DAM). De cette manière, la gestion des ressources numériques (DAM) stocke principalement les ressources ayant de grandes chances d’être exploitées, en évitant de stocker les ressources inactives.
+La plupart des entreprises choisissent de stocker uniquement les ressources pertinentes pour les processus marketing/métier en aval (publication sur des canaux tels que le canal web via Experience Manager Sites ou d’autres canaux traités par Adobe Experience Cloud : Marketing Cloud, Advertising Cloud et mesurés par Analytics Cloud, satisfaction des besoins des utilisateurs et partenaires, etc.). En outre, les entreprises stockent les ressources qui peuvent être soumises à un processus de révision/approbation dans la gestion des ressources numériques (DAM). De cette manière, la gestion des ressources numériques stocke principalement les ressources ayant de grandes chances d’être utilisées et évite de stocker les ressources inactives.
 
 Le stockage des ressources est soumis à des considérations techniques et d’utilisation des ressources. La gestion des ressources numériques (DAM) fournit des services supplémentaires pour les ressources stockées, notamment l’extraction de métadonnées, le contrôle de version, la génération d’aperçus/de transcodage, la gestion des références et l’ajout d’informations de contrôle d’accès. Ces services consomment du temps et des ressources d’infrastructure supplémentaires.
 
@@ -218,13 +218,13 @@ Dans certains cas, il est possible que vous deviez charger simultanément un plu
 
 * Chargement des résultats de séances photo ou de projets de plus grande envergure
 * Chargement de ressources fournies par les agences de création
-* Transfert de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des ressources numériques (DAM)
+* Chargement de ressources sélectionnées à partir d’un plus grand ensemble si la sélection est effectuée en dehors de la gestion des ressources numériques (DAM)
 
 Notez que cette description fait référence aux chargements de fichiers du point de vue des opérations (par exemple, chaque semaine ou à chaque séance photo), comme composante normale du workflow de l’utilisateur de bureau. Les migrations de ressources volumineuses ne sont pas abordées ici.
 
-Vous pouvez tirer parti des fonctionnalités de chargement suivantes :
+Vous pouvez utiliser les fonctionnalités de chargement suivantes :
 
-* Pour charger des dossiers volumineux/hiérarchiques en bloc, utilisez l’application de bureau Experience Manager qui propose une fonctionnalité de [chargement de dossiers](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#bulk-upload-assets). Vous pouvez également transférer des structures de dossiers hiérarchiques. Les ressources sont chargées en arrière-plan et, par conséquent, elles ne sont pas liées à une session de navigateur web.
+* Pour charger des dossiers volumineux/hiérarchiques en bloc, utilisez l’application de bureau Experience Manager qui propose une fonctionnalité de [chargement de dossiers](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#bulk-upload-assets). Vous pouvez également charger des structures de dossiers hiérarchiques. Les ressources sont chargées en arrière-plan et, par conséquent, elles ne sont pas liées à une session de navigateur web.
 * Pour charger quelques fichiers à partir d’un seul dossier, faites-les glisser directement jusqu’à l’interface web ou utilisez l’option Créer dans l’interface web d’Experience Manager Assets.
 * En fonction des besoins de votre entreprise, vous pouvez également utiliser un outil de chargement personnalisé.
 

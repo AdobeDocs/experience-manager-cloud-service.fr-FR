@@ -2,10 +2,10 @@
 title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: 906fbefdbd100a7874b6f58ef23b7aaa46ac4ba3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2567'
-ht-degree: 91%
+source-wordcount: '2562'
+ht-degree: 88%
 
 ---
 
@@ -71,7 +71,7 @@ Les dossiers de bibliothèques clientes contiennent les éléments suivants :
 
 ## Création de dossiers de bibliothèque côté client {#creating-clientlib-folders}
 
-Les bibliothèques clientes doivent être situées sous `/apps`. Cela permet en effet de mieux isoler le code du contenu et de la configuration.
+Les bibliothèques clientes doivent être situées sous `/apps`. Cette règle est nécessaire pour mieux isoler le code du contenu et de la configuration.
 
 Pour que les bibliothèques clientes situées sous `/apps` soient accessibles, un servlet proxy est utilisé. Les listes de contrôle d’accès (ACL) sont toujours appliquées sur le dossier de bibliothèques clientes, mais le servlet permet la lecture du contenu via `/etc.clientlibs/` si la propriété `allowProxy` est définie sur `true`.
 
@@ -135,7 +135,7 @@ This is possible. Still need detail.
 
 ## Bibliothèques clientes dans l’instance de création et dans l’instance de publication {#clientlibs-author-publish}
 
-La plupart des bibliothèques clientes sont requises dans l’instance de publication AEM. En d’autres termes, la plupart d’entre elles ont pour objectif de produire l’expérience de l’utilisateur final par rapport au contenu. Pour les bibliothèques clientes dans les instances de publication, les [outils de création front-end](#fed-for-aemaacs) peuvent être utilisés et déployés via des [dossiers de bibliothèque cliente, comme décrit ci-dessus.](#creating-clientlib-folders)
+La plupart des bibliothèques clientes sont requises sur l’instance de publication AEM. En d’autres termes, la plupart d’entre elles ont pour objectif de produire l’expérience de l’utilisateur final par rapport au contenu. Pour les bibliothèques clientes dans les instances de publication, les [outils de création front-end](#fed-for-aemaacs) peuvent être utilisés et déployés via des [dossiers de bibliothèque cliente, comme décrit ci-dessus.](#creating-clientlib-folders)
 
 Cependant, il peut arriver que des bibliothèques clientes soient nécessaires pour personnaliser l’expérience de création. Par exemple, la personnalisation d’une boîte de dialogue peut nécessiter le déploiement de petits fragments de code CSS ou JS dans l’instance de création AEM.
 
@@ -184,8 +184,8 @@ D’autres paramètres de bibliothèque cliente peuvent être contrôlés par le
 
 Les autres propriétés de dossier permettent entre autres de contrôler les dépendances et les incorporations, mais ne sont généralement plus nécessaires et leur utilisation est déconseillée :
 
-* `dependencies` : il s’agit d’une liste d’autres catégories de bibliothèques clientes dont dépend ce dossier de catégories. Par exemple, étant donné deux nœuds `cq:ClientLibraryFolder`, `F` et `G`, si un fichier du nœud `F` nécessite un autre fichier du nœud `G` pour fonctionner correctement, au moins l’une des propriétés `categories` de `G` doit figurer parmi les propriétés `dependencies` de `F`.
-* `embed` : utilisé pour incorporer du code d’autres bibliothèques. Si le nœud `F` incorpore les nœuds `G` et `H`, le code HTML qui en résulte est une concentration du contenu des nœud `G` et `H`.
+* `dependencies` : il s’agit d’une liste d’autres catégories de bibliothèques clientes dont dépend ce dossier de catégories. Par exemple, pour deux `cq:ClientLibraryFolder` nodes `F` et `G`, si un fichier dans `F` nécessite un autre fichier dans `G` pour fonctionner correctement, au moins l’une des fonctions `categories` de `G` doit être parmi les `dependencies` de `F`.
+* `embed` : utilisé pour incorporer du code d’autres bibliothèques. Si le noeud `F` incorpore des noeuds `G` et `H`, le HTML qui en résulte est une concaténation de contenu à partir de noeuds. `G` et `H`.
 
 ### Liaison vers des dépendances {#linking-to-dependencies}
 

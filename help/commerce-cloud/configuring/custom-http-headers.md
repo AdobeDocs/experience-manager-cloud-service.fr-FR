@@ -2,10 +2,10 @@
 title: En-têtes HTTP personnalisés
 description: Configuration d’en-têtes HTTP personnalisés
 exl-id: 2cef5d4b-45f6-4d72-a24b-67ca53d9057d
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 100%
+source-wordcount: '268'
+ht-degree: 95%
 
 ---
 
@@ -18,6 +18,7 @@ Pour mieux contrôler leur serveur principal, les auteurs peuvent configurer des
 >[!NOTE]
 >
 >Les développeurs peuvent toujours configurer des en-têtes HTTP personnalisés à l’aide de la configuration client GraphQL.
+>
 
 ## Configuration {#configuration}
 

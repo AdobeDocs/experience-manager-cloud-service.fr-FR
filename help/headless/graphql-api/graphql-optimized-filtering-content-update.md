@@ -2,10 +2,10 @@
 title: Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.
 description: Découvrez comment mettre à jour vos fragments de contenu pour le filtrage GraphQL optimisé dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu découplée.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: a18742abdd4693ab1e97d7db3ed6854b735bc0f9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 80%
+source-wordcount: '912'
+ht-degree: 77%
 
 ---
 
@@ -79,7 +79,7 @@ Pour exécuter la procédure, procédez comme suit :
       <td>Tous </td>
       <td> </td>
       <td>Variable </td>
-      <td>Taille du lot pour l’enregistrement du nombre de fragments de contenu après la migration.<br>Cela correspond au nombre de CF qui seront enregistrés dans le référentiel dans un lot et peut être utilisé pour optimiser le nombre d’écritures dans le référentiel. </td>
+      <td>Taille du lot pour l’enregistrement du nombre de fragments de contenu après la migration.<br>Cela correspond au nombre de CF qui sont enregistrés dans le référentiel dans un lot et peut être utilisé pour optimiser le nombre d’écritures dans le référentiel. </td>
      </tr>
      <tr>
       <td>4</td>
@@ -116,8 +116,7 @@ Pour exécuter la procédure, procédez comme suit :
    >* CF_MIGRATION_LIMIT = 1 000.
    >* CF_MIGRATION_INTERNAL = 60 (Sec).
    >* Durée approximative requise pour terminer la migration = 60 + (20 000/1 000 * 60) = 1 260 secondes = 21 minutes.
-      >  Les « 60 » secondes supplémentaires ajoutées au début sont dues au retard initial lors du démarrage du traitement.
-
+   >  Les « 60 » secondes supplémentaires ajoutées au début sont dues au retard initial lors du démarrage du traitement.
    >
    >Vous devez également savoir qu’il s’agit uniquement du temps *minimum* obligatoire pour terminer le traitement, sans inclure l’heure d’E/S. Le temps réel pourrait être beaucoup plus important que cette estimation.
 
@@ -129,23 +128,24 @@ Pour exécuter la procédure, procédez comme suit :
 
       * Journaux de création ; par exemple :
 
-         ```shell
-         23.01.2023 13:13:45.926 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob This instance<dd9ffdc1-0c28-4d04-9a96-5d4d223e457e> is the leader, will schedule the upgrade schedule job.
-         ...
-         23.01.2023 13:13:45.941 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Scheduling content fragments upgrade from version 0 to 1, slingJobId: 2023/1/23/13/13/50e1a575-4cd7-497b-adf0-62cb5768eedb_0, enforce: true, limit: 1000, batch: 50, interval: 60s
-         
-         23.01.2023 13:20:40.960 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 6m, slingJobId: 2023/1/23/13/13/50e1a575-4cd7-497b-adf0-62cb5768eedb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
-         ```
+        ```shell
+        23.01.2023 13:13:45.926 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob This instance<dd9ffdc1-0c28-4d04-9a96-5d4d223e457e> is the leader, will schedule the upgrade schedule job.
+        ...
+        23.01.2023 13:13:45.941 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Scheduling content fragments upgrade from version 0 to 1, slingJobId: 2023/1/23/13/13/50e1a575-4cd7-497b-adf0-62cb5768eedb_0, enforce: true, limit: 1000, batch: 50, interval: 60s
+        
+        23.01.2023 13:20:40.960 *INFO* [sling-threadpool-09cbdb47-4d99-4c4c-b6d5-781b635ee21b-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 6m, slingJobId: 2023/1/23/13/13/50e1a575-4cd7-497b-adf0-62cb5768eedb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
+        ```
 
       * Journaux de publication Golden ; par exemple :
 
-         ```shell
-         23.01.2023 12:35:05.150 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob This instance<ad1b399e-77be-408e-bc3f-57097498fddb> is the leader, will schedule the upgrade schedule job.
-         
-         23.01.2023 12:35:05.161 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Scheduling content fragments upgrade from version 0 to 1, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, enforce: true, limit: 1000, batch: 50, interval: 60s
-         ...
-         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
-         ```
+        ```shell
+        23.01.2023 12:35:05.150 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob This instance<ad1b399e-77be-408e-bc3f-57097498fddb> is the leader, will schedule the upgrade schedule job.
+        
+        23.01.2023 12:35:05.161 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Scheduling content fragments upgrade from version 0 to 1, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, enforce: true, limit: 1000, batch: 50, interval: 60s
+        ...
+        23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
+        ```
+
    Les clients qui ont activé l’accès aux journaux de l’environnement à l’aide de Splunk peuvent utiliser l’exemple de requête ci-dessous pour surveiller le processus de mise à niveau. Pour plus d’informations sur l’activation de la journalisation Splunk, voir [Débogage dans les environnements de production et d’évaluation](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) page.
 
    ```splunk
@@ -234,12 +234,11 @@ Par conséquent, la présence de cette propriété, sur le nœud JCR `/content/d
       * `_strucVersion` doit avoir la valeur de `1`.
       * La structure `indexedData` doit exister.
 
-      >[!NOTE]
-      >
-      >La procédure va mettre à jour les fragments de contenu sur les instances de création et de publication.
-      >
-      >Par conséquent, il est recommandé d’effectuer la vérification via le navigateur de référentiels pour *au moins* une instance de création *et* une instance de publication.
-
+     >[!NOTE]
+     >
+     >La procédure va mettre à jour les fragments de contenu sur les instances de création et de publication.
+     >
+     >Par conséquent, il est recommandé d’effectuer la vérification via le navigateur de référentiels pour *au moins* une instance de création *et* une instance de publication.
 
 ## Limites {#limitations}
 

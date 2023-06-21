@@ -2,10 +2,10 @@
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement découplé AEM, apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers le Git Cloud Manager pour le pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: 270eb35023e34eed2cd17674372794c6c2cc7757
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 100%
+source-wordcount: '1067'
+ht-degree: 96%
 
 ---
 
@@ -50,7 +50,7 @@ Pour préparer votre application AEM découplée pour son lancement, suivez les 
    * Dans la mesure du possible, utilisez des requêtes persistantes.
    * Fournissez un TTL CDN supérieur à 600 secondes pour que le CDN les mette en cache.
    * AEM peut calculer l’impact d’une modification de modèle sur des requêtes existantes.
-* Partagez les requêtes de fichiers JSON et GraphQL entre un taux de changement de contenu faible et élevé afin de réduire le trafic client sur le réseau de diffusion de contenu et d’attribuer un TTL plus élevé. Vous minimiserez grâce à cela la revalidation par le CDN du fichier JSON avec le serveur d’origine.
+* Partage des fichiers JSON/requêtes GraphQL entre un taux de changement de contenu faible et élevé afin que vous puissiez réduire le trafic client sur le réseau de diffusion de contenu et attribuer un TTL plus élevé. Vous minimiserez grâce à cela la revalidation par le CDN du fichier JSON avec le serveur d’origine.
 * Pour invalider activement le contenu du réseau de diffusion de contenu, utilisez la fonction Purge progressive. Cela permet au réseau de diffusion de contenu de télécharger à nouveau le contenu sans provoquer l’échec du cache.
 
 ## Amélioration du temps de téléchargement du contenu découplé {#improve-download-time}
@@ -65,7 +65,7 @@ Pour préparer votre application AEM découplée pour son lancement, suivez les 
 
 Une fois que vous avez vérifié que tout a été testé et fonctionne correctement, vous êtes prêt à envoyer vos mises à jour de code vers un [référentiel Git centralisé dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=fr).
 
-Une fois les mises à jour transférées vers Cloud Manager, elles peuvent être déployées vers AEM as a Cloud Service à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
+Une fois les mises à jour chargées vers Cloud Manager, elles peuvent être déployées vers AEM as a Cloud Service à l’aide du [pipeline CI/CD de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=fr).
 
 Vous pouvez commencer à déployer votre code en exploitant le pipeline CI/CD de Cloud Manager, qui est traité en détail [ici](/help/implementing/deploying/overview.md).
 
@@ -101,7 +101,7 @@ Observez ces bonnes pratiques pour votre approche générale de débogage :
 
 ### Journalisation d’un bogue avec prise en charge {#logging-a-bug-with-support}
 
-Pour consigner efficacement un bogue avec l’assistance si vous avez besoin d’aide supplémentaire, procédez comme suit :
+Pour consigner efficacement un bogue avec l’assistance si vous avez besoin d’aide supplémentaire, procédez comme suit :
 
 * Si nécessaire, réalisez des captures d’écran du problème.
 * Documentez une façon de reproduire le problème.

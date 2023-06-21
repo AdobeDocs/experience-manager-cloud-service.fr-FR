@@ -2,16 +2,16 @@
 title: Composants composites dans les applications d’une seule page (SPA)
 description: Découvrez comment créer vos propres composants composites, composants constitués eux-mêmes d’autres composants, qui fonctionnent avec l’éditeur d’applications d’une seule page (SPA) d’AEM.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 100%
+source-wordcount: '782'
+ht-degree: 96%
 
 ---
 
 # Composants composites dans les SPA {#composite-components-in-spas}
 
-Les composants composites exploitent la nature modulaire des composants d’AEM en combinant plusieurs composants de base pour en constituer un seul. Le cas d’utilisation courant d’un composant composite est celui du composant de carte, composé d’une combinaison des composants image et texte.
+Les composants composites utilisent la nature modulaire des composants AEM en combinant plusieurs composants de base en un seul composant. Le cas d’utilisation courant d’un composant composite est celui du composant de carte, composé d’une combinaison des composants image et texte.
 
 Lorsque les composants composites sont correctement implémentés dans la structure de l’éditeur d’application d’une seule page (SPA) d’AEM, les auteurs de contenu peuvent effectuer un glisser-déposer de ces composants comme s’ils le feraient pour d’autres, tout en ayant la possibilité de modifier individuellement chaque constituant du composant composite.
 
@@ -56,7 +56,7 @@ Commencez par créer les composants qui constitueront le composant composite, c�
    export const AEMText = withMappable(Text, TextEditConfig); 
    ```
 
-Le composant de texte ressemble à ce qui suit.
+Le composant de texte est similaire à ce qui suit.
 
 ```javascript
 import React from 'react';

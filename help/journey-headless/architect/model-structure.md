@@ -2,10 +2,10 @@
 title: En savoir plus sur la création de modèles de fragment de contenu dans AEM
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 100%
+source-wordcount: '685'
+ht-degree: 92%
 
 ---
 
@@ -45,7 +45,7 @@ Ensuite, les modèles de fragments de contenu peuvent être créés et la struct
 
 Après avoir sélectionné cette option, accédez à l’emplacement de votre modèle et sélectionnez **Créer**. Vous pouvez saisir ici différentes informations importantes.
 
-L’option **Activer le modèle** est activé par défaut. Cela signifie que votre modèle sera disponible pour être utilisé (dans la création de fragments de contenu) dès que vous l’aurez enregistré. Vous pouvez désactiver cette option si vous le souhaitez. Par la suite, vous pourrez activer (ou désactiver) un modèle existant.
+L’option **Activer le modèle** est activé par défaut. Cela signifie que votre modèle peut être utilisé (dans la création de fragments de contenu) dès que vous l’avez enregistré. Vous pouvez désactiver cette option si vous le souhaitez. Par la suite, vous pourrez activer (ou désactiver) un modèle existant.
 
 ![Création de modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/assets/cfm-models-02.png)
 
@@ -96,7 +96,7 @@ Les modèles de fragment de contenu doivent être publiés avant ou pendant la p
 
 >[!NOTE]
 >
->Si un auteur essaye de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, ainsi que le fait que le modèle sera publié avec le fragment.
+>Si un auteur tente de publier un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique et le modèle est publié avec le fragment.
 
 Dès qu’un modèle est publié, il est *verrouillé* en mode LECTURE SEULE sur l’auteur. Cette fonctionnalité a pour but d’empêcher les modifications qui provoqueraient des erreurs dans les schémas et requêtes GraphQL existants, en particulier dans l’environnement de publication. Ce statut est indiqué dans la console par la mention **Verrouillé**.
 

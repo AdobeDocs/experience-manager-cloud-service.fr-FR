@@ -2,10 +2,10 @@
 title: Équipe et profils de produits AEM as a Cloud Service
 description: Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service accordent et limitent l’accès à vos solutions Adobe sous licence.
 exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
-source-git-commit: 1e3130578b7e36e5ffd5ad7b04cc7981a95bb291
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '778'
-ht-degree: 96%
+source-wordcount: '776'
+ht-degree: 90%
 
 ---
 
@@ -21,9 +21,9 @@ Lorsque vous accordez à un utilisateur l’accès à une solution Adobe spécif
 
 AEM as a Cloud Service est une offre entièrement native cloud qui fournit AEM as a service. Elle fournit AEM de manière native au cloud, avec de nouveaux attributs comme toujours activé, toujours à jour, toujours sécurisé et toujours à grande échelle. Dans le même temps, elle conserve la proposition de valeur principale qu’AEM fournit en tant que plateforme personnalisable aux clients et permet aux équipes de niveau entreprise d’intégrer dans leur procédure de développement et de diffusion. Pour en savoir plus sur AEM as a Cloud Service, voir [Présentation d’Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md).
 
-Vos membres d’équipe d’AEM as a Cloud Service seront ajoutés et affectés à un ou plusieurs des profils de produit suivants via Admin Console lors de l’intégration.
+Les membres de votre équipe as a Cloud Service AEM sont ajoutés et affectés à un ou plusieurs des profils de produits suivants via le Admin Console lors de l’intégration.
 
-* **Administrateurs AEM** : un administrateur AEM est généralement affecté aux développeurs, en particulier ceux qui auront besoin d’un accès, par exemple, aux environnements de développement. Le profil de produit Administrateurs AEM sera utilisé pour accorder des privilèges d’administrateur dans l’instance AEM associée.
+* **Administrateurs AEM** : un administrateur AEM est généralement affecté aux développeurs, en particulier ceux qui auront besoin d’un accès, par exemple, aux environnements de développement. Le profil de produit de l’administrateur AEM est utilisé pour accorder des privilèges d’administrateur à l’instance AEM associée.
 
 * **Utilisateurs AEM** : les utilisateurs AEM sont les utilisateurs de votre organisation qui utilisent AEM as a Cloud Service généralement pour créer du contenu. Ces utilisateurs devront accéder à AEM pour effectuer leurs tâches. Le profil de produit des utilisateurs AEM est généralement attribué à un créateur de contenu AEM qui crée et révise le contenu. Ce contenu peut être de nombreux types, tels que des pages, des ressources, des publications, etc. Le profil de produit Utilisateurs AEM présenté ci-dessous est attribué à ces membres.
 
@@ -43,7 +43,6 @@ Vos membres d’équipe d’AEM as a Cloud Service seront ajoutés et affect
 >
 >* Pour en savoir plus sur les profils de produits AEM, consultez le document [Attribuer des profils de produit AEM.](/help/journey-onboarding/assign-profiles-aem.md)
 >* Pour plus d’informations sur le processus d’intégration, reportez-vous à la section [parcours d’intégration.](/help/journey-onboarding/overview.md)
-
 
 ## Profils de produit Cloud Manager {#cloud-manager-product-profiles}
 
@@ -76,4 +75,3 @@ Votre équipe Cloud Manager comprend au moins :
 >
 >* Pour en savoir plus sur les profils de produits Cloud Manager, consultez le document [Attribuer des membres d’équipe à des profils de produit Cloud Manager.](/help/journey-onboarding/assign-profiles-cloud-manager.md)
 >* Pour plus d’informations sur le processus d’intégration, reportez-vous à la section [parcours d’intégration.](/help/journey-onboarding/overview.md)
-

@@ -2,10 +2,10 @@
 title: En savoir plus sur le développement CMS découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez la technologie découplée et pourquoi l’utiliser.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: 7ded4f891f5ab5c1562044772ea3304fc07b173e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1623'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ Ce document vous aide à comprendre la diffusion de contenu découplé et pourqu
 
 ## Diffusion de contenu full stack {#full-stack}
 
-Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les entreprises les utilisent comme emplacement central pour la gestion des messages, des marques et de leur communication. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
+Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les entreprises les utilisent comme un emplacement central pour la gestion des messages, des marques et des communications. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
 
 ![CMS full stack classique](assets/full-stack.png)
 
@@ -84,7 +84,7 @@ Des API REST robustes restent nécessaires. Toutefois, les requêtes REST peuven
 
 La diffusion de contenu en mode découplé s’appuie souvent sur les API GraphQL. GraphQL permet un transfert similaire, sans enregistrement de l’état, mais avec des requêtes plus ciblées, ce qui diminue le nombre total de requêtes requises et améliore les performances. Il est courant de voir les solutions conjuguer REST et GraphQL en choisissant essentiellement le meilleur outil pour la tâche à accomplir.
 
-Quelle que soit l’API choisie, en définissant un système découplé basé sur des API courantes, vous pouvez tirer parti du navigateur le plus récent et d’autres technologies web, comme les applications web progressives (PWA). Les API créent une interface standard facilement extensible et adaptable.
+Quelle que soit l’API choisie, en définissant un système sans tête basé sur des API courantes, vous pouvez utiliser le dernier navigateur et d’autres technologies web telles que les applications web progressives (PWA). Les API créent une interface standard facilement extensible et adaptable.
 
 En règle générale, le contenu est rendu côté client. Normalement, cela signifie qu’une personne appelle votre contenu sur un appareil mobile, que votre CMS le diffuse, puis que l’appareil mobile (le ou la client(e)) assure le rendu du contenu que vous avez fourni. Si l’appareil est vieux ou lent, votre expérience numérique sera également lente.
 
@@ -110,7 +110,7 @@ Au fur et à mesure de ce parcours de développement, vous allez découvrir comm
 
 En tant que leader du secteur de la gestion de l’expérience digitale, Adobe sait que la solution idéale pour répondre aux défis du monde réel auxquels les créateurs d’expériences sont confrontés est rarement tranchée. AEM ne prend donc pas seulement en charge les deux modèles, mais permet également leur association hybride en toute transparence, alliant ainsi les avantages des modes Découplé et Full stack pour vous aider à mieux diffuser votre contenu vers les consommateurs, où qu’ils se trouvent.
 
-Ce parcours se concentre exclusivement sur le modèle de diffusion de contenu en mode découplé. Cependant, une fois que vous disposez de ces connaissances fondamentales, vous pouvez explorer plus en détail la manière d’exploiter la puissance des deux modèles.
+Ce parcours se concentre exclusivement sur le modèle de diffusion de contenu en mode découplé. Cependant, une fois que vous disposez de ces connaissances fondamentales, vous pouvez explorer plus en détail comment utiliser la puissance des deux modèles.
 
 ## Et après ? {#what-is-next}
 

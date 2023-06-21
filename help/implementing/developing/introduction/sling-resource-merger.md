@@ -2,10 +2,10 @@
 title: Utilisation de Sling Resource Merger dans Adobe Experience Manager as a Cloud Service
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: ac760e782f80ee82a9b0604ef64721405fc44ee4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 89%
+source-wordcount: '1158'
+ht-degree: 87%
 
 ---
 
@@ -36,7 +36,7 @@ Sling Resource Merger est utilisé dans AEM pour deux raisons principales :
 * S’assurer que les changements de personnalisation ne sont pas effectués dans `/libs`.
 * Réduire la structure qui est répliquée à partir de `/libs`.
 
-   Lorsque vous utilisez Sling Resource Merger, il est déconseillé de copier toute la structure depuis `/libs`, car cela entraînerait le stockage d’une trop grande quantité d’informations dans la personnalisation (généralement `/apps`). Dupliquer les informations augmente inutilement le risque que des problèmes surviennent lorsque le système est mis à niveau.
+  Lorsque vous utilisez Sling Resource Merger, il est déconseillé de copier toute la structure depuis `/libs`, car cela entraînerait le stockage d’une trop grande quantité d’informations dans la personnalisation (généralement `/apps`). Dupliquer les informations augmente inutilement le risque que des problèmes surviennent lorsque le système est mis à niveau.
 
 >[!CAUTION]
 >
@@ -56,23 +56,23 @@ Resource Merger fournit les propriétés suivantes :
 
 * `sling:hideProperties` (`String` ou `String[]`)
 
-   Indique la propriété, ou la liste des propriétés, à masquer.
+  Indique la propriété, ou la liste des propriétés, à masquer.
 
-   Le caractère générique `*` masque tout.
+  Le caractère générique `*` masque tout.
 
 * `sling:hideResource` (`Boolean`)
 
-   Indique si les ressources doivent être complètement masquées, y compris leurs enfants.
+  Indique si les ressources doivent être complètement masquées, y compris leurs enfants.
 
 * `sling:hideChildren` (`String` ou `String[]`)
 
-   Contient le nœud enfant, ou la liste des nœuds enfants, à masquer. Les propriétés du nœud seront conservées.
+  Contient le nœud enfant, ou la liste des nœuds enfants, à masquer. Les propriétés du noeud sont conservées.
 
-   Le caractère générique `*` masque tout.
+  Le caractère générique `*` masque tout.
 
 * `sling:orderBefore` (`String`)
 
-   Contient le nom du nœud frère devant lequel le nœud actuel doit être positionné.
+  Contient le nom du nœud frère devant lequel le nœud actuel doit être positionné.
 
 Ces propriétés déterminent la façon dont les ressources/propriétés correspondantes/d’origine (issues de `/libs`) sont utilisées par le recouvrement/remplacement (souvent dans `/apps`).
 
@@ -84,23 +84,23 @@ Pour créer un recouvrement ou un remplacement, vous devez recréer le nœud d�
 
    * La définition de l’entrée de navigation pour la console Sites, comme illustrée dans le rail, est définie à l’emplacement suivant :
 
-      `/libs/cq/core/content/nav/sites/jcr:title`
+     `/libs/cq/core/content/nav/sites/jcr:title`
 
    * Pour recouvrir cela, créez le nœud suivant :
 
-      `/apps/cq/core/content/nav/sites`
+     `/apps/cq/core/content/nav/sites`
 
-      Mettez ensuite la propriété `jcr:title` à jour selon les besoins.
+     Mettez ensuite la propriété `jcr:title` à jour selon les besoins.
 
 * Remplacement
 
    * La définition de la boîte de dialogue tactile pour la console Textes est définie à l’emplacement suivant :
 
-      `/libs/foundation/components/text/cq:dialog`
+     `/libs/foundation/components/text/cq:dialog`
 
    * Pour remplacer cela, créez le nœud suivant ; par exemple :
 
-      `/apps/the-project/components/text/cq:dialog`
+     `/apps/the-project/components/text/cq:dialog`
 
 Pour créer l’un de ces éléments, vous devez simplement recréer l’ossature. Pour simplifier la reconstitution de la structure, tous les nœuds intermédiaires peuvent être de type `nt:unstructured` (ils ne doivent pas nécessairement refléter le type de nœud d’origine ; par exemple, dans `/libs`).
 
@@ -125,14 +125,14 @@ Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’e
 
 * **Ajout d’une propriété**
 
-   La propriété n’existe pas dans la définition `/libs`, mais elle est requise dans le recouvrement/remplacement `/apps`.
+  La propriété n’existe pas dans la définition `/libs`, mais elle est requise dans le recouvrement/remplacement `/apps`.
 
    1. Créez le nœud correspondant dans `/apps`.
    1. Créez la propriété sur ce nœud.
 
 * **Redéfinir une propriété (pas les propriétés créées automatiquement)**
 
-   La propriété est définie dans `/libs`, mais une nouvelle valeur est requise dans le recouvrement/remplacement `/apps`.
+  La propriété est définie dans `/libs`, mais une nouvelle valeur est requise dans le recouvrement/remplacement `/apps`.
 
    1. Créez le nœud correspondant dans `/apps`.
    1. Créez la propriété correspondante sur ce nœud (sous /`apps`).
@@ -140,14 +140,15 @@ Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’e
       * La propriété aura une priorité basée sur la configuration Sling Resource Resolver.
       * La modification du type de propriété est prise en charge.
 
-         Si vous utilisez un type de propriété différent de celui utilisé dans `/libs`, c’est le type que vous avez défini qui sera utilisé.
-   >[!NOTE]
-   >
-   >La modification du type de propriété est prise en charge.
+        Si vous utilisez un type de propriété différent de celui utilisé dans `/libs`, le type de propriété que vous définissez est utilisé.
+
+  >[!NOTE]
+  >
+  >La modification du type de propriété est prise en charge.
 
 * **Redéfinir une propriété créée automatiquement**
 
-   Par défaut, les propriétés créées automatiquement (telles que `jcr:primaryType`) ne sont pas soumises à une opération de recouvrement/remplacement pour s’assurer que le type de nœud défini actuellement sous `/libs` est respecté. Pour imposer un recouvrement/remplacement, vous devez recréer le nœud dans `/apps`, masquer explicitement la propriété, puis la redéfinir :
+  Par défaut, les propriétés créées automatiquement (telles que `jcr:primaryType`) ne sont pas soumises à une opération de recouvrement/remplacement pour s’assurer que le type de nœud défini actuellement sous `/libs` est respecté. Pour imposer un recouvrement/remplacement, vous devez recréer le nœud dans `/apps`, masquer explicitement la propriété, puis la redéfinir :
 
    1. Créez le nœud correspondant sous `/apps` avec la propriété `jcr:primaryType` souhaitée.
    1. Créez la propriété `sling:hideProperties` sur ce nœud, avec la valeur définie sur celle de la propriété créée automatiquement ; par exemple, `jcr:primaryType`
@@ -156,7 +157,7 @@ Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’e
 
 * **Redéfinir un nœud et ses enfants**
 
-   Le nœud et ses enfants sont définis dans `/libs`, mais une nouvelle configuration est requise dans le recouvrement/remplacement de `/apps`.
+  Le nœud et ses enfants sont définis dans `/libs`, mais une nouvelle configuration est requise dans le recouvrement/remplacement de `/apps`.
 
    1. Combinez les actions des éléments suivants :
 
@@ -165,7 +166,7 @@ Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’e
 
 * **Masquer une propriété**
 
-   La propriété est définie dans `/libs`, mais elle n’est pas requise dans le recouvrement/remplacement de `/apps`.
+  La propriété est définie dans `/libs`, mais elle n’est pas requise dans le recouvrement/remplacement de `/apps`.
 
    1. Créez le nœud correspondant dans `/apps`.
    1. Créez une propriété `sling:hideProperties` de type `String` ou `String[]`. Utilisez cette option pour spécifier les propriétés à masquer/ignorer. Vous pouvez également utiliser des caractères génériques. Par exemple :
@@ -177,7 +178,7 @@ Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’e
 
 * **Masquer un nœud et ses enfants**
 
-   Le nœud et ses enfants sont définis dans `/libs`, mais ils ne sont pas nécessaires dans le recouvrement/remplacement de `/apps`.
+  Le nœud et ses enfants sont définis dans `/libs`, mais ils ne sont pas nécessaires dans le recouvrement/remplacement de `/apps`.
 
    1. Créez le nœud correspondant sous /apps.
    1. Créez une propriété `sling:hideResource`
@@ -187,7 +188,7 @@ Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’e
 
 * **Masquer les enfants d’un nœud (tout en conservant les propriétés du nœud)**
 
-   Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le nœud et ses propriétés sont requis dans le recouvrement/remplacement de `/apps`, tandis que la totalité ou une partie des nœuds enfants ne sont pas requis dans le recouvrement/remplacement de `/apps`.
+  Le nœud, ses propriétés et ses enfants sont définis dans `/libs`. Le nœud et ses propriétés sont requis dans le recouvrement/remplacement de `/apps`, tandis que la totalité ou une partie des nœuds enfants ne sont pas requis dans le recouvrement/remplacement de `/apps`.
 
    1. Créez le nœud correspondant sous `/apps`
    1. Créez la propriété `sling:hideChildren` :
@@ -197,10 +198,9 @@ Ces fonctions, en lien avec les fonctionnalités standard, vous permettent d’e
 
       Le caractère générique &amp;ast; peut être utilisé pour masquer/ignorer tous les nœuds enfants.
 
-
 * **Réorganiser les nœuds**
 
-   Le nœud et ses frères sont définis dans `/libs`. Une nouvelle position est requise pour que le nœud soit recréé dans le recouvrement/remplacement de `/apps`. Cette position y est définie en référence au nœud frère approprié dans `/libs`.
+  Le nœud et ses frères sont définis dans `/libs`. Une nouvelle position est requise pour que le nœud soit recréé dans le recouvrement/remplacement de `/apps`. Cette position y est définie en référence au nœud frère approprié dans `/libs`.
 
    * Utilisez la propriété `sling:orderBefore` :
 

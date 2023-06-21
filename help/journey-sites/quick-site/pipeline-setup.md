@@ -2,10 +2,10 @@
 title: Configurer le pipeline
 description: Créez un pipeline frontal pour gérer la personnalisation du thème de votre site.
 exl-id: 0d77d1a6-98f3-4961-9283-f52c1b5b2a7b
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '976'
-ht-degree: 100%
+source-wordcount: '975'
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ Maintenant que vous avez accédé à Cloud Manager, vous pouvez créer un pipeli
    * Sélectionnez l’environnement approprié sous **Environnements de déploiement éligibles**.
    * Sélectionnez le **Référentiel** adéquat.
    * Définissez la **Branche Git** à laquelle le pipeline doit être associé.
-   * Définissez l’**Emplacement du code** si le développement front-end se trouve sous un chemin d’accès particulier dans le référentiel sélectionné. La valeur par défaut est la racine du référentiel, mais le développement front-end et back-end se font souvent sous différents chemins d’accès.
+   * Définissez l’**Emplacement du code** si le développement front-end se trouve sous un chemin d’accès particulier dans le référentiel sélectionné. La valeur par défaut est la racine du référentiel, mais le développement front-end et le back-end se font souvent sous différents chemins.
 
    ![Informations sur le code source pour l’ajout de pipeline](assets/add-pipeline-source-code.png)
 

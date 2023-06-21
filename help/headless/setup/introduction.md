@@ -2,10 +2,10 @@
 title: Configuration découplée
 description: Grâce à ce guide de démarrage rapide, découvrez les fondamentaux des puissantes fonctionnalités en mode découplé comme les modèles de contenu, les fragments de contenu et l’API GraphQL.
 exl-id: 26c05122-5930-4b4e-91dd-287b7cc865ee
-source-git-commit: d35b60810a1624390d3d9c82c2a364140ea37536
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '286'
+ht-degree: 94%
 
 ---
 
@@ -30,12 +30,11 @@ Voici une méthode simple pour créer, gérer et diffuser des expériences à l�
 >* [Parcours de création de contenu découplé](/help/journey-headless/author/overview.md)
 >* [Parcours de traduction découplée](/help/journey-headless/translation/overview.md).
 
-
 ## Public {#audience}
 
 Les tâches décrites sont nécessaires pour une démonstration de bout en bout des capacités découplées d’AEM. Toute personne disposant d’un accès administrateur à une instance AEM de test peut suivre ces guides pour comprendre la diffusion découplée dans AEM, même si une personne avec une expérience de développeur est idéale.
 
-Cependant, dans une situation de production, les tâches seront exécutées par des personnes différentes un nombre variable de fois. Par exemple :
+Toutefois, dans une situation de production, les tâches sont effectuées par des personnes différentes un nombre variable de fois. Par exemple :
 
 * Les **administrateurs** ne doivent normalement configurer la configuration initiale et la structure des dossiers pour le contenu qu’une seule fois ou de manière sporadique.
 * Les **architectures des informations** ajoutent généralement de nouveaux modèles au fur et à mesure que les besoins de l’organisation évoluent.

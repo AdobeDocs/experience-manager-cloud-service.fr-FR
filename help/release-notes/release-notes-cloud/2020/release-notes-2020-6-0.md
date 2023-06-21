@@ -2,10 +2,10 @@
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.6.0
 description: Notes de mise à jour d’Experience Manager version 2020.6.0
 exl-id: fd6ebe2b-6d98-498c-a45d-b9a9c34e6be7
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 100%
+source-wordcount: '1939'
+ht-degree: 94%
 
 ---
 
@@ -48,9 +48,9 @@ La version 2.9.0 des [composants principaux](https://experienceleague.adobe.com
 
 ## Nouveautés de Foundations dans AEM as a Cloud Service {#foundations}
 
-Amélioration des délais d’élaboration d’un projet AEM en supprimant toutes les références au fichier pom.xml du projet AEM dans le référentiel distant `https://downloads.experiencecloud.adobe.com/content/maven/public`.
+Les délais de création AEM projet s’améliorent en supprimant toutes les références du fichier pom.xml du projet AEM dans le référentiel distant. `https://downloads.experiencecloud.adobe.com/content/maven/public`.
 
-Le fichier Jar d’API du SDK AEM as a Cloud Service, qui était auparavant hébergé à cet emplacement, se trouve désormais dans Maven Central, qui est le référentiel d’artefacts par défaut de Maven.
+Le fichier Jar de l’API SDK as a Cloud Service, qui était auparavant hébergé à cet emplacement, se trouve désormais dans Maven Central, qui est le référentiel d’artefacts par défaut de Maven.
 
 ## Nouveautés de Cloud Manager {#cloud-manager}
 
@@ -60,11 +60,11 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * Un utilisateur possédant le rôle *Propriétaire de l’entreprise* dans Cloud Manager peut désormais supprimer un programme Sandbox depuis la landing page (par le biais d’un bouton d’action rapide sur la carte Programme) ou depuis le programme.
 
-   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr).
+  Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr).
 
 * Un utilisateur du programme Sandbox possédant le rôle *Propriétaire d’entreprise* ou *Responsable de déploiement* dans Cloud Manager peut désormais supprimer ses jeux d’environnements de production et d’évaluation via l’interface utilisateur de Cloud Manager. L’option de suppression est désormais disponible à partir de la carte Environnement dans la page **Aperçu du programme**, mais aussi dans la page **Environnements**. La sélection de l’option de suppression dans l’environnement de production ou d’évaluation supprime également l’autre dans le jeu d’environnements.
 
-   Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr).
+  Pour plus d’informations, voir [Suppression d’un programme Sandbox](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/cloud-service-programs/creating-a-program.html?lang=fr).
 
 * Repères sur la landing page pour informer l’utilisateur sur la navigation de base.
 
@@ -72,15 +72,15 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 
 * Une page **APPRENDRE** est désormais disponible dans Cloud Manager, accessible par le biais de la navigation supérieure. Cette page comprend des ressources destinées à aider les utilisateurs à en savoir plus sur les workflows les plus fréquemment utilisés en fonction du rôle qui leur est attribué dans Cloud Manager.
 
-* Les programmes Sandbox sont maintenant identifiés au moyen d’un badge **Sandbox**, affiché dans la carte du programme sur la landing page, ainsi qu’en regard du nom du programme sur la page **Aperçu du Programme**.
+* Les programmes Sandbox sont maintenant identifiés au moyen d’un **Sandbox** badge affiché sur la carte du programme sur la page d’entrée, ainsi qu’en regard du nom du programme dans la variable **Aperçu du programme** page.
 
 * Un utilisateur possédant le rôle SysAdmin dispose désormais d’un accès d’un simple clic à l’emplacement d’Admin Console d’où peuvent être gérés les rôles des utilisateurs ou les autorisations d’accès à Cloud Manager. Un bouton **Gérer l’accès** est désormais disponible dans la landing page en regard du bouton **Ajouter le programme**.
 
-   Pour plus d’informations, voir [Tâches SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#sysadmin-tasks).
+  Pour plus d’informations, voir [Tâches SysAdmin](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#sysadmin-tasks).
 
 * Un utilisateur possédant le rôle SysAdmin dispose désormais d’un accès en un clic à l’instance d’auteur directement à partir de Cloud Manager.
 
-   Pour plus d’informations, voir [Gestion de l’accès à l’instance d’auteur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#manage-access-aem).
+  Pour plus d’informations, voir [Gestion de l’accès à l’instance d’auteur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/navigation.html?lang=fr#manage-access-aem).
 
 * Le journal de génération inclut désormais la liste des artefacts détectés, y compris les packages de contenu ignorés.
 
@@ -176,7 +176,7 @@ Cette version comprend les autres améliorations suivantes :
 * Possibilité de retraiter des ressources avec des profils de traitement des ressources. Les utilisateurs peuvent ainsi contrôler entièrement le processus (effectuer le traitement complet des ressources, appliquer simplement un profil de traitement spécifique et décider si le workflow de post-traitement doit être exécuté).
 * Les requêtes de recherche renvoient maintenant les résultats plus rapidement, car l’instance de grappe associée a été redémarrée en arrière-plan (auparavant, l’exécution de la recherche initiale pouvait durer plus longtemps).
 * Tri par nom lorsque vous affichez des ressources dans la vue Liste de l’interface Assets et dans les résultats de recherche. Voir [Rechercher des ressources](/help/assets/search-assets.md#sort).
-* Tri sur le critère Créé (Date) lorsque vous affichez des ressources dans la vue Liste de l’interface Assets et dans les résultats de recherche. Voir [Rechercher des ressources](/help/assets/search-assets.md#sort).
+* Tri sur &quot;Créé&quot; (Date) lors de l’affichage des ressources en mode Liste dans l’interface Assets et dans les résultats de la recherche. Voir [Rechercher des ressources](/help/assets/search-assets.md#sort).
 * Prise en charge de la conversion de fichiers EPS en images à l’aide des microservices de ressources.
 
 ### Correctifs {#assets-bug-fixes}

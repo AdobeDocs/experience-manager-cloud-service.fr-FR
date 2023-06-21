@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1564'
-ht-degree: 97%
+source-wordcount: '1562'
+ht-degree: 95%
 
 ---
 
@@ -123,7 +123,7 @@ Récupère une représentation Siren d’un dossier existant et de ses entités 
 * 404 – INTROUVABLE – le dossier n’existe pas ou n’est pas accessible.
 * 500 – ERREUR INTERNE DU SERVEUR – si une autre erreur s’est produite.
 
-**Réponse** : la classe de l’entité renvoyée est une ressource ou un dossier. Les propriétés des entités contenues représentent un sous-ensemble du jeu complet des propriétés de chaque entité. Pour obtenir une représentation complète de l’entité, les clients doivent récupérer le contenu de l’URL vers laquelle pointe le lien avec l’élément `rel` `self`.
+**Réponse** : la classe de l’entité renvoyée est une ressource ou un dossier. Les propriétés des entités contenues représentent un sous-ensemble du jeu complet des propriétés de chaque entité. Pour obtenir une représentation complète de l’entité, les clients doivent récupérer le contenu de l’URL vers laquelle pointe le lien avec une `rel` de `self`.
 
 ## Créer un dossier {#create-a-folder}
 
@@ -294,4 +294,3 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 >[!MORELIKETHIS]
 >
 >* [Documentation de référence du développeur pour [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
-

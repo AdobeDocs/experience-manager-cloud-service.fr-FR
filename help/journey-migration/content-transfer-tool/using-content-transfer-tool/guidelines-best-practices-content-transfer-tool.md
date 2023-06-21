@@ -2,10 +2,10 @@
 title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 5475f9995513d09e61bd8f52242b3e74b8d4694c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 100%
+source-wordcount: '1547'
+ht-degree: 94%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 -->
 
-Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version afin d’exploiter tous les avantages qu’elle offre :
+Une nouvelle version de l’outil de transfert de contenu est disponible, qui intègre le processus de transfert de contenu à Cloud Acceleration Manager. Il est vivement recommandé de passer à cette nouvelle version pour utiliser tous les avantages qu’elle offre :
 
 * Une méthode en libre-service pour extraire une seule fois un jeu de migration et l’ingérer dans plusieurs environnements en parallèle
 * L’amélioration de l’expérience utilisateur grâce à une meilleure gestion des statuts de chargement, des barrières de sécurité et des erreurs
@@ -37,13 +37,13 @@ Les conseils et bonnes pratiques suivants s’appliquent à la nouvelle version 
 
 * Il est conseillé de procéder à un [nettoyage de révision](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/revision-cleanup.html?lang=fr) et à des [contrôles de cohérence de l’entrepôt de données](https://helpx.adobe.com/fr/experience-manager/kb/How-to-run-a-datastore-consistency-check-via-oak-run-AEM.html) sur le référentiel **source** pour identifier les problèmes potentiels et réduire la taille du référentiel.
 
-* Lors de la phase d’ingestion, il est recommandé d’exécuter l’ingestion en activant le mode d’*effacement*. Dans ce cas, le référentiel existant (auteur ou publication) de l’environnement AEM Cloud Service cible sera complètement supprimé, puis mis à jour à l’aide des données du jeu de migration. Ce mode est beaucoup plus rapide que le mode sans effacement, où le jeu de migration est appliqué par-dessus le contenu existant.
+* Lors de la phase d’ingestion, il est recommandé d’exécuter l’ingestion à l’aide de la fonction *essuyer* le mode activé où le référentiel existant (auteur ou publication) dans l’environnement AEM Cloud Service cible est complètement supprimé, puis mis à jour avec les données du jeu de migration. Ce mode est beaucoup plus rapide que le mode sans effacement, où le jeu de migration est appliqué par-dessus le contenu existant.
 
 * Une fois l’activité de transfert de contenu terminée, une structure de projet appropriée est nécessaire dans l’environnement Cloud Service pour s’assurer que le contenu s’affiche correctement.
 
 * Avant d’exécuter l’outil de transfert de contenu, vous devez vous assurer que l’espace disque disponible dans le sous-répertoire `crx-quickstart` de l’instance AEM source est suffisant. En effet, l’outil de transfert de contenu crée une copie locale du référentiel, ultérieurement chargée dans le jeu de migration.
 La formule générale pour calculer l’espace disque disponible requis est la suivante :
-   `data store size + node store size * 1.5`
+  `data store size + node store size * 1.5`
 
    * *volume de stockage des données* : l’outil de transfert de contenu utilise 64 Go, même si l’entrepôt de données en question est plus volumineux.
    * *volume de stockage des nœuds* : taille du répertoire de stockage des segments ou taille de la base de données MongoDB.
@@ -65,7 +65,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Pour démarrer une ingestion, vous devez appartenir au groupe **administrateurs** AEM local dans l’instance du service cloud à laquelle vous transférez du contenu. Si les utilisateurs ne disposent pas des privilèges requis, ils doivent fournir le jeton de migration manuellement pour commencer les ingestions.
 
-* Lorsque l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, elle supprime l’intégralité du référentiel existant et crée un référentiel dans lequel ingérer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur doit être rajouté au groupe d’**administrateurs** afin de récupérer le jeton d’accès pour l’outil de transfert de contenu.
+* Lorsque l’option **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est activée, elle supprime l’intégralité du référentiel existant et crée un référentiel dans lequel ingérer du contenu. Cela signifie que tous les paramètres sont réinitialisés, y compris les autorisations relatives à l’instance Cloud Service cible. C’est également vrai pour un utilisateur administrateur ajouté au groupe **administrateurs**. L’utilisateur doit être rajouté au **administrateurs** pour récupérer le jeton d’accès de l’outil de transfert de contenu.
 
 * Les ingestions ne prennent pas en charge la fusion de contenu provenant de plusieurs sources dans l’instance Cloud Service cible si le contenu provenant des deux sources est déplacé vers les mêmes chemins d’accès sur la cible. Pour déplacer le contenu provenant de plusieurs sources vers une seule instance de Cloud Service cible, vous devez vous assurer qu’il n’y a pas de chevauchement des chemins de contenu des sources.
 
@@ -83,7 +83,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
    * Type d’environnement (évaluation ou production) dans lequel vous prévoyez d’importer des données.
    * ID de programme.
 
-* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. L’auteur AEM ne sera donc pas disponible pendant la totalité du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
+* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. Cela signifie que l’AEM de création n’est pas disponible pendant l’ensemble du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
 
 * Si vous utilisez `Amazon S3` ou `Azure` comme entrepôt de données sur le système AEM source, cet entrepôt doit être configuré de sorte que les objets blob stockés ne puissent pas être supprimés (nettoyage de la mémoire). Cela garantit l’intégrité des données d’index et un échec de ce type de configuration peut entraîner des échecs d’extraction en raison d’un manque d’intégrité de ces données d’index.
 

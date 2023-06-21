@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 100%
+source-wordcount: '1166'
+ht-degree: 96%
 
 ---
 
@@ -61,7 +61,7 @@ Si vous choisissez un autre fournisseur, votre administrateur doit installer le 
 >
 >Si vous choisissez d’utiliser le connecteur Microsoft Translator à des fins de test, il n’est pas nécessaire d’effectuer les étapes des deux sections suivantes : [Création d’une configuration d’intégration de traduction](#create-config) et [Association de la configuration à votre contenu.](#associate) Il est toutefois conseillé de lire ces sections afin de vous familiariser avec les étapes de configuration de votre connecteur préféré.
 >
->La licence d’évaluation du connecteur Microsoft Translator n’est pas destinée à la production et, si vous décidez de lui accorder une licence, l’administrateur système doit suivre les étapes présentées dans la section [Ressources supplémentaires](#additional-resources) à la fin de ce document afin de configurer cette licence.
+>La licence d’évaluation du connecteur Microsoft Translator n’est pas destinée à des fins de production et si vous décidez de lui accorder une licence, l’administrateur système doit suivre les étapes présentées dans la section [Ressources supplémentaires](#additional-resources) à la fin de ce document pour configurer cette licence.
 
 ## Création d’une configuration d’intégration de traduction {#create-config}
 

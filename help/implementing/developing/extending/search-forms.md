@@ -2,10 +2,10 @@
 title: Configuration des formulaires de recherche
 description: Configuration des formulaires de recherche pour Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2043'
-ht-degree: 94%
+source-wordcount: '2037'
+ht-degree: 91%
 
 ---
 
@@ -37,7 +37,7 @@ Les **Formulaires de recherche** fournissent une sélection immédiate de [préd
 
 ## Formulaires par défaut {#default-forms}
 
-Lorsque vous accédez à la console **Formulaires de recherche** pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration correspondante est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois que vous avez personnalisé et enregistré une configuration, le cadenas disparaît. Il réapparaît si vous [supprimez votre configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default), auquel cas la valeur par défaut (et l’indicateur de cadenas) est rétablie.
+Lorsque vous accédez à la console **Formulaires de recherche** pour la première fois, vous pouvez constater que toutes les configurations comportent un symbole de cadenas. Cela signifie que la configuration correspondante est la configuration par défaut (prête à l’emploi) et qu’elle ne peut pas être supprimée. Une fois que vous avez personnalisé et enregistré une configuration, le cadenas disparaît. Il réapparaîtra lorsque vous [supprimer votre configuration personnalisée](#deleting-a-configuration-to-reinstate-the-default), auquel cas la valeur par défaut (et l’indicateur de cadenas) est rétablie.
 
 ![présentation de la configuration des formulaires de recherche](assets/csf-overview.png)
 
@@ -202,7 +202,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
   </tr>
   <tr>
    <td>Groupe</td>
-   <td>Prédicat de recherche pour le groupe (utilisé uniquement dans le prédicat Statistiques).</td>
+   <td>Prédicat de recherche pour le groupe (utilisé uniquement dans le prédicat Insights).</td>
    <td>
     <ul>
      <li>Libellé du champ</li>
@@ -220,8 +220,8 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
     </ul> </td>
   </tr>
   <tr>
-   <td>Statistiques</td>
-   <td>Recherchez selon une sélection de paramètres Statistiques.</td>
+   <td>Insights</td>
+   <td>Recherchez selon une sélection de paramètres Insights.</td>
    <td>Il s’agit d’un prédicat complexe composé de plusieurs prédicats :
     <ul>
      <li>Groupe</li>
@@ -495,47 +495,46 @@ En fonction du prédicat, une sélection de paramètres est disponible pour la c
 
 * **Libellé du champ**
 
-   Libellé qui s’affiche sous forme d’en-tête réductible ou de libellé de champ du prédicat.
+  Libellé qui s’affiche sous forme d’en-tête réductible ou de libellé de champ du prédicat.
 
 * **Description**
 
-   Informations descriptives à l’intention de l’utilisateur.
+  Informations descriptives à l’intention de l’utilisateur.
 
 * **Espace réservé**
 
-   Texte non renseigné ou espace réservé du prédicat au cas où aucun texte de filtrage ne serait saisi.
+  Texte non renseigné ou espace réservé du prédicat au cas où aucun texte de filtrage ne serait saisi.
 
 * **Nom de la propriété**
 
-   Propriété selon laquelle effectuer la recherche. Elle utilise un chemin relatif et les caractères génériques `*/*/*` pour spécifier la profondeur de la propriété par rapport au nœud `jcr:content` (chaque astérisque représente un niveau de nœud).
+  Propriété selon laquelle effectuer la recherche. Elle utilise un chemin relatif et les caractères génériques `*/*/*` pour spécifier la profondeur de la propriété par rapport au nœud `jcr:content` (chaque astérisque représente un niveau de nœud).
 
-   Si vous souhaitez effectuer une recherche uniquement sur le nœud enfant de premier niveau de la ressource, dont la propriété `x` est égale au nœud `jcr:content`, utilisez `*/jcr:content/x`.
+  Si vous souhaitez effectuer une recherche uniquement sur le nœud enfant de premier niveau de la ressource, dont la propriété `x` est égale au nœud `jcr:content`, utilisez `*/jcr:content/x`.
 
 * **Détails de propriété**
 
-   Détails maximum selon lesquels rechercher cette propriété dans les ressources. Une recherche sur cette propriété peut donc être exécutée sur une ressource et des enfants récursifs jusqu’au niveau auquel les enfants sont égaux à la profondeur spécifiée.
+  Détails maximum selon lesquels rechercher cette propriété dans les ressources. Une recherche sur cette propriété peut donc être exécutée sur une ressource et des enfants récursifs jusqu’au niveau auquel les enfants sont égaux à la profondeur spécifiée.
 
 * **Valeur de la propriété**
 
-   Valeur de la propriété sous forme de chaîne absolue ou de langage utilisant des expressions ; par exemple, `cq:Page` ou
+  Valeur de la propriété sous forme de chaîne absolue ou de langage utilisant des expressions ; par exemple, `cq:Page` ou
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Texte de la plage**
 
-   Libellé du champ de plage dans le prédicat **Plage de dates**.
+  Libellé du champ de plage dans le prédicat **Plage de dates**.
 
 * **Chemin d’accès aux options**
 
-   L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, puis cliquer sur l’icône « **+** » pour ajouter la sélection à la liste des options valides (puis sur l’icône « **-** » pour la supprimer, si nécessaire).
+  L’utilisateur peut sélectionner le chemin d’accès à l’aide de l’Explorateur de chemins d’accès dans l’onglet Paramètres de prédicat, puis cliquer sur l’icône « **+** » pour ajouter la sélection à la liste des options valides (puis sur l’icône « **-** » pour la supprimer, si nécessaire).
 
-   Les options sont des nœuds de contenu créés par l’utilisateur, qui possèdent la structure suivante :
+  Les options sont des nœuds de contenu créés par l’utilisateur, qui possèdent la structure suivante :
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Chemin d’accès au nœud d’options**
-Dans la pratique, il est identique au 
-**Chemin d’accès aux options**, à la différence qu’il s’agit du champ de prédicat commun, l’autre étant spécifique aux ressources.
+Globalement identique à **Chemin d’accès aux options**, à la différence qu’il se trouve dans le champ de prédicat commun, tandis que l’autre est spécifique aux ressources.
 
 * **Sélection simple**
 Si cette case est cochée, les options sont présentées sous forme de cases à cocher qui ne permettent qu’une sélection simple. Si cette option est sélectionnée par erreur, vous pouvez désélectionner la case à cocher correspondante.
@@ -563,7 +562,6 @@ Libellés des cases à cocher Publication et Live Copy pour le prédicat spéci
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### Ajout et modification d’un champ de prédicat et définition des paramètres de champ {#add-edit-a-predicate-field-and-define-field-settings}
 
 Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs paramètres :
@@ -577,11 +575,12 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
    * Vous ajoutiez ou non un nouveau champ :
 
-      Après l’ajout du prédicat, l’onglet **Paramètres** s’ouvre et affiche les propriétés qui peuvent être définies.
+     Après l’ajout du prédicat, l’onglet **Paramètres** s’ouvre et affiche les propriétés qui peuvent être définies.
 
    * Vous souhaitiez ou non mettre à jour un prédicat existant :
 
-      Sélectionnez le champ de prédicat (à droite), puis ouvrez l’onglet **Paramètres**.
+     Sélectionnez le champ de prédicat (à droite), puis ouvrez l’onglet **Paramètres**.
+
    Par exemple, les paramètres du **prédicat de période** :
 
    ![modifier le prédicat](assets/csf-modify-predicate.png)
@@ -594,7 +593,7 @@ Vous pouvez ajouter ou modifier des champs et définir/mettre à jour leurs para
 
    ![icône d’aperçu](assets/csf-preview-icon.png)
 
-1. Les formulaires de recherche s’affichent tels qu’ils apparaissent (totalement développés) dans la colonne Rechercher de la console appropriée.
+1. Affiche les formulaires de recherche tels qu’ils s’affichent (entièrement développés) dans la colonne Rechercher de la console appropriée.
 
    ![formulaire d’aperçu](assets/csf-preview-form.png)
 
@@ -625,7 +624,7 @@ Les configurations personnalisées doivent être supprimées à partir de la con
 
    ![restaurer les valeurs par défaut](assets/csf-restore-default.png)
 
-1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (le symbole de cadenas réapparaît dans la console).
+1. La configuration personnalisée est supprimée et la valeur par défaut est rétablie (ceci est indiqué par la réapparition du symbole de cadenas dans la console).
 
 ### Ajout de prédicats d’options {#adding-options-predicates}
 
@@ -656,7 +655,6 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Apportez les modifications désirées dans `/apps.`
 
-
 1. Ouvrez la console **Formulaires de recherche** et sélectionnez la configuration à mettre à jour. Par exemple, le **rail de recherche d’administrateurs de sites**. Sélectionnez ensuite **Modifier**.
 
 1. Selon la configuration, ajoutez une **Options** ou **Propriété Options** à la configuration.
@@ -664,19 +662,20 @@ L’exemple ci-dessous (pour effectuer une recherche en fonction du modèle util
 
    * **Nom de la propriété**
 
-      Spécifique à la propriété du nœud à rechercher sur les nœuds cibles. Par exemple :
+     Spécifique à la propriété du nœud à rechercher sur les nœuds cibles. Par exemple :
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **Chemin d’accès du nœud d’option**
 
-      Sélectionnez le chemin d’accès vers lequel vos options sont conservées. Par exemple :
+     Sélectionnez le chemin d’accès vers lequel vos options sont conservées. Par exemple :
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
    ![Prédicats Option](assets/csf-options-predicate-02.png)
 
 1. Sélectionnez **Terminé** pour enregistrer la configuration.
-1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Recherche – Filtres**. Les formulaires de recherche qui viennent d’être définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option nécessaire pour afficher les résultats de la recherche.
+1. Accédez à la console appropriée (dans cet exemple, **Sites**) et ouvrez le rail **Recherche – Filtres**. Les formulaires de recherche nouvellement définis, ainsi que les différentes options, sont visibles. Sélectionnez l’option nécessaire pour afficher les résultats de la recherche.
 
    ![options utilisées](assets/csf-options-usage.png)
 

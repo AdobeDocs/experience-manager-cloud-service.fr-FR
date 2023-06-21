@@ -2,10 +2,10 @@
 title: Premiers pas vers votre première expérience d’utilisation d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2014'
-ht-degree: 100%
+source-wordcount: '2013'
+ht-degree: 98%
 
 ---
 
@@ -48,7 +48,7 @@ En dehors d’AEM, nous vous recommandons également de vous assurer que vous di
 
 ### Définition des modèles de contenu et des API {#defining-models}
 
-Votre objectif est de générer une expérience cohérente et de gérer des campagnes personnalisées sur plusieurs canaux, afin de pouvoir considérer chaque canal et chaque surface comme sa propre structure de contenu à diffuser. Toutefois, il est difficile de gérer chaque canal doté de son propre modèle de contenu.
+Votre objectif est de générer une expérience cohérente et de gérer des campagnes personnalisées sur plusieurs canaux, afin de pouvoir considérer chaque canal et chaque surface comme sa propre structure de contenu à diffuser. Toutefois, la gestion de chaque canal avec son propre modèle de contenu est difficile.
 
 Il vous faut plutôt examiner la manière dont les contenus des différentes surfaces sont associés les uns aux autres en fonction de principes d’organisation tels que les hiérarchies de marques et de produits, les catégories de produits ou de surfaces, ou les étapes du parcours client. Par exemple, si vous disposez d’un ensemble de surfaces qui prennent en charge une marque spécifique de voitures que vous fabriquez, vous pouvez commencer par un modèle de contenu pour des informations générales qui seraient vraies pour l’ensemble de la voiture, puis avoir des éléments plus spécifiques, comme le contenu nécessaire pour le démarrage de la voiture, ou lorsqu’il y a des problèmes de service. Un tel modèle va appliquer un héritage pour le contenu général de la marque automobile tout en permettant des modifications en fonction du contexte spécifique nécessaire. Il permet également de gérer les futures mises à jour de ce contenu, car vous pouvez appliquer un contrôle en fonction de rôles tels que celui de responsable marketing global ou de chef de produit pour l’ensemble de la marque de voiture, par rapport à un auteur responsable de l’expérience « démarrage de la voiture ».
 
@@ -86,7 +86,7 @@ Vous pouvez également vous reporter éventuellement aux [ressources supplément
 
 ## Mise en œuvre de votre première application découplée AEM
 
-Voici un aperçu de ce qui est nécessaire pour mettre en œuvre votre première application découplée pour diffuser votre contenu à l’aide d’AEM. La procédure à suivre pour effectuer ces étapes sera décrite en détail dans les parties suivantes du Parcours de développement découplé.
+Voici un aperçu de ce qui est nécessaire pour mettre en œuvre votre première application découplée pour diffuser votre contenu à l’aide d’AEM. La procédure à suivre pour effectuer ces étapes sera décrite en détail dans les parties ultérieures du Parcours de développement sans affichage.
 
 1. Créer des modèles de fragment de contenu
 1. Créer des fragments de contenu

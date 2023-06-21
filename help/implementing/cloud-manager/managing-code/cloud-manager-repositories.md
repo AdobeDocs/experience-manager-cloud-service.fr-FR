@@ -2,10 +2,10 @@
 title: Référentiels Cloud Manager
 description: Découvrez comment créer, afficher et supprimer vos référentiels Git dans Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 100%
+source-wordcount: '580'
+ht-degree: 96%
 
 ---
 
@@ -51,7 +51,7 @@ Il existe un référentiel principal unique ou une branche pour chaque pipeline 
 La suppression d’un référentiel entraînera les éléments suivants :
 
 * Le nom du référentiel supprimé sera inutilisable pour de nouveaux référentiels qui pourraient être créés ultérieurement.
-   * Le message d’erreur suivant `Repository name should be unique within organization.` s’affiche dans de tels cas.
+   * Message d’erreur `Repository name should be unique within organization.` s’affiche dans ce cas.
 * Le référentiel supprimé sera indisponible dans Cloud Manager et ne pourra donc pas être lié à un pipeline.
 
 Pour supprimer un référentiel dans Cloud Manager, procédez comme suit.

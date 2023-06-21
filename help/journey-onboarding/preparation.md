@@ -2,10 +2,10 @@
 title: Préparation à l’intégration
 description: Avant que le processus d’intégration ne commence, l’administrateur système doit comprendre un certain nombre d’étapes préparatoires avant de se connecter au système.
 exl-id: 86139b1a-c22a-4716-a0f9-cf142cbc6c53
-source-git-commit: 097c17b37cc308dc906cd4af7dc7c5d51862bdfa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 100%
+source-wordcount: '766'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Après avoir lu ce document, vous comprendrez
 * L’impact de ce contrat sur le processus d’intégration.
 * Comment préparer votre appel d’intégration.
 
-Ne vous inquiétez pas si vous ne connaissez pas tous les termes utilisés sur cette page. Ils seront expliqués dans la partie suivante du parcours.
+Ne vous inquiétez pas si vous ne connaissez pas tous les termes utilisés sur cette page. Les termes sont expliqués dans la partie suivante du parcours.
 
 ## Vidéo  {#video}
 
@@ -48,7 +48,7 @@ Une fois le contrat signé, Adobe met en service vos environnements, un e-mail d
 
 ## Configuration du système {#provisioning}
 
-Une fois le contrat signé, tous les environnements cloud d’AEM couverts par le contrat seront automatiquement configurés par Adobe. De même, ces environnements seront liés à vos programmes dans Cloud Manager (plus d’informations à ce sujet plus loin dans le parcours). Ces environnements cloud AEM sont compris dans chaque abonnement AEM as a Cloud Service. Ils sont généralement composés d’au moins un environnement de production, d’un environnement d’évaluation et éventuellement d’un ou plusieurs environnements de développement ou de test.
+Une fois le contrat signé, tous les environnements cloud d’AEM couverts par le contrat sont automatiquement configurés par Adobe. De même, ces environnements seront liés à vos programmes dans Cloud Manager (plus d’informations à ce sujet plus loin dans le parcours). Ces environnements cloud AEM sont compris dans chaque abonnement AEM as a Cloud Service. Ils sont généralement composés d’au moins un environnement de production, d’un environnement d’évaluation et éventuellement d’un ou plusieurs environnements de développement ou de test.
 
 ## Appel d’intégration {#onboarding-call}
 
@@ -60,7 +60,7 @@ Les participants de votre entreprise doivent inclure :
 * Professionnels des technologies
 * Votre partenaire d’implémentation
 
-Adobe sera représenté par :
+L’Adobe est représenté par :
 
 * Spécialiste de l’intégration
 * Votre gestionnaire de compte technique (le cas échéant)

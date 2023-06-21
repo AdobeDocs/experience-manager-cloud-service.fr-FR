@@ -2,10 +2,10 @@
 title: Questions fréquentes sur Screens as a Cloud Service
 description: Cette page présente les questions fréquentes sur Screens as a Cloud Service.
 exl-id: 93f2144c-0e64-4012-88c6-86972d8cad9f
-source-git-commit: 02c9cbff56399ea2ca1baad7d2289d5d4c17c1c5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '459'
-ht-degree: 100%
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ Les images au format `*.tif` (format de fichier image de balise) ne sont pas pri
 
 ## Que dois-je faire si un canal en mode Développeur (en ligne) n’est pas rendu sur le lecteur AEM Screens ? {#screens-cloud-online-channel-blank-iframe}
 
-Il est recommandé d’utiliser les fonctionnalités de cache d’AEM Screens, mais si vous devez exécuter votre canal en mode Développeur et que le lecteur AEM Screens affiche un écran vide, vérifiez les outils de développement de votre lecteur et recherchez les erreurs `X-Frame-Options` ou `frame-ancestors`. La résolution consiste à configurer Dispatcher pour autoriser l’exécution du contenu dans les iFrames. En règle générale, la configuration suivante fonctionne :
+Il est recommandé d’utiliser les fonctionnalités de mise en cache d’AEM Screens, mais si vous devez exécuter votre canal en mode Développeur et que le lecteur AEM Screens affiche un écran vide, vérifiez les outils de développement de votre lecteur et recherchez `X-Frame-Options` ou `frame-ancestors` erreurs. La résolution consiste à configurer Dispatcher pour autoriser l’exécution du contenu dans les iFrames. En règle générale, la configuration suivante fonctionne :
 
 ```
 Header set Content-Security-Policy "frame-ancestors ‘self’ file: localhost:*;"

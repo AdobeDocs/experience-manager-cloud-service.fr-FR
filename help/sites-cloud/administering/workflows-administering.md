@@ -3,10 +3,10 @@ title: Administration d’instances de workflow
 description: Découvrez comment administrer des instances de workflow
 feature: Administering
 role: Admin
-source-git-commit: 5801063c9c4c1c6b9f9e7f55ad4d66bb563e0eef
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1281'
-ht-degree: 73%
+source-wordcount: '1279'
+ht-degree: 71%
 
 ---
 
@@ -33,7 +33,6 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    ![statut-malsain](/help/sites-cloud/administering/assets/status-unhealthy.png)
 1. Pour **Détails de l’état** des instances de workflow, cliquez sur **Détails**, pour afficher la variable **nombre d’instances de workflows en cours d’exécution**, **instances de workflow terminées**, **instances de workflow annulées**, **instances de workflow en échec**, etc. par exemple, ci-dessous, les images données qui affichent **Détails de l’état** avec **État : Santé** et **État : Malsain**.
    ![status-details-health](/help/sites-cloud/administering/assets/status-details-healthy.png)
-
    ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
@@ -93,7 +92,6 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
    >* l’utilisation de la fonction **Arrêter** action
    >* lorsqu’une page, soumise à un workflow, est supprimée (de force), le workflow est arrêté.
 
-
 1. Sélectionnez un élément spécifique, puis **Ouvrir l’historique** pour afficher plus de détails :
 
    ![wf-99](/help/sites-cloud/administering/assets/wf-99.png)
@@ -103,8 +101,7 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 Lorsqu’un workflow échoue, AEM fournit la console **Échecs** pour vous permettre d’enquêter et de prendre la mesure appropriée une fois la cause d’origine traitée :
 
 * **Détails de l’échec**
-Ouvre une fenêtre pour afficher le 
-**Message d’échec**, **Step et **Pile des échecs**.
+Ouvre une fenêtre pour afficher le **Message d’échec**, **Step et **Pile des échecs**.
 
 * **Ouvrir l’historique**
 Affiche des détails sur l’historique des workflows.
@@ -192,7 +189,7 @@ Les données traitées par les workflows sont stockées dans l’enregistrement 
 
 Au niveau du modèle de workflow, un indicateur est fourni pour indiquer que le modèle (et ses instances d’exécution) dispose d’un enregistrement externe des métadonnées. Les variables de workflow ne seront pas conservées dans le JCR pour les instances de workflow des modèles marqués pour l’enregistrement externe.
 
-La propriété *userMetadataPersistenceEnabled* sera stocké dans le nœud *jcr:content node* du modèle de workflow. Cet indicateur sera conservé dans les métadonnées de workflow sous le nom *cq:userMetaDataCustomPersistenceEnabled*.
+La propriété *userMetadataPersistenceEnabled* est stocké dans la variable *noeud jcr:content* du modèle de workflow. Cet indicateur est conservé dans les métadonnées de workflow en tant que *cq:userMetaDataCustomPersistenceEnabled*.
 
 L’illustration ci-dessous montre comment définir l’indicateur dans un workflow.
 

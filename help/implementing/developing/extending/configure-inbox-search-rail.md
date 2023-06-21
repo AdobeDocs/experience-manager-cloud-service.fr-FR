@@ -2,10 +2,10 @@
 title: Comment configurer les filtres de recherche pour la boîte de réception ?
 description: Découvrez comment configurer des filtres de recherche pour les éléments contenus dans la boîte de réception.
 exl-id: 0e82d7ad-7a82-4d67-8eb8-9af6936652d8
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1001'
-ht-degree: 100%
+source-wordcount: '1000'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Les modifications apportées à la configuration sont répercutées lorsque vous
 
 >[!NOTE]
 >
->Cet article répertorie les dernières options de l’interface utilisateur. Les noms des options seront mis à jour dans l’interface utilisateur de la prochaine version.
+>Cet article répertorie les dernières options de l’interface utilisateur. Les noms des options sont mis à jour dans l’interface utilisateur de la prochaine version.
 
 ## Configurer l’attribut de texte {#text-predicate}
 

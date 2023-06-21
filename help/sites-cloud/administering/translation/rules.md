@@ -4,10 +4,10 @@ description: Découvrez comment les règles de traduction identifient le contenu
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 91%
+source-wordcount: '1294'
+ht-degree: 86%
 
 ---
 
@@ -17,7 +17,7 @@ Les règles de traduction identifient le contenu à traduire pour les pages, les
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, veuillez vous référer à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 ## Fragments de contenu et règles de traduction {#content-fragments}
 
@@ -125,11 +125,11 @@ Le fichier `translation_rules.xml` est constitué d’un élément `nodelist` ay
 
 ```xml
 <nodelist>
-     <node path="/content”>
+     <node path="/content">
            <property name="text" />
      </node>
-     <node path=“/content/mysite/en”>
-          <property name=“text” translate=“false" />
+     <node path="/content/mysite/en">
+          <property name="text" translate="false" />
      </node>
 <nodelist>
 ```
@@ -142,7 +142,7 @@ Par exemple, les règles suivantes entraînent la traduction de tout le contenu 
 
 ```xml
 <nodelist>
-    <node path="/content”>
+    <node path="/content">
      <filter>
    <node containsProperty="draft" propertyValue="true" />
      </filter>
@@ -163,7 +163,7 @@ Pour y accéder, procédez comme suit :
 
 Dans l’interface utilisateur des règles de traduction, vous pouvez effectuer les opérations suivantes :
 
-1. **Ajouter du contexte**, qui permet d’ajouter un chemin d’accès.
+1. **Ajouter un contexte**, qui vous permet d’ajouter un chemin.
 
    ![Ajouter le contexte de traduction](../assets/add-translation-context.png)
 
@@ -186,7 +186,7 @@ Vous pouvez modifier quatre attributs via l’interface utilisateur :
 
 **`isDeep`** s’applique sur les filtres de nœud et a la valeur true par défaut. Il vérifie si le nœud (ou ses ancêtres) contient cette propriété avec la valeur de propriété spécifiée dans le filtre. Si la valeur est false, il vérifie uniquement le noeud actif.
 
-Par exemple, les nœuds enfants sont ajoutés à une tâche de traduction même lorsque la propriété `draftOnly` du nœud parent est définie sur true pour marquer le contenu comme étant un brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
+Par exemple, les noeuds enfants sont ajoutés à une tâche de traduction même lorsque le noeud parent possède la propriété . `draftOnly` définissez cette variable sur true pour marquer le contenu du brouillon. `isDeep` entre ici en jeu et vérifie si les nœuds parents disposent de la propriété `draftOnly` définie sur true et exclut ces nœuds enfants.
 
 Dans l’éditeur, vous pouvez cocher/désélectionner **ls Deep** dans l’onglet **Filtres**.
 

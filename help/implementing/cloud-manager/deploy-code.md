@@ -2,10 +2,10 @@
 title: Déploiement de votre code
 description: Découvrez comment déployer votre code à l’aide des pipelines de Cloud Manager dans AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: 63e38485e2f15c6947c7fba1848d47eda4cc900e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1221'
-ht-degree: 100%
+source-wordcount: '1215'
+ht-degree: 94%
 
 ---
 
@@ -82,7 +82,7 @@ La phase de **test d’évaluation** comprend ces étapes.
 * **Contrôle de l’expérience** - Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécuteront les contrôles.
    * Les pages configurées sont envoyées au service et évaluées.
    * Les résultats sont informatifs et affichent les scores et le changement entre les scores actuels et précédents.
-   * Ces informations sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
+   * Ces informations sont utiles pour déterminer si une régression est introduite avec le déploiement actuel.
    * Pour plus d’informations, consultez la section [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 ![Test dans l’environnement d’évaluation](assets/stage-testing.png)
@@ -149,7 +149,7 @@ Restrictions :
 
 ### Identification d’une exécution de type réexécution
 
-Pour déterminer si une exécution est une réexécution, vous pouvez examiner le champ déclencheur. Sa valeur sera alors *RE_EXECUTE*.
+Pour déterminer si une exécution est une réexécution, vous pouvez examiner le champ déclencheur. Sa valeur est *RE_EXECUTE*.
 
 ### Déclenchement d’une nouvelle exécution
 
@@ -193,4 +193,4 @@ Pour déclencher une réexécution, une demande de PUT doit être envoyée au li
 
 La syntaxe de la valeur _href_ du lien HAL ci-dessus n’est pas destinée à être utilisée comme point de référence. La valeur réelle doit toujours être lue à partir du lien HAL, et non générée.
 
-L’envoi d’une requête *PUT* vers ce point d’entrée entraîne la génération d’une réponse *201* en cas de réussite, le corps de la réponse est la représentation de la nouvelle exécution. Cela revient à lancer une exécution régulière via l’API.
+Envoi d’un *PUT* une requête vers ce point de terminaison entraîne une *201* en cas de réussite, et le corps de la réponse est la représentation de la nouvelle exécution. Cela revient à lancer une exécution régulière via l’API.

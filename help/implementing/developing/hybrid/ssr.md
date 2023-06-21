@@ -2,10 +2,10 @@
 title: SPA et rendu côté serveur
 description: L’utilisation du rendu côté serveur dans votre SPA peut accélérer le chargement initial de la page, puis transmettre plus de rendu au client.
 exl-id: be409559-c7ce-4bc2-87cf-77132d7c2da1
-source-git-commit: a9eb03d4db478a4db8e6d2436bd06dcde70a3eeb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 100%
+source-wordcount: '1498'
+ht-degree: 87%
 
 ---
 
@@ -59,7 +59,7 @@ Cela s’effectue via le **service RemoteContentRenderer – Configuration d’u
 
 Les champs suivants sont disponibles pour la configuration :
 
-* **Modèle de chemin d’accès au contenu** : expression régulière afin de faire correspondre une partie du contenu, si nécessaire
+* **Modèle de chemin d’accès au contenu** - Expression régulière pour faire correspondre une partie du contenu, si nécessaire
 * **URL du point d’entrée distant** : URL du point d’entrée responsable de la génération du contenu
    * Utilisez le protocole HTTPS sécurisé si ce point d’entrée ne figure pas sur le réseau local.
 * **En-têtes de requête supplémentaires** : en-têtes supplémentaires à ajouter à la requête envoyée au point d’entrée distant
@@ -72,7 +72,7 @@ Les champs suivants sont disponibles pour la configuration :
 
 >[!NOTE]
 >
->Cette configuration exploite le [moteur de rendu de contenu distant](#remote-content-renderer), qui offre des options d’extension et de personnalisation supplémentaires.
+>Cette configuration utilise la variable [Moteur de rendu de contenu distant,](#remote-content-renderer) qui propose des options d’extension et de personnalisation supplémentaires.
 
 ## Flux de communication piloté par AEM {#aem-driven-communication-flow}
 
@@ -130,15 +130,15 @@ Les deux modèles sont valides et pris en charge par AEM. Toutefois, il faut ten
 
 ## Planification du rendu côté serveur {#planning-for-ssr}
 
-En règle générale, seule une partie d’une application doit être rendue côté serveur. L’exemple courant réside dans le contenu allant s’afficher au-dessus du pli lors du chargement initial de la page rendue côté serveur. Cela permet de gagner du temps en diffusant vers le contenu déjà rendu du client. Lorsque l’utilisateur interagit avec la SPA, le contenu supplémentaire est rendu par le client.
+En règle générale, seule une partie d’une application doit être rendue côté serveur. L’exemple courant est le contenu affiché au-dessus du pli lors du chargement initial de la page rendu côté serveur. Cela permet de gagner du temps en diffusant vers le contenu déjà rendu du client. Lorsque l’utilisateur interagit avec la SPA, le contenu supplémentaire est rendu par le client.
 
-Lorsque vous envisagez d’implémenter le rendu côté serveur pour votre SPA, vous devez établir pour quelles parties de l’application ce rendu sera nécessaire.
+Lorsque vous envisagez d’implémenter le rendu côté serveur pour votre SPA, vous devez examiner les parties de l’application qui sont nécessaires.
 
 ## Développement d’une SPA avec le rendu côté serveur {#developing-an-spa-using-ssr}
 
-Les composants SPA peuvent être rendus par le client (dans le navigateur) ou côté serveur. Lorsqu’ils sont rendus côté serveur, les propriétés du navigateur telles que la taille de fenêtre et l’emplacement ne sont pas présentes. Par conséquent, les composants SPA doivent être isomorphes, sans présumer de l’emplacement où ils seront rendus.
+Les composants SPA peuvent être rendus par le client (dans le navigateur) ou côté serveur. Lorsqu’ils sont rendus côté serveur, les propriétés du navigateur telles que la taille de fenêtre et l’emplacement ne sont pas présentes. Par conséquent, SPA composants doivent être isomorphes, sans présumer de l’emplacement de leur rendu.
 
-Pour tirer parti du rendu côté serveur, vous devez déployer votre code dans AEM et dans Adobe I/O Runtime, qui est responsable du rendu côté serveur. Le code sera majoritairement identique, mais les tâches spécifiques au serveur différeront.
+Pour utiliser le rendu côté serveur, vous devez déployer votre code dans AEM et sur Adobe I/O Runtime, qui est responsable du rendu côté serveur. La plupart du code est identique, mais les tâches spécifiques au serveur diffèrent.
 
 ## Rendu côté serveur pour les SPA dans AEM {#ssr-for-spas-in-aem}
 
@@ -160,7 +160,7 @@ Ce service est utilisé en interne par le servlet [RemoteContentRendererRequestH
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
-Le servlet `RemoteContentRendererRequestHandlerServlet` peut être utilisé pour définir la configuration de la requête par programmation. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implémentation du gestionnaire de requêtes par défaut fournie, vous permet de créer plusieurs configurations OSGi afin de mapper un emplacement dans la structure de contenu à un point d’entrée distant.
+Le servlet `RemoteContentRendererRequestHandlerServlet` peut être utilisé pour définir la configuration de la requête par programmation. `DefaultRemoteContentRendererRequestHandlerImpl`, l’implémentation du gestionnaire de requêtes par défaut fournie, vous permet de créer plusieurs configurations OSGi afin que vous puissiez mapper un emplacement de la structure de contenu à un point de terminaison distant.
 
 Pour ajouter un gestionnaire de requêtes personnalisé, implémentez l’interface de `RemoteContentRendererRequestHandler`. Veillez à définir la propriété du composant `Constants.SERVICE_RANKING` sur un nombre entier supérieur à 100, qui correspond au classement du servlet `DefaultRemoteContentRendererRequestHandlerImpl`.
 
@@ -194,4 +194,4 @@ En général, le modèle HTL d’un composant de page est le principal destinata
 
 ### Conditions requises {#requirements}
 
-Les servlets tirent parti de l’exportateur de modèle Sling pour sérialiser les données du composant. Par défaut, les composants `com.adobe.cq.export.json.ContainerExporter` et `com.adobe.cq.export.json.ComponentExporter` sont pris en charge en tant qu’adaptateurs de modèle Sling. Si nécessaire, vous pouvez ajouter des classes auxquelles la requête doit être adaptée à l’aide du composant `RemoteContentRendererServlet` et en mettant le composant `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses` en œuvre. Les classes supplémentaires doivent étendre le composant `ComponentExporter`.
+Les servlets utilisent l’exportateur de modèle Sling pour sérialiser les données de composant. Par défaut, les composants `com.adobe.cq.export.json.ContainerExporter` et `com.adobe.cq.export.json.ComponentExporter` sont pris en charge en tant qu’adaptateurs de modèle Sling. Si nécessaire, vous pouvez ajouter des classes auxquelles la requête doit être adaptée à l’aide du composant `RemoteContentRendererServlet` et en mettant le composant `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses` en œuvre. Les classes supplémentaires doivent étendre le composant `ComponentExporter`.

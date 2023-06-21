@@ -2,10 +2,10 @@
 title: Vérification du statut du nom de domaine
 description: Découvrez comment déterminer si Cloud Manager a vérifié votre nom de domaine personnalisé avec succès.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: 357c1b9c29b3a79ee7322f7f2176b6ae41fc9c2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 100%
+source-wordcount: '662'
+ht-degree: 93%
 
 ---
 
@@ -82,7 +82,7 @@ L’erreur est résolue comme suit :
 
 ## Configurations de réseau CDN préexistantes pour les noms de domaine personnalisés {#pre-existing-cdn}
 
-Si vous disposez d’une configuration de réseau CDN préexistante pour vos noms de domaine personnalisés, un message d’information s’affichera dans les pages **Noms de domaine personnalisés** et **Environnement**, vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
+Si vous disposez d’une configuration CDN préexistante pour vos noms de domaine personnalisés, un message d’information s’affiche sur la variable **Noms de domaine personnalisés** et **Environnement** pages, vous encourageant à ajouter ces configurations via l’interface utilisateur afin qu’elles soient visibles et configurables dans Cloud Manager.
 
 Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 

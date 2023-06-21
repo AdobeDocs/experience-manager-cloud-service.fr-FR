@@ -2,10 +2,10 @@
 title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1811'
-ht-degree: 80%
+source-wordcount: '1808'
+ht-degree: 77%
 
 ---
 
@@ -32,13 +32,13 @@ Les fragments de contenu individuels sont basés sur des modèles de fragment de
 * Les modèles sont composés de types de données.
 * Les fonctions pour ajouter des variations, etc., doivent mettre à jour le fragment en conséquence.
 
-   >[!NOTE]
-   >
-   >Pour que vous puissiez afficher/restituer un fragment de contenu, votre compte doit disposer d’autorisations de lecture (`read`) pour le modèle.
+  >[!NOTE]
+  >
+  >Pour que vous puissiez afficher/restituer un fragment de contenu, votre compte doit disposer d’autorisations de lecture (`read`) pour le modèle.
 
-   >[!CAUTION]
-   >
-   >Toutes les modifications apportées à un modèle de fragment de contenu existant peuvent impacter les fragments dépendants, ce qui peut engendrer des propriétés orphelines dans ces fragments.
+  >[!CAUTION]
+  >
+  >Toutes les modifications apportées à un modèle de fragment de contenu existant peuvent impacter les fragments dépendants, ce qui peut engendrer des propriétés orphelines dans ces fragments.
 
 ### Intégration de Sites à Assets {#integration-of-sites-with-assets}
 
@@ -61,7 +61,7 @@ Les fragments de contenu, basés sur un modèle de fragment de contenu, sont map
 * L’ensemble du contenu est stocké sous le nœud `jcr:content/data` de la ressource :
 
    * Les données d’éléments sont stockées sous le sous-nœud maître :
-      `jcr:content/data/master`
+     `jcr:content/data/master`
 
    * Les variations sont stockées sous un sous-nœud portant le nom de la variation :
 par exemple, `jcr:content/data/myvariation`.
@@ -70,8 +70,7 @@ par exemple, `jcr:content/data/myvariation`.
 par exemple, le contenu de l’élément `text` est stocké en tant que propriété `text` sur `jcr:content/data/master`.
 
 * Les métadonnées et le contenu associé sont stockés sous `jcr:content/metadata`
-Hormis le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur 
-`jcr:content`
+Hormis le titre et la description, qui ne sont pas considérés comme des métadonnées traditionnelles et sont stockés sur `jcr:content`.
 
 #### Emplacement des ressources {#asset-location}
 
@@ -123,7 +122,7 @@ Les fragments de contenu peuvent être référencés à partir des pages d’AEM
 >
 >Lorsqu’un fragment de contenu est utilisé sur une page, le modèle de fragment de contenu sur lequel il est basé est référencé.
 >
->Cela signifie que si le modèle n’a pas été publié lorsque vous publiez la page, celui-ci est marqué et le modèle ajouté aux ressources à publier avec la page.
+>Cela signifie que si le modèle n’a pas été publié au moment de la publication de la page, il est marqué et le modèle est ajouté aux ressources à publier avec la page.
 
 ### Intégration à d’autres structures {#integration-with-other-frameworks}
 
@@ -131,24 +130,25 @@ Les fragments de contenu peuvent être intégrés avec :
 
 * **Des traductions**
 
-   Les fragments de contenu sont entièrement intégrés au [workflow de traduction AEM](/help/sites-cloud/administering/translation/overview.md). Au niveau architectural, cela signifie :
+  Les fragments de contenu sont entièrement intégrés au [workflow de traduction AEM](/help/sites-cloud/administering/translation/overview.md). Au niveau architectural, cela signifie :
 
    * Les traductions individuelles d’un fragment de contenu sont en fait des fragments distincts ; par exemple :
 
       * elles sont situées sous des racines de langue différentes, mais partagent exactement le même chemin relatif sous la racine de langue appropriée :
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         ou
+        ou
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
+
    * Outre les chemins basés sur des règles, il n’existe aucune connexion entre les différentes versions linguistiques d’un fragment de contenu ; elles sont traitées comme deux fragments distincts, bien que l’IU fournisse les moyens de naviguer entre les variantes de langues.
-   >[!NOTE]
-   >
-   >Le workflow de traduction AEM fonctionne avec `/content` :
-   >
-   >* Les modèles de fragment de contenu résidant dans `/conf` ; ils ne sont pas inclus dans ces traductions. Vous pouvez internationaliser les chaînes de l’IU.
 
+  >[!NOTE]
+  >
+  >Le workflow de traduction AEM fonctionne avec `/content` :
+  >
+  >* Les modèles de fragment de contenu résidant dans `/conf` ; ils ne sont pas inclus dans ces traductions. Vous pouvez internationaliser les chaînes de l’IU.
 
 * **Des schémas de métadonnées**
 
@@ -156,9 +156,9 @@ Les fragments de contenu peuvent être intégrés avec :
 
    * CFM fournit son propre schéma spécifique :
 
-      `/libs/dam/content/schemaeditors/forms/contentfragment`
+     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      il peut être étendu si nécessaire.
+     il peut être étendu si nécessaire.
 
    * Le formulaire de schéma respectif est intégré à l’éditeur de fragments.
 
@@ -178,9 +178,9 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
 
 * **Fragment de contenu** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-   Cette interface vous permet d’utiliser un fragment de contenu de façon abstraite.
+  Cette interface vous permet d’utiliser un fragment de contenu de façon abstraite.
 
-   L’interface permet les actions suivantes :
+  L’interface permet les actions suivantes :
 
    * Gestion des informations de base (par exemple, obtenir le nom ou obtenir/définir le titre/la description)
    * Accès aux métadonnées
@@ -191,6 +191,7 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
       * Création des éléments (voir [Restrictions](#caveats))
 
       * Accès aux données des éléments (voir `ContentElement`)
+
    * Variations de liste définies pour le fragment
    * Création de variations globalement
    * Gérer le contenu associé :
@@ -198,9 +199,10 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
       * Lister des collections
       * Ajout de collections
       * Suppression de collections
+
    * Accès au modèle du fragment
 
-   Les interfaces qui représentent les éléments principaux d’un fragment sont les suivantes :
+  Les interfaces qui représentent les éléments principaux d’un fragment sont les suivantes :
 
    * **Élément de contenu** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
@@ -213,24 +215,20 @@ Les trois interfaces suivantes peuvent faire office de points d’entrée :
          * Création de variations (voir [Avertissements](#caveats))
          * Suppression de variations (voir [Restrictions](#caveats))
          * Accès aux données de variation (voir `ContentVariation`)
+
       * Raccourci pour résoudre les variations (application d’une logique de secours supplémentaire spécifique à l’implémentation si la variation spécifiée n’est pas disponible pour un élément)
+
    * **Variation de contenu** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Obtention des informations de base (nom, titre et description)
       * Obtenir/définir du contenu
       * Synchronisation simple, basée sur les informations de dernière modification
 
-   Chacune des trois interfaces (`ContentFragment`, `ContentElement` et `ContentVariation`) étend l’interface `Versionable`, ce qui ajoute des fonctionnalités de contrôle de version, requises pour les fragments de contenu :
+  Chacune des trois interfaces (`ContentFragment`, `ContentElement` et `ContentVariation`) étend l’interface `Versionable`, ce qui ajoute des fonctionnalités de contrôle de version, requises pour les fragments de contenu :
 
    * Création d’une version de l’élément
    * Liste des versions de l’élément
    * Obtention du contenu d’une version spécifique de l’élément versionné
-
-
-
-
-
-
 
 ### Adaptation – utilisation d’adaptTo() {#adapting-using-adaptto}
 
@@ -260,7 +258,7 @@ Il convient de noter les éléments suivants :
 
 * Tâches pouvant nécessiter un effort supplémentaire :
 
-   * Il est fortement recommandé de créer des variations à partir de `ContentFragment`. Cela permet de s’assurer que tous les éléments partagent cette variation et que les structures de données globales appropriées seront mises à jour si nécessaire afin de refléter la variation nouvellement créée dans la structure de contenu.
+   * Il est fortement recommandé de créer des variations à partir de `ContentFragment`. Cela permet de s’assurer que tous les éléments partagent cette variation et que les structures de données globales appropriées sont mises à jour si nécessaire afin de refléter la variation nouvellement créée dans la structure de contenu.
 
    * La suppression de variations existantes par l’intermédiaire d’un élément, à l’aide de `ContentElement.removeVariation()`, ne mettra pas à jour les structures de données globales affectées à la variation. Pour garantir le maintien de la synchronisation de ces structures, utilisez plutôt `ContentFragment.removeVariation()`, ce qui supprime globalement une variation.
 
@@ -276,7 +274,7 @@ Reportez-vous aux informations suivantes :
 
 * `filter.xml`
 
-   Le fichier `filter.xml` pour la gestion des fragments de contenu est configuré pour ne pas chevaucher le package de contenu de base d’Assets.
+  Le fichier `filter.xml` pour la gestion des fragments de contenu est configuré pour ne pas chevaucher le package de contenu de base d’Assets.
 
 ## Sessions de modification {#edit-sessions}
 

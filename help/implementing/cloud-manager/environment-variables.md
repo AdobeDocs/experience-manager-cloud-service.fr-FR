@@ -2,10 +2,10 @@
 title: Variables d’environnement Cloud Manager
 description: Les variables d’environnement standard peuvent être configurées et gérées via Cloud Manager. Elle sont fournies à l’environnement d’exécution, pour une utilisation dans la configuration OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: 774a27e78abf091d96978911deea945ac35b7a44
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1021'
-ht-degree: 100%
+source-wordcount: '1016'
+ht-degree: 96%
 
 ---
 
@@ -34,7 +34,7 @@ Les cas d’utilisation les plus courants des variables d’environnement inclue
 
 >[!NOTE]
 >
->Vous devez être membre du rôle [**Responsable de déploiement**](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) afin d’ajouter ou de modifier des variables d’environnement.
+>Vous devez être membre du [**Responsable de déploiement** rôle](/help/onboarding/cloud-manager-introduction.md#role-based-premissions) pour ajouter ou modifier des variables d’environnement.
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 1. Cloud Manager répertorie les différents programmes disponibles. Sélectionnez celui que vous souhaitez gérer.
@@ -59,7 +59,7 @@ Les cas d’utilisation les plus courants des variables d’environnement inclue
 
 1. Sélectionnez **Enregistrer** pour conserver vos variables.
 
-Un indicateur avec le statut **Mise à jour en cours** s’affiche en haut du tableau et en regard de la variable nouvellement ajoutée pour indiquer que l’environnement est en cours de mise à jour avec la configuration. Une fois cette opération terminée, la nouvelle variable d’environnement est visible dans le tableau.
+Un indicateur avec le statut **Mise à jour en cours** s’affiche en haut du tableau et en regard de la variable nouvellement ajoutée pour indiquer que l’environnement est en cours de mise à jour avec la configuration. Une fois l’opération terminée, la nouvelle variable d’environnement est visible dans le tableau.
 
 ![Mettre à jour les variables](assets/updating-variables.png)
 
@@ -90,7 +90,7 @@ Une fois les variables d’environnement créées, vous pouvez les mettre à jou
 
 1. Une fois toutes les modifications de configuration requises effectuées, cliquez sur **Enregistrer**.
 
-[Comme lors de l’ajout de variables](#add-variables), un indicateur avec le statut **Mise à jour** sʼaffiche en haut du tableau et en regard de la ou des variables nouvellement mises à jour pour indiquer que l’environnement est mis à jour avec la configuration. Une fois l’opération terminée, la ou les variables d’environnement mises à jour sont visibles dans le tableau.
+[Comme lors de l’ajout de variables](#add-variables), un indicateur avec le statut **Mise à jour** sʼaffiche en haut du tableau et en regard de la ou des variables nouvellement mises à jour pour indiquer que l’environnement est mis à jour avec la configuration. Une fois l’opération terminée, les variables d’environnement mises à jour sont visibles dans le tableau.
 
 >[!TIP]
 >

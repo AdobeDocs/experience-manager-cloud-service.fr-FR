@@ -2,10 +2,10 @@
 title: Utilisation de git avec Cloud Manager
 description: Découvrez comment utiliser les référentiels Git de Cloud Manager et comment intégrer votre propre référentiel Git géré par le client sur site à Cloud Manager.
 exl-id: 57e71b8a-4546-4d7f-825c-a1637d08e608
-source-git-commit: a9303c659730022b7417fc9082dedd26d7cbccca
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '322'
-ht-degree: 50%
+source-wordcount: '316'
+ht-degree: 32%
 
 ---
 
@@ -45,19 +45,19 @@ Dans cette vidéo, découvrez les stratégies d’embranchement de base.
 
 ## Développement des branches de fonctionnalités {#feature-development}
 
-Utilisez une branche de fonctionnalités pour isoler les modifications de code dans un référentiel Git géré par le client et pour vous synchroniser avec le référentiel Git de Cloud Manager afin d’utiliser un pipeline hors production pour les tests de qualité du code et de validation.
+Utilisez une branche de fonctionnalités pour isoler les modifications de code dans un référentiel Git géré par le client et synchroniser avec le référentiel Git de Cloud Manager afin d’utiliser un pipeline hors production pour les tests de qualité et de validation du code.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28723/?quality=12)
 
 ## Déploiement dans l’environnement de production {#production-deployment}
 
-Préparez le code d’une version de production dans un référentiel Git géré par le client et synchronisez-le avec le référentiel Git de Cloud Manager afin de le déployer dans des environnements intermédiaires et de production.
+Préparez le code d’une version de production dans un référentiel Git géré par le client et synchronisez-le avec le référentiel Git de Cloud Manager pour le déploiement dans les environnements intermédiaire et de production.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28724/?quality=12)
 
-## Synchronisation des balises de publication {#sync-tags}
+## Synchronisation des balises de mise à jour {#sync-tags}
 
-Synchronisez les balises de publication d’un référentiel Git Cloud Manager dans un référentiel Git géré par le client afin de fournir une visibilité du code qui a été déployé dans les environnements d’évaluation et de production.
+Synchronisez les balises de publication d’un référentiel Git Cloud Manager dans un référentiel Git géré par le client afin de vous donner une visibilité sur le code qui a été déployé dans les environnements d’évaluation et de production.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28725/?quality=12)
 

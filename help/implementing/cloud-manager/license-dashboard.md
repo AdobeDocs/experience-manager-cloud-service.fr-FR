@@ -2,10 +2,10 @@
 title: Tableau de bord des licences
 description: Cloud Manager fournit un tableau de bord pour un affichage convivial des produits AEMaaCS disponibles pour votre entreprise ou vos clients.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: d5e0ca924dee50d7dd4f9057010b1a39780b4352
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 97%
 
 ---
 
@@ -79,7 +79,7 @@ Les requêtes de contenu présentent des écarts avec les outils de création de
 | Suites de rapports | Les pages qui font partie d’une même instance AEM et d’un même domaine peuvent envoyer des données à différentes suites de rapports Analytics. |
 | Outils de surveillance et de sécurité tiers | Les outils de surveillance et d’analyse de sécurité peuvent générer des demandes de contenu pour AEM qui ne sont pas suivies dans les rapports Analytics. |
 | Pré-récupérer des demandes | L’utilisation d’un service de pré-récupération pour précharger les pages afin d’augmenter la vitesse peut entraîner une augmentation significative du trafic de demandes de contenu. |
-| DDOS | Bien qu’Adobe fasse tout son possible pour détecter et filtrer automatiquement le trafic provenant des attaques DDOS, il n’existe aucune garantie que toutes les attaques DDOS possibles seront détectées |
+| DDOS | Bien que Adobe fasse tout son possible pour détecter et filtrer automatiquement le trafic des attaques DDOS, il n’est pas garanti que toutes les attaques DDOS possibles soient détectées. |
 | Bloqueurs de trafic | L’utilisation d’un bloqueur de suivi dans un navigateur peut exclure certaines requêtes du suivi. |
 | Pare-feux | Les pare-feu peuvent bloquer le suivi Analytics. Cela est plus fréquent avec les pare-feu d’entreprise. |
 

@@ -2,10 +2,10 @@
 title: Présentation de Cloud Manager
 description: Découvrez comment Cloud Manager prend en charge votre projet AEM par le biais de ses programmes, environnements et pipelines.
 exl-id: b743f126-b34e-4f48-a3f0-5dbd4e1ac34e
-source-git-commit: 33d587baba27ad54b1c9e34a36fadbd1dc56e3f5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 100%
+source-wordcount: '851'
+ht-degree: 98%
 
 ---
 
@@ -75,7 +75,7 @@ Un utilisateur peut créer un programme **Sandbox** ou de **Production**.
 
 ## Environnements Cloud Manager {#cloud-manager-environments}
 
-Vos environnements cloud seront créés, accessibles et visualisés via Cloud Manager. Ces environnements peuvent être des environnements de production, d’évaluation ou de développement. Les différents environnements prennent en charge différents objectifs et peuvent être utilisés à l’aide de différents pipelines CI/CD. Les environnements sont composés de services tels que :
+Vos environnements cloud sont créés, accessibles et affichés via Cloud Manager. Ces environnements peuvent être des environnements de production, d’évaluation ou de développement. Les différents environnements prennent en charge différents objectifs et peuvent être utilisés à l’aide de différents pipelines CI/CD. Les environnements sont composés de services tels que :
 
 * [Services de création AEM](#author-services)
 * [Services de publication AEM](#publish-services)

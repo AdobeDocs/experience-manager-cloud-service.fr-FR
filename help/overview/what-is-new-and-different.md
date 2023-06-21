@@ -2,10 +2,10 @@
 title: Nouveautés et différences – Adobe Experience Manager as a Cloud Service
 description: Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: 6c06df453a2c9116889c25b1d1198df2dbf26f88
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1903'
-ht-degree: 100%
+source-wordcount: '1899'
+ht-degree: 97%
 
 ---
 
@@ -192,7 +192,7 @@ En raison de la séparation stricte du code et du contenu, les développeurs peu
 
 ### Développement local {#aem-as-a-cloud-service-developing-local-development}
 
-Pour assurer la rapidité des itérations et du développement, il est également possible de développer des applications AEM en dehors du contexte AEM as a Cloud Service. À cette fin, les artefacts suivants sont mis à la disposition des développeurs :
+Pour permettre des itérations et un développement rapides, il est également possible de développer des applications AEM en dehors du contexte as a Cloud Service. À cette fin, les artefacts suivants sont mis à la disposition des développeurs :
 
 * QuickStart AEM as a Cloud Service : programme d’installation autonome basé sur `.jar`, correspondant à la base de code la plus récente d’AEM, avec les mêmes capacités fonctionnelles et API.
 
@@ -242,7 +242,7 @@ Cela a pour effet de combiner les avantages suivants :
 >
 >Pour plus de détails, la section [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) est un bon point de départ.
 
-Les principes de base de l’interface utilisateur de création, tant pour Sites que pour Assets, seront très familiers pour toute personne ayant utilisé AEM dans le passé.
+Les principes de base de l’interface utilisateur (IU) de création, pour Sites et Assets, sont très familiers pour toute personne qui a déjà utilisé AEM dans le passé.
 
 La principale différence réside dans le fait que l’interface utilisateur est exclusivement tactile ; la version classique n’est plus disponible. Les fondamentaux restent par ailleurs inchangés, avec seulement quelques changements mineurs visibles.
 

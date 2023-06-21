@@ -2,10 +2,10 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: 28ed228d02e09f273fa8713bad0f7194e1e25cf0
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3090'
-ht-degree: 98%
+source-wordcount: '3087'
+ht-degree: 94%
 
 ---
 
@@ -91,9 +91,9 @@ Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du
 
 AEM prend en charge les modèles Découplé et Pile complète traditionnelle d’un CMS. Cependant, AEM offre non seulement ces deux choix exclusifs, mais aussi la possibilité de prendre en charge des modèles hybrides conjuguant les avantages de l’un et de l’autre, offrant ainsi une flexibilité inégalée pour votre projet découplé.
 
-Pour vous assurer de bien comprendre le concept de découplage, ce parcours de développement découplé AEM se concentre sur le modèle purement découplé, ce qui vous permettra d’être opérationnel le plus rapidement possible sans codage dans AEM.
+Pour vous assurer de votre compréhension des concepts sans interface utilisateur, ce Parcours de développement AEM sans interface se concentre sur le modèle sans interface utilisateur pur pour vous permettre de vous lancer le plus rapidement possible sans programmation dans AEM.
 
-Toutefois, vous devez tenir compte des possibilités hybrides supplémentaires qui s’offrent à vous une fois que vous avez compris les fonctionnalités d’AEM découplé. Ces cas sont présentés ci-dessous pour que vous puissiez en prendre connaissance. À la fin du parcours, vous découvrirez plus en détail ces concepts si cette flexibilité est nécessaire pour votre projet.
+Toutefois, vous devez tenir compte des possibilités hybrides supplémentaires qui s’offrent à vous une fois que vous avez compris les fonctionnalités d’AEM découplé. Ces cas sont présentés ci-dessous pour que vous puissiez en prendre connaissance. À la fin du parcours, vous découvrirez ces concepts plus en détail au cas où une telle flexibilité serait requise pour votre projet.
 
 ### Vous utilisez déjà de manière externe des contenus découplés, par exemple avec les applications monopage (SPA). {#already-have-a-spa}
 
@@ -145,7 +145,7 @@ Pour la réussite d’un projet, il est important de définir clairement non seu
 
 Il est très important de définir clairement la portée du projet. La portée définit les critères d’acceptation et permet d’établir une définition de l’état « terminé ».
 
-La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM découplé ? » En général, la réponse devrait indiquer que vous disposez ou disposerez d’une application d’expérience créée avec vos propres outils de développement, et avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
+La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM découplé ? » La réponse doit généralement être que vous disposez ou aurez à l’avenir une application d’expérience que vous avez créée avec vos propres outils de développement et non avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
 
 ### Rôles et responsabilités {#roles-responsibilities}
 
@@ -179,9 +179,9 @@ Créez un plan pour la traduction de contenu dont vous avez besoin.
 * Avez-vous besoin de différentes langues ou d’adapter une langue à différentes spécificités régionales ?
 * Avez-vous besoin que les contenus multimédias enrichis comme les images ou les vidéos soient différents selon les paramètres régionaux ?
 
-Clarifiez la situation concernant votre workflow de mise à jour de contenu. Quel est le processus d’approbation que le système doit prendre en charge ? Est-il possible d’utiliser des workflows AEM pour automatiser ce processus ?
+Clarifiez la situation concernant votre workflow de mise à jour de contenu. Quel est le processus d’approbation que le système doit prendre en charge ? AEM workflows peuvent-ils être utilisés pour automatiser ce processus ?
 
-Notez qu’il est possible d’utiliser votre [hiérarchie de contenu](#content-hierarchy) pour faciliter la traduction.
+Notez que votre [hiérarchie du contenu](#content-hierarchy) peut être utilisé pour faciliter la traduction.
 
 Consultez la section des [ressources supplémentaires](#additional-resources) pour obtenir de la documentation supplémentaire sur les workflows AEM et les outils de traduction, y compris des liens vers le parcours de traduction découplée AEM.
 
@@ -199,7 +199,7 @@ Les dossiers peuvent également être limités de manière à n’autoriser que 
 * Empêche les auteurs de créer du contenu n’appartenant pas au dossier.
 * Optimise le processus de création de contenu en filtrant les types de contenu autorisés dans le dossier au cours de la création pour n’afficher que les types de contenu valides.
 
-En créant une structure de contenu appropriée, il devient plus facile de coordonner la création de contenus découplés sur plusieurs canaux afin d’optimiser la réutilisation de ces contenus. L’utilisation du contenu sur plusieurs canaux améliore considérablement l’efficacité de la production et la gestion des modifications.
+En créant une structure de contenu appropriée, il devient plus facile de coordonner la création de contenu headless sur plusieurs canaux afin de maximiser la réutilisation du contenu. L’utilisation du contenu sur plusieurs canaux améliore considérablement l’efficacité de la production et la gestion des modifications.
 
 ##### Définir de bonnes conventions d’affectation de noms {#naming-conventions}
 

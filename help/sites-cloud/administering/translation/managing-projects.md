@@ -4,10 +4,10 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: d3194e646b326009dc204838ac74fc880952f286
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4086'
-ht-degree: 91%
+source-wordcount: '4085'
+ht-degree: 89%
 
 ---
 
@@ -17,7 +17,7 @@ Les projets de traduction permettent de gérer la traduction du contenu d’AEM.
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites](/help/journey-sites/translation/overview.md), qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous êtes un débutant dans la traduction de contenu, veuillez vous référer à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 Lorsque des ressources sont ajoutées à un projet de traduction, une tâche de traduction est créée pour ces ressources. Les tâches comportent les commandes et les informations sur le statut utilisées pour gérer les workflows de traduction humaine et automatique exécutés sur les ressources.
 
@@ -374,7 +374,7 @@ Vous pouvez également débuter toutes les tâches de traduction d’un projet.
 
 1. Dans la console Projets, sélectionnez le projet de traduction.
 1. Dans la barre d’outils, appuyez ou cliquez sur **Démarrage des tâches de traduction**.
-1. Dans la boîte de dialogue, passez en revue la liste des tâches qui seront démarrées, puis confirmez avec **Démarrer** ou abandonnez avec **Annuler**.
+1. Dans la boîte de dialogue, passez en revue la liste des tâches lancées, puis confirmez avec **Début** ou abandonner avec **Annuler**.
 
 ### Annulation d’une tâche de traduction {#canceling-a-translation-job}
 
@@ -390,7 +390,7 @@ Lorsque le contenu revient après traduction et possède le statut **Prêt pour 
 
 Si vous sélectionnez **Rejeter la traduction**, vous avez la possibilité d’ajouter un commentaire.
 
-Le rejet du contenu le renvoie au fournisseur de traduction, qui peut consulter le commentaire.
+Le rejet du contenu le renvoie au fournisseur de traduction où il peut voir le commentaire.
 
 ### Fin et archivage des tâches de traduction {#completing-and-archiving-translation-jobs}
 
@@ -443,8 +443,8 @@ Pour comparer des copies de langue au gabarit de langue :
 
    ![Comparer les copies de langue](../assets/language-copy-compare.png)
 
-1. Les deux pages (lancement et source) s’ouvrent côte à côte.
-   * Pour des informations complètes sur l’utilisation de cette fonction, consultez [Différence entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
+1. Les deux pages (lancement et source) sont ouvertes côte à côte.
+   * Pour des informations complètes sur l’utilisation de cette fonction, consultez la section [Comparaison entre les pages](/help/sites-cloud/authoring/features/page-diff.md).
 
 ## Déplacement ou modification du nom d’une page source {#move-source}
 

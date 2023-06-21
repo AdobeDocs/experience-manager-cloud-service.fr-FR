@@ -2,10 +2,10 @@
 title: Optimisation des requêtes GraphQL.
 description: Découvrez comment optimiser vos requêtes GraphQL lors du filtrage, de la pagination et du tri de vos fragments de contenu dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu découplée.
 exl-id: 67aec373-4e1c-4afb-9c3f-a70e463118de
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
-source-wordcount: '1192'
-ht-degree: 100%
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Il applique un filtre JCR (sous la forme d’une contrainte de requête) avant d
 
 >[!NOTE]
 >
->Pour des raisons techniques (par exemple : flexibilité, imbrication de fragments), AEM ne peut pas déléguer l’intégralité du filtrage à JCR.
+>Pour des raisons techniques (par exemple, flexibilité, imbrication de fragments), AEM ne peut pas déléguer l’intégralité du filtrage à JCR.
 
 Cette technique permet de conserver la flexibilité offerte par les filtres GraphQL, tout en déléguant autant de filtrage que possible à JCR.
 
@@ -49,21 +49,20 @@ Cette technique permet de conserver la flexibilité offerte par les filtres Grap
 GraphQL dans AEM prend en charge deux types de pagination :
 
 * La [pagination basée sur les limites/décalages](/help/headless/graphql-api/content-fragments.md#list-offset-limit).
-Elle est utilisée pour les requêtes de liste qui se terminent par : 
-`List` ; par exemple, `articleList`.
+Elle est utilisée pour les requêtes de liste qui se terminent par : `List` ; par exemple, `articleList`.
 Pour l’utiliser, vous devez indiquer la position du premier élément à renvoyer (le `offset`) et le nombre d’éléments à renvoyer (la variable `limit`, ou la taille de la page).
 
 * La [pagination basée sur le curseur](/help/headless/graphql-api/content-fragments.md#paginated-first-after) (représentée par `first`et `after`).
 Elle fournit un ID unique pour chaque élément ; également appelé curseur.
 Dans la requête, vous spécifiez le curseur du dernier élément de la page précédente, ainsi que la taille de la page (le nombre maximal d’éléments à renvoyer).
 
-   Comme la pagination basée sur le curseur ne s’intègre pas dans les structures de données des requêtes basées sur des listes, AEM a introduit un type de requête `Paginated` ; par exemple : `articlePaginated`. Les structures et paramètres de données utilisés suivent la [Spécification de connexion du curseur GraphQL](https://relay.dev/graphql/connections.htm).
+  Comme la pagination basée sur le curseur ne s’intègre pas dans les structures de données des requêtes basées sur des listes, AEM a introduit un type de requête `Paginated` ; par exemple : `articlePaginated`. Les structures et paramètres de données utilisés suivent la [Spécification de connexion du curseur GraphQL](https://relay.dev/graphql/connections.htm).
 
-   >[!NOTE]
-   >
-   >AEM prend actuellement en charge la pagination (à l’aide des paramètres `after`/`first`).
-   >
-   >La pagination ascendante (à l’aide des paramètres `before`/`last`) n’est pas prise en charge.
+  >[!NOTE]
+  >
+  >AEM prend actuellement en charge la pagination (à l’aide des paramètres `after`/`first`).
+  >
+  >La pagination ascendante (à l’aide des paramètres `before`/`last`) n’est pas prise en charge.
 
 ## Tri {#sorting}
 
@@ -130,7 +129,7 @@ Si vous souhaitez principalement récupérer les premières pages uniquement, il
 
 ### Opérations logiques dans les expressions de filtre {#logical-operations-in-filter-expressions}
 
-Si vous filtrez des fragments imbriqués, vous pouvez tout de même utiliser le filtrage JCR en fournissant un filtre d’accompagnement sur un champ de niveau supérieur combiné avec l’utilisation de l’opérateur `AND`.
+Si vous filtrez des fragments imbriqués, vous pouvez toujours appliquer un filtrage JCR en fournissant un filtre d’accompagnement sur un champ de niveau supérieur combiné à l’aide de la variable `AND` de l’opérateur.
 
 Un cas d’utilisation type consiste à restreindre la portée de la requête à l’aide d’un filtre sur le champ `_path` du fragment de niveau supérieur, puis à filtrer les champs supplémentaires pouvant se trouver au niveau supérieur ou sur un fragment imbriqué.
 

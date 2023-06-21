@@ -3,10 +3,10 @@ title: Parcours du développeur CMS AEM Headless
 description: Découvrez le développement découplé à l’aide d’Adobe Experience Manager (AEM) en tant que CMS découplé. Découvrez comment utiliser des fonctionnalités telles que les modèles de contenu, les fragments de contenu et l’API GraphQL afin d’optimiser la diffusion de contenu découplé.
 landing-page-description: Découvrez la diffusion et la mise en œuvre du contenu découplé. Apprenez-en plus sur le développement de votre stratégie au sein de votre entreprise.
 exl-id: d14a1e30-dd04-49a8-8cda-27c80a4bb0f5
-source-git-commit: e86f28afbd45270a89e43de0d42540ac5dd296cb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1083'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 Bienvenue dans la documentation destinée aux développeurs et développeuses qui découvrent Adobe Experience Manager en tant que CMS découplé !
 
-Découvrez ses fonctionnalités de découplage puissantes et flexibles, leurs capacités et comment les exploiter dans votre premier projet de développement découplé. Ce parcours vous fournit toute les informations dont vous avez besoin pour développer votre première application découplée.
+Découvrez les fonctionnalités puissantes et flexibles sans interface, leurs fonctionnalités et comment les utiliser dans votre premier projet de développement sans interface. Ce parcours vous fournit toute les informations dont vous avez besoin pour développer votre première application découplée.
 
 {{headless-trials-promotion}}
 

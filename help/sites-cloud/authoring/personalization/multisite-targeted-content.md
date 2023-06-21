@@ -2,9 +2,9 @@
 title: Utilisation de contenu ciblé sur plusieurs sites
 description: Si vous devez gérer du contenu ciblé, tel que des activités, des expériences et des offres sur vos différents sites, vous pouvez profiter de la prise en charge de sites multiples intégrée à AEM pour le contenu ciblé
 exl-id: 03d2d640-8de8-4c4c-8a1d-756bb2dc8457
-source-git-commit: 7dd3a658a88cae98732820ab92da0d27d21beb6f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '2893'
+source-wordcount: '2891'
 ht-degree: 45%
 
 ---
@@ -49,7 +49,6 @@ Un site ou une Live Copy est lié à une zone contenant les activités qui doive
 >* Lorsque vous utilisez des déploiements ou des Live Copies, une licence MSM est requise.
 >* Lorsque vous utilisez la synchronisation avec Adobe Target, une licence Adobe Target est requise.
 >
-
 
 ## Scénarios d’utilisation {#use-cases}
 
@@ -164,7 +163,7 @@ Pour créer une zone :
 
 ## Création de zones comme Live Copies {#creating-areas-as-live-copies}
 
-Vous créez une zone comme Live Copy afin d’hériter du contenu ciblé sur l’ensemble des structures du site.
+Vous créez une zone en tant que Live Copy pour hériter du contenu ciblé sur l’ensemble des structures du site.
 
 Pour créer une zone comme Live Copy :
 
@@ -235,7 +234,6 @@ Une activité qui hérite d’un autre site comporte une marque verte en regard 
 >* Vous pouvez uniquement suspendre ou désolidariser des Live Copies dans une activité.
 >* Vous n’avez pas besoin de suspendre ou de désolidariser des Live Copies pour étendre une activité héritée. Vous pouvez toujours créer des **new** expériences et offres locales pour cette activité. Si vous souhaitez modifier une activité existante, vous devez suspendre l’héritage.
 >
-
 
 ### Suspension de l’héritage {#suspending-inheritance}
 

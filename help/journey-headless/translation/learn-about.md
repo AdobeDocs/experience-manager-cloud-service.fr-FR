@@ -2,10 +2,10 @@
 title: En savoir plus sur le contenu découplé et sa traduction dans AEM
 description: Apprenez les concepts du découplage, en quoi ils s’appliquent à AEM et la théorie de la traduction dans AEM.
 exl-id: 72bb6646-e573-4576-8d17-49787d8c8c7f
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '725'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -22,7 +22,7 @@ Ce document vous aide à comprendre la diffusion de contenu découplé, comment 
 
 ## Diffusion de contenu full stack {#full-stack}
 
-Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les entreprises les utilisent comme emplacement central pour la gestion des messages, des marques et de leur communication. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
+Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les entreprises les utilisent comme un emplacement central pour la gestion des messages, des marques et des communications. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
 
 ![CMS full stack classique](/help/journey-headless/developer/assets/full-stack.png)
 

@@ -2,10 +2,10 @@
 title: Introduction et présentation des applications monopage (SPA)
 description: Cet article présente les concepts d’une SPA et décrit l’utilisation d’une SPA élémentaire à des fins de création, indiquant comment cette utilisation est liée à l’éditeur de SPA AEM sous-jacent.
 exl-id: 8dad48d5-fa90-467c-8bec-e4b76e057f80
-source-git-commit: f201e8bf8a44db6b408edec5b77cc814c7e87abb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 98%
+source-wordcount: '2074'
+ht-degree: 93%
 
 ---
 
@@ -42,7 +42,7 @@ La présentation repose sur les fonctionnalités AEM standard et l’exemple d�
 
 >[!TIP]
 >
->Tout projet AEM doit exploiter l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et utilise le SDK SPA.
+>Tout projet AEM doit utiliser la variable [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge SPA projets à l’aide de React ou d’Angular et utilise le SDK SPA.
 
 ### Qu’est-ce qu’une SPA ?  {#what-is-a-spa}
 
@@ -75,7 +75,7 @@ Plus rapide, fluide et ressemblant davantage à une application native, une SPA,
 
 ### Comment fonctionne une SPA ?  {#how-does-a-spa-work}
 
-L’idée principale sous-jacente à une SPA est que les appels à un serveur et la dépendance envers un serveur sont réduits afin de minimiser les retards liés à la latence du serveur, de sorte que la SPA s’approche de la réactivité d’une application native.
+L’idée Principale sous-jacente à une SPA est que les appels à un serveur et sa dépendance à ce dernier sont réduits afin de minimiser les retards causés par la latence du serveur, de sorte que le SPA s’approche de la réactivité d’une application native.
 
 Sur une page web séquentielle traditionnelle, seules les données nécessaires à la page immédiate sont chargées. Cela signifie que lorsque vous passez à une autre page, le serveur est appelé pour que les ressources supplémentaires soient mises à disposition. Des appels supplémentaires peuvent s’avérer nécessaires lorsque le visiteur interagit avec les éléments de la page. Ces appels multiples peuvent donner une impression de retard ou de lenteur, car la page doit rattraper les requêtes du visiteur.
 
@@ -94,10 +94,9 @@ Parce que le rendu est effectué côté client, les éléments de la page réagi
 >Pour observer de plus près la conception, l’architecture et le workflow technique de l’éditeur de SPA, consultez l’article :
 >* [Présentation de l’éditeur de SPA](editor-overview.md).
 
-
 ## Modification de contenu avec une SPA {#content-editing-experience-with-spa}
 
-Lorsqu’une SPA est créée pour exploiter l’éditeur de SPA AEM, le créateur de contenu ne remarque aucune différence lors de la modification et de la création de contenu. Des fonctionnalités AEM communes sont disponibles et aucune modification du workflow du créateur n’est requise.
+Lorsqu’un SPA est créé pour utiliser l’AEM Éditeur, l’auteur du contenu ne remarque aucune différence lors de la modification et de la création de contenu. Des fonctionnalités AEM communes sont disponibles et aucune modification du workflow du créateur n’est requise.
 
 1. Modifiez l’application de projet SPA WKND dans AEM.
 
@@ -188,7 +187,7 @@ La section suivante, [Chargement d’une SPA](#loading-a-spa-application), exami
 
    ![JSON de la page d’accueil du projet SPA WKND](assets/wknd-json.png)
 
-   L’éditeur de SPA AEM exploite [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) pour diffuser l’intégralité du contenu de la page sous la forme d’un modèle JSON.
+   AEM l’éditeur SPA utilise [AEM Content Services](/help/sites-cloud/administering/content-fragments/content-fragments.md) pour diffuser l’intégralité du contenu de la page en tant que modèle JSON.
 
    En implémentant des interfaces spécifiques, les modèles Sling fournissent les informations nécessaires à la SPA. La diffusion des données JSON est déléguée vers le bas à chaque composant (de la page, au paragraphe, au composant, etc.).
 
@@ -242,7 +241,7 @@ Dans la section suivante, nous allons examiner le contrat qui permet à l’édi
 
 ## Couplage et découplage dans AEM {#headful-headless}
 
-Les SPA peuvent être activés avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développés et gérés en dehors d’AEM. De plus, les SPA peuvent être exploités dans AEM tout en utilisant AEM pour diffuser du contenu vers d’autres points d’entrée, et ce, en mode découplé.
+Les SPA peuvent être activés avec différents niveaux d’intégration au sein d’AEM, y compris pour les SPA développés et gérés en dehors d’AEM. En outre, SPA peut être utilisé dans AEM tout en utilisant l’utilisation d’un fichier pour diffuser du contenu vers d’autres points de terminaison sans interface.
 
 >[!TIP]
 >

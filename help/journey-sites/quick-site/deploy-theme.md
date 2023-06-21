@@ -2,10 +2,10 @@
 title: Déploiement de votre thème personnalisé
 description: Découvrez comment déployer le thème du site à l’aide du pipeline.
 exl-id: fe065972-39db-4074-a802-85895c701efd
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1027'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -117,4 +117,4 @@ Vous trouverez ci-dessous quelques ressources supplémentaires qui approfondisse
 * [Parcours d’intégration](/help/journey-onboarding/overview.md) - Ce guide constitue votre point de départ pour vous assurer que vos équipes sont configurées et ont accès à AEM as a Cloud Service.
 * [Documentation d’Adobe Experience Manager Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html?lang=fr) - Consultez la documentation de Cloud Manager pour en savoir plus sur ses fonctionnalités.
 * [Documentation relative à l’administration du site](/help/sites-cloud/administering/site-creation/create-site.md) - Consultez la documentation technique sur la création de site pour plus d’informations sur les fonctionnalités de l’outil de création rapide de site.
-* [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Ce document décrit certaines considérations à prendre en compte pour tirer pleinement parti du processus de développement front-end à l’aide du pipeline front-end.
+* [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) - Ce document décrit certaines considérations à prendre en compte afin que vous puissiez tirer pleinement parti du processus de développement front-end à l’aide du pipeline front-end.

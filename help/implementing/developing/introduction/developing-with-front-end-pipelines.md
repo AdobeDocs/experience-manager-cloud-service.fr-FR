@@ -2,17 +2,17 @@
 title: Développer des sites avec le pipeline front-end
 description: Grâce au pipeline front-end, les développeurs et développeuses front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certains éléments particuliers du processus de création front-end qui doivent être pris en compte.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: a6b228023d7bd2a40e4db3a1d2c3900a5c24031c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 100%
+source-wordcount: '1154'
+ht-degree: 93%
 
 ---
 
 
 # Développer des sites avec le pipeline front-end {#developing-site-with-front-end-pipeline}
 
-[Grâce au pipeline front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit le fonctionnement de ce processus, ainsi que certaines considérations à prendre en compte pour tirer pleinement parti de ce processus.
+[Grâce au pipeline front-end,](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#front-end) les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit le fonctionnement de ce processus, ainsi que certaines considérations à prendre en compte pour vous permettre de tirer pleinement parti de ce processus.
 
 >[!TIP]
 >
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Tout comme l’[environnement de création full-stack,](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) le pipeline front-end possède son propre environnement. Les développeurs et développeuses disposent d’une certaine flexibilité dans ce pipeline tant que le contrat de création front-end suivant est respecté.
 
-Le pipeline front-end requiert le projet front-end Node.js pour utiliser la directive de script `build` afin de générer la version qui sera déployée par le pipeline front-end. C’est-à-dire que Cloud Manager utilise la commande `npm run build` pour générer le projet déployable dans le dossier `dist`.
+Le pipeline front-end requiert le projet front-end Node.js pour utiliser la variable `build` directive de script pour générer la version déployée par le pipeline front-end. C’est-à-dire que Cloud Manager utilise la commande `npm run build` pour générer le projet déployable dans le dossier `dist`.
 
 Le contenu du dossier `dist` est ce qui est finalement déployé vers AEM as a Cloud Service à partir du pipeline Cloud Manager.
 
@@ -68,7 +68,7 @@ Les étapes suivantes sont généralement recommandées lorsqu’il est nécessa
    1. Comme d’habitude, à développer localement :
       1. La commande `npx aem-site-theme-builder proxy` exécutée dans le module front-end démarre un serveur proxy permettant de demander le contenu d’un environnement AEM, tout en remplaçant les fichiers CSS et JS du module front-end par ceux du dossier local `dist`.
       1. La configuration de la variable `AEM_URL` dans le fichier caché `.env` permet de contrôler à partir de quel environnement AEM le serveur proxy local consomme le contenu.
-      1. La modification de la valeur de ce `AEM_URL` permet donc de basculer entre les environnements de production et de développement afin d’ajuster les CSS et JS de sorte qu’ils s’adaptent aux deux environnements.
+      1. Modifier la valeur de ceci `AEM_URL` vous permet donc de basculer entre les environnements de production et de développement pour ajuster le CSS et JS afin qu’il s’adapte aux deux environnements.
       1. Il doit fonctionner à la fois avec l’environnement de développement qui effectue le rendu de la nouvelle sortie ainsi qu’avec l’environnement de production qui effectue le rendu de l’ancienne sortie.
    1. Le travail front-end est terminé lorsque le module front-end mis à jour fonctionne pour les deux environnements et est déployé sur les deux.
 1. L’équipe back-end peut ensuite mettre à jour l’environnement de production en déployant le code qui effectue le rendu de la nouvelle sortie HTML et/ou JSON via le pipeline de pile complète.

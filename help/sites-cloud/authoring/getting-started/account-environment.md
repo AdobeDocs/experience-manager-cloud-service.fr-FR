@@ -2,9 +2,9 @@
 title: Configuration de votre environnement de compte
 description: AEM vous dote des outils nécessaires pour configurer votre compte ainsi que certains aspects de l’environnement de création.
 exl-id: 1b948f0b-85b9-478a-8b7e-61495c1d57b6
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '488'
 ht-degree: 73%
 
 ---
@@ -40,36 +40,36 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Langue**
 
-   Cette option définit la langue à utiliser pour l’interface utilisateur de l’environnement de création. Sélectionnez la langue souhaitée dans la liste disponible.
+  Cette option définit la langue à utiliser pour l’interface utilisateur de l’environnement de création. Sélectionnez la langue souhaitée dans la liste disponible.
 
 * **Gestion des fenêtres**
 
-   Cela définit le comportement ou l’ouverture des fenêtres. Vous avez le choix entre :
+  Cela définit le comportement ou l’ouverture des fenêtres. Vous avez le choix entre :
 
    * **Fenêtres multiples** (Par défaut)
 
       * Les pages s’ouvrent dans une nouvelle fenêtre.
+
    * **Une seule fenêtre**
 
-      * Les pages s’ouvrent dans la fenêtre active.
-
+      * Les pages sont ouvertes dans la fenêtre active.
 
 * **Afficher les actions de bureau pour Assets**
 
-   Cette option nécessite l’utilisation de l’appli de bureau AEM.
+  Cette option nécessite l’utilisation de l’appli de bureau AEM.
 
 * **Couleur de l’annotation**
 
-   Cette option définit la couleur par défaut utilisée lors de la création d’annotations.
+  Cette option définit la couleur par défaut utilisée lors de la création d’annotations.
 
    * Cliquez sur le bloc de couleur pour ouvrir le sélecteur d’échantillons afin de sélectionner une couleur.
    * Vous pouvez également saisir le code hexadécimal de la couleur désirée dans le champ.
 
 * **Présentation de la date relative**
 
-   Pour améliorer la lisibilité, AEM effectue le rendu des dates parmi les sept derniers jours en tant que dates relatives (par exemple, il y a trois jours) et des dates antérieures en tant que dates précises (par exemple, le 20 mars 2017).
+  Pour améliorer la lisibilité, AEM effectue le rendu des dates parmi les sept derniers jours en tant que dates relatives (par exemple, il y a trois jours) et des dates antérieures en tant que dates précises (par exemple, le 20 mars 2017).
 
-   Cette option définit la manière dont les dates sont affichées dans le système. Les options suivantes sont disponibles :
+  Cette option définit la manière dont les dates sont affichées dans le système. Les options suivantes sont disponibles :
 
    * **Toujours afficher la date exacte** : la date exacte est toujours affichée (ce n’est jamais une date relative).
    * **1 jour** : la date relative s’affiche pour les dates correspondant au jour même ; dans le cas contraire, une date exacte est affichée.
@@ -80,17 +80,17 @@ Chaque utilisateur peut définir certaines propriétés pour lui-même.
 
 * **Activer les raccourcis**
 
-   AEM prend en charge un certain nombre de raccourcis clavier qui rendent la création plus efficace.
+  AEM prend en charge un certain nombre de raccourcis clavier qui rendent la création plus efficace.
 
    * [Raccourcis clavier lors de la modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md)
    * [Raccourcis clavier pour les consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md)
 
-   Cette option active les raccourcis clavier. Par défaut, elles sont activées, mais peuvent être désactivées, par exemple si un utilisateur a certaines exigences d’accessibilité.
+  Cette option active les raccourcis clavier. Par défaut, elles sont activées, mais peuvent être désactivées, par exemple si un utilisateur a certaines exigences d’accessibilité.
 
 * **Activer la page d’accueil des ressources**
 
-   Cette option est disponible uniquement si l’administrateur système a activé l’environnement Page d’accueil des ressources pour l’ensemble de l’entreprise.
+  Cette option est disponible uniquement si l’administrateur système a activé l’environnement Page d’accueil des ressources pour l’ensemble de l’entreprise.
 
 * **Configuration Stock**
 
-   Cette option permet de spécifier la configuration Adobe Stock préférée. Elle n’est disponible que si votre administrateur système a activé . [Intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).
+  Cette option permet de spécifier la configuration Adobe Stock préférée. Elle n’est disponible que si votre administrateur système a activé . [Intégration d’Adobe Stock](/help/assets/aem-assets-adobe-stock.md).

@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: ac525d2500177229221a5d6f79d2a8feeefe3f06
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2195'
-ht-degree: 81%
+ht-degree: 91%
 
 ---
 
@@ -26,7 +26,7 @@ L’intégration de données [!DNL Experience Manager Forms] permet de configure
 * SalesForce
 * Stockage d’objets blob Microsoft® Azure.
 
-L’intégration des données prend en charge OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), les types d’authentification de base et de clé API prêts à l’emploi et permettent de mettre en oeuvre une authentification personnalisée pour l’accès aux services web. Bien que les services RESTful, SOAP et OData soient configurés dans [!DNL Experience Manager] as a Cloud Service, JDBC pour les bases de données relationnelles et connecteur pour [!DNL Experience Manager] profil utilisateur configuré dans [!DNL Experience Manager] console web.
+L’intégration des données prend en charge OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), les types d’authentification de base et de clé API prêts à l’emploi et permettent de mettre en oeuvre une authentification personnalisée pour l’accès aux services web. Alors que les services RESTful, SOAP et OData sont configurés dans [!DNL Experience Manager] as a Cloud Service, JDBC pour les bases de données relationnelles et le connecteur pour le profil utilisateur [!DNL Experience Manager] sont configurés dans la console web [!DNL Experience Manager].
 
 ## Configurer la base de données relationnelle {#configure-relational-database}
 
@@ -51,7 +51,7 @@ Vous pouvez configurer des bases de données relationnelles à l’aide de la co
    * Nom de classe Java™ pour le pilote JDBC.
    * URI de connexion JDBC
    * Nom d’utilisateur et mot de passe pour établir la connexion au pilote JDBC
-   * Spécifier une requête SQL SELECT dans la variable **[!UICONTROL Requête de validation]** pour valider les connexions à partir du pool. La requête doit renvoyer au moins une ligne. En fonction de votre base de données, indiquez l’une des options suivantes :
+   * Spécifiez une requête SQL SELECT dans le champ **[!UICONTROL Requête de validation]** pour valider les connexions du pool. La requête doit renvoyer au moins une ligne. En fonction de votre base de données, définissez l’une des options suivantes :
       * SELECT 1 (MySQL et MS SQL)
       * SELECT 1 from dual (Oracle)
    * Nom de la source de données
@@ -78,7 +78,7 @@ You can configure [!DNL Experience Manager] user profile using User Profile Conn
 
 1. Go to [!DNL Experience Manager] web console at `https://[server]:[port]/system/console/configMgr`.
 1. Look for **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** and tap to open the configuration in edit mode.
-1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties will be available for use in form data model. Use the following format to specify user profile properties:
+1. In the User Profile Connector Configuration dialog, you can add, remove, or update user profile properties. The specified properties are available for use in form data model. Use the following format to specify user profile properties:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -107,11 +107,11 @@ Pour configurer le dossier pour les configurations de service cloud :
 
    1. Dans le **[!UICONTROL navigateur de configuration]**, sélectionnez le dossier `global` et appuyez sur **[!UICONTROL Propriétés]**.
 
-   1. Dans le **[!UICONTROL Propriétés de configuration]** boîte de dialogue, activer **[!UICONTROL Configurations du cloud]**.
+   1. Dans la boîte de dialogue **[!UICONTROL Propriétés de configuration]**, activez **[!UICONTROL Configurations cloud]**.
 
    1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
 
-1. Dans le **[!UICONTROL Explorateur de configuration]**, appuyez sur **[!UICONTROL Créer]**.
+1. Dans le **[!UICONTROL navigateur de configuration]**, appuyez sur **[!UICONTROL Créer]**.
 1. Dans la boîte de dialogue **[!UICONTROL Créer une configuration]**, indiquez un titre pour le dossier et activez les **[!UICONTROL Configurations cloud]**.
 1. Appuyez sur **[!UICONTROL Créer]** pour créer le dossier activé pour les configurations de service cloud.
 
@@ -125,8 +125,8 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](configure-data-sources.md#cloud-folder).
 
-1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, puis sélectionnez **[!UICONTROL Service RESTful]** de la **[!UICONTROL Type de service]** , recherchez et sélectionnez éventuellement une miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
-1. Spécifiez les détails suivants pour le service RESTful :
+1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, cherchez et sélectionnez éventuellement une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Spécifiez les informations suivantes pour le service RESTful :
 
    * Sélectionnez l’URL ou le fichier dans la liste déroulante [!UICONTROL Source Swagger] et spécifiez l’[!DNL Swagger URL] vers le fichier de définition du [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
    * En fonction de l’entrée source [!DNL  Swagger], les champs suivants sont préremplis avec des valeurs :
@@ -134,7 +134,8 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
       * Schéma : protocoles de transfert utilisés par l’API REST. Le nombre de types de schémas qui s’affichent dans la liste déroulante dépend des schémas définis dans la source [!DNL Swagger].
       * Hôte : nom de domaine ou adresse IP de l’hôte qui sert l’API REST. Ce champ est obligatoire.
       * Chemin d’accès de base : le préfixe d’URL de tous les chemins d’API. Ce champ est facultatif.\
-         Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
+        Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
+
    * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base, clé d’API ou authentification personnalisée : pour accéder au service RESTful et fournir en conséquence des détails pour l’authentification.
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
@@ -149,8 +150,8 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](configure-data-sources.md#cloud-folder).
 
-1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, puis sélectionnez **[!UICONTROL Service RESTful]** de la **[!UICONTROL Type de service]** , recherchez et sélectionnez éventuellement une miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
-1. Spécifiez les détails suivants pour le service RESTful :
+1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service RESTful]** dans la liste déroulante **[!UICONTROL Type de service]**, cherchez et sélectionnez éventuellement une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Spécifiez les informations suivantes pour le service RESTful :
 
    * Sélectionnez l’URL ou le fichier dans la liste déroulante [!UICONTROL Source Swagger] et spécifiez l’[!DNL Swagger 3.0 URL] vers le fichier de définition du [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
    * En fonction de l’entrée source [!DNL  Swagger], les informations de connexion au serveur cible s’affichent.
@@ -225,17 +226,17 @@ Pour configurer le service Web SOAP dans [!DNL Experience Manager] as a Cloud Se
 
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](configure-data-sources.md#cloud-folder).
 
-1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, puis sélectionnez **[!UICONTROL Service Web SOAP]** de la **[!UICONTROL Type de service]** , recherchez et sélectionnez éventuellement une miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
-1. Spécifiez les éléments suivants pour le service Web SOAP :
+1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service Web SOAP]** dans la liste déroulante **[!UICONTROL Type de service]**, recherchez et sélectionnez une image miniature pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
+1. Spécifiez les éléments suivants pour le service web SOAP :
 
-   * URL WSDL du service Web.
+   * URL WSDL du service web.
    * Point d’entrée du service. Spécifiez une valeur dans ce champ pour remplacer le point d’entrée du service mentionné dans WSDL.
    * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base ou Authentification personnalisée pour accéder au service SOAP et fournir en conséquence les détails de l’authentification.
 
-      <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
-      <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
+     <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
+     <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
 
-      <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
+     <!--If you select **[!UICONTROL Mutual Authentication]** as the authentication type, see [Certificate-based mutual authentication for RESTful and SOAP web services](#mutual-authentication).-->
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration cloud pour le service web SOAP.
 
@@ -269,7 +270,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
    Pour plus d’informations sur la création et la configuration d’un dossier pour les configurations de service cloud, voir [Configurer le dossier pour les configurations de service cloud](#cloud-folder).
 
 1. Appuyez sur **[!UICONTROL Créer]** pour ouvrir l’**[!UICONTROL assistant Créer une configuration de source de données]**. Indiquez un nom et éventuellement un titre pour la configuration, sélectionnez **[!UICONTROL Service OData]** dans la liste déroulante **[!UICONTROL Type de service]**, cherchez et sélectionnez éventuellement une vignette pour la configuration, puis appuyez sur **[!UICONTROL Suivant]**.
-1. Spécifiez les détails suivants pour le service OData :
+1. Spécifiez les informations suivantes pour le service OData :
 
    * URL racine du service pour le service OData à configurer.
    * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base, clé API ou authentification personnalisée : pour accéder au service OData et fournir en conséquence les détails de l’authentification.
@@ -277,6 +278,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
 
    >[!NOTE]
+   >
    Vous devez sélectionner le type d’authentification OAuth 2.0 pour vous connecter aux services [!DNL Microsoft® Dynamics] à l’aide du point d’entrée OData en tant que racine du service.
 
 1. Appuyez sur **[!UICONTROL Créer]** pour créer la configuration de cloud pour le service OData.

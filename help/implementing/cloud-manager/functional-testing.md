@@ -2,10 +2,10 @@
 title: Tests fonctionnels
 description: Découvrez les trois différents types de tests fonctionnels intégrés au processus de déploiement AEM as a Cloud Service pour garantir la qualité et la fiabilité de votre code.
 exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
-source-git-commit: 7d15440159a8e24314753acd5b37fcd2c5e8ec4c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 83%
+source-wordcount: '551'
+ht-degree: 72%
 
 ---
 
@@ -52,7 +52,7 @@ Les tests fonctionnels du produit sont conservés en tant que projet open source
 
 ### Tests fonctionnels personnalisés {#custom-functional-testing}
 
-Bien que les tests fonctionnels du produit soient définis par Adobe, vous pouvez rédiger vos propres tests de qualité pour votre propre application. Cela sera exécuté en tant que test fonctionnel personnalisé dans le cadre du [pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou éventuellement du [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) pour garantir la qualité de votre application.
+Bien que les tests fonctionnels du produit soient définis par Adobe, vous pouvez rédiger vos propres tests de qualité pour votre propre application. Il est exécuté en tant que test fonctionnel personnalisé dans le cadre de la [pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md) ou facultatif [pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md) pour garantir la qualité de votre application.
 
 Les tests fonctionnels personnalisés sont exécutés à la fois pour les déploiements de code personnalisé et les mises à niveau de notifications push, ce qui rend particulièrement cruciale la rédaction de bons tests fonctionnels qui empêchent les changements de code AEM d’enfreindre le code de votre application. L’étape des tests fonctionnels personnalisés est toujours présente et ne peut pas être ignorée.
 
@@ -61,7 +61,7 @@ Reportez-vous à la section [Tests fonctionnels Java](/help/implementing/cloud-m
 
 ### Test d’interface utilisateur personnalisé {#custom-ui-testing}
 
-Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications. Les tests de l’interface utilisateur sont basés sur Selenium et placés dans une image Docker afin de permettre un large choix de langues et de cadres, tels que Java et Maven, Node et WebDriver.io, ou encore d’autres cadres et technologies basés sur Selenium.
+Le test d’interface utilisateur personnalisé est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications. Les tests d’interface utilisateur sont des tests basés sur Selenium conditionnés dans une image Docker pour permettre un large choix de langues et de structures telles que Java et Maven, Node et WebDriver.io, ou tout autre framework et technologie reposant sur Selenium.
 
 Reportez-vous à la section [Tests de l’interface utilisateur personnalisée](/help/implementing/cloud-manager/ui-testing.md#custom-ui-testing) pour plus d’informations.
 

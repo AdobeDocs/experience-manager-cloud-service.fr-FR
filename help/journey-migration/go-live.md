@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: 30acb844ee4021b3e14011b548825c864de8903d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1727'
-ht-degree: 100%
+source-wordcount: '1720'
+ht-degree: 94%
 
 ---
 
@@ -59,7 +59,7 @@ Comme mentionné précédemment, vous devrez planifier une période de gel du co
 * Combien de temps dois-je geler les activités de création de contenu ?
 * Pendant combien de temps dois-je demander à mon équipe de diffusion de cesser d’ajouter de nouvelles fonctionnalités ?
 
-Pour répondre à la première question, prenez en compte le temps nécessaire pour effectuer des essais dans des environnements de non-production. Pour répondre à la seconde question, il faut une collaboration étroite entre l’équipe qui ajoute de nouvelles fonctionnalités et l’équipe qui remanie le code. L’objectif doit être de s’assurer que tout le code qui est ajouté au déploiement existant est également ajouté, testé et déployé dans la branche des services cloud. En général, cela signifie que la quantité de code gelé sera plus basse.
+Pour répondre à la première question, prenez en compte le temps nécessaire pour effectuer des essais dans des environnements de non-production. Pour répondre à la seconde question, il faut une collaboration étroite entre l’équipe qui ajoute de nouvelles fonctionnalités et l’équipe qui remanie le code. L’objectif est de s’assurer que tout le code ajouté au déploiement existant est également ajouté, testé et déployé sur la branche des services cloud. En règle générale, cela signifie que le volume de gel du code est inférieur.
 
 En outre, vous devez prévoir un gel du contenu lorsque le dernier complément de contenu est programmé.
 
@@ -81,12 +81,12 @@ Lors de la mise en production, assurez-vous d’exécuter la migration du conten
 
 Lors de la migration de production, évitez d’exécuter l’outil de transfert de contenu à partir d’un clone, et ce, pour les raisons suivantes :
 
-* Si un client exige que les versions de contenu soient migrées pendant les migrations complémentaires, l’exécution de l’outil de transfert de contenu à partir d’un clone ne permet pas de migrer les versions. Même si le clone est fréquemment recréé à partir de l’auteur en direct, chaque fois qu’un clone est créé, les points de contrôle qui sont utilisés par l’outil de transfert de contenu pour calculer les deltas sont réinitialisés.
+* Si un client exige que les versions de contenu soient migrées pendant les migrations complémentaires, l’exécution de l’outil de transfert de contenu à partir d’un clone ne permet pas de migrer les versions. Même si le clone est fréquemment recréé à partir de l’auteur en direct, chaque fois qu’un clone est créé, les points de contrôle utilisés par l’outil de transfert de contenu pour calculer les deltas sont réinitialisés.
 * Puisqu’un clone ne peut pas être actualisé dans son ensemble, le package de requêtes ACL doit être utilisé pour combiner et installer le contenu ajouté ou modifié de la production au clone. Le problème avec cette approche est que tout contenu supprimé sur l’instance source n’aura jamais accès au clone, sauf s’il est supprimé manuellement de la source et du clone. Il est donc possible que le contenu supprimé en production ne soit pas supprimé sur le clone et sur AEM as a Cloud Service.
 
 **Optimiser la charge de votre source AEM lors de la migration du contenu**
 
-Souvenez-vous que la charge sur la source AEM sera plus importante pendant la phase d’extraction. Vous devez savoir que :
+Souvenez-vous que la charge sur la source AEM est supérieure pendant la phase d&#39;extraction. Vous devez savoir que :
 
 * L’outil de transfert de contenu est un processus Java externe qui utilise un tas JVM de 4 Go.
 * La version non-AzCopy télécharge les fichiers binaires, les stocke dans un espace temporaire sur l’auteur de l’AEM source, consommant des E/S de disque, puis les charge dans le conteneur Azure, ce qui consomme de la bande passante réseau.
@@ -109,7 +109,7 @@ Comparé à la section ci-dessus, l’ingestion n’échoue **pas** en raison de
 * Toute ressource dont le rendu original est manquant.
 * Tout dossier dont le nœud `jcr:content` est manquant..
 
-Les deux éléments ci-dessus seront identifiés et signalés dans le rapport de l’[Analyseur de bonnes pratiques](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md).
+Les deux éléments ci-dessus sont identifiés et signalés dans le [Analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) rapport.
 
 ## Liste de contrôle de mise en production {#Go-Live-Checklist}
 

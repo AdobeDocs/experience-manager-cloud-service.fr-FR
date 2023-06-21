@@ -2,10 +2,10 @@
 title: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 description: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3714'
-ht-degree: 84%
+source-wordcount: '3709'
+ht-degree: 81%
 
 ---
 
@@ -25,7 +25,7 @@ Il existe certaines bonnes pratiques reconnues dans les URL.
 
 Dans votre projet AEM, lors de l’évaluation des URL, posez-vous la question suivante :
 
-*« Si une personne voyait cette URL mais pas le contenu de la page, aurait-elle une idée du contenu de cette page ? »*
+*&quot;Si un utilisateur voit cette URL et qu’aucun des contenus de la page n’est visible, peut-il décrire ce qu’était cette page ?&quot;*
 
 Si la réponse est oui, alors l’URL fonctionne probablement bien pour un moteur de recherche.
 
@@ -46,9 +46,8 @@ Voici quelques conseils généraux sur la construction de vos URL pour l’optim
    * Lors de l’utilisation de sélecteurs sur une page, les sélecteurs qui fournissent une valeur sémantique sont recommandés.
    * Si un humain ne peut pas lire votre URL, un moteur de recherche ne le peut pas non plus.
    * Par exemple :
-      `mybrand.com/products/product-detail.product-category.product-name.html`
-est préférable à 
-`mybrand.com/products/product-detail.1234.html`
+     `mybrand.com/products/product-detail.product-category.product-name.html`
+est préférable à `mybrand.com/products/product-detail.1234.html`
 
 * Évitez autant que possible les sous-domaines, car les moteurs de recherche les traitent comme des entités différentes et réduisent la valeur du site pour l’optimisation du moteur de recherche.
 
@@ -78,9 +77,9 @@ est préférable à
 
 * Assurez-vous que chaque page n’est diffusée qu’à partir d’un seul protocole.
 
-   * Il arrive que des sites soient diffusés via `http` jusqu’à ce qu’un utilisateur arrive sur une page avec, par exemple, un formulaire de passage en caisse ou de connexion, où il passe alors en `https`. En cas de liaison depuis cette page, si l’utilisateur ou l’utilisatrice peut revenir aux pages `http` et y accéder par `https`, le moteur de recherche les suit comme deux pages distinctes.
+   * Parfois, les sites sont diffusés sur `http` jusqu’à ce qu’un utilisateur atteigne une page avec, par exemple, un formulaire de passage en caisse ou de connexion, auquel moment il passe à `https`. En cas de liaison depuis cette page, si l’utilisateur ou l’utilisatrice peut revenir aux pages `http` et y accéder par `https`, le moteur de recherche les suit comme deux pages distinctes.
 
-   * Actuellement, Google préfère les pages `https` aux pages `http`. Pour cette raison, il est parfois plus facile pour tous les acteurs de diffuser l’ensemble du site par `https`.
+   * Actuellement, Google préfère les pages `https` aux pages `http`. Pour cette raison, il est souvent plus facile pour tous de diffuser l’ensemble du site `https`.
 
 ### Configuration du serveur {#server-configuration}
 
@@ -151,7 +150,7 @@ Cette approche comporte quelques points à prendre en compte :
 L’annotation SCR pour ce type de servlet doit ressembler à ce qui suit :
 
 ```
-@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json”, methods=”GET”)
+@SlingServlet(resourceTypes = "myBrand/components/pages/myPageType", selectors = "myRenderer", extensions = "json", methods="GET")
 ```
 
 Dans ce cas, la ressource que l’URL adresse (une instance de la ressource `myPageType`) est accessible dans la servlet automatiquement. Pour y accéder, vous devez appeler :
@@ -186,20 +185,20 @@ Si un auteur souhaite qu’une page soit accessible depuis un autre emplacement 
 Vous pouvez afficher les noms de pages localisés pour les utilisateurs de contenu traduit. Par exemple :
 
 * plutôt que de demander à un utilisateur hispanophone d’accéder à :
-   `www.mydomain.com/es/home.html`
+  `www.mydomain.com/es/home.html`
 
 * il serait préférable que l’URL soit :
-   `www.mydomain.com/es/casa.html`.
+  `www.mydomain.com/es/casa.html`.
 
-La difficulté en matière de localisation du nom d’une page réside dans le fait que plusieurs outils de localisation disponibles sur la plateforme AEM nécessitent que les noms de cette page correspondent dans toutes les langues de manière à ce que le contenu reste synchronisé.
+La difficulté de localiser le nom de la page est que de nombreux outils de localisation disponibles sur la plateforme AEM reposent sur la correspondance des noms de page entre les paramètres régionaux pour que le contenu reste synchronisé.
 
 La propriété `sling:alias` permet de pallier cette difficulté. `sling:alias` peut être ajouté comme propriété à n’importe quelle ressource pour donner un nom d’alias à la ressource. Dans l’exemple précédent, vous auriez :
 
 * une page dans le JCR à :
-   `…/es/home`
+  `…/es/home`
 
 * à laquelle vous ajoutez ensuite une propriété :
-   `sling:alias` = `casa`
+  `sling:alias` = `casa`
 
 Les outils de traduction d’AEM tels que le gestionnaire multisite peuvent ainsi conserver des relations entre :
 
@@ -218,12 +217,11 @@ Tout en permettant aux utilisateurs finaux d’interagir avec le nom de la page 
 Dans une installation AEM standard :
 
 * pour la configuration OSGi
-   **Apache Sling Resource Resolver Factory**
-( 
-`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
+  **Apache Sling Resource Resolver Factory**
+(`org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl`)
 
 * la propriété
-   **Emplacement de mappage** (`resource.resolver.map.location`)
+  **Emplacement de mappage** (`resource.resolver.map.location`)
 
 * a pour défaut la valeur `/etc/map`.
 
@@ -252,8 +250,8 @@ Cependant, il existe également un moyen plus simple de gérer cela :
    À l’aide de la console web (par exemple, localhost:4502/system/console/configMgr), vous pouvez configurer le résolveur de ressources Sling :
 
    * **Apache Sling Resource Resolver Factory**
+     `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
 
-      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    Il est conseillé d’établir les mappages requis pour raccourcir les URL sous la forme d’expressions régulières, puis de définir ces configurations sous un nœud OsgiConfignode, `config.publish`, qui est inclus dans votre version.
 
    Plutôt que de définir les mappages dans `/etc/map`, vous pouvez les attribuer directement à la propriété **Mappages d’URL** (`resource.resolver.mapping`) :
@@ -315,7 +313,7 @@ Exemples :
 Les deux appliqueraient la balise suivante à la tête de la page :
 
 ```xml
-<link rel=”canonical” href=”my-brand/my-page.html”/>
+<link rel="canonical" href="my-brand/my-page.html"/>
 ```
 
 `href` peut être relatif ou absolu. Le code doit être inclus dans le balisage de la page pour déterminer l’URL canonique de la page et générer cette balise.
@@ -373,7 +371,7 @@ Prenons l’exemple d’un site qui définit une racine de plan de site de nivea
 
 Dans la configuration par défaut, la boîte de dialogue Propriétés de la page permet d’identifier une page en tant que racine du plan du site et, comme décrit ci-dessus, de générer un plan du site lui-même et de ses descendants. Ce comportement est implémenté par les implémentations de l’interface `SitemapGenerator` et peut être étendu en ajoutant d’autres implémentations. Cependant, comme la fréquence de régénération des plans de site XML dépend fortement des workflows et des workloads de création de contenu, le produit n’est livré avec aucune configuration de `SitemapScheduler`. Elle offre à la fonctionnalité un accord préalable effectif.
 
-Pour activer la tâche en arrière-plan qui génère le plan de site XML, un `SitemapScheduler` doit être configuré. Pour ce faire, créez une configuration OSGI pour le `org.apache.sling.sitemap.impl.SitemapScheduler` de l’ID persistante. L’expression du planificateur `0 0 0 * * ?` peut être utilisée comme point de départ pour régénérer tous les plans de site XML, une fois par jour à minuit.
+Pour activer la tâche en arrière-plan qui génère les plans de site XML, une `SitemapScheduler` doit être configuré. Pour ce faire, créez une configuration OSGI pour le `org.apache.sling.sitemap.impl.SitemapScheduler` de l’ID persistante. L’expression du planificateur `0 0 0 * * ?` peut être utilisée comme point de départ pour régénérer tous les plans de site XML, une fois par jour à minuit.
 
 ![Plan de site Apache Sling – Planificateur](assets/sling-sitemap-scheduler.png)
 

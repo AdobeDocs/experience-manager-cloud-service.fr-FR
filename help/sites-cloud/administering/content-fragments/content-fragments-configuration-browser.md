@@ -1,13 +1,13 @@
 ---
 title: Fragments de contenu - Navigateur de configurations
-description: Découvrez comment activer certaines fonctionnalités de fragments de contenu et de GraphQL dans le navigateur de configurations afin de tirer profit des fonctionnalités de diffusion découplée AEM.
+description: Découvrez comment activer la fonctionnalité Fragment de contenu et GraphQL dans l’explorateur de configurations afin d’utiliser AEM fonctionnalités de diffusion sans interface utilisateur.
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 100%
+source-wordcount: '362'
+ht-degree: 88%
 
 ---
 
@@ -28,7 +28,6 @@ Avant d’utiliser les fragments de contenu, vous devez utiliser l’**Explorate
 >
 >* L’option **Créer** ne sera pas disponible pour la création de modèles.
 >* Vous ne pourrez pas [sélectionner la configuration Sites pour créer le point d’entrée](/help/headless/graphql-api/graphql-endpoint.md) associé.
-
 
 Pour activer la fonctionnalité de fragments de contenu, vous devez :
 
@@ -57,21 +56,19 @@ Pour [utiliser certaines fonctionnalités de fragments de contenu,](#creating-a-
 >* Les requêtes persistantes sont (toujours) enregistrées en fonction de la configuration parent (racine).
 
 
-
 1. Accédez à **Outils**, **Général**, puis ouvrez l’**Explorateur de configurations**.
 
 1. Utilisez le bouton **Créer** pour ouvrir la boîte de dialogue.
 
    1. Spécifiez un **Titre**.
-   1. Le **Nom** devient le nom du nœud dans le référentiel.
-      * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   1. Le **Nom** devient le nom du noeud dans le référentiel.
+      * Il est généré automatiquement en fonction du titre et ajusté en fonction des [AEM les conventions d’affectation des noms.](/help/implementing/developing/introduction/naming-conventions.md)
       * Vous pouvez l’ajuster si nécessaire.
    1. Pour activer leur utilisation, sélectionnez
       * **Modèles de fragment de contenu**
       * **Requêtes persistantes GraphQL**
 
       ![Définir la configuration](assets/cfm-conf-01.png)
-
 
 1. Sélectionnez **Créer** pour enregistrer la définition.
 

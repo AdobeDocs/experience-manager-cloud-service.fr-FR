@@ -2,10 +2,10 @@
 title: Développement d’un composant personnalisé pour Screens as a Cloud Service
 description: Le tutoriel suivant décrit les étapes à suivre pour créer un composant personnalisé pour AEM Screens. AEM Screens réutilise de nombreux modèles de conception et technologies existants d’autres produits AEM. Ce tutoriel met en évidence les différences et les considérations spéciales lors du développement pour AEM Screens.
 exl-id: fe8e7bf2-6828-4a5a-b650-fb3d9c172b97
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2115'
-ht-degree: 100%
+source-wordcount: '2106'
+ht-degree: 94%
 
 ---
 
@@ -69,7 +69,7 @@ Le code source d’un projet Screens est généralement géré sous la forme d�
 
    Représentation du code ui.apps dans CRXDE Lite
 
-   Le composant **helloworld** n’est actuellement qu’un espace réservé. Au cours du tutoriel, une fonctionnalité sera ajoutée pour permettre à un auteur de mettre à jour le message affiché par le composant.
+   Le composant **helloworld** n’est actuellement qu’un espace réservé. Au cours du tutoriel, une fonctionnalité est ajoutée pour permettre à un auteur de mettre à jour le message affiché par le composant.
 
 1. Le package **screens-weretail-run.ui.content** installe le code sous :
 
@@ -184,7 +184,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
 
    Ci-dessus se trouve l’annotation de modification du composant Hello World. Le premier bloc affiche une version de modification du composant si le message de boîte de dialogue a été renseigné.
 
-   Le second bloc est rendu si aucun message de boîte de dialogue n’a été saisi. Dans ce cas, `cq-placeholder` et `data-emptytext` peuvent afficher le libellé ***Hello World*** en guise d’espace réservé. La chaîne du libellé peut être internationalisée en utilisant i18n afin de prendre en charge la création pour plusieurs paramètres régionaux.
+   Le second bloc est rendu si aucun message de boîte de dialogue n’a été saisi. Dans ce cas, `cq-placeholder` et `data-emptytext` peuvent afficher le libellé ***Hello World*** en guise d’espace réservé. La chaîne du libellé peut être internationalisée à l’aide d’i18n afin de prendre en charge la création dans plusieurs paramètres régionaux.
 
 1. **Boîte de dialogue Copier l’image Screens à utiliser pour le composant Hello World.**
 
@@ -242,7 +242,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
                                    jcr:primaryType="nt:unstructured"
                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
                                    defaultValue=""
-                                   fieldDescription="Amount of time the image will be shown in the sequence, in milliseconds"
+                                   fieldDescription="Amount of time the image is shown in the sequence, in milliseconds"
                                    fieldLabel="Duration (ms)"
                                    min="0"
                                    name="./duration"/>
@@ -255,7 +255,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
    </jcr:root>
    ```
 
-   Le champ de texte du message est enregistré dans une propriété nommée `message` et que le champ de nombre de la durée sera enregistré dans une propriété nommée `duration`. Ces deux propriétés sont toutes deux référencées dans `/apps/weretail-run/components/content/helloworld/production.html` par HTL en tant que `${properties.message}` et `${properties.duration}`.
+   Le champ de texte du message est enregistré dans une propriété nommée `message` et que le champ numérique de la durée est enregistré dans une propriété nommée `duration`. Ces deux propriétés sont toutes deux référencées dans `/apps/weretail-run/components/content/helloworld/production.html` par HTL en tant que `${properties.message}` et `${properties.duration}`.
 
    ![Hello World - Boîte de dialogue terminée](/help/screens-cloud/developing/assets/2018-04-29_at_5_21pm.png)
 
@@ -265,7 +265,7 @@ AEM Screens présente des contraintes intéressantes qui ne sont pas nécessaire
 
 Les bibliothèques côté client offrent un mécanisme d’organisation et de gestion des fichiers CSS et JavaScript nécessaires à une mise en œuvre d’AEM.
 
-Les composants d’AEM Screens s’affichent différemment en mode d’édition et en mode d’aperçu/de production. Deux bibliothèques clientes seront créées, une pour le mode d’édition et une autre pour l’aperçu/production.
+Les composants AEM Screens sont rendus différemment en mode d’édition et en mode d’aperçu/de production. Deux bibliothèques clientes sont créées : l’une pour le mode d’édition, l’autre pour le mode d’aperçu/de production.
 
 1. Création de dossier pour les bibliothèques côté client pour le composant Hello World.
 
@@ -411,6 +411,7 @@ Le composant Hello World est destiné à être utilisé dans un canal de séquen
 1. Étape du modèle - choisissez **Canal de séquence**
 
    1. Étape des propriétés
+
    * Onglet de base > Titre = **Canal inactif**
    * Onglet Canal > Cochez **Passer le canal en ligne**
 
@@ -446,7 +447,7 @@ Le composant Hello World est destiné à être utilisé dans un canal de séquen
 
 Si votre composant personnalisé utilise des actifs externes, notamment des ressources (images, vidéos, polices, icônes, etc.), des rendus de ressources spécifiques ou des bibliothèques côté client (css, js, etc.), ils ne sont pas automatiquement ajoutés à la configuration hors ligne, car nous n’assemblons que le balisage HTML par défaut.
 
-Pour vous permettre de personnaliser et d’optimiser les ressources exactes téléchargées dans le lecteur, nous mettons à votre disposition un mécanisme d’extension pour les composants personnalisés afin qu’ils indiquent leurs dépendances à la logique de mise en cache hors ligne de Screens.
+Pour vous permettre de personnaliser et d’optimiser les ressources exactes téléchargées sur le lecteur, nous proposons un mécanisme d’extension pour les composants personnalisés afin d’exposer leurs dépendances à la logique de mise en cache hors ligne dans Screens.
 
 La section ci-dessous présente le modèle des gestionnaires personnalisés de ressources hors ligne et les exigences minimales du fichier `pom.xml` pour ce projet spécifique.
 

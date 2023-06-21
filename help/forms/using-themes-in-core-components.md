@@ -2,10 +2,10 @@
 title: Création et utilisation des thèmes
 description: Vous pouvez utiliser les thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif avec des composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 99%
+source-wordcount: '1664'
+ht-degree: 98%
 
 ---
 
@@ -17,7 +17,7 @@ Lorsque vous [créez un formulaire adaptatif](/help/forms/creating-adaptive-form
 
 >[!NOTE]
 >
->Un thème de formulaire adaptatif ne doit pas être confondu avec les [modèles de formulaire adaptatif.](/help/forms/template-editor.md) Les thèmes de formulaire adaptatif contiennent uniquement les informations de style d’un formulaire adaptatif. Les modèles de formulaire adaptatif définissent la structure du formulaire et le contenu initial et contiennent un thème afin de permettre la création de [formulaire adaptatif.](/help/forms/creating-adaptive-form.md)
+>Un thème de formulaire adaptatif ne doit pas être confondu avec les [modèles de formulaire adaptatif.](/help/forms/template-editor.md) Les thèmes de formulaire adaptatif contiennent uniquement les informations de style d’un formulaire adaptatif. Les modèles de formulaire adaptatif définissent la structure du formulaire et le contenu initial et contiennent un thème pour permettre la création d’un nouveau formulaire. [Formulaire adaptatif.](/help/forms/creating-adaptive-form.md)
 
 ## Utilisation du thème Zone de travail dans les formulaires adaptatifs avec des composants principaux {#using-theme-in-adaptive-form}
 
@@ -131,7 +131,6 @@ AEM_PROXY_PORT=7000
    > * Créez un utilisateur ou une utilisatrice local(e) pour vous connecter localement. Fournissez un rôle de contributeur ou contributrice au concepteur ou à la conceptrice de thèmes.
    > * Si vous spécifiez l’URL d’AEM `http://localhost:[port]/` dans le fichier `.env` du thème Zone de travail, cela vous redirige directement vers le navigateur.
 
-
 1. Une fois connecté, modifiez l’URL dans le navigateur afin qu’elle pointe vers le chemin d’accès de l’exemple de contenu que l’administrateur AEM vous a fourni.
 
    * Par exemple, si le chemin fourni était `/content/formname.html?wcmmode=disabled`,, modifiez l’URL en `http://localhost:[port]/content/forms/af/formname.html?wcmmode=disabled`
@@ -200,8 +199,7 @@ Avant de valider les modifications apportées au référentiel Git de votre Serv
 
 1. Déplacez les fichiers du référentiel de thème que vous modifiez dans le référentiel cloud avec une commande similaire.
    `cp -r [source-theme-folder]/* [destination-cloud-repo]`
-Par exemple, utilisez cette commande : 
-`cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
+Par exemple, utilisez cette commande : `cp -r [C:/cloned-git-canvas/*] [C:/cloned-repo]`
 1. Dans le répertoire du référentiel cloud, validez les fichiers de thème dans lesquels a eu lieu le déplacement à l’aide des commandes suivantes.
 
    ```text
@@ -246,15 +244,15 @@ Une fois le pipeline exécuté, le thème est disponible sous l’onglet Style.
 
 * **Éviter les ressources d’un autre thème**.
 
-   Lorsque vous modifiez un thème, vous pouvez parcourir et ajouter des actifs (tels que des images) d’autres thèmes. Par exemple, vous pouvez modifier l’arrière-plan d’une page. Par exemple, lorsque vous sélectionnez la **[!UICONTROL Page]** ![bouton de modification](assets/edit-button.png) > **[!UICONTROL Arrière plan]** > **[!UICONTROL Ajoutez]** > **[!UICONTROL Image]**, une boîte de dialogue s’affiche et vous permet de parcourir et d’ajouter des images dans l’autre thème.
+  Lorsque vous modifiez un thème, vous pouvez parcourir et ajouter des actifs (tels que des images) d’autres thèmes. Par exemple, vous pouvez modifier l’arrière-plan d’une page. Par exemple, lorsque vous sélectionnez la **[!UICONTROL Page]** ![bouton de modification](assets/edit-button.png) > **[!UICONTROL Arrière plan]** > **[!UICONTROL Ajoutez]** > **[!UICONTROL Image]**, une boîte de dialogue s’affiche et vous permet de parcourir et d’ajouter des images dans l’autre thème.
 
-   Vous pouvez rencontrer des problèmes avec votre thème actuel si un actif est ajouté à partir d’un autre thème et l’autre thème est déplacé ou supprimé. Nous vous recommandons d’éviter de parcourir les actifs d’autres thèmes et de les ajouter.
+  Vous pouvez rencontrer des problèmes avec votre thème actuel si un actif est ajouté à partir d’un autre thème et l’autre thème est déplacé ou supprimé. Nous vous recommandons d’éviter de parcourir les actifs d’autres thèmes et de les ajouter.
 
 * **Modification de la largeur de disposition du panneau conteneur**
 
-   Il n’est pas recommandé de modifier la largeur de disposition du panneau conteneur. Lorsque vous spécifiez la largeur d’un panneau de contenu, il devient statique et ne s’adapte pas aux différents affichages.
+  Il n’est pas recommandé de modifier la largeur de disposition du panneau conteneur. Lorsque vous spécifiez la largeur d’un panneau de contenu, il devient statique et ne s’adapte pas aux différents affichages.
 
 * **Utiliser l’éditeur de formulaires ou l’éditeur de thèmes pour travailler sur l’en-tête et le pied de page**.
 
-   Utilisez l’éditeur de thèmes si vous souhaitez mettre en forme l’en-tête et le pied de page à l’aide d’options de style telles que le style de police, l’arrière-plan et la transparence.
+  Utilisez l’éditeur de thèmes si vous souhaitez mettre en forme l’en-tête et le pied de page à l’aide d’options de style telles que le style de police, l’arrière-plan et la transparence.
 Si vous souhaitez fournir des informations comme une image de logo, le nom de l’entreprise dans l’en-tête et des informations de copyright dans le pied de page, utilisez les options de l’éditeur de formulaires.

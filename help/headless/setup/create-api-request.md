@@ -2,10 +2,10 @@
 title: Création d’une requête API - Configuration découplée
 description: Découvrez comment utiliser l’API GraphQL pour une diffusion découplée du contenu du fragment de contenu et l’API REST AEM Assets pour gérer les fragments de contenu.
 exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '676'
-ht-degree: 100%
+source-wordcount: '673'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Plus d’informations sur l’activation [des points d’entrée GraphQL se trou
 
 ## Requête de contenu à l’aide de GraphQL avec GraphiQL
 
-Les architectes de l’information doivent concevoir des requêtes pour leurs points d’entrée de canaux afin de diffuser du contenu. Ces requêtes ne doivent généralement être prises en compte qu’une seule fois par point d’entrée et par modèle. Pour les besoins de ce guide de prise en main, nous ne devrons en créer qu’une.
+Les architectes d’informations doivent concevoir des requêtes pour leurs points de terminaison de canal afin de diffuser du contenu. Ces requêtes ne doivent généralement être prises en compte qu’une seule fois par point d’entrée et par modèle. Pour les besoins de ce guide de prise en main, nous ne devrons en créer qu’une.
 
 GraphiQL est un IDE inclus dans votre environnement AEM ; il est accessible/visible après la [configuration des points d’entrée](#enable-graphql-endpoint).
 

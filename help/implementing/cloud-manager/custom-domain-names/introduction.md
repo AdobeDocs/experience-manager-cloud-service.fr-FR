@@ -2,9 +2,9 @@
 title: Introduction aux noms de domaine personnalisés
 description: L’interface utilisateur Cloud Manager permet d’ajouter un domaine personnalisé pour identifier votre site par un nom de marque unique en libre-service.
 exl-id: ed03bff9-dfcc-4dfe-a501-a7facd24aa7d
-source-git-commit: 1862ae2d0d60ac9ed89a4ba3da82dcf8f032ee65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '768'
 ht-degree: 66%
 
 ---
@@ -40,7 +40,7 @@ AEM as a Cloud Service offre un service CDN (Content Delivery Network) intégré
 * Les noms de domaine (et certificats) personnalisés installés dans le réseau de diffusion de contenu géré par AEM sont gérés via Cloud Manager.
 * Les noms de domaine personnalisés (et les certificats) installés dans votre propre réseau de diffusion de contenu sont gérés dans ce réseau de diffusion de contenu spécifique.
 
-Les domaines gérés dans votre propre réseau de diffusion de contenu ne doivent pas être installés via Cloud Manager. Elles seront mises à la disposition des AEM par l’intermédiaire de l’hôte X-Forwarded-Host et correspondent aux hôtes définis dans le Dispatcher. [Pour plus d’informations, consultez la documentation du réseau de diffusion de contenu .](/help/implementing/dispatcher/cdn.md)
+Les domaines gérés dans votre propre réseau de diffusion de contenu ne doivent pas être installés par le biais de Cloud Manager. Ils sont mis à la disposition des AEM par le biais de X-Forwarded-Host et correspondent aux hôtes définis dans Dispatcher. Voir [Documentation CDN](/help/implementing/dispatcher/cdn.md).
 
 Dans un environnement, vous pouvez installer les deux domaines dans le réseau de diffusion de contenu géré par AEM et dans votre propre réseau de diffusion de contenu.
 

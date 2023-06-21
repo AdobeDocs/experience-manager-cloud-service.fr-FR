@@ -2,10 +2,10 @@
 title: Création de fragments de contenu - Configuration découplée
 description: Découvrez comment utiliser les fragments de contenu AEM pour concevoir, créer, organiser et utiliser du contenu indépendant des pages pour une diffusion découplée.
 exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: d6038920a5866c19a94980cc14fa46dec48daf51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '348'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 97%
 
 ---
 
@@ -23,7 +23,7 @@ Les fragments de contenu contiennent du contenu structuré et peuvent être diff
 
 ## Création d’un fragment de contenu {#how-to-create-a-content-fragment}
 
-Les auteurs de contenu créeront tout nombre de fragments de contenu pour représenter le contenu qu’ils créent. Ce sera leur principale tâche dans AEM. Pour les besoins de ce guide de prise en main, nous n’aurons besoin d’en créer qu’un.
+Les auteurs de contenu créeront tout nombre de fragments de contenu pour représenter le contenu qu’ils créent. C&#39;est leur tâche principale en AEM. Pour les besoins de ce guide de prise en main, nous n’aurons besoin d’en créer qu’un.
 
 1. Connectez-vous à AEM as a Cloud Service et, à partir du menu principal, sélectionnez **Navigation** -> **Fragments de contenu**.
 

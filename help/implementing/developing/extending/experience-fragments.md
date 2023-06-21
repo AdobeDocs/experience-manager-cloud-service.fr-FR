@@ -2,10 +2,10 @@
 title: Présentation des fragments d’expérience
 description: Extension des fragments d’expérience Adobe Experience Manager as a Cloud Service.
 exl-id: bd4ea763-d17c-40a6-9a86-a24d7600229e
-source-git-commit: 5968554ec221b1fe9969b131ccf0b08ffb7f6494
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1651'
-ht-degree: 95%
+source-wordcount: '1648'
+ht-degree: 91%
 
 ---
 
@@ -85,8 +85,7 @@ Pour créer un modèle de fragment d’expérience détecté par l’assistant *
 
    1. Et le nom du modèle doit commencer par :
       `experience-fragments`
-Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments en tant que 
-propriété `cq:allowedTemplates` de ce dossier qui comprend tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
+Cela permet aux utilisateurs de créer des fragments d’expérience dans /content/experience-fragments, étant donné que la propriété `cq:allowedTemplates` de ce dossier inclut tous les modèles dont le nom commence par `experience-fragment`. Les clients peuvent mettre à jour cette propriété afin d’inclure leur propre schéma d’affectation de noms ou emplacement de modèle.
 
 1. Les [modèles autorisés](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#configure-allowed-templates-folder) peuvent être configurés dans la console des fragments d’expérience.
 
@@ -160,7 +159,7 @@ Une fois la page HTML générée, le pipeline Sling Rewriter apporte des modific
    >
    >Dans la plupart des cas, les liens internes du code HTML sont des liens relatifs, mais il peut arriver que des composants personnalisés fournissent des URL complètes dans le code HTML. Par défaut, AEM ignore ces URL complètes et n’effectue aucune modification.
 
-   Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` afin de recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, accessible au public.
+   Les liens de ces attributs sont exécutés via l’externaliseur de liens AEM `publishLink()` pour recréer l’URL comme si elle se trouvait sur une instance publiée et, de ce fait, accessible au public.
 
 Lors de l’utilisation d’une implémentation prête à l’emploi, le processus décrit ci-dessus doit être suffisant pour générer l’offre Target à partir du fragment d’expérience, puis l’exporter vers Adobe Target. Toutefois, certains cas d’utilisation ne sont pas pris en compte dans ce processus, à savoir :
 
@@ -201,7 +200,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Avant d’utiliser cette interface, vous devez créer un bundle contenant un nouveau composant de service qui l’implémente.
 
-Ce service sera utilisé pour se connecter à la réécriture Exporter vers Target du fragment d’expérience afin d’avoir accès aux différents liens.
+Ce service est utilisé pour se connecter à la réécriture Exporter vers Target du fragment d’expérience afin de pouvoir accéder aux différents liens.
 
 Par exemple, `ComponentService` :
 
@@ -266,7 +265,7 @@ Dans l’exemple ci-dessus, nous souhaitons réécrire les éléments suivants 
 * Uniquement les attributs `href`
 
 * Pour un fragment d’expérience spécifique :
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Les autres fragments d’expérience transitant par le système Exporter vers Target sont ignorés et ne sont pas affectés par les modifications implémentées dans ce service.
 
@@ -279,8 +278,7 @@ S’agissant de la variation du fragment d’expérience concernée par le proce
 En entrée, la méthode reçoit les paramètres suivants :
 
 * `link`
-La 
-représentation `String` du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
+Représentation `String` du lien en cours de traitement. Il s’agit généralement d’une URL relative pointant vers la ressource sur l’instance de création.
 
 * `tag`
 Nom de l’élément HTML en cours de traitement.

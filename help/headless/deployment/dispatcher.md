@@ -3,10 +3,10 @@ title: Configuration du Dispatcher avec AEM découplé
 description: Dispatcher est une couche de mise en cache et de sécurité pour les environnements de publication Adobe Experience Manager. Plusieurs configurations sont utilisées pour ouvrir les points d’entrée GraphQL aux applications découplées.
 feature: Dispatcher, GraphQL API
 exl-id: 78a20021-910f-4cf0-87bf-6e2223994f76
-source-git-commit: 9bfb5bc4b340439fcc34e97f4e87d711805c0d82
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 100%
+source-wordcount: '232'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ Dans le cadre des filtres par défaut, les [points d’entrée GraphQL](/help/he
 /0060 { /type "allow" /method '(POST|OPTIONS)' /url "/content/_cq_graphql/*/endpoint.json" }
 ```
 
-Le caractère générique `*` ouvre plusieurs points d’entrée sur l’instance AEM. La requête qui utilise un point d’entrée GraphQL s’effectue à l’aide de `POST` et la réponse ne sera **pas** mise en cache.
+Le caractère générique `*` ouvre plusieurs points d’entrée sur l’instance AEM. La requête à l’aide d’un point de terminaison GraphQL est effectuée à l’aide de `POST` et la réponse sera **not** être mis en cache.
 
 ## Requêtes persistantes GraphQL
 

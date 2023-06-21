@@ -6,10 +6,10 @@ mini-toc-levels: 2
 feature: Asset Management,Connected Assets,Asset Distribution,User and Groups
 role: Admin,User,Architect
 exl-id: 2346f72d-a383-4202-849e-c5a91634617a
-source-git-commit: dbc6b5c0f11e52b45981cab36381258edcf6c167
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '3829'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ La fonctionnalité Ressources connectées prend en charge le cas d’utilisation
 
 ## Présentation de la fonction Ressources connectées {#overview-of-connected-assets}
 
-Lors de la modification de pages dans [!UICONTROL l’éditeur de page] en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un déploiement [!DNL Assets] différent qui agit comme source de ressources. Les administrateurs créent une intégration unique d’un déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Sites] avec un autre déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Assets]. Vous pouvez également utiliser des images Dynamic Media dans les pages web de votre site par le biais de ressources connectées et utiliser les fonctionnalités de Dynamic Media, telles que les paramètres de recadrage intelligent et d’image prédéfinis.
+Lors de la modification de pages dans [!UICONTROL l’éditeur de page] en tant que destination de la cible, les auteurs peuvent rechercher, parcourir et incorporer facilement des ressources à partir d’un déploiement [!DNL Assets] différent qui agit comme source de ressources. Les administrateurs créent une intégration unique d’un déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Sites] avec un autre déploiement de [!DNL Experience Manager] avec la fonctionnalité [!DNL Assets]. Vous pouvez également utiliser des images Dynamic Media dans les pages web de votre site par le biais de ressources connectées et utiliser les fonctionnalités Dynamic Media, telles que les paramètres de recadrage intelligent et d’image prédéfinis.
 
 Pour les auteurs [!DNL Sites], les ressources distantes sont disponibles en tant que ressources locales, en lecture seule. Cette fonctionnalité permet une recherche transparente et un accès aux ressources distantes dans l’éditeur de site. Pour tout autre cas d’utilisation qui peut nécessiter la disponibilité de l’ensemble des ressources sur Sites, envisagez de migrer les ressources en bloc au lieu d’utiliser les ressources connectées.
 
@@ -42,11 +42,11 @@ Avant d’utiliser ou de configurer cette fonctionnalité, vérifiez les points 
 * Les utilisateurs font partie de groupes d’utilisateurs appropriés sur chaque déploiement.
 * Pour les types de déploiements [!DNL Adobe Experience Manager], l’un des critères pris en charge est satisfait. [!DNL Experience Manager] as a Cloud Service [!DNL Assets] fonctionne avec [!DNL Experience Manager] 6.5. Pour plus d’informations sur les opérations de cette fonctionnalité dans [!DNL Experience Manager] 6.5, voir [Ressources connectées dans [!DNL Experience Manager] 6.5 [!DNL Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/use-assets-across-connected-assets-instances.html?lang=fr).
 
-   |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
-   |---|---|---|---|
-   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Pris en charge | Pris en charge | Pris en charge |
-   | **[!DNL Experience Manager] 6.5 [!DNL Assets] sur AMS** | Pris en charge | Pris en charge | Pris en charge |
-   | **[!DNL Experience Manager] 6.5 [!DNL Assets] on-premise** | Non pris en charge. | Non pris en charge. | Non pris en charge. |
+  | | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] sur AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] on-premise |
+  |---|---|---|---|
+  | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | Pris en charge | Pris en charge | Pris en charge |
+  | **[!DNL Experience Manager] 6.5 [!DNL Assets] sur AMS** | Pris en charge | Pris en charge | Pris en charge |
+  | **[!DNL Experience Manager] 6.5 [!DNL Assets] on-premise** | Non pris en charge. | Non pris en charge. | Non pris en charge. |
 
 ### Formats de fichiers pris en charge {#mimetypes}
 
@@ -144,7 +144,7 @@ Vous pouvez vérifier la connectivité entre les déploiements [!DNL Sites] et l
 ## Utilisation des ressources Dynamic Media {#dynamic-media-assets}
 
 
-Avec les ressources connectées, vous pouvez utiliser les ressources Images traitées par [!DNL Dynamic Media] à partir du déploiement DAM distant sur les pages Sites et utiliser les fonctionnalités de Dynamic Media, telles que les paramètres prédéfinis d’image et de recadrage intelligent.
+Avec les ressources connectées, vous pouvez utiliser les ressources d’image traitées par [!DNL Dynamic Media] à partir du déploiement DAM distant sur les pages Sites et utilisez les fonctionnalités Dynamic Media, telles que les paramètres de recadrage intelligent et les paramètres d’image prédéfinis.
 
 Pour utiliser [!DNL Dynamic Media] avec les ressources connectées :
 
@@ -356,11 +356,11 @@ Pour résoudre les erreurs courantes, procédez comme suit :
 
 * Si vous ne parvenez pas à accéder au déploiement DAM distant à partir du déploiement [!DNL Sites] local, assurez-vous que les cookies intersites sont autorisés et que [la même prise en charge des cookies de site](/help/security/same-site-cookie-support.md) est configurée. Si les cookies intersites sont bloqués, les déploiements de [!DNL Experience Manager] peuvent ne pas s’authentifier. Par exemple, [!DNL Google Chrome] en mode Incognito peut bloquer les cookies tiers. Pour autoriser les cookies dans le navigateur [!DNL Chrome], cliquez sur l’icône en forme d’œil dans la barre d’adresse, accédez à **Le site ne fonctionne pas** > **Bloqué**, sélectionnez l’URL de la gestion des actifs numériques (DAM) distante et autorisez le cookie de jeton de connexion. Vous pouvez également consulter la section concernant la [méthode pour activer les cookies tiers](https://support.google.com/chrome/answer/95647).
 
-   ![Erreur de cookie dans le navigateur Chrome en mode incognito](assets/chrome-cookies-incognito-dialog.png)
+  ![Erreur de cookie dans le navigateur Chrome en mode incognito](assets/chrome-cookies-incognito-dialog.png)
 
 * Si les références distantes ne sont pas récupérées et génèrent un message d’erreur, vérifiez si le déploiement de [!DNL Sites] est disponible et recherchez les problèmes de connectivité réseau. Réessayez ultérieurement pour vérifier si l’erreur est toujours générée. Le déploiement [!DNL Assets] tente à deux reprises d’établir une connexion avec le déploiement [!DNL Sites], puis signale un échec.
 
-   ![Échec de l’extraction des références distantes de la ressource](assets/reference-report-failure.png)
+  ![Échec de l’extraction des références distantes de la ressource](assets/reference-report-failure.png)
 
 **Voir également**
 

@@ -1,11 +1,11 @@
 ---
 title: Cadre de balisage AEM
-description: Balisage de contenu et utilisation du cadre de balisage AEM afin de la classer et de l’organiser.
+description: Balisez le contenu et utilisez l’infrastructure de balisage AEM pour le classer et l’organiser.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 100%
+source-wordcount: '1568'
+ht-degree: 96%
 
 ---
 
@@ -16,11 +16,11 @@ Le balisage permet de catégoriser et d’organiser le contenu. Les balises peuv
 * Voir [Utilisation des balises](/help/sites-cloud/authoring/features/tags.md) pour plus d’informations sur le balisage du contenu en tant qu’auteur de contenu.
 * Consultez Administration des balises pour savoir comment un administrateur peut créer et gérer des balises et déterminer à quel contenu elles ont été appliquées.
 
-Cet article se concentre sur le cadre sous-jacent qui prend en charge le balisage dans AEM et explique comment l’exploiter en tant que développeur.
+Cet article se concentre sur la structure sous-jacente qui prend en charge le balisage dans AEM et sur la manière de l’utiliser en tant que développeur.
 
 ## Présentation {#introduction}
 
-Pour baliser le contenu et utiliser le cadre de balisage AEM, procédez comme suit :
+Pour baliser le contenu et utiliser l’infrastructure de balisage AEM :
 
 * La balise doit exister en tant que nœud du type [`cq:Tag`](#cq-tag-node-type) sous le [nœud racine de taxonomie.](#taxonomy-root-node)
 * Le `NodeType` du nœud de contenu balisé doit inclure le mixin [`cq:Taggable`](#taggable-content-cq-taggable-mixin).
@@ -128,7 +128,6 @@ Le mixin `cq:OwnerTaggable`, qui hérite de `cq:Taggable`, sert à indiquer que 
 >* Pages (`cq:Page`) sur lesquelles le nœud `jcr:content` est de type `cq:PageContent`, ce qui inclut le mixin `cq:Taggable`.
 >* Ressources (`cq:Asset`) dans lesquelles le nœud `jcr:content/metadata` possède toujours le mixin `cq:Taggable`.
 
-
 ### Notation de type de nœud (CND) {#node-type-notation-cnd}
 
 Les définitions de type de nœud existent dans le référentiel sous la forme de fichiers CND. La notation CND est définie dans le cadre de la [documentation JCR](https://jackrabbit.apache.org/node-type-notation.html).
@@ -156,7 +155,7 @@ La propriété `cq:tags` est une table de chaînes `String` utilisée pour stock
 
 >[!NOTE]
 >
->Pour tirer parti de la fonctionnalité de balisage d’AEM, les applications personnalisées ne doivent pas définir de propriétés de balise autres que `cq:tags`.
+>Pour utiliser AEM fonctionnalité de balisage, les applications développées personnalisées ne doivent pas définir de propriétés de balise autres que `cq:tags`.
 
 ## Déplacement et fusion de balises {#moving-and-merging-tags}
 
@@ -171,25 +170,22 @@ Lorsqu’une balise A est déplacée ou fusionnée dans une balise B sous `/co
    * La balise A est ainsi masquée et n’est conservée dans le référentiel que pour résoudre les ID de balises dans les nœuds de contenu pointant vers la balise A.
    * Tag Garbage Collector supprime les balises telles que la balise A une fois que plus aucun nœud de contenu ne pointe vers elles.
    * Une valeur spéciale pour la propriété `cq:movedTo` est `nirvana` : elle est appliquée lorsque la balise est supprimée. Cependant, elle ne peut pas être supprimée du référentiel, car des sous-balises avec une propriété `cq:movedTo` doivent être conservées.
-
-      >[!NOTE]
-      >
-      >La propriété `cq:movedTo` n’est ajoutée à la balise déplacée ou fusionnée que si l’une de ces conditions est remplie :
-      >
-      > 1. La balise est utilisée dans le contenu (ce qui signifie qu’elle comporte une référence). OU
-      > 1. La balise comporte des enfants qui ont déjà été déplacés.
-
+     >[!NOTE]
+     >
+     >La propriété `cq:movedTo` n’est ajoutée à la balise déplacée ou fusionnée que si l’une de ces conditions est remplie :
+     >
+     > 1. La balise est utilisée dans le contenu (ce qui signifie qu’elle comporte une référence). OU
+     > 1. La balise comporte des enfants qui ont déjà été déplacés.
+     >
 * La balise B est créée (dans le cas d’un déplacement) et reçoit une propriété `cq:backlinks`.
    * `cq:backlinks` conserve les références dans l’autre direction, c’est-à-dire qu’elle conserve une liste de toutes les balises qui ont été déplacées vers la balise B ou fusionnées avec elle.
    * Cela est surtout nécessaire pour conserver les propriétés `cq:movedTo` à jour lorsque la balise B est également déplacée/fusionnée/supprimée ou que la balise B est activée, auquel cas toutes ses balises de liens retours doivent également être activées.
-
-      >[!NOTE]
-      >
-      >La propriété `cq:backlinks` n’est ajoutée à la balise déplacée ou fusionnée que si l’une de ces conditions est remplie :
-      >
-      > 1. La balise est utilisée dans le contenu (ce qui signifie qu’elle comporte une référence). OU
-      > 1. La balise comporte des enfants qui ont déjà été déplacés.
-
+     >[!NOTE]
+     >
+     >La propriété `cq:backlinks` n’est ajoutée à la balise déplacée ou fusionnée que si l’une de ces conditions est remplie :
+     >
+     > 1. La balise est utilisée dans le contenu (ce qui signifie qu’elle comporte une référence). OU
+     > 1. La balise comporte des enfants qui ont déjà été déplacés.
 
 La lecture d’une propriété `cq:tags` d’un nœud de contenu implique la résolution suivante :
 

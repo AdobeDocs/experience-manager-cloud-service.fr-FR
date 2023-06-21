@@ -2,10 +2,10 @@
 title: Présenter l’installation du module complémentaire de démonstration de référence
 description: Découvrez Cloud Manager et comment il est utilisé pour installer le module complémentaire.
 exl-id: 9418aac6-a8c4-43f7-b329-b02149fe2d53
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '983'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 98%
 
 ---
 
@@ -70,7 +70,7 @@ Les programmes peuvent être des programmes d’exploitation ou des programmes s
 * **Un programme d’exploitation** est créé pour permettre éventuellement un trafic réel lorsque votre programme est prêt à être lancé.
 * **Un programme sandbox** est créé pour la formation, l’exécution de démonstrations, l’activation, les POC, etc. et n’est pas destiné au trafic réel.
 
-Pour installer le module complémentaire de démonstration de référence d’AEM, vous devez créer un nouveau programme sandbox.
+Pour installer le module complémentaire de démonstration de référence d’AEM, créez un programme d’environnement de test.
 
 >[!NOTE]
 >

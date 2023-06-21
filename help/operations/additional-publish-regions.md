@@ -1,9 +1,9 @@
 ---
 title: Autres régions de publication
 description: Découvrez comment AEM as a Cloud Service prend en charge des régions de publication supplémentaires pour une disponibilité accrue et une latence réduite.
-source-git-commit: 9fccc1672aad243b648115e657396be1ce4ed614
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '545'
 ht-degree: 1%
 
 ---
@@ -38,7 +38,7 @@ D’autres régions de publication sont appliquées aux environnements interméd
 
 ## Points à prendre en compte concernant les réseaux avancés {#advanced-networking-considerations}
 
-Lorsqu’une région de publication supplémentaire est activée sur un programme avec une mise en réseau avancée déjà configurée, le trafic dans la région de publication supplémentaire qui correspond aux règles de mise en réseau avancées traverse par défaut la région Principale. Afin de profiter d&#39;une disponibilité accrue, il est recommandé de mettre en place une mise en réseau avancée sur les régions supplémentaires.
+Lorsqu’une région de publication supplémentaire est activée sur un programme avec une mise en réseau avancée déjà configurée, le trafic dans la région de publication supplémentaire qui correspond aux règles de mise en réseau avancées traverse par défaut la région Principale. Pour bénéficier d’une disponibilité accrue, il est recommandé de mettre en place une mise en réseau avancée sur les régions supplémentaires.
 
 Reportez-vous à la section [Configuration de réseau avancée pour d’autres régions de publication](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) pour plus d’informations, notamment sur l’ajout de configurations réseau avancées à d’autres régions sans perte de connectivité.
 

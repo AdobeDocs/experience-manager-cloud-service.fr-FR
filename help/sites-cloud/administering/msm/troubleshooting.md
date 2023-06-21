@@ -4,10 +4,10 @@ description: Découvrez comment résoudre les problèmes les plus courants liés
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: 7c0be1a7bdc9ccb788ba41eb6ee83b89df94f500
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 100%
+source-wordcount: '762'
+ht-degree: 88%
 
 ---
 
@@ -27,12 +27,12 @@ MSM enregistre plusieurs servlets qui peuvent être sollicités par le biais de 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Utilisez cette adresse sur une page de plan directeur pour récupérer la liste de toutes les Live Copies qui lui sont liées, avec des informations supplémentaires sur le statut des Live Copies.
    * par exemple :
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Utilisez cette adresse sur les pages Live Copy pour récupérer des informations détaillées sur leurs relations à leurs pages de plan directeur. Si la page n’est pas une Live Copy, rien n’est renvoyé.
    * par exemple :
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Ces servlets génèrent des messages du journal DEBUG via le journal `com.day.cq.wcm.msm` qui peuvent également être utiles.
 
@@ -55,7 +55,7 @@ Les versions précédentes des servlets renvoyaient des informations calculées 
 
 Les informations présentes dans ces propriétés doivent se refléter dans l’interface utilisateur. Toutefois, lors de la résolution des problèmes, il peut s’avérer utile d’observer directement le comportement de MSM dans le référentiel lorsque des actions MSM se produisent.
 
-La connaissance de ces propriétés peut également s’avérer utile pour interroger votre référentiel et découvrir des jeux de pages qui se trouvent dans des états particuliers. Par exemple :
+Connaître ces propriétés peut également s’avérer utile afin que vous puissiez interroger votre référentiel et découvrir des ensembles de pages qui se trouvent dans des états particuliers. Par exemple :
 
 * `select * from cq:LiveSync` renvoie toutes les pages racine Live Copy.
 
@@ -82,9 +82,9 @@ Vous pouvez cependant :
 
 Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une page Live Copy si elle n’existait pas encore (par exemple, lorsqu’elle est déployée pour la première fois ou que la page Live Copy a été supprimée manuellement).
 
-Dans ce dernier cas, cependant, si une page sans propriété `cq:LiveRelationship` porte le même nom, cette page sera renommée en conséquence, avant la création de la page Live Copy.
+Dans ce cas, toutefois, si une page sans `cq:LiveRelationship` existe avec le même nom, cette page est renommée en conséquence avant la création de la page Live Copy.
 
-Par défaut, le déploiement attend soit une page Live Copy liée, sur laquelle les mises à jour des plans détaillés seront déployées, soit une page vide au moment de la création d’une page Live Copy.
+Par défaut, le déploiement attend soit une page Live Copy liée, sur laquelle les mises à jour des plans directeurs sont déployées, soit aucune page à l’emplacement, lors de la création d’une page Live Copy.
 
 Si une page « autonome » est trouvée, MSM choisit de renommer cette page et de créer une page Live Copy distincte et liée.
 

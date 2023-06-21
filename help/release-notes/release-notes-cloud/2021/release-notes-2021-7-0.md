@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 848f6a29-2e0f-4976-8ed7-6b7f69408c1b
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1316'
-ht-degree: 98%
+source-wordcount: '1315'
+ht-degree: 94%
 
 ---
 
@@ -34,7 +34,7 @@ Regardez la vidéo [Aperçu de la version de juillet 2021](https://video.tv.ado
 
 ### Nouveautés {#what-is-new-foundation}
 
-* Configuration Dispatcher plus flexible : les projets peuvent être plus facilement organisés. Par exemple, vous pouvez désormais inclure plusieurs fichiers de règle de réécriture qui reflètent la structure de votre site. [Découvrez](/help/implementing/dispatcher/disp-overview.md#validation-debug) ce mode flexible, notamment comment structurer votre configuration Dispatcher pour en tirer parti.
+* Configuration Dispatcher plus flexible : les projets peuvent être plus facilement organisés. Par exemple, vous pouvez désormais inclure plusieurs fichiers de règle de réécriture qui reflètent la structure de votre site. [En savoir plus sur](/help/implementing/dispatcher/disp-overview.md#validation-debug) ce mode flexible, y compris comment structurer votre configuration Dispatcher afin que vous puissiez en profiter.
 * L’interface utilisateur de réplication de l’arborescence sous l’onglet « Distribuer » de l’agent de réplication doit être considérée comme obsolète et doit être supprimée après le 30 septembre. [Découvrez](/help/operations/replication.md#tree-activation) les stratégies de réplication alternatives.
 * L’offre groupée `org.apache.sling.datasource-1.0.4.jar` pour la prise en charge de la source de données Sling a été supprimée car elle présente des fonctionnalités obsolètes et n’est pas utilisée par les clients.
 
@@ -42,23 +42,23 @@ Regardez la vidéo [Aperçu de la version de juillet 2021](https://video.tv.ado
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* La fonctionnalité d’automatisation du contenu permet à [!DNL Experience Manager Assets] d’exploiter les API [!DNL Adobe Creative Cloud] pour automatiser la production de ressources à grande échelle. Elle améliore la vitesse du contenu en réduisant considérablement le temps et les itérations requis pour créer des variantes d’une même ressource. La fonctionnalité ne nécessite aucune programmation et ne fonctionne pas dans la gestion des ressources numériques. Voir [génération de variantes de ressources à l’aide de l’intégration de Creative Cloud](/help/assets/cc-api-integration.md).
+* La fonctionnalité d’automatisation de contenu permet [!DNL Experience Manager Assets] utilisez la méthode [!DNL Adobe Creative Cloud] API pour automatiser la production de ressources à grande échelle. Elle améliore la vitesse du contenu en réduisant considérablement le temps et les itérations requis pour créer des variantes d’une même ressource. La fonctionnalité ne nécessite aucune programmation et ne fonctionne pas dans la gestion des ressources numériques. Voir [génération de variantes de ressources à l’aide de l’intégration de Creative Cloud](/help/assets/cc-api-integration.md).
 
-* [!DNL Experience Manager Assets] inclut la visionneuse PDF [!DNL Document Cloud] pour prévisualiser les documents PDF en mode natif. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF de plusieurs pages sans traitement ni conversion de fichiers. Cette fonctionnalité améliore la parité avec [!DNL Experience Manager] 6.5. Les commandes disponibles dans la visionneuse incluent le zoom, la navigation vers les pages, le désancrage des commandes et l’affichage en plein écran. Les cas utilisateurs permettent également de prévisualiser et d’accéder aux pages et aux signets. Les commentaires sur le fichier lui-même sont pris en charge et l’ajout de commentaires et d’annotations sur le contenu du fichier PDF sera ajouté dans une version ultérieure.
+* [!DNL Experience Manager Assets] inclut la visionneuse PDF [!DNL Document Cloud] pour prévisualiser les documents PDF en mode natif. Cette fonctionnalité permet aux utilisateurs de prévisualiser des fichiers PDF de plusieurs pages sans traitement ni conversion de fichiers. Cette fonctionnalité améliore la parité avec [!DNL Experience Manager] 6.5. Les commandes disponibles dans la visionneuse incluent le zoom, la navigation vers les pages, le désancrage des commandes et l’affichage en plein écran. Les cas utilisateurs permettent également de prévisualiser et d’accéder aux pages et aux signets. Les commentaires sur le fichier lui-même sont pris en charge. Des commentaires et des annotations sur le contenu du fichier du PDF seront ajoutés dans une prochaine version.
 
-   ![Aperçu des fichiers PDF dans [!DNL Experience Manager] à l’aide de la visionneuse PDF](/help/assets/assets/preview-pdf-file-viewer.png)
+  ![Aperçu des fichiers PDF dans [!DNL Experience Manager] à l’aide de la visionneuse PDF](/help/assets/assets/preview-pdf-file-viewer.png)
 
 * La fonctionnalité de téléchargement Linkshare utilise des téléchargements asynchrones qui augmentent la vitesse de téléchargement. Voir [Téléchargement des ressources partagées à l’aide du partage de liens](/help/assets/download-assets-from-aem.md#link-share-download).
 
-   ![Boîte de réception de téléchargement](/help/assets/assets/download-inbox.png)
+  ![Boîte de réception de téléchargement](/help/assets/assets/download-inbox.png)
 
 * Les paramètres d’affichage sont améliorés pour permettre aux utilisateurs de choisir une vue par défaut et un paramètre de tri par défaut.
 
-   ![Définition de l’affichage par défaut dans les [!UICONTROL Paramètres d’affichage]](/help/assets/assets/view-settings-for-defaults.png)
+  ![Définition de l’affichage par défaut dans les [!UICONTROL Paramètres d’affichage]](/help/assets/assets/view-settings-for-defaults.png)
 
 * Les utilisateurs peuvent rechercher et filtrer les dossiers en fonction des prédicats de propriété.
 
-   ![Filtrage des dossiers de recherche à l’aide de prédicats de recherche](/help/assets/assets/search-folders-via-predicates.png)
+  ![Filtrage des dossiers de recherche à l’aide de prédicats de recherche](/help/assets/assets/search-folders-via-predicates.png)
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Assets] {#assets-prerelease-features}
 

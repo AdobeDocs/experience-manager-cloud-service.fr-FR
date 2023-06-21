@@ -2,10 +2,10 @@
 title: Validation des transferts de contenu
 description: Utiliser l’outil de transfert de contenu pour valider les transferts de contenu
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: c1f60a1ead466b47694b8918e5b39011041c5f25
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 84%
+source-wordcount: '1062'
+ht-degree: 75%
 
 ---
 
@@ -19,7 +19,7 @@ Les utilisateurs peuvent déterminer de manière fiable si tout le contenu extra
 >
 >Cette fonctionnalité sera disponible à partir de la version 1.8.x de l’outil de transfert de contenu (CTT). L’environnement cible AEM Cloud Service doit au moins utiliser la version 6158 ou ultérieure. L’environnement source doit également être configuré pour fonctionner avec une [précopie](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#setting-up-pre-copy-step). La fonctionnalité de validation recherche le fichier azcopy.config sur la source. S’il ne trouve pas ce fichier, la validation ne s’exécute pas. Pour en savoir plus sur la configuration d’un fichier azcopy.config, consultez [cette page](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md#configure-azcopy-config-file).
 
-La validation d’un transfert de contenu est une fonctionnalité facultative. L’activation de cette fonctionnalité augmentera le temps nécessaire à l’exécution d’une extraction et d’une ingestion. Pour utiliser cette fonctionnalité, activez-la dans la console système de l’environnement d’AEM source en procédant comme suit :
+La validation d’un transfert de contenu est une fonctionnalité facultative. L’activation de cette fonctionnalité augmentera le temps nécessaire à l’exécution d’une extraction et d’une ingestion. Pour utiliser cette fonctionnalité, activez-la dans la console système de l’environnement d’AEM source en procédant comme suit :
 
 1. Accédez à la console web Adobe Experience Manager sur votre instance source en accédant à **Outils - Opérations - Console web** ou directement à l’URL à l’adresse *https://serveraddress:serverport/system/console/configMgr*
 1. Recherchez **Configuration du service d’extraction de l’outil de transfert de contenu**
@@ -36,7 +36,7 @@ Pour plus d’informations sur l’installation de l’outil de transfert de con
 
 Lorsque la validation de la migration est activée dans l’environnement de l’AEM source, démarrez une extraction.
 
-Si **Remplacer le conteneur d’évaluation lors de l’extraction** est activé, tous les noeuds impliqués dans l’extraction sont consignés dans le résumé du chemin d’extraction. Lorsque ce paramètre est utilisé, il est important d’activer **Effacer le contenu existant sur l’instance Cloud avant l’ingestion** lors de l’ingestion, sans quoi il se peut qu’il manque des noeuds dans le résumé d’ingestion. Il s’agit des noeuds qui sont déjà présents sur la cible à partir des ingestions précédentes.
+If **Remplacer le conteneur d’évaluation lors de l’extraction** est activée, tous les noeuds impliqués dans l’extraction sont consignés dans le résumé du chemin d’extraction. Lorsque ce paramètre est utilisé, il est important d’activer **Effacer le contenu existant sur l’instance Cloud avant l’ingestion** lors de l’ingestion, sans quoi il se peut qu’il manque des noeuds dans le résumé d’ingestion. Il s’agit des noeuds qui sont déjà présents sur la cible à partir des ingestions précédentes.
 
 Pour une illustration graphique, reportez-vous aux exemples ci-dessous :
 
@@ -44,37 +44,37 @@ Pour une illustration graphique, reportez-vous aux exemples ci-dessous :
 
 * **Extraction (remplacer)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-01.png)
 
 * **Ingestion (effacer)**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-02.png)
 
 * **Remarques**
 
-   Cette combinaison de « Remplacer » et « Effacer » permet d’obtenir des résultats de validation cohérents, même pour les ingestions répétées.
+  Cette combinaison de « Remplacer » et « Effacer » permet d’obtenir des résultats de validation cohérents, même pour les ingestions répétées.
 
 ### Exemple 2 {#example-2}
 
 * **Extraction**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-03.png)
 
 * **Ingestion**
 
-   ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
+  ![image](/help/journey-migration/content-transfer-tool/assets-ctt/validation-04.png)
 
 * **Remarques**
 
-   Cette combinaison de « Remplacer » et « Effacer » permet d’obtenir des résultats de validation cohérents pour l’ingestion initiale.
+  Cette combinaison de « Remplacer » et « Effacer » permet d’obtenir des résultats de validation cohérents pour l’ingestion initiale.
 
-   Lorsque l’ingestion est répétée, le résumé d’ingestion est vide et la validation échoue. Le résumé d’ingestion est vide, car tous les noeuds de cette extraction sont déjà présents sur la cible.
+  Si l’ingestion est répétée, le résumé d’ingestion est vide et la validation semble avoir échoué. Le condensé d’ingestion est vide, car tous les noeuds de cette extraction seront déjà présents sur la cible.
 
 Une fois l’extraction terminée, commencez l’ingestion.
 
 La partie supérieure du journal d’ingestion contiendra une entrée semblable à `aem-ethos/tools:1.2.438`. Assurez-vous que ce numéro de version est **1.2.438** ou ultérieur, sinon la validation n’est pas prise en charge par la version d’AEM as a Cloud Service que vous utilisez.
 
-Une fois l’ingestion terminée et la validation lancée, l’entrée de journal suivante est notée dans le journal d’ingestion :
+Une fois l’ingestion terminée et la validation en cours, l’entrée de journal suivante est indiquée dans le journal d’ingestion :
 
 ```
 Gathering artifacts for migration validation...
@@ -136,7 +136,7 @@ En plus d’être inclus dans le journal d’ingestion, le rapport de validation
 
 Voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour lire les détails des migrations principales et les raisons pour lesquelles cela est nécessaire.
 
-Une fois l&#39;extraction et l&#39;ingestion terminées, un résumé et un rapport de la migration principale seront disponibles. Ces informations peuvent être utilisées pour valider les utilisateurs et les groupes qui ont été migrés avec succès et, peut-être, pour déterminer pourquoi certains n’ont pas été migrés.
+Une fois l’extraction et l’ingestion terminées, un résumé et un rapport de la migration principale sont disponibles. Ces informations peuvent être utilisées pour valider les utilisateurs et les groupes qui ont été migrés avec succès et, peut-être, pour déterminer pourquoi certains n’ont pas été migrés.
 
 Pour afficher ces informations, accédez à Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu. Accédez à **Tâches d’ingestion** et localisez l’ingestion que vous souhaitez vérifier. Cliquez sur les trois points (**...**) pour cette ingestion, puis cliquez sur **Afficher le résumé principal** dans la liste déroulante.
 

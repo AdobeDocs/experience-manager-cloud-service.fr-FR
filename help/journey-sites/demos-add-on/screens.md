@@ -2,10 +2,10 @@
 title: Activez AEM Screens pour votre site de démonstration
 description: Découvrez les étapes pour activer l’expérience complète AEM Screens as a Cloud Service sur votre site de démonstration.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: 8ee3de944290a917c320ad9aa4205b28ad1620bb
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2699'
-ht-degree: 98%
+source-wordcount: '2696'
+ht-degree: 97%
 
 ---
 
@@ -90,7 +90,7 @@ La dernière image des canaux d’entrée est également ciblée (c’est-à-dir
 
 ## Déploiement d’un projet Screens de démonstration {#deploy-project}
 
-Pour utiliser le contenu de démonstration dans le Sandbox que vous avez créé à l’étape [Créer un programme](create-program.md), un site doit être créé à partir d’un modèle.
+Pour utiliser le contenu de démonstration dans l’environnement de test que vous avez créé dans le [Créer un programme](create-program.md) , un site doit être créé à partir d’un modèle.
 
 Si vous n’avez pas encore créé de site de démonstration We.Cafe, procédez simplement comme indiqué dans la section [Créer un site de démonstration](create-site.md). Au moment de sélectionner le modèle, il vous suffit de choisir le **Modèle de site web We.Cafe**.
 
@@ -207,7 +207,7 @@ Maintenant que vous avez créé votre source de données en tant que feuille de 
    }
    ```
 
-AEM Screens peut utiliser ce même service pour accéder aux données météorologiques simulées. Cette configuration sera effectuée à l’étape suivante.
+AEM Screens peut utiliser ce même service pour accéder aux données météorologiques simulées configurées à l’étape suivante.
 
 ### Configuration de ContextHub {#configure-contexthub}
 

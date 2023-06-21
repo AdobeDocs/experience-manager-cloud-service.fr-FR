@@ -9,11 +9,11 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 3046
 thumbnail: 28952.jpg
-exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94,7f6e04a2-89e9-4613-8ea8-9dac1acea30b
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 4385c9e5-2b25-4f95-952f-72349431cf94
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 100%
+source-wordcount: '385'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ Pour connecter un site AEM et les composants principaux AEM CIF à une vue de ma
    * Sélectionnez la configuration de base que vous avez créée.
    * Créez une configuration en suivant les étapes décrites au point 2 ci-dessus.
 
-   Cette nouvelle configuration sera créée en tant que configuration enfant de la configuration de base. Vous pouvez maintenant accéder à Outils -> Général -> Explorateur de configurations et créer les paramètres de configuration.
+   Cette nouvelle configuration est créée en tant que configuration enfant de la configuration de base. Vous pouvez maintenant accéder à Outils -> Général -> Explorateur de configurations et créer les paramètres de configuration.
 
    >[!TIP]
    >

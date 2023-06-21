@@ -2,10 +2,10 @@
 title: Génération de jetons d’accès pour les API côté serveur
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé.
 exl-id: 20deaf8f-328e-4cbf-ac68-0a6dd4ebf0c9
-source-git-commit: dd869397feca593f93ee8ed5030828e01cc45c4d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2132'
-ht-degree: 100%
+source-wordcount: '2123'
+ht-degree: 92%
 
 ---
 
@@ -37,7 +37,7 @@ Le flux de serveur à serveur comprend les étapes suivantes :
 
 Les utilisateurs et utilisatrices ayant accès à la Developer Console dans AEM as a Cloud Service y voient l’onglet Intégrations correspondant à un environnement donné. Un utilisateur ou une utilisatrice disposant du rôle d’administration d’environnement d’AEM as a Cloud Service peut créer, afficher ou gérer des informations d’identification.
 
-Cliquez sur le bouton **Créer un nouveau compte technique** pour créer un nouvel ensemble d’informations d’identification, qui comprend l’identifiant client, le secret client, la clé privée, le certificat et la configuration pour les niveaux de création et de publication de l’environnement, quelle que soit le pod choisi.
+Cliquez sur le bouton **Créer un compte technique** , un nouvel ensemble d’informations d’identification est créé. Il comprend l’identifiant client, le secret client, la clé privée, le certificat et la configuration pour les niveaux de création et de publication de l’environnement, quelle que soit la sélection de la capsule.
 
 ![Créer un nouveau compte technique](/help/implementing/developing/introduction/assets/s2s-createtechaccount.png)
 
@@ -67,7 +67,7 @@ L’application qui appelle AEM doit pouvoir accéder aux informations d’ident
 
 ### Génération d’un jeton JWT et échange contre un jeton d’accès  {#generate-a-jwt-token-and-exchange-it-for-an-access-token}
 
-Utilisez les informations d’identification pour créer un jeton JWT lors d’un appel au service IMS d’Adobe afin de récupérer un jeton d’accès valide pendant 24 heures.
+Utilisez les informations d’identification pour créer un jeton JWT dans un appel au service IMS d’Adobe afin de récupérer un jeton d’accès, qui est valide pendant 24 heures.
 
 Il est possible d’échanger les informations d’identification d’AEM CS Service contre un jeton d’accès à l’aide de bibliothèques clientes conçues à cet effet. Ces bibliothèques clientes sont disponibles dans le [référentiel public GitHub d’Adobe](https://github.com/adobe/aemcs-api-client-lib). Il contient des instructions plus détaillées et les informations les plus récentes.
 
@@ -162,7 +162,7 @@ Vous pouvez également vérifier que le compte technique apparaît dans la liste
 
 <u>**Définir les autorisations de groupe appropriées**</u>
 
-Configurez pour finir le groupe avec les autorisations appropriées nécessaires pour appeler ou verrouiller correctement vos API. Vous pouvez le faire en procédant comme suit :
+Enfin, configurez le groupe avec les autorisations appropriées nécessaires pour appeler ou verrouiller correctement vos API. Vous pouvez le faire en procédant comme suit :
 
 1. Connectez-vous à l’instance de création appropriée et accédez à **Paramètres** - **Sécurité** - **Autorisations**
 1. Recherchez le nom du groupe correspondant au profil de produit dans le volet de gauche (dans ce cas, API en lecture seule) et cliquez dessus :
@@ -217,9 +217,9 @@ Pour ce faire, vous pouvez :
 
 * Utiliser le bouton **Ajouter un certificat** sous **Intégrations** - **Comptes techniques** dans la Developer Console, tel qu’indiqué ci-dessous.
 
-   ![Actualisation des informations d’identification](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
+  ![Actualisation des informations d’identification](/help/implementing/developing/introduction/assets/s2s-credentialrefresh.png)
 
-* Une fois que vous avez appuyé sur le bouton, un ensemble d’informations d’identification avec un nouveau certificat est généré. Installez les nouvelles informations d’identification sur votre serveur hors AEM et assurez-vous que la connectivité est correcte, sans supprimer les anciennes informations d’identification.
+* Après avoir appuyé sur le bouton, un ensemble d’informations d’identification contenant un nouveau certificat est généré. Installez les nouvelles informations d’identification sur votre serveur hors AEM et assurez-vous que la connectivité est correcte, sans supprimer les anciennes informations d’identification.
 * Assurez-vous que les nouvelles informations d’identification sont utilisées à la place des anciennes lors de la génération du jeton d’accès.
 * Vous pouvez éventuellement révoquer (puis supprimer) le certificat précédent afin qu’il ne puisse plus être utilisé pour s’authentifier avec AEM as a Cloud Service.
 
@@ -229,7 +229,7 @@ Si la clé privée est compromise, vous devez créer des informations d’identi
 
 Pour ce faire, procédez comme suit :
 
-1. Tout d’abord, ajoutez la nouvelle clé. Cela génère des informations d’identification avec une nouvelle clé privée et un nouveau certificat. La nouvelle clé privée sera marquée dans l’interface utilisateur comme **actuelle** et sera dorénavant utilisée pour toutes les nouvelles informations d’identification de ce compte technique. Notez que les informations d’identification associées aux anciennes clés privées restent valides jusqu’à leur révocation. Pour ce faire, appuyez sur les trois points (**...**) sous votre compte technique actuel et appuyez sur **Ajouter une clé privée** :
+1. Tout d’abord, ajoutez la nouvelle clé. Cette clé génère des informations d’identification avec une nouvelle clé privée et un nouveau certificat. La nouvelle clé privée est marquée comme **current** et sera donc utilisé pour toutes les nouvelles informations d’identification de ce compte technique à venir. Notez que les informations d’identification associées aux anciennes clés privées restent valides jusqu’à leur révocation. Pour ce faire, appuyez sur les trois points (**...**) sous votre compte technique actuel et appuyez sur **Ajouter une clé privée** :
 
    ![Ajouter une clé privée](/help/implementing/developing/introduction/assets/s2s-addnewprivatekey.png)
 
@@ -237,7 +237,7 @@ Pour ce faire, procédez comme suit :
 
    ![Confirmer l’ajout d’une nouvelle clé privée](/help/implementing/developing/introduction/assets/s2s-addprivatekeyconfirm.png)
 
-   Un nouvel onglet de navigation avec les nouvelles informations d’identification s’ouvre et l’interface utilisateur est mise à jour afin d’afficher les deux clés privées, la nouvelle clé étant marquée comme **actuelle** :
+   Un nouvel onglet de navigation avec les nouvelles informations d’identification s’ouvre et l’interface utilisateur est mise à jour afin d’afficher à la fois les clés privées avec le nouveau marqué comme **current**:
 
    ![Clés privées dans l’interface utilisateur](/help/implementing/developing/introduction/assets/s2s-twokeys.png)
 

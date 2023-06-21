@@ -2,10 +2,10 @@
 title: Conseils de développement sur AEM as a Cloud Service
 description: Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: 6a26006a20ed2f1d18ff376863b3c8b149de1157
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2591'
+ht-degree: 91%
 
 ---
 
@@ -23,7 +23,7 @@ Ce document présente les conseils de développement sur AEM as a Cloud Service
 
 Le code s’exécutant dans AEM as a Cloud Service doit savoir qu’il s’exécute toujours dans une grappe. Cela signifie qu’il y a toujours plusieurs instances en cours d’exécution. Le code doit être résilient, d’autant plus qu’une instance peut être arrêtée à tout moment.
 
-Lors de la mise à jour d’AEM as a Cloud Service, il y aura des instances où l’ancien et le nouveau code s’exécuteront en parallèle. Par conséquent, l’ancien code ne doit pas rompre avec le contenu créé par le nouveau code et le nouveau code doit pouvoir traiter l’ancien contenu.
+Lors de la mise à jour d’AEM as a Cloud Service, il existe des instances avec l’ancien et le nouveau code en cours d’exécution en parallèle. Par conséquent, l’ancien code ne doit pas rompre avec le contenu créé par le nouveau code et le nouveau code doit pouvoir traiter l’ancien contenu.
 
 S’il est nécessaire d’identifier l’instance principale dans la grappe, l’API Apache Sling Discovery peut être utilisée pour le détecter.
 
@@ -33,13 +33,13 @@ Le statut ne doit pas être conservé dans la mémoire, mais conservé dans le r
 
 ## Statut sur le système de fichiers {#state-on-the-filesystem}
 
-Le système de fichiers de l’instance ne doit pas être utilisé dans AEM as a Cloud Service. Le disque est éphémère et sera effacé lorsque les instances sont recyclées. L’utilisation limitée du système de fichiers pour le stockage temporaire lié au traitement des demandes uniques est possible, mais ne doit pas être excessive dans le cas des fichiers volumineux. En effet, elle peut avoir un impact négatif sur le quota d’utilisation des ressources et rencontrer des limitations de disque.
+Le système de fichiers de l’instance ne doit pas être utilisé dans AEM as a Cloud Service. Le disque est éphémère et est effacé lorsque les instances sont recyclées. L’utilisation limitée du système de fichiers pour le stockage temporaire lié au traitement des demandes uniques est possible, mais ne doit pas être excessive dans le cas des fichiers volumineux. En effet, elle peut avoir un impact négatif sur le quota d’utilisation des ressources et rencontrer des limitations de disque.
 
 Par exemple, si l’utilisation du système de fichiers n’est pas prise en charge, le niveau de publication doit s’assurer que toutes les données qui doivent être conservées sont transférées vers un service externe pour un stockage à plus long terme.
 
 ## Observation {#observation}
 
-De même, compte tenu de tout ce qui se passe de manière asynchrone, comme les actions sur des événements d’observation, il n’est pas garanti que le système de fichiers soit exécuté localement et il doit donc être utilisé avec soin. Cela est vrai pour les événements JCR comme pour les événements de ressources Sling. Au moment d’un changement, l’instance peut être supprimée et remplacée par une autre instance. D’autres instances de la topologie actives à ce moment-là pourront réagir à cet événement. Dans ce cas, cependant, il ne s’agira pas d’un événement local et il se pourrait même qu’il n’y ait pas de leader actif dans le cas d’une élection de leader en cours au moment de l’émission de l’événement.
+De même, compte tenu de tout ce qui se passe de manière asynchrone, comme les actions sur des événements d’observation, il n’est pas garanti que le système de fichiers soit exécuté localement et il doit donc être utilisé avec soin. Cela est vrai pour les événements JCR comme pour les événements de ressources Sling. Au moment d’un changement, l’instance peut être supprimée et remplacée par une autre instance. D’autres instances de la topologie principales à ce moment-là peuvent réagir à cet événement. Dans ce cas, cependant, il ne s’agira pas d’un événement local et il se pourrait même qu’il n’y ait pas de leader actif dans le cas d’une élection de leader en cours au moment de l’émission de l’événement.
 
 ## Tâches en arrière-plan et tâches à long terme {#background-tasks-and-long-running-jobs}
 
@@ -47,7 +47,7 @@ Le code exécuté en tant que tâches en arrière-plan doit prendre en compte le
 
 Afin de limiter les problèmes, il est nécessaire d’éviter les tâches à long terme autant que possible, et de faire en sorte qu’elles puissent autant que possible être reprises après avoir été interrompues. Pour exécuter de telles tâches, utilisez les tâches Sling qui offrent la garantie qu’elles redémarreront au moins une fois si elles sont interrompues, et qu’elles seront donc réexécutées dès que possible. Elles ne doivent cependant probablement pas recommencer depuis le début. Pour planifier de telles tâches, il est préférable d’utiliser le planificateur de [tâches Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#jobs-guarantee-of-processing), car il permet également l’exécution au moins une fois.
 
-Le planificateur Sling Commons ne doit pas être utilisé pour la planification, car l’exécution ne peut pas être garantie. Il permet simplement d’augmenter la probabilité de la programmation.
+Le planificateur Sling Commons ne doit pas être utilisé pour la planification, car l’exécution ne peut pas être garantie. Il est simplement plus probable qu’elle soit planifiée.
 
 De même, avec tout ce qui se passe de manière asynchrone, comme les actions sur des événements d’observation (c’est-à-dire des événements JCR ou des événements de ressources Sling), il n’est pas garanti qu’ils soient exécutés et doivent donc être utilisés avec soin. C’est déjà le cas actuellement pour les déploiements d’AEM.
 
@@ -101,11 +101,11 @@ Dans les environnements cloud, les développeurs peuvent télécharger les journ
 
 **Définition du niveau de journalisation**
 
-Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGi Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. Dans le futur, il est possible que des mécanismes soient ajoutés pour pouvoir modifier plus rapidement le niveau du journal.
+Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGi Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. À l’avenir, il est possible qu’il existe des mécanismes pour modifier plus rapidement le niveau de journalisation.
 
 >[!NOTE]
 >
->Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer dans un environnement de développement local, puis les transmettre à une instance AEM as a Cloud Service. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md).
+>Pour effectuer les modifications de configuration répertoriées ci-dessous, vous devez les créer dans un environnement de développement local, puis les envoyer vers une instance as a Cloud Service AEM. Pour plus d’informations sur la procédure à suivre, voir [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md).
 
 **Activation du niveau de journalisation DEBUG**
 
@@ -194,7 +194,7 @@ Comme illustré ci-dessous, les développeurs peuvent résoudre les dépendances
 
 ![Console de développement 4](/help/implementing/developing/introduction/assets/devconsole4.png)
 
-Pour les programmes de Production, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, « Cloud Manager – Rôle de développeur » est nécessaire pour les vidages de statut et le navigateur de référentiels. Les utilisateurs doivent également être définis dans le profil de produit Utilisateurs d’AEM ou Administrateurs d’AEM sur les services de création et de publication afin d’afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
+Pour les programmes de Production, l’accès à Developer Console est défini par la mention « Cloud Manager – Rôle de développeur » dans l’Admin Console. Pour les programmes Sandbox, Developer Console est disponible pour tout utilisateur disposant d’un profil de produit lui permettant d’accéder à AEM as a Cloud Service. Pour tous les programmes, &quot;Cloud Manager - Rôle de développeur&quot; est nécessaire pour les vidages d’état. Le navigateur de référentiel et les utilisateurs doivent également être définis dans AEM profil de produit Utilisateurs ou AEM administrateurs sur les services de création et de publication afin d’afficher les données des deux services. Pour plus d’informations sur la configuration des autorisations des utilisateurs, voir [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
 
 ### Surveillance des performances {#performance-monitoring}
 

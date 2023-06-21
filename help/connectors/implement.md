@@ -2,10 +2,10 @@
 title: Implémentation d’un connecteur AEM
 description: Implémentation d’un connecteur AEM
 exl-id: 70024424-8c52-493e-bbc9-03d238b8a5f5
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '968'
-ht-degree: 100%
+source-wordcount: '966'
+ht-degree: 93%
 
 ---
 
@@ -28,7 +28,7 @@ AEM est une solution de gestion de l’expérience web haut de gamme qui propose
 * Configuration et rendu d’un composant d’interface utilisateur personnalisé. Vous pouvez, par exemple, autoriser un auteur à faire glisser un composant vidéo et à configurer une vidéo spécifique pour qu’elle soit lue sur le site en direct.
 * Utilisation d’une ressource avec un service partenaire. Il s’agit, par exemple, de l’envoi d’une ressource vers une plateforme vidéo lorsqu’une page est publiée.
 * Analyse d’un site, d’une page ou d’une ressource dans AEM Admin Console. Il peut s’agir, par exemple, de recommandations d’optimisation du moteur de recherche pour une page existante ou dépubliée.
-* Accès au niveau de la page aux données utilisateur gérées par un service externe. Il peut s’agir, par exemple, de l’exploitation d’informations démographiques pour personnaliser l’expérience sur le site. Apprenez-en plus sur ContextHub, un framework qui permet de stocker, de manipuler et de présenter des données de contexte.
+* Accès au niveau de la page aux données utilisateur gérées par un service externe. Par exemple, utilisez des informations démographiques pour personnaliser l’expérience du site. Apprenez-en plus sur ContextHub, un framework qui permet de stocker, de manipuler et de présenter des données de contexte.
 * Traduction d’une copie de site ou de métadonnées de ressource. Rendez-vous sur la page [AEM Translation Framework Bootstrap Connector](https://github.com/Adobe-Marketing-Cloud/aem-translation-framework-bootstrap-connector) pour obtenir un exemple qui utilise AEM Translation Framework, l’implémentation privilégiée pour les connecteurs de traduction.
 
 
@@ -52,7 +52,7 @@ Outre la documentation statique ci-dessus, Adobe et la communauté AEM proposent
 Règles de structure du package
 -----------------------
 
-Afin de prendre en charge les déploiements continus, les packages AEM as a Cloud Service, dont les connecteurs sont des exemples, présentent une séparation stricte entre le contenu « non modifiable » et le contenu « modifiable ». Les packages doivent être clairement séparés entre ceux qui incluent :
+Pour prendre en charge les déploiements en continu, AEM modules as a Cloud Service, dont les connecteurs sont des exemples, présentent une séparation stricte entre le contenu &quot;non modifiable&quot; et le contenu &quot;modifiable&quot;. Les packages doivent être clairement séparés entre ceux qui incluent :
 
 * `/apps`
 * `/content` et `/conf`
@@ -74,7 +74,7 @@ Le code sur lequel est basée la configuration du connecteur constitue l’un de
 Configurations basées sur le contexte
 -----------------------------
 
-L’API [Context-Aware Configuration](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) permet de superposer la configuration entre différents dossiers, dont `/libs`, `/apps` et `/conf`, et sous-dossiers sous `/conf`. L’héritage est pris en charge, de telle sorte qu’un client puisse définir la configuration globale tout en apportant des modifications spécifiques à chaque microsite. Puisqu’il est possible d’exploiter cette fonctionnalité pour les configurations Cloud Services, le code de connecteur doit faire référence à la configuration à l’aide de l’API Context-Aware Configurations au lieu de faire référence à un nœud de configuration spécifique.
+L’API [Context-Aware Configuration](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html) permet de superposer la configuration entre différents dossiers, dont `/libs`, `/apps` et `/conf`, et sous-dossiers sous `/conf`. L’héritage est pris en charge, de telle sorte qu’un client puisse définir la configuration globale tout en apportant des modifications spécifiques à chaque microsite. Comme il est possible d’utiliser cette fonctionnalité pour les configurations de Cloud Services, le code de connecteur doit référencer la configuration à l’aide de l’API Context-Aware Configuration au lieu de référencer un noeud de configuration spécifique.
 
 Si des configurations modifiées sont utilisées dans le connecteur, concevez ce dernier de manière à gérer l’inclusion/la fusion des futures mises à jour apportées aux configurations par défaut fournies par le connecteur dans toute configuration client. Pour rappel, modifier la configuration ou le contenu personnalisé (tel que modifié par le client) sans en avertir le client ou obtenir son accord est de nature à entraîner la défaillance du connecteur (ou à provoquer un comportement inattendu).
 

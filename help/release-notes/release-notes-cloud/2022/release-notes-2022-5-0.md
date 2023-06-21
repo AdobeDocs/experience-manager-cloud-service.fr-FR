@@ -2,14 +2,14 @@
 title: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 1b867582-e34c-435b-b8f8-fc71dddcaccb
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 97%
+source-wordcount: '795'
+ht-degree: 87%
 
 ---
 
-# Notes de mise à jour 2022.5.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 2022.5.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.5.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -60,7 +60,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Ado
 
 * **Assistant de création d’un formulaire adaptatif** : vous pouvez utiliser l’assistant convivial destiné aux utilisateurs professionnels pour créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
-   ![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png)
+  ![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png)
 
 ## Module complémentaire CIF {#cloud-services-cif}
 
@@ -68,30 +68,30 @@ Experience Manager Assets utilise désormais les fonctionnalités d’IA d’Ado
 
 * Accès rapide au cockpit du produit : accédez facilement à des informations détaillées sur les produits en un seul clic dans l’éditeur de sites.
 
-   ![Activation de la liste de souhaits](/help/assets/CIF/enable-wishlist.png)
+  ![Activation de la liste de souhaits](/help/assets/CIF/enable-wishlist.png)
 
 * Prise en charge de composants commerciaux marketing supplémentaires : les composants peuvent être configurés pour afficher un appel à l’action de type « Ajouter au panier » et « Ajouter à une liste de souhaits ».
 
-   ![Raccourci de l’éditeur de sites vers le cockpit du produit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![Raccourci de l’éditeur de sites vers le cockpit du produit](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 
 ## [!DNL Experience Manager] as a [!DNL Cloud Service] Foundation {#foundation}
 
 ### Nouveautés {#what-is-new-foundation}
 
-* L’option « Ajouter une arborescence » sous l’**onglet Distribution** de l’écran de l’administrateur d’agent de réplication, précédemment annoncée comme obsolète, sera supprimée le 20 juin 2022 ou peu de temps après. Les packages avec arborescence de contenu doivent plutôt être répliqués à l’aide des workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow).
+* L’option &quot;Ajouter une arborescence&quot; sous l’écran de l’administrateur de l’agent de réplication **Onglet Répartir**, précédemment annoncé comme obsolète, a été supprimé le 20 juin 2022 ou peu de temps après. Les packages avec arborescence de contenu doivent plutôt être répliqués à l’aide des workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow).
 
-* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des packages de contenu de plus de 10 Mo (nœuds avec propriétés, sans inclure les fichiers binaires) est obsolète et sera supprimée le 12 septembre 2022 ou peu de temps après. À la place, les workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) seront utilisés pour répliquer ces packages de contenu volumineux. En juillet, un message d’avertissement s’affichera dans l’écran de l’administrateur de l’agent de réplication, sous l’**onglet Distribution**, si vous tentez de répliquer ces packages de contenu volumineux. Il apparaîtra également dans le journal d’erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces packages de contenu volumineux. En septembre, les avertissements seront remplacés par des erreurs. Veuillez ajuster vos processus en conséquence.
+* L’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu de plus de 10 Mo (noeuds avec des propriétés, sans inclure les fichiers binaires) est obsolète et appliquée le 12 septembre 2022 ou peu de temps après. À la place, les workflows [Gérer la publication](/help/operations/replication.md#manage-publication) ou [Publier l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) seront utilisés pour répliquer ces packages de contenu volumineux. En juillet, un message d’avertissement s’affichera dans l’écran de l’administrateur de l’agent de réplication, sous l’**onglet Distribution**, si vous tentez de répliquer ces packages de contenu volumineux. Il apparaîtra également dans le journal d’erreurs AEM chaque fois que l’API de réplication est utilisée pour répliquer ces packages de contenu volumineux. En septembre, les avertissements ont été remplacés par des erreurs. Ajustez vos processus en conséquence.
 
 ### Nouvelles fonctionnalités disponibles dans le canal de version préliminaire [!DNL Experience Manager] {#prerelease-features-foundation}
 
-* AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
+* AEM as a Cloud Service est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir [AEM as a Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
 
 ## Couche de sécurité [!DNL Experience Manager] as a [!DNL Cloud Service] {#foundation-security}
 
 ### Dépréciation de TLS 1.0 et 1.1
 
-À compter du 30 juin 2022, Experience Manager as a Cloud Service devra disposer d’une communication réseau et d’un échange de données plus sécurisés avec les systèmes utilisateurs. AEM utilisera exclusivement le protocole TLS (Transport Layer Security), version 1.2. Les anciennes versions de TLS 1.0 et 1.1 seront obsolètes.
+À compter du 30 juin 2022, Experience Manager as a Cloud Service devra disposer d’une communication réseau et d’un échange de données plus sécurisés avec les systèmes utilisateurs. AEM utilisera exclusivement le protocole TLS (Transport Layer Security), version 1.2. Les anciennes versions de TLS 1.0 et 1.1 sont désormais obsolètes.
 
 Si vous continuez à utiliser des versions antérieures à TLS 1.0 et 1.1, vous risquez de perdre l’accès à Experience Manager as a Cloud Service.
 

@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: Le navigateur de référentiel fournit une vue en lecture seule dans le référentiel pour tous les environnements sur les niveaux de création, de publication et de prévisualisation.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: 43429562ea4292f38d3459e03185270ec950a58a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '899'
-ht-degree: 100%
+source-wordcount: '885'
+ht-degree: 94%
 
 ---
 
@@ -23,20 +23,20 @@ ht-degree: 100%
 
 ## Présentation {#introduction}
 
-Le navigateur de référentiel est un outil de développement qui fournit une vue en lecture seule dans le référentiel pour tous les environnements sur les niveaux de création de publication et de prévisualisation. Il est conçu pour faciliter l’affichage de la structure de contenu afin de consulter ou de déboguer plus facilement du contenu.
+Le navigateur de référentiel est un outil de développement qui fournit une vue en lecture seule dans le référentiel pour tous les environnements sur les niveaux de création de publication et de prévisualisation. Il est conçu pour faciliter l’affichage de la structure de contenu afin de faciliter l’affichage ou le débogage du contenu.
 
 Accessible à partir de la Developer Console, il peut être utilisé pour parcourir le référentiel d’une instance de création ou de publication pour un environnement sélectionné.
 
 ### Conditions préalables d’accès {#access-prerequisites}
 
-Ces conditions suivantes doivent être remplies pour accéder à la Developer Console ou au navigateur de référentiel.
+Ces conditions suivantes doivent être remplies pour accéder au navigateur Developer Console ou Repository
 
-Pour accéder à la Developer Console :
+Pour accéder à Developer Console :
 
 * Pour les programmes de production, les utilisateurs doivent disposer du rôle **Développeur Cloud Manager** dans l’Admin Console
 * Pour les programmes Sandbox, il est disponible pour tout utilisateur disposant d’un profil de produit qui lui donne accès à AEM as a Cloud Service.
 
-Pour accéder au navigateur de référentiel :
+Pour accéder à l’explorateur de référentiels :
 
 * Les utilisateurs doivent disposer du rôle **Développeur Cloud Manager** dans l’Admin Console pour afficher les instances de création et de publication.
 * En outre, pour la création, les utilisateurs disposant du profil de produit Utilisateurs AEM peuvent afficher le navigateur de référentiel avec un accès en lecture minimal ; les autorisations de l’utilisateur sont respectées lors de la navigation dans le référentiel. Les utilisateurs disposant du profil produit Administrateurs AEM peuvent afficher le navigateur de référentiel avec un accès en lecture complet.
@@ -76,7 +76,7 @@ De plus, lorsque vous cliquez sur un dossier, l’URL est modifiée dynamiquemen
 
 Pour la publication, par défaut, le navigateur de référentiel affiche uniquement le contenu public, de sorte que certains dossiers comme `/conf` ou `/home` ne seront pas visibles.
 
-Pour rendre ces emplacements visibles, vous devez suivre la procédure ci-dessous.
+Pour rendre ces emplacements visibles, procédez comme suit.
 
 1. Cliquez sur les trois points de l’environnement de votre choix et sélectionnez **Gérer l’accès**.
 

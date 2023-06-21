@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de fragment de contenu servent de b
 feature: Content Fragments
 role: User
 exl-id: 24b1806f-2e8c-49ec-8cb7-a66a3cbe91cd
-source-git-commit: d452690b03ed32701030476572c5db9ddb1fbc2c
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2939'
-ht-degree: 94%
+source-wordcount: '2921'
+ht-degree: 87%
 
 ---
 
@@ -58,7 +58,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
    >[!NOTE]
    >
-   >Lorsqu’un champ est **obligatoire**, le **libellé** indiqué dans le volet de gauche est signalé par un astérisque (**&#42;**).
+   >Lorsque un champ est défini sur **Obligatoire**, la variable **Libellé** indiqué dans le volet de gauche est marqué d’un astérisque (**&#42;**).
 
 ![propriétés](assets/cfm-models-03.png)
 
@@ -66,26 +66,26 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
 
    * Faites glisser un type de données à l’emplacement souhaité pour un champ :
 
-      ![type de données dans le champ](assets/cfm-models-04.png)
+     ![type de données dans le champ](assets/cfm-models-04.png)
 
    * Une fois qu’un champ a été ajouté au modèle, le panneau de droite affiche les **propriétés** qui peuvent être définies pour ce type de données spécifique. Vous pouvez définir ce qui est obligatoire pour ce champ.
 
       * De nombreuses propriétés s’expliquent d’elles-mêmes. Pour plus d’informations, voir [Propriétés](#properties).
       * Si vous entrez un **libellé de champ**, le **nom de propriété** est automatiquement renseigné. S’il est vide, il peut être mis à jour manuellement par la suite.
 
-         >[!CAUTION]
-         >
-         >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
-         >
-         >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
-      Par exemple :
+        >[!CAUTION]
+        >
+        >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
+        >
+        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
-      ![propriétés de champ](assets/cfm-models-05.png)
+     Par exemple :
 
+     ![propriétés de champ](assets/cfm-models-05.png)
 
 1. **Pour supprimer un champ**
 
-   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône corbeille. Vous serez alors invité à confirmer l’opération.
+   Sélectionnez le champ requis, puis cliquez/appuyez sur l’icône corbeille. Vous êtes invité à confirmer l’action.
 
    ![supprimer](assets/cfm-models-06.png)
 
@@ -124,16 +124,16 @@ Une sélection de types de données est disponible pour la définition de votre 
 * **Objet JSON**
    * Permet à l’auteur du fragment de contenu de saisir la syntaxe JSON dans les éléments correspondants d’un fragment.
       * Permettre à AEM de stocker directement JSON que vous avez copié/collé à partir d’un autre service.
-      * Le fichier JSON est transmis et généré sous la forme JSON dans GraphQL.
+      * Le fichier JSON est transmis et généré au format JSON dans GraphQL.
       * Inclut la mise en surbrillance de la syntaxe JSON, la saisie semi-automatique et la mise en surbrillance des erreurs dans l’éditeur de fragments de contenu.
 * **Espace réservé pour tabulation**
    * Permet l’introduction d’onglets à utiliser lors de la modification du contenu du fragment de contenu.
-Il s’affiche sous forme de séparateur dans l’éditeur de modèles et permet de séparer les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
-Dans l’éditeur de fragments, chaque instance s’affiche sous la forme d’un onglet.
+S’affiche sous la forme d’un séparateur dans l’éditeur de modèles, séparant les sections de la liste des types de données de contenu. Chaque instance représente le début d’un nouvel onglet.
+Dans l’éditeur de fragment, chaque instance s’affiche sous la forme d’un onglet.
 
-      >[!NOTE]
-      >
-      >Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
+     >[!NOTE]
+     >
+     >Ce type de données est uniquement utilisé à des fins de mise en forme. Il est ignoré par le schéma GraphQL AEM.
 
 ## Propriétés {#properties}
 
@@ -141,18 +141,17 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
 * **Nom de la propriété**
 
-   Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **ne doivent** contenir *que* les caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
+  Lors de la mise à jour manuelle de cette propriété pour un type de données, notez que les noms **ne doivent** contenir *que* les caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
 
-   >[!CAUTION]
-   >
-   >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
+  >[!CAUTION]
+  >
+  >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
 
 * **Rendu comme**
-Les différentes options permettant de réaliser/rendre le champ dans un fragment. Il est ainsi souvent possible de définir si l’auteur verra une seule instance du champ ou s’il sera autorisé à créer plusieurs instances.
+Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cela vous permet souvent de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances.
 
 * **Libellé du champ**
-La saisie d’un 
-**libellé de champ** génère automatiquement un **nom de propriété**, qui peut ensuite être mis à jour manuellement, si nécessaire.
+Saisie d’un **Libellé du champ** génère automatiquement une **Nom de la propriété**, qui peut ensuite être mis à jour manuellement si nécessaire.
 
 * **Validation**
 La validation de base est disponible par le biais de mécanismes tels que la propriété **Requis**. Certains types de données comportent des champs de validation supplémentaires. Voir [Validation](#validation) pour plus de détails.
@@ -163,28 +162,28 @@ La validation de base est disponible par le biais de mécanismes tels que la pro
    * **Texte (Markdown)**
    * **Texte brut**
 
-   Si elle n’est pas spécifiée, la valeur par défaut **Texte enrichi** est utilisée pour ce champ.
+  Si elle n’est pas spécifiée, la valeur par défaut **Texte enrichi** est utilisée pour ce champ.
 
-   La modification du **type par défaut** dans un modèle de fragment de contenu prend effet uniquement sur un fragment de contenu existant et lié après l’ouverture et l’enregistrement du fragment dans l’éditeur.
+  La modification du **type par défaut** dans un modèle de fragment de contenu prend effet uniquement sur un fragment de contenu existant et lié après l’ouverture et l’enregistrement du fragment dans l’éditeur.
 
 * **Unique**
 Le contenu (du champ spécifique) doit être unique dans tous les fragments de contenu créés à l’aide du modèle actuel.
 
-   Cette propriété permet de s’assurer que les auteurs de contenu ne peuvent pas répéter le contenu déjà ajouté dans un autre fragment du même modèle.
+  Cette propriété permet de s’assurer que les auteurs de contenu ne peuvent pas répéter le contenu déjà ajouté dans un autre fragment du même modèle.
 
-   Par exemple, un champ **Une seule ligne de texte** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement sera émis en cas de tentative concernant la deuxième instance.
+  Par exemple, un champ **Une seule ligne de texte** appelé `Country` dans le modèle de fragment de contenu ne peut pas avoir la valeur `Japan` dans deux fragments de contenu dépendants. Un avertissement s’affiche lorsque la seconde instance est tentée.
 
-   >[!NOTE]
-   >
-   >L’unicité est assurée par la racine de langue.
+  >[!NOTE]
+  >
+  >L’unicité est assurée par la racine de langue.
 
-   >[!NOTE]
-   >
-   >Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
+  >[!NOTE]
+  >
+  >Les variations peuvent avoir la même valeur *unique* que les variations du même fragment, mais pas la même valeur que celle utilisée dans une variation d’autres fragments.
 
-   >[!CAUTION]
-   >
-   >Si vous souhaitez utiliser MSM (qui crée des copies de fragments de contenu), toute **Unique** Les contraintes doivent être supprimées de tous les types de données utilisés dans les modèles de fragment de contenu respectifs. MSM pour les fragments de contenu n’est disponible que depuis la **Ressources** console.
+  >[!CAUTION]
+  >
+  >Si vous souhaitez utiliser MSM (qui crée des copies de fragments de contenu), toute **Unique** Les contraintes doivent être supprimées de tous les types de données utilisés dans les modèles de fragment de contenu respectifs. MSM pour les fragments de contenu n’est disponible que depuis la **Ressources** console.
 
 * Consultez la section **[Référence de contenu](#content-reference)** pour plus d’informations sur ce type de données spécifique et ses propriétés.
 
@@ -192,7 +191,7 @@ Le contenu (du champ spécifique) doit être unique dans tous les fragments de c
 
 * **Traduisible**
 
-   Activez la case à cocher **Traduisible** dans un champ de l’éditeur de modèle de fragment de contenu pour :
+  Activez la case à cocher **Traduisible** dans un champ de l’éditeur de modèle de fragment de contenu pour :
 
    * vous assurer que le nom de la propriété du champ est ajouté à la configuration de traduction, `/content/dam/<sites-configuration>` de contexte, s’il n’est pas déjà présent ;
    * Pour GraphQL : définir une propriété `<translatable>` dans le champ Fragment de contenu sur `yes` afin d’autoriser le filtre de requête GraphQL pour la sortie JSON avec du contenu traduisible uniquement.
@@ -223,10 +222,9 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 * **[Référence du fragment](#fragment-reference-nested-fragments)** (fragments imbriqués)
    * Fait référence à d’autres fragments, en fonction des modèles spécifiques spécifiés.
    * Permet d’inclure/récupérer des données structurées.
-
-      >[!NOTE]
-      >
-      >Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
+     >[!NOTE]
+     >
+     >Cette méthode présente un intérêt particulier en conjonction avec la [Diffusion de contenu découplé utilisant des fragments de contenu à l’aide de GraphQL](/help/sites-cloud/administering/content-fragments/content-fragments-graphql.md).
    * Peut être configurée pour une ou plusieurs références (dans le fragment résultant).
 
 >[!NOTE]
@@ -234,11 +232,10 @@ Les fragments de contenu peuvent former du contenu imbriqué à l’aide de l’
 >AEM dispose d’une protection récurrente pour :
 >
 >* Références du contenu
-   >  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
+>  Cela empêche l’utilisateur d’ajouter une référence au fragment actif. Cette approche peut conduire à une boîte de dialogue vide dans le sélecteur de référence du fragment.
 >
 >* Références de fragment dans GraphQL
-   >  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
-
+>  Si vous créez une requête profonde qui renvoie plusieurs fragments de contenu référencés les uns par les autres, elle renvoie la valeur « null » lors de la première occurrence.
 
 ### Référence de contenu {#content-reference}
 
@@ -298,11 +295,11 @@ Indique un chemin racine pour tout fragment référencé.
 
 * **Autoriser la création de fragments**
 
-   Cette propriété permet à l’auteur du fragment de créer un nouveau fragment en fonction du modèle approprié.
+  Cette propriété permet à l’auteur du fragment de créer un nouveau fragment en fonction du modèle approprié.
 
    * **fragmentreferencecomposite** : permet à l’auteur du fragment de créer un composite en sélectionnant plusieurs fragments.
 
-   ![Référence du fragment](assets/cfm-fragment-reference.png)
+  ![Référence du fragment](assets/cfm-fragment-reference.png)
 
 >[!NOTE]
 >
@@ -377,15 +374,16 @@ Pour configurer les **politiques** des **modèles de fragments de contenu autori
 
    * **Hérité de`<folder>`**
 
-      Les politiques sont automatiquement héritées lors de la création de dossiers enfants ; il peut se produire une reconfiguration de la politique (et une rupture de l’héritage) si des sous-dossiers doivent autoriser des modèles différents du dossier parent.
+     Les politiques sont automatiquement héritées lors de la création de dossiers enfants ; il peut se produire une reconfiguration de la politique (et une rupture de l’héritage) si des sous-dossiers doivent autoriser des modèles différents du dossier parent.
 
    * **Modèles de fragments de contenu autorisés par chemin**
 
-      Il est possible d’autoriser plusieurs modèles.
+     Il est possible d’autoriser plusieurs modèles.
 
    * **Modèles de fragments de contenu autorisés par balise**
 
-      Il est possible d’autoriser plusieurs modèles.
+     Il est possible d’autoriser plusieurs modèles.
+
    ![Politique de modèle de fragment de contenu](assets/cfm-model-policy-assets-folder.png)
 
 1. **Enregistrez** les modifications.
@@ -423,11 +421,11 @@ Pour publier un modèle de fragment de contenu :
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option de **publication** dans la barre d’outils.
-L’état publié sera indiqué dans la console.
+L’état publié est indiqué dans la console.
 
    >[!NOTE]
    >
-   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection indique cela, ainsi que le fait que le modèle sera publié avec le fragment.
+   >Si vous publiez un fragment de contenu pour lequel le modèle n’a pas encore été publié, une liste de sélection l’indique, et le modèle est publié avec le fragment.
 
 ## Dépublication d’un modèle de fragment de contenu {#unpublishing-a-content-fragment-model}
 
@@ -439,7 +437,7 @@ Pour dépublier un modèle de fragment de contenu :
 
 1. Accédez au dossier contenant votre modèle de fragment de contenu.
 1. Sélectionnez votre modèle, puis l’option **Dépublier** dans la barre d’outils.
-L’état publié sera indiqué dans la console.
+L’état publié est indiqué dans la console.
 
 Si vous essayez de dépublier un modèle actuellement utilisé par un ou plusieurs fragments, un avertissement d’erreur vous en informe :
 
@@ -485,36 +483,36 @@ Vous pouvez gérer les modèles **verrouillés** à partir de la console ou de l
 
 * Console
 
-   Dans la console, vous pouvez gérer le mode LECTURE SEULE avec les actions **Déverrouiller** et **Verrouiller** dans la barre d’outils :
+  Dans la console, vous pouvez gérer le mode LECTURE SEULE avec les actions **Déverrouiller** et **Verrouiller** dans la barre d’outils :
 
-   ![Barre d’outils du modèle de fragment de contenu verrouillé](assets/cfm-model-locked.png)
+  ![Barre d’outils du modèle de fragment de contenu verrouillé](assets/cfm-model-locked.png)
 
    * Vous pouvez **Déverrouiller** un modèle pour activer les modifications.
 
-      Si vous sélectionnez **Déverrouiller**, un avertissement s’affiche et vous devez confirmer l’action **Déverrouiller** :
-      ![Message lors du déverrouillage du modèle de fragment de contenu](assets/cfm-model-unlock-message.png)
+     Si vous sélectionnez **Déverrouiller**, un avertissement s’affiche et vous devez confirmer la variable **Déverrouiller** action :
+     ![Message lors du déverrouillage du modèle de fragment de contenu](assets/cfm-model-unlock-message.png)
 
-      Vous pouvez ensuite ouvrir le modèle pour le modifier.
+     Vous pouvez ensuite ouvrir le modèle pour le modifier.
 
    * Vous pouvez également **Verrouiller** le modèle par la suite.
    * La republication du modèle le rebascule immédiatement en mode **Verrouillé** (LECTURE SEULE).
 
 * Éditeur de modèles
 
-   * Lorsque vous ouvrez un modèle verrouillé, trois actions s’affichent : **Annuler**, **Afficher en lecture seule**, **Modifier** :
+   * Lorsque vous ouvrez un modèle verrouillé, vous êtes averti et trois actions s’affichent : **Annuler**, **Afficher en lecture seule**, **Modifier**:
 
-      ![Message lors de l’affichage d’un modèle de fragment de contenu verrouillé](assets/cfm-model-editor-lock-message.png)
+     ![Message lors de l’affichage d’un modèle de fragment de contenu verrouillé](assets/cfm-model-editor-lock-message.png)
 
    * Si vous sélectionnez **Afficher en lecture seule**, vous pouvez voir le contenu et la structure du modèle :
 
-      ![Affichage en lecture seule - Modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-view-only.png)
+     ![Affichage en lecture seule - Modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-view-only.png)
 
    * Si vous sélectionnez **Modifier**, vous pouvez modifier et enregistrer vos mises à jour :
 
-      ![Modifier – Modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-edit.png)
+     ![Modifier – Modèle de fragment de contenu verrouillé](assets/cfm-model-editor-locked-edit.png)
 
-      >[!NOTE]
-      >
-      >Un avertissement peut toujours s’afficher en haut de l’écran, mais seulement lorsque le modèle est déjà utilisé par les fragments de contenu existants.
+     >[!NOTE]
+     >
+     >Un avertissement peut toujours s’afficher en haut de l’écran, mais seulement lorsque le modèle est déjà utilisé par les fragments de contenu existants.
 
    * **Annuler** vous ramène à la console.

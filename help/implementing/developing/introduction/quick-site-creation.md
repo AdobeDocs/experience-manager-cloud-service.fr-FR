@@ -2,10 +2,10 @@
 title: Création rapide et personnalisation front-end d’un site
 description: Découvrez comment l’outil de création rapide de site utilise des modèles, des thèmes et le pipeline front-end du site pour permettre le déploiement rapide de nouveaux sites et le développement front-end découplé.
 exl-id: 9ec5126b-bee4-445a-a4bb-0c27c1a93d3f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 89%
 
 ---
 
@@ -29,8 +29,8 @@ Pour une présentation complète du fonctionnement de l’outil de création rap
 
 ## Ressources supplémentaires {#additional-resources}
 
-Comme l’outil de création rapide de site exploite de nombreuses fonctionnalités d’AEM, ces ressources supplémentaires peuvent s’avérer utiles.
+Comme l’outil de création rapide de site utilise de nombreuses fonctionnalités d’AEM, ces ressources supplémentaires peuvent s’avérer utiles.
 
-* [Modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md) : découvrez comment les modèles de site AEM peuvent être utilisés pour prédéfinir la structure du site et le contenu initial afin de vous permettre de créer rapidement des sites.
+* [Modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md) - Découvrez comment les modèles de site AEM peuvent être utilisés pour prédéfinir la structure du site et le contenu initial afin de vous permettre de créer rapidement de nouveaux sites.
 * [Thèmes de site](/help/sites-cloud/administering/site-creation/site-themes.md) : découvrez comment les thèmes de site AEM peuvent être utilisés pour personnaliser le style et la conception de votre site.
-* [Développer des sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) : grâce au pipeline front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certaines considérations à prendre en compte afin de tirer le meilleur parti de ce processus.
+* [Développer des sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) : grâce au pipeline front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certaines considérations à prendre en compte pour tirer pleinement parti de ce processus.

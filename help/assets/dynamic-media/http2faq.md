@@ -4,10 +4,10 @@ description: Découvrez la diffusion de contenu HTTP/2.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 90%
+source-wordcount: '794'
+ht-degree: 88%
 
 ---
 
@@ -46,9 +46,9 @@ Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
 * Utilisez le CDN (réseau de diffusion de contenu) fourni par Adobe dans le cadre de votre licence Dynamic Media Classic.
 * Utilisez un domaine dédié (c’est-à-dire `images.company.com` ou `mycompany.scene7.com`), et non un domaine Dynamic Media générique (c’est-à-dire `s7d1.scene7.com`, `s7d2.scene7.com` ou `s7d13.scene7.com`).
 
-   Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à votre compte.
+  Pour trouver vos domaines, ouvrez l’[application de bureau Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=fr#getting-started), puis connectez-vous à votre compte.
 
-   Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**. Recherchez le champ intitulé **Nom du serveur publié**. Si vous utilisez actuellement un domaine Dynamic Media générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
+  Accédez à **[!UICONTROL Configuration]** > **[!UICONTROL Configuration de l’application]** > **[!UICONTROL Paramètres généraux]**. Recherchez le champ intitulé **Nom du serveur publié**. Si vous utilisez actuellement un domaine Dynamic Media générique, vous pouvez demander une migration vers votre domaine personnalisé dans le cadre de cette transition.
 
 ## Quel est le processus d’activation de HTTP/2 pour mon compte Dynamic Media ?  {#what-is-the-process-for-enabling-http-for-my-dm-account}
 
@@ -73,11 +73,9 @@ Pour utiliser HTTP/2, vous devez respecter les conditions suivantes :
 
    1. Le service clientèle vous ajoute à la liste d’attente des clients HTTP/2 par ordre chronologique d’envoi des demandes.
    1. Lorsqu’Adobe est prêt à traiter votre demande, le service clientèle vous contacte pour coordonner la transition et définir une date cible.
-   1. Vous recevez une notification à l’issue du processus et pouvez vérifier que la transition vers HTTP/2 a abouti.
+   1. Une fois la transition terminée, vous en êtes informé et vous pouvez vérifier qu’elle est bien passée à HTTP2.
 
-
-
-## Quand puis-je espérer passer à HTTP/2 ?  {#when-can-i-expect-to-be-transitioned-over-to-http}
+## Quand puis-je espérer passer au HTTP/2 ?  {#when-can-i-expect-to-be-transitioned-over-to-http}
 
 Les demandes sont traitées dans l’ordre dans lequel le service clientèle les reçoit.
 

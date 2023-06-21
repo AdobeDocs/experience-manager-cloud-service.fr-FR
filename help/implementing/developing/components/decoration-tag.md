@@ -2,10 +2,10 @@
 title: Balise décorative
 description: Lors du rendu d’un composant d’une page web, un élément HTML peut être généré, en encapsulant le composant rendu sur lui-même. Pour les développeurs, AEM offre une logique simple et claire pour contrôler les balises décoratives qui englobent des éléments intégrés.
 exl-id: a90fd619-eff6-466f-9178-90374f988b5d
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 69%
+source-wordcount: '787'
+ht-degree: 63%
 
 ---
 
@@ -39,7 +39,7 @@ Les propriétés et nœuds suivants peuvent être appliqués aux composants pour
 * **`cq:htmlTag`nœud :** ce nœud peut être ajouté sous un composant et contenir les propriétés suivantes :
    * **`cq:tagName {String}` :** cette propriété peut être utilisée pour spécifier une balise HTML personnalisée dans le but d’encapsuler les composants au lieu de l’élément DIV par défaut.
    * **`class {String}` :** cette propriété peut être utilisée pour spécifier des noms de classe CSS à ajouter à l’élément wrapper.
-   * D’autres noms de propriété seront ajoutés comme attributs HTML avec la même valeur String que celle fournie.
+   * D’autres noms de propriété sont ajoutés en tant qu’attributs de HTML avec la même valeur de chaîne que celle fournie.
 
 ## Contrôles de script {#script-controls}
 
@@ -89,7 +89,7 @@ Tous les exemples qui suivent supposent la structure de contenu et les composant
 
 #### Cas d’utilisation 1 : Inclure un composant pour la réutilisation du code {#use-case-include-a-component-for-code-reuse}
 
-Le scénario d’utilisation le plus courant se présente lorsqu’un composant en inclut un autre en vue de réutiliser le code. Dans ce cas, on ne souhaite pas que le composant puisse être modifié avec sa propre barre d’outils et sa propre boîte de dialogue. Aucun élément wrapper n’est donc nécessaire et le nœud `cq:htmlTag` du composant est ignoré. Cela peut être considéré comme le comportement par défaut.
+Le scénario d’utilisation le plus courant se présente lorsqu’un composant en inclut un autre en vue de réutiliser le code. Dans ce cas, le composant inclus ne doit pas être modifiable avec sa propre barre d’outils et sa propre boîte de dialogue. Aucun élément wrapper n’est donc nécessaire et le `cq:htmlTag` est ignorée. Cela peut être considéré comme le comportement par défaut.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 

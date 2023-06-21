@@ -2,10 +2,10 @@
 title: Configuration des règles de traduction pour le contenu découplé
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: 4914a182a88084e280f1161147eccf28718df29e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '942'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -29,7 +29,6 @@ Maintenant que votre connecteur est configuré, cet article vous guide tout au l
 >* L’indicateur **Traduisible** crée automatiquement des règles de traduction pour vous et ne nécessite aucune intervention.
 >* L’indicateur **Traduisible** n’est utilisé que si la configuration de la structure d’intégration de traduction est définie sur **[Activer les champs de modèle de contenu pour la traduction.](/help/sites-cloud/administering/translation/integration-framework.md)**
 >* L’activation de cette option dans la configuration TIF remplace toute règle de traduction créée manuellement.|
-
 
 ## Objectif {#objective}
 
@@ -77,7 +76,7 @@ Dans l’IU **Configuration de traduction**, plusieurs options sont disponibles 
 1. AEM enregistre la configuration.
 1. Vous devez sélectionner le contexte que vous venez de créer, puis appuyer ou cliquer sur **Modifier**. Vous ouvrez ainsi la fenêtre de l’**Éditeur de règles de traduction** pour configurer les propriétés.
    ![Éditeur de règles de traduction](assets/translation-rules-editor.png)
-1. Par défaut, toutes les configurations sont héritées du chemin d’accès parent, dans ce cas `/content/dam`. Désélectionnez l’option **Hériter de`/content/dam`** afin d’ajouter des champs supplémentaires à la configuration.
+1. Par défaut, toutes les configurations sont héritées du chemin d’accès parent, dans ce cas `/content/dam`. Décochez l’option . **Hériter de`/content/dam`** vous pouvez ainsi ajouter des champs supplémentaires à la configuration.
 1. Une fois la case désélectionnée, dans la section **Général** de la liste, ajoutez les noms des propriétés du ou des modèles de fragment de contenu que vous avez [précédemment identifiés comme des champs à traduire](getting-started.md#content-models).
    1. Saisissez le nom de la propriété dans le champ **Nouvelle propriété**.
    1. Les options **Traduire** et **Hériter** sont cochées automatiquement.

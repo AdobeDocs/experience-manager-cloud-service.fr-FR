@@ -1,19 +1,19 @@
 ---
 title: Activation du pipeline front-end
-description: Découvrez comment activer le pipeline front-end pour les sites existants afin d’utiliser les thèmes du site pour personnaliser plus rapidement votre site.
+description: Découvrez comment vous pouvez activer le pipeline frontal pour que les sites existants utilisent des thèmes de site pour personnaliser plus rapidement votre site.
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '565'
-ht-degree: 100%
+source-wordcount: '564'
+ht-degree: 87%
 
 ---
 
 # Activation du pipeline front-end {#enable-front-end-pipeline}
 
-Découvrez comment activer le pipeline front-end pour les sites existants afin d’utiliser les thèmes du site pour personnaliser plus rapidement votre site.
+Découvrez comment vous pouvez activer le pipeline frontal pour que les sites existants utilisent des thèmes de site pour personnaliser plus rapidement votre site.
 
 ## Présentation {#overview}
 
@@ -21,7 +21,7 @@ Le pipeline front-end est un mécanisme qui peut rapidement déployer uniquement
 
 Au lieu d’un déploiement full stack, seul le code front-end est géré par ce pipeline, ce qui accélère le processus et permet également aux développeurs front-end de personnaliser facilement et rapidement votre site sans connaissances d’AEM.
 
-Les sites basés sur des modèles de site peuvent utiliser le pipeline front-end par défaut. Ce document décrit la façon dont vous pouvez adapter vos sites existants pour tirer parti du pipeline front-end.
+Les sites basés sur des modèles de site peuvent utiliser le pipeline frontal par défaut. Ce document décrit la façon dont vous pouvez adapter vos sites existants pour tirer parti du pipeline front-end.
 
 >[!TIP]
 >

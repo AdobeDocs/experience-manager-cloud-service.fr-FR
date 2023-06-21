@@ -2,9 +2,9 @@
 title: Opérations de développement d’entreprise (DevOps)
 description: Découvrez les processus, les méthodes et la communication nécessaires pour faciliter le déploiement et simplifier la collaboration.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1000'
 ht-degree: 44%
 
 ---
@@ -86,9 +86,9 @@ Les instances d’auteur se trouvent généralement derrière le pare-feu intern
 
 Le contenu qui a été activé est mis en package et placé dans la file d’attente de réplication de l’environnement de création. Le processus de réplication transporte ensuite ce contenu dans l’environnement de publication.
 
-Afin de répliquer à l’inverse les données générées dans un environnement de publication vers l’environnement de création, un écouteur de réplication dans l’environnement de création interroge l’environnement de publication et récupère ce contenu dans la boîte d’envoi de réplication inverse de l’environnement de publication.
+Pour répliquer à l’inverse les données générées dans un environnement de publication vers l’environnement de création, un écouteur de réplication dans l’environnement de création interroge l’environnement de publication et récupère ce contenu dans la boîte d’envoi de réplication inverse de l’environnement de publication.
 
-#### Publication  {#publish}
+#### Publier {#publish}
 
 Un environnement de publication se trouve généralement dans la zone démilitarisée (DMZ). Il s’agit de l’environnement dans lequel les visiteurs accéderont à votre contenu (par exemple, via un site web ou sous la forme d’une application mobile) et interagiront avec lui ; qu’il soit public ou dans votre intranet. Un environnement de publication :
 

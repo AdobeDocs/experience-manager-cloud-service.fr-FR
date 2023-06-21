@@ -2,10 +2,10 @@
 title: Règles de qualité du code personnalisé
 description: Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du test de qualité du code. Elles sont basées sur les bonnes pratiques de l’ingénierie Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: 288faf39a86411bb96d781a320abfa47538b2066
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '3508'
-ht-degree: 99%
+source-wordcount: '3504'
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Cette page décrit les règles de qualité du code personnalisé exécutées par
 
 >[!NOTE]
 >
->Les règles SonarQube complètes ne peuvent pas être téléchargées en raison d’informations propriétaires Adobes. Vous pouvez télécharger la liste complète des règles [via ce lien.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples des règles.
+>Les règles SonarQube complètes ne peuvent pas être téléchargées en raison d’informations exclusives d’Adobe. Vous pouvez télécharger la liste complète des règles [via ce lien.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples des règles.
 
 >[!NOTE]
 >
@@ -112,7 +112,7 @@ protected void doPost(SlingHttpServletRequest request, SlingHttpServletResponse 
 * **Gravité** : critique
 * **Depuis** : version 2018.6.0
 
-Lors de l’exécution de requêtes HTTP à partir d’une application Experience Manager, il est essentiel de vérifier que les délais appropriés sont configurés afin d’éviter toute consommation inutile de threads. Malheureusement, le comportement par défaut du client HTTP Java™ par défaut (`java.net.HttpUrlConnection`) et du client de composants Apache HTTP communément utilisé consiste à ne jamais expirer. Par conséquent, les délais d’expiration doivent être explicitement définis. De plus, en règle générale, ces délais d’expiration ne doivent pas dépasser 60 secondes.
+Lors de l’exécution de requêtes HTTP depuis une application de Experience Manager, il est essentiel de s’assurer que les délais d’expiration appropriés sont configurés pour éviter toute consommation inutile de threads. Malheureusement, le comportement par défaut du client HTTP Java™ par défaut (`java.net.HttpUrlConnection`) et du client de composants Apache HTTP communément utilisé consiste à ne jamais expirer. Par conséquent, les délais d’expiration doivent être explicitement définis. De plus, en règle générale, ces délais d’expiration ne doivent pas dépasser 60 secondes.
 
 #### Code non conforme {#non-compliant-code-2}
 
@@ -811,7 +811,7 @@ Les client(e)s qui utilisent la réplication inverse doivent contacter Adobe pou
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Les bibliothèques clientes d’Experience Manager peuvent contenir des ressources statiques telles que des images et des polices. Comme décrit dans le document [Utilisation de préprocesseurs](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors), lorsque vous utilisez des bibliothèques clientes activées par proxy, ces ressources statiques doivent être contenues dans un dossier enfant nommé `resources` afin d’être référencées efficacement sur les instances de publication.
+Les bibliothèques clientes d’Experience Manager peuvent contenir des ressources statiques telles que des images et des polices. Comme décrit dans le document [Utilisation de préprocesseurs,](/help/implementing/developing/introduction/clientlibs.md#using-preprocessors) lors de l’utilisation de bibliothèques clientes proxy, ces ressources statiques doivent être contenues dans un dossier enfant nommé `resources` à référencer efficacement sur les instances de publication.
 
 #### Code non conforme {#non-compliant-proxy-enabled}
 

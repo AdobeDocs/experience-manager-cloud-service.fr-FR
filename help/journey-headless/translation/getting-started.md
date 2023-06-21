@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: c25bdab65a742e8ffc3a1579474f4589e04abce9
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 100%
+source-wordcount: '1407'
+ht-degree: 95%
 
 ---
 
@@ -64,7 +64,7 @@ Le contenu AEM, qu’il s’agisse de pages web découplée ou traditionnelles, 
 
 ## Stockage du contenu découplé dans AEM {#headless-content-in-aem}
 
-En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu découplé. Toutefois, il sera utile de connaître les concepts de base et la terminologie lorsque vous utiliserez les outils de traduction AEM. Plus important encore, vous devez comprendre votre propre contenu et sa structure pour pouvoir le traduire efficacement.
+En tant que spécialiste de la traduction, il n’est pas nécessaire de comprendre en profondeur la manière dont AEM gère le contenu découplé. Toutefois, il est utile de connaître les concepts et la terminologie de base, car vous utiliserez ensuite AEM outils de traduction. Plus important encore, vous devez comprendre votre propre contenu et sa structure afin de pouvoir le traduire efficacement.
 
 ### Modèles de contenu {#content-models}
 
@@ -153,7 +153,7 @@ La structure finale peut ressembler à ce qui suit.
         |- ...
 ```
 
-Vous devez prendre note du chemin spécifique de votre contenu, car il sera ensuite nécessaire pour configurer votre traduction.
+Vous devez prendre note du chemin spécifique de votre contenu, car il est nécessaire ultérieurement pour configurer votre traduction.
 
 >[!NOTE]
 >

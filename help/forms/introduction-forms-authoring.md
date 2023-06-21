@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 041f0fb62b1bca79cdf4b47f971c060deb77d28f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2409'
-ht-degree: 71%
+source-wordcount: '2408'
+ht-degree: 69%
 
 ---
 
@@ -24,20 +24,20 @@ ht-degree: 71%
 Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. [!DNL AEM Forms] fournit une interface utilisateur intuitive et des composants prêts à l’emploi pour la création et l’utilisation de formulaires adaptatifs. Vous pouvez choisir de créer un formulaire adaptatif basé sur un modèle de formulaire ou un schéma ou sans modèle de formulaire. Il est important de choisir avec soin le modèle de formulaire qui convient non seulement à vos besoins, mais qui étend également vos investissements et vos ressources d’infrastructure existantes. Vous pouvez choisir parmi les options suivantes pour créer un formulaire adaptatif :
 
 * **Utilisation d’un modèle de données de formulaire**
-   L’[intégration de données](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
+  L’[intégration de données](data-integration.md) vous permet d’intégrer des entités et des services provenant de sources de données disparates dans un modèle de données de formulaire que vous pouvez utiliser pour créer des formulaires adaptatifs. Choisissez le modèle de données de formulaire si le formulaire adaptatif que vous créez implique l’extraction et l’écriture de données depuis et vers plusieurs sources de données.
 
 * **Utilisation d’un modèle de formulaire XDP**
 Il s’agit d’un modèle de formulaire idéal si vous investissez dans des formulaires XFA ou XDP. Il fournit une méthode directe de conversion des formulaires de type XFA en formulaires adaptatifs. Toutes les règles XFA existantes sont conservées dans les formulaires adaptatifs associés. Les formulaires adaptatifs qui en résultent prennent en charge les éléments XFA, tels que les validations, les événements, les propriétés et les motifs.
 
 * **Utilisation d’une définition de schéma XML (XSD) ou d’un schéma JSON**
-Les schémas XML et JSON représentent la structure dans laquelle les données sont produites ou consommées par le système principal de votre entreprise. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets du modèle de données de l’explorateur de contenu lors de la création de formulaires adaptatifs.
+Les schémas XML et JSON représentent la structure dans laquelle les données sont produites ou consommées par le système principal de votre entreprise. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets de modèle de données de l’explorateur de contenu lors de la création d’un Forms adaptatif.
 
 * **Utilisation sans aucun modèle de formulaire**
 Les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle de formulaire. Les données XML générées à partir de ce type de formulaire présentent une structure plate avec des champs et des valeurs correspondantes.
 
-   >[!NOTE]
-   >
-   > Vous pouvez modifier les propriétés du modèle de formulaire à partir de l’éditeur de formulaires adaptatifs ou de l’éditeur de modèles de formulaires adaptatifs. Pour plus d’informations, consultez l’article [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
+  >[!NOTE]
+  >
+  > Vous pouvez modifier les propriétés du modèle de formulaire à partir de l’éditeur de formulaires adaptatifs ou de l’éditeur de modèles de formulaires adaptatifs. Pour plus d’informations, consultez l’article [Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif](/help/forms/creating-adaptive-form.md#edit-form-model-properties-of-an-adaptive-form-edit-form-model).
 
 Pour créer un formulaire adaptatif, consultez l’article [créer un formulaire adaptatif](creating-adaptive-form.md).
 
@@ -91,17 +91,17 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
 
 * **Explorateur de propriétés**
 
-   Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour voir les propriétés du conteneur de formulaires adaptatifs :
+  Permet de modifier les propriétés d’un composant. Les propriétés affichées varient en fonction d’un composant. Pour voir les propriétés du conteneur de formulaires adaptatifs :
 
-   Sélectionnez un composant, puis appuyez sur ![field-level](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Conteneur de formulaires adaptatif]**, puis sur ![propriétés](assets/Smock_Wrench_18_N.svg).
+  Sélectionnez un composant, puis appuyez sur ![field-level](assets/Smock_SelectContainer_18_N.svg) > **[!UICONTROL Conteneur de formulaires adaptatif]**, puis sur ![propriétés](assets/Smock_Wrench_18_N.svg).
 
 * **Explorateur de ressources**
 
-   Isole différents types de contenu, tels que des images, des documents, des pages, des séquences vidéo, etc.
+  Isole différents types de contenu, tels que des images, des documents, des pages, des séquences vidéo, etc.
 
 * **Explorateur de composants**
 
-   Comprend des composants que vous pouvez utiliser pour créer un formulaire adaptatif. Vous pouvez faire glisser des composants sur le formulaire adaptatif afin d’ajouter des éléments de formulaire, puis configurer les éléments ajoutés conformément aux exigences. Le tableau ci-dessous décrit les composants répertoriés dans l’explorateur de composants.
+  Comprend des composants que vous pouvez utiliser pour créer un formulaire adaptatif. Vous pouvez faire glisser des composants sur le formulaire adaptatif afin d’ajouter des éléments de formulaire, puis configurer les éléments ajoutés conformément aux exigences. Le tableau ci-dessous décrit les composants répertoriés dans l’explorateur de composants.
 
 <table>
  <tbody>
@@ -151,7 +151,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Ajoute un champ pour capturer l’adresse électronique. Par défaut, le composant Email valide les adresses email à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Ajoute un champ pour capturer l’adresse électronique. Par défaut, le composant Email valide les adresses email à l’aide de l’expression régulière suivante.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Pièce jointe</td>
@@ -191,7 +191,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
   </tr>
   <tr>
    <td>Panneau</td>
-   <td><p>Ajoute un panneau ou un sous-panneau.</p> <p>Vous pouvez également ajouter un composant de panneau à partir de la barre d’outils du panneau parent à l’aide du bouton <span class="uicontrol">Add Child Panel</code> (Ajouter un panneau enfant). De même, vous pouvez ajouter une barre d’outils spécifique au panneau à l’aide du bouton <span class="uicontrol">Ajouter une barre d’outils de panneau</code>. Vous pouvez configurer la position de la barre d’outils du panneau à l’aide de la boîte de dialogue Modifier le panneau.</code></code></p> </td>
+   <td><p>Ajoute un panneau ou un sous-panneau.</p> <p>Vous pouvez également ajouter un composant de panneau à partir de la barre d’outils du panneau parent à l’aide de la propriété <span class="uicontrol">Ajouter un panneau enfant</code> button. De même, vous pouvez ajouter une barre d’outils spécifique au panneau à l’aide de la fonction <span class="uicontrol">Barre d’outils Ajouter un panneau</code> button. Vous pouvez configurer la position de la barre d’outils du panneau à l’aide de la boîte de dialogue Modifier le panneau.</p> </td>
   </tr>
   <tr>
    <td>Zone de mot de passe</td>

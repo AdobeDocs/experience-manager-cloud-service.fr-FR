@@ -2,10 +2,10 @@
 title: Création d’expériences commerciales
 description: Création d’expériences commerciales
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: b72565e45087a1237eb7e5fa5eb4706d1d534975
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '701'
+ht-degree: 98%
 
 ---
 
@@ -71,7 +71,7 @@ Les pages de catalogue de produits CIF sont des pages virtuelles rendues à la 
 
     >[!REMARQUE]
     >
-    > Si la catégorie et le produit sont sélectionnés, le produit est pris.
+    > Si la catégorie et le produit sont sélectionnés, le produit est sélectionné.
 
 Cela crée un espace réservé pour un lien qui est remplacé par un lien réel lors du rendu de la page.
 

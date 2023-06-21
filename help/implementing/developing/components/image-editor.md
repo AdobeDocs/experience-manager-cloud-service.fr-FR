@@ -1,17 +1,17 @@
 ---
 title: Éditeur d’image
-description: L’éditeur d’image est un élément essentiel d’AEM qui peut être exploité par des composants pour faciliter la manipulation des images par les auteurs de contenu.
+description: L’éditeur d’image est un élément d’AEM essentiel qui peut être utilisé par les composants pour faciliter la manipulation des images par les auteurs de contenu.
 exl-id: c8ae4f59-75b1-49b4-8dd4-957d2e33000b
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 100%
+ht-degree: 82%
 
 ---
 
 # Éditeur d’image {#image-editor}
 
-L’éditeur d’image est un élément essentiel d’AEM qui peut être exploité par des composants pour faciliter la manipulation des images par les auteurs de contenu.
+L’éditeur d’image est un élément d’AEM essentiel qui peut être utilisé par les composants pour faciliter la manipulation des images par les auteurs de contenu.
 
 ## Unités relatives pour la zone cliquable {#relative-units-for-image-map}
 

@@ -3,10 +3,10 @@ title: Pipelines CI/CD
 description: Découvrez les pipelines CI/CD de Cloud Manager et comment les utiliser pour déployer votre code efficacement.
 index: true
 exl-id: 40d6778f-65e0-4612-bbe3-ece02905709b
-source-git-commit: a14ee350b3fdc3ac197b703aa36957d1d1dd7355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 100%
+source-wordcount: '1358'
+ht-degree: 87%
 
 ---
 
@@ -97,10 +97,10 @@ Les pipelines full stack peuvent déployer des configurations de niveau web si u
 
 Les restrictions suivantes s’appliquent.
 
-* Un utilisateur doit être connecté en tant que **Gestionnaire de déploiement** pour configurer ou exécuter des pipelines.
+* Un utilisateur doit être connecté à la variable **Responsable de déploiement** rôle pour configurer ou exécuter des pipelines.
 * À tout moment, il ne peut y avoir qu’un seul pipeline full stack par environnement.
 
-En outre, assurez-vous de savoir comment se comporte le pipeline full stack si vous choisissez d’introduire un [pipeline de configuration de niveau web.](#web-tier-config-pipelines)
+En outre, sachez comment se comporte le pipeline de la pile complète si vous choisissez d’introduire un [pipeline de configuration de niveau web.](#web-tier-config-pipelines)
 
 * Le pipeline full stack pour un environnement ignore la configuration du Dispatcher si le pipeline de configuration de niveau web correspondant existe.
 * Si le pipeline de configuration de niveau web correspondant à l’environnement n’existe pas, l’utilisateur peut configurer le pipeline full stack pour inclure ou ignorer la configuration de Dispatcher.
@@ -115,7 +115,7 @@ Les pipelines front-end aident vos équipes à rationaliser votre processus de c
 
 >[!IMPORTANT]
 >
->Vous devez être sur une version `2021.10.5933.20211012T154732Z ` ou ultérieure d’AEM avec AEM Sites activé pour exploiter les pipelines front-end.
+>Vous devez être sur AEM version `2021.10.5933.20211012T154732Z ` ou version ultérieure avec AEM Sites activé pour utiliser les pipelines front-end.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Pour savoir comment configurer les pipelines front-end, reportez-vous aux docume
 
 Avec les pipelines front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut être accéléré.
 
-Consultez le document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus ainsi que certaines considérations à prendre en compte pour en tirer le meilleur parti.
+Reportez-vous au document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus, ainsi que quelques considérations à prendre en compte pour tirer pleinement parti de ce processus.
 
 ### Configuration de pipelines full stack {#configure-full-stack}
 
@@ -160,18 +160,18 @@ Les pipelines de configuration de niveau web permettent le déploiement exclusif
 
 Les restrictions suivantes s’appliquent.
 
-* Vous devez être sur une version `2021.12.6151.20211217T120950Z` ou plus récente d’AEM pour tirer parti des pipelines de configuration de niveau web.
-* Vous devez [vous inscrire au mode flexible des outils de Dispatcher](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour tirer parti des pipelines de configuration de niveau web.
-* Un utilisateur doit être connecté en tant que **Gestionnaire de déploiement** pour configurer ou exécuter des pipelines.
+* Vous devez être sur AEM version `2021.12.6151.20211217T120950Z` ou plus récent pour utiliser des pipelines de configuration de niveau web.
+* Vous devez [vous inscrire au mode flexible des outils de Dispatcher ;](/help/implementing/dispatcher/disp-overview.md#validation-debug) pour utiliser des pipelines de configuration de niveau web.
+* Un utilisateur doit être connecté à la variable **Responsable de déploiement** rôle pour configurer ou exécuter des pipelines.
 * À tout moment, il ne peut y avoir qu’un seul pipeline de configuration de niveau web par environnement.
 * L’utilisateur ne peut pas configurer de pipeline de configuration de niveau web lorsque le pipeline full stack correspondant est en cours d’exécution.
 * La structure de niveau web doit se conformer à la structure de mode flexible, telle que définie dans le document [Dispatcher en mode cloud.](/help/implementing/dispatcher/disp-overview.md#validation-debug)
 
-En outre, assurez-vous de savoir comment se comporte le [pipeline full stack](#full-stack-pipeline) lorsque vous introduirez un pipeline de configuration de niveau web.
+Sachez également comment la variable [pipeline de pile complète](#full-stack-pipeline) se comporte lors de l’introduction d’un pipeline de niveau web.
 
 * Si un pipeline de configuration de niveau web n’a pas été configuré pour un environnement, l’utilisateur peut effectuer une sélection lors de la configuration de son pipeline full stack correspondant afin d’inclure ou d’ignorer la configuration de Dispatcher pendant l’exécution et le déploiement.
 * Une fois qu’un pipeline de configuration de niveau web a été configuré pour un environnement, son pipeline full stack correspondant (s’il en existe un) ignorera la configuration du Dispatcher lors de l’exécution et du déploiement.
-* Une fois qu’un pipeline de configuration de niveau web est supprimé, son pipeline full stack correspondant est réinitialisé pour déployer les configurations du Dispatcher pendant son exécution.
+* Une fois qu’un pipeline de configuration de niveau web est supprimé, son pipeline de pile complète correspondant est réinitialisé pour déployer les configurations du Dispatcher pendant son exécution.
 
 Les pipelines de configuration de niveau web peuvent être de type qualité de code ou déploiement.
 

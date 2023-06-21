@@ -4,10 +4,10 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: e6b6dd3dcccfa73893d224ccbd5ead0d910072a8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3788'
-ht-degree: 89%
+source-wordcount: '3782'
+ht-degree: 88%
 
 ---
 
@@ -280,7 +280,7 @@ Un package est souvent conçu au moment où vous [créez le package](#creating-a
 
 1. Ouvrez les détails du package dans la liste des packages en cliquant sur son nom.
 
-1. Cliquez sur **Concevoir**. Une boîte de dialogue vous demande de confirmer que vous souhaitez concevoir le package, car tout contenu existant du package sera remplacé.
+1. Cliquez sur **Concevoir**. Une boîte de dialogue vous demande de confirmer que vous souhaitez créer le module, car tout contenu existant du module sera remplacé.
 
 1. Cliquez sur **OK**. AEM crée le package et répertorie tout le contenu ajouté au package dans la liste des activités. Une fois l’opération terminée, AEM affiche un message de confirmation indiquant que le package a été conçu et (lorsque vous fermez la boîte de dialogue) met à jour les informations de la liste de packages.
 
@@ -445,7 +445,7 @@ Pour résoudre ce problème, le responsable du fichier de recouvrement dans `/ap
 
 **Contenu vérifié**
 
-Cette validation vérifie quelles autorisations sont ajoutées, comment elles seront gérées (fusion/remplacement) et si les autorisations actuelles seront affectées.
+Cette validation vérifie quelles autorisations sont ajoutées, comment elles sont gérées (fusion/remplacement) et si les autorisations actuelles sont affectées.
 
 **Comment est-ce rapporté ?**
 
@@ -453,7 +453,7 @@ Les autorisations sont décrites dans le Journal d’activités du Gestionnaire 
 
 **États d’erreur**
 
-Aucune erreur explicite ne peut être fournie. La validation indique simplement si de nouvelles autorisations ACL seront ajoutées ou affectées lors de l’installation du package.
+Aucune erreur explicite ne peut être fournie. La validation indique simplement si de nouvelles autorisations ACL sont ajoutées ou affectées par l’installation du package.
 
 **Résolution d’erreurs**
 
@@ -522,13 +522,13 @@ Les packages sont définis par leurs filtres. Vous pouvez demander au Gestionnai
 
 ### Installation des packages {#installing-packages}
 
-Le chargement d’un package ajoute uniquement le contenu du package au référentiel, mais il n’est pas accessible. Vous devez installer le package chargé pour utiliser son contenu.
+Le chargement d’un package ajoute uniquement le contenu du package au référentiel, mais il n’est pas accessible. Vous devez installer le package téléchargé pour utiliser le contenu du package.
 
 >[!CAUTION]
 >
 >L’installation d’un package peut remplacer ou supprimer le contenu existant. Ne chargez un package que si vous êtes certain qu’il ne supprime pas ou ne remplace pas le contenu dont vous avez besoin.
 
-Avant l’installation de votre package, le Gestionnaire de packages crée automatiquement un package instantané qui contient le contenu qui sera remplacé. Cet instantané est réinstallé lorsque vous désinstallez le package.
+Avant l’installation de votre package, Package Manager crée automatiquement un package instantané qui contient le contenu qui est remplacé. Cet instantané est réinstallé si vous désinstallez votre package.
 
 1. [Accédez au Gestionnaire de packages.](#accessing)
 

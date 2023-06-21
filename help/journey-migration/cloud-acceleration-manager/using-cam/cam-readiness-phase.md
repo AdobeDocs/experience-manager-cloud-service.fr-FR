@@ -2,10 +2,10 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 100%
+source-wordcount: '1055'
+ht-degree: 96%
 
 ---
 
@@ -42,7 +42,7 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
 1. Pour télécharger l’analyseur de bonnes pratiques (BPA), procédez comme suit :
 
    >[!NOTE]
-   >Pour éviter toute incidence sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA dans un environnement de création aussi proche que possible de l’environnement de production concernant la personnalisation, la configuration, les contenus et les applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de création de production.
+   >Pour éviter tout impact sur les instances critiques de l’entreprise, il est recommandé d’exécuter l’application d’une seule page dans un environnement de création aussi proche que possible de l’environnement de production dans les domaines de la personnalisation, de la configuration, du contenu et des applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de création de production.
 
    1. Accédez au portail de [Distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) et téléchargez l’analyseur de bonnes pratiques sous la forme d’un fichier zip.
 
@@ -82,7 +82,6 @@ Suivez les étapes ci-dessous :
    >[!IMPORTANT]
    >* L’option **Enregistrer en tant que PDF** est recommandée et prise en charge pour les fonctionnalités ci-dessus.
    >* Si vous utilisez le bouton d’impression du navigateur, une seule page sera imprimée.
-
 
    ![image](/help/journey-migration/best-practices-analyzer/assets/bpa-printpreview2.png)
 
@@ -138,10 +137,9 @@ Consultez les cartes suivantes disponibles sur la page Rapport d’analyse des b
 >* mettre en signet tous les onglets du rapport (y compris le filtrage) pour les partager ou les récupérer ultérieurement ;
 >* utiliser l’icône de détails pour afficher les détails de chaque résultat de rapport.
 
-
 #### Propriétés du rapport {#report-properties}
 
-La carte **Propriétés du rapport** donne des informations sur les propriétés du rapport, notamment la date du rapport, la durée, les filtres, la date de transfert et les détails d’Adobe Experience Manager (AEM).
+La carte **Propriétés du rapport** donne des informations sur les propriétés du rapport, notamment la date du rapport, la durée, les filtres, la date de chargement et les détails d’Adobe Experience Manager (AEM).
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/report-properties.png)
 
@@ -182,7 +180,7 @@ Vous pouvez consulter les informations suivantes grâce à cet onglet :
 * Évaluation
 * Considérations relatives à la migration de contenu
 
-   ![image](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
+  ![image](/help/journey-migration/cloud-acceleration-manager/assets/migration-complexity-1.png)
 
 ## Utilisation de la carte Planification et configuration {#planning-setup}
 

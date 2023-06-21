@@ -2,10 +2,10 @@
 title: Création pour AEM en tant que CMS découplé - Introduction
 description: Une introduction de l’utilisation des fonctionnalités d’Adobe Experience Manager as a Cloud Service dans un CMS découplé pour créer du contenu pour votre projet.
 exl-id: 065b00cb-a82d-4bcb-b2c9-44542cee6303
-source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 100%
+source-wordcount: '664'
+ht-degree: 96%
 
 ---
 
@@ -55,7 +55,7 @@ Cela signifie que votre contenu peut atteindre de nombreux appareils différents
 De plus, ces fragments peuvent également être utilisés lors de la construction de pages web AEM, si vous le souhaitez.
 
 * CMS « traditionnel »
-   * Le contenu est créé pour les pages web à l’aide de divers composants qui définissent la manière dont le contenu sera rendu sur votre site web. AEM fait également preuve dans ce cas d’une extrême flexibilité, car votre équipe de projet peut développer des composants personnalisés.
+   * Le contenu est créé pour les pages web à l’aide de divers composants qui définissent la manière dont le contenu est rendu sur votre site web. AEM fait également preuve dans ce cas d’une extrême flexibilité, car votre équipe de projet peut développer des composants personnalisés.
 
 ## Modélisation de contenu {#content-modeling}
 

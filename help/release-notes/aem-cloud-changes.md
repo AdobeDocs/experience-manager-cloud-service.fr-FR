@@ -2,10 +2,10 @@
 title: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 description: Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service
 exl-id: fe11d779-66cd-45aa-aa6b-c819b88d2405
-source-git-commit: d3208a9a0785909e9b62d4033437a8ff44f7ba3e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 100%
+source-wordcount: '845'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,6 @@ AEM Cloud Service offre une foule de nouvelles fonctionnalités et possibilités
 >* [Modifications notables apportées à AEM Sites as a Cloud Service](/help/sites-cloud/sites-cloud-changes.md)
 >* [Modifications notables apportées à AEM Assets as a Cloud Service](/help/assets/assets-cloud-changes.md)
 
-
 Les principales différences sont les suivantes :
 
 * [/apps et /libs ne sont pas modifiables au moment de l’exécution](#apps-libs-immutable)
@@ -50,14 +49,14 @@ Les principales différences sont les suivantes :
 
 ## /apps et /libs ne sont pas modifiables au moment de l’exécution {#apps-libs-immutable}
 
-Le contenu et les sous-dossiers de `/apps` et `/libs` sont en lecture seule. Les fonctionnalités ou le code personnalisé qui s’attendent à apporter des modifications à ces emplacements échoueront. Une erreur sera alors renvoyée, indiquant que ce contenu est en lecture seule et que l’opération d’écriture n’a pas pu être effectuée. Cela a une incidence dans plusieurs domaines d’AEM :
+Le contenu et les sous-dossiers de `/apps` et `/libs` sont en lecture seule. Les fonctionnalités ou le code personnalisé qui s’attendent à apporter des modifications à ces emplacements échoueront. Une erreur est renvoyée indiquant que ce contenu est en lecture seule et que l’opération d’écriture n’a pas pu être terminée. Cela a une incidence dans plusieurs domaines d’AEM :
 
 * Aucune modification n’est autorisée dans `/libs`.
    * Il ne s’agit pas d’une nouvelle règle, mais elle n’était pas appliquée dans les précédentes versions sur site d’AEM.
 * Les superpositions pour les zones de `/libs` qui peuvent être superposées sont toujours autorisées dans `/apps`.
    * Ces superpositions doivent provenir de Git par l’intermédiaire du pipeline CI/CD.
 * Les informations de conception de modèles statiques stockées dans `/apps` ne peuvent pas être modifiées au moyen de l’interface utilisateur.
-   * Il est recommandé d’utiliser plutôt des modèles modifiables.
+   * Il est recommandé d’utiliser plutôt des modèles modifiables .
    * Si des modèles statiques sont toujours requis, les informations de configuration doivent provenir de Git via le pipeline CI/CD.
 * Les configurations de déploiement MSM personnalisées et le plan directeur MSM doivent être installés à partir de Git via le pipeline CI/CD.
 * Les changements de traduction I18n doivent provenir de Git via le pipeline CI/CD.

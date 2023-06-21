@@ -4,10 +4,10 @@ description: Tirez parti du Centre d’actions pour agir facilement sur les inci
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 9302220536e7a541d44d96626c65de94ee5d64c3
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '705'
-ht-degree: 22%
+source-wordcount: '703'
+ht-degree: 17%
 
 ---
 
@@ -46,7 +46,7 @@ Cliquez sur l’e-mail pour accéder au Centre d’actions. Une fenêtre context
 
 Cliquez sur le bouton **En savoir plus** accède à cet article par le biais de ce lien, où le type de notification peut être référencé dans la variable [tableau des types de notification pris en charge](#supported-notification-types) ci-dessous, qui fournit des conseils sur les actions à entreprendre.
 
-Le centre d’actions contient une liste d’autres notifications récentes. Il est recommandé en utilisant la liste Actions de signaler à Adobe que votre organisation est au courant de la tâche et de résoudre ultérieurement la notification lorsque des mesures correctives ont été prises.
+Le centre d’actions contient une liste d’autres notifications récentes. Il est recommandé d’utiliser la liste Actions afin de reconnaître à l’Adobe que votre organisation est au courant de la tâche et de résoudre la notification ultérieurement lorsque des mesures correctives ont été prises.
 
 ![Liste de notifications](/help/operations/assets/notification-list.png)
 
@@ -68,7 +68,7 @@ AEM as a Cloud Service comporte plusieurs types de notifications, mais seul un s
 |---|---|---|---|
 | Incidents opérationnels | Des incidents critiques nécessitant une action immédiate | Utilisateur affecté au profil de produit &quot;Notification d’incident - Cloud Service&quot; | X |
 | Recommandations proactives | Optimisations qui doivent être planifiées | Utilisateur affecté au profil de produit &quot;Notification proactive - Cloud Service&quot; | X |
-| Statuts du pipeline de Cloud Manager | Informations sur l’état de vos pipelines | Utilisateur avec des rôles Propriétaire de l’entreprise, Responsable de programme ou Responsable de déploiement, case à cocher &quot;Autres&quot; sélectionnée dans [Préférences Experience Cloud](https://experience.adobe.com/preferences), comme [décrit ici](/help/implementing/cloud-manager/notifications.md). |  |
+| Statuts du pipeline de Cloud Manager | Informations sur l’état de vos pipelines | Utilisateur avec des rôles Propriétaire de l’entreprise, Responsable de programme ou Responsable de déploiement, case à cocher &quot;Autres&quot; sélectionnée dans [Préférences Experience Cloud](https://experience.adobe.com/preferences), comme [décrit ici](/help/implementing/cloud-manager/notifications.md). |   |
 
 ## Types de notification pris en charge {#supported-notification-types}
 

@@ -2,10 +2,10 @@
 title: Contenu associé (Ressources - Fragments de contenu)
 description: Découvrez comment la fonctionnalité de contenu associé d’AEM assure la connexion afin que les ressources puissent éventuellement être utilisées avec le fragment.
 exl-id: 8c8ad768-a210-4d34-bb47-2347599bcac9
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 89%
+source-wordcount: '231'
+ht-degree: 83%
 
 ---
 
@@ -27,7 +27,7 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
 1. Selon que des collections ont déjà été associées ou non, sélectionnez l’une des options suivantes :
 
-   * **Associer le contenu** : il s’agira de la première collection associée
+   * **Associer du contenu** : il s’agit de la première collection associée.
    * **Associer la collection** : les collections associées sont déjà configurées
 
 1. Sélectionnez la collection requise.
@@ -36,7 +36,7 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
    ![Sélectionner la collection](assets/cfm-assoc-content-02.png)
 
-1. Confirmez (avec **Sélectionner**). La collection sera répertoriée comme associée.
+1. Confirmez (avec **Sélectionner**). La collection est répertoriée comme associée.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 

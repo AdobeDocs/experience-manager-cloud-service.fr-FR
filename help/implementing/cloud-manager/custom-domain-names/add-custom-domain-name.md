@@ -2,10 +2,10 @@
 title: Ajout d’un nom de domaine personnalisé
 description: Découvrez comment ajouter un nom de domaine personnalisé à l’aide de Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: 21496a52fbe3caa08c606ddaeb85481a9d416b3d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '577'
-ht-degree: 98%
+source-wordcount: '574'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,7 @@ Vous pouvez ajouter un nom de domaine personnalisé à partir de deux emplacemen
 
 >[!NOTE]
 >
->Un utilisateur doit disposer du rôle **Propriétaire d’entreprise** ou **Responsable du déploiement** pour pouvoir ajouter un nom de domaine personnalisé dans Cloud Manager.
+>Un utilisateur doit disposer de la variable **Propriétaire de l’entreprise** ou **Responsable de déploiement** rôle pour ajouter un nom de domaine personnalisé dans Cloud Manager
 
 ## Ajout d’un nom de domaine personnalisé à partir de la page Paramètres du domaine {#adding-cdn-settings}
 
@@ -42,7 +42,7 @@ Suivez la procédure suivante pour ajouter un nom de domaine personnalisé à pa
    >
    >N’incluez pas `http://`, `https://` ni d’espace lors de la saisie dans votre domaine.
 
-1. Sélectionnez l’**environnement** dont le service sera associé au nom de domaine.
+1. Sélectionnez la **Environnement** dont le service est associé au nom de domaine.
 
 1. Sélectionnez le service **Publier** ou **Aperçu**.
 

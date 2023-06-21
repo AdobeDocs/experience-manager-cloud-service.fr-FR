@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.11.0.
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1265'
-ht-degree: 100%
+source-wordcount: '1264'
+ht-degree: 95%
 
 ---
 
@@ -32,15 +32,15 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ### Nouveautés d’[!DNL Assets] et [!DNL Dynamic Media] {#what-is-new-assets}
 
-* **Ingestion de ressources en masse** : permet d’apporter aux clients un service d’ingestion évolutif et natif dans le cloud, fondé sur une architecture [!DNL Experience Manager] as a Cloud Service, y compris les microservices de ressources. Les cas d’utilisation essentiels incluent l’ingestion à l’échelle voulue avec la surveillance, les rapports et la planification, tout en permettant le transfert initial des ressources vers les entrepôts de données dans le cloud à l’aide d’outils de téléchargement courants. Voir [Outil d’ingestion de ressources en masse](/help/assets/add-assets.md#asset-bulk-ingestor).
+* **Ingestion en masse de ressources**: Fournir aux clients un service d’ingestion évolutif et natif dans le cloud qui utilise [!DNL Experience Manager] Architecture as a Cloud Service, y compris les microservices de ressources. Les cas d’utilisation essentiels incluent l’ingestion à l’échelle voulue avec la surveillance, les rapports et la planification, tout en permettant le transfert initial des ressources vers les entrepôts de données dans le cloud à l’aide d’outils de téléchargement courants. Voir [Outil d’ingestion de ressources en masse](/help/assets/add-assets.md#asset-bulk-ingestor).
 
-   Cet outil est destiné aux administrateurs système, consultants ou partenaires concernés par l’implémentation. Cette fonction permet l’ingestion à grande échelle et est idéalement adaptée pour une ingestion initiale ou occasionnellement volumineuse. Pour les tâches d’ingestion de volume plus modeste, utilisez l’[[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr) ou [effectuez un chargement à l’aide de l’interface utilisateur d’Assets](/help/assets/add-assets.md#upload-assets).
+  Cet outil est destiné aux administrateurs système, consultants ou partenaires concernés par l’implémentation. Cette fonction permet l’ingestion à grande échelle et est idéalement adaptée pour une ingestion initiale ou occasionnellement volumineuse. Pour les tâches d’ingestion de volume plus modeste, utilisez l’[[!DNL Experience Manager] application de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html?lang=fr) ou [effectuez un chargement à l’aide de l’interface utilisateur d’Assets](/help/assets/add-assets.md#upload-assets).
 
-   ![Configuration de l’importateur en masse](/help/assets/assets/bulk-import-config-low-res.png)
+  ![Configuration de l’importateur en masse](/help/assets/assets/bulk-import-config-low-res.png)
 
 * Les utilisateurs peuvent désormais trier les ressources numériques à l’aide des vues Carte et Colonne.
 
-   ![tri des ressources](/help/assets/assets/asset-sort-options.png)
+  ![tri des ressources](/help/assets/assets/asset-sort-options.png)
 
 * Les améliorations suivantes ont été apportées à l’accessibilité d’[!DNL Experience Manager Assets] grâce à cette version. Pour plus d’informations, voir [Fonctionnalités d’accessibilité d’ [!DNL Assets]](/help/assets/accessibility.md).
 
@@ -54,7 +54,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 * **Paramètres prédéfinis de lot dans Dynamic Media** : vous pouvez désormais automatiser la création et l’organisation de différentes ressources dans une visionneuse d’images ou une visionneuse à 360° lorsque vous chargez des fichiers de ressources dans un dossier, individuellement ou par une ingestion en masse.
 
-   Voir [À propos des paramètres prédéfinis de lot](/help/assets/dynamic-media/batch-set-presets-dm.md).
+  Voir [À propos des paramètres prédéfinis de lot](/help/assets/dynamic-media/batch-set-presets-dm.md).
 
 * Les améliorations d’accessibilité suivantes sont désormais disponibles dans [!DNL Dynamic Media] :
 
@@ -67,7 +67,7 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
    * Les utilisateurs du clavier et du lecteur d’écran peuvent employer la fonctionnalité de recadrage.
    * Les utilisateurs du clavier peuvent mieux gérer les zones réactives.
 
-   Voir [Accessibilité dans [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
+  Voir [Accessibilité dans [!DNL Dynamic Media]](/help/assets/dynamic-media/accessibility-dm.md).
 
 ## Adobe Experience Manager Commerce as a Cloud Service {#cloud-services-commerce}
 
@@ -99,7 +99,7 @@ Pour plus d’informations, consultez [Gestion des environnements](/help/impleme
 * Le chargement des dépendances effectué avant l’exécution du build nécessitait le téléchargement d’un module externe Maven.
 * Le lien du pied de page de Cloud Manager destiné à sélectionner une langue dirige désormais vers l’emplacement approprié.
 * Parfois, pendant la numérisation du code, le processus SonarQube ne démarrait pas. Désormais, il sera automatiquement détecté et un redémarrage sera tenté.
-* Tous les pipelines de production existants seront automatiquement activés avec l’étape Contrôle de l’expérience.
+* Tous les pipelines de production existants sont automatiquement activés avec l’étape Audit de l’expérience .
 
 ## Adobe Experience Manager as a Cloud Service Foundation {#cloud-service-foundation}
 
@@ -117,7 +117,7 @@ Le plug-in Build Analyzer Maven du SDK AEM as a Cloud Service détecte des prob
 
 ### Autres {#others-foundation}
 
-La nouvelle [syntaxe httpd -t](/help/implementing/dispatcher/disp-overview.md#local-validation) vérifie la configuration Apache et Dispatcher mise en œuvre lors de la génération de Cloud Manager. Il est également possible de l’exécuter à l’aide des outils de Dispatcher d’AEM du SDK AEM as a Cloud Service.
+Nouveau [Syntaxe &quot;httpd -t&quot;](/help/implementing/dispatcher/disp-overview.md#local-validation) recherchez la configuration apache et dispatcher exécutée pendant la génération de Cloud Manager, qui peut également être exécutée à l’aide AEM outils Dispatcher du SDK as a Cloud Service.
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 

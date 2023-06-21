@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1498'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -44,7 +44,7 @@ Adaptive Forms allow you to create forms that are engaging, responsive, dynamic,
    It is an ideal form model if you have investments in XFA-based or XDP forms. It provides a direct way to convert your XFA-based forms into Adaptive Forms. Any existing XFA rules are retained in the associated Adaptive Forms. The resulting Adaptive Forms support XFA constructs, such as validations, events, properties, and patterns. 
 
 * **Using an XML Schema Definition (XSD) or a JSON Schema**
-   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema will be available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
+   XML and JSON schemas represent the structure in which data is produced or consumed by the back-end system in your organization. You can associate the schema to an Adaptive Form and use its elements to add dynamic content to the Adaptive Form. The elements of the schema are available for use in the Data Model Objects tab of the Content browser when authoring Adaptive Forms.
 
 * **Using none or without a form model**
    Adaptive Forms created with this option don't use any form model. The data XML generated from such forms has flat structure with fields and corresponding values. -->
@@ -61,7 +61,7 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
    * **Modèle modifiable** : vous pouvez [créer un modèle modifiable](template-editor.md) ou en [importer un existant](migrate-to-forms-as-a-cloud-service.md). Vous pouvez également déployer l’[archétype le plus récent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=fr#:~:text=L%E2%80%99arch%C3%A9type%20AEM%20est%20constitu%C3%A9,les%20servlets%20et%20les%20filtres%20de%20requ%C3%AAte.%20it.tests%3A%20are%20Java-based%20integration%20tests.) pour obtenir des exemples de modèles modifiables.
 
-   * **Modèle statique** : il s’agit de modèles hérités qui ne sont recommandés que pour les clients effectuant la migration depuis des installations Adobe Managed Services (AMS) et AEM Forms On-Premise (AEM 6.5 Forms ou version antérieure). Ainsi, vous pouvez continuer à tirer profit de votre investissement existant dans les modèles statiques. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
+   * **Modèle statique** : il s’agit de modèles hérités qui ne sont recommandés que pour les clients effectuant la migration depuis des installations Adobe Managed Services (AMS) et AEM Forms On-Premise (AEM 6.5 Forms ou version antérieure). Ils vous permettent de continuer à utiliser votre investissement existant dans des modèles statiques. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
 
 
 
@@ -78,9 +78,9 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
 
    * La sélection d’un modèle modifiable sélectionne automatiquement un thème et une action d’envoi spécifiés dans le modèle, et le bouton **[!UICONTROL Créer]** est activé. Vous pouvez accéder aux onglets **[!UICONTROL Style]** ou **[!UICONTROL Envoi]** pour sélectionner un autre thème ou une autre action d’envoi. Si le modèle modifiable sélectionné ne spécifie pas de thème, le bouton de création reste désactivé. Vous pouvez accéder à l’onglet **[!UICONTROL Styles]** pour sélectionner manuellement un thème.
 
-      >[!NOTE]
-      >
-      > Vous pouvez également créer un modèle de [!UICONTROL document d’enregistrement] à l’aide d’un éditeur de formulaires adaptatifs. Pour plus d’informations, voir [Prise en charge des documents d’enregistrement dans l’éditeur de formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
+     >[!NOTE]
+     >
+     > Vous pouvez également créer un modèle de [!UICONTROL document d’enregistrement] à l’aide d’un éditeur de formulaires adaptatifs. Pour plus d’informations, voir [Prise en charge des documents d’enregistrement dans l’éditeur de formulaires adaptatifs](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#document-of-record-support-in-adaptive-form-editor-dor-support-in-adaptiveform).
 
    * Lorsque vous sélectionnez un modèle statique, les options de données, de style, d’envoi, de diffusion et de prévisualisation ne sont pas disponibles. Lorsque vous créez un formulaire adaptatif, il est recommandé d’utiliser un modèle modifiable.
 

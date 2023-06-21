@@ -2,10 +2,10 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2931'
-ht-degree: 100%
+source-wordcount: '2927'
+ht-degree: 98%
 
 ---
 
@@ -74,7 +74,7 @@ La structure de déploiement d’application recommandée est la suivante :
 
 >[!NOTE]
 >
->Le même code doit être déployé dans tous les environnements. C’est indispensable pour garantir que la confiance dans l’environnement d’évaluation s’applique également en production. Pour plus d’informations, voir la section [Modes d’exécution](/help/implementing/deploying/overview.md#runmodes).
+>Le même code doit être déployé dans tous les environnements. Ce code est nécessaire pour s’assurer qu’un niveau de confiance des validations dans l’environnement intermédiaire est également en production. Pour plus d’informations, voir la section [Modes d’exécution](/help/implementing/deploying/overview.md#runmodes).
 
 
 ### Packages de contenu
@@ -93,11 +93,11 @@ La structure de déploiement d’application recommandée est la suivante :
 
 + Le package `all` est un package conteneur n’incluant QUE des artefacts déployables, le fichier Jar du bundle OSGI, `ui.apps`, `ui.config` et des packages `ui.content` en tant qu’incorporations. Le package `all` ne doit pas comporter de **contenu ou de code** propre, mais à la place doit déléguer tout le déploiement sur le référentiel à ses sous-packages ou aux fichiers Jar du bundle OSGi.
 
-   Les modules sont désormais inclus à l’aide de la [configuration intégrée du plug-in FileVault Package Maven](#embeddeds) au lieu de la configuration `<subPackages>`.
+  Les modules sont désormais inclus à l’aide de la [configuration intégrée du plug-in FileVault Package Maven](#embeddeds) au lieu de la configuration `<subPackages>`.
 
-   Pour les déploiements Experience Manager complexes, il peut être souhaitable de créer plusieurs projets/packages `ui.apps`, `ui.config` et `ui.content` représentant des clients ou des sites spécifiques dans AEM. Dans ce cas, assurez-vous que la division entre contenu modifiable et non modifiable est respectée et que les packages de contenu et les fichiers Jar du bundle OSGi requis sont incorporés sous la forme de sous-packages dans le package du conteneur `all`.
+  Pour les déploiements Experience Manager complexes, il peut être souhaitable de créer plusieurs projets/packages `ui.apps`, `ui.config` et `ui.content` représentant des clients ou des sites spécifiques dans AEM. Dans ce cas, assurez-vous que la division entre contenu modifiable et non modifiable est respectée et que les packages de contenu et les fichiers Jar du bundle OSGi requis sont incorporés sous la forme de sous-packages dans le package du conteneur `all`.
 
-   Une structure complexe d’un package de contenu de déploiement peut, par exemple, se présenter comme suit :
+  Une structure complexe d’un package de contenu de déploiement peut, par exemple, se présenter comme suit :
 
    + Le package de contenu `all` intègre les packages suivants afin de créer un artefact de déploiement unique
       + `common.ui.apps` déploie le code requis par les sites A **et** B
@@ -231,12 +231,12 @@ Analyse de cette structure de dossiers :
    + `/apps/my-other-app-packages`
    + `/apps/vendor-packages`
 
-   >[!WARNING]
-   >
-   >Par convention, le suffixe `-packages` est ajouté au nom des dossiers dans lesquels sont incorporés des sous-packages. Cela permet de s’assurer que les packages de contenu et de code du déploiement ne sont **pas** déployés dans le(s) dossier(s) cible(s) d’un sous-package `/apps/<app-name>/...`, ce qui provoque un comportement d’installation cyclique destructeur.
+  >[!WARNING]
+  >
+  >Par convention, le suffixe `-packages` est ajouté au nom des dossiers dans lesquels sont incorporés des sous-packages. Cela permet de s’assurer que les packages de contenu et de code du déploiement ne sont **pas** déployés dans le(s) dossier(s) cible(s) d’un sous-package `/apps/<app-name>/...`, ce qui provoque un comportement d’installation cyclique destructeur.
 
 + Le dossier de troisième niveau doit être
-   `application`, `content` ou `container`
+  `application`, `content` ou `container`
    + Le dossier `application` contient des packages de code.
    + Le dossier `content` contient des packages de contenu.
    + Le dossier `container` contient les [packages d’applications supplémentaires](#extra-application-packages) pouvant être inclus par l’application AEM.
@@ -287,7 +287,7 @@ L’ajout de dépendances Maven suivant les pratiques Maven standard et l’inco
 
 ## Dépendances entre les packages `ui.apps` et `ui.content` {#package-dependencies}
 
-Pour assurer l’installation correcte des packages, il est recommandé d’établir des dépendances entre les packages.
+Pour assurer une installation correcte des packages, il est recommandé d’établir des dépendances inter-packages.
 
 La règle est que les packages contenant du contenu modifiable (`ui.content`) doivent dépendre du code non modifiable (`ui.apps`) qui prend en charge le rendu et l’utilisation du contenu modifiable.
 
@@ -550,7 +550,7 @@ Si plusieurs `/apps/*-packages` sont utilisés dans les cibles incorporées, ils
 
 >[!WARNING]
 >
->L’ajout d’autres référentiels Maven peut rallonger les délais de création, car d’autres référentiels Maven seront vérifiés pour en déterminer les dépendances.
+>L’ajout d’autres référentiels Maven peut prolonger les délais de création, car d’autres référentiels Maven sont vérifiés pour en déterminer les dépendances.
 
 Dans le fichier `pom.xml` du projet Reactor, ajoutez toute directive de référentiel Maven public tierce qui s’avère nécessaire. La configuration `<repository>` complète doit être disponible auprès du fournisseur de référentiels tiers.
 

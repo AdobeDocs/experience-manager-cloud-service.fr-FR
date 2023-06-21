@@ -5,10 +5,10 @@ landing-page-description: Découvrez comment gérer les fragments de contenu à 
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: 54efcf5fb486e7ecce66d8eb498625e447446e5d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 90%
+source-wordcount: '1103'
+ht-degree: 84%
 
 ---
 
@@ -28,7 +28,6 @@ La console Fragments de contenu est dédiée à la gestion, à la recherche et �
 >
 >* Cette console **Fragments de contenu**.
 >* La console **Ressources**. Voir la section [Gérer des fragments de contenu](/help/assets/content-fragments/content-fragments-managing.md).
-
 
 >[!NOTE]
 >
@@ -60,12 +59,12 @@ Vous pouvez constater ici qu’il existe trois zones principales :
 * Le panneau principal/droit, à partir duquel vous pouvez :
    * Consulter la liste de tous les fragments de contenu dans la branche sélectionnée de l’arborescence. :
       * L’emplacement est indiqué par les chemins de navigation. Ceux-ci peuvent également être utilisés pour modifier l’emplacement.
-      * Les fragments de contenu du dossier sélectionné et tous les dossiers enfants s’affichent. :
+      * Les fragments de contenu du dossier sélectionné et tous les dossiers enfants s’affichent :
          * [Plusieurs champs d’information](#selectuse-available-columns) à propos d’un fragment de contenu fournissent des liens ; en fonction du champ, ces éléments peuvent :
             * Ouvrir le fragment approprié dans l’éditeur
             * Afficher des informations à propos des références
             * Afficher des informations sur les versions linguistiques du fragment
-      * Lorsque vous placez le pointeur de la souris sur les en-têtes de colonne, un sélecteur d’actions déroulant et des curseurs de largeur s’affichent. Ils vous permettent d’effectuer les opérations suivantes :
+      * Le survol de la souris effectué sur les en-têtes de colonne permet d’afficher un sélecteur d’action déroulante et des curseur de largeur. Ils vous permettent d’effectuer les opérations suivantes :
          * Trier : sélectionnez l’action appropriée pour trier par ordre croissant ou décroissant.
 Le tableau entier sera trié en fonction de cette colonne. Le tri n’est disponible que sur les colonnes appropriées.
          * Redimensionnez la colonne à l’aide de l’action ou des curseurs de largeur.
@@ -87,17 +86,16 @@ Certaines actions sont disponibles à partir de la console, sans sélectionner d
 * [Personnaliser la vue du tableau pour afficher les colonnes d’informations sélectionnées.](#select-available-columns)
 * Utiliser **Ouvrir dans Assets** pour ouvrir directement l’emplacement actuel dans la console **Ressources**
 
-   >[!NOTE]
-   >
-   >La console **Ressources** permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
-   >
-   >* en utilisant le lien **Ouvrir dans Assets** (dans la console Fragments de contenu) ;
-   >* directement depuis le volet de navigation globale.
-
+  >[!NOTE]
+  >
+  >La console **Ressources** permet d’accéder aux ressources, telles que les images, les vidéos, etc.  Il est possible d’accéder à cette console :
+  >
+  >* en utilisant le lien **Ouvrir dans Assets** (dans la console Fragments de contenu) ;
+  >* directement depuis le volet de navigation globale.
 
 ### Actions pour un fragment de contenu (sélectionné) {#actions-selected-content-fragment}
 
-La sélection d’un fragment spécifique ouvre une barre d’outils axée sur les actions disponibles pour ce fragment. Vous pouvez également sélectionner plusieurs fragments. La sélection des actions sera adaptée en conséquence.
+La sélection d’un fragment spécifique ouvre une barre d’outils axée sur les actions disponibles pour ce fragment. Vous pouvez également sélectionner plusieurs fragments ; la sélection des actions est ajustée en conséquence.
 
 ![Console Fragments de contenu - Barre d’outils pour un fragment sélectionné](assets/cfc-fragment-toolbar.png)
 
@@ -142,17 +140,17 @@ Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d�
 
    * Fournit un lien qui ouvre une boîte de dialogue répertoriant toutes les références parentes de ce fragment, notamment le référencement de fragments de contenu, de fragments d’expérience et de pages. Pour ouvrir une référence spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
 
-      ![Console Fragments de contenu - Boîte de dialogue Références](assets/cfc-console-references-dialog.png)
+     ![Console Fragments de contenu - Boîte de dialogue Références](assets/cfc-console-references-dialog.png)
 
 * **Langue**
 
    * Indique les paramètres régionaux du fragment de contenu, ainsi que le nombre total de copies de langue/paramètres régionaux associées au fragment de contenu.
 
-      ![Console Fragments de contenu - Indicateur de langue](assets/cfc-console-language-indicator.png)
+     ![Console Fragments de contenu - Indicateur de langue](assets/cfc-console-language-indicator.png)
 
       * Cliquez/appuyez sur le décompte pour ouvrir une boîte de dialogue qui affiche toutes les copies de langue. Pour ouvrir une copie de langue spécifique, cliquez sur le **Titre** dans la boîte de dialogue.
 
-         ![Console Fragments de contenu - Boîte de dialogue Langue](assets/cfc-console-languages-dialog.png)
+        ![Console Fragments de contenu - Boîte de dialogue Langue](assets/cfc-console-languages-dialog.png)
 
 ## Sélectionner les colonnes disponibles {#select-available-columns}
 
@@ -186,7 +184,7 @@ Par exemple, sélectionnez **Publié** dans la colonne **Statut** :
 
 ![Console Fragments de contenu - Filtrage](assets/cfc-console-fast-filter-01.png)
 
-Une fois cette option sélectionnée, elle s’affiche sous forme de prédicat de filtre et la liste est filtrée en conséquence :
+Après la sélection, il s’affiche sous la forme d’un prédicat de filtre, et la liste est filtrée en conséquence :
 
 ![Console Fragments de contenu - Filtrage](assets/cfc-console-fast-filter-02.png)
 

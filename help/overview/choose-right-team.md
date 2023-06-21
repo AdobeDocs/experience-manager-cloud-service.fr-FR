@@ -2,10 +2,10 @@
 title: Les bonnes personnes, les bonnes fonctions
 description: Les bonnes personnes, les bonnes fonctions
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -78,4 +78,4 @@ Maintenant que vous connaissez les fonctions requises, consultez le graphique ci
 
 >[!TIP]
 >
-> En savoir plus sur Adobe Experience Cloud, exploiter les ressources sur [Experience League](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) et obtenir une certification par [Adobe Digital Learning](https://learning.adobe.com/certification.html).
+> En savoir plus sur Adobe Experience Cloud et utiliser les ressources sur [Experience League](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) et être certifié via [Apprentissage numérique Adobe](https://learning.adobe.com/certification.html).

@@ -2,10 +2,10 @@
 title: Accéder à Admin Console
 description: Une fois que vous avez compris la préparation nécessaire à l’intégration et les bases de la structure AEMaaCS, vous êtes prêt à vous connecter pour la première fois à Admin Console.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 98%
+source-wordcount: '1109'
+ht-degree: 96%
 
 ---
 
@@ -32,7 +32,7 @@ Adobe Admin Console désigne un emplacement central pour administrer et gérer v
 
 Pour vous connecter à Admin Console, vous aurez besoin d’un Adobe ID. Un Adobe ID est un compte lié à une adresse e-mail spécifique. C’est nécessaire pour se connecter et accéder à AEM as a Cloud Service ou à une autre solution Adobe. En utilisant votre Adobe ID, vous conservez tous vos plans et produits Adobe associés à un compte donné.
 
-En tant qu’administrateur système, lorsque vous configurez votre équipe dans Admin Console, vous indiquez l’adresse e-mail qui sera utilisée comme Adobe ID.
+Lorsque vous, en tant qu’administrateur système, configurez votre équipe dans le Admin Console, vous indiquez l’adresse électronique utilisée comme Adobe ID.
 
 Il existe trois types d’Adobe ID :
 

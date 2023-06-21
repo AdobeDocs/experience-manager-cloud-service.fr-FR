@@ -2,10 +2,10 @@
 title: Guide de référence pour l’API JavaScript ContextHub
 description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '4622'
-ht-degree: 89%
+source-wordcount: '4620'
+ht-degree: 88%
 
 ---
 
@@ -697,7 +697,7 @@ Associe une fonction à un événement. La fonction est appelée à chaque fois 
 
 Lorsque l’argument `triggerForPastEvents` est défini sur `true`, cette fonction renvoie une valeur `boolean` qui indique si l’événement s’est déjà produit :
 
-* `true` : l’événement s’est produit dans le passé et le gestionnaire sera appelé.
+* `true`: L’événement s’est produit dans le passé et le gestionnaire est appelé.
 * `false` : l’événement ne s’est pas produit dans le passé.
 
 Si `triggerForPastEvents` est défini sur `false`, cette fonction ne renvoie aucune valeur.
@@ -737,7 +737,7 @@ Associe une fonction à un événement. La fonction est appelée une seule fois,
 
 Lorsque l’argument `triggerForPastEvents` est défini sur `true`, cette fonction renvoie une valeur `boolean` qui indique si l’événement s’est déjà produit :
 
-* `true` : l’événement s’est produit dans le passé et le gestionnaire sera appelé.
+* `true`: L’événement s’est produit dans le passé et le gestionnaire est appelé.
 * `false` : l’événement ne s’est pas produit dans le passé.
 
 Si `triggerForPastEvents` est défini sur `false`, cette fonction ne renvoie aucune valeur.

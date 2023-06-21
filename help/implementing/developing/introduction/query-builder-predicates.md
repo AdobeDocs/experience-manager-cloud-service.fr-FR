@@ -2,10 +2,10 @@
 title: Référence des prédicats de Query Builder
 description: Référence des prédicats pour l’API Query Builder.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: 14aafcb6c4acc798b0f0e0c51ecb0726f8d567aa
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2283'
-ht-degree: 97%
+source-wordcount: '2280'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ Le nom « root » n’est jamais utilisé dans une requête ; il est implicit
 * **`p.hits`** – (Uniquement pour le servlet JSON) sélectionne la manière dont les accès sont écrits au format JSON, avec ces éléments standard (extensibles via le service ResultHitWriter) :
    * **`simple`** – éléments minimaux tels que `path`, `title`, `lastmodified`, `excerpt` (s’ils sont définis)
    * **`full`** – rendu JSON Sling du nœud, avec `jcr:path` qui indique le chemin de l’accès : par défaut, seules les propriétés directes du nœud sont répertoriées, inclure une arborescence plus profonde avec `p.nodedepth=N`, 0 signifiant l’ensemble de la sous-arborescence infinie ; ajouter `p.acls=true` pour inclure les autorisations JCR de la session en cours sur l’élément de résultat donné (mappages : `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`)
-   * **`selective`** – Uniquement les propriétés spécifiées dans `p.properties`, à savoir une liste de chemins d’accès relatifs séparés par des espaces (utiliser `+` dans les URL) ; si le chemin d’accès relatif a une profondeur `>1`, ils seront représentés sous la forme d’objets enfants ; la propriété spéciale `jcr:path` inclut le chemin de l’accès.
+   * **`selective`** - uniquement les propriétés spécifiées dans `p.properties`, qui est séparé par un espace (utilisez `+` dans les URL) la liste des chemins relatifs ; si le chemin relatif a une profondeur `>1` ils sont représentés sous la forme d’objets enfants ; le spécial `jcr:path` inclut le chemin de l’accès.
 
 ### groupe {#group}
 
@@ -108,7 +108,7 @@ Ce prédicat limite le résultat aux fragments de contenu.
 
 Ce prédicat compare entre elles deux propriétés de date JCR. Peuvent tester s’ils sont égaux, inégaux, supérieurs ou supérieurs ou égaux.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
+Il s’agit d’un prédicat de filtrage uniquement qui ne peut pas utiliser d’index de recherche.
 
 #### Propriétés {#properties-2}
 
@@ -144,7 +144,7 @@ Il ne prend pas en charge le filtrage.
 
 Ce prédicat exclut des nœuds du résultat lorsque leur chemin d’accès correspond à une expression régulière.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
+Il s’agit d’un prédicat de filtrage uniquement qui ne peut pas utiliser d’index de recherche.
 
 Il ne prend pas en charge l’extraction de facettes.
 
@@ -169,7 +169,7 @@ Il ne prend pas en charge l’extraction de facettes.
 
 Ce prédicat limite les résultats aux éléments dont la session en cours possède les [privilèges JCR](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges) spécifiés.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche. Il ne prend pas en charge l’extraction de facettes.
+Il s’agit d’un prédicat de filtrage uniquement qui ne peut pas utiliser d’index de recherche. Il ne prend pas en charge l’extraction de facettes.
 
 #### Propriétés {#properties-7}
 
@@ -179,7 +179,7 @@ Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d�
 
 Ce prédicat identifie des pages AEM dans une langue spécifique. Cela tient compte de la propriété de langue de la page et du chemin de page qui inclut souvent la langue ou le paramètre régional dans une structure de site de niveau supérieur.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
+Il s’agit d’un prédicat de filtrage uniquement qui ne peut pas utiliser d’index de recherche.
 
 Il prend en charge l’extraction des facettes et fournit des intervalles pour chaque code de langue unique.
 
@@ -191,7 +191,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
 
 Ce prédicat vérifie si un nœud est une ressource DAM principale et non une sous-ressource. Il s’agit, en fait, de tout nœud qui ne se trouve pas à l’intérieur d’un nœud « sub-assets ». Notez que ce prédicat ne recherche pas le type de nœud `dam:Asset`. Pour utiliser ce prédicat, définissez simplement `mainasset=true` ou `mainasset=false`. Il n’y a pas d’autres propriétés.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
+Il s’agit d’un prédicat de filtrage uniquement qui ne peut pas utiliser d’index de recherche.
 
 Il prend en charge l’extraction des facettes et fournit deux intervalles pour les ressources principales et secondaires.
 
@@ -203,7 +203,7 @@ Il prend en charge l’extraction des facettes et fournit deux intervalles pour 
 
 Ce prédicat recherche les éléments membres d’une [collection de ressources Sling](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/org/apache/sling/resource/collection/ResourceCollection.html) spécifique.
 
-Il s’agit d’un prédicat de type filtrage seul qui ne peut pas exploiter d’index de recherche.
+Il s’agit d’un prédicat de filtrage uniquement qui ne peut pas utiliser d’index de recherche.
 
 Il ne prend pas en charge l’extraction de facettes.
 
@@ -245,8 +245,7 @@ Il ne prend pas en charge l’extraction de facettes.
 * **`path`** – Cette propriété définit le modèle de chemin.
    * Selon la propriété `exact`, il existe une correspondance avec l’ensemble de la sous-arborescence (comme l’ajout de `//*` dans xpath, mais sans englober le chemin de base), ou seulement une correspondance avec le chemin exact, avec la possibilité d’inclure des caractères génériques (`*`).
       * La valeur par défaut est `true`
-&lt;!— * Si la variable 
-`self`est définie, toute la sous-arborescence, y compris le noeud de base, sera recherchée.—>
+&lt;!— * Si la variable `self`est définie, la sous-arborescence entière, y compris le noeud de base, est recherchée.—>
 * **`exact`** – Si la propriété `exact` est définie sur `true`, le chemin d’accès exact doit correspondre, mais il peut contenir des caractères génériques simples (`*`), qui correspondent aux noms, mais pas `/` ; si elle est définie sur `false` (par défaut) tous les descendants sont inclus (facultatif).
 * **`flat`** – Effectue uniquement des recherches dans les enfants directs (ce qui revient à ajouter `/*` dans xpath) (utilisé uniquement si `exact` n’est pas défini sur « true », facultatif)
 * **`self`** – Effectue des recherches dans la sous-arborescence, mais inclut le nœud de base indiqué comme chemin d’accès (pas de caractères génériques).
@@ -268,7 +267,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
    * `equals` pour la correspondance exacte (par défaut)
    * `unequals` pour la comparaison des inégalités
    * `like` pour utiliser la fonction xpath `jcr:like` (facultatif)
-   * `not` pour l’absence de correspondance (par exemple, `not(@prop)` dans xpath, le paramètre de valeur sera ignoré).
+   * `not` pour aucune correspondance (par exemple, `not(@prop)` dans xpath, le paramètre value est ignoré)
    * `exists` pour une vérification d’existence
       * `true` la propriété doit exister
       * `false` est identique à `not` et est la valeur par défaut

@@ -2,10 +2,10 @@
 title: Création d’un dossier de ressources - Configuration découplée
 description: Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: c0b48db0cbef6232f153dc59432ea7289b430538
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 100%
+source-wordcount: '383'
+ht-degree: 93%
 
 ---
 
@@ -29,15 +29,14 @@ Un administrateur n’a besoin de créer des dossiers qu’occasionnellement pou
 1. Appuyez ou cliquez sur **Créer -> Dossier**.
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
-   * Le **Nom** devient le nom du nœud dans le référentiel.
-      * Il sera généré automatiquement en fonction du titre et adapté selon les [conventions d’appellation AEM.](/help/implementing/developing/introduction/naming-conventions.md)
+   * Le **Nom** devient le nom du noeud dans le référentiel.
+      * Il est généré automatiquement en fonction du titre et adapté en fonction des [AEM les conventions d’affectation des noms.](/help/implementing/developing/introduction/naming-conventions.md)
       * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](../assets/assets-folder-create.png)
 1. Sélectionnez le dossier que vous venez de créer en survolant et en appuyant sur la coche. Puis sélectionnez **Propriétés** dans la barre d’outils (ou utilisez le `p` [raccourci clavier.](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md))
 1. Dans la fenêtre **Propriétés**, sélectionnez l’onglet **Services cloud**.
 1. Pour la **configuration du cloud**, sélectionnez la[ configuration que vous avez créée précédemment.](create-configuration.md)
-
    ![Configurer le dossier de ressources](../assets/assets-folder-configure.png)
 1. Appuyez/cliquez sur **Enregistrer et fermer**.
 1. Appuyez/cliquez sur **OK** dans la fenêtre de confirmation.

@@ -1,11 +1,11 @@
 ---
 title: Phase de préparation
-description: Découvrez les étapes à suivre pour vous assurer que votre installation AEM est prête à être déplacée vers le cloud.
+description: Découvrez les étapes à suivre pour vous assurer que votre installation AEM est prête à être déplacée vers le cloud
 exl-id: 3bc8c037-d82a-4455-bce6-3c80c359a4ae
-source-git-commit: 13cb8ae059f0a77e517d2e64eae96a08f88ac075
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2079'
-ht-degree: 100%
+source-wordcount: '2074'
+ht-degree: 88%
 
 ---
 
@@ -21,11 +21,11 @@ Au cours de cette phase du parcours de migration d’AEM as a Cloud Service,
 
 ## Un peu d’histoire… {#story-so-far}
 
-Le document précédent, [Prise en main de la transition vers AEM as a Cloud Service](/help/journey-migration/getting-started.md), présente la liste des phases que vous devez subir pour migrer vers AEM as a Cloud Service, ainsi que les avantages de cette migration.
+le document précédent, [Prise en main de la transition vers AEM as a Cloud Service](/help/journey-migration/getting-started.md), présente la liste des phases que vous devez subir afin de pouvoir migrer vers AEM as a Cloud Service, ainsi que les avantages de cette migration.
 
 ## Objectif {#objective}
 
-Ce document vous aide à comprendre les facteurs à prendre en compte pour vous assurer que votre installation AEM est prête à être déplacée vers le cloud :
+Ce document vous aide à comprendre les facteurs à prendre en compte pour vous assurer que votre installation AEM est prête à être déplacée vers le cloud :
 
 * En savoir plus sur les modifications notables et les fonctionnalités obsolètes.
 * Comprendre comment planifier la migration vers AEM as a Cloud Service.
@@ -60,7 +60,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   <tr>
     <td>Les modes d’exécution personnalisés ne sont pas autorisés.</td>
     <td></td>
-    <td>Seuls les modes d’exécution prêts à l’emploi avec AEM as a Cloud Service sont pris en charge.<br>Lorsque d’autres environnements de développement sont ajoutés, ils sont tous liés au mode d’exécution « dev ».</td>
+    <td>Seuls les modes d’exécution prêts à l’emploi avec AEM as a Cloud Service sont pris en charge.<br>Lorsque d’autres environnements de développement sont ajoutés, ils sont tous liés au mode d’exécution "dev".</td>
   </tr>
   <tr>
     <td>L’exécution du pipeline de Cloud Manager est la seule méthode de déploiement.</td>
@@ -90,7 +90,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   <tr>
     <td>Passage aux opérations asynchrones</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/asynchronous-jobs.html?lang=fr#configuring-asynchronous-msm-operations">Configuration des opérations asynchrones</a></td>
-    <td>Dans le but dʼaméliorer les performances globales de vos environnements, certaines opérations sont exécutées en mode asynchrone. Les tâches asynchrones seront mises en file d’attente et exécutées lorsque les ressources système seront disponibles.</td>
+    <td>Dans le but dʼaméliorer les performances globales de vos environnements, certaines opérations sont exécutées en mode asynchrone. Les tâches asynchrones sont mises en file d’attente et exécutées lorsque des ressources système sont disponibles.</td>
   </tr>
   <tr>
     <td>Stratégies d’authentification et d’intégration basées sur des jetons</td>
@@ -150,7 +150,7 @@ La liste des éléments du tableau ci-dessous est le sous-ensemble des modificat
   <tr>
     <td>Modifications de l’authentification</td>
     <td><a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/ims-support.html?lang=fr">Prise en charge IMS d’AEM as a Cloud Service</td>
-    <td>Si vous utilisiez précédemment l’intégration SAML 2.0 sur les instances Auteur et Publication avant de passer à Cloud Service, notez que le principal changement est que l’instance Auteur d’AEM as a Cloud Service s’intègre uniquement à Adobe IMS. Cependant, l’instance Publication d’AEM as a Cloud Service peut toujours utiliser SAML ou d’autres intégrations d’authentification. AEM as a Cloud Service ne prend en charge l’authentification IMS que pour les utilisateurs Auteur, Admin et Dev. L’authentification IMS n’offre pas de prise en charge pour les utilisateurs finaux externes de sites clients tels que les visiteurs de site.</td>
+    <td>Si vous utilisiez précédemment l’intégration SAML 2.0 sur les instances Auteur et Publication avant de passer à Cloud Service, notez que le principal changement est que l’instance Auteur d’AEM as a Cloud Service s’intègre uniquement à Adobe IMS. Toutefois, AEM niveau Publication as a Cloud Service peut toujours utiliser SAML ou d’autres intégrations d’authentification. AEM as a Cloud Service ne prend en charge l’authentification IMS que pour les utilisateurs Auteur, Admin et Dev. L’authentification IMS n’offre pas de prise en charge pour les utilisateurs finaux externes de sites clients tels que les visiteurs de site.</td>
   </tr>
 </tbody>
 </table>
@@ -163,7 +163,7 @@ Nous vous recommandons de consulter la section [Fonctionnalités obsolètes](htt
 
 ## Planification de la révision de votre installation AEM {#review-planning}
 
-Une fois que vous vous êtes habitué aux modifications introduites avec AEM as a Cloud Service, il est temps de commencer à planifier une révision de votre installation existante, afin d’évaluer le niveau de modifications requis pour la déplacer vers le cloud.
+Après vous être familiarisé avec les modifications apportées à AEM as a Cloud Service, il est temps de commencer à planifier une révision de votre installation existante. Cela vous permet d’évaluer le niveau de modifications requis pour le déplacer vers le cloud.
 
 La figure suivante présente les principales étapes impliquées lors de la phase de révision :
 
@@ -173,7 +173,7 @@ Ensuite, nous allons explorer en détail la signification de chacune de ces éta
 
 ### Évaluation du niveau de préparation pour la transition vers Cloud Service {#assess-cloud-readiness}
 
-La première étape consiste à évaluer votre volonté de passer de votre version d’AEM existante à Cloud Service et à déterminer les domaines qui nécessiteront une refactorisation afin d’être compatibles avec AEM as a Cloud Service.
+La première étape consiste à évaluer votre volonté de passer de votre version d’AEM existante à Cloud Service et à déterminer les domaines qui nécessitent une refactorisation pour être compatibles avec AEM as a Cloud Service.
 
 Vous devrez effectuer une évaluation complète de votre code source AEM actuel par rapport aux modifications notables et aux fonctionnalités obsolètes afin de déterminer le niveau d’effort attendu dans le parcours de transition.
 
@@ -198,7 +198,7 @@ Un rapport type doit contenir les entrées suivantes :
 
 **Socialisation du rapport**
 
-Une fois les rapports Best Practices Analyzer terminés, partagez-les avec les équipes appropriées afin de confirmer vos résultats et de planifier vos prochaines étapes. En fonction des préférences, vous pouvez également distribuer une version imprimée du rapport à l’aide de l’option [Aperçu avant impression](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
+Une fois les rapports Analyseur des bonnes pratiques terminés, partagez-les avec les équipes appropriées afin que vous puissiez confirmer vos résultats et planifier vos prochaines étapes. En fonction des préférences, vous pouvez également distribuer une version imprimée du rapport à l’aide de l’option [Aperçu avant impression](/help/journey-migration/cloud-acceleration-manager/using-cam/cam-readiness-phase.md#print-preview-cam).
 
 ### Examen de la planification des ressources {#review-resource-planning}
 

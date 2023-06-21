@@ -2,10 +2,10 @@
 title: Comment créer un portail Formulaires sur une page Experience Manager Sites
 description: Découvrez comment créer un portail Formulaires et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 90%
+source-wordcount: '1762'
+ht-degree: 89%
 
 ---
 
@@ -97,7 +97,7 @@ Suivez les étapes suivantes pour configurer le connecteur de stockage unifié p
 
 ## Activer les composants du Portail Formulaires {#enable-forms-portal-components}
 
-Pour utiliser n’importe quel composant principal (y compris les composants de portail prêts à l’emploi) dans un site Adobe Experience Manager (AEM), vous devez créer un composant proxy et l’activer pour votre site. Pour créer un composant proxy et activer les composants de portail, voir [Utilisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=fr#create-proxy-components).
+Pour utiliser n’importe quel composant principal (y compris les composants de portail prêts à l’emploi) dans un site Adobe Experience Manager (AEM), vous devez créer un composant proxy et l’activer pour votre site. Pour créer un composant proxy et activer les composants de portail, voir [Utilisation des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=fr#create-proxy-components).
 
 Une fois qu’un composant de portail est activé, vous pouvez l’utiliser dans l’instance de création de votre page de sites.
 

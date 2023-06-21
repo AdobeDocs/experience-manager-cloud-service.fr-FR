@@ -2,10 +2,10 @@
 title: Développement et outil de comparaison des pages
 description: Découvrez le fonctionnement de l’outil de comparaison des pages et son impact sur un développeur
 exl-id: 03c08616-2203-4b90-bed6-4836266e2507
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 68%
+source-wordcount: '334'
+ht-degree: 60%
 
 ---
 
@@ -19,7 +19,7 @@ L’outil de comparaison des pages permet à l’utilisateur de comparer la page
 
 ## Détails de l’opération {#operation-details}
 
-Lors de la comparaison des versions d’une page, la version précédente que l’utilisateur souhaite comparer est recréée en arrière-plan par AEM pour faciliter la comparaison. Cette opération est nécessaire pour pouvoir restituer le contenu [pour une comparaison côte à côte](/help/sites-cloud/authoring/features/page-diff.md).
+Lors de la comparaison des versions d’une page, la version précédente que l’utilisateur souhaite comparer est recréée par AEM en arrière-plan afin de faciliter la comparaison. Cette opération est nécessaire pour pouvoir restituer le contenu [pour une comparaison côte à côte](/help/sites-cloud/authoring/features/page-diff.md).
 
 Cette opération de recréation, réalisée par AEM en interne, est transparente pour l’utilisateur et ne nécessite aucune intervention. Cependant, un administrateur qui consulte le référentiel, par exemple dans CRX DE Lite, voit ces versions recréées dans la structure de contenu.
 

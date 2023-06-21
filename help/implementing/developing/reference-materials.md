@@ -1,17 +1,17 @@
 ---
 title: Documents de référence sur les API
-description: AEM dispose d’API complètes et puissantes que vous pouvez exploiter pour votre projet d’expérience numérique.
+description: AEM dispose d’API complètes et puissantes que vous pouvez utiliser pour votre projet d’expérience numérique.
 exl-id: d4ef3040-5a0a-4149-9e99-09eda9605038
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '664'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
 # Documents de référence sur les API {#api-reference-materials}
 
-Adobe Experience Manager (AEM) fournit de nombreuses API pour développer des applications et étendre AEM. AEM repose sur un certain nombre de technologies open source, qui peuvent également être exploitées.
+Adobe Experience Manager (AEM) fournit de nombreuses API pour développer des applications et étendre AEM. AEM repose sur un certain nombre de technologies open source, qui peuvent également être utilisées.
 
 ## API de base d’AEM {#core-aem-apis}
 

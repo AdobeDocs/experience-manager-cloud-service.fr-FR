@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2023.1.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: f134fdbc-224b-404c-b20f-44cae8bad681
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 100%
+source-wordcount: '976'
+ht-degree: 97%
 
 ---
 
@@ -43,9 +43,9 @@ Consultez la vidéo Aperçu de la version de janvier 2023 pour un résumé des 
 
 ### Nouvelles fonctionnalités de [!DNL Assets] {#assets-features}
 
-* Les rapports de ressources offrent désormais aux administrateurs et aux administratrices la possibilité de [générer des rapports de téléchargement de ressources](/help/assets/asset-reports.md) à partir du déploiement d’Experience Manager Assets as a Cloud Service. Ces données permettent en outre aux administrateurs et aux administratrices d’obtenir des informations sur les principales mesures de succès, afin de mesurer l’adoption d’Assets au sein de votre entreprise et par les clients et clientes.
+* Les rapports de ressources offrent désormais aux administrateurs et aux administratrices la possibilité de [générer des rapports de téléchargement de ressources](/help/assets/asset-reports.md) à partir du déploiement d’Experience Manager Assets as a Cloud Service. Ces données permettent en outre aux administrateurs d’obtenir des informations sur les principales mesures de succès afin de mesurer l’adoption d’Assets au sein de votre entreprise et par les clients.
 
-   ![Rendu PDF pour d’autres formats](/help/release-notes/assets/choose_report.png)
+  ![Rendu PDF pour d’autres formats](/help/release-notes/assets/choose_report.png)
 
 * Experience Manager Assets [prend désormais en charge le jeton SAS](/help/assets/add-assets.md#asset-bulk-ingestor), en plus de la clé d’accès, pour l’authentification lors de la connexion à la source de données du stockage Blob Azure, à des fins d’ingestion de ressources à l’aide de l’outil d’importation en bloc.
 
@@ -82,17 +82,17 @@ Consultez la vidéo Aperçu de la version de janvier 2023 pour un résumé des 
 
 * [Environnements de développement rapide](/help/implementing/developing/introduction/rapid-development-environments.md) - Les RDE permettent aux développeurs et aux développeuses de résoudre rapidement les problèmes et de déployer de nouvelles fonctionnalités sur AEM as a Cloud Service.
 
-   Les environnements de développement rapide sont un nouveau type d’environnement cloud conçu comme une méthode rapide, cohérente et extensible de validation du code. Le travail en local fonctionne également en mode cloud. À l’aide des outils de ligne de commande, synchronisez rapidement les modules de contenu, les bundles, les fichiers de contenu, la configuration OSGI ou la configuration du Dispatcher avec le RDE. Regardez cette vidéo pour consulter un exemple concret :
+  Les environnements de développement rapide sont un nouveau type d’environnement cloud conçu comme une méthode rapide, cohérente et extensible de validation du code. Le travail en local fonctionne également en mode cloud. À l’aide des outils de ligne de commande, synchronisez rapidement les modules de contenu, les bundles, les fichiers de contenu, la configuration OSGI ou la configuration du Dispatcher avec le RDE. Regardez cette vidéo pour consulter un exemple concret :
 
-   >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
+  >[!VIDEO](https://video.tv.adobe.com/v/3413508/?quality=12&learn=on)
 
-   Une fois le code validé dans le RDE, nous vous conseillons de le déployer dans un environnement de développement cloud, de sorte à utiliser les points de contrôle qualité de Cloud Manager avant d’effectuer le déploiement via un pipeline de production dans vos environnements d’évaluation et de production.
+  Une fois le code validé dans le RDE, nous vous conseillons de le déployer dans un environnement de développement cloud, de sorte à utiliser les points de contrôle qualité de Cloud Manager avant d’effectuer le déploiement via un pipeline de production dans vos environnements d’évaluation et de production.
 
-   Chaque programme comprend un RDE. Vous pouvez en acquérir d’autres sous licence.
+  Chaque programme comprend un RDE. Vous pouvez en acquérir d’autres sous licence.
 
-   >[!NOTE]
-   >
-   >Les RDE seront progressivement déployés au cours des prochaines semaines ; vous pouvez envoyer un e-mail à aemcs-rde-support@adobe.com pour passer en tête.
+  >[!NOTE]
+  >
+  >Les RDE seront progressivement déployés au cours des prochaines semaines ; vous pouvez envoyer un e-mail à aemcs-rde-support@adobe.com pour passer en tête.
 
 * [Prise en charge étendue des jetons d’accès aux API côté serveur](/help/implementing/developing/introduction/generating-access-tokens-for-server-side-apis.md) - Vous pouvez désormais générer plusieurs informations d’identification, ce qui s’avère utile dans les cas où les API présentent des caractéristiques différentes. Il est également désormais possible de révoquer des informations d’identification en libre-service.
 

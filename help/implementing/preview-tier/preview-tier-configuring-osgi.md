@@ -2,10 +2,10 @@
 title: Configuration des paramètres OSGi pour le niveau d’aperçu
 description: Découvrez comment configurer le service d’aperçu AEM pour prévisualiser le contenu avant la mise en ligne.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 64%
+ht-degree: 58%
 
 ---
 
@@ -40,7 +40,7 @@ Pour plus d’informations, consultez [cette section](/help/implementing/deployi
 
 ## Débogage de l’aperçu à l’aide de Developer Console {#debugging-preview-using-the-developer-console}
 
-Pour déboguer le niveau d’aperçu à l’aide de Developer Console, procédez comme suit :
+Pour déboguer le niveau d’aperçu à l’aide de Developer Console, procédez comme suit :
 
 * Dans [Developer Console](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools), sélectionnez **-- Tous les aperçus --** ou un environnement de production qui inclut **prev** dans son nom.
 * Générez les informations pertinentes pour l’instance d’aperçu

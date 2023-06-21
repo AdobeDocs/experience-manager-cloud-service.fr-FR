@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: aa7b9daba4242965baf20a77af356952cd7bc279
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 100%
+source-wordcount: '1092'
+ht-degree: 92%
 
 ---
 
@@ -28,7 +28,7 @@ L’intégration à AEM Commerce as a Cloud Service est un processus à deux é
 
 La première étape d’intégration est effectuée par Adobe. Pour plus d’informations sur la tarification et l’approvisionnement, contactez votre représentant commercial.
 
-Une fois que vous disposez du module complémentaire CIF, celui-ci est appliqué à tout programme Cloud Manager existant. Si vous n’avez pas de programme Cloud Manager, vous devrez en créer un. Pour plus d’informations, voir [Configuration de votre programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=fr).
+Une fois que vous avez reçu le module complémentaire CIF, il est appliqué à tous les programmes Cloud Manager existants. Si vous n’avez pas de programme Cloud Manager, vous devrez en créer un. Pour plus d’informations, voir [Configuration de votre programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/getting-started/setting-up-program.html?lang=fr).
 
 La deuxième étape s’effectue en libre-service pour chaque environnement AEM as a Cloud Service. Il existe d’autres configurations que vous devrez effectuer après l’approvisionnement initial du module complémentaire CIF.
 
@@ -41,7 +41,7 @@ Cette variable d’environnement est utilisée à deux endroits :
 - Appels GraphQL d’AEM au serveur principal Commerce, via un client GraphQl partageable commun, utilisé par les composants principaux CIF AEM et les composants de projet client.
 - Configurez une URL de proxy GraphQL sur chaque environnement AEM, la variable est définie sur `/api/graphql`. Elle est utilisée par les outils de création d’AEM Commerce (module complémentaire CIF) et les composants côté client CIF.
 
-Une autre URL de point d’entrée GraphQL peut être utilisée pour chaque environnement AEM as a Cloud Service. De cette façon, les projets peuvent connecter les environnements d’évaluation AEM avec les systèmes d’évaluation de commerce et l’environnement de production AEM à un système de production de commerce. Ce point d’entrée GraphQL doit être accessible au public, et les connexions VPN privées ou locales ne sont pas prises en charge. Vous pouvez éventuellement fournir un en-tête d’authentification afin d’utiliser des fonctionnalités CIF supplémentaires nécessitant une authentification.
+Une autre URL de point d’entrée GraphQL peut être utilisée pour chaque environnement AEM as a Cloud Service. De cette façon, les projets peuvent connecter les environnements d’évaluation AEM avec les systèmes d’évaluation de commerce et l’environnement de production AEM à un système de production de commerce. Ce point d’entrée GraphQL doit être accessible au public, et les connexions VPN privées ou locales ne sont pas prises en charge. Vous pouvez éventuellement fournir un en-tête d’authentification pour utiliser des fonctionnalités CIF supplémentaires nécessitant une authentification.
 
 Facultatif et destiné uniquement à Adobe Commerce Enterprise/Cloud, le module complémentaire CIF prend en charge l’utilisation de données de catalogue intermédiaires pour les auteurs d’AEM. Pour ce faire, vous devez configurer un en-tête d’autorisation. Pour des raisons de sécurité, l’en-tête n’est disponible et utilisé que sur les instances d’auteur AEM. Les instances AEM de publication ne peuvent pas afficher de données intermédiaires.
 
@@ -51,7 +51,7 @@ Il existe deux options pour configurer le point d’entrée :
 
 >[!VIDEO](https://video.tv.adobe.com/v/37843?quality=12&learn=on)
 
-Vous pouvez le faire à l’aide d’une boîte de dialogue sur la page Détails de l’environnement. Lorsque vous affichez cette page pour un programme compatible avec le commerce, un bouton s’affiche si le point d’entrée n’est pas actuellement configuré :
+Vous pouvez le faire à l’aide d’une boîte de dialogue sur la page Détails de l’environnement. Lorsque vous affichez cette page pour un programme compatible Commerce, un bouton s’affiche si le point de terminaison n’est pas actuellement configuré :
 
 ![Informations sur l’environnement de CM](/help/commerce-cloud/assets/commerce-cmui.png)
 
@@ -59,7 +59,7 @@ Cliquez sur ce bouton pour ouvrir une boîte de dialogue :
 
 ![Point d’entrée CM Commerce](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Une fois le point d’entrée défini (et éventuellement l’en-tête d’authentification pour la prise en charge d’un catalogue intermédiaire), il s’affiche sur la page de détails. Cliquez sur l’icône Modifier pour ouvrir la boîte de dialogue dans laquelle le point d’entrée peut être modifié, si nécessaire.
+Une fois le point de terminaison défini et éventuellement un en-tête d’autorisation pour la prise en charge du catalogue intermédiaire, le point de terminaison s’affiche sur la page de détails. Cliquez sur l’icône Modifier pour ouvrir la boîte de dialogue dans laquelle le point d’entrée peut être modifié, si nécessaire.
 
 ![Informations sur l’environnement de CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
@@ -120,17 +120,17 @@ Les propriétés suivantes peuvent être configurées :
 - Client GraphQL : sélectionnez le client GraphQL configuré pour la communication du serveur principal Commerce. Cette sélection doit généralement être maintenue par défaut.
 - Affichage de magasin : identifiant d’affichage du magasin. Si cette valeur est vide, la vue de magasin par défaut est utilisée.
 - Chemin du proxy GraphQL : chemin d’URL du proxy GraphQL dans AEM utilisé pour les requêtes proxy vers le point d’entrée GraphQL principal de commerce.
-   >[!NOTE]
-   >
-   > Dans la plupart des configurations, la valeur par défaut `/api/graphql` ne doit pas être modifiée. Seule une configuration avancée n’utilisant pas le proxy GraphQL fourni doit modifier ce paramètre.
+  >[!NOTE]
+  >
+  > Dans la plupart des configurations, la valeur par défaut `/api/graphql` ne doit pas être modifiée. Seule une configuration avancée n’utilisant pas le proxy GraphQL fourni doit modifier ce paramètre.
 - Activer la prise en charge de l’UID du catalogue : activez la prise en charge de l’UID au lieu de l’ID dans les appels GraphQL du serveur principal de commerce.
-   >[!NOTE]
-   >
-   > La prise en charge des UID a été introduite dans Adobe Commerce version 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+  >[!NOTE]
+  >
+  > La prise en charge des UID a été introduite dans Adobe Commerce version 2.4.2. Activez cette option uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 - Identifiant de catégorie racine du catalogue : l’identifiant (UID ou ID) de la racine du catalogue du magasin.
-   >[!CAUTION]
-   >
-   > À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Si votre projet utilise la version 2.0.0 des composants principaux CIF, vous devez activer la prise en charge de l’UID de catalogue et utiliser un UID de catégorie valide comme « identifiant de catégorie racine de catalogue ».
+  >[!CAUTION]
+  >
+  > À compter de la version 2.0.0 des composants principaux CIF, la prise en charge de `id` a été supprimée et remplacée par `uid`. Si votre projet utilise la version 2.0.0 des composants principaux CIF, vous devez activer la prise en charge de l’UID de catalogue et utiliser un UID de catégorie valide comme « identifiant de catégorie racine de catalogue ».
 
 La configuration illustrée ci-dessus est fournie à titre de référence. Les projets doivent fournir leurs propres configurations.
 

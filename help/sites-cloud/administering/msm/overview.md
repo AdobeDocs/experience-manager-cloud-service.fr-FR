@@ -4,10 +4,10 @@ description: Découvrez comment réutiliser du contenu avec les puissantes fonct
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: e99522cb6221285b5b4de5f026dcc4d925035ec1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2710'
-ht-degree: 93%
+source-wordcount: '2705'
+ht-degree: 89%
 
 ---
 
@@ -40,74 +40,73 @@ Il existe de nombreux cas d’utilisation pour MSM et les Live Copies. Voici qu
 
 * **Multinationales – Entreprise mondiale à locale**
 
-   Un cas d’utilisation type pris en charge par MSM consiste à réutiliser du contenu dans plusieurs sites internationaux utilisant la même langue. Cela permet de réutiliser le contenu de base, tout en autorisant des variantes nationales.
+  Un cas d’utilisation type pris en charge par MSM consiste à réutiliser du contenu dans plusieurs sites internationaux utilisant la même langue. Cela permet de réutiliser le contenu de base, tout en autorisant des variantes nationales.
 
-   Par exemple, la section en anglais de l’[exemple de tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) est créée pour les clients situés aux États-Unis. La majeure partie du contenu de ce site peut également être utilisée pour d’autres sites WKND répondant aux besoins de clients anglophones de différents pays et différentes cultures. Le contenu de base reste identique sur tous les sites, mais des adaptations régionales sont possibles.
+  Par exemple, la section en anglais de l’[exemple de tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) est créée pour les clients situés aux États-Unis. La majeure partie du contenu de ce site peut également être utilisée pour d’autres sites WKND répondant aux besoins de clients anglophones de différents pays et différentes cultures. Le contenu de base reste identique sur tous les sites, mais des adaptations régionales sont possibles.
 
-   La structure suivante peut être utilisée pour des sites destinés aux États-Unis et au Canada : Notez que le nœud `language-masters` conserve la copie originale non seulement du contenu en anglais mais aussi d’autres langues. Ce contenu peut servir de base à d’autres contenus linguistiques régionaux en plus de l’anglais.
+  La structure suivante peut être utilisée pour des sites destinés aux États-Unis et au Canada : Notez que le nœud `language-masters` conserve la copie originale non seulement du contenu en anglais mais aussi d’autres langues. Ce contenu peut servir de base à d’autres contenus linguistiques régionaux en plus de l’anglais.
 
-   ```xml
-   /content
-       |- wknd
-           |- language-masters
-               |- en
-               |- es
-               |- fr
-           |- us
-               |- en
-               |- es
-           |- ca
-               |- en
-               |- fr
-   ```
+  ```xml
+  /content
+      |- wknd
+          |- language-masters
+              |- en
+              |- es
+              |- fr
+          |- us
+              |- en
+              |- es
+          |- ca
+              |- en
+              |- fr
+  ```
 
-   >[!NOTE]
-   >
-   >MSM ne traduit pas le contenu. Il crée la structure requise et déploie le contenu.
-   >
-   >
-   >Consultez [Traduction de contenu pour les sites multilingues](/help/sites-cloud/administering/translation/overview.md) pour cet exemple.
+  >[!NOTE]
+  >
+  >MSM ne traduit pas le contenu. Il crée la structure requise et déploie le contenu.
+  >
+  >
+  >Consultez [Traduction de contenu pour les sites multilingues](/help/sites-cloud/administering/translation/overview.md) pour cet exemple.
 
 * **National – Siège social et filiales régionales**
 
-   Une autre possibilité est qu’une entreprise disposant d’un réseau de concessionnaires souhaite créer des sites web distincts pour chaque concession, chacun de ces sites étant une variante du site principal fourni par le siège social. Il peut s’agir d’une seule entreprise avec plusieurs bureaux régionaux, ou d’un système de franchise national constitué d’un franchiseur central et de plusieurs franchisés locaux.
+  Une autre possibilité est qu’une entreprise disposant d’un réseau de concessionnaires souhaite créer des sites web distincts pour chaque concession, chacun de ces sites étant une variante du site principal fourni par le siège social. Il peut s’agir d’une seule entreprise avec plusieurs bureaux régionaux, ou d’un système de franchise national constitué d’un franchiseur central et de plusieurs franchisés locaux.
 
-   Le siège peut fournir les informations de base, tandis que les entités régionales peuvent ajouter des informations locales, telles que les coordonnées, les heures d&#39;ouverture et les événements.
+  Le siège peut fournir les informations de base, tandis que les entités régionales peuvent ajouter des informations locales, telles que les coordonnées, les heures d&#39;ouverture et les événements.
 
-   ```xml
-   /content
-       |- head-office-berlin
-       |- branch-hamburg
-       |- branch-stuttgart
-       |- branch-munich
-       |- branch-frankfurt
-   ```
+  ```xml
+  /content
+      |- head-office-berlin
+      |- branch-hamburg
+      |- branch-stuttgart
+      |- branch-munich
+      |- branch-frankfurt
+  ```
 
 * **Versions multiples**
 
-   MSM peut créer des versions d’une sous-branche spécifique. Par exemple, un sous-site d’assistance peut contenir des détails sur les différentes versions d’un produit spécifique, où les informations de base restent constantes et seules les fonctionnalités mises à jour doivent être modifiées :
+  MSM peut créer des versions d’une sous-branche spécifique. Par exemple, un sous-site d’assistance peut contenir des détails sur les différentes versions d’un produit spécifique, où les informations de base restent constantes et seules les fonctionnalités mises à jour doivent être modifiées :
 
-   ```xml
-   /content
-       |- game-support
-           |- polybius
-               |- v5.0
-               |- v4.0
-               |- v3.0
-               |- v2.0
-               |- v1.0
-   ```
+  ```xml
+  /content
+      |- game-support
+          |- polybius
+              |- v5.0
+              |- v4.0
+              |- v3.0
+              |- v2.0
+              |- v1.0
+  ```
 
-   >[!TIP]
-   >
-   >Dans un tel scénario, il s’agit de savoir s’il convient de faire une copie simple ou d’utiliser des Live Copies, qui offrent un équilibre entre :
-   >
-   >* D’un côté, le volume de contenu de base qu’il faudra mettre à jour sur plusieurs versions.
-   >
-   >De l’autre :
-   >
-   >* Le nombre de copies individuelles qu’il faudra adapter.
-
+  >[!TIP]
+  >
+  >Dans un tel scénario, il s’agit de savoir s’il convient de faire une copie simple ou d’utiliser des Live Copies, qui offrent un équilibre entre :
+  >
+  >* D’un côté, le volume de contenu de base qu’il faudra mettre à jour sur plusieurs versions.
+  >
+  >De l’autre :
+  >
+  >* Le nombre de copies individuelles qu’il faudra adapter.
 
 ## MSM à partir de l’interface utilisateur {#msm-from-the-ui}
 
@@ -149,7 +148,7 @@ MSM est directement accessible dans l’interface utilisateur à l’aide de dif
 
 ### Termes utilisés {#terms-used}
 
-En guise d’introduction, le tableau suivant offre un aperçu des principaux termes utilisés avec MSM. Ceux-ci seront traités plus en détail dans les sections et les pages suivantes.
+Le tableau suivant présente un aperçu des principaux termes utilisés avec MSM. Elles sont décrites plus en détail dans les sections et pages suivantes.
 
 | Terme | Définition | Informations supplémentaires |
 |---|---|---|
@@ -162,7 +161,7 @@ En guise d’introduction, le tableau suivant offre un aperçu des principaux te
 | Chapitre | Sections du plan à inclure dans la Live Copy | Il s’agit généralement de sous-pages de la racine |
 | Synchronisation | Terme générique pour la synchronisation du contenu entre la source et les Live Copies (par les options **Déployer** et **Synchroniser**). |  |
 | Déploiement | Synchronise la source avec la Live Copy | Peut être déclenché par un auteur (sur une page de plan directeur) ou par un événement système (tel que défini par la configuration de déploiement) |
-| Configuration du déploiement | Règles qui déterminent quelles propriétés seront synchronisées, de quelle manière et à quel moment |  |
+| Configuration du déploiement | Règles qui déterminent quelles propriétés sont synchronisées, de quelle manière et à quel moment |  |
 | Synchroniser | Demande manuelle de synchronisation, effectuée à partir des pages Live Copy |  |
 | Héritage | Une page ou un composant Live Copy hérite du contenu de sa page ou de son composant source lors de la synchronisation |  |
 | Suspendre | Supprime temporairement les relations en direct entre une Live Copy et sa page de plan directeur |  |
@@ -232,15 +231,15 @@ Lorsque vous créez une Live Copy dans AEM, vous pouvez consultez la branche Li
 Lorsque vous créez (ou un processus crée) une [page dans une Live Copy existante](#live-copy-with-non-live-copy-pages), cette nouvelle page peut également être configurée en tant que Live Copy d’un plan directeur différent. Il s’agit d’une Live Copy imbriquée. Dans les Live Copies imbriquées, le comportement de la seconde Live Copy ou de la Live Copy interne est affecté par la première Live Copy ou par la Live Copy externe des manières suivantes :
 
 * Un déploiement profond déclenché pour la Live Copy globale peut être poursuivi dans la Live Copy imbriquée.
-* Tous les liens entre les sources sont réécrits dans les Live Copies.
+* Tous les liens entre les sources sont réécrits dans les Live Copies.
 
-Par exemple, les liens pointant du second au premier plan directeur sont réécrits en tant que liens pointant de la seconde Live Copy ou de la Live Copy imbriquée vers la première Live Copy.
+Par exemple, les liens qui pointent du deuxième au premier plan directeur sont réécrits en tant que liens pointant de la Live Copy imbriquée/seconde vers la première Live Copy.
 
 ![Live Copies imbriquées](../assets/live-copy-nested.png)
 
 >[!NOTE]
 >
->Si vous déplacez ou renommez une page de la branche Live Copy, cette opération est traitée comme une Live Copy imbriquée pour permettre à AEM d’effectuer le suivi des relations.
+>Si vous déplacez ou renommez une page dans la branche Live Copy, elle est traitée comme une Live Copy imbriquée afin de permettre à AEM de suivre les relations.
 
 #### Live Copies empilées {#stacked-live-copies}
 
@@ -269,12 +268,12 @@ Le déploiement est l’action MSM centrale qui synchronise les Live Copies ave
 * Lorsque vous créez une page de plan directeur, vous pouvez utiliser la commande **[Déployer](creating-live-copies.md#rolling-out-a-blueprint)** pour pousser les modifications vers la Live Copy.
    * La commande **Déployer** est disponible sur une page de plan directeur référencée par une configuration de plan directeur.
 
-   ![Déployer](../assets/live-copy-rollout.png)
+  ![Déployer](../assets/live-copy-rollout.png)
 
 * Lorsque vous créez une page Live Copy, vous pouvez utiliser la commande **[Synchroniser](creating-live-copies.md#synchronizing-a-live-copy)** pour pousser les modifications de la source vers la Live Copy.
    * La commande **Synchroniser** est toujours disponible sur la page Live Copy que la page source/de plan directeur soit englobée ou non par une configuration de plan directeur.
 
-   ![Synchroniser](../assets/live-copy-synchronize.png)
+  ![Synchroniser](../assets/live-copy-synchronize.png)
 
 ### Configurations du déploiement {#rollout-configurations}
 

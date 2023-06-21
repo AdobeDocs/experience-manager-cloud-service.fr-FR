@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: Asset Reports
 role: Admin,User
 exl-id: a71fef45-c9a4-4091-8af1-c3c173324b7a
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6679'
-ht-degree: 100%
+source-wordcount: '6666'
+ht-degree: 98%
 
 ---
 
@@ -292,7 +292,7 @@ Le tableau suivant répertorie les événements de visionneuse Dynamic Media et
    <td><code>%event.detail.dm.timeStamp%</code></td>
   </tr>
   <tr>
-   <td><code>BANNER</code> </td>
+   <td><code>BANNER</code><br /> </td>
    <td><code>%event.detail.dm.BANNER.asset%</code></td>
   </tr>
   <tr>
@@ -420,7 +420,7 @@ Pour la configuration, assurez-vous d’avoir accès à une société dans Adobe
 
 ## Configuration d’Adobe Analytics pour l’intégration {#configuring-adobe-analytics-for-the-integration}
 
-Une fois Adobe Analytics configuré, les éléments suivants sont configurés pour l’intégration :
+Une fois Adobe Analytics configuré, les éléments suivants sont configurés pour l’intégration :
 
 * Une suite de rapports est en place et sélectionnée.
 * Les variables Analytics sont disponibles pour recevoir les données de suivi.
@@ -460,7 +460,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
 
    Voir [Présentation de props et eVar](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=fr#vars).
 
-   Pour les besoins de cette documentation, seule une variable de trafic personnalisé (props) sera utilisée car elle sera disponible dans un rapport Analytics quelques minutes après qu’une action a lieu sur une page web.
+   Aux fins de cette documentation, seule une variable Trafic personnalisé (props) est utilisée, car elle est disponible dans un rapport Analytics quelques minutes après qu’une action a eu lieu sur une page web.
 
    Pour activer une nouvelle variable de trafic personnalisé, dans Adobe Analytics, sur la barre d’outils, accédez à **[!UICONTROL Admin]** > **[!UICONTROL Suites de rapports]**.
 
@@ -487,7 +487,7 @@ Voir aussi le [Guide de mise en œuvre d’Analytics](https://experienceleague.a
 
 ## Configuration d’Experience Platform Tags pour l’intégration {#configuring-adobe-launch-for-the-integration}
 
-Une fois Experience Platform Tags configuré, les éléments suivants seront paramétrés pour l’intégration :
+Une fois que vous avez configuré les balises Experience Platform, les éléments suivants sont configurés pour l’intégration :
 
 * Création d’une propriété pour conserver toutes vos configurations ensemble.
 * Installation et configuration des extensions. Le code client de toutes les extensions installées dans la propriété est compilé dans une bibliothèque. Cette bibliothèque sera utilisée ultérieurement par la page web.
@@ -571,7 +571,7 @@ Au moment de la rédaction de cet article, l’extension *Visionneuses Dynamic 
 
 Consultez [Création d’une propriété dans Experience Platform Tags](#creating-a-property-in-adobe-launch).
 
-Une fois les extensions installées et configurées, au minimum, les cinq extensions suivantes (quatre si vous n’effectuez pas le suivi vidéo) seront répertoriées dans la zone Extensions > Installées.
+Une fois les extensions installées et configurées, au minimum, les cinq extensions suivantes (quatre si vous n’effectuez pas le suivi vidéo) seront répertoriées dans la zone Extensions > Installées .
 
 ![image2019-7-22_12-7-36](assets/image2019-7-22_12-7-36.png)
 
@@ -748,7 +748,7 @@ La configuration d’Experience Manager comprend les deux importantes étapes s
    * **[!UICONTROL Titre]** : entrez un titre de compte descriptif.
    * **[!UICONTROL Serveur d’autorisation]** : revenez à la page Informations concernant l’intégration que vous avez ouverte précédemment. Sélectionnez l’onglet **[!UICONTROL JWT]**. Copiez le nom du serveur (sans le chemin d’accès), comme indiqué ci-dessous.
 
-(l’exemple de nom de serveur est fourni à titre d’illustration uniquement)   Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
+   Revenez à la page **[!UICONTROL Compte]**, puis collez le nom dans le champ correspondant.
 Par exemple, `https://ims-na1.adobelogin.com/`
 (l’exemple de nom de serveur est fourni à titre d’explication uniquement)
 

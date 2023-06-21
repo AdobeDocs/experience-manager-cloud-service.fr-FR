@@ -2,10 +2,10 @@
 title: Notifications
 description: Découvrez comment recevoir des informations sur les déploiements de pipeline à l’aide du système de notifications d’Adobe Experience Cloud.
 exl-id: c1c740b0-c873-45a8-9518-a856db2be75b
-source-git-commit: 6f390df560e9eeb76a8c4f1904e500aa5ed2bd65
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 100%
+source-wordcount: '558'
+ht-degree: 96%
 
 ---
 
@@ -60,7 +60,7 @@ Par défaut, vous recevrez toutes les notifications pour tous les produits. Cliq
 
 ### Priorité {#priority}
 
-Les alertes de priorité seront marquées d’une balise **PRIORITAIRE** et peuvent être configurées pour être reçues exclusivement en tant qu’alertes. Dans la section **Priorité**, vous pouvez définir les catégories qui remplissent les critères de notification de priorité.
+Les alertes de priorité sont marquées d’une **HIGH** et peut être configuré pour être reçu exclusivement en tant qu’alertes. Dans la section **Priorité**, vous pouvez définir les catégories qui remplissent les critères de notification de priorité.
 
 ![Priorité des notifications](assets/notifications-priority.png)
 

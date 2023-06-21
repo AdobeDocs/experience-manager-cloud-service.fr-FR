@@ -2,16 +2,16 @@
 title: Parcours d’architecture de contenu découplé AEM
 description: Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement découplé.
 exl-id: ccfec100-8005-4f47-b5b6-ca188b35315c
-source-git-commit: e03c067f4337bbf0e98cb4015b9be4fc99fc17c1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '789'
-ht-degree: 100%
+source-wordcount: '786'
+ht-degree: 86%
 
 ---
 
 # Parcours d’architecture de contenu découplé AEM {#aem-headless-content-architect-journey}
 
-Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet découplé.
+Commencez ici pour un parcours guidé à travers les puissantes fonctionnalités et flexibles d’AEM, leurs capacités et comment les utiliser sur votre premier projet sans tête.
 
 {{headless-trials-promotion}}
 
@@ -37,11 +37,11 @@ Si vous souhaitez savoir comment Adobe recommande de résoudre des cas d’utili
 
 ## Public {#audience}
 
-Ce parcours est conçu pour les architectes de contenu. En tant qu’architecte de contenu, vous serez en charge de la définition de la structure du contenu. Ces définitions seront ensuite utilisées par les auteurs de contenu lorsqu’ils créeront le contenu réel.
+Ce parcours est conçu pour les architectes de contenu. En tant qu’architecte de contenu, vous définissez la structure du contenu. Ces définitions sont ensuite utilisées par les auteurs de contenu lorsqu’elles créent le contenu réel.
 
 Le parcours présente les exigences, les étapes et l’approche d’un projet découplé AEM du point de vue d’un architecte de contenu. Ce parcours définit les personnes supplémentaires avec lesquelles l’architecte de contenu doit interagir pour réussir son projet mais le point de vue du parcours est celui de l’architecte de contenu.
 
-Les informations présentées dans ce parcours peuvent bien sûr être utiles à d’autres personnes, mais certaines informations seront superflues pour certains rôles. Tenez-vous informés des prochains parcours couvrant les spécificités des rôles supplémentaires.
+L&#39;information dans ce parcours peut bien sûr être utile à d&#39;autres personnes, mais certaines informations sont superflues à certains rôles. Tenez-vous informés des prochains parcours couvrant les spécificités des rôles supplémentaires.
 
 ## Le parcours d’architecture de contenu découplé {#the-journey}
 
@@ -68,6 +68,6 @@ Ces parcours sont conçus pour être autonomes. Cependant, un certain nombre d�
 
 * [Parcours de traduction découplé AEM](/help/journey-headless/translation/overview.md) – Ce parcours de documentation vous donne une compréhension globale de la technologie découplée, de la manière dont AEM diffuse du contenu découplé et de la manière dont vous pouvez le traduire.
 * [Parcours de création découplée](/help/journey-headless/author/overview.md) – Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les modéliser votre contenu dans votre premier projet découplé.
-* [Parcours de développement découplé AEM](/help/journey-headless/developer/overview.md) – Faites vos premiers pas avec cette visite guidée et découvrez les fonctionnalités découplées puissantes et flexibles d’AEM, leurs capacités et comment les exploiter dans votre premier projet de développement.
+* [AEM Parcours développeur sans tête](/help/journey-headless/developer/overview.md) - Commencez ici pour un parcours guidé à travers les puissantes et flexibles fonctionnalités headless d’AEM, leurs capacités et comment les utiliser dans votre premier projet de développement.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) – Si vous connaissez déjà bien les technologies AEM et découplées, vous pouvez consulter directement notre documentation technique détaillée.
 * [Tutoriels découplés AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=fr) : si vous préférez apprendre par la pratique et préférez la technique à la théorie, suivez nos tutoriels pratiques organisés par API et par structure, qui explorent la création et l’utilisation d’applications reposant sur le découplage AEM.

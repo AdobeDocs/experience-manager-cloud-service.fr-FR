@@ -1,13 +1,13 @@
 ---
 title: Console Aperçu de Live Copy
-description: Découvrez les principes de base de la console d’aperçu de Live Copy pour comprendre rapidement le statut des Live Copies afin de synchroniser le contenu.
+description: Découvrez les principes de base de la console Aperçu de la Live Copy pour comprendre rapidement l’état de vos Live Copies pour synchroniser le contenu.
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 94%
+source-wordcount: '731'
+ht-degree: 89%
 
 ---
 
@@ -72,7 +72,7 @@ Par exemple, une configuration de déploiement est définie sur `targetActivate`
 L’**aperçu de Live Copy** peut également être utilisé pour effectuer des actions sur la Live Copy :
 
 1. Ouvrez l’**aperçu de la Live Copy**.
-1. Sélectionnez la page de plan directeur ou de Live Copy requise. La barre d’outils se met mise à jour pour afficher les actions disponibles. Les [actions](overview.md#terms-used) disponibles varient selon que vous sélectionnez une page de [plan directeur](#actions-for-a-blueprint-page) ou de [Live Copy](#actions-for-a-live-copy-page).
+1. Sélectionnez le plan directeur ou la page Live Copy requis et la barre d’outils est mise à jour pour afficher les actions disponibles. Les [actions](overview.md#terms-used) disponibles varient selon que vous sélectionnez une page de [plan directeur](#actions-for-a-blueprint-page) ou de [Live Copy](#actions-for-a-live-copy-page).
 
 ### Actions d’une page de plan directeur {#actions-for-a-blueprint-page}
 

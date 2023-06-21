@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2021.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 99%
+source-wordcount: '1570'
+ht-degree: 97%
 
 ---
 
@@ -42,8 +42,8 @@ Regardez la vidéo [Aperçu de la version de septembre 2021](https://video.tv.a
 
 * Les utilisateurs peuvent désormais trier en vue Colonne et Carte les ressources affichées dans les résultats de recherche. Le tri fonctionne sur les colonnes Nom, Créé, Modifié et Aucune.
 
-   ![Trier les résultats de recherche dans [!DNL Assets] dans les vues Colonne et Carte](/help/assets/assets/sort-searched-assets.png)
-   *Image : trier les résultats de recherche dans [!DNL Assets] dans les vues Colonne et Carte.*
+  ![Trier les résultats de recherche dans [!DNL Assets] dans les vues Colonne et Carte](/help/assets/assets/sort-searched-assets.png)
+  *Image : trier les résultats de recherche dans [!DNL Assets] dans les vues Colonne et Carte.*
 
 * Pour appeler par programmation le traitement à l’aide des microservices de ressources, une nouvelle API est introduite. Les développeurs peuvent désormais appliquer un profil de traitement existant au niveau du dossier à une ou plusieurs ressources spécifiques d’un dossier. Le profil de traitement est appliqué en fonction des mises à jour des propriétés de métadonnées personnalisées. Voir `AssetProcessor` dans la [[!DNL Experience Manager] référence de l’API](https://www.adobe.io/experience-manager/reference-materials/). Comme auparavant, il est possible d’[utiliser les microservices de ressources à partir de l’interface utilisateur](/help/assets/asset-microservices-configure-and-use.md).
 
@@ -91,11 +91,11 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 * Le nouvel onglet « Contenu commercial associé » dans l’éditeur de sites améliore l’efficacité de la création en permettant d’accéder rapidement au contenu produit AEM approprié pour le contexte actuel.
 
-   ![Contenu commercial associé](/help/assets/CIF/associated-commerce-content.png)
+  ![Contenu commercial associé](/help/assets/CIF/associated-commerce-content.png)
 
 * Amélioration de l’interface utilisateur du sélecteur de produits pour une meilleure expérience utilisateur, et l’optimisation de l’efficacité et de la prise en charge du catalogue de produits complexe
 
-   ![Nouveau sélecteur de produits](/help/assets/CIF/product-picker.png)
+  ![Nouveau sélecteur de produits](/help/assets/CIF/product-picker.png)
 
 * Respect de la propriété « include_in_menu » dans le composant de navigation
 
@@ -145,7 +145,7 @@ Lisez la [documentation](/help/security/configuring-advanced-networking.md) pour
 
 **Optimisations des index**
 
-Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus utilisé clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] à partir de cette version. Afin de supprimer cet index de texte intégral dans les environnements AEM en accord avec les clients AEM, l’ingénierie d’Adobe travaille individuellement et de manière proactive avec les clients pour permettre de supprimer de manière fluide et durable de l’index de texte intégral Lucene. Consultez la [documentation](/help/operations/indexing.md#index-optimizations) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] pour obtenir plus d’informations, contactez directement notre service clientèle si vous avez des questions.
+Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus utilisé clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] à partir de cette version. Pour supprimer cet index de texte intégral sur les environnements AEM conformément aux clients AEM, Adobe Engineering travaille individuellement et de manière proactive avec les clients pour une suppression douce et durable de l’index de texte intégral Lucene. Consultez la [documentation](/help/operations/indexing.md#index-optimizations) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] pour obtenir plus d’informations, contactez directement notre service clientèle si vous avez des questions.
 
 ## Cloud Manager {#cloud-manager}
 

@@ -2,10 +2,10 @@
 title: Recherche et indexation de contenu
 description: Recherche et indexation de contenu
 exl-id: 4fe5375c-1c84-44e7-9f78-1ac18fc6ea6b
-source-git-commit: 34189fd264d3ba2c1b0b22c527c2c5ac710fba21
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2491'
-ht-degree: 87%
+source-wordcount: '2481'
+ht-degree: 82%
 
 ---
 
@@ -19,9 +19,9 @@ Voici la liste des principaux changements par rapport à AEM version 6.5 et ant
 
 1. Les utilisateurs n’ont plus accès au gestionnaire d’index d’une seule instance AEM pour déboguer, configurer ou gérer l’indexation. Le gestionnaire d’index n’est utilisé que pour le développement local et les déploiements sur site.
 1. Les utilisateurs ne changent pas d’index sur une seule instance AEM et n’ont plus à s’inquiéter des vérifications de cohérence ni de la réindexation.
-1. En général, les changements d’index sont amorcés avant le passage à la production afin de ne pas contourner les passerelles de qualité dans les pipelines CI/CD de Cloud Manager et de ne pas affecter les indicateurs de performance clés métier en production.
-1. Toutes les mesures associées, y compris les performances de recherche en production, sont à la disposition des clients au moment de l’exécution afin de fournir une vue holistique sur les sujets de recherche et d’indexation.
-1. Les clients pourront configurer des alertes en fonction de leurs besoins.
+1. En règle générale, les modifications d’index sont initiées avant de passer en production afin de ne pas contourner les passerelles de qualité dans les pipelines CI/CD de Cloud Manager et de ne pas affecter les indicateurs de performance clés métier en production.
+1. Toutes les mesures associées, y compris les performances de recherche en production, sont disponibles pour les clients au moment de l’exécution afin de fournir une vue d’ensemble des sujets de recherche et d’indexation.
+1. Les clients peuvent configurer des alertes en fonction de leurs besoins.
 1. Les SRE surveillent l’intégrité du système 24 heures sur 24, 7 jours sur 7 et prendront les mesures nécessaires le plus tôt possible.
 1. La configuration de l’index est modifiée par le biais de déploiements. Les modifications apportées à la définition de l’index sont configurées comme les autres modifications apportées au contenu.
 1. À un niveau élevé sur AEM as a Cloud Service, avec l’introduction de la [modèle de déploiement en continu](#index-management-using-rolling-deployments) deux ensembles d’index existent : un jeu pour l’ancienne version et un autre pour la nouvelle version.
@@ -241,7 +241,7 @@ Lors du développement ou de l’utilisation d’installations sur site, les ind
 
 Avec les déploiements continus, il n’y a pas de temps d’arrêt. Pendant un certain temps lors d’une mise à jour, l’ancienne version (par exemple, version 1) de l’application, ainsi que la nouvelle version (version 2), s’exécutent simultanément sur le même référentiel. Si la version 1 nécessite la disponibilité d&#39;un certain index, celui-ci ne doit pas être supprimé dans la version 2. L&#39;index doit être supprimé ultérieurement, par exemple dans la version 3. À ce stade, il est garanti que la version 1 de l&#39;application n&#39;est plus en cours d&#39;exécution. En outre, les applications doivent être écrites de manière à ce que la version 1 fonctionne correctement, même si la version 2 est en cours d’exécution et si des index de la version 2 sont disponibles.
 
-Une fois la mise à niveau vers la nouvelle version terminée, les anciens index peuvent être récupérés par le système. Les anciens index peuvent rester disponibles un certain temps afin d’accélérer les restaurations (si une restauration doit être nécessaire).
+Une fois la mise à niveau vers la nouvelle version terminée, les anciens index peuvent être récupérés par le système. Les anciens index peuvent rester un certain temps afin d’accélérer les restaurations (si une restauration doit être nécessaire).
 
 Le tableau suivant présente cinq définitions d’index : l’index `cqPageLucene` est utilisé dans les deux versions tandis que index `damAssetLucene-custom-1` l’est uniquement dans la version 2.
 
@@ -257,7 +257,7 @@ Le tableau suivant présente cinq définitions d’index : l’index `cqPageLu
 | /oak:index/acme.product-custom-2 | Non | Non | Oui |
 | /oak:index/cqPageLucene | Oui | Oui | Oui |
 
-Le numéro de version est incrémenté chaque fois que l’index est modifié. Pour éviter que des noms d’index personnalisés n’entrent en conflit avec des noms d’index du produit lui-même, les index personnalisés, ainsi que les modifications apportées aux index prêts à l’emploi, doivent se terminer par `-custom-<number>`.
+Le numéro de version est incrémenté chaque fois que l’index est modifié. Pour éviter que des noms d’index personnalisés n’entrent en conflit avec des noms d’index du produit lui-même, les index personnalisés, ainsi que les modifications apportées aux index prêts à l’emploi, doivent se terminer par . `-custom-<number>`.
 
 ### Modifications apportées aux index prêts à l’emploi {#changes-to-out-of-the-box-indexes}
 

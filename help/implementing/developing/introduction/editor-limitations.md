@@ -2,10 +2,10 @@
 title: Limites de l’éditeur
 description: L’éditeur de l’interface utilisateur tactile utilise des superpositions pour interagir avec le contenu confiné dans un iframe. Cette interaction présente certaines limites pour l’utilisation de l’éditeur, mais également pour les développeurs.
 exl-id: 6a4f0e43-1076-4da9-95dc-9c5bf83e30d0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 72%
+source-wordcount: '315'
+ht-degree: 66%
 
 ---
 
@@ -51,7 +51,7 @@ Il est possible que les images d’arrière-plan fixes ne puissent pas être aff
 
 La hauteur de 100 % n’est pas prise en charge sur l’élément de corps d’une page.
 
-* Il est possible d’appliquer une solution afin d’implémenter un corps plein écran en « étirant » l’élément de corps comme suit :
+* Une solution de contournement est possible en implémentant un corps plein écran en &quot;étirant&quot; l’élément de corps comme suit :
 
 ```xml
 body {

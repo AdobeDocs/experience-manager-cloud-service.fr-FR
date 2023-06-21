@@ -2,10 +2,10 @@
 title: Activation de l’exportateur JSON pour un composant
 description: Les composants peuvent être adaptés pour générer l’exportation JSON de leur contenu en fonction d’un framework de modeleur.
 exl-id: e9be5c0c-618e-4b56-a365-fcdd185ae808
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 86%
+source-wordcount: '472'
+ht-degree: 81%
 
 ---
 
@@ -66,7 +66,7 @@ Pour être prise en compte par le framework de l’exportateur JSON, l’interfa
 
 L’interface de modèle Sling correspondante (`MyComponent`) est alors marquée avec les [annotations Jackson](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) pour définir la manière dont les méthodes doivent être exportées (sérialisées).
 
-L’interface de modèle doit être correctement annotée pour définir les méthodes à sérialiser. Par défaut, on attribue un numéro de série à toutes les méthodes qui respectent la convention de dénomination habituelle pour des getters. En outre, leurs noms de propriétés JSON sont naturellement dérivés des noms des getters. Cela peut être évité en utilisant `@JsonIgnore` ou `@JsonProperty` pour renommer la propriété JSON.
+L’interface de modèle doit être correctement annotée pour définir les méthodes à sérialiser. Par défaut, toutes les méthodes qui respectent la convention de nommage habituelle pour les getters sont sérialisées et leurs noms de propriétés JSON sont naturellement dérivés des noms getter. Cela peut être évité en utilisant `@JsonIgnore` ou `@JsonProperty` pour renommer la propriété JSON.
 
 ## Exemple {#example}
 

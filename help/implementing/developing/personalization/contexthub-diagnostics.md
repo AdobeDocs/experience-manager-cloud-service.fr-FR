@@ -2,10 +2,10 @@
 title: Diagnostic ContextHub
 description: ContextHub fournit une page de diagnostic où vous avez accès à une vue d’ensemble du framework ContextHub
 exl-id: c8d4e160-ea02-49f3-9e31-119445ef5a68
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 68%
+source-wordcount: '439'
+ht-degree: 64%
 
 ---
 
@@ -19,7 +19,7 @@ La page Diagnostics ContextHub fournit des informations sur les magasins et les 
 
 >[!NOTE]
 >
->Pour que les informations de diagnostic soient renvoyées, le mode de débogage doit être activé, sinon la page de diagnostic est vide. Reportez-vous à ce [document](configuring-contexthub.md#debugging-contexthub) pour plus de détails sur l’activation du mode débogage.
+>Pour que les informations de diagnostic soient renvoyées, le mode de débogage doit être activé ; dans le cas contraire, la page de diagnostic est vide. Reportez-vous à ce [document](configuring-contexthub.md#debugging-contexthub) pour plus de détails sur l’activation du mode débogage.
 
 ## Magasins {#stores}
 

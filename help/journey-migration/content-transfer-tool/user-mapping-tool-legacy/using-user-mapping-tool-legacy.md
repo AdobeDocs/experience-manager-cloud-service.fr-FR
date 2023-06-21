@@ -4,10 +4,10 @@ description: Utilisation de l’outil de mappage des utilisateurs (hérité)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 8a258c2c929f9af84a1cde99072291a3e7f6cfc3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 96%
+source-wordcount: '831'
+ht-degree: 79%
 
 ---
 
@@ -61,17 +61,17 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
 
    * **ID d’organisation** : saisissez l’ID d’organisation Adobe IMS (Identity Management System) pour l’organisation depuis laquelle migrent les utilisateurs.
 
-      >[!NOTE]
-      >Pour obtenir l’ID d’organisation, connectez-vous à l’[Admin Console](https://adminconsole.adobe.com/) et choisissez votre organisation (dans la zone supérieure droite) si vous appartenez à plusieurs. L’ID d’organisation se trouve dans l’URL de cette page, au format `xx@AdobeOrg`, où xx correspond à l’ID d’organisation IMS. Vous pouvez également trouver l’ID d’organisation sur la page [Adobe Developer Console](https://console.adobe.io) où vous générez le jeton d’accès.
+     >[!NOTE]
+     >Pour obtenir l’ID d’organisation, connectez-vous à l’[Admin Console](https://adminconsole.adobe.com/) et choisissez votre organisation (dans la zone supérieure droite) si vous appartenez à plusieurs. L’ID d’organisation se trouve dans l’URL de cette page, au format `xx@AdobeOrg`, où xx correspond à l’ID d’organisation IMS. Vous pouvez également trouver l’ID d’organisation sur la page [Adobe Developer Console](https://console.adobe.io) où vous générez le jeton d’accès.
 
    * **ID client** : saisissez l’ID client enregistré à l’étape de configuration.
 
    * **Jeton d’accès** : saisissez le jeton d’accès enregistré lors de l’étape de configuration.
 
-      >[!NOTE]
-      >Le jeton d’accès arrive à expiration toutes les 24 heures et il faut en créer un nouveau. Pour créer un jeton, revenez dans [Adobe Developer Console](https://console.adobe.io), choisissez votre projet, cliquez sur **User Management API** (API User Management) et collez la même clé privée dans la zone.
+     >[!NOTE]
+     >Le jeton d’accès arrive à expiration toutes les 24 heures et il faut en créer un nouveau. Pour créer un jeton, revenez à la section [Console Adobe Developer](https://console.adobe.io), choisissez votre projet, cliquez sur **API de gestion des utilisateurs**, puis collez la même clé privée dans la zone.
 
-1. Une fois les champs renseignés, cliquez sur **Configuration du test** pour tester la connexion au service de l’API User Management. Si la connexion est établie, vous pourrez cliquer sur **Enregistrer** pour sauvegarder la configuration.
+1. Une fois les champs renseignés, cliquez sur **Test Configuration** pour tester la connexion au service d’API User Management. Si la connexion est établie, vous pouvez cliquer sur **Enregistrer** pour enregistrer la configuration.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-access4.png)
 
@@ -88,13 +88,12 @@ L’outil de mappage des utilisateurs est intégré à l’outil de transfert de
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-start1.png)
 
 
-1. Une fois le mappage des utilisateurs terminé, cliquez sur **Résultats** pour afficher le résumé.
+1. Une fois le mappage utilisateur terminé, cliquez sur **Résultats** pour afficher le résumé.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/user-mapping-landing5.png)
 
    >[!IMPORTANT]
-   >* Une fois le mappage des utilisateurs terminé, vous pouvez revenir à la page de Migration du contenu à l’aide du chemin de navigation. La carte Mappage des utilisateurs affiche le statut et l’horodatage. Cliquez sur **Transfert de contenu** pour créer un jeu de migration pour exécuter l’extraction. Pour plus d’informations, consultez [Exécution de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#running-tool).
-
+   >* Une fois le mappage utilisateur terminé, vous pouvez revenir à la page Migration du contenu à l’aide du chemin de navigation. La carte Mappage des utilisateurs affiche le statut et l’horodatage. Cliquez sur **Transfert de contenu** pour créer un jeu de migration pour exécuter l’extraction. Pour plus d’informations, consultez [Exécution de l’outil de transfert de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-content-transfer-tool.html?lang=fr#running-tool).
 
 ### Reprise du processus de mappage des utilisateurs {#resume-user-mapping-process}
 
@@ -104,8 +103,8 @@ Si le processus de mappage des utilisateurs est arrêté pour l’une des raison
 * le jeton d’accès a expiré pendant le processus ou
 * une autre raison
 
-   >[!NOTE]
-   >La progression est enregistrée à partir de l’endroit où le processus s’est arrêté.
+  >[!NOTE]
+  >La progression est enregistrée à partir de l’endroit où le processus s’est arrêté.
 
 Pour reprendre le processus de mappage des utilisateurs, procédez comme suit :
 
@@ -113,17 +112,17 @@ Pour reprendre le processus de mappage des utilisateurs, procédez comme suit :
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping1.png)
 
-1. Cliquez sur le bouton **Démarrer le mappage des utilisateurs** pour reprendre à l’endroit où il s’est arrêté.
+1. Cliquez sur **Mappage de l’utilisateur de démarrage** pour reprendre à l’endroit où il s’est arrêté.
 
    >[!NOTE]
    >Assurez-vous, avant de redémarrer, que le jeton d’accès est toujours valide ou qu’il a été actualisé.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping2.png)
 
-1. Cliquez sur **Démarrer** dans la boîte de dialogue pour reprendre le processus de mappage des utilisateurs.
+1. Cliquez sur **Début** dans la boîte de dialogue pour reprendre le processus de mappage utilisateur.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping3.png)
 
-   Une fois le processus de mappage des utilisateurs terminé, vous verrez le **Statut** comme étant **TERMINÉ** pour cette configuration spécifique.
+   Une fois le processus de mappage des utilisateurs terminé, vous pouvez afficher la variable **État** as **FINISHED** pour cette configuration spécifique.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-user-mapping/resume-user-mapping4.png)

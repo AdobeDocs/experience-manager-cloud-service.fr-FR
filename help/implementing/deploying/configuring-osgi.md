@@ -3,10 +3,10 @@ title: Configuration d’OSGi pour Adobe Experience Manager as a Cloud Service
 description: Configuration d’OSGi à l’aide de valeurs secrètes et spécifiques aux environnements
 feature: Deploying
 exl-id: f31bff80-2565-4cd8-8978-d0fd75446e15
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3323'
-ht-degree: 99%
+source-wordcount: '3318'
+ht-degree: 97%
 
 ---
 
@@ -60,7 +60,7 @@ Par exemple, si AEM utilise les modes d’exécution author et dev, les nœuds d
 
 Si plusieurs configurations correspondant au même PID sont applicables, la configuration comportant le nombre le plus élevé de modes d’exécution correspondants est appliquée.
 
-La granularité de cette règle se trouve au niveau du PID. Vous ne pouvez pas définir certaines propriétés pour le même PID dans `/apps/example/config.author/` et des propriétés plus spécifiques dans `/apps/example/config.author.dev/` pour le même PID. La configuration comportant le nombre le plus élevé de modes d’exécution correspondants est effective pour tout le PID.
+La granularité de cette règle se trouve au niveau du PID. Vous ne pouvez pas définir certaines propriétés pour le même PID dans `/apps/example/config.author/` et des propriétés plus spécifiques dans `/apps/example/config.author.dev/` pour le même PID. La configuration comportant le plus grand nombre de modes d’exécution correspondants est effective pour l’ensemble du PID.
 
 >[!NOTE]
 >
@@ -187,7 +187,7 @@ Il est possible d’utiliser la console web AEM de l’environnement d’exécut
 
 >[!NOTE]
 >
->L’interface utilisateur de configuration de la console web AEM écrit des fichiers `.cfg.json` dans le référentiel. N’oubliez pas d’en tenir compte afin d’éviter un comportement inattendu potentiel lors du développement local, lorsque les configurations OSGi définies par projet AEM peuvent différer des configurations générées.
+>L’interface utilisateur de configuration de la console web AEM écrit des fichiers `.cfg.json` dans le référentiel. Par conséquent, gardez à l’esprit ce workflow pour éviter tout comportement inattendu pendant le développement local, lorsque les configurations OSGi définies par le projet AEM peuvent différer des configurations générées.
 
 1. Connectez-vous en tant qu’administrateur ou administratrice à la console Web de Quickstart Jar du SDK AEM à l’adresse `https://<host>:<port>/system/console`.
 1. Accédez à **OSGi** > **Configuration**.
@@ -260,7 +260,7 @@ Les valeurs des variables ne doivent pas dépasser 2 048 caractères.
 >
 >Il existe des règles relatives à l’utilisation de certains préfixes pour les noms de variables :
 >
->1. Les noms de variables utilisant un préfixe `INTERNAL_`, `ADOBE_` ou `CONST_` sont réservés par Adobe. Toutes les variables définies par le client commençant par ces préfixes seront ignorées.
+>1. Les noms de variables utilisant un préfixe `INTERNAL_`, `ADOBE_` ou `CONST_` sont réservés par Adobe. Toutes les variables définies par le client commençant par ces préfixes sont ignorées.
 >
 >1. Les clients ne doivent pas référencer de variables dotées du préfixe `INTERNAL_` ou `ADOBE_`.
 >

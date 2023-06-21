@@ -4,10 +4,10 @@ seo-title: Manage [!DNL AEM Forms] metadata
 description: Les métadonnées permettent de catégoriser et d’organiser plus facilement les ressources. Les utilisateurs peuvent ainsi retrouver aisément une ressource spécifique.
 seo-description: Metadata allows for easier categorization and organization of assets and helps users who are looking for a specific asset.
 exl-id: 8527246a-37f0-4d43-a49e-1c76c265514e
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1660'
-ht-degree: 70%
+source-wordcount: '1658'
+ht-degree: 69%
 
 ---
 
@@ -178,9 +178,9 @@ Les ressources ont des valeurs de propriété existantes, qui peuvent être affi
 
    * Cliquez sur l’icône **[!UICONTROL Propriétés]** ![Propriétés](assets/Smock_Info_18_N.svg) dans les actions rapides.
 
-      >[!NOTE]
-      >
-      >Les actions rapides sont les éléments d’action qui s’affichent sur une vignette lorsque vous pointez dessus.
+     >[!NOTE]
+     >
+     >Les actions rapides sont les éléments d’action qui s’affichent sur une vignette lorsque vous pointez dessus.
 
    * Sélectionnez le formulaire, puis cliquez sur l’icône **[!UICONTROL Propriétés]** ![Propriétés](assets/Smock_Info_18_N.svg) qui s’affiche dans la barre d’outils.
    * Accédez à la page des détails du formulaire en cliquant sur la vignette de celui-ci lorsque vous n’êtes pas en mode de sélection. Cliquez ensuite sur l’icône représentant un œil ![Propriétés](assets/Smock_Info_18_N.svg) en haut à droite, puis sur Propriétés dans la liste en dessous.
@@ -234,7 +234,6 @@ Pour les formulaires adaptatifs, les utilisateurs ont également la possibilité
 >* Une fois qu’une nouvelle image est téléchargée ou générée, la vignette est remplacée par celle-ci et l’image précédente ne peut pas être rétablie.
 >
 
-
 ## Ajout de métadonnées personnalisées {#add-custom-metadata}
 
 Outre les métadonnées prêtes à l’emploi, [!DNL AEM Forms] prend en charge de nouvelles métadonnées personnalisées.
@@ -284,12 +283,12 @@ Un outil (l’éditeur de schéma de métadonnées) est proposé pour définir l
 
 1. Cliquez sur un composant que vous venez de déplacer. Dans l’onglet Paramètres qui s’affiche dans le panneau de droite, renseignez les champs suivants :
 
-   1. Indiquez un libellé de champ qui sera utilisé comme nom d’affichage au-dessus du champ placé dans le schéma (par exemple : Service)
-   1. Sous le champ Associer à la propriété , vous pouvez voir une valeur préremplie. **&#39;./jcr:content/metadata/default&#39;**. Remplacez « **default** » par le nom de propriété de votre choix, qui sera utilisé pour stocker la propriété dans le référentiel crx (par exemple, &#39;./jcr:content/metadata/department&#39;)
+   1. Indiquez un libellé de champ à utiliser comme nom d’affichage au-dessus du champ placé dans le schéma (par exemple : Service)
+   1. Sous le champ Associer à la propriété , vous pouvez voir une valeur préremplie. **&#39;./jcr:content/metadata/default&#39;**. Modifiez le &quot;&quot;**default**&quot; à un nom de propriété souhaité, utilisé pour stocker la propriété dans le référentiel crx (par exemple : &#39;./jcr:content/metadata/department&#39;)
 
       >[!NOTE]
       >
-      >Ne modifiez pas le préfixe ‘./jcr:content/metadata/&quot; car il définit le chemin d’accès où la propriété est stockée.
+      >Ne modifiez pas le préfixe &quot;./jcr:content/metadata/&#39; car il définit le chemin d’accès où la propriété est stockée.
       >
       >En outre, le nom de la propriété doit être unique pour éviter d’écrire des valeurs pour plusieurs propriétés au même emplacement dans le référentiel. Il est donc recommandé de modifier la valeur &quot;default&quot;.
 

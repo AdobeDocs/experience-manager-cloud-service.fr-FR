@@ -2,10 +2,10 @@
 title: Création et gestion des canaux dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des canaux dans Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: 9db22dca0fd6debaff0d93e1958e59536efabad8
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1107'
-ht-degree: 99%
+source-wordcount: '1104'
+ht-degree: 93%
 
 ---
 
@@ -25,7 +25,7 @@ Ce document vous aide à comprendre la création et la gestion de canaux pour vo
 ## Procédure de création d’un canal de séquence dans Screens as a Cloud Service {#create-new-channel}
 
 >[!NOTE]
->**Prérequis**
+>**Conditions préalables**
 >Avant de commencer cette section du guide, consultez la section [Création et gestion de projets dans Screens as a Cloud Service](/help/screens-cloud/creating-content/creating-projects-screens-cloud.md).
 
 Pour créer un canal de séquence dans Screens as a Cloud Service, procédez comme suit :
@@ -115,7 +115,7 @@ Cette mosaïque affiche les informations suivantes :
 
 ### Utilisation des informations d’attribution par défaut lors de l’affectation à un affichage {#default-display}
 
-Les canaux avec des informations d’attribution par défaut peuvent être affectés à des affichages de la même manière que les canaux standard, avec en plus la possibilité d’exploiter les informations d’attribution par défaut au lieu de définir manuellement des informations personnalisées, à chaque fois.
+Les canaux dont les détails d’affectation par défaut peuvent être affectés affichent de la même manière que les canaux standard, avec l’option ajoutée pour utiliser les détails d’affectation par défaut au lieu de définir manuellement ceux qui sont personnalisés à chaque fois.
 
 1. Accédez à la page des informations de l’affichage auquel vous souhaitez attribuer le canal, puis cliquez sur **Attribuer le canal**.
 Vous pouvez également sélectionner l’affichage souhaité dans la vue d’inventaire et cliquer sur le bouton **Attribuer le canal**.
@@ -141,7 +141,7 @@ Vous pouvez également sélectionner l’affichage souhaité dans la vue d’inv
 
    ![image](/help/screens-cloud/assets/display/Assignments8.png)
 
-**Remarque :** Une affectation de canal qui utilise les informations d’attribution par défaut ne sera pas modifiable dans le contexte de l’affichage.
+**Remarque :** Une attribution de canal qui utilise les détails d’attribution par défaut ne sera pas modifiable dans le contexte de l’affichage.
 
 * Si vous devez la modifier et utiliser une affectation personnalisée, vous devrez d’abord la supprimer, puis la rajouter à l’aide de l’option **Définition des informations d’affectation personnalisée**.
 * Si vous devez modifier les propriétés des informations d’attribution par défaut, vous devrez effectuer cette opération directement à partir de la page des informations du canal.
@@ -154,7 +154,7 @@ Vous pouvez également sélectionner l’affichage souhaité dans la vue d’inv
 
    ![image](/help/screens-cloud/assets/display/Assignments9.png)
 
-1. Une boîte de dialogue de confirmation s’affiche et les détails correspondent à l’une des conditions suivantes :
+1. Une boîte de dialogue de confirmation s’affiche et les détails correspondent à l’une des conditions suivantes :
    **a.** Le canal n’est utilisé dans aucun affichage.
 
    ![image](/help/screens-cloud/assets/display/Assignments10.png)

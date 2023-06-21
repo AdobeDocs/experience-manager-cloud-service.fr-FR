@@ -1,11 +1,11 @@
 ---
 title: Mises à jour de la version d’AEM
-description: Découvrez comment AEM as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) afin de conserver vos projets sur la dernière version.
+description: Découvrez comment AEM as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) pour conserver vos projets sur la dernière version.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd1560aa4d260320f565ad993a8b3650c3ee5288
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '479'
 ht-degree: 54%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 54%
 
 # Mises à jour de la version d’AEM {#aem-version-updates}
 
-Découvrez comment AEM as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) afin de conserver vos projets sur la dernière version.
+Découvrez comment AEM as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) pour conserver vos projets sur la dernière version.
 
 ## CI/CD {#ci-cd}
 

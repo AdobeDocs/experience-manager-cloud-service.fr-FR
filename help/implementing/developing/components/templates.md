@@ -1,11 +1,11 @@
 ---
 title: Modèles de page
-description: Les modèles de page sont utilisés lors de la création d’une page qui servira de base à la nouvelle page
+description: Les modèles de page sont utilisés lors de la création d’une page qui sert de base à la nouvelle page.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f5aa9229ff06fdcff5474594269ebcf9daf09e41
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3300'
-ht-degree: 85%
+source-wordcount: '3293'
+ht-degree: 80%
 
 ---
 
@@ -67,6 +67,7 @@ Lors de la création d’un modèle modifiable :
    * Les politiques de contenu définissent les propriétés de conception d’un composant.
 
       * Par exemple, les composants disponibles ou les dimensions minimales/maximales.
+
    * Elles s’appliquent au modèle (et aux pages créées avec le modèle).
 
    Pour plus d’informations sur la façon dont un créateur de modèles définit des politiques, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -432,11 +433,11 @@ Ce nœud contient des propriétés pour le modèle :
 Définit la structure de la page créée :
 
 * Est fusionné avec le contenu (`/initial`) lors de la création d’une page.
-* Les modifications apportées à la structure sont répercutées dans toute page créée avec le modèle.
-* Le nœud `root` (`structure/jcr:content/root`) définit la liste des composants qui seront disponibles dans la page créée.
+* Les modifications apportées à la structure sont répercutées dans toutes les pages créées avec le modèle.
+* Le `root` ( `structure/jcr:content/root`) définit la liste des composants disponibles dans la page qui en résulte.
    * Les composants définis dans la structure du modèle ne peuvent être ni déplacés ni supprimés dans les pages créées.
-   * Une fois qu’un composant est déverrouillé, la propriété `editable` est définie sur `true`.
-   * Dès qu’un composant non vide est déverrouillé, son contenu est déplacé vers la branche `initial`.
+   * Une fois qu’un composant est déverrouillé, la variable `editable` est définie sur `true`.
+   * Une fois qu’un composant qui contient déjà du contenu est déverrouillé, ce contenu est déplacé vers la balise `initial` branche.
 
 * Le nœud `cq:responsive` contient des définitions pour la mise en page réactive.
 
@@ -447,7 +448,7 @@ Définit le contenu initial dont une nouvelle page disposera au moment de sa cr�
 * Contient un nœud `jcr:content` copié dans toute nouvelle page.
 * Est fusionné avec la structure (`/structure`) lors de la création d’une page.
 * Aucune page existante n’est mise à jour si le contenu initial est modifié après la création.
-* Le nœud `root` contient une liste de composants permettant de définir les éléments qui seront disponibles dans la page créée.
+* Le `root` contient une liste de composants pour définir ce qui est disponible dans la page résultant du processus.
 * Si du contenu est ajouté à un composant en mode de structure et que ce composant est ensuite déverrouillé (ou inversement), ce contenu est utilisé comme contenu initial.
 
 ### Mise en page {#layout}
@@ -461,13 +462,13 @@ Lorsque vous [modifiez un modèle, vous pouvez définir la mise en page](/help/s
 Les politiques de contenu définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle). Les stratégies de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
 
 * La propriété `cq:policy`, sur le nœud `root`
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Fournit une référence relative à la politique de contenu pour le système de paragraphes de la page.
 
 * La propriété `cq:policy`, sur les nœuds component-explicit sous `root`, fournit des liens vers les politiques relatives aux composants individuels.
 
 * Les définitions de politique réelles sont stockées sous :
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -488,7 +489,7 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
    * Définir la propriété de statut sur le nœud `jcr:content`.
 
       * Par exemple, sous :
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Définissez la propriété :
 
@@ -500,9 +501,9 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
 
    * [Définissez le ou les chemins d’accès des modèles autorisés dans les **Propriétés de page**](/help/sites-cloud/authoring/features/templates.md#allowing-a-template-author) de la page appropriée ou de la page racine d’une sous-branche.
    * Définissez la propriété :
-      `cq:allowedTemplates`
-Sur le 
-nœud `jcr:content` de la branche requise.
+     `cq:allowedTemplates`
+Sur le nœud `jcr:content` de la branche requise.
+
    Par exemple, avec la valeur suivante :
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
@@ -532,13 +533,13 @@ Lors du rendu d’une page :
 
 * **Modèles** :
 
-   * La propriété `cq:template` du nœud `jcr:content` sera référencée afin d’accéder au modèle correspondant à cette page.
+   * Le `cq:template` de sa propriété `jcr:content` est référencé pour accéder au modèle qui correspond à cette page.
 
 * **Composants** :
 
    * Le composant de page fusionnera l’arborescence `structure/jcr:content` du modèle avec l’arborescence `jcr:content` de la page.
       * Le composant de page autorisera uniquement l’auteur à modifier les nœuds de la structure du modèle qui ont été marqués comme étant modifiables (ainsi que ses éventuels enfants).
-      * Lors du rendu d’un composant sur une page, le chemin d’accès relatif de ce composant est prélevé dans le nœud `jcr:content` ; une recherche est ensuite effectuée dans le même emplacement sous le nœud `policies/jcr:content` du modèle.
+      * Lors du rendu d’un composant sur une page, le chemin relatif de ce composant est extrait de la propriété `jcr:content` Noeud; le même chemin sous `policies/jcr:content` du modèle est ensuite recherché.
          * La propriété `cq:policy` de ce nœud pointe vers la politique de contenu proprement dite (en d’autres termes, elle contient la configuration de conception de ce composant).
             * De cette manière, vous pouvez disposer de plusieurs modèles qui réutilisent les mêmes configurations de politique de contenu.
 

@@ -2,10 +2,10 @@
 title: API Query Builder
 description: Les fonctionnalités du Query Builder Asset Share sont exposées par le biais d’une API Java et d’une API REST.
 exl-id: d5f22422-c9da-4c9d-b81c-ffa5ea7cdc87
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2040'
-ht-degree: 90%
+source-wordcount: '2033'
+ht-degree: 85%
 
 ---
 
@@ -133,7 +133,7 @@ Par exemple, l’interface utilisateur peut adapter l’approche suivante :
    * `total=43`, `more=false` – Indique que le nombre total d’accès est de 43. L’interface utilisateur peut afficher jusqu’à dix résultats dans le cadre de la première page et fournir la pagination pour les trois pages suivantes. Vous pouvez également utiliser cette implémentation pour afficher un texte descriptif tel que **« 43 résultats trouvés »**.
    * `total=100`, `more=true` – Indique que le nombre total d’accès est supérieur à 100 et que le nombre exact est inconnu. L’interface utilisateur peut afficher jusqu’à dix pages dans le cadre de la première page et fournir une pagination pour les dix pages suivantes. Vous pouvez également l’utiliser pour afficher du texte comme **&quot;plus de 100 résultats trouvés&quot;**. Lorsque l’utilisateur accède aux pages suivantes, les appels effectués vers Query Builder augmentent la limite de `guessTotal`, ainsi que celle des paramètres `offset` et `limit`.
 
-Il est également conseillé d’utiliser `guessTotal` lorsque l’IU doit appliquer un défilement infini, afin d’empêcher Query Builder de déterminer le nombre exact d’accès.
+`guessTotal` doit également être utilisé lorsque l’interface utilisateur doit faire un défilement infini pour éviter que Query Builder ne détermine le nombre exact d’accès.
 
 ### Recherche et classement des fichiers JAR, en commençant par le plus récent {#find-jar-files-and-order-them-newest-first}
 
@@ -279,7 +279,7 @@ property.3_value=Whistler Mountain Biking
 
 ## Amélioration des propriétés renvoyées {#refining-what-is-returned}
 
-Par défaut, le servlet JSON QueryBuilder renvoie un jeu de propriétés par défaut pour chaque nœud dans les résultats de recherche (par exemple : chemin d’accès, nom, titre, etc.). Pour contrôler les propriétés renvoyées, vous pouvez effectuer l’une des opérations suivantes :
+Par défaut, le servlet JSON de QueryBuilder renvoie un ensemble de propriétés par défaut pour chaque noeud dans le résultat de la recherche (par exemple, chemin, nom et titre). Pour contrôler les propriétés renvoyées, vous pouvez effectuer l’une des opérations suivantes :
 
 Spécifiez
 
@@ -287,7 +287,7 @@ Spécifiez
 p.hits=full
 ```
 
-toutes les propriétés sont incluses pour chaque nœud :
+Dans ce cas, toutes les propriétés sont incluses pour chaque noeud :
 
 `http://<host>:<port>/bin/querybuilder.json?p.hits=full&property=jcr%3atitle&property.value=Cycling%20Tuscany`
 
@@ -320,7 +320,7 @@ p.hits=selective
 p.properties=sling:resourceType jcr:primaryType
 ```
 
-Vous pouvez également inclure des nœuds enfants dans la réponse du Query Builder. Pour ce faire, vous devez spécifier
+Vous pouvez également inclure des nœuds enfants dans la réponse du Query Builder. Pour ce faire, vous devez indiquer
 
 ```xml
 p.nodedepth=n

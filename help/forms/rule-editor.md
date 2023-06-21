@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User
 level: Beginner, Intermediate
 exl-id: 6fd38e9e-435e-415f-83f6-3be177738c00
-source-git-commit: e64e15c9096f837daa7fff5c64b8394736297579
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '6346'
-ht-degree: 74%
+source-wordcount: '6321'
+ht-degree: 73%
 
 ---
 
@@ -60,11 +60,11 @@ Même si vous pouvez obtenir la plupart des cas d’utilisation avec n’importe
 
 * Lors de la création d’une règle, une règle de base consiste à y réfléchir dans le contexte de l’objet sur lequel vous créez une règle. Supposons que vous souhaitiez masquer ou afficher le champ B en fonction de la valeur qu’un utilisateur indique dans le champ A. Dans ce cas, vous évaluez une condition sur le champ A. Selon la valeur qu’il renvoie, vous déclenchez une action sur le champ B.
 
-   Par conséquent, si vous créez une règle pour le champ B (l’objet pour lequel vous évaluez une condition), utilisez le concept de condition-action ou le type de règle Lorsque. De même, utilisez le concept de condition d’action ou le type de règle Afficher ou Masquer sur le champ A.
+  Par conséquent, si vous créez une règle pour le champ B (l’objet pour lequel vous évaluez une condition), utilisez le concept de condition-action ou le type de règle Lorsque. De même, utilisez le concept de condition d’action ou le type de règle Afficher ou Masquer sur le champ A.
 
 * Parfois, vous devez exécuter plusieurs actions en fonction d’une condition. Dans ce cas, il est recommandé d’utiliser le concept condition-action . Dans ce concept, vous pouvez évaluer une condition une fois et spécifier plusieurs instructions d’action.
 
-   Par exemple, pour masquer les champs B, C et D selon la condition qui recherche la valeur spécifiée par un utilisateur dans le champ A, écrivez une règle avec le concept de condition-action ou le type de règle Lorsque sur le champ A et spécifiez les actions pour contrôler la visibilité des champs B, C et D. Dans le cas contraire, vous avez besoin de trois règles distinctes sur les champs B, C et D, où chaque règle vérifie la condition et affiche ou masque le champ correspondant. Dans cet exemple, il est plus efficace d’écrire le type de règle Lorsque sur un objet plutôt que le type de règle Afficher ou Masquer sur trois objets.
+  Par exemple, pour masquer les champs B, C et D selon la condition qui recherche la valeur spécifiée par un utilisateur dans le champ A, écrivez une règle avec le concept de condition-action ou le type de règle Lorsque sur le champ A et spécifiez les actions pour contrôler la visibilité des champs B, C et D. Dans le cas contraire, vous avez besoin de trois règles distinctes sur les champs B, C et D, où chaque règle vérifie la condition et affiche ou masque le champ correspondant. Dans cet exemple, il est plus efficace d’écrire le type de règle Lorsque sur un objet plutôt que le type de règle Afficher ou Masquer sur trois objets.
 
 * Pour déclencher une action basée sur plusieurs conditions, il est recommandé d’utiliser le concept action-condition . Par exemple, pour afficher et masquer le champ A en évaluant les conditions des champs B, C et D, utilisez le type de règle Afficher ou Masquer sur le champ A.
 * Utilisez le concept de condition-action ou de condition d’action si la règle contient une action pour une condition.
@@ -542,43 +542,38 @@ Pour plus d’informations, consultez [jsdoc.app](https://jsdoc.app/).
 
 Balises `jsdoc` prises en charge :
 
-* Syntaxe de 
-**Privé** :
-Une fonction privée n’est pas incluse comme fonction personnalisée.`@private`
-Une fonction privée n’est pas incluse comme fonction personnalisée.
+* **Privé**
+Syntaxe : `@private`
+Une fonction privée n’est pas incluse en tant que fonction personnalisée.
 
-* Syntaxe de
-**Name** : 
-Autrement `@name funcName <Function Name>`
-Autrement, `,` vous pouvez utiliser : `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
-   `funcName` est le nom de la fonction (les espaces ne sont pas autorisés).
-   `<Function Name>` est le nom d’affichage de la fonction.
+* **Nom**
+Syntaxe : `@name funcName <Function Name>`
+Sinon `,` vous pouvez utiliser : `@function funcName <Function Name>` **ou** `@func` `funcName <Function Name>`.
+  `funcName` est le nom de la fonction (les espaces ne sont pas autorisés).
+  `<Function Name>` est le nom d’affichage de la fonction.
 
-* Syntaxe de 
-**Member** : 
-Associe un espace de noms à la fonction.`@memberof namespace`
-Associe un espace de noms à la fonction.
+* **membre**
+Syntaxe : `@memberof namespace`
+Associe un espace de noms à la fonction .
 
-* Syntaxe de
-**Parameter** : 
-Autrement, vous pouvez utiliser : `@param {type} name <Parameter Description>`
-Autrement, vous pouvez utiliser : `@argument` `{type} name <Parameter Description>` **ou** `@arg` `{type}` `name <Parameter Description>`.
+* **Paramètre**
+Syntaxe : `@param {type} name <Parameter Description>`
+Vous pouvez également utiliser : `@argument` `{type} name <Parameter Description>` **ou** `@arg` `{type}` `name <Parameter Description>`.
 Affiche les paramètres utilisés par la fonction. Une fonction peut comporter plusieurs balises de paramètre, une balise pour chaque paramètre dans l’ordre d’occurrence.
-   `{type}` représente le type de paramètre. Les types de paramètre sont les suivants :
+  `{type}` représente le type de paramètre. Les types de paramètre sont les suivants :
 
    1. chaîne
    1. nombre
    1. booléen
    1. portée
 
-   La portée fait référence aux champs d’un formulaire adaptatif. Lorsqu’un formulaire utilise le chargement différé, vous pouvez utiliser `scope` pour accéder à ses champs. Vous pouvez accéder aux champs lorsque les champs sont chargés ou si les champs sont marqués comme généraux.
+  La portée fait référence aux champs d’un formulaire adaptatif. Lorsqu’un formulaire utilise le chargement différé, vous pouvez utiliser `scope` pour accéder à ses champs. Vous pouvez accéder aux champs lorsque les champs sont chargés ou si les champs sont marqués comme généraux.
 
-   Tous les types de paramètre sont classés dans l’une des catégories ci-dessus. Aucun n’est pas pris en charge. Veillez à sélectionner l’un des types ci-dessus. Les types ne sont pas sensibles à la casse. Les espaces ne sont pas autorisés dans le paramètre `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  Tous les types de paramètre sont classés dans l’une des catégories ci-dessus. Aucun n’est pas pris en charge. Veillez à sélectionner l’un des types ci-dessus. Les types ne sont pas sensibles à la casse. Les espaces ne sont pas autorisés dans le paramètre `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
-* Syntaxe de 
-**Return Type** : 
-Autrement, vous pouvez utiliser `@return {type}`
-Autrement, vous pouvez utiliser `@returns {type}`.
+* **Type de retour**
+Syntaxe : `@return {type}`
+Vous pouvez également utiliser `@returns {type}`.
 Ajoute des informations sur la fonction, comme son objectif.
 {type} représente le type de valeur renvoyée de la fonction. Les types de valeur renvoyée autorisés sont les suivants :
 
@@ -586,33 +581,33 @@ Ajoute des informations sur la fonction, comme son objectif.
    1. nombre
    1. booléen
 
-   Tous les autres types de retour sont classés dans l’un des types ci-dessus. Aucun n’est pas pris en charge. Veillez à sélectionner l’un des types ci-dessus. Les types de valeur renvoyée ne sont pas sensibles à la casse.
+  Tous les autres types de retour sont classés dans l’un des types ci-dessus. Aucun n’est pas pris en charge. Veillez à sélectionner l’un des types ci-dessus. Les types de valeur renvoyée ne sont pas sensibles à la casse.
 
    * Syntaxe de 
-**This** : 
-`@this currentComponent`
-   Utilisez @this pour faire référence au composant Formulaire adaptatif à partir duquel la règle a été créée.
+**This** : `@this currentComponent`
 
-   L’exemple ci-dessous repose sur la valeur du champ. Dans l’exemple ci-dessous, la règle masque un champ dans le formulaire. La partie `this` de `this.value` fait référence au composant Formulaire adaptatif sous-jacent, à partir duquel la règle a été créée.
+  Utilisez @this pour faire référence au composant Formulaire adaptatif à partir duquel la règle a été créée.
 
-   ```
-      /**
-      * @function myTestFunction
-      * @this currentComponent
-      * @param {scope} scope in which code inside function will be executed.
-      */
-      myTestFunction = function (scope) {
-         if(this.value == "O"){
-               scope.age.visible = true;
-         } else {
-            scope.age.visible = false;
-         }
-      }
-   ```
+  L’exemple ci-dessous repose sur la valeur du champ. Dans l’exemple ci-dessous, la règle masque un champ dans le formulaire. La partie `this` de `this.value` fait référence au composant Formulaire adaptatif sous-jacent, à partir duquel la règle a été créée.
 
-   >[!NOTE]
-   >
-   >Les commentaires avant la fonction personnalisée sont utilisés pour le résumé. Le résumé peut s’étendre sur plusieurs lignes jusqu’à ce qu’une balise soit rencontrée. Limitez la taille à une seule pour une description concise dans le créateur de règles.
+  ```
+     /**
+     * @function myTestFunction
+     * @this currentComponent
+     * @param {scope} scope in which code inside function is run.
+     */
+     myTestFunction = function (scope) {
+        if(this.value == "O"){
+              scope.age.visible = true;
+        } else {
+           scope.age.visible = false;
+        }
+     }
+  ```
+
+  >[!NOTE]
+  >
+  >Les commentaires avant la fonction personnalisée sont utilisés pour le résumé. Le résumé peut s’étendre sur plusieurs lignes jusqu’à ce qu’une balise soit rencontrée. Limitez la taille à une seule pour une description concise dans le créateur de règles.
 
 **Ajout d’une fonction personnalisée**
 

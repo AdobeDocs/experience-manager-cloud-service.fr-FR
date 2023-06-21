@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 100%
+source-wordcount: '1361'
+ht-degree: 98%
 
 ---
 
@@ -81,7 +81,7 @@ Votre contenu traduit est maintenant publié ! Il est désormais accessible et 
 
 >[!TIP]
 >
->Vous pouvez sélectionner plusieurs éléments (c’est-à-dire plusieurs dossiers de langues) lors de la publication afin de publier plusieurs traductions à la fois.
+>Vous pouvez sélectionner plusieurs éléments (c’est-à-dire plusieurs dossiers de langues) lors de la publication pour publier plusieurs traductions à la fois.
 
 D’autres options s’offrent à vous lors de la publication de votre contenu, telles que la planification d’une heure de publication, mais elles dépassent la portée de ce parcours. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin du document pour obtenir plus d’informations.
 

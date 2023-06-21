@@ -2,16 +2,16 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: 36d42ec1a273e4b910340ca0cd15ac6ffc57454e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '3659'
-ht-degree: 100%
+source-wordcount: '3649'
+ht-degree: 97%
 
 ---
 
 # Guide de référence des composants {#components-reference-guide}
 
-Les composants sont essentiels à la création d’une expérience dans AEM. Les [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) facilitent la prise en main d’un ensemble de composants robustes et prêts à l’emploi. Le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) explique au développeur comment utiliser ces outils et comment créer des composants personnalisés afin de créer un nouveau site AEM.
+Les composants sont essentiels à la création d’une expérience dans AEM. Les [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) et l’[Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) facilitent la prise en main d’un ensemble de composants robustes et prêts à l’emploi. Le [Tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) explique au développeur comment utiliser ces outils et comment créer des composants personnalisés pour créer un site AEM.
 
 >[!TIP]
 >
@@ -55,7 +55,7 @@ Ainsi, vous avez seulement besoin de redéfinir les modifications à apporter et
 
 ### Logique de contenu et balisage de rendu   {#content-logic-and-rendering-markup}
 
-Votre composant est rendu dans le langage [HTML.](https://www.w3schools.com/htmL/html_intro.asp) Votre composant doit définir les balises HTML nécessaires pour réaliser le rendu du contenu selon les besoins, dans les environnements de création et de publication.
+Votre composant est rendu avec [HTML](https://www.w3schools.com/htmL/html_intro.asp). Votre composant doit définir les balises HTML nécessaires pour réaliser le rendu du contenu selon les besoins, dans les environnements de création et de publication.
 
 Il est recommandé de séparer le code responsable du balisage et du rendu du code qui contrôle la logique utilisée pour sélectionner le contenu du composant.
 
@@ -123,11 +123,11 @@ L’icône ou l’abréviation du composant est définie via les propriétés JC
    * L’abréviation devrait être limitée à deux caractères.
    * La saisie d’une chaîne vide crée l’abréviation à partir des deux premiers caractères de la propriété `jcr:title`.
       * Par exemple, « Im » pour « Image »
-      * Le titre localisé sera utilisé pour créer l’abréviation.
+      * Le titre localisé est utilisé pour créer l’abréviation.
    * L’abréviation n’est traduite que si le composant possède une propriété `abbreviation_commentI18n`, qui est ensuite utilisée comme indice de traduction.
 1. `cq:icon.png` ou `cq:icon.svg` – Icône du composant, affichée dans le navigateur de composants
    * La taille des icônes des composants standard est de 20 x 20 pixels.
-      * Les icônes plus grandes seront réduites (côté client).
+      * Les icônes plus grandes sont réduites (côté client).
    * La couleur recommandée est rgb(112, 112, 112) > # 707070
    * L’arrière-plan des icônes de composants standard est transparent.
    * Seuls les fichiers `.png` et `.svg` sont pris en charge.
@@ -173,7 +173,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
 | `cq:editConfig` | `cq:EditConfig` | Définit la configuration de [modification du composant.](#edit-behavior) |
 | `cq:htmlTag` | `nt:unstructured` | Renvoie des attributs de balise supplémentaires ajoutés à la balise HTML environnante. Active l’ajout d’attributs aux divs générés automatiquement. |
 | `cq:noDecoration` | `Boolean` | Si la valeur est true, le composant n’est pas rendu avec les classes div et css générées automatiquement. |
-| `cq:template` | `nt:unstructured` | S’il est détecté, ce nœud est utilisé comme modèle de contenu lorsque le composant est ajouté depuis le navigateur de composants. |
+| `cq:template` | `nt:unstructured` | S’il est trouvé, ce noeud est utilisé comme modèle de contenu lorsque le composant est ajouté à partir de l’explorateur de composants. |
 | `jcr:created` | `Date` | Date de création du composant. |
 | `jcr:description` | `String` | Description du composant. |
 | `jcr:title` | `String` | Titre du composant. |
@@ -272,11 +272,11 @@ Vous pouvez également utiliser les conditions de rendu (`rendercondition`) pour
 
 ## Utilisation des composants {#using-components}
 
-Une fois que vous avez créé un composant, vous devez l’activer pour pouvoir l’utiliser. Son utilisation montre comment la structure du composant se rattache à la structure du contenu résultant dans le référentiel.
+Après avoir créé un composant, vous devez l’activer pour l’utiliser. Son utilisation montre comment la structure du composant se rattache à la structure du contenu résultant dans le référentiel.
 
 ### Ajout de votre composant au modèle {#adding-your-component-to-the-template}
 
-Une fois qu’un composant a été défini, il doit être disponible pour utilisation. Pour permettre l’utilisation d’un composant dans un modèle, vous devez activer ce composant dans les politiques du conteneur de disposition du modèle.
+Une fois qu’un composant a été défini, il doit être rendu disponible pour utilisation. Pour permettre l’utilisation d’un composant dans un modèle, vous devez activer ce composant dans les politiques du conteneur de disposition du modèle.
 
 Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/features/templates.md) pour plus de détails sur la création des modèles.
 
@@ -415,7 +415,6 @@ Le nœud `cq:listeners` (type de nœud `cq:EditListenersConfig`) définit ce qui
 >
 >* `aftermove`
 >* `aftercopy`
-
 
 Le gestionnaire d’événements peut être mis en œuvre avec une implémentation personnalisée. Par exemple (où `project.customerAction` est une méthode statique) :
 

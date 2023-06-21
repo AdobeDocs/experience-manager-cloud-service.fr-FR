@@ -1,11 +1,11 @@
 ---
 title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
-exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6,8b969821-5073-4540-a997-95c74a11e4f0
-source-git-commit: 05a412519a2d2d0cba0a36c658b8fed95e59a0f7
+exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '845'
-ht-degree: 100%
+source-wordcount: '844'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ Outre le CIF du contenu géré par AEM pur, une page peut généralement affiche
 
 Pour que vous soyez certain que les pages CIF peuvent être mises en cache pendant une durée limitée dans le Dispatcher AEM, nous vous recommandons donc d’utiliser l’[invalidation de cache basée sur la durée](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=fr#configuring-time-based-cache-invalidation-enablettl) (également appelée mise en cache basée sur TTL) lors de la mise en cache de pages CIF dans le Dispatcher AEM. Cette fonctionnalité peut être configurée en AEM avec le package [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) supplémentaire.
 
-Avec la mise en cache TTL, un développeur définit généralement une ou plusieurs durées de mise en cache pour les pages AEM sélectionnées. Ainsi, les pages CIF ne sont mises en cache dans le Dispatcher AEM que pendant la durée configurée et le contenu est fréquemment mis à jour.
+Avec la mise en cache TTL, un développeur définit généralement une ou plusieurs durées de mise en cache pour les pages AEM sélectionnées. Ainsi, les pages CIF ne sont mises en cache que dans le Dispatcher d’AEM pendant la durée configurée et le contenu est fréquemment mis à jour.
 
 >[!NOTE]
 >

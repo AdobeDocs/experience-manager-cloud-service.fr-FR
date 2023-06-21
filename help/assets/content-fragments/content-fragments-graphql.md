@@ -3,10 +3,10 @@ title: Diffusion de contenu découplée à l’aide de fragments de contenu avec
 description: Découvrez les concepts de base de la réalisation d’un CMS AEM découplé à l’aide de fragments de contenu avec GraphQL pour la diffusion de contenu découplé.
 feature: Content Fragments, GraphQL API
 exl-id: 4a3b030d-ed59-4920-bf94-e00a45f85b51
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '734'
-ht-degree: 100%
+source-wordcount: '733'
+ht-degree: 97%
 
 ---
 
@@ -24,14 +24,12 @@ Les fragments de contenu d’AEM peuvent être utilisées conjointement avec l�
 >
 >* [Headless et AEM](/help/headless/introduction.md) pour une présentation du Headless Development d’AEM Sites as a Cloud Service.
 
-
 >[!NOTE]
 >
 >GraphQL est actuellement utilisé dans deux scénarios (distincts) dans Adobe Experience Manager (AEM) as a Cloud Service :
 >
 >* [AEM Commerce utilise les données d’une plateforme commerciale par le biais de GraphQL](/help/commerce-cloud/integrating/magento.md).
 >* [AEM Content Fragments de contenu fonctionnent conjointement avec l’API AEM GraphQL (une implémentation personnalisée, basée sur GraphQL standard) pour fournir un contenu structuré à utiliser dans vos applications](/help/headless/graphql-api/content-fragments.md).
-
 
 ## CMS découplé {#headless-cms}
 
@@ -41,7 +39,7 @@ En termes de création de fragments de contenu dans AEM, cela signifie que :
 
 * Vous pouvez utiliser des fragments de contenu pour créer du contenu qui n’est pas principalement destiné à être publié directement (1:1) sur des pages formatées.
 
-* Le contenu de vos fragments de contenu sera structuré d’une manière prédéterminée, selon les modèles de fragments de contenu. Cela simplifie l’accès à vos applications qui poursuivront le traitement de votre contenu.
+* Le contenu de vos fragments de contenu est structuré d’une manière prédéterminée, selon les modèles de fragment de contenu. Cela simplifie l’accès à vos applications qui poursuivront le traitement de votre contenu.
 
 ## GraphQL – Présentation {#graphql-overview}
 
@@ -49,7 +47,7 @@ GraphQL est :
 
 * « *...un langage de requête pour les API et un environnement d’exécution pour répondre à ces requêtes avec vos données existantes* ».
 
-   Voir [GraphQL.org](https://graphql.org)
+  Voir [GraphQL.org](https://graphql.org)
 
 L’[API AEM GraphQL](#aem-graphql-api) permet d’effectuer des requêtes (complexes) sur vos [fragments de contenu](/help/assets/content-fragments/content-fragments.md) ; chaque requête étant conforme à un type de modèle spécifique. Le contenu renvoyé peut alors être utilisé par vos applications.
 

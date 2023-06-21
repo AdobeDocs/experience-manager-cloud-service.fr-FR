@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.9.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.9.0.
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 100%
+source-wordcount: '723'
+ht-degree: 97%
 
 ---
 
@@ -74,7 +74,7 @@ La date de publication de [!UICONTROL Cloud Manager] version 2020.9.0 est le 3
 
 * La fonction Audit de contenu se nomme désormais Contrôle de l’expérience.
 * Le processus de création a été divisé en trois commandes Maven distinctes.
-* Si le clonage du référentiel Git échoue, il sera tenté à nouveau jusqu’à trois fois.
+* Si le clonage du référentiel Git échoue, il est tenté à nouveau jusqu’à trois fois.
 
 ### Correctifs {#bug-fixes-cm}
 
@@ -118,8 +118,8 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour des
 
 * Le plug-in AIO-CLI prend en charge Repository Modernizer et permet aux utilisateurs d’exécuter l’outil.
 
-   Pour plus d’informations, voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
+  Pour plus d’informations, voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
 
 * L’utilitaire Repository Modernizer peut être utilisé pour restructurer des packages de projets existants en packages compatibles avec la structure de projet définie pour AEM as a Cloud Service.
 
-   Reportez-vous à [Ressource Git : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus de détails.
+  Reportez-vous à [Ressource Git : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus de détails.

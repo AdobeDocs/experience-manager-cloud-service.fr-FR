@@ -2,10 +2,10 @@
 title: Couplage et découplage dans AEM
 description: Il est possible de mettre en œuvre des projets AEM selon des modèles couplés et découplés, sans que toutefois ce choix soit binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1009'
-ht-degree: 100%
+source-wordcount: '1007'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +31,7 @@ Les applications sur une seule page (SPA) sont souvent destinataires du contenu 
 
 ## Exemple d’une boutique web {#web-shop-example}
 
-Supposons que votre entreprise dispose d’un site web sous la forme d’une SPA. Vous y trouverez tous les détails et images de votre produit. Vous introduisez ensuite AEM pour optimiser vos efforts marketing avec notamment du contenu de sites promotionnels, de blogs et de campagnes. Comment intégrer les deux ? AEM offre tout un éventail d’options :
+Supposons que votre entreprise dispose d’un site web sous la forme d’une SPA. Vous y trouverez tous les détails et images de votre produit. Vous présentez ensuite des AEM pour vos efforts marketing tels que des sites promotionnels, des blogs et du contenu de campagne. Comment intégrer les deux ? AEM offre tout un éventail d’options :
 
 * **Permettre aux systèmes de fonctionner de manière indépendante.**
 * **Apporter à la boutique web un contenu limité issu d’AEM via GraphQL.** Le contenu peut être créé par des auteurs dans AEM, mais il ne sera visible que par la biais de la boutique web SPA.

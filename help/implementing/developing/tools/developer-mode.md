@@ -4,10 +4,10 @@ seo-title: Developer Mode
 description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 87%
+source-wordcount: '528'
+ht-degree: 79%
 
 ---
 
@@ -32,7 +32,6 @@ Ils aident les développeurs à :
 >* n’est pas disponible sur les périphériques mobiles ou les petites fenêtres sur les ordinateurs de bureau (en raison de l’espace restreint),
 >  * ce qui se produit lorsque la largeur est inférieure à 1 024 px ;
 >* n’est disponible que pour les utilisateurs qui sont membres du groupe `administrators`.
-
 
 ## Ouverture du mode Développeur {#opening-developer-mode}
 
@@ -73,7 +72,7 @@ Chaque entrée de composant peut comporter les options suivantes :
    * tous les scripts de composants utilisés pour le rendu du composant ;
    * le chemin du contenu de référentiel pour cet élément spécifique.
 
-      ![Afficher les détails](assets/developer-mode-view-details.png)
+     ![Afficher les détails](assets/developer-mode-view-details.png)
 
 * **Modifier le script :** lien qui ouvre le script du composant dans CRXDE Lite.
 
@@ -93,4 +92,4 @@ L’onglet **Erreurs** devrait toujours rester vide (comme ci-dessus), mais lors
 * Un avertissement s’affiche si le composant écrit une entrée dans le journal d’erreurs, avec les détails de l’erreur et des liens directs vers le code correspondant dans CRXDE Lite.
 * Un avertissement s’affiche si le composant ouvre une session d’administrateur.
 
-Par exemple, si une méthode non définie est appelée, l’erreur résultante s’affiche dans l’onglet **Erreurs** et l’entrée du composant dans l’arborescence de l’onglet **Composants** est également marqué d’un indicateur lorsqu’une erreur se produit.
+Par exemple, si une méthode non définie est appelée, l’erreur résultante est affichée dans la variable **Erreurs** et l’entrée du composant dans l’arborescence de la fonction **Composants** est également marqué d’un indicateur lorsqu’une erreur se produit.

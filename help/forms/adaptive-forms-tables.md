@@ -6,9 +6,9 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2418'
+source-wordcount: '2415'
 ht-degree: 51%
 
 ---
@@ -299,13 +299,13 @@ Pour les fusionner dans le tableau au moment de l’exécution, vous devez indiq
 
 Si vous avez créé un formulaire adaptatif basé sur un modèle de formulaire XFA, les éléments XFA sont disponibles dans l’onglet Modèle de données de l’AEM Content Finder. Vous pouvez faire glisser et déposer ces éléments XFA, y compris les tableaux, dans le formulaire adaptatif.
 
-L’élément de tableau XFA est mappé au composant Tableau et fonctionne de manière prête à l’emploi dans les formulaires adaptatifs. Toutes les propriétés et fonctionnalités du tableau XDP sont conservées lors du déplacement dans le formulaire adaptatif. Vous pouvez y effectuer n’importe quelle opération, comme vous le faites avec le tableau natif du formulaire adaptatif. Par exemple, si une ligne d’un tableau XDP est marquée comme pouvant être répétée, elle sera répétée lorsqu’elle est déposée dans des formulaires adaptatifs.
+L’élément de tableau XFA est mappé au composant Tableau et fonctionne de manière prête à l’emploi dans les formulaires adaptatifs. Toutes les propriétés et fonctionnalités du tableau XDP sont conservées lors du déplacement dans le formulaire adaptatif. Vous pouvez y effectuer n’importe quelle opération, comme vous le faites avec le tableau natif du formulaire adaptatif. Par exemple, si une ligne d’un tableau XDP est marquée comme pouvant être répétée, elle est répétée lorsqu’elle est déposée dans des formulaires adaptatifs.
 
 En outre, vous pouvez faire glisser et déposer le sous-formulaire XDP pour ajouter une nouvelle ligne au tableau. Notez toutefois que déposer un sous-formulaire imbriqué ne fonctionne pas.
 
 >[!NOTE]
 >
->Un tableau XDP sans ligne d’en-tête ne sera pas mappé au composant Tableau de formulaire adaptatif. Au lieu de cela, il sera mappé au composant Panneau de formulaire adaptatif avec disposition fluide. En outre, lorsque vous ajoutez un tableau imbriqué XDP à un formulaire adaptatif, le tableau externe est converti en panneau tout en conservant le tableau interne.
+>Un tableau XDP sans ligne d’en-tête ne sera pas mappé au composant Tableau de formulaire adaptatif. Il est plutôt mappé au composant Panneau de formulaire adaptatif avec disposition fluide. En outre, lorsque vous ajoutez un tableau imbriqué XDP à un formulaire adaptatif, le tableau externe est converti en panneau tout en conservant le tableau interne.
 
 En outre, vous pouvez faire glisser et déposer un groupe d’éléments de type complexe XSD pour créer une ligne de tableau. Une nouvelle ligne est créée juste en dessous de la ligne sur laquelle vous avez déposé les éléments. Les cellules créées à l’aide d’éléments de type complexe XSD conservent une référence de liaison au fichier XSD. Vous pouvez également remplacer une cellule de corps par un élément de type complexe XSD en déposant l’élément sur la cellule.
 
@@ -320,4 +320,4 @@ En outre, vous pouvez faire glisser et déposer un groupe d’éléments de type
 * Si vous déplacez des lignes vers le haut et vers le bas lors de la création d’un tableau basé sur XSD, une perte de données des lignes du tableau s’affiche dans les données XML générées lors de l’envoi du formulaire.
 * Un nom d’élément prédéfini est associé à chaque cellule de corps d’un tableau par défaut. Si vous ajoutez un autre tableau dans le formulaire adaptatif, les cellules de contenu par défaut du nouveau tableau auront le même nom d’élément que dans le premier tableau. Dans ce cas, les données générées lors de l’envoi du formulaire incluent des données dans les cellules de contenu par défaut de l’un des tableaux uniquement. Par conséquent, veillez à renommer les noms d’éléments pour les cellules de contenu par défaut afin de les rendre uniques dans tous les tableaux et d’éviter toute perte de données.
 
-   Notez que cela s’applique uniquement aux cellules de contenu par défaut. Si vous ajoutez d’autres lignes ou colonnes à un tableau, des noms d’éléments uniques seront générés automatiquement pour les cellules de contenu non définies par défaut.
+  Notez que cela s’applique uniquement aux cellules de contenu par défaut. Si vous ajoutez d’autres lignes ou colonnes à un tableau, des noms d’éléments uniques seront générés automatiquement pour les cellules de contenu non définies par défaut.

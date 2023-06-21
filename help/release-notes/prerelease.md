@@ -2,10 +2,10 @@
 title: Canal de version préliminaire d’Adobe Experience Manager as a Cloud Service
 description: Découvrez comment utiliser le canal de version préliminaire pour obtenir un aperçu des prochaines fonctionnalités d’AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: a66814c0f7f8dbdf794ff1867c7a4d7fdc2956cf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 100%
+source-wordcount: '1305'
+ht-degree: 91%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment utiliser le canal de version préliminaire pour obtenir un ap
 
 Adobe Experience Manager as a Cloud Service bénéficie régulièrement de nouvelles fonctionnalités, conformément à la [feuille de route des versions d’Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
 
-Pour vous familiariser avec les fonctionnalités programmées pour la prochaine mise à jour, vous pouvez vous abonner au canal de version préliminaire. Il vous suffit de configurer vos environnements de développement ou tout environnement de sandbox. Vous pouvez prévisualiser les nouveautés dans l’interface utilisateur d’AEM et créer du code pour toute nouvelle API en version préliminaire.
+Pour vous familiariser avec les fonctionnalités prévues pour la mise à jour des fonctionnalités suivantes, vous pouvez vous abonner au canal de version préliminaire, accessible par la configuration de vos environnements de développement ou de tout environnement de test. Vous pouvez prévisualiser les nouveautés dans l’interface utilisateur d’AEM et créer du code pour toute nouvelle API en version préliminaire.
 
 La liste des fonctionnalités de version préliminaire pour une mise à jour donnée est publiée dans les [notes de mise à jour.](/help/release-notes/release-notes-cloud/release-notes-current.md)
 
@@ -31,7 +31,7 @@ AEM as a Cloud Service comporte deux types de mises à jour :
 
 Ce calendrier de publication permet d’offrir des mises à jour continues sans interruption de service.
 
-Le canal de version préliminaire vous permet de prévisualiser les fonctionnalités contenues dans la prochaine mise à jour. Vous pouvez ainsi les tester et planifier leur mise en œuvre dans vos propres projets. Vous prenez ainsi une longueur d’avance pour une possible mise en œuvre de la prochaine mise à jour.
+Le canal de version préliminaire vous permet de prévisualiser les fonctionnalités programmées pour la prochaine version des fonctionnalités afin que vous puissiez évaluer les fonctionnalités à venir et planifier leur mise en oeuvre possible pour vos propres projets. Il vous permet de planifier la prochaine version de la fonctionnalité.
 
 Par exemple, si nous sommes au mois de mai et que vous êtes abonné(e) au canal de version préliminaire, vous pouvez tester les fonctionnalités de la version de juin.
 
@@ -97,22 +97,22 @@ Vous pouvez également utiliser l’API Cloud Manager et l’interface de ligne
 
 * À l’aide du [point d’entrée des variables d’environnement de l’API Cloud Manager,](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#operation/patchEnvironmentVariables) appliquez la variable d’environnement `AEM_RELEASE_CHANNEL` à la valeur `prerelease`.
 
-   ```text
-   PATCH /program/{programId}/environment/{environmentId}/variables
-   [
-           {
-                   "name" : "AEM_RELEASE_CHANNEL",
-                   "value" : "prerelease",
-                   "type" : "string"
-           }
-   ]
-   ```
+  ```text
+  PATCH /program/{programId}/environment/{environmentId}/variables
+  [
+          {
+                  "name" : "AEM_RELEASE_CHANNEL",
+                  "value" : "prerelease",
+                  "type" : "string"
+          }
+  ]
+  ```
 
 * [L’interface de ligne de commande de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager#aio-cloudmanagerset-environment-variables-environmentid) peut également être utilisée.
 
-   ```shell
-   aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL “prerelease
-   ```
+  ```shell
+  aio cloudmanager:environment:set-variables <ENVIRONMENT_ID> --programId=<PROGRAM_ID> --variable AEM_RELEASE_CHANNEL "prerelease
+  ```
 
 La variable peut être supprimée ou redéfinie sur une autre valeur si vous souhaitez que l’environnement soit restauré avec le comportement du canal normal (hors version préliminaire).
 
@@ -157,7 +157,7 @@ Les JavaDocs sont publiés sur Maven Central.
      </dependency>
    ```
 
-   Pour passer au SDK de la version préliminaire, remplacez simplement la dépendance de `com.adobe.aem:aem-sdk-api` par `com.adobe.aem:aem-prerelease-sdk-api` comme indiqué ci-dessous :
+   Pour passer au SDK de version préliminaire, il vous suffit de modifier la dépendance de `com.adobe.aem:aem-sdk-api` to `com.adobe.aem:aem-prerelease-sdk-api` comme indiqué ci-dessous :
 
    ```
    <dependencyManagement>
@@ -189,7 +189,7 @@ Le [module externe maven d’analyseur de création du SDK CS AEM version 1.0, e
 
 ## Former vos utilisateurs et utilisatrices {#train-users}
 
-Après avoir testé les nouvelles fonctionnalités dans le canal de version préliminaire et une fois que vous avez décidé de les exploiter dans vos projets, vous devez former vos utilisateurs et utilisatrices.
+Une fois que vous avez testé les nouvelles fonctionnalités dans le canal de version préliminaire et que vous avez décidé de les utiliser dans vos projets, vous devez former vos utilisateurs.
 
 Adobe Experience League propose de nombreuses ressources pour apprendre à utiliser AEMaaCS.
 

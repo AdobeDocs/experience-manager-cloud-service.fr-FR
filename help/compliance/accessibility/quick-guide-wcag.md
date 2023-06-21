@@ -2,10 +2,10 @@
 title: Guide rapide relatif à WCAG 2.1
 description: Guide rapide relatif à WCAG 2.1
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1776'
-ht-degree: 69%
+source-wordcount: '1774'
+ht-degree: 66%
 
 ---
 
@@ -42,8 +42,7 @@ En d’autres termes, des consignes qui peuvent être appliquées à divers form
 Chaque consigne est écrite de manière à pouvoir être testée objectivement pour s’assurer qu’un groupe d’experts en accessibilité conviendrait de façon générale que la consigne a été respectée. L’un des défis des consignes d’accessibilité est que, alors que certaines peuvent être testées par des moyens techniques, d’autres requièrent un jugement humain afin de vérifier si la consigne a été respectée.
 
 * Permettent une **mise en œuvre contextuelle avec des priorités :**
-les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, la notion d’ 
-*accessibilité prise en charge* est introduite. Cela permet aux auteurs de prendre des décisions sur la meilleure manière d’utiliser les technologies web qui peuvent ne pas présenter l’accessibilité totale, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et/ou de navigateurs spécifiques, permettant ainsi de tirer profit des fonctions d’accessibilité.
+les consignes de WCAG 2.1 reçoivent des priorités en fonction de l’impact probable du manquement à cette consigne sur un groupe particulier de personnes en situation de handicap. Cela permet aux auteurs de prendre une décision éclairée sur les consignes les plus importantes pour leur situation donnée. En outre, la notion d’ *accessibilité prise en charge* est introduite. Cela permet aux auteurs de prendre des décisions sur la meilleure façon d’utiliser les technologies web qui peuvent ne pas bénéficier d’une prise en charge complète de l’accessibilité, ou peut exiger des utilisateurs qu’ils disposent de technologies d’assistance et de navigateurs spécifiques, ou les deux, pour bénéficier des fonctionnalités d’accessibilité.
 
 Ces objectifs ont considérablement influencé la structure de WCAG 2.1.
 
@@ -115,7 +114,7 @@ Chaque technique possède un numéro unique, qui se rapporte à sa collection. P
 
 Les techniques peuvent être suffisantes, consultatives ou en cas d’échec :
 
-* A *Technique suffisante* est un critère qui, s’il est suivi, suffira à remplir un critère de réussite particulier.
+* A *Technique suffisante* est un critère qui, s’il est suivi, est suffisant pour satisfaire à un critère de réussite particulier.
 * Un *Technique consultative* est un critère qui, s’il est suivi, aura un impact positif sur l’accessibilité, mais peut ne pas suffire à lui seul pour garantir qu’un critère de réussite particulier est satisfait.
 * A *Échec* est une technique décrivant un exemple spécifique de cas où un critère de réussite ne serait pas rempli.
 
@@ -135,7 +134,7 @@ Chaque consigne et critère de réussite possède également sa propre page &quo
 
 La page de &quot;compréhension&quot; individuelle de chaque critère de réussite fournit des informations sur :
 
-* l’intention du critère de réussite ;
+* l&#39;intention du critère de réussite;
 * Exemples généraux sur la façon dont le critère de réussite peut être rempli;
 * Ressources connexes (hors W3C) sur la façon de remplir le critère de réussite ;
 * des techniques et échecs : exemples spécifiques et détaillés de la façon dont le critère de réussite peut être rempli (décrits plus en détail ci-dessous) ;
@@ -145,7 +144,7 @@ En voici un exemple : [Présentation du critère de réussite 1.1.1 (« conte
 
 ### Conformité à WCAG 2.1 {#how-to-meet-wcag}
 
-La section « Comment se conformer » est disponible sur la page [Comment se conformer à WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/). Cette section fournit une autre présentation de WCAG, permettant aux lecteurs d’affiner le contenu des consignes au mieux de leurs intérêts et/ou de circonstances particulières. Les Readers peuvent filtrer les techniques de critères de réussite qu’ils souhaitent afficher en spécifiant des technologies de contenu web particulières, telles que les feuilles de style en cascade ou les scripts, ou en spécifiant un ou plusieurs niveaux de priorité particuliers.
+La section &quot;Comment procéder&quot; est disponible sur la page [Conformité à WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/) page. Cette section fournit une autre présentation de WCAG, permettant aux lecteurs d’affiner le contenu des consignes au mieux de leurs intérêts et/ou de circonstances particulières. Les Readers peuvent filtrer les techniques de critères de réussite qu’ils souhaitent afficher en spécifiant des technologies de contenu web particulières, telles que les feuilles de style en cascade ou les scripts, ou en spécifiant un ou plusieurs niveaux de priorité particuliers.
 
 Sans filtrage, cette ressource fournit tous les critères de réussite regroupés par consigne. Pour chaque critère de réussite, les informations suivantes sont fournies :
 

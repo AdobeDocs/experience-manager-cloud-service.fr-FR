@@ -1,11 +1,11 @@
 ---
 title: Plan directeur d’applications sur une seule page (SPA)
-description: Ce document décrit le contrat général et indépendant du framework que tout framework de SPA devrait respecter afin de mettre en œuvre des composants de SPA modifiables dans AEM.
+description: Ce document décrit le contrat général et indépendant du framework que tout framework SPA devrait respecter afin que vous puissiez mettre en oeuvre des composants SPA modifiables dans Adobe.
 exl-id: 9d47c0e9-600c-4f45-9169-b3c9bbee9152
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2057'
-ht-degree: 98%
+source-wordcount: '2056'
+ht-degree: 94%
 
 ---
 
@@ -15,7 +15,7 @@ La SPA doit respecter certaines exigences afin que l’auteur puisse utiliser l�
 
 ## Présentation {#introduction}
 
-Ce document décrit le contrat général que tout framework de SPA devrait respecter (c’est-à-dire le type de couche de support AEM) afin de mettre en œuvre des composants de SPA modifiables dans AEM.
+Ce document décrit le contrat général que tout framework SPA doit respecter (c’est-à-dire le type de couche de prise en charge AEM) afin que vous puissiez implémenter des composants de SPA modifiables dans.
 
 Pour que l’auteur puisse utiliser l’éditeur de page AEM pour modifier les données exposées par un framework d’applications sur une seule page, un projet doit être en mesure d’interpréter la structure du modèle qui représente la sémantique des données stockées pour une application dans le référentiel AEM. Pour atteindre cet objectif, deux bibliothèques indépendantes du framework sont fournies : `PageModelManager` et `ComponentMapping`.
 
@@ -67,7 +67,7 @@ Les composants de la SPA doivent être synchronisés avec le modèle de page et 
 
 ### Champs Meta {#meta-fields}
 
-Le modèle de page utilise l’outil d’exportation de modèle JSON, lui-même basé sur l’API [Sling Model](https://sling.apache.org/documentation/bundles/models.html). Les modèles Sling exportables exposent la liste de champs suivante afin de permettre aux bibliothèques sous-jacentes d’interpréter le modèle de données :
+Le modèle de page utilise l’exportateur de modèle JSON, lui-même basé sur la variable [Modèle Sling](https://sling.apache.org/documentation/bundles/models.html) API. Les modèles Sling exportables présentent la liste de champs suivante pour permettre aux bibliothèques sous-jacentes d’interpréter le modèle de données :
 
 * `:type` : type de ressource AEM (par défaut = type de ressource)
 * `:children` : enfants hiérarchiques de la ressource actuelle. Les enfants ne font pas partie du contenu interne de la ressource actuelle (on les trouve sur les éléments qui représentent une page)
@@ -175,7 +175,6 @@ Par exemple :
 >* `"aem-Grid-newComponent"` : normalise le composant pour la création de dispositions.
 >
 
-
 #### Mappage de composant {#component-mapping}
 
 La bibliothèque [`Component Mapping`](#componentmapping) sous-jacente et sa fonction `MapTo` peuvent être encapsulées et étendues afin de fournir les fonctionnalités relatives à la configuration d’édition fournie avec la classe de composants actuelle.
@@ -204,7 +203,7 @@ Dans l’implémentation ci-dessus, le composant de projet est étendu avec la f
 
 ```javascript
 /**
- * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data will be decorating the associated component
+ * Configuration object in charge of providing the necessary data expected by the page editor to initiate the authoring. The provided data is decorating the associated component
  *
  * @typedef {{}} EditConfig
  * @property {String} [dragDropName]       If defined, adds a specific class name enabling the drag and drop functionality

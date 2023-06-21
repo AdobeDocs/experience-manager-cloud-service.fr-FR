@@ -2,10 +2,10 @@
 title: Introduction à la gestion des certificats SSL
 description: Découvrez comment Cloud Manager vous fournit des outils en libre-service pour installer les certificats SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f69a26c6156c1f9038d612a00b16cac0e51e17ca
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 100%
+source-wordcount: '632'
+ht-degree: 79%
 
 ---
 
@@ -19,13 +19,13 @@ ht-degree: 100%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=fr" text="Affichage, mise à jour et remplacement d’un certificat SSL"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-ssl-certificates/managing-certificates.html?lang=fr" text="Vérification du statut d’un certificat SSL"
 
-Cloud Manager vous fournit des outils en libre-service pour installer et gérer des certificats SSL afin de sécuriser votre site pour les utilisateurs. Cloud Manager utilise un service Platform TLS pour gérer les certificats SSL et les clés privées détenues par les clients et généralement obtenues auprès d’autorités de certification tierces, telles que Let’s Encrypt.
+Cloud Manager vous fournit des outils en libre-service pour installer et gérer les certificats SSL afin que vous puissiez sécuriser votre site pour les utilisateurs. Cloud Manager utilise un service TLS de plateforme pour gérer les certificats SSL et les clés privées détenus par les clients et obtenus auprès d’autorités de certification tierces telles que Let’s Encrypt.
 
 ## Présentation des certificats {#certificates}
 
-Les entreprises utilisent des certificats SSL pour sécuriser leurs sites web et permettre à leurs clients de leur faire confiance. Pour utiliser le protocole SSL, un serveur web nécessite un certificat SSL.
+Les entreprises utilisent des certificats SSL pour sécuriser leurs sites web et permettre à leurs clients de leur faire confiance. Pour utiliser le protocole SSL, un serveur web nécessite l’utilisation d’un certificat SSL.
 
-Lorsqu’une entité demande un certificat à une autorité de certification, celle-ci effectue un processus de vérification. Ce processus peut aller de la vérification du contrôle des noms de domaine jusqu’à la collecte de documents d’immatriculation des sociétés et de contrats d’abonnés. Une fois les informations d’une entité vérifiées, l’autorité de certification signe la clé publique à l’aide de sa clé privée. Étant donné que la totalité des principales autorités de certification possèdent des certificats racine dans les navigateurs web, le certificat de l’entité est lié par une *chaîne de confiance* et le navigateur web le reconnaît comme un certificat approuvé.
+Lorsqu’une entité demande un certificat à une autorité de certification, celle-ci effectue un processus de vérification. Ce processus peut aller de la vérification du contrôle des noms de domaine jusqu’à la collecte de documents d’immatriculation des sociétés et de contrats d’abonnés. Une fois les informations d’une entité vérifiées, l’autorité de certification signe la clé publique à l’aide de sa clé privée. Étant donné que toutes les principales autorités de certification disposent de certificats racine dans les navigateurs web, le certificat de l’entité est lié via un *chaîne de confiance* et le navigateur web le reconnaîtra comme un certificat de confiance.
 
 >[!IMPORTANT]
 >
@@ -47,7 +47,7 @@ Cloud Manager respecte les options d’utilisation suivantes en matière de cert
 AEM as a Cloud Service ne prend en charge que les sites sécurisés `https`. 
 
 * Les clients disposant de plusieurs domaines personnalisés ne souhaitent pas télécharger un certificat à chaque fois qu’ils ajoutent un domaine.
-* Ces clients obtiendront un certificat comportant plusieurs domaines.
+* Ces clients bénéficient d’un seul certificat avec plusieurs domaines.
 
 ## Conditions requises {#requirements}
 

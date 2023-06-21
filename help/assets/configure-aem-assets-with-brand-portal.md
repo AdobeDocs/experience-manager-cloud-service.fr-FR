@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 42927eec458553121f70b74a54f0f26eb616a13e
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2530'
-ht-degree: 99%
+source-wordcount: '2529'
+ht-degree: 98%
 
 ---
 
@@ -61,7 +61,7 @@ Vous pouvez activer Brand Portal au moment de la création des environnements d
 >
 >Brand Portal doit être activé sur la même organisation IMS que l’instance Experience Manager Assets as a [!DNL Cloud Service].
 >
->Si vous disposez déjà d’une configuration cloud de Brand Portal ([configurée manuellement à l’aide d’Adobe Developer Console](#manual-configuration)) pour une organisation IMS (org1-existing) et que votre instance Experience Manager Assets as a [!DNL Cloud Service] est configurée pour une autre organisation IMS (org2-new), l’activation de Brand Portal à partir de Cloud Manager réinitialise l’organisation IMS de Brand Portal sur `org2-new`. Bien que la configuration manuelle du cloud sur `org1-existing` soit visible dans l’instance de création Experience Manager Assets, elle ne sera plus utilisée une fois Brand Portal activé à partir de Cloud Manager.
+>Si vous disposez déjà d’une configuration cloud de Brand Portal ([configurée manuellement à l’aide d’Adobe Developer Console](#manual-configuration)) pour une organisation IMS (org1-existing) et que votre instance Experience Manager Assets as a [!DNL Cloud Service] est configurée pour une autre organisation IMS (org2-new), l’activation de Brand Portal à partir de Cloud Manager réinitialise l’organisation IMS de Brand Portal sur `org2-new`. Bien que la configuration cloud configurée manuellement sur `org1-existing` est visible dans l’instance d’auteur Experience Manager Assets, mais ne sera plus utilisé après l’activation de Brand Portal à partir de Cloud Manager.
 >
 >Si la configuration cloud existante de Brand Portal et de l’instance Experience Manager Assets as a [!DNL Cloud Service] utilisent la même organisation IMS (org1), il vous suffit d’activer Brand Portal à partir de Cloud Manager.
 >
@@ -116,6 +116,7 @@ Suivez les étapes suivantes pour valider la connexion entre votre instance Expe
    * **processing-queue** : pour la distribution des ressources de Brand Portal.
 
    * **error-queue** : pour les ressources dont la distribution a échoué.
+
    >[!NOTE]
    >
    >Il est recommandé d’examiner les erreurs et d’effacer régulièrement la file d’attente **error-queue**.
@@ -339,7 +340,7 @@ Vous pouvez maintenant utiliser l’ID client (clé API), le secret client et la
 
 1. Navigate to **[!UICONTROL JWT]** tab, and copy the **[!UICONTROL JWT payload]**.
 
-   The API Key, Client Secret key, and JWT payload information will be used to create IMS account configuration.
+   The API Key, Client Secret key, and JWT payload information is used to create IMS account configuration.
 
 -->
 

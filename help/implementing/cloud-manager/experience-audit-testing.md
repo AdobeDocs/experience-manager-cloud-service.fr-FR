@@ -2,10 +2,10 @@
 title: Tests d’audit de l’expérience
 description: Découvrez comment l’audit de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation des moteurs de recherche.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: c8bfeda015962d3f327057a375b4edd3d80c6316
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 100%
+source-wordcount: '551'
+ht-degree: 96%
 
 ---
 
@@ -29,7 +29,7 @@ L’audit de l’expérience est une fonctionnalité disponible dans les pipelin
 
 L’audit de l’expérience dans Cloud Manager garantit que l’expérience de l’utilisateur final sur le site est de la plus haute qualité.
 
-Les résultats sont informatifs et permettent au responsable de déploiement de voir les scores et les différences existant entre les scores précédents et actuels. Ces informations sont utiles pour déterminer si une régression sera introduite avec le déploiement actuel.
+Les résultats sont informatifs et permettent au responsable de déploiement de voir les scores et les différences existant entre les scores précédents et actuels. Ces informations sont utiles pour déterminer si une régression a été introduite avec le déploiement actuel.
 
 Le contrôle de l’expérience est optimisé par Google Lighthouse, un outil open source de Google qui est activé dans tous les pipelines de production de Cloud Manager.
 

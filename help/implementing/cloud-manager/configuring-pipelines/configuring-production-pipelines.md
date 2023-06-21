@@ -3,10 +3,10 @@ title: Configuration des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 100%
+source-wordcount: '1513'
+ht-degree: 91%
 
 ---
 
@@ -51,7 +51,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
    **Comportement en cas d’échecs de mesure importants** - lors de la configuration ou de la modification du pipeline, le **responsable de déploiement** peut définir le comportement du pipeline lorsqu’un échec important est rencontré à l’un des points de contrôle qualité. Les options disponibles sont les suivantes :
 
    * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
-   * **Défaillance immédiate** - si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
+   * **Échec immédiat** - Si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
    * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s’agit essentiellement d’émuler un utilisateur approuvant manuellement chaque échec.
 
    ![Configuration du pipeline de production](/help/implementing/cloud-manager/assets/configure-pipeline/production-pipeline-configuration.png)
@@ -73,6 +73,7 @@ Pour terminer la configuration du pipeline de production de code front-end, proc
 1. Dans l’onglet **Code source**, vous devez définir les options suivantes.
 
    * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+
    >[!TIP]
    > 
    >Consultez le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
@@ -94,13 +95,14 @@ Un pipeline de code full stack déploie simultanément des versions de code fron
 
 >[!NOTE]
 >
->Si un pipeline de code full stack existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
+>Si un pipeline de code à pile complète existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
 
 Pour terminer la configuration du pipeline de production de code full stack, procédez comme suit.
 
 1. Dans l’onglet **Code source**, vous devez définir les options suivantes.
 
    * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+
    >[!TIP]
    > 
    >Consultez le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
@@ -124,18 +126,18 @@ Pour terminer la configuration du pipeline de production de code full stack, pro
 
    ![Définition d’un chemin pour le contrôle de l’expérience](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit3.png)
 
-1. Cliquez sur **Ajouter une page** et le chemin sera renseigné automatiquement avec l’adresse de votre environnement et ajouté à la table des chemins.
+1. Cliquez sur **Ajouter une page** et le chemin est renseigné automatiquement avec l’adresse de votre environnement et ajouté au tableau des chemins.
 
    ![Enregistrement du chemin d’accès dans la table](/help/implementing/cloud-manager/assets/configure-pipeline/add-prod-audit4.png)
 
 1. Continuez à ajouter des chemins selon vos besoins en répétant les deux étapes précédentes.
 
    * Vous pouvez ajouter 25 chemins au maximum.
-   * Si vous ne définissez aucun chemin, la page d’accueil du site sera incluse par défaut dans le contrôle de l’expérience.
+   * Si vous ne définissez aucun chemin, la page d’accueil du site est incluse par défaut dans le contrôle de l’expérience.
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
-Les chemins configurés pour le contrôle de l’expérience seront soumis au service et évalués en fonction des tests de performances, d’accessibilité, d’optimisation du moteur de recherche (SEO), de bonnes pratiques et de PWA (application web progressive) lors de l’exécution du pipeline. Pour plus d’informations, voir [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
+Les chemins configurés pour le contrôle de l’expérience sont soumis au service et évalués en fonction des tests de performances, d’accessibilité, d’optimisation du moteur de recherche (SEO), de bonnes pratiques et de PWA (application web progressive) lors de l’exécution du pipeline. Pour plus d’informations, voir [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 
@@ -148,6 +150,7 @@ Pour terminer la configuration du pipeline de production de code full stack, pro
 1. Dans l’onglet **Code source**, vous devez définir les options suivantes.
 
    * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+
    >[!TIP]
    > 
    >Consultez le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
@@ -174,7 +177,7 @@ Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](man
 
 Avec les pipelines front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut être accéléré.
 
-Consultez le document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus ainsi que certaines considérations à prendre en compte pour en tirer le meilleur parti.
+Reportez-vous au document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus, ainsi que quelques considérations à prendre en compte pour tirer pleinement parti de ce processus.
 
 ## Ignorer les packages du Dispatcher {#skip-dispatcher-packages}
 

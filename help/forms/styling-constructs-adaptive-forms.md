@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '2308'
-ht-degree: 80%
+ht-degree: 79%
 
 ---
 
@@ -24,7 +24,7 @@ Connaissances en matière de CSS et structure LESS.
 
 ## Éléments personnalisables {#what-can-be-customized}
 
-Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez tirer parti de ces classes pour appliquer un style aux divers composants d’un formulaire adaptatif. La mise en forme des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne fait pas partie de cet article. Utilisez ces éléments de style pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas mettre en forme des composants à l’aide de [éditeur de thèmes](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
+Cet article répertorie les classes CSS de formulaires adaptatifs accessibles au public. Vous pouvez utiliser ces classes pour mettre en forme différents composants d’un formulaire adaptatif. La mise en forme des composants de création, tels que les boîtes de dialogue et les barres d’état qui affichent des avertissements, ne fait pas partie de cet article. Utilisez ces éléments de style pour créer des styles (en utilisant CSS ou Less) uniquement lorsque vous ne pouvez pas mettre en forme des composants à l’aide de [éditeur de thèmes](https://helpx.adobe.com/fr/experience-manager/6-3/forms/using/themes.html).
 
 ## Personnalisation des styles dans les formulaires adaptatifs {#customizing-styles-in-adaptive-forms}
 

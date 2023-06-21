@@ -1,15 +1,15 @@
 ---
-title: Notes de mise à jour de la version 2022.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
-description: Notes de mise à jour de la version 2022.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
+title: Notes de mise à jour de la version 2022.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
+description: Notes de mise à jour de la version 2022.7.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: b339ab48-e836-4589-a573-9c50917b9280
-source-git-commit: 599f924465552b2ef43827da8e139c239e47baed
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '955'
-ht-degree: 27%
+source-wordcount: '953'
+ht-degree: 29%
 
 ---
 
-# Notes de mise à jour de la version 202278.0 [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
+# Notes de mise à jour 202278.0 pour [!DNL Adobe Experience Manager] as a Cloud Service {#release-notes}
 
 La section suivante décrit les notes de mise à jour des fonctionnalités de la version 2022.7.0 de [!DNL Experience Manager] as a Cloud Service.
 
@@ -39,9 +39,9 @@ Regardez la vidéo Aperçu de la version de juillet 2022 pour un résumé des fo
 
 * Le [Console de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) prend désormais en charge [raccourcis clavier](/help/sites-cloud/administering/content-fragments/content-fragments-console-keyboard-shortcuts.md).
 
-* AEM en tant que Cloud Service [diffusion d’images optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html) permet d’améliorer considérablement la vitesse de page en fournissant des formats tels que WebP. Ce nouveau service offre également des options de redimensionnement et de transformation d’image plus flexibles. Toutes les versions de [Composant d’image principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr) vous permettent d’exploiter ce service et de diffuser des images sous forme WebP en cliquant sur une option de la stratégie du composant image.
+* AEM en tant que Cloud Service [diffusion d’images optimisée pour le web](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/web-optimized-image-delivery.html?lang=fr) permet d’améliorer considérablement la vitesse de page en fournissant des formats tels que WebP. Ce nouveau service offre également des options de redimensionnement et de transformation d’image plus flexibles. Toutes les versions de [Composant d’image principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr) permettre d’utiliser ce service et de diffuser des images sous forme WebP en cliquant sur une option de la stratégie du composant image.
 
-* AEM activités de personnalisation peuvent désormais exploiter des fragments d’expérience au lieu de nos offres héritées. Cette fonctionnalité :
+* Les activités de personnalisation AEM peuvent désormais utiliser des fragments d’expérience au lieu de nos offres héritées. Cette fonctionnalité :
    * active un chemin de migration dans lequel AEM contenu promouvrait des offres de fragments d’expérience plutôt que des offres de bibliothèque héritées afin de fournir un contenu stylisé de manière appropriée et conforme à la personnalisation à grande échelle.
    * empêche les auteurs de contenu de diffuser accidentellement du contenu non stylisé sur leur site.
    * permet de convertir le mode de ciblage de n’importe quel composant en fragment d’expérience (types JSON et HTML) qui utilise des modèles modifiables.
@@ -102,7 +102,7 @@ Vous pouvez maintenant configurer Adobe Experience Manager Assets sur [restreind
 ### Nouveautés {#what-is-new-foundation}
 
 * Le [Explorateur de référentiels](/help/implementing/developing/tools/repository-browser.md) dispose désormais d’un champ d’entrée de chemin d’accès, ce qui permet de passer directement à un dossier spécifique dans la hiérarchie du référentiel.
-* Sling Content Distribution (SCD) prend désormais en charge une action d’&quot;invalidation&quot; explicite afin d’invalider le contenu sans que ce contenu soit publié. Reportez-vous à la section [Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) pour plus d’informations.
+* Sling Content Distribution (SCD) prend désormais en charge une action &quot;d’invalidation&quot; explicite pour invalider le contenu sans que ce contenu soit publié. Reportez-vous à la section [Mise en cache dans AEM as a Cloud Service](/help/implementing/dispatcher/caching.md#explicit-invalidation) pour plus d’informations.
 * mod_macro est désormais disponible dans AEM as a Cloud Service. Voir [ce tableau](/help/implementing/dispatcher/disp-overview.md) pour obtenir la liste des modules Apache pris en charge.
 
 ### AEM Améliorations apportées aux outils du Dispatcher SDK as a Cloud Service {#dispatcher-tools-enhancements}

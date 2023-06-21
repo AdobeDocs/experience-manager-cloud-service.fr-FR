@@ -2,10 +2,10 @@
 title: Pages d’erreur personnalisées
 description: AEM s’accompagne d’un outil standard destiné à la gestion des erreurs HTTP, qui peut être personnalisé.
 exl-id: b74c65d1-8ef5-4ad4-8255-8187f3b1d84c
-source-git-commit: b20d40a9f5f4bda51c67cda1164d0c4d74943aa1
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '575'
-ht-degree: 92%
+source-wordcount: '572'
+ht-degree: 84%
 
 ---
 
@@ -29,7 +29,7 @@ Pour répondre aux erreurs, AEM fournit un script `404.jsp` sous `/libs/sling/se
 
 ## Méthode de personnalisation des pages affichées par le gestionnaire d’erreurs {#how-to-customize-pages-shown-by-the-error-handler}
 
-Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Vous utiliserez pour cela le [mécanisme d’incrustation standard d’AEM ](/help/implementing/developing/introduction/overlays.md) afin que vos pages personnalisées soient créées sous `/apps` et recouvrent les pages par défaut sous `/libs`.
+Vous pouvez développer vos propres scripts afin de personnaliser les pages affichées par le gestionnaire d’erreurs lors de la détection d’une erreur. Pour ce faire, utilisez [Mécanisme de superposition standard AEM](/help/implementing/developing/introduction/overlays.md) afin que vos pages personnalisées soient créées sous `/apps` et superposez les pages par défaut qui se trouvent sous `/libs`.
 
 1. Dans le référentiel, copiez le ou les scripts par défaut :
 
@@ -70,7 +70,7 @@ Pour gérer les erreurs de type 500, le nom de fichier du script de gestionnaire
 
 >[!NOTE]
 >
->Dans AEM as a Cloud Service, le réseau CDN diffuse une page d’erreur générique lorsqu’une erreur 5XX est reçue du serveur principal. Pour permettre au serveur principal de transmettre la réponse, vous devez ajouter l’en-tête suivant à la réponse : `x-aem-error-pass: true`.
+>Dans AEM as a Cloud Service, le réseau CDN diffuse une page d’erreur générique lorsqu’une erreur 5XX est reçue du serveur principal. Pour permettre au serveur principal de transmettre la réponse, vous devez ajouter l’en-tête suivant à la réponse : `x-aem-error-pass: true`.
 >Cela ne fonctionne que pour les réponses provenant d’AEM ou de la couche Apache/Dispatcher. D’autres erreurs inattendues provenant des couches d’infrastructure intermédiaires afficheront toujours la page d’erreur générique.
 
 >[!CAUTION]

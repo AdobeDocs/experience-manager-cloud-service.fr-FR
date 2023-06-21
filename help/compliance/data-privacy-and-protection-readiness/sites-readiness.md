@@ -2,10 +2,10 @@
 title: Règlement sur la protection et la confidentialité des données – Niveau de préparation d’Adobe Experience Manager as a Cloud Service Sites
 description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Sites relative aux différents règlements sur la protection et la confidentialité des données ; notamment le Règlement général sur la protection des données (RGPD) de l’UE et la Loi sur la protection de la vie privée des consommateurs de Californie, ainsi que la manière de se conformer à ces règlements lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1031'
-ht-degree: 63%
+source-wordcount: '1028'
+ht-degree: 62%
 
 ---
 
@@ -56,15 +56,16 @@ Pour l’exclusion :
 
 1. Sélectionnez le lien référencé ; actuellement intitulé **ici**.
 
-1. Les informations suivantes s’affichent, ainsi que les options d’exclusion ou d’inclusion :
+1. Les détails suivants sont présentés, ainsi que les options de désinscription ou d’inscription :
 
    * Pour exclure l’agrégation et l’analyse des données relatives à votre visite sur ce site, il est nécessaire d’installer un cookie sur votre navigateur. Ce cookie identifie que vous avez choisi l’exclusion.
 
-      Si vous supprimez le cookie d’exclusion, ou si vous changez d’ordinateur ou de navigateur web, vous devez procéder à nouveau à l’exclusion.
+     Si vous supprimez le cookie d’exclusion, ou si vous changez d’ordinateur ou de navigateur web, vous devez procéder à nouveau à l’exclusion.
 
-      Exclusion : excluez-moi de l’agrégation et de l’analyse des sessions visiteur (installez le cookie d’exclusion `amcglobal.sc.omtrdc.net`) – Cliquez ici.
+     Exclusion : excluez-moi de l’agrégation et de l’analyse des sessions visiteur (installez le cookie d’exclusion `amcglobal.sc.omtrdc.net`) – Cliquez ici.
 
-      Inclusion : incluez-moi dans l’agrégation et l’analyse des sessions visiteur (n’installez pas le cookie d’exclusion `amcglobal.sc.omtrdc.net`) – Cliquez ici.
+     Inclusion : incluez-moi dans l’agrégation et l’analyse des sessions visiteur (n’installez pas le cookie d’exclusion `amcglobal.sc.omtrdc.net`) – Cliquez ici.
+
    Suivez les étapes ci-dessus pour accéder aux liens réels.
 
    >[!NOTE]
@@ -75,13 +76,13 @@ Pour l’exclusion :
 
 AEM Sites comprend une intégration facultative à Analytics Foundation qui utilise la fonctionnalité incluse dans le service On-demand d’Adobe Analytics.
 
-Pour plus d’informations sur la gestion des requêtes RGPD des personnes titulaires de ces données liées à Adobe Analytics, voir [Adobe Analytics et la confidentialité des données](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=fr).
+Pour plus d’informations sur la gestion des requêtes des titulaires de données liées à Adobe Analytics, voir [Adobe Analytics et la confidentialité des données](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=fr).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites comprend une intégration facultative à Personalization Foundation by Target utilisant la fonctionnalité incluse dans le service On-demand Adobe Target.
 
-Pour plus d’informations sur la gestion des requêtes des personnes titulaires de ces données liées à Adobe Target, consultez [Adobe Target : Confidentialité et Règlement général sur la protection des données (RGPD)](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Pour plus d’informations sur la gestion des requêtes des titulaires de données liées à Adobe Target, voir [Adobe Target : Confidentialité et Règlement général sur la protection des données (RGPD)](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
 
 ## ContextHub {#contexthub}
 
@@ -108,22 +109,22 @@ Ces instructions implémentent l’inclusion comme valeur par défaut. Ainsi, un
 
 * Si un visiteur du site accepte les conditions générales du site, le cookie d’exclusion ContextHub doit être supprimé :
 
-   ```
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   ```
+  ```
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  ```
 
 * Si un visiteur du site n’accepte pas les conditions générales du site, le cookie d’exclusion ContextHub doit être défini :
 
-   ```
-   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
-   ```
+  ```
+  ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
+  ```
 
 * Pour vérifier si ContextHub s’exécute en mode d’exclusion, l’appel suivant doit être effectué dans la console du navigateur :
 
-   ```
-   var isOptedOut = ContextHub.isOptedOut(true) === true;
-   // if isOptedOut is true, ContextHub is running in opt-out mode
-   ```
+  ```
+  var isOptedOut = ContextHub.isOptedOut(true) === true;
+  // if isOptedOut is true, ContextHub is running in opt-out mode
+  ```
 
 ### Aperçu de la persistance de ContextHub {#previewing-persistence-of-contexthub}
 
@@ -138,6 +139,7 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
          * Cookies > (site web) > SessionPersistence
+
    * Firefox :
 
       * Ouvrez Outils de développement > Stockage :
@@ -145,6 +147,7 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
          * Cookies > (site web) > SessionPersistence
+
    * Safari :
 
       * Ouvrez Préférences > Avancé > Afficher le menu Développer dans la barre de menus.
@@ -153,6 +156,7 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
          * Console > Stockage > Stockage local > (site web) > ContextHubPersistence
          * Console > Stockage > Stockage de session > (site web) > ContextHubPersistence
          * Console > Stockage > Cookies > (site web) > ContextHubPersistence
+
    * Internet Explorer :
 
       * Ouvrez Outils de développement > Console :
@@ -160,9 +164,6 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
          * `localStorage.getItem('ContextHubPersistence')`
          * `sessionStorage.getItem('ContextHubPersistence')`
          * `document.cookie`
-
-
-
 
 * Utilisez l’API ContextHub dans la console du navigateur :
 
@@ -173,8 +174,7 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      Le magasin ContextHub définit le calque de persistance à utiliser. De ce fait, pour afficher l’état actuel de la persistance, tous les calques doivent être vérifiés.
-
+     Le magasin ContextHub définit le calque de persistance utilisé. De ce fait, pour afficher l’état actuel de la persistance, tous les calques doivent être vérifiés.
 
 Par exemple, pour afficher les données stockées dans localStorage :
 
@@ -187,12 +187,12 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
       * Stockage local > (site web) > ContextHubPersistence
       * Stockage de session > (site web) > ContextHubPersistence
       * Cookies > (site web) > SessionPersistence
+
    * Firefox - ouvrez Outils de développement > Stockage :
 
       * Stockage local > (site web) > ContextHubPersistence
       * Stockage de session > (site web) > ContextHubPersistence
       * Cookies > (site web) > SessionPersistence
-
 
 * Utilisez l’API ContextHub dans la console du navigateur :
 
@@ -203,8 +203,7 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
       * `ContextHub.Utils.Persistence.Modes.COOKIE`
       * `ContextHub.Utils.Persistence.Modes.WINDOW`
 
-      Le magasin ContextHub définit le calque de persistance à utiliser. De ce fait, pour afficher l’état actuel de la persistance, tous les calques doivent être vérifiés.
-
+     Le magasin ContextHub définit le calque de persistance utilisé. De ce fait, pour afficher l’état actuel de la persistance, tous les calques doivent être vérifiés.
 
 Par exemple, pour afficher les données stockées dans localStorage :
 
@@ -219,27 +218,27 @@ Pour effacer la persistance ContextHub :
 
 * Pour effacer la persistance des magasins actuellement chargés :
 
-   ```
-   // in order to be able to fully access persistence layer, Opt-Out must be turned off
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
-   // following call asks all currently loaded stores to clear their data
-   ContextHub.cleanAllStores();
-   
-   // following call asks all currently loaded stores to set back default values (provided in their configs)
-   ContextHub.resetAllStores();
-   ```
+  ```
+  // to be able to fully access persistence layer, Opt-Out must be turned off
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  
+  // following call asks all currently loaded stores to clear their data
+  ContextHub.cleanAllStores();
+  
+  // following call asks all currently loaded stores to set back default values (provided in their configs)
+  ContextHub.resetAllStores();
+  ```
 
 * Pour effacer un calque de persistance spécifique ; par exemple, sessionStorage :
 
-   ```
-   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
-   storage.setItem('/store', null);
-   storage.setItem('/_', null);
-   
-   // to confirm that nothing is stored:
-   console.log(storage.getTree());
-   ```
+  ```
+  var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
+  storage.setItem('/store', null);
+  storage.setItem('/_', null);
+  
+  // to confirm that nothing is stored:
+  console.log(storage.getTree());
+  ```
 
 * Pour effacer tous les calques de persistance ContextHub, le code approprié doit être appelé pour tous les calques :
 

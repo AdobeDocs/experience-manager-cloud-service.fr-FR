@@ -2,10 +2,10 @@
 title: Package de structure du référentiel de projet AEM
 description: Les projets Maven Adobe Experience Manager as a Cloud Service nécessitent une définition de sous-package de structure de référentiel dont le seul objectif est de définir les racines du référentiel JCR dans lesquelles les sous-packages de code du projet sont déployés.
 exl-id: dec08410-d109-493d-bf9d-90e5556d18f0
-source-git-commit: cc6565121a76f70b958aa9050485e0553371f3a3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 100%
+source-wordcount: '525'
+ht-degree: 96%
 
 ---
 
@@ -69,12 +69,12 @@ Veillez à ajouter ce nouveau sous-projet Maven à la liste des projets parents 
                 <artifactId>filevault-package-maven-plugin</artifactId>
                 <extensions>true</extensions>
                 <properties>
-                    <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                    <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                     <cloudManagerTarget>none</cloudManagerTarget>
                 </properties>
                 <configuration>
                     <properties>
-                        <!-- Set Cloud Manager Target to none, else this package will be deployed and remove all defined filter roots -->
+                        <!-- Set Cloud Manager Target to none, else this package is deployed and remove all defined filter roots -->
                         <cloudManagerTarget>none</cloudManagerTarget>
                     </properties>
                     <filters>
@@ -171,7 +171,7 @@ Dans ce cas :
 
 ## Erreurs et débogage
 
-Si les packages de structure de référentiel ne sont pas correctement configurés, une erreur est signalée lors de la création du projet Maven :
+Si les packages de structure de référentiel ne sont pas correctement configurés, une erreur est signalée lors de la création de Maven :
 
 ```
 1 error(s) detected during dependency analysis.

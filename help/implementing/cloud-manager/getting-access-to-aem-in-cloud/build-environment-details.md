@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: 3348662e3da4dad75b851d7af7251d456321a3ec
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 100%
+source-wordcount: '994'
+ht-degree: 95%
 
 ---
 
@@ -94,7 +94,7 @@ Ce tableau fait référence aux numéros de version des produits. Les numéros d
 
 >[!NOTE]
 >
->À compter d’avril 2022, le JDK Oracle sera le JDK par défaut pour le développement et le fonctionnement des applications AEM. Le processus de génération de Cloud Manager passe automatiquement à l’utilisation du JDK Oracle, même si une autre option est explicitement sélectionnée dans le toolchain Maven. Pour plus d’informations, reportez-vous aux notes de mise à jour d’avril une fois publiées.
+>À compter d’avril 2022, le JDK Oracle devient le JDK par défaut pour le développement et le fonctionnement des applications AEM. Le processus de création de Cloud Manager passe automatiquement à l’utilisation du JDK Oracle, même si une autre option est explicitement sélectionnée dans la chaîne d’outils Maven. Consultez les notes de mise à jour d’avril 2022.
 
 #### Autre version du JDK d’exécution Maven {#alternate-maven-jdk-version}
 

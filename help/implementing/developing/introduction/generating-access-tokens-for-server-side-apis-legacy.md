@@ -3,10 +3,10 @@ title: Génération de jetons d’accès pour les API côté serveur (héritées
 description: Découvrez comment faciliter la communication entre un serveur tiers et AEM as a Cloud Service en générant un jeton JWT sécurisé
 hidefromtoc: true
 exl-id: 6561870c-cbfe-40ef-9efc-ea75c88c4ed7
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 55%
+source-wordcount: '1359'
+ht-degree: 54%
 
 ---
 
@@ -122,6 +122,7 @@ Les développeurs doivent tester à l’aide d’une instance de développement 
 Pour plus d’informations sur les autorisations requises pour utiliser la Developer Console dans AEM as a Cloud Service, consultez la [documentation destinée aux développeurs](/help/implementing/developing/introduction/development-guidelines.md#crxde-lite-and-developer-console).
 
 >[!NOTE]
+>
 Le jeton d’accès de développement local est valide pendant 24 heures au maximum, après quoi il doit être régénéré selon la même méthode.
 
 Les développeurs peuvent utiliser ce jeton pour émettre des appels depuis leur application de test non AEM vers l’environnement AEM as a Cloud Service. En règle générale, le développeur utilise ce jeton avec l’application non AEM sur son propre ordinateur portable. En outre, AEM as a Cloud Service est généralement un environnement distinct de la production.
@@ -147,9 +148,10 @@ Par défaut, les informations d’identification sur AEM as a Cloud Service expi
 
 ![Actualisation des informations d’identification](assets/credential-refresh.png)
 
-En appuyant sur ce bouton, vous générez un ensemble d’informations d’identification. Vous pouvez mettre à jour votre stockage secret avec les nouvelles informations d’identification et vérifier qu’elles fonctionnent normalement.
+Après avoir appuyé sur le bouton, un nouvel ensemble d’informations d’identification est généré. Vous pouvez mettre à jour votre stockage secret avec les nouvelles informations d’identification et vérifier qu’elles fonctionnent normalement.
 
 >[!NOTE]
+>
 Après avoir cliqué sur le bouton **Refresh Service Credentials** (Actualiser les informations d’identification du service), les anciennes informations d’identification restent enregistrées jusqu’à leur expiration, mais seul le jeu le plus récent est visible à tout moment à partir de la Developer Console.
 
 ## Révocation des informations d’identification du service {#service-credentials-revocation}

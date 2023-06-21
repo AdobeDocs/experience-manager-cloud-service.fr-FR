@@ -9,11 +9,11 @@ audience: administrator
 feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
-exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7,363cb465-c50a-422f-b149-b3f41c2ebc0f
-source-git-commit: 9c25d9991b41a5a714df3f07e84946162e5495c0
+exl-id: 314494c4-21a9-4494-9ecb-498c766cfde7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2211'
-ht-degree: 100%
+source-wordcount: '2197'
+ht-degree: 95%
 
 ---
 
@@ -49,11 +49,11 @@ Celui-ci configure les URL des pages de produits et prend en charge les options 
 
 Dans le cas du [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) :
 
-* `{{page}}` sera remplacé par `/content/venia/us/en/products/product-page`
-* `{{sku}}` sera remplacé par le SKU du produit, par exemple `VP09`
-* `{{url_key}}` sera remplacé par la propriété `url_key` du produit, par exemple `lenora-crochet-shorts`
-* `{{url_path}}` sera remplacé par le `url_path` du produit, par exemple `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` sera remplacé par la variante actuellement sélectionnée, par exemple `VP09-KH-S`
+* `{{page}}` est remplacé par `/content/venia/us/en/products/product-page`
+* `{{sku}}` est remplacé par le SKU du produit, par exemple : `VP09`
+* `{{url_key}}` est remplacé par le `url_key` par exemple, `lenora-crochet-shorts`
+* `{{url_path}}` est remplacé par le `url_path`, par exemple : `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` est remplacé par la variante actuellement sélectionnée, par exemple : `VP09-KH-S`
 
 Depuis que `url_path` a été déprécié, les formats d’URL de produit prédéfinis utilisent les `url_rewrites` d’un produit et choisissent celui qui contient le plus de segments de chemin comme alternative si `url_path` n’est pas disponible.
 
@@ -68,9 +68,9 @@ Celui-ci configure les URL des pages de listes de catégories ou de produits et 
 
 Dans le cas du [magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) :
 
-* `{{page}}` sera remplacé par `/content/venia/us/en/products/category-page`
-* `{{url_key}}` sera remplacé par la propriété `url_key` de la catégorie.
-* `{{url_path}}` sera remplacé par le `url_path` de la catégorie
+* `{{page}}` est remplacé par `/content/venia/us/en/products/category-page`
+* `{{url_key}}` est remplacé par le `url_key` property
+* `{{url_path}}` est remplacé par le `url_path`
 
 Avec les données d’exemple ci-dessus, une URL de page de catégorie formatée à l’aide du format d’URL par défaut ressemblera à `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
@@ -205,7 +205,7 @@ Les implémentations de format dʼURL personnalisé doivent implémenter une pai
 
 ### Combinaison avec des mappages Sling {#sling-mapping}
 
-En plus du `UrlProvider`, il est également possible de configurer des [mappages Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) afin de réécrire et de traiter les URL. Le projet AEM Archetype fournit également [un exemple de configuration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) afin de configurer des mappages Sling pour le port 4503 (publication) et 80 (Dispatcher).
+En plus de la variable `UrlProvider`, il est également possible de configurer [Mappages Sling](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) pour réécrire et traiter les URL. Le projet AEM Archetype fournit également [un exemple de configuration](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) afin de configurer des mappages Sling pour le port 4503 (publication) et 80 (Dispatcher).
 
 ### Combinaison avec AEM Dispatcher {#dispatcher}
 
@@ -229,7 +229,7 @@ _**Compromis entre la longueur de lʼURL et les informations codées.**_
 
 En fonction de la taille du catalogue, en particulier de la taille et de la profondeur de lʼarbre des catégories, il peut ne pas être raisonnable dʼencoder lʼ`url_path` complet des catégories dans lʼadresse URL. Dans ce cas, la longueur de lʼURL peut être réduite uniquement en incluant la `url_key` de la catégorie à la place. Cela permet de prendre en charge presque toutes les fonctionnalités disponibles lors de l’utilisation du `url_path` de la catégorie.
 
-En outre, utilisez les [Mappages Sling](#sling-mapping) afin de combiner le code SKU avec la `url_key` du produit. Dans la plupart des systèmes de commerce sur Internet, le code SKU respecte un format particulier. La séparation du code SKU de la `url_key` pour les requêtes entrantes ne devrait pas présenter de problème. Dans cette optique, il devrait être possible de réécrire lʼadresse URL dʼune page produit en `/p/{{category}}/{{sku}}-{{url_key}}.html`, et lʼURL dʼune catégorie en `/c/{{url_key}}.html`, respectivement. Les préfixes `/p` et `/c` sont toujours nécessaires pour distinguer les pages de produit et de catégorie des autres pages de contenu.
+En outre, utilisez [Mappages Sling](#sling-mapping) pour combiner le SKU avec le produit `url_key`. Dans la plupart des systèmes de commerce sur Internet, le code SKU respecte un format particulier. La séparation du code SKU de la `url_key` pour les requêtes entrantes ne devrait pas présenter de problème. Dans cette optique, il devrait être possible de réécrire lʼadresse URL dʼune page produit en `/p/{{category}}/{{sku}}-{{url_key}}.html`, et lʼURL dʼune catégorie en `/c/{{url_key}}.html`, respectivement. Le `/p` et `/c` Un préfixe est toujours nécessaire pour distinguer les pages de produits et de catégories des autres pages de contenu.
 
 ### Migrer vers un nouveau format d’URL {#migrate-url-formats}
 

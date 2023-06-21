@@ -2,9 +2,9 @@
 title: Exécution de l’outil de transfert de contenu sur une instance de publication
 description: Exécution de l’outil de transfert de contenu sur une instance de publication
 exl-id: 01faab94-a939-4004-b094-e9eb8f67b96e
-source-git-commit: 1fb4d0f2a3b3f9a27f5ab1228ec2d419149e0764
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '252'
 ht-degree: 100%
 
 ---
@@ -28,8 +28,7 @@ Suivez l’approche recommandée, comme décrit ci-dessous :
 
 * Lors de l’ingestion pour la publication, le niveau de publication ne sera pas réduit (contrairement à l’auteur).
 
-   >[!IMPORTANT]
-   >Par mesure de précaution, évitez les opérations d’écriture initiées par l’utilisateur, telles que les suivantes :
-   > * La distribution de contenu de la création dans AEM as a Cloud Service à la publication dans cet environnement
-   > * La synchronisation des utilisateurs entre les instances de publication
-
+  >[!IMPORTANT]
+  >Par mesure de précaution, évitez les opérations d’écriture initiées par l’utilisateur, telles que les suivantes :
+  > * La distribution de contenu de la création dans AEM as a Cloud Service à la publication dans cet environnement
+  > * La synchronisation des utilisateurs entre les instances de publication

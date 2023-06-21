@@ -3,10 +3,10 @@ title: Gérer les points d’entrée GraphQL dans AEM
 description: Découvrez comment gérer les points d’entrée GraphQL dans Adobe Experience Manager as a Cloud Service pour la diffusion de contenu découplé.
 feature: Content Fragments,GraphQL API
 exl-id: f7164ae3-4074-4db7-8c43-a79cc2ef00b1
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 100%
+source-wordcount: '514'
+ht-degree: 97%
 
 ---
 
@@ -33,7 +33,7 @@ Dans AEM, il existe deux types de points d’entrée :
 >
 >L’éditeur de fragment de contenu peut permettre à un fragment de contenu d’une configuration Sites de référencer un fragment de contenu d’une autre configuration Sites (à l’aide de stratégies).
 >
->Dans ce cas, tout le contenu ne peut pas être récupéré à l’aide d’un point d’entrée spécifique à la configuration Sites.
+>Dans ce cas, tout le contenu ne peut pas être récupéré à l’aide d’un point de terminaison spécifique à la configuration Sites.
 >
 >L’auteur du contenu doit contrôler ce scénario ; par exemple, il peut être utile de placer des modèles de fragment de contenu partagés sous la configuration de sites globaux.
 
@@ -71,7 +71,6 @@ Pour activer le point d’entrée correspondant :
    >L’avertissement suivant s’affiche dans la boîte de dialogue :
    >
    >* *Les points d’entrée GraphQL peuvent présenter des problèmes de sécurité et de performance des données s’ils ne sont pas gérés de manière adaptée. Veillez à définir les autorisations appropriées après la création d’un point d’entrée.*
-
 
 1. Confirmez avec **Créer**.
 1. La boîte de dialogue **Étapes suivantes** fournit un lien direct vers la console de sécurité afin que vous puissiez vous assurer que le nouveau point d’entrée dispose des autorisations appropriées.

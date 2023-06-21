@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.2.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.2.0. »
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1237'
-ht-degree: 100%
+source-wordcount: '1234'
+ht-degree: 95%
 
 ---
 
@@ -57,7 +57,7 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 * [!DNL Experience Manager Assets] as a [!DNL Cloud Service] est autorisé à avoir une instance [!DNL Brand Portal] préconfigurée. L’utilisateur de [!DNL Cloud Manager] peut activer [!DNL Brand Portal] dans [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Consultez [Activation de Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=fr).
 
-* Les entreprises peuvent désormais approvisionner des ressources à l’aide de [!DNL Brand Portal]. La fonction d’approvisionnement des ressources s’appuie sur [!DNL Brand Portal] pour aider les clients à s’engager auprès des utilisateurs en agence pour approvisionner les ressources nécessaires à de nouvelles campagnes marketing, des séances de photos et des projets. Voir [Approvisionnement des ressources dans [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr).
+* Les entreprises peuvent désormais approvisionner des ressources à l’aide de [!DNL Brand Portal]. La fonctionnalité d’approvisionnement des ressources utilise les [!DNL Brand Portal] pour aider les clients à interagir avec les utilisateurs de l’agence afin de sources de ressources pour de nouvelles campagnes marketing, séances photo et projets. Voir [Approvisionnement des ressources dans [!DNL Brand Portal]](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=fr).
 
 * Le rapport d’utilisation de [!DNL Brand Portal] n’affiche désormais que les utilisateurs actifs. Les utilisateurs inactifs ne s’affichent pas. Les utilisateurs principaux sont ceux dont le compte est affecté à un profil de produit dans l’[!DNL Admin Console]. Voir la section relative aux rapports [[!DNL Brand Portal] ](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/admin-tools/brand-portal-reports.html?lang=fr).
 
@@ -101,7 +101,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.2.0 est
 
 * L’interface utilisateur de Cloud Manager informe un utilisateur qui ne pourrait pas temporairement ajouter/mettre à jour le nom de domaine, car l’environnement associé dispose soit d’un pipeline en cours d’exécution qui lui est associé, soit une étape d’approbation en attente.
 
-* Les propriétés définies dans les fichiers `pom.xml` clients précédés d’un préfixe sonar seront désormais supprimées dynamiquement afin d’éviter les échecs d’analyse de la génération et de la qualité.
+* Propriétés définies dans le client `pom.xml` les fichiers dotés du préfixe sonar sont désormais supprimés dynamiquement afin d’éviter les échecs d’analyse de génération et de qualité.
 
 * L’interface utilisateur de Cloud Manager informe un utilisateur qui ne peut pas temporairement sélectionner un certificat SSL s’il est utilisé par un nom de domaine en cours de déploiement.
 
@@ -127,7 +127,7 @@ La date de publication de l’outil de transfert de contenu version v1.2.4 est 
 
 ### Correctifs {#bug-fixes-ctt}
 
-* Lors du mappage de plusieurs utilisateurs, les ID d’IMS de certains utilisateurs étaient incorrectement mappés. Ce problème a été résolu.
+* Lors du mappage de plusieurs utilisateurs, les identifiants IMS de certains utilisateurs étaient incorrectement mappés. Ce problème a été résolu.
 
 ### Date de publication {#release-date-ctt-feb}
 

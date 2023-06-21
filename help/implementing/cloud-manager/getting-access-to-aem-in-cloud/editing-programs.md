@@ -2,10 +2,10 @@
 title: Modification de programmes
 description: Découvrez comment modifier vos programmes de production et Sandbox pour ajuster leurs options après les avoir créés.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '525'
-ht-degree: 98%
+source-wordcount: '524'
+ht-degree: 92%
 
 ---
 
@@ -59,7 +59,7 @@ Pour modifier un programme, procédez comme suit.
 
 Chaque fois qu’un programme est modifié, y compris par l’ajout ou la suppression d’une solution ou d’un module complémentaire, ces modifications prennent effet après le prochain déploiement.
 
-Si la sécurité renforcée de votre programme de production a été activée, un onglet supplémentaire **Sécurité renforcée** est disponible dans la fenêtre **Modifier le programme** pour confirmer que la fonctionnalité est bien activée pour ce programme.
+Si la sécurité de votre programme de production a été améliorée, une **Sécurité renforcée** est disponible dans l’onglet **Modifier le programme** pour confirmer que la fonctionnalité est principale pour le programme.
 
 ![Sécurité renforcée activée pour un programme.](assets/edit-program-enhanced.png)
 

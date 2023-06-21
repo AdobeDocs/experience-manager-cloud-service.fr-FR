@@ -3,10 +3,10 @@ title: Comment connecter une base de données à [!DNL AEM Forms] as a Cloud Se
 seo-title: AEM Forms Data Integration
 description: Vous pouvez récupérer des données et les enregistrer dans les services web RESTful, les services web SOAP et les services OData depuis [!DNL AEM Forms] as a Cloud Service. Le service fournit un outil dédié pour récupérer, tester, valider et envoyer des données à divers types de sources de données.
 exl-id: 9d146275-de0a-4861-b060-d205ed6305f3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '557'
-ht-degree: 74%
+ht-degree: 69%
 
 ---
 
@@ -40,7 +40,7 @@ Une fois que vous avez créé un modèle de données de formulaire, vous pouvez 
 
 ## Prise en main de l’intégration de données {#get-started-with-data-integration}
 
-La première étape de l’implémentation de l’intégration de données consiste à identifier et à configurer les sources de données qui stockent les informations que vous souhaitez exploiter dans les formulaires adaptatifs et les cas d’utilisation de communications interactives. Ensuite, vous créez un modèle de données de formulaire qui utilise un objet, des propriétés et des services de modèle de données provenant d’une ou de plusieurs sources de données. Vous pouvez créer des formulaires adaptatifs et des communications interactives basés sur un modèle de données de formulaire dans lequel les champs de formulaire adaptatif ou les espaces réservés dans les communications interactives sont liés aux propriétés de source de données respectives.
+La première étape de l’implémentation de l’intégration de données consiste à identifier et configurer les sources de données qui stockent les informations que vous souhaitez utiliser dans les cas d’utilisation de Forms adaptatif et des communications interactives. Ensuite, vous créez un modèle de données de formulaire qui utilise un objet, des propriétés et des services de modèle de données provenant d’une ou de plusieurs sources de données. Vous pouvez créer des formulaires adaptatifs et des communications interactives basés sur un modèle de données de formulaire dans lequel les champs de formulaire adaptatif ou les espaces réservés dans les communications interactives sont liés aux propriétés de source de données respectives.
 
 [!DNL AEM Forms] vous permet également de créer un modèle de données de formulaire indépendant des sources de données et d’associer ou de lier des objets et des propriétés de modèle de données dans le modèle de données de formulaire à la source de données ultérieurement. Cela élimine toute dépendance aux sources de données lorsque vous travaillez sur un modèle de données de formulaire.
 

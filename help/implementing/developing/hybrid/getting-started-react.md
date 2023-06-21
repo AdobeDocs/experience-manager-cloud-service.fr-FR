@@ -2,10 +2,10 @@
 title: Prise en main des SPA dans AEM avec React
 description: Cet article présente un exemple de SPA, explique comment cette application est structurée et vous permet de prendre rapidement en main votre propre SPA à l’aide du framework React.
 exl-id: 13998526-65e7-4d1b-bd47-452bad3780a2
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 97%
+source-wordcount: '1142'
+ht-degree: 86%
 
 ---
 
@@ -31,7 +31,7 @@ Pour plus de détails sur le fonctionnement des SPA dans AEM, consultez les docu
 
 >[!NOTE]
 >
->Pour qu’il soit possible de créer du contenu dans une SPA, ce contenu doit être stocké dans AEM et exposé par le modèle de contenu.
+>Pour pouvoir créer du contenu dans un SPA, le contenu doit être stocké dans AEM et exposé par le modèle de contenu.
 >
 >Une SPA développée en dehors d’AEM n’est pas modifiable si elle ne respecte pas le contrat de modèle de contenu.
 
@@ -39,7 +39,7 @@ Ce document décrit la structure d’une SPA simplifiée créée à l’aide du 
 
 ## Dépendances, configuration et construction {#dependencies-configuration-and-building}
 
-En plus de la dépendance React attendue, l’exemple de SPA tire parti de bibliothèques supplémentaires pour optimiser la création de la SPA.
+Outre la dépendance React attendue, l’exemple de SPA peut utiliser des bibliothèques supplémentaires pour rendre la création de la SPA plus efficace.
 
 ### Dépendances {#dependencies}
 
@@ -60,7 +60,7 @@ Puisque cet exemple est basé sur le framework React, il existe deux dépendance
  react-dom
 ```
 
-`aem-clientlib-generator` est utilisé pour automatiser la création de bibliothèques clientes dans le cadre du processus de construction.
+Le `aem-clientlib-generator` est utilisé pour automatiser la création de bibliothèques clientes dans le cadre du processus de création.
 
 `"aem-clientlib-generator": "^1.4.1",`
 
@@ -97,7 +97,7 @@ module.exports = {
 
 ### Génération {#building}
 
-En réalité, la construction de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation, en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de génération ressemblera à :
+En fait, la création de l’application utilise [Webpack](https://webpack.js.org/) pour la transpilation en plus du aem-clientlib-generator pour la création automatique de la bibliothèque cliente. Par conséquent, la commande de génération ressemblera à :
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -105,7 +105,7 @@ Une fois généré, le package peut être chargé dans une instance AEM.
 
 ### Archétype de projet AEM {#aem-project-archetype}
 
-Un projet AEM doit tirer parti de l’[archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge les projets SPA à l’aide de React ou d’Angular et tire parti du SDK SPA.
+Tout projet AEM doit utiliser la variable [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr), qui prend en charge SPA projets à l’aide de React ou d’Angular et utilise le SDK SPA.
 
 ## Structure d’application {#application-structure}
 
@@ -134,7 +134,7 @@ ReactDOM.render(
 });
 ```
 
-La principale finalité de `index.js` est de tirer parti de la fonction `ReactDOM.render` pour déterminer où, dans le DOM, injecter l’application.
+La fonction principale de `index.js` est d’utiliser la variable `ReactDOM.render` pour déterminer où, dans le DOM, injecter l’application.
 
 Cela est une utilisation standard de cette fonction, non spécifique à cet exemple d’application.
 

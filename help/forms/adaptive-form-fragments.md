@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2003'
-ht-degree: 83%
+source-wordcount: '2000'
+ht-degree: 80%
 
 ---
 
@@ -75,9 +75,9 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 1. Dans la boîte de dialogue de création de fragment, spécifiez les informations suivantes :
 
    * **Nom** : nom du fragment. La valeur par défaut est le nom de l’élément du panneau. Ce champ est obligatoire.
-      >[!NOTE]
-      >
-      >Veillez à spécifier un nom unique pour le fragment. S’il existe déjà un autre fragment portant le même nom, la création du fragment échoue.
+     >[!NOTE]
+     >
+     >Veillez à spécifier un nom unique pour le fragment. S’il existe déjà un autre fragment portant le même nom, la création du fragment échoue.
 
    * **Titre** : titre du fragment. La valeur par défaut est le titre du panneau.
 
@@ -85,7 +85,7 @@ En outre, si vous avez sélectionné un modèle de schéma XML ou de formulaire 
 
    * **Balises** : métadonnées de balises de fragment.
 
-   * **Tracé de destination** : chemin d’accès au référentiel où le fragment est enregistré. Si vous ne spécifiez pas de chemin, un nœud portant le même nom que celui du fragment est créé en regard du nœud contenant le formulaire adaptatif. Le fragment est enregistré dans ce nœud.
+   * **Chemin cible**: Chemin d’accès au référentiel où le fragment est enregistré. Si vous ne spécifiez pas de chemin, un nœud portant le même nom que celui du fragment est créé en regard du nœud contenant le formulaire adaptatif. Le fragment est enregistré dans ce nœud.
 
    * **Modèle de formulaire** : selon le modèle de formulaire pour le formulaire adaptatif, ce champ affiche le **schéma XML**, **modèle de formulaire** ou **aucun**. Ce champ n’est pas modifiable.
 
@@ -230,7 +230,7 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 ## Points clés à retenir lorsque vous travaillez avec des fragments {#key-points-to-remember-when-working-with-fragments}
 
 * Assurez-vous que le nom du fragment est unique. La création du fragment échoue si un fragment portant le même nom existe déjà.
-* Dans un formulaire adaptatif basé sur XDP, si vous enregistrez un panneau en tant que fragment contenant une autre partie du fragment XDP, le fragment obtenu sera automatiquement lié au fragment XDP enfant. Dans le cas d’un formulaire adaptatif basé sur un schéma XSD, le fragment obtenu sera associé à la racine de schéma.
+* Dans un formulaire adaptatif basé sur XDP, si vous enregistrez un panneau en tant que fragment contenant un autre fragment XDP, le fragment résultant est automatiquement lié au fragment XDP enfant. Dans le cas d’un formulaire adaptatif basé sur XSD, le fragment obtenu est lié à la racine du schéma.
 * Lorsque vous créez un fragment de formulaire adaptatif, un nœud de fragment est créé, similaire au nœud guideContainer pour un formulaire adaptatif, dans CRXDe Lite.
 * Un fragment dans un formulaire adaptatif qui utilise un modèle de données de formulaire différent n’est pas pris en charge. Par exemple, un fragment basé sur XDP n’est pas pris en charge dans un formulaire adaptatif basé sur XSD et inversement.
 * Les fragments de formulaire adaptatif sont disponibles par l’onglet Fragments de formulaire adaptatif dans l’outil de recherche de contenu AEM.
@@ -240,7 +240,7 @@ Pour localiser un formulaire adaptatif contenant des fragments de formulaire ada
 * Lorsque vous publiez de nouveau un fragment de formulaire adaptatif mis à jour, les modifications sont répercutées dans les instances publiées du formulaire adaptatif dans lequel le fragment est utilisé.
 * Le formulaire adaptatif contenant le composant Vérifier ne prend pas en charge les utilisateurs anonymes. En outre, il n’est pas recommandé d’utiliser le composant Vérifier dans un fragment de formulaire adaptatif.
 * (**Mac uniquement**) Pour vous assurer que la fonctionnalité des fragments de formulaire fonctionne parfaitement dans tous les scénarios, ajoutez l’entrée suivante au fichier /private/etc/hosts :
-   `127.0.0.1 <Host machine>` **Ordinateur hôte** : ordinateur Apple Mac sur lequel est déployé [!DNL AEM Forms].
+  `127.0.0.1 <Host machine>` **Ordinateur hôte** : ordinateur Apple Mac sur lequel est déployé [!DNL AEM Forms].
 
 ## Fragments de référence {#reference-fragments}
 

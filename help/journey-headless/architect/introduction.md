@@ -2,10 +2,10 @@
 title: Modélisation de contenu pour AEM en tant que CMS découplé - Introduction
 description: Une introduction de l’utilisation des fonctionnalités d’Adobe Experience Manager as a Cloud Service dans un CMS découplé pour modéliser du contenu pour votre projet.
 exl-id: 62061d73-6fdb-440b-a7dd-b0d530d49186
-source-git-commit: 00ec09f327bc2f382d263970e690ed067aaa1355
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '721'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Ce document vous aide à comprendre la diffusion de contenu découplé, comment 
 
 ## Diffusion de contenu full stack {#full-stack}
 
-Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les entreprises les utilisent comme emplacement central pour la gestion des messages, des marques et de leur communication. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
+Depuis l’émergence des systèmes de gestion de contenu (CMS) à grande échelle et faciles d’utilisation, les entreprises les utilisent comme un emplacement central pour la gestion des messages, des marques et des communications. L’utilisation d’un CMS comme point central pour administrer les expériences a permis des gains d’efficacité en éliminant la nécessité de dupliquer les tâches dans des systèmes disparates.
 
 ![CMS full stack classique](/help/journey-headless/developer/assets/full-stack.png)
 

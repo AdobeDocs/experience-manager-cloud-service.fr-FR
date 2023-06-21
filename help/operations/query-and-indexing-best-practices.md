@@ -3,10 +3,10 @@ title: Bonnes pratiques en matière de requête et d’indexation
 description: Découvrez comment optimiser vos index et requêtes en fonction des bonnes pratiques d’Adobe.
 topic-tags: best-practices
 exl-id: 37eae99d-542d-4580-b93f-f454008880b1
-source-git-commit: afeff7cfb8606eb58126a4ca62ce9e6e58c44215
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1563'
-ht-degree: 82%
+source-wordcount: '1558'
+ht-degree: 80%
 
 ---
 
@@ -32,7 +32,7 @@ Comme les requêtes peuvent être l’une des opérations les plus taxatrices ef
 
 ### Parcours des noeuds {#traversing-nodes}
 
-Si le référentiel est conçu de manière à permettre une connaissance préalable de l’emplacement des données requises, le code qui récupère ces données des chemins nécessaires peut être déployé sans avoir à exécuter de requêtes pour les trouver.
+Si le référentiel est conçu de manière à permettre une connaissance préalable de l’emplacement des données requises, le code qui récupère ces données des chemins nécessaires peut être déployé sans avoir à exécuter des requêtes pour les trouver.
 
 Par exemple, le rendu du contenu correspondant à une certaine catégorie. Une méthode consiste à organiser le contenu avec une propriété de catégorie qui peut être interrogée pour renseigner un composant qui affiche des éléments dans une catégorie.
 
@@ -77,7 +77,7 @@ Ce graphique illustre le flux général d’utilisation de l’outil de performa
 
 Chaque requête doit utiliser un index pour fournir des performances optimales. Dans la plupart des cas, les index prêts à l’emploi existants doivent être suffisants pour gérer les requêtes.
 
-Il arrive que des propriétés personnalisées doivent être ajoutées à un index existant, de sorte que des contraintes supplémentaires puissent être interrogées à l’aide de l’index. Consultez le document [Recherche et indexation de contenu](/help/operations/indexing.md#changing-an-index) pour en savoir plus. La section [Aide-mémoire pour les requêtes JCR](#jcr-query-cheatsheet) de ce document décrit l’aspect que doit prendre une définition de propriété sur un index pour prendre en charge un type de requête spécifique.
+Il arrive que des propriétés personnalisées doivent être ajoutées à un index existant, de sorte que des contraintes supplémentaires puissent être interrogées à l’aide de l’index. Consultez le document [Recherche et indexation de contenu](/help/operations/indexing.md#changing-an-index) pour en savoir plus. Le [Aide-mémoire pour les requêtes JCR](#jcr-query-cheatsheet) la section de ce document décrit comment une définition de propriété sur un index doit chercher à prendre en charge un type de requête spécifique.
 
 ### Utiliser les critères appropriés {#use-the-right-criteria}
 

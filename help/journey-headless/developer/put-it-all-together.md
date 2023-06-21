@@ -2,10 +2,10 @@
 title: Tout assembler – Votre application et votre contenu dans AEM découplé
 description: Dans cette partie du parcours de développement AEM découplé, découvrez comment aborder votre projet AEM, notamment les fragments de contenu, les appels GraphQL, les appels API REST et votre application, mais aussi comment préparer ce projet pour la mise en ligne.
 exl-id: bece84ad-4c8c-410c-847e-9ef3f79970cb
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 100%
+source-wordcount: '1065'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Cet article vise à vous aider à comprendre comment assembler votre application
 
 ## SDK AEM {#the-aem-sdk}
 
-Le SDK AEM permet de créer et de déployer du code personnalisé. Il s’agit du principal outil dont vous avez besoin pour développer et tester votre application découplée avant sa mise en ligne. Il contient les artefacts suivants :
+Le SDK AEM permet de créer et de déployer du code personnalisé. Il s’agit de l’outil principal dont vous avez besoin pour développer et tester votre application sans interface avant de la mettre en ligne. Il contient les artefacts suivants :
 
 * Le jar Quickstart : fichier jar exécutable qui peut être utilisé pour configurer une instance d’auteur et une instance de publication.
 * Les outils de dispatcher : le module Dispatcher et ses dépendances pour les systèmes Windows et UNIX®
@@ -64,7 +64,7 @@ Node.js est un environnement d’exécution JavaScript utilisé pour fonctionner
 
 Regardons maintenant les éléments qui constituent un environnement AEM.
 
-Un environnement d’AEM complet est constitué d’un auteur, d’une publication et d’un Dispatcher. Ces mêmes composants sont disponibles dans l’exécution de développement local afin de vous permettre de prévisualiser plus facilement votre code et votre contenu avant la mise en ligne.
+Un environnement d’AEM complet est constitué d’un auteur, d’une publication et d’un Dispatcher. Ces mêmes composants sont disponibles dans l’exécution de développement local afin que vous puissiez faciliter la prévisualisation de votre code et contenu avant la mise en ligne.
 
 * **Le service Auteur** permet aux utilisateurs internes de créer, gérer et prévisualiser du contenu.
 
@@ -74,7 +74,7 @@ Un environnement d’AEM complet est constitué d’un auteur, d’une publicati
 
 ## Workflow de développement local {#the-local-development-workflow}
 
-Le projet de développement local est basé sur Apache Maven et utilise Git pour le contrôle de code source. Pour mettre à jour le projet, les développeurs peuvent utiliser leur environnement de développement intégré préféré, tel qu’Eclipse, Visual Studio Code ou IntelliJ, entre autres.
+Le projet de développement local est basé sur Apache Maven et utilise Git pour le contrôle de code source. Pour mettre à jour le projet, les développeurs peuvent utiliser leur environnement de développement intégré préféré, tel qu’Eclipse, Visual Studio Code ou IntelliJ, entre autres.
 
 Pour tester le code ou les mises à jour de contenu ingérées par votre application découplée, vous devez déployer les mises à jour sur l’exécution locale AEM, qui inclut les instances locales des services de création et de publication AEM.
 
@@ -84,7 +84,7 @@ Dans un système de production, un Dispatcher et un serveur Apache http se trouv
 
 ## Prévisualisation locale de votre code et de votre contenu avec l’environnement de développement local {#previewing-your-code-and-content-locally-with-the-local-development-environment}
 
-Pour préparer votre projet découplé AEM à son lancement, vous devez vous assurer que tous les éléments constituant votre projet fonctionnent correctement.
+Pour préparer votre projet sans interface AEM pour le lancement, vous devez vous assurer que toutes les parties constituantes de votre projet fonctionnent correctement.
 
 Pour cela, vous devez tout assembler (code, contenu et configuration), puis le tester dans un environnement de développement local pour vous préparer en temps réel.
 

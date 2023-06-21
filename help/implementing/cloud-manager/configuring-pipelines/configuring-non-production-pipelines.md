@@ -3,10 +3,10 @@ title: Configuration de pipelines hors production
 description: Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans des environnements de production.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: 5b4366c1e8791ffca4b5ad47f94de44f6df2cd0b
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1369'
-ht-degree: 100%
+source-wordcount: '1362'
+ht-degree: 94%
 
 ---
 
@@ -55,7 +55,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
 1. Si vous choisissez de créer un **pipeline de déploiement**, vous devez également définir le **comportement des échecs de mesure importants**.
 
    * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
-   * **Défaillance immédiate** - si cette option est sélectionnée, le pipeline sera interrompu chaque fois qu’une défaillance importante aura lieu. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
+   * **Échec immédiat** - Si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
    * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s’agit essentiellement d’émuler un utilisateur approuvant manuellement chaque échec.
 
 1. Cliquez sur **Continuer**.
@@ -99,7 +99,7 @@ Un pipeline de code full stack déploie simultanément des versions de code fron
 
 >[!NOTE]
 >
->Si un pipeline de code full stack existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
+>Si un pipeline de code à pile complète existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
 
 Pour terminer la configuration du pipeline hors production de code full stack, procédez comme suit.
 
@@ -134,7 +134,7 @@ Un pipeline de configuration de niveau web déploie les configurations HTTPD/Dis
 
 >[!NOTE]
 >
->Si un pipeline de code de la couche web existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
+>Si un pipeline de code de niveau web existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
 
 Pour terminer la configuration du pipeline hors production de code de la couche web, procédez comme suit.
 
@@ -166,7 +166,7 @@ Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](man
 
 Avec les pipelines front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut être accéléré.
 
-Consultez le document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus ainsi que certaines considérations à prendre en compte pour en tirer le meilleur parti.
+Voir le document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus, ainsi que quelques considérations à prendre en compte pour tirer pleinement parti de ce processus.
 
 ## Ignorer les packages du Dispatcher {#skip-dispatcher-packages}
 

@@ -2,10 +2,10 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production as a Cloud Service AEM vers des environnements inférieurs à des fins de test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d056ad0f29cfd2448164e3e866f2cedbe1bf6fc2
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 60%
+source-wordcount: '1223'
+ht-degree: 55%
 
 ---
 
@@ -29,8 +29,8 @@ Le contenu à copier est défini par un jeu de contenu. Un jeu de contenu est co
 
 Lors de la copie de contenu, l’environnement source est la source de vérité.
 
-* Si le contenu a été modifié dans l’environnement de destination, il sera remplacé par le contenu de la source si les chemins d’accès sont les mêmes.
-* Si les chemins d’accès sont différents, le contenu de la source sera fusionné avec le contenu de la destination.
+* Si le contenu a été modifié dans l’environnement de destination, il est remplacé par le contenu de la source, si les chemins d’accès sont identiques.
+* Si les chemins d’accès sont différents, le contenu de la source est fusionné avec le contenu de la destination.
 
 ## Autorisations {#permissions}
 
@@ -122,7 +122,6 @@ Une fois qu’un jeu de contenu a été créé, vous pouvez l’utiliser pour co
    >* L’utilisateur ne dispose pas des autorisations appropriées.
    >* Un pipeline en cours d’exécution ou une opération de copie de contenu est en cours dans l’environnement.
    >* L’environnement est en veille ou en train de se développer.
-
 
 1. Dans la boîte de dialogue **Copier le contenu**, spécifiez la source et la destination de votre action de copie de contenu.
 

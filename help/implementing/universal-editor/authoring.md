@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 100%
+source-wordcount: '1147'
+ht-degree: 84%
 
 ---
 
@@ -15,7 +15,7 @@ Découvrez à quel point il est facile et intuitif pour les personnes en charge 
 
 ## Présentation {#introduction}
 
-L’éditeur universel permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en œuvre afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et d’offrir une expérience de développement à la pointe de la technologie.
+L’éditeur universel permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de proposer des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
 
 Pour ce faire, il fournit aux personnes en charge de la création de contenu une interface utilisateur intuitive qui nécessite une formation minimale pour se lancer et commencer à modifier le contenu.
 
@@ -29,7 +29,7 @@ Pour ce faire, il fournit aux personnes en charge de la création de contenu une
 
 ## Préparer l’application {#prepare-app}
 
-Pour créer du contenu pour une application à l’aide de l’éditeur universel, l’application doit être instrumentée par un développeur ou une développeuse afin de prendre en charge l’éditeur.
+Pour créer du contenu pour une application à l’aide d’Universal Editor, l’application doit être instrumentée par un développeur afin de prendre en charge l’éditeur.
 
 >[!TIP]
 >
@@ -39,7 +39,7 @@ Pour créer du contenu pour une application à l’aide de l’éditeur universe
 
 Une fois que l’application est instrumentée pour fonctionner avec l’éditeur universel, vous devez vous connecter à l’éditeur universel. Vous aurez besoin d’un Adobe ID pour vous connecter et d’[avoir accès à l’éditeur universel.](getting-started.md#request-access)
 
-Une fois connecté, saisissez l’URL de la page que vous souhaitez modifier dans la [barre d’adresse.](#address-bar) pour commencer à [modifier le contenu.](#edit-content)
+Une fois connecté, saisissez l’URL de la page à modifier dans le [la barre d’adresse.](#address-bar) pour que vous puissiez commencer [modification du contenu.](#edit-content)
 
 ## Présentation de l’interface utilisateur {#ui}
 
@@ -84,13 +84,13 @@ L’icône d’aide permet d’accéder rapidement aux ressources d’apprentiss
 
 #### Notifications {#notifications}
 
-Cette icône contiendra un badge indiquant le nombre de [notifications](/help/implementing/cloud-manager/notifications.md) incomplètes actuellement attribuées.
+Cette icône comporte un badge indiquant le nombre d’éléments incomplets actuellement attribués. [notifications.](/help/implementing/cloud-manager/notifications.md)
 
 ![Notifications](assets/notifications.png)
 
 #### Propriétés de l’utilisateur ou de l’utilisatrice {#user-properties}
 
-Appuyez ou cliquez sur l’icône représentant votre utilisateur ou votre utilisatrice pour accéder à vos paramètres utilisateur. Si vous n’avez configuré aucune image d’utilisateur, une icône est attribuée de manière aléatoire.
+Appuyez ou cliquez sur l’icône représentant votre utilisateur ou votre utilisatrice pour accéder à vos paramètres utilisateur. Si aucune image d’utilisateur n’est configurée, une icône est attribuée de manière aléatoire.
 
 ![Propriétés de l’utilisateur](assets/user-properties.png)
 
@@ -132,7 +132,7 @@ Appuyez ou cliquez sur l’icône Ouvrir l’aperçu de l’application pour ouv
 
 #### Publier {#publish}
 
-Appuyez ou cliquez sur le bouton Publier pour publier les modifications apportées au contenu dynamique pour que vos lecteurs et lectrices puissent les utiliser.
+Appuyez ou cliquez sur le bouton Publier afin de publier les modifications apportées au contenu en direct pour que vos lecteurs puissent les utiliser.
 
 ![Bouton Publier](assets/publish.png)
 
@@ -172,7 +172,7 @@ Selon si l’éditeur se trouve en [mode d’édition](#edit-mode) ou en [mode A
 
 ## Modification du contenu {#editing-content}
 
-La modification du contenu est simple et intuitive. En [mode d’édition,](#edit-mode) lorsque vous placez le pointeur de la souris sur le contenu de l’éditeur, le contenu modifiable se met en surbrillance dans une case bleue.
+La modification du contenu est simple et intuitive. Dans [mode d&#39;édition,](#edit-mode) lorsque vous placez le pointeur de la souris sur le contenu de l’éditeur, le contenu modifiable est mis en surbrillance avec une zone bleue.
 
 ![Le contenu modifiable est mis en surbrillance dans une case bleue.](assets/editable-content.png)
 
@@ -192,7 +192,7 @@ Notez qu’en mode Aperçu, le fait d’appuyer ou de cliquer sur le contenu fai
 
 Pour en savoir plus sur l’éditeur universel, consultez ces documents.
 
-* [Présentation de l’éditeur universel](introduction.md) - Découvrez comment l’éditeur universel permet de modifier n’importe quel aspect de n’importe quel contenu et dans n’importe quelle mise en œuvre afin de fournir des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
+* [Présentation de l’éditeur universel](introduction.md) - Découvrez comment Universal Editor permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de vous permettre de proposer des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
 * [Publication de contenu avec l’éditeur universel](publishing.md) - Découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 * [Prise en main de l’éditeur universel dans AEM](getting-started.md) - Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 * [Architecture de l’éditeur universel](architecture.md) - Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et calques.

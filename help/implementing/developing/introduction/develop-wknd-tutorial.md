@@ -2,10 +2,10 @@
 title: Prise en main du développement d’AEM Sites – Tutoriel WKND
 description: Vous ne connaissez pas le développement de l'AEM ? Vous avez besoin d’une mise à niveau sur les bonnes pratiques ? Voici l’endroit idéal pour bien commencer ! L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un développeur qui découvre comment AEM mettre en oeuvre un site web dans AEM en utilisant les dernières normes et technologies.
 exl-id: 3110e492-95bd-4571-a347-198aa8d9bbb3
-source-git-commit: 856266faf4cb99056b1763383d611e9b2c3c13ea
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '242'
-ht-degree: 62%
+source-wordcount: '241'
+ht-degree: 58%
 
 ---
 
@@ -25,7 +25,7 @@ L’objectif de ce tutoriel en plusieurs parties est d’apprendre à un dévelo
 
 ## Concepts de base {#core-concepts}
 
-La mise en œuvre du tutoriel tire parti de nombreuses fonctionnalités puissantes d’AEM. Le site est implémenté à l’aide des éléments suivants :
+La mise en oeuvre du tutoriel utilise de nombreuses fonctionnalités puissantes d’AEM. Le site est implémenté à l’aide des éléments suivants :
 
 * [Archétype de projet Maven AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr)
 * [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)

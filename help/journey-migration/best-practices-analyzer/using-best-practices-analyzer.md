@@ -2,10 +2,10 @@
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Utilisation de l’analyseur des bonnes pratiques
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: df1fdbe0f3590708e1da44864b6e08075a521b51
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2490'
-ht-degree: 100%
+source-wordcount: '2479'
+ht-degree: 92%
 
 ---
 
@@ -27,13 +27,13 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * L’outil BPA est pris en charge sur les instances AEM avec la version 6.1 et versions ultérieures.
 
-   >[!NOTE]
-   >Consultez [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d’installation de BPA sur AEM 6.1.
+  >[!NOTE]
+  >Consultez [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d’installation de BPA sur AEM 6.1.
 
 * Il peut s’exécuter dans n’importe quel environnement, mais il est préférable de l’exécuter dans un environnement d’*évaluation*.
 
-   >[!NOTE]
-   >Pour éviter toute incidence sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA dans un environnement de *création* aussi proche que possible de l’environnement de *production* concernant la personnalisation, la configuration, les contenus et les applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
+  >[!NOTE]
+  >Pour éviter tout impact sur les instances critiques de l’entreprise, il est recommandé d’exécuter BPA sur une *Auteur* un environnement aussi proche que possible de la variable *Production* dans les domaines des personnalisations, des configurations, du contenu et des applications utilisateur. Vous pouvez également l’exécuter sur un clone de l’environnement de *création* de production.
 
 * La génération du contenu des rapports BPA peut nécessiter un temps important, de plusieurs minutes à quelques heures. La durée nécessaire dépend largement de la taille et de la nature du contenu du référentiel AEM, de la version d’AEM et d’autres facteurs.
 
@@ -157,9 +157,9 @@ Consultez le tableau ci-dessous pour comprendre les niveaux d’importance :
 
 ## Interprétation du rapport CSV de l’analyseur des bonnes pratiques {#cra-csv-report}
 
-Lorsque vous cliquez sur l’option **CSV** de votre instance AEM, le format CSV du rapport de l’analyseur des bonnes pratiques est créé à partir du cache de contenu et renvoyé à votre navigateur. En fonction des paramètres du navigateur, ce rapport sera automatiquement téléchargé sous la forme d’un fichier portant le nom `results.csv` par défaut.
+Lorsque vous cliquez sur l’option **CSV** de votre instance AEM, le format CSV du rapport de l’analyseur des bonnes pratiques est créé à partir du cache de contenu et renvoyé à votre navigateur. Selon les paramètres de votre navigateur, ce rapport est automatiquement téléchargé sous la forme d’un fichier portant le nom par défaut `results.csv`.
 
-Si le cache a atteint son délai d’expiration, le rapport sera de nouveau généré avant la création et le téléchargement du fichier CSV.
+Si le cache a expiré, le rapport est régénéré avant que le fichier CSV ne soit créé et téléchargé.
 
 Le format CSV du rapport contient des informations générées à partir de la sortie du détecteur de motifs, triées et organisées par types de catégories, sous-types et niveaux d’importance. Son format est adapté pour permettre l’affichage et la modification dans une application comme Microsoft Excel. La finalité du rapport est de donner toutes les informations relatives aux résultats sous une forme reproductible. Cette démarche peut s’avérer utile lors de la comparaison des rapports au fil du temps pour mesurer les progrès réalisés.
 
@@ -207,10 +207,10 @@ Les en-têtes HTTP suivants sont utilisés par cette interface :
 
 Les paramètres de requête HTTP suivants sont disponibles à titre de commodité lorsque l’utilisation des en-têtes HTTP risque de ne pas être facile :
 
-* `max-age` (nombre, facultatif) : indique l’intervalle d’actualisation du cache en secondes. Ce nombre doit être égal ou supérieur à 0. L’intervalle d’actualisation par défaut est de 86 400 secondes. Sans ce paramètre ou l’en-tête correspondant, un nouveau cache est utilisé pour répondre aux requêtes pendant 24 heures, auquel stade le cache doit être régénéré. L’utilisation de `max-age=0` force l’effacement du cache et déclenche une régénération du rapport, en utilisant l’intervalle d’actualisation non nul précédent du cache nouvellement généré.
+* `max-age` (nombre, facultatif) : indique l’intervalle d’actualisation du cache en secondes. Ce nombre doit être égal ou supérieur à 0. L’intervalle d’actualisation par défaut est de 86 400 secondes. Sans ce paramètre ou l’en-tête correspondant, un nouveau cache est utilisé pour traiter les demandes pendant 24 heures, à ce moment-là le cache doit être régénéré. L’utilisation de `max-age=0` force l’effacement du cache et déclenche une régénération du rapport, en utilisant l’intervalle d’actualisation non nul précédent du cache nouvellement généré.
 * `respond-async` (booléen, facultatif) : indique que la réponse doit être fournie de manière asynchrone. L’utilisation de `respond-async=true`, si le cache est obsolète, entraîne l’envoi par le serveur d’une réponse `202 Accepted` sans attendre que le cache soit actualisé et le rapport généré. Si le cache est actualisé, ce paramètre n’a aucun effet. La valeur par défaut est `false`. Sans ce paramètre ou l’en-tête correspondant, le serveur répondra de manière synchrone. Dans ce cas, la réponse peut nécessiter un temps important et un ajustement du temps de réponse maximal pour le client HTTP.
-* `may-refresh-cache` (booléen, facultatif) : indique que le serveur peut actualiser le cache en réponse à une demande si le cache actuel est vide, obsolète ou sur le point d’être obsolète. Si `may-refresh-cache=true`, ou s’il n’est pas spécifié, le serveur peut lancer une tâche en arrière-plan qui appelle le détecteur de motifs et actualise le cache. Si `may-refresh-cache=false`, le serveur ne lance aucune tâche d’actualisation qui aurait sinon été effectuée si le cache est vide ou obsolète, auquel cas le rapport est vide. Une tâche d’actualisation déjà en cours de traitement n’est pas affectée par ce paramètre.
-* `return-minimal` (booléen, facultatif) : indique que la réponse du serveur doit uniquement inclure le statut contenant l’indication de progression et le statut du cache au format JSON. Si `return-minimal=true`, le corps de la réponse est limité à l’objet de statut. Si `return-minimal=false`, ou s’il n’est pas spécifié, une réponse complète est fournie.
+* `may-refresh-cache` (booléen, facultatif) : indique que le serveur peut actualiser le cache en réponse à une demande si le cache actuel est vide, obsolète ou sur le point d’être obsolète. Si `may-refresh-cache=true`, ou s’il n’est pas spécifié, le serveur peut lancer une tâche en arrière-plan qui appelle le détecteur de motifs et actualise le cache. If `may-refresh-cache=false` alors le serveur ne lance aucune tâche d’actualisation qui aurait sinon été effectuée si le cache est vide ou obsolète, auquel cas le rapport est vide. Une tâche d’actualisation déjà en cours de traitement n’est pas affectée par ce paramètre.
+* `return-minimal` (booléen, facultatif) : indique que la réponse du serveur doit uniquement inclure le statut contenant l’indication de progression et le statut du cache au format JSON. If `return-minimal=true`, alors le corps de la réponse est limité à l’objet d’état. If `return-minimal=false`, ou s’il n’est pas spécifié, une réponse complète est fournie.
 * `log-findings` (booléen, facultatif) : indique que le serveur doit consigner le contenu du cache lors de sa création ou de son actualisation initiale. Chaque résultat du cache est consigné sous la forme d’une chaîne JSON. Cette consignation ne se produit que si `log-findings=true` et la requête génèrent un nouveau cache.
 
 Si un en-tête HTTP et son paramètre de requête correspondant sont présents simultanément, le paramètre de requête est prioritaire.
@@ -235,7 +235,7 @@ Les valeurs de réponses possibles sont les suivantes :
 
 ### Ajustement de la durée de vie du cache {#cache-adjustment}
 
-La durée de vie par défaut du cache l’analyseur des bonnes pratiques est de 24 heures. Avec l’option destinée à actualiser un rapport et à régénérer le cache, aussi bien dans l’instance AEM que dans l’interface HTTP, cette valeur par défaut sera probablement appropriée pour la plupart des utilisations du BPA. Si le temps de génération du rapport est particulièrement long pour votre instance AEM, vous pouvez ajuster la durée de vie du cache afin de minimiser la nouvelle génération d’un rapport.
+La durée de vie par défaut du cache l’analyseur des bonnes pratiques est de 24 heures. Avec l’option destinée à actualiser un rapport et à régénérer le cache, aussi bien dans l’instance AEM que dans l’interface HTTP, cette valeur par défaut sera probablement appropriée pour la plupart des utilisations du BPA. Si le temps de génération du rapport est particulièrement long pour votre instance AEM, vous pouvez ajuster la durée de vie du cache afin de minimiser la régénération du rapport.
 
 La durée de vie du cache est stockée dans la propriété `maxCacheAge` dans le nœud de référentiel suivant :
 `/apps/best-practices-analyzer/content/BestPracticesReport/jcr:content`

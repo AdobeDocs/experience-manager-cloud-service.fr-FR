@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 37a2afca3131acceebbd7732844fa5953a7fd4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1711'
-ht-degree: 95%
+source-wordcount: '1708'
+ht-degree: 93%
 
 ---
 
@@ -44,7 +44,7 @@ Dans la **Fragments de contenu** vous pouvez également publier sur la console *
 
 ### Connexion {#signing-in}
 
-Comme pour la plupart des systèmes, vous devrez vous connecter. En tant qu’auteur, vous recevrez les informations suivantes :
+Comme pour la plupart des systèmes, vous devez vous connecter. En tant qu’auteur, vous recevez :
 
 * Nom de l’utilisateur (compte)
 * Mot de passe
@@ -56,7 +56,7 @@ Votre compte a été configuré avec les privilèges dont vous avez besoin. Si v
 
 La première fois que vous vous connectez, un petit tutoriel en ligne vous présentera certaines des principales fonctionnalités de l’interface utilisateur.
 
-Vous pouvez ensuite utiliser le panneau de navigation pour accéder aux principales zones d’AEM. Pour les fragments de contenu, vous utiliserez la console **Fragments de contenu** (pour certaines actions, vous utiliserez également la console **Ressources**).
+Vous pouvez ensuite utiliser le panneau de navigation pour accéder aux principales zones d’AEM. Pour les fragments de contenu, vous utilisez le **Fragments de contenu** (pour certaines actions, vous utiliserez également la méthode **Ressources** ).
 
 Vous pouvez ouvrir le panneau de navigation en sélectionnant l’icône d’Adobe en haut à gauche, puis la petite icône en forme de boussole.
 
@@ -188,7 +188,7 @@ Creating a Content Fragment is very similar - you just use the **Content Fragmen
 
 ![Create Content Fragment option](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
-This time a wizard opens. The first step is to select the Content Fragment Model that your fragment will be based on:
+This time a wizard opens. The first step is to select the Content Fragment Model that your fragment is based on:
 
 ![Create Content Fragment - select Model](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
@@ -215,11 +215,11 @@ Par exemple :
 
 * Un fragment qui ne nécessite que plusieurs informations, certaines avec un type spécifique. Pour le contenu découplé, les références sont essentielles. Vous en apprendrez plus tard sur votre parcours.
 
-   ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+  ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
 * Un fragment qui vous permet d’écrire une longue section de texte. Il existe ici d’autres options pour gérer et mettre en forme le texte. Vous pouvez même ouvrir les champs de texte individuels dans un éditeur plein écran (à l’aide de la petite icône d’écran située à droite).
 
-   ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![Éditeur de fragment de contenu – Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
@@ -239,26 +239,26 @@ Cette section peut sembler un peu étrange mais une fois que vous avez ouvert l�
 
 * **Modèles de fragment de contenu**
 
-   Le nom du modèle de fragment de contenu s’affiche en haut de l’éditeur, directement sous celui du fragment. Il s’agit également d’un lien qui vous mène à l’éditeur de modèles.
+  Le nom du modèle de fragment de contenu s’affiche en haut de l’éditeur, directement sous celui du fragment. Il s’agit également d’un lien qui vous mène à l’éditeur de modèles.
 Les modèles de fragment de contenu sont essentiels à vos fragments de contenu, car ils définissent la structure que vous utilisez. Cependant, leur création et leur modification relèvent (généralement) de la responsabilité d’une autre personne, l’architecte de contenu.
 
-   >[!NOTE]
-   >
-   >Si vous souhaitez en savoir plus, vous pouvez consultez le parcours d’architecture de contenu découplé AEM.
+  >[!NOTE]
+  >
+  >Si vous souhaitez en savoir plus, vous pouvez consultez le parcours d’architecture de contenu découplé AEM.
 
 * **Contenu associé**
 
-   Celui-ci est assez évident, car il s’agit d’un onglet dans l’éditeur.
+  Celui-ci est assez évident, car il s’agit d’un onglet dans l’éditeur.
 
-   Les fragments de contenu sont disponibles dans AEM depuis un certain nombre de versions. À l’origine, ils étaient disponibles pour une utilisation « traditionnelle » lors de la création de pages...et ils sont toujours utilisés dans ce contexte. Cela peut impliquer l’association de ressources (des images, par exemple) qui, bien qu’elles ne soient pas incorporées dans le fragment, doivent être disponibles pour l’auteur lors de la création d’une page.
+  Les fragments de contenu sont disponibles dans AEM depuis un certain nombre de versions. À l’origine, ils étaient disponibles pour une utilisation « traditionnelle » lors de la création de pages...et ils sont toujours utilisés dans ce contexte. Cela peut impliquer l’association de ressources (des images, par exemple) qui, bien qu’elles ne soient pas incorporées dans le fragment, doivent être disponibles pour l’auteur lors de la création d’une page.
 
 * **Aperçu**
 
-   Il s’agit d’un autre onglet de l’éditeur qui fournit une vue technique, principalement destinée aux développeurs.
+  Il s’agit d’un autre onglet de l’éditeur qui fournit une vue technique, principalement destinée aux développeurs.
 
 * **Mettre à jour les références de page**
 
-   Cette action est disponible à partir de **...** (des points de suspension). Elle n’a pas d’intérêt particulier pour les auteurs de contenu découplé, car elle concerne la création de pages.
+  Cette action est disponible à partir de **...** (des points de suspension). Elle n’a pas d’intérêt particulier pour les auteurs de contenu découplé, car elle concerne la création de pages.
 
 ### Publication {#publishing}
 
@@ -313,9 +313,11 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
          * [Publication rapide](/help/assets/manage-publication.md#quick-publish)
 
          * [Gérer la publication](/help/assets/manage-publication.md#manage-publication)
+
       * Dans la **Fragments de contenu** Console
 
          * [Publication et aperçu d’un fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#publishing-and-previewing-a-fragment)
+
    * [Modèles de fragment de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-models.md)
 
       * [Modèles de fragment de contenu – Types de données](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#data-types)
@@ -323,8 +325,6 @@ Maintenant que vous avez appris les principes de base, l’étape suivante consi
       * [Modèles de fragment de contenu – Propriétés](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#properties)
 
       * [Modèles de fragment de contenu - Autoriser des modèles de fragments de contenu dans votre dossier de ressources](/help/sites-cloud/administering/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
-
-
 
 * Guides de prise en main
    * [Création d’une configuration découplée d’un dossier de ressources](/help/headless/setup/create-assets-folder.md)

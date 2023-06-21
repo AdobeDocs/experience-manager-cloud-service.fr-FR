@@ -3,10 +3,10 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: a56b0ed1efff7b8d04e65921ee9dd25ae7030dbd
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2865'
-ht-degree: 91%
+source-wordcount: '2859'
+ht-degree: 86%
 
 ---
 
@@ -80,7 +80,7 @@ Les fichiers suivants sont personnalisables et seront transférés vers votre in
 
 * `conf.d/available_vhosts/<CUSTOMER_CHOICE>.vhost`
 
-Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des entrées `<VirtualHost>` qui correspondent aux noms d’hôtes et permettent à Apache de gérer chaque trafic de domaine avec des règles différentes. Les fichiers sont créés dans le répertoire `available_vhosts` et activés avec un lien symbolique dans le répertoire `enabled_vhosts`. À partir des fichiers `.vhost`, d’autres fichiers tels que les réécritures (rewrites) et les variables seront inclus.
+Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des entrées `<VirtualHost>` qui correspondent aux noms d’hôtes et permettent à Apache de gérer chaque trafic de domaine avec des règles différentes. Les fichiers sont créés dans le répertoire `available_vhosts` et activés avec un lien symbolique dans le répertoire `enabled_vhosts`. Dans la `.vhost` Les fichiers, d’autres fichiers tels que les réécritures et les variables sont inclus.
 
 >[!NOTE]
 >
@@ -92,17 +92,17 @@ Si vous souhaitez faire correspondre l’hôte exact car vous disposez de plusie
 
 ```
 <VirtualHost *:80>
-	ServerName	"example.com"
-	# Put names of which domains are used for your published site/content here
-	ServerAlias	 "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
-	# Use a document root that matches the one in conf.dispatcher.d/default.farm
-	DocumentRoot "${DOCROOT}"
-	# URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
-	AllowEncodedSlashes NoDecode
-	# Add header breadcrumbs for help in troubleshooting which vhost file is chosen
-	<IfModule mod_headers.c>
-		Header add X-Vhost "publish-example-com"
-	</IfModule>
+    ServerName    "example.com"
+    # Put names of which domains are used for your published site/content here
+    ServerAlias     "*example.com" "\*.local" "localhost" "127.0.0.1" "*.adobeaemcloud.net" "*.adobeaemcloud.com"
+    # Use a document root that matches the one in conf.dispatcher.d/default.farm
+    DocumentRoot "${DOCROOT}"
+    # URI dereferencing algorithm is applied at Sling's level, do not decode parameters here
+    AllowEncodedSlashes NoDecode
+    # Add header breadcrumbs for help in troubleshooting which vhost file is chosen
+    <IfModule mod_headers.c>
+        Header add X-Vhost "publish-example-com"
+    </IfModule>
   ...
 </VirtualHost>
 ```
@@ -121,7 +121,7 @@ Ce fichier est inclus dans le fichier `dispatcher_vhost.conf`. Vous pouvez modif
 
 * `conf.dispatcher.d/available_farms/<CUSTOMER_CHOICE>.farm`
 
-Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des fermes correspondant aux noms d’hôtes et permettant au module Dispatcher de gérer chaque ferme avec des règles différentes. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un lien symbolique dans le répertoire `enabled_farms`. À partir des fichiers `.farm`, d’autres fichiers tels que les filtres, les règles de cache et d’autres seront inclus.
+Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des fermes correspondant aux noms d’hôtes et permettant au module Dispatcher de gérer chaque ferme avec des règles différentes. Les fichiers sont créés dans le répertoire `available_farms` et activés avec un lien symbolique dans le répertoire `enabled_farms`. Dans la `.farm` Les fichiers, d’autres fichiers tels que les filtres, les règles de cache et d’autres sont inclus.
 
 * `conf.dispatcher.d/cache/rules.any`
 
@@ -149,7 +149,7 @@ Les fichiers ci-dessus font référence aux fichiers de configuration non modifi
 
 Ces fichiers font partie du framework de base. Ils respectent les normes et les bonnes pratiques. Les fichiers sont considérés comme non modifiables, car leur modification ou suppression locale n’aura aucun impact sur votre déploiement ; ils ne seront pas transférés vers votre instance cloud.
 
-Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers non modifiables répertoriés ci-dessous, suivis de toute instruction ou remplacement supplémentaire. Lorsque la configuration Dispatcher est déployée dans un environnement cloud, la dernière version des fichiers non modifiables est utilisée, quelle que soit la version utilisée dans le développement local.
+Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers non modifiables répertoriés ci-dessous, suivis de toute instruction ou remplacement supplémentaire. Lorsque la configuration de Dispatcher est déployée dans un environnement cloud, la dernière version des fichiers non modifiables est utilisée, quelle que soit la version utilisée dans le développement local.
 
 * `conf.d/available_vhosts/default.vhost`
 
@@ -252,7 +252,7 @@ Le script se compose des trois phases suivantes :
 2. Il exécute la variable `httpd -t` pour tester si la syntaxe est correcte, de sorte qu’apache httpd puisse démarrer. En cas de réussite, la configuration doit être prête pour le déploiement.
 3. Vérifie que le sous-ensemble des fichiers de configuration du SDK Dispatcher, qui sont destinés à être immuables, comme décrit dans la section [Section Structure de fichier](##flexible-mode-file-structure), n’a pas été modifié et correspond à la version actuelle du SDK.
 
-Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd -t` est également exécutée et toute erreur est incluse dans le journal `Build Images step failure` de Cloud Manager.
+Lors d’un déploiement de Cloud Manager, la variable `httpd -t` la vérification de syntaxe sera également exécutée et toutes les erreurs seront incluses dans Cloud Manager. `Build Images step failure` log.
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd
 
 Si une directive n’est pas placée sur la liste autorisée, l’outil consigne une erreur et renvoie un code de sortie non nul. Il analyse également tous les fichiers présentant le motif `conf.dispatcher.d/enabled_farms/*.farm` et vérifie les éléments suivants :
 
-* Absence de règle de filtre utilisant l’opérateur allow via `/glob` (voir [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957) pour plus d’informations.
+* Il n’existe aucune règle de filtre qui utilise l’opérateur allow via `/glob` (voir [CVE-2016-0957](https://nvd.nist.gov/vuln/detail/CVE-2016-0957)) pour plus d’informations.
 * Aucune fonction d’administration n’est exposée. Par exemple, l’accès aux chemins tels que `/crx/de or /system/console`.
 
 Notez que l’outil de validation ne signale que l’utilisation interdite des directives Apache qui n’ont pas été placées sur la liste autorisée. Il ne signale aucun problème de syntaxe ni de sémantique dans votre configuration Apache, car ces informations ne sont disponibles que pour les modules Apache dans un environnement en cours d’exécution.
@@ -396,7 +396,7 @@ Cloud manager validator 2.0.xx
 
 ### Phase 2 {#second-phase}
 
-Cette phase vérifie la syntaxe apache en démarrant Apache HTTPD dans un conteneur Docker. Docker doit être installé localement, mais notez qu’il n’est pas nécessaire qu’AEM soit en cours d’exécution.
+Cette phase vérifie la syntaxe apache en démarrant Apache HTTPD dans un conteneur Docker. Docker doit être installé localement, mais il n’est pas nécessaire que AEM soit en cours d’exécution.
 
 >[!NOTE]
 >
@@ -405,7 +405,7 @@ Cette phase vérifie la syntaxe apache en démarrant Apache HTTPD dans un conten
 
 Cette phase peut également être exécutée indépendamment via `bin/docker_run.sh src/dispatcher host.docker.internal:4503 8080`.
 
-Lors d’un déploiement de Cloud Manager, la vérification de la syntaxe `httpd -t` est également exécutée et toutes les erreurs sont incluses dans le journal des échecs de l’étape de création d’images de Cloud Manager.
+Lors d’un déploiement de Cloud Manager, la variable `httpd -t` la vérification de syntaxe est également exécutée et toutes les erreurs sont incluses dans le journal des échecs de l’étape de création d’images de Cloud Manager.
 
 ### Phase 3 {#third-phase}
 
@@ -578,7 +578,6 @@ Avec la version 2021.7.0 de Cloud Manager, les nouveaux programmes génèrent d
    * Validez le fichier `opt-in/USE_SOURCES_DIRECTLY` dans une branche git déployée par le pipeline hors production vers un environnement de développement cloud.
    * Utilisez Cloud Manager pour déployer un environnement de développement cloud.
    * Testez minutieusement. Il est essentiel de vérifier que votre configuration Apache et Dispatcher se comporte comme prévu avant de déployer les modifications dans des environnements supérieurs. Vérifiez tous les comportements liés à votre configuration personnalisée. Enregistrez un ticket de service clientèle si vous pensez que la configuration de Dispatcher déployée ne reflète pas votre configuration personnalisée.
-
    >[!NOTE]
    >
    >En mode flexible, vous devez utiliser des chemins d’accès relatifs plutôt que des chemins absolus.

@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1434'
-ht-degree: 90%
+source-wordcount: '1429'
+ht-degree: 87%
 
 ---
 
@@ -29,8 +29,8 @@ N’oubliez pas qu’une Live Copy peut être créée avec des [pages ordinaire
 
 Les avantages supplémentaires liés à l’utilisation d’une configuration de plan directeur sont les suivants :
 
-* permet à l’auteur d’utiliser l’option **Déploiement** sur un plan directeur afin de pousser explicitement les modifications vers les Live Copies qui héritent de ce plan directeur ;
-* permet à l’auteur d’utiliser **Créer un site**. L’utilisateur peut ainsi sélectionner facilement les langues et configurer la structure de la Live Copy.
+* Autoriser l’auteur à utiliser la variable **Déploiement** sur un plan directeur pour pousser explicitement les modifications apportées aux Live Copies qui héritent de ce plan directeur.
+* Autoriser l’auteur à utiliser **Créer un site** pour sélectionner facilement des langues et configurer la structure de la Live Copy.
 * définit une configuration de déploiement par défaut pour les Live Copies partageant une relation avec le plan directeur.
 
 Dans le cas où aucune configuration de plan directeur n’est référencée, les déploiements peuvent uniquement être lancés à partir des Live Copies elles-mêmes, en extrayant essentiellement le contenu de la source.
@@ -48,7 +48,7 @@ En général, la règle de déploiement dans MSM concernant la synchronisation d
 * Les composants sont déployés en synchronisant toutes les ressources contenues dans le plan directeur.
 * Les conteneurs ne synchronisent que la ressource active.
 
-Cela signifie que les composants sont traités comme un agrégat et, dans un déploiement, le composant lui-même et tous ses enfants sont remplacés par ceux des plans directeurs. Cela signifie que si une ressource est ajoutée localement à un tel composant, elle sera perdue par rapport au contenu du plan directeur lors du déploiement.
+Cela signifie que les composants sont traités comme un agrégat et, dans un déploiement, le composant lui-même et tous ses enfants sont remplacés par ceux des plans directeurs. Cela signifie que si une ressource est ajoutée localement à un tel composant, elle est perdue par rapport au contenu du plan directeur lors du déploiement.
 
 Pour prendre en charge l’imbrication des composants de façon à ce que les composants ajoutés localement soient conservés dans un déploiement, le composant doit être déclaré en tant que conteneur.
 

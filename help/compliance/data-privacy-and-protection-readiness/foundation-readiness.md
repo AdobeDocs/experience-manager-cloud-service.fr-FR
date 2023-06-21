@@ -2,10 +2,10 @@
 title: Règlements sur la protection et la confidentialité des données – Préparation d’Adobe Experience Manager as a Cloud Service Foundation
 description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Foundation pour les différents règlements sur la protection et la confidentialité des données ; notamment le règlement général sur la protection des données (RGPD) de l’Union européenne, la loi sur la protection de la vie privée des consommateurs de Californie et la manière de s’y conformer lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: e4527b155179c50e1e423e7e835b3fcde3a4f2af
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '506'
-ht-degree: 94%
+source-wordcount: '504'
+ht-degree: 92%
 
 ---
 

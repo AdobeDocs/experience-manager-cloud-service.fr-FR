@@ -4,9 +4,9 @@ description: En savoir plus sur les points importants liés à la sécurité lor
 hidefromtoc: true
 hide: true
 exl-id: d2dfde05-ce02-478e-8697-b939fb8740c3
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Pour prendre en charge les opérations cryptographiques asymétriques, AEM stock
 * Les clients peuvent l’utiliser dans leur propre code par l’intermédiaire de la variable [API keystore](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/keystore/KeyStoreService.html#getTrustStore-org.apache.sling.api.resource.ResourceResolver-)
 * Trust-Store peut être géré via l’interface utilisateur à l’adresse **Outils** - **Sécurité** - **Trust Store** ou en accédant à *`https://serveraddress:serverport/libs/granite/security/content/truststore.html`*, comme illustré ci-dessous :
 
-   ![Trust Store Management](/help/security/assets/global-trust-store-modified.png)
+  ![Trust Store Management](/help/security/assets/global-trust-store-modified.png)
 
 * L’accès au Trust-Store peut être restreint davantage par le contrôle d’accès au référentiel selon le cas d’utilisation.
 

@@ -4,10 +4,10 @@ description: Découvrez comment la fonctionnalité de contenu associé pour les 
 feature: Content Fragments
 role: User
 exl-id: eb524872-1403-42d1-b735-eaab382cf313
-source-git-commit: 737d4d56312b763a50c2dfad0ea51feb9dbf4dde
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 89%
+source-wordcount: '240'
+ht-degree: 84%
 
 ---
 
@@ -29,7 +29,7 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
 1. Selon que des collections ont déjà été associées ou non, sélectionnez l’une des options suivantes :
 
-   * **Associer le contenu** : il s’agira de la première collection associée
+   * **Associer du contenu** - première collection associée
    * **Associer la collection** : les collections associées sont déjà configurées
 
 1. Sélectionnez la collection requise.
@@ -38,7 +38,7 @@ Pour effectuer l’association, vous devez d’abord [ajouter les ressources mul
 
    ![Sélectionner la collection](assets/cfm-assoc-content-02.png)
 
-1. Confirmez (avec **Sélectionner**). La collection sera répertoriée comme associée.
+1. Confirmez (avec **Sélectionner**). La collection est répertoriée comme associée.
 
    ![cfm-6420-05](assets/cfm-assoc-content-03.png)
 

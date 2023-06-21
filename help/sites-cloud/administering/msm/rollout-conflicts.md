@@ -4,10 +4,10 @@ description: Découvrez comment gérer et résoudre les conflits de déploiement
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: 24a4a43cef9a579f9f2992a41c582f4a6c775bf3
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 93%
+source-wordcount: '922'
+ht-degree: 92%
 
 ---
 
@@ -22,7 +22,7 @@ Lorsqu’il y a des pages en conflit (dans les branches Plan directeur et Live C
 Pour vous assurer que le déploiement n’est pas bloqué, les définitions possibles peuvent inclure :
 
 * La page (Plan directeur ou Live Copy) ayant la priorité lors du déploiement
-* Les pages renommées (et comment elles le seront)
+* Quelles pages sont renommées et comment
 * L’impact sur le contenu publié.
 
 Le comportement par défaut d’AEM prêt à l’emploi est que le contenu publié n’est pas affecté. Ainsi, si une page créée manuellement dans la branche Live Copy a été publiée, ce contenu est toujours publié avec la gestion du conflit et le déploiement.
@@ -35,11 +35,11 @@ Dans les sections suivantes, nous utilisons l’exemple d’une nouvelle page `b
 
 * blueprint: `/b`
 
-   Un gabarit avec une page enfant, `bp-level-1`
+  Un gabarit avec une page enfant, `bp-level-1`
 
 * Live Copy: `/b`
 
-   Une page créée manuellement dans la branche Live Copy, avec une page enfant, `lc-level-1`
+  Une page créée manuellement dans la branche Live Copy, avec une page enfant, `lc-level-1`
 
    * Activé lors de la publication sous la forme `/b`, avec la page enfant
 
@@ -83,13 +83,13 @@ Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, l
 
 * Live Copy: `/b`
 
-   Est déplacé dans la Live Copy vers `/b_msm_moved`. Cela fait office de sauvegarde et permet de s’assurer qu’aucun contenu n’est perdu.
+  Est déplacé dans la Live Copy vers `/b_msm_moved`. Cela fait office de sauvegarde et permet de s’assurer qu’aucun contenu n’est perdu.
 
    * `lc-level-1` n’est pas déplacé.
 
 * Blueprint: `/b`
 
-   Est déployé dans la page Live Copy `/b`.
+  Est déployé dans la page Live Copy `/b`.
 
    * `bp-level-1` est déployé dans Live Copy.
 
@@ -127,11 +127,11 @@ Dans ce cas, la Live Copy prévaut effectivement. La page du plan directeur `/b`
 
 * Blueprint: `/b`
 
-   N’est pas copié du tout et est ignoré.
+  N’est pas copié du tout et est ignoré.
 
 * Live Copy: `/b`
 
-   Reste la même.
+  Reste la même.
 
 #### Après le déploiement {#after-rollout-no-conflict}
 

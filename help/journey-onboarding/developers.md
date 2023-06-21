@@ -4,10 +4,10 @@ description: Une fois que l’administrateur système a configuré les ressource
 feature: Onboarding
 role: Admin, User, Developer
 exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
-source-git-commit: 77ae5d79ecb8a11a230cee461f247ffe0e9891a5
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '1419'
-ht-degree: 98%
+source-wordcount: '1417'
+ht-degree: 97%
 
 ---
 
@@ -51,7 +51,7 @@ Selon les besoins de votre entreprise, un ou plusieurs utilisateurs peuvent avoi
 Avant de commencer les tâches décrites dans ce document en tant que développeur ou responsable de déploiement, assurez-vous que l’administrateur système a terminé toutes les étapes de ce parcours d’intégration. Cela signifie que :
 
 * Votre administrateur système a affecté des développeurs et des responsables de déploiement à leurs profils de produits respectifs.
-* Les développeurs doivent en outre être affectés aux profils de produits d’**Utilisateurs AEM** ou d’**Administrateurs AEM** afin d’utiliser eux-mêmes AEM.
+* Les développeurs doivent en outre être affectés à **Utilisateurs AEM** ou **Administrateurs AEM** les profils de produits pour utiliser également AEM.
 * Les ressources cloud ont été configurées.
 
 ## Accéder à Git {#accessing-git}

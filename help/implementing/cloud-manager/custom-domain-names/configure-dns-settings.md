@@ -2,10 +2,10 @@
 title: Configuration des paramètres DNS
 description: Configuration des paramètres DNS
 exl-id: 6e294f0b-52cb-40dd-bc42-ddbcffdf5600
-source-git-commit: 60b496024b3d012033309632999851c08f43c5d7
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 87%
 
 ---
 
@@ -15,9 +15,9 @@ Une fois votre nom de domaine personnalisé vérifié et déployé, vous êtes p
 
 ## Que sont les paramètres DNS ? {#dns-settings}
 
-Un enregistrement `CNAME` ou A, une fois configuré, achemine tout le trafic Internet du domaine vers l’endroit où il pointe. Si cet emplacement n’est pas configuré pour desservir le trafic, il y aura une panne. S’il n’a pas été testé, il se peut que le contenu présente des erreurs. C’est pourquoi cette étape est toujours effectuée une fois le test terminé et que vous êtes prêt à passer en ligne.
+Un enregistrement `CNAME` ou A, une fois configuré, achemine tout le trafic Internet du domaine vers l’endroit où il pointe. Si cet emplacement n’est pas configuré pour servir le trafic, il y a une panne. S’il n’a pas été testé, il se peut que le contenu présente des erreurs. C’est pourquoi cette étape est toujours effectuée une fois le test terminé et que vous êtes prêt à passer en ligne.
 
-Pour configurer ces paramètres, vous devez déterminer si un enregistrement `CNAME` ou Apex doit être configuré pour pointer votre nom de domaine personnalisé vers le nom de domaine Cloud Manager. Les sections suivantes vous aideront à déterminer quel type d’enregistrement convient à votre configuration DNS.
+Pour configurer ces paramètres, vous devez déterminer si un `CNAME` ou un enregistrement Apex doit être configuré pour pointer votre nom de domaine personnalisé vers le nom de domaine Cloud Manager. Les sections suivantes vous aideront à déterminer quel type d’enregistrement convient à votre configuration DNS.
 
 >[!NOTE]
 >

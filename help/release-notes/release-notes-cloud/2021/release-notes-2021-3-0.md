@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.3.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.3.0. »
 exl-id: 0c07364c-ba25-4081-8e35-3c1c84ed556f
-source-git-commit: acd80887d71a528604d37fa2787bca3c3a48d7c4
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1297'
-ht-degree: 100%
+source-wordcount: '1295'
+ht-degree: 96%
 
 ---
 
@@ -90,7 +90,7 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 ### Nouveautés {#what-is-new-march}
 
-* Les clients disposant d’environnements avec des configurations de nom de domaine personnalisé préexistantes pour les [listes autorisées d’adresses IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), les [certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) et les [Noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) verront un message sur leurs configurations existantes et pourront se servir eux-mêmes via l’interface utilisateur.
+* Clients avec des environnements avec des configurations de nom de domaine personnalisé préexistantes pour [LISTES AUTORISÉES IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md#pre-existing-cdn), [Certificats SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md#pre-existing-cdn) et [Noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md#pre-existing-cdn) consultez un message à propos de leurs configurations existantes et peuvent être en libre-service au moyen de l’interface utilisateur .
 
 * Les utilisateurs disposant des autorisations requises peuvent désormais modifier un programme, ce qui leur permet d’effectuer les opérations suivantes en libre-service :
 
@@ -128,7 +128,7 @@ La prochaine version est prévue pour le 8 avril 2021.
 
 * Il peut arriver que l’utilisateur voit un état « actif » vert en regard d’une liste d’adresses IP autorisées même si cette configuration n’a pas été déployée.
 
-* Tous les pipelines de production existants seront automatiquement activés avec l’étape Contrôle de l’expérience.
+* Tous les pipelines de production existants sont automatiquement activés avec l’étape Audit de l’expérience .
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 

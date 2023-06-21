@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Asset Management
 role: User
 exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1239'
-ht-degree: 95%
+source-wordcount: '1238'
+ht-degree: 93%
 
 ---
 
@@ -79,7 +79,7 @@ Pour télécharger des ressources, procédez comme suit :
 
    | Option de téléchargement | Description |
    |---|---|
-   | **[!UICONTROL Créer un dossier distinct pour chaque ressource]** | Sélectionnez cette option pour créer un dossier pour chaque ressource contenant tous les rendus téléchargés de la ressource. Si cette option n’est pas sélectionnée, chaque ressource (et ses rendus s’ils sont sélectionnés pour le téléchargement) est contenue dans le dossier parent de l’archive générée. |
+   | **[!UICONTROL Créer un dossier distinct pour chaque ressource]** | Sélectionnez cette option pour créer un dossier pour chaque ressource contenant tous les rendus téléchargés de la ressource. Si cette option n’est pas sélectionnée, chaque ressource (et ses rendus s’ils sont sélectionnés pour téléchargement) est contenu dans le dossier parent de l’archive générée. |
    | **[!UICONTROL E-mail]** | Sélectionnez cette option pour envoyer une notification par e-mail (contenant un lien vers votre téléchargement) à un autre utilisateur. Le destinataire doit être membre du groupe `dam-users`. Les modèles standard d’email sont disponibles aux emplacements suivants :<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Les modèles que vous personnalisez lors du déploiement sont disponibles aux emplacements suivants : <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Vous pouvez stocker des modèles personnalisés spécifiques au client à ces emplacements :<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Ressource(s)]** | Sélectionnez cette option pour télécharger la ressource dans son format d’origine.<br>L’option Sous-ressources est disponible si la ressource d’origine comporte des sous-ressources. |
    | **[!UICONTROL Rendu(s)]** | Un rendu est une représentation binaire d’une ressource. Les ressources ont une Principale représentation : celle du fichier chargé. Elles peuvent avoir un nombre illimité de représentations. <br> Avec cette option, vous pouvez sélectionner les rendus que vous souhaitez télécharger. Les rendus disponibles dépendent de la ressource que vous avez sélectionnée. |
@@ -155,4 +155,3 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 >* [Téléchargement de ressources protégées par DRM](drm.md)
 >* [Téléchargement de ressources à l’aide de l’appli de bureau Experience Manager sur un poste de travail Windows ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr)
 >* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html)
-

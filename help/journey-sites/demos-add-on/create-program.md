@@ -2,10 +2,10 @@
 title: Créer un programme
 description: Découvrez comment configurer un nouveau programme et un nouveau pipeline pour déployer le module complémentaire.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 100%
+source-wordcount: '713'
+ht-degree: 97%
 
 ---
 
@@ -37,7 +37,7 @@ Après vous être connecté à Cloud Manager, vous pouvez créer un nouveau pro
 
 >[!NOTE]
 >
->Votre utilisateur doit être membre du rôle **Propriétaire de l’entreprise** dans Cloud Manager dans votre entreprise pour créer des programmes.
+>Votre utilisateur doit être membre de la fonction **Propriétaire de l’entreprise** rôle dans Cloud Manager dans votre entreprise pour créer des programmes.
 
 1. Connectez-vous à Adobe Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/).
 

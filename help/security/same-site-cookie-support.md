@@ -2,10 +2,10 @@
 title: Prise en charge du cookie Same Site pour Adobe Experience Manager as a Cloud Service
 description: Prise en charge du cookie Same Site pour Adobe Experience Manager as a Cloud Service
 exl-id: 2cec7202-4450-456f-8e62-b7ed3791505c
-source-git-commit: e1234e90e276a6274fc4dc9de0ae577219669ecf
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 100%
+source-wordcount: '283'
+ht-degree: 85%
 
 ---
 
@@ -36,4 +36,4 @@ Vous pouvez ajouter ce paramètre en procédant comme suit :
 1. Générez les configurations de format JSON pour ce paramètre en particulier en suivant les étapes décrites dans la section [Génération de configurations OSGi à l’aide du SDK AEM Quickstart](/help/implementing/deploying/configuring-osgi.md#generating-osgi-configurations-using-the-aem-sdk-quickstart)
 1. Appliquez les paramètres en suivant les étapes décrites dans le document OSGi [Format d’API Cloud Manager pour la configuration des propriétés](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties).
 
-Une fois que ce paramètre a été mis à jour et que les utilisateurs se sont déconnectés puis reconnectés, l’attribut `None` sera défini pour les cookies `login-token` et ils seront inclus dans les requêtes intersites.
+Une fois ce paramètre mis à jour, les utilisateurs sont connectés et reconnectés, `login-token` Les cookies ont la variable `None` est inclus dans les requêtes intersites.

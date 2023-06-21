@@ -2,10 +2,10 @@
 title: Phase dʼimplémentation
 description: Assurez-vous que votre code et contenu sont prêts pour la migration vers le cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: fedaa9b8a7baf707c71acd0535ad890254b6793a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '2353'
-ht-degree: 100%
+source-wordcount: '2337'
+ht-degree: 96%
 
 ---
 
@@ -25,7 +25,7 @@ Ce document vise à vous fournir les éléments suivants :
 
 * Présentation de Cloud Manager, le framework dʼintégration et de livraison continues dʼAEM, utilisé pour déployer du code vers AEM as a Cloud Service.
 * Familiarisation avec lʼoutil de transfert de contenu.
-* Description des outils de refactorisation de code à utiliser afin de moderniser le code pour AEM as a Cloud Service.
+* Décrivez les outils de refactorisation du code que vous devez utiliser afin de pouvoir moderniser votre code pour AEM as a Cloud Service
 
 ## Utilisation de Cloud Manager {#using-cloud-manager}
 
@@ -49,7 +49,7 @@ La figure suivante montre les principales étapes de la phase de conversion de v
 
 ![image](/help/journey-migration/assets/exec-image1.png)
 
-Dans les chapitres suivants, vous trouverez une description détaillée des outils que vous devez utiliser pour y parvenir.
+Nous commencerons par détailler les outils à utiliser afin que vous puissiez y parvenir dans les chapitres ci-dessous.
 
 ## Migration du contenu {#content-migration}
 
@@ -67,10 +67,10 @@ Pour obtenir une description complète du fonctionnement de l’outil et de la f
 
 À présent, il est temps de commencer à refactoriser les fonctionnalités existantes pour les rendre compatibles avec Cloud Service.
 
-Pour ce faire, commencez par consulter la documentation détaillant les outils de base dont vous avez besoin pour refactoriser votre code :
+Tout d’abord, consultez la documentation détaillant les outils de base et commencez à restructurer votre code :
 
 
-* Lors de la planification, il est utile de disposer dʼune liste des éléments qui doivent être refactorisés afin d’être compatibles avec AEM as a Cloud Service. Vous pouvez consulter les [Conseils de développement](/help/implementing/developing/introduction/development-guidelines.md) pour en savoir plus sur la refactorisation et l’optimisation du code pour Cloud Service.
+* Lors de la planification, il est préférable d&#39;avoir une liste des domaines qui doivent être restructurés pour être compatibles avec AEM as a Cloud Service. Vous pouvez consulter les [Conseils de développement](/help/implementing/developing/introduction/development-guidelines.md) pour en savoir plus sur la refactorisation et l’optimisation du code pour Cloud Service.
 * Découvrez comment effectuer la [Gestion des configurations](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/configurations.html?lang=fr#what-is-a-configuration) dans AEM as a Cloud Service.
 * Découvrez comment configurer un environnement de développement local en téléchargeant le [SDK AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=fr).
 * Pour terminer, familiarisez-vous avec lʼ[API Java AEM as a Cloud Service](https://www.adobe.io/experience-manager/reference-materials/cloud-service/javadoc/index.html).
@@ -79,11 +79,11 @@ Vous pouvez également consulter les ressources suivantes :
 
 * Regardez cette vidéo pour comprendre comment installer le SDK Dispatcher localement :
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30601)
+  >[!VIDEO](https://video.tv.adobe.com/v/30601)
 
 * Regardez cette vidéo pour comprendre comment configurer le SDK Dispatcher :
 
-   >[!VIDEO](https://video.tv.adobe.com/v/30602)
+  >[!VIDEO](https://video.tv.adobe.com/v/30602)
 
 ### Un changement d’état d’esprit {#a-change-in-mindset}
 
@@ -163,7 +163,7 @@ La collecte de données peut vous aider à planifier les activités de migration
 
 <!-- Alexandru: hiding this for now
 
-One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, since it will be added to the overall extraction timeline and it may not be required to run it during top-ups.
+One more important datapoint is the amount of time it takes to complete the [user mapping](/help/journey-migration/content-transfer-tool/user-mapping-tool/overview-user-mapping-tool.md), if this is coupled with the content migration. You can take this data point into consideration for more realistic estimates, because it is added to the overall extraction timeline and it may not be required to run it during top-ups.
 
 -->
 
@@ -177,8 +177,8 @@ Le tableau suivant illustre un plan de migration type :
 
 | Itération de la migration | Date de début | Date de fin estimée | Dépendances | Durée estimée (en jours) | Détails supplémentaires / Actions |
 |---|---|---|---|---|---|
-| PRDCLONE-AUTEUR-INITIAL-USRMAP-CSSTAGE-AUTEUR |  |  |  |  |  |
-| PRDCLONE-PUBLICATION-COMPLEMENT-CSSTAGE-AUTEUR |  |  |  |  |  |
+| PRDCLONE-AUTEUR-INITIAL-USRMAP-CSSTAGE-AUTEUR |   |   |   |   |   |
+| PRDCLONE-PUBLICATION-COMPLEMENT-CSSTAGE-AUTEUR |   |   |   |   |   |
 
 Comme vous pouvez le voir dans le tableau ci-dessus, il est utile de suivre un format de dénomination spécifique pour identifier les itérations de migration, par exemple : **PRDCLONE** pour l’environnement AEM source, **AUTEUR/PUBLICATION** pour l’environnement AEM as a Cloud Service, **CSSTAGE-AUTEUR** pour l’instance AEM as a Cloud Service, etc.
 
@@ -209,7 +209,7 @@ Le tableau suivant illustre un suivi de migration fonctionnel :
 
 | Source (Environnement / Instance / URL) | Destination (Environnement / Instance / URL) | Nom du jeu de migration, type (initial ou complément) | Taille du jeu de migration (Mo) | Mappage utilisateur (Oui/Non) | Durée de l’extraction (Début, Fin, Temps pris) | Durée d’ingestion (Début, Fin, Temps pris) | Problèmes / Résolutions / Détails |
 |---|---|---|---|---|---|---|---|
-|  |  |  |  |  |  |  |  |
+|   |   |   |   |   |   |   |   |
 
 ## Stratégie et calendrier de migration de contenu {#content-strategyand-timeline}
 
@@ -241,7 +241,7 @@ La section suivante présente les étapes importantes et les tâches associées 
    * Se trouve dans la même zone réseau.
    * Fournit du contenu de production tel que des utilisateurs et des groupes.
    * Clone l’auteur et la publication : un nœud chacun dans le cas d’un cluster ou d’une batterie de publication.
-* Sélectionnez un sous-ensemble du contenu qui sera migré en tenant compte des éléments suivants :
+* Sélectionnez un sous-ensemble du contenu migré afin que :
    * Il s’agit d’un mélange de tous les types de contenu disponibles.
    * Contient tous les utilisateurs, utilisatrices et groupes
 * Inclut 25 % du contenu ou jusqu’à 1 To de contenu, selon ce qui est moins élevé.

@@ -2,10 +2,10 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
-source-wordcount: '1694'
-ht-degree: 96%
+source-wordcount: '1689'
+ht-degree: 91%
 
 ---
 
@@ -48,7 +48,7 @@ Le widget de chemin de nœud affiche le chemin d’accès au nœud actuellement 
 
 Vous pouvez également l’utiliser pour sauter vers un nœud en entrant le chemin à la main ou en le collant à partir d’un autre endroit et en appuyant sur Entrée.
 
-Il permet aussi de rechercher des nœuds par nom de nœud. Entrez le nom du nœud que vous souhaitez rechercher et patientez (ou sélectionnez l’icône de recherche sur le côté droit). Si un ou plusieurs nœuds sont chargés dans le volet de l’explorateur, la liste s’affiche et vous pouvez sélectionner le chemin et appuyer sur Entrée pour y accéder. Notez que la recherche ne fonctionne que pour les nœuds actuellement chargés dans l’application cliente CRXDE dans le navigateur. Pour effectuer une recherche dans tout le référentiel, utilisez **Outils** > **Requête**.
+Il permet aussi de rechercher des nœuds par nom de nœud. Entrez le nom du nœud que vous souhaitez rechercher et patientez (ou sélectionnez l’icône de recherche sur le côté droit). Si un ou plusieurs noeuds sont chargés dans le volet de l’explorateur, la liste s’affiche et vous pouvez sélectionner le chemin et appuyer sur Entrée pour y accéder. Notez que la recherche ne fonctionne que pour les nœuds actuellement chargés dans l’application cliente CRXDE dans le navigateur. Pour effectuer une recherche dans tout le référentiel, utilisez **Outils** > **Requête**.
 
 ### Volet de l’explorateur {#explorer-pane}
 
@@ -60,7 +60,7 @@ Filtre de navigation dans l’arborescence (l’icône en forme de paire de jume
 
 ### Volet de modification {#edit-pane}
 
-Le **volet de modification** permet d’afficher le contenu du fichier actuellement sélectionné dans le référentiel. Chaque fichier ouvert sera représenté par son propre onglet dans le volet.
+Le **Volet Modifier** permet d’afficher le contenu du fichier actuellement sélectionné dans le référentiel. Chaque fichier ouvert est représenté sous la forme de son propre onglet dans le volet.
 
 L’onglet **Accueil** permet de rechercher du contenu et/ou de la documentation et d’accéder à la documentation destinée aux développeurs et à l’assistance Adobe.
 
@@ -88,6 +88,7 @@ Les autorisations sont ventilées dans les catégories suivantes.
 * **Politiques de contrôle d’accès en vigueur** – les politiques actuelles appliquées à la sélection en cours, qui peuvent être définies localement ou héritées des nœuds parents
 
 >[!NOTE]
+>
 Pour pouvoir voir les informations de contrôle d’accès, l’utilisateur connecté à CRXDE Lite doit avoir le droit de lire les entrées ACL.
 
 ### Onglet Réplication {#replication-tab}
@@ -108,7 +109,7 @@ Le **bouton Actualiser** actualise la sélection actuelle. Les modifications des
 
 ### Bouton Enregistrer tout {#save-all-button}
 
-Le bouton **Enregistrer tout** enregistre toutes les modifications que vous avez apportées. Tant que vous ne décidez pas d’enregistrer, les modifications sont temporaires. Elles seront perdues lorsque vous quitterez la console.
+Le bouton **Enregistrer tout** enregistre toutes les modifications que vous avez apportées. Tant que vous n’avez pas choisi d’enregistrer, les modifications sont temporaires et perdues lorsque vous quittez la console.
 
 * **Rétablir** – ignore toutes les modifications que vous avez apportées au nœud sélectionné depuis le dernier enregistrement, puis recharge l’état actuel du référentiel pour le nœud sélectionné
 * **Rétablir tout** – ignore toutes les modifications que vous avez apportées au référentiel entier depuis le dernier enregistrement, puis recharge l’état actuel du référentiel
@@ -188,7 +189,9 @@ Pour créer un noeud avec CRXDE Lite :
 Vous pouvez désormais adapter le nœud à vos besoins en modifiant les propriétés ou en ajoutant de nouveaux nœuds.
 
 >[!NOTE]
+>
 La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
+>
 La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer un nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
 
 ## Création d’une propriété {#creating-a-property}
@@ -222,7 +225,7 @@ Pour exporter une définition de type de nœud dans CRXDE Lite :
 1. Ouvrez CRXDE Lite dans un navigateur.
 1. Sélectionnez le noeud requis.
 1. Sélectionnez **Outils**, puis **Exporter le type de nœud**.
-1. La définition s’affichera en notation CND dans un nouvel onglet de votre navigateur.
+1. La définition s’affiche sous forme de notation CND dans un nouvel onglet de votre navigateur.
 1. Enregistrez les informations si nécessaire.
 
 Pour importer une définition de type de noeud :
