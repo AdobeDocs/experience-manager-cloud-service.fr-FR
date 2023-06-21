@@ -2,9 +2,9 @@
 title: Les bonnes personnes, les bonnes fonctions
 description: Les bonnes personnes, les bonnes fonctions
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '829'
 ht-degree: 97%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 97%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/aligning-kpis.html?lang=fr" text="Alignement des indicateurs de performance clés"
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=fr" text="Évaluation des indicateurs de performance clés"
 
-Il est probable qu’au sein de votre organisation, plusieurs départements possèdent différents aspects de l’expérience numérique. Sans gouvernance, cette phase est propice à un débat sans fin, à des querelles intestines et à la confusion.
+Il est probable qu’au sein de votre organisation, plusieurs départements possèdent différents aspects de l’expérience digitale. Sans gouvernance, cette phase est propice à un débat sans fin, à des querelles intestines et à la confusion.
 
 La phase initiale de la gouvernance numérique consiste à déterminer qui est responsable de quoi et qui effectue un certain nombre de tâches fondées sur le numérique. Vous devrez peut-être procéder à des embauches stratégiques pour incorporer les compétences nécessaires. Un autre défi encore plus important est d’opérer un changement de culture en construisant un large soutien à la nouvelle technologie et en aidant les personnes concernées à se familiariser avec de nouvelles façons de faire les choses. L’un des éléments clés de cet effort réside dans la création d’une communauté numérique qui permet aux gens d’apprendre mutuellement et de s’entraider.
 
@@ -47,7 +47,7 @@ Maintenant que vous connaissez les fonctions requises, consultez le graphique ci
 
 <br>
 
-![](assets/team_involvement.png)
+![Rôles de révision de la mise en oeuvre](assets/team_involvement.png)
 
 **Examinez les deux listes avec votre équipe chargée de la mise en œuvre** et assurez-vous que vous disposez de personnes possédant les qualifications appropriées dans chaque fonction. Les membres de l’équipe qui connaissent moins bien Adobe Experience Cloud peuvent utiliser les ressources de formation [Experience League](https://experienceleague.adobe.com/?lang=fr#recommended/solutions/experience-manager) pour obtenir leur certification par le biais d’[Adobe Digital Learning](https://learning.adobe.com/certification.html).
 

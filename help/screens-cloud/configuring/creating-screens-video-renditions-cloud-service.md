@@ -2,10 +2,10 @@
 title: Création de rendus vidéo dans Screens as a Cloud Service
 description: Cette page décrit comment créer des rendus vidéo dans Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '341'
-ht-degree: 86%
+source-wordcount: '353'
+ht-degree: 84%
 
 ---
 
@@ -29,11 +29,11 @@ Pour créer des rendus vidéo dans Screens as a Cloud Service à partir du fourn
 
 1. Cliquez sur la section Outils de la barre de navigation de gauche, puis sur **Ressources** et sur **Profils de traitement**.
 
-   ![](/help/screens-cloud/assets/configure/screens-cp-3.png)
+   ![Clic sur les profils de traitement](/help/screens-cloud/assets/configure/screens-cp-3.png)
 
 1. Cliquez sur **Créer** pour créer un profil de traitement.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![Cliquez sur Créer](/help/screens-cloud/assets/configure/screens-video-2.png)
 
 1. Saisissez le **nom**, par exemple **ScreensProcessingProfile**.
 
@@ -57,11 +57,11 @@ Pour créer des rendus vidéo dans Screens as a Cloud Service à partir du fourn
 
 1. Sélectionnez le profil de traitement et cliquez sur **Appliquer le profil au(x) dossier(s)**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-5.png)
+   ![Appliquer le profil au dossier](/help/screens-cloud/assets/configure/screens-video-5.png)
 
 1. Sélectionnez le ou les dossiers dans lesquels les vidéos Screens sont conservées et cliquez sur **Appliquer**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-6.png)
+   ![Cliquez sur Appliquer](/help/screens-cloud/assets/configure/screens-video-6.png)
 
    >[!NOTE]
    >* Vous pouvez créer plusieurs profils de traitement et les appliquer aux dossiers correspondants, de sorte que les vidéos contenues dans ces dossiers obtiennent les rendus vidéo spécifiques.

@@ -2,10 +2,10 @@
 title: Comment ajouter des variables dans des étapes de processus AEM ?
 description: Découvrez comment créer une variable, définir une valeur pour la variable et l’utiliser dans les étapes de processus [!DNL AEM Forms]
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2059'
-ht-degree: 100%
+source-wordcount: '2061'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Le type de données ArrayList permet de créer des collections de variables. Vou
 
 Pour créer une variable :
 
-1. Sur une instance AEM, accédez à Outils ![](assets/hammer-icon.svg) > Processus > Modèles.
+1. Sur une instance AEM, accédez à Outils . ![Icône Marteau](assets/hammer-icon.svg) > Workflow > Modèles.
 1. Appuyez sur **[!UICONTROL Créer]** et spécifiez le titre et un nom facultatif pour le modèle de processus. Sélectionnez le modèle et appuyez sur **[!UICONTROL Modifier]**.
 1. Appuyez sur l’icône de variables disponible dans le sidekick du modèle de processus et appuyez sur **[!UICONTROL Ajouter une variable]**.
 

@@ -2,10 +2,10 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 5311ba7f001201fc94c73fa52bc7033716c1ba78
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '2271'
-ht-degree: 37%
+source-wordcount: '2276'
+ht-degree: 36%
 
 ---
 
@@ -245,7 +245,7 @@ Sélectionnez **Gérer l’accès** depuis le menu représentant des points de s
 
 Sélectionnez la **Developer Console** depuis le menu représentant des points de suspension de l’environnement dans la carte **Environnements**. Un nouvel onglet s’ouvre dans votre navigateur avec la page de connexion à l’ **Developer Console**.
 
-![](assets/environ-devconsole.png)
+![Connexion à Developer Console](assets/environ-devconsole.png)
 
 Seul un utilisateur avec la variable **Développeur** a accès à la fonction **Developer Console**. Toutefois, pour les programmes Sandbox, tout utilisateur ayant accès au programme Sandbox a accès à **Developer Console**.
 

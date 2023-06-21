@@ -3,10 +3,10 @@ title: Prise en charge des miniatures pour les vidéos dans Screens as a Cloud 
 description: Cette page décrit comment ajouter la prise en charge des miniatures pour les vidéos dans Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 91%
+source-wordcount: '503'
+ht-degree: 89%
 
 ---
 
@@ -42,19 +42,19 @@ Suivez les étapes ci-dessous pour utiliser des miniatures dans les vidéos :
 
 1. Sélectionnez le canal et cliquez sur **Modifier** dans la barre d’actions pour ouvrir l’éditeur.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![Ouvrir l’éditeur](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
 
 1. Ajoutez ou modifiez un composant vidéo existant, comme illustré dans le schéma ci-dessous.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Modifiez le composant](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
 
 1. Sélectionnez la vidéo et cliquez sur l’icône *clé à molette* pour ouvrir les propriétés vidéo.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![Cliquer sur la clé à molette](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
 
 1. Une boîte de dialogue **Vidéo** s’ouvre, dans laquelle vous pouvez afficher la zone de dépôt **Miniature**.
 
-   ![](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![Afficher la miniature](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
 
 1. Faites glisser une image à partir du sélecteur de ressources vers la zone de dépôt **Miniature** et cliquez sur **Terminé**.
 
