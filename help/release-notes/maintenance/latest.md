@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 26178edc3308801e0273aca67b7cd82180131483
+source-git-commit: 46f0f8ba51b328bef1061d574b0d378a510fcf38
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 36%
+source-wordcount: '382'
+ht-degree: 30%
 
 ---
 
@@ -17,17 +17,11 @@ La section suivante décrit les notes de mise jour techniques de maintenance act
 
 Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 12255, publiée publiquement le 13 juin 2023. Cette mise à jour de maintenance est une mise à jour de la version de maintenance 12142 précédente.
 
-L’activation des fonctionnalités de cette version de maintenance vous fournira l’ensemble des fonctionnalités. Consultez les [notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md) pour plus d’informations.
+L’activation des fonctionnalités de cette version de maintenance vous dotera de l’ensemble des fonctionnalités avec l’activation des fonctionnalités 2023.6.0. Voir la section [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
 ### Améliorations {#enhancements-12255}
 
 Aucun.
-
-### Problèmes connus {#known-issues-12255}
-
-- ASSETS-25729 - Le menu de sélecteur d’affichage est désactivé.
-- ASSETS-25728 - L’option Retraiter les ressources n’est pas disponible dans la vue de recherche
-- ASSETS-22603 - Certaines colonnes du rapport de ressources de type Téléchargement affichent des valeurs &quot;null&quot; dans l’interface utilisateur. Le fichier CSV téléchargeable n’est pas affecté.
 
 ### Problèmes résolus {#fixed-issues-12255}
 
@@ -49,6 +43,12 @@ Aucun.
 - ASSETS-23981 - Fonction de tri pour les titres qui ne fonctionnent pas dans les liens de collection
 - ASSETS-24723 - Les ressources publiées ont été retraitées sans intervention de l’utilisateur.
 - GRANITE-45385 - Migration de l’activation de l’arborescence pour utiliser la tâche sling au lieu du workflow
+
+### Problèmes connus {#known-issues-12255}
+
+- ASSETS-25729 - Le menu de sélecteur d’affichage est désactivé.
+- ASSETS-25728 - L’option Retraiter les ressources n’est pas disponible dans la vue de recherche
+- ASSETS-22603 - Certaines colonnes du rapport de ressources de type Téléchargement affichent des valeurs &quot;null&quot; dans l’interface utilisateur. Le fichier CSV téléchargeable n’est pas affecté.
 
 ### Technologies intégrées {#embedded-tech-12255}
 
