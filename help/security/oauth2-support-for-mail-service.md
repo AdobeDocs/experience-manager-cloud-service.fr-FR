@@ -2,7 +2,7 @@
 title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 162974b2d6f0efb247f98236d7a2cd996a2e27c9
+source-git-commit: 45332f540551e0c8e513946308af88824a58f121
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 84%
@@ -58,7 +58,7 @@ Ensuite, vous devez générer le jeton d’actualisation, qui fait partie de la 
 
 Pour ce faire, procédez comme suit :
 
-1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` et `tenantID` par les valeurs propres à votre compte : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize?client_id=<clientId>&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send https://graph.microsoft.com/Mail.Read https://graph.microsoft.com/Mail.Send https://graph.microsoft.com/User.Read email openid profile offline_access&state=12345`
+1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` et `tenantID` par les valeurs propres à votre compte : `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
 1. Octroyer l’autorisation si demandé
 1. L’URL redirige vers un nouvel emplacement, construit au format suivant : `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
 1. Copiez la valeur de `<code>` dans l’exemple ci-dessus.
