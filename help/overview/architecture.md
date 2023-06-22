@@ -77,7 +77,7 @@ Trois types d’environnements sont disponibles avec AEM as a Cloud Service :
 
 * **Environnement de développement** : permet aux développeurs d’implémenter des applications AEM dans les mêmes conditions d’exécution que les environnements d’évaluation et de production.
 
-   Pour plus d’informations, consultez [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#using-cloud-manager).
+  Pour plus d’informations, consultez [Gestion des environnements](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-environments.html?lang=fr#using-cloud-manager).
 
 * **Environnement de développement rapide** : permet des itérations de développement rapide pour le débogage de code nouveau ou existant.
 
@@ -122,6 +122,7 @@ Cette nouvelle architecture comporte différents éléments principaux :
       * La connexion au niveau Auteur est gérée par Adobe Identity Management Services (IMS).
 
       * L’intégration et le traitement des ressources utilisent un service de calcul dédié d’Assets.
+
    * Le niveau de prévisualisation comprend un nœud d’aperçu unique. Celui-ci est utilisé pour l’assurance qualité du contenu avant publication au niveau de publication.
 
    * Le niveau Publication comprend deux noeuds ou plus au sein d’une seule ferme de publication.
@@ -135,7 +136,6 @@ Cette nouvelle architecture comporte différents éléments principaux :
       * Par défaut, il existe une seule ferme de publication dans la région Principale, mais [zones de publication supplémentaires](/help/operations/additional-publish-regions.md) peut être sous licence.
 
       * Les utilisateurs finaux, ou les visiteurs du site, consultent le site web via le service AEM Publish.
-
 
 * Pour AEM Assets as a Cloud Service :
 
@@ -151,9 +151,9 @@ Cette nouvelle architecture comporte différents éléments principaux :
 
    * Lorsque le contenu est approuvé à partir du niveau Auteur, cela indique qu’il peut être activé et donc envoyé au calque de persistance du niveau de publication, ou, facultativement, au niveau d’aperçu. Cela se produit au moyen du service de réplication, un pipeline de middleware. Ce pipeline reçoit le nouveau contenu ; les différents nœuds du service de publication individuels (ou du service d’aperçu) s’abonnent au contenu envoyé vers le pipeline.
 
-      >[!NOTE]
-      >
-      >Pour plus d’informations, voir [Réplication](/help/operations/replication.md).
+     >[!NOTE]
+     >
+     >Pour plus d’informations, voir [Réplication](/help/operations/replication.md).
 
    * Pour gérer l’application AEM as a Cloud Service, les développeurs et administrateurs utilisent un service CI/CD (Continuous Integration/Continuous Delivery) disponible via [Cloud Manager](/help/overview/what-is-new-and-different.md#cloud-manager). Cela inclut les déploiements de code et de configuration à l’aide du CI/CD Pipeline de Cloud Manager. Tout ce qui a trait à la surveillance, à la maintenance et à la résolution des problèmes (les fichiers journaux, par exemple) est présenté aux clients dans Cloud Manager.
 

@@ -98,7 +98,6 @@ Consultez les ressources d’aide autonome sur la configuration et le déploieme
 >1. [Contacter l’équipe d’assistance Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=fr)
 >2. Explorer les [communautés et forums Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)
 
-
 <br>
 
 ## Passage à Adobe Experience Manager as a Cloud Service {#move-to-cloud}
@@ -191,7 +190,6 @@ Lors de la phase de post-activation, vous devez veiller à nettoyer les fichiers
 >2. [CRXDE Lite](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-as-a-cloud-service/repository-browser.html?lang=fr)
 >3. [Gestion des journaux](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html?lang=fr)
 
-
 <br>
 
 ### Outils et ressources
@@ -204,4 +202,3 @@ Lors de la phase de post-activation, vous devez veiller à nettoyer les fichiers
 > Pour obtenir une aide supplémentaire, vous pouvez :
 >1. [Contacter l’équipe d’assistance Experience Manager](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=fr)
 >2. Explorer les [communautés et forums Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=fr)
-
