@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: ca4046a94301cebae9e7a46e055977419fedd14e
+source-git-commit: 060956eee5136924263e4df5bd756670384e8365
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 32%
+source-wordcount: '1172'
+ht-degree: 28%
 
 ---
 
@@ -38,12 +38,14 @@ Consultez la vidéo Aperçu de la version d’avril 2023 pour obtenir un résum�
 
 ### Nouvelles fonctionnalités de [!DNL Experience Manager Sites] {#sites-features}
 
-* Exportez des fragments de contenu d’AEM as a Cloud Service vers Adobe Target en tant qu’offres JSON.
+* Exportez des fragments de contenu d’AEM as a Cloud Service à Adobe Target au format JSON et créez les offres JSON correspondantes dans Target.
 * La prise en charge de la pagination et du tri GraphQL, ainsi que des améliorations de la mise en cache interne, permettent désormais d’accroître les performances des applications clientes découplées lors de la récupération de jeux de contenu volumineux d’AEM à l’aide de requêtes et de filtres GraphQL complexes.
 
 ### Nouvelles fonctionnalités de la préversion de [!DNL Experience Manager Sites] {#prerelease-sites}
 
 * Les fragments de contenu et leurs références peuvent désormais être publiés dans la [Service d’aperçu AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-environments.html?lang=en#access-preview-service) en utilisant la variable [Console de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/content-fragments/content-fragments-console.html?lang=en), permettant aux utilisateurs de prévisualiser l’expérience finale sur une application d’aperçu découplée avant la mise en ligne.
+* Les images peuvent désormais être optimisées dynamiquement pour une diffusion web dans des scénarios sans interface utilisateur via GraphQL AEM. [Variables de requête](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/how-to/images.html?lang=en#query-variables) peut être défini dans les requêtes GraphQL pour permettre aux applications clientes découplées de demander des images optimisées en conséquence à partir d’AEM.
+* Balises sur [Variations de fragments de contenu](https://experienceleague.adobe.com/docs/experience-manager-65/assets/content-fragments/content-fragments-variations.html?lang=en) peut désormais être généré au format JSON à l’aide de l’API de diffusion de contenu GraphQL AEM.
 
 ## [!DNL Experience Manager Assets] as a [!DNL Cloud Service] {#assets}
 
