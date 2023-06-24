@@ -4,10 +4,10 @@ seo-title: Repository Browser
 description: Le navigateur de référentiel fournit une vue en lecture seule dans le référentiel pour tous les environnements sur les niveaux de création, de publication et de prévisualisation.
 seo-description: The repository browser provides a read-only view into the repository for all environments on author, publish, and preview tiers.
 exl-id: 22473a97-8f7b-4014-b885-1233116aeda6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 94%
+source-wordcount: '844'
+ht-degree: 56%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 ## Présentation {#introduction}
 
-Le navigateur de référentiel est un outil de développement qui fournit une vue en lecture seule dans le référentiel pour tous les environnements sur les niveaux de création de publication et de prévisualisation. Il est conçu pour faciliter l’affichage de la structure de contenu afin de faciliter l’affichage ou le débogage du contenu.
+L’explorateur de référentiel est un outil de développement qui fournit une vue en lecture seule du référentiel pour tous les environnements sur les niveaux de création, de publication et d’aperçu. Il est conçu pour faciliter l’affichage de la structure de contenu afin de faciliter l’affichage ou le débogage du contenu.
 
 Accessible à partir de la Developer Console, il peut être utilisé pour parcourir le référentiel d’une instance de création ou de publication pour un environnement sélectionné.
 
@@ -41,7 +41,7 @@ Pour accéder à l’explorateur de référentiels :
 * Les utilisateurs doivent disposer du rôle **Développeur Cloud Manager** dans l’Admin Console pour afficher les instances de création et de publication.
 * En outre, pour la création, les utilisateurs disposant du profil de produit Utilisateurs AEM peuvent afficher le navigateur de référentiel avec un accès en lecture minimal ; les autorisations de l’utilisateur sont respectées lors de la navigation dans le référentiel. Les utilisateurs disposant du profil produit Administrateurs AEM peuvent afficher le navigateur de référentiel avec un accès en lecture complet.
 
-Pour plus d’informations sur la configuration des autorisations des utilisateurs, consultez la [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/requirements/setting-up-users-and-roles.html?lang=fr).
+Pour plus d’informations sur la configuration des autorisations des utilisateurs, consultez la [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/users-and-roles.html).
 
 ### Lancement du navigateur de référentiel {#launching-the-repository-browser}
 
@@ -52,29 +52,29 @@ Le navigateur de référentiel peut être lancé en suivant les étapes ci-desso
    ![repobrowser1](/help/implementing/developing/tools/assets/repobrowser1.png)
 
 1. Cliquez ensuite sur l’onglet **Navigateur de référentiel**.
-1. Sélectionnez une capsule à créer, à publier ou à prévisualiser en cliquant sur la liste déroulante **Capsule**.
+1. Sélectionnez une capsule correspondant à l’auteur, à la publication ou à la prévisualisation en cliquant sur le bouton **Capsule** liste déroulante
 
    ![repobrowser2](/help/implementing/developing/tools/assets/repobrowser2.png)
 
-1. Lancez le navigateur de référentiel en cliquant sur le lien **Ouvrir l’explorateur de référentiels** plus bas. Le navigateur correspondant à une instance représentative (capsule) pour le niveau sélectionné est ainsi lancé. Le navigateur correspondant à une instance représentative (capsule) pour le niveau sélectionné est ainsi lancé. Notez que vous ne pouvez pas contrôler la capsule spécifique pour le niveau lancé.
+1. Lancez l’explorateur de référentiel en cliquant sur le **Ouvrir l’explorateur de référentiels** plus bas. Le navigateur correspondant à une instance représentative (pod) pour le niveau sélectionné est lancé. Vous ne pouvez pas contrôler la capsule spécifique pour ce niveau lancé.
 
 ## Fonctions {#features}
 
 ### Navigation dans la hiérarchie {#navigate-the-hierarchy}
 
-Vous pouvez utiliser le volet de navigation de gauche pour naviguer dans la hiérarchie du contenu. Cliquez sur chaque dossier ou nœud pour afficher ses enfants. La structure de dossiers reflète l’arborescence de ressources Sling, qui est un super-ensemble de l’arborescence de nœuds JCR.
+Vous pouvez utiliser le volet de navigation de gauche pour naviguer dans la hiérarchie du contenu. Cliquez sur chaque dossier ou noeud pour afficher ses enfants. La structure de dossiers reflète l’arborescence de ressources Sling, qui est un super-ensemble de l’arborescence de nœuds JCR.
 
 ![repobrowser3](/help/implementing/developing/tools/assets/repobrowser3.png)
 
-Vous pouvez également accéder directement à un chemin d’accès en le saisissant dans le champ **Chemin d’accès**, comme illustré ci-dessous. Cela permet également de développer son emplacement dans l’affichage hiérarchique du contenu sur la gauche.
+Vous pouvez également accéder directement à un chemin d’accès en le saisissant dans le champ **Chemin d’accès**, comme illustré ci-dessous. Ce chemin d’accès développe également son emplacement dans la vue de hiérarchie du contenu sur la gauche.
 
 ![repobrowser14](/help/implementing/developing/tools/assets/repobrowser14.png)
 
-Lorsque vous cliquez sur un dossier sur la gauche, le champ Chemin d’accès est automatiquement renseigné avec son emplacement. Cela s’avère utile pour copier et coller la valeur en vue d’une utilisation ultérieure.
+Lorsque vous cliquez sur un dossier à gauche, le champ Chemin est automatiquement renseigné avec son emplacement. Cette fonctionnalité est utile pour copier et coller la valeur en vue d’une utilisation ultérieure.
 
-De plus, lorsque vous cliquez sur un dossier, l’URL est modifiée dynamiquement afin d’inclure le chemin d’accès à ce dossier. Ainsi, les URL peuvent être ajoutées aux signets.
+En outre, lorsque vous cliquez sur un dossier, l’URL est modifiée dynamiquement afin d’inclure le chemin d’accès à ce dossier. Cette fonctionnalité permet d’utiliser des URL pouvant être signées.
 
-Pour la publication, par défaut, le navigateur de référentiel affiche uniquement le contenu public, de sorte que certains dossiers comme `/conf` ou `/home` ne seront pas visibles.
+Pour la publication, par défaut, l’explorateur de référentiel affiche uniquement le contenu public, de sorte que certains dossiers comme `/conf` ou `/home` ne sont pas visibles.
 
 Pour rendre ces emplacements visibles, procédez comme suit.
 
@@ -95,7 +95,7 @@ Pour rendre ces emplacements visibles, procédez comme suit.
    ![repobrowser10](/help/implementing/developing/tools/assets/repobrowser10.png)
 
 1. Patientez quelques minutes, puis ouvrez la console **Création AEM**.
-1. Ajoutez le groupe correspondant au nouveau profil de produit en tant que membre du groupe administrateurs. Pour ce faire, cliquez sur **Outils - Sécurité - Groupes de création**, puis cliquez sur le groupe **Administrateurs**. Ajoutez ensuite le groupe comme illustré ci-dessous.
+1. Ajoutez le groupe correspondant au nouveau profil de produit en tant que membre du groupe de l’administrateur en cliquant sur **Outils - Sécurité - Groupes sur l’auteur**, puis cliquez sur le bouton **administrateurs** groupe. Ajoutez ensuite le groupe comme illustré ci-dessous.
 
    ![repobrowser11](/help/implementing/developing/tools/assets/repobrowser11.png)
 
@@ -103,7 +103,7 @@ Pour rendre ces emplacements visibles, procédez comme suit.
 
    ![repobrowser12](/help/implementing/developing/tools/assets/repobrowser12.png)
 
-1. De bonnes pratiques de sécurité demandent que vous supprimiez le nouveau groupe **DEV - AEM Administrators Publish** du groupe Administrateurs de **création** afin que le nouveau groupe reste isolé pour la publication.
+1. En tant que bonne pratique de sécurité, supprimez la nouvelle **DEV - Publication des administrateurs AEM** du groupe de l’administrateur sur **author** le nouveau groupe est donc isolé pour la publication.
 
    ![repobrowser13](/help/implementing/developing/tools/assets/repobrowser13.png)
 
@@ -111,17 +111,17 @@ Pour rendre ces emplacements visibles, procédez comme suit.
 
 ### Affichage des propriétés JCR {#view-jcr-properties}
 
-Cliquez sur un nœud pour afficher ses propriétés JCR dans le volet de droite du navigateur de navigation. Vous trouverez ci-dessous un exemple de nœud `experience-fragments`.
+Cliquez sur un noeud pour afficher ses propriétés JCR dans le volet de droite du navigateur de navigation. Vous trouverez ci-dessous un exemple de nœud `experience-fragments`.
 
 ![repobrowser4](/help/implementing/developing/tools/assets/repobrowser41.png)
 
 ### Afficher le contenu {#view-content}
 
-Vous pouvez utiliser le navigateur de référentiel pour afficher le contenu en cliquant sur une ressource dans le volet de navigation. Un aperçu s’ouvre alors sur le côté droit du navigateur, dans un onglet nommé en fonction de la ressource correspondante.
+Vous pouvez utiliser l’explorateur de référentiel pour afficher le contenu. Cliquez sur une ressource dans le volet de navigation pour ouvrir un aperçu dans la partie droite du navigateur, sous un onglet nommé en fonction de la ressource correspondante.
 
 ![repobrowser6](/help/implementing/developing/tools/assets/repobrowser61.png)
 
-L’aperçu est actuellement disponible pour les types d’image dans la liste ci-dessous :
+L’aperçu est disponible pour les types d’image suivants :
 
 * apng
 * avif

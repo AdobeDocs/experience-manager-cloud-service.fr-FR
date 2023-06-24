@@ -2,10 +2,10 @@
 title: Accès aux journaux et gestion des journaux
 description: Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 27%
+source-wordcount: '266'
+ht-degree: 18%
 
 ---
 
@@ -48,7 +48,7 @@ Pour télécharger les fichiers journaux d’un environnement spécifique, la co
 $ aio cloudmanager:download-logs --programId 5 1884 author aemerror
 ```
 
-Vous pouvez également consulter les logs de queue à partir de l&#39;interface de ligne de commande.
+En outre, vous pouvez afficher les journaux à l’aide de l’interface de ligne de commande.
 
 ```shell
 $ aio cloudmanager:tail-log --programId 5 1884 author aemerror
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Ressources supplémentaires {#resources}
 
-Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande d’Adobe I/O :
+Pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande d’Adobe Developer, reportez-vous aux ressources supplémentaires suivantes :
 
-* [Documentation de l’API Cloud Manager](https://www.adobe.io/apis/experiencecloud/cloud-manager/docs.html)
-* [Interface de ligne de commande d’Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Documentation de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
+* [Interface de ligne de commande d’Adobe Developer](https://github.com/adobe/aio-cli-plugin-cloudmanager)

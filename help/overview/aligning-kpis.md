@@ -2,10 +2,10 @@
 title: Alignement des indicateurs de performance clés
 description: Alignement des indicateurs de performance clés
 exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 100%
+source-wordcount: '487'
+ht-degree: 43%
 
 ---
 
@@ -14,29 +14,29 @@ ht-degree: 100%
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
 >title="Alignement des indicateurs de performance clés"
->abstract="Dans un monde numérique, il est possible de presque tout mesurer. Choisir des IPC appropriés pour votre mise en œuvre d’Adobe Experience Manager aidera votre équipe à se concentrer sur ce qui compte le plus."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/assessing-kpis.html?lang=fr" text="Évaluation des indicateurs de performance clés"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/best-practices/choose-right-team.html?lang=fr" text="Choix de la bonne équipe"
+>abstract="Dans un monde numérique, il est possible de presque tout mesurer. Le choix des indicateurs de performance clés appropriés pour votre mise en oeuvre Adobe Experience Manager permet à votre équipe de se concentrer sur ce qui compte le plus."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=en" text="Évaluation des indicateurs de performance clés"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=en" text="Choix de la bonne équipe"
 
-Dans un monde numérique, il est possible de presque tout mesurer. En choisissant trois IPC pour votre mise en œuvre d’Adobe Experience Manager, vous aiderez votre équipe à se concentrer sur ce qui compte le plus.
-
-
-## **Suivez ces 6 étapes afin de déterminer ce que vous souhaitez mesurer et la manière d’y arriver**
+Dans un monde numérique, il est possible de presque tout mesurer. Le choix de trois indicateurs clés de performance pour votre mise en oeuvre Adobe Experience Manager permet à votre équipe de se concentrer sur ce qui compte le plus.
 
 
-1. **Commencez par vos objectifs commerciaux.** Cela peut être par exemple d’augmenter les recettes en ligne, de réduire les dépenses d’exploitation ou de réduire les frais juridiques associés aux violations liées à la gestion des droits numériques (DRM).
+## **Suivez ces six étapes pour décider de ce que vous souhaitez mesurer et comment**
 
-1. **En fonction de votre objectif commercial, déterminez vos cibles.** Vos cibles représentent les résultats spécifiques que vous espérez atteindre en adoptant Experience Manager en tant que plateforme de gestion de contenu. Si votre objectif est d’augmenter les recettes en ligne, votre cible peut être d’atteindre une augmentation de 2 points de conversion pour toutes les pages accueillant du contenu marketing. Si votre objectif est de réduire les dépenses d’exploitation, votre cible pourrait être d’améliorer de 20 % la productivité des équipes responsables de la création du contenu numérique.
 
-   Idéalement, chaque cible doit avoir un chiffre de référence, tel que votre taux de conversion actuel pour une catégorie de pages donnée. Les chiffres de référence relatifs aux visites sur le site, aux conversions ou aux recettes en ligne sont relativement faciles à trouver. Pour les cibles relatives à la productivité ou au délai de mise sur le marché, il vous faudra certainement travailler à calculer un niveau de référence. Cette étape vaut la peine d’être réalisée car des cibles claires vous aideront à optimiser la valeur de votre investissement dans Experience Manager.
+1. **Commencez par vos objectifs commerciaux.** Par exemple, vos objectifs professionnels peuvent être d’augmenter les recettes en ligne, de réduire les dépenses opérationnelles ou de réduire les frais juridiques liés aux violations des Digitaux Rights Management (DRM).
 
-1. **Pour chaque cible, identifiez des indicateurs de performance.** Par exemple, si votre cible est de réduire de 100 000 $ les coûts juridiques associés aux violations de DRM, un indicateur de performances efficace peut être : « 100 % des ressources expirées sont supprimés des propriétés numériques au plus tard à la date d’expiration ». Essayez de trouver plusieurs indicateurs pour chaque cible. Si vous commencez avec 2 à 3 objectifs commerciaux et 3 à 5 cibles, vous pourriez obtenir une liste de 15 à 20 indicateurs de performances.
+1. **En fonction de votre objectif commercial, déterminez vos cibles.** Vos objectifs sont les résultats spécifiques que vous espérez atteindre en adoptant Experience Manager comme plateforme de gestion de contenu. Si votre objectif est d’augmenter les recettes en ligne, votre cible peut être d’atteindre une augmentation de 2 points de conversion pour toutes les pages accueillant du contenu marketing. Si votre objectif est de réduire les dépenses d’exploitation, votre cible pourrait être d’améliorer de 20 % la productivité des équipes responsables de la création du contenu numérique.
 
-1. **Choisissez les trois indicateurs qui comptent le plus pour votre entreprise.** Voilà vos IPC. Ces derniers peuvent s’aligner sur trois objectifs commerciaux (qui seront chacun défendus par un cadre supérieur de niveau C différent) ou les 3 IPC peuvent soutenir le même objectif, si tout le monde est d’accord sur le fait qu’il s’agit du plus important.
+   Idéalement, chaque cible doit avoir un chiffre de référence, tel que votre taux de conversion actuel pour une catégorie de pages donnée. Les chiffres de référence relatifs aux visites sur le site, aux conversions ou aux recettes en ligne sont relativement faciles à trouver. Pour les objectifs relatifs à la productivité ou au temps de mise sur le marché, il faut probablement du travail pour calculer une référence. Cela vaut la peine, cependant, parce qu&#39;avoir des objectifs clairs vous aide à obtenir plus de valeur de votre investissement en Experience Manager.
 
-1. **Créer une méthodologie mesurable pour chaque IPC.** Une fois que vous avez choisi vos IPC, téléchargez notre modèle de méthodologie des IPC qui vous guidera tout au long du processus.
+1. **Pour chaque cible, identifiez des indicateurs de performance.** Par exemple, votre objectif est peut-être de réduire de 100 000 $ les coûts juridiques associés aux violations de DRM. Un bon indicateur de performance peut être &quot;100 % des ressources expirées sont supprimées des propriétés numériques au plus tard à la date d’expiration&quot;. Essayez de trouver plusieurs indicateurs pour chaque cible. Si vous commencez avec 2 à 3 objectifs commerciaux et 3 à 5 cibles, vous pourriez obtenir une liste de 15 à 20 indicateurs de performances.
 
-1. **Définissez l’audience pour chaque indicateur de performance clé.** Votre dernière tâche pour cette semaine est d’identifier le groupe d’acteurs les plus impliqués pour chaque IPC. La semaine suivante, vous travaillerez avec chaque groupe pour confirmer les indicateurs de performance clés, affiner la méthodologie et convenir du format et de la planification de vos rapports.
+1. **Choisissez les trois indicateurs qui comptent le plus pour votre entreprise.** Ces indicateurs sont vos indicateurs clés de performance. Ils peuvent s&#39;aligner sur trois objectifs commerciaux — chacun défendu par un cadre de niveau C différent — ou les trois IPC peuvent soutenir le même objectif, si tout le monde s&#39;accorde à dire que c&#39;est le plus important.
+
+1. **Créer une méthodologie mesurable pour chaque IPC.** Une fois vos indicateurs de performance clés sélectionnés, téléchargez le modèle de méthodologie des indicateurs de performance clés de l’Adobe, qui vous guide tout au long du processus.
+
+1. **Définissez l’audience pour chaque indicateur de performance clé.** Votre dernière tâche pour cette semaine est d’identifier le groupe d’acteurs les plus impliqués pour chaque IPC. La semaine prochaine, vous collaborerez avec chaque groupe pour confirmer les indicateurs de performance clés, affiner la méthodologie et vous mettre d’accord sur le format et le timing de vos rapports.
 
 >[!TIP]
 >
