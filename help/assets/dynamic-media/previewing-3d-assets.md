@@ -5,10 +5,10 @@ contentOwner: Rick Brough
 feature: 3D Assets
 role: User
 exl-id: e873bd25-f841-4063-824f-7e48f40bb678
-source-git-commit: 5da4be3ec9af6a00cce8d80b8eea7f7520754a1d
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '586'
-ht-degree: 100%
+source-wordcount: '631'
+ht-degree: 83%
 
 ---
 
@@ -19,15 +19,27 @@ ht-degree: 100%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/previewing-3d-assets.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-Experience Manager prend en charge le chargement, la diffusion et l’aperçu interactif des ressources 3D dans le cadre du processus de création.
+Experience Manager Assets prend en charge l’ingestion, la gestion, la prévisualisation et la diffusion de ressources 3D.
 
-La visionneuse 3D interactive est disponible dans la page de détails de la ressource dans Experience Manager. La visionneuse comprend, entre autres, un ensemble de contrôles de caméra interactifs qui permettent d’orbiter, de zoomer et de faire un panoramique sur la ressource 3D.
+Vous pouvez prévisualiser des ressources 3D à l’aide des rendus de miniature générés automatiquement ou de la visionneuse 3D interactive. La visionneuse 3D interactive est disponible dans la page de détails de la ressource dans Experience Manager. La visionneuse comprend, entre autres, un ensemble de commandes de caméra interactives qui vous permettent de faire pivoter, de zoomer et de faire un panoramique sur la scène 3D.
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/dynamic-media/assets-3d.md). -->
 
-## Formats pris en charge pour la prévisualisation 3D dans Experience Manager {#supported-3d-previewing-assets}
+## Formats pris en charge pour l’aperçu des miniatures dans Experience Manager{#supported-thumbnail-previewing-assets}
 
-L’aperçu 3D interactif prend en charge les formats de fichier suivants :
+Experience Manager génère par défaut des miniatures pour les formats de fichiers suivants :
+
+| Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
+|---|---|---|---|
+| GLB | Transmission GL binaire | model/gltf-binary |  |
+| FBX | Autodesk FBX | application/octet-stream |  |
+| OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
+| 3DS | Modèle 3D Studio | application/x-3ds |  |
+| USDz | Description de scène universelle | model/vnd.usdz+zip |  |
+
+## Formats pris en charge pour l’aperçu 3D interactif dans Experience Manager{#supported-3d-previewing-assets}
+
+Experience Manager prend nativement en charge l’aperçu 3D interactif pour les formats de fichiers suivants :
 
 | Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|
@@ -35,8 +47,7 @@ L’aperçu 3D interactif prend en charge les formats de fichier suivants :
 | GLTF | Format de transmission GL | model/gltf+json | Voir la **Note** ci-dessous. |
 | OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
 | STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
-| DN | Adobe Dimension | model/x-adobe-dn | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
-| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | Prise en charge de l’assimilation uniquement, prévisualisation non disponible. |
+
 
 >[!NOTE]
 >
@@ -80,7 +91,7 @@ Consultez [Formats pris en charge pour la prévisualisation 3D](#supported-3d-pr
    | **Effectuer un panoramique avec la caméra** | Vous pouvez effectuer un panoramique vers la gauche, la droite, le haut ou le bas. | Clic droit + glisser. | Appuyez avec deux doigts + glisser. |
    | **Faire un zoom avec la caméra** | Se déplacer dans et hors des zones de la scène 3D. | Roue de défilement. | Appuyer avec deux doigts en les rapprochant. |
    | **Recentrer la caméra** | Recentrez la caméra sur un point d’un objet dans la scène 3D. | Double-cliquer. | Double appui. |
-   | **Réinitialiser** | Près du coin inférieur droit de la page, sélectionnez l’icône Réinitialiser pour rétablir le point d’affichage cible au centre du fichier 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |  |  |
-   | **Mode Plein écran** | Pour passer en mode Plein écran, dans le coin inférieur droit de la page, sélectionnez l’icône Plein écran. |  |  |
+   | **Réinitialiser** | Près du coin inférieur droit de la page, sélectionnez l’icône Réinitialiser pour rétablir le point d’affichage cible au centre du fichier 3D. De plus, Réinitialiser rapproche ou éloigne l’angle de vue pour afficher la ressource dans son intégralité et à une taille raisonnable. |   |   |
+   | **Mode Plein écran** | Pour passer en mode Plein écran, dans le coin inférieur droit de la page, sélectionnez l’icône Plein écran. |   |   |
 
 1. Lorsque vous avez terminé, en haut à droite de la page, sélectionnez **[!UICONTROL Fermer]**.

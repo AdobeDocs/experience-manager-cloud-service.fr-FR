@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: e848aa77-7829-4adc-8b88-0279791a4525
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: d00e1f49438ad36339a09f8914496faeda3d4de6
 workflow-type: tm+mt
-source-wordcount: '1025'
-ht-degree: 99%
+source-wordcount: '1030'
+ht-degree: 89%
 
 ---
 
@@ -23,7 +23,7 @@ Les éléments essentiels concernant la conversion des ressources à l’aide de
 * [Formats de fichiers Adobe](#adobe-formats) clés générés par les applications et services Adobe, notamment [!DNL Adobe Photoshop], [!DNL Adobe InDesign], [!DNL Adobe Illustrator], [!DNL Adobe XD], [!DNL Adobe Dimension] et [!DNL Adobe Acrobat] ou PDF.
 * [Formats de fichiers d’imagerie](#image-formats) clés.
 * [Formats de fichiers Camera Raw](#camera-raw-formats) pour un large éventail d’appareils photo, dont Canon, Nikon, Fujifilm, Olympus et d’autres fabricants (optimisés par Adobe Camera Raw).
-* [Formats de documents](#document-formats) courants, y compris les formats Microsoft Office et Open Document.
+* Courant [formats de document](#document-formats), y compris les formats Microsoft® Office et Open Document.
 * Large éventail de formats [vidéo](#video-formats) et [audio](#audio-formats).
 
 Le tableau suivant décrit le niveau de prise en charge pour chaque format.
@@ -41,6 +41,7 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 | AI | ✓ | - | ✓ | ✓ |
 | COLLAGE | - | - | ✓ | - |
 | DN | ✓ | - | ✓ | ✓ |
+| SBSAR | ✓ | - | ✓ | ✓ |
 | IDEAS | - | - | ✓ | - |
 | INDD | ✓ | - | ✓ | ✓ * |
 | INDT | - | - | ✓ | - |
@@ -50,7 +51,7 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 | PSD | ✓ | - | ✓ | ✓ |
 | XD | ✓ | - | ✓ | ✓ |
 
-\* Pour les fichiers [!DNL Adobe InDesign] (INDD), la taille du rendu est déterminée par l’aperçu incorporé dans le fichier. Configurez les préférences dans [!DNL InDesign] (**[!UICONTROL Préférences > Gestion des fichiers > Toujours enregistrer les images d’aperçu avec les documents, Taille d’aperçu]**) pour incorporer un rendu plus grand.
+\* Pour [!DNL Adobe InDesign] fichiers (INDD), la taille des rendus est déterminée par l’aperçu incorporé dans le fichier INDD. Configurez les préférences dans [!DNL InDesign] (**[!UICONTROL Préférences > Gestion des fichiers > Toujours enregistrer les images d’aperçu avec les documents, Taille d’aperçu]**) afin que vous puissiez incorporer des rendus plus volumineux.
 
 ## Formats d’image {#image-formats}
 
@@ -63,7 +64,7 @@ Le tableau suivant décrit le niveau de prise en charge pour chaque format.
 | PNG | ✓ | ✓ | ✓ | ✓ |
 | RVB | ✓ | ✓ | ✓ | ✓ |
 | RGBA | ✓ | ✓ | ✓ | ✓ |
-| SGI | ✓ | ✓ | ✓ | ✓ |
+| SGI™ | ✓ | ✓ | ✓ | ✓ |
 | SVG | ✓ | - | ✓ | ✓ |
 | TIFF | ✓ | ✓ | ✓ | - |
 | WebP | ✓ | ✓ | ✓ | ✓ |
@@ -77,13 +78,16 @@ Cnsultez également la section [Utilisation de ressources 3D dans Dynamic Medi
 | Format | Stockage | Contrôle de version | Workflow | Publication | Contrôle d’accès | Aperçu de miniature | Aperçu 3D | Diffusion Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
-| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| gLB | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | - | ✓ | - | ✓ | - |
-| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ | ✓ |
-| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | - | - | ✓ |
+| FBX | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| 3DS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - |
+| USDz | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | - | ✓ |
+| SBSAR | ✓ | ✓ | ✓ | - | ✓ | ✓ | - | - |
 
-## Formats [!DNL Camera RAW]  {#camera-raw-formats}
+## Formats [!DNL Camera Raw]  {#camera-raw-formats}
 
 | Format de fichier | Génération de miniatures | Extraction de métadonnées | Largeur/Hauteur |
 | ----------- | -------------------- | ------------------- | ------------ |
@@ -181,20 +185,20 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 * Windows Media Video (WMV) / ASF (.wmv, .asf)
 * AVI (8 bits/10 bits non compressés) (.avi)
 * MP4 (.mp4, .m4a, .m4v)
-* Microsoft Digital Video Recording (DVR-MS) (.dvr-ms)
+* Enregistrement vidéo numérique Microsoft® (DVR-MS) (.dvr-ms)
 * Matroska/WebM (.mkv)
 * WAVE/WAV (.wav)
 * QuickTime (.mov)
 
 ## Conseils et restrictions {#limitations-and-tips}
 
-* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 15 Go. Lors du chargement de fichiers très volumineux, l’opération d’extraction des métadonnées peut parfois échouer.
+* Actuellement, la taille de fichier maximale pour l’extraction des métadonnées est d’environ 15 Go. Lors du chargement de ressources volumineuses, l’opération d’extraction de métadonnées échoue parfois.
 
 ## Dynamic Media : formats vidéo d’entrée pris en charge pour le transcodage {#video-dynamic-media-transcoding}
 
 | Extension de fichier vidéo | Conteneur | Codecs vidéo recommandés | Codecs vidéo non pris en charge |
 | --- | --- | --- | --- |
-| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft Video 1 (MS-CRAM) |
+| AVI | A/V Interleave | XVID, DIVX, HDV, MiniDV (DV25), Techsmith Camtasia, Huffyuv, Fraps, Panasonic DVCPro | Indeo3 (IV30), MJPEG, Microsoft® Video 1 (MS-CRAM) |
 | FLV, F4V | Adobe Flash | H264/AVC, Flix VP6, H263, Sorenson | SWF (fichiers d’animation vectorielle) |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
@@ -202,9 +206,9 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 | MP4 | MPEG-4 | H264/AVC (tous les profils) | − |
 | MPG, VOB, M2V, MP2 | MPEG-2 | MPEG-2 | − |
 | MXF ‡ | MXF | Sony XDCAM, MPEG-2, MPEG-4, Panasonic DVCPro | − |
-| OGV, OGG | Ogg | Theora, VP3, Dirac | − |
+| OGV, OGG | OGG | Theora, VP3, Dirac | − |
 | WebM | WebM | Google VP8 | − |
-| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft Screen (MSS2), Microsoft Photo Story (WVP2) |
+| WMV | Windows Media 9 | WMV3 (v9), WMV2 (v8), WMV1 (v7), GoToMeeting (G2M2, G2M3, G2M4) | Microsoft® Screen (MSS2), Microsoft® Photo Story (WVP2) |
 
 ‡ Ce format vidéo n’est pas encore pris en charge pour une utilisation avec les vidéos interactives dans Dynamic Media ou avec lʼannotation dans Experience Manager Assets.
 
@@ -237,7 +241,7 @@ Les formats de documents pris en charge pour les fonctionnalités de gestion des
 
 ## Dynamic Media - Formats d’images pixellisées non prises en charge {#unsupported-raster-image-formats-dm}
 
-Les sous-types suivants de formats de fichiers d’images pixellisées ne sont *pas* pris en charge dans [!DNL Dynamic Media] :
+Les sous-types suivants de formats de fichiers image pixellisés sont : *not* pris en charge dans [!DNL Dynamic Media]:
 
 * Fichiers PNG dont la taille de bloc IDAT est supérieure à 100 Mo.
 * Fichiers PSB.
@@ -253,9 +257,9 @@ Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#supp
 | Extension de fichier 3D | Format de fichier | Type MIME | Remarques |
 |---|---|---|---|
 | GLB | Transmission GL binaire | model/gltf-binary | Inclut les matières et les textures dans une seule ressource. |
-| OBJ | Fichier d’objet 3D WaveFront | application/x-tgif |  |
-| STL | Stéréolithographie | application/vnd.ms-pki.stl |  |
-| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion uniquement ; aucun affichage ni interaction n’est disponible.* USDZ est un format 3D propriétaire qui peut être visualisé en mode natif à l’aide de Safari ou iOS. |
+| OBJ | Fichier d’objet 3D WaveFront | application/x-tgif | |
+| STL | Stéréolithographie | application/vnd.ms-pki.stl | |
+| USDZ | Fichier zip de description de scène universelle | model/vnd.usdz+zip | *Prise en charge de l’ingestion et de la génération de miniatures ; Les aperçus 3D ne sont pas encore pris en charge.* USDZ est un format 3D qui peut être visualisé en mode natif par Safari ou iOS. |
 
 **Voir également**
 
@@ -275,4 +279,3 @@ Voir aussi [Formats 3D pris en charge](/help/assets/file-format-support.md#supp
 >
 >* [Traitement des ressources à l’aide des microservices de ressources](asset-microservices-overview.md)
 >* [Formats de fichiers pris en charge pour le balisage intelligent des ressources textuelles](/help/assets/smart-tags.md#smart-tags-supported-file-formats)
-
