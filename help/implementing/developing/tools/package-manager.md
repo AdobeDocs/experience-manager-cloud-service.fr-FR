@@ -4,10 +4,10 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3782'
-ht-degree: 88%
+source-wordcount: '3780'
+ht-degree: 87%
 
 ---
 
@@ -244,7 +244,7 @@ De nombreuses actions peuvent être entreprises sur un package.
 
    >[!TIP]
    >
-   >Si votre instance comporte de nombreux packages, une structure de dossiers peut être mise en place. Il est alors plus facile de naviguer vers le dossier cible requis avant de créer le nouveau package.
+   >Si votre instance comporte de nombreux packages, il se peut qu’une structure de dossiers soit en place. Il est alors plus facile de naviguer vers le dossier cible requis avant de créer le nouveau package.
 
 1. Dans la boîte de dialogue **Nouveau package**, saisissez les champs suivants :
 

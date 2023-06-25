@@ -3,10 +3,10 @@ title: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DN
 description: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: e6ab7ba91b52d3479a85870e8ffa8e8d2f1e303e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1876'
-ht-degree: 85%
+source-wordcount: '1875'
+ht-degree: 84%
 
 ---
 
@@ -282,4 +282,3 @@ Les fonctionnalités de l’éditeur de texte enrichi de [!DNL Experience Manage
 >* [Configuration des modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md)
 >* [Utilisation de l’éditeur de texte enrichi pour la création](/help/sites-cloud/authoring/fundamentals/rich-text-editor.md)
 >* [Configuration de l’éditeur de texte enrichi pour les sites accessibles](rte-accessible-content.md)
-

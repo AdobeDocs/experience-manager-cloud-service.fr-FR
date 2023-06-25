@@ -5,10 +5,10 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4121'
-ht-degree: 73%
+source-wordcount: '4120'
+ht-degree: 72%
 
 ---
 
@@ -195,10 +195,9 @@ Utilisez l’attribut de requête pour récupérer les propriétés associées �
    >[!NOTE]
    >
    > * Si vous utilisez un modèle statique, superposez le fichier head.jsp à l’adresse suivante :
-      >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >   `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    > * Si vous utilisez un modèle modifiable, superposez le fichier aftemplatedpage.jsp à l’adresse suivante :
-      >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >   `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. Définissez [!DNL paramMap] pour l’attribut de requête. Par exemple, incluez le code suivant dans le fichier .jsp du dossier des applications :
 
@@ -292,7 +291,8 @@ Pour modifier les propriétés :
    * **[!UICONTROL Propriété]**: Spécifiez le type, le sous-type et le format de la propriété. Vous pouvez également spécifier si la propriété sélectionnée est la clé Principale de l’objet de modèle de données.
    * **[!UICONTROL Service]**: Spécifiez l’objet de modèle d’entrée, le type de sortie et les arguments du service. Pour un service Get, vous pouvez spécifier s’il doit renvoyer un tableau .
 
-      ![edit-properties-service](assets/edit-properties-service.png)
+     ![edit-properties-service](assets/edit-properties-service.png)
+
    Boîte de dialogue Modifier les propriétés pour un service get
 
 1. Appuyer **[!UICONTROL Terminé]** pour enregistrer les propriétés, puis **[!UICONTROL Enregistrer]** pour enregistrer le modèle de données de formulaire.
@@ -419,7 +419,7 @@ L’indicateur peut être défini sur l’une des valeurs suivantes :
 
 * **FULL** : FDM effectue la validation en fonction de toutes les contraintes.
 * **OFF** : aucune validation.
-* **BASIC** : FDM effectue la validation en fonction des contraintes « required » et «nullable ».
+* **BASIC**: FDM effectue la validation en fonction de contraintes &quot;requises&quot; et &quot;nullable&quot;.
 
 Si aucune valeur n’est définie pour l’indicateur `ValidationOptions`, la validation **BASIC** est effectuée sur les données d’entrée.
 
@@ -518,7 +518,7 @@ Le tableau suivant répertorie les contraintes des données d’entrée en fonct
  </tbody> 
 </table>
 
-Dans cet exemple, les données d’entrée sont validées en fonction des contraintes maximales, minimales et requises définies dans le fichier Swagger. Les données d’entrée répondent aux critères de validation uniquement si l’ID de commande est présent et que sa valeur est comprise entre 1 et 10.
+Dans cet exemple, les données d’entrée sont validées en fonction des contraintes maximales, minimales et requises définies dans le fichier Swagger. Les données d’entrée ne répondent aux critères de validation que si l’ID de commande est présent et que sa valeur est comprise entre 1 et 10.
 
 ```json
    parameters: [

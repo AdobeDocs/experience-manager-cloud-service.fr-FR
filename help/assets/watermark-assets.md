@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Admin
 exl-id: 210f8925-bd15-4b4a-8714-5a1486eeb49e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '296'
-ht-degree: 91%
+source-wordcount: '295'
+ht-degree: 83%
 
 ---
 
@@ -39,7 +39,7 @@ Pour configurer [!DNL Experience Manager] de façon à appliquer un filigrane à
 
    >[!NOTE]
    >
-   >Si vous avez configuré le profil de filigrane système à l’aide du fichier de configuration `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` (configuration OSGi), vous pouvez continuer à l’utiliser, mais Adobe recommande d’utiliser la nouvelle méthode.
+   >Si vous avez configuré le profil de filigrane du système à l’aide de `com.adobe.cq.assetcompute.impl.profile.WatermarkingProfileServiceImpl.cfg.json` fichier de configuration (configuration OSGi), vous pouvez continuer à l’utiliser, mais Adobe recommande d’utiliser la nouvelle méthode.
 
 
 1. [Création d’un profil de traitement](/help/assets/asset-microservices-configure-and-use.md#create-custom-profile) pour utiliser les microservices de ressources pour appliquer le filigrane.

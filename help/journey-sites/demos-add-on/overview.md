@@ -2,10 +2,10 @@
 title: Parcours du module complémentaire de démonstration d’AEM
 description: Découvrez ici un parcours guidé expliquant comment ajouter facilement le module complémentaire des démonstrations de référence d’AEM à un environnement sandbox avec une configuration minimale d’AEM. Vous pourrez ainsi tester les puissantes fonctionnalités d’AEM avec des exemples riches basés sur les bonnes pratiques.
 exl-id: 8a6d4abf-0832-40e8-9ba6-1ad4ba794ffa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '852'
-ht-degree: 91%
+source-wordcount: '853'
+ht-degree: 83%
 
 ---
 
@@ -15,14 +15,14 @@ Découvrez ici un parcours guidé expliquant comment ajouter facilement le modul
 
 ## Présentation {#introduction}
 
-AEM est une suite d’outils puissants pour la création et la gestion d’expériences numériques. Les auteurs de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il est diffusé par AEM à vos audiences sur l’ensemble des canaux.
+AEM est une suite d’outils puissants pour la création et la gestion d’expériences digitales. Les auteurs de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il est diffusé par AEM à vos audiences sur l’ensemble des canaux.
 
 Sans exemple de contenu et de configuration, il peut être difficile de tester les puissantes fonctionnalités d’AEM pour les nouveaux clients et les clients expérimentés. Le module complémentaire de démonstration de référence d’AEM permet de créer facilement des environnements sandbox préchargés avec des exemples de contenu et préconfigurés selon les dernières instructions relatives aux bonnes pratiques d’Adobe. Avec le module complémentaire, vous pouvez facilement évaluer les fonctionnalités d’AEM Sites et AEM Screens en contexte et avec quasiment aucune configuration.
 
-* **Si vous êtes nouveau dans AEM**, suivre ce parcours est le moyen le plus simple de prendre en main du contenu réel dans un environnement d’AEM réel et fonctionnel pour vous permettre de tester les fonctionnalités et de découvrir les fonctionnalités d’AEM.
+* **Si vous êtes nouveau dans AEM**, suivre ce parcours est le moyen le plus simple de prendre en main du contenu réel dans un environnement d’AEM réel et pleinement opérationnel pour vous permettre de tester les fonctionnalités et de découvrir les fonctionnalités d’AEM.
 * **Si vous êtes un utilisateur AEM expérimenté**, suivre ce parcours est le moyen le plus simple de configurer un environnement de démonstration distinct à des fins de test ou de créer un PDC à l’aide d’une nouvelle fonctionnalité.
 
-Quel que soit votre besoin, si vous avez besoin d’un environnement AEM rempli d’exemple de contenu réaliste et entièrement fonctionnel, la configuration d’un sandbox avec le module complémentaire de démonstration de référence d’AEM est pour vous. Continuez à lire !
+Quel que soit votre besoin, si vous avez besoin d’un environnement AEM rempli de contenu d’exemple réaliste, fonctionnel, la configuration d’un environnement de test avec le module complémentaire de démonstration de référence AEM est pour vous. Continuez à lire !
 
 ## Parcours de documentation AEM {#documentation-journeys}
 

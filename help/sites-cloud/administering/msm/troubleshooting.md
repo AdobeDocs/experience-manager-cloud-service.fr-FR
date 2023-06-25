@@ -4,10 +4,10 @@ description: Découvrez comment résoudre les problèmes les plus courants liés
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 88%
+source-wordcount: '763'
+ht-degree: 87%
 
 ---
 
@@ -61,7 +61,7 @@ Connaître ces propriétés peut également s’avérer utile afin que vous puis
 
 ## FAQ {#faq}
 
-Vous trouverez ci-dessous quelques questions fréquentes concernant MSM et la Live Copy.
+Voici quelques questions fréquemment posées relatives à MSM et Live Copy.
 
 ### Pourquoi certaines propriétés (par exemple le titre ou les annotations) ne sont-elles pas mises à jour lors d’un déploiement MSM ? {#missing-properties}
 

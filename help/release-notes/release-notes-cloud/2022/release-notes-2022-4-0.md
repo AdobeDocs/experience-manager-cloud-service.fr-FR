@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2022.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2022.4.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 6c86838a-cabf-4770-b1ae-618af70193a2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 91%
+source-wordcount: '569'
+ht-degree: 87%
 
 ---
 
@@ -72,7 +72,7 @@ Il est vivement recommandé de mettre à jour votre projet Maven avec la derniè
 
 ### Dépréciation de TLS 1.0 et 1.1
 
-À compter du 30 juin 2022, Experience Manager as a Cloud Service devra disposer d’une communication réseau et d’un échange de données plus sécurisés avec les systèmes utilisateurs. AEM a l’intention d’utiliser exclusivement le protocole TLS (Transport Layer Security), 1.2. Les anciennes versions de TLS 1.0 et 1.1 sont désormais obsolètes.
+À compter du 30 juin 2022, l’as a Cloud Service Experience Manager devra disposer d’une communication réseau plus sécurisée et d’un échange de données avec les systèmes utilisateurs. AEM a l’intention d’utiliser exclusivement le protocole TLS (Transport Layer Security), 1.2. Les anciennes versions de TLS 1.0 et 1.1 sont désormais obsolètes.
 
 Si vous continuez à utiliser des versions antérieures à TLS 1.0 et 1.1, vous risquez de perdre l’accès à Experience Manager as a Cloud Service.
 

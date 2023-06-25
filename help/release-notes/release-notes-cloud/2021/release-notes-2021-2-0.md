@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.2.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.2.0. »
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1234'
-ht-degree: 95%
+source-wordcount: '1232'
+ht-degree: 92%
 
 ---
 
@@ -78,7 +78,7 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 * Propriétés étendues de la console de produits pour afficher les ressources liées et les fragments d’expérience, y compris les actions permettant d’accéder rapidement au contenu associé.
 
-* Publication du site de référence de CIF Venia – 2021.02.24 qui comprend les derniers composants principaux de CIF version 1.8.0. Pour plus d’informations, consultez [Site de référence de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24).
+* Site de référence CIF Venia - 2021.02.24 qui comprend la dernière version des composants principaux CIF v1.8.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) pour plus d’informations.
 
 * Publication des composants principaux CIF version 1.8.0. Reportez-vous à [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) pour plus de détails.
 
@@ -91,7 +91,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.2.0 est
 ### Nouveautés {#what-is-new-cloud-manager}
 
 
-* Les clients Assets peuvent désormais choisir quand et où déployer leur instance de Brand Portal en libre-service via l’interface utilisateur de Cloud Manager. Pour un programme standard (autre que l’environnement de test – Sandbox) avec la solution Assets, Brand Portal peut désormais être mis en service sur l’environnement de production. L’approvisionnement ne peut être effectué qu’une seule fois sur l’environnement de production.
+* Les clients Assets peuvent désormais choisir quand et où déployer leur instance de Brand Portal en libre-service via l’interface utilisateur de Cloud Manager. Pour un programme ordinaire (autre qu’un environnement de test) avec la solution Assets, Brand Portal peut désormais être configuré dans l’environnement de production. L’approvisionnement ne peut être effectué qu’une seule fois sur l’environnement de production.
 
 * L’archétype de projet AEM utilisé dans la création de projet et de sandbox a été mis à jour à la version 25.
 

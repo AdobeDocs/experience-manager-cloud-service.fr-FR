@@ -2,9 +2,9 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui sert de base à la nouvelle page.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3294'
 ht-degree: 80%
 
 ---
@@ -356,7 +356,7 @@ When creating a new editable template, the value is copied from the template typ
 Si vous avez créé un modèle qui peut servir de base pour d’autres modèles, vous pouvez le copier en tant que type de modèle.
 
 1. Créez un modèle qui servira de base pour votre type de modèle. Pour ce faire, procédez comme vous le feriez pour n’importe quel modèle de page, [en suivant ces instructions](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author).
-1. À l’aide de CRXDE Lite, copiez le nouveau modèle depuis le nœud `templates` dans le nœud `template-types` sous le [dossier de modèles](#template-folders).
+1. À l’aide de CRXDE Lite, copiez le modèle nouvellement créé à partir du `templates` au noeud `template-types` sous le noeud [dossier de modèles](#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](#template-folders).
 1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez toutes les propriétés `cq:template` et `cq:templateType` de tous les nœuds `jcr:content`.
 

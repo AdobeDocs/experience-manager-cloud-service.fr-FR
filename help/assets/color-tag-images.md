@@ -2,10 +2,10 @@
 title: Balises de couleurs pour les images
 description: Experience Manager Assets permet de distinguer les couleurs d’une image et de les appliquer automatiquement sous forme de balises. Vous pouvez ensuite utiliser ces balises pour rechercher et filtrer des images.
 exl-id: 3afa949b-ea1b-4b8e-ac94-06566e2c7147
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1225'
-ht-degree: 99%
+source-wordcount: '1220'
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 99%
 
 Experience Manager Assets utilise les fonctionnalités d’IA d’Adobe Sensei pour distinguer les couleurs d’une image et les appliquer automatiquement sous forme de balises lors de l’ingestion. Ces balises permettent d’améliorer l’expérience de recherche en fonction de la composition des couleurs de l’image.
 
-Vous pouvez configurer le nombre de couleurs, comprises entre 1 et 40, qui sont balisées vers une image afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs. Experience Manager Assets applique les balises en fonction de la couverture colorimétrique d’une image. Vous pouvez également configurer le format d’affichage d’une balise de couleur.
+Vous pouvez configurer le nombre de couleurs balisées vers une image dans une plage comprise entre 1 et 40 afin de pouvoir rechercher ultérieurement des images en fonction de ces couleurs. Experience Manager Assets applique les balises en fonction de la couverture colorimétrique d’une image. Vous pouvez également configurer le format d’affichage d’une balise de couleur.
 
 La figure suivante illustre l’ordre des tâches que vous effectuez pour configurer et gérer le balisage des couleurs pour les images dans Experience Manager Assets :
 
@@ -42,11 +42,11 @@ Pour gérer les propriétés de balisage des couleurs pour les images :
 
 1. Spécifiez le format d’affichage de la balise de couleur dans le champ **[!UICONTROL Format d’affichage]**. Les options possibles incluent le nom de la couleur, le RGB ou le format HEX.
 
-1. Spécifiez le nombre de couleurs à baliser pour les images du champ **[!UICONTROL Limite]**. Ces couleurs s’affichent lorsque vous affichez les propriétés d’une image.  Vous pouvez définir un nombre compris entre un et quarante dans ce champ. La valeur par défaut de ce champ est de dix couleurs.
+1. Spécifiez le nombre de couleurs à baliser pour les images du champ **[!UICONTROL Limite]**. Ces couleurs s’affichent lorsque vous affichez les propriétés d’une image.  Vous pouvez définir un nombre compris entre 1 et 40 dans ce champ. La valeur par défaut de ce champ est de dix couleurs.
 
-1. Indiquez le pourcentage de couverture colorimétrique minimal pour inclure une balise de couleur dans les résultats de recherche dans le champ **[!UICONTROL % de seuil de couverture/dominance]**. Par exemple, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 9 % dans ce champ, l’image est incluse lorsque vous recherchez des images de couleur rouge. Cependant, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 11 % dans ce champ, l’image n’est pas incluse lorsque vous recherchez des images de couleur rouge.
+1. Indiquez le pourcentage de couverture colorimétrique minimal pour inclure une balise de couleur dans les résultats de recherche dans le champ **[!UICONTROL % de seuil de couverture/dominance]**. Par exemple, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 9 % dans ce champ, l’image est incluse lorsque vous recherchez des images de couleur rouge. Cependant, si la couverture de la couleur rouge dans une image est de 10 % et que vous définissez 11 % dans ce champ, l’image n’est pas incluse lorsque vous recherchez des images de couleur rouge.
 
-   Dans ce champ, vous pouvez indiquer un nombre compris entre cinq et cent. La valeur par défaut est de onze.
+   Dans ce champ, vous pouvez indiquer un nombre compris entre cinq et cent. La valeur par défaut est 11.
 
    >[!NOTE]
    >

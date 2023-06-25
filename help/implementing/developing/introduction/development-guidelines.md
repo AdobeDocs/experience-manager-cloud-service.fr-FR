@@ -2,7 +2,7 @@
 title: Conseils de développement sur AEM as a Cloud Service
 description: Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2591'
 ht-degree: 91%
@@ -101,7 +101,7 @@ Dans les environnements cloud, les développeurs peuvent télécharger les journ
 
 **Définition du niveau de journalisation**
 
-Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGi Sling, suivi d’un redéploiement complet. Comme il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en détail sur les environnements de production qui reçoivent beaucoup de trafic. À l’avenir, il est possible qu’il existe des mécanismes pour modifier plus rapidement le niveau de journalisation.
+Pour modifier les niveaux de journal des environnements Cloud, il est nécessaire de modifier la configuration d’enregistreur OSGi Sling, suivi d’un redéploiement complet. Puisqu’il ne s’agit pas d’une opération instantanée, soyez prudent lorsque vous activez les journaux en mode verbeux sur les environnements de production qui reçoivent beaucoup de trafic. À l’avenir, il est possible qu’il existe des mécanismes pour modifier plus rapidement le niveau de journalisation.
 
 >[!NOTE]
 >

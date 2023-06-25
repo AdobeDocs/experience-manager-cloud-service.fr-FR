@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management, Search
 role: User
 exl-id: 6b3ce076-2dd9-47f6-9b68-4fa52bfedd42
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 99%
+source-wordcount: '930'
+ht-degree: 95%
 
 ---
 
@@ -48,7 +48,7 @@ You can limit who can access certain folders in Assets by making the folder part
 
 ## Use tags to organize assets {#use-tags-to-organize-assets}
 
-You can use folders or tags or both to organize assets. Adding tags to assets makes them more easy to retrieve during a search. To add tags to an asset, follow these steps:
+You can use folders or tags or both to organize assets. Adding tags to assets makes them easier to retrieve during a search. To add tags to an asset, follow these steps:
 
 1. In the Digital Asset Manager, double-click the asset to open it.
 1. In the **Tags** area, open the menu to reveal the available tags. Select tags as appropriate. To delete a tag, hover the pointer over the tag and click `X` to delete it.
@@ -79,7 +79,7 @@ La méthode la plus simple pour organiser les ressources consiste à les enregis
 
 ## Organisation de ressources à l’aide de balises {#use-tags-to-organize-assets}
 
-L’ajout de balises à des ressources les rend plus faciles à récupérer au cours d’une recherche, à créer des collections à l’aide des résultats de recherche, à améliorer le classement de certaines ressources et à appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
+L’ajout de balises à des ressources les rend plus faciles à récupérer au cours d’une recherche, à créer des collections à l’aide des résultats de recherche, à améliorer le classement de certaines ressources et à appliquer des algorithmes d’IA d’Adobe Sensei pour la découverte de ressources.
 
 [!DNL Adobe Experience Manager Assets] utilise un algorithme d’auto-apprentissage pour créer des balises hautement descriptives qui vous permettent de trouver la ressource appropriée en quelques clics seulement. Le balisage intelligent utilise Adobe Sensei, l’intelligence artificielle et la structure de machine learning, qui peuvent être entraînés pour reconnaître et appliquer des balises standard et commerciales à l’imagerie. Les balises intelligentes peuvent également identifier le contenu, les mots ou les expressions et appliquer automatiquement des balises descriptives aux ressources..
 
@@ -136,5 +136,4 @@ Grâce à cette normalisation de l’utilisation des métadonnées, de l’attri
 >* [Profils de métadonnées](metadata-profiles.md)
 >* [Profils vidéo](/help/assets/dynamic-media/video-profiles.md)
 >* [Profils d’image Dynamic Media](/help/assets/dynamic-media/image-profiles.md)
-
 

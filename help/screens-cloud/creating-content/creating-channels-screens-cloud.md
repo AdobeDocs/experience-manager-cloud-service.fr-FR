@@ -2,10 +2,10 @@
 title: Création et gestion des canaux dans Screens as a Cloud Service
 description: Cette page décrit comment créer et gérer des canaux dans Screens as a Cloud Service.
 exl-id: 3b0bae7a-4a45-485a-ab04-604510ff6578
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1104'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -85,7 +85,7 @@ Les modèles suivants sont disponibles lors de l’utilisation de l’assistant 
 | Modèles disponibles | Description |
 |--- |--- |
 | Dossier de canaux | Permet de créer un dossier pour stocker une collection de canaux. |
-| Canal de séquence | Permet de créer un canal qui lit les composants de manière séquentielle (l’un après l’autre comme une série de diapositives). |
+| Canal de séquence | Permet de créer un canal qui lit les composants de manière séquentielle (un par un dans un diaporama). |
 | Canal d’écran partagé barre en L gauche ou droite | Permet aux auteurs de contenus d’afficher différents types de ressources dans des zones de taille appropriée. |
 
 ## Utilisation des informations d’attribution par défaut pour les canaux {#default-channels}

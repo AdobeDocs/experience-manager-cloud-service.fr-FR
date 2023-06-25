@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin,User
 exl-id: a2abc48b-5586-421c-936b-ef4f896d78b7
-source-git-commit: f8535b9d1b8334bede817714eab469fbb1fcbb03
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2462'
-ht-degree: 94%
+source-wordcount: '2463'
+ht-degree: 93%
 
 ---
 
@@ -51,8 +51,8 @@ Vous pouvez baliser les types de ressources suivants :
 | image/x-portable-graymap | SRT |  |
 | image/x-portable-pixmap | TXT |  |
 | image/x-rgb | VTT |  |
-| image/x-xbitmap |  |  |
-| image/x-xpixmap |  |  |
+| image/x-xbitmap | |  |
+| image/x-xpixmap | |  |
 | image/x-icon |  |  |
 | image/photoshop |  |  |
 | image/x-photoshop |  |  |
@@ -277,4 +277,3 @@ Pour rechercher des fichiers à l’aide de balises intelligentes (standard ou a
 >
 >* [Comprendre comment les balises intelligentes facilitent la gestion des fichiers numériques](https://medium.com/adobetech/efficient-asset-management-with-enhanced-smart-tags-887bd47dbb3f)
 >* [Utilisation des balises intelligentes pour les vidéos](smart-tags-video-assets.md)
-

@@ -2,10 +2,10 @@
 title: Activation des fonctionnalités d’application web progressive
 description: AEM Sites permet à l’auteur du contenu d’activer des fonctionnalités d’application web progressive sur n’importe quel site par le biais d’une configuration simple plutôt que par un codage.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 94%
+source-wordcount: '1998'
+ht-degree: 93%
 
 ---
 
@@ -217,7 +217,7 @@ Les bibliothèques clientes sont fournies avec un sélecteur de cache qui se con
 
 Le composant d’image des composants principaux AEM détermine laquelle des variations doit être utilisée en front-end pour générer le meilleur rendu. Ce mécanisme inclut également un horodatage correspondant à l’heure de la dernière modification de cette ressource. Ce mécanisme complique la configuration PWA mise en cache.
 
-Lors de la configuration de la mise en cache, l’utilisateur doit répertorier toutes les variations de chemin d’accès qui peuvent être récupérées. Ces variations comportent des paramètres tels que la qualité et la largeur. Il est fortement conseillé de réduire le nombre de ces variations à un maximum de trois : petite, moyenne, grande. Vous pouvez le faire par l’intermédiaire de la boîte de dialogue de politique de contenu du [composant d’image.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr)
+Lors de la configuration de la mise en cache, l’utilisateur doit répertorier toutes les variations de chemin d’accès qui peuvent être récupérées. Ces variations comportent des paramètres tels que la qualité et la largeur. Il est conseillé de réduire le nombre de ces variations à un maximum de trois : petit, moyen, grand. Vous pouvez le faire par l’intermédiaire de la boîte de dialogue de politique de contenu du [composant d’image.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=fr)
 
 Si les fonctionnalités PWA ne sont pas configurées correctement, la consommation de mémoire et de réseau peut avoir un impact important sur leurs performances. De même, si vous avez l’intention de prédéfinir, disons, 50 images avec 3 largeurs par image, l’utilisateur qui gère le site devra conserver une liste de jusque 150 entrées dans la section de mise en cache PWA des propriétés de la page.
 

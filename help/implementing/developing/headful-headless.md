@@ -2,10 +2,10 @@
 title: Couplage et découplage dans AEM
 description: Il est possible de mettre en œuvre des projets AEM selon des modèles couplés et découplés, sans que toutefois ce choix soit binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1007'
-ht-degree: 98%
+source-wordcount: '1008'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ La section suivante examine ces niveaux d’intégration de manière plus détai
 
 >[!NOTE]
 >
->Vous pouvez bien entendu réimplémenter l’application sur une seule page de la boutique web sous la forme d’une SPA AEM pleinement opérationnelle [à l’aide du framework de l’éditeur de SPA d’AEM.](/help/implementing/developing/hybrid/introduction.md) Si vous avez déjà AEM et que souhaitez créer un site web ou une autre SPA, cette méthode est recommandée. Cependant, elle n’entre pas dans le cadre de ce document.
+>Bien sûr, vous pouvez également réimplémenter le webshop SPA comme une AEM pleinement opérationnelle. [à l’aide de la structure AEM SPA Editor.](/help/implementing/developing/hybrid/introduction.md) Si vous avez déjà AEM et que souhaitez créer un site web ou une autre SPA, cette méthode est recommandée. Cependant, elle n’entre pas dans le cadre de ce document.
 
 ## Niveaux d’intégration SPA {#integration-levels}
 

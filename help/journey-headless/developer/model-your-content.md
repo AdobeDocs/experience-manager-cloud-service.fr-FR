@@ -2,10 +2,10 @@
 title: Comment modéliser votre contenu
 description: Dans cette partie du parcours de développement découplé AEM, apprenez à modéliser votre contenu pour une diffusion AEM découplée à l’aide de la modélisation de contenu avec des modèles de fragment de contenu et des fragments de contenu.
 exl-id: f052183d-18fd-4615-a81e-e45db5928fc1
-source-git-commit: 6be7cc7678162c355c39bc3000716fdaf421884d
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1830'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -45,7 +45,7 @@ Cet article s’appuie sur ces principes de base pour que vous compreniez commen
 
 *Le monde extérieur est vaste et malveillant*.
 
-Peut-être est-ce vrai, ou peut-être pas, même si le monde est certainement vaste et ***compliqué***. La modélisation des données sert donc à définir une représentation simplifiée d’une très (très) petite sous-section, en utilisant l’information spécifique nécessaire à un certain objectif.
+Peut-être, mais peut-être pas. C&#39;est certainement une ***compliqué*** La modélisation des données et le monde est utilisé pour définir une représentation simplifiée d’une très (très) petite sous-section, à l’aide des informations spécifiques nécessaires à une certaine fin.
 
 >[!NOTE]
 >

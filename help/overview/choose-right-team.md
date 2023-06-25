@@ -2,10 +2,10 @@
 title: Les bonnes personnes, les bonnes fonctions
 description: Les bonnes personnes, les bonnes fonctions
 exl-id: 9106ccf5-dc90-4ccb-95bd-7dd5392cd174
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 97%
+ht-degree: 80%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 97%
 
 Il est probable qu’au sein de votre organisation, plusieurs départements possèdent différents aspects de l’expérience digitale. Sans gouvernance, cette phase est propice à un débat sans fin, à des querelles intestines et à la confusion.
 
-La phase initiale de la gouvernance numérique consiste à déterminer qui est responsable de quoi et qui effectue un certain nombre de tâches fondées sur le numérique. Vous devrez peut-être procéder à des embauches stratégiques pour incorporer les compétences nécessaires. Un autre défi encore plus important est d’opérer un changement de culture en construisant un large soutien à la nouvelle technologie et en aidant les personnes concernées à se familiariser avec de nouvelles façons de faire les choses. L’un des éléments clés de cet effort réside dans la création d’une communauté numérique qui permet aux gens d’apprendre mutuellement et de s’entraider.
+La gouvernance numérique commence par déterminer qui est responsable de quoi et qui fait quel travail centré sur le numérique. Vous devrez peut-être procéder à des embauches stratégiques pour incorporer les compétences nécessaires. Un défi encore plus grand est de provoquer un changement de culture — en construisant un large soutien pour la nouvelle technologie et en aidant les gens à s&#39;habituer à de nouvelles façons de faire les choses. L’un des éléments clés de cet effort réside dans la création d’une communauté numérique qui permet aux gens d’apprendre mutuellement et de s’entraider.
 
-Pour l’instant, nous nous concentrerons sur la mise en place des bonnes personnes aux bons postes pour aider à la réussite de votre déploiement Adobe Experience Manager. Pour chaque produit de base – Experience Manager Sites et Experience Manager Assets – nous avons établi une liste de fonctions que vous devrez remplir, ainsi que les compétences, les niveaux d’expertise et les attributs qui rendent les gens efficaces dans ces différentes fonctions.
+Pour l’instant, nous allons nous concentrer sur la mise à la disposition des personnes appropriées dans les tâches appropriées pour vous aider à piloter votre déploiement Adobe Experience Manager. Pour chaque produit principal — Experience Manager Sites et Experience Manager Assets — nous avons fourni une liste des rôles que vous devrez remplir, ainsi que les compétences, les niveaux d’expertise et les attributs qui rendent les personnes efficaces dans les différents rôles.
 
 Votre tâche cette semaine consiste à passer en revue ces deux listes avec votre équipe de mise en œuvre et de vous assurer de disposer de personnes possédant les qualifications adéquates à chaque rôle.
 
@@ -55,7 +55,7 @@ Maintenant que vous connaissez les fonctions requises, consultez le graphique ci
 
 De l’architecte au scrum master, chaque fonction au sein de cette équipe est indispensable – y compris le bibliothécaire de la gestion des actifs numériques (DAM).
 
-Vous disposez peut-être déjà de la plupart des personnes nécessaires pour mettre en œuvre avec succès Adobe Experience Manager Assets. Cette liste est similaire à celle d’Adobe Experience Manager Sites, avec un élément additionnel important : vous aurez besoin d’un bibliothécaire pour vous assurer que vos ressources numériques sont organisées et étiquetées de façon à les rendre faciles à trouver.
+Vous disposez peut-être déjà de la plupart des personnes nécessaires pour mettre en œuvre avec succès Adobe Experience Manager Assets. Cette liste est similaire à celle d’Adobe Experience Manager Sites, avec un ajout important : vous aurez besoin d’un bibliothécaire pour vous assurer que vos ressources numériques sont organisées et étiquetées de manière à les rendre faciles à trouver.
 
 | Rôle | Compétences | Niveau de capacité | Qualités |
 |--- |--- |--- |--- |

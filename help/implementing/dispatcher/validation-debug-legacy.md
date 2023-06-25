@@ -4,10 +4,10 @@ description: Validation et débogage à l’aide des outils Dispatcher (hérité
 feature: Dispatcher
 hidefromtoc: true
 exl-id: dc04d035-f002-42ef-9c2e-77602910c2ec
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2337'
-ht-degree: 94%
+source-wordcount: '2338'
+ht-degree: 93%
 
 ---
 
@@ -265,7 +265,7 @@ et :
 
 **file included at unknown location: ...**
 
-Votre configuration de ferme comporte quatre sections où vous pouvez inclure votre propre fichier : `/clientheaders`, `filters`, `/rules` dans la section `/cache` et `/virtualhosts`. Les fichiers inclus doivent être nommés comme suit :
+Votre configuration de ferme comporte quatre sections où vous pouvez inclure votre propre fichier : `/clientheaders`, `filters`, `/rules` in `/cache` et `/virtualhosts`. Les fichiers inclus doivent être nommés comme suit :
 
 | Section | Nom du fichier d’inclusion |
 |------------------|--------------------------------------|

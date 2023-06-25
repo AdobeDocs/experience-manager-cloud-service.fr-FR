@@ -3,10 +3,10 @@ title: API AEM GraphQL à utiliser avec des fragments de contenu
 description: Découvrez comment utiliser les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service avec l’API AEM GraphQL pour la diffusion de contenu en mode découplé.
 feature: Content Fragments,GraphQL API
 exl-id: bdd60e7b-4ab9-4aa5-add9-01c1847f37f6
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '4925'
-ht-degree: 92%
+source-wordcount: '4924'
+ht-degree: 91%
 
 ---
 
@@ -751,7 +751,7 @@ La structure et la syntaxe sont les suivantes :
    * `height` : la hauteur de la dimension ;
 * `rotation` : une énumération de toutes les rotations prises en charge : R90, R180, R270 ;
 * `flip` : une énumération de HORIZONTAL, VERTICAL, HORIZONTAL_AND_VERTICAL ;
-* `quality` : un entier compris entre 1 et 100 indiquant le pourcentage de la qualité de l’image ;
+* `quality`: un entier compris entre 1 et 100 indiquant le pourcentage de la qualité de l’image ;
 * `width`: entier qui définit la largeur de l’image de sortie, mais est ignoré par le générateur d’images.
 * `preferWebp` : une valeur booléenne qui indique si webp est préférable (la valeur par défaut est false).
 

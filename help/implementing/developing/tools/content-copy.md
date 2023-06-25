@@ -2,9 +2,9 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production as a Cloud Service AEM vers des environnements inférieurs à des fins de test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1221'
 ht-degree: 55%
 
 ---
@@ -64,7 +64,7 @@ Avant qu’un contenu ne puisse être copié, un jeu de contenu doit être défi
    1. Entrez le chemin dans le champ **Ajouter un chemin d’accès à inclure**.
    1. Appuyez ou cliquez sur le bouton **Ajouter un chemin** pour ajouter le chemin d’accès au jeu de contenu.
    1. Appuyez ou cliquez encore sur le bouton **Ajouter un chemin** si nécessaire.
-      * Jusqu’à cinquante chemins sont autorisés.
+      * Jusqu’à 50 chemins sont autorisés.
 
    ![Ajouter des chemins à un jeu de contenu](assets/add-content-set-paths.png)
 
@@ -183,7 +183,7 @@ L’outil de copie de contenu présente les limites suivantes.
 * Le contenu ne peut être copié que depuis et vers les services de création.
 * Une copie de contenu ne peut pas être effectuée sur plusieurs programmes.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
-* Vous pouvez spécifier jusqu’à cinquante chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
+* Vous pouvez spécifier jusqu’à 50 chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.
 * L’outil de copie de contenu ne doit pas être utilisé comme outil de clonage ou de mise en miroir, car il ne peut pas effectuer le suivi du contenu déplacé ou supprimé sur la source.
 * L’outil de copie de contenu ne dispose d’aucune fonctionnalité de contrôle de version et ne peut pas détecter automatiquement le contenu modifié ou le contenu nouvellement créé dans l’environnement source dans un jeu de contenu depuis la dernière opération de copie de contenu.
    * Si vous souhaitez mettre à jour votre environnement de destination avec des modifications de contenu uniquement depuis la dernière opération de copie de contenu, vous devez créer un jeu de contenu et spécifier les chemins d’accès sur l’instance source où des modifications ont été apportées depuis la dernière opération de copie de contenu.

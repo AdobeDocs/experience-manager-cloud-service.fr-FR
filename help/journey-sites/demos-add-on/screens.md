@@ -2,10 +2,10 @@
 title: Activez AEM Screens pour votre site de démonstration
 description: Découvrez les étapes pour activer l’expérience complète AEM Screens as a Cloud Service sur votre site de démonstration.
 exl-id: 369eea9f-2e81-4b87-841c-188b67657bab
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2696'
-ht-degree: 97%
+source-wordcount: '2694'
+ht-degree: 96%
 
 ---
 
@@ -41,7 +41,7 @@ Le module complémentaire de démonstration de référence d’AEM contient du c
 
 ## Comprendre Screens {#understand-screens}
 
-AEM Screens as a Cloud Service est une solution de signalétique numérique qui permet aux marketeurs de créer et de gérer des expériences numériques dynamiques à grande échelle. Avec AEM Screens as a Cloud Service, vous pouvez créer des expériences de signalétique numérique attrayantes et dynamiques destinées aux espaces publics. 
+AEM Screens as a Cloud Service est une solution de signalétique numérique qui permet aux marketeurs de créer et de gérer des expériences digitales dynamiques à grande échelle. Avec AEM Screens as a Cloud Service, vous pouvez créer des expériences de signalétique numérique attrayantes et dynamiques destinées aux espaces publics. 
 
 >[!TIP]
 >
@@ -63,7 +63,7 @@ Le café We.Cafe se compose de trois boutiques situées à trois endroits aux É
 >
 >Le kiosque n’est pas inclus dans la version actuelle de la démonstration. Il sera inclus dans une version ultérieure.
 
-L’emplacement à New York est supposé se trouver dans un magasin plus petit avec peu d’espace, et donc :
+L’emplacement de New York est supposé se trouver dans un magasin plus petit qui n’a pas beaucoup d’espace, et donc :
 
 * Le panneau de menus n’a que deux panneaux verticaux au lieu de trois pour les boutiques de San Francisco et San Jose.
 * L’affichage à l’entrée est positionné à la verticale et non à l’horizontale

@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: f3472006-d5ae-4f70-af3e-44e73aee85cc
-source-git-commit: 803c4dc44189d58ddbd2669b00dd8107b2a926ae
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3708'
-ht-degree: 100%
+source-wordcount: '3709'
+ht-degree: 98%
 
 ---
 
@@ -102,7 +102,7 @@ Mais pour ajouter de la valeur à Dynamic Media au-delà des paramètres d’im
 
 L’imagerie dynamique offre de meilleures performances de diffusion des ressources d’image en optimisant automatiquement le format et la taille de fichier d’une image en fonction des fonctionnalités de navigateur d’un client. Il fonctionne avec vos paramètres d’image prédéfinis existants (les paramètres d’image prédéfinis sont abordés dans la deuxième partie de ce parcours) et utilise des informations lors de la diffusion.
 
-Ces informations permettent d’encore réduire la taille du fichier image en fonction de la vitesse de connexion du navigateur et du réseau. Étant donné que les ressources d’image représentent la majeure partie du temps de chargement d’une page, l’amélioration des performances peut avoir un impact déterminant sur les indicateurs d’activité clés suivants :
+Ces informations permettent d’encore réduire la taille du fichier image en fonction de la vitesse de connexion du navigateur et du réseau. Étant donné que les ressources d’image représentent la majeure partie du temps de chargement d’une page, l’amélioration des performances peut avoir un impact complet sur les indicateurs métier clés, tels que :
 
 * Une conversion plus élevée
 * Le temps passé sur le site
@@ -128,7 +128,7 @@ Vous commencez avec votre vidéo principale originale que vous téléchargez dan
 
 Par exemple, sur un appareil mobile iOS, il détecte une bande passante telle que 4G, 5G ou une connexion Wi-Fi, puis sélectionne automatiquement la vidéo codée selon le débit correspondant parmi ceux disponibles dans la visionneuse de vidéos adaptative. La vidéo est diffusée en continu sur des appareils mobiles, des tablettes ou des ordinateurs de bureau.
 
-En outre, la qualité vidéo est automatiquement changée de manière dynamique si les conditions réseau changent. En outre, si un client passe en mode plein écran sur un bureau, la visionneuse de vidéos adaptative réagit en utilisant une meilleure résolution, améliorant l’expérience de visionnage du client.
+En outre, la qualité vidéo est automatiquement changée de manière dynamique si les conditions réseau changent. De plus, si un client passe en mode Plein écran sur un bureau, la visionneuse de vidéos adaptative répond en utilisant une meilleure résolution, améliorant ainsi l’expérience de visionnage du client.
 
 L’utilisation des visionneuses de vidéos adaptatives offre une lecture fluide et de qualité aux clients qui lisent des vidéos Dynamic Media sur plusieurs écrans et appareils. Voilà qui simplifie vraiment l’usage de la vidéo.
 
@@ -157,9 +157,9 @@ Penchons-nous de plus près sur les problèmes que Dynamic Media résout grâce
 | Besoin de créer et stocker chaque ressource. | Utilisez un seul fichier image qui crée automatiquement les rendus requis uniquement au moment de la diffusion. |
 | Coûts de stockage élevés. | Il n’est plus nécessaire de créer et de stocker plusieurs copies d’une ressource. |
 | Difficulté à maintenir la chaîne de traçabilité. | Garantit la diffusion d’expériences optimisées et cohérentes entre les appareils. |
-| Absence d’historique de version. |  |
-| Incohérence des expériences de la marque entre les appareils. |  |
-| Coût superflu de la création de ressources en double. |  |
+| Absence d’historique de version. | |
+| Incohérence des expériences de la marque entre les appareils. | |
+| Coût superflu de la création de ressources en double. | |
 
 Si vous pensez à un fichier, vous créez une ressource pour chaque type d’expérience. Vous partez avec une image que vous déclinez en 20, 30 ou 40 variantes, que vous devrez en fin de compte trouver le moyen de stocker et de payer le stockage.
 
@@ -178,13 +178,13 @@ Un autre cas d’utilisation résolu par Dynamic Media est la vidéo. La vidéo
 | Difficulté à gérer et diffuser des vidéos optimisées pour divers appareils. | Utilisez une seule vidéo qui prend automatiquement en charge la taille de tous les appareils. |
 | Les vidéos sont bloquées ou lues en basse qualité en raison de la faible bande passante disponible pour l’utilisateur final. | Diffusez de la vidéo par le biais d’un lecteur HTML qui détecte automatiquement la bande passante disponible et adapte la qualité pour garantir une lecture fluide et une haute fidélité. |
 | La création manuelle de toutes les versions d’une vidéo n’est pas réalisable et prend trop de temps pour garantir un affichage et une lecture corrects sur tous les appareils. | Économisez des heures de travail de transcodage fastidieux grâce à un workflow simplifié. |
-|  | Libérez du temps pour un travail à plus forte valeur ajoutée. |
+| | Libérez du temps pour un travail à plus forte valeur ajoutée. |
 
 Les clients espèrent résoudre le problème suivant grâce à Dynamic Media :
 
-« _Nous avons une vidéo et nous avons dépensé beaucoup d’argent pour sa création. Mais nous avons toujours peur de la placer sur des pages ou de la diffuser, parce que nos tests ne nous permettent pas de garantir la qualité de la vidéo ou sa lecture correcte. Cela finit par affecter nos marques et potentiellement notre capacité à réaliser des conversions_ ».
+&quot;_Nous avons la vidéo, et nous avons dépensé beaucoup d&#39;argent pour la créer. Mais nous avons toujours peur de la placer sur des pages ou de la diffuser, parce que nos tests ne nous permettent pas de garantir la qualité de la vidéo ou sa lecture correcte. Cela finit par affecter nos marques et potentiellement notre capacité à réaliser des conversions_ ».
 
-La solution de Dynamic Media consiste à prendre ce fichier vidéo principal et à confier à Dynamic Media la création de toutes les tailles nécessaires grâce à son processus de transcodage. Vous pouvez ensuite l’ajouter au lecteur vidéo intelligent de Dynamic Media. Ce workflow garantit que si vous utilisez cette vidéo sur votre page d’entrée principale ou sur une page de détails de catégorie ou de produit, elle sera diffusée de façon cohérente et avec une qualité élevée.
+La solution de Dynamic Media consiste à prendre ce fichier vidéo principal et à confier à Dynamic Media la création de toutes les tailles nécessaires grâce à son processus de transcodage. Vous pouvez ensuite l’ajouter au lecteur vidéo intelligent de Dynamic Media. Ce workflow garantit que si vous utilisez cette vidéo sur votre page de destination principale ou sur une page de détails de catégorie ou de produit, elle sera diffusée de façon cohérente et avec une qualité élevée.
 
 Voici plusieurs autres cas d’utilisation à prendre en compte.
 

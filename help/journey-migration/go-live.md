@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '1720'
-ht-degree: 94%
+ht-degree: 93%
 
 ---
 
@@ -98,7 +98,7 @@ Souvenez-vous que la charge sur la source AEM est supérieure pendant la phase d
 Veuillez tenir compte du fait que l’ingestion entière échoue si l’une des limites suivantes fait partie du jeu de migration extrait :
 
 * Un nœud JCR dont le nom comporte plus de 150 caractères.
-* Un nœud JCR dont la taille est supérieure à 16 Mo.
+* Noeud JCR supérieur à 16 Mo
 * Tout utilisateur/groupe avec `rep:AuthorizableID` ingéré et déjà présent sur AEM as a Cloud Service.
 * Si une ressource extraite et ingérée change de chemin d’accès à la source ou à la destination avant l’itération suivante de la migration.
 

@@ -2,11 +2,11 @@
 title: Présentation et aperçu
 description: Présentation et aperçu de Content and Commerce. Experience Manager Commerce Integration Framework (CIF) est le modèle recommandé par Adobe pour intégrer et étendre les services commerciaux disponibles à partir d’Adobe Commerce et d’autres solutions de commerce tierces avec Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
-exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c,74e832f9-f8ff-4901-b4c2-6a2862c51411
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 100%
+source-wordcount: '894'
+ht-degree: 92%
 
 ---
 
@@ -42,11 +42,11 @@ Cette complexité ouvre la porte à de potentielles défaillances, à une augmen
 
 ## Prise en charge efficace des clients par le module CIF depuis 2013 {#support}
 
-Avec plus de 200 clients, CIF a prouvé son efficacité pour réaliser des projets Content and Commerce réussis. Il offre une valeur ajoutée aux technologies de l’information et aux entreprises, dès aujourd’hui et pour leur futur. Comme le décrivent de récents projets clients, CIF est un « incroyable accélérateur de développement et offre un gain de temps considérable pour générer une valeur considérable ».
+Avec plus de 200 clients, CIF a prouvé son efficacité pour réaliser des projets Content and Commerce réussis. Il offre une valeur ajoutée aux technologies de l’information et aux entreprises, dès aujourd’hui et pour leur futur. Les projets clients récents décrivent CIF comme un &quot;accélérateur de vitesse et un gain de temps considérable avec beaucoup de valeur&quot;.
 
 ## Avantages de CIF {#cif-benefits}
 
-CIF fournit des composants principaux commerciaux prêts à l’emploi qui réduisent le besoin de code personnalisé et accélèrent le délai de mise sur le marché des marques. Tous les composants principaux sont prêts à l’emploi et intégrés à la couche de données côté client d’Adobe pour nourrir les profils clients comme par exemple le profil unifié. Ce profil capture en détail le comportement d’un visiteur et peut être utilisé pour prédire le parcours client et le personnaliser en temps réel.
+CIF fournit des composants principaux commerciaux prêts à l’emploi qui réduisent le besoin de code personnalisé et accélèrent le délai de mise sur le marché des marques. Tous les composants principaux sont intégrés prêts à l’emploi à la couche de données côté client d’Adobe pour hydrater les profils clients, tels que le profil unifié. Ce profil capture en détail le comportement d’un visiteur, qui peut être utilisé pour prédire et personnaliser le parcours client en temps réel.
 
 Le module complémentaire CIF apporte du contexte de produit à Experience Manager et fournit des outils de création tels qu’une console de produits et des sélecteurs de produits ou de catégories qui permettent au marketeur de créer et de diffuser des expériences Shoppable dans Experience Manager sans faire appel au développeur. Voici ses avantages :
 

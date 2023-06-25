@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 8b041934-1c4a-4670-9b03-d38f683b99e5
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 100%
+source-wordcount: '1028'
+ht-degree: 96%
 
 ---
 
@@ -36,24 +36,24 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 
 * Lors du partage de ressources numériques dans un lien, les utilisateurs peuvent copier immédiatement l’URL dans le presse-papiers. Cette amélioration vous permet de partager des ressources plus rapidement et plus facilement. Cette fonctionnalité permet un partage de ressources plus rapide et pratique.
 
-   ![Option Copier l’URL lors du partage d’une ressource dans un lien](/help/assets/assets/link-share-copy-URL-option.png)
-   *Image : lors du partage d’une ressource dans un lien, vous pouvez désormais copier l’URL pour la partager séparément.*
+  ![Option Copier l’URL lors du partage d’une ressource dans un lien](/help/assets/assets/link-share-copy-URL-option.png)
+  *Image : lors du partage d’une ressource dans un lien, vous pouvez désormais copier l’URL pour la partager séparément.*
 
 * Lorsque vous chargez des fichiers TXT, les microservices de ressources génèrent automatiquement une miniature. La miniature PNG est un rendu de fichier TXT qui aide les utilisateurs à identifier le contenu ou les fichiers dans une certaine mesure, sans ouvrir les fichiers. Cette fonctionnalité ne nécessite aucune configuration et fonctionne par défaut.
 
-   ![Un rendu d’un fichier TXT est automatiquement généré par [!DNL Assets] au format PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
-   *Image : un rendu d’un fichier TXT est automatiquement généré pour vous aider à identifier le fichier sans l’ouvrir.*
+  ![Un rendu d’un fichier TXT est automatiquement généré par [!DNL Assets] au format PNG](/help/assets/assets/thumbnail-rendition-txt-file.png)
+  *Image : un rendu d’un fichier TXT est automatiquement généré pour vous aider à identifier le fichier sans l’ouvrir.*
 
 ### Nouvelle fonctionnalité dans le canal de version préliminaire [!DNL Assets] {#assets-prerelease-features}
 
 * Les utilisateurs peuvent désormais trier en vue Colonne et Carte les ressources affichées dans les résultats de recherche. Le tri fonctionne sur les colonnes Nom, Créé, Modifié et Aucune.
 
-   ![Trier les résultats de recherche dans [!DNL Assets] dans les vues Colonne et Carte](/help/assets/assets/sort-searched-assets.png)
-   *Image : trier les résultats de recherche dans [!DNL Assets] dans les vues Colonne et Carte.*
+  ![Trier les résultats de recherche dans [!DNL Assets] dans les vues Colonne et Carte](/help/assets/assets/sort-searched-assets.png)
+  *Image : trier les résultats de recherche dans [!DNL Assets] dans les vues Colonne et Carte.*
 
 ### Correctifs d’[!DNL Assets] {#assets-bugs-fixed}
 
-* Lorsqu’un membre du groupe de contributeurs accède à la console [!DNL Assets], un code `POST` supplémentaire est généré pour tenter de créer une collection. Cette requête n’est pas obligatoire, elle échoue en raison de problèmes d’autorisation et crée de nombreuses erreurs dans les journaux. (CQ-4328856)
+* Lorsqu’un membre du groupe de contributeurs accède à la variable [!DNL Assets] Console, une `POST` est générée pour créer une collection. Cette demande n’est pas requise ; il échoue en raison de problèmes d’autorisations et crée de nombreuses erreurs dans les journaux. (CQ-4328856)
 * Lorsque les utilisateurs affichent une ressource et sélectionnent la [!UICONTROL Chronologie] dans le menu contextuel du panneau de gauche, une erreur s’affiche. Dans les journaux, de nombreux avertissements sont consignés en raison d’une requête erronée. (CQ-4328919)
 
 ## [!DNL Experience Manager Forms] as a [!DNL Cloud Service] {#forms}
@@ -80,7 +80,7 @@ Regardez la vidéo [Aperçu de la version d’août 2021](https://video.tv.adob
 
 * Nouvelle interface utilisateur du sélecteur de catégorie pour une meilleure expérience utilisateur, efficacité améliorée et meilleure prise en charge pour les catalogues complexes de produits
 
-   ![Nouveau sélecteur de catégorie](/help/assets/CIF/category-picker.png)
+  ![Nouveau sélecteur de catégorie](/help/assets/CIF/category-picker.png)
 
 * Meilleure prise en charge d’A11Y pour les composants principaux CIF
 

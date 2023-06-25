@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3495'
-ht-degree: 86%
+source-wordcount: '3496'
+ht-degree: 85%
 
 ---
 
@@ -208,7 +208,7 @@ Adobe Asset Link offre une bonne prise en charge de ce cas pratique :
 * En outre, puisque la ressource se trouve dans le compte de Creative Cloud, elle est également disponible sur d’autres appareils que l’utilisateur peut avoir (par exemple, elle peut être ouverte ou modifiée dans une application mobile de Creative Cloud dédiée) et peut être partagée avec d’autres utilisateurs de Creative Cloud à des fins de collaboration.
 * Lorsque l’utilisateur créatif a terminé d’apporter des modifications, il peut effectuer une opération d’archivage sur ce fichier dans son application Creative Cloud, en fournissant un commentaire facultatif. La ressource correspondante dans Experience Manager est versionnée et mise à jour avec le nouveau binaire. Les utilisateurs d’Experience Manager comme les spécialistes marketing ou les utilisateurs du cœur de métier ont accès aux modifications importantes des ressources, ou jalons, via l’interface utilisateur de chronologie d’ Experience Manager Assets.
 
-L’application de bureau Experience Manager propose un partage réseau pour les ressources ouvertes dans l’application native. Par défaut, toutes les modifications apportées localement sont chargées automatiquement dans Experience Manager après un bref instant. Avec une telle configuration, les enregistrements fréquents durant la phase de tâche en cours seraient tous chargés dans Experience Manager et versionnés, ce qui créerait un trafic réseau important et des défis d’évolutivité potentiels, sans mentionner les versions inutiles dans Experience Manager.
+L’application de bureau Experience Manager propose un partage réseau pour les ressources ouvertes dans l’application native. Par défaut, toutes les modifications apportées localement sont chargées automatiquement dans Experience Manager après un bref instant. Avec une telle configuration, de fréquents enregistrements pendant la phase de travail en cours seraient tous transférés dans Experience Manager et versionnés, ce qui créerait un trafic réseau important et des défis d’évolutivité potentiels - sans parler des versions inutiles en Experience Manager.
 
 L’approche recommandée dans ce cas consiste à utiliser une option dans l’application de bureau Experience Manager pour désactiver les mises à jour automatisées et à charger manuellement les modifications des ressources dans Experience Manager, en utilisant l’action de chargement des modifications dans l’interface utilisateur État de la ressource de l’application.
 

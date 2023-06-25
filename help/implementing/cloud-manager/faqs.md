@@ -1,18 +1,18 @@
 ---
 title: FAQ sur Cloud Manager
-description: Trouvez des réponses aux questions les plus fréquemment posées sur Cloud Manager dans AEM as a Cloud Service.
+description: Trouvez des réponses aux questions les plus fréquemment posées sur Cloud Manager dans AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: 698ea704d821d26067e29a89b562388d7517772e
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 100%
+source-wordcount: '991'
+ht-degree: 91%
 
 ---
 
 
-# FAQ relatives à Cloud Manager {#cloud-manager-faqs}
+# FAQ relatives à Cloud Manager {#cloud-manager-faqs}
 
-Ce document répond aux questions les plus fréquemment posées sur Cloud Manager dans AEM as a Cloud Service.
+Ce document répond aux questions les plus fréquemment posées sur Cloud Manager dans AEM as a Cloud Service.
 
 ## Est-il possible d’utiliser Java 11 avec les builds de Cloud Manager ? {#java-11-cloud-manager}
 
@@ -22,9 +22,9 @@ Le processus est documenté [ici](/help/implementing/cloud-manager/getting-acces
 
 Par exemple, consultez l’[exemple de code de projet wknd](https://github.com/adobe/aem-guides-wknd/commit/6cb5238cb6b932735dcf91b21b0d835ae3a7fe75).
 
-## Mon build échoue avec une erreur mentionnant maven-scr-plugin après la bascule de Java 8 à Java 11. Que puis-je faire ? {#build-fails-maven-scr-plugin}
+## Mon build échoue avec une erreur concernant maven-scr-plugin après le passage de Java 8 à Java 11. Que puis-je faire ? {#build-fails-maven-scr-plugin}
 
-Votre build AEM Cloud Manager échoue en cas de tentative de basculement de Java 8 à Java 11. Si vous rencontrez l’erreur ci-dessous, vous devez supprimer le `maven-scr-plugin` et convertir toutes les annotations OSGi en annotations OSGi R6.
+Votre version d’AEM Cloud Manager peut échouer lors de la tentative de basculement de la version de Java 8 à 11. Si vous rencontrez l’erreur ci-dessous, vous devez supprimer le `maven-scr-plugin` et convertir toutes les annotations OSGi en annotations OSGi R6.
 
 ```text
 [main] [ERROR] Failed to execute goal org.apache.felix:maven-scr-plugin:1.26.4:scr (generate-scr-scrdescriptor) on project helloworld.core: /build_root/build/testsite/src/main/java/com/adobe/HelloWorldServiceImpl.java : Unable to load compiled class: com.adobe.HelloWorldServiceImpl: com/adobe/HelloWorldServiceImpl has been compiled by a more recent version of the Java Runtime (class file version 55.0), this version of the Java Runtime only recognizes class file versions up to 52.0 -> [Help 1]
@@ -32,7 +32,7 @@ Votre build AEM Cloud Manager échoue en cas de tentative de basculement de Jav
 
 Pour plus d’informations sur la suppression de ce plug-in, rendez-vous [ici.](https://cqdump.wordpress.com/2019/01/03/from-scr-annotations-to-osgi-annotations/)
 
-## Mon build échoue avec une erreur mentionnant RequireJavaVersion après la bascule de Java 8 à Java 11. Que puis-je faire ? {#build-fails-requirejavaversion}
+## Mon build échoue avec une erreur sur RequireJavaVersion après le passage de Java 8 à Java 11. Que puis-je faire ? {#build-fails-requirejavaversion}
 
 Pour les builds Cloud Manager, le `maven-enforcer-plugin` peut échouer avec cette erreur.
 

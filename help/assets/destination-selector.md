@@ -3,9 +3,9 @@ title: Sélecteur de destination pour AEM as a Cloud Service
 description: Utilisez le sélecteur de destination AEM pour afficher et sélectionner les ressources que vous pouvez utiliser comme copie de la ressource d’origine.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: d6ea74834f73ad90f5df929a2806cd1ed53af0aa
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1909'
 ht-degree: 4%
 
 ---
@@ -185,22 +185,22 @@ Vous pouvez utiliser les propriétés du sélecteur de destination pour personna
 
 | Propriété | Type | Requis | Valeur par défaut | Description |
 |---|---|---|---|---|
-| *imsOrg* | chaîne | Oui |  | Adobe de l’identifiant du système Identity Management (IMS) attribué lors de la mise en service [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] pour votre organisation. Le `imsOrg` clé est requise pour vous authentifier si l’organisation à laquelle vous accédez se trouve sous Adobe IMS ou non. |
-| *imsToken* | chaîne | Non |  | Jeton de support IMS utilisé pour l’authentification. `imsToken` n’est pas nécessaire si vous utilisez le flux SUSI. Cependant, il est requis si vous utilisez le flux non SUSI. |
-| *apiKey* | chaîne | Non |  | Clé d’API utilisée pour accéder au service AEM Discovery. `apiKey` n’est pas nécessaire si vous utilisez le flux SUSI. Toutefois, il est requis dans un flux non SUSI. |
+| *imsOrg* | chaîne | Oui | | Adobe de l’identifiant du système Identity Management (IMS) attribué lors de la mise en service [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] pour votre organisation. Le `imsOrg` clé est requise pour vous authentifier si l’organisation à laquelle vous accédez se trouve sous Adobe IMS ou non. |
+| *imsToken* | chaîne | Non | | Jeton de support IMS utilisé pour l’authentification. `imsToken` n’est pas nécessaire si vous utilisez le flux SUSI. Cependant, il est requis si vous utilisez le flux non SUSI. |
+| *apiKey* | chaîne | Non | | Clé d’API utilisée pour accéder au service AEM Discovery. `apiKey` n’est pas nécessaire si vous utilisez le flux SUSI. Toutefois, il est requis dans un flux non SUSI. |
 | *rootPath* | chaîne | Non | /content/dam/ | Chemin du dossier à partir duquel le sélecteur de destination affiche vos ressources. `rootPath` peut également être utilisé sous la forme d’encapsulation. Par exemple, étant donné le chemin suivant, `/content/dam/marketing/subfolder/`, le sélecteur de destination ne vous permet pas de parcourir les dossiers parents, mais affiche uniquement les dossiers enfants. |
-| *hasMore* | booléen | Non |  | Lorsque l’application dispose de davantage de contenu à afficher, vous pouvez utiliser cette propriété pour ajouter un chargeur chargeant le contenu afin de le rendre visible dans l’application. Il s’agit d’un indicateur indiquant que le chargement du contenu est en cours. |
-| *orgName* | booléen | Non |  | Il s’agit du nom de l’organisation (probablement orgID) associé à AEM |
-| *initRepoID* | chaîne | Non |  | Il s’agit du chemin d’accès du référentiel de ressources que vous souhaitez utiliser dans une vue initiale par défaut. |
-| *onCreateFolder* | chaîne | Non |  | Le `onCreateFolder` vous permet d’ajouter une icône qui ajoute un nouveau dossier dans l’application. |
-| *onConfirm* | chaîne | Non |  | Il s’agit d’un rappel lorsque vous appuyez sur le bouton de confirmation. |
-| *confirmDisabled* | chaîne | Non |  | Cette propriété contrôle le bouton de confirmation. |
-| *viewType* | chaîne | Non |  | Le `viewType` sert à spécifier les vues que vous utilisez pour afficher les ressources. |
-| *viewTypeOptions* | chaîne | Non |  | Cette propriété est liée à `viewType` . vous pouvez spécifier une ou plusieurs vues pour afficher les ressources. Les options viewType disponibles sont les suivantes : Mode Liste, mode Grille, mode Galerie, mode Cascade et mode Arborescence. |
-| *itemNameFormatter* | chaîne | Non |  | Cette propriété vous permet de mettre en forme le nom de l’élément. |
+| *hasMore* | booléen | Non | | Lorsque l’application dispose de davantage de contenu à afficher, vous pouvez utiliser cette propriété pour ajouter un chargeur chargeant le contenu afin de le rendre visible dans l’application. Il s’agit d’un indicateur indiquant que le chargement du contenu est en cours. |
+| *orgName* | booléen | Non | | Il s’agit du nom de l’organisation (probablement orgID) associé à AEM |
+| *initRepoID* | chaîne | Non | | Il s’agit du chemin d’accès du référentiel de ressources que vous souhaitez utiliser dans une vue initiale par défaut. |
+| *onCreateFolder* | chaîne | Non | | Le `onCreateFolder` vous permet d’ajouter une icône qui ajoute un nouveau dossier dans l’application. |
+| *onConfirm* | chaîne | Non | | Il s’agit d’un rappel lorsque vous appuyez sur le bouton de confirmation. |
+| *confirmDisabled* | chaîne | Non | | Cette propriété contrôle le bouton de confirmation. |
+| *viewType* | chaîne | Non | | Le `viewType` sert à spécifier les vues que vous utilisez pour afficher les ressources. |
+| *viewTypeOptions* | chaîne | Non | | Cette propriété est liée à `viewType` . vous pouvez spécifier une ou plusieurs vues pour afficher les ressources. Les options viewType disponibles sont les suivantes : Mode Liste, mode Grille, mode Galerie, mode Cascade et mode Arborescence. |
+| *itemNameFormatter* | chaîne | Non | | Cette propriété vous permet de mettre en forme le nom de l’élément. |
 | *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Non |  | Si les traductions prêtes à l’emploi ne sont pas suffisantes pour répondre aux besoins de votre application, vous pouvez exposer une interface par laquelle vous pouvez transmettre vos propres valeurs localisées personnalisées via la `i18nSymbols` prop. Le transfert d’une valeur par le biais de cette interface remplace les traductions fournies par défaut et utilise plutôt la vôtre.  Pour effectuer le remplacement, vous devez transmettre un [Descripteur de message](https://formatjs.io/docs/react-intl/api/#message-descriptor) à la clé de `i18nSymbols` que vous voulez remplacer. |
-| *inlineAlertSetup* | chaîne | Non |  | Il ajoute un message d’alerte que vous souhaitez transmettre à l’application. Par exemple, ajouter un message d’alerte indiquant que Vous n’êtes pas autorisé à accéder à ce dossier. |
-| *intl* | Objet | Non |  | Le sélecteur de destination fournit des traductions par défaut prêtes à l’emploi. Vous pouvez sélectionner la langue de traduction en fournissant une chaîne de paramètres régionaux valide via le `intl.locale` prop. Par exemple : `intl={{ locale: "es-es" }}` </br></br> Les chaînes de paramètres régionaux prises en charge suivent le [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) pour la représentation des noms des normes linguistiques. </br></br> Liste des paramètres régionaux pris en charge : Anglais - &#39;en-us&#39; (par défaut) Espagnol - &#39;es-es&#39; Allemand - &#39;de-de&#39; Français - &#39;fr-FR&#39; Italien - &#39;it-it&#39; Japonais - &#39;ja-jp&#39; Coréen - &#39;ko-kr&#39; Portugais - &#39;pt-br&#39; Chinois (traditionnel) - &#39;zh-cn&#39; Chinois (Taïwan) - &#39;zh-tw&#39; |
+| *inlineAlertSetup* | chaîne | Non | | Il ajoute un message d’alerte que vous souhaitez transmettre à l’application. Par exemple, ajouter un message d’alerte indiquant que Vous n’êtes pas autorisé à accéder à ce dossier. |
+| *intl* | Objet | Non | | Le sélecteur de destination fournit des traductions par défaut prêtes à l’emploi. Vous pouvez sélectionner la langue de traduction en fournissant une chaîne de paramètres régionaux valide via le `intl.locale` prop. Par exemple : `intl={{ locale: "es-es" }}` </br></br> Les chaînes de paramètres régionaux prises en charge suivent le [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) pour la représentation des noms des normes linguistiques. </br></br> Liste des paramètres régionaux pris en charge : Anglais - &#39;en-us&#39; (par défaut) Espagnol - &#39;es-es&#39; Allemand - &#39;de-de&#39; Français - &#39;fr-FR&#39; Italien - &#39;it-it&#39; Japonais - &#39;ja-jp&#39; Coréen - &#39;ko-kr&#39; Portugais - &#39;pt-br&#39; Chinois (traditionnel) - &#39;zh-cn&#39; Chinois (Taïwan) - &#39;zh-tw&#39; |
 
 ## Exemples d’utilisation des propriétés du sélecteur de destination {#usage-examples}
 

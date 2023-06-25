@@ -2,10 +2,10 @@
 title: Raccourcis clavier pour la modification de pages
 description: Plusieurs raccourcis clavier sont disponibles dans AEM, notamment pour la modification de pages
 exl-id: 6c501897-48f9-478a-b143-d3ad19643b8c
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 99%
+source-wordcount: '237'
+ht-degree: 91%
 
 ---
 
@@ -25,8 +25,8 @@ Plusieurs raccourcis clavier sont disponibles dans AEM. Certains raccourcis clav
 | Mode d’**édition** | `Ctrl-z` | [Annuler la dernière modification](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Rétablir la dernière modification](/help/sites-cloud/authoring/fundamentals/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Sélectionner plusieurs paragraphes |
-|  | `Ctrl-c` | Copier le(s) paragraphe(s) sélectionné(s) |
-|  | `Ctrl-x` | Couper les paragraphes sélectionnés (les paragraphes coupés ne disparaîtront pas de l’interface utilisateur tant qu’ils ne seront pas collés) |
+|  | `Ctrl-c` | Copie de paragraphes sélectionnés |
+|  | `Ctrl-x` | Couper les paragraphes sélectionnés (les paragraphes coupés ne disparaissent pas dans l’interface utilisateur tant qu’ils ne sont pas collés). |
 |  | `Ctrl-v` | Coller les paragraphes précédemment coupés ou copiés |
 |  | `Ctrl-Backspace` | Supprimer le(s) paragraphe(s) sélectionné(s) |
 | Mode d’**édition** – Éditeur de texte enrichi | `Ctrl-b` | Gras |

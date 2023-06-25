@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '1708'
-ht-degree: 93%
+source-wordcount: '1709'
+ht-degree: 91%
 
 ---
 
@@ -141,7 +141,7 @@ Une boîte de dialogue s’ouvre dans laquelle vous pouvez saisir les informatio
 
 #### Utilisation des chemins et des balises pour limiter les modèles de fragment de contenu disponibles dans le dossier {#tags-paths-for-models-in-folder}
 
-Cette section est d’un niveau légèrement plus avancé. Vous n’en avez pas vraiment besoin si vous ne faites que tester le système, mais elle peut se révéler *très* utile si vous avez beaucoup de fragments. Il est donc bon de savoir qu’elle est là, même si vous ne l’exploiterez pas encore à son plein potentiel.
+Cette section est d’un niveau légèrement plus avancé. Vous n&#39;en avez pas vraiment besoin si vous commencez à essayer des choses, mais c&#39;est *very* utile lorsque vous avez de nombreux fragments. Il est donc bon de le savoir - même si vous ne l&#39;utilisez pas encore tout à fait.
 
 Votre architecte de contenu aura créé tous les modèles de fragment de contenu requis pour votre projet actuel, ainsi que peut-être d’autres projets. Pour vous simplifier les choses ainsi qu’aux autres auteurs, vous pouvez limiter la liste des modèles disponibles pour un dossier spécifique.
 

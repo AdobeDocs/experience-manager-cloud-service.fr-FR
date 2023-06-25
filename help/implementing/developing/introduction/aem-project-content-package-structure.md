@@ -2,7 +2,7 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
 source-wordcount: '2927'
 ht-degree: 98%
@@ -223,7 +223,7 @@ Pour cibler AEM Author, AEM Publish ou les deux, le package est incorporé dans 
 
 `/apps/<app-name>-packages/(content|application|container)/install(.author|.publish)?`
 
-Analyse de cette structure de dossiers :
+Ventilation de cette structure de dossiers :
 
 + Le dossier de premier niveau **doit être** `/apps`.
 + Le dossier de deuxième niveau représente l’application, avec le `-packages` ajouté après le nom du dossier. Bien souvent, tous les sous-packages sont incorporés dans un seul dossier de deuxième niveau ; toutefois, il est possible de créer un nombre illimité de dossiers de deuxième niveau pour représenter au mieux la structure logique de l’application :

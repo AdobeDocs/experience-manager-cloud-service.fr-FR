@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 exl-id: 3b5247fa-decb-40eb-a629-6d834976d33c
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2025'
-ht-degree: 77%
+source-wordcount: '2024'
+ht-degree: 78%
 
 ---
 
@@ -98,7 +98,7 @@ Après avoir appliqué un thème accessible, effectuez les corrections suppléme
 
 ### 2. Fournissez des libellés appropriés pour les contrôles de formulaire. {#provide-proper-labels-for-form-controls}
 
-Le libellé ou le titre d’un composant de formulaire identifie ce qu’il représente. Par exemple, le texte &quot;Prénom&quot; indique aux utilisateurs qu’ils doivent saisir leur prénom dans un champ de texte. Pour être accessible par les lecteurs d’écran, le libellé est associé par programmation à un composant de formulaire. La commande de formulaire peut également être configurée avec des informations d’accessibilité supplémentaires.
+Le libellé ou le titre d’un composant de formulaire identifie ce qu’il représente. Par exemple, le texte « Prénom » indique à l’utilisateur qu’il doit saisir son prénom dans une zone de texte. Pour être accessible par les lecteurs d’écran, le libellé est associé par programmation à un composant de formulaire. La commande de formulaire peut également être configurée avec des informations d’accessibilité supplémentaires.
 
 Le libellé qui est perçu par les lecteurs d’écran ne doit pas nécessairement être le même que la légende visuelle. Dans certains cas, vous souhaiterez peut-être être plus précis sur l’objectif du contrôle. Pour chaque objet de champ d’un formulaire, les options d’accessibilité permettent de spécifier ce que le lecteur d’écran annonce pour identifier le champ de formulaire spécifique.
 
@@ -125,7 +125,6 @@ Pour utiliser l’option Accessibilité, procédez comme suit :
 >
 >* Dans le cas de la case d’option et de la case à cocher, deux options seulement sont possibles dans le cadre de l’accessibilité à savoir : Texte personnalisé et Titre.
 >* Pour les formulaires adaptatifs basés sur XFA, l’option d’accessibilité est héritée des options d’accessibilité définies dans le fichier XDP. Les info-bulles du fichier XDP sont mappées sur la description courte et la légende sur le titre. Les autres options fonctionnent normalement.
-
 
 ### 3. Fournissez des équivalents textuels pour les images {#provide-text-equivalents-for-images}
 

@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: 9202cf44595070c98ca3d21887dff257bcd88b87
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '2878'
-ht-degree: 100%
+source-wordcount: '2875'
+ht-degree: 99%
 
 ---
 
@@ -90,7 +90,7 @@ Toutefois, avec Dynamic Media, si vous disposez de paramètres d’image préd�
 ![Approche de fichiers principaux](/help/assets/dynamic-media/assets/dm-onefile.png)
 _Méthode recommandée : un fichier avec plusieurs rendus créés à la volée à l’aide de paramètres d’image prédéfinis, par exemple `Search_Grid` et `Thumbnail`._
 
-| **Pourquoi utiliser les paramètres d’image prédéfinis ?** |  |
+| **Pourquoi utiliser les paramètres d’image prédéfinis ?** | |
 |---|---|
 | Standard | Les paramètres d’image prédéfinis imposent un traitement d’image standard sur toutes les images demandées. |
 | Gestion des modifications | Si vous devez modifier le traitement des images, vous devez simplement modifier le paramètre du paramètre d’image prédéfini existant. La définition mise à jour est automatiquement propagée à toutes les requêtes. |
@@ -199,7 +199,7 @@ Lorsque vous déplacez le pointeur de la souris sur la chaussure, vous effectuez
 
 Que ce soit en tant que consommateur ou dans votre vie professionnelle, vous verrez des exemples de ce type sur différents sites web. Maintenant que vous connaissez l’envers du décor, vous savez comment tirer parti de la puissance de Dynamic Media pour votre travail et le site web de votre entreprise.
 
-Vous en savez maintenant un peu plus sur les visionneuses d’images et les outils de visionneuse. Penchons-nous sur deux autres visionneuses et essayons-les sur des ressources uniques. Pour réinitialiser la visionneuse, cliquez sur le bouton **[!UICONTROL Actualiser]** dans le coin inférieur gauche.
+Vous venez de lire des articles sur les visionneuses d’images et les visionneuses. Penchons-nous sur deux autres visionneuses et essayons-les sur des ressources uniques. Pour réinitialiser la visionneuse, cliquez sur le bouton **[!UICONTROL Actualiser]** dans le coin inférieur gauche.
 
 <!-- LEAVE THIS HIDDEN PATH IN THE DOCUMENTATION FOR DEMO PURPOSES [Flyout viewer with image set](http://www.partycity.com/girls-little-old-lady-costume-P750948.html) -->
 

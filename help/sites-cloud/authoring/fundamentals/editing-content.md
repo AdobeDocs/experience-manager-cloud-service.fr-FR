@@ -2,10 +2,10 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
 workflow-type: tm+mt
-source-wordcount: '3004'
-ht-degree: 62%
+source-wordcount: '3002'
+ht-degree: 60%
 
 ---
 
@@ -443,7 +443,7 @@ Le **Afficher comme publié(e)** est disponible à partir de la [Informations su
 
 ## Verrouillage d’une page  {#locking-a-page}
 
-AEM vous permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Cela s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant quelque temps.
+AEM permet de verrouiller une page, de sorte que personne d’autre ne puisse en modifier le contenu. Ce verrouillage s’avère utile lorsque vous apportez de nombreuses modifications à une page spécifique ou lorsque vous devez figer une page pendant une courte période.
 
 Une page peut être verrouillée à partir de :
 
