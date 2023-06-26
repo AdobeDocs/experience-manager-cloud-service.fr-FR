@@ -3,9 +3,9 @@ title: Administration d’instances de workflow
 description: Découvrez comment administrer des instances de workflow
 feature: Administering
 role: Admin
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 31cda6f7eb7ef1c32ba9d0ec7d198a5f2f38b1e6
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1284'
 ht-degree: 71%
 
 ---
@@ -28,12 +28,21 @@ Différentes consoles sont à votre disposition pour administrer les workflows. 
 1. Avec la navigation, sélectionnez **Outil**, puis **Workflows**.
 1. Sélectionner **Instances** pour afficher la liste des instances de workflow en cours d’exécution.
 1. Sur le rail supérieur, dans le coin droit, les instances de workflow affichent **Exécuter des workflows**, **État**, et **Détails**.
-1. **Exécuter des workflows** indique le nombre de workflows en cours d’exécution et leur état. par exemple, dans les images données, sont affichés le nombre de **Exécuter des workflows** et le **État** de l’instance AEM.
-   ![status-health](/help/sites-cloud/administering/assets/status-healthy.png)
-   ![statut-malsain](/help/sites-cloud/administering/assets/status-unhealthy.png)
-1. Pour **Détails de l’état** des instances de workflow, cliquez sur **Détails**, pour afficher la variable **nombre d’instances de workflows en cours d’exécution**, **instances de workflow terminées**, **instances de workflow annulées**, **instances de workflow en échec**, etc. par exemple, ci-dessous, les images données qui affichent **Détails de l’état** avec **État : Santé** et **État : Malsain**.
-   ![status-details-health](/help/sites-cloud/administering/assets/status-details-healthy.png)
-   ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
+1. **Exécuter des workflows** indique le nombre de workflows en cours d’exécution et leur état. par exemple, dans les images données, sont affichés le nombre de **Exécuter des workflows** et le **État** de l’instance AEM :
+
+   * **Statut : sain**
+     ![status-health](/help/sites-cloud/administering/assets/status-healthy.png)
+
+   * **Statut : malsain**
+     ![statut-malsain](/help/sites-cloud/administering/assets/status-unhealthy.png)
+
+1. Pour **Détails de l’état** des instances de workflow, cliquez sur **Détails**, pour afficher la variable **nombre d’instances de workflows en cours d’exécution**, **instances de workflow terminées**, **instances de workflow annulées**, **instances de workflow en échec**, etc. par exemple, ci-dessous, les images données qui affichent **Détails de l’état** par :
+
+   * **Détails de l’état : Santé**
+     ![status-details-health](/help/sites-cloud/administering/assets/status-details-healthy.png)
+
+   * **Détails de l’état : Malsain**
+     ![status-details-unhealthy](/help/sites-cloud/administering/assets/status-details-unhealthy.png)
 
    >[!NOTE]
    >
