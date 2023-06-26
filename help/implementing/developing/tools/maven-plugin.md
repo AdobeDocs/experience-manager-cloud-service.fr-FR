@@ -2,9 +2,9 @@
 title: Plug-in Maven Content Package d’Adobe
 description: Utilisation du plug-in Maven Content Package pour déployer des applications AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
 workflow-type: tm+mt
-source-wordcount: '1849'
+source-wordcount: '1842'
 ht-degree: 95%
 
 ---
@@ -212,7 +212,7 @@ L’élément `mode` définit l’impact de l’importation du package sur le co
 
 * **Fusionner** : le contenu du package ne se trouvant pas encore dans le référentiel est ajouté. Le contenu se trouvant dans le package et le référentiel reste inchangé. Aucun contenu n’est supprimé du référentiel.
 * **Remplacer** : le contenu du package absent du référentiel y est ajouté. Le contenu du référentiel est remplacé par le contenu correspondant du package. Le contenu est supprimé du référentiel lorsqu’il n’existe pas dans le package.
-* **Mettre à jour** : le contenu du package ne se trouvant pas dans le référentiel y est ajouté. Le contenu du référentiel est remplacé par le contenu correspondant du package. Le contenu existant est supprimé du référentiel.
+* **Mettre à jour** : le contenu du package ne se trouvant pas dans le référentiel y est ajouté. Le contenu du référentiel est remplacé par le contenu correspondant du package.
 
 Lorsque le filtre ne contient pas d’élément `mode`, la valeur `replace` par défaut est utilisée.
 
