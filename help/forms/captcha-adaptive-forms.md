@@ -10,7 +10,7 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
+source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
 workflow-type: tm+mt
 source-wordcount: '1433'
 ht-degree: 84%
@@ -70,17 +70,14 @@ Pour utiliser CAPTCHA dans les formulaires adaptatifs :
 
    >[!NOTE]
    >
-   >Assurez-vous que le conteneur de configurations sélectionné lors de la création du formulaire adaptatif contient le service cloud reCAPTCHA. Vous pouvez également modifier les propriétés de formulaire adaptatif pour modifier le conteneur de configurations associé au formulaire.
+   > Assurez-vous que le conteneur de configurations sélectionné lors de la création du formulaire adaptatif contient le service cloud reCAPTCHA. Vous pouvez également modifier les propriétés de formulaire adaptatif pour modifier le conteneur de configurations associé au formulaire.
 
 1. À partir du navigateur de composant, faites glisser et déposez le composant **[!UICONTROL Captcha]** sur le formulaire adaptatif.
 
    >[!NOTE]
    >
-   >L’utilisation de plusieurs composants Captcha dans un formulaire adaptatif n’est pas prise en charge. En outre, il n’est pas recommandé d’utiliser CAPTCHA dans un panneau marqué pour le chargement différé ou dans un fragment.
-
-   >[!NOTE]
-   >
-   >Captcha est sensible au temps et arrive à expiration dans une minute. Par conséquent, il est recommandé de placer le composant Captcha juste avant le bouton Envoyer dans le formulaire adaptatif.
+   > * L’utilisation de plusieurs composants Captcha dans un formulaire adaptatif n’est pas prise en charge. En outre, il n’est pas recommandé d’utiliser CAPTCHA dans un panneau marqué pour le chargement différé ou dans un fragment.
+   > * Captcha est sensible au temps et arrive à expiration dans une minute. Par conséquent, il est recommandé de placer le composant Captcha juste avant le bouton Envoyer dans le formulaire adaptatif.
 
 1. Sélectionnez le composant Captcha que vous avez ajouté et appuyez sur ![cmppr](assets/configure-icon.svg) pour modifier ses propriétés.
 1. Indiquez un titre pour le widget CAPTCHA. La valeur par défaut est **[!UICONTROL Captcha]**. Sélectionnez **[!UICONTROL Masquer le titre]** si vous ne voulez pas que le titre apparaisse.
@@ -91,7 +88,7 @@ Pour utiliser CAPTCHA dans les formulaires adaptatifs :
 
    >[!NOTE]
    >
-   >* Ne sélectionnez pas **[!UICONTROL Par défaut]** dans le menu déroulant Service Captcha puisque le service par défaut Experience Manager CAPTCHA est obsolète.
+   > Ne sélectionnez pas **[!UICONTROL Par défaut]** dans le menu déroulant Service Captcha puisque le service par défaut Experience Manager CAPTCHA est obsolète.
 
 1. Enregistrez les propriétés.
 
@@ -109,7 +106,7 @@ Appuyez sur le champ **[!UICONTROL Valeur monétaire]** dans le formulaire et cr
 
 >[!NOTE]
 >
->* Si vous sélectionnez la configuration reCAPTCHA v2 avec la taille comme [!UICONTROL Invisible] alors l’option afficher/masquer n’est pas applicable.
+> Si vous sélectionnez la configuration reCAPTCHA v2 avec la taille comme [!UICONTROL Invisible] alors l’option afficher/masquer n’est pas applicable.
 
 ### Valider le CAPTCHA {#validate-captcha}
 
