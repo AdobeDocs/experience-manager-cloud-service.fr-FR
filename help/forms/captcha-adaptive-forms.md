@@ -10,10 +10,10 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: 0c303439c879605f1ab0927cf79b132dbb448af5
+source-git-commit: 1633e02fc6b79a45582b919863662bc1d1b49b42
 workflow-type: tm+mt
-source-wordcount: '1415'
-ht-degree: 88%
+source-wordcount: '1433'
+ht-degree: 84%
 
 ---
 
@@ -29,12 +29,11 @@ CAPTCHA (Completely Automated Public Turing test to say Computers and Humans apa
 >* Dans les formulaires adaptatifs, CAPTCHA n’est pas pris en charge dans le mode hors ligne sur l’application [!DNL AEM Forms].
 >
 
-
-## Configuration du service ReCAPTCHA de Google {#google-recaptcha}
+## Configuration du service reCAPTCHA par Google {#google-reCAPTCHA}
 
 Les auteurs de formulaires peuvent utiliser le service reCAPTCHA de Google pour mettre en place CAPTCHA dans les formulaires adaptatifs. Il offre des fonctionnalités CAPTCHA avancées pour protéger votre site. Pour plus d’informations sur le fonctionnement de reCAPTCHA, voir [Google reCAPTCHA](https://developers.google.com/recaptcha/).
 
-![Recaptcha](assets/recaptcha_new.png)
+![reCAPTCHA](assets/recaptcha_new.png)
 
 Pour implémenter le service reCAPTCHA dans [!DNL AEM Forms] :
 
@@ -49,10 +48,10 @@ Pour implémenter le service reCAPTCHA dans [!DNL AEM Forms] :
 
       1. Dans la boîte de dialogue Propriétés de configuration, activez **[!UICONTROL Configurations cloud]**.
       1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer la configuration et fermer la boîte de dialogue.
+
    1. Dans le navigateur de configuration, appuyez sur **[!UICONTROL Créer]**.
    1. Dans la boîte de dialogue Créer une configuration, indiquez un titre pour le dossier et activez **[!UICONTROL Configurations cloud]**.
    1. Appuyez sur **[!UICONTROL Créer]** pour créer le dossier activé pour les configurations de service cloud.
-
 
 1. Configurez le service cloud pour reCAPTCHA.
 
@@ -83,16 +82,16 @@ Pour utiliser CAPTCHA dans les formulaires adaptatifs :
    >
    >Captcha est sensible au temps et arrive à expiration dans une minute. Par conséquent, il est recommandé de placer le composant Captcha juste avant le bouton Envoyer dans le formulaire adaptatif.
 
-1. Sélectionnez le composant Captcha que vous avez ajouté et appuyez sur ![cmppr](assets/configure-icon.svg) pour modifier ses propriétés.
+1. Sélectionnez le composant Captcha que vous avez ajouté et appuyez sur ![cmppr](assets/configure-icon.svg) pour modifier ses propriétés.
 1. Indiquez un titre pour le widget CAPTCHA. La valeur par défaut est **[!UICONTROL Captcha]**. Sélectionnez **[!UICONTROL Masquer le titre]** si vous ne voulez pas que le titre apparaisse.
-1. Dans le menu déroulant **[!UICONTROL Service Captcha]**, sélectionnez **[!UICONTROL reCaptcha]** pour activer le service reCAPTCHA si vous l’avez configuré comme décrit dans [Service ReCAPTCHA de Google](#google-recaptcha). Sélectionnez une configuration dans la liste déroulante Paramètres.
+1. Dans la **[!UICONTROL Service Captcha]** menu déroulant, sélectionnez **[!UICONTROL reCAPTCHA]** pour activer le service reCAPTCHA si vous l’avez configuré comme décrit à la section [Service reCAPTCHA par Google](#google-reCAPTCHA). Sélectionnez une configuration dans la liste déroulante Paramètres.
 1. Sélectionnez le type **[!UICONTROL Normal]** ou **[!UICONTROL Compact]** pour le widget reCAPTCHA. Vous pouvez également sélectionner l’option **[!UICONTROL Invisible]** pour ne montrer le test CAPTCHA que dans le cas d’une activité suspecte. Le badge protégé par reCAPTCHA, affiché ci-dessous, s’affiche sur les formulaires protégés.
 
    ![Badge protégé par reCAPTCHA de Google](assets/google-recaptcha-v2.png)
 
    >[!NOTE]
    >
-   >Ne sélectionnez pas **[!UICONTROL Par défaut]** dans le menu déroulant Service Captcha puisque le service par défaut Experience Manager CAPTCHA est obsolète.
+   >* Ne sélectionnez pas **[!UICONTROL Par défaut]** dans le menu déroulant Service Captcha puisque le service par défaut Experience Manager CAPTCHA est obsolète.
 
 1. Enregistrez les propriétés.
 
@@ -107,6 +106,10 @@ Par exemple, le composant CAPTCHA ne doit s’afficher dans un formulaire adapta
 Appuyez sur le champ **[!UICONTROL Valeur monétaire]** dans le formulaire et créez les règles suivantes :
 
 ![Afficher ou masquer des règles](assets/rules-show-hide-captcha.png)
+
+>[!NOTE]
+>
+>* Si vous sélectionnez la configuration reCAPTCHA v2 avec la taille comme [!UICONTROL Invisible] alors l’option afficher/masquer n’est pas applicable.
 
 ### Valider le CAPTCHA {#validate-captcha}
 
@@ -206,7 +209,7 @@ public interface GuideCaptchaValidator {
 
 `userResponseToken` fait référence au `g_recaptcha_response` qui est généré après la résolution d’un CAPTCHA dans un formulaire.
 
-### Modifier le domaine de service reCAPTCHA {#recaptcha-service-domain}
+### Modifier le domaine de service reCAPTCHA {#reCAPTCHA-service-domain}
 
 Le service reCAPTCHA utilise `https://www.recaptcha.net/` comme domaine par défaut. Vous pouvez modifier les paramètres pour définir `https://www.google.com/` ou tout nom de domaine personnalisé pour le chargement, le rendu et la validation du service reCAPTCHA.
 
