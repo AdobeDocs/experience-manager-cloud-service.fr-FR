@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Asset Management
 role: User,Leader,Architect
 exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: f075c6032edb23f9cf52ad53ae2a628915e76ec2
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 98%
+source-wordcount: '738'
+ht-degree: 68%
 
 ---
 
@@ -37,12 +37,28 @@ Voici les principaux avantages d’Assets as a [!DNL Cloud Service]. Pour en sav
 * **Surveillance constante** : la surveillance du système est automatisée et les contrôles et déclencheurs intégrés permettent de maintenir les performances, la disponibilité et la robustesse globales.
 * **Déploiements sans tracas** : les opérations d’Experience Manager en mode cloud sont entièrement automatisées et ne nécessitent aucune intervention manuelle. Pour les déploiements automatisés, le composant Cloud Manager (CM) automatise la création d’images Docker déployables contenant votre code personnalisé.
 
+## Expériences personnalisées disponibles
+
+Adobe propose une solution de Gestion des actifs numériques (DAM) robuste qui vous permet de tirer le meilleur parti de vos ressources numériques. Adobe Experience Manager Assets comporte deux expériences distinctes qui utilisent le même référentiel de Cloud Services :
+
+* **Vue d’administration**: Interface utilisateur as a Cloud Service d’Assets existante. Utilisez la vue d’administration pour toutes les fonctionnalités avancées de gestion des ressources, notamment les intégrations, les workflows, l’automatisation du contenu, la publication, etc.
+
+* **Affichage des ressources**: Expérience légère de gestion des ressources d’Adobe pour stocker, gérer, découvrir et utiliser des ressources numériques. Interface utilisateur rationalisée contenant les fonctionnalités essentielles de gestion des ressources. Conçu pour les utilisateurs de la gestion des ressources numériques légère qui se concentrent sur le chargement, la gestion des métadonnées, la recherche, le téléchargement et le partage.
+
+Les utilisateurs ayant accès à la vue Admin peuvent également accéder à la vue Ressources. La vue Assets offre une interface utilisateur simplifiée qui facilite la gestion, la découverte et la distribution de vos ressources numériques. Un large ensemble d’utilisateurs provenant de différentes fonctions, y compris des créatifs, des équipes marketing et commerciales, peuvent collaborer sur les ressources et accéder aux ressources approuvées appropriées lorsqu’elles en ont besoin. De nombreux utilisateurs de la gestion des actifs numériques préfèrent la vue Ressources, car elle ne contient qu’un sous-ensemble de fonctionnalités. L’expérience est destinée aux créatifs, aux consommateurs de ressources en lecture seule et aux utilisateurs DAM plus légers.
+
+Les bibliothécaires de la gestion des actifs numériques, les développeurs et les super-utilisateurs peuvent continuer à utiliser la vue Admin ou basculer entre les interfaces utilisateur, si nécessaire. Vous pouvez sélectionner l’expérience qui fonctionne le mieux pour votre rôle.
+
+![add-tags](assets/newui-overview.svg)
+
+Pour plus d’informations sur l’accès à la vue Assets et sur certaines des simplications qu’elle offre par rapport à la vue Admin, voir la vue Assets.
+
 ## Nouvelles fonctionnalités d’Assets {#whats-new-assets}
 
 Les nouvelles fonctionnalités importantes sont les suivantes :
 
 * [Microservices de ressources](/help/assets/asset-microservices-overview.md)
-* [Méthodes de transfert de ressources](/help/assets/add-assets.md)
+* [Méthodes de chargement de ressources](/help/assets/add-assets.md)
 
 **Voir également**
 
