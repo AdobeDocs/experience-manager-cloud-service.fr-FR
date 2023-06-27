@@ -4,7 +4,7 @@ description: Découvrez comment utiliser AEM modèles de fragments de contenu po
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 20%
@@ -43,7 +43,7 @@ Par exemple, vous créez un modèle qui représente la structure de données d�
    * **Titre du modèle** - Une brève étiquette du modèle et indique généralement l’objectif du modèle. Vous pouvez appeler le nouveau modèle. `Adventure`.
    * **Activer le modèle** : cette option est activée par défaut et doit être cochée pour pouvoir créer des fragments de contenu basés sur ce modèle.
 
-1. Une fois les champs obligatoires renseignés, cliquez sur **Créer** en haut à gauche pour créer le modèle.
+1. Une fois les champs obligatoires renseignés, cliquez sur **Créer** en haut à droite pour créer le modèle.
 
 1. Le **Succès** confirme la création du modèle. Cliquez sur **Ouvrir** dans la boîte de dialogue afin que vous puissiez ouvrir votre nouveau modèle de fragment de contenu dans l’éditeur d’un nouvel onglet. Passez ensuite à l’étape suivante pour ajouter des champs de données à votre modèle.
 
