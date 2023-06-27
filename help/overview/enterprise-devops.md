@@ -2,16 +2,16 @@
 title: Opérations de développement d’entreprise (DevOps)
 description: Découvrez les processus, les méthodes et la communication nécessaires pour faciliter le déploiement et simplifier la collaboration.
 exl-id: c8da1fd7-fe3e-4c7b-8fe7-1f7faf02769c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 44%
+source-wordcount: '1009'
+ht-degree: 24%
 
 ---
 
 # Opérations de développement d’entreprise (DevOps){#enterprise-devops}
 
-Les opérations de développement couvrent les processus, les méthodes et les communications requis pour :
+DevOps couvre les processus, méthodes et communication requis pour :
 
 * Facilitez le déploiement de votre logiciel dans les différents environnements.
 * Simplifiez la collaboration entre les équipes de développement, de test et de déploiement.
@@ -43,12 +43,12 @@ Les développeurs sont chargés de développer et de personnaliser le projet pro
 
 * développer et personnaliser les éléments nécessaires ; par exemple, modèles, composants, workflows, applications
 * réalisent la conception ;
-* développent les services et les scripts nécessaires pour mettre en œuvre les fonctionnalités requises.
+* développer les services et les scripts nécessaires pour mettre en oeuvre les fonctionnalités requises ;
 
-La configuration de la variable [development](/help/implementing/developing/introduction/development-guidelines.md) L’environnement peut dépendre de divers facteurs, bien qu’il se compose généralement des éléments suivants :
+La configuration de la variable [development](/help/implementing/developing/introduction/development-guidelines.md) L’environnement peut dépendre de divers facteurs, bien qu’il soit généralement composé des éléments suivants :
 
-* Un système de développement intégré avec contrôle de version pour fournir une base de code intégrée. Il est utilisé pour fusionner et consolider le code des différents environnements de développement utilisés par chaque développeur.
-* Un environnement personnel pour chaque développeur, résidant habituellement sur son ordinateur local. Le code est synchronisé avec le système de contrôle de version à des intervalles appropriés.
+* Système de développement intégré avec contrôle de version pour fournir une base de code intégrée. Cette base de code intégrée est utilisée pour fusionner et consolider le code des différents environnements de développement utilisés par chaque développeur.
+* Un environnement personnel pour chaque développeur, résidant habituellement sur son ordinateur local. À des intervalles appropriés, le code est synchronisé avec le système de contrôle de version.
 
 Selon l’échelle de votre système, l’environnement de développement peut comprendre une instance de création et une instance de publication.
 
@@ -66,18 +66,18 @@ L’environnement d’évaluation doit être un miroir de l’environnement de p
 
 ### Production : création et publication  {#production-author-and-publish}
 
-L’environnement de production est constitué des environnements requis pour [créer et publier](/help/sites-cloud/authoring/getting-started/concepts.md) votre mise en œuvre.
+L’environnement de production se compose des environnements qui [création et publication](/help/sites-cloud/authoring/getting-started/concepts.md) votre implémentation.
 
 Un environnement de production comprend au moins une instance de création et une instance de publication :
 
 * Une instance de [création](#author) pour la saisie du contenu.
 * Une instance de [publication](#publish) pour le contenu mis à la disposition de vos visiteurs/utilisateurs.
 
-En fonction de l’échelle du projet, il se compose bien souvent de plusieurs instances de création et/ou de publication. À un niveau inférieur, le référentiel peut également être mis en grappe sur plusieurs instances.
+Selon l’échelle du projet, il se compose souvent de plusieurs auteurs, éditeurs ou des deux. À un niveau inférieur, le référentiel peut également être mis en grappe sur plusieurs instances.
 
 #### Création {#author}
 
-Les instances d’auteur se trouvent généralement derrière le pare-feu interne. Il s’agit de l’environnement dans lequel vous et vos collègues effectuerez des tâches de création, telles que :
+En règle générale, les instances d’auteur se trouvent derrière le pare-feu interne. Ce pare-feu interne est l’environnement dans lequel vous et vos collègues effectuez des tâches de création, telles que :
 
 * administrer l’ensemble du système ;
 * saisir votre contenu ;
@@ -90,7 +90,7 @@ Pour répliquer à l’inverse les données générées dans un environnement de
 
 #### Publier {#publish}
 
-Un environnement de publication se trouve généralement dans la zone démilitarisée (DMZ). Il s’agit de l’environnement dans lequel les visiteurs accéderont à votre contenu (par exemple, via un site web ou sous la forme d’une application mobile) et interagiront avec lui ; qu’il soit public ou dans votre intranet. Un environnement de publication :
+En règle générale, un environnement de publication se trouve dans la &quot;zone démilitarisée&quot; (DMZ). Cet environnement est l’endroit où les visiteurs accèdent à votre contenu (par exemple, par le biais d’un site web ou sous la forme d’une application mobile) et interagissent avec celui-ci, qu’il soit public ou dans votre intranet. Un environnement de publication :
 
 * contient du contenu répliqué à partir de l’environnement de création ;
 * met ce contenu à la disposition des visiteurs
@@ -101,19 +101,19 @@ L’environnement de publication génère votre contenu dynamiquement en temps r
 
 ## Mouvement de code  {#code-movement}
 
-Le code doit toujours être propagé du bas vers le haut :
+Toujours propager le code du bas vers le haut :
 
 * Le code est initialement développé sur les environnements de développement locaux puis intégrés.
-* suivi de tests approfondis sur le ou les environnements d’assurance qualité
+* suivi de tests approfondis sur les environnements d’assurance qualité
 * puis effectuer de nouveau les tests sur les environnements intermédiaires.
 * À ce stade seulement, le code doit être déployé dans les environnements de production.
 
-Le code (par exemple, les fonctionnalités d’applications web et les modèles de conception personnalisés) est généralement transféré en exportant et en important des packages entre les différents référentiels de contenu. Lorsque c’est approprié, cette réplication peut être configurée en tant que processus automatique.
+En règle générale, le code (par exemple, la fonctionnalité d’application web personnalisée et les modèles de conception) est transféré en exportant et en important des modules entre les différents référentiels de contenu. Lorsque c’est approprié, cette réplication peut être configurée en tant que processus automatique.
 
-Les projets AEM as a Cloud Service déclenchent souvent le déploiement du code :
+Les projets sur AEM as a Cloud Service déclenchent souvent un déploiement de code :
 
 * Automatiquement : pour le transfert vers les environnements de développement et d’assurance qualité.
-* Manuellement : les déploiements sur les environnements d’évaluation et de production sont effectués de manière plus contrôlée, souvent manuelle ; l’automatisation reste toutefois possible, si nécessaire.
+* Manuellement : les déploiements dans les environnements d’évaluation et de production sont effectués de manière plus contrôlée, souvent manuelle; bien que l’automatisation soit possible, si nécessaire.
 
 ![Mouvement de code](assets/code-movement.png)
 
@@ -121,17 +121,17 @@ Les projets AEM as a Cloud Service déclenchent souvent le déploiement du code�
 
 Le contenu conçu pour la production doit **toujours** être créé sur l’instance de création de production.
 
-Le contenu ne doit pas suivre le déplacement du code des environnements inférieurs vers les plus élevés. Il n’est en effet pas recommandé de créer du contenu sur des ordinateurs locaux ou des environnements inférieurs, puis de le déplacer vers l’environnement de production, car cela peut introduire des erreurs et des incohérences.
+Le contenu ne doit pas suivre le déplacement du code des environnements inférieurs vers les environnements supérieurs. En d’autres termes, il n’est pas recommandé que les auteurs créent du contenu sur des ordinateurs locaux ou des environnements inférieurs, puis le déplacent vers l’environnement de production. La raison en est qu’elle peut introduire des erreurs et des incohérences.
 
 Le contenu de production doit être déplacé à partir de l’environnement de production vers l’environnement d’évaluation pour assurer que ce dernier fournit un environnement de test efficace et précis.
 
 >[!NOTE]
 >
->Cela ne signifie pas que le contenu intermédiaire doit être continuellement synchronisé avec la production, les mises à jour régulières sont suffisantes, mais surtout avant de tester une nouvelle itération du code. Le contenu des environnements d’assurance qualité et de développement n’a pas besoin d’être mis à jour aussi fréquemment. Il doit simplement représenter correctement le contenu de production.
+>Cette méthodologie ne signifie pas que le contenu intermédiaire doit être continuellement synchronisé avec la production. les mises à jour régulières sont suffisantes, mais surtout avant de tester une nouvelle itération du code. Le contenu des environnements d’assurance qualité et de développement n’a pas besoin d’être mis à jour aussi fréquemment. Il doit simplement être une bonne représentation du contenu de production.
 
 Le contenu peut être transféré :
 
 * Entre les différents environnements, en exportant et en important des packages.
-* entre différentes instances, en répliquant directement (par réplication AEM as a Cloud Service) le contenu (à l’aide d’une connexion HTTP ou HTTPS).
+* entre différentes instances, en répliquant directement (AEM réplication as a Cloud Service) le contenu (à l’aide d’une connexion HTTP ou HTTPS).
 
 ![Déplacement de contenu](assets/content-movement.png)
