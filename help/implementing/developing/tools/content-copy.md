@@ -2,10 +2,10 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production sur AEM as a Cloud Service à des environnements inférieurs à des fins de test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 41%
+source-wordcount: '1203'
+ht-degree: 40%
 
 ---
 
@@ -15,7 +15,7 @@ L’outil de copie de contenu permet aux utilisateurs de copier du contenu modif
 
 ## Présentation {#introduction}
 
-Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu vous permet de copier du contenu d’un environnement d’AEM de production vers un environnement d’évaluation, de développement ou [Environnement de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environnement pour de tels tests.
+Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu vous permet de copier du contenu d’un environnement de production AEM as a Cloud Service vers un environnement d’évaluation, de développement ou [Environnement de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environnement pour de tels tests.
 
 Le contenu à copier est défini par un jeu de contenu. Un jeu de contenu est constitué d’une liste de chemins JCR qui contiennent le contenu modifiable à copier d’un environnement de service de création de source vers un environnement de service de création cible dans le même programme Cloud Manager. Les chemins d’accès suivants sont autorisés dans un jeu de contenu.
 
