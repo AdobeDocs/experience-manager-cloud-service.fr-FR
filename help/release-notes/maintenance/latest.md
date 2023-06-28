@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
+source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 39%
+source-wordcount: '604'
+ht-degree: 19%
 
 ---
 
@@ -22,6 +22,7 @@ L’activation des fonctionnalités de la version 2023.7.0 fournit l’ensemble 
 ### Améliorations {#enhancements-12441}
 
 - SITES-8769 : Amélioration des appels StyleImpl dans ResponsiveGrid
+- Forms-5054 : Ajout de la prise en charge de toutes les [statues](https://opensource.adobe.com/acrobat-sign/acrobat_sign_events/webhookeventsagreements.html) pris en charge par Adobe Sign.
 
 ### Problèmes résolus {#fixed-issues-12441}
 
@@ -37,6 +38,21 @@ L’activation des fonctionnalités de la version 2023.7.0 fournit l’ensemble 
 - SITES-13559 : MSM : Exception &quot;N’est pas modifiable&quot; générée lors du déploiement du composant
 - SITES-11757 : MSM : La configuration du déploiement hérité de Parent n’est pas rétablie pour les pages enfants.
 - SITES-14073 : Administration des sites : Le rapport CSV échoue avec 500 lors de la sélection d’aucune propriété à exporter
+- Forms-7648 : La validation du champ Nombre maximal de chiffres ne fonctionne pas pour le composant de zone numérique.
+- Forms-8177 : Lorsque le service Forms est principal, l’erreur &#39;com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Échec de récupération des dépendances de ressources&#39; se rencontre.
+- Forms-8300 : Lorsqu’un utilisateur tente de déléguer une tâche après l’avoir ouverte, la réponse du délégué recharge la tâche, au lieu d’ouvrir l’interface utilisateur de la boîte de réception d’AEM de l’utilisateur.
+- Forms-8500 : Sur le navigateur Microsoft® Edge avec l’option Mode IE activée, HTML5 Forms ne s’ouvre pas.
+- Forms-8541 : Lors du rendu d’une Forms adaptative, une exception de pointeur nul se produit.
+- Forms-8964 : Lorsqu’un formulaire est ouvert sur un appareil Android™ sur Google Chrome ou Mozilla Firefox, le texte saisi dans le composant de zone de texte ne peut pas être supprimé.
+- Forms-9026 : Lorsqu’un utilisateur crée un formulaire adaptatif basé sur un schéma JSON complexe et valide, fait glisser les champs de schéma JSON associés vers l’éditeur de Forms adaptatif pour créer les champs Forms adaptatif et actualise la fenêtre de l’éditeur de Forms adaptatif, tous les champs sont supprimés et l’éditeur de Forms adaptatif apparaît vide.
+- Forms-9263 : Lorsque le texte d’affichage d’une case à cocher contient un caractère spécial, les utilisateurs ne peuvent pas cocher de ces cases.
+- Forms-8668 : Lors du rendu d’un aperçu du PDF d’un formulaire, certains vidages de pile Java™ non requis apparaissent dans les journaux d’erreurs. Cependant, le rendu du formulaire ne pose aucun problème.
+- Forms-8116 : Lorsque des règles sont appliquées au composant Conteneur de Forms adaptatif, les règles appliquées ne sont pas enregistrées.
+- Forms-7906 : Lorsqu’un formulaire adaptatif est ajouté à un composant de conteneur AEM Sites, l’éditeur de règles ne s’ouvre pas.
+- Forms-8846 : La propriété de référence Bind ne fonctionne pas pour le composant de pièces jointes Adaptive Forms.
+- Forms-9072 : Lorsque vous recherchez un schéma lors de la création d’un fragment de formulaire, le résultat de la recherche ne renvoie aucun schéma à sélectionner.
+- Forms : Correction de plusieurs bogues liés à l’accessibilité afin d’améliorer l’accessibilité des fonctionnalités d’AEM Forms.
+
 
 ### Problèmes connus {#known-issues-12441}
 
