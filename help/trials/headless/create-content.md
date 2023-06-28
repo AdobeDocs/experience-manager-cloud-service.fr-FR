@@ -4,10 +4,10 @@ description: Utilisez le modèle de fragment de contenu que vous avez créé pr�
 hidefromtoc: true
 index: false
 exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 61%
+source-wordcount: '657'
+ht-degree: 54%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 61%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
 >title="Créer du contenu"
->abstract="En utilisant le modèle que vous avez créé dans le module précédent, vous apprendrez à créer du contenu qui peut être utilisé pour la création de pages ou comme base à votre contenu découplé."
+>abstract="En utilisant le modèle que vous avez créé dans le module précédent, vous apprenez à créer du contenu qui peut être utilisé pour la création de pages ou comme base de votre contenu sans en-tête."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
@@ -33,7 +33,7 @@ ht-degree: 61%
 
 Les fragments de contenu représentent votre contenu découplé et sont basés sur des structures prédéfinies, appelées modèles de fragment de contenu. Vous avez déjà créé un modèle dans un module précédent.
 
-Dans ce module, vous allez créer un fragment de contenu basé sur ce modèle à l’aide de la console Fragment de contenu . Envisagez la console Fragment de contenu comme votre bibliothèque de contenu découplé. Utilisez-la pour créer des fragments de contenu et gérer des fragments existants.
+Dans ce module, vous créez un fragment de contenu basé sur ce modèle à l’aide de la console Fragment de contenu . Envisagez la console Fragment de contenu comme votre bibliothèque de contenu découplé. Utilisez-la pour créer des fragments de contenu et gérer des fragments existants.
 
 1. Appuyez ou cliquez sur le bouton **Créer** en haut à droite de la console.
 
@@ -53,7 +53,7 @@ Dans ce module, vous allez créer un fragment de contenu basé sur ce modèle à
 
 ## Ajout de contenu à votre fragment de contenu {#add-content}
 
-Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, l’éditeur de fragment de contenu s’ouvre dans un nouvel onglet. Vous pouvez y ajouter le contenu de votre nouveau fragment.
+Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, l’éditeur de fragment de contenu s’ouvre sur un nouvel onglet. Vous pouvez y ajouter le contenu de votre nouveau fragment.
 
 1. L’éditeur de fragment de contenu affiche les champs que vous avez définis dans le modèle sélectionné. Vous pouvez ajouter du contenu à chaque champ pour compléter votre fragment de contenu. Votre progression est enregistrée automatiquement.
 
