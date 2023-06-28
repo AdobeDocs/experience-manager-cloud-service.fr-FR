@@ -1,0 +1,150 @@
+---
+title: Gérer vos ressources numériques
+description: Déplacez, supprimez, copiez, renommez, mettez à jour et gérez la version de vos ressources dans  [!DNL Assets view].
+role: User,Leader
+contentOwner: AG
+exl-id: b01e98b9-0cc2-47c5-9f5b-79b8e6bef39f
+source-git-commit: d198b3f0c7d8469a376ba7a3e95e57c84f835dbb
+workflow-type: tm+mt
+source-wordcount: '1036'
+ht-degree: 92%
+
+---
+
+# Gestion des actifs {#manage-assets}
+
+Vous pouvez effectuer facilement de nombreuses tâches de gestion des actifs numériques (DAM) grâce à l’interface conviviale d’[!DNL Assets view]. Une fois les ressources ajoutées, vous pouvez les rechercher, les télécharger, les déplacer, les copier, les renommer, les supprimer, les mettre à jour et les modifier.
+
+Utilisez [!DNL Assets view] pour accomplir les tâches de gestion des actifs suivantes. Lorsque vous sélectionnez une ressource, les options suivantes s’affichent dans la barre d’outils supérieure.
+
+![Options de la barre d’outils lors de la sélection d’une ressource](assets/toolbar-image-selected.png)
+
+*Image : options disponibles dans la barre d’outils lors de la sélection d’une image.*
+
+* ![Icône Désélectionner](assets/do-not-localize/close-icon.png) Désélectionne la sélection.
+* ![Icône Détails](assets/do-not-localize/edit-in-icon.png) Cliquez pour prévisualiser une ressource et afficher le détail des métadonnées. Lors de la prévisualisation, vous pouvez afficher les versions et modifier une image.
+* ![Icône Télécharger](assets/do-not-localize/download-icon.png) Téléchargez la ressource sélectionnée vers votre système de fichiers local.
+* ![Icône Supprimer](assets/do-not-localize/delete-icon.png) Supprimez la ressource ou le dossier sélectionné.
+* ![Icône Extraire](assets/do-not-localize/checkout-icon.png) Extrayez la ressource sélectionnée.
+* ![Icône Copier](assets/do-not-localize/copy-icon.png) Copiez le fichier ou le dossier sélectionné.
+* ![Icône Déplacer](assets/do-not-localize/move-icon.png) Déplacez la ressource ou le dossier sélectionné vers un autre emplacement de la hiérarchie du référentiel.
+* ![Icône renommer](assets/do-not-localize/rename-icon.png) Renommez la ressource ou le dossier sélectionné. Utilisez un nom unique sans quoi le renommage pourrait échouer avec un avertissement. Vous pouvez réessayer avec un nouveau nom.
+* ![Icône Affecter une tâche](assets/do-not-localize/review-delegate-icon.png) Affectez des tâches à d’autres utilisateurs afin de collaborer sur une ressource.
+
+Vous pouvez afficher les mêmes options sur les miniatures des ressources.
+
+![Options de gestion d’une ressource dans la miniature de la ressource](assets/options-on-thumbnail.png)
+
+[!DNL Assets view] affiche uniquement les options de la barre d’outils qui sont appropriées pour le type de la ressource sélectionnée.
+
+![Options de la barre d’outils lors de la sélection d’une ressource](assets/toolbar-folder-selected.png)
+
+*Image : options disponibles dans la barre d’outils lors de la sélection d’un dossier.*
+
+![Options de la barre d’outils lors de la sélection d’une ressource](assets/toolbar-pdf-selected.png)
+
+*Image : options disponibles dans la barre d’outils lors de la sélection d’un fichier PDF.*
+
+## Téléchargement et distribution de ressources {#download}
+
+Vous pouvez sélectionner des ressources ou des dossiers, ou une combinaison des deux, et télécharger la sélection vers votre système de fichiers local. Vous pouvez modifier les ressources et les charger à nouveau ou les distribuer en dehors d’[!DNL Assets view]. Vous pouvez également [télécharger les rendus](/help/assets/add-delete-assets-view.md#renditions) d’une ressource.
+
+## Contrôle de version des ressources {#versions-of-assets}
+
+<!-- 
+TBD: query for engineering: How many versions are maintained. What happens when we reach that limit? Are old versions automatically removed? -->
+
+[!DNL Assets view] crée de nouvelles versions des ressources lorsque celles-ci sont à nouveau chargées et mises à jour ou modifiées. Vous pouvez afficher l’historique des versions et les versions antérieures, et restaurer une des versions antérieures de la ressource à la place de la dernière version, qui est quand à elle sauvegardée si nécessaire en tant que version précédente. De nouvelles versions des ressources sont créées dans les scénarios suivants :
+
+* Chargement d’une nouvelle ressource dotée du même nom de fichier qu’une ressource existant déjà dans le même dossier. [!DNL Assets view] invite à remplacer la ressource précédente ou à enregistrer la nouvelle ressource en tant que nouvelle version. Consultez [Chargement de ressources en double](/help/assets/add-delete-assets-view.md).
+
+  ![Création de nouvelles versions lors du chargement](assets/uploads-manage-duplicates.png)
+
+  *Image : lors du chargement d’une ressource nommée de la même manière qu’une ressource existante, vous pouvez créer une nouvelle version de la ressource.*
+
+* Modifiez une image et cliquez sur **[!UICONTROL Enregistrer comme version]**. Consultez [Modification d’images](/help/assets/edit-images-assets-view.md).
+
+  ![Enregistrement d’une image modifiée en tant que nouvelle version](assets/edit-image2.png)
+
+  *Image : enregistrez l’image modifiée en tant que nouvelle version.*
+
+* Ouvrez les différentes versions d’une ressource existante. Cliquez sur **[!UICONTROL Nouvelle version]** et chargez une version plus récente de la ressource dans le référentiel.
+
+  ![Option de chargement de la nouvelle version d’une ressource à partir de l’historique des versions](assets/view-asset-versions2.png)
+
+### Affichage des versions d’une ressource {#view-versions}
+
+Lors du chargement d’un doublon ou de la copie modifiée d’une ressource, vous pouvez créer ses versions. Le contrôle de version vous permet de passer en revue l’historique des ressources et de revenir à une version précédente si nécessaire.
+
+Pour afficher les versions, ouvrez l’aperçu d’une ressource et cliquez sur ![Icône Versions](assets/do-not-localize/versions-clock-icon.png) **[!UICONTROL Versions]** dans la barre latérale droite. Pour prévisualiser une version en particulier, sélectionnez-la. Pour la restaurer, cliquez sur **[!UICONTROL Restaurer en tant que dernière version]**.
+
+Vous pouvez également créer des versions à partir de l’historique des versions. Sélectionnez la dernière version, cliquez sur **[!UICONTROL Nouvelle version]**, puis chargez une nouvelle copie de la ressource à partir de votre système de fichiers local.
+
+![Affichage des versions d’une ressource](assets/view-asset-versions1.png)
+
+*Image : affichez les différentes versions d’une ressource, revenez à une version précédente ou chargez une autre version.*
+
+## Gestion du statut des ressources {#manage-asset-status}
+
+**Autorisations requises :**  `Can Edit`, `Owner` ou les autorisations d’administrateur sur une ressource.
+
+La vue Assets vous permet de définir l’état des ressources disponibles dans le référentiel. Définissez le statut d’une ressource pour mieux gouverner et gérer la consommation en aval des ressources numériques.
+
+Vous pouvez définir le statut suivant pour les ressources :
+
+* Approuvé
+
+* Refusé
+
+* Aucun statut
+
+### Définition du statut de la ressource {#set-asset-status}
+
+Pour définir le statut de la ressource :
+
+1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Détails]** dans la barre d’outils.
+
+1. Dans l’onglet **[!UICONTROL De base]**, sélectionnez le statut de la ressource dans la liste déroulante **[!UICONTROL Statut]**. Les valeurs possibles sont Approuvé, Refusé et Aucun statut (par défaut).
+
+   >[!VIDEO](https://video.tv.adobe.com/v/342495)
+
+
+### Définir la date d’expiration de ressources {#set-asset-expiration-date}
+
+La vue Assets vous permet également de définir la date d’expiration des ressources disponibles dans le référentiel. Par conséquent, vous pouvez [filtrer les résultats de la recherche](search-assets-view.md#refine-search-results) en fonction du statut d’une ressource `Expired`. En outre, vous pouvez spécifier une période d’expiration pour les ressources afin de filtrer davantage les résultats de votre recherche.
+
+Pour définir la date d’expiration de ressource :
+
+1. Sélectionnez la ressource, puis cliquez sur **[!UICONTROL Détails]** dans la barre d’outils.
+
+1. Dans l’onglet **[!UICONTROL De base]**, définissez la date d’expiration de la ressource à l’aide du champ  **[!UICONTROL Date d’expiration]**.
+
+L’indicateur de carte de ressources `Expired` remplace l’indicateur `Approved` ou `Rejected` défini pour une ressource.
+
+Vous pouvez également filtrer les ressources en fonction de leur état. Pour plus d’informations, voir [Recherche de ressources dans la vue Ressources](search-assets-view.md).
+
+## Personnalisation des formulaires de métadonnées pour inclure un champ de statut de ressource {#customize-asset-status-metadata-form}
+
+**Autorisations requises :** administrateur
+
+La vue Assets fournit de nombreux champs de métadonnées standard par défaut. Les entreprises ont d’autres besoins en métadonnées et ont besoin de davantage de champs de métadonnées pour ajouter des métadonnées spécifiques à leur entreprise. Les formulaires de métadonnées permettent aux entreprises d’ajouter des champs de métadonnées personnalisés à la page [!UICONTROL Détails] d’une ressource. Les métadonnées spécifiques à l’entreprise améliorent la gouvernance et la découverte de ses ressources.
+
+Pour plus d’informations sur l’ajout de champs de métadonnées supplémentaires au formulaire de métadonnées, consultez [Formulaires de métadonnées](metadata-assets-view.md#metadata-forms).
+
+**Ajout du champ de métadonnées Statut de la ressource au formulaire**
+
+Pour ajouter un champ de métadonnées Statut de la ressource au formulaire, faites glisser **[!UICONTROL Statut de la ressource]** du rail de gauche vers le formulaire. La propriété de mappage est prérenseignée automatiquement. Enregistrez le formulaire pour confirmer les modifications.
+
+**Ajouter le champ de métadonnées Date d’expiration au formulaire**
+
+Pour ajouter un champ de métadonnées Date d’expiration au formulaire, faites glisser le composant **[!UICONTROL Date]** du rail de gauche vers le formulaire. Spécifiez la **Date d’expiration** comme libellé et `pur:expirationDate` comme propriété de mappage. Enregistrez le formulaire pour confirmer les modifications.
+
+## Étapes suivantes {#next-steps}
+
+* [Visionner une vidéo pour gérer des ressources dans la vue Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets-essentials/basics/managing.html?lang=fr)
+
+* Fournir des commentaires sur les produits à l’aide de la variable [!UICONTROL Commentaires] option disponible dans l’interface utilisateur de la vue Assets
+
+* Faites des commentaires sur la documentation en utilisant l’option [!UICONTROL Modifier cette page] ![modifier la page](assets/do-not-localize/edit-page.png) ou [!UICONTROL Enregistrer un problème] ![créer un problème GitHub](assets/do-not-localize/github-issue.png) disponible dans la barre latérale droite.
+
+* Contactez l’[assistance clientèle](https://experienceleague.adobe.com/?support-solution=General&amp;lang=fr#support).

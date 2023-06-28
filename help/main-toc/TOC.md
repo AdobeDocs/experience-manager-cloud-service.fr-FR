@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 9e8ad6d9fe0cf749b0f7981164d05e051d531248
 workflow-type: tm+mt
-source-wordcount: '4094'
+source-wordcount: '4139'
 ht-degree: 97%
 
 ---
@@ -501,6 +501,23 @@ ht-degree: 97%
       + [FAQ sur la diffusion de contenu HTTP/2](/help/assets/dynamic-media/http2faq.md)
       + [Fin de prise en charge des visionneuses Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fin de vie des visionneuses DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
+
++ Utilisation de la vue Assets {#assets-view}
+   + [Prise en main](/help/assets/get-started-assets-view.md)
+   + [Mon espace de travail](/help/assets/my-workspace-assets-view.md)
+   + [Types de fichiers pris en charge et cas d’utilisation](/help/assets/supported-file-formats-assets-view.md)
+   + [Afficher les ressources](/help/assets/navigate-assets-view.md)
+   + [Chargement et ajout de ressources](/help/assets/add-delete-assets-view.md)
+   + [Recherche et découverte de ressources](/help/assets/search-assets-view.md)
+   + [Tâches de gestion des ressources](/help/assets/manage-organize-assets-view.md)
+   + [Modification des images](/help/assets/edit-images-assets-view.md)
+   + [Gestion des métadonnées des ressource](/help/assets/metadata-assets-view.md)
+   + [Partager des ressources](/help/assets/share-links-for-assets-view.md)
+   + [Gestion des collections](/help/assets/manage-collections-assets-view.md)
+   + [Surveiller les ressources, les dossiers et les collections](/help/assets/manage-notifications-assets-view.md)
+   + [Gérer les rapports](/help/assets/manage-reports-assets-view.md)
+   + [Gestion des balises](/help/assets/tagging-management-assets-view.md)
+
    + Intégration avec Adobe Workfront {#integrations}
       + [Intégrations à  [!DNL Adobe Workfront]](/help/assets/workfront-integrations.md)
       + [Configurer le mappage des métadonnées des ressources](/help/assets/configure-asset-metadata-mapping.md)
