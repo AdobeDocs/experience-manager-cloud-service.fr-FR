@@ -10,9 +10,9 @@ topic-tags: adaptive_forms, author
 discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 exl-id: 3fdbe5a3-5c3c-474d-b701-e0182da4191a
-source-git-commit: a16da1b11cfe18910b2e57c0b6b668543dba46e3
+source-git-commit: 63f6e7c6df7404062aa0d209496506bdabcf564c
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1436'
 ht-degree: 84%
 
 ---
@@ -106,7 +106,7 @@ Appuyez sur le champ **[!UICONTROL Valeur monétaire]** dans le formulaire et cr
 
 >[!NOTE]
 >
-> Si vous sélectionnez la configuration reCAPTCHA v2 avec la taille comme [!UICONTROL Invisible] alors l’option afficher/masquer n’est pas applicable.
+> Lorsque vous sélectionnez une configuration reCAPTCHA v2 et que la taille est définie sur [!UICONTROL Invisible], l’option d’affichage/masquage reste désactivée.
 
 ### Valider le CAPTCHA {#validate-captcha}
 
