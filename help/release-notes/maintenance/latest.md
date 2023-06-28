@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: 39696141a50bf8204d37341a85a4f4a8acae69db
+source-git-commit: fd0b8ca281f35a92876f3c31baa4e17884f23948
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 31%
+source-wordcount: '297'
+ht-degree: 39%
 
 ---
 
@@ -13,44 +13,36 @@ ht-degree: 31%
 
 La section suivante décrit les notes de mise jour techniques de maintenance actuelle d’Experience Manager as a Cloud Service.
 
-## Version 12255 {#release-12255}
+## Version 12441 {#release-12441}
 
-Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 12255, publiée publiquement le 13 juin 2023. Cette mise à jour de maintenance est une mise à jour de la version de maintenance 12142 précédente.
+Vous trouverez ci-dessous un résumé des améliorations continues apportées à la version de maintenance 12441, publiée publiquement le 27 juin 2023. Cette mise à jour de maintenance est une mise à jour de la version de maintenance 12255 précédente.
 
-L’activation des fonctionnalités de la version 2023.6.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
+L’activation des fonctionnalités de la version 2023.7.0 fournit l’ensemble des fonctionnalités de cette version de maintenance. Voir [Feuille de route des versions du Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr) pour plus d’informations.
 
-### Améliorations {#enhancements-12255}
+### Améliorations {#enhancements-12441}
+
+- SITES-8769 : Amélioration des appels StyleImpl dans ResponsiveGrid
+
+### Problèmes résolus {#fixed-issues-12441}
+
+- Diverses mises à jour liées à l’accessibilité
+- SITES-12688 : Éditeur de page : Opérateur logique OU ne fonctionnant pas correctement dans la recherche de l’outil de recherche de ressources
+- SITES-4951 : Éditeur de page : La recherche de balises dans l’éditeur de page ne trouve pas de sous-balises.
+- SITES-12465 : Fragments d’expérience : Touches de flèches ne fonctionnant pas dans la boîte de dialogue du composant Fragment d’expérience
+- SITES-12893 : Fragments d’expérience : Application d’une validation de référence circulaire aux fragments d’expérience
+- SITES-12715 : Fragments d’expérience : Les configurations de service Cloud appliquées au dossier de fragments Experience ne sont pas conservées.
+- SITES-13097 : Fragments d’expérience : Impossible d’ajouter des fragments d’expérience à un projet de traduction
+- SITES-13165 : GraphQL : Restaurer le comportement par défaut pour le filtrage des valeurs nulles
+- SITES-12577 : Vérificateur de lien : Le transformateur ne réécrit pas les liens par intermittence
+- SITES-13559 : MSM : Exception &quot;N’est pas modifiable&quot; générée lors du déploiement du composant
+- SITES-11757 : MSM : La configuration du déploiement hérité de Parent n’est pas rétablie pour les pages enfants.
+- SITES-14073 : Administration des sites : Le rapport CSV échoue avec 500 lors de la sélection d’aucune propriété à exporter
+
+### Problèmes connus {#known-issues-12441}
 
 Aucun.
 
-### Problèmes résolus {#fixed-issues-12255}
-
-- Diverses mises à jour liées à l’accessibilité
-- ASSETS-15116 - Option &quot;Aller à l’emplacement&quot; disponible dans la vue de recherche Assets
-- ASSETS-17453 - (Dynamic Media) Impossible de sélectionner une miniature personnalisée pour les vidéos
-- ASSETS-19279 - Archive de téléchargement des ressources pour les fichiers volumineux
-- ASSETS-19544 - Dernière modification par l’utilisateur pour les mises à jour de ressources
-- ASSETS-20146 - (IU tactile) Rapports sur les téléchargements de ressources Échec en raison des erreurs de validation s’affichent toujours en haut de la page de liste pour les rapports.
-- ASSETS-21056 - Optimisation des performances de référence des ressources pour réduire les écritures
-- ASSETS-21909 - Impossible d’afficher la vidéo de recadrage intelligent lorsque vtt ne parvient pas à télécharger
-- ASSETS-22261 - La structure de dossiers des téléchargements Linkshare est incohérente avec les téléchargements de l’interface utilisateur Assets
-- ASSETS-22550 - Le panneau Filtre de recherche s’ouvre désormais par défaut.
-- ASSETS-22920 - L’annulation de la publication du dossier à partir de Brand Portal ne marque pas les ressources dans comme non publiées.
-- ASSETS-22922 - Les paramètres prédéfinis de visionneuse désactivés s’affichent dans le composant Dynamic Media
-- ASSETS-23461 - Publication rapide Brand Portal à partir de la vue de recherche Ressources
-- ASSETS-23466 - La gestion des liens inaccessibles de l’InDesign Server ne parvient pas à résoudre les liens AAL contenant des espaces
-- ASSETS-23469 - Les filtres de ressources par défaut entrent en conflit avec les filtres personnalisés
-- ASSETS-23981 - Fonction de tri pour les titres qui ne fonctionnent pas dans les liens de collection
-- ASSETS-24723 - Les ressources publiées ont été retraitées sans intervention de l’utilisateur.
-- GRANITE-45385 - Migration de l’activation de l’arborescence pour utiliser la tâche sling au lieu du workflow
-
-### Problèmes connus {#known-issues-12255}
-
-- ASSETS-25729 - Le menu de sélecteur d’affichage est désactivé.
-- ASSETS-25728 - L’option Retraiter les ressources n’est pas disponible dans la vue de recherche
-- ASSETS-22603 - Certaines colonnes du rapport de ressources de type Téléchargement affichent des valeurs &quot;null&quot; dans l’interface utilisateur. Le fichier CSV téléchargeable n’est pas affecté.
-
-### Technologies intégrées {#embedded-tech-12255}
+### Technologies intégrées {#embedded-tech-12441}
 
 | Technologie | Version | Lien |
 |---|---|---|
