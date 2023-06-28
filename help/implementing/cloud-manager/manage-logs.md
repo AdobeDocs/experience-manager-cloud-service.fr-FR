@@ -2,10 +2,10 @@
 title: Accès aux journaux et gestion des journaux
 description: Découvrez comment accéder aux journaux et les gérer pour faciliter votre processus de développement dans AEM as a Cloud Service.
 exl-id: f17274ce-acf5-4e7d-b875-75d4938806cd
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 18%
+source-wordcount: '268'
+ht-degree: 26%
 
 ---
 
@@ -79,7 +79,7 @@ Environment Id Service    Name
 
 ### Ressources supplémentaires {#resources}
 
-Pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande d’Adobe Developer, reportez-vous aux ressources supplémentaires suivantes :
+Reportez-vous aux ressources supplémentaires suivantes pour en savoir plus sur l’API Cloud Manager et l’interface de ligne de commande d’Adobe I/O :
 
 * [Documentation de l’API Cloud Manager](https://developer.adobe.com/experience-cloud/cloud-manager/)
-* [Interface de ligne de commande d’Adobe Developer](https://github.com/adobe/aio-cli-plugin-cloudmanager)
+* [Interface de ligne de commande d’Adobe I/O](https://github.com/adobe/aio-cli-plugin-cloudmanager)

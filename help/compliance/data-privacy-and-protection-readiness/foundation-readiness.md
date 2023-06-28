@@ -1,11 +1,11 @@
 ---
 title: Règlements sur la protection et la confidentialité des données – Préparation d’Adobe Experience Manager as a Cloud Service Foundation
-description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Foundation pour les différents règlements sur la protection et la confidentialité des données ; notamment le règlement général sur la protection des données (RGPD) de l’Union européenne, la loi sur la protection de la vie privée des consommateurs de Californie et la manière de s’y conformer lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
+description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Foundation pour les différents règlements sur la protection et la confidentialité des données. Cet article comprend le règlement général sur la protection des données (RGPD) de l’UE, la loi sur la protection des données des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’un nouveau projet as a Cloud Service AEM.
 exl-id: 3a4b9d00-297d-4b1d-ae57-e75fbd5c490c
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '504'
-ht-degree: 92%
+source-wordcount: '503'
+ht-degree: 50%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 92%
 >
 >Le contenu de ce document ne constitue pas un avis juridique et ne vise pas à le remplacer.
 >
->Consultez le service juridique de votre entreprise pour obtenir des conseils concernant les réglementations sur la protection des données et la confidentialité des données.
+>Consultez le service juridique de votre entreprise pour obtenir des conseils sur les réglementations relatives à la protection des données et à la confidentialité des données.
 
 >[!NOTE]
 >
->Pour plus d’informations sur la réponse d’Adobe aux problèmes de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, voir la section [Centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy.html).
+>Pour plus d’informations sur la réponse de l’Adobe aux problèmes de confidentialité et sur ce que cela signifie pour vous en tant que client Adobe, voir [Centre de traitement des données personnelles des Adobes](https://www.adobe.com/fr/privacy.html).
 
 ## Prise en charge de la confidentialité et de la protection des données d’AEM Foundation {#aem-foundation-data-privacy-and-protection-support}
 
-En ce qui concerne AEM Foundation, les données personnelles stockées sont conservées dans le profil utilisateur. Ainsi, les informations fournies dans cet article expliquent principalement comment accéder à ces profils utilisateur et les supprimer pour répondre respectivement aux demandes d’accès et de suppression.
+En ce qui concerne AEM Foundation, les données personnelles stockées sont conservées dans le profil utilisateur. Par conséquent, les informations de cet article portent principalement sur la manière d’accéder aux profils utilisateur et de les supprimer, de sorte que vous puissiez traiter les demandes d’accès et de suppression, respectivement.
 
 ## Accès à un profil utilisateur {#accessing-a-user-profile}
 
@@ -81,13 +81,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. Ouvrez la console Administration utilisateur et recherchez l’utilisateur en question, comme décrit ci-dessus.
 2. Pointez sur l’utilisateur et cliquez sur l’icône de sélection. Le profil devient gris pour indiquer qu’il est sélectionné.
 
-3. Appuyez sur le bouton **Désactiver** dans le menu supérieur pour désactiver l’utilisateur :
+3. Dans le menu supérieur, cliquez sur **Désactiver** pour désactiver l’utilisateur :
 
    ![Désactiver le compte](assets/dpp-foundation-03.png)
 
 4. Enfin, confirmez l’action.
 
-   L’interface utilisateur indique alors que le compte utilisateur a été désactivé en grisant la carte de profil et en y ajoutant un cadenas :
+   L’interface utilisateur indique que le compte utilisateur a été désactivé en grisant et en ajoutant un verrou à la carte de profil :
 
    ![Compte désactivé](assets/dpp-foundation-04.png)
 
@@ -99,7 +99,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### API HTTP  {#http-api-1}
 
-Les procédures suivantes utilisent l’outil de ligne de commande `curl` pour illustrer comment désactiver l’`userId` **[!UICONTROL cavery]** et supprimer ses profils disponibles à l’emplacement par défaut.
+Les procédures suivantes utilisent la méthode `curl` l’outil de ligne de commande pour illustrer comment désactiver l’utilisateur avec la fonction **[!UICONTROL cavery]** `userId` et supprimez les profils de l’utilisateur disponibles à l’emplacement par défaut.
 
 **Découverte du répertoire de base (home) des utilisateurs :**
 
@@ -116,7 +116,7 @@ Utilisation du chemin de nœud de la propriété home de la charge utile JSON re
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (Data Privacy in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
 ```
 
-**Suppression du ou des profils utilisateur**
+**Suppression de profils utilisateur**
 
 Utilisation du chemin de nœud de la propriété home de la charge utile JSON renvoyé par la commande de découverte de compte et les emplacements de nœuds de profil prêts à l’emploi connus :
 

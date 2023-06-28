@@ -2,10 +2,10 @@
 title: Prise en charge d’OAuth2 pour le service de messagerie
 description: Prise en charge d’OAuth2 du service de messagerie dans Adobe Experience Manager as a Cloud Service
 exl-id: 93e7db8b-a8bf-4cc7-b7f0-cda481916ae9
-source-git-commit: 45332f540551e0c8e513946308af88824a58f121
+source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 84%
+source-wordcount: '680'
+ht-degree: 41%
 
 ---
 
@@ -13,21 +13,21 @@ ht-degree: 84%
 
 AEM as a Cloud Service offre la prise en charge d’OAuth2 pour son service de messagerie intégré afin de permettre aux entreprises de se conformer aux exigences en matière de messagerie sécurisée.
 
-Vous pouvez configurer OAuth pour plusieurs fournisseurs de messagerie. Vous trouverez ci-dessous des instructions détaillées pour configurer le service de messagerie d’AEM afin de l’authentifier via OAuth2 avec Microsoft Office 365 Outlook. D’autres fournisseurs peuvent être configurés de la même manière.
+Vous pouvez configurer OAuth pour plusieurs fournisseurs de messagerie. Vous trouverez ci-dessous des instructions détaillées pour configurer le service de messagerie d’AEM afin de l’authentifier via OAuth2 avec Microsoft® Office 365 Outlook. D’autres fournisseurs peuvent être configurés de la même manière.
 
 Pour plus d’informations sur le service de messagerie d’AEM as a Cloud Service, voir [Envoi d’e-mail](/help/implementing/developing/introduction/development-guidelines.md#sending-email).
 
-## Microsoft Outlook {#microsoft-outlook}
+## Microsoft® Outlook {#microsoft-outlook}
 
 1. Accédez à [https://portal.azure.com/](https://portal.azure.com/) et connectez-vous.
-1. Recherchez le **répertoire Azure principal** dans la barre de recherche et cliquez sur le résultat. Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-1. Cliquez sur **Enregistrement de l’application** - **Nouvel enregistrement**
+1. Rechercher **Azure Principal Directory** dans la barre de recherche et cliquez sur le résultat. Vous pouvez également accéder directement à [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview).
+1. Cliquez sur **Enregistrement de l’application** > **Nouvelle inscription**.
 
    ![Démarrage du processus d’enregistrement de l’application](assets/oauth-outlook1.png)
 
-1. Renseignez les informations selon vos besoins, puis cliquez sur **Enregistrer**
-1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations API**
-1. Accédez à **Ajouter une autorisation** - **Autorisation graphique** - **Autorisations déléguées**
+1. Renseignez les informations selon vos besoins puis cliquez sur **Enregistrement**.
+1. Accédez à l’application nouvellement créée, puis sélectionnez **Autorisations API**.
+1. Cliquez sur **Ajouter une autorisation** > **Autorisation graphique** > **Autorisations déléguées**.
 1. Sélectionnez les autorisations ci-dessous pour votre application, puis cliquez sur **Ajouter une autorisation** :
    * `https://outlook.office.com/SMTP.Send`
    * `https://graph.microsoft.com/Mail.Read`
@@ -37,32 +37,30 @@ Pour plus d’informations sur le service de messagerie d’AEM as a Cloud Servi
    * `offline_access`
    * `email`
    * `profile`
-1. Accédez à **Authentification** - **Ajouter une plateforme** - **Web**, et dans la section **URL de redirection**, ajoutez les URL ci-dessous, une avec et une sans barre oblique :
+1. Accédez à **Authentification** > **Ajouter une plateforme** > **Web**, et dans le **Url De Redirection** , ajoutez les URL ci-dessous : une avec et une sans barre oblique :
    * `http://localhost/`
    * `http://localhost`
-1. Appuyez sur **Configurer** après avoir ajouté chaque URL et configuré vos paramètres en fonction de vos besoins.
-1. Ensuite, accédez à **Certificats et secrets**, cliquez sur **Nouveau secret client** et suivez les étapes à l’écran pour créer un secret. Veillez à prendre note de ce secret pour une utilisation ultérieure.
-1. Appuyez sur **Aperçu** dans le volet de gauche et copiez les valeurs pour **ID d’application (client)** et **ID de répertoire (locataire)** pour une utilisation ultérieure.
+1. Press **Configurer** après avoir ajouté chaque URL et configuré vos paramètres en fonction de vos besoins.
+1. Ensuite, accédez à **Certificats et secrets**, cliquez sur **Nouveau secret client** et suivez les étapes sur l’écran pour créer un secret. Veillez à prendre note de ce secret pour une utilisation ultérieure.
+1. Press **Présentation** dans le volet de gauche et copiez les valeurs pour **ID d’application (client)** et **ID de répertoire (client)** pour une utilisation ultérieure.
 
-Pour effectuer une récapitulation, vous aurez besoin des informations suivantes pour configurer OAuth2 pour le service de messagerie du côté AEM :
+Pour effectuer une récapitulation, utilisez les informations suivantes pour configurer OAuth2 pour le service de messagerie du côté AEM :
 
-* L’URL d’authentification, qui est créée avec l’identifiant du client. Elle se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
-* L’URL du jeton, qui est construite avec l’identifiant du tenant. Elle se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
-* L’URL d’actualisation, qui est créée avec l’identifiant du client. Elle se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* L’URL d’authentification, qui est créée avec l’identifiant du client. Il se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
+* L’URL du jeton, qui est construite avec l’identifiant du tenant. Il se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
+* L’URL d’actualisation, qui est créée avec l’identifiant du client. Il se présente comme suit : `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`
 * L’ID client
 * Le secret client
 
 ### Génération du jeton d’actualisation {#generating-the-refresh-token}
 
-Ensuite, vous devez générer le jeton d’actualisation, qui fait partie de la configuration OSGi lors d’une étape suivante.
+Ensuite, générez le jeton d’actualisation, qui fait partie de la configuration OSGi lors d’une étape suivante en procédant comme suit :
 
-Pour ce faire, procédez comme suit :
-
-1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` et `tenantID` par les valeurs propres à votre compte : `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`
-1. Octroyer l’autorisation si demandé
-1. L’URL redirige vers un nouvel emplacement, construit au format suivant : `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`
+1. Ouvrez l’URL suivante dans le navigateur après avoir remplacé `clientID` et `tenantID` avec les valeurs propres à votre compte : `https://login.microsoftonline.com/%3ctenantID%3e/oauth2/v2.0/authorize?client_id=%3cclientId%3e&response_type=code&redirect_uri=http://localhost&response_mode=query&scope=https://outlook.office.com/SMTP.Send%20email%20openid%20profile%20offline_access&state=12345`.
+1. Sur demande, autorisez-vous.
+1. L’URL redirige vers un nouvel emplacement, construit au format suivant : `http://localhost/?code=<code>&state=12345&session_state=4f984c6b-cc1f-47b9-81b2-66522ea83f81#`.
 1. Copiez la valeur de `<code>` dans l’exemple ci-dessus.
-1. Utilisez la commande cURL suivante pour obtenir le refreshToken. Vous devez remplacer tenantID, clientID et clientSecret par les valeurs de votre compte, ainsi que par la valeur de `<code>` :
+1. Utilisez la commande cURL suivante pour obtenir le refreshToken. Remplacez tenantID, clientID et clientSecret par les valeurs de votre compte et par la valeur de `<code>`:
 
    ```
    curl --location --request POST 'https://login.microsoftonline.com/<tenantId>/oauth2/v2.0/token' \
@@ -82,7 +80,7 @@ Pour ce faire, procédez comme suit :
 
 Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider les éléments accessToken et refreshToken avec la procédure suivante :
 
-1. Générez l’accessToken à l’aide du refreshToken produit lors de la procédure précédente. Pour ce faire, utilisez l’URL suivante, en remplaçant les valeurs de `<client_id>`,`<client_secret>` et `<refreshToken>` :
+1. Générez le accessToken à l&#39;aide de l&#39;refreshToken produit lors de la procédure précédente en utilisant l&#39;URL suivante, en remplaçant les valeurs de `<client_id>`,`<client_secret>`, et `<refreshToken>`:
 
    ```
    curl --location --request POST 'https://login.microsoftonline.com/<tenetId>/oauth2/v2.0/token' \
@@ -96,13 +94,13 @@ Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider le
    --data-urlencode 'refresh_token=<refreshToken>'
    ```
 
-1. Envoyez un courrier électronique à l’aide d’accessToken pour vérifier s’il fonctionne correctement.
+1. Envoyez un email à l’aide de accessToken, afin que vous puissiez voir s’il fonctionne correctement.
 
 >[!NOTE]
 >
-> Vous pouvez obtenir la collection d’API Postman à partir de [cet emplacement](https://docs.microsoft.com/fr-fr/azure/active-directory/develop/v2-oauth2-auth-code-flow).
+> Vous pouvez obtenir la collection d’API Postman à partir de [cet emplacement](https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow).
 >
-> Veuillez consulter la documentation de MSFT OAuth [ici](https://learn.microsoft.com/fr-fr/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) pour plus détails.
+> Consultez la documentation de MSFT OAuth [here](https://learn.microsoft.com/fr-fr/exchange/client-developer/legacy-protocols/how-to-authenticate-an-imap-pop-smtp-application-by-using-oauth) pour plus d’informations.
 
 ### Intégration à AEM as a Cloud Service {#integration-with-aem-as-a-cloud-service}
 
@@ -124,7 +122,7 @@ Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider le
    }
    ```
 
-1. Renseignez les champs `authUrl`, `tokenUrl` et `refreshURL` en les construisant comme décrit dans la section précédente.
+1. Renseignez les `authUrl`, `tokenUrl`, et `refreshURL` en les construisant comme décrit dans la section précédente.
 1. Ajoutez les portées suivantes à la configuration :
    * `https://outlook.office.com/SMTP.Send`
    * `https://graph.microsoft.com/Mail.Read`
@@ -135,7 +133,7 @@ Avant de poursuivre la configuration d’OAuth côté AEM, veillez à valider le
    * `email`
    * `profile`
 1. Créez un fichier de propriétés OSGI `called com.day.cq.mailer.DefaultMailService.cfg.json`
-sous `/apps/<my-project>/osgiconfig/config` avec la syntaxe ci-dessous. Notez que les valeurs smtp.host et smtp.port reflètent la configuration de réseau avancée, comme décrit dans la section [Tutoriel sur le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
+sous `/apps/<my-project>/osgiconfig/config` avec la syntaxe ci-dessous. Le `smtp.host` et `smtp.port` Les valeurs correspondent à une configuration réseau avancée, comme décrit dans la section [Tutoriel sur le service de messagerie](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/networking/examples/email-service.html?lang=en).
 
    ```
    {
@@ -157,4 +155,4 @@ sous `/apps/<my-project>/osgiconfig/config` avec la syntaxe ci-dessous. Notez qu
 
 ### Résolution des problèmes {#troubleshooting}
 
-Si le service de messagerie ne fonctionne pas correctement, vous devrez, dans la plupart des cas, régénérer le `refreshToken` comme décrit ci-dessus, en transmettant la nouvelle valeur via l’API Cloud Manager. Le déploiement de la nouvelle valeur prend quelques minutes.
+Si le service de messagerie ne fonctionne pas correctement, vous devez régénérer la variable `refreshToken` comme décrit ci-dessus, transmission de la nouvelle valeur via l’API Cloud Manager. Le déploiement de la nouvelle valeur prend quelques minutes.
