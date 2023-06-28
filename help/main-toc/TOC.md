@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 69c6ca6104e5360e2db4c3ba9f34b3cddb2269ab
+source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
 workflow-type: tm+mt
-source-wordcount: '4085'
+source-wordcount: '4094'
 ht-degree: 97%
 
 ---
@@ -576,6 +576,7 @@ ht-degree: 97%
             + [Application de styles CSS intégrés à des composants de formulaire adaptatif individuels](/help/forms/inline-style-adaptive-forms.md)
          + Ajout de règles et utilisation d’expressions dans un formulaire adaptatif {#add-rules-and-use-expressions-in-an-adaptive-form}
             + [Ajout de règles à un formulaire adaptatif](/help/forms/rule-editor.md)
+            + [Ajout d’un gestionnaire d’erreurs personnalisé à l’aide du service Invoke de l’éditeur de règles](/help/forms/add-custom-error-handler-adaptive-forms.md)
          + Utilisation d’[!DNL Adobe Sign] {#use-adobe-sign}
             + [Utilisation d’Adobe Sign pour signer électroniquement un formulaire adaptatif](/help/forms/working-with-adobe-sign.md)
          + Configuration des actions Envoyer et de l’envoi de métadonnées {#configure-submit-actions-and-metadata-submission}
