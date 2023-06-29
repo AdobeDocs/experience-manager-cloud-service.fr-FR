@@ -5,9 +5,9 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
+source-git-commit: 6d445943fb8a79eb549c954bb88daf61242a8b10
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2553'
 ht-degree: 97%
 
 ---
@@ -101,7 +101,7 @@ Suivez les étapes suivantes pour valider la connexion entre votre instance Expe
 
 1. Dans le panneau **Outils**, accédez à **[!UICONTROL Déploiement]** > **[!UICONTROL Distribution]**.
 
-   ![Configuration d’AEM Assets as a Cloud Service avec Brand Portal](assets/test-bpconfig1.png)
+   ![Accédez à l’option de distribution](assets/test-bpconfig1.png)
 
    Un agent de distribution Brand Portal (**[!UICONTROL bpdistributionagent0]**) est créé sous **[!UICONTROL Publier sur Brand Portal]**.
 
