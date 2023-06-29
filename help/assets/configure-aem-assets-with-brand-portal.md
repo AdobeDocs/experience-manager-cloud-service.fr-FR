@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 feature: Brand Portal,Asset Distribution,Configuration
 role: Admin
 exl-id: 078e522f-bcd8-4734-95db-ddc8772de785
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 5096cd6141e70f40b5145389ca4db3cc65ea1e66
 workflow-type: tm+mt
-source-wordcount: '2527'
-ht-degree: 98%
+source-wordcount: '2558'
+ht-degree: 97%
 
 ---
 
@@ -101,11 +101,11 @@ Suivez les étapes suivantes pour valider la connexion entre votre instance Expe
 
 1. Dans le panneau **Outils**, accédez à **[!UICONTROL Déploiement]** > **[!UICONTROL Distribution]**.
 
-   ![](assets/test-bpconfig1.png)
+   ![Configuration d’AEM Assets as a Cloud Service avec Brand Portal](assets/test-bpconfig1.png)
 
    Un agent de distribution Brand Portal (**[!UICONTROL bpdistributionagent0]**) est créé sous **[!UICONTROL Publier sur Brand Portal]**.
 
-   ![](assets/test-bpconfig2.png)
+   ![Créer un agent de distribution](assets/test-bpconfig2.png)
 
 
 1. Cliquez sur **[!UICONTROL Publier sur Brand Portal]** pour ouvrir l’agent de distribution.
@@ -121,11 +121,11 @@ Suivez les étapes suivantes pour valider la connexion entre votre instance Expe
    >
    >Il est recommandé d’examiner les erreurs et d’effacer régulièrement la file d’attente **error-queue**.
 
-   ![](assets/test-bpconfig3.png)
+   ![File d’attente de traitement pour la distribution des ressources](assets/test-bpconfig3.png)
 
 1. Pour vérifier la connexion entre Experience Manager Assets as a [!DNL Cloud Service] et Brand Portal, cliquez sur l’icône **[!UICONTROL Tester la connexion]**.
 
-   ![](assets/test-bpconfig4.png)
+   ![Vérification de la connexion entre AEM et Brand Portal](assets/test-bpconfig4.png)
 
    Un message s’affiche indiquant que votre *package de test a bien été livré*.
 
@@ -156,7 +156,7 @@ Publions maintenant une ressource d’Experience Manager Assets vers Brand Po
 1. Suivez les étapes (1 à 4), comme indiqué dans la section **Test de la connexion**, puis accédez à la page de l’agent de distribution.
 1. Cliquez sur **[!UICONTROL Journaux]** pour afficher les journaux de traitement et d’erreurs.
 
-   ![](assets/test-bpconfig5.png)
+   ![Logs de traitement et d’erreur](assets/test-bpconfig5.png)
 
 L’agent de distribution génère les journaux suivants :
 
