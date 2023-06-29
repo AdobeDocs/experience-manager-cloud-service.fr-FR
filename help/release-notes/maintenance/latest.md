@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: f0dc0e0ccd196ab748e2bfcdb4ce404c1c91c213
+source-git-commit: e8ea040ba3f8c73d7ed64c9669ac1d0a22d3a3c8
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '600'
 ht-degree: 19%
 
 ---
@@ -38,8 +38,8 @@ L’activation des fonctionnalités de la version 2023.7.0 fournit l’ensemble 
 - SITES-13559 : MSM : Exception &quot;N’est pas modifiable&quot; générée lors du déploiement du composant
 - SITES-11757 : MSM : La configuration du déploiement hérité de Parent n’est pas rétablie pour les pages enfants.
 - SITES-14073 : Administration des sites : Le rapport CSV échoue avec 500 lors de la sélection d’aucune propriété à exporter
-- Forms-7648 : La validation du champ Nombre maximal de chiffres ne fonctionne pas pour le composant de zone numérique.
-- Forms-8177 : Lorsque le service Forms est principal, l’erreur &#39;com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Échec de récupération des dépendances de ressources&#39; se rencontre.
+- Forms-7648 : Impossible de valider le nombre maximal de chiffres dans un composant de zone numérique. Le script de validation ne fonctionne pas.
+- Forms-8177 : Lorsque le service Forms est principal, la variable `com.adobe.aem.formsndocuments.publish.AssetReferenceProvider Failed to retrieve asset dependencies` rencontre une erreur.
 - Forms-8300 : Lorsqu’un utilisateur tente de déléguer une tâche après l’avoir ouverte, la réponse du délégué recharge la tâche, au lieu d’ouvrir l’interface utilisateur de la boîte de réception d’AEM de l’utilisateur.
 - Forms-8500 : Sur le navigateur Microsoft® Edge avec l’option Mode IE activée, HTML5 Forms ne s’ouvre pas.
 - Forms-8541 : Lors du rendu d’une Forms adaptative, une exception de pointeur nul se produit.
@@ -52,7 +52,6 @@ L’activation des fonctionnalités de la version 2023.7.0 fournit l’ensemble 
 - Forms-8846 : La propriété de référence Bind ne fonctionne pas pour le composant de pièces jointes Adaptive Forms.
 - Forms-9072 : Lorsque vous recherchez un schéma lors de la création d’un fragment de formulaire, le résultat de la recherche ne renvoie aucun schéma à sélectionner.
 - Forms : Correction de plusieurs bogues liés à l’accessibilité afin d’améliorer l’accessibilité des fonctionnalités d’AEM Forms.
-
 
 ### Problèmes connus {#known-issues-12441}
 
