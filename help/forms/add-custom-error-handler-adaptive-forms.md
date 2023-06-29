@@ -7,9 +7,9 @@ keywords: Ajoutez un gestionnaire d’erreurs personnalisé, ajoutez un gestionn
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 66c7b30b8b66bc86d7b83e57e02ed61d426553a2
+source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
 workflow-type: tm+mt
-source-wordcount: '1979'
+source-wordcount: '1981'
 ht-degree: 6%
 
 ---
@@ -119,9 +119,7 @@ Où :
 
 Voici quelques options pour afficher les réponses d’erreur :
 
-+++
-
-+++  Basé sur le champ Nom du formulaire adaptatif
++++  Basé sur la propriété ChampName du formulaire adaptatif
 
 
 * **`Header:`** `content-type:application/problem+json`
@@ -148,7 +146,7 @@ Voici quelques options pour afficher les réponses d’erreur :
 +++
 
 
-+++ Basé sur le formulaire adaptatif dataRef
++++ Basé sur la propriété dataRef du formulaire adaptatif
 
 * **`Header:`** `content-type:application/problem+json`
 * **`Response:`**
@@ -171,8 +169,8 @@ Voici quelques options pour afficher les réponses d’erreur :
 
 Vous pouvez afficher la valeur de dataRef dans la variable **[!UICONTROL Propriétés]** d’un composant de formulaire.
 
-
 +++
+
 
 ## Ajout d’un gestionnaire d’erreurs à l’aide de l’éditeur de règles {#add-error-handler-using-rule-editor}
 
