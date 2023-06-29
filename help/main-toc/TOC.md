@@ -8,7 +8,7 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 9424bef8a9a2c7ab4afb06e2a08e15336f858b7b
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
 source-wordcount: '4139'
 ht-degree: 97%
@@ -502,7 +502,7 @@ ht-degree: 97%
       + [Fin de prise en charge des visionneuses Flash](/help/assets/dynamic-media/flash-viewers-eol.md)
       + [Fin de vie des visionneuses DHTML](/help/assets/dynamic-media/dhtml-viewer-endoflifefaqs.md)
    + Utilisation de la vue Assets {#assets-view}
-      + [Introduction](/help/assets/assets-view-introduction.md)
+      + [Présentation](/help/assets/assets-view-introduction.md)
       + [Prise en main](/help/assets/get-started-assets-view.md)
       + [Mon espace de travail](/help/assets/my-workspace-assets-view.md)
       + [Types de fichiers pris en charge et cas d’utilisation](/help/assets/supported-file-formats-assets-view.md)

@@ -2,9 +2,9 @@
 title: En quoi la vue Assets vous bénéficie-t-elle ?
 description: En savoir plus sur les principaux avantages de la vue Assets
 mini-toc-levels: 3
-source-git-commit: 4e31a57a6bcbc6783398c205075bb8e1b1a5dc74
+source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
-source-wordcount: '1100'
+source-wordcount: '1118'
 ht-degree: 11%
 
 ---
@@ -119,7 +119,12 @@ En plus de ces fonctionnalités, la vue Assets vous permet d’exécuter les fon
 
 * Transférez une nouvelle version d’une ressource, portant un nom différent, depuis votre système de fichiers local vers le référentiel de ressources. La ressource chargée est disponible sous la forme d’une nouvelle version portant le même nom que la ressource d’origine.
 
-* Renommez les ressources et le dossier disponibles dans le référentiel.
+* Renommez les ressources et les dossiers disponibles dans le référentiel.
+
+Utilisez ces liens pour commencer rapidement à utiliser la vue Assets :
+
+* [Mon espace de travail](/help/assets/my-workspace-assets-view.md)
+* [Prise en main de la vue Assets](/help/assets/get-started-assets-view.md)
 
 ## Conclusion {#conclusion}
 
