@@ -4,7 +4,7 @@ seo-title: Developer Mode
 description: Le mode Développeur ouvre un panneau latéral avec plusieurs onglets qui procurent au développeur des informations sur la page en cours.
 seo-description: Developer mode opens a side panel with several tabs that provide a developer with information about the current page
 exl-id: fbf11c0f-dc6e-43f3-bcf2-080eacc6ba99
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '528'
 ht-degree: 79%
@@ -76,7 +76,7 @@ Chaque entrée de composant peut comporter les options suivantes :
 
 * **Modifier le script :** lien qui ouvre le script du composant dans CRXDE Lite.
 
-* **Afficher les détails du composant :** affiche les informations sur le composant dans la [Console des composants.](/help/sites-cloud/authoring/features/components-console.md)
+* **Afficher les détails du composant :** affiche les informations sur le composant dans la [Console des composants](/help/sites-cloud/authoring/features/components-console.md).
 
 Le développement d’une entrée de composant en appuyant ou en cliquant sur le chevron peut également afficher :
 

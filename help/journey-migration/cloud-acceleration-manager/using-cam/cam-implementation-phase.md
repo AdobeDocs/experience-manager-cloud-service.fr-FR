@@ -2,10 +2,10 @@
 title: Phase de mise en œuvre dans Cloud Acceleration Manager
 description: Cette page présente un aperçu de la phase de mise en œuvre dans Cloud Acceleration Manager.
 exl-id: e6ac88f0-4b3f-43a1-98bc-8c6608713784
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '665'
-ht-degree: 41%
+source-wordcount: '662'
+ht-degree: 34%
 
 ---
 
@@ -24,7 +24,7 @@ Cliquez sur la carte de votre projet afin d’ouvrir la page d’entrée du proj
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/implementation-1.png)
 
 >[!NOTE]
->Pour en savoir plus, voir [Création et gestion d’un projet dans Cloud Acceleration Manager](getting-started-cam.md#create-project).
+>Voir [Création et gestion d’un projet dans Cloud Accelerated Manager](getting-started-cam.md#create-project) pour en savoir plus.
 
 
 ## Utilisation de la carte Développement local {#local-development}
@@ -63,7 +63,7 @@ Consultez cette section pour découvrir la carte d’activité Refactorisation d
 >[!NOTE]
 >Passez en revue le contenu de ces onglets pour comprendre certaines zones supplémentaires qui ne sont pas couvertes par l’analyseur des bonnes pratiques.
 
-L’onglet **Dispatcher** fournit des information sur la façon dont structurer les configurations Apache et Dispatcher d’AEM as a Cloud Service. Il explique également comment valider et exécuter le service localement avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud.
+Le **Dispatcher** Cet onglet fournit des informations sur la structure des configurations Apache et Dispatcher as a Cloud Service, ainsi que sur la validation et l’exécution en local avant son déploiement dans les environnements cloud. Elle présente en outre le débogage dans les environnements cloud.
 
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/coderefactoring-2.png)
 

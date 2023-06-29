@@ -2,10 +2,10 @@
 title: Création et organisation des pages
 description: Comment créer et organiser des pages avec AEM
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2542'
-ht-degree: 72%
+source-wordcount: '2539'
+ht-degree: 70%
 
 ---
 
@@ -176,7 +176,7 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 1. Ouvrez la console Sites (par exemple, `https://<host>:<port>/sites.html/content`).
 1. Accédez à l’emplacement où créer la page.
-1. Ouvrez le sélecteur de liste déroulante avec l’option **Créer** de la barre d’outils, puis sélectionnez **Page** dans la liste :
+1. Ouvrez le sélecteur de liste déroulante à l’aide de **Créer** dans la barre d’outils, puis sélectionnez **Page** dans la liste :
 
    ![Création d’une page](/help/sites-cloud/authoring/assets/organizing-create-page.png)
 
@@ -387,7 +387,7 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
 
 >[!NOTE]
 >
->Pour plus d’informations sur le traitement asynchrone des tâches et sur la manière de configurer la limite pour les actions de déplacement/changement de nom de page, consultez le document [Tâches asynchrones](/help/operations/asynchronous-jobs.md) dans le guide de l’utilisateur relatif aux opérations.
+>Pour plus d’informations sur le traitement asynchrone des tâches et sur la configuration de la limite pour les actions de déplacement/changement de nom de page, voir [Tâches asynchrones](/help/operations/asynchronous-jobs.md) dans le guide d’utilisation des opérations.
 
 ### Suppression d’une page {#deleting-a-page}
 
@@ -405,7 +405,7 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
    ![Boîte de dialogue Supprimer](/help/sites-cloud/authoring/assets/delete-page.png)
 
    * **Voulez-vous archiver les pages avant la suppression ?** - Si cette case est cochée, les versions des pages sélectionnées pour suppression sont créées lors de la suppression.
-      * [Il est possible de restaurer les versions ultérieurement.](/help/sites-cloud/authoring/features/page-versions.md)
+      * [Il est possible de restaurer les versions ultérieurement](/help/sites-cloud/authoring/features/page-versions.md).
       * Les pages supprimées sans les versions précédentes ne peuvent pas être restaurées.
    * **Annuler** pour abandonner l’action
    * **Supprimer** pour confirmer l’action :

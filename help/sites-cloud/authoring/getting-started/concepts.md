@@ -2,10 +2,10 @@
 title: Concepts de création
 description: Concepts de création dans AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: b407765438086bb2f7fb720fb7f1dd05699cb48f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '385'
-ht-degree: 81%
+source-wordcount: '386'
+ht-degree: 40%
 
 ---
 
@@ -16,20 +16,20 @@ Une installation AEM se compose généralement d’au moins deux environnements�
 * Création
 * Publication
 
-Ces environnements interagissent afin que vous puissiez rendre le contenu disponible sur votre site web, pour que vos visiteurs puissent y accéder.
+Ces environnements interagissent pour vous permettre de rendre le contenu disponible sur votre site web afin que vos visiteurs puissent y accéder.
 
 L’environnement de création fournit les mécanismes de création, de mise à jour et de révision de ce contenu avant de le publier :
 
-* Un auteur crée et examine le contenu. Le contenu peut être de différents types, tels que des pages, des ressources, des publications, etc.
+* Un auteur crée et examine le contenu. Le contenu peut être de différents types, tels que des pages, des ressources et des publications.
 * Ce contenu sera, à un moment donné, publié sur votre site web.
 
 ![Diagramme de l’auteur, de l’éditeur et des dispatchers](/help/sites-cloud/authoring/assets/author-publish.png)
 
-Dans l’environnement de création, les fonctions d’AEM sont accessibles dans l’interface utilisateur d’AEM. Dans l’environnement de publication, vous concevez l’aspect de l’interface proposée aux utilisateurs.
+Dans l’environnement de création, les fonctionnalités d’AEM sont disponibles via AEM interface utilisateur de création. Pour l’environnement de publication, vous concevez l’aspect de l’interface proposée aux utilisateurs.
 
 ## Environnement de création {#author-environment}
 
-L’auteur travaille dans ce qu’on appelle l’**environnement de création**. Il s’agit d’une interface facile à utiliser (interface utilisateur graphique) pour créer le contenu. L’auteur doit se connecter en utilisant un compte auquel les droits d’accès appropriés ont été attribués.
+L’auteur travaille dans ce que l’on appelle **environnement de création**. Cet environnement fournit une interface conviviale (interface utilisateur graphique) pour la création de contenu. L’auteur doit se connecter à l’aide d’un compte auquel les droits d’accès appropriés sont attribués.
 
 >[!NOTE]
 >
@@ -38,12 +38,12 @@ L’auteur travaille dans ce qu’on appelle l’**environnement de création**.
 Selon la configuration de votre instance et de vos droits d’accès personnels, vous pouvez effectuer de nombreuses tâches sur votre contenu, notamment :
 
 * la génération d’un nouveau contenu ou modification du contenu existant sur une page ;
-* l’utilisation de modèles prédéfinis pour créer des pages de contenu ;
+* Utilisation de modèles prédéfinis pour créer des pages de contenu
 * la création, la modification et la gestion de vos ressources et collections ;
-* le déplacement, la copie et la suppression de pages de contenu, de ressources, etc. ;
-* la publication (ou l’annulation de la publication) de pages, de ressources, etc.
+* Déplacement, copie et suppression de pages de contenu et de ressources.
+* Publication (ou annulation de la publication) de pages et de ressources.
 
-Certaines tâches administratives peuvent aussi vous aider à gérer votre contenu :
+Il existe également des tâches administratives pour vous aider à gérer votre contenu :
 
 * Workflows qui déterminent le mode de gestion des modifications, par exemple, appliquer une révision avant une publication
 * Projets qui coordonnent des tâches individuelles
@@ -66,4 +66,4 @@ Pour plus d’informations sur la publication et la dépublication de pages, con
 
 ## Dispatcher {#dispatcher}
 
-Afin que les visiteurs de votre site web bénéficient de performances optimales, le **[dispatcher](/help/implementing/dispatcher/overview.md)** met en œuvre des mécanismes de mise en cache et d’équilibrage de la charge.
+Pour optimiser les performances des visiteurs de votre site Web, la variable **[Dispatcher](/help/implementing/dispatcher/overview.md)** met en oeuvre l’équilibrage de charge et la mise en cache.

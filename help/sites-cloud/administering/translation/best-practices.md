@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Language Copy
 role: Admin
 exl-id: 51b98c24-5566-4088-9010-bd39841a1633
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 62%
+source-wordcount: '872'
+ht-degree: 63%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 62%
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, veuillez vous référer à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous commencez à traduire du contenu, reportez-vous à la section [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 ## Général {#general}
 
@@ -32,7 +32,7 @@ La création ou le développement d’une présence mondiale sur le web peut êt
 
 * Lors de la conception de la structure de votre site, commencez par examiner votre contenu et déterminer où et dans quelle langue il est rédigé. Cet emplacement doit correspondre au niveau supérieur de votre site.
 * Il est recommandé d’adopter une **structure basée sur les langues** ne comportant pas de plus de 3 niveaux entre le niveau supérieur auteur et les sites des pays.
-* Utilisez une convention de dénomination des langues/sites des pays qui suit les **[normes W3C.](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**
+* Utilisez une convention de dénomination des langues/sites des pays qui suit les **[normes W3C](/help/sites-cloud/authoring/fundamentals/accessible-content.md)**.
 * Déterminez la manière dont le contenu est distribué par les pays et les régions. Pensez aux pays qui partagent des langues. Il est recommandé de créer des gabarits de langue, un calque de pages non activées, où le contenu traduit peut être révisé et modifié, puis envoyé ou extrait vers un site de pays partageant cette langue.
 * Il existe deux méthodes pour créer des gabarits de langue : à l’aide de copies de langue et de MSM/Live Copies.
    * L’approche impliquant des copies de langue est celle utilisée par la structure d’intégration de traduction prête à l’emploi d’AEM. C’est par conséquent la façon la plus facile de démarrer. Ce framework fournit une interface utilisateur qui permet, dès le départ, de propager et de traduire facilement les modifications du contenu du gabarit de langue principal (par exemple, l’anglais) sur les gabarits de langue. Cependant, à mesure que le projet se développe, l’automatisation des workflows devient de plus en plus nécessaire pour gérer la traduction du nombre croissant de pages et/ou de langues.

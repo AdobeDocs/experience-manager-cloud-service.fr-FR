@@ -2,10 +2,10 @@
 title: Utilisation de CRXDE Lite
 description: CRXDE Lite fait partie du démarrage rapide d’AEM et vous permet d’accéder au référentiel et de le modifier dans vos environnements de développement locaux depuis le navigateur.
 exl-id: 1581a7e5-6f84-4a45-8e8f-c83692ea077a
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1689'
-ht-degree: 91%
+source-wordcount: '1688'
+ht-degree: 89%
 
 ---
 
@@ -192,7 +192,7 @@ Vous pouvez désormais adapter le nœud à vos besoins en modifiant les proprié
 >
 La plupart des opérations de modification, y compris **Créer un nœud**, conserve toutes les modifications en mémoire et les stocke dans le référentiel lors de l’enregistrement uniquement (avec le bouton [**Enregistrer tout**](#save-all-button)). Cependant, certaines opérations telles que le déplacement sont automatiquement conservées.
 >
-La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un nœud, vérifiez si la structure du contenu est valide (par exemple, vous ne pouvez pas créer un nœud `nt:unstructured` en tant qu’enfant du nœud `nt:folder`).
+La validation du nœud nouvellement créé qui est ou non autorisé par le type de nœud du nœud parent est également effectuée par le référentiel lors de l’enregistrement des modifications. Si vous recevez un message d’erreur lors de l’enregistrement d’un noeud, vérifiez si la structure de contenu est valide (par exemple, vous ne pouvez pas créer une `nt:unstructured` noeud en tant qu’enfant de `nt:folder` ).
 
 ## Création d’une propriété {#creating-a-property}
 

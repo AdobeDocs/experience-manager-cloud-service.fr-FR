@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.7.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.7.0. »
 exl-id: 75d354a3-6987-4de0-aec8-24043461c516
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1038'
-ht-degree: 97%
+source-wordcount: '1033'
+ht-degree: 93%
 
 ---
 
@@ -55,7 +55,7 @@ Les connecteurs [!DNL Experience Manager] as a Cloud Service pour [!DNL Adobe Ta
 
 AEM Commerce est désormais disponible dans Cloud Service.
 
-Pour plus d’informations, reportez-vous à [Prise en main d’AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=fr).
+Voir [Prise en main d’AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/commerce/getting-started.html?lang=fr) pour plus d’informations.
 
 ## Composants principaux {#core-components}
 
@@ -66,7 +66,7 @@ La version 2.11.0 des [composants principaux AEM](https://experienceleague.adob
 * Introduction d’un nouveau [composant Visionneuse PDF](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/pdf-viewer.html).
 
 * La prise en charge AMP (Accelerated Mobile Pages) des composants principaux est désormais disponible. Elle permet de générer des expériences client plus rapides en rendant la transition de page instantanée lors de l’accès au site à partir d’un résultat de recherche mobile Google, ce qui améliore l’engagement des utilisateurs et l’optimisation du moteur de recherche.
-Pour plus d’informations, voir [Prise en charge AMP des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=fr).
+Voir [Prise en charge AMP des composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/amp.html?lang=fr) pour plus d’informations.
 
 * Compatibilité avec la version 1.0.2 de la [couche de données client Adobe](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/data-layer/overview.html?lang=fr).
 
@@ -88,12 +88,12 @@ La date de publication de la mise à jour 2020.7.0 de [!UICONTROL Cloud Manager
 
 * Les pipelines de Cloud Manager prennent désormais en charge les variables et les secrets définis par le client.
 
-  Pour plus d’informations, consultez Variables de pipeline.
+  Pour plus d’informations, voir Variables de pipeline .
 
 * Les référentiels Maven privés liés à l’authentification sont désormais pris en charge.
 
 * Le conteneur de création Cloud Manager prend désormais en charge Java 8 et Java 11.
-Consultez Utilisation de la prise en charge de Java 11 pour plus d’informations.
+Pour plus d’informations, voir Utilisation de la prise en charge de Java 11 .
 
 ### Correctifs {#bug-fixes-cm}
 
@@ -137,7 +137,7 @@ Suivez cette section pour en savoir plus sur les nouveautés et les mises à jou
 
 * La version antérieure de CRA ne pouvait pas s’exécuter sur Adobe Experience Manager (AEM) 6.1. Nous avons ajouté la prise en charge explicite de l’autorisation des utilisateurs dans le groupe d’administrateurs.
 
-  Voir [Installation de CRA sur AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=fr#installing-on-aem61) pour plus d’informations.
+  Voir [Installation de CRA sur AEM 6.1](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/cloud-readiness-analyzer/using-cloud-readiness-analyzer.html?lang=fr#installing-on-aem61) pour plus d’informations.
 
 * L’horodatage d’expiration affiché sur le rapport résumé était incorrect.
 

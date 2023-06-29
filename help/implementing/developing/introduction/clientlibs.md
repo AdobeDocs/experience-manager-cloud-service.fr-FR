@@ -2,10 +2,10 @@
 title: Utilisation des bibliothèques côté client dans AEM as a Cloud Service
 description: AEM fournit des dossiers de bibliothèques côté client qui vous permettent de stocker le code côté client (clientlibs) dans le référentiel, de le classer dans des catégories, et de définir quand et comment chaque catégorie de code doit être diffusée au client.
 exl-id: 370db625-09bf-43fb-919d-4699edaac7c8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2562'
-ht-degree: 88%
+source-wordcount: '2556'
+ht-degree: 84%
 
 ---
 
@@ -25,13 +25,13 @@ Les bibliothèques côté client sont la solution intégrée pour la diffusion d
 
 >[!TIP]
 >
->Les développeurs front-end qui créent du code CSS et JavaScript pour les projets AEM doivent également se familiariser avec l’[archétype de projet AEM et son processus de création frontale automatisé](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr).
+>Les développeurs front-end qui créent du code CSS et JavaScript pour les projets AEM doivent également se familiariser avec la variable [AEM archétype de projet et son processus de génération frontale automatisé.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=fr)
 
 ## Que sont les bibliothèques côté client ?  {#what-are-clientlibs}
 
 Les sites requièrent du code JavaScript et CSS, ainsi que des ressources statiques telles que des icônes et des polices web, pour être traités côté client. Une bibliothèque client constitue le mécanisme d’AEM utilisé pour référencer (par catégorie si nécessaire) et traiter ces ressources.
 
-AEM collecte le code CSS et JavaScript du site dans un seul fichier, à un emplacement central, afin de s’assurer qu’une seule copie d’une ressource est incluse dans la sortie HTML. Cela optimise l’efficacité de la diffusion et permet à ces ressources d’être conservées de façon centralisée dans le référentiel par le biais d’un proxy, en assurant la sécurité de l’accès.
+AEM collecte le code CSS et JavaScript du site dans un seul fichier, à un emplacement central, afin de s’assurer qu’une seule copie de toute ressource est incluse dans la sortie du HTML. Cela optimise l’efficacité de la diffusion et permet à ces ressources d’être conservées de façon centralisée dans le référentiel par le biais d’un proxy, en assurant la sécurité de l’accès.
 
 ## Développement frontal pour AEM as a Cloud Service {#fed-for-aemaacs}
 
@@ -170,11 +170,11 @@ Le composant `dumplibs` comprend un sélecteur de test qui affiche le code sourc
 
 ## Autres fonctionnalités du dossier de bibliothèque cliente {#additional-features}
 
-D’autres fonctionnalités sont prises en charge par les dossiers de bibliothèque cliente dans AEM. Toutefois, ces fonctionnalités ne sont pas requises dans AEM as a Cloud Service et, par conséquent, leur utilisation est découragée. À des fins d’exhaustivité, elles sont répertoriées ici.
+D’autres fonctionnalités sont prises en charge par les dossiers de bibliothèque cliente dans AEM. Toutefois, ces fonctionnalités ne sont pas requises dans AEM as a Cloud Service et, par conséquent, leur utilisation est découragée. Elles sont répertoriées ici à des fins d’exhaustivité.
 
 >[!WARNING]
 >
->Ces fonctionnalités supplémentaires des dossiers de bibliothèque cliente ne sont pas requises dans AEM as a Cloud Service et leur utilisation est donc déconseillée. À des fins d’exhaustivité, elles sont répertoriées ici.
+>Ces fonctionnalités supplémentaires des dossiers de bibliothèque cliente ne sont pas requises dans AEM as a Cloud Service et leur utilisation est donc déconseillée. Elles sont répertoriées ici à des fins d’exhaustivité.
 
 ### Gestionnaire de bibliothèque HTML Adobe Granite {#html-library-manager}
 
@@ -189,7 +189,7 @@ Les autres propriétés de dossier permettent entre autres de contrôler les dé
 
 ### Liaison vers des dépendances {#linking-to-dependencies}
 
-Lorsque le code de votre dossier de bibliothèques clientes fait référence à d’autres bibliothèques, identifiez ces dernières en tant que dépendances. La balise `ui:includeClientLib` qui fait référence à votre dossier de bibliothèques clientes fait en sorte que le code HTML contienne un lien vers le fichier de bibliothèque généré, ainsi que les dépendances.
+Lorsque le code de votre dossier de bibliothèques clientes fait référence à d’autres bibliothèques, identifiez ces dernières en tant que dépendances. Le `ui:includeClientLib` qui fait référence à votre dossier de bibliothèques clientes, le code de HTML inclut un lien vers le fichier de bibliothèque généré et les dépendances.
 
 Les dépendances doivent être un autre nœud `cq:ClientLibraryFolder`. Pour identifier les dépendances, ajoutez une propriété à votre nœud `cq:ClientLibraryFolder` avec les attributs suivants :
 

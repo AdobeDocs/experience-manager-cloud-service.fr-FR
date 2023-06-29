@@ -4,10 +4,10 @@ seo-title: Learn to add support for new locales to your adaptive forms
 description: AEM Forms vous permet d’ajouter de nouveaux paramètres régionaux pour localiser les formulaires adaptatifs. Paramètres régionaux en anglais (en), espagnol (es), français (fr), italien (it), allemand (de), japonais (ja), portugais du Brésil (pt-BR), chinois (zh-CN), chinois taïwanais (zh-TW) et coréen (ko-KR).
 seo-description: AEM Forms allows you to add new locales for localizing adaptive forms. We support 10 locales out of the box curently, as  "en","fr","de","ja","pt-br","zh-cn","zh-tw","ko-kr","it","es".
 exl-id: 4c7d6caa-1adb-4663-933f-b09129b9baef
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
-source-wordcount: '1188'
-ht-degree: 100%
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+workflow-type: tm+mt
+source-wordcount: '1190'
+ht-degree: 93%
 
 ---
 
@@ -68,7 +68,7 @@ Créez un nœud appelé `[locale-name]_xfa` et saisissez `cq:ClientLibraryFolder
 
 * **I18N.js** qui définit `xfalib.locale.Strings` pour `<locale>`, comme défini dans `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
 * **js.txt** qui contient les éléments suivants :
-   */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
+  */libs/fd/xfaforms/clientlibs/I18N/Namespace.js
 I18N.js
 /etc/clientlibs/fd/xfaforms/I18N/LogMessages.js*
 
@@ -131,13 +131,12 @@ Deux méthodes permettent d’identifier les paramètres régionaux d’un formu
 * La récupération des paramètres suivants dans l’ordre indiqué :
 
    * Paramètre de requête `afAcceptLang`
-Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre le paramètre de demande 
-`afAcceptLang` pour forcer les paramètres régionaux. Par exemple, l’URL ci-dessous force le rendu du formulaire dans le paramètre régional français canadien :
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
+Pour remplacer les paramètres régionaux du navigateur des utilisateurs, vous pouvez transmettre la variable `afAcceptLang` paramètre de requête pour forcer le paramètre régional. Par exemple, l’URL ci-dessous force le rendu du formulaire dans le paramètre régional français canadien :
+     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ca-fr`
 
    * La langue du navigateur défini pour l’utilisateur ou l’utilisatrice, qui est spécifiée dans la demande par le biais de l’en-tête `Accept-Language`.
 
-S’il n’existe pas de bibliothèque client pour le paramètre régional nécessaire, il cherche une bibliothèque cliente correspondant au code de langue présent dans le paramètre régional. Par exemple, si le paramètre régional requis est `en_ZA` (anglais Afrique du Sud) et qu’il n’existe pas de bibliothèque cliente correspondant à `en_ZA`, le formulaire adaptatif utilise la bibliothèque cliente correspondant à langue `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
+Si aucune bibliothèque cliente pour le paramètre régional requis n’existe, elle recherche une bibliothèque cliente pour le code de langue présent dans le paramètre régional. Par exemple, si le paramètre régional requis est `en_ZA` (en anglais d’Afrique du Sud) et la bibliothèque cliente pour `en_ZA` n’existe pas, le formulaire adaptatif utilise la bibliothèque cliente pour `en` (anglais), si elle existe. Toutefois, si aucune de ces bibliothèques n’existe, le formulaire adaptatif utilise le dictionnaire correspondant au paramètre régional `en`.
 
 
 Une fois le paramètre régional identifié, le formulaire adaptatif sélectionne le dictionnaire qui lui est spécifique. Si le dictionnaire spécifique au formulaire correspondant au paramètre régional requis n’est pas trouvé, il utilise le dictionnaire de la langue dans laquelle le formulaire adaptatif a été créé.

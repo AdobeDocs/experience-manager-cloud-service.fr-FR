@@ -2,10 +2,10 @@
 title: Validation des transferts de contenu
 description: Utiliser l’outil de transfert de contenu pour valider les transferts de contenu
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1062'
-ht-degree: 75%
+source-wordcount: '1055'
+ht-degree: 69%
 
 ---
 
@@ -38,7 +38,7 @@ Lorsque la validation de la migration est activée dans l’environnement de l�
 
 If **Remplacer le conteneur d’évaluation lors de l’extraction** est activée, tous les noeuds impliqués dans l’extraction sont consignés dans le résumé du chemin d’extraction. Lorsque ce paramètre est utilisé, il est important d’activer **Effacer le contenu existant sur l’instance Cloud avant l’ingestion** lors de l’ingestion, sans quoi il se peut qu’il manque des noeuds dans le résumé d’ingestion. Il s’agit des noeuds qui sont déjà présents sur la cible à partir des ingestions précédentes.
 
-Pour une illustration graphique, reportez-vous aux exemples ci-dessous :
+Pour obtenir une illustration graphique de ce sujet, reportez-vous aux exemples suivants :
 
 ### Exemple 1 {#example-1}
 
@@ -115,7 +115,7 @@ EXTRACTION: Number of nodes extracted: 4635
 INGESTION: Number of nodes ingested: 0
 ----------------------------------------------------------
 Validation failed. However, the following nodes may already be present in the target environment.
-Please refer to our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
+See our Migration Validation FAQ (https://www.adobe.com/go/aem_cloud_ctt_validation_en) or open a ticket with Customer Care.
 There are 4635 entries present in the extraction digest that are missing from the ingestion digest.
 /content/dam/bruce
 /content/dam/bruce-assets
@@ -127,7 +127,7 @@ Migration validation took 0 minutes
 
 L’exemple d’échec ci-dessus a été réalisé en exécutant une ingestion, puis en exécutant à nouveau la même ingestion avec l’option Effacer désactivée, de sorte qu’aucun nœud n’était impliqué pendant l’ingestion – les éléments étaient déjà présents sur la cible.
 
-En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir de l’interface utilisateur des **Tâches d’ingestion** de Cloud Acceleration Manager. Pour ce faire, cliquez sur les trois petits points (**...**), puis cliquez sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
+En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir de l’interface utilisateur des **Tâches d’ingestion** de Cloud Acceleration Manager. Pour ce faire, cliquez sur les trois points (**...**), puis cliquez sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
@@ -156,7 +156,7 @@ Une boîte de dialogue s’affiche avec les informations de résumé. Utilisez l
 
 La première étape consiste à déterminer si l’ingestion a vraiment échoué ou si le contenu extrait est déjà présent dans l’environnement cible. Cela peut se produire si une ingestion est répétée avec l’option **Effacer le contenu existant sur l’instance Cloud avant l’ingestion** désactivée.
 
-Pour vérifier, choisissez un chemin dans le rapport de validation et vérifiez s’il est présent dans l’environnement cible. S’il s’agit d’un environnement de publication, vous pouvez vous limiter à vérifier directement les pages et les ressources. Si vous avez besoin d’aide pour cette étape, veuillez ouvrir un ticket auprès de l’assistance clientèle.
+Pour vérifier, choisissez un chemin dans le rapport de validation et vérifiez s’il est présent dans l’environnement cible. S’il s’agit d’un environnement de publication, vous pouvez vous limiter à vérifier directement les pages et les ressources. Ouvrez un ticket auprès de l’assistance clientèle si vous avez besoin d’aide pour cette étape.
 
 ### Le nombre de noeuds est inférieur à ce que je m’attendais. Pourquoi ? {#node-count-lower-than-expected}
 

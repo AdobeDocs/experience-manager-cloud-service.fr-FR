@@ -2,10 +2,10 @@
 title: Environnement de création
 description: Découvrez l’environnement de création de Cloud Manager et comment il génère et teste votre code.
 exl-id: a4e19c59-ef2c-4683-a1be-3ec6c0d2f435
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 95%
+source-wordcount: '991'
+ht-degree: 94%
 
 ---
 
@@ -229,4 +229,4 @@ Cette même technique peut être utilisée pour installer des packages spécifiq
 
 >[!TIP]
 >
->Pour plus d’informations sur l’environnement de création front-end, consultez le document [Développement de sites avec le pipeline front-end.](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md)
+>Pour plus d’informations sur l’environnement de génération front-end, voir [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md).

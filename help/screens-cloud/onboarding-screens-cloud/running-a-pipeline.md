@@ -2,10 +2,10 @@
 title: Exécution d’un pipeline
 description: Cette page décrit l’exécution d’un pipeline pour un projet Screens as a Cloud Service dans Cloud Manager.
 exl-id: 3203cff7-5668-4f50-a2c5-80ae474b439d
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 51%
+source-wordcount: '309'
+ht-degree: 39%
 
 ---
 
@@ -35,7 +35,7 @@ La section suivante décrit comment configurer le pipeline CI/CD et déployer vo
 1. Sélectionnez vos options dans l’assistant **Configurer le pipeline**. Cliquez sur **Enregistrer**.
 
    >[!NOTE]
-   >Pour en savoir plus sur les options de l’assistant de configuration du pipeline, voir [Configuration des paramètres du pipeline à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) pour plus d’informations.
+   >Pour en savoir plus sur les options de l’assistant de configuration de pipeline, voir [Configuration des paramètres du pipeline à partir de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/cicd-pipelines/configuring-production-pipelines.html?lang=en) pour plus d’informations.
 
    ![image](/help/screens-cloud/assets/onboarding/run-pipeline2-a.png)
 

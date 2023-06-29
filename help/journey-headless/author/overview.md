@@ -2,7 +2,7 @@
 title: Parcours de création de contenu découplé AEM
 description: Faites vos premiers pas dans cette visite guidée pour découvrir les fonctionnalités découplées puissantes et flexibles d’AEM, ses capacités et comment créer du contenu dans votre projet.
 exl-id: fe124c6b-932a-44fc-a87b-12691aefea56
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '865'
 ht-degree: 92%
@@ -21,7 +21,7 @@ Le contenu découplé n’est pas basé sur la structure traditionnelle des page
 
 Dans AEM, cette création est rendue possible avec les fragments de contenu. Vous créez le contenu dans des fragments de contenu individuels qui sont ensuite rendus disponibles pour qu’une application puisse les sélectionner et les utiliser selon les besoins.
 
-Cette flexibilité signifie que le découplage est un modèle de développement moderne et dynamique permettant la mise en œuvre d’expériences numériques.
+Cette flexibilité signifie que le découplage est un modèle de développement moderne et dynamique permettant la mise en œuvre d’expériences digitales.
 
 Ce guide détaille les sujets les plus importants afin que vous puissiez :
 
@@ -66,7 +66,7 @@ Vous êtes maintenant prêt à prendre en main votre parcours découplé Adobe. 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
 
-However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So please consider these two options.
+However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So, consider these two options.
 
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 * If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.

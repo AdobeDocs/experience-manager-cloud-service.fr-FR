@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2022.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2022.6.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: cf2133dc-56cd-4a07-ab11-72e16f015ff5
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 87%
+source-wordcount: '639'
+ht-degree: 79%
 
 ---
 
@@ -37,7 +37,7 @@ Consultez la vidéo Aperçu de la version de juin 2022 pour obtenir un résumé 
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
-* Une nouvelle [interface utilisateur](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) est désormais disponible pour que les administrateurs et les créateurs de contenu puissent exécuter efficacement des actions (telles que publier, dépublier, copier, déplacer, etc.), rechercher/filtrer et créer des fragments de contenu pour des cas d’utilisation découplés.
+* Une nouvelle [interface utilisateur](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) est désormais disponible pour que les administrateurs et les auteurs de contenu puissent gérer efficacement (agir comme publier, annuler la publication, copier, déplacer, etc.), rechercher/filtrer et créer des fragments de contenu pour des cas d’utilisation sans affichage.
 
   ![Console Fragments de contenu](/help/release-notes/assets/cf-ui.png)
 
@@ -67,7 +67,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 
 ![Présentation des propriétés du cockpit du produit](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Amélioration de la compatibilité et de la robustesse pour les connecteurs tiers sur I/O Runtime
+* Amélioration de la compatibilité et de la robustesse pour les connecteurs tiers sur I/O Runtime
 
 * Amélioration de la prise en charge des remplacements de la configuration du client GQL (par exemple, définir le comportement de mise en cache personnalisée)
 
@@ -98,7 +98,7 @@ Experience Manager Assets utilise désormais les fonctionnalités d’Adobe Sens
 
 ## Cloud Manager {#cloud-manager}
 
-Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici.](/help/implementing/cloud-manager/release-notes/current.md)
+Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Outils de migration {#migration-tools}
 

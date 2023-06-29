@@ -2,10 +2,10 @@
 title: Extraction de contenu à partir de la source
 description: Extraction de contenu à partir de la source
 exl-id: c5c08c4e-d5c3-4a66-873e-96986e094fd3
-source-git-commit: b31fe77cd43362b6ad768e8a2b258c23ae84466c
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 87%
+source-wordcount: '700'
+ht-degree: 86%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 87%
 Pour extraire votre jeu de migration à partir de l’outil de transfert de contenu, procédez comme suit :
 
 >[!NOTE]
->Si Amazon S3, Azure Data Store ou File Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’extraction. L’étape de précopie est la plus efficace pour la première occurrence complète d’extraction et d’ingestion. Pour plus d’informations, consultez [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md).
+>Si Amazon S3, Azure Data Store ou File Data Store est utilisé comme type d’entrepôt de données, vous pouvez exécuter l’étape facultative de précopie afin d’accélérer considérablement la phase d’extraction. L’étape de précopie est la plus efficace pour la première occurrence complète d’extraction et d’ingestion. Voir [Gestion des référentiels de contenu volumineux](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/handling-large-content-repositories.md) pour plus d’informations.
 
 1. Pour démarrer l’extraction, sélectionnez un jeu de migration dans l’assistant **Transfert de contenu** et cliquez sur **Extraire**.
 

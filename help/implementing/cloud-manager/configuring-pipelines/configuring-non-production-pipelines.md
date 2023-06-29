@@ -1,19 +1,19 @@
 ---
 title: Configuration de pipelines hors production
-description: Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans des environnements de production.
+description: Découvrez comment configurer des pipelines hors production pour tester la qualité de votre code avant le déploiement dans les environnements de production.
 index: true
 exl-id: eba608eb-a19e-4bff-82ff-05860ceabe6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1362'
-ht-degree: 94%
+source-wordcount: '1356'
+ht-degree: 57%
 
 ---
 
 
-# Configuration de pipelines hors production {#configuring-non-production-pipelines}
+# Configurer des pipelines hors production {#configuring-non-production-pipelines}
 
-Découvrez comment configurer des pipelines hors production afin de tester la qualité de votre code avant le déploiement dans des environnements de production.
+Découvrez comment configurer des pipelines hors production pour tester la qualité de votre code avant le déploiement dans les environnements de production.
 
 ## Pipelines hors production {#non-production-pipelines}
 
@@ -50,13 +50,13 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
    * **Déclencheur de déploiement** - vous disposez des options suivantes au moment de définir les déclencheurs de déploiement pour démarrer le pipeline.
 
       * **Manuel** - utilisez cette option pour démarrer manuellement le pipeline.
-      * **Lors des modifications Git** - cette option démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche Git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
+      * **Lors des modifications Git** - Cette option démarre le pipeline CI/CD chaque fois que des validations sont ajoutées à la branche git configurée. Avec cette option, vous pouvez toujours démarrer le pipeline manuellement, si nécessaire.
 
-1. Si vous choisissez de créer un **pipeline de déploiement**, vous devez également définir le **comportement des échecs de mesure importants**.
+1. Si vous choisissez de créer une **Pipeline de déploiement**, vous devez également définir la variable **Comportement des échecs de mesure importants**.
 
-   * **Demander à chaque fois** - il s’agit du paramètre par défaut qui nécessite une intervention manuelle pour tout échec important.
-   * **Échec immédiat** - Si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Il s’agit essentiellement d’imiter un utilisateur qui rejetterait manuellement chaque échec.
-   * **Continuer immédiatement** - si cette option est sélectionnée, le pipeline se poursuivra automatiquement chaque fois qu’une défaillance importante se produira. Il s’agit essentiellement d’émuler un utilisateur approuvant manuellement chaque échec.
+   * **Demander à chaque fois** - Ce comportement est le paramètre par défaut qui nécessite une intervention manuelle en cas d’échec important.
+   * **Échec immédiat** - Si cette option est sélectionnée, le pipeline est annulé chaque fois qu’un échec important se produit. Il s’agit essentiellement d’émuler un utilisateur rejetant manuellement chaque échec.
+   * **Continuer immédiatement** - Si cette option est sélectionnée, le pipeline se poursuit automatiquement chaque fois qu’un échec important se produit. Il s’agit essentiellement d’émuler un utilisateur approuvant manuellement chaque échec.
 
 1. Cliquez sur **Continuer**.
 
@@ -66,7 +66,7 @@ Une fois que vous avez configuré votre programme et que vous disposez d’au mo
    * **[Code full stack](#full-stack-code)**
    * **[Configuration de la couche web](#web-tier-config)**
 
-Les étapes pour terminer la création de votre pipeline hors production varient en fonction de l’option que vous sélectionnez pour le **Code source**. Suivez les liens ci-dessus pour accéder à la section suivante de ce document afin de terminer la configuration de votre pipeline.
+Les étapes pour terminer la création de votre pipeline hors production varient en fonction de l’option que vous sélectionnez pour le **Code source**. Suivez les liens ci-dessus pour accéder à la section suivante de ce document afin de pouvoir terminer la configuration de votre pipeline.
 
 ### Code front-end {#front-end-code}
 
@@ -77,14 +77,14 @@ Pour terminer la configuration du pipeline hors production de code front-end, pr
 1. Dans l’onglet **Code source**, vous devez définir les options suivantes.
 
    * **Environnements de déploiement éligibles** - Si votre pipeline est un pipeline de déploiement, vous devez sélectionner les environnements à déployer.
-   * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+   * **Référentiel** - Cette option définit à partir de quel référentiel git le pipeline doit récupérer le code.
 
    >[!TIP]
    > 
-   >Consultez le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+   >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) vous pouvez ainsi apprendre à ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** : cette option définit à partir de quelle branche le pipeline doit récupérer le code.
-      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à les sélectionner.
+   * **Branche Git** - Cette option définit à partir de quelle branche du pipeline sélectionné doit récupérer le code.
+      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ. Il trouve les branches correspondantes que vous pouvez sélectionner.
    * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
 
    ![Pipeline front-end](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-front-end.png)
@@ -99,24 +99,24 @@ Un pipeline de code full stack déploie simultanément des versions de code fron
 
 >[!NOTE]
 >
->Si un pipeline de code à pile complète existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
+>S’il existe un pipeline de code à pile complète pour l’environnement sélectionné, cette sélection est désactivée.
 
 Pour terminer la configuration du pipeline hors production de code full stack, procédez comme suit.
 
 1. Dans l’onglet **Code source**, vous devez définir les options suivantes.
 
    * **Environnements de déploiement éligibles** - Si votre pipeline est un pipeline de déploiement, vous devez sélectionner les environnements à déployer.
-   * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+   * **Référentiel** - Cette option définit à partir de quel référentiel git le pipeline doit récupérer le code.
 
    >[!TIP]
    > 
-   >Consultez le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+   >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) vous pouvez ainsi apprendre à ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** : cette option définit à partir de quelle branche le pipeline doit récupérer le code.
-      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ trouvera les branches correspondantes pour vous aider à les sélectionner.
+   * **Branche Git** - Cette option définit à partir de quelle branche du pipeline sélectionné doit récupérer le code.
+      * Saisissez les premiers caractères du nom de la branche et la fonction de saisie automatique de ce champ. Vous pouvez ainsi trouver les branches correspondantes que vous pouvez sélectionner.
    * **Ignorer la configuration de niveau Web** - Lorsque cette case est cochée, le pipeline ne déploie pas votre configuration de niveau web.
 
-   * **Pipeline** – Si votre pipeline est un pipeline de déploiement, vous pouvez choisir d’exécuter une phase de test. Cochez les options que vous souhaitez activer pour cette phase. Si vous ne sélectionnez aucune option, la phase de test ne s’affichera pas lors de l’exécution du pipeline.
+   * **Pipeline** – Si votre pipeline est un pipeline de déploiement, vous pouvez choisir d’exécuter une phase de test. Cochez les options que vous souhaitez activer dans cette phase. Si aucune des options n’est sélectionnée, la phase de test n’est pas affichée pendant l’exécution du pipeline.
 
       * **Tests fonctionnels du produit** – Exécutez des [tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) dans l’environnement de développement.
       * **Tests fonctionnels personnalisés** – Exécutez des [tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) dans l’environnement de développement.
@@ -130,26 +130,26 @@ Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](man
 
 ### Configuration de la couche web {#web-tier-config}
 
-Un pipeline de configuration de niveau web déploie les configurations HTTPD/Dispatcher. Consultez le document [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) pour plus d’informations sur ce type de pipeline.
+Un pipeline de configuration de niveau web déploie les configurations HTTPD/Dispatcher. Voir [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md#web-tier-config-pipeline) pour plus d’informations sur ce type de pipeline.
 
 >[!NOTE]
 >
->Si un pipeline de code de niveau web existe déjà pour l’environnement sélectionné, cette sélection est désactivée.
+>S’il existe un pipeline de code de niveau web pour l’environnement sélectionné, cette sélection est désactivée.
 
 Pour terminer la configuration du pipeline hors production de code de la couche web, procédez comme suit.
 
 1. Dans l’onglet **Code source**, vous devez définir les options suivantes.
 
    * **Environnements de déploiement éligibles** - Si votre pipeline est un pipeline de déploiement, vous devez sélectionner les environnements à déployer.
-   * **Référentiel** - cette option définit à partir de quel référentiel Git le pipeline doit récupérer le code.
+   * **Référentiel** - Cette option définit à partir de quel référentiel git le pipeline doit récupérer le code.
 
    >[!TIP]
    > 
-   >Consultez le document [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) pour découvrir comment ajouter et gérer des référentiels dans Cloud Manager.
+   >Voir [Ajout et gestion des référentiels](/help/implementing/cloud-manager/managing-code/cloud-manager-repositories.md) vous pouvez ainsi apprendre à ajouter et gérer des référentiels dans Cloud Manager.
 
-   * **Branche Git** - cette option définit à partir de quelle branche sélectionnée le pipeline doit récupérer le code.
+   * **Branche Git** - Cette option définit à partir de quelle branche du pipeline sélectionné doit récupérer le code.
    * **Emplacement du code** - Cette option définit le chemin d’accès dans la branche du référentiel sélectionné à partir duquel le pipeline doit récupérer le code.
-      * Pour les pipelines de configuration de niveau web, il s’agit généralement du chemin contenant les répertoires `conf.d`, `conf.dispatcher.d` et `opt-in`.
+      * Pour les pipelines de configuration de niveau web, ce chemin d’accès contient généralement `conf.d`, `conf.dispatcher.d`, et `opt-in` répertoires.
       * Par exemple, si la structure du projet a été générée à partir de l’[Archétype de projet AEM,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) le chemin serait `/dispatcher/src`.
 
    ![Pipeline de couche web](/help/implementing/cloud-manager/assets/configure-pipeline/non-prod-pipeline-web-tier.png)
@@ -170,9 +170,9 @@ Voir le document [Développement de sites avec le pipeline front-end](/help/impl
 
 ## Ignorer les packages du Dispatcher {#skip-dispatcher-packages}
 
-Si vous souhaitez que les packages du Dispatcher soient créés dans le cadre de votre pipeline, mais que vous ne souhaitez pas qu’ils soient publiés pour créer du stockage, vous pouvez désactiver leur publication, ce qui peut réduire la durée d’exécution du pipeline.
+Si vous souhaitez que les modules de Dispatcher soient créés dans le cadre de votre pipeline, mais ne souhaitez pas qu’ils soient publiés pour créer du stockage, vous pouvez désactiver leur publication, ce qui peut réduire la durée d’exécution du pipeline.
 
-La configuration suivante permettant de désactiver la publication des packages de Dispatcher doit être ajoutée via votre fichier `pom.xml` de projet. Elle est basée sur une variable d’environnement, qui sert d’indicateur que vous pouvez définir dans le conteneur de génération de Cloud Manager pour définir quand les packages du dispatcher doivent être ignorés.
+La configuration suivante pour désactiver la publication des packages de Dispatcher doit être ajoutée via votre projet. `pom.xml` fichier . Elle est basée sur une variable d’environnement, qui sert d’indicateur que vous pouvez définir dans le conteneur de génération Cloud Manager pour définir quand les modules de Dispatcher doivent être ignorés.
 
 ```xml
 <profile>

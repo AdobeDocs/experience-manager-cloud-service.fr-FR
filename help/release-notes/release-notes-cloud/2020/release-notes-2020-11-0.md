@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.11.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.11.0.
 exl-id: 8066c0fb-c2f5-4625-9448-b0c74ff4e192
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1264'
-ht-degree: 95%
+source-wordcount: '1261'
+ht-degree: 91%
 
 ---
 
@@ -73,9 +73,9 @@ La version suivante (2020.12.0) sera publiée le 17 décembre 2020.
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Publication du site de référence de CIF Venia – 2020.11.05 qui comprend les derniers composants principaux de CIF version 1.5.0. Pour plus d’informations, consultez [Site de référence de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27).
+* Site de référence CIF Venia - 2020.11.05 incluant la dernière version des composants principaux CIF v1.5.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2020.10.27) pour plus d’informations.
 
-* Publication des composants principaux CIF version 1.5.0. Reportez-vous à [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) pour plus de détails.
+* Composants principaux CIF version 1.5.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.5.0) pour plus d’informations.
 
 ### Correctifs {#bug-fixes-commerce}
 
@@ -90,7 +90,7 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2020.11.0
 ### Nouveautés d’[!DNL Cloud Manager]  {#what-is-new-cm}
 
 * Une nouvelle option de menu **Connexion locale** est désormais disponible pour les utilisateurs à partir des options du menu Environnement dans la carte **Environnements** et les pages de résumé des **environnements**.
-Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#login-locally).
+Voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#login-locally) pour plus d’informations.
 
 * L’onglet **Apprendre** de Cloud Manager est actualisé avec de nouvelles images dans l’interface utilisateur.
 

@@ -2,10 +2,10 @@
 title: Premiers pas vers votre première expérience d’utilisation d’AEM découplé
 description: Dans cette partie du parcours de développement découplé AEM, vous découvrirez les étapes de mise en œuvre de votre première expérience découplée dans AEM, notamment des considérations concernant sa planification, et découvrirez également les bonnes pratiques pour rendre votre parcours aussi fluide que possible.
 exl-id: 172ad8d8-5067-4452-bf91-1eea9a39a7bc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2013'
-ht-degree: 98%
+source-wordcount: '2012'
+ht-degree: 96%
 
 ---
 
@@ -76,7 +76,7 @@ Les auteurs de contenu créent du contenu en fonction des modèles de contenu d�
 
 Avant de commencer à utiliser du contenu découplé dans AEM, vous devez vous assurer que toutes les fonctionnalités requises sont activées. Cette section décrit ces différentes exigences. Les étapes réelles pour réaliser ces étapes sont détaillées plus loin dans le [Parcours de développement découplé AEM.](#overview.md)
 
-Vous pouvez également vous reporter éventuellement aux [ressources supplémentaires](#additional-resources) pour plus d’informations sur chaque sujet.
+Vous pouvez également [ressources supplémentaires](#additional-resources) pour plus d’informations sur les différentes rubriques.
 
 ### Configuration {#configuration}
 

@@ -4,10 +4,10 @@ description: Découvrez comment préparer le contenu à traduire.
 feature: Language Copy
 role: Admin
 exl-id: afc577a2-2791-481a-ac77-468011e4302e
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '768'
-ht-degree: 92%
+source-wordcount: '765'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Les sites web multilingues fournissent généralement une certaine quantité de 
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous commencez à traduire du contenu, reportez-vous à la section [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 Le [site de démonstration WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md) comprend plusieurs branches de langue et utilise la structure suivante :
 
@@ -92,7 +92,7 @@ AEM contient un rail **Références** qui affiche une liste des racines de langu
 
 ![Racines linguistiques](../assets/language-roots.png)
 
-Utilisez la vue de procédure suivante pour les copies de langue d’une page à l’aide du [sélecteur de rail.](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector)
+Utilisez la vue de procédure suivante pour les copies de langue d’une page à l’aide du [sélecteur de rail](/help/sites-cloud/authoring/getting-started/basic-handling.md#rail-selector).
 
 1. Dans la console de sites, sélectionnez une page du site, puis cliquez ou appuyez sur **Références**.
 

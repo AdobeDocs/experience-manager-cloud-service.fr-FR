@@ -2,16 +2,16 @@
 title: Modification des propriétés de page
 description: Définir les propriétés requises pour une page
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 82%
+source-wordcount: '2341'
+ht-degree: 81%
 
 ---
 
 # Modification des propriétés de page {#editing-page-properties}
 
-Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy alors que d’autres ne le sont pas et les informations de Live Copy sont disponibles, le cas échéant.
+Vous pouvez définir les propriétés requises pour une page. Celles-ci peuvent varier selon la nature de la page. Par exemple, certaines pages peuvent être connectées à une Live Copy, tandis que d’autres ne le sont pas, et les informations de Live Copy sont disponibles, le cas échéant.
 
 ## Propriétés de page {#page-properties}
 
@@ -196,15 +196,15 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 ### Blueprint {#blueprint}
 
-Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies, et font partie de la [gestion multisite.](/help/sites-cloud/administering/msm/overview.md)
+Cet onglet n’est visible que pour les pages qui servent de plan directeur. Les plans directeurs servent de base aux Live Copies, et font partie de la [gestion multisite](/help/sites-cloud/administering/msm/overview.md).
 
-* **Live Copies actuelles** – Listes de pages basées sur (c.-à-d. Live Copies de) cette page de plan directeur.
+* **Live Copies actuelles** - Répertorie les pages basées sur (c’est-à-dire Live Copies de) cette page de plan directeur.
 
 * **Configurations du déploiement** : contrôle les circonstances dans lesquelles les modifications sont propagées à la Live Copy.
 
 ### Live Copy {#live-copy}
 
-Cet onglet n’est visible que pour les pages configurées en tant que Live Copies. Comme pour les plans directeurs, les Live Copies font partie de la [gestion multisite.](/help/sites-cloud/administering/msm/overview.md).
+Cet onglet n’est visible que pour les pages configurées en tant que Live Copies. Comme pour les plans directeurs, les Live Copies font partie de la [gestion multisite](/help/sites-cloud/administering/msm/overview.md).
 
 * **Synchroniser** – Synchroniser la Live Copy avec le plan directeur, en conservant les modifications locales.
 * **Réinitialiser** – Réinitialiser la Live Copy à l’état de plan directeur, en supprimant les modifications locales.

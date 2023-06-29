@@ -2,7 +2,7 @@
 title: Parcours de traduction découplée AEM
 description: Faites vos premiers pas avec ce parcours guidé pour découvrir comment traduire votre contenu découplé à l’aide des puissants outils de traduction d’AEM.
 exl-id: b677f691-5257-43c3-a4b9-c34932577b31
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 96%
@@ -53,7 +53,7 @@ Voici les personnes qui interagissent dans ce parcours.
 | Administrateur | Gère les paramètres et la configuration de base d’AEM | Le spécialiste de la traduction travaille avec l’administrateur pour apporter les modifications de configuration nécessaires à la traduction, telles que l’installation d’un connecteur de traduction. |
 | Architecte de contenu | Analyse les exigences relatives aux données qui doivent être diffusées en mode découplé et définit la structure de ces données | Les spécialistes de la traduction travaillent avec l’architecte de contenu pour définir l’organisation du contenu afin qu’il puisse être facilement traduit. |
 
-Les informations présentées dans ce parcours peuvent bien sûr être utiles à toutes les personnes, mais certaines informations peuvent être superflues pour certains rôles. Tenez-vous informés des [prochains parcours couvrant les spécificités des rôles supplémentaires.](/help/journey-documentation/documentation-journeys.md#journeys)
+Les informations présentées dans ce parcours peuvent bien sûr être utiles à toutes les personnes, mais certaines informations peuvent être superflues pour certains rôles. Tenez-vous informé des [prochains parcours couvrant les spécificités des rôles supplémentaires](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## Le parcours de traduction découplée {#the-journey}
 

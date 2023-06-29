@@ -2,10 +2,10 @@
 title: Comment ajouter des variables dans des étapes de processus AEM ?
 description: Découvrez comment créer une variable, définir une valeur pour la variable et l’utiliser dans les étapes de processus [!DNL AEM Forms]
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2061'
-ht-degree: 99%
+source-wordcount: '2060'
+ht-degree: 98%
 
 ---
 
@@ -278,4 +278,4 @@ Pour supprimer une variable :
 
 ## Références {#references}
 
-Pour plus d’exemples sur l’utilisation des variables dans les étapes de processus [!DNL AEM Forms], voir [Variables dans les processus AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=fr).
+Pour plus d’exemples sur l’utilisation des variables dans [!DNL AEM Forms] Etapes du workflow, voir [Variables dans les workflows AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=fr).

@@ -2,10 +2,10 @@
 title: Gestion de projets
 description: La console Projets vous permet d’organiser un projet en regroupant les ressources dans une seule entité à laquelle vous pouvez accéder et que vous pouvez gérer.
 exl-id: be4616e7-18bc-4b2d-89f6-d04178ac7f3a
-source-git-commit: 54a098d8986c8bbd740bed50f8625c1025d2f6f4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 62%
+source-wordcount: '893'
+ht-degree: 60%
 
 ---
 
@@ -17,7 +17,7 @@ Dans le **Projets** , vous accédez à vos projets et vous y exécutez les actio
 
 ![Console Projets](/help/sites-cloud/authoring/assets/projects-console.png)
 
-Dans les projets, vous pouvez créer un projet, associer des ressources à votre projet et supprimer un projet ou des liens Ressource. Vous pouvez ouvrir une mosaïque pour afficher son contenu et ajouter des éléments à une mosaïque. Cette rubrique décrit ces procédures.
+Dans les projets, vous pouvez créer un projet, associer des ressources à votre projet et supprimer un projet ou des liens Ressource. Vous pouvez ouvrir une mosaïque pour afficher son contenu et ajouter des éléments à cette dernière. Cette rubrique décrit ces procédures.
 
 ## Création d’un projet {#creating-a-project}
 
@@ -127,13 +127,14 @@ Si l’icône est accompagnée d’une croix (x), elle affiche les projets inact
 
 ## Activation/désactivation de projets {#making-projects-inactive-or-active}
 
-Vous pouvez désactiver un projet si vous l’avez terminé, mais que vous souhaitez conserver ses informations.
+Vous pouvez désactiver un projet si vous l’avez terminé, mais que vous souhaitez conserver les informations le concernant.
 
 Pour rendre un projet inactif (ou principal) :
 
 1. Dans le **Projets** , ouvrez votre projet, puis recherchez **Informations sur le projet** mosaïque.
 
    >[!NOTE]
+   >
    Vous devrez peut-être ajouter cette mosaïque si elle ne figure pas déjà dans votre projet. Voir [Ajout de mosaïques](#adding-items-to-a-tile).
 
 1. Appuyez/cliquez sur **Modifier**.

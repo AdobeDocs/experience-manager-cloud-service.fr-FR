@@ -2,10 +2,10 @@
 title: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 description: Bonnes pratiques de gestion des URL et de l’optimisation pour les moteurs de recherche pour Adobe Experience Manager Sites as a Cloud Service
 exl-id: abe3f088-95ff-4093-95a1-cfc610d4b9e9
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3709'
-ht-degree: 80%
+source-wordcount: '3706'
+ht-degree: 79%
 
 ---
 
@@ -459,7 +459,7 @@ public class SitemapGeneratorImpl extends ResourceTreeSitemapGenerator {
 }
 ```
 
-De plus, la fonctionnalité mise en œuvre pour les plans de site XML peut également être utilisée dans différents cas d’utilisation, par exemple pour ajouter le lien canonique ou des variantes linguistiques à l’en-tête d’une page. Reportez-vous à l’interface [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) pour plus d’informations.
+De plus, la fonctionnalité mise en œuvre pour les plans de site XML peut également être utilisée dans différents cas d’utilisation, par exemple pour ajouter le lien canonique ou des variantes linguistiques à l’en-tête d’une page. Voir [SeoTags](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/SeoTags.html) pour plus d’informations.
 
 ### Création de redirections 301 pour les URL héritées {#creating-redirects-for-legacy-urls}
 
@@ -472,7 +472,7 @@ Veillez à consulter la section Ressources supplémentaires qui suit pour obteni
 
 ## Ressources supplémentaires {#additional-resources}
 
-Pour plus d’informations, consultez les ressources supplémentaires suivantes :
+Pour plus d’informations, voir les ressources supplémentaires suivantes :
 
 <!--
 * [Resource Mapping](/help/sites-deploying/resource-mapping.md)

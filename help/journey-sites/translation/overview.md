@@ -5,7 +5,7 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 3db2ff19-dc24-47b6-aa56-2ee2305fe045
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 92%
@@ -18,7 +18,7 @@ Faites vos premiers pas avec ce parcours guidé pour découvrir comment traduire
 
 ## Présentation {#introduction}
 
-AEM Sites est une suite d’outils puissants pour la création et la gestion d’expériences numériques. Les auteurs de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il est diffusé par AEM à vos audiences sur l’ensemble des canaux.
+AEM Sites est une suite d’outils puissants pour la création et la gestion d’expériences digitales. Les auteurs de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il est diffusé par AEM à vos audiences sur l’ensemble des canaux.
 
 AEM propose des outils tout aussi puissants pour traduire votre contenu, ce qui vous permet de le diffuser le plus rapidement possible vers vos audiences d’autres régions ou avec d’autres paramètres régionaux. Ce parcours de documentation vous présente les outils de création afin que vous compreniez comment le contenu est créé et géré dans AEM, puis vous détaille ce que vous devez savoir pour gérer votre propre projet de traduction.
 
@@ -47,7 +47,7 @@ Voici les personnes qui interagissent dans ce parcours.
 | Administrateur | Gère les paramètres et la configuration de base d’AEM | Le spécialiste de la traduction travaille avec l’administrateur pour apporter les modifications de configuration nécessaires à la traduction, telles que l’installation d’un connecteur de traduction. |
 | Architecte de contenu | Analyse les exigences relatives aux données qui doivent être diffusées sur les sites et définit la structure de ces données | Les spécialistes de la traduction travaillent avec l’architecte de contenu pour définir l’organisation du contenu afin qu’il puisse être facilement traduit. |
 
-Les informations présentées dans ce parcours peuvent bien sûr être utiles à toutes les personnes, mais certaines informations peuvent être superflues pour certains rôles. Tenez-vous informés des [prochains parcours couvrant les spécificités des rôles supplémentaires.](/help/journey-documentation/documentation-journeys.md#journeys)
+Les informations présentées dans ce parcours peuvent bien sûr être utiles à toutes les personnes, mais certaines informations peuvent être superflues pour certains rôles. Tenez-vous informé des [prochains parcours couvrant les spécificités des rôles supplémentaires](/help/journey-documentation/documentation-journeys.md#journeys).
 
 ## Le parcours de traduction de sites {#the-journey}
 

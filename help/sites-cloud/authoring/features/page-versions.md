@@ -2,7 +2,7 @@
 title: Utilisation des versions de page
 description: Création, comparaison et restauration de versions d’une page
 exl-id: 33d8e43c-594d-4bba-9631-b2c42a1e910f
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 41%
@@ -194,7 +194,7 @@ La fonction de distorsion du temps Timewarp permet de simuler l’état *publié
 
 >[!TIP]
 >
->[Il est également possible d’utiliser la distorsion du temps avec les lancements pour obtenir un aperçu du futur.](/help/sites-cloud/authoring/launches/preview.md)
+>[Il est également possible d’utiliser la fonction Timewarp avec les lancements pour obtenir un aperçu du futur](/help/sites-cloud/authoring/launches/preview.md).
 
 Comme la création de contenu est un processus continu et collaboratif, l’objectif de Timewarp est de permettre aux auteurs de suivre au fil du temps le site web publié afin qu’ils puissent comprendre comment le contenu a changé. Cette fonction utilise les versions de page pour déterminer l’état de l’environnement de publication.
 

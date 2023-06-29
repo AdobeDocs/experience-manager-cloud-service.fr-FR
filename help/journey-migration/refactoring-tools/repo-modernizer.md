@@ -2,10 +2,10 @@
 title: Repository Modernizer
 description: Repository Modernizer
 exl-id: cd9d212e-e720-4209-8b5a-659883cc1d95
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 64%
+source-wordcount: '302'
+ht-degree: 62%
 
 ---
 
@@ -26,7 +26,7 @@ Repository Modernizer crée une structure de projet AEM Cloud Service compatible
 * `all` Le module est un module conteneur qui contient les sous-modules. `ui.apps` et `ui.content`.
 
 >[!NOTE]
->La structure de projet est basée sur *Archetype 24* pour les packages et leurs `pom.xml/filter.xml files`. Pour plus d’informations, consultez [Archetype 24](https://github.com/adobe/aem-project-archetype).
+>La structure de projet est basée sur *Archetype 24* pour les packages et leurs `pom.xml/filter.xml files`. Voir [Archétype 24](https://github.com/adobe/aem-project-archetype) pour plus d’informations.
 
 ## Utilisation de Repository Modernizer {#using-repo-modernizer}
 

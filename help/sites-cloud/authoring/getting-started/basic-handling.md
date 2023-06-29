@@ -2,10 +2,10 @@
 title: Manipulation de base
 description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2986'
-ht-degree: 71%
+source-wordcount: '2978'
+ht-degree: 70%
 
 ---
 
@@ -71,7 +71,7 @@ Les consoles suivantes sont disponibles à partir du panneau de navigation :
 | Sites | Les consoles Sites permettent de [créer, d’afficher et de gérer des sites](/help/sites-cloud/authoring/fundamentals/organizing-pages.md) exécutés sur votre instance AEM. Grâce à ces consoles, vous pouvez créer, modifier, copier, déplacer et supprimer des pages, démarrer des workflows et publier des pages. |
 | Fragments d’expérience | Un [fragment d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md) est une expérience autonome qui peut être réutilisée sur l’ensemble des canaux et qui présente des variations, ce qui vous évite de devoir copier et coller à plusieurs reprises des expériences ou des parties d’expériences. |
 | Assets | La console Ressources vous permet d’importer et de gérer des [ressources numériques telles que des images, des vidéos, des documents et des fichiers audio](/help/assets/overview.md). Ces ressources peuvent ensuite être utilisées par n’importe quel site s’exécutant sur la même instance AEM. Vous pouvez également créer et gérer des [fragments de contenu](/help/assets/content-fragments/content-fragments.md) à partir de la console Ressources. |
-| Personnalisation | Cette console propose un ensemble d’outils de [création de contenu ciblé et de présentation d’expériences personnalisées.](/help/sites-cloud/authoring/personalization/overview.md) |
+| Personnalisation  | Cette console propose un ensemble d’outils de [création de contenu ciblé et de présentation d’expériences personnalisées](/help/sites-cloud/authoring/personalization/overview.md). |
 | Fragments de contenu | Les [Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) vous permettent de concevoir, créer, organiser et publier du contenu indépendant des pages. Ils vous permettent de préparer du contenu structuré prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour la création de pages et la diffusion headless. |
 
 ## Panneau Outils {#tools-panel}
@@ -216,7 +216,7 @@ L’action disponible dans la barre d’outils change pour tenir compte des acti
 
 La manière dont vous [sélectionnez une ressource](#viewing-and-selecting-resources) dépend du mode.
 
-En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Lorsque cela se produit, d’autres options s’affichent. En cliquant ou en appuyant sur les points de suspension (**…**), vous ouvrez un menu déroulant contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
+En raison des restrictions d’espace dans certaines fenêtres, la barre d’outils peut rapidement dépasser l’espace disponible. Lorsque cela se produit, d’autres options s’affichent. Cliquez ou appuyez sur les points de suspension (les trois points ou **...**) ouvre un sélecteur de liste déroulante contenant toutes les actions restantes. Par exemple, après avoir sélectionné une page dans la console **Sites** :
 
 ![Options supplémentaires](/help/sites-cloud/authoring/assets/additional-options.png)
 
@@ -226,7 +226,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 
 ## Actions rapides {#quick-actions}
 
-Dans [Mode Carte](#card-view) certaines actions sont disponibles sous forme d’icônes d’action rapide et se trouvent dans la barre d’outils. Les icônes d’action rapide sont disponibles pour un seul élément à la fois, ce qui évite d’avoir à présélectionner.
+Dans [Mode Carte](#card-view) certaines actions sont disponibles sous forme d’icônes d’action rapide et se trouvent sur la barre d’outils. Les icônes d’action rapide sont disponibles pour un seul élément à la fois, ce qui évite d’avoir à présélectionner.
 
 Les actions rapides sont visibles lorsque vous pointez (ordinateur de bureau) sur une carte de ressource. Les actions rapides disponibles dépendent de la console et du contexte. Voici, par exemple, les actions rapides d’une page dans le **Sites** console :
 
@@ -281,7 +281,7 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 #### Exemple de sélection {#selecting-example}
 
-1. Par exemple, en mode Carte :
+1. Par exemple, en mode Carte :
 
    ![Sélection du mode Carte](/help/sites-cloud/authoring/assets/card-view-select.png)
 
@@ -402,7 +402,7 @@ Si Contenu uniquement est sélectionné, alors seule l’icône de rail s’affi
 
 L’arborescence de contenu peut être utilisée pour parcourir rapidement la hiérarchie du site dans le panneau latéral et afficher de nombreuses informations sur les pages du dossier actif.
 
-Grâce au panneau latéral de l’arborescence de contenu associé à un mode Liste ou Carte, les utilisateurs peuvent facilement voir la structure hiérarchique du projet et naviguer facilement dans la structure de contenu à l’aide du panneau latéral de l’arborescence de contenu, ainsi que consulter les informations détaillées sur la page en mode Liste.
+Grâce au panneau latéral de l’arborescence de contenu associé à un mode Liste ou Carte, les utilisateurs peuvent facilement voir la structure hiérarchique du projet, naviguer facilement dans la structure de contenu à l’aide du panneau latéral de l’arborescence de contenu et afficher des informations détaillées sur la page en mode Liste.
 
 ![Arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree.png)
 
@@ -410,7 +410,7 @@ Grâce au panneau latéral de l’arborescence de contenu associé à un mode Li
 >
 >Une fois qu’une entrée est sélectionnée dans la vue de hiérarchie, les touches fléchées permettent de naviguer rapidement dans la hiérarchie.
 >
->Reportez-vous à la section [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
+>Voir [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
 
 ### Chronologie {#timeline}
 
@@ -460,15 +460,15 @@ Les **références** affichent toutes les connexions avec la ressource sélectio
 
 ### Site {#site}
 
-**Site** affiche les détails des sites [créés à l’aide d’un modèle de site.](/help/sites-cloud/administering/site-creation/create-site.md)
+**Site** affiche les détails des sites [créés à l’aide d’un modèle de site](/help/sites-cloud/administering/site-creation/create-site.md).
 
 ![Rail Site](../assets/site-rail.png)
 
-Consultez le document [Utilisation du rail Site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) pour plus d’informations sur l’utilisation du rail pour gérer le [thème de votre site.](/help/sites-cloud/administering/site-creation/site-themes.md)
+Consultez le document [Utilisation du rail Site pour gérer le thème de votre site](/help/sites-cloud/administering/site-creation/site-rail.md) pour plus d’informations sur l’utilisation du rail pour gérer le [thème de votre site](/help/sites-cloud/administering/site-creation/site-themes.md).
 
 >[!TIP]
 >
->Vous trouverez une description de bout en bout du processus de création d’un nouveau site à partir d’un modèle et de personnalisation de son thème dans le [Parcours de création rapide de site.](/help/journey-sites/quick-site/overview.md)
+>Vous trouverez une description de bout en bout du processus de création d’un nouveau site à partir d’un modèle et de personnalisation de son thème dans le [Parcours de création rapide de site](/help/journey-sites/quick-site/overview.md).
 
 ### Filtrer {#filter}
 

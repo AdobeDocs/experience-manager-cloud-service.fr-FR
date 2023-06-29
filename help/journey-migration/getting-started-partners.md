@@ -2,10 +2,10 @@
 title: Guide de migration vers Experience Manager as a Cloud Service pour les partenaires
 description: Guide de migration vers Experience Manager as a Cloud Service pour les partenaires
 exl-id: 9d5a72b8-06af-4b82-ab20-e65aea7903b3
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2122'
-ht-degree: 100%
+source-wordcount: '2120'
+ht-degree: 97%
 
 ---
 
@@ -127,7 +127,7 @@ Avant de commencer votre parcours de transition vers Cloud Service, vous devez v
 <table>
 <tr>
 <td>Découverte et évaluation des projets</td>
-<td><ul><li>Voir <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=fr">Modifications notables apportées à Experience Manager as a Cloud Service</a> pour comprendre les différences importantes entre Adobe Experience Manager as a Cloud Service et Experience Manager 6.x.</li><li>Consultez <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=fr">Fonctionnalités obsolètes</a> pour en savoir plus sur les fonctionnalités qui ont été marquées comme obsolètes.</li><li>[Pour les migrations de Cloud Service uniquement] Évaluation de la préparation de Cloud Service : exécutez <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=fr">Best Practices Analyzer (BPA)</a> sur l’environnement source. </li><li>Procédez à une évaluation des modifications notables et des fonctionnalités obsolètes dans Experience Manager CS.</li></ul></td>
+<td><ul><li>Voir <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/aem-cloud-changes.html?lang=fr">Modifications notables apportées à Experience Manager as a Cloud Service</a> pour comprendre les différences importantes entre Adobe Experience Manager as a Cloud Service et Experience Manager 6.x.</li><li>Voir <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/deprecated-removed-features.html?lang=fr">Fonctionnalités obsolètes</a> pour en savoir plus sur les fonctionnalités signalées comme étant obsolètes.</li><li>[Pour les migrations de Cloud Service uniquement] Évaluation de la préparation de Cloud Service : exécutez <a href="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/best-practices-analyzer/overview-best-practices-analyzer.html?lang=fr">Best Practices Analyzer (BPA)</a> sur l’environnement source. </li><li>Procédez à une évaluation des modifications notables et des fonctionnalités obsolètes dans Experience Manager CS.</li></ul></td>
 </tr>
 <tr>
 <td>Révision</td>

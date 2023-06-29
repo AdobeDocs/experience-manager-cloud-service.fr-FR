@@ -2,10 +2,10 @@
 title: Tableau de bord des licences
 description: Cloud Manager fournit un tableau de bord pour un affichage convivial des produits AEMaaCS disponibles pour votre entreprise ou vos clients.
 exl-id: bf0f54a9-fe86-4bfb-9fa6-03cf0fd5f404
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: '873'
+ht-degree: 92%
 
 ---
 
@@ -49,7 +49,7 @@ Chaque section résume ce qui est disponible et l’utilisation associée, le ca
 
 >[!TIP]
 >
->Reportez-vous à la [présentation d’Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour savoir comment gérer vos droits Adobe dans l’ensemble de votre organisation à partir d’Admin Console.
+>Voir [Présentation du Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) pour savoir comment gérer les droits de vos Adobes dans l’ensemble de votre organisation à partir de Admin Console.
 
 ## Foire aux questions {#faq}
 
@@ -85,7 +85,7 @@ Les requêtes de contenu présentent des écarts avec les outils de création de
 
 ### Comment en savoir plus sur le volume de ma requête de contenu ? {#current-request-volumes}
 
-Si vous souhaitez obtenir des informations supplémentaires sur le volume des requêtes de contenu affiché dans le tableau de bord des licences, votre équipe Adobe peut fournir un rapport qui indique les principaux facteurs de volume des requêtes de contenu. Contactez votre équipe Adobe ou l’assistance clientèle d’Adobe pour demander un rapport sur l’utilisation optimale.
+Si vous souhaitez obtenir des informations supplémentaires sur le volume des requêtes de contenu affiché dans le tableau de bord des licences, votre équipe Adobe peut fournir un rapport qui indique les principaux facteurs de volume des requêtes de contenu. Contactez votre équipe d’Adobe ou l’assistance clientèle pour demander un rapport d’utilisation optimal.
 
 ### Que se passe-t-il si j’utilise mon propre réseau CDN ? {#using-own-cdn}
 

@@ -2,10 +2,10 @@
 title: Ajout d’un enregistrement TXT
 description: Découvrez comment ajouter un enregistrement TXT pour ajouter un nom de domaine personnalisé à l’aide de Cloud Manager.
 exl-id: d441de29-af41-4d3e-9155-531af9702841
-source-git-commit: 491e710223c5878bfa81c4b0a57d18ec0ec29479
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '329'
+ht-degree: 96%
 
 ---
 

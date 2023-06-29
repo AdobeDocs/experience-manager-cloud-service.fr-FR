@@ -2,7 +2,7 @@
 title: Configuration des règles de traduction pour le contenu découplé
 description: Découvrez comment définir des règles de traduction pour identifier le contenu à traduire.
 exl-id: 878ffd5d-0f10-4990-9779-bdf55cd95fac
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 98%
@@ -27,7 +27,7 @@ Maintenant que votre connecteur est configuré, cet article vous guide tout au l
 >Cette étape du parcours de documentation n’est nécessaire que si vous n’utilisez pas l’indicateur **Traduisible** sur les fragments de contenu.
 >
 >* L’indicateur **Traduisible** crée automatiquement des règles de traduction pour vous et ne nécessite aucune intervention.
->* L’indicateur **Traduisible** n’est utilisé que si la configuration de la structure d’intégration de traduction est définie sur **[Activer les champs de modèle de contenu pour la traduction.](/help/sites-cloud/administering/translation/integration-framework.md)**
+>* L’indicateur **Traduisible** n’est utilisé que si la configuration de la structure d’intégration de traduction est définie sur **[Activer les champs de modèle de contenu pour la traduction](/help/sites-cloud/administering/translation/integration-framework.md)**.
 >* L’activation de cette option dans la configuration TIF remplace toute règle de traduction créée manuellement.|
 
 ## Objectif {#objective}

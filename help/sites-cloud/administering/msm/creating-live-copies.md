@@ -4,10 +4,10 @@ description: Découvrez comment créer et synchroniser des Live Copies pour uti
 feature: Multi Site Manager
 role: Admin
 exl-id: 53ed574d-e20d-4e73-aaa2-27168b9d05fe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 151ef672e847f793b37d220920081ac9fce94edf
 workflow-type: tm+mt
 source-wordcount: '4308'
-ht-degree: 81%
+ht-degree: 80%
 
 ---
 
@@ -45,7 +45,7 @@ Lorsque votre configuration de plan directeur est utilisée, vous pouvez l’ass
 
 Les configurations de plans directeurs sont considérées comme des données non modifiables et ne sont donc pas modifiables au moment de l’exécution. Toutes les modifications de configuration doivent donc être déployées via Git à l’aide du pipeline CI/CD.
 
-Vous trouverez plus d’informations dans l’article [Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service.](/help/release-notes/aem-cloud-changes.md)
+Vous trouverez plus d’informations dans l’article [Modifications notables apportées à Adobe Experience Manager (AEM) as a Cloud Service](/help/release-notes/aem-cloud-changes.md).
 
 Les étapes suivantes ne sont mises à la disposition d’un administrateur sur une instance de développement locale qu’à des fins de test et de développement. Ces options ne sont disponibles dans aucune instance cloud AEMaaCS.
 
@@ -164,7 +164,7 @@ Lorsque vous créez le site, saisissez des valeurs pour les propriétés suivant
 
 Pour créer une Live Copy d’un site à partir d’une configuration de plan directeur :
 
-1. Dans la console **Sites**, sélectionnez **Créer**, puis **Site** dans le sélecteur déroulant.
+1. Dans le **Sites** console, sélectionnez **Créer**, puis **Site** dans le sélecteur de liste déroulante.
 1. Sélectionnez la configuration de plan directeur à utiliser comme source de la Live Copy et cliquez sur **Suivant** :
 
    ![Création d’un site à partir d’un plan directeur](../assets/create-site-from-blueprint.png)
@@ -245,7 +245,7 @@ Déployez une page de plan directeur pour pousser les modifications de contenu v
 
    ![Définir l’heure de déploiement](../assets/rollout-now-later.png)
 
-Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [***Statut des tâches asynchrones**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [***État des tâches asynchrones** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Déploiement d’un plan directeur à partir du rail de référence {#roll-out-a-blueprint-from-the-reference-rail}
 
@@ -270,7 +270,7 @@ Les déploiements sont traités comme des tâches asynchrones et peuvent être v
 
 1. Après avoir défini ces détails, sélectionnez **Déployer** pour exécuter l’opération.
 
-Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [**Statut des tâches asynchrones**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [**État des tâches asynchrones** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 #### Déploiement d’un plan directeur de l’aperçu de la Live Copy {#roll-out-a-blueprint-from-the-live-copy-overview}
 
@@ -289,7 +289,7 @@ L’action [**Déployer** est également disponible dans l’aperçu de la Live 
 
    ![Définir l’heure de déploiement](../assets/rollout-now-later.png)
 
-Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [**Statut des tâches asynchrones**.](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)
+Les déploiements sont traités comme des tâches asynchrones et peuvent être vérifiés sur la page [**État des tâches asynchrones** page](/help/operations/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations).
 
 ### Synchronisation d’une Live Copy {#synchronizing-a-live-copy}
 
@@ -429,7 +429,7 @@ L’[action Reprendre est également disponible dans l’aperçu de la Live Cop
 
 ### Changement de la profondeur d’héritage (superficielle/profonde) {#changing-inheritance-depth-shallow-deep}
 
-Sur une Live Copy existante, vous pouvez changer la profondeur d’une page, à savoir indiquer si les pages enfants sont incluses.
+Sur une Live Copy existante, vous pouvez modifier la profondeur d’une page, c’est-à-dire si les pages enfants sont incluses.
 
 * Le passage à une Live Copy superficielle :
 
@@ -575,7 +575,7 @@ L’action [**Réinitialiser** est également disponible dans l’aperçu de la 
 
 Pour suivre les modifications que vous avez apportées, vous pouvez afficher la page de plan directeur dans la section **Références** et la comparer à sa page Live Copy :
 
-1. Dans la console **Sites**, [accédez à une page Live Copy ou de plan directeur et sélectionnez-la.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Dans la console **Sites**, [accédez à une page Live Copy ou de plan directeur et sélectionnez-la](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez le panneau **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** et, selon le contexte, sélectionnez l’une des options suivantes :
 
    * **Plan directeur**

@@ -2,9 +2,9 @@
 title: Utilisation des workflows
 description: Les workflows dans AEM permettent d’automatiser une série d’étapes exécutées sur une page ou une ressource.
 exl-id: ed157646-abb3-45c6-bafd-7889bd93fdf3
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '178'
 ht-degree: 43%
 
 ---

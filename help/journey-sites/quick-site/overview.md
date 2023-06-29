@@ -2,10 +2,10 @@
 title: Parcours de création rapide de site AEM
 description: Commencez ici votre parcours guidé à travers l’outil convivial de création rapide de site AEM, qui vous permet de rationaliser le développement front-end de votre site AEM et de personnaliser rapidement ce site sans aucune connaissance du back-end AEM.
 exl-id: b8218232-0298-4b16-9dab-fa59be592a24
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1035'
-ht-degree: 91%
+source-wordcount: '1034'
+ht-degree: 87%
 
 ---
 
@@ -15,7 +15,7 @@ Commencez ici votre parcours guidé à travers l’outil convivial de création 
 
 ## Présentation {#introduction}
 
-AEM Sites est une suite d’outils puissants pour la création et la gestion d’expériences numériques. Les auteurs de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il est diffusé par AEM à vos audiences sur l’ensemble des canaux.
+AEM Sites est une suite d’outils puissants pour la création et la gestion d’expériences digitales. Les auteurs de contenu peuvent facilement créer des expériences numériques à l’aide de l’éditeur de sites et organiser le contenu à l’aide de la console Sites, tout en étant en mesure de voir le contenu en direct tel qu’il est diffusé par AEM à vos audiences sur l’ensemble des canaux.
 
 L’outil de création rapide de site AEM permet aux non-développeurs de créer rapidement un site à partir de zéro à l’aide de modèles de sites. Une fois créé, l’outil de création rapide de site permet également une personnalisation rapide du thème et du style du site AEM (JavaScript, CSS et ressources statiques). Cela permet au développeur front-end, qui n’a besoin d’aucune connaissance d’AEM, de travailler séparément et parallèlement aux créateurs de contenu. L’administrateur d’AEM télécharge simplement le thème du site et le fournit au développeur front-end, qui le personnalise à l’aide de ses outils favoris, puis valide les modifications dans le référentiel de code AEM, qui est ensuite déployé.
 
@@ -65,7 +65,7 @@ Vous découvrirez de nombreux sujets dans ce parcours. Les articles suivants vou
 
 Vous êtes maintenant prêt à commencer votre parcours de création rapide de site Adobe.
 
-* Si vous êtes un administrateur AEM ou Cloud Manager, ou si vous jouez à la fois les rôles de développeur front-end et d’administrateur, ou encore si vous souhaitez simplement comprendre le processus de bout en bout dans AEM, veuillez commencer au début du parcours par [Comprendre Cloud Manager](cloud-manager.md) comme indiqué ci-dessous.
+* Si vous êtes un administrateur AEM ou Cloud Manager, si vous servez à la fois des rôles front-end de développeur et d’administrateur, ou si vous souhaitez simplement comprendre le processus de bout en bout dans AEM, commencez au début du parcours par [Présentation de Cloud Manager](cloud-manager.md) comme indiqué ci-dessous.
 * Si vous n’êtes responsable que du développement front-end et que vous interagissez avec les administrateurs AEM et Cloud Manager, vous pouvez passer directement à [Récupération des informations d’accès au référentiel Git](retrieve-access.md) pour accéder au référentiel Git d’AEM et commencer la personnalisation.
 * Si vous comprenez déjà qu’AEM Sites et Cloud Manager fonctionnent ensemble et que vous souhaitez commencer directement la configuration, vous pouvez [passer directement à la création d’un site à partir d’un modèle](create-site.md).
 

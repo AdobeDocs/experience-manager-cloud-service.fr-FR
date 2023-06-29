@@ -2,10 +2,10 @@
 title: Configuration IMS à utiliser lors de l’intégration à Adobe Target
 description: En savoir plus sur la configuration IMS à utiliser lors de l’intégration à Adobe Target
 exl-id: b5474b70-bedc-4cc9-ad47-89dcb2415e3a
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 92%
+source-wordcount: '855'
+ht-degree: 91%
 
 ---
 
@@ -43,7 +43,7 @@ La première étape de la configuration consiste à créer une configuration IMS
 1. Dans AEM, ouvrez le menu **Outils**.
 1. Dans la section **Sécurité**, sélectionnez **Configurations IMS d’Adobe**.
 1. Sélectionnez **Créer** pour ouvrir la **Configuration du compte technique Adobe IMS**.
-1. À l’aide de la liste déroulante sous **Configuration du cloud**, sélectionnez **Adobe Target**.
+1. Utilisation de la liste déroulante sous **Configuration du cloud**, sélectionnez **Adobe Target**.
 1. Activez **Création d’un certificat** et saisissez un nouvel alias.
 1. Confirmez avec **Créer un certificat**.
 
@@ -271,7 +271,7 @@ The configuration can now be referenced for a Cloud Service to use the Target St
 
 With [Adobe Experience Manager as a Cloud Service](/help/release-notes/release-notes-cloud/release-notes-current.md), the Client Code field had been added to the Target configuration window.
 
-When configuring the Tenant ID and Client Code fields, please be aware of that for most customers, the **Tenant ID** and the **Client Code** are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
+When configuring the Tenant ID and Client Code fields, be aware of that for most customers, the **Tenant ID** and the **Client Code** are the same. This means that both fields contain the same information and are identical. Make sure you enter the Tenant ID in both fields.
 
 >[!NOTE]
 >

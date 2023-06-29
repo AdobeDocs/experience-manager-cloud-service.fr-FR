@@ -2,10 +2,10 @@
 title: Phase de préparation dans Cloud Accelerated Manager
 description: Cette page présente un aperçu de la phase de préparation dans Cloud Acceleration Manager.
 exl-id: 2583985b-0358-433c-9d31-38e2c60dc3dc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 96%
+source-wordcount: '1049'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ La phase de préparation comprend :
 
 Suivez les étapes ci-dessous pour accéder à la phase de préparation :
 
-1. Cliquez sur la carte de votre projet pour ouvrir sa page d’entrée.
+1. Cliquez sur la carte de votre projet pour ouvrir sa page de destination.
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-landing1.png)
 
@@ -29,7 +29,7 @@ Suivez les étapes ci-dessous pour accéder à la phase de préparation :
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/readiness-1.png)
 
    >[!NOTE]
-   >Pour en savoir plus, voir la section Création et gestion d’un projet dans Cloud Acceleration Manager.
+   >Voir Création et gestion d’un projet dans Cloud Acceleration Manager pour en savoir plus.
 
 ## Utilisation de la carte d’analyse des bonnes pratiques {#best-practices-analysis}
 
@@ -62,7 +62,7 @@ Suivez les étapes ci-dessous pour utiliser la carte Analyse des bonnes pratique
 
    ![image](/help/journey-migration/cloud-acceleration-manager/assets/cam-bpareport.png)
 
-1. Consultez et explorez le tableau de bord d’analyse des bonnes pratiques dans CAM. Pour plus d’informations, reportez-vous à la section ci-dessous [Consultation du rapport d’analyse des bonnes pratiques](#analysis-report).
+1. Consultez et explorez le tableau de bord d’analyse des bonnes pratiques dans CAM. Voir [Rapport Analyse des bonnes pratiques](#analysis-report) pour plus d’informations.
 
    >[!NOTE]
    >Le chargement d’un nouveau rapport réinitialise toutes les évaluations.
@@ -158,7 +158,7 @@ Vous pouvez filtrer le rapport par critère d’importance, de sous-type ou de n
 ![image](/help/journey-migration/cloud-acceleration-manager/assets/report-overview3.png)
 
 >[!NOTE]
->Voir [Interprétation du rapport de l’analyseur de bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=fr) pour en savoir plus sur les catégories de résultats et les niveaux d’importance.
+>Voir [Interprétation du rapport Analyseur des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/best-practices-analyzer/using-best-practices-analyzer.html?lang=fr) pour en savoir plus sur les catégories de résultats et les niveaux d’importance.
 
 #### Évaluation des bonnes pratiques {#best-practices-assessment}
 

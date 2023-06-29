@@ -4,9 +4,9 @@ description: Découvrez comment les règles de traduction identifient le contenu
 feature: Language Copy
 role: Admin
 exl-id: 24cc6aa6-5b3c-462b-a10a-8b25277229dc
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1291'
 ht-degree: 86%
 
 ---
@@ -17,7 +17,7 @@ Les règles de traduction identifient le contenu à traduire pour les pages, les
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, veuillez vous référer à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous commencez à traduire du contenu, reportez-vous à la section [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 ## Fragments de contenu et règles de traduction {#content-fragments}
 

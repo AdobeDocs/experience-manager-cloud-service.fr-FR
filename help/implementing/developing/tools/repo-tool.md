@@ -2,10 +2,10 @@
 title: Outil AEM Repo
 description: L’outil AEM Repo est une solution simple pour transférer du contenu JCR entre votre système de fichiers local et le serveur AEM via une ligne de commande comparable à FTP.
 exl-id: fb887ba3-e40b-4ab1-b142-0748c6d9f18e
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '266'
-ht-degree: 98%
+source-wordcount: '261'
+ht-degree: 87%
 
 ---
 
@@ -23,13 +23,13 @@ Cet outil ne prend pas en charge les chemins de filtre multiples ou `filter.xml`
 
 >[!CAUTION]
 >
->Veuillez noter que l’outil Repo AEM écrase toujours le fichier ou le répertoire spécifié dans son intégralité.
+>L’outil AEM Repo remplace toujours l’intégralité du fichier ou du répertoire spécifié.
 
 ## Téléchargement et documentation {#download-and-documentation}
 
 L’outil [AEM Repo Tool est disponible sur GitHub via ce lien](https://github.com/Adobe-Marketing-Cloud/tools/tree/master/repo) et s’accompagne d’instructions d’installation et d’utilisation détaillées.
 
-Si vous souhaitez télécharger la source de l’outil Repo AEM, reportez-vous au projet GitHub ci-dessous.
+Si vous souhaitez télécharger la source de l’outil Repo AEM, consultez le projet GitHub lié ci-dessous.
 
 CODE SUR GITHUB
 

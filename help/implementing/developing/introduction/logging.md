@@ -2,10 +2,10 @@
 title: Connexion à AEM as a Cloud Service
 description: Découvrez comment utiliser la journalisation pour AEM as a Cloud Service pour configurer les paramètres globaux pour le service de journalisation central, des paramètres spécifiques pour les services individuels ou comment demander la journalisation des données.
 exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2376'
-ht-degree: 92%
+source-wordcount: '2375'
+ht-degree: 90%
 
 ---
 
@@ -52,7 +52,7 @@ Développement</td>
 DEBUG</td>
 <td>
 Décrit ce qui se passe dans l’application.<br>
-Lorsque la journalisation DEBUG est active, les instructions fournissant une image claire des activités survenues ainsi que les paramètres clés qui affectent le traitement sont consignés.</td>
+Lorsque la journalisation DEBUG est principale, les instructions fournissant une image claire des activités qui se produisent et des paramètres clés qui affectent le traitement sont consignés.</td>
 <td>
 <ul>
 <li> Développement local</li>
@@ -570,7 +570,7 @@ Les propriétés ci-dessus doivent être spécifiées pour chaque combinaison de
 
 Assurez-vous que la requête initiale comprend tous les environnements de développement qui doivent être activés, en plus des environnements d’évaluation/de production. Splunk doit disposer d’un certificat SSL et être accessible au public.
 
-Si de nouveaux environnements de développement créés après la requête initiale sont destinés à un transfert de Splunk, mais qu’ils ne sont pas activés, une requête supplémentaire doit être envoyée.
+Si des environnements de développement créés après la requête initiale sont destinés à un transfert Splunk, mais ne l’ont pas activé, une requête supplémentaire doit être effectuée.
 
 Notez également que si des environnements de développement ont été demandés, il est possible que d’autres environnements de développement qui ne figurent pas dans la requête ou même les environnements Sandbox aient activé le transfert de Splunk et en partagent un index. Les clients peuvent utiliser le champ `aem_env_id` pour distinguer ces environnements.
 

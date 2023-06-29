@@ -8,9 +8,9 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1117'
 ht-degree: 45%
 
 ---
@@ -28,7 +28,7 @@ L’intégration à AEM Commerce as a Cloud Service est un processus à deux é
 
 La première étape d’intégration est effectuée par Adobe. Pour plus d’informations sur la tarification et la mise en service, contactez votre représentant commercial.
 
-Une fois que vous avez reçu le module complémentaire CIF, il est appliqué à tous les programmes Cloud Manager existants. Si vous ne disposez pas d’un programme Cloud Manager, vous devez en créer un. Pour plus d’informations, reportez-vous à la section [Configuration du programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+Une fois que vous avez reçu le module complémentaire CIF, il est appliqué à tous les programmes Cloud Manager existants. Si vous ne disposez pas d’un programme Cloud Manager, vous devez en créer un. Pour plus d’informations, voir [Configuration du programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
 
 La deuxième étape s’effectue en libre-service pour chaque environnement AEM as a Cloud Service. Il existe d’autres configurations que vous devez effectuer après la mise en service initiale du module complémentaire CIF.
 

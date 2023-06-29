@@ -2,10 +2,10 @@
 title: Création de programmes Sandbox
 description: Découvrez comment utiliser Cloud Manager pour créer votre propre programme Sandbox à des fins de formation, de démonstration, de point de vente ou à d’autres fins hors production.
 exl-id: 10011392-3059-4bb0-88db-0af1d390742e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 59%
+source-wordcount: '445'
+ht-degree: 32%
 
 ---
 
@@ -17,11 +17,9 @@ Découvrez-en plus sur les types de programme dans le document [Présentation de
 
 ## Création d’un programme Sandbox {#create}
 
-Pour créer un programme Sandbox, procédez comme suit.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
-
-1. Dans la page de destination de Cloud Manager, cliquez sur **Ajouter le programme** dans le coin supérieur droit de l’écran.
+1. Dans la page d’entrée de Cloud Manager, près du coin supérieur droit de l’écran, cliquez sur **Ajout d’un programme**.
 
    ![Page de destination de Cloud Manager](assets/cloud-manager-my-programs.png)
 
@@ -41,15 +39,15 @@ Pour créer un programme Sandbox, procédez comme suit.
 
    ![Sélection de solutions et de modules complémentaires pour un environnement de test](assets/sandbox-solutions-add-ons.png)
 
-1. Une fois que vous avez sélectionné les solutions et modules complémentaires pour votre programme sandbox, appuyez sur cliquez sur . **Créer**.
+1. Une fois que vous avez sélectionné les solutions et modules complémentaires pour votre programme sandbox, cliquez sur **Créer**.
 
-Une nouvelle carte de programme sandbox s’affiche sur la page de destination avec un indicateur de statut au fur et à mesure que le processus de configuration progresse.
+Une nouvelle carte de programme sandbox s’affiche sur la page d’entrée avec un indicateur d’état au fur et à mesure que le processus de configuration progresse.
 
 ![Création d’un sandbox à partir de la page d’aperçu](assets/sandbox-setup.png)
 
 ## Accès aux environnements de test {#access}
 
-Vous pouvez afficher les détails de la configuration de votre sandbox et accéder à l’environnement (une fois disponible) en consultant la page d’aperçu du programme.
+Vous pouvez afficher les détails de la configuration de votre environnement de test et accéder à l’environnement (une fois disponible) en consultant la page d’aperçu du programme.
 
 1. Sur la page d’entrée de Cloud Manager, cliquez sur le bouton représentant des points de suspension du nouveau programme.
 
@@ -61,7 +59,7 @@ Vous pouvez afficher les détails de la configuration de votre sandbox et accéd
 
    >[!TIP]
    >
-   >Pour en savoir plus sur l’accès à votre référentiel git et sa gestion, reportez-vous au document [Accès à Git.](/help/implementing/cloud-manager/managing-code/accessing-repos.md)
+   >Pour en savoir plus sur l’accès et la gestion de votre référentiel git, voir [Accès à Git](/help/implementing/cloud-manager/managing-code/accessing-repos.md).
 
 1. Une fois l’environnement de développement créé, vous pouvez utiliser le lien **Accès à AEM** pour vous connecter à AEM.
 
@@ -71,6 +69,6 @@ Vous pouvez afficher les détails de la configuration de votre sandbox et accéd
 
    ![Déploiement d’une Sandbox](assets/create-program-setup-deploy.png)
 
-Si, à tout moment, vous devez passer à un autre programme ou revenir à la page d’aperçu pour créer un autre programme, cliquez sur le nom de votre programme dans le coin supérieur gauche de l’écran pour afficher l’option **Accéder à**.
+Si vous devez passer à un autre programme ou revenir à la page d’aperçu pour créer un autre programme, cliquez sur le nom de votre programme dans le coin supérieur gauche de l’écran pour afficher la variable **Accédez à** .
 
-![Accéder à ](assets/create-program-a1.png).
+![Accéder à ](assets/create-program-a1.png)

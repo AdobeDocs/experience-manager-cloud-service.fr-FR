@@ -2,10 +2,10 @@
 title: Prise en main d’AEM découplé as a Cloud Service
 description: Dans cette partie du parcours de développement découplé AEM, découvrez les conditions préalables relatives à AEM découplé.
 exl-id: 9661e17b-fa9f-4689-900c-412b068e942c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3087'
-ht-degree: 94%
+source-wordcount: '3084'
+ht-degree: 93%
 
 ---
 
@@ -85,7 +85,7 @@ Pour modifier votre contenu en mode découplé, AEM propose deux API robustes.
 * L’API GraphQL permet de créer des requêtes d’accès et de diffusion de fragments de contenu.
 * L’API REST Assets permet de créer et de modifier des fragments de contenu (et d’autres ressources).
 
-Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Pour plus d’informations, reportez-vous à la section [Ressources supplémentaires](#additional-resources) ci-dessous.
+Vous découvrirez ces API et comment les utiliser dans une partie ultérieure du parcours AEM découplé. Ou voir [ressources supplémentaires](#additional-resources) pour plus d’informations.
 
 ## Niveaux d’intégration en mode découplé {#integration-levels}
 
@@ -145,7 +145,7 @@ Pour la réussite d’un projet, il est important de définir clairement non seu
 
 Il est très important de définir clairement la portée du projet. La portée définit les critères d’acceptation et permet d’établir une définition de l’état « terminé ».
 
-La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM découplé ? » La réponse doit généralement être que vous disposez ou aurez à l’avenir une application d’expérience que vous avez créée avec vos propres outils de développement et non avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
+La première question que vous devez vous poser est la suivante : « Quel est l’objectif que je veux atteindre grâce à AEM découplé ? » En règle générale, la réponse doit être que vous disposez ou aurez à l’avenir une application d’expérience que vous avez créée avec vos propres outils de développement et non avec AEM. Cette application d’expérience peut être une application mobile, un site web ou toute autre application d’expérience destinée aux utilisateurs finaux. La finalité d’AEM découplé est d’alimenter votre application d’expérience en contenus créés, stockés et gérés dans AEM à l’aide d’API dernier cri. Celles-ci appellent AEM découplé pour récupérer du contenu, ou même du contenu intégralement CRUD, directement depuis votre application d’expérience. Si ce n’est pas ce que vous souhaitez faire, vous devrez probablement [revenir à la documentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) et déterminer la section la mieux adaptée à ce que vous souhaitez accomplir.
 
 ### Rôles et responsabilités {#roles-responsibilities}
 
@@ -190,7 +190,7 @@ Consultez la section des [ressources supplémentaires](#additional-resources) po
 La hiérarchie des dossiers peut répondre à deux préoccupations majeures concernant la gestion des contenus :
 
 * [Traduction](#translation) : AEM gère la traduction du contenu en conservant des copies du contenu dans des dossiers spécifiques pour les paramètres régionaux.
-* Organisation : les dossiers servent à définir une hiérarchie de contenu nécessaire à la prise en charge des besoins de la traduction, mais aussi à gérer logiquement les fragments de contenu.
+* Organisation : les dossiers servent à définir une hiérarchie de contenu nécessaire à la prise en charge des besoins de traduction et à gérer logiquement les fragments de contenu.
 
 AEM offre une structure de contenu flexible, car une hiérarchie peut être arbitrairement volumineuse. Toutefois, il est important de comprendre que toute modification de la structure des dossiers peut avoir des conséquences inattendues sur les requêtes existantes qui [dépendent du chemin d’accès au contenu.](#developer) Une hiérarchie bien définie, établie avec clarté à l’avance, peut donc être utile pour les auteurs de contenu.
 

@@ -3,7 +3,7 @@ title: Prise en charge des miniatures pour les vidéos dans Screens as a Cloud 
 description: Cette page décrit comment ajouter la prise en charge des miniatures pour les vidéos dans Screens as a Cloud Service.
 index: true
 exl-id: 7b15d7cc-f089-4008-9039-5f48343a0f20
-source-git-commit: f5af37bf39ecd5a964a8c94a731111c561c2934e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 30%
@@ -43,25 +43,25 @@ Suivez les étapes ci-dessous pour utiliser des miniatures dans les vidéos :
 1. Sélectionnez le canal. Dans la barre d’actions, cliquez sur **Modifier** pour ouvrir l’éditeur.
 
 
-   ![Bouton Modifier de la barre d’actions.](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png)
+   ![Bouton Modifier de la barre d’actions](/help/screens-cloud/using-core-product-features/assets/thumbnail-1.png).
 
 1. Ajoutez ou modifiez un composant vidéo existant, comme illustré dans le schéma ci-dessous.
 
-   ![Image mise en surbrillance d’une ressource vidéo.](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png)
+   ![Image mise en surbrillance d’une ressource vidéo](/help/screens-cloud/using-core-product-features/assets/thumbnail-2.png).
 
 1. Ajoutez ou modifiez un composant vidéo existant, comme illustré dans le schéma ci-dessous.
 
 1. Sélectionnez la vidéo et cliquez sur Configurer (*clé à molette*) pour ouvrir les propriétés de la vidéo.
 
-   ![Image de ressource vidéo sélectionnée avec une flèche pointant vers l’icône Configurer, représentée sous la forme d’une clé à molette. dans la barre d’outils.](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png)
+   ![Image de ressource vidéo sélectionnée avec une flèche pointant vers l’icône Configurer, représentée sous la forme d’une clé à molette. dans la barre d’outils](/help/screens-cloud/using-core-product-features/assets/thumbnail-3.png).
 
 1. Le **Vidéo** la boîte de dialogue s’ouvre, dans laquelle vous pouvez afficher les **Miniature** zone de dépôt.
 
-   ![Boîte de dialogue Vidéo présentant l’image de la ressource vidéo et la zone de dépôt Miniature.](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png)
+   ![Boîte de dialogue Vidéo présentant l’image de la ressource vidéo et la zone de dépôt Miniature](/help/screens-cloud/using-core-product-features/assets/thumbnail-4.png).
 
 1. Faites glisser et déposez une image du sélecteur de ressources vers le **Miniature** zone de dépôt et cliquez sur **Terminé**.
 
-   ![Sélecteur d’image de ressource affiché derrière la boîte de dialogue Vidéo avec la ressource d’image affichée dans la zone de dépôt Miniature.](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png)
+   ![Sélecteur d’image de ressource affiché derrière la boîte de dialogue Vidéo avec la ressource d’image affichée dans la zone de dépôt Miniature](/help/screens-cloud/using-core-product-features/assets/thumbnail-5.png).
 
 1. Cliquez sur **Aperçu**. 
 

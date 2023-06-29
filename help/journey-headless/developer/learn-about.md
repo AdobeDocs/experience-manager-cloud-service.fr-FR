@@ -2,10 +2,10 @@
 title: En savoir plus sur le développement CMS découplé
 description: Dans cette partie du parcours de développement découplé AEM, découvrez la technologie découplée et pourquoi l’utiliser.
 exl-id: 8c1fcaf7-1551-4133-b363-6f50af681661
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 95%
+source-wordcount: '1621'
+ht-degree: 93%
 
 ---
 
@@ -50,7 +50,7 @@ C’est particulièrement vrai pour le système de présentation, qui, dans les 
 
 Les limites de ce silo naturel peuvent apparaître lorsque vous intervenez davantage pour coordonner les modifications de tous les composants de la pile.
 
-Les utilisateurs attendent un engagement, quels que soient la plateforme ou le point de contact, ce qui nécessite une certaine agilité dans la diffusion de vos expériences. Cette approche multicanal est la référence des expériences numériques et une approche full stack peut, dans certaines circonstances, s’avérer rigide.
+Les utilisateurs attendent un engagement, quels que soient la plateforme ou le point de contact, ce qui nécessite une certaine agilité dans la diffusion de vos expériences. Cette approche multicanal est la référence des expériences digitales et une approche full stack peut, dans certaines circonstances, s’avérer rigide.
 
 ## La tête d’un système découplé {#the-head}
 
@@ -76,7 +76,7 @@ Ce découplage signifie que chaque service consommateur (frontal) peut créer so
 
 ## Les fondements technologiques {#technology}
 
-Une approche découplée permet de créer une pile technologique qui peut s’adapter facilement et rapidement aux besoins futurs en matière d’expérience numérique.
+Une approche découplée permet de créer une pile technologique qui peut s’adapter facilement et rapidement aux besoins futurs en matière d’expérience digitale.
 
 Dans le passé, les API pour CMS étaient généralement basées sur REST. L’architecture REST (Representational state transfer) fournit des ressources sous la forme de texte sans état. Ce qui permet de lire et de modifier les ressources moyennant un ensemble d’opérations prédéfini. L’architecture REST a permis une grande interopérabilité entre les services sur le web en assurant une représentation sans état du contenu.
 
@@ -86,21 +86,21 @@ La diffusion de contenu en mode découplé s’appuie souvent sur les API GraphQ
 
 Quelle que soit l’API choisie, en définissant un système sans tête basé sur des API courantes, vous pouvez utiliser le dernier navigateur et d’autres technologies web telles que les applications web progressives (PWA). Les API créent une interface standard facilement extensible et adaptable.
 
-En règle générale, le contenu est rendu côté client. Normalement, cela signifie qu’une personne appelle votre contenu sur un appareil mobile, que votre CMS le diffuse, puis que l’appareil mobile (le ou la client(e)) assure le rendu du contenu que vous avez fourni. Si l’appareil est vieux ou lent, votre expérience numérique sera également lente.
+En règle générale, le contenu est rendu côté client. Normalement, cela signifie qu’une personne appelle votre contenu sur un appareil mobile, que votre CMS le diffuse, puis que l’appareil mobile (le ou la client(e)) assure le rendu du contenu que vous avez fourni. Si l’appareil est vieux ou lent, votre expérience digitale sera également lente.
 
 Le découplage du contenu et de la présentation permet de mieux contrôler ces problèmes de performances côté client. Le rendu côté serveur (SSR) transfère la responsabilité du rendu du navigateur du client vers le serveur. En tant que fournisseur du contenu, vous pouvez ainsi offrir un niveau de performance garanti à votre audience, si nécessaire.
 
 ## Les défis organisationnels {#organization}
 
-Le mode découplé offre toute la flexibilité nécessaire pour proposer vos expériences numériques. Mais cette flexibilité peut également s’accompagner de ses propres défis.
+Le mode découplé offre toute la flexibilité nécessaire pour proposer vos expériences digitales. Mais cette flexibilité peut également s’accompagner de ses propres défis.
 
 Disposer de nombreuses chaînes différentes signifie qu’elles ont chacune leur propre système de présentation. Même s’ils consomment tous le même contenu par le biais d’API identiques, l’expérience peut varier en raison de présentations différentes. Il faut accorder toute l’attention et le soin nécessaires à assurer la cohérence de l’expérience client.
 
-Il est possible d’assurer des expériences homogènes, ce qui nécessite de les planifier. Pour cela, vous devez mettre en œuvre des systèmes de conception soignés, partager des bibliothèques de modèles et exploiter des composants de conception réutilisables ainsi que des structures (côté client) ouvertes et bien établies.
+En implémentant des systèmes de conception soignés, en partageant des bibliothèques de modèles et en exploitant des composants de conception réutilisables et des structures côté client établies et ouvertes, des expériences homogènes peuvent être assurées, mais cela doit être planifié.
 
 ## L’avenir est dans le mode découplé, et cela commence dès maintenant. {#future}
 
-Les expériences numériques continueront à définir la manière dont les marques interagissent avec les clients. Ce qui est passionnant dans la conception découplée, c’est la flexibilité qu’elle offre pour répondre à l’évolution des attentes des clients.
+Les expériences digitales continueront à définir la manière dont les marques interagissent avec les clients. Ce qui est passionnant dans la conception découplée, c’est la flexibilité qu’elle offre pour répondre à l’évolution des attentes des clients.
 
 Il est impossible de prédire l’avenir, mais le mode découplé apporte l’agilité nécessaire pour réagir face à ce que le futur nous apporte.
 

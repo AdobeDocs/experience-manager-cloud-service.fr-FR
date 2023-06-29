@@ -2,10 +2,10 @@
 title: Enregistrement, connexion et profil utilisateur
 description: En savoir plus sur l’enregistrement, la connexion, les données utilisateur et la synchronisation de groupe pour AEM as a Cloud Service
 exl-id: a991e710-a974-419f-8709-ad86c333dbf8
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 90%
+source-wordcount: '1167'
+ht-degree: 88%
 
 ---
 
@@ -100,7 +100,7 @@ Les informations de profil utilisateur peuvent être écrites et lues de deux ma
 
 Les données de l’utilisateur final peuvent être envoyées à des fournisseurs tiers, comme les systèmes de gestion de la relation client (CRM). Elles sont récupérées par le biais d’API lors de la connexion de l’utilisateur à AEM et conservées (ou actualisées) sur le nœud de profil de l’utilisateur AEM, puis utilisées le cas échéant par AEM.
 
-Il est possible d’accéder en temps réel à des services tiers pour récupérer des attributs de profil. Toutefois, il est important de s’assurer que cela n’ait pas d’impact significatif sur le traitement des demandes dans AEM.
+Il est possible d’accéder en temps réel aux services tiers pour récupérer les attributs de profil. Toutefois, il est important de s’assurer que cela n’affecte pas matériellement le traitement des demandes dans AEM.
 
 ## Autorisations (groupes d’utilisateurs fermés) {#permissions-closed-user-groups}
 

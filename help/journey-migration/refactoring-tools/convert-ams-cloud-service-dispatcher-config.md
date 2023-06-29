@@ -1,10 +1,10 @@
 ---
 title: Conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager as a Cloud Service
 description: Conversion d’une configuration AMS en configuration de Dispatcher Adobe Experience Manager as a Cloud Service
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 49%
+source-wordcount: '1278'
+ht-degree: 43%
 
 ---
 
@@ -22,7 +22,7 @@ Cette section fournit des instructions détaillées sur la conversion d’une co
 
 1. **Extraire l’archive et supprimer tout préfixe**
 
-   Extrayez l’archive dans un dossier et assurez-vous que les sous-dossiers immédiats commencent par conf, conf.d, conf.dispatcher.d et conf.modules.d. Si ce n&#39;est pas le cas, déplacez-les vers le haut de la hiérarchie.
+   Extrayez l’archive dans un dossier et assurez-vous que les sous-dossiers immédiats commencent par conf, conf.d, conf.dispatcher.d et conf.modules.d. Dans le cas contraire, déplacez-les vers le haut de la hiérarchie.
 
 1. **Supprimer les sous-dossiers et fichiers non utilisés**
 
@@ -59,7 +59,7 @@ supprimez-les ou mettez-les en commentaires. Les instructions de ces sections ne
 
    1. Supprimez tout fichier nommé ams_default.vars et pensez à supprimer les instructions Include dans les fichiers d’hôtes virtuels qui y font référence.
 
-   1. Si conf.d/variables contient un seul fichier, il doit être renommé custom.vars. De plus, veillez à adapter les instructions Include se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
+   1. Si conf.d/variables contient maintenant un seul fichier, il doit être renommé custom.vars. De plus, veillez à adapter les instructions Include se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
 
    1. Si le dossier contient toutefois plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être copié dans l’instruction Include qui y fait référence dans les fichiers d’hôtes virtuels.
 

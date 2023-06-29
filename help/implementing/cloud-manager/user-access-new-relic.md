@@ -2,10 +2,10 @@
 title: New Relic One
 description: Découvrez le service de surveillance des performances de l’application New Relic One (APM) pour AEM as a Cloud Service et comment y accéder.
 exl-id: 9fa0c5eb-415d-4e56-8136-203d59be927e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1595'
-ht-degree: 92%
+source-wordcount: '1589'
+ht-degree: 82%
 
 ---
 
@@ -30,7 +30,7 @@ Les fonctionnalités de surveillance des performances (APM) de l’application N
 
 * Un agent APM New Relic One instrumenté qui illustre les appels de méthode exacts avec les numéros de ligne, y compris les dépendances externes et les bases de données
 
-* Optimisation holistique des performances en combinant des mesures clés issues de la surveillance au niveau de l’infrastructure ainsi que de la surveillance de l’application (Adobe Experience Manager).
+* Optimisation holistique des performances en combinant les mesures clés de la surveillance au niveau de l’infrastructure et de la surveillance des applications (Adobe Experience Manager)
 
 * Exposition de JMX Mbeans d’AEM as a Cloud Service et des contrôles d’intégrité directement dans les mesures Insights de New Relic, ce qui permet une inspection approfondie des performances de la pile d’applications et des mesures d’intégrité.
 
@@ -84,7 +84,7 @@ Suivez ces étapes pour activer votre compte en tant qu’utilisateur New Relic
 
 1. New Relic vous enverra un e-mail contenant un lien pour confirmer le compte.
 
-Si vous ne recevez pas d’e-mail de confirmation de la part de New Relic, veuillez consulter [la section de dépannage.](#troubshooting)
+Si vous ne recevez pas de courrier électronique de confirmation de New Relic, reportez-vous à la section [section de dépannage .](#troubshooting)
 
 ## Accéder à New Relic One {#accessing-new-relic}
 
@@ -114,9 +114,9 @@ Pour accéder directement à New Relic One :
 
 Si vous êtes invité(e) à vérifier votre e-mail lors de la connexion à la New Relic One, cela signifie que celui-ci est associé à plusieurs comptes. Vous pourrez ainsi choisir le compte auquel accéder.
 
-Si vous ne vérifiez pas votre adresse e-mail, New Relic tentera de vous connecter avec le dernier enregistrement utilisateur créé associé à votre adresse e-mail. Pour éviter de vérifier votre e-mail à chaque connexion, cochez la case **Mémoriser mon adresse** dans l’écran de connexion.
+Si vous ne vérifiez pas votre adresse électronique, New Relic tente de vous connecter avec l’enregistrement d’utilisateur créé le plus récemment associé à votre adresse électronique. Pour éviter de vérifier votre e-mail à chaque connexion, cochez la case **Mémoriser mon adresse** dans l’écran de connexion.
 
-Pour obtenir de l’aide, veuillez ouvrir un ticket de support via le [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+Pour obtenir de l’aide, ouvrez un ticket d’assistance au moyen de l’option [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## Dépanner l’accès à New Relic One {#troubleshooting}
 
@@ -134,13 +134,13 @@ Si vous avez été ajouté en tant qu’utilisateur New Relic One, comme décr
 
 1. New Relic vous enverra un e-mail contenant un lien pour confirmer le compte.
 
-Si vous avez terminé le processus d’inscription et que vous ne parvenez pas à vous connecter à votre compte en raison de messages d’erreur relatifs à votre e-mail ou à votre mot de passe, veuillez enregistrer un ticket de support via [Admin Console.](https://adminconsole.adobe.com/)
+Si vous avez terminé le processus d’inscription et que vous ne parvenez pas à vous connecter à votre compte en raison de messages d’erreur relatifs au courrier électronique ou au mot de passe, enregistrez un ticket d’assistance au moyen de l’option [Admin Console.](https://adminconsole.adobe.com/)
 
-Si vous ne recevez pas d’e-mail de New Relic :
+Si vous ne recevez pas de courrier électronique de New Relic :
 
 * Vérifiez vos [filtres anti-spam](https://docs.newrelic.com/docs/accounts/accounts-billing/account-setup/create-your-new-relic-account/).
 * Le cas échéant, [ajoutez New Relic à votre liste d’e-mails autorisés](https://docs.newrelic.com/docs/accounts/accounts/account-maintenance/account-email-settings/#email-whitelist).
-* Si aucune suggestion ne vous aide, veuillez ajouter vos commentaires sur le ticket de support afin que l’équipe d’assistance d’Adobe vous apporte une aide supplémentaire.
+* Si aucune suggestion n’est utile, fournissez des commentaires sur le ticket d’assistance et l’équipe d’assistance Adobe peut vous aider.
 
 ## Restrictions {#limitations}
 
@@ -150,7 +150,7 @@ Les restrictions suivantes s’appliquent à l’ajout d’utilisateurs à New 
 * Les utilisateurs ajoutés à New Relic sont du type **Restricted**, voir [pour plus d’informations, consultez la documentation de New Relic .](https://docs.newrelic.com/docs/accounts/original-accounts-billing/original-users-roles/users-roles-original-user-model/#:~:text=In%20general%2C%20Admins%20take%20responsibility,Restricted%20Users%20can%20use%20them.&amp;text=One%20or%20more%20individuals%20who,change)
 * AEM as a Cloud Service ne propose que la solution New Relic One APM et ne prend pas en charge les intégrations d’alertes, de journalisation ou d’API.
 
-Pour obtenir de l’aide ou des conseils supplémentaires sur les offres de New Relic One pour votre programme AEM as a Cloud Service, veuillez ouvrir un ticket de support via le [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
+Pour obtenir de l’aide ou des conseils supplémentaires sur les offres New Relic One de votre programme as a Cloud Service AEM, ouvrez un ticket d’assistance via le [Portail d’assistance AEM](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
 
 ## Questions fréquentes sur New Relic One {#faqs}
 

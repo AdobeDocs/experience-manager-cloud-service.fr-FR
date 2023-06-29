@@ -4,10 +4,10 @@ description: Découvrez comment utiliser la console Fragments de contenu pour g�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2053'
-ht-degree: 81%
+source-wordcount: '2054'
+ht-degree: 76%
 
 ---
 
@@ -71,7 +71,7 @@ Pour créer un fragment de contenu :
 1. La boîte de dialogue **Nouveau fragment de contenu** s’ouvre. À partir d’ici, vous pouvez spécifier les éléments suivants :
 
    * **Emplacement** : saisie automatique avec l’emplacement actuel, mais vous pouvez sélectionner un autre emplacement si nécessaire.
-   * **Modèle de fragment de contenu** : sélectionnez le modèle à utiliser comme base du fragment dans la liste déroulante.
+   * **Modèle de fragment de contenu** : sélectionnez le modèle à utiliser comme base du fragment dans la liste déroulante.
    * **Titre**
    * **Nom** : auto-renseignée en fonction de la variable **Titre**, mais vous pouvez la modifier si nécessaire.
    * **Description**
@@ -101,7 +101,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
 >[!CAUTION]
 >
->Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). En cas de problème, veuillez contacter votre administrateur ou administratrice système.
+>Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contactez votre administrateur système si vous rencontrez des problèmes.
 
 1. Utilisez la console **Fragments de contenu** afin de naviguer jusqu’à l’emplacement de votre fragment de contenu.
 1. Ouvrez le fragment à modifier en le sélectionnant, puis en cliquant sur **Ouvrir** dans la barre d’outils.
@@ -186,7 +186,7 @@ L’éditeur possède différentes options :
 
   >[!CAUTION]
   >
-  >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). En cas de problème, veuillez contacter votre administrateur ou administratrice système.
+  >Pour modifier un fragment de contenu, vous devez disposer des [autorisations appropriées](/help/implementing/developing/extending/content-fragments-customizing.md#asset-permissions). Contactez votre administrateur système si vous rencontrez des problèmes.
 
   >[!NOTE]
   >
@@ -196,11 +196,11 @@ L’éditeur possède différentes options :
   >
   >En plus de simplement enregistrer vos modifications, ces actions mettent également à jour les références éventuelles et s’assurent que le Dispatcher est nettoyé si nécessaire. Le traitement de ces modifications peut prendre du temps. Cela peut avoir un impact sur les performances d’un système volumineux/complexe/lourdement chargé.
   >
-  >Prenez cela en compte lorsque vous exécutez **Enregistrer et fermer** puis rouvrez aussitôt l’éditeur de fragments afin d’apporter d’autres modifications et de les enregistrer.
+  >Gardez ce temps de processus à l’esprit lorsque vous utilisez **Enregistrer et fermer**, puis renseignez rapidement l’éditeur de fragments pour effectuer et enregistrer d’autres modifications.
 
 * **Fermer**
 
-  Quittera l’éditeur sans enregistrer les dernières modifications (c’est-à-dire effectuées depuis le dernier **Enregistrer**).
+  Quitte l’éditeur sans enregistrer les dernières modifications (c’est-à-dire depuis la dernière **Enregistrer**).
 
 Lorsque vous modifiez votre fragment de contenu, AEM crée automatiquement des versions pour que le contenu précédent puisse être restauré si vous annulez les modifications (en cliquant sur **Fermer** sans enregistrer) :
 
@@ -231,7 +231,7 @@ Une fois que vous avez créé le contenu maître, vous pouvez créer et gérer d
 
 ## Association de contenu au fragment {#associating-content-with-your-fragment}
 
-Vous pouvez également [associer du contenu](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) à un fragment. Cela fournit une connexion afin que les ressources (les images, par exemple) puissent (éventuellement) être utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
+Vous pouvez également [associer du contenu](/help/sites-cloud/administering/content-fragments/content-fragments-assoc-content.md) à un fragment. Cela fournit une connexion de sorte que les ressources (c’est-à-dire les images) puissent être (éventuellement) utilisées avec le fragment lorsqu’il est ajouté à une page de contenu.
 
 ## Affichage et modification des métadonnées (propriétés) du fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 

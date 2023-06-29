@@ -2,10 +2,10 @@
 title: Plug-in Maven Content Package d’Adobe
 description: Utilisation du plug-in Maven Content Package pour déployer des applications AEM
 exl-id: d631d6df-7507-4752-862b-9094af9759a0
-source-git-commit: a5eef46835e234bb47451693cf5fdcda66c5b26f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1842'
-ht-degree: 95%
+source-wordcount: '1838'
+ht-degree: 92%
 
 ---
 
@@ -35,7 +35,7 @@ AEM as a Cloud Service adhère aux bonnes pratiques les plus récentes en matiè
 
 >[!TIP]
 >
->Pour plus d’informations, consultez l’article [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans les documentations AEM as a Cloud Service et [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Tous deux sont entièrement pris en charge pour AEM 6.5.
+>Pour plus d’informations, reportez-vous à la section [AEM structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) de la documentation as a Cloud Service AEM et de la [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) documentation. Tous deux sont entièrement pris en charge pour AEM 6.5.
 
 ## Obtention du plug-in Maven Content Package {#obtaining-the-content-package-maven-plugin}
 
@@ -238,7 +238,7 @@ Le code POM suivant ajoute au package les fichiers du dossier `META-INF` de la s
 ```xml
 <build>
     <resources>
-        <!-- vault META-INF resources (thumbnail etc.) -->
+        <!-- vault META-INF resources (thumbnail and so on) -->
         <resource>
             <directory>${basedir}/src/main/content/META-INF</directory>
             <targetPath>../vault-work/META-INF</targetPath>
@@ -267,4 +267,4 @@ Le dernier archétype de projet AEM met en œuvre la structure de package des bo
 
 >[!TIP]
 >
->Pour plus d’informations, consultez l’article [Structure de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) dans les documentations AEM as a Cloud Service et [Archétype de projet AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr). Tous deux sont entièrement pris en charge pour AEM 6.5.
+>Pour plus d’informations, reportez-vous à la section [AEM structure de projet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=fr) de la documentation as a Cloud Service AEM et de la [AEM Archétype de projet](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) documentation. Tous deux sont entièrement pris en charge pour AEM 6.5.

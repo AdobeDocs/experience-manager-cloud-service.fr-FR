@@ -4,9 +4,9 @@ description: Découvrez comment créer et gérer des projets de traduction autom
 feature: Language Copy
 role: Admin
 exl-id: dc2f3958-72b5-4ae3-a224-93d8b258bc80
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4085'
+source-wordcount: '4078'
 ht-degree: 89%
 
 ---
@@ -17,7 +17,7 @@ Les projets de traduction permettent de gérer la traduction du contenu d’AEM.
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, veuillez vous référer à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
+>Si vous commencez à traduire du contenu, reportez-vous à la section [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 Lorsque des ressources sont ajoutées à un projet de traduction, une tâche de traduction est créée pour ces ressources. Les tâches comportent les commandes et les informations sur le statut utilisées pour gérer les workflows de traduction humaine et automatique exécutés sur les ressources.
 
@@ -196,7 +196,7 @@ Les mises à jour de la mémoire de traduction peuvent être interceptées et en
 
 Une propriété peut être sélectionnée dans la vue Liste de la console Sites. Cette propriété indique si une page a été traduite, si elle est en cours de traduction ou si elle n’a pas encore été traduite.
 
-1. Dans la console Sites, basculez vers la vue [Liste.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Dans la console Sites, basculez vers la vue [Liste](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Appuyez ou cliquez sur **Afficher les paramètres** dans la liste déroulante d’affichage.
 1. Dans la boîte de dialogue, vérifiez la propriété **Traduit** et appuyez ou cliquez sur **Mise à jour**.
 
@@ -210,7 +210,7 @@ La console Projets permet d’accéder à de nombreuses tâches de traduction et
 
 ### Présentation de la console Projets
 
-Les projets de traduction réalisés dans AEM utilisent la console [Projets AEM standard.](/help/sites-cloud/authoring/projects/overview.md) Si vous n’êtes pas familiarisé avec les projets AEM, consultez cette documentation.
+Les projets de traduction réalisés dans AEM utilisent la console [Projets AEM standard](/help/sites-cloud/authoring/projects/overview.md). Si vous ne connaissez pas AEM projets, consultez cette documentation.
 
 Comme tout autre projet, un projet de traduction est constitué de mosaïques contenant un aperçu des tâches du projet.
 
@@ -277,7 +277,7 @@ Vous pouvez ajouter des pages, des ressources ou des balises à la tâche de tra
 
 ### Ajout de balises à une tâche de traduction {#adding-tags-to-a-translation-job}
 
-Vous pouvez ajouter des balises à un projet de traduction manière identique à [l’ajout de ressources et de pages à un projet.](#adding-pages-assets-to-a-translation-job) Il suffit de sélectionner **Balises** dans le menu **Ajouter**, puis de suivre les mêmes étapes.
+Vous pouvez ajouter des balises à un projet de traduction manière identique à [l’ajout de ressources et de pages à un projet](#adding-pages-assets-to-a-translation-job). Il suffit de sélectionner **Balises** dans le menu **Ajouter**, puis de suivre les mêmes étapes.
 
 ### Affichage des détails d’un projet de traduction {#seeing-translation-project-details}
 
@@ -303,7 +303,7 @@ Lors de la création d’un projet à l’aide du rail de références d’une p
 
 ### Suivi du statut d’une tâche de traduction {#monitoring-the-status-of-a-translation-job}
 
-La mosaïque Tâche de traduction d’un projet de traduction fournit le statut d’une tâche de traduction, ainsi que le nombre de pages et les ressources de la tâche.
+La mosaïque de tâche de traduction d’un projet de traduction indique l’état d’une tâche de traduction, ainsi que le nombre de pages et de ressources de la tâche.
 
 ![Tâche de traduction](../assets/translation-job.png)
 
@@ -344,7 +344,7 @@ Spécifiez la date à laquelle le fournisseur de traduction doit renvoyer les fi
 
 Définissez la portée de la tâche de traduction afin que le prestataire de services de traduction vous fournisse une estimation du coût de la traduction. Lorsque vous définissez la portée d’une tâche, les fichiers source sont envoyés au fournisseur de traduction, qui compare le texte à son pool de traductions stockées (mémoire de traduction). En règle générale, la portée est le nombre de mots à traduire.
 
-Pour plus d’informations sur les résultats de l’application de portée, contactez votre fournisseur de traduction.
+Pour obtenir plus d’informations sur les résultats de l’application de portée, contactez votre fournisseur de traduction.
 
 >[!NOTE]
 >
@@ -437,7 +437,7 @@ Lorsque le contenu est traduit pour une copie de langue existante, révisez les 
 Pour comparer des copies de langue au gabarit de langue :
 
 1. Dans la console Sites, accédez à la copie de langue à comparer.
-1. Ouvrez le [rail Références.](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)
+1. Ouvrez le [rail Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references).
 1. Sous le titre **Copies**, sélectionnez **Copies de langue**.
 1. Sélectionnez votre copie de langue. Ensuite, vous pouvez cliquer sur **Comparer au gabarit** ou **Comparer au précédent**, le cas échéant.
 

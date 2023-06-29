@@ -2,10 +2,10 @@
 title: Modification du contenu de la page
 description: Une fois votre page créée, vous pouvez modifier le contenu pour effectuer les mises à jour dont vous avez besoin.
 exl-id: 8af0f621-14e8-4605-a51a-a3be21f19092
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3002'
-ht-degree: 60%
+source-wordcount: '2990'
+ht-degree: 55%
 
 ---
 
@@ -291,7 +291,7 @@ Les options de modification exactes dépendent du composant. Pour certains compo
 
 * Composant d’image - Plein écran
 
-  [Le passage en mode Plein écran](#edit-content-full-screen-mode) pour le composant d’image permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
+  [Passage en mode plein écran](#edit-content-full-screen-mode) pour le composant d’image , il permet de libérer de l’espace pour modifier l’image et d’afficher des options de modification supplémentaires, telles que **Lancer une Map** et **Réinitialiser le zoom**. En outre, le mode plein écran permet de sélectionner les paramètres prédéfinis de recadrage.
 
   ![Mode Plein écran du composant d’image](/help/sites-cloud/authoring/assets/editing-image-component-full-screen.png)
 
@@ -358,7 +358,7 @@ Au lieu de basculer à plusieurs reprises entre les modes Modifier et de [Dispos
 
 >[!TIP]
 >
->L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis cliquez sur un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné, tandis que les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
+>L’action de mise en page est limitée au composant sélectionné. Par exemple, si vous modifiez la mise en page d’un composant, puis cliquez sur un autre composant, la barre d’outils d’édition standard (et non la barre d’outils de mise en page) s’affiche pour le nouveau composant sélectionné, les poignées de redimensionnement et la barre d’outils de l’émulateur disparaissent.
 >
 >Si vous devez modifier la disposition globale de la page et affecter ainsi plusieurs composants, basculez vers le [mode Disposition](/help/sites-cloud/authoring/features/responsive-layout.md).
 
@@ -469,7 +469,7 @@ Une fois la page verrouillée, les informations d’affichage de la console sont
 >
 >Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur ou de l’utilisatrice qui les a verrouillées.
 >
->Si l’utilisateur ou l’utilisatrice qui a verrouillé la page n’est pas disponible pour la déverrouiller, contactez le service clientèle afin d’évaluer les options de suppression du verrouillage.
+>Si l’utilisateur qui a verrouillé la page n’est pas disponible pour déverrouiller la page, contactez le service clientèle pour évaluer les options permettant de supprimer le verrouillage.
 
 ## Déverrouillage d’une page {#unlocking-a-page}
 
@@ -485,7 +485,7 @@ Dans le menu Informations sur la page, **Déverrouiller** est répertorié comme
 >
 >Les pages ne peuvent pas être déverrouillées en empruntant l’identité de l’utilisateur ou de l’utilisatrice qui les a verrouillées.
 >
->Si l’utilisateur ou l’utilisatrice qui a verrouillé la page n’est pas disponible pour la déverrouiller, contactez le service clientèle afin d’évaluer les options de suppression du verrouillage.
+>Si l’utilisateur qui a verrouillé la page n’est pas disponible pour déverrouiller la page, contactez le service clientèle pour évaluer les options permettant de supprimer le verrouillage.
 
 <!--
 >[!CAUTION]
@@ -516,7 +516,7 @@ Les icônes suivantes permettent d’annuler ou de rétablir une opération. Cel
 
 ## Annulation et rétablissement des modifications de page : la théorie {#undoing-and-redoing-page-edits-the-theory}
 
-AEM stocke un historique des actions que vous réalisez, ainsi que la séquence selon laquelle vous les réalisez, de sorte que vous puissiez annuler plusieurs actions dans l’ordre dans lequel vous les avez réalisées. Vous pouvez également les rétablir pour appliquer à nouveau une ou plusieurs de ces actions.
+AEM stocke un historique des actions que vous réalisez, ainsi que la séquence selon laquelle vous les réalisez, de sorte que vous puissiez annuler plusieurs actions dans l’ordre dans lequel vous les avez exécutées, puis les rétablir pour appliquer à nouveau une ou plusieurs de ces actions, le cas échéant.
 
 Si un élément de la page de contenu est sélectionné (un composant de texte, par exemple), les commandes Annuler et Rétablir s’appliquent à celui-ci.
 

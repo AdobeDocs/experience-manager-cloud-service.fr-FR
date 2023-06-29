@@ -4,7 +4,7 @@ description: Découvrez comment les thèmes de site AEM peuvent être utilisés 
 feature: Administering
 role: Admin
 exl-id: 53d4afb3-d091-47a1-ba12-5bcec99f46b9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '353'
 ht-degree: 94%
@@ -23,7 +23,7 @@ Les sites créés avec des modèles de site AEM permettent de télécharger, de 
 
 >[!NOTE]
 >
->Les thèmes de site AEM ne doivent pas être confondus avec les modèles de site [AEM.](site-templates.md) Les thèmes de site AEM contiennent uniquement les informations de style d’un site AEM. AEM modèles de site définissent la structure du site et le contenu initial, et contiennent un thème de site AEM pour permettre [création rapide de site.](create-site.md)
+>Les thèmes de site AEM ne doivent pas être confondus avec les modèles de site [AEM](site-templates.md). Les thèmes de site AEM contiennent uniquement les informations de style d’un site AEM. AEM modèles de site définissent la structure du site et le contenu initial, et contiennent un thème de site AEM pour permettre [création rapide de site](create-site.md).
 
 ## Utilisation des thèmes de site {#using-themes}
 
@@ -34,7 +34,7 @@ Les thèmes de site sont utilisés de deux manières différentes :
 
 >[!TIP]
 >
->Vous trouverez une description de bout en bout du processus de création d’un site à partir d’un modèle et de personnalisation de son thème dans le [Parcours de création rapide de site.](/help/journey-sites/quick-site/overview.md)
+>Vous trouverez une description de bout en bout du processus de création d’un site à partir d’un modèle et de personnalisation de son thème dans le [Parcours de création rapide de site](/help/journey-sites/quick-site/overview.md).
 
 ## Structure des thèmes de site {#structure}
 
@@ -53,4 +53,4 @@ Adobe fournit un thème de référence des bonnes pratiques que vous pouvez util
 
 Adobe fournit un Créateur de thèmes de site AEM sous la forme d’un ensemble de scripts permettant de créer des thèmes de site.
 
-[Le Créateur de thèmes de site AEM est disponible avec la documentation d’utilisation sur GitHub.](https://github.com/adobe/aem-site-theme-builder) Une expérience de développement front-end est requise pour personnaliser le thème.
+[Le Créateur de thèmes de site AEM est disponible avec la documentation d’utilisation sur GitHub](https://github.com/adobe/aem-site-theme-builder). Une expérience de développement front-end est requise pour personnaliser le thème.

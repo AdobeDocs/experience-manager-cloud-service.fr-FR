@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 91%
+source-wordcount: '1144'
+ht-degree: 84%
 
 ---
 
@@ -115,7 +115,7 @@ Il n’est pas nécessaire de cliquer sur le lien du message d’erreur pour met
 
 ### Champs supprimés du fichier XDP {#deleted-fields-in-xdp-file}
 
-Si un champ qui a été copié dans un formulaire adaptatif est supprimé d’un fichier XDP, un message d’erreur s’affiche en mode création indiquant que le champ n’existe pas dans le fichier XDP. Dans ce cas, supprimez manuellement le champ du formulaire adaptatif ou effacez la propriété `bindRef` dans la boîte de dialogue Composant.
+Si un champ qui a été copié antérieurement dans un formulaire adaptatif est supprimé d’un fichier XDP, un message d’erreur s’affiche en mode création pour indiquer que le champ n’existe pas dans le fichier XDP. Dans ce cas, supprimez manuellement le champ du formulaire adaptatif ou effacez la propriété `bindRef` dans la boîte de dialogue Composant.
 
 Les étapes suivantes illustrent ce flux d’utilisation des ressources dans l’exemple utilisé dans cet article :
 
@@ -123,7 +123,7 @@ Les étapes suivantes illustrent ce flux d’utilisation des ressources dans l�
 1. Chargez le fichier `sample-form.xdp` dans l’interface utilisateur [!DNL AEM Forms].
 1. Ouvrez le formulaire adaptatif `sample-xfa-af` en vue de sa création. Le message d’erreur suivant s’affiche : Le schéma/le modèle de formulaire du formulaire adaptatif a été mis à jour. `Click Here` pour le baser sur la nouvelle version.
 
-1. Cliquez sur le lien (intitulé « `Click Here` ») du message. Un message d’erreur s’affiche indiquant que le champ n’existe plus dans le fichier XDP.
+1. Cliquez sur le lien (intitulé « `Click Here` ») du message. Un message d’erreur s’affiche, indiquant que le champ n’existe plus dans le fichier XDP.
 
 ![Erreur apparaissant lorsque vous supprimez un élément dans le fichier XDP](assets/no-element-xdp.png)
 
@@ -133,7 +133,7 @@ Le champ qui a été supprimé est également signalé par une icône pour indiq
 
 >[!NOTE]
 >
->Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` non valide dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section Non Lié du fichier XML de sortie.
+>Les champs du formulaire adaptatif ayant une liaison incorrecte (une valeur `bindRef` non valide dans la boîte de dialogue Modifier) sont également considérés comme des champs supprimés. Si l’auteur ne corrige pas ces erreurs et publie le formulaire adaptatif, le champ est traité comme un champ de formulaire adaptatif non lié normal et est inclus dans la section unbinded du fichier XML de sortie.
 
 ## Téléchargements {#downloads}
 

@@ -2,7 +2,7 @@
 title: Utilisation des workflows de projet
 description: Divers workflows de projet sont disponibles prêts à l’emploi.
 exl-id: a5c9a6df-7def-43f3-b41b-524a4f4211e9
-source-git-commit: 89972691dadb9573160ba16a220c5b7cb3ae9742
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 70%
@@ -15,20 +15,20 @@ Les workflows de projet disponibles et prêts à l’emploi sont les suivants :
 
 * **Workflow d’approbation de projet** : Ce workflow vous permet d’attribuer le contenu à un utilisateur, de le passer en revue, puis de l’approuver.
 * **Demander le lancement** : ce workflow demande un lancement.
-* **Demander la page d’entrée** : ce workflow demande une page d’entrée.
+* **Demander la page de destination** : ce workflow demande une page de destination.
 * **Demander l’adresse électronique** : ce workflow demande une adresse électronique.
 * **Gestion des actifs numériques (DAM) – Créer et traduire la copie et Gestion des actifs numériques (DAM) – Créer une copie de langue** : crée des fichiers binaires, des métadonnées et des balises traduits pour les ressources et les dossiers.
 
 Selon le modèle de projet que vous sélectionnez, certains workflows sont disponibles :
 
-|  | **Projet simple** | **Projet de traduction** |
+|   | **Projet simple** | **Projet de traduction** |
 |---|:-:|:-:|
 | Workflow d’approbation de projet | x |  |
 | Demander le lancement | x |  |
-| Demander la page d’entrée | x |  |
-| Demander une adresse | x |  |
+| Demander la page de destination | x |  |
+| Demander une adresse | x | |
 | DAM Créer copie de langue&amp;ast; |  | x |
-| DAM Créer et traduire copie de langue&amp;ast; |  | x |
+| DAM Créer et traduire copie de langue&amp;ast; |   | x |
 
 >[!NOTE]
 >

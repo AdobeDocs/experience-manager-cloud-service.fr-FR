@@ -2,10 +2,10 @@
 title: Publication de pages
 description: Publication et dépublication de pages à l’aide d’AEM
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1804'
-ht-degree: 77%
+source-wordcount: '1802'
+ht-degree: 72%
 
 ---
 
@@ -81,7 +81,7 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 
 >[!NOTE]
 >
->Une publication à partir de l’éditeur est dite superficielle ; en d’autres termes, seules la ou les pages sélectionnées sont publiées (les éventuelles pages enfants ne le sont pas).
+>La publication à partir de l’éditeur est une publication superficielle, c’est-à-dire que seule la ou les pages sélectionnées sont publiées et que les pages enfants ne le sont pas.
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ Pour publier une page avec publication rapide :
 
 #### Gérer la publication {#manage-publication}
 
-La méthode **Gérer la publication** propose plus d’options que **Publication rapide**, dont la possibilité d’inclure des pages enfants, de personnaliser les références ou encore de lancer n’importe quel workflow applicable. Elle offre également la possibilité de publier la page à une date ultérieure.
+**Gérer la publication** offre plus d’options que **Publication rapide**, permettant l’inclusion de pages enfants, la personnalisation des références et le démarrage de tous les workflows applicables, et offrant la possibilité de publier à une date ultérieure.
 
 Pour publier ou dépublier une page à l’aide de l’option Gérer la publication :
 
@@ -203,7 +203,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    >[!NOTE]
    >
-   >Le **Workflows** s’affiche en fonction des droits dont dispose ou non votre utilisateur. Pour plus d’informations, reportez-vous à la remarque précédente sur cette page concernant les privilèges de publication, ainsi qu’aux sections Gestion de l’accès aux workflows et [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md).
+   >Le **Workflows** s’affiche en fonction des droits dont dispose ou non votre utilisateur. Consultez la remarque précédente sur cette page concernant les privilèges de publication et la gestion de l’accès aux workflows et [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md) pour plus d’informations.
 
    Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
 

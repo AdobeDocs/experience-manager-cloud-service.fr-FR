@@ -3,10 +3,10 @@ title: Notes de mise à jour pour les outils de migration dans AEM as a Cloud
 description: Notes de mise à jour pour les outils de migration dans AEM as a Cloud Service version 2022.7.0
 feature: Release Information
 exl-id: bc8f1a80-867e-423a-9c03-4a53b1ebc57c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 95%
+source-wordcount: '428'
+ht-degree: 93%
 
 ---
 
@@ -59,5 +59,5 @@ La date de publication de Cloud Acceleration Manager est le 15 juillet 2022.
 
 ### Nouveautés {#what-is-new-cam}
 
-* Cloud Acceleration Manager permet désormais aux utilisateurs de récupérer manuellement le jeton de migration pour pouvoir démarrer une ingestion en cas d’échec de récupération automatique. La récupération automatique peut échouer si les clients ont configuré une liste autorisée d’adresses IP qui bloque CAM ou si un utilisateur non administrateur tente de démarrer une ingestion. Consultez la section [Dépannage](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) pour plus d’informations.
+* Cloud Acceleration Manager permet désormais aux utilisateurs de récupérer manuellement le jeton de migration pour pouvoir démarrer une ingestion en cas d’échec de récupération automatique. La récupération automatique peut échouer si les clients ont configuré une liste autorisée d’adresses IP qui bloque CAM ou si un utilisateur non administrateur tente de démarrer une ingestion. Voir [Dépannage](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#troubleshooting) pour plus d’informations.
 * Les grands tableaux de la page Complexité de la migration sont désormais réductibles pour faciliter leur utilisation.

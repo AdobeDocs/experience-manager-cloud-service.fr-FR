@@ -2,10 +2,10 @@
 title: Prise en charge IMS d’Adobe Experience Manager as a Cloud Service
 description: Prise en charge du système de gestion des images pour Adobe Experience Manager as a Cloud Service
 exl-id: fb563dbd-a761-4d83-9da1-58f8e462b383
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1997'
-ht-degree: 40%
+source-wordcount: '1993'
+ht-degree: 39%
 
 ---
 
@@ -106,7 +106,7 @@ Vous trouverez plus d’informations sur les nouvelles fonctionnalités de group
 
 **Documentation de synchronisation des utilisateurs**
 
-Pour plus d’informations, consultez la [documentation de l’outil UST](https://adobe-apiplatform.github.io/user-sync.py/en/).
+Voir [Documentation de l’outil UST](https://adobe-apiplatform.github.io/user-sync.py/en/) pour plus d’informations.
 
 L’outil de synchronisation des utilisateurs doit s’enregistrer en tant qu’UMAPI client Adobe Developer en suivant la procédure [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 
@@ -214,10 +214,10 @@ Comme illustré ci-dessous, le groupe **AEM-GRP_008** hérite des autorisations 
 
 Pour pouvoir accéder à Cloud Manager ou aux environnements sur AEM as a Cloud Service, vous devez être affecté aux profils du produit Cloud Manager.
 
-Reportez-vous à Définitions de rôle pour en savoir plus sur les rôles des utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques dans Cloud Manager.
+Voir Définitions de rôle pour en savoir plus sur les rôles des utilisateurs qui régissent la disponibilité de fonctionnalités spécifiques dans Cloud Manager.
 
 >[!NOTE]
->Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Pour en savoir plus sur chacun des rôles dotés d’autorisations spécifiques, de tâches préconfigurées ou d’autorisations associées à chaque rôle, reportez-vous à la section [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
+>Cloud Manager dispose de rôles préconfigurés avec les autorisations appropriées. Pour en savoir plus sur chacun des rôles dotés d’autorisations spécifiques, de tâches préconfigurées ou d’autorisations associées à chaque rôle, voir [Autorisations basées sur les rôles](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/requirements/role-based-permissions.html?lang=en).
 
 **Procédure d’ajout d’un utilisateur**
 

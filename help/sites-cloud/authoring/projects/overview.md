@@ -2,10 +2,10 @@
 title: Projets
 description: Les projets vous permettent de regrouper des ressources dans une seule entité dont l’environnement commun et partagé facilite la gestion de vos projets.
 exl-id: c5f3331e-637f-4816-be83-faf2df59bd5f
-source-git-commit: 8ea043b4b6424d6922c41c143ca74fd25ac60cf8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1259'
-ht-degree: 76%
+source-wordcount: '1255'
+ht-degree: 74%
 
 ---
 
@@ -53,7 +53,7 @@ Vous pouvez associer les mosaïques suivantes à votre projet. Chacune d’elles
 * Liens
 * Informations sur le projet
 * Équipe
-* Pages d’entrée
+* Pages de destination
 * E-mails
 * Workflows
 * Lancements
@@ -95,7 +95,7 @@ La mosaïque Liens permet d’associer des liens externes à votre projet.
 
 ![Liens](/help/sites-cloud/authoring/assets/project-links.png)
 
-Vous pouvez donner au lien un nom facile à reconnaître et changer de miniature.
+Vous pouvez nommer le lien avec un nom facile à reconnaître et modifier la miniature.
 
 ![Ajout d’un lien](/help/sites-cloud/authoring/assets/projects-add-link.png)
 
@@ -105,7 +105,7 @@ La mosaïque Informations sur le projet fournit des informations générales sur
 
 ![Informations sur le projet](/help/sites-cloud/authoring/assets/project-info.png)
 
-Des membres d’équipe peuvent être attribués et supprimés de cette mosaïque (ou leurs rôles peuvent être modifiés) et de la mosaïque Équipe.
+Les membres de l’équipe peuvent être affectés et supprimés de cette mosaïque (ou leurs rôles peuvent être modifiés) et de la mosaïque Équipe.
 
 ![Ajout de membres de l’équipe au projet](/help/sites-cloud/authoring/assets/projects-add-team.png)
 
@@ -155,7 +155,7 @@ Les tâches vous permettent de surveiller le statut de toutes les activités ass
 
 AEM est fourni avec trois modèles prêts à l’emploi :
 
-* Un projet simple : un modèle de référence pour tous les projets auxquels les autres catégories ne sont pas adaptées. Il comprend trois rôles de base (propriétaires, éditeurs et observateurs) et quatre workflows (Approbation de projet, Demander un lancement, Demander la page d’entrée et Demander un courrier électronique).
+* Un projet simple : un modèle de référence pour tous les projets auxquels les autres catégories ne sont pas adaptées. Il comprend trois rôles de base (propriétaires, éditeurs et observateurs) et quatre workflows (Approbation de projet, Demander un lancement, Demander la page de destination et Demander un courrier électronique).
 * Un projet de média : un modèle de référence pour des activités multimédias. Il comprend plusieurs rôles de projet relatifs aux médias (photographes, éditeurs, rédacteurs, concepteurs, propriétaires et observateurs). Il dispose également du workflow de demande de copie pour demander et réviser du texte.
 * Un [projet de traduction](/help/sites-cloud/administering/translation/overview.md) : modèle de référence pour gérer des activités liées à la traduction. Il prévoit trois rôles de base (propriétaires, éditeurs et observateurs). Il comprend deux workflows accessibles dans l’interface utilisateur Workflows.
 

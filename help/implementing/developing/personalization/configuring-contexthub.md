@@ -2,16 +2,16 @@
 title: Configuration de ContextHub
 description: Découvrez comment configurer ContextHub.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1683'
-ht-degree: 70%
+source-wordcount: '1680'
+ht-degree: 67%
 
 ---
 
 # Configuration de ContextHub {#configuring-contexthub}
 
-ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. Pour plus de détails sur ContextHub, voir [Aperçu du développeur ContextHub](contexthub.md).
+ContextHub est un framework permettant de stocker, manipuler et présenter des données contextuelles. Pour plus d’informations sur ContextHub, voir [Présentation du développeur ContextHub](contexthub.md).
 
 Vous pouvez configurer la barre d’outils ContextHub pour contrôler si elle apparaît dans le mode d’aperçu, afin de créer des magasins ContextHub et d’ajouter des modules d’IU.
 
@@ -149,7 +149,7 @@ Le magasin contexthub.generic-jsonp est configuré de sorte qu’il stocke les d
 
 L’exemple de candidat de magasin contexthub.generic-jsonp vous permet de récupérer les données d’un service JSONP ou web qui renvoie des données JSON. Pour ce candidat de magasin, utilisez la configuration de magasin afin de fournir les détails du service JSONP à utiliser.
 
-La fonction [init](contexthub-api.md#init-name-config) de la classe JavaScript `ContextHub.Store.JSONPStore` définit un objet `config` qui initialise ce candidat de magasin. L’objet `config` contient un objet `service` qui inclut des détails sur le service JSONP. Pour configurer le magasin, il vous suffit de fournir l’objet `service` au format JSON comme valeur de la propriété Configuration de détails.
+Le [init](contexthub-api.md#init-name-config) de la fonction `ContextHub.Store.JSONPStore` La classe JavaScript définit une `config` qui initialise ce magasin candidat. L’objet `config` contient un objet `service` qui inclut des détails sur le service JSONP. Pour configurer le magasin, il vous suffit de fournir l’objet `service` au format JSON comme valeur de la propriété Configuration de détails.
 
 Pour enregistrer les données à partir du service MD5 du site jsontest.com, suivez la procédure décrite dans [Création d’un magasin ContextHub](#creating-a-contexthub-store) à l’aide des propriétés suivantes :
 
@@ -159,21 +159,21 @@ Pour enregistrer les données à partir du service MD5 du site jsontest.com, sui
 * **Activé :** sélectionnez cette option.
 * **Configuration des détails (JSON) :**
 
-   ```javascript
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```javascript
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### Ajout d’un module d’IU pour les données MD5 {#adding-a-ui-module-for-the-md-data}
 
@@ -187,15 +187,15 @@ Utilisez la procédure décrite dans [Ajout d’un module d’IU](#adding-a-ui-m
 * **Type de module :** contexthub.base.
 * **Configuration des détails (JSON) :**
 
-   ```javascript
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Conversion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```javascript
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Conversion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## Débogage de ContextHub {#debugging-contexthub}
 
@@ -230,7 +230,7 @@ Pour configurer le service, vous pouvez utiliser la [Console web](/help/implemen
 
 Le mode silencieux supprime toutes les informations de débogage. Contrairement à l’option de débogage normal, qui peut être définie séparément pour chaque configuration ContextHub, le mode silencieux est un paramètre global qui est prioritaire par rapport à tout paramètre de débogage au niveau de la configuration de ContextHub.
 
-Cela est utile pour votre instance de publication, où vous ne souhaitez pas voir d’informations de débogage. Puisqu’il s’agit d’un paramètre global, il est activé via OSGi.
+Cela s’avère utile pour votre instance de publication, où vous ne souhaitez aucune information de débogage. Puisqu’il s’agit d’un paramètre global, il est activé via OSGi.
 
 1. Ouvrez la **Configuration de la console web Adobe Experience Manager** à l’adresse `http://<host>:<port>/system/console/configMgr`
 1. Recherchez **Adobe Granite ContextHub**.

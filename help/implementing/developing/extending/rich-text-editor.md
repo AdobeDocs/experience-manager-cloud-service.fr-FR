@@ -3,10 +3,10 @@ title: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DN
 description: Configurez l’éditeur de texte enrichi pour créer du contenu dans [!DNL Adobe Experience Manager] as a Cloud Service.
 contentOwner: AG
 exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1875'
-ht-degree: 84%
+source-wordcount: '1876'
+ht-degree: 83%
 
 ---
 
@@ -223,7 +223,7 @@ Les administrateurs peuvent contrôler les options de l’éditeur de texte enri
 Les options disponibles dans l’éditeur de texte enrichi sont transmises depuis les configurations de l’interface utilisateur en amont vers les politiques de contenu.
 
 * Les paramètres de configuration de l’interface utilisateur définissent les options disponibles pour les politiques de contenu.
-* Si un élément a été supprimé ou n’est pas activé par la configuration d’interface utilisateur de l’éditeur de texte enrichi, la politique de contenu ne peut pas le configurer.
+* Si la configuration de l’interface utilisateur de l’éditeur de texte enrichi a été supprimée ou n’active pas un élément, la stratégie de contenu ne peut pas le configurer.
 * Un auteur n’a accès à une fonctionnalité de ce type que si elle est mise à sa disposition par les configurations de l’interface utilisateur et les politiques de contenu.
 
 Pour consulter un exemple, reportez-vous à la [documentation du composant principal Texte](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=fr#the-text-component-and-the-rich-text-editor).

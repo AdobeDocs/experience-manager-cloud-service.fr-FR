@@ -4,7 +4,7 @@ description: Découvrez les principes de base de la console Aperçu de la Live C
 feature: Multi Site Manager
 role: Admin
 exl-id: 3ef7fbce-10a1-4b21-8486-d3c3706e537c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 89%
@@ -32,7 +32,7 @@ Vous pouvez ouvrir l’aperçu de la Live Copy via :
 
 L’**aperçu de la Live Copy** peut être ouvert via le panneau latéral **Références** de la console **Sites** :
 
-1. Dans la console **Sites**, [accédez à la page de plan directeur et sélectionnez-la.](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources)
+1. Dans la console **Sites**, [accédez à la page de plan directeur et sélectionnez-la](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources).
 1. Ouvrez le rail **[Références](/help/sites-cloud/authoring/getting-started/basic-handling.md#references)** et sélectionnez **Live Copies**.
 
    ![Live Copy dans le rail des références](../assets/live-copy-references.png)

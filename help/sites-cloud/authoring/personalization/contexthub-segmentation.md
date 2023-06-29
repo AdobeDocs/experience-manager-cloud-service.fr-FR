@@ -2,10 +2,10 @@
 title: Configuration de la segmentation avec ContextHub
 description: Découvrez comment configurer la segmentation à l’aide de ContextHub.
 exl-id: fbc38611-dbee-426e-b823-df64b6730c45
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1695'
-ht-degree: 82%
+source-wordcount: '1691'
+ht-degree: 78%
 
 ---
 
@@ -21,7 +21,7 @@ AEM vous permet de personnaliser facilement l’expérience de vos utilisateurs.
 
 ## Accès aux segments {#accessing-segments}
 
-La console [Audiences](audiences.md) permet de gérer les segments pour ContextHub, ainsi que les audiences de votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub.
+Le [Audiences](audiences.md) La console permet de gérer les segments pour ContextHub et les audiences pour votre compte Adobe Target. Cette documentation couvre la gestion des segments pour ContextHub.
 
 Pour accéder à vos segments, dans la navigation globale, sélectionnez **Navigation > Personnalisation > Audiences**. Sélectionnez votre configuration (par exemple, le site WKND) pour visualiser vos segments :
 
@@ -65,7 +65,7 @@ Les comparaisons de segments suivantes sont disponibles par défaut pour évalue
 
 >[!NOTE]
 >
->Lors de la comparaison des valeurs, si le type de données de la comparaison n’est pas défini (c.-à-d. défini sur la détection automatique), le moteur de segmentation de ContextHub compare simplement les valeurs comme le ferait JavaScript. Il ne projette pas de valeurs sur leurs types inattendus, ce qui peut donner des résultats trompeurs. Par exemple :
+>Lors de la comparaison des valeurs, si le type de données de la comparaison n’est pas défini (c’est-à-dire défini sur la détection automatique), le moteur de segmentation de ContextHub compare simplement les valeurs comme le ferait JavaScript. Il ne projette pas de valeurs sur leurs types inattendus, ce qui peut donner des résultats trompeurs. Par exemple :
 >
 >`null < 30 // will return true`
 >
@@ -92,7 +92,7 @@ Pour définir votre nouveau segment, procédez comme suit :
 
    ![Ajouter un segment](../assets/contexthub-create-segment.png)
 
-1. Dans la section **Nouveau segment ContextHub**, tapez un titre pour le segment, ainsi qu’une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
+1. Dans le **Nouveau segment ContextHub**, saisissez un titre pour le segment et une valeur d’amplification si nécessaire, puis appuyez ou cliquez sur **Créer**.
 
    ![Nouveau segment](../assets/contexthub-new-segment.png)
 
@@ -175,7 +175,7 @@ Vous pouvez imbriquer plusieurs opérateurs ET et OU selon les besoins.
 
 1. Enregistrez le script avec `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Si le script dépend de propriétés supplémentaires, il doit appeler `this.dependOn()`. Par exemple, si le script dépend de `profile/age` :
+Si le script dépend de propriétés supplémentaires, il doit appeler `this.dependOn()`. Par exemple, si le script dépend de `profile/age`:
 
 ```javascript
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -200,7 +200,7 @@ Si vous disposez de plusieurs segments, ils peuvent devenir difficiles à gérer
 1. Indiquez un **titre** et un **nom** pour votre dossier.
    * Le **titre** doit être descriptif.
    * Le **Nom** devient le nom du noeud dans le référentiel.
-      * Il est généré automatiquement en fonction du titre et adapté en fonction des [AEM les conventions d’affectation des noms.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Il est généré automatiquement en fonction du titre et adapté en fonction des [Conventions de dénomination AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Il peut être adapté si nécessaire.
 
    ![Créer un dossier](../assets/contexthub-create-folder.png)

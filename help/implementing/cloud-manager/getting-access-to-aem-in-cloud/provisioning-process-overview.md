@@ -1,10 +1,10 @@
 ---
 title: Processus de configuration - Présentation
 description: Processus de configuration - Présentation
-source-git-commit: ffeda76f9c661117ddba50588ebea01d151ee8c3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '331'
-ht-degree: 100%
+source-wordcount: '330'
+ht-degree: 95%
 
 ---
 
@@ -34,7 +34,7 @@ Une fois l’approvisionnement automatique terminé :
 ![processoverview.jpg](assets/processOverview.jpg)
 
 
-Pour plus d’informations, consultez [Intégration d’Experience Manager as a Cloud Service dans Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=fr).
+Pour plus d’informations, voir [Intégration à Experience Manager as a Cloud Service sur Experience League](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/home.html?lang=fr).
 
 ### Ressources et liens
 

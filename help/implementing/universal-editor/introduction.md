@@ -2,10 +2,10 @@
 title: Présentation de l’éditeur visuel universel
 description: Découvrez comment l’éditeur visuel universel (également appelé éditeur universel) agit en tant qu’éditeur WYSIWYG (ce que vous voyez est ce que vous obtenez) pour pouvoir modifier n’importe quelle expérience couplée et découplée. Découvrez comment cela peut aider les créateurs et les créatrices de contenu à proposer des expériences exceptionnelles, à accroître la vitesse de leur contenu et à offrir une expérience de développement à la pointe de la technologie.
 exl-id: d4fc2384-a0f5-4a6f-9572-62749786be4c
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '933'
-ht-degree: 89%
+ht-degree: 88%
 
 ---
 
@@ -29,7 +29,7 @@ L’éditeur universel peut être instrumenté pour n’importe quelle mise en �
 
 Comme les expériences peuvent être créées de différentes manières, toute mise en oeuvre peut utiliser l’éditeur universel afin que les auteurs puissent effectuer des modifications contextuelles.
 
-Les utilisateurs pensent souvent qu’une mise en oeuvre sans interface limite les auteurs à modifier tout le contenu dans une interface utilisateur de formulaire, mais ce n’est pas le cas de l’éditeur universel.
+Les utilisateurs pensent souvent qu’une mise en oeuvre sans interface limite les auteurs à modifier tout le contenu dans une interface utilisateur de formulaire, mais ce n’est pas le cas avec l’éditeur universel.
 
 Les exigences d’une mise en oeuvre pour utiliser l’éditeur universel sont simples et prennent en charge les éléments suivants :
 
@@ -81,7 +81,7 @@ Un professionnel ou une professionnelle du marketing souhaite créer du contenu 
 
 Il est important de noter que l’éditeur universel est un travail en cours et que certaines des fonctionnalités présentées dans ce document ne sont encore qu’une vision de l’éditeur final et ne sont pas nécessairement représentatives de ses capacités actuelles.
 
-Veuillez contacter Adobe pour plus d’informations sur les prochaines fonctionnalités prévues pour l’éditeur universel.
+Pour plus d’informations sur les prochaines fonctionnalités prévues pour l’éditeur universel, contactez votre contact d’Adobe.
 
 ## Ressources supplémentaires {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: Prise en main de la traduction découplée dans AEM
 description: Découvrez comment organiser votre contenu découplé et comment fonctionnent les outils de traduction AEM.
 exl-id: 04ae2cd6-aba3-4785-9099-2f6ef24e1daf
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1407'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
@@ -44,7 +44,7 @@ Un certain nombre d’exigences s’imposent avant de vous engager dans la tradu
 
 >[!TIP]
 >
->Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Vous devez donc revenir sur cette page une fois l’opération terminée.
+>Si vous n’êtes pas familier avec l’utilisation d’un CMS à grande échelle tel qu’AEM, pensez à consulter la documentation intitulée [Manipulation de base](/help/sites-cloud/authoring/getting-started/basic-handling.md) avant de continuer. La documentation Manipulation de base ne fait pas partie du parcours. Par conséquent, revenez à cette page une fois l’opération terminée.
 
 ### Outils {#tools}
 

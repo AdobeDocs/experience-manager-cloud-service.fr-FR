@@ -2,10 +2,10 @@
 title: Gestion des audiences
 description: La console Audiences vous permet de créer, d’organiser et de gérer les audiences associées à votre compte Adobe Target ou de gérer des segments pour ContextHub.
 exl-id: dff72c15-afcd-4b16-a711-e9ca3010e3ec
-source-git-commit: f5f2c7c4dfacc113994c380e8caa37508030ee92
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '964'
-ht-degree: 62%
+source-wordcount: '963'
+ht-degree: 61%
 
 ---
 
@@ -44,7 +44,7 @@ Pour créer un segment ContextHub dans la console Audiences :
    >
    >Vous pouvez trier la liste modifiée en appuyant ou en cliquant sur **Modifié** pour la trier par ordre décroissant afin de voir toutes les audiences nouvellement créées.
 
-Pour plus d’informations sur la création de segments à l’aide de ContextHub, voir la documentation Configuration de la segmentation avec ContextHub. <!--For further detail about creating segments using ContextHub, please see the [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md) documentation.-->
+Pour plus d’informations sur la création de segments à l’aide de ContextHub, voir la documentation Configuration de la segmentation avec ContextHub . <!--For further detail about creating segments using ContextHub, see [Configuring Segmentation with ContextHub](/help/sites-administering/segmentation.md).-->
 
 ## Création d’une audience Adobe Target dans la console Audiences {#creating-an-adobe-target-audience-using-the-audience-console}
 

@@ -2,10 +2,10 @@
 title: Attributs et types
 description: Découvrez les attributs et les types de données requis par l’éditeur universel.
 exl-id: 02795a31-244a-42b4-8297-2649125d7777
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 84%
+source-wordcount: '662'
+ht-degree: 82%
 
 ---
 
@@ -27,7 +27,7 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 |---|---|
 | `itemid` | URN de la ressource : consultez la section [Instrumenter la page du document Prise en main de l’éditeur universel dans AEM](getting-started.md#instrument-thepage). |
 | `itemprop` | Attribut de la ressource : consultez la section [Instrumenter la page du document Prise en main de l’éditeur universel dans AEM](getting-started.md#instrument-thepage). |
-| `itemtype` | Type d’élément modifiable (par exemple, texte, image, référence, etc.). |
+| `itemtype` | Type de l’élément modifiable (par exemple, texte, image et référence) |
 | `data-editor-itemfilter` | Définit les références qui peuvent être utilisées. |
 | `data-editor-itemlabel` | Définit un libellé personnalisé pour un élément sélectionnable affiché dans l’éditeur. <br>Dans le cas `itemmodel` est définie, le libellé est récupéré par le biais du modèle. |
 | `data-editor-itemmodel` | Définit un modèle utilisé pour la modification d’après les formulaires dans le rail des propriétés. |
@@ -41,7 +41,7 @@ Pour que l’éditeur universel puisse modifier une application, cette dernière
 | `richtext` | Le texte est modifiable avec des fonctionnalités de texte enrichi complètes. L’éditeur de texte enrichi s’affiche dans le panneau de droite. | Facultatif | Requis | n/a | Facultatif | n/a | Facultatif |
 | `media` | L’élément modifiable est une ressource, par exemple une image ou une vidéo. | Facultatif | Requis | Liste<br>facultative des critères de filtre d’image ou vidéo transmise au sélecteur de ressources. | Facultatif | n/a | Facultatif |
 | `container` | L’élément modifiable se comporte comme un conteneur pour les composants, c’est-à-dire le système de paragraphe. | Selon le cas <br>voir ci-dessous. | Selon le cas <br>voir ci-dessous. | Une liste<br>facultative des composants autorisés | Facultatif | n/a | n/a |
-| `component` | L’élément modifiable est un composant. N’ajoute pas de fonctionnalités supplémentaires. Elle est requise pour indiquer les parties déplaçables/pouvant être supprimées du DOM et pour ouvrir le rail de propriétés et ses champs. | Requis | n/a | n/a | Facultatif | Facultatif | n/a |
+| `component` | L’élément modifiable est un composant. N’ajoute pas de fonctionnalités supplémentaires ; est requis pour indiquer les parties déplaçables/déplaçables du DOM et pour ouvrir le rail de propriétés et ses champs. | Requis | n/a | n/a | Facultatif | Facultatif | n/a |
 | `reference` | L’élément modifiable est une référence : par exemple, un fragment de contenu, un fragment d’expérience ou un produit. | Selon le cas <br>voir ci-dessous. | Selon le cas <br>voir ci-dessous. | Une liste<br>facultative des critères de filtre des fragments de contenu, des produits ou des fragments d’expérience transmise au sélecteur de références. | Facultatif | Facultatif | n/a |
 
 Selon le cas d’utilisation, `itemprop` ou `itemid` peuvent être requis. Par exemple :

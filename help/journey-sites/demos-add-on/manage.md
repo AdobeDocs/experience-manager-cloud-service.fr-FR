@@ -2,10 +2,10 @@
 title: Gestion de vos sites de démonstration
 description: Découvrez les outils disponibles pour vous aider à gérer vos sites de démonstration et comment les supprimer.
 exl-id: 988c6e09-c43e-415f-8d61-998c294c5a11
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '947'
-ht-degree: 100%
+source-wordcount: '946'
+ht-degree: 98%
 
 ---
 
@@ -105,7 +105,7 @@ Vous êtes maintenant prêt à explorer les fonctionnalités d’AEM à l’aide
 
 * [Documentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) - Pour obtenir plus de détails sur les fonctionnalités de Cloud Manager, vous pouvez consulter directement la documentation technique détaillée.
 * [Créer un site](/help/sites-cloud/administering/site-creation/create-site.md) - Découvrez comment utiliser AEM pour créer un site à l’aide de modèles de site afin de définir le style et la structure de votre site.
-* [Les conventions de dénomination des pages d’AEM.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices) - Reportez-vous à cette page pour mieux comprendre les conventions d’organisation des pages AEM.
+* [Les conventions de dénomination des pages d’AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices). - Consultez cette page pour comprendre les conventions d’organisation AEM pages.
 * [Manipulation de base d’AEM](/help/sites-cloud/authoring/getting-started/basic-handling.md) - Explorez ce document si vous êtes un nouvel utilisateur d’AEM pour comprendre les concepts de base tels que la navigation et l’organisation des consoles.
 * [Documentation technique d’AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=fr) - Si vous avez déjà une bonne compréhension d’AEM, vous pouvez consulter directement notre documentation technique détaillée.
 * [Modèles de site](/help/sites-cloud/administering/site-creation/site-templates.md) - Si vous souhaitez en savoir plus sur la structure des modèles de site et leur utilisation pour créer des sites, consultez ce document.

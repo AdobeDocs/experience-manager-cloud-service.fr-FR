@@ -2,10 +2,10 @@
 title: Activation des fonctionnalités d’application web progressive
 description: AEM Sites permet à l’auteur du contenu d’activer des fonctionnalités d’application web progressive sur n’importe quel site par le biais d’une configuration simple plutôt que par un codage.
 exl-id: 1552a4ce-137a-4208-b7f6-2fc06db8dc39
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1998'
-ht-degree: 93%
+source-wordcount: '1997'
+ht-degree: 92%
 
 ---
 
@@ -82,7 +82,7 @@ The developer will also need to add the following link to the `customfooterlibs.
 
 ### Ajustement de votre Dispatcher {#adjust-dispatcher}
 
-La fonctionnalité PWA génère et utilise des fichiers `/content/<sitename>/manifest.webmanifest`. Par défaut, [le Dispatcher](/help/implementing/dispatcher/overview.md) n’expose pas ces fichiers. Pour exposer ces fichiers, le développeur doit ajouter la configuration suivante à votre projet de site.
+La fonctionnalité PWA génère et utilise des fichiers `/content/<sitename>/manifest.webmanifest`. Par défaut, [Dispatcher](/help/implementing/dispatcher/overview.md) n’expose pas ces fichiers. Pour exposer ces fichiers, le développeur doit ajouter la configuration suivante à votre projet de site.
 
 ```text
 File location: [project directory]/dispatcher/src/conf.dispatcher.d/filters/filters.any >
@@ -118,7 +118,7 @@ Une fois [les conditions préalables](#prerequisites) satisfaites, il est très 
       * `/content/<sitename>`
       * `/content/experiencefragements/<sitename>`
       * `/content/dam/<sitename>`
-      * toute référence à une police tierce
+      * Toute référence de police tierce
       * `/etc/clientlibs/<sitename>`
 
       ![Définir des chemins hors ligne PWA](../assets/pwa-offline.png)
@@ -160,20 +160,20 @@ Ces paramètres permettent que votre site se comporte comme une application nati
    * **Par interface utilisateur minimale** : le navigateur est généralement masqué, comme il le serait en tant qu’application native, mais les commandes de navigation de base sont affichées.
    * **Plein écran** : le navigateur est complètement masqué, comme pour une application native, mais son rendu est réalisé en mode plein écran.
       * Avec cette option, la navigation de l’application doit être entièrement accessible par le biais de votre contenu à l’aide de liens et de composants sur les pages du site sans utiliser les commandes de navigation du navigateur.
-* **Orientation de l’écran** : en tant qu’application locale, la PWA doit savoir comment gérer [l’orientation de l’appareil.](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation)
+* **Orientation de l’écran** : en tant qu’application locale, la PWA doit savoir comment gérer [l’orientation de l’appareil](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation).
    * **Auto** : l’application s’adapte à l’orientation de l’appareil de l’utilisateur. Il s’agit de la valeur par défaut.
    * **Portrait** : cette option force l’application à s’ouvrir en mode portrait, quelle que soit l’orientation de l’appareil de l’utilisateur.
    * **Paysage** : cette option force l’application à s’ouvrir en mode paysage, quelle que soit l’orientation de l’appareil de l’utilisateur.
 * **Couleur du thème** : définit la [couleur de l’application](https://developer.mozilla.org/fr-FR/docs/Web/Manifest/theme_color) utilisée pour l’affichage de la barre d’outils native et des commandes de navigation de l’interface utilisateur par le système d’exploitation de l’utilisateur local. En fonction du navigateur, cette option peut affecter d’autres éléments de présentation de l’application.
    * Utilisez le pop-up de couleurs pour sélectionner une couleur.
    * La couleur peut également être définie selon une valeur hexadécimale ou RVB.
-* **Couleur d’arrière-plan** : définit [la couleur d’arrière-plan de l’application](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color) qui s’affiche au chargement de l’application.
+* **Couleur de fond** : cette propriété définit la variable [couleur d’arrière-plan de l’application](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color), qui s’affiche au chargement de l’application.
    * Utilisez le pop-up de couleurs pour sélectionner une couleur.
    * La couleur peut également être définie selon une valeur hexadécimale ou RVB.
    * Certains navigateurs [créent automatiquement un écran de démarrage](https://developer.mozilla.org/fr-FR/docs/Web/Manifest#Splash_screens) en utilisant le nom, la couleur d’arrière-plan et de l’icône de l’application.
 * **Icône** : définit [l’icône](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons) qui représente l’application sur l’appareil de l’utilisateur.
    * L’icône doit être constituée d’un fichier PNG de 512 x 512 pixels.
-   * Elle doit être [stockée sur le DAM.](/help/assets/overview.md)
+   * Elle doit être [stockée sur le DAM](/help/assets/overview.md).
 
 ### Gestion du cache (avancé) {#offline-configuration}
 

@@ -4,10 +4,10 @@ description: Découvrez comment connecter AEM à Microsoft Translator pour autom
 feature: Language Copy
 role: Admin
 exl-id: ca3c50f9-005e-4871-8606-0cfd3ed21936
-source-git-commit: d925310603961f1f3721c283fc247105459e9c0f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '517'
-ht-degree: 100%
+source-wordcount: '512'
+ht-degree: 90%
 
 ---
 
@@ -17,7 +17,7 @@ Créez une configuration afin que le service cloud [Microsoft Translator](https:
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous commencez à traduire du contenu, reportez-vous à la section [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ La procédure suivante crée une configuration Microsoft Translator.
 1. Appuyez ou cliquez sur le bouton **Créer**.
 1. Définissez votre configuration.
    1. Sélectionnez **Microsoft Translator** dans la liste déroulante.
-   1. Indiquez un titre pour votre configuration. Le titre identifie la configuration dans la console Services cloud, ainsi que dans les listes déroulantes de propriétés de la page.
+   1. Indiquez un titre pour votre configuration. Le titre identifie la configuration dans la console Cloud Services et dans les listes déroulantes des propriétés de page.
    1. Éventuellement, saisissez un nom à utiliser pour le nœud du référentiel qui stocke la configuration.
 
    ![Créer une configuration de traduction](../assets/create-translation-config.png)

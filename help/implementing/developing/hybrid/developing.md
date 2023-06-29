@@ -2,10 +2,10 @@
 title: Développement de SPA pour AEM
 description: Cet article présente des questions importantes à prendre en compte lorsqu’un développeur front-end doit développer un SPA pour AEM. Il donne également un aperçu de l’architecture de l’AEM concernant SPA à garder à l’esprit lors du déploiement d’un projet développé sur l’.
 exl-id: f6c6f31a-69ad-48f6-b995-e6d0930074df
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2034'
-ht-degree: 49%
+source-wordcount: '2035'
+ht-degree: 48%
 
 ---
 
@@ -141,7 +141,7 @@ Voici un aperçu des étapes que doit suivre un développeur front-end lors du d
 
    Lorsque la variable `ModelRouter` est activé, en appelant la fonction `pushState` et `replaceState` déclenche une requête à la fonction `PageModelManager` pour récupérer un fragment manquant du modèle.
 
-   La version actuelle de `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée du modèle Sling. Elle ne prend pas en charge l’utilisation de vanity URL ni d’alias.
+   La version actuelle de `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée du modèle Sling. Il ne prend pas en charge l’utilisation d’URL ou d’alias de redirection vers un microsite.
 
    `ModelRouter` peut être désactivé ou configuré pour ignorer une liste d’expressions régulières.
 

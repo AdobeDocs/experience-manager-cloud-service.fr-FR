@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management,Publishing
 role: User,Architect,Leader
 exl-id: 4737d5ee-9a93-49f3-9f20-d4368e60e9fb
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '594'
 ht-degree: 99%
@@ -87,7 +87,7 @@ Pour utiliser la fonctionnalité Media Library, vous pouvez utiliser l’interfa
 
 <!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
-As per PM, we must avoid stating such a list, as we don't have a list that makes sense in Cloud Service.
+As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
 
 >[!IMPORTANT]
@@ -117,4 +117,3 @@ Notez que vous ne pouvez pas utiliser de balises intelligentes, de lien [!DNL As
 >
 >* [Fonctionnalités de gestion des actifs numériques dans [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/home.html?lang=fr)
 >* Description du produit [[!DNL Experience Manager] as a [!DNL Cloud Service] ](https://helpx.adobe.com/fr/legal/product-descriptions/adobe-experience-manager-cloud-service.html)
-

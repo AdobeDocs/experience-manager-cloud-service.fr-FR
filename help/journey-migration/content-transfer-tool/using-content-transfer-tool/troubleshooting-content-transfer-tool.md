@@ -2,10 +2,10 @@
 title: Dépannage de l’outil de transfert de contenu
 description: Dépannage de l’outil de transfert de contenu
 exl-id: 01bc9be7-a576-45eb-90a0-386ea951040d
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 100%
+source-wordcount: '179'
+ht-degree: 96%
 
 ---
 
@@ -35,7 +35,7 @@ java -jar oak-run.jar datastorecheck --consistency --store [<SEGMENT_STORE_PATH>
 java -jar oak-run.jar datastore --check-consistency [<SEGMENT_STORE_PATH>|<MONGO_URI>] --[s3ds|fds|azureds] <DATASTORE_CFG> --out-dir <OUT_DIR> --work-dir <TEMP_DIR> --verbose
 ```
 
-Pour plus d’informations, voir [Fichier jar exécutable Oak](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run).
+Voir [Fichier Jar exécutable Oak](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) pour plus d’informations.
 
 Les fichiers créés dans *OUT_DIR*, spécifiés ci-dessus pour assurer la cohérence, peuvent ensuite être vérifiés pour détecter les chemins manquants de binaires et les actions appropriées mises en œuvre (restauration à partir d’une sauvegarde, suppression des chemins, réindexation, etc.).
 

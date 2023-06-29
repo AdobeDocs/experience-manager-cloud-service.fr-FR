@@ -2,10 +2,10 @@
 title: Exportation de fragments de contenu vers Adobe Target
 description: Exportation de fragments de contenu vers Adobe Target
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 97%
+source-wordcount: '2222'
+ht-degree: 96%
 
 ---
 
@@ -52,7 +52,7 @@ L’action suivante est requise :
 
 1. Vous devez [intégrer AEM à Adobe Target](/help/sites-cloud/integrating/integrating-adobe-target.md).
 
-<!-- link rewriter - targets in content-fragments-customizing don't exist yet
+<!-- link rewriter - targets in content-fragments-customizing do not exist yet
 
 1. Content Fragments are exported from the AEM author instance, so you need to [Configure the AEM Link Externalizer](/help/implementing/developing/extending/content-fragments-customizing.md#configuring-the-aem-link-externalizer) on the author instance to ensure that any references within the Content Fragment are externalized for web delivery.
 
@@ -175,7 +175,7 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
    * **Identifiant du client** : l’identifiant du client
 
-   * **Configuration IMS** : sélectionnez la configuration requise dans la liste déroulante.
+   * **Configuration IMS**: sélectionnez la configuration requise dans la liste déroulante.
 
    * **Type d’API** : par défaut : REST (XML est obsolète)
 
@@ -324,7 +324,7 @@ Pour exporter un fragment de contenu d’AEM vers Target (après avoir spécifi�
 
    ![Exporter vers Adobe Target](assets/cfm-export-target-01.png)
 
-   <!-- this note doesn't seem to be accurate for CFs -->
+   <!-- this note does not seem to be accurate for CFs -->
 
    <!--
    
@@ -364,7 +364,7 @@ Pour exporter un fragment de contenu d’AEM vers Target (après avoir spécifi�
 
 ## Utiliser vos fragments de contenu dans Adobe Target {#using-your-content-fragments-in-adobe-target}
 
-Après avoir effectué les tâches précédentes, le fragment de contenu s’affiche sur la page Offres de Target. Jetez un coup d’œil à la [documentation spécifique de Target](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=fr) pour en savoir plus sur ce qu’il est possible de faire.
+Après avoir effectué les tâches précédentes, le fragment de contenu s’affiche sur la page Offres de Target. Voir [documentation spécifique de Target](https://experienceleague.adobe.com/docs/target/using/integrate/aem/fragments/content-fragments-aem.html?lang=fr) pour en savoir plus sur ce que vous pouvez y réaliser.
 
 >[!NOTE]
 >
@@ -396,7 +396,7 @@ Pour éviter de telles situations :
 
 ## Autres ressources {#further-resources}
 
-Pour plus d’informations, consultez également :
+Pour plus d’informations, consultez les sections suivantes :
 
 <!--
 * [Creating a Target Cloud Configuration](/help/sites-cloud/integrating/integrating-adobe-target.md#create-configuration)

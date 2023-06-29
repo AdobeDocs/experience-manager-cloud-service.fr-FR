@@ -2,10 +2,10 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1709'
-ht-degree: 91%
+source-wordcount: '1712'
+ht-degree: 85%
 
 ---
 
@@ -119,9 +119,9 @@ You can view additional information about items using the Rail Selector. This al
 ![Left Rail](/help/journey-headless/author/assets/headless-journey-author-navigation-04.png)
 -->
 
-## Création de fragments de contenu {#authoring-content-fragments}
+## Créer des fragments de contenu {#authoring-content-fragments}
 
-Fort de cette une introduction très rapide à l’interface utilisateur d’AEM, j’espère que vous avez eu la chance de l’essayer. Maintenant, revenons-en à votre véritable point d’intérêt : les fragments de contenu découplé.
+C’était donc une introduction très rapide à l’interface utilisateur d’AEM, mais j’espère que vous avez eu la chance de l’essayer. Maintenant, revenons-en à votre véritable point d’intérêt : les fragments de contenu découplé.
 
 Nous devrons passer en revue les éléments du début à la fin, mais il se peut que votre instance dispose de dossiers ou de fragments déjà créés, et qu’ils se trouvent à des emplacements différents. Les principes restent les mêmes.
 
@@ -203,7 +203,7 @@ Confirm with **Create** and you can then **Open** your fragment in the editor.
 
 Vous pouvez ouvrir un fragment immédiatement après sa création ou en le sélectionnant dans la console Fragments de contenu (également disponible dans la console Ressources).
 
-Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s’affichent :
+Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s’affichent :
 
 * Une liste des icônes sur le côté gauche qui vous donne accès à différentes zones de fonctionnalités. L’éditeur s’ouvre dans l’onglet **Variations**, où vous opérerez la plupart de vos modifications. Vous pouvez également être intéressé par les onglets **Annotations** et **Métadonnées**.
 
@@ -213,7 +213,7 @@ Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s
 
 Par exemple :
 
-* Un fragment qui ne nécessite que plusieurs informations, certaines avec un type spécifique. Pour le contenu découplé, les références sont essentielles. Vous en apprendrez plus tard sur votre parcours.
+* Un fragment qui ne nécessite que plusieurs informations, certaines avec un type spécifique. Pour le contenu sans interface utilisateur, les références sont essentielles. Vous en apprendrez plus tard sur votre parcours.
 
   ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -233,9 +233,9 @@ Confirmez vos mises à jour en effectuant l’une des opérations suivantes : *
 >
 >Pour plus d’informations, vous pouvez lire Variations – Création de fragments de contenu.
 
-#### Ce dont vous n’avez (probablement) pas besoin de vous inquiéter {#what-you-probably-do-not-need-to-worry-about}
+#### Ce dont vous n’avez (probablement) pas besoin de vous soucier {#what-you-probably-do-not-need-to-worry-about}
 
-Cette section peut sembler un peu étrange mais une fois que vous avez ouvert l’éditeur de fragments de contenu et que vous commencez à l’explorer, vous verrez diverses options qui ne s’appliquent (probablement) pas à votre parcours découplé en tant qu’auteur de contenu. Il s’agit simplement d’une rapide mise en garde sur ce que vous devriez pouvoir ignorer dans un contexte découplé :
+Cette section peut sembler un peu étrange, mais une fois que vous avez ouvert l’éditeur de fragments de contenu et que vous avez commencé à explorer, vous pouvez voir différentes options qui (probablement) ne s’appliquent pas à votre parcours sans interface en tant qu’auteur de contenu. Il s’agit simplement d’une rapide mise en garde sur ce que vous devriez pouvoir ignorer dans un contexte découplé :
 
 * **Modèles de fragment de contenu**
 
@@ -258,7 +258,7 @@ Les modèles de fragment de contenu sont essentiels à vos fragments de contenu,
 
 * **Mettre à jour les références de page**
 
-  Cette action est disponible à partir de **...** (des points de suspension). Elle n’a pas d’intérêt particulier pour les auteurs de contenu découplé, car elle concerne la création de pages.
+  Cette action est disponible à partir du **...** (ellipses). Elle n’a pas d’intérêt particulier pour les auteurs de contenu découplé, car elle concerne la création de pages.
 
 ### Publication {#publishing}
 

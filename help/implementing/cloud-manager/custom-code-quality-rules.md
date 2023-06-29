@@ -2,10 +2,10 @@
 title: Règles de qualité du code personnalisé
 description: Cette page décrit les règles de qualité du code personnalisé exécutées par Cloud Manager dans le cadre du test de qualité du code. Elles sont basées sur les bonnes pratiques de l’ingénierie Adobe Experience Manager.
 exl-id: f40e5774-c76b-4c84-9d14-8e40ee6b775b
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3504'
-ht-degree: 98%
+source-wordcount: '3502'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ Cette page décrit les règles de qualité du code personnalisé exécutées par
 
 >[!NOTE]
 >
->Les règles SonarQube complètes ne peuvent pas être téléchargées en raison d’informations exclusives d’Adobe. Vous pouvez télécharger la liste complète des règles [via ce lien.](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx) Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples des règles.
+>Les règles SonarQube complètes ne peuvent pas être téléchargées en raison d’informations exclusives d’Adobe. Vous pouvez télécharger la liste complète des règles [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples des règles.
 
 >[!NOTE]
 >
@@ -504,7 +504,7 @@ public void doThis(Resource resource) {
 
 N’utilisez pas le planificateur Sling pour les tâches qui nécessitent une exécution garantie. Les tâches planifiées Sling garantissent l’exécution et conviennent mieux aux environnements organisés avec ou sans grappes.
 
-Reportez-vous à la section [Gestion des tâches et des événements Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la façon dont les tâches Sling sont gérées dans des environnements en cluster.
+Voir [Traitement des événements et des tâches Apache Sling](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html) pour en savoir plus sur la gestion des tâches Sling dans les environnements organisés en grappes.
 
 ### N’utilisez pas d’API obsolètes d’Experience Manager. {#sonarqube-aem-deprecated}
 
@@ -560,7 +560,7 @@ public class DontDoThis implements Page {
 
 Plusieurs index prêts à l’emploi Experience Manager Oak incluent une configuration Tika et les personnalisations de ces index doivent contenir une configuration Tika. Cette règle recherche les personnalisations des index `damAssetLucene`, `lucene` et `graphqlConfig`, et soulève un problème si le nœud `tika` est manquant ou si un nœud enfant nommé `config.xml` est manquant dans le nœud `tika`.
 
-Pour plus d’informations sur la personnalisation des définitions d’index, consultez la [documentation sur l’indexation](/help/operations/indexing.md#preparing-the-new-index-definition).
+Voir [documentation d’indexation](/help/operations/indexing.md#preparing-the-new-index-definition) pour plus d’informations sur la personnalisation des définitions d’index.
 
 #### Code non conforme {#non-compliant-code-indextikanode}
 
@@ -773,10 +773,10 @@ La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` déf
 Les composants d’Experience Manager disposant d’une boîte de dialogue d’interface utilisateur classique doivent toujours comporter une boîte de dialogue d’interface utilisateur tactile correspondante. Les deux offrent une expérience de création optimale et sont compatibles avec le modèle de déploiement du service cloud, où l’interface utilisateur classique n’est pas prise en charge. Cette règle vérifie les scénarios suivants :
 
 * Un composant doté d’une boîte de dialogue d’interface utilisateur classique (c’est-à-dire un nœud enfant `dialog`) doit avoir une boîte de dialogue d’interface utilisateur tactile correspondante (c’est-à-dire un nœud enfant `cq:dialog`).
-* Un composant doté d’une boîte de dialogue d’interface utilisateur classique (c’est-à-dire un nœud `design_dialog`) doit avoir une boîte de dialogue de conception d’interface utilisateur tactile correspondante (c’est-à-dire un nœud enfant `cq:design_dialog`).
+* Un composant avec une boîte de dialogue de conception de l’interface utilisateur classique (c’est-à-dire, une `design_dialog` ) doit avoir une boîte de dialogue de conception de l’interface utilisateur tactile correspondante (c’est-à-dire une `cq:design_dialog` noeud enfant).
 * Un composant doté d’une boîte de dialogue d’interface utilisateur classique et d’une boîte de dialogue de conception d’interface utilisateur classique doit comporter à la fois une boîte de dialogue d’interface utilisateur tactile correspondante et une boîte de dialogue de conception d’interface utilisateur tactile correspondante.
 
-La documentation sur les outils de modernisation d’Experience Manager contient des documents et des outils pour convertir les composants de l’interface utilisateur classique en interface utilisateur tactile. Consultez la [documentation relative aux outils de modernisation d’Experience Manager](https://opensource.adobe.com/aem-modernize-tools/) pour en savoir plus.
+La documentation sur les outils de modernisation d’Experience Manager contient des documents et des outils pour convertir les composants de l’interface utilisateur classique en interface utilisateur tactile. Voir [la documentation des outils de modernisation du Experience Manager ;](https://opensource.adobe.com/aem-modernize-tools/) pour plus d’informations.
 
 ### Les packages ne doivent pas combiner du contenu modifiable et non modifiable. {#oakpal-packages-immutable}
 
@@ -791,7 +791,7 @@ Pour être compatible avec le modèle de déploiement sdu service cloud, les pac
 >
 >La règle [Les packages clients ne doivent ni créer ni modifier des nœuds sous /libs](#oakpal-customer-package) s’applique toujours.
 
-Pour plus d’informations, consultez la section [Structure de projet Experience Manager](/help/implementing/developing/introduction/aem-project-content-package-structure.md).
+Voir [Structure de projet Experience Manager](/help/implementing/developing/introduction/aem-project-content-package-structure.md) pour plus d’informations.
 
 ### N’utilisez pas d’agents de réplication inverse. {#oakpal-reverse-replication}
 
@@ -800,7 +800,7 @@ Pour plus d’informations, consultez la section [Structure de projet Experience
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-La prise en charge de la réplication inverse n’est pas disponible dans les déploiements de Cloud Service, comme décrit dans les [notes de mise à jour](/help/release-notes/aem-cloud-changes.md#replication-agents) d’Experience Manager as a Cloud Service.
+La prise en charge de la réplication inverse n’est pas disponible dans les déploiements de Cloud Service, comme décrit dans la section d’as a Cloud Service Experience Manager [notes de mise à jour](/help/release-notes/aem-cloud-changes.md#replication-agents).
 
 Les client(e)s qui utilisent la réplication inverse doivent contacter Adobe pour obtenir d’autres solutions.
 
@@ -853,7 +853,7 @@ L’outil de migration dans le [référentiel GitHub de ressources d’Experienc
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Bien que l’utilisation des modèles statiques soit historiquement courante dans les projets Experience Manager, Adobe recommande les modèles modifiables, car ils offrent la plus grande flexibilité et prennent en charge des fonctionnalités supplémentaires qui ne sont pas présentes dans les modèles statiques. Vous trouverez plus d’informations à ce sujet dans le document [Modèles de page.](/help/implementing/developing/components/templates.md)
+Bien que l’utilisation des modèles statiques soit historiquement courante dans les projets Experience Manager, Adobe recommande les modèles modifiables, car ils offrent la plus grande flexibilité et prennent en charge des fonctionnalités supplémentaires qui ne sont pas présentes dans les modèles statiques. Vous trouverez plus d’informations à ce sujet dans le document [Modèles de page](/help/implementing/developing/components/templates.md).
 
 La migration de modèles statiques vers des modèles modifiables peut être largement automatisée à l’aide des [outils de modernisation d’Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
 
@@ -864,7 +864,7 @@ La migration de modèles statiques vers des modèles modifiables peut être larg
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Les composants de base hérités (c’est-à-dire les composants situés dans `/libs/foundation`) ont été abandonnés pour plusieurs versions d’Experience Manager au profit des composants principaux. L’utilisation des composants de base comme base pour les composants personnalisés, que ce soit par recouvrement ou par héritage, n’est pas encouragée et ces composants doivent être convertis en composants principaux correspondants.
+Composants de base hérités (c’est-à-dire, les composants sous `/libs/foundation`) ont été abandonnés pour plusieurs versions de Experience Manager au profit des composants principaux. L’utilisation des composants de base comme base pour les composants personnalisés, que ce soit par recouvrement ou par héritage, n’est pas encouragée et ces composants doivent être convertis en composants principaux correspondants.
 
 Il est possible de faciliter cette conversion grâce aux [outils de modernisation d’Experience Manager.](https://opensource.adobe.com/aem-modernize-tools/)
 
@@ -884,7 +884,7 @@ Experience Manager as a Cloud Service applique une stratégie de nommage st
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Experience Manager as a Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) soient des nœuds enfants directs de `/oak:index`. Les index qui se trouvent à des emplacements différents doivent être déplacés pour être compatibles avec Experience Manager as a Cloud Service. Vous trouverez plus d’informations sur les index de recherche dans le document [Recherche et indexation de contenu](/help/operations/indexing.md).
+Experience Manager as a Cloud Service requiert que les définitions d’index de recherche personnalisées (c’est-à-dire les noeuds de type `oak:QueryIndexDefinition`) être des noeuds enfants directs de `/oak:index`. Les index qui se trouvent à des emplacements différents doivent être déplacés pour être compatibles avec Experience Manager as a Cloud Service. Vous trouverez plus d’informations sur les index de recherche dans le document [Recherche et indexation de contenu](/help/operations/indexing.md).
 
 ### Les nœuds de définition d’index de recherche personnalisée doivent avoir une compatVersion de 2. {#oakpal-custom-search-compatVersion}
 
@@ -893,7 +893,7 @@ Experience Manager as a Cloud Service exige que les définitions d’index 
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Experience Manager as a Cloud Service exige que la propriété `compatVersion` soit définie sur `2` pour les définitions d’index de recherche personnalisée (telles que pour les nœuds de type `oak:QueryIndexDefinition`). Toute autre valeur n’est pas prise en charge par Experience Manager as a Cloud Service. Vous trouverez plus d’informations sur les index de recherche dans [Recherche et indexation de contenu.](/help/operations/indexing.md)
+Experience Manager as a Cloud Service exige que la propriété `compatVersion` soit définie sur `2` pour les définitions d’index de recherche personnalisée (telles que pour les nœuds de type `oak:QueryIndexDefinition`). Toute autre valeur n’est pas prise en charge par Experience Manager as a Cloud Service. Vous trouverez plus d’informations sur les index de recherche dans [Recherche et indexation de contenu](/help/operations/indexing.md).
 
 ### Les nœuds descendants des nœuds de définition d’index de recherche personnalisée doivent être de type nt:unstructured {#oakpal-descendent-nodes}
 
@@ -920,7 +920,7 @@ Un nœud de définition d’index de recherche personnalisée correctement défi
 * **Gravité** : mineure
 * **Depuis** : version 2021.2.0
 
-Experience Manager as a Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) soient nommées selon un modèle spécifique décrit dans le document [Recherche et indexation de contenu.](/help/operations/indexing.md)
+Experience Manager as a Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) soient nommées selon un modèle spécifique décrit dans le document [Recherche et indexation de contenu](/help/operations/indexing.md).
 
 ### Les nœuds de définition d’index de recherche personnalisée doivent utiliser le type d’index Lucene.  {#oakpal-index-type-lucene}
 
@@ -929,7 +929,7 @@ Experience Manager as a Cloud Service exige que les définitions d’index 
 * **Gravité** : bloqueur
 * **Depuis** : version 2021.2.0 (changement de type et de gravité en 2021.8.0)
 
-Experience Manager as a Cloud Service exige que les définitions d’index de recherche personnalisée (c’est-à-dire les nœuds de type `oak:QueryIndexDefinition`) aient une propriété `type` dont la valeur est définie sur `lucene`. L’indexation avec les types d’index hérités doit être mise à jour avant la migration vers Experience Manager as a Cloud Service. Consultez [Recherche et indexation de contenu](/help/operations/indexing.md#how-to-use) pour plus d’informations.
+Experience Manager as a Cloud Service requiert que les définitions d’index de recherche personnalisées (c’est-à-dire les noeuds de type `oak:QueryIndexDefinition`) ont un `type` avec la valeur définie sur `lucene`. L’indexation avec les types d’index hérités doit être mise à jour avant la migration vers Experience Manager as a Cloud Service. Consultez [Recherche et indexation de contenu](/help/operations/indexing.md#how-to-use) pour plus d’informations.
 
 ### Les nœuds de définition d’index de recherche personnalisée ne doivent pas contenir de propriété nommée seed. {#oakpal-property-name-seed}
 

@@ -2,10 +2,10 @@
 title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1547'
-ht-degree: 94%
+source-wordcount: '1544'
+ht-degree: 91%
 
 ---
 
@@ -77,23 +77,23 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
-* Après avoir terminé la phase d’*extraction* du processus de transfert de contenu et avant de commencer la phase d’*ingestion* pour ingérer du contenu dans vos instances d’*évaluation* ou de *production* AEM as a Cloud Service, vous devez enregistrer un ticket d’assistance pour informer Adobe de votre intention d’exécuter *Ingestion* afin qu’Adobe puisse s’assurer qu’aucune interruption ne se produise pendant le processus d’*ingestion*. Vous devrez consigner le ticket de support une semaine avant la date d’*Ingestion* prévue. Une fois que vous aurez soumis le ticket d’assistance, l’équipe d’assistance vous donnera des conseils sur les étapes suivantes. Vous pouvez enregistrer un ticket d’assistance avec les détails suivants :
+* Après avoir terminé la phase d’*extraction* du processus de transfert de contenu et avant de commencer la phase d’*ingestion* pour ingérer du contenu dans vos instances d’*évaluation* ou de *production* AEM as a Cloud Service, vous devez enregistrer un ticket d’assistance pour informer Adobe de votre intention d’exécuter *Ingestion* afin qu’Adobe puisse s’assurer qu’aucune interruption ne se produise pendant le processus d’*ingestion*. Vous devrez consigner le ticket de support une semaine avant la date d’*Ingestion* prévue. Une fois que vous avez envoyé le ticket d’assistance, l’équipe d’assistance fournit des conseils sur les prochaines étapes. Vous pouvez enregistrer un ticket d’assistance avec les détails suivants :
 
    * Date exacte et heure estimée (avec votre fuseau horaire) lorsque vous prévoyez de lancer la phase d’*ingestion*.
    * Type d’environnement (évaluation ou production) dans lequel vous prévoyez d’importer des données.
    * ID de programme.
 
-* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. Cela signifie que l’AEM de création n’est pas disponible pendant l’ensemble du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez la phase d’*ingestion*.
+* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. Cela signifie que l’AEM de création n’est pas disponible pendant l’ensemble du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez le *Ingestion* phase.
 
 * Si vous utilisez `Amazon S3` ou `Azure` comme entrepôt de données sur le système AEM source, cet entrepôt doit être configuré de sorte que les objets blob stockés ne puissent pas être supprimés (nettoyage de la mémoire). Cela garantit l’intégrité des données d’index et un échec de ce type de configuration peut entraîner des échecs d’extraction en raison d’un manque d’intégrité de ces données d’index.
 
-* Si vous utilisez des index personnalisés, vous devez veiller à les configurer avec le nœud `tika` avant d’exécuter l’outil de transfert de contenu. Pour plus d’informations, voir la section [Préparation de la nouvelle définition d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr#preparing-the-new-index-definition).
+* Si vous utilisez des index personnalisés, vous devez veiller à les configurer avec le nœud `tika` avant d’exécuter l’outil de transfert de contenu. Voir [Préparation de la nouvelle définition d’index](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/operations/indexing.html?lang=fr#preparing-the-new-index-definition) pour plus d’informations.
 
 * Si vous avez l’intention d’effectuer des compléments, il est essentiel que la structure de contenu du contenu existant ne soit pas modifiée du moment où l’extraction initiale est prise au moment de l’exécution de l’extraction de complément. Les compléments peuvent pas être exécutés sur du contenu dont la structure a été modifiée depuis l’extraction initiale. Veillez à limiter cette opération pendant le processus de migration.
 
 * Si vous envisagez d’inclure différentes versions dans un jeu de migration et effectuez des compléments avec `wipe=false`, vous devez désactiver la purge des versions en raison d’une restriction actuelle de l’outil de transfert de contenu. Si vous préférez conserver la purge de version activée et effectuer des compléments dans un jeu de migration, vous devez effectuer l’ingestion sous la forme `wipe=true`.
 
-* Un jeu de migration expire après une longue période d’inactivité, après laquelle ses données ne sont plus disponibles. Pour en savoir plus, veuillez consulter [Expiration du jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#migration-set-expiry).
+* Un jeu de migration expire après une longue période d’inactivité, après laquelle ses données ne sont plus disponibles. Réviser [Expiration du jeu de migration](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr#migration-set-expiry) pour plus d’informations.
 
 ## Prochaines étapes {#whats-next}
 

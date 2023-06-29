@@ -2,10 +2,10 @@
 title: Création de rendus vidéo dans Screens as a Cloud Service
 description: Cette page décrit comment créer des rendus vidéo dans Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '343'
-ht-degree: 50%
+source-wordcount: '342'
+ht-degree: 47%
 
 ---
 
@@ -25,7 +25,7 @@ Pour créer des rendus vidéo dans Screens as a Cloud Service à partir du fourn
 1. Accédez à votre canal dans le fournisseur de contenu Screens.
 
    >[!NOTE]
-   >Pour plus d’informations, voir [Utilisation du fournisseur de contenu Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider).
+   >Voir [Utilisation du fournisseur de contenu Screens](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/screens-as-cloud-service/configure-screens-cloud/using-screens-content-provider.html?lang=en#screens-content-provider) pour plus d’informations.
 
 1. Cliquez sur la section Outils de la barre de navigation de gauche, puis cliquez sur **Ressources** puis cliquez sur **Profils de traitement**.
 

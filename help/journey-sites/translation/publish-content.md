@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: 081167dd-da4c-48d2-a6d3-f95e873be3e9
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1361'
-ht-degree: 98%
+source-wordcount: '1358'
+ht-degree: 96%
 
 ---
 
@@ -83,7 +83,7 @@ Votre contenu traduit est maintenant publié ! Il est désormais accessible et 
 >
 >Vous pouvez sélectionner plusieurs éléments (c’est-à-dire plusieurs dossiers de langues) lors de la publication pour publier plusieurs traductions à la fois.
 
-D’autres options s’offrent à vous lors de la publication de votre contenu, telles que la planification d’une heure de publication, mais elles dépassent la portée de ce parcours. Consultez la section [Ressources supplémentaires](#additional-resources) à la fin du document pour obtenir plus d’informations.
+D’autres options s’offrent à vous lors de la publication de votre contenu, telles que la planification d’une heure de publication, mais elles dépassent la portée de ce parcours. Voir [Ressources supplémentaires](#additional-resources) à la fin du document pour plus d’informations.
 
 ## Mise à jour de votre contenu traduit {#updating-translations}
 
@@ -117,7 +117,7 @@ Vous voyez qu’une nouvelle carte de tâche a été ajoutée au projet. Dans ce
 
 ![Tâche de traduction supplémentaire ajoutée](assets/additional-translation-job.png)
 
-Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle carte sont différentes. En effet, AEM reconnaît ce qui a changé depuis la dernière traduction et n’inclut que le contenu qui doit être traduit. Cela inclut la retraduction du contenu mis à jour ainsi que la première traduction du nouveau contenu.
+Vous remarquerez peut-être que les statistiques répertoriées sur la nouvelle carte sont différentes. En effet, AEM reconnaît ce qui a changé depuis la dernière traduction et n’inclut que le contenu qui doit être traduit. Cela inclut la retraduction du contenu mis à jour et la première traduction du nouveau contenu.
 
 À partir de là, vous pouvez [démarrer et gérer votre tâche de traduction comme vous l’avez fait pour la traduction originale.](translate-content.md#using-translation-project)
 

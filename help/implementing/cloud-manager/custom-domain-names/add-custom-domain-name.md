@@ -2,10 +2,10 @@
 title: Ajout d’un nom de domaine personnalisé
 description: Découvrez comment ajouter un nom de domaine personnalisé à l’aide de Cloud Manager.
 exl-id: 0fc427b9-560f-4f6e-ac57-32cdf09ec623
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '574'
-ht-degree: 93%
+source-wordcount: '560'
+ht-degree: 79%
 
 ---
 
@@ -54,17 +54,17 @@ Suivez la procédure suivante pour ajouter un nom de domaine personnalisé à pa
 
 Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT réussie. Cela est indiqué par le statut **Vérifié et déployé**.
 
-Consultez le document [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents statuts et sur la manière de résoudre des problèmes potentiels.
+Voir [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents états et sur la manière de résoudre les problèmes potentiels.
 
 >[!NOTE]
 >
 >La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.
 >
->Cloud Manager vérifie la propriété et met à jour le statut visible dans le tableau des paramètres du domaine. Consultez le document [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
+>Cloud Manager vérifie la propriété et met à jour le statut visible dans le tableau des paramètres du domaine. Voir [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
 
 >[!TIP]
 >
->Consultez le document [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus sur les enregistrements TXT.
+>Voir [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus sur les enregistrements TXT.
 
 ## Ajout d’un nom de domaine personnalisé à partir de la page Environnements {#adding-cdn-environments}
 
@@ -98,14 +98,14 @@ Procédez comme suit pour ajouter un nom de domaine personnalisé à partir de l
 
 Le déploiement CDN nécessite un certificat SSL valide et une vérification TXT réussie. Cela est indiqué par le statut **Vérifié et déployé**.
 
-Consultez le document [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents statuts et sur la manière de résoudre des problèmes potentiels.
+Voir [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour en savoir plus sur les différents états et sur la manière de résoudre les problèmes potentiels.
 
 >[!NOTE]
 >
 >La vérification DNS peut prendre quelques heures en raison des délais de propagation du DNS.
 >
->Cloud Manager vérifie la propriété et met à jour le statut visible dans le tableau des paramètres du domaine. Consultez le document [Vérification du statut du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
+>Cloud Manager vérifie la propriété et met à jour le statut visible dans le tableau des paramètres du domaine. Voir [Vérification de l’état du nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/check-domain-name-status.md) pour plus d’informations.
 
 >[!TIP]
 >
->Consultez le document [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus sur les enregistrements TXT.
+>Voir [Ajout d’un enregistrement TXT](/help/implementing/cloud-manager/custom-domain-names/add-text-record.md) pour en savoir plus sur les enregistrements TXT.

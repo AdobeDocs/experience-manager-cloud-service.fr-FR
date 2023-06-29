@@ -4,10 +4,10 @@ description: Découvrez les principes de base d’AEM ; gestion des packages av
 feature: Administering
 role: Admin
 exl-id: b5fef273-912d-41f6-a698-0231eedb2b92
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3780'
-ht-degree: 87%
+source-wordcount: '3775'
+ht-degree: 85%
 
 ---
 
@@ -33,7 +33,7 @@ Les packages de contenu créés pour les applications AEM as a Cloud Service doi
 
 >[!NOTE]
 >
->Les packages ne peuvent renfermer que du contenu. Toute fonctionnalité (par exemple, contenu stocké sous `/apps`) doit être [déployée à l’aide de votre pipeline CI/CD dans Cloud Manager.](/help/implementing/cloud-manager/deploy-code.md)
+>Les packages ne peuvent renfermer que du contenu. Toute fonctionnalité (par exemple, contenu stocké sous `/apps`) doit être [déployée à l’aide de votre pipeline CI/CD dans Cloud Manager](/help/implementing/cloud-manager/deploy-code.md).
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,7 @@ Les packages de contenu créés pour les applications AEM as a Cloud Service doi
 >
 >N’essayez pas d’effectuer une nouvelle installation si une telle erreur s’affiche. L’installation se déroule correctement en arrière-plan. Si vous redémarrez l’installation, plusieurs processus d’importation simultanés peuvent provoquer des conflits.
 
-Pour plus d’informations sur la gestion des packages pour AEMaaCS, consultez le document [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md) dans le guide d’utilisation du déploiement.
+Pour plus d’informations sur la gestion des modules pour AEMaaCS, voir [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md) dans le guide d’utilisation du déploiement.
 
 ## Taille du module {#package-size}
 
@@ -110,7 +110,7 @@ Le gestionnaire de packages est divisé en quatre zones fonctionnelles principal
 * **Journal d’activité** - Ce panneau est d’abord réduit et se développe pour détailler l’activité du gestionnaire de packages, comme lorsqu’un package est créé ou installé. L’onglet Journal d’activité comporte des boutons supplémentaires pour :
    * **Effacer le journal**
    * **Afficher/Masquer**
-* **Barre d’outils** - La barre d’outils contient des boutons d’actualisation pour le panneau de navigation de gauche et la liste des packages, ainsi que des boutons pour rechercher, créer et charger des packages.
+* **Barre d’outils** - La barre d’outils contient des boutons d’actualisation pour le panneau de navigation de gauche et la liste de modules, ainsi que des boutons permettant de rechercher, créer et charger des modules.
 
 ![Interface utilisateur du gestionnaire de packages](assets/package-manager-ui.png)
 
@@ -194,8 +194,8 @@ Lors de la création de filtres, vous pouvez définir un chemin dʼaccès ou uti
 
 | Type de règle | Description |
 |---|---|
-| inclusion | L’inclusion d’un répertoire inclut le répertoire en question et l’ensemble des fichiers et des dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière) mais n’inclut **pas** d’autres fichiers ou dossiers situés sous le chemin d’accès racine spécifié. |
-| exclusion | L’exclusion d’un répertoire exclut le répertoire en question et l’ensemble des fichiers et des dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière). |
+| inclusion | L’inclusion d’un répertoire inclut ce répertoire et tous les fichiers et dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière), mais **ne sera pas** d’inclure d’autres fichiers ou dossiers sous le chemin d’accès racine spécifié. |
+| exclusion | L’exclusion d’un répertoire exclut ce répertoire ainsi que tous les fichiers et dossiers de ce répertoire (c’est-à-dire la sous-arborescence entière). |
 
 Les filtres de package sont le plus souvent définis lors de la première [création du package.](#creating-a-new-package) Cependant, ils peuvent également être modifiés ultérieurement. Le package devra alors être recréé pour mettre à jour son contenu en fonction des nouvelles définitions de filtre.
 

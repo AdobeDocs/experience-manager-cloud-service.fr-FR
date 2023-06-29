@@ -2,9 +2,9 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: cf1e2717342ca4e00780428d6ccf264bd8eca371
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2274'
 ht-degree: 36%
 
 ---
@@ -163,7 +163,7 @@ Un utilisateur disposant des autorisations requises doit effectuer les étapes s
 
    * Voir [Application et annulation de l’application de Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/apply-allow-list.md) pour plus d’informations.
 
-1. Utilisez le workflow de mise à jour de la **liste d’adresses IP autorisées** pour supprimer l’adresse IP par défaut et ajouter la ou les adresses IP, le cas échéant. Consultez le document [Gestion des listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) pour en savoir plus.
+1. Utilisez le workflow de mise à jour de la **liste d’adresses IP autorisées** pour supprimer l’adresse IP par défaut et ajouter la ou les adresses IP, le cas échéant. Voir [Gestion des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/managing-ip-allow-lists.md) pour en savoir plus.
 
 Une fois l’accès au service de prévisualisation déverrouillé, l’icône de verrouillage devant le nom du service de prévisualisation ne s’affiche plus.
 

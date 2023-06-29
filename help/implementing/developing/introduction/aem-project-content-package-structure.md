@@ -2,7 +2,7 @@
 title: Structure de projet AEM
 description: Découvrez comment définir des structures de package en vue d’un déploiement sur Adobe Experience Manager Cloud Service.
 exl-id: 38f05723-5dad-417f-81ed-78a09880512a
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2918'
 ht-degree: 56%
@@ -181,7 +181,7 @@ Les scripts Repo Init sont stockés sous la forme `scripts` entrées de `Reposit
 
 Les configurations OSGi Repo Init sont mieux écrites dans le [`.config` format de configuration OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-config-1), car elles prennent en charge plusieurs lignes, ce qui est une exception aux bonnes pratiques d’utilisation de [`.cfg.json` pour définir des configurations OSGi](https://sling.apache.org/documentation/bundles/configuration-installer-factory.html#configuration-files-cfgjson-1).
 
-Lors de la définition des utilisateurs et des groupes, seuls les groupes sont considérés comme faisant partie de l’application et faisant partie intégrante de sa fonction. Vous définissez toujours des utilisateurs et des groupes d’organisation au moment de l’exécution dans AEM. Par exemple, si un workflow personnalisé attribue du travail à un groupe nommé, définissez ce groupe au moyen de Repo Init dans l’application AEM. Cependant, si le groupement est simplement organisationnel, comme &quot;l&#39;équipe de Wendy&quot; et &quot;l&#39;équipe de Sean&quot;, ces groupes sont mieux définis et gérés au moment de l&#39;exécution dans AEM.
+Lors de la définition des utilisateurs et des groupes, seuls les groupes sont considérés comme faisant partie de l’application et faisant partie intégrante de sa fonction. Vous définissez toujours des utilisateurs et des groupes d’organisation au moment de l’exécution dans AEM. Par exemple, si un workflow personnalisé affecte du travail à un groupe nommé, définissez ce groupe au moyen de Repo Init dans l’application AEM. Cependant, si le groupement est simplement organisationnel, comme &quot;l&#39;équipe de Wendy&quot; et &quot;l&#39;équipe de Sean&quot;, ces groupes sont mieux définis et gérés au moment de l&#39;exécution dans AEM.
 
 >[!TIP]
 >
@@ -558,7 +558,7 @@ Dans le projet Reactor `pom.xml`, ajoutez toute directive de référentiel Maven
   ...
   <repository>
       <id>3rd-party-repository</id>
-      <name>Public 3rd Party Repository</name>
+      <name>Public Third-Party Repository</name>
       <url>https://repo.3rdparty.example.com/...</url>
       <releases>
           <enabled>true</enabled>

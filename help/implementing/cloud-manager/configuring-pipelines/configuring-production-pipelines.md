@@ -3,10 +3,10 @@ title: Configuration des pipelines de production
 description: Découvrez comment configurer des pipelines de production pour créer et déployer votre code dans les environnements de production.
 index: true
 exl-id: 67edca16-159e-469f-815e-d55cf9063aa4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 91%
+source-wordcount: '1509'
+ht-degree: 90%
 
 ---
 
@@ -137,7 +137,7 @@ Pour terminer la configuration du pipeline de production de code full stack, pro
 
 1. Cliquez sur **Enregistrer** pour enregistrer votre pipeline.
 
-Les chemins configurés pour le contrôle de l’expérience sont soumis au service et évalués en fonction des tests de performances, d’accessibilité, d’optimisation du moteur de recherche (SEO), de bonnes pratiques et de PWA (application web progressive) lors de l’exécution du pipeline. Pour plus d’informations, voir [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
+Les chemins configurés pour le contrôle de l’expérience sont soumis au service et évalués en fonction des tests de performances, d’accessibilité, d’optimisation du moteur de recherche (SEO), de bonnes pratiques et de PWA (application web progressive) lors de l’exécution du pipeline. Voir [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md) pour plus d’informations.
 
 Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](managing-pipelines.md) dans le carte **Pipelines** dans la page **Aperçu du programme**.
 
@@ -177,7 +177,7 @@ Le pipeline est enregistré et vous pouvez maintenant [gérer vos pipelines](man
 
 Avec les pipelines front-end, les développeurs front-end bénéficient d’une plus grande indépendance et le processus de développement peut être accéléré.
 
-Reportez-vous au document [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus, ainsi que quelques considérations à prendre en compte pour tirer pleinement parti de ce processus.
+Voir [Développement de sites avec le pipeline front-end](/help/implementing/developing/introduction/developing-with-front-end-pipelines.md) pour connaître le fonctionnement de ce processus, ainsi que quelques considérations à prendre en compte pour tirer pleinement parti de ce processus.
 
 ## Ignorer les packages du Dispatcher {#skip-dispatcher-packages}
 

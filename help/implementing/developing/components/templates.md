@@ -2,10 +2,10 @@
 title: Modèles de page
 description: Les modèles de page sont utilisés lors de la création d’une page qui sert de base à la nouvelle page.
 exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
-ht-degree: 80%
+ht-degree: 78%
 
 ---
 
@@ -197,7 +197,7 @@ Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes 
 
 ### Utilisation de l’explorateur de configurations {#using-the-configuration-browser}
 
-1. Accédez à **Navigation globale** > **Outils** > [**Explorateur de configurations**.](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
+1. Accédez à **Navigation globale** > **Outils** > [**Explorateur de configurations**](/help/implementing/developing/introduction/configurations.md#using-configuration-browser).
 
    Les dossiers existants sont répertoriés à gauche, y compris le dossier `global`.
 
@@ -328,7 +328,7 @@ Les définitions de vos types de modèle personnalisés doivent être stockées 
 
 >[!CAUTION]
 >
->Les types de modèle doivent respecter la structure de dossiers correcte (à savoir `/settings/wcm/...`). Dans le cas contraire, ils seront introuvables.
+>Les types de modèles doivent respecter la structure de dossiers correcte (c’est-à-dire : `/settings/wcm/...`), sinon les types de modèle sont introuvables.
 
 <!--
 ### Template Type and Mobile Device Groups {#template-type-and-mobile-device-groups-br}
@@ -538,9 +538,9 @@ Lors du rendu d’une page :
 * **Composants** :
 
    * Le composant de page fusionnera l’arborescence `structure/jcr:content` du modèle avec l’arborescence `jcr:content` de la page.
-      * Le composant de page autorisera uniquement l’auteur à modifier les nœuds de la structure du modèle qui ont été marqués comme étant modifiables (ainsi que ses éventuels enfants).
+      * Le composant de page permet uniquement à l’auteur de modifier les noeuds de la structure de modèle qui ont été marqués comme modifiables (et tous les enfants).
       * Lors du rendu d’un composant sur une page, le chemin relatif de ce composant est extrait de la propriété `jcr:content` Noeud; le même chemin sous `policies/jcr:content` du modèle est ensuite recherché.
-         * La propriété `cq:policy` de ce nœud pointe vers la politique de contenu proprement dite (en d’autres termes, elle contient la configuration de conception de ce composant).
+         * Le `cq:policy` de ce noeud pointe vers la stratégie de contenu proprement dite (c’est-à-dire qu’il contient la configuration de conception de ce composant).
             * De cette manière, vous pouvez disposer de plusieurs modèles qui réutilisent les mêmes configurations de politique de contenu.
 
 ### Disponibilité des modèles {#template-availability}

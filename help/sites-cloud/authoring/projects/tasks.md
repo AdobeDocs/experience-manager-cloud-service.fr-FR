@@ -2,10 +2,10 @@
 title: Utilisation de tâches
 description: Les tâches représentent des éléments de travail à effectuer sur le contenu et sont utilisées dans les projets pour déterminer le niveau d’exhaustivité des tâches en cours.
 exl-id: 66f95a1f-34d0-4e2e-aa8c-addc2029a1d9
-source-git-commit: fef0aef0d440eaedbf1a88cba0640e1f98e85e3e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '578'
-ht-degree: 45%
+source-wordcount: '576'
+ht-degree: 42%
 
 ---
 
@@ -23,7 +23,7 @@ Vous pouvez suivre la progression du projet en examinant les tâches principales
 
 * **Liste Tâches :** lorsque vous cliquez sur la mosaïque Tâches, la liste des tâches s’affiche. Cette liste contient des informations détaillées sur toutes les tâches liées au projet.
 
-Ces deux éléments répertorient les tâches de workflow, ainsi que les tâches que vous créez directement dans la mosaïque **Tâches**.
+Répertorier les tâches de workflow et les tâches que vous créez directement dans **Tâches** mosaïque.
 
 ### Mosaïque Tâches {#task-tile}
 

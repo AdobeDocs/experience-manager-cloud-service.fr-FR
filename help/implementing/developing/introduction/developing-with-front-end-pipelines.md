@@ -2,10 +2,10 @@
 title: Développer des sites avec le pipeline front-end
 description: Grâce au pipeline front-end, les développeurs et développeuses front-end bénéficient d’une plus grande indépendance et le processus de développement peut gagner considérablement en rapidité. Ce document décrit certains éléments particuliers du processus de création front-end qui doivent être pris en compte.
 exl-id: 996fb39d-1bb1-4dda-a418-77cdf8b307c5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 93%
+source-wordcount: '1155'
+ht-degree: 91%
 
 ---
 
@@ -58,7 +58,7 @@ Les étapes suivantes sont généralement recommandées lorsqu’il est nécessa
 
 1. L’équipe back-end configure d’abord un environnement de développement avec la nouvelle sortie HTML et/ou JSON.
    1. Par le biais du pipeline de pile complète, ils déploient le code nécessaire pour effectuer le rendu de la nouvelle sortie HTML et/ou JSON souhaitée.
-   1. S’il s’agit d’un environnement auquel l’équipe front-end n’avait pas auparavant accès, les étapes suivantes doivent être effectuées.
+   1. S’il s’agit d’un environnement auquel l’équipe front-end n’avait pas auparavant accès, les étapes suivantes doivent être exécutées.
       1. URL : l’équipe front-end doit connaître l’URL de cet environnement de développement.
       1. ACL : l’équipe front-end doit disposer d’un utilisateur AEM local disposant de droits similaires à ceux des « Contributeurs ».
       1. Git : l’équipe front-end doit disposer d’un emplacement Git distinct pour le module front-end qui cible spécifiquement cet environnement de développement.

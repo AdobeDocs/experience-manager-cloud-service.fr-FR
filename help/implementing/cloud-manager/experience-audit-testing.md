@@ -2,10 +2,10 @@
 title: Tests d’audit de l’expérience
 description: Découvrez comment l’audit de l’expérience valide votre processus de déploiement et vous aide à vous assurer que les modifications déployées répondent aux normes de base en matière de performances, d’accessibilité, de bonnes pratiques et d’optimisation des moteurs de recherche.
 exl-id: 8d31bc9c-d38d-4d5b-b2ae-b758e02b7073
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 96%
+source-wordcount: '549'
+ht-degree: 91%
 
 ---
 
@@ -35,11 +35,11 @@ Le contrôle de l’expérience est optimisé par Google Lighthouse, un outil op
 
 >[!TIP]
 >
->Vous configurez les pages incluses dans le contrôle de l’expérience lorsque vous [configurez votre pipeline.](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code)
+>Vous configurez les pages incluses dans le contrôle de l’expérience lorsque vous [configurez votre pipeline](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md#full-stack-code).
 
 ## Comprendre les résultats de l’audit de l’expérience {#understanding-experience-audit-results}
 
-L’audit de l’expérience fournit des résultats de test au niveau de la page agrégés et détaillés via la [page d’exécution du pipeline de production.](/help/implementing/cloud-manager/deploy-code.md)
+L’audit de l’expérience fournit des résultats de test au niveau de la page agrégés et détaillés via la [page d’exécution du pipeline de production](/help/implementing/cloud-manager/deploy-code.md).
 
 * Les mesures agrégées déterminent le score moyen sur les pages ayant fait l’objet d’un audit en termes de performances, d’accessibilité, de bonnes pratiques et d’optimisation du moteur de recherche (SEO).
 * Des scores individuels au niveau de la page sont également disponibles via une analyse en profondeur.
@@ -68,6 +68,6 @@ La mesure de modification peut avoir l’une des valeurs suivantes.
 
 En analysant en profondeur n’importe lequel des tests, vous obtiendrez des scores au niveau de la page plus détaillés. Vous pouvez voir le score des pages individuelles pour le test spécifique, ainsi que la modification par rapport à l’exécution de test précédente.
 
-Cliquer sur les détails d’une page individuelle donnée fournit des informations sur les éléments de la page qui avaient été évalués, ainsi que des conseils pour résoudre les problèmes si des opportunités d’amélioration sont détectées.
+Cliquer sur les détails d’une page spécifique fournit des informations sur les éléments de la page qui ont été évalués et des conseils pour résoudre les problèmes si des opportunités d’amélioration sont détectées.
 
 ![Scores au niveau de la page](/help/implementing/cloud-manager/assets/exp-audit-2.png)

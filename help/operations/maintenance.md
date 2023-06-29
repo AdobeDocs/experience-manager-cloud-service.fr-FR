@@ -2,7 +2,7 @@
 title: Tâches de maintenance dans AEM as a Cloud Service
 description: Tâches de maintenance dans AEM as a Cloud Service
 exl-id: 5b114f94-be6e-4db4-bad3-d832e4e5a412
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 89%
@@ -44,7 +44,7 @@ Le tableau suivant illustre les tâches de maintenance disponibles au moment de 
   <tr>
     <td>Purge de version</td>
     <td>Adobe</td>
-    <td>Pour les environnements existants (ceux créés avant le 1er juin 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client ou la cliente l’a explicitement activée ; à ce moment-là, il ou elle peut également la configurer avec des valeurs personnalisées.<br><br> <!--Alexandru: please leave the two line breaks in place, otherwise spacing won't render properly-->La purge sera activée par défaut pour les nouveaux environnements (ceux créés à partir du 1er juin 2023) avec les valeurs ci-dessous, et les clients et les clientes pourront effectuer une configuration avec des valeurs personnalisées.
+    <td>Pour les environnements existants (ceux créés avant le 1er juin 2023), la purge est désactivée et ne sera plus activée à l’avenir, sauf si le client ou la cliente l’a explicitement activée ; à ce moment-là, il ou elle peut également la configurer avec des valeurs personnalisées.<br><br> <!--Alexandru: leave the two line breaks in place, otherwise spacing won't render properly-->La purge sera activée par défaut pour les nouveaux environnements (ceux créés à partir du 1er juin 2023) avec les valeurs ci-dessous, et les clients et les clientes pourront effectuer une configuration avec des valeurs personnalisées.
      <ol>
        <li>Les versions de plus de 30 jours sont supprimées</li>
        <li>Les 5 versions les plus récentes des 30 derniers jours sont conservées.</li>

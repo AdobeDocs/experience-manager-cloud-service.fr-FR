@@ -2,10 +2,10 @@
 title: Votre boîte de réception
 description: Gestion de vos tâches avec la boîte de réception
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 77%
+source-wordcount: '906'
+ht-degree: 73%
 
 ---
 
@@ -25,7 +25,7 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 
 >[!NOTE]
 >
->Pour plus d’informations sur les types d’éléments, voir aussi :
+>Pour plus d’informations sur les types d’éléments, voir :
 >
 >* [Projets](/help/sites-cloud/authoring/projects/overview.md)
 >* [Projets – Utilisation des Tâches](/help/sites-cloud/authoring/projects/tasks.md)
@@ -102,7 +102,7 @@ Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres 
 
   ![Boîte de réception – Paramètres de la vue Liste](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  Vous pouvez également déléguer votre calendrier à d’autres fins, demander la délégation à d’autres utilisateurs ou encore gérer vos délégations.
+  Vous pouvez également déléguer votre calendrier à d’autres fins, demander la délégation à d’autres utilisateurs et gérer vos délégations.
 
   ![Boîte de réception – Paramètres de délégation de la vue Liste](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 
@@ -132,7 +132,7 @@ Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres 
 
    >[!NOTE]
    >
-   >Pour plus d’informations, voir :
+   >Pour plus d’informations, consultez les sections suivantes :
    >
    >* Éléments de workflow – [Participation aux workflows](/help/sites-cloud/authoring/workflows/participating.md)
 

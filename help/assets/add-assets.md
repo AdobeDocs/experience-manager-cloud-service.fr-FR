@@ -4,9 +4,9 @@ description: Ajoutez vos ressources numériques à [!DNL Adobe Experience Manage
 feature: Asset Management,Upload
 role: User,Admin
 exl-id: 0e624245-f52e-4082-be21-13cc29869b64
-source-git-commit: 2b597707a26726eec26541c04914ac36e8909fc5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3157'
+source-wordcount: '3156'
 ht-degree: 81%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 81%
 
 Outre le chargement de navigateur le plus souvent utilisé, d’autres méthodes d’ajout de ressources à la variable [!DNL Experience Manager] existe. Ces autres méthodes incluent les clients de bureau, comme Adobe Asset Link ou [!DNL Experience Manager] l’appli de bureau, les scripts de chargement et d’ingestion créés par les clients et les intégrations d’ingestion automatisées ajoutées sous la forme [!DNL Experience Manager] extensions.
 
-[!DNL Experience Manager] permet de charger et de gérer n’importe quel fichier binaire. Cependant, les formats de fichiers les plus courants prennent en charge des services supplémentaires, tels que l’extraction de métadonnées ou la génération d’aperçus et de rendus. Pour plus d’informations, reportez-vous aux [formats de fichiers pris en charge](file-format-support.md).
+[!DNL Experience Manager] permet de charger et de gérer n’importe quel fichier binaire. Cependant, les formats de fichiers les plus courants prennent en charge des services supplémentaires, tels que l’extraction de métadonnées ou la génération d’aperçus et de rendus. Voir [formats de fichiers pris en charge](file-format-support.md) pour plus d’informations.
 
 Vous pouvez également choisir d’effectuer un traitement supplémentaire sur les fichiers chargés. Plusieurs profils de traitement de ressources peuvent être configurés sur le dossier dans lequel les ressources sont chargées afin d’ajouter des métadonnées, des rendus ou des services de traitement d’images spécifiques. Voir [Traitement des ressources lorsqu’elles sont chargées](#process-when-uploaded).
 

@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1147'
-ht-degree: 84%
+source-wordcount: '1142'
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ Pour créer du contenu pour une application à l’aide d’Universal Editor, l�
 
 >[!TIP]
 >
->Consultez le document [Prise en main de l’éditeur universel dans AEM](getting-started.md) pour obtenir un exemple de configuration d’une application AEM pour qu’elle fonctionne avec l’éditeur universel.
+>Voir [Prise en main d’Universal Editor dans AEM](getting-started.md) pour obtenir un exemple de configuration d’une application AEM pour qu’elle fonctionne avec l’éditeur universel.
 
 ## Se connecter {#sign-in}
 
@@ -84,7 +84,7 @@ L’icône d’aide permet d’accéder rapidement aux ressources d’apprentiss
 
 #### Notifications {#notifications}
 
-Cette icône comporte un badge indiquant le nombre d’éléments incomplets actuellement attribués. [notifications.](/help/implementing/cloud-manager/notifications.md)
+Cette icône comporte un badge indiquant le nombre d’éléments incomplets actuellement attribués. [notifications](/help/implementing/cloud-manager/notifications.md).
 
 ![Notifications](assets/notifications.png)
 
@@ -96,7 +96,7 @@ Appuyez ou cliquez sur l’icône représentant votre utilisateur ou votre utili
 
 ### En-tête de l’éditeur universel {#universal-editor-header}
 
-L’en-tête de l’éditeur universel est toujours présent en haut de l’écran, juste en dessous de [l’en-tête Experience Cloud.](#experience-cloud-header) Il vous permet d’accéder rapidement à une autre page à modifier et de publier la page active.
+L’en-tête de l’éditeur universel est toujours présent en haut de l’écran, juste en dessous de [l’en-tête Experience Cloud.](#experience-cloud-header) Il vous permet d’accéder rapidement à une autre page pour la modifier et la publier.
 
 ![En-tête de l’éditeur universel](assets/universal-editor-header.png)
 

@@ -5,10 +5,10 @@ index: true
 hide: false
 hidefromtoc: false
 exl-id: d1a3eb42-e9e4-4118-9ff7-7aab5519cf0d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 96%
+source-wordcount: '1164'
+ht-degree: 94%
 
 ---
 
@@ -82,7 +82,7 @@ Pour créer une configuration de traduction :
 1. Cliquez ou appuyez sur **Créer** dans la barre d’outils pour créer la configuration.
 1. Fournissez les informations suivantes dans les champs requis, puis cliquez ou appuyez sur **Créer**
    1. Sélectionnez **Type de configuration** dans la liste déroulante. Sélectionnez **Intégration de traduction** dans la liste.
-   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud** ainsi que dans les listes déroulantes de propriétés de la page.
+   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la variable **Cloud Services** console et dans les listes déroulantes des propriétés de page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
 
    ![Créer une configuration de traduction](assets/create-translation-configuration.png)

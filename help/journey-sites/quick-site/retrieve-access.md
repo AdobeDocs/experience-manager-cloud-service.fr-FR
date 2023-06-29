@@ -2,10 +2,10 @@
 title: Récupérer des informations d’accès au référentiel Git
 description: Découvrez comment le développeur front-end utilise Cloud Manager pour accéder aux informations du référentiel Git.
 exl-id: 3ef1cf86-6da4-4c09-9cfc-acafc8f6dd5c
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 100%
+source-wordcount: '891'
+ht-degree: 88%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez comment le développeur front-end utilise Cloud Manager pour accéde
 
 Si vous êtes un développeur front-end uniquement responsable de la personnalisation du thème du site, il nʼest pas nécessaire de savoir comment AEM a été configuré et vous pouvez passer à la section [Objectif](#objective) de ce document.
 
-Si vous détenez également le rôle d’administrateur Cloud Manager ou AEM en plus de celui de développeur front-end, vous avez appris dans le document précédent du parcours de création rapide de site AEM, [Octroi dʼaccès au développeur front-end,](grant-access.md) comment intégrer le développeur front-end afin quʼil ait accès au référentiel Git. À présent, vous devriez disposer des connaissances suivantes :
+Si vous jouez également le rôle d’administrateur de Cloud Manager ou d’AEM et de développeur front-end, vous avez appris dans le document précédent du parcours de création rapide de site AEM, [Accorder l’accès au développeur front-end,](grant-access.md) comment embarquer le développeur front-end pour qu’il ait accès au référentiel git. vous devez maintenant savoir :
 
 * Ajouter un développeur front-end en tant qu’utilisateur.
 * Octroyer les rôles requis au développeur front-end.
@@ -50,9 +50,9 @@ L’outil de création rapide de site permet aux développeurs front-end de trav
    * Un e-mail de bienvenue de Cloud Manager vous informant de l’accès
    * Le nom du programme ou son adresse URL dans Cloud Manager
 
-Si lʼun de ces éléments est manquant, contactez lʼadministrateur AEM ou Cloud Manager.
+Si l’un de ces éléments vous manque, contactez l’administrateur AEM ou l’administrateur Cloud Manager.
 
-Il est présumé que le développeur front-end possède une solide expérience des workflows de développement front-end ainsi que des outils courants installés, notamment :
+Il est supposé que le développeur front-end dispose d’une vaste expérience avec les workflows de développement front-end et les outils courants installés, notamment :
 
 * Git
 * npm 
@@ -72,7 +72,7 @@ L’administrateur Cloud Manager vous a à présent intégré en tant qu’util
 
 ![E-mail de bienvenue](assets/welcome-email.png)
 
-Si vous n’avez pas reçu cet e-mail, contactez l’administrateur Cloud Manager.
+Si vous n’avez pas reçu cet e-mail, contactez l’administrateur de Cloud Manager.
 
 ## Accès à Cloud Manager {#access-cloud-manager}
 

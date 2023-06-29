@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2308'
-ht-degree: 79%
+source-wordcount: '2310'
+ht-degree: 77%
 
 ---
 
@@ -941,9 +941,9 @@ Un panneau comporte une barre d’outils facultative et son contenu.
  </tbody>
 </table>
 
-Le noeud du panneau est divisé en navigateurs et en contenu. Il `` ``n’y a pas de composant de définition du style séparé pour le contenu. Les variables décrites sont appliquées sur le navigateur ainsi que sur le contenu.
+Le noeud du panneau est divisé en navigateurs et en contenu. Il `` ``n’y a pas de composant de définition du style séparé pour le contenu. Les variables décrites sont appliquées au navigateur et au contenu.
 
-Le panneau supérieur (RootPanel) ne dispose pas de cette classe.
+Le panneau le plus haut (RootPanel) ne dispose pas de cette classe.
 
 ## Styles mobiles {#mobile-styling}
 

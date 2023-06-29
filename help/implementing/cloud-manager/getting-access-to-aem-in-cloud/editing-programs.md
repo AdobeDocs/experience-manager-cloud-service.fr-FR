@@ -2,16 +2,16 @@
 title: Modification de programmes
 description: Découvrez comment modifier vos programmes de production et Sandbox pour ajuster leurs options après les avoir créés.
 exl-id: 819e4a6e-f77a-4594-a402-a300dcbdf510
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 92%
+source-wordcount: '520'
+ht-degree: 86%
 
 ---
 
 # Modification de programmes {#editing-programs}
 
-Les utilisateurs disposant des autorisations requises peuvent modifier les [programmes de production créés dans votre organisation](creating-production-programs.md) ainsi que les [programmes Sandbox créés dans votre organisation.](creating-sandbox-programs.md) En modifiant un programme, vous pouvez :
+Les utilisateurs disposant des autorisations requises peuvent modifier [programmes de production créés dans votre organisation](creating-production-programs.md) et [programmes sandbox créés dans votre entreprise.](creating-sandbox-programs.md) En modifiant un programme, vous pouvez :
 
 * Ajouter la solution Sites à un programme existant avec Assets et inversement.
 * Supprimer Sites ou Assets d’un programme existant contenant à la fois Sites et Assets.
@@ -63,7 +63,7 @@ Si la sécurité de votre programme de production a été améliorée, une **Sé
 
 ![Sécurité renforcée activée pour un programme.](assets/edit-program-enhanced.png)
 
-Ce paramètre ne peut pas être modifié une fois le programme créé. Pour plus d’informations sur l’option de sécurité renforcée, reportez-vous au document [Création de programmes de production](creating-production-programs.md).
+Ce paramètre ne peut pas être modifié une fois le programme créé. Pour plus d’informations sur l’option de sécurité améliorée, voir [Création de programmes de production](creating-production-programs.md) document.
 
 ## Suppression de programmes Sandbox {#delete-sandbox-program}
 

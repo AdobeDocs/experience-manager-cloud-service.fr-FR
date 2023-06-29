@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2408'
-ht-degree: 69%
+source-wordcount: '2409'
+ht-degree: 68%
 
 ---
 
@@ -32,8 +32,8 @@ Il s’agit d’un modèle de formulaire idéal si vous investissez dans des for
 * **Utilisation d’une définition de schéma XML (XSD) ou d’un schéma JSON**
 Les schémas XML et JSON représentent la structure dans laquelle les données sont produites ou consommées par le système principal de votre entreprise. Vous pouvez associer le schéma à un formulaire adaptatif et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif. Les éléments du schéma peuvent être utilisés dans l’onglet Objets de modèle de données de l’explorateur de contenu lors de la création d’un Forms adaptatif.
 
-* **Utilisation sans aucun modèle de formulaire**
-Les formulaires adaptatifs créés avec cette option n’utilisent aucun modèle de formulaire. Les données XML générées à partir de ce type de formulaire présentent une structure plate avec des champs et des valeurs correspondantes.
+* **Utilisation d’aucun ou sans modèle de formulaire**
+Le Forms adaptatif créé avec cette option n’utilise aucun modèle de formulaire. Les données XML générées à partir de ce type de formulaire présentent une structure plate avec des champs et des valeurs correspondantes.
 
   >[!NOTE]
   >

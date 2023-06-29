@@ -2,10 +2,10 @@
 title: Guide de référence des composants
 description: Guide de référence du développeur sur les détails des composants et de leur structure
 exl-id: 45e5265b-39d6-4a5c-be1a-e66bb7ea387d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3649'
-ht-degree: 97%
+source-wordcount: '3650'
+ht-degree: 95%
 
 ---
 
@@ -122,7 +122,7 @@ L’icône ou l’abréviation du composant est définie via les propriétés JC
 1. `abbreviation` – Propriété de chaîne servant à personnaliser l’abréviation du nom du composant dans le navigateur de composants
    * L’abréviation devrait être limitée à deux caractères.
    * La saisie d’une chaîne vide crée l’abréviation à partir des deux premiers caractères de la propriété `jcr:title`.
-      * Par exemple, « Im » pour « Image »
+      * Par exemple, &quot;Im&quot; pour &quot;Image&quot;
       * Le titre localisé est utilisé pour créer l’abréviation.
    * L’abréviation n’est traduite que si le composant possède une propriété `abbreviation_commentI18n`, qui est ensuite utilisée comme indice de traduction.
 1. `cq:icon.png` ou `cq:icon.svg` – Icône du composant, affichée dans le navigateur de composants
@@ -166,7 +166,7 @@ Un composant est un nœud de type `cq:Component` et possède les propriétés et
 | Nom | Type | Description |
 |---|---|---|
 | `.` | `cq:Component` | Ceci représente le composant actuel. Un composant possède le type de noeud `cq:Component`. |
-| `componentGroup` | `String` | Il s’agit du groupe sous lequel le composant peut être sélectionné dans le [navigateur de composants.](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser) Une valeur commençant par `.` est utilisée pour les composants qui ne peuvent pas être sélectionnés dans l’interface utilisateur, tels que les composants de base dont héritent d’autres composants. |
+| `componentGroup` | `String` | Il s’agit du groupe sous lequel le composant peut être sélectionné dans le [navigateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser). Une valeur commençant par `.` est utilisée pour les composants qui ne peuvent pas être sélectionnés dans l’interface utilisateur, tels que les composants de base dont héritent d’autres composants. |
 | `cq:isContainer` | `Boolean` | Cela indique si le composant est un composant de type « container » qui peut donc contenir d’autres composants, tels qu’un système de paragraphes. |
 | `cq:dialog` | `nt:unstructured` | Définition de la boîte de dialogue de modification du composant. |
 | `cq:design_dialog` | `nt:unstructured` | Définition de la boîte de dialogue de conception du composant. |
@@ -223,7 +223,7 @@ Dans la boîte de dialogue, des champs individuels sont définis :
 
 Les boîtes de dialogue de conception sont similaires aux boîtes de dialogue utilisées pour modifier et configurer le contenu, mais elles fournissent une interface permettant aux auteurs de modèles de configurer et de fournir des détails de conception pour ce composant sur un modèle de page. Les modèles de page sont ensuite utilisés par les auteurs de contenu pour créer des pages de contenu. Consultez la [documentation sur les modèles](/help/sites-cloud/authoring/features/templates.md) pour plus de détails sur la création des modèles.
 
-[Les boîtes de dialogue de création sont utilisées lors de la modification d’un modèle de page](/help/sites-cloud/authoring/features/templates.md), bien qu’elles ne soient pas nécessaires pour tous les composants. Par exemple, les composants **Titre** et **Image** ont tous deux des boîtes de dialogue de conception, contrairement au composant **Partage sur les réseaux sociaux**.
+[Les boîtes de dialogue de création sont utilisées lors de la modification d’un modèle de page](/help/sites-cloud/authoring/features/templates.md), bien qu’elles ne soient pas nécessaires pour tous les composants. Par exemple, la variable **Titre** et **Composants d’image** toutes deux comportent des boîtes de dialogue de conception, tandis que la propriété **Composant Partage sur les réseaux sociaux** ne le fait pas.
 
 ### IU Coral et IU Granite {#coral-and-granite}
 
@@ -321,7 +321,7 @@ Il existe de nombreuses configurations dans AEM. Vous pouvez facilement recherch
 
 Les composants doivent toujours générer du code HTML visible par l’auteur, même si le composant ne comporte aucun contenu, sans quoi il pourrait disparaître visuellement de l’interface de l’éditeur, ce qui le rend techniquement présent, mais invisible sur la page et dans l’éditeur. Dans ce cas, les auteurs ne pourraient pas sélectionner ce composant vide ni interagir avec lui.
 
-Pour cette raison, les composants doivent générer un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le WCM est en mode `edit` ou `preview`).
+Pour cette raison, les composants doivent effectuer le rendu d’un espace réservé tant qu’ils n’affichent pas de sortie visible lorsque la page est rendue dans l’éditeur de page (lorsque le mode WCM est `edit` ou `preview`).
 L’annotation HTML type d’un espace réservé est la suivante :
 
 ```HTML
@@ -383,7 +383,7 @@ La configuration suivante active la modification locale du composant et définit
 
 ### Gestion des événements de champ – cq:listeners {#cq-listeners}
 
-La méthode de gestion des événements dans les champs de boîte de dialogue est appliquée avec les écouteurs d’une [bibliothèque cliente personnalisée.](/help/implementing/developing/introduction/clientlibs.md)
+La méthode de gestion des événements dans les champs de boîte de dialogue est appliquée avec les écouteurs d’une [bibliothèque cliente personnalisée](/help/implementing/developing/introduction/clientlibs.md).
 
 Pour injecter une logique dans votre champ, vous devez :
 
@@ -416,7 +416,7 @@ Le nœud `cq:listeners` (type de nœud `cq:EditListenersConfig`) définit ce qui
 >* `aftermove`
 >* `aftercopy`
 
-Le gestionnaire d’événements peut être mis en œuvre avec une implémentation personnalisée. Par exemple (où `project.customerAction` est une méthode statique) :
+Le gestionnaire d’événements peut être mis en œuvre avec une implémentation personnalisée. Par exemple, (où `project.customerAction` est une méthode statique) :
 
 `afteredit = "project.customerAction"`
 
@@ -469,7 +469,7 @@ Il suffit de placer un fichier `README.md` dans la structure du composant.
 
 ![README.md dans la structure de composants](assets/components-documentation.png)
 
-Ce MarkDown est ensuite affiché dans la [console du composant.](/help/sites-cloud/authoring/features/components-console.md)
+Ce MarkDown est ensuite affiché dans la [console du composant](/help/sites-cloud/authoring/features/components-console.md).
 
 ![README.md visible dans la console de composants](assets/components-documentation-console.png)
 

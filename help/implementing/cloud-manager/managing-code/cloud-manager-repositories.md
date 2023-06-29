@@ -2,10 +2,10 @@
 title: Référentiels Cloud Manager
 description: Découvrez comment créer, afficher et supprimer vos référentiels Git dans Cloud Manager.
 exl-id: 6e1cf636-78f5-4270-9a21-38b4d5e5a0b0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 96%
+source-wordcount: '575'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez comment créer, afficher et supprimer vos référentiels Git dans Clo
 >
 >Les référentiels sont limités à 300 pour tous les programmes d’une société ou d’une organisation IMS donnée.
 
-## Ajouter et gérer des référentiels {#add-manage-repos}
+## Ajout et gestion de référentiels {#add-manage-repos}
 
 Suivez ces étapes pour afficher et gérer les référentiels dans Cloud Manager.
 
@@ -38,7 +38,7 @@ Vous pouvez sélectionner le référentiel dans le tableau, puis cliquer sur le 
 
 ![Options du référentiel](/help/implementing/cloud-manager/assets/repos/create-repo3.png)
 
-Vous pouvez également sélectionner les référentiels créés dans Cloud Manager lors de l’ajout ou de la modification de pipelines. Consultez le document [Pipelines CI/CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour en savoir plus.
+Vous pouvez également sélectionner les référentiels créés dans Cloud Manager lors de l’ajout ou de la modification de pipelines. Voir [Pipelines CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour en savoir plus.
 
 Il existe un référentiel principal unique ou une branche pour chaque pipeline donné. Grâce à la [prise en charge des sous-modules Git](#git-submodule-support), de nombreuses branches secondaires peuvent être incluses au moment de la création.
 
@@ -76,7 +76,7 @@ $ git submodule update --init
 
 Cette technique constitue une alternative potentielle à la solution décrite dans le document [Utiliser plusieurs référentiels Git sources](/help/implementing/cloud-manager/managing-code/working-with-multiple-source-git-repositories.md) pour les organisations qui maîtrisent l’utilisation des sous-modules Git et qui ne souhaitent pas gérer de processus de fusion externe.
 
-Par exemple, supposons qu’il existe trois référentiels, chacun contenant une seule branche nommée `main`. Dans le référentiel principal, c’est-à-dire celui qui est configuré dans les pipelines, la branche `main` contient un fichier `pom.xml` qui déclare les projets contenus dans les deux autres référentiels.
+Par exemple, supposons qu’il existe trois référentiels, chacun contenant une seule branche nommée `main`. Dans le référentiel Principal, c’est-à-dire celui configuré dans les pipelines, la variable `main` comporte une branche `pom.xml` déclarant les projets contenus dans les deux autres référentiels.
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -121,7 +121,7 @@ Pour plus d’informations sur les sous-modules Git, consultez le [Manuel de ré
 
 ### Restrictions et recommandations {#limitations-recommendations}
 
-Lors de l’utilisation de sous-modules Git, tenez compte des limitations suivantes.
+Lors de l’utilisation de sous-modules git, tenez compte des limites suivantes.
 
 * L’URL Git doit se trouver exactement dans la syntaxe décrite dans la section précédente.
 * Seuls les sous-modules situés à la racine de la branche sont pris en charge.

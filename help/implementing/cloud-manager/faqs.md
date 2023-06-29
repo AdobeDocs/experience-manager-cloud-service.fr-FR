@@ -2,7 +2,7 @@
 title: FAQ relatives à Cloud Manager
 description: Trouvez des réponses aux questions les plus fréquemment posées sur Cloud Manager dans AEM as a Cloud Service.
 exl-id: eed148a3-4a40-4dce-bc72-c7210e8fd550
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 66%
@@ -58,11 +58,11 @@ Cette valeur permet de continuer à installer le déploiement suivant lorsque la
 
 Vous pouvez également définir la version sur `-SNAPSHOT` pour les builds ou déploiements d’évaluation et de production. Cloud Manager définit automatiquement un numéro de version approprié et crée pour vous une balise dans git. Cette balise peut être référencée ultérieurement, si nécessaire.
 
-Pour plus d’informations sur la gestion des versions, reportez-vous à la section [documentée ici.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+De plus amples détails sur la gestion des versions sont [documentés ici](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 ## Comment le contrôle de version des packages et des lots fonctionne-t-il pour les déploiements d’évaluation et de production ? {#snapshot-version}
 
-En cas de déploiement d’évaluation et de production, une version automatique est générée comme indiqué [ici.](/help/implementing/cloud-manager/managing-code/project-version-handling.md)
+En cas de déploiement d’évaluation et de production, une version automatique est générée comme indiqué [ici](/help/implementing/cloud-manager/managing-code/project-version-handling.md).
 
 Pour le contrôle de version personnalisé dans les déploiements d’évaluation et de production, définissez une version maven en trois parties, telle que `1.0.0`. Passez à la version supérieure à chaque déploiement en production.
 

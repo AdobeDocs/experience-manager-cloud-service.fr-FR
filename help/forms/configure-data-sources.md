@@ -5,9 +5,9 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2195'
+source-wordcount: '2192'
 ht-degree: 91%
 
 ---
@@ -170,7 +170,7 @@ Voici quelques-unes des opérations non prises en charge par la version 3.0 de l
 * Liens
 * Différents corps de requête pour différents types MIME pour une seule opération.
 
-Vous pouvez consulter les [Spécifications OpenAPI 3.0](https://swagger.io/specification/v3/) pour plus d’informations.
+Voir [Spécification OpenAPI 3.0](https://swagger.io/specification/v3/) pour plus d’informations.
 
 ### Configuration du client HTTP du modèle de données de formulaire pour optimiser les performances {#fdm-http-client-configuration}
 

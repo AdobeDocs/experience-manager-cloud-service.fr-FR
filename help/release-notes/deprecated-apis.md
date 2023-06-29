@@ -2,10 +2,10 @@
 title: API obsolètes
 description: Notes de mise à jour dédiées aux API obsolètes et supprimées dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service].
 exl-id: fbd8c60a-3e2b-4696-aaba-f4db97923184
-source-git-commit: 9e722de86e925cb8de626dc16624954dfac063cc
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1120'
-ht-degree: 95%
+source-wordcount: '1116'
+ht-degree: 92%
 
 ---
 
@@ -111,7 +111,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
   </tr>
   <tr>
     <td>org.apache.felix.metatype<br>org.apache.felix.scr<br>org.apache.felix.scr.info<br>Composant org.apache.felix.scr</td>
-    <td>Le métatype Apache Felix et les API SCR sont obsolètes. Veuillez utiliser le métatype OSGi et les API Declarative Service à la place.</td>
+    <td>Le métatype Apache Felix et les API SCR sont obsolètes. Utilisez plutôt le métatype OSGi et les API de service déclaratif .</td>
     <td>27/05/2021</td>
     <td>supprimée</td>
   </tr>
@@ -158,7 +158,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
   </tr>
   <tr>
     <td>org.apache.felix.http.whiteboard</td>
-    <td>Le tableau blanc HTTP Apache Felix nʼest plus pris en charge. Migrez votre code vers le tableau blanc HTTP OSGI.</td>
+    <td>Le tableau blanc HTTP Apache Felix nʼest plus pris en charge. Migrez votre code vers OSGi Http Whiteboard.</td>
     <td>27/01/2022</td>
     <td>24/03/2022</td>
   </tr>
@@ -206,7 +206,7 @@ Vous trouverez ci-dessous la liste exhaustive des API d’AEM obsolètes et leur
   </tr>
   <tr>
     <td>com.day.cq.contentsync.handler.util</td>
-    <td>Cette API est obsolète. Utilisez les créateurs de ressources d’Apache Sling à la place.</td>
+    <td>Cette API est obsolète. Utilisez plutôt les créateurs d’Apache Sling.</td>
     <td>31/10/2022</td>
     <td>01/01/2023</td>
   </tr>

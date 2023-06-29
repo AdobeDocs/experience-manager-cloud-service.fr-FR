@@ -1,17 +1,17 @@
 ---
 title: Composant de page SPA
-description: Dans une SPA, le composant de page ne fournit pas les éléments HTML de ses composants enfants, mais à la place délègue cette tâche au framework SPA. Ce document explique comment cela rend le composant de page SPA unique.
+description: Dans un SPA, le composant de page ne fournit pas les éléments de HTML de ses composants enfants, mais le délègue à la place à la structure SPA. Ce document explique comment cela rend le composant de page SPA unique.
 exl-id: 41b56a60-ebb8-499d-a0ab-a2e920f26227
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 100%
+source-wordcount: '602'
+ht-degree: 89%
 
 ---
 
 # Composant de page SPA {#spa-page-component}
 
-Le composant de page d’une application sur une seule page (SPA) ne fournit pas les composants HTML de ses composants enfants via un fichier HTL ou JSP et des objets de ressource. Cette opération est déléguée à la structure SPA. La représentation des composants enfants est récupérée en tant que structure de données JSON (à savoir le modèle). Les composants SPA sont ensuite ajoutés à la page conformément au modèle JSON fourni. En tant que telle, la composition initiale du corps du composant de page diffère de celle du code HTML prérendu.
+Le composant de page d’un SPA ne fournit pas les éléments de HTML de ses composants enfants via un fichier JSP ou HTL et des objets de ressource. Cette opération est déléguée à la structure SPA. La représentation des composants enfants est récupérée en tant que structure de données JSON (c’est-à-dire le modèle). Les composants SPA sont ensuite ajoutés à la page conformément au modèle JSON fourni. En tant que telle, la composition initiale du corps du composant de page diffère de celle du code HTML prérendu.
 
 ## Gestion du modèle de page {#page-model-management}
 

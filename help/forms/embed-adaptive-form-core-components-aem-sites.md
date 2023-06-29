@@ -6,7 +6,7 @@ feature: Adaptive Forms
 hide: true
 hidefromtoc: true
 exl-id: 1046231f-787c-4e49-9ba0-e7dd59e41bce
-source-git-commit: 1d5641dd07cc68dade247fe30bb57663872e5560
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2135'
 ht-degree: 13%
@@ -112,12 +112,12 @@ Dans le [!UICONTROL Modifier le conteneur Forms adaptatif] , vous pouvez spécif
    * **Service de préremplissage**: Vous pouvez utiliser le service de préremplissage pour remplir automatiquement les champs d’un formulaire adaptatif à l’aide de données existantes. Lorsqu’un utilisateur ouvre un formulaire, les valeurs de ces champs sont préremplies. Pour plus d’informations sur le service de préremplissage, voir [Préremplir les champs de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html#configuring-prefill-service-using-configuration-manager)
    * **Catégorie de bibliothèque cliente**: Spécifiez la variable [Fonctions JavaScript](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=en#custom-functions) qui sont utilisés dans les expressions et pris en charge par Adaptive Forms.
 * **Modèle de données**: Un modèle de données vous permet d’intégrer des entités et des services provenant de sources de données disparates à un formulaire adaptatif. Choisir **[!UICONTROL Modèle de données de formulaire]** si le formulaire adaptatif que vous créez implique la récupération et l’écriture de données à partir de et vers plusieurs sources de données.
-   * **Modèle de données de formulaire**: Un modèle de données de formulaire permet à un formulaire adaptatif de communiquer avec des sources de données disparates. Pour plus d’informations sur la configuration d’une source de données, voir [Configurez les sources de données.](/help/forms/configure-data-sources.md)
+   * **Modèle de données de formulaire**: Un modèle de données de formulaire permet à un formulaire adaptatif de communiquer avec des sources de données disparates. Pour plus d’informations sur la configuration d’une source de données, voir [Configuration des sources de données](/help/forms/configure-data-sources.md).
    * **Schéma**: Le schéma représente la structure dans laquelle les données sont générées ou utilisées par le système principal de votre entreprise. Vous pouvez [associer le schéma à un formulaire adaptatif ;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/adaptive-form-json-schema-form-model.html) et utiliser ses éléments pour ajouter du contenu dynamique à un formulaire adaptatif.
 
-      >[!NOTE]
-      >
-      > Après avoir configuré le modèle de données de formulaire, vous ne pouvez pas modifier le modèle de formulaire associé. Il est toutefois possible de modifier le schéma associé au modèle de données de formulaire.
+     >[!NOTE]
+     >
+     > Après avoir configuré le modèle de données de formulaire, vous ne pouvez pas modifier le modèle de formulaire associé. Il est toutefois possible de modifier le schéma associé au modèle de données de formulaire.
 
 * **Onglet Envoi**
 
@@ -133,7 +133,7 @@ Dans le [!UICONTROL Modifier le conteneur Forms adaptatif] , vous pouvez spécif
          * Envoyer à OneDrive
          * Envoyer au stockage Blob Azure
 
-   Vous pouvez également [étendre les actions d’envoi par défaut ;](custom-submit-action-form.md) pour créer votre propre action Envoyer personnalisée.
+  Vous pouvez également [étendre les actions d’envoi par défaut ;](custom-submit-action-form.md) pour créer votre propre action Envoyer personnalisée.
 
 * **Afficher le message**
    * **Contenu du message**: Rédigez un message à l’aide de l’éditeur de texte enrichi à afficher lors de l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher un message de remerciement.

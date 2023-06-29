@@ -2,10 +2,10 @@
 title: Modification d’une SPA externe dans AEM
 description: Ce document décrit les étapes recommandées pour charger une SPA autonome vers une instance AEM, ajouter des sections de contenu modifiables et permettre la création.
 exl-id: 7978208d-4a6e-4b3a-9f51-56d159ead385
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2420'
-ht-degree: 50%
+source-wordcount: '2421'
+ht-degree: 49%
 
 ---
 
@@ -360,7 +360,7 @@ Pour activer la modification dans AEM pour cet exemple de SPA, vous devez suivre
 
 ## Restrictions du framework {#framework-limitations}
 
-Le composant RemotePage s’attend à ce que l’implémentation fournisse un manifeste de ressource comme [celui-ci](https://github.com/shellscape/webpack-manifest-plugin). Le composant RemotePage, en revanche, a été testé uniquement pour fonctionner avec le framework React (et Next.js via le composant remote-page-next) et il ne prend donc pas en charge le chargement à distance d’applications à partir d’autres frameworks tels qu’Angular.
+Le composant RemotePage s’attend à ce que l’implémentation fournisse un manifeste de ressource comme [celui-ci](https://github.com/shellscape/webpack-manifest-plugin). Le composant RemotePage, en revanche, a été testé uniquement pour fonctionner avec l’infrastructure React (et Next.js via le composant distant page-suivant). Il ne prend donc pas en charge le chargement à distance d’applications à partir d’autres structures, telles que Angular.
 
 ## Ressources supplémentaires {#additional-resources}
 

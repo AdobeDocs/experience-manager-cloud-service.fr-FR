@@ -2,7 +2,7 @@
 title: Création et utilisation des thèmes
 description: Vous pouvez utiliser les thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif avec des composants principaux. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1664'
 ht-degree: 98%
@@ -17,7 +17,7 @@ Lorsque vous [créez un formulaire adaptatif](/help/forms/creating-adaptive-form
 
 >[!NOTE]
 >
->Un thème de formulaire adaptatif ne doit pas être confondu avec les [modèles de formulaire adaptatif.](/help/forms/template-editor.md) Les thèmes de formulaire adaptatif contiennent uniquement les informations de style d’un formulaire adaptatif. Les modèles de formulaire adaptatif définissent la structure du formulaire et le contenu initial et contiennent un thème pour permettre la création d’un nouveau formulaire. [Formulaire adaptatif.](/help/forms/creating-adaptive-form.md)
+>Un thème de formulaire adaptatif ne doit pas être confondu avec les [modèles de formulaire adaptatif](/help/forms/template-editor.md).  Les thèmes de formulaire adaptatif contiennent uniquement les informations de style d’un formulaire adaptatif. Les modèles de formulaire adaptatif définissent la structure du formulaire et le contenu initial et contiennent un thème pour permettre la création d’un nouveau formulaire. [Formulaire adaptatif](/help/forms/creating-adaptive-form.md).
 
 ## Utilisation du thème Zone de travail dans les formulaires adaptatifs avec des composants principaux {#using-theme-in-adaptive-form}
 

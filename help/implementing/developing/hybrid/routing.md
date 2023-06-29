@@ -2,10 +2,10 @@
 title: Routage du modèle de SPA
 description: Concernant les applications sur une seule page (SPA) dans AEM, c’est l’application qui est responsable du routage. Ce document décrit le mécanisme de routage, le contrat et les options disponibles.
 exl-id: 1186b64e-11f8-43a6-bc75-450c4d7587ec
-source-git-commit: 47910a27118a11a8add6cbcba6a614c6314ffe2a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 95%
+source-wordcount: '440'
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ L’application est responsable du routage et est ensuite implémentée par les 
 
 ## Architecture {#architecture}
 
-Pour obtenir une description détaillée, consultez la section [PageModelManager](blueprint.md#pagemodelmanager) du Plan directeur d’applications sur une seule page (SPA).
+Pour obtenir une description détaillée, voir [PageModelManager](blueprint.md#pagemodelmanager) du document SPA Plan directeur.
 
 ## ModelRouter {#modelrouter}
 
@@ -31,7 +31,7 @@ Lorsque l’option `ModelRouter` est activée, les fonctions de l’API d’hist
 
 >[!CAUTION]
 >
->La version actuelle de `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée de Sling Model. Elle ne prend pas en charge l’utilisation de Vanity URL ni d’alias.
+>La version actuelle de `ModelRouter` ne prend en charge que l’utilisation d’URL pointant vers le chemin de ressource réel des points d’entrée de Sling Model. Il ne prend pas en charge l’utilisation d’URL ou d’alias Vanity.
 
 ## Contrat de routage {#routing-contract}
 

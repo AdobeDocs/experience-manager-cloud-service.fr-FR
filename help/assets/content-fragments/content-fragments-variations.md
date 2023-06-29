@@ -2,10 +2,10 @@
 title: Variations – création de contenu de fragment (Ressources - Fragments de contenu)
 description: Découvrez comment les variations peuvent rendre votre contenu découplé dans AEM encore plus flexible en vous permettant de créer du contenu pour un fragment, puis de créer des variantes de ce contenu selon vos besoins.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2446'
-ht-degree: 79%
+source-wordcount: '2440'
+ht-degree: 76%
 
 ---
 
@@ -88,7 +88,7 @@ L’éditeur de texte en plein écran fournit :
 
 ### Actions {#actions}
 
-Les actions suivantes sont également disponibles (pour tous les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire pour le texte sur plusieurs lignes) est ouvert :
+Les actions suivantes sont également disponibles (pour toutes les [formats](#formats)) lorsque l’éditeur plein écran (c’est-à-dire le texte multiligne) est ouvert :
 
 * Sélection du [format](#formats) ([Texte enrichi](#rich-text), [Texte brut](#plain-text) ou [Texte (Markdown](#markdown)))
 
@@ -195,8 +195,8 @@ Vous pouvez alors créer un fragment en procédant comme suit :
 1. spécifiez les propriétés ; par exemple le **Titre** ;
 1. sélectionnez **Créer** ;
 1. et sélectionnez enfin :
-   1. **Terminer** pour retourner au fragment original tout en référençant le nouveau fragment ;
-   1. ou **Ouvrir** pour référencer le nouveau fragment et l’ouvrir pour modification dans un nouvel onglet du navigateur.
+   1. **Terminé** renvoie (au fragment d’origine) et référencez le nouveau fragment.
+   1. **Ouvrir** référence le nouveau fragment et ouvre le nouveau fragment, à des fins d’édition, dans un nouvel onglet du navigateur.
 
 ### Affichage des statistiques clés {#viewing-key-statistics}
 
@@ -427,7 +427,7 @@ Pour renommer une variation existante :
 
 1. Ouvrez votre fragment et sélectionnez **Variations** dans le panneau latéral.
 1. Sélectionnez la variation requise.
-1. Sélectionnez **Renommer** dans le menu déroulant **Actions**.
+1. Sélectionner **Renommer** de la **Actions** menu déroulant.
 
 1. Saisissez le nouveau **Titre** et/ou la nouvelle **Description** dans la boîte de dialogue qui s’affiche.
 
@@ -443,7 +443,7 @@ Pour supprimer une variation existante :
 
 1. Ouvrez votre fragment et sélectionnez **Variations** dans le panneau latéral.
 1. Sélectionnez la variation requise.
-1. Sélectionnez **Supprimer** dans le menu déroulant **Actions**.
+1. Sélectionner **Supprimer** de la **Actions** menu déroulant.
 
 1. Confirmez l’action **Supprimer** dans la boîte de dialogue.
 
@@ -471,7 +471,7 @@ Le transfert des modifications n’est pas proposé *entre une variation et le *
 
 1. Sélectionnez une variation spécifique, puis l’action de synchronisation appropriée à partir de :
 
-   * du menu déroulant du sélecteur **Actions** – **Synchroniser l’élément actif avec le gabarit** ;
+   * la valeur **Actions** sélecteur de liste déroulante - **Synchroniser l’élément actuel avec le gabarit**
 
      ![Synchronisation avec le maître](assets/cfm-variations-11a.png)
 

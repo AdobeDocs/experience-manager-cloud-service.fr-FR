@@ -2,10 +2,10 @@
 title: Nouveautés et différences – Adobe Experience Manager as a Cloud Service
 description: Nouveautés et différences – Adobe Experience Manager (AEM) as a Cloud Service.
 exl-id: d1ce126e-960c-4367-b741-af709dd81010
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1899'
-ht-degree: 97%
+source-wordcount: '1896'
+ht-degree: 96%
 
 ---
 
@@ -113,11 +113,11 @@ Plus précisément, le nombre et le type des programmes AEM pouvant être créé
 
 Cloud Manager a évolué sous la forme d’un portail en libre-service où les principaux composants d’AEM as a Cloud Service peuvent être créés et configurés :
 
-* Création et gestion de nouveaux programmes. Pour plus d’informations, consultez [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md).
+* Création et gestion de nouveaux programmes. Voir [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) pour plus d’informations.
 
-* Création et gestion des environnements AEM dans ces programmes. Pour plus d’informations, consultez [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md).
+* Création et gestion des environnements AEM dans ces programmes. Voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour plus d’informations.
 
-* Création et gestion des pipelines pour le déploiement du code client et de la configuration associée dans un environnement spécifique. Pour plus d’informations, consultez [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md).
+* Création et gestion des pipelines pour le déploiement du code client et de la configuration associée dans un environnement spécifique. Voir [Configuration de votre pipeline CI-CD](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) pour plus d’informations.
 
 * Réception de notifications relatives à des événements de cycle de vie importants pour ces composants (par exemple, mises à jour de produits).
 
@@ -262,7 +262,7 @@ Pour plus d’informations, voir [Présentation et introduction d’Assets as a 
 
 ## Premiers pas avec Adobe Experience Manager as a Cloud Service {#getting-to-know-aem-as-cloud-service}
 
-Pour plus d’informations, voir :
+Pour en savoir plus, voir :
 
 * [Introduction à Adobe Experience Manager as a Cloud Service](/help/overview/introduction.md)
 * [Architecture](/help/overview/architecture.md) d’Adobe Experience Manager as a Cloud Service

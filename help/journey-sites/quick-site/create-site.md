@@ -2,10 +2,10 @@
 title: Créer un site à partir d’un modèle
 description: Découvrez comment créer rapidement un site AEM à l’aide d’un modèle de site.
 exl-id: 31bb04c2-b3cc-44ca-b517-5b0d66d9b1fa
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1513'
-ht-degree: 97%
+source-wordcount: '1506'
+ht-degree: 92%
 
 ---
 
@@ -36,7 +36,7 @@ Cette partie du parcours s’applique à l’administrateur AEM.
 
 ## Modèles de site {#site-templates}
 
-Les modèles de site permettent de combiner du contenu de site de base dans un package pratique et réutilisable. Les modèles de site contiennent généralement le contenu et la structure du site de base, ainsi que des informations de style pour démarrer rapidement un nouveau site. La structure réelle est la suivante :
+Les modèles de site permettent de combiner du contenu de site de base dans un package pratique et réutilisable. Les modèles de site contiennent généralement du contenu et de la structure de base du site ainsi que des informations de style pour démarrer rapidement un nouveau site. La structure réelle est la suivante :
 
 * `files` : dossier contenant le kit d’interface utilisateur, le fichier XD et éventuellement d’autres fichiers.
 * `previews` : dossier contenant des captures d’écran du modèle de site.
@@ -57,11 +57,11 @@ Une fois le téléchargement effectué, vous pouvez le charger dans votre enviro
 
 >[!TIP]
 >
->Le modèle de site standard d’AEM peut être personnalisé en fonction des besoins de votre projet et peut éviter d’avoir à effectuer d’autres personnalisations. Cette rubrique dépasse toutefois le cadre de ce parcours. Pour plus d’informations, consultez la documentation GitHub du modèle de site standard.
+>Le modèle de site standard d’AEM peut être personnalisé en fonction des besoins de votre projet et peut éviter d’avoir à effectuer d’autres personnalisations. Cette rubrique dépasse toutefois le cadre de ce parcours. Pour plus d’informations, voir la documentation GitHub du modèle de site standard .
 
 >[!TIP]
 >
->Vous pouvez également choisir de créer le modèle à partir de la source dans le cadre du workflow de votre projet. Cette rubrique dépasse toutefois le cadre de ce parcours. Pour plus d’informations, consultez la documentation GitHub du modèle de site standard.
+>Vous pouvez également choisir de créer le modèle à partir de la source dans le cadre du workflow de votre projet. Cette rubrique dépasse toutefois le cadre de ce parcours. Pour plus d’informations, voir la documentation GitHub du modèle de site standard .
 
 ## Installation d’un modèle de site {#installing-template}
 
@@ -109,7 +109,7 @@ Les auteurs de contenu peuvent désormais commencer la création.
 Les modèles de site sont très efficaces et flexibles, et tout nombre peut être créé pour un projet, ce qui facilite la création de variations de site. Selon le niveau de personnalisation déjà effectué sur le modèle de site que vous utilisez, il se peut que vous n’ayez pas besoin d’une personnalisation front-end supplémentaire.
 
 * Si votre site ne nécessite pas de personnalisation supplémentaire, félicitations ! Votre parcours s’arrête ici !
-* Si vous avez toujours besoin d’une personnalisation front-end supplémentaire, ou si vous souhaitez simplement comprendre le processus complet si vous avez besoin d’une personnalisation ultérieure, continuez la lecture.
+* Si vous avez toujours besoin d’une personnalisation frontale supplémentaire, ou si vous souhaitez simplement comprendre le processus complet si vous avez besoin d’une personnalisation ultérieure, continuez la lecture.
 
 ## Exemple de page {#example-page}
 

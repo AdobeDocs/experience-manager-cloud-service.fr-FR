@@ -2,10 +2,10 @@
 title: Configuration des paramètres OSGi pour le niveau d’aperçu
 description: Découvrez comment configurer le service d’aperçu AEM pour prévisualiser le contenu avant la mise en ligne.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 58%
+source-wordcount: '219'
+ht-degree: 53%
 
 ---
 
@@ -19,7 +19,7 @@ Les valeurs de propriété OSGi du niveau d’aperçu sont héritées du niveau 
 
 >[!NOTE]
 >
->Pour plus d’informations sur les environnements de prévisualisation, consultez le document [Gestion des environnements.](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
+>Pour plus d’informations sur les environnements d’aperçu, voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service).
 
 ## Configuration des paramètres OSGi pour le niveau de prévisualisation {#configuring-osgi-settings-for-the-preview-tier}
 

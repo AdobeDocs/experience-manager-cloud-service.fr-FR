@@ -2,10 +2,10 @@
 title: Présentation de l’éditeur de SPA
 description: Cet article présente un aperçu complet de l’éditeur d’application sur une seule page (SPA) et de son fonctionnement, notamment les workflows détaillés de ses interactions dans AEM.
 exl-id: 9814d86e-8d87-4f7f-84ba-6943fe6da22f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1630'
-ht-degree: 84%
+ht-degree: 80%
 
 ---
 
@@ -31,7 +31,7 @@ Pour plus d’informations sur SPA dans AEM, consultez les documents suivants :
 
 ## Conception {#design}
 
-Le composant de page d’une application sur une seule page ne fournit pas les composants HTML de ses composants enfants via le fichier HTL ou JSP. Cette opération est déléguée à la structure SPA. La représentation du modèle ou des composants enfants est récupérée en tant que structure de données JSON à partir du JCR. Les composants SPA sont ensuite ajoutés à la page en fonction de cette structure. Ce comportement différencie la composition initiale du corps du composant de page de ses équivalents non SPA.
+Le composant de page d’un SPA ne fournit pas les éléments de HTML de ses composants enfants via le fichier JSP ou HTL. Cette opération est déléguée à la structure SPA. La représentation du modèle ou des composants enfants est récupérée en tant que structure de données JSON à partir du JCR. Les composants SPA sont ensuite ajoutés à la page en fonction de cette structure. Ce comportement différencie la composition initiale du corps du composant de page de ses équivalents non SPA.
 
 ### Gestion du modèle de page {#page-model-management}
 
@@ -64,7 +64,7 @@ Pour vous représenter le flux de l’interaction entre une SPA et AEM, vous pou
 * La communication entre l’éditeur de page et le SPA est effectuée à l’aide de JSON au lieu de HTML.
 * L’éditeur de page fournit la dernière version du modèle de page à l’application sur une seule page par le biais de l’API de messagerie et de l’iFrame.
 * Le gestionnaire de modèles de page informe l’éditeur qu’il est prêt à être modifié et transmet le modèle de page sous la forme d’une structure JSON.
-* L’éditeur ne modifie pas la structure DOM de la page en cours de création ; en fait, il n’y accède même pas. Au lieu de cela, il fournit le modèle de page le plus récent.
+* L’éditeur ne modifie pas la structure DOM de la page en cours de création et n’y accède même pas. Il fournit plutôt le modèle de page le plus récent.
 
 ![Workflow de SPA](assets/workflow.png)
 
@@ -147,7 +147,7 @@ Il s’agit d’un aperçu plus détaillé axé sur l’expérience de création
 
 ## Conditions requises et restrictions {#requirements-limitations}
 
-Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application d’une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Consultez le document [Prise en main des SPA dans AEM avec React](getting-started-react.md) afin de disposer des informations minimales nécessaires pour faire fonctionner la vôtre.
+Pour permettre à l’auteur d’utiliser l’éditeur de page afin de modifier le contenu d’une SPA, l’application d’une seule page doit être mise en œuvre pour interagir avec le SDK de l’éditeur de SPA d’AEM. Voir [Prise en main de SPA dans AEM avec React](getting-started-react.md) document pour obtenir le minimum de connaissances nécessaires pour que le vôtre soit en cours d’exécution.
 
 ### Frameworks pris en charge {#supported-frameworks}
 
@@ -160,7 +160,7 @@ Les versions précédentes de ces frameworks peuvent fonctionner avec le SDK de 
 
 ### Autres frameworks {#additional-frameworks}
 
-Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Veuillez consulter la [Blueprint SPA](blueprint.md) document pour connaître les exigences qu’une structure doit satisfaire pour créer une couche spécifique à une structure composée de modules, de composants et de services à utiliser avec l’éditeur SPA d’AEM.
+Il est possible de mettre en œuvre des frameworks SPA pour utiliser le SDK de l’éditeur de SPA d’AEM. Voir [Blueprint SPA](blueprint.md) document pour connaître les exigences qu’une structure doit satisfaire pour créer une couche spécifique à une structure composée de modules, de composants et de services à utiliser avec l’éditeur SPA d’AEM.
 
 ### Utilisation de plusieurs sélecteurs {#multiple-selectors}
 
@@ -173,9 +173,9 @@ Si vous souhaitez utiliser l’éditeur statique d’un composant de texte cré�
 1. Définissez un attribut (arbitraire) dans l’élément wrapper de conteneur incluant le texte HTML. Dans le cas du projet SPA WKND, il s’agit d’un élément `<div>` et le sélecteur qui a été utilisé est `data-rte-editelement`.
 1. Définissez la configuration `editElementQuery` sur la `cq:InplaceEditingConfig` du composant de texte AEM correspondant qui pointe vers ce sélecteur, par exemple `data-rte-editelement`. L’éditeur sait ainsi quel élément HTML encapsule le texte HTML.
 
-Pour plus d’informations sur la propriété `editElementQuery` et la configuration de l’éditeur de texte enrichi, consultez la section [Configuration de l’éditeur de texte enrichi.](/help/implementing/developing/extending/rich-text-editor.md)
+Pour plus d’informations sur la propriété `editElementQuery` et la configuration de l’éditeur de texte enrichi, consultez la section [Configuration de l’éditeur de texte enrichi](/help/implementing/developing/extending/rich-text-editor.md).
 
-### Restrictions {#limitations}
+### Limites {#limitations}
 
 Le SDK de l’éditeur de SPA d’AEM est entièrement pris en charge par Adobe et continue d’être amélioré et développé. Les fonctionnalités d’AEM suivantes ne sont pas encore prises en charge par l’éditeur de SPA :
 

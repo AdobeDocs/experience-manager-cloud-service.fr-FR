@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Collaboration,Adobe Asset Link,Desktop App
 role: Architect,User,Admin
 exl-id: cbed0d62-5148-45eb-b6a0-9fd164060fdc
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3496'
-ht-degree: 85%
+source-wordcount: '3491'
+ht-degree: 83%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Manager Assets est une solution de gestion des ressources num
 
 Adobe Creative Cloud fournit aux équipes créatives un écosystème de solutions et de services pour les aider à créer des ressources numériques. Il comprend des applications de bureau et mobiles, des services cloud tels que le stockage avec synchronisation de bureau ou expérience web, ainsi que des plateformes marketing telles qu’Adobe Stock.
 
-Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de travail et DAM d’entreprise selon votre cas d’utilisation et découvrir quelles sont les bonnes pratiques associées aux workflows de connexion.
+Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de travail et gestion des ressources numériques d’entreprise selon votre cas d’utilisation et découvrir quelles sont les bonnes pratiques associées aux workflows de connexion.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 
 | Conditions requises | Cas d’utilisation | Surfaces impliquées |
 |---|---|---|
-| Simplifier l’expérience pour les créatifs utilisant un poste de travail | Simplifiez l’accès aux ressources depuis une gestion des ressources numériques ([!DNL Assets]) pour les créatifs ou, plus largement, pour les utilisateurs sur poste de travail utilisant des applications de création de ressources natives. Ils ont besoin d’une méthode simple et rapide pour découvrir, utiliser (ouvrir), modifier et enregistrer les modifications dans Experience Manager, ainsi que pour charger de nouveaux fichiers. | Poste de travail Windows ou Mac ; applications Creative Cloud |
+| Simplifier l’expérience pour les créatifs utilisant un poste de travail | Simplifiez l’accès aux ressources depuis une gestion des ressources numériques ([!DNL Assets]) pour les créatifs ou, plus largement, pour les utilisateurs sur poste de travail utilisant des applications de création de ressources natives. Ils ont besoin d’une méthode simple et simple pour découvrir, utiliser (ouvrir), modifier et enregistrer les modifications dans Experience Manager et charger de nouveaux fichiers. | Poste de travail Windows ou Mac ; applications Creative Cloud |
 | Fournir des ressources de grande qualité, prêtes à l’emploi depuis [!DNL Adobe Stock] | Les spécialistes marketing accélèrent le processus de création de contenu en contribuant à la recherche et à la découverte de ressources. Les créatifs utilisent les ressources approuvées directement dans leurs outils de création. | [!DNL Assets] ; marketplace [!DNL Adobe Stock] ; champs de métadonnées |
 | Distribution et partage de ressources par organisations | Les services internes/succursales locales et les partenaires externes, les distributeurs et les agences utilisent les ressources approuvées, partagées par la société mère. La société souhaite partager de manière sécurisée et transparente les ressources créées pour une réutilisation plus large. | [!DNL Brand Portal], [!DNL Asset Share Commons] |
 | Génération automatique des variations prédéfinies des ressources chargées | Traitez automatiquement les ressources à l’aide de la technologie de transformation et de gestion des médias unique d’Adobe pour les actions prédéfinies. Créez une logique personnalisée pour définir vos propres actions à l’aide des API et des microservices de ressources. | Interface utilisateur d’[!DNL Assets] |
@@ -43,7 +43,7 @@ Lisez ce qui suit pour savoir quelles intégrations choisir entre poste de trava
 
 | Proposition de valeur pour les acteurs impliqués | Offre Adobe | Surfaces impliquées |
 |---|---|---|
-| Les utilisateurs créatifs découvrent des ressources à partir de [!DNL Experience Manager], les ouvrent et les utilisent, les modifient et chargent les modifications dans [!DNL Experience Manager] et chargent aussi de nouveaux fichiers dans [!DNL Experience Manager] sans quitter leur application [!DNL Creative Cloud]. | [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator et InDesign. |
+| Les utilisateurs créatifs découvrent des ressources à partir de [!DNL Experience Manager], ouvrez-les et utilisez-les, modifiez et chargez les modifications dans [!DNL Experience Manager]et charger de nouveaux fichiers dans [!DNL Experience Manager], sans quitter leur [!DNL Creative Cloud] application. | [Adobe Asset Link](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator et InDesign. |
 | Les utilisateurs professionnels simplifient l’ouverture et l’utilisation des ressources, la modification et le chargement des modifications dans [!DNL Experience Manager] et le chargement de nouveaux fichiers dans [!DNL Experience Manager] à partir de l’environnement de poste de travail. Ils utilisent une intégration générique pour ouvrir n’importe quel type de ressource dans l’application de bureau native, y compris les applications autres qu’Adobe. | Application de bureau [[!DNL Experience Manager] ](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr) | Application de bureau Experience Manager sous Windows et Mac |
 | Les spécialistes marketing et les utilisateurs professionnels découvrent, prévisualisent, attribuent une licence et enregistrent les ressources Adobe Stock dans Experience Manager. Les ressources sous licence et enregistrées fournissent des métadonnées Adobe Stock pour une meilleure gouvernance. | [Intégration d’Experience Manager et d’Adobe Stock](aem-assets-adobe-stock.md) | Interface web [!DNL Experience Manager] |
 | Améliorez la collaboration entre les concepteurs de produits numériques et les marketeurs. Permettez aux concepteurs d’utiliser les ressources numériques dans les modèles de conception et de structure filaire sur la zone de travail Adobe XD. | [[!DNL Adobe Asset Link] pour [!DNL Adobe XD]](https://helpx.adobe.com/fr/enterprise/using/adobe-asset-link-for-xd.html) | [!DNL Adobe XD] |
@@ -119,7 +119,7 @@ Voici un bref résumé des bonnes pratiques pour l’intégration Experience Man
 * **Déterminer pourquoi et quand stocker des ressources dans la gestion des ressources numériques (DAM) :** identifiez quelles mises à jour doivent être mises à la disposition de l’équipe élargie au sein de votre organisation.
 * **Tenez compte du volume des ressources partagées :** si votre cas d’utilisation est la distribution des ressources, la gouvernance et la sécurité peuvent être les aspects les plus importants. Envisagez d’utiliser des outils conçus pour effectuer les tâches à grande échelle, comme Brand Portal.
 * **Comprendre le cycle de vie des ressources :** comprenez la façon dont les ressources sont traitées par les différentes équipes au sein de votre organisation.
-* **Gérer avec soin les enregistrements fréquents des ressources :** Adobe Asset Link s’en charge à votre place avec PS, IA, ID. Pour d’autres applications, ne conservez pas de tâches en cours dans le dossier mappé/partagé, sauf si vous avez besoin de toutes les modifications dans DAM.
+* **Gérer avec soin les enregistrements fréquents des ressources :** Adobe Asset Link s’en charge à votre place avec PS, IA, ID. Pour les autres applications, n’effectuez pas les tâches en cours dans le dossier mappé/partagé, sauf si vous avez besoin de toutes les modifications dans la gestion des ressources numériques.
 
 ### Accès aux ressources Adobe Stock depuis Experience Manager Assets {#access-to-adobe-stock-assets-from-aem-assets}
 

@@ -2,10 +2,10 @@
 title: Conseils de développement sur AEM as a Cloud Service
 description: Découvrez les conseils de développement sur AEM as a Cloud Service et les différences importantes avec AEM On-premise et AEM dans AMS.
 exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2591'
-ht-degree: 91%
+source-wordcount: '2586'
+ht-degree: 88%
 
 ---
 
@@ -65,11 +65,11 @@ Les alternatives connues et qui fonctionnent, mais qui peuvent nécessiter de fo
 * [Apache Commons HttpClient 3.x](https://hc.apache.org/httpclient-3.x/) (non recommandées, car obsolètes et remplacées par la version 4.x)
 * [OK Http](https://square.github.io/okhttp/) (non fourni par AEM)
 
-En plus de fournir des délais d’expiration, une gestion appropriée de ces délais ainsi que des codes d’état HTTP inattendus doivent être implémentés.
+En plus de fournir des délais d’expiration, une gestion appropriée de ces délais d’expiration et des codes d’état HTTP inattendus doit être implémentée.
 
 ## Aucune personnalisation classique de l’interface utilisateur {#no-classic-ui-customizations}
 
-AEM as a Cloud Service ne prend en charge que l’interface utilisateur tactile pour le code client tiers. L’interface utilisateur classique n’est pas disponible pour la personnalisation.
+AEM as a Cloud Service ne prend en charge que l’interface utilisateur tactile pour le code client tiers. L’interface utilisateur classique n’est pas disponible pour la personnalisation.
 
 ## Pas de fichiers binaires natifs ni de bibliothèques natives {#avoid-native-binaries}
 
@@ -152,7 +152,7 @@ Les niveaux de journal sont les suivants :
 
 ### Images mémoire de threads {#thread-dumps}
 
-Les images mémoire de threads dans les environnements Cloud sont collectés en permanence, mais ne peuvent pas être téléchargées en libre-service pour le moment. En attendant, contactez l’assistance AEM si des images mémoire de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre de temps exacte.
+Les images mémoire de threads dans les environnements Cloud sont collectés en permanence, mais ne peuvent pas être téléchargées en libre-service pour le moment. Dans l’intervalle, contactez AEM support si des images mémoire de threads sont nécessaires pour déboguer un problème, en spécifiant la fenêtre de temps exacte.
 
 ## CRX/DE Lite et Developer Console {#crxde-lite-and-developer-console}
 
@@ -282,7 +282,7 @@ En raison du document MongoDB dépassant 16 Mo, les MVP trop nombreuses peuvent
 Caused by: com.mongodb.MongoWriteException: Resulting document after update is larger than 16777216
 ```
 
-Pour plus d’informations, veuillez consulter la [documentation d’Apache Oak](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property).
+Voir [Documentation Apache Oak](https://jackrabbit.apache.org/oak/docs/dos_and_donts.html#Large_Multi_Value_Property) pour plus d’informations.
 
 ## Directives de développement et cas pratiques concernant [!DNL Assets] {#use-cases-assets}
 

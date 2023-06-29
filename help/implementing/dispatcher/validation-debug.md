@@ -3,7 +3,7 @@ title: Validation et débogage à l’aide des outils Dispatcher
 description: Validation et débogage à l’aide des outils Dispatcher
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2847'
 ht-degree: 53%
@@ -15,7 +15,7 @@ ht-degree: 53%
 ## Présentation {#apache-and-dispatcher-configuration-and-testing}
 
 >[!NOTE]
->Pour plus d’informations sur Dispatcher en mode cloud et sur le téléchargement des outils Dispatcher, voir la page [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md). Si votre configuration de Dispatcher est en mode hérité, reportez-vous à la section [documentation du mode hérité](/help/implementing/dispatcher/validation-debug-legacy.md).
+>Pour plus d’informations sur Dispatcher en mode cloud et sur le téléchargement des outils Dispatcher, voir la page [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md). Si votre configuration de Dispatcher est en mode hérité, voir [documentation du mode hérité](/help/implementing/dispatcher/validation-debug-legacy.md).
 
 Les sections suivantes décrivent la structure de fichiers du mode flexible, la validation locale, le débogage et la migration du mode hérité vers le mode flexible.
 

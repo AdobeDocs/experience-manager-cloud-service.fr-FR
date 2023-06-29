@@ -2,10 +2,10 @@
 title: Mise en production
 description: Découvrez comment effectuer la migration une fois que le code et le contenu sont prêts pour le cloud
 exl-id: 10ec0b04-6836-4e26-9d4c-306cf743224e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1720'
-ht-degree: 93%
+source-wordcount: '1710'
+ht-degree: 85%
 
 ---
 
@@ -28,11 +28,11 @@ Dans les phases précédentes du parcours :
 
 ## Objectif {#objective}
 
-Ce document vous aidera à comprendre comment effectuer la migration vers AEM as a Cloud Service une fois que vous serez familiarisé avec les étapes précédentes du parcours. Vous apprendrez comment effectuer la migration de production initiale ainsi que les bonnes pratiques à suivre lors de la migration vers AEM as a Cloud Service.
+Ce document vous aide à comprendre comment effectuer la migration vers AEM as a Cloud Service une fois que vous connaissez les étapes précédentes du parcours. Vous découvrez comment effectuer la migration de production initiale et les bonnes pratiques à suivre lors de la migration vers AEM as a Cloud Service.
 
 ## Migration de production initiale {#initial-migration}
 
-Avant d’effectuer la migration de production, suivez les étapes d’adaptation et de preuve de migration décrites dans la section [Stratégie et calendrier de la migration de contenu](/help/journey-migration/implementation.md##strategy-timeline) de la [phase d’implémentation](/help/journey-migration/implementation.md).
+Avant d’effectuer la migration de production, suivez les étapes de configuration et de test de migration décrites dans la section [Stratégie de migration de contenu et chronologie](/help/journey-migration/implementation.md##strategy-timeline) de la section [Phase de mise en oeuvre](/help/journey-migration/implementation.md).
 
 * Lancez la migration de production en vous appuyant sur l’expérience acquise lors de la migration d’évaluation AEM as a Cloud Service effectuée sur des clones :
    * Création-Création
@@ -95,7 +95,7 @@ Souvenez-vous que la charge sur la source AEM est supérieure pendant la phase d
 
 ## Limites connues {#known-limitations}
 
-Veuillez tenir compte du fait que l’ingestion entière échoue si l’une des limites suivantes fait partie du jeu de migration extrait :
+Tenez compte du fait que l’ingestion entière échoue si l’une des limites suivantes fait partie du jeu de migration extrait :
 
 * Un nœud JCR dont le nom comporte plus de 150 caractères.
 * Noeud JCR supérieur à 16 Mo
@@ -113,14 +113,14 @@ Les deux éléments ci-dessus sont identifiés et signalés dans le [Analyseur d
 
 ## Liste de contrôle de mise en production {#Go-Live-Checklist}
 
-Passez en revue cette liste d’activités pour vous assurer d’effectuer une migration en douceur et réussie.
+Consultez cette liste d’activités pour vous assurer que vous effectuez une migration fluide et réussie.
 
 * Exécutez un pipeline de production de bout en bout avec des tests fonctionnels et d’interface utilisateur pour garantir une expérience du produit AEM **toujours actuelle**. Reportez-vous aux ressources suivantes.
    * [Mises à jour de la version d’AEM](/help/implementing/deploying/aem-version-updates.md)
    * [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing)
    * [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
 * Migrez le contenu en production et assurez-vous qu’un sous-ensemble approprié est disponible lors de l’évaluation pour les tests.
-   * Notez que les bonnes pratiques de DevOps pour AEM impliquent que le code passe du développement à l’environnement de production pendant que le contenu passe aux environnements de production.
+   * Les bonnes pratiques des opérations de développement pour AEM impliquent que le code passe de l’environnement de développement à l’environnement de production tandis que le contenu passe de l’environnement de production à l’environnement de production.
 * Planifiez une période de gel du code et du contenu.
    * Consultez également [Chronologies de gel du code et du contenu pour la migration](#code-content-freeze).
 * Effectuez la dernière mise à jour du contenu.

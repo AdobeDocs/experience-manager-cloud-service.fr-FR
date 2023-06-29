@@ -4,9 +4,9 @@ description: Tirez parti du Centre d’actions pour agir facilement sur les inci
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '701'
 ht-degree: 17%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 17%
 >[!NOTE]
 >Cette fonctionnalité n’a pas été publiée.
 
-AEM as Cloud Service envoie des notifications par e-mail à Actions Center en cas d’incident critique nécessitant une action immédiate, ainsi que des recommandations proactives pour les optimisations. Par exemple, une file d’attente bloquée ou un jeu d’informations d’identification arrivant à expiration ; l’ensemble complet des types de notifications du Centre d’actions est visible dans la variable [tableau ci-dessous](#supported-notification-types), qui s’agrandira au fil du temps.
+AEM as Cloud Service envoie des notifications par e-mail à Actions Center en cas d’incident critique nécessitant une action immédiate et des recommandations proactives pour les optimisations. Par exemple, une file d’attente bloquée ou un jeu d’informations d’identification arrivant à expiration ; l’ensemble complet des types de notifications du Centre d’actions est visible dans la variable [tableau ci-dessous](#supported-notification-types), qui s’agrandira au fil du temps.
 
 Lorsqu’une notification électronique du Centre d’actions est reçue, vous pouvez cliquer dessus pour ouvrir le Centre d’actions d’AEM as a Cloud Service, avec une fenêtre contextuelle présentant un contexte supplémentaire expliquant l’action à entreprendre par un client.
 
-Outre l’affichage d’informations sur la notification qui vient d’être cliquée, le Centre d’actions sert de centre d’actions où vous pouvez afficher et gérer l’ensemble des notifications actuelles et antérieures. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers don't find it) -->
+Outre l’affichage d’informations sur la notification qui vient d’être cliquée, le Centre d’actions sert de centre d’actions où vous pouvez afficher et gérer l’ensemble des notifications actuelles et antérieures. <!-- It can be accessed directly at the url TBD (Alexandru: I'm intentionally keeping it TBD for now so customers do not find it) -->
 
 Il existe deux catégories de notifications de haut niveau qui apparaissent dans le centre d’actions :
 

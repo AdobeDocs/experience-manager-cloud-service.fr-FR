@@ -11,10 +11,10 @@ mini-toc-levels: 4
 hide: false
 hidefromtoc: false
 exl-id: cdca41ad-a2cd-4f68-aaa4-5eec33c30f0b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2875'
-ht-degree: 99%
+source-wordcount: '2872'
+ht-degree: 97%
 
 ---
 
@@ -141,7 +141,7 @@ Si vous regardez à nouveau l’image de la montre ci-dessous, vous pouvez voir 
 ![Paramètres prédéfinis d’image statiques et dynamiques](/help/assets/dynamic-media/assets/dm-image-presets.png)
 _Paramètres d’image prédéfinis statiques et dynamiques L’image de la montre a été rendue à l’aide du paramètre d’image prédéfini `PDP-page`._
 
-Mais qu’en est-il si vous devez changer une image sur votre site web ? Supposons, par exemple, que vous ayez effectué quelques tests et que vous ayez trouvé que l’image de 120 x 120 (le paramètre d’image prédéfini `Cart`) n’est pas reçu aussi bien que vous le pensiez. Vous devez agrandir l’image en augmentant la largeur à 175 pixels et la hauteur à 175 pixels. Traditionnellement, vous deviez aller dans Adobe Photoshop et recréer toutes ces images de panier. Toutefois, avec Dynamic Media, il vous suffit de modifier le paramètre d’image prédéfini en mettant à jour les valeurs Largeur et Hauteur sur 175 et d’enregistrer votre paramètre prédéfini, comme illustré dans l’exemple ci-dessous.
+Mais qu’en est-il si vous devez changer une image sur votre site web ? Supposons, par exemple, que vous ayez effectué quelques tests et que vous ayez trouvé que l’image de 120 x 120 (la variable `Cart` paramètre d’image prédéfini) n’est pas reçu comme vous le pensiez. Vous devez agrandir l’image en augmentant la largeur à 175 pixels et la hauteur à 175 pixels. Traditionnellement, vous deviez aller dans Adobe Photoshop et recréer toutes ces images de panier. Toutefois, avec Dynamic Media, il vous suffit de modifier le paramètre d’image prédéfini en mettant à jour les valeurs Largeur et Hauteur sur 175 et d’enregistrer votre paramètre prédéfini, comme illustré dans l’exemple ci-dessous.
 
 ![Modification d’un paramètre d’image prédéfini](/help/assets/dynamic-media/assets/dm-edit-image-preset.png)
 _Modification de la largeur et de la hauteur du paramètre d’image prédéfini `Cart`._
@@ -193,7 +193,7 @@ L’URL unique vous permet d’utiliser la visionneuse d’images et l’observa
 
 La visionneuse Fenêtre déroulante est une visionneuse prête à l’emploi par défaut dont vous pouvez modifier les propriétés. Vous pouvez également, de la même manière que vous créez un paramètre d’image prédéfini, créer votre propre observateur personnalisé.
 
-Maintenant, supposons que votre équipe de vente et de marketing n’aime pas la visionneuse Fenêtre déroulante. Ils aiment la fonction de zoom, mais souhaitent que les clients voient l’effet de zoom directement sur les chaussures. Dans ce cas, il vous suffit d’appliquer la visionneuse Zoom intégré à la visionneuse d’images, puis de copier et coller son URL dans votre navigateur pour voir comment elle se comporte. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
+Maintenant, supposons que votre équipe de vente et de marketing n’aime pas la visionneuse déroulante. Ils aiment la fonction de zoom, mais souhaitent que les clients voient l’effet de zoom directement sur les chaussures. Dans ce cas, il vous suffit d’appliquer la visionneuse Zoom intégré à la visionneuse d’images, puis de copier et coller son URL dans votre navigateur pour voir comment elle se comporte. [Faites un essai](https://s7d1.scene7.com/s7viewers/html5/FlyoutViewer.html?asset=jpearldemo/Running&amp;config=jpearldemo/InlineZoom){target="_blank"}.
 
 Lorsque vous déplacez le pointeur de la souris sur la chaussure, vous effectuez un zoom avant sur cette image, et vous pouvez voir plus de détails en déplaçant le pointeur. Ce niveau de détail est proportionnel à la taille de l’image qui a été initialement téléchargée dans Dynamic Media.
 
@@ -208,7 +208,7 @@ Vous venez de lire des articles sur les visionneuses d’images et les visionneu
 
 ## Facultatif - En savoir plus
 
-Si vous souhaitez en savoir plus sur ce que vous venez de lire, lisez les documents ci-dessous pour explorer ces concepts plus en profondeur. Sinon, votre Parcours Dynamic Media est terminé !
+Pour en savoir plus sur ce que vous venez de lire, utilisez les matériaux ci-dessous pour explorer les concepts plus en détail. Sinon, votre Parcours Dynamic Media est terminé !
 
 _Rubriques d’aide de Dynamic Media_
 

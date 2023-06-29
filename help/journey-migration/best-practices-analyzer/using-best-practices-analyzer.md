@@ -2,10 +2,10 @@
 title: Utilisation de l’analyseur des bonnes pratiques
 description: Utilisation de l’analyseur des bonnes pratiques
 exl-id: e8498e17-f55a-4600-87d7-60584d947897
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2479'
-ht-degree: 92%
+source-wordcount: '2474'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 * L’outil BPA est pris en charge sur les instances AEM avec la version 6.1 et versions ultérieures.
 
   >[!NOTE]
-  >Consultez [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d’installation de BPA sur AEM 6.1.
+  >Voir [Installation sur AEM 6.1](#installing-on-aem61) pour connaître les conditions particulières d’installation de BPA sur AEM 6.1.
 
 * Il peut s’exécuter dans n’importe quel environnement, mais il est préférable de l’exécuter dans un environnement d’*évaluation*.
 
@@ -107,7 +107,7 @@ Pour filtrer les résultats liés à [ACS Commons](https://adobe-consulting-serv
    ![image](/help/journey-migration/best-practices-analyzer/assets/report_filter_2.png)
 
    >[!NOTE]
-   >Les résultats d’ACS Commons ne doivent pas être ignorés. Consultez la [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer le niveau de compatibilité avec AEM as a Cloud Service.
+   >Les résultats d’ACS Commons ne doivent pas être ignorés. Voir [documentation](https://adobe-consulting-services.github.io/acs-aem-commons/pages/compatibility.html#aem-as-a-cloud-service-feature-incompatibility) pour déterminer la compatibilité avec AEM as a Cloud Service.
 
 <!--
 ### Adobe Experience Manager 6.2 and 6.1 {#aem-specific-versions}
@@ -144,7 +144,7 @@ Le format du rapport est le suivant :
 Un niveau d’importance est attribué à chaque résultat pour indiquer une priorité absolue concernant l’action.
 
 >[!NOTE]
->Pour en savoir plus sur chaque catégorie de résultat, consultez [Catégories du détecteur de motifs](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=fr).
+>Pour en savoir plus sur chaque catégorie de recherche, voir [Catégories du détecteur de motifs](https://experienceleague.adobe.com/docs/experience-manager-pattern-detection/table-of-contents/aso.html?lang=fr).
 
 Consultez le tableau ci-dessous pour comprendre les niveaux d’importance :
 
@@ -192,7 +192,7 @@ Il est possible d’utiliser l’interface HTTP de différentes manières.
 
 Une méthode simple consiste à ouvrir un onglet dans le même navigateur que celui utilisé pour vous connecter à AEM en tant qu’administrateur. Vous pouvez renseigner l’URL dans l’onglet du navigateur et afficher ou télécharger les résultats grâce au navigateur.
 
-Vous pouvez également utiliser un outil de ligne de commande tel que `curl` ou `wget`, mais aussi toute autre application cliente HTTP. Si vous n’utilisez pas un onglet de navigateur avec une session authentifiée, vous devez fournir un nom d’utilisateur et un mot de passe d’administration en commentaire.
+Vous pouvez également utiliser un outil de ligne de commande tel que `curl` ou `wget` et toute application cliente HTTP. Si vous n’utilisez pas un onglet de navigateur avec une session authentifiée, vous devez fournir un nom d’utilisateur et un mot de passe d’administration en commentaire.
 
 À titre d’exemple, vous pouvez procéder comme suit :
 `curl -u admin:admin 'http://localhost:4502/apps/best-practices-analyzer/analysis/report.csv' > report.csv`.

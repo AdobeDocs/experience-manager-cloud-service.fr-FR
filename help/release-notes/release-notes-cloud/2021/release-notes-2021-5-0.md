@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour de la version 2021.5.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 exl-id: 3f9d7339-7e37-4702-821e-f2b03cd7e224
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 95%
+source-wordcount: '1353'
+ht-degree: 90%
 
 ---
 
@@ -146,7 +146,7 @@ La date de publication de l’outil de transfert de contenu version v1.4.6 est 
 
 ### Nouveautés {#what-is-new-ctt-latest}
 
-* Une nouvelle instruction de connexion a été ajoutée au journal des erreurs du démarrage rapide si l’utilisateur ne dispose pas de l’autorisation d’exécution sur le fichier exécutable Java.
+* Une nouvelle instruction de journalisation a été ajoutée au journal des erreurs du démarrage rapide si l’utilisateur ne dispose pas des autorisations d’exécution sur le fichier exécutable Java.
 
 * Lorsqu’un utilisateur supprime un jeu de migration de l’interface utilisateur du CTT, où une extraction a été effectuée, la variable `tmp` le dossier associé à ce jeu de migration est supprimé afin d’économiser de l’espace.
 

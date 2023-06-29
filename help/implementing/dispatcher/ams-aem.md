@@ -3,10 +3,10 @@ title: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Serv
 description: Migration de la configuration Dispatcher d’AMS vers AEM as a Cloud Service
 feature: Dispatcher
 exl-id: ff7397dd-b6e1-4d08-8e2d-d613af6b81b3
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1446'
-ht-degree: 97%
+source-wordcount: '1451'
+ht-degree: 83%
 
 ---
 
@@ -32,11 +32,11 @@ que vous disposez d’une archive avec une structure similaire à celle décrite
 ### Extraire l’archive et supprimer tout préfixe
 
 Extrayez l’archive dans un dossier et assurez-vous que les noms des sous-dossiers immédiats commencent par `conf`, `conf.d`,
-`conf.dispatcher.d` et `conf.modules.d`. Si tel n’est pas le cas, déplacez-les dans la hiérarchie.
+`conf.dispatcher.d` et `conf.modules.d`. Dans le cas contraire, déplacez-les vers le haut de la hiérarchie.
 
 ### Supprimer les sous-dossiers et fichiers non utilisés
 
-Supprimez les sous-dossiers `conf` et `conf.modules.d`, ainsi que les fichiers correspondants à `conf.d/*.conf`.
+Suppression de sous-dossiers `conf` et `conf.modules.d`, et les fichiers correspondants `conf.d/*.conf`.
 
 ### Supprimer tous les hôtes virtuels non publiés
 
@@ -64,8 +64,7 @@ Entrez dans le répertoire `conf.d/rewrites`.
 Supprimez tout fichier nommé `base_rewrite.rules` et `xforwarded_forcessl_rewrite.rules`, et n’oubliez pas de
 supprimer les instructions `Include` dans les fichiers d’hôtes virtuels qui y font référence.
 
-Si `conf.d/rewrites` contient maintenant un seul fichier, il doit être renommé `rewrite.rules`.
-De plus, veillez à adapter également les instructions `Include` se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
+If `conf.d/rewrites` contient maintenant un seul fichier. Il doit être renommé en `rewrite.rules` et n’oubliez pas d’adapter la variable `Include` des instructions se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être
 placé dans l’instruction `Include` qui y fait référence dans les fichiers d’hôtes virtuels.
@@ -77,8 +76,7 @@ Entrez dans le répertoire `conf.d/variables`.
 Supprimez tout fichier nommé `ams_default.vars` et n’oubliez pas de supprimer les instructions `Include` des fichiers d’hôtes
 virtuels qui y font référence.
 
-Si `conf.d/variables` contient maintenant un seul fichier, il doit être renommé `custom.vars`.
-De plus, veillez à adapter également les instructions `Include` se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
+If `conf.d/variables` contient maintenant un seul fichier. Il doit être renommé en `custom.vars` et n’oubliez pas d’adapter la variable `Include` des instructions se rapportant à ce fichier dans les fichiers d’hôtes virtuels.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à l’hôte virtuel, leur contenu doit être
 placé dans l’instruction `Include` qui y fait référence dans les fichiers d’hôtes virtuels.
@@ -131,9 +129,7 @@ standard se trouve dans le dossier `src` de ce SDK. N’oubliez pas d’adapter 
 instructions `$include` faisant référence aux fichiers de règles `ams_*_cache.any` dans les
 fichiers de fermes.
 
-En revanche, si `conf.dispatcher.d/cache` contient maintenant un seul fichier portant le suffixe `_cache.any`,
-il doit être renommé en `rules.any`. De plus, veillez à adapter les instructions `$include`
-se rapportant à ce fichier dans les fichiers de fermes.
+Si au lieu de `conf.dispatcher.d/cache` contient maintenant un seul fichier avec le suffixe `_cache.any`, il doit être renommé en `rules.any` et n’oubliez pas d’adapter la variable `$include` des instructions se rapportant à ce fichier dans les fichiers de fermes.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
 doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
@@ -156,9 +152,7 @@ Entrez dans le répertoire `conf.dispatcher.d/clientheaders`.
 
 Supprimez tout fichier portant le préfixe `ams_`.
 
-Si `conf.dispatcher.d/clientheaders` contient maintenant un seul fichier portant le suffixe `_clientheaders.any`,
-il doit être renommé `clientheaders.any`. De plus, veillez à adapter également les instructions `$include`
-se rapportant à ce fichier dans les fichiers de fermes.
+If `conf.dispatcher.d/clientheaders` contient maintenant un seul fichier avec le suffixe `_clientheaders.any`, il doit être renommé en `clientheaders.any` et n’oubliez pas d’adapter la variable `$include` des instructions se rapportant à ce fichier dans les fichiers de fermes.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
 doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
@@ -185,8 +179,8 @@ Entrez dans le répertoire `conf.dispatcher.d/filters`.
 
 Supprimez tout fichier portant le préfixe `ams_`.
 
-Si `conf.dispatcher.d/filters` contient maintenant un seul fichier, il doit être renommé
-`filters.any`. De plus, veillez à adapter également les instructions `$include` se rapportant à ce fichier dans les fichiers de fermes.
+If `conf.dispatcher.d/filters` contient maintenant un seul fichier qui doit être renommé
+`filters.any` et n’oubliez pas d’adapter la variable `$include` des instructions se rapportant à ce fichier dans les fichiers de fermes.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
 doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.
@@ -228,8 +222,8 @@ Renommez le répertoire `conf.dispatcher.d/vhosts` en `conf.dispatcher.d/virtual
 
 Supprimez tout fichier portant le préfixe `ams_`.
 
-Si `conf.dispatcher.d/virtualhosts` contient maintenant un seul fichier, il doit être renommé
-`virtualhosts.any`. De plus, veillez à adapter également les instructions `$include` se rapportant à ce fichier dans les fichiers de fermes.
+If `conf.dispatcher.d/virtualhosts` contient maintenant un seul fichier qui doit être renommé
+`virtualhosts.any` et n’oubliez pas d’adapter la variable `$include` des instructions se rapportant à ce fichier dans les fichiers de fermes.
 
 Si le dossier contient toutefois plusieurs fichiers spécifiques à la ferme avec ce motif, leur contenu
 doit être copié dans l’instruction `$include` qui y fait référence dans les fichiers de fermes.

@@ -2,10 +2,10 @@
 title: Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.
 description: Découvrez comment mettre à jour vos fragments de contenu pour le filtrage GraphQL optimisé dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu découplée.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '912'
-ht-degree: 77%
+source-wordcount: '908'
+ht-degree: 72%
 
 ---
 
@@ -99,7 +99,7 @@ Pour exécuter la procédure, procédez comme suit :
       <td>Tous </td>
       <td> </td>
       <td>Variable </td>
-      <td>Intervalle (secondes) pour le traitement des fragments de contenu restants jusqu’à la prochaine limite<br>Cet intervalle est également considéré comme un temps d’attente avant le démarrage du traitement, et comme un délai entre le traitement de chaque nombre CF_MIGRATION_LIMIT de CF.<br>(*)</td>
+      <td>Intervalle (secondes) de traitement des fragments de contenu restants jusqu’à la prochaine limite<br>Cet intervalle est également considéré comme un temps d’attente avant le démarrage de la tâche et comme un délai entre le traitement de chaque nombre de CF_MIGRATION_LIMIT suivant.<br>(*)</td>
      </tr>
     </tbody>
    </table>
@@ -242,7 +242,7 @@ Par conséquent, la présence de cette propriété, sur le nœud JCR `/content/d
 
 ## Limites {#limitations}
 
-Gardez à l’esprit les limites suivantes :
+Tenez compte des limites suivantes :
 
 * L’optimisation des performances des filtres GraphQL ne sera possible qu’après une mise à jour complète de tous vos fragments de contenu (indiquée par la présence de la propriété `cfGlobalVersion` pour le nœud JCR `/content/dam`).
 

@@ -2,10 +2,10 @@
 title: Création d’une branche
 description: Cette page décrit la création d’une branche dans Cloud Manager pour Screens as a Cloud Service.
 exl-id: bcfdcb45-8547-4160-ba47-4f47916ca48a
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '226'
-ht-degree: 100%
+source-wordcount: '225'
+ht-degree: 90%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 Cette section décrit comment créer une branche pour votre programme dans Cloud Manager.
 
 >[!NOTE]
->Reportez-vous à [Utilisation de l’assistant dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=fr) pour savoir comment créer un projet d’application AEM dans Cloud Manager à l’aide de l’assistant.
+>Voir [Utilisation de l’assistant dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/create-application-project/using-the-wizard.html?lang=fr) pour savoir comment créer un projet d’application AEM dans Cloud Manager à l’aide de l’assistant.
 
 ## Objectif {#objective}
 

@@ -4,10 +4,10 @@ description: Découvrez comment les modèles de site AEM peuvent être utilisés
 feature: Administering
 role: Admin
 exl-id: 42eec922-b02e-4f2c-8107-7336192919c7
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '572'
-ht-degree: 96%
+source-wordcount: '568'
+ht-degree: 90%
 
 ---
 
@@ -19,19 +19,19 @@ Découvrez comment les modèles de site AEM peuvent être utilisés pour prédé
 
 Il est pratique de disposer de structures prédéfinies pour déployer rapidement un nouveau site en fonction d’un ensemble de normes existantes. Les modèles de site permettent de combiner du contenu de site de base dans un package pratique et réutilisable.
 
-Les modèles de site contiennent généralement le contenu et la structure du site de base ainsi que des informations sur le style du site, connu sous le nom de [thème de site,](site-themes.md) pour permettre à un nouveau site de démarrer rapidement. Les administrateurs sélectionnent un modèle de site sur lequel baser le site [pendant le processus de création du site.](create-site.md)
+Les modèles de site contiennent généralement du contenu et de la structure de base du site ainsi que des informations de style de site, connues sous le nom de [thème du site,](site-themes.md) pour démarrer rapidement un nouveau site. Les administrateurs sélectionnent un modèle de site sur lequel baser le site [pendant le processus de création du site.](create-site.md)
 
-Les modèles sont efficaces car ils sont réutilisables et personnalisables. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de créer différents sites pour répondre à divers besoins professionnels.
+Les modèles sont puissants, car ils sont réutilisables et personnalisables. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de créer différents sites pour répondre à divers besoins professionnels.
 
 >[!NOTE]
 >
->Les modèles de site AEM ne doivent pas être confondus avec les [modèles de page.](/help/sites-cloud/authoring/features/templates.md) Les modèles de site définissent la structure globale d’un site. Un modèle de page définit la structure et le contenu initial d’une page individuelle.
+>Les modèles de site AEM ne doivent pas être confondus avec les [modèles de page](/help/sites-cloud/authoring/features/templates.md). Les modèles de site définissent la structure globale d’un site. Un modèle de page définit la structure et le contenu initial d’une page individuelle.
 >
->Les modèles de site AEM ne doivent pas être confondus avec les [thèmes de site AEM.](site-themes.md) Les thèmes de site AEM contiennent uniquement les informations de style d’un site AEM. AEM modèles de site définissent la structure du site et le contenu initial, et contiennent un thème de site AEM pour permettre [création rapide de site.](create-site.md)
+>Les modèles de site AEM ne doivent pas être confondus avec les [thèmes de site AEM](site-themes.md). Les thèmes de site AEM contiennent uniquement les informations de style d’un site AEM. AEM modèles de site définissent la structure du site et le contenu initial, et contiennent un thème de site AEM pour permettre [création rapide de site](create-site.md).
 
 ## Ajout d’un modèle de site à AEM {#adding}
 
-Vous pouvez ajouter plusieurs modèles à AEM, qui peuvent ensuite être utilisés pour [créer des sites.](create-site.md)
+Vous pouvez ajouter plusieurs modèles à AEM, qui peuvent ensuite être utilisés pour [créer des sites](create-site.md).
 
 1. Connectez-vous à votre environnement de création AEM et accédez à la console Sites.
 
@@ -49,7 +49,7 @@ Vous pouvez ajouter plusieurs modèles à AEM, qui peuvent ensuite être utilis�
 
 1. Une fois chargé, il s’affiche dans la liste des modèles disponibles.
 
-Votre modèle est chargé et peut être utilisé pour [créer des sites.](create-site.md)
+Votre modèle est chargé et peut être utilisé pour [créer des sites](create-site.md).
 
 Lors de la sélection d’un modèle existant, il affiche des informations sur le modèle dans la colonne de droite.
 
@@ -68,10 +68,10 @@ Les modèles de site sont simplement des packages avec une structure logique qui
 
 Adobe fournit un modèle de référence des bonnes pratiques que vous pouvez utiliser comme référence pour créer vos propres modèles. [Le modèle de site standard est disponible sur GitHub.](https://github.com/adobe/aem-site-template-standard)
 
-[La dernière version du modèle de site standard](https://github.com/adobe/aem-site-template-standard/releases) peut être téléchargée et utilisée directement pour [créer de nouveaux sites.](create-site.md)
+[La dernière version du modèle de site standard](https://github.com/adobe/aem-site-template-standard/releases) peut être téléchargée et utilisée directement pour [créer de nouveaux sites](create-site.md).
 
 ## Développement de modèles de site {#developing-templates}
 
 Adobe fournit un Créateur de modèles de site AEM sous la forme d’un ensemble de scripts permettant de créer de nouveaux modèles de sites.
 
-[Le Créateur de modèles de site AEM est disponible ainsi que la documentation d’utilisation sur GitHub.](https://github.com/adobe/aem-site-template-builder) Une expérience de développeur front-end est requise pour personnaliser le [thème de site](site-themes.md) et des connaissances de développeur AEM sont nécessaires pour personnaliser la structure ainsi que le contenu du site.
+[Le Créateur de modèles de site AEM est disponible ainsi que la documentation d’utilisation sur GitHub](https://github.com/adobe/aem-site-template-builder). Une expérience de développeur front-end est requise pour personnaliser le [thème de site](site-themes.md) et des connaissances de développeur AEM sont nécessaires pour personnaliser la structure ainsi que le contenu du site.

@@ -2,7 +2,7 @@
 title: Configuration du service de transcription
 seo-title: Configure transcription service
 description: Adobe Experience Manager Assets est configuré avec les  [!DNL Azure Media Services]  qui génèrent automatiquement une transcription textuelle de la langue parlée dans un fichier audio ou vidéo pris en charge au format WebVTT (Vtt).
-seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content as well as increase the ROI of these assets by supporting accessibility and localization.
+seo-description: When an audio or video asset is processed in Experience Manager Assets, the AI-based transcription service automatically generates the text transcript rendition of the audio or video asset and stores it at the same location within your Assets repository where the original asset resides. The Experience Manager Assets transcription service allows marketers to effectively manage their audio and video content with added discoverability of the text content and increase the ROI of these assets by supporting accessibility and localization.
 products: SG_EXPERIENCEMANAGER/ASSETS and Experience Manager as a Cloud Service
 sub-product: assets
 content-type: reference
@@ -11,17 +11,17 @@ topic-tags: Configuration
 feature: Asset Management, Configuration
 role: Admin
 exl-id: e96c8d68-74a6-4d61-82dc-20e619338d4b
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1696'
-ht-degree: 96%
+source-wordcount: '1694'
+ht-degree: 94%
 
 ---
 
 # Configuration de la transcription dans [!DNL Experience Manager Assets] {#configure-transcription-service}
 
 La transcription est le processus de traduction de l’audio d’un fichier audio ou vidéo en texte (voix vers texte) à l’aide de la technologie de reconnaissance vocale.
-[!DNL Adobe Experience Manager Assets] est configuré avec les [!DNL Azure Media Services] qui génèrent automatiquement une transcription textuelle de la langue parlée dans un fichier audio ou vidéo pris en charge au format WebVTT (.vtt). Lorsqu’une ressource audio ou vidéo est traitée dans [!DNL Experience Manager Assets], le service de transcription génère automatiquement le rendu de transcription texte de la ressource audio ou vidéo et le stocke au même emplacement que la ressource d’origine dans votre référentiel de ressources. Le service de transcription d’[!DNL Experience Manager Assets] permet aux marketeurs de gérer efficacement leur contenu audio et vidéo en permettant de trouver plus facilement le contenu texte et en augmentant le retour sur investissement de ces ressources par la prise en charge de l’accessibilité et de la localisation.
+[!DNL Adobe Experience Manager Assets] est configuré avec les [!DNL Azure Media Services] qui génèrent automatiquement une transcription textuelle de la langue parlée dans un fichier audio ou vidéo pris en charge au format WebVTT (.vtt). Lorsqu’une ressource audio ou vidéo est traitée dans [!DNL Experience Manager Assets], le service de transcription génère automatiquement le rendu de transcription texte de la ressource audio ou vidéo et le stocke au même emplacement que la ressource d’origine dans votre référentiel de ressources. Le [!DNL Experience Manager Assets] Le service de transcription permet aux marketeurs de gérer efficacement leur contenu audio et vidéo en ajoutant la possibilité de découvrir le contenu texte et en augmentant le retour sur investissement de ces ressources en prenant en charge l’accessibilité et la localisation.
 
 Les transcriptions sont des versions textuelles du contenu parlé ; par exemple, un film que vous visionnez sur n’importe quelle plateforme OTT comprend souvent des sous-titres pour faciliter son accessibilité ou pour utiliser le contenu dans d’autres langues. Ou encore, tout fichier audio ou vidéo utilisé à des fins de marketing, d’apprentissage ou de divertissement. Ces expériences commencent par une transcription qui est ensuite formatée ou traduite selon les besoins. La transcription audio ou vidéo est un processus long et susceptibles de contenir des erreurs lorsqu’elle est exécutée manuellement. Il est également difficile d’adapter manuellement le processus à grande échelle, compte tenu de la demande croissante de contenu audio-vidéo. [!DNL Experience Manager Assets] utilise la transcription basée sur l’IA d’Azure qui permet un traitement à grande échelle des ressources audio et vidéo et génère les transcriptions textuelles (fichiers .vtt) avec les détails de l’horodatage. Tout comme dans Assets, la fonctionnalité de transcription est prise en charge avec Dynamic Media.
 
@@ -88,7 +88,7 @@ Une fois le profil de traitement configuré pour la transcription des fichiers a
 * Sélectionnez une définition de profil de traitement dans **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Profils de traitement]** et utilisez l’action **[!UICONTROL Appliquer le profil au(x) dossier(s)]**. L’explorateur de contenu vous permet d’accéder à un dossier spécifique, de sélectionner un dossier et de confirmer l’application du profil.
 * Sélectionnez un dossier dans l’interface utilisateur d’Assets, puis cliquez sur **[!UICONTROL Propriétés]** pour ouvrir les propriétés du dossier. Cliquez sur l’onglet **[!UICONTROL Traitement des ressources]** et sélectionnez le profil de traitement approprié pour le dossier dans la liste **[!UICONTROL Profil de traitement]**. Pour enregistrer les modifications, cliquez sur **[!UICONTROL Enregistrer et fermer]**.
 
-   ![configure-transcription-service](assets/video-processing-profile3.png)
+  ![configure-transcription-service](assets/video-processing-profile3.png)
 
 * Les utilisateurs peuvent sélectionner des dossiers ou des ressources spécifiques dans l’interface utilisateur d’Assets pour appliquer un profil de traitement, puis sélectionner l’option **[!UICONTROL Retraiter les ressources]** dans les options disponibles dans la partie supérieure.
 

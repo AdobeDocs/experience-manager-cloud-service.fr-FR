@@ -2,10 +2,10 @@
 title: Création de modèles de page
 description: Le modèle définit la structure de la page créée et, avec l’éditeur de modèles, la création et la gestion des modèles ne sont plus une tâche réservée aux développeurs.
 exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '4579'
-ht-degree: 63%
+source-wordcount: '4577'
+ht-degree: 62%
 
 ---
 
@@ -28,7 +28,7 @@ Le **Éditeur de modèles** permet aux auteurs de modèles de :
 
 Ce document explique comment une **auteur de modèles** Vous pouvez utiliser la console de modèles et l’éditeur pour créer et gérer des modèles modifiables.
 
-Pour obtenir des informations détaillées sur le fonctionnement des modèles modifiables à un niveau technique, voir le document destiné aux développeurs [Modèles de page](/help/implementing/developing/components/templates.md).
+Pour plus d’informations sur le fonctionnement des modèles modifiables à un niveau technique, consultez le document destiné aux développeurs . [Modèles de page](/help/implementing/developing/components/templates.md) pour plus d’informations.
 
 >[!NOTE]
 >
@@ -266,7 +266,7 @@ Lorsqu’un composant a été déverrouillé, vous pouvez définir la variable [
 
 >[!NOTE]
 >
->En mode **Contenu initial** (et dans les pages créées), les composants déverrouillés qui possèdent un parent accessible (c’est-à-dire, les composants dans un conteneur de mises en page) peuvent être supprimés.
+>Dans **Contenu initial** et sur les pages créées, tout composant déverrouillé ayant un parent accessible (c’est-à-dire, les composants d’un conteneur de mises en page) peut être supprimé.
 
 #### Mise en page {#template-layout}
 
@@ -393,7 +393,7 @@ Sous , **Propriétés** vous pouvez définir les paramètres du composant. Le ti
 
 Sur le **Principal** , les paramètres les plus importants du composant sont définis.
 
-Par exemple, pour un composant d’image, les largeurs autorisées peuvent être définies ainsi que l’activation du chargement différé.
+Par exemple, pour un composant d’image, les largeurs autorisées peuvent être définies, ainsi que l’activation du chargement différé.
 
 Si un paramètre permet plusieurs configurations, cliquez ou appuyez sur le bouton **Ajouter** pour ajouter une autre configuration.
 
@@ -409,7 +409,7 @@ Pour supprimer une configuration, cliquez ou appuyez sur le bouton **Supprimer**
 
 L’onglet **Fonctions** permet d’activer ou de désactiver des fonctions supplémentaires du composant.
 
-Par exemple, pour un composant d’image, vous pouvez définir les proportions de recadrage, les orientations d’image autorisées et indiquer si les chargements sont autorisés.
+Par exemple, pour un composant d’image, vous pouvez définir les proportions de recadrage, les orientations d’image autorisées et si les chargements sont autorisés.
 
 ![Onglet Fonctions](/help/sites-cloud/authoring/assets/templates-features-tab.png)
 

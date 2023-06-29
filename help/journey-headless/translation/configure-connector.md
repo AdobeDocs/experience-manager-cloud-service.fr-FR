@@ -2,10 +2,10 @@
 title: Configuration du connecteur de traduction pour le contenu découplé
 description: Découvrez comment connecter AEM à un service de traduction.
 exl-id: c91b2701-7ede-4d0b-93dd-3636c6638be2
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 95%
+source-wordcount: '1231'
+ht-degree: 94%
 
 ---
 
@@ -78,7 +78,7 @@ Pour créer une configuration de traduction :
 
 1. Fournissez les informations suivantes dans les champs requis, puis cliquez ou appuyez sur **Créer**.
    1. Sélectionnez **Type de configuration** dans la liste déroulante. Sélectionnez **Intégration de traduction** dans la liste.
-   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud** ainsi que dans les listes déroulantes de propriétés de la page.
+   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la variable **Cloud Services** console et dans les listes déroulantes des propriétés de page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
 
    ![Créer une configuration de traduction](assets/create-translation-configuration.png)

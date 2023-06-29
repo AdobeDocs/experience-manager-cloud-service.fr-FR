@@ -2,10 +2,10 @@
 title: Post-activation
 description: Découvrez comment surveiller les problèmes et améliorer les performances
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 940a01cd3b9e4804bfab1a5970699271f624f087
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '485'
-ht-degree: 100%
+source-wordcount: '482'
+ht-degree: 89%
 
 ---
 
@@ -36,22 +36,22 @@ Ce document décrit les outils disponibles pour résoudre les problèmes des env
 
 Le débogage des environnements de développeur d’AEM as a Cloud Service est disponible dans Developer Console pour les environnements de développement, d’évaluation et de production.
 
-Pour en savoir plus sur les outils de développement, consultez la section [Implémenter pour AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools).
+Voir [Mise en oeuvre pour AEM as a Cloud Service](/help/implementing/developing/introduction/development-guidelines.md#aem-as-a-cloud-service-development-tools) pour en savoir plus sur les outils de développement.
 
-## CRXDE Lite {#crxde-lite}
+## CRXDE Lite {#crxde-lite}
 
 En tant qu’utilisateur, vous pouvez accéder à CRXDE Lite dans l’environnement de développement, mais pas dans les environnements d’évaluation ni de production.
 
 >[!IMPORTANT]
 >L’écriture, au moment de l’exécution, dans des référentiels non modifiables tels que `/libs` et `/apps`, entraîne des erreurs. De plus, vous n’avez pas accès aux outils de développement pour les environnements d’évaluation et de production.
 
-Pour savoir comment développer votre application AEM à l’aide de CRXDE Lite, consultez la section [Développer dans CRXDE Lite](/help/implementing/developing/tools/crxde.md).
+Voir [Développement avec CRXDE Lite](/help/implementing/developing/tools/crxde.md) pour découvrir comment développer votre application AEM à l’aide de CRXDE Lite.
 
 ## Gestion des journaux {#managing-logs}
 
 Les utilisateurs peuvent accéder à la liste des fichiers journaux disponibles pour l’environnement sélectionné.
 
-Pour savoir comment accéder aux journaux et les gérer via l’interface utilisateur ou à l’aide d’une API via Cloud Manager, voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md).
+Voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/manage-logs.md) pour savoir comment accéder aux journaux et les gérer via l’interface utilisateur ou à partir de l’API via Cloud Manager.
 
 ## Contacter l’assistance {#contacting-support}
 

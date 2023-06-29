@@ -4,9 +4,9 @@ description: Utilisez le sélecteur de ressources pour rechercher, rechercher et
 contentOwner: Adobe
 role: Admin,User
 exl-id: b968f63d-99df-4ec6-a9c9-ddb77610e258
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2379'
 ht-degree: 4%
 
 ---
@@ -85,7 +85,7 @@ The prerequisites vary if you are authenticating using a SUSI flow or a non-SUSI
 *   imsToken
 *   apikey
 
-For more information on these properties, refer to [Asset Selector Properties](#asset-selector-properties).
+For more information on these properties, see [Asset Selector Properties](#asset-selector-properties).
 
 **SUSI flow**
 
@@ -95,7 +95,7 @@ For more information on these properties, refer to [Asset Selector Properties](#
 *   imsOrg
 *   apikey
 
-For more information on these properties, refer to [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
+For more information on these properties, see [Example for the SUSI flow](#susi-vanilla) and [Asset Selector Properties](#asset-selector-properties).
 -->
 
 ## Installation {#installation}
@@ -171,12 +171,12 @@ Le tableau suivant décrit certaines des propriétés importantes de l’objet d
 | *repo:size* | nombre | Taille de la ressource en octets. |
 | *repo:path* | chaîne | Emplacement de la ressource dans le référentiel. |
 | *repo:ancestors* | `Array<string>` | Tableau d’éléments ancêtres pour la ressource dans le référentiel. |
-| *repo:state* | chaîne | Etat actuel de la ressource dans le référentiel (par exemple, principal, supprimé, etc.). |
+| *repo:state* | chaîne | État actuel de la ressource dans le référentiel (par exemple, principal, supprimé, etc.). |
 | *repo:createdBy* | chaîne | L’utilisateur ou le système qui a créé la ressource. |
 | *repo:createDate* | chaîne | Date et heure de création de la ressource. |
 | *repo:modifiedBy* | chaîne | L’utilisateur ou le système qui a modifié la ressource pour la dernière fois. |
 | *repo:modifyDate* | chaîne | Date et heure de la dernière modification de la ressource. |
-| *dc:format* | chaîne | Le format de la ressource, tel que le type de fichier (par exemple, JPEG, PNG, etc.). |
+| *dc:format* | chaîne | Format de la ressource, tel que le type de fichier (par exemple, JPEG, PNG, etc.). |
 | *tiff:imageWidth* | nombre | Largeur d’une ressource. |
 | *tiff:imageLength* | nombre | Hauteur d’une ressource. |
 | *computedMetadata* | `Record<string, any>` | Objet qui représente un compartiment pour toutes les métadonnées de ressources de tous types (référentiel, application ou métadonnées incorporées). |
@@ -477,7 +477,7 @@ interface SelectedAsset {
 | tiff:imageLength | number | The height of an image type of Asset |
 | repo:state | string | The `Approved`, `Rejected`, or `Expired`state of an Asset |
 | computedMetadata | string | It is an object that represents a bucket for all the Asset's metadata of all kinds (repository, application or embedded metadata) |
-| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, etc.  |
+| _links | string | It represents the collection of links used in the Asset Selector. The links are represented in the form of an array. The parameters of an array include: `href`, `type`, `repo:size`, `width`, `height`, and so on  |
 
 For the detailed example of Object Schema, click 
 -->

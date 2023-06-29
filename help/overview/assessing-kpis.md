@@ -2,10 +2,10 @@
 title: Accès aux indicateurs de performance clés
 description: Accès aux indicateurs de performance clés
 exl-id: 8556e0e3-a557-4fd6-9b82-09cb1decff0a
-source-git-commit: 8bd001f6f70ce1aa9a63623b3ad68793fa355c9a
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '539'
-ht-degree: 100%
+source-wordcount: '536'
+ht-degree: 67%
 
 ---
 
@@ -34,21 +34,21 @@ Lors de l’évaluation de vos indicateurs de performance clés, assurez-vous de
 1. L’indicateur de performance clé se rapporte spécifiquement à la solution (Experience Manager).
 1. L’indicateur de performance clé est étroitement lié à un objectif que l’équipe dirigeante juge d’une importance critique.
 1. Cet objectif contribue directement à un objectif commercial défendu par au moins un cadre supérieur.
-1. Vous disposez des informations de base nécessaires pour comparer la situation actuelle aux résultats que vous obtiendrez après le lancement de votre Experience Manager.
+1. Vous disposez des données de base pour comparer la situation actuelle aux résultats affichés après le lancement de votre Experience Manager.
 1. L’indicateur de performance clé examinera un élément qui peut être mesuré à intervalles réguliers.
 
-Une fois que vous avez confirmé que vous disposez des indicateurs clés de performance appropriés, vous devez déterminer comment et quand vous allez fournir un rapport sur chaque indicateur de performance clé aux parties prenantes concernées.
+Après avoir confirmé que vous disposez des IPC appropriés, vous devez déterminer comment et à quel moment vous allez créer des rapports sur chaque IPC pour les parties prenantes concernées.
 
 Lors de la définition de votre processus de compte-rendu, prenez en compte les questions suivantes :
 
-1. Quelle est l’audience de ce rapport sur les indicateurs de performance clés ? Pour chaque indicateur de performance clé, assurez-vous d’avoir identifié un promoteur (quelqu’un qui compte sur vous et sur le reste de l’équipe pour l’évaluation de cette mesure) ainsi qu’une liste plus longue de personnes qui devraient recevoir des rapports réguliers.
+1. Quelle est l’audience de ce rapport sur les indicateurs de performance clés ? Pour chaque indicateur de performance clé, assurez-vous d’avoir identifié un sponsor exécutif — quelqu’un qui peut vous tenir ainsi que le reste de l’équipe responsable de cette mesure — et une liste plus large de personnes qui doivent recevoir des rapports réguliers.
 1. À quelle fréquence génèrerez-vous des rapports sur cet indicateur de performance clé ?
 1. Comment allez-vous suivre cet indicateur de performance clé ? Qui va extraire les données ? Quelles sources de données cette personne ou cette équipe utilisera-t-elle ? Existe-t-il des mesures que vous puissiez prendre dès maintenant pour faciliter ce processus ?
 1. Quel sera le format du rapport ?
 1. Comment le rapport sera-t-il remis ?
 
-Une fois que vous aurez lancé votre implémentation d’Experience Manager, un ensemble solide d’indicateurs de performance clés vous permettra de déterminer rapidement si vous êtes sur la bonne voie. Si vous n’atteignez pas un de vos indicateurs de performance clés, vous devez apporter des modifications à la façon dont vos équipes utilisent Experience Manager. Si vous dépassez rapidement l’un de vos objectifs d’indicateurs clés de performance, commencez par célébrer votre victoire ! Vous aurez cependant intérêt à ensuite recalibrer votre objectif pour essayer d’obtenir un résultat encore meilleur.
+Après le lancement de votre Experience Manager, un ensemble solide d’indicateurs de performance clés vous donnera rapidement une idée de si vous êtes sur la bonne voie. Si vous ne remplissez pas l’un de vos indicateurs de performance clés, vous devez effectuer des ajustements dans la manière dont vos équipes utilisent Experience Manager. Si vous dépassez rapidement l&#39;une de vos cibles d&#39;indicateurs de performance clés, c&#39;est quelque chose à célébrer — mais vous devez ensuite recalibrer votre cible pour essayer d&#39;obtenir un meilleur résultat.
 
 >[!TIP]
 >
-> Si vous souhaitez obtenir plus d’aide concernant vos indicateurs de performance clés, contactez [les services de conseil Adobe](https://www.adobe.com/fr/experience-cloud/consulting-services.html) ou votre partenaire d’implémentation.
+> Si vous avez besoin d’aide supplémentaire sur vos indicateurs clés de performance, contactez [Services de conseil Adobe](https://www.adobe.com/fr/experience-cloud/consulting-services.html) ou votre partenaire de mise en oeuvre.

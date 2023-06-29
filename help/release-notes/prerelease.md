@@ -2,10 +2,10 @@
 title: Canal de version préliminaire d’Adobe Experience Manager as a Cloud Service
 description: Découvrez comment utiliser le canal de version préliminaire pour obtenir un aperçu des prochaines fonctionnalités d’AEM as a Cloud Service.
 exl-id: cfc91699-0087-40fa-a76c-0e5e1e03a5bd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 91%
+source-wordcount: '1304'
+ht-degree: 85%
 
 ---
 
@@ -18,9 +18,9 @@ Découvrez comment utiliser le canal de version préliminaire pour obtenir un ap
 
 Adobe Experience Manager as a Cloud Service bénéficie régulièrement de nouvelles fonctionnalités, conformément à la [feuille de route des versions d’Experience Manager.](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-releases-roadmap.html?lang=fr#aem-as-cloud-service)
 
-Pour vous familiariser avec les fonctionnalités prévues pour la mise à jour des fonctionnalités suivantes, vous pouvez vous abonner au canal de version préliminaire, accessible par la configuration de vos environnements de développement ou de tout environnement de test. Vous pouvez prévisualiser les nouveautés dans l’interface utilisateur d’AEM et créer du code pour toute nouvelle API en version préliminaire.
+Pour vous familiariser avec les fonctionnalités prévues pour la mise à jour des fonctionnalités suivantes, vous pouvez vous abonner au canal de version préliminaire, accessible par la configuration de vos environnements de développement ou de tout environnement de test. Vous pouvez prévisualiser les modifications accessibles par le biais de l’interface utilisateur d’AEM et créer du code par rapport à toute nouvelle API de version préliminaire.
 
-La liste des fonctionnalités de version préliminaire pour une mise à jour donnée est publiée dans les [notes de mise à jour.](/help/release-notes/release-notes-cloud/release-notes-current.md)
+La liste des fonctionnalités de version préliminaire pour une mise à jour donnée est publiée dans les [notes de mise à jour](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 ## Mises à jour d’AEM as a Cloud Service {#releases}
 
@@ -33,11 +33,11 @@ Ce calendrier de publication permet d’offrir des mises à jour continues sans 
 
 Le canal de version préliminaire vous permet de prévisualiser les fonctionnalités programmées pour la prochaine version des fonctionnalités afin que vous puissiez évaluer les fonctionnalités à venir et planifier leur mise en oeuvre possible pour vos propres projets. Il vous permet de planifier la prochaine version de la fonctionnalité.
 
-Par exemple, si nous sommes au mois de mai et que vous êtes abonné(e) au canal de version préliminaire, vous pouvez tester les fonctionnalités de la version de juin.
+Si, par exemple, nous sommes en mai et que vous êtes abonné au canal de version préliminaire, vous pouvez évaluer les fonctionnalités de la version de juin à venir.
 
 ![Graphique illustrant le rythme de publication des versions préliminaires.](assets/prerelease-cadence.png)
 
-En vous abonnant au canal de version préliminaire, vous pouvez découvrir les prochaines fonctionnalités d’AEM un mois avant leur publication. Vous disposez ainsi de suffisamment de temps pour évaluer l’impact des nouvelles fonctionnalités sur vos projets et personnalisations, ainsi que pour planifier le déploiement des fonctionnalités, les tests et la formation des utilisateurs et utilisatrices.
+La version préliminaire vous donne un délai d’un mois pour découvrir les fonctionnalités AEMaaCS à venir, ce qui vous donne le temps d’évaluer l’impact de toutes nouvelles fonctionnalités sur vos projets et personnalisations et de planifier le déploiement de telles fonctionnalités, les tests et la formation des utilisateurs.
 
 Pour tirer pleinement parti du canal de version préliminaire, suivez les quatre étapes suivantes.
 
@@ -122,7 +122,7 @@ Vous pouvez voir les nouvelles fonctionnalités de la console Sites dans le SDK 
 
 #### Démarrer le SDK de démarrage rapide en mode version préliminaire {#prerelease-mode}
 
-1. Téléchargez le SDK à partir du portail de distribution logicielle et installez-le comme décrit dans la section [Accès au SDK d’AEM as a Cloud Service.](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+1. Téléchargez le SDK à partir du portail de distribution de logiciels et installez-le comme décrit dans la section [Accès au SDK d’AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
 1. Lors du lancement du démarrage rapide du SDK, incluez l’argument `-r prerelease`.
 
 La valeur est sticky. Elle ne peut donc être sélectionnée que lors du premier démarrage. Réinstallez le SDK pour modifier l’option de ligne de commande.

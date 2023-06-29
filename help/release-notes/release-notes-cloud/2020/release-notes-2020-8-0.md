@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.8.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.8.0.
 exl-id: 83413130-ae90-4419-bcf7-42fdc740452b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1041'
-ht-degree: 93%
+source-wordcount: '1039'
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Possibilité de [restaurer les pages et les sous-pages (arborescences de page) dans une version antérieure](/help/sites-cloud/authoring/features/page-versions.md#reinstating-versions).
 
-* Possibilité de [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans l’[éditeur de SPA](/help/implementing/developing/hybrid/introduction.md) d’AEM.
+* Capacité à [créer des lancements](/help/sites-cloud/authoring/launches/overview.md) dans AEM [Éditeur de SPA](/help/implementing/developing/hybrid/introduction.md).
 
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
@@ -33,7 +33,7 @@ La section suivante décrit les notes de mise à jour générales d’Experience
 
 * Une nouvelle [expérience de téléchargement de ressources](/help/assets/download-assets-from-aem.md) offre les avantages suivants :
 
-   * Le téléchargement asynchrone pour les fichiers volumineux afin que les utilisateurs n’aient pas à attendre.
+   * Téléchargement asynchrone pour les téléchargements volumineux afin que les utilisateurs n’aient pas à attendre.
    * Une nouvelle API modulaire pour l’extensibilité destinée aux développeurs.
 
 * Les performances d’extraction des métadonnées des microservices de ressources ont été améliorées. Le débit global d’ingestion des ressources a ainsi été augmenté.
@@ -82,7 +82,7 @@ La date de publication de la mise à jour 2020.8.0 de [!UICONTROL Cloud Manage
   >[!NOTE]
   >L’audit de contenu a depuis été renommé contrôle de l’expérience.
 
-  Pour plus d’informations, consultez les [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
+  Voir [Tests de contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md) pour plus d’informations.
 
 * Les nouveaux environnements créés dans les programmes Assets seront désormais automatiquement configurés avec le service de contenu dynamique.
 
@@ -138,8 +138,8 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour des
 
 ### Nouveautés {#what-is-new-refactoring}
 
-* Publication du module AIO-CLI afin d’unifier les outils de refactorisation du code pour permettre aux développeurs d’appeler et d’exécuter ces outils à partir d’un seul emplacement. Pour plus d’informations, voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
+* Publication du module AIO-CLI afin d’unifier les outils de refactorisation du code pour permettre aux développeurs d’appeler et d’exécuter ces outils à partir d’un seul emplacement. Voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) pour plus d’informations.
 
-* Le convertisseur du Dispatcher AEM a été étendu pour prendre en charge les conversions des configurations On-Premise et Adobe Managed Services du Dispatcher dans celles compatibles avec AEM as a Cloud Service. Pour plus d’informations, voir [Ressource Git : AEM Cloud Service Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter).
+* Le convertisseur du Dispatcher AEM a été étendu pour prendre en charge les conversions des configurations On-Premise et Adobe Managed Services du Dispatcher dans celles compatibles avec AEM as a Cloud Service. Voir [Ressource Git : Convertisseur du Dispatcher AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) pour plus d’informations.
 
 * Réécriture du convertisseur du Dispatcher dans ` node.js ` et intégration avec le module AIO-CLI.

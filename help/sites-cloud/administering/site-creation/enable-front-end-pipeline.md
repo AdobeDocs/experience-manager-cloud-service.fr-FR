@@ -4,10 +4,10 @@ description: Découvrez comment vous pouvez activer le pipeline frontal pour que
 feature: Administering
 role: Admin
 exl-id: 55d54d72-f87b-47c9-955f-67ec5244dd6e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 87%
+source-wordcount: '562'
+ht-degree: 82%
 
 ---
 
@@ -25,7 +25,7 @@ Les sites basés sur des modèles de site peuvent utiliser le pipeline frontal p
 
 >[!TIP]
 >
->Si vous ne connaissez pas le pipeline front-end et que vous ne savez pas comment l’utiliser pour déployer rapidement des sites et des modèles de site, consultez la section [Parcours de création rapide de site](/help/journey-sites/quick-site/overview.md) en guise d’introduction.
+>Si vous ne connaissez pas le pipeline frontal et que vous ne savez pas comment déployer rapidement des sites à l’aide de celui-ci et des modèles de site, reportez-vous à la section [Parcours de création de site rapide](/help/journey-sites/quick-site/overview.md) pour une introduction.
 
 Si vous n’avez pas créé votre site existant en fonction de modèles et de thèmes, AEM peut configurer votre site pour charger les thèmes déployés avec le pipeline front-end sur les bibliothèques clientes existantes.
 

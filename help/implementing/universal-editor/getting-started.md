@@ -2,10 +2,10 @@
 title: Prise en main de l’éditeur universel dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '810'
-ht-degree: 94%
+source-wordcount: '805'
+ht-degree: 88%
 
 ---
 
@@ -32,7 +32,7 @@ Ce document vous guidera tout au fil de ces étapes.
 
 ## Demande d’accès à l’éditeur universel {#request-access}
 
-Vous devez d’abord demander l’accès à l’éditeur universel. Accédez à [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), connectez-vous et vérifiez si vous avez accès à l’éditeur universel.
+Vous devez d’abord demander l’accès à l’éditeur universel. Voir [https://experience.adobe.com/#/aem/editor](https://experience.adobe.com/#/aem/editor), connectez-vous et validez si vous avez accès à l’éditeur universel.
 
 Si vous n’y avez pas accès, vous pouvez le demander via un formulaire lié sur la même page.
 
@@ -66,7 +66,7 @@ Si vous ne mettez pas en œuvre d’application React ou que avez besoin d’un 
 
 Pour pouvoir modifier du contenu AEM avec votre application à l’aide de l’éditeur universel, les paramètres CORS et des cookies doivent être définis dans AEM.
 
-Les [configurations OSGi suivantes doivent être définies sur l’instance de création AEM.](/help/implementing/deploying/configuring-osgi.md)
+Les [configurations OSGi suivantes doivent être définies sur l’instance de création AEM](/help/implementing/deploying/configuring-osgi.md).
 
 * `SameSite Cookies = None` dans `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * Supprimez l’en-tête X-FRAME-OPTIONS: SAMEORIGIN dans `org.apache.sling.engine.impl.SlingMainServlet`
@@ -161,11 +161,11 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## Vous pouvez désormais utiliser l’éditeur universel. {#youre-ready}
+## Vous êtes prêt à utiliser l’éditeur universel {#youre-ready}
 
 Votre application est désormais instrumentée pour utiliser l’éditeur universel !
 
-Reportez-vous au document [Création de contenu avec l’éditeur universel](authoring.md) pour découvrir à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
+Voir [Création de contenu avec l’éditeur universel](authoring.md) pour savoir à quel point il est facile et intuitif pour les auteurs de contenu de créer du contenu à l’aide de l’éditeur universel.
 
 ## Ressources supplémentaires {#additional-resources}
 

@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2020.9.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.9.0.
 exl-id: 2332512f-8c52-4569-a006-faa36a7670a1
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 97%
+source-wordcount: '720'
+ht-degree: 94%
 
 ---
 
@@ -19,9 +19,9 @@ La date de publication d’[!DNL Adobe Experience Manager] as a Cloud Service v
 
 ## [!DNL Adobe Experience Manager Sites] as a Cloud Service {#sites}
 
-### Nouveautés d’[!DNL Sites]  {#what-is-new-sites}
+### Nouveautés de [!DNL Sites]  {#what-is-new-sites}
 
-* Le SDK JavaScript de l’éditeur d’application sur une seule page (SPA) [est désormais en source libre.](/help/implementing/developing/hybrid/reference-materials.md)
+* Le SDK JavaScript de l’éditeur d’application sur une seule page (SPA) [est désormais en source libre](/help/implementing/developing/hybrid/reference-materials.md).
 
 ## [!DNL Adobe Experience Manager Assets] as a Cloud Service {#assets}
 
@@ -50,7 +50,7 @@ TBD: list of Assets aaCS bugs that are fixed.
 
 ### Nouveautés {#what-is-new-commerce}
 
-* Publication des composants principaux CIF version 1.3.0. Reportez-vous à [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) pour plus de détails.
+* Composants principaux CIF version 1.3.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.3.0) pour plus d’informations.
 
 * La fonctionnalité d’aperçu avec produit/catégorie pour les modèles de produit et de catégorie est désormais disponible. Elle permet aux utilisateurs métier/spécialistes du marketing dans AEM d’afficher les modèles de produit/catégorie avec des données réelles.
 
@@ -118,8 +118,8 @@ Consultez cette section pour découvrir les nouveautés et les mises à jour des
 
 * Le plug-in AIO-CLI prend en charge Repository Modernizer et permet aux utilisateurs d’exécuter l’outil.
 
-  Pour plus d’informations, voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration).
+  Voir [Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration) pour plus d’informations.
 
 * L’utilitaire Repository Modernizer peut être utilisé pour restructurer des packages de projets existants en packages compatibles avec la structure de projet définie pour AEM as a Cloud Service.
 
-  Reportez-vous à [Ressource Git : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus de détails.
+  Voir [Ressource Git : Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus d’informations.

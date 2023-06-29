@@ -2,10 +2,10 @@
 title: Tests de l’interface utilisateur
 description: Le test personnalisé d’interface utilisateur est une fonctionnalité facultative qui vous permet de créer et d’exécuter automatiquement des tests d’interface utilisateur pour vos applications personnalisées.
 exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2401'
-ht-degree: 74%
+source-wordcount: '2389'
+ht-degree: 71%
 
 ---
 
@@ -35,7 +35,7 @@ Contrairement aux tests fonctionnels personnalisés qui sont des tests HTTP écr
 >
 >Adobe recommande d’utiliser Cypress pour le test de l’interface utilisateur, en respectant le code fourni dans la section [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-cypress).
 > 
->Adobe fournit également des exemples de module de test d’interface utilisateur basés sur JavaScript avec WebdriverIO (voir la section [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) et Java avec WebDriver (voir [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
+>Adobe fournit également des exemples de module de test d’interface utilisateur basés sur JavaScript avec WebdriverIO (voir [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests)) et Java avec WebDriver (voir [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver)).
 
 ## Prise en main des tests d’interface utilisateur {#get-started-ui-tests}
 
@@ -53,7 +53,7 @@ Cette section décrit les étapes requises pour configurer des tests d’interfa
 
    * Pour Java et WebDriver, utilisez l’exemple de code du [Référentiel d’exemples de test AEM](https://github.com/adobe/aem-test-samples/tree/aem-cloud/ui-selenium-webdriver).
 
-   * Pour les autres langages de programmation, reportez-vous à la section [Création de tests d’interface utilisateur](#building-ui-tests) dans ce document pour configurer le projet test.
+   * Pour d’autres langages de programmation, voir la section [Création de tests d’interface utilisateur](#building-ui-tests) dans ce document pour configurer le projet test.
 
 1. Assurez-vous que le test de l’interface utilisateur est activé conformément à la section [Accord préalable client](#customer-opt-in) de ce document.
 
@@ -69,7 +69,7 @@ Cette section décrit les étapes à suivre pour ajouter un projet de tests de l
 
 >[!TIP]
 >
->L’[archétype de projet AEM](https://github.com/adobe/aem-project-archetype) peut générer pour vous un projet de tests de l’interface utilisateur, conforme à la description suivante, si vous n’avez pas d’exigences spéciales pour le langage de programmation.
+>Le [AEM Archétype de projet](https://github.com/adobe/aem-project-archetype) Vous pouvez générer pour vous un projet de tests d’interface utilisateur, conforme à la description suivante, si vous n’avez pas d’exigences spéciales pour le langage de programmation.
 
 ### Générer un contexte de build Docker {#generate-docker-build-context}
 
@@ -236,7 +236,7 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 
 >[!NOTE]
 >
->Le résultat de l’étape de test de l’interface utilisateur est évalué uniquement en fonction des rapports de test. Veillez à générer le rapport en conséquence pour votre exécution de test.
+>Le résultat de l’étape de test de l’interface utilisateur est évalué uniquement en fonction des rapports de test. Veillez à générer le rapport en conséquence pour l’exécution de votre test.
 >
 >Utilisez des assertions au lieu de simplement consigner une erreur dans STDERR ou de renvoyer un code de sortie non nul. Autrement, votre pipeline de déploiement pourra continuer normalement.
 
@@ -259,7 +259,7 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 
 >[!NOTE]
 >
-> Si vous avez besoin de davantage de ressources, veuillez créer un cas d’assistance clientèle et décrire votre cas d’utilisation ; Adobe examinera votre demande et fournira une assistance appropriée.
+> Si vous avez besoin de davantage de ressources, créez un cas d’assistance clientèle et décrivez votre cas d’utilisation. Adobe examinera votre demande et fournira une assistance appropriée.
 
 ## Détails spécifiques à Selenium
 
@@ -345,7 +345,7 @@ Avant d’activer les tests d’interface utilisateur dans un pipeline Cloud Man
 >
 >Les fichiers journaux sont stockés dans le dossier `target/` de votre référentiel.
 >
->Pour plus d’informations, reportez-vous à la section [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
+>Pour plus d’informations, voir [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-cypress/test-module/README.md).
 
 ### Exemple de test JavaScript WebdriverIO {#javascript-sample}
 
@@ -369,7 +369,7 @@ Avant d’activer les tests d’interface utilisateur dans un pipeline Cloud Man
 >* Les fichiers journaux sont stockés dans le dossier `target/reports` de votre référentiel
 >* Vous devez vous assurer que votre ordinateur exécute la dernière version de Chrome lorsque le test télécharge automatiquement la dernière version de ChromeDriver à des fins de test.
 >
->Pour plus d’informations, reportez-vous à la section [Référentiel AEM archétype de projet](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
+>Pour plus d’informations, voir [Référentiel AEM archétype de projet](https://github.com/adobe/aem-project-archetype/blob/develop/src/main/archetype/ui.tests/README.md).
 
 ### Exemple de test Java Selenium WebDriver {#java-sample}
 
@@ -392,4 +392,4 @@ Avant d’activer les tests d’interface utilisateur dans un pipeline Cloud Man
 >
 >Les fichiers journaux sont stockés dans le dossier `target/reports` de votre référentiel.
 >
->Pour plus d’informations, reportez-vous à la section [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).
+>Pour plus d’informations, voir [AEM Référentiel d’exemples de test](https://github.com/adobe/aem-test-samples/blob/aem-cloud/ui-selenium-webdriver/README.md).

@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2022.10.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8fce7c50-f322-4bcf-bd76-390faedfd5b7
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '842'
-ht-degree: 91%
+source-wordcount: '838'
+ht-degree: 84%
 
 ---
 
@@ -36,7 +36,7 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 ### Nouvelles fonctionnalités de [!DNL Sites] {#sites-features}
 
-* L’[Onglet Personnalisation des fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) offre des fonctionnalités de spécification de segmentation à l’éditeur de fragments d’expérience, ainsi que la possibilité de créer des fragments d’expérience imbriqués dans lesquels des variations d’en-têtes et de pieds de page peuvent être créées pour plusieurs segments. Avant le lancement de cette fonctionnalité, la personnalisation proposée par AEM n’était disponible que pour les pages du site et non pour les fragments d’expérience
+* Le [Onglet Personnalisation pour les fragments d’expérience](/help/sites-cloud/authoring/fundamentals/experience-fragments.md#personalization-experience-fragment) permet des fonctionnalités de spécification de segmentation à l’éditeur de fragments d’expérience et la possibilité de créer des fragments d’expérience imbriqués dans lesquels des variations d’en-têtes et de pieds de page peuvent être créées pour plusieurs segments. Avant le lancement de cette fonctionnalité, la personnalisation proposée par AEM n’était disponible que pour les pages du site et non pour les fragments d’expérience
 
 * La [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md) permet désormais aux utilisateurs et utilisatrices de gérer efficacement les fragments de contenu traduits. En un seul clic, vous pouvez désormais afficher toutes les copies de langue. Les utilisateurs et utilisatrices peuvent également filtrer la vue du tableau en fonction de la langue de leur choix.
 
@@ -85,15 +85,15 @@ Regardez la vidéo de présentation de la version d’octobre 2022 pour un rés
 
 ### Nouveautés {#what-is-new-foundation}
 
-* AEM as a Cloud Service (service de création) est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Pour plus d’informations, consultez la section AEM as a [Cloud Service sur Unified Shell](/help/overview/aem-cloud-service-on-unified-shell.md).
+* AEM as a Cloud Service (service de création) est désormais intégré à Unified Shell pour améliorer l’expérience utilisateur et l’unifier avec toutes les autres applications Experience Cloud. Voir AEM as a [Cloud Service sur Shell unifié](/help/overview/aem-cloud-service-on-unified-shell.md) pour plus d’informations.
 
 * Comme mentionné précédemment dans les notes de mise à jour, l’utilisation de l’écran d’administration de l’agent de réplication ou de l’API de réplication pour distribuer des modules de contenu de plus de 10 Mo (noeuds avec des propriétés, sans inclure les fichiers binaires) est désormais obsolète et appliquée. Voir [Gérer la publication](/help/operations/replication.md#manage-publication) ou le [Processus de publication de l’arborescence de contenu](/help/operations/replication.md#publish-content-tree-workflow) pour les approches suggérées de réplication de ces modules de contenu volumineux.
 
-* La configuration de Dispatcher référence désormais un fichier qui répertorie les paramètres de requête de campagne marketing courants. Les clients peuvent choisir de supprimer les commentaires des paramètres souhaités afin d’améliorer la mise en cache. Pour plus d’informations, consultez la section [Paramètres de campagne marketing](/help/implementing/dispatcher/caching.md#marketing-parameters).
+* La configuration de Dispatcher référence désormais un fichier qui répertorie les paramètres de requête de campagne marketing courants. Les clients peuvent choisir de supprimer les commentaires des paramètres souhaités afin d’améliorer la mise en cache. Voir [Paramètres de campagne marketing](/help/implementing/dispatcher/caching.md#marketing-parameters) pour plus d’informations.
 
 ## Cloud Manager {#cloud-manager}
 
-Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici.](/help/implementing/cloud-manager/release-notes/current.md)
+Vous trouverez la liste complète des versions mensuelles de Cloud Manager [ici](/help/implementing/cloud-manager/release-notes/current.md).
 
 ## Outils de migration {#migration-tools}
 

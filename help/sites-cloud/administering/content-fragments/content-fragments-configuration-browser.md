@@ -4,7 +4,7 @@ description: Découvrez comment activer la fonctionnalité Fragment de contenu e
 feature: Content Fragments
 role: User
 exl-id: 55d442ae-ae06-4dfa-8e4e-b415385ccea5
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 34%
@@ -62,7 +62,7 @@ Pour utiliser certains [Fonctionnalité de fragment de contenu](#creating-a-cont
 
    1. Spécifiez un **Titre**.
    1. Le **Nom** devient le nom du noeud dans le référentiel.
-      * Il est généré automatiquement en fonction du titre et ajusté en fonction des [AEM les conventions d’affectation des noms.](/help/implementing/developing/introduction/naming-conventions.md)
+      * Il est généré automatiquement en fonction du titre et ajusté en fonction des [Conventions de dénomination AEM](/help/implementing/developing/introduction/naming-conventions.md).
       * Vous pouvez l’ajuster si nécessaire.
    1. Pour activer leur utilisation, sélectionnez
       * **Modèles de fragment de contenu**

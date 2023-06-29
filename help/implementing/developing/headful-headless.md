@@ -1,17 +1,17 @@
 ---
 title: Couplage et découplage dans AEM
-description: Il est possible de mettre en œuvre des projets AEM selon des modèles couplés et découplés, sans que toutefois ce choix soit binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
+description: Il est possible de mettre en œuvre des projets AEM sur des modèles couplés et découplés, mais ce choix n’a pas besoin d’être si binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet.
 exl-id: 709850ca-7757-47ab-9625-f411121cde2c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1008'
+source-wordcount: '1010'
 ht-degree: 96%
 
 ---
 
 # Couplage et découplage dans AEM {#headful-headless}
 
-Il est possible de mettre en œuvre des projets Adobe Experience Manager selon des modèles couplés et découplés, sans que toutefois ce choix soit binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet. Ce document donne un aperçu des différents modèles et décrit les niveaux d’intégration des applications sur une seule page (SPA).
+Il est possible de mettre en œuvre des projets Adobe Experience Manager sur des modèles couplés et découplés, sans que toutefois ce choix soit binaire. AEM offre la flexibilité nécessaire pour exploiter les avantages des deux modèles dans un même projet. Ce document donne un aperçu des différents modèles et décrit les niveaux d’intégration des applications sur une seule page (SPA).
 
 ## Présentation {#overview}
 
@@ -43,7 +43,7 @@ La section suivante examine ces niveaux d’intégration de manière plus détai
 
 >[!NOTE]
 >
->Bien sûr, vous pouvez également réimplémenter le webshop SPA comme une AEM pleinement opérationnelle. [à l’aide de la structure AEM SPA Editor.](/help/implementing/developing/hybrid/introduction.md) Si vous avez déjà AEM et que souhaitez créer un site web ou une autre SPA, cette méthode est recommandée. Cependant, elle n’entre pas dans le cadre de ce document.
+>Bien sûr, vous pouvez également réimplémenter le webshop SPA comme une AEM pleinement opérationnelle. [utilisation de la structure d’AEM SPA Editor](/help/implementing/developing/hybrid/introduction.md). Si vous avez déjà AEM et que souhaitez créer un site web ou une autre SPA, cette méthode est recommandée. Cependant, elle n’entre pas dans le cadre de ce document.
 
 ## Niveaux d’intégration SPA {#integration-levels}
 
@@ -54,18 +54,18 @@ L’intégration d’une SPA comporte une étendue de quatre niveaux dans AEM.
    * Le contenu est créé, géré et distribué indépendamment sur deux systèmes distincts.
 * **Niveau 1 : Intégration de fragments de contenu**
    * Dans AEM, les [fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) servent à créer et gérer du contenu limité pour la SPA.
-   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL.](/help/headless/graphql-api/content-fragments.md)
+   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL](/help/headless/graphql-api/content-fragments.md).
    * Certains contenus sont gérés dans AEM et d’autres dans un système externe.
    * Le contenu ne peut être affiché que dans la SPA.
 * **Niveau 2 : Incorporation de la SPA dans AEM**
    * Dans AEM, les [fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) servent à créer et gérer le contenu pour la SPA.
-   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL.](/help/headless/graphql-api/content-fragments.md)
+   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL](/help/headless/graphql-api/content-fragments.md).
    * Certains contenus sont gérés dans AEM et d’autres dans un système externe.
    * AEM permet de visualiser le contenu replacé dans son contexte.
    * Le contenu limité peut être modifié dans AEM.
 * **Niveau 3 : Incorporation et activation complète des SPA dans AEM**
    * Dans AEM, les [fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) servent à créer et gérer le contenu pour la SPA.
-   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL.](/help/headless/graphql-api/content-fragments.md)
+   * La SPA récupère ce contenu par l’intermédiaire de l’[API GraphQL](/help/headless/graphql-api/content-fragments.md).
    * AEM permet de visualiser le contenu replacé dans son contexte.
    * L’essentiel du contenu peut être modifié dans AEM.
 
@@ -80,6 +80,6 @@ Différents outils sont proposés par AEM en fonction du niveau d’intégration
 * **Niveau 1 :** Les fragments de contenu et le [framework découplé d’AEM](/help/headless/introduction.md) permettent de diffuser du contenu AEM vers la SPA.
 * **Niveau 2 :** En plus du niveau 1 :
    * [Le composant RemotePage](/help/implementing/developing/hybrid/remote-page.md) permet d’incorporer la SPA externe dans AEM, le contenu AEM pouvant ainsi être affiché dans son contexte.
-   * Certains points de la SPA peuvent également être activés pour [autoriser une modification limitée dans AEM.](/help/implementing/developing/hybrid/editing-external-spa.md)
+   * Certains points de la SPA peuvent également être activés pour [autoriser une modification limitée dans AEM](/help/implementing/developing/hybrid/editing-external-spa.md).
 * **Niveau 3 :** En plus du niveau 2 :
    * Des zones entières de la SPA peuvent être activées pour autoriser une modification complète dans AEM.

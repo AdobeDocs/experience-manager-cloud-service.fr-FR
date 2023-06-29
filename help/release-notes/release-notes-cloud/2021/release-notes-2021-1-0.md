@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.1.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.1.0.
 exl-id: cd639736-6e3d-4b69-b8ae-11e4e6490535
-source-git-commit: bc4da79735ffa99f8c66240bfbfd7fcd69d8bc13
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 100%
+source-wordcount: '854'
+ht-degree: 93%
 
 ---
 
@@ -52,9 +52,9 @@ La version suivante (2021.2.0) sera publiée le 25 février 2021.
 
 * Gestion de l’expérience des produits : nouvel onglet de propriétés Commerce pour les ressources et les fragments d’expérience. Cet onglet permet de lier des produits/catégories à des ressources et fragments d’expérience. L’onglet affiche également des données en temps réel pour les produits/catégories liés ainsi qu’un lien permettant d’afficher des détails dans la console du produit.
 
-* Publication du site de référence de CIF Venia – 2021.02.02 qui comprend les derniers composants principaux de CIF version 1.7.0. Pour plus d’informations, consultez [Site de référence de CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02).
+* Site de référence CIF Venia - 2021.02.02 qui comprend la dernière version des composants principaux CIF v1.7.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.02) pour plus d’informations.
 
-* Publication des composants principaux CIF version 1.7.0. Reportez-vous à [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) pour plus de détails.
+* Composants principaux CIF version 1.7.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.7.0) pour plus d’informations.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -74,15 +74,15 @@ La date de publication de Cloud Manager dans AEM as a Cloud Service 2021.1.0 
 
 ### Nouveautés d’[!DNL Code Refactoring Tools]  {#what-is-new-crt}
 
-* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in comprend des correctifs pour le Dispatcher Converter et le Repository Modernizer AEM et prend également en charge un nouvel utilitaire : Index Converter. Consultez [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce plug-in.
+* Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce plug-in comprend des correctifs pour le Dispatcher Converter et le Repository Modernizer AEM et prend également en charge un nouvel utilitaire : Index Converter. Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce module externe.
 
-* Index Converter est un utilitaire qui permet de transformer les définitions d’index OAK personnalisées d’un client en définitions d’index OAK compatibles avec AEM as a Cloud Service. Pour plus d’informations, consultez [Index Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter).
+* Index Converter est un utilitaire qui permet de transformer les définitions d’index OAK personnalisées d’un client en définitions d’index OAK compatibles avec AEM as a Cloud Service. Voir [Convertisseur d’index](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/index-converter) pour plus d’informations.
 
 * Nouvelle fonctionnalité ajoutée à [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) qui crée un package distinct `ui.config` contenant toutes les configurations OSGi.
 
 ### Correctifs {#crt-bug-fixes}
 
-* Plusieurs correctifs de bogues ont été apportés aux outils Dispatcher Converter et Repository Modernizer d’AEM. Reportez-vous à [AEM Dispatcher Converter](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) et [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
+* Plusieurs correctifs de bogues ont été apportés aux outils Dispatcher Converter et Repository Modernizer d’AEM. Voir [Convertisseur du Dispatcher AEM](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter) et [Repository Modernizer](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer).
 
 ## AEM as a Cloud Service Foundation {#aem-as-a-cloud-service-foundation}
 

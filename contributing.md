@@ -1,8 +1,8 @@
 ---
-source-git-commit: 8832307a96160a3d45cc85942473a5ada288a74f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '534'
-ht-degree: 100%
+source-wordcount: '532'
+ht-degree: 90%
 
 ---
 # Contribution à la documentation d’Adobe Experience Manager Cloud Service
@@ -13,11 +13,11 @@ Ce fichier décrit comment contribuer à la documentation ainsi que les directiv
 
 ## Code de conduite Open Source d’Adobe
 
-Ce projet a adopté le [Code de conduite Adobe Open Source](code-of-conduct.md). En contribuant à la documentation AEM, vous acceptez de respecter ce code de conduite. Veuillez signaler tout comportement inacceptable à [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+Ce projet a adopté le [Code de conduite Adobe Open Source](code-of-conduct.md). En contribuant à la documentation AEM, vous acceptez de respecter ce code de conduite. Signaler un comportement inacceptable à [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Instructions relatives à la contribution
 
-Bien que toute contribution visant à améliorer la documentation d’AEM soit la bienvenue, nous vous demandons, si possible, de bien vouloir respecter certaines instructions et normes. Pour plus d’informations, voir les [Instructions relatives à la contribution à la documentation](guidelines.md) AEM.
+Bien que toute contribution visant à améliorer la documentation d’AEM soit la bienvenue, nous vous demandons, si possible, de bien vouloir respecter certaines instructions et normes. Consultez la section [Instructions relatives à la contribution à AEM documentation](guidelines.md) pour plus d’informations.
 
 ## Comment contribuer
 
@@ -34,7 +34,7 @@ La méthode choisie dépend de votre aisance pour modifier vous-même la documen
 
 ### Création d’une demande {#create-an-issue}
 
-Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Vous pouvez créer un problème. Les propositions relatives aux problèmes sont également excellentes si vous souhaitez apporter votre contribution, mais que vous n’êtes pas habitué à modifier les documents ou à générer vous-même une demande d’extraction.
+Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Vous pouvez créer un problème. Les propositions relatives aux problèmes sont également excellentes si vous avez quelque chose à apporter, mais que vous n’êtes pas habitué à modifier les documents ou à effectuer vous-même une demande d’extraction.
 
 Les propositions relatives aux problèmes vous permettent de décrire facilement vos idées d’amélioration de documents, avant examen par un membre de l’équipe AEM Docs. Pour créer un problème, il suffit de cliquer sur le lien **Log an issue** (Soumettre un problème) en haut du panneau de navigation de droite d’une page.
 
@@ -54,8 +54,8 @@ Regardez la vidéo suivante pour un aperçu rapide de la création de problèmes
 
 Si vous êtes un employé d’Adobe et souhaitez faire une contribution, utilisez l’organisation `AdobeDocs` dans notre référentiel git d’entreprise.
 
-Nous apprécions évidemment toute contribution et examinerons votre contribution si elle est effectuée dans le référentiel public. Toutefois, les demandes d’extraction des employés d’Adobe sont plus faciles à traiter et peuvent être approuvées plus rapidement dans le référentiel d’entreprise. Veillez à ce que toute information de propriété exclusive ne soit discutée que sur le référentiel de l’entreprise.
+Nous apprécions évidemment toute contribution et examinerons votre contribution si elle est effectuée dans le référentiel public. Toutefois, les demandes d’extraction des employés d’Adobe sont plus faciles à traiter et peuvent être approuvées plus rapidement dans le référentiel d’entreprise. Assurez-vous que toutes les informations confidentielles ne sont discutées que sur le référentiel de l’entreprise.
 
 ## Informations supplémentaires
 
-Pour plus d’informations sur l’utilisation de la plate-forme de création GitHub, consultez le [Guide du contributeur d’Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).
+Pour plus d’informations sur l’utilisation de la plateforme de création GitHub, consultez le [Guide du contributeur d’Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr).

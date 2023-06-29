@@ -2,10 +2,10 @@
 title: Accéder à Admin Console
 description: Une fois que vous avez compris la préparation nécessaire à l’intégration et les bases de la structure AEMaaCS, vous êtes prêt à vous connecter pour la première fois à Admin Console.
 exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1109'
-ht-degree: 96%
+source-wordcount: '1107'
+ht-degree: 92%
 
 ---
 
@@ -58,7 +58,7 @@ Avant de pouvoir utiliser Admin Console pour administrer les utilisateurs au sei
 
    ![Admin Console](/help/journey-onboarding/assets/get-started1.png)
 
-1. Si vous avez accès à plusieurs organisations, veillez vous assurer d’être connecté à la bonne organisation. Pour modifier votre organisation, cliquez sur le nom de l’organisation dans le coin supérieur droit de l’écran et sélectionnez l’organisation à laquelle vous avez besoin d’accéder.
+1. Si vous avez accès à plusieurs organisations, vérifiez que vous vous êtes connecté à la bonne organisation. Pour modifier votre organisation, cliquez sur le nom de l’organisation dans le coin supérieur droit et sélectionnez l’organisation à laquelle vous avez besoin d’accéder.
 
    ![Modifier l’organisation](/help/journey-onboarding/assets/admin-console-orgswitch.png)
 

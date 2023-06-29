@@ -2,9 +2,9 @@
 title: Création de contenu ciblé en mode Ciblage
 description: Le mode Ciblage et le composant cible fournissent des outils pour créer du contenu pour les expériences.
 exl-id: 8d80d867-2d0f-4ddb-8a06-f9441e6d85ce
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '5412'
+source-wordcount: '5410'
 ht-degree: 53%
 
 ---
@@ -549,7 +549,7 @@ Pour configurer des objectifs et des paramètres en cas d’utilisation d’Adob
 1. Si vous souhaitez mieux contrôler la méthode de comptabilisation des mesures de succès, cliquez ou appuyez sur **Paramètres avancés** pour y accéder.
 1. Cliquez sur **Enregistrer**.
 
-Après la configuration, vous pouvez [afficher les performances de vos activités ;](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) qui utilisent Adobe Target (ciblage d’expérience ou de test A/B). En outre, avec le ciblage des tests A/B, vous pouvez [Conversion des gagnants.](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+Après la configuration, vous pouvez [afficher les performances de vos activités ;](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test) qui utilisent Adobe Target (ciblage d’expérience ou de test A/B). En outre, avec le ciblage des tests A/B, vous pouvez [Conversion des gagnants](/help/sites-cloud/authoring/personalization/activities.md#viewing-performance-and-converting-winning-experiences-a-b-test).
 
 ## Simulation d’une expérience {#simulating-an-experience}
 
@@ -634,4 +634,4 @@ Si vous sélectionnez Adobe Target comme moteur :
 >
 >Sélectionnez **ContextHub** comme moteur si vous utilisez le ciblage ContextHub. Voir Configuration de ContextHub pour plus d’informations.
 <!--You select **Adobe Campaign** as the engine if you are integrating AEM with Adobe Campaign. See [Integrating AEM with Adobe Campaign](/help/sites-administering/campaign.md) for more information.-->
-<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub.](/help/sites-administering/contexthub-config.md)-->
+<!--Select **ContextHub** as the engine if you are using ContextHub for targeting. See [Configuring ContextHub](/help/sites-administering/contexthub-config.md).-->

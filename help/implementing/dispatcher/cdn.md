@@ -3,10 +3,10 @@ title: Réseau de diffusion de contenu dans AEM as a Cloud Service
 description: Réseau de diffusion de contenu dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 62%
+source-wordcount: '1022'
+ht-degree: 61%
 
 ---
 
@@ -34,7 +34,7 @@ Suivez les sections ci-dessous pour utiliser l’interface utilisateur en libre-
 
 Par défaut, pour une configuration de réseau de diffusion de contenu AEM, tout le trafic public peut se diriger vers le service de publication, tant pour les environnements de production que de non-production (développement et évaluation). Vous pouvez limiter le trafic vers le service de publication pour un environnement donné (par exemple, en limitant l’évaluation par une plage d’adresses IP) au moyen de l’interface utilisateur de Cloud Manager.
 
-Consultez le document [Gestion des listes d’adresses IP autorisées](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) pour en savoir plus.
+Voir [Gestion des Listes autorisées IP](/help/implementing/cloud-manager/ip-allow-lists/introduction.md) pour en savoir plus.
 
 >[!CAUTION]
 >
@@ -143,4 +143,4 @@ Les valeurs des codes du continent sont les suivantes :
 * OC Océanie
 * SA Amérique du Sud
 
-Ces informations peuvent s’avérer utiles dans certains cas d’utilisation, tels que la redirection vers une URL différente en fonction de l’origine (pays) de la requête. Utilisez l’en-tête Vary pour mettre en cache les réponses qui dépendent des informations géographiques. Par exemple, les redirections vers la page d’entrée d’un pays spécifique doivent toujours contenir `Vary: x-aem-client-country`. Si nécessaire, vous pouvez utiliser `Cache-Control: private` pour empêcher la mise en cache. Voir aussi [Mise en cache](/help/implementing/dispatcher/caching.md#html-text).
+Ces informations peuvent s’avérer utiles dans certains cas d’utilisation, tels que la redirection vers une URL différente en fonction de l’origine (pays) de la requête. Utilisez l’en-tête Vary pour mettre en cache les réponses qui dépendent des informations géographiques. Par exemple, les redirections vers la page de destination d’un pays spécifique doivent toujours contenir `Vary: x-aem-client-country`. Si nécessaire, vous pouvez utiliser `Cache-Control: private` pour empêcher la mise en cache. Voir aussi [Mise en cache](/help/implementing/dispatcher/caching.md#html-text).

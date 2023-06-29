@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.2.0 d’ [!DNL Adobe Experience Manager] as a Cloud Service.
 description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2021.2.0. »
 exl-id: 88dac54b-cc12-44a0-b429-6e691221f806
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1232'
-ht-degree: 92%
+source-wordcount: '1228'
+ht-degree: 90%
 
 ---
 
@@ -80,7 +80,7 @@ La version suivante (2021.3.0) sera publiée le 25 mars 2021.
 
 * Site de référence CIF Venia - 2021.02.24 qui comprend la dernière version des composants principaux CIF v1.8.0. Voir [Site de référence CIF Venia](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.02.24) pour plus d’informations.
 
-* Publication des composants principaux CIF version 1.8.0. Reportez-vous à [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) pour plus de détails.
+* Composants principaux CIF version 1.8.0. Voir [Composants principaux CIF](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.8.0) pour plus d’informations.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -159,9 +159,9 @@ La date de publication de l’analyseur de bonnes pratiques v2.1.2 est le 18 f�
 ### Nouveautés des outils de refactorisation du code {#what-is-new-crt}
 
 * Publication de la nouvelle version du plug-in AIO-CLI. La dernière version de ce module comprend plusieurs correctifs pour Repository Modernizer.
-Consultez [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce plug-in.
+Voir [Expérience unifiée](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/unified-experience.html?lang=fr#benefits) pour en savoir plus sur ce module externe.
 
 ### Correctifs {#bug-fixes-crt}
 
 * Plusieurs correctifs ont été apportés à Repository Modernizer.
-Consultez [Ressource GitHub : aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus d’informations.
+Voir [Ressource GitHub : aem-cloud-service-source-migration](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/repository-modernizer) pour plus d’informations.

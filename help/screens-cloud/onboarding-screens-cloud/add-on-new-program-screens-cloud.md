@@ -2,10 +2,10 @@
 title: Ajout d’un module complémentaire Screens à un nouveau programme dans Cloud Manager
 description: Cette page décrit l’ajout d’un module complémentaire Screens à un nouveau programme dans Cloud Manager pour Screens as a Cloud Service.
 exl-id: 36d1e1e9-5272-4138-9e0d-8476edc729f0
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '311'
-ht-degree: 100%
+source-wordcount: '309'
+ht-degree: 92%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 Cette section décrit comment ajouter Screens en tant que module complémentaire à un nouveau programme dans Cloud Manager.
 
 >[!NOTE]
->Consultez [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=fr) pour en savoir plus sur les types de programmes.
+>Voir [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=fr) pour en savoir plus sur les programmes Cloud Manager.
 
 ## Objectif {#objective}
 
@@ -27,9 +27,9 @@ Pour ajouter Screens en tant que module complémentaire à un nouveau programme 
 1. Accédez à [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Pour en savoir plus sur Cloud Manager, voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr).
+   >Voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) pour en savoir plus sur Cloud Manager.
 
-1. Cliquez sur **Ajouter le programme** dans la page d’entrée de Cloud Manager.
+1. Cliquez sur **Ajouter le programme** dans la page de destination de Cloud Manager.
 
    ![image](/help/screens-cloud/assets/onboarding/onboard-screens-addon1.png)
 

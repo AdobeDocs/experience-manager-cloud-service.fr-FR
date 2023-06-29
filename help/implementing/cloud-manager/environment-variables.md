@@ -2,10 +2,10 @@
 title: Variables d’environnement Cloud Manager
 description: Les variables d’environnement standard peuvent être configurées et gérées via Cloud Manager. Elle sont fournies à l’environnement d’exécution, pour une utilisation dans la configuration OSGi.
 exl-id: 5cdd5532-11fe-47a3-beb2-21967b0e43c6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 93%
+source-wordcount: '1018'
+ht-degree: 92%
 
 ---
 
@@ -88,7 +88,7 @@ Une fois les variables d’environnement créées, vous pouvez les mettre à jou
 
    ![Modifier la variable](assets/edit-variable.png)
 
-1. Une fois toutes les modifications de configuration requises effectuées, cliquez sur **Enregistrer**.
+1. Après avoir apporté toutes les modifications de configuration requises, sélectionnez **Enregistrer**.
 
 [Comme lors de l’ajout de variables](#add-variables), un indicateur avec le statut **Mise à jour** sʼaffiche en haut du tableau et en regard de la ou des variables nouvellement mises à jour pour indiquer que l’environnement est mis à jour avec la configuration. Une fois l’opération terminée, les variables d’environnement mises à jour sont visibles dans le tableau.
 
@@ -128,8 +128,8 @@ Toutefois, les variables d’environnement ne peuvent pas être utilisées dans 
 
 ### Configurations OSGi {#osgi}
 
-Les variables d’environnement normales et les secrets peuvent être utilisés dans les [configurations OSGi.](/help/implementing/deploying/configuring-osgi.md)
+Les variables d’environnement normales et les secrets peuvent être utilisés dans les [configurations OSGi](/help/implementing/deploying/configuring-osgi.md).
 
 ### Variables de pipeline {#pipeline}
 
-Outre les variables d’environnement, il existe également des variables de pipeline, qui sont exposées pendant la phase de création. [Pour en savoir plus sur les variables de pipeline, cliquez ici.](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables)
+Outre les variables d’environnement, il existe également des variables de pipeline, qui sont exposées pendant la phase de création. [Pour en savoir plus sur les variables de pipeline, cliquez ici](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md#pipeline-variables).

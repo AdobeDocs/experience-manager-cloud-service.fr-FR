@@ -3,10 +3,10 @@ title: Parcours de documentation AEM
 description: Les Parcours de documentation fournissent une structure narrative dans AEM documentation en liant des fonctionnalités complexes et disparates afin que vous puissiez résoudre un objectif commercial d’une manière conforme aux bonnes pratiques. Conçu pour les débutants dans AEM, les parcours présentent les concepts et les fonctionnalités permettant d’atteindre un objectif, étape par étape.
 exl-id: aab346b8-26dc-4d5b-88bb-720cf634e0a2
 hidefromtoc: true
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 90%
+source-wordcount: '1349'
+ht-degree: 88%
 
 ---
 
@@ -40,7 +40,7 @@ Si vous souhaitez savoir comment Adobe recommande de résoudre un cas d’activi
 
 ## Comment est structuré un parcours de documentation ? {#structure}
 
-Un parcours de documentation sert d’introduction basée sur les bonnes pratiques sur la manière dont AEM résout les problèmes courants de l’entreprise. C’est pourquoi chaque parcours a été conçu pour s’adresser à des lecteurs peu familiers avec AEM, en exposant les cas d’activité, en décrivant toute la théorie nécessaire, puis en donnant un aperçu détaillé de la façon dont AEM résout ces problèmes. Les parcours, de par leur nature exhaustive, peuvent s’avérer utiles pour les lecteurs qui ne connaissent pas AEM, voire pour les utilisateurs expérimentés.
+Un parcours de documentation sert d’introduction basée sur les bonnes pratiques sur la manière dont AEM résout les problèmes courants de l’entreprise. C’est pourquoi chaque parcours a été conçu pour s’adresser à des lecteurs peu familiers avec AEM, en exposant les cas d’activité, en décrivant toute la théorie nécessaire, puis en donnant un aperçu détaillé de la façon dont AEM résout ces problèmes. En raison de la nature exhaustive d’un parcours, il peut s’avérer utile aux lecteurs qui ne connaissent pas les utilisateurs AEM et expérimentés.
 
 Un parcours de documentation standard est composé des parties suivantes.
 
@@ -82,7 +82,7 @@ Les parcours de documentation ont été conçus pour compléter la documentation
 
 ## Quels sont les parcours disponibles ? {#journeys}
 
-Plusieurs parcours de documentation sont déjà disponibles. Puisque chaque parcours est conçu comme un récit, veuillez commencer par l&#39;introduction et lire tout le long pour vous permettre d&#39;avoir une compréhension complète du sujet dans le contexte de l&#39;AEM.
+Plusieurs parcours de documentation sont déjà disponibles. Puisque chaque parcours est conçu comme un récit, commencez par l&#39;introduction et lisez tout le long pour vous permettre d&#39;avoir une compréhension complète du sujet dans le contexte de l&#39;AEM.
 
 | Parcours | Description |
 |---|---|

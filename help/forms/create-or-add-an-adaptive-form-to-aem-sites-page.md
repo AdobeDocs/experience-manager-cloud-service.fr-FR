@@ -3,9 +3,9 @@ title: Comment ajouter un formulaire adaptatif à une page AEM Sites ?
 description: Découvrez comment créer ou ajouter facilement un formulaire adaptatif à votre page AEM Sites. Découvrez les techniques et les bonnes pratiques étape par étape pour intégrer des formulaires à votre site web, en optimisant vos expériences numériques pour un impact maximum.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 171aca87ff725a2f142f0336dca3491e213f55ab
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '3244'
+source-wordcount: '3245'
 ht-degree: 1%
 
 ---

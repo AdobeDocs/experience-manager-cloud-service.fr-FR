@@ -2,10 +2,10 @@
 title: Composants composites dans les applications d’une seule page (SPA)
 description: Découvrez comment créer vos propres composants composites, composants constitués eux-mêmes d’autres composants, qui fonctionnent avec l’éditeur d’applications d’une seule page (SPA) d’AEM.
 exl-id: fa1ab1dd-9e8e-4e2c-aa9a-5b46ed8a02cb
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 96%
+ht-degree: 87%
 
 ---
 
@@ -19,7 +19,7 @@ Cet article explique comment ajouter un composant composite à votre application
 
 ## Cas d’utilisation {#use-case}
 
-Cet article utilise le composant de carte type comme cas d’utilisation. Les cartes sont des éléments d’interface utilisateur courants pour de nombreuses expériences numériques. Elles sont généralement constituées d’une image et de texte ou d’une légende associés. L’auteur souhaite pouvoir faire un glisser-déposer de l’ensemble de la carte, mais aussi modifier individuellement l’image de la carte et personnaliser le texte associé.
+Cet article utilise le composant de carte type comme cas d’utilisation. Les cartes sont des éléments d’interface utilisateur courants pour de nombreuses expériences digitales. Elles sont généralement constituées d’une image et de texte ou d’une légende associés. Un auteur souhaite pouvoir faire glisser et déposer l’ensemble de la carte, mais il peut modifier individuellement l’image de la carte et personnaliser le texte associé.
 
 ## Prérequis {#prerequisites}
 
@@ -118,7 +118,7 @@ function Home() {
 }
 ```
 
-Un espace réservé vide s’affiche alors pour un texte et une image dans l’éditeur. Lors de la saisie de valeurs pour ces éléments à l’aide de l’éditeur, elles sont stockées selon le chemin de page spécifié, c’est-à-dire `/content/wknd-spa/home` au niveau racine avec les noms spécifiés dans `itemPath`.
+Un espace réservé vide s’affiche alors pour un texte et une image dans l’éditeur. Lors de la saisie de valeurs pour ces éléments à l’aide de l’éditeur, ils sont stockés dans le chemin de page spécifié, à savoir : `/content/wknd-spa/home`  au niveau racine avec les noms spécifiés dans `itemPath`.
 
 ![Composant de carte composite dans l’éditeur](assets/composite-card.png)
 
@@ -156,7 +156,7 @@ Vous pouvez ensuite l’ajouter à votre SPA et récupérer son contenu.
     itemPath='root/responsivegrid' />
    ```
 
-1. Ajoutez le composant `wknd-spa/components/imagecard` créé aux composants autorisés pour le composant de conteneur [dans le modèle de page.](/help/sites-cloud/authoring/features/templates.md)
+1. Ajoutez le composant `wknd-spa/components/imagecard` créé aux composants autorisés pour le composant de conteneur [dans le modèle de page](/help/sites-cloud/authoring/features/templates.md).
 
 Désormais, le composant `imagecard` peut être directement ajouté au conteneur dans l’éditeur d’AEM.
 

@@ -2,10 +2,10 @@
 title: Vérification du statut du nom de domaine
 description: Découvrez comment déterminer si Cloud Manager a vérifié votre nom de domaine personnalisé avec succès.
 exl-id: 8fdc8dda-7dbf-46b6-9fc6-d304ed377197
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 93%
+source-wordcount: '650'
+ht-degree: 84%
 
 ---
 
@@ -40,13 +40,13 @@ Cloud Manager vérifie la propriété du domaine via la valeur TXT et affiche l
 * **Domaine vérifié et déployé** - Ce statut indique que votre nom de domaine personnalisé est prêt à être utilisé.
 
    * À ce stade, votre nom de domaine personnalisé est prêt à être testé et pointé vers le nom de domaine Cloud Manager.
-   * Reportez-vous au document [Configuration des paramètres DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) pour en savoir plus.
+   * Voir [Configuration des paramètres DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) pour en savoir plus.
 
 * **Suppression** - La suppression d’un nom de domaine personnalisé est en cours.
 
 * **Échec de la suppression** - La suppression du nom de domaine personnalisé a échoué et doit être réexécutée.
 
-   * Consultez le document [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus.
+   * Voir [Gestion des noms de domaine personnalisés](/help/implementing/cloud-manager/custom-domain-names/managing-custom-domain-names.md) pour en savoir plus.
 
 Cloud Manager déclenche automatiquement une vérification TXT lorsque vous sélectionnez **Enregistrer** à l’étape de vérification de l’assistant **Ajout de domaine personnalisé**. Pour les vérifications suivantes, vous devez prendre l’initiative et sélectionner l’icône Vérifier à nouveau en face du statut.
 
@@ -56,7 +56,7 @@ Vous trouverez ci-dessous quelques erreurs courantes de nom de domaine et leurs 
 
 ### Erreur de domaine non installé {#domain-not-installed}
 
-Cette erreur peut se produire lors de la validation du domaine de l’enregistrement TXT, même après avoir vérifié que l’enregistrement a été mis à jour de manière appropriée.
+Cette erreur peut se produire lors de la validation du domaine de l’enregistrement TXT même après avoir vérifié que l’enregistrement a été mis à jour de manière appropriée.
 
 #### Cause de l’erreur {#cause}
 
@@ -86,4 +86,4 @@ Si vous disposez d’une configuration CDN préexistante pour vos noms de domain
 
 Le message disparaît une fois que toutes les configurations d’environnement préexistantes sont migrées à l’aide de l’interface utilisateur. Il peut s’écouler entre 1 et 2 jours ouvrés avant que le message ne disparaisse.
 
-Consultez le document [Obtention d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) pour plus d’informations.
+Voir [Ajout d’un nom de domaine personnalisé](/help/implementing/cloud-manager/custom-domain-names/add-custom-domain-name.md) pour plus d’informations.

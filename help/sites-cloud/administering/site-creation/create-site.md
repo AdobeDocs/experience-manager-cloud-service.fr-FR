@@ -4,10 +4,10 @@ description: Découvrez comment utiliser AEM pour créer un site à l’aide de 
 feature: Administering
 role: Admin
 exl-id: 9c71c167-2934-4210-abd9-ab085b36593b
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '787'
-ht-degree: 96%
+source-wordcount: '775'
+ht-degree: 85%
 
 ---
 
@@ -23,11 +23,11 @@ L’outil de création rapide de site AEM permet aux non-développeurs de créer
 
 Une fois créé, l’outil de création rapide de site permet également une personnalisation rapide du thème et du style du site AEM (JavaScript, CSS et ressources statiques). Cela permet au développeur front-end, qui n’a besoin d’aucune connaissance d’AEM, de travailler séparément et parallèlement aux créateurs de contenu. L’administrateur d’AEM télécharge simplement le thème du site et le fournit au développeur front-end, qui le personnalise à l’aide de ses outils favoris, puis valide les modifications dans le référentiel de code AEM, qui est ensuite déployé.
 
-Ce document se concentre sur la création de site à l’aide de l’outil de création rapide de site. Si vous souhaitez un aperçu du workflow de création et de personnalisation de site, reportez-vous à la section [Parcours de création rapide de site](/help/journey-sites/quick-site/overview.md)
+Ce document se concentre sur la création de site à l’aide de l’outil de création rapide de site. Si vous souhaitez un aperçu du processus de création et de personnalisation de site, reportez-vous à la section [parcours de création rapide de site](/help/journey-sites/quick-site/overview.md)
 
 ## Planification de la structure du site {#structure}
 
-Prenez le temps d’examiner à l’avance l’objectif et le contenu planifié de votre site. Cela vous permettra de concevoir la structure du site. Une structure de site bien conçue facilite la navigation et la découverte du contenu pour les visiteurs de votre site et prend en charge diverses fonctionnalités AEM telles que la [gestion multisite et la traduction.](/help/sites-cloud/administering/msm-and-translation.md)
+Prenez le temps d’examiner à l’avance l’objectif et le contenu planifié de votre site. Cela vous permettra de concevoir la structure du site. Une bonne structure de site prend en charge la navigation facile et la découverte de contenu pour les visiteurs de votre site et prend en charge diverses fonctionnalités AEM telles que [gestion multisite et traduction](/help/sites-cloud/administering/msm-and-translation.md).
 
 >[!TIP]
 >
@@ -37,11 +37,11 @@ Prenez le temps d’examiner à l’avance l’objectif et le contenu planifié 
 
 La structure du site étant si importante pour le succès d’un site, il est pratique de disposer de structures prédéfinies pour déployer rapidement un nouveau site en fonction d’un ensemble de normes existantes. Les modèles de site permettent de combiner du contenu de site de base dans un package pratique et réutilisable.
 
-Les modèles de site contiennent généralement le contenu et la structure du site de base, ainsi que des informations de style pour démarrer rapidement un nouveau site. Les modèles sont efficaces car ils sont réutilisables et personnalisables. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de créer différents sites pour répondre à divers besoins professionnels.
+Les modèles de site contiennent généralement du contenu et de la structure de base du site ainsi que des informations de style pour démarrer rapidement un nouveau site. Les modèles sont puissants, car ils sont réutilisables et personnalisables. De plus, comme vous pouvez avoir plusieurs modèles disponibles dans votre installation AEM, vous avez la possibilité de créer différents sites pour répondre à divers besoins professionnels.
 
 >[!TIP]
 >
->Pour plus de détails sur les modèles de sites, consultez l’article [Modèles de sites](site-templates.md).
+>Pour plus d’informations sur les modèles de site, voir [Modèles de site](site-templates.md).
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ L’utilisation d’un modèle pour créer un site est simple.
 
    * Le titre du site s’affiche dans la barre de titre des navigateurs.
    * Le nom du site fait alors partie de l’URL.
-   * Le nom du site doit respecter les [conventions de dénomination des pages d’AEM.](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices)
+   * Le nom du site doit respecter les [conventions de dénomination des pages d’AEM](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#page-name-restrictions-and-best-practices).
 
 1. Appuyez ou cliquez sur **Créer** pour que le site soit créé à partir du modèle de site.
 
@@ -95,8 +95,8 @@ Les auteurs de contenu peuvent maintenant commencer la création !
 
 Si votre site nécessite une personnalisation au-delà des modèles disponibles, plusieurs options s’offrent à vous.
 
-* Si la structure du site ou le contenu initial doit être ajusté, [le modèle de site peut être personnalisé selon vos besoins.](site-templates.md)
-* Si le style du site doit être adapté, [le thème du site peut être téléchargé et personnalisé.](/help/journey-sites/quick-site/overview.md)
-* Si la fonctionnalité du site doit être ajustée, [le site peut être entièrement personnalisé.](/help/implementing/developing/introduction/develop-wknd-tutorial.md)
+* Si la structure du site ou le contenu initial doit être ajusté, [le modèle de site peut être personnalisé selon vos besoins](site-templates.md).
+* Si le style du site doit être adapté, [le thème du site peut être téléchargé et personnalisé](/help/journey-sites/quick-site/overview.md).
+* Si la fonctionnalité du site doit être ajustée, [le site peut être entièrement personnalisé](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
 Toute personnalisation doit être effectuée avec l’aide d’une équipe de développement.

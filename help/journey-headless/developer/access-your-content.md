@@ -2,10 +2,10 @@
 title: Accès à votre contenu grâce aux API de diffusion AEM
 description: Dans cette partie du parcours de développement découplé AEM, découvrez comment utiliser les requêtes GraphQL pour accéder au contenu de vos fragments de contenu.
 exl-id: 1adecc69-5f92-4007-8a2a-65bf1e960645
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1358'
-ht-degree: 99%
+source-wordcount: '1360'
+ht-degree: 97%
 
 ---
 
@@ -30,9 +30,9 @@ Cet article s’appuie sur ces principes de base afin que vous compreniez commen
    * Découvrir les détails de l’API AEM GraphQL.
    * Regardez quelques exemples de requêtes pour voir comment les choses fonctionnent dans la pratique.
 
-## Vous souhaitez accéder à votre contenu ?  {#so-youd-like-to-access-your-content}
+## Vous Souhaitez Donc Accéder À Votre Contenu ? {#so-youd-like-to-access-your-content}
 
-Enfin... Vous disposez de tout ce contenu, soigneusement structuré (dans les fragments de contenu) et vous avez hâte d’en nourrir votre nouvelle application. La question est : comment faire ?
+Donc...vous disposez de tout ce contenu, soigneusement structuré (dans les fragments de contenu), et vous attendez de nourrir votre nouvelle application. La question est : comment faire ?
 
 Vous avez besoin d’un moyen de cibler un contenu spécifique, de sélectionner ce dont vous avez besoin et de le renvoyer à votre application pour un traitement ultérieur.
 

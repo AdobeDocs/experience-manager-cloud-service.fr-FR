@@ -2,10 +2,10 @@
 title: Comment mettre en ligne votre application découplée
 description: Dans cette partie du Parcours de développement découplé AEM, apprenez à déployer une application découplée en direct en prenant votre code local dans Git et en le déplaçant vers le Git Cloud Manager pour le pipeline CI/CD.
 exl-id: 81616e31-764b-44b0-94a6-3ae24ce56bf6
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1065'
-ht-degree: 94%
+source-wordcount: '1066'
+ht-degree: 93%
 
 ---
 
@@ -124,7 +124,7 @@ Vous avez peut-être déjà lancé votre premier projet découplé AEM, vous dis
 
 ### Découvrez les applications sur une seule page {#explore-spa}
 
-Les magasins découplés AEM n’ont pourtant pas besoin de s’arrêter à ça. Vous vous souvenez peut-être que dans la section [Prise en main du parcours](getting-started.md#integration-levels) nous avons brièvement expliqué comment AEM peut non seulement prendre en charge la diffusion découplée et les modèles complets traditionnels, mais également les modèles hybrides qui combinent les avantages des deux.
+Les magasins sans interface en AEM ne doivent pas s&#39;arrêter ici. Vous vous souvenez peut-être que dans la section [Prise en main du parcours](getting-started.md#integration-levels) nous avons brièvement expliqué comment AEM peut non seulement prendre en charge la diffusion découplée et les modèles complets traditionnels, mais également les modèles hybrides qui combinent les avantages des deux.
 
 Si ce type de flexibilité est nécessaire pour votre projet, passez à la section optionnelle du parcours intitulée [Comment créer des applications sur une seule page (SPA) avec AEM.](create-spa.md)
 

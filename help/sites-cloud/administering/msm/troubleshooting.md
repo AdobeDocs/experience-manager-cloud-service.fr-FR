@@ -4,10 +4,10 @@ description: Découvrez comment résoudre les problèmes les plus courants liés
 feature: Multi Site Manager
 role: Admin
 exl-id: 50f02f4f-a347-4619-ac90-b3136a7b1782
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 87%
+source-wordcount: '761'
+ht-degree: 80%
 
 ---
 
@@ -67,7 +67,7 @@ Voici quelques questions fréquemment posées relatives à MSM et Live Copy.
 
 Les actions de synchronisation MSM sont hautement configurables. Les propriétés ou composants qui sont modifiés lors des déploiements dépendent directement des propriétés de ces configurations.
 
-Consultez [cet article](best-practices.md) pour plus d’informations à ce sujet.
+Voir [cet article](best-practices.md) pour plus d’informations sur cette rubrique.
 
 ### Comment puis-je supprimer les autorisations de déploiement pour un groupe d’auteurs ?  {#remove-rollout-permissions}
 
@@ -80,7 +80,7 @@ Vous pouvez cependant :
 
 ### Pourquoi les pages Live Copy présentent-elles le suffixe « _msm_move » ?  {#moved-pages}
 
-Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une page Live Copy si elle n’existait pas encore (par exemple, lorsqu’elle est déployée pour la première fois ou que la page Live Copy a été supprimée manuellement).
+Si une page de plan directeur est déployée, elle met à jour sa page Live Copy ou crée une page Live Copy si elle n’existe pas encore (par exemple, lorsqu’elle est déployée pour la première fois ou que la page Live Copy a été supprimée manuellement).
 
 Dans ce cas, toutefois, si une page sans `cq:LiveRelationship` existe avec le même nom, cette page est renommée en conséquence avant la création de la page Live Copy.
 

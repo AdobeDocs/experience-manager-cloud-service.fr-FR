@@ -2,9 +2,9 @@
 title: Installation et configuration des lecteurs dans Screens as a Cloud Service
 description: Cette page décrit comment installer et configurer des lecteurs dans Screens as a Cloud Service.
 exl-id: a022738a-c543-4629-a244-f70fa294fe7f
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '584'
+source-wordcount: '582'
 ht-degree: 52%
 
 ---
@@ -88,4 +88,4 @@ Vous trouverez ci-dessous quelques limitations au suivi de base de la lecture :
 
 ## Prochaines étapes {#whats-next}
 
-Maintenant que vous avez installé et configuré le lecteur en mode cloud, continuez votre parcours as a Cloud Service Screens. Vérification du document [Enregistrement des lecteurs dans Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) du fournisseur de services Screens.
+Maintenant que vous avez installé et configuré le lecteur en mode cloud, continuez votre parcours as a Cloud Service Screens. Voir [Enregistrement des lecteurs dans Screens as a Cloud Service](/help/screens-cloud/managing-players-registration/registering-players-screens-cloud.md) du fournisseur de services Screens.

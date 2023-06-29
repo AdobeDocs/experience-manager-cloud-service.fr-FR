@@ -2,10 +2,10 @@
 title: Utilisation des balises
 description: Les balises sont une méthode rapide et facile de classer le contenu dans un site web.
 exl-id: d2a9f578-fe0a-48ea-851c-2c84463661e0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 81%
+source-wordcount: '563'
+ht-degree: 75%
 
 ---
 
@@ -13,8 +13,8 @@ ht-degree: 81%
 
 Les balises sont une méthode rapide et facile de classer le contenu dans un site web. Les balises peuvent être considérées comme des mots-clés ou des étiquettes pouvant être jointes à une page, à une ressource ou à un autre contenu pour permettre aux recherches de trouver ce contenu et le contenu associé.
 
-* Consultez Administration des balises pour savoir comment créer et gérer des balises et déterminer à quel contenu elles ont été appliquées. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, as well as to which content tags have been applied.-->
-* Consultez la section [Balisage pour l’équipe de développement](/help/implementing/developing/introduction/tagging-framework.md) pour plus d’informations sur l’environnement de balisage et sur l’inclusion et l’extension de balises dans les applications personnalisées.
+* Voir Administration des balises pour plus d’informations sur la création et la gestion des balises, ainsi que sur les balises de contenu qui ont été appliquées. <!-- See [Administering Tags](/help/sites-administering/tags.md) for information about creating and managing tags, and to which content tags have been applied.-->
+* Voir [Balisage pour les développeurs](/help/implementing/developing/introduction/tagging-framework.md) pour plus d’informations sur la structure de balisage et l’inclusion et l’extension de balises dans les applications personnalisées.
 
 ## Dix raisons d’utiliser les balises {#ten-reasons-to-use-tagging}
 
@@ -47,7 +47,7 @@ De la même manière que vous pouvez publier et dépublier des pages, vous pouve
 
 * Activez individuellement des balises.
 
-   A l’instar des pages, les nouvelles balises doivent être activées avant d’être disponibles dans l’environnement de publication.
+  A l’instar des pages, les nouvelles balises doivent être activées avant d’être disponibles dans l’environnement de publication.
 
 >[!NOTE]
 >

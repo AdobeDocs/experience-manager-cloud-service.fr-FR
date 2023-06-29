@@ -1,9 +1,9 @@
 ---
 title: Autres régions de publication
 description: Découvrez comment AEM as a Cloud Service prend en charge des régions de publication supplémentaires pour une disponibilité accrue et une latence réduite.
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '542'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Les organisations peuvent acquérir sous licence jusqu’à trois régions de pu
 
 >[!NOTE]
 >
->Cette fonctionnalité est actuellement disponible uniquement pour AEM Sites. Il ne peut pas non plus être appliqué aux programmes Sandbox. En outre, sachez que d’autres fonctionnalités de zones de publication nécessitent que votre programme soit mis à jour pour AEM version 12142 ou ultérieure.
+>Cette fonctionnalité est actuellement disponible uniquement pour AEM Sites. Il ne peut pas non plus être appliqué aux programmes Sandbox. En outre, sachez que d’autres fonctionnalités de régions de publication nécessitent que votre programme soit mis à jour pour AEM version 12142 ou ultérieure.
 
 ## Cas d’utilisation {#use-cases}
 
@@ -40,11 +40,11 @@ D’autres régions de publication sont appliquées aux environnements interméd
 
 Lorsqu’une région de publication supplémentaire est activée sur un programme avec une mise en réseau avancée déjà configurée, le trafic dans la région de publication supplémentaire qui correspond aux règles de mise en réseau avancées traverse par défaut la région Principale. Pour bénéficier d’une disponibilité accrue, il est recommandé de mettre en place une mise en réseau avancée sur les régions supplémentaires.
 
-Reportez-vous à la section [Configuration de réseau avancée pour d’autres régions de publication](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) pour plus d’informations, notamment sur l’ajout de configurations réseau avancées à d’autres régions sans perte de connectivité.
+Voir [Configuration de réseau avancée pour d’autres régions de publication](/help/security/configuring-advanced-networking.md#advanced-networking-configuration-for-additional-publish-regions) pour plus d’informations, notamment sur l’ajout de configurations réseau avancées à d’autres régions sans perte de connectivité.
 
 ## Limites {#limitations}
 
-Gardez ces limites à l’esprit lorsque vous envisagez d’utiliser d’autres régions de publication.
+Gardez à l’esprit les limites suivantes lorsque vous envisagez d’utiliser des zones de publication supplémentaires.
 
 * D’autres régions de publication ne peuvent être ajoutées qu’à AEM Sites. Les régions de publication supplémentaires ne s’étendent pas à d’autres solutions AEM ou fonctionnalités connexes déployées dans le même programme (par exemple, AEM Forms ou Adobe Learning Manager).
 * D’autres régions ne peuvent être ajoutées que si les droits associés sont disponibles et inutilisés dans le client.

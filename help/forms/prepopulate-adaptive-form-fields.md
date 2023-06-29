@@ -6,7 +6,7 @@ seo-description: With Adaptive Forms, you users can prefill basic information in
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 exl-id: e2a87233-a0d5-48f0-b883-915fe56f105f
-source-git-commit: 99a86fa88b0b98d732487b9e4b0b6de9fa3773ad
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1948'
 ht-degree: 83%
@@ -199,7 +199,8 @@ Voici un exemple sans le wrapper `afData/afBoundData` :
 
 >[!NOTE]
 >
-> L’utilisation de champs non liés dans les panneaux liés (panneaux avec une valeur bindRef non vides qui ont été créés en faisant glisser des composants depuis le sidekick ou l’onglet Sources de données) est **not** recommandé, car il peut entraîner une perte de données des champs non liés. Il est recommandé d’utiliser des noms de champs uniques dans le formulaire, notamment pour les champs non liés.
+> L’utilisation de champs non liés dans les panneaux liés (panneaux avec une valeur bindRef non vides qui ont été créés en faisant glisser des composants de l’onglet Sidekick ou Sources de données) est **not** recommandé, car il peut entraîner une perte de données des champs non liés. Il est recommandé d’utiliser des noms de champs uniques dans le formulaire, notamment pour les champs non liés.
+>
 
 ### Formulaire adaptatif sans modèle de formulaire {#adaptive-form-with-no-form-model}
 
@@ -246,7 +247,6 @@ Pour définir les valeurs d’une configuration, [générez des configurations O
 >
 > - Par défaut, le préremplissage est autorisé via les fichiers crx pour tous les types de formulaires adaptatifs (XSD, XDP, JSON, FDM et non basé sur un modèle de formulaire). Le préremplissage est autorisé uniquement avec les fichiers XML et JSON.
 > - Le protocole crx s’occupe de la sécurité des données préremplies et par conséquent, est activé par défaut. Le préremplissage via d’autres protocoles à l’aide d’une expression régulière générique peut entraîner une vulnérabilité. Dans la configuration, spécifiez une configuration d’URL sécurisée pour protéger vos données.
-
 
 ## Cas étrange des panneaux répétables {#the-curious-case-of-repeatable-panels}
 

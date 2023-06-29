@@ -4,10 +4,10 @@ description: Découvrez les bonnes pratiques compilées par les équipes d’ing
 feature: Multi Site Manager
 role: Admin
 exl-id: 61b8ded8-3b9e-423f-85a9-7280e1a721cc
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1429'
-ht-degree: 87%
+source-wordcount: '1425'
+ht-degree: 85%
 
 ---
 
@@ -39,7 +39,7 @@ Lors de la création d’un site avec une Live Copy, il est pratique de créer 
 
 >[!NOTE]
 >
-> Notez que les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Veuillez en tenir compte lors de la configuration de Live Copy.
+>Les groupes d’utilisateurs fermés dans l’onglet Autorisations ne peuvent pas être déployés dans des Live Copies à partir de plans directeurs. Planifiez la configuration de la Live Copy en fonction de cette règle.
 
 ## Composants et synchronisation de conteneur {#components-and-container-synchronization}
 
@@ -81,15 +81,15 @@ MSM peut aider à la création de sites web multilingues de deux façons :
 
 Lors de la création de gabarits de langue, gardez à l’esprit les points suivants :
 
-* Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Veuillez noter que :
+* Bien que MSM lui-même **ne fournisse pas la traduction de contenu**, il peut être intégré à des connecteurs de traduction tiers qui proposent ce service. Notez les points suivants :
    * MSM vous permet d’annuler l’héritage au niveau des pages et des composants. Cela évite de remplacer le contenu traduit (dans une Live Copy, avec le contenu pas encore traduit d’un plan directeur) lors du déploiement suivant.
       * Certains connecteurs de traduction tiers automatisent cette gestion des héritages MSM.
-      * Contactez votre prestataire de services de traduction pour plus d’informations.
+      * Pour plus d’informations, contactez votre fournisseur de services de traduction.
       * Une autre méthode pour créer et traduire les gabarits de langue est d’utiliser des copies de langue conjointement à la structure d’intégration de traduction prête à l’emploi d’AEM.
 
-Pour plus d’informations, voir [Traduction du contenu des sites multilingues](/help/sites-cloud/administering/translation/overview.md) et [Meilleures pratiques de traduction](/help/sites-cloud/administering/translation/best-practices.md).
+Pour plus d’informations, consultez les sections [Traduction du contenu des sites multilingues](/help/sites-cloud/administering/translation/overview.md) et [Bonnes pratiques de traduction](/help/sites-cloud/administering/translation/best-practices.md).
 
-## Modifications de structure et déploiements {#structure-changes-and-rollouts}
+## Modifications et déploiements de structures {#structure-changes-and-rollouts}
 
 Les modifications apportées à la structure du contenu dans un plan directeur/une arborescence source sont répercutées différemment dans une Live Copy. Cela dépend du type de modification :
 
@@ -144,7 +144,7 @@ En plus de personnaliser les actions de déploiement, MSM vous permet de personn
 
 ## Informations supplémentaires {#further-information}
 
-Reportez-vous aux articles suivants pour plus d’informations sur MSM et la Live Copy.
+Pour plus d’informations sur MSM et Live Copy, reportez-vous aux articles suivants.
 
 * [Création et synchronisation de Live Copies](creating-live-copies.md)
 * [Console Aperçu de Live Copy](live-copy-overview.md)

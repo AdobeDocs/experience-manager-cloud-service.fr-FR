@@ -2,10 +2,10 @@
 title: En savoir plus sur la création de modèles de fragment de contenu dans AEM
 description: Découvrez les concepts et les mécanismes de la modélisation du contenu pour votre CMS découplé à l’aide de modèles de fragments de contenu.
 exl-id: fdfa79d3-fbed-4467-a898-c1b2678fc0cb
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 89%
+source-wordcount: '687'
+ht-degree: 84%
 
 ---
 
@@ -63,7 +63,7 @@ Vous pouvez faire glisser des instances du **Types de données** sur l’espace 
 
 ![Définition de champs](/help/sites-cloud/administering/content-fragments/assets/cfm-models-04.png)
 
-Une fois que vous avez ajouté un type de données, vous devrez définir les **Propriétés** de ce champ. Celles-ci dépendent du type utilisé. Par exemple :
+Une fois que vous avez ajouté un type de données, vous devez définir la variable **Propriétés** pour ce champ. Celles-ci dépendent du type utilisé. Par exemple :
 
 ![Propriétés des données](/help/sites-cloud/administering/content-fragments/assets/cfm-models-05.png)
 
@@ -73,7 +73,7 @@ Vous pouvez ajouter autant de champs que vous le souhaitez. Par exemple :
 
 ### Vos auteurs de contenu {#your-content-authors}
 
-Les auteurs de contenu ne voient pas les types de données et les propriétés que vous avez utilisés pour créer vos modèles. Cela signifie que vous devrez peut-être fournir de l’aide et des informations sur la façon dont ils doivent remplir des champs spécifiques. Pour fournir des informations de base, vous pouvez utiliser le libellé du champ et la valeur par défaut, mais il se peut qu’une documentation spécifique au projet plus complexe soit nécessaire.
+Les auteurs de contenu ne voient pas les types de données et les propriétés réels que vous avez utilisés pour créer vos modèles. Cela signifie que vous devrez peut-être fournir de l’aide et des informations sur la façon dont ils doivent remplir des champs spécifiques. Pour fournir des informations de base, vous pouvez utiliser le libellé du champ et la valeur par défaut, mais il se peut qu’une documentation spécifique au projet plus complexe soit nécessaire.
 
 >[!NOTE]
 >

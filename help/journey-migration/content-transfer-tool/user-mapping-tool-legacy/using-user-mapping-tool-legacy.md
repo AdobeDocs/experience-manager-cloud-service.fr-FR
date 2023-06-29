@@ -4,10 +4,10 @@ description: Utilisation de l’outil de mappage des utilisateurs (hérité)
 exl-id: dcb750c4-0f81-4d11-ac6c-0592162b683d
 hide: true
 hidefromtoc: true
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 48%
+source-wordcount: '829'
+ht-degree: 46%
 
 ---
 
@@ -37,7 +37,7 @@ Suivez les étapes ci-dessous pour configurer ces éléments :
 
 ## Accès à l’interface utilisateur de l’outil de mappage des utilisateurs {#user-interface}
 
-L’outil de mappage des utilisateurs est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l’outil de transfert de contenu depuis le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
+L’outil de mappage des utilisateurs est intégré à l’outil de transfert de contenu. Vous pouvez télécharger l’outil de transfert de contenu depuis le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). Pour plus d’informations sur la dernière version, voir [Notes de mise à jour actuelles](/help/release-notes/release-notes-cloud/release-notes-current.md).
 
 1. Sélectionnez Adobe Experience Manager et accédez à Outils -> **Opérations** -> **Migration de contenu**.
 

@@ -2,10 +2,10 @@
 title: Phase dʼimplémentation
 description: Assurez-vous que votre code et contenu sont prêts pour la migration vers le cloud
 exl-id: d124f9a5-a754-4ed0-a839-f2968c7c8faa
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2337'
-ht-degree: 96%
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ Dans la phase dʼimplémentation du parcours, vous découvrirez les outils à vo
 
 ## Un peu d’histoire… {#story-so-far}
 
-Dans les parties précédentes du parcours, vous avez appris les [tenants et aboutissants de la migration vers AEM as a Cloud Service](/help/journey-migration/getting-started.md), ainsi quʼà déterminer si votre déploiement est prêt à être migré vers le cloud, dans la [phase de préparation](/help/journey-migration/readiness.md).
+Dans les parties précédentes du parcours, vous avez passé en revue [vous familiariser avec les modifications apportées à AEM as a Cloud Service](/help/journey-migration/getting-started.md), et déterminé si votre déploiement est prêt à être déplacé dans le cloud avec la variable [phase de préparation](/help/journey-migration/readiness.md).
 
 Votre parcours de migration continue dans cet article, qui propose des conseils sur la façon dʼutiliser les outils fournis par Adobe pour sʼassurer que votre code et contenu sont prêts à être migrés vers le cloud.
 
@@ -256,4 +256,4 @@ La section suivante présente les étapes importantes et les tâches associées 
 
 ## Prochaines étapes {#what-is-next}
 
-Une fois que vous avez entièrement compris comment évaluer si votre installation AEM est prête à être déplacée vers le cloud, alors que nous apprenons à utiliser les outils nécessaires pour la préparer, il est temps de passer à la [phase de mise en production](/help/journey-migration/go-live.md).
+Une fois que vous avez entièrement compris comment évaluer si votre installation AEM est prête à être déplacée vers le cloud, alors que nous apprenons à utiliser les outils nécessaires pour la préparer, il est temps de passer au [phase de activation](/help/journey-migration/go-live.md).

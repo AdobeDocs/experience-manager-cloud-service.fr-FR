@@ -2,10 +2,10 @@
 title: Ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager
 description: Cette page décrit l’ajout d’un module complémentaire Screens à un programme existant dans Cloud Manager pour Screens as a Cloud Service.
 exl-id: 0f9a2c21-2d45-470e-a096-443741f9f2ab
-source-git-commit: 96a0dacf69f6f9c5744f224d1a48b2afa11fb09e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 100%
+source-wordcount: '267'
+ht-degree: 91%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 Cette section décrit comment ajouter Screens en tant que module complémentaire à un programme existant dans Cloud Manager.
 
 >[!NOTE]
->Consultez [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=fr) pour en savoir plus sur les programmes Cloud Manager.
+>Voir [Présentation des programmes et des types de programmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/getting-access/understand-program-types.html?lang=fr) pour en savoir plus sur les programmes Cloud Manager.
 
 ## Objectif {#objective}
 
@@ -27,7 +27,7 @@ Pour ajouter Screens en tant que module complémentaire à un programme existant
 1. Accédez à [Cloud Manager](https://my.cloudmanager.adobe.com/).
 
    >[!NOTE]
-   >Pour en savoir plus sur Cloud Manager, voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr).
+   >Voir [Présentation de Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/onboarding/onboarding-concepts/cloud-manager-introduction.html?lang=fr) pour en savoir plus sur Cloud Manager.
 
 1. Accédez à votre projet et cliquez sur l’option **Modifier le programme** de la page **Aperçu** de Cloud Manager.
 

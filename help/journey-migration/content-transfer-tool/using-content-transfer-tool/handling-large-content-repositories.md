@@ -2,10 +2,10 @@
 title: Gestion des référentiels de contenu volumineux
 description: Cette section décrit la gestion des référentiels de contenu volumineux
 exl-id: 21bada73-07f3-4743-aae6-2e37565ebe08
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1816'
-ht-degree: 49%
+source-wordcount: '1813'
+ht-degree: 43%
 
 ---
 
@@ -30,17 +30,17 @@ Consultez la section ci-dessous pour comprendre les points importants à prendre
 
 * La version d’AEM source doit être 6.3 à 6.5.
 
-* L’entrepôt de données d’AEM source est configuré pour utiliser Amazon S3 ou Azure Blob Storage. Pour plus d’informations, voir [Configuration des entrepôts de nœuds et de données dans AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=fr).
+* L’entrepôt de données d’AEM source est configuré pour utiliser Amazon S3 ou Azure Blob Storage. Pour plus d’informations, voir [Configuration des entrepôts de noeuds et de données dans AEM 6](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=fr).
 
 * Chaque jeu de migration copie l’ensemble de l’entrepôt de données. Par conséquent, un seul jeu de migration doit être utilisé.
 
 * Vous devez accéder à l’installation [AzCopy](https://learn.microsoft.com/fr-fr/azure/storage/common/storage-use-azcopy-v10) sur l’instance (ou la machine virtuelle) exécutant l’instance d’AEM source.
 
-* Le nettoyage de la mémoire d’entrepôt de données a été exécuté au cours des sept derniers jours sur la source. Pour plus d’informations, voir [Récupération de l’espace mémoire de l’entrepôt de données](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=fr#data-store-garbage-collection).
+* Le nettoyage de la mémoire d’entrepôt de données a été exécuté au cours des sept derniers jours sur la source. Pour plus d’informations, voir [Nettoyage de la mémoire d’entrepôt de données](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/data-store-config.html?lang=fr#data-store-garbage-collection).
 
-### Considérations supplémentaires si l’instance d’AEM source est configurée pour utiliser une banque de données Amazon S3 ou Azure Blob Storage. {#additional-considerations-amazons3-azure}
+### Considérations supplémentaires si l’instance d’AEM source est configurée pour utiliser un magasin de données Amazon S3 ou Stockage Blob Azure. {#additional-considerations-amazons3-azure}
 
-* Le transfert de données depuis Amazon S3 et Azure Blob Storage entraîne un coût. Le coût de transfert est relatif à la quantité totale de données dans votre conteneur de stockage existant (qu’il soit référencé dans AEM ou non). Pour plus d’informations, voir [Amazon S3](https://aws.amazon.com/s3/pricing/) et [Stockage Blob Azure](https://azure.microsoft.com/fr-fr/pricing/details/bandwidth/).
+* Le transfert de données depuis Amazon S3 et Azure Blob Storage entraîne un coût. Le coût de transfert est relatif à la quantité totale de données dans votre conteneur de stockage existant (qu’il soit référencé dans AEM ou non). Voir [Amazon S3](https://aws.amazon.com/s3/pricing/) et [Stockage Azure Blob](https://azure.microsoft.com/fr-fr/pricing/details/bandwidth/) pour plus d’informations.
 
 * Vous avez besoin d’une paire clé d’accès et clé secrète pour le compartiment source Amazon S3 existant, ou d’un URI SAS pour le conteneur de stockage Azure Blob source existant (l’accès en lecture seule est correct).
 
@@ -117,7 +117,7 @@ Votre fichier azcopy.config doit inclure les propriétés suivantes (veillez à 
 
 >[!NOTE]
 >
-> Si vous ne souhaitez pas accorder l’accès en écriture au conteneur de stockage blob, vous pouvez générer un nouvel URI SAS qui ne dispose que des autorisations de lecture et de liste.
+> Si vous ne souhaitez pas accorder l’accès en écriture au conteneur de stockage d’objets blob existant, vous pouvez générer un nouvel URI SAS qui ne dispose que des autorisations de lecture et de liste.
 
 ```
 azCopyPath=/usr/bin/azcopy
@@ -162,7 +162,7 @@ Une fois le fichier de configuration ci-dessus en place, la phase de précopie A
 >Si AzCopy n&#39;est pas configuré correctement, le message suivant apparaît dans les logs :
 >`INFO c.a.g.s.m.c.a.AzCopyCloudBlobPreCopy - Blob pre-copy is not supported`.
 
-1. Commencez une extraction à partir de l’interface utilisateur de CTT. Pour plus d’informations, consultez [Prise en main de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) et [Processus d’extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md).
+1. Commencez une extraction à partir de l’interface utilisateur de CTT. Voir [Prise en main de l’outil de transfert de contenu](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/getting-started-content-transfer-tool.md) et le [Processus d’extraction](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/extracting-content.md) pour plus d’informations.
 
 1. Vérifiez que la ligne suivante est imprimée dans le journal d&#39;extraction :
 
@@ -198,9 +198,8 @@ Lorsque AzCopy est en cours d’exécution pour le fichier source dataStore, vou
 
 ### 5. Ingestion avec AzCopy {#ingesting-azcopy}
 
-Consultez la section [Ingérer du contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
-pour obtenir des informations générales sur l’ingestion de contenu dans Target à partir de Cloud Acceleration Manager (CAM), y compris des
-instructions sur l’utilisation d’AzCopy (pré-copie), ou non, dans la boîte de dialogue « Nouvelle ingestion ».
+Voir [Ingestion de contenu dans Target](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md)
+pour obtenir des informations générales sur l’ingestion de contenu dans la cible à partir de Cloud Acceleration Manager (CAM), y compris des instructions sur l’utilisation d’AzCopy (pré-copie), ou non, dans la boîte de dialogue &quot;Nouvelle ingestion&quot;.
 
 Pour tirer parti d’AzCopy lors de l’ingestion, Adobe requiert que vous utilisiez une version as a Cloud Service AEM qui est au moins la version 2021.6.5561.
 
@@ -210,7 +209,7 @@ Consultez la liste &quot;Tâches d’ingestion&quot; dans Cloud Acceleration Man
 *************** Beginning AzCopy pre-copy phase ***************
 INFO: Scanning...
 INFO: Failed to create one or more destination container(s). Your transfers may still succeed if the container already exists.
-INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+INFO: Any empty folders will not be processed, because source and/or destination does not have full folder support
 INFO: azcopy: A newer version 10.11.0 is available to download
  
 Job 419d98da-fc05-2a45-70cc-797fee632031 has started

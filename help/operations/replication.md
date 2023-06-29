@@ -2,9 +2,9 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 9ec45753f56d0576e75f148ca0165c0ccd621f23
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 46%
 
 ---
@@ -182,7 +182,7 @@ L’ensemble `ReplicationStatus` d’une ressource n’est modifié que si l’a
 
 ### Méthodes d’invalidation de contenu {#invalidating-content}
 
-Vous pouvez directement invalider le contenu en utilisant Sling Content Invalidation (SCD) de l’auteur (méthode préférée) ou en utilisant l’API de réplication pour appeler l’agent de réplication de vidage de publication de Dispatcher. Reportez-vous à la page [Mise en cache](/help/implementing/dispatcher/caching.md) pour plus d’informations.
+Vous pouvez directement invalider le contenu en utilisant Sling Content Invalidation (SCD) de l’auteur (méthode préférée) ou en utilisant l’API de réplication pour appeler l’agent de réplication de vidage de publication de Dispatcher. Voir [Mise en cache](/help/implementing/dispatcher/caching.md) pour plus d’informations.
 
 **Limites de capacité de l’API de réplication**
 

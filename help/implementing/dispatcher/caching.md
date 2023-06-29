@@ -3,9 +3,9 @@ title: Mise en cache dans AEM as a Cloud Service
 description: Mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 1fc57dacbf811070664d5f5aaa591dd705516fa8
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2795'
 ht-degree: 51%
 
 ---
@@ -82,7 +82,7 @@ Cette méthode est utile, par exemple, lorsque la logique métier nécessite un 
 
 ### Bibliothèques côté client (js, css) {#client-side-libraries}
 
-* En utilisant le framework de bibliothèque côté client d’AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, puisque toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique. En d’autres termes, les HTMLS qui font référence aux bibliothèques clientes sont générés selon les besoins afin que les clients puissent découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache est défini sur non modifiable (immutable) ou 30 jours (30 days) pour les navigateurs plus anciens qui ne respectent pas la valeur non modifiable.
+* En utilisant le framework de bibliothèque côté client d’AEM, le code JavaScript et CSS est généré de manière à ce que les navigateurs puissent le mettre en cache indéfiniment, puisque toute modification se manifeste sous la forme de nouveaux fichiers avec un chemin d’accès unique. En d’autres termes, les HTMLS qui font référence aux bibliothèques clientes sont générés selon les besoins afin que les clients puissent découvrir un nouveau contenu au fur et à mesure de sa publication. Le contrôle du cache est défini sur &quot;non modifiable&quot; ou 30 jours pour les navigateurs plus anciens qui ne respectent pas la valeur &quot;non modifiable&quot;.
 * Voir la section [Bibliothèques côté client et cohérence des versions](#content-consistency) pour en savoir plus.
 
 ### Images et tout contenu suffisamment volumineux pour être stocké dans le stockage blob {#images}
@@ -448,7 +448,7 @@ The diagram presented below illustrates this.
 
 ![CDN](assets/cdnd.png "CDN")
 
-If there is a concern that the dispatcher cache isn't clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
+If there is a concern that the dispatcher cache is not clearing, contact [customer support](https://helpx.adobe.com/support.ec.html) who can flush the dispatcher cache if necessary.
 
 The Adobe-managed CDN respects TTLs and thus there is no need fo it to be flushed. If an issue is suspected, [contact customer support](https://helpx.adobe.com/support.ec.html) support who can flush an Adobe-managed CDN cache as necessary. -->
 

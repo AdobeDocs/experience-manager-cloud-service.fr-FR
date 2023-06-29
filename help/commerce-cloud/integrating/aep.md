@@ -11,9 +11,9 @@ level: Beginner
 kt: 10834
 thumbnail: 346811.jpeg
 exl-id: 30bb9b2c-5f00-488e-ad5c-9af7cd2c4735
-source-git-commit: 73fe6ce5bbdf0ad437ae4b47b892ad05e016ab68
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2079'
 ht-degree: 96%
 
 ---
@@ -382,7 +382,7 @@ Pour stocker les données d’événement, vous devez créer un jeu de données 
 
 - Sur la nouvelle page, __recherchez et sélectionnez__ le schéma que vous avez créé à l’étape précédente, puis cliquez sur le bouton __Suivant__.
 
-   ![Sélectionner un schéma pour créer des jeux de données AEP](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
+  ![Sélectionner un schéma pour créer des jeux de données AEP](../assets/aep-integration/AEP-Datasets-Select-Schema.png)
 
 1. Nommez votre jeu de données à l’aide du champ __Configurer le jeu de données > Nom__, puis cliquez sur le bouton __Terminer__.
 
@@ -499,7 +499,7 @@ __Evénements XDM de profil :__
 
 ## Ressources supplémentaires {#additional-resources}
 
-Pour plus d’informations, consultez les ressources suivantes :
+Pour plus d’informations, voir les ressources suivantes :
 
 - [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/)
 - [Présentation du connecteur Experience Platform](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html?lang=fr)

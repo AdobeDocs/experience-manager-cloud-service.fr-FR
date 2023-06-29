@@ -4,10 +4,10 @@ description: Découvrez comment configurer la structure d’intégration de trad
 feature: Language Copy
 role: Admin
 exl-id: 6e74cdee-7965-4087-a733-e9d81c4aa7c2
-source-git-commit: 803a7788cde37fb0026f7cc3582efb33c10e1358
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1523'
-ht-degree: 90%
+source-wordcount: '1518'
+ht-degree: 87%
 
 ---
 
@@ -23,7 +23,7 @@ Pour une présentation des fonctions de traduction de contenu d’AEM, voir [Tra
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous commencez à traduire du contenu, reportez-vous à la section [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide AEM outils de traduction puissants, idéal pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 ## Connexion à un fournisseur de services de traduction {#connecting-to-a-translation-service-provider}
 
@@ -73,7 +73,7 @@ Une configuration unique de la structure contrôle la manière dont le contenu d
 1. Accédez à l’emplacement où vous souhaitez créer la configuration dans votre structure de contenu. Il est souvent basé sur un site particulier, mais peut également être global.
 1. Fournissez les informations suivantes dans les champs requis, puis cliquez ou appuyez sur **Créer** :
    1. Sélectionnez **Type de configuration** dans la liste déroulante.
-   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la console **Services cloud** ainsi que dans les listes déroulantes de propriétés de la page.
+   1. Indiquez un **Titre** pour votre configuration. Le **Titre** identifie la configuration dans la variable **Cloud Services** console et dans les listes déroulantes des propriétés de page.
    1. Éventuellement, saisissez un **Nom** à utiliser pour le nœud du référentiel qui stocke la configuration.
 1. Dans la fenêtre **Modifier la configuration**, configurez les propriétés sur les onglets **Sites** et **Ressources**, puis cliquez ou appuyez sur **Enregistrer et fermer**.
 

@@ -2,10 +2,10 @@
 title: Modèles de fragment de contenu (ressources - fragments de contenu)
 description: Découvrez comment les modèles de fragment de contenu constituent la base de votre contenu découplé dans AEM et comment créer des fragments de contenu avec du contenu structuré.
 exl-id: fd706c74-4cc1-426d-ab56-d1d1b521154b
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2903'
-ht-degree: 88%
+source-wordcount: '2901'
+ht-degree: 87%
 
 ---
 
@@ -75,7 +75,7 @@ Le modèle de fragment de contenu définit effectivement la structure des fragme
         >
         >Lors de la mise à jour manuelle de la propriété **Nom de la propriété** pour un type de données, notez que les noms ne doivent contenir que des caractères A-Z, a-z, 0-9 et le trait de soulignement « _ » comme caractère spécial.
         >
-        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
+        >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
 
      Par exemple :
 
@@ -142,7 +142,7 @@ De nombreuses propriétés s’expliquent d’elles-mêmes. Pour certaines propr
 
   >[!CAUTION]
   >
-  >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou modifiez ces caractères.
+  >Si les modèles créés dans des versions antérieures d’AEM contiennent des caractères interdits, supprimez ou mettez à jour ces caractères.
 
 * **Rendu comme**
 Les différentes options permettant de réaliser/rendre le champ dans un fragment. Cette propriété vous permet souvent de définir si l’auteur voit une seule instance du champ ou s’il est autorisé à créer plusieurs instances.

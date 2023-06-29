@@ -2,10 +2,10 @@
 title: Notes de mise à jour de la version 2021.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la version 2021.9.0 d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: 8c12ff09-fbc8-42dd-87c0-46e509604f36
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1570'
-ht-degree: 97%
+source-wordcount: '1569'
+ht-degree: 92%
 
 ---
 
@@ -74,8 +74,8 @@ CQ-4328183 was not reported on CS so not documented here.
 
 ### Fonctionnalités bêta de [!DNL Forms] {#sep-what-is-new-forms-prerelease}
 
-* **Connecteur de stockage unifié :** utilisez le connecteur de stockage unifié pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes :
-   * Activer la fonctionnalité d’enregistrement et de reprise de Forms Portal et stocker les brouillons de formulaires adaptatifs dans un référentiel de données géré par le client.
+* **Connecteur de stockage unifié :** utilisez le connecteur de stockage unifié pour externaliser les données en cours de traitement dans les référentiels gérés par le client. Par exemple, vous pouvez effectuer les actions suivantes : 
+   * Activez la fonctionnalité d’enregistrement et de reprise de Forms Portal et stockez les brouillons de formulaires adaptatifs dans un référentiel de données géré par le client.
    * Stocker les données de workflows AEM en cours (données des variables de workflows AEM) qui contiennent des données personnelles sensibles (SPD) dans un référentiel géré par le client.
 
 * **[!DNL AEM Forms as a Cloud Service - Communications]** : les [API de communication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/using-communications/aem-forms-cloud-service-communications.html) vous permettent de combiner des modèles XDP et des données XML pour générer des documents d’impression dans différents formats. Le service vous permet de générer des documents en mode synchrone. Les API vous permettent de créer des applications grâce auxquelles vous pouvez accomplir les actions suivantes :
@@ -111,7 +111,7 @@ Vous pouvez écrire à [!DNL formscsbeta@adobe.com] pour vous inscrire au progra
 
 ### Nouveautés {#what-is-new-screens}
 
-* Screens as a Cloud Service prend désormais en charge la surveillance de base de la lecture. Le lecteur signale désormais diverses mesures de lecture pour chaque ping (30 secondes par défaut). Les mesures permettent de détecter différents cas de figure (lecture bloquée, écran vide, problème de time-code, etc.). Cette fonctionnalité permet à l’équipe concernée de surveiller à distance si un lecteur lit correctement du contenu, d’améliorer sa réactivité en cas d’écran vide ou d’interruption d’expérience et de réduire les risques d’offrir une expérience bancale à l’utilisateur final.
+* Screens as a Cloud Service prend désormais en charge la surveillance de base de la lecture. Le lecteur signale désormais diverses mesures de lecture pour chaque ping (30 secondes par défaut). En fonction des mesures, il permet de détecter différents cas de périphérie (expérience bloquée, écran vide, problème de planification, etc.). Cette fonctionnalité permet à l’équipe concernée de surveiller à distance si un lecteur lit correctement du contenu, d’améliorer sa réactivité en cas d’écran vide ou d’interruption d’expérience et de réduire les risques d’offrir une expérience bancale à l’utilisateur final.
 Pour plus d’informations, voir [Suivi de base de la lecture](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/screens-as-cloud-service/manage-player-registration/installing-screens-cloud-player.html?lang=fr#playback-monitoring).
 
 * Les miniatures pour les vidéos sont désormais prises en charge dans Screens as a Cloud Service. Un auteur de contenu peut définir une miniature de vidéos afin de pouvoir utiliser l’image en tant qu’espace réservé et de pouvoir tester correctement la lecture et le ciblage du contenu, alors que l’équipe concernée peut s’occuper de la finalisation de la vidéo elle-même. L’image peut également être utilisée au cas où la lecture de la vidéo échouerait.
@@ -145,7 +145,7 @@ Lisez la [documentation](/help/security/configuring-advanced-networking.md) pour
 
 **Optimisations des index**
 
-Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus utilisé clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] à partir de cette version. Pour supprimer cet index de texte intégral sur les environnements AEM conformément aux clients AEM, Adobe Engineering travaille individuellement et de manière proactive avec les clients pour une suppression douce et durable de l’index de texte intégral Lucene. Consultez la [documentation](/help/operations/indexing.md#index-optimizations) d’[!DNL Adobe Experience Manager] as a [!DNL Cloud Service] pour obtenir plus d’informations, contactez directement notre service clientèle si vous avez des questions.
+Pour améliorer les performances des requêtes de recherche et de l’indexation, l’index de texte intégral lucene-2 n’est plus utilisé clé en main dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] à partir de cette version. Pour supprimer cet index de texte intégral sur les environnements AEM conformément aux clients AEM, Adobe Engineering travaille individuellement et de manière proactive avec les clients pour une suppression douce et durable de l’index de texte intégral Lucene. Visitez le [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] [documentation](/help/operations/indexing.md#index-optimizations) pour plus d&#39;informations, contactez directement notre service clientèle si vous avez des questions.
 
 ## Cloud Manager {#cloud-manager}
 
@@ -160,7 +160,7 @@ La prochaine version est prévue pour le 7 octobre 2021.
 
 * L’archétype de projet AEM utilisé par Cloud Manager a été mis à jour à la version 30.
 
-* Les cartes de programme de la page d’entrée de Cloud Manager et l’expérience associée ont été actualisées.
+* Les cartes de programme de la page de destination de Cloud Manager et l’expérience associée ont été actualisées.
 
 * Le journal des étapes de qualité du code comprend désormais des informations de journalisation en mode verbeux sur le processus d’analyse OakPal.
 
@@ -182,7 +182,7 @@ La date de publication de la mise à jour de Cloud Acceleration Manager est le 4
 
 ### Nouveautés {#what-is-new-cam}
 
-* Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Reportez-vous aux étapes 6 et 7 de la section [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#best-practices-analysis).
+* Cloud Acceleration Manager permet désormais aux utilisateurs d’afficher les rapports BPA dans un aperçu imprimable, ce qui permet d’exécuter simplement une impression ou une exportation PDF pour les partager facilement. Voir les étapes 6 et 7 de la section [Utilisation de la carte d’analyse des bonnes pratiques](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-acceleration-manager/using-cam/cam-readiness-phase.html?lang=fr#best-practices-analysis).
 
 ## Outil de transfert de contenu {#content-transfer-tool}
 
@@ -192,7 +192,7 @@ La date de publication de l’outil de transfert de contenu version v1.6.0 est 
 
 ### Nouveautés {#what-is-new-ctt}
 
-* Amélioration de l’outil de mappage des utilisateurs pour une expérience client simplifiée, notamment grâce aux fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, reportez-vous à la section [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#using-user-mapping-tool).
+* Amélioration de l’outil de mappage des utilisateurs pour une expérience client simplifiée, notamment grâce aux fonctionnalités suivantes répertoriées ci-dessous. Pour plus d’informations, voir [Utilisation de l’outil de mappage des utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/cloud-migration/content-transfer-tool/using-user-mapping-tool.html?lang=fr#using-user-mapping-tool).
    * Test de la connexion à l’API User Management avant d’exécuter le mappage des utilisateurs
    * Ignorer les erreurs de manière appropriée et poursuivre l’activité de mappage des utilisateurs
    * Le mappage des utilisateurs n’échoue plus si le Jeton d’accès expire (après 24 heures). Le mappage des utilisateurs peut être exécuté à nouveau à partir de l’endroit où il s’est arrêté pour la dernière fois.

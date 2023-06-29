@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
-source-git-commit: 948b671965cf438e2c93dea0371331cb3a02b6ca
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1408'
-ht-degree: 97%
+source-wordcount: '1409'
+ht-degree: 95%
 
 ---
 
@@ -34,13 +34,13 @@ Modifiez les propriétés suivantes pour le composant **[!UICONTROL Description]
    * **[!UICONTROL Libellé du champ]** : nom sous lequel s’affiche la propriété des métadonnées. Il est uniquement disponible à titre de référence.
    * **[!UICONTROL Associer à la propriété]** : la valeur de cette propriété fournit le nom/chemin relatif au nœud de la ressource où elle est enregistrée dans le référentiel. Cette valeur doit toujours commencer par `./`, car cela indique que le chemin d’accès se situe sous le nœud de la ressource.
 
-      La valeur que vous indiquez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez . `/jcr:content/metadata/dc:desc` comme nom pour **[!UICONTROL Associer à la propriété]**, [!DNL Adobe Experience Manager Assets] stocke la valeur `dc:desc` comme nœud de métadonnées de la ressource.
+     La valeur que vous indiquez pour **[!UICONTROL Associer à la propriété]** est stockée en tant que propriété sous le nœud de métadonnées de la ressource. Par exemple, si vous spécifiez . `/jcr:content/metadata/dc:desc` comme nom pour **[!UICONTROL Associer à la propriété]**, [!DNL Adobe Experience Manager Assets] stocke la valeur `dc:desc` comme nœud de métadonnées de la ressource.
 
    * **[!UICONTROL Valeur par défaut]** : utilisez cette propriété pour ajouter une valeur par défaut pour le composant des métadonnées. Par exemple, si vous indiquez « Ma description », cette valeur est affectée à la propriété `dc:desc` au niveau du nœud de métadonnées de la ressource.
 
-      >[!NOTE]
-      >
-      >Si vous ajoutez une valeur par défaut à une nouvelle propriété de métadonnées (qui n’existe pas au niveau du nœud `/jcr:content/metadata`), la propriété et sa valeur ne s’affichent pas, par défaut, sur la page Propriétés de la ressource. Pour afficher la nouvelle propriété sur la page [!UICONTROL Propriétés], modifiez le formulaire de schéma correspondant.
+     >[!NOTE]
+     >
+     >Ajout d’une valeur par défaut à une nouvelle propriété de métadonnées (qui n’existe pas à l’adresse `/jcr:content/metadata` ) n’affiche pas par défaut la propriété et sa valeur sur la page Propriétés de la ressource. Pour afficher la nouvelle propriété sur la page [!UICONTROL Propriétés], modifiez le formulaire de schéma correspondant.
 
 1. (Facultatif) Ajoutez d’autres composants à la page Modifier le formulaire depuis l’onglet **[!UICONTROL Créer le formulaire]**, puis configurez leurs propriétés dans l’onglet **[!UICONTROL Paramètres]**. Les propriétés suivantes sont disponibles à partir de l’onglet **[!UICONTROL Créer le formulaire]** :
 

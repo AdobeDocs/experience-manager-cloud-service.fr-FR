@@ -2,10 +2,10 @@
 title: Mise en cache et performances
 description: Découvrez les différentes configurations disponibles pour activer GraphQL et la mise en cache de contenu afin d’optimiser les performances de votre implémentation commerciale.
 exl-id: 21ccdab8-4a2d-49ce-8700-2cbe129debc6
-source-git-commit: afbcd1e50a12a9b0642c586d7d81bb90ea91a58d
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '838'
-ht-degree: 48%
+source-wordcount: '840'
+ht-degree: 44%
 
 ---
 
@@ -48,7 +48,7 @@ venia/components/structure/navigation:true:10:600
 
 En considérant que la variable [Magasin de référence Venia](https://github.com/adobe/aem-cif-guides-venia) est utilisée. Notez l’utilisation du nom du proxy de composant `venia/components/structure/navigation`, et **non pas** le nom du composant de navigation CIF (`core/cif/components/structure/navigation/v1/navigation`).
 
-La mise en cache d’autres composants doit être définie projet par projet, généralement en coordination avec la mise en cache configurée au niveau du Dispatcher. N’oubliez pas qu’il n’y a pas d’invalidation active de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur « universelle » qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond au mieux aux exigences de votre projet.
+La mise en cache d’autres composants doit être définie projet par projet, généralement en coordination avec la mise en cache configurée au niveau du Dispatcher. N’oubliez pas qu’il n’y a pas d’invalidation principale de ces caches. Par conséquent, la durée de mise en cache doit être soigneusement définie. Il n’existe aucune valeur &quot;universelle&quot; qui correspondrait à tous les projets et cas d’utilisation possibles. Assurez-vous de définir une stratégie de mise en cache au niveau du projet qui correspond au mieux aux exigences de votre projet.
 
 ## Mise en cache du Dispatcher {#dispatcher}
 

@@ -2,10 +2,10 @@
 title: Configurations et l’explorateur de configurations
 description: Description des configurations AEM et de leur gestion des paramètres d’espace de travail dans AEM.
 exl-id: 0ade04df-03a9-4976-a4b7-c01b4748474d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 95%
+source-wordcount: '1485'
+ht-degree: 91%
 
 ---
 
@@ -29,7 +29,7 @@ Quelle que soit votre perspective, les configurations répondent à deux objecti
 
 ## Configurations en tant qu’administrateur {#configurations-administrator}
 
-L’administrateur AEM ainsi que les auteurs peuvent considérer les configurations comme des espaces de travail. Ces espaces de travail peuvent être utilisés pour rassembler des groupes de paramètres ainsi que leur contenu associé à des fins d’organisation en implémentant des droits d’accès pour ces fonctionnalités.
+L’administrateur AEM et les auteurs peuvent considérer les configurations comme des espaces de travail. Ces espaces de travail peuvent être utilisés pour rassembler des groupes de paramètres et leur contenu associé à des fins d’organisation en implémentant des droits d’accès pour ces fonctionnalités.
 
 Des configurations peuvent être créées pour de nombreuses fonctionnalités différentes dans AEM.
 
@@ -155,7 +155,7 @@ Examinons maintenant le contenu JCR correspondant :
 
 Dans cet exemple, nous supposons un dossier de la gestion des actifs numériques spécifique à WKND et une configuration correspondante. À partir de ce dossier `/content/dam/wknd`, nous verrons qu’il existe une propriété de chaîne nommée `cq:conf` qui fait référence à la configuration qui doit s’appliquer à la sous-arborescence. La propriété est généralement définie sur le `jcr:content` d’une page ou d’un dossier de ressources. Ces liens `conf` sont explicites. Il est donc facile de les suivre en regardant simplement le contenu dans CRXDE.
 
-En passant dans `/conf`, nous suivons la référence et voyons qu’il y a un nœud `/conf/wknd`. Il s’agit d’une configuration. Sa recherche est totalement transparente par rapport au code d’application. L’exemple de code n’a jamais de référence dédiée. Il est masqué derrière l’objet `Conf`. La configuration qui s’applique est entièrement contrôlée par le contenu JCR.
+En passant dans `/conf`, nous suivons la référence et voyons qu’il y a un nœud `/conf/wknd`. Il s’agit d’une configuration. Sa recherche est complètement transparente par rapport au code de l’application. L’exemple de code n’a jamais de référence dédiée. Il est masqué derrière l’objet `Conf`. La configuration qui s’applique est entièrement contrôlée par le contenu JCR.
 
 Nous voyons que la configuration contient un nœud `settings` de nom fixe qui contient les éléments réels, y compris `dam/imageserver` dont nous avons besoin dans notre cas. Un tel élément peut être considéré comme un « document de paramètres » et est généralement représenté par une `cq:Page` avec un `jcr:content` contenant le contenu réel.
 

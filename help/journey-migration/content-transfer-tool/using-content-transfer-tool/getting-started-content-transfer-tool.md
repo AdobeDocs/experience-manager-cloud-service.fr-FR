@@ -2,10 +2,10 @@
 title: Prise en main de l’outil de transfert de contenu
 description: Prise en main de l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: ea5d86e1a43bb7ae0c7608fc0625983cf2bf273f
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 87%
+source-wordcount: '1436'
+ht-degree: 84%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 87%
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr" text="Notes de mise à jour"
 >additional-url="https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html" text="Portail de distribution de logiciels"
 
-Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais du [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d’informations sur la dernière version, consultez les [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
+Il est possible de télécharger l’outil de transfert de contenu dans un fichier zip à partir du portail de distribution de logiciels. Vous pouvez installer le package par le biais du [Gestionnaire de packages](/help/implementing/developing/tools/package-manager.md) sur votre instance source Adobe Experience Manager (AEM). Veillez à télécharger la dernière version. Pour plus d’informations sur la dernière version, voir [Notes de mise à jour](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/release-notes/release-notes-current.html?lang=fr).
 
 Seules les versions 2.0.0 et ultérieures sont prises en charge et il est conseillé d’utiliser la version la plus récente.
 
@@ -102,7 +102,7 @@ La section suivante s’applique à la nouvelle version de l’outil de transfer
 
    >[!NOTE]
    >
-   >La clé d’extraction permet à votre environnement AEM source de se connecter en toute sécurité au jeu de migration. Traitez cette clé avec le même soin que vous le feriez avec un mot de passe et ne la partagez jamais sur un support non sécurisé comme un e-mail.
+   >La clé d’extraction permet à votre environnement AEM source de se connecter en toute sécurité au jeu de migration. Traitez cette clé avec le même soin que vous devez avoir un mot de passe et ne la partagez jamais sur un support non sécurisé comme un email.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam4.png)
 
@@ -126,7 +126,7 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleratio
 
    >[!NOTE]
    >
-   >Assurez-vous que la clé d’extraction est valide et n’est pas proche de son expiration. Vous pouvez obtenir ces informations dans la boîte de dialogue **Créer un jeu de migration** après avoir collé la clé d’extraction. Si vous obtenez une erreur de connexion, reportez-vous à [Connectivité de l’environnement source](#source-environment-connectivity) pour plus d’informations.
+   >Assurez-vous que la clé d’extraction est valide et n’est pas proche de son expiration. Vous pouvez obtenir ces informations dans la boîte de dialogue **Créer un jeu de migration** après avoir collé la clé d’extraction. Si vous obtenez une erreur de connexion, reportez-vous à la section [Connectivité de l’environnement source](#source-environment-connectivity) pour plus d’informations.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 

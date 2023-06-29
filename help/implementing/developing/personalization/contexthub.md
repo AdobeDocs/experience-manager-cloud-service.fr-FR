@@ -2,10 +2,10 @@
 title: ContextHub
 description: ContextHub est une structure pour stocker, manipuler et présenter des données contextuelles
 exl-id: 604477c6-d96a-441f-b5fc-5def93832478
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '287'
-ht-degree: 69%
+source-wordcount: '289'
+ht-degree: 58%
 
 ---
 
@@ -19,7 +19,7 @@ ContextHub vous permet d’effectuer les opérations suivantes :
 * [Conserver les données contextuelles](#persistence) sur votre site web en tant que représentation de couche de données.
 * [Gérer les segments](#segmentation) pour le contexte sélectionné.
 
-L’API Javascript côté client vous permet d’accéder aux données pour personnaliser le contenu.
+L&#39;API JavaScript côté client permet d&#39;accéder aux données pour personnaliser le contenu.
 
 ## Présentation {#presentation}
 
@@ -42,7 +42,7 @@ Chaque magasin ContextHub est une instance d’un type de magasin prédéfini :
 * ContextHub fournit plusieurs [exemples de types de magasin](sample-stores.md).
 * Utilisez AEM consoles pour [créer des magasins](configuring-contexthub.md#creating-a-contexthub-store).
 * Les développeurs peuvent [créer des types de magasin personnalisés](extending-contexthub.md#creating-custom-store-candidates).
-* Les développeurs peuvent [accès aux données du magasin](adding-contexthub.md#interacting-with-contexthub-stores) via Javascript.
+* Les développeurs peuvent [accès aux données du magasin](adding-contexthub.md#interacting-with-contexthub-stores) par le biais de JavaScript.
 
 ## Segmentation {#segmentation}
 

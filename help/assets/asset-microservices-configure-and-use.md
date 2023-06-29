@@ -5,9 +5,9 @@ contentOwner: AG
 feature: Asset Compute Microservices,Workflow,Asset Processing
 role: Architect,Admin
 exl-id: 7e01ee39-416c-4e6f-8c29-72f5f063e428
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '2933'
+source-wordcount: '2931'
 ht-degree: 97%
 
 ---
@@ -204,7 +204,7 @@ Pour plus d’informations sur les étapes de workflow standard pouvant être ut
 
 Les modèles de workflow de post-traitement sont des modèles de workflow [!DNL Experience Manager]standard. Créez des modèles différents si un autre traitement doit être exécuté pour différents emplacements de référentiel ou types de ressource.
 
-Les étapes de traitement sont ajoutées si nécessaire. Vous pouvez utiliser les étapes prises en charge qui sont disponibles, ainsi que n’importe quelle étape de workflow implémentée sur mesure.
+Les étapes de traitement sont ajoutées si nécessaire. Vous pouvez utiliser à la fois les étapes prises en charge disponibles et les étapes de workflow implémentées sur mesure.
 
 Assurez-vous que la dernière étape de chaque workflow de post-traitement est `DAM Update Asset Workflow Completed Process`. La dernière étape permet de s’assurer qu’Experience Manager sait quand le traitement des ressources est terminé.
 

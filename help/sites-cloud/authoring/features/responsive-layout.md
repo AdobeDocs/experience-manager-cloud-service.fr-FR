@@ -2,10 +2,10 @@
 title: Mise en page réactive
 description: AEM permet de créer une mise en page réactive pour vos pages.
 exl-id: 87202742-5bed-4e87-a427-456a1a0e72cc
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 64%
+source-wordcount: '1748'
+ht-degree: 61%
 
 ---
 
@@ -18,7 +18,7 @@ Vous disposez ainsi d’un système de paragraphes qui vous permet de positionne
 Conteneur de mises en page :
 
 * Permet un alignement horizontal sur la grille, ainsi que la possibilité de placer côte à côte les composants dans la grille et de définir quand ils doivent être réduits/développés.
-* Il utilise des points d’arrêt prédéfinis (pour téléphone ou tablette, par exemple) pour que vous puissiez définir le comportement du contenu pour l’orientation ou les appareils associés.
+* Utilise des points d’arrêt prédéfinis (par exemple, pour le téléphone, la tablette, etc.) pour vous permettre de définir le comportement requis du contenu pour l’orientation/les appareils associés.
    * Par exemple, vous pouvez personnaliser la taille du composant ou si le composant peut être affiché sur des appareils spécifiques.
 * Peut être imbriqué pour permettre le contrôle des colonnes.
 
@@ -181,7 +181,7 @@ Le mode **Mise en page** peut être activé de deux façons.
 * À l’aide du [menu de mode de la barre d’outils](/help/sites-cloud/authoring/fundamentals/environment-tools.md#page-modes), en sélectionnant le mode **Mise en page**.
    * Sélectionnez le mode **Mise en page** de la même façon que vous passeriez en mode **Édition** ou en mode **Ciblage**.
    * Le mode **Mise en page** est un **mode** persistant, ce qui signifie qu’il reste sélectionné jusqu’à ce que vous choisissiez un autre mode à l’aide du sélecteur de mode.
-* When [modification d’un composant individuel.](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout)
+* When [modification d’un composant individuel](/help/sites-cloud/authoring/fundamentals/editing-content.md#edit-component-layout).
    * En utilisant la variable **Disposition** dans le menu d’actions rapides du composant, vous pouvez passer à **Disposition** mode .
    * Le mode **Mise en page** persiste pendant la modification du composant et bascule vers le mode d’**édition** lorsqu’un autre composant est sélectionné.
 

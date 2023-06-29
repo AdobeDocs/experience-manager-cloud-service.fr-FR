@@ -2,9 +2,9 @@
 title: Création de contenu accessible pour Adobe Experience Manager as a Cloud Service (conformité WCAG 2.1)
 description: Utilisez AEM as a Cloud Service pour rendre le contenu web accessible et utilisable par les personnes en situation de handicap
 exl-id: 294fd1ed-9b4a-42cb-8f9e-e7a5d7e6930e
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '13864'
+source-wordcount: '13862'
 ht-degree: 99%
 
 ---
@@ -436,7 +436,7 @@ De la même manière, les informations qui impliquent de distinguer différents 
 
 >[!NOTE]
 >
-Pour connaître les conditions requises en rapport avec les alternatives aux couleurs, voir [Utilisation de la couleur](#use-of-color).
+Pour connaître les exigences relatives aux alternatives aux couleurs, voir [Utilisation de la couleur](#use-of-color).
 
 #### Comment procéder – Caractéristiques sensorielles (1.3.3) {#how-to-meet-sensory-characteristics}
 
@@ -550,7 +550,7 @@ Veillez à ce que le texte soit suffisamment contrasté par rapport à son arri�
 
 >[!NOTE]
 >
-N’oubliez pas que les polices peuvent différer concernant les modes de restitution du dimensionnement PT/PX/EM équivalent.
+N’oubliez pas que les polices peuvent différer de la manière dont elles effectuent le rendu du dimensionnement PT/PX/EM équivalent.
 >
 Pour la sélection des polices et du dimensionnement appropriés du contenu web, il est recommandé de faire preuve de bon sens et de privilégier la lisibilité et la convivialité.
 

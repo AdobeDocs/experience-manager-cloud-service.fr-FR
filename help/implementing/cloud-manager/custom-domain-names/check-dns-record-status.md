@@ -2,10 +2,10 @@
 title: Vérification du statut de l’enregistrement DNS
 description: Découvrez comment déterminer si vos paramètres DNS sont correctement résolus à l’aide de Cloud Manager.
 exl-id: 76ca1584-e21d-4e3a-a08a-82b2779167cf
-source-git-commit: 2278abcf0c34fd34a7730242ee27814d37b7d4d0
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 100%
+source-wordcount: '250'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Cloud Manager effectue une recherche DNS pour votre nom de domaine et affiche l
 
 * **Résolution DNS incorrecte** - Cela indique que la configuration des enregistrements DNS n’a pas encore été résolue ou est erronée.
 
-   * Consultez le document [Configuration des paramètres DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) pour en savoir plus.
+   * Voir [Configuration des paramètres DNS](/help/implementing/cloud-manager/custom-domain-names/configure-dns-settings.md) pour en savoir plus.
    * Une fois prêt, vous devez sélectionner l’icône **Résoudre à nouveau** en face du statut.
 
 * **Résolution DNS en cours** - La résolution est en cours.

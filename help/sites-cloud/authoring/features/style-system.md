@@ -2,10 +2,10 @@
 title: Système de style
 description: Le système de style permet à un auteur de modèles de définir des classes de style dans la politique de contenu d’un composant, de façon à pouvoir sélectionner ces classes lors de la modification du composant sur une page. Ces styles peuvent être des variantes visuelles d’un composant, le rendant ainsi plus flexible.
 exl-id: 224928dd-e365-4f3e-91af-4d8d9f47efdd
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 67%
+source-wordcount: '1320'
+ht-degree: 66%
 
 ---
 
@@ -46,7 +46,7 @@ L’utilisation du système de style se passe généralement comme suit.
 
 1. L’auteur des pages AEM peut alors choisir les styles conçus dans l’éditeur de page via le menu de style de la barre d’outils du composant.
 
-Notez que seules les trois dernières étapes sont réalisées dans AEM. Cela signifie que l’ensemble du développement des codes CSS et JavaScript peut être réalisé sans AEM.
+Notez que seules les trois dernières étapes sont réalisées dans AEM. Cela signifie que le développement des codes CSS et JavaScript nécessaires peut être effectué sans AEM.
 
 En fait, la mise en oeuvre des styles ne nécessite que le déploiement sur AEM et la sélection dans les composants des modèles souhaités.
 
@@ -104,7 +104,7 @@ Si vous souhaitez utiliser le système de style pour vos propres composants, pro
 
 >[!CAUTION]
 >
->Les classes CSS - et tout code JavaScript nécessaire - configurées en tant que propriétés de style d’une stratégie de composant doivent être déployées comme [Bibliothèques clientes](/help/implementing/developing/introduction/clientlibs.md) au travail.
+>Les classes CSS (et tout code JavaScript nécessaire) configurées en tant que propriétés de style d’une stratégie de composant doivent être déployées comme [Bibliothèques clientes](/help/implementing/developing/introduction/clientlibs.md) au travail.
 
 ## Configuration {#setup}
 

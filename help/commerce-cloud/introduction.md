@@ -3,10 +3,10 @@ title: Présentation et aperçu
 description: Présentation et aperçu de Content and Commerce. Experience Manager Commerce Integration Framework (CIF) est le modèle recommandé par Adobe pour intégrer et étendre les services commerciaux disponibles à partir d’Adobe Commerce et d’autres solutions de commerce tierces avec Experience Cloud.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 29410f76-a63f-4b0a-b817-2ed724ad1a3c
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 92%
+source-wordcount: '891'
+ht-degree: 89%
 
 ---
 
@@ -18,7 +18,7 @@ Grâce à Adobe Experience Manager Content and Commerce, les marques peuvent év
 
 Avec les attentes de plus en plus élevées des clients concernant les expériences commerciales en ligne, les marques subissent de fortes pressions pour offrir des expériences différenciées et plus de contenu plus rapidement. Cependant, la mise en œuvre d’une plateforme de gestion de contenu nécessite souvent des investissements importants en temps et en budget pour développer des éléments fondamentaux, tels que les composants personnalisés et les outils de création, et entraîne des coûts importants de maintenance et de mise à niveau. Experience Manager Sites propose Content and Commerce sous la forme d’un module complémentaire pour Experience Manager as a Cloud Service qui fournit des composants de base commerciaux prêts à l’emploi, des outils de création et un storefront de référence pour accélérer la mise en service, permettre une collaboration transparente entre les équipes et stimuler le taux de conversion.
 
-Les marques peuvent intégrer Experience Manager à Adobe Commerce, un composant d’Adobe Experience Cloud, ainsi qu’à tout moteur de commerce de votre choix. Grâce à Experience Manager Content and Commerce, les marques peuvent :
+Les marques peuvent intégrer Experience Manager à Adobe Commerce, Adobe Experience Cloud et tout moteur de commerce de votre choix. Grâce à Experience Manager Content and Commerce, les marques peuvent :
 
 * évoluer et innover plus rapidement ;
 * personnaliser leurs expériences pour générer des conversions ;
@@ -79,6 +79,6 @@ CIF prend en charge les clients dotés de modèles d’intégration normalisés 
 
 ## Parcours {#journey}
 
-Si vous suivez un Parcours Commerce, passez à l’étape suivante :
+Si vous suivez un Parcours Commerce, passez à l’étape suivante :
 
 * Le [parcours de création de contenu AEM](/help/commerce-cloud/commerce-journeys/aem-commerce-content-author/getting-started.md)

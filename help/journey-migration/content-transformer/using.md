@@ -1,9 +1,9 @@
 ---
 title: Utilisation de Content Transformer
 description: Utilisation de Content Transformer
-source-git-commit: bc44990c3c2b445f1a3e56467d9dfb56168cd121
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '630'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ Le transformateur de contenu est fourni avec la fonction [Outil de transfert de 
 1. Un exemple de package de sauvegarde créé pour l’opération de déplacement des chemins est présenté ci-dessous. Cliquez sur Installer pour rétablir les chemins sources. Notez que l’installation ramènera uniquement les chemins source à leur emplacement d’origine et non pas les chemins où ils ont été déplacés pendant la transformation. Pour supprimer les chemins d’accès à l’emplacement déplacé, cliquez sur **Ajouter des chemins** pour ajouter l’emplacement (par exemple `/etc/packages/content-transformation/paths`), sélectionnez l’emplacement et cliquez sur **Supprimer**.
 
    >[!CAUTION]
-   > Ne pas supprimer `/etc/packages/content-transformation` car il s’agit de l’emplacement où se trouvent les modules de sauvegarde. Ce n’est que lorsque vous êtes certain que vous n’avez plus besoin de ces modules que vous pouvez supprimer cet emplacement afin de réduire la taille du référentiel.
+   > Ne pas supprimer `/etc/packages/content-transformation` car il s’agit de l’emplacement où se trouvent les modules de sauvegarde. Ce n’est que lorsque vous êtes certain que vous n’avez plus besoin de ces packages que vous pouvez supprimer cet emplacement afin de réduire la taille du référentiel.
 
    ![image](/help/journey-migration/content-transformer/assets/ct-7.png)
    ![image](/help/journey-migration/content-transformer/assets/ct-8.png)

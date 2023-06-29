@@ -4,10 +4,10 @@ description: Bénéficiez d’un aperçu de la traduction de contenu pour les si
 feature: Language Copy
 role: Admin
 exl-id: c3e89719-4d08-401b-b9dd-19d1db03d72c
-source-git-commit: 04054e04d24b5dde093ed3f14ca5987aa11f5b0e
+source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 90%
+source-wordcount: '289'
+ht-degree: 78%
 
 ---
 
@@ -20,7 +20,7 @@ Automatisez la traduction du contenu de pages et de ressources pour créer et te
 
 >[!TIP]
 >
->Si vous êtes un débutant dans la traduction de contenu, référez-vous à notre [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui vous guide sur le chemin de la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui ne disposent pas d’une expérience concernant AEM ou la traduction.
+>Si vous commencez à traduire du contenu, reportez-vous à la section [Parcours de traduction de sites,](/help/journey-sites/translation/overview.md) qui est un chemin guidé à travers la traduction de votre contenu AEM Sites à l’aide des puissants outils de traduction d’AEM, idéaux pour ceux qui n’ont pas d’AEM ou d’expérience de traduction.
 
 La traduction du contenu implique les étapes suivantes :
 
