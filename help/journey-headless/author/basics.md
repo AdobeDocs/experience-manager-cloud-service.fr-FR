@@ -2,9 +2,9 @@
 title: Découvrez les bases de la création
 description: Découvrez les concepts et les mécanismes de la création de contenu pour votre CMS Headless à l’aide de fragments de contenu.
 exl-id: 3eca973f-b210-41bb-98da-ecbd2bae9803
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1715'
 ht-degree: 85%
 
 ---
@@ -213,7 +213,7 @@ Lorsque l’éditeur s’ouvre pour la première fois, les éléments suivants s
 
 Par exemple :
 
-* Un fragment qui ne nécessite que plusieurs informations, certaines avec un type spécifique. Pour le contenu sans interface utilisateur, les références sont essentielles. Vous en apprendrez plus tard sur votre parcours.
+* Un fragment qui ne nécessite que plusieurs informations, certaines avec un type spécifique. Pour le contenu sans interface utilisateur, les références sont essentielles (vous en apprendrez plus loin dans votre parcours).
 
   ![Éditeur de fragment de contenu – Mon fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
@@ -235,7 +235,7 @@ Confirmez vos mises à jour en effectuant l’une des opérations suivantes : *
 
 #### Ce dont vous n’avez (probablement) pas besoin de vous soucier {#what-you-probably-do-not-need-to-worry-about}
 
-Cette section peut sembler un peu étrange, mais une fois que vous avez ouvert l’éditeur de fragments de contenu et que vous avez commencé à explorer, vous pouvez voir différentes options qui (probablement) ne s’appliquent pas à votre parcours sans interface en tant qu’auteur de contenu. Il s’agit simplement d’une rapide mise en garde sur ce que vous devriez pouvoir ignorer dans un contexte découplé :
+Cette section peut sembler un peu étrange, mais dès que vous ouvrez l’éditeur de fragments de contenu et commencez à l’explorer, vous pouvez voir différentes options qui (probablement) ne s’appliquent pas à votre parcours sans interface en tant qu’auteur de contenu. Il s’agit simplement d’une rapide mise en garde sur ce que vous devriez pouvoir ignorer dans un contexte découplé :
 
 * **Modèles de fragment de contenu**
 

@@ -2,10 +2,10 @@
 title: Variations – création de contenu de fragment (Ressources - Fragments de contenu)
 description: Découvrez comment les variations peuvent rendre votre contenu découplé dans AEM encore plus flexible en vous permettant de créer du contenu pour un fragment, puis de créer des variantes de ce contenu selon vos besoins.
 exl-id: af05aae6-d535-4007-ba81-7f41213ff152
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2440'
-ht-degree: 76%
+source-wordcount: '2438'
+ht-degree: 77%
 
 ---
 
@@ -195,8 +195,12 @@ Vous pouvez alors créer un fragment en procédant comme suit :
 1. spécifiez les propriétés ; par exemple le **Titre** ;
 1. sélectionnez **Créer** ;
 1. et sélectionnez enfin :
-   1. **Terminé** renvoie (au fragment d’origine) et référencez le nouveau fragment.
-   1. **Ouvrir** référence le nouveau fragment et ouvre le nouveau fragment, à des fins d’édition, dans un nouvel onglet du navigateur.
+   1. **Terminé**:
+      * renvoie (au fragment d’origine)
+      * référence le nouveau fragment ;
+   1. **Ouvrir**:
+      * référence le nouveau fragment ;
+      * ouvre le nouveau fragment à modifier dans un nouvel onglet du navigateur.
 
 ### Affichage des statistiques clés {#viewing-key-statistics}
 

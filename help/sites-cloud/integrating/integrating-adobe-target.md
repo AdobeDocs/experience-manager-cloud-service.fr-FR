@@ -4,7 +4,7 @@ description: Intégration à Adobe Target
 feature: Administering
 role: Admin
 exl-id: cf243fb6-5563-427f-a715-8b14fa0b0fc2
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '1018'
 ht-degree: 67%
@@ -50,7 +50,7 @@ Lors de la configuration des champs Identifiant du client Adobe Target et Code c
 Dans les deux cas :
 
 * par défaut, le code client (s’il est ajouté en premier) est également automatiquement copié dans le champ d’ID client ;
-* Vous pouvez éventuellement modifier le jeu d’identifiants de tenant par défaut.
+* Si nécessaire, vous pouvez modifier le jeu d’identifiants de tenant par défaut.
 * Les appels du serveur principal à Target sont basés sur l’identifiant du client et les appels côté client à Target sont basés sur le code client.
 
 Comme nous l’avons indiqué plus haut, le premier cas est le plus courant pour AEM as a Cloud Service. Dans les deux cas, veillez à ce que les **deux** champs contiennent les informations appropriées en fonction de vos besoins.
@@ -156,4 +156,4 @@ Pour savoir comment créer et publier, voir [page](https://experienceleague.adob
 
 >[!NOTE]
 >
->Les configurations héritées sont toujours prises en charge pour les clients existants (sans possibilité de les modifier ou de les créer). Les configurations héritées font partie des modules de contenu chargés par les clients à l’aide de VSTS.
+>Les configurations héritées sont toujours prises en charge pour les clients existants (sans possibilité de modification ou de création). Les configurations héritées font partie des modules de contenu chargés par les clients à l’aide de VSTS.

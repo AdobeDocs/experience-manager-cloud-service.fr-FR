@@ -2,9 +2,9 @@
 title: Création d’un dossier de ressources - Configuration découplée
 description: Utilisez des modèles de fragment de contenu AEM pour définir la structure des fragments de contenu, à la base de votre contenu découplé.
 exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '383'
 ht-degree: 89%
 
 ---
@@ -19,7 +19,7 @@ Utilisez des modèles de fragment de contenu AEM pour définir la structure des 
 
 Cependant, vous devez d’abord créer un dossier de ressources pour les stocker.
 
-Les dossiers de ressources sont utilisés pour [organisation des ressources de contenu traditionnelles](/help/assets/manage-digital-assets.md) comme les images et la vidéo et les fragments de contenu.
+Les dossiers de ressources sont utilisés pour [organisation des ressources de contenu traditionnelles](/help/assets/manage-digital-assets.md) tels que des images et des vidéos, ainsi que des fragments de contenu.
 
 ## Comment créer un dossier de ressources {#how-to-create-an-assets-folder}
 

@@ -2,10 +2,10 @@
 title: Votre boîte de réception
 description: Gestion de vos tâches avec la boîte de réception
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '906'
-ht-degree: 73%
+source-wordcount: '905'
+ht-degree: 74%
 
 ---
 
@@ -102,7 +102,7 @@ Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres 
 
   ![Boîte de réception – Paramètres de la vue Liste](/help/sites-cloud/authoring/assets/inbox-list-settings.png)
 
-  Vous pouvez également déléguer votre calendrier à d’autres fins, demander la délégation à d’autres utilisateurs et gérer vos délégations.
+  Vous pouvez également déléguer votre calendrier à d’autres utilisateurs, demander la délégation à d’autres utilisateurs et gérer vos délégations.
 
   ![Boîte de réception – Paramètres de délégation de la vue Liste](/help/sites-cloud/authoring/assets/inbox-delegation.png)
 

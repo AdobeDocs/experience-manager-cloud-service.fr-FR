@@ -2,9 +2,9 @@
 title: Mise à jour des fragments de contenu pour un filtrage GraphQL optimisé.
 description: Découvrez comment mettre à jour vos fragments de contenu pour le filtrage GraphQL optimisé dans Adobe Experience Manager as a Cloud Service pour une diffusion de contenu découplée.
 exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '909'
 ht-degree: 72%
 
 ---

@@ -1,10 +1,10 @@
 ---
 title: Règlements sur la protection et la confidentialité des données – Préparation d’Adobe Experience Manager as a Cloud Service
-description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service pour les différents règlements sur la protection et la confidentialité des données. Ces réglementations incluent le Règlement général sur la protection des données (RGPD) de l’UE, la loi sur la protection des consommateurs de Californie et la manière de se conformer lors de la mise en oeuvre d’un nouveau projet as a Cloud Service AEM.
+description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service pour les différents règlements sur la protection et la confidentialité des données et comment vous conformer lors de la mise en oeuvre d’un nouveau projet as a Cloud Service AEM. Ces réglementations comprennent le Règlement général sur la protection des données (RGPD) de l’UE, la loi sur la protection des données des consommateurs de Californie.
 exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '734'
 ht-degree: 45%
 
 ---
@@ -19,9 +19,12 @@ ht-degree: 45%
 
 >[!NOTE]
 >
->Pour plus d’informations sur la réponse de l’Adobe aux problèmes de confidentialité et sur ce que cette confidentialité signifie pour vous en tant que client Adobe, voir [Centre de traitement des données personnelles des Adobes](https://www.adobe.com/fr/privacy.html).
+>Pour plus d’informations sur les réponses de l’Adobe aux problèmes de confidentialité et sur ce que ces réponses signifient pour vous en tant que client Adobe, voir [Centre de traitement des données personnelles des Adobes](https://www.adobe.com/fr/privacy.html).
 
-Adobe fournit de la documentation et des procédures (avec des API si elles sont disponibles) à l’administrateur de la confidentialité client ou à l’administrateur AEM. Cette documentation aide les administrateurs à gérer les demandes de protection des données et de confidentialité des données et aide les clients d’Adobe à se conformer à ces réglementations. Les procédures documentées permettent aux clients d’exécuter manuellement les demandes de réglementation ou d’appeler des API, le cas échéant, à partir d’un portail ou d’un service externe.
+Pour aider les clients Adobe à se conformer à ces réglementations, Adobe fournit de la documentation et des procédures (avec des API si elles sont disponibles) aux administrateurs de la confidentialité des clients et aux administrateurs AEM :
+
+* La documentation aide les administrateurs à gérer la protection des données et les demandes de confidentialité des données.
+* Les procédures documentées permettent aux clients d’exécuter manuellement les demandes de réglementation ou d’effectuer des appels API, le cas échéant, à partir d’un portail ou d’un service externe.
 
 >[!CAUTION]
 >
@@ -57,7 +60,7 @@ Pour Adobe Experience Manager as a Cloud Service :
 
 * Les instances et les applications qui s’exécutent sur ces instances sont détenues et exploitées par le client.
 
-   * Cette propriété signifie de manière efficace que le client gère les rôles de réglementation, notamment les entités commerciales et les fournisseurs de services, le contrôleur de données et le responsable du traitement des données.
+   * La propriété signifie de manière efficace que le client gère les rôles de réglementation, notamment les entités commerciales et les fournisseurs de services, le contrôleur de données et le responsable du traitement des données.
 
    * Adobe Experience Platform Privacy Service ne fait pas partie du workflow d’AEM, comme illustré dans le diagramme ci-dessous.
 
@@ -71,7 +74,7 @@ Pour Adobe Experience Manager as a Cloud Service :
 
    * Adobe fournit de la documentation et des procédures à l’intention de l’administrateur de la confidentialité du client, de l’administrateur d’AEM, ou des deux, ce qui leur permet d’exécuter manuellement des requêtes liées aux réglementations de confidentialité.
 
-Adobe fournit des procédures pour le traitement des demandes d’accès à des informations personnelles liées à l’accès, la suppression et l’exclusion pour Adobe Experience Manager as a Cloud Service. Il existe parfois des API disponibles qui peuvent être appelées à partir d’un portail développé par le client ou de scripts pour faciliter l’automatisation.
+Adobe fournit des procédures pour le traitement des demandes d’accès à des informations personnelles liées à l’accès, la suppression et l’exclusion pour Adobe Experience Manager as a Cloud Service. Dans certains cas, des API peuvent être appelées à partir d’un portail développé par le client ou des scripts pour faciliter l’automatisation.
 
 Le diagramme suivant illustre à quoi pourrait ressembler un workflow de demande d’accès à des informations personnelles (illustré à l’aide d’Adobe Experience Manager 6.5) :
 
@@ -91,7 +94,7 @@ Voir la section [Préparation d’AEM Sites aux réglementations sur la protect
 
 ## Intégration d’Adobe Experience Manager as a Cloud Service avec Adobe Target et Adobe Analytics {#aem-integration-with-adobe-target-adobe-analytics}
 
-Ces intégrations sur Adobe Experience Manager as a Cloud Service s’effectuent avec les services prêts pour la protection des données et la confidentialité (par exemple, le RGPD). Aucune donnée personnelle provenant d’Adobe Target ou d’Adobe Analytics n’est stockée dans AEM en lien avec les intégrations.
+Les intégrations d’Adobe Experience Manager as a Cloud Service avec Adobe Target et Adobe Analytics sont mises en oeuvre avec les services prêts pour la protection des données et la confidentialité (par exemple, le RGPD). Aucune donnée personnelle provenant d’Adobe Target ou d’Adobe Analytics n’est stockée dans AEM en lien avec les intégrations.
 Pour en savoir plus, voir :
 
 * [Adobe Target – Présentation de la confidentialité](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)

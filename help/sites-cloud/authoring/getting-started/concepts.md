@@ -2,10 +2,10 @@
 title: Concepts de création
 description: Concepts de création dans AEM
 exl-id: ee9e4952-e075-4398-b31f-d7886153efff
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 40%
+source-wordcount: '385'
+ht-degree: 41%
 
 ---
 
@@ -20,7 +20,7 @@ Ces environnements interagissent pour vous permettre de rendre le contenu dispon
 
 L’environnement de création fournit les mécanismes de création, de mise à jour et de révision de ce contenu avant de le publier :
 
-* Un auteur crée et examine le contenu. Le contenu peut être de différents types, tels que des pages, des ressources et des publications.
+* Un auteur crée et examine le contenu. Le contenu peut être de différents types, y compris des pages, des ressources et des publications.
 * Ce contenu sera, à un moment donné, publié sur votre site web.
 
 ![Diagramme de l’auteur, de l’éditeur et des dispatchers](/help/sites-cloud/authoring/assets/author-publish.png)

@@ -4,9 +4,9 @@ description: Les variations permettent de créer du contenu pour le fragment, pu
 feature: Content Fragments
 role: User
 exl-id: f2f28207-3e14-4cf4-acce-c6cf32231e05
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2461'
 ht-degree: 76%
 
 ---
@@ -197,8 +197,12 @@ Vous pouvez alors créer un fragment en procédant comme suit :
 1. spécifiez les propriétés ; par exemple le **Titre** ;
 1. sélectionnez **Créer** ;
 1. et sélectionnez enfin :
-   1. **Terminé** renvoie (au fragment d’origine) et référencez le nouveau fragment.
-   1. **Ouvrir** référence le nouveau fragment et ouvre le nouveau fragment, à des fins d’édition, dans un nouvel onglet du navigateur.
+   1. **Terminé**:
+      * renvoie (au fragment d’origine)
+      * référence le nouveau fragment ;
+   1. **Ouvrir**:
+      * référence le nouveau fragment ;
+      * ouvre le nouveau fragment, pour modification, dans un nouvel onglet du navigateur.
 
 ### Affichage des statistiques clés {#viewing-key-statistics}
 

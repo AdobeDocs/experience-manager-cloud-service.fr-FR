@@ -4,9 +4,9 @@ description: Découvrez comment utiliser la console Fragments de contenu pour g�
 feature: Content Fragments
 role: User
 exl-id: fc4497cb-85ac-4d2d-aca4-588541266f0b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2052'
 ht-degree: 76%
 
 ---
@@ -251,7 +251,7 @@ Vous pouvez publier vos fragments de contenu sur :
 
   >[!NOTE]
   >
-  Pour plus d’informations sur les environnements d’aperçu, voir :
+  Pour plus d’informations sur les environnements de prévisualisation, voir :
   >
   * [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
   * [Configuration des paramètres OSGi pour le niveau d’aperçu](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
