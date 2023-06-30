@@ -6,13 +6,13 @@ feature: Collections,Collaboration
 role: User
 exl-id: 1e5bdd66-2707-4584-87ed-a0ff1bde3718
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '845'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-# Vérification de ressources dans des dossiers et des collections {#review-folder-assets-and-collections}
+# Vérifier les ressources dans des dossiers et des collections {#review-folder-assets-and-collections}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -21,9 +21,9 @@ ht-degree: 80%
 
 Adobe Experience Manager permet de définir des workflows de révision ad hoc pour les ressources qui se trouvent dans un dossier ou dans une collection. Vous pouvez le partager avec des réviseurs ou des partenaires créatifs pour obtenir leurs commentaires. Vous pouvez soit associer le workflow de révision à un projet, soit créer une tâche de révision indépendante.
 
-Une fois que vous avez partagé les ressources, les réviseurs peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires prévus de l&#39;achèvement de diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
+Une fois que vous avez partagé les ressources, les réviseurs ou les réviseuses peuvent les approuver ou les rejeter. Les notifications sont envoyées à différentes étapes du workflow pour informer les destinataires prévus de l&#39;achèvement de diverses tâches. Par exemple, lorsque vous partagez un dossier ou une collection, le réviseur reçoit une notification lui indiquant qu’un dossier/une collection a été partagé pour la révision.
 
-Une fois que le réviseur a terminé la révision (approuve ou refuse les ressources), vous recevez une notification de fin de révision.
+Une fois que le réviseur ou la réviseuse a terminé la révision (en approuvant ou refusant les ressources), vous recevez une notification de fin de révision.
 
 ## Création d’une tâche de révision pour des dossiers {#creating-a-review-task-for-folders}
 
@@ -36,7 +36,7 @@ Une fois que le réviseur a terminé la révision (approuve ou refuse les ressou
 
    >[!NOTE]
    >
-   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) sont visibles dans la variable **[!UICONTROL Projets]** liste.
+   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) s’affichent dans la liste **[!UICONTROL Projets]**.
 
 1. Entrez un nom pour la tâche de révision, puis sélectionnez un approbateur dans la liste **[!UICONTROL Affecter à.]**
 
@@ -52,7 +52,7 @@ Une fois que le réviseur a terminé la révision (approuve ou refuse les ressou
 
    ![review_name](assets/review_name.png)
 
-1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
+1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur ou l’approbatrice.
 1. Connectez-vous à [!DNL Experience Manager Assets] en tant qu’approbateur et accédez à l’IU Assets. Pour approuver des ressources, cliquez/appuyez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
 
    ![notification](assets/notification.png)
@@ -63,7 +63,7 @@ Une fois que le réviseur a terminé la révision (approuve ou refuse les ressou
    ![review_task](assets/review_task.png)
 
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis appuyez/cliquez sur **[!UICONTROL Terminé]** pour confirmer.
-1. Accédez à l’interface utilisateur d’Assets et ouvrez le dossier. Les icônes d’état d’approbation des ressources s’affichent en mode Carte et Liste.
+1. Accédez à l’interface utilisateur d’Assets et ouvrez le dossier. Les icônes de statut d’approbation des ressources s’affichent en mode Carte et Liste.
 
    **Mode Carte**
 
@@ -84,7 +84,7 @@ Une fois que le réviseur a terminé la révision (approuve ou refuse les ressou
 
    >[!NOTE]
    >
-   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) sont visibles dans la variable **[!UICONTROL Projets]** liste.
+   >Seuls les projets pour lesquels vous disposez d’autorisations de niveau Éditeur (ou supérieur) sont visibles dans la liste **[!UICONTROL Projets]**.
 
 1. Entrez un nom pour la tâche de révision, puis sélectionnez un approbateur dans la liste **[!UICONTROL Affecter à.]**
 
@@ -96,7 +96,7 @@ Une fois que le réviseur a terminé la révision (approuve ou refuse les ressou
 
    ![task_details-collection](assets/task_details-collection.png)
 
-1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur.
+1. Appuyez/cliquez sur **[!UICONTROL Envoyer]**, puis sur **[!UICONTROL Terminé]** pour fermer le message de confirmation. Une notification pour la nouvelle tâche est envoyée à l’approbateur ou l’approbatrice.
 1. Connectez-vous à [!DNL Experience Manager Assets] en tant qu’approbateur et accédez à la console Ressources. Pour approuver des ressources, appuyez/cliquez sur l’icône **[!UICONTROL Notifications]**, puis sélectionnez la tâche de révision dans la liste.
 1. Sur la page **[!UICONTROL Tâche de révision]**, examinez les détails de la tâche de révision, puis appuyez/cliquez sur **[!UICONTROL Réviser]**.
 1. Toutes les ressources situées dans la collection sont visibles dans le panneau de révision. Sélectionnez les ressources, puis appuyez/cliquez sur l’icône **[!UICONTROL Approuver/Rejeter]** pour approuver ou rejeter les ressources selon les besoins.
@@ -104,7 +104,7 @@ Une fois que le réviseur a terminé la révision (approuve ou refuse les ressou
    ![review_task_collection](assets/review_task_collection.png)
 
 1. Appuyez/cliquez sur l’icône **[!UICONTROL Terminé]** dans la barre d’outils. Dans la boîte de dialogue, saisissez un commentaire, puis appuyez/cliquez sur **[!UICONTROL Terminé]** pour confirmer.
-1. Accédez à la console Collections et ouvrez la collection. Les icônes d’état d’approbation des ressources s’affichent en mode Carte et Liste.
+1. Accédez à la console Collections et ouvrez la collection. Les icônes de statut d’approbation des ressources s’affichent en mode Carte et Liste.
 
    **Mode Carte**
 
@@ -119,12 +119,12 @@ Une fois que le réviseur a terminé la révision (approuve ou refuse les ressou
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
