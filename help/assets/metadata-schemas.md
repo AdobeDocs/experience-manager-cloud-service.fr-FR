@@ -1,14 +1,14 @@
 ---
 title: Les schémas de métadonnées définissent la disposition de la page des propriétés de métadonnées.
-description: Le schéma de métadonnées définit la mise en page de la page des propriétés et les propriétés de métadonnées affichées pour les ressources. Découvrez comment créer un schéma de métadonnées personnalisé, modifier un schéma de métadonnées et appliquer un schéma de métadonnées à des ressources.
+description: Le schéma de métadonnées définit la disposition de la page des propriétés et les propriétés de métadonnées affichées pour les ressources. Découvrez comment créer un schéma de métadonnées personnalisé, modifier un schéma de métadonnées et appliquer un schéma de métadonnées à des ressources.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 9e94afeb-1c54-4653-bf52-b0910c0cb6c1
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2642'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -124,19 +124,19 @@ Voici des exemples de valeurs valides pour une propriété :
 
 Pour garantir que le composant s’affiche correctement dans le formulaire de schéma de métadonnées, le chemin de la propriété ne doit pas comporter d’espace.
 
-* **Espace réservé**: Utilisez cette propriété pour spécifier le texte d’espace réservé approprié concernant la propriété de métadonnées.
-* **Obligatoire**: Utilisez cette propriété pour marquer une propriété de métadonnées comme étant obligatoire sur la page des propriétés.
+* **Espace réservé** : utilisez cette propriété pour spécifier le texte d’espace réservé approprié concernant la propriété de métadonnées.
+* **Obligatoire** : utilisez cette propriété pour marquer une propriété de métadonnées comme étant obligatoire sur la page Propriétés.
 * **Désactiver la modification** : utilisez cette propriété pour interdire toute modification apportée à une propriété sur la page des propriétés.
 * **Afficher le champ vide en lecture seule** : utilisez cette propriété pour afficher une propriété de métadonnées sur la page Propriétés même si elle ne possède pas de valeur. Par défaut, lorsqu’une propriété de métadonnées ne possède pas de valeur, elle n’est pas répertoriée sur la page Propriétés.
 * **Afficher la liste classée** : utilisez cette propriété pour afficher une liste classée de choix..
 * **Choix** : utilisez cette propriété pour spécifier des choix dans une liste.
 * **Description** : utilisez cette propriété pour ajouter une brève description pour le composant de métadonnées.
-* **Classe**: Classe d’objet à laquelle la propriété est associée.
+* **Classe** : classe d’objet à laquelle la propriété est associée.
 * **Supprimer** : cliquez sur [!UICONTROL Supprimer] pour supprimer un composant du formulaire de schéma.
 
 >[!NOTE]
 >
->Le composant [!UICONTROL Champ masqué] n’inclut pas ces attributs. Il inclut plutôt des propriétés, telles que le nom des attributs, la valeur, le libellé du champ et la description. Les valeurs du composant Champ masqué sont envoyées en tant que paramètre de POST chaque fois que la ressource est enregistrée. Il n’est pas enregistré en tant que métadonnées pour la ressource.
+>Le composant [!UICONTROL Champ masqué] n’inclut pas ces attributs. Il inclut plutôt des propriétés, telles que le nom des attributs, la valeur, le libellé du champ et la description. Les valeurs du composant Champ masqué sont envoyées en tant que paramètre POST chaque fois que la ressource est enregistrée. Elle n’est pas enregistrée en tant que métadonnées pour la ressource.
 
 Si vous sélectionnez l’option **[!UICONTROL Obligatoire]**, vous pouvez rechercher des fichiers dont les métadonnées obligatoires sont manquantes. Dans le panneau **[!UICONTROL Filtres]**, développez le prédicat **[!UICONTROL Validation des métadonnées]** et sélectionnez l’option **[!UICONTROL Non valide]**. Les résultats de la recherche affichent des fichiers dont les métadonnées obligatoires que vous avez configurées via le formulaire de schéma sont manquantes.
 
@@ -160,7 +160,7 @@ Cliquez sur `+` pour ajouter un onglet à un formulaire de schéma. Par défaut,
 
 ## Suppression de formulaires de schéma de métadonnées {#deleting-metadata-schema-forms}
 
-Experience Manager vous permet uniquement de supprimer des formulaires de schéma personnalisés. Il ne permet pas de supprimer les modèles/formulaires de schéma par défaut. Cependant, vous pouvez supprimer toutes les modifications personnalisées dans ces formulaires.
+Experience Manager vous permet uniquement de supprimer des formulaires de schéma personnalisés. Elle ne permet pas de supprimer les modèles/formulaires de schéma par défaut. Cependant, vous pouvez supprimer toutes les modifications personnalisées dans ces formulaires.
 
 Pour supprimer un formulaire, sélectionnez-le puis cliquez sur l’icône Supprimer.
 
@@ -204,7 +204,7 @@ Dans ce cas, créez un nœud sous `/etc/dam/metadataeditor/mimetypemappings` dan
 | application/x-SpinSet | Multipart/Related; type=application/x-SpinSet |
 | application/x-MixedMediaSet | Multipart/Related; type=application/x-MixedMediaSet |
 | video/quicktime | video/x-quicktime |
-| video/mpeg4 | video/mp4 |
+| video/mpeg | video/mp4 |
 | video/avi | video/avi, video/msvideo, video/x-msvideo |
 | video/wmv | video/x-ms-wmv |
 | video/flv | video/x-flv |
@@ -237,7 +237,7 @@ L’héritage des métadonnées par les ressources est basé sur le schéma appl
 
 ## Définition des métadonnées obligatoires {#defining-mandatory-metadata}
 
-Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’appliquent aux ressources chargées dans ce dossier. Si vous chargez des ressources avec des métadonnées manquantes pour les champs obligatoires définis précédemment, une indication visuelle des métadonnées manquantes s’affiche sur les ressources en mode Carte.
+Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’appliquent aux ressources chargées dans ce dossier. Si vous chargez des ressources présentant des métadonnées manquantes dans des champs obligatoires précédemment définis, une indication visuelle de métadonnées manquantes apparaît sur les ressources en vue Carte.
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 1. Cliquez sur le logo Experience Manager, puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**. La page **[!UICONTROL Formulaires de schéma de métadonnées]** s’affiche.
 1. Enregistrez le formulaire de métadonnées par défaut en tant que formulaire personnalisé. Par exemple, enregistrez-le sous le nom `my_default`.
 1. Modifiez le formulaire personnalisé. Ajoutez un champ obligatoire. Par exemple, ajoutez un champ **[!UICONTROL Catégorie]** et rendez-le obligatoire.
-1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**. Sélectionnez le formulaire, puis cliquez ou appuyez sur **[!UICONTROL Appliquer au(x) dossier(s)]** de la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
+1. Cliquez sur **[!UICONTROL Enregistrer]**. Le formulaire modifié figure sur la page **[!UICONTROL Formulaires de schéma de métadonnées]**. Sélectionnez le formulaire et cliquez ou appuyez sur **[!UICONTROL Appliquer au(x) dossier(s)]** dans la barre d’outils pour appliquer les métadonnées personnalisées à un dossier.
 1. Accédez au dossier et chargez des ressources présentant des données manquantes pour le champ obligatoire que vous avez ajouté au formulaire personnalisé. Un message concernant les métadonnées manquantes pour le champ obligatoire apparaît dans l’affichage Carte de la ressource.
 1. (Facultatif) Accédez à `https://[server]:[port]/system/console/components/`. Configurez et activez le composant `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` ; celui-ci est désactivé par défaut. Définissez la fréquence à laquelle Experience Manager vérifie la validité des métadonnées sur les ressources.
 
@@ -258,7 +258,7 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 
    >[!CAUTION]
    >
-   >Les contrôles de validation des métadonnées nécessitent beaucoup de ressources et peuvent avoir une incidence sur les performances de votre système. Planifiez les contrôles en conséquence. Si le serveur ne peut pas gérer la charge, essayez de désactiver cette tâche.
+   >Les contrôles de validation des métadonnées sont des tâches qui nécessitent de nombreuses ressources et qui peuvent donc altérer les performances de votre système. Planifiez les contrôles en conséquence. Si le serveur ne peut pas gérer la charge, essayez de désactiver cette tâche.
 
 **Voir également**
 
@@ -268,8 +268,8 @@ Vous pouvez définir des champs obligatoires au niveau d’un dossier, qui s’a
 * [Recherche de ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
