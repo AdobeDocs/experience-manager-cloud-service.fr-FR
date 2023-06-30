@@ -6,9 +6,9 @@ feature: Metadata
 role: User,Admin
 exl-id: c86760ed-169d-40f7-91a4-8aee449b286c
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1090'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -22,16 +22,16 @@ Utilisez l’éditeur Formulaires de schéma de métadonnées de dossier pour cr
 
 1. Appuyez/cliquez sur le logo [!DNL Experience Manager], puis accédez à **[!UICONTROL Outils]** > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées de dossier]**.
 1. Sur la page Formulaires de schéma de métadonnées de dossier, appuyez/cliquez sur **[!UICONTROL Créer]**.
-1. Spécifiez un nom pour le formulaire, puis appuyez/cliquez sur **[!UICONTROL Créer]**. Le nouveau formulaire de schéma est répertorié dans la page Formulaires de schéma.
+1. Indiquez un nom pour le formulaire, puis appuyez/cliquez sur **[!UICONTROL Créer]**. Le nouveau formulaire de schéma est répertorié dans la page Formulaires de schéma.
 
 ## Modification des formulaires de schéma de métadonnées de dossier {#edit-folder-metadata-schema-forms}
 
-Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouvellement ajouté, qui comprend les éléments suivants :
+Vous pouvez modifier un formulaire de schéma de métadonnées existant ou nouvellement ajouté, qui comprend les éléments suivants :
 
 * Onglets
 * Éléments de formulaire dans des onglets.
 
-Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter de nouveaux onglets ou éléments de formulaire au formulaire de schéma de métadonnées.
+Vous pouvez associer ou configurer ces éléments de formulaire dans un champ au sein d’un nœud de métadonnées dans le référentiel CRX. Vous pouvez ajouter des onglets ou des éléments de formulaire au formulaire de schéma de métadonnées.
 
 1. Sur la page Formulaires de schéma, sélectionnez le formulaire que vous avez créé, puis appuyez/cliquez sur l’icône **[!UICONTROL Modifier]** dans la barre d’outils.
 1. Sur la page Éditeur de schéma de métadonnées de dossier, appuyez/cliquez sur l’icône **[!UICONTROL +]** pour ajouter un onglet au formulaire. Pour renommer l’onglet, appuyez/cliquez sur le nom par défaut, puis indiquez le nouveau nom sous **[!UICONTROL Paramètres]**.
@@ -105,7 +105,7 @@ Pour modifier les propriétés d’éléments de formulaire, appuyez/cliquez sur
 
 **[!UICONTROL Libellé du champ]** : nom de la propriété de métadonnées qui s’affiche sur la page des propriétés du dossier.
 
-**[!UICONTROL Associer à la propriété]**: Cette propriété spécifie le chemin d’accès relatif du noeud de dossier dans le référentiel CRX où il est enregistré. Elle commence par &quot;**./**&quot;, qui indique que le chemin d’accès se trouve sous le noeud du dossier.
+**[!UICONTROL Associer à la propriété]** : cette propriété spécifie le chemin d’accès relatif du nœud de dossier dans le référentiel CRX où il est enregistré. Elle commence par « **./** », qui indique que le chemin d’accès se trouve sous le nœud du dossier.
 
 Voici des exemples de valeurs valides pour une propriété :
 
@@ -117,13 +117,13 @@ Pour vous assurer que le composant est affiché correctement dans le formulaire 
 
 **[!UICONTROL Chemin JSON]** : utilisez cette propriété pour indiquer le chemin d’accès au fichier JSON où vous spécifiez des paires clé/valeur pour les options.
 
-**[!UICONTROL Espace réservé]**: Utilisez cette propriété pour spécifier le texte d’espace réservé approprié concernant la propriété de métadonnées.
+**[!UICONTROL Espace réservé]** : utilisez cette propriété pour spécifier le texte d’espace réservé approprié concernant la propriété de métadonnées.
 
 **[!UICONTROL Choix]** : utilisez cette propriété pour spécifier des choix dans une liste.
 
 **[!UICONTROL Description]** : utilisez cette propriété pour ajouter une brève description pour le composant de métadonnées.
 
-**[!UICONTROL Classe]**: Classe d’objet à laquelle la propriété est associée.
+**[!UICONTROL Classe]** : classe d’objet à laquelle la propriété est associée.
 
 ## Suppression de formulaires de schéma de métadonnées de dossier {#delete-folder-metadata-schema-forms}
 
@@ -154,11 +154,11 @@ Si vous configurez un schéma de métadonnées pour un dossier, le chemin d’ac
 
 ### Affectation d’un schéma lors de la création d’un dossier {#assign-a-schema-when-creating-a-folder}
 
-Vous pouvez attribuer un schéma de métadonnées de dossier lors de la création d’un dossier. Si au moins un schéma de métadonnées de dossier existe dans le système, une liste supplémentaire s’affiche dans la variable **[!UICONTROL Créer un dossier]** boîte de dialogue. Vous pouvez sélectionner le schéma souhaité. Par défaut, aucun schéma n’est sélectionné.
+Vous pouvez attribuer un schéma de métadonnées de dossier lors de la création d’un dossier. Si au moins un schéma de métadonnées de dossier existe dans le système, une liste supplémentaire s’affiche dans la boîte de dialogue **[!UICONTROL Créer un dossier]**. Vous pouvez sélectionner le schéma souhaité. Par défaut, aucun schéma n’est sélectionné.
 
 1. Dans l’interface utilisateur [!DNL Experience Manager Assets], appuyez/cliquez sur **[!UICONTROL Créer]** dans la barre d’outils.
-1. Indiquez un titre et un nom pour le dossier.
-1. Dans la liste Schéma de métadonnées de dossier , sélectionnez le schéma souhaité. Ensuite, appuyez/cliquez sur **[!UICONTROL Créer]**.
+1. Indiquez un titre et un nom de dossier.
+1. Dans la liste Schéma de métadonnées de dossier, sélectionnez le schéma souhaité. Ensuite, appuyez/cliquez sur **[!UICONTROL Créer]**.
 
    ![select_schema](assets/select_schema.png)
 
@@ -178,12 +178,12 @@ Saisissez les valeurs de métadonnées dans les différents champs, puis appuyez
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
