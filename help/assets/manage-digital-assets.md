@@ -6,10 +6,10 @@ mini-toc-levels: 3
 feature: Asset Management,Publishing,Collaboration,Asset Processing
 role: User,Architect,Admin
 exl-id: 51a26764-ac2b-4225-8d27-42a7fd906183
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4376'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ Lorsque vous organisez une collection de ressources, comme toutes les images `Na
 >* Experience Manager n’autorise pas l’utilisation du mot `subassets` comme nom de dossier. Il s’agit d’un mot-clé réservé au nœud qui contient des sous-ressources pour les ressources composites.
 
 1. Dans le dossier Ressources numériques, accédez à l’emplacement où vous souhaitez créer un dossier. Dans le menu, cliquez sur **[!UICONTROL Créer]**. Sélectionnez **[!UICONTROL Nouveau dossier]**.
-1. Dans le champ **[!UICONTROL Titre]**, indiquez le nom du dossier. Par défaut, DAM utilise le titre que vous avez fourni comme nom du dossier. Une fois le dossier créé, vous pouvez remplacer la valeur par défaut et spécifier un autre nom de dossier.
+1. Dans le champ **[!UICONTROL Titre]**, indiquez le nom du dossier. Par défaut, DAM utilise le titre que vous avez fourni comme nom du dossier. Une fois le dossier créé, vous pouvez remplacer le nom par défaut et spécifier un autre nom de dossier.
 1. Cliquez sur **[!UICONTROL Créer]**. Le dossier apparaît dans le dossier Ressources numériques.
 
 Les caractères suivants ne sont pas pris en charge (ils sont répertoriés ici et séparés par des espaces) :
@@ -144,11 +144,11 @@ To view usage statistics for an asset, in the [!UICONTROL Properties] page, clic
 
 Lorsque vous copiez une ressource ou un dossier, l’intégralité de la ressource ou du dossier est copiée, ainsi que sa structure de contenu. Une ressource ou un dossier copié est dupliqué à l’emplacement cible. La ressource à l’emplacement source n’est pas modifiée.
 
-Certains attributs propres à une copie spécifique d’une ressource ne sont pas transférés. Voici quelques exemples :
+Certains attributs propres à une copie spécifique d’une ressource ne sont pas transférés. Voici quelques exemples :
 
 * ID de la ressource, date et heure de création, versions et historique des versions. Certaines de ces propriétés sont indiquées par les propriétés `jcr:uuid`, `jcr:created` et `cq:name`.
 
-* L’heure de création et les chemins référencés sont uniques pour chaque ressource et chaque rendu.
+* L’heure de création et les chemins d’accès référencés sont uniques pour chaque ressource et chacun de ses rendus.
 
 Les autres propriétés et informations de métadonnées sont conservées. Une copie partielle n’est pas créée lors de la copie d’une ressource.
 
@@ -186,8 +186,8 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
    >[!NOTE]
    >
-   >* Vous pouvez spécifier le même nom pour la ressource si aucune ressource portant ce nom n’existe au nouvel emplacement. Cependant, vous devez utiliser un nom différent si vous déplacez la ressource vers un emplacement où il existe une ressource portant le même nom. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
-   >* Lors du changement de nom, le nom du fichier ne contient pas d’espace.
+   >* Vous pouvez donner le même nom à la ressource si aucune ressource portant ce nom n’existe déjà au nouvel emplacement. En revanche, vous devez utiliser un nom différent si vous déplacez la ressource vers un emplacement où il existe déjà une ressource portant le même nom. Si vous utilisez le même nom, le système génère automatiquement une variante du nom. Par exemple, si votre ressource porte le nom Carré, le système génère le nom Carré1 pour sa copie.
+   >* Lors du changement de nom, le nom du fichier ne doit contenir aucun espace.
 
 1. Dans la boîte de dialogue **[!UICONTROL Sélectionner la destination]**, procédez comme suit :
 
@@ -264,29 +264,29 @@ Les autres propriétés et informations de métadonnées sont conservées. Une c
 
 Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource.
 
-Désactivez également le bouton Forcer la suppression à l’aide d’une superposition afin d’empêcher les utilisateurs de supprimer des ressources référencées et de conserver des liens rompus.
+De plus, désactivez l’option Forcer la suppression à l’aide d’un recouvrement pour empêcher les utilisateurs et utilisatrices de supprimer les ressources référencées et conserver les liens rompus.
 
 1. Accédez à l’emplacement des ressources que vous souhaitez supprimer.
 
 1. Sélectionnez la ressource et cliquez sur l’icône **[!UICONTROL Supprimer]** de la barre d’outils ![delete_icon](assets/do-not-localize/delete-icon.png).
 
-1. Dans la boîte de dialogue de confirmation, cliquez sur :
+1. Dans la boîte de dialogue de confirmation, cliquez sur :
 
    * **[!UICONTROL Annuler]** pour arrêter l’action
-   * **[!UICONTROL Supprimer]** pour confirmer l’action :
+   * **[!UICONTROL Supprimer]** pour confirmer l’action :
 
       * Si la ressource ne comporte aucune référence, elle est supprimée.
       * Si la ressource comporte des références, un message d’erreur vous informe qu’**[!UICONTROL une ou plusieurs ressources sont référencées.]** Vous pouvez sélectionner **[!UICONTROL Forcer la suppression]** ou **[!UICONTROL Annuler]**.
 
    >[!NOTE]
    >
-   >Pour pouvoir supprimer une ressource, vous devez disposer des autorisations appropriées dans la gestion des actifs numériques/ressource. Si vous disposez uniquement des autorisations de modification, vous pouvez uniquement modifier les métadonnées de la ressource et ajouter des annotations à la ressource. Cependant, vous ne pouvez pas supprimer la ressource ou ses métadonnées.
+   >Pour pouvoir supprimer une ressource, vous devez disposer des autorisations appropriées dans la gestion des actifs numériques/ressource. Si vous disposez uniquement des autorisations de modification, vous pouvez seulement modifier les métadonnées de la ressource et y rajouter des annotations. Cependant, vous ne pouvez pas supprimer la ressource ou ses métadonnées.
 
    >[!NOTE]
    >
    >Pour résoudre ou supprimer les références entrantes provenant d’autres pages, mettez à jour les références appropriées avant de supprimer une ressource. Vous pouvez interdire la suppression des ressources référencées, car elle entraîne des ruptures de liens. Désactivez le bouton Forcer la suppression à l’aide d’une superposition.
 
-## Téléchargement de ressources {#download-assets}
+## Télécharger des ressources {#download-assets}
 
 Consultez [Téléchargement des ressources à partir de [!DNL Experience Manager]](/help/assets/download-assets-from-aem.md).
 
@@ -312,15 +312,15 @@ Gardez à l’esprit les limites et conseils suivants liés à la publication ou
 * L’option [!UICONTROL Gérer la publication] n’est disponible que pour les comptes d’utilisateurs disposant d’autorisations de réplication.
 * Lors de la dépublication d’une ressource complexe, dépubliez uniquement la ressource. Évitez de dépublier les références, car elles peuvent être référencées par d’autres ressources publiées.
 * Les dossiers vides ne sont pas publiés.
-* Si vous publiez une ressource en cours de traitement, seul le contenu d’origine est publié. Les rendus sont absents. Attendez que le traitement soit terminé, puis publiez ou republiez la ressource une fois le traitement terminé.
+* Si vous publiez une ressource en cours de traitement, seul le contenu original est publié. Les rendus sont absents. Vous pouvez soit attendre la fin du traitement pour publier la ressource soit la republier une fois le traitement terminé.
 
 ## Groupe d’utilisateurs fermé {#closed-user-group}
 
-Les groupes d’utilisateurs fermés permettent de limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’[!DNL Experience Manager]. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils doivent se connecter à l’aide de leurs informations d’identification de sécurité.
+Les groupes d’utilisateurs fermés permettent de limiter l’accès à des dossiers de ressources spécifiques publiés à partir d’[!DNL Experience Manager]. Si vous créez un groupe d’utilisateurs fermé pour un fichier, l’accès au dossier (y compris aux ressources du dossier et à ses sous-dossiers) est limité aux membres ou aux groupes attribués. Pour accéder au dossier, ils ou elles doivent se connecter à l’aide de leurs informations d’identification de sécurité.
 
-Les groupes d’utilisateurs fermés sont un moyen supplémentaire de restreindre l’accès à vos ressources. Vous pouvez également configurer une page de connexion pour le dossier.
+Les groupes d’utilisateurs et utilisatrices fermés sont un moyen supplémentaire de restreindre l’accès à vos ressources. Vous pouvez également configurer une page de connexion pour le dossier.
 
-1. Sélectionnez un dossier dans l’interface utilisateur d’Assets, puis appuyez/cliquez sur l’icône Propriétés de la barre d’outils pour afficher la page des propriétés.
+1. Sélectionnez un dossier dans l’interface utilisateur d’Assets, puis appuyez/cliquez sur l’icône Propriétés de la barre d’outils pour afficher la page Propriétés.
 1. Sous l’onglet **[!UICONTROL Autorisations]**, ajoutez les membres ou les groupes sous **[!UICONTROL Groupe d’utilisateurs fermé]**.
 
    ![add_user](assets/add_user.png)
@@ -334,9 +334,9 @@ Les groupes d’utilisateurs fermés sont un moyen supplémentaire de restreindr
    >Si vous ne spécifiez pas le chemin d’une page de connexion, [!DNL Experience Manager] affiche la page de connexion par défaut dans l’instance de publication.
 
 1. Publiez le dossier, puis essayez d’y accéder à partir de l’instance de publication. Un écran de connexion s’affiche.
-1. Si vous êtes membre d’un groupe d’utilisateurs fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
+1. Si vous êtes membre d’un groupe d’utilisateurs et utilisatrices fermé, saisissez vos informations d’identification de sécurité. Le dossier s’affiche après qu’[!DNL Experience Manager] vous a authentifié.
 
-## Recherche de ressources {#search-assets}
+## Rechercher des ressources {#search-assets}
 
 La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs et spécialistes marketing ou pour l’administration par les administrateurs DAM.
 
@@ -477,7 +477,7 @@ Les annotations vidéo ne sont prises en charge que sur les navigateurs qui acce
 
 >[!NOTE]
 >
->Vous pouvez également ajouter des annotations à une collection. Toutefois, si une collection contient des collections enfants, vous pouvez ajouter des annotations/commentaires uniquement à la collection parent. L’option Annoter n’est pas disponible pour les collections enfants.
+>Vous pouvez également ajouter des annotations à une collection. Toutefois, si une collection contient des collections enfants, vous ne pouvez ajouter des annotations/commentaires qu’à la collection parent. L’option Annoter n’est pas disponible pour les collections enfants.
 
 ### Affichage des annotations enregistrées {#viewing-saved-annotations}
 
@@ -517,7 +517,7 @@ Vous pouvez également choisir de n’imprimer que les annotations ou le statut 
 
 Pour imprimer les annotations et le statut de révision, cliquez/appuyez sur l’icône **[!UICONTROL Imprimer]** et suivez les instructions de l’assistant. L’icône **[!UICONTROL Imprimer]** ne s’affiche dans la barre d’outils que lorsque la ressource est associée à au moins une annotation ou un statut de révision.
 
-1. Dans l’interface utilisateur d’Assets, ouvrez la page d’aperçu d’une ressource.
+1. Ouvrez la page d’aperçu d’une ressource à partir de l’interface utilisateur d’Assets.
 1. Utilisez l’une des méthodes suivantes :
 
    * Pour imprimer toutes les annotations et le statut de révision, ignorez l’étape 3 et passez directement à l’étape 4.
@@ -551,7 +551,7 @@ Pour imprimer les annotations et le statut de révision, cliquez/appuyez sur l�
 
    Pour modifier l’aspect du fichier PDF généré (la couleur, la taille et le style de la police, la couleur d’arrière-plan des commentaires et des statuts, par exemple), ouvrez la **[!UICONTROL configuration du PDF d’annotation]** dans Configuration Manager et modifiez ensuite les options souhaitées. Par exemple, pour modifier la couleur d’affichage du statut approuvé, modifiez le code couleur dans le champ correspondant. Pour plus d’informations sur la modification de la couleur de police des annotations, voir [Annotation](/help/assets/manage-digital-assets.md#annotating).
 
-   Revenez au fichier de PDF rendu et actualisez-le. Le PDF actualisé reflète les modifications que vous avez apportées.
+   Revenez au fichier PDF rendu et actualisez-le. Le PDF actualisé reflète les modifications que vous avez apportées.
 
 ## Contrôle de version des ressources {#asset-versioning}
 
@@ -565,9 +565,9 @@ Voici quelques scénarios de création de versions :
 
 Vous pouvez également activer le contrôle de version automatique à l’aide d’un workflow. Lorsque vous créez une version d’une ressource, les métadonnées et les rendus sont enregistrés avec la version. Les rendus sont d’autres affichages d’une même image (un rendu PNG d’un fichier JPEG téléchargé, par exemple).
 
-La fonctionnalité de contrôle de version vous permet d’effectuer les opérations suivantes :
+La fonctionnalité de contrôle de version vous permet d’effectuer les opérations suivantes :
 
-* Créez une version d’une ressource.
+* Créer une version d’une ressource.
 * Afficher la révision actuelle d’une ressource.
 * restaurer une version précédente de la ressource.
 
@@ -642,10 +642,10 @@ La fonctionnalité de contrôle de version vous permet d’effectuer les opérat
 
 Une collection est un ensemble ordonné de ressources. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs.
 
-* Une collection peut inclure des ressources provenant de différents emplacements, car elle ne contient que des références à ces ressources. Chaque collection conserve l’intégrité référentielle des ressources.
-* Vous pouvez partager des collections avec plusieurs utilisateurs avec différents niveaux de privilèges, y compris la modification, l’affichage, etc.
+* Une collection peut inclure des ressources provenant de différents emplacements car elle ne contient que des références à ces ressources. Chaque collection conserve l’intégrité référentielle des ressources.
+* Vous pouvez partager des collections avec plusieurs utilisateurs et utilisatrices avec plusieurs niveaux de privilèges, y compris la modification, l’affichage, etc.
 
-Pour plus d’informations sur la gestion des collections, voir [Gestion des collections](/help/assets/manage-collections.md).
+Pour plus d’informations sur la gérer les collections, voir [Gérer les collections](/help/assets/manage-collections.md).
 
 ## Masquer les ressources parvenues à expiration lors de l’affichage de ressources dans l’appli de bureau ou Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
@@ -672,12 +672,12 @@ Pour en savoir plus, découvrez comme [parcourir les ressources DAM à l’aide 
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)

@@ -1,5 +1,5 @@
 ---
-title: Téléchargement de ressources
+title: Télécharger des ressources
 description: Téléchargez des ressources depuis [!DNL Adobe Experience Manager Assets] et activez ou désactivez la fonctionnalité de téléchargement.
 contentOwner: Vishabh Gupta
 feature: Asset Management
@@ -8,11 +8,11 @@ exl-id: f68b03ba-4ca1-4092-b257-16727fb12e13
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1238'
-ht-degree: 93%
+ht-degree: 98%
 
 ---
 
-# Téléchargement de ressources depuis [!DNL Adobe Experience Manager] {#download-assets-from-aem}
+# Télécharger des ressources depuis [!DNL Adobe Experience Manager] {#download-assets-from-aem}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -38,7 +38,7 @@ Vous pouvez télécharger des ressources à partir d’Experience Manager à l�
 * [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=fr)
 * [Appli de bureau](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr#download-assets)
 
-## Téléchargement de ressources à l’aide de l’interface [!DNL Experience Manager]  {#download-assets}
+## Télécharger des ressources à l’aide de l’interface [!DNL Experience Manager]  {#download-assets}
 
 Experience Manager optimise l’expérience de téléchargement en fonction de la quantité et de la taille des ressources. Les fichiers plus petits sont téléchargés en temps réel depuis l’interface utilisateur. [!DNL Experience Manager] télécharge directement les requêtes de ressources uniques pour le fichier original au lieu de compresser les ressources uniques dans une archive ZIP afin de permettre des téléchargements plus rapides. Experience Manager prend en charge les téléchargements volumineux avec des requêtes asynchrones. Les requêtes de téléchargement dʼune taille supérieure à 100 Go sont divisées en plusieurs archives ZIP, dʼune taille maximale de 100 Go chacune.
 
@@ -82,7 +82,7 @@ Pour télécharger des ressources, procédez comme suit :
    | **[!UICONTROL Créer un dossier distinct pour chaque ressource]** | Sélectionnez cette option pour créer un dossier pour chaque ressource contenant tous les rendus téléchargés de la ressource. Si cette option n’est pas sélectionnée, chaque ressource (et ses rendus s’ils sont sélectionnés pour téléchargement) est contenu dans le dossier parent de l’archive générée. |
    | **[!UICONTROL E-mail]** | Sélectionnez cette option pour envoyer une notification par e-mail (contenant un lien vers votre téléchargement) à un autre utilisateur. Le destinataire doit être membre du groupe `dam-users`. Les modèles standard d’email sont disponibles aux emplacements suivants :<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> Les modèles que vous personnalisez lors du déploiement sont disponibles aux emplacements suivants : <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul>Vous pouvez stocker des modèles personnalisés spécifiques au client à ces emplacements :<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> |
    | **[!UICONTROL Ressource(s)]** | Sélectionnez cette option pour télécharger la ressource dans son format d’origine.<br>L’option Sous-ressources est disponible si la ressource d’origine comporte des sous-ressources. |
-   | **[!UICONTROL Rendu(s)]** | Un rendu est une représentation binaire d’une ressource. Les ressources ont une Principale représentation : celle du fichier chargé. Elles peuvent avoir un nombre illimité de représentations. <br> Avec cette option, vous pouvez sélectionner les rendus que vous souhaitez télécharger. Les rendus disponibles dépendent de la ressource que vous avez sélectionnée. |
+   | **[!UICONTROL Rendu(s)]** | Un rendu est une représentation binaire d’une ressource. Les ressources possèdent une représentation principale, à savoir celle du fichier téléchargé. Elles peuvent avoir un nombre illimité de représentations. <br> Avec cette option, vous pouvez sélectionner les rendus que vous souhaitez télécharger. Les rendus disponibles dépendent de la ressource que vous avez sélectionnée. |
    | **[!UICONTROL Recadrages intelligents]** | Sélectionnez cette option pour télécharger tous les rendus de recadrage intelligent de la ressource sélectionnée depuis [!DNL Experience Manager]. Un fichier zip contenant les rendus de recadrage intelligent est créé et téléchargé sur votre ordinateur local. |
    | **[!UICONTROL Rendu(s) dynamique(s)]** | Sélectionnez cette option pour générer une série de rendus alternatifs en temps réel. Lorsque vous sélectionnez cette option, vous sélectionnez également les rendus à créer dynamiquement dans la liste [Paramètre d’image prédéfini](/help/assets/dynamic-media/image-presets.md). <br>De plus, vous pouvez sélectionner la taille, l’unité de mesure, le format, l’espace colorimétrique, la résolution, ainsi que les éventuels modificateurs d’image (pour inverser l’image, par exemple). Cette option n’est disponible que si vous avez activé [!DNL Dynamic Media]. |
 
@@ -96,7 +96,7 @@ Pour télécharger des ressources, procédez comme suit :
 
    ![notifications-dans-la-boîte-de-réception-en-cas-de-téléchargements-volumineux](/help/assets/assets/inbox-notification-for-large-downloads.png)
 
-## Téléchargement de ressources partagées à l’aide du partage de liens {#link-share-download}
+## Télécharger des ressources partagées à l’aide du partage de liens {#link-share-download}
 
 Le partage de ressources au moyen d’un lien est très pratique pour le mettre à disposition des personnes intéressées sans avoir besoin de se connecter à [!DNL Assets]. Consultez la section [Fonctionnalité de partage de liens](/help/assets/share-assets.md#sharelink).
 
@@ -110,7 +110,7 @@ La [!UICONTROL boîte de réception de téléchargement] affiche l’état du tr
 
 Le servlet par défaut d’[!DNL Experience Manager] permet aux utilisateurs et utilisatrices authentifiés d’émettre arbitrairement des requêtes de téléchargement simultanées de grande taille afin de créer des fichiers ZIP de ressources. La préparation des téléchargements peut avoir des conséquences sur les performances ou peut même surcharger le serveur et le réseau. Pour atténuer ces risques potentiels de déni de service, le composant OSGi `AssetDownloadServlet` est désactivé par défaut pour les instances de publication. Si vous n’avez pas besoin de la fonction de téléchargement sur les instances d’auteur, désactivez le servlet sur l’auteur.
 
-Pour autoriser le téléchargement de ressources à partir de la gestion des ressources numériques (par exemple, lors de l’utilisation d’un élément comme Asset Share Commons ou une autre mise en oeuvre de type portail), activez manuellement la servlet via une configuration OSGi. Adobe recommande de définir la taille de téléchargement autorisée aussi basse que possible sans affecter les exigences de téléchargement quotidiennes. Une valeur élevée peut avoir une incidence sur les performances.
+Pour autoriser le téléchargement de DAM à partir de votre gestion des ressources numériques (par exemple, lors de l’utilisation d’Asset Share Commons ou une autre mise en œuvre de type portail), activez manuellement la servlet via une configuration OSGi. Adobe recommande de définir la taille de téléchargement autorisée aussi basse que possible, sans pour autant affecter les exigences de téléchargement quotidiennes. Une valeur élevée peut avoir une incidence sur les performances.
 
 1. Créez un dossier avec une convention de nommage qui cible le mode d’exécution de publication, à savoir `config.publish` :
 
@@ -141,17 +141,17 @@ Si vous n’avez pas besoin de la fonctionnalité de téléchargement, désactiv
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
 >* [Téléchargement de ressources protégées par DRM](drm.md)
->* [Téléchargement de ressources à l’aide de l’appli de bureau Experience Manager sur un poste de travail Windows ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr)
->* [Téléchargement de ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html)
+>* [Télécharger des ressources à l’aide de l’appli de bureau Experience Manager sur un poste de travail Windows ou Mac](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=fr)
+>* [Télécharger des ressources à l’aide d’Adobe Assets Link depuis les applications Adobe Creative Cloud prises en charge](https://helpx.adobe.com/fr/enterprise/using/manage-assets-using-adobe-asset-link.html)

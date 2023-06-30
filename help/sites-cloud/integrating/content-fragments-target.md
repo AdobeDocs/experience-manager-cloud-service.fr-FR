@@ -193,7 +193,7 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
      >[!NOTE]
      >
-     >Le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), est une nouvelle bibliothèque d’implémentation pour Adobe Target qui a été conçue pour les implémentations web classiques et les applications d’une seule page.
+     >Le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=fr), est une nouvelle bibliothèque d’implémentation pour Adobe Target qui a été conçue pour les implémentations web classiques et les applications d’une seule page.
      >
      >mbox.js est obsolète et sera supprimé ultérieurement.
      >

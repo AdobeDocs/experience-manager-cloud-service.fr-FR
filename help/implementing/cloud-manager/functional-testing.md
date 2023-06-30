@@ -5,7 +5,7 @@ exl-id: 7eb50225-e638-4c05-a755-4647a00d8357
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 62%
+ht-degree: 76%
 
 ---
 
@@ -21,11 +21,12 @@ Découvrez les trois différents types de tests fonctionnels intégrés au [proc
 
 ## Portée
 
-Les étapes de test fonctionnel du pipeline Cloud Manager ont pour but de s’assurer que les fonctionnalités essentielles de votre application fonctionnent comme prévu.
+Les étapes de test fonctionnel du pipeline Cloud Manager ont pour but de s’assurer que les fonctionnalités essentielles de votre application fonctionnent comme prévu.
 
 Cette phase de test est le dernier niveau de test automatisé avant de déployer votre code en production.
 
-Les tests fonctionnels ne doivent pas remplacer, mais plutôt compléter et étendre d’autres stratégies de test telles que les tests d’unité, les tests d’intégration ou les tests fonctionnels effectués en dehors de l’exécution du pipeline dans Cloud Manager.
+Les tests fonctionnels ne doivent pas remplacer, mais plutôt compléter et étendre d’autres stratégies de test telles que les tests unitaires,
+les tests d’intégration ou les tests fonctionnels effectués en dehors de l’exécution du pipeline dans Cloud Manager.
 
 ## Présentation {#overview}
 

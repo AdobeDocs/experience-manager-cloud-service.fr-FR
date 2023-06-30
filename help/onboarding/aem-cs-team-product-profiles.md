@@ -5,7 +5,7 @@ exl-id: 7b1474c9-aca0-4354-8798-1abdcda2f6dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '759'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -37,7 +37,7 @@ Les membres de votre équipe as a Cloud Service AEM sont ajoutés et affectés �
 
 >[!WARNING]
 >
->Le **Administrateurs AEM** le nom du profil de produit ne doit pas être modifié. Modification du nom de la variable **Administrateurs AEM** product profile supprime les droits d’administrateur de tous les utilisateurs affectés à ce profil.
+>Le nom du profil de produit **Administrateurs et administratrices AEM** ne doit pas être modifié. La modification du nom du profil de produit **Administrateurs et administratrices AEM** supprime les droits d’administration de toutes les personnes affectées à ce profil.
 
 >[!TIP]
 >

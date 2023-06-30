@@ -5,7 +5,7 @@ exl-id: 1e9824f2-d28a-46de-b7b3-9fe2789d9c68
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3313'
-ht-degree: 87%
+ht-degree: 89%
 
 ---
 
@@ -118,7 +118,7 @@ Après avoir ajouté un RDE pour votre programme à l’aide de Cloud Manager, v
    3. Workspace: <no workspace selected>
    ```
 
-   Notez que cette étape nécessite que vous soyez membre de Cloud Manager **Développeur - Cloud Service** Profil du produit. Consultez [cette page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus de détails.
+   Notez que cette opération nécessite que vous soyez membre du profil de produit **Développeur - Cloud Service** pour Cloud Manager. Consultez [cette page](/help/journey-onboarding/assign-profiles-cloud-manager.md#assign-developer) pour plus de détails.
 
    Vous pouvez également vérifier que vous disposez de ce rôle de développeur si vous pouvez vous connecter à Developer Console à l’aide de la commande suivante :
 
@@ -451,7 +451,7 @@ Lorsqu’un RDE est réinitialisé, tout le contenu est supprimé. Par conséque
 
 1. Placez et validez l’exemple de contenu dans git dans un dossier install.rde sous /apps, puis synchronisez le package de contenu global avec le RDE à l’aide de l’outil de ligne de commande.
 
-1. Utilisez la variable [outil de copie de contenu](/help/implementing/developing/tools/content-copy.md) pour copier un jeu de contenu défini à partir d’environnements de production, d’évaluation ou de développement ou d’un autre RDE.
+1. Utilisez l’[outil de copie de contenu](/help/implementing/developing/tools/content-copy.md) pour copier un jeu de contenu défini à partir d’environnements de production, d’évaluation ou de développement, ou encore d’un autre RDE.
 
 1. Utiliser le gestionnaire de modules
 

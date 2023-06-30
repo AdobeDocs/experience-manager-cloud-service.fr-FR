@@ -8,11 +8,11 @@ exl-id: 14e897cc-75c2-42bd-8563-1f5dd23642a0
 source-git-commit: 6822011a46a1c12c0057e828d976c735ec878eea
 workflow-type: tm+mt
 source-wordcount: '1631'
-ht-degree: 71%
+ht-degree: 72%
 
 ---
 
-# Partage et distribution de ressources gérées dans [!DNL Experience Manager] {#share-assets-from-aem}
+# Partager et distribuer des ressources gérées dans [!DNL Experience Manager] {#share-assets-from-aem}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
@@ -133,7 +133,7 @@ You can also copy the auto-generated link and share it with the users. The defau
 
 >[!NOTE]
 >
->Si une ressource partagée est déplacée vers un autre emplacement, son lien cesse de fonctionner. Recréez le lien et partagez-le avec les utilisateurs.
+>Si une ressource partagée est déplacée vers un autre emplacement, son lien cesse de fonctionner. Recréez ce lien et partagez-le de nouveau avec les utilisateurs et utilisatrices.
 
 
 <!--
@@ -205,7 +205,7 @@ A message confirms that you unshared the asset. In addition, the entry for the a
 
 ## Télécharger des ressources et les partager séparément {#download-and-share-assets}
 
-Les utilisateurs peuvent télécharger les ressources requises et les partager en dehors d’[!DNL Experience Manager]. Pour plus d’informations, consultez les pages suivantes [Recherche de ressources](/help/assets/search-assets.md), [Téléchargement de ressources](/help/assets/download-assets-from-aem.md) et [Téléchargement de collections](manage-collections.md#download-a-collection)
+Les utilisateurs peuvent télécharger les ressources requises et les partager en dehors d’[!DNL Experience Manager]. Pour plus d’informations, consultez les pages suivantes [Recherche de ressources](/help/assets/search-assets.md), [Télécharger des ressources](/help/assets/download-assets-from-aem.md) et [Téléchargement de collections](manage-collections.md#download-a-collection)
 
 ## Partage de ressources avec des professionnels de la création {#share-with-creatives}
 
@@ -290,12 +290,12 @@ Voir [comment configurer [!DNL Assets] pour l’utiliser avec [!DNL Adobe Asset 
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)

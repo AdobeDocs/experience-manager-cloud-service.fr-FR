@@ -22,11 +22,11 @@ Les thèmes, modèles et modèles de données de formulaire inclus dans le packa
 ---------|----------|---------
 | Canvas 3.0 | De base | Microsoft Dynamics 365 |
 | Tranquil | Vide | Salesforce |
-| Urbane |  |  |
+| Urbane |   |  |
 | Ultramarine |  |  |
 | Beryl |  |  |
-| Healthcare |  |  |
-| FSI |  |  |
+| Healthcare |  |   |
+| FSI |   |   |
 
 ## Thèmes de référence {#reference-themes}
 

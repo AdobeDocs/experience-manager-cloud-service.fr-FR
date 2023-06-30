@@ -6,7 +6,7 @@ exl-id: 6d78026b-687e-434e-b59d-9d101349a707
 source-git-commit: 98eff568686c72c626d2bf77d82e8c3f224eda42
 workflow-type: tm+mt
 source-wordcount: '983'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 74%
 
 ## Présentation {#apache-and-dispatcher-configuration-and-testing}
 
-Cette page décrit les outils de Dispatcher, ainsi que la manière de les télécharger et de les extraire, les modules Apache pris en charge, et fournit un aperçu général des modes hérités et flexibles. Il existe également d’autres références sur la validation et le débogage, ainsi que la migration de la configuration du Dispatcher d’AMS vers AEM as a Cloud Service. <!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
+Cette page décrit les outils Dispatcher, ainsi que la manière de les télécharger et de les extraire. Elle décrit en outre les modules Apache pris en charge et fournit un aperçu général des modes hérités et flexibles. Elle contient également d’autres références sur la validation, le débogage et la migration de la configuration de Dispatcher d’AMS vers AEM as a Cloud Service. <!-- ERROR: NOT FOUND (HTTP ERROR 404) Also, see [this video](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-5/cloud5-aem-dispatcher-cloud.html) for additional details about deploying dispatcher files in a cloud service environment. -->
 
 ## Outils Dispatcher {#dispatcher-sdk}
 
 Les outils Dispatcher font partie du SDK global d’AEM as a Cloud Service et fournissent les éléments suivants :
 
 * Une structure de fichiers classique contenant les fichiers de configuration à inclure dans un projet maven pour Dispatcher.
-* Outils permettant aux clients de vérifier que la configuration de Dispatcher inclut uniquement AEM directives prises en charge as a Cloud Service. En outre, l’outil valide également que la syntaxe est correcte afin qu’Apache puisse démarrer correctement.
+* Un outil permettant aux clients et clientes de confirmer que la configuration de Dispatcher inclut uniquement des directives prises en charge par AEM as a Cloud Service. En outre, l’outil confirme également que la syntaxe est correcte, afin qu’Apache puisse démarrer correctement.
 * Une image du Docker qui rend Dispatcher accessible localement
 
 ## Téléchargement et extraction des outils {#extracting-the-sdk}
@@ -35,7 +35,7 @@ Les outils Dispatcher, qui font partie du [SDK AEM as a Cloud Service](/help/im
 
 Décompressez le SDK, qui regroupe les outils Dispatcher pour macOS, Linux® et Windows.
 
-**Pour macOS/Linux**, rendez l’artefact de l’outil Dispatcher exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils de Dispatcher sous le répertoire dans lequel vous l’avez stocké (où `version` est la version des outils de Dispatcher).
+**Pour macOS/Linux**, rendez l’artefact de l’outil Dispatcher exécutable et exécutez-le. Il extrait automatiquement les fichiers des outils Dispatcher au sein du répertoire dans lequel vous l’avez stocké (où `version` est la version des outils Dispatcher).
 
 ```bash
 $ chmod +x aem-sdk-dispatcher-tools-<version>-unix.sh
@@ -48,17 +48,17 @@ Uncompressing aem-sdk-dispatcher-tools-<version>-unix.sh 100%
 
 ## Validation et débogage à l’aide des outils Dispatcher {#validation-debug}
 
-Les outils de Dispatcher sont utilisés pour valider et déboguer la configuration de Dispatcher de votre projet. Découvrez comment utiliser ces outils dans les pages référencées ci-dessous, selon si la configuration Dispatcher de votre projet est structurée en mode souple ou en mode hérité :
+Les outils Dispatcher sont utilisés pour valider et déboguer la configuration Dispatcher de votre projet. Découvrez comment utiliser ces outils dans les pages référencées ci-dessous, en fonction de la configuration du Dispatcher de votre projet, structurée en mode flexible ou en mode hérité :
 
-* **Mode flexible** : le mode recommandé et la valeur par défaut de [l’archétype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) d’AEM et versions ultérieures, également utilisés par Cloud Manager pour les nouveaux environnements créés après la version 2021.7.0 de Cloud Manager. Les clients peuvent activer ce mode en ajoutant le dossier et le fichier `opt-in/USE_SOURCES_DIRECTLY`. En utilisant ce mode plus flexible, il n’existe aucune limite dans la structure de fichiers sous le dossier de réécritures qui, en mode hérité, nécessitait un seul fichier `rewrite.rules`. En outre, il n’y a aucune limitation sur le nombre de règles que vous pouvez ajouter. Pour plus d’informations sur la structure de dossiers et la validation locale, voir [Validation et débogage à l’aide des outils de Dispatcher](/help/implementing/dispatcher/validation-debug.md).
+* **Mode flexible** : le mode recommandé et la valeur par défaut de [l’archétype 28](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=fr) d’AEM et versions ultérieures, également utilisés par Cloud Manager pour les nouveaux environnements créés après la version 2021.7.0 de Cloud Manager. Les clients peuvent activer ce mode en ajoutant le dossier et le fichier `opt-in/USE_SOURCES_DIRECTLY`. En utilisant ce mode plus flexible, il n’existe aucune limite dans la structure de fichiers sous le dossier de réécritures qui, en mode hérité, nécessitait un seul fichier `rewrite.rules`. En outre, il n’y a aucune limitation sur le nombre de règles que vous pouvez ajouter. Pour plus d’informations sur la structure de dossiers et la validation locale, voir [Validation et débogage à l’aide des outils Dispatcher](/help/implementing/dispatcher/validation-debug.md).
 
-* **Mode hérité** - pour plus d’informations sur la structure de dossiers et la validation locale du mode hérité de la configuration du Dispatcher, voir [Validation et débogage à l’aide des outils Dispatcher (hérités)](/help/implementing/dispatcher/validation-debug-legacy.md)
+* **Mode hérité** : pour plus d’informations sur la structure de dossiers et la validation locale pour le mode hérité de la configuration de Dispatcher, voir [Validation et débogage à l’aide des outils Dispatcher (hérités).](/help/implementing/dispatcher/validation-debug-legacy.md)
 
-Pour plus d’informations sur la migration du modèle de configuration hérité vers le modèle plus flexible, fourni avec l’archétype 28 D’AEM et versions ultérieures, voir [cette documentation](/help/implementing/dispatcher/validation-debug.md#migrating).
+Pour plus d’informations sur la migration du modèle de configuration hérité vers le modèle plus flexible, fourni avec l’archétype 28 d’AEM et versions ultérieures, voir [cette documentation](/help/implementing/dispatcher/validation-debug.md#migrating).
 
 ## Disposition du contenu {#content-disposition}
 
-Pour le niveau de publication, les objets Blob sont diffusés par défaut en tant que pièce jointe. Remplacer ce paramètre à l’aide de la méthode standard [en-tête de disposition du contenu](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Content-Disposition) dans Dispatcher.
+Pour le niveau de publication, les objets Blob sont diffusés par défaut en tant que pièce jointe. Vous pouvez modifier ce paramètre en utilisant l’[en-tête standard de disposition du contenu](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Content-Disposition) dans le Dispatcher.
 
 La configuration doit se présenter ainsi :
 
@@ -71,7 +71,7 @@ La configuration doit se présenter ainsi :
 
 ## Modules Apache pris en charge {#supported-directives}
 
-Le tableau ci-dessous présente les modules Apache pris en charge :
+Le tableau ci-dessous présente les modules Apache pris en charge :
 
 | Nom du module | Page de référence |
 |---|---|
@@ -119,7 +119,7 @@ Allowlisted directives:
 
 ## Structure de dossiers {#folder-structure}
 
-La structure de dossiers Apache et Dispatcher du projet diffère légèrement selon le mode utilisé par le projet, comme décrit dans la section [Validation et débogage à l’aide des outils de Dispatcher](#validation-debug) ci-dessus.
+La structure de dossiers Apache et Dispatcher du projet diffère légèrement selon le mode utilisé par le projet, comme décrit dans la section [Validation et débogage à l’aide des outils Dispatcher](#validation-debug) ci-dessus.
 
 ## Migration de la configuration de Dispatcher à partir d’AMS {#ams-aem}
 

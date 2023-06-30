@@ -8,7 +8,7 @@ exl-id: cb77a840-d705-4406-a94d-c85a6efc8f5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2192'
-ht-degree: 91%
+ht-degree: 99%
 
 ---
 
@@ -26,7 +26,7 @@ L’intégration de données [!DNL Experience Manager Forms] permet de configure
 * SalesForce
 * Stockage d’objets blob Microsoft® Azure.
 
-L’intégration des données prend en charge OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), les types d’authentification de base et de clé API prêts à l’emploi et permettent de mettre en oeuvre une authentification personnalisée pour l’accès aux services web. Alors que les services RESTful, SOAP et OData sont configurés dans [!DNL Experience Manager] as a Cloud Service, JDBC pour les bases de données relationnelles et le connecteur pour le profil utilisateur [!DNL Experience Manager] sont configurés dans la console web [!DNL Experience Manager].
+L’intégration de données prend en charge l’authentification OAuth2.0, ([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), l’authentification de base ou l’authentification par clé API (prêtes à l’emploi). Elle permet de mettre en œuvre une authentification personnalisée pour accéder aux services web. Alors que les services RESTful, SOAP et OData sont configurés dans [!DNL Experience Manager] as a Cloud Service, JDBC pour les bases de données relationnelles et le connecteur pour le profil utilisateur [!DNL Experience Manager] sont configurés dans la console web [!DNL Experience Manager].
 
 ## Configurer la base de données relationnelle {#configure-relational-database}
 
@@ -136,7 +136,7 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
       * Chemin d’accès de base : le préfixe d’URL de tous les chemins d’API. Ce champ est facultatif.\
         Si nécessaire, modifiez les valeurs prérenseignées pour ces champs.
 
-   * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base, clé d’API ou authentification personnalisée : pour accéder au service RESTful et fournir en conséquence des détails pour l’authentification.
+   * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’authentification](https://oauth.net/2/grant-types/authorization-code/), [informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, clé API ou authentification personnalisée pour accéder au service RESTful et spécifiez les détails de l’authentification.
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
 
@@ -155,7 +155,7 @@ Le service web RESTful peut être décrit en utilisant les [spécifications Swag
 
    * Sélectionnez l’URL ou le fichier dans la liste déroulante [!UICONTROL Source Swagger] et spécifiez l’[!DNL Swagger 3.0 URL] vers le fichier de définition du [!DNL  Swagger] ou chargez le fichier [!DNL Swagger] à partir de votre système de fichiers local.
    * En fonction de l’entrée source [!DNL  Swagger], les informations de connexion au serveur cible s’affichent.
-   * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base, clé d’API ou authentification personnalisée : pour accéder au service RESTful et fournir en conséquence des détails pour l’authentification.
+   * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’authentification](https://oauth.net/2/grant-types/authorization-code/), [informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, clé API ou authentification personnalisée pour accéder au service RESTful et spécifiez les détails de l’authentification.
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
 
@@ -231,7 +231,7 @@ Pour configurer le service Web SOAP dans [!DNL Experience Manager] as a Cloud Se
 
    * URL WSDL du service web.
    * Point d’entrée du service. Spécifiez une valeur dans ce champ pour remplacer le point d’entrée du service mentionné dans WSDL.
-   * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base ou Authentification personnalisée pour accéder au service SOAP et fournir en conséquence les détails de l’authentification.
+   * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base ou authentification personnalisée pour accéder au service SOAP et fournissez en conséquence les détails de l’authentification.
 
      <!--If you select **[!UICONTROL X509 Token]** as the Authentication type, configure the X509 certificate. For more information, see [Set up certificates](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).-->
      <!--Specify the KeyStore alias for the X509 certificate in the **[!UICONTROL Key Alias]** field. Specify the time, in seconds, until the authentication request remains valid, in the **[!UICONTROL Time To Live]** field. Optionally, select to sign the message body or timestamp header or both.-->
@@ -273,7 +273,7 @@ Un service OData est identifié par son URL racine de service. Pour configurer u
 1. Spécifiez les informations suivantes pour le service OData :
 
    * URL racine du service pour le service OData à configurer.
-   * Sélectionnez le type d’authentification : Aucun, OAuth2.0([Code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [Informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), Authentification de base, clé API ou authentification personnalisée : pour accéder au service OData et fournir en conséquence les détails de l’authentification.
+   * Sélectionnez le type d’authentification : aucune, OAuth2.0 ([code d’autorisation](https://oauth.net/2/grant-types/authorization-code/), [informations d’identification client](https://oauth.net/2/grant-types/client-credentials/)), authentification de base, clé API ou authentification personnalisée pour accéder au service OData et fournissez en conséquence les détails de l’authentification.
 
    Si vous sélectionnez **[!UICONTROL Clé API]** comme type d’authentification, spécifiez la valeur de la clé API. La clé API peut être envoyée en tant qu’en-tête de requête ou en tant que paramètre de requête. Sélectionnez l’une de ces options dans la liste déroulante **[!UICONTROL Emplacement]** et indiquez le nom de l’en-tête ou du paramètre de requête dans le champ **[!UICONTROL Nom du paramètre]**.
 

@@ -5,7 +5,7 @@ exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
 source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
 workflow-type: tm+mt
 source-wordcount: '1158'
-ht-degree: 82%
+ht-degree: 86%
 
 ---
 
@@ -42,11 +42,11 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
 
 ### Version de mai 2023 {#may-2023-release}
 
-* Workfront renvoie une réponse HTTP 409 pour les abonnements d’événements en double basée sur un appel REST de Experience Manager vers Workfront, ce qui entraîne une exception de pointeur nulle.
+* Workfront renvoie une réponse HTTP 409 pour les abonnements d’événements en double basée sur un appel REST d’Experience Manager vers Workfront, ce qui entraîne une exception de pointeur nulle.
 
-### Version d’avril 2023 {#april-2023-release}
+### Version d’avril 2023 {#april-2023-release}
 
-[!DNL Workfront for Experience Manager enhanced connector] La version 1.9.9, publiée le 10 avril 2023, comprend les mises à jour suivantes :
+La version 1.9.9 de [!DNL Workfront for Experience Manager enhanced connector], publiée le 10 avril 2023, comprend les mises à jour suivantes :
 
 * Experience Manager affiche une exception `DateTimeParseException` lorsqu’il reçoit la date de dernière modification de Workfront lors de la création du dossier lié.
 
@@ -196,4 +196,4 @@ La version 1.9.1 de [!DNL Workfront for Experience Manager enhanced connector] 
 
 >[!MORELIKETHIS]
 >
->* [Intégrer  [!DNL Workfront for Experience Manager enhanced connector]  avec Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=fr)
+>* [Intégrer  [!DNL Workfront for Experience Manager enhanced connector]  à Experience Manager 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/assets/integrations/workfront-integrations.html?lang=fr)

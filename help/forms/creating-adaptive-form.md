@@ -1,5 +1,5 @@
 ---
-title: Comment créer un Forms adaptatif
+title: Comment créer des formulaires adaptatifs
 description: Découvrez comment créer un formulaire adaptatif à l’aide de [!DNL Experience Manager Forms]. Les formulaires adaptatifs sont des formulaires HTML5 réactifs qui rationalisent la collecte et le traitement des informations. Découvrez comment créer un formulaire adaptatif basé sur un modèle de données de formulaire et un schéma XML ou JSON.
 feature: Adaptive Forms
 role: User, Developer
@@ -8,14 +8,14 @@ exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1498'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
 # Créer un formulaire adaptatif (composants de base) {#creating-an-adaptive-form}
 
 
-Les Forms adaptatives vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial pour les utilisateurs professionnels, qui permet de créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
+Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial pour les utilisateurs professionnels, qui permet de créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
 Avant de commencer, découvrez les types de composants de formulaires disponibles :
 

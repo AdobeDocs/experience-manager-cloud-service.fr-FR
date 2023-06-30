@@ -1,6 +1,6 @@
 ---
-title: Comment rechercher des ressources dans AEM ?
-description: Découvrez comment rechercher des ressources dans AEM à l’aide du panneau Filtres et comment utiliser les résultats qui s’affichent dans la recherche de ressources.
+title: Comment rechercher des ressources dans AEM ?
+description: Découvrez comment rechercher des ressources dans AEM à l’aide du panneau Filtres et comment utiliser les ressources affichées dans la recherche.
 contentOwner: AG
 mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
@@ -9,22 +9,22 @@ exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '5096'
-ht-degree: 89%
+ht-degree: 97%
 
 ---
 
-# Recherche de ressources dans AEM {#search-assets-in-aem}
+# Rechercher des ressources dans AEM {#search-assets-in-aem}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
-[!DNL Adobe Experience Manager Assets] fournit des méthodes de recherche de ressources robustes qui vous aident à atteindre une vitesse de contenu plus élevée. Vos équipes peuvent réduire le temps de mise sur le marché grâce à une expérience de recherche de ressources intelligente et transparente, à l’aide de fonctionnalités prêtes à l’emploi et de méthodes personnalisées. La fonctionnalité de recherche de ressources est essentielle à l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les créatifs, pour une gestion robuste des ressources par les utilisateurs professionnels et les marketeurs ou pour une administration par les administrateurs DAM. Les recherches simples, avancées et personnalisées que vous pouvez effectuer via l’interface utilisateur [!DNL Assets] ou d’autres applications et surfaces permettent de répondre à ces cas d’utilisation.
+[!DNL Adobe Experience Manager Assets] fournit des méthodes robustes de découverte de ressources qui vous aident à atteindre une vitesse de contenu plus élevée. Vos équipes peuvent réduire les délais de mise sur le marché grâce à une expérience de recherche des ressources intelligente et transparente basées sur des fonctionnalités prêtes à l’emploi et des méthodes personnalisées. La recherche de ressources est essentielle pour l’utilisation d’un système de gestion des ressources numériques, que ce soit pour une utilisation plus poussée par les rédacteurs et les rédactrices, pour une gestion robuste des ressources par les utilisateurs/utilisatrices et les spécialistes marketing ou encore pour l’administration par les administrateurs et administratrices DAM. Les recherches simples, avancées et personnalisées que vous pouvez effectuer via l’interface utilisateur [!DNL Assets] ou d’autres applications et surfaces permettent de répondre à ces cas d’utilisation.
 
-La recherche de ressources dans AEM prend en charge les cas d’utilisation suivants. Cet article décrit l’utilisation, les concepts, les configurations, les limites et la résolution des problèmes associés à ces cas d’utilisation.
+La recherche de ressources dans AEM prend en charge les cas d’utilisation suivants, dont cet article décrit l’utilisation, les concepts, les configurations, les limitations et le dépannage.
 
-| Recherche de ressources | Configuration et administration de la fonctionnalité de recherche | Utilisation des résultats de recherche de ressources |
+| Rechercher des ressources | Configurer et administratrer la fonctionnalité de recherche | Utiliser les résultats de recherche de ressources |
 |---|---|---|
 | [Recherches de base](#searchbasics) | [Index de recherche](#searchindex) | [Tri des résultats](#sort) |
 | [Présentation de l’interface utilisateur de recherche](#searchui) | [Extraction de texte](#extracttextupload) | [Vérification des propriétés et des métadonnées d’une ressource](#checkinfo) |
@@ -43,9 +43,9 @@ Utilisez le panneau **[!UICONTROL Filtres]** pour rechercher des ressources, des
 
 La fonctionnalité de recherche [!DNL Experience Manager] prend en charge la recherche de collections et la recherche de ressources dans une collection. Voir [Recherche de collections](/help/assets/manage-collections.md).
 
-## Présentation de l’interface de recherche de ressources {#searchui}
+## Comprendre l’interface de recherche des ressources {#searchui}
 
-Familiarisez-vous avec l’interface de recherche de ressources et les actions disponibles.
+Familiarisez-vous avec l’interface de recherche des ressources et les actions disponibles.
 
 ![Présentation de l’interface des résultats de recherche des ressources Experience Manager](assets/aem_search_results.png)
 
@@ -55,7 +55,7 @@ Familiarisez-vous avec l’interface de recherche de ressources et les actions d
 
 ### Facettes de recherche dynamique {#dynamicfacets}
 
-Vous pouvez découvrir plus rapidement les ressources souhaitées à partir de la page de résultats de recherche à l’aide du nombre de résultats de recherche attendus mis à jour dynamiquement dans les facettes de recherche. Le nombre de ressources attendu est mis à jour avant l’application du filtre de recherche. L’affichage du nombre prévu par rapport au filtre vous aide à parcourir rapidement et efficacement les résultats de la recherche.
+Vous pouvez découvrir plus rapidement les ressources souhaitées à partir de la page de résultats de la recherche à l’aide du nombre de résultats de recherche attendus mis à jour dynamiquement dans les facettes de recherche. Le nombre de ressources attendu est mis à jour avant l’application du filtre de recherche. L’affichage du nombre prévu par rapport au filtre vous aide à parcourir rapidement et efficacement les résultats de la recherche.
 
 ![Affichage du nombre approximatif de ressources sans filtrer les résultats de la recherche dans les facettes de recherche.](assets/asset_search_results_in_facets_filters.png)
 
@@ -106,7 +106,7 @@ Using Smart Tags adds an extra `OR` clause to find any of the search terms as th
 
 ### Classement et amplification des recherches {#searchrank}
 
-Les résultats de recherche qui correspondent à tous les termes de recherche des champs de métadonnées sont affichés en premier, suivis des résultats de recherche qui correspondent à l’un des termes de recherche des balises intelligentes. Dans l’exemple ci-dessus, l’ordre approximatif d’affichage des résultats de recherche est le suivant :
+Les résultats de recherche qui correspondent à tous les termes de recherche dans les champs de métadonnées s’affichent en premier, suivis des résultats de recherche correspondant à l’un des termes de recherche dans les balises intelligentes. Dans l’exemple ci-dessus, l’ordre approximatif d’affichage des résultats de recherche est le suivant :
 
 1. Correspondances de `woman running` dans les différents champs de métadonnées.
 1. Correspondances de `woman running` dans les balises intelligentes.
@@ -165,19 +165,19 @@ Vous pouvez rechercher des ressources en fonction des valeurs exactes de champs 
 | Outil créateur | creatortool:&quot;Adobe Photoshop&quot; |
 | Détenteur de copyright | copyrightowner:&quot;Adobe Systems&quot; |
 | Contributeur | contributor:John |
-| Conditions d’utilisation | usagewords:&quot;CopyRights reserve&quot; |
+| Conditions d’utilisation | usageterms:&quot;CopyRights Reserved&quot; |
 | Créé | created:AAAA-MM-JJTHH |
 | Date d’expiration | expires:AAAA-MM-JJTHH |
 | Heure d’activation | ontime:AAAA-MM-JJTHH |
 | Heure de désactivation | offtime:AAAA-MM-JJTHH |
-| Plage de temps (date d’expiration, heure d’arrêt) | champ de facette : lowerbound..upperbound |
+| Plage de temps (expiration : dateontime,offtime) | champ de facette : lowerbound..upperbound |
 | Chemin | /content/dam/&lt;nom_dossier> |
 | Titre du PDF | pdftitle:&quot;Adobe Document&quot; |
 | Objet | subject:&quot;Training&quot; |
-| Balises | tags : &quot;Location And Travel&quot; |
+| Balises | tags:&quot;Location And Travel&quot; |
 | Type | type:&quot;image\png&quot; |
-| Largeur de l’image | width:lowerbound.upperbound |
-| Hauteur de l’image | height:lowerbound.upperbound |
+| Largeur de l’image | width:lowerbound..upperbound |
+| Hauteur de l’image | height:lowerbound..upperbound |
 | Personne | person:John |
 
 Les propriétés `path`, `limit`, `size` et `orderby` ne peuvent pas être combinées à l’aide de l’opérateur `OR` avec une autre propriété.
@@ -391,11 +391,11 @@ Vous pouvez rechercher des ressources numériques en fonction d’une ou de plus
 | Types MIME | Images, Documents, Multimédia, Archives ou Autre. |
 | Date de dernière modification | Heure, Jour, Semaine, Mois ou Année. |
 | Taille de fichier | Petit, moyen ou grand. |
-| Statut de publication | Publié ou Publication annulée. |
-| État approuvé | Approuvé ou refusé. |
-| Orientation | Horizontal, vertical ou carré. |
+| Statut de publication | Publié ou Non publié. |
+| Statut d’approbation | Approuvé ou refusé. |
+| Orientation | Horizontal, Vertical ou Carré. |
 | Style | Couleur ou Noir et blanc. |
-| Hauteur de vidéo | Indiqué sous la forme d’une valeur minimale et d’une valeur maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
+| Hauteur de la vidéo | Indiqué sous la forme d’une valeur minimale et d’une valeur maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Largeur de la vidéo | Indiqué sous la forme d’une valeur minimale et d’une valeur maximale. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
 | Format vidéo | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media. La valeur est stockée uniquement dans les métadonnées de la source vidéo et de tout rendu. |
 | Codec vidéo | x264. La valeur est stockée uniquement dans les métadonnées des rendus vidéo. |
@@ -453,7 +453,7 @@ Une collection est un ensemble ordonné de ressources pouvant inclure des ressou
 * Une liste de référence statique de ressources, dossiers et autres collections
 * Une liste dynamique (collection dynamique) qui peuple la collection de ressources en fonction de critères de recherche
 
-Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gestion des collections](/help/assets/manage-collections.md).
+Vous pouvez créer des collections dynamiques en fonction des critères de recherche. Dans le panneau **[!UICONTROL Filtres]**, sélectionnez **[!UICONTROL Fichiers]** et cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**. Voir [Gérer les collections](/help/assets/manage-collections.md).
 
 ### Création d’une version {#create-version}
 
@@ -493,11 +493,11 @@ Lier et dissocier les ressources qui s’affichent dans les résultats de recher
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >

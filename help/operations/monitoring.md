@@ -5,7 +5,7 @@ exl-id: 82432c11-37ec-48ac-a52b-487abdc859fa
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '588'
-ht-degree: 46%
+ht-degree: 49%
 
 ---
 
@@ -35,7 +35,7 @@ Avec la surveillance personnalisée, les clients peuvent éventuellement fournir
 
 >[!NOTE]
 >
-> Cette fonctionnalité est uniquement proposée aux clients qui ont [Prise en charge avancée du cloud.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons) Si vous avez des questions, contactez votre équipe chargée du compte d’Adobe.
+> Cette fonctionnalité est uniquement proposée aux clients et clientes qui bénéficient de la [prise en charge avancée du cloud.](https://experienceleague.adobe.com/docs/support-resources/data-sheets/overview.html#support-add-ons?lang=fr) Si vous avez des questions, contactez votre équipe chargée du compte d’Adobe.
 
 ## Surveillance des modules internes {#module-monitoring}
 

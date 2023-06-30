@@ -5,7 +5,7 @@ exl-id: 10011392-3059-4bb0-88db-0af1d390742e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 32%
+ht-degree: 48%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez-en plus sur les types de programme dans le document [Présentation de
 
 ## Création d’un programme Sandbox {#create}
 
-1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
+1. Connectez-vous à Cloud Manager à l’adresse [my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com/) et sélectionnez l’organisation appropriée.
 
 1. Dans la page d’entrée de Cloud Manager, près du coin supérieur droit de l’écran, cliquez sur **Ajout d’un programme**.
 
@@ -27,9 +27,9 @@ Découvrez-en plus sur les types de programme dans le document [Présentation de
 
    ![Création d’un type de programme](assets/create-sandbox.png)
 
-1. Vous pouvez éventuellement ajouter une image au programme en la faisant glisser et en la déposant sur le **Ajout d’une image de programme** cibler ou cliquer dessus pour sélectionner une image dans l’explorateur de fichiers. Cliquez ou appuyez sur **Continuer**.
+1. Vous pouvez éventuellement ajouter une image au programme en faisant glisser un fichier image et en le déposant sur la cible **Ajouter une image de programme** ou en cliquant dessus pour sélectionner une image dans l’explorateur de fichiers. Cliquez ou appuyez sur **Continuer**.
 
-   * L’image sert uniquement de mosaïque dans la fenêtre de présentation du programme et permet d’identifier le programme.
+   * L’image sert uniquement de vignette dans la fenêtre de vue d’ensemble du programme et permet d’identifier le programme.
 
 1. Dans le **Configuration de votre environnement de test** , sélectionnez les solutions que vous souhaitez activer dans votre programme sandbox en cochant les options de la section **Solutions et modules complémentaires** table.
 
@@ -37,7 +37,7 @@ Découvrez-en plus sur les types de programme dans le document [Présentation de
 
    * Le **Sites** et **Ressources** Les solutions sont toujours incluses dans les programmes sandbox et ne peuvent pas être désélectionnées.
 
-   ![Sélection de solutions et de modules complémentaires pour un environnement de test](assets/sandbox-solutions-add-ons.png)
+   ![Sélectionner des solutions et des modules complémentaires pour un sandbox](assets/sandbox-solutions-add-ons.png)
 
 1. Une fois que vous avez sélectionné les solutions et modules complémentaires pour votre programme sandbox, cliquez sur **Créer**.
 
@@ -45,7 +45,7 @@ Une nouvelle carte de programme sandbox s’affiche sur la page d’entrée avec
 
 ![Création d’un sandbox à partir de la page d’aperçu](assets/sandbox-setup.png)
 
-## Accès aux environnements de test {#access}
+## Accès au sandbox {#access}
 
 Vous pouvez afficher les détails de la configuration de votre environnement de test et accéder à l’environnement (une fois disponible) en consultant la page d’aperçu du programme.
 

@@ -5,7 +5,7 @@ exl-id: ee9e4952-e075-4398-b31f-d7886153efff
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '385'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
@@ -56,7 +56,7 @@ Il existe également des tâches administratives pour vous aider à gérer votre
 
 AEM propose également un service de prévisualisation de sites qui permet aux développeurs et aux auteurs de contenu de prévisualiser l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement.
 
-Voir [Aperçu du contenu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) pour plus de détails.
+Voir [Prévisualisation du contenu](/help/sites-cloud/authoring/fundamentals/previewing-content.md) pour plus de détails.
 
 ## Environnement de publication {#publish-environment}
 

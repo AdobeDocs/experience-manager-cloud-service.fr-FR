@@ -8,7 +8,7 @@ exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
 source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
 workflow-type: tm+mt
 source-wordcount: '1103'
-ht-degree: 84%
+ht-degree: 89%
 
 ---
 
@@ -71,14 +71,14 @@ Le tableau entier sera trié en fonction de cette colonne. Le tri n’est dispon
 
 ## Actions {#actions}
 
-Dans la console, vous pouvez utiliser différentes actions, directement ou après la sélection d’un fragment spécifique :
+Dans la console, vous pouvez utiliser différentes actions, directement ou après la sélection d’un fragment spécifique :
 
-* Diverses actions sont directement [disponible à partir de la console](#available-actions)
-* Vous pouvez [sélectionnez un ou plusieurs fragments de contenu pour afficher les actions appropriées.](#actions-selected-content-fragment)
+* Diverses actions sont directement [disponibles à partir de la console](#available-actions).
+* Vous pouvez [sélectionner un ou plusieurs fragments de contenu pour afficher les actions disponibles](#actions-selected-content-fragment).
 
 ### Actions (non sélectionnées) {#actions-unselected}
 
-Certaines actions sont disponibles à partir de la console, sans sélectionner de fragment de contenu spécifique :
+Certaines actions sont disponibles à partir de la console, sans sélectionner de fragment de contenu spécifique :
 
 * **[Créer](/help/sites-cloud/administering/content-fragments/content-fragments-managing.md#creating-a-content-fragment)** un fragment de contenu.
 * [Filtrer](#filtering-fragments) les fragments de contenu en fonction d’une sélection de prédicats et enregistrer le filtre en vue d’une utilisation ultérieure.

@@ -7,7 +7,7 @@ exl-id: f57a856b-0932-4e8f-be59-a19fe692e2ab
 source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
 workflow-type: tm+mt
 source-wordcount: '1417'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -144,7 +144,7 @@ Si vous souhaitez savoir comment les auteurs de contenu accèdent à AEM as a�
 
 ## Ressources supplémentaires {#additional-resources}
 
-Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
+Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez aller au delà du contenu du parcours d’intégration.
 
 * [Accéder aux référentiels](/help/implementing/cloud-manager/managing-code/accessing-repos.md) : découvrez comment accéder à votre référentiel Git et comment le gérer à l’aide de la gestion de compte Git en libre-service à partir de Cloud Manager.
 * [Utiliser Git avec Cloud Manager](/help/implementing/cloud-manager/managing-code/integrating-with-git.md) : découvrez comment utiliser les référentiels Git de Cloud Manager et comment intégrer votre propre référentiel Git On-premise géré par le client avec Cloud Manager.

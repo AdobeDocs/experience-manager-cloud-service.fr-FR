@@ -5,7 +5,7 @@ exl-id: 3fe856b7-a0fc-48fd-9c03-d64c31a51c5d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 93%
+ht-degree: 97%
 
 ---
 
@@ -56,11 +56,11 @@ Cela :
 
 * permet à AEM as a Cloud Service de s’adapter aux variations de vos schémas de trafic.
 
-La mise à l’échelle des instances par client du service s’applique aux deux axes :
+La mise à l’échelle des instances par client du service s’applique aux deux axes :
 
-* Horizontal : le nombre de noeuds pour un service donné est augmenté ou diminué automatiquement, tout en autorisant des configurations par défaut individuelles.
+* Horizontal : le nombre de nœuds pour un service donné est augmenté ou diminué automatiquement, tout en autorisant des configurations par défaut individuelles.
 
-* Vertical : la mémoire allouée et la capacité du processeur peuvent être augmentées ou réduites par le biais de la configuration pour un nombre fixe de noeuds afin de répondre aux besoins individuels si nécessaire.
+* Vertical : la mémoire allouée et la capacité du processeur peuvent être augmentées ou réduites par le biais de la configuration pour un nombre fixe de nœuds afin de répondre aux besoins individuels si nécessaire.
 
 ## Environnements {#environments}
 

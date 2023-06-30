@@ -7,7 +7,7 @@ exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
 source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
 workflow-type: tm+mt
 source-wordcount: '1036'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -41,7 +41,7 @@ Commencez dans l’éditeur de fragment de contenu avec l’exemple d’applicat
 
 ![Aperçu de l’application](assets/do-not-localize/preview-app-1.png)
 
-## Modification d’un en-tête dans l’application {#edit-app}
+## Modifier un en-tête dans l’application {#edit-app}
 
 L’éditeur de fragment de contenu affiche la disposition de base de l’application sous la forme d’un fragment de contenu de page. Les **Panneaux** représentent différentes pages de l’application, chacune d’elles étant son propre fragment de contenu. En modifiant ces fragments, vous pouvez changer le contenu de l’application.
 
@@ -63,7 +63,7 @@ L’éditeur de fragment de contenu affiche la disposition de base de l’applic
 
 C’est aussi simple que cela de mettre à jour le contenu d’une application React lorsqu’elle est intégrée à un CMS AEM découplé.
 
-## Permutation d’une image dans l’application {#change-image}
+## Changer une image dans l’application {#change-image}
 
 Maintenant que vous avez modifié un titre dans l’application, essayez de changer une image.
 
@@ -91,7 +91,7 @@ Maintenant que vous avez modifié un titre dans l’application, essayez de chan
 
 Mettez à jour facilement les images et les ressources de vos applications avec le CMS découplé d’AEM.
 
-## Ajout d’une référence à un nouveau fragment de contenu dans l’application {#create-moment}
+## Ajouter une référence à un nouveau fragment de contenu dans l’application {#create-moment}
 
 Maintenant que vous avez mis à jour l’image du cycliste, nous allons découvrir comment ajouter du nouveau contenu à une application en créant et en référençant un nouveau fragment de contenu. Vous allez ajouter un appel de produit géré par un fragment de contenu « moment d’achat » au deuxième panneau de l’application.
 

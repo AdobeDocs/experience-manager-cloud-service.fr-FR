@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Assets HTTP API,APIs
 role: Developer,Architect,Admin
 exl-id: a3b7374d-f24b-4d6f-b6db-b9c9c962bb8d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1562'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 95%
 
 ## Présentation {#overview}
 
-L’API HTTP [!DNL Assets] permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, notamment les métadonnées, les rendus et les commentaires, ainsi que sur des contenus structurés grâce à des fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle comprend [Prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
+L’API HTTP [!DNL Assets] permet d’effectuer des opérations CRUD (créer, lire, mettre à jour, supprimer) sur des ressources numériques, notamment les métadonnées, les rendus et les commentaires, ainsi que sur des contenus structurés grâce à des fragments de contenu [!DNL Experience Manager]. Elle est exposée sous `/api/assets` et est implémentée en tant qu’API REST. Elle comprend la [prise en charge des fragments de contenu](/help/assets/content-fragments/assets-api-content-fragments.md).
 
-Pour accéder à l’API :
+Pour accéder à l’API :
 
 1. Ouvrez le document du service API à l’adresse `https://[hostname]:[port]/api.json`.
 1. Suivez le lien du service [!DNL Assets] pointant vers `https://[hostname]:[server]/api/assets.json`.
 
-La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers de PDF. Reposez sur le code de réponse pour une analyse ou des actions plus approfondies.
+La réponse de l’API est un fichier JSON pour certains types MIME et un code de réponse pour tous les types MIME. La réponse JSON est facultative et peut ne pas être disponible, par exemple pour les fichiers PDF. Fiez-vous au code de réponse pour une analyse ou des actions supplémentaires.
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ La réponse de l’API est un fichier JSON pour certains types MIME et un code d
 
 Un [fragment de contenu](/help/assets/content-fragments/content-fragments.md) est un type de ressource spécial. Il permet d’accéder aux données structurées, telles que les textes, les nombres, les dates, etc. Comme il existe plusieurs différences de ressources `standard` (telles que les images ou les documents), certaines règles supplémentaires s’appliquent pour gérer les fragments de contenu.
 
-Pour plus d’informations, consultez [Prise en charge de fragments de contenu dans l’API HTTP d’ [!DNL Experience Manager Assets] .](/help/assets/content-fragments/assets-api-content-fragments.md)
+Pour plus d’informations, voir [Les fragments de contenu sont pris en charge dans la variable [!DNL Experience Manager Assets] API HTTP](/help/assets/content-fragments/assets-api-content-fragments.md).
 
 ## Modèle de données {#data-model}
 
@@ -160,7 +160,7 @@ Pour plus d’informations sur la mise à jour de fichiers binaires de ressource
 
 ## Mettre à jour les métadonnées d’une ressource {#update-asset-metadata}
 
-Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété du namespace `dc:`, l’API met à jour cette même propriété dans le namespace `jcr`. L’API ne synchronise pas les propriétés des deux namespaces.
+Met à jour les propriétés de métadonnées d’une ressource. Si vous mettez à jour une propriété du namespace `dc:`, l’API met à jour cette même propriété dans le namespace `jcr`. L’API ne synchronise pas les propriétés des deux espaces de noms.
 
 **Requête** : `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
@@ -281,16 +281,16 @@ Supprime une ressource (arborescence) pour le chemin indiqué.
 
 * [Traduire les ressources](translate-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
->* [Documentation de référence du développeur pour [!DNL Assets]](/help/assets/developer-reference-material-apis.md)
+>* [Documentation de référence pour le développement pour [!DNL Assets]](/help/assets/developer-reference-material-apis.md)

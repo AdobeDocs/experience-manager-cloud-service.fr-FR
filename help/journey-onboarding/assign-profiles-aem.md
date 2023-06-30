@@ -7,7 +7,7 @@ exl-id: c00f5d28-85af-4bd3-a50c-913d1342241c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '898'
-ht-degree: 88%
+ht-degree: 92%
 
 ---
 
@@ -111,9 +111,9 @@ Cependant, si vous souhaitez mieux comprendre comment les créateurs et les dév
 
 ## Ressources supplémentaires {#additional-resources}
 
-Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
+Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez aller au delà du contenu du parcours d’intégration.
 
 * [Équipe et profils de produits AEM as a Cloud Service](/help/onboarding/aem-cs-team-product-profiles.md) - Découvrez comment l’équipe et les profils de produits AEM as a Cloud Service peuvent accorder et limiter l’accès à vos solutions Adobe sous licence.
-* [Gestion des produits et accès utilisateur dans Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Découvrez comment utiliser le Admin Console pour gérer l’accès aux utilisateurs.
-* [Configurer l’accès à la présentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - Consultez cette présentation abrégée pour en savoir plus sur la configuration des utilisateurs, groupes d’utilisateurs et profils de produits Adobe IMS dans Admin Console.
+* [Gestion des produits et accès utilisateur dans Admin Console](/help/security/ims-support.md#managing-products-and-user-access-in-admin-console) - Découvrez comment utiliser Admin Console pour gérer l’accès des utilisateurs et utilisatrices.
+* [Configuration de l’accès à la présentation d’AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/walk-through.html) - Consultez cette présentation abrégée pour en savoir plus sur la configuration des utilisateurs et utilisatrices, groupes d’utilisateurs et d’utilisatrices et profils de produits Adobe IMS dans Admin Console.
 

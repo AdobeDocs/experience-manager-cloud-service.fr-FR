@@ -6,7 +6,7 @@ exl-id: b60fcf97-4736-4606-8b41-4051b8b0c8a7
 source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
 workflow-type: tm+mt
 source-wordcount: '1752'
-ht-degree: 76%
+ht-degree: 78%
 
 ---
 
@@ -1345,11 +1345,11 @@ Cette requête interroge :
 Cette requête interroge :
 
 * à la recherche de différents fragments de contenu de type `bookmark` ;
-   * avec des références de fragment à d’autres fragments du type de modèle spécifique `Article`
+   * avec des références de fragments à d’autres fragments du type de modèle spécifique `Article`.
 
 >[!NOTE]
 >
->Le champ `fragments` possède le type de données `fragment-reference`, avec le modèle `Article` sélectionné. Requête : `fragments` sous la forme d’un tableau de `[Article]`.
+>Le champ `fragments` présente le type de données `fragment-reference`, avec le modèle `Article` sélectionné. La requête renvoie `fragments` sous la forme d’un tableau de `[Article]`.
 
 ```graphql
 {
@@ -1373,7 +1373,7 @@ Cette requête interroge :
 
 >[!NOTE]
 >
->Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés. Requête : `fragments` sous la forme d’un tableau de `[AllFragmentModels]`, qui est déréférencé avec le type d’union.
+>Le champ `fragments` présente le type de données `fragment-reference`, avec les modèles `Article`, `Adventure` sélectionnés. La requête renvoie `fragments` sous la forme d’un tableau de `[AllFragmentModels]`, qui est déréférencé avec le type d’union.
 
 ```graphql
 {

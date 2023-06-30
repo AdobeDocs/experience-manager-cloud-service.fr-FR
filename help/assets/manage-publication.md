@@ -80,7 +80,7 @@ Pour filtrer le contenu du dossier que vous souhaitez publier, cliquez sur **[!U
 
 * `Include folder contents` et `Include only immediate folder contents`
 
-   Si les deux options sont sélectionnées, toutes les ressources du dossier, des sous-dossiers (vides) et des références sélectionnés sont publiées. Les ressources des sous-dossiers ne sont pas publiées.
+  Si les deux options sont sélectionnées, toutes les ressources du dossier, des sous-dossiers (vides) et des références sélectionnés sont publiées. Les ressources des sous-dossiers ne sont pas publiées.
 
 <!--
 * [!UICONTROL Include only immediate folder contents]: Only the subfolders content and references are published. 
@@ -194,6 +194,7 @@ L’option Demander la publication est disponible pour les utilisateurs suivants
 >[!NOTE]
 >
 >If [!DNL Dynamic Media] est sélectionné comme destination, puis l’étape de workflow est désactivée pour **utilisateur de workflow** et **admin** utilisateurs.
+>
 
 ## Restrictions et conseils {#limitations-and-tips}
 

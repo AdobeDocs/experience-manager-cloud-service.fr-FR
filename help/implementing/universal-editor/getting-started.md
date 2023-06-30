@@ -5,7 +5,7 @@ exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '805'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -116,7 +116,7 @@ Les connexions utilisées dans l’application sont stockées sous la forme de b
 * `<protocol>` : indique le plug-in de persistance du service de persistance de l’éditeur universel à utiliser. Par ex. `aem`
 * `<url>` : il s’agit de l’URL vers le système où les modifications doivent être conservées. Par ex. `http://localhost:4502`
 
-L&#39;identifiant `adobe:aem:editor` représente la connexion à Adobe Universal Editor.
+L’identifiant `adobe:aem:editor` représente la connexion à l’éditeur universel d’Adobe.
 
 Les `itemid` utilisent le préfixe `urn` pour raccourcir l’identifiant.
 

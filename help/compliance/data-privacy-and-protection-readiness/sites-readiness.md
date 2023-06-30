@@ -2,10 +2,10 @@
 title: Règlement sur la protection et la confidentialité des données – Niveau de préparation d’Adobe Experience Manager as a Cloud Service Sites
 description: Découvrez la prise en charge d’Adobe Experience Manager as a Cloud Service Sites relative aux différents règlements sur la protection et la confidentialité des données ; notamment le Règlement général sur la protection des données (RGPD) de l’UE et la Loi sur la protection de la vie privée des consommateurs de Californie, ainsi que la manière de se conformer à ces règlements lors de la mise en œuvre d’un nouveau projet AEM as a Cloud Service.
 exl-id: fdcad111-0cdd-46cc-964c-3f8669ca2030
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 62%
+source-wordcount: '1025'
+ht-degree: 86%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 62%
 >
 >Le contenu de ce document ne constitue pas un avis juridique et ne vise pas à le remplacer.
 >
->Consultez le service juridique de votre entreprise pour obtenir des conseils concernant les réglementations sur la protection des données et la confidentialité des données.
+>Consultez le service juridique de votre entreprise pour obtenir des conseils sur les réglementations relatives à la protection des données et à la confidentialité des données.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ ht-degree: 62%
 
 Adobe Experience Manager as a Cloud Service Sites est prêt à accompagner ses clients pour les aider à respecter leurs obligations en matière de confidentialité et de protection des données. Cette page guide les clients à travers les procédures de gestion des demandes RGPD dans AEM Sites. Elle décrit l’emplacement des données privées stockées et la procédure pour les supprimer manuellement ou à l’aide de code.
 
-Pour plus d’informations, consultez le [Centre de traitement des données personnelles d’Adobe](https://www.adobe.com/fr/privacy.html).
+Pour plus d’informations, voir [Centre de traitement des données personnelles des Adobes](https://www.adobe.com/fr/privacy.html).
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Les comptes utilisateur et le contenu généré par les utilisateurs sur le serv
 
 Les comptes utilisateur utilisés pour authentifier les visiteurs sur le site et le contenu généré par les utilisateurs sur le serveur de publication sont abordés dans la [documentation d’AEM Foundation](/help/compliance/data-privacy-and-protection-readiness/aem-readiness.md).
 
-Par défaut, les composants AEM Sites ne stockent pas les données de formulaires saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour traitement ultérieur.
+Par défaut, les composants AEM Sites ne stockent pas les données de formulaires saisies par les visiteurs sur le serveur de publication. Il est recommandé de transférer les données vers un système tiers ou vers Adobe Campaign pour un traitement ultérieur.
 
 ## Souscription/exclusion {#opt-in-opt-out}
 
@@ -76,13 +76,13 @@ Pour l’exclusion :
 
 AEM Sites comprend une intégration facultative à Analytics Foundation qui utilise la fonctionnalité incluse dans le service On-demand d’Adobe Analytics.
 
-Pour plus d’informations sur la gestion des requêtes des titulaires de données liées à Adobe Analytics, voir [Adobe Analytics et la confidentialité des données](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=fr).
+Pour plus d’informations sur la gestion des demandes des titulaires de données liées à Adobe Analytics, voir [Adobe Analytics et confidentialité des données](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=fr).
 
 ## Personalization Foundation by Target {#personalization-foundation-by-target}
 
 AEM Sites comprend une intégration facultative à Personalization Foundation by Target utilisant la fonctionnalité incluse dans le service On-demand Adobe Target.
 
-Pour plus d’informations sur la gestion des requêtes des titulaires de données liées à Adobe Target, voir [Adobe Target : Confidentialité et Règlement général sur la protection des données (RGPD)](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html).
+Pour plus d’informations sur la gestion des demandes des titulaires de données liées à Adobe Target, voir [Adobe Target - Confidentialité et Règlement général sur la protection des données](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=fr).
 
 ## ContextHub {#contexthub}
 
@@ -90,13 +90,13 @@ Pour plus d’informations sur la gestion des requêtes des titulaires de donné
 AEM provides an optional data layer with [ContextHub](/help/sites-developing/contexthub.md).
 -->
 
-AEM fournit une couche de données facultative avec ContextHub. Cela permet de conserver les données spécifiques aux visiteurs dans le navigateur, à utiliser pour la personnalisation basée sur des règles.
+AEM fournit une couche de données facultative avec ContextHub. Cela permet de conserver les données spécifiques aux visiteurs et aux visiteuses dans le navigateur, à utiliser pour la personnalisation basée sur des règles.
 
-Par défaut, ces données de visiteur ne sont pas stockées dans AEM ; AEM envoie des règles à la couche de données pour prendre des décisions de personnalisation dans le navigateur.
+Par défaut, ces données de visiteur ou de visiteuse ne sont pas stockées dans AEM ; AEM envoie des règles à la couche de données pour prendre des décisions de personnalisation dans le navigateur.
 
 ### Mise en œuvre de la souscription/l’exclusion {#implementing-opt-in-opt-out}
 
-Le propriétaire du site doit mettre en oeuvre un composant d’exclusion conformément aux instructions suivantes.
+Le ou la propriétaire du site doit mettre en œuvre un composant d’exclusion conformément aux instructions suivantes.
 
 Ces instructions implémentent l’inclusion comme valeur par défaut. Ainsi, un visiteur du site web doit clairement donner son accord avant que toute donnée personnelle soit stockée dans la persistance du navigateur (côté client).
 
@@ -105,21 +105,21 @@ Ces instructions implémentent l’inclusion comme valeur par défaut. Ainsi, un
 
    * d’accepter ;
    * de refuser ;
-   * modifier leur choix précédent ;
+   * de modifier leur choix précédent ;
 
-* Si un visiteur du site accepte les conditions générales du site, le cookie d’exclusion ContextHub doit être supprimé :
+* Si un visiteur ou une visiteuse du site accepte les conditions générales du site, le cookie d’exclusion ContextHub doit être supprimé :
 
   ```
   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
   ```
 
-* Si un visiteur du site n’accepte pas les conditions générales du site, le cookie d’exclusion ContextHub doit être défini :
+* Si un visiteur ou une visiteuse du site n’accepte pas les conditions générales du site, le cookie d’exclusion ContextHub doit être défini :
 
   ```
   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
   ```
 
-* Pour vérifier si ContextHub s’exécute en mode d’exclusion, l’appel suivant doit être effectué dans la console du navigateur :
+* Pour vérifier si ContextHub s’exécute en mode d’exclusion, l’appel suivant doit être effectué dans la console du navigateur :
 
   ```
   var isOptedOut = ContextHub.isOptedOut(true) === true;
@@ -128,13 +128,13 @@ Ces instructions implémentent l’inclusion comme valeur par défaut. Ainsi, un
 
 ### Aperçu de la persistance de ContextHub {#previewing-persistence-of-contexthub}
 
-Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut :
+Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur ou une utilisatrice peut :
 
-* Utilisez la console du navigateur ; par exemple :
+* Utiliser la console du navigateur, par exemple :
 
    * Chrome :
 
-      * Ouvrez Outils de développement > Application > Stockage :
+      * Ouvrez Outils de développement > Application > Stockage :
 
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
@@ -142,7 +142,7 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
 
    * Firefox :
 
-      * Ouvrez Outils de développement > Stockage :
+      * Ouvrez Outils de développement > Stockage :
 
          * Stockage local > (site web) > ContextHubPersistence
          * Stockage de session > (site web) > ContextHubPersistence
@@ -150,8 +150,8 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
 
    * Safari :
 
-      * Ouvrez Préférences > Avancé > Afficher le menu Développer dans la barre de menus.
-      * Ouvrez Développer > Afficher la console JavaScript .
+      * Ouvrez Préférences > Avancé > Afficher le menu Développer dans la barre de menus
+      * Ouvrez Développer > Afficher la console JavaScript
 
          * Console > Stockage > Stockage local > (site web) > ContextHubPersistence
          * Console > Stockage > Stockage de session > (site web) > ContextHubPersistence
@@ -165,38 +165,9 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
          * `sessionStorage.getItem('ContextHubPersistence')`
          * `document.cookie`
 
-* Utilisez l’API ContextHub dans la console du navigateur :
+* Utiliser l’API ContextHub dans la console du navigateur :
 
-   * ContextHub fournit les couches de persistance des données suivantes :
-
-      * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
-      * `ContextHub.Utils.Persistence.Modes.SESSION`
-      * `ContextHub.Utils.Persistence.Modes.COOKIE`
-      * `ContextHub.Utils.Persistence.Modes.WINDOW`
-
-     Le magasin ContextHub définit le calque de persistance utilisé. De ce fait, pour afficher l’état actuel de la persistance, tous les calques doivent être vérifiés.
-
-Par exemple, pour afficher les données stockées dans localStorage :
-
-Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut :
-
-* Utilisez la console du navigateur :
-
-   * Chrome - ouvrez Outils de développement > Application > Stockage :
-
-      * Stockage local > (site web) > ContextHubPersistence
-      * Stockage de session > (site web) > ContextHubPersistence
-      * Cookies > (site web) > SessionPersistence
-
-   * Firefox - ouvrez Outils de développement > Stockage :
-
-      * Stockage local > (site web) > ContextHubPersistence
-      * Stockage de session > (site web) > ContextHubPersistence
-      * Cookies > (site web) > SessionPersistence
-
-* Utilisez l’API ContextHub dans la console du navigateur :
-
-   * ContextHub fournit les couches de persistance des données suivantes :
+   * ContextHub fournit les couches de persistance des données suivantes :
 
       * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
       * `ContextHub.Utils.Persistence.Modes.SESSION`
@@ -205,7 +176,36 @@ Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur peut
 
      Le magasin ContextHub définit le calque de persistance utilisé. De ce fait, pour afficher l’état actuel de la persistance, tous les calques doivent être vérifiés.
 
-Par exemple, pour afficher les données stockées dans localStorage :
+Par exemple, pour afficher les données stockées dans localStorage :
+
+Pour prévisualiser la persistance utilisée par ContextHub, un utilisateur ou une utilisatrice peut :
+
+* Utiliser la console du navigateur :
+
+   * Chrome - Ouvrez Outils de développement > Application > Stockage :
+
+      * Stockage local > (site web) > ContextHubPersistence
+      * Stockage de session > (site web) > ContextHubPersistence
+      * Cookies > (site web) > SessionPersistence
+
+   * Firefox - Ouvrez Outils de développement > Stockage :
+
+      * Stockage local > (site web) > ContextHubPersistence
+      * Stockage de session > (site web) > ContextHubPersistence
+      * Cookies > (site web) > SessionPersistence
+
+* Utiliser l’API ContextHub dans la console du navigateur :
+
+   * ContextHub fournit les couches de persistance des données suivantes :
+
+      * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
+      * `ContextHub.Utils.Persistence.Modes.SESSION`
+      * `ContextHub.Utils.Persistence.Modes.COOKIE`
+      * `ContextHub.Utils.Persistence.Modes.WINDOW`
+
+     Le magasin ContextHub définit le calque de persistance utilisé. De ce fait, pour afficher l’état actuel de la persistance, tous les calques doivent être vérifiés.
+
+Par exemple, pour afficher les données stockées dans localStorage :
 
 ```
 var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.LOCAL });
@@ -214,9 +214,9 @@ console.log(storage.getTree());
 
 ### Effacement de la persistance de ContextHub {#clearing-persistence-of-contexthub}
 
-Pour effacer la persistance ContextHub :
+Pour effacer la persistance ContextHub :
 
-* Pour effacer la persistance des magasins actuellement chargés :
+* Pour effacer la persistance des magasins actuellement chargés :
 
   ```
   // to be able to fully access persistence layer, Opt-Out must be turned off
@@ -229,7 +229,7 @@ Pour effacer la persistance ContextHub :
   ContextHub.resetAllStores();
   ```
 
-* Pour effacer un calque de persistance spécifique ; par exemple, sessionStorage :
+* Pour effacer un niveau de persistance spécifique, par exemple, sessionStorage :
 
   ```
   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
@@ -240,7 +240,7 @@ Pour effacer la persistance ContextHub :
   console.log(storage.getTree());
   ```
 
-* Pour effacer tous les calques de persistance ContextHub, le code approprié doit être appelé pour tous les calques :
+* Pour effacer tous les niveaux de persistance ContextHub, le code approprié doit être appelé pour tous les niveaux :
 
    * `ContextHub.Utils.Persistence.Modes.LOCAL` (default)
    * `ContextHub.Utils.Persistence.Modes.SESSION`

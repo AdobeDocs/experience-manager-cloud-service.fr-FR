@@ -5,7 +5,7 @@ exl-id: 0ccce328-a356-4ba9-b7fe-f67abc25b924
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1107'
-ht-degree: 92%
+ht-degree: 94%
 
 ---
 
@@ -105,7 +105,7 @@ Vous êtes prêt à poursuivre votre parcours d’intégration en apprenant à [
 
 ## Ressources supplémentaires {#additional-resources}
 
-Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
+Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez aller au delà du contenu du parcours d’intégration.
 
 * [Présentation d’Admin Console](https://helpx.adobe.com/fr/enterprise/using/admin-console.html) - Présentation complète d’Admin Console
 * [Créer ou mettre à jour votre Adobe ID](https://helpx.adobe.com/fr/manage-account/using/create-update-adobe-id.html#HowtocreateorupdateyourAdobeID) - Découvrez comment créer un Adobe ID, le modifier et gérer plusieurs Adobe ID.

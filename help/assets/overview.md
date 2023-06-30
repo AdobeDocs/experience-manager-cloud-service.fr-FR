@@ -8,7 +8,7 @@ exl-id: 4437f214-d058-4975-8b8f-869a12c8103b
 source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
 workflow-type: tm+mt
 source-wordcount: '740'
-ht-degree: 67%
+ht-degree: 68%
 
 ---
 
@@ -65,12 +65,12 @@ Les nouvelles fonctionnalités importantes sont les suivantes :
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)

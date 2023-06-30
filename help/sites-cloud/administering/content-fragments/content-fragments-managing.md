@@ -254,7 +254,7 @@ Vous pouvez publier vos fragments de contenu sur :
   Pour plus d’informations sur les environnements de prévisualisation, voir :
   >
   * [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md#access-preview-service)
-  * [Configuration des paramètres OSGi pour le niveau d’aperçu](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+  * [Configuration des paramètres OSGi pour le niveau de prévisualisation](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
   * [Débogage de l’aperçu à l’aide de Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)
 
 Pour publier vos fragments de contenu à l’aide du **Publier** dans la barre d’outils de la fonction [Console Fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments-console.md#actions-selected-content-fragment):

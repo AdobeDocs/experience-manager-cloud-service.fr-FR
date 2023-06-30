@@ -5,7 +5,7 @@ exl-id: 5dfa353b-84c5-4b07-bfcd-b03c2d361553
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '734'
-ht-degree: 45%
+ht-degree: 46%
 
 ---
 
@@ -97,6 +97,6 @@ Voir la section [Préparation d’AEM Sites aux réglementations sur la protect
 Les intégrations d’Adobe Experience Manager as a Cloud Service avec Adobe Target et Adobe Analytics sont mises en oeuvre avec les services prêts pour la protection des données et la confidentialité (par exemple, le RGPD). Aucune donnée personnelle provenant d’Adobe Target ou d’Adobe Analytics n’est stockée dans AEM en lien avec les intégrations.
 Pour en savoir plus, voir :
 
-* [Adobe Target – Présentation de la confidentialité](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html)
+* [Adobe Target – Présentation de la confidentialité](https://experienceleague.adobe.com/docs/target-dev/developer/implementation/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=fr)
 
 * [Processus relatif à la confidentialité des données Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)

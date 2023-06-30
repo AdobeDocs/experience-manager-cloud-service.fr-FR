@@ -1,6 +1,6 @@
 ---
 title: Profils de métadonnées
-description: Connaître les profils de métadonnées des ressources. Découvrez comment créer un profil de métadonnées et l’appliquer aux ressources de dossier.
+description: Apprenez à connaître les profils de métadonnées des ressources. Découvrez comment créer un profil de métadonnées et comment l’appliquer aux ressources du dossier.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
@@ -8,7 +8,7 @@ exl-id: eef90c6a-b354-4342-8b97-21d067ae2979
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=en) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/metadata-config.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
 Un profil de métadonnées vous permet d’appliquer des métadonnées par défaut aux ressources d’un dossier. Créez un profil de métadonnées et appliquez-le à un dossier. Toute ressource chargée par la suite dans le dossier héritera des métadonnées par défaut que vous avez configurées dans le profil de métadonnées.
@@ -135,12 +135,12 @@ Vous pouvez supprimer un profil de métadonnées d’un dossier à partir du men
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)

@@ -20,7 +20,7 @@ Cette page décrit les règles de qualité du code personnalisé exécutées par
 
 >[!NOTE]
 >
->Les règles SonarQube complètes ne peuvent pas être téléchargées en raison d’informations exclusives d’Adobe. Vous pouvez télécharger la liste complète des règles [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples des règles.
+>Les règles SonarQube complètes ne peuvent pas être téléchargées en raison des informations propriétaires d’Adobe. Vous pouvez télécharger la liste complète des règles [via ce lien](/help/implementing/cloud-manager/assets/CodeQuality-rules-latest-CS.xlsx). Poursuivez la lecture de ce document pour obtenir des descriptions et des exemples de règles.
 
 >[!NOTE]
 >
@@ -761,7 +761,7 @@ Tout comme la règle [Les packages ne doivent pas contenir de configurations OSG
 * **Gravité** : mineure
 * **Depuis** : version 2020.5.0
 
-La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` définit le mode de création par défaut dans Experience Manager. Comme l’interface utilisateur classique est abandonnée depuis Experience Manager 6.4, un problème survient lorsque le mode de création par défaut est configuré sur l’interface utilisateur classique.
+La configuration OSGi `com.day.cq.wcm.core.impl.AuthoringUIModeServiceImpl` définit le mode de création par défaut dans Experience Manager. Comme l’interface utilisateur classique a été abandonnée depuis Experience Manager 6.4, un problème se produit lorsque le mode de création par défaut est configuré sur l’interface utilisateur classique.
 
 ### Les boîtes de dialogue de composants doivent être de type interface utilisateur tactile. {#oakpal-components-dialogs}
 

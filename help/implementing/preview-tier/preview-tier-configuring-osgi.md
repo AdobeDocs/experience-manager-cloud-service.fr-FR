@@ -1,21 +1,21 @@
 ---
-title: Configuration des paramètres OSGi pour le niveau d’aperçu
-description: Découvrez comment configurer le service d’aperçu AEM pour prévisualiser le contenu avant la mise en ligne.
+title: Configuration des paramètres OSGi pour le niveau de prévisualisation
+description: Découvrez comment configurer le service de prévisualisation AEM pour prévisualiser le contenu avant sa mise en ligne.
 exl-id: 1200bb17-8a3c-4e41-85f4-ed2334b61f69
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 53%
+ht-degree: 89%
 
 ---
 
-# Configuration des paramètres OSGi pour le niveau d’aperçu {#configure-osgi-preview-tier}
+# Configuration des paramètres OSGi pour le niveau de prévisualisation {#configure-osgi-preview-tier}
 
-AEM propose un service de prévisualisation de sites qui permet aux développeurs et aux auteurs de contenu de prévisualiser l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et soit disponible publiquement.
+AEM propose un service de prévisualisation Sites qui permet aux équipes de développement et de création de contenu de prévisualiser l’expérience finale d’un site web avant qu’il n’atteigne l’environnement de publication et qu’il soit disponible publiquement.
 
-Elle permet de prévisualiser une gamme d’expériences qui ne seraient pas visibles autrement à partir de l’environnement de création. Par exemple, les transitions de page, les fragments d’expérience et tout autre contenu côté publication uniquement.
+Ce service permet de prévisualiser une gamme d’expériences qui ne seraient pas visibles autrement à partir de l’environnement de création. Il s’agit par exemple des transitions de page, des fragments d’expérience et de tout autre contenu côté publication uniquement.
 
-Les valeurs de propriété OSGi du niveau d’aperçu sont héritées du niveau de publication. Toutefois, les valeurs du niveau d’aperçu peuvent être distinctes du niveau de publication en définissant le `service` paramètre à la valeur `preview`.
+Les valeurs de propriété OSGi du niveau de prévisualisation sont héritées du niveau de publication. Toutefois, les valeurs du niveau de prévisualisation peuvent être distinctes du niveau de publication en définissant le paramètre `service` sur la valeur `preview`.
 
 >[!NOTE]
 >

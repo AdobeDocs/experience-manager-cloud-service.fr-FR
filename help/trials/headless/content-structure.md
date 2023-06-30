@@ -1,13 +1,13 @@
 ---
 title: Créer la structure de contenu pour votre application
-description: Découvrez comment utiliser AEM modèles de fragments de contenu pour créer votre structure de contenu, qui sert de base à votre contenu sans interface.
+description: Découvrez comment utiliser les modèles de fragment de contenu d’AEM pour créer votre structure de contenu, qui sert de base à votre contenu découplé.
 hidefromtoc: true
 index: false
 exl-id: ace9b9f3-8bc6-4a36-a51c-ff60cdd339ce
 source-git-commit: e507b409e4d2382b1eac54b11a9ad68fd965db4b
 workflow-type: tm+mt
 source-wordcount: '993'
-ht-degree: 20%
+ht-degree: 34%
 
 ---
 
@@ -59,9 +59,9 @@ L’éditeur de modèles de fragments de contenu vous permet de configurer les t
 >
 >Il est important de suivre les schémas de nommage dans les instructions suivantes, car ces noms spécifiques sont référencés dans les modules ultérieurs.
 
-1. Faites glisser un **Texte sur une seule ligne** du champ **Types de données** à droite de l’éditeur et déposez-le sur votre modèle de fragment de contenu.
+1. Faites glisser un **champ de texte monoligne** depuis le panneau **Types de données** à droite de l’éditeur et déposez-le sur votre modèle de fragment de contenu.
 
-1. Une fois un type de données placé, la variable **Types de données** remplacée automatiquement par **Propriétés** vous permettant de définir les détails du type de données que vous avez placé. Pour ce premier champ, vous souhaitez stocker le titre du voyage ou de l’aventure. Renseignez les propriétés suivantes.
+1. Une fois un type de données placé, la variable **Types de données** remplacée automatiquement par **Propriétés** vous permettant de définir les détails du type de données que vous avez placé. Pour ce premier champ, vous souhaitez stocker le titre du voyage ou de l’aventure. Saisissez les propriétés suivantes :
 
    * **Render As :** **Champ de texte** - Lorsque vous créez une aventure, ce champ stocke le titre de l’aventure.
    * **Libellé du champ :** `Title` - Libellé affiché pour ce champ lors de la création d’une aventure.
@@ -76,11 +76,11 @@ Passez à la section suivante afin de pouvoir ajouter les champs nécessaires po
 
 ## Ajouter des champs au modèle {#additional-fields}
 
-Vous avez déjà un champ pour le titre de l&#39;aventure. Vous devez maintenant ajouter des champs pour capturer la description, le prix et une image représentative de l’aventure.
+Vous avez déjà un champ pour le titre de l’aventure. Vous devez maintenant ajouter des champs pour capturer la description, le prix et une image représentative de l’aventure.
 
 >[!TIP]
 >
->Le **Adventure** Le modèle est basé sur l’exemple de site WKND pour AEM. Vous pouvez [Visitez le site ici](https://wknd.site/us/en/adventures/yosemite-backpacking.html) pour afficher le contenu qui utilise la variable **Adventure** modèle.
+>Le modèle **Aventure** est basé sur l’exemple de site WKND pour AEM. Vous pouvez [visiter le site ici](https://wknd.site/us/en/adventures/yosemite-backpacking.html) pour afficher le contenu qui utilise le modèle **Aventure**.
 
 Suivez les mêmes étapes que ci-dessus pour ajouter ces champs supplémentaires. La seule différence réside dans les propriétés que vous devez définir.
 

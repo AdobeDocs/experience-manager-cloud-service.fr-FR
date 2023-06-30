@@ -5,7 +5,7 @@ exl-id: e449a62a-c8ad-4d39-a170-abacdda3f1b1
 source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
 workflow-type: tm+mt
 source-wordcount: '844'
-ht-degree: 59%
+ht-degree: 67%
 
 ---
 
@@ -97,15 +97,15 @@ Voir [`aem-testing-clients` Référentiel GitHub](https://github.com/adobe/aem-t
 >
 >Pour exécuter les tests fonctionnels à partir de votre ordinateur local, créez un utilisateur ou une utilisatrice avec des autorisations de type administration afin d’obtenir le même comportement.
 
-1. L’infrastructure en conteneur qui est prévue pour les tests fonctionnels est limitée par les limites suivantes :
+1. L’infrastructure en conteneur qui est prévue pour les tests fonctionnels est restreinte par les limites suivantes :
 
 
 | Type | Valeur | Description |
 |----------------------|-------|--------------------------------------------------------------------|
-| CPU | 0.5 | Quantité de temps réservé au processeur par exécution de test |
-| Mémoire | 0,5 Gi | Quantité de mémoire allouée au test, valeur en gibioctets |
-| Expiration | 30 m | Durée au bout de laquelle le test est arrêté. |
-| Durée recommandée | 15 m | Adobe recommande d’écrire les tests pour qu’ils ne prennent pas plus de temps que cette durée. |
+| Processeur | 0,5 | Quantité de temps réservé au processeur par exécution de test |
+| Mémoire | 0,5Gi | Quantité de mémoire allouée au test, valeur en gibioctets |
+| Expiration | 30m | Durée au bout de laquelle le test est arrêté. |
+| Durée recommandée | 15m | Adobe recommande d’écrire les tests pour qu’ils ne prennent pas plus de temps que cette durée. |
 
 >[!NOTE]
 >
@@ -129,12 +129,12 @@ Les propriétés système sont les suivantes.
 | `sling.it.instances` | nombre d’instances, pour correspondre au service cloud, doit être défini sur `2` | `2` |
 | `sling.it.instance.url.1` | doit être défini sur l’URL de création | `http://localhost:4502` |
 | `sling.it.instance.runmode.1` | le mode d’exécution de la première instance doit être défini sur `author` | `author` |
-| `sling.it.instance.adminUser.1` | doit être défini sur l’utilisateur administrateur de création. | `admin` |
-| `sling.it.instance.adminPassword.1` | doit être défini sur le mot de passe administrateur de création. |                         |
+| `sling.it.instance.adminUser.1` | doit être défini sur l’utilisateur ou l’utilisatrice admin de création. | `admin` |
+| `sling.it.instance.adminPassword.1` | doit être défini sur le mot de passe de l’administrateur ou l’administratrice de création. |                         |
 | `sling.it.instance.url.2` | doit être défini sur l’URL de publication | `http://localhost:4503` |
 | `sling.it.instance.runmode.2` | le mode d’exécution de la deuxième instance doit être défini sur `publish` | `publish` |
-| `sling.it.instance.adminUser.2` | doit être défini sur l’utilisateur administrateur de publication. | `admin` |
-| `sling.it.instance.adminPassword.2` | doit être défini sur le mot de passe de l’administrateur de publication. |                         |
+| `sling.it.instance.adminUser.2` | doit être défini sur l’utilisateur ou l’utilisatrice admin de publication. | `admin` |
+| `sling.it.instance.adminPassword.2` | doit être défini sur le mot de passe de l’administrateur ou l’administratrice de publication. |                         |
 
 
 

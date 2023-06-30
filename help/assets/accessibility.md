@@ -1,6 +1,6 @@
 ---
 title: Accessibilité dans [!DNL Experience Manager Assets]
-description: Découvrez comment les fonctionnalités d’accessibilité dans  [!DNL Adobe Experience Manager]  as a aident les utilisateurs présentant un handicap. [!DNL Cloud Service]
+description: Découvrez comment les fonctionnalités d’accessibilité dans [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] aident les utilisateurs présentant un handicap.
 contentOwner: AG
 feature: Accessibility,Asset Management
 role: User,Architect,Leader
@@ -8,7 +8,7 @@ exl-id: a6d24ba6-3cb1-42cb-9942-f78572c93358
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1943'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -222,15 +222,15 @@ Lors du partage de ressources, les fonctionnalités suivantes améliorent l’ac
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
 
 ## Rédiger des commentaires {#a11y-feedback}
 

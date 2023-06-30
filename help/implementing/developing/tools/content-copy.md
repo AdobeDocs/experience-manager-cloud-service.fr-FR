@@ -5,7 +5,7 @@ exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
 source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
 workflow-type: tm+mt
 source-wordcount: '1203'
-ht-degree: 40%
+ht-degree: 54%
 
 ---
 
@@ -17,7 +17,7 @@ L’outil de copie de contenu permet aux utilisateurs de copier du contenu modif
 
 Les données actuelles et réelles sont utiles à des fins de test, de validation et d’acceptation par l’utilisateur. L’outil de copie de contenu vous permet de copier du contenu d’un environnement de production AEM as a Cloud Service vers un environnement d’évaluation, de développement ou [Environnement de développement rapide (RDE)](/help/implementing/developing/introduction/rapid-development-environments.md) environnement pour de tels tests.
 
-Le contenu à copier est défini par un jeu de contenu. Un jeu de contenu est constitué d’une liste de chemins JCR qui contiennent le contenu modifiable à copier d’un environnement de service de création de source vers un environnement de service de création cible dans le même programme Cloud Manager. Les chemins d’accès suivants sont autorisés dans un jeu de contenu.
+Le contenu à copier est défini par un jeu de contenu. Un jeu de contenu est constitué d’une liste de chemins JCR qui contiennent le contenu modifiable à copier d’un environnement source de service de création vers un environnement cible de service de création, dans le même programme Cloud Manager. Les chemins d’accès suivants sont autorisés dans un jeu de contenu.
 
 ```text
 /content
@@ -36,7 +36,7 @@ Lors de la copie de contenu, l’environnement source est la source de vérité.
 
 Pour utiliser l’outil de copie de contenu, certaines autorisations sont requises dans les environnements source et cible.
 
-| Fonctionnalité copie de contenu | Groupe d’administrateurs AEM | Rôle de responsable de déploiement |
+| Fonctionnalité copie de contenu | Groupe d’administrateurs et administratrices AEM | Rôle de responsable de déploiement |
 |---|---|---|
 | Créer et modifier des [jeux de contenu](#create-content-set) | Requis | Non requis |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
@@ -121,13 +121,13 @@ Une fois un jeu de contenu créé, vous pouvez l’utiliser pour copier du conte
    >
    >* L’utilisateur ne dispose pas des autorisations appropriées.
    >* Un pipeline en cours d’exécution ou une opération de copie de contenu est en cours dans l’environnement.
-   >* L’environnement est en veille ou en train de se développer.
+   >* L’environnement est en veille ou en train de démarrer.
 
 1. Dans la boîte de dialogue **Copier le contenu**, spécifiez la source et la destination de votre action de copie de contenu.
 
    ![Copie de contenu](assets/copying-content.png)
 
-   * Le contenu ne peut être copié que d’un environnement supérieur vers un environnement inférieur ou entre des environnements de développement/RDE où la hiérarchie des environnements est la suivante (du plus haut au plus bas) :
+   * Le contenu ne peut être copié que d’un environnement supérieur vers un environnement inférieur ou entre des environnements de développement/RDE où la hiérarchie des environnements est la suivante (du plus haut au plus bas) :
       * Production
       * Évaluation
       * Développement/RDE
@@ -159,13 +159,13 @@ Une fois que vous avez commencé à copier du contenu, le processus peut avoir l
 | En cours | L’opération de copie de contenu est en cours. |
 | Échec | L’opération de copie de contenu a échoué. |
 | Terminé | L’opération de copie de contenu est terminée avec succès. |
-| Annulé | L’utilisateur annule une opération de copie de contenu après l’avoir démarrée |
+| Annulé | L’utilisateur ou l’utilisatrice annule une opération de copie de contenu après l’avoir démarrée. |
 
 ### Annulation d’un processus de copie {#canceling}
 
 Si vous devez abandonner une opération de copie de contenu après son démarrage, vous pouvez éventuellement l’annuler.
 
-Pour ce faire, sur la page **Copie de l’activité de contenu** , sélectionnez **Annuler** à partir du menu représentant des points de suspension du processus de copie que vous avez démarré précédemment.
+Pour ce faire, sur la page **Activité de copie de contenu**, sélectionnez l’action **Annuler** à partir du menu représentant des points de suspension pour le processus de copie que vous avez démarré précédemment.
 
 ![Annuler la copie de contenu](assets/content-copy-cancel.png)
 
@@ -180,7 +180,7 @@ Pour ce faire, sur la page **Copie de l’activité de contenu** , sélectionnez
 L’outil de copie de contenu présente les limites suivantes.
 
 * Le contenu ne peut pas être copié d’un environnement inférieur vers un environnement supérieur.
-* Le contenu ne peut être copié que depuis et vers les services de création.
+* Il ne peut être copié que depuis et vers les services de création.
 * Une copie de contenu ne peut pas être effectuée sur plusieurs programmes.
 * L’exécution simultanée d’opérations de copie de contenu sur le même environnement n’est pas possible.
 * Vous pouvez spécifier jusqu’à 50 chemins par jeu de contenu. Il n’existe aucune limitation sur les chemins exclus.

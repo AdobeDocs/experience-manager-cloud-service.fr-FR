@@ -5,7 +5,7 @@ exl-id: 262939cc-05a5-41c9-86ef-68718d2cd6a9
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2375'
-ht-degree: 90%
+ht-degree: 91%
 
 ---
 
@@ -497,7 +497,7 @@ Define DISP_LOG_LEVEL debug
 
 >[!NOTE]
 >
->Pour AEM environnements as a Cloud Service, le débogage est le niveau maximal de verbosité. Le niveau du journal de trace n’est pas pris en charge. Évitez donc de le définir lorsque vous travaillez dans des environnements cloud.
+>Pour les environnements AEM as a Cloud Service, le débogage est le niveau maximal de verbosité. Le niveau de journalisation de trace n’étant pas pris en charge, évitez de le définir lorsque vous travaillez dans des environnements cloud.
 
 ## Comment accéder aux journaux {#how-to-access-logs}
 

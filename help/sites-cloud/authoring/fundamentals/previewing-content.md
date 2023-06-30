@@ -52,6 +52,6 @@ La seule différence réside dans le fait que vous pouvez sélectionner la **Des
 
 Voir également :
 
-* [Configuration des paramètres OSGi pour le niveau d’aperçu](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
+* [Configuration des paramètres OSGi pour le niveau de prévisualisation](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#configuring-osgi-settings-for-the-preview-tier)
 
 * [Débogage de l’aperçu à l’aide de Developer Console](/help/implementing/preview-tier/preview-tier-configuring-osgi.md#debugging-preview-using-the-developer-console)

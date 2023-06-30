@@ -6,7 +6,7 @@ exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2847'
-ht-degree: 53%
+ht-degree: 56%
 
 ---
 
@@ -86,7 +86,7 @@ Vous pouvez avoir un ou plusieurs de ces fichiers. Ils contiennent des entrées 
 >
 >En mode flexible, vous devez utiliser des chemins relatifs plutôt que des chemins absolus.
 
-Assurez-vous qu’au moins un hôte virtuel est toujours disponible et correspond à ServerAlias `\*.local`, `localhost`, et `127.0.0.1` qui sont nécessaires pour l’invalidation de Dispatcher. Les alias du serveur `*.adobeaemcloud.net` et `*.adobeaemcloud.com` sont également requis dans au moins une configuration vhost et sont nécessaires pour les processus d’Adobe internes.
+Assurez-vous qu’au moins un hôte virtuel est toujours disponible et correspond à ServerAlias `\*.local`, `localhost`, et `127.0.0.1` qui sont nécessaires pour l’invalidation de Dispatcher. Les alias de serveur `*.adobeaemcloud.net` et `*.adobeaemcloud.com` sont également requis dans au moins une configuration vhost et sont nécessaires pour les processus Adobe internes.
 
 Si vous souhaitez faire correspondre l’hôte exact car vous disposez de plusieurs fichiers vhost, vous pouvez suivre l’exemple suivant :
 
@@ -156,7 +156,7 @@ Il est recommandé que les fichiers ci-dessus fassent référence aux fichiers n
 Contient un exemple d’hôte virtuel. Pour votre propre hôte virtuel, créez une copie de ce fichier, personnalisez-la, accédez à `conf.d/enabled_vhosts` et créez un lien symbolique vers votre copie personnalisée.
 Ne copiez pas directement le fichier default.vhost dans `conf.d/enabled_vhosts`.
 
-Assurez-vous qu’un hôte virtuel est toujours disponible et correspond à ServerAlias `\*.local`, `localhost`, et `127.0.0.1` qui sont nécessaires pour l’invalidation de Dispatcher. Les alias du serveur `*.adobeaemcloud.net` et `*.adobeaemcloud.com` sont nécessaires pour les processus d’Adobe internes.
+Assurez-vous qu’un hôte virtuel est toujours disponible et correspond à ServerAlias `\*.local`, `localhost`, et `127.0.0.1` qui sont nécessaires pour l’invalidation de Dispatcher. Les alias de serveur `*.adobeaemcloud.net` et `*.adobeaemcloud.com` sont nécessaires pour les processus internes d’Adobe.
 
 * `conf.d/dispatcher_vhost.conf`
 
@@ -250,7 +250,7 @@ Le script se compose des trois phases suivantes :
 
 1. Il exécute le programme de validation. Si la configuration n’est pas valide, le script échoue.
 2. Il exécute la variable `httpd -t` pour tester si la syntaxe est correcte, de sorte que Apache httpd puisse démarrer. En cas de réussite, la configuration doit être prête pour le déploiement.
-3. Vérifie que le sous-ensemble des fichiers de configuration du SDK Dispatcher, qui sont destinés à être immuables, comme décrit dans la section [Section Structure de fichier](##flexible-mode-file-structure), n’a pas été modifié et correspond à la version actuelle du SDK.
+3. Il vérifie que le sous-ensemble des fichiers de configuration du SDK du Dispatcher, qui sont censés être modifiables (tel que décrit dans la [section Structure de fichiers](##flexible-mode-file-structure)) n’a pas été modifié et correspond à la version actuelle du SDK.
 
 Lors d’un déploiement de Cloud Manager, la variable `httpd -t` la vérification de syntaxe est également exécutée et toutes les erreurs sont incluses dans Cloud Manager. `Build Images step failure` log.
 
@@ -469,7 +469,7 @@ Les journaux des environnements cloud sont exposés par le biais du service de j
 
 >[!NOTE]
 >
-Pour les environnements sur AEM as a Cloud Service, le débogage est le niveau de verbosité maximal. Le niveau du journal de trace n’est pas pris en charge. Évitez donc de le définir lorsque vous travaillez dans des environnements cloud.
+Pour les environnements sur AEM as a Cloud Service, le débogage est le niveau de verbosité maximal. Le niveau de journalisation de trace n’étant pas pris en charge, évitez de le définir lorsque vous travaillez dans des environnements cloud.
 
 ### Rechargement et validation automatiques {#automatic-reloading}
 

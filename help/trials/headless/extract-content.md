@@ -7,7 +7,7 @@ exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1116'
-ht-degree: 65%
+ht-degree: 92%
 
 ---
 
@@ -117,7 +117,7 @@ Maintenant que vous avez exécuté les deux principaux types de requêtes, vous 
 
 1. Pour exécuter des requêtes sur vos propres fragments de contenu, remplacez le point d’entrée du dossier **Ressources de démonstration AEM** par le dossier **Votre projet**.
 
-1. Supprimez tout le contenu existant dans l’éditeur de requêtes. Saisissez ensuite le crochet ouvert `{` et appuyez sur Ctrl + Espace ou Option + Espace pour obtenir la liste de saisie automatique des modèles définis dans votre point d’entrée. Sélectionnez le modèle que vous avez créé et qui se termine par `List` dans les options. Si vous avez suivi les exemples des modules précédents, vous devez trouver `adventureList` dans la liste de saisie semi-automatique.
+1. Supprimez tout le contenu existant dans l’éditeur de requêtes. Saisissez ensuite le crochet ouvert `{` et appuyez sur Ctrl + Espace ou Option + Espace pour obtenir la liste de saisie automatique des modèles définis dans votre point d’entrée. Sélectionnez le modèle que vous avez créé et qui se termine par `List` dans les options. Si vous avez suivi les exemples des modules précédents, vous devriez trouver `adventureList` dans la liste de saisie automatique.
 
    ![Lancement d’une requête personnalisée.](assets/do-not-localize/custom-query-1.png)
 
@@ -125,7 +125,7 @@ Maintenant que vous avez exécuté les deux principaux types de requêtes, vous 
 
 1. Appuyez ou cliquez sur le bouton **Enjoliver** pour mettre automatiquement en forme votre code afin qu’il soit plus facile à lire.
 
-1. Une fois l’opération terminée, appuyez ou cliquez sur le bouton **Lecture** en haut à gauche de l’éditeur pour exécuter la requête. L’éditeur complète automatiquement la variable `items`, qui sont brièvement surlignées en jaune, et la requête s’exécute.
+1. Une fois l’opération terminée, appuyez ou cliquez sur le bouton **Lecture** en haut à gauche de l’éditeur pour exécuter la requête. L’éditeur complète automatiquement les `items`, qui sont brièvement surlignées en jaune, et la requête s’exécute.
 
 1. Les résultats s’affichent dans le panneau de droite, à côté de l’éditeur de requêtes.
 
@@ -135,13 +135,13 @@ C’est ainsi que votre contenu peut être diffusé aux expériences numériques
 
 ## Requêtes persistantes {#persisted-queries}
 
-Les requêtes persistantes sont le mécanisme préféré pour exposer l’API GraphQL aux applications clientes. Une fois qu’une requête a été conservée, elle peut être demandée à l’aide d’une requête de GET et mise en cache pour une récupération rapide.
+Les requêtes persistantes constituent le mécanisme privilégié pour exposer l’API GraphQL aux applications clientes. Une fois qu’une requête est persistante, vous pouvez la demander à l’aide d’une requête GET et la mettre en cache pour une récupération rapide.
 
-Vous allez créer une requête persistante qui inclut les données que vous souhaitez utiliser à partir de votre application cliente.
+Vous allez créer une requête persistante qui inclut les données que vous souhaitez consommer à partir de votre application cliente.
 
-1. Vous utiliserez les données que vous avez créées précédemment en tant que fragment de contenu. Assurez-vous donc que la variable **Votre projet** le point de fin est sélectionné dans la variable **Point d’entrée** menu déroulant dans le coin supérieur droit de l’éditeur.
+1. Vous allez utiliser les données que vous avez créées précédemment en tant que fragment de contenu. Assurez-vous donc que le point d’entrée **Votre projet** est sélectionné dans le menu déroulant **Point d’entrée** dans le coin supérieur droit de l’éditeur.
 
-1. Copiez le fragment de code suivant.
+1. Copiez l’extrait code suivant.
 
    ```text
       {
@@ -167,7 +167,7 @@ Vous allez créer une requête persistante qui inclut les données que vous souh
 
    >[!NOTE]
    >
-   >Si vous n’avez pas utilisé les mêmes descriptions de champ que celles décrites dans les modules précédents, vous devrez mettre à jour les noms de champ dans cette requête.
+   >Si vous n’avez pas utilisé les mêmes descriptions de champ que celles décrites dans les modules précédents, vous devez mettre à jour les noms de champ dans cette requête.
    >
    >Utilisez la fonction de saisie automatique GraphQL (Ctrl+Espace ou Option+Espace) comme décrit précédemment pour identifier les propriétés disponibles.
 
@@ -177,18 +177,18 @@ Vous allez créer une requête persistante qui inclut les données que vous souh
 
    ![Créer une requête](assets/do-not-localize/own-query.png)
 
-1. Lorsque votre requête est satisfaite, cliquez sur le bouton **Enregistrer sous** dans la partie supérieure de l’éditeur de requêtes pour conserver la requête.
+1. Une fois la requête créée, cliquez sur le bouton **Enregistrer sous** dans la partie supérieure de l’éditeur de requêtes pour la conserver.
 
-1. Dans le **Nom de la requête** pop-up, attribuez le nom à votre requête `adventure-list`.
+1. Dans le pop-up **Nom de la requête**, attribuez le nom `adventure-list` à votre requête.
 
-1. Appuyez ou cliquez sur **Enregistrer sous**.
+1. Cliquez ou appuyez sur **Enregistrer sous**.
 
-   ![Requête persistante](assets/do-not-localize/persist-query.png)
+   ![Conserver la requête](assets/do-not-localize/persist-query.png)
 
-1. La requête est conservée comme confirmée par un message de bannière en bas de l’écran. La requête apparaît désormais également dans le panneau de gauche des requêtes persistantes dans la fenêtre.
+1. La persistance de la requête est confirmée par un message de bannière en bas de l’écran. La requête apparaît désormais également dans le panneau de gauche des requêtes persistantes dans la fenêtre.
 
-1. Pour que la requête persistante soit disponible publiquement, elle doit être publiée, tout comme la manière dont vos fragments de contenu doivent être publiés. Cliquez sur le bouton **Publier** en haut à droite de l’éditeur de requêtes pour publier la requête.
+1. Pour que la requête persistante soit disponible publiquement, vous devez la publier, tout comme pour vos fragments de contenu. Cliquez sur le bouton **Publier** en haut à droite de l’éditeur de requêtes pour publier la requête.
 
 1. La publication est confirmée par une notification de bannière.
 
-Vous disposez désormais d’une nouvelle requête conservée qui ne contiendra que les propriétés et les formats spécifiques que vous avez définis.
+Vous disposez désormais d’une nouvelle requête persistante qui ne contiendra que les propriétés et les formats spécifiques que vous avez définis.

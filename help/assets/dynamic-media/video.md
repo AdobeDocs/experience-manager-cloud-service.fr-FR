@@ -8,7 +8,7 @@ exl-id: 0d5fbb3e-b763-415f-8c69-ea36445f882b
 source-git-commit: 124b363fe341199fdc9b25d25bbf2a9bc8f87d87
 workflow-type: tm+mt
 source-wordcount: '5868'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -27,27 +27,26 @@ Le workflow décrit en détail ci-après vise à vous aider à maîtriser rapide
 >* Voir [Configuration des Cloud Services Dynamic Media](/help/assets/dynamic-media/config-dm.md#configuring-dynamic-media-cloud-services) dans Configuration de Dynamic Media et [Dépannage de Dynamic Media](/help/assets/dynamic-media/troubleshoot-dm.md).
 >
 
-
 1. **Chargez les vidéos Dynamic Media** en procédant comme suit :
 
    * Créez votre propre profil de codage vidéo. Vous pouvez également utiliser le profil _Codage vidéo adaptatif_ prédéfini fourni avec Dynamic Media.
 
       * [Création d’un profil de codage vidéo](/help/assets/dynamic-media/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming).
       * En savoir plus sur les [bonnes pratiques relatives au codage vidéo](#best-practices-for-encoding-videos).
+
    * Associez le profil de traitement vidéo à un ou plusieurs dossiers dans lequel vous allez charger les vidéos issues de sources originales.
 
       * [Application d’un profil vidéo à des dossiers](/help/assets/dynamic-media/video-profiles.md#applying-a-video-profile-to-folders).
       * En savoir plus sur l’[organisation des ressources numériques](/help/assets/organize-assets.md).
+
    * Chargez les vidéos issues de sources originales dans les dossiers. Lorsque vous ajoutez des vidéos au dossier, elles sont codées selon le profil de traitement vidéo affecté au dossier.
 
       * Dynamic Media prend principalement en charge les vidéos de forme courte avec une durée maximale de 30 minutes et une résolution minimale supérieure à 25 x 25.
       * Vous pouvez charger des fichiers vidéo d’une taille de 15 Go chacun au maximum.
       * [Chargement des vidéos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets).
       * En savoir plus sur les [formats de fichiers d’entrée pris en charge](/help/assets/file-format-support.md).
+
    * Surveillez [la progression du codage vidéo](#monitoring-video-encoding-and-youtube-publishing-progress) depuis la vue de la ressource ou du workflow.
-
-
-
 
 1. Pour **gérer les vidéos Dynamic Media**, effectuez l’une des opérations suivantes :
 
@@ -55,21 +54,24 @@ Le workflow décrit en détail ci-après vise à vous aider à maîtriser rapide
 
       * [Organisation des ressources numériques](/help/assets/organize-assets.md)
       * [Recherche de ressources vidéo](/help/assets/search-assets.md#custompredicates) ou [Recherche de ressources](/help/assets/manage-digital-assets.md#search-assets)
+
    * Prévisualisez et publiez des ressources vidéo
 
       * Affichez la vidéo source et les rendus codés de la vidéo avec les miniatures associées :
-         [Prévisualisation de vidéos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) ou [Prévisualisation de ressources](/help/assets/dynamic-media/previewing-assets.md)
-         [Gestion des rendus vidéo](/help/assets/manage-digital-assets.md#managing-renditions)
+        [Prévisualisation de vidéos](/help/assets/manage-video-assets.md#upload-and-preview-video-assets) ou [Prévisualisation de ressources](/help/assets/dynamic-media/previewing-assets.md)
+        [Gestion des rendus vidéo](/help/assets/manage-digital-assets.md#managing-renditions)
 
       * [Gestion des paramètres prédéfinis de visionneuse](/help/assets/dynamic-media/managing-viewer-presets.md)
       * [Publier les ressources](/help/assets/dynamic-media/publishing-dynamicmedia-assets.md)
+
    * Utilisation des métadonnées vidéo
 
       * Modifiez les propriétés vidéo telles que le titre, la description, les balises et les champs de métadonnées personnalisées :
-         [Modification des propriétés vidéo](/help/assets/manage-digital-assets.md#editing-properties)
+        [Modification des propriétés vidéo](/help/assets/manage-digital-assets.md#editing-properties)
 
       * [Gestion des métadonnées des ressources numériques](/help/assets/manage-metadata.md)
       * [Schémas de métadonnées](/help/assets/metadata-schemas.md)
+
    * Examen, approbation et annotation des vidéos, et conservation le contrôle total des versions
 
       * [Annotation de vidéos](/help/assets/manage-video-assets.md#annotate-video-assets) ou [Annotation de ressources](/help/assets/manage-digital-assets.md#annotating)
@@ -80,26 +82,23 @@ Le workflow décrit en détail ci-après vise à vous aider à maîtriser rapide
       * [Examen des ressources des dossiers](/help/assets/bulk-approval.md)
       * [Projets](/help/sites-cloud/authoring/projects/overview.md)
 
-
-
-
 1. Pour **publier les vidéos Dynamic Media**, effectuez l’une des opérations suivantes :
 
    * Si vous utilisez Experience Manager en tant que système de gestion de contenu web (WCM), vous pouvez ajouter directement des vidéos à vos pages web.
 
       * [Ajout de vidéos à des pages web](/help/assets/dynamic-media/adding-dynamic-media-assets-to-pages.md).
+
    * Si vous utilisez un système de gestion de contenu web tiers, vous pouvez lier ou incorporer des vidéos dans vos pages web.
 
       * Intégrez une vidéo à l’aide d’une URL :
-         [Liaison d’URL à votre application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
+        [Liaison d’URL à votre application web](/help/assets/dynamic-media/linking-urls-to-yourwebapplication.md).
 
       * Intégrez une vidéo à l’aide du code intégré dans la page web :
-         [Incorporation de la visionneuse de vidéos dans une page web](/help/assets/dynamic-media/embed-code.md).
+        [Incorporation de la visionneuse de vidéos dans une page web](/help/assets/dynamic-media/embed-code.md).
+
    * [Génération de rapports vidéo](#viewing-video-reports).
 
    * [Ajout de sous-titres à une vidéo](#adding-captions-to-video).
-
-
 
 ## Utilisation de vidéo dans Dynamic Media {#working-with-video-in-dynamic-media}
 
@@ -431,7 +430,7 @@ Pour activer le DASH sur votre compte, créez un dossier de support comme décri
 **Pour activer le DASH sur votre compte :**
 
 1. [Utilisez l’Admin Console pour commencer la création d’un nouveau dossier de support.](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html).
-1. Pour créer un cas d’assistance, suivez les instructions tout en vous assurant de fournir les informations suivantes :
+1. Suivez les instructions pour créer un dossier de support. Vous devez fournir les informations suivantes :
 
    * Nom, adresse électronique et numéro de téléphone du contact principal.
    * Nom de votre compte Dynamic Media.
@@ -600,15 +599,15 @@ Voir [Diffusion de contenu statique (sans image)](https://experienceleague.adobe
 
    * Pour une expérience de visionneuse de vidéos pop-up, sélectionnez **[!UICONTROL URL]**. Dans la boîte de dialogue URL, sélectionnez l’URL et copiez-la dans le Presse-papiers, puis collez-la dans un éditeur de texte simple. Ajoutez l’URL copiée de la vidéo avec la syntaxe suivante :
 
-      `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
+     `&caption=<server_path>/is/content/<path_to_caption.vtt_file,1>`
 
-      Notez le « `,1` » à la fin du chemin du fichier de sous-titres. Juste après l’extension de fichier VTT dans le chemin d’accès, vous avez la possibilité d’activer ou de désactiver le bouton de sous-titres dans la barre de lecteur vidéo en définissant la valeur respectivement sur « `,1` » ou « `,0` ».
+     Notez le « `,1` » à la fin du chemin du fichier de sous-titres. Juste après l’extension de fichier VTT dans le chemin d’accès, vous avez la possibilité d’activer ou de désactiver le bouton de sous-titres dans la barre de lecteur vidéo en définissant la valeur respectivement sur « `,1` » ou « `,0` ».
 
    * Pour une expérience de visionneuse de vidéos intégrée, sélectionnez **[!UICONTROL Code intégré]**. Dans la boîte de dialogue Code intégré, sélectionnez le code intégré et copiez-le dans le Presse-papiers, puis collez-le dans un simple éditeur de texte. Ajoutez le code intégré copié avec la syntaxe suivante :
 
-      `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
+     `videoViewer.setParam("caption","<path_to_caption.vtt_file,1>");`
 
-      Notez le « `,1` » à la fin du chemin du fichier de sous-titres. Juste après l’extension de fichier VTT dans le chemin d’accès, vous avez la possibilité d’activer ou de désactiver le bouton de sous-titres dans la barre de lecteur vidéo en définissant la valeur respectivement sur « `,1` » ou « `,0` ».
+     Notez le « `,1` » à la fin du chemin du fichier de sous-titres. Juste après l’extension de fichier VTT dans le chemin d’accès, vous avez la possibilité d’activer ou de désactiver le bouton de sous-titres dans la barre de lecteur vidéo en définissant la valeur respectivement sur « `,1` » ou « `,0` ».
 
 ## Ajout de marqueurs de chapitre à la vidéo {#adding-chapter-markers-to-video}
 

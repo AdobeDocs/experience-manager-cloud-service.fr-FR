@@ -5,7 +5,7 @@ exl-id: 211f079e-d129-4905-a56a-4fddc11551cc
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '909'
-ht-degree: 72%
+ht-degree: 91%
 
 ---
 
@@ -20,13 +20,13 @@ Pour optimiser les performances de vos filtres GraphQL, vous devez exécuter une
 
 ## Prérequis {#prerequisites}
 
-Il existe des conditions préalables pour cette tâche :
+Il existe des conditions préalables pour cette tâche :
 
 1. Assurez-vous de disposer au minimum de la version 2023.1.0 d’AEM as a Cloud Service.
 
-1. Assurez-vous que l’utilisateur qui effectue la tâche dispose des autorisations requises :
+1. Assurez-vous que l’utilisateur ou l’utilisatrice qui effectue la tâche dispose des autorisations requises :
 
-   * au minimum : `Deployment Manager` dans Cloud Manager est requis.
+   * le rôle `Deployment Manager` dans Cloud Manager est au minimum requis.
 
 ## Mise à jour des fragments de contenu. {#updating-content-fragments}
 
@@ -146,7 +146,7 @@ Pour exécuter la procédure, procédez comme suit :
         23.01.2023 12:40:45.180 *INFO* [sling-threadpool-8abcc1bb-cdcb-46d4-8565-942ad8a73209-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 5m, slingJobId: 2023/1/23/12/34/ad1b399e-77be-408e-bc3f-57097498fddb_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=3781, failedCount=0, skippedCount=0}
         ```
 
-   Les clients qui ont activé l’accès aux journaux de l’environnement à l’aide de Splunk peuvent utiliser l’exemple de requête ci-dessous pour surveiller le processus de mise à niveau. Pour plus d’informations sur l’activation de la journalisation Splunk, voir [Débogage dans les environnements de production et d’évaluation](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) page.
+   Les clients et clientes qui ont activé l’accès aux journaux d’environnement à l’aide de Splunk peuvent utiliser l’exemple de requête ci-dessous pour surveiller le processus de mise à niveau. Pour plus d’informations sur l’activation de la journalisation Splunk, voir [Débogage dans les environnements de production et d’évaluation](/help/implementing/developing/introduction/logging.md#debugging-production-and-stage) page.
 
    ```splunk
    index=<indexName> sourcetype=aemerror aem_envId=<environmentId> msg="*com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished*" 
@@ -155,15 +155,15 @@ Pour exécuter la procédure, procédez comme suit :
 
    Où :
 
-   * `environmentId` - un identifiant de l&#39;environnement client ; par exemple, `e1234`
-   * `indexName` - un nom d’index client, collecte `aemerror` events
+   * `environmentId` - un identifiant de l’environnement client ; par exemple, `e1234`
+   * `indexName` - un nom d’index client, collectant les événements `aemerror`
 
    Exemple de sortie :
 
    <table style="table-layout:auto">
      <thead>
        <tr>
-       <th>_fois</th>
+       <th>_time</th>
        <th>aem_tier</th>
        <th>pod_name</th>
        <th>msg</th>
@@ -172,15 +172,15 @@ Pour exécuter la procédure, procédez comme suit :
      <tbody>
        <tr>
          <td>2023-04-21 06:00:35.723</td>
-         <td>auteur </td>
+         <td>author</td>
          <td>cm-p1234-e1234-aem-author-76d6dc4b79-8lsb5</td>
-         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1-Content Fragment Mise à niveau de la file d’attente des tâches de mise à niveau du fragment de contenu (cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Mise à niveau du contenu terminé dans 391m, slingJobId : 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, état : MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Mise à niveau vers la version '1' réussie.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
+         <td>[sling-threadpool-bb5da4dd-6b05-4230-93ea-1d5cd242e24f-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 391m, slingJobId: 2023/4/20/23/16/db7963df-e267-489b-b69a-5930b0dadb37_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=36756, failedCount=0, skippedCount=0}</td>
        </tr>
        <tr>
          <td>2023-04-21 06:05:48.207</td>
          <td>golden-publish</td>
          <td>cm-p1234-e1234-aem-golden-publish-644487c9c5-lvkv2</td>
-         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-job-thread-pool)-1-Content Fragment Mise à niveau de la file d’attente des tâches (cfm/upgrader)] com.adobe.cq.dam.cfm.impm.xml Mise à niveau.upgrade.UpgradeJob Mise à niveau des fragments de contenu terminé en 211m, slingJobId : 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394ddfc_0, état : MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Mise à niveau vers la version '1' réussie.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
+         <td>[sling-threadpool-284b9a9a-8454-461e-9bdb-44866c6ddfb1-(apache-sling-job-thread-pool)-1-Content Fragment Upgrade Job Queue Config(cfm/upgrader)] com.adobe.cq.dam.cfm.impl.upgrade.UpgradeJob Finished content fragments upgrade in 211m, slingJobId: 2023/4/20/23/15/66c1690a-cdb7-4e66-bc52-90f33394ddfc_0, status: MaintenanceJobStatus{jobState=SUCCEEDED, statusMessage='Upgrade to version '1' succeeded.', errors=[], successCount=19557, failedCount=0, skippedCount=0}</td>
        </tr>
      </tbody>
    <table>

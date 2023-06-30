@@ -6,7 +6,7 @@ exl-id: 1f0ff800-5e95-429a-97f2-221db0668170
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1876'
-ht-degree: 83%
+ht-degree: 98%
 
 ---
 
@@ -34,9 +34,9 @@ La barre d’outils contient les options nécessaires pour une expérience de cr
 
 ## Différents modes de modification {#editingmodes}
 
-Les auteurs peuvent créer et modifier du contenu textuel dans [!DNL Experience Manager] en utilisant les différents modes des composants. Les options de la barre d’outils pour la création et la mise en forme de contenu, ainsi que l’expérience utilisateur des composants activés dans l’éditeur de texte enrichi dans différents modes de modification, varient selon les configurations de l’éditeur de texte enrichi.
+Les auteurs peuvent créer et modifier du contenu textuel dans [!DNL Experience Manager] en utilisant les différents modes des composants. Les options de la barre d’outils dédiées à la création et à la mise en forme de contenu, ainsi que l’expérience utilisateur des composants compatibles avec l’éditeur de texte enrichi dans les différents modes de modification, varient selon les configurations de l’éditeur de texte enrichi.
 
-| Mode d&#39;édition | Zone d’édition | Fonctions dont l’activation est recommandée |
+| Mode de modification | Zone de modification | Fonctions dont l’activation est recommandée |
 |--- |--- |--- |
 | En ligne | Modification en ligne pour des modifications rapides et mineures ; mettez en forme sans ouvrir une boîte de dialogue. | Fonctions minimales d’éditeur de texte enrichi. |
 | Éditeur de texte enrichi en plein écran | Couvre la page entière. | Toutes les fonctions requises d’éditeur de texte enrichi. |
@@ -67,7 +67,7 @@ Dans le mode de boîte de dialogue plein écran, outre une barre d’outils dét
 
 ### Modification dans une boîte de dialogue {#dialog-editing}
 
-Lorsqu’un composant fait l’objet d’un double clic, une boîte de dialogue s’ouvre pour modifier le contenu. La boîte de dialogue s’ouvre en haut de la page existante. Dans certains scénarios spécifiques, la boîte de dialogue s’ouvre sous la forme d’une fenêtre contextuelle. Par exemple, lorsqu’un composant Texte fait partie d’une colonne dans une mise en page à plusieurs colonnes et que la zone disponible pour la boîte de dialogue est moindre.
+Lorsqu’un composant fait l’objet d’un double clic, une boîte de dialogue s’ouvre permettant de modifier le contenu. La boîte de dialogue s’ouvre en haut de la page existante. Dans certains scénarios spécifiques, la boîte de dialogue s’ouvre sous la forme d’une fenêtre pop-up. C’est notamment le cas lorsqu’un composant Texte fait partie d’une colonne dans une disposition à plusieurs colonnes et que la zone disponible pour la boîte de dialogue est moindre.
 
 ![Mode de modification dans une boîte de dialogue](assets/dialog_editing_modetouchui.png)
 
@@ -86,9 +86,9 @@ Cette fonctionnalité est mise à disposition par le biais d’une série de mod
 
 Les fonctions de base d’éditeur de texte enrichi sont activées, ou désactivées, par la valeur de la propriété `features` sur un nœud spécifique au module externe approprié.
 
-Le tableau suivant répertorie les modules externes actuels, avec les éléments suivants :
+Le tableau suivant répertorie les plug-ins actuels :
 
-* ID de module externe avec un lien vers la documentation de l’API. L’ID est utilisé comme nom de noeud lorsque [activation d’un module externe](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin).
+* ID de plug-in avec un lien vers la documentation de l’API. L’ID est utilisé comme nom de nœud lors de l’[activation d’un plug-in](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md#activateplugin).
 * Les valeurs admises pour la propriété `features`.
 * Une description de la fonctionnalité fournie par le module externe.
 
@@ -98,12 +98,12 @@ Le tableau suivant répertorie les modules externes actuels, avec les éléments
 | findreplace | `find`, `replace` | Rechercher et remplacer. |
 | format | `bold`, `italic`, `underline` | [Mise en forme de texte de base](configure-rich-text-editor-plug-ins.md#textstyles). |
 | image | `image` | Prise en charge de base des images (faire glisser à partir du contenu ou de l’outil de recherche de contenu). Selon le navigateur, la prise en charge présente différents comportements pour les auteurs |
-| keys | - | Pour définir cette valeur, voir [taille de tabulation](configure-rich-text-editor-plug-ins.md#tabsize). |
+| keys | - | Pour définir cette valeur, consultez la [taille des onglets](configure-rich-text-editor-plug-ins.md#tabsize). |
 | justify | `justifyleft`, `justifycenter`, `justifyright` | Alignement des paragraphes. |
 | links | `modifylink`, `unlink`, `anchor` | [Hyperliens et ancres](configure-rich-text-editor-plug-ins.md#linkstyles). |
-| lists | `ordered`, `unordered`, `indent`, `outdent` | Ce module externe contrôle à la fois la [mise en retrait et les listes](configure-rich-text-editor-plug-ins.md#indentmargin), y compris les listes imbriquées. |
+| lists | `ordered`, `unordered`, `indent`, `outdent` | Ce plug-in contrôle à la fois la [mise en retrait et les listes](configure-rich-text-editor-plug-ins.md#indentmargin), y compris les listes imbriquées. |
 | misctools | `specialchars`, `sourceedit` | Divers outils permettent aux auteurs de saisir des [caractères spéciaux](configure-rich-text-editor-plug-ins.md#spchar) ou de modifier la source HTML. En outre, vous pouvez ajouter une [gamme de caractères spéciaux](configure-rich-text-editor-plug-ins.md#definerangechar) si vous voulez définir votre propre liste. |
-| Paraformat | `paraformat` | Les formats de paragraphe par défaut sont : Paragraphe, En-tête 1, En-tête 2 et En-tête 3 (`<p>`, `<h1>`, `<h2>` et `<h3>`). Vous pouvez [ajout de formats de paragraphe](configure-rich-text-editor-plug-ins.md#paraformats) ou étendez la liste. |
+| Paraformat | `paraformat` | Les formats de paragraphe par défaut sont : Paragraphe, En-tête 1, En-tête 2 et En-tête 3 (`<p>`, `<h1>`, `<h2>` et `<h3>`). Vous pouvez [ajouter d’autres formats de paragraphe](configure-rich-text-editor-plug-ins.md#paraformats) ou étendre la liste. |
 | spellcheck | `checktext` | [Vérificateur orthographique prenant en compte la langue](configure-rich-text-editor-plug-ins.md#adddict). |
 | styles | `styles` | Prise en charge de l’application d’un style en utilisant une classe CSS. [Ajoutez de nouveaux styles de texte](configure-rich-text-editor-plug-ins.md#textstyles) si vous voulez ajouter (ou étendre) votre propre gamme de styles utilisables avec du texte. |
 | subsuperscript | `subscript`, `superscript` | Extensions des formats de base, en ajoutant l’indice et l’exposant. |
@@ -145,9 +145,9 @@ Lorsque l’éditeur de texte enrichi est utilisé dans la boîte de dialogue ta
 
 ## Activation des fonctionnalités d’éditeur de texte enrichi en activant des modules externes {#enable-rte-functionalities-by-activating-plug-ins}
 
-Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété features pour activer ou désactiver les différentes fonctionnalités de chaque module externe.
+Les fonctionnalités d’éditeur de texte enrichi sont rendues disponibles par l’intermédiaire d’une série de modules externes, chacun avec sa propriété features. Vous pouvez configurer la propriété des fonctionnalités pour activer ou désactiver les différentes fonctionnalités de chaque plug-in.
 
-Pour obtenir des configurations détaillées des modules externes d’éditeur de texte enrichi, voir [comment activer et configurer les modules externes d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md).
+Pour obtenir des configurations détaillées des plug-ins d’éditeur de texte enrichi, voir [Comment activer et configurer les plug-ins d’éditeur de texte enrichi](configure-rich-text-editor-plug-ins.md).
 
 <!-- TBD ENGREVIEW: To confirm if the sample works in CS or not?
 **Sample**: Download [this sample configuration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) that illustrates how to configure RTE. In this package all the features are enabled. -->
@@ -218,7 +218,7 @@ Le nœud pop-up sous le mode en ligne ou plein écran contient la liste des él�
 
 ## Paramètres de l’interface utilisateur de l’éditeur de texte enrichi et politiques de contenu {#rtecontentpolicies}
 
-Les administrateurs peuvent contrôler les options de l’éditeur de texte enrichi à l’aide de stratégies de contenu, par exemple au lieu d’effectuer la configuration comme décrit ci-dessus. Les stratégies de contenu définissent les propriétés de conception d’un composant lorsqu’il est utilisé dans le cadre d’une [modèle modifiable](/help/sites-cloud/authoring/features/templates.md). Par exemple, si un composant de texte qui utilise l’éditeur de texte enrichi est utilisé avec un modèle modifiable, la stratégie de contenu peut définir que l’option gras est disponible et que quelques options de mise en forme de paragraphe sont disponibles. Les stratégies de contenu sont réutilisables et peuvent être appliquées à plusieurs modèles.
+L’administration peut contrôler les options de l’éditeur de texte enrichi à l’aide de politiques de contenu, par exemple au lieu d’effectuer la configuration décrite ci-dessus. Les politiques de contenu définissent les propriétés de conception d’un composant lorsqu’il est utilisé dans le cadre d’un [modèle modifiable](/help/sites-cloud/authoring/features/templates.md). Par exemple, si un composant de texte qui utilise l’éditeur de texte enrichi est utilisé avec un modèle modifiable, la politique de contenu peut définir que l’option gras est disponible, à l’instar de quelques options de mise en forme de paragraphe. Les politiques de contenu sont réutilisables et peuvent être appliquées à plusieurs modèles.
 
 Les options disponibles dans l’éditeur de texte enrichi sont transmises depuis les configurations de l’interface utilisateur en amont vers les politiques de contenu.
 

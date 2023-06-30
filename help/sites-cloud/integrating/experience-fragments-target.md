@@ -2,10 +2,10 @@
 title: Exportation de fragments d’expérience vers Adobe Target
 description: Exportation de fragments d’expérience vers Adobe Target
 exl-id: 752d91f9-13a6-40c2-9425-7d18dafe9205
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2250'
-ht-degree: 87%
+source-wordcount: '2245'
+ht-degree: 97%
 
 ---
 
@@ -48,7 +48,7 @@ Les fragments d’expérience peuvent être exportés vers l’espace de travail
 
 >[!NOTE]
 >
->Pour plus d’informations, consultez également :
+>Pour plus d’informations, consultez les sections suivantes :
 >
 >* [Développement d’Adobe Target](https://developers.adobetarget.com/)
 >* [Composants principaux - Fragments d’expérience](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)
@@ -83,7 +83,7 @@ Les options requises peuvent être sélectionnées dans **Propriétés de la pag
 
    >[!NOTE]
    >
-   >Si vous ajoutez la configuration cloud au dossier parent du fragment d’expérience, elle est héritée par tous les enfants.
+   >Si vous ajoutez la configuration cloud au dossier parent Fragment d’expérience, celle-ci est héritée par tous les enfants.
    >
    >Si vous ajoutez la configuration cloud au fragment d’expérience lui-même, celle-ci est héritée par toutes les variations.
 
@@ -177,7 +177,7 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
    * **Identifiant du client** : l’identifiant du client
 
-   * **Configuration IMS** : sélectionnez la configuration requise dans la liste déroulante.
+   * **Configuration IMS**: sélectionnez la configuration requise dans la liste déroulante.
 
    * **Type d’API** : par défaut : REST (XML est obsolète)
 
@@ -195,7 +195,7 @@ Vous pouvez maintenant sélectionner la nouvelle configuration à modifier.
 
      >[!NOTE]
      >
-     >Le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html), est une nouvelle bibliothèque d’implémentation pour Adobe Target qui a été conçue pour les implémentations web classiques et les applications d’une seule page.
+     >Le fichier de bibliothèque cible, [AT.JS](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/at-js/how-atjs-works.html?lang=fr), est une nouvelle bibliothèque d’implémentation pour Adobe Target qui a été conçue pour les implémentations web classiques et les applications d’une seule page.
      >
      >mbox.js est obsolète et sera supprimé ultérieurement.
      >
@@ -315,22 +315,22 @@ When you associate a page with the framework, the child pages inherit the associ
 >
 >Pour les contenus multimédias, comme les images, une seule référence est exportée vers Target. La ressource elle-même reste stockée dans AEM Assets et est diffusée à partir de l’instance de publication AEM.
 >
->C’est pourquoi le fragment d’expérience, avec toutes les ressources associées, doit être publié avant l’exportation vers Target.
+>C’est pour cela que le fragment d’expérience, avec toutes les ressources associées, doit être publié avant d’être exporté vers Target.
 
-Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spécifié la configuration cloud) :
+Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spécifié la configuration cloud) :
 
-1. Accédez à la console Fragment d’expérience .
-1. Sélectionnez le fragment d’expérience que vous souhaitez exporter vers la cible.
+1. Accédez à la console Fragment d’expérience.
+1. Sélectionnez le fragment d’expérience que vous souhaitez exporter vers Target.
 
    >[!NOTE]
    >
    >Il doit s’agir d’une variation web de fragment d’expérience.
 
-1. Appuyez/cliquez sur **Exporter vers Adobe Target**.
+1. Appuyez ou cliquez sur **Exporter vers Adobe Target**.
 
    >[!NOTE]
    >
-   >Si le fragment d’expérience a déjà été exporté, sélectionnez **Mise à jour dans Adobe Target**.
+   >Si le fragment d’expérience a déjà été exporté, sélectionnez **Mettre à jour dans Adobe Target**.
 
 1. Appuyez/cliquez sur **Exporter sans publication** ou **Publier** selon les besoins.
 
@@ -348,7 +348,7 @@ Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spé
 
    >[!NOTE]
    >
-   >Lors de l’affichage d’un fragment d’expérience dans Adobe Target, la variable *last modified* La date affichée est la date de la dernière modification du fragment dans AEM, et non la date de la dernière exportation du fragment vers Adobe Target.
+   >Lors de l’affichage d’un fragment d’expérience dans Adobe Target, la date de *dernière modification* affichée correspond à la date de la dernière modification du fragment dans AEM, et non à celle de la dernière exportation du fragment vers Adobe Target.
 
 >[!NOTE]
 >
@@ -356,11 +356,11 @@ Pour exporter un fragment d’expérience d’AEM vers Target (après avoir spé
 
 ## Utilisation de vos fragments d’expérience dans Adobe Target {#using-your-experience-fragments-in-adobe-target}
 
-Après avoir effectué les tâches précédentes, le fragment d’expérience s’affiche sur la page Offres de Target. Jetez un coup d’œil à la [documentation spécifique de Target](https://experiencecloud.adobe.com/resources/help/fr_FR/target/target/aem-experience-fragments.html) pour en savoir plus sur ce qu’il est possible de faire.
+Après avoir effectué les tâches précédentes, le fragment d’expérience s’affiche sur la page Offres de Target. Voir [documentation spécifique de Target](https://experiencecloud.adobe.com/resources/help/fr_FR/target/target/aem-experience-fragments.html) pour en savoir plus sur ce que vous pouvez y réaliser.
 
 >[!NOTE]
 >
->Lors de l’affichage d’un fragment d’expérience dans Adobe Target, la variable *last modified* La date affichée est la date de la dernière modification du fragment dans AEM, et non la date de la dernière exportation du fragment vers Adobe Target.
+>Lors de l’affichage d’un fragment d’expérience dans Adobe Target, la date de *dernière modification* affichée correspond à la date de la dernière modification du fragment dans AEM, et non à celle de la dernière exportation du fragment vers Adobe Target.
 
 ## Suppression d’un fragment d’expérience déjà exporté vers Adobe Target {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
@@ -368,8 +368,8 @@ La suppression d’un fragment d’expérience qui a déjà été exporté vers 
 
 Pour éviter de telles situations :
 
-* Si le fragment d’expérience n’est pas actuellement utilisé dans une activité, AEM permet à l’utilisateur de le supprimer sans message d’avertissement.
-* Si le fragment d’expérience est actuellement utilisé par une activité dans Target, un message d’erreur avertit l’utilisateur AEM des conséquences possibles de la suppression du fragment sur l’activité.
+* Si le fragment d’expérience n’est pas actuellement utilisé dans une activité, AEM permet à l’utilisateur ou à l’utilisatrice de le supprimer sans message d’avertissement.
+* Si le fragment d’expérience est actuellement utilisé par une activité dans Target, un message d’erreur avertit l’utilisateur ou l’utilisatrice AEM des conséquences possibles de la suppression du fragment sur l’activité.
 
   Le message d’erreur apparu dans AEM n’empêche pas à l’utilisateur de forcer la suppression du fragment d’expérience. Lorsque le fragment d’expérience est supprimé :
 

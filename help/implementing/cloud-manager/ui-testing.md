@@ -5,7 +5,7 @@ exl-id: 3009f8cc-da12-4e55-9bce-b564621966dd
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2389'
-ht-degree: 71%
+ht-degree: 75%
 
 ---
 
@@ -209,7 +209,7 @@ Cette section décrit les conventions que l’image Docker contenant vos tests d
 
 Les variables d’environnement suivantes sont transmises à votre image Docker au moment de l’exécution, selon votre structure.
 
-| Variable | Exemples | Description | Framework de test |
+| Variable | Exemples | Description | Cadre de test |
 |---|---|---|---|
 | `SELENIUM_BASE_URL` | `http://my-ip:4444` | URL du serveur Selenium | Selenium uniquement |
 | `SELENIUM_BROWSER` | `chrome` | Implémentation du navigateur utilisée par le serveur Selenium | Selenium uniquement |
@@ -219,7 +219,7 @@ Les variables d’environnement suivantes sont transmises à votre image Docker 
 | `AEM_PUBLISH_URL` | `http://my-ip:4503/context-path` | URL de l’instance de publication AEM | Tous |
 | `AEM_PUBLISH_USERNAME` | `admin` | Nom d’utilisateur pour la connexion à l’instance de publication AEM | Tous |
 | `AEM_PUBLISH_PASSWORD` | `admin` | Mot de passe de connexion à l’instance de publication AEM | Tous |
-| `REPORTS_PATH` | `/usr/src/app/reports` | Chemin d’accès où le rapport XML des résultats du test doit être enregistré | Tous |
+| `REPORTS_PATH` | `/usr/src/app/reports` | Chemin d’accès où le rapport XML des résultats du test doit être enregistré. | Tous |
 | `UPLOAD_URL` | `http://upload-host:9090/upload` | L’URL vers laquelle le fichier doit être chargé afin de le rendre accessible à la structure de test. | Tous |
 
 Les exemples de test d’Adobe fournissent des fonctions d’assistance pour accéder aux paramètres de configuration :
@@ -248,11 +248,11 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 >
 >Pour exécuter les tests fonctionnels à partir de votre ordinateur local, créez un utilisateur ou une utilisatrice avec des autorisations de type administration afin d’obtenir le même comportement.
 
-* L’infrastructure en conteneur qui est prévue pour les tests fonctionnels est limitée par les limites suivantes :
+* L’infrastructure en conteneur qui est prévue pour les tests fonctionnels est restreinte par les limites suivantes :
 
 | Type | Valeur | Description |
 |----------------------|-------|-----------------------------------------------------------------------|
-| CPU | 2.0 | Quantité de temps réservé au processeur par exécution de test |
+| Processeur | 2.0 | Quantité de temps réservé au processeur par exécution de test |
 | Mémoire | 1Gi | Quantité de mémoire allouée au test, valeur en gibioctets |
 | Expiration | 30m | Durée au bout de laquelle le test est terminé. |
 | Durée recommandée | 15m | Adobe recommande d’écrire les tests pour qu’ils ne prennent pas plus de temps que cette durée. |
@@ -309,7 +309,9 @@ Les tests doivent parfois charger des fichiers vers l’application en cours de 
 
 ## Exécuter les tests de l’interface utilisateur localement {#run-ui-tests-locally}
 
-Avant d’activer les tests d’interface utilisateur dans un pipeline Cloud Manager, il est recommandé d’exécuter localement les tests d’interface utilisateur par rapport à la variable [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) ou par rapport à une instance as a Cloud Service d’AEM réelle.
+Avant d’activer les tests de l’interface utilisateur dans un pipeline Cloud Manager, il est recommandé d’exécuter localement les tests de l’interface utilisateur vers
+le [SDK AEM as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md)
+ou dans une instance AEM as a Cloud Service réelle.
 
 ### Exemple de test Cypress {#cypress-sample}
 

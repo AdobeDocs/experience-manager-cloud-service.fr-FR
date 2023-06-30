@@ -8,7 +8,7 @@ exl-id: 91edce4a-dfa0-4eca-aba7-d41ac907b81e
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
 workflow-type: tm+mt
 source-wordcount: '4938'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -296,11 +296,11 @@ Laissez cette boîte de dialogue ouverte. Vous y retournerez dans quelques insta
 
 ### (Facultatif) Automatisation de la définition des propriétés YouTube par défaut pour vos vidéos chargées {#optional-automating-the-setting-of-default-youtube-properties-for-your-uploaded-videos}
 
-Vous pouvez si vous le souhaitez automatiser la définition des propriétés YouTube lors du transfert de vos vidéos. Créez un profil de traitement des métadonnées dans Experience Manager.
+Vous pouvez si vous le souhaitez automatiser la définition des propriétés YouTube lors du chargement de vos vidéos. Créez un profil de traitement des métadonnées dans Experience Manager.
 
 Pour créer le profil de traitement des métadonnées, vous allez d’abord copier les valeurs des champs **[!UICONTROL Étiquette de champ]**, **[!UICONTROL Associer à la propriété]** et **[!UICONTROL Choix]**, tous situés dans les schémas de métadonnées pour la vidéo. Ensuite, vous allez créer votre propre profil de traitement des métadonnées vidéo YouTube en y ajoutant ces valeurs.
 
-**Pour automatiser la définition des propriétés YouTube par défaut pour vos vidéos transférées :**
+**Pour automatiser la définition des propriétés YouTube par défaut pour vos vidéos chargées :**
 
 1. Dans le coin supérieur gauche d’Experience Manager, sélectionnez le logo Experience Manager, puis, dans le rail de gauche, accédez à **[!UICONTROL Outils]** (icône Marteau) > **[!UICONTROL Ressources]** > **[!UICONTROL Schémas de métadonnées]**.
 1. Sélectionnez **[!UICONTROL default]**. (Ne cochez pas la case de sélection à gauche de l’option « Par défaut ».)
@@ -353,7 +353,7 @@ Collez la valeur copiée dans l’éditeur de texte ouvert. Vous allez avoir bes
    * Dans la partie droite de la page, sous l’onglet Paramètres, collez les valeurs de publication YouTube (valeur Libellé du champ et Associer à la propriété) copiées précédemment, dans les champs respectifs du formulaire. Collez la valeur Choix dans le champ Valeur par défaut.
 
 1. Dans le coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**.
-1. Appliquez le profil des métadonnées de publication YouTube aux dossiers dans lesquels vous allez transférer des vidéos. Vous devez avoir configuré le profil des métadonnées et le profil vidéo.
+1. Appliquez le profil des métadonnées de publication YouTube aux dossiers dans lesquels vous allez charger des vidéos. Vous devez avoir configuré le profil des métadonnées et le profil vidéo.
 
    Voir [Profils de métadonnées](/help/assets/metadata-profiles.md) et [Profils vidéo](/help/assets/dynamic-media/video-profiles.md).
 
@@ -368,8 +368,11 @@ Vous devez maintenant associer les balises que vous avez précédemment ajoutée
 >Dans le mode de publication **[!UICONTROL Immédiatement]**, la ressource chargée (une fois synchronisée avec IPS) est automatiquement publiée sur le système de diffusion. Cela vaut pour Dynamic Media, mais pas pour YouTube. Pour publier sur YouTube, vous devez publier par le biais d’Experience Manager Author.
 
 >[!NOTE]
+>
 Pour publier du contenu depuis YouTube, Experience Manager utilise le workflow **[!UICONTROL Publier sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
+>
 Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
+>
 Pour obtenir des informations de progression plus détaillées, vous pouvez surveiller le journal YouTube sous la réplication. Sachez toutefois que ce type de surveillance nécessite un accès administrateur.
 
 **Pour publier des vidéos sur votre chaîne YouTube, procédez comme suit :**
@@ -405,6 +408,7 @@ Au bout de huit heures, si un message de statut indiquant **[!UICONTROL Téléch
 Une fois que vous avez publié la vidéo, une chaîne URL YouTube est générée par Dynamic Media. Lorsque vous copiez l’URL Youtube, cette dernière est conservée dans le presse-papiers, ce qui vous permet de la coller dans les pages de votre site web ou de votre application.
 
 >[!NOTE]
+>
 L’URL YouTube ne peut pas être copiée tant que vous n’avez pas publié la ressource vidéo sur YouTube.
 
 Pour lier des URL YouTube à votre application web, procédez comme suit :
@@ -422,10 +426,13 @@ Pour lier des URL YouTube à votre application web, procédez comme suit :
 Lorsque vous dépubliez une ressource vidéo dans Experience Manager, la vidéo est supprimée de YouTube.
 
 >[!CAUTION]
+>
 Si vous supprimez une vidéo directement sur YouTube, Experience Manager l’ignore et continue de se comporter comme si la vidéo était toujours publiée sur YouTube. Veillez toujours à dépublier une ressource vidéo sur YouTube via Experience Manager.
 
 >[!NOTE]
+>
 Pour supprimer du contenu depuis YouTube, Experience Manager utilise le processus **[!UICONTROL Dépublier sur YouTube]**, qui vous permet de surveiller la progression et de consulter toutes les informations d’échec.
+>
 Voir [Surveillance du codage vidéo et de la progression de la publication sur YouTube](#monitoring-video-encoding-and-youtube-publishing-progress).
 
 **Pour dépublier des vidéos afin de les supprimer de YouTube, procédez comme suit :**
@@ -466,16 +473,19 @@ Il est possible de surveiller la progression, notamment l’échec du codage ou 
    Toutes les informations de workflow, telles que le codage, s’affichent dans la chronologie. Pour la publication YouTube, la chronologie du workflow comprend également le nom de la chaîne YouTube et l’URL de la vidéo YouTube. En outre, vous pouvez consulter toutes les notifications d’échec dans le journal du workflow une fois la publication terminée.
 
    >[!NOTE]
+   >
    L’enregistrement des messages d’erreur ou d’échec peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
+   >
    * Configuration de la file d’attente des tâches Apache Sling
    * Gestionnaire de tâches de processus externe du workflow Adobe Granite
    * File d’attente d’expiration du workflow Granite
-
+   >
    Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
 1. Pour les workflows en cours, consultez les instances de workflow disponibles sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Instances]**.
 
    >[!NOTE]
+   >
    Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
 
    ![chlimage_1-433](/help/assets/dynamic-media/assets/chlimage_1-433.png)
@@ -489,21 +499,25 @@ Il est possible de surveiller la progression, notamment l’échec du codage ou 
 1. Pour les tâches qui ont échoué, consultez la section Échecs des processus disponible sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Échecs]**. L’**[!UICONTROL échec du processus]** répertorie toutes les activités du processus ayant échoué.
 
    >[!NOTE]
+   >
    Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
 
    ![chlimage_1-435](/help/assets/dynamic-media/assets/chlimage_1-435.png)
 
    >[!NOTE]
+   >
    L’enregistrement du message d’erreur peut prendre un certain temps en raison des différentes configurations de workflows pour les **[!UICONTROL nouvelles tentatives]**, l’**[!UICONTROL intervalle entre deux tentatives]** et le **[!UICONTROL délai d’attente]** de [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), par exemple :
+   >
    * Configuration de la file d’attente des tâches Apache Sling
    * Gestionnaire de tâches de processus externe du workflow Adobe Granite
    * File d’attente d’expiration du workflow Granite
-
+   >
    Vous pouvez ajuster les propriétés **[!UICONTROL reprises]**, **[!UICONTROL délai de reprise]** et **[!UICONTROL délai d’expiration]** dans ces configurations.
 
 1. Pour les workflows terminés, consultez l’archive de workflow sous **[!UICONTROL Outils]** > **[!UICONTROL Processus]** > **[!UICONTROL Archive]**. La liste **[!UICONTROL Archive de workflow]** répertorie toutes les activités de workflow qui ont réussi.
 
    >[!NOTE]
+   >
    Vous aurez peut-être besoin de droits administratifs pour accéder au menu **[!UICONTROL Outils]**.
 
    ![chlimage_1-436](/help/assets/dynamic-media/assets/chlimage_1-436.png)
@@ -573,6 +587,7 @@ Pour traiter des ressources à l’aide d’un profil de traitement, ajoutez un 
 Vous pouvez ajouter des annotations aux ressources vidéo. Lorsque vous annotez des vidéos, le lecteur se met en pause pour vous permettre d’ajouter une annotation sur une image. Pour plus d’informations, voir [Gestion de ressources vidéo](manage-video-assets.md).
 
 >[!NOTE]
+>
 Le format vidéo MXF n’est pas encore pris en charge avec les annotations de ressources vidéo.
 
 1. Dans la console [!DNL Assets], sélectionnez **[!UICONTROL Modifier]** sur la carte de ressources pour afficher la page de détails de la ressource.
@@ -593,24 +608,25 @@ Le format vidéo MXF n’est pas encore pris en charge avec les annotations de 
       * 400 Mo pour le transcodage 4k.
       * 800 Mo pour le transcodage 1080p.
       * 8 Go pour le transcodage 720p.
+
    * La taille de fichier maximale que vous pouvez transcoder en résolution 4k est un fichier MP4 de 2,55 Go de résolution 4k, un débit de 12 Mbit/s et de 23 i/s.
 
-   **Voir également**
+  **Voir également**
 
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
+>
 * [Documentation vidéo de Dynamic Media](/help/assets/dynamic-media/video.md).
 * [En savoir plus sur l’utilisation, les types et la configuration des profils de traitement](/help/assets/asset-microservices-configure-and-use.md).
-

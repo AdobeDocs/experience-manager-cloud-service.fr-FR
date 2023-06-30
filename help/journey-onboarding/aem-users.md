@@ -7,7 +7,7 @@ exl-id: 86700cce-139f-451e-9c21-b38b6332f773
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '579'
-ht-degree: 90%
+ht-degree: 96%
 
 ---
 
@@ -81,7 +81,7 @@ Si vous souhaitez découvrir comment les développeurs et les responsables de d�
 
 ## Ressources supplémentaires {#additional-resources}
 
-Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
+Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez aller au delà du contenu du parcours d’intégration.
 
-[Guide de démarrage rapide pour la création de pages](/help/sites-cloud/authoring/getting-started/quick-start.md) - Commencez ici pour un aperçu rapide des principes de base de la création dans AEM.
-[Parcours de création headless](/help/journey-headless/author/overview.md) : si vous souhaitez créer du contenu headless, suivez cette introduction guidée.
+[Guide de démarrage rapide pour la création de pages](/help/sites-cloud/authoring/getting-started/quick-start.md) : commencez ici pour un aperçu rapide des principes de base de la création dans AEM.
+[Parcours de création découplé](/help/journey-headless/author/overview.md) : si vous souhaitez créer du contenu découplé, suivez cette introduction guidée.

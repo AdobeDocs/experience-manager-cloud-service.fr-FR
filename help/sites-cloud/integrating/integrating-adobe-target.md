@@ -149,7 +149,7 @@ Pour savoir comment créer et publier, voir [page](https://experienceleague.adob
   <tr>
     <td>Emplacement de la configuration de Target.</td>
     <td>/etc/cloudservices/testandtarget/</td>
-    <td>/conf/tenant/settings/cloudconfigs/target/</td>
+    <td>/conf/tenant/settings/cloudservices/target/</td>
     <td> Auparavant, plusieurs configurations étaient présentes sous /etc/cloudservices/testandtarget, mais désormais une seule configuration figure sous un client.</td>
   </tr>
 </table>

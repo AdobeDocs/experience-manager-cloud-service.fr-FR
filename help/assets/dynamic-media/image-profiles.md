@@ -8,7 +8,7 @@ exl-id: 0856f8a1-e0a9-4994-b338-14016d2d67bd
 source-git-commit: c15486fb3de73773fa7e255809ffaa36715cea05
 workflow-type: tm+mt
 source-wordcount: '3529'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -72,15 +72,15 @@ Chaque génération de recadrage intelligent créée nécessite un traitement su
 **Recommandations relatives au recadrage intelligent dans un profil d’image**
 Pour garder l’utilisation du recadrage intelligent sous contrôle et optimiser le temps de traitement et le stockage des recadrages, Adobe recommande de suivre les conseils et astuces suivants :
 
-* Les ressources d’image pour lesquelles un recadrage intelligent leur sera appliqué doivent faire au moins 50 x 50 pixels ou plus.
+* Les ressources d’image sur lesquelles un recadrage intelligent sera appliqué doivent faire au moins 50 x 50 pixels.
 * Idéalement, effectuez 10 à 15 recadrages intelligents par image afin d’optimiser les proportions et le temps de traitement.
 * Nommez les recadrages intelligents en fonction des dimensions de recadrage et non de leur utilisation finale. Cela permet d’optimiser les doublons lorsqu’une seule dimension est utilisée sur plusieurs pages.
 * Créez des profils d’image au niveau de la page ou du type de ressource pour des dossiers et sous-dossiers spécifiques, au lieu d’un profil de recadrage intelligent commun appliqué à tous les dossiers ou ressources.
 * Le profil d’image appliqué aux sous-dossiers remplace le profil d’image appliqué au dossier.
 * Un profil d’image contenant des dimensions de recadrage intelligent en double n’est pas autorisé.
-* Les profils d’image dont les options de recadrage intelligent sont définies en double ne sont pas autorisés.
+* Les profils d’image nommés en double dont les options de recadrage intelligent sont définies ne sont pas autorisés.
 
-Vous avez le choix entre deux options de recadrage d’image : Recadrage de pixels et recadrage intelligent. Vous pouvez également choisir d’automatiser la création de nuanciers de couleurs et d’images ou de conserver le contenu de recadrage dans toutes les résolutions cibles.
+Vous avez le choix entre deux options de recadrage d’image : recadrage de pixels et recadrage intelligent. Vous pouvez également choisir d’automatiser la création de nuanciers de couleurs et d’images ou de conserver le contenu de recadrage dans toutes les résolutions cibles.
 
 >[!IMPORTANT]
 >
@@ -104,15 +104,15 @@ La résolution maximale prise en charge pour la taille de fichier d’entrée es
 | Format d’image  | Extension de fichier insensible à la casse | Type MIME | Espace colorimétrique d’entrée pris en charge | Taille maximale du fichier d’entrée pris en charge | Format d’image pris en charge ? |
 | --- | --- | --- | --- | --- | --- |
 | BMP | `.bmp` | image/bmp | sRVB | 4 Go | Oui |
-| CMJN |  |  |  |  | Oui |
-| EPS |  |  |  |  | Non |
+| CMJN | | | | | Oui |
+| EPS | | | | | Non |
 | GIF | `.gif` | image/gif | sRVB | 15 Go | Oui ; la première image du GIF animé est utilisée pour le rendu. Vous ne pouvez pas configurer ni modifier la première image. |
 | JPEG | `.jpg` et `.jpeg` | image/jpeg | sRVB | 15 Go | Oui |
 | PNG | `.png` | image/png | sRVB | 15 Go | Oui |
 | PSD | `.psd` | image/vnd.adobe.photoshop | sRVB<br>CMJN | 2 Go | Oui |
-| SVG |  |  |  |  | Non |
+| SVG | | | | | Non |
 | TIFF | `.tif` et `.tiff` | image/tiff | sRVB<br>CMJN | 4 Go | Oui |
-| WebP/WebP animé |  |  |  |  | Non |
+| WebP/WebP animé | | | | | Non |
 
 ## Création de profils d’image Dynamic Media {#creating-image-profiles}
 
@@ -178,7 +178,7 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
 #### Application de profils d’image Dynamic Media aux dossiers à partir des propriétés {#applying-image-profiles-to-folders-from-properties}
 
-1. Appuyez sur le logo du Experience Manager et accédez à **[!UICONTROL Ressources]**.
+1. Appuyez sur le logo Experience Manager et accédez à **[!UICONTROL Ressources]**.
 1. Accédez à un *dossier* (et non à une ressource) auquel vous souhaitez appliquer un profil d’image.
 1. Selon l’affichage dossier dans lequel vous êtes, procédez comme suit :
    * En mode Carte, placez le pointeur sur le dossier, puis cochez la case pour le sélectionner.
@@ -202,13 +202,13 @@ Vous pouvez traiter une nouvelle fois des ressources dans un dossier qui comport
 
    * Accédez à `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` et appliquez le profil approprié, puis sélectionnez **[!UICONTROL Enregistrer]**.
 
-      ![chlimage_1-257](assets/chlimage_1-257.png)
+     ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * Accédez au nœud suivant de CRXDE Lite : `/content/dam/jcr:content`.
 
-      Ajoutez la propriété `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` et sélectionnez **[!UICONTROL Enregistrer tout]**.
+     Ajoutez la propriété `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` et sélectionnez **[!UICONTROL Enregistrer tout]**.
 
-      ![configure_image_profiles](assets/configure_image_profiles.png)
+     ![configure_image_profiles](assets/configure_image_profiles.png)
 
 ## Modification du recadrage intelligent ou de l’échantillon intelligent d’une seule image {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
@@ -272,37 +272,35 @@ Vous pouvez exécuter à nouveau le recadrage intelligent pour générer des rec
 
    * Ajustez la taille d’affichage des images sur la page.
 
-      À droite de la liste déroulante de noms de points d’arrêt, faites glisser le curseur vers la gauche ou la droite pour modifier la taille de l’affichage d’image visible.
+     À droite de la liste déroulante de noms de points d’arrêt, faites glisser le curseur vers la gauche ou la droite pour modifier la taille de l’affichage d’image visible.
 
-      ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)
+     ![edit_smart_crops-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
    * Filtrez la liste des images visibles en fonction des noms de point d’arrêt. Dans l’exemple ci-dessous, les images sont filtrées en fonction du nom de point d’arrêt « Moyenne ».
 
-      Près du coin supérieur droit de la page, dans la liste déroulante, sélectionnez un nom de point d’arrêt pour filtrer les images que vous souhaitez voir (voir l’image ci-dessus).
+     Près du coin supérieur droit de la page, dans la liste déroulante, sélectionnez un nom de point d’arrêt pour filtrer les images que vous souhaitez voir (voir l’image ci-dessus).
 
-      ![edit_smart_crops-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
+     ![edit_smart_crops-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
    * Redimensionnez la zone de recadrage intelligent. Effectuez l’une des opérations suivantes :
 
       * Si l’image comporte un recadrage intelligent ou un échantillon intelligent uniquement, faites glisser sur celle-ci la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible du recadrage.
       * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur celle-ci la poignée de l’angle de la zone de recadrage pour ajuster la taille de la zone visible du recadrage. Ou sélectionnez l’échantillon intelligent situé sous l’image (les échantillons de couleur sont statiques), puis faites glisser la poignée d’angle de la zone de recadrage. Ajustez la taille de la zone visible de l’échantillon.
 
-      ![Redimensionnement du recadrage intelligent d’une image](assets/edit_smart_crops-resize.png).
+     ![Redimensionnement du recadrage intelligent d’une image](assets/edit_smart_crops-resize.png).
 
    * Déplacez la zone de recadrage intelligent. Effectuez l’une des opérations suivantes :
 
       * Si l’image comporte uniquement un recadrage intelligent ou un échantillon intelligent, faites glisser sur celle-ci la zone de recadrage vers un nouvel emplacement.
       * Si l’image comporte à la fois un recadrage intelligent et un échantillon intelligent, faites glisser sur celle-ci la zone de recadrage intelligent vers un nouvel emplacement. Vous pouvez également sélectionner l’échantillon intelligent sous l’image (les échantillons de couleurs sont statiques), puis faire glisser la zone de recadrage intelligent de l’échantillon vers un nouvel emplacement.
 
-      ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
+     ![edit_smart_crops-move](assets/edit_smart_crops-move.png)
 
    * Annulez toutes vos modifications et rétablissez le recadrage intelligent ou l’échantillon intelligent d’origine (s’applique à la session de modification active uniquement).
 
-      Sélectionnez **[!UICONTROL Rétablir]** au-dessus de l’image.
+     Sélectionnez **[!UICONTROL Rétablir]** au-dessus de l’image.
 
-      ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
-
-
+     ![edit_smart_crops-revert](assets/edit_smart_crops-revert.png)
 
 1. Près du coin supérieur droit de la page, sélectionnez **[!UICONTROL Enregistrer]**, puis sélectionnez **[!UICONTROL Fermer]** pour revenir au dossier des ressources.
 
