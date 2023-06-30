@@ -1,11 +1,11 @@
 ---
-title: Générer un document d’enregistrement pour Forms adaptatif
+title: Générer un document d’enregistrement pour les formulaires adaptatifs
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 15540644-c0c3-45ce-97d3-3bdaa16fb4b6
 source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3109'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -215,14 +215,14 @@ Le tableau suivant décrit les composants de formulaire adaptatif et les composa
    <td> </td>
   </tr>
   <tr>
-   <td>Bouton Réinitialiser</td>
+   <td>Bouton de réinitialisation</td>
    <td>Bouton de réinitialisation</td>
    <td>false</td>
    <td> </td>
   </tr>
   <tr>
    <td>Bouton Envoyer</td>
-   <td><p>Bouton Envoyer par messagerie</p> <p>Bouton Envoyer via HTTP</p> </td>
+   <td><p>Bouton Envoyer par e-mail</p> <p>Bouton Envoyer via HTTP</p> </td>
    <td>false</td>
    <td> </td>
   </tr>
@@ -294,8 +294,8 @@ Pour créer un modèle de base, procédez comme suit dans Forms Designer.
 1. Cliquez sur **[!UICONTROL Fichier]** > **[!UICONTROL Nouveau]**.
 1. Sélectionnez l’option **[!UICONTROL Basé sur un modèle]**.
 
-1. Sélectionnez la **[!UICONTROL Forms - Document d’enregistrement]** catégorie.
-1. Sélectionner **[!UICONTROL Modèle de base de DE]**.
+1. Sélectionnez la catégorie **[!UICONTROL Forms - Document d’enregistrement]**.
+1. Sélectionnez **[!UICONTROL Modèle de base de DE]**.
 1. Cliquez sur **[!UICONTROL Suivant]** et renseignez les informations nécessaires.
 
 1. (Facultatif) Modifiez le style et l’aspect à appliquer aux champs du document d’enregistrement.
