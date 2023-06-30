@@ -4,9 +4,9 @@ description: Découvrez comment utiliser Cloud Manager pour créer votre premier
 role: Admin, User, Developer
 exl-id: ade4bb43-5f48-4938-ac75-118009f0a73b
 source-git-commit: b916bf5b252045120659600293e004fc34b96e7a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '686'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -53,11 +53,11 @@ Pour créer un programme Sandbox, procédez comme suit.
 
    ![Page de destination de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/cloud-manager-my-programs.png)
 
-1. Dans l’assistant de création de programme, sélectionnez **Configuration d’un environnement de test** et indiquez le nom du programme, puis appuyez ou cliquez sur **Continuer**.
+1. Dans l’assistant de création de programme, sélectionnez **Configurer un sandbox**, indiquez un nom de programme, puis appuyez ou cliquez sur **Continuer**.
 
    ![Création d’un type de programme](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/assets/create-sandbox.png)
 
-1. Dans le **Configuration de votre environnement de test** , vous pouvez choisir les solutions que vous souhaitez activer dans votre programme sandbox. Le **Sites** et **Ressources** Les solutions sont toujours incluses dans les programmes sandbox et sont automatiquement sélectionnées. Cela suffit pour notre exemple d’intégration. Cliquez sur **Créer**.
+1. Dans la boîte de dialogue **Configuration de votre sandbox**, vous pouvez choisir les solutions que vous souhaitez activer dans votre programme sandbox. Les solutions **Sites** et **Assets** sont toujours incluses dans les programmes sandbox et sont automatiquement sélectionnées. Cela suffit pour notre exemple d’intégration. Cliquez sur **Créer**.
 
    ![Sélection de solution](assets/set-up-sandbox-onboarding.png)
 
@@ -73,7 +73,7 @@ Maintenant que votre premier programme est créé, vous pouvez créer des enviro
 
 ## Ressources supplémentaires {#additional-resources}
 
-Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez dépasser le contenu du parcours d’intégration.
+Vous trouverez ci-dessous des ressources facultatives supplémentaires si vous souhaitez aller au delà du contenu du parcours d’intégration.
 
 * [Programmes et types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) : découvrez la hiérarchie de Cloud Manager, comment les différents types de programmes s’intègrent dans sa structure et en quoi ils diffèrent.
 * [Créer des programmes sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-sandbox-programs.md) : découvrez comment utiliser Cloud Manager pour créer votre propre programme sandbox à des fins de formation, de démonstration, de preuve de concept ou à d’autres fins hors production.
