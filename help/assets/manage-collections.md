@@ -7,26 +7,26 @@ feature: Collections,Asset Management
 role: User
 exl-id: b0798adc-56a4-4577-b4ee-8d1fca3bff09
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2447'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Gestion des collections {#manage-collections}
+# Gérer les collections {#manage-collections}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=en) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/managing/manage-collections.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
 Une collection est un ensemble de ressources dans Adobe Experience Manager Assets. Vous pouvez utiliser des collections pour partager des ressources entre utilisateurs. Il peut s’agir d’une collection statique ou dynamique basée sur les résultats de la recherche.
 
-Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager des collections avec différents utilisateurs auxquels sont attribués différents niveaux de privilèges, notamment l’affichage, la modification, etc.
+Contrairement aux dossiers, une collection peut comporter des ressources provenant de différents emplacements. Vous pouvez partager des collections avec plusieurs utilisateurs et utilisatrices auxquels sont attribués différents niveaux de privilèges, notamment l’affichage, la modification, etc.
 
 Vous pouvez partager plusieurs collections avec un utilisateur ou une utilisatrice. Chaque collection contient des références aux ressources. L’intégrité du référentiel des ressources est préservée dans les collections.
 
-Les collections sont des types suivants, en fonction de la manière dont elles collectent les ressources :
+Les collections sont composées des types suivants, en fonction de la manière dont elles collectent les ressources :
 
 * Collection contenant une liste de référence statique de ressources, dossiers et autres collections
 
@@ -46,9 +46,9 @@ Vous pouvez créer une collection contenant des [références statiques](#create
 
 Vous pouvez créer une collection avec des références statiques, par exemple une collection avec des références à des ressources, des dossiers, des collections, des visionneuses à 360° et des visionneuses d’images.
 
-1. Accédez au **[!UICONTROL Collections]** console.
+1. Accédez à la console **[!UICONTROL Collections]**.
 1. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Créer]**.
-1. Dans le **[!UICONTROL Créer une collection]** , saisissez un titre et une description facultative de la collection.
+1. Sur la page **[!UICONTROL Créer une collection]**, saisissez un titre et une description facultative de la collection.
 1. Ajoutez des membres à la collection et affectez les autorisations appropriées. Vous pouvez également sélectionner **[!UICONTROL Collection publique]** pour permettre à tous les utilisateurs d’accéder à la collection.
 
    >[!NOTE]
@@ -76,12 +76,12 @@ Vous pouvez faire glisser des ressources de l’interface utilisateur Assets jus
 
 ### Création d’une collection dynamique {#create-a-smart-collection}
 
-Une collection dynamique utilise des critères de recherche pour rassembler les ressources de manière dynamique. Vous pouvez créer une collection dynamique en utilisant uniquement des fichiers et non des dossiers ou des fichiers et des dossiers.
+Une collection dynamique utilise des critères de recherche pour rassembler les ressources de manière dynamique. Vous pouvez créer une collection dynamique en utilisant uniquement des fichiers et non pas des dossiers ou des fichiers et des dossiers.
 
 1. Accédez à l’IU d’Assets et appuyez/cliquez sur l’icône **[!UICONTROL Rechercher]**.
-1. Saisissez le mot-clé dans la boîte de dialogue Omni-recherche et sélectionnez `Enter`. Appuyez/cliquez sur l’icône de navigation globale pour afficher le panneau Filtres et appliquer un filtre de recherche à partir du panneau Rechercher.
+1. Saisissez le mot-clé dans la boîte de dialogue Omni-recherche et sélectionnez `Enter`. Appuyez/cliquez sur l’icône de navigation globale pour afficher le panneau Filtres et appliquer un filtre de recherche à partir du panneau de recherche.
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
-1. Appuyez/cliquez sur **[!UICONTROL Enregistrement d’une collection dynamique]**.
+1. Appuyez/cliquez sur **[!UICONTROL Enregistrer la collection dynamique]**.
 1. Attribuez un nom à la collection. Sélectionnez **[!UICONTROL Public]** pour ajouter le groupe Utilisateurs DAM avec le rôle Observateur à la collection dynamique.
 
    >[!NOTE]
@@ -97,7 +97,7 @@ Vous pouvez ajouter des ressources à une collection qui comporte une liste de r
 
 >[!NOTE]
 >
->Les collections dynamiques utilisent une requête de recherche pour renseigner les ressources. Par conséquent, les références statiques aux ressources et aux dossiers ne s’appliquent pas à ces ressources.
+>Les collections dynamiques utilisent une requête de recherche pour renseigner les ressources. Par conséquent, les références statiques aux ressources et aux dossiers ne s’y appliquent pas.
 
 1. Dans l’interface utilisateur d’Assets, accédez à l’emplacement de la ressource à ajouter à une collection.
 1. Sélectionnez la ressource et appuyez/cliquez sur l’icône **[!UICONTROL À la collection]** dans la barre d’outils. Vous pouvez également faire glisser la ressource jusqu’à la zone **[!UICONTROL Déposer dans la collection]**. Relâchez le bouton de la souris lorsque la zone de dépôt devient active et que le libellé se transforme en **[!UICONTROL Déposer pour ajouter]**.
@@ -114,7 +114,7 @@ Les collections dynamiques sont créées en enregistrant une recherche afin que 
 1. Dans la liste **[!UICONTROL Recherches enregistrées]**, sélectionnez la collection dynamique que vous souhaitez modifier. Le panneau de recherche affiche les filtres configurés pour la recherche enregistrée.
 1. Dans la liste **[!UICONTROL Fichiers et dossiers]**, sélectionnez **[!UICONTROL Fichiers]**.
 1. Modifiez un ou plusieurs filtres selon vos besoins. Appuyez/cliquez sur **[!UICONTROL Modif. collection dynam]**. Vous pouvez également modifier le nom de la collection dynamique.
-1. Appuyez/cliquez sur **[!UICONTROL Enregistrer]**. Le **[!UICONTROL Modification de la collection dynamique]** s’affiche.
+1. Appuyez/cliquez sur **[!UICONTROL Enregistrer]**. La boîte de dialogue **[!UICONTROL Modification de la collection dynamique]** s’affiche.
 1. Appuyez/cliquez sur **[!UICONTROL Remplacer]** pour remplacer la collection dynamique d’origine par la collection modifiée. Sinon, sélectionnez **[!UICONTROL Enregistrer sous]** pour enregistrer la collection modifiée séparément.
 1. Dans la boîte de dialogue de confirmation, appuyez/cliquez sur **[!UICONTROL Enregistrer]** pour terminer le processus.
 
@@ -130,7 +130,7 @@ Les métadonnées de collection incluent les données sur la collection, notamme
 
 Vous pouvez modifier les métadonnées de plusieurs collections simultanément. Cette fonctionnalité vous permet de répliquer rapidement des métadonnées communes dans plusieurs collections.
 
-1. Dans la console Collections, sélectionnez plusieurs collections pour lesquelles vous souhaitez modifier les métadonnées.
+1. Dans la console Collections, sélectionnez au moins deux collections pour lesquelles vous souhaitez modifier les métadonnées.
 1. Dans la barre d’outils, appuyez/cliquez sur l’icône **[!UICONTROL Propriétés]**.
 1. Sur la page **[!UICONTROL Métadonnées de collection]**, modifiez les métadonnées sous **[!UICONTROL De base]** et **[!UICONTROL Avancé]**, selon les besoins.
 1. Appuyez/cliquez sur **[!UICONTROL Enregistrer et fermer]** dans la barre d’outils, puis fermez la boîte de dialogue de confirmation pour terminer le processus.
@@ -148,7 +148,7 @@ La fonctionnalité Recherche des collections prend en charge à la fois la [rech
 
 Vous pouvez effectuer des recherches dans des collections à partir de la console Collections. Lorsque vous effectuez des recherches avec des mots-clés dans la zone Omni-recherche, [!DNL Experience Manager Assets] recherche les noms des collections, les métadonnées et les balises ajoutées aux collections.
 
-Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les ressources ou les dossiers des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), toutes les ressources, dossiers et collections appropriés sont renvoyés.
+Si vous recherchez des collections à partir du niveau supérieur, seules les collections individuelles sont renvoyées dans les résultats de recherche. Les ressources ou dossiers à l’intérieur des collections sont exclus. Dans tous les autres cas (par exemple, dans une collection individuelle ou dans une hiérarchie de dossiers), l’ensemble des ressources, des dossiers et des collections appropriés est renvoyé.
 
 ### Recherche dans les collections {#search-within-collections}
 
@@ -195,7 +195,7 @@ Pour personnaliser la page [!UICONTROL Propriétés] de métadonnées, notamment
 
 1. Dans la console Collections, sélectionnez les collections à modifier.
 1. Sur la barre d’outils, appuyez/cliquez sur **[!UICONTROL Propriétés]** pour ouvrir la page [!UICONTROL Propriétés] des collections sélectionnées.
-1. Modifiez les propriétés de métadonnées des collections sélectionnées sous les différents onglets.
+1. Modifiez les propriétés de métadonnées des collections sélectionnées dans les différents onglets.
 
    >[!NOTE]
    >
@@ -222,7 +222,7 @@ Vous pouvez ajouter une collection à une autre collection, créant ainsi une co
    >
    >La collection mise le plus récemment à jour est sélectionnée par défaut sur la page **[!UICONTROL Ajouter à la collection]**.
 
-1. Appuyez/cliquez sur **[!UICONTROL Ajouter]**. Un message confirme l’ajout de la collection à la collection cible dans la variable **[!UICONTROL Sélectionner la destination]** page. Fermez le message pour terminer le processus.
+1. Appuyez/cliquez sur **[!UICONTROL Ajouter]**. Un message confirme l’ajout de la collection à la collection cible sur la page **[!UICONTROL Sélectionner la destination]**. Fermez le message pour terminer le processus.
 
 >[!NOTE]
 >
@@ -257,24 +257,24 @@ Vous pouvez exécuter un workflow pour les ressources d’une collection. Si la 
 1. Appuyez/cliquez sur l’icône de navigation globale, puis sélectionnez **[!UICONTROL Chronologie]** dans la liste.
 1. Dans la chronologie, sélectionnez ou appuyez sur l’icône en forme de signe d’insertion en bas, puis appuyez/cliquez sur **[!UICONTROL Démarrer le workflow]**.
 1. Dans la section **[!UICONTROL Démarrer le workflow]**, sélectionnez un modèle de workflow dans la liste. Par exemple, sélectionnez le modèle **[!UICONTROL Ressources de mise à jour de DAM]**.
-1. Saisissez un titre pour le workflow, puis appuyez/cliquez sur **[!UICONTROL Début]**.
-1. Dans la boîte de dialogue, appuyez/cliquez sur **[!UICONTROL Continuer]**. Le workflow s’exécute sur toutes les ressources de la collection.
+1. Saisissez un titre pour le workflow puis appuyez/cliquez sur **[!UICONTROL Démarrer]**.
+1. Dans la boîte de dialogue, appuyez/cliquez sur **[!UICONTROL Poursuivre]**. Le workflow s’exécute sur toutes les ressources de la collection.
 
 **Voir également**
 
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
->* [Création d’une tâche de révision pour les collections](/help/assets/bulk-approval.md)
+>* [Créer une tâche de révision pour les collections](/help/assets/bulk-approval.md)
 
