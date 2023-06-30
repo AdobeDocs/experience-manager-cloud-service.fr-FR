@@ -2,10 +2,10 @@
 title: En quoi la vue Assets vous bénéficie-t-elle ?
 description: En savoir plus sur les principaux avantages de la vue Assets
 mini-toc-levels: 3
-source-git-commit: 5a7938d5e52388516f8b66bbcf8ffdee332a51a3
+source-git-commit: 97b6f66f2d19b85ec0a71eda756aaa334ea5da57
 workflow-type: tm+mt
-source-wordcount: '1118'
-ht-degree: 11%
+source-wordcount: '1064'
+ht-degree: 12%
 
 ---
 
@@ -121,14 +121,15 @@ En plus de ces fonctionnalités, la vue Assets vous permet d’exécuter les fon
 
 * Renommez les ressources et les dossiers disponibles dans le référentiel.
 
+La nouvelle vue Adobe Experience Manager Assets est conçue pour rationaliser les workflows, favoriser la collaboration et accélérer la diffusion des ressources. En adoptant la vitesse du contenu, les marketeurs peuvent exploiter tout le potentiel de leurs ressources numériques et libérer la créativité comme jamais auparavant.
+
+
 Utilisez ces liens pour commencer rapidement à utiliser la vue Assets :
 
 * [Mon espace de travail](/help/assets/my-workspace-assets-view.md)
 * [Prise en main de la vue Assets](/help/assets/get-started-assets-view.md)
 
-## Conclusion {#conclusion}
 
-L’ère du numérique d’abord est arrivée, et il est temps de transformer nos outils marketing pour prendre en charge l’évolution du paysage des affaires. La nouvelle vue Adobe Experience Manager Assets est conçue pour rationaliser les workflows, favoriser la collaboration et accélérer la diffusion des ressources. En adoptant la vitesse du contenu, les marketeurs peuvent exploiter tout le potentiel de leurs ressources numériques et libérer la créativité comme jamais auparavant. Soyez prêt à exploiter la puissance de la nouvelle expérience d’affichage des ressources de l’Adobe et à obtenir des résultats exceptionnels dans vos campagnes marketing. Il est temps d’embrasser l’avenir de la gestion des ressources numériques et de propulser votre entreprise vers l’avenir.
 
 
 
