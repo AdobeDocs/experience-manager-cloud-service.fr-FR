@@ -6,9 +6,9 @@ feature: Asset Management
 role: User
 exl-id: adb94a31-d949-4f4a-89bc-44f1b4f67e14
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '481'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -66,15 +66,15 @@ Les administrateurs peuvent archiver les ressources extraites par d’autres uti
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
