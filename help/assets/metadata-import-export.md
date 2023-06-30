@@ -6,15 +6,15 @@ feature: Metadata
 role: User,Admin
 exl-id: fb70a068-3ba3-4459-952d-79155d286c42
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Importation et exportation des métadonnées de ressources par lot {#import-and-export-asset-metadata-in-bulk}
 
-Adobe Experience Manager Assets permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour en masse des ressources récemment chargées ou des ressources existantes en important un fichier CSV. Vous pouvez également ingérer des métadonnées de ressources en masse à partir d’un système tiers au format CSV.
+Adobe Experience Manager Assets permet d’importer des métadonnées de ressources par lot à l’aide d’un fichier CSV. Vous pouvez effectuer des mises à jour en bloc pour les ressources récemment chargées ou des ressources existantes en important un fichier CSV. Vous pouvez également ingérer des métadonnées de ressources en bloc au format CSV à partir d’un système tiers.
 
 ## Importation de métadonnées {#import-metadata}
 
@@ -30,7 +30,7 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
 
    | Paramètre | Description |
    | ---------------------- | ------- |
-   | Taille du lot | Nombre de ressources d’un lot pour lesquelles des métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
+   | Taille du lot | Nombre de ressources dans un lot pour lesquelles des métadonnées doivent être importées. La valeur par défaut est 50. La valeur maximale est 100. |
    | Séparateur de champs | La valeur par défaut est `,` (une virgule). Vous pouvez spécifier n’importe quel autre caractère. |
    | Délimiteur à plusieurs valeurs | Séparateur des valeurs de métadonnées. La valeur par défaut est `|`. |
    | Lancer les workflows | False par défaut. Lorsque la valeur est définie sur `true` et que les paramètres par défaut sont utilisés pour le workflow Écriture différée des métadonnées de gestion des ressources numériques (DAM) (qui écrit des métadonnées dans les données XMP binaires). L’activation des workflows ralentit le système. |
@@ -54,11 +54,11 @@ L’importation de métadonnées est asynchrone et ne nuit pas aux performances 
 
 Vous pouvez exporter des métadonnées pour plusieurs ressources au format CSV. Les métadonnées sont exportées de manière asynchrone et n’ont aucun impact sur les performances du système. Pour exporter des métadonnées, Experience Manager parcourt les propriétés du nœud de ressource `jcr:content/metadata` et de ses nœuds enfants et exporte les propriétés de métadonnées dans un fichier CSV.
 
-Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc :
+Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc :
 
 * Importez les métadonnées dans un système tiers lors de la migration des ressources.
-* Partagez des métadonnées de ressource avec une équipe de projet plus étendue.
-* Testez ou contrôlez les métadonnées en vue de leur conformité.
+* Partagez des métadonnées de ressources avec une équipe de projet plus large.
+* Testez ou effectuez un audit des métadonnées à des fins de conformité.
 * Externalisez les métadonnées pour une localisation distincte.
 
 1. Sélectionnez le dossier de ressources pour lequel vous souhaitez exporter des métadonnées. Dans la barre d’outils, sélectionnez **[!UICONTROL Exporter les métadonnées]**.
@@ -70,7 +70,7 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc
 
 1. Dans le champ **[!UICONTROL Propriétés à exporter]**, indiquez si vous voulez exporter toutes les propriétés ou certaines propriétés. Si vous choisissez Propriétés sélectives à exporter, ajoutez les propriétés souhaitées.
 
-1. Dans la barre d’outils, appuyez/cliquez sur **[!UICONTROL Exporter]**. Un message confirme l’exportation des métadonnées. Fermez le message.
+1. Dans la barre d’outils, appuyez ou cliquez sur **[!UICONTROL Exporter]**. Un message confirme l’exportation de l’image. Fermez le message.
 1. Ouvrez la notification de la boîte de réception pour la tâche d’exportation. Sélectionnez la tâche et cliquez sur **[!UICONTROL Ouvrir]** dans la barre d’outils. Pour télécharger le fichier CSV avec les métadonnées, appuyez/cliquez sur **[!UICONTROL Téléchargement CSV]** dans la barre d’outils. Cliquez sur **[!UICONTROL Fermer]**.
 
    ![Boîte de dialogue de téléchargement du fichier CSV contenant les métadonnées exportées en bloc](assets/csv_download.png)
@@ -82,14 +82,14 @@ Voici quelques cas d’utilisation pour l’exportation de métadonnées en bloc
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
+* [Gérer les collections](manage-collections.md)
 
 >[!MORELIKETHIS]
 >
