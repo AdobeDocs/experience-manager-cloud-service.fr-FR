@@ -6,30 +6,30 @@ feature: Metadata
 role: User,Admin
 exl-id: 1d3ad496-a964-476e-b1da-4aa6d8ad53b7
 source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '987'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 # Métadonnées en cascade {#cascading-metadata}
 
-Lors de la capture des informations de métadonnées d’une ressource, les utilisateurs fournissent des informations dans les différents champs disponibles. Vous pouvez afficher des champs de métadonnées ou des valeurs de champ spécifiques en fonction des options sélectionnées dans les autres champs. Ce type d’affichage conditionnel des métadonnées est appelé métadonnées en cascade. En d’autres termes, vous pouvez créer une dépendance entre un champ/une valeur de métadonnées spécifique et un ou plusieurs champs et/ou leurs valeurs.
+Lors de la capture des informations de métadonnées d’une ressource, les utilisateurs et utilisatrices fournissent des informations dans les différents champs disponibles. Vous pouvez afficher des champs de métadonnées ou des valeurs de champ spécifiques en fonction des options sélectionnées dans les autres champs. Ce type d’affichage conditionnel des métadonnées est appelé « métadonnées en cascade ». En d’autres termes, vous pouvez créer une dépendance entre un champ/une valeur de métadonnées spécifique et un ou plusieurs champs et/ou leurs valeurs.
 
-Utilisez des schémas de métadonnées pour définir des règles d’affichage des métadonnées en cascade. Par exemple, si votre schéma de métadonnées comprend un champ de type de ressource, vous pouvez définir un ensemble de champs pertinent à afficher en fonction du type de ressource sélectionné par l’utilisateur.
+Utilisez des schémas de métadonnées pour définir les règles d’affichage des métadonnées en cascade. Par exemple, si votre schéma de métadonnées comprend un champ de type de ressource, vous pouvez définir un ensemble de champs pertinent à afficher en fonction du type de ressource sélectionné par l’utilisateur ou l’utilisatrice.
 
-Voici quelques cas d’utilisation pour lesquels vous pouvez définir des métadonnées en cascade :
+Voici quelques cas d’utilisation pour lesquels vous pouvez définir des métadonnées en cascade :
 
-* Lorsque l’emplacement de l’utilisateur est requis, affichez les noms de ville pertinents en fonction du choix de pays et d’état de l’utilisateur.
-* Chargez les noms de marque pertinents dans une liste en fonction du choix de catégorie de produits par l’utilisateur.
-* Active/désactive la visibilité d’un champ spécifique en fonction de la valeur spécifiée dans un autre champ. Par exemple, affichez des champs d’adresse de livraison distincts si l’utilisateur souhaite que l’envoi soit envoyé à une autre adresse.
+* Lorsque l’emplacement de l’utilisateur ou de l’utilisatrice est requis, afficher les noms de ville pertinents en fonction du pays de l’utilisateur ou l’utilisatrice.
+* Charger les noms de marque pertinents dans une liste en fonction du choix de catégorie de produits de l’utilisateur ou l’utilisatrice.
+* Activer/désactiver la visibilité d’un champ spécifique en fonction de la valeur spécifiée dans un autre champ. Par exemple, afficher des champs d’adresse de livraison distincts si l’utilisateur ou l’utilisatrice demande un envoi à une autre adresse.
 * Désigner un champ comme obligatoire en fonction de la valeur spécifiée dans un autre champ.
-* Modifiez les options affichées pour un champ particulier en fonction de la valeur spécifiée dans un autre champ.
-* Définissez la valeur de métadonnées par défaut dans un champ particulier en fonction de la valeur spécifiée dans un autre champ.
+* Modifier les options affichées pour un champ particulier en fonction de la valeur spécifiée dans un autre champ.
+* Définir la valeur de métadonnées par défaut dans un champ particulier en fonction de la valeur spécifiée dans un autre champ.
 
 ## Configuration des métadonnées en cascade dans [!DNL Experience Manager] {#configure-cascading-metadata-in-aem}
 
-Supposons que vous souhaitiez afficher des métadonnées en cascade en fonction du type de ressource sélectionné. Quelques exemples
+Supposons que vous souhaitiez afficher des métadonnées en cascade en fonction du type de ressource sélectionné. Voici quelques exemples :
 
 * Pour une vidéo, affichez les champs applicables tels que le format, le codec, la durée, etc.
 * Pour un document Word ou PDF, affichez des champs tels que le nombre de pages, l’auteur, etc.
@@ -41,21 +41,21 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    ![select_form](assets/select_form.png)
 
-1. (Facultatif) Dans l’éditeur de schéma de métadonnées, créez un champ à conditionner. Spécifiez un nom et un chemin de propriété dans la variable **[!UICONTROL Paramètres]** .
+1. (Facultatif) Dans l’éditeur de schéma de métadonnées, créez un champ à conditionner. Spécifiez un nom et un chemin de propriété dans l’onglet **[!UICONTROL Paramètres]**.
 
    Pour créer un onglet, appuyez/cliquez sur `+` afin d’ajouter un onglet, puis ajoutez un champ de métadonnées.
 
    ![add_tab](assets/add_tab.png)
 
-1. Ajoutez un champ déroulant pour le type de ressource. Spécifiez un nom et un chemin de propriété dans la variable **[!UICONTROL Paramètres]** . Ajoutez une description facultative.
+1. Ajoutez un champ déroulant pour le type de ressource. Spécifiez un nom et un chemin de propriété dans l’onglet **[!UICONTROL Paramètres]**. Ajoutez une description facultative.
 
    ![asset_type_field](assets/asset_type_field.png)
 
-1. Les paires clé-valeur sont les options fournies à un utilisateur de formulaire. Vous pouvez fournir les paires clé-valeur manuellement ou à partir d’un fichier JSON.
+1. Les paires clé-valeur sont les options fournies à un utilisateur ou une utilisatrice de formulaire. Vous pouvez fournir les paires clé-valeur manuellement ou à partir d’un fichier JSON.
 
-   * Pour spécifier les valeurs manuellement, sélectionnez **[!UICONTROL Ajouter manuellement]**, puis appuyez/cliquez sur **[!UICONTROL Ajouter un choix]** et indiquez le texte et la valeur de l’option. Par exemple, spécifiez les types de ressources Vidéo, PDF, Word et Image.
+   * Pour spécifier les valeurs manuellement, sélectionnez **[!UICONTROL Ajouter manuellement]**, appuyez/cliquez sur **[!UICONTROL Ajouter un choix]**, puis spécifiez le texte et la valeur de l’option. Par exemple, spécifiez les types de ressources Vidéo, PDF, Word et Image.
 
-   * Pour récupérer dynamiquement les valeurs d’un fichier JSON, sélectionnez **[!UICONTROL Ajout via le chemin JSON]** et indiquez le chemin d’accès au fichier JSON. [!DNL Experience Manager] récupère les paires clé/valeur en temps réel lorsque le formulaire est présenté à l’utilisateur.
+   * Pour récupérer dynamiquement les valeurs d’un fichier JSON, sélectionnez **[!UICONTROL Ajouter via le chemin JSON]** et indiquez le chemin d’accès au fichier JSON. [!DNL Experience Manager] récupère les paires clé/valeur en temps réel lorsque le formulaire est présenté à l’utilisateur.
 
    Les deux options s’excluent mutuellement. Vous ne pouvez pas importer les options d’un fichier JSON et les modifier manuellement.
 
@@ -86,7 +86,7 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 
    >[!NOTE]
    >
-   >Une liste déroulante avec des valeurs prédéfinies manuellement peut être utilisée avec des règles. Les menus déroulants avec chemin JSON configuré ne peuvent pas être utilisés avec des règles qui utilisent des valeurs prédéfinies pour appliquer des conditions. Si les valeurs sont chargées à partir de JSON au moment de l’exécution, il n’est pas possible d’appliquer une règle prédéfinie.
+   >Une liste déroulante avec des valeurs prédéfinies manuellement peut être utilisée avec des règles. Les menus déroulants avec un chemin JSON configuré ne peuvent pas être utilisés avec des règles qui utilisent des valeurs prédéfinies pour appliquer des conditions. Si les valeurs sont chargées à partir de JSON au moment de l’exécution, il n’est pas possible d’appliquer une règle prédéfinie.
 
 1. Sous **[!UICONTROL Visibilité]**, sélectionnez l’option **[!UICONTROL Visible, d’après la nouvelle règle]**.
 
@@ -119,12 +119,12 @@ Sans tenir compte du type de ressource choisi, affichez les informations de copy
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
