@@ -7,9 +7,9 @@ feature: Asset Management,Metadata
 role: User,Architect,Admin
 exl-id: 73a82bc2-1dda-4090-b7ee-29d1a632ba25
 source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2003'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 95%
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=en) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/metadata.html?lang=fr) |
 | AEM as a Cloud Service | Cet article |
 
 [!DNL Adobe Experience Manager Assets] conserve les métadonnées de chaque fichier. Cela permet d’obtenir une catégorisation et une organisation plus simples des ressources, ainsi que d’aider les personnes qui recherchent une ressource spécifique. Grâce à la possibilité d’extraire les métadonnées à partir des fichiers chargés sur [!DNL Experience Manager Assets], la gestion des métadonnées s’intègre aux workflows créatifs. La possibilité de conserver et de gérer les métadonnées de vos fichiers permet aussi d’organiser et de traiter automatiquement les fichiers en fonction de leurs métadonnées.
@@ -103,14 +103,14 @@ Il existe différentes manières d’incorporer des métadonnées dans des fichi
 
 ### ID3 {#id}
 
-Les données stockées dans ces balises ID3 s’affichent lorsque vous lisez un fichier audio numérique sur votre ordinateur ou un lecteur MP3 portable.
+Les données stockées dans ces balises ID3 s’affichent lorsque vous relisez un fichier audio numérique sur votre ordinateur ou sur un lecteur MP3 portable.
 
-Les balises ID3 sont conçues pour le format de fichier MP3. Informations supplémentaires sur les formats :
+Les balises ID3 sont conçues pour le format de fichier MP3. Informations supplémentaires sur les formats :
 
 * Les balises ID3 fonctionnent dans les fichiers MP3 et mp3PRO.
 * Le format WAV ne contient pas de balises.
 * Le format WMA possède des balises propriétaires qui n’autorisent pas l’implémentation Open Source.
-* Le format Ogg Vorbis utilise des commentaires Xiph incorporés dans le conteneur Ogg.
+* Le format Ogg Vorbis utilise des commentaires Xiph incorporés dans le conteneur Ogg.
 * AAC utilise un format de balisage propriétaire.
 
 ### Exif {#exif}
@@ -146,7 +146,7 @@ Enterprise Manager Assets vous permet de modifier les métadonnées de plusieu
 
    >[!NOTE]
    >
-   >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des ressources de la liste des ressources en les désélectionnant. Toutes les ressources sont sélectionnées par défaut dans la liste des ressources. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
+   >* Dans la page [!UICONTROL Propriétés], vous pouvez supprimer des ressources de la liste des ressources en les désélectionnant. La liste des ressources contient toutes les ressources sélectionnées par défaut. Les métadonnées des ressources que vous supprimez de la liste ne sont pas mises à jour.
    >* En haut de la liste des ressources, cochez la case située en regard de l’option **[!UICONTROL Titre]** pour passer de la sélection des ressources à l’effacement de la liste, et inversement.
 
 
@@ -257,10 +257,10 @@ La création de workflows pilotés par les métadonnées permet d’automatiser 
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
 >
