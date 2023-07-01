@@ -1,7 +1,7 @@
 ---
-source-git-commit: 3409c713ea1ca033a2835d0070d0da4fec58fd18
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '96'
 ht-degree: 59%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 59%
 
 Il s’agit du référentiel pour la documentation Adobe Experience Manager as a Cloud Service. Cette documentation porte sur l’installation, l’administration, la création et la personnalisation d’Experience Using as a Cloud Service.
 
-Vos contributions à la documentation sont les bienvenues. Veuillez consulter les ressources suivantes :
+Vos contributions à la documentation sont les bienvenues. Reportez-vous aux ressources suivantes :
 
 * [contributing.md](contributing.md) Pour obtenir un aperçu de la contribution à la documentation.
 * [guidelines.md](guidelines.md) Pour obtenir une vue d’ensemble de ce qui est attendu dans les contributions et comment composer vos contributions à la documentation.

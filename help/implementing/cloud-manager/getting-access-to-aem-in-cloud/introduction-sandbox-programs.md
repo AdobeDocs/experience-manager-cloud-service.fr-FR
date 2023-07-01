@@ -2,10 +2,10 @@
 title: Présentation des programmes Sandbox
 description: Découvrez en quoi les programmes Sandbox diffèrent des programmes de production.
 exl-id: 4606590c-6826-4794-9d2e-5548a00aa2fa
-source-git-commit: 2ad5bdc886f3c47b6ee600e69c6e40f1df071cbc
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 82%
+source-wordcount: '475'
+ht-degree: 71%
 
 ---
 
@@ -18,7 +18,7 @@ Découvrez en quoi les programmes Sandbox diffèrent des programmes de productio
 
 Un programme Sandbox est généralement créé pour servir à la formation, à l’exécution de démonstrations, à l’activation ou aux preuves de concept (POC), ils ne sont donc pas destinés à transporter du trafic en direct.
 
-Le programme Sandbox est l’un des deux types de programmes disponibles dans AEM Cloud Service, l’autre étant le [programme de production.](introduction-production-programs.md) Consultez le document [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) pour en savoir plus sur les types de programmes.
+Le programme Sandbox est l’un des deux types de programmes disponibles dans AEM Cloud Service, l’autre étant le [programme de production.](introduction-production-programs.md) Voir [Présentation des programmes et des types de programmes](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/program-types.md) pour en savoir plus sur les types de programme.
 
 ## Création automatique {#auto-creation}
 
@@ -49,7 +49,7 @@ Les domaines personnalisés et les listes d’adresses IP autorisées ne sont pa
 
 ### Aucun réseau avancé {#advanced-networking}
 
-Les [fonctionnalités de réseau avancé](/help/security/configuring-advanced-networking.md) (par exemple, la configuration en libre-service de réseaux VPN, de ports non standards, d’adresses IP de sortie dédiées, etc.) ne sont pas disponibles dans les programmes sandbox.
+[Fonctionnalités de mise en réseau avancées](/help/security/configuring-advanced-networking.md) (par exemple, la mise en service en libre-service de VPN, de ports non standard, d’adresses IP de sortie dédiées, etc.) ne sont pas disponibles dans les programmes Sandbox.
 
 ### Mises à jour AEM manuelles {#updates}
 
@@ -58,15 +58,15 @@ Les mises à jour AEM ne sont pas automatiquement transmises aux programmes Sand
 * Une mise à jour manuelle ne peut être exécutée que si l’environnement ciblé dispose d’un pipeline correctement configuré.
 * Une mise à jour manuelle d’un environnement de production met automatiquement à jour l’environnement d’évaluation, et vice-versa. Le jeu d’environnements Production+Évaluation doit se trouver dans la même version AEM.
 
-Consultez le document [Mises à jour des versions d’AEM](/help/implementing/deploying/aem-version-updates.md) pour plus d’informations.
+Voir [Mises à jour AEM version](/help/implementing/deploying/aem-version-updates.md) pour plus d’informations.
 
-Consultez le document [Mise à jour de l’environnement](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) pour savoir comment mettre à jour un environnement.
+Voir [Environnement de mise à jour](/help/implementing/cloud-manager/manage-environments.md#updating-dev-environment) pour savoir comment mettre à jour un environnement.
 
 ### Mise en veille et suppression {#hibernation}
 
 Les environnements d’un programme Sandbox sont automatiquement mis en veille après huit heures d’inactivité. Les environnements Sandbox sont supprimés après six mois consécutifs de veille.
 
-Reportez-vous à la section [Mise en veille et réactivation d’environnements Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) pour plus d’informations sur la réactivation des environnements et la suppression automatique des environnements de test.
+Voir [Mise en veille et réactivation d’environnements Sandbox](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/hibernating-environments.md) pour plus d’informations sur la réactivation des environnements et la suppression automatique des environnements de test.
 
 ### Aucun support technique {#no-support}
 

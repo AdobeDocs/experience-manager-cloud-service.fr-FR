@@ -1,18 +1,18 @@
 ---
 title: Configuration du filtre Référent avec AEM découplé
-description: Le filtre Référent Adobe Experience Manager permet d’accéder à partir d’hôtes tiers. Une configuration OSGi pour le filtre Référent est nécessaire pour activer l’accès au point d’entrée GraphQL pour les applications découplées.
+description: Le filtre de référent de Adobe Experience Manager permet d’accéder à partir d’hôtes tiers. Une configuration OSGi pour le filtre Référent est nécessaire pour activer l’accès au point d’entrée GraphQL pour les applications découplées.
 feature: GraphQL API
 exl-id: e2e3d2dc-b839-4811-b5d1-38ed8ec2cc87
-source-git-commit: 076cafe3d096fd7f4c808f1b2553a9ba6b6c1833
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 100%
+source-wordcount: '275'
+ht-degree: 92%
 
 ---
 
 # Filtre Référent {#referrer-filter}
 
-Le filtre de référent d’Adobe Experience Manager autorise l’accès à partir d’hôtes tiers.
+Le filtre de référent de Adobe Experience Manager permet d’accéder à partir d’hôtes tiers.
 
 Une configuration OSGi pour le filtre de référent est nécessaire pour autoriser l’accès au point d’entrée GraphQL pour les applications découplées via POST HTTP. Lors de l’utilisation de requêtes persistantes découplées AEM qui accèdent à AEM via GET HTTP, aucune configuration de filtre de référent n’est nécessaire.
 
@@ -57,7 +57,6 @@ Par exemple, pour accorder l’accès aux requêtes avec le référent `my.domai
 >* n’accorder l’accès qu’aux domaines approuvés ;
 >* s’assurer qu’aucune information sensible n’est exposée
 >* ne pas utiliser la syntaxe de caractère générique [*] ; cette méthode désactive à la fois l’accès authentifié au point d’entrée GraphQL et l’expose par ailleurs vis-à-vis du monde entier.
-
 
 >[!CAUTION]
 >

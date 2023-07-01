@@ -1,12 +1,12 @@
 ---
 title: Requêtes GraphQL persistantes
-description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
+description: Découvrez comment conserver les requêtes GraphQL dans Adobe Experience Manager as a Cloud Service pour optimiser les performances. Les requêtes persistantes peuvent être demandées par les applications clientes à l’aide de la méthode GET HTTP et la réponse peut être mise en cache aux couches Dispatcher et CDN, ce qui améliore finalement les performances des applications clientes.
 feature: Content Fragments,GraphQL API
 exl-id: 080c0838-8504-47a9-a2a2-d12eadfea4c0
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1681'
-ht-degree: 88%
+ht-degree: 83%
 
 ---
 
@@ -196,7 +196,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Où `PERSISTENT_PATH` est un chemin raccourci vers l’emplacement d’enregistrement de la requête persistante.
 
-1. Par exemple `wknd` est le nom de la configuration et `plain-article-query` est le nom de la requête persistante. Pour exécuter la requête :
+1. Par exemple : `wknd` est le nom de la configuration et `plain-article-query` est le nom de la requête persistante. Pour exécuter la requête :
 
    ```shell
    $ curl -X GET \
@@ -228,7 +228,7 @@ Le modèle ressemble à ce qui suit :
 <AEM_HOST>/graphql/execute.json/<PERSISTENT_QUERY_PATH>;variable1=value1;variable2=value2
 ```
 
-Par exemple, la requête suivante contient une variable `activity` pour filtrer une liste en fonction d’une valeur d’activité.
+Par exemple, la requête suivante contient une variable . `activity` pour filtrer une liste en fonction d’une valeur d’activité :
 
 ```graphql
 query getAdventuresByActivity($activity: String!) {
@@ -398,7 +398,7 @@ Le champ `Respond with application/graphql-response+json` (`responseContentTypeG
 
 ## Encoder l’URL de requête devant être utilisé par une application {#encoding-query-url}
 
-Pour une utilisation par une application, tout caractère spécial utilisé lors de la création de variables de requête (c’est-à-dire des points-virgules (`;`), le signe égal (`=`), des barres obliques `/`) doit être converti pour utiliser le codage UTF-8 correspondant.
+Pour une utilisation par une application, tout caractère spécial utilisé lors de la création de variables de requête (c’est-à-dire, des points-virgules (`;`), signe égal (`=`), barres obliques `/`) doit être converti pour utiliser le codage UTF-8 correspondant.
 
 Par exemple :
 

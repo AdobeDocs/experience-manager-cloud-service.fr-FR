@@ -2,10 +2,10 @@
 title: Modification de lancements
 description: Après avoir créé un lancement pour votre page (ou ensemble de pages), vous pouvez modifier le contenu dans la copie de lancement des pages.
 exl-id: d3cd3383-e0a0-4019-9f97-8baa3be99e6e
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '552'
-ht-degree: 72%
+source-wordcount: '553'
+ht-degree: 71%
 
 ---
 
@@ -72,7 +72,7 @@ Vous pouvez à tout moment ajouter ou supprimer des pages vers/depuis la plage d
 
 >[!NOTE]
 >
->Pour ajouter des pages à un lancement, elles doivent se trouver sous une racine de langue commune ; c’est-à-dire sur un seul site.
+>Pour ajouter des pages à un lancement, elles doivent se trouver sous une racine de langue commune ; c’est-à-dire, dans un seul site.
 
 ## Modification d’une configuration de lancement {#editing-a-launch-configuration}
 

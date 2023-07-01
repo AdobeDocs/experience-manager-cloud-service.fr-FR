@@ -2,7 +2,7 @@
 title: Framework de balisage AEM
 description: Balisez le contenu et utilisez l’infrastructure de balisage AEM pour le classer et l’organiser.
 exl-id: 25418d44-aace-4e73-be1a-4b1902f40403
-source-git-commit: 7260649eaab303ba5bab55ccbe02395dc8159949
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '1569'
 ht-degree: 66%
@@ -54,7 +54,7 @@ En règle générale, le `TagID` est un `TagID` abrégé commençant par l’esp
 
 Lorsque le contenu est balisé, la propriété [`cq:tags`](#cq-tags-property) est ajoutée, le cas échéant, au nœud de contenu et le `TagID` est ajouté à la valeur de tableau de la propriété `String`.
 
-Le `TagID` se compose d’un [espace de noms](#tag-namespace), suivi du `TagID` local. [Balises de conteneur](#container-tags) comportent des sous-balises qui représentent un ordre hiérarchique dans la taxonomie. Les sous-balises peuvent être utilisées pour référencer des balises de la même manière que n’importe quelle balise locale. `TagID`. Par exemple, baliser le contenu avec `fruit` est autorisé, même s’il s’agit d’une balise conteneur comportant des sous-balises, telles que `fruit/apple` et `fruit/banana`.
+Le `TagID` se compose d’un [espace de noms](#tag-namespace), suivi du `TagID` local. [Balises de conteneur](#container-tags) comportent des sous-balises qui représentent un ordre hiérarchique dans la taxonomie. Les sous-balises peuvent être utilisées pour référencer des balises de la même manière que n’importe quelle balise locale. `TagID`. Par exemple, pour baliser le contenu avec `fruit` est autorisé, même s’il s’agit d’une balise conteneur comportant des sous-balises, telles que `fruit/apple` et `fruit/banana`.
 
 ### Nœud racine de taxonomie {#taxonomy-root-node}
 

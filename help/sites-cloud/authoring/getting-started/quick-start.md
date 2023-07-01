@@ -2,10 +2,10 @@
 title: Guide de démarrage rapide pour la création de pages
 description: Guide de haut niveau conçu pour vous aider à commencer à créer rapidement du contenu de page
 exl-id: d37c9b61-7382-4bf6-8b90-59726b871264
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1572'
-ht-degree: 69%
+source-wordcount: '1569'
+ht-degree: 67%
 
 ---
 
@@ -57,7 +57,7 @@ Avant d’entamer la lecture de ce guide de démarrage rapide, nous vous proposo
 
 Il existe plusieurs moyens de rechercher une page. Vous pouvez soit naviguer, soit effectuer une recherche en procédant comme suit :
 
-1. Ouvrez la console **Sites** (à l’aide de l’option **Sites** dans [Navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation), déclenchée (dans une liste déroulante) lorsque vous sélectionnez le lien Adobe Experience Manager (en haut à gauche)).
+1. Ouvrez le **Sites** (à l’aide de la console **Sites** dans le [Navigation globale](/help/sites-cloud/authoring/getting-started/basic-handling.md#global-navigation) - ceci est déclenché (liste déroulante) lorsque vous sélectionnez le lien Adobe Experience Manager (en haut à gauche).
 
 1. Naviguez dans l’arborescence en appuyant/cliquant sur la page appropriée. La représentation des ressources de page dépend du mode d’affichage activé : [Carte, Liste ou Colonnes](/help/sites-cloud/authoring/getting-started/basic-handling.md#viewing-and-selecting-resources) :
 
@@ -181,7 +181,7 @@ Pour modifier votre page :
 
       * Sélectionner **Aperçu** dans la barre d’outils.
 
-   * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide de la fonction **Modifier** sélecteur déroulant.
+   * Revenez au mode d’édition (ou sélectionnez un autre mode) à l’aide de la fonction **Modifier** sélecteur de liste déroulante.
 
    >[!NOTE]
    >
@@ -270,7 +270,7 @@ Ces actions peuvent toutes être déclenchées par :
 Le [verrouillage d’une page](/help/sites-cloud/authoring/fundamentals/editing-content.md#locking-a-page) empêche d’autres auteurs de travailler dessus en même temps que vous. L’icône/le bouton Verrouiller (et Déverrouiller) est accessible :
 
 * La barre d’outils [une fois la page sélectionnée](#selecting-your-page-for-further-action).
-* Dans le [menu déroulant Informations sur la page](#editing-the-page-properties) lors de la modification d’une page.
+* Le [Menu déroulant Informations sur la page](#editing-the-page-properties) lors de la modification d’une page.
 * Dans la barre d’outils de la page lors de la modification d’une page (si la page est verrouillée).
 
 Par exemple, l’icône de verrouillage se présente comme suit :

@@ -2,10 +2,10 @@
 title: Création de lancements
 description: Vous pouvez créer un lancement pour permettre la mise à jour d’une nouvelle version de pages web existantes en vue d’une activation ultérieure.
 exl-id: 216ccb7a-1409-4f55-8be2-2b088f91a430
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 73%
+source-wordcount: '1043'
+ht-degree: 72%
 
 ---
 
@@ -62,7 +62,7 @@ Vous pouvez créer un lancement à partir de la console Sites ou Lancements :
 
    >[!NOTE]
    >
-   >Pour ajouter des pages et/ou des branches à un lancement, elles doivent se trouver dans un site ; c’est-à-dire sous une racine de niveau supérieur commune.
+   >Pour ajouter des pages et/ou des branches à un lancement, elles doivent se trouver dans un site ; c’est-à-dire, sous une racine de niveau supérieur commune.
    >
    >Si un site contient des racines de langue situées sous le niveau supérieur, les pages et les branches d’un lancement doivent se trouver sous une racine de langue commune.
 

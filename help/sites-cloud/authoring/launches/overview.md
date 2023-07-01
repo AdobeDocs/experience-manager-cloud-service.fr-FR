@@ -2,10 +2,10 @@
 title: Lancements
 description: Les lancements vous permettent de développer efficacement du contenu pour une version ultérieure. Les lancements permettent de préparer les modifications pour une publication à venir, tout en conservant vos pages actuelles.
 exl-id: 3e410120-d08f-4d05-932f-07bc4440af2b
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '903'
-ht-degree: 48%
+ht-degree: 44%
 
 ---
 
@@ -67,7 +67,7 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
       * Si la variable **Prêt pour la production** est défini, le lancement est automatiquement promu aux pages de production sur l’élément **Launch**(**En direct**) **date**. Après la promotion, les pages de production sont automatiquement publiées.\
         Si aucune date n’a été définie, l’indicateur n’a aucun effet.
 * Mettez à jour vos pages source et de lancement en parallèle :
-   * Les modifications apportées aux pages source sont automatiquement appliquées à la copie de lancement (si elle a été configurée avec un héritage, c’est-à-dire comme Live Copy).
+   * Les modifications apportées aux pages source sont automatiquement implémentées dans la copie de lancement (si elle est configurée avec un héritage) ; c’est-à-dire, en tant que Live Copy).
    * Les modifications apportées à la copie de lancement peuvent l’être sans interrompre les mises à jour automatiques ou modifier les pages source.
 
   ![Actions en parallèle](/help/sites-cloud/authoring/assets/launches-parallel.png)
@@ -86,7 +86,7 @@ Les lancements vous permettent d’effectuer les opérations suivantes :
 >
 >La création et la modification de lancements exigent des droits d’accès à `/content/launches`, comme avec le groupe par défaut `content-authors`.
 >
->Si vous rencontrez des difficultés, contactez votre administrateur système.
+>Si vous rencontrez des problèmes, contactez votre administrateur système.
 
 ## Lancements dans les références (console Sites) {#launches-in-references-sites-console}
 

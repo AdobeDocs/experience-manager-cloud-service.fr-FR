@@ -2,10 +2,10 @@
 title: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 description: Configuration d’un environnement de développement local pour Adobe Experience Manager Forms as a Cloud Service
 exl-id: 12877a77-094f-492a-af58-cffafecf79ae
-source-git-commit: 7dc36220c1f12177037aaa79d864c1ec2209a301
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2818'
+ht-degree: 97%
 
 ---
 
@@ -191,25 +191,25 @@ AEM Forms as a Cloud Services fournit un environnement SDK Docker qui facilite
    * (Apple macOS) Installez [Docker Desktop pour Mac](https://hub.docker.com/editions/community/docker-ce-desktop-mac). Il comprend Docker Engine, le client de ligne de commande Docker, Docker Composition, Docker Content Trust, Kubernetes et Credential Helper.
 
    * (Pour Linux®) Installez [Docker Engine](https://docs.docker.com/engine/install/#server) et [Docker Compose](https://docs.docker.com/compose/install/) sur votre ordinateur.
+
    >[!NOTE]
    >
    > * Pour Apple macOS, placez sur liste autorisée les dossiers contenant des instances d’auteur AEM locales.
    >
    > * Docker Desktop pour Windows prend en charge deux back-ends, Hyper-V
-      > (hérité) et WSL2 (moderne). Le partage de fichiers est automatiquement
-      > géré par Docker lors de l’utilisation de WSL2 (moderne). Vous devez
-      > configurer explicitement le partage de fichiers lors de l’utilisation d’Hyper-V (hérité).
+   > (hérité) et WSL2 (moderne). Le partage de fichiers est automatiquement
+   > géré par Docker lors de l’utilisation de WSL2 (moderne). Vous devez
+   > configurer explicitement le partage de fichiers lors de l’utilisation d’Hyper-V (hérité).
 
-
-1. Créez un dossier, par exemple aem-sdk, parallèlement à vos instances d’auteur et de publication, comme C:\aem-sdk.
+1. Créez un dossier, par exemple aem-sdk, parallèlement à vos instances d’auteur et de publication, Par exemple, C:\aem-sdk.
 
 1. Extrayez le fichier `aem-forms-addon-<version>.zip\aem-forms-addon-native-<version>.zip`.
 
    ![extracted aem forms add on native](assets/microservice-docker.png)
 
-1. Créez une variable d’environnement AEM_HOME et pointez vers l’installation locale de l’auteur AEM, par exemple C:\aem\author\.
+1. Créez une variable d’environnement AEM_HOME et pointez vers l’installation locale de l’auteur AEM, Par exemple, C:\aem\author\.
 
-1. Ouvrez sdk.bat ou sdk.sh pour le modification. Définissez AEM_HOME pour pointer vers l’installation locale de l’auteur AEM, par exemple C:\aem\author\.
+1. Ouvrez sdk.bat ou sdk.sh pour le modification. Définissez AEM_HOME pour pointer vers l’installation locale de l’auteur AEM, Par exemple, C:\aem\author\.
 
 1. Ouvrez une invite de commandes et accédez au dossier `aem-forms-addon-native-<version>`.
 
@@ -234,7 +234,7 @@ Utilisez ce projet pour créer des formulaires adaptatifs, déployer des mises �
 ---------|----------|---------
 | Canvas 3.0 | De base | Microsoft® Dynamics 365 |
 | Tranquil | Vide | Salesforce |
-| Urbane |  |  |
+| Urbane |   |  |
 | Ultramarine |  |  |
 | Beryl |  |  |
 
@@ -331,7 +331,7 @@ Votre environnement de développement local est prêt.
 
 ## Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms
 
-L’activation des composants principaux Forms adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. Vous avez besoin de l’environnement de composants principaux de Forms adaptatif activé pour utiliser le Forms adaptatif sans affichage.
+L’activation des composants principaux des formulaires adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, à publier et à diffuser des formulaires adaptatif et des formulaires découplés basés sur les composants principaux à l’aide de vos instances Cloud Service d&#39;AEM Forms sur plusieurs canaux. Vous avez besoin de l’environnement de composants principaux de Forms adaptatif activé pour utiliser le Forms adaptatif sans affichage.
 
 Pour obtenir des instructions, voir [Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms](/help/forms/enable-adaptive-forms-core-components.md)
 

@@ -2,10 +2,10 @@
 title: Déploiement de votre code
 description: Découvrez comment déployer votre code à l’aide des pipelines de Cloud Manager dans AEM as a Cloud Service.
 exl-id: 2c698d38-6ddc-4203-b499-22027fe8e7c4
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1215'
-ht-degree: 94%
+source-wordcount: '1189'
+ht-degree: 91%
 
 ---
 
@@ -57,9 +57,9 @@ La phase de **Déploiement dans l’environnement** comprend ces étapes.
 
 * **Validation** - Cette étape permet de s’assurer que le pipeline est configuré pour utiliser les ressources actuellement disponibles, par exemple, en s’assurant de l’existence de la branche configurée et de la disponibilité des environnements.
 * **Test unitaire et version** - Cette étape exécute un processus de création en conteneur.
-   * Consultez le document [Détails d’environnement de génération](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) pour plus d’informations sur l’environnement de génération.
+   * Voir [Détails d’environnement de génération](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md) pour plus d’informations sur l’environnement de génération.
 * **Analyse du code** - Cette étape évalue la qualité du code de votre application.
-   * Consultez le document [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) pour plus d’informations sur le processus de test.
+   * Voir [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md) pour plus d’informations sur le processus de test.
 * **Images de build** - Ce processus est responsable de la transformation du contenu et des packages du Dispatcher générés par l’étape de build en images Docker et en configuration Kubernetes.
 * **Déploiement sur l’environnement d’évaluation** - L’image est déployée dans l’environnement d’évaluation en vue de la [phase de test d’évaluation.](#stage-testing)
 
@@ -70,20 +70,20 @@ La phase de **Déploiement dans l’environnement** comprend ces étapes.
 La phase de **test d’évaluation** comprend ces étapes.
 
 * **Tests fonctionnels du produit** - Le pipeline Cloud Manager exécute des tests qui s’exécutent sur l’environnement d’évaluation.
-   * Reportez-vous au document [Tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) pour plus d’informations.
+   * Voir [Tests fonctionnels du produit](/help/implementing/cloud-manager/functional-testing.md#product-functional-testing) pour plus d’informations.
 
 * **Tests fonctionnels personnalisés** - Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Cependant, si aucun fichier JAR de test n’est généré par le build, le test réussit par défaut.
-   * Reportez-vous au document [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) pour plus d’informations.
+   * Voir [Tests fonctionnels personnalisés](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) pour plus d’informations.
 
 * **Test d’interface utilisateur personnalisé** - Cette étape est une fonctionnalité facultative qui exécute automatiquement des tests d’interface utilisateur créés pour des applications personnalisées.
    * Les tests de l’interface utilisateur sont des tests basés sur Selenium placés dans une image Docker pour permettre un large choix de langues et de cadres (tels que Java et Maven, Node et WebDriver.io, ou tout autre cadre et technologie basés sur Selenium).
-   * Reportez-vous au document [Test d’interface utilisateur personnalisé](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) pour plus d’informations.
+   * Voir [Tests de l’interface utilisateur personnalisée](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) pour plus d’informations.
 
 * **Contrôle de l’expérience** - Cette étape du pipeline est toujours exécutée et ne peut pas être ignorée. Lorsqu’un pipeline de production est exécuté, une étape de contrôle de l’expérience est incluse après les tests fonctionnels personnalisés qui exécuteront les contrôles.
    * Les pages configurées sont envoyées au service et évaluées.
    * Les résultats sont informatifs et affichent les scores et le changement entre les scores actuels et précédents.
    * Ces informations sont utiles pour déterminer si une régression est introduite avec le déploiement actuel.
-   * Pour plus d’informations, consultez la section [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md).
+   * Voir [Compréhension des résultats du contrôle de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md) pour plus d’informations.
 
 ![Test dans l’environnement d’évaluation](assets/stage-testing.png)
 
@@ -120,7 +120,7 @@ Les étapes suivantes expirent s’ils sont en attente de commentaires de l’ut
 
 ## Processus de déploiement {#deployment-process}
 
-Tous les déploiements de Cloud Service suivent un processus continu pour garantir un temps d’arrêt nul. Reportez-vous au document [Fonctionnement des déploiements par roulement](/help/implementing/deploying/overview.md#how-rolling-deployments-work) pour en savoir plus.
+Tous les déploiements de Cloud Service suivent un processus continu pour garantir un temps d’arrêt nul. Voir [Fonctionnement des déploiements en continu](/help/implementing/deploying/overview.md#how-rolling-deployments-work) pour en savoir plus.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Pour déterminer si une exécution est une réexécution, vous pouvez examiner l
 
 Pour déclencher une réexécution, une demande de PUT doit être envoyée au lien HAL &lt;(<https://ns.adobe.com/adobecloud/rel/pipeline/reExecute>)> au moment de l’étape de déploiement en production. Si ce lien est présent, l’exécution peut être redémarrée à partir de cette étape. En cas d’absence, l’exécution ne peut pas être redémarrée à partir de cette étape. Dans la version initiale, ce lien ne sera jamais présent que lors de l’étape de déploiement en production, mais les prochaines versions peuvent prendre en charge le démarrage du pipeline à partir d’autres étapes. Exemple :
 
-```Javascript
+```JavaScript
  {
   "_links": {
     "https://ns.adobe.com/adobecloud/rel/pipeline/logs": {

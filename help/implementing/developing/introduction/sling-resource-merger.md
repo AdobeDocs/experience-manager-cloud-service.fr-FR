@@ -2,10 +2,10 @@
 title: Utilisation de Sling Resource Merger dans Adobe Experience Manager as a Cloud Service
 description: Sling Resource Merger propose des services pour accéder à des ressources et les fusionner.
 exl-id: 5b6e5cb5-4c6c-4246-ba67-6b9f752867f5
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 87%
+source-wordcount: '1160'
+ht-degree: 82%
 
 ---
 
@@ -21,7 +21,7 @@ Sling Resource Merger fournit des services pour accéder aux ressources et les f
 
 Avec Sling Resource Merger, les ressources et/ou propriétés de recouvrement/remplacement sont fusionnées avec les ressources/propriétés d’origine :
 
-* Le contenu de la définition personnalisée a une priorité plus élevée que celle d’origine (en d’autres termes, elle la *recouvre* ou elle la *remplace*).
+* Le contenu de la définition personnalisée a une priorité plus élevée que celle de l’original (c’est-à-dire qu’il *superpositions* ou *overrides* it).
 
 * Si nécessaire, les [propriétés](#properties) définies dans la personnalisation indiquent comment utiliser le contenu fusionné à partir de l’original.
 
@@ -117,7 +117,7 @@ Ainsi, dans l’exemple de recouvrement ci-dessus, les nœuds suivants sont néc
 
 >[!NOTE]
 >
->Lorsque vous utilisez Sling Resource Merger (c’est-à-dire lorsque vous employez l’interface utilisateur tactile standard), il est déconseillé de copier toute la structure depuis `/libs`, car cela entraînerait le stockage d’une trop grande quantité d’informations dans `/apps`. Cela peut entraîner des problèmes lorsque le système est mis à niveau.
+>Lors de l’utilisation de Sling Resource Merger (c’est-à-dire lorsque vous utilisez l’interface utilisateur tactile standard), il n’est pas recommandé de copier la structure entière depuis `/libs` car cela entraînerait le stockage d&#39;un trop grand nombre d&#39;informations dans `/apps`. Cela peut entraîner des problèmes lorsque le système est mis à niveau.
 
 ### Cas d’utilisation {#use-cases}
 

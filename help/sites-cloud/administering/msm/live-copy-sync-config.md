@@ -4,7 +4,7 @@ description: Découvrez les puissantes options de synchronisation des Live Copie
 feature: Multi Site Manager
 role: Admin
 exl-id: 0c97652c-edac-436e-9b5b-58000bccf534
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2335'
 ht-degree: 91%
@@ -123,7 +123,7 @@ Le tableau ci-dessous décrit les propriétés que vous pouvez configurer :
 
 Plusieurs propriétés et types de noeud sont exclus par défaut. Ils sont définis dans la configuration OSGi de **Action de mise à jour du contenu CQ MSM**, sous **Propriétés de page exclues**.
 
-Par défaut, les propriétés correspondant aux expressions régulières suivantes sont exclues (c’est-à-dire non mises à jour) au moment du déploiement :
+Par défaut, les propriétés correspondant aux expressions régulières suivantes sont exclues (c’est-à-dire, non mises à jour) au moment du déploiement :
 
 ![Expressions régulières à exclure des Live Copies](../assets/live-copy-exclude.png)
 
@@ -196,7 +196,7 @@ Notez que les pages enfants de la page de plan directeur héritent de la configu
 1. Utilisez la console **Sites** pour sélectionner la page racine du plan directeur.
 1. Sélectionnez **Propriétés** dans la barre d’outils.
 1. Ouvrez l’onglet **Plan directeur**.
-1. Sélectionnez une ou plusieurs **configurations de déploiement** à l’aide du sélecteur de liste déroulante.
+1. Sélectionnez une ou plusieurs **Configurations du déploiement** à l’aide du sélecteur de liste déroulante.
 1. Conservez vos mises à jour à l’aide de l’option **Enregistrer**.
 
 ### Définition de la configuration du déploiement système par défaut {#setting-the-system-default-rollout-configuration}

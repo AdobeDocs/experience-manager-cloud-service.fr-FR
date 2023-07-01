@@ -6,17 +6,17 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: f22554450d2eb1f4948f749ba00f78b568ee308f
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 6%
+source-wordcount: '1016'
+ht-degree: 11%
 
 ---
 
 
 # Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
 
-L’activation des composants principaux Forms adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, publier et diffuser des composants principaux basés sur Forms adaptatif et Forms sans affichage à l’aide de vos instances de Cloud Service AEM Forms sur plusieurs canaux. Vous avez besoin de l’environnement de composants principaux de Forms adaptatif activé pour utiliser le Forms adaptatif sans affichage.
+L’activation des composants principaux des formulaires adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, à publier et à diffuser des formulaires adaptatif et des formulaires découplés basés sur les composants principaux à l’aide de vos instances Cloud Service d&#39;AEM Forms sur plusieurs canaux. Vous avez besoin de l’environnement de composants principaux de Forms adaptatif activé pour utiliser le Forms adaptatif sans affichage.
 
 ## Considérations
 
@@ -24,7 +24,7 @@ L’activation des composants principaux Forms adaptatifs sur AEM Forms as a Clo
 
 * Si vous disposez d’un programme Forms as a Cloud Service plus ancien où les composants principaux sont [not enabled](#enable-components), vous pouvez [ajout de dépendances des composants principaux Forms adaptatifs](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) dans votre référentiel as a Cloud Service AEM et déployez le référentiel dans vos environnements de Cloud Service pour activer le Forms adaptatif sans affichage.
 
-* Si votre environnement de Cloud Service existant propose une option pour [Création d’un Forms adaptatif basé sur les composants principaux](creating-adaptive-form-core-components.md), les composants principaux de Forms adaptatif et les Forms adaptatifs sans affichage sont déjà activés pour votre environnement et vous pouvez utiliser les Forms adaptatifs basés sur les composants principaux en tant que formulaires sans interface pour les canaux tels que les appareils mobiles, web, les applications natives et les services qui nécessitent une représentation sans interface de Forms adaptatif.
+* Si votre environnement de Cloud Service existant propose une option pour [Création d’un Forms adaptatif basé sur les composants principaux](creating-adaptive-form-core-components.md), les composants principaux de Forms adaptatif et les Forms adaptatifs sans affichage sont déjà activés pour votre environnement et vous pouvez utiliser les Forms adaptatifs basés sur les composants principaux en tant que formulaires sans interface pour les canaux tels que les canaux mobiles, web, les applications natives et les services qui nécessitent une représentation sans interface de Forms adaptatif.
 
 
 ## Activation des composants principaux de Forms adaptatif et de Forms adaptatif sans affichage {#enable-headless-forms}
@@ -193,8 +193,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les compo
    >
    >  Pour rechercher votre `${appId}`, dans la variable `[AEM Repository Folder]/all/pom.xml` , recherchez les `-packages/application/install` terme. Le texte situé avant la balise `-packages/application/install` est votre terme `${appId}`. Par exemple, le code suivant : `myheadlessform` is `${appId}`.
    >
-   >   
-   ```
+   >   ```
    >             <embedded>
    >                     <groupId>com.myheadlessform</groupId>
    >                     <artifactId>myheadlessform.ui.apps<artifactId>
@@ -331,7 +330,7 @@ Lorsque les composants principaux de Forms adaptatif sont activés pour votre en
 * [Création d’un Forms adaptatif basé sur des composants principaux](/help/forms/creating-adaptive-form-core-components.md).
 * [Création de modèles de formulaires adaptatifs basés sur des composants principaux](/help/forms/template-editor.md).
 * [Création de thèmes personnalisés pour les modèles de formulaires adaptatifs basés sur les composants principaux](/help/forms/using-themes-in-core-components.md).
-* [Diffuser les représentations JSON du formulaire adaptatif basé sur les composants principaux aux canaux tels que les applications mobiles, web, natives et les services qui nécessitent une représentation sans tête d’un formulaire](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html).
+* [Diffuser les représentations JSON du formulaire adaptatif basé sur les composants principaux aux canaux tels que les applications mobiles, web, natives et les services qui nécessitent une représentation sans tête d’un formulaire](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=fr).
 
 ### Les composants principaux de Forms adaptatif sont-ils activés pour mon environnement ? {#enable-components}
 

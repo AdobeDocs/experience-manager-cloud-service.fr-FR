@@ -2,9 +2,9 @@
 title: Considérations, problèmes connus et bonnes pratiques
 description: Bonnes pratiques, problèmes connus et limites en matière de communication
 exl-id: e95615dd-e494-40cd-9cdf-6e9761ca3b3e
-source-git-commit: 4b76fbbb1b58324065b39d6928027759b0897246
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1709'
 ht-degree: 100%
 
 ---
@@ -161,7 +161,7 @@ Le tableau suivant indique les options XCI.
 
 * Vous ne pouvez utiliser un type de rendu spécifique (PDF, IMPRESSION) qu’une seule fois dans la liste des options d’impression. Par exemple, vous ne pouvez pas définir deux options IMPRESSION spécifiant chacune un type de rendu PCL.
 
-* Pour une configuration de lot, une seule instance de combinaison de valeurs OutputType(PDF, PRINT) et RenderType(PostScript, PCL, IPL, ZPL, etc.) est autorisée.
+* Pour une configuration de lot, une seule instance de combinaison de valeurs OutputType(PDF, PRINT) et RenderType (PostScript, PCL, IPL, ZPL, etc.) est autorisée.
 
 * Pour les API asynchrones (traitement par lot), le niveau d’enregistrement par défaut est défini sur 2. Vous pouvez utiliser un fichier XCI personnalisé pour définir le niveau d’enregistrement sur 1.
 

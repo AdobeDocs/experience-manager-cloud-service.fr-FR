@@ -2,10 +2,10 @@
 title: Participation aux workflows
 description: Les workflows incluent généralement des étapes qui nécessitent qu’une personne effectue une activité sur une page ou une ressource.
 exl-id: 62192da9-0b5b-4997-9c2b-d1aee04b01f9
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1542'
-ht-degree: 64%
+source-wordcount: '1537'
+ht-degree: 58%
 
 ---
 
@@ -37,7 +37,7 @@ Lorsqu’une tâche vous est attribuée (par exemple, **Approuver le contenu**),
    * Toute action disponible pour l’utilisateur actuel pour l’étape actuelle du workflow ; par exemple, Terminer, Déléguer, Afficher les détails.
    * Nombre de workflows auxquels la page est soumise. Vous pouvez :
       * utilisez les flèches gauche/droite pour parcourir les informations d’état des différents workflows.
-      * cliquer/appuyer sur le nombre pour ouvrir la liste déroulante de tous les workflows applicables, puis sélectionner le workflow que vous souhaitez afficher dans la barre d’état.
+      * cliquez/appuyez sur le nombre réel pour ouvrir une liste déroulante de tous les workflows applicables, puis sélectionnez le workflow que vous souhaitez afficher dans la barre d’état.
 
   ![Page avec plusieurs workflows](/help/sites-cloud/authoring/assets/workflows-multiple.png)
 
@@ -75,7 +75,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
 1. Sélectionnez **Terminer** dans la barre d’outils.
-1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire** s’il y a lieu.
+1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Sélectionnez la **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant – Éditeur de page {#completing-a-participant-step-page-editor}
@@ -84,7 +84,7 @@ Utilisez la procédure suivante pour terminer l’élément de travail :
 
 1. Ouvrez le [page à modifier](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Terminer** dans la barre d’état en haut.
-1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Choisissez **Étape suivante** dans la liste déroulante et ajoutez un **commentaire** s’il y a lieu.
+1. La boîte de dialogue **Terminer l’élément de travail** s’ouvre. Sélectionnez la **Étape suivante** à partir du sélecteur de liste déroulante et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Réalisation d’une étape de participant – Chronologie {#completing-a-participant-step-timeline}
@@ -134,7 +134,7 @@ Utilisez la procédure suivante pour déléguer un élément de travail :
 1. Ouvrez la **[boîte de réception AEM](/help/sites-cloud/authoring/getting-started/inbox.md)**.
 1. Sélectionnez l’élément de workflow sur lequel vous souhaitez agir (appuyez/cliquez sur la miniature).
 1. Sélectionnez **Déléguer** dans la barre d’outils.
-1. Une boîte de dialogue s’ouvre. Définissez l’**utilisateur** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire** si nécessaire.
+1. Une boîte de dialogue s’ouvre. Spécifiez la variable **Utilisateur** à partir du sélecteur de liste déroulante (il peut également s’agir d’un groupe) et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Délégation d’une étape de participant – Éditeur de page {#delegating-a-participant-step-page-editor}
@@ -143,7 +143,7 @@ Utilisez la procédure suivante pour déléguer un élément de travail :
 
 1. Ouvrez le [page à modifier](/help/sites-cloud/authoring/fundamentals/organizing-pages.md#opening-a-page-for-editing).
 1. Sélectionnez **Déléguer** dans la barre d’état en haut.
-1. Une boîte de dialogue s’ouvre. Définissez l’**utilisateur** dans le sélecteur déroulant (il peut également s’agir d’un groupe) et ajoutez un **commentaire** si nécessaire.
+1. Une boîte de dialogue s’ouvre. Spécifiez la variable **Utilisateur** à partir du sélecteur de liste déroulante (il peut également s’agir d’un groupe) et ajoutez une **Commentaire** si nécessaire.
 1. Cliquez sur **OK** pour terminer l’étape (ou **Annuler** pour annuler l’action).
 
 #### Délégation d’une étape de participant – Chronologie {#delegating-a-participant-step-timeline}

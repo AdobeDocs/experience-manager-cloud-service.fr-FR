@@ -2,10 +2,10 @@
 title: Environnement et outils de création
 description: L’environnement de création d’AEM comprend divers mécanismes permettant d’organiser et de modifier votre contenu.
 exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
-source-git-commit: 635f4c990c27a7646d97ebd08b453c71133f01b3
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2153'
-ht-degree: 65%
+ht-degree: 64%
 
 ---
 
@@ -85,7 +85,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
   Dans la barre d’outils supérieure de l’explorateur de **composants**, vous pouvez effectuer les opérations suivantes :
 
    * Filtrer les composants par nom
-   * Restreindre l’affichage à un groupe spécifique à l’aide de la liste déroulante
+   * Limitez l’affichage à un groupe spécifique à l’aide de la liste déroulante.
 
   Pour obtenir une description plus détaillée du composant, vous pouvez cliquer ou appuyer sur l’icône d’informations en regard du composant dans le navigateur **Composants** (le cas échéant). Par exemple, pour le **fragment de contenu** :
 
@@ -152,7 +152,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 >[!NOTE]
 >
->Un appareil mobile est détecté si la largeur est inférieure à 1 024 px. C’est également le cas pour les petites fenêtres sur les ordinateurs de bureau.
+>Un appareil mobile est détecté si la largeur est inférieure à 1 024 px ; c’est-à-dire, également sur une petite fenêtre de bureau.
 
 Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeur de ressources](/help/assets/manage-digital-assets.md) directement depuis l’explorateur de ressources en cliquant sur l’icône Modifier affichée en regard du nom de la ressource.
 

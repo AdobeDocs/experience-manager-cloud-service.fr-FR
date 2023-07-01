@@ -2,9 +2,9 @@
 title: Assistant de création du projet
 description: Découvrez l’assistant de création de projet pour vous aider à configurer rapidement votre projet après avoir créé votre programme de production.
 exl-id: 03736ca7-1345-4faf-a61a-f9213ab5c89a
-source-git-commit: 93cb0ffa87f2338518c2a23de4e0a692031e1a71
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '312'
 ht-degree: 6%
 
 ---
@@ -42,7 +42,7 @@ Une fois la création du programme terminée, une **Ajouter un environnement** r
 
 Vous disposez désormais d’un projet AEM basé sur l’archétype AEM ajouté à votre référentiel git afin de servir de base de développement pour votre propre projet. Vous pouvez ensuite créer vos environnements dans lesquels vous pouvez déployer le code du projet.
 
-Reportez-vous au document [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour savoir comment ajouter ou gérer des environnements.
+Voir [Gestion des environnements](/help/implementing/cloud-manager/manage-environments.md) pour savoir comment ajouter ou gérer des environnements.
 
 >[!NOTE]
 >

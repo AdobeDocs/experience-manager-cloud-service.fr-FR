@@ -3,10 +3,10 @@ title: Prise en charge des fragments de contenu d’Adobe Experience Manager as
 description: Découvrez la prise en charge des fragments de contenu dans l’API HTTP Assets, un élément important de la fonctionnalité de diffusion d’AEM découplé.
 feature: Content Fragments,Assets HTTP API
 exl-id: d72cc0c0-0641-4fd6-9f87-745af5f2c232
-source-git-commit: 80ac947976bab2b0bfedb4ff9d5dd4634de6b4fc
-workflow-type: ht
-source-wordcount: '1783'
-ht-degree: 100%
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+workflow-type: tm+mt
+source-wordcount: '1785'
+ht-degree: 96%
 
 ---
 
@@ -74,7 +74,6 @@ Par exemple, pour accéder à `/content/dam/wknd/en/adventures/cycling-tuscany`,
 >
 >* `/api/assets` **ne nécessite pas** l’utilisation du sélecteur `.model`.
 >* `/content/path/to/page` **nécessite** l’utilisation du sélecteur `.model`.
-
 
 La méthode HTTP détermine l’opération à exécuter :
 
@@ -148,12 +147,11 @@ Si l’API REST Assets est utilisée dans un environnement sans conditions d’a
 
 >[!NOTE]
 >
->Pour plus d’informations, voir :
+>Pour en savoir plus, voir :
 >
 >* [CORS/AEM expliqué](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 >* [Vidéo – Développement pour CORS et AEM](https://helpx.adobe.com/fr/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 >
-
 
 Il est recommandé d’utiliser OAuth dans les environnements ayant des exigences d’authentification spécifiques.
 
@@ -161,7 +159,7 @@ Il est recommandé d’utiliser OAuth dans les environnements ayant des exigence
 
 Les fragments de contenu sont un type spécifique de ressource. Voir [Utilisation de fragments de contenu](/help/assets/content-fragments/content-fragments.md).
 
-Pour plus d’informations sur les fonctionnalités disponibles via l’API, voir :
+Pour plus d’informations sur les fonctionnalités disponibles via l’API, voir :
 
 * L’[API REST Assets](/help/assets/mac-api-assets.md)
 * [Types d’entité](/help/assets/content-fragments/assets-api-content-fragments.md#entity-types), où sont expliquées les fonctionnalités propres à chaque type pris en charge (en fonction des fragments de contenu).
@@ -177,7 +175,7 @@ La réponse contiendra les informations de pagination dans la section `propertie
 
 >[!NOTE]
 >
->La pagination est généralement appliquée aux entités de conteneur (c’est-à-dire les dossiers ou les ressources comportant des rendus), car elle a trait aux enfants de l’entité demandée.
+>La pagination est généralement appliquée aux entités de conteneur (c’est-à-dire aux dossiers ou aux ressources avec des rendus), car elle se rapporte aux enfants de l’entité demandée.
 
 #### Exemple : pagination {#example-paging}
 
@@ -230,7 +228,7 @@ Les fragments de contenu :
 * N’exposent aucune donnée binaire.
 * Sont entièrement contenus dans la sortie JSON (dans la propriété `properties`).
 
-* Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment et non pas en tant que liens ou entités enfants. Cela permet un accès efficace à la payload d’un fragment.
+* Sont également considérés comme atomiques, c’est-à-dire que les éléments et les variations sont exposés dans les propriétés du fragment par rapport aux liens ou aux entités enfants. Cela permet un accès efficace à la payload d’un fragment.
 
 #### Modèles et fragments de contenu {#content-models-and-content-fragments}
 
@@ -275,68 +273,71 @@ Les codes d’état suivants s’affichent dans les circonstances pertinentes :
 
 * **200** (OK)
 
-   Affiché dans le scénario suivant :
+  Affiché dans le scénario suivant :
 
    * demande d’un fragment de contenu via `GET`
    * mise à jour réussie d’un fragment de contenu via `PUT`
 
 * **201** (Créé)
 
-   Affiché dans le scénario suivant :
+  Affiché dans le scénario suivant :
 
    * création réussie d’un fragment de contenu via `POST`
 
 * **404** (Introuvable)
 
-   Affiché dans le scénario suivant :
+  Affiché dans le scénario suivant :
 
    * le fragment de contenu demandé n’existe pas
 
 * **500** (Erreur interne du serveur)
 
-   >[!NOTE]
-   >
-   >Cette erreur est renvoyée :
-   >
-   >* lorsqu’une erreur ne pouvant pas être identifiée avec un code spécifique s’est produite ;
-   >* lorsque la payload donnée n’était pas valide.
+  >[!NOTE]
+  >
+  >Cette erreur est renvoyée :
+  >
+  >* lorsqu’une erreur ne pouvant pas être identifiée avec un code spécifique s’est produite ;
+  >* lorsque la payload donnée n’était pas valide.
 
-
-   L’exemple suivant répertorie les scénarios courants lorsque cet état d’erreur est renvoyé, ainsi que le message d’erreur (à espacement fixe) généré :
+  L’exemple suivant répertorie les scénarios courants lorsque cet état d’erreur est renvoyé, ainsi que le message d’erreur (à espacement fixe) généré :
 
    * Le dossier parent n’existe pas (lors de la création d’un fragment de contenu via `POST`)
    * Aucun modèle de fragment de contenu n’est fourni (cq:model est manquant) ou ne peut être lu (en raison d’un chemin d’accès non valide ou d’un problème d’autorisation) ou il n’existe aucun modèle de fragment valide :
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * Impossible de créer le fragment de contenu (problème d’autorisation potentiel) :
 
       * `Could not create content fragment`
+
    * Le titre et/ou la description n’ont pas pu être mis à jour :
 
       * `Could not set value on content fragment`
+
    * Impossible de définir les métadonnées :
 
       * `Could not set metadata on content fragment`
+
    * Élément de contenu introuvable ou impossible à mettre à jour
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   Les messages d’erreur détaillés sont généralement renvoyés de la façon suivante :
+  Les messages d’erreur détaillés sont généralement renvoyés de la façon suivante :
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## Référence d’API {#api-reference}
 
@@ -350,7 +351,7 @@ Pour accéder aux références d’API détaillées :
 
 ## Ressources supplémentaires {#additional-resources}
 
-Pour plus d’informations, voir :
+Pour en savoir plus, voir :
 
 * [Documentation de l’API HTTP Assets](/help/assets/mac-api-assets.md)
 * [Session AEM Gem : OAuth](https://helpx.adobe.com/fr/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

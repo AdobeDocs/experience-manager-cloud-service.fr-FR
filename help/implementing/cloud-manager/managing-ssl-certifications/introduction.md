@@ -2,10 +2,10 @@
 title: Introduction à la gestion des certificats SSL
 description: Découvrez comment Cloud Manager vous fournit des outils en libre-service pour installer les certificats SSL.
 exl-id: 0d41723c-c096-4882-a3fd-050b7c9996d8
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 79%
+source-wordcount: '630'
+ht-degree: 77%
 
 ---
 
@@ -69,7 +69,7 @@ Si vous avez atteint la limite, vérifiez vos certificats et tenez compte des po
 
 ## En savoir plus {#learn-more}
 
-Un utilisateur disposant des autorisations nécessaires peut utiliser Cloud Manager pour gérer les certificats SSL d’un programme. Pour plus d’informations sur l’utilisation de ces fonctionnalités, veuillez consulter les documents suivants.
+Un utilisateur disposant des autorisations nécessaires peut utiliser Cloud Manager pour gérer les certificats SSL d’un programme. Consultez les documents suivants pour plus d’informations sur l’utilisation de ces fonctionnalités.
 
 * [Ajout d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/add-ssl-certificate.md)
 * [Affichage, mise à jour ou remplacement d’un certificat SSL](/help/implementing/cloud-manager/managing-ssl-certifications/managing-certificates.md)

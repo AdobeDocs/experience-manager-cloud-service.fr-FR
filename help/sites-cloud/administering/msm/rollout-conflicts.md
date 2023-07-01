@@ -4,10 +4,10 @@ description: Découvrez comment gérer et résoudre les conflits de déploiement
 feature: Multi Site Manager
 role: Admin
 exl-id: 733e9411-50a7-42a5-a5a8-4629f6153f10
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 92%
+source-wordcount: '923'
+ht-degree: 89%
 
 ---
 
@@ -77,7 +77,7 @@ AEM fournit :
 Le gestionnaire de conflits par défaut est `ResourceNameRolloutConflictHandler`
 
 * Avec ce gestionnaire, la page du plan directeur prévaut.
-* Le classement des services pour ce gestionnaire est défini sur Bas, c’est-à-dire en dessous de la valeur par défaut pour la propriété `service.ranking`, car l’hypothèse est que les gestionnaires personnalisés doivent posséder un classement supérieur. Cependant, le classement n’est pas le minimum absolu pour garantir de la flexibilité lorsque cela est nécessaire.
+* Le classement des services pour ce gestionnaire est défini sur le bas, c’est-à-dire sous la valeur par défaut de la variable `service.ranking` , car il est supposé que les gestionnaires personnalisés auront besoin d’un classement supérieur. Cependant, le classement n’est pas le minimum absolu pour garantir de la flexibilité lorsque cela est nécessaire.
 
 Ce gestionnaire de conflits donne la priorité au plan directeur. Par exemple, la page de la Live Copy `/b` est déplacée dans la branche Live Copy vers `/b_msm_moved`.
 

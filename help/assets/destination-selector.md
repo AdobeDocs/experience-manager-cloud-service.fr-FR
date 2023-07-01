@@ -3,10 +3,10 @@ title: Sélecteur de destination pour AEM as a Cloud Service
 description: Utilisez le sélecteur de destination AEM pour afficher et sélectionner les ressources que vous pouvez utiliser comme copie de la ressource d’origine.
 contentOwner: Adobe
 role: Admin,User
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1909'
-ht-degree: 4%
+source-wordcount: '1911'
+ht-degree: 35%
 
 ---
 
@@ -21,13 +21,13 @@ L’interface utilisateur de Micro-Frontend est mise à disposition dans votre e
 
 Le sélecteur de destination offre de nombreux avantages, tels que :
 
-* Facilité d’intégration avec l’une des applications Adobe ou non Adobe utilisant la bibliothèque JavaScript Vanilla.
-* Facile à gérer, car les mises à jour du package du sélecteur de destination sont automatiquement déployées vers le sélecteur de destination disponible pour votre application. Aucune mise à jour n’est requise dans votre application pour charger les dernières modifications.
+* Facile à intégrer avec n’importe quelle application Adobe ou autre qu’Adobe utilisant la bibliothèque JavaScript Vanilla.
+* Facile à gérer, car les mises à jour du package du sélecteur de destination sont automatiquement déployées vers le sélecteur de destination disponible pour votre application. Aucune mise à jour n’est requise dans votre application pour télécharger les dernières modifications.
 * Facilité de personnalisation, car il existe des propriétés qui contrôlent l’affichage du sélecteur de destination dans votre application.
 * Recherche de texte intégral pour accéder rapidement aux dossiers où charger des ressources à partir de votre application.
 * Possibilité de créer des dossiers, de les trier par ordre croissant ou décroissant, puis de les afficher en mode Liste, Grille, Galerie ou Cascade.
 
-Le but de cet article est de montrer comment utiliser le sélecteur de destination avec une [!DNL Adobe] application sous Shell unifié ou lorsque vous avez déjà généré un imsToken pour l’authentification. Dans cet article, ces workflows sont appelés flux non SUSI.
+Le but de cet article est de montrer comment utiliser le sélecteur de destination avec une [!DNL Adobe] application sous Shell unifié ou lorsque vous avez déjà généré un imsToken pour l’authentification. Dans cet article, ces workflows sont appelés flux non-SUSI.
 
 Effectuez les tâches suivantes pour intégrer et utiliser le sélecteur de destination avec votre [!DNL Experience Manager Assets as a Cloud Service] référentiel :
 
@@ -37,21 +37,21 @@ Effectuez les tâches suivantes pour intégrer et utiliser le sélecteur de dest
 
 ## Intégration du sélecteur de destination à l’aide de Vanilla JS {#integration-with-vanilla-js}
 
-Vous pouvez intégrer n’importe quel [!DNL Adobe] ou application non Adobe avec [!DNL Experience Manager Assets] as a [!DNL Cloud Service] et sélectionnez des ressources dans l’application.
+Vous pouvez intégrer n’importe quelle application [!DNL Adobe] ou autre qu’Adobe avec [!DNL Experience Manager Assets] as a [!DNL Cloud Service] et sélectionner des ressources dans l’application.
 
 L’intégration est effectuée en important le package Sélecteur de destination et en se connectant à Assets as a Cloud Service à l’aide de la bibliothèque JavaScript Vanilla. Vous devez modifier une `index.html` ou tout fichier approprié dans votre application vers -
-* Définition des détails de l’authentification
-* Accès au référentiel Assets as a Cloud Service
+* Définition des détails d’authentification
+* Accès au référentiel Assets as a Cloud Service
 * Configuration des propriétés d’affichage du sélecteur de destination
 
-Vous pouvez effectuer une authentification sans définir certaines des propriétés IMS, si :
+Vous pouvez effectuer une authentification sans définir certaines des propriétés IMS, si :
 
-* Vous intégrez une [!DNL Adobe] application sur [Shell unifié](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=en).
+* Vous intégrez une application [!DNL Adobe] sur [Unified Shell](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/aem-cloud-service-on-unified-shell.html?lang=fr).
 * Un jeton IMS est déjà généré pour l’authentification.
 
 ## Prérequis {#prerequisites}
 
-Définissez les conditions préalables dans le `index.html` un fichier ou un fichier similaire dans l’implémentation de votre application pour définir les détails d’authentification permettant d’accéder à la variable [!DNL Experience Manager Assets] as a [!DNL Cloud Service] référentiel. Les prérequis sont les suivants :
+Définissez les conditions préalables dans le fichier `index.html` ou un fichier similaire dans l’implémentation de votre application pour définir les détails d’authentification permettant d’accéder au référentiel [!DNL Experience Manager Assets] as a [!DNL Cloud Service]. Les prérequis sont les suivants :
 * imsOrg
 * imsToken
 * apikey
@@ -60,7 +60,7 @@ Définissez les conditions préalables dans le `index.html` un fichier ou un fic
 
 Le sélecteur de destination est disponible via le réseau de diffusion de contenu ESM (par exemple, [esm.sh](https://esm.sh/)/[skypack](https://www.skypack.dev/)) et [UMD](https://github.com/umdjs/umd) version.
 
-Dans les navigateurs utilisant **Version UMD** (recommandé) :
+Dans les navigateurs utilisant la **version UMD** (recommandé) :
 
 ```
 <script src="https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js"></script>
@@ -70,7 +70,7 @@ Dans les navigateurs utilisant **Version UMD** (recommandé) :
 </script>
 ```
 
-Dans les navigateurs avec `import maps` prise en charge à l’aide de **Version du CDN ESM**:
+Dans les navigateurs avec la prise en charge `import maps` à l’aide de la **version du réseau CDN ESM** :
 
 ```
 <script type="module">
@@ -78,7 +78,7 @@ Dans les navigateurs avec `import maps` prise en charge à l’aide de **Version
 </script>
 ```
 
-Dans la fédération de modules Deno/Webpack à l’aide de **Version du CDN ESM**:
+Dans la fédération de modules Deno/Webpack à l’aide de la **version du réseau CDN ESM** :
 
 ```
 import { DestinationSelector } from 'https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/@assets/selectors/index.js'
@@ -125,26 +125,26 @@ Le tableau suivant décrit certaines des propriétés importantes de la destinat
 |---|---|---|
 | *repo:repositoryId* | chaîne | Identifiant unique du référentiel dans lequel la ressource est stockée. |
 | *repo:id* | chaîne | Identifiant unique de la ressource. |
-| *repo:assetClass* | chaîne | La classification de la ressource (par exemple, image ou vidéo, document). |
+| *repo:assetClass* | chaîne | Classification de la ressource (par exemple, image ou vidéo, document). |
 | *repo:name* | chaîne | Nom de la ressource, y compris l’extension de fichier. |
 | *repo:size* | nombre | Taille de la ressource en octets. |
 | *repo:path* | chaîne | Emplacement de la ressource dans le référentiel. |
-| *repo:ancestors* | `Array<string>` | Tableau d’éléments ancêtres pour la ressource dans le référentiel. |
-| *repo:state* | chaîne | Etat actuel de la ressource dans le référentiel (par exemple, principal, supprimé, etc.). |
-| *repo:createdBy* | chaîne | L’utilisateur ou le système qui a créé la ressource. |
+| *repo:ancestors* | `Array<string>` | Tableau d’éléments ancêtres de la ressource dans le référentiel. |
+| *repo:state* | chaîne | État actuel de la ressource dans le référentiel (par exemple, principal, supprimé, etc.). |
+| *repo:createdBy* | chaîne | L’utilisateur, l’utilisatrice ou le système qui a créé la ressource. |
 | *repo:createDate* | chaîne | Date et heure de création de la ressource. |
-| *repo:modifiedBy* | chaîne | L’utilisateur ou le système qui a modifié la ressource pour la dernière fois. |
+| *repo:modifiedBy* | chaîne | L’utilisateur, l’utilisatrice ou le système qui a modifié la ressource pour la dernière fois. |
 | *repo:modifyDate* | chaîne | Date et heure de la dernière modification de la ressource. |
 | *dc:format* | chaîne | Format de la ressource. |
 | *_page* | orderBy : string; count : nombre; | Inclut le numéro de page du document. |
 
 Pour obtenir la liste complète des propriétés et des exemples détaillés, rendez-vous sur la page [Exemple de code de sélecteur de destination](https://github.com/adobe/aem-assets-selectors-mfe-examples).
 
-### Exemple pour le flux non SUSI {#non-ims-vanilla}
+### Exemple pour le flux non-SUSI {#non-ims-vanilla}
 
 Cet exemple montre comment utiliser le sélecteur de destination avec un flux non SUSI lors de l’exécution d’une [!DNL Adobe] application sous Shell unifié ou lorsque vous avez déjà `imsToken` générés pour l’authentification.
 
-Incluez le package du sélecteur de destination dans votre code à l’aide de la variable `script` , comme illustré dans _lignes 6 à 15_ de l’exemple ci-dessous. Une fois le script chargé, la variable `PureJSSelectors` la variable globale peut être utilisée. Définition du sélecteur de destination [properties](#destination-selector-properties) comme illustré dans _lignes 16 à 23_. Le `imsOrg` et `imsToken` Les propriétés sont toutes deux requises pour l’authentification dans un flux non SUSI. Le `handleSelection` est utilisée pour gérer les ressources sélectionnées. Pour effectuer le rendu du sélecteur de destination, appelez la fonction `renderDestinationSelector` comme indiqué dans _ligne 17_. Le sélecteur de destination s’affiche dans la `<div>` élément de conteneur, comme indiqué dans _lignes 21 et 22_.
+Incluez le package du sélecteur de destination dans votre code à l’aide de la variable `script` , comme illustré dans _lignes 6 à 15_ de l’exemple ci-dessous. Une fois le script chargé, la variable `PureJSSelectors` la variable globale peut être utilisée. Définition du sélecteur de destination [properties](#destination-selector-properties) comme illustré dans _lignes 16 à 23_. Les propriétés `imsOrg` et `imsToken` sont toutes deux requises pour l’authentification dans un flux non-SUSI. La propriété `handleSelection` sert à gérer les ressources sélectionnées. Pour effectuer le rendu du sélecteur de destination, appelez la fonction `renderDestinationSelector` comme indiqué dans _ligne 17_. Le sélecteur de destination s’affiche dans la `<div>` élément de conteneur, comme indiqué dans _lignes 21 et 22_.
 
 En suivant ces étapes, vous pouvez utiliser le sélecteur de destination avec un flux non SUSI dans votre [!DNL Adobe] application.
 
@@ -185,7 +185,7 @@ Vous pouvez utiliser les propriétés du sélecteur de destination pour personna
 
 | Propriété | Type | Requis | Valeur par défaut | Description |
 |---|---|---|---|---|
-| *imsOrg* | chaîne | Oui | | Adobe de l’identifiant du système Identity Management (IMS) attribué lors de la mise en service [!DNL Adobe Experience Manager] as a [!DNL Cloud Service] pour votre organisation. Le `imsOrg` clé est requise pour vous authentifier si l’organisation à laquelle vous accédez se trouve sous Adobe IMS ou non. |
+| *imsOrg* | chaîne | Oui | | Identifiant Adobe Identity Management System (IMS) attribué lors de l’approvisionnement de [!DNL Adobe Experience Manager] en tant que [!DNL Cloud Service] pour votre organisation. Le `imsOrg` clé est requise pour vous authentifier si l’organisation à laquelle vous accédez se trouve sous Adobe IMS ou non. |
 | *imsToken* | chaîne | Non | | Jeton de support IMS utilisé pour l’authentification. `imsToken` n’est pas nécessaire si vous utilisez le flux SUSI. Cependant, il est requis si vous utilisez le flux non SUSI. |
 | *apiKey* | chaîne | Non | | Clé d’API utilisée pour accéder au service AEM Discovery. `apiKey` n’est pas nécessaire si vous utilisez le flux SUSI. Toutefois, il est requis dans un flux non SUSI. |
 | *rootPath* | chaîne | Non | /content/dam/ | Chemin du dossier à partir duquel le sélecteur de destination affiche vos ressources. `rootPath` peut également être utilisé sous la forme d’encapsulation. Par exemple, étant donné le chemin suivant, `/content/dam/marketing/subfolder/`, le sélecteur de destination ne vous permet pas de parcourir les dossiers parents, mais affiche uniquement les dossiers enfants. |
@@ -198,9 +198,9 @@ Vous pouvez utiliser les propriétés du sélecteur de destination pour personna
 | *viewType* | chaîne | Non | | Le `viewType` sert à spécifier les vues que vous utilisez pour afficher les ressources. |
 | *viewTypeOptions* | chaîne | Non | | Cette propriété est liée à `viewType` . vous pouvez spécifier une ou plusieurs vues pour afficher les ressources. Les options viewType disponibles sont les suivantes : Mode Liste, mode Grille, mode Galerie, mode Cascade et mode Arborescence. |
 | *itemNameFormatter* | chaîne | Non | | Cette propriété vous permet de mettre en forme le nom de l’élément. |
-| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Non |  | Si les traductions prêtes à l’emploi ne sont pas suffisantes pour répondre aux besoins de votre application, vous pouvez exposer une interface par laquelle vous pouvez transmettre vos propres valeurs localisées personnalisées via la `i18nSymbols` prop. Le transfert d’une valeur par le biais de cette interface remplace les traductions fournies par défaut et utilise plutôt la vôtre.  Pour effectuer le remplacement, vous devez transmettre un [Descripteur de message](https://formatjs.io/docs/react-intl/api/#message-descriptor) à la clé de `i18nSymbols` que vous voulez remplacer. |
+| *i18nSymbols* | `Object<{ id?: string, defaultMessage?: string, description?: string}>` | Non |  | Si les traductions prêtes à l’emploi ne sont pas suffisantes pour répondre aux besoins de votre application, vous pouvez exposer une interface par laquelle vous pouvez transmettre vos propres valeurs localisées et personnalisées via la propriété `i18nSymbols`. Le transfert d’une valeur par le biais de cette interface remplace les traductions fournies par défaut par les vôtres.  Pour effectuer le remplacement, vous devez transmettre un objet [Descripteur de message](https://formatjs.io/docs/react-intl/api/#message-descriptor) valide à la clé de `i18nSymbols` que vous voulez remplacer. |
 | *inlineAlertSetup* | chaîne | Non | | Il ajoute un message d’alerte que vous souhaitez transmettre à l’application. Par exemple, ajouter un message d’alerte indiquant que Vous n’êtes pas autorisé à accéder à ce dossier. |
-| *intl* | Objet | Non | | Le sélecteur de destination fournit des traductions par défaut prêtes à l’emploi. Vous pouvez sélectionner la langue de traduction en fournissant une chaîne de paramètres régionaux valide via le `intl.locale` prop. Par exemple : `intl={{ locale: "es-es" }}` </br></br> Les chaînes de paramètres régionaux prises en charge suivent le [ISO 639 - Codes](https://www.iso.org/iso-639-language-codes.html) pour la représentation des noms des normes linguistiques. </br></br> Liste des paramètres régionaux pris en charge : Anglais - &#39;en-us&#39; (par défaut) Espagnol - &#39;es-es&#39; Allemand - &#39;de-de&#39; Français - &#39;fr-FR&#39; Italien - &#39;it-it&#39; Japonais - &#39;ja-jp&#39; Coréen - &#39;ko-kr&#39; Portugais - &#39;pt-br&#39; Chinois (traditionnel) - &#39;zh-cn&#39; Chinois (Taïwan) - &#39;zh-tw&#39; |
+| *intl* | Objet | Non | | Le sélecteur de destination fournit des traductions par défaut prêtes à l’emploi. Vous pouvez sélectionner la langue de traduction en fournissant une chaîne de paramètres régionaux valide via la propriété `intl.locale`. Par exemple : `intl={{ locale: "es-es" }}` </br></br>. Les chaînes de paramètres régionaux prises en charge suivent la norme [ISO 639 - Codes](https://www.iso.org/fr/iso-639-language-codes.html) pour la représentation des noms des normes linguistiques. </br></br> Liste des paramètres régionaux pris en charge : anglais (en-us, par défaut), espagnol (es-es), allemand (de-de), français (fr-FR), italien (it-it), japonais (ja-jp), coréen (ko-kr), portugais (pt-br), chinois (traditionnel, zh-cn), chinois (Taïwan, zh-tw). |
 
 ## Exemples d’utilisation des propriétés du sélecteur de destination {#usage-examples}
 
@@ -232,7 +232,7 @@ Une fois que le sélecteur de destination est configuré et que vous êtes authe
 
 * **A**: [Barre de recherche](#search-bar)
 * **B**: [Tri](#sorting)
-* **C**: [Ressources](#assets-repo)
+* **C** : [ressources](#assets-repo)
 * **D**: [Ajouter un suffixe ou un préfixe](#add-suffix-or-prefix)
 * **E**: [Créer un dossier](#create-new-folder)
 * **F**: [Affichage](#types-of-view)
@@ -241,7 +241,7 @@ Une fois que le sélecteur de destination est configuré et que vous êtes authe
 
 ### Barre de recherche {#search-bar}
 
-Le sélecteur de destination vous permet d’effectuer une recherche de texte intégral des ressources dans le référentiel sélectionné. Par exemple, si vous saisissez le mot-clé `wave` dans la barre de recherche, toutes les ressources qui contiennent la variable `wave` Les mots-clés mentionnés dans l’une des propriétés de métadonnées s’affichent.
+Le sélecteur de destination vous permet d’effectuer une recherche de texte intégral des ressources dans le référentiel sélectionné. Par exemple, si vous saisissez le mot-clé `wave` dans la barre de recherche, toutes les ressources qui contiennent le mot-clé `wave` dans l’une des propriétés de métadonnées s’affichent.
 
 ### Tri {#sorting}
 
@@ -263,10 +263,10 @@ Il vous permet de créer un dossier dans le dossier de destination de votre [!DN
 
 Le sélecteur de destination vous permet d’afficher la ressource dans quatre vues différentes :
 
-* **![mode liste](assets/do-not-localize/list-view.png) [!UICONTROL Mode Liste]**: Le mode Liste affiche les fichiers et dossiers défilables dans une seule colonne.
-* **![vue grille](assets/do-not-localize/grid-view.png) [!UICONTROL Affichage de la grille]**: La vue Grille affiche les fichiers et dossiers défilables dans une grille de lignes et de colonnes.
-* **![vue de galerie](assets/do-not-localize/gallery-view.png) [!UICONTROL Mode Galerie]**: La vue Galerie affiche les fichiers ou les dossiers dans une liste horizontale centrée verrouillée.
-* **![vue de cascade](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vue de la cascade]**: La vue de la cascade affiche des fichiers ou des dossiers sous la forme d’un pont.
+* **![vue liste](assets/do-not-localize/list-view.png) [!UICONTROL Vue Liste]** : la vue Liste affiche les fichiers et dossiers défilables dans une seule colonne.
+* **![vue grille](assets/do-not-localize/grid-view.png) [!UICONTROL Vue grille]** : la vue Grille affiche les fichiers et dossiers défilables dans une grille de lignes et de colonnes.
+* **![vue galerie](assets/do-not-localize/gallery-view.png) [!UICONTROL Vue Galerie]** : la vue Galerie affiche les fichiers ou les dossiers dans une liste horizontale centrée et verrouillée.
+* **![vue cascade](assets/do-not-localize/waterfall-view.png) [!UICONTROL Vue Cascade]** : la vue Cascade affiche les fichiers ou les dossiers sous la forme d’un pont.
 
 ### Infos {#info}
 

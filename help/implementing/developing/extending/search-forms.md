@@ -2,10 +2,10 @@
 title: Configuration des formulaires de recherche
 description: Configuration des formulaires de recherche pour Adobe Experience Manager as a Cloud Service.
 exl-id: b06649c4-cc91-44e3-8699-00e90140b90d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2037'
-ht-degree: 91%
+ht-degree: 90%
 
 ---
 
@@ -307,7 +307,7 @@ En fonction de la configuration, les prédicats disponibles sont les suivants :
    <td>
     <ul>
      <li>Espace réservé</li>
-     <li>Chemin de base</li>
+     <li>Chemin d’accès racine</li>
      <li>Description</li>
     </ul> 
    </td>

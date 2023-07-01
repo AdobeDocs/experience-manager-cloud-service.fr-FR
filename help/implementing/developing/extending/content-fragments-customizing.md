@@ -2,10 +2,10 @@
 title: Personnalisation et extensions de fragments de contenu
 description: Un fragment de contenu étend une ressource standard.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '1808'
-ht-degree: 77%
+source-wordcount: '1811'
+ht-degree: 76%
 
 ---
 
@@ -280,7 +280,7 @@ Reportez-vous aux informations suivantes :
 
 >[!CAUTION]
 >
->Il est recommandé de tenir compte des informations générales suivantes. Il n’est pas prévu de modifier quoi que ce soit ici (car le marquage dans le référentiel indique qu’il s’agit d’une *zone privée*). Cependant, ces éléments peuvent être utiles, dans certains cas, pour comprendre dans le détail comment les choses fonctionnent.
+>Tenez compte de ces informations générales. Il n’est pas prévu de modifier quoi que ce soit ici (car le marquage dans le référentiel indique qu’il s’agit d’une *zone privée*). Cependant, ces éléments peuvent être utiles, dans certains cas, pour comprendre dans le détail comment les choses fonctionnent.
 
 La modification d’un fragment de contenu qui peut être réparti sur plusieurs vues (= pages HTML) est atomique. Comme les fonctionnalités d’édition à vues multiples atomiques ne sont pas un concept AEM classique, les fragments de contenu utilisent un processus appelé *session de modification*.
 
@@ -345,6 +345,6 @@ Si vous souhaitez définir un intervalle d’enregistrement automatique de 5 mi
 
 ## Composants pour la création de page {#components-for-page-authoring}
 
-Pour plus d’informations, voir
+Pour en savoir plus, voir
 
 * [Composants principaux - composant de fragment de contenu](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=fr) (recommandé)

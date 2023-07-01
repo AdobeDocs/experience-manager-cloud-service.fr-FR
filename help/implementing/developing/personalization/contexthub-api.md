@@ -1,17 +1,17 @@
 ---
-title: Guide de référence pour l’API JavaScript ContextHub
-description: L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant ContextHub a été ajouté à la page
+title: Référence de l’API JavaScript ContextHub
+description: L’API JavaScript ContextHub est disponible pour vos scripts lorsque le composant ContextHub a été ajouté à la page.
 exl-id: ec35bef5-610c-4e85-a43a-d4201b5eb03e
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '4620'
-ht-degree: 88%
+ht-degree: 85%
 
 ---
 
-# Guide de référence pour l’API JavaScript ContextHub  {#contexthub-javascript-api-reference}
+# Référence de l’API JavaScript ContextHub {#contexthub-javascript-api-reference}
 
-L’API JavaScript ContextHub est disponible pour les scripts lorsque le composant [ContextHub a été ajouté à la page](adding-contexthub.md).
+L’API JavaScript ContextHub est disponible pour vos scripts lorsque la variable [Le composant ContextHub a été ajouté à la page.](adding-contexthub.md).
 
 ## Constantes ContextHub {#contexthub-constants}
 
@@ -62,7 +62,7 @@ Le tableau suivant répertorie les noms des événements qui se produisent pour 
 | `ContextHub.Constants.EVENT_UI_INITIALIZED` | Déclenché lorsque le conteneur d’IU est initialisé | `ui-initialized` |
 | `ContextHub.Constants.ACTIVE_UI_MODE` | Indique le mode d’IU actif | `/_/active-ui-mode` |
 
-## Guide de référence pour l’API JavaScript ContextHub {#contexthub-javascript-api-reference-2}
+## Référence de l’API JavaScript ContextHub {#contexthub-javascript-api-reference-2}
 
 L’objet ContextHub fournit l’accès à tous les magasins.
 
@@ -773,7 +773,7 @@ Analyse une valeur de chaîne au format JSON et la convertit en objet JavaScript
 
 ##### Renvoie {#returns-parse}
 
-Un objet JavaScript.
+Objet JavaScript.
 
 ##### Exemple {#example-parse}
 
@@ -795,7 +795,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Sérialise les valeurs JavaScript et les objets en valeurs de chaîne au format JSON.
+Sérialise les valeurs et les objets JavaScript en valeurs de chaîne au format JSON.
 
 ##### Paramètres {#parameters-stringify}
 
@@ -869,7 +869,7 @@ La valeur qui correspond à la clé. Si la clé possède des clés enfants, cett
 
 ##### Exemple {#example-getitem-2}
 
-Étudions l’objet JavaScript suivant :
+Examinez l’objet JavaScript suivant :
 
 ```javascript
 myObject {
@@ -1045,7 +1045,7 @@ Une copie de l’objet `tree` qui comporte la paire `key`/`value`.
 
 ##### Exemple {#example-setitem-2}
 
-Étudions le code JavaScript suivant :
+Examinez le code JavaScript suivant :
 
 ```javascript
 var myObject = {

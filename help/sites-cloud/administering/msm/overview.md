@@ -4,9 +4,9 @@ description: Découvrez comment réutiliser du contenu avec les puissantes fonct
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
-source-wordcount: '2705'
+source-wordcount: '2706'
 ht-degree: 89%
 
 ---
@@ -155,7 +155,7 @@ Le tableau suivant présente un aperçu des principaux termes utilisés avec MSM
 | Source | Pages d’origine utilisées comme base pour les Live Copies | Synonyme de plan directeur et/ou pages de plan directeur |
 | Live Copy | Copie (de la source), maintenue par des actions de synchronisation telles que définies par les configurations de déploiement |  |
 | Configuration de Live Copy | Définition des détails de configuration d’une Live Copy |  |
-| Relations en direct | Définition de l’héritage pour une ressource donnée, c’est-à-dire les connexions entre la source et les Live Copies | Assure que les modifications apportées à la source peuvent être synchronisées avec la Live Copy |
+| Relations en direct | Définition efficace de l’héritage pour une ressource donnée qui est, les connexions entre la source et les Live Copies | Assure que les modifications apportées à la source peuvent être synchronisées avec la Live Copy |
 | Blueprint | Synonyme de source | Peut être défini par une configuration de plan directeur |
 | Configuration du plan directeur | Configuration prédéfinie spécifiant un chemin d’accès source | Lorsqu’une page de plan directeur est référencée dans une configuration de plan directeur, la commande Déployer devient disponible |
 | Chapitre | Sections du plan à inclure dans la Live Copy | Il s’agit généralement de sous-pages de la racine |

@@ -2,7 +2,7 @@
 title: Fondements techniques d’AEM
 description: Présentation des fondements techniques d’AEM, y compris la manière dont AEM est structuré et les technologies fondamentales comme JCR, Sling et OSGi.
 exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
-source-git-commit: 92c123817a654d0103d0f7b8e457489d9e82c2ce
+source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2144'
 ht-degree: 55%
@@ -162,7 +162,7 @@ En reprenant l’exemple ci-dessus, si le `sling:resourceType` est `hr/jobs` alo
    * Par exemple, `../content/corporate/jobs/developer.pdf`
    * Le script est `/apps/hr/jobs/jobs.pdf.esp`; le suffixe est ajouté au nom du script.
 * URL avec sélecteurs
-   * Les sélecteurs peuvent être utilisés pour afficher le même contenu dans un autre format. Par exemple, une version imprimable, un flux rss ou un résumé.
+   * Les sélecteurs peuvent être utilisés pour afficher le même contenu dans un autre format. Par exemple, une version compatible avec l’imprimante, un flux rss ou un résumé.
    * Si vous observez une version compatible avec l’imprimante dans laquelle le sélecteur peut être `print`; as in `../content/corporate/jobs/developer.print.html`
    * Le script est `/apps/hr/jobs/jobs.print.esp`; le sélecteur est ajouté au nom du script.
 * Si non, `sling:resourceType` est défini, puis :
