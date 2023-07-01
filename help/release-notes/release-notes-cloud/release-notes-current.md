@@ -3,9 +3,9 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 25689621ab24b6e14e7e865451ae53947a67d8d1
+source-git-commit: 5a37f237d04d19f3c4113c2ea3e37ab447bf3b0c
 workflow-type: tm+mt
-source-wordcount: '1427'
+source-wordcount: '1372'
 ht-degree: 16%
 
 ---
@@ -113,15 +113,11 @@ La vue Assets vous permet désormais de [ajouter des composants de propriété t
 
 ### Nouvelles fonctionnalités disponibles dans [!DNL Forms] {#new-features-available-in-channel}
 
-* [Forms adaptatif dans AEM éditeur de page](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Vous pouvez désormais utiliser AEM éditeur de page pour créer et ajouter rapidement plusieurs formulaires aux pages de vos sites. Cette fonctionnalité permet aux auteurs de contenu de créer des expériences de capture de données transparentes dans les pages Sites à l’aide de la puissance des composants de formulaires adaptatifs, notamment le comportement dynamique, les validations, l’intégration de données, la génération d’un document d’enregistrement et l’automatisation des processus d’entreprise. Vous pouvez :
+* [Forms adaptatif dans AEM éditeur de page et le fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md): Vous pouvez désormais utiliser AEM Éditeur de page et Fragment d’expérience pour créer et ajouter rapidement plusieurs formulaires à vos pages AEM Sites. Grâce à cette fonctionnalité, les auteurs de contenu peuvent créer des expériences de capture de données en toute transparence dans les pages Sites à l’aide de la puissance des composants de Forms adaptatif, notamment le comportement dynamique, les validations, l’intégration de données, ainsi que la génération d’un document d’enregistrement et l’automatisation des processus d’entreprise.
 
-   * Créez un formulaire adaptatif en faisant glisser les composants de formulaire vers le composant de conteneur de Forms adaptatif dans l’éditeur AEM Sites ou les fragments d’expérience.
-   * Utilisez l’assistant de Forms adaptatif dans l’éditeur AEM Sites pour créer des formulaires indépendants de n’importe quelle page Sites, ce qui vous permet de réutiliser ces formulaires sur plusieurs pages.
-   * Ajoutez plusieurs formulaires à une page Sites, en rationalisant l’expérience utilisateur et en offrant une plus grande flexibilité.
-
-     >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
-
-* [Adobe Acrobat Sign Solutions for Government](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms s’intègre désormais à Adobe Acrobat Sign Solutions for Government. Cette intégration offre un niveau avancé de conformité et de sécurité pour les signatures électroniques avec les envois de formulaires adaptatifs pour les comptes associés au gouvernement (ministères et organismes gouvernementaux).
+      >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&amp;learn=on)
+  
+* [Utilisation d’Adobe Acrobat Sign Solutions for Government (plainte HIPPA) avec AEM Forms](/help/forms/adobe-sign-integration-adaptive-forms.md): AEM Forms s’intègre désormais à Adobe Acrobat Sign Solutions for Government. Cette intégration offre un niveau avancé de conformité et de sécurité pour les signatures électroniques avec les envois de formulaires adaptatifs pour les comptes associés au gouvernement (ministères et organismes gouvernementaux).
 
   L’intégration à Adobe Acrobat Sign Solutions for Government permet aux partenaires d’Adobe et aux clients gouvernementaux d’utiliser des signatures électroniques dans Adaptive Forms pour certains secteurs d’activité les plus critiques et les plus sensibles. Cette couche supplémentaire de sécurité garantit que toutes les signatures électroniques sont entièrement conformes à la conformité FedRAMP Modérate, offrant ainsi une certaine tranquillité d’esprit aux clients gouvernementaux de l’Adobe.
 
@@ -129,15 +125,15 @@ La vue Assets vous permet désormais de [ajouter des composants de propriété t
 
   Cette fonctionnalité contribue à améliorer votre fonctionnalité globale de gestion des erreurs en introduisant des réponses d’erreur basées sur des normes qui sont rétrocompatibles avec les gestionnaires d’erreurs prêts à l’emploi, avec une plus grande flexibilité et un meilleur contrôle.
 
-* [Méthodes d’authentification améliorées pour le modèle de données de formulaire](/help/forms/configure-data-sources.md): Une sécurité renforcée grâce à l’introduction de l’authentification basée sur les informations d’identification client pour connecter AEM Forms à des sources de données compatibles. Cette amélioration élimine le besoin d’usurpation d’identité ou de connexion utilisateur, renforçant la protection de vos données.
+* [Méthodes d’authentification améliorées pour le modèle de données de formulaire](/help/forms/configure-data-sources.md): Une sécurité renforcée de l’expérience grâce à l’introduction de l’authentification basée sur les informations d’identification du client pour connecter AEM Forms (modèles de données de formulaire) à des sources de données compatibles. Cette amélioration élimine le besoin d’usurpation d’identité ou de connexion utilisateur, renforçant la protection de vos données.
 
-* [Forms adaptatif avec des sections répétables](/help/forms/create-forms-repeatable-sections.md): Vous pouvez désormais effectuer les opérations suivantes : [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), et [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) composants dans un formulaire adaptatif basé sur les composants principaux pour créer des sections répétables.
+* [Création d’un Forms adaptatif avec des sections répétables](/help/forms/create-forms-repeatable-sections.md): Vous pouvez désormais effectuer les opérations suivantes : [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html), [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), et [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html) composants dans un formulaire adaptatif basé sur les composants principaux pour créer des sections répétables.
 
   >[!VIDEO](https://video.tv.adobe.com/v/3421052/adaptive-forms-repeatable-sections-repeat-sections/?quality=12&learn=on)
 
   Ces sections répétables vous permettent de fournir un nombre illimité d’entrées sans nombre fixe de champs. Elle est utile lorsque les instances de données requises sont inconnues à l’avance. Les utilisateurs de Forms peuvent facilement ajouter ou supprimer des sections, en adaptant les formulaires à différents scénarios de saisie de données et en simplifiant la collecte de plusieurs occurrences des mêmes données.
 
-* **[Envoyer le Forms adaptatif à Microsoft® SharePoint et Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: Améliorez l’agilité des utilisateurs professionnels afin que vous puissiez lancer rapidement de nouveaux formulaires et stocker les données envoyées dans les outils quotidiens qu’ils utilisent, tels que le site SharePoint Microsoft® ou le dossier OneDrive.
+* **[Envoyer le Forms adaptatif à Microsoft® SharePoint et Microsoft® OneDrive](/help/forms/configuring-submit-actions.md)**: Vous pouvez désormais envoyer des données de Forms adaptatif à des outils quotidiens tels que Microsoft® SharePoint Site ou Microsoft® OneDrive.
 
 ### Programme des formulaires adaptatifs découplés destiné aux utilisateurs et utilisatrices précoces {#forms-early-adopter}
 
