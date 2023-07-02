@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '657'
-ht-degree: 54%
+ht-degree: 83%
 
 ---
 
@@ -39,9 +39,9 @@ Dans ce module, vous créez un fragment de contenu basé sur ce modèle à l’a
 
 1. Le **Nouveau fragment de contenu** s’ouvre, dans laquelle vous pouvez commencer à créer un fragment de contenu. **Emplacement** est automatiquement renseigné avec l’emplacement d’enregistrement du nouveau contenu.
 
-1. Dans le **Modèle de fragment de contenu** , sélectionnez la variable **Adventure** Modèle de fragment de contenu que vous avez créé précédemment.
+1. Dans la liste déroulante **Modèle de fragment de contenu**, sélectionnez le modèle de fragment de contenu **Aventure** que vous avez créé précédemment.
 
-1. Ajouter `Tuscany` en tant que description **Titre** pour le fragment de contenu. Cela permet d’identifier votre fragment dans la console.
+1. Ajoutez `Tuscany` comme **titre** descriptif pour le fragment de contenu. Cela permet d’identifier votre fragment dans la console.
 
 1. Appuyez ou cliquez sur **Créer et ouvrir**.
 
@@ -49,33 +49,33 @@ Dans ce module, vous créez un fragment de contenu basé sur ce modèle à l’a
 
 >[!TIP]
 >
->Selon les paramètres de votre navigateur, le nouvel onglet du navigateur peut être supprimé par un bloqueur de fenêtres contextuelles. Si votre nouveau fragment ne s’ouvre pas après avoir cliqué sur **Créer et ouvrir**, vérifiez les paramètres de votre navigateur.
+>Selon les paramètres de votre navigateur, le nouvel onglet du navigateur peut être supprimé par un bloqueur de pop-up. Si votre nouveau fragment ne s’ouvre pas après avoir cliqué sur **Créer et ouvrir**, vérifiez les paramètres de votre navigateur.
 
-## Ajout de contenu à votre fragment de contenu {#add-content}
+## Ajouter du contenu à votre fragment de contenu {#add-content}
 
 Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, l’éditeur de fragment de contenu s’ouvre sur un nouvel onglet. Vous pouvez y ajouter le contenu de votre nouveau fragment.
 
 1. L’éditeur de fragment de contenu affiche les champs que vous avez définis dans le modèle sélectionné. Vous pouvez ajouter du contenu à chaque champ pour compléter votre fragment de contenu. Votre progression est enregistrée automatiquement.
 
-1. Fournissez une **Titre** pour votre fragment en saisissant `Tuscan Adventure`.
+1. Fournissez un **titre** pour votre fragment en saisissant `Tuscan Adventure`.
 
-1. Fournissez une **Description** pour votre fragment en collant dans le texte suivant.
+1. Fournissez une **description** pour votre fragment en collant le texte suivant.
 
    ```text
    Visiting Tuscany on a bicycle is about experiencing the old world charm of Italy on your own terms. Your efforts on the climbs of Italy's rolling hills during this tour are rewarded with sunny Mediterranean landscapes and unmatched Italian hospitality. Tuscany's natural wonders have always been a well of inspiration for arts and culture. Find out why as you explore the Italian countryside and coastline on bicycle.
    ```
 
-1. Fournissez une **Prix** pour votre fragment en saisissant `$700`.
+1. Fournissez un **prix** pour votre fragment en saisissant `$700`.
 
-1. Fournissez un **Image** qui représente le déplacement en appuyant ou en cliquant sur **Ajout d’une ressource** dans le **Image** champ .
+1. Fournissez une **image** qui représente le voyage en appuyant ou en cliquant sur **Ajouter une ressource** dans le champ **Image**.
 
-1. Dans la fenêtre contextuelle de la ressource, appuyez ou cliquez sur **Parcourir les ressources** pour effectuer une sélection à partir d’une ressource existante dans la bibliothèque de ressources.
+1. Dans le pop-up de la ressource, appuyez ou cliquez sur **Parcourir les ressources** pour effectuer une sélection à partir d’une ressource existante dans la bibliothèque de ressources.
 
    ![Ajouter une ressource](assets/do-not-localize/add-asset.png)
 
-1. Le **Sélectionner une ressource** s’ouvre. À l’aide du navigateur d’arborescence dans le panneau de gauche, accédez à **Toutes les ressources** > **aem-demo-assets** > **en** > **aventures** > **cycling-tuscany**.
+1. La boîte de dialogue **Sélectionner une ressource** s’ouvre. À l’aide du navigateur d’arborescence dans le panneau de gauche, accédez à **Toutes les ressources** > **aem-demo-assets** > **en** > **aventures** > **cycling-tuscany**.
 
-1. Le contenu de la variable **cycling-tuscany** s’affichent à droite. Sélectionner l’image `ADOBESTOCK_141786166.JPEG`.
+1. Le contenu du dossier **cycling-tuscany** s’affiche à droite. Sélectionnez l’image `ADOBESTOCK_141786166.JPEG`.
 
 1. Appuyez ou cliquez sur **Sélectionner**.
 
@@ -83,7 +83,7 @@ Une fois que vous avez enregistré et ouvert votre nouveau fragment de contenu, 
 
 1. L’image sélectionnée s’affiche dans le fragment de contenu. L’éditeur enregistre automatiquement les modifications.
 
-1. Une fois que vous avez terminé d’ajouter du contenu, appuyez ou cliquez sur le bouton **Publier** en haut à droite de l’éditeur. Votre fragment de contenu peut ainsi être utilisé par des applications externes. Sélectionnez **Maintenant** dans la liste déroulante. Vous pouvez également planifier sa publication pour plus tard.
+1. Une fois que vous avez terminé d’ajouter du contenu, appuyez ou cliquez sur le bouton **Publier** en haut à droite de l’éditeur. Votre fragment de contenu peut ainsi être utilisé par des applications externes. Sélectionnez ensuite **Maintenant** dans la liste déroulante. Vous pouvez également planifier sa publication pour plus tard.
 
    ![Publier le contenu](assets/do-not-localize/publish.png)
 

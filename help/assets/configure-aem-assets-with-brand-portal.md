@@ -408,7 +408,7 @@ Vous pouvez maintenant tester la configuration en vérifiant l’agent de distri
 En cas d’utilisation de Dynamic Media-Scene7 (avec l’[aperçu sécurisé activé](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en) pour une entreprise), il est conseillé à l’administrateur ou à l’administratrice Scene7 de l’entreprise de [placer sur la liste autorisée les adresses IP publiques sortantes](#https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en#testing-the-secure-testing-service) pour les régions respectives à l’aide de l’IU flash SPS (système de publication Scene7).
 Les adresses IP sortantes sont les suivantes :
 
-| **Zone géographique** | **IP sortante** |
+| **Zone géographique** | **Adresse IP de sortie** |
 |--- |--- |
 | N/A | 130.248.160.68, 20.94.203.130 |
 | EMEA | 51.132.146.75, 130.248.244.202, 130.248.244.203, 130.248.244.204, 130.248.244.210, 130.248.244.211, 130.248.244.212 |
@@ -536,12 +536,12 @@ Go to `/system/console/slingmetrics` for statistics related to the distributed c
 * [Traduire les ressources](translate-assets.md)
 * [API HTTP Assets](mac-api-assets.md)
 * [Formats de fichiers pris en charge par Assets](file-format-support.md)
-* [Recherche de ressources](search-assets.md)
+* [Rechercher des ressources](search-assets.md)
 * [Ressources connectées](use-assets-across-connected-assets-instances.md)
 * [Rapports de ressources](asset-reports.md)
 * [Schémas de métadonnées](metadata-schemas.md)
-* [Téléchargement de ressources](download-assets-from-aem.md)
+* [Télécharger des ressources](download-assets-from-aem.md)
 * [Gestion des métadonnées](manage-metadata.md)
 * [Facettes de recherche](search-facets.md)
-* [Gestion des collections](manage-collections.md)
-* [Importation de métadonnées en bloc](metadata-import-export.md)
+* [Gérer les collections](manage-collections.md)
+* [Import des métadonnées en bloc](metadata-import-export.md)
