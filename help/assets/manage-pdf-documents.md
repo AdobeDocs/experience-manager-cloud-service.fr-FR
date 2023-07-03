@@ -4,10 +4,10 @@ description: Effectuez la gestion de vos documents PDF dans [!DNL Adobe Experien
 feature: Asset Management
 role: User,Admin
 exl-id: 29660869-6902-4093-845b-cd629be59d4d
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
-source-wordcount: '824'
-ht-degree: 100%
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
+workflow-type: tm+mt
+source-wordcount: '853'
+ht-degree: 96%
 
 ---
 
@@ -22,6 +22,7 @@ L’intégration d’AEM Assets à la visionneuse PDF Document Cloud offre les
 
 > Conseil
 > Si vous ne parvenez pas à obtenir la prévisualisation de plusieurs pages d’un document PDF précédemment téléchargé, sélectionnez le document PDF et cliquez sur **![Retraiter](/help/assets/assets/Reprocess.svg) Retraiter les ressources**.
+>
 
 ## Prise en charge des composants de la visionneuse PDF Document Cloud {#pdf-doc-cloud}
 
@@ -55,6 +56,7 @@ Vous pouvez également ajouter des [annotations](#pdf-annotations) au document P
 
 > REMARQUE
 > La taille maximale d’une ressource prévisualisable est de 100 Mo.
+>
 
 >[!VIDEO](https://video.tv.adobe.com/v/3409355)
 
@@ -110,6 +112,10 @@ Les documents PDF prennent en charge les annotations suivantes :
         </tr>
     </table>
 
+>[!NOTE]
+>
+>Les annotations que vous ajoutez au document du PDF sont disponibles en mode d’aperçu. Toutefois, les annotations ne s’affichent pas lorsque vous téléchargez ou imprimez le document du PDF.
+
 ## Prise en charge de la prévisualisation de plusieurs pages pour les documents dans d’autres formats {#multi-format}
 
 Outre les documents au format PDF, vous pouvez également prévisualiser plusieurs pages de documents dans d’autres formats. Les types de formats de documents pris en charge sont les suivants : TXT, RTF, DOC, DOCX, PPT, PPTX, XLS et XLSX. Experience Manager Assets convertit automatiquement ces formats de document au format PDF, pouvant alors bénéficier de la fonctionnalité de prévisualisation.
@@ -126,7 +132,6 @@ Pour prévisualiser plusieurs pages dans d’autres formats de documents pris en
 > * La taille maximale d’une ressource prévisualisable est de 100 Mo.
 > * La taille maximale des fichiers XLS ou XLSX pouvant être prévisualisés est de 20 Mo.
 >
-
 
 **Voir également**
 

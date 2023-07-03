@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Search,Metadata,Asset Distribution
 role: User,Admin
 exl-id: 68bdaf25-cbd4-47b3-8e19-547c32555730
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 589ed1e1befa84c0caec0eed986c3e1a717ae602
 workflow-type: tm+mt
-source-wordcount: '5096'
-ht-degree: 97%
+source-wordcount: '5162'
+ht-degree: 95%
 
 ---
 
@@ -37,7 +37,7 @@ La recherche de ressources dans AEM prend en charge les cas d’utilisation suiv
 | [Limites](#limitations) et [conseils](#tips) | | |
 | [Exemples illustrés](#samples) | | |
 
-Recherchez des ressources à l’aide du champ Omni-recherche situé en haut de l’interface web [!DNL Experience Manager]. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans [!DNL Experience Manager], cliquez sur ![icône_recherche](assets/do-not-localize/search_icon.png) dans la barre supérieure, entrez le mot-clé de recherche et sélectionnez `Return`. Vous pouvez également utiliser le raccourci `/` (barre oblique) pour ouvrir le champ Omni-recherche. `Location:Assets` est présélectionné afin de limiter les recherches aux ressources de la gestion des ressources numériques. [!DNL Experience Manager] fournit des suggestions lorsque vous commencez à saisir un mot-clé de recherche.
+Recherchez des ressources à l’aide du champ Omni-recherche situé en haut de l’interface web [!DNL Experience Manager]. Accédez à **[!UICONTROL Ressources]** > **[!UICONTROL Fichiers]** dans [!DNL Experience Manager], cliquez sur ![icône_recherche](assets/do-not-localize/search_icon.png) dans la barre supérieure, entrez le mot-clé de recherche et sélectionnez `Return`. Vous pouvez également utiliser le raccourci `/` (barre oblique) pour ouvrir le champ Omni-recherche. `Location:Assets` est présélectionné afin de limiter les recherches aux ressources de la gestion des ressources numériques. `Path:/content/dam` s’affiche également lorsque vous effectuez une recherche au niveau racine dans la variable **[!UICONTROL Fichiers]** dossier. Si vous accédez à un autre dossier, `Path:/content/dam/<folder name>` s’affiche dans le champ Omni-recherche pour limiter la portée de la recherche au dossier actif. [!DNL Experience Manager] fournit des suggestions lorsque vous commencez à saisir un mot-clé de recherche.
 
 Utilisez le panneau **[!UICONTROL Filtres]** pour rechercher des ressources, des dossiers, des balises et des métadonnées. Vous pouvez filtrer les résultats de recherche en fonction des différentes options (prédicats), telles que le type et la taille de fichier, la date de dernière modification, l’état de la ressource, les données d&#39;aperçu et les licences Adobe Stock. Vous pouvez personnaliser le panneau Filtres et ajouter ou supprimer des prédicats de recherche à l’aide des [facettes de recherche](/help/assets/search-facets.md). Le filtre [!UICONTROL Type de fichier] du panneau [!UICONTROL Filtres] comporte des cases à cocher à états mixtes. Les cases à cocher du premier niveau sont donc partiellement cochées à moins que vous ne sélectionniez tous les prédicats (ou formats) imbriqués.
 
@@ -415,6 +415,7 @@ Vous pouvez effectuer les opérations suivantes avec les ressources dans lesquel
 * démarrer un workflow.
 * Lier ou dissocier des ressources
 * Appliquez des filtres à l’aide du panneau Filtres qui s’affiche automatiquement après avoir effectué la recherche, afin de limiter les résultats de la recherche.
+* Accédez à l’emplacement de la ressource.
 
 ### Tri des résultats de la recherche {#sort}
 
@@ -466,6 +467,10 @@ Tout comme la fonctionnalité de création de version, vous pouvez créer un wor
 ### Lier et dissocier des ressources {#relate-unrelate-assets}
 
 Lier et dissocier les ressources qui s’affichent dans les résultats de recherche. Sélectionnez la ou les ressources, puis cliquez sur **[!UICONTROL Relate]** ou **[!UICONTROL Sans relation]**.
+
+### Accédez à l’emplacement du dossier de ressources {#navigate-asset-folder-location}
+
+Accédez à l’emplacement du dossier des ressources affichées dans les résultats de recherche. Sélectionnez la ressource et cliquez sur **[!UICONTROL Afficher l’emplacement du fichier]**.
 
 ## Résultats de recherche inattendus et problèmes {#unexpected-results}
 

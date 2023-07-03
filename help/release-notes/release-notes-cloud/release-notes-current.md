@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: da5634dfa812268b81b2db783da772b6ecc1d7ce
+source-git-commit: 45004db44af48301f0a9cbd9f574ac34c360275e
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 16%
@@ -56,9 +56,9 @@ Le [nouvelle vue Assets](/help/assets/assets-view-introduction.md) est désormai
 
 Experience Manager Assets vous permet désormais d’en faire plus à partir de l’interface utilisateur des résultats de recherche : Vous pouvez maintenant :
 
-* Effectuez une recherche dans l’emplacement actuel du référentiel par défaut au lieu de rechercher le mot-clé dans le référentiel entier.
+* [Effectuer une recherche dans l’emplacement actuel du référentiel](/help/assets/search-assets.md) par défaut au lieu de rechercher le mot-clé dans le référentiel entier.
 
-* Accédez à l’emplacement du dossier des ressources qui s’affichent dans les résultats de recherche.
+* [Accédez à l’emplacement du dossier](/help/assets/search-assets.md#aftersearch) pour les ressources qui s’affichent dans les résultats de recherche.
 
 **Aperçu des miniatures pour les ressources 3D**
 
