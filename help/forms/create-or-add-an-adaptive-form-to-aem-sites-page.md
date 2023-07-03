@@ -3,32 +3,32 @@ title: Comment ajouter un formulaire adaptatif à une page AEM Sites ?
 description: Découvrez comment créer ou ajouter facilement un formulaire adaptatif à votre page AEM Sites. Découvrez les techniques et les bonnes pratiques étape par étape pour intégrer des formulaires à votre site web, en optimisant vos expériences numériques pour un impact maximum.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: Forms AEM Sites, Add Form to a Sites page, Adaptive Forms AEM Sites, Add Adaptive Forms to AEM Page, Create Forms in an AEM Sites page
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: bbb01d049083d0aef09bc2365235a7930fb53070
 workflow-type: tm+mt
-source-wordcount: '3245'
-ht-degree: 1%
+source-wordcount: '3264'
+ht-degree: 2%
 
 ---
 
 
-# Création d’un formulaire adaptatif dans une page AEM Sites ou dans un fragment d’expérience AEM {#create-or-add-an-adaptive-form-to-aem-sites-page}
+# Création d’un formulaire adaptatif dans une page AEM Sites ou un fragment d’expérience {#create-or-add-an-adaptive-form-to-aem-sites-page}
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
-| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html?lang=en) |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 | AEM as a Cloud Service | Cet article |
 
-Avec AEM Forms, vous pouvez ajouter facilement un formulaire adaptatif à votre page AEM Sites. Cela permet à vos visiteurs de remplir et d’envoyer facilement des formulaires sans jamais quitter la page sur laquelle ils se trouvent. Ce faisant, ils peuvent rester en contact sans effort avec d’autres éléments du site web tout en interagissant activement avec le formulaire.
+Avec AEM Forms, vous pouvez ajouter facilement un formulaire à votre page AEM Sites. Cela permet à vos visiteurs de remplir et d’envoyer facilement des formulaires sans jamais quitter la page sur laquelle ils se trouvent. Ce faisant, ils peuvent rester en contact sans effort avec d’autres éléments du site web tout en interagissant activement avec le formulaire.
 
 Vous pouvez utiliser AEM éditeur de page pour créer et ajouter rapidement plusieurs formulaires à vos pages AEM Sites. L’utilisation de l’éditeur de page d’AEM permet aux auteurs de contenu de créer des expériences de capture de données en toute transparence dans une page Sites à l’aide de la puissance des composants de formulaires adaptatifs, notamment le comportement dynamique, les validations, l’intégration de données, la génération d’un document d’enregistrement et l’automatisation des processus d’entreprise. Il vous permet également d’utiliser différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples.
 
-AEM Forms fournit des composants Adaptive Form Container (Conteneur de formulaires adaptatifs) et Adaptive Forms (Incorporer). Vous pouvez utiliser le conteneur de formulaires adaptatifs pour créer un formulaire dans un fragment d’expérience ou une page AEM Sites, tandis que le composant Forms adaptatif - Incorporer permet d’ajouter un formulaire adaptatif existant ou de créer un formulaire à l’aide de l’éditeur de Forms adaptatif.
+AEM Forms Cloud Service fournit des composants Adaptive Form Container et Adaptive Forms - Incorporer. Vous pouvez utiliser le conteneur de formulaires adaptatifs pour créer un formulaire dans une page AEM Sites ou un fragment d’expérience, tandis que le composant Forms adaptatif - Incorporer permet d’ajouter un formulaire adaptatif existant ou de créer un formulaire à l’aide de l’éditeur de Forms adaptatif.
 
 ![Exemple de formulaire adaptatif dans une page AEM Sites](/help/forms/assets/adaptive-form-in-sites-page.png)
 
-## Pourquoi créer un formulaire adaptatif dans une page AEM Sites ou AEM un fragment d’expérience ?
+## Pourquoi utiliser les composants principaux de Forms adaptatif pour créer un formulaire adaptatif dans une page AEM Sites ou un fragment d’expérience ?
 
-L’utilisation du conteneur de formulaires adaptatifs dans AEM éditeur de page vous permet de créer des expériences de capture de données transparentes dans une page Sites à l’aide de la puissance des composants de Forms adaptatif, notamment le comportement dynamique, les validations, l’intégration de données, ainsi que de générer un document d’enregistrement et l’automatisation des processus d’entreprise. Il vous permet également d’utiliser différentes fonctionnalités des pages AEM Sites, telles que le contrôle de version, le ciblage, la traduction et le gestionnaire de sites multiples, ce qui améliore l’expérience globale de création et de gestion de formulaires. Examinons quelques-unes de ces fonctionnalités :
+Si vous avez déjà créé un composant de base de Forms adaptatif ou des formulaires basés sur un HTML brut pour vos sites, Adobe recommande d’utiliser les composants principaux de Forms adaptatif pour créer un formulaire adaptatif dans une page AEM Sites ou un fragment d’expérience. Il vous permet d’utiliser différentes fonctionnalités des pages AEM Sites telles que le contrôle de version, le ciblage, la traduction et le gestionnaire multisite, ce qui améliore l’expérience globale de création et de gestion de formulaires pour Forms adaptatif. Examinons quelques-unes de ces fonctionnalités :
 
 * **Contrôle de version :** Offre de pages AEM Sites [fonctionnalités de contrôle de version fiables](/help/sites-cloud/authoring/features/page-versions.md), ce qui vous permet de suivre et de gérer différentes versions de vos formulaires. Vous pouvez ainsi apporter des modifications et des améliorations aux formulaires tout en conservant la possibilité de restaurer des versions précédentes si nécessaire. Le contrôle de version garantit une approche contrôlée et organisée du développement et de l’évolution des formulaires.
 * **Ciblage (intégration à Adobe Target) :** Avec les fonctionnalités de ciblage des pages AEM Sites, vous pouvez également [personnaliser l’expérience du formulaire pour différentes audiences ;](/help/sites-cloud/integrating/integration-adobe-target-ims.md). En exploitant les segments d’utilisateurs et les critères de ciblage, vous pouvez personnaliser le contenu, la conception ou le comportement du formulaire en fonction de groupes d’utilisateurs spécifiques. Cela vous permet de fournir une expérience de formulaire personnalisée et pertinente, ce qui augmente l’engagement et les taux de conversion.
@@ -38,7 +38,7 @@ L’utilisation du conteneur de formulaires adaptatifs dans AEM éditeur de page
 * **Balisage :** Les pages AEM Sites vous permettent de [affecter des balises ou des étiquettes à une page, à une ressource ou à un autre contenu ;](/help/implementing/developing/introduction/tagging-framework.md). Les balises sont des mots-clés ou des étiquettes de métadonnées qui permettent de classer et d’organiser le contenu selon des critères spécifiques. Vous pouvez affecter une ou plusieurs balises aux pages, aux ressources ou à tout autre élément de contenu dans AEM afin d’améliorer la recherche et de classer les ressources.
 * **Verrouillage et déverrouillage du contenu :** AEM Sites permet aux utilisateurs de [contrôler l’accès et les modifications aux pages ;](/help/sites-cloud/authoring/fundamentals/editing-content.md) dans l’environnement AEM Sites. Lorsqu’une page est verrouillée, cela signifie qu’elle est protégée contre les modifications ou modifications non autorisées par d’autres utilisateurs. Seul l’utilisateur qui a verrouillé le contenu ou un administrateur désigné peut le déverrouiller pour autoriser les modifications.
 
-En outre, le Forms adaptatif dans AEM éditeur de page utilise [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#features). Ces composants principaux fournissent des méthodes standard et plus simples de mise en forme et de personnalisation des composants, identiques à [Composants WCM AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+En outre, le Forms adaptatif dans AEM éditeur de page utilise [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr#features). Ces composants principaux fournissent des méthodes standard et plus simples de mise en forme et de personnalisation des composants, identiques à [Composants WCM AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 
 ## Comment créer ou ajouter un formulaire adaptatif dans une page AEM Sites ou AEM un fragment d’expérience ? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
@@ -120,13 +120,13 @@ Pour activer la fonctionnalité complète du composant Conteneur de Forms adapta
        &lt;/sly>
        &quot;
    
-1. [Exécution du pipeline de déploiement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html) pour déployer les bibliothèques clientes dans votre environnement as a Cloud Service AEM.
+1. [Exécution du pipeline de déploiement](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/site-creation/enable-front-end-pipeline.html?lang=fr) pour déployer les bibliothèques clientes dans votre environnement as a Cloud Service AEM.
 
 +++
 
 +++ Activation du conteneur Forms adaptatif pour votre page AEM Sites ou votre fragment d’expérience
 
-Pour activer [!UICONTROL Conteneur Forms adaptatif] dans la stratégie du modèle, procédez comme suit :
+Pour activer le composant [!UICONTROL Conteneur de formulaires adaptatifs] dans la politique du modèle, procédez comme suit :
 
 1. Ouvrez la page AEM Sites ou le fragment d’expérience à modifier. Pour ouvrir la page à modifier, sélectionnez-la, puis cliquez sur Modifier.
 1. Ouvrez le modèle de votre page Sites ou Fragment d’expérience . Pour ouvrir le modèle, accédez au [!UICONTROL Informations sur la page] ![Informations sur la page](/help/forms/assets/Smock_Properties_18_N.svg) > [!UICONTROL Modifier le modèle]. Il ouvre le modèle correspondant dans l’éditeur de modèles.
@@ -153,7 +153,7 @@ Vous pouvez utiliser le composant Conteneur de formulaires adaptatifs dans AEM �
 
 Pour créer un formulaire adaptatif dans une page Sites :
 
-1. Ouvrez la page AEM Sites en mode d’édition.
+1. Ouvrez la page AEM Sites en mode d’édition.
 1. Faites glisser et déposez le **[!UICONTROL Conteneur Forms adaptatif]** du navigateur de composants vers la page Sites. Un espace est alors créé sur la page pour le formulaire. Vous pouvez modifier la taille de l’espace conteneur à l’aide du mode Mise en page.
 1. Faites glisser et déposez les composants principaux de formulaire adaptatif dans l’espace conteneur pour créer le formulaire.
 1. Ajoutez le bouton Envoyer .
@@ -262,4 +262,9 @@ Lors de l’envoi d’un formulaire, vous pouvez rediriger l’utilisateur vers 
 * [Créer un style ou des thèmes pour vos formulaires](using-themes-in-core-components.md)
 * [Ajout d’un comportement dynamique aux formulaires à l’aide de l’éditeur de règles](rule-editor.md)
 * [Définir la disposition des formulaires pour différentes tailles d’écran et différents types d’appareils](/help/sites-cloud/authoring/features/responsive-layout.md)
+
+
+## Article connexe {#related-article}
+
+* [Création d’un formulaire adaptatif basé sur des composants principaux autonomes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=fr)
 
