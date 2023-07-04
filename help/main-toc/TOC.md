@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: e60a734d7e0887a23978efac8d896ac3745dbb5d
+source-git-commit: 823d9875f1cd293df834cc6e2fc16fc8f7e0d37b
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4160'
 ht-degree: 97%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 97%
       + 2023 {#2023}
          + [Notes de mise à jour de la version 2023.6.0](/help/implementing/cloud-manager/release-notes/2023/2023-6-0.md)
          + [Notes de mise à jour de la version 2023.5.0](/help/implementing/cloud-manager/release-notes/2023/2023-5-0.md)
-         + [Notes de mise à jour de la version 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
+         + [Notes de mise à jour de 2023.4.0](/help/implementing/cloud-manager/release-notes/2023/2023-4-0.md)
          + [Notes de mise à jour de la version 2023.3.0](/help/implementing/cloud-manager/release-notes/2023/2023-3-0.md)
          + [Notes de mise à jour de la version 2023.2.0](/help/implementing/cloud-manager/release-notes/2023/2023-2-0.md)
          + [Notes de mise à jour de la version 2023.1.0](/help/implementing/cloud-manager/release-notes/2023/2023-1-0.md)
@@ -156,7 +156,7 @@ ht-degree: 97%
    + [Prise en charge IMS d’AEM as a Cloud Service](/help/security/ims-support.md)
    + [Prise en charge des mêmes cookies de site pour AEM as a Cloud Service](/help/security/same-site-cookie-support.md)
    + [Prise en charge d’OAuth2 pour le service de messagerie](/help/security/oauth2-support-for-mail-service.md)
-   + [AEM considérations de sécurité as a Cloud Service](/help/security/security-considerations.md)
+   + [Considérations relatives à la sécurité d’AEM as a Cloud Service](/help/security/security-considerations.md)
 + Intégration {#onboarding}
    + [Commencer ici](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/overview.html?lang=fr)
    + Parcours d’intégration {#journey}
@@ -384,7 +384,7 @@ ht-degree: 97%
    + [Présentation des microservices de ressources](/help/assets/asset-microservices-overview.md)
    + [Accessibilité dans [!DNL Assets]](/help/assets/accessibility.md)
    + Gestion des ressources numériques {#manage}
-      + [Sélecteur de ressources micro-front](/help/assets/asset-selector.md)
+      + [Sélecteur de ressources micro front-end](/help/assets/asset-selector.md)
       + [Sélecteur de destination micro-front](/help/assets/destination-selector.md)
       + [Partage de ressources](/help/assets/share-assets.md)
       + [Surveillance des activités et des tâches de gestion des ressources numériques (DAM)](/help/assets/assets-activity-history.md)
@@ -398,7 +398,7 @@ ht-degree: 97%
       + [Balisage intelligent de vos ressources vidéo](/help/assets/smart-tags-video-assets.md)
       + [Organisation des ressources](/help/assets/organize-assets.md)
       + [Utilisation des ressources [!DNL Adobe Stock] ](/help/assets/aem-assets-adobe-stock.md)
-      + [Gestion des collections](/help/assets/manage-collections.md)
+      + [Gérer les collections](/help/assets/manage-collections.md)
       + [Présentation des métadonnées](/help/assets/manage-metadata.md)
       + [Intégration avec [!DNL Adobe Creative Cloud]](/help/assets/aem-cc-integration-best-practices.md)
       + [Ajout ou modification de métadonnées](/help/assets/meta-edit.md)
@@ -408,7 +408,7 @@ ht-degree: 97%
       + [Schéma de métadonnées](/help/assets/metadata-schemas.md)
       + [Gestion des ressources vidéo](/help/assets/manage-video-assets.md)
       + [Réutilisation des ressources à l’aide de MSM](/help/assets/reuse-assets-using-msm.md)
-      + [Téléchargement de ressources](/help/assets/download-assets-from-aem.md)
+      + [Télécharger des ressources](/help/assets/download-assets-from-aem.md)
       + [Archivage et extraction des ressources à modifier](/help/assets/check-out-and-submit-assets.md)
       + [Création et partage de dossiers privés](/help/assets/private-folder.md)
       + [Gestion des droits numériques des ressources](/help/assets/drm.md)
@@ -526,7 +526,6 @@ ht-degree: 97%
       + [Suppression des dépendances externes pour les installations existantes](/help/assets/remove-external-dependencies.md)
       + [Configurer le  [!DNL enhanced connector]  pour  [!DNL Workfront]](/help/assets/workfront-connector-configure.md)
       + [Mise à jour de [!DNL Workfront for Experience Manager enhanced connector]](/help/assets/update-workfront-enhanced-connector.md)
-
 + Forms {#forms}
    + Présentation {#forms-overview}
       + [Présentation](/help/forms/home.md)
@@ -566,7 +565,7 @@ ht-degree: 97%
             + [Création d’un formulaire adaptatif](/help/forms/creating-adaptive-form-core-components.md)
             + [Création de thèmes pour un formulaire adaptatif - Composants principaux](/help/forms/using-themes-in-core-components.md)
             + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
-            + [Création d’une Forms adaptative - Composants principaux dans une page AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
+            + [Créer un formulaire adaptatif - Composants principaux dans une page AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Utilisation de la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
             + [Configuration d’une page de redirection ou d’un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Création de formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
@@ -627,9 +626,10 @@ ht-degree: 97%
       + [Utilisation des polices personnalisées dans les documents PDF](/help/forms/use-custom-fonts.md)
       + [Problèmes connus, bonnes pratiques et questions fréquemment posées](/help/forms/communications-known-issues-limitations.md)
    + Référence de l’API du développeur {#aem-forms-developer-api-reference}
+      + [Référence de l’API Adaptive Forms](https://developer-stage.adobe.com/experience-cloud/experience-manager-apis/api/stable/forms/)
       + [Référence de l’API Communications du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager-forms-cloud-service-developer-reference/)
       + [Référence de l’API JavaScript du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/jsdoc/aem-forms-cloud-service-jsdoc/index.html)
-      + [Référence de l’API Java du Service Cloud d’AEM Forms](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/aem-forms-cloud-service-javadoc/index.html)
+      + [Référence de l’API Java du Service Cloud d’AEM Forms](https://javadoc.io/doc/com.adobe.aem/aem-forms-sdk-api/latest/index.html)
    + Résolution des problèmes {#troubleshooting-aem-forms-cloud-service}
       + [Installation et configuration](/help/forms/troubleshooting-installation-and-configuration.md)
       + [Mise en cache du Dispatcher et du CDN](/help/forms/troubleshooting-caching-performance.md)
@@ -813,7 +813,7 @@ ht-degree: 97%
          + [Test de qualité du code](/help/implementing/cloud-manager/code-quality-testing.md)
          + [Règles de qualité du code personnalisé](/help/implementing/cloud-manager/custom-code-quality-rules.md)
          + Tests fonctionnels {#functional-testing}
-            + [Présentation des tests fonctionnels](/help/implementing/cloud-manager/functional-testing.md)
+            + [Vue d’ensemble des tests fonctionnels](/help/implementing/cloud-manager/functional-testing.md)
             + [Tests fonctionnels Java](/help/implementing/cloud-manager/java-functional-testing.md)
             + [Tests de l’interface utilisateur](/help/implementing/cloud-manager/ui-testing.md)
          + [Tests d’audit de l’expérience](/help/implementing/cloud-manager/experience-audit-testing.md)
@@ -961,8 +961,8 @@ ht-degree: 97%
    + Niveau de création {#author-tier}
       + [Accès au niveau de création](/help/implementing/author-tier/accessing-the-author-tier.md)
       + [Sécurisation du niveau de création](/help/implementing/author-tier/securing-the-author-tier.md)
-   + Niveau d’aperçu {#preview-tier}
-      + [Configuration des paramètres OSGi pour le niveau d’aperçu](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
+   + Niveau de vue d’ensemble {#preview-tier}
+      + [Configuration des paramètres OSGi pour le niveau de prévisualisation](/help/implementing/preview-tier/preview-tier-configuring-osgi.md)
    + Présentation de la diffusion de contenu {#content-delivery}
       + [Flux de diffusion de contenu](/help/implementing/dispatcher/overview.md)
       + [Dispatcher en mode cloud](/help/implementing/dispatcher/disp-overview.md)
