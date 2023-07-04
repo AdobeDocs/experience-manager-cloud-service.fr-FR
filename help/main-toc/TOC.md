@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 823d9875f1cd293df834cc6e2fc16fc8f7e0d37b
+source-git-commit: 0efdb9353ef908cf5a655c989ae7be1107c8f3de
 workflow-type: tm+mt
-source-wordcount: '4160'
+source-wordcount: '4164'
 ht-degree: 97%
 
 ---
@@ -210,7 +210,7 @@ ht-degree: 97%
          + [Présentation](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md)
          + [Utilisation de l’analyseur des bonnes pratiques](/help/journey-migration/best-practices-analyzer/using-best-practices-analyzer.md)
       + Transformateur de contenu {#content-transformer}
-         + [Présentation](/help/journey-migration/content-transformer/overview.md)
+         + [Vue d’ensemble](/help/journey-migration/content-transformer/overview.md)
          + [Utilisation de Content Transformer](/help/journey-migration/content-transformer/using.md)
       + Outil de transfert de contenu {#content-transfer-tool}
          + [Présentation](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/overview-content-transfer-tool.md)
@@ -559,6 +559,7 @@ ht-degree: 97%
          + [Utilisation d’un modèle de données de formulaire](/help/forms/work-with-form-data-model.md)
          + [Utilisation d’un modèle de données de formulaire](/help/forms/using-form-data-model.md)
    + Formulaires adaptatifs {#adaptive-forms-authoring}
+      + [Créer un formulaire adaptatif](/help/forms/create-an-adaptive-form.md)
       + [Ajout d’un formulaire adaptatif à une page AEM Sites ou à un fragment d’expérience](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + Création d’un formulaire adaptatif - Composants principaux {#authoring-adaptive-forms-core-components}
          + Création d’un formulaire adaptatif {#create-an-adaptive-form-on-forms-cs}
