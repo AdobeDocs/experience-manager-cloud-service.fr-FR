@@ -1,17 +1,17 @@
 ---
 title: Comment migrer d’une Forms AEM 6.5 vers [!DNL AEM Forms] Environnement as a Cloud Service ?
 description: Migrer depuis  [!DNL AEM Forms] (environnements AMS et On-Premise) vers [!DNL AEM Forms] un environnement as a Cloud Service.
-keywords: 6.5 forms to cloud service, 6.5 forms to cs, migration de 6.5 forms vers CS, migration de 6.5 forms vers Cloud Service, mise à niveau de 6.5 forms vers CS, déplacement de 6.5 forms vers CS, mise à niveau d’AEM 6.5 vers CS
+keywords: 6.5 forms to cloud service, 6.5 forms to cs, migration de 6.5 forms vers CS, migration de 6.5 forms vers Cloud Service, mise à niveau de 6.5 forms vers CS, déplacement de 6.5 forms vers CS, mise à niveau d’AEM 6.5 vers CS, AEM Forms 6.5 vers Cloud Service, AEM migration de formulaires vers Cloud Service
 contentOwner: khsingh
 feature: Adaptive Forms
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: f6b8ef52ad551be70e665a14ce00c197d1470e84
+source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
 workflow-type: tm+mt
-source-wordcount: '1566'
-ht-degree: 73%
+source-wordcount: '1590'
+ht-degree: 70%
 
 ---
 
@@ -120,7 +120,7 @@ Pour rendre vos ressources [!DNL AEM Forms] compatibles avec Cloud Service et le
 
    Cloud Service ne prend pas en charge les scripts de l’éditeur de règles. L’outil **[!UICONTROL Migration des scripts de l’éditeur de code]** convertit tous les scripts de règle de votre environnement en fonctions réutilisables et applique les fonctions réutilisables à l’éditeur visuel à l’emplacement approprié. Ces fonctions réutilisables sont enregistrées sous forme de bibliothèques clientes et vous aident à conserver les fonctionnalités existantes intactes. L’outil applique automatiquement les fonctions réutilisables générées aux formulaires adaptatifs correspondants.
 
-   Utilisez le [gestionnaire de packages](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr#contentmanagement) pour exporter les fonctions réutilisables (bibliothèques clientes) vers un package.
+   AEM Migration du formulaire vers Cloud Service, utilisez la méthode [Gestionnaire de modules](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=fr#contentmanagement) pour exporter les fonctions réutilisables (bibliothèques clientes) vers un package.
 
 1. [Déployez](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=fr#deploying-content-packages-via-cloud-manager-and-package-manager) le package de fonctions réutilisables (bibliothèques clientes), le [code personnalisé, les composants, les configurations](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/cloud-manager/devops/deploy-code.html?lang=fr#cloud-manager), les bibliothèques personnalisées spécifiques aux paramètres régionaux dans votre environnement [!DNL AEM] as a Cloud Service.
 
@@ -152,7 +152,7 @@ Vous pouvez ajouter des chemins d’accès aux dossiers de niveau supérieur ré
 * `/content/forms/af`
 * `/etc/clientlibs/fd/theme`
 
-Pour migrer des modèles de processus AEM, spécifiez les chemins d’accès suivants :
+Lorsque vous migrez AEM modèles de workflow d’AEM Forms 6.5 vers Cloud Service, spécifiez les chemins suivants :
 
 * `/conf/global/settings/workflow/models/`
 * `/conf/global/settings/workflow/launcher`
