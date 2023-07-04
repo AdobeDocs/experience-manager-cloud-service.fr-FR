@@ -2,10 +2,10 @@
 title: Gestion des fragments de contenu (Ressources - Fragments de contenu)
 description: Découvrez comment utiliser la console Assets pour gérer vos fragments de contenu AEM à la base de votre contenu découplé.
 exl-id: 333ad877-db2f-454a-a3e5-59a936455932
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 88%
+source-wordcount: '1770'
+ht-degree: 87%
 
 ---
 
@@ -56,7 +56,7 @@ La méthode de création d’un fragment de contenu est la suivante :
 
    Après la sélection, cliquez ou appuyez sur **Suivant** pour continuer.
 
-   ![base du fragment](assets/cfm-managing-01.png)
+   ![Sélectionner un modèle de fragment de contenu](assets/cfm-managing-01.png)
 
 1. Dans l’étape **Propriétés**, spécifiez :
 
@@ -92,7 +92,7 @@ Dans la console **Ressources**, vous pouvez exécuter diverses actions pour vos 
 * Dans la barre d’outils, une fois le fragment sélectionné, toutes les actions appropriées sont disponibles :
 * Comme [actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions) ; un sous-ensemble d’actions disponibles pour les cartes de fragments individuelles.
 
-![actions](assets/cfm-managing-02.png)
+![Actions dans la barre d’outils](assets/cfm-managing-02.png)
 
 Sélectionnez le fragment pour afficher la barre d’outils avec les actions applicables :
 
@@ -139,7 +139,7 @@ Pour ouvrir votre fragment à des fins de modification :
 
 1. L’éditeur de fragment s’ouvre alors. Apportez les modifications nécessaires :
 
-   ![éditeur de fragment](assets/cfm-managing-03.png)
+   ![Éditeur de fragments](assets/cfm-managing-03.png)
 
 1. Après avoir apporté vos modifications, cliquez sur **Enregistrer**, **Enregistrer et fermer** ou **Fermer** selon les besoins.
 
@@ -167,13 +167,13 @@ Naviguez entre les différents modes en utilisant les icônes du panneau latéra
 * [Arborescence de la structure](/help/assets/content-fragments/content-fragments-structure-tree.md)
 * [Aperçu](/help/assets/content-fragments/content-fragments-json-preview.md)
 
-![modes](assets/cfm-managing-04.png)
+![Modes dans l’éditeur de fragment de contenu](assets/cfm-managing-04.png)
 
 ### Barre d’outils d’actions dans l’éditeur de fragment de contenu {#toolbar-actions-in-the-content-fragment-editor}
 
 Certaines fonctions de la barre d’outils supérieure sont disponibles dans différents modes :
 
-![modes](assets/cfm-managing-top-toolbar.png)
+![Actions de barre d’outils disponibles dans divers modes](assets/cfm-managing-top-toolbar.png)
 
 * Un message s’affiche lorsque le fragment est déjà référencé sur une page de contenu. Vous pouvez **Fermer** le message.
 
@@ -303,7 +303,7 @@ Les annotations (pour les fragments de contenu) sont les suivantes :
 
 Par exemple :
 
-![chronologie](assets/cfm-managing-05.png)
+![Chronologie](assets/cfm-managing-05.png)
 
 ## Comparaison des versions de fragments {#comparing-fragment-versions}
 
@@ -331,7 +331,7 @@ Elles sont affichées côte à côte, où :
 >
 Vous ne pouvez pas modifier le contenu d’un fragment lors de la comparaison de fragments.
 
-![comparaison](assets/cfm-managing-06.png)
+![Comparaison des variations](assets/cfm-managing-06.png)
 
 ## Restauration vers une version spécifique   {#reverting-to-a-version}
 

@@ -2,10 +2,10 @@
 title: Métadonnées - Propriétés des fragments (Ressources - Fragments de contenu)
 description: Vous pouvez afficher et modifier les propriétés des métadonnées des fragments de contenu.
 exl-id: bc67480d-a1e4-4ef9-b811-8bd110f70369
-source-git-commit: 344d04eb18c100835b78fe59c909d92c1e42111b
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 94%
+source-wordcount: '223'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,8 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
 
    * Sélectionnez [**Afficher les propriétés** pour ouvrir les boîtes de dialogue](/help/assets/manage-digital-assets.md#editing-properties). Une fois la collection ouverte pour consultation, vous pouvez également la modifier.
    * Ouvrez le fragment de contenu à modifier, puis sélectionnez **Métadonnées** dans le panneau latéral.
-   ![métadonnées](assets/cfm-metadata-01.png)
+
+   ![Métadonnées dans le panneau latéral](assets/cfm-metadata-01.png)
 
 3. Le **De base** fournit des options que vous pouvez afficher ou modifier :
 
@@ -34,9 +35,11 @@ Vous pouvez afficher et modifier les métadonnées (propriétés) des fragments 
       * Les [balises](/help/sites-cloud/authoring/features/tags.md) sont particulièrement puissantes lors de l’organisation de vos fragments, car elles peuvent être utilisées pour la classification et la taxonomie du contenu. Les balises peuvent être utilisées dans le but de rechercher du contenu (par balises) et d’appliquer des opérations en bloc.
 Par exemple, vous pouvez baliser les fragments pertinents en tant que « lancement de Noël » pour ne les parcourir que sous forme de sous-ensemble, ou les copier pour les utiliser avec un autre lancement futur dans un nouveau dossier.
 
-         >[!NOTE]
-         >
-         >Vous pouvez également ajouter des **balises** lors de la [création de contenu de variation](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) et de la [création de variations](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+        >[!NOTE]
+        >
+        >Vous pouvez également ajouter des **balises** lors de la [création de contenu de variation](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) et de la [création de variations](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+
    * **Créé** (affichage uniquement).
+
    Par exemple :
-   ![métadonnées](assets/cfm-metadata-02.png)
+   ![Exemple de métadonnées](assets/cfm-metadata-02.png)

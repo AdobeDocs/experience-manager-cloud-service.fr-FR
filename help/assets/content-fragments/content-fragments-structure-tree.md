@@ -2,10 +2,10 @@
 title: Arborescence de la structure du fragment de contenu (Ressources - Fragments de contenu)
 description: Utilisez la fonction Arborescence de structure de l’éditeur de fragment de contenu dans AEM pour mieux comprendre votre contenu découplé.
 exl-id: 4a134f04-e580-4f69-9d11-0a2fc83a4b3a
-source-git-commit: 34574fdc7f246499bd238fef388671d2287e62bc
+source-git-commit: 5c59189abf809293a319d6bce4ef7389c2451f92
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 100%
+source-wordcount: '119'
+ht-degree: 89%
 
 ---
 
@@ -15,7 +15,7 @@ Utilisez la fonction Arborescence de structure de l’éditeur de fragment de co
 
 Dans l’éditeur de fragments de contenu, vous pouvez sélectionner l’icône d’arborescence de structure :
 
-![Arborescence de la structure du fragment de contenu](assets/cfm-structuretree-01.png)
+![Arborescence de la structure de fragment de contenu dans le panneau latéral](assets/cfm-structuretree-01.png)
 
 Cette opération ouvre une représentation de la structure du fragment dans le volet de gauche. Vous pouvez ainsi parcourir et atteindre les fragments référencés. La sélection d’une référence ouvre ce fragment en vue de le modifier.
 
@@ -23,4 +23,4 @@ Cette opération ouvre une représentation de la structure du fragment dans le v
 >
 >À l’aide des chemins de navigation du panneau principal, vous pouvez revenir à votre point de départ.
 
-![Arborescence de la structure du fragment de contenu](assets/cfm-structuretree-02.png)
+![Exemple d’arborescence de structure de fragment de contenu](assets/cfm-structuretree-02.png)
