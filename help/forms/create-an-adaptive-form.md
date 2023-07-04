@@ -7,10 +7,10 @@ role: User, Developer
 level: Beginner
 hide: true
 hidefromtoc: true
-source-git-commit: 0efdb9353ef908cf5a655c989ae7be1107c8f3de
+source-git-commit: e302d24261f24697aeb5f97b99ffee1fc2135959
 workflow-type: tm+mt
-source-wordcount: '2849'
-ht-degree: 92%
+source-wordcount: '2783'
+ht-degree: 90%
 
 ---
 
@@ -24,20 +24,17 @@ ht-degree: 92%
 
 Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial destiné aux entreprises pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
+![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png){width="100%" align="center"}
+
 Avant de commencer, découvrez les types de composants de formulaires disponibles :
 
-* [Composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) : il s’agit de composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. **Adobe recommande d’utiliser ces composants modernes et extensibles pour développer Adaptive Forms**.
+* [Composants principaux de formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) : il s’agit de composants de capture de données normalisés. Ces composants offrent des fonctionnalités de personnalisation, un délai de développement réduit et de plus bas coûts de maintenance pour vos expériences d’inscription numérique. Un développeur ou une développeuse peut facilement personnaliser et mettre en forme ces composants. Vous pouvez accéder à [https://aemcomponents.dev/](https://aemcomponents.dev/) pour afficher les composants principaux disponibles en action **Adobe recommande d’utiliser ces composants modernes et extensibles pour développer Adaptive Forms**.
 
 * [Composants de base des formulaires adaptatifs](creating-adaptive-form.md) : il s’agit de composants de capture de données classiques (anciens). Vous pouvez continuer à les utiliser pour modifier votre formulaire adaptatif existant basé sur les composants de base. Si vous créez des formulaires, Adobe recommande d’utiliser les [composants principaux de formulaires adaptatifs](#create-an-adaptive-form-core-components).
 
-![Assistant de création d’un formulaire adaptatif](/help/release-notes/assets/wizard.png){width="100%" align="center"}
-
-
 >[!BEGINTABS]
 
->[!TAB Création d’un Forms adaptatif avec des composants principaux]
-
-## Conditions préalables {#pre-requisites-to-create-a-core-components-based-adaptive-form}
+>[!TAB Création d’un Forms adaptatif avec des composants principaux (recommandé)]
 
 Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants :
 
@@ -101,25 +98,20 @@ Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants
    * **[!UICONTROL Nom :]** indique le nom du formulaire. Un nœud portant le nom spécifié est créé dans le référentiel. Lorsque vous commencez à saisir un titre, la valeur du champ Nom est automatiquement générée. Vous pouvez modifier la valeur suggérée. Le champ Nom ne peut contenir que des caractères alphanumériques, des traits d’union et des traits de soulignement. Toutes les entrées non valides sont remplacées par un trait d’union.
    * **[!UICONTROL Chemin d’accès :]** indique l’emplacement d’enregistrement du formulaire adaptatif. Vous pouvez enregistrer le formulaire adaptatif directement sur `/content/dam/formsanddocuments` ou créer un dossier tel que `/content/dam/formsanddocuments/adaptiveforms` pour enregistrer un formulaire adaptatif. Assurez-vous de créer le dossier avant de l’utiliser dans le chemin d’accès. Le champ **[!UICONTROL Chemin d’accès]** ne crée pas de dossier automatiquement.
 
-1. Appuyez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et s’ouvre dans l’éditeur de formulaires adaptatifs. L’éditeur affiche le contenu disponible dans le modèle.  En fonction du type de formulaire adaptatif, les éléments de formulaire présents dans le <!--XFA form template, XML schema or --> schéma JSON ou le modèle de données de formulaire associé sont affichés dans l’onglet **[!UICONTROL Objets de modèle de données]** de l’**[!UICONTROL explorateur de contenu]** dans la barre latérale. Vous pouvez également faire glisser ces éléments pour créer votre formulaire adaptatif.
+1. Appuyez sur **[!UICONTROL Créer]**. Un formulaire adaptatif est créé et s’ouvre dans l’éditeur de formulaires adaptatifs. L’éditeur affiche le contenu disponible dans le modèle.  En fonction du type de formulaire adaptatif, les éléments de formulaire présents dans le <!--XFA form template, XML schema or --> schéma JSON ou le modèle de données de formulaire associé sont affichés dans l’onglet **[!UICONTROL Objets de modèle de données]** de l’**[!UICONTROL explorateur de contenu]** dans la barre latérale.
 
-Désormais, vous pouvez faire glisser les composants principaux des formulaires adaptatifs vers le conteneur de formulaires adaptatifs pour concevoir et créer le formulaire.
+Désormais, vous pouvez faire glisser et déposer le [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#components) ou des éléments de schéma pour créer le formulaire adaptatif.
 
-## Composants principaux des formulaires adaptatifs disponibles {#available-core-components}
-
-Les composants principaux des formulaires adaptatifs sont des composants de capture de données normalisés. Ces composants fournissent des fonctionnalités de personnalisation, réduisent le temps de développement et amenuisent les coûts de maintenance pour vos expériences d’inscription numérique. La [documentation sur les composants principaux des formulaires adaptatifs](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) comporte une liste détaillée des composants disponibles, ainsi que des informations complètes sur les fonctionnalités de chaque composant. Vous pouvez également consulter [https://aemcomponents.dev/](https://aemcomponents.dev/) pour afficher les composants principaux disponibles en action.
 
 ## Modifier les propriétés du modèle de formulaire d’un formulaire adaptatif {#edit-form-model-core-components-based-adaptive-forms}
 
-1. Sélectionnez le formulaire adaptatif et appuyez sur ![Informations sur la page](/help/forms/assets/Smock_Properties_18_N.svg){width="100%" align="center"} > **[!UICONTROL Ouvrir les propriétés]**. La page Propriétés du formulaire s’ouvre.
+1. Sélectionnez le formulaire adaptatif et appuyez sur ![Informations sur la page](/help/forms/assets/Smock_Properties_18_N.svg) > **[!UICONTROL Ouvrir les propriétés]**. La page Propriétés du formulaire s’ouvre.
 
 1. Accédez à l’onglet **[!UICONTROL Modèle de formulaire]** et choisissez un modèle de formulaire. Si le formulaire adaptatif est dépourvu de modèle de formulaire, vous avez la possibilité de choisir un schéma JSON ou un modèle de données de formulaire. D’autre part, si le formulaire adaptatif est déjà basé sur un modèle de formulaire, vous avez la possibilité de passer à un autre modèle de formulaire du même type. Par exemple, si le formulaire utilise un schéma JSON, vous pouvez facilement passer à un autre schéma JSON. De même, si le formulaire utilise un modèle de données de formulaire, vous pouvez passer à un autre modèle de données de formulaire.
 
 1. Appuyez sur **[!UICONTROL Enregistrer]** pour enregistrer les propriétés.
 
 >[!TAB Création d’un Forms adaptatif avec des composants de base]
-
-## Conditions préalables {#pre-requisites-to-create-a-foundation-components-based-adaptive-form}
 
 Pour créer un formulaire adaptatif, vous devez disposer des éléments suivants :
 
@@ -254,7 +246,7 @@ Vous pouvez modifier le modèle d’un formulaire adaptatif (basé sur JSON ou m
 Vous pouvez également modifier les propriétés du modèle de formulaire à partir de l’éditeur de formulaire adaptatif ou de l’éditeur de modèle de formulaire adaptatif.
 
 1. Sélectionnez le composant **[!UICONTROL Conteneur de formulaires adaptatifs (racine)]**.
-1. Cliquez sur l’![icône Configurer](/help/forms/assets/configure-icon.svg){width="100%" align="center"} pour ouvrir les **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.
+1. Cliquez sur l’![icône Configurer](/help/forms/assets/configure-icon.svg) pour ouvrir les **[!UICONTROL Propriétés]** du conteneur de formulaires adaptatifs.
 1. Sélectionnez l’onglet **[!UICONTROL Modèle de données]** et effectuez l’une des actions suivantes :
 
    * Si le formulaire adaptatif ne dispose pas de modèle de formulaire, vous pouvez choisir un autre modèle de formulaire et, en conséquence, sélectionner <!-- a form template, -->un schéma XML ou JSON ou un modèle de données de formulaire.
