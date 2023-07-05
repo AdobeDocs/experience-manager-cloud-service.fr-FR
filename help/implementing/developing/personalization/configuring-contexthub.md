@@ -5,7 +5,7 @@ exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1680'
-ht-degree: 67%
+ht-degree: 95%
 
 ---
 
@@ -21,19 +21,19 @@ Configurez le service Adobe Granite ContextHub OSGi pour afficher ou masquer l�
 
 Pour configurer le service, vous pouvez utiliser la [Console web](/help/implementing/deploying/configuring-osgi.md) ou un nœud JCR du référentiel :
 
-* **Console web :** pour afficher l’IU, sélectionnez la propriété Afficher l’IU. Pour masquer l’interface utilisateur, désélectionnez la propriété Masquer l’interface utilisateur .
+* **Console web :** pour afficher l’IU, sélectionnez la propriété Afficher l’IU. Pour masquer l’interface utilisateur, désélectionnez la propriété Masquer l’interface utilisateur.
 * **Nœud JCR :** pour afficher l’IU, définissez la propriété booléenne `com.adobe.granite.contexthub.show_ui` sur `true`. Pour masquer l’IU, définissez la propriété sur `false`.
 
 Si l’IU ContextHub est activée, elle s’affiche uniquement sur les pages sur les instances de création AEM. L’interface utilisateur n’apparaît pas sur les pages des instances de publication.
 
 ## Ajout des modes et des modules d’IU ContextHub {#adding-contexthub-ui-modes-and-modules}
 
-Configurez les modes et modules d’IU qui s’affichent dans la barre d’outils ContextHub en mode Aperçu :
+Configurez les modes et modules d’interface utilisateur qui s’affichent dans la barre d’outils ContextHub en mode d’aperçu :
 
-* Modes d’IU : Groupes de modules connexes
-* Modules : Widgets qui exposent les données contextuelles d’un magasin et permettent aux auteurs de manipuler le contexte
+* Modes d’interface utilisateur : groupes de modules connexes.
+* Modules : widgets qui exposent les données contextuelles d’un magasin et permettent aux auteurs et aux autrices de manipuler le contexte.
 
-Les modes d’IU s’affichent sous forme d’une série d’icônes dans la partie gauche de la barre d’outils. Lorsque cette option est sélectionnée, les modules d’un mode d’IU s’affichent à droite.
+Les modes d’IU s’affichent sous forme d’une série d’icônes dans la partie gauche de la barre d’outils. Lorsque cette option est sélectionnée, les modules d’un mode d’interface utilisateur s’affichent à droite.
 
 ![Barre d’outils ContextHub](assets/contexthub-toolbar.png)
 
@@ -41,12 +41,12 @@ Les icônes sont des références de la [bibliothèque d’icônes CoralUI](http
 
 ### Ajout d’un mode d’IU {#adding-a-ui-mode}
 
-Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsque vous créez le mode d’IU, vous fournissez le titre et l’icône qui s’affichent dans la barre d’outils ContextHub.
+Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsque vous créez le mode d’interface utilisateur, vous fournissez le titre et l’icône qui s’affichent dans la barre d’outils ContextHub.
 
-1. Sur le rail du Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
+1. Sur le rail d’Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
 1. Cliquez ou appuyez sur Conteneur de configuration par défaut.
 1. Cliquez ou appuyez sur Configuration ContextHub.
-1. Cliquez ou appuyez sur le bouton Créer, puis sur Mode d’IU ContextHub.
+1. Cliquez ou appuyez sur le bouton Créer, puis sur Mode d’interface utilisateur ContextHub.
 
    ![Ajout d’un mode d’IU](assets/contexthub-ui-mode.png)
 
@@ -54,15 +54,15 @@ Ajoutez un mode d’IU afin de regrouper les modules ContextHub associés. Lorsq
 
    * Titre du mode d’IU : titre qui identifie le mode d’IU.
    * Icône de mode : sélecteur de l’[icône de CoralUI](https://helpx.adobe.com/fr/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) à utiliser ; par exemple `coral-Icon--user`.
-   * Activé : Sélectionnez cette option pour afficher le mode d’IU dans la barre d’outils ContextHub.
+   * Activé : sélectionnez cette option pour afficher le mode d’interface utilisateur dans la barre d’outils ContextHub.
 
 1. Cliquez ou appuyez sur Enregistrer.
 
 ### Ajout d’un module d’IU {#adding-a-ui-module}
 
-Ajoutez un module d’IU ContextHub à un mode d’IU afin qu’il s’affiche dans la barre d’outils ContextHub pour prévisualiser le contenu d’une page. Lorsque vous ajoutez un module d’IU, vous créez une instance d’un type de module qui est enregistré auprès de ContextHub. Pour ajouter un module d’IU, vous devez connaître le nom du type de module associé.
+Ajoutez un module d’IU ContextHub à un mode d’IU afin qu’il s’affiche dans la barre d’outils ContextHub pour prévisualiser le contenu d’une page. Lorsque vous ajoutez un module d’IU, vous créez une instance d’un type de module qui est enregistré auprès de ContextHub. Pour ajouter un module d’interface utilisateur, vous devez connaître le nom du type de module associé.
 
-AEM propose un type de module d’IU de base, ainsi que plusieurs types de modules d’IU d’exemple sur lesquels vous pouvez baser un module d’IU. Le tableau suivant présente une brève description de chacun d’entre eux. Pour plus d’informations sur le développement d’un module d’IU personnalisé, voir [Création de modules d’IU ContextHub](extending-contexthub.md#creating-contexthub-ui-module-types).
+AEM propose un type de module d’IU de base, ainsi que plusieurs types de modules d’IU d’exemple sur lesquels vous pouvez baser un module d’IU. Le tableau suivant présente une brève description de chacun d’entre eux. Pour plus d’informations sur le développement d’un module d’interface utilisateur personnalisé, voir [Création de modules d’interface utilisateur ContextHub](extending-contexthub.md#creating-contexthub-ui-module-types).
 
 Les propriétés du module d’IU incluent une configuration de détails où vous pouvez fournir des valeurs pour des propriétés spécifiques au module. Vous fournissez la configuration de détails au format JSON. La colonne Type de module du tableau fournit des liens vers des informations sur le code JSON requis pour chaque type de module d’IU.
 
@@ -76,7 +76,7 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
 | [contexthub.tagcloud](sample-modules.md#contexthub-tagcloud-ui-module-type) | Affiche des statistiques sur les balises de page. | `tagcloud` |
 | [granite.profile](sample-modules.md#granite-profile-ui-module-type) | Affiche les informations de profil de l’utilisateur actuel, y compris `authorizableID`, `displayName` et `familyName`. Vous pouvez modifier la valeur de `displayName` et de `familyName`. | `profile` |
 
-1. Sur le rail du Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
+1. Sur le rail d’Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
 1. Cliquez ou appuyez sur le conteneur de configuration auquel vous souhaitez ajouter un module d’IU.
 1. Cliquez ou saisissez la configuration ContextHub à laquelle vous souhaitez ajouter le module d’IU.
 1. Cliquez ou appuyez sur le mode d’IU auquel vous ajoutez le module d’IU.
@@ -86,9 +86,9 @@ Les propriétés du module d’IU incluent une configuration de détails où vou
 
 1. Saisissez les valeurs pour les propriétés suivantes :
 
-   * Titre du module d’IU : Titre qui identifie le module d’IU.
-   * Type de module : Type de module
-   * Activé : Sélectionnez cette option pour afficher le module d’IU dans la barre d’outils ContextHub.
+   * Titre du module d’IU : titre qui identifie le module d’IU.
+   * Type de module : le type de module.
+   * Activé : sélectionnez cette option pour afficher le module d’IU dans la barre d’outils ContextHub.
 
 1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON pour configurer le module d’IU.
 1. Cliquez ou appuyez sur Enregistrer.
@@ -115,19 +115,19 @@ AEM fournit des exemples de candidats de magasins sur lesquels vous pouvez baser
 | [granite.profile](sample-stores.md#granite-profile-sample-store-candidate) | Stocke les données de profil de l’utilisateur actuel. |
 | [contexthub.surferinfo](sample-stores.md#contexthub-surferinfo-sample-store-candidate) | Stocke des informations sur le client, telles que les informations relatives à l’appareil, le type de navigateur et l’orientation de la fenêtre. |
 
-1. Sur le rail du Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
+1. Sur le rail d’Experience Manager, cliquez ou appuyez sur Outils > Sites > ContextHub.
 1. Cliquez ou appuyez sur le conteneur de configuration par défaut.
 1. Cliquez ou appuyez sur Configuration ContextHub
 1. Pour ajouter un magasin, cliquez ou appuyez sur l’icône Créer, puis sur Configuration de magasin ContextHub.
 
    ![Configuration du magasin ContextHub](assets/contexthub-store-configuration.png)
 
-1. Indiquez les valeurs des propriétés de configuration de base, puis cliquez ou appuyez sur Suivant :
+1. Indiquez les valeurs des propriétés de configuration de base, puis cliquez ou appuyez sur Suivant :
 
-   * **Titre de configuration :** Titre qui identifie le magasin
-   * **Type de magasin :** La valeur de la propriété storeType du magasin candidat sur lequel baser le magasin
+   * **Titre de configuration :** le titre qui identifie le magasin.
+   * **Type de magasin :** la valeur de la propriété storeType du magasin candidat sur lequel baser le magasin.
    * **Obligatoire :** sélectionnez cette option.
-   * **Activé :** Sélectionnez cette option pour activer le magasin.
+   * **Activé :** sélectionnez cette option pour activer le magasin.
 
 1. (Facultatif) Pour remplacer la configuration de magasin par défaut, saisissez un objet JSON dans la zone Configuration des détails (JSON).
 1. Cliquez ou appuyez sur Enregistrer.
@@ -181,9 +181,9 @@ Ajoutez un module d’IU à la barre d’outils ContextHub pour afficher les don
 
 ![Magasin ContextHub MD5](assets/contexthub-md5-store.png)
 
-Utilisez la procédure décrite dans [Ajout d’un module d’IU](#adding-a-ui-module) pour ajouter le module d’IU à un mode d’IU existant, comme l’exemple de mode d’IU Persona. Pour le module d’IU, utilisez les valeurs de propriété suivantes :
+Utilisez la procédure décrite dans [Ajout d’un module d’IU](#adding-a-ui-module) pour ajouter le module d’IU à un mode d’IU existant, comme l’exemple de mode d’IU Persona. Pour le module d’IU, utilisez les valeurs de propriété suivantes :
 
-* **Titre du module d’IU :** MD5
+* **Titre du module d’IU :** MD5.
 * **Type de module :** contexthub.base.
 * **Configuration des détails (JSON) :**
 
@@ -205,8 +205,8 @@ Une procédure de débogage pour ContextHub peut être activée afin de permettr
 
 Modifiez la configuration de ContextHub et cochez l’option **Débogage**.
 
-1. Dans le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**
-1. Cliquez ou appuyez sur la valeur par défaut. **Conteneur de configuration**
+1. Dans le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**.
+1. Cliquez ou appuyez sur le **Conteneur de configuration** par défaut.
 1. Sélectionnez la **Configuration ContextHub** et cliquez ou appuyez sur **Modifier l’élément sélectionné**
 1. Cliquez ou appuyez sur **Débogage** et cliquez ou appuyez sur **Enregistrer**.
 
@@ -243,8 +243,8 @@ ContextHub peut être désactivé pour éviter qu’il charge js/css et s’init
 
 * Modifiez la configuration de ContextHub et cochez l’option **Désactiver ContextHub**
 
-   1. Dans le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**
-   1. Cliquez ou appuyez sur la valeur par défaut. **Conteneur de configuration**
+   1. Dans le rail, cliquez ou appuyez sur **Outils > Sites > ContextHub**.
+   1. Cliquez ou appuyez sur le **Conteneur de configuration** par défaut.
    1. Sélectionnez la **Configuration ContextHub** et cliquez ou appuyez sur **Modifier l’élément sélectionné**
    1. Cliquez ou appuyez sur **Désactivation de ContextHub** et cliquez ou appuyez sur **Enregistrer**
 

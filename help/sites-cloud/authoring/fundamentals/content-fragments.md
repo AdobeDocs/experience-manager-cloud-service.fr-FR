@@ -31,24 +31,24 @@ En même temps que l’outil d’exportation JSON mis à jour, les fragments de
 >
 >Cette page doit être consultée en complément de la page [Utilisation de fragments de contenu](/help/sites-cloud/administering/content-fragments/content-fragments.md) (et des pages annexes), car elle présente la terminologie et les concepts de base, ainsi que la création et la gestion de fragments.
 
-Les fragments de contenu permettent :
+Les fragments de contenu permettent ce qui suit :
 
 * **Stratégie de marketing et de campagne**
-   * Examinent le contenu par le biais de fragments de contenu gérés de manière centralisée.
-* **Créatrices et créateurs professionnels**
+   * Examen du contenu par le biais de fragments de contenu gérés de manière centralisée.
+* **Créateurs et créatrices professionnels**
    * Suivi des ressources de création via des collections associées à des fragments de contenu.
 * **Rédacteurs et rédactrices**
-   * Écrivent dans l’éditeur de fragments de contenu AEM.
-   * Peuvent créer des variations de contenu.
-   * Peuvent associer du contenu pertinent au fragment de contenu.
-   * Peuvent utiliser le contrôle de version/workflow.
-   * Peuvent partager un fragment de contenu.
-   * Peuvent gérer les traductions de manière centralisée.
+   * Écriture dans l’éditeur de fragments de contenu d’AEM.
+   * Possibilité de créer des variations de contenu.
+   * Possibilité d’associer du contenu pertinent au fragment de contenu.
+   * Possibilité d’utiliser le contrôle de version/workflow.
+   * Possibilité de partager un fragment de contenu.
+   * Possibilité de gérer les traductions de manière centralisée.
 * **Producteurs et responsable parcours**
-   * Effectuent une sélection à partir de fragments et de variations prédéfinis avec la création dans AEM.
-   * Peuvent compter sur la mise à jour en continu des fragments et du contenu associé à mesure que les rédacteurs et les rédactrices, et les créateurs et créatrices, effectuent leurs mises à jour dans des ressources et des fragments gérés de manière centralisée.
-   * Peuvent compter sur un contenu multimédia associé traité pour être pertinent.
-   * Peuvent créer des variations de contenu ad hoc à la volée tout en s’assurant que celles-ci restent gérées de manière centralisée dans le fragment.
+   * Sélection à partir de fragments et de variations prédéfinis avec la création dans AEM.
+   * Possibilité de compter sur la mise à jour en continu des fragments et du contenu associé à mesure que les rédacteurs et les rédactrices, et les créateurs et créatrices, effectuent leurs mises à jour dans des ressources et des fragments gérés de manière centralisée.
+   * Possibilité de compter sur un contenu multimédia associé traité pour être pertinent.
+   * Possibilité de créer des variations de contenu ad hoc à la volée tout en s’assurant que celles-ci restent gérées de manière centralisée dans le fragment.
 
 ## Ajout d’un fragment de contenu à une page {#adding-a-content-fragment-to-your-page}
 

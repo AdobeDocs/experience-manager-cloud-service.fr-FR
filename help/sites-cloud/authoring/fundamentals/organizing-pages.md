@@ -5,7 +5,7 @@ exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2539'
-ht-degree: 70%
+ht-degree: 87%
 
 ---
 
@@ -129,13 +129,13 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 >
 >Vous devez éviter d’utiliser un code à deux lettres tel que défini par la norme ISO-639-1 comme nom de page, sauf s’il s’agit d’une racine de langue.
 >
->Voir [Préparation du contenu à traduire](/help/sites-cloud/administering/translation/preparation.md) pour plus d’informations.
+>Pour plus de détails, reportez-vous à la rubrique [Préparation du contenu de traduction](/help/sites-cloud/administering/translation/preparation.md).
 
 ### Modèles {#templates}
 
 Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle est utilisé comme base pour toute nouvelle page en cours de création.
 
-Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les informations de contact. Les modèles se composent de [components](#components).
+Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
 AEM comporte plusieurs modèles prêts à l’emploi. Les modèles disponibles dépendent du site web individuel. Les champs clés sont les suivants :
 
@@ -160,9 +160,9 @@ Les composants sont les éléments fournis par AEM afin que vous puissiez ajoute
 * Image
 * Titre
 * Carrousel
-* Et bien plus encore
+* Et bien plus encore.
 
-Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide des composants ;](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), qui sont disponibles à partir de l’ [explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
+Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du contenu à l’aide de composants](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component), disponibles dans le [navigateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
 >[!TIP]
 >
@@ -192,13 +192,13 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
    * Utilisez les trois onglets pour accéder aux [propriétés de la page](/help/sites-cloud/authoring/fundamentals/page-properties.md) à attribuer à la nouvelle page, puis cliquez ou appuyez sur **Créer** pour réellement créer la page.
 
-   * Utilisation **Précédent** pour revenir à la sélection de modèle.
+   * Utilisez **Précédent** pour revenir à la sélection de modèle.
 
-   Les champs clés sont les suivants :
+   Les champs clés sont les suivants :
 
    * **Titre** :
 
-      * Celui-ci s’affiche pour l’utilisateur et est obligatoire.
+      * Il est visible par la personne utilisatrice et est obligatoire.
 
    * **Nom** :
 
@@ -208,9 +208,9 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
    >[!TIP]
    >
-   >Voir [Conventions de dénomination des pages](#page-naming-conventions).
+   >Voir [Conventions de dénomination de page](#page-naming-conventions).
 
-   Les informations minimales requises pour créer une page sont les suivantes : **Titre**.
+   Les informations minimales requises pour créer une page sont le **Titre**.
 
    ![Affichage du titre de la page](/help/sites-cloud/authoring/assets/organizing-create-page-title.png)
 
@@ -234,9 +234,9 @@ Une fois que vous avez créé et ouvert une page, vous pouvez [ajouter du conten
 
 Après avoir créé une page ou accédé à une page existante (dans la console), vous pouvez l’ouvrir pour la modifier :
 
-1. Ouvrez le **Sites** console.
+1. Ouvrez la console **Sites**.
 1. Accédez à la page à modifier.
-1. Sélectionnez votre page à l’aide de l’une des options suivantes :
+1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * Le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
@@ -255,13 +255,13 @@ Après avoir créé une page ou accédé à une page existante (dans la console)
 
 Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplacement :
 
-1. Dans le **Sites** , accédez à la page à copier.
-1. Sélectionnez votre page à l’aide de l’une des options suivantes :
+1. Dans la console **Sites**, accédez à la page à copier.
+1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * Le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
 
-   Et puis le **Copier** icône de page :
+   Puis l’icône **Copier** la page :
 
    ![Copier](/help/sites-cloud/authoring/assets/copy.png)
 
@@ -294,21 +294,21 @@ La procédure pour déplacer ou renommer une page est plus ou moins la même et 
 * Déplacer la page sans la renommer
 * Déplacer et renommer une page simultanément
 
-AEM vous offre la possibilité de mettre à jour les liens internes qui font référence à la page en cours de changement de nom. Cette opération peut être effectuée page par page afin d’offrir une flexibilité totale.
+AEM vous offre la possibilité de mettre à jour les liens internes qui font référence à la page renommée ou déplacée. Cette opération peut être effectuée page par page afin d’offrir une flexibilité totale.
 
 1. Accédez à la page à déplacer.
-1. Sélectionnez votre page à l’aide de l’une des options suivantes :
+1. Sélectionnez votre page à l’aide de l’une des options suivantes :
 
    * [Actions rapides](/help/sites-cloud/authoring/getting-started/basic-handling.md#quick-actions)
    * Le [mode de sélection](/help/sites-cloud/authoring/getting-started/basic-handling.md#selecting-resources) et la barre d’outils
 
-   Sélectionnez ensuite le **Déplacer** icône de page :
+   Sélectionnez ensuite l’icône **Déplacer** la page :
 
    ![Bouton Déplacer](/help/sites-cloud/authoring/assets/move.png)
 
    L’assistant de déplacement de page s’ouvre alors.
 
-1. Dans la **Renommer** à l’étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
+1. À l’étape **Renommer** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
    * Spécifiez le nom à attribuer à la page après son déplacement et cliquez/appuyez sur **Suivant** pour poursuivre.
    * Cliquez/appuyez sur **Annuler** pour interrompre le processus.
@@ -321,14 +321,14 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
    >
    >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` devient `beach1`.
 
-1. Dans la **Sélectionner la destination** à l’étape de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
+1. À l’étape **Sélectionner une destination** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
-   * Utilisez la variable [mode colonne](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) pour accéder au nouvel emplacement de la page :
+   * Utilisez la [vue Colonne](/help/sites-cloud/authoring/getting-started/basic-handling.md#column-view) pour accéder au nouvel emplacement de la page :
 
       * Sélectionnez la destination en cliquant sur sa miniature.
       * Cliquez sur **Suivant** pour continuer.
 
-   * Utilisation **Précédent** pour revenir à la spécification du nom de page.
+   * Utilisez **Précédent** pour revenir à la spécification du nom de page.
 
    >[!NOTE]
    >
@@ -350,7 +350,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    ![Republier la page lors du déplacement](/help/sites-cloud/authoring/assets/move-page-republish.png)
 
-1. Sélection **Déplacer** terminera le processus et déplacera/renommera votre page selon les besoins.
+1. Si vous sélectionnez **Déplacer**, le processus se terminera et votre page sera déplacée ou renommée selon les besoins.
 
 >[!NOTE]
 >
@@ -362,7 +362,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
 >[!NOTE]
 >
->Le changement de nom d’une page est également soumis au [Conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom de page.
+>La modification du nom d’une page est également soumise aux [Conventions de dénomination de page](#page-naming-conventions) lors de la spécification du nouveau nom de la page.
 
 >[!NOTE]
 >
@@ -407,8 +407,8 @@ L’état des tâches asynchrones peut être vérifié dans le [**tableau de bor
    * **Voulez-vous archiver les pages avant la suppression ?** - Si cette case est cochée, les versions des pages sélectionnées pour suppression sont créées lors de la suppression.
       * [Il est possible de restaurer les versions ultérieurement](/help/sites-cloud/authoring/features/page-versions.md).
       * Les pages supprimées sans les versions précédentes ne peuvent pas être restaurées.
-   * **Annuler** pour abandonner l’action
-   * **Supprimer** pour confirmer l’action :
+   * **Annuler** pour abandonner l’opération.
+   * **Supprimer** pour confirmer l’action :
 
       * Si la page ne comporte aucune référence, elle est supprimée.
       * Si la page comporte des références, un message vous informe qu’**une ou plusieurs pages sont référencées.** Vous pouvez sélectionner **Forcer la suppression** ou **Annuler**.
@@ -428,9 +428,9 @@ Vous pouvez [verrouiller ou déverrouiller une page](/help/sites-cloud/authoring
 
 Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
 
-1. Ouvrez le **Sites** et accédez à l’emplacement requis.
-1. Pour ouvrir la liste des options, sélectionnez **Créer** de la barre d’outils ;
-1. Sélectionner **Dossier** pour ouvrir la boîte de dialogue. Vous pouvez y entrer le **nom** et le **titre** :
+1. Ouvrez la console **Sites** et accédez à l’emplacement requis.
+1. Pour ouvrir la liste des options, sélectionnez **Créer** dans la barre d’outils
+1. Sélectionnez **Dossier** pour ouvrir la boîte de dialogue. Vous pouvez y entrer le **nom** et le **titre** :
 
    ![Créer un dossier](/help/sites-cloud/authoring/assets/organizing-create-folder.png)
 
@@ -438,7 +438,7 @@ Vous pouvez créer des dossiers pour classer vos fichiers et vos pages.
 
 >[!NOTE]
 >
->Les dossiers sont également soumis aux [Conventions de dénomination des pages](#page-naming-conventions) lors de la spécification du nouveau nom de dossier.
+>Les dossiers sont également soumis aux [Conventions de dénomination de page](#page-naming-conventions) lors de la spécification du nouveau nom de dossier.
 
 >[!CAUTION]
 >

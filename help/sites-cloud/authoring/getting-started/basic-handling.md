@@ -1,11 +1,11 @@
 ---
 title: Manipulation de base
-description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base
+description: Familiarisez-vous avec la navigation dans AEM et l’utilisation des fonctionnalités de base.
 exl-id: ae87a63a-c6d3-4220-ab3d-07a20b21b93b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2978'
-ht-degree: 70%
+ht-degree: 92%
 
 ---
 
@@ -15,7 +15,7 @@ Ce document donne un aperçu des opérations de gestion de base dans l’environ
 
 >[!NOTE]
 >
->* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles. Des informations spécifiques sur les consoles individuelles et leurs fonctionnalités associées sont traitées plus en détail sur d’autres pages.
+>* Certaines fonctionnalités ne sont pas disponibles dans toutes les consoles et d’autres peuvent être disponibles dans certaines consoles uniquement. Des informations spécifiques sur les consoles individuelles et leurs fonctionnalités associées sont traitées plus en détail sur d’autres pages.
 >* Des raccourcis clavier sont disponibles dans toute l’application AEM, notamment lors de l’[utilisation des consoles](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) et de la [modification de pages](/help/sites-cloud/authoring/fundamentals/keyboard-shortcuts.md).
 
 ## Interface utilisateur pour écrans tactiles {#a-touch-enabled-ui}
@@ -32,7 +32,7 @@ La console **Sites** est utilisée dans ce document pour garantir une bonne comp
 
 ## Navigation dans le produit {#product-navigation}
 
-Chaque fois qu’un utilisateur accède à une console pour la première fois, un tutoriel sur la navigation dans un produit est lancé. Prenez une minute pour cliquer ou appuyez dessus pour obtenir une bonne vue d’ensemble de la gestion de base des AEM.
+Lorsqu’une personne utilisatrice accède à une console pour la première fois, un tutoriel sur la navigation dans le produit en question s’affiche. Cliquez ou appuyez pour obtenir une vue d’ensemble de la gestion de base d’AEM.
 
 ![Tutoriel de navigation](/help/sites-cloud/authoring/assets/tutorial.png)
 
@@ -51,9 +51,9 @@ Vous pouvez fermer le panneau de navigation globale en cliquant ou en appuyant s
 La navigation globale se compose de deux panneaux, représentés par des icônes dans la marge gauche de l’écran :
 
 * **[Navigation](#navigation-panel)** : représenté par une boussole  et le panneau par défaut lorsque vous vous connectez à AEM
-* **[Outils](#tools-panel)** - Représenté par un marteau
+* **[Outils](#tools-panel)** : représenté par un marteau
 
-Les options disponibles dans ces panneaux sont décrites ci-dessous.
+Consultez les options disponibles dans ces panneaux ci-dessous.
 
 ### Panneau de navigation {#navigation-panel}
 
@@ -82,7 +82,7 @@ Dans le panneau Outils se trouve un panneau latéral contenant un éventail de c
 
 ## En-tête {#the-header}
 
-L’en-tête est toujours présent en haut de l’écran. Bien que la plupart des options de l’en-tête restent les mêmes, quel que soit l’endroit où vous vous trouvez dans le système, certaines sont spécifiques au contexte.
+L’en-tête est toujours affiché en haut de l’écran. Bien que la plupart des options de l’en-tête restent les mêmes, quel que soit l’endroit où vous vous trouvez dans le système, certaines dépendent du contexte.
 
 ![En-tête de navigation](/help/sites-cloud/authoring/assets/navigation-bar.png)
 
@@ -130,7 +130,7 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
   Le chemin de navigation est situé au milieu du rail. Il affiche toujours la description de l’élément sélectionné et vous permet de naviguer au sein d’une console spécifique. Dans la console **Sites**, vous pouvez parcourir les différents niveaux de votre site web.
 
-  Il vous suffit de cliquer sur le texte du chemin de navigation pour afficher une liste déroulante répertoriant les niveaux de la hiérarchie de l’élément actuellement sélectionné. Cliquez sur une entrée pour accéder à cet emplacement.
+  Il vous suffit de cliquer sur le texte du chemin de navigation pour afficher une liste déroulante des niveaux de la hiérarchie de l’élément sélectionné. Cliquez sur une entrée pour accéder à cet emplacement.
 
   ![Exemple de chemin de navigation développé](/help/sites-cloud/authoring/assets/breadcrumbs-example.png)
 
@@ -166,9 +166,9 @@ L’en-tête est toujours présent en haut de l’écran. Bien que la plupart de
 
 Plusieurs ressources d’aide sont disponibles :
 
-* **Barre d’outils Console**
+* **Barre d’outils de la console**
 
-  Selon votre emplacement, la variable **Aide** ouvre les ressources appropriées :
+  Selon votre emplacement, l’icône **Aide** ouvre les ressources appropriées :
 
   ![Icône d’aide](/help/sites-cloud/authoring/assets/help-console.png)
 
@@ -190,7 +190,7 @@ Plusieurs ressources d’aide sont disponibles :
 
 * **Console Outils**
 
-  Dans la **Outils** vous pouvez également accéder à la console externe. **Ressources**:
+  Dans la console **Outils**, vous pouvez également accéder aux **ressources** externes :
 
    * **Documentation** : affichez la documentation de Web Experience Management.
    * **Ressources pour les développeurs** : ressources et téléchargements pour les développeurs.
@@ -228,7 +228,7 @@ En raison des restrictions d’espace dans certaines fenêtres, la barre d’out
 
 Dans [Mode Carte](#card-view) certaines actions sont disponibles sous forme d’icônes d’action rapide et se trouvent sur la barre d’outils. Les icônes d’action rapide sont disponibles pour un seul élément à la fois, ce qui évite d’avoir à présélectionner.
 
-Les actions rapides sont visibles lorsque vous pointez (ordinateur de bureau) sur une carte de ressource. Les actions rapides disponibles dépendent de la console et du contexte. Voici, par exemple, les actions rapides d’une page dans le **Sites** console :
+Les actions rapides sont visibles lorsque vous pointez (ordinateur de bureau) sur une carte de ressource avec la souris. Les actions rapides disponibles dépendent de la console et du contexte. Voici, par exemple, les actions rapides d’une page dans la console **Sites** :
 
 ![Options supplémentaires](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -244,7 +244,7 @@ Vous pouvez afficher, parcourir et sélectionner (pour effectuer d’autres opé
 
 >[!NOTE]
 >
->Par défaut, AEM Assets n’affiche pas les rendus originaux des ressources dans l’interface utilisateur sous forme de miniatures dans aucune des vues. Si vous êtes administrateur, vous pouvez utiliser des superpositions pour configurer AEM Assets afin d’afficher les rendus originaux sous forme de miniatures.
+>Par défaut, AEM Assets n’affiche pas les rendus originaux des ressources dans l’interface utilisateur sous forme de miniatures, quel que soit le mode. Si vous êtes administrateur ou administratrice, vous pouvez utiliser des superpositions pour configurer AEM Assets afin d’afficher les rendus originaux sous forme de miniatures.
 
 ### Sélection de ressources {#selecting-resources}
 
@@ -258,7 +258,7 @@ La sélection d’une ressource en particulier dépend de la combinaison du mode
 
 #### Tout sélectionner {#select-all}
 
-Vous pouvez sélectionner tous les éléments d’une vue en cliquant sur le bouton **Tout sélectionner** dans le coin supérieur droit de la console.
+Vous pouvez sélectionner tous les éléments d’un mode en cliquant sur le bouton **Tout sélectionner** dans le coin supérieur droit de la console.
 
 * En **mode Carte**, toutes les cartes sont sélectionnées.
 * Dans la vue **Liste**, tous les éléments de la liste sont sélectionnés.
@@ -293,14 +293,14 @@ Quel que soit le mode, vous pouvez désélectionner tous les éléments en appuy
 
 ![Mode Colonnes](/help/sites-cloud/authoring/assets/column-view.png)
 
-Le mode Colonnes permet une navigation visuelle d’une arborescence de contenu à travers une série de colonnes en cascade. Ce mode vous permet de visualiser et de parcourir l’arborescence de votre site web.
+Le mode Colonnes permet de naviguer visuellement dans une arborescence de contenu à travers une série de colonnes en cascade. Ce mode vous permet de visualiser et de parcourir l’arborescence de votre site web.
 
-La sélection d’une ressource dans la colonne la plus à gauche affiche les ressources enfants dans une colonne située à droite. La sélection d’une ressource dans la colonne de droite affiche alors les ressources enfants dans une autre colonne à droite, etc.
+Si vous sélectionnez une ressource dans la colonne la plus à gauche, les ressources enfants s’affichent dans une colonne à droite. Si vous sélectionnez une ressource dans la colonne de droite, les ressources enfants s’affichent dans une autre colonne à droite, etc.
 
 * Vous pouvez naviguer de haut en bas dans l’arborescence en appuyant ou en cliquant sur le nom de la ressource ou sur le chevron situé à droite du nom de la ressource.
 
    * Le nom de la ressource et le chevron sont mis en surbrillance lorsque vous appuyez ou cliquez dessus.
-   * Les enfants de la ressource sur laquelle l’utilisateur a cliqué/a cliqué sont affichés dans la colonne située à droite de la ressource sur laquelle l’utilisateur a cliqué/a cliqué.
+   * Les enfants de la ressource sur laquelle vous avez cliqué/appuyé s’affichent dans la colonne située à droite de cette ressource.
    * Si vous appuyez ou cliquez sur un nom de ressource sans enfant, ses détails s’affichent dans la colonne finale.
 
 * Appuyez ou cliquez sur la miniature pour sélectionner la ressource.
@@ -309,29 +309,29 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
    * Les détails de la ressource sélectionnée sont affichés dans la dernière colonne.
    * La barre d’outils d’action devient disponible.
 
-  Lorsqu’une page est sélectionnée en mode Colonne, la page sélectionnée s’affiche dans la dernière colonne avec les détails suivants :
+  Lorsque vous sélectionnez une page en mode Colonnes, la page sélectionnée s’affiche dans la dernière colonne avec les détails suivants :
 
    * Titre de la page
-   * Nom de page (partie de l’URL de la page)
-   * Modèle sur lequel la page est basée
-   * Détails de la modification
-   * Langage de page
+   * Nom de la page (partie de l’URL de la page)
+   * Modèle sur lequel est basée la page
+   * Détails des modifications
+   * Langue de la page
    * Publication et prévisualisation des détails
 
 ### Mode Carte {#card-view}
 
 ![Mode Carte](/help/sites-cloud/authoring/assets/card-view.png)
 
-* Le mode Carte affiche des cartes d’informations pour chaque élément au niveau actuel. Elles fournissent des informations telles que :
+* Le mode Carte affiche des cartes d’informations pour chaque élément au niveau actuel. Elles fournissent des informations telles que :
 
    * une représentation visuelle du contenu de la page ;
    * le titre de la page ;
    * des dates importantes (telles que la date de la dernière modification ou publication) ;
    * si la page est verrouillée, masquée ou fait partie d’une Live Copy ;
    * le cas échéant, le moment auquel vous devez effectuer une action dans le cadre d’un workflow.
-      * Les marqueurs qui indiquent les actions requises peuvent être liés aux entrées de votre [Boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
+      * Les marques qui indiquent les actions requises peuvent être liées aux entrées de votre [boîte de réception](/help/sites-cloud/authoring/getting-started/inbox.md).
 
-* [Actions rapides](#quick-actions) sont également disponibles dans cette vue, comme la sélection et les actions courantes, telles que la modification.
+* Les [actions rapides](#quick-actions) sont également disponibles dans ce mode, comme la sélection et les actions courantes, telles que la modification.
 
   ![Actions rapides](/help/sites-cloud/authoring/assets/quick-actions.png)
 
@@ -347,26 +347,26 @@ La sélection d’une ressource dans la colonne la plus à gauche affiche les re
 
   ![Tout sélectionner dans la vue Liste](/help/sites-cloud/authoring/assets/list-view-select-all.png)
 
-   * Lorsque tous les éléments de la liste sont sélectionnés, cette case à cocher s’affiche.
+   * Cette case apparaît cochée lorsque tous les éléments de la liste sont sélectionnés.
 
       * Cliquez ou appuyez sur la case à cocher pour tout désélectionner.
 
-   * Lorsque seuls certains éléments sont sélectionnés, un signe moins apparaît.
+   * Lorsque seuls certains éléments sont sélectionnés, le signe moins apparaît.
 
       * Cliquez ou appuyez sur la case à cocher pour tout sélectionner.
       * Cliquez ou appuyez à nouveau sur la case à cocher pour tout désélectionner.
 
-* Sélectionnez les colonnes à afficher à l’aide de l’option **Afficher les paramètres** située sous le bouton Vues. Les colonnes suivantes peuvent être affichées :
+* Sélectionnez les colonnes à afficher à l’aide de l’option **Afficher les paramètres** située sous le bouton Vues. Vous pouvez afficher les colonnes suivantes :
 
-   * **Nom** - Nom de page, qui peut s’avérer utile dans un environnement de création multilingue, car il fait partie de l’URL de la page et ne change pas, quelle que soit la langue.
-   * **Modifié** - Date de dernière modification et date de dernière modification par l’utilisateur
+   * **Nom** : nom de la page, qui peut s’avérer utile dans un environnement de création multilingue, car il fait partie de l’URL de la page et ne change pas, quelle que soit la langue.
+   * **Modifié** : date de la dernière modification et dernière modification par l’utilisateur ou l’utilisatrice.
    * **Publié** : statut de la publication.
    * **Prévisualisation** : prévisualisation du statut
    * **Modèle** : modèle sur lequel la page est basée.
    * **Workflow** : workflow actuellement appliqué à la page. D’autres informations sont disponibles lorsque vous déplacez la souris ou lorsque vous ouvrez la chronologie.
-   * **Analyse de page**
+   * **Analyse de la page**
    * **Visiteurs uniques**
-   * **Durée sur la page**
+   * **Temps passé sur la page**
 
      ![Sélectionner des colonnes](/help/sites-cloud/authoring/assets/select-columns.png)
 
@@ -408,7 +408,7 @@ Grâce au panneau latéral de l’arborescence de contenu associé à un mode Li
 
 >[!NOTE]
 >
->Une fois qu’une entrée est sélectionnée dans la vue de hiérarchie, les touches fléchées permettent de naviguer rapidement dans la hiérarchie.
+>Après avoir sélectionné une entrée dans la hiérarchie, vous pouvez naviguer rapidement dans la hiérarchie à l’aide des touches directionnelles.
 >
 >Voir [raccourcis clavier](/help/sites-cloud/authoring/getting-started/keyboard-shortcuts.md) pour plus d’informations.
 
@@ -446,7 +446,7 @@ Ces fonctionnalités sont accessibles par le biais du chevron en regard du champ
 
 ### Références {#references}
 
-Les **références** affichent toutes les connexions avec la ressource sélectionnée. Par exemple, dans la variable **Sites** console [références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) pour les pages affiche :
+Les **références** affichent toutes les connexions avec la ressource sélectionnée. Par exemple, dans la console **Sites**, les [références](/help/sites-cloud/authoring/fundamentals/environment-tools.md#references) des pages affichent :
 
 * [Lancements](/help/sites-cloud/authoring/launches/overview.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-cloud/administering/msm/overview.md#openingthelivecopyoverviewfromreferences)

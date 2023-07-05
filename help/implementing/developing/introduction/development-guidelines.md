@@ -5,7 +5,7 @@ exl-id: 94cfdafb-5795-4e6a-8fd6-f36517b27364
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2586'
-ht-degree: 88%
+ht-degree: 89%
 
 ---
 
@@ -142,7 +142,7 @@ Une ligne dans le fichier de débogage commence généralement par DEBUG, puis f
 DEBUG 3 WebApp Panel: WebApp successfully deployed
 ```
 
-Les niveaux de journal sont les suivants :
+Les niveaux de journal sont les suivants :
 
 | 0 | Erreur fatale | L’action a échoué et le programme d’installation ne peut pas continuer. |
 |---|---|---|

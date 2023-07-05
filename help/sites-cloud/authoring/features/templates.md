@@ -5,7 +5,7 @@ exl-id: 4c9dbf26-5852-45ab-b521-9f051c153b2e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '4577'
-ht-degree: 62%
+ht-degree: 64%
 
 ---
 
@@ -286,8 +286,8 @@ Pour plus d’informations, voir la [documentation sur le système de style](/he
 
 En mode **Structure**, vous définissez les composants et le contenu de votre modèle, ainsi qu’une politique pour le modèle et ses composants.
 
-* Les composants définis dans la structure du modèle ne peuvent pas être déplacés sur une page résultant du processus ni supprimés des pages créées.
-* Si vous souhaitez que les auteurs de pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
+* Les composants définis dans la structure du modèle ne peuvent pas être déplacés sur une page créée ni supprimés des pages créées.
+* Si vous souhaitez que les personnes créant les pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
 * Les composants peuvent être déverrouillés (et reverrouillés) pour que vous puissiez définir le [contenu initial](#editing-a-template-initial-content-author).
 * Les politiques de conception des composants et de la page sont définies.
 
@@ -651,7 +651,7 @@ Lors de la création de modèles, tenez compte des points suivants :
    Soyez prudent lorsque :
 
    * Verrouillage ou déverrouillage de composants sur des modèles activés.
-   * Cela peut avoir des effets secondaires, car les pages existantes peuvent déjà l’utiliser. En règle générale :
+   * Cela peut avoir des effets secondaires, car les pages existantes peuvent déjà l’utiliser. En règle générale :
 
       * Le déverrouillage des composants (qui étaient verrouillés) est manquant sur les pages existantes.
       * Le verrouillage des composants (modifiables) empêche l’affichage de ce contenu sur les pages.

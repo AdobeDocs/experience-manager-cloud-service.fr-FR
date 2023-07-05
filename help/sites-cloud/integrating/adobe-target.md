@@ -5,13 +5,13 @@ exl-id: 2b4cf35e-2b75-4303-8d09-f6644ad99274
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '716'
-ht-degree: 61%
+ht-degree: 69%
 
 ---
 
 # Intégration à Adobe Target{#integrating-with-adobe-target}
 
-Dans le cadre de Adobe Experience Cloud, [Adobe Target](https://business.adobe.com/products/target/adobe-target.html) vous permet d’accroître la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. Adobe Target est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments ciblés à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne. AEM as a Cloud Service a adopté le workflow de ciblage qui est utilisé dans Adobe Target Standard. Si vous utilisez Target, vous connaissez l’environnement d’édition de ciblage dans AEM as a Cloud Service.
+Dans le cadre de Adobe Experience Cloud, [Adobe Target](https://business.adobe.com/fr/products/target/adobe-target.html) vous permet d’accroître la pertinence du contenu en effectuant un ciblage et des mesures sur tous les canaux. Adobe Target est utilisé par les spécialistes marketing pour concevoir et exécuter des tests en ligne, créer des segments ciblés à la volée (en fonction du comportement) et automatiser le ciblage du contenu et les expériences en ligne. AEM as a Cloud Service a adopté le workflow de ciblage qui est utilisé dans Adobe Target Standard. Si vous utilisez Target, vous connaissez l’environnement d’édition de ciblage dans AEM as a Cloud Service.
 
 Intégrez vos sites AEM à Adobe Target afin de personnaliser le contenu de vos pages :
 
@@ -32,9 +32,9 @@ Pour assurer l’intégration à Target, effectuez les tâches suivantes :
 * Experience Platform Launch est l’outil par défaut permettant d’instrumenter un site AEM avec des fonctionnalités Target (bibliothèques JS). Par conséquent, l’intégration d’AEM as a Cloud Service avec Launch et Adobe Target s’effectue de façon conjointe (voir les liens ci-dessous).
 
    * [Intégration à Adobe Target à l’aide d’Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/integration-target-ims.html)
-   * [Intégrer Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+   * [Intégrer Experience Platform Launch](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
    * [Intégration d’AEM à Adobe Launch par Adobe I/O](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=en)
-   * [Présentation de l’intégration d’AEM à Experience Platform Launch, Analytics et Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)
+   * [Présentation de l’intégration d’AEM à Experience Platform Launch, Analytics et Target](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=fr)
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Une fois l’intégration terminée, vous pouvez [créer du contenu ciblé](http
 
 >[!NOTE]
 >
->Lorsque vous ciblez un composant dans AEM auteur, le composant effectue une série d’appels côté serveur vers Adobe Target pour enregistrer la campagne, configurer des offres et récupérer des segments Adobe Target (s’ils sont configurés). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
+>Lorsque vous ciblez un composant dans l’instance de création AEM, le composant effectue une série d’appels côté serveur à Adobe Target pour enregistrer la campagne, configurer des offres et récupérer des segments Adobe Target (s’ils sont configurés). Aucun appel côté serveur n’est effectué depuis la publication AEM vers Adobe Target.
 
 ## Sources d’informations sur le contexte {#background-information-sources}
 

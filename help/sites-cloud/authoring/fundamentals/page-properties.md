@@ -84,7 +84,7 @@ Les propriétés sont réparties sur plusieurs onglets.
   >L’URL Vanity :
   >
   >* doit être unique. Vous devez donc veiller à ce que la valeur ne soit pas déjà utilisée par une autre page.
-  >* Ne prennent pas en charge les modèles d’expression régulière.
+  >* Elles ne prennent pas en charge les modèles d’expression régulière.
   >* ne doit pas être définie sur une page existante.
 
    * **Ajouter** – Appuyez ou cliquez pour afficher un champ afin de définir une URL d’origine pour la page.
@@ -309,8 +309,8 @@ Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utili
 
 Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de différentes manières, notamment :
 
-* Lorsque vous parcourez la console **Sites**
-* Après avoir utilisé **Rechercher** pour localiser un ensemble de pages
+* lorsque vous parcourez la console **Sites** ;
+* après avoir utilisé **Rechercher** pour localiser un ensemble de pages.
 
 Après avoir sélectionné les pages, puis cliqué ou appuyé sur l’icône **Option Propriétés**, les propriétés en bloc s’affichent :
 
@@ -329,7 +329,7 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
    * Liste des pages affectées
       * Vous pouvez sélectionner/désélectionner si nécessaire.
       * Onglets
-         * Comme pour l’affichage des propriétés d’une seule page, les propriétés sont classées dans des onglets.
+         * Comme pour l’affichage des propriétés d’une seule page, les propriétés sont classées sous les onglets.
    * Un sous-ensemble de propriétés
       * Les propriétés qui sont disponibles sur toutes les pages sélectionnées, et qui ont été définies explicitement comme étant disponibles pour la modification en masse, sont visibles.
       * Si vous réduisez la sélection à une seule page, toutes les propriétés sont alors visibles.
@@ -342,5 +342,5 @@ Une fois le mode de modification en bloc activé, vous pouvez effectuer les opé
 
    * Vous pouvez mettre à jour les valeurs dans les champs disponibles.
       * Les nouvelles valeurs sont appliquées à toutes les pages sélectionnées lorsque vous sélectionnez **Terminé**.
-      * Lorsque le champ comporte plusieurs valeurs (Balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
+      * Lorsque le champ comporte plusieurs valeurs (des balises, par exemple), vous pouvez ajouter une nouvelle valeur ou supprimer une valeur commune.
    * Les champs qui sont communs, mais qui ont des valeurs différentes sur les différentes pages, sont indiqués par une valeur spéciale, telle que le texte. `<Mixed Entries>`.

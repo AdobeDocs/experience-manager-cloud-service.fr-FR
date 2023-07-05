@@ -1,11 +1,11 @@
 ---
 title: Votre boîte de réception
-description: Gestion de vos tâches avec la boîte de réception
+description: Gérez vos tâches avec la boîte de réception
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
 source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 74%
+ht-degree: 90%
 
 ---
 
@@ -21,7 +21,7 @@ Vous pouvez recevoir des notifications de diverses sections d’AEM, y compris d
       * Ils sont générés par l’étape **Participant** du workflow.
    * Éléments d’échec, pour permettre aux administrateurs de relancer l’étape qui a échoué.
 
-Vous recevez ces notifications dans votre propre boîte de réception où vous pouvez les afficher et agir.
+Vous recevez ces notifications dans votre propre boîte de réception où vous pouvez les afficher et prendre des mesures.
 
 >[!NOTE]
 >
@@ -33,7 +33,7 @@ Vous recevez ces notifications dans votre propre boîte de réception où vous p
 
 ## Boîte de réception dans l’en-tête {#inbox-in-the-header}
 
-Dans les deux consoles, le nombre actuel d’éléments présents dans votre boîte de réception est indiqué dans l’en-tête. L’indicateur peut également être ouvert pour permettre un accès rapide à la ou aux pages nécessitant une ou plusieurs actions ou un accès à la boîte de réception :
+Dans les deux consoles, le nombre actuel d’éléments présents dans votre boîte de réception est indiqué dans l’en-tête. L’indicateur peut également être ouvert pour permettre un accès rapide aux pages nécessitant des actions ou un accès à la boîte de réception :
 
 ![Aperçu de la boîte de réception dans l’en-tête](/help/sites-cloud/authoring/assets/inbox-header.png)
 
@@ -81,13 +81,13 @@ Vous pouvez :
 
 ### Boîte de réception – Paramètres d’affichage {#inbox-view-settings}
 
-Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres :
+Pour les deux vues (Liste et Calendrier), vous pouvez définir des paramètres :
 
 * **Vue Calendrier**
 
-  Pour **Vue Calendrier** vous pouvez configurer les éléments suivants :
+  Pour la **vue Calendrier**, vous pouvez configurer les éléments suivants :
 
-   * **Group by**
+   * **Regrouper par**
    * **Planification** ou **Aucun**
    * **Taille des cartes**
 
@@ -95,7 +95,7 @@ Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres 
 
 * **Vue Liste**
 
-  Pour **Mode Liste** vous pouvez configurer le mécanisme de tri :
+  Pour la **vue Liste**, vous pouvez configurer le mécanisme de tri :
 
    * **Tri**
    * **Ordre de tri**
@@ -154,7 +154,7 @@ Pour les deux modes (Liste et Calendrier), vous pouvez définir des paramètres 
 
 ## Création d’une tâche {#creating-a-task}
 
-Vous pouvez créer des tâches à partir de la boîte de réception :
+Vous pouvez créer des tâches à partir de la boîte de réception :
 
 1. Sélectionner **Créer**, puis **Tâche**.
 1. Renseignez les champs nécessaires dans les onglets **De base** et **Avancé** (seul le champ **Titre** est obligatoire, tous les autres sont facultatifs) :
@@ -182,7 +182,7 @@ Vous pouvez créer des tâches à partir de la boîte de réception :
 
 ## Création d’un projet {#creating-a-project}
 
-Pour certaines tâches, vous pouvez créer une [Projet](/help/sites-cloud/authoring/projects/overview.md) en fonction de cette tâche :
+Pour certaines tâches, vous pouvez créer un [projet](/help/sites-cloud/authoring/projects/overview.md) en fonction de cette tâche :
 
 1. Sélectionnez la tâche appropriée en appuyant/cliquant sur la miniature.
 
@@ -193,8 +193,8 @@ Pour certaines tâches, vous pouvez créer une [Projet](/help/sites-cloud/author
    >Les éléments de travail (d’un workflow) ne peuvent pas être utilisés pour créer un projet.
 
 1. Sélectionnez **Créer un projet** depuis la barre d’outils pour ouvrir l’assistant.
-1. Sélectionnez le modèle approprié, puis **Suivant**.
-1. Spécifiez les propriétés requises :
+1. Sélectionnez le modèle requis, puis **Suivant** :
+1. Spécifiez les propriétés requises :
 
    * **De base**
 
@@ -212,7 +212,7 @@ Pour certaines tâches, vous pouvez créer une [Projet](/help/sites-cloud/author
    >
    >Voir [Création d’un projet](/help/sites-cloud/authoring/projects/managing.md#creating-a-project) pour obtenir des informations complètes.
 
-1. Sélectionner **Créer** pour confirmer l’action.
+1. Sélectionnez **Créer** pour confirmer l’action.
 
 ## Filtrage des éléments dans la boîte de réception AEM {#filtering-items-in-the-aem-inbox}
 

@@ -5,7 +5,7 @@ exl-id: 84120856-fd1d-40f7-8df4-73d4cdfcc43b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1071'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -47,10 +47,10 @@ L’API REST Assets est disponible pour chaque installation prête à l’emplo
 
 ## API HTTP Assets {#assets-http-api}
 
-L’API HTTP Assets englobe les éléments suivants :
+L’API HTTP Assets englobe les éléments suivants :
 
-* API REST Assets
-* notamment la prise en charge des fragments de contenu ;
+* API REST Assets
+* Prise en charge des fragments de contenu
 
 L’implémentation actuelle de l’API HTTP Assets repose sur le style architectural **REST** et permet d’accéder au contenu (stocké dans AEM) via les opérations **CRUD** (Create, Read, Update, Delete) pour créer, lire, mettre à jour, supprimer.
 
@@ -244,9 +244,9 @@ L’utilisation peut varier selon que vous utilisez un environnement d’auteur 
 * Il est vivement recommandé de lier la création à une instance d’auteur (et il n’existe actuellement aucun moyen de répliquer un fragment pour publier à l’aide de cette API).
 * La diffusion est possible à partir des deux, car AEM diffuse le contenu demandé au format JSON uniquement.
 
-   * Le stockage et la diffusion depuis une instance d’auteur AEM doivent suffire pour les applications de bibliothèque multimédia situées derrière le pare-feu.
+   * Le stockage et la diffusion depuis une instance de création AEM doivent suffire pour les applications de bibliothèque de médias situées derrière le pare-feu.
 
-   * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
+   * Pour une diffusion web en direct, une instance de publication AEM est recommandée.
 
 >[!CAUTION]
 >

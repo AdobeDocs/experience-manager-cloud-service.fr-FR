@@ -5,7 +5,7 @@ exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '1802'
-ht-degree: 72%
+ht-degree: 85%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 72%
 
 Une fois que vous avez créé et révisé votre contenu dans l’environnement de création, l’objectif est de [le rendre disponible sur votre site web public ;](/help/sites-cloud/authoring/getting-started/concepts.md) (votre environnement de publication).
 
-On parle alors de publication d’une page. Lorsque vous souhaitez supprimer une page de l’environnement de publication, on parle d’annulation de publication. Lorsque vous publiez et annulez la publication, la page reste disponible dans l’environnement de création pour d’autres modifications jusqu’à ce que vous la supprimiez.
+On parle alors de publication d’une page. Lorsque vous souhaitez supprimer une page de l’environnement de publication, on parle de dépublication. Lorsque vous publiez et dépubliez, la page reste disponible dans l’environnement de création pour d’autres modifications jusqu’à ce que vous la supprimiez.
 
 Vous pouvez publier/dépublier une page immédiatement ou à une date/heure prédéfinies.
 
@@ -44,7 +44,7 @@ Selon votre emplacement, vous pouvez effectuer la publication :
 
 >[!NOTE]
 >
->Si vous ne disposez pas des privilèges requis pour publier une page spécifique :
+>Si vous ne disposez pas des privilèges requis pour publier une page spécifique :
 >
 >* Un workflow est déclenché pour informer la personne appropriée de votre demande de publication.
 >* Ce workflow a peut-être été personnalisé par votre équipe de développement.
@@ -96,9 +96,9 @@ La console Sites propose deux options de publication :
 
 #### Publication rapide {#quick-publish}
 
-L’option **Publication rapide** concerne les cas simples. Elle publie immédiatement la ou les pages sélectionnées sans aucune autre interaction. Pour cette raison, toute référence non publiée sera également publiée automatiquement.
+L’option **Publication rapide** concerne les cas simples. Elle publie immédiatement la ou les pages sélectionnées sans aucune autre interaction. Pour cette raison, toutes les références non publiées seront également publiées automatiquement.
 
-Pour publier une page avec publication rapide :
+Pour publier une page avec publication rapide :
 
 1. Sélectionnez la ou les pages dans la console Sites et cliquez ensuite sur le bouton **Publication rapide**.
 
@@ -132,9 +132,9 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    * **Planification**
 
-     Choisissez d’effectuer cette action maintenant ou ultérieurement.
+     Vous pouvez choisir d’effectuer cette action maintenant ou ultérieurement.
 
-     La publication différée lance un workflow pour publier la ou les pages sélectionnées à l’heure indiquée. A l’inverse, l’annulation de la publication différée lance un workflow pour annuler la publication de la ou des pages sélectionnées à un moment précis.
+     La publication différée lance un workflow pour publier la ou les pages sélectionnées à un moment précis. A l’inverse, la dépublication différée lance un workflow pour dépublier la ou les pages sélectionnées à un moment précis.
 
      >[!NOTE]
      >
@@ -205,7 +205,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
    >
    >Le **Workflows** s’affiche en fonction des droits dont dispose ou non votre utilisateur. Consultez la remarque précédente sur cette page concernant les privilèges de publication et la gestion de l’accès aux workflows et [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md) pour plus d’informations.
 
-   Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
+   Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
 
    * Définissez le titre du workflow.
    * conserver le package de workflow, à condition que le workflow dispose d’une prise en charge multi-ressource ;
@@ -256,11 +256,11 @@ De la même façon que vous [utilisez l’option Gérer la publication pour publ
 
 Lorsque vous avez saisi ou mis à jour un nombre considérable de pages de contenu (toutes résidant sous la même page racine), il peut s’avérer plus facile de publier l’arborescence entière en une seule action.
 
-Vous pouvez utiliser la variable [Gérer la publication](#manage-publication) sur la console sites.
+Vous pouvez utiliser l’option [Gérer la publication](#manage-publication) sur la console des sites.
 
 1. Dans la console Sites, sélectionnez la page racine de l’arborescence que vous souhaitez publier ou dépublier, puis sélectionnez **Gérer la publication**.
-1. L’assistant **Gérer la publication** démarre. Choisissez la publication ou l’annulation de la publication, puis sélectionnez **Suivant** pour continuer.
-1. Dans le **Portée** , sélectionnez la page racine et sélectionnez **Inclure les enfants**.
+1. L’assistant **Gérer la publication** démarre. Choisissez la publication ou la dépublication, puis sélectionnez **Suivant** pour continuer.
+1. À l’étape **Portée**, sélectionnez la page racine et sélectionnez **Inclure les enfants**.
 
    ![Sélection de pages dans la boîte de dialogue Gérer la publication](/help/sites-cloud/authoring/assets/publishing-manage-publication-select.png)
 

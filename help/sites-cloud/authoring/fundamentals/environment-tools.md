@@ -5,7 +5,7 @@ exl-id: cc3bd4cf-93bd-429d-9a2a-4a02a7b42f7c
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2153'
-ht-degree: 64%
+ht-degree: 95%
 
 ---
 
@@ -54,7 +54,7 @@ L’explorateur de composants est un onglet du panneau latéral (de même que l�
 
 ![Bascule du panneau latéral](/help/sites-cloud/authoring/assets/side-panel-toggle.png)
 
-Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche (sélectionnez l’option **Composants** si nécessaire). Une fois ouvert, vous pouvez parcourir tous les composants disponibles pour votre page.
+Lorsque vous ouvrez le panneau latéral, ce dernier glisse depuis le côté gauche (sélectionnez l’onglet **Ressources** si nécessaire). Une fois ouvert, vous pouvez parcourir tous les composants disponibles pour votre page.
 
 L’aspect et la gestion de l’explorateur dépendent du type d’appareil utilisé :
 
@@ -74,7 +74,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
   ![Explorateur de composants sur bureau](/help/sites-cloud/authoring/assets/component-browser-desktop.png)
 
-  Les composants sont représentés par
+  Les composants sont représentés par les éléments suivants :
 
    * Nom du composant
    * Groupe de composants (en gris)
@@ -95,7 +95,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
 >[!NOTE]
 >
->Un appareil mobile est détecté lorsque la largeur est inférieure à 1 024 px. Cela peut également être le cas pour une petite fenêtre de bureau.
+>Un appareil mobile est détecté lorsque la largeur est inférieure à 1 024 px. Cela peut également être le cas pour une petite fenêtre de bureau.
 
 ## Explorateur de ressources {#assets-browser}
 
@@ -115,7 +115,7 @@ Lorsque l’explorateur de ressources est ouvert, vous pouvez parcourir toutes l
 
 Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser jusqu’à l’emplacement souhaité. Il peut s’agir des éléments suivants :
 
-* Un composant existant du type approprié.
+* d’un composant existant du type approprié.
    * Par exemple, vous pouvez faire glisser une ressource de type image sur un composant Image ;
 * d’un [espace réservé](/help/sites-cloud/authoring/fundamentals/editing-content.md#component-placeholder) dans le système de paragraphes où créer un composant du type approprié.
    * Par exemple, vous pouvez faire glisser une ressource de type image sur le système de paragraphes afin de créer un composant Image.
@@ -124,13 +124,13 @@ Pour ajouter une ressource à votre page, sélectionnez-la et faites-la glisser 
 >
 >Vous pouvez agir ainsi pour des ressources et des types de composants spécifiques. Voir [Insertion d’un composant à l’aide de l’explorateur de ressources](/help/sites-cloud/authoring/fundamentals/editing-content.md#inserting-a-component-using-the-assets-browser) pour en savoir plus.
 
-Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouvez filtrer les ressources en procédant comme suit :
+Dans la barre d’outils supérieure de l’explorateur de ressources, vous pouvez filtrer les ressources en procédant comme suit :
 
 * Nom
 * Chemin
 * Type de ressource tel que les images, les vidéos, les documents, les paragraphes, les fragments de contenu et les fragments d’expérience
 * Caractéristiques des ressources, telles que l’orientation et le style
-   * Disponible uniquement pour certains types de ressources
+   * Disponible uniquement pour certains types de ressources.
 
 L’aspect et la gestion de l’explorateur dépendent du type d’appareil utilisé :
 
@@ -138,7 +138,7 @@ L’aspect et la gestion de l’explorateur dépendent du type d’appareil util
 
   L’explorateur de ressources couvre entièrement la page en cours de modification.
 
-  Pour ajouter une ressource à votre page, maintenez appuyé la ressource requise, puis déplacez-la vers la droite : l’explorateur de ressources se ferme pour afficher à nouveau la page, où vous pouvez ajouter la ressource au composant requis.
+  Pour ajouter une ressource à votre page, maintenez appuyée la ressource requise, puis déplacez-la vers la droite : l’explorateur de ressources se ferme pour afficher à nouveau la page, où vous pouvez ajouter la ressource au composant requis.
 
   ![Explorateur de ressources sur mobile](/help/sites-cloud/authoring/assets/assets-browser-mobile.png)
 
@@ -160,13 +160,13 @@ Si vous devez modifier rapidement une ressource, vous pouvez lancer [l’éditeu
 
 ## Arborescence de contenu {#content-tree}
 
-Le **Arborescence de contenu** donne un aperçu de tous les composants de la page dans une hiérarchie afin que vous puissiez voir en un coup d’oeil comment la page est composée.
+L’**Arborescence de contenu** donne une vue d’ensemble de tous les composants de la page dans une hiérarchie, afin que vous puissiez voir en un coup d’œil comment la page est composée.
 
 L’arborescence de contenu est un onglet du panneau latéral (ainsi que l’explorateur de composants et de ressources). Pour ouvrir (ou fermer) le panneau latéral, utilisez l’icône en haut à gauche de la barre d’outils :
 
 ![Bouton Arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree-button.png)
 
-Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Sélectionnez l’onglet **Arborescence de contenu** si nécessaire. Une fois ouvert, vous pouvez voir une représentation en arborescence de votre page ou modèle, de sorte qu’il soit plus facile de comprendre comment son contenu est structuré de manière hiérarchique. En outre, sur une page complexe, il est plus facile de passer d’un composant à l’autre de la page.
+Lorsque vous ouvrez le panneau latéral, il s’ouvre en glissant depuis le côté gauche. Sélectionnez l’onglet **Arborescence de contenu** si nécessaire. Une fois ouvert, vous pouvez voir une représentation en arborescence de votre page ou modèle. Il est ainsi plus simple de comprendre comment son contenu est structuré de manière hiérarchique. En outre, sur une page complexe, il est plus facile de passer d’un composant à l’autre de la page.
 
 ![Arborescence de contenu](/help/sites-cloud/authoring/assets/content-tree-editor.png)
 
@@ -180,7 +180,7 @@ Cliquez sur le chevron en regard d’un composant pour réduire ou développer c
 
 Cliquez sur le composant pour le mettre en surbrillance dans l’éditeur de page. Les actions disponibles dépendent du statut de la page :
 
-* Par exemple, une page de base :
+* Par exemple, une page de base :
 
   ![Arborescence de contenu mise en surbrillance](/help/sites-cloud/authoring/assets/content-tree-highlighted.png)
 
@@ -202,7 +202,7 @@ Si votre page contient des fragments de contenu, vous aurez dans ce cas égaleme
 
 ## Références {#references}
 
-**Références** affiche les connexions à la page sélectionnée :
+Les **références** affichent toutes les connexions avec la page sélectionnée :
 
 * Plans directeurs
 * Lancements
@@ -262,11 +262,11 @@ Le menu **Informations sur la page** peut en outre donner accès à des analyses
 
 ## Modes de page {#page-modes}
 
-Plusieurs modes sont possibles lors de la modification d’une page, ce qui permet d’effectuer différentes actions :
+Plusieurs modes sont possibles lors de la modification d’une page, ce qui permet d’effectuer différentes actions :
 
-* [Modifier](/help/sites-cloud/authoring/fundamentals/editing-content.md) : mode à utiliser lors de la modification du contenu de la page.
+* [Modifier](/help/sites-cloud/authoring/fundamentals/editing-content.md) : mode à utiliser lors de la modification du contenu de la page.
 * [Disposition](/help/sites-cloud/authoring/features/responsive-layout.md) : permet de créer et de modifier une disposition réactive en fonction du type d’appareil utilisé (si la page est basée sur un conteneur de mises en page).
-* [Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md) - accroître la pertinence du contenu grâce au ciblage et à la mesure sur tous les canaux.
+* [Ciblage](/help/sites-cloud/authoring/personalization/targeted-content.md) : accroît la pertinence du contenu grâce au ciblage et à la mesure sur tous les canaux.
 * [Timewarp](/help/sites-cloud/authoring/features/page-versions.md#timewarp) : permet d’afficher le statut d’une page à un moment donné.
 * [Statut de la Live Copy](/help/sites-cloud/authoring/fundamentals/editing-content.md#live-copy-status) : donne un aperçu rapide du statut de la Live Copy et des composants qui sont ou non hérités.
 * [Mode Développeur](/help/implementing/developing/tools/developer-mode.md)
@@ -287,7 +287,7 @@ Vous pouvez accéder à ces modes en cliquant sur les icônes dans le coin supé
 
 ## Sélection du chemin d’accès {#path-selection}
 
-Lors de la création, il est souvent nécessaire de sélectionner une autre ressource, par exemple lors de la définition d&#39;un lien vers une autre page ou ressource ou de la sélection d&#39;une image. Pour sélectionner facilement un chemin, [Champs de chemin](#path-fields) la saisie automatique de l’offre et la variable [explorateur de chemins d’accès](#path-browser) permet une sélection plus robuste.
+Lors de la création, il est souvent nécessaire de sélectionner une autre ressource, par exemple lors de la définition d’un lien vers une autre page ou ressource ou de la sélection d’une image. Pour sélectionner facilement un chemin d’accès, [Champs de chemin d’accès](#path-fields) permet la saisie automatique et l’[explorateur de chemins d’accès](#path-browser) permet une sélection plus robuste.
 
 ### Champs de chemin d’accès {#path-fields}
 
@@ -309,9 +309,9 @@ L’explorateur de chemins d’accès est organisé de la même façon que le [m
 
 ![Explorateur de chemins d’accès](/help/sites-cloud/authoring/assets/path-browser.png)
 
-* Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droite de la boîte de dialogue devient actif. Cliquez ou appuyez pour confirmer la sélection. **Annuler** pour abandonner.
+* Lorsqu’une ressource est sélectionnée, le bouton **Sélectionner** situé en haut à droite de la boîte de dialogue devient actif. Cliquez ou appuyez pour confirmer la sélection. **Annulez** pour abandonner.
 * Si le contexte permet la sélection de plusieurs ressources, la sélection d’une ressource active également le bouton **Sélectionner**, mais ajoute également le nombre de ressources sélectionnées en haut à droite de la fenêtre. Cliquez sur le **X** en regard du nombre pour tout désélectionner.
-* Lorsque vous parcourez l’arborescence, votre emplacement est reflété dans le chemin de navigation de la boîte de dialogue. Ces chemins de navigation peuvent également être utilisés pour passer rapidement dans la hiérarchie des ressources.
+* Lorsque vous parcourez l’arborescence, votre emplacement est reflété dans le chemin de navigation de la boîte de dialogue. Ces chemins de navigation peuvent également être utilisés pour accéder rapidement à la hiérarchie des ressources.
 * Vous pouvez à tout moment utiliser le champ de recherche en haut de la boîte de dialogue. Cliquez sur le **X** dans le champ de recherche pour effacer la recherche.
 * Pour affiner votre recherche, vous pouvez afficher les options de filtre et filtrer vos résultats en fonction du chemin d’accès.
 

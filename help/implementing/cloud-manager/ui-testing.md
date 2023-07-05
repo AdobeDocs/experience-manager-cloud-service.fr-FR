@@ -240,7 +240,7 @@ Si l’image Docker est implémentée avec d’autres langages de programmation 
 >
 >Utilisez des assertions au lieu de simplement consigner une erreur dans STDERR ou de renvoyer un code de sortie non nul. Autrement, votre pipeline de déploiement pourra continuer normalement.
 
-### Prérequis {#prerequisites}
+### Conditions préalables {#prerequisites}
 
 * Les tests dans Cloud Manager sont exécutés à l’aide d’un utilisateur administrateur technique.
 

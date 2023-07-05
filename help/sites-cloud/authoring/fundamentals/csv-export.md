@@ -34,7 +34,7 @@ L’assistant **Créer une exportation CSV** vous permet de sélectionner les é
       * Traduit
    * Analyses
       * Pages vues
-      * Visiteurs uniques
+      * Visiteurs et visiteuses uniques
       * Temps sur la page
 * Profondeur
    * Chemin d’accès parent

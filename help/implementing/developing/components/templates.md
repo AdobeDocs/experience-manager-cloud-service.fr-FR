@@ -5,7 +5,7 @@ exl-id: ea42fce9-9af2-4349-a4e4-547e6e8da05c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3294'
-ht-degree: 78%
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,7 @@ Avec les modèles de page, les éléments qui constituent une page sont isolés 
 Ce document :
 
 * offre un aperçu de la création d’un modèle de page ;
-* Décrit les tâches de l’administrateur/du développeur requises pour créer des modèles modifiables.
+* décrit les tâches d’administration ou de développement requises pour créer des modèles modifiables ;
 * décrit les bases techniques des modèles modifiables ;
 * décrit comment AEM évalue la disponibilité d’un modèle.
 
@@ -42,20 +42,20 @@ La création de modèles de page s’effectue essentiellement à l’aide de la 
 
 Lors de la création d’un modèle modifiable :
 
-1. Créez un [dossier des modèles](#template-folders). Cette opération n’est pas obligatoire, mais elle est recommandée.
+1. Créez un [dossier pour les modèles](#template-folders). Cette opération n’est pas obligatoire, mais elle est recommandée.
 1. Sélectionnez un [type de modèle](#template-type). Il est copié afin de créer la [définition du modèle](#template-definitions).
 
    >[!NOTE]
    >
    >Une sélection de types de modèles prêts à l’emploi est fournie. Vous pouvez également [créer vos propres types de modèles spécifiques à un site ;](#creating-template-types) si nécessaire.
 
-1. Configurez la structure, les stratégies de contenu, le contenu initial et la mise en page du nouveau modèle.
+1. Configurez la structure, les politiques de contenu, le contenu initial et la mise en page du nouveau modèle.
 
    **Structure**
 
    * La structure vous permet de définir les composants et le contenu de votre modèle.
-   * Les composants définis dans la structure du modèle ne peuvent pas être déplacés sur une page résultant du processus ni supprimés des pages créées.
-   * Si vous souhaitez que les auteurs de pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
+   * Les composants définis dans la structure du modèle ne peuvent pas être déplacés sur une page créée ni supprimés des pages créées.
+   * Si vous souhaitez que les personnes créant les pages puissent ajouter et supprimer des composants, ajoutez un système de paragraphes au modèle.
    * Les composants peuvent être déverrouillés (et reverrouillés) pour que vous puissiez définir le contenu initial.
 
    Pour plus d’informations sur la façon dont un créateur de modèles définit la structure, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#editing-a-template-structure-template-author).
@@ -77,11 +77,11 @@ Lors de la création d’un modèle modifiable :
    **Contenu initial**
 
    * Contenu initial définit le contenu qui s’affiche lors de la première création d’une page en fonction du modèle.
-   * Le contenu initial peut ensuite être modifié par les auteurs de pages.
+   * Le contenu initial peut ensuite être modifié par les personnes créant les pages.
 
    Pour plus d’informations sur la façon dont un créateur de modèles définit la structure, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#editing-a-template-initial-content-author).
 
-   Pour plus d’informations techniques sur le contenu initial, voir [Contenu initial](#initial-content) dans ce document.
+   Pour plus d’informations techniques sur le contenu initial, reportez-vous à la rubrique [Contenu initial](#initial-content) de ce document.
 
    **Disposition**
 
@@ -90,11 +90,11 @@ Lors de la création d’un modèle modifiable :
 
    Pour plus d’informations sur la façon dont le créateur d’un modèle définit la mise en page de ce dernier, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#editing-a-template-layout-template-author).
 
-   Pour plus d’informations techniques sur la mise en page d’un modèle, voir [Disposition](#layout) dans ce document.
+   Pour plus d’informations techniques sur la mise en page d’un modèle, reportez-vous à la rubrique [mise en page](#layout) de ce document.
 
 1. Activez le modèle, puis autorisez-le pour des arborescences de contenu spécifiques.
 
-   * Un modèle peut être activé ou désactivé pour le rendre disponible ou indisponible pour les auteurs de pages.
+   * Un modèle peut être activé ou désactivé afin de le rendre disponible ou indisponible pour les personnes créant les pages.
    * Un modèle peut être rendu disponible ou indisponible pour certaines branches de la page.
 
    Pour plus d’informations sur la façon dont un créateur de modèles active un modèle, voir [Création de modèles de page](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author).
@@ -163,14 +163,14 @@ Une liste de toutes les entrées autorisées est créée. Si des configurations 
 
 Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes :
 
-* par programmation ou avec CRXDE Lite
+* Par programmation ou avec CRXDE Lite
 * Utilisation de l’[explorateur de configurations](/help/implementing/developing/introduction/configurations.md#using-configuration-browser)
 
 ## Utilisation de CRXDE Lite {#using-crxde-lite}
 
 1. Un nouveau dossier (sous /conf) peut être créé pour votre instance, soit par programmation soit avec CRXDE Lite.
 
-   La structure suivante doit être utilisée :
+   La structure suivante doit être utilisée :
 
    ```xml
    /conf
@@ -181,7 +181,7 @@ Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes 
                    policies [cq:Page]
    ```
 
-1. Vous pouvez ensuite définir les propriétés suivantes sur le noeud racine du dossier :
+1. Vous pouvez ensuite définir les propriétés suivantes sur le nœud racine du dossier :
 
    `<your-folder-name> [sling:Folder]`
 
@@ -204,7 +204,7 @@ Pour créer un dossier, vous pouvez effectuer l’une des opérations suivantes 
 1. Cliquez sur **Créer**.
 1. Les champs suivants doivent être configurés dans la boîte de dialogue **Créer une configuration** :
 
-   * **Titre**: Indiquez un titre pour le dossier de configuration.
+   * **Titre** : indiquez un titre pour le dossier de configuration.
    * **Modèles modifiables**: Cochez cette case pour autoriser les modèles modifiables dans ce dossier.
 
 1. Cliquez sur **Créer**
@@ -235,7 +235,7 @@ Le tableau suivant présente les autorisations nécessaires à l’édition de m
  <tbody>
   <tr>
    <th>Chemin</th>
-   <th>Rôle / Groupe</th>
+   <th>Rôle/Groupe</th>
    <th>Autorisations<br /> </th>
    <th>Description</th>
   </tr>
@@ -291,24 +291,24 @@ Ce groupe `template-authors` par défaut couvre les configurations de projet dan
 
 Lors de la création d’un modèle, vous devez indiquer un type de modèle :
 
-* Les types de modèle fournissent efficacement des modèles pour un modèle. Lors de la création d&#39;un modèle, la structure et le contenu initial du type de modèle sélectionné sont utilisés pour créer le nouveau modèle.
+* Les types de modèle fournissent de façon efficace des modèles pour un modèle. Lors de la création d&#39;un modèle, la structure et le contenu initial du type de modèle sélectionné sont utilisés pour créer le nouveau modèle.
 
    * Le type de modèle est copié pour créer le modèle.
    * Une fois la copie effectuée, la seule connexion entre le modèle et le type de modèle est une référence statique à des fins d’information.
 
-* Les types de modèle permettent de définir :
+* Les types de modèle permettent de définir :
 
-   * Type de ressource du composant de page.
-   * Stratégie du noeud racine qui définit les composants autorisés dans l’éditeur de modèles.
+   * Le type de ressource du composant de page.
+   * La politique du nœud racine qui définit les composants autorisés dans l’éditeur de modèles.
    * Il est recommandé de définir les points d’arrêt pour la grille réactive et la configuration de l’émulateur mobile au niveau du type d’émulateur.
 
 * AEM fournit une petite sélection de types de modèle prêts à l’emploi tels que Page HTML5 et Page de formulaire adaptatif.
 
    * Des exemples supplémentaires sont fournis dans le [tutoriel WKND](/help/implementing/developing/introduction/develop-wknd-tutorial.md).
 
-* Les types de modèle sont généralement définis par les développeurs.
+* Les types de modèle sont généralement définis par les développeurs et les développeuses.
 
-Les types de modèles d&#39;usine sont stockés sous :
+Les types de modèles prêts à l’emploi sont stockés sous :
 
 * `/libs/settings/wcm/template-types`
 
@@ -356,7 +356,7 @@ When creating a new editable template, the value is copied from the template typ
 Si vous avez créé un modèle qui peut servir de base pour d’autres modèles, vous pouvez le copier en tant que type de modèle.
 
 1. Créez un modèle qui servira de base pour votre type de modèle. Pour ce faire, procédez comme vous le feriez pour n’importe quel modèle de page, [en suivant ces instructions](/help/sites-cloud/authoring/features/templates.md#creating-a-new-template-template-author).
-1. À l’aide de CRXDE Lite, copiez le modèle nouvellement créé à partir du `templates` au noeud `template-types` sous le noeud [dossier de modèles](#template-folders).
+1. À l’aide de CRXDE Lite, copiez le nouveau modèle créé depuis le nœud `templates` dans le nœud `template-types` sous le [dossier de modèles](#template-folders).
 1. Supprimez le modèle du nœud `templates` sous le [dossier de modèles](#template-folders).
 1. Dans la copie du modèle qui se trouve sous le nœud `template-types`, supprimez toutes les propriétés `cq:template` et `cq:templateType` de tous les nœuds `jcr:content`.
 
@@ -434,10 +434,10 @@ Définit la structure de la page créée :
 
 * Est fusionné avec le contenu (`/initial`) lors de la création d’une page.
 * Les modifications apportées à la structure sont répercutées dans toutes les pages créées avec le modèle.
-* Le `root` ( `structure/jcr:content/root`) définit la liste des composants disponibles dans la page qui en résulte.
+* Le nœud `root` (`structure/jcr:content/root`) définit la liste des composants qui seront disponibles dans la page créée.
    * Les composants définis dans la structure du modèle ne peuvent être ni déplacés ni supprimés dans les pages créées.
    * Une fois qu’un composant est déverrouillé, la variable `editable` est définie sur `true`.
-   * Une fois qu’un composant qui contient déjà du contenu est déverrouillé, ce contenu est déplacé vers la balise `initial` branche.
+   * Dès qu’un composant ayant déjà du contenu est déverrouillé, son contenu est déplacé vers la branche `initial`.
 
 * Le nœud `cq:responsive` contient des définitions pour la mise en page réactive.
 
@@ -459,7 +459,7 @@ Lorsque vous [modifiez un modèle, vous pouvez définir la mise en page](/help/s
 
 ### Politiques de contenu {#content-policies}
 
-Les politiques de contenu définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle). Les stratégies de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
+Les politiques de contenu définissent les propriétés de conception d’un composant. Par exemple, les composants disponibles ou les dimensions minimales/maximales. Elles s’appliquent au modèle (et aux pages créées avec le modèle). Les politiques de contenu peuvent être créées et sélectionnées dans l’éditeur de modèles.
 
 * La propriété `cq:policy`, sur le nœud `root`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
@@ -480,20 +480,20 @@ Les politiques de page vous permettent de définir la [politique de contenu](#co
 
 ### Activation et autorisation d’un modèle à utiliser {#enabling-and-allowing-a-template-for-use}
 
-1. **Activation du modèle**
+1. **Activer le modèle**
 
    Pour qu’un modèle puisse être utilisé, il doit être activé par :
 
-   * [Activation du modèle](/help/sites-cloud/authoring/features/templates.md) de la **Modèles** console.
+   * [Activer le modèle](/help/sites-cloud/authoring/features/templates.md) à partir de la console des **Modèles**.
 
    * Définir la propriété de statut sur le nœud `jcr:content`.
 
       * Par exemple, sous :
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
-      * Définissez la propriété :
+      * Définissez la propriété :
 
-         * Nom : status
+         * Nom : statut
          * Type : chaîne
          * Valeur : `enabled`
 
@@ -529,18 +529,18 @@ Le schéma ci-dessus montre la corrélation entre les modèles, le contenu et le
 * Modèle – Lots OSGi – Les [lots OSGi](/help/implementing/deploying/configuring-osgi.md) mettent en œuvre la fonctionnalité.
 * Vue – `/apps/<my-site>/components` – Dans les environnements de création et de publication, le contenu est rendu par des composants.
 
-Lors du rendu d’une page :
+Lors du rendu d’une page :
 
 * **Modèles** :
 
-   * Le `cq:template` de sa propriété `jcr:content` est référencé pour accéder au modèle qui correspond à cette page.
+   * La propriété `cq:template` de son nœud `jcr:content` sera référencée afin d’accéder au modèle correspondant à cette page.
 
 * **Composants** :
 
    * Le composant de page fusionnera l’arborescence `structure/jcr:content` du modèle avec l’arborescence `jcr:content` de la page.
       * Le composant de page permet uniquement à l’auteur de modifier les noeuds de la structure de modèle qui ont été marqués comme modifiables (et tous les enfants).
       * Lors du rendu d’un composant sur une page, le chemin relatif de ce composant est extrait de la propriété `jcr:content` Noeud; le même chemin sous `policies/jcr:content` du modèle est ensuite recherché.
-         * Le `cq:policy` de ce noeud pointe vers la stratégie de contenu proprement dite (c’est-à-dire qu’il contient la configuration de conception de ce composant).
+         * La propriété `cq:policy` de ce nœud pointe vers la politique de contenu proprement dite (en d’autres termes, elle contient la configuration de conception de ce composant).
             * De cette manière, vous pouvez disposer de plusieurs modèles qui réutilisent les mêmes configurations de politique de contenu.
 
 ### Disponibilité des modèles {#template-availability}

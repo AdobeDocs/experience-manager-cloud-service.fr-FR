@@ -5,7 +5,7 @@ exl-id: ab6e7fe9-a25d-4351-a005-f4466cc0f40e
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2144'
-ht-degree: 55%
+ht-degree: 63%
 
 ---
 
@@ -32,9 +32,9 @@ Les couches de logique commerciale et de référentiel de contenu sous-jacentes 
 * Sling
 * OSGi
 
-## Référentiel de contenu Java™ {#java-content-repository}
+## Java™ Content Repository {#java-content-repository}
 
-La norme Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), spécifie une méthode indépendante du fournisseur et de l’implémentation pour accéder au contenu de manière bidirectionnelle à un niveau granulaire au sein d’un référentiel de contenu. La spécification est gérée par Adobe Research (Suisse) AG.
+La norme Java™ Content Repository (JCR), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), spécifie un moyen, indépendant du fournisseur et de l’implémentation, d’accéder au contenu d’un référentiel de contenu à un niveau granulaire et de manière bidirectionnelle. La spécification est gérée par Adobe Research (Suisse) AG.
 
 Le package [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html), `javax.jcr.*`, est utilisé pour l’accès direct et la manipulation du contenu du référentiel.
 
@@ -94,7 +94,7 @@ https://myhost/tools/spy.printable.a4.html/a/b?x=12
 
 Vous pouvez le diviser en plusieurs parties composites :
 
-| protocol | host |  | content path | selectors | extension |  | suffixe |  | params |
+| protocol | host |  | content path | selectors | Extension |  | Suffixe |  | params |
 |---|---|---|---|---|---|---|---|---|---|
 | `https://` | `myhost` | `/` | `tools/spy` | `.printable.a4.` | `html` | `/` | `a/b` | `?` | `x=12` |
 
@@ -121,7 +121,7 @@ Avec Sling, vous spécifiez le script à appliquer pour le rendu d’une entité
 
 #### Mappage des requêtes avec les ressources {#mapping-requests-to-resources}
 
-La requête est décomposée et les informations nécessaires sont extraites. Le référentiel est recherché pour la ressource demandée (noeud de contenu) :
+La requête est décomposée et les informations nécessaires sont extraites. Recherche du référentiel pour la ressource demandée (nœud de contenu) :
 
 * D’abord, Sling vérifie si un nœud existe à l’emplacement spécifié dans la requête. Par exemple, `../content/corporate/jobs/developer.html`
 * Si aucun nœud n’est identifié, l’extension est supprimée et la recherche recommence. Par exemple, `../content/corporate/jobs/developer`
@@ -156,10 +156,10 @@ En reprenant l’exemple ci-dessus, si le `sling:resourceType` est `hr/jobs` alo
 * les requêtes GET/HEAD et les URL se terminant par `.html` (types de requête par défaut, format par défaut)
    * Le script est `/apps/hr/jobs/jobs.esp`; la dernière section de la variable `sling:resourceType` forme le nom du fichier.
 * Requêtes POST (tous les types de requête, à l’exclusion des GET/HEAD, le nom de la méthode doit être en majuscules)
-   * POST est utilisé dans le nom du script.
+   * POST sera utilisé dans le nom du script.
    * Le script est `/apps/hr/jobs/jobs.POST.esp`.
 * URL dans d’autres formats, qui ne se terminent pas par `.html`
-   * Par exemple, `../content/corporate/jobs/developer.pdf`
+   * Par exemple, `../content/corporate/jobs/developer.pdf`.
    * Le script est `/apps/hr/jobs/jobs.pdf.esp`; le suffixe est ajouté au nom du script.
 * URL avec sélecteurs
    * Les sélecteurs peuvent être utilisés pour afficher le même contenu dans un autre format. Par exemple, une version compatible avec l’imprimante, un flux rss ou un résumé.
@@ -175,7 +175,7 @@ En reprenant l’exemple ci-dessus, si le `sling:resourceType` est `hr/jobs` alo
    * l’emplacement `/apps/sling/servlet/errorhandler` pour les scripts personnalisés ;
    * ou l’emplacement du script standard `/libs/sling/servlet/errorhandler/404.jsp`.
 
-Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est précise, mieux elle est; en d’autres termes, plus le sélecteur correspond mieux, quelle que soit l’extension de requête ou la correspondance de nom de méthode.
+Si plusieurs scripts s’appliquent pour une requête donnée, celui avec la meilleure correspondance est sélectionné. Plus une correspondance est précise, mieux c’est. En d’autres termes, plus il y a de correspondances avec les sélecteurs, mieux c’est, indépendamment de toute correspondance entre l’extension de la requête ou le nom de la méthode.
 
 Par exemple, envisagez une demande d’accès à la ressource
 
@@ -233,7 +233,7 @@ La raison en est la suivante : `/y` contient la variable `sling:resourceSuperTyp
 
 Dans Sling, les scripts ne peuvent pas être appelés directement, car ils violeraient le concept strict d’un serveur REST ; vous mélangeriez des ressources et des représentations.
 
-Si vous appelez la représentation (le script) directement, vous masquez la ressource dans le script, donc le framework (Sling) ne peut plus la détecter. Vous perdez ainsi certaines fonctionnalités :
+Si vous appelez la représentation (le script) directement, vous masquez la ressource dans le script, donc le framework (Sling) ne peut plus la détecter. Vous perdez ainsi certaines fonctionnalités :
 
 * Le traitement automatique des méthodes http autres que GET, y compris :
    * POST, PUT, DELETE qui est géré avec une implémentation par défaut Sling
@@ -259,7 +259,7 @@ OSGi désigne une architecture permettant de développer et de déployer des app
 * Services mis en œuvre dans le conteneur
 * Un contrat entre le conteneur et votre application
 
-Ces services et contrats fournissent une architecture qui permet à des éléments individuels de se découvrir dynamiquement les uns les autres à des fins de collaboration.
+Ces services et contrats fournissent une architecture qui permet à des éléments particuliers de se découvrir dynamiquement les uns les autres à des fins de collaboration.
 
 Une structure OSGi vous offre ensuite un chargement/déchargement dynamique, une configuration et un contrôle de ces lots, sans nécessiter de redémarrage.
 
@@ -269,7 +269,7 @@ Une structure OSGi vous offre ensuite un chargement/déchargement dynamique, une
 >
 >En particulier, la page Basic Education (formation de base) contient un ensemble de présentations et de tutoriels.
 
-Cette architecture vous permet d’étendre Sling avec des modules spécifiques à l’application. Sling, et donc AEM, utilise l’implémentation [Apache Felix](https://felix.apache.org/documentation/index.html) d’OSGi. Il s’agit de deux groupes OSGi s’exécutant dans une structure OSGi.
+Cette architecture vous permet d’étendre Sling avec des modules spécifiques à l’application. Sling, et donc AEM, utilise l’implémentation [Apache Felix](https://felix.apache.org/documentation/index.html) d’OSGi. Les deux sont des groupes de lots OSGi qui s’exécutent dans un framework OSGi.
 
 Cette fonctionnalité vous permet d’effectuer les actions suivantes sur l’un des packages de votre installation :
 
@@ -285,7 +285,7 @@ Voir [Configuration d’OSGi pour AEM as a Cloud Service](/help/implementing/dep
 
 ## Structure dans le référentiel {#structure-within-the-repository}
 
-La liste suivante donne un aperçu de la structure que vous voyez dans le référentiel.
+La liste suivante propose une vue d’ensemble de la structure que vous verrez dans le référentiel.
 
 * `/apps` – Application connexe qui inclut des définitions de composants spécifiques à votre site web. Les composants que vous développez peuvent être basés sur les composants prêts à l’emploi disponibles dans `/libs/core/wcm/components`.
 * `/content` – Contenu créé pour votre site web.
@@ -299,4 +299,4 @@ La liste suivante donne un aperçu de la structure que vous voyez dans le réfé
 >
 >Les modifications apportées à cette structure, ou aux fichiers qu’elle contient, doivent l’être prudemment. Assurez-vous de bien comprendre les implications de tout changement apporté.
 >
->Ne modifiez rien dans la variable `/libs` chemin d’accès. Pour la configuration et d’autres modifications, copiez l’élément depuis `/libs` to `/apps` et apportez toute modification dans `/apps`.
+>Ne modifiez rien dans le chemin d’accès `/libs`. Pour la configuration et d’autres modifications, copiez l’élément depuis `/libs` to `/apps` et apportez toute modification dans `/apps`.

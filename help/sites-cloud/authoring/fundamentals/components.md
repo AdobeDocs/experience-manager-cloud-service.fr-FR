@@ -5,7 +5,7 @@ exl-id: a8118329-1330-49b0-a3f8-a27774f1c5df
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '347'
-ht-degree: 72%
+ht-degree: 83%
 
 ---
 
@@ -23,9 +23,9 @@ AEM est fourni avec tout un éventail de composants prêts à l’emploi qui pro
 
 ## Utilisation générale {#general-usage}
 
-Les composants sont disponibles sur la page **Composants** dans le panneau latéral de l’éditeur de page lorsque [modification d’une page](/help/sites-cloud/authoring/fundamentals/editing-content.md).
+Les composants sont disponibles dans l’onglet **Composants** du panneau latéral de l’éditeur de page lors de la [modification d’une page](/help/sites-cloud/authoring/fundamentals/editing-content.md).
 
-Vous pouvez sélectionner un composant et le faire glisser vers l’emplacement souhaité sur votre page. Vous pouvez ensuite la modifier à l’aide de :
+Vous pouvez sélectionner un composant et le faire glisser vers l’emplacement souhaité sur votre page. Vous pouvez ensuite le modifier à l’aide des méthodes suivantes :
 
 * [Configurer les propriétés](/help/sites-cloud/authoring/fundamentals/page-properties.md)
 * [Modifier le contenu](/help/sites-cloud/authoring/fundamentals/editing-content.md)

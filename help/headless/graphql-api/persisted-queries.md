@@ -18,7 +18,7 @@ Les requêtes persistantes sont des requêtes GraphQL qui sont créées et stock
 >
 >Des requêtes persistantes sont recommandées. Voir [Bonnes pratiques de requête GraphQL (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) pour plus d’informations et la configuration Dispatcher associée.
 
-L’[IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) est disponible dans AEM pour que vous puissiez le développer, le tester et conserver vos requêtes GraphQL, avant de [le transférer vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, pour la [personnalisation du cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; consultez l’exemple cURL fourni dans [Conservation d’une requête GraphQL](#how-to-persist-query).
+L’[IDE GraphiQL](/help/headless/graphql-api/graphiql-ide.md) est disponible dans AEM pour que vous puissiez le développer, le tester et conserver vos requêtes GraphQL, avant de [le transférer vers votre environnement de production](#transfer-persisted-query-production). Dans les cas qui nécessitent une personnalisation (par exemple, pour la [personnalisation du cache](/help/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) vous pouvez utiliser l’API ; consultez l’exemple de cURL fourni dans [Conservation d’une requête GraphQL](#how-to-persist-query).
 
 ## Requêtes et points d’entrée persistants {#persisted-queries-and-endpoints}
 

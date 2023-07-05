@@ -5,7 +5,7 @@ exl-id: 9dc33677-141f-47e5-a01e-6c7488686314
 source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
 workflow-type: tm+mt
 source-wordcount: '2046'
-ht-degree: 77%
+ht-degree: 87%
 
 ---
 
@@ -20,13 +20,13 @@ Dans Adobe Experience Manager as a Cloud Service, un fragment d’expérience
 
 Un fragment d’expérience :
 
-* Fait partie d’une expérience (page).
-* Peut être utilisé sur plusieurs pages.
-* est basé sur un modèle (modifiable uniquement) pour définir la structure et les composants ;
+* fait partie d’une expérience (page).
+* peut être utilisé sur plusieurs pages.
+* est basé sur un modèle (modifiable uniquement) pour définir la structure et les composants.
 * Ce modèle est utilisé pour créer la *page racine* du fragment d’expérience.
-* est constitué d’un ou de plusieurs composants, avec mise en page, dans un système de paragraphes ;
-* Peut contenir d’autres fragments d’expérience.
-* Peut être combiné à d’autres composants (y compris d’autres fragments d’expérience) pour former une page complète (expérience).
+* est constitué d’un ou de plusieurs composants, avec disposition, dans un système de paragraphes.
+* peut contenir d’autres fragments d’expérience.
+* peut être combiné à d’autres composants (y compris d’autres fragments d’expérience) pour former une page complète (expérience).
 * Il est possible de créer une ou plusieurs variations en fonction de la page racine.
 * Ces variations peuvent partager du contenu et des composants.
 * peut être scindé en blocs de création utilisables dans plusieurs variations du fragment.
@@ -51,7 +51,7 @@ Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, m
 
 >[!NOTE]
 >
->Dans le cas des fragments d’expérience, l’accès en écriture exige que le compte utilisateur soit enregistré dans le groupe :
+>Dans le cas des fragments d’expérience, l’accès en écriture exige que le compte d’utilisateur soit enregistré dans le groupe :
 >
 >* `experience-fragments-editors`
 >
@@ -59,7 +59,7 @@ Les auteurs souhaitent utiliser AEM uniquement dans une optique de création, m
 
 ## Quand utiliser les fragments d’expérience ? {#when-should-you-use-experience-fragments}
 
-Les fragments d’expérience doivent être utilisés :
+Les fragments d’expérience doivent être utilisés :
 
 * Lorsque vous souhaitez réutiliser des expériences.
    * Expériences réutilisées avec un même contenu ou un contenu similaire.
@@ -184,7 +184,7 @@ Pour créer un fragment d’expérience :
 
 1. Renseignez les **Propriétés** de votre **Fragment d’expérience**.
 
-   A **Titre** est obligatoire. Si la variable **Nom** n’est pas renseigné, il est dérivé de la variable **Titre**.
+   Le **titre** est obligatoire. Si la variable **Nom** n’est pas renseigné, il est dérivé de la variable **Titre**.
 
    ![Propriétés du fragment d’expérience](/help/sites-cloud/authoring/assets/xf-04.png)
 
@@ -207,9 +207,9 @@ L’Éditeur de fragments d’expérience offre des fonctionnalités similaires 
 
 >[!NOTE]
 >
->Voir [Modification du contenu de la page](/help/sites-cloud/authoring/fundamentals/editing-content.md) pour plus d’informations sur l’utilisation de l’éditeur de page.
+>Voir [Modifier le contenu d’une page](/help/sites-cloud/authoring/fundamentals/editing-content.md) pour plus d’informations sur l’utilisation de l’éditeur de page.
 
-L’exemple de procédure suivant illustre la création d’un teaser pour un produit :
+L’exemple de procédure suivant illustre la création d’un teaser pour un produit :
 
 1. Faites glisser le composant requis à partir de l’[Explorateur de composants](/help/sites-cloud/authoring/fundamentals/environment-tools.md#components-browser).
 
@@ -225,19 +225,19 @@ Par exemple : `http://<host>:<port>/editor.html/content/experience-fragments/wk
 
 ## Création d’une variation de fragment d’expérience {#creating-an-experience-fragment-variation}
 
-Vous pouvez créer des variantes de votre fragment d’expérience en fonction de vos besoins :
+Vous pouvez créer des variantes de votre fragment d’expérience en fonction de vos besoins :
 
-1. Ouvrez votre fragment pour [édition](#editing-your-experience-fragment).
+1. Ouvrez votre fragment pour [modification](#editing-your-experience-fragment).
 1. Ouvrez l’onglet **Variations**.
 
    ![Création d’une variation de fragment d’expérience](/help/sites-cloud/authoring/assets/xf-06.png)
 
-1. **Créer** vous permet de créer les éléments suivants :
+1. **Créer** vous permet de créer les éléments suivants :
 
    * **Variation**
    * **Variation en tant que Live Copy**.
 
-1. Définissez les propriétés requises :
+1. Définissez les propriétés requises :
 
    * **Modèle**
    * **Titre**
@@ -254,9 +254,9 @@ Vous pouvez créer des variantes de votre fragment d’expérience en fonction d
 
 ## Utilisation du fragment d’expérience {#using-your-experience-fragment}
 
-Vous pouvez désormais utiliser votre fragment d’expérience lors de la création de vos pages :
+Vous pouvez désormais utiliser votre fragment d’expérience lors de la création de vos pages :
 
-1. Ouvrez une page à modifier.
+1. Ouvrez la page à modifier.
 
 1. Créez une instance du composant Fragment d’expérience dans le système de paragraphes de la page :
 
@@ -279,9 +279,9 @@ Vous pouvez sélectionner un ou plusieurs composants pour créer un bloc de cré
 
 ### Création d’un bloc de création {#creating-a-building-block}
 
-Pour créer un bloc de création :
+Pour créer un bloc de création :
 
-1. Dans l’éditeur de fragments d’expérience, sélectionnez les composants à réutiliser :
+1. Dans l’éditeur de fragments d’expérience, sélectionnez les composants à réutiliser :
 
    ![Sélection du composant pour le bloc de création](/help/sites-cloud/authoring/assets/xf-09.png)
 
@@ -299,7 +299,7 @@ Pour créer un bloc de création :
 
 #### Gestion d’un bloc de création {#managing-a-building-block}
 
-Votre bloc de création est visible dans la variable **Blocs de création** . Pour chaque bloc, les actions disponibles sont les suivantes :
+Votre bloc de création est visible dans l’onglet **Blocs de création**. Pour chaque bloc, les actions disponibles sont les suivantes :
 
 * **Atteindre l’élément principal** : ouvre la variation de la page racine dans un nouvel onglet.
 * **Renommer**

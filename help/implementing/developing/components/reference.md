@@ -459,7 +459,7 @@ Pour les développeurs, il est préférable d’accéder facilement à la docume
 
 * sa description ;
 * son utilisation prévue ;
-* structure et propriétés du contenu
+* la structure et les propriétés du contenu
 * API exposées et points d’extension
 * Etc.
 

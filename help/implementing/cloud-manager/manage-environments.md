@@ -5,7 +5,7 @@ exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '2274'
-ht-degree: 36%
+ht-degree: 37%
 
 ---
 
@@ -20,7 +20,7 @@ Un utilisateur disposant des autorisations requises peut créer les types d’en
 
 * **Production et évaluation** : les environnements de production et d’évaluation sont disponibles par paire et sont utilisés respectivement à des fins de production et de test.
 
-* **Développement** - Un environnement de développement peut être créé à des fins de développement et de test et peut uniquement être associé à des pipelines hors production.
+* **Développement** : vous pouvez créer un environnement de développement à des fins de développement et de test qui sera associé uniquement aux pipelines hors production.
 
 * **Développement rapide** - Un environnement de développement rapide (RDE) permet aux développeurs de déployer et de passer rapidement en revue les modifications, en minimisant le temps nécessaire pour tester les fonctionnalités dont il est prouvé qu’elles fonctionnent dans un environnement de développement local. Voir [la documentation sur l’environnement de développement rapide ;](/help/implementing/developing/introduction/rapid-development-environments.md) pour plus d’informations sur l’utilisation d’un RDE.
 
