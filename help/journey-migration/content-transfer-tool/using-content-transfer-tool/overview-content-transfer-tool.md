@@ -5,7 +5,7 @@ exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '645'
-ht-degree: 77%
+ht-degree: 82%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 77%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_overview"
 >title="Présentation"
->abstract="L’outil de transfert de contenu est un outil développé par Adobe qui peut être utilisé pour lancer la migration de contenu existant d’une instance d’AEM source (on-premise ou AMS) vers l’instance AEM Cloud Service cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
+>abstract="Développé par Adobe, l’outil de transfert de contenu est utilisé pour délencher la migration de contenu existant entre une instance AEM source (on-premise ou AMS) et une instance AEM Cloud Service cible. Cet outil transfère également automatiquement les entités principales (utilisateurs ou groupes)."
 >additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/guidelines-best-practices-content-transfer-tool.html?lang=fr" text="Conseils et bonnes pratiques"
 
 L’outil de transfert de contenu est un outil développé par Adobe qui peut être utilisé pour lancer la migration de contenu existant d’une instance d’AEM source (on-premise ou AMS) vers l’instance AEM Cloud Service cible.

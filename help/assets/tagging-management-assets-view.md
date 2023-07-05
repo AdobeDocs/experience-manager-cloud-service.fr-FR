@@ -1,10 +1,10 @@
 ---
 title: Comment gérer les balises dans la vue Assets ?
-description: Découvrez comment gérer les balises dans la vue Assets. Les balises vous aident à classer les ressources qui peuvent être parcourues et recherchées plus efficacement.
+description: Découvrez comment gérer les balises dans la vue Assets. Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces.
 source-git-commit: bdbe47a8f06d2ec1cd75103905677fcd3955632d
 workflow-type: tm+mt
 source-wordcount: '1422'
-ht-degree: 1%
+ht-degree: 8%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 1%
 >[!CONTEXTUALHELP]
 >id="assets_taxonomy_management"
 >title="Gérer les balises"
->abstract="Les balises vous aident à classer les ressources qui peuvent être parcourues et recherchées plus efficacement. Les administrateurs ont la possibilité d’utiliser la structure de balisage hiérarchique, qui facilite l’application des métadonnées pertinentes, la classification des ressources, la prise en charge de la recherche, la réutilisation des balises, l’amélioration de la visibilité, etc."
+>abstract="Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Les administrateurs ont la possibilité d’utiliser la structure de balisage hiérarchique, qui facilite l’application des métadonnées pertinentes, la classification des ressources, la prise en charge de la recherche, la réutilisation des balises, l’amélioration de la visibilité, etc."
 
-Les balises vous aident à classer les ressources qui peuvent être parcourues et recherchées plus efficacement. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows.
+Les balises permettent de classer les ressources pour une navigation et une recherche plus efficaces. Le balisage permet de propager la taxonomie appropriée à d’autres utilisateurs et workflows.
 
 Des listes plats de vocabulaires contrôlés peuvent devenir ingérables au fil du temps. Les administrateurs ont la possibilité d’utiliser la structure de balisage hiérarchique, qui facilite l’application des métadonnées pertinentes, la classification des ressources, la prise en charge de la recherche, la réutilisation des balises, l’amélioration de la visibilité, etc.
 

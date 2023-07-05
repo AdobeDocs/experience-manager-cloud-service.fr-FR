@@ -5,7 +5,7 @@ exl-id: d338a7bd-adfe-486a-badf-348acd6018d0
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '487'
-ht-degree: 43%
+ht-degree: 50%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 43%
 >[!CONTEXTUALHELP]
 >id="aemcloud_alignkpis"
 >title="Alignement des indicateurs de performance clés"
->abstract="Dans un monde numérique, il est possible de presque tout mesurer. Le choix des indicateurs de performance clés appropriés pour votre mise en oeuvre Adobe Experience Manager permet à votre équipe de se concentrer sur ce qui compte le plus."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=en" text="Évaluation des indicateurs de performance clés"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=en" text="Choix de la bonne équipe"
+>abstract="Dans un monde numérique, il est possible de presque tout mesurer. Choisir des KPI appropriés pour votre mise en œuvre d’Adobe Experience Manager aide votre équipe à se concentrer sur ce qui compte le plus."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/assessing-kpis.html?lang=fr" text="Évaluation des indicateurs de performance clés"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/overview/choose-right-team.html?lang=fr" text="Choix de la bonne équipe"
 
 Dans un monde numérique, il est possible de presque tout mesurer. Le choix de trois indicateurs clés de performance pour votre mise en oeuvre Adobe Experience Manager permet à votre équipe de se concentrer sur ce qui compte le plus.
 

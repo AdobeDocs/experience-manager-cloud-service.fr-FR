@@ -5,7 +5,7 @@ exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '831'
-ht-degree: 20%
+ht-degree: 23%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 20%
 >[!CONTEXTUALHELP]
 >id="aemcloud_ctt_usermapping"
 >title="Mappage des utilisateurs"
->abstract="L’outil de transfert de contenu vous permet de déplacer des utilisateurs et des groupes de votre système Adobe Experience Manager (AEM) existant vers AEM as a Cloud Service. Les utilisateurs existantes doivent être mappés à leurs identifiants IMS pour éviter qu’ils ne soient dupliqués sur l’instance de création de Cloud Service."
+>abstract="L’outil de transfert de contenu vous permet de déplacer des utilisateurs, des utilisatrices et des groupes de votre système Adobe Experience Manager (AEM) existant vers AEM as a Cloud Service. Les utilisateurs existantes doivent être mappés à leurs identifiants IMS pour éviter qu’ils ne soient dupliqués sur l’instance de création de Cloud Service."
 
 >[!NOTE]
 >Pour les versions précédentes de l’outil de mappage des utilisateurs, consultez la [documentation des versions antérieures](/help/journey-migration/content-transfer-tool/user-mapping-tool-legacy/considerations-user-mapping-tool-legacy.md).
