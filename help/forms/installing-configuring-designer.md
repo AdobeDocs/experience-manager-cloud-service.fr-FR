@@ -2,10 +2,10 @@
 title: Comment télécharger et installer Forms Designer pour créer des modèles de documents d’enregistrement ?
 description: Vous pouvez utiliser Forms Designer pour créer des modèles de formulaires XDP et PDF qui servent de modèle pour un document d’enregistrement. Designer est disponible avec la licence [!DNL AEM Forms]
 exl-id: d6f1cb21-c48b-406d-8d47-482d7a1b4cc3
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: e71dd8a4eb92acbed53fb9384bc40efc3e743761
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 100%
+source-wordcount: '262'
+ht-degree: 96%
 
 ---
 
@@ -26,6 +26,7 @@ Pour installer et configurer Designer, vous avez besoin de la configuration mat�
 * Accélération matérielle de la vidéo (facultatif)
 * Acrobat Pro DC, Acrobat Standard DC ou Adobe Acrobat Reader DC.
 * Droits d’administrateur pour l’installation de Designer.
+* Microsoft Visual C++ 2019 (VC 14.28 ou version ultérieure) Runtime 32 bits
 
 ## Installation de Designer {#install-designer}
 
