@@ -2,12 +2,13 @@
 title: Publication de contenu avec l’éditeur visuel universel
 description: Découvrez comment l’éditeur visuel universel publie du contenu et comment vos applications peuvent gérer le contenu publié.
 exl-id: aee34469-37c2-4571-806b-06c439a7524a
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 78%
+source-wordcount: '367'
+ht-degree: 88%
 
 ---
+
 
 # Publication de contenu avec l’éditeur visuel universel {#publishing}
 
@@ -31,6 +32,6 @@ Une autre option consiste à déployer l’application dans deux environnements 
 
 ## Résumé {#summary}
 
-L’objectif de l’éditeur universel est de ne pas imposer de schéma particulier, de sorte que l’implémentation puisse atteindre ses objectifs de manière complètement découplée tout en gardant tout simplement et directement en avance pour l’implémentation.
+L’objectif de l’éditeur universel est de ne pas imposer de modèle particulier, de sorte que l’implémentation puisse atteindre ses objectifs de manière complètement découplée tout en restant la plus simple et directe possible.
 
 L’éditeur universel n’impose pas non plus d’obligation quant à la manière dont un projet particulier doit déterminer à partir de quel niveau diffuser le contenu. Il ouvre plutôt un certain nombre de possibilités et permet au projet de déterminer la solution la mieux adaptée à ses besoins.

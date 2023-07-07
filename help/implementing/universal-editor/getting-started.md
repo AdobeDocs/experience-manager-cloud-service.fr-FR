@@ -2,10 +2,10 @@
 title: Prise en main de l’éditeur universel dans AEM
 description: Découvrez comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 exl-id: 9091a29e-2deb-4de7-97ea-53ad29c7c44d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 89%
+source-wordcount: '804'
+ht-degree: 90%
 
 ---
 
@@ -66,7 +66,7 @@ Si vous ne mettez pas en œuvre d’application React ou que avez besoin d’un 
 
 Pour pouvoir modifier du contenu AEM avec votre application à l’aide de l’éditeur universel, les paramètres CORS et des cookies doivent être définis dans AEM.
 
-Les [configurations OSGi suivantes doivent être définies sur l’instance de création AEM](/help/implementing/deploying/configuring-osgi.md).
+Les [configurations OSGi suivantes doivent être définies sur l’instance de création AEM.](/help/implementing/deploying/configuring-osgi.md)
 
 * `SameSite Cookies = None` dans `com.day.crx.security.token.impl.impl.TokenAuthenticationHandler`
 * Supprimez l’en-tête X-FRAME-OPTIONS: SAMEORIGIN dans `org.apache.sling.engine.impl.SlingMainServlet`
@@ -161,7 +161,7 @@ itemid="urn:<referenceName>:<resource>"
 </html>
 ```
 
-## Vous êtes prêt à utiliser l’éditeur universel {#youre-ready}
+## Vous pouvez désormais utiliser l’éditeur universel. {#youre-ready}
 
 Votre application est désormais instrumentée pour utiliser l’éditeur universel !
 

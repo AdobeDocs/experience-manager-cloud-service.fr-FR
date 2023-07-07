@@ -2,12 +2,13 @@
 title: Architecture de l’éditeur universel
 description: Découvrez l’architecture de l’éditeur universel et le flux de données entre ses services et couches.
 exl-id: e6f40743-0f21-4fb6-bf23-76426ee174be
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 0f62245d31074ab7a64d86b97ef3b1a8d7533001
 workflow-type: tm+mt
-source-wordcount: '649'
-ht-degree: 79%
+source-wordcount: '652'
+ht-degree: 78%
 
 ---
+
 
 # Architecture de l’éditeur universel {#architecture}
 
@@ -28,7 +29,7 @@ Ce document décrit tous les blocs de création et la manière dont ils échange
 
 >[!TIP]
 >
->Pour voir Universal Editor et son architecture en action, voir [Prise en main d’Universal Editor dans AEM](getting-started.md) pour savoir comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
+>Pour voir l’éditeur universel et son architecture en action, consultez le document . [Prise en main d’Universal Editor dans AEM](getting-started.md) pour savoir comment accéder à l’éditeur universel et comment commencer à instrumenter votre première application AEM pour l’utiliser.
 
 ### Éditeurs {#editors}
 
