@@ -1,17 +1,18 @@
 ---
 title: Comment migrer d’une Forms AEM 6.5 vers [!DNL AEM Forms] Environnement as a Cloud Service ?
-description: Migrer depuis  [!DNL AEM Forms] (environnements AMS et On-Premise) vers [!DNL AEM Forms] un environnement as a Cloud Service.
-keywords: 6.5 forms to cloud service, 6.5 forms to cs, migration de 6.5 forms vers CS, migration de 6.5 forms vers Cloud Service, mise à niveau de 6.5 forms vers CS, déplacement de 6.5 forms vers CS, mise à niveau d’AEM 6.5 vers CS, AEM Forms 6.5 vers Cloud Service, AEM migration de formulaires vers Cloud Service
+description: Prise en main du Parcours de migration pour AEM as a Cloud Service | Adobe Experience Manager. Migrer depuis  [!DNL AEM Forms] (environnements AMS et On-Premise) vers [!DNL AEM Forms] un environnement as a Cloud Service.
+keywords: 6.5 forms to cloud service, 6.5 forms to cs, migration de 6.5 forms vers CS, migration de 6.5 forms vers Cloud Service, mise à niveau de 6.5 forms vers CS, déplacement de 6.5 forms vers CS, mise à niveau d’AEM 6.5 vers CS, AEM Forms 6.5 vers Cloud Service, AEM migration de formulaires vers le Cloud Service, Parcours de migration vers les as a Cloud Service | Adobe Experience Manager
 contentOwner: khsingh
 feature: Adaptive Forms
+feature-set: Experience Manager Assets,Experience Manager Sites,Experience Manager, Experience Manager Forms, Experience Manager Cloud Manager
 role: User, Developer
 level: Intermediate
 topic: Migration
 exl-id: 090e77ff-62ec-40cb-8263-58720f3b7558
-source-git-commit: 850b1cccb03ca05ea53b646c55fcb0d0c100494c
+source-git-commit: 8dc89bf4b20d12bdb380797b6e56db1a2ce6ce0a
 workflow-type: tm+mt
-source-wordcount: '1590'
-ht-degree: 70%
+source-wordcount: '1632'
+ht-degree: 69%
 
 ---
 
@@ -22,7 +23,8 @@ ht-degree: 70%
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/upgrade.html) |
 | AEM as a Cloud Service | Cet article |
 
-Vous pouvez migrer ou mettre à niveau votre Forms adaptatif, vos thèmes, modèles et configurations cloud depuis <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM Forms 6.5 sur OSGi à [!DNL AEM] as a Cloud Service. Avant de migrer ces ressources, utilisez l’utilitaire de migration pour convertir le format utilisé dans les versions antérieures au format utilisé dans [!DNL AEM] as a Cloud Service. Lorsque vous exécutez l’utilitaire de migration, les ressources ci-dessous sont mises à jour :
+Vous pouvez migrer ou mettre à niveau votre Forms adaptatif, vos thèmes, modèles et configurations cloud depuis <!-- AEM 6.3 Forms AEM 6.4 Forms on OSGi and --> AEM Forms 6.5 sur OSGi à [!DNL AEM] as a Cloud Service. Avant de migrer ces ressources, utilisez l’utilitaire de migration pour convertir le format utilisé dans les versions antérieures au format utilisé dans [!DNL AEM] as a Cloud Service.
+Commençons par le parcours de migration pour AEM as a Cloud Service | Adobe Experience Manager. Lorsque vous exécutez l’utilitaire de migration, les ressources ci-dessous sont mises à jour :
 
 * Composants personnalisés pour les formulaires adaptatifs
 * Modèles et thèmes de formulaires adaptatifs
@@ -54,7 +56,7 @@ Pour migrer d’AEM 6.5 Forms vers AEM Cloud Service, il est important de tenir 
 |Configurations|<li>Email support only HTTP and HTTPs protocols, by default. [Contact the support team](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html#sending-email) to enable ports for sending emails and to enable SMTP protocol for your environment. </li> <li>If you use custom bundles, recompile your code with latest version of adobe-aemfd-docmanager before using these bundles with Forms as a Cloud Service.</li> |
 | Document Manipulation APIs (Assembler Service)| The service does not support operations dependent on other services or applications: <li>Conversion of documents in a non-PDF format to a PDF format is not supported. For example, Microsoft Word to PDF, Microsoft Excel to PDF, and HTML to PDF are not supported</li><li>Adobe Distiller-based conversions are not supported. For example, PostScript(PS) to PDF</li><li>Forms Service-based conversions are not supported. For example, XDP to PDF Forms.</li><li>The service does not support converting a Signed PDF or Transparent PDF to another PDF format.</li>| -->
 
-## Prérequis {#prerequisites}
+## Conditions préalables {#prerequisites}
 
 Pour garantir une transition en douceur d’AEM Forms 6.5 vers AEM environnement as a Cloud Service, il est important de tenir compte des conditions préalables suivantes :
 
