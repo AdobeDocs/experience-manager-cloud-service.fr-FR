@@ -1,15 +1,15 @@
 ---
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 90%
+source-wordcount: '513'
+ht-degree: 55%
 
 ---
 # Contribution à la documentation d’Adobe Experience Manager Cloud Service
 
-Merci d’avoir choisi de contribuer à la documentation d’Adobe Experience Manager Cloud Service. Nous apprécions toute contribution relative au contenu proposée par notre communauté de lecteurs, ainsi que par nos collègues d’Adobe.
+Merci d’avoir choisi de contribuer à la documentation d’Adobe Experience Manager Cloud Service. L’équipe de documentation accueille les contributions de l’ensemble de la communauté des lecteurs et des autres employés d’Adobe.
 
-Ce fichier décrit comment contribuer à la documentation ainsi que les directives à suivre lors de l’apport de vos contributions.
+Ce fichier décrit comment contribuer et indique les instructions à suivre lors de l’apport de vos contributions.
 
 ## Code de conduite Open Source d’Adobe
 
@@ -17,11 +17,11 @@ Ce projet a adopté le [Code de conduite Adobe Open Source](code-of-conduct.md).
 
 ## Instructions relatives à la contribution
 
-Bien que toute contribution visant à améliorer la documentation d’AEM soit la bienvenue, nous vous demandons, si possible, de bien vouloir respecter certaines instructions et normes. Consultez la section [Instructions relatives à la contribution à AEM documentation](guidelines.md) pour plus d’informations.
+Bien que toute contribution soit la bienvenue pour améliorer la documentation d’AEM, assurez-vous que les contributions respectent, si possible, certaines directives et normes. Consultez la section [Instructions relatives à la contribution à AEM documentation](guidelines.md) pour plus d’informations.
 
 ## Comment contribuer
 
-Nous souhaitons faciliter au maximum la soumission de vos contributions. Vous pouvez contribuer de deux manières :
+Vous pouvez facilement contribuer de deux manières :
 
 * [Créer un problème](#create-an-issue)
 * [Créer une demande d’extraction](#create-a-pull-request)
@@ -34,13 +34,13 @@ La méthode choisie dépend de votre aisance pour modifier vous-même la documen
 
 ### Création d’une demande {#create-an-issue}
 
-Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Vous pouvez créer un problème. Les propositions relatives aux problèmes sont également excellentes si vous avez quelque chose à apporter, mais que vous n’êtes pas habitué à modifier les documents ou à effectuer vous-même une demande d’extraction.
+Vous avez une suggestion, une observation à propos des documents actuels ou une question sur la manière dont un élément est décrit ? Si tel est le cas, créez un problème. Les propositions relatives aux problèmes sont également excellentes si vous avez quelque chose à apporter, mais que vous n’êtes pas habitué à modifier les documents ou à effectuer vous-même une demande d’extraction.
 
-Les propositions relatives aux problèmes vous permettent de décrire facilement vos idées d’amélioration de documents, avant examen par un membre de l’équipe AEM Docs. Pour créer un problème, il suffit de cliquer sur le lien **Log an issue** (Soumettre un problème) en haut du panneau de navigation de droite d’une page.
+Les propositions relatives aux problèmes vous permettent de décrire facilement vos idées d’amélioration de documents, avant examen par un membre de l’équipe AEM Docs. Cliquez simplement sur **[!UICONTROL Enregistrer un problème]** lien situé en haut du panneau de navigation de droite d’une page pour créer un problème.
 
 ### Créer une demande d’extraction {#create-a-pull-request}
 
-Si vous rencontrez un problème et savez exactement comment le résoudre, envisagez de créer une demande d’extraction. Les demandes d’extraction vous permettent d’apporter vos propres modifications à la documentation, qui sont ensuite examinées pour inclusion par un membre de l’équipe AEM Docs. Pour effectuer les modifications suggérées et créer la demande d’extraction, il suffit de cliquer sur le lien **Edit this page** (Modifier cette page) en haut du panneau de navigation de droite d’une page.
+Si vous rencontrez un problème et savez exactement comment le résoudre, envisagez de créer une demande d’extraction. Les demandes d’extraction vous permettent d’apporter vos propres modifications à la documentation, qui sont ensuite examinées pour inclusion par un membre de l’équipe AEM Docs. Cliquez simplement sur **[!UICONTROL Modifier cette page]** lien situé en haut du panneau de navigation de droite d’une page pour apporter les modifications suggérées et créer la requête d’extraction.
 
 Toutes les demandes d’extraction doivent être accompagnées d’un [contrat de licence de contributeur (CLA) signé.](https://opensource.adobe.com/cla.html) Ce document autorise Adobe à redistribuer vos contributions dans le cadre du projet. Vous n’avez besoin de soumettre un CLA Adobe qu’une seule fois. Par conséquent, si vous l’avez déjà soumis, vous n’avez rien à faire.
 
@@ -52,9 +52,9 @@ Regardez la vidéo suivante pour un aperçu rapide de la création de problèmes
 
 ### Contributions des employés d’Adobe
 
-Si vous êtes un employé d’Adobe et souhaitez faire une contribution, utilisez l’organisation `AdobeDocs` dans notre référentiel git d’entreprise.
+Si vous êtes un employé d’Adobe et avez une contribution, utilisez la variable `AdobeDocs` org dans le git d’entreprise.
 
-Nous apprécions évidemment toute contribution et examinerons votre contribution si elle est effectuée dans le référentiel public. Toutefois, les demandes d’extraction des employés d’Adobe sont plus faciles à traiter et peuvent être approuvées plus rapidement dans le référentiel d’entreprise. Assurez-vous que toutes les informations confidentielles ne sont discutées que sur le référentiel de l’entreprise.
+L’équipe de documentation est ravie de toute contribution et examinera votre contribution si elle est effectuée sur le référentiel public. Toutefois, les demandes d’extraction des employés d’Adobe sont plus faciles à traiter et peuvent être approuvées plus rapidement dans le référentiel de l’entreprise. Assurez-vous que toutes les informations confidentielles ne sont discutées que sur le référentiel de l’entreprise.
 
 ## Informations supplémentaires
 

@@ -1,17 +1,17 @@
 ---
-source-git-commit: 2ca676ed1bd59651c00a83fd28945f6f042ca50a
+source-git-commit: 8d8e5ba548c13d3d908a549f52a8b91946b35361
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 100%
+source-wordcount: '436'
+ht-degree: 80%
 
 ---
 # Code de conduite d’Adobe
 
-## Notre engagement
+## Engagement des Adobes
 
-Pour favoriser un environnement ouvert et convivial, nous nous engageons, en tant que contributeurs et responsables, à faire en sorte que la participation à notre projet et à notre communauté ne soit pas source de harcèlement, quels que soient l’âge, la taille, le handicap, l’origine ethnique, l’identité et l’expression de genre, le niveau d’expérience, la nationalité, l’apparence personnelle, la race, la religion ainsi que l’identité et l’orientation sexuelles.
+Afin de favoriser un environnement ouvert et accueillant, l&#39;équipe de documentation de l&#39;Adobe - en tant que contributeurs et responsables - s&#39;engage à faire de la participation à ce projet et à cette communauté une expérience sans harcèlement pour tous, quels que soient l&#39;âge, la taille du corps, le handicap, l&#39;appartenance ethnique, l&#39;identité et l&#39;expression de genre, le niveau d&#39;expérience, la nationalité, l&#39;apparence personnelle, la race, la religion ou l&#39;identité et l&#39;orientation sexuelle.
 
-## Nos normes
+## Normes d’Adobe
 
 Voici quelques exemples de comportements qui contribuent à la création d’un environnement positif :
 
@@ -29,7 +29,7 @@ Voici quelques exemples de comportement de participants inacceptable :
 * Publier les informations privées d’autres utilisateurs, telles qu’une adresse physique ou électronique, sans autorisation explicite
 * Autre comportement pouvant raisonnablement être considéré comme inapproprié dans un environnement professionnel
 
-## Nos responsabilités
+## Responsabilités d’Adobe
 
 Les responsables du projet sont chargés de clarifier les normes en matière de comportement acceptable et doivent prendre des mesures correctives appropriées et justes en cas de comportement inacceptable.
 
@@ -41,10 +41,10 @@ Ce code de conduite s’applique à la fois à l’espace du projet et aux envir
 
 ## Application
 
-Les cas de comportements abusifs, harcelants ou tout autre comportement inacceptable peuvent être signalés en contactant l’équipe du projet à l’adresse Grp-opensourceoffice@adobe.com. Toutes les plaintes seront examinées et analysées ; elles se traduiront par une réponse jugée nécessaire et adaptée aux circonstances. L’équipe du projet est tenue de maintenir la confidentialité concernant le déclarant d’un incident. Des informations supplémentaires sur les stratégies d’application spécifiques peuvent être publiées séparément.
+Les cas de comportements abusifs, harcelants ou tout autre comportement inacceptable peuvent être signalés en contactant l’équipe du projet à l’adresse Grp-opensourceoffice@adobe.com. Toutes les plaintes seront examinées et analysées ; elles se traduiront par une réponse jugée nécessaire et adaptée aux circonstances. L’équipe du projet est tenue de maintenir la confidentialité concernant le déclarant d’un incident. Des informations supplémentaires sur les politiques d’application spécifiques peuvent être publiées séparément.
 
 Les responsables de projet qui ne suivent pas ou n’appliquent pas en toute bonne foi le code de conduite s’exposent temporairement ou de façon permanente à des répercussions définies par d’autres membres de la direction du projet.
 
 ## Attribution
 
-Le présent code de conduite est une adaptation de la [Charte du contributeur](https://contributor-covenant.org) version 1.4, disponible à l’adresse [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
+Ce code de conduite est adapté à partir de la variable [Convention du contributeur](https://www.contributor-covenant.org/), version 1.4, disponible à l’adresse [Code de conduite de la Charte du contributeur](https://www.contributor-covenant.org/version/1/4/code-of-conduct/).
