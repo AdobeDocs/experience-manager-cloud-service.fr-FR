@@ -2,10 +2,10 @@
 title: Création de rendus vidéo dans Screens as a Cloud Service
 description: Cette page décrit comment créer des rendus vidéo dans Screens as a Cloud Service.
 exl-id: a9c46036-cd29-47fa-81d9-c865cf22c98a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 47%
+source-wordcount: '367'
+ht-degree: 44%
 
 ---
 
@@ -33,19 +33,19 @@ Pour créer des rendus vidéo dans Screens as a Cloud Service à partir du fourn
 
 1. Cliquez sur **Créer** pour créer un profil de traitement.
 
-   ![Cliquez sur Créer](/help/screens-cloud/assets/configure/screens-video-2.png)
+   ![Cliquez sur Créer](/help/screens-cloud/assets/configure/screens-video-2.png).
 
 1. Saisissez le **nom**, par exemple **ScreensProcessingProfile**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-3.png)
+   ![Boîte de dialogue Profil de traitement affichant le champ Nom mis en surbrillance.](/help/screens-cloud/assets/configure/screens-video-3.png)
 
 1. Accédez à **Vidéo** pour ajouter un codage vidéo, puis cliquez sur **Ajouter**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4a.png)
+   ![Boîte de dialogue Profil de traitement affichant le bouton Ajouter nouveau en surbrillance.](/help/screens-cloud/assets/configure/screens-video-4a.png)
 
 1. Saisissez le **Nom de codage** tel que, **screens-fullhd** et le **Débit** **2500**.
 
-   ![](/help/screens-cloud/assets/configure/screens-video-4.png)
+   ![Boîte de dialogue Profil de traitement affichant le bouton Enregistrer en surbrillance.](/help/screens-cloud/assets/configure/screens-video-4.png)
 
    >[!IMPORTANT]
    >Utilisez le nom Encoding qui commence par &quot;screens-&quot;. Seuls ces rendus vidéo sont considérés comme lisant l’expérience vidéo dans Screens as a Cloud Service. Saisissez le débit qui fonctionne avec vos vidéos (2 500 Kbit/s pour une vidéo de 720 px et 5 000 Kbit/s pour une vidéo de 1 080 px).

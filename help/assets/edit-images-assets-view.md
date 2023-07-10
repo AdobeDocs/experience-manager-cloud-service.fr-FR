@@ -3,10 +3,10 @@ title: Modification des images
 description: Modifiez les images à l’aide des options optimisées d’ [!DNL Adobe Photoshop Express] et enregistrez les images mises à jour sous forme de versions.
 role: User
 exl-id: fc21a6ee-bf23-4dbf-86b0-74695a315b2a
-source-git-commit: e2efffe0192f7914fd97178884b7938b84fd9a27
+source-git-commit: 900cdc53475446b9d93cb071f281da5dbe043888
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 97%
+source-wordcount: '549'
+ht-degree: 95%
 
 ---
 
@@ -45,7 +45,7 @@ De nombreuses options par défaut vous permettent de recadrer votre image selon 
 
 ## Redimensionnement de l’image {#resize-image}
 
-Le redimensionnement d’une image à une taille spécifique est un cas d’utilisation courant. [!DNL Assets view] permet de redimensionner rapidement l’image pour l’adapter aux tailles de photo courantes en fournissant de nouvelles résolutions précalculées pour des tailles de photo spécifiques. Vous pouvez afficher en centimètres ou pouces les tailles de photo courantes pour en connaître les dimensions. Par défaut, la méthode de redimensionnement conserve les proportions de l’image. Pour modifier manuellement les proportions, cliquez sur ![](assets/do-not-localize/lock-closed-icon.png).
+Le redimensionnement d’une image à une taille spécifique est un cas d’utilisation courant. [!DNL Assets view] permet de redimensionner rapidement l’image pour l’adapter aux tailles de photo courantes en fournissant de nouvelles résolutions précalculées pour des tailles de photo spécifiques. Vous pouvez afficher en centimètres ou pouces les tailles de photo courantes pour en connaître les dimensions. Par défaut, la méthode de redimensionnement conserve les proportions de l’image. Pour remplacer manuellement les proportions, cliquez sur ![Options de redimensionnement d’une image.](assets/do-not-localize/lock-closed-icon.png).
 
 Saisissez les dimensions et cliquez sur **[!UICONTROL Redimensionner l’image]** pour la redimensionner. Avant d’enregistrer les modifications dans une nouvelle version, vous pouvez annuler toutes les modifications effectuées avant de les enregistrer en cliquant sur [!UICONTROL Annuler] ou modifier une étape du processus de modification en particulier en cliquant sur [!UICONTROL Rétablir].
 
