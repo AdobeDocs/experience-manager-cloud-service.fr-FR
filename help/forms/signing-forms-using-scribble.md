@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
+source-git-commit: 50f5b34fa9453fd6d8e85290f69194622afeb42c
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 81%
+source-wordcount: '643'
+ht-degree: 79%
 
 ---
 
@@ -59,7 +59,7 @@ Vous pouvez appuyer sur le bouton **Configurer** ![icône de configuration](asse
    >
    >Le composant Étape de signature prend toute la largeur disponible pour le formulaire. Il est recommandé de ne pas avoir d’autre composant sur la section contenant le composant Étape de signature.
 
-1. Dans l’explorateur de contenu, appuyez sur **Conteneur de formulaires**, puis sur l’icône **Configurer** ![](assets/configure.png). L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs. Accédez à **Conteneur de formulaires adaptatifs** > **Signature électronique** et désélectionnez l’option **Activer Adobe Sign** . Appuyez sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications.
+1. Dans l’explorateur de contenu, appuyez sur **Conteneur de formulaires**, puis appuyez sur le bouton **Configurer** ![icône de configuration](assets/configure.png) icône . L’explorateur de propriétés s’ouvre et affiche les propriétés du conteneur de formulaires adaptatifs. Accédez à **Conteneur de formulaires adaptatifs** > **Signature électronique** et désélectionnez l’option **Activer Adobe Sign** . Appuyez sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) pour enregistrer les modifications.
 
    >[!NOTE]
    >
