@@ -10,10 +10,10 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 google-site-verification: A1dSvxshSAiaZvk0yHu7-S3hJBb1THj0CZ2Uh8N_ck4
 exl-id: dc89ecb1-2d9e-4d1d-b85b-af90c550e7d8
-source-git-commit: 76f13cb4236b8c7eb515d647a1cede6fa2cf4799
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 84%
+source-wordcount: '641'
+ht-degree: 81%
 
 ---
 
@@ -32,8 +32,8 @@ Vous pouvez utiliser les composants **Signature tactile** et **Étape de signatu
 
 Une fois que vous avez appuyé sur l’icône Terminé ![aem_forms_save](assets/aem_forms_save.png) dans la fenêtre de signature tactile, vous ne pouvez plus modifier la signature. Si vous souhaitez modifier la signature, vous devez ignorer la signature actuelle et signer à nouveau à l’aide de l’option Pinceau/Clavier ci-dessus.
 
-Vous pouvez appuyer sur l’icône **Configurer** ![](assets/configure.png) pour définir le format de la zone de travail de signature tactile.
-* Lorsque le format de la zone de travail de signature tactile est inférieur à 1, les informations de géolocalisation sont ajoutées au bas de la zone de travail de signature tactile.
+Vous pouvez appuyer sur le bouton **Configurer** ![icône de configuration](assets/configure.png) pour définir les proportions du canevas de signature tactile.
+* Lorsque le rapport d’aspect de la zone de travail de signature tactile est inférieur à 1, les informations de géolocalisation sont ajoutées au bas de la zone de travail de signature tactile.
 
 
 * Lorsque le rapport d’aspect de la zone de travail de signature tactile est supérieur à 1, les informations de géolocalisation sont ajoutées au côté droit de la zone de travail de signature tactile.
@@ -46,6 +46,7 @@ Vous pouvez appuyer sur l’icône **Configurer** ![](assets/configure.png) pour
 >[!NOTE]
 >
 >Les signatures sont toujours enregistrées au format PNG.
+>
 
 ## Configuration d’un formulaire adaptatif pour utiliser la signature tactile {#configure-an-adaptive-form-to-use-scribble-signature}
 

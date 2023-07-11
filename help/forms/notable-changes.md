@@ -3,10 +3,10 @@ title: Différences entre AEM 6.5 Forms et AEM Cloud Services
 description: Êtes-vous un utilisateur ou une utilisatrice Experience Manager Forms qui souhaitez effectuer une mise à niveau vers Adobe Experience Manager Forms as a Cloud Service ? Comparez AEM Forms 6.5 et AEM Cloud Services et découvrez les modifications les plus importantes avant de procéder à la mise à niveau ou à la migration vers Cloud Service.
 exl-id: 46fcc1b4-8fd5-40e1-b0fc-d2bc9df3802e
 contentOwner: khsingh
-source-git-commit: 1d16797f741fc9032356564061f2b6743d4c7936
+source-git-commit: fce6a3dff4136aa9ea94f5fdd03dd7a6341b8a9d
 workflow-type: tm+mt
-source-wordcount: '1405'
-ht-degree: 98%
+source-wordcount: '1417'
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Adobe Experience Manager Forms as a Cloud Service apporte des modificatio
 
 * Les développeurs et développeuses gèrent du code pour l’environnement de développement local et Cloud Service dans un [référentiel git](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/managing-code/cloud-manager-repositories.html?lang=fr) commun. Un référentiel git, basé sur l’archétype AEM, est créé automatiquement lors de la création d’un programme AEM as a Cloud Service.
 
-  ![](/help/forms/assets/git-repo-local-and-forms-cs.png)
+  ![création automatique du référentiel git sur AEM as a cloud service program](/help/forms/assets/git-repo-local-and-forms-cs.png)
 
 * Le flux de développement pour Forms as a Cloud Service s’aligne sur l’archétype AEM pour AEM Cloud Service. Toutefois, certains changements sont nécessaires pour que les projets Adobe Experience Manager Maven soient compatibles avec AEM Cloud Service. À un niveau élevé, AEM exige une séparation du contenu et du code en sous-packages discrets pour respecter la division entre le contenu mutable et le contenu non mutable. Utilisez l’[outil Repository Modernizer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/moving/refactoring-tools/repo-modernizer.html?lang=fr) pour restructurer les packages de projets existants en séparant le contenu et le code en packages distincts compatibles avec la structure de projet définie par Adobe Experience Manager as a Cloud Service.
 
