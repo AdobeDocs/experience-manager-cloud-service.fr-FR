@@ -1,12 +1,12 @@
 ---
 title: Ressources d’assistance pour Experience Manager as a Cloud Service Sites
-description: Obtenez une liste complète de toutes les ressources de prise en charge des services cloud AEM Adobe. Trouvez les réponses à vos questions sur AEM Sites as a Cloud Service.
+description: Obtenez la liste complète de toutes nos ressources d’assistance pour Adobe AEM Cloud Services. Trouvez les réponses à vos questions sur AEM Sites as a Cloud Service.
 landing-page-description: Découvrez comment créer et administrer AEM Sites as a Cloud Service.
 exl-id: 0fedbd4b-9d6b-40d9-88b7-e7469db420fc
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '412'
-ht-degree: 73%
+ht-degree: 78%
 
 ---
 
@@ -45,7 +45,7 @@ Cette page fournit une liste complète de toutes les ressources de prise en char
 
 ## Autres ressources relatives à Experience Manager {#other-resources}
 
-* [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [Mises à jour récentes de la documentation](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=fr)
 * [Documentation Dispatcher](/help/implementing/dispatcher/overview.md)
 * [Documentation HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=fr)
 * [Documentation sur les composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr)

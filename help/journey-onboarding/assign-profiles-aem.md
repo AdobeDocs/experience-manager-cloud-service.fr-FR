@@ -16,7 +16,7 @@ ht-degree: 94%
 >[!CONTEXTUALHELP]
 >id="assets_user_entitlements"
 >title="Attribuer les profils de produits AEM"
->abstract="Vous ne disposez pas de l’autorisation requise pour utiliser Experience Manager Assets. Contactez votre administrateur."
+>abstract="Vous ne disposez pas de l’autorisation requise pour utiliser Experience Manager Assets. Contactez l’administration."
 
 Dans cette partie du [parcours d’intégration,](overview.md) vous apprendrez comment accorder l’accès à AEM à votre équipe à l’aide de profils de produits AEM.
 

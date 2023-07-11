@@ -6,7 +6,7 @@ exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
 source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
 workflow-type: tm+mt
 source-wordcount: '3462'
-ht-degree: 40%
+ht-degree: 42%
 
 ---
 
@@ -174,8 +174,8 @@ above appears to be internal, to confirm with Brian -->
 >[!CONTEXTUALHELP]
 >id="aemcloud_packagemanager"
 >title="Gestionnaire de modules – Migration de packages de contenu modifiable"
->abstract="Explorez l’utilisation de Package Manager pour les cas d’utilisation où un module de contenu doit être installé &quot;un seul fois&quot;. L’installation comprend l’importation de contenu spécifique de la production vers l’évaluation pour déboguer un problème de production, le transfert de petits modules de contenu de l’environnement on-premise vers les environnements AEM Cloud, etc."
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=en" text="Outil de transfert de contenu"
+>abstract="Explorez l’utilisation du gestionnaire de modules pour les cas d’utilisation où un module de contenu doit être installé en une seule fois. L’installation comprend l’import de contenu spécifique de la production vers l’évaluation pour déboguer un problème de production, le transfert de petits modules de contenu de l’environnement On-Premise vers les environnements AEM Cloud, etc."
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/overview-content-transfer-tool.html?lang=fr" text="Outil de transfert de contenu"
 
 Il existe des cas d’utilisation où un package de contenu doit être installé de façon ponctuelle. Par exemple, l’importation de contenu spécifique de la production vers l’évaluation pour déboguer un problème de production. Pour ces scénarios, [Gestionnaire de modules](/help/implementing/developing/tools/package-manager.md) peut être utilisé dans des environnements sur AEM as a Cloud Service.
 
