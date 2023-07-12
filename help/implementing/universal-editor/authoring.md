@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: c6ab2d9b01a3f1abedb06d1d413e7eceb8b1c031
+source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
 workflow-type: tm+mt
-source-wordcount: '1557'
-ht-degree: 49%
+source-wordcount: '1682'
+ht-degree: 44%
 
 ---
 
@@ -17,7 +17,7 @@ Découvrez à quel point il est facile et intuitif pour les personnes en charge 
 
 L’éditeur universel permet de modifier n’importe quel aspect de contenu dans n’importe quelle mise en oeuvre afin de proposer des expériences exceptionnelles, d’augmenter la vitesse du contenu et de fournir une expérience de développement à la pointe de la technologie.
 
-Pour ce faire, l’éditeur universel offre aux auteurs de contenu une interface utilisateur intuitive qui nécessite une formation minimale pour simplement pouvoir intervenir et commencer à modifier le contenu.
+Pour ce faire, l’éditeur universel offre aux auteurs de contenu une interface utilisateur intuitive qui nécessite une formation minimale pour simplement pouvoir intervenir et commencer à modifier le contenu. Ce document décrit l’expérience de création d’Universal Editor.
 
 >[!TIP]
 >
@@ -25,7 +25,7 @@ Pour ce faire, l’éditeur universel offre aux auteurs de contenu une interface
 
 >[!NOTE]
 >
->L’éditeur universel est toujours en développement et ne peut pas modifier tous les types de contenu pour le moment.
+>L’éditeur universel est encore en cours de développement. Actuellement, il ne peut pas modifier tous les types de contenu.
 
 ## Préparer l’application {#prepare-app}
 
@@ -201,13 +201,23 @@ En mode Composant, la page est rendue dans l’éditeur, mais l’auteur du cont
 
 ![Mode Composant](assets/component-mode.png)
 
+Lorsque vous sélectionnez un fragment de contenu, ses détails s’affichent dans le [rail de composant.](#component-rail)
+
 >[!TIP]
 >
 >Utiliser la touche chaude `C` pour passer en mode composant.
 
->[!NOTE]
+#### Modifier {#edit}
+
+Dans [mode composant,](#component-mode) si vous sélectionnez un fragment de contenu, l’option d’édition s’affiche sur le rail de mode.
+
+![Icône Modifier](assets/edit.png)
+
+Appuyez ou cliquez sur le bouton Modifier pour ouvrir l’éditeur de fragments de contenu dans un nouvel onglet, ce qui vous permet de modifier le contenu référencé ainsi que le contenu texte et multimédia dans l’éditeur universel.
+
+>[!TIP]
 >
->Le mode Composant est toujours en cours de développement et se limite actuellement à la sélection de composants.
+>Utiliser la touche chaude `E` pour modifier un composant sélectionné.
 
 ### L’éditeur {#editor}
 
@@ -230,9 +240,11 @@ En mode Propriétés, le rail affiche les propriétés du composant actuellement
 
 ![Mode Propriétés](assets/properties-mode.png)
 
-Les détails du composant sélectionné s’affichent dans le rail. Notez que certains composants ne comportent pas de détails à afficher.
+Les détails du composant sélectionné s’affichent dans le rail. Si vous avez sélectionné un fragment de contenu à l’aide de [mode composant,](#component-mode) vous pouvez modifier ses paramètres dans le rail des composants. Les modifications sont enregistrées automatiquement par l’éditeur universel.
 
 ![Détails du composant](assets/component-details.png)
+
+Notez que certains composants ne comportent pas de détails qui peuvent être affichés.
 
 >[!TIP]
 >
@@ -259,13 +271,17 @@ La modification du contenu est simple et intuitive. Dans les modes de modificati
 
 ![Le contenu modifiable est mis en surbrillance dans une case bleue.](assets/editable-content.png)
 
-Il vous suffit d’appuyer ou de cliquer sur le contenu dans la case bleue pour lancer un éditeur statique et pouvoir ainsi apporter vos modifications. Appuyez sur Entrée ou Retour pour enregistrer les modifications.
+Il vous suffit d’appuyer ou de cliquer sur le contenu dans la case bleue pour lancer un éditeur statique et pouvoir ainsi apporter vos modifications. Vos modifications sont enregistrées automatiquement.
 
 ![Modification du contenu](assets/editing-content.png)
 
 Notez qu’en mode d’édition, le fait d’appuyer ou de cliquer sur du contenu sélectionne ce dernier en vue de le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez en [mode Aperçu.](#preview-mode)
 
-Selon le mode dans lequel vous vous trouvez et le contenu que vous sélectionnez, il se peut que vous disposiez de différentes options d’édition statique. En outre, vous pouvez consulter des propriétés supplémentaires pour le contenu à l’aide de la variable [rail de composant.](#component-rail)
+Selon le [mode](#mode-rail) si vous êtes dans et que le contenu que vous sélectionnez est différent, il se peut que vous disposiez d’options de modification statique différentes.
+
+En outre, vous pouvez consulter des propriétés supplémentaires pour le contenu à l’aide de la variable [rail de composant.](#component-rail) Par exemple, si vous sélectionnez un composant de texte enrichi, vous pouvez modifier les options de mise en forme dans le rail du composant.
+
+![Modification d’un composant de texte enrichi](assets/rich-text-editing.png)
 
 ## Prévisualisation du contenu {#previewing-content}
 
