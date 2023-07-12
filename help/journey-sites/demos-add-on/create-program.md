@@ -2,12 +2,13 @@
 title: Créer un programme
 description: Découvrez comment configurer un nouveau programme et un nouveau pipeline pour déployer le module complémentaire.
 exl-id: 06287618-0328-40b1-bba8-84002283f23f
-source-git-commit: bceec9ea6858b1c4c042ecd96f13ae5cac1bbee5
+source-git-commit: 7c33a618f474914ca80dff525552017c55a32517
 workflow-type: tm+mt
-source-wordcount: '713'
-ht-degree: 97%
+source-wordcount: '709'
+ht-degree: 68%
 
 ---
+
 
 # Créer un programme {#creating-a-program}
 
@@ -47,48 +48,36 @@ Après vous être connecté à Cloud Manager, vous pouvez créer un nouveau pro
 
 1. Appuyez ou cliquez sur **Ajouter un programme** en haut à droite de la fenêtre.
 
-1. Dans la boîte de dialogue **Créons votre programme**, assurez-vous qu’**Adobe Experience Manager** est sélectionné sous **Produits**, puis appuyez sur ou cliquez sur **Continuer**.
+1. Dans le **Créons votre programme** dialog :
+
+   1. Fournissez un **Nom du programme** pour décrire votre programme.
+   1. Appuyez ou cliquez sur **Configurer un sandbox** pour votre **Objectif de programme**.
+   1. Cliquez ou appuyez sur **Continuer**.
 
    ![Boîte de dialogue Créer un programme](assets/create-program.png)
 
-1. Dans la boîte de dialogue suivante :
+1. Dans le **Configuration de votre environnement de test** dans la boîte de dialogue **Solutions et modules complémentaires** , développez le tableau **Sites** entrée dans la liste en appuyant ou en cliquant dessus, puis en cochant **Démonstrations de référence**.
 
-   * Fournissez un **Nom du programme** pour décrire votre programme.
-   * Appuyez ou cliquez sur **Configurer un sandbox** pour votre **Objectif de programme**.
+   * Si vous souhaitez également créer des démonstrations pour AEM Screens, cochez la case **Screens** dans la liste. Cliquez ou appuyez sur **Mettre à jour**.
 
-   Ensuite, appuyez ou cliquez sur **Créer**.
+   ![Sélection du module complémentaire pour la démonstration de référence dans la configuration du programme](assets/select-reference-demo-add-on.png)
 
-   ![Nom du programme](assets/program-name.png)
 
-1. Vous accédez à l’écran de présentation du programme dans lequel vous pouvez observer le processus de création de votre programme. Cloud Manager fournit des estimations du temps restant. Vous pouvez quitter cet écran au fur et à mesure que le programme est créé et revenir ultérieurement si nécessaire.
+1. Appuyez ou cliquez sur **Créer** et Cloud Manager commence à configurer votre programme d’environnement de test. Vous accédez à l’écran de présentation du programme et une courte notification de bannière indique que le processus a commencé. Une carte a été ajoutée à la page d’aperçu de votre nouveau programme. Le processus de configuration prend quelques minutes.
 
-   ![Création de programme](assets/program-creation.png)
+1. Une fois la configuration terminée, la carte de l’environnement sur la page d’aperçu affiche son état comme **Prêt**. Appuyez ou cliquez sur la carte pour ouvrir l’environnement.
 
-1. Une fois l’opération terminée, Cloud Manager présente un aperçu comprenant les environnements et les pipelines créés automatiquement.
+   ![Création de programme terminée](assets/ready.png)
 
-   ![Création de programme terminée](assets/creation-complete.png)
+1. Votre environnement est prêt et le module complémentaire est désormais activé en tant qu’option, mais le contenu de la démonstration doit être déployé pour AEM être disponible. Pour ce faire, appuyez ou cliquez sur le bouton représentant des points de suspension en regard du pipeline Déployer vers le développement dans le **Pipelines** et sélectionnez **Exécuter**.
 
-1. Modifiez les détails du programme en cliquant sur le nom du programme dans le coin supérieur gauche de la page, puis dans la liste déroulante, sélectionnez **Modifier le programme**.
-
-   ![Modifier le programme](assets/edit-program.png)
-
-1. Dans la boîte de dialogue **Modifier le programme**, passez à l’onglet **Solutions et modules complémentaires**.
-
-   ![Boîte de dialogue Modifier le programme](assets/edit-program-dialog.png)
-
-1. Dans l’onglet **Solutions et modules complémentaires**, développez l’entrée **Sites** dans la liste, puis cochez la case **Démonstrations de référence**. Si vous souhaitez également créer des démonstrations pour AEM Screens, cochez la case **Screens** dans la liste. Cliquez ou appuyez sur **Mettre à jour**.
-
-   ![Option Vérifier les démonstrations de référence](assets/edit-program-add-on.png)
-
-1. Le module complémentaire est désormais activé en tant qu’option, mais son contenu doit être déployé dans AEM pour être disponible. De retour sur la page de présentation du programme, appuyez ou cliquez sur **Démarrer** pour lancer le pipeline afin de déployer le contenu complémentaire vers AEM.
-
-   ![Démarrer](assets/deploy.png)
+   ![Démarrer](assets/run.png)
 
 1. Le pipeline démarre et vous accédez à une page détaillant la progression du déploiement. Vous pouvez quitter cet écran au fur et à mesure que le programme est créé et revenir ultérieurement si nécessaire.
 
    ![Déploiement](assets/deployment.png)
 
-Une fois le pipeline terminé, le module complémentaire et son contenu de démonstration sont disponibles dans l’environnement de création AEM.
+L’exécution du pipeline peut prendre plusieurs minutes. Une fois terminé, le module complémentaire et son contenu de démonstration sont disponibles dans l’environnement de création AEM.
 
 ## Prochaines étapes {#what-is-next}
 
