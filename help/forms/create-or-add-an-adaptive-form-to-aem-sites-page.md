@@ -3,10 +3,10 @@ title: Comment ajouter un formulaire adaptatif à une page AEM Sites ?
 description: Découvrez comment créer ou ajouter facilement un formulaire adaptatif à votre page AEM Sites. Découvrez les techniques et les bonnes pratiques étape par étape pour intégrer des formulaires à votre site web, en optimisant vos expériences numériques pour un impact maximum.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 6f07493714c68cb7c6e96a252c4ef1ff9d6ba9ac
+source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
 workflow-type: tm+mt
-source-wordcount: '3265'
-ht-degree: 2%
+source-wordcount: '3232'
+ht-degree: 3%
 
 ---
 
@@ -200,13 +200,13 @@ Une action Envoyer vous permet de choisir la destination des données capturées
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
 1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
 1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre pour configurer les actions d’envoi.
-   ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer les modèles de données pour le composant Conteneur de formulaires adaptatifs .](/help/forms/assets/adaptive-forms-container.png)
+   ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une action d’envoi.](/help/forms/assets/adaptive-forms-container.png)
 1. Sélectionnez et configurez une action Envoyer en fonction de vos besoins. Pour plus d’informations sur les actions d’envoi, voir [Action d’envoi de formulaire adaptatif](/help/forms/configuring-submit-actions.md)
 
 
 ## Configuration d’un schéma ou d’un modèle de données de formulaire pour un formulaire dans une page AEM Sites ou un fragment d’expérience {#configure-schema-or-data-model-for-form}
 
-Vous pouvez utiliser le modèle de données de formulaire pour connecter un formulaire à une source de données afin d’envoyer et de recevoir des données en fonction des actions de l’utilisateur. Vous pouvez également connecter un formulaire à un schéma JSON pour recevoir les données envoyées dans un format prédéfini. Avant de connecter un formulaire à un schéma ou à un modèle de données de formulaire :
+Vous pouvez utiliser le modèle de données de formulaire pour connecter un formulaire à une source de données afin d’envoyer et de recevoir des données en fonction des actions de l’utilisateur. Vous pouvez également connecter un formulaire à un schéma JSON pour recevoir les données envoyées dans un format prédéfini. Selon les besoins, connectez votre formulaire à un schéma JSON ou à un modèle de données de formulaire :
 
 * [Création d’un schéma JSON et chargement dans votre environnement](/help/forms/adaptive-form-json-schema-form-model.md)  ou
 * [Création d’un modèle de données de formulaire](/help/forms/create-form-data-models.md)
@@ -216,7 +216,7 @@ Pour configurer un schéma JSON ou un modèle de données de formulaire pour vot
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
 1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
 1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
-   ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer les modèles de données pour le composant Conteneur de formulaires adaptatifs .](/help/forms/assets/form-data-model-adaptive-forms-container.png)
+   ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer un modèle de données pour le formulaire adaptatif.](/help/forms/assets/form-data-model-adaptive-forms-container.png)
 1. Sélectionnez et configurez un schéma JSON ou un modèle de données de formulaire, en fonction de vos besoins. Pour plus d’informations sur les actions d’envoi, voir [Action d’envoi de formulaire adaptatif](/help/forms/configuring-submit-actions.md).
 
    * Lorsque vous sélectionnez la variable **[!UICONTROL Modèle de formulaire]** , utilisez l’option **[!UICONTROL Sélectionner un modèle de données de formulaire]** pour sélectionner un modèle de données de formulaire préconfiguré.
@@ -238,7 +238,7 @@ Vous pouvez utiliser le service de préremplissage de modèle de données de for
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
 1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
 1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
-   ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer les modèles de données pour le composant Conteneur de formulaires adaptatifs .](/help/forms/assets/adaptive-forms-container.png)
+   ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer le service de préremplissage.](/help/forms/assets/adaptive-forms-container.png)
 1. Sélectionner un modèle de données de formulaire. Ouvrez le **[!UICONTROL De base]** . Dans le service de préremplissage, sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]**.
 1. Cliquez sur **[!UICONTROL Terminé]**. Votre formulaire adaptatif est maintenant configuré pour utiliser le préremplissage du modèle de données de formulaire. Vous pouvez désormais utiliser la variable [éditeur de règles](rule-editor.md) pour créer des règles afin de préremplir les champs du formulaire.
 
@@ -249,13 +249,12 @@ Lors de l’envoi d’un formulaire, vous pouvez rediriger l’utilisateur vers 
 
 1. Ouvrez l’éditeur de page AEM ou le fragment d’expérience contenant le formulaire adaptatif.
 1. Ouvrez l’arborescence de contenu, puis sélectionnez l’option **[!UICONTROL Conteneur Forms adaptatif]** qui héberge votre formulaire adaptatif. Une page AEM Sites peut héberger plusieurs Forms adaptatifs. Sélectionnez donc avec soin le conteneur de Forms adaptatif approprié.
-1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
+
 1. Ouvrez le **[!UICONTROL Envoi]** .
 
-   * Pour configurer une URL de redirection, pour l’option Lors de l’envoi, sélectionnez l’option Rediriger vers l’URL , puis fournissez une adresse absolue, une URL de redirection ou le chemin relatif d’une page AEM Sites.
+   * Pour configurer une URL de redirection, sélectionnez l’option Lors de l’envoi . **[!UICONTROL Rediriger vers l’URL]** et recherchez et sélectionnez une page AEM Sites, ou fournissez l’URL d’une page externe.
 
-   * Pour configurer un message de remerciement ou personnalisé, sélectionnez l’option Afficher le message dans le champ Contenu du message pour l’option Envoyer. Il s’agit d’une zone de texte enrichi. Vous pouvez utiliser l’option Plein écran pour afficher tous les éléments de texte enrichi disponibles.
-
+   * Pour configurer un message de remerciement ou personnalisé, sélectionnez l’option Envoyer . **[!UICONTROL Afficher le message]** et indiquez un message dans la variable **[!UICONTROL Contenu du message]** de la boîte. Il s’agit d’une zone de texte enrichi. Vous pouvez utiliser l’option Plein écran pour afficher tous les éléments de texte enrichi disponibles.
 
 ## Voir suivant
 
