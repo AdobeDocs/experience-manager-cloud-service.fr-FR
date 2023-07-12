@@ -5,9 +5,9 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 53997540cc469f4cc2ad747ca4e52b531a7b193e
+source-git-commit: 8d40f259e70ef73285aafcb736e1f9d720380f7d
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2250'
 ht-degree: 63%
 
 ---
@@ -126,7 +126,7 @@ Lors de l’envoi d’un formulaire, vous pouvez rediriger l’utilisateur vers 
 
    * Pour configurer un message de remerciement ou personnalisé, sélectionnez l’option Envoyer . **[!UICONTROL Afficher le message]** et indiquez un message dans la variable **[!UICONTROL Contenu du message]** de la boîte. Il s’agit d’une zone de texte enrichi. Vous pouvez utiliser l’option Plein écran pour afficher tous les éléments de texte enrichi disponibles.
 
-## Configuration d’un schéma ou d’un modèle de données de formulaire {#configure-schema-or-data-model-for-form}
+## Configuration d’un schéma ou d’un modèle de données de formulaire pour un formulaire adaptatif{#configure-schema-or-data-model-for-form}
 
 Vous pouvez utiliser le modèle de données de formulaire pour connecter un formulaire à une source de données afin d’envoyer et de recevoir des données en fonction des actions de l’utilisateur. Vous pouvez également connecter un formulaire à un schéma JSON pour recevoir les données envoyées dans un format prédéfini. Selon les besoins, connectez votre formulaire à un schéma JSON ou à un modèle de données de formulaire :
 
