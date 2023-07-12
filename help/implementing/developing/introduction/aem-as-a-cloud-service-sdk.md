@@ -2,10 +2,10 @@
 title: SDK AEM as a Cloud Service
 description: Aperçu du SDK AEM as a Cloud Service
 exl-id: 06f3d5ee-440e-4cc5-877a-5038f9bd44c6
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 33ba3e88a4116674c70c44a29273a04544b6b39b
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 38%
+source-wordcount: '1239'
+ht-degree: 36%
 
 ---
 
@@ -34,10 +34,14 @@ Le SDK AEM as a Cloud Service permet de créer et de déployer du code personnal
 
 Les mêmes opérations sont exécutées par Cloud Manager lors du déploiement vers des environnements cloud. L’exécution de versions localement permet le développement et les tests locaux. Les développeurs peuvent découvrir du code ou des problèmes structurels efficacement avant de s’engager dans le contrôle de code source et de déclencher des déploiements de Cloud Manager, ce qui peut prendre plus de temps.
 
+>[!NOTE]
+>
+>Le SDK as a Cloud Service AEM doit être créé avec une distribution et une version de Java prises en charge par [Environnement de création de Cloud Manager](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/build-environment-details.md). AEM clients as a Cloud Service peuvent télécharger le JDK d’Oracle à partir du [Portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) et avoir la prise en charge étendue de Java 11 jusqu’en septembre 2026 en raison des conditions de licence et de prise en charge d’Adobe pour la technologie Java d’Oracle lorsqu’elle est utilisée dans des projets Adobe Experience Manager.
+
 ## Accès au SDK d’AEM as a Cloud Service {#accessing-the-aem-as-a-cloud-service-sdk}
 
 * Vous pouvez consulter l’icône **À propos d’Adobe Experience Manager** d’AEM Admin Console pour connaître la version d’AEM que vous exécutez en production.
-* Le fichier Quickstart Jar et les outils Dispatcher peuvent être téléchargés dans un fichier ZIP depuis le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html). L’accès aux listes de SDK est limité aux personnes qui ont des environnements sur AEM Managed Services ou AEM as a Cloud Service.
+* Le fichier Quickstart Jar et les outils Dispatcher peuvent être téléchargés dans un fichier ZIP depuis le [portail de distribution de logiciels](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?lang=fr). L’accès aux listes de SDK est limité aux personnes qui ont des environnements sur AEM Managed Services ou AEM as a Cloud Service.
 * Les fichiers Java™ API Jar et Javadoc Jar peuvent être téléchargés via l’outil Maven, que ce soit en ligne de commande ou avec votre IDE préféré.
 * Les fichiers pom de projet Maven doivent faire référence au package API Jar suivant. Vous devez également référencer la dépendance à l’égard de tout sous-package pom.
 
