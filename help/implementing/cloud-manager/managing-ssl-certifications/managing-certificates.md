@@ -2,12 +2,13 @@
 title: Gestion des certificats SSL
 description: Découvrez comment utiliser Cloud Manager pour vérifier le statut de vos certificats SSL et comment les modifier, les remplacer, les mettre à jour et les supprimer.
 exl-id: ad6170f4-93bd-4bac-9c54-63c35a0d4f06
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: aeb407f8971dabb4e86203b3cee82318330638b0
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 79%
+source-wordcount: '646'
+ht-degree: 76%
 
 ---
+
 
 # Gestion des certificats SSL {#managing-ssl-certificates}
 
@@ -34,6 +35,7 @@ Lorsqu’un certificat expire, tout domaine utilisé avec le certificat expiré 
 1. Accédez à l’écran **Certificats SSL** à partir de l’écran **Environnements**.
 1. Un tableau contenant une ligne pour chaque certificat SSL qui a été installé correctement dans votre programme apparaît. Cliquez sur le bouton représentant des points de suspension tout à droite de la ligne du certificat que vous souhaitez mettre à jour et sélectionnez **Afficher et mettre à jour**.
 1. Les détails du certificat s’affichent et peuvent être mis à jour.
+1. Exécutez le pipeline pour déployer le certificat mis à jour.
 
 >[!NOTE]
 >
@@ -56,6 +58,7 @@ Procédez comme suit pour supprimer un certificat SSL.
 1. Accédez à l’écran **Certificats SSL** à partir de l’écran **Environnements**.
 1. Un tableau contenant une ligne pour chaque certificat SSL qui a été installé correctement dans votre programme apparaît. Cliquez sur le bouton représentant des points de suspension tout à droite de la ligne du certificat que vous souhaitez supprimer, puis sélectionnez **Supprimer**.
 1. Confirmez la suppression dans la boîte de dialogue **Supprimer le certificat SSL**.
+1. Exécutez le pipeline pour annuler le déploiement du certificat supprimé.
 
 >[!NOTE]
 >
