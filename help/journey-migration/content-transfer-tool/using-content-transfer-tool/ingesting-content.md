@@ -2,10 +2,10 @@
 title: Ingestion de contenu dans Target
 description: Ingestion de contenu dans Target
 exl-id: d8c81152-f05c-46a9-8dd6-842e5232b45e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3f526b8096125fbcf13b73fe82b2da0f611fa6ca
 workflow-type: tm+mt
-source-wordcount: '1707'
-ht-degree: 48%
+source-wordcount: '1925'
+ht-degree: 44%
 
 ---
 
@@ -155,7 +155,7 @@ Si l’ingestion est toujours en cours d’exécution, l’interface utilisateur
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/error_releaseorchestrator_ingestion.png)
 
-### Échec de l’ingestion complémentaire
+### Échec de l’ingestion complémentaire En raison d’une violation de contrainte d’unicité
 
 Les conflits entre identifiants de nœud sont une cause courante de l’échec de l’[Ingestion complémentaire](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process). Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
 
@@ -166,6 +166,18 @@ Cette situation peut se produire si un noeud est déplacé sur la source entre u
 Cela peut également se produire si un nœud de la cible est déplacé entre une ingestion et une ingestion complémentaire suivante.
 
 Ce conflit doit être résolu manuellement. Une personne qui connait le contenu doit décider lequel des deux nœuds doit être supprimé, sans oublier tout autre contenu qui y fait référence. La solution peut nécessiter que l’extraction complémentaire soit effectuée à nouveau sans le nœud fautif.
+
+### Échec de l’ingestion de complément en raison de l’impossibilité de supprimer le noeud référencé
+
+Une autre cause commune d&#39;une [Ingestion de complément](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/ingesting-content.md#top-up-ingestion-process) failure est un conflit de version pour un noeud particulier sur l’instance cible. Pour identifier cette erreur, téléchargez le journal d’ingestion à l’aide de l’interface utilisateur de Cloud Acceleration Manager et recherchez une entrée du type suivant :
+>java.lang.RuntimeException : org.apache.jackrabbit.oak.api.CommitFailedException : OakIntegrity0001 : Impossible de supprimer le noeud référencé : 8a2289f4-b904-4bd0-8410-15e41e0976a8
+
+Cela peut se produire si un noeud de la cible est modifié entre une ingestion et une ingestion de complément ultérieure de sorte qu’une nouvelle version ait été créée. Si les &quot;versions d’inclusion&quot; sont activées pour l’ingestion, un conflit peut se produire, dans la mesure où la cible dispose désormais d’une version plus récente référencée par l’historique des versions et d’autres contenus. Le processus d’ingestion ne pourra pas supprimer le noeud de version offensante car il est référencé.
+
+La solution peut nécessiter que l’extraction complémentaire soit effectuée à nouveau sans le nœud fautif. Vous pouvez également créer un petit jeu de migration du noeud incriminé, mais en désactivant l’option &quot;Versions d’inclusion&quot;.
+
+Les bonnes pratiques indiquent que si une ingestion doit être exécutée avec wipe=false et &quot;include versions&quot;=true, il est essentiel que le contenu de la cible soit modifié le moins possible, jusqu’à ce que le parcours de migration soit terminé. Sinon, ces conflits peuvent se produire.
+
 
 ## Prochaines étapes {#whats-next}
 
