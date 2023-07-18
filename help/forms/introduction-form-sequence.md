@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 6b3f9131-db6b-451b-a932-b57d809222eb
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '506'
 ht-degree: 72%
 
 ---
 
 # Présentation de la séquence de formulaires à plusieurs étapes {#introduction-to-multi-step-form-sequence}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/introduction-form-sequence.html) |
+| AEM as a Cloud Service | Cet article |
 
 Les formulaires adaptatifs permettent aux auteurs de formulaires de créer un environnement de capture de données simple d’emploi à plusieurs étapes. Il s’accompagne d’une prise en charge intégrée pour la création de plusieurs panneaux et l’association de chaque panneau à différents modèles de navigation. Les auteurs de formulaire peuvent regrouper les champs de formulaire dans des sections logiques et représenter un groupe sous la forme d’un panneau. La navigation globale entre les panneaux est contrôlée à l’aide de la disposition des panneaux. Les auteurs peuvent réorganiser les panneaux selon différentes dispositions en les plaçant, par exemple, de manière séquentielle à l’aide de la disposition Assistant ou de manière ad hoc avec la disposition Onglets. Pour plus d’informations sur les dispositions de panneaux, voir [Fonctionnalités de disposition des formulaires adaptatifs](layout-capabilities-adaptive-forms.md).
 
@@ -37,9 +42,8 @@ Supposons que vous deviez créer une séquence pour les étapes de remplissage, 
 
       * Services Adobe Document Cloud eSign
       * Signature tactile
+
    * **[!UICONTROL Confirmation]** : contient le composant **[!UICONTROL Résumé]** qui affiche un message de conformation d’envoi du formulaire lorsqu’un utilisateur l’a signé et a atteint l’étape de confirmation (Résumé) dans la séquence. Les auteurs peuvent configurer le texte du composant de [!UICONTROL Résumé], afficher un message de remerciement et un lien vers le PDF généré, etc.
-
-
 
 1. Sélectionnez la disposition du panneau racine comme **[!UICONTROL Assistant]**.
 1. Effectuez les étapes restantes pour créer le modèle de formulaire. <!-- For more information, see [Creating a custom Adaptive Form template](custom-adaptive-forms-templates.md). -->

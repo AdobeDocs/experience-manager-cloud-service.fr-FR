@@ -2,14 +2,19 @@
 title: Comment intégrer AEM Forms à Adobe Analytics ?
 seo-title: Learn how to integrate AEM Forms with Adobe Analytics.
 exl-id: 0730432e-75b8-4b35-a377-ae4a2bee6c9f
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 100%
+source-wordcount: '1707'
+ht-degree: 99%
 
 ---
 
 # Intégration avec [!DNL Adobe Analytics] {#integrate-aem-forms-with-adobe-analytics}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/integrate-aem-forms-with-experience-cloud-solutions/configure-analytics-forms-documents.html) |
+| AEM as a Cloud Service | Cet article |
 
 AEM Forms s’intègre à [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=fr), ce qui permet la capture et le suivi des mesures de performances des formulaires que vous avez publiés. L’analyse de ces mesures a pour objectif de permettre aux utilisateurs professionnels d’obtenir des informations sur le comportement des utilisateurs finaux et d’optimiser l’expérience de capture des données. Vous pouvez capturer et suivre le comportement des utilisateurs connectés et non connectés (anonymes) à l’aide d’Adobe Analytics pour formulaires adaptatifs.
 
@@ -140,7 +145,7 @@ Suivez les étapes suivantes pour créer des règles basées sur l’extension *
 
    * **[!UICONTROL Effacer les variables]** : utilisez ce type d’action pour effacer le journal de données afin que l’événement ne s’enregistre qu’une seule fois dans [!DNL Adobe Analytics].
 
-      L’approche recommandée consiste à utiliser le type d’action **[!UICONTROL Définir les variables]** pour configurer l’événement et les éléments de données, puis à utiliser **[!UICONTROL Envoyer la balise]** pour envoyer des données, et **[!UICONTROL Effacer les variables]** pour effacer le suivi des données.
+     L’approche recommandée consiste à utiliser le type d’action **[!UICONTROL Définir les variables]** pour configurer l’événement et les éléments de données, puis à utiliser **[!UICONTROL Envoyer la balise]** pour envoyer des données, et **[!UICONTROL Effacer les variables]** pour effacer le suivi des données.
 
 1. Dans la section **[!UICONTROL Props]**, mappez les options de suite de rapports disponibles dans la liste déroulante avec les éléments de données définis à l’aide de la commande [Configurer les éléments de données](#configure-data-elements).
 

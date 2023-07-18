@@ -2,14 +2,19 @@
 title: Configuration d’une action Envoyer pour un formulaire adaptatif
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 exl-id: a4ebedeb-920a-4ed4-98b3-2c4aad8e5f78
-source-git-commit: 921dc0f109b1faaa6d53086c4ca29627cb30bef8
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3133'
-ht-degree: 100%
+source-wordcount: '3153'
+ht-degree: 99%
 
 ---
 
 # Action Envoyer pour formulaire adaptatif {#configuring-the-submit-action}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
+| AEM as a Cloud Service | Cet article |
 
 Une action d’envoi est déclenchée lorsqu’un utilisateur clique sur le bouton **[!UICONTROL Envoyer]** d’un formulaire adaptatif. Le formulaire adaptatif fournit certaines actions Envoyer prêtes à l’emploi. Les actions d’envoi disponibles sont les suivantes :
 
@@ -111,7 +116,6 @@ Vous pouvez utiliser l’action d’envoi **[!UICONTROL Envoyer un e-mail]** pou
 > * Tous les champs de formulaire doivent avoir des noms d’élément différents, même si les champs sont placés sur différents panneaux d’un formulaire adaptatif.
 > * AEM as a Cloud Service exige que le e-mails sortants soient chiffrés. Par défaut, les e-mails sortants sont désactivés. Pour les désactiver, envoyez un ticket d’assistance à [Demande d’accès](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#sending-email).
 
-
 Vous pouvez également inclure des pièces jointes et un document d’enregistrement (DE) à l’e-mail. Pour activer l’option **[!UICONTROL Joindre le document d’enregistrement]**, configurez le formulaire adaptatif pour générer un document d’enregistrement (DE). Vous pouvez activer cette option pour générer un document d’enregistrement à partir des propriétés de formulaire adaptatif.
 
 
@@ -198,7 +202,6 @@ Pour connecter AEM Forms à votre stockage Microsoft® SharePoint :
    >* Par défaut, `forms-ootb-storage-adaptive-forms-submission` est présent sur le site SharePoint sélectionné.
    >* Créez un dossier sous la forme `forms-ootb-storage-adaptive-forms-submission`, s’il n’est pas déjà présent dans la bibliothèque `Documents` du site SharePoint sélectionné en cliquant sur **Créer un dossier**.
 
-
 Vous pouvez désormais utiliser cette configuration de sites SharePoint pour l’action d’envoi dans un formulaire adaptatif.
 
 ### Utiliser la configuration SharePoint dans un formulaire adaptatif {#use-sharepoint-configuartion-in-af}
@@ -210,7 +213,6 @@ Vous pouvez utiliser la configuration SharePoint créée dans un formulaire adap
    >
    > * Sélectionnez le même [!UICONTROL conteneur de configuration] de formulaire adaptatif, dans lequel vous avez créé votre stockage SharePoint.
    > * Si aucun [!UICONTROL conteneur de configuration] n’est sélectionné, les dossiers de [!UICONTROL configuration de stockage] globaux s’affichent dans la fenêtre des propriétés de l’action d’envoi.
-
 
 1. Sélectionnez l’**action d’envoi** **[!UICONTROL Soumettre à SharePoint]**.
    ![GIF SharePoint](/help/forms/assets/sharedrive-video.gif)
@@ -258,7 +260,6 @@ Pour connecter AEM Forms à votre stockage Microsoft® OneDrive :
    >* Par défaut, `forms-ootb-storage-adaptive-forms-submission` se trouve dans le conteneur OneDrive.
    > * Créez un dossier tel que `forms-ootb-storage-adaptive-forms-submission`, le cas échéant, en cliquant sur **Créer un dossier**.
 
-
 Vous pouvez désormais utiliser cette configuration de stockage OneDrive pour l’action d’envoi dans un formulaire adaptatif.
 
 ### Utiliser la configuration OneDrive dans un formulaire adaptatif {#use-onedrive-configuartion-in-af}
@@ -270,7 +271,6 @@ Vous pouvez utiliser la configuration de stockage OneDrive créée dans un formu
    >
    > * Sélectionnez le même [!UICONTROL conteneur de configuration] pour le formulaire adaptatif dans lequel vous avez créé votre espace de stockage OneDrive.
    > * Si aucun [!UICONTROL conteneur de configuration] n’est sélectionné, les dossiers de [!UICONTROL configuration de stockage] globaux s’affichent dans la fenêtre des propriétés de l’action d’envoi.
-
 
 1. Sélectionnez l’**action Envoyer** pour **[!UICONTROL Envoyer à OneDrive]**.
    ![GIF OneDrive](/help/forms/assets/onedrive-video.gif)
@@ -314,7 +314,6 @@ Vous pouvez utiliser la configuration de conteneur de stockage Azure créée dan
    >
    > * Sélectionnez le même [!UICONTROL conteneur de configuration] pour le formulaire adaptatif dans lequel vous avez créé votre espace de stockage OneDrive.
    > * Si aucun [!UICONTROL conteneur de configuration] n’est sélectionné, les dossiers de [!UICONTROL configuration de stockage] globaux s’affichent dans la fenêtre des propriétés de l’action d’envoi.
-
 
 1. Sélectionnez l’**action Envoyer** pour **[!UICONTROL Soumettre au stockage Azure Blob]**.
    ![GIF de stockage Azure Blob](/help/forms/assets/azure-submit-video.gif)

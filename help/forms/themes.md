@@ -2,14 +2,19 @@
 title: Créer et utiliser des thèmes pour appliquer un style à un formulaire adaptatif
 description: Vous pouvez utiliser les thèmes pour styliser et fournir une identité visuelle à un formulaire adaptatif. Vous pouvez partager un thème sur un certain nombre de formulaires adaptatifs.
 exl-id: 99c3d1f7-5756-49d2-98ee-72dd62063110
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '5499'
+source-wordcount: '5519'
 ht-degree: 99%
 
 ---
 
 # Création et utilisation des thèmes {#creating-and-using-themes}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/themes.html) |
+| AEM as a Cloud Service | Cet article |
 
 Vous pouvez créer et appliquer des thèmes pour styliser un formulaire adaptatif<!-- or an interactive communication-->. Un thème contient des détails de style pour les composants et les panneaux. Ces styles incluent les propriétés telles que les couleurs d’arrière-plan, les couleurs d’état, la transparence, l’alignement et la taille. Lorsque vous appliquez un thème, le style spécifié se reflète sur les composants correspondants. Le thème est géré indépendamment sans référence à un formulaire adaptatif<!-- or interactive communication -->.
 
@@ -465,16 +470,16 @@ Pour simuler le comportement d’états autres que l’erreur et la réussite, u
 
 ### Mise en forme des mises en page pour des écrans de plus petite taille {#styling-layouts-for-smaller-displays}
 
-Utilisez la règle dans la zone de travail pour sélectionner des points d’arrêt pour les périphériques équipés de plus petits écrans. Cliquez sur l’émulateur ![ruler](assets/emulator-icon.svg) dans la zone de travail pour afficher la règle et les points d’arrêt. Les points d’arrêt vous permettent de prévisualiser un formulaire <!-- or interactive communication --> pour les formats d’affichage de différents périphériques tels que les téléphones et les tablettes. Plusieurs formats d’affichage sont pris en charge dans l’éditeur de thèmes.
+Utilisez la règle dans la zone de travail pour sélectionner des points d’arrêt pour les appareils équipés de plus petits écrans. Cliquez sur l’émulateur ![ruler](assets/emulator-icon.svg) dans la zone de travail pour afficher la règle et les points d’arrêt. Les points d’arrêt vous permettent de prévisualiser un formulaire <!-- or interactive communication --> pour les formats d’affichage de différents appareils tels que les téléphones et les tablettes. Plusieurs formats d’affichage sont pris en charge dans l’éditeur de thèmes.
 
 Pour mettre en forme des composants pour différents points d’arrêt :
 
 1. Dans la zone de travail, sélectionnez un point d’arrêt au-dessus de la règle.
-Un point d’arrêt représente un périphérique mobile et son format d’affichage.
+Un point d’arrêt représente un appareil mobile et son format d’affichage.
 1. Utilisez la barre latérale pour personnaliser la mise en forme des composants <!-- or interactive communication --> de formulaire dans le thème pour le format d’affichage sélectionné.
 1. Vérifiez que la personnalisation est enregistrée.
 
-Vous pouvez mettre en forme des <!-- or interactive communication -->composants de formulaire pour plusieurs périphériques. Les composants de <!-- and interactive communication -->formulaire pour les ordinateurs de bureau et les périphériques mobiles ont parfois des styles totalement différents.
+Vous pouvez mettre en forme des <!-- or interactive communication -->composants de formulaire pour plusieurs appareils. Les composants de <!-- and interactive communication -->formulaire pour les ordinateurs de bureau et les appareils mobiles ont parfois des styles totalement différents.
 
 ### Utiliser des polices web dans un thème {#using-web-fonts-in-a-theme}
 

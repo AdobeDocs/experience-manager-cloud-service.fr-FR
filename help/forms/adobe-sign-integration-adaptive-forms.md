@@ -4,14 +4,19 @@ description: Découvrez comment configurer Adobe Acrobat Sign pour [!DNL AEM For
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 09ed1ae61e7748da2cc182b005a9dd26853cb3f7
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1939'
 ht-degree: 46%
 
 ---
 
 # Connexion [!DNL AEM Forms] as a Cloud Service avec [!DNL Adobe Acrobat Sign] {#integrate-adobe-sign-with-aem-forms}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html#adobe-acrobat-sign-for-government) |
+| AEM as a Cloud Service | Cet article |
 
 [!DNL Adobe Acrobat Sign] active les processus de signature électronique pour les processus Forms adaptatifs et AEM. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commercial, des ressources humaines, et bien d’autres domaines.
 

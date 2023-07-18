@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User
 level: Beginner, Intermediate
 exl-id: c17c0443-d4dc-41f8-9315-6cc49e6c471f
-source-git-commit: f0e9fe0bdf35cc001860974be1fa2a7d90f7a3a9
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '4120'
-ht-degree: 72%
+source-wordcount: '4140'
+ht-degree: 75%
 
 ---
 
 # Utilisation d’un modèle de données de formulaire {#work-with-form-data-model}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/work-with-form-data-model.html?lang=fr) |
+| AEM as a Cloud Service | Cet article |
+
 
 ![data-integration](do-not-localize/data-integeration.png)
 
@@ -222,7 +228,7 @@ Par exemple, la spécification de l’attribut en tant que `petid=100` dans la r
 
 ## Ajout des associations {#add-associations}
 
-En règle générale, il existe des associations entre des objets de modèle de données dans une source de données. L’association peut être un-à-un ou un-à-plusieurs. Par exemple, plusieurs personnes à charge peuvent être associées à un employé. Il s’agit d’une association d’un objet à plusieurs objets, désignée par `1:n` sur la ligne reliant les objets de modèle de données associés. Toutefois, si une association renvoie un nom d’employé unique pour un ID d’employé donné, elle est appelée association un-à-un.
+En règle générale, il existe des associations entre des objets de modèle de données dans une source de données. L’association peut lier un objet à un ou plusieurs objets. Par exemple, plusieurs personnes à charge peuvent être associées à un employé ou une employée. Il s’agit d’une association d’un objet à plusieurs objets, désignée par `1:n` sur la ligne reliant les objets de modèle de données associés. Toutefois, si une association renvoie un nom d’employé unique pour un ID d’employé donné, elle est appelée association un-à-un.
 
 Lorsque vous ajoutez des objets de modèle de données associés d’une source de données à un modèle de données de formulaire, leurs associations sont conservées et affichées comme étant liées par des lignes fléchées. Vous pouvez ajouter des associations entre des objets de modèle de données sur des sources de données disparates dans un modèle de données de formulaire.
 
@@ -246,9 +252,9 @@ Pour ajouter une association :
 
    Boîte de dialogue Ajouter une association
 
-1. Dans le volet Ajouter une association :
+1. Dans le volet Ajouter une association :
 
-   * Indiquez un titre pour l’association.
+   * Spécifiez un titre pour l’association.
    * Sélectionnez le type d’association : **[!UICONTROL un à un]** ou **[!UICONTROL un à plusieurs]**.
    * Sélectionnez l’objet de modèle de données à associer.
    * Sélectionnez le service de lecture pour lire les données de l’objet de modèle sélectionné. L’argument de service de lecture s’affiche. Modifiez l’argument si nécessaire et liez-le à la propriété de l’objet de modèle de données à associer.
@@ -381,7 +387,7 @@ De même, vous pouvez choisir un service `GET LINK` et configurer ses propriét�
 
 ## Génération et modification des exemples de données {#sample}
 
-L’éditeur de modèles de données de formulaire vous permet de générer des exemples de données pour toutes les propriétés d’objet de modèle de données, y compris les propriétés calculées, dans un modèle de données de formulaire. Il s’agit d’un ensemble de valeurs aléatoires conformes au type de données configuré pour chaque propriété. Vous pouvez également modifier et enregistrer des données, qui sont conservées même si vous régénérez les données d’exemple.
+L’éditeur de modèles de données de formulaire vous permet de générer des exemples de données pour toutes les propriétés d’objet de modèle de données, y compris les propriétés calculées, dans un modèle de données de formulaire. Il s’agit d’un ensemble de valeurs aléatoires conformes au type de données configuré pour chaque propriété. Vous pouvez également modifier et enregistrer des données qui sont conservées même si vous régénérez les données d’exemple.
 
 Pour générer et modifier des exemples de données, procédez comme suit :
 

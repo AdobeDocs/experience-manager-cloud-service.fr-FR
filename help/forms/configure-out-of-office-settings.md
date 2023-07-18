@@ -4,14 +4,19 @@ seo-title: Configure Out of Office settings
 description: Configuration des paramètres d’absence du bureau
 seo-description: Configure Out of Office settings
 exl-id: c7e436f1-8e1c-4334-b3dc-ab9800695301
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '799'
-ht-degree: 100%
+source-wordcount: '819'
+ht-degree: 99%
 
 ---
 
 # Configuration du paramètre d’absence du bureau {#configure-out-of-office-settings}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/configure-out-of-office-settings.html) |
+| AEM as a Cloud Service | Cet article |
 
 Si vous envisagez de vous absenter du bureau, vous pouvez spécifier les actions à entreprendre pour les tâches qui vous sont affectées pendant cette période.
 
@@ -28,7 +33,6 @@ Vous pouvez séparer la délégation de tâches en fonction des modèles de proc
 >* Lorsque vous désactivez le paramètre Absence du bureau, les tâches déléguées ne vous sont pas automatiquement réaffectées. Vous pouvez utiliser la fonctionnalité de revendication pour que ces tâches vous soient attribuées.
 >* Lorsque l’utilisateur A délègue des tâches à l’utilisateur B et que l’utilisateur B délègue des tâches à l’utilisateur C, les tâches sont affectées uniquement à l’utilisateur C et non à l’utilisateur B.
 >* Lorsqu’une boucle est présente dans l’affectation, les tâches restent chez l’utilisateur initial. Par exemple, lorsque l’utilisateur A délègue des tâches à l’utilisateur B, l’utilisateur C délègue des tâches à l’utilisateur C, l’utilisateur C délègue des tâches à l’utilisateur D et l’utilisateur D délègue des tâches à l’utilisateur B, une boucle est créée. Dans ce cas, la tâche reste à l’utilisateur initial. L’utilisateur A est l’utilisateur initial dans l’exemple ci-dessus.
-
 
 ## Activez le paramètre Absence du bureau pour votre compte {#enable-out-of-office}
 

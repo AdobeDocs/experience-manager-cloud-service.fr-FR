@@ -2,14 +2,19 @@
 title: Générer un document d’enregistrement pour les formulaires adaptatifs
 description: Cet article explique comment générer un modèle de document d’enregistrement pour les formulaires adaptatifs.
 exl-id: 16d07932-3308-4b62-8fa4-88c4e42ca7b6
-source-git-commit: 4279b4a880429f535cf341d35ac38c9b4dc55ae2
-workflow-type: ht
-source-wordcount: '4066'
-ht-degree: 100%
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+workflow-type: tm+mt
+source-wordcount: '4086'
+ht-degree: 99%
 
 ---
 
 # Génération d’un document d’enregistrement pour les formulaires adaptatifs
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM as a Cloud Service | Cet article |
 
 ## Présentation {#overview}
 
@@ -359,6 +364,7 @@ Pour localiser les informations de branding que vous saisissez dans l’onglet D
       * **Texte de clause de non-responsabilité** : texte de la clause de non-responsabilité.
 
       ![Propriétés du gabarit de page](/help/forms/assets/masterpagepropertiesdor.png)
+
    >[!NOTE]
    >
    >Si vous utilisez un modèle de formulaire adaptatif créé avec une version de Designer antérieure à la version 6.3, pour que les propriétés Couleur d’accentuation et Famille de polices fonctionnent, assurez-vous de la présence des éléments suivants dans votre modèle de formulaire adaptatif sous le sous-formulaire racine :

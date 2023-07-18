@@ -2,14 +2,17 @@
 title: Comment configurer le stockage Azure ?
 description: Découvrez comment intégrer des formulaires à un serveur de stockage Azure.
 exl-id: 606383b3-293c-43d2-9ba0-5843c4e0caa8
-source-git-commit: 10284b1ac6fbad2e7f6231603c3dd60b6e404299
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '582'
 ht-degree: 100%
 
 ---
 
 # Configurer le stockage [!DNL Azure] {#configure-azure-storage}
+
+
+![data-integeration](assets/data-integeration.png)
 
 [[!DNL Experience Manager Forms] Intégration de données](data-integration.md) fournit une configuration de stockage [!DNL Azure] pour intégrer des formulaires aux services de stockage [!DNL Azure]. Le modèle de données de formulaire peut être utilisé pour créer des formulaires adaptatifs qui interagissent avec un serveur [!DNL Azure] pour activer des processus métier. Par exemple :
 

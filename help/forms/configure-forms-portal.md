@@ -2,14 +2,19 @@
 title: Comment créer un portail Formulaires sur une page Experience Manager Sites
 description: Découvrez comment créer un portail Formulaires et utiliser les composants principaux prêts à l’emploi sur une page AEM Sites.
 exl-id: 13cfe3ba-2e85-46bf-a029-2673de69c626
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '1762'
-ht-degree: 89%
+source-wordcount: '1782'
+ht-degree: 88%
 
 ---
 
 # Création d’une liste de formulaires adaptatifs sur un portail {#publish-forms-on-portal}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/introduction-publishing-forms.html) |
+| AEM as a Cloud Service | Cet article |
 
 Dans un scénario de déploiement de portail basé sur l’utilisation de formulaires standard, le développement de formulaires et le développement de portail sont deux activités distinctes. Lorsque les concepteurs de formulaires créent et stockent des formulaires dans un référentiel, les développeurs Web créent une application Web pour répertorier les formulaires et gérer l’envoi de formulaires. Forms est copié sur la plateforme web, car il n’existe aucune communication entre le référentiel de formulaires et l’application web.
 

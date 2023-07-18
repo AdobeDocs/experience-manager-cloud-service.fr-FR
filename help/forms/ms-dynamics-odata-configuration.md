@@ -5,14 +5,19 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner
 exl-id: cb7b41f0-fd4f-4ba6-9f45-792a66ba6368
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '1002'
 ht-degree: 96%
 
 ---
 
 # Configuration de [!DNL Microsoft Dynamics] OData {#microsoft-dynamics-odata-configuration}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=fr) |
+| AEM as a Cloud Service | Cet article |
 
 ![data-integeration](assets/data-integeration.png)
 
@@ -95,7 +100,7 @@ Pour enregistrer un client OAuth sur l’ordinateur Active Directory Federatio
 
    * `Client-ID` est un ID client que vous pouvez générer à l’aide d’un générateur de GUID.
    * `redirect-uri` est l’URL du service cloud OData de [!DNL Microsoft Dynamics] dans [!DNL Experience Manager Forms]. Le service cloud par défaut installé avec [!DNL Experience Manager Forms] est déployé à l’adresse URL suivante :
-      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+     `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Exécutez la commande ci-dessous pour octroyer l’accès sur l’ordinateur AD FS :
 

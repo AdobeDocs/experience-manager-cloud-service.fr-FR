@@ -2,7 +2,7 @@
 title: Répétabilité dans un formulaire adaptatif (composants principaux)
 description: Utilisez la fonction de répétabilité des composants du panneau pour répéter des sections similaires dans un formulaire adaptatif.
 role: Architect, Developer, Admin, User
-source-git-commit: bf45e7b935c3e57c2ecf77d9391abda80ee4a761
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
 source-wordcount: '1410'
 ht-degree: 31%
@@ -97,6 +97,7 @@ Le parent du panneau doit contenir un bouton de suppression pour supprimer l’i
    * Pour créer un bouton de suppression de panneau, spécifiez `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`.
 
    Cliquez sur **Terminé**.
+>[!VIDEO](https://video.tv.adobe.com/v/3421620/adaptive-forms-repeatable-sections)
 
 >[!NOTE]
 >

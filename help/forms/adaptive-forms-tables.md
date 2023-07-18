@@ -6,14 +6,21 @@ seo-description: The Table component in AEM Forms lets you create tables in adap
 products: SG_EXPERIENCEMANAGER/Cloud Service/FORMS
 feature: Adaptive Forms
 exl-id: 88ace1d4-b68d-40e6-a7b4-918ba25f2e91
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2415'
+source-wordcount: '2435'
 ht-degree: 96%
 
 ---
 
 # Tableaux dans le formulaire adaptatif {#tables-in-adaptive-forms}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/adaptive-forms-tables.html) |
+| AEM as a Cloud Service | Cet article |
+
+
 
 L’utilisation de tableaux est un moyen efficace, simplifié et organisé de présenter des données complexes. Cela permet aux utilisateurs d’identifier facilement les informations et leur fournit des données organisées sous forme de lignes et de colonnes. La plupart des formulaires des services financiers et des administrations requièrent des tableaux de données volumineux pour saisir des données numériques et effectuer des calculs.
 
@@ -203,11 +210,11 @@ Dans la disposition Colonnes réductibles, les colonnes du tableau sont réduite
 >
 >Remarque : Alors que la disposition Colonne réductible est optimisée pour les appareils mobiles, elle fonctionne également sur le bureau, si la largeur disponible est insuffisante pour afficher toutes les colonnes d’un tableau.
 
-Les images suivantes comparent l’aspect d’un tableau affiché sur un périphérique, l’un comportant des colonnes réduites, l’autre les affichant développées.
+Les images suivantes comparent l’aspect d’un tableau affiché sur un appareil, l’un comportant des colonnes réduites, l’autre les affichant développées.
 
 ![collapsed-column](assets/collapsed-column.png)
 
-Colonnes réduites d’un tableau comportant uniquement deux colonnes, apparaissant sur un périphérique mobile
+Colonnes réduites d’un tableau comportant uniquement deux colonnes, apparaissant sur un appareil mobile
 
 ![collapsible_column](assets/collapsible_column.png)
 

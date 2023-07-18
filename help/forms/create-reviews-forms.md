@@ -5,14 +5,19 @@ description: Une révision est un mécanisme qui permet à un ou plusieurs révi
 seo-description: A Review is a mechanism that allows one or more reviewers to comment on a form.
 topic-tags: forms-manager
 exl-id: 378049f8-bf21-4595-819d-ba5fba7023c0
-source-git-commit: 98b96ea89489905561329569096501f6a3741cd2
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '672'
 ht-degree: 52%
 
 ---
 
 # Création et gestion de révisions des formulaires{#creating-and-managing-reviews-to-forms}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/create-reviews-forms.html) |
+| AEM as a Cloud Service | Cet article |
 
 ## Révision {#review}
 

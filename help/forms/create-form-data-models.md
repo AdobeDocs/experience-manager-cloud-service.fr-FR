@@ -5,14 +5,20 @@ feature: Form Data Model
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: b17b7441-912c-44c7-a835-809f014a8c86
-source-git-commit: 1f3104d4a986018675f751afa04fe0ed3b7f5c26
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1551'
 ht-degree: 88%
 
 ---
 
-# Création d’un modèle de données de formulaire {#create-form-data-model}
+# Créer un modèle de données de formulaire {#create-form-data-model}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=fr) |
+| AEM as a Cloud Service | Cet article |
+
 
 ![Intégration de données](do-not-localize/data-integeration.png)
 
@@ -77,7 +83,7 @@ Pour ajouter ou mettre à jour des sources de données dans un modèle de donné
    * Pour remplacer une source de données existante par une autre source de données du même type, appuyez sur l’icône **[!UICONTROL Modifier]** de la source de données et sélectionnez-en une dans la liste des sources de données disponibles.
    * Pour supprimer une source de données existante, appuyez sur l’icône **[!UICONTROL Supprimer]** de la source de données. L’icône Supprimer est désactivée si un objet de modèle de données dans la source de données est ajouté au modèle de données de formulaire.
 
-      ![fdm-properties](assets/fdm-properties.png)
+     ![fdm-properties](assets/fdm-properties.png)
 
 1. Appuyez sur **[!UICONTROL Enregistrer et fermer]** pour enregistrer les mises à jour.
 
@@ -108,8 +114,7 @@ Pour activer les configurations cloud spécifiques au déploiement dans le [!UIC
 
 1. Créez une configuration basée sur le contexte Apache Sling. Pour créer la configuration OSGi :
    1. **Configurez les fichiers de configuration OSGi dans le projet d’archétype d’[!DNL Experience Manager].**
-Créez les fichiers de configuration OSGi d’usine avec le PID 
-`org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Créez un fichier portant le même nom sous chaque dossier de mode d’exécution où les valeurs doivent être modifiées par mode d’exécution. Pour plus d’informations, consultez la [Configuration de l’OSGi pour  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
+Créez les fichiers de configuration OSGi d’usine avec le PID `org.apache.sling.caconfig.impl.override.OsgiConfigurationOverrideProvider`. Créez un fichier portant le même nom sous chaque dossier de mode d’exécution où les valeurs doivent être modifiées par mode d’exécution. Pour plus d’informations, consultez la [Configuration de l’OSGi pour  [!DNL Adobe Experience Manager]](/help/implementing/deploying/configuring-osgi.md#creating-sogi-configurations).
 
    1. **Configurez le fichier json de configuration OSGI.** Pour utiliser le fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling :
       1. Sur l’instance de développement locale `/system/console/configMgr`, sélectionnez la configuration OSGi d’usine avec le nom **[!UICONTROL Fournisseur de remplacement de configuration prenant en compte le contexte Apache Sling : configuration OSGi]**.
@@ -123,7 +128,6 @@ Vous pouvez ajouter plusieurs remplacements en sélectionnant **[!UICONTROL +]**
       1. Modifiez la valeur de `newURL` selon l’environnement (ou le mode d’exécution).
       1. Pour modifier une valeur secrète en fonction du mode d’exécution, une variable secrète peut être créée à l’aide de l’[API Cloud Manager](/help/implementing/deploying/configuring-osgi.md#cloud-manager-api-format-for-setting-properties) et plus tard peuvent être référencés dans la [Configuration OSGi](/help/implementing/deploying/configuring-osgi.md#secret-configuration-values).
 Lorsque ce projet d’archétype est déployé via un pipeline CM, le remplacement fournit des valeurs différentes pour différents environnements (ou mode d’exécution).
-
       >[!NOTE]
       >
       >Les utilisateurs d’[!DNL Adobe Managed Service] peuvent chiffrer les valeurs secrètes à l’aide de la prise en charge du chiffrement (pour plus d’informations, consultez les instructions de [prise en charge du chiffrement des propriétés de configuration](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/encryption-support-for-configuration-properties.html?lang=fr#enabling-encryption-support) et placez du texte chiffré dans la valeur après [les configurations basées sur le contexte disponibles dans le Service Pack 6.5.13.0](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=fr#runmode-specific-context-aware-config).

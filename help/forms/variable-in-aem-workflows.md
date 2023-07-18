@@ -2,14 +2,19 @@
 title: Comment ajouter des variables dans des étapes de processus AEM ?
 description: Découvrez comment créer une variable, définir une valeur pour la variable et l’utiliser dans les étapes de processus [!DNL AEM Forms]
 exl-id: d9139ea9-2f86-476c-8767-b36766790f2c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2080'
 ht-degree: 98%
 
 ---
 
 # Variables dans les workflows AEM basés sur l’utilisation de Forms {#variables-in-aem-forms-workflows}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/variable-in-aem-workflows.html) |
+| AEM as a Cloud Service | Cet article |
 
 Une variable dans un modèle de processus permet de stocker une valeur en fonction de son type de données. Vous pouvez utiliser le nom de la variable dans n’importe quelle étape de processus pour extraire la valeur stockée dans la variable. Vous pouvez également utiliser des noms de variable pour définir des expressions afin de prendre des décisions de routage.
 
@@ -23,7 +28,7 @@ La vidéo ci-dessous indique comment créer, définir et utiliser des variables 
 
 >[!VIDEO](assets/variables_introduction_1_1.mp4)
 
-Les variables sont une extension de l’interface [MetaDataMap](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) existante. Vous pouvez utiliser [MetaDataMap](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) dans ECMAScript pour accéder aux métadonnées enregistrées à l’aide de variables.
+Les variables sont une extension de l’interface [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) existante. Vous pouvez utiliser [MetaDataMap](https://helpx.adobe.com/fr/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) dans ECMAScript pour accéder aux métadonnées enregistrées à l’aide de variables.
 
 ## Création d’une variable {#create-a-variable}
 

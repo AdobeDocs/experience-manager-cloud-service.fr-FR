@@ -4,16 +4,22 @@ seo-title: Hwo to add an Adaptive Form to an AEM Sites page?
 description: Vous pouvez utiliser le composant Formulaires adaptatifs – Incorporer pour ajouter ou incorporer des formulaires adaptatifs dans des pages AEM Sites. Cela permet de remplir et d’envoyer un formulaire sans quitter ces pages.
 feature: Adaptive Forms
 exl-id: 359b05e8-d8c1-4a77-9e70-6f6b6e668560
-source-git-commit: 2a487654c3af2d2ec3aa43481caed5e1d4fc77a2
-workflow-type: ht
-source-wordcount: '1154'
-ht-degree: 100%
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
+workflow-type: tm+mt
+source-wordcount: '1174'
+ht-degree: 99%
 
 ---
 
 # Incorporer un formulaire adaptatif dans une page AEM Sites {#embed-an-adaptive-form-to-aem-sites-page}
 
-## Présentation {#overview}
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites.html) |
+| AEM as a Cloud Service | Cet article |
+
+
+## Vue d’ensemble {#overview}
 
 AEM Forms permet aux développeurs et développeuses de formulaires d’incorporer facilement des formulaires adaptatifs dans une page AEM Sites ou dans une page web hébergée en dehors d’AEM. Le formulaire adaptatif incorporé est entièrement fonctionnel, et les utilisateurs et utilisatrices peuvent le remplir et l’envoyer sans quitter la page. Il permet à l’utilisateur ou à l’utilisatrice de rester dans le contexte des autres éléments de la page Web et d’interagir simultanément avec le formulaire.
 
@@ -62,7 +68,7 @@ Pour incorporer un formulaire adaptatif à l’aide du composant **[!UICONTROL F
 
       * **Message de remerciement** : rédigez un message à l’aide de l’éditeur de texte enrichi à afficher après l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher un message de remerciement.
       * **Page de remerciement** : recherchez et sélectionnez la page à afficher après l’envoi du formulaire. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
-         * **Rediriger vers la page de remerciement** : activez cette option pour remplacer la page contenant le formulaire adaptatif incorporé par la page de remerciement. Autrement, la page de remerciement remplace le formulaire adaptatif dans le composant [!UICONTROL Formulaires adaptatifs – Incorporer] sans actualiser les sites sous-jacents de la page. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
+         * **Rediriger vers la page de remerciement** : activez cette option pour remplacer la page contenant le formulaire adaptatif incorporé par la page de remerciement. Autrement, la page de remerciement remplace le formulaire adaptatif dans le composant [!UICONTROL Formulaires adaptatifs - Incorporer] sans actualiser les sites sous-jacents de la page. Cette option n’est disponible que lorsque vous choisissez d’afficher une page de remerciement.
    * **Utiliser la langue de la page** : utilisez les paramètres régionaux de la page AEM Sites au lieu de ceux du formulaire adaptatif.
    * **Définir le focus sur le formulaire** : sélectionnez cette option pour définir le focus sur le premier champ du formulaire adaptatif.
    * **Thème** : sélectionnez un thème qui définit le style des composants de votre formulaire adaptatif. Style comprend des propriétés d’aspect, comme le style de police, la couleur d’arrière-plan, les dimensions et l’alignement.

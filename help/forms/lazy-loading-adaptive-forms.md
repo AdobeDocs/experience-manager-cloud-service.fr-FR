@@ -5,14 +5,20 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: 0cd38edb-2201-4ca6-8b84-6b5b7f76bd90
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '1017'
 ht-degree: 75%
 
 ---
 
 # Amélioration des performances des formulaires volumineux avec le chargement différé {#improve-performance-of-large-forms-with-lazy-loading}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/lazy-loading-adaptive-forms.html) |
+| AEM as a Cloud Service | Cet article |
+
 
 ## Introduction au chargement différé {#introduction-to-lazy-loading}
 
@@ -27,17 +33,17 @@ Avant de configurer le chargement différé des fragments d’un formulaire adap
 * **Identifier et créer des fragments**
 Vous pouvez configurer les fragments de formulaires adaptatifs uniquement pour le chargement différé. Un fragment est un segment autonome qui réside en dehors d’un formulaire adaptatif et peut être réutilisé dans des formulaires. Ainsi, la première étape de création d’un chargement différé consiste à identifier les sections logiques d’un formulaire et à les convertir en fragments. Vous pouvez créer un fragment à partir de zéro ou enregistrer un panneau de formulaire existant comme fragment.
 
-   <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
+  <!--For more information about creating fragments, see [Adaptive Form Fragments](adaptive-form-fragments.md).-->
 
 * **Identifier et marquer les valeurs globales**
 Les transactions Forms utilisent des éléments dynamiques pour capturer les données appropriées depuis les utilisateurs et les traiter afin de simplifier l’expérience de remplissage. Par exemple, votre formulaire contient le champ A dans le fragment X dont la valeur détermine la validité du champ B dans un autre fragment. Dans ce cas, si le fragment X est marqué pour le chargement différé, la valeur du champ A doit être disponible pour valider le champ B même si le fragment X n’est pas chargé. Pour ce faire, vous pouvez marquer le champ A comme étant global, ce qui garantit que sa valeur est disponible pour la validation du champ B lorsque le fragment X n’est pas chargé.
 
-   Pour plus d’informations sur la façon de créer une valeur de champ global, voir [Configuration du chargement différé](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Pour plus d’informations sur la façon de créer une valeur de champ global, voir [Configuration du chargement différé](lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **Règles d’écriture pour le contrôle de la visibilité des champs**
 Les formulaires incluent certains champs et sections qui ne s’appliquent pas à tous les utilisateurs et dans tous les cas. Les auteurs et les développeurs Forms utilisent la visibilité ou les règles d’affichage/masquage pour contrôler leur visibilité en fonction des entrées de l’utilisateur. Par exemple, le champ Adresse du bureau n’est pas affiché pour les utilisateurs qui choisissent Sans emploi dans le champ État de l’emploi d’un formulaire. Pour plus d’informations sur l’écriture de règles, voir [Utilisation de l’éditeur de règles](rule-editor.md).
 
-   Vous pouvez utiliser les règles de visibilité dans les fragments chargés de manière différée de sorte que les champs conditionnels soient affichés uniquement lorsqu’ils sont obligatoires. En outre, marquez le champ conditionnel comme étant global pour vous y référer dans l’expression de visibilité du fragment chargé en différé.
+  Vous pouvez utiliser les règles de visibilité dans les fragments chargés de manière différée de sorte que les champs conditionnels soient affichés uniquement lorsqu’ils sont obligatoires. En outre, marquez le champ conditionnel comme étant global pour vous y référer dans l’expression de visibilité du fragment chargé en différé.
 
 ## Configuration du chargement différé {#configuring-lazy-loading}
 
@@ -81,4 +87,4 @@ Voici des aspects importants à garder à l’esprit lors du développement des 
 * Utilisez la propriété disponible globalement des champs pour rendre la valeur des champs situés dans un panneau de chargement différé disponible pour tous les autres panneaux d’un formulaire.
 * Ne transférez pas la valeur de référence d’un champ dans un panneau différé, quel que soit le champ marqué globalement sur les fragments ou non.
 * Utilisez la fonction de réinitialisation du panneau pour réinitialiser tout ce qui est visible dans le panneau à l’aide de l’expression de clic suivante.\
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

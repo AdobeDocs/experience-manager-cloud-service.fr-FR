@@ -2,14 +2,19 @@
 title: Comment créer un modèle de formulaire adaptatif ?
 description: Créez des modèles de formulaire adaptatif en définissant la structure de base et le contenu du formulaire initial à l’aide de l’éditeur de modèles.
 exl-id: a882cba2-c621-4ff7-a972-c504641b5639
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2018'
+source-wordcount: '2038'
 ht-degree: 78%
 
 ---
 
 # Création d’un modèle de formulaire adaptatif {#adaptive-form-templates}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/template-editor.html) |
+| AEM as a Cloud Service | Cet article |
 
 Lorsque vous concevez un formulaire, vous ajoutez des champs et des composants pour définir la structure, le contenu et les actions de formulaire dans l’éditeur. Vous ajoutez des champs et des composants dans le `guideRootPanel` du conteneur de formulaires. Avec l’éditeur de modèles, vous pouvez créer un modèle qui contient la structure de base et le contenu initial que les auteurs peuvent utiliser pour créer des formulaires.
 

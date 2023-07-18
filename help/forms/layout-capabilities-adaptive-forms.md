@@ -3,14 +3,19 @@ title: Fonctions de mise en page des formulaires adaptatifs
 seo-title: Layout capabilities of Adaptive Forms
 description: La disposition et l’apparence des formulaires adaptatifs sur différents appareils sont déterminées par les paramètres de disposition. Comprenez les différentes dispositions et leur mode d’application.
 exl-id: e30c6ff9-692b-4415-8f14-b4ef616b2d12
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '779'
+source-wordcount: '799'
 ht-degree: 86%
 
 ---
 
 # Fonctions de mise en page des formulaires adaptatifs {#layout-capabilities-of-adaptive-forms}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/layout-capabilities-adaptive-forms.html) |
+| AEM as a Cloud Service | Cet article |
 
 [!DNL Adobe Experience Manager] permet de créer des formulaires adaptatifs simples d’emploi, qui offrent des expériences dynamiques aux utilisateurs finaux. La disposition des formulaires détermine l’affichage des éléments et des composants dans un formulaire adaptatif.
 

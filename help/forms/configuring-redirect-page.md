@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User
 level: Intermediate
 exl-id: e4dc01d2-7c89-4bd8-af0a-1d2df4676a9a
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 91%
+source-wordcount: '206'
+ht-degree: 89%
 
 ---
 
 # Configuration d’une page de redirection {#configuring-redirect-page}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-redirect-page.html) |
+| AEM as a Cloud Service | Cet article |
 
 Pour chaque formulaire, les auteurs peuvent configurer une page vers laquelle les utilisateurs seront redirigés après l’envoi du formulaire.
 

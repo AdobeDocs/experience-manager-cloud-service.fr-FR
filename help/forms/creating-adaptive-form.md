@@ -5,14 +5,19 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 38ca5eea-793b-420b-ae60-3a0bd83caf00
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 99%
+source-wordcount: '1519'
+ht-degree: 98%
 
 ---
 
 # Créer un formulaire adaptatif (composants de base) {#creating-an-adaptive-form}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/create-first-adaptive-form/create-your-first-adaptive-form.html) |
+| AEM as a Cloud Service | Cet article |
 
 
 Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial pour les utilisateurs professionnels, qui permet de créer rapidement des formulaires adaptatifs. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.

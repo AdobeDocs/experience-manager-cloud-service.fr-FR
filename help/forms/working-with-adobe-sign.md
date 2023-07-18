@@ -5,9 +5,9 @@ topic-tags: develop
 feature: Adaptive Forms
 role: User
 level: Intermediate
-source-git-commit: 6b38601e9bd29c71e5f70b46d2fa55a928851adc
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '3097'
+source-wordcount: '3117'
 ht-degree: 98%
 
 ---
@@ -15,12 +15,18 @@ ht-degree: 98%
 
 # Utilisation d’[!DNL Adobe Sign] dans un formulaire adaptatif {#using-adobe-sign-in-an-adaptive-form}
 
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html) |
+| AEM as a Cloud Service | Cet article |
+
+
 [!DNL Adobe Sign] permet des processus de signature électronique pour les formulaires adaptatifs. Les signatures électroniques améliorent les processus de traitement des documents pour les services juridiques, commerciaux, des ressources humaines, etc.
 
 Dans un scénario [!DNL Adobe Sign] classique et de formulaires adaptatifs, un utilisateur remplit un formulaire adaptatif pour demander un service qui requiert des signatures d’une ou de plusieurs parties. Par exemple, une demande de prêt hypothécaire et de carte de crédit nécessite des signatures légales de tous les emprunteurs et codemandeurs. Pour activer les processus de signature électronique pour des scénarios similaires, vous pouvez intégrer [!DNL Adobe Sign] à un formulaire adaptatif. Voici quelques autres exemples d’utilisation d’[!DNL Adobe Sign] :
 
 * Vous pouvez établir des contrats à partir de tout appareil à l’aide de processus entièrement automatisés d’offre, de devis et de contrat.
-* Vous pouvez exécuter plus rapidement les processus de ressources humaines et offrir à vos employés une expérience numérique plus satisfaisante.
+* Vous pouvez exécuter plus rapidement les processus de ressources humaines et offrir à vos employés une expérience digitale plus satisfaisante.
 * Vous pouvez réduire considérablement les durées des cycles de mise en œuvre des contrats et intégrer plus rapidement vos fournisseurs.
 * Créez des processus numériques pour automatiser les processus courants.
 
@@ -73,6 +79,7 @@ Pour créer un formulaire adaptatif prenant en charge les signatures :
    1. Précisez les **[!UICONTROL Nom]** et **[!UICONTROL Titre]** pour le formulaire adaptatif.
 
    1. Sélectionnez le [conteneur de configurations](adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) créé lors de l’ [!DNL Adobe Sign] intégration d’[ à [!DNL AEM Forms]](adobe-sign-integration-adaptive-forms.md).
+
    Le conteneur de configurations contient les services [!DNL Adobe Sign] Cloud Services configurés pour votre environnement. Ces services peuvent être sélectionnés dans l’éditeur de formulaires adaptatifs.
 
 1. Dans l’onglet **[!UICONTROL Modèle de formulaire]**, sélectionnez l’une des options suivantes :
@@ -114,7 +121,6 @@ Pour ajouter des champs à un formulaire adaptatif et personnaliser diverses opt
    >
    >  * L’utilisation du bloc [!DNL Adobe Sign] n’est pas obligatoire pour utiliser [!DNL Adobe Sign] dans un formulaire adaptatif. Si vous n’utilisez pas le bloc [!DNL Adobe Sign] et ajoutez des champs pour les destinataires, le champ de signature par défaut est affiché en bas des documents de signature.
    >  * Utilisez le bloc [!DNL Adobe Sign] seulement pour les formulaires adaptatifs qui génèrent automatiquement un document d’enregistrement. Si vous utilisez un fichier XDP personnalisé pour générer un document d’enregistrement ou un formulaire adaptatif basé sur un modèle de formulaire, le bloc [!DNL Adobe Sign] n’est pas pris en charge.
-
 
 
 1. Sélectionnez le composant **[!UICONTROL Bloc Adobe Sign]** et appuyez sur l’icône **[!UICONTROL Modifier]** ![Modifier](assets/Smock_Edit_18_N.svg). Il affiche des options pour ajouter des champs et mettre en forme l’apparence d’un champ.
@@ -190,15 +196,16 @@ Vous pouvez avoir un ou plusieurs destinataires pour un contrat Adobe Sign. Lors
 
    * **[!UICONTROL Adresse e-mail du destinataire] :** précisez l’adresse e-mail du destinataire. Le destinataire reçoit le contrat Adobe Sign à l’adresse électronique indiquée. Vous pouvez choisir d’utiliser une adresse e-mail fournie dans un champ de formulaire, dans le profil utilisateur Experience Manager de l’utilisateur connecté ou d’entrer manuellement une adresse e-mail. Il s’agit d’une étape obligatoire.
 
-      >[!NOTE]
-      >
-      >Assurez-vous que l’adresse e-mail du premier destinataire ou du seul destinataire (s’il existe un destinataire unique) n’est pas identique au compte [!DNL Adobe Sign] utilisé pour configurer les services cloud AEM.
+     >[!NOTE]
+     >
+     >Assurez-vous que l’adresse e-mail du premier destinataire ou du seul destinataire (s’il existe un destinataire unique) n’est pas identique au compte [!DNL Adobe Sign] utilisé pour configurer les services cloud AEM.
 
    * **[!UICONTROL Méthode d’authentification du destinataire] :** indiquez la méthode d’authentification d’un destinataire avant d’ouvrir le contrat Adobe Sign. Vous pouvez choisir entre téléphone, base de connaissances, authentification basée sur l’identité sociale et [Identifiant du gouvernement](https://helpx.adobe.com/fr/sign/using/adobesign-authentication-government-id.html) pour [!DNL Adobe Acrobat Sign]. Pour [!DNL Adobe Acrobat Sign for Government] vous pouvez choisir entre l’authentification par téléphone et l’authentification basée sur les connaissances.
+
    >[!NOTE]
    >
    >    * Par défaut, l’authentification par identité sociale offre une option d’authentification via Facebook, Google et LinkedIn. Vous pouvez contacter le service d’assistance [!DNL Adobe Sign] pour activer d’autres fournisseurs d’authentification sociale.
-
+   >
 
    * Champs **[!DNL Adobe Sign]à remplir ou à signer :** sélectionnez les champs [!DNL Adobe Sign] pour le destinataire. Un formulaire adaptatif peut avoir plusieurs champs [!DNL Adobe Sign]. Vous pouvez choisir d’activer des champs spécifiques pour un destinataire. Le champ affiche tous les blocs [!DNL Adobe Sign] disponibles. Lorsque vous sélectionnez un bloc, tous les champs du bloc sont sélectionnés. Vous pouvez utiliser l’icône X pour désélectionner un champ.
 
@@ -310,16 +317,16 @@ Après [modification des propriétés de formulaire adaptatif pour Adobe Sign](w
    * Signatures cloud : signez avec un [ID numérique](https://helpx.adobe.com/fr/sign/kb/digital-certificate-providers.html) hébergé par un prestataire de confiance.
    * Adobe Acrobat ou Reader : téléchargez et ouvrez le document avec Adobe Acrobat ou Reader pour le signer à l’aide d’une carte à puce, un jeton USB ou un ID numérique basé sur des fichiers.
 
-      >[!NOTE]
-      >
-      > La signature numérique s’applique également à [!DNL Adobe Acrobat Sign for Government] mais vous ne pouvez pas l’appliquer à l’aide de Cloud Signatures.
+     >[!NOTE]
+     >
+     > La signature numérique s’applique également à [!DNL Adobe Acrobat Sign for Government] mais vous ne pouvez pas l’appliquer à l’aide de Cloud Signatures.
+
    Après avoir ajouté le champ de signature cloud au formulaire adaptatif, effectuez les étapes suivantes pour terminer le processus de configuration :
 
    * [Activation d’Adobe Sign pour un formulaire adaptatif](#enableadobsignforanadaptiveform)
    * [Sélection d’Adobe Sign Cloud Service pour un formulaire adaptatif](#selectadobesigncloudserviceforanadaptiveform)
    * [Ajout de destinataires à un formulaire adaptatif](#addsignerstoanadaptiveform)
    * [Sélection d’une action d’envoi pour un formulaire adaptatif](#selectsubmitactionforanadaptiveform)
-
 
 ### Configuration de la page de remerciements ou du composant d’étape de résumé {#configure-the-thank-you-page-or-summary-step-component}
 

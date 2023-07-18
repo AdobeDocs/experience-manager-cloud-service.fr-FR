@@ -10,14 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 exl-id: 16f86dae-86fb-481b-8978-b8898705ed7e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b6dcb6308d1f4af7a002671f797db766e5cfe9b5
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2429'
 ht-degree: 68%
 
 ---
 
 # Éditeur de formulaires adaptatifs {#introduction-to-authoring-adaptive-forms}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-forms-authoring.html) |
+| AEM as a Cloud Service | Cet article |
 
 ## Présentation {#overview}
 
@@ -206,7 +211,7 @@ Vous pouvez faire glisser des éléments du modèle de formulaire sur le formula
    <td>Ajoute des boutons radio.</td>
   </tr>
   <tr>
-   <td>Bouton Réinitialiser</td>
+   <td>Bouton de réinitialisation</td>
    <td>Ajoute un bouton pour réinitialiser les champs de formulaire.</td>
   </tr>
   <tr>
