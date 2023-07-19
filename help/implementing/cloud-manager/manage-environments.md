@@ -2,10 +2,10 @@
 title: Gestion des environnements
 description: Découvrez les types d’environnements que vous pouvez créer et comment les créer pour votre projet Cloud Manager.
 exl-id: 93fb216c-c4a7-481a-bad6-057ab3ef09d3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e636a765cdc1be7cb0d385089e8ccc75b798844a
 workflow-type: tm+mt
-source-wordcount: '2274'
-ht-degree: 37%
+source-wordcount: '2558'
+ht-degree: 33%
 
 ---
 
@@ -172,6 +172,38 @@ Une fois activé, vous pouvez publier du contenu dans le service d’aperçu à 
 >[!NOTE]
 >
 >Votre environnement doit utiliser la version AEM `2021.05.5368.20210529T101701Z` ou ultérieure pour utiliser le service d’aperçu. Assurez-vous qu’un pipeline de mise à jour s’est correctement exécuté sur votre environnement afin que vous puissiez utiliser le service de prévisualisation.
+
+### État des régions de publication supplémentaires {#additional-region-status}
+
+Si vous avez activé d’autres régions de publication, vous pouvez vérifier l’état de ces régions à partir du **Environnements** carte.
+
+1. Sur le **Présentation** , recherchez la **Environnements** carte.
+
+1. Sur le **Environnements** carte, **État** indique s’il existe des problèmes avec les régions de publication supplémentaires configurées. Cliquez sur le bouton **Infos** pour plus d’informations sur les régions.
+
+   ![Informations supplémentaires sur l’état des régions de publication sur la carte Environnements](assets/additional-publish-region-status-environments-card.png)
+
+Vous pouvez également accéder aux mêmes informations à partir du **Environnements** .
+
+1. Sur le **Présentation** , sélectionnez **Environnements** .
+
+1. Sur le **Environnements** , sélectionnez l’environnement que vous souhaitez interroger dans le panneau de navigation de gauche.
+
+1. Une fois qu’un environnement est sélectionné :
+
+   * Le **Informations sur l’environnement** Le tableau indique les régions configurées pour l’environnement sélectionné.
+   * Le **État** de la colonne **Segments d’environnement** indique s’il existe des problèmes avec les régions de publication supplémentaires configurées. Passez la souris sur l’état pour plus d’informations sur un problème.
+
+   ![Informations supplémentaires sur l’état des régions de publication dans l’onglet Environnements](assets/additional-publish-region-status-environments-tab.png)
+
+Si des problèmes sont signalés avec des régions de publication supplémentaires :
+
+1. Sois patient, je te prie. Cloud Manager tente continuellement de récupérer la région et elle peut être disponible à tout moment.
+1. Si le problème persiste après un certain nombre d’heures, vous pouvez supprimer la région de publication supplémentaire et la rajouter (la même région ou une autre) pour déclencher un déploiement complet.
+
+La durée d’attente nécessaire pour que le système se remette seul avant d’entreprendre des actions supplémentaires dépend de l’impact de l’échec de cette région sur vos systèmes.
+
+Veuillez noter que dans tous les cas, [le trafic sera toujours acheminé vers l’autre région la plus proche qui soit en ligne.](/help/operations/additional-publish-regions.md) Si vous rencontrez toujours des problèmes, contactez l’assistance clientèle pour Adobe.
 
 ## Mise à jour des environnements {#updating-dev-environment}
 
