@@ -3,7 +3,7 @@ title: Configuration d’une action Envoyer pour un formulaire adaptatif
 description: Un formulaire adaptatif fournit plusieurs actions Envoyer. Une action Envoyer définit le mode de traitement d’un formulaire adaptatif après l’envoi. Vous pouvez utiliser des actions Envoyer intégrées ou créer les vôtres.
 hide: true
 hidefromtoc: true
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: ac9689a911be119ae53d5e1134595c567370b7c4
 workflow-type: tm+mt
 source-wordcount: '3366'
 ht-degree: 80%
@@ -12,17 +12,17 @@ ht-degree: 80%
 
 # Action Envoyer pour formulaire adaptatif {#configuring-the-submit-action}
 
+<span class="preview"> Adobe recommande d’utiliser les composants principaux pour [Ajout d’une Forms adaptative à une page AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer une Forms adaptative autonome](/help/forms/creating-adaptive-form-core-components.md). </span>
+
 
 | Version | Lien de l’article |
 | -------- | ---------------------------- |
 | AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-basic-authoring/configuring-submit-actions.html) |
 | AEM as a Cloud Service | Cet article |
+| Application | ✅ Composants principaux de formulaire adaptatif, ❎ [Composants de base de formulaires adaptatifs](/help/forms/configuring-submit-actions.md) |
 
-**S’applique à**: ✔️ Composants principaux de formulaire adaptatif ❌ [Composants de base de formulaires adaptatifs](/help/forms/configuring-submit-actions.md). Adobe recommande d’utiliser les composants principaux pour [Ajout d’une Forms adaptative à une page AEM Sites](create-or-add-an-adaptive-form-to-aem-sites-page.md) ou [créer une Forms adaptative autonome](creating-adaptive-form-core-components.md).
 
-Une action Envoyer vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle se déclenche lorsqu’un utilisateur clique sur la variable **[!UICONTROL Envoyer]** sur un formulaire adaptatif.
-
-Forms as a Cloud Service, pour Adaptive Forms basé sur les composants principaux, offre un tableau d’actions d’envoi préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
+Une action Envoyer vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle se déclenche lorsqu’un utilisateur clique sur la variable **[!UICONTROL Envoyer]** sur un formulaire adaptatif. Forms as a Cloud Service, pour Adaptive Forms basé sur les composants principaux, offre un tableau d’actions d’envoi préconfigurées. Ces actions d’envoi prêtes à l’emploi vous permettent de :
 
 * Envoyez facilement des données de formulaire par courrier électronique.
 * Lancez Microsoft Power Automatisez les flux ou les flux de AEM lors de la transmission des données.
