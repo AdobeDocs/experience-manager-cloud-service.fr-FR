@@ -6,7 +6,7 @@ index: false
 source-git-commit: 372e9c6a10f7769c0db52d5909f400ce5af84b85
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 2%
+ht-degree: 12%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 2%
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
 >title="Éditeur universel"
->abstract="Découvrez comment vos applications sans interface utilisateur graphique peuvent utiliser Universal Editor pour apporter des modifications en contexte et à faible friction au bout des doigts de vos auteurs."
+>abstract="Découvrez comment vos applications découplées peuvent utiliser l’éditeur universel pour mettre les modifications en contexte et à faible friction à la portée de vos auteurs."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
->title="Lancement d’Universal Editor"
->abstract="Dans ce guide, nous allons explorer l’éditeur universel et la manière dont il permet à quiconque de modifier tous les aspects de votre contenu dans n’importe quelle mise en oeuvre, ce qui entraîne une vitesse de contenu améliorée.<br><br>Lancez ce module dans un nouvel onglet en cliquant ci-dessous, puis suivez ce guide."
+>title="Lancer l’éditeur universel"
+>abstract="Dans ce guide, nous allons explorer l’éditeur universel et la manière dont il permet à quiconque de modifier tous les aspects de votre contenu dans n’importe quelle implémentation, ce qui entraîne une vitesse de contenu améliorée.<br><br>Lancez ce module dans un nouvel onglet en cliquant ci-dessous, puis suivez ce guide."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="Dans ce module, vous avez appris à personnaliser le contenu à l’aide d’Universal Editor."
+>title="Dans ce module, vous avez appris à personnaliser le contenu à l’aide de l’éditeur universel."
 >abstract=""
 
 ## Utilisation de l’émulateur pour afficher le contenu tel que vos Readers {#emulators}
