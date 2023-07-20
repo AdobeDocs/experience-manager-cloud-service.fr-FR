@@ -4,10 +4,10 @@ description: Découvrez comment utiliser les fragments de contenu et l’API Gra
 hidefromtoc: true
 index: false
 exl-id: f5e379c8-e63e-41b3-a9fe-1e89d373dc6b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: b9b9cf79173a0ae486bd5d8fcbc1fec48c0b2bc8
 workflow-type: tm+mt
-source-wordcount: '1116'
-ht-degree: 94%
+source-wordcount: '1086'
+ht-degree: 96%
 
 ---
 
@@ -67,10 +67,6 @@ Ouvrez l’Explorateur GraphQL dans un nouvel onglet. Vous pouvez y créer et va
    ![Requête de liste](assets/do-not-localize/list-query-1-3-4-5.png)
 
 Vous venez de valider une requête de liste pour obtenir une liste complète de tous les fragments de contenu. Ce processus permet de s’assurer que la réponse est bien celle attendue par votre application, avec des résultats qui illustrent la manière dont vos applications et sites web récupéreront le contenu créé dans AEM.
-
->[!NOTE]
->
->Si vous ne pouvez pas sélectionner la variable **AEM des ressources de démonstration** dans la liste déroulante, contactez l’assistance clientèle d’Adobe ou contactez l’ [AEM canal du Slack d’essais.](https://adobe-dx-support.slack.com/)
 
 ## Requête pour obtenir un fragment de contenu spécifique {#bypath-query}
 
