@@ -2,9 +2,9 @@
 title: Répétabilité dans un formulaire adaptatif (composants principaux)
 description: Utilisez la fonction de répétabilité des composants du panneau pour répéter des sections similaires dans un formulaire adaptatif.
 role: Architect, Developer, Admin, User
-source-git-commit: f7f30545b76afa6abd4f49316d0fb2245f5470c2
+source-git-commit: fcdb96a6bbe8ff8761293eedc0d38efaecb56037
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1391'
 ht-degree: 31%
 
 ---
@@ -30,7 +30,7 @@ Prenons l’exemple d’un formulaire utilisé pour collecter des informations s
 * Définir le nombre minimal ou maximal de répétitions pour un composant de formulaire adaptatif
 * Utilisez l’éditeur de règles pour configurer les actions d’ajout ou de suppression pour les sections répétables.
 
-Vous pouvez utiliser la variable [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) composants pour rendre les sections d’un formulaire adaptatif répétables. Vous pouvez ajouter des composants enfants au panneau, à l’accordéon, aux onglets horizontaux ou aux composants de l’assistant pour créer une section répétable dans un formulaire.
+Vous pouvez utiliser la variable [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html), [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html)ou [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) pour rendre les sections d’un formulaire adaptatif répétables. Vous pouvez ajouter des composants enfants au panneau, à l’accordéon, aux onglets horizontaux ou aux composants de l’assistant pour créer une section répétable dans un formulaire.
 
 
 Les exemples de ce document reposent sur la fonction [Panneau](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/panel-container.html) composant. Vous pouvez effectuer les étapes identiques pour créer la variable [Accordéon](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/accordion.html), [Onglets horizontaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/horizontal-tabs.html), et [Assistant](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/wizard.html) composants répétables.
@@ -131,7 +131,11 @@ Le parent du panneau doit contenir un bouton de suppression pour supprimer l’i
 >`Panel1.instanceManager.instances[1].textbox.value`
 >
 >
->Pour plus d’informations, voir : Class: InstanceManager#instances dans [Référence API Java pour AEM Forms](https://adobe.com/go/learn_aemforms_documentation_63_fr).
+>
+
+<!-- 
+>For more information, see: Class: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).      
+-->
 
 >[!NOTE]
 >
@@ -221,7 +225,7 @@ Dans le code suivant, le panneau`SampleType` utilise la propriété minOccurs &a
 ```
 
 
-## articles connexes
+## Articles connexes
 
 * [Créer un formulaire adaptatif](creating-adaptive-form-core-components.md)
 * [Créer un style ou des thèmes pour vos formulaires](using-themes-in-core-components.md)
