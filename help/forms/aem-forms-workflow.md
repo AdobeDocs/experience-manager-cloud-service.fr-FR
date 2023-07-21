@@ -8,9 +8,9 @@ topic-tags: publish, document_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
-source-git-commit: 7163eb2551f5e644f6d42287a523a7dfc626c1c4
+source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2362'
 ht-degree: 70%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 70%
 
 # Workflow basé sur l’utilisation de Forms sur OSGi{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![Image à forte identification](do-not-localize/header.png)
 
 Les entreprises collectent des données à partir de centaines, de milliers de formulaires, de divers systèmes principaux et de sources de données en ligne ou hors ligne. Ils disposent également d’un ensemble dynamique d’utilisateurs pour prendre des décisions sur les données, ce qui implique des processus itératifs de révision et d’approbation.
 
