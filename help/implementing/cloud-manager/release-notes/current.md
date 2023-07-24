@@ -3,10 +3,10 @@ title: Notes de mise à jour de Cloud Manager 2023.7.0 dans Adobe Experience�
 description: Consultez les notes de mise à jour de Cloud Manager 2023.7.0 dans AEM as a Cloud Service.
 feature: Release Information
 exl-id: 9c73d7ab-c2c2-4803-a07b-e9054220c6b2
-source-git-commit: 1b46f763903a1b103837ed7e8cc498ad08ce64f1
+source-git-commit: 2721cb20083eeda7546513817f1ddfe12e9cb43a
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 29%
+source-wordcount: '265'
+ht-degree: 32%
 
 ---
 
@@ -25,11 +25,13 @@ La date de publication de la version 2023.7.0 de Cloud Manager dans AEM as a Clo
 
 ## Nouveautés {#what-is-new}
 
-* Les cartes de la page d’entrée de Cloud Manager indiquent désormais si [sécurité renforcée](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) est activé pour leurs programmes.
+* Les cartes de la page de destination de Cloud Manager indiquent désormais si la [sécurité renforcée](/help/implementing/cloud-manager/getting-access-to-aem-in-cloud/creating-production-programs.md) est activée pour leurs programmes.
 * Si un développement [pipeline](/help/implementing/cloud-manager/configuring-pipelines/introduction-ci-cd-pipelines.md) ne contient aucune étape de test, les utilisateurs ont désormais la possibilité d’inclure des étapes de test lorsqu’ils [démarrez le pipeline.](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#running-pipelines)
    * Ce processus sera mis en oeuvre par étapes.
 * When [annulation de l&#39;exécution,](/help/implementing/cloud-manager/configuring-pipelines/managing-pipelines.md#view-details) l’étape de validation de l’exécution du pipeline demande maintenant à l’utilisateur de fournir une raison d’annuler.
    * Ce processus sera mis en oeuvre par étapes.
+* Les utilisateurs peuvent désormais accéder à [journaux du processus de copie de contenu.](/help/implementing/developing/tools/content-copy.md#accessing-logs)
+   * Cette option n’est disponible que si les environnements source et de destination se trouvent sur AEM version `2023.7.12549` ou supérieur.
 
 ## Correctifs {#bug-fixes}
 

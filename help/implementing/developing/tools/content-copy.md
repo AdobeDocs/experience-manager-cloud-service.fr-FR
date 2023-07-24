@@ -2,12 +2,13 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production sur AEM as a Cloud Service à des environnements inférieurs à des fins de test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f08048b2378b150210a3fd1168206f4efb0c4f8e
+source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
 workflow-type: tm+mt
-source-wordcount: '1203'
-ht-degree: 54%
+source-wordcount: '1308'
+ht-degree: 50%
 
 ---
+
 
 # Outil de copie de contenu {#content-copy}
 
@@ -40,6 +41,8 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 |---|---|---|
 | Créer et modifier des [jeux de contenu](#create-content-set) | Requis | Non requis |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
+
+Pour plus d’informations sur les autorisations et sur la manière de les définir, consultez le document . [AEM l’équipe as a Cloud Service et les profils de produit.](/help/onboarding/aem-cs-team-product-profiles.md)
 
 ## Créer un jeu de contenu {#create-content-set}
 
@@ -174,6 +177,16 @@ Pour ce faire, sur la page **Activité de copie de contenu**, sélectionnez l’
 >Lorsque vous annulez une opération de copie de contenu, une copie partielle du contenu peut s’afficher dans l’environnement de destination. Cette situation peut rendre l’environnement de destination inutilisable.
 >
 >Si votre environnement se trouve dans un tel état en raison d’une annulation, contactez l’assistance clientèle Adobe pour obtenir de l’aide.
+
+### Accès aux journaux {#accessing-logs}
+
+Vous pouvez consulter les journaux des environnements source et de destination pour tout processus de copie de contenu terminé.
+
+Pour ce faire, sur la page **Copie de l’activité de contenu** , sélectionnez **Journaux** dans le menu représentant des points de suspension du processus de copie pour lequel vous souhaitez consulter les journaux, puis choisissez l’environnement pour lequel vous souhaitez effectuer la vérification.
+
+![Accès aux journaux du processus de copie de contenu](assets/copy-content-logs.png)
+
+Les journaux sont téléchargés sur votre ordinateur local. Si le téléchargement ne démarre pas, vérifiez les paramètres du bloqueur de fenêtres contextuelles.
 
 ## Limites {#limitations}
 
