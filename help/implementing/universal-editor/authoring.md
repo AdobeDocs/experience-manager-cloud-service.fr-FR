@@ -2,12 +2,13 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 05554f397a843ede5a723b206b6e0748e2d6ba96
+source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
 workflow-type: tm+mt
-source-wordcount: '1682'
-ht-degree: 44%
+source-wordcount: '1939'
+ht-degree: 35%
 
 ---
+
 
 # Création de contenu avec l’éditeur universel {#authoring}
 
@@ -141,7 +142,7 @@ Vous pouvez également choisir d’émuler un appareil mobile et dans l’édite
 
 #### Ouvrir l’aperçu de l’application {#open-app-preview}
 
-Appuyez ou cliquez sur l’icône Ouvrir l’aperçu de l’application pour ouvrir la page que vous êtes en train de modifier dans son propre navigateur, sans passer par l’éditeur pour prévisualiser les modifications.
+Appuyez ou cliquez sur l’icône d’aperçu de l’application ouverte pour ouvrir la page que vous êtes en train de modifier dans son propre onglet de navigateur, sans l’éditeur pour prévisualiser votre contenu.
 
 ![Ouvrir l’aperçu de l’application](assets/open-app-preview.png)
 
@@ -177,9 +178,12 @@ En mode Aperçu, la page rendue dans l’éditeur est telle qu’elle apparaîtr
 
 #### Mode texte {#text-mode}
 
-En mode texte, la page est rendue dans l’éditeur, mais l’auteur du contenu peut cliquer pour sélectionner le contenu texte à modifier. Il s’agit du mode par défaut de l’éditeur lorsqu’une page est chargée.
+En mode texte, l’auteur du contenu peut cliquer pour sélectionner le contenu texte.
 
 ![Mode texte](assets/text-mode.png)
+
+* Vous pouvez [modifier du texte brut ;](#editing-content) en place.
+* Vous pouvez également [modifier du texte enrichi ;](#editing-rich-text) en place avec des options de mise en forme supplémentaires affichées dans le rail du composant.
 
 >[!TIP]
 >
@@ -187,9 +191,11 @@ En mode texte, la page est rendue dans l’éditeur, mais l’auteur du contenu 
 
 #### Mode multimédia {#media-mode}
 
-En mode multimédia, la page est rendue dans l’éditeur, mais l’auteur du contenu peut cliquer pour sélectionner le contenu multimédia à modifier.
+En mode multimédia, l’auteur du contenu peut cliquer pour sélectionner le contenu multimédia.
 
 ![Mode média](assets/media-mode.png)
+
+Les détails du contenu s’affichent dans le rail du composant et l’auteur peut également [modifiez le contenu multimédia.](#editing-media)
 
 >[!TIP]
 >
@@ -197,11 +203,11 @@ En mode multimédia, la page est rendue dans l’éditeur, mais l’auteur du co
 
 #### Mode de composant {#component-mode}
 
-En mode Composant, la page est rendue dans l’éditeur, mais l’auteur du contenu peut cliquer pour sélectionner les composants de page.
+En mode Composant, l’auteur du contenu peut cliquer pour sélectionner [Fragments de contenu.](/help/assets/content-fragments/content-fragments.md)
 
 ![Mode Composant](assets/component-mode.png)
 
-Lorsque vous sélectionnez un fragment de contenu, ses détails s’affichent dans le [rail de composant.](#component-rail)
+Lorsque vous sélectionnez un fragment de contenu, les détails s’affichent dans le rail du composant, où vous pouvez [modifiez le fragment de contenu.](#edit-content-fragment)
 
 >[!TIP]
 >
@@ -209,11 +215,13 @@ Lorsque vous sélectionnez un fragment de contenu, ses détails s’affichent da
 
 #### Modifier {#edit}
 
-Dans [mode composant,](#component-mode) si vous sélectionnez un fragment de contenu, l’option d’édition s’affiche sur le rail de mode.
+Dans [mode composant,](#component-mode) si vous sélectionnez une [Fragment de contenu,](/help/assets/content-fragments/content-fragments.md) l’option d’édition s’affiche sur le rail de mode.
 
 ![Icône Modifier](assets/edit.png)
 
-Appuyez ou cliquez sur le bouton Modifier pour ouvrir l’éditeur de fragments de contenu dans un nouvel onglet, ce qui vous permet de modifier le contenu référencé ainsi que le contenu texte et multimédia dans l’éditeur universel.
+Appuyez ou cliquez sur le bouton Modifier pour ouvrir la [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) dans un nouvel onglet, ce qui vous permet d’accéder à toutes les fonctionnalités de l’éditeur de fragments de contenu.
+
+Vous pouvez également modifier les détails du fragment de contenu dans le [rail du composant](#edit-content-fragment) selon les besoins de votre workflow.
 
 >[!TIP]
 >
@@ -223,7 +231,7 @@ Appuyez ou cliquez sur le bouton Modifier pour ouvrir l’éditeur de fragments 
 
 L’éditeur occupe la majeure partie de la fenêtre et est l’endroit où la page indiquée dans [la barre d’emplacement ;](#location-bar) est rendue.
 
-* Si l’éditeur est en mode de modification, par exemple [mode texte](#text-mode) ou [mode média,](#media-mode) le contenu sera modifiable et vous ne pouvez pas suivre les liens.
+* Si l’éditeur est en mode de modification, par exemple [mode texte](#text-mode) ou [mode média,](#media-mode) le contenu sera modifiable, mais vous ne pouvez pas suivre les liens.
 * Si l’éditeur se trouve dans [mode aperçu,](#preview-mode) le contenu sera navigable et vous pouvez suivre les liens, mais vous ne pouvez pas le modifier.
 
 ![Éditeur](assets/editor.png)
@@ -240,11 +248,11 @@ En mode Propriétés, le rail affiche les propriétés du composant actuellement
 
 ![Mode Propriétés](assets/properties-mode.png)
 
-Les détails du composant sélectionné s’affichent dans le rail. Si vous avez sélectionné un fragment de contenu à l’aide de [mode composant,](#component-mode) vous pouvez modifier ses paramètres dans le rail des composants. Les modifications sont enregistrées automatiquement par l’éditeur universel.
+Selon le type de composant sélectionné, les détails peuvent être affichés et modifiés dans le rail des propriétés.
 
 ![Détails du composant](assets/component-details.png)
 
-Notez que certains composants ne comportent pas de détails qui peuvent être affichés.
+Notez que tous les composants ne comportent pas de détails qui peuvent être affichés et/ou modifiés.
 
 >[!TIP]
 >
@@ -271,17 +279,59 @@ La modification du contenu est simple et intuitive. Dans les modes de modificati
 
 ![Le contenu modifiable est mis en surbrillance dans une case bleue.](assets/editable-content.png)
 
-Il vous suffit d’appuyer ou de cliquer sur le contenu dans la case bleue pour lancer un éditeur statique et pouvoir ainsi apporter vos modifications. Vos modifications sont enregistrées automatiquement.
+Notez qu’en mode d’édition, le fait d’appuyer ou de cliquer sur du contenu sélectionne ce dernier en vue de le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez en [mode Aperçu.](#preview-mode)
+
+Selon le [mode](#mode-rail) vous vous trouvez dans et le contenu que vous sélectionnez ; il se peut que vous disposiez de différentes options de modification en place et que vous puissiez consulter des propriétés supplémentaires pour le contenu à l’aide de la variable [rail de composant.](#component-rail)
+
+### Modification de texte brut {#edit-plain-text}
+
+Si vous êtes dans [mode texte](#text-mode) et sélectionnez un composant de texte brut, vous pouvez modifier le texte en place.
 
 ![Modification du contenu](assets/editing-content.png)
 
-Notez qu’en mode d’édition, le fait d’appuyer ou de cliquer sur du contenu sélectionne ce dernier en vue de le modifier. Si vous souhaitez parcourir votre contenu en suivant les liens, passez en [mode Aperçu.](#preview-mode)
+Il vous suffit de saisir pour mettre à jour le contenu. Appuyez sur Entrée/Retour ou appuyez ou cliquez en dehors de la zone de texte pour enregistrer vos modifications.
 
-Selon le [mode](#mode-rail) si vous êtes dans et que le contenu que vous sélectionnez est différent, il se peut que vous disposiez d’options de modification statique différentes.
+### Modification de texte enrichi {#edit-rich-text}
 
-En outre, vous pouvez consulter des propriétés supplémentaires pour le contenu à l’aide de la variable [rail de composant.](#component-rail) Par exemple, si vous sélectionnez un composant de texte enrichi, vous pouvez modifier les options de mise en forme dans le rail du composant.
+Si vous êtes dans [mode texte](#text-mode) et sélectionnez un composant de texte enrichi, vous pouvez modifier le texte en place.
+
+Il vous suffit de saisir pour mettre à jour le contenu. Appuyez sur Entrée/Retour ou appuyez ou cliquez en dehors de la zone de texte pour enregistrer vos modifications.
+
+En outre, les options de mise en forme et les détails de votre texte sont disponibles dans le rail du composant.
 
 ![Modification d’un composant de texte enrichi](assets/rich-text-editing.png)
+
+Les modifications de mise en forme sont automatiquement enregistrées dans votre contenu.
+
+### Modification du média {#edit-media}
+
+Si vous êtes dans [mode média](#media-mode) et que vous sélectionnez une image, vous pouvez afficher ses détails dans le rail de composant.
+
+![Modification du média](assets/ue-edit-media.png)
+
+Appuyez ou cliquez sur le bouton **Remplacer** en dessous de l’aperçu de l’image sélectionnée dans le rail du composant pour remplacer l’image par une autre de votre bibliothèque de ressources.
+
+1. Le [sélecteur de ressources](/help/assets/asset-selector.md#using-asset-selector) s’ouvre pour vous permettre de sélectionner une ressource.
+1. Appuyez ou cliquez sur pour sélectionner une nouvelle ressource.
+1. Appuyez ou cliquez sur **Sélectionner** pour revenir au rail du composant dans lequel la ressource a été remplacée.
+
+Les modifications sont automatiquement enregistrées dans votre contenu.
+
+>[!TIP]
+>
+>Utiliser la touche chaude `R` pour ouvrir le sélecteur de ressources afin de remplacer l’image sélectionnée.
+
+### Modification de fragments de contenu {#edit-content-fragment}
+
+Si vous êtes dans [mode composant](#component-mode) et sélectionnez un [Fragment de contenu,](/help/assets/content-fragments/content-fragments.md) vous pouvez modifier ses détails dans le rail des composants.
+
+![Modification d’un fragment de contenu](assets/ue-edit-cf.png)
+
+Les champs définis dans le modèle de contenu du fragment de contenu sélectionné sont affichés et modifiables dans le rail du composant.
+
+Les modifications sont automatiquement enregistrées dans votre contenu.
+
+Si vous souhaitez modifier votre fragment de contenu dans le [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) cliquez sur [bouton Modifier](#edit) dans le rail de mode.
 
 ## Prévisualisation du contenu {#previewing-content}
 
