@@ -2,14 +2,16 @@
 title: Prise en charge des notes de bas de page
 description: Prise en charge de l’éditeur de texte enrichi pour les notes de bas de page.
 exl-id: f04dae84-daab-42f8-876f-02fe426f62be
-source-git-commit: 9cff6e94b38016f008fd8177be2e071a530d80b6
-workflow-type: ht
-source-wordcount: '369'
-ht-degree: 100%
+source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+workflow-type: tm+mt
+source-wordcount: '426'
+ht-degree: 88%
 
 ---
 
 # Composant de note de bas de page. {#footnotecomponent}
+
+<span class="preview"> Adobe recommande d’utiliser la capture de données moderne et extensible. [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour [création d’un Forms adaptatif](/help/forms/creating-adaptive-form-core-components.md) ou [Ajout de Forms adaptatif à des pages AEM Sites](/help/forms/create-or-add-an-adaptive-form-to-aem-sites-page.md). Ces composants représentent une avancée significative dans la création de Forms adaptatif, ce qui garantit des expériences utilisateur impressionnantes. Cet article décrit l’approche plus ancienne de la création de Forms adaptatif à l’aide de composants de base. </span>
 
 La **[!UICONTROL Note de bas de page]** est le texte d’informations ou les notes supplémentaires qui apparaissent à la fin de la page. La [!UICONTROL Note de bas de page] comprend les notes qui sont indiquées dans votre texte avec des nombres sous forme d’exposant.
 
@@ -44,13 +46,11 @@ Pour ajouter une note de bas de page dans les formulaires adaptatifs, procédez 
    >* Les notes de bas de page sont numérotées automatiquement et s’affichent de la manière dont elles sont créées dans le formulaire adaptatif.
    >* S’il existe des notes de bas de page en double, le nombre est le même pour toutes les notes de bas de page en double.
 
-
 1. À partir de l’explorateur des composants, glissez-déposez le composant **[!UICONTROL Espace réservé pour la note de bas de page]** sur le formulaire adaptatif.
    >[!NOTE]
    >
    >* Sur l’instance de publication, les notes de bas de page s’affichent à l’emplacement où le composant **[!UICONTROL Espace réservé de la note de bas de page]** est placé sur le formulaire adaptatif.
    >* Lorsque vous naviguez entre différents panneaux, seules les notes de bas de page visibles apparaissent dans l’**[!UICONTROL Espace réservé de la note de bas de page]** présent dans le panneau de navigation.
-
 
 1. Enregistrez les propriétés.
 
