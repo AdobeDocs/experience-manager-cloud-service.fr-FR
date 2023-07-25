@@ -1,12 +1,12 @@
 ---
 title: Modification En Contexte
-description: Découvrez comment vous pouvez utiliser l’éditeur universel pour modifier n’importe quel aspect de votre contenu en place et dans son contexte dans n’importe quelle mise en oeuvre.
+description: Découvrez comment utiliser l’éditeur universel pour modifier n’importe quel aspect de votre contenu en place et dans son contexte dans n’importe quelle mise en oeuvre.
 hidefromtoc: true
 index: false
-source-git-commit: 4dd0998862baf3e1d0c8ed2d42006acfcf5d0873
+source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
-source-wordcount: '797'
-ht-degree: 6%
+source-wordcount: '961'
+ht-degree: 4%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Modification en contexte"
->abstract="Découvrez comment vos applications sans tête peuvent tirer parti de l’éditeur universel pour apporter des modifications en contexte et à faible friction au bout des doigts de vos auteurs."
+>title="Edition en contexte"
+>abstract="Découvrez comment vos applications sans interface utilisateur graphique peuvent tirer parti d’Universal Editor afin d’apporter de la faible friction, dans l’édition contextuelle, au bout des doigts de vos auteurs."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -25,12 +25,16 @@ ht-degree: 6%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide_footer"
->title="Dans ce module, vous avez appris à personnaliser du contenu dans le contexte et en place à l’aide d’Universal Editor."
+>title="Dans ce module, vous avez appris à personnaliser le contenu en contexte et en place à l’aide de l’éditeur universel."
 >abstract=""
 
 ## Modifier le texte en contexte {#edit-text}
 
-La modification statique et contextuelle peut souvent s’avérer préférable à l’édition de contenu sans affichage structuré, comme dans l’éditeur de fragments de contenu, que vous avez vu dans les modules précédents.
+La modification en place et dans le contexte peut souvent s’avérer préférable à l’édition de contenu sans affichage structuré, comme dans l’éditeur de fragments de contenu, que vous avez vu dans les modules précédents.
+
+>[!NOTE]
+>
+>Pour utiliser Universal Editor dans cette version d’évaluation, vous devez utiliser Chrome comme navigateur et non en mode incognito. Il s’agit d’une limitation de l’expérience d’évaluation, et non de l’éditeur universel.
 
 L’éditeur universel vous permet de modifier facilement votre texte en contexte et en place, ce qui vous permet de créer du contenu simple et intuitif.
 
@@ -47,6 +51,26 @@ L’éditeur universel vous permet de modifier facilement votre texte en context
 1. Appuyez sur la touche Entrée/Retour ou appuyez ou cliquez en dehors du composant de texte pour que vos modifications soient enregistrées automatiquement.
 
 Universal Editor enregistre automatiquement vos modifications dans l’environnement de création. Vous devez toujours les publier pour que vos lecteurs puissent le voir, ce que nous ferons ultérieurement.
+
+## Modifier le média en contexte {#edit-media}
+
+Vous pouvez également permuter des images tout en restant dans le contexte de votre contenu à l’aide de l’éditeur universel.
+
+1. Modifiez l’éditeur en **Média** en appuyant ou en cliquant sur **Média** sur le rail de mode.
+
+1. Appuyez ou cliquez sur l’image du surfeur pour la sélectionner.
+
+1. Dans le rail des composants, vous pouvez voir le détail de la ressource. Appuyez ou cliquez sur **Remplacer**.
+
+   ![Sélectionner une image à modifier](assets/do-not-localize/ue-edit-media.png)
+
+1. Dans le **Sélectionner les ressources** , faites défiler la page vers le bas et appuyez ou cliquez sur `surfer-wave-02.JPG` image pour la sélectionner.
+
+1. Appuyez ou cliquez sur **Sélectionner** dans le **Sélectionner les ressources** fenêtre.
+
+   ![Utilisation de la fenêtre Sélectionner une ressource pour sélectionner une image](assets/do-not-localize/ue-select-asset.png)
+
+L’image est remplacée par celle que vous avez sélectionnée.
 
 ## Expérimenter votre contenu comme vos Readers {#emulators}
 
@@ -102,6 +126,5 @@ Pour accélérer votre expérience de création de contenu lorsque l’édition 
 1. Une nouvelle **Modifier** s’affiche sur le rail de mode. Appuyez ou cliquez sur le bouton **Modifier** pour ouvrir l’éditeur de fragment de contenu sur un nouvel onglet.
 
 ![Sélection de fragments de contenu dans l’éditeur universel](assets/do-not-localize/ue-content-fragments.png)
-
 
 Dans le nouvel onglet, vous pouvez désormais modifier le fragment de contenu que vous avez sélectionné dans l’éditeur universel.
