@@ -4,10 +4,10 @@ description: Utilisez un exemple d’application React pour découvrir comment p
 hidefromtoc: true
 index: false
 exl-id: 32290ad4-d915-41b7-a073-2637eb38e978
-source-git-commit: 3645918f6ce592b6c70cb4339ab6f0e5e9d71519
+source-git-commit: 3177832b32c98bf463c763dafe2d9e284dc2ac28
 workflow-type: tm+mt
-source-wordcount: '1036'
-ht-degree: 97%
+source-wordcount: '1044'
+ht-degree: 96%
 
 ---
 
@@ -79,7 +79,7 @@ Maintenant que vous avez modifié un titre dans l’application, essayez de chan
 
    ![Supprimer une image du fragment](assets/do-not-localize/swap-image-4.png)
 
-1. Appuyez ou cliquez sur **Ajouter une ressource**.
+1. Appuyez ou cliquez sur **Ajout d’une ressource** puis **Parcourir les ressources** dans le menu contextuel.
 
 1. La boîte de dialogue **Sélectionner une ressource** s’ouvre et le chemin d’accès **sample-wknd-app** > **en** > **image-files** est automatiquement sélectionné.
 
