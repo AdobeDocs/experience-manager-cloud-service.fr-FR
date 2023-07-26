@@ -1,13 +1,13 @@
 ---
 title: Centre d’actions
-description: Tirez parti du Centre d’actions pour agir facilement sur les incidents et d’autres informations importantes
+description: Tirez parti du Centre d’actions pour agir facilement sur les incidents et d’autres informations importantes.
 hidefromtoc: true
 hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 17%
+source-wordcount: '708'
+ht-degree: 29%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 17%
 >[!NOTE]
 >Cette fonctionnalité n’a pas été publiée.
 
-AEM as Cloud Service envoie des notifications par e-mail à Actions Center en cas d’incident critique nécessitant une action immédiate et des recommandations proactives pour les optimisations. Par exemple, une file d’attente bloquée ou un jeu d’informations d’identification arrivant à expiration ; l’ensemble complet des types de notifications du Centre d’actions est visible dans la variable [tableau ci-dessous](#supported-notification-types), qui s’agrandira au fil du temps.
+AEM as Cloud Service envoie des notifications par e-mail à Actions Center en cas d’incident critique nécessitant une action immédiate et des recommandations proactives pour les optimisations. Par exemple, une file d’attente bloquée ou un ensemble d’informations d’identification arrivant à expiration ; l’ensemble des types de notification du Centre d’actions peut être visualisé dans la [tableau sous](#supported-notification-types), qui s’agrandira au fil du temps.
 
 Lorsqu’une notification électronique du Centre d’actions est reçue, vous pouvez cliquer dessus pour ouvrir le Centre d’actions d’AEM as a Cloud Service, avec une fenêtre contextuelle présentant un contexte supplémentaire expliquant l’action à entreprendre par un client.
 
@@ -24,10 +24,10 @@ Outre l’affichage d’informations sur la notification qui vient d’être cli
 
 Il existe deux catégories de notifications de haut niveau qui apparaissent dans le centre d’actions :
 
-1. Les incidents opérationnels : un événement s’est produit, ce qui nécessite généralement une résolution rapide. Par exemple, la résolution d’une file d’attente bloquée.
-1. Recommandations proactives : l’Adobe a une recommandation pour une action qu’un client doit entreprendre prochainement. Par exemple, pour arrêter de référencer une interface utilisateur obsolète.
+1. Incidents opérationnels : il s’agit d’événements qui nécessitent généralement une résolution rapide. Par exemple, la résolution d’une file d’attente bloquée.
+1. Recommandations proactives : Adobe recommande au client ou à la cliente une action à effectuer dans un avenir proche. Par exemple, pour arrêter de référencer une interface utilisateur obsolète.
 
-Voir [tableau ci-dessous](#supported-notification-types) pour les notifications actuellement prises en charge dans le centre d’actions.
+Voir [tableau sous](#supported-notification-types) pour les notifications actuellement prises en charge dans le centre d’actions.
 
 Dans le Centre d’actions, vous pouvez sélectionner un programme et un environnement spécifiques, ce qui a pour effet de filtrer cette portée.
 
@@ -60,19 +60,19 @@ Comme tous les tickets d’assistance, il apparaîtra dans l’[onglet Cas d’a
 
 ![Assistance d’Admin Console](/help/operations/assets/admin-console-support.png)
 
-## Quelles Notifications S’Affichent ? {#which-notification}
+## Quelles notifications s’affichent ? {#which-notification}
 
 AEM as a Cloud Service comporte plusieurs types de notifications, mais seul un sous-ensemble apparaît dans le Centre d’actions, comme illustré dans le tableau ci-dessous.
 
 | Type de notification | Description | Comment configurer | Apparaît dans le Centre d’actions |
 |---|---|---|---|
-| Incidents opérationnels | Des incidents critiques nécessitant une action immédiate | Utilisateur affecté au profil de produit &quot;Notification d’incident - Cloud Service&quot; | X |
-| Recommandations proactives | Optimisations qui doivent être planifiées | Utilisateur affecté au profil de produit &quot;Notification proactive - Cloud Service&quot; | X |
-| Statuts du pipeline de Cloud Manager | Informations sur l’état de vos pipelines | Utilisateur avec des rôles Propriétaire de l’entreprise, Responsable de programme ou Responsable de déploiement, case à cocher &quot;Autres&quot; sélectionnée dans [Préférences Experience Cloud](https://experience.adobe.com/preferences), comme [décrit ici](/help/implementing/cloud-manager/notifications.md). |   |
+| Incidents opérationnels | Des incidents critiques nécessitant une action immédiate. | Utilisateur affecté au profil de produit &quot;Notification d’incident - Cloud Service&quot; | X |
+| Recommandations proactives | Optimisations qui doivent être planifiées. | Utilisateur affecté au profil de produit &quot;Notification proactive - Cloud Service&quot; | X |
+| Statuts du pipeline de Cloud Manager | Informations sur l’état de vos pipelines | Personne avec des rôles Propriétaire de l’entreprise, Responsable de programme ou Responsable de déploiement, case à cocher « Autres » sélectionnée dans [Préférences Experience Cloud](https://experience.adobe.com/fr/preferences), comme [décrit ici](/help/implementing/cloud-manager/notifications.md). |   |
 
-## Types de notification pris en charge {#supported-notification-types}
+## Types de notifications pris en charge {#supported-notification-types}
 
-Le tableau suivant répertorie les types de notifications actuellement pris en charge dans le Centre d’actions.
+Le tableau suivant répertorie les types de notifications actuellement pris en charge dans le Centre d’actions. Les notifications sont actuellement limitées aux environnements de production.
 
 | Type de notification | Profil de produit associé | Mesure corrective |
 |---|---|---|
