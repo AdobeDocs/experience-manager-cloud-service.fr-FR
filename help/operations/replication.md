@@ -2,10 +2,10 @@
 title: Réplication
 description: Distribution et dépannage de la réplication.
 exl-id: c84b4d29-d656-480a-a03a-fbeea16db4cd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: e545ff2bc3dc0c56cd6d3e1160b453551816f07f
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 48%
+source-wordcount: '1334'
+ht-degree: 46%
 
 ---
 
@@ -55,7 +55,7 @@ Vous pouvez déclencher une réplication d’arborescence en choisissant **Outil
 
 ![La carte de processus Publier l’arborescence de contenu](/help/operations/assets/publishcontenttreeworkflow.png)
 
-Ne modifiez pas ou n’appelez pas le modèle d’origine. Assurez-vous plutôt de copier le modèle, puis de modifier ou d’appeler cette copie.
+N’appelez pas le modèle d’origine. Veillez plutôt à copier d’abord le modèle et à appeler cette copie.
 
 Comme tous les workflows, il peut également être appelé via l’API. Pour plus d’informations, voir [Interaction avec les workflows par programmation](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/workflows-program-interaction.html?lang=fr#extending-aem).
 
@@ -70,7 +70,7 @@ Vous pouvez également créer un modèle de processus qui utilise la variable `P
    ![Étape du processus](/help/operations/assets/processstep.png)
 
 1. Sélectionnez l’étape Processus dans le flux et sélectionnez **Configurer** en appuyant sur l’icône de clé à molette.
-1. Sélectionnez la **Processus** et sélectionnez `Publish Content Tree` dans la liste déroulante, puis cochez la case **Avance du gestionnaire** case à cocher
+1. Sélectionnez la variable **Processus** et sélectionnez `Publish Content Tree` dans la liste déroulante, puis cochez la case **Avance du gestionnaire** case à cocher
 
    ![Activation d’arborescence](/help/operations/assets/newstep.png)
 
