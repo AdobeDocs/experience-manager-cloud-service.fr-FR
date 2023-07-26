@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 579f2842a72c7da1c9d24772bdae354a943de40c
+source-git-commit: 651fd49950c9b168a097e4b7d2812b22bd8de03f
 workflow-type: tm+mt
-source-wordcount: '4192'
+source-wordcount: '4194'
 ht-degree: 97%
 
 ---
@@ -340,7 +340,6 @@ ht-degree: 97%
             + [Récupérer des informations d’accès au référentiel Git](/help/journey-sites/quick-site/retrieve-access.md)
             + [Personnaliser le thème du site](/help/journey-sites/quick-site/customize-theme.md)
             + [Déploiement de votre thème personnalisé](/help/journey-sites/quick-site/deploy-theme.md)
-      + [Administration des workflows](/help/sites-cloud/administering/workflows-administering.md)
       + Réutilisation de contenu {#reusing-content}
          + [MSM et traduction](/help/sites-cloud/administering/msm-and-translation.md)
          + Multi Site Manager {#msm}
@@ -369,6 +368,8 @@ ht-degree: 97%
             + [Configuration de la structure d’intégration de traduction](/help/sites-cloud/administering/translation/integration-framework.md)
             + [Connexion à Microsoft Translator](/help/sites-cloud/administering/translation/connect-ms-translator.md)
             + [Bonnes pratiques de traduction](/help/sites-cloud/administering/translation/best-practices.md)
+      + [Administration des balises](/help/sites-cloud/administering/tags.md)
+      + [Administration des workflows](/help/sites-cloud/administering/workflows-administering.md)
    + Intégration d’AEM as a Cloud Service {#integrations}
       + [Intégration à Adobe Analytics](/help/sites-cloud/integrating/integrating-adobe-analytics.md)
       + [Intégration à Adobe Analytics  Configuration automatisée](/help/sites-cloud/integrating/adobe-analytics-exc-setup-automation.md)
@@ -572,7 +573,7 @@ ht-degree: 97%
             + [Générer un document d’enregistrement pour les formulaires adaptatifs](/help/forms/generate-document-of-record-core-components.md)
             + [Créer un formulaire adaptatif - Composants principaux dans une page AEM Sites](/help/forms/embed-adaptive-form-core-components-aem-sites.md)
             + [Utilisation de la traduction automatique ou humaine pour traduire un formulaire adaptatif](/help/forms/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.md)
-            + [Configuration d’une page de redirection ou d’un message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
+            + [Configuration de la page de redirection ou du message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Création de formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
             + [Configuration de l’action Envoyer pour un formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)
       + Création d’un formulaire adaptatif - Composants de base {#authoring-adaptive-forms-foundation-components}
