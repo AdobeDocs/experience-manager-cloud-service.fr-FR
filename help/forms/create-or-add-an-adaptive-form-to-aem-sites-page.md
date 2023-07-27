@@ -3,7 +3,7 @@ title: Comment ajouter un formulaire adaptatif à une page AEM Sites ?
 description: Découvrez comment créer ou ajouter un formulaire adaptatif à votre page AEM Sites. Découvrez également les avantages et les différentes façons d’intégrer des formulaires à votre site web.
 feature: Adaptive Forms, Page Editor, Authoring
 Keywords: AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
-source-git-commit: 991de20303380af76d3e2e97aca8e0a4373e2232
+source-git-commit: ecc881ac1a9f8dd98cd57bbeb44cc35deddcbb8e
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 2%
@@ -38,7 +38,7 @@ Si vous avez déjà créé un composant de base de Forms adaptatif ou des formul
 * **Balisage :** Les pages AEM Sites vous permettent de [affecter des balises ou des étiquettes à une page, à une ressource ou à un autre contenu ;](/help/implementing/developing/introduction/tagging-framework.md). Les balises sont des mots-clés ou des étiquettes de métadonnées qui permettent de classer et d’organiser le contenu selon des critères spécifiques. Vous pouvez affecter une ou plusieurs balises aux pages, aux ressources ou à tout autre élément de contenu dans AEM afin d’améliorer la recherche et de classer les ressources.
 * **Verrouillage et déverrouillage du contenu :** AEM Sites permet aux utilisateurs de [contrôler l’accès et les modifications aux pages ;](/help/sites-cloud/authoring/fundamentals/editing-content.md) dans l’environnement AEM Sites. Lorsqu’une page est verrouillée, cela signifie qu’elle est protégée contre les modifications ou modifications non autorisées par d’autres utilisateurs. Seul l’utilisateur qui a verrouillé le contenu ou un administrateur désigné peut le déverrouiller pour autoriser les modifications.
 
-En outre, le Forms adaptatif dans l’éditeur de page d’AEM utilise [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr#features). Ces composants principaux fournissent des méthodes standard et plus simples de mise en forme et de personnalisation des composants, identiques à [Composants WCM AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
+En outre, le Forms adaptatif dans AEM éditeur de page utilise [Composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr#features). Ces composants principaux fournissent des méthodes standard et plus simples de mise en forme et de personnalisation des composants, identiques à [Composants WCM AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr).
 
 
 ## Comment créer ou ajouter un formulaire adaptatif dans une page AEM Sites ou AEM un fragment d’expérience ? {#various-options-to-creat-or-add-an-adaptive-form-in-aem-sites-page-or-aem-experience-fragment}
