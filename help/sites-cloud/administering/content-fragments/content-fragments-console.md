@@ -5,10 +5,10 @@ landing-page-description: Découvrez comment gérer les fragments de contenu à 
 feature: Content Fragments
 role: User
 exl-id: 0e6e3b61-a0ca-44b8-914d-336e29761579
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: afe676b0972462ef2c9b52150d96560c71f7a0f6
 workflow-type: tm+mt
-source-wordcount: '1103'
-ht-degree: 89%
+source-wordcount: '1178'
+ht-degree: 80%
 
 ---
 
@@ -64,6 +64,7 @@ Vous pouvez constater ici qu’il existe trois zones principales :
             * Ouvrir le fragment approprié dans l’éditeur
             * Afficher des informations à propos des références
             * Afficher des informations sur les versions linguistiques du fragment
+            * Filtrage rapide selon une balise sélectionnée
       * Le survol de la souris effectué sur les en-têtes de colonne permet d’afficher un sélecteur d’action déroulante et des curseur de largeur. Ils vous permettent d’effectuer les opérations suivantes :
          * Trier : sélectionnez l’action appropriée pour trier par ordre croissant ou décroissant.
 Le tableau entier sera trié en fonction de cette colonne. Le tri n’est disponible que sur les colonnes appropriées.
@@ -117,27 +118,34 @@ Le panneau principal/droit (vue du tableau) de la console fournit diverses infor
 * **Nom**
    * Fournit un lien pour ouvrir le fragment dans l’éditeur.
 * **Modèle**
-   * Fournit un lien pour ouvrir le fragment dans l’éditeur.
+   * Informations uniquement.
+   * Peut être utilisé pour [Filtrage rapide](#fast-filtering#fast-filtering)
 * **Dossier**
    * Fournit un lien pour ouvrir le dossier dans la console.
 Placez le pointeur de la souris sur le nom du dossier pour afficher le chemin d’accès JCR.
 * **Statut**
-   * Informations uniquement
+   * Informations uniquement.
+   * Peut être utilisé pour [Filtrage rapide](#fast-filtering#fast-filtering)
 * **Aperçu**
    * Informations uniquement:
-      * **Synchronisation**: Le fragment de contenu est synchronisé sur la **Auteur** et **Aperçu** services.
-      * **Désynchronisé**: Le fragment de contenu n’est pas synchronisé sur la page **Auteur** et **Aperçu** services. Vous devez **Publier** to **Aperçu** pour s’assurer que les deux instances redeviennent synchronisées.
-      * blank: Le fragment de contenu n’existe pas sur le **Aperçu** service.
+      * **Synchronisation**: le fragment de contenu est synchronisé sur la variable **Auteur** et **Aperçu** services.
+      * **Désynchronisé**: le fragment de contenu est désynchronisé sur la page **Auteur** et **Aperçu** services. Vous devez **Publier** to **Aperçu** pour s’assurer que les deux instances redeviennent synchronisées.
+      * vide : le fragment de contenu n’existe pas sur la variable **Aperçu** service.
 * **Modifié**
-   * Informations uniquement
+   * Informations uniquement.
 * **Modifié par**
-   * Informations uniquement
+   * Informations uniquement.
+   * Peut être utilisé pour [Filtrage rapide](#fast-filtering#fast-filtering).
+* **Balises**
+   * Informations uniquement.
+   * Affiche toutes les balises liées au fragment de contenu ; Principal et toutes les variations.
+   * Peut être utilisé pour [Filtrage rapide](#fast-filtering#fast-filtering).
 * **Publié sur**
-   * Informations uniquement
+   * Informations uniquement.
 * **Publié par**
-   * Informations uniquement
+   * Informations uniquement.
+   * Peut être utilisé pour [Filtrage rapide](#fast-filtering#fast-filtering).
 * **Référencé par**
-
    * Fournit un lien qui ouvre une boîte de dialogue répertoriant toutes les références parentes de ce fragment, notamment le référencement de fragments de contenu, de fragments d’expérience et de pages. Pour ouvrir une référence spécifique, cliquez sur le bouton **Titre** dans la boîte de dialogue.
 
      ![Console Fragments de contenu - Boîte de dialogue Références](assets/cfc-console-references-dialog.png)
@@ -166,9 +174,13 @@ Vous y trouverez une liste de colonnes que vous pouvez masquer ou afficher :
 
 Le panneau de filtrage offre les options suivantes :
 
-* une sélection de prédicats ; un ou plusieurs prédicats peuvent être sélectionnés et combinés pour créer le filtre.
+* une sélection de prédicats ;
+   * notamment les modèles de fragment de contenu, la localisation, les balises, les champs d’état, etc.
+   * un ou plusieurs prédicats peuvent être sélectionnés et combinés pour créer le filtre.
 * l’opportunité d’**Enregistrer** votre configuration ;
 * l’option permettant de récupérer un filtre de recherche enregistré pour réutilisation.
+
+Une fois la sélection effectuée, la fonction **Filtrage par** Les options s’affichent (sous la zone Rechercher). Ils peuvent être désélectionnés de là. Par exemple :
 
 ![Console Fragments de contenu - Filtrage](assets/cfc-console-filter.png)
 
@@ -180,7 +192,7 @@ Par exemple, sélectionnez **Publié** dans la colonne **Statut** :
 
 >[!NOTE]
 >
->Le filtrage rapide est uniquement pris en charge pour les colonnes **Modèle**, **Statut**, **Modifié par**, et **Publié par**.
+>Le filtrage rapide n’est pris en charge que pour la variable **Modèle**, **État**, **Modifié par**, **Balises**, et **Publié par** colonnes.
 
 ![Console Fragments de contenu - Filtrage](assets/cfc-console-fast-filter-01.png)
 

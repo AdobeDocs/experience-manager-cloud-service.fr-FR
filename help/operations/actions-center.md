@@ -1,20 +1,15 @@
 ---
 title: Centre d’actions
 description: Tirez parti du Centre d’actions pour agir facilement sur les incidents et d’autres informations importantes.
-hidefromtoc: true
-hide: true
 exl-id: d5a95ac4-aa88-44d5-ba02-7c9702050208
-source-git-commit: 083aa4b893b58102b3a0bf68c4dd3b4c003b48f6
+source-git-commit: 4adae6ffe45dcd2b80d7d199fc29a806ce5e78c4
 workflow-type: tm+mt
-source-wordcount: '708'
-ht-degree: 29%
+source-wordcount: '727'
+ht-degree: 28%
 
 ---
 
 # Centre d’actions {#actions-center}
-
->[!NOTE]
->Cette fonctionnalité n’a pas été publiée.
 
 AEM as Cloud Service envoie des notifications par e-mail à Actions Center en cas d’incident critique nécessitant une action immédiate et des recommandations proactives pour les optimisations. Par exemple, une file d’attente bloquée ou un ensemble d’informations d’identification arrivant à expiration ; l’ensemble des types de notification du Centre d’actions peut être visualisé dans la [tableau sous](#supported-notification-types), qui s’agrandira au fil du temps.
 
@@ -40,7 +35,7 @@ Pour configurer la réception de notifications par courrier électronique par le
 
 ## Flux d’utilisateur détaillé {#detailed-user-flow}
 
-Cliquez sur l’e-mail pour accéder au Centre d’actions. Une fenêtre contextuelle s’affiche pour indiquer le contexte de la notification sur laquelle vous avez cliqué. Dans certains cas, des liens sont renvoyés vers des informations supplémentaires décrivant comment prendre des mesures correctives.
+Cliquez sur l’e-mail pour accéder au Centre d’actions. Une fenêtre contextuelle s’affiche pour indiquer le contexte de la notification sur laquelle vous avez cliqué. Dans certains cas, des liens sont renvoyés vers des informations supplémentaires décrivant comment prendre des mesures correctives. Vous pouvez également accéder directement au Centre d’actions à l’adresse [https://experience.adobe.com/aem/actions-center](https://experience.adobe.com/aem/actions-center/), où vous pouvez sélectionner le programme et l’environnement appropriés.
 
 ![Détails de l’incident](/help/operations/assets/incident-details.png)
 
