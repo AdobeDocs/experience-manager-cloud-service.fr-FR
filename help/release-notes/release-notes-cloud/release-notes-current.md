@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 758960006bd1e58530fdf7b20cdd761853170366
+source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 25%
@@ -77,7 +77,7 @@ Assets Essentials trie désormais les résultats de la recherche en fonction de 
 
 * [**Thèmes prêts à l’emploi**](/help/forms/using-themes-in-core-components.md) **et modèles**: lancez le processus de création de formulaires grâce à nos thèmes et modèles prêts à l’emploi, conçus pour offrir aux professionnels chevronnés et aux nouveaux auteurs de formulaires les moyens d’agir. Créés en toute simplicité à l’aide des composants principaux de Forms adaptatif, ces thèmes et modèles soigneusement traités vous permettent de commencer rapidement à créer des formulaires pour des cas d’utilisation courants.
 
-!![Modèles prêts à l’emploi](/help/forms/assets/form-templates-ootb.png)
+  ![Modèles prêts à l’emploi](/help/forms/assets/form-templates-ootb.png)
 
 * **Composants React pour Forms sans affichage**: vous pouvez désormais prévisualiser et personnaliser les rendus de formulaire adaptatif sans affichage avec les composants React prêts à l’emploi. Ces composants tirent parti des classes BEM des composants principaux de Forms adaptatif pour la mise en forme, ce qui vous permet de personnaliser facilement leur aspect en fonction de vos besoins spécifiques.
 
