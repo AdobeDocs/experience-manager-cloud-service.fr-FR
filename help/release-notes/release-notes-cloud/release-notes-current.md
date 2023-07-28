@@ -3,10 +3,10 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 71af59cae28332793471568069204e9c88acd6a5
+source-git-commit: 3ac4fcd1f3ef1ef78dcee3c10bfbc99f9d7ba3ad
 workflow-type: tm+mt
-source-wordcount: '981'
-ht-degree: 25%
+source-wordcount: '935'
+ht-degree: 27%
 
 ---
 
@@ -50,11 +50,15 @@ Regardez la vidéo Aperçu de la version de juillet 2023 pour un résumé des fo
 
 ### Nouvelles fonctionnalités dans la vue Assets {#assets-view-features}
 
-**Affectation d’un formulaire de métadonnées à un dossier**
+<!--
 
-Vous pouvez désormais attribuer un formulaire de métadonnées à un dossier spécifique dans votre déploiement Assets Essentials. Toutes les ressources du dossier, y compris les ressources des sous-dossiers, affichent ensuite les propriétés définies dans le formulaire de métadonnées affecté.
+**Assign metadata form to a folder**
 
-![affecter un formulaire de métadonnées à un dossier](/help/release-notes/assets/assign-to-folder.png)
+You can now assign metadata form to a specific folder within your Assets Essentials deployment. All assets in the folder, including assets in the sub-folders, then display properties defined in the assigned metadata form.
+
+![assign metadata form to a folder](/help/release-notes/assets/assign-to-folder.png)
+
+-->
 
 **Amélioration du framework d’intelligence artificielle pour les balises intelligentes d’image**
 
