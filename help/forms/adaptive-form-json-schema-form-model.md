@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
+source-git-commit: c00080859cc10da2da887cf1a711e1aef9dc5fb8
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 57%
@@ -734,7 +734,7 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
 
 ## Activation des données conformes aux schémas {#enablig-schema-compliant-data}
 
-Pour permettre au formulaire adaptatif de générer les données conformes au schéma lors de l’envoi du formulaire, procédez comme suit :
+Pour permettre à tous les Forms adaptatifs basés sur un schéma JSON de générer des données conformes au schéma lors de l’envoi du formulaire, procédez comme suit :
 
 1. Accédez à la console web Experience Manager à l’adresse `https://server:host/system/console/configMgr`.
 1. Localiser **[!UICONTROL Configuration de canal web de formulaire adaptatif et de communication interactive]**.
