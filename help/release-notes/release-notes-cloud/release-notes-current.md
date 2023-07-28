@@ -3,7 +3,7 @@ title: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a
 description: Notes de mise à jour actuelles pour [!DNL Adobe Experience Manager] as a Cloud Service.
 mini-toc-levels: 1
 exl-id: a2d56721-502c-4f4e-9b72-5ca790df75c5
-source-git-commit: 3ac4fcd1f3ef1ef78dcee3c10bfbc99f9d7ba3ad
+source-git-commit: 5995c416328e6f340285004ec2e723cc9279dabd
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 27%
@@ -30,7 +30,7 @@ La date de publication de [!DNL Adobe Experience Manager] as a [!DNL Cloud Servi
 
 ## Vidéo de mise à jour {#release-video}
 
-Regardez la vidéo Aperçu de la version de juillet 2023 pour un résumé des fonctionnalités ajoutées dans la version 2023.6.0 :
+Regardez la vidéo Aperçu de la version de juillet 2023 pour un résumé des fonctionnalités ajoutées dans la version 2023.7.0 :
 
 >[!VIDEO](https://video.tv.adobe.com/v/3422016/?quality=12)
 
