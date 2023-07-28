@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 8eeb9c5e-6866-4bfe-b922-1f028728ef0d
-source-git-commit: ca0c9f102488c38dbe8c969b54be7404748cbc00
+source-git-commit: 558662fb646abcf298a46fd0c1b1c709d53bce45
 workflow-type: tm+mt
-source-wordcount: '1305'
-ht-degree: 59%
+source-wordcount: '1368'
+ht-degree: 57%
 
 ---
 
@@ -731,6 +731,20 @@ Vous pouvez ajouter les restrictions suivantes aux éléments de schéma JSON po
  </tbody>
 </table>
 
+
+## Activation des données conformes aux schémas {#enablig-schema-compliant-data}
+
+Pour permettre au formulaire adaptatif de générer les données conformes au schéma lors de l’envoi du formulaire, procédez comme suit :
+
+1. Accédez à la console web Experience Manager à l’adresse `https://server:host/system/console/configMgr`.
+1. Localiser **[!UICONTROL Configuration de canal web de formulaire adaptatif et de communication interactive]**.
+1. Appuyez pour ouvrir la configuration en mode d’édition.
+1. Sélectionnez la variable **[!UICONTROL Générer des données conformes aux schémas]** .
+1. Enregistrez les paramètres.
+
+![configuration du canal web de formulaire adaptatif et de communication interactive](/help/forms/assets/af-ic-web-channel-configuration.png)
+
+
 ## Éléments non pris en charge  {#non-supported-constructs}
 
 Les formulaires adaptatifs ne prennent pas en charge les éléments suivants de schéma JSON :
@@ -746,7 +760,7 @@ Les formulaires adaptatifs ne prennent pas en charge les éléments suivants de 
 
 Dans un sous-formulaire répétable, vous devez utiliser le sous-formulaire complet. Si vous souhaitez uniquement des champs sélectifs, utilisez la structure entière et supprimez les champs indésirables.
 
-**J’ai une longue structure complexe dans l’outil de recherche de contenu. Comment puis-je trouver un élément spécifique ?**
+**Je dispose d’une longue structure complexe dans l’outil de recherche de contenu. Comment puis-je trouver un élément spécifique ?**
 
 Vous disposez de deux options :
 
