@@ -2,7 +2,7 @@
 title: Outil de copie de contenu
 description: L’outil de copie de contenu permet aux utilisateurs de copier du contenu modifiable à la demande à partir de leurs environnements de production sur AEM as a Cloud Service à des environnements inférieurs à des fins de test.
 exl-id: f060821d-d559-45d2-b3b1-1b2277694ec4
-source-git-commit: f579539d582e2059fca20f9f7e5e82f4ae24c833
+source-git-commit: 639c49c69c87e7c408929f0d35a673a96a5cc5db
 workflow-type: tm+mt
 source-wordcount: '1308'
 ht-degree: 50%
@@ -39,7 +39,7 @@ Pour utiliser l’outil de copie de contenu, certaines autorisations sont requis
 
 | Fonctionnalité copie de contenu | Groupe d’administrateurs et administratrices AEM | Rôle de responsable de déploiement |
 |---|---|---|
-| Créer et modifier des [jeux de contenu](#create-content-set) | Requis | Non requis |
+| Créer et modifier des [jeux de contenu](#create-content-set) | Non requis | Requis |
 | Démarrer ou annuler le [processus de copie de contenu](#copy-content) | Requis | Requis |
 
 Pour plus d’informations sur les autorisations et sur la manière de les définir, consultez le document . [AEM l’équipe as a Cloud Service et les profils de produit.](/help/onboarding/aem-cs-team-product-profiles.md)
@@ -74,7 +74,7 @@ Pour qu’un contenu puisse être copié, un jeu de contenu doit être défini. 
 1. Si vous devez affiner ou restreindre votre jeu de contenu, les sous-chemins peuvent être exclus.
 
    1. Dans la liste des chemins inclus, cliquez sur **Ajouter des sous-chemins d’exclusion** en regard du chemin que vous souhaitez restreindre.
-   1. Entrez le sous-chemin d’accès à exclure sous le chemin d’accès sélectionné.
+   1. Entrez le sous-chemin à exclure sous le chemin sélectionné.
    1. Appuyez ou cliquez sur **Exclure le chemin**.
    1. Appuyez ou cliquez encore sur **Ajouter des sous-chemins à exclure** pour ajouter d’autres chemins à exclure si nécessaire.
       * Les chemins exclus doivent être relatifs au chemin inclus.
