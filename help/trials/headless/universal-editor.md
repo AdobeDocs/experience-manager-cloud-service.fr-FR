@@ -6,7 +6,7 @@ index: false
 source-git-commit: 9826041962a3a0065feb676b07304ba30d23d2e9
 workflow-type: tm+mt
 source-wordcount: '961'
-ht-degree: 4%
+ht-degree: 9%
 
 ---
 
@@ -15,8 +15,8 @@ ht-degree: 4%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor"
->title="Edition en contexte"
->abstract="Découvrez comment vos applications sans interface utilisateur graphique peuvent tirer parti d’Universal Editor afin d’apporter de la faible friction, dans l’édition contextuelle, au bout des doigts de vos auteurs."
+>title="Modification en contexte"
+>abstract="Découvrez comment vos applications découplées peuvent utiliser l’éditeur universel pour mettre les modifications en contexte et à faible friction à la portée de vos auteurs et autrices."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_edit_inline_universal_editor_guide"
@@ -34,7 +34,7 @@ La modification en place et dans le contexte peut souvent s’avérer préférab
 
 >[!NOTE]
 >
->Pour utiliser Universal Editor dans cette version d’évaluation, vous devez utiliser Chrome comme navigateur et non en mode incognito. Il s’agit d’une limitation de l’expérience d’évaluation, et non de l’éditeur universel.
+>Pour utiliser Universal Editor dans cette version d’évaluation, vous devez utiliser Chrome en tant que navigateur et non en mode incognito. Il s’agit d’une limitation de l’expérience d’évaluation, et non de l’éditeur universel.
 
 L’éditeur universel vous permet de modifier facilement votre texte en contexte et en place, ce qui vous permet de créer du contenu simple et intuitif.
 
@@ -48,7 +48,7 @@ L’éditeur universel vous permet de modifier facilement votre texte en context
 
    ![Modification de texte dans Universal Editor](assets/do-not-localize/ue-edit-text-2.png)
 
-1. Appuyez sur la touche Entrée/Retour ou appuyez ou cliquez en dehors du composant de texte pour que vos modifications soient enregistrées automatiquement.
+1. Appuyez sur la touche Entrée/Retour ou appuyez ou cliquez en dehors du composant de texte pour enregistrer automatiquement vos modifications.
 
 Universal Editor enregistre automatiquement vos modifications dans l’environnement de création. Vous devez toujours les publier pour que vos lecteurs puissent le voir, ce que nous ferons ultérieurement.
 
@@ -114,7 +114,7 @@ Votre contenu est publié.
 
 Pour accélérer votre expérience de création de contenu lorsque l’édition structurée de contenu sans tête est plus avantageuse que l’édition statique, l’éditeur universel vous donne également un accès rapide à l’éditeur de fragments de contenu.
 
-1. Faites défiler la page vers le bas jusqu’à l’objet **Aventures** .
+1. Faites défiler la page vers le bas jusqu’à la **Aventures** .
 
 1. Dans le rail de mode sur le côté gauche de l’éditeur, sélectionnez **Composants**. Vous pouvez ainsi sélectionner des composants de page dans l’éditeur.
 

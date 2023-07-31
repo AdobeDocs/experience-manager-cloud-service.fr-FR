@@ -7,7 +7,7 @@ exl-id: d74cf5fb-4c4a-4363-a500-6e2ef6811e60
 source-git-commit: 91e9711e10a7aa8e3c7fa0b4cc25a098741e53b1
 workflow-type: tm+mt
 source-wordcount: '702'
-ht-degree: 76%
+ht-degree: 82%
 
 ---
 
@@ -16,17 +16,17 @@ ht-degree: 76%
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content"
->title="Création de contenu sans interface"
+>title="Créer du contenu découplé"
 >abstract="En utilisant le modèle que vous avez créé dans le module précédent, vous apprendrez à créer du contenu qui peut être utilisé pour la création de pages ou comme base à votre contenu découplé."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide"
 >title="Démarrer la console Fragments de contenu"
->abstract="La création de contenu cohérent et de haute qualité qui fonctionne en toute simplicité sur vos applications et sites Web vous permet d’offrir de superbes expériences client. Ce module vous guide tout au long de la création de votre premier contenu sans affichage à l’aide de la console Fragment de contenu .<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
+>abstract="La création de contenu cohérent et de haute qualité qui fonctionne en toute simplicité sur vos applications et sites Web vous permet d’offrir de superbes expériences client. Ce module vous guide tout au long de la création de votre premier contenu découplé à l’aide de la console de fragment de contenu.<br><br>Lancez ce module dans un nouvel onglet en cliquant sur le bouton ci-dessous, puis suivez ce guide."
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_sites_trial_admin_content_fragments_create_content_guide_footer"
->title="Très bon travail ! Dans ce module, vous avez appris à créer du contenu sans affichage en tant que fragment de contenu en fonction du modèle que vous avez créé précédemment. Vous comprenez désormais comment les équipes de contenu peuvent créer et gérer du contenu pour les applications et les sites Web, indépendamment des cycles de développement."
+>title="Très bon travail ! Dans ce module, vous avez appris à créer un contenu découplé comme fragment de contenu en fonction du modèle que vous avez créé précédemment. Vous comprenez désormais comment les équipes de contenu peuvent créer et gérer du contenu pour les applications et les sites Web, indépendamment des cycles de développement."
 >abstract=""
 
 ## Créer un fragment de contenu {#create-fragment}
@@ -39,7 +39,7 @@ La console Fragment de contenu est utilisée pour créer et modifier du contenu 
 
 1. Appuyez ou cliquez sur le bouton **Créer** en haut à droite de la console.
 
-1. Le **Nouveau fragment de contenu** s’ouvre, dans laquelle vous pouvez commencer à créer un fragment de contenu. **Emplacement** est automatiquement renseigné avec l’emplacement d’enregistrement du nouveau contenu.
+1. La variable **Nouveau fragment de contenu** s’ouvre, dans laquelle vous pouvez commencer à créer un fragment de contenu. **Emplacement** est automatiquement renseigné avec l’emplacement d’enregistrement du nouveau contenu.
 
 1. Dans la liste déroulante **Modèle de fragment de contenu**, sélectionnez le modèle de fragment de contenu **Aventure** que vous avez créé précédemment.
 
