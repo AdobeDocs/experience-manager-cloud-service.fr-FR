@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8a0057e52e971ebc4f396e7c43b43bad8337e6fe
+source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
 workflow-type: tm+mt
-source-wordcount: '4215'
+source-wordcount: '4222'
 ht-degree: 96%
 
 ---
@@ -579,6 +579,7 @@ ht-degree: 96%
             + [Configuration de la page de redirection ou du message de remerciement](/help/forms/configure-redirect-page-or-thank-you-message.md)
             + [Création de formulaires avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
             + [Configuration de l’action Envoyer pour un formulaire adaptatif](/help/forms/configure-submit-actions-core-components.md)
+            + [Utilisation de Google reCAPTCHA dans un formulaire adaptatif](/help/forms/captcha-adaptive-forms-core-components.md)
       + Création d’un formulaire adaptatif - Composants de base {#authoring-adaptive-forms-foundation-components}
          + Convertir des formulaires PDF en formulaires adaptatifs {#afcs}
             + [Présentation du service de conversion automatisée de formulaires](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=fr)
