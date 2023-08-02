@@ -7,17 +7,17 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6abd681fbf0258029dd594d214a2480d73b21f57
+source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 9%
+source-wordcount: '1200'
+ht-degree: 10%
 
 ---
 
 
 # Exemples de thèmes, de modèles et de données de formulaire dans les composants principaux {#sample-themes-templates-and-data-models}
 
-AEM Forms as a Cloud Service fournit des exemples de thèmes de référence, de modèles et de modèles de données de formulaire pour vous aider à commencer rapidement la création de Forms adaptatif avec les composants principaux. Vous pouvez [Activation des composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=fr) dans l’environnement de développement as a Cloud Service et local d’AEM Forms pour obtenir des modèles prêts à l’emploi de référence et pour [utilisation et personnalisation des thèmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+AEM Forms as a Cloud Service fournit des exemples de thèmes de référence, de modèles et de modèles de données de formulaire pour vous aider à commencer rapidement la création de Forms adaptatif avec les composants principaux. Vous pouvez [Activation des composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=fr) dans l’environnement de développement as a Cloud Service et local d’AEM Forms pour obtenir des exemples de modèles prêts à l’emploi et pour [utilisation et personnalisation d’exemples de thèmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
 
 Les exemples de thèmes, modèles et modèles de données de formulaire inclus dans le module de contenu de référence sont les suivants :
 
@@ -26,14 +26,13 @@ Les exemples de thèmes, modèles et modèles de données de formulaire inclus d
 | De base | Canvas  | Microsoft® Dynamics 365 |
 | Vide | WKND | Salesforce |
 | Nous contacter | Pâques |  |
+| Mise à jour des détails du contact |   |   |
 | Formulaire de consentement | |  |
-| Commencer la plainte | | |
 | Requête de service de journal |  |  |
 | Envoyer des commentaires |  |  |
 | Inscription aux avantages |  |   |
 | Synthèse des avantages des employés |   |   |
 | Demande de relevé de compte |   |   |
-| Mise à jour des détails du contact |   |   |
 | Formulaire d&#39;inspection de sécurité |   |   |
 | Inspection du contrôle qualité |   |   |
 | Demande d’achat |  |  |
@@ -77,15 +76,15 @@ Le modèle de base vous permet de créer rapidement un formulaire d’expérienc
 
 >[!TAB Poste de travail]
 
-    ![Bureau de base des modèles](assets/Basic-template-desktop-view.png)
+![Ordinateur de bureau de base](assets/Basic-template-desktop-view.png)
 
 >[!TAB Téléphone]
 
-    ![Basic Template Phone](assets/Basic-template-phone-view.png)
+![Téléphone de modèle de base](assets/Basic-temp-phone-view.png)
 
 >[!TAB Tablette]
 
-    ![Tablette de modèle de base](assets/Basic-template-tablet-view.png)
+![Tablette de modèle de base](assets/Basic-temp-tablet-view.png)
 
 >[!ENDTABS]
 
@@ -96,11 +95,9 @@ Un modèle de canevas vierge est utilisé pour créer entièrement une structure
 
 ![Modèle vierge](assets/Blank-template.png)
 
-### Demande de relevé de compte {#Request-for-Account-Statement}
+### Nous contacter {#Contact-Us}
 
-Le modèle de demande de relevé de compte permet de créer un formulaire qui initie le processus d’obtention d’une instruction de client exacte et à jour. Le relevé fournit un enregistrement détaillé des transactions financières, des activités ou d’autres informations pertinentes concernant les clients qui utilisent ce formulaire.
-
-![Request-for-account-statment](assets/Request-for-account-statment.png)
+Le modèle de formulaire Contact est utilisé pour créer un formulaire afin de faciliter la communication entre les visiteurs du site web et les administrateurs. Les utilisateurs peuvent envoyer des requêtes, des commentaires ou des demandes d’assistance par le biais du formulaire.
 
 ### Mise à jour des détails du contact {#Contact-Details-Update}
 
@@ -108,38 +105,9 @@ Les informations de contact mettent à jour le modèle aident les auteurs à cr�
 
 ![Contact-details-update](assets/Contact-details-update.png)
 
-### Inspection de la sécurité {#Safety-Inspection}
-
-Le modèle de formulaire d’inspection de sécurité permet de créer un formulaire permettant de saisir des détails pour un environnement de travail sécurisé. En procédant à des inspections régulières sous cette forme, on peut identifier les dangers potentiels. Le formulaire couvre divers aspects tels que les sorties d’urgence, la sécurité incendie, la sécurité électrique, les matières dangereuses, les équipements de protection personnelle, l’ergonomie du poste de travail pour la sécurité et le bien-être des employés, des visiteurs et des clients.
-
-### Demande d’achat {#Purchase-Request}
-
-Le modèle de formulaire de demande d’achat permet de créer un formulaire pour lancer la procédure d’achat et permettre aux employés de formellement demander l’achat de biens ou de services nécessaires à leur travail. Le formulaire capture les détails essentiels tels que la description de l’article, la quantité, le fournisseur préféré (le cas échéant), l’allocation du budget, la justification de l’achat, les informations de diffusion et les validations requises.
-
-![purchase-request](assets/purchase-request.gif)
-
-### Résumé des avantages des employés {#Employee-Benefits-Summary}
-
-Le modèle de formulaire de résumé des avantages pour les employés permet de créer un formulaire afin de recueillir des détails essentiels sur les avantages d’un individu. Il permet d’évaluer rapidement et précisément la couverture, offrant ainsi une vue d’ensemble complète pour une assistance et un soutien efficaces.
-
-### Inscription aux avantages {#Benefits-Enrollment}
-
-Le modèle de formulaire d’inscription aux avantages sert à créer un formulaire afin de recueillir des informations essentielles sur les avantages et les options de couverture préférés auprès de leurs employés. Il accompagne généralement la période d’inscription annuelle des avantages.
-
-
-### Inspection du contrôle qualité {#Quality-Control-Inspection}
-
-Le modèle de formulaire d’inspection du contrôle qualité permet de créer un formulaire pour évaluer et documenter l’apparence visuelle, les dimensions, la fonctionnalité, la documentation, les résultats de test et la qualité globale d’un produit ou d’un article. Il permet d’identifier les défauts, les non-conformités et les actions correctives nécessaires pour garantir le respect des normes de qualité.
-
-
 ### Formulaire de consentement {#Consent-Form}
 
 Le modèle de formulaire de consentement est utilisé pour créer un formulaire d’obtention d’un document juridique par les participants qui participent à une activité spécifique, une étude de recherche, une procédure médicale ou toute situation où leurs informations personnelles ou leurs droits peuvent être impliqués. Le formulaire garantit la transparence, protège les droits des participants et établit une compréhension claire de ce à quoi l&#39;individu accepte.
-
-
-### Nous contacter {#Contact-Us}
-
-Le modèle de formulaire Contact est utilisé pour créer un formulaire afin de faciliter la communication entre les visiteurs du site web et les administrateurs. Les utilisateurs peuvent envoyer des requêtes, des commentaires ou des demandes d’assistance par le biais du formulaire.
 
 ### Requête de service de journal {#Log-Service-Request}
 
@@ -148,6 +116,34 @@ Le modèle de demande de service de journal permet de créer un formulaire qui f
 ### Donnez vos commentaires {#Give-Feedback}
 
 Le modèle de formulaire de retour permet de créer un formulaire afin de fournir un retour constructif à une autre personne ou à une autre équipe. Le formulaire permet de s’assurer que les commentaires sont clairs, spécifiques et exploitables, ce qui favorise la communication ouverte et l’amélioration.
+
+### Inscription aux avantages {#Benefits-Enrollment}
+
+Le modèle de formulaire d’inscription aux avantages sert à créer un formulaire afin de recueillir des informations essentielles sur les avantages et les options de couverture préférés auprès de leurs employés. Il accompagne généralement la période d’inscription annuelle des avantages.
+
+### Résumé des avantages des employés {#Employee-Benefits-Summary}
+
+Le modèle de formulaire de résumé des avantages pour les employés permet de créer un formulaire afin de recueillir des détails essentiels sur les avantages d’un individu. Il permet d’évaluer rapidement et précisément la couverture, offrant ainsi une vue d’ensemble complète pour une assistance et un soutien efficaces.
+
+### Demande de relevé de compte {#Request-for-Account-Statement}
+
+Le modèle de demande de relevé de compte permet de créer un formulaire qui initie le processus d’obtention d’une instruction de client exacte et à jour. Le relevé fournit un enregistrement détaillé des transactions financières, des activités ou d’autres informations pertinentes concernant les clients qui utilisent ce formulaire.
+
+![Request-for-account-statment](assets/Request-for-account-statment.png)
+
+### Inspection de la sécurité {#Safety-Inspection}
+
+Le modèle de formulaire d’inspection de sécurité permet de créer un formulaire permettant de saisir des détails pour un environnement de travail sécurisé. En procédant à des inspections régulières sous cette forme, on peut identifier les dangers potentiels. Le formulaire couvre divers aspects tels que les sorties d’urgence, la sécurité incendie, la sécurité électrique, les matières dangereuses, les équipements de protection personnelle, l’ergonomie du poste de travail pour la sécurité et le bien-être des employés, des visiteurs et des clients.
+
+### Inspection du contrôle qualité {#Quality-Control-Inspection}
+
+Le modèle de formulaire d’inspection du contrôle qualité permet de créer un formulaire pour évaluer et documenter l’apparence visuelle, les dimensions, la fonctionnalité, la documentation, les résultats de test et la qualité globale d’un produit ou d’un article. Il permet d’identifier les défauts, les non-conformités et les actions correctives nécessaires pour garantir le respect des normes de qualité.
+
+### Demande d’achat {#Purchase-Request}
+
+Le modèle de formulaire de demande d’achat permet de créer un formulaire pour lancer la procédure d’achat et permettre aux employés de formellement demander l’achat de biens ou de services nécessaires à leur travail. Le formulaire capture les détails essentiels tels que la description de l’article, la quantité, le fournisseur préféré (le cas échéant), l’allocation du budget, la justification de l’achat, les informations de diffusion et les validations requises.
+
+![purchase-request](assets/purchase-request.gif)
 
 ## Modèles de données de formulaire de référence {#reference-models}
 
