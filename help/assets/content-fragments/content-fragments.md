@@ -1,17 +1,17 @@
 ---
 title: Utiliser des fragments de contenu (Ressources - Fragments de contenu)
-description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour la création de pages et la diffusion découplée.
+description: Découvrez comment les fragments de contenu dans Adobe Experience Manager (AEM) as a Cloud Service vous permettent de concevoir, créer, organiser et utiliser du contenu indépendant des pages de façon idéale pour la création de pages et la diffusion découplée. Comment les utiliser avec MSM.
 exl-id: db17eff1-4252-48d5-bb67-5e476e93ef7e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 0706c4a466db1d360b27868e3ab5c320a3ba24f8
 workflow-type: tm+mt
-source-wordcount: '2134'
-ht-degree: 94%
+source-wordcount: '2159'
+ht-degree: 91%
 
 ---
 
-# Utiliser des fragments de contenu {#working-with-content-fragments}
+# Utilisation de fragments de contenu {#working-with-content-fragments}
 
-Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, de créer, d’organiser et de [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements ou sur plusieurs canaux, idéal pour une diffusion découplée.
+Avec Adobe Experience Manager (AEM) as a Cloud Service, les fragments de contenu vous permettent de concevoir, créer, organiser et [publier du contenu indépendant des pages](/help/sites-cloud/authoring/fundamentals/content-fragments.md). Ils vous permettent de préparer du contenu prêt à être utilisé à plusieurs emplacements/sur plusieurs canaux, idéal pour une diffusion sans interface. Ils peuvent également être utilisés avec [Gestion multisite pour vous permettre de réutiliser votre contenu](#reusing-content-fragments-with-msm-assets).
 
 Les fragments de contenu contiennent du contenu structuré :
 
@@ -289,7 +289,7 @@ Pour utiliser vos fragments de contenu pour la création de pages, vous avez ég
 
    * Utilitaire de diffusion du fragment au format HTML et/ou JSON.
    * Obligatoire pour [référencer le fragment sur une page](/help/sites-cloud/authoring/fundamentals/content-fragments.md).
-   * responsable de la mise en page et de la diffusion d’un fragment ; c&#39;est-à-dire les canaux.
+   * Responsable de la mise en page et de la diffusion d’un fragment, c’est-à-dire des canaux.
    * Les fragments ont besoin d’un ou de plusieurs composants dédiés pour définir la mise en page, ainsi que diffuser tous les éléments/variations et le contenu associé.
    * Faire glisser un fragment sur une page en mode Création permet d’associer automatiquement le composant requis.
 
