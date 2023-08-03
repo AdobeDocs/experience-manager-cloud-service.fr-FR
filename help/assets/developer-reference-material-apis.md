@@ -5,10 +5,10 @@ contentOwner: AG
 feature: APIs,Assets HTTP API
 role: Developer,Architect,Admin
 exl-id: c75ff177-b74e-436b-9e29-86e257be87fb
-source-git-commit: 8bdd89f0be5fe7c9d4f6ba891d7d108286f823bb
-workflow-type: ht
+source-git-commit: a63a237e8da9260fa5f88060304b8cf9f508da7f
+workflow-type: tm+mt
 source-wordcount: '1899'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -75,7 +75,8 @@ Dans [!DNL Experience Manager] as a [!DNL Cloud Service], vous pouvez charger di
 ![Présentation du protocole de chargement binaire direct](assets/add-assets-technical.png)
 
 >[!IMPORTANT]
->Exécutez les étapes ci-dessus dans une application externe et non dans la JVM [!DNL Experience Manager].
+>
+Exécutez les étapes ci-dessus dans une application externe et non dans la JVM [!DNL Experience Manager].
 
 Cette approche permet une gestion évolutive et plus performante des chargements de ressources. Les différences par rapport à [!DNL Experience Manager] 6.5 sont les suivantes :
 
@@ -83,9 +84,12 @@ Cette approche permet une gestion évolutive et plus performante des chargements
 * L’espace de stockage de fichiers binaires fonctionne avec un réseau CDN (réseau de diffusion de contenu) ou Edge. Un CDN sélectionne un point d’entrée de chargement plus proche pour un client. Lorsque les données parcourent une distance plus courte jusqu’à un point d’entrée voisin, les performances de chargement et l’expérience utilisateur s’améliorent, en particulier pour les équipes réparties géographiquement.
 
 >[!NOTE]
->Consultez le code client pour implémenter cette approche dans la [bibliothèque de chargement aem](https://github.com/adobe/aem-upload) open-source.
->[!IMPORTANT]
->Dans certains cas, les modifications peuvent ne pas se propager entièrement entre les requêtes à Experience Manager en raison de la nature cohérente du stockage dans Cloud Service. Cela génère des réponses 404 lors de l’initialisation ou de la complétion d’appels de téléchargement en raison de la non-propagation des créations de dossiers requises. Les client(e)s doivent s’attendre à recevoir des réponses 404 et à les gérer en implémentant une nouvelle tentative avec une stratégie backoff.
+>
+Consultez le code client pour implémenter cette approche dans la [bibliothèque de chargement aem](https://github.com/adobe/aem-upload) open-source.
+>
+[!IMPORTANT]
+>
+Dans certains cas, les modifications peuvent ne pas se propager entièrement entre les requêtes à Experience Manager en raison de la nature cohérente du stockage dans Cloud Service. Cela génère des réponses 404 lors de l’initialisation ou de la complétion d’appels de téléchargement en raison de la non-propagation des créations de dossiers requises. Les client(e)s doivent s’attendre à recevoir des réponses 404 et à les gérer en implémentant une nouvelle tentative avec une stratégie backoff.
 
 ### Lancement du chargement {#initiate-upload}
 
@@ -154,7 +158,8 @@ Encore une fois, le moyen le plus facile et le plus sûr est d’utiliser simple
 En cas de succès du chargement, le serveur répond à chaque requête avec un code d’état `201`.
 
 >[!NOTE]
->Pour plus d’informations sur l’algorithme de chargement, consultez la [documentation officielle sur les fonctionnalités](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) et la [documentation de l’API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) dans le projet Apache Jackrabbit Oak.
+>
+Pour plus d’informations sur l’algorithme de chargement, consultez la [documentation officielle sur les fonctionnalités](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload) et la [documentation de l’API](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/api/binary/BinaryUpload.html) dans le projet Apache Jackrabbit Oak.
 
 ### Fin du chargement {#complete-upload}
 
@@ -173,7 +178,8 @@ Après avoir chargé toutes les parties d’un fichier binaire, envoyez une requ
 | `fileSize` | Nombre | Facultatif | Taille, en octets, du fichier. Si spécifié, la taille du fichier est incluse dans les fichiers journaux du système pour l’analyse du taux de transfert. |
 
 >[!NOTE]
->Si la ressource existe et que ni `createVersion` ni `replace` n’est spécifié, [!DNL Experience Manager] met à jour la version actuelle de la ressource avec le nouveau fichier binaire.
+>
+Si la ressource existe et que ni `createVersion` ni `replace` n’est spécifié, [!DNL Experience Manager] met à jour la version actuelle de la ressource avec le nouveau fichier binaire.
 
 Comme c’est le cas pour le processus de lancement, les données de la requête de fin peuvent contenir des informations pour plusieurs fichiers.
 
@@ -187,7 +193,8 @@ Pour en savoir plus sur les algorithmes de chargement ou pour créer vos propres
 * [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
 
 >[!NOTE]
->La bibliothèque de téléchargement d’AEM et l’outil de ligne de commande utilisent tous deux la [bibliothèque node-httptransfer](https://github.com/adobe/node-httptransfer/)
+>
+La bibliothèque de téléchargement d’AEM et l’outil de ligne de commande utilisent tous deux la [bibliothèque node-httptransfer](https://github.com/adobe/node-httptransfer/)
 
 ### API de chargement de ressources obsolètes {#deprecated-asset-upload-api}
 
@@ -196,13 +203,13 @@ Pour en savoir plus sur les algorithmes de chargement ou pour créer vos propres
 La nouvelle méthode de chargement n’est prise en charge que pour [!DNL Adobe Experience Manager] as a [!DNL Cloud Service]. Les API de [!DNL Adobe Experience Manager] 6.5 sont obsolètes. Les méthodes liées au chargement ou à la mise à jour de ressources ou de rendus (tout chargement de binaires) sont obsolètes dans les API suivantes :
 
 * [API HTTP des ressources Experience Manager](mac-api-assets.md)
-* API Java `AssetManager`, comme `AssetManager.createAsset(..)`
+* `AssetManager` API Java, comme `AssetManager.createAsset(..)`, `AssetManager.createAssetForBinary(..)`, `AssetManager.getAssetForBinary(..)`, `AssetManager.removeAssetForBinary(..)`, `AssetManager.createOrUpdateAsset(..)`, `AssetManager.createOrReplaceAsset(..)`
 
 >[!MORELIKETHIS]
->* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
->* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
->* [Documentation Apache Jackrabbit Oak pour le chargement direct](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
-
+>
+* [Bibliothèque de chargement AEM Open Source](https://github.com/adobe/aem-upload).
+* [Outil de ligne de commande Open Source](https://github.com/adobe/aio-cli-plugin-aem).
+* [Documentation Apache Jackrabbit Oak pour le chargement direct](https://jackrabbit.apache.org/oak/docs/features/direct-binary-access.html#Upload).
 
 ## Workflows de traitement et de post-traitement des ressources {#post-processing-workflows}
 
@@ -306,5 +313,5 @@ https://adobe-my.sharepoint.com/personal/gklebus_adobe_com/_layouts/15/guestacce
 * [Import des métadonnées en bloc](metadata-import-export.md)
 
 >[!MORELIKETHIS]
->* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
-
+>
+* [[!DNL Experience Cloud] as a [!DNL Cloud Service] SDK](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md).
