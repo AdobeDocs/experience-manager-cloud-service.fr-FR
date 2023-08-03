@@ -1,11 +1,11 @@
 ---
 title: Exportation de fragments de contenu vers Adobe Target
-description: Exportation de fragments de contenu vers Adobe Target
+description: Découvrez comment exporter vos fragments de contenu vers Adobe Target pour tester et personnaliser des expériences.
 exl-id: 760e0a39-0805-498e-a2c9-038fd1e1058d
-source-git-commit: 7905f21e70f373150775fe90d5faf02db4a59c32
+source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 96%
+source-wordcount: '2231'
+ht-degree: 95%
 
 ---
 

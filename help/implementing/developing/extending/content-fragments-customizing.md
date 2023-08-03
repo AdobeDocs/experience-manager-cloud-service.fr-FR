@@ -1,10 +1,10 @@
 ---
 title: Personnalisation et extensions de fragments de contenu
-description: Un fragment de contenu étend une ressource standard.
+description: Un fragment de contenu étend une ressource standard. Découvrez comment les personnaliser.
 exl-id: 58152d6e-21b6-4f45-a45c-0f46ee58825e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 964599b919a7299da33a5f0ac72ad5ea644097d8
 workflow-type: tm+mt
-source-wordcount: '1811'
+source-wordcount: '1817'
 ht-degree: 76%
 
 ---
@@ -104,7 +104,7 @@ Les fragments de contenu peuvent être référencés à partir des pages d’AEM
 
 * Le composant vous permet de sélectionner la variation à afficher.
 
-* En outre, une plage de paragraphes peut être sélectionnée pour limiter la sortie ; par exemple, cela peut être utilisé pour la sortie multi-colonnes.
+* En outre, une plage de paragraphes peut être sélectionnée pour limiter la sortie ; par exemple, elle peut être utilisée pour la sortie à plusieurs colonnes.
 
 * Le composant accepte le contenu intermédiaire :
 
@@ -130,9 +130,9 @@ Les fragments de contenu peuvent être intégrés avec :
 
 * **Des traductions**
 
-  Les fragments de contenu sont entièrement intégrés au [workflow de traduction AEM](/help/sites-cloud/administering/translation/overview.md). Au niveau architectural, cela signifie :
+  Les fragments de contenu sont entièrement intégrés au [workflow de traduction AEM](/help/sites-cloud/administering/translation/overview.md). Sur le plan architectural, cela signifie :
 
-   * Les traductions individuelles d’un fragment de contenu sont en fait des fragments distincts ; par exemple :
+   * Les traductions individuelles d’un fragment de contenu sont en fait des fragments distincts, par exemple :
 
       * elles sont situées sous des racines de langue différentes, mais partagent exactement le même chemin relatif sous la racine de langue appropriée :
 
