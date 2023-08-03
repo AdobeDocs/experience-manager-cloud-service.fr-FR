@@ -1,12 +1,12 @@
 ---
 title: Validation et débogage à l’aide des outils Dispatcher
-description: Validation et débogage à l’aide des outils Dispatcher
+description: Découvrez la validation locale, le débogage, la structure de fichiers du mode flexible et comment migrer du mode hérité vers le mode flexible.
 feature: Dispatcher
 exl-id: 9e8cff20-f897-4901-8638-b1dbd85f44bf
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
-source-wordcount: '2847'
-ht-degree: 56%
+source-wordcount: '2861'
+ht-degree: 55%
 
 ---
 
@@ -278,7 +278,7 @@ utiliser le préfixe `etc/httpd` dans votre archive.
 
 Vos fermes de serveurs activées doivent se trouver dans le sous-dossier mentionné.
 
-**Le fichier inclus (...) doit être nommé : ...**
+**Le fichier inclus (...) doit être nommé :**
 
 Deux sections de la configuration de votre ferme **doivent** inclure
 un fichier spécifique : `/renders` et `/allowedClients` dans la section `/cache`. Ces
@@ -311,7 +311,7 @@ Votre configuration de ferme comporte quatre sections où vous pouvez inclure vo
 
 Vous pouvez également inclure la version **par défaut** de ces fichiers, dont les noms sont précédés du mot `default_`, par exemple `../filters/default_filters.any`.
 
-**Inclure une instruction à l’emplacement (...), en dehors de tout emplacement connu : ...**
+**Inclure une instruction à (...), en dehors de tout emplacement connu : ...**
 
 Outre les six sections mentionnées dans les paragraphes ci-dessus, vous n’avez pas l’autorisation d’utiliser l’instruction `$include`. Par exemple, les éléments suivants généreraient cette erreur :
 
@@ -509,7 +509,7 @@ INFO Mon Jul  4 09:53:55 UTC 2022: Apache httpd informationServer version: Apach
 
 ## Différentes configurations Dispatcher par environnement {#different-dispatcher-configurations-per-environment}
 
-Actuellement, la même configuration de Dispatcher est appliquée à tous les environnements sur AEM as a Cloud Service. Le composant d’exécution comporte une variable d’environnement. `ENVIRONMENT_TYPE` qui contient le mode d’exécution actuel (développement, évaluation ou production) et une &quot;définition&quot;. Le &quot;define&quot; peut être `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE`ou `ENVIRONMENT_PROD`. Dans la configuration Apache, la variable peut être utilisée directement dans une expression. Vous pouvez également utiliser la &quot;définition&quot; pour créer une logique :
+Actuellement, la même configuration de Dispatcher est appliquée à tous les environnements sur AEM as a Cloud Service. L’exécution comporte une variable d’environnement. `ENVIRONMENT_TYPE` qui contient le mode d’exécution actuel (développement, évaluation ou production) et une &quot;définition&quot;. Le &quot;define&quot; peut être `ENVIRONMENT_DEV`, `ENVIRONMENT_STAGE`, ou `ENVIRONMENT_PROD`. Dans la configuration Apache, la variable peut être utilisée directement dans une expression. Vous pouvez également utiliser la &quot;définition&quot; pour créer une logique :
 
 ```
 # Simple usage of the environment variable
@@ -547,7 +547,7 @@ Pour obtenir la liste complète des options et variables disponibles, exécutez 
 
 ## Affichage de la configuration Dispatcher utilisée par votre conteneur Docker {#viewing-dispatcher-configuration-in-use-by-docker-container}
 
-Avec les configurations spécifiques à un environnement, il peut être difficile de déterminer à quoi ressemble la configuration réelle de Dispatcher. Après avoir démarré votre conteneur Docker avec `docker_run.sh`, il peut être vidé comme suit :
+Avec les configurations spécifiques à un environnement, il peut être difficile de déterminer à quoi ressemble la configuration de Dispatcher. Après avoir démarré votre conteneur Docker avec `docker_run.sh`, il peut être vidé comme suit :
 
 * Déterminez l’identifiant de conteneur Docker utilisé :
 

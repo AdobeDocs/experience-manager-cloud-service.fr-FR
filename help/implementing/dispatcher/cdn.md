@@ -1,12 +1,12 @@
 ---
 title: Réseau de diffusion de contenu dans AEM as a Cloud Service
-description: Réseau de diffusion de contenu dans AEM as a Cloud Service
+description: Découvrez comment utiliser le réseau de diffusion de contenu géré par AEM et comment pointer votre propre réseau de diffusion de contenu vers le réseau de diffusion de contenu géré par AEM.
 feature: Dispatcher
 exl-id: a3f66d99-1b9a-4f74-90e5-2cad50dc345a
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 127b79d766a4dfc33a2ed6016e191e771206d791
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 99%
+source-wordcount: '1033'
+ht-degree: 96%
 
 ---
 
@@ -40,7 +40,7 @@ Voir [Gestion des Listes autorisées IP](/help/implementing/cloud-manager/ip-all
 >
 >Seules les requêtes provenant des adresses IP autorisées sont traitées par le biais du réseau CDN géré par AEM. Si vous pointez votre propre réseau CDN sur le réseau géré par AEM, assurez-vous que les adresses IP de votre réseau CDN sont incluses dans la liste autorisée.
 
-## Le réseau CDN client pointe vers le réseau CDN géré par AEM {#point-to-point-CDN}
+## Le réseau de diffusion de contenu du client pointe vers le réseau de diffusion de contenu géré AEM {#point-to-point-CDN}
 
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_byocdn"
