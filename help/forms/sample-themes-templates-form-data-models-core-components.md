@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 6cc7153c9754b6786a08c5fd378d72a8ab7c478d
+source-git-commit: b527e7499bfd995362b792ca1c57a2c92901739c
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1210'
 ht-degree: 10%
 
 ---
@@ -80,7 +80,7 @@ Le modèle de base vous permet de créer rapidement un formulaire d’expérienc
 
 >[!TAB Téléphone]
 
-![Téléphone de modèle de base](assets/Basic-temp-phone-view.png)
+![Téléphone de modèle de base](assets/Basic-temp-phone-view.png){width:&quot;25%&quot;}
 
 >[!TAB Tablette]
 
@@ -93,7 +93,21 @@ Le modèle de base vous permet de créer rapidement un formulaire d’expérienc
 
 Un modèle de canevas vierge est utilisé pour créer entièrement une structure de formulaire adaptatif, du contenu et des règles. Aucun composant de formulaire n’est préincorporé dans le modèle vierge.
 
-![Modèle vierge](assets/Blank-template.png)
+>[!BEGINTABS]
+
+>[!TAB Poste de travail]
+
+![Modèle vierge Bureau](assets/Blank-temp-desktop-view.png)
+
+>[!TAB Téléphone]
+
+![Téléphone de modèle de base](assets/Blank-temp-phone-view.png){width:&quot;25%&quot;}
+
+>[!TAB Tablette]
+
+![Tablette de modèle de base](assets/Blank-temp-tablet-view.png)
+
+>[!ENDTABS]
 
 ### Nous contacter {#Contact-Us}
 
@@ -147,7 +161,7 @@ Le modèle de formulaire de demande d’achat permet de créer un formulaire pou
 
 ## Modèles de données de formulaire de référence {#reference-models}
 
-Après avoir créé une [Formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) basé sur [Composant principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), vous pouvez connecter le serveur principal de votre formulaire à la base de données Microsoft® Dynamics 365 et aux serveurs Salesforce pour activer les processus métier. Par exemple :
+Après avoir créé une [Formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) basé sur [Composant principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), vous pouvez connecter votre formulaire à la base de données Microsoft® Dynamics 365 et aux serveurs Salesforce pour activer les workflows métier. Par exemple :
 
 * Écrivez des données dans Microsoft® Dynamics 365 et Salesforce lors de l’envoi du formulaire adaptatif.
 * Écrivez des données dans Microsoft® Dynamics 365 et Salesforce par le biais d’entités personnalisées définies dans le modèle de données de formulaire et vice versa.
