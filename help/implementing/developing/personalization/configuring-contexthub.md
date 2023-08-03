@@ -1,11 +1,11 @@
 ---
 title: Configuration de ContextHub
-description: Découvrez comment configurer ContextHub.
+description: Découvrez comment configurer ContextHub, un framework pour stocker, manipuler et présenter des données contextuelles.
 exl-id: 1fd7d41e-31ad-4838-8749-a5791edcfd63
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1680'
-ht-degree: 95%
+source-wordcount: '1689'
+ht-degree: 94%
 
 ---
 
@@ -149,7 +149,7 @@ Le magasin contexthub.generic-jsonp est configuré de sorte qu’il stocke les d
 
 L’exemple de candidat de magasin contexthub.generic-jsonp vous permet de récupérer les données d’un service JSONP ou web qui renvoie des données JSON. Pour ce candidat de magasin, utilisez la configuration de magasin afin de fournir les détails du service JSONP à utiliser.
 
-Le [init](contexthub-api.md#init-name-config) de la fonction `ContextHub.Store.JSONPStore` La classe JavaScript définit une `config` qui initialise ce magasin candidat. L’objet `config` contient un objet `service` qui inclut des détails sur le service JSONP. Pour configurer le magasin, il vous suffit de fournir l’objet `service` au format JSON comme valeur de la propriété Configuration de détails.
+La variable [init](contexthub-api.md#init-name-config) de la fonction `ContextHub.Store.JSONPStore` La classe JavaScript définit une `config` qui initialise ce magasin candidat. L’objet `config` contient un objet `service` qui inclut des détails sur le service JSONP. Pour configurer le magasin, il vous suffit de fournir l’objet `service` au format JSON comme valeur de la propriété Configuration de détails.
 
 Pour enregistrer les données à partir du service MD5 du site jsontest.com, suivez la procédure décrite dans [Création d’un magasin ContextHub](#creating-a-contexthub-store) à l’aide des propriétés suivantes :
 

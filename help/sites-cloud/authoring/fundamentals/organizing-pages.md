@@ -1,11 +1,11 @@
 ---
 title: Création et organisation des pages
-description: Comment créer et organiser des pages avec AEM
+description: Découvrez comment organiser votre site web en créant et en gérant des pages avec AEM.
 exl-id: c57096ca-34fe-4b19-98e0-8f3cd43cf24e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2539'
-ht-degree: 87%
+source-wordcount: '2544'
+ht-degree: 86%
 
 ---
 
@@ -133,7 +133,7 @@ Si vous indiquez un **nom** de page lors de la création d’une page, AEM [vali
 
 ### Modèles {#templates}
 
-Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle est utilisé comme base pour toute nouvelle page en cours de création.
+Dans AEM, un modèle spécifie un type de page spécialisé. Un modèle sert de base à toute nouvelle page créée.
 
 Le modèle définit la structure d’une page, y compris une miniature et d’autres propriétés. Par exemple, vous pouvez avoir des modèles distincts pour les pages de produits, les plans de site et les coordonnées. Les modèles sont constitués de [composants](#components).
 
@@ -280,7 +280,7 @@ Vous pouvez copier une page ainsi que toutes ses sous-pages à un nouvel emplace
 
 >[!NOTE]
 >
->Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` devient `beach1`.
+>Si vous copiez la page à un emplacement où il existe une page du même nom que l’original, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page nommée `beach` devient `beach1`.
 
 >[!NOTE]
 >
@@ -319,7 +319,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
 
    >[!NOTE]
    >
-   >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page portant le nom `beach` devient `beach1`.
+   >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `beach` existe déjà, une nouvelle page nommée `beach` devient `beach1`.
 
 1. À l’étape **Sélectionner une destination** de l’assistant, vous pouvez effectuer l’une des opérations suivantes :
 
@@ -340,7 +340,7 @@ AEM vous offre la possibilité de mettre à jour les liens internes qui font ré
    >
    >Si vous déplacez la page à un emplacement où il existe une page du même nom, le système génère automatiquement une variante du nom en y ajoutant un numéro. Par exemple, si `winter` existe déjà, `winter` devient `winter1`.
 
-1. Si la page est liée ou référencée, ou si elle a été publiée, les détails sont répertoriés dans la variable **Ajuster/republier** étape .
+1. Si la page est liée ou référencée, ou si elle a été publiée, les détails sont répertoriés dans la **Ajuster/republier** étape .
 
    Vous pouvez indiquer quelles pages sont les pages à adapter et/ou à republier.
 

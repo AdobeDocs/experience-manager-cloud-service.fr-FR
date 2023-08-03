@@ -1,10 +1,10 @@
 ---
 title: Guide rapide relatif à WCAG 2.1
-description: Guide rapide relatif à WCAG 2.1
+description: Guide rapide relatif aux directives d’accessibilité du contenu web (WCAG) version 2.1.
 exl-id: 56aa834b-cd07-41c5-88f2-915bc0596e48
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1780'
 ht-degree: 66%
 
 ---
@@ -66,10 +66,10 @@ Développons :
 
 * Les instructions sont rédigées en tant qu’instructions, qui sont soit positives (faites ceci...), soit négatives (ne faites pas cela...).
 * Les directives sont numérotées 1.1 à 4.1, où le premier numéro correspond au principe parent.
-* Chaque ligne guide est composée d’une ou de plusieurs **critères de réussite**.
+* Chaque ligne guide comprend une ou plusieurs lignes guides **critères de réussite**.
 * Les critères de réussite sont écrits sous la forme d’instructions, qui sont `True` ou `False` pour n’importe quelle page web donnée.
-* Les critères de réussite peuvent inclure des choix ou des exceptions ; dans les situations où les critères de réussite ne doivent pas être remplis.
-* Les critères de réussite sont numérotés selon la ligne directrice et le principe parents, de 1.1.1 à 4.1.1. Ils ont également un nom court résumant l’intention du critère, à titre de référence plus facile. Par exemple, le critère de réussite [1.1.1 est Contenu non textuel](https://www.w3.org/TR/WCAG/#non-text-content).
+* Les critères de réussite peuvent inclure des choix ou des exceptions, dans les cas où les critères de réussite ne doivent pas être remplis.
+* Les critères de réussite sont numérotés selon la ligne directrice et le principe parents, de 1.1.1 à 4.1.1. Ils ont également un nom court qui résume l’intention du critère, pour une référence plus facile. Par exemple, le critère de réussite [1.1.1 est Contenu non textuel](https://www.w3.org/TR/WCAG/#non-text-content).
 * Les critères de réussite incluent une liste de **techniques** associées (décrites plus en détail ci-dessous).
 
 ## Ressources annexes {#supporting-resources}
@@ -108,7 +108,7 @@ Les **techniques** forment le niveau sous les critères de réussite dans la hi�
 Les techniques sont accessibles :
 
 * par collection (les techniques peuvent être générales ou associées à une technologie ou un format spécifique, comme HTML, CSS ou des scripts côté client) ;
-* Des critères de réussite associés. Les techniques peuvent s’appliquer à plusieurs critères de réussite.
+* À partir des critères de réussite associés. Les techniques peuvent s’appliquer à plusieurs critères de réussite.
 
 Chaque technique possède un numéro unique, qui se rapporte à sa collection. Par exemple, l’une des techniques ARIA est la [technique ARIA2 : identification d’un champ obligatoire avec la propriété « aria-required »](https://www.w3.org/WAI/WCAG21/Techniques/aria/ARIA2.html).
 

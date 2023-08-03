@@ -1,11 +1,11 @@
 ---
 title: Publication de pages
-description: Publication et dépublication de pages à l’aide d’AEM
+description: Découvrez comment publier et annuler la publication de vos pages à l’aide de divers mécanismes dans AEM.
 exl-id: 89f2363c-7922-4ca5-92cb-cbee6a393ee3
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 85%
+source-wordcount: '1807'
+ht-degree: 84%
 
 ---
 
@@ -65,7 +65,7 @@ Si vous modifiez une page, vous pouvez la publier directement à partir de l’�
 1. Selon que la page comporte des références qui doivent être publiées :
 
    * La page est publiée directement s’il n’y a aucune référence à publier.
-   * Si la page comporte des références qui doivent être publiées, celles-ci sont répertoriées dans la variable **Publier** , où vous pouvez effectuer l’une des opérations suivantes :
+   * Si la page comporte des références à publier, celles-ci sont répertoriées dans la variable **Publier** , où vous pouvez effectuer l’une des opérations suivantes :
       * Spécifier les ressources, balises et autres éléments à publier conjointement avec la page, puis cliquer sur **Publier** pour terminer l’opération.
       * Sélectionner **Annuler** pour abandonner l’opération.
 
@@ -203,7 +203,7 @@ Pour publier ou dépublier une page à l’aide de l’option Gérer la publicat
 
    >[!NOTE]
    >
-   >Le **Workflows** s’affiche en fonction des droits dont dispose ou non votre utilisateur. Consultez la remarque précédente sur cette page concernant les privilèges de publication et la gestion de l’accès aux workflows et [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md) pour plus d’informations.
+   >La variable **Workflows** s’affiche en fonction des droits dont dispose ou non votre utilisateur. Consultez la remarque précédente sur cette page concernant les privilèges de publication et la gestion de l’accès aux workflows et [Application de workflows aux pages](/help/sites-cloud/authoring/workflows/applying.md) pour plus d’informations.
 
    Les ressources sont regroupées selon les workflows déclenchés et chaque option donnée pour :
 

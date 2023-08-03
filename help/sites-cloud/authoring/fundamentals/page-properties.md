@@ -1,10 +1,10 @@
 ---
 title: Modification des propriétés de page
-description: Définir les propriétés requises pour une page
+description: Découvrez comment définir les propriétés requises pour gérer une page dans AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '2341'
+source-wordcount: '2347'
 ht-degree: 81%
 
 ---
@@ -51,7 +51,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 * **Autres titres et descriptions**
 
    * **Titre de la page** – Titre à utiliser sur la page. Généralement utilisé par les composants de titre. Si elle est vide, la variable **Titre** est utilisée.
-   * **Titre de navigation** - Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez qu’il soit plus concis). Si elle est vide, la variable **Titre** est utilisée.
+   * **Titre de navigation** - Vous pouvez spécifier un titre distinct à utiliser dans la navigation (par exemple, si vous souhaitez un titre plus concis). Si elle est vide, la variable **Titre** est utilisée.
    * **Sous-titre** – Sous-titre à utiliser sur la page.
    * **Description** – Votre description de la page, son objectif ou tout autre détail que vous souhaiteriez ajouter.
 
@@ -62,7 +62,7 @@ Les propriétés sont réparties sur plusieurs onglets.
   > Voir [Heures d’activation et de désactivation – Configuration du déclenchement](/help/operations/replication.md#on-and-off-times-trigger-configuration) pour en savoir plus sur la configuration de la réplication automatique associée.
 
   >[!NOTE]
-  >Si la variable **Heure d’activation** ou **Heure de désactivation** est dans le passé et la réplication automatique est configurée, puis l’action appropriée est déclenchée immédiatement.
+  >Si l’une des variables **Heure d’activation** ou **Heure de désactivation** est dans le passé et la réplication automatique est configurée, puis l’action appropriée est déclenchée immédiatement.
 
    * **Heure d’activation** - Date et heure auxquelles la page publiée est rendue visible (rendue) dans l’environnement de publication. La page doit être publiée, soit manuellement, soit par réplication automatique préconfigurée.
 
@@ -115,7 +115,7 @@ Les propriétés sont réparties sur plusieurs onglets.
 
 * **Paramètres de modèles**
 
-   * **Modèles autorisés** - [Définit la liste des modèles disponibles](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dans cette sous-branche
+   * **Modèles autorisés** - [Définit la liste des modèles disponibles.](/help/sites-cloud/authoring/features/templates.md#enabling-and-allowing-a-template-template-author) dans cette sous-branche
 
 * **Exigence d’authentification**
 

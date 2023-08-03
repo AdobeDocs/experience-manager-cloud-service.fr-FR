@@ -1,11 +1,11 @@
 ---
 title: Votre boîte de réception
-description: Gérez vos tâches avec la boîte de réception
+description: Découvrez comment utiliser les notifications qui arrivent dans votre boîte de réception pour gérer vos tâches.
 exl-id: 37d0cf43-192f-4a50-b174-42d7dced3b63
-source-git-commit: 1473c1ffccc87cb3a0033750ee26d53baf62872f
+source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 90%
+source-wordcount: '914'
+ht-degree: 88%
 
 ---
 
@@ -174,7 +174,7 @@ Vous pouvez créer des tâches à partir de la boîte de réception :
 
    * **Avancé**
 
-      * **Nom**: Utilisé pour former l’URL et, s’il est vide, il est basé sur la variable **Titre**.
+      * **Nom**: utilisé pour former l’URL et, s’il est vide, il repose sur la variable **Titre**.
 
    ![Options avancées de la tâche d’ajout de boîte de réception](/help/sites-cloud/authoring/assets/inbox-add-task-advanced.png)
 
