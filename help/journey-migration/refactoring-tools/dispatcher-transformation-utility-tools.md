@@ -1,11 +1,11 @@
 ---
 title: Outil convertisseur du Dispatcher AEM
-description: Outil convertisseur du Dispatcher AEM
+description: Découvrez comment convertir des configurations existantes sur AEM Dispatcher en configurations sur AEM Dispatcher as a Cloud Service.
 exl-id: 2e95ff7b-cc94-477d-99ab-816a58998287
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 49%
+source-wordcount: '352'
+ht-degree: 46%
 
 ---
 
@@ -39,13 +39,13 @@ Le convertisseur du Dispatcher AEM permet de refactoriser les configurations exi
 
 ## Utilisation du convertisseur du Dispatcher AEM {#using-dispatcher-converter}
 
-* Au moyen de l’interface de ligne de commande d’Adobe Developer : Adobe vous recommande d’utiliser le convertisseur du Dispatcher AEM au moyen du `aio-cli-plugin-aem-cloud-service-migration` (AEM module externe de refactorisation du code as a Cloud Service pour l’interface de ligne de commande d’Adobe Developer).
+* Par le biais de l’interface de ligne de commande d’Adobe Developer : Adobe vous recommande d’utiliser le convertisseur du Dispatcher AEM au moyen de l’option `aio-cli-plugin-aem-cloud-service-migration` (AEM module externe de refactorisation du code as a Cloud Service pour l’interface de ligne de commande d’Adobe Developer).
 
-  Voir **[Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** vous pouvez ainsi apprendre à installer et à utiliser le module externe.
+  Voir **[Ressource Git : aio-cli-plugin-aem-cloud-service-migration](https://github.com/adobe/aio-cli-plugin-aem-cloud-service-migration#introduction)** pour vous permettre d’apprendre à installer et à utiliser le module externe.
 
-* En tant qu’utilitaire autonome : L’outil AEM convertisseur du Dispatcher peut également être exécuté en tant qu’utilitaire autonome.
+* En tant qu’utilitaire autonome : l’outil AEM convertisseur du Dispatcher peut également être exécuté en tant qu’utilitaire autonome.
 
-  Voir **[Ressource Git : Convertisseur du Dispatcher AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** pour en savoir plus sur l’utilisation et la résolution des problèmes de cet outil.
+  Voir **[Ressource Git : convertisseur du Dispatcher AEM Cloud Service](https://github.com/adobe/aem-cloud-service-source-migration/tree/master/packages/dispatcher-converter)** pour en savoir plus sur l’utilisation et la résolution des problèmes de cet outil.
 
 >[!IMPORTANT]
 >Le convertisseur du Dispatcher AEM est développé à l’aide de NodeJS. Adobe recommande que NodeJS 10.0+ soit installé.

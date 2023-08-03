@@ -1,17 +1,17 @@
 ---
-title: Intégration à Adobe Analytics
-description: Intégration à Adobe Analytics
+title: Intégration à Adobe Analytics
+description: Découvrez comment intégrer Adobe Analytics à AEM as a Cloud Service.
 feature: Administering
 role: Admin
 exl-id: e353a1fa-3e99-4d79-a0d1-40851bc55506
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: f7ffe727ecc7f1331c1c72229a5d7f940070c011
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 88%
+source-wordcount: '566'
+ht-degree: 86%
 
 ---
 
-# Intégration à Adobe Analytics {#integrating-with-adobe-analytics}
+# Intégration à Adobe Analytics{#integrating-with-adobe-analytics}
 
 L’intégration d’Adobe Analytics et d’AEM as a Cloud Service vous permet de suivre l’activité de vos pages web. L’intégration nécessite :
 
