@@ -7,9 +7,9 @@ role: Admin, User
 hide: true
 hidefromtoc: true
 level: Intermediate
-source-git-commit: 2739b89da945cb96b35bfd33e683b5b5e98490d0
+source-git-commit: 2b290be134be05bc15891082e8b54efef62076d0
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1277'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 9%
 
 # Exemples de thèmes, de modèles et de données de formulaire dans les composants principaux {#sample-themes-templates-and-data-models}
 
-Les composants principaux d’AEM Forms fournissent des exemples de thèmes de référence, de modèles et de modèles de données de formulaire pour vous aider à commencer rapidement la création de Forms adaptatif avec des composants principaux. Vous pouvez [Activation des composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=fr) dans l’environnement de développement as a Cloud Service et local d’AEM Forms pour obtenir des exemples de modèles prêts à l’emploi et pour [utilisation et personnalisation d’exemples de thèmes](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) in [!DNL AEM Forms].
+[!DNL AEM Forms] Les composants principaux fournissent des exemples de thèmes, de modèles et de modèles de données de formulaire prêts à l’emploi pour créer rapidement des formulaires adaptatifs polyvalents. Ils aident également les auteurs de formulaires à apprendre l’extensibilité, l’adaptabilité et la réactivité des [Composants principaux d’AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) pour créer facilement des formulaires simples en un rien de temps et des formulaires complexes lors d’une connexion transparente à la base de données.
 
 Les exemples de thèmes, modèles et modèles de données de formulaire inclus dans le module de contenu de référence sont les suivants :
 
@@ -39,7 +39,13 @@ Les exemples de thèmes, modèles et modèles de données de formulaire inclus d
 
 ## Exemples de thèmes {#Sample-Themes}
 
-Les exemples de thèmes de référence aident les auteurs à définir et personnaliser le style des formulaires, les auteurs qui possèdent même une connaissance de base du code CSS peuvent personnaliser le thème selon leurs besoins. Auteurs de formulaires [Activation des composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=fr) dans l’environnement de développement as a Cloud Service et local d’AEM Forms pour obtenir ces thèmes décrits comme suit :
+Les exemples de thèmes de référence aident les auteurs à définir et personnaliser le style des formulaires, les auteurs qui possèdent même une connaissance de base du code CSS peuvent personnaliser le thème selon leurs besoins.
+
+**Comment obtenir ces thèmes ?**
+* Pour activer ces thèmes **Forms as a Cloud Service** environnement, [Activation des composants principaux de Forms adaptatif](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) et utilisez la fonction [pipeline front-end](https://experienceleague.corp.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) pour déployer ces thèmes.
+* Pour mettre ces thèmes sur une **AEM 6.5 Forms** environnement, [Activation des composants principaux de Forms adaptatif](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) et utilisez la fonction [gestionnaire de modules](https://experienceleague.corp.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) pour déployer ces thèmes.
+
+La variable **prêt à l’emploi** [Composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) Les thèmes sont décrits comme suit :
 
 ![Thèmes OOTB](assets/OOTB-themes.png)
 
@@ -51,7 +57,7 @@ Le thème de la zone de travail est le thème par défaut des formulaires et met
 
 ### WKND {#WKND}
 
-Le thème WKND incarne un design vivant, imaginatif et attrayant pour présenter un aspect stylisé à vos formulaires. Le thème est basé sur l’aspect et le style de [Site WKND](https://wknd.site/us/en.html) qui est un site Web de voyage et d&#39;aventure basé sur [Composants principaux d’Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction).
+Le thème WKND incarne un design vivant, imaginatif et attrayant pour présenter un aspect stylisé à vos formulaires. Le thème est basé sur l’aspect et le style de [Site WKND](https://wknd.site/us/en.html) qui est un site Web de voyage et d&#39;aventure basé sur [Composants principaux d’Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr).
 
 ![Thème WKND](assets/Safety-Inspection-Form-Theme.png)
 
@@ -64,7 +70,12 @@ Le thème Pâque permet de créer une apparence de formulaire attrayante et faci
 
 ## Exemples de modèles {#Sample-templates}
 
-Les modèles définissent la structure, le contenu et les actions du formulaire initial à répliquer dans votre formulaire ou utilisent une structure de modèle similaire à votre formulaire, par exemple, le formulaire de consentement, le formulaire d’inscription aux avantages et bien d’autres. Vous pouvez obtenir les modèles suivants en [activation des composants principaux de Forms adaptatif](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=fr) dans l’environnement de développement as a Cloud Service ou local d’AEM Forms. Les exemples de modèles dans les composants principaux de Forms adaptatif sont les suivants :
+Les modèles définissent la structure, le contenu et les actions du formulaire initial à répliquer dans votre formulaire ou utilisent une structure de modèle similaire à votre formulaire, par exemple, le formulaire de consentement, le formulaire d’inscription aux avantages et bien d’autres.
+
+**Comment obtenir ces modèles ?**
+Vous pouvez obtenir les modèles en déployant un [Projet basé sur AEM Archetype 43 ou version ultérieure](https://github.com/adobe/aem-project-archetype) à votre **AEM Forms as a Cloud Service** ou **AEM 6.5** Environnement Forms.
+
+La variable **prêt à l’emploi** [Composants principaux de formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=fr) les modèles sont décrits comme suit :
 
 ![Modèles de référence](assets/reference-templates-core-components.png)
 
@@ -82,7 +93,7 @@ Un modèle de canevas vierge est utilisé pour créer entièrement une structure
 
 ### Nous contacter {#Contact-Us}
 
-Le modèle de formulaire Contact est utilisé pour créer un formulaire afin de faciliter la communication entre les visiteurs du site web et les administrateurs. Les utilisateurs peuvent envoyer des requêtes, des commentaires ou des demandes d’assistance par le biais du formulaire.
+Le modèle de formulaire Contact est utilisé pour créer un formulaire afin de faciliter la communication entre les visiteurs du site web et les administrateurs de formulaires. Les utilisateurs peuvent envoyer des requêtes, des commentaires ou des demandes d’assistance par le biais du formulaire.
 
 ![Modèle de contact](assets/Contact-us-desktop-view.png)
 
@@ -100,7 +111,7 @@ Le modèle de formulaire de consentement est utilisé pour créer un formulaire 
 
 ### Requête de service de journal {#Log-Service-Request}
 
-Le modèle de demande de service de journal permet de créer un formulaire qui fournit des services de journalisation spécifiques aux demandes à un fournisseur de services. Le formulaire sert de requête formelle pour créer un ticket lorsque certains événements, activités ou données sont consignés pour le suivi ou le suivi de l’état.
+Le modèle de demande de service de journal permet de créer un formulaire qui demande des services de journalisation spécifiques au journal à un fournisseur de services. Le formulaire sert de requête formelle pour créer un ticket pour les événements, les activités ou les données consignées pour le suivi ou le suivi de l’état.
 
 ![Modèle de demande de service de journal](assets/Log-service-request-desktop-view.png)
 
@@ -152,7 +163,7 @@ Le modèle de formulaire de demande d’achat permet de créer un formulaire pou
 
 ## Modèles de données de formulaire de référence {#reference-models}
 
-Après avoir créé une [Formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components) basé sur [Composant principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en#adaptive-forms-core-components), vous pouvez connecter votre formulaire à la base de données Microsoft® Dynamics 365 et aux serveurs Salesforce pour activer les workflows métier. Par exemple :
+Après avoir créé une [Formulaire adaptatif](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#adaptive-forms-core-components) basé sur [Composant principal](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction#adaptive-forms-core-components), vous pouvez connecter votre formulaire à la base de données Microsoft® Dynamics 365 et aux serveurs Salesforce pour activer les workflows métier. Par exemple :
 
 * Écrivez des données dans Microsoft® Dynamics 365 et Salesforce lors de l’envoi du formulaire adaptatif.
 * Écrivez des données dans Microsoft® Dynamics 365 et Salesforce par le biais d’entités personnalisées définies dans le modèle de données de formulaire et vice versa.
@@ -164,4 +175,4 @@ Vous pouvez obtenir les modèles de données de formulaire suivants en installan
 * Microsoft® Dynamics 365
 * Salesforce
 
-Pour plus d’informations sur l’utilisation de ces modèles, voir [Configuration des services cloud Microsoft® Dynamics 365 et Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=fr#configure-dynamics-cloud-service)
+Pour plus d’informations sur l’utilisation de ces modèles, voir [Configuration des services cloud Microsoft® Dynamics 365 et Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
