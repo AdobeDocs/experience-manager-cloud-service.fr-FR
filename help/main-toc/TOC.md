@@ -8,9 +8,9 @@ user-guide-description: Découvrez comment fonctionne Experience Manager as a C
 breadcrumb-title: Guide de l’utilisateur
 user-guide-title: AEM as a Cloud Service
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 4f2a51502202fba3792cde370180d127f8e17418
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '4222'
+source-wordcount: '4236'
 ht-degree: 96%
 
 ---
@@ -963,6 +963,11 @@ ht-degree: 96%
       + [Configuration de l’éditeur de texte enrichi](/help/implementing/developing/extending/rich-text-editor.md)
       + [Configuration des modules externes d’éditeur de texte enrichi](/help/implementing/developing/extending/configure-rich-text-editor-plug-ins.md)
       + [Configuration de l’éditeur de texte enrichi pour créer des sites accessibles](/help/implementing/developing/extending/rte-accessible-content.md)
+      + [Extension de la création de pages](/help/implementing/developing/extending/page-authoring.md)
+      + [Extension des consoles](/help/implementing/developing/extending/consoles.md)
+      + [Étendre les propriétés de page](/help/implementing/developing/extending/page-properties.md)
+      + [Extension de l’éditeur en bloc](/help/implementing/developing/extending/bulk-editor.md)
+      + [Extension de MSM](/help/implementing/developing/extending/msm.md)
    + Déploiement sur AEM as a Cloud Service {#deploying}
       + [Déploiement sur AEM as a Cloud Service](/help/implementing/deploying/overview.md)
       + [Mises à jour de la version d’AEM](/help/implementing/deploying/aem-version-updates.md)

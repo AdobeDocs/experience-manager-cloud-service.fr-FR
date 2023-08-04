@@ -4,10 +4,10 @@ description: Découvrez comment réutiliser du contenu avec les puissantes fonct
 feature: Multi Site Manager
 role: Admin
 exl-id: 22b4041f-1df9-4189-8a09-cbc0c89fbf2e
-source-git-commit: a01583483fa89f89b60277c2ce4e1c440590e96c
+source-git-commit: 4049d226ecedb917c2a72cb76bc2fcaa946163f2
 workflow-type: tm+mt
-source-wordcount: '2706'
-ht-degree: 89%
+source-wordcount: '2719'
+ht-degree: 88%
 
 ---
 
@@ -161,7 +161,7 @@ Le tableau suivant présente un aperçu des principaux termes utilisés avec MSM
 | Chapitre | Sections du plan à inclure dans la Live Copy | Il s’agit généralement de sous-pages de la racine |
 | Synchronisation | Terme générique pour la synchronisation du contenu entre la source et les Live Copies (par les options **Déployer** et **Synchroniser**). |  |
 | Déploiement | Synchronise la source avec la Live Copy | Peut être déclenché par un auteur (sur une page de plan directeur) ou par un événement système (tel que défini par la configuration de déploiement) |
-| Configuration du déploiement | Règles qui déterminent quelles propriétés sont synchronisées, de quelle manière et à quel moment |  |
+| Configuration du déploiement | Règles qui déterminent quelles propriétés sont synchronisées, comment et quand |  |
 | Synchroniser | Demande manuelle de synchronisation, effectuée à partir des pages Live Copy |  |
 | Héritage | Une page ou un composant Live Copy hérite du contenu de sa page ou de son composant source lors de la synchronisation |  |
 | Suspendre | Supprime temporairement les relations en direct entre une Live Copy et sa page de plan directeur |  |
@@ -170,11 +170,9 @@ Le tableau suivant présente un aperçu des principaux termes utilisés avec MSM
 | Superficiel | Live Copy d’une seule page |  |
 | Profond | Live Copy d’une page, ainsi que de ses pages enfants |  |
 
-<!--
 >[!TIP]
 >
->See [Overview of the Java API](/help/sites-developing/extending-msm.md#overview-of-the-java-api) for the object names.
--->
+>Consultez le document [Extension du Multi Site Manager](/help/implementing/developing/extending/msm.md#overview-of-the-java-api) pour les noms d’objet.
 
 ## Live Copies {#live-copies}
 
@@ -322,7 +320,7 @@ Les étapes suivantes décrivent la procédure standard d’utilisation de MSM p
 1. Déterminez la configuration de déploiement à utiliser.
 
    1. MSM [installe plusieurs configurations de déploiement](live-copy-sync-config.md#installed-rollout-configurations) pouvant répondre à un certain nombre de cas d’utilisation.
-   1. En option, vous pouvez [créer une configuration de déploiement ;](live-copy-sync-config.md#creating-a-rollout-configuration) si nécessaire.
+   1. Vous pouvez éventuellement [créer une configuration de déploiement ;](live-copy-sync-config.md#creating-a-rollout-configuration) si nécessaire.
 
 1. Déterminer où vous devez [spécifier les configurations de déploiement à utiliser ;](live-copy-sync-config.md#specifying-the-rollout-configurations-to-use) et effectuez la configuration selon les besoins.
 1. Si nécessaire, [créez une configuration de plan directeur](creating-live-copies.md#creating-a-blueprint-configuration) qui identifie le contenu source de la Live Copy.

@@ -2,10 +2,10 @@
 title: Modification des propriétés de page
 description: Découvrez comment définir les propriétés requises pour gérer une page dans AEM.
 exl-id: 27521a6d-c6e9-4f43-9ddf-9165b0316084
-source-git-commit: 31e6ec8e9977c8787e14481ee3a94df767262aec
+source-git-commit: 0183e14ad1653e98c06b19ea36c7e97dedccdb84
 workflow-type: tm+mt
-source-wordcount: '2347'
-ht-degree: 81%
+source-wordcount: '2281'
+ht-degree: 80%
 
 ---
 
@@ -294,18 +294,6 @@ Lorsque vous modifiez une page, utilisez les **Informations sur la page** pour d
 ### À partir de la console Sites – Plusieurs pages {#from-the-sites-console-multiple-pages}
 
 Dans la console **Sites**, vous pouvez sélectionner plusieurs pages, puis utiliser **Afficher les propriétés** pour afficher et/ou modifier les propriétés de la page. On parle alors de modification en masse des propriétés de la page.
-
->[!NOTE]
->
->La modification en masse des propriétés est également disponible pour les ressources. La procédure est très semblable. Seuls quelques points sont différents. Pour plus d’informations, voir Modification des propriétés de plusieurs ressources.
->
->Il existe également un éditeur en bloc qui vous permet de rechercher du contenu provenant de plusieurs pages à l’aide du langage GQL (Google Query Language), puis de le modifier directement avant d’enregistrer les modifications dans les pages d’origine.
-
-<!--
->Bulk editing of properties is also available for Assets. It is very similar, but differs in a few points. See [Editing Properties of Multiple Assets](/help/assets/managing-multiple-assets.md) for details.
->
->There is also the [Bulk Editor](/help/sites-administering/bulk-editor.md), which allows you to search for content from multiple pages using GQL (Google Query Language) and then edit the content directly in the bulk editor before saving your changes to the originating pages.
--->
 
 Vous pouvez sélectionner plusieurs pages à des fins de modification en bloc de différentes manières, notamment :
 
