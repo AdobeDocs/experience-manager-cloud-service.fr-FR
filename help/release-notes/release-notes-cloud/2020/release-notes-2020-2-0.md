@@ -1,10 +1,10 @@
 ---
 title: Notes de mise à jour de la version 2020.2.0
-description: Notes de mise à jour de la version 2020.2.0
+description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.2.0. »
 exl-id: 005c4756-44c6-4af5-9b0c-0fc07bd211a0
-source-git-commit: 90de3cf9bf1c949667f4de109d0b517c6be22184
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 100%
 
 ---
@@ -33,5 +33,5 @@ Consultez cette section pour en savoir plus sur les nouveautés et les mises à 
 ### Correctifs  {#bug-fixes}
 
 * Les politiques de sécurité du navigateur empêchaient parfois le fonctionnement correct de certains boutons de l’écran d’exécution du pipeline.
-* Les liens Aperçu, Environnements et Activité étaient parfois disponibles sur la page d’entrée de Cloud Manager.
+* Les liens Aperçu, Environnements et Activité étaient parfois disponibles sur la page de destination de Cloud Manager.
 * Certaines défaillances lors du déploiement peuvent empêcher la création de pipelines.

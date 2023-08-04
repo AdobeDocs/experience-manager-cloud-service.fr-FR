@@ -1,10 +1,10 @@
 ---
 title: Notes de mise à jour d’Adobe Experience Manager as a Cloud Service version 2020.4.0
-description: Notes de mise à jour d’Experience Manager version 2020.4.0
+description: « Notes de mise à jour d’[!DNL Adobe Experience Manager] as a Cloud Service version 2020.4.0. »
 exl-id: d98a3862-76fa-4b5b-b81a-333f5f532b67
-source-git-commit: 4be76f19c27aeab84de388106a440434a99a738c
+source-git-commit: 9ceec0401b91bba2408bda89d4f2c486e2d51eec
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '648'
 ht-degree: 100%
 
 ---
@@ -32,11 +32,11 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 * Les utilisateurs peuvent configurer des [workflows de post-traitement](/help/assets/asset-microservices-configure-and-use.md#post-processing-workflows) démarrant automatiquement dans l’interface utilisateur [!UICONTROL Propriétés] de dossier pour les hiérarchies de dossiers spécifiques.
    * L’interface utilisateur [!UICONTROL Propriétés] de dossier est simplifiée, avec un nouvel onglet [!UICONTROL Traitement des ressources] contenant un profil de métadonnées, un profil de traitement et la nouvelle configuration de workflow qui démarre automatiquement.
 
-      ![Les profils de traitement peuvent s’appliquer facilement aux dossiers et toutes les ressources téléchargées dans les dossiers sont traitées à l’aide de ces profils](/help/assets/assets/asset-processing-folder-properties.png)
+     ![Les profils de traitement peuvent s’appliquer facilement aux dossiers et toutes les ressources téléchargées dans les dossiers sont traitées à l’aide de ces profils](/help/assets/assets/asset-processing-folder-properties.png)
 
    * L’option de retraitement des ressources permet de sélectionner un profil de traitement spécifique pour retraiter des ressources sélectionnées par l’utilisateur dans des sous-dossiers.
 
-      ![Retraiter des ressources sélectionnées à l’aide d’un profil de traitement spécifique](/help/assets/assets/fpo-existing-asset-reprocess.gif)
+     ![Retraiter des ressources sélectionnées à l’aide d’un profil de traitement spécifique](/help/assets/assets/fpo-existing-asset-reprocess.gif)
 
    * [!DNL Dynamic Media] : Ajout d’une configuration de publication sélective afin que les ressources soient publiées automatiquement pour un aperçu sécurisé uniquement. En outre, les ressources peuvent être publiées explicitement dans Experience Manager sans être publiées dans DMS7 pour une diffusion dans le domaine public.
 
@@ -52,12 +52,11 @@ Découvrez les nouvelles fonctionnalités, les améliorations et les correctifs 
 >* [Configuration d’Experience Manager pour une utilisation avec Asset Link](https://helpx.adobe.com/fr/enterprise/using/configure-aem-assets-for-asset-link.html)
 >* [Création d’un workflow dans Experience Manager à l’aide de microservices de ressources](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/asset-microservices-configure-and-use.html?lang=fr#post-processing-workflows)
 
-
 ## Nouveautés de Cloud Manager {#whats-new-cloud-manager}
 
 * Les URL de l’éditeur sont désormais disponibles à partir de la page Environnement de l’interface utilisateur Cloud Manager.
 * Modifications de la navigation pour permettre à l’utilisateur de modifier, de changer ou d’ajouter un programme à partir de la page d’aperçu de Cloud Manager.
-* Modifications permettant à l’utilisateur de modifier un programme à partir de la carte de programme sur la page d’entrée de Cloud Manager.
+* Modifications permettant à l’utilisateur de modifier un programme à partir de la carte de programme sur la page de destination de Cloud Manager.
 * Nouveau statut du pipeline **Exécution de pipeline** affiché au niveau de l’environnement auquel il est associé.
 * Améliorations de la lisibilité de la page d’exécution de pipeline. Cela inclut l’affichage du nom du pipeline (pipeline hors production uniquement) et du type, ainsi qu’un badge pour indiquer si le statut du pipeline est En cours/Annulé/Échec.
 * Ajout d’info-bulles destinées à améliorer l’expérience utilisateur et à expliquer pourquoi le bouton Ajouter un programme/environnement est désactivé.
