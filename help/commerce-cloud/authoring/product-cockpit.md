@@ -1,11 +1,11 @@
 ---
 title: Console du produit
-description: Utiliser le cockpit de produits
+description: Découvrez comment travailler avec le Product Cockpit, qui offre une vue d’ensemble unifiée des catalogues de produits liés et du contenu associé.
 exl-id: 6dbf039c-e040-48f1-88f3-ebbd70cdf94d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '432'
-ht-degree: 73%
+source-wordcount: '448'
+ht-degree: 70%
 
 ---
 
@@ -29,7 +29,7 @@ L’activation des fonctionnalités de catalogue intermédiaire nécessite une a
 
 >[!NOTE]
 >
->Les fonctionnalités de catalogue intermédiaire sont uniquement disponibles avec Adobe Commerce et les connecteurs tiers qui prennent en charge l’authentification par jeton.
+>Les fonctionnalités de catalogue intermédiaire ne sont disponibles qu’avec Adobe Commerce et les connecteurs tiers qui prennent en charge l’authentification par jeton.
 
 ## Ouvrir le cockpit de produits {#opening-product-cockpit}
 

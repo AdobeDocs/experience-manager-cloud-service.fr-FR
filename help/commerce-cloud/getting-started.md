@@ -1,6 +1,6 @@
 ---
 title: Prise en main d’AEM Commerce as a Cloud Service
-description: Découvrez comment déployer un projet AEM compatible avec le commerce dans un environnement AEM as a Cloud service opérationnel. Utilisez les fonctionnalités d’Adobe Cloud Manager et un pipeline CI/CD afin de pouvoir créer le storefront de référence Venia dans un environnement en cours d’exécution.
+description: Découvrez comment déployer un projet de commerce AEM à l’aide d’Adobe Cloud Manager, d’un pipeline CI/CD et du storefront de référence Venia.
 topics: Commerce
 feature: Commerce Integration Framework, Cloud Manager
 version: Cloud Service
@@ -8,10 +8,10 @@ doc-type: tutorial
 kt: 4947
 thumbnail: 37843.jpg
 exl-id: 73ba707e-5e2d-459a-8cc8-846d1a5f2fd7
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 45%
+source-wordcount: '1098'
+ht-degree: 44%
 
 ---
 
@@ -28,7 +28,7 @@ L’intégration à AEM Commerce as a Cloud Service est un processus à deux é
 
 La première étape d’intégration est effectuée par Adobe. Pour plus d’informations sur la tarification et la mise en service, contactez votre représentant commercial.
 
-Une fois que vous avez reçu le module complémentaire CIF, il est appliqué à tous les programmes Cloud Manager existants. Si vous ne disposez pas d’un programme Cloud Manager, vous devez en créer un. Pour plus d’informations, voir [Configuration du programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
+Une fois que vous avez reçu le module complémentaire CIF, il est appliqué à tous les programmes Cloud Manager existants. Si vous ne disposez pas d’un programme Cloud Manager, vous devez en créer un. Pour plus d’informations, voir [Configuration de votre programme](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/getting-started/program-setup.html).
 
 La deuxième étape s’effectue en libre-service pour chaque environnement AEM as a Cloud Service. Il existe d’autres configurations que vous devez effectuer après la mise en service initiale du module complémentaire CIF.
 
@@ -59,7 +59,7 @@ Cliquez sur ce bouton pour ouvrir une boîte de dialogue :
 
 ![Point d’entrée CM Commerce](/help/commerce-cloud/assets/commerce-cm-endpoint.png)
 
-Une fois le point de terminaison défini et éventuellement un en-tête d’autorisation pour la prise en charge du catalogue intermédiaire, le point de terminaison s’affiche sur la page de détails. Cliquez sur l’icône Modifier pour ouvrir la boîte de dialogue dans laquelle vous pouvez modifier le point de fin, si nécessaire.
+Une fois le point de terminaison défini et éventuellement un en-tête d’autorisation pour la prise en charge d’un catalogue intermédiaire, le point de terminaison s’affiche sur la page de détails. Cliquez sur l’icône Modifier pour ouvrir la boîte de dialogue dans laquelle vous pouvez modifier le point de fin, si nécessaire.
 
 ![Informations sur l’environnement de CM](/help/commerce-cloud/assets/commerce-cmui-done.png)
 
@@ -69,7 +69,7 @@ Pour connecter AEM à une solution de commerce par le biais de l’interface de 
 
 1. Procurez-vous l’interface de ligne de commande d’Adobe I/O avec le plug-in Cloud Manager.
 
-   Vérifiez les [Documentation d’Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr) sur la procédure de téléchargement, de configuration et d’utilisation de la variable [Interface de ligne de commande d’Adobe I/O](https://github.com/adobe/aio-cli) avec le [Module d’interface de ligne de commande de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
+   Vérifiez les [Documentation d’Adobe Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=fr) sur la procédure de téléchargement, de configuration et d’utilisation de la variable [Interface de ligne de commande Adobe I/O](https://github.com/adobe/aio-cli) avec la propriété [Module d’interface de ligne de commande de Cloud Manager](https://github.com/adobe/aio-cli-plugin-cloudmanager).
 
 2. Authentifiez l’interface de ligne de commande Adobe I/O avec le programme AEM as a Cloud Service.
 
@@ -126,7 +126,7 @@ Les propriétés suivantes peuvent être configurées :
 - Activer la prise en charge de l’UID du catalogue : activez la prise en charge de l’UID au lieu de l’ID dans les appels GraphQL du serveur principal de commerce.
   >[!NOTE]
   >
-  > La prise en charge des UID a été introduite dans Adobe Commerce 2.4.2. Activez uniquement les UID si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
+  > Prise en charge des UID dans Adobe Commerce 2.4.2. Activez les UID uniquement si votre serveur principal Commerce prend en charge un schéma GraphQL de la version 2.4.2 ou ultérieure.
 - Identifiant de catégorie racine du catalogue : l’identifiant (UID ou ID) de la racine du catalogue du magasin.
   >[!CAUTION]
   >

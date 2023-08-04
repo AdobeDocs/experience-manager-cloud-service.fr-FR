@@ -1,11 +1,11 @@
 ---
 title: Création d’expériences commerciales
-description: Création d’expériences commerciales
+description: Découvrez comment créer et créer efficacement des expériences liées au commerce en accédant aux données et au contenu des produits sans quitter le contexte.
 exl-id: 45d697b7-ec96-4c26-be2a-3395b731d52d
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: ba0c1e13f311f48ac138f2c3ca582835a4a83bf6
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 98%
+source-wordcount: '719'
+ht-degree: 95%
 
 ---
 
