@@ -1,9 +1,9 @@
 ---
 title: Utilisation de Content Transformer
-description: Utilisation de Content Transformer
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+description: Découvrez comment transformer votre structure de contenu en vue de la migration vers AEM as a Cloud Service.
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '645'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ Consultez la section ci-dessous pour comprendre les points importants à prendre
 * Bien que vous puissiez exécuter Content Transformer dans votre environnement de production, il est recommandé d’exécuter Content Transformer sur un clone de votre environnement de production. Plus important encore, vous devez vous assurer que le BPA et le CT sont exécutés sur le même environnement.
 * Vous devez être un administrateur de l’environnement dans lequel vous souhaitez exécuter Content Transformer.
 * Toute opération pouvant modifier le contenu source ( déplacer/supprimer/renommer ) crée par défaut un package de sauvegarde des chemins source sous `/etc/packages/content-transformation` avant la transformation. Bien que chaque boîte de dialogue d’opération dispose d’une option pour désactiver/activer la création de package de sauvegarde, il est strictement recommandé de toujours sélectionner la création de package d’activation .
-* Chaque page du CT est configurée pour répertorier un maximum de 50 résultats, donc à la fois un maximum de 50 résultats peuvent être transformés. Cela permet de fournir une réponse en temps voulu sur l’interface utilisateur.
+* Chaque page du Transformateur de contenu est configurée pour répertorier un maximum de 50 résultats. Par conséquent, un maximum de 50 résultats peuvent être transformés à la fois. Cela permet de fournir une réponse en temps voulu sur l’interface utilisateur.
 
 ## Disponibilité {#availability-ct}
 
@@ -29,7 +29,7 @@ Le transformateur de contenu est fourni avec la fonction [Outil de transfert de 
 
 ## Ouverture du transformateur de contenu {#opening-ct}
 
-1. Connectez-vous à l’instance d’AEM source en tant qu’administrateur et accédez à la page de début : https://host:port/aem/start.html.
+1. Connectez-vous à l’instance AEM source en tant qu’administrateur et accédez à la page de démarrage : https://host:port/aem/start.html.
 1. Accédez à Outils > Opérations > Migration du contenu
 
    ![image](/help/journey-migration/content-transformer/assets/ct-1.png)
@@ -62,7 +62,7 @@ Le transformateur de contenu est fourni avec la fonction [Outil de transfert de 
    >[!NOTE]
    > Toute opération pouvant modifier le contenu source (`move`/`remove`/`rename`) crée par défaut un package de sauvegarde des chemins sources sous `/etc/packages/content-transformation` avant la transformation. Bien que chaque boîte de dialogue d’opération dispose d’une option pour désactiver/activer la création de package de sauvegarde, il est strictement recommandé de toujours sélectionner la création de package d’activation .
 
-1. Un exemple de package de sauvegarde créé pour l’opération de déplacement des chemins est présenté ci-dessous. Cliquez sur Installer pour rétablir les chemins sources. Notez que l’installation ramènera uniquement les chemins source à leur emplacement d’origine et non pas les chemins où ils ont été déplacés pendant la transformation. Pour supprimer les chemins d’accès à l’emplacement déplacé, cliquez sur **Ajouter des chemins** pour ajouter l’emplacement (par exemple `/etc/packages/content-transformation/paths`), sélectionnez l’emplacement et cliquez sur **Supprimer**.
+1. Un exemple de package de sauvegarde créé pour l’opération de déplacement des chemins est présenté ci-dessous. Cliquez sur Installer pour rétablir les chemins sources. Notez que l’installation ramènera uniquement les chemins source à leur emplacement d’origine et non pas les chemins où ils ont été déplacés pendant la transformation. Pour supprimer les chemins à l’emplacement déplacé, cliquez sur **Ajouter des chemins** pour ajouter l’emplacement (par exemple `/etc/packages/content-transformation/paths`), sélectionnez l’emplacement et cliquez sur **Supprimer**.
 
    >[!CAUTION]
    > Ne pas supprimer `/etc/packages/content-transformation` car il s’agit de l’emplacement où se trouvent les modules de sauvegarde. Ce n’est que lorsque vous êtes certain que vous n’avez plus besoin de ces packages que vous pouvez supprimer cet emplacement afin de réduire la taille du référentiel.

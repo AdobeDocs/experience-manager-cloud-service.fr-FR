@@ -1,12 +1,12 @@
 ---
 title: Mise en cache dans AEM as a Cloud Service
-description: Mise en cache dans AEM as a Cloud Service
+description: Découvrez les principes de base de la mise en cache dans AEM as a Cloud Service
 feature: Dispatcher
 exl-id: 4206abd1-d669-4f7d-8ff4-8980d12be9d6
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2795'
-ht-degree: 51%
+source-wordcount: '2800'
+ht-degree: 50%
 
 ---
 
@@ -134,7 +134,7 @@ Désormais, les images dans l’espace de stockage blob marquées comme privées
 
 * Évitez d’utiliser `User-Agent` dans l’en-tête `Vary`. Les anciennes versions de la configuration de Dispatcher par défaut (avant l’archétype version 28) l’incluaient et Adobe vous recommande de la supprimer en suivant les étapes ci-dessous.
    * Recherchez les fichiers vhost dans `<Project Root>/dispatcher/src/conf.d/available_vhosts/*.vhost`.
-   * Supprimez ou commentez la ligne : `Header append Vary User-Agent env=!dont-vary` de tous les fichiers vhost, à l’exception de default.vhost, qui est en lecture seule
+   * Supprimez ou commentez la ligne : `Header append Vary User-Agent env=!dont-vary` de tous les fichiers vhost, sauf default.vhost, qui est en lecture seule
 * Utilisez l’en-tête `Surrogate-Control` pour contrôler la mise en cache du réseau CDN indépendamment de la mise en cache du navigateur.
 * Envisagez d’appliquer les directives [`stale-while-revalidate`](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control#stale-while-revalidate) et [`stale-if-error`](https://developer.mozilla.org/fr-FR/docs/Web/HTTP/Headers/Cache-Control#stale-if-error) afin de permettre l’actualisation de l’arrière-plan et d’éviter les pertes de cache, en maintenant le contenu à jour et rapide pour les utilisateurs.
    * Il existe de nombreuses façons d&#39;appliquer ces directives, mais il faut ajouter 30 minutes `stale-while-revalidate` à tous les en-têtes de contrôle du cache est un bon point de départ.

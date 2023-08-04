@@ -1,12 +1,12 @@
 ---
 title: Déploiement sur AEM as a Cloud Service
-description: Déploiement sur AEM as a Cloud Service
+description: Découvrez les principes de base et les bonnes pratiques de déploiement dans AEM as a Cloud Service
 feature: Deploying
 exl-id: 7fafd417-a53f-4909-8fa4-07bdb421484e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '3462'
-ht-degree: 42%
+source-wordcount: '3470'
+ht-degree: 41%
 
 ---
 
@@ -36,7 +36,7 @@ Comme pour les versions d’AEM non cloud existantes, un développement local ho
 >[!NOTE]
 >Il existe des différences opérationnelles subtiles entre le comportement de l’application sur un ordinateur local et sur Adobe Cloud. Ces différences architecturales doivent être respectées lors du développement local et peuvent entraîner un comportement différent lors du déploiement sur l’infrastructure cloud. En raison de ces différences, il est important d’effectuer des tests exhaustifs sur les environnements de développement et d’évaluation avant de déployer un nouveau code personnalisé en production.
 
-Pour développer du code personnalisé pour une version interne, la version appropriée de la variable [AEM SDK as a Cloud Service](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) doit être téléchargé et installé. Pour plus d’informations sur l’utilisation des outils Dispatcher d’AEM as a Cloud Service, voir [cette page](/help/implementing/dispatcher/disp-overview.md).
+Pour développer du code personnalisé pour une version interne, la version appropriée de la variable [AEM SDK AS A CLOUD SERVICE](/help/implementing/developing/introduction/aem-as-a-cloud-service-sdk.md) doit être téléchargé et installé. Pour plus d’informations sur l’utilisation des outils Dispatcher d’AEM as a Cloud Service, voir [cette page](/help/implementing/dispatcher/disp-overview.md).
 
 La vidéo suivante présente un aperçu général du déploiement du code sur AEM as a Cloud Service :
 
@@ -49,7 +49,7 @@ La vidéo suivante présente un aperçu général du déploiement du code sur AE
 
 ## Déploiement de modules de contenu au moyen de Cloud Manager et de Package Manager {#deploying-content-packages-via-cloud-manager-and-package-manager}
 
-### Déploiements par le biais de Cloud Manager {#deployments-via-cloud-manager}
+### Déploiements via Cloud Manager {#deployments-via-cloud-manager}
 
 <!-- Alexandru: temporarily commenting this out, until I get some clarification from Brian 
 
@@ -119,7 +119,7 @@ En outre, il n’existe aucun mécanisme permettant de restaurer les modificatio
 
 Les modules tiers inclus doivent être validés comme étant compatibles AEM as a Cloud Service, sinon leur inclusion entraîne un échec de déploiement.
 
-Comme mentionné ci-dessus, les clients disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel requis par les modifications du référentiel 6.5 décrites dans la section [Documentation d’AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr)
+Comme mentionné ci-dessus, les clients disposant de bases de code doivent se conformer à l’exercice de restructuration du référentiel requis par les modifications du référentiel 6.5 décrites dans la section [Documentation AEM 6.5.](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/repository-restructuring.html?lang=fr)
 
 ## Repoinit {#repoinit}
 
@@ -140,7 +140,7 @@ Dans les cas suivants, il est préférable d’utiliser l’approche du codage m
 Il est préférable d’opter pour repoinit pour ces scénarios de modification de contenu pris en charge en raison des avantages suivants :
 
 * `Repoinit` crée des ressources au démarrage si bien que la logique peut prendre l’existence de ces ressources pour acquise. Dans l’approche du package de contenu modifiable, les ressources sont créées après le démarrage. Le code de l’application reposant sur ces ressources peut donc échouer.
-* `Repoinit` est un jeu d’instructions relativement sûr, car vous contrôlez explicitement l’action à entreprendre. En outre, les seules opérations prises en charge sont les ajouts, à l’exception de quelques cas liés à la sécurité qui permettent de supprimer des utilisateurs, des utilisateurs de service et des groupes. En revanche, la suppression d’un élément dans l’approche du module de contenu modifiable est explicite. lorsque vous définissez un filtre, tout élément couvert par un filtre est supprimé. Néanmoins, il faut être prudent car, pour tout contenu, il existe des scénarios où la présence d’un nouveau contenu peut modifier le comportement de l’application.
+* `Repoinit` est un jeu d’instructions relativement sûr, car vous contrôlez explicitement l’action à entreprendre. En outre, les seules opérations prises en charge sont les ajouts, à l’exception de quelques cas liés à la sécurité qui permettent de supprimer des utilisateurs, des utilisateurs de service et des groupes. En revanche, la suppression d’un élément dans l’approche du module de contenu modifiable est explicite ; lorsque vous définissez un filtre, tout élément couvert par un filtre est supprimé. Néanmoins, il faut être prudent car, pour tout contenu, il existe des scénarios où la présence d’un nouveau contenu peut modifier le comportement de l’application.
 * `Repoinit` effectue des opérations atomiques et rapides. Cependant, les packages de contenu modifiable peuvent fortement dépendre des performances selon les structures couvertes par un filtre. Même si vous mettez à jour un nœud unique, un instantané d’une grande arborescence peut être créé.
 * Il est possible de valider `repoinit` sur un environnement de développement local au moment de l’exécution, car elles sont exécutées lorsque la configuration OSGi est enregistrée.
 * `Repoinit` sont atomiques et explicites et sont ignorées si l’état correspond déjà.
@@ -208,7 +208,7 @@ Si le stockage du package dans un référentiel distant n’est pas possible, le
 
 <!-- formatting appears broken in the code sample above, check how it appears on AEM -->
 
-Les modules tiers inclus doivent respecter les directives de codage et de conditionnement as a Cloud Service décrites dans cet article, sans quoi leur inclusion entraîne un échec de déploiement.
+Les modules tiers inclus doivent respecter les directives de codage et de création de package as a Cloud Service décrites dans cet article, sans quoi leur inclusion entraîne un échec de déploiement.
 
 Maven suivant `POM.xml` Le fragment de code indique comment les modules tiers peuvent être incorporés dans le module &quot;Conteneur&quot; du projet, généralement appelé **&#39;all&#39;**, par l’intermédiaire de la fonction **filevault-package-maven-plugin** Configuration du module externe Maven.
 
@@ -332,4 +332,4 @@ Developers want to ensure that their custom code is performing well. For Cloud e
 
 ## Configuration des tâches de maintenance dans le contrôle de code source {#maintenance-tasks-configuration-in-source-control}
 
-Les configurations des tâches de maintenance doivent être conservées dans le contrôle de code source, car la variable **Outils > Opérations** n’est pas disponible dans les environnements cloud. Cet avantage permet de s’assurer que les modifications sont intentionnellement conservées plutôt que appliquées de manière réactive et oubliées. Voir [Article sur les tâches de maintenance](/help/operations/maintenance.md) pour plus d’informations.
+Les configurations des tâches de maintenance doivent être conservées dans le contrôle de code source, car la variable **Outils > Opérations** L’écran n’est pas disponible dans les environnements cloud. Cet avantage permet de s’assurer que les modifications sont intentionnellement conservées plutôt que appliquées de manière réactive et oubliées. Voir [Article sur les tâches de maintenance](/help/operations/maintenance.md) pour plus d’informations.

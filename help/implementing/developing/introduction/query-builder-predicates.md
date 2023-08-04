@@ -1,10 +1,10 @@
 ---
-title: Référence des prédicats de Query Builder
-description: Référence des prédicats pour l’API Query Builder.
+title: Référence des prédicats de Query Builder
+description: Référence de prédicat pour l’API Query Builder dans AEM as a Cloud Service.
 exl-id: 77118ef7-4d29-470d-9c4b-20537a408940
-source-git-commit: d361ddc9a50a543cd1d5f260c09920c5a9d6d675
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2252'
 ht-degree: 58%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 58%
 
 Groupe de prédicats racine. Il prend en charge toutes les fonctionnalités d’un groupe et permet de définir des paramètres de requête globaux.
 
-Le nom &quot;root&quot; n’est jamais utilisé dans une requête ; c&#39;est implicite.
+Le nom &quot;root&quot; n’est jamais utilisé dans une requête ; il est implicite.
 
 #### Propriétés {#properties-18}
 
 * **`p.offset`** - nombre indiquant le début de la page de résultat, c’est-à-dire le nombre d’éléments à ignorer.
 * **`p.limit`** - Nombre indiquant la taille de la page.
-* **`p.guessTotal`** - recommandé : évitez de calculer le total du résultat, ce qui peut être coûteux. Soit un nombre indiquant le total maximal à compter (par exemple 1 000, un nombre qui donne aux utilisateurs suffisamment de commentaires sur la taille brute et les nombres exacts pour obtenir des résultats plus modestes). Ou, `true` pour ne compter que jusqu’au minimum nécessaire `p.offset` + `p.limit`.
+* **`p.guessTotal`** - recommandé : évitez de calculer le total du résultat, ce qui peut être coûteux. Soit un nombre indiquant le total maximal à compter (par exemple 1 000, un nombre qui donne aux utilisateurs suffisamment de commentaires sur la taille brute et les nombres exacts pour obtenir des résultats plus modestes). Ou, `true` pour ne compter que le minimum nécessaire `p.offset` + `p.limit`.
 * **`p.excerpt`** - si la valeur est définie sur `true`, incluez un extrait de texte intégral dans le résultat.
 * **`p.hits`** - (uniquement pour le servlet JSON) sélectionnez la manière dont les accès sont écrits en tant que JSON, avec ces accès standard (extensibles par le biais du service ResultHitWriter).
    * **`simple`** - Éléments minimaux tels que `path`, `title`, `lastmodified`, `excerpt` (s’ils sont définis).
@@ -63,7 +63,7 @@ D&#39;un point de vue conceptuel, `fulltext AND ( (path AND type) OR (path AND t
 
 #### Propriétés {#properties-6}
 
-* **`p.or`** – Si défini sur `true`, un seul prédicat du groupe doit correspondre. La valeur par défaut est `false`, ce qui signifie que toutes doivent correspondre
+* **`p.or`** – Si défini sur `true`, un seul prédicat du groupe doit correspondre. La valeur par défaut est `false`, ce qui signifie que toutes les doivent correspondre
 * **`p.not`** – Si défini sur `true`, le groupe est annulé (la valeur par défaut est `false`).
 * **`<predicate>`** – ajoute des prédicats imbriqués
 * **`N_<predicate>`** – ajoute plusieurs prédicats imbriqués simultanément, comme `1_property, 2_property, ...`
@@ -76,7 +76,7 @@ Ce prédicat permet de trier les résultats. Si un classement par plusieurs prop
 
 * **`orderby`** – Nom de propriété JCR indiqué par un caractère @ initial, par exemple `@jcr:lastModified` ou `@jcr:content/jcr:title`, ou un autre prédicat dans la requête, par exemple `2_property`, sur la base duquel le tri doit être effectué.
 * **`sort`** – Sens du tri, soit `desc` pour décroissant, soit `asc` pour croissant (valeur par défaut).
-* **`case`** - si la valeur est définie sur `ignore`, le tri n’est pas sensible à la casse, ce qui signifie `a` vient avant `B`; si elle est vide ou laissée pour compte, le tri est sensible à la casse, ce qui signifie `B` vient avant `a`
+* **`case`** - si la valeur est définie sur `ignore`, le tri n’est pas sensible à la casse, ce qui signifie `a` vient avant `B`; s’il est vide ou omis, le tri est sensible à la casse, ce qui signifie `B` vient avant `a`
 
 ## Prédicats {#predicates}
 
@@ -248,7 +248,7 @@ Il ne prend pas en charge l’extraction de facettes.
 * **`exact`** - if `exact` is `true`, le chemin exact doit correspondre, mais il peut contenir des caractères génériques simples (`*`), qui correspondent aux noms, mais pas aux `/`; s’il s’agit de `false` (par défaut) tous les descendants sont inclus (facultatif).
 * **`flat`** - recherche uniquement les enfants directs (comme l’ajout de `/*` dans xpath (utilisé uniquement si) `exact` n’est pas vrai, facultatif).
 * **`self`** – Effectue des recherches dans la sous-arborescence, mais inclut le nœud de base indiqué comme chemin d’accès (pas de caractères génériques).
-   * *Remarque importante*: Un problème a été identifié avec `self` dans l’implémentation actuelle de query builder et son utilisation dans les requêtes peut ne pas produire les résultats de recherche corrects. Modification de l’implémentation actuelle de `self` n’est pas non plus faisable, car elle peut interrompre les applications existantes qui s’y fient. En raison de cette fonctionnalité, `self` est désormais obsolète ; il est conseillé d’éviter de l’utiliser.
+   * *Remarque importante*: un problème a été identifié avec `self` dans l’implémentation actuelle de query builder et son utilisation dans les requêtes peut ne pas produire les résultats de recherche corrects. Modification de l’implémentation actuelle de `self` n’est pas non plus faisable, car elle peut interrompre les applications existantes qui s’y fient. En raison de cette fonctionnalité, `self` est désormais obsolète ; il est conseillé d’éviter de l’utiliser.
 
 ### property {#property}
 
@@ -258,7 +258,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
 
 #### Propriétés {#properties-15}
 
-* **`property`** - chemin d’accès relatif à la propriété, par exemple `jcr:title`.
+* **`property`** - chemin relatif à la propriété, par exemple `jcr:title`.
 * **`value`** - valeur pour laquelle vérifier la propriété ; suit le type de propriété JCR en conversions de chaîne.
 * **`N_value`** - use `1_value`, `2_value`, etc. pour vérifier plusieurs valeurs (combinées avec `OR` par défaut, avec `AND` if `and=true`).
 * **`and`** – défini sur `true` pour la combinaison de plusieurs valeurs (`N_value`) avec `AND`
@@ -274,7 +274,7 @@ Il prend en charge l’extraction des facettes et fournit des intervalles pour c
 
 ### rangeproperty {#rangeproperty}
 
-Ce prédicat met en correspondance une propriété JCR par rapport à un intervalle. Il s’applique aux propriétés avec des types linéaires tels que `LONG`, `DOUBLE`, et `DECIMAL`. Pour `DATE`, reportez-vous à la section [`daterange`](#daterange) prédicat avec une entrée de format de date optimisée.
+Ce prédicat met en correspondance une propriété JCR par rapport à un intervalle. Il s’applique aux propriétés avec des types linéaires tels que `LONG`, `DOUBLE`, et `DECIMAL`. Pour `DATE`, voir [`daterange`](#daterange) prédicat avec une entrée de format de date optimisée.
 
 Vous pouvez définir une limite inférieure, une limite supérieure ou les deux. L’opération (par exemple, inférieure ou inférieure ou égale à) peut également être spécifiée individuellement pour les limites inférieure et supérieure.
 
@@ -301,7 +301,7 @@ Par exemple :
 * `lowerBound=-1500` Et `upperBound=5500` sélectionne tout moment se trouvant entre 1 500 millisecondes et 5 500 millisecondes dans le futur.
 * `lowerBound=1d` et `upperBound=2d` sélectionne tout moment postérieur au lendemain
 
-Il ne prend pas en compte les années bissextiles et tous les mois sont 30 jours.
+Il ne faut pas tenir compte des années bissextiles et tous les mois sont 30 jours.
 
 Il ne prend pas en charge le filtrage.
 

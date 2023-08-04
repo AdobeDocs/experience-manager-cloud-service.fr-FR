@@ -1,14 +1,14 @@
 ---
 title: Présentation de Content Transformer
-description: Présentation de Content Transformer
-source-git-commit: 55eedd342f048e19bad5c6fbfdd16a468ff1f4f9
+description: Découvrez comment détecter et corriger les problèmes liés au contenu signalés par la BPA à l’aide de Content Transformer.
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '393'
 ht-degree: 4%
 
 ---
 
-# Présentation {#overview-ct}
+# Vue d’ensemble {#overview-ct}
 
 Le Transformateur de contenu (CT) est un outil développé par Adobe qui peut être utilisé pour détecter et corriger automatiquement les problèmes liés au contenu signalés par . [Analyseur des bonnes pratiques (BPA)](/help/journey-migration/best-practices-analyzer/overview-best-practices-analyzer.md) avant de migrer le contenu de votre mise en oeuvre AEM actuelle (On-premise ou Managed Services) vers AEM as a Cloud Service.
 
@@ -32,5 +32,5 @@ Le transformateur de contenu peut vous aider à résoudre les problèmes qui tom
 Content Transformer offre les avantages suivants :
 
 * Fail-safe : un package est créé par Content Transformer chaque fois qu’il apporte une modification au référentiel pour résoudre les problèmes. Si nécessaire, vous pouvez revenir à l’état précédent en installant le package.
-* Faciles à utiliser : Content Transformer a été intégré à l’outil de transfert de contenu et s’accompagne d’une interface utilisateur simple et intuitive.
-* Gagne du temps : lorsque vous rencontrez un grand nombre de problèmes de contenu appartenant à une catégorie de modèle, vous pouvez tous les résoudre en quelques clics seulement à l’aide du transformateur de contenu.
+* Facile à utiliser : le transformateur de contenu a été intégré à l’outil de transfert de contenu et s’accompagne d’une interface utilisateur simple et intuitive.
+* Gagnez du temps : lorsque vous rencontrez un grand nombre de problèmes de contenu qui relèvent d’une catégorie de modèle, vous pouvez tous les résoudre en quelques clics seulement à l’aide du transformateur de contenu.

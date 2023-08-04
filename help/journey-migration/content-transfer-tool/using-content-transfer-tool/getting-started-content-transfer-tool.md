@@ -1,11 +1,11 @@
 ---
 title: Prise en main de l’outil de transfert de contenu
-description: Prise en main de l’outil de transfert de contenu
+description: Découvrez comment commencer à utiliser l’outil de transfert de contenu
 exl-id: c0cecf65-f419-484b-9d55-3cbd561e8dcd
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '1436'
-ht-degree: 84%
+source-wordcount: '1439'
+ht-degree: 83%
 
 ---
 
@@ -34,7 +34,7 @@ Seules les versions 2.0.0 et ultérieures sont prises en charge et il est consei
 >
 >Une erreur de connexion peut également se produire si un jeu de migration a été supprimé de Cloud Acceleration Manager.
 
-L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour réussir l’exécution d’une extraction, les points de terminaison suivants doivent être accessibles à partir de l’instance AEM en cours d’exécution :
+L’instance d’AEM source peut se trouver derrière un pare-feu d’où elle ne peut atteindre que certains hôtes qui ont été ajoutés à une liste autorisée. Pour réussir l’exécution d’une extraction, les points de terminaison suivants doivent être accessibles à partir de l’instance AEM :
 
 * Le service de stockage d’objets blob Azure : `casstorageprod.blob.core.windows.net`
 
@@ -126,7 +126,7 @@ Pour renseigner le jeu de migration que vous avez créé dans Cloud Acceleratio
 
    >[!NOTE]
    >
-   >Assurez-vous que la clé d’extraction est valide et n’est pas proche de son expiration. Vous pouvez obtenir ces informations dans la boîte de dialogue **Créer un jeu de migration** après avoir collé la clé d’extraction. Si vous obtenez une erreur de connexion, reportez-vous à la section [Connectivité de l’environnement source](#source-environment-connectivity) pour plus d’informations.
+   >Assurez-vous que la clé d’extraction est valide et n’est pas proche de son expiration. Vous pouvez obtenir ces informations dans la boîte de dialogue **Créer un jeu de migration** après avoir collé la clé d’extraction. Si vous obtenez une erreur de connexion, voir [Connectivité de l’environnement source](#source-environment-connectivity) pour plus d’informations.
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam6.png)
 
@@ -191,7 +191,7 @@ Pour exécuter une vérification de taille, procédez comme suit :
 
    ![image](/help/journey-migration/content-transfer-tool/assets-ctt/cttcam11.png)
 
-1. Si la variable **Vérifier la taille** les résultats indiquent qu’il n’y a pas suffisamment d’espace disque ou que le jeu de migration dépasse les limites de produit, ou les deux, un **AVERTISSEMENT** s’affiche.
+1. Si la variable **Vérifier la taille** les résultats indiquent qu’il n’y a pas suffisamment d’espace disque ou que le jeu de migration dépasse les limites de produit, ou les deux, un **Avertissement** status s’affiche.
 
 <!--   ![image](/help/journey-migration/content-transfer-tool/assets/CTT_CheckSize_image6.png)
    

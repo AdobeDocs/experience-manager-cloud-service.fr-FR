@@ -1,11 +1,11 @@
 ---
 title: AEM as a Cloud Service sur Unified Shell
-description: AEM as a Cloud Service sur Unified Shell
+description: Découvrez les avantages d’AEM as a Cloud Service sur Unified Shell
 exl-id: ea739307-dc99-4621-a239-dbe60ab6b52e
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 79%
+source-wordcount: '399'
+ht-degree: 76%
 
 ---
 
@@ -19,7 +19,7 @@ AEM as a Cloud Service (service de création) est intégré à Unified Shell 
 
 Les avantages sont les suivants :
 
-* Connexion unique à toutes les applications Experience Cloud
+* Authentification unique sur toutes les applications Experience Cloud
 * Changement aisé entre les entreprises ou basculement vers une autre application
 * Amélioration de l’aide sur les produits
 * Bouton de retour d’information facile sur le produit pour signaler les problèmes ou partager des idées avec Adobe

@@ -1,11 +1,11 @@
 ---
 title: Présentation de l’outil de transfert de contenu
-description: Présentation de l’outil de transfert de contenu
+description: Découvrez comment utiliser l’outil de transfert de contenu pour transférer du contenu d’une instance AEM on-premise vers AEM as a Cloud Service
 exl-id: cfc0366a-2139-4d9d-b5bc-0b65bef4013c
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 82%
+source-wordcount: '664'
+ht-degree: 79%
 
 ---
 

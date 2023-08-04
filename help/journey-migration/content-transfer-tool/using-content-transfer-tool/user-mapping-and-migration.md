@@ -1,11 +1,11 @@
 ---
 title: Mappage des utilisateurs et utilisatrices et migration des entités principales
-description: Présentation du mappage des utilisateurs et des utilisatrices et de la migration des entités principales
+description: Présentation du mappage des utilisateurs et de la migration des entités de sécurité dans AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 23%
+source-wordcount: '837'
+ht-degree: 22%
 
 ---
 
@@ -34,7 +34,7 @@ L’outil de transfert de contenu et Cloud Acceleration Manager migreront vers l
 Les utilisateurs AEM peuvent être mappés aux utilisateurs Adobe IMS correspondants avec la même adresse électronique.  Ce mappage peut être effectué automatiquement dans le CTT et son exécution peut être contrôlée par un bouton bascule avant le démarrage de l’extraction. Le paramètre par défaut du bouton (bascule) peut être remplacé par l’utilisateur ou l’utilisatrice lors du démarrage de l’extraction.
 
 * Si le système source est une instance d’auteur, le choix par défaut d’effectuer le mappage est _on_, car il s’agit du processus recommandé.
-* Si le système source est une instance de publication, le choix par défaut de procéder au mappage est _off_, car les utilisateurs ne sont normalement pas migrés ou utilisés sur les instances de publication.
+* Si le système source est une instance de publication, le choix par défaut d’effectuer le mappage est _off_, car les utilisateurs ne sont normalement pas migrés ou utilisés sur les instances de publication.
 
 ## Points importants lors du mappage et de la migration d’utilisateurs et d’utilisatrices {#important-considerations}
 
@@ -60,4 +60,4 @@ Les cas spécifiques suivants sont consignés :
 
 ## Résumé final et rapport {#final-report}
 
-Une fois l’extraction et l’ingestion terminées, un rapport est généré avec les principaux détails de migration. Voir [Validation de la migration de l’entité de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) pour plus de détails.
+Une fois l’extraction et l’ingestion terminées, un rapport est généré avec les principaux détails de migration. Voir [Validation de la migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/validating-content-transfers.md#how-to-validate-principal-migration) pour plus de détails.

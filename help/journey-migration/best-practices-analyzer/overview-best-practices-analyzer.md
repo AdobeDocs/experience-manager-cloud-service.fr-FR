@@ -1,11 +1,11 @@
 ---
 title: Présentation de l’analyseur de bonnes pratiques
-description: Présentation de l’analyseur de bonnes pratiques
+description: Découvrez comment utiliser l’analyseur des bonnes pratiques pour évaluer le respect de votre mise en oeuvre AEM des bonnes pratiques recommandées.
 exl-id: 46c567f8-91e2-4d85-98bd-61d183b887d5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 97%
+source-wordcount: '366'
+ht-degree: 91%
 
 ---
 
