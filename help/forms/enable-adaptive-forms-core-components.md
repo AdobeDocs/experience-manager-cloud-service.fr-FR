@@ -6,15 +6,20 @@ seo-description: Learn how to enable Adaptive Forms Core Components on AEM Forms
 contentOwner: Khushwant Singh
 docset: CloudService
 role: Admin
-source-git-commit: 8c125d834ebfff5601f56646d59ce00a80fcc0ba
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '1023'
-ht-degree: 11%
+source-wordcount: '1043'
+ht-degree: 12%
 
 ---
 
 
 # Activation des composants principaux de Forms adaptatif dans l’environnement de développement as a Cloud Service et local d’AEM Forms {#enable-headless-adaptive-forms-on-aem-forms-cloud-service}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) |
+| AEM as a Cloud Service | Cet article |
 
 L’activation des composants principaux des formulaires adaptatifs sur AEM Forms as a Cloud Service vous permet de commencer à créer, à publier et à diffuser des formulaires adaptatif et des formulaires découplés basés sur les composants principaux à l’aide de vos instances Cloud Service d&#39;AEM Forms sur plusieurs canaux. Vous avez besoin de l’environnement de composants principaux de Forms adaptatif activé pour utiliser le Forms adaptatif sans affichage.
 
@@ -24,7 +29,7 @@ L’activation des composants principaux des formulaires adaptatifs sur AEM For
 
 * Si vous disposez d’un programme Forms as a Cloud Service plus ancien où les composants principaux sont [not enabled](#enable-components), vous pouvez [ajout de dépendances des composants principaux Forms adaptatifs](#enable-headless-adaptive-forms-for-an-aem-forms-as-a-cloud-service-environment) dans votre référentiel as a Cloud Service AEM et déployez le référentiel dans vos environnements de Cloud Service pour activer le Forms adaptatif sans affichage.
 
-* Si votre environnement de Cloud Service existant propose une option pour [Création d’un Forms adaptatif basé sur les composants principaux](creating-adaptive-form-core-components.md), les composants principaux de Forms adaptatif et les Forms adaptatifs sans affichage sont déjà activés pour votre environnement et vous pouvez utiliser les Forms adaptatifs basés sur les composants principaux en tant que formulaires sans interface pour les canaux tels que les canaux mobiles, web, les applications natives et les services qui nécessitent une représentation sans interface de Forms adaptatif.
+* Si votre environnement de Cloud Service existant propose une option pour [créer un Forms adaptatif basé sur les composants principaux](creating-adaptive-form-core-components.md), les composants principaux de Forms adaptatif et les Forms adaptatifs sans affichage sont déjà activés pour votre environnement et vous pouvez utiliser les Forms adaptatifs basés sur les composants principaux en tant que formulaires sans interface pour les canaux tels que les canaux mobiles, web, les applications natives et les services qui nécessitent une représentation sans interface de Forms adaptatif.
 
 
 ## Activation des composants principaux de Forms adaptatif et de Forms adaptatif sans affichage {#enable-headless-forms}
@@ -37,9 +42,9 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les compo
 
 ## 1. Cloner votre référentiel Git as a Cloud Service AEM Forms {#clone-git-repository}
 
-1. Connectez-vous à [Cloud Manager](https://my.cloudmanager.adobe.com/) et sélectionnez votre organisation et votre programme.
+1. Connexion à [Cloud Manager](https://my.cloudmanager.adobe.com/) et sélectionnez votre organisation et votre programme.
 
-1. Accédez au **Pipelines** de votre **Aperçu du programme** , cliquez sur la page **Accès aux informations sur le référentiel** pour accéder à votre référentiel Git et le gérer. La page comprend les informations suivantes :
+1. Accédez au **Pipelines** de votre **Aperçu du programme** , cliquez sur **Accès aux informations sur le référentiel** pour accéder à votre référentiel Git et le gérer. La page comprend les informations suivantes :
 
    * URL du référentiel Git de Cloud Manager.
    * Informations d’identification du nom d’utilisateur Git Repository (nom d’utilisateur et mot de passe).
@@ -202,7 +207,7 @@ Effectuez les étapes suivantes, dans l’ordre indiqué, pour activer les compo
    >             </embedded>
    >   ```
 
-1. Dans le `<dependencies>` de la section `[AEM Repository Folder]/all/pom.xml` , ajoutez les dépendances suivantes, puis enregistrez le fichier :
+1. Dans le `<dependencies>` de la `[AEM Repository Folder]/all/pom.xml` , ajoutez les dépendances suivantes, puis enregistrez le fichier :
 
    ```XML
            <!-- Other existing dependencies -->
@@ -321,7 +326,7 @@ Déployez le code mis à jour dans vos environnements de développement et de Cl
 
 ### Que sont les composants principaux ? {#core-components}
 
-Le [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés permettant d’AEM accélérer le temps de développement et de réduire les coûts de maintenance de vos sites web.
+La variable [Composants principaux](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=fr) sont un ensemble de composants WCM (Web Content Management, gestion de contenu web) normalisés permettant d’AEM accélérer le temps de développement et de réduire les coûts de maintenance de vos sites web.
 
 ### Quelles sont toutes les fonctionnalités ajoutées lors de l’activation des composants principaux ? {#core-components-capabilities}
 

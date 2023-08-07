@@ -5,14 +5,20 @@ feature: Adaptive Forms, Core Components
 role: User, Developer
 level: Beginner
 exl-id: 1e812d93-4ba5-4589-b59b-2f564d754b0f
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '2246'
+source-wordcount: '2266'
 ht-degree: 63%
 
 ---
 
 # Créer un formulaire adaptatif {#creating-an-adaptive-form-core-components}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-an-adaptive-form-core-components.html) |
+| AEM as a Cloud Service | Cet article |
+
 
 Les formulaires adaptatifs vous permettent de créer des formulaires attrayants, réactifs, dynamiques et adaptatifs. AEM Forms fournit un assistant convivial destiné aux entreprises pour créer rapidement un Forms adaptatif. L’assistant fournit une navigation rapide par onglets pour sélectionner facilement un modèle, un style, des champs et des options d’envoi préconfigurés afin de créer un formulaire adaptatif.
 
@@ -98,7 +104,7 @@ Désormais, vous pouvez faire glisser et déposer le [Composants principaux de F
 Une action Envoyer vous permet de choisir la destination des données capturées via un formulaire adaptatif. Elle est déclenchée lorsqu’un utilisateur clique sur le bouton Envoyer d’un formulaire adaptatif. Les formulaires adaptatifs incluent certaines actions d’envoi prêtes à l’emploi. Vous pouvez également étendre une action d’envoi par défaut pour créer votre propre action d’envoi personnalisée. Pour configurer une action Envoyer pour votre formulaire :
 
 1. Ouvrez l’explorateur de contenu , puis sélectionnez l’option **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
-1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
 
 1. Cliquez sur le bouton  **[!UICONTROL Envoi]** .
 
@@ -117,7 +123,7 @@ Une action Envoyer vous permet de choisir la destination des données capturées
 Lors de l’envoi d’un formulaire, vous pouvez rediriger l’utilisateur vers une autre page web ou un message. Pour rediriger l’utilisateur ou configurer le message de remerciement :
 
 1. Ouvrez l’explorateur de contenu , puis sélectionnez l’option **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
-1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
 1. Ouvrez le **[!UICONTROL Envoi]** .
 
    ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une page de redirection ou un message de remerciement.](/help/forms/assets/adaptive-forms-redirect-message.png)
@@ -138,7 +144,7 @@ Vous pouvez utiliser le modèle de données de formulaire pour connecter un form
 Pour configurer un schéma JSON ou un modèle de données de formulaire pour votre formulaire :
 
 1. Ouvrez l’explorateur de contenu , puis sélectionnez l’option **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
-1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
 1. Ouvrez le **[!UICONTROL Modèle de données]** .
 
    ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer un schéma JSON ou un modèle de données de formulaire.](/help/forms/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
@@ -159,11 +165,11 @@ Vous pouvez utiliser le service de préremplissage pour remplir automatiquement 
 
 ### Utiliser le service de préremplissage de modèle de données de formulaire pour préremplir les champs d’un formulaire adaptatif {#fdm-prefill-service}
 
-Vous pouvez utiliser le service de préremplissage de modèle de données de formulaire pour préremplir les champs d’un formulaire adaptatif à l’aide d’un modèle de données de formulaire ou d’un service de préremplissage personnalisé. Le service Form Data Model Prefill utilise la méthode [Obtention du service du modèle de données de formulaire configuré](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) pour récupérer des données. Pour utiliser le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif :
+Vous pouvez utiliser le service de préremplissage de modèle de données de formulaire pour préremplir les champs d’un formulaire adaptatif à l’aide d’un modèle de données de formulaire ou d’un service de préremplissage personnalisé. Le service de préremplissage de modèle de données de formulaire utilise la méthode [Obtention du service du modèle de données de formulaire configuré](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) pour récupérer des données. Pour utiliser le service de préremplissage de modèle de données de formulaire pour un formulaire adaptatif :
 
 1. Ouvrez l’explorateur de contenu , puis sélectionnez l’option **[!UICONTROL Conteneur de guide]** du formulaire adaptatif.
-1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
-1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/assets/configure-icon.svg) icône . La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
+1. Cliquez sur les propriétés du conteneur de guide. ![Propriétés du guide](/help/forms/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs s’ouvre.
+1. Cliquez sur les propriétés du conteneur de formulaires adaptatifs . ![Propriétés Adaptive Form Container](/help/forms/assets/configure-icon.svg) Icône La boîte de dialogue Conteneur de formulaires adaptatifs pour configurer les modèles de données s’ouvre.
    ![Cliquez sur l’icône de clé à molette pour ouvrir la boîte de dialogue Conteneur de formulaires adaptatifs afin de configurer une page de redirection ou un message de remerciement.](/help/forms/assets/adaptive-forms-container-prefill-service.png)
 1. Sélectionner un modèle de données de formulaire. Ouvrez le **[!UICONTROL De base]** . Dans le service de préremplissage, sélectionnez **[!UICONTROL Service de préremplissage de modèle de données de formulaire]**.
 1. Cliquez sur **[!UICONTROL Terminé]**. Votre formulaire adaptatif est maintenant configuré pour utiliser le préremplissage du modèle de données de formulaire. Vous pouvez désormais utiliser la variable [éditeur de règles](rule-editor.md) pour créer des règles afin de préremplir les champs du formulaire.

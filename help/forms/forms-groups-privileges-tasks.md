@@ -2,14 +2,19 @@
 title: Groupes intégrés [!DNL AEM Forms] as a Cloud Service
 description: Liste des groupes d’utilisateurs prêts à l’emploi et des autorisations attribuées à chaque groupe
 exl-id: bd66ce92-14d9-47fe-b5d3-022e3e468d25
-source-git-commit: 8ac35abd1335b4e31a6dc0d8812cc9df333e69a4
+source-git-commit: 57acac078805bc195cb10c1e94462d5aa077b1af
 workflow-type: tm+mt
-source-wordcount: '155'
-ht-degree: 78%
+source-wordcount: '175'
+ht-degree: 83%
 
 ---
 
 # Groupes et autorisations {#aem-forms-on-osgi-groups-and-privileges}
+
+| Version | Lien de l’article |
+| -------- | ---------------------------- |
+| AEM 6.5 | [Cliquez ici](https://experienceleague.adobe.com/docs/experience-manager-65/forms/manage-administer-aem-forms/forms-groups-privileges-tasks.html?lang=fr) |
+| AEM as a Cloud Service | Cet article |
 
 Vous pouvez [créer des groupes](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=fr#accessing) et affecter des politiques et des [utilisateurs](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/accessing/aem-users-groups-and-permissions.html?lang=fr#accessing) aux groupes. Ces politiques contrôlent les autorisations des utilisateurs qui font partie du groupe.
 
