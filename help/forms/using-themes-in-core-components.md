@@ -4,9 +4,9 @@ description: Vous pouvez utiliser les thèmes pour styliser et fournir une ident
 seo-description: You can create a new theme by customizing the available theme. The themes are customized and deployed using frontend pipeline.
 keywords: créer un nouveau thème, personnaliser le thème, charger un nouveau thème, utiliser le thème dans les formulaires, personnaliser le thème à l’aide du pipeline frontal
 exl-id: 11c52b66-dbb1-4c47-a94d-322950cbdac1
-source-git-commit: 1cec6e01e72cb286949f64749e2386a2b652920e
+source-git-commit: fc0ff8cff8c616bc5576d834883aa0fe38ef593e
 workflow-type: tm+mt
-source-wordcount: '2697'
+source-wordcount: '2711'
 ht-degree: 16%
 
 ---
@@ -58,7 +58,7 @@ Vous pouvez [personnaliser n’importe lequel de ces thèmes pour créer un nouv
 
 La personnalisation d’un thème fait référence au processus de modification et de personnalisation de l’aspect d’un thème. Lorsque vous personnalisez un thème, vous modifiez ses éléments de conception, sa mise en page, ses couleurs, sa typographie, et parfois le code sous-jacent. Il vous permet de créer un aspect unique et personnalisé pour votre site web ou votre application tout en conservant la structure et les fonctionnalités de base fournies par le thème.
 
-### Conditions préalables {#prerequisites-to-customize}
+### Conditions préalables requises {#prerequisites-to-customize}
 
 * Se familiariser avec [configuration d’un pipeline dans Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/developers.html?lang=fr#setup-pipeline) et posséder des connaissances de base sur la configuration d’un pipeline vous aide à gérer et déployer efficacement vos personnalisations de thème.
 * Découvrez comment [configuration d’un utilisateur avec le rôle de contributeur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/onboarding/journey/assign-profiles-aem.html?lang=fr). Comprendre comment configurer un utilisateur avec le rôle de contributeur vous permet d’accorder les autorisations nécessaires à la personnalisation du thème.
@@ -417,6 +417,7 @@ Si vous souhaitez fournir des informations comme une image de logo, le nom de l�
 * [Définir la disposition des formulaires pour différentes tailles d’écran et différents types d’appareils](/help/sites-cloud/authoring/features/responsive-layout.md)
 * [Générer un document d’enregistrement pour les Forms adaptatives (composants principaux)](/help/forms/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
 * [Création d’un Forms adaptatif avec des sections répétables](/help/forms/create-forms-repeatable-sections.md)
+* [Exemples de modèles de thèmes et de modèles de données de formulaire](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 
 
 ## Article connexe {#related-article}
