@@ -3,10 +3,10 @@ title: Mises à jour de la version d’AEM
 description: Découvrez comment AEM as a Cloud Service utilise l’intégration et la diffusion continues (CI/CD) pour conserver vos projets sur la dernière version.
 feature: Deploying
 exl-id: 36989913-69db-4f4d-8302-57c60f387d3d
-source-git-commit: dd567c484d71e25de1808f784c455cfb9b124fbf
+source-git-commit: 635b4adeab8d93b7c7335453b04d8b78ef3a0496
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 35%
+source-wordcount: '800'
+ht-degree: 29%
 
 ---
 
@@ -58,6 +58,37 @@ De même, si une mise à jour automatisée d’un environnement de développemen
 >[!NOTE]
 >
 >Si du code personnalisé a été soumis à l’évaluation et non à la production, la prochaine mise à jour d’AEM supprimera ces modifications afin de refléter la balise Git de la dernière version de production réussie du client. Par conséquent, le code personnalisé qui n’avait été déployé qu’en phase d’évaluation devra être déployé à nouveau.
+
+## Bonnes pratiques {#best-practices}
+
+* 
+   * **Utilisation de l’environnement d’évaluation**
+   * Utilisez un environnement différent (pas l’environnement intermédiaire) pour de longs cycles AQ/UAT.
+   * Une fois le test d’intégrité terminé sur l’évaluation, déplacez-le pour le vérifier sur l’environnement de production.
+
+* 
+   * **Pipeline de production**
+   * Pause avant le déploiement en production.
+   * Annuler le pipeline après un déploiement dans l’environnement intermédiaire indique que le code est &quot;un jeton&quot; et qu’il ne s’agit pas d’un candidat valide pour la production, reportez-vous à la section [Configuration d’un pipeline de production](/help/implementing/cloud-manager/configuring-pipelines/configuring-production-pipelines.md).
+
+* 
+   * **Pipeline hors production**
+* Configurer [Pipeline hors production](/help/implementing/cloud-manager/configuring-pipelines/configuring-non-production-pipelines.md#full-stack-code).
+* 
+   * Accélérer la vitesse/fréquence de diffusion pour les échecs de pipeline de production.  Identifiez les problèmes dans les pipelines non prod en activant les tests fonctionnels du produit, les tests fonctionnels personnalisés et les tests d’interface utilisateur personnalisés.
+
+* 
+   * **Copie de contenu**
+   * Utilisation [Copie de contenu](/help/implementing/developing/tools/content-copy.md) pour déplacer des visionneuses de contenu similaires vers un environnement autre que prod.
+
+* 
+   * **Tests fonctionnels automatisés**
+* Incluez des tests automatisés dans votre pipeline pour tester les fonctionnalités critiques.
+* [Tests fonctionnels du client](/help/implementing/cloud-manager/functional-testing.md#custom-functional-testing) et [Tests de l’interface utilisateur personnalisée](/help/implementing/cloud-manager/functional-testing.md#custom-ui-testing) bloquent, s’ils échouent, AEM version ne sera pas déployée.
+
+## Régression {#regression}
+
+Si vous rencontrez un problème lié à la régression, veuillez soulever un cas d’assistance via la console d’administration.  Si le problème est un bloqueur et qu&#39;il a un impact sur la production, un P1 doit être soulevé.  Indiquez tous les détails nécessaires pour reproduire le problème de régression.
 
 ## Magasin de nœuds composites {#composite-node-store}
 
