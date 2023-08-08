@@ -1,6 +1,6 @@
 ---
 title: Configurer la configuration de publication Dynamic Media pour Image Server
-description: Découvrez comment configurer une publication dans Dynamic Media.
+description: Découvrez comment configurer la configuration de la publication Dynamic Media pour Image Server, notamment la gestion des couleurs, la sécurité et les images miniatures.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: b0891095-e4a9-4dd5-8dfd-a576bc47d082
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '3481'
-ht-degree: 99%
+source-wordcount: '3493'
+ht-degree: 98%
 
 ---
 
@@ -123,7 +123,7 @@ Ces paramètres déterminent les profils de couleurs ICC utilisés pour les imag
 Un mode de rendu de conversion des couleurs permet de remplacer l’intention de rendu par défaut des profils de travail afin de déterminer comment les couleurs sources sont ajustées. Utilisé lorsque :
 
 1. L’un des profils ICC par défaut correspond à l’espace colorimétrique cible d’une conversion de couleurs.
-1. Un périphérique de sortie (imprimante ou moniteur) est caractérisé par ce profil.
+1. Un appareil de sortie (imprimante ou moniteur) est caractérisé par ce profil.
 1. Et l’intention de rendu spécifiée est valide pour ce profil.
 
 Les différents modes de rendu utilisent des règles différentes pour déterminer comment les couleurs source sont ajustées.
@@ -138,7 +138,7 @@ Voir aussi le paramètre [IccRenderIntent](https://experienceleague.adobe.com/do
 | --- | --- |
 | **[!UICONTROL Espace colorimétrique CMJN par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données CMJN. Si l’option **[!UICONTROL Aucune spécifiée]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images source CMJN sont impliquées. Tous les espaces de travail CMJN dépendent des appareils, ce qui signifie qu’ils sont basés sur des combinaisons d’encre et de papier réelles. Les espaces de travail CMJN fournis par Adobe sont basés sur des conditions d’impression commerciales standard.<br> Voir aussi le paramètre [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Espace colorimétrique de niveaux de gris par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données en niveaux de gris. Si l’option **[!UICONTROL Aucune spécification]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images source en niveaux de gris sont impliquées.<br>Voir aussi le paramètre [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
-| **[!UICONTROL Espace colorimétrique RGB par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données RGB. Si l’option **[!UICONTROL Aucune spécification]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images sources RGB sont impliquées. En règle générale, il est préférable de sélectionner **[!UICONTROL Adobe RGB]** ou **[!UICONTROL sRGB]**, plutôt que le profil d’un périphérique spécifique (tel qu’un profil de moniteur). **[!UICONTROL sRGB]** est recommandé lorsque vous préparez des images pour le Web ou les appareils mobiles, car il définit l’espace colorimétrique du moniteur standard utilisé pour afficher les images sur le Web. **[!UICONTROL sRGB]** est également un bon choix lorsque vous travaillez avec des images provenant d’appareils photo numériques grand public, car la plupart de ces appareils utilisent sRGB comme espace colorimétrique par défaut.<br>Voir aussi le paramètre [IccProfileRGB](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
+| **[!UICONTROL Espace colorimétrique RGB par défaut]** | Indique le nom du profil de couleurs ICC à utiliser comme profil de travail pour les données RGB. Si l’option **[!UICONTROL Aucune spécification]** est sélectionnée, la gestion des couleurs est désactivée pour ce catalogue d’images lorsque des images sources RGB sont impliquées. En règle générale, il est préférable de sélectionner **[!UICONTROL Adobe RGB]** ou **[!UICONTROL sRGB]**, plutôt que le profil d’un appareil spécifique (tel qu’un profil de moniteur). **[!UICONTROL sRGB]** est recommandé lorsque vous préparez des images pour le Web ou les appareils mobiles, car il définit l’espace colorimétrique du moniteur standard utilisé pour afficher les images sur le Web. **[!UICONTROL sRGB]** est également un bon choix lorsque vous travaillez avec des images provenant d’appareils photo numériques grand public, car la plupart de ces appareils utilisent sRGB comme espace colorimétrique par défaut.<br>Voir aussi le paramètre [IccProfileRGB](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=fr) dans le guide de référence des visionneuses Dynamic Media. |
 | **[!UICONTROL Intention de rendu de conversion des couleurs]** | **[!UICONTROL Perception]** : vise à préserver la relation visuelle entre les couleurs afin qu’elles soient perçues comme naturelles par l’œil humain, même si les valeurs de couleur elles-mêmes peuvent changer. Cette intention est adaptée aux images photographiques avec de nombreuses couleurs qui se situent hors de la gamme. Ce paramètre correspond à l’intention de rendu standard pour l’industrie japonaise de l’imprimerie. |
 |  | **[!UICONTROL Colorimétrie relative]** : compare la mise en surbrillance extrême de l’espace colorimétrique source à celle de l’espace colorimétrique de destination et modifie toutes les couleurs en conséquence. Les couleurs hors gamme sont décalées vers la couleur reproductible la plus proche dans l’espace colorimétrique de destination. Le paramètre Colorimétrie relative conserve plus de couleurs d’origine dans une image que le paramètre Perception. Ce paramètre est l’intention de rendu standard pour l’impression en Amérique du Nord et en Europe. |
 |  | **[!UICONTROL Saturation]** : tente de produire des couleurs vives dans une image au détriment de la précision des couleurs. Cette intention de rendu convient aux graphiques professionnels tels que les graphiques ou les diagrammes, où les couleurs saturées et vives sont plus importantes que la relation exacte entre les couleurs. |
@@ -166,7 +166,7 @@ La plupart des entreprises utilisent Internet derrière un pare-feu. L’accès 
 
 À partir du réseau de votre entreprise, vous pouvez déterminer votre adresse IP publique à l’aide de sites web tels que [https://www.whatismyip.com/fr](https://www.whatismyip.com/fr/). Vous pouvez également obtenir ces informations auprès de la structure informatique de votre entreprise.
 
-Grâce à Secure Testing, Adobe Dynamic Media établit un serveur d’images dédié pour les environnements d’évaluation ou les applications internes. Toute requête sur ce serveur vérifie l’adresse IP d’origine. Si la requête entrante ne figure pas dans la liste approuvée des adresses IP, une réponse d’échec est renvoyée. L’administrateur ou l’administratrice d’entreprise Adobe Dynamic Media configure la liste approuvée des adresses IP pour l’environnement Secure Testing de l’entreprise.
+Grâce à Secure Testing, Adobe Dynamic Media établit un serveur d’images dédié pour les environnements d’évaluation ou les applications internes. Toute requête sur ce serveur vérifie l’adresse IP d’origine. Si la requête entrante ne figure pas dans la liste approuvée des adresses IP, une réponse d’échec est renvoyée. L’administration d’entreprise d’Adobe Dynamic Media configure la liste approuvée des adresses IP pour l’environnement Secure Testing de l’entreprise.
 
 L’emplacement de la requête d’origine devant être confirmé, le trafic du service Secure Testing n’est pas acheminé à travers un réseau de distribution de contenu tel que le trafic du serveur d’images Dynamic Media public. Les requêtes effectuées auprès du service Secure Testing présentent une latence légèrement plus élevée par rapport aux serveurs d’images Dynamic Media publics.
 

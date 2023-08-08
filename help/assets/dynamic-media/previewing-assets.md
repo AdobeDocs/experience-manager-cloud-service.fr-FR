@@ -1,20 +1,20 @@
 ---
-title: Aperçu des ressources
-description: Découvrez comment prévisualiser des ressources dans Dynamic Media.
+title: Prévisualiser des ressources
+description: Découvrez comment prévisualiser des ressources dans Dynamic Media afin que vous puissiez voir comment elles sont affichées par un client dans son propre navigateur web.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 3928798d-352a-42a8-a544-7104fc9b3cf1
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '1212'
-ht-degree: 87%
+source-wordcount: '1228'
+ht-degree: 85%
 
 ---
 
 # Aperçu des ressources{#previewing-assets}
 
-Vous pouvez utiliser la fonction Aperçu pour afficher une ressource numérique que vous avez chargée telle qu’elle sera présentée au client dans son navigateur web. La visionneuse par défaut incorporée inter-périphérique affectée à la ressource est utilisée pour l’aperçu.
+Vous pouvez utiliser la fonction Aperçu pour afficher une ressource numérique que vous avez chargée telle qu’elle sera présentée au client dans son navigateur web. La visionneuse par défaut incorporée inter-appareil affectée à la ressource est utilisée pour l’aperçu.
 
 Une visionneuse est un ensemble de différents paramètres, ou « paramètres prédéfinis ». Par exemple, la taille d’affichage de la visionneuse, le comportement du zoom, les modèles de couleurs, les bordures et les polices, qui déterminent la manière dont les utilisateurs voient les ressources multimédias enrichies sur leurs écrans d’ordinateur et appareils mobiles.
 

@@ -1,13 +1,13 @@
 ---
 title: Dépannage de Dynamic Media
-description: Conseils de dépannage lorsque vous utilisez Dynamic Media.
+description: Découvrez les conseils de dépannage que vous pouvez essayer lorsque vous utilisez des images, des visionneuses et des visionneuses dans Dynamic Media.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 3e8a085f-57eb-4009-a5e8-1080b4835ae2
-source-git-commit: b37ff72dbcf85e5558eb3421b5168dc48e063b47
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 78%
+source-wordcount: '1146'
+ht-degree: 76%
 
 ---
 
@@ -89,7 +89,7 @@ Si des problèmes surviennent avec les images et les visionneuses, reportez-vous
    <td><p>Vérifiez que le traitement de toutes les ressources est terminé.</p> </td>
   </tr>
   <tr>
-   <td>La bannière en mode Carte s’affiche <strong>Nouveau</strong> lorsque le traitement de la ressource n’a pas commencé</td>
+   <td>La bannière en mode Carte affiche <strong>Nouveau</strong> lorsque le traitement de la ressource n’a pas commencé</td>
    <td>Vérifiez que la ressource <code>jcr:content</code> &gt; <code>dam:assetState</code> = if <code>unprocessed</code> n’a pas été sélectionnée par le workflow.</td>
    <td>Attendez que la ressource soit récupérée par le workflow.</td>
   </tr>
@@ -113,11 +113,11 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td><strong>Solution</strong></td>
   </tr>
   <tr>
-   <td>La vidéo ne peut pas être prévisualisée</td>
+   <td>Impossible de prévisualiser la vidéo</td>
    <td>
     <ul>
      <li>Vérifiez que le dossier est associé à un profil vidéo (dans le cas d’un format de fichier non pris en charge). Si elle n’est pas prise en charge, seule une image s’affiche.</li>
-     <li>Le profil vidéo doit contenir plusieurs paramètres prédéfinis de codage pour générer un ensemble AVS (les codages uniques sont traités comme du contenu vidéo pour les fichiers MP4 ; pour les fichiers non pris en charge, traité de la même manière que les fichiers non traités).</li>
+     <li>Le profil vidéo doit contenir plusieurs paramètres prédéfinis de codage pour générer un ensemble AVS (les codages uniques sont traités comme du contenu vidéo pour les fichiers MP4 ; pour les fichiers non pris en charge, traités de la même manière que les fichiers non traités).</li>
      <li>Vérifiez que le traitement de la vidéo est terminé en confirmant <code>dam:scene7FileAvs</code> de <code>dam:scene7File</code> dans les métadonnées.</li>
     </ul> </td>
    <td>
@@ -134,7 +134,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
    <td>
     <ul>
      <li>Vérifiez que le Cloud Service Dynamic Media est configuré.</li>
-     <li>Vérifiez qu’un profil vidéo est associé au dossier de transfert.</li>
+     <li>Vérifiez qu’un profil vidéo est associé au dossier de chargement.</li>
     </ul> </td>
    <td>
     <ol>
@@ -143,7 +143,7 @@ Si vous êtes confronté à des problèmes au niveau de la vidéo, reportez-vous
     </ol> </td>
   </tr>
   <tr>
-   <td>Le traitement vidéo prend trop de temps.</td>
+   <td>Le traitement vidéo prend trop de temps</td>
    <td><p>Pour déterminer si le codage vidéo est toujours en cours ou s’il est à l’état d’échec :</p>
     <ul>
      <li>Vérifiez l’état de la vidéo <code>https://localhost:4502/crx/de/index.jsp#/content/dam/folder/videomp4/jcr%3Acontent</code> &gt; <code>dam:assetState</code></li>
@@ -204,8 +204,7 @@ Dans CRXDE Lite, procédez comme suit :
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-Exemple : 
-`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+Exemple : `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Solution**
 

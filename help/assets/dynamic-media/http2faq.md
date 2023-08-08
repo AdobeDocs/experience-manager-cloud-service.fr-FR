@@ -1,13 +1,13 @@
 ---
 title: FAQ sur la diffusion de contenu HTTP/2
-description: Découvrez la diffusion de contenu HTTP/2.
+description: Découvrez la diffusion de contenu HTTP2 et comment elle améliore la communication entre les navigateurs et les serveurs pour accélérer le transfert des informations.
 contentOwner: Rick Brough
 role: Admin,User
 exl-id: 0a8a5fd8-a341-4e7f-84a5-409e2de97efe
-source-git-commit: f7525b6b37e486a53791c2331dc6000e5248f8af
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 88%
+source-wordcount: '807'
+ht-degree: 86%
 
 ---
 
@@ -27,7 +27,7 @@ L’article du site web [What you must know about HTTP/2](https://www.engadget.c
 
 ## Quels sont les principaux avantages à la transition vers HTTP/2 pour la diffusion de contenu ?  {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-L’amélioration des performances varie considérablement en fonction de nombreux facteurs. Par exemple, le code de votre site web, la manière dont vous utilisez Dynamic Media, le périphérique, l’écran et l’emplacement du client.
+L’amélioration des performances varie considérablement en fonction de nombreux facteurs. Par exemple, le code de votre site web, la manière dont vous utilisez Dynamic Media, l’appareil, l’écran et l’emplacement du client.
 
 Les tests effectués par l’Adobe lui-même ont donné les résultats suivants :
 

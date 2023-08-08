@@ -1,14 +1,14 @@
 ---
 title: Publication de ressources Dynamic Media
-description: Découvrez comment publier des ressources Dynamic Media.
+description: Découvrez comment publier des ressources vidéo et d’image Dynamic Media afin que vous puissiez les inclure dans une page web au moyen d’une URL ou d’un code incorporé sur une page web.
 contentOwner: Rick Brough
 feature: Asset Management
 role: User
 exl-id: 8ee759dc-cb8f-4e80-8175-2c3ba06da862
-source-git-commit: a11529886d4b158c19a97ccbcb7d004cf814178d
+source-git-commit: 0e452bd94d75609ecc3c20ab6b56ded968ed0a70
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 91%
+source-wordcount: '486'
+ht-degree: 86%
 
 ---
 
@@ -35,7 +35,6 @@ Voir aussi [Intégration de la visionneuse de vidéos ou d’images Dynamic Medi
 >* Pour utiliser l’URL, les ressources doivent être publiées. Si les ressources ne sont pas publiées, la copie et le collage de l’URL ne fonctionnent pas dans un navigateur web.
 >* Les paramètres d’image prédéfinis et les paramètres de visionneuse prédéfinis doivent être activés et publiés pour une diffusion en direct.
 >
-
 
 Pour plus d’informations sur la publication d’une visionneuse ou d’une ressource, reportez-vous à la section [Publication de ressources](/help/assets/manage-digital-assets.md).
 
