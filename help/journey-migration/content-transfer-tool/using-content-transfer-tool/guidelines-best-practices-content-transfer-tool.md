@@ -2,10 +2,10 @@
 title: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 description: Bonnes pratiques et instructions pour l’utilisation de l’outil de transfert de contenu
 exl-id: d1975c34-85d4-42e0-bb1a-968bdb3bf85d
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1544'
-ht-degree: 91%
+source-wordcount: '1562'
+ht-degree: 90%
 
 ---
 
@@ -73,7 +73,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
 
 * L’outil de transfert de contenu (CTT) n’effectue aucune analyse avant de transférer le contenu de l’instance source vers l’instance cible. Par exemple, le CTT ne fait pas de distinction entre le contenu publié et le contenu dépublié lors de l’ingestion de contenu dans un environnement de publication. Quel que soit le contenu spécifié dans le jeu de migration, il sera ingéré dans l’instance cible choisie. L’utilisateur peut ingérer un jeu de migration dans une instance d’auteur ou de publication, ou les deux. Il est recommandé, tout en déplaçant le contenu vers une instance de production, d’installer le CTT sur l’instance d’auteur source afin de déplacer le contenu vers l’instance d’auteur cible. De même, il est recommandé d’installer le CTT dans l’instance de publication source pour déplacer le contenu vers l’instance de publication cible. Pour en savoir plus, consultez [Exécution de l’outil de transfert de contenu sur une instance de publication](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/migration-journey/cloud-migration/content-transfer-tool/getting-started-content-transfer-tool.html?lang=fr#running-tool).
 
-* Les utilisateurs, utilisatrices et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’_extraction_ copie l’intégralité de `/home` dans le jeu de migration et effectue le mappage des utilisateurs et utilisatrices en ajoutant un champ provenant de l’adresse e-mail de chaque utilisateur ou utilisatrice. Pour plus d’informations, consultez [Mappage des utilisateurs et utilisatrices et migration principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Le processus d’_ingestion_ copie tous les utilisateurs et utilisatrices ainsi que les groupes référencés dans les listes de contrôle d’accès (ACL) du contenu migré.
+* Les utilisateurs, utilisatrices et les groupes transférés par l’outil de transfert de contenu sont uniquement ceux requis en fonction du contenu pour respecter les autorisations. Le processus d’_extraction_ copie l’intégralité de `/home` dans le jeu de migration et effectue le mappage des utilisateurs et utilisatrices en ajoutant un champ provenant de l’adresse e-mail de chaque utilisateur ou utilisatrice. Pour plus d’informations, consultez [Mappage des utilisateurs et utilisatrices et migration principale](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md). Le processus d’_ingestion_ copie tous les utilisateurs et utilisatrices ainsi que les groupes référencés dans les listes de contrôle d’accès (ACL) du contenu migré. Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur les groupes utilisés dans une stratégie de groupe d’utilisateurs fermé (CUG).
 
 * Pendant la phase d’extraction, l’outil de transfert de contenu est exécuté sur une instance source AEM active.
 
@@ -83,7 +83,7 @@ Consultez la section ci-dessous afin de comprendre les points importants à pren
    * Type d’environnement (évaluation ou production) dans lequel vous prévoyez d’importer des données.
    * ID de programme.
 
-* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. Cela signifie que l’AEM de création n’est pas disponible pendant l’ensemble du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant que vous exécutez le *Ingestion* phase.
+* La *phase d’ingestion* de l’auteur réduit l’ensemble du déploiement de l’auteur. Cela signifie que l’AEM de création n’est pas disponible pendant l’ensemble du processus d’ingestion. Assurez-vous également qu’aucun pipeline Cloud Manager n’est exécuté pendant l’exécution de la variable *Ingestion* phase.
 
 * Si vous utilisez `Amazon S3` ou `Azure` comme entrepôt de données sur le système AEM source, cet entrepôt doit être configuré de sorte que les objets blob stockés ne puissent pas être supprimés (nettoyage de la mémoire). Cela garantit l’intégrité des données d’index et un échec de ce type de configuration peut entraîner des échecs d’extraction en raison d’un manque d’intégrité de ces données d’index.
 

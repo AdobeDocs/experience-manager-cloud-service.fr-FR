@@ -2,10 +2,10 @@
 title: Validation des transferts de contenu
 description: Utiliser l’outil de transfert de contenu pour valider les transferts de contenu
 exl-id: a12059c3-c15a-4b6d-b2f4-df128ed0eea5
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '1055'
-ht-degree: 69%
+source-wordcount: '1077'
+ht-degree: 68%
 
 ---
 
@@ -74,7 +74,7 @@ Une fois l’extraction terminée, commencez l’ingestion.
 
 La partie supérieure du journal d’ingestion contiendra une entrée semblable à `aem-ethos/tools:1.2.438`. Assurez-vous que ce numéro de version est **1.2.438** ou ultérieur, sinon la validation n’est pas prise en charge par la version d’AEM as a Cloud Service que vous utilisez.
 
-Une fois l’ingestion terminée et la validation en cours, l’entrée de journal suivante est indiquée dans le journal d’ingestion :
+Une fois l’ingestion terminée et la validation en cours, l’entrée de journal suivante est notée dans le journal d’ingestion :
 
 ```
 Gathering artifacts for migration validation...
@@ -127,18 +127,18 @@ Migration validation took 0 minutes
 
 L’exemple d’échec ci-dessus a été réalisé en exécutant une ingestion, puis en exécutant à nouveau la même ingestion avec l’option Effacer désactivée, de sorte qu’aucun nœud n’était impliqué pendant l’ingestion – les éléments étaient déjà présents sur la cible.
 
-En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir de l’interface utilisateur des **Tâches d’ingestion** de Cloud Acceleration Manager. Pour ce faire, cliquez sur les trois points (**...**), puis cliquez sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
+En plus d’être inclus dans le journal d’ingestion, le rapport de validation est également accessible à partir de l’interface utilisateur des **Tâches d’ingestion** de Cloud Acceleration Manager. Pour ce faire, cliquez sur les trois points (**..**), puis cliquez sur **Rapport de validation** dans la liste déroulante pour afficher le rapport de validation.
 
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/CTTvalidationreportnew.png)
 
-## Validation de la migration de l’entité de sécurité {#how-to-validate-principal-migration}
+## Validation de la migration des entités de sécurité {#how-to-validate-principal-migration}
 
 Voir [Mappage des utilisateurs et migration des entités de sécurité](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/user-mapping-and-migration.md) pour lire les détails des migrations principales et les raisons pour lesquelles cela est nécessaire.
 
 Une fois l’extraction et l’ingestion terminées, un résumé et un rapport de la migration principale sont disponibles. Ces informations peuvent être utilisées pour valider les utilisateurs et les groupes qui ont été migrés avec succès et, peut-être, pour déterminer pourquoi certains n’ont pas été migrés.
 
-Pour afficher ces informations, accédez à Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu. Accédez à **Tâches d’ingestion** et localisez l’ingestion que vous souhaitez vérifier. Cliquez sur les trois points (**...**) pour cette ingestion, puis cliquez sur **Afficher le résumé principal** dans la liste déroulante.
+Pour afficher ces informations, accédez à Cloud Acceleration Manager. Cliquez sur la carte de votre projet, puis sur la carte Transfert de contenu. Accédez à **Tâches d’ingestion** et localisez l’ingestion que vous souhaitez vérifier. Cliquez sur les trois points (**..**) pour cette ingestion, puis cliquez sur **Afficher le résumé principal** dans la liste déroulante.
 
 ![image](/help/journey-migration/content-transfer-tool/assets-ctt/ingestion-principal-action.png)
 
@@ -163,3 +163,7 @@ Pour vérifier, choisissez un chemin dans le rapport de validation et vérifiez 
 Certains chemins d’accès des résumés d’extraction et d’ingestion sont délibérément exclus afin de conserver une taille de fichiers gérable, dans le but de pouvoir calculer le résultat de la validation de la migration dans les deux heures suivant l’exécution de l’ingestion.
 
 Les chemins que nous excluons actuellement des résumés sont les suivants : les rendus `cqdam.text.txt` et les noeuds dans `/home`, et les noeuds dans `/jcr:system`.
+
+### Les groupes d’utilisateurs fermés ne fonctionnent pas {#validating-cugs}
+
+Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur l’utilisation d’une stratégie de groupe d’utilisateurs fermé (CUG).

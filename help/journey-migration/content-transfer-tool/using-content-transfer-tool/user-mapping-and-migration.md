@@ -2,10 +2,10 @@
 title: Mappage des utilisateurs et utilisatrices et migration des entités principales
 description: Présentation du mappage des utilisateurs et de la migration des entités de sécurité dans AEM as a Cloud Service.
 exl-id: 4a35fc46-f641-46a4-b3ff-080d090c593b
-source-git-commit: 8c73805b6ed1b7a03c65b4d21a4252c1412a5742
+source-git-commit: 83c6c3c8c069059e49b632f332e24946e1712cb7
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 22%
+source-wordcount: '855'
+ht-degree: 21%
 
 ---
 
@@ -57,6 +57,7 @@ Les cas spécifiques suivants sont consignés :
 * Si le paramètre **Effacer le contenu existant sur l’instance cloud avant l’ingestion** est définie, les utilisateurs déjà transférés sur l’instance de Cloud Service sont supprimés avec l’ensemble du référentiel existant. De plus, un nouveau référentiel est créé dans lequel le contenu est ingéré. Ce processus réinitialise également tous les paramètres, y compris les autorisations sur l’instance de Cloud Service cible. Il est vrai pour un utilisateur administrateur ajouté à la variable **administrateurs** groupe. L’utilisateur administrateur doit être lu dans la variable **administrateurs** pour récupérer le jeton d’accès pour CTT.
 * Lorsque des compléments de contenu sont effectués, si le contenu n’est pas transféré car il n’a pas été modifié depuis le transfert précédent, les utilisateurs et les groupes associés à ce contenu ne sont pas transférés non plus. Cette règle est vraie même si les utilisateurs et les groupes ont changé entre-temps. Cela est dû au fait que les utilisateurs et les groupes sont migrés avec le contenu auquel ils sont associés.
 * Si l’instance AEM Cloud Service cible comporte un utilisateur avec un nom d’utilisateur différent mais la même adresse électronique que l’un des utilisateurs sur l’instance d’AEM source et que le mappage utilisateur est activé, les journaux enregistrent un message d’erreur. En outre, l’utilisateur de l’AEM source n’est pas transféré, car un seul utilisateur disposant d’une adresse électronique donnée est autorisé sur le système cible.
+* Voir [Migration des groupes d’utilisateurs fermés](/help/journey-migration/content-transfer-tool/using-content-transfer-tool/closed-user-groups-migration.md) pour plus d’informations sur les groupes utilisés dans une stratégie de groupe d’utilisateurs fermé (CUG).
 
 ## Résumé final et rapport {#final-report}
 
