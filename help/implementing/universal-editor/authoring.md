@@ -2,10 +2,10 @@
 title: Création de contenu avec l’éditeur universel
 description: Découvrez à quel point il est facile et intuitif pour les personnes en charge de la création de créer du contenu à l’aide de l’éditeur universel.
 exl-id: 15fbf5bc-2e30-4ae7-9e7f-5891442228dd
-source-git-commit: 481202760e0d22cde9c32e0b781dc99f67d463e4
+source-git-commit: e03bf6437b72a4fe7e959a23f12f0baa892fa567
 workflow-type: tm+mt
-source-wordcount: '1939'
-ht-degree: 35%
+source-wordcount: '2271'
+ht-degree: 30%
 
 ---
 
@@ -137,7 +137,7 @@ Par défaut, l’éditeur s’ouvre dans la mise en page pour ordinateur où la 
 Vous pouvez également choisir d’émuler un appareil mobile et dans l’éditeur universel :
 
 * Définir son orientation
-* Définition de la largeur et de la hauteur
+* Définir la largeur et la hauteur
 * Modification de l’orientation
 
 #### Ouvrir l’aperçu de l’application {#open-app-preview}
@@ -213,20 +213,6 @@ Lorsque vous sélectionnez un fragment de contenu, les détails s’affichent da
 >
 >Utiliser la touche chaude `C` pour passer en mode composant.
 
-#### Modifier {#edit}
-
-Dans [mode composant,](#component-mode) si vous sélectionnez une [Fragment de contenu,](/help/assets/content-fragments/content-fragments.md) l’option d’édition s’affiche sur le rail de mode.
-
-![Icône Modifier](assets/edit.png)
-
-Appuyez ou cliquez sur le bouton Modifier pour ouvrir la [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) dans un nouvel onglet, ce qui vous permet d’accéder à toutes les fonctionnalités de l’éditeur de fragments de contenu.
-
-Vous pouvez également modifier les détails du fragment de contenu dans le [rail du composant](#edit-content-fragment) selon les besoins de votre workflow.
-
->[!TIP]
->
->Utiliser la touche chaude `E` pour modifier un composant sélectionné.
-
 ### L’éditeur {#editor}
 
 L’éditeur occupe la majeure partie de la fenêtre et est l’endroit où la page indiquée dans [la barre d’emplacement ;](#location-bar) est rendue.
@@ -258,7 +244,7 @@ Notez que tous les composants ne comportent pas de détails qui peuvent être af
 >
 >Utiliser la touche chaude `D` pour passer en mode propriétés.
 
-#### Mode Arborescence de contenu {#Content-tree-mode}
+#### Mode Arborescence de contenu {#content-tree-mode}
 
 En mode Arborescence de contenu, le rail affiche la hiérarchie du contenu de la page.
 
@@ -272,6 +258,43 @@ Lors de la sélection d’un élément dans l’arborescence de contenu, l’éd
 >
 >Utiliser la touche chaude `F` pour passer en mode arborescence de contenu.
 
+#### Modifier {#edit}
+
+Dans [mode composant,](#component-mode) si vous sélectionnez une [Fragment de contenu,](/help/assets/content-fragments/content-fragments.md) l’option de modification s’affiche sur le rail des composants.
+
+![Icône Modifier](assets/edit.png)
+
+Appuyez ou cliquez sur le bouton Modifier pour ouvrir la [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) dans un nouvel onglet, ce qui vous permet d’accéder à toutes les fonctionnalités de l’éditeur de fragments de contenu.
+
+Vous pouvez également modifier les détails du fragment de contenu dans le rail des composants en fonction des besoins de votre workflow.
+
+>[!TIP]
+>
+>Utiliser la touche chaude `E` pour modifier un composant sélectionné.
+
+#### Ajouter {#add}
+
+Si vous sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option d’ajout s’affiche sur le rail du composant.
+
+![Icône Ajouter](assets/ue-add-component-icon.png)
+
+Appuyez ou cliquez sur le bouton d’ajout pour ouvrir un menu déroulant des composants disponibles pour [ajoutez au conteneur sélectionné.](#adding-components)
+
+>[!TIP]
+>
+>Utiliser la touche chaude `A` pour ajouter un composant à un composant de conteneur sélectionné.
+
+#### Supprimer {#delete}
+
+Si vous sélectionnez un composant dans un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur, l’option de suppression s’affiche sur le rail du composant.
+
+![Icône Supprimer](assets/ue-delete-component-icon.png)
+
+Appuyez ou cliquez sur le bouton de suppression [supprime le composant.](#deleting-components)
+
+>[!TIP]
+>
+>Utiliser la touche chaude `Shift+Backspace` pour supprimer un composant sélectionné d’un conteneur.
 
 ## Modification du contenu {#editing-content}
 
@@ -311,7 +334,7 @@ Si vous êtes dans [mode média](#media-mode) et que vous sélectionnez une imag
 
 Appuyez ou cliquez sur le bouton **Remplacer** en dessous de l’aperçu de l’image sélectionnée dans le rail du composant pour remplacer l’image par une autre de votre bibliothèque de ressources.
 
-1. Le [sélecteur de ressources](/help/assets/asset-selector.md#using-asset-selector) s’ouvre pour vous permettre de sélectionner une ressource.
+1. La variable [sélecteur de ressources](/help/assets/asset-selector.md#using-asset-selector) s’ouvre pour vous permettre de sélectionner une ressource.
 1. Appuyez ou cliquez sur pour sélectionner une nouvelle ressource.
 1. Appuyez ou cliquez sur **Sélectionner** pour revenir au rail du composant dans lequel la ressource a été remplacée.
 
@@ -323,7 +346,7 @@ Les modifications sont automatiquement enregistrées dans votre contenu.
 
 ### Modification de fragments de contenu {#edit-content-fragment}
 
-Si vous êtes dans [mode composant](#component-mode) et sélectionnez un [Fragment de contenu,](/help/assets/content-fragments/content-fragments.md) vous pouvez modifier ses détails dans le rail des composants.
+Si vous êtes dans [mode composant](#component-mode) et vous sélectionnez une [Fragment de contenu,](/help/assets/content-fragments/content-fragments.md) vous pouvez modifier ses détails dans le rail des composants.
 
 ![Modification d’un fragment de contenu](assets/ue-edit-cf.png)
 
@@ -331,7 +354,39 @@ Les champs définis dans le modèle de contenu du fragment de contenu sélection
 
 Les modifications sont automatiquement enregistrées dans votre contenu.
 
-Si vous souhaitez modifier votre fragment de contenu dans le [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) cliquez sur [bouton Modifier](#edit) dans le rail de mode.
+Si vous souhaitez modifier votre fragment de contenu dans le [Éditeur de fragment de contenu](/help/assets/content-fragments/content-fragments-managing.md#opening-the-fragment-editor) cliquez sur [bouton d’édition](#edit) dans le rail de mode.
+
+### Ajout de composants aux conteneurs {#adding-components}
+
+1. Sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur.
+1. Appuyez ou cliquez ensuite sur l’icône d’ajout dans le rail du composant.
+
+   ![Sélectionner un composant à ajouter à un conteneur](assets/ue-add-component.png)
+
+Le composant est inséré dans le conteneur et peut être modifié dans l’éditeur.
+
+### Suppression de composants des conteneurs {#deleting-components}
+
+1. Sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur.
+1. Appuyez ou cliquez sur l’icône chevron du conteneur pour développer son contenu dans l’arborescence de contenu.
+1. Sélectionnez ensuite, dans l’arborescence de contenu, un composant dans le conteneur.
+1. Appuyez ou cliquez sur l’icône de suppression dans le rail des composants.
+
+   ![Suppression d’un composant](assets/ue-delete-component.png)
+
+Le composant sélectionné a été supprimé.
+
+### Réorganisation des composants dans les conteneurs {#reordering-components}
+
+1. Sélectionnez un composant de conteneur dans l’arborescence de contenu ou dans l’éditeur.
+1. Si ce n’est pas déjà fait dans [le mode arborescence de contenu,](#content-tree-mode) passez-y.
+1. Appuyez ou cliquez sur l’icône chevron du conteneur pour développer son contenu dans l’arborescence de contenu.
+1. Faites glisser les icônes de poignée en regard des composants dans le conteneur pour afficher que vous puissiez les réorganiser. Faites glisser les composants pour les réorganiser dans le conteneur.
+
+   ![Réorganisation des composants](assets/ue-reordering-components.png)
+1. Le composant déplacé devient gris dans l’arborescence du composant, tandis que votre point d’insertion est représenté par une ligne bleue. Libérez le composant pour le placer à son nouvel emplacement.
+
+Les composants sont réorganisés dans l’arborescence de contenu et dans l’éditeur.
 
 ## Prévisualisation du contenu {#previewing-content}
 
