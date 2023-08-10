@@ -2,10 +2,10 @@
 title: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 description: Notes de mise à jour de [!DNL Workfront for Experience Manager enhanced connector]
 exl-id: 12de589d-fe5d-4bd6-b96b-48ec8f1ebcb6
-source-git-commit: 87aeebad2576e91472530a2617b23bece4cd453f
+source-git-commit: 4b63c00847fa21967560a59c3bcd931433a3a73f
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 86%
+source-wordcount: '1190'
+ht-degree: 83%
 
 ---
 
@@ -15,13 +15,16 @@ La section suivante présente les notes de mise à jour générales de [!DNL Wor
 
 ## Date de publication {#release-date}
 
-Date de publication de la dernière version 1.9.11 de [!DNL Workfront for Experience Manager enhanced connector] est le 19 juin 2023.
+Date de publication de la dernière version 1.9.12 d’ [!DNL Workfront for Experience Manager enhanced connector] 9 août 2023.
 
 ## Principaux éléments de la mise à jour {#release-highlights}
 
 La dernière version de [!DNL Workfront for Experience Manager enhanced connector] inclut les mises à jour suivantes :
 
-* Lorsque vous avez configuré la mise en réseau avancée, des problèmes se produisent lors de l’envoi de contenu d’Adobe Workfront vers AEM as a Cloud Service.
+* Impossible de créer les dossiers liés dans Experience Manager, car aucun compte utilisateur n’est associé au dossier lié.
+
+* Conditions de concurrence lors des mises à jour des métadonnées d’une ressource en Experience Manager.
+
 
 >[!NOTE]
 >
@@ -30,15 +33,20 @@ La dernière version de [!DNL Workfront for Experience Manager enhanced connecto
 
 >[!IMPORTANT]
 >
->Adobe vous recommande [mise à niveau vers la dernière version 1.9.11](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
+>Adobe vous recommande [mise à niveau vers la dernière version 1.9.12](/help/assets/workfront-connector-install.md) de [!DNL Workfront for Experience Manager enhanced connector].
 
 ## Problèmes connus {#known-issues}
 
 * Lors de la configuration de dossiers liés à un projet avec AEM 6.4, Experience Manager n’enregistre pas les valeurs pour les champs **[!UICONTROL Sous-dossiers]** et **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]**. La valeur du champ de **[!UICONTROL sous-dossiers]** est remplacé par **[!UICONTROL indéfini]** et la valeur du champ **[!UICONTROL Création d’un dossier lié dans des projets avec portfolio]** est remplacé par **[!UICONTROL Portfolio par défaut]** automatiquement après l’enregistrement de la configuration.
 
-* Lorsque vous utilisez l’expérience Workfront classique, l’option **[!UICONTROL Envoyer à]** disponible dans la liste déroulante **[!UICONTROL Plus]** ne vous permet pas de sélectionner la destination cible dans Experience Manager. Le **[!UICONTROL Envoyer à]** fonctionne correctement avec l’option **[!UICONTROL Actions de document]** liste déroulante. Le **[!UICONTROL Envoyer à]** fonctionne correctement pour **[!UICONTROL Plus]** et la liste déroulante **[!UICONTROL Actions de document]** liste déroulante disponible dans la nouvelle expérience Workfront.
+* Lorsque vous utilisez l’expérience Workfront classique, l’option **[!UICONTROL Envoyer à]** disponible dans la liste déroulante **[!UICONTROL Plus]** ne vous permet pas de sélectionner la destination cible dans Experience Manager. La variable **[!UICONTROL Envoyer à]** fonctionne correctement avec l’option **[!UICONTROL Actions de document]** liste déroulante. La variable **[!UICONTROL Envoyer à]** fonctionne correctement pour **[!UICONTROL Plus]** et la liste déroulante **[!UICONTROL Actions de document]** liste déroulante disponible dans la nouvelle expérience Workfront.
 
 ## Versions précédentes {#previous-releases}
+
+### Version de juin 2023 {#june-2023-release}
+
+* Lorsque vous avez configuré la mise en réseau avancée, des problèmes se produisent lors de l’envoi de contenu d’Adobe Workfront vers AEM as a Cloud Service.
+
 
 ### Version de mai 2023 {#may-2023-release}
 
@@ -178,7 +186,7 @@ La version 1.9.1 de [!DNL Workfront for Experience Manager enhanced connector] 
 
 [!DNL Workfront for Experience Manager enhanced connector] comprend désormais les mises à jour suivantes :
 
-* Lorsque vous effectuez un téléchargement via un dossier lié ou que vous utilisez l’événement `Send To` action disponible dans Workfront pour charger des ressources vers Experience Manager as a Cloud Service, les ressources sont corrompues et ne peuvent pas être ouvertes dans Adobe Photoshop.
+* Lorsque vous effectuez un téléchargement via un dossier lié ou que vous utilisez le `Send To` action disponible dans Workfront pour charger des ressources vers Experience Manager as a Cloud Service, les ressources sont corrompues et ne peuvent pas être ouvertes dans Adobe Photoshop.
 
 ### Version de mars 2022 {#march-2022-release}
 
