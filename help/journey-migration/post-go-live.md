@@ -2,10 +2,10 @@
 title: Post-activation
 description: Découvrez comment surveiller les problèmes et améliorer les performances
 exl-id: 487f0b51-501b-48fc-a796-3cb8a6d64462
-source-git-commit: 1994b90e3876f03efa571a9ce65b9fb8b3c90ec4
+source-git-commit: 3784569086a786c6c25c0e3d6d0bb0ddbdd37e4b
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 89%
+source-wordcount: '477'
+ht-degree: 68%
 
 ---
 
@@ -15,10 +15,10 @@ ht-degree: 89%
 >id="aemcloud_golive_troubleshooting"
 >title="Résolution des incidents liés à AEM"
 >abstract="Consultez les bonnes pratiques de développement continu et gérez les journaux avec des outils tels que Developer Console et CRXDE Lite pour résoudre les problèmes liés à AEM"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/manage-logs.html?lang=fr" text="Accès aux journaux et leur gestion"
->additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=fr#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/using-cloud-manager/manage-logs.html" text="Accès aux journaux et gestion des journaux"
+>additional-url="https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/development-guidelines.html#aem-as-a-cloud-service-development-tools" text="Outils de développement AEM as a Cloud Service"
 
-Il s’agit de la dernière partie du parcours. Vous apprendrez ainsi à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Vous devez veiller au nettoyage des fichiers temporaires, revoir les bonnes pratiques de développement continu et gérer les journaux.
+Ce parcours est la dernière partie. Vous apprendrez donc à surveiller les problèmes et à améliorer les performances une fois la migration terminée. Vous devez veiller au nettoyage des fichiers temporaires, revoir les bonnes pratiques de développement continu et gérer les journaux.
 
 ## Un peu d’histoire… {#story-so-far}
 
@@ -43,9 +43,9 @@ Voir [Mise en oeuvre pour AEM as a Cloud Service](/help/implementing/developing/
 En tant qu’utilisateur, vous pouvez accéder à CRXDE Lite dans l’environnement de développement, mais pas dans les environnements d’évaluation ni de production.
 
 >[!IMPORTANT]
->L’écriture, au moment de l’exécution, dans des référentiels non modifiables tels que `/libs` et `/apps`, entraîne des erreurs. De plus, vous n’avez pas accès aux outils de développement pour les environnements d’évaluation et de production.
+>L’écriture, au moment de l’exécution, dans des référentiels non modifiables tels que `/libs` et `/apps`, entraîne des erreurs. En outre, vous n’avez pas accès aux outils de développement pour les environnements d’évaluation et de production.
 
-Voir [Développement avec CRXDE Lite](/help/implementing/developing/tools/crxde.md) pour découvrir comment développer votre application AEM à l’aide de CRXDE Lite.
+Voir [Développement avec le CRXDE Lite](/help/implementing/developing/tools/crxde.md) pour plus d’informations sur le développement de votre application AEM à l’aide de CRXDE Lite.
 
 ## Gestion des journaux {#managing-logs}
 
@@ -58,20 +58,20 @@ Voir [Accès aux journaux et leur gestion](/help/implementing/cloud-manager/mana
 >[!CONTEXTUALHELP]
 >id="aemcloud_golive_support"
 >title="Aide et assistance"
->abstract="Contactez notre équipe d’assistance AEM pour obtenir des clarifications ou des réponses à vos questions."
+>abstract="Contactez l’équipe d’assistance AEM de l’Adobe pour obtenir des éclaircissements ou pour répondre à toute question."
 >additional-url="https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html" text="Assistance technique pour Experience Cloud"
 
 Si vous avez des questions sur l’accès à Cloud Service, contactez votre représentant Adobe ou [l’Assistance pour Experience Cloud](https://helpx.adobe.com/fr/enterprise/using/support-for-experience-cloud.html) pour plus d’informations.
 
 ## Apprentissage de documents {#document-learnings}
 
-Une fois la migration terminée, vous devez documenter les connaissances acquises au cours de ce processus. Voici quelques questions qui peuvent faciliter le processus de documentation :
+Une fois la migration terminée, documentez les connaissances acquises au cours de ce processus. Voici quelques questions qui peuvent faciliter le processus de documentation :
 
 * Qu’est-ce qui a bien fonctionné et qu’est-ce qui n’a pas fonctionné ?
 * Quels ont été les principaux problèmes ?
-* Recommandations en cas de migration ultérieure.
+* Recommendations en cas de migration ultérieure.
 
-Vous devez ensuite partager ces apprentissages post-migration avec les parties prenantes et les équipes de votre entreprise.
+Partagez ces leçons post-migration avec les parties prenantes et les équipes de votre entreprise.
 
 ## Serait-ce la fin de notre voyage ?  {#journey-ends}
 
