@@ -2,9 +2,9 @@
 title: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 description: Notes de mise à jour de la maintenance actuelle d’ [!DNL Adobe Experience Manager]  as a Cloud Service.
 exl-id: eee42b4d-9206-4ebf-b88d-d8df14c46094
-source-git-commit: b2c67687e2f3577b44929777a31b6ce85a5f1877
+source-git-commit: cb963a233b5afd4497704233db7f51c37563d0f9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '620'
 ht-degree: 18%
 
 ---
@@ -22,7 +22,7 @@ Vous trouverez ci-dessous un résumé des améliorations continues apportées à
 ### Améliorations {#enhancements-13099}
 
 - SITES-13906 : GraphQL - Mise à niveau vers graphql-java 20.1.
-- SITES-8972 : GraphQL - Option Ajouter```label``` dans JSON pour le type de données Énumération .
+- SITES-8972 : GraphQL - Ajout d’une étiquette d’option dans JSON pour le type de données Énumération .
 - SITES-9689 : GraphQL - Ajoutez un titre et une description dans JSON pour le type de données de référence de contenu.
 - SITES-13052 : Fragments de contenu - Exporter des fragments de contenu vers Adobe Target
 
